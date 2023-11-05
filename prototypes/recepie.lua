@@ -20,10 +20,10 @@ data:extend({
 		category = "smelting",
 		energy_required = 4,	-- time in seconds to make the item
 		ingredients = {
-			{type = "item", name = "alumina", amount = 2}
+			{type = "item", name = "alumina", amount = 3}
 		},
 		results = {
-			{type = "item", name = "aluminum-sheet", amount = 1}
+			{type = "item", name = "aluminum-sheet", amount = 2}
 		}
 	},
 	{
@@ -32,7 +32,7 @@ data:extend({
 		category = "smelting",
 		energy_required = 5,	-- time in seconds to make the item
 		ingredients = {
-			{type = "item", name = "alumina", amount = 3}
+			{type = "item", name = "alumina", amount = 2}
 		},
 		results = {
 			{type = "item", name = "aluminum-ingot", amount = 1}
