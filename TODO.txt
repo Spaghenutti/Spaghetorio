@@ -1,0 +1,3 @@
+- Create recepie categories (see: recipe-category)
++ Create item groups (see: "intermediate-products=Intermediate products")
+- Add research

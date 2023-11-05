@@ -1,4 +1,4 @@
-from PIL import Image, ImageDraw, ImageFont, ImageColor
+from PIL import Image, ImageDraw, ImageFont
 import re
  
 HR_ICON_RES = 128

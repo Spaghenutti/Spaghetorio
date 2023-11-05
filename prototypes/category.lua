@@ -4,7 +4,7 @@
 --    name = "crafting"
 --  },
 
--- Existing categories
+-- Existing categories: see: C:\Program Files\Factorio\data\base\prototypes\recepie-categoriy.lua
 -- {type = "recipe-category", name = "crafting"}
 -- {type = "recipe-category", name = "advanced-crafting"}
 -- {type = "recipe-category", name = "smelting"}

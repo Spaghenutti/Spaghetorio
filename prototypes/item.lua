@@ -99,7 +99,7 @@ data:extend({
 		icon = "__Spaghenutti__/graphics/icons/alumina.png",
 		icon_size = 64,
 		icon_mipmaps = 4,
-		subgroup = "raw-material",
+		subgroup = "raw-resource",
 		order = "b[alumina]",
 		stack_size = 100
 	},
