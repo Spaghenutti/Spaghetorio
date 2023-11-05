@@ -1,0 +1,8 @@
+require("prototypes.entity-changes")
+require("prototypes.autoplace-control")
+-- require("category")
+require("prototypes.item")
+require("prototypes.noise-layer")
+require("prototypes.particle")
+require("prototypes.recepie")
+require("prototypes.resource")
