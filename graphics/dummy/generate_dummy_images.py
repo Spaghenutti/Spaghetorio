@@ -1,6 +1,6 @@
 from PIL import Image, ImageDraw, ImageFont, ImageColor
 import re
-
+ 
 HR_ICON_RES = 128
 BACKGROUND_COLOR = "darkorange"
 
@@ -8,12 +8,12 @@ TEXT_OFFSET_X = 10
 TEXT_OFFSET_Y = 0
 FONT_COLOR = "black"
 FONT_SIZE = 24
-FONT = ImageFont.truetype("../fonts/TitilliumWeb-SemiBold.ttf", FONT_SIZE)  # Factorio font
+FONT = ImageFont.truetype("../../fonts/TitilliumWeb-SemiBold.ttf", FONT_SIZE)  # Factorio font
 BREAK_LINE_AFTER_N_CHARS = 192//FONT_SIZE
 LINE_SPACE = FONT_SIZE//4
 
-ITEMS_PATH = "../prototypes/item.lua"
-NAMES_REGEX = r"[ \t\n]name = \"(.*?)\""
+ITEMS_PATH = "../../prototypes/item.lua"
+NAMES_REGEX = r"[ ,\t\n]name = \"(.*?)\""
 
 # Get all item names
 with open(ITEMS_PATH) as f:
@@ -33,4 +33,4 @@ for item_name in item_names:
                 font=FONT,
                 fill=FONT_COLOR)
 
-    img.save(f"dummy/dummy-{item_name}.png")
+    img.save(f"dummy-{item_name}.png")

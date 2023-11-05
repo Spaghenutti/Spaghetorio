@@ -1,54 +1,79 @@
--- Tin --
--- Tinstone (casserite), stannite (Cu2FeSnS4), a copper-iron-tin sulfide, and cylindrite (PbSn4FeSb2S14), a lead-tin-iron-antimony sulfide.
+-- Al Aluminum --
+	-- aluminum-ore (bauxite)
+	-- alumina
+	-- (aluminum sheet)
+	-- aluminum ingot
+	-- aluminum frames
+	-- (aluminum cables)
 
--- Aluminum --
--- aluminum-ore (bauxite)
--- alumina
--- aluminum sheet
--- aluminum ingot
--- aluminum frames
--- aluminum cables
+-- Ca Calcium --
 
--- Alloys --
--- steel
--- stainless steel
--- aluminum 2000 Series
--- aluminum 6000 Series
+-- Na Sodium --
 
--- Basic intermediates --
--- mirror
--- lens
--- resistor
--- capacitor
--- diode
--- transistor
--- coil
--- LED
--- solder
+-- Mg Magnesium --
 
--- Intermediates --
--- Electric motor
--- Heat exchanger
--- Heat pipe
--- Spark plug
--- Turbopump
--- nozzle
--- rocket engine
--- Engine
--- Processor
+-- Ti Titanium --
 
--- Endproduct --
--- Windmill
--- Lithography machine
--- Milling machine
--- Welding machine
--- Electrolysis plant
+-- P Phosphorus --
+
+-- Mn Manganese --
+
+-- Si Silicon --
+
+-- Sn Tin --
+	-- tinstone (casserite), stannite (Cu2FeSnS4), a copper-iron-tin sulfide, and cylindrite (PbSn4FeSb2S14), a lead-tin-iron-antimony sulfide.
 
 -- Exotic materials --
--- Dolomite
+	-- 
 
 -- Alien materials --
---
+	-- meteorite
+
+-- Alloys --
+	-- steel
+	-- stainless steel
+	-- aluminum 2000 Series
+	-- aluminum 6000 Series
+
+-- Basic Intermediates --
+	-- optical components
+		-- mirror
+		-- lens
+	-- electrical components
+		-- resistor
+		-- capacitor
+		-- diode
+		-- transistor
+		-- LED
+		-- coil
+	-- solder
+	-- magnet
+		-- permanent magnet
+			-- ferrite magnet (iron oxide (commonly known as rust) and strontium carbonate)
+			-- alnico magnet (Aluminium (Al), Nickel (Ni), Cobalt (Co))
+			-- neodymium magnet (Neodymium Iron Boron (NdFeB))
+			-- samarium cobalt magnets (SmCo magnets))
+		-- electro magnet (wire around iron rod)
+	-- superconductor
+
+-- Intermediates --
+	-- electric motor
+	-- heat exchanger
+	-- heat pipe
+	-- spark plug
+	-- turbopump
+	-- nozzle
+	-- rocket engine
+	-- Engine
+	-- processor
+
+-- Endproduct --
+	-- windmill
+	-- lithography machine
+	-- milling machine
+	-- welding machine
+	-- electrolysis plant
+
 
 data:extend({
 	{
