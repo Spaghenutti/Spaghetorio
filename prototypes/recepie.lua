@@ -4,7 +4,7 @@
 data:extend({
 	{
 		type = "recipe",
-		name = "alumina",
+		name = "alumina",  -- #ForRegEx#
 		category = "smelting",
 		energy_required = 4,	-- time in seconds to make the item
 		ingredients = {
@@ -16,7 +16,7 @@ data:extend({
 	},
 	{
 		type = "recipe",
-		name = "aluminum-sheet",
+		name = "aluminum-sheet",  -- #ForRegEx#
 		category = "smelting",
 		energy_required = 4,	-- time in seconds to make the item
 		ingredients = {
@@ -28,7 +28,7 @@ data:extend({
 	},
 	{
 		type = "recipe",
-		name = "aluminum-ingot",
+		name = "aluminum-ingot",  -- #ForRegEx#
 		category = "smelting",
 		energy_required = 5,	-- time in seconds to make the item
 		ingredients = {

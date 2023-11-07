@@ -34,7 +34,7 @@ data:extend(
 		stage_counts = {20000, 12000, 8000, 4000, 2000, 1000, 500, 200},
 		stages = {
 			sheet = {
-				filename = "__Spaghenutti__/graphics/ressource/aluminum-ore-patches.png",
+				filename = "__Spaghenutti__/graphics/ressource/hr-aluminum-ore-patches.png",
 				priority = "extra-high",
 				size = 128,
 				scale = 0.5,

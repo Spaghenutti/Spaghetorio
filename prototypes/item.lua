@@ -78,7 +78,7 @@
 data:extend({
 	{
 		type = "item",
-		name = "aluminum-ore",
+		name = "aluminum-ore",  -- #ForRegEx#
 		icon = "__Spaghenutti__/graphics/base/ore/ore-1.png",
 		tint = {r = 1.0, g = 0.2, b = 0.2, a = 1.0},
 		icon_size = 64,
@@ -95,7 +95,7 @@ data:extend({
 	},
 	{
 		type = "item",
-		name = "alumina",
+		name = "alumina",  -- #ForRegEx#
 		icon = "__Spaghenutti__/graphics/icons/alumina.png",
 		icon_size = 64,
 		icon_mipmaps = 4,
@@ -105,7 +105,7 @@ data:extend({
 	},
 	{
 		type = "item",
-		name = "aluminum-sheet",
+		name = "aluminum-sheet",  -- #ForRegEx#
 		icon = "__Spaghenutti__/graphics/icons/aluminum-sheet.png",
 		icon_size = 128,
 		scale = 0.25,
@@ -115,7 +115,7 @@ data:extend({
 	},
 	{
 		type = "item",
-		name = "aluminum-ingot",
+		name = "aluminum-ingot",  -- #ForRegEx#
 		icon = "__Spaghenutti__/graphics/base/ingot_1.png",
 		icon_size = 256,
 		scale = 0.25,

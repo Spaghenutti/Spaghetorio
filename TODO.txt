@@ -1,3 +1,11 @@
-- Create recepie categories (see: recipe-category)
-+ Create item groups (see: "intermediate-products=Intermediate products")
-- Add research
+TODO:
+    - Create recepie categories (see: recipe-category)
+    + Create item groups (see: "intermediate-products=Intermediate products")
+    - Add research
+    + Add python script for generating icons for recepies
+    - Add python script resizing hr-icons to icons
+    - Add python scrip for mipmaps
+
+
+FIXME:
+    - Aluminum ore icon color
