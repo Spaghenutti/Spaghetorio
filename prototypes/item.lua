@@ -80,7 +80,7 @@ data:extend({
 		type = "item",
 		name = "aluminum-ore",  -- #ForRegEx#
 		icon = "__Spaghenutti__/graphics/base/ore/ore-1.png",
-		tint = {r = 1.0, g = 0.2, b = 0.2, a = 1.0},
+		tint = {r=1.0, g=0.2, b=0.2, a=1.0},
 		icon_size = 64,
 		icon_mipmaps = 4,
 		pictures = {
@@ -91,6 +91,23 @@ data:extend({
 		},
 		subgroup = "raw-resource",
 		order = "a[aluminum-ore]",
+		stack_size = 200
+	},
+  {
+		type = "item",
+		name = "chromite",  -- #ForRegEx#
+		icon = "__Spaghenutti__/graphics/base/ore/ore-1.png",
+		tint = {r=0.5, g=0.5, b=1.0, a=1.0},
+		icon_size = 64,
+		icon_mipmaps = 4,
+		pictures = {
+			{ size = 64, filename = "__Spaghenutti__/graphics/base/ore/ore-1.png", scale = 0.25, mipmap_count = 4, tint={r=1.0, g=0.2, b=0.2, a=1.0} },
+			{ size = 64, filename = "__Spaghenutti__/graphics/base/ore/ore-2.png", scale = 0.25, mipmap_count = 4, tint={r=1.0, g=0.2, b=0.2, a=1.0} },
+			{ size = 64, filename = "__Spaghenutti__/graphics/base/ore/ore-3.png", scale = 0.25, mipmap_count = 4, tint={r=1.0, g=0.2, b=0.2, a=1.0} },
+			{ size = 64, filename = "__Spaghenutti__/graphics/base/ore/ore-4.png", scale = 0.25, mipmap_count = 4, tint={r=1.0, g=0.2, b=0.2, a=1.0} }
+		},
+		subgroup = "raw-resource",
+		order = "a[chromite]",
 		stack_size = 200
 	},
 	{

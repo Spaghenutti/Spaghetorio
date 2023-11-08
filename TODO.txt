@@ -3,8 +3,11 @@ TODO:
     + Create item groups (see: "intermediate-products=Intermediate products")
     - Add research
     + Add python script for generating icons for recepies
-    - Add python script resizing hr-icons to icons
+    + Add python script resizing hr-icons to icons
     - Add python scrip for mipmaps
+    - Add ores
+    - Update resource_autoplace_settings and stage_counts of ores
+    - Add icon for item group base products 
 
 
 FIXME:

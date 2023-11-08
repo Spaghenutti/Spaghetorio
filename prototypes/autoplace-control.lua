@@ -5,6 +5,14 @@ data:extend({
 		category = "resource",
 		name = "aluminum-ore",
 		richness = true,
-		order = "b-e"
+		order = "a"
+	},
+  {
+		type = "autoplace-control",
+		localised_name = {"", "[entity=chromite] ", {"entity-name.chromite"}},
+		category = "resource",
+		name = "chromite",
+		richness = true,
+		order = "c"
 	},
 })
