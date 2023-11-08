@@ -9,7 +9,8 @@ TEXT_OFFSET_X = 10
 TEXT_OFFSET_Y = 0
 FONT_COLOR = "black"
 FONT_SIZE = 24
-FONT = ImageFont.truetype("../fonts/TitilliumWeb-SemiBold.ttf", FONT_SIZE)  # Factorio font
+FONT_PATH = "../fonts/TitilliumWeb-SemiBold.ttf"
+FONT = ImageFont.truetype(FONT_PATH, FONT_SIZE)  # Factorio font
 BREAK_LINE_AFTER_N_CHARS = 192//FONT_SIZE
 LINE_SPACE = FONT_SIZE//4
 
