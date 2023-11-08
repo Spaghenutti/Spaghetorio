@@ -14,7 +14,7 @@ file_paths = glob.glob(path, recursive=True)
 for file_path in file_paths:
     img = Image.open(file_path)
     width, height = img.size
-    normal_res_img = img.resize((width//COMPRESSION_FACTOR, height//COMPRESSION_FACTOR))
+    normal_res_img = img.thumbnail((width//COMPRESSION_FACTOR, height//COMPRESSION_FACTOR))
 
     normal_res_path = file_path.replace(HR_PREFIX, "")
     # if file already exists, don't overwrite it
