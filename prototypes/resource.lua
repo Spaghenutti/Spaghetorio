@@ -1,3 +1,8 @@
+-- For every ressource add also
+--    - autoplace-control
+--    - particle
+--    - item
+
 local resource_autoplace = require("__core__/lualib/resource-autoplace")
 
 data:extend(

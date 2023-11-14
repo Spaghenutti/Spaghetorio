@@ -7,8 +7,14 @@
 	-- (aluminum cables)
 
 -- Ca Calcium --
+  -- limestone / stone
+  -- calcium carbonate (for making zement)
+  -- ceramics
 
 -- Na Sodium --
+  -- Sodium Chloride / Salt (NaCl extraction from seawater / lakes)
+  -- used in lamps
+  -- liquid sodium -> wastewater treatment plants
 
 -- Mg Magnesium --
 
@@ -22,6 +28,13 @@
 
 -- Sn Tin --
 	-- tinstone (casserite), stannite (Cu2FeSnS4), a copper-iron-tin sulfide, and cylindrite (PbSn4FeSb2S14), a lead-tin-iron-antimony sulfide.
+
+-- Zr Zirconium
+
+-- Ta Tantalum
+
+-- Rare earths
+
 
 -- Exotic materials --
 	-- 
@@ -55,6 +68,8 @@
 			-- samarium cobalt magnets (SmCo magnets))
 		-- electro magnet (wire around iron rod)
 	-- superconductor
+  -- cement
+  -- ceramic
 
 -- Intermediates --
 	-- electric motor
@@ -66,6 +81,7 @@
 	-- rocket engine
 	-- Engine
 	-- processor
+  -- laser
 
 -- Endproduct --
 	-- windmill
