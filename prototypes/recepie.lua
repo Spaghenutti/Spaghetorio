@@ -4,7 +4,7 @@
 data:extend({
 	{
 		type = "recipe",
-		name = "alumina",  -- #ForRegEx#
+		name = "alumina",  -- #ForRegEx# - recepie
 		category = "smelting",
 		energy_required = 4,	-- time in seconds to make the item
 		ingredients = {
@@ -16,7 +16,7 @@ data:extend({
 	},
 	{
 		type = "recipe",
-		name = "aluminum-sheet",  -- #ForRegEx#
+		name = "aluminum-sheet",  -- #ForRegEx# - recepie
 		category = "smelting",
 		energy_required = 4,	-- time in seconds to make the item
 		ingredients = {
@@ -28,7 +28,7 @@ data:extend({
 	},
 	{
 		type = "recipe",
-		name = "aluminum-ingot",  -- #ForRegEx#
+		name = "aluminum-ingot",  -- #ForRegEx# - recepie
 		category = "smelting",
 		energy_required = 5,	-- time in seconds to make the item
 		ingredients = {
@@ -40,7 +40,7 @@ data:extend({
 	},
   {
 		type = "recipe",
-		name = "aluminum-frames",  -- #ForRegEx#
+		name = "aluminum-frames",  -- #ForRegEx# - recepie
 		category = "crafting",
     enabled = false,
 		energy_required = 5,	-- time in seconds to make the item

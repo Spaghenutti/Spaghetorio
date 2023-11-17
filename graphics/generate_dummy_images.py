@@ -6,6 +6,7 @@ PATH_PREFIX = "" # "../"
 HR_ICON_RES = 128
 ITEM_BACKGROUND_COLOR = "lightblue"
 RECEPIE_BACKGROUND_COLOR = "darkgreen"
+TECHNOLOGY_BACKGROUND_COLOR = "yellow"
 
 TEXT_OFFSET_X = 10
 TEXT_OFFSET_Y = 0
@@ -18,7 +19,8 @@ LINE_SPACE = FONT_SIZE//4
 
 ITEMS_PATH = f"{PATH_PREFIX}prototypes/item.lua"
 RECEPIES_PATH = f"{PATH_PREFIX}prototypes/recepie.lua"
-NAMES_REGEX = r"[ ,\t\n]name = \"(.*?)\",  -- #ForRegEx#"
+TECHNOLOGIES_PATH = f"{PATH_PREFIX}prototypes/technology.lua"
+NAMES_REGEX = r"[ ,\t\n]name = \"(.*?)\",  -- #ForRegEx#"  # Extend regex to catch the type. The flag looks something like -- #ForRegEx# - <type>
 
 # Get all item names
 with open(ITEMS_PATH) as f:
@@ -59,3 +61,23 @@ for recepie_name in recepie_names:
                 fill=FONT_COLOR)
 
     img.save(f"{PATH_PREFIX}graphics/dummy/dummy-recepie-{recepie_name}.png")
+
+# Get all technology names
+with open(TECHNOLOGIES_PATH) as f:
+    technologies_lua = f.read()
+technology_names = re.findall(NAMES_REGEX, technologies_lua)
+
+# Generate images
+for technology_name in technology_names:
+    # Create image with background
+    img = Image.new(mode="RGBA", size=(HR_ICON_RES, HR_ICON_RES), color=TECHNOLOGY_BACKGROUND_COLOR)
+
+    # Draw technology name
+    for i in range(len(technology_name)//BREAK_LINE_AFTER_N_CHARS + 1):
+        draw = ImageDraw.Draw(img)
+        draw.text((TEXT_OFFSET_X, TEXT_OFFSET_Y + i*(FONT_SIZE+LINE_SPACE)),
+                technology_name[i*BREAK_LINE_AFTER_N_CHARS:(i+1)*BREAK_LINE_AFTER_N_CHARS],
+                font=FONT,
+                fill=FONT_COLOR)
+
+    img.save(f"{PATH_PREFIX}graphics/dummy/dummy-technology-{technology_name}.png")

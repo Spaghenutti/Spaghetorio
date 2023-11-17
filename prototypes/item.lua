@@ -94,7 +94,7 @@
 data:extend({
 	{
 		type = "item",
-		name = "aluminum-ore",  -- #ForRegEx#
+		name = "aluminum-ore",  -- #ForRegEx# - item
 		icon = "__Spaghenutti__/graphics/base/ore/ore-1.png",
 		tint = {r=1.0, g=0.2, b=0.2, a=1.0},
 		icon_size = 64,
@@ -111,7 +111,7 @@ data:extend({
 	},
   {
 		type = "item",
-		name = "chromite",  -- #ForRegEx#
+		name = "chromite",  -- #ForRegEx# - item
 		icon = "__Spaghenutti__/graphics/base/ore/ore-1.png",
 		tint = {r=0.5, g=0.5, b=1.0, a=1.0},
 		icon_size = 64,
@@ -128,7 +128,7 @@ data:extend({
 	},
 	{
 		type = "item",
-		name = "alumina",  -- #ForRegEx#
+		name = "alumina",  -- #ForRegEx# - item
 		icon = "__Spaghenutti__/graphics/icons/alumina.png",
 		icon_size = 64,
 		icon_mipmaps = 4,
@@ -138,7 +138,7 @@ data:extend({
 	},
 	{
 		type = "item",
-		name = "aluminum-sheet",  -- #ForRegEx#
+		name = "aluminum-sheet",  -- #ForRegEx# - item
 		icon = "__Spaghenutti__/graphics/icons/aluminum-sheet.png",
 		icon_size = 128,
 		scale = 0.25,
@@ -148,7 +148,7 @@ data:extend({
 	},
 	{
 		type = "item",
-		name = "aluminum-ingot",  -- #ForRegEx#
+		name = "aluminum-ingot",  -- #ForRegEx# - item
 		icon = "__Spaghenutti__/graphics/base/ingot_1.png",
 		icon_size = 256,
 		scale = 0.25,
@@ -158,7 +158,7 @@ data:extend({
 	},
   {
 		type = "item",
-		name = "aluminum-frames",  -- #ForRegEx#
+		name = "aluminum-frames",  -- #ForRegEx# - item
 		icon = "__Spaghenutti__/graphics/dummy/dummy-item-aluminum-frames.png",
 		icon_size = 128,
 		scale = 0.5,
