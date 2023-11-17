@@ -1,21 +1,23 @@
 from PIL import Image, ImageDraw, ImageFont
 import re
+
+PATH_PREFIX = "" # "../"
  
 HR_ICON_RES = 128
-ITEM_BACKGROUND_COLOR = "darkorange"
+ITEM_BACKGROUND_COLOR = "lightblue"
 RECEPIE_BACKGROUND_COLOR = "darkgreen"
 
 TEXT_OFFSET_X = 10
 TEXT_OFFSET_Y = 0
 FONT_COLOR = "black"
-FONT_SIZE = 24
-FONT_PATH = "../fonts/TitilliumWeb-SemiBold.ttf"
+FONT_SIZE = 32
+FONT_PATH = f"{PATH_PREFIX}fonts/TitilliumWeb-SemiBold.ttf"
 FONT = ImageFont.truetype(FONT_PATH, FONT_SIZE)  # Factorio font
 BREAK_LINE_AFTER_N_CHARS = 192//FONT_SIZE
 LINE_SPACE = FONT_SIZE//4
 
-ITEMS_PATH = "../prototypes/item.lua"
-RECEPIES_PATH = "../prototypes/recepie.lua"
+ITEMS_PATH = f"{PATH_PREFIX}prototypes/item.lua"
+RECEPIES_PATH = f"{PATH_PREFIX}prototypes/recepie.lua"
 NAMES_REGEX = r"[ ,\t\n]name = \"(.*?)\",  -- #ForRegEx#"
 
 # Get all item names
@@ -36,7 +38,7 @@ for item_name in item_names:
                 font=FONT,
                 fill=FONT_COLOR)
 
-    img.save(f"dummy/dummy-item-{item_name}.png")
+    img.save(f"{PATH_PREFIX}graphics/dummy/dummy-item-{item_name}.png")
 
 # Get all recepie names
 with open(RECEPIES_PATH) as f:
@@ -56,4 +58,4 @@ for recepie_name in recepie_names:
                 font=FONT,
                 fill=FONT_COLOR)
 
-    img.save(f"dummy/dummy-recepie-{recepie_name}.png")
+    img.save(f"{PATH_PREFIX}graphics/dummy/dummy-recepie-{recepie_name}.png")

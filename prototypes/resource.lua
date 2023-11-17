@@ -5,8 +5,7 @@
 
 local resource_autoplace = require("__core__/lualib/resource-autoplace")
 
-data:extend(
-{
+data:extend({
 	{
 		type = "resource",
 		name = "aluminum-ore",

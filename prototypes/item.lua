@@ -156,4 +156,17 @@ data:extend({
 		order = "b[aluminum-ingot]",
 		stack_size = 100
 	},
+  {
+		type = "item",
+		name = "aluminum-frames",  -- #ForRegEx#
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-aluminum-frames.png",
+		icon_size = 128,
+		scale = 0.5,
+    pictures = {
+			{ size = 128, filename = "__Spaghenutti__/graphics/dummy/dummy-item-aluminum-frames.png", scale = 0.5, tint={r=1.0, g=0.2, b=0.2, a=1.0} },
+		},
+		subgroup = "intermediate-product",
+		order = "b[aluminum-ingot]",
+		stack_size = 100
+	},
 })

@@ -1,5 +1,4 @@
-data:extend(
-{
+data:extend({
   -- base-products --
   -- New group base-products in first place
   {

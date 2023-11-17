@@ -38,4 +38,17 @@ data:extend({
 			{type = "item", name = "aluminum-ingot", amount = 1}
 		}
 	},
+  {
+		type = "recipe",
+		name = "aluminum-frames",  -- #ForRegEx#
+		category = "crafting",
+    enabled = false,
+		energy_required = 5,	-- time in seconds to make the item
+		ingredients = {
+			{type = "item", name = "aluminum-ingot", amount = 1}
+		},
+		results = {
+			{type = "item", name = "aluminum-frames", amount = 3}
+		}
+	},
 })
