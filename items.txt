@@ -6,30 +6,60 @@ Al Aluminum
 	- aluminum frames
 	- (aluminum cables)
 
+C Carbon
+  - graphite
+  - carbon
+  - carbon nanotubes
+  - graphene
+
 Ca Calcium
   - limestone / stone
   - calcium carbonate (for making zement)
   - ceramics
 
 Na Sodium
-  - Sodium Chloride / Salt (NaCl extraction from seawater / lakes)
+  - Sodium Chloride / Salt (NaCl extraction from seawater / lakes) -> can also directly be used for cleaning water
   - used in lamps
   - liquid sodium -> wastewater treatment plants
 
 Mg Magnesium
+  - magnesium chloride (extraction of Mg with electrolysis)
+  - dolomite (dolomite is calcined to magnesium oxide) https://www.britannica.com/technology/magnesium-processing
+  - magnesium slabs
 
 Ti Titanium
+  - titanium ore (TiO2, FeTiO3)
+  - titanium cloride TiCl4 (titanium ore processed)
+  - titanium sponge (TiCl4 + 4Na = Ti + 4NaCl & TiCl4 + 2Mg = Ti + 2MgCl2)
+  - titanium ingots
+  - titanium plates
+  - titanium frames
+  - titanium nitride TiN (used as coat in knifes for anticorrosion and as barrier layer in semiconductors)
+  - titanium carbide TiC (very hard, used in cutting tools)
 
 P Phosphorus
 
 Mn Manganese
 
 Si Silicon
+  - sand
+  - quarz
+  - silica (SiO2 for glass and ceramics)
+  - silicon
+  - high purity silicon
 
 Sn Tin
 	- tinstone (casserite), stannite (Cu2FeSnS4), a copper-iron-tin sulfide, and cylindrite (PbSn4FeSb2S14), a lead-tin-iron-antimony sulfide.
+  - tin ingots
+  - bronze  (60% copper 40% tin)
+  - tin plate (very thin sheet)
 
 Zr Zirconium
+  - zirconium ore
+  - zirconium rods
+  - zircon
+
+Pb Lead
 
 Ta Tantalum
 
@@ -49,6 +79,12 @@ Alloys
 	- aluminum 6000 Series
 
 Basic Intermediates
+  - mechanical components
+    - screw
+    - nut
+    - bolt
+    - gear
+    - bearings
 	- optical components
 		- mirror
 		- lens
@@ -60,6 +96,7 @@ Basic Intermediates
 		- LED
 		- coil
 	- solder
+  - PCB
 	- magnet
 		- permanent magnet
 			- ferrite magnet (iron oxide (commonly known as rust) and strontium carbonate)
@@ -70,6 +107,16 @@ Basic Intermediates
 	- superconductor
   - cement
   - ceramic
+    -
+  - carbon fiber
+  - crucible
+  - catalysts
+    -
+  - bleach -> reduction of unwanted substances (DE: Bleichmittel)
+    - Chlorine dioxide (ClO2) bleach for organic stuff
+    - Chlorine Cl
+  - flange
+  - filter
 
 Intermediates
 	- electric motor
@@ -89,4 +136,3 @@ Endproduct
 	- milling machine
 	- welding machine
 	- electrolysis plant
-
