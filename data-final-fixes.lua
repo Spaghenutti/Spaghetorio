@@ -1,0 +1,2 @@
+-- require("compatibility.krastorio-final-fixes")
+-- require("compatibility.vanilla-furnace")

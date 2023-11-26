@@ -1,0 +1,2 @@
+-- require("prototypes.entity-changes")
+-- require("compatibility.vanilla-furnace")

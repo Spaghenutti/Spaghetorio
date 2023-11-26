@@ -60,8 +60,29 @@ Zr Zirconium
   - zircon
 
 Pb Lead
+  - lead ore (PbS lead sulfite)
+  - lead ingot
+
+Sb Antimony
+  - Stibnite (Sb2S3 Ore)
 
 Ta Tantalum
+
+W Tungsten
+  - tungsten ore ((Fe,Mn)WO4 Wolframite)
+  - ammonium paratungstate (After processing tungsten ore)
+  - tungsten powder (after processing ammonium paratungstate with Na2CO3 sodium carbonate)
+  - tungsten billets
+  - tungsten carbide WC
+
+Y Yittrium
+
+Noble metals
+  - Au Gold
+  - Ag Silver
+  - Pt Platinum
+  - Pd Palladium
+  - Ir Iridium
 
 Rare earths
 
@@ -77,6 +98,9 @@ Alloys
 	- stainless steel
 	- aluminum 2000 Series
 	- aluminum 6000 Series
+  - antimonial lead (5% antimony 95% lead) for lead batteries
+  - lead tin (98% tin 2% lead) for solder
+  - lead silver (1.5% silver 98.5% lead) for strong solder
 
 Basic Intermediates
   - mechanical components
