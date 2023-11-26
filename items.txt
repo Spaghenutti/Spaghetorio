@@ -32,14 +32,14 @@ Mg Magnesium
   - magnesium slabs
 
 Ti Titanium
-  - titanium ore (TiO2, FeTiO3)
-  - titanium cloride TiCl4 (titanium ore processed)
-  - titanium sponge (TiCl4 + 4Na = Ti + 4NaCl & TiCl4 + 2Mg = Ti + 2MgCl2)
-  - titanium ingots
-  - titanium plates
-  - titanium frames
-  - titanium nitride TiN (used as coat in knifes for anticorrosion and as barrier layer in semiconductors)
-  - titanium carbide TiC (very hard, used in cutting tools)
+  + titanium ore (TiO2, FeTiO3)
+  + titanium cloride TiCl4 (titanium ore processed)
+  + titanium sponge (TiCl4 + 4Na = Ti + 4NaCl & TiCl4 + 2Mg = Ti + 2MgCl2)
+  + titanium ingots
+  + titanium plates
+  + titanium frames
+  + titanium nitride TiN (used as coat in knifes for anticorrosion and as barrier layer in semiconductors)
+  + titanium carbide TiC (very hard, used in cutting tools)
 
 P Phosphorus
 

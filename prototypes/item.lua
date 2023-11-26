@@ -119,6 +119,26 @@ data:extend({
 		order = "b[sodium]",
 		stack_size = 100
 	},
+  {
+		type = "item",
+		name = "titanium-cloride",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "processed-resource",
+		order = "b[titanium-cloride]",
+		stack_size = 100
+	},
+  {
+		type = "item",
+		name = "titanium-sponge",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "processed-resource",
+		order = "b[titanium-sponge]",
+		stack_size = 100
+	},
   -- Subgroup raw-material --
 	{
 		type = "item",
@@ -150,6 +170,36 @@ data:extend({
 		order = "c[ceramics]",
 		stack_size = 100
 	},
+  {
+		type = "item",
+		name = "titanium-ingots",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/base/ingot_1.png",
+		icon_size = 256,
+		scale = 0.25,
+		subgroup = "raw-material",
+		order = "c[titanium-ingots]",
+		stack_size = 100
+	},
+  {
+		type = "item",
+		name = "titanium-plates",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/base/ingot_1.png",
+		icon_size = 256,
+		scale = 0.25,
+		subgroup = "raw-material",
+		order = "c[titanium-plates]",
+		stack_size = 100
+	},
+  {
+		type = "item",
+		name = "titanium-frames",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/base/ingot_1.png",
+		icon_size = 256,
+		scale = 0.25,
+		subgroup = "raw-material",
+		order = "c[titanium-frames]",
+		stack_size = 100
+	},
   -- Subgroup advanced-raw-material --
   {
 		type = "item",
@@ -169,6 +219,26 @@ data:extend({
 		scale = 0.5,
 		subgroup = "advanced-raw-material",
 		order = "b[graphene]",
+		stack_size = 100
+	},
+  {
+		type = "item",
+		name = "titanium-nitride",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/base/ingot_1.png",
+		icon_size = 256,
+		scale = 0.25,
+		subgroup = "advanced-raw-material",
+		order = "c[titanium-nitride]",
+		stack_size = 100
+	},
+  {
+		type = "item",
+		name = "titanium-carbide",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/base/ingot_1.png",
+		icon_size = 256,
+		scale = 0.25,
+		subgroup = "advanced-raw-material",
+		order = "c[titanium-carbide]",
 		stack_size = 100
 	},
   -- Subgroup intermediate-product --

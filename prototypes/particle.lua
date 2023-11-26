@@ -416,6 +416,7 @@ data:extend({
 			}
 		}
 	},
+  -- titanium ore
   {
 		type = "optimized-particle",
 		name = "titanium-ore-particle",
