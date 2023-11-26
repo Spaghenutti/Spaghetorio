@@ -81,12 +81,10 @@ Nb Niobium
 
 W Tungsten
   - tungsten ore ((Fe,Mn)WO4 Wolframite)
-  - ammonium paratungstate (After processing tungsten ore)
-  - tungsten powder (after processing ammonium paratungstate with Na2CO3 sodium carbonate)
-  - tungsten billets
-  - tungsten carbide WC
-
-Y Yittrium
+  + ammonium paratungstate (After processing tungsten ore)
+  + tungsten powder (after processing ammonium paratungstate with Na2CO3 sodium carbonate)
+  + tungsten billets
+  + tungsten carbide WC
 
 Noble metals
   - Au Gold
@@ -96,6 +94,10 @@ Noble metals
   - Ir Iridium
 
 Rare earths
+  - Y Yittrium for optical fibers$
+  - La Lanthanum 
+  - Ce Cerium
+  - Nd Neodymium
 
 
 Exotic materials

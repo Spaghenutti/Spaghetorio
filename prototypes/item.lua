@@ -216,6 +216,26 @@ data:extend({
 		order = "b[titanium-sponge]",
 		stack_size = 100
 	},
+  {
+		type = "item",
+		name = "ammonium-paratungstate",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "processed-resource",
+		order = "b[ammonium-paratungstate]",
+		stack_size = 100
+	},
+  {
+		type = "item",
+		name = "tungsten-powder",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "processed-resource",
+		order = "b[tungsten-powder]",
+		stack_size = 100
+	},
   -- Subgroup raw-material --
 	{
 		type = "item",
@@ -377,6 +397,16 @@ data:extend({
 		order = "c[tantalum-billet]",
 		stack_size = 100
 	},
+  {
+		type = "item",
+		name = "tungsten-billet",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "raw-material",
+		order = "c[tungsten-billet]",
+		stack_size = 100
+	},
   -- Subgroup advanced-raw-material --
   {
 		type = "item",
@@ -426,6 +456,16 @@ data:extend({
 		scale = 0.5,
 		subgroup = "advanced-raw-material",
 		order = "c[titanium-carbide]",
+		stack_size = 100
+	},
+  {
+		type = "item",
+		name = "tungsten-carbide",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "advanced-raw-material",
+		order = "c[tungsten-carbide]",
 		stack_size = 100
 	},
   -- Subgroup intermediate-product --
