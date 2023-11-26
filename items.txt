@@ -27,6 +27,7 @@ Cl Chlorine
   + chlorine (solved in water as liquid)
 
 Mg Magnesium
+  - magnesium ore
   - magnesium chloride (extraction of Mg with electrolysis)
   - dolomite (dolomite is calcined to magnesium oxide) https://www.britannica.com/technology/magnesium-processing
   - magnesium slabs
