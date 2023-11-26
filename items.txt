@@ -46,22 +46,23 @@ P Phosphorus
 Mn Manganese
 
 Si Silicon
-  - sand
-  - quarz
-  - silica (SiO2 for glass and ceramics)
-  - silicon
-  - high purity silicon
+  + sand
+  + quartz
+  + silica (SiO2 for glass and ceramics)
+  + silicon
+  + high purity silicon
 
 Sn Tin
 	- tinstone (casserite), stannite (Cu2FeSnS4), a copper-iron-tin sulfide, and cylindrite (PbSn4FeSb2S14), a lead-tin-iron-antimony sulfide.
-  - tin ingots
-  - bronze  (60% copper 40% tin)
-  - tin plate (very thin sheet)
+  + tin ingot
+  + tin sheet (very thin sheet)
+  + bronze rod (60% copper 40% tin) for corrosion resistant stuff
 
 Zr Zirconium
   - zirconium ore
-  - zirconium rods
-  - zircon
+  + zircon (for the lolzs, low change to get this from zircon ore) for nuclear fuel rods
+  + zirconium rod
+  + zirconia (Zirconium dioxide) for hard ceramics
 
 Pb Lead
   - lead ore (PbS lead sulfite)

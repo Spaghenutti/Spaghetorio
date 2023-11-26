@@ -78,6 +78,26 @@ data:extend({
 		order = "b[salt]",
 		stack_size = 100
 	},
+  {
+		type = "item",
+		name = "sand",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 64,
+		icon_mipmaps = 4,
+		subgroup = "raw-resource",
+		order = "b[sand]",
+		stack_size = 100
+	},
+  {
+		type = "item",
+		name = "zircon",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 64,
+		icon_mipmaps = 4,
+		subgroup = "raw-resource",
+		order = "b[zircon]",
+		stack_size = 100
+	},
   -- Subgroup processed-resource --
 	{
 		type = "item",
@@ -117,6 +137,36 @@ data:extend({
 		scale = 0.5,
 		subgroup = "processed-resource",
 		order = "b[sodium]",
+		stack_size = 100
+	},
+  {
+		type = "item",
+		name = "quartz",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "processed-resource",
+		order = "b[quartz]",
+		stack_size = 100
+	},
+  {
+		type = "item",
+		name = "silica",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "processed-resource",
+		order = "b[silica]",
+		stack_size = 100
+	},
+  {
+		type = "item",
+		name = "silicon",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "processed-resource",
+		order = "b[silicon]",
 		stack_size = 100
 	},
   {
@@ -163,9 +213,9 @@ data:extend({
   {
 		type = "item",
 		name = "ceramics",  -- #ForRegEx# - item
-		icon = "__Spaghenutti__/graphics/base/ingot_1.png",
-		icon_size = 256,
-		scale = 0.25,
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
 		subgroup = "raw-material",
 		order = "c[ceramics]",
 		stack_size = 100
@@ -173,9 +223,9 @@ data:extend({
   {
 		type = "item",
 		name = "titanium-ingots",  -- #ForRegEx# - item
-		icon = "__Spaghenutti__/graphics/base/ingot_1.png",
-		icon_size = 256,
-		scale = 0.25,
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
 		subgroup = "raw-material",
 		order = "c[titanium-ingots]",
 		stack_size = 100
@@ -183,9 +233,9 @@ data:extend({
   {
 		type = "item",
 		name = "titanium-plates",  -- #ForRegEx# - item
-		icon = "__Spaghenutti__/graphics/base/ingot_1.png",
-		icon_size = 256,
-		scale = 0.25,
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
 		subgroup = "raw-material",
 		order = "c[titanium-plates]",
 		stack_size = 100
@@ -193,11 +243,71 @@ data:extend({
   {
 		type = "item",
 		name = "titanium-frames",  -- #ForRegEx# - item
-		icon = "__Spaghenutti__/graphics/base/ingot_1.png",
-		icon_size = 256,
-		scale = 0.25,
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
 		subgroup = "raw-material",
 		order = "c[titanium-frames]",
+		stack_size = 100
+	},
+  {
+		type = "item",
+		name = "tin-ingots",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "raw-material",
+		order = "c[tin-ingots]",
+		stack_size = 100
+	},
+  {
+		type = "item",
+		name = "tin-ingot",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "raw-material",
+		order = "c[tin-ingot]",
+		stack_size = 100
+	},
+  {
+		type = "item",
+		name = "tin-sheet",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "raw-material",
+		order = "c[tin-ingots]",
+		stack_size = 100
+	},
+  {
+		type = "item",
+		name = "bronze-rod",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "raw-material",
+		order = "c[bronze-rod]",
+		stack_size = 100
+	},
+  {
+		type = "item",
+		name = "zirconium-rod",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "raw-material",
+		order = "c[zirconium-rod]",
+		stack_size = 100
+	},
+  {
+		type = "item",
+		name = "zirconia",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "raw-material",
+		order = "c[zirconia]",
 		stack_size = 100
 	},
   -- Subgroup advanced-raw-material --
@@ -223,10 +333,20 @@ data:extend({
 	},
   {
 		type = "item",
+		name = "high-purity-silicon",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "advanced-raw-material",
+		order = "b[high-purity-silicon]",
+		stack_size = 100
+	},
+  {
+		type = "item",
 		name = "titanium-nitride",  -- #ForRegEx# - item
-		icon = "__Spaghenutti__/graphics/base/ingot_1.png",
-		icon_size = 256,
-		scale = 0.25,
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
 		subgroup = "advanced-raw-material",
 		order = "c[titanium-nitride]",
 		stack_size = 100
@@ -234,9 +354,9 @@ data:extend({
   {
 		type = "item",
 		name = "titanium-carbide",  -- #ForRegEx# - item
-		icon = "__Spaghenutti__/graphics/base/ingot_1.png",
-		icon_size = 256,
-		scale = 0.25,
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
 		subgroup = "advanced-raw-material",
 		order = "c[titanium-carbide]",
 		stack_size = 100
