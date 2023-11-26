@@ -115,6 +115,16 @@ data:extend({
 		order = "b[zircon]",
 		stack_size = 100
 	},
+  {
+		type = "item",
+		name = "  niobium-powder",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 64,
+		icon_mipmaps = 4,
+		subgroup = "raw-resource",
+		order = "b[niobium-powder]",
+		stack_size = 100
+	},
   -- Subgroup processed-resource --
 	{
 		type = "item",
@@ -325,6 +335,46 @@ data:extend({
 		scale = 0.5,
 		subgroup = "raw-material",
 		order = "c[zirconia]",
+		stack_size = 100
+	},
+  {
+		type = "item",
+		name = "magnesium-slab",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "raw-material",
+		order = "c[magnesium-slab]",
+		stack_size = 100
+	},
+  {
+		type = "item",
+		name = "lead-slab",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "raw-material",
+		order = "c[lead-slab]",
+		stack_size = 100
+	},
+  {
+		type = "item",
+		name = "niobium-billet",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "raw-material",
+		order = "c[niobium-billet]",
+		stack_size = 100
+	},
+  {
+		type = "item",
+		name = "tantalum-billet",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "raw-material",
+		order = "c[tantalum-billet]",
 		stack_size = 100
 	},
   -- Subgroup advanced-raw-material --

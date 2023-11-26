@@ -27,10 +27,9 @@ Cl Chlorine
   + chlorine (solved in water as liquid)
 
 Mg Magnesium
-  - magnesium ore
+  + magnesium ore / dolomite (dolomite is calcined to magnesium oxide) https://www.britannica.com/technology/magnesium-processing
   - magnesium chloride (extraction of Mg with electrolysis)
-  - dolomite (dolomite is calcined to magnesium oxide) https://www.britannica.com/technology/magnesium-processing
-  - magnesium slabs
+  + magnesium slabs
 
 Ti Titanium
   + titanium ore (TiO2, FeTiO3)
@@ -70,9 +69,15 @@ Pb Lead
   - lead ingot
 
 Sb Antimony
-  - Stibnite (Sb2S3 Ore)
+  - stibnite (Sb2S3 Ore)
+  - (used in some plastics)
 
-Ta Tantalum
+Nb Niobium
+  + niobium powder (filtered from sand also contains Ta tantalum)
+  + aqueous niobium (90 %) (in chemical plant with fluoride)
+  + aqueous tantalum (10 %) (in chemical plant with fluoride)
+  + niobium billets (for superconductors and magnets) 
+  + tantalum billets (for high energy phisics)
 
 W Tungsten
   - tungsten ore ((Fe,Mn)WO4 Wolframite)
