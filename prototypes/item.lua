@@ -51,6 +51,16 @@ data:extend({
 		order = "b[limestone]",
 		stack_size = 200
 	},
+  {
+		type = "item",
+		name = "salt",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 64,
+		icon_mipmaps = 4,
+		subgroup = "raw-resource",
+		order = "b[salt]",
+		stack_size = 100
+	},
   -- Subgroup processed-resource --
 	{
 		type = "item",
@@ -72,6 +82,26 @@ data:extend({
 		order = "b[graphite]",
 		stack_size = 100
 	},
+  {
+		type = "item",
+		name = "calcium-carbonate",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "processed-resource",
+		order = "b[calcium-carbonate]",
+		stack_size = 100
+	},
+  {
+		type = "item",
+		name = "sodium",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "processed-resource",
+		order = "b[sodium]",
+		stack_size = 100
+	},
   -- Subgroup raw-material --
 	{
 		type = "item",
@@ -91,6 +121,16 @@ data:extend({
 		scale = 0.25,
 		subgroup = "raw-material",
 		order = "c[aluminum-ingot]",
+		stack_size = 100
+	},
+  {
+		type = "item",
+		name = "ceramics",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/base/ingot_1.png",
+		icon_size = 256,
+		scale = 0.25,
+		subgroup = "raw-material",
+		order = "c[ceramics]",
 		stack_size = 100
 	},
   -- Subgroup advanced-raw-material --
