@@ -16,14 +16,25 @@ data:extend({
     group = "base-products",
     order = "a"
   },
+  {
+    type = "item-subgroup",
+    name = "processed-resource",
+    group = "base-products",
+    order = "b"
+  },
   -- move raw-resources to new item group base-products
   {
     type = "item-subgroup",
     name = "raw-material",
     group = "base-products",
-    order = "b"
+    order = "c"
   },
-
+  {
+    type = "item-subgroup",
+    name = "advanced-raw-material",
+    group = "base-products",
+    order = "d"
+  },
   -- intermediate-products --
   -- Set intermediate-products to second place
   {

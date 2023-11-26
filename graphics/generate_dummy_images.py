@@ -27,7 +27,11 @@ with open(ITEMS_PATH) as f:
     items_lua = f.read()
 item_names = re.findall(NAMES_REGEX, items_lua)
 
-# Generate images
+# Generate default item image
+img = Image.new(mode="RGBA", size=(HR_ICON_RES, HR_ICON_RES), color=ITEM_BACKGROUND_COLOR)
+img.save(f"{PATH_PREFIX}graphics/dummy/dummy-item-default.png")
+
+# Generate all item images
 for item_name in item_names:
     # Create image with background
     img = Image.new(mode="RGBA", size=(HR_ICON_RES, HR_ICON_RES), color=ITEM_BACKGROUND_COLOR)
@@ -41,6 +45,10 @@ for item_name in item_names:
                 fill=FONT_COLOR)
 
     img.save(f"{PATH_PREFIX}graphics/dummy/dummy-item-{item_name}.png")
+
+# Generate default recepie image
+img = Image.new(mode="RGBA", size=(HR_ICON_RES, HR_ICON_RES), color=RECEPIE_BACKGROUND_COLOR)
+img.save(f"{PATH_PREFIX}graphics/dummy/dummy-recepie-default.png")
 
 # Get all recepie names
 with open(RECEPIES_PATH) as f:
@@ -61,6 +69,10 @@ for recepie_name in recepie_names:
                 fill=FONT_COLOR)
 
     img.save(f"{PATH_PREFIX}graphics/dummy/dummy-recepie-{recepie_name}.png")
+
+# Generate default technology image
+img = Image.new(mode="RGBA", size=(HR_ICON_RES, HR_ICON_RES), color=TECHNOLOGY_BACKGROUND_COLOR)
+img.save(f"{PATH_PREFIX}graphics/dummy/dummy-technology-default.png")
 
 # Get all technology names
 with open(TECHNOLOGIES_PATH) as f:

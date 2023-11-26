@@ -15,4 +15,12 @@ data:extend({
 		richness = true,
 		order = "c"
 	},
+  {
+		type = "autoplace-control",
+		localised_name = {"", "[entity=limestone] ", {"entity-name.limestone"}},
+		category = "resource",
+		name = "limestone",
+		richness = true,
+		order = "c"
+	},
 })

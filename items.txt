@@ -1,19 +1,19 @@
 Al Aluminum
-	- aluminum-ore (bauxite)
-	- alumina
-	- (aluminum sheet)
-	- aluminum ingot
-	- aluminum frames
-	- (aluminum cables)
+	+ aluminum-ore (bauxite)
+	+ alumina
+	+ (aluminum sheet)
+	+ aluminum ingot
+	+ aluminum frames
+	+ (aluminum cables)
 
 C Carbon
-  - graphite
-  - carbon
-  - carbon nanotubes
-  - graphene
+  + graphite
+  - (carbon)
+  + carbon nanotubes
+  + graphene
 
 Ca Calcium
-  - limestone / stone
+  + limestone / stone
   - calcium carbonate (for making zement)
   - ceramics
 

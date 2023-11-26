@@ -1,8 +1,9 @@
 data:extend({
+  -- Subgroup raw-resource --
 	{
 		type = "item",
 		name = "aluminum-ore",  -- #ForRegEx# - item
-		icon = "__Spaghenutti__/graphics/base/ore/ore-1.png",
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
 		tint = {r=1.0, g=0.2, b=0.2, a=1.0},
 		icon_size = 64,
 		icon_mipmaps = 4,
@@ -13,13 +14,13 @@ data:extend({
 			{ size = 64, filename = "__Spaghenutti__/graphics/base/ore/ore-4.png", scale = 0.25, mipmap_count = 4, tint={r=1.0, g=0.2, b=0.2, a=1.0} }
 		},
 		subgroup = "raw-resource",
-		order = "a[aluminum-ore]",
+		order = "b[aluminum-ore]",
 		stack_size = 200
 	},
   {
 		type = "item",
 		name = "chromite",  -- #ForRegEx# - item
-		icon = "__Spaghenutti__/graphics/base/ore/ore-1.png",
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
 		tint = {r=0.5, g=0.5, b=1.0, a=1.0},
 		icon_size = 64,
 		icon_mipmaps = 4,
@@ -30,19 +31,48 @@ data:extend({
 			{ size = 64, filename = "__Spaghenutti__/graphics/base/ore/ore-4.png", scale = 0.25, mipmap_count = 4, tint={r=1.0, g=0.2, b=0.2, a=1.0} }
 		},
 		subgroup = "raw-resource",
-		order = "a[chromite]",
+		order = "b[chromite]",
 		stack_size = 200
 	},
+  {
+		type = "item",
+		name = "limestone",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		tint = {r=0.5, g=0.5, b=1.0, a=1.0},
+		icon_size = 64,
+		icon_mipmaps = 4,
+		pictures = {
+			{ size = 64, filename = "__Spaghenutti__/graphics/base/ore/ore-1.png", scale = 0.25, mipmap_count = 4, tint={r=1.0, g=0.2, b=0.2, a=1.0} },
+			{ size = 64, filename = "__Spaghenutti__/graphics/base/ore/ore-2.png", scale = 0.25, mipmap_count = 4, tint={r=1.0, g=0.2, b=0.2, a=1.0} },
+			{ size = 64, filename = "__Spaghenutti__/graphics/base/ore/ore-3.png", scale = 0.25, mipmap_count = 4, tint={r=1.0, g=0.2, b=0.2, a=1.0} },
+			{ size = 64, filename = "__Spaghenutti__/graphics/base/ore/ore-4.png", scale = 0.25, mipmap_count = 4, tint={r=1.0, g=0.2, b=0.2, a=1.0} }
+		},
+		subgroup = "raw-resource",
+		order = "b[limestone]",
+		stack_size = 200
+	},
+  -- Subgroup processed-resource --
 	{
 		type = "item",
 		name = "alumina",  -- #ForRegEx# - item
 		icon = "__Spaghenutti__/graphics/icons/alumina.png",
 		icon_size = 64,
 		icon_mipmaps = 4,
-		subgroup = "raw-resource",
+		subgroup = "processed-resource",
 		order = "b[alumina]",
 		stack_size = 100
 	},
+  {
+		type = "item",
+		name = "graphite",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "processed-resource",
+		order = "b[graphite]",
+		stack_size = 100
+	},
+  -- Subgroup raw-material --
 	{
 		type = "item",
 		name = "aluminum-sheet",  -- #ForRegEx# - item
@@ -50,7 +80,7 @@ data:extend({
 		icon_size = 128,
 		scale = 0.25,
 		subgroup = "raw-material",
-		order = "b[aluminum-sheet]",
+		order = "c[aluminum-sheet]",
 		stack_size = 100
 	},
 	{
@@ -60,9 +90,31 @@ data:extend({
 		icon_size = 256,
 		scale = 0.25,
 		subgroup = "raw-material",
-		order = "b[aluminum-ingot]",
+		order = "c[aluminum-ingot]",
 		stack_size = 100
 	},
+  -- Subgroup advanced-raw-material --
+  {
+		type = "item",
+		name = "carbon-nanotubes",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "advanced-raw-material",
+		order = "b[carbon-nanotubes]",
+		stack_size = 100
+	},
+  {
+		type = "item",
+		name = "graphene",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "advanced-raw-material",
+		order = "b[graphene]",
+		stack_size = 100
+	},
+  -- Subgroup intermediate-product --
   {
 		type = "item",
 		name = "aluminum-frames",  -- #ForRegEx# - item
@@ -73,7 +125,17 @@ data:extend({
 			{ size = 128, filename = "__Spaghenutti__/graphics/dummy/dummy-item-aluminum-frames.png", scale = 0.5, tint={r=1.0, g=0.2, b=0.2, a=1.0} },
 		},
 		subgroup = "intermediate-product",
-		order = "b[aluminum-ingot]",
+		order = "c[aluminum-frames]",
+		stack_size = 100
+	},
+  {
+		type = "item",
+		name = "aluminum-cable",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "intermediate-product",
+		order = "c[aluminum-cable]",
 		stack_size = 100
 	},
 })
