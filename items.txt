@@ -94,14 +94,16 @@ Noble metals
   - Ir Iridium
 
 Rare earths
-  - Y Yittrium for optical fibers$
+  - Y Yittrium for optical fibers
   - La Lanthanum 
   - Ce Cerium
   - Nd Neodymium
 
-
 Exotic materials
-	
+	- Hypercrystals
+  - Quantum Crystals
+  - Chronalite
+  - Gravitonium
 
 Alien materials
 	- meteorite
@@ -154,6 +156,7 @@ Basic Intermediates
     - Chlorine Cl
   - flange
   - filter
+  - cooling fluid
 
 Intermediates
 	- electric motor
@@ -167,9 +170,38 @@ Intermediates
 	- processor
   - laser
 
+High tech stuff
+  - boson einstein condensate
+  - Nanomachines
+
 Endproduct
 	- windmill
 	- lithography machine
 	- milling machine
 	- welding machine
 	- electrolysis plant
+
+Sciences
+  - geological science pack
+  - computer science pack
+  - electrical science pack
+  - astronomical science pack
+  - robotical science pack
+  - quantum computing science pack
+  - material science pack
+  - quantum phisics science pack
+  - high dimensional science pack
+
+
+Other stuff from chat gpt:
+  - Chronomatter: A fictional material that can manipulate time and space. It could be used to create time machines, teleportation devices, and other advanced technologies.
+  - Quantum Foam: A fictional material that is composed of tiny bubbles of space-time. It could be used to create wormholes, warp drives, and other exotic technologies.
+  - Plasma Crystals: A fictional material that is composed of charged particles in a crystalline structure. It could be used to create advanced energy storage devices, plasma weapons, and other futuristic technologies.
+  - Neuralink: A fictional material that can interface directly with the human brain. It could be used to create advanced prosthetics, mind-controlled devices, and other cutting-edge technologies.
+  - Dark Matter: A hypothetical form of matter that is believed to permeate the universe. It could be used to create advanced propulsion systems, energy storage devices, and other exotic technologies.
+  - Gravitonium: A fictional material that can manipulate gravity. It could be used to create anti-gravity devices, artificial gravity generators, and other advanced technologies.
+  - Chronalite: A fictional material that can absorb and store temporal energy. It could be used to create time shields, temporal weapons, and other advanced technologies.
+  - Nanomachines: A fictional material that is composed of tiny machines that can self-replicate and perform complex tasks. It could be used to create advanced manufacturing systems, medical devices, and other futuristic technologies.
+  - Quantum Crystals: A fictional material that is composed of quantum particles in a crystalline structure. It could be used to create advanced computing systems, quantum communication devices, and other exotic technologies.
+  - Hypercrystals: A fictional material that is composed of exotic particles in a crystalline structure. It could be used to create advanced energy storage devices, hyperdrive engines, and other futuristic technologies.
+  - I hope these ideas help you get started! Let me know if you need more suggestions.
