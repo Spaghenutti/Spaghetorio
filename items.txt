@@ -169,6 +169,7 @@ Intermediates
 	- Engine
 	- processor
   - laser
+  - heat resistant tiles
 
 High tech stuff
   - boson einstein condensate

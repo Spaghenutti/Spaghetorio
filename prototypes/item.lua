@@ -117,7 +117,7 @@ data:extend({
 	},
   {
 		type = "item",
-		name = "  niobium-powder",  -- #ForRegEx# - item
+		name = "niobium-powder",  -- #ForRegEx# - item
 		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
 		icon_size = 64,
 		icon_mipmaps = 4,
