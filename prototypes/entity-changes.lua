@@ -37,9 +37,17 @@ end
 -- Changes steel-plate
 changeItemIcon("steel-plate", "__Spaghenutti__/graphics/dummy/dummy-item-replacement-default.png", 128, nil)
 
--- Add items to fuel subgroup
+-- Change subgroup of items
 data.raw.item["solid-fuel"].subgroup = "fuel"
 data.raw.item["rocket-fuel"].subgroup = "fuel"
 data.raw.item["nuclear-fuel"].subgroup = "fuel"
 data.raw.item["uranium-fuel-cell"].subgroup = "fuel"
 data.raw.item["used-up-uranium-fuel-cell"].subgroup = "fuel"
+
+data.raw.item["uranium-238"].subgroup = "processed-resource"
+data.raw.item["uranium-235"].subgroup = "processed-resource"
+
+data.raw.item["battery"].subgroup = "intermediate-product"
+
+data.raw.item["explosives"].subgroup = "ammo"
+data.raw.item["explosives"].order = "a-a"
