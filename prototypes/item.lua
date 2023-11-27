@@ -14,7 +14,7 @@ data:extend({
 			{ size = 64, filename = "__Spaghenutti__/graphics/base/ore/ore-4.png", scale = 0.25, mipmap_count = 4, tint={r=1.0, g=0.2, b=0.2, a=1.0} }
 		},
 		subgroup = "raw-resource",
-		order = "b[aluminum-ore]",
+		order = "[aluminum-ore]",
 		stack_size = 200
 	},
   {
@@ -31,7 +31,7 @@ data:extend({
 			{ size = 64, filename = "__Spaghenutti__/graphics/base/ore/ore-4.png", scale = 0.25, mipmap_count = 4, tint={r=1.0, g=0.2, b=0.2, a=1.0} }
 		},
 		subgroup = "raw-resource",
-		order = "b[chromite]",
+		order = "[chromite]",
 		stack_size = 200
 	},
   {
@@ -48,7 +48,7 @@ data:extend({
 			{ size = 64, filename = "__Spaghenutti__/graphics/base/ore/ore-4.png", scale = 0.25, mipmap_count = 4, tint={r=1.0, g=0.2, b=0.2, a=1.0} }
 		},
 		subgroup = "raw-resource",
-		order = "b[limestone]",
+		order = "[limestone]",
 		stack_size = 200
 	},
   {
@@ -65,7 +65,7 @@ data:extend({
 			{ size = 64, filename = "__Spaghenutti__/graphics/base/ore/ore-4.png", scale = 0.25, mipmap_count = 4, tint={r=1.0, g=0.2, b=0.2, a=1.0} }
 		},
 		subgroup = "raw-resource",
-		order = "b[titanium-ore]",
+		order = "[titanium-ore]",
 		stack_size = 200
 	},
   {
@@ -82,7 +82,7 @@ data:extend({
 			{ size = 64, filename = "__Spaghenutti__/graphics/base/ore/ore-4.png", scale = 0.25, mipmap_count = 4, tint={r=1.0, g=0.2, b=0.2, a=1.0} }
 		},
 		subgroup = "raw-resource",
-		order = "b[magnesium-ore]",
+		order = "[magnesium-ore]",
 		stack_size = 200
 	},
   {
@@ -92,7 +92,7 @@ data:extend({
 		icon_size = 64,
 		icon_mipmaps = 4,
 		subgroup = "raw-resource",
-		order = "b[salt]",
+		order = "[salt]",
 		stack_size = 100
 	},
   {
@@ -102,7 +102,7 @@ data:extend({
 		icon_size = 64,
 		icon_mipmaps = 4,
 		subgroup = "raw-resource",
-		order = "b[sand]",
+		order = "[sand]",
 		stack_size = 100
 	},
   {
@@ -112,7 +112,7 @@ data:extend({
 		icon_size = 64,
 		icon_mipmaps = 4,
 		subgroup = "raw-resource",
-		order = "b[zircon]",
+		order = "[zircon]",
 		stack_size = 100
 	},
   {
@@ -122,7 +122,7 @@ data:extend({
 		icon_size = 64,
 		icon_mipmaps = 4,
 		subgroup = "raw-resource",
-		order = "b[niobium-powder]",
+		order = "[niobium-powder]",
 		stack_size = 100
 	},
   -- Subgroup processed-resource --
@@ -133,7 +133,7 @@ data:extend({
 		icon_size = 64,
 		icon_mipmaps = 4,
 		subgroup = "processed-resource",
-		order = "b[alumina]",
+		order = "[alumina]",
 		stack_size = 100
 	},
   {
@@ -143,7 +143,7 @@ data:extend({
 		icon_size = 128,
 		scale = 0.5,
 		subgroup = "processed-resource",
-		order = "b[graphite]",
+		order = "[graphite]",
 		stack_size = 100
 	},
   {
@@ -153,7 +153,7 @@ data:extend({
 		icon_size = 128,
 		scale = 0.5,
 		subgroup = "processed-resource",
-		order = "b[calcium-carbonate]",
+		order = "[calcium-carbonate]",
 		stack_size = 100
 	},
   {
@@ -163,7 +163,7 @@ data:extend({
 		icon_size = 128,
 		scale = 0.5,
 		subgroup = "processed-resource",
-		order = "b[sodium]",
+		order = "[sodium]",
 		stack_size = 100
 	},
   {
@@ -173,7 +173,7 @@ data:extend({
 		icon_size = 128,
 		scale = 0.5,
 		subgroup = "processed-resource",
-		order = "b[quartz]",
+		order = "[quartz]",
 		stack_size = 100
 	},
   {
@@ -183,7 +183,7 @@ data:extend({
 		icon_size = 128,
 		scale = 0.5,
 		subgroup = "processed-resource",
-		order = "b[silica]",
+		order = "[silica]",
 		stack_size = 100
 	},
   {
@@ -193,7 +193,7 @@ data:extend({
 		icon_size = 128,
 		scale = 0.5,
 		subgroup = "processed-resource",
-		order = "b[silicon]",
+		order = "[silicon]",
 		stack_size = 100
 	},
   {
@@ -203,7 +203,7 @@ data:extend({
 		icon_size = 128,
 		scale = 0.5,
 		subgroup = "processed-resource",
-		order = "b[titanium-cloride]",
+		order = "[titanium-cloride]",
 		stack_size = 100
 	},
   {
@@ -213,7 +213,7 @@ data:extend({
 		icon_size = 128,
 		scale = 0.5,
 		subgroup = "processed-resource",
-		order = "b[titanium-sponge]",
+		order = "[titanium-sponge]",
 		stack_size = 100
 	},
   {
@@ -223,7 +223,7 @@ data:extend({
 		icon_size = 128,
 		scale = 0.5,
 		subgroup = "processed-resource",
-		order = "b[ammonium-paratungstate]",
+		order = "[ammonium-paratungstate]",
 		stack_size = 100
 	},
   {
@@ -233,7 +233,7 @@ data:extend({
 		icon_size = 128,
 		scale = 0.5,
 		subgroup = "processed-resource",
-		order = "b[tungsten-powder]",
+		order = "[tungsten-powder]",
 		stack_size = 100
 	},
   -- Subgroup raw-material --
@@ -244,7 +244,7 @@ data:extend({
 		icon_size = 128,
 		scale = 0.25,
 		subgroup = "raw-material",
-		order = "c[aluminum-sheet]",
+		order = "[aluminum-sheet]",
 		stack_size = 100
 	},
 	{
@@ -254,7 +254,7 @@ data:extend({
 		icon_size = 256,
 		scale = 0.25,
 		subgroup = "raw-material",
-		order = "c[aluminum-ingot]",
+		order = "[aluminum-ingot]",
 		stack_size = 100
 	},
   {
@@ -264,7 +264,7 @@ data:extend({
 		icon_size = 128,
 		scale = 0.5,
 		subgroup = "raw-material",
-		order = "c[ceramics]",
+		order = "[ceramics]",
 		stack_size = 100
 	},
   {
@@ -274,7 +274,7 @@ data:extend({
 		icon_size = 128,
 		scale = 0.5,
 		subgroup = "raw-material",
-		order = "c[titanium-ingots]",
+		order = "[titanium-ingots]",
 		stack_size = 100
 	},
   {
@@ -284,7 +284,7 @@ data:extend({
 		icon_size = 128,
 		scale = 0.5,
 		subgroup = "raw-material",
-		order = "c[titanium-plate]",
+		order = "[titanium-plate]",
 		stack_size = 100
 	},
   {
@@ -294,7 +294,7 @@ data:extend({
 		icon_size = 128,
 		scale = 0.5,
 		subgroup = "raw-material",
-		order = "c[titanium-frames]",
+		order = "[titanium-frames]",
 		stack_size = 100
 	},
   {
@@ -304,7 +304,7 @@ data:extend({
 		icon_size = 128,
 		scale = 0.5,
 		subgroup = "raw-material",
-		order = "c[tin-ingots]",
+		order = "[tin-ingots]",
 		stack_size = 100
 	},
   {
@@ -314,7 +314,7 @@ data:extend({
 		icon_size = 128,
 		scale = 0.5,
 		subgroup = "raw-material",
-		order = "c[tin-ingot]",
+		order = "[tin-ingot]",
 		stack_size = 100
 	},
   {
@@ -324,7 +324,7 @@ data:extend({
 		icon_size = 128,
 		scale = 0.5,
 		subgroup = "raw-material",
-		order = "c[tin-ingots]",
+		order = "[tin-ingots]",
 		stack_size = 100
 	},
   {
@@ -334,7 +334,7 @@ data:extend({
 		icon_size = 128,
 		scale = 0.5,
 		subgroup = "raw-material",
-		order = "c[bronze-rod]",
+		order = "[bronze-rod]",
 		stack_size = 100
 	},
   {
@@ -344,7 +344,7 @@ data:extend({
 		icon_size = 128,
 		scale = 0.5,
 		subgroup = "raw-material",
-		order = "c[zirconium-rod]",
+		order = "[zirconium-rod]",
 		stack_size = 100
 	},
   {
@@ -354,7 +354,7 @@ data:extend({
 		icon_size = 128,
 		scale = 0.5,
 		subgroup = "raw-material",
-		order = "c[zirconia]",
+		order = "[zirconia]",
 		stack_size = 100
 	},
   {
@@ -364,7 +364,7 @@ data:extend({
 		icon_size = 128,
 		scale = 0.5,
 		subgroup = "raw-material",
-		order = "c[magnesium-slab]",
+		order = "[magnesium-slab]",
 		stack_size = 100
 	},
   {
@@ -374,7 +374,7 @@ data:extend({
 		icon_size = 128,
 		scale = 0.5,
 		subgroup = "raw-material",
-		order = "c[lead-slab]",
+		order = "[lead-slab]",
 		stack_size = 100
 	},
   {
@@ -384,7 +384,7 @@ data:extend({
 		icon_size = 128,
 		scale = 0.5,
 		subgroup = "raw-material",
-		order = "c[niobium-billet]",
+		order = "[niobium-billet]",
 		stack_size = 100
 	},
   {
@@ -394,7 +394,7 @@ data:extend({
 		icon_size = 128,
 		scale = 0.5,
 		subgroup = "raw-material",
-		order = "c[tantalum-billet]",
+		order = "[tantalum-billet]",
 		stack_size = 100
 	},
   {
@@ -404,7 +404,48 @@ data:extend({
 		icon_size = 128,
 		scale = 0.5,
 		subgroup = "raw-material",
-		order = "c[tungsten-billet]",
+		order = "[tungsten-billet]",
+		stack_size = 100
+	},
+  -- subgroup alloy --
+  {
+		type = "item",
+		name = "stainless-steel",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "alloy",
+		order = "[stainless-steel]",
+		stack_size = 100
+	},
+  {
+		type = "item",
+		name = "duralumin",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "alloy",
+		order = "[duralumin]",
+		stack_size = 100
+	},
+  {
+		type = "item",
+		name = "aluminum-brass",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "alloy",
+		order = "[aluminum-brass]",
+		stack_size = 100
+	},
+  {
+		type = "item",
+		name = "antimonial-lead",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "alloy",
+		order = "[antimonial-lead]",
 		stack_size = 100
 	},
   -- Subgroup advanced-raw-material --
@@ -415,7 +456,7 @@ data:extend({
 		icon_size = 128,
 		scale = 0.5,
 		subgroup = "advanced-raw-material",
-		order = "b[carbon-nanotubes]",
+		order = "[carbon-nanotubes]",
 		stack_size = 100
 	},
   {
@@ -425,7 +466,7 @@ data:extend({
 		icon_size = 128,
 		scale = 0.5,
 		subgroup = "advanced-raw-material",
-		order = "b[graphene]",
+		order = "[graphene]",
 		stack_size = 100
 	},
   {
@@ -435,7 +476,7 @@ data:extend({
 		icon_size = 128,
 		scale = 0.5,
 		subgroup = "advanced-raw-material",
-		order = "b[high-purity-silicon]",
+		order = "[high-purity-silicon]",
 		stack_size = 100
 	},
   {
@@ -445,7 +486,7 @@ data:extend({
 		icon_size = 128,
 		scale = 0.5,
 		subgroup = "advanced-raw-material",
-		order = "c[titanium-nitride]",
+		order = "[titanium-nitride]",
 		stack_size = 100
 	},
   {
@@ -455,7 +496,7 @@ data:extend({
 		icon_size = 128,
 		scale = 0.5,
 		subgroup = "advanced-raw-material",
-		order = "c[titanium-carbide]",
+		order = "[titanium-carbide]",
 		stack_size = 100
 	},
   {
@@ -465,7 +506,7 @@ data:extend({
 		icon_size = 128,
 		scale = 0.5,
 		subgroup = "advanced-raw-material",
-		order = "c[tungsten-carbide]",
+		order = "[tungsten-carbide]",
 		stack_size = 100
 	},
   -- Subgroup intermediate-product --
@@ -479,7 +520,7 @@ data:extend({
 			{ size = 128, filename = "__Spaghenutti__/graphics/dummy/dummy-item-aluminum-frames.png", scale = 0.5, tint={r=1.0, g=0.2, b=0.2, a=1.0} },
 		},
 		subgroup = "intermediate-product",
-		order = "c[aluminum-frames]",
+		order = "[aluminum-frames]",
 		stack_size = 100
 	},
   {
@@ -489,7 +530,37 @@ data:extend({
 		icon_size = 128,
 		scale = 0.5,
 		subgroup = "intermediate-product",
-		order = "c[aluminum-cable]",
+		order = "[aluminum-cable]",
+		stack_size = 100
+	},
+  {
+		type = "item",
+		name = "solder",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "intermediate-product",
+		order = "[solder]",
+		stack_size = 100
+	},
+  {
+		type = "item",
+		name = "silver-solder",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "intermediate-product",
+		order = "[silver-solder]",
+		stack_size = 100
+	},
+  {
+		type = "item",
+		name = "steel-gear",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "intermediate-product",
+		order = "[steel-gear]",
 		stack_size = 100
 	},
 })

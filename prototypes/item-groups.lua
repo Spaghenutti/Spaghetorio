@@ -31,9 +31,15 @@ data:extend({
   },
   {
     type = "item-subgroup",
-    name = "advanced-raw-material",
+    name = "alloy",
     group = "base-products",
     order = "d"
+  },
+  {
+    type = "item-subgroup",
+    name = "advanced-raw-material",
+    group = "base-products",
+    order = "e"
   },
   -- intermediate-products --
   -- Set intermediate-products to second place
@@ -48,9 +54,21 @@ data:extend({
   },
   {
     type = "item-subgroup",
-    name = "fuel",
+    name = "mechanical-components",
     group = "intermediate-products",
     order = "d"
+  },
+  {
+    type = "item-subgroup",
+    name = "electrical-components",
+    group = "intermediate-products",
+    order = "e"
+  },
+  {
+    type = "item-subgroup",
+    name = "fuel",
+    group = "intermediate-products",
+    order = "f"
   },
   -- logistics --
   -- Set logistics to third place

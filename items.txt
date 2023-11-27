@@ -86,6 +86,8 @@ W Tungsten
   + tungsten billets
   + tungsten carbide WC
 
+Hg Mercury
+
 Noble metals
   - Au Gold
   - Ag Silver
@@ -110,10 +112,10 @@ Alien materials
 
 Alloys
 	- steel
-	- stainless steel
-	- aluminum 2000 Series
-	- aluminum 6000 Series
-  - antimonial lead (5% antimony 95% lead) for lead batteries
+	+ stainless steel
+	+ duralumin - aluminum 2000 Series (aerospace)
+	+ aluminum brass - aluminum 7000 Series (strong alloy)
+  + antimonial lead (5% antimony 95% lead) for lead batteries
   - lead tin (98% tin 2% lead) for solder
   - lead silver (1.5% silver 98.5% lead) for strong solder
 
@@ -134,7 +136,8 @@ Basic Intermediates
 		- transistor
 		- LED
 		- coil
-	- solder
+	+ solder
+  + silver solder
   - PCB
 	- magnet
 		- permanent magnet
