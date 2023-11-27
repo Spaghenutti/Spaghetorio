@@ -9,5 +9,3 @@ require("prototypes.particle")
 require("prototypes.recepie")
 require("prototypes.resource")
 -- require("prototypes.technology")  -- add technology back when all items are created :)
-
-require("compatibility.vanilla_changes.vanilla_changes_item")

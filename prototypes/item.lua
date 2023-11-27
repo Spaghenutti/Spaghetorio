@@ -279,12 +279,12 @@ data:extend({
 	},
   {
 		type = "item",
-		name = "titanium-plates",  -- #ForRegEx# - item
+		name = "titanium-plate",  -- #ForRegEx# - item
 		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
 		icon_size = 128,
 		scale = 0.5,
 		subgroup = "raw-material",
-		order = "c[titanium-plates]",
+		order = "c[titanium-plate]",
 		stack_size = 100
 	},
   {

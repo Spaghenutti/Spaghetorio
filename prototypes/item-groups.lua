@@ -46,7 +46,12 @@ data:extend({
     icon_size = 128,
     icon_mipmaps = 2
   },
-
+  {
+    type = "item-subgroup",
+    name = "fuel",
+    group = "intermediate-products",
+    order = "d"
+  },
   -- logistics --
   -- Set logistics to third place
   {
