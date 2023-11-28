@@ -66,7 +66,7 @@ Zr Zirconium
 
 Pb Lead
   - lead ore (PbS lead sulfite)
-  - lead ingot
+  + lead slab
 
 Sb Antimony
   - stibnite (Sb2S3 Ore)
@@ -89,26 +89,32 @@ W Tungsten
 Hg Mercury
 
 Noble metals
-  - Au Gold
-  - Ag Silver
-  - Pt Platinum
-  - Pd Palladium
-  - Ir Iridium
+  + Au Gold  - from water via washing
+  + Ag Silver  - from copper ore via hydrolisys
+  + Pt Platinum  - from stone refining via pyrolysis
+  + Pd Palladium  - from nickel refining
+  + Ir Iridium  - very very rare
 
 Rare earths
-  - Y Yittrium for optical fibers
-  - La Lanthanum 
-  - Ce Cerium
-  - Nd Neodymium
+  + Y Yittrium  - for optical fibers
+  + La Lanthanum 
+  + Ce Cerium
+  + Nd Neodymium
 
 Exotic materials
 	- Hypercrystals
   - Quantum Crystals
   - Chronalite
   - Gravitonium
+  - Titanite
 
 Alien materials
 	- meteorite
+  - torqridium  
+  - ulmon  - liquid
+  - rummite
+  - thruttodsium
+
 
 Alloys
 	- steel
@@ -121,14 +127,14 @@ Alloys
 
 Basic Intermediates
   - mechanical components
-    - screw
-    - nut
-    - bolt
-    - gear
-    - bearings
+    + bolt (nuts and bolds)
+    + gear
+    + bearings
 	- optical components
 		- mirror
 		- lens
+    - infra red filter
+    - cmos
 	- electrical components
 		- resistor
 		- capacitor
@@ -149,7 +155,7 @@ Basic Intermediates
 	- superconductor
   - cement
   - ceramic
-    -
+    - diamond
   - carbon fiber
   - crucible
   - catalysts
@@ -162,10 +168,13 @@ Basic Intermediates
   - cooling fluid
 
 Intermediates
+  - cryostat
 	- electric motor
 	- heat exchanger
 	- heat pipe
 	- spark plug
+  - tank
+  - turbine blade
 	- turbopump
 	- nozzle
 	- rocket engine

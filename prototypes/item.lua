@@ -236,6 +236,96 @@ data:extend({
 		order = "[tungsten-powder]",
 		stack_size = 100
 	},
+  {
+		type = "item",
+		name = "gold",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "processed-resource",
+		order = "[gold]",
+		stack_size = 100
+	},
+  {
+		type = "item",
+		name = "silver",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "processed-resource",
+		order = "[silver]",
+		stack_size = 100
+	},
+  {
+		type = "item",
+		name = "platinum",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "processed-resource",
+		order = "[platinum]",
+		stack_size = 100
+	},
+  {
+		type = "item",
+		name = "palladium",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "processed-resource",
+		order = "[palladium]",
+		stack_size = 100
+	},
+  {
+		type = "item",
+		name = "iridium",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "processed-resource",
+		order = "[iridium]",
+		stack_size = 100
+	},
+  {
+		type = "item",
+		name = "yittrium",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "processed-resource",
+		order = "[yittrium]",
+		stack_size = 100
+	},
+  {
+		type = "item",
+		name = "lanthanum",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "processed-resource",
+		order = "[lanthanum]",
+		stack_size = 100
+	},
+  {
+		type = "item",
+		name = "cerium",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "processed-resource",
+		order = "[cerium]",
+		stack_size = 100
+	},
+  {
+		type = "item",
+		name = "neodymium",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "processed-resource",
+		order = "[neodymium]",
+		stack_size = 100
+	},
   -- Subgroup raw-material --
 	{
 		type = "item",
@@ -407,6 +497,16 @@ data:extend({
 		order = "[tungsten-billet]",
 		stack_size = 100
 	},
+  {
+		type = "item",
+		name = "tungsten-slab",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "raw-material",
+		order = "[tungsten-slab]",
+		stack_size = 100
+	},
   -- subgroup alloy --
   {
 		type = "item",
@@ -509,7 +609,7 @@ data:extend({
 		order = "[tungsten-carbide]",
 		stack_size = 100
 	},
-  -- Subgroup intermediate-product --
+  -- Subgroup mechanical-component --
   {
 		type = "item",
 		name = "aluminum-frames",  -- #ForRegEx# - item
@@ -519,7 +619,7 @@ data:extend({
     pictures = {
 			{ size = 128, filename = "__Spaghenutti__/graphics/dummy/dummy-item-aluminum-frames.png", scale = 0.5, tint={r=1.0, g=0.2, b=0.2, a=1.0} },
 		},
-		subgroup = "intermediate-product",
+		subgroup = "mechanical-component",
 		order = "[aluminum-frames]",
 		stack_size = 100
 	},
@@ -529,8 +629,89 @@ data:extend({
 		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
 		icon_size = 128,
 		scale = 0.5,
-		subgroup = "intermediate-product",
+		subgroup = "mechanical-component",
 		order = "[aluminum-cable]",
+		stack_size = 100
+	},
+  {
+		type = "item",
+		name = "steel-gear",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "mechanical-component",
+		order = "[steel-gear]",
+		stack_size = 100
+	},
+  {
+		type = "item",
+		name = "stainless-steel-gear",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "mechanical-component",
+		order = "[stainless-steel-gear]",
+		stack_size = 100
+	},
+  {
+		type = "item",
+		name = "bolts",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "mechanical-component",
+		order = "[bolts]",
+		stack_size = 100
+	},
+  {
+		type = "item",
+		name = "bearing",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "mechanical-component",
+		order = "[bearing]",
+		stack_size = 100
+	},
+  {
+		type = "item",
+		name = "heavy-bearing",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "mechanical-component",
+		order = "[heavy-bearing]",
+		stack_size = 100
+	},
+  -- Subgroup electrical-optical-component --
+  {
+		type = "item",
+		name = "mirror",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "electrical-optical-component",
+		order = "[mirror]",
+		stack_size = 100
+	},
+  {
+		type = "item",
+		name = "lens",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "electrical-optical-component",
+		order = "[lens]",
+		stack_size = 100
+	},
+  {
+		type = "item",
+		name = "infra-red-filter",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "electrical-optical-component",
+		order = "[infra-red-filter]",
 		stack_size = 100
 	},
   {
@@ -539,7 +720,7 @@ data:extend({
 		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
 		icon_size = 128,
 		scale = 0.5,
-		subgroup = "intermediate-product",
+		subgroup = "electrical-optical-component",
 		order = "[solder]",
 		stack_size = 100
 	},
@@ -549,18 +730,8 @@ data:extend({
 		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
 		icon_size = 128,
 		scale = 0.5,
-		subgroup = "intermediate-product",
+		subgroup = "electrical-optical-component",
 		order = "[silver-solder]",
-		stack_size = 100
-	},
-  {
-		type = "item",
-		name = "steel-gear",  -- #ForRegEx# - item
-		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
-		icon_size = 128,
-		scale = 0.5,
-		subgroup = "intermediate-product",
-		order = "[steel-gear]",
 		stack_size = 100
 	},
 })

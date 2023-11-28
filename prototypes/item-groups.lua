@@ -60,7 +60,7 @@ data:extend({
   },
   {
     type = "item-subgroup",
-    name = "electrical-component",
+    name = "electrical-optical-component",
     group = "intermediate-products",
     order = "e"
   },
