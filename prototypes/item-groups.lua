@@ -54,21 +54,27 @@ data:extend({
   },
   {
     type = "item-subgroup",
-    name = "mechanical-components",
+    name = "mechanical-component",
     group = "intermediate-products",
     order = "d"
   },
   {
     type = "item-subgroup",
-    name = "electrical-components",
+    name = "electrical-component",
     group = "intermediate-products",
     order = "e"
   },
   {
     type = "item-subgroup",
-    name = "fuel",
+    name = "intermediate-product",
     group = "intermediate-products",
     order = "f"
+  },
+  {
+    type = "item-subgroup",
+    name = "fuel",
+    group = "intermediate-products",
+    order = "g"
   },
   -- logistics --
   -- Set logistics to third place

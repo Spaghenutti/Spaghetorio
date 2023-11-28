@@ -33,11 +33,19 @@ if not mods["Krastorio2"] then
   end
 end
 
-
 -- Changes steel-plate
 changeItemIcon("steel-plate", "__Spaghenutti__/graphics/dummy/dummy-item-replacement-default.png", 128, nil)
 
 -- Change subgroup of items
+data.raw.item["copper-cable"].subgroup = "mechanical-component"
+data.raw.item["iron-stick"].subgroup = "mechanical-component"
+data.raw.item["iron-gear-wheel"].subgroup = "mechanical-component"
+data.raw.item["low-density-structure"].subgroup = "mechanical-component"
+
+data.raw.item["electronic-circuit"].subgroup = "electrical-component"
+data.raw.item["advanced-circuit"].subgroup = "electrical-component"
+data.raw.item["processing-unit"].subgroup = "electrical-component"  -- idea: use this as processor and change icon
+
 data.raw.item["solid-fuel"].subgroup = "fuel"
 data.raw.item["rocket-fuel"].subgroup = "fuel"
 data.raw.item["nuclear-fuel"].subgroup = "fuel"
