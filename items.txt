@@ -184,6 +184,7 @@ Intermediates
   + cmos
   + laser
   + heat resistant tiles
+  + fabric
 
 High tech stuff
   - boson einstein condensate

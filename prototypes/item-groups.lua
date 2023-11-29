@@ -80,9 +80,15 @@ data:extend({
   },
   {
     type = "item-subgroup",
-    name = "fuel",
+    name = "chemical-product",
     group = "intermediate-products",
     order = "h"
+  },
+  {
+    type = "item-subgroup",
+    name = "fuel",
+    group = "intermediate-products",
+    order = "i"
   },
   -- logistics --
   -- Set logistics to third place

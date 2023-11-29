@@ -524,6 +524,16 @@ data:extend({
 		order = "[cement]",
 		stack_size = 100
 	},
+  {
+		type = "item",
+		name = "rubber",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "raw-material",
+		order = "[rubber]",
+		stack_size = 100
+	},
   ------------------------------------------------------------------------------
   -- subgroup alloy --
   ------------------------------------------------------------------------------
@@ -757,6 +767,16 @@ data:extend({
 		order = "[ceramic]",
 		stack_size = 100
 	},
+  {
+		type = "item",
+		name = "spring",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "mechanical-component",
+		order = "[spring]",
+		stack_size = 100
+	},
   ------------------------------------------------------------------------------
   -- Subgroup electrical-optical-component --
   ------------------------------------------------------------------------------
@@ -925,7 +945,7 @@ data:extend({
   ------------------------------------------------------------------------------
   {
     type = "item",
-    name = "electromagnet",
+    name = "electromagnet",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "intermediate-product",
@@ -934,7 +954,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "heat-exchanger",
+    name = "heat-exchanger",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "intermediate-product",
@@ -943,7 +963,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "valve",
+    name = "valve",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "intermediate-product",
@@ -952,7 +972,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "preassure-tank",
+    name = "preassure-tank",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "intermediate-product",
@@ -961,11 +981,65 @@ data:extend({
   },
   {
     type = "item",
-    name = "heat-resistant-tiles",
+    name = "heat-resistant-tiles",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "intermediate-product",
     order = "[heat-resistant-tiles]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "fabric",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+    icon_size = 64, icon_mipmaps = 4,
+    subgroup = "intermediate-product",
+    order = "[fabric]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "wheel",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+    icon_size = 64, icon_mipmaps = 4,
+    subgroup = "intermediate-product",
+    order = "[wheel]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "piston",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+    icon_size = 64, icon_mipmaps = 4,
+    subgroup = "intermediate-product",
+    order = "[piston]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "transformer",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+    icon_size = 64, icon_mipmaps = 4,
+    subgroup = "intermediate-product",
+    order = "[transformer]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "selenoid",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+    icon_size = 64, icon_mipmaps = 4,
+    subgroup = "intermediate-product",
+    order = "[selenoid]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "composites",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+    icon_size = 64, icon_mipmaps = 4,
+    subgroup = "intermediate-product",
+    order = "[composites]",
     stack_size = 50
   },
   ------------------------------------------------------------------------------
@@ -973,7 +1047,7 @@ data:extend({
   ------------------------------------------------------------------------------
   {
     type = "item",
-    name = "superconductor",
+    name = "superconductor",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "advanced-intermediate-product",
@@ -982,7 +1056,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "cryostat",
+    name = "cryostat",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "advanced-intermediate-product",
@@ -991,7 +1065,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "spark-plug",
+    name = "spark-plug",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "advanced-intermediate-product",
@@ -1000,7 +1074,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "turbine-blade",
+    name = "turbine-blade",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "advanced-intermediate-product",
@@ -1009,7 +1083,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "turbopump",
+    name = "turbopump",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "advanced-intermediate-product",
@@ -1018,7 +1092,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "nozzle",
+    name = "nozzle",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "advanced-intermediate-product",
@@ -1027,11 +1101,23 @@ data:extend({
   },
   {
     type = "item",
-    name = "rocket-engine",
+    name = "rocket-engine",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "advanced-intermediate-product",
     order = "[rocket-engine]",
+    stack_size = 50
+  },
+  ------------------------------------------------------------------------------
+  -- Subgroup chemical-product --
+  ------------------------------------------------------------------------------
+  {
+    type = "item",
+    name = "glue",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+    icon_size = 64, icon_mipmaps = 4,
+    subgroup = "chemical-product",
+    order = "[glue]",
     stack_size = 50
   },
   ------------------------------------------------------------------------------
