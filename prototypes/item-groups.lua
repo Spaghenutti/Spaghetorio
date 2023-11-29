@@ -7,7 +7,7 @@ data:extend({
     type = "item-group",
     name = "base-products",
     order = "a",
-    icon = "__Spaghenutti__/graphics/dummy/dummy-fluid-default.png",
+    icon = "__Spaghenutti__/graphics/dummy/dummy-group-default.png",
     icon_size = 128,
     icon_mipmaps = 2
   },
