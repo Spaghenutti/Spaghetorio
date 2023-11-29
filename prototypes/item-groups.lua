@@ -1,11 +1,13 @@
 data:extend({
+  ------------------------------------------------------------------------------
   -- base-products --
   -- New group base-products in first place
+  ------------------------------------------------------------------------------
   {
     type = "item-group",
     name = "base-products",
     order = "a",
-    icon = "__base__/graphics/item-group/effects.png",
+    icon = "__Spaghenutti__/graphics/dummy/dummy-fluid-default.png",
     icon_size = 128,
     icon_mipmaps = 2
   },
@@ -41,8 +43,10 @@ data:extend({
     group = "base-products",
     order = "e"
   },
+  ------------------------------------------------------------------------------
   -- intermediate-products --
   -- Set intermediate-products to second place
+  ------------------------------------------------------------------------------
   {
     type = "item-group",
     name = "intermediate-products",
@@ -90,8 +94,10 @@ data:extend({
     group = "intermediate-products",
     order = "i"
   },
+  ------------------------------------------------------------------------------
   -- logistics --
   -- Set logistics to third place
+  ------------------------------------------------------------------------------
   {
     type = "item-group",
     name = "logistics",
@@ -100,9 +106,10 @@ data:extend({
     icon_size = 128,
     icon_mipmaps = 2
   },
-
+  ------------------------------------------------------------------------------
   -- production --
   -- Set production to forth place
+  ------------------------------------------------------------------------------
   {
     type = "item-group",
     name = "production",
@@ -111,13 +118,32 @@ data:extend({
     icon_size = 128,
     icon_mipmaps = 2
   },
-
+  ------------------------------------------------------------------------------
+  -- science-products --
+  -- New group base-products in fifth place
+  ------------------------------------------------------------------------------
+  {
+    type = "item-group",
+    name = "science-products",
+    order = "e",
+    icon = "__Spaghenutti__/graphics/dummy/dummy-group-default.png",
+    icon_size = 128,
+    icon_mipmaps = 2
+  },
+  {
+    type = "item-subgroup",
+    name = "basic-science",
+    group = "science-products",
+    order = "a"
+  },
+  ------------------------------------------------------------------------------
   -- combat --
-  -- Set combat to fifth place
+  -- Set combat to sixth place
+  ------------------------------------------------------------------------------
   {
     type = "item-group",
     name = "combat",
-    order = "e",
+    order = "f",
     icon = "__base__/graphics/item-group/military.png",
     icon_size = 128,
     icon_mipmaps = 2

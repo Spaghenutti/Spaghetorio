@@ -4,6 +4,7 @@ import re
 PATH_PREFIX = "" # "../"
  
 HR_ICON_RES = 128
+GROUP_BACKGROUND_COLOR = "purple"
 ITEM_BACKGROUND_COLOR = "lightblue"
 ITEM_REPLACEMENT_BACKGROUND_COLOR = "red"
 FLUID_BACKGROUND_COLOR = "blue"
@@ -24,6 +25,10 @@ FLUIDS_PATH = f"{PATH_PREFIX}prototypes/fluid.lua"
 RECEPIES_PATH = f"{PATH_PREFIX}prototypes/recepie.lua"
 TECHNOLOGIES_PATH = f"{PATH_PREFIX}prototypes/technology.lua"
 NAMES_REGEX = r"[ ,\t\n]name = \"(.*?)\",  -- #ForRegEx#"  # Extend regex to catch the type. The flag looks something like -- #ForRegEx# - <type>
+
+# Generate item replacement image
+img = Image.new(mode="RGBA", size=(HR_ICON_RES, HR_ICON_RES), color=GROUP_BACKGROUND_COLOR)
+img.save(f"{PATH_PREFIX}graphics/dummy/dummy-group-default.png")
 
 # Generate item replacement image
 img = Image.new(mode="RGBA", size=(HR_ICON_RES, HR_ICON_RES), color=ITEM_REPLACEMENT_BACKGROUND_COLOR)
