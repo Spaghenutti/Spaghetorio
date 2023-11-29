@@ -151,20 +151,20 @@ Basic Intermediates
 			+ neodymium magnet (Neodymium Iron Boron (NdFeB))
 			- samarium cobalt magnets (SmCo magnets))
 		- electro magnet (wire around iron rod)
-	- superconductor
+	+ superconductor
   + cement
   + ceramic
     + diamond
   + carbon fiber
-  - crucible
+  + crucible
   - catalysts
     -
-  - bleach -> reduction of unwanted substances (DE: Bleichmittel)
+  + bleach -> reduction of unwanted substances (DE: Bleichmittel)
     - Chlorine dioxide (ClO2) bleach for organic stuff
     - Chlorine Cl
-  - flange
-  - filter
-  - cooling fluid
+  + flange
+  + filter
+  + coolant
 
 Intermediates
   + electromagnet

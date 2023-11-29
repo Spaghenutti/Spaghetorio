@@ -777,6 +777,36 @@ data:extend({
 		order = "[spring]",
 		stack_size = 100
 	},
+  {
+		type = "item",
+		name = "flange",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "mechanical-component",
+		order = "[flange]",
+		stack_size = 100
+	},
+  {
+		type = "item",
+		name = "filter",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "mechanical-component",
+		order = "[filter]",
+		stack_size = 100
+	},
+  {
+		type = "item",
+		name = "crucible",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "mechanical-component",
+		order = "[crucible]",
+		stack_size = 100
+	},
   ------------------------------------------------------------------------------
   -- Subgroup electrical-optical-component --
   ------------------------------------------------------------------------------
@@ -912,6 +942,26 @@ data:extend({
 	},
   {
 		type = "item",
+		name = "vacuum-tubes",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "electrical-optical-component",
+		order = "[vacuum-tubes]",
+		stack_size = 100
+	},
+  {
+		type = "item",
+		name = "integrated-circuit",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "electrical-optical-component",
+		order = "[integrated-circuit]",
+		stack_size = 100
+	},
+  {
+		type = "item",
 		name = "processor",  -- #ForRegEx# - item
 		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
 		icon_size = 128,
@@ -938,6 +988,16 @@ data:extend({
 		scale = 0.5,
 		subgroup = "electrical-optical-component",
 		order = "[laser]",
+		stack_size = 100
+	},
+  {
+		type = "item",
+		name = "optic-fiber",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "electrical-optical-component",
+		order = "[optic-fiber]",
 		stack_size = 100
 	},
   ------------------------------------------------------------------------------
@@ -1118,6 +1178,15 @@ data:extend({
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "chemical-product",
     order = "[glue]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "bleach",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+    icon_size = 64, icon_mipmaps = 4,
+    subgroup = "chemical-product",
+    order = "[bleach]",
     stack_size = 50
   },
   ------------------------------------------------------------------------------
