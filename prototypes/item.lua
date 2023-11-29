@@ -1,5 +1,8 @@
 data:extend({
+  ------------------------------------------------------------------------------
+  -- base-products --
   -- Subgroup raw-resource --
+  ------------------------------------------------------------------------------
 	{
 		type = "item",
 		name = "aluminum-ore",  -- #ForRegEx# - item
@@ -125,7 +128,9 @@ data:extend({
 		order = "[niobium-powder]",
 		stack_size = 100
 	},
+  ------------------------------------------------------------------------------
   -- Subgroup processed-resource --
+  ------------------------------------------------------------------------------
 	{
 		type = "item",
 		name = "alumina",  -- #ForRegEx# - item
@@ -326,7 +331,9 @@ data:extend({
 		order = "[neodymium]",
 		stack_size = 100
 	},
+  ------------------------------------------------------------------------------
   -- Subgroup raw-material --
+  ------------------------------------------------------------------------------
 	{
 		type = "item",
 		name = "aluminum-sheet",  -- #ForRegEx# - item
@@ -507,7 +514,19 @@ data:extend({
 		order = "[tungsten-slab]",
 		stack_size = 100
 	},
+  {
+		type = "item",
+		name = "cement",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "raw-material",
+		order = "[cement]",
+		stack_size = 100
+	},
+  ------------------------------------------------------------------------------
   -- subgroup alloy --
+  ------------------------------------------------------------------------------
   {
 		type = "item",
 		name = "stainless-steel",  -- #ForRegEx# - item
@@ -548,7 +567,9 @@ data:extend({
 		order = "[antimonial-lead]",
 		stack_size = 100
 	},
+  ------------------------------------------------------------------------------
   -- Subgroup advanced-raw-material --
+  ------------------------------------------------------------------------------
   {
 		type = "item",
 		name = "carbon-nanotubes",  -- #ForRegEx# - item
@@ -609,7 +630,30 @@ data:extend({
 		order = "[tungsten-carbide]",
 		stack_size = 100
 	},
+  {
+		type = "item",
+		name = "diamond",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "advanced-raw-material",
+		order = "[diamond]",
+		stack_size = 100
+	},
+  {
+		type = "item",
+		name = "carbon-fiber",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "advanced-raw-material",
+		order = "[carbon-fiber]",
+		stack_size = 100
+	},
+  ------------------------------------------------------------------------------
+  -- Group intermediate-products --
   -- Subgroup mechanical-component --
+  ------------------------------------------------------------------------------
   {
 		type = "item",
 		name = "aluminum-frames",  -- #ForRegEx# - item
@@ -683,7 +727,39 @@ data:extend({
 		order = "[heavy-bearing]",
 		stack_size = 100
 	},
+  {
+		type = "item",
+		name = "ferrite-magnet",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "mechanical-component",
+		order = "[ferrite-magnet]",
+		stack_size = 100
+	},
+  {
+		type = "item",
+		name = "neodymium-magnet",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "mechanical-component",
+		order = "[neodymium-magnet]",
+		stack_size = 100
+	},
+  {
+		type = "item",
+		name = "ceramic",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "mechanical-component",
+		order = "[ceramic]",
+		stack_size = 100
+	},
+  ------------------------------------------------------------------------------
   -- Subgroup electrical-optical-component --
+  ------------------------------------------------------------------------------
   {
 		type = "item",
 		name = "mirror",  -- #ForRegEx# - item
@@ -734,4 +810,232 @@ data:extend({
 		order = "[silver-solder]",
 		stack_size = 100
 	},
+  {
+		type = "item",
+		name = "resistor",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "electrical-optical-component",
+		order = "[resistor]",
+		stack_size = 100
+	},
+  {
+		type = "item",
+		name = "capacitor",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "electrical-optical-component",
+		order = "[capacitor]",
+		stack_size = 100
+	},
+  {
+		type = "item",
+		name = "diode",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "electrical-optical-component",
+		order = "[diode]",
+		stack_size = 100
+	},
+  {
+		type = "item",
+		name = "transistor",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "electrical-optical-component",
+		order = "[transistor]",
+		stack_size = 100
+	},
+  {
+		type = "item",
+		name = "light-emitting-diode",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "electrical-optical-component",
+		order = "[light-emitting-diode]",
+		stack_size = 100
+	},
+  {
+		type = "item",
+		name = "coil",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "electrical-optical-component",
+		order = "[coil]",
+		stack_size = 100
+	},
+  {
+		type = "item",
+		name = "coil",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "electrical-optical-component",
+		order = "[coil]",
+		stack_size = 100
+	},
+  {
+		type = "item",
+		name = "circuit-board",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "electrical-optical-component",
+		order = "[circuit-board]",
+		stack_size = 100
+	},
+  {
+		type = "item",
+		name = "processor",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "electrical-optical-component",
+		order = "[processor]",
+		stack_size = 100
+	},
+  {
+		type = "item",
+		name = "cmos",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "electrical-optical-component",
+		order = "[cmos]",
+		stack_size = 100
+	},
+  {
+		type = "item",
+		name = "laser",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "electrical-optical-component",
+		order = "[laser]",
+		stack_size = 100
+	},
+  ------------------------------------------------------------------------------
+  -- Subgroup intermediate-products --
+  ------------------------------------------------------------------------------
+  {
+    type = "item",
+    name = "electromagnet",
+    icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+    icon_size = 64, icon_mipmaps = 4,
+    subgroup = "intermediate-product",
+    order = "[electromagnet]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "heat-exchanger",
+    icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+    icon_size = 64, icon_mipmaps = 4,
+    subgroup = "intermediate-product",
+    order = "[heat-exchanger]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "valve",
+    icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+    icon_size = 64, icon_mipmaps = 4,
+    subgroup = "intermediate-product",
+    order = "[valve]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "preassure-tank",
+    icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+    icon_size = 64, icon_mipmaps = 4,
+    subgroup = "intermediate-product",
+    order = "[preassure-tank]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "heat-resistant-tiles",
+    icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+    icon_size = 64, icon_mipmaps = 4,
+    subgroup = "intermediate-product",
+    order = "[heat-resistant-tiles]",
+    stack_size = 50
+  },
+  ------------------------------------------------------------------------------
+  -- Subgroup advanced-intermediate-product --
+  ------------------------------------------------------------------------------
+  {
+    type = "item",
+    name = "superconductor",
+    icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+    icon_size = 64, icon_mipmaps = 4,
+    subgroup = "advanced-intermediate-product",
+    order = "[superconductor]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "cryostat",
+    icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+    icon_size = 64, icon_mipmaps = 4,
+    subgroup = "advanced-intermediate-product",
+    order = "[cryostat]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "spark-plug",
+    icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+    icon_size = 64, icon_mipmaps = 4,
+    subgroup = "advanced-intermediate-product",
+    order = "[spark-plug]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "turbine-blade",
+    icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+    icon_size = 64, icon_mipmaps = 4,
+    subgroup = "advanced-intermediate-product",
+    order = "[turbine-blade]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "turbopump",
+    icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+    icon_size = 64, icon_mipmaps = 4,
+    subgroup = "advanced-intermediate-product",
+    order = "[turbopump]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "nozzle",
+    icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+    icon_size = 64, icon_mipmaps = 4,
+    subgroup = "advanced-intermediate-product",
+    order = "[nozzle]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "rocket-engine",
+    icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+    icon_size = 64, icon_mipmaps = 4,
+    subgroup = "advanced-intermediate-product",
+    order = "[rocket-engine]",
+    stack_size = 50
+  },
+  ------------------------------------------------------------------------------
+  -- Group logistics --
+  -- Subgroup mechanical-component --
+  ------------------------------------------------------------------------------
 })

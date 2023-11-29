@@ -131,32 +131,31 @@ Basic Intermediates
     + gear
     + bearings
 	- optical components
-		- mirror
-		- lens
-    - infra red filter
-    - cmos
+		+ mirror
+		+ lens
+    + infra red filter
 	- electrical components
-		- resistor
-		- capacitor
-		- diode
-		- transistor
-		- LED
-		- coil
+		+ resistor
+		+ capacitor
+		+ diode
+		+ transistor
+		+ LED
+		+ coil
 	+ solder
   + silver solder
-  - PCB
+  + PCB - circuit-board
 	- magnet
 		- permanent magnet
-			- ferrite magnet (iron oxide (commonly known as rust) and strontium carbonate)
+			+ ferrite magnet (iron oxide (commonly known as rust) and strontium carbonate)
 			- alnico magnet (Aluminium (Al), Nickel (Ni), Cobalt (Co))
-			- neodymium magnet (Neodymium Iron Boron (NdFeB))
+			+ neodymium magnet (Neodymium Iron Boron (NdFeB))
 			- samarium cobalt magnets (SmCo magnets))
 		- electro magnet (wire around iron rod)
 	- superconductor
-  - cement
-  - ceramic
-    - diamond
-  - carbon fiber
+  + cement
+  + ceramic
+    + diamond
+  + carbon fiber
   - crucible
   - catalysts
     -
@@ -168,20 +167,23 @@ Basic Intermediates
   - cooling fluid
 
 Intermediates
-  - cryostat
-	- electric motor
-	- heat exchanger
-	- heat pipe
-	- spark plug
-  - tank
-  - turbine blade
-	- turbopump
-	- nozzle
-	- rocket engine
-	- Engine
-	- processor
-  - laser
-  - heat resistant tiles
+  + electromagnet
+  + cryostat
+	- (electric motor) already exists
+	+ heat exchanger
+	- (heat pipe) already exists
+	+ spark plug
+  + valve
+  + preassure tank
+  + turbine blade
+	+ turbopump
+	+ nozzle
+	+ rocket engine
+	- (Engine) already exists
+	+ processor
+  + cmos
+  + laser
+  + heat resistant tiles
 
 High tech stuff
   - boson einstein condensate

@@ -52,12 +52,14 @@ data:extend({
     icon_size = 128,
     icon_mipmaps = 2
   },
+  -- mechanical-component are used where a force is applied
   {
     type = "item-subgroup",
     name = "mechanical-component",
     group = "intermediate-products",
     order = "d"
   },
+  -- electrical-optical-component are used where no force is applied
   {
     type = "item-subgroup",
     name = "electrical-optical-component",
@@ -72,9 +74,15 @@ data:extend({
   },
   {
     type = "item-subgroup",
-    name = "fuel",
+    name = "advanced-intermediate-product",
     group = "intermediate-products",
     order = "g"
+  },
+  {
+    type = "item-subgroup",
+    name = "fuel",
+    group = "intermediate-products",
+    order = "h"
   },
   -- logistics --
   -- Set logistics to third place

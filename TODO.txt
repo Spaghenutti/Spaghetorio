@@ -1,5 +1,5 @@
 TODO:
-  - Create recepie categories (see: recipe-category)
+  + Create recepie categories (see: recipe-category)
   + Create item groups (see: "intermediate-products=Intermediate products")
   - Add research
   + Add python script for generating icons for recepies
@@ -8,7 +8,8 @@ TODO:
   - Add ores
   - Update resource_autoplace_settings and stage_counts of ores
   - Add icon for item group base products
+  - Add fancy building (matter converter) which can build robots from iron
 
 FIXME:
-  - Aluminum ore icon color
+  + Aluminum ore icon color
   - Add small icon top left to barrels
