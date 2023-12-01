@@ -183,6 +183,16 @@ data:extend({
 	},
   {
 		type = "item",
+		name = "magnesium-chloride",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "processed-resource",
+		order = "[magnesium-chloride]",
+		stack_size = 100
+	},
+  {
+		type = "item",
 		name = "quartz",  -- #ForRegEx# - item
 		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
 		icon_size = 128,
@@ -376,12 +386,12 @@ data:extend({
 	},
   {
 		type = "item",
-		name = "titanium-ingots",  -- #ForRegEx# - item
+		name = "titanium-ingot",  -- #ForRegEx# - item
 		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
 		icon_size = 128,
 		scale = 0.5,
 		subgroup = "raw-material",
-		order = "[titanium-ingots]",
+		order = "[titanium-ingot]",
 		stack_size = 100
 	},
   {

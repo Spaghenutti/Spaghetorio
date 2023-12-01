@@ -19,35 +19,35 @@ Ca Calcium
   + ceramics
 
 Na Sodium
-  + salt (NaCl extraction from seawater / lakes) -> can also directly be used for cleaning water
+  +r salt (NaCl extraction from seawater / lakes) -> can also directly be used for cleaning water
   - used in lamps
-  + sodium
-  + liquid sodium -> wastewater treatment plants
+  +r sodium
+  +r liquid-sodium -> wastewater treatment plants
 
 Cl Chlorine
-  + chlorine (solved in water as liquid)
+  +r chlorine (solved in water as liquid)
 
 Mg Magnesium
-  + magnesium ore / dolomite (dolomite is calcined to magnesium oxide) https://www.britannica.com/technology/magnesium-processing
-  - magnesium chloride (extraction of Mg with electrolysis)
-  + magnesium slabs
+  + magnesium-ore / dolomite (dolomite is calcined to magnesium oxide) https://www.britannica.com/technology/magnesium-processing
+  +r magnesium-chloride (extraction of Mg with electrolysis)
+  +r magnesium-slab
 
 Ti Titanium
-  + titanium ore (TiO2, FeTiO3)
-  + titanium cloride TiCl4 (titanium ore processed)
-  + titanium sponge (TiCl4 + 4Na = Ti + 4NaCl & TiCl4 + 2Mg = Ti + 2MgCl2)
-  + titanium ingots
-  + titanium plates
-  + titanium frames
-  + titanium nitride TiN (used as coat in knifes for anticorrosion and as barrier layer in semiconductors)
-  + titanium carbide TiC (very hard, used in cutting tools)
+  + titanium-ore (TiO2, FeTiO3)
+  +r titanium-cloride TiCl4 (titanium ore processed)
+  +r titanium-sponge (TiCl4 + 4Na = Ti + 4NaCl & TiCl4 + 2Mg = Ti + 2MgCl2)
+  +r titanium-ingot
+  +r titanium-plate
+  +r titanium-frames
+  + titanium-nitride TiN (used as coat in knifes for anticorrosion and as barrier layer in semiconductors)
+  +r titanium-carbide TiC (very hard, used in cutting tools)
 
 P Phosphorus
 
 Mn Manganese
 
 Si Silicon
-  + sand
+  +r sand
   + quartz
   + silica (SiO2 for glass and ceramics)
   + silicon
