@@ -143,6 +143,16 @@ data:extend({
 	},
   {
 		type = "item",
+		name = "coke",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "processed-resource",
+		order = "[coke]",
+		stack_size = 100
+	},
+  {
+		type = "item",
 		name = "graphite",  -- #ForRegEx# - item
 		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
 		icon_size = 128,
@@ -386,16 +396,6 @@ data:extend({
 	},
   {
 		type = "item",
-		name = "titanium-frames",  -- #ForRegEx# - item
-		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
-		icon_size = 128,
-		scale = 0.5,
-		subgroup = "raw-material",
-		order = "[titanium-frames]",
-		stack_size = 100
-	},
-  {
-		type = "item",
 		name = "tin-ingots",  -- #ForRegEx# - item
 		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
 		icon_size = 128,
@@ -532,6 +532,16 @@ data:extend({
 		scale = 0.5,
 		subgroup = "raw-material",
 		order = "[rubber]",
+		stack_size = 100
+	},
+  {
+		type = "item",
+		name = "glass",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "raw-material",
+		order = "[glass]",
 		stack_size = 100
 	},
   ------------------------------------------------------------------------------
@@ -719,6 +729,16 @@ data:extend({
 	},
   {
 		type = "item",
+		name = "titanium-frames",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "mechanical-component",
+		order = "[titanium-frames]",
+		stack_size = 100
+	},
+  {
+		type = "item",
 		name = "bearing",  -- #ForRegEx# - item
 		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
 		icon_size = 128,
@@ -805,6 +825,16 @@ data:extend({
 		scale = 0.5,
 		subgroup = "mechanical-component",
 		order = "[crucible]",
+		stack_size = 100
+	},
+  {
+		type = "item",
+		name = "glass-fiber",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "mechanical-component",
+		order = "[glass-fiber]",
 		stack_size = 100
 	},
   ------------------------------------------------------------------------------
