@@ -48,19 +48,20 @@ Mn Manganese
 
 Si Silicon
   +r sand
-  + quartz
-  + silica (SiO2 for glass and ceramics)
-  + silicon
-  + high purity silicon
+  +r quartz
+  +r silica (SiO2 for glass and ceramics)
+  +r silicon
+  +r high-purity-silicon
 
 Sn Tin
-	- tinstone (casserite), stannite (Cu2FeSnS4), a copper-iron-tin sulfide, and cylindrite (PbSn4FeSb2S14), a lead-tin-iron-antimony sulfide.
-  + tin ingot
-  + tin sheet (very thin sheet)
-  + bronze rod (60% copper 40% tin) for corrosion resistant stuff
+	+ tinstone (missing resource) (casserite), ore
+  - stannite (Cu2FeSnS4), ore, a copper-iron-tin sulfide, and cylindrite (PbSn4FeSb2S14), a lead-tin-iron-antimony sulfide.
+  +r tin-ingot
+  +r tin-sheet (very thin sheet)
+  +r bronze-rod (60% copper 40% tin) for corrosion resistant stuff
 
 Zr Zirconium
-  - zirconium ore
+  + zirconium ore (missing resource)
   + zircon (for the lolzs, low change to get this from zircon ore) for nuclear fuel rods
   + zirconium rod
   + zirconia (Zirconium dioxide) for hard ceramics
@@ -146,6 +147,8 @@ Basic Intermediates
 		+ LED
 		+ coil
   + glass-fiber
+  + kevlar
+  + composites
 	+ solder
   + silver solder
   + PCB - circuit-board

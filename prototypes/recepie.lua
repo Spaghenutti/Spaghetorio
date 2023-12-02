@@ -329,4 +329,125 @@ data:extend({
 			{type = "item", name = "sand", amount = 3}
 		}
 	},
+  {
+		type = "recipe",
+		name = "quartz",  -- #ForRegEx# - recepie
+    icon = "__Spaghenutti__/graphics/dummy/dummy-recepie-default.png",
+    icon_size = 128,
+		scale = 0.5,
+		category = "chemistry",
+    subgroup = "raw-resource",
+    enabled = false,
+		energy_required = 3.2,	-- time in seconds to make the item
+		ingredients = {
+			{type = "item", name = "sand", amount = 2},
+      {type = "fluid", name = "water", amount = 30}
+		},
+		results = {
+			{type = "item", name = "quartz", amount = 2}
+		},
+    crafting_machine_tint = {
+      primary = {r = 1.000, g = 1.000, b = 1.000, a = 1.000}, -- #fefeffff
+      secondary = {r = 0.771, g = 0.771, b = 0.771, a = 1.000}, -- #c4c4c4ff
+      tertiary = {r = 0.768, g = 0.665, b = 0.762, a = 1.000}, -- #c3a9c2ff
+      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000}, -- #000000ff
+    }
+	},
+  {
+		type = "recipe",
+		name = "silica",  -- #ForRegEx# - recepie
+		category = "smelting",
+    enabled = false,
+		energy_required = 3.2,	-- time in seconds to make the item
+		ingredients = {
+			{type = "item", name = "quartz", amount = 1},
+		},
+		results = {
+			{type = "item", name = "silica", amount = 1}
+		}
+	},
+  {
+		type = "recipe",
+		name = "silicon",  -- #ForRegEx# - recepie
+		category = "smelting",
+    enabled = false,
+		energy_required = 4,	-- time in seconds to make the item
+		ingredients = {
+			{type = "item", name = "silica", amount = 3},
+		},
+		results = {
+			{type = "item", name = "silicon", amount = 2}
+		}
+	},
+  {
+		type = "recipe",
+		name = "high-purity-silicon",  -- #ForRegEx# - recepie
+    icon = "__Spaghenutti__/graphics/dummy/dummy-recepie-default.png",
+    icon_size = 128,
+		scale = 0.5,
+		category = "smelting",
+    subgroup = "advanced-raw-material",
+    enabled = false,
+		energy_required = 8,	-- time in seconds to make the item
+		ingredients = {
+			{type = "item", name = "silicon", amount = 1},
+		},
+		results = {
+			{type = "item", name = "high-purity-silicon", probability = 0.3, amount = 1},
+      {type = "item", name = "silicon", probability = 0.7, amount = 1}
+		}
+	},
+  {
+		type = "recipe",
+		name = "tin-ingot",  -- #ForRegEx# - recepie
+		category = "smelting",
+    enabled = false,
+		energy_required = 3.2,	-- time in seconds to make the item
+		ingredients = {
+			{type = "item", name = "tinstone", amount = 3},
+		},
+		results = {
+			{type = "item", name = "tin-ingot", amount = 2}
+		}
+	},
+  {
+		type = "recipe",
+		name = "tin-sheet",  -- #ForRegEx# - recepie
+		category = "smelting",
+    enabled = false,
+		energy_required = 3.2,	-- time in seconds to make the item
+		ingredients = {
+			{type = "item", name = "tinstone", amount = 3},
+		},
+		results = {
+			{type = "item", name = "tin-sheet", amount = 4}
+		}
+	},
+  {
+		type = "recipe",
+		name = "tin-sheet",  -- #ForRegEx# - recepie
+		category = "smelting",
+    enabled = false,
+		energy_required = 3.2,	-- time in seconds to make the item
+		ingredients = {
+			{type = "item", name = "tinstone", amount = 3},
+		},
+		results = {
+			{type = "item", name = "tin-sheet", amount = 4}
+		}
+	},
+  {
+		type = "recipe",
+		name = "bronze-rod",  -- #ForRegEx# - recepie
+		category = "smelting",
+    enabled = false,
+		energy_required = 4,	-- time in seconds to make the item
+		ingredients = {
+			{type = "item", name = "tin-ingot", amount = 2},
+      {type = "item", name = "copper-plate", amount = 3},
+		},
+		results = {
+			{type = "item", name = "bronze-rod", amount = 4}
+		}
+	},
 })
