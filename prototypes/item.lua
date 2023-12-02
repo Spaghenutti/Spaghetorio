@@ -124,6 +124,23 @@ data:extend({
 	},
   {
 		type = "item",
+		name = "nickel-ore",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		tint = {r=0.4, g=0.3, b=0.3, a=1.0},
+		icon_size = 64,
+		icon_mipmaps = 4,
+		pictures = {
+			{ size = 64, filename = "__Spaghenutti__/graphics/base/ore/ore-1.png", scale = 0.25, mipmap_count = 4, tint={r=1.0, g=0.2, b=0.2, a=1.0} },
+			{ size = 64, filename = "__Spaghenutti__/graphics/base/ore/ore-2.png", scale = 0.25, mipmap_count = 4, tint={r=1.0, g=0.2, b=0.2, a=1.0} },
+			{ size = 64, filename = "__Spaghenutti__/graphics/base/ore/ore-3.png", scale = 0.25, mipmap_count = 4, tint={r=1.0, g=0.2, b=0.2, a=1.0} },
+			{ size = 64, filename = "__Spaghenutti__/graphics/base/ore/ore-4.png", scale = 0.25, mipmap_count = 4, tint={r=1.0, g=0.2, b=0.2, a=1.0} }
+		},
+		subgroup = "raw-resource",
+		order = "[nickel-ore]",
+		stack_size = 200
+	},
+  {
+		type = "item",
 		name = "lead-ore",  -- #ForRegEx# - item
 		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
 		tint = {r=0.4, g=0.3, b=0.3, a=1.0},
@@ -490,6 +507,26 @@ data:extend({
 		scale = 0.5,
 		subgroup = "raw-material",
 		order = "[ceramics]",
+		stack_size = 100
+	},
+  {
+		type = "item",
+		name = "chromium-plate",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "raw-material",
+		order = "[chromium-plate]",
+		stack_size = 100
+	},
+  {
+		type = "item",
+		name = "nickel-ingot",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "raw-material",
+		order = "[nickel-ingot]",
 		stack_size = 100
 	},
   {

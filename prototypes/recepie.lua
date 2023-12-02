@@ -680,4 +680,40 @@ data:extend({
 			{type = "item", name = "glass", amount = 1}
 		}
 	},
+  {
+		type = "recipe",
+		name = "chromium-plate",  -- #ForRegEx# - recepie
+		icon = "__Spaghenutti__/graphics/dummy/dummy-recepie-default.png",
+    icon_size = 128,
+		scale = 0.5,
+		category = "smelting",
+    subgroup = "raw-resource",
+    enabled = false,
+		energy_required = 3.2,	-- time in seconds to make the item
+		ingredients = {
+			{type = "item", name = "chromite", amount = 3}
+		},
+		results = {
+			{type = "item", name = "chromium-plate", amount = 2},
+      {type = "item", name = "iron-plate", amount = 1}
+		}
+	},
+  {
+		type = "recipe",
+		name = "nickel-ingot",  -- #ForRegEx# - recepie
+		icon = "__Spaghenutti__/graphics/dummy/dummy-recepie-default.png",
+    icon_size = 128,
+		scale = 0.5,
+		category = "smelting",
+    subgroup = "raw-resource",
+    enabled = false,
+		energy_required = 3.2,	-- time in seconds to make the item
+		ingredients = {
+			{type = "item", name = "nickel-ore", amount = 2}
+		},
+		results = {
+			{type = "item", name = "nickel-ingot", amount = 1},
+      {type = "item", name = "iron-plate", amount = 1}
+		}
+	},
 })

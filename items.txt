@@ -18,7 +18,14 @@ Ca Calcium
   +r calcium-carbonate (for making zement)
   +r fluorspar CaF2
   +r calcium
-  + ceramics
+
+Cr Chromium
+  + chromium-ore / chromite / ferrochromium
+  +r chromium-plate
+
+Ni Nickel
+  + nickel-ore (missing resource) (Fe,Ni)9S8
+  + nickel-ingot
 
 Na Sodium
   +r salt (NaCl extraction from seawater / lakes) -> can also directly be used for cleaning water
@@ -108,8 +115,11 @@ Rare earths
   + Ce Cerium
   + Nd Neodymium
 
+Sulfide ores
+  - here are lots of fancy stuff: https://en.wikipedia.org/wiki/Sulfide_mineral
+
 Other
-  + glass
+  +r glass
   +r sodium-carbonate
 
 Exotic materials
@@ -128,7 +138,7 @@ Alien materials
 
 
 Alloys
-	- steel
+	- (steel) already exists
 	+ stainless steel
 	+ duralumin - aluminum 2000 Series (aerospace)
 	+ aluminum brass - aluminum 7000 Series (strong alloy)
