@@ -25,7 +25,7 @@ Cr Chromium
 
 Ni Nickel
   + nickel-ore (missing resource) (Fe,Ni)9S8
-  + nickel-ingot
+  +r nickel-ingot
 
 Na Sodium
   +r salt (NaCl extraction from seawater / lakes) -> can also directly be used for cleaning water
@@ -103,13 +103,14 @@ W Tungsten
 Hg Mercury
 
 Noble metals
-  + Au Gold  - from water via washing
-  + Ag Silver  - from copper ore via hydrolisys
-  + Pt Platinum  - from stone refining via pyrolysis
-  + Pd Palladium  - from nickel refining
-  + Ir Iridium  - very very rare
+  +r Au Gold  - from water via washing
+  +r Ag Silver  - from copper ore via hydrolisys
+  +r Pt Platinum  - from stone refining via pyrolysis
+  +r Pd Palladium  - from nickel refining
+  +r Ir Iridium  - very very rare
 
 Rare earths
+  + rare-earths (missing resource)
   + Y Yittrium  - for optical fibers
   + La Lanthanum 
   + Ce Cerium
@@ -139,7 +140,7 @@ Alien materials
 
 Alloys
 	- (steel) already exists
-	+ stainless steel
+	+r stainless-steel
 	+ duralumin - aluminum 2000 Series (aerospace)
 	+ aluminum brass - aluminum 7000 Series (strong alloy)
   + antimonial lead (5% antimony 95% lead) for lead batteries

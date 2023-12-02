@@ -716,4 +716,95 @@ data:extend({
       {type = "item", name = "iron-plate", amount = 1}
 		}
 	},
+  {
+		type = "recipe",
+		name = "gold",  -- #ForRegEx# - recepie
+    icon = "__Spaghenutti__/graphics/dummy/dummy-recepie-default.png",
+    icon_size = 128,
+		scale = 0.5,
+		category = "chemistry",
+    subgroup = "raw-resource",
+    enabled = false,
+		energy_required = 3,	-- time in seconds to make the item
+		ingredients = {
+			{type = "item", name = "stone", amount = 1},
+      {type = "fluid", name = "water", amount = 40}
+		},
+		results = {
+			{type = "item", name = "sand", probability = 98, amount = 3},
+      {type = "item", name = "gold", probability = 2, amount = 1}
+		}
+	},
+  {
+		type = "recipe",
+		name = "silver-palladium",  -- #ForRegEx# - recepie
+    icon = "__Spaghenutti__/graphics/dummy/dummy-recepie-default.png",
+    icon_size = 128,
+		scale = 0.5,
+		category = "crafting",
+    subgroup = "raw-resource",
+    enabled = false,
+		energy_required = 5,	-- time in seconds to make the item
+		ingredients = {
+			{type = "item", name = "copper-ore", amount = 1},
+		},
+		results = {
+			{type = "item", name = "copper-plate", probability = 97.8, amount = 1},
+      {type = "item", name = "silver", probability = 1.7, amount = 1},
+      {type = "item", name = "palladium", probability = 0.5, amount = 1}
+		}
+	},
+  {
+		type = "recipe",
+		name = "platinum-iridium",  -- #ForRegEx# - recepie
+    icon = "__Spaghenutti__/graphics/dummy/dummy-recepie-default.png",
+    icon_size = 128,
+		scale = 0.5,
+		category = "crafting",
+    subgroup = "raw-resource",
+    enabled = false,
+		energy_required = 4,	-- time in seconds to make the item
+		ingredients = {
+			{type = "item", name = "stone", amount = 1},
+		},
+		results = {
+			{type = "item", name = "sand", probability = 98.07, amount = 3},
+      {type = "item", name = "platinum", probability = 1.9, amount = 1},
+      {type = "item", name = "iridium", probability = 0.03, amount = 1}
+		}
+	},
+  {
+		type = "recipe",
+		name = "palladium",  -- #ForRegEx# - recepie
+    icon = "__Spaghenutti__/graphics/dummy/dummy-recepie-default.png",
+    icon_size = 128,
+		scale = 0.5,
+		category = "crafting",
+    subgroup = "raw-resource",
+    enabled = false,
+		energy_required = 4,	-- time in seconds to make the item
+		ingredients = {
+			{type = "item", name = "nickel-ore", amount = 2},
+		},
+		results = {
+			{type = "item", name = "nickel-ingot", probability = 48.5, amount = 1},
+      {type = "item", name = "iron-plate", probability = 48.5, amount = 1},
+      {type = "item", name = "palladium", probability = 3, amount = 1}
+		}
+	},
+  {
+		type = "recipe",
+		name = "stainless-steel",  -- #ForRegEx# - recepie
+		category = "smelting",
+    enabled = false,
+		energy_required = 8,	-- time in seconds to make the item
+		ingredients = {
+			{type = "item", name = "steel-plate", amount = 8},
+      {type = "item", name = "nickel-ingot", amount = 1},
+      {type = "item", name = "chromium-plate", amount = 1}
+		},
+		results = {
+			{type = "item", name = "stainless-steel", amount = 10}
+		}
+	},
 })
