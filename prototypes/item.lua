@@ -124,6 +124,40 @@ data:extend({
 	},
   {
 		type = "item",
+		name = "lead-ore",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		tint = {r=0.4, g=0.3, b=0.3, a=1.0},
+		icon_size = 64,
+		icon_mipmaps = 4,
+		pictures = {
+			{ size = 64, filename = "__Spaghenutti__/graphics/base/ore/ore-1.png", scale = 0.25, mipmap_count = 4, tint={r=1.0, g=0.2, b=0.2, a=1.0} },
+			{ size = 64, filename = "__Spaghenutti__/graphics/base/ore/ore-2.png", scale = 0.25, mipmap_count = 4, tint={r=1.0, g=0.2, b=0.2, a=1.0} },
+			{ size = 64, filename = "__Spaghenutti__/graphics/base/ore/ore-3.png", scale = 0.25, mipmap_count = 4, tint={r=1.0, g=0.2, b=0.2, a=1.0} },
+			{ size = 64, filename = "__Spaghenutti__/graphics/base/ore/ore-4.png", scale = 0.25, mipmap_count = 4, tint={r=1.0, g=0.2, b=0.2, a=1.0} }
+		},
+		subgroup = "raw-resource",
+		order = "[lead-ore]",
+		stack_size = 200
+	},
+  {
+		type = "item",
+		name = "tungsten-ore",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		tint = {r=0.4, g=0.3, b=0.3, a=1.0},
+		icon_size = 64,
+		icon_mipmaps = 4,
+		pictures = {
+			{ size = 64, filename = "__Spaghenutti__/graphics/base/ore/ore-1.png", scale = 0.25, mipmap_count = 4, tint={r=1.0, g=0.2, b=0.2, a=1.0} },
+			{ size = 64, filename = "__Spaghenutti__/graphics/base/ore/ore-2.png", scale = 0.25, mipmap_count = 4, tint={r=1.0, g=0.2, b=0.2, a=1.0} },
+			{ size = 64, filename = "__Spaghenutti__/graphics/base/ore/ore-3.png", scale = 0.25, mipmap_count = 4, tint={r=1.0, g=0.2, b=0.2, a=1.0} },
+			{ size = 64, filename = "__Spaghenutti__/graphics/base/ore/ore-4.png", scale = 0.25, mipmap_count = 4, tint={r=1.0, g=0.2, b=0.2, a=1.0} }
+		},
+		subgroup = "raw-resource",
+		order = "[tungsten-ore]",
+		stack_size = 200
+	},
+  {
+		type = "item",
 		name = "salt",  -- #ForRegEx# - item
 		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
 		icon_size = 64,
@@ -150,16 +184,6 @@ data:extend({
 		icon_mipmaps = 4,
 		subgroup = "raw-resource",
 		order = "[zircon]",
-		stack_size = 100
-	},
-  {
-		type = "item",
-		name = "niobium-powder",  -- #ForRegEx# - item
-		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
-		icon_size = 64,
-		icon_mipmaps = 4,
-		subgroup = "raw-resource",
-		order = "[niobium-powder]",
 		stack_size = 100
 	},
   ------------------------------------------------------------------------------
@@ -203,6 +227,16 @@ data:extend({
 		scale = 0.5,
 		subgroup = "processed-resource",
 		order = "[calcium-carbonate]",
+		stack_size = 100
+	},
+  {
+		type = "item",
+		name = "calcium",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "processed-resource",
+		order = "[calcium]",
 		stack_size = 100
 	},
   {
@@ -383,6 +417,46 @@ data:extend({
 		scale = 0.5,
 		subgroup = "processed-resource",
 		order = "[neodymium]",
+		stack_size = 100
+	},
+  {
+		type = "item",
+		name = "niobium-powder",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "processed-resource",
+		order = "[niobium-powder]",
+		stack_size = 100
+	},
+  {
+		type = "item",
+		name = "fluorspar",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "processed-resource",
+		order = "[fluorspar]",
+		stack_size = 100
+	},
+  {
+		type = "item",
+		name = "fluorine",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "processed-resource",
+		order = "[fluorine]",
+		stack_size = 100
+	},
+  {
+		type = "item",
+		name = "sodium-carbonate",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "processed-resource",
+		order = "[sodium-carbonate]",
 		stack_size = 100
 	},
   ------------------------------------------------------------------------------
@@ -1194,6 +1268,15 @@ data:extend({
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "intermediate-product",
     order = "[composites]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "nuclear-fuel-rod",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+    icon_size = 64, icon_mipmaps = 4,
+    subgroup = "intermediate-product",
+    order = "[nuclear-fuel-rod]",
     stack_size = 50
   },
   ------------------------------------------------------------------------------

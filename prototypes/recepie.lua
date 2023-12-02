@@ -122,14 +122,37 @@ data:extend({
   {
 		type = "recipe",
 		name = "calcium-carbonate",  -- #ForRegEx# - recepie
-		category = "crafting",
+    icon = "__Spaghenutti__/graphics/dummy/dummy-recepie-default.png",
+    icon_size = 128,
+		scale = 0.5,
+		category = "chemistry",
+    subgroup = "processed-resource",
     enabled = false,
 		energy_required = 4,	-- time in seconds to make the item
 		ingredients = {
 			{type = "item", name = "limestone", amount = 2},
 		},
 		results = {
-			{type = "item", name = "calcium-carbonate", amount = 3}
+			{type = "item", name = "calcium-carbonate", probability = 80, amount = 3},
+      {type = "item", name = "fluorspar", probability = 20, amount = 1}
+		}
+	},
+  {
+		type = "recipe",
+		name = "calcium-and-fluorine",  -- #ForRegEx# - recepie
+    icon = "__Spaghenutti__/graphics/dummy/dummy-recepie-default.png",
+    icon_size = 128,
+		scale = 0.5,
+		category = "chemistry",
+    subgroup = "processed-resource",
+    enabled = false,
+		energy_required = 2,	-- time in seconds to make the item
+		ingredients = {
+			{type = "item", name = "fluorspar", amount = 1},
+		},
+		results = {
+			{type = "item", name = "fluorine", amount = 2},
+      {type = "item", name = "calcium", amount = 2}
 		}
 	},
   {
@@ -448,6 +471,213 @@ data:extend({
 		},
 		results = {
 			{type = "item", name = "bronze-rod", amount = 4}
+		}
+	},
+  {
+		type = "recipe",
+		name = "zircon",  -- #ForRegEx# - recepie
+		category = "crafting",
+    enabled = false,
+		energy_required = 10,	-- time in seconds to make the item
+		ingredients = {
+			{type = "item", name = "zirconium-ore", amount = 12},
+		},
+		results = {
+			{type = "item", name = "zircon", amount = 1}
+		}
+	},
+  {
+		type = "recipe",
+		name = "zirconium-rod",  -- #ForRegEx# - recepie
+		category = "smelting",
+    enabled = false,
+		energy_required = 4,	-- time in seconds to make the item
+		ingredients = {
+			{type = "item", name = "zirconium-ore", amount = 2}
+		},
+		results = {
+			{type = "item", name = "zirconium-rod", amount = 3}
+		}
+	},
+  {
+		type = "recipe",
+		name = "zirconia",  -- #ForRegEx# - recepie
+		category = "smelting",
+    enabled = false,
+		energy_required = 3.2,	-- time in seconds to make the item
+		ingredients = {
+			{type = "item", name = "zirconium-ore", amount = 1},
+      {type = "item", name = "sand", amount = 3}
+		},
+		results = {
+			{type = "item", name = "zirconia", amount = 1}
+		}
+	},
+  {
+		type = "recipe",
+		name = "zirconium-rod",  -- #ForRegEx# - recepie
+		category = "smelting",
+    enabled = false,
+		energy_required = 4,	-- time in seconds to make the item
+		ingredients = {
+			{type = "item", name = "zirconium-ore", amount = 2}
+		},
+		results = {
+			{type = "item", name = "zirconium-rod", amount = 3}
+		}
+	},
+  {
+		type = "recipe",
+		name = "lead-slab",  -- #ForRegEx# - recepie
+		category = "smelting",
+    enabled = false,
+		energy_required = 4,	-- time in seconds to make the item
+		ingredients = {
+			{type = "item", name = "lead-ore", amount = 2}
+		},
+		results = {
+			{type = "item", name = "lead-slab", amount = 3}
+		}
+	},
+  {
+		type = "recipe",
+		name = "niobium-powder",  -- #ForRegEx# - recepie
+		category = "chemistry",
+    enabled = false,
+		energy_required = 4,	-- time in seconds to make the item
+		ingredients = {
+			{type = "item", name = "sand", amount = 8},
+      {type = "fluid", name = "water", amount = 50}
+		},
+		results = {
+			{type = "item", name = "niobium-powder", amount = 2}
+		}
+	},
+  {
+		type = "recipe",
+		name = "aqueous-niobium-tantalum",  -- #ForRegEx# - recepie
+    icon = "__Spaghenutti__/graphics/dummy/dummy-recepie-default.png",
+    icon_size = 128,
+		scale = 0.5,
+		category = "chemistry",
+    subgroup = "raw-resource",
+    enabled = false,
+		energy_required = 5,	-- time in seconds to make the item
+		ingredients = {
+			{type = "item", name = "sand", amount = 8},
+      {type = "item", name = "fluorine", amount = 1},
+      {type = "fluid", name = "water", amount = 50}
+		},
+		results = {
+			{type = "fluid", name = "aqueous-niobium", amount = 50},
+      {type = "fluid", name = "aqueous-tantalum", amount = 6}
+		}
+	},
+  {
+		type = "recipe",
+		name = "niobium-billet",  -- #ForRegEx# - recepie
+		category = "chemistry",
+    enabled = false,
+		energy_required = 3.6,	-- time in seconds to make the item
+		ingredients = {
+			{type = "fluid", name = "aqueous-niobium", amount = 50}
+		},
+		results = {
+			{type = "item", name = "niobium-billet", amount = 1}
+		}
+	},
+  {
+		type = "recipe",
+		name = "tantalum-billet",  -- #ForRegEx# - recepie
+		category = "chemistry",
+    enabled = false,
+		energy_required = 2.8,	-- time in seconds to make the item
+		ingredients = {
+			{type = "fluid", name = "aqueous-tantalum", amount = 50}
+		},
+		results = {
+			{type = "item", name = "tantalum-billet", amount = 1}
+		}
+	},
+  {
+		type = "recipe",
+		name = "ammonium-paratungstate",  -- #ForRegEx# - recepie
+		category = "smelting",
+    enabled = false,
+		energy_required = 8,	-- time in seconds to make the item
+		ingredients = {
+			{type = "item", name = "tungsten-ore", amount = 2}
+		},
+		results = {
+			{type = "item", name = "ammonium-paratungstate", amount = 1}
+		}
+	},
+  {
+		type = "recipe",
+		name = "sodium-carbonate",  -- #ForRegEx# - recepie
+		category = "smelting",
+    enabled = false,
+		energy_required = 4,	-- time in seconds to make the item
+		ingredients = {
+			{type = "item", name = "sodium", amount = 2},
+      {type = "item", name = "coke", amount = 5}
+		},
+		results = {
+			{type = "item", name = "sodium-carbonate", amount = 2}
+		}
+	},
+  {
+		type = "recipe",
+		name = "tungsten-powder",  -- #ForRegEx# - recepie
+		category = "smelting",
+    enabled = false,
+		energy_required = 6,	-- time in seconds to make the item
+		ingredients = {
+			{type = "item", name = "ammonium-paratungstate", amount = 2},
+      {type = "item", name = "sodium-carbonate", amount = 1}
+		},
+		results = {
+			{type = "item", name = "tungsten-powder", amount = 6}
+		}
+	},
+  {
+		type = "recipe",
+		name = "tungsten-billet",  -- #ForRegEx# - recepie
+		category = "smelting",
+    enabled = false,
+		energy_required = 6,	-- time in seconds to make the item
+		ingredients = {
+			{type = "item", name = "tungsten-powder", amount = 6}
+		},
+		results = {
+			{type = "item", name = "tungsten-billet", amount = 3}
+		}
+	},
+  {
+		type = "recipe",
+		name = "tungsten-carbide",  -- #ForRegEx# - recepie
+		category = "smelting",
+    enabled = false,
+		energy_required = 20,	-- time in seconds to make the item
+		ingredients = {
+			{type = "item", name = "tungsten-powder", amount = 4},
+      {type = "item", name = "graphite", amount = 3}
+		},
+		results = {
+			{type = "item", name = "tungsten-carbide", amount = 3}
+		}
+	},
+  {
+		type = "recipe",
+		name = "glass",  -- #ForRegEx# - recepie
+		category = "smelting",
+    enabled = false,
+		energy_required = 3.2,	-- time in seconds to make the item
+		ingredients = {
+			{type = "item", name = "sand", amount = 4}
+		},
+		results = {
+			{type = "item", name = "glass", amount = 1}
 		}
 	},
 })

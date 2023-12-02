@@ -16,6 +16,8 @@ C Carbon
 Ca Calcium
   + limestone / stone
   +r calcium-carbonate (for making zement)
+  +r fluorspar CaF2
+  +r calcium
   + ceramics
 
 Na Sodium
@@ -61,32 +63,35 @@ Sn Tin
   +r bronze-rod (60% copper 40% tin) for corrosion resistant stuff
 
 Zr Zirconium
-  + zirconium ore (missing resource)
-  + zircon (for the lolzs, low change to get this from zircon ore) for nuclear fuel rods
-  + zirconium rod
-  + zirconia (Zirconium dioxide) for hard ceramics
+  + zirconium-ore (missing resource)
+  +r zircon (for the lolzs, low chance to get this from zircon ore) for nuclear fuel rods
+  +r zirconium-rod
+  +r zirconia (Zirconium dioxide) for hard ceramics
 
 Pb Lead
-  - lead ore (PbS lead sulfite)
-  + lead slab
+  + lead-ore (missing resource) (PbS lead sulfite)
+  +r lead-slab
 
 Sb Antimony
   - stibnite (Sb2S3 Ore)
   - (used in some plastics)
 
+F Fluorine
+  +r fluorine
+
 Nb Niobium
-  + niobium powder (filtered from sand also contains Ta tantalum)
-  + aqueous niobium (90 %) (in chemical plant with fluoride)
-  + aqueous tantalum (10 %) (in chemical plant with fluoride)
-  + niobium billets (for superconductors and magnets) 
-  + tantalum billets (for high energy phisics)
+  +r niobium-powder (filtered from sand also contains Ta tantalum)
+  +r aqueous-niobium (90 %) (in chemical plant with fluoride)
+  +r aqueous-tantalum (10 %) (in chemical plant with fluoride)
+  +r niobium-billet (for superconductors and magnets) 
+  +r tantalum-billet (for high energy phisics)
 
 W Tungsten
-  - tungsten ore ((Fe,Mn)WO4 Wolframite)
-  + ammonium paratungstate (After processing tungsten ore)
-  + tungsten powder (after processing ammonium paratungstate with Na2CO3 sodium carbonate)
-  + tungsten billets
-  + tungsten carbide WC
+  + tungsten-ore (missing resource) ((Fe,Mn)WO4 Wolframite)
+  +r ammonium-paratungstate (After processing tungsten ore)
+  +r tungsten-powder (after processing ammonium paratungstate with Na2CO3 sodium carbonate)
+  +r tungsten-billet
+  +r tungsten-carbide
 
 Hg Mercury
 
@@ -105,6 +110,7 @@ Rare earths
 
 Other
   + glass
+  +r sodium-carbonate
 
 Exotic materials
 	- Hypercrystals
@@ -193,6 +199,7 @@ Intermediates
   + laser
   + heat resistant tiles
   + fabric
+  + nuclear-fuel-rod
 
 High tech stuff
   - boson einstein condensate
