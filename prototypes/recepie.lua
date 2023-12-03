@@ -807,4 +807,103 @@ data:extend({
 			{type = "item", name = "stainless-steel", amount = 10}
 		}
 	},
+  {
+		type = "recipe",
+		name = "bolts",  -- #ForRegEx# - recepie
+		category = "crafting",
+    enabled = false,
+		energy_required = 1.2,	-- time in seconds to make the item
+		ingredients = {
+      {type = "item", name = "iron-plate", amount = 3}
+		},
+		results = {
+			{type = "item", name = "stainless-steel", amount = 2}
+		}
+	},
+  {
+		type = "recipe",
+		name = "bearing",  -- #ForRegEx# - recepie
+		category = "crafting-with-fluid",
+    enabled = false,
+		energy_required = 2.4,	-- time in seconds to make the item
+		ingredients = {
+      {type = "item", name = "steel-plate", amount = 3},
+      {type = "item", name = "chromium-plate", amount = 2},
+      {type = "fluid", name = "lubricant", amount = 5}
+		},
+		results = {
+			{type = "item", name = "bearing", amount = 3}
+		}
+	},
+  {
+		type = "recipe",
+		name = "mirror",  -- #ForRegEx# - recepie
+		category = "crafting-with-fluid",
+    enabled = false,
+		energy_required = 2.8,	-- time in seconds to make the item
+		ingredients = {
+      {type = "item", name = "glass", amount = 2},
+      {type = "item", name = "aluminum-sheet", amount = 1}
+		},
+		results = {
+			{type = "item", name = "mirror", amount = 1}
+		}
+	},
+  {
+		type = "recipe",
+		name = "lens",  -- #ForRegEx# - recepie
+		category = "crafting",
+    enabled = false,
+		energy_required = 1.6,	-- time in seconds to make the item
+		ingredients = {
+      {type = "item", name = "glass", amount = 1},
+      {type = "item", name = "silica", amount = 1}
+		},
+		results = {
+			{type = "item", name = "lens", amount = 1}
+		}
+	},
+  {
+		type = "recipe",
+		name = "infra-red-filter",  -- #ForRegEx# - recepie
+		category = "crafting-with-fluid",
+    enabled = false,
+		energy_required = 1.6,	-- time in seconds to make the item
+		ingredients = {
+      {type = "fluid", name = "aqueous-tantalum", amount = 10},
+      {type = "item", name = "silica", amount = 1}
+		},
+		results = {
+			{type = "item", name = "infra-red-filter", amount = 1}
+		}
+	},
+  {
+		type = "recipe",
+		name = "resistor",  -- #ForRegEx# - recepie
+		category = "crafting",
+    enabled = false,
+		energy_required = 2,	-- time in seconds to make the item
+		ingredients = {
+      {type = "item", name = "graphite", amount = 1},
+      {type = "item", name = "copper-plate", amount = 2}
+		},
+		results = {
+			{type = "item", name = "infra-red-filter", amount = 3}
+		}
+	},
+  {
+		type = "recipe",
+		name = "capacitor",  -- #ForRegEx# - recepie
+		category = "crafting",
+    enabled = false,
+		energy_required = 6,	-- time in seconds to make the item
+		ingredients = {
+      {type = "item", name = "aluminum-ingot", amount = 3},
+      {type = "item", name = "niobium-billet", amount = 3},
+      {type = "item", name = "tantalum-billet", amount = 1}
+		},
+		results = {
+			{type = "item", name = "infra-red-filter", amount = 6}
+		}
+	},
 })

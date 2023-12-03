@@ -149,16 +149,18 @@ Alloys
 
 Basic Intermediates
   - mechanical components
-    + bolt (nuts and bolds)
-    + gear
-    + bearings
+    + bolts (nuts and bolts)
+    - gear
+      +r steel-gear
+      +r stainless-steel-gear
+    +r bearing
 	- optical components
-		+ mirror
-		+ lens
-    + infra red filter
+		+r mirror
+		+r lens
+    +r infra red filter
 	- electrical components
-		+ resistor
-		+ capacitor
+		+r resistor
+		+r capacitor
 		+ diode
 		+ transistor
 		+ LED
