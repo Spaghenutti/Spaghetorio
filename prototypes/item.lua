@@ -209,6 +209,23 @@ data:extend({
 	},
   {
 		type = "item",
+		name = "spodumene",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		tint = {r=0.4, g=0.3, b=0.3, a=1.0},
+		icon_size = 64,
+		icon_mipmaps = 4,
+		pictures = {
+			{ size = 64, filename = "__Spaghenutti__/graphics/base/ore/ore-1.png", scale = 0.25, mipmap_count = 4, tint={r=1.0, g=0.2, b=0.2, a=1.0} },
+			{ size = 64, filename = "__Spaghenutti__/graphics/base/ore/ore-2.png", scale = 0.25, mipmap_count = 4, tint={r=1.0, g=0.2, b=0.2, a=1.0} },
+			{ size = 64, filename = "__Spaghenutti__/graphics/base/ore/ore-3.png", scale = 0.25, mipmap_count = 4, tint={r=1.0, g=0.2, b=0.2, a=1.0} },
+			{ size = 64, filename = "__Spaghenutti__/graphics/base/ore/ore-4.png", scale = 0.25, mipmap_count = 4, tint={r=1.0, g=0.2, b=0.2, a=1.0} }
+		},
+		subgroup = "raw-resource",
+		order = "[spodumene]",
+		stack_size = 200
+	},
+  {
+		type = "item",
 		name = "salt",  -- #ForRegEx# - item
 		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
 		icon_size = 64,
@@ -508,6 +525,26 @@ data:extend({
 		scale = 0.5,
 		subgroup = "processed-resource",
 		order = "[sodium-carbonate]",
+		stack_size = 100
+	},
+  {
+		type = "item",
+		name = "lithium-oxide",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "processed-resource",
+		order = "[lithium-oxide]",
+		stack_size = 100
+	},
+  {
+		type = "item",
+		name = "lithium",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "processed-resource",
+		order = "[lithium]",
 		stack_size = 100
 	},
   ------------------------------------------------------------------------------
@@ -1453,6 +1490,24 @@ data:extend({
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "advanced-intermediate-product",
     order = "[nozzle]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "fuel-infector",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+    icon_size = 64, icon_mipmaps = 4,
+    subgroup = "advanced-intermediate-product",
+    order = "[fuel-infector]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "combustion-chamber",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+    icon_size = 64, icon_mipmaps = 4,
+    subgroup = "advanced-intermediate-product",
+    order = "[combustion-chamber]",
     stack_size = 50
   },
   {

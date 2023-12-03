@@ -1437,4 +1437,171 @@ data:extend({
 			{type = "item", name = "valve", amount = 1}
 		}
 	},
+  {
+		type = "recipe",
+		name = "preassure-tank",  -- #ForRegEx# - recepie
+		category = "crafting",
+    enabled = false,
+		energy_required = 4,	-- time in seconds to make the item
+		ingredients = {
+      {type = "item", name = "stainless-steel", amount = 4},
+      {type = "item", name = "flange", amount = 2}
+		},
+		results = {
+			{type = "item", name = "preassure-tank", amount = 1}
+		}
+	},
+  {
+		type = "recipe",
+		name = "high-preassure-tank",  -- #ForRegEx# - recepie
+		category = "crafting",
+    enabled = false,
+		energy_required = 4,	-- time in seconds to make the item
+		ingredients = {
+      {type = "item", name = "aluminum-brass", amount = 2},
+      {type = "item", name = "TiNb", amount = 1},
+      {type = "item", name = "carbon-fiber", amount = 2}
+		},
+		results = {
+			{type = "item", name = "high-preassure-tank", amount = 1}
+		}
+	},
+  {
+		type = "recipe",
+		name = "lithium-oxide",  -- #ForRegEx# - recepie
+    icon = "__Spaghenutti__/graphics/dummy/dummy-recepie-default.png",
+    icon_size = 128,
+		scale = 0.5,
+		category = "smelting",
+    subgroup = "raw-resource",
+    enabled = false,
+		energy_required = 3.6,	-- time in seconds to make the item
+		ingredients = {
+      {type = "item", name = "spodumene", amount = 4}
+		},
+		results = {
+			{type = "item", name = "lithium-oxide", amount = 1},
+      {type = "item", name = "alumina", amount = 1},
+      {type = "item", name = "silica", amount = 1}
+		}
+	},
+  {
+		type = "recipe",
+		name = "lithium",  -- #ForRegEx# - recepie
+		category = "smelting",
+    enabled = false,
+		energy_required = 2.4,	-- time in seconds to make the item
+		ingredients = {
+      {type = "item", name = "lithium-oxide", amount = 2}
+		},
+		results = {
+			{type = "item", name = "lithium", amount = 2}
+		}
+	},
+  {
+		type = "recipe",
+		name = "turbine-blade-from-stainless-steel",  -- #ForRegEx# - recepie
+		category = "crafting",
+    enabled = false,
+		energy_required = 3.2,	-- time in seconds to make the item
+		ingredients = {
+      {type = "item", name = "stainless-steel", amount = 2}
+		},
+		results = {
+			{type = "item", name = "turbine-blade", amount = 1}
+		}
+	},
+  {
+		type = "recipe",
+		name = "turbine-blade-from-TiAlSn",  -- #ForRegEx# - recepie
+		category = "crafting",
+    enabled = false,
+		energy_required = 4.8,	-- time in seconds to make the item
+		ingredients = {
+      {type = "item", name = "TiAlSn", amount = 2}
+		},
+		results = {
+			{type = "item", name = "turbine-blade", amount = 2}
+		}
+	},
+  {
+		type = "recipe",
+		name = "turbopump",  -- #ForRegEx# - recepie
+		category = "crafting",
+    enabled = false,
+		energy_required = 4.8,	-- time in seconds to make the item
+		ingredients = {
+      {type = "item", name = "turbine-blade", amount = 10},
+      {type = "item", name = "ceramic", amount = 2},
+      {type = "item", name = "stainless-steel", amount = 3},
+      {type = "item", name = "tungsten-billet", amount = 3},
+      {type = "item", name = "bolts", amount = 8}
+		},
+		results = {
+			{type = "item", name = "turbopump", amount = 1}
+		}
+	},
+  {
+		type = "recipe",
+		name = "nozzle",  -- #ForRegEx# - recepie
+		category = "crafting",
+    enabled = false,
+		energy_required = 5.6,	-- time in seconds to make the item
+		ingredients = {
+      {type = "item", name = "copper-plate", amount = 2},
+      {type = "item", name = "TiAlSn", amount = 2},
+      {type = "item", name = "tungsten-billet", amount = 6},
+      {type = "item", name = "tungsten-carbide", amount = 2},
+      {type = "item", name = "bolts", amount = 4}
+		},
+		results = {
+			{type = "item", name = "nozzle", amount = 1}
+		}
+	},
+  {
+		type = "recipe",
+		name = "fuel-infector",  -- #ForRegEx# - recepie
+		category = "crafting",
+    enabled = false,
+		energy_required = 1,	-- time in seconds to make the item
+		ingredients = {
+      {type = "item", name = "tungsten-carbide", amount = 1},
+      {type = "item", name = "inconel", amount = 1}
+		},
+		results = {
+			{type = "item", name = "fuel-infector", amount = 1}
+		}
+	},
+  {
+		type = "recipe",
+		name = "combustion-chamber",  -- #ForRegEx# - recepie
+		category = "crafting",
+    enabled = false,
+		energy_required = 24,	-- time in seconds to make the item
+		ingredients = {
+      {type = "item", name = "fuel-infector", amount = 20},
+      {type = "item", name = "tungsten-billet", amount = 2},
+      {type = "item", name = "inconel", amount = 3},
+      {type = "item", name = "bolts", amount = 4}
+		},
+		results = {
+			{type = "item", name = "combustion-chamber", amount = 1}
+		}
+	},
+  {
+		type = "recipe",
+		name = "rocket-engine",  -- #ForRegEx# - recepie
+		category = "crafting",
+    enabled = false,
+		energy_required = 4,	-- time in seconds to make the item
+		ingredients = {
+      {type = "item", name = "turbopump", amount = 2},
+      {type = "item", name = "nozzle", amount = 1},
+      {type = "item", name = "combustion-chamber", amount = 1},
+      {type = "item", name = "bolts", amount = 6}
+		},
+		results = {
+			{type = "item", name = "rocket-engine", amount = 1}
+		}
+	},
 })

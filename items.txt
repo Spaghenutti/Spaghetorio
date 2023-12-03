@@ -55,6 +55,11 @@ P Phosphorus
 
 Mn Manganese
 
+Li Lithium
+  + spodumene Lithium-Mineral LiAl[Si2O6] 
+  +r lithium-oxide
+  +r lithium
+
 Si Silicon
   +r sand
   +r quartz
@@ -221,12 +226,14 @@ Intermediates
 	- (heat pipe) already exists
 	+r spark-plug
   +r valve
-  + preassure-tank
-  + high-preassure-tank
-  + turbine blade
-	+ turbopump
-	+ nozzle
-	+ rocket engine
+  +r preassure-tank
+  +r high-preassure-tank
+  +rr turbine-blade
+	+r turbopump
+	+r nozzle
+  +r fuel-infector
+  +r combustion-chamber
+	+r rocket-engine
 	- (Engine) already exists
 	+ processor
   + cmos
