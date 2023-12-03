@@ -1277,6 +1277,36 @@ data:extend({
 	},
   {
 		type = "item",
+		name = "converter",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "electrical-optical-component",
+		order = "[converter]",
+		stack_size = 100
+	},
+  {
+		type = "item",
+		name = "integrated-circuit",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "electrical-optical-component",
+		order = "[integrated-circuit]",
+		stack_size = 100
+	},
+  {
+		type = "item",
+		name = "micro-controller",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "electrical-optical-component",
+		order = "[micro-controller]",
+		stack_size = 100
+	},
+  {
+		type = "item",
 		name = "processor",  -- #ForRegEx# - item
 		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
 		icon_size = 128,

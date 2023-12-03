@@ -235,10 +235,14 @@ Intermediates
   +r combustion-chamber
 	+r rocket-engine
 	- (Engine) already exists
+  + converter
+  + integrated-circuit
+  + micro-controller
+  + memory-chip
 	+ processor
   + cmos
   + laser
-  + heat resistant tiles
+  + heat-resistant-tiles
   + fabric
   + nuclear-fuel-rod
 
