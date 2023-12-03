@@ -776,6 +776,16 @@ data:extend({
 		order = "[aluminum-brass]",
 		stack_size = 100
 	},
+  {
+		type = "item",
+		name = "inconel",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "alloy",
+		order = "[inconel]",
+		stack_size = 100
+	},
   ------------------------------------------------------------------------------
   -- Subgroup advanced-raw-material --
   ------------------------------------------------------------------------------
@@ -1008,6 +1018,16 @@ data:extend({
 	},
   {
 		type = "item",
+		name = "sinter-filter",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "mechanical-component",
+		order = "[sinter-filter]",
+		stack_size = 100
+	},
+  {
+		type = "item",
 		name = "crucible",  -- #ForRegEx# - item
 		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
 		icon_size = 128,
@@ -1167,6 +1187,16 @@ data:extend({
 		scale = 0.5,
 		subgroup = "electrical-optical-component",
 		order = "[coil]",
+		stack_size = 100
+	},
+  {
+		type = "item",
+		name = "empty-circuit-board",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "electrical-optical-component",
+		order = "[empty-circuit-board]",
 		stack_size = 100
 	},
   {

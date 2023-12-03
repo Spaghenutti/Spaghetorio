@@ -794,6 +794,26 @@ data:extend({
 	},
   {
 		type = "recipe",
+		name = "rare-earth-processing",  -- #ForRegEx# - recepie
+    icon = "__Spaghenutti__/graphics/dummy/dummy-recepie-default.png",
+    icon_size = 128,
+		scale = 0.5,
+		category = "crafting",
+    subgroup = "raw-resource",
+    enabled = false,
+		energy_required = 1.6,	-- time in seconds to make the item
+		ingredients = {
+			{type = "item", name = "rare-earths", amount = 1},
+		},
+		results = {
+			{type = "item", name = "yittrium", probability = 16, amount = 1},
+      {type = "item", name = "lanthanum", probability = 22, amount = 1},
+      {type = "item", name = "neodymium", probability = 24, amount = 1},
+      {type = "item", name = "cerium", probability = 38, amount = 1},
+		}
+	},
+  {
+		type = "recipe",
 		name = "palladium",  -- #ForRegEx# - recepie
     icon = "__Spaghenutti__/graphics/dummy/dummy-recepie-default.png",
     icon_size = 128,
@@ -855,6 +875,21 @@ data:extend({
 		},
 		results = {
 			{type = "item", name = "aluminum-brass", amount = 12}
+		}
+	},
+  {
+		type = "recipe",
+		name = "inconel",  -- #ForRegEx# - recepie
+		category = "smelting",
+    enabled = false,
+		energy_required = 16,	-- time in seconds to make the item
+		ingredients = {
+			{type = "item", name = "nickel-ingot", amount = 7},
+      {type = "item", name = "chromium-plate", amount = 2},
+      {type = "item", name = "iron-plate", amount = 1}
+		},
+		results = {
+			{type = "item", name = "inconel", amount = 10}
 		}
 	},
   {
@@ -1095,6 +1130,209 @@ data:extend({
 		},
 		results = {
 			{type = "item", name = "silver-solder", amount = 10}
+		}
+	},
+  {
+		type = "recipe",
+		name = "empty-circuit-board",  -- #ForRegEx# - recepie
+		category = "crafting",
+    enabled = false,
+		energy_required = 3.6,	-- time in seconds to make the item
+		ingredients = {
+      {type = "item", name = "polymer", amount = 1},
+      {type = "item", name = "copper-plate", amount = 2},
+      {type = "item", name = "glass-fiber", amount = 1}
+		},
+		results = {
+			{type = "item", name = "empty-circuit-board", amount = 1}
+		}
+	},
+  {
+		type = "recipe",
+		name = "circuit-board",  -- #ForRegEx# - recepie
+		category = "crafting",
+    enabled = false,
+		energy_required = 3.6,	-- time in seconds to make the item
+		ingredients = {
+      {type = "item", name = "empty-circuit-board", amount = 1},
+      {type = "item", name = "resistor", amount = 2},
+      {type = "item", name = "capacitor", amount = 2},
+      {type = "item", name = "diode", amount = 1},
+      {type = "item", name = "transistor", amount = 1}
+		},
+		results = {
+			{type = "item", name = "circuit-board", amount = 1}
+		}
+	},
+  {
+		type = "recipe",
+		name = "ferrite-magnet",  -- #ForRegEx# - recepie
+		category = "crafting",
+    enabled = false,
+		energy_required = 3.6,	-- time in seconds to make the item
+		ingredients = {
+      {type = "item", name = "iron-plate", amount = 3},
+      {type = "item", name = "iron-ore", amount = 1}
+		},
+		results = {
+			{type = "item", name = "ferrite-magnet", amount = 2}
+		}
+	},
+  {
+		type = "recipe",
+		name = "neodymium-magnet",  -- #ForRegEx# - recepie
+		category = "crafting",
+    enabled = false,
+		energy_required = 5,	-- time in seconds to make the item
+		ingredients = {
+      {type = "item", name = "iron-plate", amount = 7},
+      {type = "item", name = "neodymium", amount = 1}
+		},
+		results = {
+			{type = "item", name = "neodymium-magnet", amount = 2}
+		}
+	},
+  {
+		type = "recipe",
+		name = "superconductor",  -- #ForRegEx# - recepie
+		category = "crafting-with-fluid",
+    enabled = false,
+		energy_required = 5,	-- time in seconds to make the item
+		ingredients = {
+      {type = "item", name = "lanthanum", amount = 1},
+      {type = "item", name = "iron-plate", amount = 2},
+      {type = "fluid", name = "hydrogen", amount = 100}
+		},
+		results = {
+			{type = "item", name = "superconductor", amount = 1}
+		}
+	},
+  {
+		type = "recipe",
+		name = "cement",  -- #ForRegEx# - recepie
+		category = "crafting-with-fluid",
+    enabled = false,
+		energy_required = 2,	-- time in seconds to make the item
+		ingredients = {
+      {type = "item", name = "calcium-carbonate", amount = 5},
+      {type = "item", name = "alumina", amount = 1},
+      {type = "item", name = "iron-ore", amount = 2},
+      {type = "fluid", name = "water", amount = 100}
+		},
+		results = {
+			{type = "item", name = "cement", amount = 3}
+		}
+	},
+  {
+		type = "recipe",
+		name = "diamond",  -- #ForRegEx# - recepie
+		category = "crafting",
+    enabled = false,
+		energy_required = 8,	-- time in seconds to make the item
+		ingredients = {
+      {type = "item", name = "graphite", amount = 4}
+		},
+		results = {
+			{type = "item", name = "diamond", amount = 1}
+		}
+	},
+  {
+		type = "recipe",
+		name = "ceramic",  -- #ForRegEx# - recepie
+		category = "crafting",
+    enabled = false,
+		energy_required = 3.6,	-- time in seconds to make the item
+		ingredients = {
+      {type = "item", name = "zirconia", amount = 3},
+      {type = "item", name = "silica", amount = 1}
+		},
+		results = {
+			{type = "item", name = "ceramic", amount = 1}
+		}
+	},
+  {
+		type = "recipe",
+		name = "crucible",  -- #ForRegEx# - recepie
+		category = "crafting",
+    enabled = false,
+		energy_required = 4,	-- time in seconds to make the item
+		ingredients = {
+      {type = "item", name = "calcium-carbonate", amount = 2},
+      {type = "item", name = "graphite", amount = 3}
+		},
+		results = {
+			{type = "item", name = "crucible", amount = 1}
+		}
+	},
+  {
+		type = "recipe",
+		name = "bleach",  -- #ForRegEx# - recepie
+		category = "chemistry",
+    enabled = false,
+		energy_required = 4,	-- time in seconds to make the item
+		ingredients = {
+      {type = "fluid", name = "oxygen", amount = 100},
+      {type = "fluid", name = "chlorine", amount = 50}
+		},
+		results = {
+			{type = "item", name = "bleach", amount = 1}
+		}
+	},
+  {
+		type = "recipe",
+		name = "flange",  -- #ForRegEx# - recepie
+		category = "crafting",
+    enabled = false,
+		energy_required = 2.4,	-- time in seconds to make the item
+		ingredients = {
+      {type = "item", name = "bolts", amount = 2},
+      {type = "item", name = "stainless-steel", amount = 1}
+		},
+		results = {
+			{type = "item", name = "flange", amount = 1}
+		}
+	},
+  {
+		type = "recipe",
+		name = "filter",  -- #ForRegEx# - recepie
+		category = "crafting",
+    enabled = false,
+		energy_required = 3.2,	-- time in seconds to make the item
+		ingredients = {
+      {type = "item", name = "polymer", amount = 2},
+      {type = "item", name = "stainless-steel", amount = 1}
+		},
+		results = {
+			{type = "item", name = "filter", amount = 1}
+		}
+	},
+  {
+		type = "recipe",
+		name = "sinter-filter",  -- #ForRegEx# - recepie
+		category = "crafting",
+    enabled = false,
+		energy_required = 2.4,	-- time in seconds to make the item
+		ingredients = {
+      {type = "item", name = "bronze-rod", amount = 3},
+      {type = "item", name = "stainless-steel", amount = 2}
+		},
+		results = {
+			{type = "item", name = "sinter-filter", amount = 1}
+		}
+	},
+  {
+		type = "recipe",
+		name = "coolant",  -- #ForRegEx# - recepie
+		category = "chemistry",
+    enabled = false,
+		energy_required = 3.2,	-- time in seconds to make the item
+		ingredients = {
+      {type = "item", name = "fluorine", amount = 1},
+      {type = "item", name = "graphite", amount = 1},
+      {type = "fluid", name = "water", amount = 50}
+		},
+		results = {
+			{type = "fluid", name = "coolant", amount = 50}
 		}
 	},
 })

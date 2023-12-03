@@ -121,15 +121,21 @@ Noble metals
 
 Rare earths
   + rare-earths (missing resource)
-  + Y Yittrium  - for optical fibers
-  + La Lanthanum 
-  + Ce Cerium
-  + Nd Neodymium
+  +r Y Yittrium  - for optical fibers 0.003
+  +r La Lanthanum 0.004
+  +r Ce Cerium 0.007
+  +r Nd Neodymium 0.004
 
 Sulfide ores
   - here are lots of fancy stuff: https://en.wikipedia.org/wiki/Sulfide_mineral
 
 Other
+  + hydrogen
+  + deuterium
+  + helium
+  + helium-3
+  + oxygen
+  + nitrogen
   +r glass
   +r sodium-carbonate
 
@@ -147,15 +153,13 @@ Alien materials
   - rummite
   - thruttodsium
 
-
 Alloys
 	- (steel) already exists
 	+r stainless-steel
 	+r duralumin - aluminum 2000 Series (aerospace)
 	+r aluminum-brass - aluminum 7000 Series (strong alloy)
   - antimonial-lead (5% antimony 95% lead) for lead batteries
-  - lead tin (98% tin 2% lead) for solder
-  - lead silver (1.5% silver 98.5% lead) for strong solder
+  +r inconel
 
 Basic Intermediates
   - mechanical components
@@ -181,28 +185,30 @@ Basic Intermediates
   +r polymer
 	+rr solder
   +r silver-solder
-  + PCB - circuit-board
+  +r empty-circuit-board
+  +r circuit-board
 	- magnet
 		- permanent magnet
-			+ ferrite magnet (iron oxide (commonly known as rust) and strontium carbonate)
-			- alnico magnet (Aluminium (Al), Nickel (Ni), Cobalt (Co))
-			+ neodymium magnet (Neodymium Iron Boron (NdFeB))
-			- samarium cobalt magnets (SmCo magnets))
+			+r ferrite-magnet (iron oxide (commonly known as rust) and strontium carbonate)
+			- alnico-magnet (Aluminium (Al), Nickel (Ni), Cobalt (Co))
+			+r neodymium-magnet (Neodymium Iron Boron (NdFeB))
+			- samarium-cobalt magnets (SmCo magnets)
 		- electro magnet (wire around iron rod)
-	+ superconductor
-  + cement
-  + ceramic
-    + diamond
-  + carbon fiber
-  + crucible
+	+r superconductor
+  +r cement
+  +r ceramic
+    +r diamond
+  +r carbon-fiber
+  +r crucible
   - catalysts
     -
-  + bleach -> reduction of unwanted substances (DE: Bleichmittel)
+  +r bleach -> reduction of unwanted substances (DE: Bleichmittel)
     - Chlorine dioxide (ClO2) bleach for organic stuff
     - Chlorine Cl
-  + flange
-  + filter
-  + coolant
+  +r flange
+  +r filter
+  +r sinter-filter
+  +r coolant
 
 Intermediates
   + electromagnet
