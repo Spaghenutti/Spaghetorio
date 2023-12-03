@@ -786,6 +786,26 @@ data:extend({
 		order = "[inconel]",
 		stack_size = 100
 	},
+  {
+		type = "item",
+		name = "TiAlSn",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "alloy",
+		order = "[TiAlSn]",
+		stack_size = 100
+	},
+  {
+		type = "item",
+		name = "TiNb",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "alloy",
+		order = "[TiNb]",
+		stack_size = 100
+	},
   ------------------------------------------------------------------------------
   -- Subgroup advanced-raw-material --
   ------------------------------------------------------------------------------
@@ -1045,8 +1065,7 @@ data:extend({
 		subgroup = "mechanical-component",
 		order = "[glass-fiber]",
 		stack_size = 100
-	},
-  {
+	},  {
 		type = "item",
 		name = "kevlar",  -- #ForRegEx# - item
 		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
@@ -1054,16 +1073,6 @@ data:extend({
 		scale = 0.5,
 		subgroup = "mechanical-component",
 		order = "[kevlar]",
-		stack_size = 100
-	},
-  {
-		type = "item",
-		name = "composites",  -- #ForRegEx# - item
-		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
-		icon_size = 128,
-		scale = 0.5,
-		subgroup = "mechanical-component",
-		order = "[composites]",
 		stack_size = 100
 	},
   ------------------------------------------------------------------------------
@@ -1310,6 +1319,15 @@ data:extend({
   },
   {
     type = "item",
+    name = "high-preassure-tank",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+    icon_size = 64, icon_mipmaps = 4,
+    subgroup = "intermediate-product",
+    order = "[high-preassure-tank]",
+    stack_size = 50
+  },
+  {
+    type = "item",
     name = "heat-resistant-tiles",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
     icon_size = 64, icon_mipmaps = 4,
@@ -1451,12 +1469,32 @@ data:extend({
   ------------------------------------------------------------------------------
   {
 		type = "item",
+		name = "composites",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "chemical-product",
+		order = "[composites]",
+		stack_size = 100
+	},
+  {
+		type = "item",
 		name = "polymer",  -- #ForRegEx# - item
 		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
 		icon_size = 128,
 		scale = 0.5,
 		subgroup = "chemical-product",
 		order = "[polymer]",
+		stack_size = 100
+	},
+  {
+		type = "item",
+		name = "epoxy",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "chemical-product",
+		order = "[epoxy]",
 		stack_size = 100
 	},
   {

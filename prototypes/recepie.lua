@@ -894,6 +894,35 @@ data:extend({
 	},
   {
 		type = "recipe",
+		name = "TiAlSn",  -- #ForRegEx# - recepie
+		category = "smelting",
+    enabled = false,
+		energy_required = 14,	-- time in seconds to make the item
+		ingredients = {
+			{type = "item", name = "titanium-plate", amount = 8},
+      {type = "item", name = "aluminum-sheet", amount = 2},
+      {type = "item", name = "tin-sheet", amount = 1}
+		},
+		results = {
+			{type = "item", name = "TiAlSn", amount = 10}
+		}
+	},
+  {
+		type = "recipe",
+		name = "TiNb",  -- #ForRegEx# - recepie
+		category = "smelting",
+    enabled = false,
+		energy_required = 8,	-- time in seconds to make the item
+		ingredients = {
+			{type = "item", name = "titanium-plate", amount = 5},
+      {type = "item", name = "niobium-billet", amount = 4}
+		},
+		results = {
+			{type = "item", name = "TiNb", amount = 5}
+		}
+	},
+  {
+		type = "recipe",
 		name = "bolts",  -- #ForRegEx# - recepie
 		category = "crafting",
     enabled = false,
@@ -1088,6 +1117,21 @@ data:extend({
 		},
 		results = {
 			{type = "item", name = "polymer", amount = 3}
+		}
+	},
+  {
+		type = "recipe",
+		name = "epoxy",  -- #ForRegEx# - recepie
+		category = "chemistry",
+    enabled = false,
+		energy_required = 4,	-- time in seconds to make the item
+		ingredients = {
+      {type = "item", name = "graphite", amount = 3},
+      {type = "fluid", name = "oxygen", amount = 35},
+      {type = "fluid", name = "hydrogen", amount = 15},
+		},
+		results = {
+			{type = "item", name = "epoxy", amount = 2}
 		}
 	},
   {
@@ -1333,6 +1377,64 @@ data:extend({
 		},
 		results = {
 			{type = "fluid", name = "coolant", amount = 50}
+		}
+	},
+  {
+		type = "recipe",
+		name = "electromagnet",  -- #ForRegEx# - recepie
+		category = "crafting",
+    enabled = false,
+		energy_required = 3.2,	-- time in seconds to make the item
+		ingredients = {
+      {type = "item", name = "iron-plate", amount = 1},
+      {type = "item", name = "iron-stick", amount = 1},
+      {type = "item", name = "copper-cable", amount = 3}
+		},
+		results = {
+			{type = "item", name = "electromagnet", amount = 1}
+		}
+	},
+  {
+		type = "recipe",
+		name = "plate-heat-exchanger",  -- #ForRegEx# - recepie
+		category = "crafting",
+    enabled = false,
+		energy_required = 4,	-- time in seconds to make the item
+		ingredients = {
+      {type = "item", name = "bolts", amount = 1},
+      {type = "item", name = "copper-plate", amount = 1},
+      {type = "item", name = "aluminum-sheet", amount = 3}
+		},
+		results = {
+			{type = "item", name = "plate-heat-exchanger", amount = 1}
+		}
+	},
+  {
+		type = "recipe",
+		name = "spark-plug",  -- #ForRegEx# - recepie
+		category = "crafting",
+    enabled = false,
+		energy_required = 4,	-- time in seconds to make the item
+		ingredients = {
+      {type = "item", name = "inconel", amount = 2},
+      {type = "item", name = "copper-plate", amount = 1}
+		},
+		results = {
+			{type = "item", name = "spark-plug", amount = 1}
+		}
+	},
+  {
+		type = "recipe",
+		name = "valve",  -- #ForRegEx# - recepie
+		category = "crafting",
+    enabled = false,
+		energy_required = 4,	-- time in seconds to make the item
+		ingredients = {
+      {type = "item", name = "stainless-steel", amount = 2},
+      {type = "item", name = "bolts", amount = 1}
+		},
+		results = {
+			{type = "item", name = "valve", amount = 1}
 		}
 	},
 })

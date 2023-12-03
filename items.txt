@@ -160,6 +160,8 @@ Alloys
 	+r aluminum-brass - aluminum 7000 Series (strong alloy)
   - antimonial-lead (5% antimony 95% lead) for lead batteries
   +r inconel
+  +r TiAlSn (92.5-5-2.5) Grade 6
+  +r TiNb (55-45) Grade 36
 
 Basic Intermediates
   - mechanical components
@@ -183,6 +185,7 @@ Basic Intermediates
   +r kevlar
   +r composites
   +r polymer
+  +r epoxy
 	+rr solder
   +r silver-solder
   +r empty-circuit-board
@@ -211,14 +214,15 @@ Basic Intermediates
   +r coolant
 
 Intermediates
-  + electromagnet
+  +r electromagnet
   + cryostat
 	- (electric motor) already exists
-	+ heat exchanger
+	+r plate-heat-exchanger
 	- (heat pipe) already exists
-	+ spark plug
-  + valve
-  + preassure tank
+	+r spark-plug
+  +r valve
+  + preassure-tank
+  + high-preassure-tank
   + turbine blade
 	+ turbopump
 	+ nozzle
