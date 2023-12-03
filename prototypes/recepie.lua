@@ -888,7 +888,7 @@ data:extend({
       {type = "item", name = "copper-plate", amount = 2}
 		},
 		results = {
-			{type = "item", name = "infra-red-filter", amount = 3}
+			{type = "item", name = "resistor", amount = 3}
 		}
 	},
   {
@@ -903,7 +903,7 @@ data:extend({
       {type = "item", name = "tantalum-billet", amount = 1}
 		},
 		results = {
-			{type = "item", name = "infra-red-filter", amount = 6}
+			{type = "item", name = "capacitor", amount = 6}
 		}
 	},
 })
