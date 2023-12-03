@@ -327,6 +327,20 @@ data:extend({
 	},
   {
 		type = "recipe",
+		name = "titanium-nitride",  -- #ForRegEx# - recepie
+		category = "chemistry",
+    enabled = false,
+		energy_required = 2.4,	-- time in seconds to make the item
+		ingredients = {
+			{type = "item", name = "titanium-ingot", amount = 2},
+      {type = "fluid", name = "nitrogen", amount = 40},
+		},
+		results = {
+			{type = "item", name = "titanium-nitride", amount = 2}
+		}
+	},
+  {
+		type = "recipe",
 		name = "titanium-carbide",  -- #ForRegEx# - recepie
 		category = "crafting",
     enabled = false,
@@ -515,15 +529,20 @@ data:extend({
 	},
   {
 		type = "recipe",
-		name = "zirconium-rod",  -- #ForRegEx# - recepie
-		category = "smelting",
+		name = "zinc-plate",  -- #ForRegEx# - recepie
+    icon = "__Spaghenutti__/graphics/dummy/dummy-recepie-default.png",
+    icon_size = 128,
+		scale = 0.5,
+		category = "chemistry",
+    subgroup = "raw-resource",
     enabled = false,
 		energy_required = 4,	-- time in seconds to make the item
 		ingredients = {
-			{type = "item", name = "zirconium-ore", amount = 2}
+			{type = "item", name = "zinc-ore", amount = 1}
 		},
 		results = {
-			{type = "item", name = "zirconium-rod", amount = 3}
+			{type = "item", name = "zinc-plate", amount = 1},
+      {type = "item", name = "sulfur", amount = 1}
 		}
 	},
   {
@@ -797,7 +816,7 @@ data:extend({
 		name = "stainless-steel",  -- #ForRegEx# - recepie
 		category = "smelting",
     enabled = false,
-		energy_required = 8,	-- time in seconds to make the item
+		energy_required = 12,	-- time in seconds to make the item
 		ingredients = {
 			{type = "item", name = "steel-plate", amount = 8},
       {type = "item", name = "nickel-ingot", amount = 1},
@@ -805,6 +824,37 @@ data:extend({
 		},
 		results = {
 			{type = "item", name = "stainless-steel", amount = 10}
+		}
+	},
+  {
+		type = "recipe",
+		name = "duralumin",  -- #ForRegEx# - recepie
+		category = "smelting",
+    enabled = false,
+		energy_required = 16,	-- time in seconds to make the item
+		ingredients = {
+			{type = "item", name = "aluminum-sheet", amount = 8},
+      {type = "item", name = "copper-plate", amount = 2},
+      {type = "item", name = "zirconium-rod", amount = 1}
+		},
+		results = {
+			{type = "item", name = "duralumin", amount = 10}
+		}
+	},
+  {
+		type = "recipe",
+		name = "aluminum-brass",  -- #ForRegEx# - recepie
+		category = "smelting",
+    enabled = false,
+		energy_required = 16,	-- time in seconds to make the item
+		ingredients = {
+			{type = "item", name = "aluminum-sheet", amount = 7},
+      {type = "item", name = "zinc-plate", amount = 2},
+      {type = "item", name = "magnesium-slab", amount = 1},
+      {type = "item", name = "copper-plate", amount = 1}
+		},
+		results = {
+			{type = "item", name = "aluminum-brass", amount = 12}
 		}
 	},
   {
@@ -817,7 +867,7 @@ data:extend({
       {type = "item", name = "iron-plate", amount = 3}
 		},
 		results = {
-			{type = "item", name = "stainless-steel", amount = 2}
+			{type = "item", name = "bolts", amount = 2}
 		}
 	},
   {
@@ -838,7 +888,7 @@ data:extend({
   {
 		type = "recipe",
 		name = "mirror",  -- #ForRegEx# - recepie
-		category = "crafting-with-fluid",
+		category = "crafting",
     enabled = false,
 		energy_required = 2.8,	-- time in seconds to make the item
 		ingredients = {
@@ -852,12 +902,12 @@ data:extend({
   {
 		type = "recipe",
 		name = "lens",  -- #ForRegEx# - recepie
-		category = "crafting",
+		category = "crafting-with-fluid",
     enabled = false,
-		energy_required = 1.6,	-- time in seconds to make the item
+		energy_required = 2,	-- time in seconds to make the item
 		ingredients = {
-      {type = "item", name = "glass", amount = 1},
-      {type = "item", name = "silica", amount = 1}
+      {type = "item", name = "silica", amount = 1},
+      {type = "fluid", name = "oxygen", amount = 40}
 		},
 		results = {
 			{type = "item", name = "lens", amount = 1}
@@ -879,6 +929,21 @@ data:extend({
 	},
   {
 		type = "recipe",
+		name = "glass-fiber",  -- #ForRegEx# - recepie
+		category = "crafting",
+    enabled = false,
+		energy_required = 8,	-- time in seconds to make the item
+		ingredients = {
+      {type = "item", name = "silica", amount = 4},
+      {type = "item", name = "aluminum-ingot", amount = 1},
+      {type = "item", name = "sodium", amount = 1}
+		},
+		results = {
+			{type = "item", name = "glass-fiber", amount = 5}
+		}
+	},
+  {
+		type = "recipe",
 		name = "resistor",  -- #ForRegEx# - recepie
 		category = "crafting",
     enabled = false,
@@ -893,17 +958,143 @@ data:extend({
 	},
   {
 		type = "recipe",
-		name = "capacitor",  -- #ForRegEx# - recepie
+		name = "capacitor-from-aluminum",  -- #ForRegEx# - recepie
 		category = "crafting",
     enabled = false,
-		energy_required = 6,	-- time in seconds to make the item
+		energy_required = 3.2,	-- time in seconds to make the item
 		ingredients = {
-      {type = "item", name = "aluminum-ingot", amount = 3},
-      {type = "item", name = "niobium-billet", amount = 3},
+      {type = "item", name = "copper-plate", amount = 1},
+      {type = "item", name = "aluminum-ingot", amount = 1}
+		},
+		results = {
+			{type = "item", name = "capacitor", amount = 2}
+		}
+	},
+  {
+		type = "recipe",
+		name = "capacitor-from-niobium",  -- #ForRegEx# - recepie
+		category = "crafting",
+    enabled = false,
+		energy_required = 3.2,	-- time in seconds to make the item
+		ingredients = {
+      {type = "item", name = "copper-plate", amount = 1},
+      {type = "item", name = "niobium-billet", amount = 2}
+		},
+		results = {
+			{type = "item", name = "capacitor", amount = 3}
+		}
+	},
+  {
+		type = "recipe",
+		name = "capacitor-from-tantalum",  -- #ForRegEx# - recepie
+		category = "crafting",
+    enabled = false,
+		energy_required = 4,	-- time in seconds to make the item
+		ingredients = {
+      {type = "item", name = "copper-plate", amount = 1},
       {type = "item", name = "tantalum-billet", amount = 1}
 		},
 		results = {
-			{type = "item", name = "capacitor", amount = 6}
+			{type = "item", name = "capacitor", amount = 3}
+		}
+	},
+  {
+		type = "recipe",
+		name = "coil",  -- #ForRegEx# - recepie
+		category = "crafting",
+    enabled = false,
+		energy_required = 4,	-- time in seconds to make the item
+		ingredients = {
+      {type = "item", name = "copper-plate", amount = 3},
+      {type = "item", name = "nickel-ingot", amount = 1}
+		},
+		results = {
+			{type = "item", name = "coil", amount = 3}
+		}
+	},
+  {
+		type = "recipe",
+		name = "kevlar",  -- #ForRegEx# - recepie
+		category = "crafting-with-fluid",
+    enabled = false,
+		energy_required = 4.8,	-- time in seconds to make the item
+		ingredients = {
+      {type = "item", name = "graphite", amount = 4},
+      {type = "fluid", name = "nitrogen", amount = 15},
+		},
+		results = {
+			{type = "item", name = "kevlar", amount = 2}
+		}
+	},
+  {
+		type = "recipe",
+		name = "composites",  -- #ForRegEx# - recepie
+		category = "crafting-with-fluid",
+    enabled = false,
+		energy_required = 3.2,	-- time in seconds to make the item
+		ingredients = {
+      {type = "item", name = "graphite", amount = 3},
+      {type = "fluid", name = "oxygen", amount = 25},
+		},
+		results = {
+			{type = "item", name = "composites", amount = 2}
+		}
+	},
+  {
+		type = "recipe",
+		name = "polymer",  -- #ForRegEx# - recepie
+		category = "chemistry",
+    enabled = false,
+		energy_required = 4,	-- time in seconds to make the item
+		ingredients = {
+      {type = "item", name = "graphite", amount = 4},
+      {type = "fluid", name = "nitrogen", amount = 25},
+      {type = "fluid", name = "oxygen", amount = 15},
+		},
+		results = {
+			{type = "item", name = "polymer", amount = 3}
+		}
+	},
+  {
+		type = "recipe",
+		name = "solder-from-tin-sheet",  -- #ForRegEx# - recepie
+		category = "crafting",
+    enabled = false,
+		energy_required = 2.4,	-- time in seconds to make the item
+		ingredients = {
+      {type = "item", name = "lead-slab", amount = 1},
+      {type = "item", name = "tin-sheet", amount = 3}
+		},
+		results = {
+			{type = "item", name = "solder", amount = 2}
+		}
+	},
+  {
+		type = "recipe",
+		name = "solder-from-tin-ingot",  -- #ForRegEx# - recepie
+		category = "crafting",
+    enabled = false,
+		energy_required = 4.8,	-- time in seconds to make the item
+		ingredients = {
+      {type = "item", name = "lead-slab", amount = 2},
+      {type = "item", name = "tin-ingot", amount = 3}
+		},
+		results = {
+			{type = "item", name = "solder", amount = 4}
+		}
+	},
+  {
+		type = "recipe",
+		name = "silver-solder",  -- #ForRegEx# - recepie
+		category = "crafting",
+    enabled = false,
+		energy_required = 16,	-- time in seconds to make the item
+		ingredients = {
+      {type = "item", name = "silver", amount = 1},
+      {type = "item", name = "tin-sheet", amount = 12}
+		},
+		results = {
+			{type = "item", name = "silver-solder", amount = 10}
 		}
 	},
 })

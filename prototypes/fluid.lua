@@ -109,4 +109,26 @@ data:extend({
     icon_size = 128,
     order = "a[fluid]-f[xenon]"
   },
+  {
+    type = "fluid",
+    name = "nitrogen",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1KJ",
+    base_color = {r=0.05, g=0.1, b=0.5},
+    flow_color = {r=0.05, g=0.1, b=0.5},
+    icon = "__Spaghenutti__/graphics/dummy/dummy-fluid-default.png",
+    icon_size = 128,
+    order = "a[fluid]-f[nitrogen]"
+  },
+  {
+    type = "fluid",
+    name = "oxygen",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1KJ",
+    base_color = {r=0.05, g=0.1, b=0.5},
+    flow_color = {r=0.05, g=0.1, b=0.5},
+    icon = "__Spaghenutti__/graphics/dummy/dummy-fluid-default.png",
+    icon_size = 128,
+    order = "a[fluid]-f[oxygen]"
+  },
 })

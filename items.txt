@@ -48,7 +48,7 @@ Ti Titanium
   +r titanium-ingot
   +r titanium-plate
   +r titanium-frames
-  + titanium-nitride TiN (used as coat in knifes for anticorrosion and as barrier layer in semiconductors)
+  +r titanium-nitride TiN (used as coat in knifes for anticorrosion and as barrier layer in semiconductors)
   +r titanium-carbide TiC (very hard, used in cutting tools)
 
 P Phosphorus
@@ -74,6 +74,10 @@ Zr Zirconium
   +r zircon (for the lolzs, low chance to get this from zircon ore) for nuclear fuel rods
   +r zirconium-rod
   +r zirconia (Zirconium dioxide) for hard ceramics
+
+Zn Zinc
+  + zinc-ore (missing resource) - sphalerite (ZnS), marmatite [(ZnFe)S], smithsonite (ZnCO3)
+  +r zinc-plate
 
 Pb Lead
   + lead-ore (missing resource) (PbS lead sulfite)
@@ -101,6 +105,12 @@ W Tungsten
   +r tungsten-carbide
 
 Hg Mercury
+
+N Nitrogen
+  + nitrogen
+
+O Oxygen
+  + oxygen
 
 Noble metals
   +r Au Gold  - from water via washing
@@ -141,15 +151,15 @@ Alien materials
 Alloys
 	- (steel) already exists
 	+r stainless-steel
-	+ duralumin - aluminum 2000 Series (aerospace)
-	+ aluminum brass - aluminum 7000 Series (strong alloy)
-  + antimonial lead (5% antimony 95% lead) for lead batteries
+	+r duralumin - aluminum 2000 Series (aerospace)
+	+r aluminum-brass - aluminum 7000 Series (strong alloy)
+  - antimonial-lead (5% antimony 95% lead) for lead batteries
   - lead tin (98% tin 2% lead) for solder
   - lead silver (1.5% silver 98.5% lead) for strong solder
 
 Basic Intermediates
   - mechanical components
-    + bolts (nuts and bolts)
+    +r bolts (nuts and bolts)
     - gear
       +r steel-gear
       +r stainless-steel-gear
@@ -160,16 +170,17 @@ Basic Intermediates
     +r infra red filter
 	- electrical components
 		+r resistor
-		+r capacitor
-		+ diode
-		+ transistor
+		+rrr capacitor
+		+r diode
+		+r transistor
 		+ LED
-		+ coil
-  + glass-fiber
-  + kevlar
-  + composites
-	+ solder
-  + silver solder
+		+r coil
+  +r glass-fiber
+  +r kevlar
+  +r composites
+  +r polymer
+	+rr solder
+  +r silver-solder
   + PCB - circuit-board
 	- magnet
 		- permanent magnet
