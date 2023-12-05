@@ -246,6 +246,17 @@ Intermediates
   + fabric
   + nuclear-fuel-rod
 
+  + automation-core
+  - (quicklime CaO) reacts on its own to calcium carbonate
+  + heatsink
+  + turbine-rotor
+  + turbine-stator
+  + compute-unit
+  + control-unit
+  + quantum-data-plane
+  + quantum-gate
+  + cubit - for quantum processors
+
 High tech stuff
   - boson einstein condensate
   - Nanomachines
@@ -268,6 +279,11 @@ Sciences
   - quantum phisics science pack
   - high dimensional science pack
 
+Useless things
+  + protactinium Pa
+  + diet-water
+  + solar-powered-flash-light
+  + AC-Fan
 
 Other stuff from chat gpt:
   - Chronomatter: A fictional material that can manipulate time and space. It could be used to create time machines, teleportation devices, and other advanced technologies.
@@ -281,3 +297,6 @@ Other stuff from chat gpt:
   - Quantum Crystals: A fictional material that is composed of quantum particles in a crystalline structure. It could be used to create advanced computing systems, quantum communication devices, and other exotic technologies.
   - Hypercrystals: A fictional material that is composed of exotic particles in a crystalline structure. It could be used to create advanced energy storage devices, hyperdrive engines, and other futuristic technologies.
   - I hope these ideas help you get started! Let me know if you need more suggestions.
+
+Technology names:
+  - Qubit technology
