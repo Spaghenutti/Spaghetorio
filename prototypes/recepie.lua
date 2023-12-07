@@ -43,7 +43,7 @@ data:extend({
 	},
   {
 		type = "recipe",
-		name = "aluminum-frames",  -- #ForRegEx# - recepie
+		name = "aluminum-frame",  -- #ForRegEx# - recepie
 		category = "crafting",
     enabled = false,
 		energy_required = 2,	-- time in seconds to make the item
@@ -51,7 +51,7 @@ data:extend({
 			{type = "item", name = "aluminum-sheet", amount = 2}
 		},
 		results = {
-			{type = "item", name = "aluminum-frames", amount = 3}
+			{type = "item", name = "aluminum-frame", amount = 3}
 		}
 	},
   {
@@ -314,7 +314,7 @@ data:extend({
 	},
   {
 		type = "recipe",
-		name = "titanium-frames",  -- #ForRegEx# - recepie
+		name = "titanium-frame",  -- #ForRegEx# - recepie
 		category = "smelting",
     enabled = false,
 		energy_required = 2.4,	-- time in seconds to make the item
@@ -322,7 +322,7 @@ data:extend({
 			{type = "item", name = "titanium-plate", amount = 2},
 		},
 		results = {
-			{type = "item", name = "titanium-frames", amount = 3}
+			{type = "item", name = "titanium-frame", amount = 3}
 		}
 	},
   {
@@ -1523,6 +1523,22 @@ data:extend({
       {type = "item", name = "iron-plate", amount = 1},
       {type = "item", name = "iron-stick", amount = 1},
       {type = "item", name = "copper-cable", amount = 3}
+		},
+		results = {
+			{type = "item", name = "electromagnet", amount = 1}
+		}
+	},
+  {
+		type = "recipe",
+		name = "cryostat",  -- #ForRegEx# - recepie
+		category = "crafting-with-fluid",
+    enabled = false,
+		energy_required = 3.2,	-- time in seconds to make the item
+		ingredients = {
+      {type = "item", name = "iron-plate", amount = 1},
+      {type = "item", name = "titanium-frame", amount = 1},
+      {type = "item", name = "ceramic", amount = 3},
+      {type = "fluid", name = "liquid-nitrogen", amount = 40}
 		},
 		results = {
 			{type = "item", name = "electromagnet", amount = 1}

@@ -113,6 +113,7 @@ Hg Mercury
 
 N Nitrogen
   + nitrogen
+  + liquid-nitrogen
 
 O Oxygen
   + oxygen

@@ -952,15 +952,15 @@ data:extend({
   ------------------------------------------------------------------------------
   {
 		type = "item",
-		name = "aluminum-frames",  -- #ForRegEx# - item
-		icon = "__Spaghenutti__/graphics/dummy/dummy-item-aluminum-frames.png",
+		name = "aluminum-frame",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-aluminum-frame.png",
 		icon_size = 128,
 		scale = 0.5,
     pictures = {
-			{ size = 128, filename = "__Spaghenutti__/graphics/dummy/dummy-item-aluminum-frames.png", scale = 0.5, tint={r=1.0, g=0.2, b=0.2, a=1.0} },
+			{ size = 128, filename = "__Spaghenutti__/graphics/dummy/dummy-item-aluminum-frame.png", scale = 0.5, tint={r=1.0, g=0.2, b=0.2, a=1.0} },
 		},
 		subgroup = "mechanical-component",
-		order = "[aluminum-frames]",
+		order = "[aluminum-frame]",
 		stack_size = 100
 	},
   {
@@ -1025,12 +1025,12 @@ data:extend({
 	},
   {
 		type = "item",
-		name = "titanium-frames",  -- #ForRegEx# - item
+		name = "titanium-frame",  -- #ForRegEx# - item
 		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
 		icon_size = 128,
 		scale = 0.5,
 		subgroup = "mechanical-component",
-		order = "[titanium-frames]",
+		order = "[titanium-frame]",
 		stack_size = 100
 	},
   {
