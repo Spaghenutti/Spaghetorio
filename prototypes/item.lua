@@ -547,6 +547,26 @@ data:extend({
 		order = "[lithium]",
 		stack_size = 100
 	},
+  {
+		type = "item",
+		name = "plutonium-239",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "processed-resource",
+		order = "[plutonium-239]",
+		stack_size = 100
+	},
+  {
+		type = "item",
+		name = "plutonium-240",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "processed-resource",
+		order = "[plutonium-240]",
+		stack_size = 100
+	},
   ------------------------------------------------------------------------------
   -- Subgroup raw-material --
   ------------------------------------------------------------------------------
@@ -955,6 +975,26 @@ data:extend({
 	},
   {
 		type = "item",
+		name = "copper-tube",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "mechanical-component",
+		order = "[copper-tube]",
+		stack_size = 100
+	},
+  {
+		type = "item",
+		name = "pressure-tube",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "mechanical-component",
+		order = "[pressure-tube]",
+		stack_size = 100
+	},
+  {
+		type = "item",
 		name = "steel-gear",  -- #ForRegEx# - item
 		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
 		icon_size = 128,
@@ -1297,32 +1337,12 @@ data:extend({
 	},
   {
 		type = "item",
-		name = "converter",  -- #ForRegEx# - item
-		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
-		icon_size = 128,
-		scale = 0.5,
-		subgroup = "electrical-optical-component",
-		order = "[converter]",
-		stack_size = 100
-	},
-  {
-		type = "item",
 		name = "integrated-circuit",  -- #ForRegEx# - item
 		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
 		icon_size = 128,
 		scale = 0.5,
 		subgroup = "electrical-optical-component",
 		order = "[integrated-circuit]",
-		stack_size = 100
-	},
-  {
-		type = "item",
-		name = "micro-controller",  -- #ForRegEx# - item
-		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
-		icon_size = 128,
-		scale = 0.5,
-		subgroup = "electrical-optical-component",
-		order = "[micro-controller]",
 		stack_size = 100
 	},
   {
@@ -1598,15 +1618,6 @@ data:extend({
   },
   {
     type = "item",
-    name = "nuclear-fuel-rod",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
-    icon_size = 64, icon_mipmaps = 4,
-    subgroup = "advanced-intermediate-product",
-    order = "[nuclear-fuel-rod]",
-    stack_size = 50
-  },
-  {
-    type = "item",
     name = "cubit",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
     icon_size = 64, icon_mipmaps = 4,
@@ -1630,6 +1641,24 @@ data:extend({
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "advanced-intermediate-product",
     order = "[quantum-gate]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "control-rod",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+    icon_size = 64, icon_mipmaps = 4,
+    subgroup = "advanced-intermediate-product",
+    order = "[control-rod]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "reactor-core",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+    icon_size = 64, icon_mipmaps = 4,
+    subgroup = "advanced-intermediate-product",
+    order = "[reactor-core]",
     stack_size = 50
   },
   ------------------------------------------------------------------------------
@@ -1683,8 +1712,8 @@ data:extend({
     order = "[bleach]",
     stack_size = 50
   },
-    ------------------------------------------------------------------------------
-  -- Subgroup chemical-product --
+  ------------------------------------------------------------------------------
+  -- Subgroup useless --
   ------------------------------------------------------------------------------
   {
 		type = "item",
@@ -1726,6 +1755,27 @@ data:extend({
 		order = "[AC-Fan]",
 		stack_size = 100
 	},
+  ------------------------------------------------------------------------------
+  -- Subgroup fuel --
+  ------------------------------------------------------------------------------
+  {
+    type = "item",
+    name = "uranium-fuel-rod",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+    icon_size = 64, icon_mipmaps = 4,
+    subgroup = "fuel",
+    order = "[uranium-fuel-rod]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "plutonium-fuel-rod",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+    icon_size = 64, icon_mipmaps = 4,
+    subgroup = "fuel",
+    order = "[plutonium-fuel-rod]",
+    stack_size = 50
+  },
   ------------------------------------------------------------------------------
   -- Group logistics --
   -- Subgroup logistics --

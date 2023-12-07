@@ -143,6 +143,9 @@ Other
   + nitrogen
   +r glass
   +r sodium-carbonate
+  - neutron
+  + plutonium-239 for reactor and bombs
+  + plutonium-240 for bombs
 
 Exotic materials
 	- Hypercrystals
@@ -169,7 +172,8 @@ Alloys
   +r TiNb (55-45) Grade 36
 
 Basic Intermediates
-  - copper-pipe
+  +r copper-tube
+  +r pressure-tube
   - mechanical components
     +r bolts (nuts and bolts)
     - gear
@@ -237,16 +241,19 @@ Intermediates
   +r combustion-chamber
 	+r rocket-engine
 	- (Engine) already exists
-  + converter
-  + integrated-circuit
-  + micro-controller
-  + memory-chip
-	+ processor
-  + cmos
-  + laser
-  + heat-resistant-tiles
-  + fabric
-  + nuclear-fuel-rod
+  - converter
+  +r integrated-circuit
+  - micro-controller
+  +r memory-chip
+	+r processor
+  +r cmos
+  +r laser
+  +r heat-resistant-tiles
+  +r fabric
+  +r uranium-fuel-rod
+  +r plutonium-fuel-rod
+  + control-rod
+  + reactor-core
 
   + automation-core
   - (quicklime CaO) reacts on its own to calcium carbonate

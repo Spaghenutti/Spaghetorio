@@ -923,6 +923,32 @@ data:extend({
 	},
   {
 		type = "recipe",
+		name = "copper-tube",  -- #ForRegEx# - recepie
+		category = "crafting",
+    enabled = false,
+		energy_required = 0.8,	-- time in seconds to make the item
+		ingredients = {
+      {type = "item", name = "copper-plate", amount = 1}
+		},
+		results = {
+			{type = "item", name = "copper-tube", amount = 1}
+		}
+	},
+  {
+		type = "recipe",
+		name = "pressure-tube",  -- #ForRegEx# - recepie
+		category = "crafting",
+    enabled = false,
+		energy_required = 1.6,	-- time in seconds to make the item
+		ingredients = {
+      {type = "item", name = "stainless-steel", amount = 1}
+		},
+		results = {
+			{type = "item", name = "pressure-tube", amount = 1}
+		}
+	},
+  {
+		type = "recipe",
 		name = "bolts",  -- #ForRegEx# - recepie
 		category = "crafting",
     enabled = false,
@@ -1210,6 +1236,114 @@ data:extend({
 	},
   {
 		type = "recipe",
+		name = "integrated-circuit",  -- #ForRegEx# - recepie
+		category = "crafting",
+    enabled = false,
+		energy_required = 3.2,	-- time in seconds to make the item
+		ingredients = {
+      {type = "item", name = "plastic-bar", amount = 1},
+      {type = "item", name = "silicon", amount = 2},
+      {type = "item", name = "copper-plate", amount = 1}
+		},
+		results = {
+			{type = "item", name = "integrated-circuit", amount = 1}
+		}
+	},
+  {
+		type = "recipe",
+		name = "integrated-circuit",  -- #ForRegEx# - recepie
+		category = "crafting",
+    enabled = false,
+		energy_required = 4,	-- time in seconds to make the item
+		ingredients = {
+      {type = "item", name = "plastic-bar", amount = 1},
+      {type = "item", name = "silicon", amount = 1},
+      {type = "item", name = "copper-plate", amount = 1},
+      {type = "item", name = "cerium", amount = 1}
+		},
+		results = {
+			{type = "item", name = "integrated-circuit", amount = 2}
+		}
+	},
+  {
+		type = "recipe",
+		name = "integrated-circuit",  -- #ForRegEx# - recepie
+		category = "crafting",
+    enabled = false,
+		energy_required = 4,	-- time in seconds to make the item
+		ingredients = {
+      {type = "item", name = "plastic-bar", amount = 1},
+      {type = "item", name = "silicon", amount = 1},
+      {type = "item", name = "copper-plate", amount = 1},
+      {type = "item", name = "cerium", amount = 1}
+		},
+		results = {
+			{type = "item", name = "integrated-circuit", amount = 2}
+		}
+	},
+  {
+		type = "recipe",
+		name = "cmos",  -- #ForRegEx# - recepie
+		category = "crafting",
+    enabled = false,
+		energy_required = 6,	-- time in seconds to make the item
+		ingredients = {
+      {type = "item", name = "plastic-bar", amount = 1},
+      {type = "item", name = "high-purity-silicon", amount = 2},
+      {type = "item", name = "palladium", amount = 1},
+      {type = "item", name = "aluminum-sheet", amount = 1}
+		},
+		results = {
+			{type = "item", name = "cmos", amount = 2}
+		}
+	},
+  {
+		type = "recipe",
+		name = "laser",  -- #ForRegEx# - recepie
+		category = "crafting-with-fluid",
+    enabled = false,
+		energy_required = 4,	-- time in seconds to make the item
+		ingredients = {
+      {type = "item", name = "plastic-bar", amount = 1},
+      {type = "item", name = "silicon", amount = 1},
+      {type = "item", name = "aluminum-sheet", amount = 1},
+      {type = "item", name = "silver", amount = 1},
+      {type = "fluid", name = "helium", amount = 10}
+		},
+		results = {
+			{type = "item", name = "laser", amount = 1}
+		}
+	},
+  {
+		type = "recipe",
+		name = "heat-resistant-tiles",  -- #ForRegEx# - recepie
+		category = "crafting",
+    enabled = false,
+		energy_required = 5.2,	-- time in seconds to make the item
+		ingredients = {
+      {type = "item", name = "zirconia", amount = 2},
+      {type = "item", name = "silica", amount = 1},
+      {type = "item", name = "graphite", amount = 3}
+		},
+		results = {
+			{type = "item", name = "heat-resistant-tiles", amount = 1}
+		}
+	},
+  {
+		type = "recipe",
+		name = "fabric",  -- #ForRegEx# - recepie
+		category = "crafting",
+    enabled = false,
+		energy_required = 2.4,	-- time in seconds to make the item
+		ingredients = {
+      {type = "item", name = "polymer", amount = 2}
+		},
+		results = {
+			{type = "item", name = "fabric", amount = 1}
+		}
+	},
+  {
+		type = "recipe",
 		name = "ferrite-magnet",  -- #ForRegEx# - recepie
 		category = "crafting",
     enabled = false,
@@ -1274,7 +1408,7 @@ data:extend({
     enabled = false,
 		energy_required = 8,	-- time in seconds to make the item
 		ingredients = {
-      {type = "item", name = "graphite", amount = 4}
+      {type = "item", name = "graphite", amount = 12}
 		},
 		results = {
 			{type = "item", name = "diamond", amount = 1}
@@ -1602,6 +1736,106 @@ data:extend({
 		},
 		results = {
 			{type = "item", name = "rocket-engine", amount = 1}
+		}
+	},
+  {
+		type = "recipe",
+		name = "control-rod",  -- #ForRegEx# - recepie
+		category = "crafting",
+    enabled = false,
+		energy_required = 4.8,	-- time in seconds to make the item
+		ingredients = {
+      {type = "item", name = "TiAlSn", amount = 3},
+      {type = "item", name = "zirconium-rod", amount = 1}
+		},
+		results = {
+			{type = "item", name = "control-rod", amount = 1}
+		}
+	},
+  {
+		type = "recipe",
+		name = "uranium-fuel-rod",  -- #ForRegEx# - recepie
+		category = "crafting-with-fluid",
+    enabled = false,
+		energy_required = 4,	-- time in seconds to make the item
+		ingredients = {
+      {type = "item", name = "uranium-235", amount = 2},
+      {type = "item", name = "graphite", amount = 2},
+      {type = "fluid", name = "nitrogen", amount = 100},
+		},
+		results = {
+			{type = "item", name = "uranium-fuel-rod", amount = 1}
+		}
+	},
+  {
+		type = "recipe",
+		name = "plutonium-239-fuel-rod",  -- #ForRegEx# - recepie
+		category = "crafting",
+    enabled = false,
+		energy_required = 5.2,	-- time in seconds to make the item
+		ingredients = {
+      {type = "item", name = "plutonium-239", amount = 4},
+      {type = "item", name = "graphite", amount = 2},
+      {type = "item", name = "tungsten-billet", amount = 1},
+		},
+		results = {
+			{type = "item", name = "plutonium-fuel-rod", amount = 1}
+		}
+	},
+  {
+		type = "recipe",
+		name = "plutonium-240-fuel-rod",  -- #ForRegEx# - recepie
+		category = "crafting",
+    enabled = false,
+		energy_required = 6,	-- time in seconds to make the item
+		ingredients = {
+      {type = "item", name = "plutonium-239", amount = 1},
+      {type = "item", name = "plutonium-240", amount = 1},
+      {type = "item", name = "graphite", amount = 2},
+      {type = "item", name = "tungsten-carbide", amount = 1},
+		},
+		results = {
+			{type = "item", name = "plutonium-fuel-rod", amount = 1}
+		}
+	},
+  {
+		type = "recipe",
+		name = "plutonium-239",  -- #ForRegEx# - recepie
+    icon = "__Spaghenutti__/graphics/dummy/dummy-recepie-default.png",
+    icon_size = 128,
+		scale = 0.5,
+		category = "high-energy-physics",
+    subgroup = "raw-resource",
+    enabled = false,
+		energy_required = 3.2,	-- time in seconds to make the item
+		ingredients = {
+      {type = "item", name = "lithium", amount = 1},
+      {type = "item", name = "uranium-238", amount = 1}
+		},
+		results = {
+			{type = "item", name = "uranium-238", probability = 84, amount = 1},
+			{type = "item", name = "plutonium-239", probability = 15, amount = 1},
+			{type = "item", name = "plutonium-240", probability = 1, amount = 1}
+		}
+	},
+  {
+		type = "recipe",
+		name = "plutonium-240",  -- #ForRegEx# - recepie
+    icon = "__Spaghenutti__/graphics/dummy/dummy-recepie-default.png",
+    icon_size = 128,
+		scale = 0.5,
+		category = "high-energy-physics",
+    subgroup = "raw-resource",
+    enabled = false,
+		energy_required = 4,	-- time in seconds to make the item
+		ingredients = {
+      {type = "item", name = "lithium", amount = 1},
+      {type = "item", name = "plutonium-239", amount = 1}
+		},
+		results = {
+			{type = "item", name = "uranium-238", probability = 20, amount = 1},
+			{type = "item", name = "plutonium-239", probability = 72, amount = 1},
+			{type = "item", name = "plutonium-240", probability = 8, amount = 1}
 		}
 	},
 })
