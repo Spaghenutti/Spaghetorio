@@ -227,6 +227,7 @@ Intermediates
 	- (heat pipe) already exists
 	+r spark-plug
   +r valve
+  - gyro
   +r preassure-tank
   +r high-preassure-tank
   +rr turbine-blade
