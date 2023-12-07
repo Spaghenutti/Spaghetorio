@@ -169,6 +169,7 @@ Alloys
   +r TiNb (55-45) Grade 36
 
 Basic Intermediates
+  - copper-pipe
   - mechanical components
     +r bolts (nuts and bolts)
     - gear
