@@ -1769,11 +1769,29 @@ data:extend({
   },
   {
     type = "item",
+    name = "used-up-uranium-fuel-rod",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+    icon_size = 64, icon_mipmaps = 4,
+    subgroup = "fuel",
+    order = "[used-up-uranium-fuel-rod]",
+    stack_size = 50
+  },
+  {
+    type = "item",
     name = "plutonium-fuel-rod",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "fuel",
     order = "[plutonium-fuel-rod]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "used-up-plutonium-fuel-rod",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+    icon_size = 64, icon_mipmaps = 4,
+    subgroup = "fuel",
+    order = "[used-up-plutonium-fuel-rod]",
     stack_size = 50
   },
   ------------------------------------------------------------------------------

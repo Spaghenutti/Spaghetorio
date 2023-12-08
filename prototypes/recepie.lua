@@ -1785,6 +1785,25 @@ data:extend({
 	},
   {
 		type = "recipe",
+		name = "used-up-uranium-fuel-rod-reprocessing",  -- #ForRegEx# - recepie
+		icon = "__Spaghenutti__/graphics/dummy/dummy-recepie-default.png",
+    icon_size = 128,
+		scale = 0.5,
+		category = "chemistry",
+    subgroup = "raw-resource",
+    enabled = false,
+		energy_required = 60,	-- time in seconds to make the item
+		ingredients = {
+      {type = "item", name = "used-up-uranium-fuel-rod", amount = 5},
+      {type = "fluid", name = "sulfuric-acid", amount = 40}
+		},
+		results = {
+			{type = "item", name = "uranium-238", amount = 3},
+      {type = "fluid", name = "deuterium", amount = 10}
+		}
+	},
+  {
+		type = "recipe",
 		name = "plutonium-239-fuel-rod",  -- #ForRegEx# - recepie
 		category = "crafting",
     enabled = false,
@@ -1812,6 +1831,27 @@ data:extend({
 		},
 		results = {
 			{type = "item", name = "plutonium-fuel-rod", amount = 1}
+		}
+	},
+  {
+		type = "recipe",
+		name = "used-up-plutonium-fuel-rod-reprocessing",  -- #ForRegEx# - recepie
+		icon = "__Spaghenutti__/graphics/dummy/dummy-recepie-default.png",
+    icon_size = 128,
+		scale = 0.5,
+		category = "chemistry",
+    subgroup = "raw-resource",
+    enabled = false,
+		energy_required = 80,	-- time in seconds to make the item
+		ingredients = {
+      {type = "item", name = "used-up-plutonium-fuel-rod", amount = 6},
+      {type = "fluid", name = "chlorine", amount = 60}
+		},
+		results = {
+			{type = "item", name = "uranium-238", probability = 37, amount = 2},
+      {type = "item", name = "uranium-235", probability = 3, amount = 1},
+      {type = "item", name = "plutonium-239", probability = 60, amount = 1},
+      {type = "fluid", name = "deuterium", amount = 10}
 		}
 	},
   {
@@ -1852,6 +1892,24 @@ data:extend({
 			{type = "item", name = "uranium-238", probability = 20, amount = 1},
 			{type = "item", name = "plutonium-239", probability = 72, amount = 1},
 			{type = "item", name = "plutonium-240", probability = 8, amount = 1}
+		}
+	},
+  {
+		type = "recipe",
+		name = "reactor-core",  -- #ForRegEx# - recepie
+		category = "advanced-crafting",
+    enabled = false,
+		energy_required = 30,	-- time in seconds to make the item
+		ingredients = {
+      {type = "item", name = "control-rod", amount = 50},
+      {type = "item", name = "pressure-tube", amount = 10},
+      {type = "item", name = "plate-heat-exchanger", amount = 4},
+      {type = "item", name = "valve", amount = 16},
+      {type = "item", name = "flange", amount = 6},
+      {type = "item", name = "preassure-tank", amount = 3}
+		},
+		results = {
+			{type = "item", name = "reactor-core", amount = 1}
 		}
 	},
 })
