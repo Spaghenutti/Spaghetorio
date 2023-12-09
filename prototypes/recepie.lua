@@ -1210,8 +1210,9 @@ data:extend({
 		energy_required = 3.6,	-- time in seconds to make the item
 		ingredients = {
       {type = "item", name = "polymer", amount = 1},
-      {type = "item", name = "copper-plate", amount = 2},
-      {type = "item", name = "glass-fiber", amount = 1}
+      {type = "item", name = "copper-cable", amount = 2},
+      {type = "item", name = "glass-fiber", amount = 1},
+      {type = "item", name = "solder", amount = 2}
 		},
 		results = {
 			{type = "item", name = "empty-circuit-board", amount = 1}
@@ -1279,6 +1280,21 @@ data:extend({
 		},
 		results = {
 			{type = "item", name = "integrated-circuit", amount = 2}
+		}
+	},
+  {
+		type = "recipe",
+		name = "processor",  -- #ForRegEx# - recepie
+		category = "crafting",
+    enabled = false,
+		energy_required = 6,	-- time in seconds to make the item
+		ingredients = {
+      {type = "item", name = "plastic-bar", amount = 1},
+      {type = "item", name = "high-purity-silicon", amount = 4},
+      {type = "item", name = "palladium", amount = 1}
+		},
+		results = {
+			{type = "item", name = "processor", amount = 2}
 		}
 	},
   {
@@ -1614,6 +1630,20 @@ data:extend({
 		},
 		results = {
 			{type = "item", name = "high-preassure-tank", amount = 1}
+		}
+	},
+  {
+		type = "recipe",
+		name = "phosporus",  -- #ForRegEx# - recepie
+		category = "chemistry",
+    enabled = false,
+		energy_required = 2.4,	-- time in seconds to make the item
+		ingredients = {
+      {type = "item", name = "limestone", amount = 2},
+      {type = "fluid", name = "sulfuric-acid", amount = 2}
+		},
+		results = {
+			{type = "item", name = "phosporus", amount = 1}
 		}
 	},
   {
@@ -1963,17 +1993,82 @@ data:extend({
 	},
   {
 		type = "recipe",
-		name = "automation-core",  -- #ForRegEx# - recepie
+		name = "compute-unit",  -- #ForRegEx# - recepie
 		category = "crafting",
     enabled = false,
-		energy_required = 3,	-- time in seconds to make the item
+		energy_required = 6,	-- time in seconds to make the item
 		ingredients = {
-      {type = "item", name = "copper-plate", amount = 2},
-      {type = "item", name = "iron-plate", amount = 1},
-      {type = "item", name = "iron-gear-wheel", amount = 3}
+      {type = "item", name = "circuit-board", amount = 2},
+      {type = "item", name = "aluminum-frame", amount = 2},
+      {type = "item", name = "heatsink", amount = 1},
+      {type = "item", name = "copper-cable", amount = 2},
+      {type = "item", name = "integrated-circuit", amount = 2}
 		},
 		results = {
-			{type = "item", name = "automation-core", amount = 1}
+			{type = "item", name = "compute-unit", amount = 1}
+		}
+	},
+  {
+		type = "recipe",
+		name = "advanced-compute-unit",  -- #ForRegEx# - recepie
+		category = "crafting",
+    enabled = false,
+		energy_required = 8,	-- time in seconds to make the item
+		ingredients = {
+      {type = "item", name = "circuit-board", amount = 4},
+      {type = "item", name = "aluminum-frame", amount = 2},
+      {type = "item", name = "memory-chip", amount = 2},
+      {type = "item", name = "processor", amount = 1},
+      {type = "item", name = "integrated-circuit", amount = 5}
+		},
+		results = {
+			{type = "item", name = "advanced-compute-unit", amount = 1}
+		}
+	},
+  {
+		type = "recipe",
+		name = "cubit",  -- #ForRegEx# - recepie
+		category = "crafting-with-fluid",
+    enabled = false,
+		energy_required = 0.4,	-- time in seconds to make the item
+		ingredients = {
+      {type = "item", name = "duralumin", amount = 1},
+      {type = "fluid", name = "hydrogen", amount = 1},
+		},
+		results = {
+			{type = "item", name = "cubit", amount = 1}
+		}
+	},
+  {
+		type = "recipe",
+		name = "quantum-data-plane",  -- #ForRegEx# - recepie
+		category = "crafting",
+    enabled = false,
+		energy_required = 30,	-- time in seconds to make the item
+		ingredients = {
+      {type = "item", name = "cubit", amount = 1000},
+      {type = "item", name = "copper-cable", amount = 20},
+      {type = "item", name = "aluminum-frame", amount = 1},
+      {type = "item", name = "gold", amount = 3}
+		},
+		results = {
+			{type = "item", name = "quantum-data-plane", amount = 1}
+		}
+	},
+  {
+		type = "recipe",
+		name = "quantum-gate",  -- #ForRegEx# - recepie
+		category = "crafting",
+    enabled = false,
+		energy_required = 8,	-- time in seconds to make the item
+		ingredients = {
+      {type = "item", name = "optic-fiber", amount = 2},
+      {type = "item", name = "cerium", amount = 1},
+      {type = "item", name = "palladium", amount = 1},
+      {type = "item", name = "silicon", amount = 3}
+		},
+		results = {
+			{type = "item", name = "quantum-gate", amount = 1}
 		}
 	},
 })

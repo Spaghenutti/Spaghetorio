@@ -529,6 +529,16 @@ data:extend({
 	},
   {
 		type = "item",
+		name = "phosporus",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "processed-resource",
+		order = "[phosporus]",
+		stack_size = 100
+	},
+  {
+		type = "item",
 		name = "lithium-oxide",  -- #ForRegEx# - item
 		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
 		icon_size = 128,
@@ -1317,12 +1327,12 @@ data:extend({
 	},
   {
 		type = "item",
-		name = "control-unit",  -- #ForRegEx# - item
+		name = "advanced-compute-unit",  -- #ForRegEx# - item
 		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
 		icon_size = 128,
 		scale = 0.5,
 		subgroup = "electrical-optical-component",
-		order = "[control-unit]",
+		order = "[advanced-compute-unit]",
 		stack_size = 100
 	},
   {
@@ -1343,6 +1353,16 @@ data:extend({
 		scale = 0.5,
 		subgroup = "electrical-optical-component",
 		order = "[integrated-circuit]",
+		stack_size = 100
+	},
+  {
+		type = "item",
+		name = "memory-chip",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "electrical-optical-component",
+		order = "[memory-chip]",
 		stack_size = 100
 	},
   {
@@ -1494,15 +1514,6 @@ data:extend({
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "intermediate-product",
     order = "[composites]",
-    stack_size = 50
-  },
-  {
-    type = "item",
-    name = "automation-core",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
-    icon_size = 64, icon_mipmaps = 4,
-    subgroup = "intermediate-product",
-    order = "[automation-core]",
     stack_size = 50
   },
   {

@@ -52,6 +52,7 @@ Ti Titanium
   +r titanium-carbide TiC (very hard, used in cutting tools)
 
 P Phosphorus
+  +r phosporus
 
 Mn Manganese
 
@@ -258,16 +259,17 @@ Intermediates
   +r control-rod
   +r reactor-core
 
-  +r automation-core
+  - automation-core
   - (quicklime CaO) reacts on its own to calcium carbonate
   +r heatsink
-  + turbine-rotor
-  + turbine-stator
+  +r turbine-rotor
+  +r turbine-stator
   + compute-unit
-  + control-unit
+  + advanced-compute-unit
+  - control-unit
+  + cubit - for quantum processors
   + quantum-data-plane
   + quantum-gate
-  + cubit - for quantum processors
 
 High tech stuff
   - boson einstein condensate
