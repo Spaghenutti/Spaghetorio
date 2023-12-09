@@ -1676,6 +1676,41 @@ data:extend({
 	},
   {
 		type = "recipe",
+		name = "turbine-rotor",  -- #ForRegEx# - recepie
+		category = "crafting",
+    enabled = false,
+		energy_required = 30,	-- time in seconds to make the item
+		ingredients = {
+      {type = "item", name = "TiAlSn", amount = 4},
+      {type = "item", name = "titanium-carbide", amount = 2},
+      {type = "item", name = "titanium-nitride", amount = 1},
+      {type = "item", name = "tungsten-billet", amount = 5},
+      {type = "item", name = "ceramic", amount = 5},
+			{type = "item", name = "turbine-blade", amount = 20}
+		},
+		results = {
+			{type = "item", name = "turbine-rotor", amount = 2}
+		}
+	},
+  {
+		type = "recipe",
+		name = "turbine-stator",  -- #ForRegEx# - recepie
+		category = "crafting",
+    enabled = false,
+		energy_required = 26,	-- time in seconds to make the item
+		ingredients = {
+      {type = "item", name = "TiAlSn", amount = 4},
+      {type = "item", name = "titanium-nitride", amount = 2},
+      {type = "item", name = "titanium-frame", amount = 20},
+      {type = "item", name = "flange", amount = 5},
+			{type = "item", name = "turbine-blade", amount = 20},
+		},
+		results = {
+			{type = "item", name = "turbine-rotor", amount = 2}
+		}
+	},
+  {
+		type = "recipe",
 		name = "turbopump",  -- #ForRegEx# - recepie
 		category = "crafting",
     enabled = false,
@@ -1910,6 +1945,35 @@ data:extend({
 		},
 		results = {
 			{type = "item", name = "reactor-core", amount = 1}
+		}
+	},
+  {
+		type = "recipe",
+		name = "heatsink",  -- #ForRegEx# - recepie
+		category = "crafting",
+    enabled = false,
+		energy_required = 3,	-- time in seconds to make the item
+		ingredients = {
+      {type = "item", name = "copper-tube", amount = 2},
+      {type = "item", name = "aluminum-sheet", amount = 2},
+		},
+		results = {
+			{type = "item", name = "heatsink", amount = 1}
+		}
+	},
+  {
+		type = "recipe",
+		name = "automation-core",  -- #ForRegEx# - recepie
+		category = "crafting",
+    enabled = false,
+		energy_required = 3,	-- time in seconds to make the item
+		ingredients = {
+      {type = "item", name = "copper-plate", amount = 2},
+      {type = "item", name = "iron-plate", amount = 1},
+      {type = "item", name = "iron-gear-wheel", amount = 3}
+		},
+		results = {
+			{type = "item", name = "automation-core", amount = 1}
 		}
 	},
 })

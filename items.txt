@@ -258,9 +258,9 @@ Intermediates
   +r control-rod
   +r reactor-core
 
-  + automation-core
+  +r automation-core
   - (quicklime CaO) reacts on its own to calcium carbonate
-  + heatsink
+  +r heatsink
   + turbine-rotor
   + turbine-stator
   + compute-unit
