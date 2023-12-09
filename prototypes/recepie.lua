@@ -1090,6 +1090,34 @@ data:extend({
 	},
   {
 		type = "recipe",
+		name = "diode",  -- #ForRegEx# - recepie
+		category = "crafting",
+    enabled = false,
+		energy_required = 2,	-- time in seconds to make the item
+		ingredients = {
+      {type = "item", name = "silicon", amount = 1},
+      {type = "item", name = "phosporus", amount = 1}
+		},
+		results = {
+			{type = "item", name = "diode", amount = 2}
+		}
+	},
+  {
+		type = "recipe",
+		name = "transistor",  -- #ForRegEx# - recepie
+		category = "crafting",
+    enabled = false,
+		energy_required = 2.8,	-- time in seconds to make the item
+		ingredients = {
+      {type = "item", name = "silicon", amount = 2},
+      {type = "item", name = "transistor", amount = 1}
+		},
+		results = {
+			{type = "item", name = "diode", amount = 2}
+		}
+	},
+  {
+		type = "recipe",
 		name = "coil",  -- #ForRegEx# - recepie
 		category = "crafting",
     enabled = false,
@@ -1291,6 +1319,7 @@ data:extend({
 		ingredients = {
       {type = "item", name = "plastic-bar", amount = 1},
       {type = "item", name = "high-purity-silicon", amount = 4},
+      {type = "item", name = "phosporus", amount = 2},
       {type = "item", name = "palladium", amount = 1}
 		},
 		results = {
@@ -1306,7 +1335,8 @@ data:extend({
 		ingredients = {
       {type = "item", name = "plastic-bar", amount = 1},
       {type = "item", name = "high-purity-silicon", amount = 2},
-      {type = "item", name = "palladium", amount = 1},
+      {type = "item", name = "phosporus", amount = 2},
+      {type = "item", name = "iridium", amount = 1},
       {type = "item", name = "aluminum-sheet", amount = 1}
 		},
 		results = {

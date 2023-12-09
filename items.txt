@@ -267,9 +267,9 @@ Intermediates
   + compute-unit
   + advanced-compute-unit
   - control-unit
-  + cubit - for quantum processors
-  + quantum-data-plane
-  + quantum-gate
+  +r cubit - for quantum processors
+  +r quantum-data-plane
+  +r quantum-gate
 
 High tech stuff
   - boson einstein condensate
@@ -298,6 +298,11 @@ Useless things
   + diet-water
   + solar-powered-flash-light
   + AC-Fan
+
+Buildings:
+  - cyclotron
+  - super-collider
+  - quantum-computer
 
 Other stuff from chat gpt:
   - Chronomatter: A fictional material that can manipulate time and space. It could be used to create time machines, teleportation devices, and other advanced technologies.
