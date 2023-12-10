@@ -904,7 +904,7 @@ data:extend({
       {"electronic-circuit", 10},
       {"steel-plate", 40},
       {"bolts", 60},
-      {"copper-tubes", 60}
+      {"copper-tube", 60}
     },
     result = "locomotive"
   },
