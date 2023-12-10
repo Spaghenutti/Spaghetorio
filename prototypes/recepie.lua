@@ -946,6 +946,32 @@ data:extend({
 	},
   {
 		type = "recipe",
+		name = "connecting-rod-from-iron",  -- #ForRegEx# - recepie
+		category = "crafting",
+    enabled = false,
+		energy_required = 2.4,	-- time in seconds to make the item
+		ingredients = {
+      {type = "item", name = "iron-plate", amount = 10}
+		},
+		results = {
+			{type = "item", name = "connecting-rod", amount = 1}
+		}
+	},
+  {
+		type = "recipe",
+		name = "connecting-rod-from-steel",  -- #ForRegEx# - recepie
+		category = "crafting",
+    enabled = false,
+		energy_required = 1.6,	-- time in seconds to make the item
+		ingredients = {
+      {type = "item", name = "steel-plate", amount = 2}
+		},
+		results = {
+			{type = "item", name = "connecting-rod", amount = 1}
+		}
+	},
+  {
+		type = "recipe",
 		name = "bolts",  -- #ForRegEx# - recepie
 		category = "crafting",
     enabled = false,
@@ -2129,4 +2155,88 @@ data:extend({
 			{type = "item", name = "quantum-gate", amount = 1}
 		}
 	},
+  ------------------------------------------------------------------------------
+  -- Alternate recepies for vanilla items
+  ------------------------------------------------------------------------------
+  {
+    type = "recipe",
+    name = "medium-electric-pole",
+    enabled = false,
+    ingredients =
+    {
+      {"iron-stick", 4},
+      {"aluminum-frame", 8},
+      {"bolts", 8},
+    },
+    result = "medium-electric-pole"
+  },
+  {
+    type = "recipe",
+    name = "landfill-from-iron-ore",
+    energy_required = 0.5,
+    enabled = false,
+    category = "crafting",
+    ingredients =
+    {
+      {"stone", 10},
+      {"iron-ore", 6}
+    },
+    result= "landfill",
+    result_count = 1
+  },
+  {
+    type = "recipe",
+    name = "landfill-from-limestone",
+    energy_required = 0.5,
+    enabled = false,
+    category = "crafting",
+    ingredients =
+    {
+      {"limestone", 16}
+    },
+    result= "landfill",
+    result_count = 1
+  },
+  {
+    type = "recipe",
+    name = "landfill-from-limestone-and-stone",
+    energy_required = 0.5,
+    enabled = false,
+    category = "crafting",
+    ingredients =
+    {
+      {"stone", 10},
+      {"limestone", 6}
+    },
+    result= "landfill",
+    result_count = 1
+  },
+  {
+    type = "recipe",
+    name = "landfill-from-cement",
+    energy_required = 1,
+    enabled = false,
+    category = "crafting",
+    ingredients =
+    {
+      {"stone", 8},
+      {"cement", 4}
+    },
+    result= "landfill",
+    result_count = 2
+  },
+  {
+    type = "recipe",
+    name = "landfill-from-sand",
+    energy_required = 1,
+    enabled = false,
+    category = "crafting",
+    ingredients =
+    {
+      {"stone", 8},
+      {"sand", 30}
+    },
+    result= "landfill",
+    result_count = 1
+  },
 })

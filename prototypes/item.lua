@@ -1025,6 +1025,16 @@ data:extend({
 	},
   {
 		type = "item",
+		name = "connecting-rod",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "mechanical-component",
+		order = "[connecting-rod]",
+		stack_size = 100
+	},
+  {
+		type = "item",
 		name = "bolts",  -- #ForRegEx# - item
 		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
 		icon_size = 128,

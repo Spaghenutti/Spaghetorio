@@ -451,6 +451,7 @@ data:extend({
         {"iron-gear-wheel", 8},
         {"pipe", 5},
         {"iron-plate", 10},
+        {"connecting-rod", 2},
         {"copper-tube", 6}
       },
       result = "steam-engine"
@@ -552,6 +553,7 @@ data:extend({
       {
         {"electronic-circuit", 3},
         {"iron-gear-wheel", 12},
+        {"connecting-rod", 5},
         {"iron-plate", 30},
         {"bolts", 24},
         {"copper-plate", 12}
@@ -566,6 +568,7 @@ data:extend({
       {
         {"electronic-circuit", 10},
         {"iron-gear-wheel", 16},
+        {"connecting-rod", 6},
         {"iron-plate", 46},
         {"bolts", 56},
         {"copper-plate", 16}
@@ -584,6 +587,7 @@ data:extend({
       {
         {"steel-plate", 12},
         {"electronic-circuit", 10},
+        {"connecting-rod", 10},
         {"stone-brick", 32},
         {"bolts", 24},
         {"steel-gear-wheel", 20},
@@ -598,9 +602,10 @@ data:extend({
       {
         {"steel-plate", 20},
         {"electronic-circuit", 16},
+        {"connecting-rod", 14},
         {"stone-brick", 64},
-        {"steel-gear-wheel", 32},
-        {"bolts", 48}
+        {"bolts", 48},
+        {"steel-gear-wheel", 32}
       },
       result = "assembling-machine-2"
     }
@@ -641,13 +646,6 @@ data:extend({
     },
     result = "lab"
   },
-
-  ------------------------------------------------------------------------------
-  ----------------------- BEEP BOP - MAKING CALCULATIONS -----------------------
-  ------------------------------------------------------------------------------
-  
-
-
   {
     type = "recipe",
     name = "splitter",
@@ -656,8 +654,9 @@ data:extend({
     ingredients =
     {
       {"electronic-circuit", 5},
-      {"iron-plate", 5},
-      {"transport-belt", 4}
+      {"iron-plate", 3},
+      {"iron-gear-wheel", 4},
+      {"bolts", 4}
     },
     result = "splitter"
   },
@@ -668,8 +667,10 @@ data:extend({
     energy_required = 1,
     ingredients =
     {
-      {"iron-plate", 10},
-      {"transport-belt", 5}
+      {"iron-plate", 12},
+      {"iron-stick", 2},
+      {"iron-gear-wheel", 6},
+      {"bolts", 4}
     },
     result_count = 2,
     result = "underground-belt"
@@ -682,11 +683,10 @@ data:extend({
     energy_required = 1,
     ingredients =
     {
-      {"inserter", 5},
       {"electronic-circuit", 5},
       {"iron-gear-wheel", 5},
-      {"iron-plate", 5},
-      {"transport-belt", 5}
+      {"iron-plate", 12},
+      {"bolts", 10}
     },
     result = "loader"
   },
@@ -697,9 +697,11 @@ data:extend({
     energy_required = 2,
     ingredients =
     {
-      {"engine-unit", 8},
-      {"iron-plate", 20},
-      {"steel-plate", 5}
+      {"engine-unit", 1},
+      {"iron-plate", 4},
+      {"aluminum-frame", 12},
+      {"steel-gear-wheel", 20},
+      {"bolts", 24}
     },
     result = "car"
   },
@@ -710,9 +712,10 @@ data:extend({
     category = "advanced-crafting",
     ingredients =
     {
-      {"steel-plate", 1},
-      {"iron-gear-wheel", 1},
-      {"pipe", 2}
+      {"steel-plate", 4},
+      {"iron-gear-wheel", 16},
+      {"bolts", 6},
+      {"copper-tube", 4}
     },
     result = "engine-unit",
     enabled = false
@@ -721,7 +724,10 @@ data:extend({
     type = "recipe",
     name = "iron-chest",
     enabled = true,
-    ingredients = {{"iron-plate", 8}},
+    ingredients = {
+      {"iron-plate", 8},
+      {"bolts", 2}
+    },
     result = "iron-chest"
   },
   {
@@ -730,9 +736,10 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      {"iron-stick", 8},
-      {"steel-plate", 5},
-      {"copper-plate", 5}
+      {"iron-stick", 20},
+      {"bolts", 10},
+      {"aluminum-frame", 12},
+      {"aluminum-cable", 6}
     },
     result = "big-electric-pole"
   },
@@ -742,92 +749,58 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      {"iron-stick", 4},
+      {"iron-stick", 8},
+      {"bolts", 4},
       {"steel-plate", 2},
-      {"copper-plate", 2}
+      {"copper-cable", 2}
     },
     result = "medium-electric-pole"
   },
   {
     type = "recipe",
-    name = "shotgun",
-    enabled = false,
-    energy_required = 10,
-    ingredients =
-    {
-      {"iron-plate", 15},
-      {"iron-gear-wheel", 5},
-      {"copper-plate", 10},
-      {"wood", 5}
-    },
-    result = "shotgun"
-  },
-  {
-    type = "recipe",
-    name = "shotgun-shell",
-    enabled = false,
-    energy_required = 3,
-    ingredients =
-    {
-      {"copper-plate", 2},
-      {"iron-plate", 2}
-    },
-    result = "shotgun-shell"
-  },
-  {
-    type = "recipe",
-    name = "piercing-rounds-magazine",
-    enabled = false,
-    energy_required = 3,
-    ingredients =
-    {
-      {"firearm-magazine", 1},
-      {"steel-plate", 1},
-      {"copper-plate", 5}
-    },
-    result = "piercing-rounds-magazine"
-  },
-  {
-    type = "recipe",
-    name = "grenade",
-    enabled = false,
-    energy_required = 8,
-    ingredients =
-    {
-      {"iron-plate", 5},
-      {"coal", 10}
-    },
-    result = "grenade"
-  },
-  {
-    type = "recipe",
     name = "steel-furnace",
-    ingredients = {{"steel-plate", 6}, {"stone-brick", 10}},
+    ingredients = {
+      {"steel-plate", 12},
+      {"bolts", 6},
+      {"stone-brick", 24}
+    },
     result = "steel-furnace",
     energy_required = 3,
     enabled = false
   },
   {
     type = "recipe",
-    name = "gate",
-    enabled = false,
-    ingredients = {{"stone-wall", 1}, {"steel-plate", 2}, {"electronic-circuit", 2}},
-    result = "gate"
-  },
-  {
-    type = "recipe",
     name = "heavy-armor",
     enabled = false,
     energy_required = 8,
-    ingredients = {{ "copper-plate", 100}, {"steel-plate", 50}},
+    ingredients = {
+      {"aluminum-frame", 6},
+      {"fabric", 6},
+      {"steel-plate", 3}
+    },
     result = "heavy-armor"
   },
   {
     type = "recipe",
     name = "steel-chest",
     enabled = false,
-    ingredients = {{"steel-plate", 8}},
+    ingredients = {
+      {"steel-plate", 8},
+      {"bolts", 4}
+    },
     result = "steel-chest"
+  },
+  {
+    type = "recipe",
+    name = "fast-transport-belt",
+    enabled = false,
+    ingredients =
+    {
+      {"steel-gear-wheel", 3},
+      {"iron-stick", 2},
+      {"copper-cable", 2},
+    },
+    result = "fast-transport-belt"
   },
   {
     type = "recipe",
@@ -836,8 +809,10 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      {"iron-gear-wheel", 40},
-      {"underground-belt", 2}
+      {"steel-gear-wheel", 24},
+      {"steel-plate", 6},
+      {"iron-stick", 10},
+      {"bolts", 6},
     },
     result_count = 2,
     result = "fast-underground-belt"
@@ -849,9 +824,10 @@ data:extend({
     energy_required = 2,
     ingredients =
     {
-      {"splitter", 1},
-      {"iron-gear-wheel", 10},
-      {"electronic-circuit", 10}
+      {"steel-gear-wheel", 6},
+      {"electronic-circuit", 4},
+      {"steel-plate", 3},
+      {"bolts", 2}
     },
     result = "fast-splitter"
   },
@@ -863,24 +839,11 @@ data:extend({
     category = "crafting-with-fluid",
     ingredients =
     {
-      {"stone-brick", 5},
-      {"iron-ore", 1},
+      {"cement", 10},
+      {"sand", 2},
       {type="fluid", name="water", amount=100}
     },
     result= "concrete",
-    result_count = 10
-  },
-  {
-    type = "recipe",
-    name = "hazard-concrete",
-    energy_required = 0.25,
-    enabled = false,
-    category = "crafting",
-    ingredients =
-    {
-      {"concrete", 10}
-    },
-    result= "hazard-concrete",
     result_count = 10
   },
   {
@@ -891,50 +854,14 @@ data:extend({
     category = "crafting-with-fluid",
     ingredients =
     {
-      {"concrete", 20},
-      {"iron-stick", 8},
-      {"steel-plate", 1},
+      {"concrete", 10},
+      {"cement", 10},
+      {"magnesium-ore", 1},
+      {"iron-ore", 1},
       {type="fluid", name="water", amount=100}
     },
     result= "refined-concrete",
     result_count = 10
-  },
-  {
-    type = "recipe",
-    name = "refined-hazard-concrete",
-    energy_required = 0.25,
-    enabled = false,
-    category = "crafting",
-    ingredients =
-    {
-      {"refined-concrete", 10}
-    },
-    result= "refined-hazard-concrete",
-    result_count = 10
-  },
-  {
-    type = "recipe",
-    name = "landfill",
-    energy_required = 0.5,
-    enabled = false,
-    category = "crafting",
-    ingredients =
-    {
-      {"stone", 20}
-    },
-    result= "landfill",
-    result_count = 1
-  },
-  {
-    type = "recipe",
-    name = "fast-transport-belt",
-    enabled = false,
-    ingredients =
-    {
-      {"iron-gear-wheel", 5},
-      {"transport-belt", 1}
-    },
-    result = "fast-transport-belt"
   },
   {
     type = "recipe",
@@ -943,9 +870,12 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      {"steel-plate", 5},
-      {"electronic-circuit", 15},
-      {"copper-plate", 5}
+      {"aluminum-frame", 5},
+      {"electronic-circuit", 4},
+      {"copper-cable", 10},
+      {"bolts", 4},
+      {"silicon", 40},
+      {"phosphorus", 6}
     },
     result = "solar-panel"
   },
@@ -956,8 +886,8 @@ data:extend({
     ingredients =
     {
       {"stone", 1},
-      {"iron-stick", 1},
-      {"steel-plate", 1}
+      {"bolts", 4},
+      {"steel-plate", 2}
     },
     result = "rail",
     result_count = 2
@@ -969,9 +899,12 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      {"engine-unit", 20},
+      {"engine-unit", 12},
+      {"connecting-rod", 16},
       {"electronic-circuit", 10},
-      {"steel-plate", 30}
+      {"steel-plate", 40},
+      {"bolts", 60},
+      {"copper-tubes", 60}
     },
     result = "locomotive"
   },
@@ -982,12 +915,16 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      {"iron-gear-wheel", 10},
+      {"steel-gear-wheel", 10},
+      {"connecting-rod", 8},
       {"iron-plate", 20},
       {"steel-plate", 20}
     },
     result = "cargo-wagon"
   },
+  -----------------------------------------------------------------------------
+  ----------------------- BEEP BOP - MAKING CALCULATIONS -----------------------
+  ------------------------------------------------------------------------------
   {
     type = "recipe",
     name = "rail-signal",

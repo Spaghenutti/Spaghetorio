@@ -177,6 +177,7 @@ Basic Intermediates
   +r copper-tube
   +r pressure-tube
   - mechanical components
+    +rr connecting-rod
     +r bolts (nuts and bolts)
     - gear
       +r steel-gear-wheel
