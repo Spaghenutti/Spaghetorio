@@ -758,6 +758,18 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "piercing-rounds-magazine",
+    enabled = false,
+    energy_required = 3,
+    ingredients =
+    {
+      {"steel-plate", 1},
+      {"bolts", 5}
+    },
+    result = "piercing-rounds-magazine"
+  },
+  {
+    type = "recipe",
     name = "steel-furnace",
     ingredients = {
       {"steel-plate", 12},
@@ -932,7 +944,8 @@ data:extend({
     ingredients =
     {
       {"electronic-circuit", 1},
-      {"iron-plate", 5}
+      {"light-emitting-diode", 3},
+      {"aluminum-frame", 2}
     },
     result = "rail-signal"
   },
@@ -943,7 +956,9 @@ data:extend({
     ingredients =
     {
       {"electronic-circuit", 1},
-      {"iron-plate", 5}
+      {"light-emitting-diode", 3},
+      {"diode", 2},
+      {"aluminum-frame", 2}
     },
     result = "rail-chain-signal"
   },
@@ -954,27 +969,12 @@ data:extend({
     ingredients =
     {
       {"electronic-circuit", 5},
-      {"iron-plate", 6},
-      {"iron-stick", 6},
-      {"steel-plate", 3}
+      {"steel-plate", 12},
+      {"iron-stick", 12},
+      {"bolts", 20},
+      {"copper-cable", 6}
     },
     result = "train-stop"
-  },
-  {
-    type = "recipe",
-    name = "copper-plate",
-    category = "smelting",
-    energy_required = 3.2,
-    ingredients = {{ "copper-ore", 1}},
-    result = "copper-plate"
-  },
-  {
-    type = "recipe",
-    name = "iron-plate",
-    category = "smelting",
-    energy_required = 3.2,
-    ingredients = {{"iron-ore", 1}},
-    result = "iron-plate"
   },
   {
     type = "recipe",
@@ -992,15 +992,21 @@ data:extend({
     normal =
     {
       enabled = false,
-      energy_required = 16,
-      ingredients = {{"iron-plate", 5}},
+      energy_required = 6,
+      ingredients = {
+        {"iron-plate", 2},
+        {"coke", 2}
+      },
       result = "steel-plate"
     },
     expensive =
     {
       enabled = false,
-      energy_required = 32,
-      ingredients = {{"iron-plate", 10}},
+      energy_required = 8,
+      ingredients = {
+        {"iron-plate", 3},
+        {"coke", 4}
+      },
       result = "steel-plate"
     }
   },
@@ -1011,7 +1017,9 @@ data:extend({
     ingredients =
     {
       {"copper-cable", 5},
-      {"electronic-circuit", 5}
+      {"transistor", 12},
+      {"resistor", 4},
+      {"diode", 2}
     },
     result = "arithmetic-combinator"
   },
@@ -1021,8 +1029,9 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      {"copper-cable", 5},
-      {"electronic-circuit", 5}
+      {"copper-cable", 4},
+      {"transistor", 8},
+      {"resistor", 4},
     },
     result = "decider-combinator"
   },
@@ -1033,7 +1042,9 @@ data:extend({
     ingredients =
     {
       {"copper-cable", 5},
-      {"electronic-circuit", 2}
+      {"capacitor", 8},
+      {"resistor", 4},
+      {"transistor", 2}
     },
     result = "constant-combinator"
   },
@@ -1044,9 +1055,11 @@ data:extend({
     energy_required = 2,
     ingredients =
     {
-      {"iron-plate", 5},
+      {"aluminum-frame", 5},
+      {"steel-plate", 2},
       {"copper-cable", 5},
-      {"electronic-circuit", 2}
+      {"electronic-circuit", 2},
+      {"transistor", 2}
     },
     result = "power-switch"
   },
@@ -1057,34 +1070,14 @@ data:extend({
     energy_required = 2,
     ingredients =
     {
-      {"iron-plate", 3},
+      {"aluminum-frame", 3},
       {"iron-stick", 4},
       {"copper-cable", 5},
-      {"electronic-circuit", 4}
+      {"capacitor", 10},
+      {"electronic-circuit", 4},
+      {"coil", 6}
     },
     result = "programmable-speaker"
-  },
-  {
-    type = "recipe",
-    name = "red-wire",
-    enabled = false,
-    ingredients =
-    {
-      {"electronic-circuit", 1},
-      {"copper-cable", 1}
-    },
-    result = "red-wire"
-  },
-  {
-    type = "recipe",
-    name = "green-wire",
-    enabled = false,
-    ingredients =
-    {
-      {"electronic-circuit", 1},
-      {"copper-cable", 1}
-    },
-    result = "green-wire"
   },
   {
     type = "recipe",
@@ -1095,7 +1088,7 @@ data:extend({
     {
       {"steel-plate", 3},
       {"electronic-circuit", 3},
-      {"coal", 10}
+      {"lithium-oxide", 2}
     },
     result = "poison-capsule"
   },
@@ -1108,7 +1101,7 @@ data:extend({
     {
       {"steel-plate", 2},
       {"electronic-circuit", 2},
-      {"coal", 5}
+      {"fluorspar", 5}
     },
     result = "slowdown-capsule"
   },
@@ -1119,9 +1112,10 @@ data:extend({
     energy_required = 8,
     ingredients =
     {
-      {"grenade", 7},
       {"explosives", 5},
-      {"steel-plate", 5}
+      {"steel-plate", 5},
+      {"graphite", 2},
+      {"yittrium", 1}
     },
     result = "cluster-grenade"
   },
@@ -1145,8 +1139,10 @@ data:extend({
     energy_required = 15,
     ingredients =
     {
-      {"defender-capsule", 4},
-      {"advanced-circuit", 3}
+      {"piercing-rounds-magazine", 3},
+      {"steel-gear-wheel", 3},
+      {"advanced-circuit", 3},
+      {"bolts", 3}
     },
     result = "distractor-capsule"
   },
@@ -1157,8 +1153,12 @@ data:extend({
     energy_required = 15,
     ingredients =
     {
-      {"distractor-capsule", 4},
-      {"speed-module", 1}
+      {"steel-plate", 2},
+      {"piercing-rounds-magazine", 6},
+      {"steel-gear-wheel", 3},
+      {"processing-unit", 3},
+      {"speed-module", 1},
+      {"bolts", 4}
     },
     result = "destroyer-capsule"
   },
@@ -1169,8 +1169,9 @@ data:extend({
     energy_required = 8,
     ingredients =
     {
-      {"explosives", 10},
-      {"grenade", 1},
+      {"explosives", 20},
+      {"phosphorus", 1},
+      {"magnesium-slab", 2},
       {"empty-barrel", 1}
     },
     result = "cliff-explosives"
@@ -1182,7 +1183,9 @@ data:extend({
     energy_required = 10,
     ingredients =
     {
-      {"piercing-rounds-magazine", 1},
+      {"stainless-steel", 2},
+      {"ceramic", 1},
+      {"phosphorus", 1},
       {"uranium-238", 1}
     },
     result = "uranium-rounds-magazine"
@@ -1194,9 +1197,11 @@ data:extend({
     energy_required = 8,
     ingredients =
     {
-      {"electronic-circuit", 1},
-      {"explosives", 1},
-      {"iron-plate", 2}
+      {"circuit-board", 1},
+      {"explosives", 4},
+      {"titanium-frame", 2},
+      {"solid-rocket-motor", 1},
+      {"gyro", 3}
     },
     result = "rocket"
   },
@@ -1207,11 +1212,17 @@ data:extend({
     energy_required = 8,
     ingredients =
     {
-      {"rocket", 1},
-      {"explosives", 2}
+      {"circuit-board", 1},
+      {"explosives", 12},
+      {"titanium-frame", 2},
+      {"solid-rocket-motor", 1},
+      {"gyro", 3}
     },
     result = "explosive-rocket"
   },
+  -----------------------------------------------------------------------------
+  ----------------------- BEEP BOP - MAKING CALCULATIONS -----------------------
+  ------------------------------------------------------------------------------
   {
     type = "recipe",
     name = "atomic-bomb",

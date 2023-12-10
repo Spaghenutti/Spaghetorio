@@ -1457,6 +1457,15 @@ data:extend({
   },
   {
     type = "item",
+    name = "gyro",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+    icon_size = 64, icon_mipmaps = 4,
+    subgroup = "intermediate-product",
+    order = "[gyro]",
+    stack_size = 50
+  },
+  {
+    type = "item",
     name = "preassure-tank",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
     icon_size = 64, icon_mipmaps = 4,
@@ -1645,6 +1654,15 @@ data:extend({
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "advanced-intermediate-product",
     order = "[rocket-engine]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "solid-rocket-motor",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+    icon_size = 64, icon_mipmaps = 4,
+    subgroup = "advanced-intermediate-product",
+    order = "[solid-rocket-motor]",
     stack_size = 50
   },
   {

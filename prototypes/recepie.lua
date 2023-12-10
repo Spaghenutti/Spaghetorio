@@ -933,6 +933,19 @@ data:extend({
 	},
   {
 		type = "recipe",
+		name = "spring",  -- #ForRegEx# - recepie
+		category = "crafting",
+    enabled = true,
+		energy_required = 1.6,	-- time in seconds to make the item
+		ingredients = {
+      {type = "item", name = "iron-stick", amount = 2}
+		},
+		results = {
+			{type = "item", name = "spring", amount = 3}
+		}
+	},
+  {
+		type = "recipe",
 		name = "pressure-tube",  -- #ForRegEx# - recepie
 		category = "crafting",
     enabled = false,
@@ -1689,6 +1702,21 @@ data:extend({
 	},
   {
 		type = "recipe",
+		name = "gyro",  -- #ForRegEx# - recepie
+		category = "crafting",
+    enabled = false,
+		energy_required = 4,	-- time in seconds to make the item
+		ingredients = {
+      {type = "item", name = "ferrite-magnet", amount = 2},
+      {type = "item", name = "silica", amount = 1},
+      {type = "item", name = "copper-cable", amount = 1}
+		},
+		results = {
+			{type = "item", name = "gyro", amount = 1}
+		}
+	},
+  {
+		type = "recipe",
 		name = "preassure-tank",  -- #ForRegEx# - recepie
 		category = "crafting",
     enabled = false,
@@ -1901,6 +1929,21 @@ data:extend({
 		},
 		results = {
 			{type = "item", name = "rocket-engine", amount = 1}
+		}
+	},
+  {
+		type = "recipe",
+		name = "solid-rocket-motor",  -- #ForRegEx# - recepie
+		category = "crafting",
+    enabled = false,
+		energy_required = 4,	-- time in seconds to make the item
+		ingredients = {
+      {type = "item", name = "titanium-frame", amount = 2},
+      {type = "item", name = "solid-fuel", amount = 10},
+      {type = "item", name = "phosphorus", amount = 1}
+		},
+		results = {
+			{type = "item", name = "solid-rocket-motor", amount = 1}
 		}
 	},
   {
@@ -2238,5 +2281,74 @@ data:extend({
     },
     result= "landfill",
     result_count = 1
+  },
+  {
+    type = "recipe",
+    name = "stone-brick-from-limestone",
+    category = "smelting",
+    energy_required = 3.2,
+    enabled = true,
+    ingredients = {
+      {"limestone", 2}
+    },
+    result = "stone-brick"
+  },
+  {
+    type = "recipe",
+    name = "stone-brick-from-sand",
+    category = "smelting",
+    energy_required = 2,
+    enabled = true,
+    ingredients = {
+      {"sand", 8}
+    },
+    result = "stone-brick"
+  },
+  {
+    type = "recipe",
+    name = "steel-plate-from-graphite",
+    category = "smelting",
+    normal =
+    {
+      enabled = false,
+      energy_required = 6,
+      ingredients = {
+        {"iron-plate", 2},
+        {"graphite", 1}
+      },
+      result = "steel-plate"
+    },
+    expensive =
+    {
+      enabled = false,
+      energy_required = 8,
+      ingredients = {
+        {"iron-plate", 4},
+        {"graphite", 2}
+      },
+      result = "steel-plate"
+    }
+  },
+  {
+    type = "recipe",
+    name = "red-wire-from-aluminum",
+    enabled = false,
+    ingredients =
+    {
+      {"electronic-circuit", 1},
+      {"aluminum-cable", 1}
+    },
+    result = "red-wire"
+  },
+  {
+    type = "recipe",
+    name = "green-wire-from-aluminum",
+    enabled = false,
+    ingredients =
+    {
+      {"electronic-circuit", 1},
+      {"aluminum-cable", 1}
+    },
+    result = "green-wire"
   },
 })

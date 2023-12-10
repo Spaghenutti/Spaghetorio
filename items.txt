@@ -120,18 +120,18 @@ O Oxygen
   + oxygen
 
 Noble metals
-  +r Au Gold  - from water via washing
-  +r Ag Silver  - from copper ore via hydrolisys
-  +r Pt Platinum  - from stone refining via pyrolysis
-  +r Pd Palladium  - from nickel refining
-  +r Ir Iridium  - very very rare
+  +r Au gold  - from water via washing
+  +r Ag silver  - from copper ore via hydrolisys
+  +r Pt platinum  - from stone refining via pyrolysis
+  +r Pd palladium  - from nickel refining
+  +r Ir iridium  - very very rare
 
 Rare earths
   + rare-earths (missing resource)
-  +r Y Yittrium  - for optical fibers 0.003
-  +r La Lanthanum 0.004
-  +r Ce Cerium 0.007
-  +r Nd Neodymium 0.004
+  +r Y yittrium  - for optical fibers 0.003
+  +r La lanthanum 0.004
+  +r Ce cerium 0.007
+  +r Nd neodymium 0.004
 
 Sulfide ores
   - here are lots of fancy stuff: https://en.wikipedia.org/wiki/Sulfide_mineral
@@ -175,6 +175,7 @@ Alloys
 
 Basic Intermediates
   +r copper-tube
+  +r spring
   +r pressure-tube
   - mechanical components
     +rr connecting-rod
@@ -234,7 +235,7 @@ Intermediates
 	- (heat pipe) already exists
 	+r spark-plug
   +r valve
-  - gyro
+  +r gyro
   +r preassure-tank
   +r high-preassure-tank
   +rr turbine-blade
@@ -243,6 +244,7 @@ Intermediates
   +r fuel-infector
   +r combustion-chamber
 	+r rocket-engine
+  + solid-rocket-motor
 	- (Engine) already exists
   - converter
   +r integrated-circuit
