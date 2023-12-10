@@ -529,12 +529,12 @@ data:extend({
 	},
   {
 		type = "item",
-		name = "phosporus",  -- #ForRegEx# - item
+		name = "phosphorus",  -- #ForRegEx# - item
 		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
 		icon_size = 128,
 		scale = 0.5,
 		subgroup = "processed-resource",
-		order = "[phosporus]",
+		order = "[phosphorus]",
 		stack_size = 100
 	},
   {
@@ -1005,22 +1005,22 @@ data:extend({
 	},
   {
 		type = "item",
-		name = "steel-gear",  -- #ForRegEx# - item
+		name = "steel-gear-wheel",  -- #ForRegEx# - item
 		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
 		icon_size = 128,
 		scale = 0.5,
 		subgroup = "mechanical-component",
-		order = "[steel-gear]",
+		order = "[steel-gear-wheel]",
 		stack_size = 100
 	},
   {
 		type = "item",
-		name = "stainless-steel-gear",  -- #ForRegEx# - item
+		name = "stainless-steel-gear-wheel",  -- #ForRegEx# - item
 		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
 		icon_size = 128,
 		scale = 0.5,
 		subgroup = "mechanical-component",
-		order = "[stainless-steel-gear]",
+		order = "[stainless-steel-gear-wheel]",
 		stack_size = 100
 	},
   {
@@ -1363,6 +1363,16 @@ data:extend({
 		scale = 0.5,
 		subgroup = "electrical-optical-component",
 		order = "[memory-chip]",
+		stack_size = 100
+	},
+  {
+		type = "item",
+		name = "antenna-chip",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "electrical-optical-component",
+		order = "[antenna-chip]",
 		stack_size = 100
 	},
   {

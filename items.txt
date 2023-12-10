@@ -170,8 +170,8 @@ Alloys
 	+r aluminum-brass - aluminum 7000 Series (strong alloy)
   - antimonial-lead (5% antimony 95% lead) for lead batteries
   +r inconel
-  +r TiAlSn (92.5-5-2.5) Grade 6
-  +r TiNb (55-45) Grade 36
+  +r TiAlSn (92.5-5-2.5) Grade 6 - for turbines and chemical stuff
+  +r TiNb (55-45) Grade 36 - for composites
 
 Basic Intermediates
   +r copper-tube
@@ -179,19 +179,19 @@ Basic Intermediates
   - mechanical components
     +r bolts (nuts and bolts)
     - gear
-      +r steel-gear
-      +r stainless-steel-gear
+      +r steel-gear-wheel
+      +r stainless-steel-gear-wheel
     +r bearing
 	- optical components
 		+r mirror
 		+r lens
-    +r infra red filter
+    +r infra-red-filter
 	- electrical components
 		+r resistor
 		+rrr capacitor
 		+r diode
 		+r transistor
-		+ LED
+		+r light-emitting-diode LED
 		+r coil
   +r glass-fiber
   +r kevlar
@@ -247,6 +247,7 @@ Intermediates
   +r integrated-circuit
   - micro-controller
   +r memory-chip
+  +r antenna-chip
 	+r processor
   +r cmos
   +r laser
@@ -282,6 +283,12 @@ Endproduct
 	- welding machine
 	- electrolysis plant
 
+Useless things
+  + protactinium Pa
+  + diet-water
+  + solar-powered-flash-light
+  + AC-Fan
+
 Sciences
   - geological science pack
   - computer science pack
@@ -293,11 +300,8 @@ Sciences
   - quantum phisics science pack
   - high dimensional science pack
 
-Useless things
-  + protactinium Pa
-  + diet-water
-  + solar-powered-flash-light
-  + AC-Fan
+Technology names:
+  - Qubit technology
 
 Buildings:
   - cyclotron
@@ -316,6 +320,3 @@ Other stuff from chat gpt:
   - Quantum Crystals: A fictional material that is composed of quantum particles in a crystalline structure. It could be used to create advanced computing systems, quantum communication devices, and other exotic technologies.
   - Hypercrystals: A fictional material that is composed of exotic particles in a crystalline structure. It could be used to create advanced energy storage devices, hyperdrive engines, and other futuristic technologies.
   - I hope these ideas help you get started! Let me know if you need more suggestions.
-
-Technology names:
-  - Qubit technology
