@@ -612,6 +612,23 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "assembling-machine-3",
+    enabled = false,
+    ingredients =
+    {
+      {"stainless-steel", 36},
+      {"circuit-board", 16},
+      {"integrated-circuit", 10},
+      {"connecting-rod", 20},
+      {"stone-brick", 24},
+      {"bolts", 48},
+      {"stainless-steel-gear-wheel", 32},
+      {"spring", 12}
+    },
+    result = "assembling-machine-3"
+  },
+  {
+    type = "recipe",
     name = "automation-science-pack",
     energy_required = 5,
     ingredients =
@@ -810,6 +827,7 @@ data:extend({
     {
       {"steel-gear-wheel", 3},
       {"iron-stick", 2},
+      {"spring", 4},
       {"copper-cable", 2},
     },
     result = "fast-transport-belt"
@@ -824,6 +842,7 @@ data:extend({
       {"steel-gear-wheel", 24},
       {"steel-plate", 6},
       {"iron-stick", 10},
+      {"spring", 8},
       {"bolts", 6},
     },
     result_count = 2,
@@ -839,6 +858,7 @@ data:extend({
       {"steel-gear-wheel", 6},
       {"electronic-circuit", 4},
       {"steel-plate", 3},
+      {"spring", 6},
       {"bolts", 2}
     },
     result = "fast-splitter"
@@ -1220,9 +1240,6 @@ data:extend({
     },
     result = "explosive-rocket"
   },
-  -----------------------------------------------------------------------------
-  ----------------------- BEEP BOP - MAKING CALCULATIONS -----------------------
-  ------------------------------------------------------------------------------
   {
     type = "recipe",
     name = "atomic-bomb",
@@ -1232,7 +1249,10 @@ data:extend({
     {
       {"rocket-control-unit", 10},
       {"explosives", 10},
-      {"uranium-235", 30}
+      {"titanium-frame", 4},
+      {"uranium-235", 30},
+      {"solid-rocket-motor", 1},
+      {"gyro", 3}
     },
     result = "atomic-bomb"
   },
@@ -1243,9 +1263,9 @@ data:extend({
     energy_required = 8,
     ingredients =
     {
-      {"shotgun-shell", 2},
-      {"copper-plate", 5},
-      {"steel-plate", 2}
+      {"explosives", 1},
+      {"steel-plate", 2},
+      {"plastic-bar", 1}
     },
     result = "piercing-shotgun-shell"
   },
@@ -1258,9 +1278,10 @@ data:extend({
       energy_required = 8,
       ingredients =
       {
-        {"steel-plate", 2},
+        {"steel-plate", 3},
+        {"titanium-frame", 1},
         {"plastic-bar", 2},
-        {"explosives", 1}
+        {"explosives", 5}
       },
       result = "cannon-shell"
     },
@@ -1270,9 +1291,10 @@ data:extend({
       energy_required = 8,
       ingredients =
       {
-        {"steel-plate", 4},
+        {"steel-plate", 6},
+        {"titanium-frame", 2},
         {"plastic-bar", 4},
-        {"explosives", 1}
+        {"explosives", 10}
       },
       result = "cannon-shell"
     }
@@ -1286,9 +1308,10 @@ data:extend({
       energy_required = 8,
       ingredients =
       {
-        {"steel-plate", 2},
+        {"steel-plate", 3},
+        {"titanium-frame", 2},
         {"plastic-bar", 2},
-        {"explosives", 2}
+        {"explosives", 20}
       },
       result = "explosive-cannon-shell"
     },
@@ -1298,9 +1321,10 @@ data:extend({
       energy_required = 8,
       ingredients =
       {
-        {"steel-plate", 4},
+        {"steel-plate", 10},
+        {"titanium-frame", 4},
         {"plastic-bar", 4},
-        {"explosives", 2}
+        {"explosives", 36}
       },
       result = "explosive-cannon-shell"
     }
@@ -1312,7 +1336,10 @@ data:extend({
     energy_required = 12,
     ingredients =
     {
-      {"cannon-shell", 1},
+      {"steel-plate", 3},
+      {"titanium-frame", 2},
+      {"plastic-bar", 2},
+      {"explosives", 2},
       {"uranium-238", 1}
     },
     result = "uranium-cannon-shell"
@@ -1324,8 +1351,11 @@ data:extend({
     energy_required = 12,
     ingredients =
     {
-      {"explosive-cannon-shell", 1},
-      {"uranium-238", 1}
+      {"steel-plate", 6},
+      {"titanium-frame", 4},
+      {"plastic-bar", 2},
+      {"explosives", 2},
+      {"uranium-238", 2}
     },
     result = "explosive-uranium-cannon-shell"
   },
@@ -1336,9 +1366,9 @@ data:extend({
     energy_required = 15,
     ingredients =
     {
-      {"explosive-cannon-shell", 4},
-      {"radar", 1},
-      {"explosives", 8}
+      {"inconel", 2},
+      {"TiAlSn", 6},
+      {"explosives", 20}
     },
     result = "artillery-shell"
   },
@@ -1350,7 +1380,7 @@ data:extend({
     energy_required = 6,
     ingredients =
     {
-      {type="item", name="steel-plate", amount=5},
+      {type="item", name="stainless-steel", amount=5},
       {type="fluid", name="crude-oil", amount=100}
     },
     result = "flamethrower-ammo",
@@ -1369,11 +1399,12 @@ data:extend({
     normal =
     {
       enabled = false,
-
       ingredients =
       {
-        {"iron-gear-wheel", 10},
-        {"fast-transport-belt", 1},
+        {"stainless-steel-gear-wheel", 10},
+        {"spring", 2},
+        {"polymer", 4},
+        {"ferrite-magnet", 2},
         {type="fluid", name="lubricant", amount=20}
       },
       result = "express-transport-belt"
@@ -1383,24 +1414,27 @@ data:extend({
       enabled = false,
       ingredients =
       {
-        {"iron-gear-wheel", 20},
-        {"fast-transport-belt", 1},
-        {type="fluid", name="lubricant", amount=20}
+        {"stainless-steel-gear-wheel", 16},
+        {"spring", 4},
+        {"polymer", 6},
+        {"ferrite-magnet", 4},
+        {type="fluid", name="lubricant", amount=40}
       },
       result = "express-transport-belt"
     }
   },
-  {
-    type = "recipe",
-    name = "assembling-machine-3",
-    enabled = false,
-    ingredients =
-    {
-      {"speed-module", 4},
-      {"assembling-machine-2", 2}
-    },
-    result = "assembling-machine-3"
-  },
+  -----------------------------------------------------------------------------
+  ----------------------- BEEP BOP - MAKING CALCULATIONS -----------------------
+  ------------------------------------------------------------------------------
+  
+
+
+
+
+
+
+
+
   {
     type = "recipe",
     name = "tank",
