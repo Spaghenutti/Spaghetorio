@@ -1717,7 +1717,7 @@ data:extend({
 	},
   {
 		type = "recipe",
-		name = "preassure-tank",  -- #ForRegEx# - recepie
+		name = "pressure-tank",  -- #ForRegEx# - recepie
 		category = "crafting",
     enabled = false,
 		energy_required = 4,	-- time in seconds to make the item
@@ -1726,12 +1726,12 @@ data:extend({
       {type = "item", name = "flange", amount = 2}
 		},
 		results = {
-			{type = "item", name = "preassure-tank", amount = 1}
+			{type = "item", name = "pressure-tank", amount = 1}
 		}
 	},
   {
 		type = "recipe",
-		name = "high-preassure-tank",  -- #ForRegEx# - recepie
+		name = "high-pressure-tank",  -- #ForRegEx# - recepie
 		category = "crafting",
     enabled = false,
 		energy_required = 4,	-- time in seconds to make the item
@@ -1741,7 +1741,7 @@ data:extend({
       {type = "item", name = "carbon-fiber", amount = 2}
 		},
 		results = {
-			{type = "item", name = "high-preassure-tank", amount = 1}
+			{type = "item", name = "high-pressure-tank", amount = 1}
 		}
 	},
   {
@@ -2098,7 +2098,7 @@ data:extend({
       {type = "item", name = "plate-heat-exchanger", amount = 4},
       {type = "item", name = "valve", amount = 16},
       {type = "item", name = "flange", amount = 6},
-      {type = "item", name = "preassure-tank", amount = 3}
+      {type = "item", name = "pressure-tank", amount = 3}
 		},
 		results = {
 			{type = "item", name = "reactor-core", amount = 1}

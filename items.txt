@@ -236,8 +236,8 @@ Intermediates
 	+r spark-plug
   +r valve
   +r gyro
-  +r preassure-tank
-  +r high-preassure-tank
+  +r pressure-tank
+  +r high-pressure-tank
   +rr turbine-blade
 	+r turbopump
 	+r nozzle

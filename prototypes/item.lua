@@ -1466,20 +1466,20 @@ data:extend({
   },
   {
     type = "item",
-    name = "preassure-tank",  -- #ForRegEx# - item
+    name = "pressure-tank",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "intermediate-product",
-    order = "[preassure-tank]",
+    order = "[pressure-tank]",
     stack_size = 50
   },
   {
     type = "item",
-    name = "high-preassure-tank",  -- #ForRegEx# - item
+    name = "high-pressure-tank",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "intermediate-product",
-    order = "[high-preassure-tank]",
+    order = "[high-pressure-tank]",
     stack_size = 50
   },
   {

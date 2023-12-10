@@ -279,7 +279,7 @@ data:extend({
       {"bolts", 100},
       {"control-rod", 6},
       {"pressure-tube", 10},
-      {"preassure-tank", 1},
+      {"pressure-tank", 1},
       {"electric-engine-unit", 4},
       {"low-density-structure", 5}
     },
@@ -1423,6 +1423,120 @@ data:extend({
       result = "express-transport-belt"
     }
   },
+  {
+    type = "recipe",
+    name = "tank",
+    normal =
+    {
+      enabled = false,
+      energy_required = 5,
+      ingredients =
+      {
+        {"engine-unit", 32},
+        {"steel-plate", 50},
+        {"aluminum-brass", 12},
+        {"bolts", 120},
+        {"spring", 40},
+        {"steel-gear-wheel", 15},
+        {"advanced-circuit", 10}
+      },
+      result = "tank"
+    },
+    expensive =
+    {
+      enabled = false,
+      energy_required = 8,
+      ingredients =
+      {
+        {"engine-unit", 48},
+        {"steel-plate", 100},
+        {"aluminum-brass", 24},
+        {"bolts", 120},
+        {"spring", 80},
+        {"steel-gear-wheel", 32},
+        {"advanced-circuit", 10}
+      },
+      result = "tank"
+    }
+  },
+  {
+    type = "recipe",
+    name = "fluid-wagon",
+    enabled = false,
+    energy_required = 1.5,
+    ingredients =
+    {
+      {"flange", 10},
+      {"valve", 6},
+      {"steel-plate", 6},
+      {"copper-tube", 8},
+      {"pressure-tank", 3}
+    },
+    result = "fluid-wagon"
+  },
+  {
+    type = "recipe",
+    name = "artillery-wagon",
+    energy_required = 4,
+    enabled = false,
+    ingredients =
+    {
+      {"engine-unit", 64},
+      {"steel-gear-wheel", 10},
+      {"steel-plate", 40},
+      {"advanced-circuit", 20},
+      {"bolts", 56},
+      {"spring", 20},
+      {"titanium-frame", 12}
+    },
+    result = "artillery-wagon"
+  },
+  {
+    type = "recipe",
+    name = "modular-armor",
+    enabled = false,
+    energy_required = 15,
+    ingredients =
+    {
+      {"titanium-frame", 6},
+      {"fabric", 6},
+      {"kevlar", 12}
+    },
+    result = "modular-armor"
+  },
+  {
+    type = "recipe",
+    name = "power-armor",
+    enabled = false,
+    energy_required = 20,
+    ingredients = {
+      {"aluminum-brass", 6},
+      {"electric-engine-unit", 4},
+      {"tungsten-carbide", 4},
+      {"fabric", 6},
+      {"kevlar", 12}
+    },
+    result = "power-armor",
+    requester_paste_multiplier = 1
+  },
+  {
+    type = "recipe",
+    name = "power-armor-mk2",
+    enabled = false,
+    energy_required = 25,
+    ingredients = {
+      {"effectivity-module-2", 25},
+      {"aluminum-brass", 6},
+      {"circuit-board", 4},
+      {"processor", 4},
+      {"electric-engine-unit", 4},
+      {"tungsten-carbide", 4},
+      {"fabric", 6},
+      {"kevlar", 12}
+    },
+    result = "power-armor-mk2",
+    requester_paste_multiplier = 1
+  },
   -----------------------------------------------------------------------------
   ----------------------- BEEP BOP - MAKING CALCULATIONS -----------------------
   ------------------------------------------------------------------------------
@@ -1435,124 +1549,8 @@ data:extend({
 
 
 
-  {
-    type = "recipe",
-    name = "tank",
-    normal =
-    {
-      enabled = false,
-      energy_required = 5,
-      ingredients =
-      {
-        {"engine-unit", 32},
-        {"steel-plate", 50},
-        {"iron-gear-wheel", 15},
-        {"advanced-circuit", 10}
-      },
-      result = "tank"
-    },
-    expensive =
-    {
-      enabled = false,
-      energy_required = 8,
-      ingredients =
-      {
-        {"engine-unit", 64},
-        {"steel-plate", 100},
-        {"iron-gear-wheel", 30},
-        {"advanced-circuit", 20}
-      },
-      result = "tank"
-    }
-  },
-  {
-    type = "recipe",
-    name = "spidertron",
-    enabled = false,
-    energy_required = 10,
-    ingredients =
-    {
-      {"exoskeleton-equipment", 4},
-      {"fusion-reactor-equipment", 2},
-      {"rocket-launcher", 4},
-      {"rocket-control-unit", 16},
-      {"low-density-structure", 150},
-      {"radar", 2},
-      {"effectivity-module-3", 2},
-      {"raw-fish", 1}
-    },
-    result = "spidertron"
-  },
-  {
-    type = "recipe",
-    name = "spidertron-remote",
-    enabled = false,
-    ingredients =
-    {
-      {"rocket-control-unit", 1},
-      {"radar", 1}
-    },
-    result = "spidertron-remote"
-  },
-  {
-    type = "recipe",
-    name = "fluid-wagon",
-    enabled = false,
-    energy_required = 1.5,
-    ingredients =
-    {
-      {"iron-gear-wheel", 10},
-      {"steel-plate", 16},
-      {"pipe", 8},
-      {"storage-tank", 1}
-    },
-    result = "fluid-wagon"
-  },
-  {
-    type = "recipe",
-    name = "artillery-wagon",
-    energy_required = 4,
-    enabled = false,
-    ingredients =
-    {
-      {"engine-unit", 64},
-      {"iron-gear-wheel", 10},
-      {"steel-plate", 40},
-      {"pipe", 16},
-      {"advanced-circuit", 20}
-    },
-    result = "artillery-wagon"
-  },
-  {
-    type = "recipe",
-    name = "modular-armor",
-    enabled = false,
-    energy_required = 15,
-    ingredients =
-    {
-      {"advanced-circuit", 30},
-      {"steel-plate", 50}
-    },
-    result = "modular-armor"
-  },
-  {
-    type = "recipe",
-    name = "power-armor",
-    enabled = false,
-    energy_required = 20,
-    ingredients = {{ "processing-unit", 40}, {"electric-engine-unit", 20}, {"steel-plate", 40}},
-    result = "power-armor",
-    requester_paste_multiplier = 1
-  },
-  {
-    type = "recipe",
-    name = "power-armor-mk2",
-    enabled = false,
-    energy_required = 25,
-    ingredients = {{ "effectivity-module-2", 25}, {"speed-module-2", 25}, {"processing-unit", 60}, {"electric-engine-unit", 40}, {"low-density-structure", 30}},
-    result = "power-armor-mk2",
-    requester_paste_multiplier = 1
-  },
+
+
   {
     type = "recipe",
     name = "flamethrower",
