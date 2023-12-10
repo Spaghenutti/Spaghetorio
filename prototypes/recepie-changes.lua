@@ -1966,36 +1966,24 @@ data:extend({
     result= "satellite",
     requester_paste_multiplier = 1
   },
- -----------------------------------------------------------------------------
-  ----------------------- BEEP BOP - MAKING CALCULATIONS -----------------------
-  ------------------------------------------------------------------------------
-  
-
-
-
-  {
-    type = "recipe",
-    name = "electric-energy-interface",
-    energy_required = 0.5,
-    enabled = false,
-    ingredients =
-    {
-      {"iron-plate", 2},
-      {"electronic-circuit", 5}
-    },
-    result = "electric-energy-interface"
-  },
   {
     type = "recipe",
     name = "nuclear-reactor",
-    energy_required = 8,
+    energy_required = 450,
     enabled = false,
     ingredients =
     {
       {"concrete", 500},
-      {"steel-plate", 500},
-      {"advanced-circuit", 500},
-      {"copper-plate", 500}
+      {"reactor-core", 1},
+      {"compute-unit", 48},
+      {"pressure-tube", 36},
+      {"bolts", 600},
+      {"flange", 24},
+      {"plate-heat-exchanger", 36},
+      {"pressure-tank", 12},
+      {"accumulator", 24},
+      {"turbopump", 6},
+      {"copper-cable", 400}
     },
     result = "nuclear-reactor",
     requester_paste_multiplier = 1
@@ -2008,99 +1996,29 @@ data:extend({
     ingredients =
     {
       {"concrete", 100},
-      {"steel-plate", 50},
-      {"advanced-circuit", 100},
-      {"iron-gear-wheel", 100}
+      {"stainless-steel", 24},
+      {"ceramic", 24},
+      {"electric-engine-unit", 12},
+      {"compute-unit", 1},
+      {"stainless-steel-gear-wheel", 96},
+      {"bearing", 36}
     },
     result = "centrifuge",
     requester_paste_multiplier= 10
   },
   {
     type = "recipe",
-    name = "uranium-processing",
-    energy_required = 12,
-    enabled = false,
-    category = "centrifuging",
-    ingredients = {{"uranium-ore", 10}},
-    icon = "__base__/graphics/icons/uranium-processing.png",
-    icon_size = 64, icon_mipmaps = 4,
-    subgroup = "raw-material",
-    order = "k[uranium-processing]", -- k ordering so it shows up after explosives which is j ordering
-    results =
-    {
-      {
-        name = "uranium-235",
-        probability = 0.007,
-        amount = 1
-      },
-      {
-        name = "uranium-238",
-        probability = 0.993,
-        amount = 1
-      }
-    }
-  },
-  {
-    type = "recipe",
-    name = "kovarex-enrichment-process",
-    energy_required = 60,
-    enabled = false,
-    category = "centrifuging",
-    ingredients = {{"uranium-235", 40}, {"uranium-238", 5}},
-    icon = "__base__/graphics/icons/kovarex-enrichment-process.png",
-    icon_size = 64, icon_mipmaps = 4,
-    subgroup = "intermediate-product",
-    order = "r[uranium-processing]-c[kovarex-enrichment-process]",
-    main_product = "",
-    results = {{"uranium-235", 41}, {"uranium-238", 2}},
-    allow_decomposition = false
-  },
-  {
-    type = "recipe",
-    name = "nuclear-fuel",
-    energy_required = 90,
-    enabled = false,
-    category = "centrifuging",
-    ingredients = {{"uranium-235", 1}, {"rocket-fuel", 1}},
-    icon = "__base__/graphics/icons/nuclear-fuel.png",
-    icon_size = 64, icon_mipmaps = 4,
-    result = "nuclear-fuel"
-  },
-  {
-    type = "recipe",
-    name = "nuclear-fuel-reprocessing",
-    energy_required = 60,
-    enabled = false,
-    category = "centrifuging",
-    ingredients = {{"used-up-uranium-fuel-cell", 5}},
-    icon = "__base__/graphics/icons/nuclear-fuel-reprocessing.png",
-    icon_size = 64, icon_mipmaps = 4,
-    subgroup = "intermediate-product",
-    order = "r[uranium-processing]-b[nuclear-fuel-reprocessing]",
-    main_product = "",
-    results = {{"uranium-238", 3}},
-    allow_decomposition = false
-  },
-  {
-    type = "recipe",
-    name = "uranium-fuel-cell",
-    energy_required = 10,
-    enabled = false,
-    ingredients =
-    {
-      {"iron-plate", 10},
-      {"uranium-235", 1},
-      {"uranium-238", 19}
-    },
-    result = "uranium-fuel-cell",
-    result_count = 10
-  },
-  {
-    type = "recipe",
     name = "heat-exchanger",
     energy_required = 3,
     enabled = false,
-    ingredients = {{"steel-plate", 10}, {"copper-plate", 100}, {"pipe", 10}},
+    ingredients = {
+      {"steel-plate", 10},
+      {"bolts", 10},
+      {"flange", 4},
+      {"valve", 4},
+      {"copper-tube", 100},
+      {"plate-heat-exchanger", 3}
+    },
     result = "heat-exchanger"
   },
   {
@@ -2108,7 +2026,12 @@ data:extend({
     name = "heat-pipe",
     energy_required = 1,
     enabled = false,
-    ingredients = {{"steel-plate", 10}, {"copper-plate", 20}},
+    ingredients = {
+      {"pressure-tube", 10},
+      {"flange", 2},
+      {"aluminum-ingot", 2},
+      {"polymer", 6}
+    },
     result = "heat-pipe"
   },
   {
@@ -2116,7 +2039,14 @@ data:extend({
     name = "steam-turbine",
     enabled = false,
     energy_required = 3,
-    ingredients = {{"iron-gear-wheel", 50}, {"copper-plate", 50}, {"pipe", 20}},
+    ingredients = {
+      {"turbine-rotor", 1},
+      {"turbine-stator", 1},
+      {"bolts", 20},
+      {"electric-engine-unit", 5},
+      {"bearing", 8},
+      {"stainless-steel-gear-wheel", 20}
+    },
     result = "steam-turbine"
   }
 })

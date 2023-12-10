@@ -933,19 +933,6 @@ data:extend({
 	},
   {
 		type = "recipe",
-		name = "spring",  -- #ForRegEx# - recepie
-		category = "crafting",
-    enabled = true,
-		energy_required = 1.6,	-- time in seconds to make the item
-		ingredients = {
-      {type = "item", name = "iron-stick", amount = 2}
-		},
-		results = {
-			{type = "item", name = "spring", amount = 3}
-		}
-	},
-  {
-		type = "recipe",
 		name = "pressure-tube",  -- #ForRegEx# - recepie
 		category = "crafting",
     enabled = false,
@@ -955,6 +942,19 @@ data:extend({
 		},
 		results = {
 			{type = "item", name = "pressure-tube", amount = 1}
+		}
+	},
+  {
+		type = "recipe",
+		name = "spring",  -- #ForRegEx# - recepie
+		category = "crafting",
+    enabled = true,
+		energy_required = 1.6,	-- time in seconds to make the item
+		ingredients = {
+      {type = "item", name = "iron-stick", amount = 2}
+		},
+		results = {
+			{type = "item", name = "spring", amount = 3}
 		}
 	},
   {
@@ -1408,6 +1408,24 @@ data:extend({
 		},
 		results = {
 			{type = "item", name = "cmos", amount = 2}
+		}
+	},
+  {
+		type = "recipe",
+		name = "compute-unit",  -- #ForRegEx# - recepie
+		category = "crafting",
+    enabled = false,
+		energy_required = 2,	-- time in seconds to make the item
+		ingredients = {
+      {type = "item", name = "circuit-board", amount = 1},
+      {type = "item", name = "memory-chip", amount = 2},
+      {type = "item", name = "processor", amount = 1},
+      {type = "item", name = "integrated-circuit", amount = 4},
+      {type = "item", name = "coil", amount = 2},
+      {type = "item", name = "heatsink", amount = 1}
+		},
+		results = {
+			{type = "item", name = "compute-unit", amount = 1}
 		}
 	},
   {

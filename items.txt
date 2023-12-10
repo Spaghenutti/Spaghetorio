@@ -175,8 +175,8 @@ Alloys
 
 Basic Intermediates
   +r copper-tube
-  +r spring
   +r pressure-tube
+  +r spring
   - mechanical components
     +rr connecting-rod
     +r bolts (nuts and bolts)
@@ -253,6 +253,8 @@ Intermediates
   +r antenna-chip
 	+r processor
   +r cmos
+  +r compute-unit
+  + advanced-compute-unit
   +r laser
   +r heat-resistant-tiles
   +r fabric
@@ -268,8 +270,6 @@ Intermediates
   +r heatsink
   +r turbine-rotor
   +r turbine-stator
-  + compute-unit
-  + advanced-compute-unit
   - control-unit
   +r cubit - for quantum processors
   +r quantum-data-plane

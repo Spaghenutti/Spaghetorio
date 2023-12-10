@@ -1005,6 +1005,16 @@ data:extend({
 	},
   {
 		type = "item",
+		name = "spring",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "mechanical-component",
+		order = "[spring]",
+		stack_size = 100
+	},
+  {
+		type = "item",
 		name = "steel-gear-wheel",  -- #ForRegEx# - item
 		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
 		icon_size = 128,
@@ -1110,16 +1120,6 @@ data:extend({
 		scale = 0.5,
 		subgroup = "mechanical-component",
 		order = "[ceramic]",
-		stack_size = 100
-	},
-  {
-		type = "item",
-		name = "spring",  -- #ForRegEx# - item
-		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
-		icon_size = 128,
-		scale = 0.5,
-		subgroup = "mechanical-component",
-		order = "[spring]",
 		stack_size = 100
 	},
   {
