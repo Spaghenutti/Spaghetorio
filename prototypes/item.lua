@@ -1092,6 +1092,15 @@ data:extend({
 		subgroup = "mechanical-component",
 		order = "[neodymium-magnet]",
 		stack_size = 100
+	},  {
+		type = "item",
+		name = "electro-magnet",  -- #ForRegEx# - item
+		icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+		icon_size = 128,
+		scale = 0.5,
+		subgroup = "mechanical-component",
+		order = "[electro-magnet]",
+		stack_size = 100
 	},
   {
 		type = "item",

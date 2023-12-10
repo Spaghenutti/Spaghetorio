@@ -146,8 +146,8 @@ Other
   +r glass
   +r sodium-carbonate
   - neutron
-  + plutonium-239 for reactor and bombs
-  + plutonium-240 for bombs
+  +r plutonium-239 for reactor and bombs
+  +r plutonium-240 for bombs
 
 Exotic materials
 	- Hypercrystals
@@ -210,7 +210,7 @@ Basic Intermediates
 			- alnico-magnet (Aluminium (Al), Nickel (Ni), Cobalt (Co))
 			+r neodymium-magnet (Neodymium Iron Boron (NdFeB))
 			- samarium-cobalt magnets (SmCo magnets)
-		- electro magnet (wire around iron rod)
+		+r electro-magnet (wire around iron rod)
 	+r superconductor
   +r cement
   +r ceramic
@@ -274,6 +274,7 @@ Intermediates
   +r cubit - for quantum processors
   +r quantum-data-plane
   +r quantum-gate
+  - propeller (for drones i guess)
 
 High tech stuff
   - boson einstein condensate
@@ -287,10 +288,10 @@ Endproduct
 	- electrolysis plant
 
 Useless things
-  + protactinium Pa
-  + diet-water
-  + solar-powered-flash-light
-  + AC-Fan
+  - protactinium Pa
+  - diet-water
+  - solar-powered-flash-light
+  - AC-Fan
 
 Sciences
   - geological science pack

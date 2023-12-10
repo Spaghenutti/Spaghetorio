@@ -1482,6 +1482,19 @@ data:extend({
 		results = {
 			{type = "item", name = "neodymium-magnet", amount = 2}
 		}
+	},  {
+		type = "recipe",
+		name = "electro-magnet",  -- #ForRegEx# - recepie
+		category = "crafting",
+    enabled = false,
+		energy_required = 1.2,	-- time in seconds to make the item
+		ingredients = {
+      {type = "item", name = "iron-stick", amount = 1},
+      {type = "item", name = "copper-cable", amount = 2}
+		},
+		results = {
+			{type = "item", name = "electro-magnet", amount = 2}
+		}
 	},
   {
 		type = "recipe",
