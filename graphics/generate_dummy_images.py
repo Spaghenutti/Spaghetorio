@@ -52,7 +52,7 @@ def generate_dummy_images(path, regex, color, object_type):
         img.save(f"{PATH_PREFIX}graphics/dummy/dummy-{object_type}-{object_name}.png")
 
 
-if __name__ == "__main__":
+def generate_images():
     # Generate group image
     generate_default_image(GROUP_BACKGROUND_COLOR, "group")
 
@@ -74,3 +74,7 @@ if __name__ == "__main__":
     # Generate technology images
     generate_default_image(TECHNOLOGY_BACKGROUND_COLOR, "technology")
     generate_dummy_images(RECEPIES_PATH, NAMES_REGEX, TECHNOLOGY_BACKGROUND_COLOR, "technology")
+
+
+if __name__ == "__main__":
+    generate_images()
