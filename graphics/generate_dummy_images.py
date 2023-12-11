@@ -26,107 +26,51 @@ RECEPIES_PATH = f"{PATH_PREFIX}prototypes/recepie.lua"
 TECHNOLOGIES_PATH = f"{PATH_PREFIX}prototypes/technology.lua"
 NAMES_REGEX = r"[ ,\t\n]name = \"(.*?)\",  -- #ForRegEx#"  # Extend regex to catch the type. The flag looks something like -- #ForRegEx# - <type>
 
-# Generate item replacement image
-img = Image.new(mode="RGBA", size=(HR_ICON_RES, HR_ICON_RES), color=GROUP_BACKGROUND_COLOR)
-img.save(f"{PATH_PREFIX}graphics/dummy/dummy-group-default.png")
+def generate_default_image(color, object_type):
+    img = Image.new(mode="RGBA", size=(HR_ICON_RES, HR_ICON_RES), color=color)
+    img.save(f"{PATH_PREFIX}graphics/dummy/dummy-{object_type}-default.png")
 
-# Generate item replacement image
-img = Image.new(mode="RGBA", size=(HR_ICON_RES, HR_ICON_RES), color=ITEM_REPLACEMENT_BACKGROUND_COLOR)
-img.save(f"{PATH_PREFIX}graphics/dummy/dummy-item-replacement-default.png")
+def generate_dummy_images(path, regex, color, object_type):
+    # Get all item names
+    with open(path) as f:
+        objects_lua = f.read()
+    object_names = re.findall(regex, objects_lua)
 
-# Generate default item image
-img = Image.new(mode="RGBA", size=(HR_ICON_RES, HR_ICON_RES), color=ITEM_BACKGROUND_COLOR)
-img.save(f"{PATH_PREFIX}graphics/dummy/dummy-item-default.png")
+    # Generate all item images
+    for object_name in object_names:
+        # Create image with background
+        img = Image.new(mode="RGBA", size=(HR_ICON_RES, HR_ICON_RES), color=color)
 
-# Get all item names
-with open(ITEMS_PATH) as f:
-    items_lua = f.read()
-item_names = re.findall(NAMES_REGEX, items_lua)
+        # Draw item name
+        for i in range(len(object_name)//BREAK_LINE_AFTER_N_CHARS + 1):
+            draw = ImageDraw.Draw(img)
+            draw.text((TEXT_OFFSET_X, TEXT_OFFSET_Y + i*(FONT_SIZE+LINE_SPACE)),
+                    object_name[i*BREAK_LINE_AFTER_N_CHARS:(i+1)*BREAK_LINE_AFTER_N_CHARS],
+                    font=FONT,
+                    fill=FONT_COLOR)
 
-# Generate all item images
-for item_name in item_names:
-    # Create image with background
-    img = Image.new(mode="RGBA", size=(HR_ICON_RES, HR_ICON_RES), color=ITEM_BACKGROUND_COLOR)
-
-    # Draw item name
-    for i in range(len(item_name)//BREAK_LINE_AFTER_N_CHARS + 1):
-        draw = ImageDraw.Draw(img)
-        draw.text((TEXT_OFFSET_X, TEXT_OFFSET_Y + i*(FONT_SIZE+LINE_SPACE)),
-                item_name[i*BREAK_LINE_AFTER_N_CHARS:(i+1)*BREAK_LINE_AFTER_N_CHARS],
-                font=FONT,
-                fill=FONT_COLOR)
-
-    img.save(f"{PATH_PREFIX}graphics/dummy/dummy-item-{item_name}.png")
-
-# Generate default fluid image
-img = Image.new(mode="RGBA", size=(HR_ICON_RES, HR_ICON_RES), color=FLUID_BACKGROUND_COLOR)
-img.save(f"{PATH_PREFIX}graphics/dummy/dummy-fluid-default.png")
-
-# Get all fluid names
-with open(FLUIDS_PATH) as f:
-    fluids_lua = f.read()
-fluid_names = re.findall(NAMES_REGEX, fluids_lua)
-
-# Generate all fluid images
-for fluid_name in fluid_names:
-    # Create image with background
-    img = Image.new(mode="RGBA", size=(HR_ICON_RES, HR_ICON_RES), color=FLUID_BACKGROUND_COLOR)
-
-    # Draw fluid name
-    for i in range(len(fluid_name)//BREAK_LINE_AFTER_N_CHARS + 1):
-        draw = ImageDraw.Draw(img)
-        draw.text((TEXT_OFFSET_X, TEXT_OFFSET_Y + i*(FONT_SIZE+LINE_SPACE)),
-                fluid_name[i*BREAK_LINE_AFTER_N_CHARS:(i+1)*BREAK_LINE_AFTER_N_CHARS],
-                font=FONT,
-                fill=FONT_COLOR)
-
-    img.save(f"{PATH_PREFIX}graphics/dummy/dummy-fluid-{fluid_name}.png")
+        img.save(f"{PATH_PREFIX}graphics/dummy/dummy-{object_type}-{object_name}.png")
 
 
-# Generate default recepie image
-img = Image.new(mode="RGBA", size=(HR_ICON_RES, HR_ICON_RES), color=RECEPIE_BACKGROUND_COLOR)
-img.save(f"{PATH_PREFIX}graphics/dummy/dummy-recepie-default.png")
+if __name__ == "__main__":
+    # Generate group image
+    generate_default_image(GROUP_BACKGROUND_COLOR, "group")
 
-# Get all recepie names
-with open(RECEPIES_PATH) as f:
-    recepies_lua = f.read()
-recepie_names = re.findall(NAMES_REGEX, recepies_lua)
+    # Generate item replacement image
+    generate_default_image(ITEM_REPLACEMENT_BACKGROUND_COLOR, "item-replacement")
 
-# Generate images
-for recepie_name in recepie_names:
-    # Create image with background
-    img = Image.new(mode="RGBA", size=(HR_ICON_RES, HR_ICON_RES), color=RECEPIE_BACKGROUND_COLOR)
+    # Generate item images
+    generate_default_image(ITEM_BACKGROUND_COLOR, "item")
+    generate_dummy_images(ITEMS_PATH, NAMES_REGEX, ITEM_BACKGROUND_COLOR, "item")
 
-    # Draw recepie name
-    for i in range(len(recepie_name)//BREAK_LINE_AFTER_N_CHARS + 1):
-        draw = ImageDraw.Draw(img)
-        draw.text((TEXT_OFFSET_X, TEXT_OFFSET_Y + i*(FONT_SIZE+LINE_SPACE)),
-                recepie_name[i*BREAK_LINE_AFTER_N_CHARS:(i+1)*BREAK_LINE_AFTER_N_CHARS],
-                font=FONT,
-                fill=FONT_COLOR)
-
-    img.save(f"{PATH_PREFIX}graphics/dummy/dummy-recepie-{recepie_name}.png")
-
-# Generate default technology image
-img = Image.new(mode="RGBA", size=(HR_ICON_RES, HR_ICON_RES), color=TECHNOLOGY_BACKGROUND_COLOR)
-img.save(f"{PATH_PREFIX}graphics/dummy/dummy-technology-default.png")
-
-# Get all technology names
-with open(TECHNOLOGIES_PATH) as f:
-    technologies_lua = f.read()
-technology_names = re.findall(NAMES_REGEX, technologies_lua)
-
-# Generate images
-for technology_name in technology_names:
-    # Create image with background
-    img = Image.new(mode="RGBA", size=(HR_ICON_RES, HR_ICON_RES), color=TECHNOLOGY_BACKGROUND_COLOR)
-
-    # Draw technology name
-    for i in range(len(technology_name)//BREAK_LINE_AFTER_N_CHARS + 1):
-        draw = ImageDraw.Draw(img)
-        draw.text((TEXT_OFFSET_X, TEXT_OFFSET_Y + i*(FONT_SIZE+LINE_SPACE)),
-                technology_name[i*BREAK_LINE_AFTER_N_CHARS:(i+1)*BREAK_LINE_AFTER_N_CHARS],
-                font=FONT,
-                fill=FONT_COLOR)
-
-    img.save(f"{PATH_PREFIX}graphics/dummy/dummy-technology-{technology_name}.png")
+    # Generate fluid images
+    generate_default_image(FLUID_BACKGROUND_COLOR, "fluid")
+    generate_dummy_images(FLUIDS_PATH, NAMES_REGEX, FLUID_BACKGROUND_COLOR, "fluid")
+    
+    # Generate recepie images
+    generate_default_image(RECEPIE_BACKGROUND_COLOR, "recepie")
+    generate_dummy_images(TECHNOLOGIES_PATH, NAMES_REGEX, RECEPIE_BACKGROUND_COLOR, "recepie")
+    
+    # Generate technology images
+    generate_default_image(TECHNOLOGY_BACKGROUND_COLOR, "technology")
+    generate_dummy_images(RECEPIES_PATH, NAMES_REGEX, TECHNOLOGY_BACKGROUND_COLOR, "technology")
