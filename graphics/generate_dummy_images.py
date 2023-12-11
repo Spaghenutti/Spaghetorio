@@ -24,6 +24,7 @@ ITEMS_PATH = f"{PATH_PREFIX}prototypes/item.lua"
 FLUIDS_PATH = f"{PATH_PREFIX}prototypes/fluid.lua"
 RECEPIES_PATH = f"{PATH_PREFIX}prototypes/recepie.lua"
 TECHNOLOGIES_PATH = f"{PATH_PREFIX}prototypes/technology.lua"
+
 NAMES_REGEX = r"[ ,\t\n]name = \"(.*?)\",  -- #ForRegEx#"  # Extend regex to catch the type. The flag looks something like -- #ForRegEx# - <type>
 
 def generate_default_image(color, object_type):
