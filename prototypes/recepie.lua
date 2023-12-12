@@ -685,6 +685,19 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "cobalt-billet",  -- #ForRegEx# - recepie
+    category = "smelting",
+    enabled = false,
+    energy_required = 3.2,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "cobalt-sulfate", amount = 1}
+    },
+    results = {
+      {type = "item", name = "cobalt-billet", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
     name = "glass",  -- #ForRegEx# - recepie
     category = "smelting",
     enabled = false,
@@ -916,6 +929,34 @@ data:extend({
     },
     results = {
       {type = "item", name = "TiNb", amount = 5}
+    }
+  },
+  {
+    type = "recipe",
+    name = "niobium-steel",  -- #ForRegEx# - recepie
+    category = "smelting",
+    enabled = false,
+    energy_required = 24,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "steel-plate", amount = 20},
+      {type = "item", name = "niobium-billet", amount = 1}
+    },
+    results = {
+      {type = "item", name = "niobium-steel", amount = 20}
+    }
+  },
+  {
+    type = "recipe",
+    name = "niobium-tin",  -- #ForRegEx# - recepie
+    category = "smelting",
+    enabled = false,
+    energy_required = 4,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "tin-ingot", amount = 1},
+      {type = "item", name = "niobium-billet", amount = 2}
+    },
+    results = {
+      {type = "item", name = "niobium-tin", amount = 2}
     }
   },
   {
@@ -1975,6 +2016,24 @@ data:extend({
     },
     results = {
       {type = "item", name = "solid-rocket-motor", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "cobalt-sulfate",  -- #ForRegEx# - recepie
+    icon = "__Spaghenutti__/graphics/dummy/dummy-recepie-default.png",
+    icon_size = 128,
+    scale = 0.5,
+    category = "crafting",
+    subgroup = "raw-resource",
+    enabled = false,
+    energy_required = 0.4,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "nickel-ore", amount = 1}
+    },
+    results = {
+      {type = "item", name = "cobalt-sulfate", probability = 3, amount = 1},
+      {type = "item", name = "sand", probability = 97, amount = 1}
     }
   },
   {

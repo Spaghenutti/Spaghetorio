@@ -24,6 +24,8 @@ Cr Chromium
   +r chromium-plate
 
 Co Cobalt
+  + cobalt-sulfate
+  + cobalt-billet
 
 Ni Nickel
   + nickel-ore (missing resource) (Fe,Ni)9S8
@@ -174,11 +176,10 @@ Alloys
   +r inconel
   +r TiAlSn (92.5-5-2.5) Grade 6 - for turbines and chemical stuff
   +r TiNb (55-45) Grade 36 - for composites
-  - niobium-steel, cheap and strong
-  - niobium-tin, for superconducting wire -> strong magnets with helium
+  +r niobium-steel, cheap and strong
+  +r niobium-tin, for superconducting wire -> strong magnets with helium
 
 Basic Intermediates
-  - armor-plate
   +r copper-tube
   +r pressure-tube
   +r spring

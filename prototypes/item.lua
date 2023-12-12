@@ -254,6 +254,15 @@ data:extend({
     order = "[zircon]",
     stack_size = 100
   },
+  {
+    type = "item",
+    name = "cobalt-sulfate",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+    icon_size = 128, icon_mipmaps = 4,
+    subgroup = "raw-resource",
+    order = "[cobalt-sulfate]",
+    stack_size = 50
+  },
   ------------------------------------------------------------------------------
   -- Subgroup processed-resource --
   ------------------------------------------------------------------------------
@@ -577,6 +586,16 @@ data:extend({
     order = "[plutonium-240]",
     stack_size = 100
   },
+  {
+    type = "item",
+    name = "cobalt-billet",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+    icon_size = 128,
+    scale = 0.5,
+    subgroup = "processed-resource",
+    order = "[cobalt-billet]",
+    stack_size = 100
+  },
   ------------------------------------------------------------------------------
   -- Subgroup raw-material --
   ------------------------------------------------------------------------------
@@ -871,6 +890,26 @@ data:extend({
     scale = 0.5,
     subgroup = "alloy",
     order = "[TiNb]",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "niobium-steel",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+    icon_size = 128,
+    scale = 0.5,
+    subgroup = "alloy",
+    order = "[niobium-steel]",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "niobium-tin",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+    icon_size = 128,
+    scale = 0.5,
+    subgroup = "alloy",
+    order = "[niobium-tin]",
     stack_size = 100
   },
   ------------------------------------------------------------------------------
