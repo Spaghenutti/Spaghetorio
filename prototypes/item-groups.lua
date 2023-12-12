@@ -94,12 +94,6 @@ data:extend({
     group = "intermediate-products",
     order = "i"
   },
-  {
-    type = "item-subgroup",
-    name = "useless",
-    group = "intermediate-products",
-    order = "i"
-  },
   ------------------------------------------------------------------------------
   -- logistics --
   -- Set logistics to third place
