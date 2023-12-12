@@ -178,6 +178,7 @@ Alloys
   - niobium-tin, for superconducting wire -> strong magnets with helium
 
 Basic Intermediates
+  - armor-plate
   +r copper-tube
   +r pressure-tube
   +r spring
