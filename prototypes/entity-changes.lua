@@ -52,6 +52,7 @@ data.raw.item["nuclear-fuel"].subgroup = "fuel"
 data.raw.item["uranium-fuel-cell"].subgroup = "fuel"
 data.raw.item["used-up-uranium-fuel-cell"].subgroup = "fuel"
 
+data.raw.item["sulfur"].subgroup = "processed-resource"
 data.raw.item["uranium-238"].subgroup = "processed-resource"
 data.raw.item["uranium-235"].subgroup = "processed-resource"
 

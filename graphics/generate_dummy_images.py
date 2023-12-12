@@ -14,7 +14,7 @@ TECHNOLOGY_BACKGROUND_COLOR = "yellow"
 TEXT_OFFSET_X = 10
 TEXT_OFFSET_Y = 0
 FONT_COLOR = "black"
-FONT_SIZE = 32
+FONT_SIZE = 24
 FONT_PATH = f"{PATH_PREFIX}fonts/TitilliumWeb-SemiBold.ttf"
 FONT = ImageFont.truetype(FONT_PATH, FONT_SIZE)  # Factorio font
 BREAK_LINE_AFTER_N_CHARS = 192//FONT_SIZE
@@ -70,11 +70,11 @@ def generate_images():
     
     # Generate recepie images
     generate_default_image(RECEPIE_BACKGROUND_COLOR, "recepie")
-    generate_dummy_images(TECHNOLOGIES_PATH, NAMES_REGEX, RECEPIE_BACKGROUND_COLOR, "recepie")
+    generate_dummy_images(RECEPIES_PATH, NAMES_REGEX, RECEPIE_BACKGROUND_COLOR, "recepie")
     
     # Generate technology images
     generate_default_image(TECHNOLOGY_BACKGROUND_COLOR, "technology")
-    generate_dummy_images(RECEPIES_PATH, NAMES_REGEX, TECHNOLOGY_BACKGROUND_COLOR, "technology")
+    generate_dummy_images(TECHNOLOGIES_PATH, NAMES_REGEX, TECHNOLOGY_BACKGROUND_COLOR, "technology")
 
 
 if __name__ == "__main__":
