@@ -13,6 +13,13 @@ TODO:
     + magnesium-ore
     + nickel-ore
     + titanium-ore
+    - tinstone
+    - zirconium-ore
+    - lead-ore
+    - tungsten-ore
+    - rare-earths
+    - zinc-ore
+    - spodumene (lithium)
   - Add icon for item group base products
   - Add fancy building (matter converter) which can build robots from iron
 
