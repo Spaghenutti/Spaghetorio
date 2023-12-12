@@ -23,6 +23,8 @@ Cr Chromium
   + chromium-ore / chromite / ferrochromium
   +r chromium-plate
 
+Co Cobalt
+
 Ni Nickel
   + nickel-ore (missing resource) (Fe,Ni)9S8
   +r nickel-ingot
