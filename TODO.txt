@@ -7,6 +7,12 @@ TODO:
   - Add python scrip for mipmaps
   - Add ores
   - Update resource_autoplace_settings and stage_counts of ores
+    + aluminum-ore
+    + chromite
+    + limestone
+    + magnesium-ore
+    + nickel-ore
+    + titanium-ore
   - Add icon for item group base products
   - Add fancy building (matter converter) which can build robots from iron
 

@@ -257,7 +257,7 @@ data:extend({
   {
     type = "item",
     name = "cobalt-sulfate",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+    icon = "__Spaghenutti__/graphics/dummy/dummy-item-aluminum-ore.png",
     icon_size = 128, icon_mipmaps = 4,
     subgroup = "raw-resource",
     order = "[cobalt-sulfate]",
@@ -589,7 +589,7 @@ data:extend({
   {
     type = "item",
     name = "cobalt-billet",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+    icon = "__Spaghenutti__/graphics/dummy/dummy-item-alumina.png",
     icon_size = 128,
     scale = 0.5,
     subgroup = "processed-resource",
@@ -895,7 +895,7 @@ data:extend({
   {
     type = "item",
     name = "niobium-steel",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+    icon = "__Spaghenutti__/graphics/dummy/dummy-item-aluminum-sheet.png",
     icon_size = 128,
     scale = 0.5,
     subgroup = "alloy",
@@ -905,7 +905,7 @@ data:extend({
   {
     type = "item",
     name = "niobium-tin",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+    icon = "__Spaghenutti__/graphics/dummy/dummy-item-niobium-tin.png",
     icon_size = 128,
     scale = 0.5,
     subgroup = "alloy",
