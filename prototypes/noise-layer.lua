@@ -23,4 +23,32 @@ data:extend({
     type = "noise-layer",
     name = "titanium-ore"
   },
+  {
+    type = "noise-layer",
+    name = "lead-ore"
+  },
+  {
+    type = "noise-layer",
+    name = "rare-earths"
+  },
+  {
+    type = "noise-layer",
+    name = "spodumene"
+  },
+  {
+    type = "noise-layer",
+    name = "tinstone"
+  },
+  {
+    type = "noise-layer",
+    name = "tungsten-ore"
+  },
+  {
+    type = "noise-layer",
+    name = "zirconium-ore"
+  },
+  {
+    type = "noise-layer",
+    name = "zinc-ore"
+  },
 })

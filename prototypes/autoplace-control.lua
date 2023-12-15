@@ -47,4 +47,60 @@ data:extend({
     richness = true,
     order = "b[nickel-ore]"
   },
+  {
+    type = "autoplace-control",
+    name = "lead-ore",
+    localised_name = {"", "[entity=lead-ore] ", {"entity-name.lead-ore"}},
+    category = "resource",
+    richness = true,
+    order = "b[lead-ore]"
+  },
+  {
+    type = "autoplace-control",
+    name = "rare-earths",
+    localised_name = {"", "[entity=rare-earths] ", {"entity-name.rare-earths"}},
+    category = "resource",
+    richness = true,
+    order = "b[rare-earths]"
+  },
+  {
+    type = "autoplace-control",
+    name = "spodumene",
+    localised_name = {"", "[entity=spodumene] ", {"entity-name.spodumene"}},
+    category = "resource",
+    richness = true,
+    order = "b[spodumene]"
+  },
+  {
+    type = "autoplace-control",
+    name = "tinstone",
+    localised_name = {"", "[entity=tinstone] ", {"entity-name.tinstone"}},
+    category = "resource",
+    richness = true,
+    order = "b[tinstone]"
+  },
+  {
+    type = "autoplace-control",
+    name = "tungsten-ore",
+    localised_name = {"", "[entity=tungsten-ore] ", {"entity-name.tungsten-ore"}},
+    category = "resource",
+    richness = true,
+    order = "b[tungsten-ore]"
+  },
+  {
+    type = "autoplace-control",
+    name = "zinc-ore",
+    localised_name = {"", "[entity=zinc-ore] ", {"entity-name.zinc-ore"}},
+    category = "resource",
+    richness = true,
+    order = "b[zinc-ore]"
+  },
+  {
+    type = "autoplace-control",
+    name = "zirconium-ore",
+    localised_name = {"", "[entity=zirconium-ore] ", {"entity-name.zirconium-ore"}},
+    category = "resource",
+    richness = true,
+    order = "b[zirconium-ore]"
+  },
 })
