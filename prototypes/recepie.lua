@@ -1005,7 +1005,8 @@ data:extend({
     enabled = false,
     energy_required = 2.4,  -- time in seconds to make the item
     ingredients = {
-      {type = "item", name = "iron-plate", amount = 10}
+      {type = "item", name = "iron-plate", amount = 10},
+      {type = "item", name = "bolts", amount = 2}
     },
     results = {
       {type = "item", name = "connecting-rod", amount = 1}
@@ -1018,7 +1019,8 @@ data:extend({
     enabled = false,
     energy_required = 1.6,  -- time in seconds to make the item
     ingredients = {
-      {type = "item", name = "steel-plate", amount = 2}
+      {type = "item", name = "steel-plate", amount = 2},
+      {type = "item", name = "bolts", amount = 2}
     },
     results = {
       {type = "item", name = "connecting-rod", amount = 1}
