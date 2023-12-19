@@ -282,6 +282,18 @@ Intermediates
   +r quantum-gate
   - propeller (for drones i guess)
 
+Chemicals
+  - ammonia
+  - acetic acid
+  - phosphoric acid
+  - ethanol
+  - sodium hydroxade
+  - acetone
+  - methyl tert-butyl ether
+  - ammonium nitrate
+  - propene
+  - urea
+
 High tech stuff
   - boson einstein condensate
   - Nanomachines
