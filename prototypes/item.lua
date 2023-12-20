@@ -632,7 +632,7 @@ data:extend({
   {
     type = "item",
     name = "chromium-plate",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-chromium-plate.png",
+    icon = "__Spaghenutti__/graphics/icons/chromium-plate.png",
     icon_size = 128,
     scale = 0.5,
     subgroup = "raw-material",
