@@ -8,7 +8,7 @@ data:extend({
     name = "base-products",
     order = "a",
     icon = "__Spaghenutti__/graphics/dummy/dummy-group-default.png",
-    icon_size = 128,
+    icon_size = 256,
     icon_mipmaps = 2
   },
   -- move raw-resources to new item group base-products
@@ -127,7 +127,7 @@ data:extend({
     name = "science-products",
     order = "e",
     icon = "__Spaghenutti__/graphics/dummy/dummy-group-default.png",
-    icon_size = 128,
+    icon_size = 256,
     icon_mipmaps = 2
   },
   {

@@ -2,7 +2,7 @@ data:extend({
   {
     type = "technology",
     name = "aluminum-machining",  -- #ForRegEx# - technology
-    icon_size = 128,
+    icon_size = 256,
     icon = "__Spaghenutti__/graphics/dummy/dummy-technology-aluminum-machining.png",
     effects =
     {

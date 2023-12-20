@@ -4,7 +4,7 @@ data:extend({
     type = "item",
     name = "name1",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
-    icon_size = 128, icon_mipmaps = 4,
+    icon_size = 256, icon_mipmaps = 4,
     subgroup = "intermediate-product",
     order = "[name1]",
     stack_size = 50
@@ -15,7 +15,7 @@ data:extend({
     name = "name2",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
     tint = {r=1.0, g=0.2, b=0.2, a=1.0},
-    icon_size = 128,
+    icon_size = 256,
     icon_mipmaps = 4,
     pictures = {
       { size = 64, filename = "__Spaghenutti__/graphics/base/ore/ore-1.png", scale = 0.25, mipmap_count = 4, tint={r=1.0, g=0.2, b=0.2, a=1.0} },
@@ -36,14 +36,14 @@ data:extend({
     base_color = {r=0.71, g=0.71, b=0.71},
     flow_color = {r=0.71, g=71, b=0.71},
     icon = "__Spaghenutti__/graphics/dummy/dummy-fluid-default.png",
-    icon_size = 128,
+    icon_size = 256,
     order = "a[fluid]-f[name1]"
   },
   -- Technology
   {
     type = "technology",
     name = "name1",  -- #ForRegEx# - technology
-    icon_size = 128,
+    icon_size = 256,
     icon = "__Spaghenutti__/graphics/dummy/dummy-technology-default.png",
     effects =
     {
