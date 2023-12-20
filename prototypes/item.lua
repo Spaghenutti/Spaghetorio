@@ -612,7 +612,7 @@ data:extend({
   {
     type = "item",
     name = "aluminum-ingot",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/base/ingot_1.png",
+    icon = "__Spaghenutti__/graphics/icons/aluminum-ingot.png",
     icon_size = 256,
     scale = 0.25,
     subgroup = "raw-material",
@@ -1025,9 +1025,9 @@ data:extend({
   {
     type = "item",
     name = "copper-tube",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-copper-tube.png",
-    icon_size = 128,
-    scale = 0.5,
+    icon = "__Spaghenutti__/graphics/icons/copper-tube.png",
+    icon_size = 256,
+    scale = 0.25,
     subgroup = "mechanical-component",
     order = "[copper-tube]",
     stack_size = 100
