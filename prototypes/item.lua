@@ -642,7 +642,7 @@ data:extend({
   {
     type = "item",
     name = "nickel-ingot",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-nickel-ingot.png",
+    icon = "__Spaghenutti__/graphics/icons/nickel-ingot.png",
     icon_size = 256,
     scale = 0.25,
     subgroup = "raw-material",
@@ -652,7 +652,7 @@ data:extend({
   {
     type = "item",
     name = "titanium-ingot",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-titanium-ingot.png",
+    icon = "__Spaghenutti__/graphics/icons/titanium-ingot.png",
     icon_size = 256,
     scale = 0.25,
     subgroup = "raw-material",
@@ -662,7 +662,7 @@ data:extend({
   {
     type = "item",
     name = "titanium-plate",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-titanium-plate.png",
+    icon = "__Spaghenutti__/graphics/icons/titanium-plate.png",
     icon_size = 256,
     scale = 0.25,
     subgroup = "raw-material",
@@ -671,18 +671,8 @@ data:extend({
   },
   {
     type = "item",
-    name = "tin-ingots",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-tin-ingots.png",
-    icon_size = 256,
-    scale = 0.25,
-    subgroup = "raw-material",
-    order = "[tin-ingots]",
-    stack_size = 100
-  },
-  {
-    type = "item",
     name = "tin-ingot",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-tin-ingot.png",
+    icon = "__Spaghenutti__/graphics/icons/tin-ingot.png",
     icon_size = 256,
     scale = 0.25,
     subgroup = "raw-material",
@@ -692,7 +682,7 @@ data:extend({
   {
     type = "item",
     name = "tin-sheet",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-tin-sheet.png",
+    icon = "__Spaghenutti__/graphics/icons/tin-sheet.png",
     icon_size = 256,
     scale = 0.25,
     subgroup = "raw-material",
@@ -732,7 +722,7 @@ data:extend({
   {
     type = "item",
     name = "zinc-plate",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-zinc-plate.png",
+    icon = "__Spaghenutti__/graphics/icons/zinc-plate.png",
     icon_size = 256,
     scale = 0.25,
     subgroup = "raw-material",
