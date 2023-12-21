@@ -66,19 +66,6 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "coke",  -- #ForRegEx# - recepie
-    category = "smelting",
-    enabled = false,
-    energy_required = 4,  -- time in seconds to make the item
-    ingredients = {
-      {type = "item", name = "coal", amount = 2}
-    },
-    results = {
-      {type = "item", name = "coke", amount = 1}
-    }
-  },
-  {
-    type = "recipe",
     name = "graphite",  -- #ForRegEx# - recepie
     category = "smelting",
     enabled = false,
@@ -2446,3 +2433,21 @@ data:extend({
     result = "green-wire"
   },
 })
+
+if not mods["Krastorio2"] then
+  data:extend({
+    {
+      type = "recipe",
+      name = "coke",  -- #ForRegEx# - recepie
+      category = "smelting",
+      enabled = false,
+      energy_required = 4,  -- time in seconds to make the item
+      ingredients = {
+        {type = "item", name = "coal", amount = 2}
+      },
+      results = {
+        {type = "item", name = "coke", amount = 1}
+      }
+    },
+  })
+end

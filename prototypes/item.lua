@@ -278,16 +278,6 @@ data:extend({
   },
   {
     type = "item",
-    name = "coke",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-alumina.png",
-    icon_size = 256,
-    scale = 0.25,
-    subgroup = "processed-resource",
-    order = "[coke]",
-    stack_size = 100
-  },
-  {
-    type = "item",
     name = "graphite",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-graphite.png",
     icon_size = 256,
@@ -1944,3 +1934,18 @@ data:extend({
     durability_description_value = "description.science-pack-remaining-amount-value"
   },
 })
+
+if not mods["Krastorio2"] then
+  data:extend({
+    {
+      type = "item",
+      name = "coke",  -- #ForRegEx# - item
+      icon = "__Spaghenutti__/graphics/dummy/dummy-item-alumina.png",
+      icon_size = 256,
+      scale = 0.25,
+      subgroup = "processed-resource",
+      order = "[coke]",
+      stack_size = 100
+    },
+  })
+end
