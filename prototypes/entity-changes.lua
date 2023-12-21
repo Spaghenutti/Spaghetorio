@@ -70,10 +70,6 @@ data.raw.item["copper-cable"].order = "copper[copper-cable]"
 data.raw.item["iron-gear-wheel"].order = "iron[iron-gear-wheel]"
 data.raw.item["iron-stick"].order = "iron[iron-stick]"
 
--- Lock items for game start
-data.raw.item["iron-gear-wheel"].enabled = false
-data.raw.item["iron-stick"].enabled = false
-
 -- data.raw.tool["automation-science-pack"].subgroup = "basic-science"
 -- data.raw.tool["logistic-science-pack"].subgroup = "basic-science"
 -- data.raw.tool["military-science-pack"].subgroup = "basic-science"
