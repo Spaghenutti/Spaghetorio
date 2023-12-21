@@ -46,11 +46,11 @@ data.raw.item["electronic-circuit"].subgroup = "electrical-optical-component"
 data.raw.item["advanced-circuit"].subgroup = "electrical-optical-component"
 data.raw.item["processing-unit"].subgroup = "electrical-optical-component"  -- idea: use this as processor and change icon
 
-data.raw.item["solid-fuel"].subgroup = "fuel"
-data.raw.item["rocket-fuel"].subgroup = "fuel"
-data.raw.item["nuclear-fuel"].subgroup = "fuel"
-data.raw.item["uranium-fuel-cell"].subgroup = "fuel"
-data.raw.item["used-up-uranium-fuel-cell"].subgroup = "fuel"
+data.raw.item["solid-fuel"].subgroup = "fuel-processing"
+data.raw.item["rocket-fuel"].subgroup = "fuel-processing"
+data.raw.item["nuclear-fuel"].subgroup = "fuel-processing"
+data.raw.item["uranium-fuel-cell"].subgroup = "fuel-processing"
+data.raw.item["used-up-uranium-fuel-cell"].subgroup = "fuel-processing"
 
 data.raw.item["sulfur"].subgroup = "processed-resource"
 data.raw.item["uranium-238"].subgroup = "processed-resource"

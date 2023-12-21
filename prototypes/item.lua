@@ -1812,7 +1812,7 @@ data:extend({
     name = "uranium-fuel-rod",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-uranium-fuel-rod.png",
     icon_size = 256, icon_mipmaps = 4,
-    subgroup = "fuel",
+    subgroup = "fuel-processing",
     order = "[uranium-fuel-rod]",
     stack_size = 50
   },
@@ -1821,7 +1821,7 @@ data:extend({
     name = "used-up-uranium-fuel-rod",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-used-up-uranium-fuel-rod.png",
     icon_size = 256, icon_mipmaps = 4,
-    subgroup = "fuel",
+    subgroup = "fuel-processing",
     order = "[used-up-uranium-fuel-rod]",
     stack_size = 50
   },
@@ -1830,7 +1830,7 @@ data:extend({
     name = "plutonium-fuel-rod",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-plutonium-fuel-rod.png",
     icon_size = 256, icon_mipmaps = 4,
-    subgroup = "fuel",
+    subgroup = "fuel-processing",
     order = "[plutonium-fuel-rod]",
     stack_size = 50
   },
@@ -1839,7 +1839,7 @@ data:extend({
     name = "used-up-plutonium-fuel-rod",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-used-up-plutonium-fuel-rod.png",
     icon_size = 256, icon_mipmaps = 4,
-    subgroup = "fuel",
+    subgroup = "fuel-processing",
     order = "[used-up-plutonium-fuel-rod]",
     stack_size = 50
   },

@@ -90,7 +90,7 @@ data:extend({
   },
   {
     type = "item-subgroup",
-    name = "fuel",
+    name = "fuel-processing",
     group = "intermediate-products",
     order = "i"
   },
