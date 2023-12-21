@@ -175,23 +175,6 @@ data:extend({
   },
   {
     type = "item",
-    name = "rare-earths",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-rare-earths.png",
-    tint = {r=0.4, g=0.3, b=0.3, a=1.0},
-    icon_size = 256,
-    icon_mipmaps = 4,
-    pictures = {
-      { size = 64, filename = "__Spaghenutti__/graphics/base/ore/ore-1.png", scale = 0.25, mipmap_count = 4, tint={r=1.0, g=0.2, b=0.2, a=1.0} },
-      { size = 64, filename = "__Spaghenutti__/graphics/base/ore/ore-2.png", scale = 0.25, mipmap_count = 4, tint={r=1.0, g=0.2, b=0.2, a=1.0} },
-      { size = 64, filename = "__Spaghenutti__/graphics/base/ore/ore-3.png", scale = 0.25, mipmap_count = 4, tint={r=1.0, g=0.2, b=0.2, a=1.0} },
-      { size = 64, filename = "__Spaghenutti__/graphics/base/ore/ore-4.png", scale = 0.25, mipmap_count = 4, tint={r=1.0, g=0.2, b=0.2, a=1.0} }
-    },
-    subgroup = "raw-resource",
-    order = "[rare-earths]",
-    stack_size = 200
-  },
-  {
-    type = "item",
     name = "zinc-ore",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-zinc-ore.png",
     tint = {r=0.4, g=0.3, b=0.3, a=1.0},

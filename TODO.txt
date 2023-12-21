@@ -17,7 +17,7 @@ TODO:
     + zirconium-ore
     + lead-ore
     + tungsten-ore
-    + rare-earths
+    - rare-earths
     + zinc-ore
     + spodumene (lithium)
   - Add icon for item group base products

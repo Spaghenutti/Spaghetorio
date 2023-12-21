@@ -791,26 +791,6 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "rare-earth-processing",  -- #ForRegEx# - recepie
-    icon = "__Spaghenutti__/graphics/dummy/dummy-recepie-default.png",
-    icon_size = 256,
-    scale = 0.25,
-    category = "crafting",
-    subgroup = "raw-resource",
-    enabled = false,
-    energy_required = 1.6,  -- time in seconds to make the item
-    ingredients = {
-      {type = "item", name = "rare-earths", amount = 1},
-    },
-    results = {
-      {type = "item", name = "yittrium", probability = 16, amount = 1},
-      {type = "item", name = "lanthanum", probability = 22, amount = 1},
-      {type = "item", name = "neodymium", probability = 24, amount = 1},
-      {type = "item", name = "cerium", probability = 38, amount = 1},
-    }
-  },
-  {
-    type = "recipe",
     name = "palladium",  -- #ForRegEx# - recepie
     icon = "__Spaghenutti__/graphics/dummy/dummy-recepie-default.png",
     icon_size = 256,
@@ -950,7 +930,7 @@ data:extend({
     type = "recipe",
     name = "copper-tube",  -- #ForRegEx# - recepie
     category = "crafting",
-    enabled = true,
+    enabled = false,
     energy_required = 0.8,  -- time in seconds to make the item
     ingredients = {
       {type = "item", name = "copper-plate", amount = 1}
@@ -976,7 +956,7 @@ data:extend({
     type = "recipe",
     name = "spring",  -- #ForRegEx# - recepie
     category = "crafting",
-    enabled = true,
+    enabled = false,
     energy_required = 1.6,  -- time in seconds to make the item
     ingredients = {
       {type = "item", name = "iron-stick", amount = 2}
@@ -1017,7 +997,7 @@ data:extend({
     type = "recipe",
     name = "bolts",  -- #ForRegEx# - recepie
     category = "crafting",
-    enabled = true,
+    enabled = false,
     energy_required = 1.2,  -- time in seconds to make the item
     ingredients = {
       {type = "item", name = "iron-plate", amount = 3}

@@ -29,10 +29,6 @@ data:extend({
   },
   {
     type = "noise-layer",
-    name = "rare-earths"
-  },
-  {
-    type = "noise-layer",
     name = "spodumene"
   },
   {

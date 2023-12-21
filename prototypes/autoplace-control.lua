@@ -57,14 +57,6 @@ data:extend({
   },
   {
     type = "autoplace-control",
-    name = "rare-earths",
-    localised_name = {"", "[entity=rare-earths] ", {"entity-name.rare-earths"}},
-    category = "resource",
-    richness = true,
-    order = "b[rare-earths]"
-  },
-  {
-    type = "autoplace-control",
     name = "spodumene",
     localised_name = {"", "[entity=spodumene] ", {"entity-name.spodumene"}},
     category = "resource",

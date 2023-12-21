@@ -18,3 +18,12 @@
 -- data:extend({stone_furnace})
 
 -- data.raw.furnace["stone-furnace"].type = "furnace"
+
+data.raw.item["copper-plate"].icon = "__base__/graphics/icons/copper-plate.png"
+data.raw.item["iron-plate"].icon = "__base__/graphics/icons/iron-plate.png"
+data.raw.item["iron-gear-wheel"].icon = "__base__/graphics/icons/iron-gear-wheel.png"
+
+data.raw.item["iron-gear-wheel"].enabled = false
+data.raw.item["iron-beam"].enabled = false
+
+data.raw.item["iron-beam"].subgroup = "mechanical-component"
