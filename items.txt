@@ -4,7 +4,7 @@ Al Aluminum
 	+rg aluminum-sheet
 	+rg aluminum-ingot
 	+r aluminum-frames
-	+r aluminum-cable
+	+rg aluminum-cable
 
 C Carbon
   +r coke

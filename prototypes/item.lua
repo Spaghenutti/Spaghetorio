@@ -1005,9 +1005,9 @@ data:extend({
   {
     type = "item",
     name = "aluminum-cable",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-aluminum-frame.png",
-    icon_size = 256,
-    scale = 0.25,
+    icon = "__Spaghenutti__/graphics/base/cable.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
     subgroup = "mechanical-component",
     order = "[aluminum-cable]",
     stack_size = 100
@@ -1019,7 +1019,7 @@ data:extend({
     icon_size = 256,
     scale = 0.25,
     subgroup = "mechanical-component",
-    order = "[copper-tube]",
+    order = "copper[copper-tube]",
     stack_size = 100
   },
   {
@@ -1035,11 +1035,11 @@ data:extend({
   {
     type = "item",
     name = "spring",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-spring.png",
+    icon = "__Spaghenutti__/graphics/icons/spring.png",
     icon_size = 256,
     scale = 0.25,
     subgroup = "mechanical-component",
-    order = "[spring]",
+    order = "iron[spring]",
     stack_size = 100
   },
   {
@@ -1075,11 +1075,16 @@ data:extend({
   {
     type = "item",
     name = "bolts",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-bolts.png",
+    icon = "__Spaghenutti__/graphics/icons/bolts-2.png",
     icon_size = 256,
     scale = 0.25,
+    pictures = {
+      {size = 256, filename = "__Spaghenutti__/graphics/icons/bolts-1.png", scale = 0.0625},
+      {size = 256, filename = "__Spaghenutti__/graphics/icons/bolts-2.png", scale = 0.0625},
+      {size = 256, filename = "__Spaghenutti__/graphics/icons/bolts-3.png", scale = 0.0625},
+    },
     subgroup = "mechanical-component",
-    order = "[bolts]",
+    order = "iron[bolts]",
     stack_size = 100
   },
   {

@@ -24,7 +24,7 @@ if not mods["Krastorio2"] then
       -- Except stone-furnace
       if not (value.name == "stone-furnace") then
         furnace.type = "assembling-machine"
-        table.insert(furnace.crafting_categories, "advanced-crafting")
+        table.insert(furnace.crafting_categories, "intermediate-smelting")
 
         data.raw.furnace[key] = nil
         data:extend({furnace})
@@ -60,6 +60,15 @@ data.raw.item["battery"].subgroup = "intermediate-product"
 
 data.raw.item["explosives"].subgroup = "ammo"
 data.raw.item["explosives"].order = "a-a"
+
+-- Change order of items
+data.raw.item["copper-plate"].order = "a-plate[copper]"
+data.raw.item["iron-plate"].order = "a-plate[iron]"
+
+data.raw.item["copper-cable"].order = "copper[copper-cable]"
+
+data.raw.item["iron-gear-wheel"].order = "iron[iron-gear-wheel]"
+data.raw.item["iron-stick"].order = "iron[iron-stick]"
 
 -- data.raw.tool["automation-science-pack"].subgroup = "basic-science"
 -- data.raw.tool["logistic-science-pack"].subgroup = "basic-science"

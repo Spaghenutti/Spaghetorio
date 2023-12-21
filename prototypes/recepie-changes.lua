@@ -488,6 +488,58 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "electric-mining-drill",
+    normal =
+    {
+      energy_required = 6,
+      ingredients =
+      {
+        {"electronic-circuit", 3},
+        {"iron-gear-wheel", 10},
+        {"copper-cable", 12},
+        {"iron-plate", 24}
+      },
+      result = "electric-mining-drill"
+    },
+    expensive =
+    {
+      energy_required = 10,
+      ingredients =
+      {
+        {"electronic-circuit", 5},
+        {"iron-gear-wheel", 16},
+        {"copper-cable", 24},
+        {"iron-plate", 40}
+      },
+      result = "electric-mining-drill"
+    }
+  },
+  {
+    type = "recipe",
+    name = "burner-mining-drill",
+    normal =
+    {
+      energy_required = 6,
+      ingredients =
+      {
+        {"stone-furnace", 2},
+        {"iron-plate", 20}
+      },
+      result = "burner-mining-drill"
+    },
+    expensive =
+    {
+      energy_required = 8,
+      ingredients =
+      {
+        {"stone-furnace", 4},
+        {"iron-plate", 36}
+      },
+      result = "burner-mining-drill"
+    }
+  },
+  {
+    type = "recipe",
     name = "inserter",
     ingredients =
     {

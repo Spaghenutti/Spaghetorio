@@ -1030,7 +1030,7 @@ data:extend({
     type = "recipe",
     name = "bolts",  -- #ForRegEx# - recepie
     category = "crafting",
-    enabled = false,
+    enabled = true,
     energy_required = 1.2,  -- time in seconds to make the item
     ingredients = {
       {type = "item", name = "iron-plate", amount = 3}
@@ -2377,9 +2377,10 @@ data:extend({
   {
     type = "recipe",
     name = "stone-brick-from-limestone",
-    category = "smelting",
+    category = "intermediate-smelting",
     energy_required = 3.2,
-    enabled = true,
+    enabled = false,
+    hide_from_player_crafting = true,
     ingredients = {
       {"limestone", 2}
     },
@@ -2388,9 +2389,10 @@ data:extend({
   {
     type = "recipe",
     name = "stone-brick-from-sand",
-    category = "smelting",
+    category = "intermediate-smelting",
     energy_required = 2,
-    enabled = true,
+    enabled = false,
+    hide_from_player_crafting = true,
     ingredients = {
       {"sand", 8}
     },

@@ -19,10 +19,10 @@
 data:extend({
   {
     type = "recipe-category",
-    name = "basic-crafting"
+    name = "high-energy-physics"
   },
   {
     type = "recipe-category",
-    name = "high-energy-physics"
+    name = "intermediate-smelting"
   }
 })
