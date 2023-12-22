@@ -182,10 +182,10 @@ Alloys
 Basic Intermediates
   +rg copper-tube
   +r pressure-tube
-  +r spring
+  +rg spring
   - mechanical components
     +rr connecting-rod
-    +r bolts (nuts and bolts)
+    +rg bolts (nuts and bolts)
     - gear
       +r steel-gear-wheel
       +r stainless-steel-gear-wheel

@@ -24,6 +24,7 @@ ITEMS_PATH = f"{PATH_PREFIX}prototypes/item.lua"
 FLUIDS_PATH = f"{PATH_PREFIX}prototypes/fluid.lua"
 RECIPES_PATH = f"{PATH_PREFIX}prototypes/recipe.lua"
 TECHNOLOGIES_PATH = f"{PATH_PREFIX}prototypes/technology.lua"
+TECHNOLOGIES_AAI_AND_KRASTORIO_PATH = f"{PATH_PREFIX}compatibility/aai-and-krastorio-technology.lua"
 
 NAMES_REGEX = r"[ ,\t\n]name = \"(.*?)\",  -- #ForRegEx#"  # Extend regex to catch the type. The flag looks something like -- #ForRegEx# - <type>
 
@@ -75,6 +76,10 @@ def generate_images():
     # Generate technology images
     generate_default_image(TECHNOLOGY_BACKGROUND_COLOR, "technology")
     generate_dummy_images(TECHNOLOGIES_PATH, NAMES_REGEX, TECHNOLOGY_BACKGROUND_COLOR, "technology")
+
+    # Generate technology images
+    generate_default_image(TECHNOLOGY_BACKGROUND_COLOR, "technology")
+    generate_dummy_images(TECHNOLOGIES_AAI_AND_KRASTORIO_PATH, NAMES_REGEX, TECHNOLOGY_BACKGROUND_COLOR, "technology")
 
 
 if __name__ == "__main__":

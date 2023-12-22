@@ -30,3 +30,4 @@ if __name__ == "__main__":
     replace_default_images(FLUIDS_PATH, "fluid")
     # replace_default_images(RECIPES_PATH, "recipe")
     replace_default_images(TECHNOLOGIES_PATH, "technology")
+    replace_default_images(TECHNOLOGIES_AAI_AND_KRASTORIO_PATH, "technology")

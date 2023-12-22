@@ -32,6 +32,21 @@ data:extend({
     results = {
       {type = "item", name = "burner-lab", amount = 1}
     }
+  },
+  {
+    type = "recipe",
+    name = "motor",
+    category = "crafting",
+    enabled = true,
+    energy_required = 2,
+    ingredients = {
+      {type="item", name="bolts", amount=3},
+      {type="item", name="iron-plate", amount=2},
+      {type="item", name="iron-gear-wheel", amount=3},
+    },
+    results = {
+      {type = "item", name = "motor", amount = 1}
+    }
   }
 })
 
@@ -43,6 +58,7 @@ util.disable_recipe("inserter-parts")
 util.disable_recipe("motor")
 util.disable_recipe("iron-gear-wheel")
 util.disable_recipe("burner-inserter")
+util.disable_recipe("rare-metals")
 
 -- Why cant i disable this items?
-util.disable_recipe("transport-belt")
+-- util.disable_recipe("transport-belt")
