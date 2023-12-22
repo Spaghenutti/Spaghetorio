@@ -1,7 +1,7 @@
 data:extend({
   {
     type = "recipe",
-    name = "alumina",  -- #ForRegEx# - recepie
+    name = "alumina",  -- #ForRegEx# - recipe
     category = "smelting",
     enabled = false,
     energy_required = 4,  -- time in seconds to make the item
@@ -14,7 +14,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "aluminum-sheet",  -- #ForRegEx# - recepie
+    name = "aluminum-sheet",  -- #ForRegEx# - recipe
     category = "smelting",
     enabled = false,
     energy_required = 4,  -- time in seconds to make the item
@@ -27,7 +27,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "aluminum-ingot",  -- #ForRegEx# - recepie
+    name = "aluminum-ingot",  -- #ForRegEx# - recipe
     category = "smelting",
     enabled = false,
     energy_required = 5,  -- time in seconds to make the item
@@ -40,7 +40,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "aluminum-frame",  -- #ForRegEx# - recepie
+    name = "aluminum-frame",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 2,  -- time in seconds to make the item
@@ -53,7 +53,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "aluminum-cable",  -- #ForRegEx# - recepie
+    name = "aluminum-cable",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 3,  -- time in seconds to make the item
@@ -66,7 +66,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "graphite",  -- #ForRegEx# - recepie
+    name = "graphite",  -- #ForRegEx# - recipe
     category = "smelting",
     enabled = false,
     energy_required = 6,  -- time in seconds to make the item
@@ -79,7 +79,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "carbon-nanotubes",  -- #ForRegEx# - recepie
+    name = "carbon-nanotubes",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 10,  -- time in seconds to make the item
@@ -92,7 +92,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "graphene",  -- #ForRegEx# - recepie
+    name = "graphene",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 8,  -- time in seconds to make the item
@@ -105,8 +105,8 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "calcium-carbonate",  -- #ForRegEx# - recepie
-    icon = "__Spaghenutti__/graphics/dummy/dummy-recepie-default.png",
+    name = "calcium-carbonate",  -- #ForRegEx# - recipe
+    icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
     icon_size = 256,
     scale = 0.25,
     category = "chemistry",
@@ -123,8 +123,8 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "calcium-and-fluorine",  -- #ForRegEx# - recepie
-    icon = "__Spaghenutti__/graphics/dummy/dummy-recepie-default.png",
+    name = "calcium-and-fluorine",  -- #ForRegEx# - recipe
+    icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
     icon_size = 256,
     scale = 0.25,
     category = "chemistry",
@@ -160,8 +160,8 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sodium-and-chlorine",  -- #ForRegEx# - recepie
-    icon = "__Spaghenutti__/graphics/dummy/dummy-recepie-default.png",
+    name = "sodium-and-chlorine",  -- #ForRegEx# - recipe
+    icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
     icon_size = 256,
     scale = 0.25,
     category = "chemistry",
@@ -203,7 +203,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "magnesium-chloride",  -- #ForRegEx# - recepie
+    name = "magnesium-chloride",  -- #ForRegEx# - recipe
     category = "chemistry",
     enabled = false,
     energy_required = 4,  -- time in seconds to make the item
@@ -216,8 +216,8 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "magnesium-slab",  -- #ForRegEx# - recepie
-    icon = "__Spaghenutti__/graphics/dummy/dummy-recepie-default.png",
+    name = "magnesium-slab",  -- #ForRegEx# - recipe
+    icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
     icon_size = 256,
     scale = 0.25,
     category = "chemistry",
@@ -240,7 +240,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "titanium-cloride",  -- #ForRegEx# - recepie
+    name = "titanium-cloride",  -- #ForRegEx# - recipe
     category = "smelting",
     enabled = false,
     energy_required = 3.2,  -- time in seconds to make the item
@@ -253,8 +253,8 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "titanium-sponge",  -- #ForRegEx# - recepie
-    icon = "__Spaghenutti__/graphics/dummy/dummy-recepie-default.png",
+    name = "titanium-sponge",  -- #ForRegEx# - recipe
+    icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
     icon_size = 256,
     scale = 0.25,
     category = "crafting",
@@ -272,7 +272,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "titanium-ingot",  -- #ForRegEx# - recepie
+    name = "titanium-ingot",  -- #ForRegEx# - recipe
     category = "smelting",
     enabled = false,
     energy_required = 3.6,  -- time in seconds to make the item
@@ -285,7 +285,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "titanium-plate",  -- #ForRegEx# - recepie
+    name = "titanium-plate",  -- #ForRegEx# - recipe
     category = "smelting",
     enabled = false,
     energy_required = 4,  -- time in seconds to make the item
@@ -298,7 +298,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "titanium-frame",  -- #ForRegEx# - recepie
+    name = "titanium-frame",  -- #ForRegEx# - recipe
     category = "smelting",
     enabled = false,
     energy_required = 2.4,  -- time in seconds to make the item
@@ -311,7 +311,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "titanium-nitride",  -- #ForRegEx# - recepie
+    name = "titanium-nitride",  -- #ForRegEx# - recipe
     category = "chemistry",
     enabled = false,
     energy_required = 2.4,  -- time in seconds to make the item
@@ -325,7 +325,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "titanium-carbide",  -- #ForRegEx# - recepie
+    name = "titanium-carbide",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 2.4,  -- time in seconds to make the item
@@ -339,7 +339,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sand",  -- #ForRegEx# - recepie
+    name = "sand",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 2,  -- time in seconds to make the item
@@ -352,8 +352,8 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "quartz",  -- #ForRegEx# - recepie
-    icon = "__Spaghenutti__/graphics/dummy/dummy-recepie-default.png",
+    name = "quartz",  -- #ForRegEx# - recipe
+    icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
     icon_size = 256,
     scale = 0.25,
     category = "chemistry",
@@ -376,7 +376,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "silica",  -- #ForRegEx# - recepie
+    name = "silica",  -- #ForRegEx# - recipe
     category = "smelting",
     enabled = false,
     energy_required = 3.2,  -- time in seconds to make the item
@@ -389,7 +389,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "silicon",  -- #ForRegEx# - recepie
+    name = "silicon",  -- #ForRegEx# - recipe
     category = "smelting",
     enabled = false,
     energy_required = 4,  -- time in seconds to make the item
@@ -402,8 +402,8 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "high-purity-silicon",  -- #ForRegEx# - recepie
-    icon = "__Spaghenutti__/graphics/dummy/dummy-recepie-default.png",
+    name = "high-purity-silicon",  -- #ForRegEx# - recipe
+    icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
     icon_size = 256,
     scale = 0.25,
     category = "smelting",
@@ -420,7 +420,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "tin-ingot",  -- #ForRegEx# - recepie
+    name = "tin-ingot",  -- #ForRegEx# - recipe
     category = "smelting",
     enabled = false,
     energy_required = 3.2,  -- time in seconds to make the item
@@ -433,7 +433,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "tin-sheet",  -- #ForRegEx# - recepie
+    name = "tin-sheet",  -- #ForRegEx# - recipe
     category = "smelting",
     enabled = false,
     energy_required = 3.2,  -- time in seconds to make the item
@@ -446,7 +446,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "tin-sheet",  -- #ForRegEx# - recepie
+    name = "tin-sheet",  -- #ForRegEx# - recipe
     category = "smelting",
     enabled = false,
     energy_required = 3.2,  -- time in seconds to make the item
@@ -459,7 +459,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "bronze-rod",  -- #ForRegEx# - recepie
+    name = "bronze-rod",  -- #ForRegEx# - recipe
     category = "smelting",
     enabled = false,
     energy_required = 4,  -- time in seconds to make the item
@@ -473,7 +473,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "zircon",  -- #ForRegEx# - recepie
+    name = "zircon",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 10,  -- time in seconds to make the item
@@ -486,7 +486,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "zirconium-rod",  -- #ForRegEx# - recepie
+    name = "zirconium-rod",  -- #ForRegEx# - recipe
     category = "smelting",
     enabled = false,
     energy_required = 4,  -- time in seconds to make the item
@@ -499,7 +499,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "zirconia",  -- #ForRegEx# - recepie
+    name = "zirconia",  -- #ForRegEx# - recipe
     category = "smelting",
     enabled = false,
     energy_required = 3.2,  -- time in seconds to make the item
@@ -513,8 +513,8 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "zinc-plate",  -- #ForRegEx# - recepie
-    icon = "__Spaghenutti__/graphics/dummy/dummy-recepie-default.png",
+    name = "zinc-plate",  -- #ForRegEx# - recipe
+    icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
     icon_size = 256,
     scale = 0.25,
     category = "chemistry",
@@ -531,7 +531,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "lead-slab",  -- #ForRegEx# - recepie
+    name = "lead-slab",  -- #ForRegEx# - recipe
     category = "smelting",
     enabled = false,
     energy_required = 4,  -- time in seconds to make the item
@@ -544,7 +544,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "niobium-powder",  -- #ForRegEx# - recepie
+    name = "niobium-powder",  -- #ForRegEx# - recipe
     category = "chemistry",
     enabled = false,
     energy_required = 4,  -- time in seconds to make the item
@@ -558,8 +558,8 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "aqueous-niobium-tantalum",  -- #ForRegEx# - recepie
-    icon = "__Spaghenutti__/graphics/dummy/dummy-recepie-default.png",
+    name = "aqueous-niobium-tantalum",  -- #ForRegEx# - recipe
+    icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
     icon_size = 256,
     scale = 0.25,
     category = "chemistry",
@@ -578,7 +578,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "niobium-billet",  -- #ForRegEx# - recepie
+    name = "niobium-billet",  -- #ForRegEx# - recipe
     category = "chemistry",
     enabled = false,
     energy_required = 3.6,  -- time in seconds to make the item
@@ -591,7 +591,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "tantalum-billet",  -- #ForRegEx# - recepie
+    name = "tantalum-billet",  -- #ForRegEx# - recipe
     category = "chemistry",
     enabled = false,
     energy_required = 2.8,  -- time in seconds to make the item
@@ -604,7 +604,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "ammonium-paratungstate",  -- #ForRegEx# - recepie
+    name = "ammonium-paratungstate",  -- #ForRegEx# - recipe
     category = "smelting",
     enabled = false,
     energy_required = 8,  -- time in seconds to make the item
@@ -617,7 +617,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sodium-carbonate",  -- #ForRegEx# - recepie
+    name = "sodium-carbonate",  -- #ForRegEx# - recipe
     category = "smelting",
     enabled = false,
     energy_required = 4,  -- time in seconds to make the item
@@ -631,7 +631,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "tungsten-powder",  -- #ForRegEx# - recepie
+    name = "tungsten-powder",  -- #ForRegEx# - recipe
     category = "smelting",
     enabled = false,
     energy_required = 6,  -- time in seconds to make the item
@@ -645,7 +645,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "tungsten-billet",  -- #ForRegEx# - recepie
+    name = "tungsten-billet",  -- #ForRegEx# - recipe
     category = "smelting",
     enabled = false,
     energy_required = 6,  -- time in seconds to make the item
@@ -658,7 +658,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "tungsten-carbide",  -- #ForRegEx# - recepie
+    name = "tungsten-carbide",  -- #ForRegEx# - recipe
     category = "smelting",
     enabled = false,
     energy_required = 20,  -- time in seconds to make the item
@@ -672,7 +672,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "cobalt-billet",  -- #ForRegEx# - recepie
+    name = "cobalt-billet",  -- #ForRegEx# - recipe
     category = "smelting",
     enabled = false,
     energy_required = 3.2,  -- time in seconds to make the item
@@ -685,7 +685,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "glass",  -- #ForRegEx# - recepie
+    name = "glass",  -- #ForRegEx# - recipe
     category = "smelting",
     enabled = false,
     energy_required = 3.2,  -- time in seconds to make the item
@@ -698,8 +698,8 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "chromium-plate",  -- #ForRegEx# - recepie
-    icon = "__Spaghenutti__/graphics/dummy/dummy-recepie-default.png",
+    name = "chromium-plate",  -- #ForRegEx# - recipe
+    icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
     icon_size = 256,
     scale = 0.25,
     category = "smelting",
@@ -716,8 +716,8 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "nickel-ingot",  -- #ForRegEx# - recepie
-    icon = "__Spaghenutti__/graphics/dummy/dummy-recepie-default.png",
+    name = "nickel-ingot",  -- #ForRegEx# - recipe
+    icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
     icon_size = 256,
     scale = 0.25,
     category = "smelting",
@@ -734,8 +734,8 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "gold",  -- #ForRegEx# - recepie
-    icon = "__Spaghenutti__/graphics/dummy/dummy-recepie-default.png",
+    name = "gold",  -- #ForRegEx# - recipe
+    icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
     icon_size = 256,
     scale = 0.25,
     category = "chemistry",
@@ -753,8 +753,8 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "silver-palladium",  -- #ForRegEx# - recepie
-    icon = "__Spaghenutti__/graphics/dummy/dummy-recepie-default.png",
+    name = "silver-palladium",  -- #ForRegEx# - recipe
+    icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
     icon_size = 256,
     scale = 0.25,
     category = "crafting",
@@ -772,8 +772,8 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "platinum-iridium",  -- #ForRegEx# - recepie
-    icon = "__Spaghenutti__/graphics/dummy/dummy-recepie-default.png",
+    name = "platinum-iridium",  -- #ForRegEx# - recipe
+    icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
     icon_size = 256,
     scale = 0.25,
     category = "crafting",
@@ -791,8 +791,8 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "palladium",  -- #ForRegEx# - recepie
-    icon = "__Spaghenutti__/graphics/dummy/dummy-recepie-default.png",
+    name = "palladium",  -- #ForRegEx# - recipe
+    icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
     icon_size = 256,
     scale = 0.25,
     category = "crafting",
@@ -810,7 +810,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "stainless-steel",  -- #ForRegEx# - recepie
+    name = "stainless-steel",  -- #ForRegEx# - recipe
     category = "smelting",
     enabled = false,
     energy_required = 12,  -- time in seconds to make the item
@@ -825,7 +825,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "duralumin",  -- #ForRegEx# - recepie
+    name = "duralumin",  -- #ForRegEx# - recipe
     category = "smelting",
     enabled = false,
     energy_required = 16,  -- time in seconds to make the item
@@ -840,7 +840,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "aluminum-brass",  -- #ForRegEx# - recepie
+    name = "aluminum-brass",  -- #ForRegEx# - recipe
     category = "smelting",
     enabled = false,
     energy_required = 16,  -- time in seconds to make the item
@@ -856,7 +856,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "inconel",  -- #ForRegEx# - recepie
+    name = "inconel",  -- #ForRegEx# - recipe
     category = "smelting",
     enabled = false,
     energy_required = 16,  -- time in seconds to make the item
@@ -871,7 +871,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "TiAlSn",  -- #ForRegEx# - recepie
+    name = "TiAlSn",  -- #ForRegEx# - recipe
     category = "smelting",
     enabled = false,
     energy_required = 14,  -- time in seconds to make the item
@@ -886,7 +886,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "TiNb",  -- #ForRegEx# - recepie
+    name = "TiNb",  -- #ForRegEx# - recipe
     category = "smelting",
     enabled = false,
     energy_required = 8,  -- time in seconds to make the item
@@ -900,7 +900,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "niobium-steel",  -- #ForRegEx# - recepie
+    name = "niobium-steel",  -- #ForRegEx# - recipe
     category = "smelting",
     enabled = false,
     energy_required = 24,  -- time in seconds to make the item
@@ -914,7 +914,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "niobium-tin",  -- #ForRegEx# - recepie
+    name = "niobium-tin",  -- #ForRegEx# - recipe
     category = "smelting",
     enabled = false,
     energy_required = 4,  -- time in seconds to make the item
@@ -928,7 +928,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "copper-tube",  -- #ForRegEx# - recepie
+    name = "copper-tube",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 0.8,  -- time in seconds to make the item
@@ -941,7 +941,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pressure-tube",  -- #ForRegEx# - recepie
+    name = "pressure-tube",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 1.6,  -- time in seconds to make the item
@@ -954,7 +954,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "spring",  -- #ForRegEx# - recepie
+    name = "spring",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 1.6,  -- time in seconds to make the item
@@ -967,7 +967,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "connecting-rod-from-iron",  -- #ForRegEx# - recepie
+    name = "connecting-rod-from-iron",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 2.4,  -- time in seconds to make the item
@@ -981,7 +981,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "connecting-rod-from-steel",  -- #ForRegEx# - recepie
+    name = "connecting-rod-from-steel",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 1.6,  -- time in seconds to make the item
@@ -995,7 +995,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "bolts",  -- #ForRegEx# - recepie
+    name = "bolts",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 1.2,  -- time in seconds to make the item
@@ -1008,7 +1008,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "bearing",  -- #ForRegEx# - recepie
+    name = "bearing",  -- #ForRegEx# - recipe
     category = "crafting-with-fluid",
     enabled = false,
     energy_required = 2.4,  -- time in seconds to make the item
@@ -1023,7 +1023,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "mirror",  -- #ForRegEx# - recepie
+    name = "mirror",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 2.8,  -- time in seconds to make the item
@@ -1037,7 +1037,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "lens",  -- #ForRegEx# - recepie
+    name = "lens",  -- #ForRegEx# - recipe
     category = "crafting-with-fluid",
     enabled = false,
     energy_required = 2,  -- time in seconds to make the item
@@ -1051,7 +1051,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "infra-red-filter",  -- #ForRegEx# - recepie
+    name = "infra-red-filter",  -- #ForRegEx# - recipe
     category = "crafting-with-fluid",
     enabled = false,
     energy_required = 1.6,  -- time in seconds to make the item
@@ -1065,7 +1065,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "glass-fiber",  -- #ForRegEx# - recepie
+    name = "glass-fiber",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 8,  -- time in seconds to make the item
@@ -1080,7 +1080,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "resistor",  -- #ForRegEx# - recepie
+    name = "resistor",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 2,  -- time in seconds to make the item
@@ -1094,7 +1094,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "capacitor-from-aluminum",  -- #ForRegEx# - recepie
+    name = "capacitor-from-aluminum",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 3.2,  -- time in seconds to make the item
@@ -1108,7 +1108,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "capacitor-from-niobium",  -- #ForRegEx# - recepie
+    name = "capacitor-from-niobium",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 3.2,  -- time in seconds to make the item
@@ -1122,7 +1122,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "capacitor-from-tantalum",  -- #ForRegEx# - recepie
+    name = "capacitor-from-tantalum",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 4,  -- time in seconds to make the item
@@ -1136,7 +1136,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "diode",  -- #ForRegEx# - recepie
+    name = "diode",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 2,  -- time in seconds to make the item
@@ -1150,7 +1150,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "transistor",  -- #ForRegEx# - recepie
+    name = "transistor",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 2.8,  -- time in seconds to make the item
@@ -1164,7 +1164,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "light-emitting-diode",  -- #ForRegEx# - recepie
+    name = "light-emitting-diode",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 2.8,  -- time in seconds to make the item
@@ -1179,7 +1179,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "coil",  -- #ForRegEx# - recepie
+    name = "coil",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 2,  -- time in seconds to make the item
@@ -1193,7 +1193,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "kevlar",  -- #ForRegEx# - recepie
+    name = "kevlar",  -- #ForRegEx# - recipe
     category = "crafting-with-fluid",
     enabled = false,
     energy_required = 4.8,  -- time in seconds to make the item
@@ -1207,7 +1207,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "composites",  -- #ForRegEx# - recepie
+    name = "composites",  -- #ForRegEx# - recipe
     category = "crafting-with-fluid",
     enabled = false,
     energy_required = 3.2,  -- time in seconds to make the item
@@ -1221,7 +1221,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "polymer",  -- #ForRegEx# - recepie
+    name = "polymer",  -- #ForRegEx# - recipe
     category = "chemistry",
     enabled = false,
     energy_required = 4,  -- time in seconds to make the item
@@ -1236,7 +1236,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "epoxy",  -- #ForRegEx# - recepie
+    name = "epoxy",  -- #ForRegEx# - recipe
     category = "chemistry",
     enabled = false,
     energy_required = 4,  -- time in seconds to make the item
@@ -1251,7 +1251,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "solder-from-tin-sheet",  -- #ForRegEx# - recepie
+    name = "solder-from-tin-sheet",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 2.4,  -- time in seconds to make the item
@@ -1265,7 +1265,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "solder-from-tin-ingot",  -- #ForRegEx# - recepie
+    name = "solder-from-tin-ingot",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 4.8,  -- time in seconds to make the item
@@ -1279,7 +1279,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "silver-solder",  -- #ForRegEx# - recepie
+    name = "silver-solder",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 16,  -- time in seconds to make the item
@@ -1293,7 +1293,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "empty-circuit-board",  -- #ForRegEx# - recepie
+    name = "empty-circuit-board",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 3.6,  -- time in seconds to make the item
@@ -1309,7 +1309,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "circuit-board",  -- #ForRegEx# - recepie
+    name = "circuit-board",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 3.6,  -- time in seconds to make the item
@@ -1326,7 +1326,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "integrated-circuit",  -- #ForRegEx# - recepie
+    name = "integrated-circuit",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 3.2,  -- time in seconds to make the item
@@ -1341,7 +1341,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "integrated-circuit",  -- #ForRegEx# - recepie
+    name = "integrated-circuit",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 3.6,  -- time in seconds to make the item
@@ -1356,7 +1356,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "memory-chip",  -- #ForRegEx# - recepie
+    name = "memory-chip",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 4,  -- time in seconds to make the item
@@ -1373,7 +1373,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "antenna-chip",  -- #ForRegEx# - recepie
+    name = "antenna-chip",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 4.4,  -- time in seconds to make the item
@@ -1389,7 +1389,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "processor",  -- #ForRegEx# - recepie
+    name = "processor",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 6,  -- time in seconds to make the item
@@ -1405,7 +1405,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "cmos",  -- #ForRegEx# - recepie
+    name = "cmos",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 6,  -- time in seconds to make the item
@@ -1422,7 +1422,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "compute-unit",  -- #ForRegEx# - recepie
+    name = "compute-unit",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 2,  -- time in seconds to make the item
@@ -1440,7 +1440,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "laser",  -- #ForRegEx# - recepie
+    name = "laser",  -- #ForRegEx# - recipe
     category = "crafting-with-fluid",
     enabled = false,
     energy_required = 4,  -- time in seconds to make the item
@@ -1457,7 +1457,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "heat-resistant-tiles",  -- #ForRegEx# - recepie
+    name = "heat-resistant-tiles",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 5.2,  -- time in seconds to make the item
@@ -1472,7 +1472,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "fabric",  -- #ForRegEx# - recepie
+    name = "fabric",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 2.4,  -- time in seconds to make the item
@@ -1485,7 +1485,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "ferrite-magnet",  -- #ForRegEx# - recepie
+    name = "ferrite-magnet",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 3.6,  -- time in seconds to make the item
@@ -1499,7 +1499,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "neodymium-magnet",  -- #ForRegEx# - recepie
+    name = "neodymium-magnet",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 5,  -- time in seconds to make the item
@@ -1512,7 +1512,7 @@ data:extend({
     }
   },  {
     type = "recipe",
-    name = "electro-magnet",  -- #ForRegEx# - recepie
+    name = "electro-magnet",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 1.2,  -- time in seconds to make the item
@@ -1526,7 +1526,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "superconductor",  -- #ForRegEx# - recepie
+    name = "superconductor",  -- #ForRegEx# - recipe
     category = "crafting-with-fluid",
     enabled = false,
     energy_required = 5,  -- time in seconds to make the item
@@ -1541,7 +1541,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "cement",  -- #ForRegEx# - recepie
+    name = "cement",  -- #ForRegEx# - recipe
     category = "crafting-with-fluid",
     enabled = false,
     energy_required = 2,  -- time in seconds to make the item
@@ -1557,7 +1557,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "diamond",  -- #ForRegEx# - recepie
+    name = "diamond",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 8,  -- time in seconds to make the item
@@ -1570,7 +1570,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "ceramic",  -- #ForRegEx# - recepie
+    name = "ceramic",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 3.6,  -- time in seconds to make the item
@@ -1584,7 +1584,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "crucible",  -- #ForRegEx# - recepie
+    name = "crucible",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 4,  -- time in seconds to make the item
@@ -1598,7 +1598,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "bleach",  -- #ForRegEx# - recepie
+    name = "bleach",  -- #ForRegEx# - recipe
     category = "chemistry",
     enabled = false,
     energy_required = 4,  -- time in seconds to make the item
@@ -1612,7 +1612,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "flange",  -- #ForRegEx# - recepie
+    name = "flange",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 2.4,  -- time in seconds to make the item
@@ -1626,7 +1626,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "filter",  -- #ForRegEx# - recepie
+    name = "filter",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 3.2,  -- time in seconds to make the item
@@ -1640,7 +1640,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sinter-filter",  -- #ForRegEx# - recepie
+    name = "sinter-filter",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 2.4,  -- time in seconds to make the item
@@ -1654,7 +1654,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "coolant",  -- #ForRegEx# - recepie
+    name = "coolant",  -- #ForRegEx# - recipe
     category = "chemistry",
     enabled = false,
     energy_required = 3.2,  -- time in seconds to make the item
@@ -1669,7 +1669,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "electromagnet",  -- #ForRegEx# - recepie
+    name = "electromagnet",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 3.2,  -- time in seconds to make the item
@@ -1684,7 +1684,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "cryostat",  -- #ForRegEx# - recepie
+    name = "cryostat",  -- #ForRegEx# - recipe
     category = "crafting-with-fluid",
     enabled = false,
     energy_required = 3.2,  -- time in seconds to make the item
@@ -1700,7 +1700,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "plate-heat-exchanger",  -- #ForRegEx# - recepie
+    name = "plate-heat-exchanger",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 4,  -- time in seconds to make the item
@@ -1715,7 +1715,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "spark-plug",  -- #ForRegEx# - recepie
+    name = "spark-plug",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 4,  -- time in seconds to make the item
@@ -1729,7 +1729,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "valve",  -- #ForRegEx# - recepie
+    name = "valve",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 4,  -- time in seconds to make the item
@@ -1743,7 +1743,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "gyro",  -- #ForRegEx# - recepie
+    name = "gyro",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 4,  -- time in seconds to make the item
@@ -1758,7 +1758,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "pressure-tank",  -- #ForRegEx# - recepie
+    name = "pressure-tank",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 4,  -- time in seconds to make the item
@@ -1772,7 +1772,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "high-pressure-tank",  -- #ForRegEx# - recepie
+    name = "high-pressure-tank",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 4,  -- time in seconds to make the item
@@ -1787,7 +1787,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "phosphorus",  -- #ForRegEx# - recepie
+    name = "phosphorus",  -- #ForRegEx# - recipe
     category = "chemistry",
     enabled = false,
     energy_required = 2.4,  -- time in seconds to make the item
@@ -1801,8 +1801,8 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "lithium-oxide",  -- #ForRegEx# - recepie
-    icon = "__Spaghenutti__/graphics/dummy/dummy-recepie-default.png",
+    name = "lithium-oxide",  -- #ForRegEx# - recipe
+    icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
     icon_size = 256,
     scale = 0.25,
     category = "smelting",
@@ -1820,7 +1820,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "lithium",  -- #ForRegEx# - recepie
+    name = "lithium",  -- #ForRegEx# - recipe
     category = "smelting",
     enabled = false,
     energy_required = 2.4,  -- time in seconds to make the item
@@ -1833,7 +1833,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "turbine-blade-from-stainless-steel",  -- #ForRegEx# - recepie
+    name = "turbine-blade-from-stainless-steel",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 3.2,  -- time in seconds to make the item
@@ -1846,7 +1846,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "turbine-blade-from-TiAlSn",  -- #ForRegEx# - recepie
+    name = "turbine-blade-from-TiAlSn",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 4.8,  -- time in seconds to make the item
@@ -1859,7 +1859,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "turbine-rotor",  -- #ForRegEx# - recepie
+    name = "turbine-rotor",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 30,  -- time in seconds to make the item
@@ -1877,7 +1877,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "turbine-stator",  -- #ForRegEx# - recepie
+    name = "turbine-stator",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 26,  -- time in seconds to make the item
@@ -1894,7 +1894,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "turbopump",  -- #ForRegEx# - recepie
+    name = "turbopump",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 4.8,  -- time in seconds to make the item
@@ -1911,7 +1911,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "nozzle",  -- #ForRegEx# - recepie
+    name = "nozzle",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 5.6,  -- time in seconds to make the item
@@ -1928,7 +1928,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "fuel-infector",  -- #ForRegEx# - recepie
+    name = "fuel-infector",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 1,  -- time in seconds to make the item
@@ -1942,7 +1942,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "combustion-chamber",  -- #ForRegEx# - recepie
+    name = "combustion-chamber",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 24,  -- time in seconds to make the item
@@ -1958,7 +1958,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "rocket-engine",  -- #ForRegEx# - recepie
+    name = "rocket-engine",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 4,  -- time in seconds to make the item
@@ -1974,7 +1974,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "solid-rocket-motor",  -- #ForRegEx# - recepie
+    name = "solid-rocket-motor",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 4,  -- time in seconds to make the item
@@ -1989,8 +1989,8 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "cobalt-sulfate",  -- #ForRegEx# - recepie
-    icon = "__Spaghenutti__/graphics/dummy/dummy-recepie-default.png",
+    name = "cobalt-sulfate",  -- #ForRegEx# - recipe
+    icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
     icon_size = 256,
     scale = 0.25,
     category = "crafting",
@@ -2007,7 +2007,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "control-rod",  -- #ForRegEx# - recepie
+    name = "control-rod",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 4.8,  -- time in seconds to make the item
@@ -2021,7 +2021,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "uranium-fuel-rod",  -- #ForRegEx# - recepie
+    name = "uranium-fuel-rod",  -- #ForRegEx# - recipe
     category = "crafting-with-fluid",
     enabled = false,
     energy_required = 4,  -- time in seconds to make the item
@@ -2036,8 +2036,8 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "used-up-uranium-fuel-rod-reprocessing",  -- #ForRegEx# - recepie
-    icon = "__Spaghenutti__/graphics/dummy/dummy-recepie-default.png",
+    name = "used-up-uranium-fuel-rod-reprocessing",  -- #ForRegEx# - recipe
+    icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
     icon_size = 256,
     scale = 0.25,
     category = "chemistry",
@@ -2055,7 +2055,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "plutonium-239-fuel-rod",  -- #ForRegEx# - recepie
+    name = "plutonium-239-fuel-rod",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 5.2,  -- time in seconds to make the item
@@ -2070,7 +2070,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "plutonium-240-fuel-rod",  -- #ForRegEx# - recepie
+    name = "plutonium-240-fuel-rod",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 6,  -- time in seconds to make the item
@@ -2086,8 +2086,8 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "used-up-plutonium-fuel-rod-reprocessing",  -- #ForRegEx# - recepie
-    icon = "__Spaghenutti__/graphics/dummy/dummy-recepie-default.png",
+    name = "used-up-plutonium-fuel-rod-reprocessing",  -- #ForRegEx# - recipe
+    icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
     icon_size = 256,
     scale = 0.25,
     category = "chemistry",
@@ -2107,8 +2107,8 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "plutonium-239",  -- #ForRegEx# - recepie
-    icon = "__Spaghenutti__/graphics/dummy/dummy-recepie-default.png",
+    name = "plutonium-239",  -- #ForRegEx# - recipe
+    icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
     icon_size = 256,
     scale = 0.25,
     category = "high-energy-physics",
@@ -2127,8 +2127,8 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "plutonium-240",  -- #ForRegEx# - recepie
-    icon = "__Spaghenutti__/graphics/dummy/dummy-recepie-default.png",
+    name = "plutonium-240",  -- #ForRegEx# - recipe
+    icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
     icon_size = 256,
     scale = 0.25,
     category = "high-energy-physics",
@@ -2147,7 +2147,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "reactor-core",  -- #ForRegEx# - recepie
+    name = "reactor-core",  -- #ForRegEx# - recipe
     category = "advanced-crafting",
     enabled = false,
     energy_required = 30,  -- time in seconds to make the item
@@ -2165,7 +2165,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "heatsink",  -- #ForRegEx# - recepie
+    name = "heatsink",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 3,  -- time in seconds to make the item
@@ -2179,7 +2179,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "compute-unit",  -- #ForRegEx# - recepie
+    name = "compute-unit",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 6,  -- time in seconds to make the item
@@ -2196,7 +2196,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "advanced-compute-unit",  -- #ForRegEx# - recepie
+    name = "advanced-compute-unit",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 8,  -- time in seconds to make the item
@@ -2213,7 +2213,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "cubit",  -- #ForRegEx# - recepie
+    name = "cubit",  -- #ForRegEx# - recipe
     category = "crafting-with-fluid",
     enabled = false,
     energy_required = 0.4,  -- time in seconds to make the item
@@ -2227,7 +2227,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "quantum-data-plane",  -- #ForRegEx# - recepie
+    name = "quantum-data-plane",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 30,  -- time in seconds to make the item
@@ -2243,7 +2243,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "quantum-gate",  -- #ForRegEx# - recepie
+    name = "quantum-gate",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 8,  -- time in seconds to make the item
@@ -2258,7 +2258,7 @@ data:extend({
     }
   },
   ------------------------------------------------------------------------------
-  -- Alternate recepies for vanilla items
+  -- Alternate recipes for vanilla items
   ------------------------------------------------------------------------------
   {
     type = "recipe",
@@ -2418,7 +2418,7 @@ if not mods["Krastorio2"] then
   data:extend({
     {
       type = "recipe",
-      name = "coke",  -- #ForRegEx# - recepie
+      name = "coke",  -- #ForRegEx# - recipe
       category = "smelting",
       enabled = false,
       energy_required = 4,  -- time in seconds to make the item

@@ -8,7 +8,7 @@ GROUP_BACKGROUND_COLOR = "purple"
 ITEM_BACKGROUND_COLOR = "lightblue"
 ITEM_REPLACEMENT_BACKGROUND_COLOR = "red"
 FLUID_BACKGROUND_COLOR = "blue"
-RECEPIE_BACKGROUND_COLOR = "darkgreen"
+RECIPE_BACKGROUND_COLOR = "darkgreen"
 TECHNOLOGY_BACKGROUND_COLOR = "yellow"
 
 TEXT_OFFSET_X = 20
@@ -22,7 +22,7 @@ LINE_SPACE = FONT_SIZE//4
 
 ITEMS_PATH = f"{PATH_PREFIX}prototypes/item.lua"
 FLUIDS_PATH = f"{PATH_PREFIX}prototypes/fluid.lua"
-RECEPIES_PATH = f"{PATH_PREFIX}prototypes/recepie.lua"
+RECIPES_PATH = f"{PATH_PREFIX}prototypes/recipe.lua"
 TECHNOLOGIES_PATH = f"{PATH_PREFIX}prototypes/technology.lua"
 
 NAMES_REGEX = r"[ ,\t\n]name = \"(.*?)\",  -- #ForRegEx#"  # Extend regex to catch the type. The flag looks something like -- #ForRegEx# - <type>
@@ -68,9 +68,9 @@ def generate_images():
     generate_default_image(FLUID_BACKGROUND_COLOR, "fluid")
     generate_dummy_images(FLUIDS_PATH, NAMES_REGEX, FLUID_BACKGROUND_COLOR, "fluid")
     
-    # Generate recepie images
-    generate_default_image(RECEPIE_BACKGROUND_COLOR, "recepie")
-    generate_dummy_images(RECEPIES_PATH, NAMES_REGEX, RECEPIE_BACKGROUND_COLOR, "recepie")
+    # Generate recipe images
+    generate_default_image(RECIPE_BACKGROUND_COLOR, "recipe")
+    generate_dummy_images(RECIPES_PATH, NAMES_REGEX, RECIPE_BACKGROUND_COLOR, "recipe")
     
     # Generate technology images
     generate_default_image(TECHNOLOGY_BACKGROUND_COLOR, "technology")

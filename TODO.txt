@@ -1,8 +1,8 @@
 TODO:
-  + Create recepie categories (see: recipe-category)
+  + Create recipe categories (see: recipe-category)
   + Create item groups (see: "intermediate-products=Intermediate products")
   - Add research
-  + Add python script for generating icons for recepies
+  + Add python script for generating icons for recipes
   + Add python script resizing hr-icons to icons
   - Add python scrip for mipmaps
   + Add ores

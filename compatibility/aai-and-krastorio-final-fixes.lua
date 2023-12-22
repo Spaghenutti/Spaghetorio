@@ -1,4 +1,4 @@
--- Recepies
+-- Recipes
 data:extend({
   {
     type = "recipe",

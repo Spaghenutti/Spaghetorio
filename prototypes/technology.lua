@@ -3,7 +3,7 @@ data:extend({
     type = "technology",
     name = "sp-aluminum-machining",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/dummy/dummy-technology-default.png",
+    icon = "__Spaghenutti__/graphics/dummy/dummy-technology-sp-aluminum-machining.png",
     effects =
     {
       {
