@@ -219,16 +219,6 @@ data:extend({
   },
   {
     type = "item",
-    name = "sand",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sand.png",
-    icon_size = 256,
-    icon_mipmaps = 4,
-    subgroup = "raw-resource",
-    order = "[sand]",
-    stack_size = 100
-  },
-  {
-    type = "item",
     name = "zircon",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-zircon.png",
     icon_size = 256,
@@ -780,16 +770,6 @@ data:extend({
     scale = 0.25,
     subgroup = "raw-material",
     order = "[rubber]",
-    stack_size = 100
-  },
-  {
-    type = "item",
-    name = "glass",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-glass.png",
-    icon_size = 256,
-    scale = 0.25,
-    subgroup = "raw-material",
-    order = "[glass]",
     stack_size = 100
   },
   ------------------------------------------------------------------------------
@@ -1928,6 +1908,26 @@ if not mods["Krastorio2"] then
       scale = 0.25,
       subgroup = "processed-resource",
       order = "[coke]",
+      stack_size = 100
+    },
+    {
+      type = "item",
+      name = "sand",  -- #ForRegEx# - item
+      icon = "__Spaghenutti__/graphics/dummy/dummy-item-sand.png",
+      icon_size = 256,
+      icon_mipmaps = 4,
+      subgroup = "raw-resource",
+      order = "[sand]",
+      stack_size = 100
+    },
+    {
+      type = "item",
+      name = "glass",  -- #ForRegEx# - item
+      icon = "__Spaghenutti__/graphics/dummy/dummy-item-glass.png",
+      icon_size = 256,
+      scale = 0.25,
+      subgroup = "raw-material",
+      order = "[glass]",
       stack_size = 100
     },
   })

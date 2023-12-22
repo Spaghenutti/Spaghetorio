@@ -47,4 +47,13 @@ function data_util.disable_recipe(recipe_name)
   end
 end
 
+function data_util.resize_animation(type, name, new_scale, new_hr_scale)
+  local building = table.deepcopy(data.raw[type][name])
+  for key, value in pairs(building.animation.layers) do
+    value.scale = new_scale
+    value.hr_version.scale = new_hr_scale
+  end
+  data:extend({building})
+end
+
 return data_util

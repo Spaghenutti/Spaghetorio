@@ -1000,10 +1000,10 @@ data:extend({
     enabled = false,
     energy_required = 1.2,  -- time in seconds to make the item
     ingredients = {
-      {type = "item", name = "iron-plate", amount = 3}
+      {type = "item", name = "iron-plate", amount = 2}
     },
     results = {
-      {type = "item", name = "bolts", amount = 2}
+      {type = "item", name = "bolts", amount = 3}
     }
   },
   {

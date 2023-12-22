@@ -24,6 +24,7 @@ local util = require("data-util")
 util.change_item_icon("copper-plate", "__base__/graphics/icons/copper-plate.png", 64, 4)
 util.change_item_icon("iron-plate", "__base__/graphics/icons/iron-plate.png", 64, 4)
 util.change_item_icon("iron-gear-wheel", "__base__/graphics/icons/iron-gear-wheel.png", 64, 4)
+-- til.change_item_icon("sand", "__Krastorio2Assets__/icons/items-with-variations/sand/sand.png", 64, 4)
 
 util.change_recipe_icon("iron-plate", "__base__/graphics/icons/iron-plate.png", 64, "__base__/graphics/icons/iron-ore-1.png", 64, 4)
 util.change_recipe_icon("copper-plate", "__base__/graphics/icons/copper-plate.png", 64, "__base__/graphics/icons/copper-ore-1.png", 64, 4)
@@ -31,3 +32,7 @@ util.change_recipe_icon("copper-plate", "__base__/graphics/icons/copper-plate.pn
 data.raw.item["iron-beam"].subgroup = "mechanical-component"
 
 data.raw.item["iron-beam"].order = "iron[iron-beam]"
+
+data.raw.furnace["kr-crusher"].collision_box = { { -2.25, -2.25 }, { 2.25, 2.25 } }
+data.raw.furnace["kr-crusher"].selection_box = { { -2.5, -2.5 }, { 2.5, 2.5 } }
+util.resize_animation("furnace", "kr-crusher", 5/7, 5/7/2)

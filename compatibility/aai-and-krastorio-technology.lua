@@ -28,10 +28,6 @@ data:extend({
     {
       {
         type = "unlock-recipe",
-        recipe = "iron-stick"
-      },
-      {
-        type = "unlock-recipe",
         recipe = "iron-gear-wheel"
       },
       {
@@ -42,6 +38,30 @@ data:extend({
     unit =
     {
       count = 2,
+      ingredients = {{"basic-tech-card", 1}},
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-iron-extruding",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghenutti__/graphics/dummy/dummy-technology-default.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "iron-stick"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "iron-beam"
+      }
+    },
+    unit =
+    {
+      count = 5,
       ingredients = {{"basic-tech-card", 1}},
       time = 15
     },

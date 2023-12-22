@@ -11,7 +11,7 @@ data:extend({
     ingredients = {
       {type="item", name="stone-brick", amount=20},
       {type="item", name="iron-plate", amount=20},
-      {type="item", name="bolts", amount=36},
+      {type="item", name="bolts", amount=24},
       {type="item", name="motor", amount=4},
     },
     results = {
@@ -46,6 +46,22 @@ data:extend({
     },
     results = {
       {type = "item", name = "motor", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "kr-crusher",
+    category = "crafting",
+    enabled = true,
+    energy_required = 12,
+    ingredients = {
+      {type="item", name="bolts", amount=36},
+      {type="item", name="stone-brick", amount=24},
+      {type="item", name="iron-gear-wheel", amount=30},
+      {type="item", name="motor", amount=6},
+    },
+    results = {
+      {type = "item", name = "kr-crusher", amount = 1}
     }
   }
 })
