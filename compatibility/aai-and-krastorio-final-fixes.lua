@@ -1,4 +1,6 @@
--- Recipes
+local util = require("data-util")
+
+-- Update recipes
 data:extend({
   {
     type = "recipe",
@@ -34,13 +36,13 @@ data:extend({
 })
 
 -- Lock items for game start
-data.raw.recipe["iron-stick"].enabled = false
-data.raw.recipe["iron-chest"].enabled = false
-data.raw.recipe["iron-beam"].enabled = false
-data.raw.recipe["inserter-parts"].enabled = false
+util.disable_recipe("iron-stick")
+util.disable_recipe("iron-chest")
+util.disable_recipe("iron-beam")
+util.disable_recipe("inserter-parts")
+util.disable_recipe("motor")
+util.disable_recipe("iron-gear-wheel")
+util.disable_recipe("burner-inserter")
 
 -- Why cant i disable this items?
-data.raw.recipe["motor"].enabled = false
-data.raw.recipe["iron-gear-wheel"].enabled = false
-data.raw.recipe["transport-belt"].enabled = false
-data.raw.recipe["burner-inserter"].enabled = false
+util.disable_recipe("transport-belt")
