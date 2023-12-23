@@ -73,24 +73,24 @@ Si Silicon
   +r high-purity-silicon
 
 Sn Tin
-	+ tinstone (missing resource) (casserite), ore
+	+ tinstone (casserite), ore
   - stannite (Cu2FeSnS4), ore, a copper-iron-tin sulfide, and cylindrite (PbSn4FeSb2S14), a lead-tin-iron-antimony sulfide.
   +rg tin-ingot
   +rg tin-sheet (very thin sheet)
   +r bronze-rod (60% copper 40% tin) for corrosion resistant stuff
 
 Zr Zirconium
-  + zirconium-ore (missing resource)
+  + zirconium-ore
   +r zircon (for the lolzs, low chance to get this from zircon ore) for nuclear fuel rods
   +r zirconium-rod
   +r zirconia (Zirconium dioxide) for hard ceramics
 
 Zn Zinc
-  + zinc-ore (missing resource) - sphalerite (ZnS), marmatite [(ZnFe)S], smithsonite (ZnCO3)
+  + zinc-ore - sphalerite (ZnS), marmatite [(ZnFe)S], smithsonite (ZnCO3)
   +rg zinc-plate
 
 Pb Lead
-  + lead-ore (missing resource) (PbS lead sulfite)
+  + lead-ore(PbS lead sulfite)
   +r lead-slab
 
 Sb Antimony
@@ -108,7 +108,7 @@ Nb Niobium
   +r tantalum-billet (for high energy phisics)
 
 W Tungsten
-  + tungsten-ore (missing resource) ((Fe,Mn)WO4 Wolframite)
+  + tungsten-ore ((Fe,Mn)WO4 Wolframite)
   +r ammonium-paratungstate (After processing tungsten ore)
   +r tungsten-powder (after processing ammonium paratungstate with Na2CO3 sodium carbonate)
   +r tungsten-billet
