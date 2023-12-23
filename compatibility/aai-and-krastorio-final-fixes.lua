@@ -80,4 +80,6 @@ util.disable_recipe("rare-metals")
 -- util.disable_recipe("transport-belt")
 
 data.raw.technology["kr-crusher"].prerequisites = {"electricity"}
-data.raw.technology["kr-crusher"].unit = {count = 30, ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}}, time = 30}
+data.raw.technology["kr-crusher"].unit = {count = 30,
+                                          ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}},
+                                          time = 30}
