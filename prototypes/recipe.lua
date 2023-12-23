@@ -446,34 +446,6 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "tin-sheet-from-tin-ingot",  -- #ForRegEx# - recipe
-    category = "smelting",
-    enabled = false,
-    hide_from_player_crafting = true,
-    energy_required = 0.4,  -- time in seconds to make the item
-    ingredients = {
-      {type = "item", name = "tin-ingot", amount = 1},
-    },
-    results = {
-      {type = "item", name = "tin-sheet", amount = 2}
-    }
-  },
-  {
-    type = "recipe",
-    name = "tin-ingot-from-tin-sheet",  -- #ForRegEx# - recipe
-    category = "smelting",
-    enabled = false,
-    hide_from_player_crafting = true,
-    energy_required = 0.4,  -- time in seconds to make the item
-    ingredients = {
-      {type = "item", name = "tin-sheet", amount = 2},
-    },
-    results = {
-      {type = "item", name = "tin-ingot", amount = 1}
-    }
-  },
-  {
-    type = "recipe",
     name = "bronze-rod",  -- #ForRegEx# - recipe
     category = "smelting",
     enabled = false,
@@ -1269,9 +1241,9 @@ data:extend({
     name = "solder-from-tin",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
-    energy_required = 1.2,  -- time in seconds to make the item
+    energy_required = 0.8,  -- time in seconds to make the item
     ingredients = {
-      {type = "item", name = "tin-ingot", amount = 2}
+      {type = "item", name = "tin-sheet", amount = 2}
     },
     results = {
       {type = "item", name = "solder", amount = 1}
