@@ -1,13 +1,21 @@
 local util = require("data-util")
 
-util.change_recepie("stone-furnace",
-                    {{"stone", 20}},
-                    {{"stone", 40}},
-                    2,
-                    4)
+-- base items
+util.change_recepie("iron-plate",
+                    {{"iron-ore", 2}},
+                    {{"iron-ore", 3}},
+                    8,
+                    12)
+util.change_recepie("copper-plate",
+                    {{"copper-ore", 2}},
+                    {{"copper-ore", 3}},
+                    8,
+                    12)
+
+-- intermediates
 util.change_recepie("underground-belt",
-                    {{"iron-plate", 2}, {"bolts", 4},
-                    {"transport-belt", 4}}, {{"iron-plate", 4}, {"bolts", 8}, {"transport-belt", 4}},
+                    {{"iron-plate", 2}, {"bolts", 4}, {"transport-belt", 4}},
+                    {{"iron-plate", 4}, {"bolts", 8}, {"transport-belt", 4}},
                     nil,
                     nil)
 util.change_recepie("splitter",
@@ -20,6 +28,13 @@ util.change_recepie("electric-motor",
                     {{"copper-cable", 16}, {"bolts", 10}, {"iron-plate", 8}, {"iron-stick", 1}},
                     nil,
                     nil)
+
+-- Buildings
+util.change_recepie("stone-furnace",
+                    {{"stone", 20}},
+                    {{"stone", 40}},
+                    4,
+                    8)
 util.change_recepie("kr-wind-turbine",
                     {{"iron-plate", 12}, {"stone-brick", 4}, {"bolts", 4}, {"electric-motor", 1}},
                     {{"iron-plate", 24}, {"stone-brick", 4}, {"bolts", 10}, {"electric-motor", 2}},
