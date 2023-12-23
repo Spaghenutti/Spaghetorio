@@ -731,50 +731,6 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "splitter",
-    enabled = false,
-    energy_required = 1,
-    ingredients =
-    {
-      {"electronic-circuit", 5},
-      {"iron-plate", 3},
-      {"iron-gear-wheel", 4},
-      {"bolts", 4}
-    },
-    result = "splitter"
-  },
-  {
-    type = "recipe",
-    name = "underground-belt",
-    enabled = false,
-    energy_required = 1,
-    ingredients =
-    {
-      {"iron-plate", 12},
-      {"iron-stick", 2},
-      {"iron-gear-wheel", 6},
-      {"bolts", 4}
-    },
-    result_count = 2,
-    result = "underground-belt"
-  },
-  {
-    type = "recipe",
-    name = "loader",
-    enabled = false,
-    hidden = true,
-    energy_required = 1,
-    ingredients =
-    {
-      {"electronic-circuit", 5},
-      {"iron-gear-wheel", 5},
-      {"iron-plate", 12},
-      {"bolts", 10}
-    },
-    result = "loader"
-  },
-  {
-    type = "recipe",
     name = "car",
     enabled = false,
     energy_required = 2,
@@ -2102,3 +2058,52 @@ data:extend({
     result = "steam-turbine"
   }
 })
+
+if not (mods["Krastorio2"] or mods["aai-industry"]) then
+  data.extend({
+    {
+      type = "recipe",
+      name = "splitter",
+      enabled = false,
+      energy_required = 1,
+      ingredients =
+      {
+        {"electronic-circuit", 5},
+        {"iron-plate", 3},
+        {"iron-gear-wheel", 4},
+        {"bolts", 4}
+      },
+      result = "splitter"
+    },
+    {
+      type = "recipe",
+      name = "underground-belt",
+      enabled = false,
+      energy_required = 1,
+      ingredients =
+      {
+        {"iron-plate", 12},
+        {"iron-stick", 2},
+        {"iron-gear-wheel", 6},
+        {"bolts", 4}
+      },
+      result_count = 2,
+      result = "underground-belt"
+    },
+    {
+      type = "recipe",
+      name = "loader",
+      enabled = false,
+      hidden = true,
+      energy_required = 1,
+      ingredients =
+      {
+        {"electronic-circuit", 5},
+        {"iron-gear-wheel", 5},
+        {"iron-plate", 12},
+        {"bolts", 10}
+      },
+      result = "loader"
+    },
+  })
+end

@@ -117,8 +117,8 @@ data:extend({
       {type = "item", name = "limestone", amount = 2},
     },
     results = {
-      {type = "item", name = "calcium-carbonate", probability = 80, amount = 3},
-      {type = "item", name = "fluorspar", probability = 20, amount = 1}
+      {type = "item", name = "calcium-carbonate", probability = 0.8, amount = 3},
+      {type = "item", name = "fluorspar", probability = 0.2, amount = 1}
     }
   },
   {
@@ -747,8 +747,8 @@ data:extend({
       {type = "fluid", name = "water", amount = 40}
     },
     results = {
-      {type = "item", name = "sand", probability = 98, amount = 3},
-      {type = "item", name = "gold", probability = 2, amount = 1}
+      {type = "item", name = "sand", probability = 0.98, amount = 3},
+      {type = "item", name = "gold", probability = 0.02, amount = 1}
     }
   },
   {
@@ -765,9 +765,9 @@ data:extend({
       {type = "item", name = "copper-ore", amount = 1},
     },
     results = {
-      {type = "item", name = "copper-plate", probability = 97.8, amount = 1},
-      {type = "item", name = "silver", probability = 1.7, amount = 1},
-      {type = "item", name = "palladium", probability = 0.5, amount = 1}
+      {type = "item", name = "copper-plate", probability = 0.978, amount = 1},
+      {type = "item", name = "silver", probability = 0.017, amount = 1},
+      {type = "item", name = "palladium", probability = 0.005, amount = 1}
     }
   },
   {
@@ -784,9 +784,9 @@ data:extend({
       {type = "item", name = "stone", amount = 1},
     },
     results = {
-      {type = "item", name = "sand", probability = 98.07, amount = 3},
-      {type = "item", name = "platinum", probability = 1.9, amount = 1},
-      {type = "item", name = "iridium", probability = 0.03, amount = 1}
+      {type = "item", name = "sand", probability = 0.9807, amount = 3},
+      {type = "item", name = "platinum", probability = 0.019, amount = 1},
+      {type = "item", name = "iridium", probability = 0.0003, amount = 1}
     }
   },
   {
@@ -803,9 +803,9 @@ data:extend({
       {type = "item", name = "nickel-ore", amount = 2},
     },
     results = {
-      {type = "item", name = "nickel-ingot", probability = 48.5, amount = 1},
-      {type = "item", name = "iron-plate", probability = 48.5, amount = 1},
-      {type = "item", name = "palladium", probability = 3, amount = 1}
+      {type = "item", name = "nickel-ingot", probability = 0.485, amount = 1},
+      {type = "item", name = "iron-plate", probability = 0.485, amount = 1},
+      {type = "item", name = "palladium", probability = 0.03, amount = 1}
     }
   },
   {
@@ -2001,8 +2001,8 @@ data:extend({
       {type = "item", name = "nickel-ore", amount = 1}
     },
     results = {
-      {type = "item", name = "cobalt-sulfate", probability = 3, amount = 1},
-      {type = "item", name = "sand", probability = 97, amount = 1}
+      {type = "item", name = "cobalt-sulfate", probability = 0.03, amount = 1},
+      {type = "item", name = "sand", probability = 0.97, amount = 1}
     }
   },
   {
@@ -2099,9 +2099,9 @@ data:extend({
       {type = "fluid", name = "chlorine", amount = 60}
     },
     results = {
-      {type = "item", name = "uranium-238", probability = 37, amount = 2},
-      {type = "item", name = "uranium-235", probability = 3, amount = 1},
-      {type = "item", name = "plutonium-239", probability = 60, amount = 1},
+      {type = "item", name = "uranium-238", probability = 0.37, amount = 2},
+      {type = "item", name = "uranium-235", probability = 0.03, amount = 1},
+      {type = "item", name = "plutonium-239", probability = 0.6, amount = 1},
       {type = "fluid", name = "deuterium", amount = 10}
     }
   },
@@ -2120,9 +2120,9 @@ data:extend({
       {type = "item", name = "uranium-238", amount = 1}
     },
     results = {
-      {type = "item", name = "uranium-238", probability = 84, amount = 1},
-      {type = "item", name = "plutonium-239", probability = 15, amount = 1},
-      {type = "item", name = "plutonium-240", probability = 1, amount = 1}
+      {type = "item", name = "uranium-238", probability = 0.84, amount = 1},
+      {type = "item", name = "plutonium-239", probability = 0.15, amount = 1},
+      {type = "item", name = "plutonium-240", probability = 0.01, amount = 1}
     }
   },
   {
@@ -2140,9 +2140,9 @@ data:extend({
       {type = "item", name = "plutonium-239", amount = 1}
     },
     results = {
-      {type = "item", name = "uranium-238", probability = 20, amount = 1},
-      {type = "item", name = "plutonium-239", probability = 72, amount = 1},
-      {type = "item", name = "plutonium-240", probability = 8, amount = 1}
+      {type = "item", name = "uranium-238", probability = 0.2, amount = 1},
+      {type = "item", name = "plutonium-239", probability = 0.72, amount = 1},
+      {type = "item", name = "plutonium-240", probability = 0.08, amount = 1}
     }
   },
   {

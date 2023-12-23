@@ -33,6 +33,8 @@ data.raw.item["iron-beam"].subgroup = "mechanical-component"
 
 data.raw.item["iron-beam"].order = "iron[iron-beam]"
 
-data.raw.furnace["kr-crusher"].collision_box = { { -2.25, -2.25 }, { 2.25, 2.25 } }
-data.raw.furnace["kr-crusher"].selection_box = { { -2.5, -2.5 }, { 2.5, 2.5 } }
-util.resize_animation("furnace", "kr-crusher", 5/7, 5/7/2)
+util.resize_building("furnace", "kr-crusher", {{-1.75, -1.75}, {1.75, 1.75}}, {{-2, -2}, {2, 2}}, 4/7, 4/7/2)
+-- util.resize_building("furnace", "kr-crusher", {{-2.25, -2.25}, {2.25, 2.25}}, {{-2.5, -2.5}, {2.5, 2.5}}, 5/7, 5/7/2)
+-- data.raw.furnace["kr-crusher"].collision_box = { { -2.25, -2.25 }, { 2.25, 2.25 } }
+-- data.raw.furnace["kr-crusher"].selection_box = { { -2.5, -2.5 }, { 2.5, 2.5 } }
+-- util.resize_animation("furnace", "kr-crusher", 5/7, 5/7/2)
