@@ -423,7 +423,7 @@ data:extend({
     name = "tin-ingot",  -- #ForRegEx# - recipe
     category = "smelting",
     enabled = false,
-    energy_required = 3.2,  -- time in seconds to make the item
+    energy_required = 2.4,  -- time in seconds to make the item
     ingredients = {
       {type = "item", name = "tinstone", amount = 3},
     },
@@ -436,7 +436,7 @@ data:extend({
     name = "tin-sheet",  -- #ForRegEx# - recipe
     category = "smelting",
     enabled = false,
-    energy_required = 3.2,  -- time in seconds to make the item
+    energy_required = 2.4,  -- time in seconds to make the item
     ingredients = {
       {type = "item", name = "tinstone", amount = 3},
     },
@@ -446,15 +446,30 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "tin-sheet",  -- #ForRegEx# - recipe
+    name = "tin-sheet-from-tin-ingot",  -- #ForRegEx# - recipe
     category = "smelting",
     enabled = false,
-    energy_required = 3.2,  -- time in seconds to make the item
+    hide_from_player_crafting = true,
+    energy_required = 0.4,  -- time in seconds to make the item
     ingredients = {
-      {type = "item", name = "tinstone", amount = 3},
+      {type = "item", name = "tin-ingot", amount = 1},
     },
     results = {
-      {type = "item", name = "tin-sheet", amount = 4}
+      {type = "item", name = "tin-sheet", amount = 2}
+    }
+  },
+  {
+    type = "recipe",
+    name = "tin-ingot-from-tin-sheet",  -- #ForRegEx# - recipe
+    category = "smelting",
+    enabled = false,
+    hide_from_player_crafting = true,
+    energy_required = 0.4,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "tin-sheet", amount = 2},
+    },
+    results = {
+      {type = "item", name = "tin-ingot", amount = 1}
     }
   },
   {
@@ -931,7 +946,7 @@ data:extend({
     name = "copper-tube",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
-    energy_required = 0.8,  -- time in seconds to make the item
+    energy_required = 0.4,  -- time in seconds to make the item
     ingredients = {
       {type = "item", name = "copper-plate", amount = 1}
     },
@@ -1251,7 +1266,20 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "solder-from-tin-sheet",  -- #ForRegEx# - recipe
+    name = "solder-from-tin",  -- #ForRegEx# - recipe
+    category = "crafting",
+    enabled = false,
+    energy_required = 1.2,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "tin-ingot", amount = 2}
+    },
+    results = {
+      {type = "item", name = "solder", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "solder-from-tin-sheet-and-lead",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 2.4,  -- time in seconds to make the item
@@ -1265,7 +1293,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "solder-from-tin-ingot",  -- #ForRegEx# - recipe
+    name = "solder-from-tin-ingot-and-lead",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 4.8,  -- time in seconds to make the item

@@ -13,6 +13,7 @@ util.disable_recipe("rare-metals")
 -- Why cant i disable this items?
 -- util.disable_recipe("transport-belt")
 
+data.raw.technology["electronics"].prerequisites = {"automation", "automation-science-pack", "sp-basic-solder"}
 data.raw.technology["kr-crusher"].prerequisites = {"electricity"}
 data.raw.technology["kr-crusher"].unit = {count = 30,
                                           ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}},

@@ -33,8 +33,37 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "tin-sheet"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "tin-sheet-from-tin-ingot"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "tin-ingot-from-tin-sheet"
       }
     },
+    unit =
+    {
+      count = 10,
+      ingredients = {{"automation-science-pack", 1}},
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-basic-solder",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghenutti__/graphics/dummy/dummy-technology-default.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "solder-from-tin"
+      }
+    },
+    prerequisites = { "sp-tin-processing" },
     unit =
     {
       count = 10,
