@@ -8,7 +8,7 @@ data:extend({
     {
       {
         type = "unlock-recipe",
-        recipe = "aluminum-frame"
+        recipe = "sp-aluminum-frame"
       }
     },
     unit =
@@ -30,6 +30,10 @@ data:extend({
         type = "unlock-recipe",
         recipe = "tin-ingot"
       },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-tin-and-lead"
+      },
     },
     unit =
     {
@@ -48,7 +52,7 @@ data:extend({
     {
       {
         type = "unlock-recipe",
-        recipe = "solder-from-tin"
+        recipe = "solder"
       }
     },
     prerequisites = { "sp-tin-processing" },

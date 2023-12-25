@@ -5,7 +5,7 @@ data:extend({
   ------------------------------------------------------------------------------
   {
     type = "item",
-    name = "aluminum-ore",  -- #ForRegEx# - item
+    name = "sp-aluminum-ore",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-aluminum-ore.png",
     tint = {r=1.0, g=0.2, b=0.2, a=1.0},
     icon_size = 256,
@@ -39,7 +39,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "limestone",  -- #ForRegEx# - item
+    name = "sp-limestone",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-limestone.png",
     tint = {r=1.0, g=1.0, b=0.8, a=1.0},
     icon_size = 256,
@@ -241,7 +241,7 @@ data:extend({
   ------------------------------------------------------------------------------
   {
     type = "item",
-    name = "alumina",  -- #ForRegEx# - item
+    name = "sp-alumina",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/icons/alumina.png",
     icon_size = 64,
     icon_mipmaps = 4,
@@ -251,7 +251,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "graphite",  -- #ForRegEx# - item
+    name = "sp-graphite",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-graphite.png",
     icon_size = 256,
     scale = 0.25,
@@ -261,7 +261,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "calcium-carbonate",  -- #ForRegEx# - item
+    name = "sp-calcium-carbonate",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-calcium-carbonate.png",
     icon_size = 256,
     scale = 0.25,
@@ -471,7 +471,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "fluorspar",  -- #ForRegEx# - item
+    name = "sp-fluorspar",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-fluorspar.png",
     icon_size = 256,
     scale = 0.25,
@@ -481,7 +481,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "fluorine",  -- #ForRegEx# - item
+    name = "sp-fluorine",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-fluorine.png",
     icon_size = 256,
     scale = 0.25,
@@ -564,22 +564,12 @@ data:extend({
   ------------------------------------------------------------------------------
   {
     type = "item",
-    name = "aluminum-sheet",  -- #ForRegEx# - item
+    name = "sp-aluminum-sheet",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/icons/aluminum-sheet.png",
     icon_size = 256,
     scale = 0.25,
     subgroup = "raw-material",
     order = "[aluminum-sheet]",
-    stack_size = 100
-  },
-  {
-    type = "item",
-    name = "aluminum-ingot",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/icons/aluminum-ingot.png",
-    icon_size = 256,
-    scale = 0.25,
-    subgroup = "raw-material",
-    order = "[aluminum-ingot]",
     stack_size = 100
   },
   {
@@ -850,7 +840,7 @@ data:extend({
   ------------------------------------------------------------------------------
   {
     type = "item",
-    name = "carbon-nanotubes",  -- #ForRegEx# - item
+    name = "sp-carbon-nanotubes",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-carbon-nanotubes.png",
     icon_size = 256,
     scale = 0.25,
@@ -860,7 +850,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "graphene",  -- #ForRegEx# - item
+    name = "sp-graphene",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-graphene.png",
     icon_size = 256,
     scale = 0.25,
@@ -934,7 +924,7 @@ data:extend({
   ------------------------------------------------------------------------------
   {
     type = "item",
-    name = "aluminum-frame",  -- #ForRegEx# - item
+    name = "sp-aluminum-frame",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-aluminum-frame.png",
     icon_size = 256,
     scale = 0.25,
@@ -947,7 +937,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "aluminum-cable",  -- #ForRegEx# - item
+    name = "sp-aluminum-cable",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/base/cable.png",
     icon_size = 64,
     icon_mipmaps = 4,

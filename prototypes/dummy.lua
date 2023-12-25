@@ -49,7 +49,7 @@ data:extend({
     {
       {
         type = "unlock-recipe",
-        recipe = "aluminum-frame"
+        recipe = "sp-aluminum-frame"
       }
     },
     unit =

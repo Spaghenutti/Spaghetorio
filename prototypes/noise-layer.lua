@@ -1,7 +1,7 @@
 data:extend({
   {
     type = "noise-layer",
-    name = "aluminum-ore"
+    name = "sp-aluminum-ore"
   },
   {
     type = "noise-layer",
@@ -9,7 +9,7 @@ data:extend({
   },
   {
     type = "noise-layer",
-    name = "limestone"
+    name = "sp-limestone"
   },
   {
     type = "noise-layer",

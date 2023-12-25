@@ -8,7 +8,7 @@ local resource_autoplace = require("__core__/lualib/resource-autoplace")
 data:extend({
   {
     type = "resource",
-    name = "aluminum-ore",
+    name = "sp-aluminum-ore",
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
     icon_size = 64,
     icon_mipmaps = 4,
@@ -19,12 +19,12 @@ data:extend({
       hardness = 1,
       mining_particle = "aluminum-ore-particle",
       mining_time = 1,
-      result = "aluminum-ore"
+      result = "sp-aluminum-ore"
       },
     collision_box = {{ -0.1, -0.1}, {0.1, 0.1}},
     selection_box = {{ -0.5, -0.5}, {0.5, 0.5}},
     autoplace = resource_autoplace.resource_autoplace_settings({
-      name = "aluminum-ore",
+      name = "sp-aluminum-ore",
       order = "d",
       base_density = 1,
       base_spots_per_km2 = 0.75,
@@ -104,7 +104,7 @@ data:extend({
   },
   {
     type = "resource",
-    name = "limestone",
+    name = "sp-limestone",
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
     icon_size = 64,
     icon_mipmaps = 4,
@@ -115,12 +115,12 @@ data:extend({
       hardness = 1,
       mining_particle = "limestone-particle",
       mining_time = 1,
-      result = "limestone"
+      result = "sp-limestone"
       },
     collision_box = {{ -0.1, -0.1}, {0.1, 0.1}},
     selection_box = {{ -0.5, -0.5}, {0.5, 0.5}},
     autoplace = resource_autoplace.resource_autoplace_settings({
-      name = "limestone",
+      name = "sp-limestone",
       order = "d",
       base_density = 1,
       base_spots_per_km2 = 0.75,

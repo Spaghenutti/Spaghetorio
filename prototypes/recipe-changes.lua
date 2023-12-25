@@ -146,7 +146,7 @@ data:extend({
     ingredients =
     {
       {"stainless-steel-gear-wheel", 15},
-      {"aluminum-frame", 10},
+      {"sp-aluminum-frame", 10},
       {"bolts", 12},
       {"electric-engine-unit", 3},
       {"circuit-board", 2},
@@ -161,7 +161,7 @@ data:extend({
     ingredients =
     {
       {"stainless-steel-gear-wheel", 15},
-      {"aluminum-frame", 10},
+      {"sp-aluminum-frame", 10},
       {"bolts", 12},
       {"electric-engine-unit", 3},
       {"circuit-board", 2},
@@ -179,7 +179,7 @@ data:extend({
     ingredients =
     {
       {"circuit-board", 1},
-      {"aluminum-frame", 2},
+      {"sp-aluminum-frame", 2},
       {"plastic-bar", 2},
       {"cmos", 2}
     },
@@ -209,7 +209,7 @@ data:extend({
     ingredients =
     {
       {"advanced-circuit", 5},
-      {"aluminum-frame", 5},
+      {"sp-aluminum-frame", 5},
       {"steel-plate", 2},
       {"copper-cable", 10}
     },
@@ -237,7 +237,7 @@ data:extend({
     ingredients =
     {
       {"battery", 4},
-      {"aluminum-frame", 6},
+      {"sp-aluminum-frame", 6},
       {"bolts", 6},
       {"copper-cable", 4}
     },
@@ -267,7 +267,7 @@ data:extend({
       {"solar-panel", 1},
       {"bolts", 10},
       {"advanced-circuit", 2},
-      {"aluminum-frame", 5}
+      {"sp-aluminum-frame", 5}
     },
     result = "solar-panel-equipment"
   },
@@ -296,7 +296,7 @@ data:extend({
     ingredients =
     {
       {"processing-unit", 20},
-      {"aluminum-frame", 5},
+      {"sp-aluminum-frame", 5},
       {"bolts", 12},
       {"laser", 5}
     },
@@ -310,7 +310,7 @@ data:extend({
     ingredients =
     {
       {"processing-unit", 5},
-      {"aluminum-frame", 20},
+      {"sp-aluminum-frame", 20},
       {"bolts", 30},
       {"laser-turret", 10}
     },
@@ -334,7 +334,7 @@ data:extend({
       {"electric-engine-unit", 20},
       {"bolts", 30},
       {"stainless-steel-gear-wheel", 16},
-      {"aluminum-frame", 20},
+      {"sp-aluminum-frame", 20},
       {"bearing", 8}
     },
     result = "exoskeleton-equipment"
@@ -348,7 +348,7 @@ data:extend({
     {
       {"advanced-circuit", 10},
       {"iron-gear-wheel", 20},
-      {"aluminum-frame", 20},
+      {"sp-aluminum-frame", 20},
       {"bolts", 16},
       {"battery", 30}
     },
@@ -738,7 +738,7 @@ data:extend({
     {
       {"engine-unit", 1},
       {"iron-plate", 4},
-      {"aluminum-frame", 12},
+      {"sp-aluminum-frame", 12},
       {"steel-gear-wheel", 20},
       {"bolts", 24},
       {"bearing", 12}
@@ -779,8 +779,8 @@ data:extend({
     {
       {"iron-stick", 20},
       {"bolts", 10},
-      {"aluminum-frame", 12},
-      {"aluminum-cable", 6}
+      {"sp-aluminum-frame", 12},
+      {"sp-aluminum-cable", 6}
     },
     result = "big-electric-pole"
   },
@@ -827,7 +827,7 @@ data:extend({
     enabled = false,
     energy_required = 8,
     ingredients = {
-      {"aluminum-frame", 6},
+      {"sp-aluminum-frame", 6},
       {"fabric", 6},
       {"steel-plate", 3}
     },
@@ -926,7 +926,7 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      {"aluminum-frame", 5},
+      {"sp-aluminum-frame", 5},
       {"electronic-circuit", 4},
       {"copper-cable", 10},
       {"bolts", 4},
@@ -989,7 +989,7 @@ data:extend({
     {
       {"electronic-circuit", 1},
       {"light-emitting-diode", 3},
-      {"aluminum-frame", 2}
+      {"sp-aluminum-frame", 2}
     },
     result = "rail-signal"
   },
@@ -1002,7 +1002,7 @@ data:extend({
       {"electronic-circuit", 1},
       {"light-emitting-diode", 3},
       {"diode", 2},
-      {"aluminum-frame", 2}
+      {"sp-aluminum-frame", 2}
     },
     result = "rail-chain-signal"
   },
@@ -1099,7 +1099,7 @@ data:extend({
     energy_required = 2,
     ingredients =
     {
-      {"aluminum-frame", 5},
+      {"sp-aluminum-frame", 5},
       {"steel-plate", 2},
       {"copper-cable", 5},
       {"electronic-circuit", 2},
@@ -1114,7 +1114,7 @@ data:extend({
     energy_required = 2,
     ingredients =
     {
-      {"aluminum-frame", 3},
+      {"sp-aluminum-frame", 3},
       {"iron-stick", 4},
       {"copper-cable", 5},
       {"capacitor", 10},
@@ -1145,7 +1145,7 @@ data:extend({
     {
       {"steel-plate", 2},
       {"electronic-circuit", 2},
-      {"fluorspar", 5}
+      {"sp-fluorspar", 5}
     },
     result = "slowdown-capsule"
   },
@@ -1158,7 +1158,7 @@ data:extend({
     {
       {"explosives", 5},
       {"steel-plate", 5},
-      {"graphite", 2},
+      {"sp-graphite", 2},
       {"yittrium", 1}
     },
     result = "cluster-grenade"
@@ -1440,7 +1440,7 @@ data:extend({
       {
         {"stainless-steel-gear-wheel", 16},
         {"spring", 4},
-        {"aluminum-frame", 6},
+        {"sp-aluminum-frame", 6},
         {"ferrite-magnet", 4},
         {type="fluid", name="lubricant", amount=40}
       },
@@ -1583,7 +1583,7 @@ data:extend({
     ingredients =
     {
       {"steel-plate", 1},
-      {"graphite", 2},
+      {"sp-graphite", 2},
       {"explosives", 2}
     },
     result = "land-mine",
@@ -1625,7 +1625,7 @@ data:extend({
     ingredients =
     {
       {"stainless-steel-gear-wheel", 24},
-      {"aluminum-frame", 12},
+      {"sp-aluminum-frame", 12},
       {"ferrite-magnet", 8},
       {"spring", 8},
       {"bolts", 6},
@@ -1735,7 +1735,7 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      {"aluminum-frame", 2},
+      {"sp-aluminum-frame", 2},
       {"copper-cable", 4},
       {"electronic-circuit", 2},
       {"battery", 5}
@@ -1803,7 +1803,7 @@ data:extend({
     {
       {"electric-engine-unit", 1},
       {"battery", 2},
-      {"aluminum-frame", 2},
+      {"sp-aluminum-frame", 2},
       {"electronic-circuit", 3}
     },
     result = "flying-robot-frame",
@@ -1903,7 +1903,7 @@ data:extend({
       ingredients =
       {
         {"titanium-frame", 2},
-        {"graphene", 20},
+        {"sp-graphene", 20},
         {"composites", 3}
       },
       result= "low-density-structure"
@@ -1915,7 +1915,7 @@ data:extend({
       ingredients =
       {
         {"titanium-frame", 4},
-        {"graphene", 40},
+        {"sp-graphene", 40},
         {"composites", 6}
       },
       result= "low-density-structure"
@@ -2037,7 +2037,7 @@ data:extend({
     ingredients = {
       {"pressure-tube", 10},
       {"flange", 2},
-      {"aluminum-ingot", 2},
+      {"sp-aluminum-sheet", 5},
       {"polymer", 6}
     },
     result = "heat-pipe"

@@ -1,7 +1,7 @@
 data:extend({
   {
     type = "autoplace-control",
-    name = "aluminum-ore",
+    name = "sp-aluminum-ore",
     localised_name = {"", "[entity=aluminum-ore] ", {"entity-name.aluminum-ore"}},
     category = "resource",
     richness = true,
@@ -17,7 +17,7 @@ data:extend({
   },
   {
     type = "autoplace-control",
-    name = "limestone",
+    name = "sp-limestone",
     localised_name = {"", "[entity=limestone] ", {"entity-name.limestone"}},
     category = "resource",
     richness = true,
