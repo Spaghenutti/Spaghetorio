@@ -433,19 +433,6 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "tin-sheet",  -- #ForRegEx# - recipe
-    category = "smelting",
-    enabled = false,
-    energy_required = 2.4,  -- time in seconds to make the item
-    ingredients = {
-      {type = "item", name = "tinstone", amount = 3},
-    },
-    results = {
-      {type = "item", name = "tin-sheet", amount = 4}
-    }
-  },
-  {
-    type = "recipe",
     name = "bronze-rod",  -- #ForRegEx# - recipe
     category = "smelting",
     enabled = false,
@@ -865,7 +852,7 @@ data:extend({
     ingredients = {
       {type = "item", name = "titanium-plate", amount = 8},
       {type = "item", name = "aluminum-sheet", amount = 2},
-      {type = "item", name = "tin-sheet", amount = 1}
+      {type = "item", name = "tin-ingot", amount = 1}
     },
     results = {
       {type = "item", name = "TiAlSn", amount = 10}
@@ -1241,26 +1228,12 @@ data:extend({
     name = "solder-from-tin",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
-    energy_required = 0.8,  -- time in seconds to make the item
+    energy_required = 2,  -- time in seconds to make the item
     ingredients = {
-      {type = "item", name = "tin-sheet", amount = 2}
+      {type = "item", name = "tin-ingot", amount = 2}
     },
     results = {
-      {type = "item", name = "solder", amount = 1}
-    }
-  },
-  {
-    type = "recipe",
-    name = "solder-from-tin-sheet-and-lead",  -- #ForRegEx# - recipe
-    category = "crafting",
-    enabled = false,
-    energy_required = 2.4,  -- time in seconds to make the item
-    ingredients = {
-      {type = "item", name = "lead-slab", amount = 1},
-      {type = "item", name = "tin-sheet", amount = 3}
-    },
-    results = {
-      {type = "item", name = "solder", amount = 2}
+      {type = "item", name = "solder", amount = 3}
     }
   },
   {
@@ -1268,13 +1241,13 @@ data:extend({
     name = "solder-from-tin-ingot-and-lead",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
-    energy_required = 4.8,  -- time in seconds to make the item
+    energy_required = 3.2,  -- time in seconds to make the item
     ingredients = {
-      {type = "item", name = "lead-slab", amount = 2},
-      {type = "item", name = "tin-ingot", amount = 3}
+      {type = "item", name = "lead-slab", amount = 1},
+      {type = "item", name = "tin-ingot", amount = 2}
     },
     results = {
-      {type = "item", name = "solder", amount = 4}
+      {type = "item", name = "solder", amount = 6}
     }
   },
   {
@@ -1285,7 +1258,7 @@ data:extend({
     energy_required = 16,  -- time in seconds to make the item
     ingredients = {
       {type = "item", name = "silver", amount = 1},
-      {type = "item", name = "tin-sheet", amount = 12}
+      {type = "item", name = "tin-ingot", amount = 8}
     },
     results = {
       {type = "item", name = "silver-solder", amount = 10}

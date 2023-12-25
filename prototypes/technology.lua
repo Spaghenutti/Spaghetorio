@@ -30,10 +30,6 @@ data:extend({
         type = "unlock-recipe",
         recipe = "tin-ingot"
       },
-      {
-        type = "unlock-recipe",
-        recipe = "tin-sheet"
-      }
     },
     unit =
     {

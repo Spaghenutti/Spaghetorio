@@ -644,16 +644,6 @@ data:extend({
   },
   {
     type = "item",
-    name = "tin-sheet",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/icons/tin-sheet.png",
-    icon_size = 256,
-    scale = 0.25,
-    subgroup = "raw-material",
-    order = "[tin-ingots]",
-    stack_size = 100
-  },
-  {
-    type = "item",
     name = "bronze-rod",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-bronze-rod.png",
     icon_size = 256,
