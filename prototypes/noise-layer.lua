@@ -5,7 +5,7 @@ data:extend({
   },
   {
     type = "noise-layer",
-    name = "chromite"
+    name = "sp-chromite"
   },
   {
     type = "noise-layer",
@@ -13,34 +13,34 @@ data:extend({
   },
   {
     type = "noise-layer",
-    name = "magnesium-ore"
+    name = "sp-magnesium-ore"
   },
   {
     type = "noise-layer",
-    name = "nickel-ore"
+    name = "sp-nickel-ore"
   },
   {
     type = "noise-layer",
-    name = "titanium-ore"
+    name = "sp-titanium-ore"
   },
   {
     type = "noise-layer",
-    name = "spodumene"
+    name = "sp-spodumene"
   },
   {
     type = "noise-layer",
-    name = "tinstone"
+    name = "sp-tinstone"
   },
   {
     type = "noise-layer",
-    name = "tungsten-ore"
+    name = "sp-tungsten-ore"
   },
   {
     type = "noise-layer",
-    name = "zirconium-ore"
+    name = "sp-zirconium-ore"
   },
   {
     type = "noise-layer",
-    name = "zinc-ore"
+    name = "sp-zinc-ore"
   },
 })

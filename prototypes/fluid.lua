@@ -1,7 +1,7 @@
 data:extend({
   {
     type = "fluid",
-    name = "liquid-sodium",  -- #ForRegEx# - fluid
+    name = "sp-liquid-sodium",  -- #ForRegEx# - fluid
     default_temperature = 25,
     heat_capacity = "0.1KJ",
     base_color = {r=0.71, g=0.71, b=0.71},

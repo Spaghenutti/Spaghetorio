@@ -196,7 +196,7 @@ data:extend({
       {"stainless-steel-gear-wheel", 20},
       {"electric-engine-unit", 2},
       {"bolts", 30},
-      {"titanium-frame", 5},
+      {"sp-titanium-frame", 5},
       {"bearing", 4}
     },
     result = "belt-immunity-equipment"
@@ -225,7 +225,7 @@ data:extend({
       {"processing-unit", 5},
       {"circuit-board", 1},
       {"low-density-structure", 5},
-      {"titanium-frame", 2}
+      {"sp-titanium-frame", 2}
     },
     result = "energy-shield-mk2-equipment"
   },
@@ -363,7 +363,7 @@ data:extend({
     {
       {"circuit-board", 5},
       {"processor", 5},
-      {"titanium-frame", 20},
+      {"sp-titanium-frame", 20},
       {"bolts", 10},
       {"battery", 40}
     },
@@ -912,7 +912,7 @@ data:extend({
     {
       {"concrete", 10},
       {"cement", 10},
-      {"magnesium-ore", 1},
+      {"sp-magnesium-ore", 1},
       {"iron-ore", 1},
       {type="fluid", name="water", amount=100}
     },
@@ -1215,7 +1215,7 @@ data:extend({
     {
       {"explosives", 20},
       {"phosphorus", 1},
-      {"magnesium-slab", 2},
+      {"sp-magnesium-slab", 2},
       {"empty-barrel", 1}
     },
     result = "cliff-explosives"
@@ -1243,7 +1243,7 @@ data:extend({
     {
       {"circuit-board", 1},
       {"explosives", 4},
-      {"titanium-frame", 2},
+      {"sp-titanium-frame", 2},
       {"solid-rocket-motor", 1},
       {"gyro", 3}
     },
@@ -1258,7 +1258,7 @@ data:extend({
     {
       {"circuit-board", 1},
       {"explosives", 12},
-      {"titanium-frame", 2},
+      {"sp-titanium-frame", 2},
       {"solid-rocket-motor", 1},
       {"gyro", 3}
     },
@@ -1273,7 +1273,7 @@ data:extend({
     {
       {"rocket-control-unit", 10},
       {"explosives", 10},
-      {"titanium-frame", 4},
+      {"sp-titanium-frame", 4},
       {"uranium-235", 30},
       {"solid-rocket-motor", 1},
       {"gyro", 3}
@@ -1303,7 +1303,7 @@ data:extend({
       ingredients =
       {
         {"steel-plate", 3},
-        {"titanium-frame", 1},
+        {"sp-titanium-frame", 1},
         {"plastic-bar", 2},
         {"explosives", 5}
       },
@@ -1316,7 +1316,7 @@ data:extend({
       ingredients =
       {
         {"steel-plate", 6},
-        {"titanium-frame", 2},
+        {"sp-titanium-frame", 2},
         {"plastic-bar", 4},
         {"explosives", 10}
       },
@@ -1333,7 +1333,7 @@ data:extend({
       ingredients =
       {
         {"steel-plate", 3},
-        {"titanium-frame", 2},
+        {"sp-titanium-frame", 2},
         {"plastic-bar", 2},
         {"explosives", 20}
       },
@@ -1346,7 +1346,7 @@ data:extend({
       ingredients =
       {
         {"steel-plate", 10},
-        {"titanium-frame", 4},
+        {"sp-titanium-frame", 4},
         {"plastic-bar", 4},
         {"explosives", 36}
       },
@@ -1361,7 +1361,7 @@ data:extend({
     ingredients =
     {
       {"steel-plate", 3},
-      {"titanium-frame", 2},
+      {"sp-titanium-frame", 2},
       {"plastic-bar", 2},
       {"explosives", 2},
       {"uranium-238", 1}
@@ -1376,7 +1376,7 @@ data:extend({
     ingredients =
     {
       {"steel-plate", 6},
-      {"titanium-frame", 4},
+      {"sp-titanium-frame", 4},
       {"plastic-bar", 2},
       {"explosives", 2},
       {"uranium-238", 2}
@@ -1511,7 +1511,7 @@ data:extend({
       {"advanced-circuit", 20},
       {"bolts", 56},
       {"spring", 20},
-      {"titanium-frame", 12}
+      {"sp-titanium-frame", 12}
     },
     result = "artillery-wagon"
   },
@@ -1522,7 +1522,7 @@ data:extend({
     energy_required = 15,
     ingredients =
     {
-      {"titanium-frame", 6},
+      {"sp-titanium-frame", 6},
       {"fabric", 6},
       {"kevlar", 12}
     },
@@ -1902,7 +1902,7 @@ data:extend({
       enabled = false,
       ingredients =
       {
-        {"titanium-frame", 2},
+        {"sp-titanium-frame", 2},
         {"sp-graphene", 20},
         {"composites", 3}
       },
@@ -1914,7 +1914,7 @@ data:extend({
       enabled = false,
       ingredients =
       {
-        {"titanium-frame", 4},
+        {"sp-titanium-frame", 4},
         {"sp-graphene", 40},
         {"composites", 6}
       },

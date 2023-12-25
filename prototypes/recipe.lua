@@ -123,12 +123,12 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-fluorine", amount = 2},
-      {type = "item", name = "calcium", amount = 2}
+      {type = "item", name = "sp-calcium", amount = 2}
     }
   },
   {
     type = "recipe",
-    name = "salt",
+    name = "sp-salt",
     category = "chemistry",
     energy_required = 1,
     enabled = false,
@@ -136,7 +136,7 @@ data:extend({
       {type = "fluid", name = "water", amount = 50},
     },
     results = {
-      {type = "item", name = "salt", amount = 2}
+      {type = "item", name = "sp-salt", amount = 2}
     },
     crafting_machine_tint = {
       primary = {r = 1.000, g = 1.000, b = 1.000, a = 1.000}, -- #fefeffff
@@ -147,7 +147,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sodium-and-chlorine",  -- #ForRegEx# - recipe
+    name = "sp-sodium-and-chlorine",  -- #ForRegEx# - recipe
     icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
     icon_size = 256,
     scale = 0.25,
@@ -156,7 +156,7 @@ data:extend({
     enabled = false,
     energy_required = 5,  -- time in seconds to make the item
     ingredients = {
-      {type = "item", name = "salt", amount = 2},
+      {type = "item", name = "sp-salt", amount = 2},
     },
     results = {
       {type = "item", name = "sodium", amount = 2},
@@ -171,7 +171,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "liquid-sodium",
+    name = "sp-liquid-sodium",
     category = "chemistry",
     energy_required = 1,
     enabled = false,
@@ -179,7 +179,7 @@ data:extend({
       {type = "item", name = "sodium", amount = 2},
     },
     results = {
-      {type = "fluid", name = "liquid-sodium", amount = 40}
+      {type = "fluid", name = "sp-liquid-sodium", amount = 40}
     },
     crafting_machine_tint = {
       primary = {r = 1.000, g = 1.000, b = 1.000, a = 1.000}, -- #fefeffff
@@ -190,20 +190,20 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "magnesium-chloride",  -- #ForRegEx# - recipe
+    name = "sp-magnesium-chloride",  -- #ForRegEx# - recipe
     category = "chemistry",
     enabled = false,
     energy_required = 4,  -- time in seconds to make the item
     ingredients = {
-      {type = "item", name = "magnesium-ore", amount = 3}
+      {type = "item", name = "sp-magnesium-ore", amount = 3}
     },
     results = {
-      {type = "item", name = "magnesium-chloride", amount = 3}
+      {type = "item", name = "sp-magnesium-chloride", amount = 3}
     }
   },
   {
     type = "recipe",
-    name = "magnesium-slab",  -- #ForRegEx# - recipe
+    name = "sp-magnesium-slab",  -- #ForRegEx# - recipe
     icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
     icon_size = 256,
     scale = 0.25,
@@ -212,10 +212,10 @@ data:extend({
     enabled = false,
     energy_required = 3.2,  -- time in seconds to make the item
     ingredients = {
-      {type = "item", name = "magnesium-chloride", amount = 3}
+      {type = "item", name = "sp-magnesium-chloride", amount = 3}
     },
     results = {
-      {type = "item", name = "magnesium-slab", amount = 2},
+      {type = "item", name = "sp-magnesium-slab", amount = 2},
       {type = "fluid", name = "chlorine", amount = 1}
     },
     crafting_machine_tint = {
@@ -227,20 +227,20 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "titanium-cloride",  -- #ForRegEx# - recipe
+    name = "sp-titanium-cloride",  -- #ForRegEx# - recipe
     category = "smelting",
     enabled = false,
     energy_required = 3.2,  -- time in seconds to make the item
     ingredients = {
-      {type = "item", name = "titanium-ore", amount = 3},
+      {type = "item", name = "sp-titanium-ore", amount = 3},
     },
     results = {
-      {type = "item", name = "titanium-cloride", amount = 2}
+      {type = "item", name = "sp-titanium-cloride", amount = 2}
     }
   },
   {
     type = "recipe",
-    name = "titanium-sponge",  -- #ForRegEx# - recipe
+    name = "sp-titanium-sponge",  -- #ForRegEx# - recipe
     icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
     icon_size = 256,
     scale = 0.25,
@@ -249,51 +249,51 @@ data:extend({
     enabled = false,
     energy_required = 5,  -- time in seconds to make the item
     ingredients = {
-      {type = "item", name = "titanium-cloride", amount = 3},
+      {type = "item", name = "sp-titanium-cloride", amount = 3},
       {type = "item", name = "sodium", amount = 2},
     },
     results = {
-      {type = "item", name = "titanium-sponge", amount = 3},
-      {type = "item", name = "salt", amount = 1}
+      {type = "item", name = "sp-titanium-sponge", amount = 3},
+      {type = "item", name = "sp-salt", amount = 1}
     }
   },
   {
     type = "recipe",
-    name = "titanium-ingot",  -- #ForRegEx# - recipe
+    name = "sp-titanium-ingot",  -- #ForRegEx# - recipe
     category = "smelting",
     enabled = false,
     energy_required = 3.6,  -- time in seconds to make the item
     ingredients = {
-      {type = "item", name = "titanium-sponge", amount = 2},
+      {type = "item", name = "sp-titanium-sponge", amount = 2},
     },
     results = {
-      {type = "item", name = "titanium-ingot", amount = 2}
+      {type = "item", name = "sp-titanium-ingot", amount = 2}
     }
   },
   {
     type = "recipe",
-    name = "titanium-plate",  -- #ForRegEx# - recipe
+    name = "sp-titanium-plate",  -- #ForRegEx# - recipe
     category = "smelting",
     enabled = false,
     energy_required = 4,  -- time in seconds to make the item
     ingredients = {
-      {type = "item", name = "titanium-sponge", amount = 2},
+      {type = "item", name = "sp-titanium-ingot", amount = 2},
     },
     results = {
-      {type = "item", name = "titanium-plate", amount = 4}
+      {type = "item", name = "sp-titanium-plate", amount = 4}
     }
   },
   {
     type = "recipe",
-    name = "titanium-frame",  -- #ForRegEx# - recipe
+    name = "sp-titanium-frame",  -- #ForRegEx# - recipe
     category = "smelting",
     enabled = false,
     energy_required = 2.4,  -- time in seconds to make the item
     ingredients = {
-      {type = "item", name = "titanium-plate", amount = 2},
+      {type = "item", name = "sp-titanium-plate", amount = 2},
     },
     results = {
-      {type = "item", name = "titanium-frame", amount = 3}
+      {type = "item", name = "sp-titanium-frame", amount = 3}
     }
   },
   {
@@ -301,9 +301,9 @@ data:extend({
     name = "titanium-nitride",  -- #ForRegEx# - recipe
     category = "chemistry",
     enabled = false,
-    energy_required = 2.4,  -- time in seconds to make the item
+    energy_required = 6,  -- time in seconds to make the item
     ingredients = {
-      {type = "item", name = "titanium-ingot", amount = 2},
+      {type = "item", name = "sp-titanium-ingot", amount = 2},
       {type = "fluid", name = "nitrogen", amount = 40},
     },
     results = {
@@ -317,7 +317,7 @@ data:extend({
     enabled = false,
     energy_required = 2.4,  -- time in seconds to make the item
     ingredients = {
-      {type = "item", name = "titanium-ingot", amount = 1},
+      {type = "item", name = "sp-titanium-ingot", amount = 1},
       {type = "item", name = "sp-graphite", amount = 3},
     },
     results = {
@@ -412,7 +412,7 @@ data:extend({
     enabled = false,
     energy_required = 2.4,  -- time in seconds to make the item
     ingredients = {
-      {type = "item", name = "tinstone", amount = 4},
+      {type = "item", name = "sp-tinstone", amount = 4},
     },
     results = {
       {type = "item", name = "tin-ingot", amount = 2}
@@ -429,7 +429,7 @@ data:extend({
     enabled = false,
     energy_required = 2.4,  -- time in seconds to make the item
     ingredients = {
-      {type = "item", name = "tinstone", amount = 3},
+      {type = "item", name = "sp-tinstone", amount = 3},
     },
     results = {
       {type = "item", name = "tin-ingot", probablilty = 0.75, amount = 2},
@@ -457,7 +457,7 @@ data:extend({
     enabled = false,
     energy_required = 10,  -- time in seconds to make the item
     ingredients = {
-      {type = "item", name = "zirconium-ore", amount = 12},
+      {type = "item", name = "sp-zirconium-ore", amount = 12},
     },
     results = {
       {type = "item", name = "zircon", amount = 1}
@@ -470,7 +470,7 @@ data:extend({
     enabled = false,
     energy_required = 4,  -- time in seconds to make the item
     ingredients = {
-      {type = "item", name = "zirconium-ore", amount = 2}
+      {type = "item", name = "sp-zirconium-ore", amount = 2}
     },
     results = {
       {type = "item", name = "zirconium-rod", amount = 3}
@@ -483,7 +483,7 @@ data:extend({
     enabled = false,
     energy_required = 3.2,  -- time in seconds to make the item
     ingredients = {
-      {type = "item", name = "zirconium-ore", amount = 1},
+      {type = "item", name = "sp-zirconium-ore", amount = 1},
       {type = "item", name = "sand", amount = 3}
     },
     results = {
@@ -501,7 +501,7 @@ data:extend({
     enabled = false,
     energy_required = 4,  -- time in seconds to make the item
     ingredients = {
-      {type = "item", name = "zinc-ore", amount = 1}
+      {type = "item", name = "sp-zinc-ore", amount = 1}
     },
     results = {
       {type = "item", name = "zinc-plate", amount = 1},
@@ -575,7 +575,7 @@ data:extend({
     enabled = false,
     energy_required = 8,  -- time in seconds to make the item
     ingredients = {
-      {type = "item", name = "tungsten-ore", amount = 2}
+      {type = "item", name = "sp-tungsten-ore", amount = 2}
     },
     results = {
       {type = "item", name = "ammonium-paratungstate", amount = 1}
@@ -673,7 +673,7 @@ data:extend({
     enabled = false,
     energy_required = 3.2,  -- time in seconds to make the item
     ingredients = {
-      {type = "item", name = "chromite", amount = 3}
+      {type = "item", name = "sp-chromite", amount = 3}
     },
     results = {
       {type = "item", name = "chromium-plate", amount = 2},
@@ -691,7 +691,7 @@ data:extend({
     enabled = false,
     energy_required = 3.2,  -- time in seconds to make the item
     ingredients = {
-      {type = "item", name = "nickel-ore", amount = 2}
+      {type = "item", name = "sp-nickel-ore", amount = 2}
     },
     results = {
       {type = "item", name = "nickel-ingot", amount = 1},
@@ -766,7 +766,7 @@ data:extend({
     enabled = false,
     energy_required = 4,  -- time in seconds to make the item
     ingredients = {
-      {type = "item", name = "nickel-ore", amount = 2},
+      {type = "item", name = "sp-nickel-ore", amount = 2},
     },
     results = {
       {type = "item", name = "nickel-ingot", probability = 0.485, amount = 1},
@@ -813,7 +813,7 @@ data:extend({
     ingredients = {
       {type = "item", name = "sp-aluminum-sheet", amount = 7},
       {type = "item", name = "zinc-plate", amount = 2},
-      {type = "item", name = "magnesium-slab", amount = 1},
+      {type = "item", name = "sp-magnesium-slab", amount = 1},
       {type = "item", name = "copper-plate", amount = 1}
     },
     results = {
@@ -842,7 +842,7 @@ data:extend({
     enabled = false,
     energy_required = 14,  -- time in seconds to make the item
     ingredients = {
-      {type = "item", name = "titanium-plate", amount = 8},
+      {type = "item", name = "sp-titanium-plate", amount = 8},
       {type = "item", name = "sp-aluminum-sheet", amount = 2},
       {type = "item", name = "tin-ingot", amount = 1}
     },
@@ -857,7 +857,7 @@ data:extend({
     enabled = false,
     energy_required = 8,  -- time in seconds to make the item
     ingredients = {
-      {type = "item", name = "titanium-plate", amount = 5},
+      {type = "item", name = "sp-titanium-plate", amount = 5},
       {type = "item", name = "niobium-billet", amount = 4}
     },
     results = {
@@ -1642,7 +1642,7 @@ data:extend({
     energy_required = 3.2,  -- time in seconds to make the item
     ingredients = {
       {type = "item", name = "iron-plate", amount = 1},
-      {type = "item", name = "titanium-frame", amount = 1},
+      {type = "item", name = "sp-titanium-frame", amount = 1},
       {type = "item", name = "ceramic", amount = 3},
       {type = "fluid", name = "liquid-nitrogen", amount = 40}
     },
@@ -1762,7 +1762,7 @@ data:extend({
     enabled = false,
     energy_required = 3.6,  -- time in seconds to make the item
     ingredients = {
-      {type = "item", name = "spodumene", amount = 4}
+      {type = "item", name = "sp-spodumene", amount = 4}
     },
     results = {
       {type = "item", name = "lithium-oxide", amount = 1},
@@ -1836,7 +1836,7 @@ data:extend({
     ingredients = {
       {type = "item", name = "TiAlSn", amount = 4},
       {type = "item", name = "titanium-nitride", amount = 2},
-      {type = "item", name = "titanium-frame", amount = 20},
+      {type = "item", name = "sp-titanium-frame", amount = 20},
       {type = "item", name = "flange", amount = 5},
       {type = "item", name = "turbine-blade", amount = 24},
     },
@@ -1931,7 +1931,7 @@ data:extend({
     enabled = false,
     energy_required = 4,  -- time in seconds to make the item
     ingredients = {
-      {type = "item", name = "titanium-frame", amount = 2},
+      {type = "item", name = "sp-titanium-frame", amount = 2},
       {type = "item", name = "solid-fuel", amount = 10},
       {type = "item", name = "phosphorus", amount = 1}
     },
@@ -1950,7 +1950,7 @@ data:extend({
     enabled = false,
     energy_required = 0.4,  -- time in seconds to make the item
     ingredients = {
-      {type = "item", name = "nickel-ore", amount = 1}
+      {type = "item", name = "sp-nickel-ore", amount = 1}
     },
     results = {
       {type = "item", name = "cobalt-sulfate", probability = 0.03, amount = 1},

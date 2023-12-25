@@ -2,7 +2,7 @@ Al Aluminum
 	+ aluminum-ore (bauxite)
 	+r alumina
 	+rg aluminum-sheet
-	+rg aluminum-ingot
+	-rg aluminum-ingot
 	+r aluminum-frames
 	+rg aluminum-cable
 

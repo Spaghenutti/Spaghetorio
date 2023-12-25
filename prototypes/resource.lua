@@ -56,7 +56,7 @@ data:extend({
   },
   {
     type = "resource",
-    name = "chromite",
+    name = "sp-chromite",
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
     icon_size = 64,
     icon_mipmaps = 4,
@@ -67,12 +67,12 @@ data:extend({
       hardness = 1,
       mining_particle = "chromite-particle",
       mining_time = 1,
-      result = "chromite"
+      result = "sp-chromite"
       },
     collision_box = {{ -0.1, -0.1}, {0.1, 0.1}},
     selection_box = {{ -0.5, -0.5}, {0.5, 0.5}},
     autoplace = resource_autoplace.resource_autoplace_settings({
-      name = "chromite",
+      name = "sp-chromite",
       order = "f",
       base_density = 1,
       base_spots_per_km2 = 0.75,
@@ -152,7 +152,7 @@ data:extend({
   },
   {
     type = "resource",
-    name = "titanium-ore",
+    name = "sp-titanium-ore",
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
     icon_size = 64,
     icon_mipmaps = 4,
@@ -163,12 +163,12 @@ data:extend({
       hardness = 1,
       mining_particle = "titanium-ore-particle",
       mining_time = 1,
-      result = "titanium-ore"
+      result = "sp-titanium-ore"
       },
     collision_box = {{ -0.1, -0.1}, {0.1, 0.1}},
     selection_box = {{ -0.5, -0.5}, {0.5, 0.5}},
     autoplace = resource_autoplace.resource_autoplace_settings({
-      name = "titanium-ore",
+      name = "sp-titanium-ore",
       order = "d",
       base_density = 1,
       base_spots_per_km2 = 0.75,
@@ -200,7 +200,7 @@ data:extend({
   },
   {
     type = "resource",
-    name = "magnesium-ore",
+    name = "sp-magnesium-ore",
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
     icon_size = 64,
     icon_mipmaps = 4,
@@ -211,12 +211,12 @@ data:extend({
       hardness = 1,
       mining_particle = "magnesium-ore-particle",
       mining_time = 1,
-      result = "magnesium-ore"
+      result = "sp-magnesium-ore"
       },
     collision_box = {{ -0.1, -0.1}, {0.1, 0.1}},
     selection_box = {{ -0.5, -0.5}, {0.5, 0.5}},
     autoplace = resource_autoplace.resource_autoplace_settings({
-      name = "magnesium-ore",
+      name = "sp-magnesium-ore",
       order = "d",
       base_density = 1,
       base_spots_per_km2 = 0.75,
@@ -248,7 +248,7 @@ data:extend({
   },
   {
     type = "resource",
-    name = "nickel-ore",
+    name = "sp-nickel-ore",
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
     icon_size = 64,
     icon_mipmaps = 4,
@@ -259,12 +259,12 @@ data:extend({
       hardness = 1,
       mining_particle = "nickel-ore-particle",
       mining_time = 1,
-      result = "nickel-ore"
+      result = "sp-nickel-ore"
       },
     collision_box = {{ -0.1, -0.1}, {0.1, 0.1}},
     selection_box = {{ -0.5, -0.5}, {0.5, 0.5}},
     autoplace = resource_autoplace.resource_autoplace_settings({
-      name = "nickel-ore",
+      name = "sp-nickel-ore",
       order = "d",
       base_density = 1,
       base_spots_per_km2 = 0.75,
@@ -296,7 +296,7 @@ data:extend({
   },
   {
     type = "resource",
-    name = "spodumene",
+    name = "sp-spodumene",
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
     icon_size = 64,
     icon_mipmaps = 4,
@@ -307,12 +307,12 @@ data:extend({
       hardness = 1,
       mining_particle = "spodumene-particle",
       mining_time = 1,
-      result = "spodumene"
+      result = "sp-spodumene"
       },
     collision_box = {{ -0.1, -0.1}, {0.1, 0.1}},
     selection_box = {{ -0.5, -0.5}, {0.5, 0.5}},
     autoplace = resource_autoplace.resource_autoplace_settings({
-      name = "spodumene",
+      name = "sp-spodumene",
       order = "d",
       base_density = 1,
       base_spots_per_km2 = 0.75,
@@ -344,7 +344,7 @@ data:extend({
   },
   {
     type = "resource",
-    name = "tinstone",
+    name = "sp-tinstone",
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
     icon_size = 64,
     icon_mipmaps = 4,
@@ -355,20 +355,20 @@ data:extend({
       hardness = 1,
       mining_particle = "tinstone-particle",
       mining_time = 1,
-      result = "tinstone"
+      result = "sp-tinstone"
       },
     collision_box = {{ -0.1, -0.1}, {0.1, 0.1}},
     selection_box = {{ -0.5, -0.5}, {0.5, 0.5}},
     autoplace = resource_autoplace.resource_autoplace_settings({
-      name = "tinstone",
+      name = "sp-tinstone",
       order = "d",
       base_density = 10,
       base_spots_per_km2 = 0.75,
       has_starting_area_placement = true,
       random_spot_size_minimum = 0.25,
       random_spot_size_maximum = 3,
-      regular_blob_amplitude_multiplier = 1.1,
-      regular_rq_factor_multiplier = 1.5,
+      regular_blob_amplitude_multiplier = 1,
+      regular_rq_factor_multiplier = 0.9,
       candidate_spot_count = 22,
     }),
     stage_counts = {20000, 12000, 8000, 4000, 2000, 1000, 500, 200},
@@ -392,7 +392,7 @@ data:extend({
   },
   {
     type = "resource",
-    name = "tungsten-ore",
+    name = "sp-tungsten-ore",
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
     icon_size = 64,
     icon_mipmaps = 4,
@@ -403,12 +403,12 @@ data:extend({
       hardness = 1,
       mining_particle = "tungsten-ore-particle",
       mining_time = 1,
-      result = "tungsten-ore"
+      result = "sp-tungsten-ore"
       },
     collision_box = {{ -0.1, -0.1}, {0.1, 0.1}},
     selection_box = {{ -0.5, -0.5}, {0.5, 0.5}},
     autoplace = resource_autoplace.resource_autoplace_settings({
-      name = "tungsten-ore",
+      name = "sp-tungsten-ore",
       order = "d",
       base_density = 1,
       base_spots_per_km2 = 0.75,
@@ -440,7 +440,7 @@ data:extend({
   },
   {
     type = "resource",
-    name = "zinc-ore",
+    name = "sp-zinc-ore",
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
     icon_size = 64,
     icon_mipmaps = 4,
@@ -451,12 +451,12 @@ data:extend({
       hardness = 1,
       mining_particle = "zinc-ore-particle",
       mining_time = 1,
-      result = "zinc-ore"
+      result = "sp-zinc-ore"
       },
     collision_box = {{ -0.1, -0.1}, {0.1, 0.1}},
     selection_box = {{ -0.5, -0.5}, {0.5, 0.5}},
     autoplace = resource_autoplace.resource_autoplace_settings({
-      name = "zinc-ore",
+      name = "sp-zinc-ore",
       order = "d",
       base_density = 1,
       base_spots_per_km2 = 0.75,
@@ -488,7 +488,7 @@ data:extend({
   },
   {
     type = "resource",
-    name = "zirconium-ore",
+    name = "sp-zirconium-ore",
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
     icon_size = 64,
     icon_mipmaps = 4,
@@ -499,12 +499,12 @@ data:extend({
       hardness = 1,
       mining_particle = "zirconium-ore-particle",
       mining_time = 1,
-      result = "zirconium-ore"
+      result = "sp-zirconium-ore"
       },
     collision_box = {{ -0.1, -0.1}, {0.1, 0.1}},
     selection_box = {{ -0.5, -0.5}, {0.5, 0.5}},
     autoplace = resource_autoplace.resource_autoplace_settings({
-      name = "zirconium-ore",
+      name = "sp-zirconium-ore",
       order = "d",
       base_density = 1,
       base_spots_per_km2 = 0.75,

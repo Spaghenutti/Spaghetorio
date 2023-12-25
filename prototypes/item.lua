@@ -22,7 +22,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "chromite",  -- #ForRegEx# - item
+    name = "sp-chromite",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-chromite.png",
     tint = {r=0.5, g=0.5, b=1.0, a=1.0},
     icon_size = 256,
@@ -56,7 +56,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "titanium-ore",  -- #ForRegEx# - item
+    name = "sp-titanium-ore",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-titanium-ore.png",
     tint = {r=0.4, g=0.3, b=0.3, a=1.0},
     icon_size = 256,
@@ -73,7 +73,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "magnesium-ore",  -- #ForRegEx# - item
+    name = "sp-magnesium-ore",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-magnesium-ore.png",
     tint = {r=0.4, g=0.3, b=0.3, a=1.0},
     icon_size = 256,
@@ -90,7 +90,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "tinstone",  -- #ForRegEx# - item
+    name = "sp-tinstone",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-tinstone.png",
     tint = {r=0.4, g=0.3, b=0.3, a=1.0},
     icon_size = 256,
@@ -107,7 +107,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "zirconium-ore",  -- #ForRegEx# - item
+    name = "sp-zirconium-ore",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-zirconium-ore.png",
     tint = {r=0.4, g=0.3, b=0.3, a=1.0},
     icon_size = 256,
@@ -124,7 +124,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "nickel-ore",  -- #ForRegEx# - item
+    name = "sp-nickel-ore",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-nickel-ore.png",
     tint = {r=0.4, g=0.3, b=0.3, a=1.0},
     icon_size = 256,
@@ -141,7 +141,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "tungsten-ore",  -- #ForRegEx# - item
+    name = "sp-tungsten-ore",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-tungsten-ore.png",
     tint = {r=0.4, g=0.3, b=0.3, a=1.0},
     icon_size = 256,
@@ -158,7 +158,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "zinc-ore",  -- #ForRegEx# - item
+    name = "sp-zinc-ore",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-zinc-ore.png",
     tint = {r=0.4, g=0.3, b=0.3, a=1.0},
     icon_size = 256,
@@ -175,7 +175,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "spodumene",  -- #ForRegEx# - item
+    name = "sp-spodumene",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-spodumene.png",
     tint = {r=0.4, g=0.3, b=0.3, a=1.0},
     icon_size = 256,
@@ -192,7 +192,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "salt",  -- #ForRegEx# - item
+    name = "sp-salt",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-salt.png",
     icon_size = 256,
     icon_mipmaps = 4,
@@ -254,7 +254,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "calcium",  -- #ForRegEx# - item
+    name = "sp-calcium",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-calcium.png",
     icon_size = 256,
     scale = 0.25,
@@ -274,7 +274,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "magnesium-chloride",  -- #ForRegEx# - item
+    name = "sp-magnesium-chloride",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-magnesium-chloride.png",
     icon_size = 256,
     scale = 0.25,
@@ -314,7 +314,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "titanium-cloride",  -- #ForRegEx# - item
+    name = "sp-titanium-cloride",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-titanium-cloride.png",
     icon_size = 256,
     scale = 0.25,
@@ -324,7 +324,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "titanium-sponge",  -- #ForRegEx# - item
+    name = "sp-titanium-sponge",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-titanium-sponge.png",
     icon_size = 256,
     scale = 0.25,
@@ -587,7 +587,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "titanium-ingot",  -- #ForRegEx# - item
+    name = "sp-titanium-ingot",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/icons/titanium-ingot.png",
     icon_size = 256,
     scale = 0.25,
@@ -597,7 +597,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "titanium-plate",  -- #ForRegEx# - item
+    name = "sp-titanium-plate",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/icons/titanium-plate.png",
     icon_size = 256,
     scale = 0.25,
@@ -657,7 +657,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "magnesium-slab",  -- #ForRegEx# - item
+    name = "sp-magnesium-slab",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-magnesium-slab.png",
     icon_size = 256,
     scale = 0.25,
@@ -1005,7 +1005,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "titanium-frame",  -- #ForRegEx# - item
+    name = "sp-titanium-frame",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-titanium-frame.png",
     icon_size = 256,
     scale = 0.25,
