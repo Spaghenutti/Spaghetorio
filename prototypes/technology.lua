@@ -1,6 +1,50 @@
 data:extend({
   {
     type = "technology",
+    name = "sp-copper-machining",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghenutti__/graphics/icons/copper-tube.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "copper-tube"
+      }
+    },
+    unit =
+    {
+      count = 2,
+      ingredients = {{"basic-tech-card", 1}},
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-iron-machining",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghenutti__/graphics/technology/hr-iron-gear-wheel.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "iron-gear-wheel"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "bolts"
+      }
+    },
+    unit =
+    {
+      count = 2,
+      ingredients = {{"basic-tech-card", 1}},
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
     name = "sp-aluminum-machining",  -- #ForRegEx# - technology
     icon_size = 256,
     icon = "__Spaghenutti__/graphics/dummy/dummy-technology-sp-aluminum-machining.png",
