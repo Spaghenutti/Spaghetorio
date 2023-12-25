@@ -25,10 +25,6 @@ data:extend({
   },
   {
     type = "noise-layer",
-    name = "lead-ore"
-  },
-  {
-    type = "noise-layer",
     name = "spodumene"
   },
   {

@@ -510,19 +510,6 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "lead-slab",  -- #ForRegEx# - recipe
-    category = "smelting",
-    enabled = false,
-    energy_required = 4,  -- time in seconds to make the item
-    ingredients = {
-      {type = "item", name = "lead-ore", amount = 2}
-    },
-    results = {
-      {type = "item", name = "lead-slab", amount = 3}
-    }
-  },
-  {
-    type = "recipe",
     name = "niobium-powder",  -- #ForRegEx# - recipe
     category = "chemistry",
     enabled = false,

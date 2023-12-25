@@ -49,14 +49,6 @@ data:extend({
   },
   {
     type = "autoplace-control",
-    name = "lead-ore",
-    localised_name = {"", "[entity=lead-ore] ", {"entity-name.lead-ore"}},
-    category = "resource",
-    richness = true,
-    order = "b[lead-ore]"
-  },
-  {
-    type = "autoplace-control",
     name = "spodumene",
     localised_name = {"", "[entity=spodumene] ", {"entity-name.spodumene"}},
     category = "resource",
