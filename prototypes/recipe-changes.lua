@@ -278,7 +278,7 @@ data:extend({
     energy_required = 10,
     ingredients =
     {
-      {"advanced-compute-unit", 10},
+      {"sp-advanced-compute-unit", 10},
       {"sp-bolts", 100},
       {"sp-control-rod", 6},
       {"sp-pressure-tube", 10},

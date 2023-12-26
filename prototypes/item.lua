@@ -1276,7 +1276,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "advanced-compute-unit",  -- #ForRegEx# - item
+    name = "sp-advanced-compute-unit",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-advanced-compute-unit.png",
     icon_size = 256,
     scale = 0.25,
@@ -1615,7 +1615,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "quantum-data-plane",  -- #ForRegEx# - item
+    name = "sp-quantum-data-plane",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-quantum-data-plane.png",
     icon_size = 256, icon_mipmaps = 4,
     subgroup = "advanced-intermediate-product",

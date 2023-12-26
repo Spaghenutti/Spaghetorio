@@ -1555,7 +1555,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "advanced-compute-unit",  -- #ForRegEx# - recipe
+    name = "sp-advanced-compute-unit",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 8,  -- time in seconds to make the item
@@ -1567,12 +1567,12 @@ data:extend({
       {type = "item", name = "sp-integrated-circuit", amount = 5}
     },
     results = {
-      {type = "item", name = "advanced-compute-unit", amount = 1}
+      {type = "item", name = "sp-advanced-compute-unit", amount = 1}
     }
   },
   {
     type = "recipe",
-    name = "quantum-data-plane",  -- #ForRegEx# - recipe
+    name = "sp-quantum-data-plane",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 30,  -- time in seconds to make the item
@@ -1583,7 +1583,7 @@ data:extend({
       {type = "item", name = "sp-gold", amount = 3}
     },
     results = {
-      {type = "item", name = "quantum-data-plane", amount = 1}
+      {type = "item", name = "sp-quantum-data-plane", amount = 1}
     }
   },
   ------------------------------------------------------------------------------
@@ -1591,7 +1591,7 @@ data:extend({
   ------------------------------------------------------------------------------
   {
     type = "recipe",
-    name = "medium-electric-pole",
+    name = "sp-medium-electric-pole",
     enabled = false,
     ingredients =
     {
@@ -1603,7 +1603,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "landfill-from-iron-ore",
+    name = "sp-landfill-from-iron-ore",
     energy_required = 0.5,
     enabled = false,
     category = "crafting",
@@ -1617,7 +1617,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "landfill-from-limestone",
+    name = "sp-landfill-from-limestone",
     energy_required = 0.5,
     enabled = false,
     category = "crafting",
@@ -1630,7 +1630,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "landfill-from-limestone-and-stone",
+    name = "sp-landfill-from-limestone-and-stone",
     energy_required = 0.5,
     enabled = false,
     category = "crafting",
@@ -1644,7 +1644,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "landfill-from-cement",
+    name = "sp-landfill-from-cement",
     energy_required = 1,
     enabled = false,
     category = "crafting",
@@ -1658,7 +1658,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "stone-brick-from-limestone",
+    name = "sp-stone-brick-from-limestone",
     category = "intermediate-smelting",
     energy_required = 3.2,
     enabled = false,
@@ -1670,7 +1670,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "steel-plate-from-graphite",
+    name = "sp-steel-plate-from-graphite",
     category = "smelting",
     normal =
     {
@@ -1695,7 +1695,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "red-wire-from-aluminum",
+    name = "sp-red-wire-from-aluminum",
     enabled = false,
     ingredients =
     {
@@ -1706,7 +1706,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "green-wire-from-aluminum",
+    name = "sp-green-wire-from-aluminum",
     enabled = false,
     ingredients =
     {
