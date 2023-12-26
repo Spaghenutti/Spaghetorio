@@ -1,6 +1,6 @@
 local util = require("data-util")
 
--- base items
+-- items
 util.change_recepie("iron-plate",
                     {{"iron-ore", 2}},
                     {{"iron-ore", 3}},
@@ -26,8 +26,6 @@ util.change_recepie("electronic-circuit-stone",
                     {{"copper-cable", 8}, {"stone-tablet", 2}, {"solder", 2}},
                     0.5,
                     1)
-
--- intermediates
 util.change_recepie("motor",
                     {{"iron-plate", 1}, {"bolts", 3}, {"iron-gear-wheel", 2}},
                     {{"iron-plate", 2}, {"bolts", 6}, {"transport-belt", 4}},
@@ -48,6 +46,11 @@ util.change_recepie("electric-motor",
                     {{"copper-cable", 16}, {"bolts", 10}, {"iron-plate", 8}, {"iron-stick", 1}},
                     nil,
                     nil)
+util.change_recepie("sp-titanium-nitride",
+                    {{type = "item", name = "sp-titanium-ingot", amount = 1}, {type = "fluid", name = "nitrogen", amount = 20}},  -- krastorio2 has nitrogen
+                    {{type = "item", name = "sp-titanium-ingot", amount = 2}, {type = "fluid", name = "nitrogen", amount = 40}},  -- krastorio2 has nitrogen
+                    3,
+                    4)
 
 -- Buildings
 util.change_recepie("stone-furnace",

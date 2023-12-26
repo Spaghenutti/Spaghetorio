@@ -160,7 +160,7 @@ data:extend({
     },
     results = {
       {type = "item", name = "sodium", amount = 2},
-      {type = "fluid", name = "chlorine", amount = 3}
+      {type = "fluid", name = "sp-chlorine", amount = 3}
     },
     crafting_machine_tint = {
       primary = {r = 1.000, g = 1.000, b = 1.000, a = 1.000}, -- #fefeffff
@@ -216,7 +216,7 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-magnesium-slab", amount = 2},
-      {type = "fluid", name = "chlorine", amount = 1}
+      {type = "fluid", name = "sp-chlorine", amount = 1}
     },
     crafting_machine_tint = {
       primary = {r = 1.000, g = 1.000, b = 1.000, a = 1.000}, -- #fefeffff
@@ -298,16 +298,16 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "titanium-nitride",  -- #ForRegEx# - recipe
+    name = "sp-titanium-nitride",  -- #ForRegEx# - recipe
     category = "chemistry",
     enabled = false,
     energy_required = 6,  -- time in seconds to make the item
     ingredients = {
       {type = "item", name = "sp-titanium-ingot", amount = 2},
-      {type = "fluid", name = "nitrogen", amount = 40},
+      {type = "fluid", name = "sp-nitrogen", amount = 40},
     },
     results = {
-      {type = "item", name = "titanium-nitride", amount = 2}
+      {type = "item", name = "sp-titanium-nitride", amount = 2}
     }
   },
   {
@@ -538,8 +538,8 @@ data:extend({
       {type = "fluid", name = "water", amount = 50}
     },
     results = {
-      {type = "fluid", name = "aqueous-niobium", amount = 50},
-      {type = "fluid", name = "aqueous-tantalum", amount = 6}
+      {type = "fluid", name = "sp-aqueous-niobium", amount = 50},
+      {type = "fluid", name = "sp-aqueous-tantalum", amount = 6}
     }
   },
   {
@@ -549,7 +549,7 @@ data:extend({
     enabled = false,
     energy_required = 3.6,  -- time in seconds to make the item
     ingredients = {
-      {type = "fluid", name = "aqueous-niobium", amount = 50}
+      {type = "fluid", name = "sp-aqueous-niobium", amount = 50}
     },
     results = {
       {type = "item", name = "niobium-billet", amount = 1}
@@ -562,7 +562,7 @@ data:extend({
     enabled = false,
     energy_required = 2.8,  -- time in seconds to make the item
     ingredients = {
-      {type = "fluid", name = "aqueous-tantalum", amount = 50}
+      {type = "fluid", name = "sp-aqueous-tantalum", amount = 50}
     },
     results = {
       {type = "item", name = "tantalum-billet", amount = 1}
@@ -1009,7 +1009,7 @@ data:extend({
     energy_required = 2,  -- time in seconds to make the item
     ingredients = {
       {type = "item", name = "silica", amount = 1},
-      {type = "fluid", name = "oxygen", amount = 40}
+      {type = "fluid", name = "sp-oxygen", amount = 40}
     },
     results = {
       {type = "item", name = "lens", amount = 1}
@@ -1022,7 +1022,7 @@ data:extend({
     enabled = false,
     energy_required = 1.6,  -- time in seconds to make the item
     ingredients = {
-      {type = "fluid", name = "aqueous-tantalum", amount = 10},
+      {type = "fluid", name = "sp-aqueous-tantalum", amount = 10},
       {type = "item", name = "silica", amount = 1}
     },
     results = {
@@ -1165,7 +1165,7 @@ data:extend({
     energy_required = 4.8,  -- time in seconds to make the item
     ingredients = {
       {type = "item", name = "sp-graphite", amount = 4},
-      {type = "fluid", name = "nitrogen", amount = 15},
+      {type = "fluid", name = "sp-nitrogen", amount = 15},
     },
     results = {
       {type = "item", name = "kevlar", amount = 2}
@@ -1179,7 +1179,7 @@ data:extend({
     energy_required = 3.2,  -- time in seconds to make the item
     ingredients = {
       {type = "item", name = "sp-graphite", amount = 3},
-      {type = "fluid", name = "oxygen", amount = 25},
+      {type = "fluid", name = "sp-oxygen", amount = 25},
     },
     results = {
       {type = "item", name = "composites", amount = 2}
@@ -1193,8 +1193,8 @@ data:extend({
     energy_required = 4,  -- time in seconds to make the item
     ingredients = {
       {type = "item", name = "sp-graphite", amount = 4},
-      {type = "fluid", name = "nitrogen", amount = 25},
-      {type = "fluid", name = "oxygen", amount = 15},
+      {type = "fluid", name = "sp-nitrogen", amount = 25},
+      {type = "fluid", name = "sp-oxygen", amount = 15},
     },
     results = {
       {type = "item", name = "polymer", amount = 3}
@@ -1208,8 +1208,8 @@ data:extend({
     energy_required = 4,  -- time in seconds to make the item
     ingredients = {
       {type = "item", name = "sp-graphite", amount = 3},
-      {type = "fluid", name = "oxygen", amount = 35},
-      {type = "fluid", name = "hydrogen", amount = 15},
+      {type = "fluid", name = "sp-oxygen", amount = 35},
+      {type = "fluid", name = "sp-hydrogen", amount = 15},
     },
     results = {
       {type = "item", name = "epoxy", amount = 2}
@@ -1401,7 +1401,7 @@ data:extend({
       {type = "item", name = "silicon", amount = 1},
       {type = "item", name = "sp-aluminum-sheet", amount = 1},
       {type = "item", name = "silver", amount = 1},
-      {type = "fluid", name = "helium", amount = 10}
+      {type = "fluid", name = "sp-helium", amount = 10}
     },
     results = {
       {type = "item", name = "laser", amount = 1}
@@ -1485,7 +1485,7 @@ data:extend({
     ingredients = {
       {type = "item", name = "lanthanum", amount = 1},
       {type = "item", name = "iron-plate", amount = 2},
-      {type = "fluid", name = "hydrogen", amount = 100}
+      {type = "fluid", name = "sp-hydrogen", amount = 100}
     },
     results = {
       {type = "item", name = "superconductor", amount = 1}
@@ -1555,8 +1555,8 @@ data:extend({
     enabled = false,
     energy_required = 4,  -- time in seconds to make the item
     ingredients = {
-      {type = "fluid", name = "oxygen", amount = 100},
-      {type = "fluid", name = "chlorine", amount = 50}
+      {type = "fluid", name = "sp-oxygen", amount = 100},
+      {type = "fluid", name = "sp-chlorine", amount = 50}
     },
     results = {
       {type = "item", name = "bleach", amount = 1}
@@ -1606,7 +1606,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "coolant",  -- #ForRegEx# - recipe
+    name = "sp-coolant",  -- #ForRegEx# - recipe
     category = "chemistry",
     enabled = false,
     energy_required = 3.2,  -- time in seconds to make the item
@@ -1616,7 +1616,7 @@ data:extend({
       {type = "fluid", name = "water", amount = 50}
     },
     results = {
-      {type = "fluid", name = "coolant", amount = 50}
+      {type = "fluid", name = "sp-coolant", amount = 50}
     }
   },
   {
@@ -1644,7 +1644,7 @@ data:extend({
       {type = "item", name = "iron-plate", amount = 1},
       {type = "item", name = "sp-titanium-frame", amount = 1},
       {type = "item", name = "ceramic", amount = 3},
-      {type = "fluid", name = "liquid-nitrogen", amount = 40}
+      {type = "fluid", name = "sp-liquid-nitrogen", amount = 40}
     },
     results = {
       {type = "item", name = "electromagnet", amount = 1}
@@ -1818,7 +1818,7 @@ data:extend({
     ingredients = {
       {type = "item", name = "TiAlSn", amount = 4},
       {type = "item", name = "titanium-carbide", amount = 2},
-      {type = "item", name = "titanium-nitride", amount = 1},
+      {type = "item", name = "sp-titanium-nitride", amount = 1},
       {type = "item", name = "tungsten-billet", amount = 5},
       {type = "item", name = "ceramic", amount = 5},
       {type = "item", name = "turbine-blade", amount = 24}
@@ -1835,7 +1835,7 @@ data:extend({
     energy_required = 26,  -- time in seconds to make the item
     ingredients = {
       {type = "item", name = "TiAlSn", amount = 4},
-      {type = "item", name = "titanium-nitride", amount = 2},
+      {type = "item", name = "sp-titanium-nitride", amount = 2},
       {type = "item", name = "sp-titanium-frame", amount = 20},
       {type = "item", name = "flange", amount = 5},
       {type = "item", name = "turbine-blade", amount = 24},
@@ -1980,7 +1980,7 @@ data:extend({
     ingredients = {
       {type = "item", name = "uranium-235", amount = 2},
       {type = "item", name = "sp-graphite", amount = 2},
-      {type = "fluid", name = "nitrogen", amount = 100},
+      {type = "fluid", name = "sp-nitrogen", amount = 100},
     },
     results = {
       {type = "item", name = "uranium-fuel-rod", amount = 1}
@@ -2002,7 +2002,7 @@ data:extend({
     },
     results = {
       {type = "item", name = "uranium-238", amount = 3},
-      {type = "fluid", name = "deuterium", amount = 10}
+      {type = "fluid", name = "sp-deuterium", amount = 10}
     }
   },
   {
@@ -2048,13 +2048,13 @@ data:extend({
     energy_required = 80,  -- time in seconds to make the item
     ingredients = {
       {type = "item", name = "used-up-plutonium-fuel-rod", amount = 6},
-      {type = "fluid", name = "chlorine", amount = 60}
+      {type = "fluid", name = "sp-chlorine", amount = 60}
     },
     results = {
       {type = "item", name = "uranium-238", probability = 0.37, amount = 2},
       {type = "item", name = "uranium-235", probability = 0.03, amount = 1},
       {type = "item", name = "plutonium-239", probability = 0.6, amount = 1},
-      {type = "fluid", name = "deuterium", amount = 10}
+      {type = "fluid", name = "sp-deuterium", amount = 10}
     }
   },
   {
@@ -2171,7 +2171,7 @@ data:extend({
     energy_required = 0.4,  -- time in seconds to make the item
     ingredients = {
       {type = "item", name = "duralumin", amount = 1},
-      {type = "fluid", name = "hydrogen", amount = 1},
+      {type = "fluid", name = "sp-hydrogen", amount = 1},
     },
     results = {
       {type = "item", name = "cubit", amount = 1}

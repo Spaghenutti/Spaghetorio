@@ -853,7 +853,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "titanium-nitride",  -- #ForRegEx# - item
+    name = "sp-titanium-nitride",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-titanium-nitride.png",
     icon_size = 256,
     scale = 0.25,
