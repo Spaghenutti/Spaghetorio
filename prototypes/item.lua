@@ -474,7 +474,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "lithium-oxide",  -- #ForRegEx# - item
+    name = "sp-lithium-oxide",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-lithium-oxide.png",
     icon_size = 256,
     scale = 0.25,
@@ -484,7 +484,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "lithium",  -- #ForRegEx# - item
+    name = "sp-lithium",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-lithium.png",
     icon_size = 256,
     scale = 0.25,
@@ -494,7 +494,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "plutonium-239",  -- #ForRegEx# - item
+    name = "sp-plutonium-239",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-plutonium-239.png",
     icon_size = 256,
     scale = 0.25,
@@ -504,7 +504,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "plutonium-240",  -- #ForRegEx# - item
+    name = "sp-plutonium-240",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-plutonium-240.png",
     icon_size = 256,
     scale = 0.25,
@@ -873,7 +873,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "carbon-fiber",  -- #ForRegEx# - item
+    name = "sp-carbon-fiber",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-carbon-fiber.png",
     icon_size = 256,
     scale = 0.25,
@@ -1387,7 +1387,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "valve",  -- #ForRegEx# - item
+    name = "sp-valve",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-valve.png",
     icon_size = 256, icon_mipmaps = 4,
     subgroup = "intermediate-product",
@@ -1396,7 +1396,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "gyro",  -- #ForRegEx# - item
+    name = "sp-gyro",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-gyro.png",
     icon_size = 256, icon_mipmaps = 4,
     subgroup = "intermediate-product",
@@ -1405,7 +1405,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "pressure-tank",  -- #ForRegEx# - item
+    name = "sp-pressure-tank",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-pressure-tank.png",
     icon_size = 256, icon_mipmaps = 4,
     subgroup = "intermediate-product",
@@ -1414,7 +1414,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "high-pressure-tank",  -- #ForRegEx# - item
+    name = "sp-high-pressure-tank",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-high-pressure-tank.png",
     icon_size = 256, icon_mipmaps = 4,
     subgroup = "intermediate-product",
@@ -1516,7 +1516,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "spark-plug",  -- #ForRegEx# - item
+    name = "sp-spark-plug",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-spark-plug.png",
     icon_size = 256, icon_mipmaps = 4,
     subgroup = "advanced-intermediate-product",
@@ -1525,7 +1525,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "turbine-blade",  -- #ForRegEx# - item
+    name = "sp-turbine-blade",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-turbine-blade.png",
     icon_size = 256, icon_mipmaps = 4,
     subgroup = "advanced-intermediate-product",
@@ -1534,7 +1534,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "turbine-rotor",  -- #ForRegEx# - item
+    name = "sp-turbine-rotor",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-turbine-rotor.png",
     icon_size = 256, icon_mipmaps = 4,
     subgroup = "advanced-intermediate-product",
@@ -1543,7 +1543,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "turbine-stator",  -- #ForRegEx# - item
+    name = "sp-turbine-stator",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-turbine-stator.png",
     icon_size = 256, icon_mipmaps = 4,
     subgroup = "advanced-intermediate-product",
@@ -1552,7 +1552,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "turbopump",  -- #ForRegEx# - item
+    name = "sp-turbopump",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-turbopump.png",
     icon_size = 256, icon_mipmaps = 4,
     subgroup = "advanced-intermediate-product",
@@ -1561,7 +1561,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "nozzle",  -- #ForRegEx# - item
+    name = "sp-nozzle",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-nozzle.png",
     icon_size = 256, icon_mipmaps = 4,
     subgroup = "advanced-intermediate-product",
@@ -1570,7 +1570,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "fuel-infector",  -- #ForRegEx# - item
+    name = "sp-fuel-injector",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-fuel-infector.png",
     icon_size = 256, icon_mipmaps = 4,
     subgroup = "advanced-intermediate-product",
@@ -1579,7 +1579,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "combustion-chamber",  -- #ForRegEx# - item
+    name = "sp-combustion-chamber",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-combustion-chamber.png",
     icon_size = 256, icon_mipmaps = 4,
     subgroup = "advanced-intermediate-product",
@@ -1588,7 +1588,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "rocket-engine",  -- #ForRegEx# - item
+    name = "sp-rocket-engine",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-rocket-engine.png",
     icon_size = 256, icon_mipmaps = 4,
     subgroup = "advanced-intermediate-product",
@@ -1597,7 +1597,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "solid-rocket-motor",  -- #ForRegEx# - item
+    name = "sp-solid-rocket-motor",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-solid-rocket-motor.png",
     icon_size = 256, icon_mipmaps = 4,
     subgroup = "advanced-intermediate-product",
@@ -1642,7 +1642,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "reactor-core",  -- #ForRegEx# - item
+    name = "sp-reactor-core",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-reactor-core.png",
     icon_size = 256, icon_mipmaps = 4,
     subgroup = "advanced-intermediate-product",
@@ -1714,7 +1714,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "used-up-uranium-fuel-rod",  -- #ForRegEx# - item
+    name = "sp-used-up-uranium-fuel-rod",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-used-up-uranium-fuel-rod.png",
     icon_size = 256, icon_mipmaps = 4,
     subgroup = "fuel-processing",
@@ -1723,7 +1723,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "plutonium-fuel-rod",  -- #ForRegEx# - item
+    name = "sp-plutonium-fuel-rod",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-plutonium-fuel-rod.png",
     icon_size = 256, icon_mipmaps = 4,
     subgroup = "fuel-processing",

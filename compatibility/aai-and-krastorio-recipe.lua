@@ -353,7 +353,7 @@ data:extend({
     results = {
       {type = "item", name = "uranium-238", probability = 0.37, amount = 2},
       {type = "item", name = "uranium-235", probability = 0.03, amount = 1},
-      {type = "item", name = "plutonium-239", probability = 0.6, amount = 1},
+      {type = "item", name = "sp-plutonium-239", probability = 0.6, amount = 1},
       {type = "fluid", name = "sp-deuterium", amount = 10}
     }
   },
@@ -541,6 +541,46 @@ data:extend({
       {type = "item", name = "sp-cerium", probability = 0.07, amount = 1},
       {type = "item", name = "sp-neodymium", probability = 0.04, amount = 1},
       {type = "item", name = "sand", probability = 0.82, amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-plutonium-239",  -- #ForRegEx# - recipe
+    icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
+    icon_size = 256,
+    scale = 0.25,
+    category = "high-energy-physics",
+    subgroup = "raw-resource",
+    enabled = false,
+    energy_required = 3.2,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "lithium", amount = 1},
+      {type = "item", name = "uranium-238", amount = 1}
+    },
+    results = {
+      {type = "item", name = "uranium-238", probability = 0.84, amount = 1},
+      {type = "item", name = "sp-plutonium-239", probability = 0.15, amount = 1},
+      {type = "item", name = "sp-plutonium-240", probability = 0.01, amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-plutonium-240",  -- #ForRegEx# - recipe
+    icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
+    icon_size = 256,
+    scale = 0.25,
+    category = "high-energy-physics",
+    subgroup = "raw-resource",
+    enabled = false,
+    energy_required = 4,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "lithium", amount = 1},
+      {type = "item", name = "sp-plutonium-239", amount = 1}
+    },
+    results = {
+      {type = "item", name = "uranium-238", probability = 0.2, amount = 1},
+      {type = "item", name = "sp-plutonium-239", probability = 0.72, amount = 1},
+      {type = "item", name = "sp-plutonium-240", probability = 0.08, amount = 1}
     }
   },
 })

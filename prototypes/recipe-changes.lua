@@ -282,7 +282,7 @@ data:extend({
       {"sp-bolts", 100},
       {"sp-control-rod", 6},
       {"sp-pressure-tube", 10},
-      {"pressure-tank", 1},
+      {"sp-pressure-tank", 1},
       {"electric-engine-unit", 4},
       {"low-density-structure", 5}
     },
@@ -1076,7 +1076,7 @@ data:extend({
     {
       {"steel-plate", 3},
       {"electronic-circuit", 3},
-      {"lithium-oxide", 2}
+      {"sp-lithium-oxide", 2}
     },
     result = "poison-capsule"
   },
@@ -1188,8 +1188,8 @@ data:extend({
       {"sp-circuit-board", 1},
       {"explosives", 4},
       {"sp-titanium-frame", 2},
-      {"solid-rocket-motor", 1},
-      {"gyro", 3}
+      {"sp-solid-rocket-motor", 1},
+      {"sp-gyro", 3}
     },
     result = "rocket"
   },
@@ -1203,8 +1203,8 @@ data:extend({
       {"sp-circuit-board", 1},
       {"explosives", 12},
       {"sp-titanium-frame", 2},
-      {"solid-rocket-motor", 1},
-      {"gyro", 3}
+      {"sp-solid-rocket-motor", 1},
+      {"sp-gyro", 3}
     },
     result = "explosive-rocket"
   },
@@ -1219,8 +1219,8 @@ data:extend({
       {"explosives", 10},
       {"sp-titanium-frame", 4},
       {"uranium-235", 30},
-      {"solid-rocket-motor", 1},
-      {"gyro", 3}
+      {"sp-solid-rocket-motor", 1},
+      {"sp-gyro", 3}
     },
     result = "atomic-bomb"
   },
@@ -1435,10 +1435,10 @@ data:extend({
     ingredients =
     {
       {"sp-flange", 10},
-      {"valve", 6},
+      {"sp-valve", 6},
       {"steel-plate", 6},
       {"sp-copper-tube", 8},
-      {"pressure-tank", 3}
+      {"sp-pressure-tank", 3}
     },
     result = "fluid-wagon"
   },
@@ -1513,8 +1513,8 @@ data:extend({
     ingredients =
     {
       {"sp-pressure-tube", 5},
-      {"pressure-tank", 2},
-      {"valve", 1},
+      {"sp-pressure-tank", 2},
+      {"sp-valve", 1},
       {"sp-bolts", 6}
     },
     result = "flamethrower"
@@ -1642,9 +1642,9 @@ data:extend({
       {"sp-tungsten-billet", 36},
       {"pump", 16},
       {"sp-pressure-tube", 100},
-      {"pressure-tank", 20},
+      {"sp-pressure-tank", 20},
       {"sp-flange", 40},
-      {"valve", 200},
+      {"sp-valve", 200},
       {"sp-cryostat", 8},
       {"sp-circuit-board", 200},
       {"sp-cmos", 200},
@@ -1698,7 +1698,7 @@ data:extend({
       {"sp-connecting-rod", 5},
       {"sp-ball-bearing", 12},
       {"sp-pressure-tube", 10},
-      {"valve", 6},
+      {"sp-valve", 6},
       {"sp-flange", 4}
     },
     result = "pumpjack",
@@ -1715,8 +1715,8 @@ data:extend({
       {"electronic-circuit", 10},
       {"sp-copper-tube", 50},
       {"sp-bolts", 24},
-      {"pressure-tank", 6},
-      {"valve", 16},
+      {"sp-pressure-tank", 6},
+      {"sp-valve", 16},
       {"sp-flange", 20}
     },
     result = "oil-refinery",
@@ -1800,7 +1800,7 @@ data:extend({
     {
       {"iron-plate", 20},
       {"sp-flange", 2},
-      {"valve", 2},
+      {"sp-valve", 2},
       {"sp-copper-tube", 6},
       {"sp-bolts", 2},
     },
@@ -1893,8 +1893,8 @@ data:extend({
       {"rocket-control-unit", 2},
       {"low-density-structure", 10},
       {"rocket-fuel", 4},
-      {"rocket-engine", 1},
-      {"high-pressure-tank", 1}
+      {"sp-rocket-engine", 1},
+      {"sp-high-pressure-tank", 1}
     },
     result= "rocket-part"
   },
@@ -1926,15 +1926,15 @@ data:extend({
     ingredients =
     {
       {"concrete", 500},
-      {"reactor-core", 1},
+      {"sp-reactor-core", 1},
       {"sp-compute-unit", 48},
       {"sp-pressure-tube", 36},
       {"sp-bolts", 600},
       {"sp-flange", 24},
       {"sp-plate-heat-exchanger", 36},
-      {"pressure-tank", 12},
+      {"sp-pressure-tank", 12},
       {"accumulator", 24},
-      {"turbopump", 6},
+      {"sp-turbopump", 6},
       {"copper-cable", 400}
     },
     result = "nuclear-reactor",
@@ -1967,7 +1967,7 @@ data:extend({
       {"steel-plate", 10},
       {"sp-bolts", 10},
       {"sp-flange", 4},
-      {"valve", 4},
+      {"sp-valve", 4},
       {"sp-copper-tube", 100},
       {"sp-plate-heat-exchanger", 3}
     },
@@ -1992,8 +1992,8 @@ data:extend({
     enabled = false,
     energy_required = 3,
     ingredients = {
-      {"turbine-rotor", 1},
-      {"turbine-stator", 1},
+      {"sp-turbine-rotor", 1},
+      {"sp-turbine-stator", 1},
       {"sp-bolts", 20},
       {"electric-engine-unit", 5},
       {"sp-ball-bearing", 8},

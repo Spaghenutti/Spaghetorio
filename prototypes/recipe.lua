@@ -1180,21 +1180,22 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "spark-plug",  -- #ForRegEx# - recipe
+    name = "sp-spark-plug",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 4,  -- time in seconds to make the item
     ingredients = {
       {type = "item", name = "sp-inconel", amount = 2},
-      {type = "item", name = "copper-plate", amount = 1}
+      {type = "item", name = "copper-plate", amount = 1},
+      {type = "item", name = "sp-tungsten-carbide", amount = 1}
     },
     results = {
-      {type = "item", name = "spark-plug", amount = 1}
+      {type = "item", name = "sp-spark-plug", amount = 4}
     }
   },
   {
     type = "recipe",
-    name = "valve",  -- #ForRegEx# - recipe
+    name = "sp-valve",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 4,  -- time in seconds to make the item
@@ -1203,12 +1204,12 @@ data:extend({
       {type = "item", name = "sp-bolts", amount = 1}
     },
     results = {
-      {type = "item", name = "valve", amount = 1}
+      {type = "item", name = "sp-valve", amount = 1}
     }
   },
   {
     type = "recipe",
-    name = "gyro",  -- #ForRegEx# - recipe
+    name = "sp-gyro",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 4,  -- time in seconds to make the item
@@ -1218,12 +1219,12 @@ data:extend({
       {type = "item", name = "copper-cable", amount = 1}
     },
     results = {
-      {type = "item", name = "gyro", amount = 1}
+      {type = "item", name = "sp-gyro", amount = 1}
     }
   },
   {
     type = "recipe",
-    name = "pressure-tank",  -- #ForRegEx# - recipe
+    name = "sp-pressure-tank",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 4,  -- time in seconds to make the item
@@ -1232,22 +1233,22 @@ data:extend({
       {type = "item", name = "sp-flange", amount = 2}
     },
     results = {
-      {type = "item", name = "pressure-tank", amount = 1}
+      {type = "item", name = "sp-pressure-tank", amount = 1}
     }
   },
   {
     type = "recipe",
-    name = "high-pressure-tank",  -- #ForRegEx# - recipe
+    name = "sp-high-pressure-tank",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 4,  -- time in seconds to make the item
     ingredients = {
       {type = "item", name = "sp-aluminum-brass", amount = 2},
       {type = "item", name = "sp-TiNb", amount = 1},
-      {type = "item", name = "carbon-fiber", amount = 2}
+      {type = "item", name = "sp-carbon-fiber", amount = 6}
     },
     results = {
-      {type = "item", name = "high-pressure-tank", amount = 1}
+      {type = "item", name = "sp-high-pressure-tank", amount = 1}
     }
   },
   {
@@ -1266,7 +1267,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "lithium-oxide",  -- #ForRegEx# - recipe
+    name = "sp-lithium-oxide",  -- #ForRegEx# - recipe
     icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
     icon_size = 256,
     scale = 0.25,
@@ -1278,27 +1279,14 @@ data:extend({
       {type = "item", name = "sp-spodumene", amount = 4}
     },
     results = {
-      {type = "item", name = "lithium-oxide", amount = 1},
+      {type = "item", name = "sp-lithium-oxide", amount = 1},
       {type = "item", name = "sp-alumina", amount = 1},
       {type = "item", name = "sp-silica", amount = 1}
     }
   },
   {
     type = "recipe",
-    name = "lithium",  -- #ForRegEx# - recipe
-    category = "smelting",
-    enabled = false,
-    energy_required = 2.4,  -- time in seconds to make the item
-    ingredients = {
-      {type = "item", name = "lithium-oxide", amount = 2}
-    },
-    results = {
-      {type = "item", name = "lithium", amount = 2}
-    }
-  },
-  {
-    type = "recipe",
-    name = "turbine-blade-from-stainless-steel",  -- #ForRegEx# - recipe
+    name = "sp-turbine-blade-from-stainless-steel",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 3.2,  -- time in seconds to make the item
@@ -1306,12 +1294,12 @@ data:extend({
       {type = "item", name = "sp-stainless-steel", amount = 5}
     },
     results = {
-      {type = "item", name = "turbine-blade", amount = 1}
+      {type = "item", name = "sp-turbine-blade", amount = 1}
     }
   },
   {
     type = "recipe",
-    name = "turbine-blade-from-TiAlSn",  -- #ForRegEx# - recipe
+    name = "sp-turbine-blade-from-TiAlSn",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 4.8,  -- time in seconds to make the item
@@ -1319,12 +1307,12 @@ data:extend({
       {type = "item", name = "sp-TiAlSn", amount = 3}
     },
     results = {
-      {type = "item", name = "turbine-blade", amount = 2}
+      {type = "item", name = "sp-turbine-blade", amount = 2}
     }
   },
   {
     type = "recipe",
-    name = "turbine-rotor",  -- #ForRegEx# - recipe
+    name = "sp-turbine-rotor",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 30,  -- time in seconds to make the item
@@ -1334,15 +1322,15 @@ data:extend({
       {type = "item", name = "sp-titanium-nitride", amount = 1},
       {type = "item", name = "sp-tungsten-billet", amount = 5},
       {type = "item", name = "sp-ceramic", amount = 5},
-      {type = "item", name = "turbine-blade", amount = 24}
+      {type = "item", name = "sp-turbine-blade", amount = 24}
     },
     results = {
-      {type = "item", name = "turbine-rotor", amount = 1}
+      {type = "item", name = "sp-turbine-rotor", amount = 1}
     }
   },
   {
     type = "recipe",
-    name = "turbine-stator",  -- #ForRegEx# - recipe
+    name = "sp-turbine-stator",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 26,  -- time in seconds to make the item
@@ -1351,32 +1339,32 @@ data:extend({
       {type = "item", name = "sp-titanium-nitride", amount = 2},
       {type = "item", name = "sp-titanium-frame", amount = 20},
       {type = "item", name = "sp-flange", amount = 5},
-      {type = "item", name = "turbine-blade", amount = 24},
+      {type = "item", name = "sp-turbine-blade", amount = 24},
     },
     results = {
-      {type = "item", name = "turbine-stator", amount = 1}
+      {type = "item", name = "sp-turbine-stator", amount = 1}
     }
   },
   {
     type = "recipe",
-    name = "turbopump",  -- #ForRegEx# - recipe
+    name = "sp-turbopump",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 4.8,  -- time in seconds to make the item
     ingredients = {
-      {type = "item", name = "turbine-blade", amount = 10},
+      {type = "item", name = "sp-turbine-blade", amount = 10},
       {type = "item", name = "sp-ceramic", amount = 2},
       {type = "item", name = "sp-stainless-steel", amount = 3},
       {type = "item", name = "sp-tungsten-billet", amount = 3},
       {type = "item", name = "sp-bolts", amount = 8}
     },
     results = {
-      {type = "item", name = "turbopump", amount = 1}
+      {type = "item", name = "sp-turbopump", amount = 1}
     }
   },
   {
     type = "recipe",
-    name = "nozzle",  -- #ForRegEx# - recipe
+    name = "sp-nozzle",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 5.6,  -- time in seconds to make the item
@@ -1388,12 +1376,12 @@ data:extend({
       {type = "item", name = "sp-bolts", amount = 4}
     },
     results = {
-      {type = "item", name = "nozzle", amount = 1}
+      {type = "item", name = "sp-nozzle", amount = 1}
     }
   },
   {
     type = "recipe",
-    name = "fuel-infector",  -- #ForRegEx# - recipe
+    name = "sp-fuel-injector",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 1,  -- time in seconds to make the item
@@ -1402,44 +1390,44 @@ data:extend({
       {type = "item", name = "sp-inconel", amount = 1}
     },
     results = {
-      {type = "item", name = "fuel-infector", amount = 1}
+      {type = "item", name = "sp-fuel-injector", amount = 1}
     }
   },
   {
     type = "recipe",
-    name = "combustion-chamber",  -- #ForRegEx# - recipe
+    name = "sp-combustion-chamber",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 24,  -- time in seconds to make the item
     ingredients = {
-      {type = "item", name = "fuel-infector", amount = 20},
+      {type = "item", name = "sp-fuel-injector", amount = 20},
       {type = "item", name = "sp-tungsten-billet", amount = 2},
       {type = "item", name = "sp-inconel", amount = 3},
       {type = "item", name = "sp-bolts", amount = 4}
     },
     results = {
-      {type = "item", name = "combustion-chamber", amount = 1}
+      {type = "item", name = "sp-combustion-chamber", amount = 1}
     }
   },
   {
     type = "recipe",
-    name = "rocket-engine",  -- #ForRegEx# - recipe
+    name = "sp-rocket-engine",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 4,  -- time in seconds to make the item
     ingredients = {
-      {type = "item", name = "turbopump", amount = 2},
-      {type = "item", name = "nozzle", amount = 1},
-      {type = "item", name = "combustion-chamber", amount = 1},
+      {type = "item", name = "sp-turbopump", amount = 2},
+      {type = "item", name = "sp-nozzle", amount = 1},
+      {type = "item", name = "sp-combustion-chamber", amount = 1},
       {type = "item", name = "sp-bolts", amount = 6}
     },
     results = {
-      {type = "item", name = "rocket-engine", amount = 1}
+      {type = "item", name = "sp-rocket-engine", amount = 1}
     }
   },
   {
     type = "recipe",
-    name = "solid-rocket-motor",  -- #ForRegEx# - recipe
+    name = "sp-solid-rocket-motor",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 4,  -- time in seconds to make the item
@@ -1449,7 +1437,7 @@ data:extend({
       {type = "item", name = "sp-phosphorus", amount = 1}
     },
     results = {
-      {type = "item", name = "solid-rocket-motor", amount = 1}
+      {type = "item", name = "sp-solid-rocket-motor", amount = 1}
     }
   },
   {
@@ -1468,7 +1456,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "used-up-uranium-fuel-rod-reprocessing",  -- #ForRegEx# - recipe
+    name = "sp-used-up-uranium-fuel-rod-reprocessing",  -- #ForRegEx# - recipe
     icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
     icon_size = 256,
     scale = 0.25,
@@ -1477,7 +1465,7 @@ data:extend({
     enabled = false,
     energy_required = 60,  -- time in seconds to make the item
     ingredients = {
-      {type = "item", name = "used-up-uranium-fuel-rod", amount = 5},
+      {type = "item", name = "sp-used-up-uranium-fuel-rod", amount = 5},
       {type = "fluid", name = "sulfuric-acid", amount = 40}
     },
     results = {
@@ -1487,78 +1475,38 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "plutonium-239-fuel-rod",  -- #ForRegEx# - recipe
+    name = "sp-plutonium-239-fuel-rod",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 5.2,  -- time in seconds to make the item
     ingredients = {
-      {type = "item", name = "plutonium-239", amount = 4},
+      {type = "item", name = "sp-plutonium-239", amount = 4},
       {type = "item", name = "sp-graphite", amount = 2},
       {type = "item", name = "sp-tungsten-billet", amount = 1},
     },
     results = {
-      {type = "item", name = "plutonium-fuel-rod", amount = 1}
+      {type = "item", name = "sp-plutonium-fuel-rod", amount = 1}
     }
   },
   {
     type = "recipe",
-    name = "plutonium-240-fuel-rod",  -- #ForRegEx# - recipe
+    name = "sp-plutonium-240-fuel-rod",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 6,  -- time in seconds to make the item
     ingredients = {
-      {type = "item", name = "plutonium-239", amount = 1},
-      {type = "item", name = "plutonium-240", amount = 1},
+      {type = "item", name = "sp-plutonium-239", amount = 1},
+      {type = "item", name = "sp-plutonium-240", amount = 1},
       {type = "item", name = "sp-graphite", amount = 2},
       {type = "item", name = "sp-tungsten-carbide", amount = 1},
     },
     results = {
-      {type = "item", name = "plutonium-fuel-rod", amount = 1}
+      {type = "item", name = "sp-plutonium-fuel-rod", amount = 1}
     }
   },
   {
     type = "recipe",
-    name = "plutonium-239",  -- #ForRegEx# - recipe
-    icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
-    icon_size = 256,
-    scale = 0.25,
-    category = "high-energy-physics",
-    subgroup = "raw-resource",
-    enabled = false,
-    energy_required = 3.2,  -- time in seconds to make the item
-    ingredients = {
-      {type = "item", name = "lithium", amount = 1},
-      {type = "item", name = "uranium-238", amount = 1}
-    },
-    results = {
-      {type = "item", name = "uranium-238", probability = 0.84, amount = 1},
-      {type = "item", name = "plutonium-239", probability = 0.15, amount = 1},
-      {type = "item", name = "plutonium-240", probability = 0.01, amount = 1}
-    }
-  },
-  {
-    type = "recipe",
-    name = "plutonium-240",  -- #ForRegEx# - recipe
-    icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
-    icon_size = 256,
-    scale = 0.25,
-    category = "high-energy-physics",
-    subgroup = "raw-resource",
-    enabled = false,
-    energy_required = 4,  -- time in seconds to make the item
-    ingredients = {
-      {type = "item", name = "lithium", amount = 1},
-      {type = "item", name = "plutonium-239", amount = 1}
-    },
-    results = {
-      {type = "item", name = "uranium-238", probability = 0.2, amount = 1},
-      {type = "item", name = "plutonium-239", probability = 0.72, amount = 1},
-      {type = "item", name = "plutonium-240", probability = 0.08, amount = 1}
-    }
-  },
-  {
-    type = "recipe",
-    name = "reactor-core",  -- #ForRegEx# - recipe
+    name = "sp-reactor-core",  -- #ForRegEx# - recipe
     category = "advanced-crafting",
     enabled = false,
     energy_required = 30,  -- time in seconds to make the item
@@ -1566,12 +1514,12 @@ data:extend({
       {type = "item", name = "sp-control-rod", amount = 50},
       {type = "item", name = "sp-pressure-tube", amount = 10},
       {type = "item", name = "sp-plate-heat-exchanger", amount = 4},
-      {type = "item", name = "valve", amount = 16},
+      {type = "item", name = "sp-valve", amount = 16},
       {type = "item", name = "sp-flange", amount = 6},
-      {type = "item", name = "pressure-tank", amount = 3}
+      {type = "item", name = "sp-pressure-tank", amount = 3}
     },
     results = {
-      {type = "item", name = "reactor-core", amount = 1}
+      {type = "item", name = "sp-reactor-core", amount = 1}
     }
   },
   {
@@ -2147,7 +2095,7 @@ if not mods["Krastorio2"] then
       results = {
         {type = "item", name = "uranium-238", probability = 0.37, amount = 2},
         {type = "item", name = "uranium-235", probability = 0.03, amount = 1},
-        {type = "item", name = "plutonium-239", probability = 0.6, amount = 1},
+        {type = "item", name = "sp-plutonium-239", probability = 0.6, amount = 1},
         {type = "fluid", name = "sp-deuterium", amount = 10}
       }
     },
@@ -2327,6 +2275,59 @@ if not mods["Krastorio2"] then
       },
       results = {
         {type = "item", name = "sp-silica", amount = 1}
+      }
+    },
+    {
+      type = "recipe",
+      name = "sp-lithium",  -- #ForRegEx# - recipe
+      category = "smelting",
+      enabled = false,
+      energy_required = 2.4,  -- time in seconds to make the item
+      ingredients = {
+        {type = "item", name = "sp-lithium-oxide", amount = 2}
+      },
+      results = {
+        {type = "item", name = "sp-lithium", amount = 2}
+      }
+    },
+    {
+      type = "recipe",
+      name = "sp-plutonium-239",  -- #ForRegEx# - recipe
+      icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
+      icon_size = 256,
+      scale = 0.25,
+      category = "high-energy-physics",
+      subgroup = "raw-resource",
+      enabled = false,
+      energy_required = 3.2,  -- time in seconds to make the item
+      ingredients = {
+        {type = "item", name = "sp-lithium", amount = 1},
+        {type = "item", name = "uranium-238", amount = 1}
+      },
+      results = {
+        {type = "item", name = "uranium-238", probability = 0.84, amount = 1},
+        {type = "item", name = "sp-plutonium-239", probability = 0.15, amount = 1},
+        {type = "item", name = "sp-plutonium-240", probability = 0.01, amount = 1}
+      }
+    },
+    {
+      type = "recipe",
+      name = "sp-plutonium-240",  -- #ForRegEx# - recipe
+      icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
+      icon_size = 256,
+      scale = 0.25,
+      category = "high-energy-physics",
+      subgroup = "raw-resource",
+      enabled = false,
+      energy_required = 4,  -- time in seconds to make the item
+      ingredients = {
+        {type = "item", name = "sp-lithium", amount = 1},
+        {type = "item", name = "sp-plutonium-239", amount = 1}
+      },
+      results = {
+        {type = "item", name = "uranium-238", probability = 0.2, amount = 1},
+        {type = "item", name = "sp-plutonium-239", probability = 0.72, amount = 1},
+        {type = "item", name = "sp-plutonium-240", probability = 0.08, amount = 1}
       }
     },
   })
