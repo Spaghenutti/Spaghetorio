@@ -22,6 +22,8 @@ TODO:
     + spodumene (lithium)
   - Add icon for item group base products
   - Add fancy building (matter converter) which can build robots from iron
+  - update names:
+    - last name updated "plate-heat-exchanger"
 
 FIXME:
   + Aluminum ore icon color

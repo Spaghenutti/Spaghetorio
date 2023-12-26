@@ -5,10 +5,10 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      {"diode", 3},
+      {"sp-diode", 3},
       {"sp-resistor", 6},
       {"electronic-circuit", 5},
-      {"solder", 2},
+      {"sp-solder", 2},
       {"plastic-bar", 1}
     },
     energy_required = 15,
@@ -20,12 +20,12 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      {"circuit-board", 1},
+      {"sp-circuit-board", 1},
       {"advanced-circuit", 5},
-      {"coil", 2},
-      {"capacitor", 2},
+      {"sp-coil", 2},
+      {"sp-capacitor", 2},
       {"light-emitting-diode", 6},
-      {"integrated-circuit", 2}
+      {"sp-integrated-circuit", 2}
     },
     energy_required = 30,
     result = "speed-module-2"
@@ -36,12 +36,12 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      {"circuit-board", 2},
-      {"integrated-circuit", 5},
+      {"sp-circuit-board", 2},
+      {"sp-integrated-circuit", 5},
       {"processing-unit", 5},
-      {"processor", 1},
-      {"cmos", 2},
-      {"memory-chip", 4}
+      {"sp-processor", 1},
+      {"sp-cmos", 2},
+      {"sp-memory-chip", 4}
     },
     energy_required = 60,
     result = "speed-module-3"
@@ -52,10 +52,10 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      {"diode", 3},
+      {"sp-diode", 3},
       {"sp-resistor", 4},
       {"electronic-circuit", 3},
-      {"solder", 2},
+      {"sp-solder", 2},
       {"copper-cable", 2},
       {"plastic-bar", 1}
     },
@@ -68,11 +68,11 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      {"circuit-board", 1},
+      {"sp-circuit-board", 1},
       {"advanced-circuit", 3},
-      {"coil", 3},
+      {"sp-coil", 3},
       {"light-emitting-diode", 6},
-      {"integrated-circuit", 2}
+      {"sp-integrated-circuit", 2}
     },
     energy_required = 30,
     result = "productivity-module-2"
@@ -83,12 +83,12 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      {"circuit-board", 2},
+      {"sp-circuit-board", 2},
       {"sp-infrared-filter", 2},
       {"processing-unit", 4},
-      {"processor", 1},
-      {"cmos", 2},
-      {"memory-chip", 3}
+      {"sp-processor", 1},
+      {"sp-cmos", 2},
+      {"sp-memory-chip", 3}
     },
     energy_required = 60,
     result = "productivity-module-3"
@@ -98,10 +98,10 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      {"diode", 3},
-      {"coil", 2},
+      {"sp-diode", 3},
+      {"sp-coil", 2},
       {"electronic-circuit", 6},
-      {"solder", 2},
+      {"sp-solder", 2},
       {"copper-cable", 2},
       {"plastic-bar", 1}
     },
@@ -114,11 +114,11 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      {"circuit-board", 1},
+      {"sp-circuit-board", 1},
       {"advanced-circuit", 6},
-      {"capacitor", 3},
+      {"sp-capacitor", 3},
       {"light-emitting-diode", 6},
-      {"integrated-circuit", 1}
+      {"sp-integrated-circuit", 1}
     },
     energy_required = 30,
     result = "effectivity-module-2"
@@ -129,12 +129,12 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      {"circuit-board", 2},
+      {"sp-circuit-board", 2},
       {"sp-infrared-filter", 1},
       {"processing-unit", 6},
-      {"processor", 1},
-      {"cmos", 1},
-      {"memory-chip", 4}
+      {"sp-processor", 1},
+      {"sp-cmos", 1},
+      {"sp-memory-chip", 4}
     },
     energy_required = 60,
     result = "effectivity-module-3"
@@ -149,7 +149,7 @@ data:extend({
       {"sp-aluminum-frame", 10},
       {"sp-bolts", 12},
       {"electric-engine-unit", 3},
-      {"circuit-board", 2},
+      {"sp-circuit-board", 2},
       {"sp-ball-bearing", 6}
     },
     result = "stack-inserter"
@@ -164,8 +164,8 @@ data:extend({
       {"sp-aluminum-frame", 10},
       {"sp-bolts", 12},
       {"electric-engine-unit", 3},
-      {"circuit-board", 2},
-      {"cmos", 2},
+      {"sp-circuit-board", 2},
+      {"sp-cmos", 2},
       {"sp-infrared-filter", 2},
       {"sp-ball-bearing", 6}
     },
@@ -178,10 +178,10 @@ data:extend({
     energy_required = 10,
     ingredients =
     {
-      {"circuit-board", 1},
+      {"sp-circuit-board", 1},
       {"sp-aluminum-frame", 2},
       {"plastic-bar", 2},
-      {"cmos", 2}
+      {"sp-cmos", 2}
     },
     result = "night-vision-equipment"
   },
@@ -192,7 +192,7 @@ data:extend({
     energy_required = 10,
     ingredients =
     {
-      {"circuit-board", 2},
+      {"sp-circuit-board", 2},
       {"stainless-steel-gear-wheel", 20},
       {"electric-engine-unit", 2},
       {"sp-bolts", 30},
@@ -223,7 +223,7 @@ data:extend({
     ingredients =
     {
       {"processing-unit", 5},
-      {"circuit-board", 1},
+      {"sp-circuit-board", 1},
       {"low-density-structure", 5},
       {"sp-titanium-frame", 2}
     },
@@ -252,7 +252,7 @@ data:extend({
     {
       {"battery", 20},
       {"processing-unit", 5},
-      {"circuit-board", 1},
+      {"sp-circuit-board", 1},
       {"low-density-structure", 5}
     },
     result = "battery-mk2-equipment"
@@ -361,8 +361,8 @@ data:extend({
     energy_required = 20,
     ingredients =
     {
-      {"circuit-board", 5},
-      {"processor", 5},
+      {"sp-circuit-board", 5},
+      {"sp-processor", 5},
       {"sp-titanium-frame", 20},
       {"sp-bolts", 10},
       {"battery", 40}
@@ -410,8 +410,8 @@ data:extend({
       {"steel-plate", 60},
       {"concrete", 60},
       {"sp-bolts", 200},
-      {"circuit-board", 5},
-      {"cmos", 5},
+      {"sp-circuit-board", 5},
+      {"sp-cmos", 5},
       {"lens", 5}
     },
     result = "artillery-turret"
@@ -423,9 +423,9 @@ data:extend({
     ingredients =
     {
       {"processing-unit", 3},
-      {"circuit-board", 1},
-      {"antenna-chip", 1},
-      {"coil", 2}
+      {"sp-circuit-board", 1},
+      {"sp-antenna-chip", 1},
+      {"sp-coil", 2}
     },
     result = "artillery-targeting-remote"
   },
@@ -573,7 +573,7 @@ data:extend({
       {"iron-gear-wheel", 6},
       {"iron-plate", 3},
       {"sp-bolts", 6},
-      {"diode", 4},
+      {"sp-diode", 4},
       {"electronic-circuit", 4},
       {"sp-ball-bearing", 4}
     },
@@ -602,7 +602,7 @@ data:extend({
       {"pipe", 1},
       {"iron-gear-wheel", 3},
       {"sp-bolts", 6},
-      {"flange", 2}
+      {"sp-flange", 2}
     },
     result = "offshore-pump"
   },
@@ -683,8 +683,8 @@ data:extend({
     ingredients =
     {
       {"sp-stainless-steel", 36},
-      {"circuit-board", 16},
-      {"integrated-circuit", 10},
+      {"sp-circuit-board", 16},
+      {"sp-integrated-circuit", 10},
       {"sp-connecting-rod", 20},
       {"stone-brick", 24},
       {"sp-bolts", 48},
@@ -828,7 +828,7 @@ data:extend({
     energy_required = 8,
     ingredients = {
       {"sp-aluminum-frame", 6},
-      {"fabric", 6},
+      {"sp-fabric", 6},
       {"steel-plate", 3}
     },
     result = "heavy-armor"
@@ -896,7 +896,7 @@ data:extend({
     ingredients =
     {
       {"concrete", 10},
-      {"cement", 10},
+      {"sp-cement", 10},
       {"sp-magnesium-ore", 1},
       {"iron-ore", 1},
       {type="fluid", name="water", amount=100}
@@ -970,7 +970,7 @@ data:extend({
     {
       {"electronic-circuit", 1},
       {"light-emitting-diode", 3},
-      {"diode", 2},
+      {"sp-diode", 2},
       {"sp-aluminum-frame", 2}
     },
     result = "rail-chain-signal"
@@ -1005,9 +1005,9 @@ data:extend({
     ingredients =
     {
       {"copper-cable", 5},
-      {"transistor", 12},
+      {"sp-transistor", 12},
       {"sp-resistor", 4},
-      {"diode", 2}
+      {"sp-diode", 2}
     },
     result = "arithmetic-combinator"
   },
@@ -1018,7 +1018,7 @@ data:extend({
     ingredients =
     {
       {"copper-cable", 4},
-      {"transistor", 8},
+      {"sp-transistor", 8},
       {"sp-resistor", 4},
     },
     result = "decider-combinator"
@@ -1030,9 +1030,9 @@ data:extend({
     ingredients =
     {
       {"copper-cable", 5},
-      {"capacitor", 8},
+      {"sp-capacitor", 8},
       {"sp-resistor", 4},
-      {"transistor", 2}
+      {"sp-transistor", 2}
     },
     result = "constant-combinator"
   },
@@ -1047,7 +1047,7 @@ data:extend({
       {"steel-plate", 2},
       {"copper-cable", 5},
       {"electronic-circuit", 2},
-      {"transistor", 2}
+      {"sp-transistor", 2}
     },
     result = "power-switch"
   },
@@ -1061,9 +1061,9 @@ data:extend({
       {"sp-aluminum-frame", 3},
       {"iron-stick", 4},
       {"copper-cable", 5},
-      {"capacitor", 10},
+      {"sp-capacitor", 10},
       {"electronic-circuit", 4},
-      {"coil", 6}
+      {"sp-coil", 6}
     },
     result = "programmable-speaker"
   },
@@ -1103,7 +1103,7 @@ data:extend({
       {"explosives", 5},
       {"steel-plate", 5},
       {"sp-graphite", 2},
-      {"yittrium", 1}
+      {"sp-yittrium", 1}
     },
     result = "cluster-grenade"
   },
@@ -1158,7 +1158,7 @@ data:extend({
     ingredients =
     {
       {"explosives", 20},
-      {"phosphorus", 1},
+      {"sp-phosphorus", 1},
       {"sp-magnesium-slab", 2},
       {"empty-barrel", 1}
     },
@@ -1172,8 +1172,8 @@ data:extend({
     ingredients =
     {
       {"sp-stainless-steel", 2},
-      {"ceramic", 1},
-      {"phosphorus", 1},
+      {"sp-ceramic", 1},
+      {"sp-phosphorus", 1},
       {"uranium-238", 1}
     },
     result = "uranium-rounds-magazine"
@@ -1185,7 +1185,7 @@ data:extend({
     energy_required = 8,
     ingredients =
     {
-      {"circuit-board", 1},
+      {"sp-circuit-board", 1},
       {"explosives", 4},
       {"sp-titanium-frame", 2},
       {"solid-rocket-motor", 1},
@@ -1200,7 +1200,7 @@ data:extend({
     energy_required = 8,
     ingredients =
     {
-      {"circuit-board", 1},
+      {"sp-circuit-board", 1},
       {"explosives", 12},
       {"sp-titanium-frame", 2},
       {"solid-rocket-motor", 1},
@@ -1371,8 +1371,8 @@ data:extend({
       {
         {"stainless-steel-gear-wheel", 10},
         {"sp-spring", 2},
-        {"polymer", 4},
-        {"ferrite-magnet", 2},
+        {"sp-polymer", 4},
+        {"sp-ferrite-magnet", 2},
         {type="fluid", name="lubricant", amount=20}
       },
       result = "express-transport-belt"
@@ -1385,7 +1385,7 @@ data:extend({
         {"stainless-steel-gear-wheel", 16},
         {"sp-spring", 4},
         {"sp-aluminum-frame", 6},
-        {"ferrite-magnet", 4},
+        {"sp-ferrite-magnet", 4},
         {type="fluid", name="lubricant", amount=40}
       },
       result = "express-transport-belt"
@@ -1434,7 +1434,7 @@ data:extend({
     energy_required = 1.5,
     ingredients =
     {
-      {"flange", 10},
+      {"sp-flange", 10},
       {"valve", 6},
       {"steel-plate", 6},
       {"sp-copper-tube", 8},
@@ -1467,7 +1467,7 @@ data:extend({
     ingredients =
     {
       {"sp-titanium-frame", 6},
-      {"fabric", 6},
+      {"sp-fabric", 6},
       {"kevlar", 12}
     },
     result = "modular-armor"
@@ -1481,7 +1481,7 @@ data:extend({
       {"sp-aluminum-brass", 6},
       {"electric-engine-unit", 4},
       {"sp-tungsten-carbide", 4},
-      {"fabric", 6},
+      {"sp-fabric", 6},
       {"kevlar", 12}
     },
     result = "power-armor",
@@ -1495,11 +1495,11 @@ data:extend({
     ingredients = {
       {"effectivity-module-2", 25},
       {"sp-aluminum-brass", 6},
-      {"circuit-board", 4},
-      {"processor", 4},
+      {"sp-circuit-board", 4},
+      {"sp-processor", 4},
       {"electric-engine-unit", 4},
       {"sp-tungsten-carbide", 4},
-      {"fabric", 6},
+      {"sp-fabric", 6},
       {"kevlar", 12}
     },
     result = "power-armor-mk2",
@@ -1570,7 +1570,7 @@ data:extend({
     {
       {"stainless-steel-gear-wheel", 24},
       {"sp-aluminum-frame", 12},
-      {"ferrite-magnet", 8},
+      {"sp-ferrite-magnet", 8},
       {"sp-spring", 8},
       {"sp-bolts", 6},
       {type="fluid", name="lubricant", amount=40}
@@ -1643,15 +1643,15 @@ data:extend({
       {"pump", 16},
       {"sp-pressure-tube", 100},
       {"pressure-tank", 20},
-      {"flange", 40},
+      {"sp-flange", 40},
       {"valve", 200},
-      {"cryostat", 8},
-      {"circuit-board", 200},
-      {"cmos", 200},
-      {"processor", 40},
-      {"memory-chip", 24},
+      {"sp-cryostat", 8},
+      {"sp-circuit-board", 200},
+      {"sp-cmos", 200},
+      {"sp-processor", 40},
+      {"sp-memory-chip", 24},
       {"electric-engine-unit", 200},
-      {"heat-resistant-tiles", 200}
+      {"sp-heat-resistant-tiles", 200}
     },
     energy_required = 300,
     result = "rocket-silo",
@@ -1668,7 +1668,7 @@ data:extend({
       {"iron-gear-wheel", 45},
       {"advanced-circuit", 45},
       {"copper-cable", 30},
-      {"ferrite-magnet", 30},
+      {"sp-ferrite-magnet", 30},
     },
     result = "roboport"
   },
@@ -1699,7 +1699,7 @@ data:extend({
       {"sp-ball-bearing", 12},
       {"sp-pressure-tube", 10},
       {"valve", 6},
-      {"flange", 4}
+      {"sp-flange", 4}
     },
     result = "pumpjack",
     enabled = false
@@ -1717,7 +1717,7 @@ data:extend({
       {"sp-bolts", 24},
       {"pressure-tank", 6},
       {"valve", 16},
-      {"flange", 20}
+      {"sp-flange", 20}
     },
     result = "oil-refinery",
     enabled = false
@@ -1729,7 +1729,7 @@ data:extend({
     energy_required = 10,
     ingredients =
     {
-      {"electro-magnet", 2},
+      {"sp-electromagnet", 2},
       {"iron-plate", 5},
       {"sp-bolts", 2},
       {"sp-ball-bearing", 2},
@@ -1764,7 +1764,7 @@ data:extend({
       ingredients =
       {
         {type="fluid", name="sulfuric-acid", amount=20},
-        {"lead-slab", 1},
+        {"sp-lead-slab", 1},
         {"copper-cable", 2},
         {"plastic-bar", 1}
       },
@@ -1777,7 +1777,7 @@ data:extend({
       ingredients =
       {
         {type="fluid", name="sulfuric-acid", amount=40},
-        {"lead-slab", 2},
+        {"sp-lead-slab", 2},
         {"copper-cable", 3},
         {"plastic-bar", 2}
       },
@@ -1799,7 +1799,7 @@ data:extend({
     ingredients =
     {
       {"iron-plate", 20},
-      {"flange", 2},
+      {"sp-flange", 2},
       {"valve", 2},
       {"sp-copper-tube", 6},
       {"sp-bolts", 2},
@@ -1832,7 +1832,7 @@ data:extend({
       {"sp-bolts", 24},
       {"electronic-circuit", 20},
       {"sp-copper-tube", 20},
-      {"flange", 12}
+      {"sp-flange", 12}
     },
     result= "chemical-plant"
   },
@@ -1873,10 +1873,10 @@ data:extend({
     category = "crafting",
     ingredients =
     {
-      {"circuit-board", 1},
-      {"processor", 3},
-      {"memory-chip", 3},
-      {"heatsink", 1},
+      {"sp-circuit-board", 1},
+      {"sp-processor", 3},
+      {"sp-memory-chip", 3},
+      {"sp-heatsink", 1},
       {"sp-glass-fiber", 5}
     },
     result= "rocket-control-unit"
@@ -1910,9 +1910,9 @@ data:extend({
       {"sp-duralumin", 10},
       {"solar-panel", 8},
       {"accumulator", 4},
-      {"circuit-board", 12},
-      {"processor", 3},
-      {"antenna-chip", 12},
+      {"sp-circuit-board", 12},
+      {"sp-processor", 3},
+      {"sp-antenna-chip", 12},
       {"rocket-fuel", 50}
     },
     result= "satellite",
@@ -1927,11 +1927,11 @@ data:extend({
     {
       {"concrete", 500},
       {"reactor-core", 1},
-      {"compute-unit", 48},
+      {"sp-compute-unit", 48},
       {"sp-pressure-tube", 36},
       {"sp-bolts", 600},
-      {"flange", 24},
-      {"plate-heat-exchanger", 36},
+      {"sp-flange", 24},
+      {"sp-plate-heat-exchanger", 36},
       {"pressure-tank", 12},
       {"accumulator", 24},
       {"turbopump", 6},
@@ -1949,9 +1949,9 @@ data:extend({
     {
       {"concrete", 100},
       {"sp-stainless-steel", 24},
-      {"ceramic", 24},
+      {"sp-ceramic", 24},
       {"electric-engine-unit", 12},
-      {"compute-unit", 1},
+      {"sp-compute-unit", 1},
       {"stainless-steel-gear-wheel", 96},
       {"sp-ball-bearing", 36}
     },
@@ -1966,10 +1966,10 @@ data:extend({
     ingredients = {
       {"steel-plate", 10},
       {"sp-bolts", 10},
-      {"flange", 4},
+      {"sp-flange", 4},
       {"valve", 4},
       {"sp-copper-tube", 100},
-      {"plate-heat-exchanger", 3}
+      {"sp-plate-heat-exchanger", 3}
     },
     result = "heat-exchanger"
   },
@@ -1980,9 +1980,9 @@ data:extend({
     enabled = false,
     ingredients = {
       {"sp-pressure-tube", 10},
-      {"flange", 2},
+      {"sp-flange", 2},
       {"sp-aluminum-sheet", 5},
-      {"polymer", 6}
+      {"sp-polymer", 6}
     },
     result = "heat-pipe"
   },
@@ -2082,7 +2082,7 @@ if not (mods["Krastorio2"] or mods["aai-industry"]) then
       category = "crafting-with-fluid",
       ingredients =
       {
-        {"cement", 10},
+        {"sp-cement", 10},
         {"sp-sand", 2},
         {type="fluid", name="water", amount=100}
       },
@@ -2101,7 +2101,7 @@ if not (mods["Krastorio2"] or mods["aai-industry"]) then
         {"copper-cable", 10},
         {"sp-bolts", 4},
         {"sp-silicon", 40},
-        {"phosphorus", 6}
+        {"sp-phosphorus", 6}
       },
       result = "solar-panel"
     },

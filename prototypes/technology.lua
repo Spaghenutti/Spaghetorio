@@ -96,7 +96,7 @@ data:extend({
     {
       {
         type = "unlock-recipe",
-        recipe = "solder"
+        recipe = "sp-solder"
       }
     },
     prerequisites = { "sp-tin-processing" },

@@ -202,7 +202,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "polymer",  -- #ForRegEx# - recipe
+    name = "sp-polymer",  -- #ForRegEx# - recipe
     category = "chemistry",
     enabled = false,
     energy_required = 4,  -- time in seconds to make the item
@@ -212,7 +212,7 @@ data:extend({
       {type = "fluid", name = "oxygen", amount = 15},
     },
     results = {
-      {type = "item", name = "polymer", amount = 3}
+      {type = "item", name = "sp-polymer", amount = 3}
     }
   },
   {
@@ -266,7 +266,7 @@ data:extend({
     enabled = false,
     energy_required = 5,  -- time in seconds to make the item
     ingredients = {
-      {type = "item", name = "lanthanum", amount = 1},
+      {type = "item", name = "sp-lanthanum", amount = 1},
       {type = "item", name = "iron-plate", amount = 2},
       {type = "fluid", name = "hydrogen", amount = 100}
     },
@@ -405,30 +405,30 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "diode",  -- #ForRegEx# - recipe
+    name = "sp-diode",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 2,  -- time in seconds to make the item
     ingredients = {
       {type = "item", name = "silicon", amount = 1},
-      {type = "item", name = "phosphorus", amount = 1}
+      {type = "item", name = "sp-phosphorus", amount = 1}
     },
     results = {
-      {type = "item", name = "diode", amount = 2}
+      {type = "item", name = "sp-diode", amount = 2}
     }
   },
   {
     type = "recipe",
-    name = "transistor",  -- #ForRegEx# - recipe
+    name = "sp-transistor",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 2.8,  -- time in seconds to make the item
     ingredients = {
       {type = "item", name = "silicon", amount = 2},
-      {type = "item", name = "phosphorus", amount = 1}
+      {type = "item", name = "sp-phosphorus", amount = 1}
     },
     results = {
-      {type = "item", name = "transistor", amount = 2}
+      {type = "item", name = "sp-transistor", amount = 2}
     }
   },
   {
@@ -439,8 +439,8 @@ data:extend({
     energy_required = 2.8,  -- time in seconds to make the item
     ingredients = {
       {type = "item", name = "silicon", amount = 2},
-      {type = "item", name = "phosphorus", amount = 1},
-      {type = "item", name = "lanthanum", amount = 1}
+      {type = "item", name = "sp-phosphorus", amount = 1},
+      {type = "item", name = "sp-lanthanum", amount = 1}
     },
     results = {
       {type = "item", name = "light-emitting-diode", amount = 3}
@@ -448,7 +448,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "integrated-circuit",  -- #ForRegEx# - recipe
+    name = "sp-integrated-circuit",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 3.2,  -- time in seconds to make the item
@@ -458,12 +458,12 @@ data:extend({
       {type = "item", name = "copper-plate", amount = 1}
     },
     results = {
-      {type = "item", name = "integrated-circuit", amount = 1}
+      {type = "item", name = "sp-integrated-circuit", amount = 1}
     }
   },
   {
     type = "recipe",
-    name = "integrated-circuit",  -- #ForRegEx# - recipe
+    name = "sp-integrated-circuit",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 3.6,  -- time in seconds to make the item
@@ -473,7 +473,7 @@ data:extend({
       {type = "item", name = "copper-cable", amount = 1}
     },
     results = {
-      {type = "item", name = "integrated-circuit", amount = 2}
+      {type = "item", name = "sp-integrated-circuit", amount = 2}
     }
   },
   {
@@ -501,7 +501,7 @@ data:extend({
     energy_required = 8,  -- time in seconds to make the item
     ingredients = {
       {type = "item", name = "optic-fiber", amount = 2},
-      {type = "item", name = "cerium", amount = 1},
+      {type = "item", name = "sp-cerium", amount = 1},
       {type = "item", name = "sp-palladium", amount = 1},
       {type = "item", name = "silicon", amount = 3}
     },
@@ -520,6 +520,27 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-silica", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-rare-metal-processing",  -- #ForRegEx# - recipe
+    icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
+    icon_size = 256,
+    scale = 0.25,
+    category = "chemistry",
+    subgroup = "raw-resource",
+    enabled = false,
+    energy_required = 3.2,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "rare-metals", amount = 2}
+    },
+    results = {
+      {type = "item", name = "sp-yittrium", probability = 0.03, amount = 1},
+      {type = "item", name = "sp-lanthanum", probability = 0.04, amount = 1},
+      {type = "item", name = "sp-cerium", probability = 0.07, amount = 1},
+      {type = "item", name = "sp-neodymium", probability = 0.04, amount = 1},
+      {type = "item", name = "sand", probability = 0.82, amount = 1}
     }
   },
 })
@@ -541,13 +562,13 @@ util.change_recepie("iron-beam",
                     1,
                     2)
 util.change_recepie("electronic-circuit",
-                    {{"copper-cable", 3}, {"wood", 3}, {"solder", 1}},
-                    {{"copper-cable", 8}, {"wood", 5}, {"solder", 2}},
+                    {{"copper-cable", 3}, {"wood", 3}, {"sp-solder", 1}},
+                    {{"copper-cable", 8}, {"wood", 5}, {"sp-solder", 2}},
                     0.5,
                     1)
 util.change_recepie("electronic-circuit-stone",
-                    {{"copper-cable", 3}, {"stone-tablet", 1}, {"solder", 1}},
-                    {{"copper-cable", 8}, {"stone-tablet", 2}, {"solder", 2}},
+                    {{"copper-cable", 3}, {"stone-tablet", 1}, {"sp-solder", 1}},
+                    {{"copper-cable", 8}, {"stone-tablet", 2}, {"sp-solder", 2}},
                     0.5,
                     1)
 util.change_recepie("motor",
@@ -586,8 +607,8 @@ util.change_recepie("sp-graphite",
                     nil,
                     nil)
 util.change_recepie("concrete",
-                    {{"cement", 10}, {"sand", 2}, {type="fluid", name="water", amount=100}},
-                    {{"cement", 16}, {"sand", 3}, {type="fluid", name="water", amount=160}},
+                    {{"sp-cement", 10}, {"sand", 2}, {type="fluid", name="water", amount=100}},
+                    {{"sp-cement", 16}, {"sand", 3}, {type="fluid", name="water", amount=160}},
                     10,
                     15)
 
@@ -623,8 +644,8 @@ util.change_recepie("lab",
                     10,
                     20)
 util.change_recepie("solar-panel",
-                    {{"sp-aluminum-frame", 5}, {"electronic-circuit", 4}, {"copper-cable", 10}, {"sp-bolts", 8}, {"silicon", 40}, {"phosphorus", 6}},
-                    {{"sp-aluminum-frame", 10}, {"electronic-circuit", 8}, {"copper-cable", 20}, {"sp-bolts", 16}, {"silicon", 80}, {"phosphorus", 12}},
+                    {{"sp-aluminum-frame", 5}, {"electronic-circuit", 4}, {"copper-cable", 10}, {"sp-bolts", 8}, {"silicon", 40}, {"sp-phosphorus", 6}},
+                    {{"sp-aluminum-frame", 10}, {"electronic-circuit", 8}, {"copper-cable", 20}, {"sp-bolts", 16}, {"silicon", 80}, {"sp-phosphorus", 12}},
                     10,
                     20)
 
