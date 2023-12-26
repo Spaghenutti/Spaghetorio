@@ -12,17 +12,6 @@ data:extend({
   },
   {
     type = "fluid",
-    name = "sp-chlorine",  -- #ForRegEx# - fluid
-    default_temperature = 25,
-    heat_capacity = "0.1KJ",
-    base_color = {r=0.58, g=0.95, b=0.5},
-    flow_color = {r=0.58, g=0.95, b=0.5},
-    icon = "__Spaghenutti__/graphics/dummy/dummy-fluid-chlorine.png",
-    icon_size = 256,
-    order = "a[fluid]-f[chlorine]"
-  },
-  {
-    type = "fluid",
     name = "sp-aqueous-niobium",  -- #ForRegEx# - fluid
     default_temperature = 25,
     heat_capacity = "0.1KJ",
@@ -53,17 +42,6 @@ data:extend({
     icon = "__Spaghenutti__/graphics/dummy/dummy-fluid-coolant.png",
     icon_size = 256,
     order = "a[fluid]-f[coolant]"
-  },
-  {
-    type = "fluid",
-    name = "sp-hydrogen",  -- #ForRegEx# - fluid
-    default_temperature = 25,
-    heat_capacity = "0.1KJ",
-    base_color = {r=0.05, g=0.1, b=0.5},
-    flow_color = {r=0.05, g=0.1, b=0.5},
-    icon = "__Spaghenutti__/graphics/dummy/dummy-fluid-hydrogen.png",
-    icon_size = 256,
-    order = "a[fluid]-f[hydrogen]"
   },
   {
     type = "fluid",
@@ -111,17 +89,6 @@ data:extend({
   },
   {
     type = "fluid",
-    name = "sp-nitrogen",  -- #ForRegEx# - fluid
-    default_temperature = 25,
-    heat_capacity = "0.1KJ",
-    base_color = {r=0.05, g=0.1, b=0.5},
-    flow_color = {r=0.05, g=0.1, b=0.5},
-    icon = "__Spaghenutti__/graphics/dummy/dummy-fluid-nitrogen.png",
-    icon_size = 256,
-    order = "a[fluid]-f[nitrogen]"
-  },
-  {
-    type = "fluid",
     name = "sp-liquid-nitrogen",  -- #ForRegEx# - fluid
     default_temperature = 25,
     heat_capacity = "0.1KJ",
@@ -131,15 +98,53 @@ data:extend({
     icon_size = 256,
     order = "a[fluid]-f[liquid-nitrogen]"
   },
-  {
-    type = "fluid",
-    name = "sp-oxygen",  -- #ForRegEx# - fluid
-    default_temperature = 25,
-    heat_capacity = "0.1KJ",
-    base_color = {r=0.05, g=0.1, b=0.5},
-    flow_color = {r=0.05, g=0.1, b=0.5},
-    icon = "__Spaghenutti__/graphics/dummy/dummy-fluid-oxygen.png",
-    icon_size = 256,
-    order = "a[fluid]-f[oxygen]"
-  },
 })
+
+if not mods["Krastorio2"] then
+  data:extend({
+    {
+      type = "fluid",
+      name = "sp-nitrogen",  -- #ForRegEx# - fluid
+      default_temperature = 25,
+      heat_capacity = "0.1KJ",
+      base_color = {r=0.05, g=0.1, b=0.5},
+      flow_color = {r=0.05, g=0.1, b=0.5},
+      icon = "__Spaghenutti__/graphics/dummy/dummy-fluid-nitrogen.png",
+      icon_size = 256,
+      order = "a[fluid]-f[nitrogen]"
+    },
+    {
+      type = "fluid",
+      name = "sp-hydrogen",  -- #ForRegEx# - fluid
+      default_temperature = 25,
+      heat_capacity = "0.1KJ",
+      base_color = {r=0.05, g=0.1, b=0.5},
+      flow_color = {r=0.05, g=0.1, b=0.5},
+      icon = "__Spaghenutti__/graphics/dummy/dummy-fluid-hydrogen.png",
+      icon_size = 256,
+      order = "a[fluid]-f[hydrogen]"
+    },
+    {
+      type = "fluid",
+      name = "sp-chlorine",  -- #ForRegEx# - fluid
+      default_temperature = 25,
+      heat_capacity = "0.1KJ",
+      base_color = {r=0.58, g=0.95, b=0.5},
+      flow_color = {r=0.58, g=0.95, b=0.5},
+      icon = "__Spaghenutti__/graphics/dummy/dummy-fluid-chlorine.png",
+      icon_size = 256,
+      order = "a[fluid]-f[chlorine]"
+    },
+    {
+      type = "fluid",
+      name = "sp-oxygen",  -- #ForRegEx# - fluid
+      default_temperature = 25,
+      heat_capacity = "0.1KJ",
+      base_color = {r=0.05, g=0.1, b=0.5},
+      flow_color = {r=0.05, g=0.1, b=0.5},
+      icon = "__Spaghenutti__/graphics/dummy/dummy-fluid-oxygen.png",
+      icon_size = 256,
+      order = "a[fluid]-f[oxygen]"
+    },
+  })
+end

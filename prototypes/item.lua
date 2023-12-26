@@ -264,7 +264,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "sodium",  -- #ForRegEx# - item
+    name = "sp-sodium",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-sodium.png",
     icon_size = 256,
     scale = 0.25,
@@ -284,32 +284,12 @@ data:extend({
   },
   {
     type = "item",
-    name = "quartz",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-quartz.png",
-    icon_size = 256,
-    scale = 0.25,
-    subgroup = "processed-resource",
-    order = "[quartz]",
-    stack_size = 100
-  },
-  {
-    type = "item",
-    name = "silica",  -- #ForRegEx# - item
+    name = "sp-silica",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-silica.png",
     icon_size = 256,
     scale = 0.25,
     subgroup = "processed-resource",
     order = "[silica]",
-    stack_size = 100
-  },
-  {
-    type = "item",
-    name = "silicon",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-silicon.png",
-    icon_size = 256,
-    scale = 0.25,
-    subgroup = "processed-resource",
-    order = "[silicon]",
     stack_size = 100
   },
   {
@@ -843,7 +823,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "high-purity-silicon",  -- #ForRegEx# - item
+    name = "sp-high-purity-silicon",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-high-purity-silicon.png",
     icon_size = 256,
     scale = 0.25,
@@ -1891,6 +1871,26 @@ if not mods["Krastorio2"] then
       scale = 0.25,
       subgroup = "raw-material",
       order = "[glass]",
+      stack_size = 100
+    },
+    {
+      type = "item",
+      name = "sp-quartz",  -- #ForRegEx# - item
+      icon = "__Spaghenutti__/graphics/dummy/dummy-item-quartz.png",
+      icon_size = 256,
+      scale = 0.25,
+      subgroup = "processed-resource",
+      order = "[quartz]",
+      stack_size = 100
+    },
+    {
+      type = "item",
+      name = "sp-silicon",  -- #ForRegEx# - item
+      icon = "__Spaghenutti__/graphics/dummy/dummy-item-silicon.png",
+      icon_size = 256,
+      scale = 0.25,
+      subgroup = "processed-resource",
+      order = "[silicon]",
       stack_size = 100
     },
   })

@@ -906,22 +906,6 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "solar-panel",
-    energy_required = 10,
-    enabled = false,
-    ingredients =
-    {
-      {"sp-aluminum-frame", 5},
-      {"electronic-circuit", 4},
-      {"copper-cable", 10},
-      {"bolts", 4},
-      {"silicon", 40},
-      {"phosphorus", 6}
-    },
-    result = "solar-panel"
-  },
-  {
-    type = "recipe",
     name = "rail",
     enabled = false,
     ingredients =
@@ -2104,6 +2088,22 @@ if not (mods["Krastorio2"] or mods["aai-industry"]) then
       },
       result= "concrete",
       result_count = 10
+    },
+    {
+      type = "recipe",
+      name = "solar-panel",
+      energy_required = 10,
+      enabled = false,
+      ingredients =
+      {
+        {"sp-aluminum-frame", 5},
+        {"electronic-circuit", 4},
+        {"copper-cable", 10},
+        {"bolts", 4},
+        {"sp-silicon", 40},
+        {"phosphorus", 6}
+      },
+      result = "solar-panel"
     },
   })
 end
