@@ -6,7 +6,7 @@ data:extend({
     ingredients =
     {
       {"diode", 3},
-      {"resistor", 6},
+      {"sp-resistor", 6},
       {"electronic-circuit", 5},
       {"solder", 2},
       {"plastic-bar", 1}
@@ -53,7 +53,7 @@ data:extend({
     ingredients =
     {
       {"diode", 3},
-      {"resistor", 4},
+      {"sp-resistor", 4},
       {"electronic-circuit", 3},
       {"solder", 2},
       {"copper-cable", 2},
@@ -84,7 +84,7 @@ data:extend({
     ingredients =
     {
       {"circuit-board", 2},
-      {"infra-red-filter", 2},
+      {"sp-infrared-filter", 2},
       {"processing-unit", 4},
       {"processor", 1},
       {"cmos", 2},
@@ -130,7 +130,7 @@ data:extend({
     ingredients =
     {
       {"circuit-board", 2},
-      {"infra-red-filter", 1},
+      {"sp-infrared-filter", 1},
       {"processing-unit", 6},
       {"processor", 1},
       {"cmos", 1},
@@ -147,10 +147,10 @@ data:extend({
     {
       {"stainless-steel-gear-wheel", 15},
       {"sp-aluminum-frame", 10},
-      {"bolts", 12},
+      {"sp-bolts", 12},
       {"electric-engine-unit", 3},
       {"circuit-board", 2},
-      {"bearing", 6}
+      {"sp-ball-bearing", 6}
     },
     result = "stack-inserter"
   },
@@ -162,12 +162,12 @@ data:extend({
     {
       {"stainless-steel-gear-wheel", 15},
       {"sp-aluminum-frame", 10},
-      {"bolts", 12},
+      {"sp-bolts", 12},
       {"electric-engine-unit", 3},
       {"circuit-board", 2},
       {"cmos", 2},
-      {"infra-red-filter", 2},
-      {"bearing", 6}
+      {"sp-infrared-filter", 2},
+      {"sp-ball-bearing", 6}
     },
     result = "stack-filter-inserter"
   },
@@ -195,9 +195,9 @@ data:extend({
       {"circuit-board", 2},
       {"stainless-steel-gear-wheel", 20},
       {"electric-engine-unit", 2},
-      {"bolts", 30},
+      {"sp-bolts", 30},
       {"sp-titanium-frame", 5},
-      {"bearing", 4}
+      {"sp-ball-bearing", 4}
     },
     result = "belt-immunity-equipment"
   },
@@ -238,7 +238,7 @@ data:extend({
     {
       {"battery", 4},
       {"sp-aluminum-frame", 6},
-      {"bolts", 6},
+      {"sp-bolts", 6},
       {"copper-cable", 4}
     },
     result = "battery-equipment"
@@ -265,7 +265,7 @@ data:extend({
     ingredients =
     {
       {"solar-panel", 1},
-      {"bolts", 10},
+      {"sp-bolts", 10},
       {"advanced-circuit", 2},
       {"sp-aluminum-frame", 5}
     },
@@ -279,9 +279,9 @@ data:extend({
     ingredients =
     {
       {"advanced-compute-unit", 10},
-      {"bolts", 100},
+      {"sp-bolts", 100},
       {"sp-control-rod", 6},
-      {"pressure-tube", 10},
+      {"sp-pressure-tube", 10},
       {"pressure-tank", 1},
       {"electric-engine-unit", 4},
       {"low-density-structure", 5}
@@ -297,7 +297,7 @@ data:extend({
     {
       {"processing-unit", 20},
       {"sp-aluminum-frame", 5},
-      {"bolts", 12},
+      {"sp-bolts", 12},
       {"laser", 5}
     },
     result = "personal-laser-defense-equipment"
@@ -311,7 +311,7 @@ data:extend({
     {
       {"processing-unit", 5},
       {"sp-aluminum-frame", 20},
-      {"bolts", 30},
+      {"sp-bolts", 30},
       {"laser-turret", 10}
     },
     result = "discharge-defense-equipment"
@@ -332,10 +332,10 @@ data:extend({
     {
       {"processing-unit", 10},
       {"electric-engine-unit", 20},
-      {"bolts", 30},
+      {"sp-bolts", 30},
       {"stainless-steel-gear-wheel", 16},
       {"sp-aluminum-frame", 20},
-      {"bearing", 8}
+      {"sp-ball-bearing", 8}
     },
     result = "exoskeleton-equipment"
   },
@@ -349,7 +349,7 @@ data:extend({
       {"advanced-circuit", 10},
       {"iron-gear-wheel", 20},
       {"sp-aluminum-frame", 20},
-      {"bolts", 16},
+      {"sp-bolts", 16},
       {"battery", 30}
     },
     result = "personal-roboport-equipment"
@@ -364,7 +364,7 @@ data:extend({
       {"circuit-board", 5},
       {"processor", 5},
       {"sp-titanium-frame", 20},
-      {"bolts", 10},
+      {"sp-bolts", 10},
       {"battery", 40}
     },
     result = "personal-roboport-mk2-equipment"
@@ -377,7 +377,7 @@ data:extend({
     ingredients =
     {
       {"steel-plate", 20},
-      {"bolts", 30},
+      {"sp-bolts", 30},
       {"electronic-circuit", 20},
       {"battery", 12},
       {"laser", 10}
@@ -392,9 +392,9 @@ data:extend({
     ingredients =
     {
       {"steel-plate", 30},
-      {"inconel", 4},
-      {"bolts", 30},
-      {"pressure-tube", 10},
+      {"sp-inconel", 4},
+      {"sp-bolts", 30},
+      {"sp-pressure-tube", 10},
       {"engine-unit", 5}
     },
     result = "flamethrower-turret"
@@ -409,7 +409,7 @@ data:extend({
     {
       {"steel-plate", 60},
       {"concrete", 60},
-      {"bolts", 200},
+      {"sp-bolts", 200},
       {"circuit-board", 5},
       {"cmos", 5},
       {"lens", 5}
@@ -441,7 +441,7 @@ data:extend({
     ingredients = {
       {"stone-furnace", 1},
       {"iron-plate", 8},
-      {"copper-tube", 4}
+      {"sp-copper-tube", 4}
     },
     result = "boiler"
   },
@@ -455,9 +455,9 @@ data:extend({
         {"iron-gear-wheel", 8},
         {"pipe", 5},
         {"iron-plate", 10},
-        {"connecting-rod", 2},
-        {"copper-tube", 6},
-        {"bearing", 6}
+        {"sp-connecting-rod", 2},
+        {"sp-copper-tube", 6},
+        {"sp-ball-bearing", 6}
       },
       result = "steam-engine"
     },
@@ -468,8 +468,8 @@ data:extend({
         {"iron-gear-wheel", 10},
         {"pipe", 5},
         {"iron-plate", 50},
-        {"copper-tube", 30},
-        {"bearing", 12}
+        {"sp-copper-tube", 30},
+        {"sp-ball-bearing", 12}
       },
       result = "steam-engine"
     }
@@ -481,7 +481,7 @@ data:extend({
     {
       {"iron-stick", 2},
       {"iron-gear-wheel", 2},
-      {"bearing", 2}
+      {"sp-ball-bearing", 2}
     },
     result = "transport-belt",
     result_count = 2
@@ -546,7 +546,7 @@ data:extend({
       {"electronic-circuit", 1},
       {"iron-gear-wheel", 1},
       {"iron-plate", 1},
-      {"bearing", 4}
+      {"sp-ball-bearing", 4}
     },
     result = "inserter"
   },
@@ -559,8 +559,8 @@ data:extend({
       {"electronic-circuit", 2},
       {"iron-gear-wheel", 2},
       {"iron-plate", 3},
-      {"bolts", 3},
-      {"bearing", 4}
+      {"sp-bolts", 3},
+      {"sp-ball-bearing", 4}
     },
     result = "fast-inserter"
   },
@@ -572,10 +572,10 @@ data:extend({
     {
       {"iron-gear-wheel", 6},
       {"iron-plate", 3},
-      {"bolts", 6},
+      {"sp-bolts", 6},
       {"diode", 4},
       {"electronic-circuit", 4},
-      {"bearing", 4}
+      {"sp-ball-bearing", 4}
     },
     result = "filter-inserter"
   },
@@ -588,8 +588,8 @@ data:extend({
       {"iron-gear-wheel", 3},
       {"iron-plate", 5},
       {"electronic-circuit", 2},
-      {"bolts", 4},
-      {"bearing", 4}
+      {"sp-bolts", 4},
+      {"sp-ball-bearing", 4}
     },
     result = "long-handed-inserter"
   },
@@ -601,7 +601,7 @@ data:extend({
       {"electronic-circuit", 2},
       {"pipe", 1},
       {"iron-gear-wheel", 3},
-      {"bolts", 6},
+      {"sp-bolts", 6},
       {"flange", 2}
     },
     result = "offshore-pump"
@@ -617,11 +617,11 @@ data:extend({
       {
         {"electronic-circuit", 3},
         {"iron-gear-wheel", 12},
-        {"connecting-rod", 5},
+        {"sp-connecting-rod", 5},
         {"iron-plate", 30},
-        {"bolts", 24},
+        {"sp-bolts", 24},
         {"copper-plate", 12},
-        {"bearing", 18}
+        {"sp-ball-bearing", 18}
       },
       result = "assembling-machine-1"
     },
@@ -633,11 +633,11 @@ data:extend({
       {
         {"electronic-circuit", 10},
         {"iron-gear-wheel", 16},
-        {"connecting-rod", 6},
+        {"sp-connecting-rod", 6},
         {"iron-plate", 46},
-        {"bolts", 56},
+        {"sp-bolts", 56},
         {"copper-plate", 16},
-        {"bearing", 26}
+        {"sp-ball-bearing", 26}
       },
       result = "assembling-machine-1"
     },
@@ -653,9 +653,9 @@ data:extend({
       {
         {"steel-plate", 12},
         {"electronic-circuit", 10},
-        {"connecting-rod", 10},
+        {"sp-connecting-rod", 10},
         {"stone-brick", 32},
-        {"bolts", 24},
+        {"sp-bolts", 24},
         {"steel-gear-wheel", 20}
       },
       result = "assembling-machine-2"
@@ -668,9 +668,9 @@ data:extend({
       {
         {"steel-plate", 20},
         {"electronic-circuit", 16},
-        {"connecting-rod", 14},
+        {"sp-connecting-rod", 14},
         {"stone-brick", 64},
-        {"bolts", 48},
+        {"sp-bolts", 48},
         {"steel-gear-wheel", 32}
       },
       result = "assembling-machine-2"
@@ -682,14 +682,14 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      {"stainless-steel", 36},
+      {"sp-stainless-steel", 36},
       {"circuit-board", 16},
       {"integrated-circuit", 10},
-      {"connecting-rod", 20},
+      {"sp-connecting-rod", 20},
       {"stone-brick", 24},
-      {"bolts", 48},
+      {"sp-bolts", 48},
       {"stainless-steel-gear-wheel", 32},
-      {"spring", 12}
+      {"sp-spring", 12}
     },
     result = "assembling-machine-3"
   },
@@ -699,7 +699,7 @@ data:extend({
     energy_required = 5,
     ingredients =
     {
-      {"copper-tube", 1},
+      {"sp-copper-tube", 1},
       {"iron-gear-wheel", 1}
     },
     result = "automation-science-pack"
@@ -740,8 +740,8 @@ data:extend({
       {"iron-plate", 4},
       {"sp-aluminum-frame", 12},
       {"steel-gear-wheel", 20},
-      {"bolts", 24},
-      {"bearing", 12}
+      {"sp-bolts", 24},
+      {"sp-ball-bearing", 12}
     },
     result = "car"
   },
@@ -754,9 +754,9 @@ data:extend({
     {
       {"steel-plate", 4},
       {"iron-gear-wheel", 16},
-      {"bolts", 6},
-      {"copper-tube", 4},
-      {"bearing", 4}
+      {"sp-bolts", 6},
+      {"sp-copper-tube", 4},
+      {"sp-ball-bearing", 4}
     },
     result = "engine-unit",
     enabled = false
@@ -767,7 +767,7 @@ data:extend({
     enabled = true,
     ingredients = {
       {"iron-plate", 8},
-      {"bolts", 2}
+      {"sp-bolts", 2}
     },
     result = "iron-chest"
   },
@@ -778,7 +778,7 @@ data:extend({
     ingredients =
     {
       {"iron-stick", 20},
-      {"bolts", 10},
+      {"sp-bolts", 10},
       {"sp-aluminum-frame", 12},
       {"sp-aluminum-cable", 6}
     },
@@ -791,7 +791,7 @@ data:extend({
     ingredients =
     {
       {"iron-stick", 8},
-      {"bolts", 4},
+      {"sp-bolts", 4},
       {"steel-plate", 2},
       {"copper-cable", 2}
     },
@@ -805,7 +805,7 @@ data:extend({
     ingredients =
     {
       {"steel-plate", 1},
-      {"bolts", 5}
+      {"sp-bolts", 5}
     },
     result = "piercing-rounds-magazine"
   },
@@ -814,7 +814,7 @@ data:extend({
     name = "steel-furnace",
     ingredients = {
       {"steel-plate", 12},
-      {"bolts", 6},
+      {"sp-bolts", 6},
       {"stone-brick", 24}
     },
     result = "steel-furnace",
@@ -839,7 +839,7 @@ data:extend({
     enabled = false,
     ingredients = {
       {"steel-plate", 8},
-      {"bolts", 4}
+      {"sp-bolts", 4}
     },
     result = "steel-chest"
   },
@@ -851,7 +851,7 @@ data:extend({
     {
       {"steel-gear-wheel", 3},
       {"iron-stick", 2},
-      {"spring", 4},
+      {"sp-spring", 4},
       {"copper-cable", 2},
     },
     result = "fast-transport-belt"
@@ -866,8 +866,8 @@ data:extend({
       {"steel-gear-wheel", 24},
       {"steel-plate", 6},
       {"iron-stick", 10},
-      {"spring", 8},
-      {"bolts", 6},
+      {"sp-spring", 8},
+      {"sp-bolts", 6},
     },
     result_count = 2,
     result = "fast-underground-belt"
@@ -882,8 +882,8 @@ data:extend({
       {"steel-gear-wheel", 6},
       {"electronic-circuit", 4},
       {"steel-plate", 3},
-      {"spring", 6},
-      {"bolts", 2}
+      {"sp-spring", 6},
+      {"sp-bolts", 2}
     },
     result = "fast-splitter"
   },
@@ -911,7 +911,7 @@ data:extend({
     ingredients =
     {
       {"stone", 1},
-      {"bolts", 4},
+      {"sp-bolts", 4},
       {"steel-plate", 2}
     },
     result = "rail",
@@ -925,11 +925,11 @@ data:extend({
     ingredients =
     {
       {"engine-unit", 12},
-      {"connecting-rod", 16},
+      {"sp-connecting-rod", 16},
       {"electronic-circuit", 10},
       {"steel-plate", 40},
-      {"bolts", 60},
-      {"copper-tube", 60}
+      {"sp-bolts", 60},
+      {"sp-copper-tube", 60}
     },
     result = "locomotive"
   },
@@ -941,7 +941,7 @@ data:extend({
     ingredients =
     {
       {"steel-gear-wheel", 10},
-      {"connecting-rod", 8},
+      {"sp-connecting-rod", 8},
       {"iron-plate", 20},
       {"steel-plate", 20}
     },
@@ -984,7 +984,7 @@ data:extend({
       {"electronic-circuit", 5},
       {"steel-plate", 12},
       {"iron-stick", 12},
-      {"bolts", 20},
+      {"sp-bolts", 20},
       {"copper-cable", 6}
     },
     result = "train-stop"
@@ -1006,7 +1006,7 @@ data:extend({
     {
       {"copper-cable", 5},
       {"transistor", 12},
-      {"resistor", 4},
+      {"sp-resistor", 4},
       {"diode", 2}
     },
     result = "arithmetic-combinator"
@@ -1019,7 +1019,7 @@ data:extend({
     {
       {"copper-cable", 4},
       {"transistor", 8},
-      {"resistor", 4},
+      {"sp-resistor", 4},
     },
     result = "decider-combinator"
   },
@@ -1031,7 +1031,7 @@ data:extend({
     {
       {"copper-cable", 5},
       {"capacitor", 8},
-      {"resistor", 4},
+      {"sp-resistor", 4},
       {"transistor", 2}
     },
     result = "constant-combinator"
@@ -1130,7 +1130,7 @@ data:extend({
       {"piercing-rounds-magazine", 3},
       {"steel-gear-wheel", 3},
       {"advanced-circuit", 3},
-      {"bolts", 3}
+      {"sp-bolts", 3}
     },
     result = "distractor-capsule"
   },
@@ -1146,7 +1146,7 @@ data:extend({
       {"steel-gear-wheel", 3},
       {"processing-unit", 3},
       {"speed-module", 1},
-      {"bolts", 4}
+      {"sp-bolts", 4}
     },
     result = "destroyer-capsule"
   },
@@ -1171,7 +1171,7 @@ data:extend({
     energy_required = 10,
     ingredients =
     {
-      {"stainless-steel", 2},
+      {"sp-stainless-steel", 2},
       {"ceramic", 1},
       {"phosphorus", 1},
       {"uranium-238", 1}
@@ -1334,7 +1334,7 @@ data:extend({
     energy_required = 15,
     ingredients =
     {
-      {"inconel", 2},
+      {"sp-inconel", 2},
       {"sp-TiAlSn", 6},
       {"explosives", 20}
     },
@@ -1348,7 +1348,7 @@ data:extend({
     energy_required = 6,
     ingredients =
     {
-      {type="item", name="stainless-steel", amount=5},
+      {type="item", name="sp-stainless-steel", amount=5},
       {type="fluid", name="crude-oil", amount=100}
     },
     result = "flamethrower-ammo",
@@ -1370,7 +1370,7 @@ data:extend({
       ingredients =
       {
         {"stainless-steel-gear-wheel", 10},
-        {"spring", 2},
+        {"sp-spring", 2},
         {"polymer", 4},
         {"ferrite-magnet", 2},
         {type="fluid", name="lubricant", amount=20}
@@ -1383,7 +1383,7 @@ data:extend({
       ingredients =
       {
         {"stainless-steel-gear-wheel", 16},
-        {"spring", 4},
+        {"sp-spring", 4},
         {"sp-aluminum-frame", 6},
         {"ferrite-magnet", 4},
         {type="fluid", name="lubricant", amount=40}
@@ -1402,9 +1402,9 @@ data:extend({
       {
         {"engine-unit", 32},
         {"steel-plate", 50},
-        {"aluminum-brass", 12},
-        {"bolts", 120},
-        {"spring", 40},
+        {"sp-aluminum-brass", 12},
+        {"sp-bolts", 120},
+        {"sp-spring", 40},
         {"steel-gear-wheel", 15},
         {"advanced-circuit", 10}
       },
@@ -1418,9 +1418,9 @@ data:extend({
       {
         {"engine-unit", 48},
         {"steel-plate", 100},
-        {"aluminum-brass", 24},
-        {"bolts", 120},
-        {"spring", 80},
+        {"sp-aluminum-brass", 24},
+        {"sp-bolts", 120},
+        {"sp-spring", 80},
         {"steel-gear-wheel", 32},
         {"advanced-circuit", 10}
       },
@@ -1437,7 +1437,7 @@ data:extend({
       {"flange", 10},
       {"valve", 6},
       {"steel-plate", 6},
-      {"copper-tube", 8},
+      {"sp-copper-tube", 8},
       {"pressure-tank", 3}
     },
     result = "fluid-wagon"
@@ -1453,8 +1453,8 @@ data:extend({
       {"steel-gear-wheel", 10},
       {"steel-plate", 40},
       {"advanced-circuit", 20},
-      {"bolts", 56},
-      {"spring", 20},
+      {"sp-bolts", 56},
+      {"sp-spring", 20},
       {"sp-titanium-frame", 12}
     },
     result = "artillery-wagon"
@@ -1478,9 +1478,9 @@ data:extend({
     enabled = false,
     energy_required = 20,
     ingredients = {
-      {"aluminum-brass", 6},
+      {"sp-aluminum-brass", 6},
       {"electric-engine-unit", 4},
-      {"tungsten-carbide", 4},
+      {"sp-tungsten-carbide", 4},
       {"fabric", 6},
       {"kevlar", 12}
     },
@@ -1494,11 +1494,11 @@ data:extend({
     energy_required = 25,
     ingredients = {
       {"effectivity-module-2", 25},
-      {"aluminum-brass", 6},
+      {"sp-aluminum-brass", 6},
       {"circuit-board", 4},
       {"processor", 4},
       {"electric-engine-unit", 4},
-      {"tungsten-carbide", 4},
+      {"sp-tungsten-carbide", 4},
       {"fabric", 6},
       {"kevlar", 12}
     },
@@ -1512,10 +1512,10 @@ data:extend({
     energy_required = 10,
     ingredients =
     {
-      {"pressure-tube", 5},
+      {"sp-pressure-tube", 5},
       {"pressure-tank", 2},
       {"valve", 1},
-      {"bolts", 6}
+      {"sp-bolts", 6}
     },
     result = "flamethrower"
   },
@@ -1554,8 +1554,8 @@ data:extend({
     ingredients =
     {
       {"steel-plate", 7},
-      {"bolts", 4},
-      {"spring", 2}
+      {"sp-bolts", 4},
+      {"sp-spring", 2}
     },
     result = "combat-shotgun"
   },
@@ -1571,8 +1571,8 @@ data:extend({
       {"stainless-steel-gear-wheel", 24},
       {"sp-aluminum-frame", 12},
       {"ferrite-magnet", 8},
-      {"spring", 8},
-      {"bolts", 6},
+      {"sp-spring", 8},
+      {"sp-bolts", 6},
       {type="fluid", name="lubricant", amount=40}
     },
     result_count = 2,
@@ -1589,7 +1589,7 @@ data:extend({
       {"advanced-circuit", 2},
       {"steel-gear-wheel", 5},
       {"steel-plate", 6},
-      {"bolts", 10}
+      {"sp-bolts", 10}
     },
     result = "fast-loader"
   },
@@ -1604,8 +1604,8 @@ data:extend({
     {
       {"processing-unit", 2},
       {"stainless-steel-gear-wheel", 5},
-      {"stainless-steel", 6},
-      {"bolts", 10},
+      {"sp-stainless-steel", 6},
+      {"sp-bolts", 10},
       {type="fluid", name="lubricant", amount=40}
     },
     result = "express-loader"
@@ -1620,9 +1620,9 @@ data:extend({
     {
       {"stainless-steel-gear-wheel", 6},
       {"processing-unit", 4},
-      {"stainless-steel", 3},
-      {"spring", 6},
-      {"bolts", 2},
+      {"sp-stainless-steel", 3},
+      {"sp-spring", 6},
+      {"sp-bolts", 2},
       {type="fluid", name="lubricant", amount=80}
     },
     result = "express-splitter"
@@ -1634,14 +1634,14 @@ data:extend({
     ingredients =
     {
       {"steel-plate", 80},
-      {"bolts", 400},
-      {"spring", 60},
+      {"sp-bolts", 400},
+      {"sp-spring", 60},
       {"refined-concrete", 1000},
-      {"TiNb", 200},
-      {"inconel", 140},
-      {"tungsten-billet", 36},
+      {"sp-TiNb", 200},
+      {"sp-inconel", 140},
+      {"sp-tungsten-billet", 36},
       {"pump", 16},
-      {"pressure-tube", 100},
+      {"sp-pressure-tube", 100},
       {"pressure-tank", 20},
       {"flange", 40},
       {"valve", 200},
@@ -1695,9 +1695,9 @@ data:extend({
       {"steel-plate", 10},
       {"iron-gear-wheel", 10},
       {"electronic-circuit", 5},
-      {"connecting-rod", 5},
-      {"bearing", 12},
-      {"pressure-tube", 10},
+      {"sp-connecting-rod", 5},
+      {"sp-ball-bearing", 12},
+      {"sp-pressure-tube", 10},
       {"valve", 6},
       {"flange", 4}
     },
@@ -1713,8 +1713,8 @@ data:extend({
       {"steel-plate", 30},
       {"iron-gear-wheel", 10},
       {"electronic-circuit", 10},
-      {"copper-tube", 50},
-      {"bolts", 24},
+      {"sp-copper-tube", 50},
+      {"sp-bolts", 24},
       {"pressure-tank", 6},
       {"valve", 16},
       {"flange", 20}
@@ -1731,8 +1731,8 @@ data:extend({
     {
       {"electro-magnet", 2},
       {"iron-plate", 5},
-      {"bolts", 2},
-      {"bearing", 2},
+      {"sp-bolts", 2},
+      {"sp-ball-bearing", 2},
       {type="fluid", name= "lubricant", amount = 15},
       {"electronic-circuit", 2}
     },
@@ -1801,8 +1801,8 @@ data:extend({
       {"iron-plate", 20},
       {"flange", 2},
       {"valve", 2},
-      {"copper-tube", 6},
-      {"bolts", 2},
+      {"sp-copper-tube", 6},
+      {"sp-bolts", 2},
     },
     result= "storage-tank"
   },
@@ -1816,7 +1816,7 @@ data:extend({
       {"engine-unit", 1},
       {"steel-plate", 1},
       {"pipe", 1},
-      {"bolts", 4},
+      {"sp-bolts", 4},
     },
     result= "pump"
   },
@@ -1829,9 +1829,9 @@ data:extend({
     {
       {"steel-plate", 20},
       {"stone-brick", 40},
-      {"bolts", 24},
+      {"sp-bolts", 24},
       {"electronic-circuit", 20},
-      {"copper-tube", 20},
+      {"sp-copper-tube", 20},
       {"flange", 12}
     },
     result= "chemical-plant"
@@ -1877,7 +1877,7 @@ data:extend({
       {"processor", 3},
       {"memory-chip", 3},
       {"heatsink", 1},
-      {"glass-fiber", 5}
+      {"sp-glass-fiber", 5}
     },
     result= "rocket-control-unit"
   },
@@ -1907,7 +1907,7 @@ data:extend({
     ingredients =
     {
       {"low-density-structure", 40},
-      {"duralumin", 10},
+      {"sp-duralumin", 10},
       {"solar-panel", 8},
       {"accumulator", 4},
       {"circuit-board", 12},
@@ -1928,8 +1928,8 @@ data:extend({
       {"concrete", 500},
       {"reactor-core", 1},
       {"compute-unit", 48},
-      {"pressure-tube", 36},
-      {"bolts", 600},
+      {"sp-pressure-tube", 36},
+      {"sp-bolts", 600},
       {"flange", 24},
       {"plate-heat-exchanger", 36},
       {"pressure-tank", 12},
@@ -1948,12 +1948,12 @@ data:extend({
     ingredients =
     {
       {"concrete", 100},
-      {"stainless-steel", 24},
+      {"sp-stainless-steel", 24},
       {"ceramic", 24},
       {"electric-engine-unit", 12},
       {"compute-unit", 1},
       {"stainless-steel-gear-wheel", 96},
-      {"bearing", 36}
+      {"sp-ball-bearing", 36}
     },
     result = "centrifuge",
     requester_paste_multiplier= 10
@@ -1965,10 +1965,10 @@ data:extend({
     enabled = false,
     ingredients = {
       {"steel-plate", 10},
-      {"bolts", 10},
+      {"sp-bolts", 10},
       {"flange", 4},
       {"valve", 4},
-      {"copper-tube", 100},
+      {"sp-copper-tube", 100},
       {"plate-heat-exchanger", 3}
     },
     result = "heat-exchanger"
@@ -1979,7 +1979,7 @@ data:extend({
     energy_required = 1,
     enabled = false,
     ingredients = {
-      {"pressure-tube", 10},
+      {"sp-pressure-tube", 10},
       {"flange", 2},
       {"sp-aluminum-sheet", 5},
       {"polymer", 6}
@@ -1994,9 +1994,9 @@ data:extend({
     ingredients = {
       {"turbine-rotor", 1},
       {"turbine-stator", 1},
-      {"bolts", 20},
+      {"sp-bolts", 20},
       {"electric-engine-unit", 5},
-      {"bearing", 8},
+      {"sp-ball-bearing", 8},
       {"stainless-steel-gear-wheel", 20}
     },
     result = "steam-turbine"
@@ -2015,7 +2015,7 @@ if not (mods["Krastorio2"] or mods["aai-industry"]) then
         {"electronic-circuit", 5},
         {"iron-plate", 3},
         {"iron-gear-wheel", 4},
-        {"bolts", 4}
+        {"sp-bolts", 4}
       },
       result = "splitter"
     },
@@ -2029,7 +2029,7 @@ if not (mods["Krastorio2"] or mods["aai-industry"]) then
         {"iron-plate", 12},
         {"iron-stick", 2},
         {"iron-gear-wheel", 6},
-        {"bolts", 4}
+        {"sp-bolts", 4}
       },
       result_count = 2,
       result = "underground-belt"
@@ -2045,7 +2045,7 @@ if not (mods["Krastorio2"] or mods["aai-industry"]) then
         {"electronic-circuit", 5},
         {"iron-gear-wheel", 5},
         {"iron-plate", 12},
-        {"bolts", 10}
+        {"sp-bolts", 10}
       },
       result = "loader"
     },
@@ -2099,7 +2099,7 @@ if not (mods["Krastorio2"] or mods["aai-industry"]) then
         {"sp-aluminum-frame", 5},
         {"electronic-circuit", 4},
         {"copper-cable", 10},
-        {"bolts", 4},
+        {"sp-bolts", 4},
         {"sp-silicon", 40},
         {"phosphorus", 6}
       },

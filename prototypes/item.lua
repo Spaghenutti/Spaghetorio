@@ -202,7 +202,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "zircon",  -- #ForRegEx# - item
+    name = "sp-zircon",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-zircon.png",
     icon_size = 256,
     icon_mipmaps = 4,
@@ -314,7 +314,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "ammonium-paratungstate",  -- #ForRegEx# - item
+    name = "sp-ammonium-paratungstate",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-ammonium-paratungstate.png",
     icon_size = 256,
     scale = 0.25,
@@ -324,7 +324,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "tungsten-powder",  -- #ForRegEx# - item
+    name = "sp-tungsten-powder",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-tungsten-powder.png",
     icon_size = 256,
     scale = 0.25,
@@ -344,7 +344,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "silver",  -- #ForRegEx# - item
+    name = "sp-silver",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-silver.png",
     icon_size = 256,
     scale = 0.25,
@@ -364,7 +364,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "palladium",  -- #ForRegEx# - item
+    name = "sp-palladium",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-palladium.png",
     icon_size = 256,
     scale = 0.25,
@@ -454,7 +454,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "sodium-carbonate",  -- #ForRegEx# - item
+    name = "sp-sodium-carbonate",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-sodium-carbonate.png",
     icon_size = 256,
     scale = 0.25,
@@ -514,7 +514,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "cobalt-billet",  -- #ForRegEx# - item
+    name = "sp-cobalt-billet",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-alumina.png",
     icon_size = 256,
     scale = 0.25,
@@ -547,7 +547,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "chromium-plate",  -- #ForRegEx# - item
+    name = "sp-chromium-plate",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/icons/chromium-plate.png",
     icon_size = 256,
     scale = 0.25,
@@ -557,7 +557,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "nickel-ingot",  -- #ForRegEx# - item
+    name = "sp-nickel-ingot",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/icons/nickel-ingot.png",
     icon_size = 256,
     scale = 0.25,
@@ -587,7 +587,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "tin-ingot",  -- #ForRegEx# - item
+    name = "sp-tin-ingot",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/icons/tin-ingot.png",
     icon_size = 256,
     scale = 0.25,
@@ -597,7 +597,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "bronze-rod",  -- #ForRegEx# - item
+    name = "sp-bronze-rod",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-bronze-rod.png",
     icon_size = 256,
     scale = 0.25,
@@ -657,7 +657,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "niobium-billet",  -- #ForRegEx# - item
+    name = "sp-niobium-billet",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-niobium-billet.png",
     icon_size = 256,
     scale = 0.25,
@@ -667,7 +667,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "tantalum-billet",  -- #ForRegEx# - item
+    name = "sp-tantalum-billet",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-tantalum-billet.png",
     icon_size = 256,
     scale = 0.25,
@@ -677,7 +677,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "tungsten-billet",  -- #ForRegEx# - item
+    name = "sp-tungsten-billet",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-tungsten-billet.png",
     icon_size = 256,
     scale = 0.25,
@@ -720,7 +720,7 @@ data:extend({
   ------------------------------------------------------------------------------
   {
     type = "item",
-    name = "stainless-steel",  -- #ForRegEx# - item
+    name = "sp-stainless-steel",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-stainless-steel.png",
     icon_size = 256,
     scale = 0.25,
@@ -730,7 +730,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "duralumin",  -- #ForRegEx# - item
+    name = "sp-duralumin",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-duralumin.png",
     icon_size = 256,
     scale = 0.25,
@@ -740,7 +740,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "aluminum-brass",  -- #ForRegEx# - item
+    name = "sp-aluminum-brass",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-aluminum-brass.png",
     icon_size = 256,
     scale = 0.25,
@@ -750,7 +750,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "inconel",  -- #ForRegEx# - item
+    name = "sp-inconel",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-inconel.png",
     icon_size = 256,
     scale = 0.25,
@@ -770,7 +770,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "TiNb",  -- #ForRegEx# - item
+    name = "sp-TiNb",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-TiNb.png",
     icon_size = 256,
     scale = 0.25,
@@ -780,7 +780,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "niobium-steel",  -- #ForRegEx# - item
+    name = "sp-niobium-steel",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-aluminum-sheet.png",
     icon_size = 256,
     scale = 0.25,
@@ -790,7 +790,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "niobium-tin",  -- #ForRegEx# - item
+    name = "sp-niobium-tin",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-niobium-tin.png",
     icon_size = 256,
     scale = 0.25,
@@ -853,7 +853,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "tungsten-carbide",  -- #ForRegEx# - item
+    name = "sp-tungsten-carbide",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-tungsten-carbide.png",
     icon_size = 256,
     scale = 0.25,
@@ -910,7 +910,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "copper-tube",  -- #ForRegEx# - item
+    name = "sp-copper-tube",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/icons/copper-tube.png",
     icon_size = 256,
     scale = 0.25,
@@ -920,7 +920,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "pressure-tube",  -- #ForRegEx# - item
+    name = "sp-pressure-tube",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-pressure-tube.png",
     icon_size = 256,
     scale = 0.25,
@@ -930,7 +930,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "spring",  -- #ForRegEx# - item
+    name = "sp-spring",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/icons/spring.png",
     icon_size = 256,
     scale = 0.25,
@@ -960,7 +960,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "connecting-rod",  -- #ForRegEx# - item
+    name = "sp-connecting-rod",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-connecting-rod.png",
     icon_size = 256,
     scale = 0.25,
@@ -970,7 +970,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "bolts",  -- #ForRegEx# - item
+    name = "sp-bolts",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/icons/bolts-2.png",
     icon_size = 256,
     scale = 0.25,
@@ -995,7 +995,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "bearing",  -- #ForRegEx# - item
+    name = "sp-ball-bearing",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-bearing.png",
     icon_size = 256,
     scale = 0.25,
@@ -1094,7 +1094,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "glass-fiber",  -- #ForRegEx# - item
+    name = "sp-glass-fiber",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-glass-fiber.png",
     icon_size = 256,
     scale = 0.25,
@@ -1136,7 +1136,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "infra-red-filter",  -- #ForRegEx# - item
+    name = "sp-infrared-filter",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-infra-red-filter.png",
     icon_size = 256,
     scale = 0.25,
@@ -1166,12 +1166,12 @@ data:extend({
   },
   {
     type = "item",
-    name = "resistor",  -- #ForRegEx# - item
+    name = "sp-resistor",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-resistor.png",
     icon_size = 256,
     scale = 0.25,
     subgroup = "electrical-optical-component",
-    order = "[resistor]",
+    order = "[sp-resistor]",
     stack_size = 100
   },
   {

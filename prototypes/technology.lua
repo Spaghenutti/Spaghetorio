@@ -8,7 +8,7 @@ data:extend({
     {
       {
         type = "unlock-recipe",
-        recipe = "copper-tube"
+        recipe = "sp-copper-tube"
       }
     },
     unit =
@@ -32,7 +32,7 @@ data:extend({
       },
       {
         type = "unlock-recipe",
-        recipe = "bolts"
+        recipe = "sp-bolts"
       }
     },
     unit =
@@ -72,7 +72,7 @@ data:extend({
     {
       {
         type = "unlock-recipe",
-        recipe = "tin-ingot"
+        recipe = "sp-tin-ingot"
       },
       {
         type = "unlock-recipe",
@@ -117,7 +117,7 @@ data:extend({
     {
       {
         type = "unlock-recipe",
-        recipe = "bronze-rod"
+        recipe = "sp-bronze-rod"
       },
     },
     unit =
