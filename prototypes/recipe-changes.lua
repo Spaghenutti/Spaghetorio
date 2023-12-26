@@ -280,7 +280,7 @@ data:extend({
     {
       {"advanced-compute-unit", 10},
       {"bolts", 100},
-      {"control-rod", 6},
+      {"sp-control-rod", 6},
       {"pressure-tube", 10},
       {"pressure-tank", 1},
       {"electric-engine-unit", 4},
@@ -889,21 +889,6 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "concrete",
-    energy_required = 10,
-    enabled = false,
-    category = "crafting-with-fluid",
-    ingredients =
-    {
-      {"cement", 10},
-      {"sand", 2},
-      {type="fluid", name="water", amount=100}
-    },
-    result= "concrete",
-    result_count = 10
-  },
-  {
-    type = "recipe",
     name = "refined-concrete",
     energy_required = 15,
     enabled = false,
@@ -1028,31 +1013,6 @@ data:extend({
     enabled = true,
     ingredients = {{"stone", 2}},
     result = "stone-brick"
-  },
-  {
-    type = "recipe",
-    name = "steel-plate",
-    category = "smelting",
-    normal =
-    {
-      enabled = false,
-      energy_required = 6,
-      ingredients = {
-        {"iron-plate", 2},
-        {"coke", 2}
-      },
-      result = "steel-plate"
-    },
-    expensive =
-    {
-      enabled = false,
-      energy_required = 8,
-      ingredients = {
-        {"iron-plate", 3},
-        {"coke", 4}
-      },
-      result = "steel-plate"
-    }
   },
   {
     type = "recipe",
@@ -1391,7 +1351,7 @@ data:extend({
     ingredients =
     {
       {"inconel", 2},
-      {"TiAlSn", 6},
+      {"sp-TiAlSn", 6},
       {"explosives", 20}
     },
     result = "artillery-shell"
@@ -2104,6 +2064,46 @@ if not (mods["Krastorio2"] or mods["aai-industry"]) then
         {"bolts", 10}
       },
       result = "loader"
+    },
+    {
+      type = "recipe",
+      name = "steel-plate",
+      category = "smelting",
+      normal =
+      {
+        enabled = false,
+        energy_required = 6,
+        ingredients = {
+          {"iron-plate", 2},
+          {"sp-coke", 2}
+        },
+        result = "steel-plate"
+      },
+      expensive =
+      {
+        enabled = false,
+        energy_required = 8,
+        ingredients = {
+          {"iron-plate", 3},
+          {"sp-coke", 4}
+        },
+        result = "steel-plate"
+      }
+    },
+    {
+      type = "recipe",
+      name = "concrete",
+      energy_required = 10,
+      enabled = false,
+      category = "crafting-with-fluid",
+      ingredients =
+      {
+        {"cement", 10},
+        {"sp-sand", 2},
+        {type="fluid", name="water", amount=100}
+      },
+      result= "concrete",
+      result_count = 10
     },
   })
 end

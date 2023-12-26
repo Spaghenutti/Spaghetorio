@@ -212,7 +212,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "cobalt-sulfate",  -- #ForRegEx# - item
+    name = "sp-cobalt-sulfate",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-aluminum-ore.png",
     icon_size = 256, icon_mipmaps = 4,
     subgroup = "raw-resource",
@@ -354,7 +354,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "gold",  -- #ForRegEx# - item
+    name = "sp-gold",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-gold.png",
     icon_size = 256,
     scale = 0.25,
@@ -374,7 +374,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "platinum",  -- #ForRegEx# - item
+    name = "sp-platinum",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-platinum.png",
     icon_size = 256,
     scale = 0.25,
@@ -394,7 +394,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "iridium",  -- #ForRegEx# - item
+    name = "sp-iridium",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-iridium.png",
     icon_size = 256,
     scale = 0.25,
@@ -444,7 +444,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "niobium-powder",  -- #ForRegEx# - item
+    name = "sp-niobium-powder",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-niobium-powder.png",
     icon_size = 256,
     scale = 0.25,
@@ -627,7 +627,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "zirconium-rod",  -- #ForRegEx# - item
+    name = "sp-zirconium-rod",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-zirconium-rod.png",
     icon_size = 256,
     scale = 0.25,
@@ -637,7 +637,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "zirconia",  -- #ForRegEx# - item
+    name = "sp-zirconia",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-zirconia.png",
     icon_size = 256,
     scale = 0.25,
@@ -647,7 +647,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "zinc-plate",  -- #ForRegEx# - item
+    name = "sp-zinc-plate",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/icons/zinc-plate.png",
     icon_size = 256,
     scale = 0.25,
@@ -780,7 +780,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "TiAlSn",  -- #ForRegEx# - item
+    name = "sp-TiAlSn",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-TiAlSn.png",
     icon_size = 256,
     scale = 0.25,
@@ -863,7 +863,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "titanium-carbide",  -- #ForRegEx# - item
+    name = "sp-titanium-carbide",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-titanium-carbide.png",
     icon_size = 256,
     scale = 0.25,
@@ -1136,7 +1136,7 @@ data:extend({
   ------------------------------------------------------------------------------
   {
     type = "item",
-    name = "mirror",  -- #ForRegEx# - item
+    name = "sp-mirror",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-mirror.png",
     icon_size = 256,
     scale = 0.25,
@@ -1653,7 +1653,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "control-rod",  -- #ForRegEx# - item
+    name = "sp-control-rod",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-control-rod.png",
     icon_size = 256, icon_mipmaps = 4,
     subgroup = "advanced-intermediate-product",
@@ -1865,7 +1865,7 @@ if not mods["Krastorio2"] then
   data:extend({
     {
       type = "item",
-      name = "coke",  -- #ForRegEx# - item
+      name = "sp-coke",  -- #ForRegEx# - item
       icon = "__Spaghenutti__/graphics/dummy/dummy-item-alumina.png",
       icon_size = 256,
       scale = 0.25,
@@ -1875,7 +1875,7 @@ if not mods["Krastorio2"] then
     },
     {
       type = "item",
-      name = "sand",  -- #ForRegEx# - item
+      name = "sp-sand",  -- #ForRegEx# - item
       icon = "__Spaghenutti__/graphics/dummy/dummy-item-sand.png",
       icon_size = 256,
       icon_mipmaps = 4,
@@ -1885,7 +1885,7 @@ if not mods["Krastorio2"] then
     },
     {
       type = "item",
-      name = "glass",  -- #ForRegEx# - item
+      name = "sp-glass",  -- #ForRegEx# - item
       icon = "__Spaghenutti__/graphics/dummy/dummy-item-glass.png",
       icon_size = 256,
       scale = 0.25,

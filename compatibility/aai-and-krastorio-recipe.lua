@@ -1,5 +1,179 @@
 local util = require("data-util")
 
+data:extend({
+  {
+    type = "recipe",
+    name = "sp-graphite",  -- #ForRegEx# - recipe
+    category = "smelting",
+    enabled = false,
+    energy_required = 6,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "coke", amount = 3}
+    },
+    results = {
+      {type = "item", name = "sp-graphite", amount = 4}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sodium-carbonate",  -- #ForRegEx# - recipe
+    category = "smelting",
+    enabled = false,
+    energy_required = 4,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sodium", amount = 2},
+      {type = "item", name = "coke", amount = 5}
+    },
+    results = {
+      {type = "item", name = "sodium-carbonate", amount = 2}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-zirconia",  -- #ForRegEx# - recipe
+    category = "smelting",
+    enabled = false,
+    energy_required = 3.2,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-zirconium-ore", amount = 1},
+      {type = "item", name = "sand", amount = 3}
+    },
+    results = {
+      {type = "item", name = "sp-zirconia", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-niobium-powder",  -- #ForRegEx# - recipe
+    category = "chemistry",
+    enabled = false,
+    energy_required = 4,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sand", amount = 8},
+      {type = "fluid", name = "water", amount = 50}
+    },
+    results = {
+      {type = "item", name = "sp-niobium-powder", amount = 2}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-aqueous-niobium-tantalum",  -- #ForRegEx# - recipe
+    icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
+    icon_size = 256,
+    scale = 0.25,
+    category = "chemistry",
+    subgroup = "raw-resource",
+    enabled = false,
+    energy_required = 5,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sand", amount = 8},
+      {type = "item", name = "sp-fluorine", amount = 1},
+      {type = "fluid", name = "water", amount = 50}
+    },
+    results = {
+      {type = "fluid", name = "sp-aqueous-niobium", amount = 50},
+      {type = "fluid", name = "sp-aqueous-tantalum", amount = 6}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-gold",  -- #ForRegEx# - recipe
+    icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
+    icon_size = 256,
+    scale = 0.25,
+    category = "chemistry",
+    subgroup = "raw-resource",
+    enabled = false,
+    energy_required = 3,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "stone", amount = 1},
+      {type = "fluid", name = "water", amount = 40}
+    },
+    results = {
+      {type = "item", name = "sand", probability = 0.98, amount = 3},
+      {type = "item", name = "sp-gold", probability = 0.02, amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-platinum-iridium",  -- #ForRegEx# - recipe
+    icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
+    icon_size = 256,
+    scale = 0.25,
+    category = "crafting",
+    subgroup = "raw-resource",
+    enabled = false,
+    energy_required = 4,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "stone", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sand", probability = 0.9807, amount = 3},
+      {type = "item", name = "sp-platinum", probability = 0.019, amount = 1},
+      {type = "item", name = "sp-iridium", probability = 0.0003, amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-cobalt-sulfate",  -- #ForRegEx# - recipe
+    icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
+    icon_size = 256,
+    scale = 0.25,
+    category = "crafting",
+    subgroup = "raw-resource",
+    enabled = false,
+    energy_required = 0.4,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-nickel-ore", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-cobalt-sulfate", probability = 0.03, amount = 1},
+      {type = "item", name = "sand", probability = 0.97, amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-landfill-from-sand",
+    energy_required = 1,
+    enabled = false,
+    category = "crafting",
+    ingredients =
+    {
+      {"stone", 8},
+      {"sand", 30}
+    },
+    result = "landfill",
+    result_count = 1
+  },
+  {
+    type = "recipe",
+    name = "sp-stone-brick-from-sand",
+    category = "intermediate-smelting",
+    energy_required = 2,
+    enabled = false,
+    hide_from_player_crafting = true,
+    ingredients = {
+      {"sand", 8}
+    },
+    result = "stone-brick"
+  },
+  {
+    type = "recipe",
+    name = "sp-mirror",  -- #ForRegEx# - recipe
+    category = "crafting",
+    enabled = false,
+    energy_required = 2.8,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "glass", amount = 2},
+      {type = "item", name = "sp-aluminum-sheet", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-mirror", amount = 1}
+    }
+  },
+})
+
 -- items
 util.change_recepie("iron-plate",
                     {{"iron-ore", 2}},
@@ -46,11 +220,26 @@ util.change_recepie("electric-motor",
                     {{"copper-cable", 16}, {"bolts", 10}, {"iron-plate", 8}, {"iron-stick", 1}},
                     nil,
                     nil)
+util.change_recepie("steel-plate",
+                    {{"iron-plate", 2}, {"coke", 1}},
+                    {{"iron-plate", 3}, {"coke", 2}},
+                    nil,
+                    nil)
 util.change_recepie("sp-titanium-nitride",
                     {{type = "item", name = "sp-titanium-ingot", amount = 1}, {type = "fluid", name = "nitrogen", amount = 20}},  -- krastorio2 has nitrogen
                     {{type = "item", name = "sp-titanium-ingot", amount = 2}, {type = "fluid", name = "nitrogen", amount = 40}},  -- krastorio2 has nitrogen
                     3,
                     4)
+util.change_recepie("sp-graphite",
+                    {{"coke", 3}},
+                    {{"coke", 5}},
+                    nil,
+                    nil)
+util.change_recepie("concrete",
+                    {{"cement", 10}, {"sand", 2}, {type="fluid", name="water", amount=100}},
+                    {{"cement", 16}, {"sand", 3}, {type="fluid", name="water", amount=160}},
+                    10,
+                    15)
 
 -- Buildings
 util.change_recepie("stone-furnace",
