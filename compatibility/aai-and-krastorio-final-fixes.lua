@@ -18,3 +18,10 @@ data.raw.technology["kr-crusher"].prerequisites = {"electricity"}
 data.raw.technology["kr-crusher"].unit = {count = 30,
                                           ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}},
                                           time = 30}
+
+-- Science recipe changes
+util.change_recipe("automation-science-pack",
+                    {{"automation-core", 1}, {"motor", 1}, {"blank-tech-card", 5}},
+                    {{"automation-core", 2}, {"motor", 2}, {"blank-tech-card", 5}},
+                    20,
+                    30)

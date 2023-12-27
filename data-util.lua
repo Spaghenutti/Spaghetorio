@@ -24,7 +24,7 @@ function data_util.overlay_small_icon(icon, icon_size, small_icon, small_icon_si
   return icons
 end
 
-function data_util.change_recepie(name, normal_ingredients, expensive_ingredients, normal_energy, expensive_energy)
+function data_util.change_recipe(name, normal_ingredients, expensive_ingredients, normal_energy, expensive_energy)
   data.raw.recipe[name].ingredients = normal_ingredients
   if not (normal_energy == nil) then
     data.raw.recipe[name].energy_required = normal_energy
