@@ -272,6 +272,7 @@ data:extend({
     subgroup = "raw-material",
     enabled = false,
     energy_required = 2.4,  -- time in seconds to make the item
+    hide_from_player_crafting = true,
     ingredients = {
       {type = "item", name = "sp-tinstone", amount = 3},
     },

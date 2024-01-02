@@ -1,5 +1,9 @@
 local util = require("data-util")
 
+-- change stone furnace back to furnace type
+-- data.raw["assembling-machine"]["stone-furnace"].type = "furnace"
+-- data.raw.furnace["stone-furnace"].type = "furnace"
+
 -- Lock items for game start
 util.disable_recipe("iron-stick")
 util.disable_recipe("iron-chest")

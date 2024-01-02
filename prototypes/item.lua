@@ -906,7 +906,7 @@ data:extend({
     icon_mipmaps = 4,
     subgroup = "mechanical-component",
     order = "[aluminum-cable]",
-    stack_size = 100
+    stack_size = 400
   },
   {
     type = "item",
@@ -916,7 +916,7 @@ data:extend({
     scale = 0.25,
     subgroup = "mechanical-component",
     order = "copper[copper-tube]",
-    stack_size = 100
+    stack_size = 400
   },
   {
     type = "item",
@@ -936,17 +936,7 @@ data:extend({
     scale = 0.25,
     subgroup = "mechanical-component",
     order = "iron[spring]",
-    stack_size = 100
-  },
-  {
-    type = "item",
-    name = "steel-gear-wheel",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-steel-gear-wheel.png",
-    icon_size = 256,
-    scale = 0.25,
-    subgroup = "mechanical-component",
-    order = "[steel-gear-wheel]",
-    stack_size = 100
+    stack_size = 400
   },
   {
     type = "item",
@@ -956,7 +946,7 @@ data:extend({
     scale = 0.25,
     subgroup = "mechanical-component",
     order = "[stainless-steel-gear-wheel]",
-    stack_size = 100
+    stack_size = 400
   },
   {
     type = "item",
@@ -966,7 +956,7 @@ data:extend({
     scale = 0.25,
     subgroup = "mechanical-component",
     order = "[connecting-rod]",
-    stack_size = 100
+    stack_size = 400
   },
   {
     type = "item",
@@ -981,7 +971,7 @@ data:extend({
     },
     subgroup = "mechanical-component",
     order = "iron[bolts]",
-    stack_size = 100
+    stack_size = 400
   },
   {
     type = "item",
@@ -1892,6 +1882,16 @@ if not mods["Krastorio2"] then
       subgroup = "processed-resource",
       order = "[silicon]",
       stack_size = 100
+    },
+    {
+      type = "item",
+      name = "steel-gear-wheel",  -- #ForRegEx# - item
+      icon = "__Spaghenutti__/graphics/dummy/dummy-item-steel-gear-wheel.png",
+      icon_size = 256,
+      scale = 0.25,
+      subgroup = "mechanical-component",
+      order = "[steel-gear-wheel]",
+      stack_size = 400
     },
   })
 end

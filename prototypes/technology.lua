@@ -74,10 +74,6 @@ data:extend({
         type = "unlock-recipe",
         recipe = "sp-tin-ingot"
       },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-tin-and-lead"
-      },
     },
     unit =
     {
@@ -120,6 +116,7 @@ data:extend({
         recipe = "sp-bronze-rod"
       },
     },
+    prerequisites = { "sp-tin-processing" },
     unit =
     {
       count = 10,

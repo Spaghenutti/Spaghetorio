@@ -56,10 +56,14 @@ data.raw.item["copper-cable"].order = "copper[copper-cable]"
 data.raw.item["iron-gear-wheel"].order = "iron[iron-gear-wheel]"
 data.raw.item["iron-stick"].order = "iron[iron-stick]"
 
--- data.raw.tool["automation-science-pack"].subgroup = "basic-science"
--- data.raw.tool["logistic-science-pack"].subgroup = "basic-science"
--- data.raw.tool["military-science-pack"].subgroup = "basic-science"
--- data.raw.tool["chemical-science-pack"].subgroup = "basic-science"
--- data.raw.tool["production-science-pack"].subgroup = "basic-science"
--- data.raw.tool["utility-science-pack"].subgroup = "basic-science"
--- data.raw.tool["space-science-pack"].subgroup = "basic-science"
+-- change stack sizes
+data.raw.item["copper-cable"].stack_size = 400
+
+-- Assing subgroup to science items
+data.raw.tool["automation-science-pack"].subgroup = "basic-science"
+data.raw.tool["logistic-science-pack"].subgroup = "basic-science"
+data.raw.tool["military-science-pack"].subgroup = "basic-science"
+data.raw.tool["chemical-science-pack"].subgroup = "basic-science"
+data.raw.tool["production-science-pack"].subgroup = "basic-science"
+data.raw.tool["utility-science-pack"].subgroup = "basic-science"
+data.raw.tool["space-science-pack"].subgroup = "basic-science"

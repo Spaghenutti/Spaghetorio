@@ -12,3 +12,15 @@ data.raw.item["iron-beam"].subgroup = "mechanical-component"
 data.raw.item["iron-beam"].order = "iron[iron-beam]"
 
 util.resize_building("furnace", "kr-crusher", {{-1.75, -1.75}, {1.75, 1.75}}, {{-2, -2}, {2, 2}}, 4/7, 4/7/2)
+
+-- fix subgroup to science items
+data.raw.item["blank-tech-card"].subgroup = "science-item"
+data.raw.item["biters-research-data"].subgroup = "science-item"  -- in game called military-research-data
+data.raw.item["space-research-data"].subgroup = "science-item"
+data.raw.item["matter-research-data"].subgroup = "science-item"
+
+data.raw.tool["basic-tech-card"].subgroup = "basic-science"
+data.raw.tool["space-science-pack"].subgroup = "advanced-science"
+data.raw.tool["matter-tech-card"].subgroup = "advanced-science"
+data.raw.tool["advanced-tech-card"].subgroup = "advanced-science"
+data.raw.tool["singularity-tech-card"].subgroup = "advanced-science"
