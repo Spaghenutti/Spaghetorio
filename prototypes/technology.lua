@@ -74,6 +74,10 @@ data:extend({
         type = "unlock-recipe",
         recipe = "sp-tin-ingot"
       },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-tin-and-lead"
+      },
     },
     unit =
     {

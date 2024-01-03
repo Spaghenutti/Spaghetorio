@@ -7,19 +7,19 @@ TODO:
   - Add python scrip for mipmaps
   + Add ores
   + Update resource_autoplace_settings and stage_counts of ores
-    + aluminum-ore
-    + chromite
-    + limestone
-    + magnesium-ore
-    + nickel-ore
-    + titanium-ore
-    + tinstone
-    + zirconium-ore
-    + lead-ore
-    + tungsten-ore
+    + aluminum-ore (grains: 1)
+    + chromite (grains: 0)
+    + limestone (grains: 0)
+    + magnesium-ore (grains: 0)
+    + nickel-ore (grains: 0)
+    + titanium-ore (grains: 0)
+    + tinstone (grains: 0)
+    + zirconium-ore (grains: 0)
+    + lead-ore (grains: 0)
+    + tungsten-ore (grains: 0)
     - rare-earths
-    + zinc-ore
-    + spodumene (lithium)
+    + zinc-ore (grains: 0)
+    + spodumene (lithium) (grains: 0)
   - Add icon for item group base products
   - Add fancy building (matter converter) which can build robots from iron
   - update names:

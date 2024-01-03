@@ -254,7 +254,7 @@ data:extend({
     name = "sp-tin-ingot",  -- #ForRegEx# - recipe
     category = "smelting",
     enabled = false,
-    energy_required = 2.4,  -- time in seconds to make the item
+    energy_required = 4,  -- time in seconds to make the item
     ingredients = {
       {type = "item", name = "sp-tinstone", amount = 4},
     },
@@ -271,14 +271,14 @@ data:extend({
     category = "smelting",
     subgroup = "raw-material",
     enabled = false,
-    energy_required = 2.4,  -- time in seconds to make the item
+    energy_required = 4,  -- time in seconds to make the item
     hide_from_player_crafting = true,
     ingredients = {
       {type = "item", name = "sp-tinstone", amount = 3},
     },
     results = {
-      {type = "item", name = "sp-tin-ingot", probablilty = 0.75, amount = 2},
-      {type = "item", name = "sp-lead-slab", probablilty = 0.25, amount = 2}
+      {type = "item", name = "sp-tin-ingot", probability = 0.75, amount = 2},
+      {type = "item", name = "sp-lead-slab", probability = 0.25, amount = 2}
     }
   },
   {

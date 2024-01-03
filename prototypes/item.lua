@@ -598,7 +598,7 @@ data:extend({
   {
     type = "item",
     name = "sp-bronze-rod",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-bronze-rod.png",
+    icon = "__Spaghenutti__/graphics/icons/bronze-rod.png",
     icon_size = 256,
     scale = 0.25,
     subgroup = "raw-material",
@@ -638,7 +638,7 @@ data:extend({
   {
     type = "item",
     name = "sp-magnesium-slab",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-magnesium-slab.png",
+    icon = "__Spaghenutti__/graphics/icons/magnesium-slab.png",
     icon_size = 256,
     scale = 0.25,
     subgroup = "raw-material",
@@ -648,7 +648,7 @@ data:extend({
   {
     type = "item",
     name = "sp-lead-slab",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-lead-slab.png",
+    icon = "__Spaghenutti__/graphics/icons/lead-slab.png",
     icon_size = 256,
     scale = 0.25,
     subgroup = "raw-material",

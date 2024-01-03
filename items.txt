@@ -43,7 +43,7 @@ Cl Chlorine
 Mg Magnesium
   + magnesium-ore / dolomite (dolomite is calcined to magnesium oxide) https://www.britannica.com/technology/magnesium-processing
   +r magnesium-chloride (extraction of Mg with electrolysis)
-  +r magnesium-slab
+  +rg magnesium-slab
 
 Ti Titanium
   + titanium-ore (TiO2, FeTiO3)
@@ -90,8 +90,8 @@ Zn Zinc
   +rg zinc-plate
 
 Pb Lead
-  + lead-ore(PbS lead sulfite)
-  +r lead-slab
+  - lead-ore(PbS lead sulfite)
+  +rg lead-slab
 
 Sb Antimony
   - stibnite (Sb2S3 Ore)
