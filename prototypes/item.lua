@@ -954,9 +954,9 @@ data:extend({
     icon_size = 64,
     scale = 0.25,
     pictures = {
-      {size = 64, filename = "__Spaghenutti__/graphics/icons/bolts-1.png", scale = 0.0625},
-      {size = 64, filename = "__Spaghenutti__/graphics/icons/bolts-2.png", scale = 0.0625},
-      {size = 64, filename = "__Spaghenutti__/graphics/icons/bolts-3.png", scale = 0.0625},
+      {size = 64, filename = "__Spaghenutti__/graphics/icons/bolts-1.png", scale = 0.25},
+      {size = 64, filename = "__Spaghenutti__/graphics/icons/bolts-2.png", scale = 0.25},
+      {size = 64, filename = "__Spaghenutti__/graphics/icons/bolts-3.png", scale = 0.25},
     },
     subgroup = "mechanical-component",
     order = "iron[bolts]",
@@ -1126,7 +1126,7 @@ data:extend({
   {
     type = "item",
     name = "sp-solder",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-solder.png",
+    icon = "__Spaghenutti__/graphics/icons/solder.png",
     icon_size = 64,
     scale = 0.25,
     subgroup = "electrical-optical-component",
