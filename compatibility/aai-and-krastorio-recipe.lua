@@ -60,8 +60,8 @@ data:extend({
     type = "recipe",
     name = "sp-aqueous-niobium-tantalum",  -- #ForRegEx# - recipe
     icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
-    icon_size = 256,
-    scale = 0.25,
+    icon_size = 64,
+    mip_mapts = 4,
     category = "chemistry",
     subgroup = "raw-resource",
     enabled = false,
@@ -80,8 +80,8 @@ data:extend({
     type = "recipe",
     name = "sp-gold",  -- #ForRegEx# - recipe
     icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
-    icon_size = 256,
-    scale = 0.25,
+    icon_size = 64,
+    mip_mapts = 4,
     category = "chemistry",
     subgroup = "raw-resource",
     enabled = false,
@@ -99,8 +99,8 @@ data:extend({
     type = "recipe",
     name = "sp-platinum-iridium",  -- #ForRegEx# - recipe
     icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
-    icon_size = 256,
-    scale = 0.25,
+    icon_size = 64,
+    mip_mapts = 4,
     category = "crafting",
     subgroup = "raw-resource",
     enabled = false,
@@ -118,8 +118,8 @@ data:extend({
     type = "recipe",
     name = "sp-cobalt-sulfate",  -- #ForRegEx# - recipe
     icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
-    icon_size = 256,
-    scale = 0.25,
+    icon_size = 64,
+    mip_mapts = 4,
     category = "crafting",
     subgroup = "raw-resource",
     enabled = false,
@@ -188,7 +188,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "kevlar",  -- #ForRegEx# - recipe
+    name = "sp-kevlar",  -- #ForRegEx# - recipe
     category = "crafting-with-fluid",
     enabled = false,
     energy_required = 4.8,  -- time in seconds to make the item
@@ -197,7 +197,7 @@ data:extend({
       {type = "fluid", name = "nitrogen", amount = 15},
     },
     results = {
-      {type = "item", name = "kevlar", amount = 2}
+      {type = "item", name = "sp-kevlar", amount = 2}
     }
   },
   {
@@ -217,7 +217,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "uranium-fuel-rod",  -- #ForRegEx# - recipe
+    name = "sp-uranium-fuel-rod",  -- #ForRegEx# - recipe
     category = "crafting-with-fluid",
     enabled = false,
     energy_required = 4,  -- time in seconds to make the item
@@ -227,12 +227,12 @@ data:extend({
       {type = "fluid", name = "nitrogen", amount = 100},
     },
     results = {
-      {type = "item", name = "uranium-fuel-rod", amount = 1}
+      {type = "item", name = "sp-uranium-fuel-rod", amount = 1}
     }
   },
   {
     type = "recipe",
-    name = "epoxy",  -- #ForRegEx# - recipe
+    name = "sp-epoxy",  -- #ForRegEx# - recipe
     category = "chemistry",
     enabled = false,
     energy_required = 4,  -- time in seconds to make the item
@@ -242,12 +242,12 @@ data:extend({
       {type = "fluid", name = "hydrogen", amount = 15},
     },
     results = {
-      {type = "item", name = "epoxy", amount = 2}
+      {type = "item", name = "sp-epoxy", amount = 2}
     }
   },
   {
     type = "recipe",
-    name = "cubit",  -- #ForRegEx# - recipe
+    name = "sp-cubit",  -- #ForRegEx# - recipe
     category = "crafting-with-fluid",
     enabled = false,
     energy_required = 0.4,  -- time in seconds to make the item
@@ -256,12 +256,12 @@ data:extend({
       {type = "fluid", name = "hydrogen", amount = 1},
     },
     results = {
-      {type = "item", name = "cubit", amount = 1}
+      {type = "item", name = "sp-cubit", amount = 1}
     }
   },
   {
     type = "recipe",
-    name = "superconductor",  -- #ForRegEx# - recipe
+    name = "sp-superconductor",  -- #ForRegEx# - recipe
     category = "crafting-with-fluid",
     enabled = false,
     energy_required = 5,  -- time in seconds to make the item
@@ -271,15 +271,15 @@ data:extend({
       {type = "fluid", name = "hydrogen", amount = 100}
     },
     results = {
-      {type = "item", name = "superconductor", amount = 1}
+      {type = "item", name = "sp-superconductor", amount = 1}
     }
   },
   {
     type = "recipe",
     name = "sp-sodium-and-chlorine",  -- #ForRegEx# - recipe
     icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
-    icon_size = 256,
-    scale = 0.25,
+    icon_size = 64,
+    mip_mapts = 4,
     category = "chemistry",
     subgroup = "raw-resource",
     enabled = false,
@@ -302,8 +302,8 @@ data:extend({
     type = "recipe",
     name = "sp-magnesium-slab",  -- #ForRegEx# - recipe
     icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
-    icon_size = 256,
-    scale = 0.25,
+    icon_size = 64,
+    mip_mapts = 4,
     category = "chemistry",
     subgroup = "raw-resource",
     enabled = false,
@@ -324,7 +324,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "bleach",  -- #ForRegEx# - recipe
+    name = "sp-bleach",  -- #ForRegEx# - recipe
     category = "chemistry",
     enabled = false,
     energy_required = 4,  -- time in seconds to make the item
@@ -333,21 +333,21 @@ data:extend({
       {type = "fluid", name = "chlorine", amount = 50}
     },
     results = {
-      {type = "item", name = "bleach", amount = 1}
+      {type = "item", name = "sp-bleach", amount = 1}
     }
   },
   {
     type = "recipe",
     name = "used-up-plutonium-fuel-rod-reprocessing",  -- #ForRegEx# - recipe
     icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
-    icon_size = 256,
-    scale = 0.25,
+    icon_size = 64,
+    mip_mapts = 4,
     category = "chemistry",
     subgroup = "raw-resource",
     enabled = false,
     energy_required = 80,  -- time in seconds to make the item
     ingredients = {
-      {type = "item", name = "used-up-plutonium-fuel-rod", amount = 6},
+      {type = "item", name = "sp-used-up-plutonium-fuel-rod", amount = 6},
       {type = "fluid", name = "chlorine", amount = 60}
     },
     results = {
@@ -359,7 +359,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "lens",  -- #ForRegEx# - recipe
+    name = "sp-lens",  -- #ForRegEx# - recipe
     category = "crafting-with-fluid",
     enabled = false,
     energy_required = 2,  -- time in seconds to make the item
@@ -368,12 +368,12 @@ data:extend({
       {type = "fluid", name = "oxygen", amount = 40}
     },
     results = {
-      {type = "item", name = "lens", amount = 1}
+      {type = "item", name = "sp-lens", amount = 1}
     }
   },
   {
     type = "recipe",
-    name = "composites",  -- #ForRegEx# - recipe
+    name = "sp-composites",  -- #ForRegEx# - recipe
     category = "crafting-with-fluid",
     enabled = false,
     energy_required = 3.2,  -- time in seconds to make the item
@@ -382,15 +382,15 @@ data:extend({
       {type = "fluid", name = "oxygen", amount = 25},
     },
     results = {
-      {type = "item", name = "composites", amount = 2}
+      {type = "item", name = "sp-composites", amount = 2}
     }
   },
   {
     type = "recipe",
     name = "sp-high-purity-silicon",  -- #ForRegEx# - recipe
     icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
-    icon_size = 256,
-    scale = 0.25,
+    icon_size = 64,
+    mip_mapts = 4,
     category = "smelting",
     subgroup = "advanced-raw-material",
     enabled = false,
@@ -433,7 +433,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "light-emitting-diode",  -- #ForRegEx# - recipe
+    name = "sp-light-emitting-diode",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 2.8,  -- time in seconds to make the item
@@ -443,7 +443,7 @@ data:extend({
       {type = "item", name = "sp-lanthanum", amount = 1}
     },
     results = {
-      {type = "item", name = "light-emitting-diode", amount = 3}
+      {type = "item", name = "sp-light-emitting-diode", amount = 3}
     }
   },
   {
@@ -478,7 +478,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "laser",  -- #ForRegEx# - recipe
+    name = "sp-laser",  -- #ForRegEx# - recipe
     category = "crafting-with-fluid",
     enabled = false,
     energy_required = 4,  -- time in seconds to make the item
@@ -490,23 +490,23 @@ data:extend({
       {type = "fluid", name = "sp-helium", amount = 10}
     },
     results = {
-      {type = "item", name = "laser", amount = 1}
+      {type = "item", name = "sp-laser", amount = 1}
     }
   },
   {
     type = "recipe",
-    name = "quantum-gate",  -- #ForRegEx# - recipe
+    name = "sp-quantum-gate",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 8,  -- time in seconds to make the item
     ingredients = {
-      {type = "item", name = "optic-fiber", amount = 2},
+      {type = "item", name = "sp-optic-fiber", amount = 2},
       {type = "item", name = "sp-cerium", amount = 1},
       {type = "item", name = "sp-palladium", amount = 1},
       {type = "item", name = "silicon", amount = 3}
     },
     results = {
-      {type = "item", name = "quantum-gate", amount = 1}
+      {type = "item", name = "sp-quantum-gate", amount = 1}
     }
   },
   {
@@ -526,8 +526,8 @@ data:extend({
     type = "recipe",
     name = "sp-rare-metal-processing",  -- #ForRegEx# - recipe
     icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
-    icon_size = 256,
-    scale = 0.25,
+    icon_size = 64,
+    mip_mapts = 4,
     category = "chemistry",
     subgroup = "raw-resource",
     enabled = false,
@@ -547,8 +547,8 @@ data:extend({
     type = "recipe",
     name = "sp-plutonium-239",  -- #ForRegEx# - recipe
     icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
-    icon_size = 256,
-    scale = 0.25,
+    icon_size = 64,
+    mip_mapts = 4,
     category = "high-energy-physics",
     subgroup = "raw-resource",
     enabled = false,
@@ -567,8 +567,8 @@ data:extend({
     type = "recipe",
     name = "sp-plutonium-240",  -- #ForRegEx# - recipe
     icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
-    icon_size = 256,
-    scale = 0.25,
+    icon_size = 64,
+    mip_mapts = 4,
     category = "high-energy-physics",
     subgroup = "raw-resource",
     enabled = false,

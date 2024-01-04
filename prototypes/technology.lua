@@ -2,7 +2,7 @@ data:extend({
   {
     type = "technology",
     name = "sp-copper-machining",  -- #ForRegEx# - technology
-    icon_size = 256,
+    icon_size = 64,
     icon = "__Spaghenutti__/graphics/icons/copper-tube.png",
     effects =
     {
@@ -46,7 +46,7 @@ data:extend({
   {
     type = "technology",
     name = "sp-aluminum-machining",  -- #ForRegEx# - technology
-    icon_size = 256,
+    icon_size = 64,
     icon = "__Spaghenutti__/graphics/dummy/dummy-technology-sp-aluminum-machining.png",
     effects =
     {
@@ -66,8 +66,8 @@ data:extend({
   {
     type = "technology",
     name = "sp-tin-processing",  -- #ForRegEx# - technology
-    icon_size = 256,
-    icon = "__Spaghenutti__/graphics/dummy/dummy-technology-default.png",
+    icon_size = 64,
+    icon = "__Spaghenutti__/graphics/dummy/dummy-technology-sp-copper-machining.png",
     effects =
     {
       {
@@ -90,8 +90,8 @@ data:extend({
   {
     type = "technology",
     name = "sp-basic-solder",  -- #ForRegEx# - technology
-    icon_size = 256,
-    icon = "__Spaghenutti__/graphics/dummy/dummy-technology-default.png",
+    icon_size = 64,
+    icon = "__Spaghenutti__/graphics/dummy/dummy-technology-sp-basic-solder.png",
     effects =
     {
       {
@@ -111,8 +111,8 @@ data:extend({
   {
     type = "technology",
     name = "sp-basic-alloy",  -- #ForRegEx# - technology
-    icon_size = 256,
-    icon = "__Spaghenutti__/graphics/dummy/dummy-technology-default.png",
+    icon_size = 64,
+    icon = "__Spaghenutti__/graphics/dummy/dummy-technology-sp-basic-alloy.png",
     effects =
     {
       {

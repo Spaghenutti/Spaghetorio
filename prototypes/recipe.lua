@@ -81,8 +81,8 @@ data:extend({
     type = "recipe",
     name = "sp-calcium-carbonate",  -- #ForRegEx# - recipe
     icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
-    icon_size = 256,
-    scale = 0.25,
+    icon_size = 64,
+    mip_mapts = 4,
     category = "chemistry",
     subgroup = "processed-resource",
     enabled = false,
@@ -99,8 +99,8 @@ data:extend({
     type = "recipe",
     name = "sp-calcium-and-fluorine",  -- #ForRegEx# - recipe
     icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
-    icon_size = 256,
-    scale = 0.25,
+    icon_size = 64,
+    mip_mapts = 4,
     category = "chemistry",
     subgroup = "processed-resource",
     enabled = false,
@@ -181,8 +181,8 @@ data:extend({
     type = "recipe",
     name = "sp-titanium-sponge",  -- #ForRegEx# - recipe
     icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
-    icon_size = 256,
-    scale = 0.25,
+    icon_size = 64,
+    mip_mapts = 4,
     category = "crafting",
     subgroup = "raw-resource",
     enabled = false,
@@ -266,8 +266,8 @@ data:extend({
     type = "recipe",
     name = "sp-tin-and-lead",  -- #ForRegEx# - recipe
     icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
-    icon_size = 256,
-    scale = 0.25,
+    icon_size = 64,
+    mip_mapts = 4,
     category = "smelting",
     subgroup = "raw-material",
     enabled = false,
@@ -325,8 +325,8 @@ data:extend({
     type = "recipe",
     name = "sp-zinc-plate",  -- #ForRegEx# - recipe
     icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
-    icon_size = 256,
-    scale = 0.25,
+    icon_size = 64,
+    mip_mapts = 4,
     category = "chemistry",
     subgroup = "raw-resource",
     enabled = false,
@@ -436,8 +436,8 @@ data:extend({
     type = "recipe",
     name = "sp-chromium-plate",  -- #ForRegEx# - recipe
     icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
-    icon_size = 256,
-    scale = 0.25,
+    icon_size = 64,
+    mip_mapts = 4,
     category = "smelting",
     subgroup = "raw-resource",
     enabled = false,
@@ -454,8 +454,8 @@ data:extend({
     type = "recipe",
     name = "sp-nickel-ingot",  -- #ForRegEx# - recipe
     icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
-    icon_size = 256,
-    scale = 0.25,
+    icon_size = 64,
+    mip_mapts = 4,
     category = "smelting",
     subgroup = "raw-resource",
     enabled = false,
@@ -472,8 +472,8 @@ data:extend({
     type = "recipe",
     name = "sp-silver-palladium",  -- #ForRegEx# - recipe
     icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
-    icon_size = 256,
-    scale = 0.25,
+    icon_size = 64,
+    mip_mapts = 4,
     category = "crafting",
     subgroup = "raw-resource",
     enabled = false,
@@ -491,8 +491,8 @@ data:extend({
     type = "recipe",
     name = "sp-palladium",  -- #ForRegEx# - recipe
     icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
-    icon_size = 256,
-    scale = 0.25,
+    icon_size = 64,
+    mip_mapts = 4,
     category = "crafting",
     subgroup = "raw-resource",
     enabled = false,
@@ -1270,8 +1270,8 @@ data:extend({
     type = "recipe",
     name = "sp-lithium-oxide",  -- #ForRegEx# - recipe
     icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
-    icon_size = 256,
-    scale = 0.25,
+    icon_size = 64,
+    mip_mapts = 4,
     category = "smelting",
     subgroup = "raw-resource",
     enabled = false,
@@ -1459,8 +1459,8 @@ data:extend({
     type = "recipe",
     name = "sp-used-up-uranium-fuel-rod-reprocessing",  -- #ForRegEx# - recipe
     icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
-    icon_size = 256,
-    scale = 0.25,
+    icon_size = 64,
+    mip_mapts = 4,
     category = "chemistry",
     subgroup = "raw-resource",
     enabled = false,
@@ -1578,7 +1578,7 @@ data:extend({
     enabled = false,
     energy_required = 30,  -- time in seconds to make the item
     ingredients = {
-      {type = "item", name = "cubit", amount = 1000},
+      {type = "item", name = "sp-cubit", amount = 1000},
       {type = "item", name = "copper-cable", amount = 20},
       {type = "item", name = "sp-aluminum-frame", amount = 1},
       {type = "item", name = "sp-gold", amount = 3}
@@ -1970,7 +1970,7 @@ if not mods["Krastorio2"] then
     },
     {
       type = "recipe",
-      name = "kevlar",  -- #ForRegEx# - recipe
+      name = "sp-kevlar",  -- #ForRegEx# - recipe
       category = "crafting-with-fluid",
       enabled = false,
       energy_required = 4.8,  -- time in seconds to make the item
@@ -1979,12 +1979,12 @@ if not mods["Krastorio2"] then
         {type = "fluid", name = "sp-nitrogen", amount = 15},
       },
       results = {
-        {type = "item", name = "kevlar", amount = 2}
+        {type = "item", name = "sp-kevlar", amount = 2}
       }
     },
     {
       type = "recipe",
-      name = "uranium-fuel-rod",  -- #ForRegEx# - recipe
+      name = "sp-uranium-fuel-rod",  -- #ForRegEx# - recipe
       category = "crafting-with-fluid",
       enabled = false,
       energy_required = 4,  -- time in seconds to make the item
@@ -1994,12 +1994,12 @@ if not mods["Krastorio2"] then
         {type = "fluid", name = "sp-nitrogen", amount = 100},
       },
       results = {
-        {type = "item", name = "uranium-fuel-rod", amount = 1}
+        {type = "item", name = "sp-uranium-fuel-rod", amount = 1}
       }
     },
     {
       type = "recipe",
-      name = "epoxy",  -- #ForRegEx# - recipe
+      name = "sp-epoxy",  -- #ForRegEx# - recipe
       category = "chemistry",
       enabled = false,
       energy_required = 4,  -- time in seconds to make the item
@@ -2009,12 +2009,12 @@ if not mods["Krastorio2"] then
         {type = "fluid", name = "sp-hydrogen", amount = 15},
       },
       results = {
-        {type = "item", name = "epoxy", amount = 2}
+        {type = "item", name = "sp-epoxy", amount = 2}
       }
     },
     {
       type = "recipe",
-      name = "cubit",  -- #ForRegEx# - recipe
+      name = "sp-cubit",  -- #ForRegEx# - recipe
       category = "crafting-with-fluid",
       enabled = false,
       energy_required = 0.4,  -- time in seconds to make the item
@@ -2023,12 +2023,12 @@ if not mods["Krastorio2"] then
         {type = "fluid", name = "sp-hydrogen", amount = 1},
       },
       results = {
-        {type = "item", name = "cubit", amount = 1}
+        {type = "item", name = "sp-cubit", amount = 1}
       }
     },
     {
       type = "recipe",
-      name = "superconductor",  -- #ForRegEx# - recipe
+      name = "sp-superconductor",  -- #ForRegEx# - recipe
       category = "crafting-with-fluid",
       enabled = false,
       energy_required = 5,  -- time in seconds to make the item
@@ -2038,7 +2038,7 @@ if not mods["Krastorio2"] then
         {type = "fluid", name = "sp-hydrogen", amount = 100}
       },
       results = {
-        {type = "item", name = "superconductor", amount = 1}
+        {type = "item", name = "sp-superconductor", amount = 1}
       }
     },
     {
@@ -2067,7 +2067,7 @@ if not mods["Krastorio2"] then
     },
     {
       type = "recipe",
-      name = "bleach",  -- #ForRegEx# - recipe
+      name = "sp-bleach",  -- #ForRegEx# - recipe
       category = "chemistry",
       enabled = false,
       energy_required = 4,  -- time in seconds to make the item
@@ -2076,7 +2076,7 @@ if not mods["Krastorio2"] then
         {type = "fluid", name = "sp-chlorine", amount = 50}
       },
       results = {
-        {type = "item", name = "bleach", amount = 1}
+        {type = "item", name = "sp-bleach", amount = 1}
       }
     },
     {
@@ -2090,7 +2090,7 @@ if not mods["Krastorio2"] then
       enabled = false,
       energy_required = 80,  -- time in seconds to make the item
       ingredients = {
-        {type = "item", name = "used-up-plutonium-fuel-rod", amount = 6},
+        {type = "item", name = "sp-used-up-plutonium-fuel-rod", amount = 6},
         {type = "fluid", name = "sp-chlorine", amount = 60}
       },
       results = {
@@ -2102,7 +2102,7 @@ if not mods["Krastorio2"] then
     },
     {
       type = "recipe",
-      name = "lens",  -- #ForRegEx# - recipe
+      name = "sp-lens",  -- #ForRegEx# - recipe
       category = "crafting-with-fluid",
       enabled = false,
       energy_required = 2,  -- time in seconds to make the item
@@ -2111,12 +2111,12 @@ if not mods["Krastorio2"] then
         {type = "fluid", name = "sp-oxygen", amount = 40}
       },
       results = {
-        {type = "item", name = "lens", amount = 1}
+        {type = "item", name = "sp-lens", amount = 1}
       }
     },
     {
       type = "recipe",
-      name = "composites",  -- #ForRegEx# - recipe
+      name = "sp-composites",  -- #ForRegEx# - recipe
       category = "crafting-with-fluid",
       enabled = false,
       energy_required = 3.2,  -- time in seconds to make the item
@@ -2125,7 +2125,7 @@ if not mods["Krastorio2"] then
         {type = "fluid", name = "sp-oxygen", amount = 25},
       },
       results = {
-        {type = "item", name = "composites", amount = 2}
+        {type = "item", name = "sp-composites", amount = 2}
       }
     },
     {
@@ -2189,7 +2189,7 @@ if not mods["Krastorio2"] then
     },
     {
       type = "recipe",
-      name = "light-emitting-diode",  -- #ForRegEx# - recipe
+      name = "sp-light-emitting-diode",  -- #ForRegEx# - recipe
       category = "crafting",
       enabled = false,
       energy_required = 2.8,  -- time in seconds to make the item
@@ -2199,7 +2199,7 @@ if not mods["Krastorio2"] then
         {type = "item", name = "sp-lanthanum", amount = 1}
       },
       results = {
-        {type = "item", name = "light-emitting-diode", amount = 3}
+        {type = "item", name = "sp-light-emitting-diode", amount = 3}
       }
     },
     {
@@ -2234,7 +2234,7 @@ if not mods["Krastorio2"] then
     },
     {
       type = "recipe",
-      name = "laser",  -- #ForRegEx# - recipe
+      name = "sp-laser",  -- #ForRegEx# - recipe
       category = "crafting-with-fluid",
       enabled = false,
       energy_required = 4,  -- time in seconds to make the item
@@ -2246,23 +2246,23 @@ if not mods["Krastorio2"] then
         {type = "fluid", name = "sp-helium", amount = 10}
       },
       results = {
-        {type = "item", name = "laser", amount = 1}
+        {type = "item", name = "sp-laser", amount = 1}
       }
     },
     {
       type = "recipe",
-      name = "quantum-gate",  -- #ForRegEx# - recipe
+      name = "sp-quantum-gate",  -- #ForRegEx# - recipe
       category = "crafting",
       enabled = false,
       energy_required = 8,  -- time in seconds to make the item
       ingredients = {
-        {type = "item", name = "optic-fiber", amount = 2},
+        {type = "item", name = "sp-optic-fiber", amount = 2},
         {type = "item", name = "sp-cerium", amount = 1},
         {type = "item", name = "sp-palladium", amount = 1},
         {type = "item", name = "sp-silicon", amount = 3}
       },
       results = {
-        {type = "item", name = "quantum-gate", amount = 1}
+        {type = "item", name = "sp-quantum-gate", amount = 1}
       }
     },
     {

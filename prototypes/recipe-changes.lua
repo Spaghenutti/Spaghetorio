@@ -24,7 +24,7 @@ data:extend({
       {"advanced-circuit", 5},
       {"sp-coil", 2},
       {"sp-capacitor", 2},
-      {"light-emitting-diode", 6},
+      {"sp-light-emitting-diode", 6},
       {"sp-integrated-circuit", 2}
     },
     energy_required = 30,
@@ -71,7 +71,7 @@ data:extend({
       {"sp-circuit-board", 1},
       {"advanced-circuit", 3},
       {"sp-coil", 3},
-      {"light-emitting-diode", 6},
+      {"sp-light-emitting-diode", 6},
       {"sp-integrated-circuit", 2}
     },
     energy_required = 30,
@@ -117,7 +117,7 @@ data:extend({
       {"sp-circuit-board", 1},
       {"advanced-circuit", 6},
       {"sp-capacitor", 3},
-      {"light-emitting-diode", 6},
+      {"sp-light-emitting-diode", 6},
       {"sp-integrated-circuit", 1}
     },
     energy_required = 30,
@@ -145,7 +145,7 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      {"stainless-steel-gear-wheel", 15},
+      {"sp-stainless-steel-gear-wheel", 15},
       {"sp-aluminum-frame", 10},
       {"sp-bolts", 12},
       {"electric-engine-unit", 3},
@@ -160,7 +160,7 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      {"stainless-steel-gear-wheel", 15},
+      {"sp-stainless-steel-gear-wheel", 15},
       {"sp-aluminum-frame", 10},
       {"sp-bolts", 12},
       {"electric-engine-unit", 3},
@@ -193,7 +193,7 @@ data:extend({
     ingredients =
     {
       {"sp-circuit-board", 2},
-      {"stainless-steel-gear-wheel", 20},
+      {"sp-stainless-steel-gear-wheel", 20},
       {"electric-engine-unit", 2},
       {"sp-bolts", 30},
       {"sp-titanium-frame", 5},
@@ -298,7 +298,7 @@ data:extend({
       {"processing-unit", 20},
       {"sp-aluminum-frame", 5},
       {"sp-bolts", 12},
-      {"laser", 5}
+      {"sp-laser", 5}
     },
     result = "personal-laser-defense-equipment"
   },
@@ -333,7 +333,7 @@ data:extend({
       {"processing-unit", 10},
       {"electric-engine-unit", 20},
       {"sp-bolts", 30},
-      {"stainless-steel-gear-wheel", 16},
+      {"sp-stainless-steel-gear-wheel", 16},
       {"sp-aluminum-frame", 20},
       {"sp-ball-bearing", 8}
     },
@@ -380,7 +380,7 @@ data:extend({
       {"sp-bolts", 30},
       {"electronic-circuit", 20},
       {"battery", 12},
-      {"laser", 10}
+      {"sp-laser", 10}
     },
     result = "laser-turret"
   },
@@ -412,7 +412,7 @@ data:extend({
       {"sp-bolts", 200},
       {"sp-circuit-board", 5},
       {"sp-cmos", 5},
-      {"lens", 5}
+      {"sp-lens", 5}
     },
     result = "artillery-turret"
   },
@@ -688,7 +688,7 @@ data:extend({
       {"sp-connecting-rod", 20},
       {"stone-brick", 24},
       {"sp-bolts", 48},
-      {"stainless-steel-gear-wheel", 32},
+      {"sp-stainless-steel-gear-wheel", 32},
       {"sp-spring", 12}
     },
     result = "assembling-machine-3"
@@ -957,7 +957,7 @@ data:extend({
     ingredients =
     {
       {"electronic-circuit", 1},
-      {"light-emitting-diode", 3},
+      {"sp-light-emitting-diode", 3},
       {"sp-aluminum-frame", 2}
     },
     result = "rail-signal"
@@ -969,7 +969,7 @@ data:extend({
     ingredients =
     {
       {"electronic-circuit", 1},
-      {"light-emitting-diode", 3},
+      {"sp-light-emitting-diode", 3},
       {"sp-diode", 2},
       {"sp-aluminum-frame", 2}
     },
@@ -1369,7 +1369,7 @@ data:extend({
       enabled = false,
       ingredients =
       {
-        {"stainless-steel-gear-wheel", 10},
+        {"sp-stainless-steel-gear-wheel", 10},
         {"sp-spring", 2},
         {"sp-polymer", 4},
         {"sp-ferrite-magnet", 2},
@@ -1382,7 +1382,7 @@ data:extend({
       enabled = false,
       ingredients =
       {
-        {"stainless-steel-gear-wheel", 16},
+        {"sp-stainless-steel-gear-wheel", 16},
         {"sp-spring", 4},
         {"sp-aluminum-frame", 6},
         {"sp-ferrite-magnet", 4},
@@ -1468,7 +1468,7 @@ data:extend({
     {
       {"sp-titanium-frame", 6},
       {"sp-fabric", 6},
-      {"kevlar", 12}
+      {"sp-kevlar", 12}
     },
     result = "modular-armor"
   },
@@ -1482,7 +1482,7 @@ data:extend({
       {"electric-engine-unit", 4},
       {"sp-tungsten-carbide", 4},
       {"sp-fabric", 6},
-      {"kevlar", 12}
+      {"sp-kevlar", 12}
     },
     result = "power-armor",
     requester_paste_multiplier = 1
@@ -1500,7 +1500,7 @@ data:extend({
       {"electric-engine-unit", 4},
       {"sp-tungsten-carbide", 4},
       {"sp-fabric", 6},
-      {"kevlar", 12}
+      {"sp-kevlar", 12}
     },
     result = "power-armor-mk2",
     requester_paste_multiplier = 1
@@ -1568,7 +1568,7 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      {"stainless-steel-gear-wheel", 24},
+      {"sp-stainless-steel-gear-wheel", 24},
       {"sp-aluminum-frame", 12},
       {"sp-ferrite-magnet", 8},
       {"sp-spring", 8},
@@ -1603,7 +1603,7 @@ data:extend({
     ingredients =
     {
       {"processing-unit", 2},
-      {"stainless-steel-gear-wheel", 5},
+      {"sp-stainless-steel-gear-wheel", 5},
       {"sp-stainless-steel", 6},
       {"sp-bolts", 10},
       {type="fluid", name="lubricant", amount=40}
@@ -1618,7 +1618,7 @@ data:extend({
     energy_required = 2,
     ingredients =
     {
-      {"stainless-steel-gear-wheel", 6},
+      {"sp-stainless-steel-gear-wheel", 6},
       {"processing-unit", 4},
       {"sp-stainless-steel", 3},
       {"sp-spring", 6},
@@ -1848,7 +1848,7 @@ data:extend({
       {
         {"sp-titanium-frame", 2},
         {"sp-graphene", 20},
-        {"composites", 3}
+        {"sp-composites", 3}
       },
       result= "low-density-structure"
     },
@@ -1860,7 +1860,7 @@ data:extend({
       {
         {"sp-titanium-frame", 4},
         {"sp-graphene", 40},
-        {"composites", 6}
+        {"sp-composites", 6}
       },
       result= "low-density-structure"
     }
@@ -1952,7 +1952,7 @@ data:extend({
       {"sp-ceramic", 24},
       {"electric-engine-unit", 12},
       {"sp-compute-unit", 1},
-      {"stainless-steel-gear-wheel", 96},
+      {"sp-stainless-steel-gear-wheel", 96},
       {"sp-ball-bearing", 36}
     },
     result = "centrifuge",
@@ -1997,7 +1997,7 @@ data:extend({
       {"sp-bolts", 20},
       {"electric-engine-unit", 5},
       {"sp-ball-bearing", 8},
-      {"stainless-steel-gear-wheel", 20}
+      {"sp-stainless-steel-gear-wheel", 20}
     },
     result = "steam-turbine"
   }
