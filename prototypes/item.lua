@@ -6,15 +6,14 @@ data:extend({
   {
     type = "item",
     name = "sp-aluminum-ore",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-aluminum-ore.png",
-    tint = {r=1.0, g=0.2, b=0.2, a=1.0},
+    icon = "__Spaghenutti__/graphics/icons/aluminum-ore-icon-1.png",
     icon_size = 64,
     icon_mipmaps = 4,
     pictures = {
-      { size = 64, filename = "__Spaghenutti__/graphics/base/ore/ore-1.png", scale = 0.25, mipmap_count = 4, tint={r=1.0, g=0.2, b=0.2, a=1.0} },
-      { size = 64, filename = "__Spaghenutti__/graphics/base/ore/ore-2.png", scale = 0.25, mipmap_count = 4, tint={r=1.0, g=0.2, b=0.2, a=1.0} },
-      { size = 64, filename = "__Spaghenutti__/graphics/base/ore/ore-3.png", scale = 0.25, mipmap_count = 4, tint={r=1.0, g=0.2, b=0.2, a=1.0} },
-      { size = 64, filename = "__Spaghenutti__/graphics/base/ore/ore-4.png", scale = 0.25, mipmap_count = 4, tint={r=1.0, g=0.2, b=0.2, a=1.0} }
+      { size = 64, filename = "__Spaghenutti__/graphics/icons/aluminum-ore-icon-1.png", scale = 0.25, mipmap_count = 4},
+      { size = 64, filename = "__Spaghenutti__/graphics/icons/aluminum-ore-icon-2.png", scale = 0.25, mipmap_count = 4},
+      { size = 64, filename = "__Spaghenutti__/graphics/icons/aluminum-ore-icon-3.png", scale = 0.25, mipmap_count = 4},
+      { size = 64, filename = "__Spaghenutti__/graphics/icons/aluminum-ore-icon-4.png", scale = 0.25, mipmap_count = 4}
     },
     subgroup = "raw-resource",
     order = "[aluminum-ore]",
@@ -23,15 +22,14 @@ data:extend({
   {
     type = "item",
     name = "sp-chromite",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-chromite.png",
-    tint = {r=0.5, g=0.5, b=1.0, a=1.0},
+    icon = "__Spaghenutti__/graphics/icons/chromite-icon-2.png",
     icon_size = 64,
     icon_mipmaps = 4,
     pictures = {
-      { size = 64, filename = "__Spaghenutti__/graphics/base/ore/ore-1.png", scale = 0.25, mipmap_count = 4, tint={r=1.0, g=0.2, b=0.2, a=1.0} },
-      { size = 64, filename = "__Spaghenutti__/graphics/base/ore/ore-2.png", scale = 0.25, mipmap_count = 4, tint={r=1.0, g=0.2, b=0.2, a=1.0} },
-      { size = 64, filename = "__Spaghenutti__/graphics/base/ore/ore-3.png", scale = 0.25, mipmap_count = 4, tint={r=1.0, g=0.2, b=0.2, a=1.0} },
-      { size = 64, filename = "__Spaghenutti__/graphics/base/ore/ore-4.png", scale = 0.25, mipmap_count = 4, tint={r=1.0, g=0.2, b=0.2, a=1.0} }
+      { size = 64, filename = "__Spaghenutti__/graphics/icons/chromite-icon-1.png", scale = 0.25, mipmap_count = 4},
+      { size = 64, filename = "__Spaghenutti__/graphics/icons/chromite-icon-2.png", scale = 0.25, mipmap_count = 4},
+      { size = 64, filename = "__Spaghenutti__/graphics/icons/chromite-icon-3.png", scale = 0.25, mipmap_count = 4},
+      { size = 64, filename = "__Spaghenutti__/graphics/icons/chromite-icon-4.png", scale = 0.25, mipmap_count = 4}
     },
     subgroup = "raw-resource",
     order = "[chromite]",
@@ -40,15 +38,14 @@ data:extend({
   {
     type = "item",
     name = "sp-limestone",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-limestone.png",
-    tint = {r=1.0, g=1.0, b=0.8, a=1.0},
+    icon = "__Spaghenutti__/graphics/icons/limestone-icon-3.png",
     icon_size = 64,
     icon_mipmaps = 4,
     pictures = {
-      { size = 64, filename = "__Spaghenutti__/graphics/base/ore/ore-1.png", scale = 0.25, mipmap_count = 4, tint={r=1.0, g=0.2, b=0.2, a=1.0} },
-      { size = 64, filename = "__Spaghenutti__/graphics/base/ore/ore-2.png", scale = 0.25, mipmap_count = 4, tint={r=1.0, g=0.2, b=0.2, a=1.0} },
-      { size = 64, filename = "__Spaghenutti__/graphics/base/ore/ore-3.png", scale = 0.25, mipmap_count = 4, tint={r=1.0, g=0.2, b=0.2, a=1.0} },
-      { size = 64, filename = "__Spaghenutti__/graphics/base/ore/ore-4.png", scale = 0.25, mipmap_count = 4, tint={r=1.0, g=0.2, b=0.2, a=1.0} }
+      { size = 64, filename = "__Spaghenutti__/graphics/icons/limestone-icon-1.png", scale = 0.25, mipmap_count = 4},
+      { size = 64, filename = "__Spaghenutti__/graphics/icons/limestone-icon-2.png", scale = 0.25, mipmap_count = 4},
+      { size = 64, filename = "__Spaghenutti__/graphics/icons/limestone-icon-3.png", scale = 0.25, mipmap_count = 4},
+      { size = 64, filename = "__Spaghenutti__/graphics/icons/limestone-icon-4.png", scale = 0.25, mipmap_count = 4}
     },
     subgroup = "raw-resource",
     order = "[limestone]",
@@ -57,15 +54,14 @@ data:extend({
   {
     type = "item",
     name = "sp-titanium-ore",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-titanium-ore.png",
-    tint = {r=0.4, g=0.3, b=0.3, a=1.0},
+    icon = "__Spaghenutti__/graphics/icons/titanium-ore-icon-4.png",
     icon_size = 64,
     icon_mipmaps = 4,
     pictures = {
-      { size = 64, filename = "__Spaghenutti__/graphics/base/ore/ore-1.png", scale = 0.25, mipmap_count = 4, tint={r=1.0, g=0.2, b=0.2, a=1.0} },
-      { size = 64, filename = "__Spaghenutti__/graphics/base/ore/ore-2.png", scale = 0.25, mipmap_count = 4, tint={r=1.0, g=0.2, b=0.2, a=1.0} },
-      { size = 64, filename = "__Spaghenutti__/graphics/base/ore/ore-3.png", scale = 0.25, mipmap_count = 4, tint={r=1.0, g=0.2, b=0.2, a=1.0} },
-      { size = 64, filename = "__Spaghenutti__/graphics/base/ore/ore-4.png", scale = 0.25, mipmap_count = 4, tint={r=1.0, g=0.2, b=0.2, a=1.0} }
+      { size = 64, filename = "__Spaghenutti__/graphics/icons/titanium-ore-icon-1.png", scale = 0.25, mipmap_count = 4},
+      { size = 64, filename = "__Spaghenutti__/graphics/icons/titanium-ore-icon-2.png", scale = 0.25, mipmap_count = 4},
+      { size = 64, filename = "__Spaghenutti__/graphics/icons/titanium-ore-icon-3.png", scale = 0.25, mipmap_count = 4},
+      { size = 64, filename = "__Spaghenutti__/graphics/icons/titanium-ore-icon-4.png", scale = 0.25, mipmap_count = 4}
     },
     subgroup = "raw-resource",
     order = "[titanium-ore]",
@@ -74,15 +70,14 @@ data:extend({
   {
     type = "item",
     name = "sp-magnesium-ore",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-magnesium-ore.png",
-    tint = {r=0.4, g=0.3, b=0.3, a=1.0},
+    icon = "__Spaghenutti__/graphics/icons/magnesium-ore-icon-1.png",
     icon_size = 64,
     icon_mipmaps = 4,
     pictures = {
-      { size = 64, filename = "__Spaghenutti__/graphics/base/ore/ore-1.png", scale = 0.25, mipmap_count = 4, tint={r=1.0, g=0.2, b=0.2, a=1.0} },
-      { size = 64, filename = "__Spaghenutti__/graphics/base/ore/ore-2.png", scale = 0.25, mipmap_count = 4, tint={r=1.0, g=0.2, b=0.2, a=1.0} },
-      { size = 64, filename = "__Spaghenutti__/graphics/base/ore/ore-3.png", scale = 0.25, mipmap_count = 4, tint={r=1.0, g=0.2, b=0.2, a=1.0} },
-      { size = 64, filename = "__Spaghenutti__/graphics/base/ore/ore-4.png", scale = 0.25, mipmap_count = 4, tint={r=1.0, g=0.2, b=0.2, a=1.0} }
+      { size = 64, filename = "__Spaghenutti__/graphics/icons/magnesium-ore-icon-1.png", scale = 0.25, mipmap_count = 4},
+      { size = 64, filename = "__Spaghenutti__/graphics/icons/magnesium-ore-icon-2.png", scale = 0.25, mipmap_count = 4},
+      { size = 64, filename = "__Spaghenutti__/graphics/icons/magnesium-ore-icon-3.png", scale = 0.25, mipmap_count = 4},
+      { size = 64, filename = "__Spaghenutti__/graphics/icons/magnesium-ore-icon-4.png", scale = 0.25, mipmap_count = 4}
     },
     subgroup = "raw-resource",
     order = "[magnesium-ore]",
@@ -91,15 +86,14 @@ data:extend({
   {
     type = "item",
     name = "sp-tinstone",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-tinstone.png",
-    tint = {r=0.4, g=0.3, b=0.3, a=1.0},
+    icon = "__Spaghenutti__/graphics/icons/tinstone-icon-2.png",
     icon_size = 64,
     icon_mipmaps = 4,
     pictures = {
-      { size = 64, filename = "__Spaghenutti__/graphics/base/ore/ore-1.png", scale = 0.25, mipmap_count = 4, tint={r=1.0, g=0.2, b=0.2, a=1.0} },
-      { size = 64, filename = "__Spaghenutti__/graphics/base/ore/ore-2.png", scale = 0.25, mipmap_count = 4, tint={r=1.0, g=0.2, b=0.2, a=1.0} },
-      { size = 64, filename = "__Spaghenutti__/graphics/base/ore/ore-3.png", scale = 0.25, mipmap_count = 4, tint={r=1.0, g=0.2, b=0.2, a=1.0} },
-      { size = 64, filename = "__Spaghenutti__/graphics/base/ore/ore-4.png", scale = 0.25, mipmap_count = 4, tint={r=1.0, g=0.2, b=0.2, a=1.0} }
+      { size = 64, filename = "__Spaghenutti__/graphics/icons/tinstone-icon-1.png", scale = 0.25, mipmap_count = 4},
+      { size = 64, filename = "__Spaghenutti__/graphics/icons/tinstone-icon-2.png", scale = 0.25, mipmap_count = 4},
+      { size = 64, filename = "__Spaghenutti__/graphics/icons/tinstone-icon-3.png", scale = 0.25, mipmap_count = 4},
+      { size = 64, filename = "__Spaghenutti__/graphics/icons/tinstone-icon-4.png", scale = 0.25, mipmap_count = 4}
     },
     subgroup = "raw-resource",
     order = "[tinstone]",
@@ -108,15 +102,14 @@ data:extend({
   {
     type = "item",
     name = "sp-zirconium-ore",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-zirconium-ore.png",
-    tint = {r=0.4, g=0.3, b=0.3, a=1.0},
+    icon = "__Spaghenutti__/graphics/icons/zirconium-ore-icon-3.png",
     icon_size = 64,
     icon_mipmaps = 4,
     pictures = {
-      { size = 64, filename = "__Spaghenutti__/graphics/base/ore/ore-1.png", scale = 0.25, mipmap_count = 4, tint={r=1.0, g=0.2, b=0.2, a=1.0} },
-      { size = 64, filename = "__Spaghenutti__/graphics/base/ore/ore-2.png", scale = 0.25, mipmap_count = 4, tint={r=1.0, g=0.2, b=0.2, a=1.0} },
-      { size = 64, filename = "__Spaghenutti__/graphics/base/ore/ore-3.png", scale = 0.25, mipmap_count = 4, tint={r=1.0, g=0.2, b=0.2, a=1.0} },
-      { size = 64, filename = "__Spaghenutti__/graphics/base/ore/ore-4.png", scale = 0.25, mipmap_count = 4, tint={r=1.0, g=0.2, b=0.2, a=1.0} }
+      { size = 64, filename = "__Spaghenutti__/graphics/icons/zirconium-ore-icon-1.png", scale = 0.25, mipmap_count = 4},
+      { size = 64, filename = "__Spaghenutti__/graphics/icons/zirconium-ore-icon-2.png", scale = 0.25, mipmap_count = 4},
+      { size = 64, filename = "__Spaghenutti__/graphics/icons/zirconium-ore-icon-3.png", scale = 0.25, mipmap_count = 4},
+      { size = 64, filename = "__Spaghenutti__/graphics/icons/zirconium-ore-icon-4.png", scale = 0.25, mipmap_count = 4}
     },
     subgroup = "raw-resource",
     order = "[zirconium-ore]",
@@ -125,15 +118,14 @@ data:extend({
   {
     type = "item",
     name = "sp-nickel-ore",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-nickel-ore.png",
-    tint = {r=0.4, g=0.3, b=0.3, a=1.0},
+    icon = "__Spaghenutti__/graphics/icons/nickel-ore-icon-4.png",
     icon_size = 64,
     icon_mipmaps = 4,
     pictures = {
-      { size = 64, filename = "__Spaghenutti__/graphics/base/ore/ore-1.png", scale = 0.25, mipmap_count = 4, tint={r=1.0, g=0.2, b=0.2, a=1.0} },
-      { size = 64, filename = "__Spaghenutti__/graphics/base/ore/ore-2.png", scale = 0.25, mipmap_count = 4, tint={r=1.0, g=0.2, b=0.2, a=1.0} },
-      { size = 64, filename = "__Spaghenutti__/graphics/base/ore/ore-3.png", scale = 0.25, mipmap_count = 4, tint={r=1.0, g=0.2, b=0.2, a=1.0} },
-      { size = 64, filename = "__Spaghenutti__/graphics/base/ore/ore-4.png", scale = 0.25, mipmap_count = 4, tint={r=1.0, g=0.2, b=0.2, a=1.0} }
+      { size = 64, filename = "__Spaghenutti__/graphics/icons/nickel-ore-icon-1.png", scale = 0.25, mipmap_count = 4},
+      { size = 64, filename = "__Spaghenutti__/graphics/icons/nickel-ore-icon-2.png", scale = 0.25, mipmap_count = 4},
+      { size = 64, filename = "__Spaghenutti__/graphics/icons/nickel-ore-icon-3.png", scale = 0.25, mipmap_count = 4},
+      { size = 64, filename = "__Spaghenutti__/graphics/icons/nickel-ore-icon-4.png", scale = 0.25, mipmap_count = 4}
     },
     subgroup = "raw-resource",
     order = "[nickel-ore]",
@@ -142,15 +134,14 @@ data:extend({
   {
     type = "item",
     name = "sp-tungsten-ore",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-tungsten-ore.png",
-    tint = {r=0.4, g=0.3, b=0.3, a=1.0},
+    icon = "__Spaghenutti__/graphics/icons/tungsten-ore-icon-1.png",
     icon_size = 64,
     icon_mipmaps = 4,
     pictures = {
-      { size = 64, filename = "__Spaghenutti__/graphics/base/ore/ore-1.png", scale = 0.25, mipmap_count = 4, tint={r=1.0, g=0.2, b=0.2, a=1.0} },
-      { size = 64, filename = "__Spaghenutti__/graphics/base/ore/ore-2.png", scale = 0.25, mipmap_count = 4, tint={r=1.0, g=0.2, b=0.2, a=1.0} },
-      { size = 64, filename = "__Spaghenutti__/graphics/base/ore/ore-3.png", scale = 0.25, mipmap_count = 4, tint={r=1.0, g=0.2, b=0.2, a=1.0} },
-      { size = 64, filename = "__Spaghenutti__/graphics/base/ore/ore-4.png", scale = 0.25, mipmap_count = 4, tint={r=1.0, g=0.2, b=0.2, a=1.0} }
+      { size = 64, filename = "__Spaghenutti__/graphics/icons/tungsten-ore-icon-1.png", scale = 0.25, mipmap_count = 4},
+      { size = 64, filename = "__Spaghenutti__/graphics/icons/tungsten-ore-icon-2.png", scale = 0.25, mipmap_count = 4},
+      { size = 64, filename = "__Spaghenutti__/graphics/icons/tungsten-ore-icon-3.png", scale = 0.25, mipmap_count = 4},
+      { size = 64, filename = "__Spaghenutti__/graphics/icons/tungsten-ore-icon-4.png", scale = 0.25, mipmap_count = 4}
     },
     subgroup = "raw-resource",
     order = "[tungsten-ore]",
@@ -159,15 +150,14 @@ data:extend({
   {
     type = "item",
     name = "sp-zinc-ore",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-zinc-ore.png",
-    tint = {r=0.4, g=0.3, b=0.3, a=1.0},
+    icon = "__Spaghenutti__/graphics/icons/zinc-ore-icon-2.png",
     icon_size = 64,
     icon_mipmaps = 4,
     pictures = {
-      { size = 64, filename = "__Spaghenutti__/graphics/base/ore/ore-1.png", scale = 0.25, mipmap_count = 4, tint={r=1.0, g=0.2, b=0.2, a=1.0} },
-      { size = 64, filename = "__Spaghenutti__/graphics/base/ore/ore-2.png", scale = 0.25, mipmap_count = 4, tint={r=1.0, g=0.2, b=0.2, a=1.0} },
-      { size = 64, filename = "__Spaghenutti__/graphics/base/ore/ore-3.png", scale = 0.25, mipmap_count = 4, tint={r=1.0, g=0.2, b=0.2, a=1.0} },
-      { size = 64, filename = "__Spaghenutti__/graphics/base/ore/ore-4.png", scale = 0.25, mipmap_count = 4, tint={r=1.0, g=0.2, b=0.2, a=1.0} }
+      { size = 64, filename = "__Spaghenutti__/graphics/icons/zinc-ore-icon-1.png", scale = 0.25, mipmap_count = 4},
+      { size = 64, filename = "__Spaghenutti__/graphics/icons/zinc-ore-icon-2.png", scale = 0.25, mipmap_count = 4},
+      { size = 64, filename = "__Spaghenutti__/graphics/icons/zinc-ore-icon-3.png", scale = 0.25, mipmap_count = 4},
+      { size = 64, filename = "__Spaghenutti__/graphics/icons/zinc-ore-icon-4.png", scale = 0.25, mipmap_count = 4}
     },
     subgroup = "raw-resource",
     order = "[zinc-ore]",
@@ -176,15 +166,14 @@ data:extend({
   {
     type = "item",
     name = "sp-spodumene",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-spodumene.png",
-    tint = {r=0.4, g=0.3, b=0.3, a=1.0},
+    icon = "__Spaghenutti__/graphics/icons/spodumene-icon-3.png",
     icon_size = 64,
     icon_mipmaps = 4,
     pictures = {
-      { size = 64, filename = "__Spaghenutti__/graphics/base/ore/ore-1.png", scale = 0.25, mipmap_count = 4, tint={r=1.0, g=0.2, b=0.2, a=1.0} },
-      { size = 64, filename = "__Spaghenutti__/graphics/base/ore/ore-2.png", scale = 0.25, mipmap_count = 4, tint={r=1.0, g=0.2, b=0.2, a=1.0} },
-      { size = 64, filename = "__Spaghenutti__/graphics/base/ore/ore-3.png", scale = 0.25, mipmap_count = 4, tint={r=1.0, g=0.2, b=0.2, a=1.0} },
-      { size = 64, filename = "__Spaghenutti__/graphics/base/ore/ore-4.png", scale = 0.25, mipmap_count = 4, tint={r=1.0, g=0.2, b=0.2, a=1.0} }
+      { size = 64, filename = "__Spaghenutti__/graphics/icons/spodumene-icon-1.png", scale = 0.25, mipmap_count = 4},
+      { size = 64, filename = "__Spaghenutti__/graphics/icons/spodumene-icon-2.png", scale = 0.25, mipmap_count = 4},
+      { size = 64, filename = "__Spaghenutti__/graphics/icons/spodumene-icon-3.png", scale = 0.25, mipmap_count = 4},
+      { size = 64, filename = "__Spaghenutti__/graphics/icons/spodumene-icon-4.png", scale = 0.25, mipmap_count = 4}
     },
     subgroup = "raw-resource",
     order = "[spodumene]",
@@ -892,7 +881,7 @@ data:extend({
     icon_size = 64,
     scale = 0.25,
     pictures = {
-      { size = 64, filename = "__Spaghenutti__/graphics/dummy/dummy-item-sp-aluminum-frame.png", scale = 0.5, tint={r=1.0, g=0.2, b=0.2, a=1.0} },
+      { size = 64, filename = "__Spaghenutti__/graphics/dummy/dummy-item-sp-aluminum-frame.png", scale = 0.5},
     },
     subgroup = "mechanical-component",
     order = "[aluminum-frame]",

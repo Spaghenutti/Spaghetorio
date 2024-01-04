@@ -23,19 +23,21 @@ def create_mipmaps(num=4):
     file_paths = glob.glob(ICONS_PATH, recursive=True)
     for file_path in file_paths:
         img = Image.open(file_path)
-        img.thumbnail((X_RES, Y_RES))
+        width, height = img.size
+        if width == height:
+          img.thumbnail((X_RES, Y_RES))
 
-        x_res_mip_map = 2*X_RES - X_RES//(2**(num-1))
-        print(x_res_mip_map)
-        mip_maps = Image.new(mode="RGBA", size=(x_res_mip_map, Y_RES))
+          x_res_mip_map = 2*X_RES - X_RES//(2**(num-1))
+          print(x_res_mip_map)
+          mip_maps = Image.new(mode="RGBA", size=(x_res_mip_map, Y_RES))
 
-        for n in range(num):
-            img.thumbnail((X_RES//(2**n), Y_RES//(2**n)))
-            x_pos = int(2*X_RES - X_RES//(2**(n-1)))
-            print(x_pos)
-            mip_maps.paste(img, (x_pos, 0))
+          for n in range(num):
+              img.thumbnail((X_RES//(2**n), Y_RES//(2**n)))
+              x_pos = int(2*X_RES - X_RES//(2**(n-1)))
+              print(x_pos)
+              mip_maps.paste(img, (x_pos, 0))
 
-        mip_maps.save(file_path)
+          mip_maps.save(file_path)
 
 if __name__ == "__main__":
     resize_images()
