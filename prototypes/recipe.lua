@@ -166,7 +166,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-titanium-cloride",  -- #ForRegEx# - recipe
+    name = "sp-titanium-chloride",  -- #ForRegEx# - recipe
     category = "smelting",
     enabled = false,
     energy_required = 3.2,  -- time in seconds to make the item
@@ -174,7 +174,7 @@ data:extend({
       {type = "item", name = "sp-titanium-ore", amount = 3},
     },
     results = {
-      {type = "item", name = "sp-titanium-cloride", amount = 2}
+      {type = "item", name = "sp-titanium-chloride", amount = 2}
     }
   },
   {
@@ -188,7 +188,7 @@ data:extend({
     enabled = false,
     energy_required = 5,  -- time in seconds to make the item
     ingredients = {
-      {type = "item", name = "sp-titanium-cloride", amount = 3},
+      {type = "item", name = "sp-titanium-chloride", amount = 3},
       {type = "item", name = "sp-sodium", amount = 2},
     },
     results = {

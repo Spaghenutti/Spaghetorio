@@ -38,7 +38,7 @@ Na Sodium
   +r liquid-sodium -> wastewater treatment plants
 
 Cl Chlorine
-  +r chlorine (solved in water as liquid)
+  +rk chlorine (solved in water as liquid)
 
 Mg Magnesium
   + magnesium-ore / dolomite (dolomite is calcined to magnesium oxide) https://www.britannica.com/technology/magnesium-processing
@@ -47,7 +47,7 @@ Mg Magnesium
 
 Ti Titanium
   + titanium-ore (TiO2, FeTiO3)
-  +r titanium-cloride TiCl4 (titanium ore processed)
+  +r titanium-chloride TiCl4 (titanium ore processed)
   +r titanium-sponge (TiCl4 + 4Na = Ti + 4NaCl & TiCl4 + 2Mg = Ti + 2MgCl2)
   +rg titanium-ingot
   +rg titanium-plate
@@ -76,7 +76,7 @@ Sn Tin
 	+ tinstone (casserite), ore
   - stannite (Cu2FeSnS4), ore, a copper-iron-tin sulfide, and cylindrite (PbSn4FeSb2S14), a lead-tin-iron-antimony sulfide.
   +rg tin-ingot
-  +rg tin-sheet (very thin sheet)
+  -rg tin-sheet (very thin sheet)
   +r bronze-rod (60% copper 40% tin) for corrosion resistant stuff
 
 Zr Zirconium
@@ -147,7 +147,7 @@ Other
   + helium-3
   + oxygen
   + nitrogen
-  +r glass
+  +rk glass
   +r sodium-carbonate
   - neutron
   +r plutonium-239 for reactor and bombs

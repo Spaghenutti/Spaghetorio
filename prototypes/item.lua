@@ -182,7 +182,7 @@ data:extend({
   {
     type = "item",
     name = "sp-salt",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-salt.png",
+    icon = "__Spaghenutti__/graphics/icons/salt.png",
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "raw-resource",
@@ -192,7 +192,7 @@ data:extend({
   {
     type = "item",
     name = "sp-zircon",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-zircon.png",
+    icon = "__Spaghenutti__/graphics/icons/zircon.png",
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "raw-resource",
@@ -202,7 +202,7 @@ data:extend({
   {
     type = "item",
     name = "sp-cobalt-sulfate",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-aluminum-ore.png",
+    icon = "__Spaghenutti__/graphics/icons/cobalt-sulfate.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "raw-resource",
     order = "[cobalt-sulfate]",
@@ -224,7 +224,7 @@ data:extend({
   {
     type = "item",
     name = "sp-graphite",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-graphite.png",
+    icon = "__Spaghenutti__/graphics/icons/graphite.png",
     icon_size = 64,
     scale = 0.25,
     subgroup = "processed-resource",
@@ -234,7 +234,7 @@ data:extend({
   {
     type = "item",
     name = "sp-calcium-carbonate",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-calcium-carbonate.png",
+    icon = "__Spaghenutti__/graphics/icons/calcium-carbonate.png",
     icon_size = 64,
     scale = 0.25,
     subgroup = "processed-resource",
@@ -244,7 +244,7 @@ data:extend({
   {
     type = "item",
     name = "sp-calcium",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-calcium.png",
+    icon = "__Spaghenutti__/graphics/icons/calcium.png",
     icon_size = 64,
     scale = 0.25,
     subgroup = "processed-resource",
@@ -254,7 +254,7 @@ data:extend({
   {
     type = "item",
     name = "sp-sodium",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-sodium.png",
+    icon = "__Spaghenutti__/graphics/icons/sodium.png",
     icon_size = 64,
     scale = 0.25,
     subgroup = "processed-resource",
@@ -263,8 +263,18 @@ data:extend({
   },
   {
     type = "item",
+    name = "sp-stibnite",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/stibnite.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "processed-resource",
+    order = "[stibnite]",
+    stack_size = 100
+  },
+  {
+    type = "item",
     name = "sp-magnesium-chloride",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-magnesium-chloride.png",
+    icon = "__Spaghenutti__/graphics/icons/magnesium-chloride.png",
     icon_size = 64,
     scale = 0.25,
     subgroup = "processed-resource",
@@ -274,7 +284,7 @@ data:extend({
   {
     type = "item",
     name = "sp-silica",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-silica.png",
+    icon = "__Spaghenutti__/graphics/icons/silica.png",
     icon_size = 64,
     scale = 0.25,
     subgroup = "processed-resource",
@@ -283,18 +293,18 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-titanium-cloride",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-titanium-cloride.png",
+    name = "sp-titanium-chloride",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/titanium-chloride.png",
     icon_size = 64,
     scale = 0.25,
     subgroup = "processed-resource",
-    order = "[titanium-cloride]",
+    order = "[titanium-chloride]",
     stack_size = 100
   },
   {
     type = "item",
     name = "sp-titanium-sponge",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-titanium-sponge.png",
+    icon = "__Spaghenutti__/graphics/icons/titanium-sponge.png",
     icon_size = 64,
     scale = 0.25,
     subgroup = "processed-resource",
@@ -304,7 +314,7 @@ data:extend({
   {
     type = "item",
     name = "sp-ammonium-paratungstate",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-ammonium-paratungstate.png",
+    icon = "__Spaghenutti__/graphics/icons/ammonium-paratungstate.png",
     icon_size = 64,
     scale = 0.25,
     subgroup = "processed-resource",
@@ -314,7 +324,7 @@ data:extend({
   {
     type = "item",
     name = "sp-tungsten-powder",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-tungsten-powder.png",
+    icon = "__Spaghenutti__/graphics/icons/tungsten-powder.png",
     icon_size = 64,
     scale = 0.25,
     subgroup = "processed-resource",
@@ -324,7 +334,7 @@ data:extend({
   {
     type = "item",
     name = "sp-gold",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-gold.png",
+    icon = "__Spaghenutti__/graphics/icons/gold.png",
     icon_size = 64,
     scale = 0.25,
     subgroup = "processed-resource",
@@ -334,7 +344,7 @@ data:extend({
   {
     type = "item",
     name = "sp-silver",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-silver.png",
+    icon = "__Spaghenutti__/graphics/icons/silver.png",
     icon_size = 64,
     scale = 0.25,
     subgroup = "processed-resource",
@@ -344,7 +354,7 @@ data:extend({
   {
     type = "item",
     name = "sp-platinum",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-platinum.png",
+    icon = "__Spaghenutti__/graphics/icons/platinum.png",
     icon_size = 64,
     scale = 0.25,
     subgroup = "processed-resource",
@@ -354,7 +364,7 @@ data:extend({
   {
     type = "item",
     name = "sp-palladium",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-palladium.png",
+    icon = "__Spaghenutti__/graphics/icons/palladium.png",
     icon_size = 64,
     scale = 0.25,
     subgroup = "processed-resource",
@@ -364,7 +374,7 @@ data:extend({
   {
     type = "item",
     name = "sp-iridium",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-iridium.png",
+    icon = "__Spaghenutti__/graphics/icons/iridium.png",
     icon_size = 64,
     scale = 0.25,
     subgroup = "processed-resource",
@@ -374,7 +384,7 @@ data:extend({
   {
     type = "item",
     name = "sp-yittrium",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-yittrium.png",
+    icon = "__Spaghenutti__/graphics/icons/yittrium.png",
     icon_size = 64,
     scale = 0.25,
     subgroup = "processed-resource",
@@ -384,7 +394,7 @@ data:extend({
   {
     type = "item",
     name = "sp-lanthanum",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-lanthanum.png",
+    icon = "__Spaghenutti__/graphics/icons/lanthanum.png",
     icon_size = 64,
     scale = 0.25,
     subgroup = "processed-resource",
@@ -394,7 +404,7 @@ data:extend({
   {
     type = "item",
     name = "sp-cerium",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-cerium.png",
+    icon = "__Spaghenutti__/graphics/icons/cerium.png",
     icon_size = 64,
     scale = 0.25,
     subgroup = "processed-resource",
@@ -404,7 +414,7 @@ data:extend({
   {
     type = "item",
     name = "sp-neodymium",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-neodymium.png",
+    icon = "__Spaghenutti__/graphics/icons/neodymium.png",
     icon_size = 64,
     scale = 0.25,
     subgroup = "processed-resource",
@@ -414,7 +424,7 @@ data:extend({
   {
     type = "item",
     name = "sp-niobium-powder",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-niobium-powder.png",
+    icon = "__Spaghenutti__/graphics/icons/niobium-powder.png",
     icon_size = 64,
     scale = 0.25,
     subgroup = "processed-resource",
@@ -424,7 +434,7 @@ data:extend({
   {
     type = "item",
     name = "sp-fluorspar",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-fluorspar.png",
+    icon = "__Spaghenutti__/graphics/icons/fluorspar.png",
     icon_size = 64,
     scale = 0.25,
     subgroup = "processed-resource",
@@ -434,7 +444,7 @@ data:extend({
   {
     type = "item",
     name = "sp-fluorine",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-fluorine.png",
+    icon = "__Spaghenutti__/graphics/icons/fluorine.png",
     icon_size = 64,
     scale = 0.25,
     subgroup = "processed-resource",
@@ -444,7 +454,7 @@ data:extend({
   {
     type = "item",
     name = "sp-sodium-carbonate",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-sodium-carbonate.png",
+    icon = "__Spaghenutti__/graphics/icons/sodium-carbonate.png",
     icon_size = 64,
     scale = 0.25,
     subgroup = "processed-resource",
@@ -454,7 +464,7 @@ data:extend({
   {
     type = "item",
     name = "sp-phosphorus",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-phosphorus.png",
+    icon = "__Spaghenutti__/graphics/icons/phosphorus.png",
     icon_size = 64,
     scale = 0.25,
     subgroup = "processed-resource",
@@ -464,21 +474,11 @@ data:extend({
   {
     type = "item",
     name = "sp-lithium-oxide",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-lithium-oxide.png",
+    icon = "__Spaghenutti__/graphics/icons/lithium-oxide.png",
     icon_size = 64,
     scale = 0.25,
     subgroup = "processed-resource",
     order = "[lithium-oxide]",
-    stack_size = 100
-  },
-  {
-    type = "item",
-    name = "sp-lithium",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-lithium.png",
-    icon_size = 64,
-    scale = 0.25,
-    subgroup = "processed-resource",
-    order = "[lithium]",
     stack_size = 100
   },
   {
@@ -504,7 +504,7 @@ data:extend({
   {
     type = "item",
     name = "sp-cobalt-billet",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-alumina.png",
+    icon = "__Spaghenutti__/graphics/icons/cobalt-billet.png",
     icon_size = 64,
     scale = 0.25,
     subgroup = "processed-resource",
@@ -597,7 +597,7 @@ data:extend({
   {
     type = "item",
     name = "sp-zirconium-rod",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-zirconium-rod.png",
+    icon = "__Spaghenutti__/graphics/icons/zirconium-rod.png",
     icon_size = 64,
     scale = 0.25,
     subgroup = "raw-material",
@@ -607,7 +607,7 @@ data:extend({
   {
     type = "item",
     name = "sp-zirconia",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-zirconia.png",
+    icon = "__Spaghenutti__/graphics/icons/zirconia.png",
     icon_size = 64,
     scale = 0.25,
     subgroup = "raw-material",
@@ -647,7 +647,7 @@ data:extend({
   {
     type = "item",
     name = "sp-niobium-billet",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-niobium-billet.png",
+    icon = "__Spaghenutti__/graphics/icons/niobium-billet.png",
     icon_size = 64,
     scale = 0.25,
     subgroup = "raw-material",
@@ -657,7 +657,7 @@ data:extend({
   {
     type = "item",
     name = "sp-tantalum-billet",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-tantalum-billet.png",
+    icon = "__Spaghenutti__/graphics/icons/tantalum-billet.png",
     icon_size = 64,
     scale = 0.25,
     subgroup = "raw-material",
@@ -667,7 +667,7 @@ data:extend({
   {
     type = "item",
     name = "sp-tungsten-billet",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-tungsten-billet.png",
+    icon = "__Spaghenutti__/graphics/icons/tungsten-billet.png",
     icon_size = 64,
     scale = 0.25,
     subgroup = "raw-material",
@@ -677,7 +677,7 @@ data:extend({
   {
     type = "item",
     name = "sp-tungsten-slab",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-tungsten-slab.png",
+    icon = "__Spaghenutti__/graphics/icons/tungsten-slab.png",
     icon_size = 64,
     scale = 0.25,
     subgroup = "raw-material",
@@ -793,7 +793,7 @@ data:extend({
   {
     type = "item",
     name = "sp-carbon-nanotubes",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-carbon-nanotubes.png",
+    icon = "__Spaghenutti__/graphics/icons/carbon-nanotubes.png",
     icon_size = 64,
     scale = 0.25,
     subgroup = "advanced-raw-material",
@@ -803,7 +803,7 @@ data:extend({
   {
     type = "item",
     name = "sp-graphene",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-graphene.png",
+    icon = "__Spaghenutti__/graphics/icons/graphene.png",
     icon_size = 64,
     scale = 0.25,
     subgroup = "advanced-raw-material",
@@ -823,7 +823,7 @@ data:extend({
   {
     type = "item",
     name = "sp-titanium-nitride",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-titanium-nitride.png",
+    icon = "__Spaghenutti__/graphics/icons/titanium-nitride.png",
     icon_size = 64,
     scale = 0.25,
     subgroup = "advanced-raw-material",
@@ -833,7 +833,7 @@ data:extend({
   {
     type = "item",
     name = "sp-titanium-carbide",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-titanium-carbide.png",
+    icon = "__Spaghenutti__/graphics/icons/titanium-carbide.png",
     icon_size = 64,
     scale = 0.25,
     subgroup = "advanced-raw-material",
@@ -843,7 +843,7 @@ data:extend({
   {
     type = "item",
     name = "sp-tungsten-carbide",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-tungsten-carbide.png",
+    icon = "__Spaghenutti__/graphics/icons/tungsten-carbide.png",
     icon_size = 64,
     scale = 0.25,
     subgroup = "advanced-raw-material",
@@ -853,7 +853,7 @@ data:extend({
   {
     type = "item",
     name = "sp-diamond",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-diamond.png",
+    icon = "__Spaghenutti__/graphics/icons/diamond.png",
     icon_size = 64,
     scale = 0.25,
     subgroup = "advanced-raw-material",
@@ -877,12 +877,9 @@ data:extend({
   {
     type = "item",
     name = "sp-aluminum-frame",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-aluminum-frame.png",
+    icon = "__Spaghenutti__/graphics/icons/aluminum-frames.png",
     icon_size = 64,
     scale = 0.25,
-    pictures = {
-      { size = 64, filename = "__Spaghenutti__/graphics/dummy/dummy-item-sp-aluminum-frame.png", scale = 0.5},
-    },
     subgroup = "mechanical-component",
     order = "[aluminum-frame]",
     stack_size = 100
@@ -890,7 +887,7 @@ data:extend({
   {
     type = "item",
     name = "sp-aluminum-cable",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/base/cable.png",
+    icon = "__Spaghenutti__/graphics/icons/aluminum-cable.png",
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "mechanical-component",
@@ -940,7 +937,7 @@ data:extend({
   {
     type = "item",
     name = "sp-connecting-rod",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-connecting-rod.png",
+    icon = "__Spaghenutti__/graphics/icons/connecting-rod.png",
     icon_size = 64,
     scale = 0.25,
     subgroup = "mechanical-component",
@@ -965,7 +962,7 @@ data:extend({
   {
     type = "item",
     name = "sp-titanium-frame",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-titanium-frame.png",
+    icon = "__Spaghenutti__/graphics/icons/titanium-frame.png",
     icon_size = 64,
     scale = 0.25,
     subgroup = "mechanical-component",
@@ -1881,6 +1878,16 @@ if not mods["Krastorio2"] then
       subgroup = "mechanical-component",
       order = "[steel-gear-wheel]",
       stack_size = 400
+    },
+    {
+      type = "item",
+      name = "sp-lithium",  -- #ForRegEx# - item
+      icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-lithium.png",
+      icon_size = 64,
+      scale = 0.25,
+      subgroup = "processed-resource",
+      order = "[lithium]",
+      stack_size = 100
     },
   })
 end

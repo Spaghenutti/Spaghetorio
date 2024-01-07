@@ -28,13 +28,11 @@ def create_mipmaps(num=4):
           img.thumbnail((X_RES, Y_RES))
 
           x_res_mip_map = 2*X_RES - X_RES//(2**(num-1))
-          print(x_res_mip_map)
           mip_maps = Image.new(mode="RGBA", size=(x_res_mip_map, Y_RES))
 
           for n in range(num):
               img.thumbnail((X_RES//(2**n), Y_RES//(2**n)))
               x_pos = int(2*X_RES - X_RES//(2**(n-1)))
-              print(x_pos)
               mip_maps.paste(img, (x_pos, 0))
 
           mip_maps.save(file_path)
