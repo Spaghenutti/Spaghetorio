@@ -526,16 +526,6 @@ data:extend({
   },
   {
     type = "item",
-    name = "ceramics",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-aluminum-sheet.png",
-    icon_size = 64,
-    scale = 0.25,
-    subgroup = "raw-material",
-    order = "[ceramics]",
-    stack_size = 100
-  },
-  {
-    type = "item",
     name = "sp-chromium-plate",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/icons/chromium-plate.png",
     icon_size = 64,
@@ -666,16 +656,6 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-tungsten-billet",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/icons/tungsten-billet.png",
-    icon_size = 64,
-    scale = 0.25,
-    subgroup = "raw-material",
-    order = "[tungsten-billet]",
-    stack_size = 100
-  },
-  {
-    type = "item",
     name = "sp-tungsten-slab",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/icons/tungsten-slab.png",
     icon_size = 64,
@@ -687,7 +667,7 @@ data:extend({
   {
     type = "item",
     name = "sp-cement",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-cement.png",
+    icon = "__Spaghenutti__/graphics/icons/cement.png",
     icon_size = 64,
     scale = 0.25,
     subgroup = "raw-material",
@@ -697,7 +677,7 @@ data:extend({
   {
     type = "item",
     name = "sp-rubber",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-rubber.png",
+    icon = "__Spaghenutti__/graphics/icons/rubber.png",
     icon_size = 64,
     scale = 0.25,
     subgroup = "raw-material",
@@ -813,7 +793,7 @@ data:extend({
   {
     type = "item",
     name = "sp-high-purity-silicon",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-high-purity-silicon.png",
+    icon = "__Spaghenutti__/graphics/icons/high-purity-silicon.png",
     icon_size = 64,
     scale = 0.25,
     subgroup = "advanced-raw-material",
@@ -863,7 +843,7 @@ data:extend({
   {
     type = "item",
     name = "sp-carbon-fiber",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-carbon-fiber.png",
+    icon = "__Spaghenutti__/graphics/icons/carbon-fiber.png",
     icon_size = 64,
     scale = 0.25,
     subgroup = "advanced-raw-material",
@@ -927,7 +907,7 @@ data:extend({
   {
     type = "item",
     name = "sp-stainless-steel-gear-wheel",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-stainless-steel-gear-wheel.png",
+    icon = "__Spaghenutti__/graphics/icons/stainless-steel-gear.png",
     icon_size = 64,
     scale = 0.25,
     subgroup = "mechanical-component",
@@ -972,7 +952,7 @@ data:extend({
   {
     type = "item",
     name = "sp-ball-bearing",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-ball-bearing.png",
+    icon = "__Spaghenutti__/graphics/icons/bearing.png",
     icon_size = 64,
     scale = 0.25,
     subgroup = "mechanical-component",
@@ -982,7 +962,7 @@ data:extend({
   {
     type = "item",
     name = "sp-heavy-bearing",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-heavy-bearing.png",
+    icon = "__Spaghenutti__/graphics/icons/heavy-bearing.png",
     icon_size = 64,
     scale = 0.25,
     subgroup = "mechanical-component",
@@ -991,18 +971,18 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-ferrite-magnet",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-ferrite-magnet.png",
+    name = "sp-magnet",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/magnet.png",
     icon_size = 64,
     scale = 0.25,
     subgroup = "mechanical-component",
-    order = "[ferrite-magnet]",
+    order = "[magnet]",
     stack_size = 100
   },
   {
     type = "item",
     name = "sp-neodymium-magnet",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-neodymium-magnet.png",
+    icon = "__Spaghenutti__/graphics/icons/neodymium-magnet.png",
     icon_size = 64,
     scale = 0.25,
     subgroup = "mechanical-component",
@@ -1020,8 +1000,8 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-ceramic",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-ceramic.png",
+    name = "sp-ceramics",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/ceramics.png",
     icon_size = 64,
     scale = 0.25,
     subgroup = "mechanical-component",
@@ -1031,7 +1011,7 @@ data:extend({
   {
     type = "item",
     name = "sp-flange",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-flange.png",
+    icon = "__Spaghenutti__/graphics/icons/flange.png",
     icon_size = 64,
     scale = 0.25,
     subgroup = "mechanical-component",
@@ -1041,7 +1021,7 @@ data:extend({
   {
     type = "item",
     name = "sp-filter",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-filter.png",
+    icon = "__Spaghenutti__/graphics/icons/filter.png",
     icon_size = 64,
     scale = 0.25,
     subgroup = "mechanical-component",
@@ -1051,7 +1031,7 @@ data:extend({
   {
     type = "item",
     name = "sp-sinter-filter",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-sinter-filter.png",
+    icon = "__Spaghenutti__/graphics/icons/sinter-filter.png",
     icon_size = 64,
     scale = 0.25,
     subgroup = "mechanical-component",
@@ -1061,7 +1041,7 @@ data:extend({
   {
     type = "item",
     name = "sp-crucible",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-crucible.png",
+    icon = "__Spaghenutti__/graphics/icons/crucible.png",
     icon_size = 64,
     scale = 0.25,
     subgroup = "mechanical-component",
@@ -1071,7 +1051,7 @@ data:extend({
   {
     type = "item",
     name = "sp-glass-fiber",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-glass-fiber.png",
+    icon = "__Spaghenutti__/graphics/icons/glass-fiber.png",
     icon_size = 64,
     scale = 0.25,
     subgroup = "mechanical-component",
@@ -1080,7 +1060,7 @@ data:extend({
   },  {
     type = "item",
     name = "sp-kevlar",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-kevlar.png",
+    icon = "__Spaghenutti__/graphics/icons/kevlar.png",
     icon_size = 64,
     scale = 0.25,
     subgroup = "mechanical-component",
@@ -1113,7 +1093,7 @@ data:extend({
   {
     type = "item",
     name = "sp-infrared-filter",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-infrared-filter.png",
+    icon = "__Spaghenutti__/graphics/icons/infrared-filter.png",
     icon_size = 64,
     scale = 0.25,
     subgroup = "electrical-optical-component",
@@ -1253,7 +1233,7 @@ data:extend({
   {
     type = "item",
     name = "sp-advanced-compute-unit",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-advanced-compute-unit.png",
+    icon = "__Spaghenutti__/graphics/icons/advanced-compute-unit.png",
     icon_size = 64,
     scale = 0.25,
     subgroup = "electrical-optical-component",
@@ -1263,7 +1243,7 @@ data:extend({
   {
     type = "item",
     name = "sp-integrated-circuit",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-integrated-circuit.png",
+    icon = "__Spaghenutti__/graphics/icons/integrated-circuit.png",
     icon_size = 64,
     scale = 0.25,
     subgroup = "electrical-optical-component",
@@ -1293,7 +1273,7 @@ data:extend({
   {
     type = "item",
     name = "sp-antenna-chip",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-antenna-chip.png",
+    icon = "__Spaghenutti__/graphics/icons/antenna-chip.png",
     icon_size = 64,
     scale = 0.25,
     subgroup = "electrical-optical-component",
@@ -1303,7 +1283,7 @@ data:extend({
   {
     type = "item",
     name = "sp-processor",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-processor.png",
+    icon = "__Spaghenutti__/graphics/icons/processor.png",
     icon_size = 64,
     scale = 0.25,
     subgroup = "electrical-optical-component",
@@ -1313,7 +1293,7 @@ data:extend({
   {
     type = "item",
     name = "sp-cmos",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-cmos.png",
+    icon = "__Spaghenutti__/graphics/icons/cmos.png",
     icon_size = 64,
     scale = 0.25,
     subgroup = "electrical-optical-component",
@@ -1323,21 +1303,11 @@ data:extend({
   {
     type = "item",
     name = "sp-laser",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-laser.png",
+    icon = "__Spaghenutti__/graphics/icons/laser.png",
     icon_size = 64,
     scale = 0.25,
     subgroup = "electrical-optical-component",
     order = "[laser]",
-    stack_size = 100
-  },
-  {
-    type = "item",
-    name = "sp-optic-fiber",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-optic-fiber.png",
-    icon_size = 64,
-    scale = 0.25,
-    subgroup = "electrical-optical-component",
-    order = "[optic-fiber]",
     stack_size = 100
   },
   ------------------------------------------------------------------------------
@@ -1355,7 +1325,7 @@ data:extend({
   {
     type = "item",
     name = "sp-plate-heat-exchanger",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-plate-heat-exchanger.png",
+    icon = "__Spaghenutti__/graphics/icons/plate-heat-exchanger.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "intermediate-product",
     order = "[plate-heat-exchanger]",
@@ -1373,7 +1343,7 @@ data:extend({
   {
     type = "item",
     name = "sp-gyro",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-gyro.png",
+    icon = "__Spaghenutti__/graphics/icons/gyro.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "intermediate-product",
     order = "[gyro]",
@@ -1409,7 +1379,7 @@ data:extend({
   {
     type = "item",
     name = "sp-fabric",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-fabric.png",
+    icon = "__Spaghenutti__/graphics/icons/fabric.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "intermediate-product",
     order = "[fabric]",
@@ -1493,7 +1463,7 @@ data:extend({
   {
     type = "item",
     name = "sp-spark-plug",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-spark-plug.png",
+    icon = "__Spaghenutti__/graphics/icons/spark-plug.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "advanced-intermediate-product",
     order = "[spark-plug]",
@@ -1619,7 +1589,7 @@ data:extend({
   {
     type = "item",
     name = "sp-reactor-core",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-reactor-core.png",
+    icon = "__Spaghenutti__/graphics/icons/reactor-core.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "advanced-intermediate-product",
     order = "[reactor-core]",

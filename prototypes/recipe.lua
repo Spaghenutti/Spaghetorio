@@ -394,7 +394,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-tungsten-billet",  -- #ForRegEx# - recipe
+    name = "sp-tungsten-slab",  -- #ForRegEx# - recipe
     category = "smelting",
     enabled = false,
     energy_required = 6,  -- time in seconds to make the item
@@ -402,7 +402,7 @@ data:extend({
       {type = "item", name = "sp-tungsten-powder", amount = 6}
     },
     results = {
-      {type = "item", name = "sp-tungsten-billet", amount = 3}
+      {type = "item", name = "sp-tungsten-slab", amount = 3}
     }
   },
   {
@@ -993,7 +993,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-ferrite-magnet",  -- #ForRegEx# - recipe
+    name = "sp-magnet",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 3.6,  -- time in seconds to make the item
@@ -1002,7 +1002,7 @@ data:extend({
       {type = "item", name = "iron-ore", amount = 1}
     },
     results = {
-      {type = "item", name = "sp-ferrite-magnet", amount = 2}
+      {type = "item", name = "sp-magnet", amount = 2}
     }
   },
   {
@@ -1050,7 +1050,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-ceramic",  -- #ForRegEx# - recipe
+    name = "sp-ceramics",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 3.6,  -- time in seconds to make the item
@@ -1059,7 +1059,7 @@ data:extend({
       {type = "item", name = "sp-silica", amount = 1}
     },
     results = {
-      {type = "item", name = "sp-ceramic", amount = 1}
+      {type = "item", name = "sp-ceramics", amount = 1}
     }
   },
   {
@@ -1157,7 +1157,7 @@ data:extend({
     ingredients = {
       {type = "item", name = "iron-plate", amount = 1},
       {type = "item", name = "sp-titanium-frame", amount = 1},
-      {type = "item", name = "sp-ceramic", amount = 3},
+      {type = "item", name = "sp-ceramics", amount = 3},
       {type = "fluid", name = "sp-liquid-nitrogen", amount = 40}
     },
     results = {
@@ -1215,7 +1215,7 @@ data:extend({
     enabled = false,
     energy_required = 4,  -- time in seconds to make the item
     ingredients = {
-      {type = "item", name = "sp-ferrite-magnet", amount = 2},
+      {type = "item", name = "sp-magnet", amount = 2},
       {type = "item", name = "sp-silica", amount = 1},
       {type = "item", name = "copper-cable", amount = 1}
     },
@@ -1321,8 +1321,8 @@ data:extend({
       {type = "item", name = "sp-TiAlSn", amount = 4},
       {type = "item", name = "sp-titanium-carbide", amount = 2},
       {type = "item", name = "sp-titanium-nitride", amount = 1},
-      {type = "item", name = "sp-tungsten-billet", amount = 5},
-      {type = "item", name = "sp-ceramic", amount = 5},
+      {type = "item", name = "sp-tungsten-slab", amount = 5},
+      {type = "item", name = "sp-ceramics", amount = 5},
       {type = "item", name = "sp-turbine-blade", amount = 24}
     },
     results = {
@@ -1354,9 +1354,9 @@ data:extend({
     energy_required = 4.8,  -- time in seconds to make the item
     ingredients = {
       {type = "item", name = "sp-turbine-blade", amount = 10},
-      {type = "item", name = "sp-ceramic", amount = 2},
+      {type = "item", name = "sp-ceramics", amount = 2},
       {type = "item", name = "sp-stainless-steel", amount = 3},
-      {type = "item", name = "sp-tungsten-billet", amount = 3},
+      {type = "item", name = "sp-tungsten-slab", amount = 3},
       {type = "item", name = "sp-bolts", amount = 8}
     },
     results = {
@@ -1372,7 +1372,7 @@ data:extend({
     ingredients = {
       {type = "item", name = "copper-plate", amount = 2},
       {type = "item", name = "sp-TiAlSn", amount = 2},
-      {type = "item", name = "sp-tungsten-billet", amount = 6},
+      {type = "item", name = "sp-tungsten-slab", amount = 6},
       {type = "item", name = "sp-tungsten-carbide", amount = 2},
       {type = "item", name = "sp-bolts", amount = 4}
     },
@@ -1402,7 +1402,7 @@ data:extend({
     energy_required = 24,  -- time in seconds to make the item
     ingredients = {
       {type = "item", name = "sp-fuel-injector", amount = 20},
-      {type = "item", name = "sp-tungsten-billet", amount = 2},
+      {type = "item", name = "sp-tungsten-slab", amount = 2},
       {type = "item", name = "sp-inconel", amount = 3},
       {type = "item", name = "sp-bolts", amount = 4}
     },
@@ -1483,7 +1483,7 @@ data:extend({
     ingredients = {
       {type = "item", name = "sp-plutonium-239", amount = 4},
       {type = "item", name = "sp-graphite", amount = 2},
-      {type = "item", name = "sp-tungsten-billet", amount = 1},
+      {type = "item", name = "sp-tungsten-slab", amount = 1},
     },
     results = {
       {type = "item", name = "sp-plutonium-fuel-rod", amount = 1}
@@ -2256,7 +2256,7 @@ if not mods["Krastorio2"] then
       enabled = false,
       energy_required = 8,  -- time in seconds to make the item
       ingredients = {
-        {type = "item", name = "sp-optic-fiber", amount = 2},
+        {type = "item", name = "sp-glass-fiber", amount = 2},
         {type = "item", name = "sp-cerium", amount = 1},
         {type = "item", name = "sp-palladium", amount = 1},
         {type = "item", name = "sp-silicon", amount = 3}

@@ -1172,7 +1172,7 @@ data:extend({
     ingredients =
     {
       {"sp-stainless-steel", 2},
-      {"sp-ceramic", 1},
+      {"sp-ceramics", 1},
       {"sp-phosphorus", 1},
       {"uranium-238", 1}
     },
@@ -1372,7 +1372,7 @@ data:extend({
         {"sp-stainless-steel-gear-wheel", 10},
         {"sp-spring", 2},
         {"sp-polymer", 4},
-        {"sp-ferrite-magnet", 2},
+        {"sp-magnet", 2},
         {type="fluid", name="lubricant", amount=20}
       },
       result = "express-transport-belt"
@@ -1385,7 +1385,7 @@ data:extend({
         {"sp-stainless-steel-gear-wheel", 16},
         {"sp-spring", 4},
         {"sp-aluminum-frame", 6},
-        {"sp-ferrite-magnet", 4},
+        {"sp-magnet", 4},
         {type="fluid", name="lubricant", amount=40}
       },
       result = "express-transport-belt"
@@ -1570,7 +1570,7 @@ data:extend({
     {
       {"sp-stainless-steel-gear-wheel", 24},
       {"sp-aluminum-frame", 12},
-      {"sp-ferrite-magnet", 8},
+      {"sp-magnet", 8},
       {"sp-spring", 8},
       {"sp-bolts", 6},
       {type="fluid", name="lubricant", amount=40}
@@ -1639,7 +1639,7 @@ data:extend({
       {"refined-concrete", 1000},
       {"sp-TiNb", 200},
       {"sp-inconel", 140},
-      {"sp-tungsten-billet", 36},
+      {"sp-tungsten-slab", 36},
       {"pump", 16},
       {"sp-pressure-tube", 100},
       {"sp-pressure-tank", 20},
@@ -1668,7 +1668,7 @@ data:extend({
       {"iron-gear-wheel", 45},
       {"advanced-circuit", 45},
       {"copper-cable", 30},
-      {"sp-ferrite-magnet", 30},
+      {"sp-magnet", 30},
     },
     result = "roboport"
   },
@@ -1949,7 +1949,7 @@ data:extend({
     {
       {"concrete", 100},
       {"sp-stainless-steel", 24},
-      {"sp-ceramic", 24},
+      {"sp-ceramics", 24},
       {"electric-engine-unit", 12},
       {"sp-compute-unit", 1},
       {"sp-stainless-steel-gear-wheel", 96},

@@ -111,7 +111,7 @@ W Tungsten
   + tungsten-ore ((Fe,Mn)WO4 Wolframite)
   +r ammonium-paratungstate (After processing tungsten ore)
   +r tungsten-powder (after processing ammonium paratungstate with Na2CO3 sodium carbonate)
-  +r tungsten-billet
+  +r tungsten-slab
   +r tungsten-carbide
 
 Hg Mercury
@@ -214,7 +214,7 @@ Basic Intermediates
   +r circuit-board
 	- magnet
 		- permanent magnet
-			+r ferrite-magnet (iron oxide (commonly known as rust) and strontium carbonate)
+			+r magnet (iron oxide (commonly known as rust) and strontium carbonate)
 			- alnico-magnet (Aluminium (Al), Nickel (Ni), Cobalt (Co))
 			+r neodymium-magnet (Neodymium Iron Boron (NdFeB))
 			- samarium-cobalt magnets (SmCo magnets)
@@ -285,6 +285,8 @@ Intermediates
   +r quantum-data-plane
   +r quantum-gate
   - propeller (for drones i guess)
+  + transformer
+
 
 Chemicals
   - ammonia
@@ -328,7 +330,7 @@ Sciences
   - high dimensional science pack
 
 Technology names:
-  - Qubit technology
+  - Cubit technology
 
 Buildings:
   - cyclotron

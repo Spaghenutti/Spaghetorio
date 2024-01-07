@@ -500,7 +500,7 @@ data:extend({
     enabled = false,
     energy_required = 8,  -- time in seconds to make the item
     ingredients = {
-      {type = "item", name = "sp-optic-fiber", amount = 2},
+      {type = "item", name = "sp-glass-fiber", amount = 2},
       {type = "item", name = "sp-cerium", amount = 1},
       {type = "item", name = "sp-palladium", amount = 1},
       {type = "item", name = "silicon", amount = 3}
