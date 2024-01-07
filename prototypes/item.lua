@@ -1073,7 +1073,7 @@ data:extend({
   {
     type = "item",
     name = "sp-mirror",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-mirror.png",
+    icon = "__Spaghenutti__/graphics/icons/mirror.png",
     icon_size = 64,
     scale = 0.25,
     subgroup = "electrical-optical-component",
@@ -1123,7 +1123,7 @@ data:extend({
   {
     type = "item",
     name = "sp-resistor",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-resistor.png",
+    icon = "__Spaghenutti__/graphics/icons/resistor.png",
     icon_size = 64,
     scale = 0.25,
     subgroup = "electrical-optical-component",
@@ -1133,7 +1133,7 @@ data:extend({
   {
     type = "item",
     name = "sp-capacitor",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-capacitor.png",
+    icon = "__Spaghenutti__/graphics/icons/capacitor.png",
     icon_size = 64,
     scale = 0.25,
     subgroup = "electrical-optical-component",
@@ -1173,17 +1173,7 @@ data:extend({
   {
     type = "item",
     name = "sp-coil",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-coil.png",
-    icon_size = 64,
-    scale = 0.25,
-    subgroup = "electrical-optical-component",
-    order = "[coil]",
-    stack_size = 100
-  },
-  {
-    type = "item",
-    name = "sp-coil",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-coil.png",
+    icon = "__Spaghenutti__/graphics/icons/coil.png",
     icon_size = 64,
     scale = 0.25,
     subgroup = "electrical-optical-component",
@@ -1263,7 +1253,7 @@ data:extend({
   {
     type = "item",
     name = "sp-memory-chip",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-memory-chip.png",
+    icon = "__Spaghenutti__/graphics/icons/memory-chip.png",
     icon_size = 64,
     scale = 0.25,
     subgroup = "electrical-optical-component",
@@ -1334,7 +1324,7 @@ data:extend({
   {
     type = "item",
     name = "sp-valve",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-valve.png",
+    icon = "__Spaghenutti__/graphics/icons/valve.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "intermediate-product",
     order = "[valve]",
@@ -1361,7 +1351,7 @@ data:extend({
   {
     type = "item",
     name = "sp-high-pressure-tank",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-high-pressure-tank.png",
+    icon = "__Spaghenutti__/graphics/icons/high-pressure-tank.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "intermediate-product",
     order = "[high-pressure-tank]",
@@ -1369,11 +1359,11 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-heat-resistant-tiles",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-heat-resistant-tiles.png",
+    name = "sp-heat-resistant-tile",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/heat-resistant-tile.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "intermediate-product",
-    order = "[heat-resistant-tiles]",
+    order = "[heat-resistant-tile]",
     stack_size = 50
   },
   {
@@ -1433,7 +1423,7 @@ data:extend({
   {
     type = "item",
     name = "sp-heatsink",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-heatsink.png",
+    icon = "__Spaghenutti__/graphics/icons/heatsink.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "intermediate-product",
     order = "[heatsink]",
@@ -1553,7 +1543,7 @@ data:extend({
   {
     type = "item",
     name = "sp-cubit",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-cubit.png",
+    icon = "__Spaghenutti__/graphics/icons/cubit.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "advanced-intermediate-product",
     order = "[cubit]",
@@ -1580,7 +1570,7 @@ data:extend({
   {
     type = "item",
     name = "sp-control-rod",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-control-rod.png",
+    icon = "__Spaghenutti__/graphics/icons/control-rod.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "advanced-intermediate-product",
     order = "[control-rod]",

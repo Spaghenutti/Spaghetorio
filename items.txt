@@ -264,7 +264,7 @@ Intermediates
   +r compute-unit
   + advanced-compute-unit
   +r laser
-  +r heat-resistant-tiles
+  +r heat-resistant-tile
   +r fabric
   +r uranium-fuel-rod
   +r used-up-uranium-fuel-rod

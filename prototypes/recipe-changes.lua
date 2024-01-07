@@ -1651,7 +1651,7 @@ data:extend({
       {"sp-processor", 40},
       {"sp-memory-chip", 24},
       {"electric-engine-unit", 200},
-      {"sp-heat-resistant-tiles", 200}
+      {"sp-heat-resistant-tile", 200}
     },
     energy_required = 300,
     result = "rocket-silo",

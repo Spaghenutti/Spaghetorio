@@ -965,7 +965,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-heat-resistant-tiles",  -- #ForRegEx# - recipe
+    name = "sp-heat-resistant-tile",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 5.2,  -- time in seconds to make the item
@@ -975,7 +975,7 @@ data:extend({
       {type = "item", name = "sp-graphite", amount = 3}
     },
     results = {
-      {type = "item", name = "sp-heat-resistant-tiles", amount = 1}
+      {type = "item", name = "sp-heat-resistant-tile", amount = 1}
     }
   },
   {
