@@ -2,7 +2,7 @@ data:extend({
   {
     type = "technology",
     name = "sp-iron-extruding",  -- #ForRegEx# - technology
-    icon_size = 64,
+    icon_size = 256,
     icon = "__Spaghenutti__/graphics/technology/iron-extruding.png",
     effects =
     {

@@ -28,3 +28,8 @@ TODO:
 FIXME:
   + Aluminum ore icon color
   - Add small icon top left to barrels
+  - fix resolution of technology icons:
+    - sp-basic-alloy
+    - sp-basic-solder
+    - sp-tin-processing
+    - sp-copper-machining

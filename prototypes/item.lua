@@ -857,7 +857,7 @@ data:extend({
   {
     type = "item",
     name = "sp-aluminum-frame",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/icons/aluminum-frames.png",
+    icon = "__Spaghenutti__/graphics/icons/aluminum-frame.png",
     icon_size = 64,
     scale = 0.25,
     subgroup = "mechanical-component",

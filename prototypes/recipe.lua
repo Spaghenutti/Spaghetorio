@@ -265,7 +265,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-tin-and-lead",  -- #ForRegEx# - recipe
-    icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
+    icon = "__Spaghenutti__/graphics/icons/tin-and-lead.png",
     icon_size = 64,
     mip_mapts = 4,
     category = "smelting",

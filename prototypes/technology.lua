@@ -47,7 +47,7 @@ data:extend({
     type = "technology",
     name = "sp-aluminum-machining",  -- #ForRegEx# - technology
     icon_size = 64,
-    icon = "__Spaghenutti__/graphics/dummy/dummy-technology-sp-aluminum-machining.png",
+    icon = "__Spaghenutti__/graphics/icons/aluminum-frame.png",
     effects =
     {
       {
@@ -67,7 +67,7 @@ data:extend({
     type = "technology",
     name = "sp-tin-processing",  -- #ForRegEx# - technology
     icon_size = 64,
-    icon = "__Spaghenutti__/graphics/dummy/dummy-technology-sp-copper-machining.png",
+    icon = "__Spaghenutti__/graphics/icons/tin-and-lead.png",
     effects =
     {
       {
@@ -91,7 +91,7 @@ data:extend({
     type = "technology",
     name = "sp-basic-solder",  -- #ForRegEx# - technology
     icon_size = 64,
-    icon = "__Spaghenutti__/graphics/dummy/dummy-technology-sp-basic-solder.png",
+    icon = "__Spaghenutti__/graphics/icons/solder.png",
     effects =
     {
       {
@@ -112,7 +112,7 @@ data:extend({
     type = "technology",
     name = "sp-basic-alloy",  -- #ForRegEx# - technology
     icon_size = 64,
-    icon = "__Spaghenutti__/graphics/dummy/dummy-technology-sp-basic-alloy.png",
+    icon = "__Spaghenutti__/graphics/icons/bronze-rod.png",
     effects =
     {
       {
