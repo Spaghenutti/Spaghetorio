@@ -8,9 +8,26 @@ util.change_recipe_icon("iron-plate", "__base__/graphics/icons/iron-plate.png", 
 util.change_recipe_icon("copper-plate", "__base__/graphics/icons/copper-plate.png", 64, "__base__/graphics/icons/copper-ore-1.png", 64, 4)
 
 data.raw.item["iron-beam"].subgroup = "mechanical-component"
+data.raw.item["steel-beam"].subgroup = "mechanical-component"
+data.raw.item["steel-gear-wheel"].subgroup = "mechanical-component"
+data.raw.item["imersium-beam"].subgroup = "mechanical-component"
+data.raw.item["imersium-gear-wheel"].subgroup = "mechanical-component"
+
+data.raw.item["lithium-sulfur-battery"].subgroup = "electrical-optical-component"
+data.raw.item["electronic-components"].subgroup = "electrical-optical-component"
+
+data.raw.item["imersite-crystal"].subgroup = "advanced-raw-material"
+data.raw.item["matter-cube"].subgroup = "advanced-raw-material"
+
 data.raw.item["fuel"].subgroup = "fuel-processing"
 data.raw.item["bio-fuel"].subgroup = "fuel-processing"
 data.raw.item["advanced-fuel"].subgroup = "fuel-processing"
+data.raw.item["empty-dt-fuel"].subgroup = "fuel-processing"
+data.raw.item["dt-fuel"].subgroup = "fuel-processing"
+data.raw.item["empty-antimatter-fuel-cell"].subgroup = "fuel-processing"
+data.raw.item["charged-antimatter-fuel-cell"].subgroup = "fuel-processing"
+
+
 
 data.raw.item["iron-beam"].order = "iron[iron-beam]"
 

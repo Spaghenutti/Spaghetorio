@@ -31,6 +31,8 @@ data.raw.item["low-density-structure"].subgroup = "mechanical-component"
 data.raw.item["electronic-circuit"].subgroup = "electrical-optical-component"
 data.raw.item["advanced-circuit"].subgroup = "electrical-optical-component"
 data.raw.item["processing-unit"].subgroup = "electrical-optical-component"  -- idea: use this as processor and change icon
+data.raw.item["battery"].subgroup = "electrical-optical-component"
+data.raw.item["rocket-control-unit"].subgroup = "electrical-optical-component"
 
 data.raw.item["solid-fuel"].subgroup = "fuel-processing"
 data.raw.item["rocket-fuel"].subgroup = "fuel-processing"
@@ -41,8 +43,6 @@ data.raw.item["used-up-uranium-fuel-cell"].subgroup = "fuel-processing"
 data.raw.item["sulfur"].subgroup = "processed-resource"
 data.raw.item["uranium-238"].subgroup = "processed-resource"
 data.raw.item["uranium-235"].subgroup = "processed-resource"
-
-data.raw.item["battery"].subgroup = "intermediate-product"
 
 data.raw.item["explosives"].subgroup = "ammo"
 data.raw.item["explosives"].order = "a-a"

@@ -1233,6 +1233,15 @@ data:extend({
     order = "[kevlar]",
     stack_size = 100
   },
+  {
+    type = "item",
+    name = "sp-heat-resistant-tile",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/heat-resistant-tile.png",
+    icon_size = 64, icon_mipmaps = 4,
+    subgroup = "mechanical-component",
+    order = "[heat-resistant-tile]",
+    stack_size = 100
+  },
   ------------------------------------------------------------------------------
   -- Subgroup electrical-optical-component --
   ------------------------------------------------------------------------------
@@ -1521,15 +1530,6 @@ data:extend({
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "intermediate-product",
     order = "[high-pressure-tank]",
-    stack_size = 50
-  },
-  {
-    type = "item",
-    name = "sp-heat-resistant-tile",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/icons/heat-resistant-tile.png",
-    icon_size = 64, icon_mipmaps = 4,
-    subgroup = "intermediate-product",
-    order = "[heat-resistant-tile]",
     stack_size = 50
   },
   {
