@@ -1053,7 +1053,7 @@ data:extend({
   {
     type = "item",
     name = "sp-pressure-tube",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-pressure-tube.png",
+    icon = "__Spaghenutti__/graphics/icons/pressure-tube.png",
     icon_size = 64,
     scale = 0.25,
     subgroup = "mechanical-component",
@@ -1153,15 +1153,6 @@ data:extend({
     scale = 0.25,
     subgroup = "mechanical-component",
     order = "[neodymium-magnet]",
-    stack_size = 100
-  },  {
-    type = "item",
-    name = "sp-electromagnet",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-electro-magnet.png",
-    icon_size = 64,
-    scale = 0.25,
-    subgroup = "mechanical-component",
-    order = "[electro-magnet]",
     stack_size = 100
   },
   {
@@ -1288,7 +1279,7 @@ data:extend({
   {
     type = "item",
     name = "sp-silver-solder",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-silver-solder.png",
+    icon = "__Spaghenutti__/graphics/icons/silver-solder.png",
     icon_size = 64,
     scale = 0.25,
     subgroup = "electrical-optical-component",
@@ -1318,7 +1309,7 @@ data:extend({
   {
     type = "item",
     name = "sp-diode",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-diode.png",
+    icon = "__Spaghenutti__/graphics/icons/diode.png",
     icon_size = 64,
     scale = 0.25,
     subgroup = "electrical-optical-component",
@@ -1338,7 +1329,7 @@ data:extend({
   {
     type = "item",
     name = "sp-light-emitting-diode",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-light-emitting-diode.png",
+    icon = "__Spaghenutti__/graphics/icons/light-emitting-diode.png",
     icon_size = 64,
     scale = 0.25,
     subgroup = "electrical-optical-component",
@@ -1358,7 +1349,7 @@ data:extend({
   {
     type = "item",
     name = "sp-empty-circuit-board",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-empty-circuit-board.png",
+    icon = "__Spaghenutti__/graphics/icons/empty-circuit-board.png",
     icon_size = 64,
     scale = 0.25,
     subgroup = "electrical-optical-component",
@@ -1368,7 +1359,7 @@ data:extend({
   {
     type = "item",
     name = "sp-circuit-board",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-circuit-board.png",
+    icon = "__Spaghenutti__/graphics/icons/circuit-board.png",
     icon_size = 64,
     scale = 0.25,
     subgroup = "electrical-optical-component",
@@ -1378,7 +1369,7 @@ data:extend({
   {
     type = "item",
     name = "sp-vacuum-tube",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-vacuum-tube.png",
+    icon = "__Spaghenutti__/graphics/icons/vacuum-tube.png",
     icon_size = 64,
     scale = 0.25,
     subgroup = "electrical-optical-component",
@@ -1409,16 +1400,6 @@ data:extend({
     type = "item",
     name = "sp-integrated-circuit",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/icons/integrated-circuit.png",
-    icon_size = 64,
-    scale = 0.25,
-    subgroup = "electrical-optical-component",
-    order = "[integrated-circuit]",
-    stack_size = 100
-  },
-  {
-    type = "item",
-    name = "sp-integrated-circuit",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-integrated-circuit.png",
     icon_size = 64,
     scale = 0.25,
     subgroup = "electrical-optical-component",
@@ -1481,7 +1462,7 @@ data:extend({
   {
     type = "item",
     name = "sp-electromagnet",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-electromagnet.png",
+    icon = "__Spaghenutti__/graphics/icons/electromagnet.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "intermediate-product",
     order = "[electromagnet]",
@@ -1548,15 +1529,6 @@ data:extend({
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "intermediate-product",
     order = "[wheel]",
-    stack_size = 50
-  },
-  {
-    type = "item",
-    name = "sp-piston",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-piston.png",
-    icon_size = 64, icon_mipmaps = 4,
-    subgroup = "intermediate-product",
-    order = "[piston]",
     stack_size = 50
   },
   {
@@ -1655,7 +1627,7 @@ data:extend({
   {
     type = "item",
     name = "sp-turbopump",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-turbopump.png",
+    icon = "__Spaghenutti__/graphics/icons/turbopump.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "advanced-intermediate-product",
     order = "[turbopump]",
@@ -1664,7 +1636,7 @@ data:extend({
   {
     type = "item",
     name = "sp-nozzle",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-nozzle.png",
+    icon = "__Spaghenutti__/graphics/icons/nozzle.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "advanced-intermediate-product",
     order = "[nozzle]",
@@ -1691,7 +1663,7 @@ data:extend({
   {
     type = "item",
     name = "sp-rocket-engine",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-rocket-engine.png",
+    icon = "__Spaghenutti__/graphics/icons/rocket-engine.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "advanced-intermediate-product",
     order = "[rocket-engine]",
@@ -1700,7 +1672,7 @@ data:extend({
   {
     type = "item",
     name = "sp-solid-rocket-motor",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-solid-rocket-motor.png",
+    icon = "__Spaghenutti__/graphics/icons/solid-rocket-motor.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "advanced-intermediate-product",
     order = "[solid-rocket-motor]",
@@ -1718,7 +1690,7 @@ data:extend({
   {
     type = "item",
     name = "sp-quantum-data-plane",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-quantum-data-plane.png",
+    icon = "__Spaghenutti__/graphics/icons/quantum-data-plane.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "advanced-intermediate-product",
     order = "[quantum-data-plane]",
@@ -1808,37 +1780,28 @@ data:extend({
   {
     type = "item",
     name = "sp-uranium-fuel-rod",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-uranium-fuel-rod.png",
+    icon = "__Spaghenutti__/graphics/icons/uranium-fuel-rod.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "fuel-processing",
-    order = "[uranium-fuel-rod]",
-    stack_size = 50
-  },
-  {
-    type = "item",
-    name = "sp-used-up-uranium-fuel-rod",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-used-up-uranium-fuel-rod.png",
-    icon_size = 64, icon_mipmaps = 4,
-    subgroup = "fuel-processing",
-    order = "[used-up-uranium-fuel-rod]",
+    order = "nuclear[uranium-fuel-rod]",
     stack_size = 50
   },
   {
     type = "item",
     name = "sp-plutonium-fuel-rod",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-plutonium-fuel-rod.png",
+    icon = "__Spaghenutti__/graphics/icons/plutonium-fuel-rod.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "fuel-processing",
-    order = "[plutonium-fuel-rod]",
+    order = "nuclear[plutonium-fuel-rod]",
     stack_size = 50
   },
   {
     type = "item",
-    name = "sp-used-up-plutonium-fuel-rod",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-used-up-plutonium-fuel-rod.png",
+    name = "sp-used-up-fuel-rod",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-used-up-uranium-fuel-rod.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "fuel-processing",
-    order = "[used-up-plutonium-fuel-rod]",
+    order = "nuclear[used-up-fuel-rod]",
     stack_size = 50
   },
   ------------------------------------------------------------------------------

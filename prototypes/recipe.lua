@@ -1457,7 +1457,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-used-up-uranium-fuel-rod-reprocessing",  -- #ForRegEx# - recipe
+    name = "sp-used-up-fuel-rod-reprocessing",  -- #ForRegEx# - recipe
     icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
     icon_size = 64,
     mip_mapts = 4,
@@ -1466,7 +1466,7 @@ data:extend({
     enabled = false,
     energy_required = 60,  -- time in seconds to make the item
     ingredients = {
-      {type = "item", name = "sp-used-up-uranium-fuel-rod", amount = 5},
+      {type = "item", name = "sp-used-up-fuel-rod", amount = 5},
       {type = "fluid", name = "sulfuric-acid", amount = 40}
     },
     results = {
@@ -2081,7 +2081,7 @@ if not mods["Krastorio2"] then
     },
     {
       type = "recipe",
-      name = "used-up-plutonium-fuel-rod-reprocessing",  -- #ForRegEx# - recipe
+      name = "sp-advanced-used-up-fuel-rod-reprocessing",  -- #ForRegEx# - recipe
       icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
       icon_size = 256,
       scale = 0.25,
@@ -2090,7 +2090,7 @@ if not mods["Krastorio2"] then
       enabled = false,
       energy_required = 80,  -- time in seconds to make the item
       ingredients = {
-        {type = "item", name = "sp-used-up-plutonium-fuel-rod", amount = 6},
+        {type = "item", name = "sp-used-up-fuel-rod", amount = 6},
         {type = "fluid", name = "sp-chlorine", amount = 60}
       },
       results = {

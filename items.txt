@@ -267,9 +267,8 @@ Intermediates
   +r heat-resistant-tile
   +r fabric
   +r uranium-fuel-rod
-  +r used-up-uranium-fuel-rod
   +r plutonium-fuel-rod
-  +r used-up-plutonium-fuel-rod
+  +r used-up-fuel-rod
   +r control-rod
   +r reactor-core
   - shaft

@@ -338,7 +338,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "used-up-plutonium-fuel-rod-reprocessing",  -- #ForRegEx# - recipe
+    name = "sp-advanced-used-up-fuel-rod-reprocessing",  -- #ForRegEx# - recipe
     icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
     icon_size = 64,
     mip_mapts = 4,
@@ -347,7 +347,7 @@ data:extend({
     enabled = false,
     energy_required = 80,  -- time in seconds to make the item
     ingredients = {
-      {type = "item", name = "sp-used-up-plutonium-fuel-rod", amount = 6},
+      {type = "item", name = "sp-used-up-fuel-rod", amount = 6},
       {type = "fluid", name = "chlorine", amount = 60}
     },
     results = {
