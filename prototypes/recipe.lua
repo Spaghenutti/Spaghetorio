@@ -665,21 +665,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-connecting-rod-from-iron",  -- #ForRegEx# - recipe
-    category = "crafting",
-    enabled = false,
-    energy_required = 2.4,  -- time in seconds to make the item
-    ingredients = {
-      {type = "item", name = "iron-plate", amount = 10},
-      {type = "item", name = "sp-bolts", amount = 2}
-    },
-    results = {
-      {type = "item", name = "sp-connecting-rod", amount = 1}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-connecting-rod-from-steel",  -- #ForRegEx# - recipe
+    name = "sp-connecting-rod",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 1.6,  -- time in seconds to make the item

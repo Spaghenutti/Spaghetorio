@@ -57,7 +57,7 @@ data:extend({
     },
     unit =
     {
-      count = 10,
+      count = 50,
       ingredients = {{"automation-science-pack", 1}},
       time = 15
     },
@@ -123,10 +123,31 @@ data:extend({
     prerequisites = { "sp-tin-processing" },
     unit =
     {
-      count = 10,
+      count = 25,
       ingredients = {{"automation-science-pack", 1}},
       time = 15
     },
     order = "a-h-a"
-  }
+  },
+  {
+    type = "technology",
+    name = "sp-steel-machining",  -- #ForRegEx# - technology
+    icon_size = 64,
+    icon = "__Spaghenutti__/graphics/icons/connecting-rod.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-connecting-rod"
+      },
+    },
+    prerequisites = { "steel-processing" },
+    unit =
+    {
+      count = 50,
+      ingredients = {{"automation-science-pack", 1}},
+      time = 15
+    },
+    order = "a-h-a"
+  },
 })
