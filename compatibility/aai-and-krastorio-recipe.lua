@@ -242,7 +242,7 @@ data:extend({
       {type = "fluid", name = "hydrogen", amount = 15},
     },
     results = {
-      {type = "item", name = "sp-epoxy", amount = 2}
+      {type = "fluid", name = "sp-epoxy", amount = 20}
     }
   },
   {
@@ -333,7 +333,26 @@ data:extend({
       {type = "fluid", name = "chlorine", amount = 50}
     },
     results = {
-      {type = "item", name = "sp-bleach", amount = 1}
+      {type = "fluid", name = "sp-bleach", amount = 20}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-used-up-fuel-rod-reprocessing",  -- #ForRegEx# - recipe
+    icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
+    icon_size = 64,
+    mip_mapts = 4,
+    category = "chemistry",
+    subgroup = "raw-resource",
+    enabled = false,
+    energy_required = 60,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-used-up-fuel-rod", amount = 5},
+      {type = "fluid", name = "sulfuric-acid", amount = 40}
+    },
+    results = {
+      {type = "item", name = "uranium-238", amount = 3},
+      {type = "fluid", name = "heavy-water", amount = 10}
     }
   },
   {
@@ -354,7 +373,7 @@ data:extend({
       {type = "item", name = "uranium-238", probability = 0.37, amount = 2},
       {type = "item", name = "uranium-235", probability = 0.03, amount = 1},
       {type = "item", name = "sp-plutonium-239", probability = 0.6, amount = 1},
-      {type = "fluid", name = "sp-deuterium", amount = 10}
+      {type = "fluid", name = "heavy-water", amount = 10}
     }
   },
   {
@@ -491,22 +510,6 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-laser", amount = 1}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-quantum-gate",  -- #ForRegEx# - recipe
-    category = "crafting",
-    enabled = false,
-    energy_required = 8,  -- time in seconds to make the item
-    ingredients = {
-      {type = "item", name = "sp-glass-fiber", amount = 2},
-      {type = "item", name = "sp-cerium", amount = 1},
-      {type = "item", name = "sp-palladium", amount = 1},
-      {type = "item", name = "silicon", amount = 3}
-    },
-    results = {
-      {type = "item", name = "sp-quantum-gate", amount = 1}
     }
   },
   {

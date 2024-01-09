@@ -1443,25 +1443,6 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-used-up-fuel-rod-reprocessing",  -- #ForRegEx# - recipe
-    icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
-    icon_size = 64,
-    mip_mapts = 4,
-    category = "chemistry",
-    subgroup = "raw-resource",
-    enabled = false,
-    energy_required = 60,  -- time in seconds to make the item
-    ingredients = {
-      {type = "item", name = "sp-used-up-fuel-rod", amount = 5},
-      {type = "fluid", name = "sulfuric-acid", amount = 40}
-    },
-    results = {
-      {type = "item", name = "uranium-238", amount = 3},
-      {type = "fluid", name = "sp-deuterium", amount = 10}
-    }
-  },
-  {
-    type = "recipe",
     name = "sp-plutonium-239-fuel-rod",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
@@ -1995,7 +1976,7 @@ if not mods["Krastorio2"] then
         {type = "fluid", name = "sp-hydrogen", amount = 15},
       },
       results = {
-        {type = "item", name = "sp-epoxy", amount = 2}
+        {type = "fluid", name = "sp-epoxy", amount = 20}
       }
     },
     {
@@ -2062,28 +2043,7 @@ if not mods["Krastorio2"] then
         {type = "fluid", name = "sp-chlorine", amount = 50}
       },
       results = {
-        {type = "item", name = "sp-bleach", amount = 1}
-      }
-    },
-    {
-      type = "recipe",
-      name = "sp-advanced-used-up-fuel-rod-reprocessing",  -- #ForRegEx# - recipe
-      icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
-      icon_size = 256,
-      scale = 0.25,
-      category = "chemistry",
-      subgroup = "raw-resource",
-      enabled = false,
-      energy_required = 80,  -- time in seconds to make the item
-      ingredients = {
-        {type = "item", name = "sp-used-up-fuel-rod", amount = 6},
-        {type = "fluid", name = "sp-chlorine", amount = 60}
-      },
-      results = {
-        {type = "item", name = "uranium-238", probability = 0.37, amount = 2},
-        {type = "item", name = "uranium-235", probability = 0.03, amount = 1},
-        {type = "item", name = "sp-plutonium-239", probability = 0.6, amount = 1},
-        {type = "fluid", name = "sp-deuterium", amount = 10}
+        {type = "fluid", name = "sp-bleach", amount = 20}
       }
     },
     {
@@ -2237,22 +2197,6 @@ if not mods["Krastorio2"] then
     },
     {
       type = "recipe",
-      name = "sp-quantum-gate",  -- #ForRegEx# - recipe
-      category = "crafting",
-      enabled = false,
-      energy_required = 8,  -- time in seconds to make the item
-      ingredients = {
-        {type = "item", name = "sp-glass-fiber", amount = 2},
-        {type = "item", name = "sp-cerium", amount = 1},
-        {type = "item", name = "sp-palladium", amount = 1},
-        {type = "item", name = "sp-silicon", amount = 3}
-      },
-      results = {
-        {type = "item", name = "sp-quantum-gate", amount = 1}
-      }
-    },
-    {
-      type = "recipe",
       name = "sp-silica",  -- #ForRegEx# - recipe
       category = "smelting",
       enabled = false,
@@ -2315,6 +2259,46 @@ if not mods["Krastorio2"] then
         {type = "item", name = "uranium-238", probability = 0.2, amount = 1},
         {type = "item", name = "sp-plutonium-239", probability = 0.72, amount = 1},
         {type = "item", name = "sp-plutonium-240", probability = 0.08, amount = 1}
+      }
+    },
+    {
+      type = "recipe",
+      name = "sp-used-up-fuel-rod-reprocessing",  -- #ForRegEx# - recipe
+      icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
+      icon_size = 64,
+      mip_mapts = 4,
+      category = "chemistry",
+      subgroup = "raw-resource",
+      enabled = false,
+      energy_required = 60,  -- time in seconds to make the item
+      ingredients = {
+        {type = "item", name = "sp-used-up-fuel-rod", amount = 5},
+        {type = "fluid", name = "sulfuric-acid", amount = 40}
+      },
+      results = {
+        {type = "item", name = "uranium-238", amount = 3},
+        {type = "fluid", name = "sp-deuterium", amount = 10}
+      }
+    },
+    {
+      type = "recipe",
+      name = "sp-advanced-used-up-fuel-rod-reprocessing",  -- #ForRegEx# - recipe
+      icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
+      icon_size = 256,
+      scale = 0.25,
+      category = "chemistry",
+      subgroup = "raw-resource",
+      enabled = false,
+      energy_required = 80,  -- time in seconds to make the item
+      ingredients = {
+        {type = "item", name = "sp-used-up-fuel-rod", amount = 6},
+        {type = "fluid", name = "sp-chlorine", amount = 60}
+      },
+      results = {
+        {type = "item", name = "uranium-238", probability = 0.37, amount = 2},
+        {type = "item", name = "uranium-235", probability = 0.03, amount = 1},
+        {type = "item", name = "sp-plutonium-239", probability = 0.6, amount = 1},
+        {type = "fluid", name = "sp-deuterium", amount = 10}
       }
     },
   })

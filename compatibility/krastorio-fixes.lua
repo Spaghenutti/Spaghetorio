@@ -7,6 +7,15 @@ util.change_item_icon("iron-gear-wheel", "__base__/graphics/icons/iron-gear-whee
 util.change_recipe_icon("iron-plate", "__base__/graphics/icons/iron-plate.png", 64, "__base__/graphics/icons/iron-ore-1.png", 64, 4)
 util.change_recipe_icon("copper-plate", "__base__/graphics/icons/copper-plate.png", 64, "__base__/graphics/icons/copper-ore-1.png", 64, 4)
 
+data.raw.item["enriched-iron"].subgroup = "enriched-resource"
+data.raw.item["enriched-copper"].subgroup = "enriched-resource"
+data.raw.item["enriched-rare-metals"].subgroup = "enriched-resource"
+
+data.raw.item["sand"].subgroup = "processed-resource"
+
+data.raw.item["imersite-crystal"].subgroup = "advanced-raw-material"
+data.raw.item["matter-cube"].subgroup = "advanced-raw-material"
+
 data.raw.item["iron-beam"].subgroup = "mechanical-component"
 data.raw.item["steel-beam"].subgroup = "mechanical-component"
 data.raw.item["steel-gear-wheel"].subgroup = "mechanical-component"
@@ -16,9 +25,6 @@ data.raw.item["imersium-gear-wheel"].subgroup = "mechanical-component"
 data.raw.item["lithium-sulfur-battery"].subgroup = "electrical-optical-component"
 data.raw.item["electronic-components"].subgroup = "electrical-optical-component"
 
-data.raw.item["imersite-crystal"].subgroup = "advanced-raw-material"
-data.raw.item["matter-cube"].subgroup = "advanced-raw-material"
-
 data.raw.item["fuel"].subgroup = "fuel-processing"
 data.raw.item["bio-fuel"].subgroup = "fuel-processing"
 data.raw.item["advanced-fuel"].subgroup = "fuel-processing"
@@ -27,7 +33,8 @@ data.raw.item["dt-fuel"].subgroup = "fuel-processing"
 data.raw.item["empty-antimatter-fuel-cell"].subgroup = "fuel-processing"
 data.raw.item["charged-antimatter-fuel-cell"].subgroup = "fuel-processing"
 
-
+data.raw.capsule["first-aid-kit"].subgroup = "tool"
+data.raw.capsule["first-aid-kit"].order  = "b[repair]-a[first-aid-kit]"
 
 data.raw.item["iron-beam"].order = "iron[iron-beam]"
 

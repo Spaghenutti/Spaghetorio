@@ -20,28 +20,34 @@ data:extend({
   },
   {
     type = "item-subgroup",
-    name = "processed-resource",
+    name = "enriched-resource",
     group = "base-products",
     order = "b"
+  },
+  {
+    type = "item-subgroup",
+    name = "processed-resource",
+    group = "base-products",
+    order = "c"
   },
   -- move raw-resources to new item group base-products
   {
     type = "item-subgroup",
     name = "raw-material",
     group = "base-products",
-    order = "c"
+    order = "d"
   },
   {
     type = "item-subgroup",
     name = "alloy",
     group = "base-products",
-    order = "d"
+    order = "e"
   },
   {
     type = "item-subgroup",
     name = "advanced-raw-material",
     group = "base-products",
-    order = "e"
+    order = "f"
   },
   ------------------------------------------------------------------------------
   -- intermediate-products --
