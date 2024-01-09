@@ -651,7 +651,7 @@ data:extend({
       energy_required = 6,
       ingredients =
       {
-        {"steel-plate", 12},
+        {"steel-beam", 12},
         {"electronic-circuit", 10},
         {"sp-connecting-rod", 10},
         {"stone-brick", 32},
@@ -666,7 +666,7 @@ data:extend({
       energy_required = 8,
       ingredients =
       {
-        {"steel-plate", 20},
+        {"steel-beam", 20},
         {"electronic-circuit", 16},
         {"sp-connecting-rod", 14},
         {"stone-brick", 64},

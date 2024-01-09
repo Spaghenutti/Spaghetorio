@@ -13,13 +13,31 @@ TODO:
     - deuterium (not needed due to krastorio's heavy water)
     - helium-3
     - helium
+  - missing technologies
+    - resource processing:
+      - aluminum (and enriched)
+      - chromite (and enriched)
+      - limestone
+      - titanium (and enriched)
+      - magnesium (and enriched)
+      - tinstone (and enriched)
+      - zirconium (and enriched)
+      - nickel (and enriched)
+      - tungsten (and enriched)
+      - zinc (and enriched)
+      - spodumene (and enriched)
+      - niobium and tantalum
+      - rare metals
+      - cobalt sulfate
+      - salt
 
 
 FIXME:
-  - fix resolution of technology icons:
-    - sp-basic-alloy
-    - sp-basic-solder
-    - sp-tin-processing
-    - sp-copper-machining
+  - 
 
-  
+Notes:
+  for electric poles:
+    1. electrolysis plant
+    2. aluminum processing (aluminum ore smelting then electrolyzing alumina)
+    3. aluminum machining
+

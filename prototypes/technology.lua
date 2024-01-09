@@ -2,8 +2,8 @@ data:extend({
   {
     type = "technology",
     name = "sp-copper-machining",  -- #ForRegEx# - technology
-    icon_size = 64,
-    icon = "__Spaghenutti__/graphics/icons/copper-tube.png",
+    icon_size = 256,
+    icon = "__Spaghenutti__/graphics/hr-icons/copper-tube.png",
     effects =
     {
       {
@@ -45,29 +45,9 @@ data:extend({
   },
   {
     type = "technology",
-    name = "sp-aluminum-machining",  -- #ForRegEx# - technology
-    icon_size = 64,
-    icon = "__Spaghenutti__/graphics/icons/aluminum-frame.png",
-    effects =
-    {
-      {
-        type = "unlock-recipe",
-        recipe = "sp-aluminum-frame"
-      }
-    },
-    unit =
-    {
-      count = 50,
-      ingredients = {{"automation-science-pack", 1}},
-      time = 15
-    },
-    order = "a-h-a"
-  },
-  {
-    type = "technology",
     name = "sp-tin-processing",  -- #ForRegEx# - technology
-    icon_size = 64,
-    icon = "__Spaghenutti__/graphics/icons/tin-and-lead.png",
+    icon_size = 256,
+    icon = "__Spaghenutti__/graphics/hr-icons/tin-and-lead.png",
     effects =
     {
       {
@@ -90,8 +70,8 @@ data:extend({
   {
     type = "technology",
     name = "sp-basic-solder",  -- #ForRegEx# - technology
-    icon_size = 64,
-    icon = "__Spaghenutti__/graphics/icons/solder.png",
+    icon_size = 256,
+    icon = "__Spaghenutti__/graphics/hr-icons/solder.png",
     effects =
     {
       {
@@ -111,8 +91,8 @@ data:extend({
   {
     type = "technology",
     name = "sp-basic-alloy",  -- #ForRegEx# - technology
-    icon_size = 64,
-    icon = "__Spaghenutti__/graphics/icons/bronze-rod.png",
+    icon_size = 256,
+    icon = "__Spaghenutti__/graphics/hr-icons/bronze-rod.png",
     effects =
     {
       {
@@ -132,8 +112,8 @@ data:extend({
   {
     type = "technology",
     name = "sp-steel-machining",  -- #ForRegEx# - technology
-    icon_size = 64,
-    icon = "__Spaghenutti__/graphics/icons/connecting-rod.png",
+    icon_size = 256,
+    icon = "__Spaghenutti__/graphics/hr-icons/connecting-rod.png",
     effects =
     {
       {

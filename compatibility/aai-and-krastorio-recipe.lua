@@ -691,7 +691,24 @@ util.change_recipe("solar-panel",
                     {{"sp-aluminum-frame", 10}, {"electronic-circuit", 8}, {"copper-cable", 20}, {"sp-bolts", 16}, {"silicon", 80}, {"sp-phosphorus", 12}},
                     10,
                     20)
-
+util.change_recipe("assembling-machine-2",
+                    {
+                      {"steel-beam", 12},
+                      {"electronic-circuit", 10},
+                      {"engine-unit", 4},
+                      {"stone-brick", 32},
+                      {"sp-bolts", 24},
+                      {"steel-gear-wheel", 20}
+                    },
+                    {
+                      {"steel-beam", 24},
+                      {"electronic-circuit", 20},
+                      {"engine-unit", 8},
+                      {"stone-brick", 64},
+                      {"sp-bolts", 48},
+                      {"steel-gear-wheel", 40}
+                    },10,
+                    20)
 
 util.change_recipe("burner-turbine",
                     {{"iron-beam", 8}, {"stone-brick", 24}, {"iron-gear-wheel", 6}, {"motor", 2}},
@@ -713,7 +730,11 @@ util.change_recipe("burner-lab",
                     {{"stone-brick", 24}, {"iron-plate", 40}, {"copper-plate", 32}},
                     8,
                     16)
-
+util.change_recipe("engine-unit",
+                    {{"connecting-rod", 8}, {"steel-plate", 2}, {"bolts", 6}, {"gears", 4}},
+                    {{"connecting-rod", 12}, {"steel-plate", 6}, {"bolts", 16}, {"gears", 8}},
+                    8,
+                    16)
 
 util.change_recipe("kr-wind-turbine",
                     {{"iron-plate", 12}, {"stone-brick", 4}, {"sp-bolts", 4}, {"electric-motor", 1}},
