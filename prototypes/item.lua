@@ -1609,7 +1609,7 @@ data:extend({
   {
     type = "item",
     name = "sp-turbine-rotor",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-turbine-rotor.png",
+    icon = "__Spaghenutti__/graphics/icons/turbine-rotor.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "advanced-intermediate-product",
     order = "[turbine-rotor]",
@@ -1618,7 +1618,7 @@ data:extend({
   {
     type = "item",
     name = "sp-turbine-stator",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-turbine-stator.png",
+    icon = "__Spaghenutti__/graphics/icons/turbine-stator.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "advanced-intermediate-product",
     order = "[turbine-stator]",

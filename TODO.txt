@@ -24,6 +24,39 @@ TODO:
   - Add fancy building (matter converter) which can build robots from iron
   - update names:
     - last name updated "plate-heat-exchanger"
+  - missing icons
+    - TiAlSn
+    - TiNb
+    - aluminum-brass
+    - duralumin
+    - inconel
+    - niobium-steel
+    - niobium-tin
+    - stainless-steel
+    - compute-unit
+    - transistor
+    - transformer
+    - combustion-chamber
+    - cryostat
+    - fuel-injector
+    - quantum-gate
+    - superconductor
+    - used-up-fuel-rod
+    - polymer
+    - bleach
+    - composites
+    - epoxy
+    - glue
+    - aqueous-niobium
+    - aqueous-tantalum
+    - coolant
+    - deuterium (not needed due to krastorio's heavy water)
+    - helium-3
+    - helium
+    - liquid-nitrogen
+    - liquid-sodium
+    - xenon
+
 
 FIXME:
   + Aluminum ore icon color
