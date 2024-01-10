@@ -731,8 +731,8 @@ util.change_recipe("burner-lab",
                     8,
                     16)
 util.change_recipe("engine-unit",
-                    {{"connecting-rod", 8}, {"steel-plate", 2}, {"bolts", 6}, {"gears", 4}},
-                    {{"connecting-rod", 12}, {"steel-plate", 6}, {"bolts", 16}, {"gears", 8}},
+                    {{"sp-connecting-rod", 8}, {"steel-plate", 2}, {"sp-bolts", 6}, {"steel-gear-wheel", 4}},
+                    {{"sp-connecting-rod", 12}, {"steel-plate", 6}, {"sp-bolts", 16}, {"steel-gear-wheel", 8}},
                     8,
                     16)
 
