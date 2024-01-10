@@ -17,20 +17,6 @@ util.disable_recipe("rare-metals")
 -- Why cant i disable this items?
 -- util.disable_recipe("transport-belt")
 
-data.raw.technology["electronics"].prerequisites = {"automation", "automation-science-pack", "sp-basic-solder"}
-data.raw.technology["kr-crusher"].prerequisites = {"electricity"}
-data.raw.technology["kr-crusher"].unit = {count = 30,
-  ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}},
-  time = 30
-}
-data.raw.technology["steel-processing"].effects = {
-  {type = "unlock-recipe", recipe = "steel-plate"},
-  {type = "unlock-recipe", recipe = "steel-chest"},
-  {type = "unlock-recipe", recipe = "coke"}
-}
-data.raw.technology["engine"].prerequisites = {"sp-steel-machining"}
-
-
 -- Science recipe changes
 util.change_recipe("automation-science-pack",
  {{"automation-core", 1}, {"motor", 1}, {"blank-tech-card", 5}},

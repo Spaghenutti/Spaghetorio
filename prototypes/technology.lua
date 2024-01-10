@@ -130,4 +130,79 @@ data:extend({
     },
     order = "a-h-a"
   },
+  {
+    type = "technology",
+    name = "sp-aluminum-processing",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghenutti__/graphics/hr-icons/aluminum-sheet.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-alumina"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-aluminum-sheet"
+      }
+    },
+    prerequisites = {"logistic-science-pack"},
+    unit =
+    {
+      count = 100,
+      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-aluminum-machining",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghenutti__/graphics/hr-icons/aluminum-frame.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-aluminum-frame"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-aluminum-cable"
+      }
+    },
+    prerequisites = {"sp-aluminum-processing"},
+    unit =
+    {
+      count = 100,
+      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-coal-processing",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghenutti__/graphics/hr-icons/graphite.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-coke"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-graphite"
+      },
+    },
+    prerequisites = {"automation-science-pack"},
+    unit =
+    {
+      count = 50,
+      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}},
+      time = 15
+    },
+    order = "a-h-a"
+  },
 })

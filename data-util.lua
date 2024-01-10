@@ -19,7 +19,16 @@ end
 function data_util.overlay_small_icon(icon, icon_size, small_icon, small_icon_size)
   icons = {
     { icon = icon, icon_size = icon_size },
-    { icon = small_icon, icon_size = small_icon_size, scale = 0.22, shift = { -8, -8 }}
+    { icon = small_icon, icon_size = small_icon_size, scale = 0.22, shift = { 8, -8 }}
+  }
+  return icons
+end
+
+function data_util.overlay_two_small_icons(icon, icon_size, small_icon_1, small_icon_1_size, small_icon_2, small_icon_2_size)
+  icons = {
+    { icon = icon, icon_size = icon_size },
+    { icon = small_icon_1, icon_size = small_icon_1_size, scale = 0.22, shift = { 8, -8 }},
+    { icon = small_icon_2, icon_size = small_icon_2_size, scale = 0.22, shift = { -8, -8 }}
   }
   return icons
 end

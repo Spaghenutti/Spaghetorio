@@ -15,7 +15,7 @@ TODO:
     - helium
   - missing technologies
     - resource processing:
-      - aluminum (and enriched)
+      + aluminum (and enriched)
       - chromite (and enriched)
       - limestone
       - titanium (and enriched)
@@ -30,14 +30,11 @@ TODO:
       - rare metals
       - cobalt sulfate
       - salt
+      + graphite
 
 
 FIXME:
   - 
 
 Notes:
-  for electric poles:
-    1. electrolysis plant
-    2. aluminum processing (aluminum ore smelting then electrolyzing alumina)
-    3. aluminum machining
-
+  -

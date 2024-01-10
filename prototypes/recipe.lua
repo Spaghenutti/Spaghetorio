@@ -1,3 +1,5 @@
+local util = require("data-util")
+
 data:extend({
   {
     type = "recipe",
@@ -1572,6 +1574,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-landfill-from-iron-ore",
+    icons = util.overlay_small_icon("__base__/graphics/icons/landfill.png", 64, "__base__/graphics/icons/iron-ore.png", 64),
     energy_required = 0.5,
     enabled = false,
     category = "crafting",
@@ -1586,6 +1589,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-landfill-from-limestone",
+    icons = util.overlay_small_icon("__base__/graphics/icons/landfill.png", 64, "__Spaghenutti__/graphics/icons/limestone-1.png", 64),
     energy_required = 0.5,
     enabled = false,
     category = "crafting",
@@ -1599,6 +1603,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-landfill-from-limestone-and-stone",
+    icons = util.overlay_two_small_icons("__base__/graphics/icons/landfill.png", 64, "__base__/graphics/icons/stone.png", 64, "__Spaghenutti__/graphics/icons/limestone-1.png", 64),
     energy_required = 0.5,
     enabled = false,
     category = "crafting",
