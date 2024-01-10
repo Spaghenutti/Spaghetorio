@@ -20,22 +20,25 @@ util.disable_recipe("rare-metals")
 data.raw.technology["electronics"].prerequisites = {"automation", "automation-science-pack", "sp-basic-solder"}
 data.raw.technology["kr-crusher"].prerequisites = {"electricity"}
 data.raw.technology["kr-crusher"].unit = {count = 30,
-                                          ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}},
-                                          time = 30}
-data.raw.technology["steel-processing"].effects = {{type = "unlock-recipe", recipe = "steel-plate"},
-                                                   {type = "unlock-recipe", recipe = "steel-chest"},
-                                                   {type = "unlock-recipe", recipe = "coke"}}
+  ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}},
+  time = 30
+}
+data.raw.technology["steel-processing"].effects = {
+  {type = "unlock-recipe", recipe = "steel-plate"},
+  {type = "unlock-recipe", recipe = "steel-chest"},
+  {type = "unlock-recipe", recipe = "coke"}
+}
 data.raw.technology["engine"].prerequisites = {"sp-steel-machining"}
 
 
 -- Science recipe changes
 util.change_recipe("automation-science-pack",
-                   {{"automation-core", 1}, {"motor", 1}, {"blank-tech-card", 5}},
-                   {{"automation-core", 2}, {"motor", 2}, {"blank-tech-card", 5}},
-                   20,
-                   30)
+ {{"automation-core", 1}, {"motor", 1}, {"blank-tech-card", 5}},
+ {{"automation-core", 2}, {"motor", 2}, {"blank-tech-card", 5}},
+ 20,
+ 30)
 util.change_recipe("logistic-science-pack",
-                   {{"inserter-parts", 5}, {"electronic-circuit", 5}, {"electric-motor", 1}, {"blank-tech-card", 5}},
-                   {{"inserter-parts", 10}, {"electronic-circuit", 10}, {"electric-motor", 2}, {"blank-tech-card", 5}},
-                   20,
-                   30)
+ {{"inserter-parts", 5}, {"electronic-circuit", 5}, {"electric-motor", 1}, {"blank-tech-card", 5}},
+ {{"inserter-parts", 10}, {"electronic-circuit", 10}, {"electric-motor", 2}, {"blank-tech-card", 5}},
+ 20,
+ 30)

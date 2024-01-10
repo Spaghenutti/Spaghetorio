@@ -175,4 +175,4 @@ data:extend({
 
 data.raw.technology["kr-fluids-chemistry"].prerequisites = {"logistic-science-pack"}
 data.raw.technology["kr-fluids-chemistry"].unit = {count = 50, ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}}, time = 15}
-data.raw.technology["electric-energy-distribution-1"].prerequisites = {"sp-aluminum-machining"}
+data.raw.technology["medium-electric-pole"].prerequisites = {"sp-aluminum-machining"}

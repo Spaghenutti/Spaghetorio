@@ -590,164 +590,156 @@ data:extend({
 
 -- items
 util.change_recipe("iron-plate",
-                    {{"iron-ore", 2}},
-                    {{"iron-ore", 3}},
-                    8,
-                    12)
+  {{"iron-ore", 2}},
+  {{"iron-ore", 3}},
+  8,
+  12)
 util.change_recipe("copper-plate",
-                    {{"copper-ore", 2}},
-                    {{"copper-ore", 3}},
-                    8,
-                    12)
+  {{"copper-ore", 2}},
+  {{"copper-ore", 3}},
+  8,
+  12)
 util.change_recipe("iron-beam",
-                    {{"iron-plate", 1}},
-                    {{"iron-plate", 2}},
-                    1,
-                    2)
+  {{"iron-plate", 1}},
+  {{"iron-plate", 2}},
+  1,
+  2)
 util.change_recipe("electronic-circuit",
-                    {{"copper-cable", 3}, {"wood", 3}, {"sp-solder", 1}},
-                    {{"copper-cable", 8}, {"wood", 5}, {"sp-solder", 2}},
-                    0.5,
-                    1)
+  {{"copper-cable", 3}, {"wood", 3}, {"sp-solder", 1}},
+  {{"copper-cable", 8}, {"wood", 5}, {"sp-solder", 2}},
+  0.5,
+  1)
 util.change_recipe("electronic-circuit-stone",
-                    {{"copper-cable", 3}, {"stone-tablet", 1}, {"sp-solder", 1}},
-                    {{"copper-cable", 8}, {"stone-tablet", 2}, {"sp-solder", 2}},
-                    0.5,
-                    1)
+  {{"copper-cable", 3}, {"stone-tablet", 1}, {"sp-solder", 1}},
+  {{"copper-cable", 8}, {"stone-tablet", 2}, {"sp-solder", 2}},
+  0.5,
+  1)
 util.change_recipe("motor",
-                    {{"iron-plate", 1}, {"sp-bolts", 3}, {"iron-gear-wheel", 2}},
-                    {{"iron-plate", 2}, {"sp-bolts", 6}, {"transport-belt", 4}},
-                    2,
-                    3)
+  {{"iron-plate", 1}, {"sp-bolts", 3}, {"iron-gear-wheel", 2}},
+  {{"iron-plate", 2}, {"sp-bolts", 6}, {"transport-belt", 4}},
+  2,
+  3)
 util.change_recipe("underground-belt",
-                    {{"iron-plate", 2}, {"sp-bolts", 4}, {"transport-belt", 4}},
-                    {{"iron-plate", 4}, {"sp-bolts", 8}, {"transport-belt", 4}},
-                    nil,
-                    nil)
+  {{"iron-plate", 2}, {"sp-bolts", 4}, {"transport-belt", 4}},
+  {{"iron-plate", 4}, {"sp-bolts", 8}, {"transport-belt", 4}},
+  nil,
+  nil)
 util.change_recipe("splitter",
-                    {{"motor", 2}, {"sp-bolts", 4}, {"transport-belt", 2}},
-                    {{"motor", 4}, {"sp-bolts", 8}, {"transport-belt", 4}},
-                    nil,
-                    nil)
+  {{"motor", 2}, {"sp-bolts", 4}, {"transport-belt", 2}},
+  {{"motor", 4}, {"sp-bolts", 8}, {"transport-belt", 4}},
+  nil,
+  nil)
 util.change_recipe("electric-motor",
-                    {{"copper-cable", 8}, {"sp-bolts", 6}, {"iron-plate", 2}, {"iron-stick", 1}}, 
-                    {{"copper-cable", 16}, {"sp-bolts", 10}, {"iron-plate", 8}, {"iron-stick", 1}},
-                    nil,
-                    nil)
+  {{"copper-cable", 8}, {"sp-bolts", 6}, {"iron-plate", 2}, {"iron-stick", 1}}, 
+  {{"copper-cable", 16}, {"sp-bolts", 10}, {"iron-plate", 8}, {"iron-stick", 1}},
+  nil,
+  nil)
 util.change_recipe("steel-plate",
-                    {{"iron-plate", 2}, {"coke", 1}},
-                    {{"iron-plate", 3}, {"coke", 2}},
-                    nil,
-                    nil)
+  {{"iron-plate", 2}, {"coke", 1}},
+  {{"iron-plate", 3}, {"coke", 2}},
+  nil,
+  nil)
 util.change_recipe("sp-titanium-nitride",
-                    {{type = "item", name = "sp-titanium-ingot", amount = 1}, {type = "fluid", name = "nitrogen", amount = 20}},  -- krastorio2 has nitrogen
-                    {{type = "item", name = "sp-titanium-ingot", amount = 2}, {type = "fluid", name = "nitrogen", amount = 40}},  -- krastorio2 has nitrogen
-                    3,
-                    4)
+  {{type = "item", name = "sp-titanium-ingot", amount = 1}, {type = "fluid", name = "nitrogen", amount = 20}},  -- krastorio2 has nitrogen
+  {{type = "item", name = "sp-titanium-ingot", amount = 2}, {type = "fluid", name = "nitrogen", amount = 40}},  -- krastorio2 has nitrogen
+  3,
+  4)
 util.change_recipe("sp-graphite",
-                    {{"coke", 3}},
-                    {{"coke", 5}},
-                    nil,
-                    nil)
+  {{"coke", 3}},
+  {{"coke", 5}},
+  nil,
+  nil)
 util.change_recipe("concrete",
-                    {{"sp-cement", 10}, {"sand", 2}, {type="fluid", name="water", amount=100}},
-                    {{"sp-cement", 16}, {"sand", 3}, {type="fluid", name="water", amount=160}},
-                    10,
-                    15)
+  {{"sp-cement", 10}, {"sand", 2}, {type="fluid", name="water", amount=100}},
+  {{"sp-cement", 16}, {"sand", 3}, {type="fluid", name="water", amount=160}},
+  10,
+  15)
 
 -- Buildings
 util.change_recipe("stone-furnace",
-                    {{"stone", 20}},
-                    {{"stone", 40}},
-                    4,
-                    8)
+  {{"stone", 20}},
+  {{"stone", 40}},
+  4,
+  8)
 util.change_recipe("electric-mining-drill",
-                    {{"iron-beam", 8}, {"iron-gear-wheel", 24}, {"sp-bolts", 20}, {"motor", 6}},
-                    {{"iron-beam", 16}, {"iron-gear-wheel", 36}, {"sp-bolts", 28}, {"motor", 10}},
-                    8,
-                    16)
+  {{"iron-beam", 8}, {"iron-gear-wheel", 24}, {"sp-bolts", 20}, {"motor", 6}},
+  {{"iron-beam", 16}, {"iron-gear-wheel", 36}, {"sp-bolts", 28}, {"motor", 10}},
+  8,
+  16)
 util.change_recipe("boiler",
-                    {{"copper-plate", 20}, {"sp-bolts", 12}, {"sp-copper-tube", 24}, {"stone-brick", 14}},
-                    {{"copper-plate", 36}, {"sp-bolts", 30}, {"sp-copper-tube", 50}, {"stone-brick", 30}},
-                    8,
-                    16)
+  {{"copper-plate", 20}, {"sp-bolts", 12}, {"sp-copper-tube", 24}, {"stone-brick", 14}},
+  {{"copper-plate", 36}, {"sp-bolts", 30}, {"sp-copper-tube", 50}, {"stone-brick", 30}},
+  8,
+  16)
 util.change_recipe("steam-engine",
-                    {{"stone-brick", 12}, {"iron-plate", 24}, {"sp-bolts", 36}, {"electric-motor", 2}, {"sp-copper-tube", 12}},
-                    {{"stone-brick", 20}, {"iron-plate", 40}, {"sp-bolts", 52}, {"electric-motor", 4}, {"sp-copper-tube", 24}},
-                    12,
-                    24)
+  {{"stone-brick", 12}, {"iron-plate", 24}, {"sp-bolts", 36}, {"electric-motor", 2}, {"sp-copper-tube", 12}},
+  {{"stone-brick", 20}, {"iron-plate", 40}, {"sp-bolts", 52}, {"electric-motor", 4}, {"sp-copper-tube", 24}},
+  12,
+  24)
 util.change_recipe("assembling-machine-1",
-                    {{"stone-brick", 20}, {"iron-beam", 10}, {"sp-bolts", 24}, {"electric-motor", 6}},
-                    {{"stone-brick", 40}, {"iron-beam", 20}, {"sp-bolts", 40}, {"electric-motor", 12}},
-                    8,
-                    16)
+  {{"stone-brick", 20}, {"iron-beam", 10}, {"sp-bolts", 24}, {"electric-motor", 6}},
+  {{"stone-brick", 40}, {"iron-beam", 20}, {"sp-bolts", 40}, {"electric-motor", 12}},
+  8,
+  16)
 util.change_recipe("lab",
-                    {{"iron-beam", 16}, {"sp-bolts", 24}, {"glass", 20}, {"stone-brick", 6}, {"electronic-circuit", 10}},
-                    {{"iron-beam", 30}, {"sp-bolts", 40}, {"glass", 48}, {"stone-brick", 12}, {"electronic-circuit", 20}},
-                    10,
-                    20)
+  {{"iron-beam", 16}, {"sp-bolts", 24}, {"glass", 20}, {"stone-brick", 6}, {"electronic-circuit", 10}},
+  {{"iron-beam", 30}, {"sp-bolts", 40}, {"glass", 48}, {"stone-brick", 12}, {"electronic-circuit", 20}},
+  10,
+  20)
 util.change_recipe("solar-panel",
-                    {{"sp-aluminum-frame", 5}, {"electronic-circuit", 4}, {"copper-cable", 10}, {"sp-bolts", 8}, {"silicon", 40}, {"sp-phosphorus", 6}},
-                    {{"sp-aluminum-frame", 10}, {"electronic-circuit", 8}, {"copper-cable", 20}, {"sp-bolts", 16}, {"silicon", 80}, {"sp-phosphorus", 12}},
-                    10,
-                    20)
+  {{"sp-aluminum-frame", 5}, {"electronic-circuit", 4}, {"copper-cable", 10}, {"sp-bolts", 8}, {"silicon", 40}, {"sp-phosphorus", 6}},
+  {{"sp-aluminum-frame", 10}, {"electronic-circuit", 8}, {"copper-cable", 20}, {"sp-bolts", 16}, {"silicon", 80}, {"sp-phosphorus", 12}},
+  10,
+  20)
 util.change_recipe("assembling-machine-2",
-                    {
-                      {"steel-beam", 12},
-                      {"electronic-circuit", 10},
-                      {"engine-unit", 4},
-                      {"stone-brick", 32},
-                      {"sp-bolts", 24},
-                      {"steel-gear-wheel", 20}
-                    },
-                    {
-                      {"steel-beam", 24},
-                      {"electronic-circuit", 20},
-                      {"engine-unit", 8},
-                      {"stone-brick", 64},
-                      {"sp-bolts", 48},
-                      {"steel-gear-wheel", 40}
-                    },10,
-                    20)
+  {{"steel-beam", 12}, {"electronic-circuit", 10}, {"engine-unit", 4}, {"stone-brick", 32}, {"sp-bolts", 24}, {"steel-gear-wheel", 20}},
+  {{"steel-beam", 24}, {"electronic-circuit", 20}, {"engine-unit", 8}, {"stone-brick", 64}, {"sp-bolts", 48}, {"steel-gear-wheel", 40}},
+  10,
+  20)
+util.change_recipe("medium-electric-pole",
+  {{"iron-stick", 2}, {"sp-bolts", 8}, {"iron-beam", 6}, {"sp-aluminum-cable", 4}},
+  {{"iron-stick", 4}, {"sp-bolts", 16}, {"iron-beam", 12}, {"sp-aluminum-cable", 10}},
+  4,
+  8)
 
 util.change_recipe("burner-turbine",
-                    {{"iron-beam", 8}, {"stone-brick", 24}, {"iron-gear-wheel", 6}, {"motor", 2}},
-                    {{"iron-beam", 16}, {"stone-brick", 36}, {"iron-gear-wheel", 12}, {"motor", 4}},
-                    8,
-                    16)
+  {{"iron-beam", 8}, {"stone-brick", 24}, {"iron-gear-wheel", 6}, {"motor", 2}},
+  {{"iron-beam", 16}, {"stone-brick", 36}, {"iron-gear-wheel", 12}, {"motor", 4}},
+  8,
+  16)
 util.change_recipe("fuel-processor",
-                    {{"iron-plate", 12}, {"stone-brick", 24}, {"sp-bolts", 20}, {"motor", 2}},
-                    {{"iron-plate", 16}, {"stone-brick", 36}, {"sp-bolts", 24}, {"motor", 4}},
-                    12,
-                    24)
+  {{"iron-plate", 12}, {"stone-brick", 24}, {"sp-bolts", 20}, {"motor", 2}},
+  {{"iron-plate", 16}, {"stone-brick", 36}, {"sp-bolts", 24}, {"motor", 4}},
+  12,
+  24)
 util.change_recipe("burner-assembling-machine",
-                    {{"stone-brick", 20}, {"iron-plate", 20}, {"sp-bolts", 24}, {"motor", 4}},
-                    {{"stone-brick", 40}, {"iron-plate", 40}, {"sp-bolts", 40}, {"motor", 8}},
-                    8,
-                    16)
+  {{"stone-brick", 20}, {"iron-plate", 20}, {"sp-bolts", 24}, {"motor", 4}},
+  {{"stone-brick", 40}, {"iron-plate", 40}, {"sp-bolts", 40}, {"motor", 8}},
+  8,
+  16)
 util.change_recipe("burner-lab",
-                    {{"stone-brick", 12}, {"iron-plate", 20}, {"copper-plate", 16}},
-                    {{"stone-brick", 24}, {"iron-plate", 40}, {"copper-plate", 32}},
-                    8,
-                    16)
+  {{"stone-brick", 12}, {"iron-plate", 20}, {"copper-plate", 16}},
+  {{"stone-brick", 24}, {"iron-plate", 40}, {"copper-plate", 32}},
+  8,
+  16)
 util.change_recipe("engine-unit",
-                    {{"sp-connecting-rod", 8}, {"steel-plate", 2}, {"sp-bolts", 6}, {"steel-gear-wheel", 4}},
-                    {{"sp-connecting-rod", 12}, {"steel-plate", 6}, {"sp-bolts", 16}, {"steel-gear-wheel", 8}},
-                    8,
-                    16)
+  {{"sp-connecting-rod", 8}, {"steel-plate", 2}, {"sp-bolts", 6}, {"steel-gear-wheel", 4}},
+  {{"sp-connecting-rod", 12}, {"steel-plate", 6}, {"sp-bolts", 16}, {"steel-gear-wheel", 8}},
+  8,
+  16)
 
 util.change_recipe("kr-wind-turbine",
-                    {{"iron-plate", 12}, {"stone-brick", 4}, {"sp-bolts", 4}, {"electric-motor", 1}},
-                    {{"iron-plate", 24}, {"stone-brick", 4}, {"sp-bolts", 10}, {"electric-motor", 2}},
-                    10,
-                    20)
+  {{"iron-plate", 12}, {"stone-brick", 4}, {"sp-bolts", 4}, {"electric-motor", 1}},
+  {{"iron-plate", 24}, {"stone-brick", 4}, {"sp-bolts", 10}, {"electric-motor", 2}},
+  10,
+  20)
 util.change_recipe("kr-crusher",
-                    {{"iron-beam", 12}, {"iron-gear-wheel", 30}, {"sp-bolts", 36}, {"motor", 10}, {"stone-brick", 16}},
-                    {{"iron-beam", 24}, {"iron-gear-wheel", 60}, {"sp-bolts", 72}, {"motor", 20}, {"stone-brick", 32}},
-                    12,
-                    24)
+  {{"iron-beam", 12}, {"iron-gear-wheel", 30}, {"sp-bolts", 36}, {"motor", 10}, {"stone-brick", 16}},
+  {{"iron-beam", 24}, {"iron-gear-wheel", 60}, {"sp-bolts", 72}, {"motor", 20}, {"stone-brick", 32}},
+  12,
+  24)
 util.change_recipe("kr-greenhouse",
-                    {{"iron-beam", 24}, {"sp-bolts", 48}, {"glass", 40}, {"stone-brick", 16}},
-                    {{"iron-beam", 48}, {"sp-bolts", 96}, {"glass", 80}, {"stone-brick", 32}},
-                    16,
-                    32)
+  {{"iron-beam", 24}, {"sp-bolts", 48}, {"glass", 40}, {"stone-brick", 16}},
+  {{"iron-beam", 48}, {"sp-bolts", 96}, {"glass", 80}, {"stone-brick", 32}},
+  16,
+  32)
