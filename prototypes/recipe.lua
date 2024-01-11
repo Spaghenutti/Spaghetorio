@@ -841,7 +841,7 @@ data:extend({
     enabled = false,
     energy_required = 3.6,  -- time in seconds to make the item
     ingredients = {
-      {type = "item", name = "sp-polymer", amount = 1},
+      {type = "item", name = "plastic-bar", amount = 1},
       {type = "item", name = "copper-cable", amount = 2},
       {type = "item", name = "sp-glass-fiber", amount = 1},
       {type = "item", name = "sp-solder", amount = 2}
@@ -973,7 +973,7 @@ data:extend({
     enabled = false,
     energy_required = 2.4,  -- time in seconds to make the item
     ingredients = {
-      {type = "item", name = "sp-polymer", amount = 2}
+      {type = "item", name = "plastic-bar", amount = 2}
     },
     results = {
       {type = "item", name = "sp-fabric", amount = 1}
@@ -1085,7 +1085,7 @@ data:extend({
     enabled = false,
     energy_required = 3.2,  -- time in seconds to make the item
     ingredients = {
-      {type = "item", name = "sp-polymer", amount = 2},
+      {type = "item", name = "plastic-bar", amount = 2},
       {type = "item", name = "sp-stainless-steel", amount = 1}
     },
     results = {

@@ -671,6 +671,22 @@ data:extend({
     order = "[cobalt-billet]",
     stack_size = 100
   },
+  {
+    type = "item",
+    name = "sp-tellurium",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/tellurium-1.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    pictures = {
+      { size = 64, filename = "__Spaghenutti__/graphics/icons/tellurium-1.png", scale = 0.25, mipmap_count = 4},
+      { size = 64, filename = "__Spaghenutti__/graphics/icons/tellurium-2.png", scale = 0.25, mipmap_count = 4},
+      { size = 64, filename = "__Spaghenutti__/graphics/icons/tellurium-3.png", scale = 0.25, mipmap_count = 4},
+      { size = 64, filename = "__Spaghenutti__/graphics/icons/tellurium-4.png", scale = 0.25, mipmap_count = 4}
+    },
+    subgroup = "processed-resource",
+    order = "[tellurium]",
+    stack_size = 200
+  },
   ------------------------------------------------------------------------------
   -- Subgroup raw-material --
   ------------------------------------------------------------------------------
@@ -870,7 +886,7 @@ data:extend({
   {
     type = "item",
     name = "sp-duralumin",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-duralumin.png",
+    icon = "__Spaghenutti__/graphics/icons/duralumin.png",
     icon_size = 64,
     scale = 0.25,
     subgroup = "alloy",
@@ -1018,6 +1034,26 @@ data:extend({
     scale = 0.25,
     subgroup = "advanced-raw-material",
     order = "[carbon-fiber]",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "sp-monocrystal",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/monocrystal.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "advanced-raw-material",
+    order = "crystal[monocrystal]",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "sp-quasicrystal",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/quasicrystal.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "advanced-raw-material",
+    order = "crystal[quasicrystal]",
     stack_size = 100
   },
   ------------------------------------------------------------------------------
@@ -1460,6 +1496,16 @@ data:extend({
     order = "[laser]",
     stack_size = 100
   },
+  {
+    type = "item",
+    name = "sp-electrode",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/electrode.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "electrical-optical-component",
+    order = "[electrode]",
+    stack_size = 100
+  },
   ------------------------------------------------------------------------------
   -- Subgroup intermediate-products --
   ------------------------------------------------------------------------------
@@ -1556,7 +1602,7 @@ data:extend({
   {
     type = "item",
     name = "sp-composites",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-composites.png",
+    icon = "__Spaghenutti__/graphics/icons/composites.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "intermediate-product",
     order = "[composites]",
@@ -1569,6 +1615,15 @@ data:extend({
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "intermediate-product",
     order = "[heatsink]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "sp-heating-filament",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/heating-filament.png",
+    icon_size = 64, icon_mipmaps = 4,
+    subgroup = "intermediate-product",
+    order = "[heating-filament]",
     stack_size = 50
   },
   ------------------------------------------------------------------------------
@@ -1721,35 +1776,7 @@ data:extend({
   ------------------------------------------------------------------------------
   -- Subgroup chemical-product --
   ------------------------------------------------------------------------------
-  {
-    type = "item",
-    name = "sp-composites",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-composites.png",
-    icon_size = 64,
-    scale = 0.25,
-    subgroup = "chemical-product",
-    order = "[sp-composites]",
-    stack_size = 100
-  },
-  {
-    type = "item",
-    name = "sp-polymer",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-polymer.png",
-    icon_size = 64,
-    scale = 0.25,
-    subgroup = "chemical-product",
-    order = "[polymer]",
-    stack_size = 100
-  },
-  {
-    type = "item",
-    name = "sp-glue",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-glue.png",
-    icon_size = 64, icon_mipmaps = 4,
-    subgroup = "chemical-product",
-    order = "[sp-glue]",
-    stack_size = 50
-  },
+  
   ------------------------------------------------------------------------------
   -- Subgroup fuel --
   ------------------------------------------------------------------------------

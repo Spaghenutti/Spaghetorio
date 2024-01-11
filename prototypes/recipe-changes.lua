@@ -1371,7 +1371,7 @@ data:extend({
       {
         {"sp-stainless-steel-gear-wheel", 10},
         {"sp-spring", 2},
-        {"sp-polymer", 4},
+        {"plastic-bar", 4},
         {"sp-magnet", 2},
         {type="fluid", name="lubricant", amount=20}
       },
@@ -1981,8 +1981,7 @@ data:extend({
     ingredients = {
       {"sp-pressure-tube", 10},
       {"sp-flange", 2},
-      {"sp-aluminum-sheet", 5},
-      {"sp-polymer", 6}
+      {"sp-aluminum-sheet", 5}
     },
     result = "heat-pipe"
   },

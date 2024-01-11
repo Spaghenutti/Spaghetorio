@@ -142,7 +142,6 @@ data.raw.technology["steel-processing"].effects = {
   {type = "unlock-recipe", recipe = "steel-plate"},
   {type = "unlock-recipe", recipe = "steel-chest"}
 }
-
 data.raw.technology["landfill"].effects = {
   {type = "unlock-recipe", recipe = "landfill"},
   {type = "unlock-recipe", recipe = "landfill-2"},
@@ -150,7 +149,7 @@ data.raw.technology["landfill"].effects = {
   {type = "unlock-recipe", recipe = "sp-landfill-from-limestone"},
   {type = "unlock-recipe", recipe = "sp-landfill-from-iron-ore"}
 }
-data.raw.technology["kr-fluids-chemistry"].prerequisites = {"logistic-science-pack"}
+data.raw.technology["kr-fluids-chemistry"].prerequisites = {"logistic-science-pack", "steel-processing"}
 data.raw.technology["kr-fluids-chemistry"].unit = {count = 50, ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}}, time = 15}
 
 -- aai industry technology changes

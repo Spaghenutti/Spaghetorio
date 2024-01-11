@@ -202,21 +202,6 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-polymer",  -- #ForRegEx# - recipe
-    category = "chemistry",
-    enabled = false,
-    energy_required = 4,  -- time in seconds to make the item
-    ingredients = {
-      {type = "item", name = "sp-graphite", amount = 4},
-      {type = "fluid", name = "nitrogen", amount = 25},
-      {type = "fluid", name = "oxygen", amount = 15},
-    },
-    results = {
-      {type = "item", name = "sp-polymer", amount = 3}
-    }
-  },
-  {
-    type = "recipe",
     name = "sp-uranium-fuel-rod",  -- #ForRegEx# - recipe
     category = "crafting-with-fluid",
     enabled = false,

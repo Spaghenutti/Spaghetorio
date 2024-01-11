@@ -11,7 +11,13 @@ data.raw.item["enriched-iron"].subgroup = "enriched-resource"
 data.raw.item["enriched-copper"].subgroup = "enriched-resource"
 data.raw.item["enriched-rare-metals"].subgroup = "enriched-resource"
 
+data.raw.item["quartz"].subgroup = "processed-resource"
+data.raw.item["silicon"].subgroup = "processed-resource"
+data.raw.item["coke"].subgroup = "processed-resource"
 data.raw.item["sand"].subgroup = "processed-resource"
+data.raw.item["imersite-powder"].subgroup = "processed-resource"
+data.raw.item["lithium-chloride"].subgroup = "processed-resource"
+data.raw.item["lithium"].subgroup = "processed-resource"
 
 data.raw.item["imersite-crystal"].subgroup = "advanced-raw-material"
 data.raw.item["matter-cube"].subgroup = "advanced-raw-material"
