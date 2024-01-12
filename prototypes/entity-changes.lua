@@ -44,6 +44,8 @@ data.raw.item["sulfur"].subgroup = "processed-resource"
 data.raw.item["uranium-238"].subgroup = "processed-resource"
 data.raw.item["uranium-235"].subgroup = "processed-resource"
 
+data.raw.item["plastic-bar"].subgroup = "chemical-product"
+
 data.raw.item["explosives"].subgroup = "ammo"
 data.raw.item["explosives"].order = "a-a"
 

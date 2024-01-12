@@ -840,16 +840,6 @@ data:extend({
     order = "[cement]",
     stack_size = 100
   },
-  {
-    type = "item",
-    name = "sp-rubber",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/icons/rubber.png",
-    icon_size = 64,
-    scale = 0.25,
-    subgroup = "raw-material",
-    order = "[rubber]",
-    stack_size = 100
-  },
   ------------------------------------------------------------------------------
   -- subgroup alloy --
   ------------------------------------------------------------------------------
@@ -1785,7 +1775,43 @@ data:extend({
   ------------------------------------------------------------------------------
   -- Subgroup chemical-product --
   ------------------------------------------------------------------------------
-  
+  {
+    type = "item",
+    name = "sp-rubber",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/rubber.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "chemical-product",
+    order = "[rubber]",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "sp-phosphoric-acid",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+    icon_size = 64, icon_mipmaps = 4,
+    subgroup = "chemical-product",
+    order = "[phosphoric-acid]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "sp-methyl-tert-butyl-ether",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+    icon_size = 64, icon_mipmaps = 4,
+    subgroup = "chemical-product",
+    order = "[methyl-tert-butyl-ether]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "sp-urea",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+    icon_size = 64, icon_mipmaps = 4,
+    subgroup = "chemical-product",
+    order = "[urea]",
+    stack_size = 50
+  },
   ------------------------------------------------------------------------------
   -- Subgroup fuel --
   ------------------------------------------------------------------------------

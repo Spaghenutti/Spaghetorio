@@ -39,15 +39,21 @@ data:extend({
   },
   {
     type = "item-subgroup",
+    name = "chemical-product",
+    group = "base-products",
+    order = "e§"
+  },
+  {
+    type = "item-subgroup",
     name = "alloy",
     group = "base-products",
-    order = "e"
+    order = "f"
   },
   {
     type = "item-subgroup",
     name = "advanced-raw-material",
     group = "base-products",
-    order = "f"
+    order = "g"
   },
   ------------------------------------------------------------------------------
   -- intermediate-products --
@@ -87,12 +93,6 @@ data:extend({
     name = "advanced-intermediate-product",
     group = "intermediate-products",
     order = "g"
-  },
-  {
-    type = "item-subgroup",
-    name = "chemical-product",
-    group = "intermediate-products",
-    order = "h"
   },
   {
     type = "item-subgroup",

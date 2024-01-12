@@ -119,6 +119,126 @@ data:extend({
     icon_mipmaps = 4,
     order = "a[fluid]-f[liquid-nitrogen]"
   },
+  {
+    type = "fluid",
+    name = "sp-deuterium",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1KJ",
+    base_color = {r=0.05, g=0.1, b=0.5},
+    flow_color = {r=0.05, g=0.1, b=0.5},
+    icon = "__Spaghenutti__/graphics/dummy/dummy-fluid-sp-deuterium.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    order = "a[fluid]-f[deuterium]"
+  },
+  {
+    type = "fluid",
+    name = "sp-ethylene",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1KJ",
+    base_color = {r=0.05, g=0.1, b=0.5},
+    flow_color = {r=0.05, g=0.1, b=0.5},
+    icon = "__Spaghenutti__/graphics/dummy/dummy-fluid-sp-deuterium.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    order = "a[fluid]-f[ethylene]"
+  },
+  {
+    type = "fluid",
+    name = "sp-ethylene-dichloride",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1KJ",
+    base_color = {r=0.05, g=0.1, b=0.5},
+    flow_color = {r=0.05, g=0.1, b=0.5},
+    icon = "__Spaghenutti__/graphics/dummy/dummy-fluid-sp-deuterium.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    order = "a[fluid]-f[ethylene-dichloride]"
+  },
+  {
+    type = "fluid",
+    name = "sp-sodium-hydroxide",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1KJ",
+    base_color = {r=0.05, g=0.1, b=0.5},
+    flow_color = {r=0.05, g=0.1, b=0.5},
+    icon = "__Spaghenutti__/graphics/dummy/dummy-fluid-sp-deuterium.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    order = "a[fluid]-f[sodium-hydroxide]"
+  },
+  {
+    type = "fluid",
+    name = "sp-sodium-carbonate",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1KJ",
+    base_color = {r=0.05, g=0.1, b=0.5},
+    flow_color = {r=0.05, g=0.1, b=0.5},
+    icon = "__Spaghenutti__/graphics/dummy/dummy-fluid-sp-deuterium.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    order = "a[fluid]-f[sodium-carbonate]"
+  },
+  {
+    type = "fluid",
+    name = "sp-propene",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1KJ",
+    base_color = {r=0.05, g=0.1, b=0.5},
+    flow_color = {r=0.05, g=0.1, b=0.5},
+    icon = "__Spaghenutti__/graphics/dummy/dummy-fluid-sp-deuterium.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    order = "a[fluid]-f[propene]"
+  },
+  {
+    type = "fluid",
+    name = "sp-propylene",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1KJ",
+    base_color = {r=0.05, g=0.1, b=0.5},
+    flow_color = {r=0.05, g=0.1, b=0.5},
+    icon = "__Spaghenutti__/graphics/dummy/dummy-fluid-sp-deuterium.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    order = "a[fluid]-f[propylene]"
+  },
+  {
+    type = "fluid",
+    name = "sp-benzene",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1KJ",
+    base_color = {r=0.05, g=0.1, b=0.5},
+    flow_color = {r=0.05, g=0.1, b=0.5},
+    icon = "__Spaghenutti__/graphics/dummy/dummy-fluid-sp-deuterium.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    order = "a[fluid]-f[benzene]"
+  },
+  {
+    type = "fluid",
+    name = "sp-styrene",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1KJ",
+    base_color = {r=0.05, g=0.1, b=0.5},
+    flow_color = {r=0.05, g=0.1, b=0.5},
+    icon = "__Spaghenutti__/graphics/dummy/dummy-fluid-sp-deuterium.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    order = "a[fluid]-f[styrene]"
+  },
+  {
+    type = "fluid",
+    name = "sp-vynil-chloride",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1KJ",
+    base_color = {r=0.05, g=0.1, b=0.5},
+    flow_color = {r=0.05, g=0.1, b=0.5},
+    icon = "__Spaghenutti__/graphics/dummy/dummy-fluid-sp-deuterium.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    order = "a[fluid]-f[vynil-chloride]"
+  },
 })
 
 if not mods["Krastorio2"] then
@@ -170,18 +290,6 @@ if not mods["Krastorio2"] then
       icon_size = 64,
     icon_mipmaps = 4,
       order = "a[fluid]-f[oxygen]"
-    },
-    {
-      type = "fluid",
-      name = "sp-deuterium",  -- #ForRegEx# - fluid
-      default_temperature = 25,
-      heat_capacity = "0.1KJ",
-      base_color = {r=0.05, g=0.1, b=0.5},
-      flow_color = {r=0.05, g=0.1, b=0.5},
-      icon = "__Spaghenutti__/graphics/dummy/dummy-fluid-sp-deuterium.png",
-      icon_size = 64,
-      icon_mipmaps = 4,
-      order = "a[fluid]-f[deuterium]"
     },
   })
 end
