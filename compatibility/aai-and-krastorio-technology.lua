@@ -127,7 +127,7 @@ data:extend({
 data.raw.technology["sp-aluminum-processing"].prerequisites = {"kr-fluids-chemistry"}
 data.raw.technology["sp-coal-processing"].effects = {
   {type = "unlock-recipe", recipe = "coke"},
-  {type = "unlock-recipe", recipe = "sp-graphite"}
+  {type = "unlock-recipe", recipe = "kr-vc-coal"}
 }
 
 -- krastorio technology changes
@@ -149,7 +149,7 @@ data.raw.technology["landfill"].effects = {
   {type = "unlock-recipe", recipe = "sp-landfill-from-limestone"},
   {type = "unlock-recipe", recipe = "sp-landfill-from-iron-ore"}
 }
-data.raw.technology["kr-fluids-chemistry"].prerequisites = {"logistic-science-pack", "steel-processing"}
+data.raw.technology["kr-fluids-chemistry"].prerequisites = {"logistic-science-pack", "engine"}
 data.raw.technology["kr-fluids-chemistry"].unit = {count = 50, ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}}, time = 15}
 
 -- aai industry technology changes

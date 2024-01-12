@@ -3,12 +3,12 @@ local util = require("data-util")
 data:extend({
   {
     type = "recipe",
-    name = "sp-graphite",  -- #ForRegEx# - recipe
-    category = "smelting",
+    name = "kr-vc-coal",  -- replaces sp-graphite recipe
+    category = "crushing",
     enabled = false,
-    energy_required = 6,  -- time in seconds to make the item
+    energy_required = 3,  -- time in seconds to make the item
     ingredients = {
-      {type = "item", name = "coke", amount = 3}
+      {type = "item", name = "coal", amount = 3}
     },
     results = {
       {type = "item", name = "sp-graphite", amount = 4}
@@ -620,8 +620,8 @@ util.change_recipe("electric-motor",
   nil,
   nil)
 util.change_recipe("steel-plate",
-  {{"iron-plate", 2}, {"coke", 1}},
-  {{"iron-plate", 3}, {"coke", 2}},
+  {{"iron-plate", 5}, {"sp-graphite", 1}},
+  {{"iron-plate", 6}, {"sp-graphite", 2}},
   nil,
   nil)
 util.change_recipe("sp-titanium-nitride",
@@ -629,11 +629,6 @@ util.change_recipe("sp-titanium-nitride",
   {{type = "item", name = "sp-titanium-ingot", amount = 2}, {type = "fluid", name = "nitrogen", amount = 40}},  -- krastorio2 has nitrogen
   3,
   4)
-util.change_recipe("sp-graphite",
-  {{"coke", 3}},
-  {{"coke", 5}},
-  nil,
-  nil)
 util.change_recipe("concrete",
   {{"sp-cement", 10}, {"sand", 2}, {type="fluid", name="water", amount=100}},
   {{"sp-cement", 16}, {"sand", 3}, {type="fluid", name="water", amount=160}},
@@ -686,7 +681,18 @@ util.change_recipe("medium-electric-pole",
   {{"iron-stick", 4}, {"sp-bolts", 16}, {"iron-beam", 12}, {"sp-aluminum-cable", 10}},
   4,
   8)
+util.change_recipe("chemical-plant",
+  {{"steel-beam", 12}, {"glass", 30}, {"electric-motor", 6}, {"stone-brick", 30}, {"sp-copper-tube", 16}, {"electronic-circuit", 16}},
+  {{"steel-beam", 24}, {"glass", 60}, {"electric-motor", 10}, {"stone-brick", 40}, {"sp-copper-tube", 32}, {"electronic-circuit", 32}},
+  12,
+  24)
+util.change_recipe("radar",
+  {{"steel-beam", 6}, {"steel-plate", 16}, {"sp-bolts", 18}, {"automation-core", 10}, {"electronic-circuit", 20}},
+  {{"steel-beam", 12}, {"steel-plate", 32}, {"sp-bolts", 36}, {"automation-core", 20}, {"electronic-circuit", 40}},
+  12,
+  24)
 
+-- AAI Industries
 util.change_recipe("burner-turbine",
   {{"iron-beam", 8}, {"stone-brick", 24}, {"iron-gear-wheel", 6}, {"motor", 2}},
   {{"iron-beam", 16}, {"stone-brick", 36}, {"iron-gear-wheel", 12}, {"motor", 4}},
@@ -713,6 +719,7 @@ util.change_recipe("engine-unit",
   8,
   16)
 
+-- Krastorio
 util.change_recipe("kr-wind-turbine",
   {{"iron-plate", 12}, {"stone-brick", 4}, {"sp-bolts", 4}, {"electric-motor", 1}},
   {{"iron-plate", 24}, {"stone-brick", 4}, {"sp-bolts", 10}, {"electric-motor", 2}},
@@ -728,3 +735,13 @@ util.change_recipe("kr-greenhouse",
   {{"iron-beam", 48}, {"sp-bolts", 96}, {"glass", 80}, {"stone-brick", 32}},
   16,
   32)
+util.change_recipe("kr-filtration-plant",
+  {{"steel-beam", 48}, {"sp-copper-tube", 50}, {"sp-bolts", 60}, {"glass", 20}, {"electric-motor", 12}, {"electronic-circuit", 12}},
+  {{"steel-beam", 96}, {"sp-copper-tube", 100}, {"sp-bolts", 120}, {"glass", 40}, {"electric-motor", 24}, {"electronic-circuit", 24}},
+  24,
+  48)
+util.change_recipe("kr-electrolysis-plant",
+  {{"steel-beam", 36}, {"sp-bolts", 80}, {"glass", 24}, {"engine-unit", 8}, {"electronic-circuit", 8}},
+  {{"iron-beam", 72}, {"sp-bolts", 160}, {"glass", 48}, {"engine-unit", 12}, {"electronic-circuit", 12}},
+  20,
+  40)

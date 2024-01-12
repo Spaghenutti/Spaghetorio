@@ -1610,6 +1610,15 @@ data:extend({
   },
   {
     type = "item",
+    name = "sp-catalyst",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/catalyst.png",
+    icon_size = 64, icon_mipmaps = 4,
+    subgroup = "intermediate-product",
+    order = "[catalyst]",
+    stack_size = 50
+  },
+  {
+    type = "item",
     name = "sp-heatsink",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/icons/heatsink.png",
     icon_size = 64, icon_mipmaps = 4,
