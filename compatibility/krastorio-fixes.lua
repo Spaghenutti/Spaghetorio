@@ -59,3 +59,8 @@ data.raw.tool["space-science-pack"].subgroup = "advanced-science"
 data.raw.tool["matter-tech-card"].subgroup = "advanced-science"
 data.raw.tool["advanced-tech-card"].subgroup = "advanced-science"
 data.raw.tool["singularity-tech-card"].subgroup = "advanced-science"
+
+-- change order of autoplace control
+data.raw["autoplace-control"]["rare-metals"].order = "b[rare-metals]"
+data.raw["autoplace-control"]["mineral-water"].order = "c[mineral-water]"
+data.raw["autoplace-control"]["imersite"].order = "d[imersite]"

@@ -69,3 +69,11 @@ data.raw.tool["chemical-science-pack"].subgroup = "basic-science"
 data.raw.tool["production-science-pack"].subgroup = "basic-science"
 data.raw.tool["utility-science-pack"].subgroup = "basic-science"
 data.raw.tool["space-science-pack"].subgroup = "basic-science"
+
+-- change order of autoplace control
+data.raw["autoplace-control"]["iron-ore"].order = "b[iron-ore]"
+data.raw["autoplace-control"]["copper-ore"].order = "b[copper-ore]"
+data.raw["autoplace-control"]["stone"].order = "b[stone]"
+data.raw["autoplace-control"]["coal"].order = "b[coal]"
+data.raw["autoplace-control"]["uranium-ore"].order = "b[uranium-ore]"
+data.raw["autoplace-control"]["crude-oil"].order = "c[crude-oil]"

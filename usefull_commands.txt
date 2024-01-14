@@ -1,6 +1,6 @@
 Unresearch technology:
 
-/c for name, technology in pairs(game.player.force.technologies) do if (name == "landfill") then technology.researched=true end end
+/c for name, technology in pairs(game.player.force.technologies) do if (name == "landfill") then technology.researched=false end end
 
 
 

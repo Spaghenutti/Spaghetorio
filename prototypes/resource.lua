@@ -9,7 +9,7 @@ data:extend({
   {
     type = "resource",
     name = "sp-aluminum-ore",
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+    icon = "__Spaghenutti__/graphics/icons/aluminum-ore-1.png",
     icon_size = 64,
     icon_mipmaps = 4,
     flags = {"placeable-neutral"},
@@ -57,7 +57,7 @@ data:extend({
   {
     type = "resource",
     name = "sp-chromite",
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+    icon = "__Spaghenutti__/graphics/icons/chromite-1.png",
     icon_size = 64,
     icon_mipmaps = 4,
     flags = {"placeable-neutral"},
@@ -105,7 +105,7 @@ data:extend({
   {
     type = "resource",
     name = "sp-limestone",
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+    icon = "__Spaghenutti__/graphics/icons/limestone-1.png",
     icon_size = 64,
     icon_mipmaps = 4,
     flags = {"placeable-neutral"},
@@ -153,7 +153,7 @@ data:extend({
   {
     type = "resource",
     name = "sp-titanium-ore",
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+    icon = "__Spaghenutti__/graphics/icons/titanium-ore-1.png",
     icon_size = 64,
     icon_mipmaps = 4,
     flags = {"placeable-neutral"},
@@ -201,7 +201,7 @@ data:extend({
   {
     type = "resource",
     name = "sp-magnesium-ore",
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+    icon = "__Spaghenutti__/graphics/icons/magnesium-ore-1.png",
     icon_size = 64,
     icon_mipmaps = 4,
     flags = {"placeable-neutral"},
@@ -249,7 +249,7 @@ data:extend({
   {
     type = "resource",
     name = "sp-nickel-ore",
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+    icon = "__Spaghenutti__/graphics/icons/nickel-ore-1.png",
     icon_size = 64,
     icon_mipmaps = 4,
     flags = {"placeable-neutral"},
@@ -297,7 +297,7 @@ data:extend({
   {
     type = "resource",
     name = "sp-spodumene",
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+    icon = "__Spaghenutti__/graphics/icons/spodumene-1.png",
     icon_size = 64,
     icon_mipmaps = 4,
     flags = {"placeable-neutral"},
@@ -345,7 +345,7 @@ data:extend({
   {
     type = "resource",
     name = "sp-tinstone",
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+    icon = "__Spaghenutti__/graphics/icons/tinstone-1.png",
     icon_size = 64,
     icon_mipmaps = 4,
     flags = {"placeable-neutral"},
@@ -393,7 +393,7 @@ data:extend({
   {
     type = "resource",
     name = "sp-tungsten-ore",
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+    icon = "__Spaghenutti__/graphics/icons/tungsten-ore-1.png",
     icon_size = 64,
     icon_mipmaps = 4,
     flags = {"placeable-neutral"},
@@ -441,7 +441,7 @@ data:extend({
   {
     type = "resource",
     name = "sp-zinc-ore",
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+    icon = "__Spaghenutti__/graphics/icons/zinc-ore-1.png",
     icon_size = 64,
     icon_mipmaps = 4,
     flags = {"placeable-neutral"},
@@ -489,7 +489,7 @@ data:extend({
   {
     type = "resource",
     name = "sp-zirconium-ore",
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+    icon = "__Spaghenutti__/graphics/icons/zirconium-ore-1.png",
     icon_size = 64,
     icon_mipmaps = 4,
     flags = {"placeable-neutral"},

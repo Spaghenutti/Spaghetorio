@@ -1799,7 +1799,6 @@ data:extend({
     ingredients =
     {
       {"iron-plate", 20},
-      {"sp-flange", 2},
       {"sp-valve", 2},
       {"sp-copper-tube", 6},
       {"sp-bolts", 2},

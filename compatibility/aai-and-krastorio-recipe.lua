@@ -691,6 +691,16 @@ util.change_recipe("radar",
   {{"steel-beam", 12}, {"steel-plate", 32}, {"sp-bolts", 36}, {"automation-core", 20}, {"electronic-circuit", 40}},
   12,
   24)
+util.change_recipe("storage-tank",
+  {{"sp-copper-tube", 10}, {"iron-plate", 16}, {"sp-bolts", 10}, {"sp-valve", 4}},
+  {{"sp-copper-tube", 20}, {"iron-plate", 32}, {"sp-bolts", 30}, {"sp-valve", 6}},
+  4,
+  8)
+util.change_recipe("pump",
+  {{"steel-plate", 2}, {"sp-bolts", 4}, {"sp-valve", 2}, {"electric-motor", 2}},
+  {{"steel-plate", 4}, {"sp-bolts", 8}, {"sp-valve", 4}, {"electric-motor", 4}},
+  2,
+  4)
 
 -- AAI Industries
 util.change_recipe("burner-turbine",
