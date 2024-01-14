@@ -715,9 +715,9 @@ util.change_recipe("burner-lab",
   16)
 util.change_recipe("engine-unit",
   {{"sp-connecting-rod", 8}, {"steel-plate", 2}, {"sp-bolts", 6}, {"steel-gear-wheel", 4}},
-  {{"sp-connecting-rod", 12}, {"steel-plate", 6}, {"sp-bolts", 16}, {"steel-gear-wheel", 8}},
-  8,
-  16)
+  {{"sp-connecting-rod", 12}, {"steel-plate", 4}, {"sp-bolts", 16}, {"steel-gear-wheel", 8}},
+  2.4,
+  4.8)
 
 -- Krastorio
 util.change_recipe("kr-wind-turbine",
@@ -745,3 +745,7 @@ util.change_recipe("kr-electrolysis-plant",
   {{"iron-beam", 72}, {"sp-bolts", 160}, {"glass", 48}, {"engine-unit", 12}, {"electronic-circuit", 12}},
   20,
   40)
+
+
+-- Change category
+data.raw.recipe["sp-aluminum-sheet"].category = "electrolysis"

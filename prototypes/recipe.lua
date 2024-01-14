@@ -6,7 +6,7 @@ data:extend({
     name = "sp-alumina",  -- #ForRegEx# - recipe
     category = "smelting",
     enabled = false,
-    energy_required = 4,  -- time in seconds to make the item
+    energy_required = 2,  -- time in seconds to make the item
     ingredients = {
       {type = "item", name = "sp-aluminum-ore", amount = 3}
     },
@@ -673,7 +673,7 @@ data:extend({
     energy_required = 1.6,  -- time in seconds to make the item
     ingredients = {
       {type = "item", name = "steel-plate", amount = 2},
-      {type = "item", name = "sp-bolts", amount = 2}
+      {type = "item", name = "sp-bronze-rod", amount = 2}
     },
     results = {
       {type = "item", name = "sp-connecting-rod", amount = 1}
@@ -699,7 +699,7 @@ data:extend({
     enabled = false,
     energy_required = 2.4,  -- time in seconds to make the item
     ingredients = {
-      {type = "item", name = "steel-plate", amount = 3},
+      {type = "item", name = "sp-bronze-rod", amount = 3},
       {type = "item", name = "sp-chromium-plate", amount = 2},
       {type = "fluid", name = "lubricant", amount = 5}
     },
@@ -1189,7 +1189,7 @@ data:extend({
     enabled = false,
     energy_required = 4,  -- time in seconds to make the item
     ingredients = {
-      {type = "item", name = "sp-stainless-steel", amount = 2},
+      {type = "item", name = "sp-bronze-rod", amount = 2},
       {type = "item", name = "sp-bolts", amount = 1}
     },
     results = {

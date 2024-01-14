@@ -33,6 +33,10 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "sp-bolts"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-spring"
       }
     },
     unit =
@@ -206,3 +210,7 @@ data:extend({
     order = "a-h-a"
   },
 })
+
+
+table.insert(data.raw.technology["fluid-handling"].prerequisites, "sp-basic-alloy")
+table.insert(data.raw.technology["fluid-handling"].effects, {type = "unlock-recipe",recipe = "sp-valve"})

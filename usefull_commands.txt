@@ -1,0 +1,34 @@
+Unresearch technology:
+
+/c for name, technology in pairs(game.player.force.technologies) do if (name == "landfill") then technology.researched=true end end
+
+
+
+Add new resource patch
+This creates a new 11×11 patch of resources, centered on the player character, where the ground is not water. The patch it creates is perfectly square but it randomizes the amount similar to natural generation, with fewer ore at the edges and more ore in the center. The default numbers result in a patch with 2500-3000 ore.
+
+If you want a larger patch, change "local size = 5" to a larger number. A larger patch will have exponentially more ore. Entering a number above 30 is not recommended.
+
+If you want a richer patch, change "local density = 10" to a larger number. Entering a very large number shouldn't hurt anything but you probably don't need to go above 100.
+
+To choose which resource is spawned, change "stone" near the bottom to "iron-ore", "copper-ore", "coal", or "uranium-ore".
+
+/c local surface=game.player.surface
+local ore=nil
+local size=19
+local density=50
+for y=-size, size do
+	for x=-size, size do
+		a=(size+1-math.abs(x))*10
+		b=(size+1-math.abs(y))*10
+		if a<b then
+			ore=math.random(a*density-a*(density-8), a*density+a*(density-8))
+		end
+		if b<a then
+			ore=math.random(b*density-b*(density-8), b*density+b*(density-8))
+		end
+		if surface.get_tile(game.player.position.x+x, game.player.position.y+y).collides_with("ground-tile") then
+			surface.create_entity({name="sp-aluminum-ore", amount=ore, position={game.player.position.x+x, game.player.position.y+y}})
+		end
+	end
+end
