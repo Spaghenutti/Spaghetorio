@@ -784,3 +784,4 @@ util.change_recipe_ingredients("kr-electrolysis-plant",
 
 -- Change category
 data.raw.recipe["sp-aluminum-sheet"].category = "electrolysis"
+data.raw.recipe["sp-zinc-plate"].category = "electrolysis"

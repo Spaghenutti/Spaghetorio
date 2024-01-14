@@ -1,3 +1,5 @@
+local util = require("data-util")
+
 data:extend({
   {
     type = "technology",
@@ -51,7 +53,8 @@ data:extend({
     type = "technology",
     name = "sp-tin-processing",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/tin-and-lead.png",
+    -- icon = "__Spaghenutti__/graphics/hr-icons/tin-and-lead.png",
+    icons = util.combine_two_icons("__Spaghenutti__/graphics/hr-icons/tin-ingot.png", 256, "__Spaghenutti__/graphics/hr-icons/lead-slab.png", 256),
     effects =
     {
       {

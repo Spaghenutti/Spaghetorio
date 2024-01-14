@@ -16,23 +16,6 @@ function data_util.change_item_icon(name, icon, icon_size, icon_mipmaps)
   data.raw.item[name].icon_mipmaps = icon_mipmaps
 end
 
-function data_util.overlay_small_icon(icon, icon_size, small_icon, small_icon_size)
-  icons = {
-    { icon = icon, icon_size = icon_size },
-    { icon = small_icon, icon_size = small_icon_size, scale = 0.22, shift = { 8, -8 }}
-  }
-  return icons
-end
-
-function data_util.overlay_two_small_icons(icon, icon_size, small_icon_1, small_icon_1_size, small_icon_2, small_icon_2_size)
-  icons = {
-    { icon = icon, icon_size = icon_size },
-    { icon = small_icon_1, icon_size = small_icon_1_size, scale = 0.22, shift = { 8, -8 }},
-    { icon = small_icon_2, icon_size = small_icon_2_size, scale = 0.22, shift = { -8, -8 }}
-  }
-  return icons
-end
-
 function data_util.change_recipe_ingredients(name, normal_ingredients, expensive_ingredients, normal_energy, expensive_energy)
   data.raw.recipe[name].ingredients = normal_ingredients
   if not (normal_energy == nil) then
@@ -92,6 +75,32 @@ function data_util.resize_building(type, name, collision_box, selection_box, new
   building.collision_box = collision_box
   building.selection_box = selection_box
   data:extend({building})
+end
+
+function data_util.overlay_small_icon(icon, icon_size, small_icon, small_icon_size)
+  icons = {
+    {icon = icon, icon_size = icon_size},
+    {icon = small_icon, icon_size = small_icon_size, scale = 0.22, shift = {8, -8}}
+  }
+  return icons
+end
+
+function data_util.overlay_two_small_icons(icon, icon_size, small_icon_1, small_icon_1_size, small_icon_2, small_icon_2_size)
+  icons = {
+    {icon = icon, icon_size = icon_size},
+    {icon = small_icon_1, icon_size = small_icon_1_size, scale = 0.22, shift = {8, -8}},
+    {icon = small_icon_2, icon_size = small_icon_2_size, scale = 0.22, shift = {-8, -8}}
+  }
+  return icons
+end
+
+function data_util.combine_two_icons(icon_1, icon_1_size, icon_2, icon_2_size)
+  icons = {
+    {icon = "__Spaghenutti__/graphics/hr-icons/background.png", icon_size = 256, scale = icon_1_size/512},
+    {icon = icon_1, icon_size = icon_1_size, scale = 0.35, shift = {-5*icon_1_size/64, -5*icon_1_size/64}},
+    {icon = icon_2, icon_size = icon_2_size, scale = 0.35, shift = {5*icon_2_size/64, 5*icon_2_size/64}}
+  }
+  return icons
 end
 
 return data_util

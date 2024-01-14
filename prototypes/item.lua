@@ -329,7 +329,22 @@ data:extend({
   ------------------------------------------------------------------------------
   -- Subgroup processed-resource --
   ------------------------------------------------------------------------------
-
+  {
+    type = "item",
+    name = "sp-zinc-sulfate",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/zinc-sulfate-1.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    pictures = {
+      { size = 64, filename = "__Spaghenutti__/graphics/icons/zinc-sulfate-1.png", scale = 0.25, mipmap_count = 4},
+      { size = 64, filename = "__Spaghenutti__/graphics/icons/zinc-sulfate-2.png", scale = 0.25, mipmap_count = 4},
+      { size = 64, filename = "__Spaghenutti__/graphics/icons/zinc-sulfate-3.png", scale = 0.25, mipmap_count = 4},
+      { size = 64, filename = "__Spaghenutti__/graphics/icons/zinc-sulfate-4.png", scale = 0.25, mipmap_count = 4}
+    },
+    subgroup = "processed-resource",
+    order = "[zinc-sulfate]",
+    stack_size = 200
+  },
   {
     type = "item",
     name = "sp-salt",  -- #ForRegEx# - item
@@ -338,7 +353,7 @@ data:extend({
     icon_mipmaps = 4,
     subgroup = "processed-resource",
     order = "[salt]",
-    stack_size = 100
+    stack_size = 200
   },
   {
     type = "item",
@@ -348,7 +363,7 @@ data:extend({
     icon_mipmaps = 4,
     subgroup = "processed-resource",
     order = "[zircon]",
-    stack_size = 100
+    stack_size = 200
   },
   {
     type = "item",
@@ -357,7 +372,7 @@ data:extend({
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "processed-resource",
     order = "[cobalt-sulfate]",
-    stack_size = 50
+    stack_size = 200
   },
   {
     type = "item",
@@ -367,7 +382,7 @@ data:extend({
     icon_mipmaps = 4,
     subgroup = "processed-resource",
     order = "[alumina]",
-    stack_size = 100
+    stack_size = 200
   },
   {
     type = "item",
@@ -377,7 +392,7 @@ data:extend({
     scale = 0.25,
     subgroup = "processed-resource",
     order = "[graphite]",
-    stack_size = 100
+    stack_size = 200
   },
   {
     type = "item",
@@ -387,7 +402,7 @@ data:extend({
     scale = 0.25,
     subgroup = "processed-resource",
     order = "[calcium-carbonate]",
-    stack_size = 100
+    stack_size = 200
   },
   {
     type = "item",
@@ -397,7 +412,7 @@ data:extend({
     scale = 0.25,
     subgroup = "processed-resource",
     order = "[calcium]",
-    stack_size = 100
+    stack_size = 200
   },
   {
     type = "item",
@@ -407,7 +422,7 @@ data:extend({
     scale = 0.25,
     subgroup = "processed-resource",
     order = "[sodium]",
-    stack_size = 100
+    stack_size = 200
   },
   {
     type = "item",
@@ -417,7 +432,7 @@ data:extend({
     scale = 0.25,
     subgroup = "processed-resource",
     order = "[stibnite]",
-    stack_size = 100
+    stack_size = 200
   },
   {
     type = "item",
@@ -427,7 +442,7 @@ data:extend({
     scale = 0.25,
     subgroup = "processed-resource",
     order = "[magnesium-chloride]",
-    stack_size = 100
+    stack_size = 200
   },
   {
     type = "item",
@@ -437,7 +452,7 @@ data:extend({
     scale = 0.25,
     subgroup = "processed-resource",
     order = "[silica]",
-    stack_size = 100
+    stack_size = 200
   },
   {
     type = "item",
@@ -447,7 +462,7 @@ data:extend({
     scale = 0.25,
     subgroup = "processed-resource",
     order = "[titanium-chloride]",
-    stack_size = 100
+    stack_size = 200
   },
   {
     type = "item",
@@ -457,7 +472,7 @@ data:extend({
     scale = 0.25,
     subgroup = "processed-resource",
     order = "[titanium-sponge]",
-    stack_size = 100
+    stack_size = 200
   },
   {
     type = "item",
@@ -467,7 +482,7 @@ data:extend({
     scale = 0.25,
     subgroup = "processed-resource",
     order = "[ammonium-paratungstate]",
-    stack_size = 100
+    stack_size = 200
   },
   {
     type = "item",
@@ -477,7 +492,7 @@ data:extend({
     scale = 0.25,
     subgroup = "processed-resource",
     order = "[tungsten-powder]",
-    stack_size = 100
+    stack_size = 200
   },
   {
     type = "item",
@@ -487,7 +502,7 @@ data:extend({
     scale = 0.25,
     subgroup = "processed-resource",
     order = "[gold]",
-    stack_size = 100
+    stack_size = 50
   },
   {
     type = "item",
@@ -497,7 +512,7 @@ data:extend({
     scale = 0.25,
     subgroup = "processed-resource",
     order = "[silver]",
-    stack_size = 100
+    stack_size = 50
   },
   {
     type = "item",
@@ -507,7 +522,7 @@ data:extend({
     scale = 0.25,
     subgroup = "processed-resource",
     order = "[platinum]",
-    stack_size = 100
+    stack_size = 50
   },
   {
     type = "item",
@@ -517,7 +532,7 @@ data:extend({
     scale = 0.25,
     subgroup = "processed-resource",
     order = "[palladium]",
-    stack_size = 100
+    stack_size = 50
   },
   {
     type = "item",
@@ -527,7 +542,7 @@ data:extend({
     scale = 0.25,
     subgroup = "processed-resource",
     order = "[iridium]",
-    stack_size = 100
+    stack_size = 50
   },
   {
     type = "item",
@@ -537,7 +552,7 @@ data:extend({
     scale = 0.25,
     subgroup = "processed-resource",
     order = "[yittrium]",
-    stack_size = 100
+    stack_size = 50
   },
   {
     type = "item",
@@ -547,7 +562,7 @@ data:extend({
     scale = 0.25,
     subgroup = "processed-resource",
     order = "[lanthanum]",
-    stack_size = 100
+    stack_size = 50
   },
   {
     type = "item",
@@ -557,7 +572,7 @@ data:extend({
     scale = 0.25,
     subgroup = "processed-resource",
     order = "[cerium]",
-    stack_size = 100
+    stack_size = 50
   },
   {
     type = "item",
@@ -567,7 +582,7 @@ data:extend({
     scale = 0.25,
     subgroup = "processed-resource",
     order = "[neodymium]",
-    stack_size = 100
+    stack_size = 200
   },
   {
     type = "item",
@@ -577,7 +592,7 @@ data:extend({
     scale = 0.25,
     subgroup = "processed-resource",
     order = "[niobium-powder]",
-    stack_size = 100
+    stack_size = 200
   },
   {
     type = "item",
@@ -587,7 +602,7 @@ data:extend({
     scale = 0.25,
     subgroup = "processed-resource",
     order = "[fluorspar]",
-    stack_size = 100
+    stack_size = 200
   },
   {
     type = "item",
@@ -597,7 +612,7 @@ data:extend({
     scale = 0.25,
     subgroup = "processed-resource",
     order = "[fluorine]",
-    stack_size = 100
+    stack_size = 200
   },
   {
     type = "item",
@@ -607,7 +622,7 @@ data:extend({
     scale = 0.25,
     subgroup = "processed-resource",
     order = "[sodium-carbonate]",
-    stack_size = 100
+    stack_size = 200
   },
   {
     type = "item",
@@ -617,7 +632,7 @@ data:extend({
     scale = 0.25,
     subgroup = "processed-resource",
     order = "[phosphorus]",
-    stack_size = 100
+    stack_size = 200
   },
   {
     type = "item",
@@ -627,7 +642,7 @@ data:extend({
     scale = 0.25,
     subgroup = "processed-resource",
     order = "[lithium-oxide]",
-    stack_size = 100
+    stack_size = 200
   },
   {
     type = "item",
@@ -643,7 +658,7 @@ data:extend({
     },
     subgroup = "processed-resource",
     order = "[plutonium-239]",
-    stack_size = 100
+    stack_size = 50
   },
   {
     type = "item",
@@ -659,7 +674,7 @@ data:extend({
     },
     subgroup = "processed-resource",
     order = "[plutonium-240]",
-    stack_size = 100
+    stack_size = 50
   },
   {
     type = "item",
@@ -669,7 +684,7 @@ data:extend({
     scale = 0.25,
     subgroup = "processed-resource",
     order = "[cobalt-billet]",
-    stack_size = 100
+    stack_size = 200
   },
   {
     type = "item",

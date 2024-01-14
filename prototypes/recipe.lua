@@ -84,7 +84,7 @@ data:extend({
     name = "sp-calcium-carbonate",  -- #ForRegEx# - recipe
     icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
     icon_size = 64,
-    mip_mapts = 4,
+    mip_maps = 4,
     category = "chemistry",
     subgroup = "processed-resource",
     enabled = false,
@@ -102,7 +102,7 @@ data:extend({
     name = "sp-calcium-and-fluorine",  -- #ForRegEx# - recipe
     icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
     icon_size = 64,
-    mip_mapts = 4,
+    mip_maps = 4,
     category = "chemistry",
     subgroup = "processed-resource",
     enabled = false,
@@ -184,7 +184,7 @@ data:extend({
     name = "sp-titanium-sponge",  -- #ForRegEx# - recipe
     icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
     icon_size = 64,
-    mip_mapts = 4,
+    mip_maps = 4,
     category = "crafting",
     subgroup = "raw-resource",
     enabled = false,
@@ -267,9 +267,10 @@ data:extend({
   {
     type = "recipe",
     name = "sp-tin-and-lead",  -- #ForRegEx# - recipe
-    icon = "__Spaghenutti__/graphics/icons/tin-and-lead.png",
+    -- icon = "__Spaghenutti__/graphics/icons/tin-and-lead.png",
+    icons = util.combine_two_icons("__Spaghenutti__/graphics/icons/tin-ingot.png", 64, "__Spaghenutti__/graphics/icons/lead-slab.png", 64),
     icon_size = 64,
-    mip_mapts = 4,
+    mip_maps = 4,
     category = "smelting",
     subgroup = "raw-material",
     enabled = false,
@@ -325,20 +326,34 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "sp-zinc-sulfate",  -- #ForRegEx# - recipe
+    category = "smelting",
+    enabled = false,
+    energy_required = 3.6,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-zinc-ore", amount = 2}
+    },
+    results = {
+      {type = "item", name = "sp-zinc-sulfate", amount = 3}
+    }
+  },
+  {
+    type = "recipe",
     name = "sp-zinc-plate",  -- #ForRegEx# - recipe
-    icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
+    icon = "__Spaghenutti__/graphics/icons/zinc-plate.png",
+    -- icons = util.combine_two_icons("__Spaghenutti__/graphics/icons/zinc-plate.png", 64, "__base__/graphics/icons/sulfur.png", 64),
     icon_size = 64,
-    mip_mapts = 4,
-    category = "chemistry",
+    mip_maps = 4,
+    category = "smelting",
     subgroup = "raw-resource",
     enabled = false,
     energy_required = 4,  -- time in seconds to make the item
     ingredients = {
-      {type = "item", name = "sp-zinc-ore", amount = 1}
+      {type = "item", name = "sp-zinc-sulfate", amount = 1}
     },
     results = {
       {type = "item", name = "sp-zinc-plate", amount = 1},
-      {type = "item", name = "sulfur", amount = 1}
+      {type = "item", name = "sulfur", probability=0.05, amount = 1}
     }
   },
   {
@@ -439,7 +454,7 @@ data:extend({
     name = "sp-chromium-plate",  -- #ForRegEx# - recipe
     icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
     icon_size = 64,
-    mip_mapts = 4,
+    mip_maps = 4,
     category = "smelting",
     subgroup = "raw-resource",
     enabled = false,
@@ -457,7 +472,7 @@ data:extend({
     name = "sp-nickel-ingot",  -- #ForRegEx# - recipe
     icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
     icon_size = 64,
-    mip_mapts = 4,
+    mip_maps = 4,
     category = "smelting",
     subgroup = "raw-resource",
     enabled = false,
@@ -475,7 +490,7 @@ data:extend({
     name = "sp-silver-palladium",  -- #ForRegEx# - recipe
     icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
     icon_size = 64,
-    mip_mapts = 4,
+    mip_maps = 4,
     category = "crafting",
     subgroup = "raw-resource",
     enabled = false,
@@ -494,7 +509,7 @@ data:extend({
     name = "sp-palladium",  -- #ForRegEx# - recipe
     icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
     icon_size = 64,
-    mip_mapts = 4,
+    mip_maps = 4,
     category = "crafting",
     subgroup = "raw-resource",
     enabled = false,
@@ -1259,7 +1274,7 @@ data:extend({
     name = "sp-lithium-oxide",  -- #ForRegEx# - recipe
     icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
     icon_size = 64,
-    mip_mapts = 4,
+    mip_maps = 4,
     category = "smelting",
     subgroup = "raw-resource",
     enabled = false,
@@ -2271,7 +2286,7 @@ if not mods["Krastorio2"] then
       name = "sp-used-up-fuel-rod-reprocessing",  -- #ForRegEx# - recipe
       icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
       icon_size = 64,
-      mip_mapts = 4,
+      mip_maps = 4,
       category = "chemistry",
       subgroup = "raw-resource",
       enabled = false,
