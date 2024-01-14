@@ -300,6 +300,20 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "sp-brass",  -- #ForRegEx# - recipe
+    category = "smelting",
+    enabled = false,
+    energy_required = 6,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-zinc-plate", amount = 2},
+      {type = "item", name = "copper-plate", amount = 3},
+    },
+    results = {
+      {type = "item", name = "sp-brass", amount = 5}
+    }
+  },
+  {
+    type = "recipe",
     name = "sp-zircon",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,

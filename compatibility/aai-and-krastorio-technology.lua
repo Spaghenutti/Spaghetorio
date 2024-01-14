@@ -132,16 +132,19 @@ data.raw.technology["sp-coal-processing"].effects = {
 
 -- krastorio technology changes
 data.raw.technology["electronics"].prerequisites = {"automation", "automation-science-pack", "sp-basic-solder"}
+
 data.raw.technology["kr-crusher"].prerequisites = {"electricity"}
 data.raw.technology["kr-crusher"].unit = {count = 30,
   ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}},
   time = 30
 }
+
 data.raw.technology["steel-processing"].prerequisites = {"sp-coal-processing"}
 data.raw.technology["steel-processing"].effects = {
   {type = "unlock-recipe", recipe = "steel-plate"},
   {type = "unlock-recipe", recipe = "steel-chest"}
 }
+
 data.raw.technology["landfill"].effects = {
   {type = "unlock-recipe", recipe = "landfill"},
   {type = "unlock-recipe", recipe = "landfill-2"},
@@ -149,8 +152,11 @@ data.raw.technology["landfill"].effects = {
   {type = "unlock-recipe", recipe = "sp-landfill-from-limestone"},
   {type = "unlock-recipe", recipe = "sp-landfill-from-iron-ore"}
 }
+
 data.raw.technology["kr-fluids-chemistry"].prerequisites = {"logistic-science-pack", "engine"}
 data.raw.technology["kr-fluids-chemistry"].unit = {count = 50, ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}}, time = 15}
+
+table.insert(data.raw.technology["kr-steel-fluid-tanks"].prerequisites, "sp-brass")
 
 -- aai industry technology changes
 data.raw.technology["engine"].prerequisites = {"sp-steel-machining"}

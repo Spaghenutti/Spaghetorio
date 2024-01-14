@@ -60,6 +60,7 @@ data.raw.item["iron-stick"].order = "iron[iron-stick]"
 
 -- change stack sizes
 data.raw.item["copper-cable"].stack_size = 400
+data.raw.item["chemical-plant"].stack_size = 50
 
 -- Assing subgroup to science items
 data.raw.tool["automation-science-pack"].subgroup = "basic-science"
