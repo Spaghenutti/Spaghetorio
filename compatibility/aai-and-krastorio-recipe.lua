@@ -262,7 +262,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-sodium-and-chlorine",  -- #ForRegEx# - recipe
-    icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
+    icons = util.combine_two_icons("__Spaghenutti__/graphics/icons/sodium.png", 64, "__Krastorio2Assets__/icons/fluids/chlorine.png", 64),
     icon_size = 64,
     mip_mapts = 4,
     category = "chemistry",
@@ -286,7 +286,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-magnesium-slab",  -- #ForRegEx# - recipe
-    icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
+    icon = "__Spaghenutti__/graphics/icons/magnesium-slab.png",
     icon_size = 64,
     mip_mapts = 4,
     category = "chemistry",

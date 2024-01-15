@@ -161,4 +161,3 @@ table.insert(data.raw.technology["kr-steel-fluid-tanks"].prerequisites, "sp-bras
 -- aai industry technology changes
 data.raw.technology["engine"].prerequisites = {"sp-steel-machining"}
 data.raw.technology["medium-electric-pole"].prerequisites = {"sp-aluminum-machining"}
-

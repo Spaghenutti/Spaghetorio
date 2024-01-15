@@ -1,5 +1,10 @@
 local util = require("data-util")
 
+-- TODO:
+--  - add uses to:
+--    - "sp-calcium"
+--    - "sp-liquid-sodium"
+
 data:extend({
   {
     type = "recipe",
@@ -100,7 +105,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-calcium-and-fluorine",  -- #ForRegEx# - recipe
-    icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
+    icons = util.combine_two_icons("__Spaghenutti__/graphics/icons/fluorine.png", 64, "__Spaghenutti__/graphics/icons/calcium.png", 64),
     icon_size = 64,
     mip_maps = 4,
     category = "chemistry",
@@ -156,14 +161,14 @@ data:extend({
   {
     type = "recipe",
     name = "sp-magnesium-chloride",  -- #ForRegEx# - recipe
-    category = "chemistry",
+    category = "smelting",
     enabled = false,
     energy_required = 4,  -- time in seconds to make the item
     ingredients = {
       {type = "item", name = "sp-magnesium-ore", amount = 3}
     },
     results = {
-      {type = "item", name = "sp-magnesium-chloride", amount = 3}
+      {type = "item", name = "sp-magnesium-chloride", amount = 1}
     }
   },
   {
@@ -355,7 +360,6 @@ data:extend({
     type = "recipe",
     name = "sp-zinc-plate",  -- #ForRegEx# - recipe
     icon = "__Spaghenutti__/graphics/icons/zinc-plate.png",
-    -- icons = util.combine_two_icons("__Spaghenutti__/graphics/icons/zinc-plate.png", 64, "__base__/graphics/icons/sulfur.png", 64),
     icon_size = 64,
     mip_maps = 4,
     category = "smelting",
@@ -452,19 +456,6 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-cobalt-billet",  -- #ForRegEx# - recipe
-    category = "smelting",
-    enabled = false,
-    energy_required = 3.2,  -- time in seconds to make the item
-    ingredients = {
-      {type = "item", name = "sp-cobalt-sulfate", amount = 1}
-    },
-    results = {
-      {type = "item", name = "sp-cobalt-billet", amount = 1}
-    }
-  },
-  {
-    type = "recipe",
     name = "sp-chromium-plate",  -- #ForRegEx# - recipe
     icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
     icon_size = 64,
@@ -479,6 +470,37 @@ data:extend({
     results = {
       {type = "item", name = "sp-chromium-plate", amount = 2},
       {type = "item", name = "iron-plate", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-cobalt-sulfate",  -- #ForRegEx# - recipe
+    icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
+    icon_size = 256,
+    scale = 0.25,
+    category = "crafting",
+    subgroup = "raw-resource",
+    enabled = false,
+    energy_required = 0.4,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-nickel-ore", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-cobalt-sulfate", probability = 0.03, amount = 1},
+      {type = "item", name = "sp-sand", probability = 0.97, amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-cobalt-billet",  -- #ForRegEx# - recipe
+    category = "smelting",
+    enabled = false,
+    energy_required = 3.2,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-cobalt-sulfate", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-cobalt-billet", amount = 1}
     }
   },
   {
@@ -1861,6 +1883,34 @@ if not mods["Krastorio2"] then
     },
     {
       type = "recipe",
+      name = "sp-glass-from-calcium",  -- #ForRegEx# - recipe
+      category = "smelting",
+      enabled = false,
+      energy_required = 2.4,  -- time in seconds to make the item
+      ingredients = {
+        {type = "item", name = "sp-sand", amount = 3},
+        {type = "item", name = "sp-caclium", amount = 1}
+      },
+      results = {
+        {type = "item", name = "sp-glass", amount = 1}
+      }
+    },
+    {
+      type = "recipe",
+      name = "sp-catalyst-from-calcium-magnesium",  -- #ForRegEx# - recipe
+      category = "crafting",
+      enabled = false,
+      energy_required = 3.2,  -- time in seconds to make the item
+      ingredients = {
+        {type = "item", name = "sp-magnesium-slab", amount = 3},
+        {type = "item", name = "sp-calcium", amount = 3}
+      },
+      results = {
+        {type = "item", name = "sp-catalyst", amount = 1}
+      }
+    },
+    {
+      type = "recipe",
       name = "sp-gold",  -- #ForRegEx# - recipe
       icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
       icon_size = 256,
@@ -1895,24 +1945,6 @@ if not mods["Krastorio2"] then
         {type = "item", name = "sp-sand", probability = 0.9807, amount = 3},
         {type = "item", name = "sp-platinum", probability = 0.019, amount = 1},
         {type = "item", name = "sp-iridium", probability = 0.0003, amount = 1}
-      }
-    },
-    {
-      type = "recipe",
-      name = "sp-cobalt-sulfate",  -- #ForRegEx# - recipe
-      icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
-      icon_size = 256,
-      scale = 0.25,
-      category = "crafting",
-      subgroup = "raw-resource",
-      enabled = false,
-      energy_required = 0.4,  -- time in seconds to make the item
-      ingredients = {
-        {type = "item", name = "sp-nickel-ore", amount = 1}
-      },
-      results = {
-        {type = "item", name = "sp-cobalt-sulfate", probability = 0.03, amount = 1},
-        {type = "item", name = "sp-sand", probability = 0.97, amount = 1}
       }
     },
     {
@@ -2085,13 +2117,14 @@ if not mods["Krastorio2"] then
       name = "sp-lens",  -- #ForRegEx# - recipe
       category = "crafting-with-fluid",
       enabled = false,
-      energy_required = 2,  -- time in seconds to make the item
+      energy_required = 4,  -- time in seconds to make the item
       ingredients = {
-        {type = "item", name = "sp-silica", amount = 1},
-        {type = "fluid", name = "sp-oxygen", amount = 40}
+        {type = "item", name = "sp-silica", amount = 2},
+        {type = "fluid", name = "sp-oxygen", amount = 40},
+        {type = "item", name = "sp-calcium", amount = 1},
       },
       results = {
-        {type = "item", name = "sp-lens", amount = 1}
+        {type = "item", name = "sp-lens", amount = 2}
       }
     },
     {
@@ -2333,6 +2366,23 @@ if not mods["Krastorio2"] then
         {type = "item", name = "uranium-235", probability = 0.03, amount = 1},
         {type = "item", name = "sp-plutonium-239", probability = 0.6, amount = 1},
         {type = "fluid", name = "sp-deuterium", amount = 10}
+      }
+    },
+    {
+      type = "recipe",
+      name = "sp-magnesium-slab",  -- #ForRegEx# - recipe
+      icon = "__Spaghenutti__/graphics/icons/magnesium-slab.png",
+      icon_size = 256,
+      scale = 0.25,
+      category = "chemistry",
+      enabled = false,
+      energy_required = 4,  -- time in seconds to make the item
+      ingredients = {
+        {type = "item", name = "sp-magnesium-chloride", amount = 2}
+      },
+      results = {
+        {type = "item", name = "sp-magnesium-slab", amount = 2},
+        {type = "fluid", name = "sp-chloride", amount = 10}
       }
     },
   })
