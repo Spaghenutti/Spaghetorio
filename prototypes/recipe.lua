@@ -1,10 +1,87 @@
 local util = require("data-util")
 
 -- TODO:
+--  - remove:
+--    - "rare-metals" (only k2)
+--  - add recipes for:
+--    - "sp-plutonium-240"
+--    - "sp-plutonium-239"
+--    - "sp-stibnite"
+--    - "sp-tellurium"
+--    - "sp-rubber"
+--    - "sp-urea"
+--    - "sp-methyl-tert-butyl-ether" (fluid)
+--    - "sp-phosphoric-acid"
+--    - "sp-carbon-fiber"
+--    - "sp-monocrystal"
+--    - "sp-quasicrystal"
+--    - "sp-heavy-bearing"
+--    - 
+--    - 
+--    - 
+--    - 
+--    - 
 --  - add uses to:
 --    - "sp-calcium"
 --    - "sp-liquid-sodium"
-
+--    - "sp-stibnite"
+--    - "sp-tellurium"
+--    - "sp-zircon"
+--    - "sp-platinum"
+--    - "sp-palladium"
+--    - "sp-niobium-powder"
+--    - "sp-niobium"
+--    - "sp-lithium-oxide"
+--    - "sp-iridium"
+--    - "sp-lanthanum"
+--    - "sp-gold"
+--    - "sp-fluorspar"
+--    - "sp-cobalt-billet"
+--    - "sp-chromium-plate"
+--    - "sp-lead-slab"
+--    - "sp-tantalum-billet"
+--    - "sp-zinc-plate"
+--    - "sp-zirconia"
+--    - "sp-zirconium-rod"
+--    - "stone-tablet" (only k2)
+--    - "sp-rubber"
+--    - "sp-urea"
+--    - "sp-methyl-tert-butyl-ether" (fluid)
+--    - "sp-phosphoric-acid"
+--    - "sp-brass"
+--    - "sp-duralumin"
+--    - "sp-niobium-steel"
+--    - "sp-niobium-tin"
+--    - "sp-carbon-fiber"
+--    - "sp-carbon-nanotubes"
+--    - "sp-graphene"
+--    - "sp-diamond"
+--    - "sp-titanium-carbide"
+--    - "sp-titanium-nitride"
+--    - "sp-monocrystal"
+--    - "sp-quasicrystal"
+--    - "sp-ceramics"
+--    - "sp-crucible"
+--    - "sp-filter"
+--    - "sp-glass-fiber"
+--    - "sp-heat-resistant-tile"
+--    - "sp-heavy-bearing"
+--    - "sp-kevlar"
+--    - "sp-magnet"
+--    - "sp-neodymium-magnet"
+--    - 
+--    - 
+--    - 
+--    - 
+--    - 
+--    - 
+--    - 
+--    - 
+--    - 
+--    - 
+--    - 
+--    - 
+--    - 
 data:extend({
   {
     type = "recipe",

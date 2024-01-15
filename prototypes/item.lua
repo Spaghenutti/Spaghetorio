@@ -678,16 +678,6 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-cobalt-billet",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/icons/cobalt-billet.png",
-    icon_size = 64,
-    scale = 0.25,
-    subgroup = "processed-resource",
-    order = "[cobalt-billet]",
-    stack_size = 200
-  },
-  {
-    type = "item",
     name = "sp-tellurium",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/icons/tellurium-1.png",
     icon_size = 64,
@@ -814,6 +804,16 @@ data:extend({
     subgroup = "raw-material",
     order = "[lead-slab]",
     stack_size = 100
+  },
+  {
+    type = "item",
+    name = "sp-cobalt-billet",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/cobalt-billet.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "raw-material",
+    order = "[cobalt-billet]",
+    stack_size = 200
   },
   {
     type = "item",

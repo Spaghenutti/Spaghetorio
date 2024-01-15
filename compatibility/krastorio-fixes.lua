@@ -18,6 +18,7 @@ data.raw.item["sand"].subgroup = "processed-resource"
 data.raw.item["imersite-powder"].subgroup = "processed-resource"
 data.raw.item["lithium-chloride"].subgroup = "processed-resource"
 data.raw.item["lithium"].subgroup = "processed-resource"
+data.raw.item["biomass"].subgroup = "processed-resource"
 
 data.raw.item["fertilizer"].subgroup = "chemical-product"
 

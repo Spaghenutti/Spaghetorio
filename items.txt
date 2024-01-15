@@ -286,6 +286,8 @@ Intermediates
   - propeller (for drones i guess)
   + transformer
 
+  - nuclear-waste
+
 
 Chemicals
   - ammonia
