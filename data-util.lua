@@ -94,11 +94,41 @@ function data_util.overlay_two_small_icons(icon, icon_size, small_icon_1, small_
   return icons
 end
 
-function data_util.combine_two_icons(icon_1, icon_1_size, icon_2, icon_2_size)
+function data_util.combine_two_icons(icon_1, icon_1_size, shift_1, icon_2, icon_2_size, shift_2)
+  if (shift_1 == nil) then
+    shift_1 = {-5*icon_1_size/64, -5*icon_1_size/64}
+  end
+
+  if (shift_2 == nil) then
+    shift_2 = {5*icon_2_size/64, 5*icon_2_size/64}
+  end
+
   icons = {
     {icon = "__Spaghenutti__/graphics/hr-icons/background.png", icon_size = 256, scale = icon_1_size/512},
-    {icon = icon_1, icon_size = icon_1_size, scale = 0.35, shift = {-5*icon_1_size/64, -5*icon_1_size/64}},
-    {icon = icon_2, icon_size = icon_2_size, scale = 0.35, shift = {5*icon_2_size/64, 5*icon_2_size/64}}
+    {icon = icon_1, icon_size = icon_1_size, scale = 0.35, shift = shift_1},
+    {icon = icon_2, icon_size = icon_2_size, scale = 0.35, shift = shift_2}
+  }
+  return icons
+end
+
+function data_util.combine_three_icons(icon_1, icon_1_size, shift_1, icon_2, icon_2_size, shift_2, icon_3, icon_3_size, shift_3)
+  if (shift_1 == nil) then
+    shift_1 = {0, -5*icon_1_size/64}
+  end
+
+  if (shift_2 == nil) then
+    shift_2 = {-6*icon_2_size/64, 4*icon_2_size/64}
+  end
+
+  if (shift_3 == nil) then
+    shift_3 = {6*icon_3_size/64, 5*icon_3_size/64}
+  end
+
+  icons = {
+    {icon = "__Spaghenutti__/graphics/hr-icons/background.png", icon_size = 256, scale = icon_1_size/512},
+    {icon = icon_1, icon_size = icon_1_size, scale = 0.27, shift = shift_1},
+    {icon = icon_2, icon_size = icon_2_size, scale = 0.27, shift = shift_2},
+    {icon = icon_3, icon_size = icon_3_size, scale = 0.27, shift = shift_3}
   }
   return icons
 end

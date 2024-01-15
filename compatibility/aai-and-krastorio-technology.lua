@@ -127,7 +127,7 @@ data:extend({
     type = "technology",
     name = "sp-salt",  -- #ForRegEx# - technology
     icon_size = 256,
-    icons = util.combine_two_icons("__Spaghenutti__/graphics/hr-icons/salt.png", 256, "__Spaghenutti__/graphics/hr-icons/sodium.png", 256),
+    icons = util.combine_two_icons("__Spaghenutti__/graphics/hr-icons/salt.png", 256, nil, "__Spaghenutti__/graphics/hr-icons/sodium.png", 256, nil),
     effects =
     {
       {

@@ -54,7 +54,7 @@ data:extend({
     name = "sp-tin-processing",  -- #ForRegEx# - technology
     icon_size = 256,
     -- icon = "__Spaghenutti__/graphics/hr-icons/tin-and-lead.png",
-    icons = util.combine_two_icons("__Spaghenutti__/graphics/hr-icons/tin-ingot.png", 256, "__Spaghenutti__/graphics/hr-icons/lead-slab.png", 256),
+    icons = util.combine_two_icons("__Spaghenutti__/graphics/hr-icons/tin-ingot.png", 256, nil, "__Spaghenutti__/graphics/hr-icons/lead-slab.png", 256, nil),
     effects =
     {
       {
@@ -216,7 +216,7 @@ data:extend({
     type = "technology",
     name = "sp-zinc-processing",  -- #ForRegEx# - technology
     icon_size = 256,
-    icons = util.combine_two_icons("__Spaghenutti__/graphics/hr-icons/zinc-sulfate-1.png", 256, "__Spaghenutti__/graphics/hr-icons/zinc-plate.png", 256),
+    icons = util.combine_two_icons("__Spaghenutti__/graphics/hr-icons/zinc-sulfate-1.png", 256, nil, "__Spaghenutti__/graphics/hr-icons/zinc-plate.png", 256, nil),
     effects =
     {
       {
@@ -263,7 +263,7 @@ data:extend({
     type = "technology",
     name = "sp-carbon-high-tech",  -- #ForRegEx# - technology
     icon_size = 256,
-    icons = util.combine_two_icons("__Spaghenutti__/graphics/hr-icons/carbon-nanotubes.png", 256, "__Spaghenutti__/graphics/hr-icons/graphene.png", 256),
+    icons = util.combine_two_icons("__Spaghenutti__/graphics/hr-icons/carbon-nanotubes.png", 256, nil, "__Spaghenutti__/graphics/hr-icons/graphene.png", 256, nil),
     effects =
     {
       {
@@ -334,7 +334,7 @@ data:extend({
     type = "technology",
     name = "sp-calcium-and-fluorine",  -- #ForRegEx# - technology
     icon_size = 256,
-    icons = util.combine_two_icons("__Spaghenutti__/graphics/hr-icons/fluorine.png", 256, "__Spaghenutti__/graphics/hr-icons/calcium.png", 256),
+    icons = util.combine_two_icons("__Spaghenutti__/graphics/hr-icons/fluorine.png", 256, nil, "__Spaghenutti__/graphics/hr-icons/calcium.png", 256, nil),
     effects =
     {
       {
@@ -384,7 +384,7 @@ data:extend({
     type = "technology",
     name = "sp-titanium-machining",  -- #ForRegEx# - technology
     icon_size = 256,
-    icons = util.combine_two_icons("__Spaghenutti__/graphics/hr-icons/titanium-frame.png", 256, "__Spaghenutti__/graphics/hr-icons/titanium-plate.png", 256),
+    icons = util.combine_two_icons("__Spaghenutti__/graphics/hr-icons/titanium-frame.png", 256, nil, "__Spaghenutti__/graphics/hr-icons/titanium-plate.png", 256, nil),
     effects =
     {
       {
@@ -409,7 +409,7 @@ data:extend({
     type = "technology",
     name = "sp-basic-ceramics",  -- #ForRegEx# - technology
     icon_size = 256,
-    icons = util.combine_two_icons("__Spaghenutti__/graphics/hr-icons/zircon.png", 256, "__Spaghenutti__/graphics/hr-icons/ceramics.png", 256),
+    icons = util.combine_two_icons("__Spaghenutti__/graphics/hr-icons/zircon.png", 256, nil, "__Spaghenutti__/graphics/hr-icons/ceramics.png", 256, nil),
     effects =
     {
       {
@@ -434,7 +434,7 @@ data:extend({
     type = "technology",
     name = "sp-advanced-ceramics",  -- #ForRegEx# - technology
     icon_size = 256,
-    icons = util.combine_two_icons("__Spaghenutti__/graphics/hr-icons/titanium-carbide.png", 256, "__Spaghenutti__/graphics/hr-icons/tungsten-carbide.png", 256),
+    icons = util.combine_two_icons("__Spaghenutti__/graphics/hr-icons/titanium-carbide.png", 256, nil, "__Spaghenutti__/graphics/hr-icons/tungsten-carbide.png", 256, nil),
     effects =
     {
       {
@@ -480,7 +480,7 @@ data:extend({
     type = "technology",
     name = "sp-niobium-and-tantalum",  -- #ForRegEx# - technology
     icon_size = 256,
-    icons = util.combine_two_icons("__Spaghenutti__/graphics/hr-icons/niobium-billet.png", 256, "__Spaghenutti__/graphics/hr-icons/tantalum-billet.png", 256),
+    icons = util.combine_two_icons("__Spaghenutti__/graphics/hr-icons/niobium-billet.png", 256, nil, "__Spaghenutti__/graphics/hr-icons/tantalum-billet.png", 256, nil),
     effects =
     {
       {
@@ -538,7 +538,7 @@ data:extend({
     type = "technology",
     name = "sp-nickel-and-cobalt",  -- #ForRegEx# - technology
     icon_size = 256,
-    icons = util.combine_two_icons("__Spaghenutti__/graphics/hr-icons/nickel-ingot.png", 256, "__Spaghenutti__/graphics/hr-icons/cobalt-billet.png", 256),
+    icons = util.combine_two_icons("__Spaghenutti__/graphics/hr-icons/nickel-ingot.png", 256, {-20, 20}, "__Spaghenutti__/graphics/hr-icons/cobalt-billet.png", 256, {20, -20}),
     effects =
     {
       {
@@ -567,7 +567,7 @@ data:extend({
     type = "technology",
     name = "sp-silver-and-palladium",  -- #ForRegEx# - technology
     icon_size = 256,
-    icons = util.combine_two_icons("__Spaghenutti__/graphics/hr-icons/silver.png", 256, "__Spaghenutti__/graphics/hr-icons/palladium.png", 256),
+    icons = util.combine_two_icons("__Spaghenutti__/graphics/hr-icons/silver.png", 256, nil, "__Spaghenutti__/graphics/hr-icons/palladium.png", 256, nil),
     effects =
     {
       {
@@ -592,7 +592,7 @@ data:extend({
     type = "technology",
     name = "sp-stainless-steel-processing",  -- #ForRegEx# - technology
     icon_size = 256,
-    icons = util.combine_two_icons("__Spaghenutti__/graphics/hr-icons/stainless-steel.png", 256, "__Spaghenutti__/graphics/hr-icons/chromium-plate.png", 256),
+    icons = util.combine_two_icons("__Spaghenutti__/graphics/hr-icons/stainless-steel.png", 256, nil, "__Spaghenutti__/graphics/hr-icons/chromium-plate.png", 256, nil),
     effects =
     {
       {
@@ -621,7 +621,7 @@ data:extend({
     type = "technology",
     name = "sp-aluminum-alloys",  -- #ForRegEx# - technology
     icon_size = 256,
-    icons = util.combine_two_icons("__Spaghenutti__/graphics/hr-icons/duralumin.png", 256, "__Spaghenutti__/graphics/hr-icons/aluminum-brass.png", 256),
+    icons = util.combine_two_icons("__Spaghenutti__/graphics/hr-icons/duralumin.png", 256, nil, "__Spaghenutti__/graphics/hr-icons/aluminum-brass.png", 256, nil),
     effects =
     {
       {
@@ -667,7 +667,7 @@ data:extend({
     type = "technology",
     name = "sp-titanium-alloys",  -- #ForRegEx# - technology
     icon_size = 256,
-    icons = util.combine_two_icons("__Spaghenutti__/graphics/hr-icons/TiAlSn.png", 256, "__Spaghenutti__/graphics/hr-icons/TiNb.png", 256),
+    icons = util.combine_two_icons("__Spaghenutti__/graphics/hr-icons/TiAlSn.png", 256, nil, "__Spaghenutti__/graphics/hr-icons/TiNb.png", 256, nil),
     effects =
     {
       {
@@ -692,7 +692,7 @@ data:extend({
     type = "technology",
     name = "sp-niobium-alloys",  -- #ForRegEx# - technology
     icon_size = 256,
-    icons = util.combine_two_icons("__Spaghenutti__/graphics/hr-icons/niobium-steel.png", 256, "__Spaghenutti__/graphics/hr-icons/niobium-tin.png", 256),
+    icons = util.combine_two_icons("__Spaghenutti__/graphics/hr-icons/niobium-steel.png", 256, nil, "__Spaghenutti__/graphics/hr-icons/niobium-tin.png", 256, nil),
     effects =
     {
       {
@@ -721,7 +721,7 @@ if not mods["Krastorio2"] then
       type = "technology",
       name = "sp-salt",  -- #ForRegEx# - technology
       icon_size = 256,
-      icons = util.combine_two_icons("__Spaghenutti__/graphics/hr-icons/salt.png", 256, "__Spaghenutti__/graphics/hr-icons/sodium.png", 256),
+      icons = util.combine_two_icons("__Spaghenutti__/graphics/hr-icons/salt.png", 256, nil, "__Spaghenutti__/graphics/hr-icons/sodium.png", 256, nil),
       effects =
       {
         {

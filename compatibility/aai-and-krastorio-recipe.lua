@@ -262,7 +262,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-sodium-and-chlorine",  -- #ForRegEx# - recipe
-    icons = util.combine_two_icons("__Spaghenutti__/graphics/icons/sodium.png", 64, "__Krastorio2Assets__/icons/fluids/chlorine.png", 64),
+    icons = util.combine_two_icons("__Spaghenutti__/graphics/icons/sodium.png", 64, nil, "__Krastorio2Assets__/icons/fluids/chlorine.png", 64, nil),
     icon_size = 64,
     mip_mapts = 4,
     category = "chemistry",

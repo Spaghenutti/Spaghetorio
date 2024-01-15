@@ -105,7 +105,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-calcium-and-fluorine",  -- #ForRegEx# - recipe
-    icons = util.combine_two_icons("__Spaghenutti__/graphics/icons/fluorine.png", 64, "__Spaghenutti__/graphics/icons/calcium.png", 64),
+    icons = util.combine_two_icons("__Spaghenutti__/graphics/icons/fluorine.png", 64, nil, "__Spaghenutti__/graphics/icons/calcium.png", 64, nil),
     icon_size = 64,
     mip_maps = 4,
     category = "chemistry",
@@ -273,7 +273,7 @@ data:extend({
     type = "recipe",
     name = "sp-tin-and-lead",  -- #ForRegEx# - recipe
     -- icon = "__Spaghenutti__/graphics/icons/tin-and-lead.png",
-    icons = util.combine_two_icons("__Spaghenutti__/graphics/icons/tin-ingot.png", 64, "__Spaghenutti__/graphics/icons/lead-slab.png", 64),
+    icons = util.combine_two_icons("__Spaghenutti__/graphics/icons/tin-ingot.png", 64, nil, "__Spaghenutti__/graphics/icons/lead-slab.png", 64, nil),
     icon_size = 64,
     mip_maps = 4,
     category = "smelting",

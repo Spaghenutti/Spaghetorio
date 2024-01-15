@@ -1,3 +1,5 @@
+local util = require("data-util")
+
 data:extend({
   ------------------------------------------------------------------------------
   -- base-products --
@@ -7,9 +9,8 @@ data:extend({
     type = "item-group",
     name = "base-products",
     order = "a",
-    icon = "__Spaghenutti__/graphics/dummy/dummy-group-default.png",
+    icons = util.combine_three_icons("__base__/graphics/icons/coal.png", 64, nil, "__base__/graphics/icons/copper-plate.png", 64, nil, "__Spaghenutti__/graphics/icons/zircon.png", 64, nil),
     icon_size = 64,
-    icon_mipmaps = 2
   },
   -- move raw-resources to new item group base-products
   {
@@ -132,7 +133,7 @@ data:extend({
     type = "item-group",
     name = "science-products",
     order = "e",
-    icon = "__Spaghenutti__/graphics/dummy/dummy-group-default.png",
+    icon = "__base__/graphics/icons/utility-science-pack.png",
     icon_size = 64,
     icon_mipmaps = 2
   },
