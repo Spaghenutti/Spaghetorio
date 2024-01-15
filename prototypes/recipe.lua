@@ -576,6 +576,19 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "sp-stainless-steel-gear-wheel",  -- #ForRegEx# - recipe
+    category = "crafting",
+    enabled = false,
+    energy_required = 4,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-stainless-steel", amount = 2}
+    },
+    results = {
+      {type = "item", name = "sp-stainless-steel-gear-wheel", amount = 2}
+    }
+  },
+  {
+    type = "recipe",
     name = "sp-duralumin",  -- #ForRegEx# - recipe
     category = "smelting",
     enabled = false,
@@ -695,9 +708,10 @@ data:extend({
     name = "sp-pressure-tube",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
-    energy_required = 1.6,  -- time in seconds to make the item
+    energy_required = 3.2,  -- time in seconds to make the item
     ingredients = {
-      {type = "item", name = "sp-stainless-steel", amount = 1}
+      {type = "item", name = "sp-stainless-steel", amount = 1},
+      {type = "item", name = "sp-inconel", amount = 1}
     },
     results = {
       {type = "item", name = "sp-pressure-tube", amount = 1}
@@ -1559,23 +1573,6 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-compute-unit",  -- #ForRegEx# - recipe
-    category = "crafting",
-    enabled = false,
-    energy_required = 6,  -- time in seconds to make the item
-    ingredients = {
-      {type = "item", name = "sp-circuit-board", amount = 2},
-      {type = "item", name = "sp-aluminum-frame", amount = 2},
-      {type = "item", name = "sp-heatsink", amount = 1},
-      {type = "item", name = "copper-cable", amount = 2},
-      {type = "item", name = "sp-integrated-circuit", amount = 2}
-    },
-    results = {
-      {type = "item", name = "sp-compute-unit", amount = 1}
-    }
-  },
-  {
-    type = "recipe",
     name = "sp-advanced-compute-unit",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
@@ -1605,6 +1602,34 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-quantum-data-plane", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-catalyst-from-calcium-magnesium",  -- #ForRegEx# - recipe
+    category = "crafting",
+    enabled = false,
+    energy_required = 3.2,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-magnesium-slab", amount = 3},
+      {type = "item", name = "sp-calcium", amount = 3}
+    },
+    results = {
+      {type = "item", name = "sp-catalyst", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-mirror-from-silver",  -- #ForRegEx# - recipe
+    category = "crafting",
+    enabled = false,
+    energy_required = 3.2,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-silver", amount = 1},
+      {type = "item", name = "sp-aluminum-sheet", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-mirror", amount = 2}
     }
   },
   ------------------------------------------------------------------------------
@@ -1691,31 +1716,6 @@ data:extend({
       {"sp-limestone", 2}
     },
     result = "stone-brick"
-  },
-  {
-    type = "recipe",
-    name = "sp-steel-plate-from-graphite",
-    category = "smelting",
-    normal =
-    {
-      enabled = false,
-      energy_required = 6,
-      ingredients = {
-        {"iron-plate", 2},
-        {"sp-graphite", 1}
-      },
-      result = "steel-plate"
-    },
-    expensive =
-    {
-      enabled = false,
-      energy_required = 8,
-      ingredients = {
-        {"iron-plate", 4},
-        {"sp-graphite", 2}
-      },
-      result = "steel-plate"
-    }
   },
   {
     type = "recipe",
@@ -1893,20 +1893,6 @@ if not mods["Krastorio2"] then
       },
       results = {
         {type = "item", name = "sp-glass", amount = 1}
-      }
-    },
-    {
-      type = "recipe",
-      name = "sp-catalyst-from-calcium-magnesium",  -- #ForRegEx# - recipe
-      category = "crafting",
-      enabled = false,
-      energy_required = 3.2,  -- time in seconds to make the item
-      ingredients = {
-        {type = "item", name = "sp-magnesium-slab", amount = 3},
-        {type = "item", name = "sp-calcium", amount = 3}
-      },
-      results = {
-        {type = "item", name = "sp-catalyst", amount = 1}
       }
     },
     {
@@ -2228,21 +2214,6 @@ if not mods["Krastorio2"] then
       },
       results = {
         {type = "item", name = "sp-integrated-circuit", amount = 1}
-      }
-    },
-    {
-      type = "recipe",
-      name = "sp-integrated-circuit",  -- #ForRegEx# - recipe
-      category = "crafting",
-      enabled = false,
-      energy_required = 3.6,  -- time in seconds to make the item
-      ingredients = {
-        {type = "item", name = "plastic-bar", amount = 1},
-        {type = "item", name = "sp-silicon", amount = 2},
-        {type = "item", name = "copper-cable", amount = 1}
-      },
-      results = {
-        {type = "item", name = "sp-integrated-circuit", amount = 2}
       }
     },
     {

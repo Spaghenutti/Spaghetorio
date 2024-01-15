@@ -1118,7 +1118,7 @@ data:extend({
   {
     type = "item",
     name = "sp-stainless-steel-gear-wheel",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/icons/stainless-steel-gear.png",
+    icon = "__Spaghenutti__/graphics/icons/stainless-steel-gear-wheel.png",
     icon_size = 64,
     scale = 0.25,
     subgroup = "mechanical-component",

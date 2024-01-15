@@ -1,3 +1,5 @@
+local util = require("data-util")
+
 data:extend({
   {
     type = "technology",
@@ -117,6 +119,77 @@ data:extend({
     {
       count = 50,
       ingredients = {{"automation-science-pack", 1}},
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-salt",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icons = util.combine_two_icons("__Spaghenutti__/graphics/hr-icons/salt.png", 256, "__Spaghenutti__/graphics/hr-icons/sodium.png", 256),
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-salt"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-sodium-and-chlorine"
+      },
+    },
+    prerequisites = {"sp-cement"},
+    unit =
+    {
+      count = 100,
+      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-bleach",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghenutti__/graphics/hr-icons/bleach.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-bleach"
+      },
+    },
+    prerequisites = {"sp-cement"},
+    unit =
+    {
+      count = 100,
+      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-magnesium-processing",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghenutti__/graphics/hr-icons/magnesium-slab.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-magnesium-chloride"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-magnesium-slab"
+      },
+    },
+    prerequisites = {"sp-cement"},
+    unit =
+    {
+      count = 100,
+      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
       time = 15
     },
     order = "a-h-a"

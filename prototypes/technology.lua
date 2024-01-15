@@ -353,77 +353,6 @@ data:extend({
   },
   {
     type = "technology",
-    name = "sp-salt",  -- #ForRegEx# - technology
-    icon_size = 256,
-    icons = util.combine_two_icons("__Spaghenutti__/graphics/hr-icons/salt.png", 256, "__Spaghenutti__/graphics/hr-icons/sodium.png", 256),
-    effects =
-    {
-      {
-        type = "unlock-recipe",
-        recipe = "sp-salt"
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-sodium-and-chlorine"
-      },
-    },
-    prerequisites = {"sp-cement"},
-    unit =
-    {
-      count = 100,
-      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
-      time = 15
-    },
-    order = "a-h-a"
-  },
-  {
-    type = "technology",
-    name = "sp-bleach",  -- #ForRegEx# - technology
-    icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/bleach.png",
-    effects =
-    {
-      {
-        type = "unlock-recipe",
-        recipe = "sp-bleach"
-      },
-    },
-    prerequisites = {"sp-cement"},
-    unit =
-    {
-      count = 100,
-      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
-      time = 15
-    },
-    order = "a-h-a"
-  },
-  {
-    type = "technology",
-    name = "sp-magnesium-processing",  -- #ForRegEx# - technology
-    icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/magnesium-slab.png",
-    effects =
-    {
-      {
-        type = "unlock-recipe",
-        recipe = "sp-magnesium-chloride"
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-magnesium-slab"
-      },
-    },
-    prerequisites = {"sp-cement"},
-    unit =
-    {
-      count = 100,
-      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
-      time = 15
-    },
-    order = "a-h-a"
-  },
-  {
-    type = "technology",
     name = "sp-titanium-processing",  -- #ForRegEx# - technology
     icon_size = 256,
     icon = "__Spaghenutti__/graphics/hr-icons/titanium-ingot.png",
@@ -480,15 +409,19 @@ data:extend({
     type = "technology",
     name = "sp-basic-ceramics",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/zircon.png",
+    icons = util.combine_two_icons("__Spaghenutti__/graphics/hr-icons/zircon.png", 256, "__Spaghenutti__/graphics/hr-icons/ceramics.png", 256),
     effects =
     {
       {
         type = "unlock-recipe",
         recipe = "sp-zircon"
       },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-ceramics"
+      },
     },
-    prerequisites = {"logistic-science-pack"},
+    prerequisites = {"logistic-science-pack", "sp-cement", "sp-coal-processing"},
     unit =
     {
       count = 100,
@@ -630,8 +563,337 @@ data:extend({
     },
     order = "a-h-a"
   },
+  {
+    type = "technology",
+    name = "sp-silver-and-palladium",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icons = util.combine_two_icons("__Spaghenutti__/graphics/hr-icons/silver.png", 256, "__Spaghenutti__/graphics/hr-icons/palladium.png", 256),
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-silver-palladium"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-palladium"
+      },
+    },
+    prerequisites = {"logistic-science-pack", "sp-nickel-and-cobalt"},
+    unit =
+    {
+      count = 100,
+      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-stainless-steel-processing",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icons = util.combine_two_icons("__Spaghenutti__/graphics/hr-icons/stainless-steel.png", 256, "__Spaghenutti__/graphics/hr-icons/chromium-plate.png", 256),
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-stainless-steel"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-stainless-steel-gear-wheel"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-chromium-plate"
+      },
+    },
+    prerequisites = {"logistic-science-pack", "sp-nickel-and-cobalt"},
+    unit =
+    {
+      count = 100,
+      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-aluminum-alloys",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icons = util.combine_two_icons("__Spaghenutti__/graphics/hr-icons/duralumin.png", 256, "__Spaghenutti__/graphics/hr-icons/aluminum-brass.png", 256),
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-duralumin"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-aluminum-brass"
+      },
+    },
+    prerequisites = {"logistic-science-pack", "sp-nickel-and-cobalt"},
+    unit =
+    {
+      count = 100,
+      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-nickel-alloys",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghenutti__/graphics/hr-icons/duralumin.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-inconel"
+      },
+    },
+    prerequisites = {"logistic-science-pack", "sp-nickel-and-cobalt", "sp-stainless-steel-processing"},
+    unit =
+    {
+      count = 100,
+      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-titanium-alloys",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icons = util.combine_two_icons("__Spaghenutti__/graphics/hr-icons/TiAlSn.png", 256, "__Spaghenutti__/graphics/hr-icons/TiNb.png", 256),
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-TiAlSn"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-TiNb"
+      },
+    },
+    prerequisites = {"logistic-science-pack", "sp-titanium-machining", "sp-niobium-and-tantalum", "sp-aluminum-machining"},
+    unit =
+    {
+      count = 100,
+      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-niobium-alloys",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icons = util.combine_two_icons("__Spaghenutti__/graphics/hr-icons/niobium-steel.png", 256, "__Spaghenutti__/graphics/hr-icons/niobium-tin.png", 256),
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-niobium-steel"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-niobium-tin"
+      },
+    },
+    prerequisites = {"logistic-science-pack", "sp-tin-processing", "sp-niobium-and-tantalum"},
+    unit =
+    {
+      count = 100,
+      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      time = 15
+    },
+    order = "a-h-a"
+  },
 })
 
+if not mods["Krastorio2"] then
+  data:extend({
+    {
+      type = "technology",
+      name = "sp-salt",  -- #ForRegEx# - technology
+      icon_size = 256,
+      icons = util.combine_two_icons("__Spaghenutti__/graphics/hr-icons/salt.png", 256, "__Spaghenutti__/graphics/hr-icons/sodium.png", 256),
+      effects =
+      {
+        {
+          type = "unlock-recipe",
+          recipe = "sp-salt"
+        },
+        {
+          type = "unlock-recipe",
+          recipe = "sp-sodium-and-chlorine"
+        },
+      },
+      prerequisites = {"sp-cement"},
+      unit =
+      {
+        count = 100,
+        ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+        time = 15
+      },
+      order = "a-h-a"
+    },
+    {
+      type = "technology",
+      name = "sp-bleach",  -- #ForRegEx# - technology
+      icon_size = 256,
+      icon = "__Spaghenutti__/graphics/hr-icons/bleach.png",
+      effects =
+      {
+        {
+          type = "unlock-recipe",
+          recipe = "sp-bleach"
+        },
+      },
+      prerequisites = {"sp-cement"},
+      unit =
+      {
+        count = 100,
+        ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+        time = 15
+      },
+      order = "a-h-a"
+    },
+    {
+      type = "technology",
+      name = "sp-magnesium-processing",  -- #ForRegEx# - technology
+      icon_size = 256,
+      icon = "__Spaghenutti__/graphics/hr-icons/magnesium-slab.png",
+      effects =
+      {
+        {
+          type = "unlock-recipe",
+          recipe = "sp-magnesium-chloride"
+        },
+        {
+          type = "unlock-recipe",
+          recipe = "sp-magnesium-slab"
+        },
+      },
+      prerequisites = {"sp-cement"},
+      unit =
+      {
+        count = 100,
+        ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+        time = 15
+      },
+      order = "a-h-a"
+    },
+  })
+end
+
+-- missing: 
+--  "sp-flange"
+--  "sp-filter"
+--  "sp-pressure-tank"
+--  "sp-pressure-tube"
+--  "sp-high-pressure-tank"
+--  "sp-sinter-filter"
+--  "sp-ball-bearing"
+--  "sp-infrared-filter"
+--  "sp-glass-fiber"
+--  "sp-resistor"
+--  "sp-capacitor-from-aluminum"
+--  "sp-capacitor-from-niobium"
+--  "sp-capacitor-from-tantalum"
+--  "sp-coil"
+--  "sp-silver-solder"
+--  "sp-empty-circuit-board"
+--  "sp-circuit-board"
+--  "sp-memory-chip"
+--  "sp-antenna-chip"
+--  "sp-processor"
+--  "sp-cmos"
+--  "sp-compute-unit"
+--  "sp-advanced-compute-unit"
+--  "sp-quantum-data-plane"
+--  "sp-fabric"
+--  "sp-magnet"
+--  "sp-neodymium-magnet"
+--  "sp-cement"
+--  "sp-diamond"
+--  "sp-heatsink"
+--  "sp-coolant"
+--  "sp-cryostat"
+--  "sp-plate-heat-exchanger"
+--  "sp-electromagnet"
+--  "sp-spark-plug"
+--  "sp-gyro"
+--  "sp-phosphorus"
+--  "sp-lithium-oxide"
+--  "sp-turbine-blade-from-stainless-steel"
+--  "sp-turbine-blade-from-TiAlSn"
+--  "sp-turbine-rotor"
+--  "sp-turbine-stator"
+--  "sp-turbopump"
+--  "sp-nozzle"
+--  "sp-fuel-injector"
+--  "sp-heat-resistant-tile"
+--  "sp-combustion-chamber"
+--  "sp-rocket-engine"
+--  "sp-solid-rocket-motor"
+--  "sp-control-rod"
+--  "sp-plutonium-239-fuel-rod"
+--  "sp-plutonium-240-fuel-rod"
+--  "sp-reactor-core"
+--  "sp-catalyst-from-calcium-magnesium"
+--  "sp-mirror-from-silver"
+--------------------------------------------------------------------------------
+-- Alternate recipes for vanilla items
+--------------------------------------------------------------------------------
+--  "sp-medium-electric-pole"
+--  "sp-landfill-from-cement"
+--  "sp-red-wire-from-aluminum"
+--  "sp-green-wire-from-aluminum"
+--------------------------------------------------------------------------------
+-- if not mods["Krastorio2"] then
+--------------------------------------------------------------------------------
+--  "sp-coke"
+--  "sp-sand"
+--  "sp-graphite"
+--  "sp-sodium-carbonate"
+--  "sp-zirconia"
+--  "sp-quartz"
+--  "sp-niobium-powder"
+--  "sp-aqueous-niobium-tantalum"
+--  "sp-glass"
+--  "sp-glass-from-calcium"
+--  "sp-gold"
+--  "sp-platinum-iridium"
+--  "sp-landfill-from-sand"
+--  "sp-stone-brick-from-sand"
+--  "sp-mirror"
+--  "sp-titanium-nitride"
+--  "sp-kevlar"
+--  "sp-uranium-fuel-rod"
+--  "sp-epoxy"
+--  "sp-cubit"
+--  "sp-superconductor"
+--  "sp-lens"
+--  "sp-composites"
+--  "sp-silicon"
+--  "sp-high-purity-silicon"
+--  "sp-diode"
+--  "sp-transistor"
+--  "sp-light-emitting-diode"
+--  "sp-integrated-circuit"
+--  "sp-laser"
+--  "sp-silica"
+--  "sp-lithium"
+--  "sp-plutonium-239"
+--  "sp-plutonium-240"
+--  "sp-used-up-fuel-rod-reprocessing"
+--  "sp-advanced-used-up-fuel-rod-reprocessing"
+ 
 
 table.insert(data.raw.technology["fluid-handling"].prerequisites, "sp-basic-alloy")
 table.insert(data.raw.technology["fluid-handling"].effects, {type = "unlock-recipe",recipe = "sp-valve"})
