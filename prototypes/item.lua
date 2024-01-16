@@ -692,6 +692,16 @@ data:extend({
     order = "[tellurium]",
     stack_size = 200
   },
+  {
+    type = "item",
+    name = "sp-antimony",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "processed-resource",
+    order = "[sp-antimony]",
+    stack_size = 200
+  },
   ------------------------------------------------------------------------------
   -- Subgroup raw-material --
   ------------------------------------------------------------------------------
@@ -1393,6 +1403,16 @@ data:extend({
   },
   {
     type = "item",
+    name = "sp-relay",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "electrical-optical-component",
+    order = "[relay]",
+    stack_size = 100
+  },
+  {
+    type = "item",
     name = "sp-empty-circuit-board",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/icons/empty-circuit-board.png",
     icon_size = 64,
@@ -1584,6 +1604,15 @@ data:extend({
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "intermediate-product",
     order = "[wheel]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "sp-train-boige",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+    icon_size = 64, icon_mipmaps = 4,
+    subgroup = "intermediate-product",
+    order = "[train-boige]",
     stack_size = 50
   },
   {
@@ -1811,21 +1840,22 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-methyl-tert-butyl-ether",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
-    icon_size = 64, icon_mipmaps = 4,
-    subgroup = "chemical-product",
-    order = "[methyl-tert-butyl-ether]",
-    stack_size = 50
-  },
-  {
-    type = "item",
     name = "sp-urea",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "chemical-product",
     order = "[urea]",
     stack_size = 50
+  },
+  {
+    type = "item",
+    name = "sp-insulation-sheet",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "chemical-product",
+    order = "[insulation-sheet]",
+    stack_size = 100
   },
   ------------------------------------------------------------------------------
   -- Subgroup fuel --

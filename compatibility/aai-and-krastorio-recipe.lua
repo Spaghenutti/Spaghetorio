@@ -571,6 +571,35 @@ data:extend({
       {type = "item", name = "sp-plutonium-240", probability = 0.08, amount = 1}
     }
   },
+  {
+    type = "recipe",
+    name = "sp-urea",  -- #ForRegEx# - recipe
+    category = "chemistry",
+    enabled = false,
+    energy_required = 3.2,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sulfur", amount = 1},
+      {type = "fluid", name = "ammonia", amount = 50},
+    },
+    results = {
+      {type = "item", name = "sp-urea", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-carbon-fiber",  -- #ForRegEx# - recipe
+    category = "chemistry",
+    enabled = false,
+    energy_required = 3.2,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "plastic-bar", amount = 3},
+      {type = "item", name = "sp-graphite", amount = 1},
+      {type = "fluid", name = "nitric-acid", amount = 50},
+    },
+    results = {
+      {type = "item", name = "sp-carbon-fiber", amount = 1}
+    }
+  },
 })
 
 -- items
@@ -624,11 +653,6 @@ util.change_recipe_ingredients("steel-plate",
   {{"iron-plate", 6}, {"sp-graphite", 2}},
   nil,
   nil)
-util.change_recipe_ingredients("sp-titanium-nitride",
-  {{type = "item", name = "sp-titanium-ingot", amount = 1}, {type = "fluid", name = "nitrogen", amount = 20}},  -- krastorio2 has nitrogen
-  {{type = "item", name = "sp-titanium-ingot", amount = 2}, {type = "fluid", name = "nitrogen", amount = 40}},  -- krastorio2 has nitrogen
-  3,
-  4)
 util.change_recipe_ingredients("concrete",
   {{"sp-cement", 10}, {"sand", 2}, {type="fluid", name="water", amount=100}},
   {{"sp-cement", 16}, {"sand", 3}, {type="fluid", name="water", amount=160}},
@@ -781,6 +805,17 @@ util.change_recipe_ingredients("kr-electrolysis-plant",
   20,
   40)
 
+-- Changes to Spaghenutty
+util.change_recipe_ingredients("sp-titanium-nitride",
+  {{type = "item", name = "sp-titanium-ingot", amount = 1}, {type = "fluid", name = "nitrogen", amount = 20}},  -- krastorio2 has nitrogen
+  {{type = "item", name = "sp-titanium-ingot", amount = 2}, {type = "fluid", name = "nitrogen", amount = 40}},  -- krastorio2 has nitrogen
+  3,
+  4)
+util.change_recipe_ingredients("sp-train-boige",
+  {{"iron-beam", 4}, {"sp-wheel", 4}, {"sp-bolts", 8}, {"sp-spring", 12}},
+  {{"iron-beam", 8}, {"sp-wheel", 8}, {"sp-bolts", 16}, {"sp-spring", 24}},
+  3,
+  6)
 
 -- Change category
 data.raw.recipe["sp-aluminum-sheet"].category = "electrolysis"

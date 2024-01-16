@@ -24,6 +24,8 @@ data.raw.item["fertilizer"].subgroup = "chemical-product"
 
 data.raw.item["imersite-crystal"].subgroup = "advanced-raw-material"
 data.raw.item["matter-cube"].subgroup = "advanced-raw-material"
+data.raw.item["imersium-plate"].subgroup = "advanced-raw-material"
+data.raw.item["tritium"].subgroup = "advanced-raw-material"
 
 data.raw.item["iron-beam"].subgroup = "mechanical-component"
 data.raw.item["steel-beam"].subgroup = "mechanical-component"

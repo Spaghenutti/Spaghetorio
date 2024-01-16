@@ -3,25 +3,42 @@ local util = require("data-util")
 -- TODO:
 --  - remove:
 --    - "rare-metals" (only k2)
+--    - "electronic-components" (only k2)
 --  - add recipes for:
 --    - "sp-plutonium-240"
 --    - "sp-plutonium-239"
---    - "sp-stibnite"
---    - "sp-tellurium"
---    - "sp-rubber"
---    - "sp-urea"
+--    + "sp-tellurium"
+--    + "sp-rubber"
+--    + "sp-urea"
+--    + "sp-phosphoric-acid"
+--    + "sp-carbon-fiber"
+--    + "sp-monocrystal"
+--    ++ "sp-quasicrystal"
+--    + "sp-heavy-bearing"
+--    + "sp-electrode"
+--    + "sp-actuator"
+--    + "sp-composites" (add more recipes)
+--    + "sp-heating-filament"
+--    + "sp-relay"
+--    + "sp-insulation-sheet"
+--    + "sp-transformer"
+--    + "sp-wheel"
+--    + "sp-train-boige"
+--    - "sp-cubit" (fix recipe?)
+--    - "sp-deuterium" (fluid)
+--    - "sp-ethylene" (fluid)
+--    - "sp-ethylene-dichloride" (fluid)
+--    - "sp-sodium-hydroxide" (fluid)
+--    - "sp-sodium-carbonate" (fluid)
+--    - "sp-propene" (fluid)
+--    - "sp-propylene" (fluid)
+--    - "sp-benzene" (fluid)
+--    - "sp-styrene" (fluid)
+--    - "sp-vynil-chloride" (fluid)
 --    - "sp-methyl-tert-butyl-ether" (fluid)
---    - "sp-phosphoric-acid"
---    - "sp-carbon-fiber"
---    - "sp-monocrystal"
---    - "sp-quasicrystal"
---    - "sp-heavy-bearing"
---    - 
---    - 
---    - 
---    - 
 --    - 
 --  - add uses to:
+--    - "sp-antimony"
 --    - "sp-calcium"
 --    - "sp-liquid-sodium"
 --    - "sp-stibnite"
@@ -29,8 +46,9 @@ local util = require("data-util")
 --    - "sp-zircon"
 --    - "sp-platinum"
 --    - "sp-palladium"
+--    - "sp-tungsten-slab"
 --    - "sp-niobium-powder"
---    - "sp-niobium"
+--    - "sp-niobium-billet"
 --    - "sp-lithium-oxide"
 --    - "sp-iridium"
 --    - "sp-lanthanum"
@@ -69,6 +87,60 @@ local util = require("data-util")
 --    - "sp-kevlar"
 --    - "sp-magnet"
 --    - "sp-neodymium-magnet"
+--    - "sp-sinter-filter"
+--    - "sp-spring"
+--    - "sp-advanced-compute-unit"
+--    - "sp-antenna-chip"
+--    - "sp-capacitor"
+--    - "sp-diode"
+--    - "sp-cmos"
+--    - "sp-coil"
+--    - "sp-compute-unit"
+--    - "sp-electrode"
+--    - "sp-infra-red-filter"
+--    - "sp-integrated-circuit"
+--    - "sp-laser"
+--    - "sp-lens"
+--    - "sp-light-emitting-diode"
+--    - "sp-memory-chip"
+--    - "sp-lens"
+--    - "sp-mirror"
+--    - "sp-processor"
+--    - "sp-silver-solder"
+--    - "sp-solder"
+--    - "sp-resistor"
+--    - "sp-transistor"
+--    - "sp-vacuum-tube"
+--    - "sp-actuator"
+--    - "sp-catalyst"
+--    - "sp-composites"
+--    - "sp-electromagnet"
+--    - "sp-gyro"
+--    - "sp-heating-filament"
+--    - "sp-heatsink"
+--    - "sp-high-pressure-tank"
+--    - "sp-plate-heat-exchanger"
+--    - "sp-transformer"
+--    - "sp-wheel"
+--    - "sp-cryostat"
+--    - "sp-quantum-data-plane"
+--    - "sp-spark-plug"
+--    - "sp-superconductor"
+--    - "sp-deuterium" (fluid)
+--    - "sp-ethylene" (fluid)
+--    - "sp-ethylene-dichloride" (fluid)
+--    - "sp-sodium-hydroxide" (fluid)
+--    - "sp-sodium-carbonate" (fluid)
+--    - "sp-propene" (fluid)
+--    - "sp-propylene" (fluid)
+--    - "sp-benzene" (fluid)
+--    - "sp-styrene" (fluid)
+--    - "sp-vynil-chloride" (fluid)
+--    - "sp-relay"
+--    - "sp-insulation-sheet"
+--    - "sp-train-boige"
+--    - 
+--    - 
 --    - 
 --    - 
 --    - 
@@ -396,6 +468,19 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "sp-tellurium",  -- #ForRegEx# - recipe
+    category = "chemistry",
+    enabled = false,
+    energy_required = 8,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sulfur", amount = 20},
+    },
+    results = {
+      {type = "item", name = "sp-zircon", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
     name = "sp-zircon",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
@@ -563,8 +648,9 @@ data:extend({
       {type = "item", name = "sp-nickel-ore", amount = 1}
     },
     results = {
-      {type = "item", name = "sp-cobalt-sulfate", probability = 0.03, amount = 1},
-      {type = "item", name = "sp-sand", probability = 0.97, amount = 1}
+      {type = "item", name = "sp-cobalt-sulfate", probability = 0.2, amount = 1},
+      {type = "item", name = "iron-ore", probability = 0.5, amount = 1},
+      {type = "item", name = "sp-sand", probability = 0.3, amount = 1}
     }
   },
   {
@@ -596,6 +682,56 @@ data:extend({
     results = {
       {type = "item", name = "sp-nickel-ingot", amount = 1},
       {type = "item", name = "iron-plate", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-cobalt-and-nickel",  -- #ForRegEx# - recipe
+    icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
+    icon_size = 64,
+    mip_maps = 4,
+    category = "smelting",
+    subgroup = "raw-resource",
+    enabled = false,
+    energy_required = 3.2,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-nickel-ore", amount = 10}
+    },
+    results = {
+      {type = "item", name = "sp-nickel-ingot", amount = 4},
+      {type = "item", name = "iron-plate", amount = 5},
+      {type = "item", name = "sp-cobalt-billet", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-stibnite",  -- #ForRegEx# - recipe
+    category = "smelting",
+    enabled = false,
+    energy_required = 5,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-limestone", amount = 4}
+    },
+    results = {
+      {type = "item", name = "sp-stibnite", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-antimony",  -- #ForRegEx# - recipe
+    icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
+    icon_size = 64,
+    mip_maps = 4,
+    category = "smelting",
+    subgroup = "raw-resource",
+    enabled = false,
+    energy_required = 2.4,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-stibnite", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-antimony", amount = 1},
+      {type = "item", name = "sulfur", amount = 1}
     }
   },
   {
@@ -1291,7 +1427,7 @@ data:extend({
       {type = "fluid", name = "sp-liquid-nitrogen", amount = 40}
     },
     results = {
-      {type = "item", name = "sp-electromagnet", amount = 1}
+      {type = "item", name = "sp-cryostat", amount = 1}
     }
   },
   {
@@ -1709,6 +1845,241 @@ data:extend({
       {type = "item", name = "sp-mirror", amount = 2}
     }
   },
+  {
+    type = "recipe",
+    name = "sp-phosphoric-acid",  -- #ForRegEx# - recipe
+    category = "chemistry",
+    enabled = false,
+    energy_required = 3.2,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-phosphorus", amount = 2},
+      {type = "fluid", name = "water", amount = 200},
+    },
+    results = {
+      {type = "item", name = "sp-phosphoric-acid", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-rubber",  -- #ForRegEx# - recipe
+    category = "chemistry",
+    enabled = false,
+    energy_required = 3.2,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sulfur", amount = 3},
+      {type = "fluid", name = "sp-styrene", amount = 50},
+      {type = "item", name = "sp-phosphoric-acid", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-rubber", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-monocrystal",  -- #ForRegEx# - recipe
+    category = "advanced-smelting",
+    enabled = false,
+    energy_required = 30,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-titanium-plate", amount = 6},
+      {type = "item", name = "sp-lanthanum", amount = 1},
+      {type = "item", name = "sp-iridium", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-monocrystal", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-quasicrystal-1",  -- #ForRegEx# - recipe
+    category = "advanced-smelting",
+    enabled = false,
+    energy_required = 30,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "copper-plate", amount = 4},
+      {type = "item", name = "iron-plate", amount = 1},
+      {type = "item", name = "sp-aluminum-sheet", amount = 2},
+      {type = "item", name = "sp-chromium-plate", amount = 5},
+
+    },
+    results = {
+      {type = "item", name = "sp-quasicrystal", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-quasicrystal-2",  -- #ForRegEx# - recipe
+    category = "advanced-smelting",
+    enabled = false,
+    energy_required = 40,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-nickel-ingot", amount = 3},
+      {type = "item", name = "sp-aluminum-sheet", amount = 5},
+      {type = "item", name = "sp-palladium", amount = 1},
+      {type = "item", name = "sp-niobium-billet", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-quasicrystal", amount = 4}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-heavy-bearing",  -- #ForRegEx# - recipe
+    category = "crafting-with-fluid",
+    enabled = false,
+    energy_required = 5,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-niobium-steel", amount = 5},
+      {type = "item", name = "sp-aluminum-brass", amount = 3},
+      {type = "item", name = "sp-titanium-nitride", amount = 1},
+      {type = "fluid", name = "lubricant", amount = 20},
+    },
+    results = {
+      {type = "item", name = "sp-heavy-bearing", amount = 4}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-electrode-from-iridium",  -- #ForRegEx# - recipe
+    category = "crafting",
+    enabled = false,
+    energy_required = 14,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "copper-cable", amount = 6},
+      {type = "item", name = "steel-plate", amount = 8},
+      {type = "item", name = "sp-ceramics", amount = 4},
+      {type = "item", name = "sp-iridium", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-electrode", amount = 6}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-electrode-from-platinum",  -- #ForRegEx# - recipe
+    category = "crafting",
+    enabled = false,
+    energy_required = 8,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "copper-cable", amount = 2},
+      {type = "item", name = "steel-plate", amount = 4},
+      {type = "item", name = "sp-ceramics", amount = 2},
+      {type = "item", name = "sp-platinum", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-electrode", amount = 3}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-actuator",  -- #ForRegEx# - recipe
+    category = "crafting-with-fluid",
+    enabled = false,
+    energy_required = 5,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-ceramics", amount = 1},
+      {type = "item", name = "sp-bolts", amount = 4},
+      {type = "item", name = "sp-stainless-steel", amount = 3},
+      {type = "item", name = "sp-stainless-steel-gear-wheel", amount = 6},
+      {type = "item", name = "sp-integrated-circuit", amount = 2},
+      {type = "fluid", name = "lubricant", amount = 20},
+    },
+    results = {
+      {type = "item", name = "sp-actuator", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-heating-filament",  -- #ForRegEx# - recipe
+    category = "crafting-with-fluid",
+    enabled = false,
+    energy_required = 5,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-tungsten-slab", amount = 3},
+      {type = "item", name = "steel-plate", amount = 2},
+      {type = "item", name = "sp-ceramics", amount = 1},
+      {type = "item", name = "sp-graphite", amount = 3}
+    },
+    results = {
+      {type = "item", name = "sp-heating-filament", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-relay",  -- #ForRegEx# - recipe
+    category = "crafting",
+    enabled = false,
+    energy_required = 1.6,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "copper-plate", amount = 1},
+      {type = "item", name = "sp-coil", amount = 1},
+      {type = "item", name = "plastic-bar", amount = 1},
+      {type = "item", name = "iron-stick", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-relay", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-insulation-sheet",  -- #ForRegEx# - recipe
+    category = "chemistry",
+    enabled = false,
+    energy_required = 2,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "plastic-bar", amount = 1},
+      {type = "fluid", name = "sp-styrene", amount = 10}
+    },
+    results = {
+      {type = "item", name = "sp-insulation-sheet", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-transformer",  -- #ForRegEx# - recipe
+    category = "crafting",
+    enabled = false,
+    energy_required = 5,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-relay", amount = 4},
+      {type = "item", name = "sp-heatsink", amount = 2},
+      {type = "item", name = "sp-insulation-sheet", amount = 2},
+      {type = "item", name = "copper-cable", amount = 10},
+      {type = "item", name = "steel-plate", amount = 4}
+    },
+    results = {
+      {type = "item", name = "sp-transformer", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-wheel",  -- #ForRegEx# - recipe
+    category = "crafting",
+    enabled = false,
+    energy_required = 3,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "steel-plate", amount = 3},
+    },
+    results = {
+      {type = "item", name = "sp-wheel", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-train-boige",  -- #ForRegEx# - recipe
+    category = "crafting",
+    enabled = false,
+    energy_required = 3,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-wheel", amount = 4},
+      {type = "item", name = "sp-bolts", amount = 8},
+      {type = "item", name = "sp-spring", amount = 12},
+      {type = "item", name = "steel-plate", amount = 4},
+    },
+    results = {
+      {type = "item", name = "sp-train-boige", amount = 1}
+    }
+  },
   ------------------------------------------------------------------------------
   -- Alternate recipes for vanilla items
   ------------------------------------------------------------------------------
@@ -1779,7 +2150,7 @@ data:extend({
       {"stone", 8},
       {"sp-cement", 4}
     },
-    result= "landfill",
+    result = "landfill",
     result_count = 2
   },
   {
@@ -2431,6 +2802,35 @@ if not mods["Krastorio2"] then
       results = {
         {type = "item", name = "sp-magnesium-slab", amount = 2},
         {type = "fluid", name = "sp-chloride", amount = 10}
+      }
+    },
+    {
+      type = "recipe",
+      name = "sp-urea",  -- #ForRegEx# - recipe
+      category = "chemistry",
+      enabled = false,
+      energy_required = 3.2,  -- time in seconds to make the item
+      ingredients = {
+        {type = "item", name = "sulfur", amount = 1},
+        {type = "fluid", name = "sp-ammonia", amount = 50},
+      },
+      results = {
+        {type = "item", name = "sp-urea", amount = 1}
+      }
+    },
+    {
+      type = "recipe",
+      name = "sp-carbon-fiber",  -- #ForRegEx# - recipe
+      category = "chemistry",
+      enabled = false,
+      energy_required = 3.2,  -- time in seconds to make the item
+      ingredients = {
+        {type = "item", name = "plastic-bar", amount = 3},
+        {type = "item", name = "sp-graphite", amount = 1},
+        {type = "fluid", name = "sp-nitric-acid", amount = 50},
+      },
+      results = {
+        {type = "item", name = "sp-carbon-fiber", amount = 1}
       }
     },
   })

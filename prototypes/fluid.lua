@@ -239,6 +239,18 @@ data:extend({
     icon_mipmaps = 4,
     order = "a[fluid]-f[vynil-chloride]"
   },
+  {
+    type = "fluid",
+    name = "sp-methyl-tert-butyl-ether",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1KJ",
+    base_color = {r=0.05, g=0.1, b=0.5},
+    flow_color = {r=0.05, g=0.1, b=0.5},
+    icon = "__Spaghenutti__/graphics/dummy/dummy-fluid-sp-deuterium.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    order = "a[fluid]-f[vynil-chloride]"
+  },
 })
 
 if not mods["Krastorio2"] then
@@ -290,6 +302,30 @@ if not mods["Krastorio2"] then
       icon_size = 64,
     icon_mipmaps = 4,
       order = "a[fluid]-f[oxygen]"
+    },
+    {
+      type = "fluid",
+      name = "sp-ammonia",  -- #ForRegEx# - fluid
+      default_temperature = 25,
+      heat_capacity = "0.1KJ",
+      base_color = {r=0.05, g=0.1, b=0.5},
+      flow_color = {r=0.05, g=0.1, b=0.5},
+      icon = "__Spaghenutti__/graphics/dummy/dummy-fluid-sp-oxygen.png",
+      icon_size = 64,
+    icon_mipmaps = 4,
+      order = "a[fluid]-f[ammonia]"
+    },
+    {
+      type = "fluid",
+      name = "sp-nitric-acid",  -- #ForRegEx# - fluid
+      default_temperature = 25,
+      heat_capacity = "0.1KJ",
+      base_color = {r=0.05, g=0.1, b=0.5},
+      flow_color = {r=0.05, g=0.1, b=0.5},
+      icon = "__Spaghenutti__/graphics/dummy/dummy-fluid-sp-oxygen.png",
+      icon_size = 64,
+    icon_mipmaps = 4,
+      order = "a[fluid]-f[nitric-acid]"
     },
   })
 end
