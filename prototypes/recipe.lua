@@ -24,14 +24,14 @@ local util = require("data-util")
 --    + "sp-transformer"
 --    + "sp-wheel"
 --    + "sp-train-boige"
---    - "sp-cubit" (fix recipe?)
---    - "sp-deuterium" (fluid)
---    - "sp-ethylene" (fluid)
---    - "sp-ethylene-dichloride" (fluid)
---    - "sp-sodium-hydroxide" (fluid)
---    - "sp-sodium-carbonate" (fluid)
---    - "sp-propene" (fluid)
---    - "sp-propylene" (fluid)
+--    + "sp-cubit" (fix recipe?)
+--    + "sp-deuterium" (fluid)
+--    + "sp-ethylene" (fluid)
+--    + "sp-ethylene-dichloride" (fluid)
+--    + "sp-sodium-hydroxide" (fluid)
+--    + "sp-sodium-carbonate" (fluid)
+--    ++ "sp-propene" (fluid)
+--    + "sp-propylene" (fluid)
 --    - "sp-benzene" (fluid)
 --    - "sp-styrene" (fluid)
 --    - "sp-vynil-chloride" (fluid)
@@ -1833,6 +1833,20 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "sp-catalyst-from-liquid-sodium",  -- #ForRegEx# - recipe
+    category = "chemistry",
+    enabled = false,
+    energy_required = 3.2,  -- time in seconds to make the item
+    ingredients = {
+      {type = "fluid", name = "sp-liquid-sodium", amount = 20},
+      {type = "fluid", name = "sp-propylene", amount = 40}
+    },
+    results = {
+      {type = "item", name = "sp-catalyst", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
     name = "sp-mirror-from-silver",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
@@ -2078,6 +2092,83 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-train-boige", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-propene",  -- #ForRegEx# - recipe
+    category = "chemistry",
+    enabled = false,
+    energy_required = 3,  -- time in seconds to make the item
+    ingredients = {
+      {type = "fluid", name = "petroleum-gas", amount = 100},
+      {type = "item", name = "sp-sinter-filter", amount = 2},
+      {type = "item", name = "coal", amount = 6},
+    },
+    results = {
+      {type = "fluid", name = "sp-propene", amount = 40}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-ethylene-and-propene",  -- #ForRegEx# - recipe
+    icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
+    icon_size = 64,
+    mip_maps = 4,
+    category = "chemistry",
+    subgroup = "processed-resource",
+    enabled = false,
+    energy_required = 3,  -- time in seconds to make the item
+    ingredients = {
+      {type = "fluid", name = "petroleum-gas", amount = 100},
+      {type = "item", name = "sp-sinter-filter", amount = 1},
+    },
+    results = {
+      {type = "fluid", name = "sp-ethylene", amount = 40},
+      {type = "fluid", name = "sp-propene", amount = 50},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-propylene",  -- #ForRegEx# - recipe
+    category = "chemistry",
+    enabled = false,
+    energy_required = 4,  -- time in seconds to make the item
+    ingredients = {
+      {type = "fluid", name = "sp-propene", amount = 100},
+      {type = "item", name = "sp-catalyst", amount = 1},
+    },
+    results = {
+      {type = "fluid", name = "sp-propylene", amount = 100},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-sodium-hydroxide-from-liquid-sodium",  -- #ForRegEx# - recipe
+    category = "chemistry",
+    enabled = false,
+    energy_required = 12,  -- time in seconds to make the item
+    ingredients = {
+      {type = "fluid", name = "sp-liquid-sodium", amount = 35},
+      {type = "fluid", name = "water", amount = 100},
+    },
+    results = {
+      {type = "fluid", name = "sp-sodium-hydroxide", amount = 20},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-sodium-carbonate",  -- #ForRegEx# - recipe
+    category = "chemistry",
+    enabled = false,
+    energy_required = 4,  -- time in seconds to make the item
+    ingredients = {
+      {type = "fluid", name = "sp-liquid-sodium", amount = 60},
+      {type = "fluid", name = "sp-oxygen", amount = 100},
+      {type = "item", name = "sp-graphie", amount = 3},
+    },
+    results = {
+      {type = "fluid", name = "sp-sodium-hydroxide", amount = 60},
     }
   },
   ------------------------------------------------------------------------------
@@ -2410,12 +2501,13 @@ if not mods["Krastorio2"] then
     {
       type = "recipe",
       name = "sp-mirror",  -- #ForRegEx# - recipe
-      category = "crafting",
+      category = "crafting-with-fluid",
       enabled = false,
       energy_required = 2.8,  -- time in seconds to make the item
       ingredients = {
         {type = "item", name = "sp-glass", amount = 2},
-        {type = "item", name = "sp-aluminum-sheet", amount = 1}
+        {type = "item", name = "sp-aluminum-sheet", amount = 1},
+        {type = "fluid", name = "sp-sodium-carbonate", amount = 20}
       },
       results = {
         {type = "item", name = "sp-mirror", amount = 1}
@@ -2486,8 +2578,9 @@ if not mods["Krastorio2"] then
       enabled = false,
       energy_required = 0.4,  -- time in seconds to make the item
       ingredients = {
-        {type = "item", name = "sp-duralumin", amount = 1},
+        {type = "item", name = "sp-monocrystal", amount = 1},
         {type = "fluid", name = "sp-hydrogen", amount = 1},
+        {type = "fluid", name = "sp-graphene", amount = 2},
       },
       results = {
         {type = "item", name = "sp-cubit", amount = 1}
@@ -2831,6 +2924,54 @@ if not mods["Krastorio2"] then
       },
       results = {
         {type = "item", name = "sp-carbon-fiber", amount = 1}
+      }
+    },
+    {
+      type = "recipe",
+      name = "sp-ethylene-dichloride",  -- #ForRegEx# - recipe
+      category = "chemistry",
+      enabled = false,
+      energy_required = 1.6,  -- time in seconds to make the item
+      ingredients = {
+        {type = "fluid", name = "sp-ethylene", amount = 60},
+        {type = "fluid", name = "sp-chlorine", amount = 60},
+      },
+      results = {
+        {type = "fluid", name = "sp-ethylene-dichloride", amount = 60},
+      }
+    },
+    {
+      type = "recipe",
+      name = "sp-sodium-hydroxide-from-salt",  -- #ForRegEx# - recipe
+      icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
+      icon_size = 64,
+      scale = 0.25,
+      category = "chemistry",
+      subgroup = "raw-resource",
+      enabled = false,
+      energy_required = 6,  -- time in seconds to make the item
+      ingredients = {
+        {type = "item", name = "sp-salt", amount = 2},
+        {type = "fluid", name = "water", amount = 60},
+      },
+      results = {
+        {type = "fluid", name = "sp-sodium-hydroxide", amount = 50},
+        {type = "fluid", name = "sp-chlorine", amount = 50},
+      }
+    },
+    {
+      type = "recipe",
+      name = "sp-sodium-hydroxide-from-sodium",  -- #ForRegEx# - recipe
+      category = "chemistry",
+      enabled = false,
+      energy_required = 16,  -- time in seconds to make the item
+      ingredients = {
+        {type = "item", name = "sp-sodium", amount = 5},
+        {type = "fluid", name = "sp-hydrogen", amount = 100},
+        {type = "fluid", name = "sp-oxygen", amount = 100},
+      },
+      results = {
+        {type = "fluid", name = "sp-sodium-hydroxide", amount = 20},
       }
     },
   })

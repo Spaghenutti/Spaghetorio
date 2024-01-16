@@ -161,12 +161,13 @@ data:extend({
   {
     type = "recipe",
     name = "sp-mirror",  -- #ForRegEx# - recipe
-    category = "crafting",
+    category = "crafting-with-fluid",
     enabled = false,
     energy_required = 2.8,  -- time in seconds to make the item
     ingredients = {
       {type = "item", name = "glass", amount = 2},
-      {type = "item", name = "sp-aluminum-sheet", amount = 1}
+      {type = "item", name = "sp-aluminum-sheet", amount = 1},
+      {type = "fluid", name = "sp-sodium-carbonate", amount = 20}
     },
     results = {
       {type = "item", name = "sp-mirror", amount = 1}
@@ -600,6 +601,72 @@ data:extend({
       {type = "item", name = "sp-carbon-fiber", amount = 1}
     }
   },
+  {
+    type = "recipe",
+    name = "sp-deuterium",  -- #ForRegEx# - recipe
+    icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
+    icon_size = 64,
+    mip_mapts = 4,
+    category = "electrolysis",
+    subgroup = "raw-resource",
+    enabled = false,
+    energy_required = 6,  -- time in seconds to make the item
+    ingredients = {
+      {type = "fluid", name = "heavy-water", amount = 50},
+    },
+    results = {
+      {type = "fluid", name = "oxygen", amount = 50},
+      {type = "fluid", name = "sp-deuterium", amount = 50}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-ethylene-dichloride",  -- #ForRegEx# - recipe
+    category = "chemistry",
+    enabled = false,
+    energy_required = 1.6,  -- time in seconds to make the item
+    ingredients = {
+      {type = "fluid", name = "sp-ethylene", amount = 60},
+      {type = "fluid", name = "chlorine", amount = 60},
+    },
+    results = {
+      {type = "fluid", name = "sp-ethylene-dichloride", amount = 60},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-sodium-hydroxide-from-salt",  -- #ForRegEx# - recipe
+    icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
+    icon_size = 64,
+    scale = 0.25,
+    category = "electrolysis",
+    subgroup = "raw-resource",
+    enabled = false,
+    energy_required = 1.6,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-salt", amount = 2},
+      {type = "fluid", name = "water", amount = 60},
+    },
+    results = {
+      {type = "fluid", name = "sp-sodium-hydroxide", amount = 50},
+      {type = "fluid", name = "chlorine", amount = 50},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-sodium-hydroxide-from-sodium",  -- #ForRegEx# - recipe
+    category = "chemistry",
+    enabled = false,
+    energy_required = 16,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-sodium", amount = 5},
+      {type = "fluid", name = "hydrogen", amount = 100},
+      {type = "fluid", name = "oxygen", amount = 100},
+    },
+    results = {
+      {type = "fluid", name = "sp-sodium-hydroxide", amount = 20},
+    }
+  },
 })
 
 -- items
@@ -820,3 +887,4 @@ util.change_recipe_ingredients("sp-train-boige",
 -- Change category
 data.raw.recipe["sp-aluminum-sheet"].category = "electrolysis"
 data.raw.recipe["sp-zinc-plate"].category = "electrolysis"
+data.raw.recipe["sp-sodium-hydroxide-from-liquid-sodium"].category = "electrolysis"
