@@ -30,12 +30,43 @@ local util = require("data-util")
 --    + "sp-ethylene-dichloride" (fluid)
 --    + "sp-sodium-hydroxide" (fluid)
 --    + "sp-sodium-carbonate" (fluid)
---    ++ "sp-propene" (fluid)
+--    ++ "sp-propane" (fluid)
 --    + "sp-propylene" (fluid)
---    - "sp-benzene" (fluid)
---    - "sp-styrene" (fluid)
---    - "sp-vynil-chloride" (fluid)
---    - "sp-methyl-tert-butyl-ether" (fluid)
+--    + "sp-benzene" (fluid)
+--    + "sp-styrene" (fluid)
+--    + "sp-vynil-chloride" (fluid)
+--    + "sp-methyl-tert-butyl-ether" (fluid)
+--    + "sp-control-unit" (similar icon to rocket control unit)
+--    + "sp-sensor"
+--    - "sp-dynamo" (electric motor and battery)
+--    - "sp-nuclear-waste"
+--    - "sp-nanowire"
+--    - "sp-biochip"
+--    - "sp-vortex-core"
+--    - "sp-cryptochip"
+--    - "sp-nanoflex"
+--    - "sp-quantum-logic-gate"
+--    - "sp-plasmacore"
+--    - "sp-advanced-automation-core"
+--    - "sp-flux-capacitor" (device from back to the future)
+--    - "sp-gamma-radiation-source"
+--    - "sp-fusion-core"
+--    - "sp-quantum-foam"
+--    - "sp-chronomatter"
+--    - "sp-plasma-crystals"
+--    - "sp-quantum-crystals"
+--    - "sp-dark-matter"
+--    - "sp-gravitonium"
+--    - "sp-chronalite"
+--    - 
+--    - 
+--    - 
+--    - 
+--    - 
+--    - 
+--    - 
+--    - 
+--    - 
 --    - 
 --  - add uses to:
 --    - "sp-antimony"
@@ -131,7 +162,7 @@ local util = require("data-util")
 --    - "sp-ethylene-dichloride" (fluid)
 --    - "sp-sodium-hydroxide" (fluid)
 --    - "sp-sodium-carbonate" (fluid)
---    - "sp-propene" (fluid)
+--    - "sp-propane" (fluid)
 --    - "sp-propylene" (fluid)
 --    - "sp-benzene" (fluid)
 --    - "sp-styrene" (fluid)
@@ -1723,14 +1754,30 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "sp-empty-fuel-rod",  -- #ForRegEx# - recipe
+    category = "crafting",
+    enabled = false,
+    energy_required = 20,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-graphite", amount = 2},
+      {type = "item", name = "sp-tungsten-slab", amount = 1},
+      {type = "item", name = "sp-zirconium-rod", amount = 2},
+      {type = "item", name = "sp-cerium", amount = 1},
+      {type = "item", name = "sp-TiNb", amount = 8},
+    },
+    results = {
+      {type = "item", name = "sp-empty-fuel-rod", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
     name = "sp-plutonium-239-fuel-rod",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 5.2,  -- time in seconds to make the item
     ingredients = {
       {type = "item", name = "sp-plutonium-239", amount = 4},
-      {type = "item", name = "sp-graphite", amount = 2},
-      {type = "item", name = "sp-tungsten-slab", amount = 1},
+      {type = "item", name = "sp-empty-fuel-rod", amount = 1}
     },
     results = {
       {type = "item", name = "sp-plutonium-fuel-rod", amount = 1}
@@ -1745,8 +1792,7 @@ data:extend({
     ingredients = {
       {type = "item", name = "sp-plutonium-239", amount = 1},
       {type = "item", name = "sp-plutonium-240", amount = 1},
-      {type = "item", name = "sp-graphite", amount = 2},
-      {type = "item", name = "sp-tungsten-carbide", amount = 1},
+      {type = "item", name = "sp-empty-fuel-rod", amount = 1}
     },
     results = {
       {type = "item", name = "sp-plutonium-fuel-rod", amount = 1}
@@ -1991,11 +2037,11 @@ data:extend({
     enabled = false,
     energy_required = 5,  -- time in seconds to make the item
     ingredients = {
-      {type = "item", name = "sp-ceramics", amount = 1},
+      {type = "item", name = "sp-laser", amount = 1},
       {type = "item", name = "sp-bolts", amount = 4},
       {type = "item", name = "sp-stainless-steel", amount = 3},
       {type = "item", name = "sp-stainless-steel-gear-wheel", amount = 6},
-      {type = "item", name = "sp-integrated-circuit", amount = 2},
+      {type = "item", name = "advanced-circuit", amount = 2},
       {type = "fluid", name = "lubricant", amount = 20},
     },
     results = {
@@ -2096,7 +2142,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-propene",  -- #ForRegEx# - recipe
+    name = "sp-propane",  -- #ForRegEx# - recipe
     category = "chemistry",
     enabled = false,
     energy_required = 3,  -- time in seconds to make the item
@@ -2106,7 +2152,7 @@ data:extend({
       {type = "item", name = "coal", amount = 6},
     },
     results = {
-      {type = "fluid", name = "sp-propene", amount = 40}
+      {type = "fluid", name = "sp-propane", amount = 40}
     }
   },
   {
@@ -2125,7 +2171,7 @@ data:extend({
     },
     results = {
       {type = "fluid", name = "sp-ethylene", amount = 40},
-      {type = "fluid", name = "sp-propene", amount = 50},
+      {type = "fluid", name = "sp-propane", amount = 50},
     }
   },
   {
@@ -2135,7 +2181,7 @@ data:extend({
     enabled = false,
     energy_required = 4,  -- time in seconds to make the item
     ingredients = {
-      {type = "fluid", name = "sp-propene", amount = 100},
+      {type = "fluid", name = "sp-propane", amount = 100},
       {type = "item", name = "sp-catalyst", amount = 1},
     },
     results = {
@@ -2169,6 +2215,84 @@ data:extend({
     },
     results = {
       {type = "fluid", name = "sp-sodium-hydroxide", amount = 60},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-benzene",  -- #ForRegEx# - recipe
+    category = "chemistry",
+    enabled = false,
+    energy_required = 4.4,  -- time in seconds to make the item
+    ingredients = {
+      {type = "fluid", name = "petroleum-gas", amount = 100},
+      {type = "item", name = "sp-sinter-filter", amount = 1},
+      {type = "item", name = "coal", amount = 10},
+    },
+    results = {
+      {type = "fluid", name = "sp-benzene", amount = 30}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-styrene",  -- #ForRegEx# - recipe
+    category = "chemistry",
+    enabled = false,
+    energy_required = 3.6,  -- time in seconds to make the item
+    ingredients = {
+      {type = "fluid", name = "sp-benzene", amount = 100},
+      {type = "fluid", name = "water", amount = 1},
+      {type = "item", name = "iron-plate", amount = 2},
+    },
+    results = {
+      {type = "fluid", name = "sp-styrene", amount = 50}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-control-unit",  -- #ForRegEx# - recipe
+    category = "crafting",
+    enabled = false,
+    energy_required = 5,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-glass-fiber", amount = 1},
+      {type = "item", name = "sp-compute-unit", amount = 2},
+      {type = "item", name = "sp-sensor", amount = 2},
+      {type = "item", name = "sp-relay", amount = 6},
+    },
+    results = {
+      {type = "item", name = "sp-electrode", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-sensor",  -- #ForRegEx# - recipe
+    category = "crafting",
+    enabled = false,
+    energy_required = 4,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "plastic-bar", amount = 2},
+      {type = "item", name = "sp-lens", amount = 5},
+      {type = "item", name = "sp-cmos", amount = 1},
+      {type = "item", name = "sp-mirror", amount = 2},
+    },
+    results = {
+      {type = "item", name = "sp-sensor", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-dynamo",  -- #ForRegEx# - recipe
+    category = "crafting",
+    enabled = false,
+    energy_required = 3.6,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "electric-motor", amount = 1},
+      {type = "item", name = "battery", amount = 4},
+      {type = "item", name = "sp-bolts", amount = 2},
+      {type = "item", name = "iron-plate", amount = 2},
+    },
+    results = {
+      {type = "item", name = "sp-dynamo", amount = 1}
     }
   },
   ------------------------------------------------------------------------------
@@ -2544,13 +2668,12 @@ if not mods["Krastorio2"] then
     {
       type = "recipe",
       name = "sp-uranium-fuel-rod",  -- #ForRegEx# - recipe
-      category = "crafting-with-fluid",
+      category = "crafting",
       enabled = false,
       energy_required = 4,  -- time in seconds to make the item
       ingredients = {
         {type = "item", name = "uranium-235", amount = 2},
-        {type = "item", name = "sp-graphite", amount = 2},
-        {type = "fluid", name = "sp-nitrogen", amount = 100},
+        {type = "item", name = "sp-empty-fuel-rod", amount = 1}
       },
       results = {
         {type = "item", name = "sp-uranium-fuel-rod", amount = 1}
@@ -2974,5 +3097,50 @@ if not mods["Krastorio2"] then
         {type = "fluid", name = "sp-sodium-hydroxide", amount = 20},
       }
     },
+    {
+      type = "recipe",
+      name = "sp-methyl-tert-butyl-ether",  -- #ForRegEx# - recipe
+      category = "chemistry",
+      enabled = false,
+      energy_required = 3.6,  -- time in seconds to make the item
+      ingredients = {
+        {type = "fluid", name = "sp-styrene", amount = 20},
+        {type = "fluid", name = "sp-propane", amount = 50}
+      },
+      results = {
+        {type = "fluid", name = "sp-methyl-tert-butyl-ether", amount = 50}
+      }
+    },
+    {
+      type = "recipe",
+      name = "sp-vynil-chloride",  -- #ForRegEx# - recipe
+      category = "chemistry",
+      enabled = false,
+      energy_required = 3.2,  -- time in seconds to make the item
+      ingredients = {
+        {type = "fluid", name = "sp-styrene", amount = 20},
+        {type = "fluid", name = "sp-chlorine", amount = 30}
+      },
+      results = {
+        {type = "fluid", name = "sp-vynil-chloride", amount = 30}
+      }
+    },
   })
 end
+
+-- Recipe changes for base factorio items
+util.change_recipe_ingredients("speed-module",
+  {{"electronic-circuit", 5}, {"plastic-bar", 1}},
+  {{"electronic-circuit", 8}, {"plastic-bar", 2}},
+  15,
+  20)
+util.change_recipe_ingredients("speed-module-2",
+  {{"sp-circuit-board", 2}, {"advanced-circuit", 5}, {"sp-solder", 4}, {"sp-integrated-circuit", 2}},
+  {{"sp-circuit-board", 4}, {"advanced-circuit", 10}, {"sp-solder", 4}, {"sp-integrated-circuit", 4}},
+  20,
+  30)
+util.change_recipe_ingredients("speed-module-3",
+  {{"sp-circuit-board", 4}, {"advanced-circuit", 5}, {"sp-processor", 2}, {"sp-memory-chip", 2}, {"sp-cmos", 6}, {"sp-integrated-circuit", 2}},
+  {{"sp-circuit-board", 6}, {"advanced-circuit", 10}, {"sp-processor", 6}, {"sp-capacitor", 6}, {"sp-light-emitting-diode", 6}, {"sp-integrated-circuit", 4}},
+  45,
+  60)

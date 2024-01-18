@@ -1531,6 +1531,16 @@ data:extend({
     order = "[electrode]",
     stack_size = 100
   },
+  {
+    type = "item",
+    name = "sp-sensor",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "electrical-optical-component",
+    order = "[sensor]",
+    stack_size = 100
+  },
   ------------------------------------------------------------------------------
   -- Subgroup intermediate-products --
   ------------------------------------------------------------------------------
@@ -1568,6 +1578,15 @@ data:extend({
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "intermediate-product",
     order = "[gyro]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "sp-dynamo",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+    icon_size = 64, icon_mipmaps = 4,
+    subgroup = "intermediate-product",
+    order = "[dynamo]",
     stack_size = 50
   },
   {
@@ -1816,6 +1835,15 @@ data:extend({
     order = "[reactor-core]",
     stack_size = 50
   },
+  {
+    type = "item",
+    name = "sp-control-unit",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+    icon_size = 64, icon_mipmaps = 4,
+    subgroup = "advanced-intermediate-product",
+    order = "[control-unit]",
+    stack_size = 50
+  },
   ------------------------------------------------------------------------------
   -- Subgroup chemical-product --
   ------------------------------------------------------------------------------
@@ -1860,6 +1888,15 @@ data:extend({
   ------------------------------------------------------------------------------
   -- Subgroup fuel --
   ------------------------------------------------------------------------------
+  {
+    type = "item",
+    name = "sp-empty-fuel-rod",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+    icon_size = 64, icon_mipmaps = 4,
+    subgroup = "fuel-processing",
+    order = "nuclear-a[empty-fuel-rod]",
+    stack_size = 50
+  },
   {
     type = "item",
     name = "sp-uranium-fuel-rod",  -- #ForRegEx# - item

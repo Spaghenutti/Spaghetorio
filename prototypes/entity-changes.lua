@@ -23,6 +23,14 @@ end
 util.change_item_icon("steel-plate", "__Spaghenutti__/graphics/dummy/dummy-item-replacement-default.png", 128, nil)
 
 -- Change subgroup of items
+data.raw.item["sulfur"].subgroup = "processed-resource"
+data.raw.item["uranium-238"].subgroup = "processed-resource"
+data.raw.item["uranium-235"].subgroup = "processed-resource"
+
+data.raw.item["low-density-structure"].subgroup = "advanced-raw-material"
+
+data.raw.item["plastic-bar"].subgroup = "chemical-product"
+
 data.raw.item["copper-cable"].subgroup = "mechanical-component"
 data.raw.item["iron-stick"].subgroup = "mechanical-component"
 data.raw.item["iron-gear-wheel"].subgroup = "mechanical-component"
@@ -32,21 +40,14 @@ data.raw.item["electronic-circuit"].subgroup = "electrical-optical-component"
 data.raw.item["advanced-circuit"].subgroup = "electrical-optical-component"
 data.raw.item["processing-unit"].subgroup = "electrical-optical-component"  -- idea: use this as processor and change icon
 data.raw.item["battery"].subgroup = "electrical-optical-component"
-data.raw.item["rocket-control-unit"].subgroup = "electrical-optical-component"
+
+data.raw.item["rocket-control-unit"].subgroup = "advanced-intermediate-product"
 
 data.raw.item["solid-fuel"].subgroup = "fuel-processing"
 data.raw.item["rocket-fuel"].subgroup = "fuel-processing"
 data.raw.item["nuclear-fuel"].subgroup = "fuel-processing"
 data.raw.item["uranium-fuel-cell"].subgroup = "fuel-processing"
 data.raw.item["used-up-uranium-fuel-cell"].subgroup = "fuel-processing"
-
-data.raw.item["sulfur"].subgroup = "processed-resource"
-data.raw.item["uranium-238"].subgroup = "processed-resource"
-data.raw.item["uranium-235"].subgroup = "processed-resource"
-
-data.raw.item["low-density-structure"].subgroup = "advanced-raw-material"
-
-data.raw.item["plastic-bar"].subgroup = "chemical-product"
 
 data.raw.item["explosives"].subgroup = "ammo"
 data.raw.item["explosives"].order = "a-a"

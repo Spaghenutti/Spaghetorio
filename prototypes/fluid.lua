@@ -181,7 +181,7 @@ data:extend({
   },
   {
     type = "fluid",
-    name = "sp-propene",  -- #ForRegEx# - fluid
+    name = "sp-propane",  -- #ForRegEx# - fluid
     default_temperature = 25,
     heat_capacity = "0.1KJ",
     base_color = {r=0.05, g=0.1, b=0.5},

@@ -667,6 +667,34 @@ data:extend({
       {type = "fluid", name = "sp-sodium-hydroxide", amount = 20},
     }
   },
+  {
+    type = "recipe",
+    name = "sp-methyl-tert-butyl-ether",  -- #ForRegEx# - recipe
+    category = "chemistry",
+    enabled = false,
+    energy_required = 3.6,  -- time in seconds to make the item
+    ingredients = {
+      {type = "fluid", name = "biomethanol", amount = 50},
+      {type = "fluid", name = "sp-propane", amount = 50}
+    },
+    results = {
+      {type = "fluid", name = "sp-methyl-tert-butyl-ether", amount = 50}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-vynil-chloride",  -- #ForRegEx# - recipe
+    category = "chemistry",
+    enabled = false,
+    energy_required = 3.2,  -- time in seconds to make the item
+    ingredients = {
+      {type = "fluid", name = "sp-styrene", amount = 20},
+      {type = "fluid", name = "chlorine", amount = 30}
+    },
+    results = {
+      {type = "fluid", name = "sp-vynil-chloride", amount = 30}
+    }
+  },
 })
 
 -- items
