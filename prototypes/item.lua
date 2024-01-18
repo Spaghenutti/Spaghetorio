@@ -1688,6 +1688,16 @@ data:extend({
     order = "[heating-filament]",
     stack_size = 50
   },
+  {
+    type = "item",
+    name = "sp-compressor",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "intermediate-product",
+    order = "[compressor]",
+    stack_size = 100
+  },
   ------------------------------------------------------------------------------
   -- Subgroup advanced-intermediate-product --
   ------------------------------------------------------------------------------

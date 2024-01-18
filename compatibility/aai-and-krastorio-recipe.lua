@@ -785,6 +785,16 @@ util.change_recipe_ingredients("stone-furnace",
   {{"stone", 40}},
   4,
   8)
+util.change_recipe_ingredients("steel-furnace",
+  {{"steel-beam", 20}, {"stone-tablet", 40}, {"sp-heating-filament", 6}, {"engine-unit", 12}},
+  {{"steel-beam", 40}, {"stone-tablet", 80}, {"sp-heating-filament", 12}, {"engine-unit", 24}},
+  12,
+  24)
+util.change_recipe_ingredients("electric-furnace",
+  {{"steel-beam", 20}, {"stone-tablet", 30}, {"sp-heating-filament", 10}, {"sp-electromagnet", 20}, {"electric-motor", 8}},
+  {{"steel-beam", 40}, {"stone-tablet", 60}, {"sp-heating-filament", 20}, {"sp-electromagnet", 40}, {"electric-motor", 16}},
+  16,
+  32)
 util.change_recipe_ingredients("electric-mining-drill",
   {{"iron-beam", 8}, {"iron-gear-wheel", 24}, {"sp-bolts", 20}, {"motor", 6}},
   {{"iron-beam", 16}, {"iron-gear-wheel", 36}, {"sp-bolts", 28}, {"motor", 10}},
@@ -811,8 +821,8 @@ util.change_recipe_ingredients("lab",
   10,
   20)
 util.change_recipe_ingredients("solar-panel",
-  {{"sp-aluminum-frame", 5}, {"electronic-circuit", 4}, {"copper-cable", 10}, {"sp-bolts", 8}, {"silicon", 40}, {"sp-phosphorus", 6}},
-  {{"sp-aluminum-frame", 10}, {"electronic-circuit", 8}, {"copper-cable", 20}, {"sp-bolts", 16}, {"silicon", 80}, {"sp-phosphorus", 12}},
+  {{"sp-aluminum-frame", 5}, {"electronic-circuit", 4}, {"copper-cable", 10}, {"silicon", 40}, {"sp-phosphorus", 6}},
+  {{"sp-aluminum-frame", 10}, {"electronic-circuit", 8}, {"copper-cable", 20}, {"silicon", 80}, {"sp-phosphorus", 12}},
   10,
   20)
 util.change_recipe_ingredients("assembling-machine-2",
@@ -838,13 +848,23 @@ util.change_recipe_ingredients("radar",
 util.change_recipe_ingredients("storage-tank",
   {{"sp-copper-tube", 10}, {"iron-plate", 16}, {"sp-bolts", 10}, {"sp-valve", 4}},
   {{"sp-copper-tube", 20}, {"iron-plate", 32}, {"sp-bolts", 30}, {"sp-valve", 6}},
-  4,
-  8)
+  8,
+  16)
 util.change_recipe_ingredients("pump",
   {{"steel-plate", 2}, {"sp-bolts", 4}, {"sp-valve", 2}, {"electric-motor", 2}},
   {{"steel-plate", 4}, {"sp-bolts", 8}, {"sp-valve", 4}, {"electric-motor", 4}},
   2,
   4)
+util.change_recipe_ingredients("accumulator",
+  {{"battery", 5}, {"iron-plate", 2}, {"sp-transformer", 1}, {"electronic-circuit", 2}},
+  {{"battery", 10}, {"iron-plate", 5}, {"sp-transformer", 1}, {"electronic-circuit", 3}},
+  10,
+  20)
+util.change_recipe_ingredients("nuclear-reactor",
+  {{"concrete", 500}, {"sp-reactor-core", 1}, {"sp-control-unit", 100}, {"sp-niobium-steel", 300}, {"sp-TiAlSn", 200}, {"sp-heavy-bearing", 20}, {"sp-pressure-tank", 40}, {"electric-engine-unit", 10}, {"sp-bolts", 1000}},
+  {{"concrete", 2000}, {"sp-reactor-core", 1}, {"sp-control-unit", 200}, {"sp-niobium-steel", 500}, {"sp-TiAlSn", 400}, {"sp-heavy-bearing", 50}, {"sp-pressure-tank", 50}, {"electric-engine-unit", 40}, {"sp-bolts", 4000}},
+  500,
+  2000)
 
 -- AAI Industries
 util.change_recipe_ingredients("burner-turbine",
@@ -899,6 +919,21 @@ util.change_recipe_ingredients("kr-electrolysis-plant",
   {{"iron-beam", 72}, {"sp-bolts", 160}, {"glass", 48}, {"engine-unit", 12}, {"electronic-circuit", 12}},
   20,
   40)
+util.change_recipe_ingredients("kr-gas-power-station",
+  {{"steel-beam", 20}, {"sp-bolts", 30}, {"pipe", 20}, {"engine-unit", 8}, {"sp-dynamo", 4}, {"sp-valve", 10}},
+  {{"steel-beam", 40}, {"sp-bolts", 60}, {"pipe", 40}, {"engine-unit", 12}, {"sp-dynamo", 8}, {"sp-valve", 20}},
+  20,
+  40)
+util.change_recipe_ingredients("kr-advanced-solar-panel",
+  {{type = "fluid", name = "nitric-acid", amount = 25}, {"imersite-crystal", 10}, {"sp-tellurium", 3}, {"sp-titanium-frame", 20}, {"processing-unit", 2}},
+  {{type = "fluid", name = "nitric-acid", amount = 50}, {"imersite-crystal", 15}, {"sp-tellurium", 10}, {"sp-titanium-frame", 50}, {"processing-unit", 3}},
+  12,
+  24)
+util.change_recipe_ingredients("kr-energy-storage",
+  {{"processing-unit", 10}, {"energy-control-unit", 30}, {"sp-yittrium", 8}, {"sp-cerium", 20}, {"sp-superconductor", 5}, {"sp-duralumin", 20}},
+  {{"processing-unit", 20}, {"energy-control-unit", 60}, {"sp-yittrium", 12}, {"sp-cerium", 30}, {"sp-superconductor", 8}, {"sp-duralumin", 40}},
+  30,
+  60)
 
 -- Changes to Spaghenutty
 util.change_recipe_ingredients("sp-titanium-nitride",

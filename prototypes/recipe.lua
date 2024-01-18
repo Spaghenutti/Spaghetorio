@@ -2260,7 +2260,7 @@ data:extend({
       {type = "item", name = "sp-relay", amount = 6},
     },
     results = {
-      {type = "item", name = "sp-electrode", amount = 1}
+      {type = "item", name = "sp-control-unit", amount = 1}
     }
   },
   {
@@ -2287,9 +2287,26 @@ data:extend({
     energy_required = 3.6,  -- time in seconds to make the item
     ingredients = {
       {type = "item", name = "electric-motor", amount = 1},
+      {type = "item", name = "sp-ball-bearing", amount = 4},
       {type = "item", name = "battery", amount = 4},
       {type = "item", name = "sp-bolts", amount = 2},
       {type = "item", name = "iron-plate", amount = 2},
+    },
+    results = {
+      {type = "item", name = "sp-dynamo", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-compressor",  -- #ForRegEx# - recipe
+    category = "crafting",
+    enabled = false,
+    energy_required = 3.6,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "electric-motor", amount = 1},
+      {type = "item", name = "sp-ball-bearing", amount = 4},
+      {type = "item", name = "sp-bolts", amount = 2},
+      {type = "item", name = "steel-plate", amount = 6},
     },
     results = {
       {type = "item", name = "sp-dynamo", amount = 1}
