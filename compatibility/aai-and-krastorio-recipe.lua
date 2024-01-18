@@ -796,8 +796,8 @@ util.change_recipe_ingredients("electric-furnace",
   16,
   32)
 util.change_recipe_ingredients("electric-mining-drill",
-  {{"iron-beam", 8}, {"iron-gear-wheel", 24}, {"sp-bolts", 20}, {"motor", 6}},
-  {{"iron-beam", 16}, {"iron-gear-wheel", 36}, {"sp-bolts", 28}, {"motor", 10}},
+  {{"iron-beam", 8}, {"iron-gear-wheel", 24}, {"sp-bolts", 20}, {"electric-motor", 4}},
+  {{"iron-beam", 16}, {"iron-gear-wheel", 36}, {"sp-bolts", 28}, {"electric-motor", 8}},
   8,
   16)
 util.change_recipe_ingredients("boiler",
@@ -865,6 +865,21 @@ util.change_recipe_ingredients("nuclear-reactor",
   {{"concrete", 2000}, {"sp-reactor-core", 1}, {"sp-control-unit", 200}, {"sp-niobium-steel", 500}, {"sp-TiAlSn", 400}, {"sp-heavy-bearing", 50}, {"sp-pressure-tank", 50}, {"electric-engine-unit", 40}, {"sp-bolts", 4000}},
   500,
   2000)
+util.change_recipe_ingredients("heat-pipe",
+  {{"lithium", 10}, {"sp-sodium", 20}, {"sp-titanium-nitride", 2}},
+  {{"lithium", 20}, {"sp-sodium", 40}, {"sp-titanium-nitride", 4}},
+  2,
+  4)
+util.change_recipe_ingredients("heat-exchanger",
+  {{"sp-plate-heat-exchanger", 30}, {"sp-pressure-tube", 6}, {"sp-valve", 4}, {"sp-stainless-steel", 20}, {"sp-bolts", 24}},
+  {{"sp-plate-heat-exchanger", 30}, {"sp-pressure-tube", 6}, {"sp-valve", 4}, {"sp-stainless-steel", 20}, {"sp-bolts", 24}},
+  12,
+  24)
+util.change_recipe_ingredients("steam-turbine",
+  {{"electric-engine-unit", 4}, {"sp-pressure-tube", 12}, {"sp-turbine-rotor", 1}, {"sp-turbine-stator", 1}, {"sp-valve", 20}, {"sp-TiAlSn", 50}, {"sp-heavy-bearing", 4}},
+  {{"electric-engine-unit", 6}, {"sp-pressure-tube", 40}, {"sp-turbine-rotor", 1}, {"sp-turbine-stator", 1}, {"sp-valve", 40}, {"sp-TiAlSn", 80}, {"sp-heavy-bearing", 10}},
+  60,
+  90)
 
 -- AAI Industries
 util.change_recipe_ingredients("burner-turbine",
@@ -872,11 +887,16 @@ util.change_recipe_ingredients("burner-turbine",
   {{"iron-beam", 16}, {"stone-brick", 36}, {"iron-gear-wheel", 12}, {"motor", 4}},
   8,
   16)
-util.change_recipe_ingredients("fuel-processor",
+  util.change_recipe_ingredients("fuel-processor",
   {{"iron-plate", 12}, {"stone-brick", 24}, {"sp-bolts", 20}, {"motor", 2}},
   {{"iron-plate", 16}, {"stone-brick", 36}, {"sp-bolts", 24}, {"motor", 4}},
   12,
   24)
+util.change_recipe_ingredients("area-mining-drill",
+  {{"sp-monocrystal", 4}, {"sp-niobium-steel", 24}, {"imersium-gear-wheel", 16}, {"sp-titanium-carbide", 20}, {"electric-engine-unit", 10}, {"sp-transformer", 4}},
+  {{"sp-monocrystal", 8}, {"sp-niobium-steel", 32}, {"imersium-gear-wheel", 32}, {"sp-titanium-carbide", 30}, {"electric-engine-unit", 16}, {"sp-transformer", 8}},
+  36,
+  72)
 util.change_recipe_ingredients("burner-assembling-machine",
   {{"stone-brick", 20}, {"iron-plate", 20}, {"sp-bolts", 24}, {"motor", 4}},
   {{"stone-brick", 40}, {"iron-plate", 40}, {"sp-bolts", 40}, {"motor", 8}},
@@ -892,6 +912,11 @@ util.change_recipe_ingredients("engine-unit",
   {{"sp-connecting-rod", 12}, {"steel-plate", 4}, {"sp-bolts", 16}, {"steel-gear-wheel", 8}},
   2.4,
   4.8)
+  util.change_recipe_ingredients("electric-engine-unit",
+  {{"sp-electromagnet", 6}, {"sp-duralumin", 2}, {"sp-bolts", 6}, {type = "fluid", name = "lubricant", amount = 40}},
+  {{"sp-electromagnet", 9}, {"sp-duralumin", 3}, {"sp-bolts", 8}, {type = "fluid", name = "lubricant", amount = 60}},
+  6,
+  8)
 
 -- Krastorio
 util.change_recipe_ingredients("kr-wind-turbine",
@@ -934,6 +959,31 @@ util.change_recipe_ingredients("kr-energy-storage",
   {{"processing-unit", 20}, {"energy-control-unit", 60}, {"sp-yittrium", 12}, {"sp-cerium", 30}, {"sp-superconductor", 8}, {"sp-duralumin", 40}},
   30,
   60)
+util.change_recipe_ingredients("kr-fusion-reactor",
+  {{"concrete", 1000}, {"sp-stainless-steel", 1000}, {"sp-tungsten-slab", 300}, {"sp-graphene", 500}, {"sp-control-unit", 100}, {"sp-advanced-compute-unit", 50}, {"sp-glass-fiber", 100}, {"sp-plate-heat-exchanger", 60}, {"sp-cryostat", 40}, {"sp-neodymium-magnet", 200}, {"sp-superconductor", 40}, {"sp-electromagnet", 250}, {"heat-pipe", 100}},
+  {{"concrete", 4000}, {"sp-stainless-steel", 3000}, {"sp-tungsten-slab", 500}, {"sp-graphene", 1000}, {"sp-control-unit", 300}, {"sp-advanced-compute-unit", 100}, {"sp-glass-fiber", 250}, {"sp-plate-heat-exchanger", 200}, {"sp-cryostat", 100}, {"sp-neodymium-magnet", 400}, {"sp-superconductor", 100}, {"sp-electromagnet", 600}, {"heat-pipe", 200}},
+  700,
+  3000)
+util.change_recipe_ingredients("kr-advanced-steam-turbine",
+  {{"electric-engine-unit", 20}, {"sp-turbine-rotor", 3}, {"sp-turbine-stator", 3}, {"sp-TiAlSn", 50}, {"sp-heavy-bearing", 20}, {"sp-tungsten-carbide", 50}, {"sp-monocrystal", 30}},
+  {{"electric-engine-unit", 40}, {"sp-turbine-rotor", 3}, {"sp-turbine-stator", 3}, {"sp-TiAlSn", 80}, {"sp-heavy-bearing", 40}, {"sp-tungsten-carbide", 100}, {"sp-monocrystal", 50}},
+  90,
+  150)
+util.change_recipe_ingredients("kr-antimatter-reactor",
+  {{"ai-core", 100}, {"imersium-beam", 500}, {"energy-control-unit", 50}, {"sp-carbon-nanotubes", 200}, {"sp-quasicrystal", 200}, {"sp-superconductor", 80}, {"sp-advanced-compute-unit", 400}},
+  {{"ai-core", 200}, {"imersium-beam", 1000}, {"energy-control-unit", 100}, {"sp-carbon-nanotubes", 400}, {"sp-quasicrystal", 400}, {"sp-superconductor", 200}, {"sp-advanced-compute-unit", 600}},
+  1000,
+  2000)
+util.change_recipe_ingredients("kr-electric-mining-drill-mk2",
+  {{"steel-beam", 12}, {"sp-bolts", 30}, {"sp-ceramics", 24}, {"electric-engine", 8}, {"sp-TiNb", 8}, {"steel-gear-wheel", 12}},
+  {{"steel-beam", 20}, {"sp-bolts", 50}, {"sp-ceramics", 24}, {"electric-engine", 12}, {"sp-TiNb", 16}, {"steel-gear-wheel", 20}},
+  14,
+  28)
+util.change_recipe_ingredients("kr-electric-mining-drill-mk2",
+  {{"sp-diamond", 8}, {"sp-niobium-steel", 20}, {"electric-engine-unit", 4}, {"sp-aluminum-brass", 8}, {"sp-stainless-steel-gear-wheel", 12}},
+  {{"sp-diamond", 16}, {"sp-niobium-steel", 36}, {"electric-engine-unit", 8}, {"sp-aluminum-brass", 20}, {"sp-stainless-steel-gear-wheel", 24}},
+  20,
+  40)
 
 -- Changes to Spaghenutty
 util.change_recipe_ingredients("sp-titanium-nitride",
