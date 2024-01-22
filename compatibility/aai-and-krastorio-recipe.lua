@@ -946,6 +946,11 @@ util.change_recipe_ingredients("steam-turbine",
   {{"electric-engine-unit", 6}, {"sp-pressure-tube", 40}, {"sp-turbine-rotor", 1}, {"sp-turbine-stator", 1}, {"sp-valve", 40}, {"sp-TiAlSn", 80}, {"sp-heavy-bearing", 10}},
   60,
   90)
+util.change_recipe_ingredients("offshore-pump",
+  {{"electric-motor", 2}, {"pipe", 4}, {"sp-bolts", 2}},
+  {{"electric-motor", 3}, {"pipe", 8}, {"sp-bolts", 4}},
+  1,
+  2)
 
 -- AAI Industries
 util.change_recipe_ingredients("burner-turbine",
@@ -978,7 +983,7 @@ util.change_recipe_ingredients("engine-unit",
   {{"sp-connecting-rod", 12}, {"steel-plate", 4}, {"sp-bolts", 16}, {"steel-gear-wheel", 8}},
   2.4,
   4.8)
-  util.change_recipe_ingredients("electric-engine-unit",
+util.change_recipe_ingredients("electric-engine-unit",
   {{"sp-electromagnet", 6}, {"sp-duralumin", 2}, {"sp-bolts", 6}, {type = "fluid", name = "lubricant", amount = 40}},
   {{"sp-electromagnet", 9}, {"sp-duralumin", 3}, {"sp-bolts", 8}, {type = "fluid", name = "lubricant", amount = 60}},
   6,
@@ -1036,20 +1041,30 @@ util.change_recipe_ingredients("kr-advanced-steam-turbine",
   90,
   150)
 util.change_recipe_ingredients("kr-antimatter-reactor",
-  {{"ai-core", 100}, {"imersium-beam", 500}, {"energy-control-unit", 50}, {"sp-carbon-nanotubes", 200}, {"sp-quasicrystal", 200}, {"sp-superconductor", 80}, {"sp-advanced-compute-unit", 400}},
-  {{"ai-core", 200}, {"imersium-beam", 1000}, {"energy-control-unit", 100}, {"sp-carbon-nanotubes", 400}, {"sp-quasicrystal", 400}, {"sp-superconductor", 200}, {"sp-advanced-compute-unit", 600}},
+  {{"ai-core", 100}, {"imersium-beam", 500}, {"energy-control-unit", 50}, {"sp-carbon-nanotubes", 200}, {"sp-nanowire", 120}, {"sp-plasma-capsule", 40}, {"sp-nanobot", 80}, {"sp-biochip", 100}, {"sp-flux-capacitor", 20}},
+  {{"ai-core", 200}, {"imersium-beam", 1000}, {"energy-control-unit", 100}, {"sp-carbon-nanotubes", 400}, {"sp-nanowire", 250}, {"sp-plasma-capsule", 80}, {"sp-nanobot", 200}, {"sp-biochip", 200}, {"sp-flux-capacitor", 40}},
   1000,
   2000)
 util.change_recipe_ingredients("kr-electric-mining-drill-mk2",
-  {{"steel-beam", 12}, {"sp-bolts", 30}, {"sp-ceramics", 24}, {"electric-engine", 8}, {"sp-TiNb", 8}, {"steel-gear-wheel", 12}},
-  {{"steel-beam", 20}, {"sp-bolts", 50}, {"sp-ceramics", 24}, {"electric-engine", 12}, {"sp-TiNb", 16}, {"steel-gear-wheel", 20}},
+  {{"steel-beam", 12}, {"sp-bolts", 30}, {"sp-ceramics", 24}, {"electric-motor", 8}, {"sp-TiNb", 8}, {"steel-gear-wheel", 12}},
+  {{"steel-beam", 20}, {"sp-bolts", 50}, {"sp-ceramics", 24}, {"electric-motor", 12}, {"sp-TiNb", 16}, {"steel-gear-wheel", 20}},
   14,
   28)
-util.change_recipe_ingredients("kr-electric-mining-drill-mk2",
-  {{"sp-diamond", 8}, {"sp-niobium-steel", 20}, {"electric-engine-unit", 4}, {"sp-aluminum-brass", 8}, {"sp-stainless-steel-gear-wheel", 12}},
-  {{"sp-diamond", 16}, {"sp-niobium-steel", 36}, {"electric-engine-unit", 8}, {"sp-aluminum-brass", 20}, {"sp-stainless-steel-gear-wheel", 24}},
+util.change_recipe_ingredients("kr-electric-mining-drill-mk3",
+  {{"sp-diamond", 8}, {"sp-niobium-steel", 20}, {"electric-engine-unit", 4}, {"sp-invar", 8}, {"sp-stainless-steel-gear-wheel", 12}},
+  {{"sp-diamond", 16}, {"sp-niobium-steel", 36}, {"electric-engine-unit", 8}, {"sp-invar", 20}, {"sp-stainless-steel-gear-wheel", 24}},
   20,
   40)
+util.change_recipe_ingredients("kr-quarry-drill",
+  {{"sp-diamond", 40}, {"sp-niobium-steel", 50}, {"electric-engine-unit", 20}, {"sp-invar", 20}, {"sp-pressure-tube", 12}, {"sp-compressor", 12}},
+  {{"sp-diamond", 80}, {"sp-niobium-steel", 100}, {"electric-engine-unit", 40}, {"sp-invar", 40}, {"sp-pressure-tube", 24}, {"sp-compressor", 24}},
+  60,
+  120)
+util.change_recipe_ingredients("kr-mineral-water-pumpjack",
+  {{"sp-stainless-steel", 16}, {"sp-bronze-rod", 12}, {"sp-pressure-tube", 12}, {"sp-bolts", 24}, {"engine-unit", 8}},
+  {{"sp-stainless-steel", 32}, {"sp-bronze-rod", 24}, {"sp-pressure-tube", 24}, {"sp-bolts", 48}, {"engine-unit", 16}},
+  16,
+  32)
 
 -- Changes to Spaghenutty
 util.change_recipe_ingredients("sp-titanium-nitride",
