@@ -251,6 +251,54 @@ data:extend({
     icon_mipmaps = 4,
     order = "a[fluid]-f[vynil-chloride]"
   },
+  {
+    type = "fluid",
+    name = "sp-grobgnum-slurry",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1KJ",
+    base_color = {r=0.05, g=0.1, b=0.5},
+    flow_color = {r=0.05, g=0.1, b=0.5},
+    icon = "__Spaghenutti__/graphics/icons/grobgnum-slurry.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    order = "a[fluid]-f[grobgnum-slurry]"
+  },
+  {
+    type = "fluid",
+    name = "sp-grobgnumylene",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1KJ",
+    base_color = {r=0.05, g=0.1, b=0.5},
+    flow_color = {r=0.05, g=0.1, b=0.5},
+    icon = "__Spaghenutti__/graphics/icons/grobgnumylene.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    order = "a[fluid]-f[grobgnumylene]"
+  },
+  {
+    type = "fluid",
+    name = "sp-grobgnum-hydroxide",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1KJ",
+    base_color = {r=0.05, g=0.1, b=0.5},
+    flow_color = {r=0.05, g=0.1, b=0.5},
+    icon = "__Spaghenutti__/graphics/icons/grobgnum-hydroxide.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    order = "a[fluid]-f[grobgnum-hydroxide]"
+  },
+  {
+    type = "fluid",
+    name = "sp-chronomatter",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1KJ",
+    base_color = {r=0.05, g=0.1, b=0.5},
+    flow_color = {r=0.05, g=0.1, b=0.5},
+    icon = "__Spaghenutti__/graphics/icons/chronomatter.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    order = "a[fluid]-f[chronomatter]"
+  },
 })
 
 if not mods["Krastorio2"] then

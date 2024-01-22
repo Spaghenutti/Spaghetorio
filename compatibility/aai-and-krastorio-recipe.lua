@@ -695,6 +695,72 @@ data:extend({
       {type = "fluid", name = "sp-vynil-chloride", amount = 30}
     }
   },
+  {
+    type = "recipe",
+    name = "sp-chronomatter",  -- #ForRegEx# - recipe
+    category = "crafting-with-fluid",
+    enabled = false,
+    energy_required = 6,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-monocrystal", amount = 1},
+      {type = "item", name = "sp-rukite-powder", amount = 4},
+      {type = "item", name = "imersite-powder", amount = 4},
+      {type = "item", name = "sp-stibnite", amount = 4}
+    },
+    results = {
+      {type = "fluid", name = "sp-chronomatter", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-bioreactor",  -- #ForRegEx# - recipe
+    category = "crafting-with-fluid",
+    enabled = false,
+    energy_required = 10,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "biomass", amount = 10},
+      {type = "item", name = "sp-duralumin", amount = 20},
+      {type = "fluid", name = "sp-helium", amount = 50},
+      {type = "item", name = "sp-urea", amount = 20},
+      {type = "item", name = "sp-carbon-fiber", amount = 16},
+    },
+    results = {
+      {type = "item", name = "sp-bioreactor", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-grobgnum-explorer",  -- #ForRegEx# - recipe
+    category = "crafting",
+    enabled = false,
+    energy_required = 60,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-biochip", amount = 20},
+      {type = "item", name = "ai-core", amount = 20},
+      {type = "item", name = "sp-duralumin", amount = 25},
+      {type = "item", name = "sp-grobgnum-droplet", amount = 100},
+      {type = "item", name = "sp-TiNb", amount = 20},
+      {type = "item", name = "sp-bioreactor", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-grobgnum-explorer", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-electrolyte",  -- #ForRegEx# - recipe
+    category = "chemistry",
+    enabled = false,
+    energy_required = 2,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "lithium", amount = 3},
+      {type = "fluid", name = "chlorine", amount = 10},
+      {type = "fluid", name = "sp-propylene", amount = 10}
+    },
+    results = {
+      {type = "item", name = "sp-electrolyte", amount = 1}
+    }
+  },
 })
 
 -- items
@@ -960,8 +1026,8 @@ util.change_recipe_ingredients("kr-energy-storage",
   30,
   60)
 util.change_recipe_ingredients("kr-fusion-reactor",
-  {{"concrete", 1000}, {"sp-stainless-steel", 1000}, {"sp-tungsten-slab", 300}, {"sp-graphene", 500}, {"sp-control-unit", 100}, {"sp-advanced-compute-unit", 50}, {"sp-glass-fiber", 100}, {"sp-plate-heat-exchanger", 60}, {"sp-cryostat", 40}, {"sp-neodymium-magnet", 200}, {"sp-superconductor", 40}, {"sp-electromagnet", 250}, {"heat-pipe", 100}},
-  {{"concrete", 4000}, {"sp-stainless-steel", 3000}, {"sp-tungsten-slab", 500}, {"sp-graphene", 1000}, {"sp-control-unit", 300}, {"sp-advanced-compute-unit", 100}, {"sp-glass-fiber", 250}, {"sp-plate-heat-exchanger", 200}, {"sp-cryostat", 100}, {"sp-neodymium-magnet", 400}, {"sp-superconductor", 100}, {"sp-electromagnet", 600}, {"heat-pipe", 200}},
+  {{"concrete", 1000}, {"sp-stainless-steel", 1000}, {"sp-tungsten-slab", 300}, {"sp-graphene", 500}, {"sp-heat-resistant-tile", 200}, {"sp-control-unit", 100}, {"sp-advanced-compute-unit", 50}, {"sp-glass-fiber", 100}, {"sp-plate-heat-exchanger", 60}, {"sp-cryostat", 40}, {"sp-neodymium-magnet", 200}, {"sp-superconductor", 40}, {"sp-electromagnet", 250}, {"heat-pipe", 100}},
+  {{"concrete", 4000}, {"sp-stainless-steel", 3000}, {"sp-tungsten-slab", 500}, {"sp-graphene", 1000}, {"sp-heat-resistant-tile", 200}, {"sp-control-unit", 300}, {"sp-advanced-compute-unit", 100}, {"sp-glass-fiber", 250}, {"sp-plate-heat-exchanger", 200}, {"sp-cryostat", 100}, {"sp-neodymium-magnet", 400}, {"sp-superconductor", 100}, {"sp-electromagnet", 600}, {"heat-pipe", 200}},
   700,
   3000)
 util.change_recipe_ingredients("kr-advanced-steam-turbine",

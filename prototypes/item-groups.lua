@@ -56,6 +56,12 @@ data:extend({
     group = "base-products",
     order = "g"
   },
+  {
+    type = "item-subgroup",
+    name = "alien-material",
+    group = "base-products",
+    order = "h"
+  },
   ------------------------------------------------------------------------------
   -- intermediate-products --
   -- Set intermediate-products to second place
@@ -97,9 +103,15 @@ data:extend({
   },
   {
     type = "item-subgroup",
-    name = "fuel-processing",
+    name = "alien-product",
     group = "intermediate-products",
     order = "i"
+  },
+  {
+    type = "item-subgroup",
+    name = "fuel-processing",
+    group = "intermediate-products",
+    order = "j"
   },
   ------------------------------------------------------------------------------
   -- logistics --

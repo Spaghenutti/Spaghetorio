@@ -820,6 +820,20 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "sp-invar",  -- #ForRegEx# - recipe
+    category = "smelting",
+    enabled = false,
+    energy_required = 12,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "iron-plate", amount = 3},
+      {type = "item", name = "sp-nickel-ingot", amount = 2}
+    },
+    results = {
+      {type = "item", name = "sp-invar", amount = 5}
+    }
+  },
+  {
+    type = "recipe",
     name = "sp-stainless-steel-gear-wheel",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
@@ -904,6 +918,20 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-TiNb", amount = 5}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-nitenol",  -- #ForRegEx# - recipe
+    category = "smelting",
+    enabled = false,
+    energy_required = 8,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-titanium-ingot", amount = 3},
+      {type = "item", name = "sp-nickel-ingot", amount = 2}
+    },
+    results = {
+      {type = "item", name = "sp-nitenol", amount = 5}
     }
   },
   {
@@ -1693,6 +1721,21 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "sp-cybernetics",  -- #ForRegEx# - recipe
+    category = "crafting",
+    enabled = false,
+    energy_required = 8,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-titanium-frame", amount = 2},
+      {type = "item", name = "sp-actuator", amount = 2},
+      {type = "item", name = "sp-advanced-compute-unit", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-cybernetics", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
     name = "sp-combustion-chamber",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
@@ -2310,6 +2353,610 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-dynamo", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-rukite-powder",  -- #ForRegEx# - recipe
+    icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
+    icon_size = 64,
+    mip_maps = 4,
+    category = "crafting",
+    subgroup = "processed-resource",
+    enabled = false,
+    energy_required = 3.6,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-rukite", amount = 2}
+    },
+    results = {
+      {type = "item", name = "sp-rukite-powder", probability = 0.3, amount = 2},
+      {type = "item", name = "coal", probability = 0.3, amount = 2},
+      {type = "item", name = "sp-tungsten-ore", probability = 0.3, amount = 2},
+      {type = "item", name = "sp-titanium-ore", probability = 0.1, amount = 2}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-rukite-bar",  -- #ForRegEx# - recipe
+    category = "crafting",
+    enabled = false,
+    energy_required = 3.6,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-tungsten-powder", amount = 1},
+      {type = "item", name = "sp-graphite", amount = 1},
+      {type = "item", name = "sp-rukite-powder", amount = 4}
+    },
+    results = {
+      {type = "item", name = "sp-rukite-bar", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-chronomatter",  -- #ForRegEx# - recipe
+    category = "chemistry",
+    enabled = false,
+    energy_required = 6,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-monocrystal", amount = 1},
+      {type = "item", name = "sp-rukite-powder", amount = 4},
+      {type = "item", name = "sp-antimony", amount = 4}
+    },
+    results = {
+      {type = "fluid", name = "sp-chronomatter", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-gamma-radiation-source",  -- #ForRegEx# - recipe
+    category = "crafting",
+    enabled = false,
+    energy_required = 6,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-iridium", amount = 1},
+      {type = "item", name = "sp-rukite-bar", amount = 4},
+      {type = "item", name = "sp-plutonium-240", amount = 1},
+      {type = "item", name = "sp-niobium-tin", amount = 3}
+    },
+    results = {
+      {type = "item", name = "sp-gamma-radiation-source", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-chronalyte",  -- #ForRegEx# - recipe
+    category = "crafting-with-fluid",
+    enabled = false,
+    energy_required = 10,  -- time in seconds to make the item
+    ingredients = {
+      {type = "fluid", name = "sp-chronomatter", amount = 1},
+      {type = "item", name = "sp-inconel", amount = 3},
+      {type = "item", name = "sp-niobium-tin", amount = 3}
+    },
+    results = {
+      {type = "item", name = "sp-chronalyte", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-yemnuth-shard",  -- #ForRegEx# - recipe
+    icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
+    icon_size = 64,
+    mip_maps = 4,
+    category = "crafting",
+    subgroup = "processed-resource",
+    enabled = false,
+    energy_required = 4,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-yemnuth", amount = 4}
+    },
+    results = {
+      {type = "item", name = "sp-yemnuth-shard", probability = 0.5, amount = 3},
+      {type = "item", name = "sp-plutonium-240", probability = 0.02, amount = 3},
+      {type = "item", name = "uranium-235", probability = 0.02, amount = 3},
+      {type = "item", name = "sp-yittrium", probability = 0.07, amount = 3},
+      {type = "item", name = "sp-lanthanum", probability = 0.1, amount = 3},
+      {type = "item", name = "sp-cerium", probability = 0.2, amount = 3},
+      {type = "item", name = "sp-neodymium", probability = 0.09, amount = 3}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-yemnuth-pearls-from-cerium-and-neodymium",  -- #ForRegEx# - recipe
+    category = "crafting",
+    enabled = false,
+    energy_required = 20,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-yemnuth-shard", amount = 10},
+      {type = "item", name = "sp-high-purity-silicon", amount = 3},
+      {type = "item", name = "sp-cerium", amount = 1},
+      {type = "item", name = "sp-neodymium", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-yemnuth-pearls", amount = 2}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-yemnuth-pearls-from-yittrium-and-lanthanum",  -- #ForRegEx# - recipe
+    category = "crafting",
+    enabled = false,
+    energy_required = 30,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-yemnuth-shard", amount = 15},
+      {type = "item", name = "sp-high-purity-silicon", amount = 10},
+      {type = "item", name = "sp-yittrium", amount = 1},
+      {type = "item", name = "sp-lanthanum", amount = 2}
+    },
+    results = {
+      {type = "item", name = "sp-yemnuth-pearls", amount = 3}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-plasma-crystal",  -- #ForRegEx# - recipe
+    category = "crafting",
+    enabled = false,
+    energy_required = 14,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-yemnuth-pearls", amount = 20},
+      {type = "item", name = "sp-yemnuth-shard", amount = 1},
+      {type = "item", name = "sp-phosphorus", amount = 1},
+      {type = "item", name = "sp-palladium", amount = 4}
+    },
+    results = {
+      {type = "item", name = "sp-plasma-crystal", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-plasma-capsule",  -- #ForRegEx# - recipe
+    category = "crafting",
+    enabled = false,
+    energy_required = 4,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-plasma-crystal", amount = 1},
+      {type = "item", name = "sp-monocrystal", amount = 1},
+      {type = "item", name = "sp-tungsten-carbide", amount = 4},
+      {type = "item", name = "sp-titanium-nitride", amount = 2},
+    },
+    results = {
+      {type = "item", name = "sp-plasma-capsule", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-plasma-core",  -- #ForRegEx# - recipe
+    category = "crafting",
+    enabled = false,
+    energy_required = 4,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-heat-resistant-tile", amount = 10},
+      {type = "item", name = "sp-fuel-injector", amount = 8},
+      {type = "item", name = "sp-superconductor", amount = 12},
+      {type = "item", name = "sp-titanium-nitride", amount = 2},
+      {type = "item", name = "sp-plasma-capsule", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-plasma-core", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-blunagium-processing",  -- #ForRegEx# - recipe
+    icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
+    icon_size = 64,
+    mip_maps = 4,
+    category = "crafting",
+    subgroup = "processed-resource",
+    enabled = false,
+    energy_required = 4,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-blunagium", amount = 5},
+    },
+    results = {
+      {type = "item", name = "sp-blunagium-stone", probability = 0.5, amount = 3},
+      {type = "item", name = "sp-blunagium-basalt", probability = 0.4, amount = 2},
+      {type = "item", name = "sp-zirconia", probability = 0.1, amount = 1},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-blunagium-foam",  -- #ForRegEx# - recipe
+    category = "crafting",
+    enabled = false,
+    energy_required = 4,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-blunagium-basalt", amount = 3},
+      {type = "item", name = "sp-carbon-nanotubes", amount = 8},
+      {type = "item", name = "sp-gold", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-blunagium-foam", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-blunagium-bar",  -- #ForRegEx# - recipe
+    category = "smelting",
+    enabled = false,
+    energy_required = 6,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-blunagium-stone", amount = 8},
+      {type = "item", name = "sp-tantalum-billet", amount = 3},
+      {type = "item", name = "sp-zirconium-rod", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-blunagium-bar", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-quantum-foam",  -- #ForRegEx# - recipe
+    category = "crafting-with-fluid",
+    enabled = false,
+    energy_required = 6,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-blunagium-bar", amount = 2},
+      {type = "item", name = "sp-graphene", amount = 5},
+      {type = "item", name = "sp-platinum", amount = 2},
+      {type = "item", name = "sp-antimony", amount = 2},
+      {type = "fluid", name = "sp-helium", amount = 10},
+    },
+    results = {
+      {type = "item", name = "sp-quantum-foam", amount = 3}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-quantum-crystal",  -- #ForRegEx# - recipe
+    category = "crafting-with-fluid",
+    enabled = false,
+    energy_required = 6,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-blunagium-foam", amount = 2},
+      {type = "item", name = "sp-quantum-foam", amount = 5},
+      {type = "item", name = "sp-quasicrystal", amount = 2},
+      {type = "fluid", name = "sp-xenon", amount = 10},
+    },
+    results = {
+      {type = "item", name = "sp-quantum-crystal", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-fermium-condensate",  -- #ForRegEx# - recipe
+    category = "crafting-with-fluid",
+    enabled = false,
+    energy_required = 20,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-blunagium-foam", amount = 2},
+      {type = "fluid", name = "sp-helium-3", amount = 10},
+      {type = "item", name = "sp-blunagium-bar", amount = 1},
+      {type = "item", name = "sp-quantum-crystal", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-fermium-condensate", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-nanowire",  -- #ForRegEx# - recipe
+    category = "crafting-with-fluid",
+    enabled = false,
+    energy_required = 8,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-blunagium-foam", amount = 2},
+      {type = "item", name = "sp-quantum-crystal", amount = 1},
+      {type = "item", name = "sp-high-purity-silicon", amount = 4},
+    },
+    results = {
+      {type = "item", name = "sp-nanowire", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-vortex-core",  -- #ForRegEx# - recipe
+    category = "crafting-with-fluid",
+    enabled = false,
+    energy_required = 20,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-blunagium-foam", amount = 40},
+      {type = "item", name = "sp-quantum-crystal", amount = 6},
+      {type = "item", name = "sp-high-purity-silicon", amount = 12},
+      {type = "item", name = "sp-zirconia", amount = 50},
+      {type = "item", name = "sp-palladium", amount = 8},
+    },
+    results = {
+      {type = "item", name = "sp-vortex-core", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-grobgnum-slurry",  -- #ForRegEx# - recipe
+    category = "chemistry",
+    enabled = false,
+    energy_required = 4,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-grobgnum", amount = 6},
+      {type = "item", name = "sp-sinter-filter", amount = 1},
+      {type = "fluid", name = "sp-ethylene-dichloride", amount = 20}
+    },
+    results = {
+      {type = "fluid", name = "sp-grobgnum-slurry", amount = 20}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-grobgnumylene",  -- #ForRegEx# - recipe
+    category = "chemistry",
+    enabled = false,
+    energy_required = 12,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-catalyst", amount = 2},
+      {type = "item", name = "sp-graphite", amount = 6},
+      {type = "fluid", name = "sp-styrene", amount = 10},
+      {type = "fluid", name = "sp-grobgnum-slurry", amount = 50}
+    },
+    results = {
+      {type = "fluid", name = "sp-grobgnumylene", amount = 20}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-grobgnum-hydroxide",  -- #ForRegEx# - recipe
+    category = "chemistry",
+    enabled = false,
+    energy_required = 8,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-sinter-filter", amount = 1},
+      {type = "fluid", name = "sp-deuterium", amount = 20},
+      {type = "fluid", name = "sp-grobgnum-slurry", amount = 20}
+    },
+    results = {
+      {type = "fluid", name = "sp-grobgnum-hydroxide", amount = 20}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-grobgnum-slurry-processing",  -- #ForRegEx# - recipe
+    icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
+    icon_size = 64,
+    mip_maps = 4,
+    category = "crafting-with-fluid",
+    subgroup = "processed-resource",
+    enabled = false,
+    energy_required = 8,  -- time in seconds to make the item
+    ingredients = {
+      {type = "fluid", name ="sp-grobgnum-slurry", amount = 50}
+    },
+    results = {
+      {type = "item", name = "sp-grobgnum-shard", probability = 0.2, amount = 1},
+      {type = "item", name = "sp-grobgnum-droplet", probability = 0.3, amount = 1},
+      {type = "item", name = "sulfur", probability = 0.3, amount = 2},
+      {type = "item", name = "sp-zinc-sulfate", probability = 0.1, amount = 2},
+      {type = "item", name = "sp-cobalt-sulfate", probability = 0.1, amount = 2},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-grobgnum-cube",  -- #ForRegEx# - recipe
+    category = "chemistry",
+    enabled = false,
+    energy_required = 16,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-lithium-oxide", amount = 3},
+      {type = "item", name = "sp-high-purity-silicon", amount = 2},
+      {type = "item", name = "sp-grobgnum-droplet", amount = 8},
+      {type = "fluid", name = "sp-grobgnumylene", amount = 25}
+    },
+    results = {
+      {type = "item", name = "sp-grobgnum-cube", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-grobgnum-bar",  -- #ForRegEx# - recipe
+    category = "chemistry",
+    enabled = false,
+    energy_required = 6,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-titanium-chloride", amount = 1},
+      {type = "item", name = "uranium-235", amount = 2},
+      {type = "item", name = "sp-grobgnum-cube", amount = 3},
+      {type = "fluid", name = "sp-grobgnum-hydroxide", amount = 25}
+    },
+    results = {
+      {type = "item", name = "sp-grobgnum-bar", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-biochip",  -- #ForRegEx# - recipe
+    category = "crafting",
+    enabled = false,
+    energy_required = 6,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-glass-fiber", amount = 1},
+      {type = "item", name = "sp-iridium", amount = 1},
+      {type = "item", name = "sp-grobgnum-shard", amount = 3},
+      {type = "item", name = "sp-platinum", amount = 2},
+      {type = "item", name = "sp-carbon-nanotubes", amount = 2},
+    },
+    results = {
+      {type = "item", name = "sp-biochip", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-nanoflex",  -- #ForRegEx# - recipe
+    category = "crafting-with-fluid",
+    enabled = false,
+    energy_required = 8,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-carbon-nanotubes", amount = 10},
+      {type = "item", name = "sp-quasicrystal", amount = 2},
+      {type = "item", name = "sp-grobgnum-droplet", amount = 6},
+      {type = "fluid", name = "sp-grobgnumylene", amount = 2},
+    },
+    results = {
+      {type = "item", name = "sp-nanoflex", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-bioreactor",  -- #ForRegEx# - recipe
+    category = "chemistry",
+    enabled = false,
+    energy_required = 8,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-turbopump", amount = 6},
+      {type = "item", name = "sp-control-rod", amount = 6},
+      {type = "item", name = "sp-plutonium-fuel-rod", amount = 12},
+      {type = "item", name = "sp-heating-filament", amount = 6},
+      {type = "item", name = "sp-nanoflex", amount = 20},
+      {type = "fluid", name = "grobgnumylene", amount = 100},
+    },
+    results = {
+      {type = "item", name = "sp-bioreactor", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-nanobot",  -- #ForRegEx# - recipe
+    category = "crafting",
+    enabled = false,
+    energy_required = 8,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-nanoflex", amount = 2},
+      {type = "item", name = "sp-nanowire", amount = 2},
+      {type = "item", name = "sp-graphene", amount = 6},
+      {type = "item", name = "sp-quantum-crystal", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-nanobot", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-ion-thruster",  -- #ForRegEx# - recipe
+    category = "crafting-with-fluid",
+    enabled = false,
+    energy_required = 20,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-yittrium", amount = 1},
+      {type = "item", name = "sp-inconel", amount = 10},
+      {type = "item", name = "sp-electrode", amount = 10},
+      {type = "item", name = "sp-electromagnet", amount = 4},
+      {type = "fluid", name = "sp-xenon", amount = 20}
+    },
+    results = {
+      {type = "item", name = "sp-ion-thruster", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-flux-capacitor",  -- #ForRegEx# - recipe
+    category = "crafting",
+    enabled = false,
+    energy_required = 30,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-chronalyte", amount = 20},
+      {type = "item", name = "sp-gamma-radiation-source", amount = 10},
+      {type = "item", name = "sp-TiAlSn", amount = 8},
+      {type = "item", name = "sp-electrode", amount = 3},
+      {type = "item", name = "sp-neodymium-magnet", amount = 20},
+      {type = "item", name = "sp-heat-resistant-tile", amount = 12}
+    },
+    results = {
+      {type = "item", name = "sp-flux-capacitor", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-bioreactor",  -- #ForRegEx# - recipe
+    category = "crafting-with-fluid",
+    enabled = false,
+    energy_required = 30,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-duralumin", amount = 20},
+      {type = "fluid", name = "sp-helium", amount = 50},
+      {type = "item", name = "sp-urea", amount = 20},
+      {type = "item", name = "sp-carbon-fiber", amount = 16},
+      {type = "item", name = "sp-heating-filamet", amount = 4},
+    },
+    results = {
+      {type = "item", name = "sp-bioreactor", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-rukite-explorer",  -- #ForRegEx# - recipe
+    category = "crafting-with-fluid",
+    enabled = false,
+    energy_required = 60,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-advanced-compute-unit", amount = 10},
+      {type = "item", name = "sp-duralumin", amount = 20},
+      {type = "item", name = "sp-inconel", amount = 10},
+      {type = "fluid", name = "sp-chronomatter", amount = 50},
+      {type = "item", name = "sp-flux-capacitor", amount = 1},
+      {type = "item", name = "sp-ion-thruster", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-rukite-explorer", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-yemnuth-explorer",  -- #ForRegEx# - recipe
+    category = "crafting",
+    enabled = false,
+    energy_required = 60,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-advanced-compute-unit", amount = 12},
+      {type = "item", name = "sp-duralumin", amount = 30},
+      {type = "item", name = "sp-titanium-carbide", amount = 10},
+      {type = "item", name = "sp-gravitonium", amount = 30},
+      {type = "item", name = "sp-plasma-core", amount = 1},
+      {type = "item", name = "sp-ion-thruster", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-yemnuth-explorer", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-blunagium-explorer",  -- #ForRegEx# - recipe
+    category = "crafting",
+    enabled = false,
+    energy_required = 60,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-quantum-data-plane", amount = 6},
+      {type = "item", name = "sp-duralumin", amount = 20},
+      {type = "item", name = "sp-quantum-crystal", amount = 50},
+      {type = "item", name = "sp-fermium-condensate", amount = 10},
+      {type = "item", name = "sp-vortex-core", amount = 1},
+      {type = "item", name = "sp-ion-thruster", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-blunagium-explorer", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-grobgnum-explorer",  -- #ForRegEx# - recipe
+    category = "crafting",
+    enabled = false,
+    energy_required = 60,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-biochip", amount = 20},
+      {type = "item", name = "sp-duralumin", amount = 25},
+      {type = "item", name = "sp-grobgnum-droplet", amount = 100},
+      {type = "item", name = "sp-TiNb", amount = 20},
+      {type = "item", name = "sp-bioreactor", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-grobgnum-explorer", amount = 1}
     }
   },
   ------------------------------------------------------------------------------
@@ -3140,6 +3787,21 @@ if not mods["Krastorio2"] then
       },
       results = {
         {type = "fluid", name = "sp-vynil-chloride", amount = 30}
+      }
+    },
+    {
+      type = "recipe",
+      name = "sp-electrolyte",  -- #ForRegEx# - recipe
+      category = "chemistry",
+      enabled = false,
+      energy_required = 2,  -- time in seconds to make the item
+      ingredients = {
+        {type = "item", name = "sp-lithium", amount = 3},
+        {type = "fluid", name = "sp-chlorine", amount = 10},
+        {type = "fluid", name = "sp-propylene", amount = 10}
+      },
+      results = {
+        {type = "item", name = "sp-electrolyte", amount = 1}
       }
     },
   })

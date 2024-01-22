@@ -179,6 +179,46 @@ data:extend({
     order = "[spodumene]",
     stack_size = 200
   },
+  {
+    type = "item",
+    name = "sp-rukite",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/rukite.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "raw-resource",
+    order = "z-alien[rukite]",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "sp-yemnuth",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/yemnuth.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "raw-resource",
+    order = "z-alien[yemnuth]",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "sp-blunagium",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/blunagium.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "raw-resource",
+    order = "z-alien[blunagium]",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "sp-grobgnum",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/grobgnum.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "raw-resource",
+    order = "z-alien[grobgnum]",
+    stack_size = 100
+  },
   ------------------------------------------------------------------------------
   -- Subgroup enriched-resource --
   ------------------------------------------------------------------------------
@@ -695,7 +735,7 @@ data:extend({
   {
     type = "item",
     name = "sp-antimony",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+    icon = "__Spaghenutti__/graphics/icons/antimony.png",
     icon_size = 64,
     scale = 0.25,
     subgroup = "processed-resource",
@@ -950,6 +990,26 @@ data:extend({
   },
   {
     type = "item",
+    name = "sp-nitenol",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/nitenol.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "alloy",
+    order = "[TiNb]",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "sp-invar",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/invar.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "alloy",
+    order = "[invar]",
+    stack_size = 100
+  },
+  {
+    type = "item",
     name = "sp-niobium-steel",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/icons/niobium-steel.png",
     icon_size = 64,
@@ -1069,6 +1129,179 @@ data:extend({
     scale = 0.25,
     subgroup = "advanced-raw-material",
     order = "crystal[quasicrystal]",
+    stack_size = 100
+  },
+  ------------------------------------------------------------------------------
+  -- Subgroup alien-material --
+  ------------------------------------------------------------------------------
+  {
+    type = "item",
+    name = "sp-rukite-powder",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/rukite-powder.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "alien-material",
+    order = "rukite[rukite-powder]",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "sp-rukite-bar",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/rukite-bar.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "alien-material",
+    order = "rukite[rukite-bar]",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "sp-yemnuth-shard",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/yemnuth-shard.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "alien-material",
+    order = "yemnuth[yemnuth-shard]",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "sp-yemnuth-pearls",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/yemnuth-pearls.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "alien-material",
+    order = "yemnuth[yemnuth-pearl]",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "sp-plasma-crystal",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/plasma-crystal.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "alien-material",
+    order = "yemnuth[plasma-crystal]",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "sp-gravitonium",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/gravitonium.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "alien-material",
+    order = "yemnuth[gravitonium]",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "sp-blunagium-foam",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/blunagium-foam.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "alien-material",
+    order = "blunagium[blunagium-foam]",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "sp-blunagium-stone",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/blunagium-stone.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "alien-material",
+    order = "blunagium[blunagium-stone]",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "sp-blunagium-basalt",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/blunagium-basalt.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "alien-material",
+    order = "blunagium[blunagium-basalt]",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "sp-blunagium-bar",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/blunagium-bar.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "alien-material",
+    order = "blunagium[blunagium-bar]",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "sp-quantum-foam",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/quantum-foam.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "alien-material",
+    order = "blunagium[quantum-foam]",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "sp-quantum-crystal",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/quantum-crystal.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "alien-material",
+    order = "blunagium[quantum-crystal]",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "sp-fermium-condensate",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/fermium-condensate.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "alien-material",
+    order = "blunagium[fermium-condensate]",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "sp-grobgnum-cube",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/grobgnum-cube.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "alien-material",
+    order = "grobgnum[grobgnum-cube]",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "sp-grobgnum-shard",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/grobgnum-shard.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "alien-material",
+    order = "grobgnum[grobgnum-shard]",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "sp-grobgnum-droplet",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/grobgnum-droplet.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "alien-material",
+    order = "grobgnum[grobgnum-droplet]",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "sp-grobgnum-bar",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/grobgnum-bar.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "alien-material",
+    order = "grobgnum[grobgnum-bar]",
     stack_size = 100
   },
   ------------------------------------------------------------------------------
@@ -1404,7 +1637,7 @@ data:extend({
   {
     type = "item",
     name = "sp-relay",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+    icon = "__Spaghenutti__/graphics/icons/relay.png",
     icon_size = 64,
     scale = 0.25,
     subgroup = "electrical-optical-component",
@@ -1534,7 +1767,7 @@ data:extend({
   {
     type = "item",
     name = "sp-sensor",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+    icon = "__Spaghenutti__/graphics/icons/sensor.png",
     icon_size = 64,
     scale = 0.25,
     subgroup = "electrical-optical-component",
@@ -1583,7 +1816,7 @@ data:extend({
   {
     type = "item",
     name = "sp-dynamo",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+    icon = "__Spaghenutti__/graphics/icons/dynamo.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "intermediate-product",
     order = "[dynamo]",
@@ -1628,7 +1861,7 @@ data:extend({
   {
     type = "item",
     name = "sp-train-boige",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+    icon = "__Spaghenutti__/graphics/icons/train-boige.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "intermediate-product",
     order = "[train-boige]",
@@ -1691,7 +1924,7 @@ data:extend({
   {
     type = "item",
     name = "sp-compressor",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+    icon = "__Spaghenutti__/graphics/icons/compressor.png",
     icon_size = 64,
     scale = 0.25,
     subgroup = "intermediate-product",
@@ -1811,6 +2044,15 @@ data:extend({
   },
   {
     type = "item",
+    name = "sp-ion-thruster",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/ion-thruster.png",
+    icon_size = 64, icon_mipmaps = 4,
+    subgroup = "advanced-intermediate-product",
+    order = "[ion-thruster]",
+    stack_size = 50
+  },
+  {
+    type = "item",
     name = "sp-cubit",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/icons/cubit.png",
     icon_size = 64, icon_mipmaps = 4,
@@ -1848,10 +2090,19 @@ data:extend({
   {
     type = "item",
     name = "sp-control-unit",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+    icon = "__Spaghenutti__/graphics/icons/control-unit.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "advanced-intermediate-product",
     order = "[control-unit]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "sp-cybernetics",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/cybernetics.png",
+    icon_size = 64, icon_mipmaps = 4,
+    subgroup = "advanced-intermediate-product",
+    order = "[cybernetics]",
     stack_size = 50
   },
   ------------------------------------------------------------------------------
@@ -1870,7 +2121,7 @@ data:extend({
   {
     type = "item",
     name = "sp-phosphoric-acid",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+    icon = "__Spaghenutti__/graphics/icons/phosphoric-acid.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "chemical-product",
     order = "[phosphoric-acid]",
@@ -1879,7 +2130,7 @@ data:extend({
   {
     type = "item",
     name = "sp-urea",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+    icon = "__Spaghenutti__/graphics/icons/urea.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "chemical-product",
     order = "[urea]",
@@ -1888,20 +2139,143 @@ data:extend({
   {
     type = "item",
     name = "sp-insulation-sheet",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+    icon = "__Spaghenutti__/graphics/icons/insulation-sheet.png",
     icon_size = 64,
     scale = 0.25,
     subgroup = "chemical-product",
     order = "[insulation-sheet]",
     stack_size = 100
   },
+  {
+    type = "item",
+    name = "sp-electrolyte",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/electrolyte.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "chemical-product",
+    order = "[electrolyte]",
+    stack_size = 100
+  },
   ------------------------------------------------------------------------------
-  -- Subgroup fuel --
+  -- Subgroup alien-product --
+  ------------------------------------------------------------------------------
+  {
+    type = "item",
+    name = "sp-gamma-radiation-source",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/gamma-radiation-source.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "alien-product",
+    order = "[gamma-radiation-source]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "sp-chronalyte",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/chronalyte.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "alien-product",
+    order = "[chronalyte]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "sp-flux-capacitor",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/flux-capacitor.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "alien-product",
+    order = "[flux-capacitor]",
+    stack_size = 1
+  },
+  {
+    type = "item",
+    name = "sp-plasma-capsule",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/plasma-capsule.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "alien-product",
+    order = "[plasma-capsule]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "sp-plasma-core",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/plasma-core.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "alien-product",
+    order = "[plasma-core]",
+    stack_size = 1
+  },
+  {
+    type = "item",
+    name = "sp-nanowire",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/nanowire.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "alien-product",
+    order = "[nanowire]",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "sp-nanobot",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/nanobot.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "alien-product",
+    order = "[nanobot]",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "sp-vortex-core",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/vortex-core.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "alien-product",
+    order = "[vortex-core]",
+    stack_size = 1
+  },
+  {
+    type = "item",
+    name = "sp-biochip",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/biochip.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "alien-product",
+    order = "[biochip]",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "sp-nanoflex",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/nanoflex.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "alien-product",
+    order = "[nanoflex]",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "sp-bioreactor",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/bioreactor.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "alien-product",
+    order = "[bioreactor]",
+    stack_size = 1
+  },
+  ------------------------------------------------------------------------------
+  -- Subgroup fuel-processing --
   ------------------------------------------------------------------------------
   {
     type = "item",
     name = "sp-empty-fuel-rod",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-default.png",
+    icon = "__Spaghenutti__/graphics/icons/empty-fuel-rod.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "fuel-processing",
     order = "nuclear-a[empty-fuel-rod]",
@@ -1940,11 +2314,60 @@ data:extend({
     order = "nuclear-a[used-up-fuel-rod]",
     stack_size = 50
   },
+  {
+    type = "item",
+    name = "sp-nuclear-waste",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/nuclear-waste.png",
+    icon_size = 64, icon_mipmaps = 4,
+    subgroup = "fuel-processing",
+    order = "nuclear-a[nuclear-waste]",
+    stack_size = 50
+  },
   ------------------------------------------------------------------------------
   -- Group logistics --
   -- Subgroup logistics --
   ------------------------------------------------------------------------------
 
+  ------------------------------------------------------------------------------
+  -- Group prduction --
+  -- Subgroup space-related --
+  ------------------------------------------------------------------------------
+  {
+    type = "item",
+    name = "sp-rukite-explorer",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/rukite-explorer.png",
+    icon_size = 64, icon_mipmaps = 4,
+    subgroup = "space-related",
+    order = "[rukite-explorer]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "sp-blunagium-explorer",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/blunagium-explorer.png",
+    icon_size = 64, icon_mipmaps = 4,
+    subgroup = "space-related",
+    order = "[blunagium-explorer]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "sp-yemnuth-explorer",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/yemnuth-explorer.png",
+    icon_size = 64, icon_mipmaps = 4,
+    subgroup = "space-related",
+    order = "[yemnuth-explorer]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "sp-grobgnum-explorer",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/grobgnum-explorer.png",
+    icon_size = 64, icon_mipmaps = 4,
+    subgroup = "space-related",
+    order = "[grobgnum-explorer]",
+    stack_size = 50
+  },
   ------------------------------------------------------------------------------
   -- Group science --
   -- Subgroup intermediate-science --
