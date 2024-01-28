@@ -87,4 +87,28 @@ data:extend({
     richness = true,
     order = "b[zirconium-ore]"
   },
+  {
+    type = "autoplace-control",
+    name = "sp-blunagium",
+    localised_name = {"", "[entity=sp-blunagium] ", {"entity-name.sp-blunagium"}},
+    category = "resource",
+    richness = true,
+    order = "d[blunagium]"
+  },
+  {
+    type = "autoplace-control",
+    name = "sp-rukite",
+    localised_name = {"", "[entity=sp-rukite] ", {"entity-name.sp-rukite"}},
+    category = "resource",
+    richness = true,
+    order = "d[rukite]"
+  },
+  {
+    type = "autoplace-control",
+    name = "sp-yemnuth",
+    localised_name = {"", "[entity=sp-yemnuth] ", {"entity-name.sp-yemnuth"}},
+    category = "resource",
+    richness = true,
+    order = "d[yemnuth]"
+  },
 })

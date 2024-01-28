@@ -43,4 +43,16 @@ data:extend({
     type = "noise-layer",
     name = "sp-zinc-ore"
   },
+  {
+    type = "noise-layer",
+    name = "sp-blunagium"
+  },
+  {
+    type = "noise-layer",
+    name = "sp-rukite"
+  },
+  {
+    type = "noise-layer",
+    name = "sp-yemnuth"
+  },
 })
