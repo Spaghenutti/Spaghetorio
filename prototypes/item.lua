@@ -1406,7 +1406,7 @@ data:extend({
   {
     type = "item",
     name = "sp-ball-bearing",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/icons/bearing.png",
+    icon = "__Spaghenutti__/graphics/icons/ball-bearing.png",
     icon_size = 64,
     scale = 0.25,
     subgroup = "mechanical-component",

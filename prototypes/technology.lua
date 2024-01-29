@@ -409,7 +409,7 @@ data:extend({
     type = "technology",
     name = "sp-basic-ceramics",  -- #ForRegEx# - technology
     icon_size = 256,
-    icons = util.combine_two_icons("__Spaghenutti__/graphics/hr-icons/zircon.png", 256, nil, "__Spaghenutti__/graphics/hr-icons/ceramics.png", 256, nil),
+    icon = "__Spaghenutti__/graphics/hr-icons/ceramics.png",
     effects =
     {
       {
@@ -713,92 +713,190 @@ data:extend({
     },
     order = "a-h-a"
   },
+  {
+    type = "technology",
+    name = "sp-pressure-fluid",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghenutti__/graphics/hr-icons/pressure-tank.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-flange"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-pressure-tank"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-pressure-tube"
+      },
+    },
+    prerequisites = {"sp-nickel-alloys", "sp-stainless-steel-processing"},
+    unit =
+    {
+      count = 100,
+      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-filter",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icons = util.combine_two_icons("__Spaghenutti__/graphics/hr-icons/filter.png", 256, nil, "__Spaghenutti__/graphics/hr-icons/sinter-filter.png", 256, nil),
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-filter"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-sinter-filter"
+      },
+    },
+    prerequisites = {"sp-stainless-steel-processing", "plastics"},
+    unit =
+    {
+      count = 100,
+      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-ball-bearing",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghenutti__/graphics/hr-icons/ball-bearing.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-ball-bearing"
+      },
+    },
+    prerequisites = {"sp-stainless-steel-processing", "lubricant"},
+    unit =
+    {
+      count = 100,
+      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-optics",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icons = util.combine_three_icons("__Spaghenutti__/graphics/hr-icons/infrared-filter.png", 256, nil, "__Spaghenutti__/graphics/hr-icons/glass-fiber.png", 256, nil, "__Spaghenutti__/graphics/hr-icons/mirror.png", 256, nil),
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-infrared-filter"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-glass-fiber"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-mirror"
+      },
+    },
+    prerequisites = {"sp-stainless-steel-processing", "lubricant"},
+    unit =
+    {
+      count = 100,
+      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-salt",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icons = util.combine_two_icons("__Spaghenutti__/graphics/hr-icons/salt.png", 256, nil, "__Spaghenutti__/graphics/hr-icons/sodium.png", 256, nil),
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-salt"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-sodium-and-chlorine"
+      },
+    },
+    prerequisites = {"sp-cement"},
+    unit =
+    {
+      count = 100,
+      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-bleach",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghenutti__/graphics/hr-icons/bleach.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-bleach"
+      },
+    },
+    prerequisites = {"sp-cement"},
+    unit =
+    {
+      count = 100,
+      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-magnesium-processing",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghenutti__/graphics/hr-icons/magnesium-slab.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-magnesium-chloride"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-magnesium-slab"
+      },
+    },
+    prerequisites = {"sp-cement"},
+    unit =
+    {
+      count = 100,
+      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      time = 15
+    },
+    order = "a-h-a"
+  },
 })
 
 if not mods["Krastorio2"] then
   data:extend({
-    {
-      type = "technology",
-      name = "sp-salt",  -- #ForRegEx# - technology
-      icon_size = 256,
-      icons = util.combine_two_icons("__Spaghenutti__/graphics/hr-icons/salt.png", 256, nil, "__Spaghenutti__/graphics/hr-icons/sodium.png", 256, nil),
-      effects =
-      {
-        {
-          type = "unlock-recipe",
-          recipe = "sp-salt"
-        },
-        {
-          type = "unlock-recipe",
-          recipe = "sp-sodium-and-chlorine"
-        },
-      },
-      prerequisites = {"sp-cement"},
-      unit =
-      {
-        count = 100,
-        ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
-        time = 15
-      },
-      order = "a-h-a"
-    },
-    {
-      type = "technology",
-      name = "sp-bleach",  -- #ForRegEx# - technology
-      icon_size = 256,
-      icon = "__Spaghenutti__/graphics/hr-icons/bleach.png",
-      effects =
-      {
-        {
-          type = "unlock-recipe",
-          recipe = "sp-bleach"
-        },
-      },
-      prerequisites = {"sp-cement"},
-      unit =
-      {
-        count = 100,
-        ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
-        time = 15
-      },
-      order = "a-h-a"
-    },
-    {
-      type = "technology",
-      name = "sp-magnesium-processing",  -- #ForRegEx# - technology
-      icon_size = 256,
-      icon = "__Spaghenutti__/graphics/hr-icons/magnesium-slab.png",
-      effects =
-      {
-        {
-          type = "unlock-recipe",
-          recipe = "sp-magnesium-chloride"
-        },
-        {
-          type = "unlock-recipe",
-          recipe = "sp-magnesium-slab"
-        },
-      },
-      prerequisites = {"sp-cement"},
-      unit =
-      {
-        count = 100,
-        ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
-        time = 15
-      },
-      order = "a-h-a"
-    },
+
   })
 end
 
--- missing: 
---  "sp-flange"
---  "sp-filter"
---  "sp-pressure-tank"
---  "sp-pressure-tube"
---  "sp-high-pressure-tank"
---  "sp-sinter-filter"
---  "sp-ball-bearing"
+-- missing:
 --  "sp-infrared-filter"
 --  "sp-glass-fiber"
 --  "sp-resistor"
@@ -871,7 +969,6 @@ end
 --  "sp-platinum-iridium"
 --  "sp-landfill-from-sand"
 --  "sp-stone-brick-from-sand"
---  "sp-mirror"
 --  "sp-titanium-nitride"
 --  "sp-kevlar"
 --  "sp-uranium-fuel-rod"
