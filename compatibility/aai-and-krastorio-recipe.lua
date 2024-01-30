@@ -59,7 +59,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-aqueous-niobium-tantalum",  -- #ForRegEx# - recipe
-    icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
+    icons = util.combine_two_icons("__Spaghenutti__/graphics/icons/aqueous-niobium.png", 64, nil, "__Spaghenutti__/graphics/icons/aqueous-tantalum.png", 64, nil),
     icon_size = 64,
     mip_mapts = 4,
     category = "chemistry",
@@ -79,7 +79,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-gold",  -- #ForRegEx# - recipe
-    icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
+    icon = "__Spaghenutti__/graphics/icons/gold.png",
     icon_size = 64,
     mip_mapts = 4,
     category = "chemistry",
@@ -98,7 +98,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-platinum-iridium",  -- #ForRegEx# - recipe
-    icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
+    icons = util.combine_two_icons("__Spaghenutti__/graphics/icons/platinum.png", 64, nil, "__Spaghenutti__/graphics/icons/iridium.png", 64, nil),
     icon_size = 64,
     mip_mapts = 4,
     category = "crafting",
@@ -117,7 +117,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-cobalt-sulfate",  -- #ForRegEx# - recipe
-    icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
+    icon = "__Spaghenutti__/graphics/icons/cobalt-sulfate.png",
     icon_size = 64,
     mip_mapts = 4,
     category = "crafting",
@@ -328,7 +328,7 @@ data:extend({
     icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
     icon_size = 64,
     mip_mapts = 4,
-    category = "chemistry",
+    category = "crushing",
     subgroup = "raw-resource",
     enabled = false,
     energy_required = 60,  -- time in seconds to make the item
@@ -347,7 +347,7 @@ data:extend({
     icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
     icon_size = 64,
     mip_mapts = 4,
-    category = "chemistry",
+    category = "crushing",
     subgroup = "raw-resource",
     enabled = false,
     energy_required = 80,  -- time in seconds to make the item
@@ -393,7 +393,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-high-purity-silicon",  -- #ForRegEx# - recipe
-    icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
+    icon = "__Spaghenutti__/graphics/icons/high-purity-silicon.png",
     icon_size = 64,
     mip_mapts = 4,
     category = "smelting",
@@ -514,7 +514,10 @@ data:extend({
   {
     type = "recipe",
     name = "sp-rare-metal-processing",  -- #ForRegEx# - recipe
-    icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
+    icons = util.combine_four_icons("__Spaghenutti__/graphics/icons/yittrium.png", 64, nil,
+                                    "__Spaghenutti__/graphics/icons/lanthanum.png", 64, nil,
+                                    "__Spaghenutti__/graphics/icons/cerium.png", 64, nil,
+                                    "__Spaghenutti__/graphics/icons/neodymium.png", 64, nil),
     icon_size = 64,
     mip_mapts = 4,
     category = "chemistry",
@@ -535,7 +538,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-plutonium-239",  -- #ForRegEx# - recipe
-    icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
+    icon = "__Spaghenutti__/graphics/icons/plutonium-239-1.png",
     icon_size = 64,
     mip_mapts = 4,
     category = "high-energy-physics",
@@ -555,7 +558,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-plutonium-240",  -- #ForRegEx# - recipe
-    icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
+    icon = "__Spaghenutti__/graphics/icons/plutonium-240-1.png",
     icon_size = 64,
     mip_mapts = 4,
     category = "high-energy-physics",

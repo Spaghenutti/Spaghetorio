@@ -133,4 +133,31 @@ function data_util.combine_three_icons(icon_1, icon_1_size, shift_1, icon_2, ico
   return icons
 end
 
+function data_util.combine_four_icons(icon_1, icon_1_size, shift_1, icon_2, icon_2_size, shift_2, icon_3, icon_3_size, shift_3, icon_4, icon_4_size, shift_4)
+  if (shift_1 == nil) then
+    shift_1 = {-7*icon_1_size/64, -6*icon_1_size/64}
+  end
+
+  if (shift_2 == nil) then
+    shift_2 = {6*icon_2_size/64, -7*icon_2_size/64}
+  end
+
+  if (shift_3 == nil) then
+    shift_3 = {7*icon_3_size/64, 6*icon_3_size/64}
+  end
+
+  if (shift_4 == nil) then
+    shift_4 = {-6*icon_4_size/64, 7*icon_4_size/64}
+  end
+
+  icons = {
+    {icon = "__Spaghenutti__/graphics/hr-icons/background.png", icon_size = 256, scale = icon_1_size/512},
+    {icon = icon_1, icon_size = icon_1_size, scale = 0.27, shift = shift_1},
+    {icon = icon_2, icon_size = icon_2_size, scale = 0.27, shift = shift_2},
+    {icon = icon_3, icon_size = icon_3_size, scale = 0.27, shift = shift_3},
+    {icon = icon_4, icon_size = icon_4_size, scale = 0.27, shift = shift_4}
+  }
+  return icons
+end
+
 return data_util

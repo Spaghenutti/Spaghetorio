@@ -507,6 +507,31 @@ data:extend({
   },
   {
     type = "technology",
+    name = "sp-capacitor-from-niobium-and-tantalum",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icons = util.combine_three_icons("__Spaghenutti__/graphics/hr-icons/capacitor.png", 256, nil,"__Spaghenutti__/graphics/hr-icons/tantalum-billet.png", 256, nil, "__Spaghenutti__/graphics/hr-icons/niobium-billet.png", 256, nil),
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-capacitor-from-niobium"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-capacitor-from-tantalum"
+      },
+    },
+    prerequisites = {"sp-niobium-and-tantalum"},
+    unit =
+    {
+      count = 100,
+      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
     name = "sp-tungsten-processing",  -- #ForRegEx# - technology
     icon_size = 256,
     icon = "__Spaghenutti__/graphics/hr-icons/tungsten-slab.png",
@@ -888,6 +913,97 @@ data:extend({
     },
     order = "a-h-a"
   },
+  {
+    type = "technology",
+    name = "sp-sodium-processing",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghenutti__/graphics/hr-icons/sodium.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-sodium-and-chlorine"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-liquid-sodium"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-sodium-carbonate"
+      },
+    },
+    prerequisites = {"sp-salt"},
+    unit =
+    {
+      count = 100,
+      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-advanced-optics",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icons = util.combine_two_icons("__Spaghenutti__/graphics/hr-icons/glass-fiber.png", 256, nil, "__Spaghenutti__/graphics/hr-icons/infrared-filter.png", 256, nil),
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-glass-fiber"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-infrared-filter"
+      },
+    },
+    prerequisites = {"sp-sodium-processing"},
+    unit =
+    {
+      count = 100,
+      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-electrical-components",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icons = util.combine_three_icons("__Spaghenutti__/graphics/hr-icons/coil.png", 256, nil, "__Spaghenutti__/graphics/hr-icons/transistor.png", 256, nil, "__Spaghenutti__/graphics/hr-icons/diode.png", 256, nil),
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-resistor"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-capacitor-from-aluminum"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-coil"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-diode"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-transistor"
+      },
+    },
+    prerequisites = {"logistic-science-pack"},
+    unit =
+    {
+      count = 100,
+      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      time = 15
+    },
+    order = "a-h-a"
+  },
 })
 
 if not mods["Krastorio2"] then
@@ -897,13 +1013,6 @@ if not mods["Krastorio2"] then
 end
 
 -- missing:
---  "sp-infrared-filter"
---  "sp-glass-fiber"
---  "sp-resistor"
---  "sp-capacitor-from-aluminum"
---  "sp-capacitor-from-niobium"
---  "sp-capacitor-from-tantalum"
---  "sp-coil"
 --  "sp-silver-solder"
 --  "sp-empty-circuit-board"
 --  "sp-circuit-board"
@@ -979,8 +1088,6 @@ end
 --  "sp-composites"
 --  "sp-silicon"
 --  "sp-high-purity-silicon"
---  "sp-diode"
---  "sp-transistor"
 --  "sp-light-emitting-diode"
 --  "sp-integrated-circuit"
 --  "sp-laser"
