@@ -267,7 +267,8 @@ data:extend({
   {
     type = "recipe",
     name = "sp-calcium-carbonate",  -- #ForRegEx# - recipe
-    icons = util.combine_two_icons("__Spaghenutti__/graphics/icons/calcium-carbonate.png", 64, nil, "__Spaghenutti__/graphics/icons/fluorspar.png", 64, nil),
+    icons = util.combine_two_icons("__Spaghenutti__/graphics/icons/calcium-carbonate.png", 64, nil,
+                                   "__Spaghenutti__/graphics/icons/fluorspar.png", 64, nil),
     icon_size = 64,
     mip_maps = 4,
     category = "chemistry",
@@ -285,7 +286,8 @@ data:extend({
   {
     type = "recipe",
     name = "sp-calcium-and-fluorine",  -- #ForRegEx# - recipe
-    icons = util.combine_two_icons("__Spaghenutti__/graphics/icons/fluorine.png", 64, nil, "__Spaghenutti__/graphics/icons/calcium.png", 64, nil),
+    icons = util.combine_two_icons("__Spaghenutti__/graphics/icons/fluorine.png", 64, nil,
+                                   "__Spaghenutti__/graphics/icons/calcium.png", 64, nil),
     icon_size = 64,
     mip_maps = 4,
     category = "chemistry",
@@ -454,7 +456,8 @@ data:extend({
     type = "recipe",
     name = "sp-tin-and-lead",  -- #ForRegEx# - recipe
     -- icon = "__Spaghenutti__/graphics/icons/tin-and-lead.png",
-    icons = util.combine_two_icons("__Spaghenutti__/graphics/icons/tin-ingot.png", 64, nil, "__Spaghenutti__/graphics/icons/lead-slab.png", 64, nil),
+    icons = util.combine_two_icons("__Spaghenutti__/graphics/icons/tin-ingot.png", 64, nil, 
+                                   "__Spaghenutti__/graphics/icons/lead-slab.png", 64, nil),
     icon_size = 64,
     mip_maps = 4,
     category = "smelting",
@@ -770,7 +773,8 @@ data:extend({
   {
     type = "recipe",
     name = "sp-silver-palladium",  -- #ForRegEx# - recipe
-    icons = util.combine_two_icons("__Spaghenutti__/graphics/icons/silver.png", 64, nil, "__Spaghenutti__/graphics/icons/palladium.png", 64, nil),
+    icons = util.combine_two_icons("__Spaghenutti__/graphics/icons/silver.png", 64, nil,
+                                  "__Spaghenutti__/graphics/icons/palladium.png", 64, nil),
     icon_size = 64,
     mip_maps = 4,
     category = "crafting",
@@ -1094,7 +1098,8 @@ data:extend({
   {
     type = "recipe",
     name = "sp-capacitor-from-aluminum",  -- #ForRegEx# - recipe
-    icons = util.overlay_small_icon("__Spaghenutti__/graphics/icons/capacitor.png", 64, "__Spaghenutti__/graphics/icons/aluminum-sheet.png", 64),
+    icons = util.overlay_small_icon("__Spaghenutti__/graphics/icons/capacitor.png", 64,
+                                    "__Spaghenutti__/graphics/icons/aluminum-sheet.png", 64),
     category = "crafting",
     enabled = false,
     energy_required = 3.2,  -- time in seconds to make the item
@@ -1109,7 +1114,8 @@ data:extend({
   {
     type = "recipe",
     name = "sp-capacitor-from-niobium",  -- #ForRegEx# - recipe
-    icons = util.overlay_small_icon("__Spaghenutti__/graphics/icons/capacitor.png", 64, "__Spaghenutti__/graphics/icons/niobium-billet.png", 64),
+    icons = util.overlay_small_icon("__Spaghenutti__/graphics/icons/capacitor.png", 64,
+                                    "__Spaghenutti__/graphics/icons/niobium-billet.png", 64),
     category = "crafting",
     enabled = false,
     energy_required = 3.2,  -- time in seconds to make the item
@@ -1124,7 +1130,8 @@ data:extend({
   {
     type = "recipe",
     name = "sp-capacitor-from-tantalum",  -- #ForRegEx# - recipe
-    icons = util.overlay_small_icon("__Spaghenutti__/graphics/icons/capacitor.png", 64, "__Spaghenutti__/graphics/icons/tantalum-billet.png", 64),
+    icons = util.overlay_small_icon("__Spaghenutti__/graphics/icons/capacitor.png", 64,
+                                    "__Spaghenutti__/graphics/icons/tantalum-billet.png", 64),
     category = "crafting",
     enabled = false,
     energy_required = 4,  -- time in seconds to make the item
@@ -1222,7 +1229,8 @@ data:extend({
       {type = "item", name = "sp-high-purity-silicon", amount = 1},
       {type = "item", name = "copper-cable", amount = 1},
       {type = "item", name = "sp-cerium", amount = 1},
-      {type = "item", name = "sp-phosphorus", amount = 1}
+      {type = "item", name = "sp-phosphorus", amount = 1},
+      {type = "item", name = "sp-silver-solder", amount = 1}
     },
     results = {
       {type = "item", name = "sp-memory-chip", amount = 1}
@@ -1238,7 +1246,8 @@ data:extend({
       {type = "item", name = "plastic-bar", amount = 1},
       {type = "item", name = "sp-high-purity-silicon", amount = 2},
       {type = "item", name = "copper-cable", amount = 1},
-      {type = "item", name = "sp-platinum", amount = 1}
+      {type = "item", name = "sp-platinum", amount = 1},
+      {type = "item", name = "sp-silver-solder", amount = 1}
     },
     results = {
       {type = "item", name = "sp-antenna-chip", amount = 1}
@@ -1254,7 +1263,8 @@ data:extend({
       {type = "item", name = "plastic-bar", amount = 1},
       {type = "item", name = "sp-high-purity-silicon", amount = 4},
       {type = "item", name = "sp-phosphorus", amount = 2},
-      {type = "item", name = "sp-palladium", amount = 1}
+      {type = "item", name = "sp-palladium", amount = 1},
+      {type = "item", name = "sp-silver-solder", amount = 1}
     },
     results = {
       {type = "item", name = "sp-processor", amount = 2}
@@ -1271,7 +1281,8 @@ data:extend({
       {type = "item", name = "sp-high-purity-silicon", amount = 2},
       {type = "item", name = "sp-phosphorus", amount = 2},
       {type = "item", name = "sp-iridium", amount = 1},
-      {type = "item", name = "sp-aluminum-sheet", amount = 1}
+      {type = "item", name = "sp-aluminum-sheet", amount = 1},
+      {type = "item", name = "sp-silver-solder", amount = 1}
     },
     results = {
       {type = "item", name = "sp-cmos", amount = 2}
@@ -1620,6 +1631,8 @@ data:extend({
   {
     type = "recipe",
     name = "sp-turbine-blade-from-stainless-steel",  -- #ForRegEx# - recipe
+    icons = util.overlay_small_icon("__Spaghenutti__/graphics/icons/turbine-blade.png", 64,
+                                    "__Spaghenutti__/graphics/icons/stainless-steel.png", 64),
     category = "crafting",
     enabled = false,
     energy_required = 3.2,  -- time in seconds to make the item
@@ -1633,6 +1646,8 @@ data:extend({
   {
     type = "recipe",
     name = "sp-turbine-blade-from-TiAlSn",  -- #ForRegEx# - recipe
+    icons = util.overlay_small_icon("__Spaghenutti__/graphics/icons/turbine-blade.png", 64,
+                                    "__Spaghenutti__/graphics/icons/TiAlSn.png", 64),
     category = "crafting",
     enabled = false,
     energy_required = 4.8,  -- time in seconds to make the item
@@ -2550,7 +2565,8 @@ data:extend({
   {
     type = "recipe",
     name = "sp-blunagium-processing",  -- #ForRegEx# - recipe
-    icons = util.combine_two_icons("__Spaghenutti__/graphics/icons/blunagium-stone.png", 64, nil, "__Spaghenutti__/graphics/icons/blunagium-basalt.png", 64, nil),
+    icons = util.combine_two_icons("__Spaghenutti__/graphics/icons/blunagium-stone.png", 64, nil,
+                                   "__Spaghenutti__/graphics/icons/blunagium-basalt.png", 64, nil),
     icon_size = 64,
     mip_maps = 4,
     category = "crafting",
@@ -2726,7 +2742,8 @@ data:extend({
   {
     type = "recipe",
     name = "sp-grobgnum-slurry-processing",  -- #ForRegEx# - recipe
-    icons = util.combine_two_icons("__Spaghenutti__/graphics/icons/grobgnum-shard.png", 64, nil, "__Spaghenutti__/graphics/icons/grobgnum-droplet.png", 64, nil),
+    icons = util.combine_two_icons("__Spaghenutti__/graphics/icons/grobgnum-shard.png", 64, nil,
+                                   "__Spaghenutti__/graphics/icons/grobgnum-droplet.png", 64, nil),
     icon_size = 64,
     mip_maps = 4,
     category = "crafting-with-fluid",
@@ -2984,7 +3001,8 @@ data:extend({
   {
     type = "recipe",
     name = "sp-landfill-from-iron-ore",
-    icons = util.overlay_small_icon("__base__/graphics/icons/landfill.png", 64, "__base__/graphics/icons/iron-ore.png", 64),
+    icons = util.overlay_small_icon("__base__/graphics/icons/landfill.png", 64,
+                                    "__base__/graphics/icons/iron-ore.png", 64),
     energy_required = 0.5,
     enabled = false,
     category = "crafting",
@@ -2999,7 +3017,8 @@ data:extend({
   {
     type = "recipe",
     name = "sp-landfill-from-limestone",
-    icons = util.overlay_small_icon("__base__/graphics/icons/landfill.png", 64, "__Spaghenutti__/graphics/icons/limestone-1.png", 64),
+    icons = util.overlay_small_icon("__base__/graphics/icons/landfill.png", 64, 
+                                    "__Spaghenutti__/graphics/icons/limestone-1.png", 64),
     energy_required = 0.5,
     enabled = false,
     category = "crafting",
@@ -3013,7 +3032,9 @@ data:extend({
   {
     type = "recipe",
     name = "sp-landfill-from-limestone-and-stone",
-    icons = util.overlay_two_small_icons("__base__/graphics/icons/landfill.png", 64, "__base__/graphics/icons/stone.png", 64, "__Spaghenutti__/graphics/icons/limestone-1.png", 64),
+    icons = util.overlay_two_small_icons("__base__/graphics/icons/landfill.png", 64,
+                                         "__base__/graphics/icons/stone.png", 64,
+                                         "__Spaghenutti__/graphics/icons/limestone-1.png", 64),
     energy_required = 0.5,
     enabled = false,
     category = "crafting",
