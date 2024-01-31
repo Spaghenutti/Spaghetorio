@@ -768,6 +768,20 @@ data:extend({
       {type = "item", name = "sp-electrolyte", amount = 1}
     }
   },
+  {
+    type = "recipe",
+    name = "sp-glass-from-calcium",  -- #ForRegEx# - recipe
+    category = "smelting",
+    enabled = false,
+    energy_required = 2.4,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sand", amount = 3},
+      {type = "item", name = "sp-calcium", amount = 1}
+    },
+    results = {
+      {type = "item", name = "glass", amount = 1}
+    }
+  },
 })
 
 -- items

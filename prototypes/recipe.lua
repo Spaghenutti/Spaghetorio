@@ -3238,7 +3238,7 @@ if not mods["Krastorio2"] then
       energy_required = 2.4,  -- time in seconds to make the item
       ingredients = {
         {type = "item", name = "sp-sand", amount = 3},
-        {type = "item", name = "sp-caclium", amount = 1}
+        {type = "item", name = "sp-calcium", amount = 1}
       },
       results = {
         {type = "item", name = "sp-glass", amount = 1}

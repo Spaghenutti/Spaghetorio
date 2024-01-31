@@ -349,6 +349,10 @@ data:extend({
         type = "unlock-recipe",
         recipe = "sp-calcium-and-fluorine"
       },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-glass-from-calcium"
+      },
     },
     prerequisites = {"sp-cement"},
     unit =
@@ -427,6 +431,10 @@ data:extend({
       },
       {
         type = "unlock-recipe",
+        recipe = "sp-zirconia"
+      },
+      {
+        type = "unlock-recipe",
         recipe = "sp-ceramics"
       },
     },
@@ -494,6 +502,10 @@ data:extend({
                                    "__Spaghenutti__/graphics/hr-icons/tantalum-billet.png", 256, nil),
     effects =
     {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-niobium-powder"
+      },
       {
         type = "unlock-recipe",
         recipe = "sp-niobium-billet"
@@ -1617,6 +1629,27 @@ data:extend({
     },
     order = "a-h-a"
   },
+  {
+    type = "technology",
+    name = "sp-superconductor",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghenutti__/graphics/hr-icons/superconductor.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-superconductor"
+      },
+    },
+    prerequisites = {"logistic-science-pack"},
+    unit =
+    {
+      count = 100,
+      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      time = 15
+    },
+    order = "a-h-a"
+  },
 })
 
 if not mods["Krastorio2"] then
@@ -1643,14 +1676,8 @@ end
 --------------------------------------------------------------------------------
 --  "sp-coke"
 --  "sp-sand"
---  "sp-graphite"
---  "sp-sodium-carbonate"
---  "sp-zirconia"
 --  "sp-quartz"
---  "sp-niobium-powder"
---  "sp-aqueous-niobium-tantalum"
 --  "sp-glass"
---  "sp-glass-from-calcium"
 --  "sp-kevlar"
 --  "sp-epoxy"
 --  "sp-superconductor"
