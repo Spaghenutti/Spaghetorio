@@ -160,6 +160,12 @@ data.raw.technology["kr-fluids-chemistry"].unit = {count = 50, ingredients = {{"
 
 table.insert(data.raw.technology["kr-steel-fluid-tanks"].prerequisites, "sp-brass")
 
+table.insert(data.raw.technology["kr-stone-processing"].effects, {type = "unlock-recipe", recipe = "sp-stone-brick-from-sand"})
+
+table.insert(data.raw.technology["kr-lithium-processing"].effects, {type = "unlock-recipe", recipe = "sp-lithium-oxide"})
+
+table.insert(data.raw.technology["kr-lithium-processing"].effects, {type = "unlock-recipe", recipe = "sp-silica"})
+
 -- aai industry technology changes
 data.raw.technology["engine"].prerequisites = {"sp-steel-machining"}
 data.raw.technology["medium-electric-pole"].prerequisites = {"sp-aluminum-machining"}

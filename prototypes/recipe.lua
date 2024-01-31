@@ -1233,7 +1233,7 @@ data:extend({
       {type = "item", name = "sp-silver-solder", amount = 1}
     },
     results = {
-      {type = "item", name = "sp-memory-chip", amount = 1}
+      {type = "item", name = "sp-memory-chip", amount = 2}
     }
   },
   {
@@ -1246,11 +1246,12 @@ data:extend({
       {type = "item", name = "plastic-bar", amount = 1},
       {type = "item", name = "sp-high-purity-silicon", amount = 2},
       {type = "item", name = "copper-cable", amount = 1},
+      {type = "item", name = "sp-titanium-nitride", amount = 1},
       {type = "item", name = "sp-platinum", amount = 1},
       {type = "item", name = "sp-silver-solder", amount = 1}
     },
     results = {
-      {type = "item", name = "sp-antenna-chip", amount = 1}
+      {type = "item", name = "sp-antenna-chip", amount = 2}
     }
   },
   {
@@ -1263,6 +1264,7 @@ data:extend({
       {type = "item", name = "plastic-bar", amount = 1},
       {type = "item", name = "sp-high-purity-silicon", amount = 4},
       {type = "item", name = "sp-phosphorus", amount = 2},
+      {type = "item", name = "sp-titanium-nitride", amount = 1},
       {type = "item", name = "sp-palladium", amount = 1},
       {type = "item", name = "sp-silver-solder", amount = 1}
     },
@@ -1837,6 +1839,8 @@ data:extend({
   {
     type = "recipe",
     name = "sp-plutonium-239-fuel-rod",  -- #ForRegEx# - recipe
+    icons = util.overlay_small_icon("__Spaghenutti__/graphics/icons/plutonium-fuel-rod.png", 64,
+                                    "__Spaghenutti__/graphics/icons/plutonium-239-1.png", 64),
     category = "crafting",
     enabled = false,
     energy_required = 5.2,  -- time in seconds to make the item
@@ -1851,6 +1855,8 @@ data:extend({
   {
     type = "recipe",
     name = "sp-plutonium-240-fuel-rod",  -- #ForRegEx# - recipe
+    icons = util.overlay_small_icon("__Spaghenutti__/graphics/icons/plutonium-fuel-rod.png", 64,
+                                    "__Spaghenutti__/graphics/icons/plutonium-240-1.png", 64),
     category = "crafting",
     enabled = false,
     energy_required = 6,  -- time in seconds to make the item
@@ -2988,18 +2994,6 @@ data:extend({
   ------------------------------------------------------------------------------
   {
     type = "recipe",
-    name = "sp-medium-electric-pole",
-    enabled = false,
-    ingredients =
-    {
-      {"iron-stick", 4},
-      {"sp-aluminum-frame", 8},
-      {"sp-bolts", 8},
-    },
-    result = "medium-electric-pole"
-  },
-  {
-    type = "recipe",
     name = "sp-landfill-from-iron-ore",
     icons = util.overlay_small_icon("__base__/graphics/icons/landfill.png", 64,
                                     "__base__/graphics/icons/iron-ore.png", 64),
@@ -3291,6 +3285,8 @@ if not mods["Krastorio2"] then
     {
       type = "recipe",
       name = "sp-landfill-from-sand",
+      icons = util.overlay_small_icon("__base__/graphics/icons/landfill.png", 64,
+                                      "__Spaghenutti__/graphics/icons/sand.png", 64),
       energy_required = 1,
       enabled = false,
       category = "crafting",
@@ -3305,6 +3301,8 @@ if not mods["Krastorio2"] then
     {
       type = "recipe",
       name = "sp-stone-brick-from-sand",
+      icons = util.overlay_small_icon("__base__/graphics/icons/stone-brick.png", 64,
+                                      "__base__/graphics/icons/iron-ore.png", 64),
       category = "intermediate-smelting",
       energy_required = 2,
       enabled = false,

@@ -135,6 +135,8 @@ data:extend({
   {
     type = "recipe",
     name = "sp-landfill-from-sand",
+    icons = util.overlay_small_icon("__base__/graphics/icons/landfill.png", 64,
+                                    "__Krastorio2Assets__/icons/items-with-variations/sand/sand.png", 64),
     energy_required = 1,
     enabled = false,
     category = "crafting",
@@ -149,6 +151,8 @@ data:extend({
   {
     type = "recipe",
     name = "sp-stone-brick-from-sand",
+    icons = util.overlay_small_icon("__base__/graphics/icons/stone-brick.png", 64,
+                                    "__Krastorio2Assets__/icons/items-with-variations/sand/sand.png", 64),
     category = "intermediate-smelting",
     energy_required = 2,
     enabled = false,

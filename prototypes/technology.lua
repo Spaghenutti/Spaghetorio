@@ -302,6 +302,10 @@ data:extend({
         type = "unlock-recipe",
         recipe = "sp-cement"
       },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-landfill-from-cement"
+      },
     },
     prerequisites = {"sp-aluminum-processing"},
     unit =
@@ -600,12 +604,23 @@ data:extend({
   },
   {
     type = "technology",
-    name = "sp-silver-and-palladium",  -- #ForRegEx# - technology
+    name = "sp-noble-metals",  -- #ForRegEx# - technology
     icon_size = 256,
-    icons = util.combine_two_icons("__Spaghenutti__/graphics/hr-icons/silver.png", 256, nil,
-                                   "__Spaghenutti__/graphics/hr-icons/palladium.png", 256, nil),
+    icons = util.combine_five_icons("__Spaghenutti__/graphics/hr-icons/silver.png", 256, nil,
+                                    "__Spaghenutti__/graphics/hr-icons/palladium.png", 256, nil,
+                                    "__Spaghenutti__/graphics/hr-icons/gold.png", 256, nil,
+                                    "__Spaghenutti__/graphics/hr-icons/iridium.png", 256, nil,
+                                    "__Spaghenutti__/graphics/hr-icons/platinum.png", 256, nil),
     effects =
     {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-gold"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-platinum-iridium"
+      },
       {
         type = "unlock-recipe",
         recipe = "sp-silver-palladium"
@@ -835,7 +850,7 @@ data:extend({
     icon_size = 256,
     icons = util.combine_three_icons("__Spaghenutti__/graphics/hr-icons/infrared-filter.png", 256, nil,
                                      "__Spaghenutti__/graphics/hr-icons/glass-fiber.png", 256, nil,
-                                     "__Spaghenutti__/graphics/hr-icons/mirror.png", 256, nil),
+                                     "__Spaghenutti__/graphics/hr-icons/lens.png", 256, nil),
     effects =
     {
       {
@@ -849,6 +864,10 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "sp-mirror"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-lens"
       },
     },
     prerequisites = {"sp-stainless-steel-processing", "lubricant"},
@@ -1129,7 +1148,7 @@ data:extend({
         recipe = "sp-compute-unit"
       },
     },
-    prerequisites = {"sp-silver-products"},
+    prerequisites = {"sp-silver-products", "sp-titanium-nitride"},
     unit =
     {
       count = 100,
@@ -1462,9 +1481,59 @@ data:extend({
   },
   {
     type = "technology",
-    name = "sp-fuel-rods",  -- #ForRegEx# - technology
+    name = "sp-plutonium-processing",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghenutti__/graphics/hr-icons/plutonium-240-1.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-plutonium-239"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-plutonium-240"
+      },
+    },
+    prerequisites = {"logistic-science-pack"},
+    unit =
+    {
+      count = 100,
+      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-plutonium-fuel-rod",  -- #ForRegEx# - technology
     icon_size = 256,
     icon = "__Spaghenutti__/graphics/hr-icons/plutonium-fuel-rod.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-plutonium-239-fuel-rod"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-plutonium-240-fuel-rod"
+      },
+    },
+    prerequisites = {"logistic-science-pack"},
+    unit =
+    {
+      count = 100,
+      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-nuclear-fuel-rod",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghenutti__/graphics/hr-icons/uranium-fuel-rod.png",
     effects =
     {
       {
@@ -1475,13 +1544,68 @@ data:extend({
         type = "unlock-recipe",
         recipe = "sp-uranium-fuel-rod"
       },
+    },
+    prerequisites = {"logistic-science-pack"},
+    unit =
+    {
+      count = 100,
+      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-nuclear-fuel-rod-recycling",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghenutti__/graphics/hr-icons/used-up-fuel-rod.png",
+    effects =
+    {
       {
         type = "unlock-recipe",
-        recipe = "sp-plutonium-239-fuel-rod"
+        recipe = "sp-used-up-fuel-rod-reprocessing"
       },
+    },
+    prerequisites = {"sp-nuclear-fuel-rod"},
+    unit =
+    {
+      count = 100,
+      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-advanced-nuclear-fuel-rod-recycling",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghenutti__/graphics/hr-icons/used-up-fuel-rod.png",
+    effects =
+    {
       {
         type = "unlock-recipe",
-        recipe = "sp-plutonium-240-fuel-rod"
+        recipe = "sp-advanced-used-up-fuel-rod-reprocessing"
+      },
+    },
+    prerequisites = {"sp-nuclear-fuel-rod-recycling"},
+    unit =
+    {
+      count = 100,
+      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-titanium-nitride",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghenutti__/graphics/hr-icons/titanium-nitride.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-titanium-nitride"
       },
     },
     prerequisites = {"logistic-science-pack"},
@@ -1527,32 +1651,23 @@ end
 --  "sp-aqueous-niobium-tantalum"
 --  "sp-glass"
 --  "sp-glass-from-calcium"
---  "sp-gold"
---  "sp-platinum-iridium"
---  "sp-landfill-from-sand"
---  "sp-stone-brick-from-sand"
---  "sp-titanium-nitride"
 --  "sp-kevlar"
---  "sp-uranium-fuel-rod"
 --  "sp-epoxy"
---  "sp-cubit"
 --  "sp-superconductor"
---  "sp-lens"
 --  "sp-composites"
 --  "sp-silicon"
 --  "sp-high-purity-silicon"
 --  "sp-light-emitting-diode"
 --  "sp-laser"
---  "sp-silica"
 --  "sp-lithium"
---  "sp-plutonium-239"
---  "sp-plutonium-240"
---  "sp-used-up-fuel-rod-reprocessing"
---  "sp-advanced-used-up-fuel-rod-reprocessing"
---  "sp-lithium-oxide"
  
 
 table.insert(data.raw.technology["fluid-handling"].prerequisites, "sp-basic-alloy")
 table.insert(data.raw.technology["fluid-handling"].effects, {type = "unlock-recipe", recipe = "sp-valve"})
+
 table.insert(data.raw.technology["nuclear-power"].effects, {type = "unlock-recipe", recipe = "sp-reactor-core"})
 table.insert(data.raw.technology["nuclear-power"].effects, {type = "unlock-recipe", recipe = "sp-control-rod"})
+
+table.insert(data.raw.technology["landfill"].effects, {type = "unlock-recipe", recipe = "sp-landfill-from-limestone-and-stone"})
+table.insert(data.raw.technology["landfill"].effects, {type = "unlock-recipe", recipe = "sp-landfill-from-limestone"})
+table.insert(data.raw.technology["landfill"].effects, {type = "unlock-recipe", recipe = "sp-landfill-from-iron-ore"})
