@@ -350,22 +350,6 @@ data:extend({
     order = "[enriched-tinstone]",
     stack_size = 200
   },
-  {
-    type = "item",
-    name = "sp-enriched-zirconium",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/icons/enriched-zirconium-1.png",
-    icon_size = 64,
-    icon_mipmaps = 4,
-    pictures = {
-      { size = 64, filename = "__Spaghenutti__/graphics/icons/enriched-zirconium-1.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghenutti__/graphics/icons/enriched-zirconium-2.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghenutti__/graphics/icons/enriched-zirconium-3.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghenutti__/graphics/icons/enriched-zirconium-4.png", scale = 0.25, mipmap_count = 4}
-    },
-    subgroup = "enriched-resource",
-    order = "[enriched-zirconium]",
-    stack_size = 200
-  },
   ------------------------------------------------------------------------------
   -- Subgroup processed-resource --
   ------------------------------------------------------------------------------
@@ -393,6 +377,16 @@ data:extend({
     icon_mipmaps = 4,
     subgroup = "processed-resource",
     order = "[salt]",
+    stack_size = 200
+  },
+  {
+    type = "item",
+    name = "sp-lead-stone",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "processed-resource",
+    order = "[lead-stone]",
     stack_size = 200
   },
   {

@@ -3,14 +3,8 @@ TODO:
   - Add python scrip for mipmaps
   - Add icon for item group base products
   - Add fancy building (matter converter) which can build robots from iron
-  - update names:
-    - last name updated "plate-heat-exchanger"
   - missing icons
-    - duralumin
-    - polymer
-    - composites
-    - glue
-    - deuterium (not needed due to krastorio's heavy water)
+    - deuterium
     - helium-3
     - helium
   - missing technologies
@@ -31,6 +25,8 @@ TODO:
       - cobalt sulfate
       - salt
       + graphite
+
+  - replace rare-metals with yittrium, lanthanum, cerium, neodymium
 
 
 FIXME:

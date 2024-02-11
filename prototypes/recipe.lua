@@ -475,6 +475,19 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "sp-lead-slab",  -- #ForRegEx# - recipe
+    category = "smelting",
+    enabled = false,
+    energy_required = 2,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-lead-stone", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-bronze-rod", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
     name = "sp-bronze-rod",  -- #ForRegEx# - recipe
     category = "smelting",
     enabled = false,

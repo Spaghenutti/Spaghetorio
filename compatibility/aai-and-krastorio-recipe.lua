@@ -532,11 +532,11 @@ data:extend({
       {type = "item", name = "rare-metals", amount = 2}
     },
     results = {
-      {type = "item", name = "sp-yittrium", probability = 0.03, amount = 1},
-      {type = "item", name = "sp-lanthanum", probability = 0.04, amount = 1},
-      {type = "item", name = "sp-cerium", probability = 0.07, amount = 1},
-      {type = "item", name = "sp-neodymium", probability = 0.04, amount = 1},
-      {type = "item", name = "sand", probability = 0.82, amount = 1}
+      {type = "item", name = "sp-yittrium", probability = 0.06, amount = 1},
+      {type = "item", name = "sp-lanthanum", probability = 0.09, amount = 1},
+      {type = "item", name = "sp-cerium", probability = 0.15, amount = 1},
+      {type = "item", name = "sp-neodymium", probability = 0.08, amount = 1},
+      {type = "item", name = "sand", probability = 0.62, amount = 1}
     }
   },
   {
@@ -780,6 +780,290 @@ data:extend({
     },
     results = {
       {type = "item", name = "glass", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-enriched-aluminum",  -- #ForRegEx# - recipe
+    icon = "__Spaghenutti__/graphics/icons/enriched-aluminum-1.png",
+    icon_size = 64,
+    mip_maps = 4,
+    category = "chemistry",
+    subgroup = "enriched-resource",
+    enabled = false,
+    energy_required = 2,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-aluminum-ore", amount = 10},
+      {type = "fluid", name = "chlorine", amount = 2},
+      {type = "fluid", name = "water", amount = 50}
+    },
+    results = {
+      {type = "item", name = "sp-enriched-aluminum", amount = 6},
+      {type = "fluid", name = "dirty-water", amount = 50}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-alumina-from-enriched-aluminum",  -- #ForRegEx# - recipe
+    icons = util.overlay_small_icon("__Spaghenutti__/graphics/icons/alumina.png", 64,
+                                    "__Spaghenutti__/graphics/icons/enriched-aluminum-1.png", 64),
+    category = "smelting",
+    enabled = false,
+    energy_required = 3,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-enriched-aluminum", amount = 2}
+    },
+    results = {
+      {type = "item", name = "sp-alumina", amount = 3}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-enriched-chromite",  -- #ForRegEx# - recipe
+    icon = "__Spaghenutti__/graphics/icons/enriched-chromite-1.png",
+    icon_size = 64,
+    mip_maps = 4,
+    category = "chemistry",
+    subgroup = "enriched-resource",
+    enabled = false,
+    energy_required = 2,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-chromite", amount = 10},
+      {type = "fluid", name = "sulfuric-acid", amount = 4},
+      {type = "fluid", name = "water", amount = 30}
+    },
+    results = {
+      {type = "item", name = "iron-ore", amount = 4},
+      {type = "item", name = "sp-enriched-chromite", amount = 6},
+      {type = "fluid", name = "dirty-water", amount = 30}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-chromium-plate-from-enriched-chromite",  -- #ForRegEx# - recipe
+    icons = util.overlay_small_icon("__Spaghenutti__/graphics/icons/chromium-plate.png", 64,
+                                    "__Spaghenutti__/graphics/icons/enriched-chromite-1.png", 64),
+    category = "smelting",
+    enabled = false,
+    energy_required = 5,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-enriched-chromite", amount = 2}
+    },
+    results = {
+      {type = "item", name = "sp-chromium-plate", amount = 3}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-enriched-magnesium",  -- #ForRegEx# - recipe
+    icon = "__Spaghenutti__/graphics/icons/enriched-magnesium-1.png",
+    icon_size = 64,
+    mip_maps = 4,
+    category = "chemistry",
+    subgroup = "enriched-resource",
+    enabled = false,
+    energy_required = 2,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-magnesium-ore", amount = 10},
+      {type = "fluid", name = "sp-liquid-sodium", amount = 1},
+      {type = "fluid", name = "water", amount = 20}
+    },
+    results = {
+      {type = "item", name = "sp-salt", probability = 0.5, amount = 1},
+      {type = "item", name = "sp-enriched-magnesium", amount = 5},
+      {type = "fluid", name = "dirty-water", amount = 20}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-magnesium-slab-from-enriched-magnesium",  -- #ForRegEx# - recipe
+    icons = util.overlay_small_icon("__Spaghenutti__/graphics/icons/magnesium-slab.png", 64,
+                                    "__Spaghenutti__/graphics/icons/enriched-magnesium-1.png", 64),
+    category = "smelting",
+    enabled = false,
+    energy_required = 6,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-enriched-magnesium", amount = 3}
+    },
+    results = {
+      {type = "item", name = "sp-magnesium-slab", amount = 5}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-enriched-nickel",  -- #ForRegEx# - recipe
+    icon = "__Spaghenutti__/graphics/icons/enriched-nickel-1.png",
+    icon_size = 64,
+    mip_maps = 4,
+    category = "chemistry",
+    subgroup = "enriched-resource",
+    enabled = false,
+    energy_required = 2,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-nickel-ore", amount = 8},
+      {type = "fluid", name = "sulfuric-acid", amount = 2},
+      {type = "fluid", name = "water", amount = 20}
+    },
+    results = {
+      {type = "item", name = "iron-ore", amount = 6},
+      {type = "item", name = "sp-enriched-nickel", amount = 5},
+      {type = "fluid", name = "dirty-water", amount = 20}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-nickel-ingot-from-enriched-nickel",  -- #ForRegEx# - recipe
+    icons = util.overlay_small_icon("__Spaghenutti__/graphics/icons/nickel-ingot.png", 64,
+                                    "__Spaghenutti__/graphics/icons/enriched-nickel-1.png", 64),
+    category = "smelting",
+    enabled = false,
+    energy_required = 5,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-enriched-nickel", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-nickel-ingot", amount = 2}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-enriched-tinstone",  -- #ForRegEx# - recipe
+    icon = "__Spaghenutti__/graphics/icons/enriched-tinstone-1.png",
+    icon_size = 64,
+    mip_maps = 4,
+    category = "chemistry",
+    subgroup = "enriched-resource",
+    enabled = false,
+    energy_required = 3,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-tinstone", amount = 10},
+      {type = "fluid", name = "nitric-acid", amount = 3},
+      {type = "fluid", name = "water", amount = 20}
+    },
+    results = {
+      {type = "item", name = "sp-lead-stone", amount = 6},
+      {type = "item", name = "sp-enriched-tinstone", amount = 5},
+      {type = "fluid", name = "dirty-water", amount = 20}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-tin-ingot-from-enriched-tin",  -- #ForRegEx# - recipe
+    icons = util.overlay_small_icon("__Spaghenutti__/graphics/icons/tin-ingot.png", 64,
+                                    "__Spaghenutti__/graphics/icons/enriched-tinstone-1.png", 64),
+    category = "smelting",
+    enabled = false,
+    energy_required = 8,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-enriched-tinstone", amount = 3}
+    },
+    results = {
+      {type = "item", name = "sp-tin-ingot", amount = 4}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-enriched-titanium",  -- #ForRegEx# - recipe
+    icon = "__Spaghenutti__/graphics/icons/enriched-titanium-1.png",
+    icon_size = 64,
+    mip_maps = 4,
+    category = "chemistry",
+    subgroup = "enriched-resource",
+    enabled = false,
+    energy_required = 4,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-titanium-ore", amount = 12},
+      {type = "fluid", name = "ammonia", amount = 2},
+      {type = "fluid", name = "water", amount = 50}
+    },
+    results = {
+      {type = "item", name = "sp-enriched-titanium", amount = 6},
+      {type = "fluid", name = "dirty-water", amount = 50}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-titanium-chloride-from-enriched-titanium",  -- #ForRegEx# - recipe
+    icons = util.overlay_small_icon("__Spaghenutti__/graphics/icons/titanium-chloride.png", 64,
+                                    "__Spaghenutti__/graphics/icons/enriched-titanium-1.png", 64),
+    category = "smelting",
+    enabled = false,
+    energy_required = 5,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-enriched-titanium", amount = 2}
+    },
+    results = {
+      {type = "item", name = "sp-titanium-chloride", amount = 3}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-enriched-tungsten",  -- #ForRegEx# - recipe
+    icon = "__Spaghenutti__/graphics/icons/enriched-tungsten-1.png",
+    icon_size = 64,
+    mip_maps = 4,
+    category = "chemistry",
+    subgroup = "enriched-resource",
+    enabled = false,
+    energy_required = 2,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-tungsten-ore", amount = 10},
+      {type = "fluid", name = "nitric-acid", amount = 4},
+      {type = "fluid", name = "water", amount = 35}
+    },
+    results = {
+      {type = "item", name = "sp-enriched-tungsten", amount = 5},
+      {type = "fluid", name = "dirty-water", amount = 35}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-tungsten-ingot-from-enriched-tungsten",  -- #ForRegEx# - recipe
+    icons = util.overlay_small_icon("__Spaghenutti__/graphics/icons/ammonium-paratungstate.png", 64,
+                                    "__Spaghenutti__/graphics/icons/enriched-tungsten-1.png", 64),
+    category = "smelting",
+    enabled = false,
+    energy_required = 8,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-enriched-tungsten", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-ammonium-paratungstate", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-enriched-zinc",  -- #ForRegEx# - recipe
+    icon = "__Spaghenutti__/graphics/icons/enriched-zinc-1.png",
+    icon_size = 64,
+    mip_maps = 4,
+    category = "chemistry",
+    subgroup = "enriched-resource",
+    enabled = false,
+    energy_required = 3.2,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-zinc-ore", amount = 12},
+      {type = "item", name = "sp-sodium-carbonate", amount = 2},
+      {type = "fluid", name = "water", amount = 40}
+    },
+    results = {
+      {type = "item", name = "sp-enriched-zinc", amount = 7},
+      {type = "fluid", name = "dirty-water", amount = 40}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-zinc-plate-from-enriched-zinc",  -- #ForRegEx# - recipe
+    icons = util.overlay_small_icon("__Spaghenutti__/graphics/icons/zinc-plate.png", 64,
+                                    "__Spaghenutti__/graphics/icons/enriched-zinc-1.png", 64),
+    category = "smelting",
+    enabled = false,
+    energy_required = 4,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-enriched-zinc", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-zinc-plate", amount = 2}
     }
   },
 })
