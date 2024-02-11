@@ -941,7 +941,7 @@ data:extend({
       {type = "fluid", name = "water", amount = 20}
     },
     results = {
-      {type = "item", name = "sp-lead-stone", amount = 6},
+      {type = "item", name = "sp-leadstone", amount = 6},
       {type = "item", name = "sp-enriched-tinstone", amount = 5},
       {type = "fluid", name = "dirty-water", amount = 20}
     }

@@ -381,12 +381,18 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-lead-stone",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
+    name = "sp-leadstone",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/leadstone-1.png",
     icon_size = 64,
     icon_mipmaps = 4,
+    pictures = {
+      { size = 64, filename = "__Spaghenutti__/graphics/icons/leadstone-1.png", scale = 0.25, mipmap_count = 4},
+      { size = 64, filename = "__Spaghenutti__/graphics/icons/leadstone-2.png", scale = 0.25, mipmap_count = 4},
+      { size = 64, filename = "__Spaghenutti__/graphics/icons/leadstone-3.png", scale = 0.25, mipmap_count = 4},
+      { size = 64, filename = "__Spaghenutti__/graphics/icons/leadstone-4.png", scale = 0.25, mipmap_count = 4}
+    },
     subgroup = "processed-resource",
-    order = "[lead-stone]",
+    order = "[leadstone]",
     stack_size = 200
   },
   {
