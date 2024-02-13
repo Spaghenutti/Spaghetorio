@@ -123,6 +123,32 @@ data:extend({
     },
     order = "a-h-a"
   },
+  {
+    type = "technology",
+    -- This tech does not exist in krastorio
+    name = "kr-rare-metals",  -- #ForRegEx# - technology
+    icon_size = 64, -- TODO: Fix icon
+    icon = "__Krastorio2Assets__/icons/items-with-variations/rare-metals/rare-metals.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "rare-metals"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-rare-metal-processing"
+      },
+    },
+    prerequisites = {"kr-fluids-chemistry"},
+    unit =
+    {
+      count = 50,
+      ingredients = {{"automation-science-pack", 1}},
+      time = 15
+    },
+    order = "a-h-a"
+  },
 })
 
 -- spaghenutty thechnology changes

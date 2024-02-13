@@ -1500,11 +1500,11 @@ data:extend({
     {
       {
         type = "unlock-recipe",
-        recipe = "sp-plutonium-239"
+        recipe = "sp-plutonium-239-processing"
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-plutonium-240"
+        recipe = "sp-plutonium-240-processing"
       },
     },
     prerequisites = {"logistic-science-pack"},

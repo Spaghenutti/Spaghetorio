@@ -3070,6 +3070,8 @@ data:extend({
   {
     type = "recipe",
     name = "sp-stone-brick-from-limestone",
+    icons = util.overlay_small_icon("__base__/graphics/icons/stone-brick.png", 64,
+                                      "__Spaghenutti__/graphics/icons/limestone-1.png", 64),
     category = "intermediate-smelting",
     energy_required = 3.2,
     enabled = false,
@@ -3175,7 +3177,7 @@ if not mods["Krastorio2"] then
     {
       type = "recipe",
       name = "sp-quartz",  -- #ForRegEx# - recipe
-      icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
+      icon = "__Spaghenutti__/graphics/icons/quartz.png",
       icon_size = 256,
       scale = 0.25,
       category = "chemistry",
@@ -3213,7 +3215,8 @@ if not mods["Krastorio2"] then
     {
       type = "recipe",
       name = "sp-aqueous-niobium-tantalum",  -- #ForRegEx# - recipe
-      icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
+      icons = util.combine_two_icons("__Spaghenutti__/graphics/icons/aqueous-niobium.png", 64, nil,
+                                      "__Spaghenutti__/graphics/icons/aqueous-tantalum.png", 64, nil),
       icon_size = 256,
       scale = 0.25,
       category = "chemistry",
@@ -3260,7 +3263,7 @@ if not mods["Krastorio2"] then
     {
       type = "recipe",
       name = "sp-gold",  -- #ForRegEx# - recipe
-      icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
+      icon = "__Spaghenutti__/graphics/icons/gold.png",
       icon_size = 256,
       scale = 0.25,
       category = "chemistry",
@@ -3279,7 +3282,8 @@ if not mods["Krastorio2"] then
     {
       type = "recipe",
       name = "sp-platinum-iridium",  -- #ForRegEx# - recipe
-      icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
+      icons = util.combine_two_icons("__Spaghenutti__/graphics/icons/platinum.png", 64, nil,
+                                      "__Spaghenutti__/graphics/icons/iridium.png", 64, nil),
       icon_size = 256,
       scale = 0.25,
       category = "crafting",
@@ -3315,7 +3319,7 @@ if not mods["Krastorio2"] then
       type = "recipe",
       name = "sp-stone-brick-from-sand",
       icons = util.overlay_small_icon("__base__/graphics/icons/stone-brick.png", 64,
-                                      "__base__/graphics/icons/iron-ore.png", 64),
+                                      "__Spaghenutti__/graphics/icons/sand.png", 64),
       category = "intermediate-smelting",
       energy_required = 2,
       enabled = false,
@@ -3430,7 +3434,8 @@ if not mods["Krastorio2"] then
     {
       type = "recipe",
       name = "sp-sodium-and-chlorine",  -- #ForRegEx# - recipe
-      icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
+      icons = util.combine_two_icons("__Spaghenutti__/graphics/icons/sodium.png", 64, nil,
+                                      "__Spaghenutti__/graphics/icons/chlorine.png", 64, nil),
       icon_size = 256,
       scale = 0.25,
       category = "chemistry",
@@ -3510,7 +3515,7 @@ if not mods["Krastorio2"] then
     {
       type = "recipe",
       name = "sp-high-purity-silicon",  -- #ForRegEx# - recipe
-      icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
+      icon = "__Spaghenutti__/graphics/icons/high-purity-silicon.png",
       icon_size = 256,
       scale = 0.25,
       category = "smelting",
@@ -3628,8 +3633,8 @@ if not mods["Krastorio2"] then
     },
     {
       type = "recipe",
-      name = "sp-plutonium-239",  -- #ForRegEx# - recipe
-      icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
+      name = "sp-plutonium-239-processing",  -- #ForRegEx# - recipe
+      icon = "__Spaghenutti__/graphics/icons/plutonium-239-1.png",
       icon_size = 256,
       scale = 0.25,
       category = "high-energy-physics",
@@ -3648,8 +3653,8 @@ if not mods["Krastorio2"] then
     },
     {
       type = "recipe",
-      name = "sp-plutonium-240",  -- #ForRegEx# - recipe
-      icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
+      name = "sp-plutonium-240-processing",  -- #ForRegEx# - recipe
+      icon = "__Spaghenutti__/graphics/icons/plutonium-240-1.png",
       icon_size = 256,
       scale = 0.25,
       category = "high-energy-physics",
@@ -3669,7 +3674,8 @@ if not mods["Krastorio2"] then
     {
       type = "recipe",
       name = "sp-used-up-fuel-rod-reprocessing",  -- #ForRegEx# - recipe
-      icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
+      icons = util.combine_two_icons("__Spaghenutti__/graphics/icons/used-up-fuel-rod.png", 64, nil,
+                                     "__base__/graphics/icons/uranium-238.png", 64, nil),
       icon_size = 64,
       mip_maps = 4,
       category = "chemistry",
@@ -3688,7 +3694,8 @@ if not mods["Krastorio2"] then
     {
       type = "recipe",
       name = "sp-advanced-used-up-fuel-rod-reprocessing",  -- #ForRegEx# - recipe
-      icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
+      icons = util.combine_two_icons("__Spaghenutti__/graphics/icons/used-up-fuel-rod.png", 64, nil,
+                                     "__Spaghenutti__/graphics/icons/plutonium-239-1.png", 64, nil),
       icon_size = 256,
       scale = 0.25,
       category = "chemistry",

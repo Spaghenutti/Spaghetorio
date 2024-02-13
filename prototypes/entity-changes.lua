@@ -81,3 +81,7 @@ data.raw["autoplace-control"]["stone"].order = "b[stone]"
 data.raw["autoplace-control"]["coal"].order = "b[coal]"
 data.raw["autoplace-control"]["uranium-ore"].order = "b[uranium-ore]"
 data.raw["autoplace-control"]["crude-oil"].order = "c[crude-oil]"
+
+-- add crafting categories
+table.insert(data.raw["assembling-machine"]["centrifuge"].crafting_categories, "high-energy-physics")
+table.insert(data.raw["furnace"]["electric-furnace"].crafting_categories, "intermediate-smelting")
