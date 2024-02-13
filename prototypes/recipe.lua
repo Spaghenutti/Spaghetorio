@@ -785,6 +785,24 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "sp-tellurium",  -- #ForRegEx# - recipe
+    icon = "__Spaghenutti__/graphics/icons/tellurium-1.png",
+    icon_size = 64,
+    mip_maps = 4,
+    category = "chemistry",
+    subgroup = "raw-resource",
+    enabled = false,
+    energy_required = 4,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-tellurium-hydroxide", amount = 1},
+      {type = "fluid", name = "sulfuric-acid", amount = 20},
+    },
+    results = {
+      {type = "item", name = "sp-tellurium", amount = 2},
+    }
+  },
+  {
+    type = "recipe",
     name = "sp-silver-palladium",  -- #ForRegEx# - recipe
     icons = util.combine_two_icons("__Spaghenutti__/graphics/icons/silver.png", 64, nil,
                                   "__Spaghenutti__/graphics/icons/palladium.png", 64, nil),
@@ -3518,7 +3536,7 @@ if not mods["Krastorio2"] then
       icon = "__Spaghenutti__/graphics/icons/high-purity-silicon.png",
       icon_size = 256,
       scale = 0.25,
-      category = "smelting",
+      category = "intermediate-smelting",
       subgroup = "advanced-raw-material",
       enabled = false,
       energy_required = 8,  -- time in seconds to make the item
@@ -3848,6 +3866,25 @@ if not mods["Krastorio2"] then
       },
       results = {
         {type = "item", name = "sp-electrolyte", amount = 1}
+      }
+    },
+    {
+      type = "recipe",
+      name = "sp-tellurium-hydroxide",  -- #ForRegEx# - recipe
+      icon = "__Spaghenutti__/graphics/icons/tellurium-hydroxide.png",
+      icon_size = 64,
+      mip_maps = 4,
+      category = "chemistry",
+      subgroup = "raw-resource",
+      enabled = false,
+      energy_required = 3,  -- time in seconds to make the item
+      ingredients = {
+        {type = "item", name = "stone", amount = 1},
+        {type = "fluid", name = "sp-bleach", amount = 5},
+      },
+      results = {
+        {type = "item", name = "sp-sand", probability = 0.92, amount = 3},
+        {type = "item", name = "sp-tellurium-hydroxide", probability = 0.08, amount = 1}
       }
     },
   })

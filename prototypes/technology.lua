@@ -903,10 +903,6 @@ data:extend({
         type = "unlock-recipe",
         recipe = "sp-salt"
       },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-sodium-and-chlorine"
-      },
     },
     prerequisites = {"sp-cement"},
     unit =
@@ -1160,7 +1156,7 @@ data:extend({
         recipe = "sp-compute-unit"
       },
     },
-    prerequisites = {"sp-silver-products", "sp-titanium-nitride"},
+    prerequisites = {"sp-silver-products", "sp-titanium-nitride", "sp-high-purity-silicon-processing"},
     unit =
     {
       count = 100,
@@ -1639,6 +1635,79 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "sp-superconductor"
+      },
+    },
+    prerequisites = {"logistic-science-pack"},
+    unit =
+    {
+      count = 100,
+      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-antimony-processing",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icons = util.combine_two_icons("__Spaghenutti__/graphics/hr-icons/stibnite.png", 256, nil,
+                                   "__Spaghenutti__/graphics/hr-icons/antimony.png", 256, nil),
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-antimony"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-stibnite"
+      },
+    },
+    prerequisites = {"sulfur-processing"},
+    unit =
+    {
+      count = 100,
+      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-tellurium-processing",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icons = util.combine_two_icons("__Spaghenutti__/graphics/hr-icons/tellurium-hydroxide.png", 256, nil,
+                                   "__Spaghenutti__/graphics/hr-icons/tellurium-1.png", 256, nil),
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-tellurium-hydroxide"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-tellurium"
+      },
+    },
+    prerequisites = {"sulfur-processing"},
+    unit =
+    {
+      count = 100,
+      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-high-purity-silicon-processing",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghenutti__/graphics/hr-icons/high-purity-silicon.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-high-purity-silicon"
       },
     },
     prerequisites = {"logistic-science-pack"},

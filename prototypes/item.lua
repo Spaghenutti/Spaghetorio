@@ -718,6 +718,16 @@ data:extend({
   },
   {
     type = "item",
+    name = "sp-tellurium-hydroxide",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/tellurium-hydroxide.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "processed-resource",
+    order = "[tellurium-hydroxide]",
+    stack_size = 200
+  },
+  {
+    type = "item",
     name = "sp-tellurium",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/icons/tellurium-1.png",
     icon_size = 64,

@@ -1073,6 +1073,25 @@ data:extend({
       {type = "item", name = "sp-zinc-plate", amount = 2}
     }
   },
+  {
+    type = "recipe",
+    name = "sp-tellurium-hydroxide",  -- #ForRegEx# - recipe
+    icon = "__Spaghenutti__/graphics/icons/tellurium-hydroxide.png",
+    icon_size = 64,
+    mip_maps = 4,
+    category = "chemistry",
+    subgroup = "raw-resource",
+    enabled = false,
+    energy_required = 3,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "stone", amount = 1},
+      {type = "fluid", name = "sp-bleach", amount = 5},
+    },
+    results = {
+      {type = "item", name = "sand", probability = 0.92, amount = 3},
+      {type = "item", name = "sp-tellurium-hydroxide", probability = 0.08, amount = 1}
+    }
+  },
 })
 
 -- items

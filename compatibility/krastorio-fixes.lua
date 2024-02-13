@@ -69,3 +69,6 @@ data.raw.tool["singularity-tech-card"].subgroup = "advanced-science"
 data.raw["autoplace-control"]["rare-metals"].order = "b[rare-metals]"
 data.raw["autoplace-control"]["mineral-water"].order = "c[mineral-water]"
 data.raw["autoplace-control"]["imersite"].order = "d[imersite]"
+
+-- add crafting categories
+table.insert(data.raw["assembling-machine"]["kr-advanced-furnace"].crafting_categories, "intermediate-smelting")
