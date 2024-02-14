@@ -1092,6 +1092,23 @@ data:extend({
       {type = "item", name = "sp-tellurium-hydroxide", probability = 0.08, amount = 1}
     }
   },
+  {
+    type = "recipe",
+    name = "sp-wood-from-urea",  -- #ForRegEx# - recipe
+    icons = util.overlay_small_icon("__Krastorio2Assets__/icons/recipes/wood-plus.png", 64,
+                                    "__Spaghenutti__/graphics/icons/urea.png", 64),
+    category = "smelting",
+    enabled = false,
+    energy_required = 75,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-urea", amount = 1},
+      {type = "item", name = "landfill", amount = 3},
+      {type = "fluid", name = "water", amount = 300}
+    },
+    results = {
+      {type = "item", name = "wood", amount = 2}
+    }
+  },
 })
 
 -- items
@@ -1175,6 +1192,11 @@ util.change_recipe_ingredients("kr-fluid-storage-2",  -- "huge storage tank"
   {{"sp-bolts", 16}, {"steel-plate", 80}, {"steel-beam", 24}, {"sp-brass", 32}, {"sp-valve", 24}},
   6,
   12)
+util.change_recipe_ingredients("lithium-sulfur-battery",  -- "huge storage tank"
+  {{"lithium", 1}, {"sp-aluminum-sheet", 1}, {type="fluid", name="sulfuric-acid", amount=10}, {"sp-graphite", 1}, {"sp-electrolyte", 1}},
+  {{"lithium", 2}, {"sp-aluminum-sheet", 1}, {type="fluid", name="sulfuric-acid", amount=20}, {"sp-graphite", 1}, {"sp-electrolyte", 1}},
+  4,
+  6)
 
 -- Buildings
 util.change_recipe_ingredients("stone-furnace",

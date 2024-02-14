@@ -211,6 +211,11 @@ table.insert(data.raw.technology["kr-enriched-ores"].effects, {type = "unlock-re
 table.insert(data.raw.technology["kr-enriched-ores"].effects, {type = "unlock-recipe", recipe = "sp-enriched-zinc"})
 table.insert(data.raw.technology["kr-enriched-ores"].effects, {type = "unlock-recipe", recipe = "sp-zinc-plate-from-enriched-zinc"})
 
+table.insert(data.raw.technology["kr-lithium-sulfur-battery"].effects, {type = "unlock-recipe", recipe = "sp-electrolyte"})
+
+table.insert(data.raw.technology["kr-bio-processing"].effects, {type = "unlock-recipe", recipe = "sp-urea"})
+table.insert(data.raw.technology["kr-bio-processing"].effects, {type = "unlock-recipe", recipe = "sp-wood-from-urea"})
+
 -- aai industry technology changes
 data.raw.technology["engine"].prerequisites = {"sp-steel-machining"}
 data.raw.technology["medium-electric-pole"].prerequisites = {"sp-aluminum-machining"}

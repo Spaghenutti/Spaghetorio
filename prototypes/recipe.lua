@@ -483,7 +483,7 @@ data:extend({
       {type = "item", name = "sp-leadstone", amount = 1},
     },
     results = {
-      {type = "item", name = "sp-bronze-rod", amount = 1}
+      {type = "item", name = "sp-lead-slab", amount = 1}
     }
   },
   {
