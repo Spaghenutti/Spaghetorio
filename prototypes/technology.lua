@@ -1994,6 +1994,182 @@ data:extend({
     },
     order = "a-h-a"
   },
+  {
+    type = "technology",
+    name = "sp-noble-gases",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghenutti__/graphics/hr-icons/xenon.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-helium-from-atmosphere"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-xenon-from-atmosphere"
+      },
+    },
+    prerequisites = {"logistic-science-pack"},
+    unit =
+    {
+      count = 100,
+      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-quantum-tech",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icons = util.combine_two_icons("__Spaghenutti__/graphics/hr-icons/quantum-crystal.png", 256, nil,
+                                   "__Spaghenutti__/graphics/hr-icons/quantum-foam.png", 256, nil),
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-quantum-crystal"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-quantum-foam"
+      },
+    },
+    prerequisites = {"sp-blunagium-processing", "sp-noble-gases"},
+    unit =
+    {
+      count = 100,
+      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-extreme-low-temperature-tech",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghenutti__/graphics/hr-icons/fermium-condensate.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-fermium-condensate"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-helium-3-from-helium-and-hydrogen"
+      }
+    },
+    prerequisites = {"sp-blunagium-processing"},
+    unit =
+    {
+      count = 100,
+      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-ion-thruster",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghenutti__/graphics/hr-icons/ion-thruster.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-ion-thruster"
+      }
+    },
+    prerequisites = {"sp-noble-gases"},
+    unit =
+    {
+      count = 100,
+      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-blunagium-explorer",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghenutti__/graphics/hr-icons/blunagium-explorer.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-vortex-core"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-blunagium-explorer"
+      },
+    },
+    prerequisites = {"sp-extreme-low-temperature-tech", "sp-ion-thruster"},
+    unit =
+    {
+      count = 100,
+      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-gravitonium",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghenutti__/graphics/hr-icons/gravitonium.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-gravitonium"
+      }
+    },
+    prerequisites = {"sp-quantum-tech", "sp-yemnuth-processing"},
+    unit =
+    {
+      count = 100,
+      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-yemnuth-explorer",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghenutti__/graphics/hr-icons/yemnuth-explorer.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-plasma-core"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-plasma-capsule"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-plasma-crystal"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-yemnuth-explorer"
+      },
+    },
+    prerequisites = {"sp-gravitonium", "sp-ion-thruster"},
+    unit =
+    {
+      count = 100,
+      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      time = 15
+    },
+    order = "a-h-a"
+  },
 })
 
 if not mods["Krastorio2"] then

@@ -1109,6 +1109,64 @@ data:extend({
       {type = "item", name = "wood", amount = 2}
     }
   },
+  {
+    type = "recipe",
+    name = "sp-xenon-from-atmosphere",  -- #ForRegEx# - recipe
+    category = "atmosphere-condensation",
+    enabled = false,
+    energy_required = 10,  -- time in seconds to make the item
+    ingredients = {},
+    results = {
+      {type = "fluid", name = "sp-xenon", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-helium-from-atmosphere",  -- #ForRegEx# - recipe
+    category = "atmosphere-condensation",
+    enabled = false,
+    energy_required = 1,  -- time in seconds to make the item
+    ingredients = {},
+    results = {
+      {type = "fluid", name = "sp-helium", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-helium-3-from-helium-and-hydrogen",  -- #ForRegEx# - recipe
+    icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
+    icon_size = 64,
+    mip_maps = 4,
+    category = "crafting-with-fluid",
+    subgroup = "processed-resource",
+    enabled = false,
+    energy_required = 1,  -- time in seconds to make the item
+    ingredients = {
+      {type = "fluid", name = "sp-helium", amount = 10},
+      {type = "fluid", name = "hydrogen", amount = 10},
+    },
+    results = {
+      {type = "fluid", name = "sp-helium-3", amount = 1},
+      {type = "fluid", name = "sp-helium", amount = 9}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-gravitonium",  -- #ForRegEx# - recipe
+    category = "crafting-with-fluid",
+    enabled = false,
+    energy_required = 20,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-yemnuth-pearls", amount = 5},
+      {type = "item", name = "sp-quantum-crystal", amount = 2},
+      {type = "item", name = "sp-quasicrystal", amount = 1},
+      {type = "item", name = "tritium", amount = 3},
+      {type = "fluid", name = "sp-xenon", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-gravitonium", amount = 1}
+    }
+  },
 })
 
 -- items

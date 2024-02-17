@@ -3887,6 +3887,55 @@ if not mods["Krastorio2"] then
         {type = "item", name = "sp-tellurium-hydroxide", probability = 0.08, amount = 1}
       }
     },
+    {
+      type = "recipe",
+      name = "sp-helium",  -- #ForRegEx# - recipe
+      category = "chemistry",
+      enabled = false,
+      energy_required = 1,  -- time in seconds to make the item
+      ingredients = {
+        {type = "fluid", name = "sp-hydrogen", amount = 2},
+      },
+      results = {
+        {type = "fluid", name = "sp-helium", amount = 1}
+      }
+    },
+    {
+      type = "recipe",
+      name = "sp-helium-3-from-helium-and-hydrogen",  -- #ForRegEx# - recipe
+      icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
+      icon_size = 64,
+      mip_maps = 4,
+      category = "crafting-with-fluid",
+      subgroup = "processed-resource",
+      enabled = false,
+      energy_required = 1,  -- time in seconds to make the item
+      ingredients = {
+        {type = "fluid", name = "sp-helium", amount = 10},
+        {type = "fluid", name = "sp-hydrogen", amount = 10},
+      },
+      results = {
+        {type = "fluid", name = "sp-helium-3", amount = 1},
+        {type = "fluid", name = "sp-helium", amount = 9}
+      }
+    },
+    {
+      type = "recipe",
+      name = "sp-gravitonium",  -- #ForRegEx# - recipe
+      category = "crafting-with-fluid",
+      enabled = false,
+      energy_required = 20,  -- time in seconds to make the item
+      ingredients = {
+        {type = "item", name = "sp-yemnuth-pearls", amount = 5},
+        {type = "item", name = "sp-quantum-crystal", amount = 2},
+        {type = "item", name = "sp-quasicrystal", amount = 1},
+        {type = "item", name = "sp-tritium", amount = 3},
+        {type = "fluid", name = "sp-xenon", amount = 1}
+      },
+      results = {
+        {type = "item", name = "sp-gravitonium", amount = 1}
+      }
+    },
   })
 end
 
