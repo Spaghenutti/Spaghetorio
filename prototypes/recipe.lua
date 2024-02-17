@@ -37,7 +37,7 @@ local util = require("data-util")
 --    + "sp-vynil-chloride" (fluid)
 --    + "sp-methyl-tert-butyl-ether" (fluid)
 --    + "sp-control-unit" (similar icon to rocket control unit)
---    + "sp-sensor"
+--    + "sp-optical-sensor"
 --    - "sp-dynamo" (electric motor and battery)
 --    - "sp-nuclear-waste"
 --    - "sp-nanowire"
@@ -2103,6 +2103,8 @@ data:extend({
   {
     type = "recipe",
     name = "sp-electrode-from-iridium",  -- #ForRegEx# - recipe
+    icons = util.overlay_small_icon("__Spaghenutti__/graphics/icons/electrode.png", 64,
+                                    "__Spaghenutti__/graphics/icons/iridium.png", 64),
     category = "crafting",
     enabled = false,
     energy_required = 14,  -- time in seconds to make the item
@@ -2119,6 +2121,8 @@ data:extend({
   {
     type = "recipe",
     name = "sp-electrode-from-platinum",  -- #ForRegEx# - recipe
+    icons = util.overlay_small_icon("__Spaghenutti__/graphics/icons/electrode.png", 64,
+                                    "__Spaghenutti__/graphics/icons/platinum.png", 64),
     category = "crafting",
     enabled = false,
     energy_required = 8,  -- time in seconds to make the item
@@ -2358,7 +2362,7 @@ data:extend({
     ingredients = {
       {type = "item", name = "sp-glass-fiber", amount = 1},
       {type = "item", name = "sp-compute-unit", amount = 2},
-      {type = "item", name = "sp-sensor", amount = 2},
+      {type = "item", name = "sp-optical-sensor", amount = 2},
       {type = "item", name = "sp-relay", amount = 6},
     },
     results = {
@@ -2367,7 +2371,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-sensor",  -- #ForRegEx# - recipe
+    name = "sp-optical-sensor",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 4,  -- time in seconds to make the item
@@ -2378,7 +2382,7 @@ data:extend({
       {type = "item", name = "sp-mirror", amount = 2},
     },
     results = {
-      {type = "item", name = "sp-sensor", amount = 1}
+      {type = "item", name = "sp-optical-sensor", amount = 1}
     }
   },
   {

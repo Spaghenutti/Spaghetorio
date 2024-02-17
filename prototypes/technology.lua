@@ -788,7 +788,7 @@ data:extend({
     type = "technology",
     name = "sp-pressure-fluid",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/pressure-tank.png",
+    icon = "__Spaghenutti__/graphics/hr-icons/pressure-tube.png",
     effects =
     {
       {
@@ -864,19 +864,10 @@ data:extend({
     type = "technology",
     name = "sp-optics",  -- #ForRegEx# - technology
     icon_size = 256,
-    icons = util.combine_three_icons("__Spaghenutti__/graphics/hr-icons/infrared-filter.png", 256, nil,
-                                     "__Spaghenutti__/graphics/hr-icons/glass-fiber.png", 256, nil,
-                                     "__Spaghenutti__/graphics/hr-icons/lens.png", 256, nil),
+    icons = util.combine_two_icons("__Spaghenutti__/graphics/hr-icons/mirror.png", 256, nil,
+                                   "__Spaghenutti__/graphics/hr-icons/lens.png", 256, nil),
     effects =
     {
-      {
-        type = "unlock-recipe",
-        recipe = "sp-infrared-filter"
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-glass-fiber"
-      },
       {
         type = "unlock-recipe",
         recipe = "sp-mirror"
@@ -996,8 +987,8 @@ data:extend({
     type = "technology",
     name = "sp-advanced-optics",  -- #ForRegEx# - technology
     icon_size = 256,
-    icons = util.combine_two_icons("__Spaghenutti__/graphics/hr-icons/glass-fiber.png", 256, nil,
-                                   "__Spaghenutti__/graphics/hr-icons/infrared-filter.png", 256, nil),
+    mip_maps = 4,
+    icon = "__base__/graphics/technology/optics.png",
     effects =
     {
       {
@@ -1008,8 +999,12 @@ data:extend({
         type = "unlock-recipe",
         recipe = "sp-infrared-filter"
       },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-laser"
+      },
     },
-    prerequisites = {"sp-sodium-processing"},
+    prerequisites = {"sp-sodium-processing", "sp-optics"},
     unit =
     {
       count = 100,
@@ -1133,10 +1128,9 @@ data:extend({
     type = "technology",
     name = "sp-advanced-circuit-board",  -- #ForRegEx# - technology
     icon_size = 256,
-    icons = util.combine_four_icons("__Spaghenutti__/graphics/hr-icons/memory-chip.png", 256, nil,
-                                    "__Spaghenutti__/graphics/hr-icons/antenna-chip.png", 256, nil,
-                                    "__Spaghenutti__/graphics/hr-icons/processor.png", 256, nil,
-                                    "__Spaghenutti__/graphics/hr-icons/cmos.png", 256, nil),
+    icons = util.combine_three_icons("__Spaghenutti__/graphics/hr-icons/memory-chip.png", 256, nil,
+                                     "__Spaghenutti__/graphics/hr-icons/antenna-chip.png", 256, nil,
+                                     "__Spaghenutti__/graphics/hr-icons/processor.png", 256, nil),
     effects =
     {
       {
@@ -2170,6 +2164,182 @@ data:extend({
     },
     order = "a-h-a"
   },
+  {
+    type = "technology",
+    name = "sp-heavy-bearing",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghenutti__/graphics/hr-icons/heavy-bearing.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-heavy-bearing"
+      },
+    },
+    prerequisites = {"logistic-science-pack"},
+    unit =
+    {
+      count = 100,
+      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-kevlar",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghenutti__/graphics/hr-icons/kevlar.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-kevlar"
+      },
+    },
+    prerequisites = {"logistic-science-pack"},
+    unit =
+    {
+      count = 100,
+      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-advanced-compute-unit",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghenutti__/graphics/hr-icons/advanced-compute-unit.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-advanced-compute-unit"
+      },
+    },
+    prerequisites = {"logistic-science-pack"},
+    unit =
+    {
+      count = 100,
+      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-electrode",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghenutti__/graphics/hr-icons/electrode.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-electrode-from-platinum"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-electrode-from-iridium"
+      },
+    },
+    prerequisites = {"logistic-science-pack"},
+    unit =
+    {
+      count = 100,
+      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-flux-capacitor",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghenutti__/graphics/hr-icons/flux-capacitor.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-flux-capacitor"
+      },
+    },
+    prerequisites = {"logistic-science-pack"},
+    unit =
+    {
+      count = 100,
+      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-relay",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghenutti__/graphics/hr-icons/relay.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-relay"
+      },
+    },
+    prerequisites = {"logistic-science-pack"},
+    unit =
+    {
+      count = 100,
+      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-transformer",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghenutti__/graphics/hr-icons/transformer.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-transformer"
+      },
+    },
+    prerequisites = {"sp-relay"},
+    unit =
+    {
+      count = 100,
+      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-optical-sensor",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghenutti__/graphics/hr-icons/cmos.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-cmos"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-optical-sensor"
+      },
+    },
+    prerequisites = {"sp-relay"},
+    unit =
+    {
+      count = 100,
+      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      time = 15
+    },
+    order = "a-h-a"
+  },
 })
 
 if not mods["Krastorio2"] then
@@ -2177,37 +2347,6 @@ if not mods["Krastorio2"] then
 
   })
 end
-
--- missing:
---  "sp-catalyst-from-calcium-magnesium"
---------------------------------------------------------------------------------
--- Alternate recipes for vanilla items
---------------------------------------------------------------------------------
---  "sp-medium-electric-pole"
---  "sp-landfill-from-cement"
---  "sp-red-wire-from-aluminum"
---  "sp-green-wire-from-aluminum"
---------------------------------------------------------------------------------
--- extend vanilla tech
---------------------------------------------------------------------------------
---
---------------------------------------------------------------------------------
--- if not mods["Krastorio2"] then
---------------------------------------------------------------------------------
---  "sp-coke"
---  "sp-sand"
---  "sp-quartz"
---  "sp-glass"
---  "sp-kevlar"
---  "sp-epoxy"
---  "sp-superconductor"
---  "sp-composites"
---  "sp-silicon"
---  "sp-high-purity-silicon"
---  "sp-light-emitting-diode"
---  "sp-laser"
---  "sp-lithium"
- 
 
 table.insert(data.raw.technology["fluid-handling"].prerequisites, "sp-basic-alloy")
 table.insert(data.raw.technology["fluid-handling"].effects, {type = "unlock-recipe", recipe = "sp-valve"})

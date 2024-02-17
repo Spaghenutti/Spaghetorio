@@ -1776,7 +1776,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-sensor",  -- #ForRegEx# - item
+    name = "sp-optical-sensor",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/icons/sensor.png",
     icon_size = 64,
     scale = 0.25,
