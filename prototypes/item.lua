@@ -1425,7 +1425,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-heavy-bearing",  -- #ForRegEx# - item
+    name = "sp-heavy-ball-bearing",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/icons/heavy-bearing.png",
     icon_size = 64,
     scale = 0.25,
@@ -1861,7 +1861,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-wheel",  -- #ForRegEx# - item
+    name = "sp-steel-wheel",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/icons/wheel.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "intermediate-product",

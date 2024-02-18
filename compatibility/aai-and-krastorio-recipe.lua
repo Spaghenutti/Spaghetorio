@@ -173,7 +173,7 @@ data:extend({
     ingredients = {
       {type = "item", name = "glass", amount = 2},
       {type = "item", name = "sp-aluminum-sheet", amount = 1},
-      {type = "fluid", name = "sp-sodium-carbonate", amount = 20}
+      {type = "item", name = "sp-sodium-carbonate", amount = 3}
     },
     results = {
       {type = "item", name = "sp-mirror", amount = 1}
@@ -697,7 +697,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-vynil-chloride",  -- #ForRegEx# - recipe
+    name = "sp-vinyl-chloride",  -- #ForRegEx# - recipe
     category = "chemistry",
     enabled = false,
     energy_required = 3.2,  -- time in seconds to make the item
@@ -706,7 +706,7 @@ data:extend({
       {type = "fluid", name = "chlorine", amount = 30}
     },
     results = {
-      {type = "fluid", name = "sp-vynil-chloride", amount = 30}
+      {type = "fluid", name = "sp-vinyl-chloride", amount = 30}
     }
   },
   {
@@ -1167,9 +1167,44 @@ data:extend({
       {type = "item", name = "sp-gravitonium", amount = 1}
     }
   },
+  {
+    type = "recipe",
+    name = "sp-vacuum-tube",  -- #ForRegEx# - recipe
+    category = "chemistry",
+    enabled = false,
+    energy_required = 5.2,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "glass", amount = 3},
+      {type = "item", name = "copper-cable", amount = 2},
+      {type = "item", name = "sp-graphite", amount = 1},
+      {type = "item", name = "sp-cobalt-billet", amount = 1},
+      {type = "fluid", name = "hydrogen", amount = 5}
+    },
+    results = {
+      {type = "item", name = "sp-vacuum-tube", amount = 2}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-liquid-nitrogen",  -- #ForRegEx# - recipe
+    category = "chemistry",
+    enabled = false,
+    energy_required = 1,  -- time in seconds to make the item
+    ingredients = {
+      {type = "fluid", name = "nitrogen", amount = 5}
+    },
+    results = {
+      {type = "fluid", name = "sp-liquid-nitrogen", amount = 5}
+    }
+  },
 })
 
--- items
+-- Change recipe category
+data.raw.recipe["sp-aluminum-sheet"].category = "electrolysis"
+data.raw.recipe["sp-zinc-plate"].category = "electrolysis"
+data.raw.recipe["sp-sodium-hydroxide-from-liquid-sodium"].category = "electrolysis"
+
+-- recipe changes
 util.change_recipe_ingredients("iron-plate",
   {{"iron-ore", 2}},
   {{"iron-ore", 3}},
@@ -1338,8 +1373,8 @@ util.change_recipe_ingredients("accumulator",
   10,
   20)
 util.change_recipe_ingredients("nuclear-reactor",
-  {{"concrete", 500}, {"sp-reactor-core", 1}, {"sp-control-unit", 100}, {"sp-niobium-steel", 300}, {"sp-TiAlSn", 200}, {"sp-heavy-bearing", 20}, {"sp-pressure-tank", 40}, {"electric-engine-unit", 10}, {"sp-bolts", 1000}},
-  {{"concrete", 2000}, {"sp-reactor-core", 1}, {"sp-control-unit", 200}, {"sp-niobium-steel", 500}, {"sp-TiAlSn", 400}, {"sp-heavy-bearing", 50}, {"sp-pressure-tank", 50}, {"electric-engine-unit", 40}, {"sp-bolts", 4000}},
+  {{"concrete", 500}, {"sp-reactor-core", 1}, {"sp-control-unit", 100}, {"sp-niobium-steel", 300}, {"sp-TiAlSn", 200}, {"sp-heavy-ball-bearing", 20}, {"sp-pressure-tank", 40}, {"electric-engine-unit", 10}, {"sp-bolts", 1000}},
+  {{"concrete", 2000}, {"sp-reactor-core", 1}, {"sp-control-unit", 200}, {"sp-niobium-steel", 500}, {"sp-TiAlSn", 400}, {"sp-heavy-ball-bearing", 50}, {"sp-pressure-tank", 50}, {"electric-engine-unit", 40}, {"sp-bolts", 4000}},
   500,
   2000)
 util.change_recipe_ingredients("heat-pipe",
@@ -1353,8 +1388,8 @@ util.change_recipe_ingredients("heat-exchanger",
   12,
   24)
 util.change_recipe_ingredients("steam-turbine",
-  {{"electric-engine-unit", 4}, {"sp-pressure-tube", 12}, {"sp-turbine-rotor", 1}, {"sp-turbine-stator", 1}, {"sp-valve", 20}, {"sp-TiAlSn", 50}, {"sp-heavy-bearing", 4}},
-  {{"electric-engine-unit", 6}, {"sp-pressure-tube", 40}, {"sp-turbine-rotor", 1}, {"sp-turbine-stator", 1}, {"sp-valve", 40}, {"sp-TiAlSn", 80}, {"sp-heavy-bearing", 10}},
+  {{"electric-engine-unit", 4}, {"sp-pressure-tube", 12}, {"sp-turbine-rotor", 1}, {"sp-turbine-stator", 1}, {"sp-valve", 20}, {"sp-TiAlSn", 50}, {"sp-heavy-ball-bearing", 4}},
+  {{"electric-engine-unit", 6}, {"sp-pressure-tube", 40}, {"sp-turbine-rotor", 1}, {"sp-turbine-stator", 1}, {"sp-valve", 40}, {"sp-TiAlSn", 80}, {"sp-heavy-ball-bearing", 10}},
   60,
   90)
 util.change_recipe_ingredients("offshore-pump",
@@ -1395,8 +1430,8 @@ util.change_recipe_ingredients("engine-unit",
   2.4,
   4.8)
 util.change_recipe_ingredients("electric-engine-unit",
-  {{"sp-electromagnet", 6}, {"sp-duralumin", 2}, {"sp-bolts", 6}, {type = "fluid", name = "lubricant", amount = 40}},
-  {{"sp-electromagnet", 9}, {"sp-duralumin", 3}, {"sp-bolts", 8}, {type = "fluid", name = "lubricant", amount = 60}},
+  {{"sp-electromagnet", 6}, {"sp-ball-bearing", 2}, {"sp-duralumin", 2}, {"sp-bolts", 6}, {type = "fluid", name = "lubricant", amount = 40}},
+  {{"sp-electromagnet", 9}, {"sp-ball-bearing", 2}, {"sp-duralumin", 3}, {"sp-bolts", 8}, {type = "fluid", name = "lubricant", amount = 60}},
   6,
   8)
 
@@ -1447,8 +1482,8 @@ util.change_recipe_ingredients("kr-fusion-reactor",
   700,
   3000)
 util.change_recipe_ingredients("kr-advanced-steam-turbine",
-  {{"electric-engine-unit", 20}, {"sp-turbine-rotor", 3}, {"sp-turbine-stator", 3}, {"sp-TiAlSn", 50}, {"sp-heavy-bearing", 20}, {"sp-tungsten-carbide", 50}, {"sp-monocrystal", 30}},
-  {{"electric-engine-unit", 40}, {"sp-turbine-rotor", 3}, {"sp-turbine-stator", 3}, {"sp-TiAlSn", 80}, {"sp-heavy-bearing", 40}, {"sp-tungsten-carbide", 100}, {"sp-monocrystal", 50}},
+  {{"electric-engine-unit", 20}, {"sp-turbine-rotor", 3}, {"sp-turbine-stator", 3}, {"sp-TiAlSn", 50}, {"sp-heavy-ball-bearing", 20}, {"sp-tungsten-carbide", 50}, {"sp-monocrystal", 30}},
+  {{"electric-engine-unit", 40}, {"sp-turbine-rotor", 3}, {"sp-turbine-stator", 3}, {"sp-TiAlSn", 80}, {"sp-heavy-ball-bearing", 40}, {"sp-tungsten-carbide", 100}, {"sp-monocrystal", 50}},
   90,
   150)
 util.change_recipe_ingredients("kr-antimatter-reactor",
@@ -1484,12 +1519,7 @@ util.change_recipe_ingredients("sp-titanium-nitride",
   3,
   4)
 util.change_recipe_ingredients("sp-train-boige",
-  {{"iron-beam", 4}, {"sp-wheel", 4}, {"sp-bolts", 8}, {"sp-spring", 12}},
-  {{"iron-beam", 8}, {"sp-wheel", 8}, {"sp-bolts", 16}, {"sp-spring", 24}},
+  {{"iron-beam", 4}, {"sp-steel-wheel", 4}, {"sp-bolts", 8}, {"sp-spring", 12}},
+  {{"iron-beam", 8}, {"sp-steel-wheel", 8}, {"sp-bolts", 16}, {"sp-spring", 24}},
   3,
   6)
-
--- Change category
-data.raw.recipe["sp-aluminum-sheet"].category = "electrolysis"
-data.raw.recipe["sp-zinc-plate"].category = "electrolysis"
-data.raw.recipe["sp-sodium-hydroxide-from-liquid-sodium"].category = "electrolysis"

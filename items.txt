@@ -338,6 +338,10 @@ Buildings:
   - super-collider
   - quantum-computer
 
+New item ideas:
+  - Klystron (makes use of vacuum-tube)
+  - Magnetron (makes use of vacuum-tube)
+
 Other stuff from chat gpt:
   - Chronomatter: A fictional material that can manipulate time and space. It could be used to create time machines, teleportation devices, and other advanced technologies.
   - Quantum Foam: A fictional material that is composed of tiny bubbles of space-time. It could be used to create wormholes, warp drives, and other exotic technologies.

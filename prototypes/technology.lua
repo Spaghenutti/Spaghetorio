@@ -1147,10 +1147,6 @@ data:extend({
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-cmos"
-      },
-      {
-        type = "unlock-recipe",
         recipe = "sp-compute-unit"
       },
     },
@@ -1307,6 +1303,10 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "sp-coolant"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-liquid-nitrogen"
       },
       {
         type = "unlock-recipe",
@@ -2133,6 +2133,27 @@ data:extend({
   },
   {
     type = "technology",
+    name = "sp-rukite-explorer",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghenutti__/graphics/hr-icons/rukite-explorer.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-rukite-explorer"
+      },
+    },
+    prerequisites = {"sp-gravitonium"},
+    unit =
+    {
+      count = 100,
+      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
     name = "sp-yemnuth-explorer",  -- #ForRegEx# - technology
     icon_size = 256,
     icon = "__Spaghenutti__/graphics/hr-icons/yemnuth-explorer.png",
@@ -2166,14 +2187,43 @@ data:extend({
   },
   {
     type = "technology",
-    name = "sp-heavy-bearing",  -- #ForRegEx# - technology
+    name = "sp-grobgnum-explorer",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghenutti__/graphics/hr-icons/grobgnum-explorer.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-grobgnum-explorer"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-bioreactor"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-biochip"
+      },
+    },
+    prerequisites = {"sp-gravitonium"},
+    unit =
+    {
+      count = 100,
+      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-heavy-ball-bearing",  -- #ForRegEx# - technology
     icon_size = 256,
     icon = "__Spaghenutti__/graphics/hr-icons/heavy-bearing.png",
     effects =
     {
       {
         type = "unlock-recipe",
-        recipe = "sp-heavy-bearing"
+        recipe = "sp-heavy-ball-bearing"
       },
     },
     prerequisites = {"logistic-science-pack"},
@@ -2305,6 +2355,10 @@ data:extend({
         type = "unlock-recipe",
         recipe = "sp-transformer"
       },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-vacuum-tube"
+      },
     },
     prerequisites = {"sp-relay"},
     unit =
@@ -2332,6 +2386,232 @@ data:extend({
       },
     },
     prerequisites = {"sp-relay"},
+    unit =
+    {
+      count = 100,
+      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-actuator",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghenutti__/graphics/hr-icons/actuator.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-actuator"
+      },
+    },
+    prerequisites = {"logistic-science-pack"},
+    unit =
+    {
+      count = 100,
+      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-catalyst",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghenutti__/graphics/hr-icons/catalyst.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-catalyst-from-calcium-magnesium"
+      },
+    },
+    prerequisites = {"logistic-science-pack"},
+    unit =
+    {
+      count = 100,
+      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-chronomatter",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghenutti__/graphics/hr-icons/chronomatter.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-chronomatter"
+      },
+    },
+    prerequisites = {"logistic-science-pack"},
+    unit =
+    {
+      count = 100,
+      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-ethylene-products",  -- #ForRegEx# - technology
+    icon_size = 64,
+    icon = "__Spaghenutti__/graphics/dummy/dummy-technology-default.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-ethylene-and-propene"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-ethylene-dichloride"
+      },
+    },
+    prerequisites = {"logistic-science-pack", "sp-propane-products"},
+    unit =
+    {
+      count = 100,
+      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-epoxy",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghenutti__/graphics/hr-icons/epoxy.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-epoxy"
+      },
+    },
+    prerequisites = {"logistic-science-pack"},
+    unit =
+    {
+      count = 100,
+      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-propane-products",  -- #ForRegEx# - technology
+    icon_size = 64,
+    icon = "__Spaghenutti__/graphics/dummy/dummy-technology-default.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-propane"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-propylene"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-methyl-tert-butyl-ether"
+      },
+    },
+    prerequisites = {"logistic-science-pack"},
+    unit =
+    {
+      count = 100,
+      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-sodium-hydroxide",  -- #ForRegEx# - technology
+    icon_size = 64,
+    icon = "__Spaghenutti__/graphics/dummy/dummy-technology-default.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-sodium-hydroxide-from-salt"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-sodium-hydroxide-from-sodium"
+      },
+    },
+    prerequisites = {"logistic-science-pack"},
+    unit =
+    {
+      count = 100,
+      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-vinyl-chloride",  -- #ForRegEx# - technology
+    icon_size = 64,
+    icon = "__Spaghenutti__/graphics/dummy/dummy-technology-default.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-vinyl-chloride"
+      },
+    },
+    prerequisites = {"logistic-science-pack"},
+    unit =
+    {
+      count = 100,
+      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-steel-wheel",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghenutti__/graphics/hr-icons/wheel.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-steel-wheel"
+      },
+    },
+    prerequisites = {"logistic-science-pack"},
+    unit =
+    {
+      count = 100,
+      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-control-unit",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghenutti__/graphics/hr-icons/control-unit.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-control-unit"
+      },
+    },
+    prerequisites = {"logistic-science-pack"},
     unit =
     {
       count = 100,
