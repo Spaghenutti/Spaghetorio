@@ -347,6 +347,7 @@ data:extend({
     },
     results = {
       {type = "item", name = "uranium-238", amount = 3},
+      {type = "item", name = "sp-nuclear-waste", amount = 1},
       {type = "fluid", name = "heavy-water", amount = 10}
     }
   },
@@ -370,6 +371,7 @@ data:extend({
       {type = "item", name = "uranium-238", probability = 0.37, amount = 2},
       {type = "item", name = "uranium-235", probability = 0.03, amount = 1},
       {type = "item", name = "sp-plutonium-239", probability = 0.6, amount = 1},
+      {type = "item", name = "sp-nuclear-waste", amount = 1},
       {type = "fluid", name = "heavy-water", amount = 10}
     }
   },

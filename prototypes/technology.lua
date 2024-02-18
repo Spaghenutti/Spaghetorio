@@ -2313,6 +2313,10 @@ data:extend({
         type = "unlock-recipe",
         recipe = "sp-flux-capacitor"
       },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-gamma-radiation-source"
+      },
     },
     prerequisites = {"logistic-science-pack"},
     unit =
@@ -2446,6 +2450,10 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "sp-chronomatter"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-chronalyte"
       },
     },
     prerequisites = {"logistic-science-pack"},
@@ -2609,6 +2617,73 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "sp-control-unit"
+      },
+    },
+    prerequisites = {"logistic-science-pack"},
+    unit =
+    {
+      count = 100,
+      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-cybernetics",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghenutti__/graphics/hr-icons/cybernetics.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-cybernetics"
+      },
+    },
+    prerequisites = {"logistic-science-pack"},
+    unit =
+    {
+      count = 100,
+      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-nanobot",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghenutti__/graphics/hr-icons/nanobot.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-nanobot"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-nanowire"
+      },
+    },
+    prerequisites = {"logistic-science-pack"},
+    unit =
+    {
+      count = 100,
+      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-nuclear-waste-processing",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghenutti__/graphics/hr-icons/nuclear-waste.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-nuclear-waste-processing"
       },
     },
     prerequisites = {"logistic-science-pack"},

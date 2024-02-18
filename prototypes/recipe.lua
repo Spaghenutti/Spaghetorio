@@ -2966,6 +2966,30 @@ data:extend({
       {type = "item", name = "sp-grobgnum-explorer", amount = 1}
     }
   },
+  {
+    type = "recipe",
+    name = "sp-nuclear-waste-processing",  -- #ForRegEx# - recipe
+    icon = "__Spaghenutti__/graphics/icons/nuclear-waste.png",
+    icon_size = 64,
+    mip_maps = 4,
+    category = "chemistry",
+    subgroup = "processed-resource",
+    enabled = false,
+    energy_required = 30,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-nuclear-waste", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-plutonium-239", probability=0.005, amount = 1},
+      {type = "item", name = "uranium-238", probability=0.015, amount = 1},
+      {type = "item", name = "sp-graphite", probability=0.08, amount = 1},
+      {type = "item", name = "sp-tungsten-ore", probability=0.06, amount = 1},
+      {type = "item", name = "sp-zirconium-ore", probability=0.10, amount = 1},
+      {type = "item", name = "sp-cerium", probability=0.06, amount = 1},
+      {type = "item", name = "sp-niobium-powder", probability=0.3, amount = 1},
+      {type = "item", name = "sp-titanium-sponge", probability=0.38, amount = 1},
+    }
+  },
   ------------------------------------------------------------------------------
   -- Alternate recipes for vanilla items
   ------------------------------------------------------------------------------
@@ -3652,6 +3676,7 @@ if not mods["Krastorio2"] then
       },
       results = {
         {type = "item", name = "uranium-238", amount = 3},
+        {type = "item", name = "sp-nuclear-waste", amount = 1},
         {type = "fluid", name = "sp-deuterium", amount = 10}
       }
     },
@@ -3674,6 +3699,7 @@ if not mods["Krastorio2"] then
         {type = "item", name = "uranium-238", probability = 0.37, amount = 2},
         {type = "item", name = "uranium-235", probability = 0.03, amount = 1},
         {type = "item", name = "sp-plutonium-239", probability = 0.6, amount = 1},
+        {type = "item", name = "sp-nuclear-waste", amount = 1},
         {type = "fluid", name = "sp-deuterium", amount = 10}
       }
     },
