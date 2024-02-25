@@ -2975,7 +2975,7 @@ data:extend({
     category = "chemistry",
     subgroup = "processed-resource",
     enabled = false,
-    energy_required = 30,  -- time in seconds to make the item
+    energy_required = 20,  -- time in seconds to make the item
     ingredients = {
       {type = "item", name = "sp-nuclear-waste", amount = 1},
     },

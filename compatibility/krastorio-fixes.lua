@@ -53,19 +53,25 @@ data.raw.item["iron-beam"].order = "iron[iron-beam]"
 
 util.resize_building("furnace", "kr-crusher", {{-1.75, -1.75}, {1.75, 1.75}}, {{-2, -2}, {2, 2}}, 4/7, 4/7/2)
 
--- fix subgroup to science items
+-- Fix subgroup to science items
 data.raw.item["blank-tech-card"].subgroup = "science-item"
 data.raw.item["biters-research-data"].subgroup = "science-item"  -- in game called military-research-data
 data.raw.item["space-research-data"].subgroup = "science-item"
 data.raw.item["matter-research-data"].subgroup = "science-item"
 
-data.raw.tool["basic-tech-card"].subgroup = "basic-science"
-data.raw.tool["space-science-pack"].subgroup = "advanced-science"
+data.raw.tool["basic-tech-card"].subgroup = "fundamental-science"
 data.raw.tool["matter-tech-card"].subgroup = "advanced-science"
-data.raw.tool["advanced-tech-card"].subgroup = "advanced-science"
-data.raw.tool["singularity-tech-card"].subgroup = "advanced-science"
+data.raw.tool["space-science-pack"].subgroup = "futuristic-science"
+data.raw.tool["advanced-tech-card"].subgroup = "futuristic-science"
+data.raw.tool["singularity-tech-card"].subgroup = "futuristic-science"
 
--- change order of autoplace control
+-- Change order of science items
+data.raw.tool["production-science-pack"].order = "h[production-science-pack]"  -- Done here due to krastorio changing the order
+data.raw.tool["utility-science-pack"].order = "i[utility-science-pack]"  -- Done here due to krastorio changing the order
+data.raw.tool["matter-tech-card"].order = "j[matter-tech-card]"
+
+
+-- Change order of autoplace control
 data.raw["autoplace-control"]["rare-metals"].order = "b[rare-metals]"
 data.raw["autoplace-control"]["mineral-water"].order = "c[mineral-water]"
 data.raw["autoplace-control"]["imersite"].order = "d[imersite]"

@@ -70,11 +70,15 @@ data.raw.tool["automation-science-pack"].subgroup = "basic-science"
 data.raw.tool["logistic-science-pack"].subgroup = "basic-science"
 data.raw.tool["military-science-pack"].subgroup = "basic-science"
 data.raw.tool["chemical-science-pack"].subgroup = "basic-science"
-data.raw.tool["production-science-pack"].subgroup = "basic-science"
-data.raw.tool["utility-science-pack"].subgroup = "basic-science"
-data.raw.tool["space-science-pack"].subgroup = "basic-science"
+data.raw.tool["production-science-pack"].subgroup = "intermediate-science"
+data.raw.tool["utility-science-pack"].subgroup = "intermediate-science"
+data.raw.tool["space-science-pack"].subgroup = "advanced-science"
 
--- change order of autoplace control
+-- Change order of science items
+-- data.raw.tool["production-science-pack"].order = "h[production-science-pack]"
+-- data.raw.tool["utility-science-pack"].order = "i[utility-science-pack]"
+
+-- Change order of autoplace control
 data.raw["autoplace-control"]["iron-ore"].order = "b[iron-ore]"
 data.raw["autoplace-control"]["copper-ore"].order = "b[copper-ore]"
 data.raw["autoplace-control"]["stone"].order = "b[stone]"

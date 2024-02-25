@@ -1205,6 +1205,7 @@ data:extend({
 data.raw.recipe["sp-aluminum-sheet"].category = "electrolysis"
 data.raw.recipe["sp-zinc-plate"].category = "electrolysis"
 data.raw.recipe["sp-sodium-hydroxide-from-liquid-sodium"].category = "electrolysis"
+data.raw.recipe["sp-nuclear-waste-processing"].category = "crushing"
 
 -- recipe changes
 util.change_recipe_ingredients("iron-plate",
@@ -1525,3 +1526,6 @@ util.change_recipe_ingredients("sp-train-boige",
   {{"iron-beam", 8}, {"sp-steel-wheel", 8}, {"sp-bolts", 16}, {"sp-spring", 24}},
   3,
   6)
+
+-- Remove crushing recipes
+data.raw.recipe["kr-vc-sp-nuclear-waste"] = nil

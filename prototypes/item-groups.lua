@@ -163,21 +163,33 @@ data:extend({
   },
   {
     type = "item-subgroup",
-    name = "basic-science",
+    name = "fundamental-science",
     group = "science-products",
     order = "c"
   },
   {
     type = "item-subgroup",
-    name = "intermediate-science",
+    name = "basic-science",
     group = "science-products",
     order = "d"
   },
   {
     type = "item-subgroup",
-    name = "advanced-science",
+    name = "intermediate-science",
     group = "science-products",
     order = "e"
+  },
+  {
+    type = "item-subgroup",
+    name = "advanced-science",
+    group = "science-products",
+    order = "f"
+  },
+  {
+    type = "item-subgroup",
+    name = "futuristic-science",
+    group = "science-products",
+    order = "g"
   },
   ------------------------------------------------------------------------------
   -- combat --
