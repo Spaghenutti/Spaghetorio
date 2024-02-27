@@ -145,7 +145,7 @@ data:extend({
     type = "item-group",
     name = "science-products",
     order = "e",
-    icon = "__base__/graphics/icons/utility-science-pack.png",
+    icon = "__base__/graphics/icons/automation-science-pack.png",
     icon_size = 64,
     icon_mipmaps = 2
   },

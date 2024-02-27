@@ -16,6 +16,30 @@ function data_util.change_item_icon(name, icon, icon_size, icon_mipmaps)
   data.raw.item[name].icon_mipmaps = icon_mipmaps
 end
 
+function data_util.change_tool_icon(name, icon, icon_size, icon_mipmaps)
+  data.raw.tool[name].icon = icon
+  data.raw.tool[name].icon_size = icon_size
+  data.raw.tool[name].icon_mipmaps = icon_mipmaps
+end
+
+function data_util.change_technology_icon(name, icon, icon_size, icon_mipmaps)
+  data.raw.technology[name].icon = icon
+  data.raw.technology[name].icon_size = icon_size
+  data.raw.technology[name].icon_mipmaps = icon_mipmaps
+end
+
+function data_util.change_recipe_icon(name, icon, icon_size, small_icon, small_icon_size, icon_mipmaps)
+  if small_icon then
+    data.raw.recipe[name].icons = data_util.overlay_small_icon(icon, icon_size, small_icon, small_icon_size)
+    data.raw.recipe[name].icon = nil
+  else
+    -- FIXME: This seems to not work if small_icon is set to nil
+    data.raw.recipe[name].icon = icon
+  end
+  data.raw.recipe[name].icon_size = icon_size
+  data.raw.recipe[name].icon_mipmaps = icon_mipmaps
+end
+
 function data_util.change_recipe_ingredients(name, normal_ingredients, expensive_ingredients, normal_energy, expensive_energy)
   data.raw.recipe[name].ingredients = normal_ingredients
   if not (normal_energy == nil) then
@@ -35,18 +59,6 @@ function data_util.change_recipe_ingredients(name, normal_ingredients, expensive
       data.raw.recipe[name].expensive.energy_required = expensive_energy
     end
   end
-end
-
-function data_util.change_recipe_icon(name, icon, icon_size, small_icon, small_icon_size, icon_mipmaps)
-  if small_icon then
-    data.raw.recipe[name].icons = data_util.overlay_small_icon(icon, icon_size, small_icon, small_icon_size)
-    data.raw.recipe[name].icon = nil
-  else
-    -- FIXME: This seems to not work if small_icon is set to nil
-    data.raw.recipe[name].icon = icon
-  end
-  data.raw.recipe[name].icon_size = icon_size
-  data.raw.recipe[name].icon_mipmaps = icon_mipmaps
 end
 
 function data_util.disable_recipe(recipe_name)

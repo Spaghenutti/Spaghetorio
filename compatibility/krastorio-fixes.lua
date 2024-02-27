@@ -1,11 +1,20 @@
 local util = require("data-util")
 
+-- Change item icons
 util.change_item_icon("copper-plate", "__base__/graphics/icons/copper-plate.png", 64, 4)
 util.change_item_icon("iron-plate", "__base__/graphics/icons/iron-plate.png", 64, 4)
 util.change_item_icon("iron-gear-wheel", "__base__/graphics/icons/iron-gear-wheel.png", 64, 4)
 
+-- Change recipe icons
 util.change_recipe_icon("iron-plate", "__base__/graphics/icons/iron-plate.png", 64, "__base__/graphics/icons/iron-ore-1.png", 64, 4)
 util.change_recipe_icon("copper-plate", "__base__/graphics/icons/copper-plate.png", 64, "__base__/graphics/icons/copper-ore-1.png", 64, 4)
+
+-- Change tool icons
+util.change_tool_icon("utility-science-pack", "__Spaghenutti__/graphics/icons/utility-science-pack-2.png", 64, 4)
+util.change_tool_icon("basic-tech-card", "__base__/graphics/icons/automation-science-pack.png", 64, 4)
+
+-- Change technology icons
+util.change_technology_icon("utility-science-pack", "__Spaghenutti__/graphics/hr-icons/utility-science-pack-2.png", 256, nil)
 
 data.raw.item["enriched-iron"].subgroup = "enriched-resource"
 data.raw.item["enriched-copper"].subgroup = "enriched-resource"
@@ -66,10 +75,9 @@ data.raw.tool["advanced-tech-card"].subgroup = "futuristic-science"
 data.raw.tool["singularity-tech-card"].subgroup = "futuristic-science"
 
 -- Change order of science items
-data.raw.tool["production-science-pack"].order = "h[production-science-pack]"  -- Done here due to krastorio changing the order
-data.raw.tool["utility-science-pack"].order = "i[utility-science-pack]"  -- Done here due to krastorio changing the order
-data.raw.tool["matter-tech-card"].order = "j[matter-tech-card]"
-
+data.raw.tool["production-science-pack"].order = "j[production-science-pack]"  -- Done here due to krastorio changing the order
+data.raw.tool["utility-science-pack"].order = "k[utility-science-pack]"  -- Done here due to krastorio changing the order
+data.raw.tool["matter-tech-card"].order = "l[matter-tech-card]"
 
 -- Change order of autoplace control
 data.raw["autoplace-control"]["rare-metals"].order = "b[rare-metals]"
