@@ -2548,7 +2548,7 @@ data:extend({
     type = "tool",
     name = "sp-automation-science-pack-3",  -- #ForRegEx# - tool
     localised_description = {"item-description.science-pack"},
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-automation-science-pack-3.png",
+    icon = "__Spaghenutti__/graphics/icons/automation-science-pack-3.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "advanced-science",
     order = "a[automation-science-pack]",
@@ -2561,7 +2561,7 @@ data:extend({
     type = "tool",
     name = "sp-logistic-science-pack-3",  -- #ForRegEx# - tool
     localised_description = {"item-description.science-pack"},
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-logistic-science-pack-3.png",
+    icon = "__Spaghenutti__/graphics/icons/logistic-science-pack-3.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "advanced-science",
     order = "b[logistic-science-pack]",
@@ -2574,7 +2574,7 @@ data:extend({
     type = "tool",
     name = "sp-military-science-pack-3",  -- #ForRegEx# - tool
     localised_description = {"item-description.science-pack"},
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-military-science-pack-3.png",
+    icon = "__Spaghenutti__/graphics/icons/military-science-pack-3.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "advanced-science",
     order = "c[military-science-pack]",
@@ -2587,7 +2587,7 @@ data:extend({
     type = "tool",
     name = "sp-chemical-science-pack-3",  -- #ForRegEx# - tool
     localised_description = {"item-description.science-pack"},
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-chemical-science-pack-3.png",
+    icon = "__Spaghenutti__/graphics/icons/chemical-science-pack-3.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "advanced-science",
     order = "d[chemical-science-pack]",
@@ -2600,7 +2600,7 @@ data:extend({
     type = "tool",
     name = "sp-electrical-science-pack-3",  -- #ForRegEx# - tool
     localised_description = {"item-description.science-pack"},
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-electrical-science-pack-3.png",
+    icon = "__Spaghenutti__/graphics/icons/electrical-science-pack-3.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "advanced-science",
     order = "e[electrical-science-pack]",
@@ -2613,7 +2613,7 @@ data:extend({
     type = "tool",
     name = "sp-geological-science-pack-3",  -- #ForRegEx# - tool
     localised_description = {"item-description.science-pack"},
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-geological-science-pack-3.png",
+    icon = "__Spaghenutti__/graphics/icons/geological-science-pack-3.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "advanced-science",
     order = "f[geological-science-pack]",
@@ -2626,7 +2626,7 @@ data:extend({
     type = "tool",
     name = "sp-material-science-pack-3",  -- #ForRegEx# - tool
     localised_description = {"item-description.science-pack"},
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-material-science-pack-3.png",
+    icon = "__Spaghenutti__/graphics/icons/material-science-pack-3.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "advanced-science",
     order = "g[material-science-pack]",
@@ -2639,7 +2639,7 @@ data:extend({
     type = "tool",
     name = "sp-astronomical-science-pack-3",  -- #ForRegEx# - tool
     localised_description = {"item-description.science-pack"},
-    icon = "__Krastorio2Assets__/icons/cards/matter-tech-card.png",
+    icon = "__Spaghenutti__/graphics/icons/astronomical-science-pack-3.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "advanced-science",
     order = "h[astronomical-science-pack]",
@@ -2652,7 +2652,7 @@ data:extend({
     type = "tool",
     name = "sp-computer-science-pack-3",  -- #ForRegEx# - tool
     localised_description = {"item-description.science-pack"},
-    icon = "__Spaghenutti__/graphics/icons/computer-science-pack-2.png",
+    icon = "__Spaghenutti__/graphics/icons/computer-science-pack-3.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "advanced-science",
     order = "i[computer-science-pack]",
@@ -2665,7 +2665,7 @@ data:extend({
     type = "tool",
     name = "sp-production-science-pack-3",  -- #ForRegEx# - tool
     localised_description = {"item-description.science-pack"},
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-production-science-pack-3.png",
+    icon = "__Spaghenutti__/graphics/icons/production-science-pack-3.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "advanced-science",
     order = "j[production-science-pack]",
@@ -2678,7 +2678,7 @@ data:extend({
     type = "tool",
     name = "sp-utility-science-pack-3",  -- #ForRegEx# - tool
     localised_description = {"item-description.science-pack"},
-    icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-utility-science-pack-3.png",
+    icon = "__Spaghenutti__/graphics/icons/utility-science-pack-3.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "advanced-science",
     order = "k[utility-science-pack]",

@@ -12,9 +12,11 @@ util.change_recipe_icon("copper-plate", "__base__/graphics/icons/copper-plate.pn
 -- Change tool icons
 util.change_tool_icon("utility-science-pack", "__Spaghenutti__/graphics/icons/utility-science-pack-2.png", 64, 4)
 util.change_tool_icon("basic-tech-card", "__base__/graphics/icons/automation-science-pack.png", 64, 4)
+util.change_tool_icon("matter-tech-card", "__Spaghenutti__/graphics/icons/matter-science-pack-3.png", 64, 4)
 
 -- Change technology icons
 util.change_technology_icon("utility-science-pack", "__Spaghenutti__/graphics/hr-icons/utility-science-pack-2.png", 256, nil)
+util.change_technology_icon("kr-matter-tech-card", "__Spaghenutti__/graphics/hr-icons/matter-science-pack-3.png", 256, nil)
 
 data.raw.item["enriched-iron"].subgroup = "enriched-resource"
 data.raw.item["enriched-copper"].subgroup = "enriched-resource"
