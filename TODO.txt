@@ -7,6 +7,7 @@ TODO:
       4. Futuristic science: card 3 icon
   + Add Acrospheres
   - Add Acrospheres recipes
+  - Remove Acrospheres crushing recipes
   - Add rockets depending on the explorer
   - Change labs in which tech cards are used
   - Change Factorio recipes

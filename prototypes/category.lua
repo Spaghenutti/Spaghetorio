@@ -24,5 +24,9 @@ data:extend({
   {
     type = "recipe-category",
     name = "intermediate-smelting"
-  }
+  },
+  {
+    type = "recipe-category",
+    name = "acrosphere-conversion"
+  },
 })

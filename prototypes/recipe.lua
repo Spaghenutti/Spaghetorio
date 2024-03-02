@@ -2990,6 +2990,126 @@ data:extend({
       {type = "item", name = "sp-titanium-sponge", probability=0.38, amount = 1},
     }
   },
+  {
+    type = "recipe",
+    name = "sp-blunagium-to-grobgnum-acrosphere",  -- #ForRegEx# - recipe
+    icons = util.acrosphere_recipe_icon("__Spaghenutti__/graphics/icons/blunagium-acrosphere-1.png",
+                                        "__Spaghenutti__/graphics/icons/blunagium-acrosphere-2.png",
+                                        "__Spaghenutti__/graphics/icons/grobgnum-acrosphere-1.png",
+                                        "__Spaghenutti__/graphics/icons/grobgnum-acrosphere-2.png",
+                                        "red"),
+    icon_size = 64,
+    mip_maps = 4,
+    category = "acrosphere-conversion",
+    subgroup = "sp-acrosphere",
+    enabled = false,
+    energy_required = 2,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-blunagium-acrosphere-1", amount = 1},
+      {type = "item", name = "sp-blunagium-acrosphere-2", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-grobgnum-acrosphere-1", amount = 1},
+      {type = "item", name = "sp-grobgnum-acrosphere-2", probability = 0.95, amount = 1},
+      {type = "item", name = "sp-corrupted-acrosphere-3", probability = 0.05, amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-blunagium-to-rukite-acrosphere",  -- #ForRegEx# - recipe
+    icons = util.acrosphere_recipe_icon("__Spaghenutti__/graphics/icons/blunagium-acrosphere-1.png",
+                                        "__Spaghenutti__/graphics/icons/blunagium-acrosphere-2.png",
+                                        "__Spaghenutti__/graphics/icons/rukite-acrosphere-1.png",
+                                        "__Spaghenutti__/graphics/icons/rukite-acrosphere-2.png",
+                                        "red"),
+    icon_size = 64,
+    mip_maps = 4,
+    category = "acrosphere-conversion",
+    subgroup = "sp-acrosphere",
+    enabled = false,
+    energy_required = 2,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-blunagium-acrosphere-1", amount = 1},
+      {type = "item", name = "sp-blunagium-acrosphere-2", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-rukite-acrosphere-1", amount = 1},
+      {type = "item", name = "sp-rukite-acrosphere-2", probability = 0.95, amount = 1},
+      {type = "item", name = "sp-corrupted-acrosphere-3", probability = 0.05, amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-grobgnum-to-yemnuth-acrosphere",  -- #ForRegEx# - recipe
+    icons = util.acrosphere_recipe_icon("__Spaghenutti__/graphics/icons/grobgnum-acrosphere-1.png",
+                                        "__Spaghenutti__/graphics/icons/grobgnum-acrosphere-2.png",
+                                        "__Spaghenutti__/graphics/icons/yemnuth-acrosphere-1.png",
+                                        "__Spaghenutti__/graphics/icons/yemnuth-acrosphere-2.png",
+                                        "red"),
+    icon_size = 64,
+    mip_maps = 4,
+    category = "acrosphere-conversion",
+    subgroup = "sp-acrosphere",
+    enabled = false,
+    energy_required = 2,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-grobgnum-acrosphere-1", amount = 1},
+      {type = "item", name = "sp-grobgnum-acrosphere-2", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-yemnuth-acrosphere-1", amount = 1},
+      {type = "item", name = "sp-yemnuth-acrosphere-2", probability = 0.95, amount = 1},
+      {type = "item", name = "sp-corrupted-acrosphere-2", probability = 0.05, amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-rukite-to-yemnuth-acrosphere",  -- #ForRegEx# - recipe
+    icons = util.acrosphere_recipe_icon("__Spaghenutti__/graphics/icons/rukite-acrosphere-1.png",
+                                        "__Spaghenutti__/graphics/icons/rukite-acrosphere-2.png",
+                                        "__Spaghenutti__/graphics/icons/yemnuth-acrosphere-1.png",
+                                        "__Spaghenutti__/graphics/icons/yemnuth-acrosphere-2.png",
+                                        "red"),
+    icon_size = 64,
+    mip_maps = 4,
+    category = "acrosphere-conversion",
+    subgroup = "sp-acrosphere",
+    enabled = false,
+    energy_required = 2,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-rukite-acrosphere-1", amount = 1},
+      {type = "item", name = "sp-rukite-acrosphere-2", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-yemnuth-acrosphere-1", amount = 1},
+      {type = "item", name = "sp-yemnuth-acrosphere-2", probability = 0.95, amount = 1},
+      {type = "item", name = "sp-corrupted-acrosphere-1", probability = 0.05, amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-yemnuth-to-blunagium-acrosphere",  -- #ForRegEx# - recipe
+    icons = util.acrosphere_recipe_icon("__Spaghenutti__/graphics/icons/yemnuth-acrosphere-1.png",
+                                        "__Spaghenutti__/graphics/icons/yemnuth-acrosphere-2.png",
+                                        "__Spaghenutti__/graphics/icons/blunagium-acrosphere-1.png",
+                                        "__Spaghenutti__/graphics/icons/blunagium-acrosphere-2.png",
+                                        "red"),
+    icon_size = 64,
+    mip_maps = 4,
+    category = "acrosphere-conversion",
+    subgroup = "sp-acrosphere",
+    enabled = false,
+    energy_required = 2,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-yemnuth-acrosphere-1", amount = 1},
+      {type = "item", name = "sp-yemnuth-acrosphere-2", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-blunagium-acrosphere-1", amount = 1},
+      {type = "item", name = "sp-blunagium-acrosphere-2", probability = 0.95, amount = 1},
+      {type = "item", name = "sp-corrupted-acrosphere-4", probability = 0.05, amount = 1}
+    }
+  },
   ------------------------------------------------------------------------------
   -- Alternate recipes for vanilla items
   ------------------------------------------------------------------------------

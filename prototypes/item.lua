@@ -2794,6 +2794,15 @@ data:extend({
   },
   {
     type = "item",
+    name = "sp-corrupted-acrosphere-4",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/corrupted-acrosphere-4.png",
+    icon_size = 64, icon_mipmaps = 4,
+    subgroup = "sp-acrosphere-products",
+    order = "a[corrupted-acrosphere-4]",
+    stack_size = 1
+  },
+  {
+    type = "item",
     name = "sp-acrocrystal",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/icons/acrocrystal.png",
     icon_size = 64, icon_mipmaps = 4,
