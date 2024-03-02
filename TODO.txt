@@ -1,10 +1,13 @@
 TODO:
-  - Add all the technology cards
-    - 4 Levels:
+  + Add all the technology cards
+    + 4 Levels:
       1. Basic science: flask icon
       2. Intermediate science: card 1 icon
       3. Advanced science: card 2 icon
       4. Futuristic science: card 3 icon
+  + Add Acrospheres
+  - Add Acrospheres recipes
+  - Add rockets depending on the explorer
   - Change labs in which tech cards are used
   - Change Factorio recipes
   - Change Krastorio recipes
@@ -12,8 +15,6 @@ TODO:
   - Fix technology unlocking
   - Add cyclotron
   - Add particle accelerator
-  - Add rockets depending on the explorer
-  - Add Acrospheres (use different name and recipes)
   - Replace dummy icons
   - Fix barrel tints of fluids
   - Fix smoke tints of chemical recipes

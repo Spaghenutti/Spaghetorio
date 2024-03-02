@@ -2542,7 +2542,7 @@ data:extend({
     durability_description_value = "description.science-pack-remaining-amount-value"
   },
   ------------------------------------------------------------------------------
-    -- Subgroup advanced-science --
+  -- Subgroup advanced-science --
   ------------------------------------------------------------------------------
   {
     type = "tool",
@@ -2686,6 +2686,138 @@ data:extend({
     durability = 1,
     durability_description_key = "description.science-pack-remaining-amount-key",
     durability_description_value = "description.science-pack-remaining-amount-value"
+  },
+  ------------------------------------------------------------------------------
+  -- Subgroup sp-acrosphere --
+  ------------------------------------------------------------------------------
+  {
+    type = "item",
+    name = "sp-blunagium-acrosphere-1",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/blunagium-acrosphere-1.png",
+    icon_size = 64, icon_mipmaps = 4,
+    subgroup = "sp-acrosphere",
+    order = "[blunagium-acrosphere-1]",
+    stack_size = 1
+  },
+  {
+    type = "item",
+    name = "sp-blunagium-acrosphere-2",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/blunagium-acrosphere-2.png",
+    icon_size = 64, icon_mipmaps = 4,
+    subgroup = "sp-acrosphere",
+    order = "[blunagium-acrosphere-2]",
+    stack_size = 1
+  },
+  {
+    type = "item",
+    name = "sp-grobgnum-acrosphere-1",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/grobgnum-acrosphere-1.png",
+    icon_size = 64, icon_mipmaps = 4,
+    subgroup = "sp-acrosphere",
+    order = "[grobgnum-acrosphere-1]",
+    stack_size = 1
+  },
+  {
+    type = "item",
+    name = "sp-grobgnum-acrosphere-2",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/grobgnum-acrosphere-2.png",
+    icon_size = 64, icon_mipmaps = 4,
+    subgroup = "sp-acrosphere",
+    order = "[grobgnum-acrosphere-2]",
+    stack_size = 1
+  },
+  {
+    type = "item",
+    name = "sp-rukite-acrosphere-1",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/rukite-acrosphere-1.png",
+    icon_size = 64, icon_mipmaps = 4,
+    subgroup = "sp-acrosphere",
+    order = "[rukite-acrosphere-1]",
+    stack_size = 1
+  },
+  {
+    type = "item",
+    name = "sp-rukite-acrosphere-2",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/rukite-acrosphere-2.png",
+    icon_size = 64, icon_mipmaps = 4,
+    subgroup = "sp-acrosphere",
+    order = "[rukite-acrosphere-2]",
+    stack_size = 1
+  },
+  {
+    type = "item",
+    name = "sp-yemnuth-acrosphere-1",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/yemnuth-acrosphere-1.png",
+    icon_size = 64, icon_mipmaps = 4,
+    subgroup = "sp-acrosphere",
+    order = "[yemnuth-acrosphere-1]",
+    stack_size = 1
+  },
+  {
+    type = "item",
+    name = "sp-yemnuth-acrosphere-2",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/yemnuth-acrosphere-2.png",
+    icon_size = 64, icon_mipmaps = 4,
+    subgroup = "sp-acrosphere",
+    order = "[yemnuth-acrosphere-2]",
+    stack_size = 1
+  },
+  ------------------------------------------------------------------------------
+  -- Subgroup sp-acrosphere-products --
+  ------------------------------------------------------------------------------
+  {
+    type = "item",
+    name = "sp-corrupted-acrosphere-1",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/corrupted-acrosphere-1.png",
+    icon_size = 64, icon_mipmaps = 4,
+    subgroup = "sp-acrosphere-products",
+    order = "a[corrupted-acrosphere-1]",
+    stack_size = 1
+  },
+  {
+    type = "item",
+    name = "sp-corrupted-acrosphere-2",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/corrupted-acrosphere-2.png",
+    icon_size = 64, icon_mipmaps = 4,
+    subgroup = "sp-acrosphere-products",
+    order = "a[corrupted-acrosphere-2]",
+    stack_size = 1
+  },
+  {
+    type = "item",
+    name = "sp-corrupted-acrosphere-3",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/corrupted-acrosphere-3.png",
+    icon_size = 64, icon_mipmaps = 4,
+    subgroup = "sp-acrosphere-products",
+    order = "a[corrupted-acrosphere-3]",
+    stack_size = 1
+  },
+  {
+    type = "item",
+    name = "sp-acrocrystal",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/acrocrystal.png",
+    icon_size = 64, icon_mipmaps = 4,
+    subgroup = "sp-acrosphere-products",
+    order = "b[acrocrystal]",
+    stack_size = 10
+  },
+  {
+    type = "item",
+    name = "sp-acromatter",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/acromatter.png",
+    icon_size = 64, icon_mipmaps = 4,
+    subgroup = "sp-acrosphere-products",
+    order = "b[acromatter]",
+    stack_size = 10
+  },
+  {
+    type = "item",
+    name = "sp-acrovoid",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/acrovoid.png",
+    icon_size = 64, icon_mipmaps = 4,
+    subgroup = "sp-acrosphere-products",
+    order = "b[acrovoid]",
+    stack_size = 10
   },
 })
 

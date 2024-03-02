@@ -191,6 +191,18 @@ data:extend({
     group = "science-products",
     order = "g"
   },
+  {
+    type = "item-subgroup",
+    name = "sp-acrosphere",
+    group = "science-products",
+    order = "h"
+  },
+  {
+    type = "item-subgroup",
+    name = "sp-acrosphere-products",
+    group = "science-products",
+    order = "i"
+  },
   ------------------------------------------------------------------------------
   -- combat --
   -- Set combat to sixth place
