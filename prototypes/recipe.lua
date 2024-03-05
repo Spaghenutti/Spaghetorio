@@ -2993,11 +2993,11 @@ data:extend({
   {
     type = "recipe",
     name = "sp-blunagium-to-grobgnum-acrosphere",  -- #ForRegEx# - recipe
-    icons = util.acrosphere_recipe_icon("__Spaghenutti__/graphics/icons/blunagium-acrosphere-1.png",
-                                        "__Spaghenutti__/graphics/icons/blunagium-acrosphere-2.png",
-                                        "__Spaghenutti__/graphics/icons/grobgnum-acrosphere-1.png",
-                                        "__Spaghenutti__/graphics/icons/grobgnum-acrosphere-2.png",
-                                        "red"),
+    icons = util.acrosphere_color_change_recipe_icon("__Spaghenutti__/graphics/icons/blunagium-acrosphere-1.png",
+                                                     "__Spaghenutti__/graphics/icons/blunagium-acrosphere-2.png",
+                                                     "__Spaghenutti__/graphics/icons/grobgnum-acrosphere-1.png",
+                                                     "__Spaghenutti__/graphics/icons/grobgnum-acrosphere-2.png",
+                                                     "green"),
     icon_size = 64,
     mip_maps = 4,
     category = "acrosphere-conversion",
@@ -3010,18 +3010,17 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-grobgnum-acrosphere-1", amount = 1},
-      {type = "item", name = "sp-grobgnum-acrosphere-2", probability = 0.95, amount = 1},
-      {type = "item", name = "sp-corrupted-acrosphere-3", probability = 0.05, amount = 1}
+      {type = "item", name = "sp-grobgnum-acrosphere-2", amount = 1}
     }
   },
   {
     type = "recipe",
     name = "sp-blunagium-to-rukite-acrosphere",  -- #ForRegEx# - recipe
-    icons = util.acrosphere_recipe_icon("__Spaghenutti__/graphics/icons/blunagium-acrosphere-1.png",
-                                        "__Spaghenutti__/graphics/icons/blunagium-acrosphere-2.png",
-                                        "__Spaghenutti__/graphics/icons/rukite-acrosphere-1.png",
-                                        "__Spaghenutti__/graphics/icons/rukite-acrosphere-2.png",
-                                        "red"),
+    icons = util.acrosphere_color_change_recipe_icon("__Spaghenutti__/graphics/icons/blunagium-acrosphere-1.png",
+                                                     "__Spaghenutti__/graphics/icons/blunagium-acrosphere-2.png",
+                                                     "__Spaghenutti__/graphics/icons/rukite-acrosphere-1.png",
+                                                     "__Spaghenutti__/graphics/icons/rukite-acrosphere-2.png",
+                                                     "green"),
     icon_size = 64,
     mip_maps = 4,
     category = "acrosphere-conversion",
@@ -3034,18 +3033,17 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-rukite-acrosphere-1", amount = 1},
-      {type = "item", name = "sp-rukite-acrosphere-2", probability = 0.95, amount = 1},
-      {type = "item", name = "sp-corrupted-acrosphere-3", probability = 0.05, amount = 1}
+      {type = "item", name = "sp-rukite-acrosphere-2", amount = 1}
     }
   },
   {
     type = "recipe",
     name = "sp-grobgnum-to-yemnuth-acrosphere",  -- #ForRegEx# - recipe
-    icons = util.acrosphere_recipe_icon("__Spaghenutti__/graphics/icons/grobgnum-acrosphere-1.png",
-                                        "__Spaghenutti__/graphics/icons/grobgnum-acrosphere-2.png",
-                                        "__Spaghenutti__/graphics/icons/yemnuth-acrosphere-1.png",
-                                        "__Spaghenutti__/graphics/icons/yemnuth-acrosphere-2.png",
-                                        "red"),
+    icons = util.acrosphere_color_change_recipe_icon("__Spaghenutti__/graphics/icons/grobgnum-acrosphere-1.png",
+                                                    "__Spaghenutti__/graphics/icons/grobgnum-acrosphere-2.png",
+                                                    "__Spaghenutti__/graphics/icons/yemnuth-acrosphere-1.png",
+                                                    "__Spaghenutti__/graphics/icons/yemnuth-acrosphere-2.png",
+                                                    "green"),
     icon_size = 64,
     mip_maps = 4,
     category = "acrosphere-conversion",
@@ -3058,18 +3056,17 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-yemnuth-acrosphere-1", amount = 1},
-      {type = "item", name = "sp-yemnuth-acrosphere-2", probability = 0.95, amount = 1},
-      {type = "item", name = "sp-corrupted-acrosphere-2", probability = 0.05, amount = 1}
+      {type = "item", name = "sp-yemnuth-acrosphere-2", amount = 1}
     }
   },
   {
     type = "recipe",
     name = "sp-rukite-to-yemnuth-acrosphere",  -- #ForRegEx# - recipe
-    icons = util.acrosphere_recipe_icon("__Spaghenutti__/graphics/icons/rukite-acrosphere-1.png",
-                                        "__Spaghenutti__/graphics/icons/rukite-acrosphere-2.png",
-                                        "__Spaghenutti__/graphics/icons/yemnuth-acrosphere-1.png",
-                                        "__Spaghenutti__/graphics/icons/yemnuth-acrosphere-2.png",
-                                        "red"),
+    icons = util.acrosphere_color_change_recipe_icon("__Spaghenutti__/graphics/icons/rukite-acrosphere-1.png",
+                                                     "__Spaghenutti__/graphics/icons/rukite-acrosphere-2.png",
+                                                     "__Spaghenutti__/graphics/icons/yemnuth-acrosphere-1.png",
+                                                     "__Spaghenutti__/graphics/icons/yemnuth-acrosphere-2.png",
+                                                     "green"),
     icon_size = 64,
     mip_maps = 4,
     category = "acrosphere-conversion",
@@ -3082,18 +3079,17 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-yemnuth-acrosphere-1", amount = 1},
-      {type = "item", name = "sp-yemnuth-acrosphere-2", probability = 0.95, amount = 1},
-      {type = "item", name = "sp-corrupted-acrosphere-1", probability = 0.05, amount = 1}
+      {type = "item", name = "sp-yemnuth-acrosphere-2", amount = 1}
     }
   },
   {
     type = "recipe",
     name = "sp-yemnuth-to-blunagium-acrosphere",  -- #ForRegEx# - recipe
-    icons = util.acrosphere_recipe_icon("__Spaghenutti__/graphics/icons/yemnuth-acrosphere-1.png",
-                                        "__Spaghenutti__/graphics/icons/yemnuth-acrosphere-2.png",
-                                        "__Spaghenutti__/graphics/icons/blunagium-acrosphere-1.png",
-                                        "__Spaghenutti__/graphics/icons/blunagium-acrosphere-2.png",
-                                        "red"),
+    icons = util.acrosphere_color_change_recipe_icon("__Spaghenutti__/graphics/icons/yemnuth-acrosphere-1.png",
+                                                     "__Spaghenutti__/graphics/icons/yemnuth-acrosphere-2.png",
+                                                     "__Spaghenutti__/graphics/icons/blunagium-acrosphere-1.png",
+                                                     "__Spaghenutti__/graphics/icons/blunagium-acrosphere-2.png",
+                                                     "green"),
     icon_size = 64,
     mip_maps = 4,
     category = "acrosphere-conversion",
@@ -3106,8 +3102,115 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-blunagium-acrosphere-1", amount = 1},
-      {type = "item", name = "sp-blunagium-acrosphere-2", probability = 0.95, amount = 1},
-      {type = "item", name = "sp-corrupted-acrosphere-4", probability = 0.05, amount = 1}
+      {type = "item", name = "sp-blunagium-acrosphere-2", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-upgrade-blunagium-acrosphere",  -- #ForRegEx# - recipe
+    icons = util.acrosphere_upgrade_recipe_icon("__Spaghenutti__/graphics/icons/blunagium-acrosphere-1.png",
+                                                "__Spaghenutti__/graphics/icons/grobgnum-acrosphere-1.png",
+                                                "__Spaghenutti__/graphics/icons/rukite-acrosphere-1.png",
+                                                "__Spaghenutti__/graphics/icons/blunagium-acrosphere-2.png",
+                                                "__Spaghenutti__/graphics/icons/yemnuth-acrosphere-1.png",
+                                                "__Spaghenutti__/graphics/icons/corrupted-acrosphere-1.png",
+                                                "red"),
+    icon_size = 64,
+    mip_maps = 4,
+    category = "acrosphere-conversion",
+    subgroup = "sp-acrosphere",
+    enabled = true,
+    energy_required = 3,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-blunagium-acrosphere-1", amount = 1},
+      {type = "item", name = "sp-grobgnum-acrosphere-1", amount = 1},
+      {type = "item", name = "sp-rukite-acrosphere-1", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-blunagium-acrosphere-2", amount = 1},
+      {type = "item", name = "sp-yemnuth-acrosphere-1", amount = 1},
+      {type = "item", name = "sp-corrupted-acrosphere-1", amount = 1},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-upgrade-grobgnum-acrosphere",  -- #ForRegEx# - recipe
+    icons = util.acrosphere_upgrade_recipe_icon("__Spaghenutti__/graphics/icons/grobgnum-acrosphere-1.png",
+                                                "__Spaghenutti__/graphics/icons/rukite-acrosphere-1.png",
+                                                "__Spaghenutti__/graphics/icons/yemnuth-acrosphere-1.png",
+                                                "__Spaghenutti__/graphics/icons/grobgnum-acrosphere-2.png",
+                                                "__Spaghenutti__/graphics/icons/blunagium-acrosphere-1.png",
+                                                "__Spaghenutti__/graphics/icons/corrupted-acrosphere-2.png",
+                                                "red"),
+    icon_size = 64,
+    mip_maps = 4,
+    category = "acrosphere-conversion",
+    subgroup = "sp-acrosphere",
+    enabled = true,
+    energy_required = 3,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-grobgnum-acrosphere-1", amount = 1},
+      {type = "item", name = "sp-rukite-acrosphere-1", amount = 1},
+      {type = "item", name = "sp-yemnuth-acrosphere-1", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-grobgnum-acrosphere-2", amount = 1},
+      {type = "item", name = "sp-blunagium-acrosphere-1", amount = 1},
+      {type = "item", name = "sp-corrupted-acrosphere-2", amount = 1},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-upgrade-rukite-acrosphere",  -- #ForRegEx# - recipe
+    icons = util.acrosphere_upgrade_recipe_icon("__Spaghenutti__/graphics/icons/rukite-acrosphere-1.png",
+                                                "__Spaghenutti__/graphics/icons/yemnuth-acrosphere-1.png",
+                                                "__Spaghenutti__/graphics/icons/blunagium-acrosphere-1.png",
+                                                "__Spaghenutti__/graphics/icons/rukite-acrosphere-2.png",
+                                                "__Spaghenutti__/graphics/icons/grobgnum-acrosphere-1.png",
+                                                "__Spaghenutti__/graphics/icons/corrupted-acrosphere-3.png",
+                                                "red"),
+    icon_size = 64,
+    mip_maps = 4,
+    category = "acrosphere-conversion",
+    subgroup = "sp-acrosphere",
+    enabled = true,
+    energy_required = 3,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-rukite-acrosphere-1", amount = 1},
+      {type = "item", name = "sp-yemnuth-acrosphere-1", amount = 1},
+      {type = "item", name = "sp-blunagium-acrosphere-1", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-rukite-acrosphere-2", amount = 1},
+      {type = "item", name = "sp-grobgnum-acrosphere-1", amount = 1},
+      {type = "item", name = "sp-corrupted-acrosphere-3", amount = 1},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-upgrade-yemnuth-acrosphere",  -- #ForRegEx# - recipe
+    icons = util.acrosphere_upgrade_recipe_icon("__Spaghenutti__/graphics/icons/yemnuth-acrosphere-1.png",
+                                                "__Spaghenutti__/graphics/icons/blunagium-acrosphere-1.png",
+                                                "__Spaghenutti__/graphics/icons/grobgnum-acrosphere-1.png",
+                                                "__Spaghenutti__/graphics/icons/yemnuth-acrosphere-2.png",
+                                                "__Spaghenutti__/graphics/icons/rukite-acrosphere-1.png",
+                                                "__Spaghenutti__/graphics/icons/corrupted-acrosphere-4.png",
+                                                "red"),
+    icon_size = 64,
+    mip_maps = 4,
+    category = "acrosphere-conversion",
+    subgroup = "sp-acrosphere",
+    enabled = true,
+    energy_required = 3,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-yemnuth-acrosphere-1", amount = 1},
+      {type = "item", name = "sp-blunagium-acrosphere-1", amount = 1},
+      {type = "item", name = "sp-grobgnum-acrosphere-1", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-yemnuth-acrosphere-2", amount = 1},
+      {type = "item", name = "sp-rukite-acrosphere-1", amount = 1},
+      {type = "item", name = "sp-corrupted-acrosphere-4", amount = 1},
     }
   },
   ------------------------------------------------------------------------------

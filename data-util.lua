@@ -204,7 +204,7 @@ function data_util.combine_five_icons(icon_1, icon_1_size, shift_1, icon_2, icon
   return icons
 end
 
-function data_util.acrosphere_recipe_icon(sphere_1, sphere_2, sphere_3, sphere_4, arrow_type)
+function data_util.acrosphere_color_change_recipe_icon(sphere_1, sphere_2, sphere_3, sphere_4, arrow_type)
   if (arrow_type == "green") then
     arrow_icon = "__Spaghenutti__/graphics/arrows/acrosphere-arrow-recipe-green-256x256.png"
   end
@@ -215,10 +215,32 @@ function data_util.acrosphere_recipe_icon(sphere_1, sphere_2, sphere_3, sphere_4
 
   icons = {
     {icon = "__Spaghenutti__/graphics/hr-icons/background.png", icon_size = 256, scale = 0.5},
-    {icon = sphere_1, icon_size = 64, scale = 0.8, shift = {-40, -30}},
-    {icon = sphere_2, icon_size = 64, scale = 0.8, shift = {-40, 30}},
-    {icon = sphere_3, icon_size = 64, scale = 0.8, shift = {40, -30}},
-    {icon = sphere_4, icon_size = 64, scale = 0.8, shift = {40, 30}},
+    {icon = sphere_1, icon_size = 64, scale = 0.8, shift = {-38, -38}},
+    {icon = sphere_2, icon_size = 64, scale = 0.8, shift = {-38, 38}},
+    {icon = sphere_3, icon_size = 64, scale = 0.8, shift = {38, -38}},
+    {icon = sphere_4, icon_size = 64, scale = 0.8, shift = {38, 38}},
+    {icon = arrow_icon, icon_size = 256, scale = 0.8}
+  }
+  return icons
+end
+
+function data_util.acrosphere_upgrade_recipe_icon(sphere_1, sphere_2, sphere_3, sphere_4, sphere_5, sphere_6, arrow_type)
+  if (arrow_type == "green") then
+    arrow_icon = "__Spaghenutti__/graphics/arrows/acrosphere-arrow-recipe-green-256x256.png"
+  end
+
+  if (arrow_type == "red") then
+    arrow_icon = "__Spaghenutti__/graphics/arrows/acrosphere-arrow-recipe-red-256x256.png"
+  end
+
+  icons = {
+    {icon = "__Spaghenutti__/graphics/hr-icons/background.png", icon_size = 256, scale = 0.5},
+    {icon = sphere_1, icon_size = 64, scale = 0.7, shift = {-32, -45}},
+    {icon = sphere_2, icon_size = 64, scale = 0.7, shift = {-45, 0}},
+    {icon = sphere_3, icon_size = 64, scale = 0.7, shift = {-32, 45}},
+    {icon = sphere_4, icon_size = 64, scale = 0.7, shift = {32, -45}},
+    {icon = sphere_5, icon_size = 64, scale = 0.7, shift = {45, 0}},
+    {icon = sphere_6, icon_size = 64, scale = 0.7, shift = {32, 45}},
     {icon = arrow_icon, icon_size = 256, scale = 0.8}
   }
   return icons
