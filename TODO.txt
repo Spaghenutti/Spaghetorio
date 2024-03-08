@@ -10,8 +10,12 @@ TODO:
   + Add Acrosphere product recipes
     + recipes for acrocrystal, acromatter and acrovoid
     - Add recipes for raw-resource via acrocrystal
-    - Add recipes for enriched-resource via acrocrystal
-  - Remove Acrospheres crushing recipes
+    - Add recipes for enriched-resource and some processed-resource via acrovoid
+    - Add recipes for enriched-resource via acromatter
+  + Remove Acrospheres crushing recipes
+  - Add icons to acroproduct-conversion recipes
+  - Add techonolgies for acrospheres
+  - Set enabled property of acrosphere recipes to false
   - Add rockets depending on the explorer
   - Change labs in which tech cards are used
   - Change Factorio recipes
@@ -23,7 +27,10 @@ TODO:
   - Replace dummy icons
   - Fix barrel tints of fluids
   - Fix smoke tints of chemical recipes
-  - 
+
+Low prio
+  - Create function to generate acroproduct-conversion recipes
+  - Create file for acroproduct-conversion recipes
 
 Future changes
   - Replace rare-metals with yittrium, lanthanum, cerium, neodymium

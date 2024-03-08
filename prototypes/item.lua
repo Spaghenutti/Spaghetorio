@@ -1315,14 +1315,14 @@ data:extend({
     stack_size = 100
   },
   ------------------------------------------------------------------------------
-  -- Subgroup acrosphere-product --
+  -- Subgroup acroproduct --
   ------------------------------------------------------------------------------
   {
     type = "item",
     name = "sp-acrocrystal",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/icons/acrocrystal.png",
     icon_size = 64, icon_mipmaps = 4,
-    subgroup = "sp-acrosphere-product",
+    subgroup = "sp-acroproduct",
     order = "b[acrocrystal]",
     stack_size = 10
   },
@@ -1331,7 +1331,7 @@ data:extend({
     name = "sp-acromatter",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/icons/acromatter.png",
     icon_size = 64, icon_mipmaps = 4,
-    subgroup = "sp-acrosphere-product",
+    subgroup = "sp-acroproduct",
     order = "b[acromatter]",
     stack_size = 10
   },
@@ -1340,7 +1340,7 @@ data:extend({
     name = "sp-acrovoid",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/icons/acrovoid.png",
     icon_size = 64, icon_mipmaps = 4,
-    subgroup = "sp-acrosphere-product",
+    subgroup = "sp-acroproduct",
     order = "b[acrovoid]",
     stack_size = 10
   },
@@ -2793,7 +2793,7 @@ data:extend({
     stack_size = 1
   },
   ------------------------------------------------------------------------------
-  -- Subgroup sp-acrosphere-products --
+  -- Subgroup sp-acroproduct --
   ------------------------------------------------------------------------------
   {
     type = "item",

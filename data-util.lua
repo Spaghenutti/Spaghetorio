@@ -246,4 +246,16 @@ function data_util.acrosphere_upgrade_recipe_icon(sphere_1, sphere_2, sphere_3, 
   return icons
 end
 
+function data_util.create_acroproduct_conversion_icon(item_to_convert, acroproduct)
+  arrow_icon = "__Spaghenutti__/graphics/arrows/acrosphere-arrow-recipe-green-256x256.png"
+
+  icons = {
+    {icon = "__Spaghenutti__/graphics/hr-icons/background.png", icon_size = 256, scale = 0.5},
+    {icon = item_to_convert, icon_size = 64, scale = 1.4, shift = {20, 20}},
+    {icon = acroproduct, icon_size = 64, scale = 0.8, shift = {-42, -42}},
+    {icon = arrow_icon, icon_size = 256, scale = 0.8}
+  }
+  return icons
+end
+
 return data_util

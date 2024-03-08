@@ -2990,6 +2990,9 @@ data:extend({
       {type = "item", name = "sp-titanium-sponge", probability=0.38, amount = 1},
     }
   },
+  ------------------------------------------------------------------------------
+  -- Acrosphere conversion recipes
+  ------------------------------------------------------------------------------
   {
     type = "recipe",
     name = "sp-blunagium-to-grobgnum-acrosphere",  -- #ForRegEx# - recipe
@@ -3004,6 +3007,7 @@ data:extend({
     subgroup = "sp-acrosphere",
     enabled = false,
     energy_required = 2,  -- time in seconds to make the item
+    allowed_effects = {"consumption", "speed", "pollution"},
     ingredients = {
       {type = "item", name = "sp-blunagium-acrosphere-1", amount = 1},
       {type = "item", name = "sp-blunagium-acrosphere-2", amount = 1}
@@ -3027,6 +3031,7 @@ data:extend({
     subgroup = "sp-acrosphere",
     enabled = false,
     energy_required = 2,  -- time in seconds to make the item
+    allowed_effects = {"consumption", "speed", "pollution"},
     ingredients = {
       {type = "item", name = "sp-blunagium-acrosphere-1", amount = 1},
       {type = "item", name = "sp-blunagium-acrosphere-2", amount = 1}
@@ -3050,6 +3055,7 @@ data:extend({
     subgroup = "sp-acrosphere",
     enabled = false,
     energy_required = 2,  -- time in seconds to make the item
+    allowed_effects = {"consumption", "speed", "pollution"},
     ingredients = {
       {type = "item", name = "sp-grobgnum-acrosphere-1", amount = 1},
       {type = "item", name = "sp-grobgnum-acrosphere-2", amount = 1}
@@ -3073,6 +3079,7 @@ data:extend({
     subgroup = "sp-acrosphere",
     enabled = false,
     energy_required = 2,  -- time in seconds to make the item
+    allowed_effects = {"consumption", "speed", "pollution"},
     ingredients = {
       {type = "item", name = "sp-rukite-acrosphere-1", amount = 1},
       {type = "item", name = "sp-rukite-acrosphere-2", amount = 1}
@@ -3096,6 +3103,7 @@ data:extend({
     subgroup = "sp-acrosphere",
     enabled = false,
     energy_required = 2,  -- time in seconds to make the item
+    allowed_effects = {"consumption", "speed", "pollution"},
     ingredients = {
       {type = "item", name = "sp-yemnuth-acrosphere-1", amount = 1},
       {type = "item", name = "sp-yemnuth-acrosphere-2", amount = 1}
@@ -3121,6 +3129,7 @@ data:extend({
     subgroup = "sp-acrosphere",
     enabled = true,
     energy_required = 3,  -- time in seconds to make the item
+    allowed_effects = {"consumption", "speed", "pollution"},
     ingredients = {
       {type = "item", name = "sp-blunagium-acrosphere-1", amount = 1},
       {type = "item", name = "sp-grobgnum-acrosphere-1", amount = 1},
@@ -3148,6 +3157,7 @@ data:extend({
     subgroup = "sp-acrosphere",
     enabled = true,
     energy_required = 3,  -- time in seconds to make the item
+    allowed_effects = {"consumption", "speed", "pollution"},
     ingredients = {
       {type = "item", name = "sp-grobgnum-acrosphere-1", amount = 1},
       {type = "item", name = "sp-rukite-acrosphere-1", amount = 1},
@@ -3175,6 +3185,7 @@ data:extend({
     subgroup = "sp-acrosphere",
     enabled = true,
     energy_required = 3,  -- time in seconds to make the item
+    allowed_effects = {"consumption", "speed", "pollution"},
     ingredients = {
       {type = "item", name = "sp-rukite-acrosphere-1", amount = 1},
       {type = "item", name = "sp-yemnuth-acrosphere-1", amount = 1},
@@ -3202,6 +3213,7 @@ data:extend({
     subgroup = "sp-acrosphere",
     enabled = true,
     energy_required = 3,  -- time in seconds to make the item
+    allowed_effects = {"consumption", "speed", "pollution"},
     ingredients = {
       {type = "item", name = "sp-yemnuth-acrosphere-1", amount = 1},
       {type = "item", name = "sp-blunagium-acrosphere-1", amount = 1},
@@ -3220,9 +3232,10 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "acrosphere-conversion",
-    subgroup = "sp-acrosphere-product",
+    subgroup = "sp-acroproduct",
     enabled = true,
     energy_required = 4,  -- time in seconds to make the item
+    allowed_effects = {"consumption", "speed", "pollution"},
     ingredients = {
       {type = "fluid", name = "sp-grobgnum-hydroxide", amount = 10},
       {type = "item", name = "sp-gravitonium", amount = 2},
@@ -3244,9 +3257,10 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "acrosphere-conversion",
-    subgroup = "sp-acrosphere-product",
+    subgroup = "sp-acroproduct",
     enabled = true,
     energy_required = 4,  -- time in seconds to make the item
+    allowed_effects = {"consumption", "speed", "pollution"},
     ingredients = {
       {type = "item", name = "sp-yemnuth-pearls", amount = 5},
       {type = "fluid", name = "sp-grobgnumylene", amount = 10},
@@ -3268,9 +3282,10 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "acrosphere-conversion",
-    subgroup = "sp-acrosphere-product",
+    subgroup = "sp-acroproduct",
     enabled = true,
     energy_required = 4,  -- time in seconds to make the item
+    allowed_effects = {"consumption", "speed", "pollution"},
     ingredients = {
       {type = "item", name = "sp-quantum-crystal", amount = 2},
       {type = "fluid", name = "sp-chronomatter", amount = 10},
@@ -3285,6 +3300,154 @@ data:extend({
       {type = "item", name = "sp-acrovoid", amount = 1}
     }
   },
+  ------------------------------------------------------------------------------
+  -- Acrosphere product recipes for basic resources
+  ------------------------------------------------------------------------------
+  {
+    type = "recipe",
+    name = "sp-iron-ore-from-acrocrystal",  -- #ForRegEx# - recipe
+    icons = util.create_acroproduct_conversion_icon("__base__/graphics/icons/iron-ore.png",
+                                                    "__Spaghenutti__/graphics/icons/acrocrystal.png"),
+    icon_size = 64,
+    mip_maps = 4,
+    category = "acroproduct-conversion",
+    subgroup = "raw-resource",
+    enabled = true,
+    energy_required = 8,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "iron-ore", amount = 10},
+      {type = "item", name = "sp-acrocrystal", amount = 1}
+    },
+    results = {
+      {type = "item", name = "iron-ore", amount = 11},
+      {type = "item", name = "sp-acrocrystal", probability=0.99, amount = 1},
+      {type = "item", name = "sp-chromite", probability=0.2, amount = 1},
+      {type = "item", name = "sp-nickel-ore", probability=0.15, amount = 1}
+      -- could create sp-cobalt item
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-copper-ore-from-acrocrystal",  -- #ForRegEx# - recipe
+    icons = util.create_acroproduct_conversion_icon("__base__/graphics/icons/copper-ore.png",
+                                                    "__Spaghenutti__/graphics/icons/acrocrystal.png"),
+    icon_size = 64,
+    mip_maps = 4,
+    category = "acroproduct-conversion",
+    subgroup = "raw-resource",
+    enabled = true,
+    energy_required = 8,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "copper-ore", amount = 10},
+      {type = "item", name = "sp-acrocrystal", amount = 1}
+    },
+    results = {
+      {type = "item", name = "copper-ore", amount = 11},
+      {type = "item", name = "sp-acrocrystal", probability=0.99, amount = 1},
+      {type = "item", name = "sp-zinc-ore", probability=0.15, amount = 1},
+      {type = "item", name = "sp-nickel-ore", probability=0.15, amount = 1},
+      {type = "item", name = "sp-silver", probability=0.05, amount = 1},
+      {type = "item", name = "sp-gold", probability=0.03, amount = 1},
+      -- could create sp-cobalt item
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-stone-from-acrocrystal",  -- #ForRegEx# - recipe
+    icons = util.create_acroproduct_conversion_icon("__base__/graphics/icons/stone.png",
+                                                    "__Spaghenutti__/graphics/icons/acrocrystal.png"),
+    icon_size = 64,
+    mip_maps = 4,
+    category = "acroproduct-conversion",
+    subgroup = "raw-resource",
+    enabled = true,
+    energy_required = 6,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "stone", amount = 10},
+      {type = "item", name = "sp-acrocrystal", amount = 1}
+    },
+    results = {
+      {type = "item", name = "stone", amount = 12},
+      {type = "item", name = "sp-acrocrystal", probability=0.98, amount = 1},
+      {type = "item", name = "iron-ore", probability=0.15, amount = 1},
+      {type = "item", name = "sp-zirconium-ore", probability=0.05, amount = 1},
+      {type = "item", name = "sp-limestone", probability=0.5, amount = 1},
+      -- add silicon for krastorio
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-coal-from-acrocrystal",  -- #ForRegEx# - recipe
+    icons = util.create_acroproduct_conversion_icon("__base__/graphics/icons/coal.png",
+                                                    "__Spaghenutti__/graphics/icons/acrocrystal.png"),
+    icon_size = 64,
+    mip_maps = 4,
+    category = "acroproduct-conversion",
+    subgroup = "raw-resource",
+    enabled = true,
+    energy_required = 6,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "coal", amount = 10},
+      {type = "item", name = "sp-acrocrystal", amount = 1}
+    },
+    results = {
+      {type = "item", name = "coal", amount = 12},
+      {type = "item", name = "sp-acrocrystal", probability=0.98, amount = 1},
+      {type = "item", name = "stone", probability=0.15, amount = 1},
+      {type = "item", name = "iron-ore", probability=0.1, amount = 1},
+      {type = "item", name = "sp-graphite", probability=0.1, amount = 1}
+      -- add coke for krastorio
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-aluminum-ore-from-acrocrystal",  -- #ForRegEx# - recipe
+    icons = util.create_acroproduct_conversion_icon("__Spaghenutti__/graphics/icons/aluminum-ore-1.png",
+                                                    "__Spaghenutti__/graphics/icons/acrocrystal.png"),
+    icon_size = 64,
+    mip_maps = 4,
+    category = "acroproduct-conversion",
+    subgroup = "raw-resource",
+    enabled = true,
+    energy_required = 9,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-aluminum-ore", amount = 12},
+      {type = "item", name = "sp-acrocrystal", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-aluminum-ore", amount = 14},
+      {type = "item", name = "sp-acrocrystal", probability=0.99, amount = 1},
+      {type = "item", name = "sp-phosphorus", probability=0.1, amount = 1},
+      {type = "item", name = "sp-graphite", probability=0.05, amount = 1}
+      -- add 0.2 for silicon in krastorio
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-chromite-from-acrocrystal",  -- #ForRegEx# - recipe
+    icons = util.create_acroproduct_conversion_icon("__Spaghenutti__/graphics/icons/chromite-1.png",
+                                                    "__Spaghenutti__/graphics/icons/acrocrystal.png"),
+    icon_size = 64,
+    mip_maps = 4,
+    category = "acroproduct-conversion",
+    subgroup = "raw-resource",
+    enabled = true,
+    energy_required = 8,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-chromite", amount = 6},
+      {type = "item", name = "sp-acrocrystal", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-chromite", amount = 7},
+      {type = "item", name = "sp-acrocrystal", probability=0.995, amount = 1},
+      {type = "item", name = "iron-ore", probability=0.1, amount = 1},
+      {type = "item", name = "sp-tungsten-ore", probability=0.15, amount = 1}
+    }
+  },
+  -- uranium with acrovoid
+
+  -- raw imersite with acrovoid in krastorio
+  -- raw rare earths acrovoid in krastorio
   ------------------------------------------------------------------------------
   -- Alternate recipes for vanilla items
   ------------------------------------------------------------------------------

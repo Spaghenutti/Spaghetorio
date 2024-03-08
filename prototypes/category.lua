@@ -29,4 +29,8 @@ data:extend({
     type = "recipe-category",
     name = "acrosphere-conversion"
   },
+  {
+    type = "recipe-category",
+    name = "acroproduct-conversion"
+  },
 })

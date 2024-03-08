@@ -1529,3 +1529,14 @@ util.change_recipe_ingredients("sp-train-boige",
 
 -- Remove crushing recipes
 data.raw.recipe["kr-vc-sp-nuclear-waste"] = nil
+data.raw.recipe["kr-vc-sp-blunagium-acrosphere-1"] = nil
+data.raw.recipe["kr-vc-sp-blunagium-acrosphere-2"] = nil
+data.raw.recipe["kr-vc-sp-grobgnum-acrosphere-1"] = nil
+data.raw.recipe["kr-vc-sp-grobgnum-acrosphere-2"] = nil
+data.raw.recipe["kr-vc-sp-rukite-acrosphere-1"] = nil
+data.raw.recipe["kr-vc-sp-rukite-acrosphere-2"] = nil
+data.raw.recipe["kr-vc-sp-yemnuth-acrosphere-1"] = nil
+data.raw.recipe["kr-vc-sp-yemnuth-acrosphere-2"] = nil
+data.raw.recipe["kr-vc-sp-acrocrystal"] = nil
+data.raw.recipe["kr-vc-sp-acromatter"] = nil
+data.raw.recipe["kr-vc-sp-acrovoid"] = nil

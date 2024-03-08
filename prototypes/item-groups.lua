@@ -64,7 +64,7 @@ data:extend({
   },
   {
     type = "item-subgroup",
-    name = "sp-acrosphere-product",
+    name = "sp-acroproduct",
     group = "base-products",
     order = "i"
   },
