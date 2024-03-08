@@ -42,7 +42,7 @@ data:extend({
     type = "item-subgroup",
     name = "chemical-product",
     group = "base-products",
-    order = "e§"
+    order = "e"
   },
   {
     type = "item-subgroup",
@@ -61,6 +61,12 @@ data:extend({
     name = "alien-material",
     group = "base-products",
     order = "h"
+  },
+  {
+    type = "item-subgroup",
+    name = "sp-acrosphere-product",
+    group = "base-products",
+    order = "i"
   },
   ------------------------------------------------------------------------------
   -- intermediate-products --
@@ -199,7 +205,7 @@ data:extend({
   },
   {
     type = "item-subgroup",
-    name = "sp-acrosphere-products",
+    name = "sp-acrosphere-corrupted",
     group = "science-products",
     order = "i"
   },

@@ -3213,6 +3213,78 @@ data:extend({
       {type = "item", name = "sp-corrupted-acrosphere-4", amount = 1},
     }
   },
+  {
+    type = "recipe",
+    name = "sp-acrocrystal",  -- #ForRegEx# - recipe
+    icon = "__Spaghenutti__/graphics/icons/acrocrystal.png",
+    icon_size = 64,
+    mip_maps = 4,
+    category = "acrosphere-conversion",
+    subgroup = "sp-acrosphere-product",
+    enabled = true,
+    energy_required = 4,  -- time in seconds to make the item
+    ingredients = {
+      {type = "fluid", name = "sp-grobgnum-hydroxide", amount = 10},
+      {type = "item", name = "sp-gravitonium", amount = 2},
+      {type = "item", name = "sp-blunagium-acrosphere-2", amount = 1},
+      {type = "item", name = "sp-grobgnum-acrosphere-1", amount = 1},
+      {type = "item", name = "sp-corrupted-acrosphere-1", amount = 1},
+      {type = "item", name = "sp-corrupted-acrosphere-2", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-yemnuth-acrosphere-2", amount = 1},
+      {type = "item", name = "sp-rukite-acrosphere-1", amount = 1},
+      {type = "item", name = "sp-acrocrystal", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-acromatter",  -- #ForRegEx# - recipe
+    icon = "__Spaghenutti__/graphics/icons/acromatter.png",
+    icon_size = 64,
+    mip_maps = 4,
+    category = "acrosphere-conversion",
+    subgroup = "sp-acrosphere-product",
+    enabled = true,
+    energy_required = 4,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-yemnuth-pearls", amount = 5},
+      {type = "fluid", name = "sp-grobgnumylene", amount = 10},
+      {type = "item", name = "sp-rukite-acrosphere-2", amount = 1},
+      {type = "item", name = "sp-grobgnum-acrosphere-1", amount = 1},
+      {type = "item", name = "sp-corrupted-acrosphere-2", amount = 1},
+      {type = "item", name = "sp-corrupted-acrosphere-3", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-blunagium-acrosphere-2", amount = 1},
+      {type = "item", name = "sp-rukite-acrosphere-1", amount = 1},
+      {type = "item", name = "sp-acromatter", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-acrovoid",  -- #ForRegEx# - recipe
+    icon = "__Spaghenutti__/graphics/icons/acrovoid.png",
+    icon_size = 64,
+    mip_maps = 4,
+    category = "acrosphere-conversion",
+    subgroup = "sp-acrosphere-product",
+    enabled = true,
+    energy_required = 4,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-quantum-crystal", amount = 2},
+      {type = "fluid", name = "sp-chronomatter", amount = 10},
+      {type = "item", name = "sp-yemnuth-acrosphere-1", amount = 1},
+      {type = "item", name = "sp-grobgnum-acrosphere-2", amount = 1},
+      {type = "item", name = "sp-corrupted-acrosphere-1", amount = 1},
+      {type = "item", name = "sp-corrupted-acrosphere-2", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-rukite-acrosphere-1", amount = 1},
+      {type = "item", name = "sp-blunagium-acrosphere-1", amount = 1},
+      {type = "item", name = "sp-acrovoid", amount = 1}
+    }
+  },
   ------------------------------------------------------------------------------
   -- Alternate recipes for vanilla items
   ------------------------------------------------------------------------------

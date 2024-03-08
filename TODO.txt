@@ -6,7 +6,11 @@ TODO:
       3. Advanced science: card 2 icon
       4. Futuristic science: card 3 icon
   + Add Acrospheres
-  - Add Acrospheres recipes
+  + Add Acrospheres recipes
+  + Add Acrosphere product recipes
+    + recipes for acrocrystal, acromatter and acrovoid
+    - Add recipes for raw-resource via acrocrystal
+    - Add recipes for enriched-resource via acrocrystal
   - Remove Acrospheres crushing recipes
   - Add rockets depending on the explorer
   - Change labs in which tech cards are used
