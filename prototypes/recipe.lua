@@ -3373,6 +3373,7 @@ data:extend({
       {type = "item", name = "sp-zirconium-ore", probability=0.05, amount = 1},
       {type = "item", name = "sp-limestone", probability=0.5, amount = 1},
       -- add silicon for krastorio
+      -- add sand as guaranteed product in krastorio
     }
   },
   {
@@ -3442,6 +3443,123 @@ data:extend({
       {type = "item", name = "sp-acrocrystal", probability=0.995, amount = 1},
       {type = "item", name = "iron-ore", probability=0.1, amount = 1},
       {type = "item", name = "sp-tungsten-ore", probability=0.15, amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-limestone-from-acrocrystal",  -- #ForRegEx# - recipe
+    icons = util.create_acroproduct_conversion_icon("__Spaghenutti__/graphics/icons/limestone-1.png",
+                                                    "__Spaghenutti__/graphics/icons/acrocrystal.png"),
+    icon_size = 64,
+    mip_maps = 4,
+    category = "acroproduct-conversion",
+    subgroup = "raw-resource",
+    enabled = true,
+    energy_required = 6,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-limestone", amount = 10},
+      {type = "item", name = "sp-acrocrystal", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-limestone", amount = 12},
+      {type = "item", name = "sp-acrocrystal", probability=0.99, amount = 1},
+      {type = "item", name = "stone", probability=0.2, amount = 1},
+      {type = "item", name = "sp-calcium", probability=0.5, amount = 1}
+      -- add sand as guaranteed product in krastorio
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-titanium-ore-from-acrocrystal",  -- #ForRegEx# - recipe
+    icons = util.create_acroproduct_conversion_icon("__Spaghenutti__/graphics/icons/titanium-ore-1.png",
+                                                    "__Spaghenutti__/graphics/icons/acrocrystal.png"),
+    icon_size = 64,
+    mip_maps = 4,
+    category = "acroproduct-conversion",
+    subgroup = "raw-resource",
+    enabled = true,
+    energy_required = 10,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-titanium-ore", amount = 10},
+      {type = "item", name = "sp-acrocrystal", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-titanium-ore", amount = 11},
+      {type = "item", name = "sp-acrocrystal", probability=0.99, amount = 1},
+      {type = "item", name = "sp-chromite", probability=0.15, amount = 1},
+      {type = "item", name = "sp-zircon", probability=0.25, amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-magnesium-ore-from-acrocrystal",  -- #ForRegEx# - recipe
+    icons = util.create_acroproduct_conversion_icon("__Spaghenutti__/graphics/icons/magnesium-ore-1.png",
+                                                    "__Spaghenutti__/graphics/icons/acrocrystal.png"),
+    icon_size = 64,
+    mip_maps = 4,
+    category = "acroproduct-conversion",
+    subgroup = "raw-resource",
+    enabled = true,
+    energy_required = 8,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-magnesium-ore", amount = 10},
+      {type = "item", name = "sp-acrocrystal", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-magnesium-ore", amount = 11},
+      {type = "item", name = "sp-acrocrystal", probability=0.99, amount = 1},
+      {type = "item", name = "sp-calcium", probability=0.25, amount = 1},
+      {type = "item", name = "sp-sodium", probability=0.20, amount = 1}
+      -- add 0.05 for lithium in krastorio
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-tinstone-from-acrocrystal",  -- #ForRegEx# - recipe
+    icons = util.create_acroproduct_conversion_icon("__Spaghenutti__/graphics/icons/tinstone-1.png",
+                                                    "__Spaghenutti__/graphics/icons/acrocrystal.png"),
+    icon_size = 64,
+    mip_maps = 4,
+    category = "acroproduct-conversion",
+    subgroup = "raw-resource",
+    enabled = true,
+    energy_required = 6,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-tinstone", amount = 6},
+      {type = "item", name = "sp-acrocrystal", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-tinstone", amount = 7},
+      {type = "item", name = "sp-acrocrystal", probability=0.99, amount = 1},
+      {type = "item", name = "sp-leadstone", probability=0.5, amount = 1},
+      {type = "item", name = "sp-antimony", probability=0.12, amount = 1},
+      {type = "item", name = "sp-tellurium", probability=0.02, amount = 1}
+      -- add 0.15 for silicon in krastorio
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-zirconium-ore-from-acrocrystal",  -- #ForRegEx# - recipe
+    icons = util.create_acroproduct_conversion_icon("__Spaghenutti__/graphics/icons/zirconium-ore-1.png",
+                                                    "__Spaghenutti__/graphics/icons/acrocrystal.png"),
+    icon_size = 64,
+    mip_maps = 4,
+    category = "acroproduct-conversion",
+    subgroup = "raw-resource",
+    enabled = true,
+    energy_required = 8,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-zirconium-ore", amount = 9},
+      {type = "fluid", name = "water", amount = 5},
+      {type = "item", name = "sp-acrocrystal", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-zirconium-ore", amount = 10},
+      {type = "item", name = "sp-acrocrystal", probability=0.99, amount = 1},
+      {type = "item", name = "sp-titanium-ore", probability=0.5, amount = 1},
+      {type = "fluid", name = "sp-aqueous-niobium", probability=0.1, amount = 1},
+      {type = "fluid", name = "sp-aqueous-tantalum", probability=0.05, amount = 1}
+      -- add 0.15 for silicon in krastorio
     }
   },
   -- uranium with acrovoid

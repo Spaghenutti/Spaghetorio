@@ -226,11 +226,11 @@ end
 
 function data_util.acrosphere_upgrade_recipe_icon(sphere_1, sphere_2, sphere_3, sphere_4, sphere_5, sphere_6, arrow_type)
   if (arrow_type == "green") then
-    arrow_icon = "__Spaghenutti__/graphics/arrows/acrosphere-arrow-recipe-green-256x256.png"
+    arrow_icon = "__Spaghenutti__/graphics/arrows/acrosphere-tripple-arrow-recipe-green-256x256.png"
   end
 
   if (arrow_type == "red") then
-    arrow_icon = "__Spaghenutti__/graphics/arrows/acrosphere-arrow-recipe-red-256x256.png"
+    arrow_icon = "__Spaghenutti__/graphics/arrows/acrosphere-tripple-arrow-recipe-red-256x256.png"
   end
 
   icons = {
@@ -241,19 +241,19 @@ function data_util.acrosphere_upgrade_recipe_icon(sphere_1, sphere_2, sphere_3, 
     {icon = sphere_4, icon_size = 64, scale = 0.7, shift = {32, -45}},
     {icon = sphere_5, icon_size = 64, scale = 0.7, shift = {45, 0}},
     {icon = sphere_6, icon_size = 64, scale = 0.7, shift = {32, 45}},
-    {icon = arrow_icon, icon_size = 256, scale = 0.8}
+    {icon = arrow_icon, icon_size = 256, scale = 0.25}
   }
   return icons
 end
 
 function data_util.create_acroproduct_conversion_icon(item_to_convert, acroproduct)
-  arrow_icon = "__Spaghenutti__/graphics/arrows/acrosphere-arrow-recipe-green-256x256.png"
+  arrow_icon = "__Spaghenutti__/graphics/arrows/acroproduct-recipes-arrow-256x256.png"
 
   icons = {
     {icon = "__Spaghenutti__/graphics/hr-icons/background.png", icon_size = 256, scale = 0.5},
-    {icon = item_to_convert, icon_size = 64, scale = 1.4, shift = {20, 20}},
-    {icon = acroproduct, icon_size = 64, scale = 0.8, shift = {-42, -42}},
-    {icon = arrow_icon, icon_size = 256, scale = 0.8}
+    {icon = arrow_icon, icon_size = 256, scale = 0.75, shift = {16, 16}},
+    {icon = item_to_convert, icon_size = 64, scale = 1.15, shift = {19, 12}},
+    {icon = acroproduct, icon_size = 64, scale = 0.8, shift = {-42, -42}}
   }
   return icons
 end
