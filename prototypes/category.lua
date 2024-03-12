@@ -31,6 +31,14 @@ data:extend({
   },
   {
     type = "recipe-category",
-    name = "acroproduct-conversion"
+    name = "acroproduct-conversion-with-acrocrystal"
+  },
+  {
+    type = "recipe-category",
+    name = "acroproduct-conversion-with-acromatter"
+  },
+  {
+    type = "recipe-category",
+    name = "acroproduct-conversion-with-acrovoid"
   },
 })

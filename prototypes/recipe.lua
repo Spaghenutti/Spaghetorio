@@ -3310,7 +3310,7 @@ data:extend({
                                                     "__Spaghenutti__/graphics/icons/acrocrystal.png"),
     icon_size = 64,
     mip_maps = 4,
-    category = "acroproduct-conversion",
+    category = "acroproduct-conversion-with-acrocrystal",
     subgroup = "raw-resource",
     enabled = true,
     energy_required = 8,  -- time in seconds to make the item
@@ -3333,7 +3333,7 @@ data:extend({
                                                     "__Spaghenutti__/graphics/icons/acrocrystal.png"),
     icon_size = 64,
     mip_maps = 4,
-    category = "acroproduct-conversion",
+    category = "acroproduct-conversion-with-acrocrystal",
     subgroup = "raw-resource",
     enabled = true,
     energy_required = 8,  -- time in seconds to make the item
@@ -3358,7 +3358,7 @@ data:extend({
                                                     "__Spaghenutti__/graphics/icons/acrocrystal.png"),
     icon_size = 64,
     mip_maps = 4,
-    category = "acroproduct-conversion",
+    category = "acroproduct-conversion-with-acrocrystal",
     subgroup = "raw-resource",
     enabled = true,
     energy_required = 6,  -- time in seconds to make the item
@@ -3383,7 +3383,7 @@ data:extend({
                                                     "__Spaghenutti__/graphics/icons/acrocrystal.png"),
     icon_size = 64,
     mip_maps = 4,
-    category = "acroproduct-conversion",
+    category = "acroproduct-conversion-with-acrocrystal",
     subgroup = "raw-resource",
     enabled = true,
     energy_required = 6,  -- time in seconds to make the item
@@ -3407,7 +3407,7 @@ data:extend({
                                                     "__Spaghenutti__/graphics/icons/acrocrystal.png"),
     icon_size = 64,
     mip_maps = 4,
-    category = "acroproduct-conversion",
+    category = "acroproduct-conversion-with-acrocrystal",
     subgroup = "raw-resource",
     enabled = true,
     energy_required = 9,  -- time in seconds to make the item
@@ -3430,7 +3430,7 @@ data:extend({
                                                     "__Spaghenutti__/graphics/icons/acrocrystal.png"),
     icon_size = 64,
     mip_maps = 4,
-    category = "acroproduct-conversion",
+    category = "acroproduct-conversion-with-acrocrystal",
     subgroup = "raw-resource",
     enabled = true,
     energy_required = 8,  -- time in seconds to make the item
@@ -3452,7 +3452,7 @@ data:extend({
                                                     "__Spaghenutti__/graphics/icons/acrocrystal.png"),
     icon_size = 64,
     mip_maps = 4,
-    category = "acroproduct-conversion",
+    category = "acroproduct-conversion-with-acrocrystal",
     subgroup = "raw-resource",
     enabled = true,
     energy_required = 6,  -- time in seconds to make the item
@@ -3475,7 +3475,7 @@ data:extend({
                                                     "__Spaghenutti__/graphics/icons/acrocrystal.png"),
     icon_size = 64,
     mip_maps = 4,
-    category = "acroproduct-conversion",
+    category = "acroproduct-conversion-with-acrocrystal",
     subgroup = "raw-resource",
     enabled = true,
     energy_required = 10,  -- time in seconds to make the item
@@ -3497,7 +3497,7 @@ data:extend({
                                                     "__Spaghenutti__/graphics/icons/acrocrystal.png"),
     icon_size = 64,
     mip_maps = 4,
-    category = "acroproduct-conversion",
+    category = "acroproduct-conversion-with-acrocrystal",
     subgroup = "raw-resource",
     enabled = true,
     energy_required = 8,  -- time in seconds to make the item
@@ -3515,12 +3515,36 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "sp-nickel-ore-from-acrocrystal",  -- #ForRegEx# - recipe
+    icons = util.create_acroproduct_conversion_icon("__Spaghenutti__/graphics/icons/nickel-ore-1.png",
+                                                    "__Spaghenutti__/graphics/icons/acrocrystal.png"),
+    icon_size = 64,
+    mip_maps = 4,
+    category = "acroproduct-conversion-with-acrocrystal",
+    subgroup = "raw-resource",
+    enabled = true,
+    energy_required = 12,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-nickel-ore", amount = 8},
+      {type = "item", name = "sp-acrocrystal", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-nickel-ore", amount = 10},
+      {type = "item", name = "sp-acrocrystal", probability=0.98, amount = 1},
+      {type = "item", name = "iron-ore", probability=0.3, amount = 1},
+      {type = "item", name = "copper-ore", probability=0.5, amount = 1},
+      {type = "item", name = "sp-palladium", probability=0.05, amount = 1},
+      {type = "item", name = "sp-platinum", probability=0.02, amount = 1}
+    }
+  },
+  {
+    type = "recipe",
     name = "sp-tinstone-from-acrocrystal",  -- #ForRegEx# - recipe
     icons = util.create_acroproduct_conversion_icon("__Spaghenutti__/graphics/icons/tinstone-1.png",
                                                     "__Spaghenutti__/graphics/icons/acrocrystal.png"),
     icon_size = 64,
     mip_maps = 4,
-    category = "acroproduct-conversion",
+    category = "acroproduct-conversion-with-acrocrystal",
     subgroup = "raw-resource",
     enabled = true,
     energy_required = 6,  -- time in seconds to make the item
@@ -3539,12 +3563,33 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "sp-tungsten-ore-from-acrocrystal",  -- #ForRegEx# - recipe
+    icons = util.create_acroproduct_conversion_icon("__Spaghenutti__/graphics/icons/tungsten-ore-1.png",
+                                                    "__Spaghenutti__/graphics/icons/acrocrystal.png"),
+    icon_size = 64,
+    mip_maps = 4,
+    category = "acroproduct-conversion-with-acrocrystal",
+    subgroup = "raw-resource",
+    enabled = true,
+    energy_required = 12,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-tungsten-ore", amount = 8},
+      {type = "item", name = "sp-acrocrystal", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-tungsten-ore", amount = 9},
+      {type = "item", name = "sp-acrocrystal", probability=0.98, amount = 1},
+      {type = "item", name = "sp-chromite", probability=0.1, amount = 1}
+    }
+  },
+  {
+    type = "recipe",
     name = "sp-zirconium-ore-from-acrocrystal",  -- #ForRegEx# - recipe
     icons = util.create_acroproduct_conversion_icon("__Spaghenutti__/graphics/icons/zirconium-ore-1.png",
                                                     "__Spaghenutti__/graphics/icons/acrocrystal.png"),
     icon_size = 64,
     mip_maps = 4,
-    category = "acroproduct-conversion",
+    category = "acroproduct-conversion-with-acrocrystal",
     subgroup = "raw-resource",
     enabled = true,
     energy_required = 8,  -- time in seconds to make the item
@@ -3562,7 +3607,405 @@ data:extend({
       -- add 0.15 for silicon in krastorio
     }
   },
-  -- uranium with acrovoid
+  {
+    type = "recipe",
+    name = "sp-uranium-from-acrovoid",  -- #ForRegEx# - recipe
+    icons = util.create_acroproduct_conversion_icon("__base__/graphics/icons/uranium-238.png",
+                                                    "__Spaghenutti__/graphics/icons/acrovoid.png"),
+    icon_size = 64,
+    mip_maps = 4,
+    category = "acroproduct-conversion-with-acrovoid",
+    subgroup = "processed-resource",
+    enabled = true,
+    energy_required = 20,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "uranium-238", amount = 9},
+      {type = "item", name = "sp-acrovoid", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-acrovoid", probability=0.99, amount = 1},
+      {type = "item", name = "uranium-238", probability=0.95, amount = 10},
+      {type = "item", name = "uranium-235", probability=0.05, amount = 1},
+      {type = "item", name = "sp-plutonium-239", probability=0.01, amount = 1},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-calcium-from-acrovoid",  -- #ForRegEx# - recipe
+    icons = util.create_acroproduct_conversion_icon("__Spaghenutti__/graphics/icons/calcium.png",
+                                                    "__Spaghenutti__/graphics/icons/acrovoid.png"),
+    icon_size = 64,
+    mip_maps = 4,
+    category = "acroproduct-conversion-with-acrovoid",
+    subgroup = "processed-resource",
+    enabled = true,
+    energy_required = 6,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-calcium", amount = 9},
+      {type = "item", name = "sp-acrovoid", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-acrovoid", probability=0.99, amount = 1},
+      {type = "item", name = "sp-calcium", amount = 10},
+      {type = "item", name = "sp-sodium", probability=0.2, amount = 1},
+      {type = "item", name = "sp-titanium-ore", probability=0.1, amount = 1},
+      -- add 0.05 lithium in krastorio
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-cerium-from-acrovoid",  -- #ForRegEx# - recipe
+    icons = util.create_acroproduct_conversion_icon("__Spaghenutti__/graphics/icons/cerium.png",
+                                                    "__Spaghenutti__/graphics/icons/acrovoid.png"),
+    icon_size = 64,
+    mip_maps = 4,
+    category = "acroproduct-conversion-with-acrovoid",
+    subgroup = "processed-resource",
+    enabled = true,
+    energy_required = 20,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-cerium", amount = 9},
+      {type = "item", name = "sp-acrovoid", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-acrovoid", probability=0.99, amount = 1},
+      {type = "item", name = "sp-cerium", amount = 10},
+      {type = "item", name = "sp-yittrium", probability=0.05, amount = 1},
+      {type = "item", name = "sp-lanthanum", probability=0.1, amount = 1},
+      {type = "item", name = "sp-neodymium", probability=0.1, amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-yittrium-from-acrovoid",  -- #ForRegEx# - recipe
+    icons = util.create_acroproduct_conversion_icon("__Spaghenutti__/graphics/icons/yittrium.png",
+                                                    "__Spaghenutti__/graphics/icons/acrovoid.png"),
+    icon_size = 64,
+    mip_maps = 4,
+    category = "acroproduct-conversion-with-acrovoid",
+    subgroup = "processed-resource",
+    enabled = true,
+    energy_required = 22,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-yittrium", amount = 9},
+      {type = "item", name = "sp-acrovoid", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-acrovoid", probability=0.99, amount = 1},
+      {type = "item", name = "sp-yittrium", amount = 10},
+      {type = "item", name = "sp-cerium", probability=0.2, amount = 1},
+      {type = "item", name = "sp-lanthanum", probability=0.2, amount = 1},
+      {type = "item", name = "sp-neodymium", probability=0.1, amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-lanthanum-from-acrovoid",  -- #ForRegEx# - recipe
+    icons = util.create_acroproduct_conversion_icon("__Spaghenutti__/graphics/icons/lanthanum.png",
+                                                    "__Spaghenutti__/graphics/icons/acrovoid.png"),
+    icon_size = 64,
+    mip_maps = 4,
+    category = "acroproduct-conversion-with-acrovoid",
+    subgroup = "processed-resource",
+    enabled = true,
+    energy_required = 18,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-lanthanum", amount = 9},
+      {type = "item", name = "sp-acrovoid", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-acrovoid", probability=0.99, amount = 1},
+      {type = "item", name = "sp-lanthanum", amount = 10},
+      {type = "item", name = "sp-cerium", probability=0.2, amount = 1},
+      {type = "item", name = "sp-yittrium", probability=0.1, amount = 1},
+      {type = "item", name = "sp-neodymium", probability=0.08, amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-neodymium-from-acrovoid",  -- #ForRegEx# - recipe
+    icons = util.create_acroproduct_conversion_icon("__Spaghenutti__/graphics/icons/neodymium.png",
+                                                    "__Spaghenutti__/graphics/icons/acrovoid.png"),
+    icon_size = 64,
+    mip_maps = 4,
+    category = "acroproduct-conversion-with-acrovoid",
+    subgroup = "processed-resource",
+    enabled = true,
+    energy_required = 16,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-neodymium", amount = 15},
+      {type = "item", name = "sp-acrovoid", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-acrovoid", probability=0.99, amount = 1},
+      {type = "item", name = "sp-neodymium", amount = 16},
+      {type = "item", name = "sp-cerium", probability=0.2, amount = 1},
+      {type = "item", name = "sp-yittrium", probability=0.15, amount = 1},
+      {type = "item", name = "sp-lanthanum", probability=0.07, amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-fluorine-from-acrovoid",  -- #ForRegEx# - recipe
+    icons = util.create_acroproduct_conversion_icon("__Spaghenutti__/graphics/icons/fluorine.png",
+                                                    "__Spaghenutti__/graphics/icons/acrovoid.png"),
+    icon_size = 64,
+    mip_maps = 4,
+    category = "acroproduct-conversion-with-acrovoid",
+    subgroup = "processed-resource",
+    enabled = true,
+    energy_required = 8,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-fluorine", amount = 7},
+      {type = "item", name = "sp-acrovoid", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-acrovoid", probability=0.99, amount = 1},
+      {type = "item", name = "sp-fluorine", amount = 8},
+      {type = "item", name = "sulfur", probability=0.15, amount = 1},
+      -- add 0.5% 20 chlorine in krastorio
+      -- add 0.2% 15 oxygen in krastorio
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-fluorine-from-acrovoid",  -- #ForRegEx# - recipe
+    icons = util.create_acroproduct_conversion_icon("__Spaghenutti__/graphics/icons/fluorine.png",
+                                                    "__Spaghenutti__/graphics/icons/acrovoid.png"),
+    icon_size = 64,
+    mip_maps = 4,
+    category = "acroproduct-conversion-with-acrovoid",
+    subgroup = "processed-resource",
+    enabled = true,
+    energy_required = 8,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-fluorine", amount = 7},
+      {type = "item", name = "sp-acrovoid", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-acrovoid", probability=0.99, amount = 1},
+      {type = "item", name = "sp-fluorine", amount = 8},
+      {type = "item", name = "sulfur", probability=0.15, amount = 1},
+      -- add 0.5% 20 chlorine in krastorio
+      -- add 0.2% 15 oxygen in krastorio
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-fluorine-from-acrovoid",  -- #ForRegEx# - recipe
+    icons = util.create_acroproduct_conversion_icon("__Spaghenutti__/graphics/icons/fluorine.png",
+                                                    "__Spaghenutti__/graphics/icons/acrovoid.png"),
+    icon_size = 64,
+    mip_maps = 4,
+    category = "acroproduct-conversion-with-acrovoid",
+    subgroup = "processed-resource",
+    enabled = true,
+    energy_required = 8,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-fluorine", amount = 7},
+      {type = "item", name = "sp-acrovoid", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-acrovoid", probability=0.99, amount = 1},
+      {type = "item", name = "sp-fluorine", amount = 8},
+      {type = "item", name = "sulfur", probability=0.15, amount = 1},
+      -- add 0.5% 20 chlorine in krastorio
+      -- add 0.2% 15 oxygen in krastorio
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-gold-from-acrovoid",  -- #ForRegEx# - recipe
+    icons = util.create_acroproduct_conversion_icon("__Spaghenutti__/graphics/icons/gold.png",
+                                                    "__Spaghenutti__/graphics/icons/acrovoid.png"),
+    icon_size = 64,
+    mip_maps = 4,
+    category = "acroproduct-conversion-with-acrovoid",
+    subgroup = "processed-resource",
+    enabled = true,
+    energy_required = 15,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-gold", amount = 7},
+      {type = "item", name = "sp-acrovoid", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-acrovoid", probability=0.98, amount = 1},
+      {type = "item", name = "sp-gold", amount = 8},
+      {type = "item", name = "sp-silver", probability=0.15, amount = 1},
+      {type = "item", name = "copper-ore", probability=0.1, amount = 1},
+      {type = "item", name = "sp-platinum", probability=0.03, amount = 1},
+      {type = "item", name = "sp-iridium", probability=0.01, amount = 1},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-graphite-from-acrovoid",  -- #ForRegEx# - recipe
+    icons = util.create_acroproduct_conversion_icon("__Spaghenutti__/graphics/icons/graphite.png",
+                                                    "__Spaghenutti__/graphics/icons/acrovoid.png"),
+    icon_size = 64,
+    mip_maps = 4,
+    category = "acroproduct-conversion-with-acrovoid",
+    subgroup = "processed-resource",
+    enabled = true,
+    energy_required = 8,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-graphite", amount = 4},
+      {type = "item", name = "sp-acrovoid", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-acrovoid", probability=0.99, amount = 1},
+      {type = "item", name = "sp-graphite", amount = 5},
+      {type = "item", name = "sp-tinstone", probability=0.15, amount = 1},
+      {type = "item", name = "sp-leadstone", probability=0.1, amount = 1}
+    }
+    -- add 0.2% Silicon in krastorio
+    -- add 0.25% 40 Nitrogen in krastorio
+    -- add 0.1% 12 Oxygen in krastorio  
+  },
+  {
+    type = "recipe",
+    name = "sp-iridium-from-acrovoid",  -- #ForRegEx# - recipe
+    icons = util.create_acroproduct_conversion_icon("__Spaghenutti__/graphics/icons/iridium.png",
+                                                    "__Spaghenutti__/graphics/icons/acrovoid.png"),
+    icon_size = 64,
+    mip_maps = 4,
+    category = "acroproduct-conversion-with-acrovoid",
+    subgroup = "processed-resource",
+    enabled = true,
+    energy_required = 30,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-iridium", amount = 2},
+      {type = "item", name = "sp-acrovoid", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-acrovoid", probability=0.97, amount = 1},
+      {type = "item", name = "sp-iridium", amount = 3},
+      {type = "item", name = "sp-platinum", probability=0.15, amount = 1},
+      {type = "item", name = "sp-gold", probability=0.08, amount = 1}
+    }
+    -- add 0.2% Silicon in krastorio
+    -- add 0.25% 40 Nitrogen in krastorio
+    -- add 0.1% 12 Oxygen in krastorio  
+    -- add cobalt to items
+  },
+  {
+    type = "recipe",
+    name = "sp-leadstone-from-acrovoid",  -- #ForRegEx# - recipe
+    icons = util.create_acroproduct_conversion_icon("__Spaghenutti__/graphics/icons/leadstone-1.png",
+                                                    "__Spaghenutti__/graphics/icons/acrovoid.png"),
+    icon_size = 64,
+    mip_maps = 4,
+    category = "acroproduct-conversion-with-acrovoid",
+    subgroup = "processed-resource",
+    enabled = true,
+    energy_required = 12,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-leadstone", amount = 9},
+      {type = "item", name = "sp-acrovoid", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-acrovoid", probability=0.99, amount = 1},
+      {type = "item", name = "sp-leadstone", amount = 10},
+      {type = "item", name = "sp-tinstone", probability=0.4, amount = 1},
+      {type = "item", name = "sp-graphite", probability=0.2, amount = 1},
+      -- add 0.12% silicon in krastorio
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-palladium-from-acrovoid",  -- #ForRegEx# - recipe
+    icons = util.create_acroproduct_conversion_icon("__Spaghenutti__/graphics/icons/palladium.png",
+                                                    "__Spaghenutti__/graphics/icons/acrovoid.png"),
+    icon_size = 64,
+    mip_maps = 4,
+    category = "acroproduct-conversion-with-acrovoid",
+    subgroup = "processed-resource",
+    enabled = true,
+    energy_required = 24,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-palladium", amount = 4},
+      {type = "item", name = "sp-acrovoid", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-acrovoid", probability=0.98, amount = 1},
+      {type = "item", name = "sp-palladium", amount = 5},
+      {type = "item", name = "sp-silver", probability=0.4, amount = 1},
+      {type = "item", name = "sp-platinum", probability=0.12, amount = 1},
+      {type = "item", name = "sp-nickel-ore", probability=0.12, amount = 1},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-phosphorus-from-acrovoid",  -- #ForRegEx# - recipe
+    icons = util.create_acroproduct_conversion_icon("__Spaghenutti__/graphics/icons/phosphorus.png",
+                                                    "__Spaghenutti__/graphics/icons/acrovoid.png"),
+    icon_size = 64,
+    mip_maps = 4,
+    category = "acroproduct-conversion-with-acrovoid",
+    subgroup = "processed-resource",
+    enabled = true,
+    energy_required = 7,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-phosphorus", amount = 7},
+      {type = "item", name = "sp-acrovoid", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-acrovoid", probability=0.99, amount = 1},
+      {type = "item", name = "sp-phosphorus", amount = 8},
+      {type = "item", name = "sp-antimony", probability=0.24, amount = 1},
+      {type = "item", name = "sulfur", probability=0.12, amount = 1},
+      {type = "item", name = "sp-aluminum-ore", probability=0.08, amount = 1},
+      -- add 0.3% 30 Nitrogen in krastorio
+      -- add 0.01% Silicon in krastorio
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-platinum-from-acrovoid",  -- #ForRegEx# - recipe
+    icons = util.create_acroproduct_conversion_icon("__Spaghenutti__/graphics/icons/platinum.png",
+                                                    "__Spaghenutti__/graphics/icons/acrovoid.png"),
+    icon_size = 64,
+    mip_maps = 4,
+    category = "acroproduct-conversion-with-acrovoid",
+    subgroup = "processed-resource",
+    enabled = true,
+    energy_required = 25,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-platinum", amount = 7},
+      {type = "item", name = "sp-acrovoid", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-acrovoid", probability=0.985, amount = 1},
+      {type = "item", name = "sp-platinum", amount = 8},
+      {type = "item", name = "sp-iridium", probability=0.12, amount = 1},
+      {type = "item", name = "sp-gold", probability=0.16, amount = 1},
+      {type = "item", name = "sp-palladium", probability=0.1, amount = 1},
+      {type = "item", name = "sp-nickel-ore", probability=0.08, amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-plutonium-from-acrovoid",  -- #ForRegEx# - recipe
+    icons = util.create_acroproduct_conversion_icon("__Spaghenutti__/graphics/icons/plutonium-239-1.png",
+                                                    "__Spaghenutti__/graphics/icons/acrovoid.png"),
+    icon_size = 64,
+    mip_maps = 4,
+    category = "acroproduct-conversion-with-acrovoid",
+    subgroup = "processed-resource",
+    enabled = true,
+    energy_required = 18,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-plutonium-239", amount = 7},
+      {type = "item", name = "sp-acrovoid", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-acrovoid", probability=0.98, amount = 1},
+      {type = "item", name = "sp-plutonium-239", probability=0.8, amount = 8},
+      {type = "item", name = "sp-plutonium-240", probability=0.2, amount = 8},
+      {type = "item", name = "uranium-235", probability=0.12, amount = 1},
+      {type = "item", name = "uranium-238", probability=0.1, amount = 1}
+    }
+  },
 
   -- raw imersite with acrovoid in krastorio
   -- raw rare earths acrovoid in krastorio

@@ -89,4 +89,6 @@ data.raw["autoplace-control"]["imersite"].order = "d[imersite]"
 -- add crafting categories
 table.insert(data.raw["assembling-machine"]["kr-advanced-furnace"].crafting_categories, "intermediate-smelting")
 table.insert(data.raw["assembling-machine"]["kr-matter-plant"].crafting_categories, "acrosphere-conversion")
-table.insert(data.raw["assembling-machine"]["kr-matter-plant"].crafting_categories, "acroproduct-conversion")
+table.insert(data.raw["assembling-machine"]["kr-matter-plant"].crafting_categories, "acroproduct-conversion-with-acrocrystal")
+table.insert(data.raw["assembling-machine"]["kr-matter-plant"].crafting_categories, "acroproduct-conversion-with-acromatter")
+table.insert(data.raw["assembling-machine"]["kr-matter-plant"].crafting_categories, "acroproduct-conversion-with-acrovoid")
