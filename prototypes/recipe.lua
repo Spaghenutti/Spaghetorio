@@ -4006,6 +4006,76 @@ data:extend({
       {type = "item", name = "uranium-238", probability=0.1, amount = 1}
     }
   },
+  {
+    type = "recipe",
+    name = "sp-silver-from-acrovoid",  -- #ForRegEx# - recipe
+    icons = util.create_acroproduct_conversion_icon("__Spaghenutti__/graphics/icons/silver.png",
+                                                    "__Spaghenutti__/graphics/icons/acrovoid.png"),
+    icon_size = 64,
+    mip_maps = 4,
+    category = "acroproduct-conversion-with-acrovoid",
+    subgroup = "processed-resource",
+    enabled = true,
+    energy_required = 15,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-silver", amount = 7},
+      {type = "item", name = "sp-acrovoid", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-acrovoid", probability=0.98, amount = 1},
+      {type = "item", name = "sp-silver", amount = 8},
+      {type = "item", name = "sp-gold", probability=0.2, amount = 1},
+      {type = "item", name = "copper-ore", probability=0.12, amount = 1},
+      {type = "item", name = "sp-palladium", probability=0.1, amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-sodium-from-acrovoid",  -- #ForRegEx# - recipe
+    icons = util.create_acroproduct_conversion_icon("__Spaghenutti__/graphics/icons/sodium.png",
+                                                    "__Spaghenutti__/graphics/icons/acrovoid.png"),
+    icon_size = 64,
+    mip_maps = 4,
+    category = "acroproduct-conversion-with-acrovoid",
+    subgroup = "processed-resource",
+    enabled = true,
+    energy_required = 10,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-sodium", amount = 7},
+      {type = "item", name = "sp-acrovoid", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-acrovoid", probability=0.99, amount = 1},
+      {type = "item", name = "sp-sodium", amount = 8},
+      {type = "item", name = "sp-calcium", probability=0.07, amount = 1},
+      -- add 0.25% lithium in krastorio
+      -- add 0.20% 50 hydrogen in krastorio
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-antimony-from-acrovoid",  -- #ForRegEx# - recipe
+    icons = util.create_acroproduct_conversion_icon("__Spaghenutti__/graphics/icons/antimony.png",
+                                                    "__Spaghenutti__/graphics/icons/acrovoid.png"),
+    icon_size = 64,
+    mip_maps = 4,
+    category = "acroproduct-conversion-with-acrovoid",
+    subgroup = "processed-resource",
+    enabled = true,
+    energy_required = 10,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-antimony", amount = 10},
+      {type = "item", name = "sp-acrovoid", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-acrovoid", probability=0.98, amount = 1},
+      {type = "item", name = "sp-antimony", amount = 12},
+      {type = "item", name = "sp-phosphorus", probability=0.15, amount = 1},
+      {type = "item", name = "sp-tinstone", probability=0.2, amount = 1},
+      {type = "item", name = "sp-tellurium", probability=0.16, amount = 1},
+      -- add 0.15% 40 Nitrogen in krastorio
+    }
+  },
 
   -- raw imersite with acrovoid in krastorio
   -- raw rare earths acrovoid in krastorio
