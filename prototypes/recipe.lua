@@ -3311,7 +3311,7 @@ data:extend({
     }
   },
   ------------------------------------------------------------------------------
-  -- Acrosphere product recipes for basic resources
+  -- Acrosphere product recipes for basic resources from acrocrystal
   ------------------------------------------------------------------------------
   {
     type = "recipe",
@@ -3594,6 +3594,28 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "sp-zinc-ore-from-acrocrystal",  -- #ForRegEx# - recipe
+    icons = util.create_acroproduct_conversion_icon("__Spaghenutti__/graphics/icons/zinc-ore-1.png",
+                                                    "__Spaghenutti__/graphics/icons/acrocrystal.png"),
+    icon_size = 64,
+    mip_maps = 4,
+    category = "acroproduct-conversion-with-acrocrystal",
+    subgroup = "raw-resource",
+    enabled = true,
+    energy_required = 7,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-zinc-ore", amount = 8},
+      {type = "item", name = "sp-acrocrystal", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-zinc-ore", amount = 9},
+      {type = "item", name = "sp-acrocrystal", probability=0.98, amount = 1},
+      {type = "item", name = "copper-ore", probability=0.2, amount = 1},
+      {type = "item", name = "sp-nickel-ore", probability=0.1, amount = 1}
+    }
+  },
+  {
+    type = "recipe",
     name = "sp-zirconium-ore-from-acrocrystal",  -- #ForRegEx# - recipe
     icons = util.create_acroproduct_conversion_icon("__Spaghenutti__/graphics/icons/zirconium-ore-1.png",
                                                     "__Spaghenutti__/graphics/icons/acrocrystal.png"),
@@ -3617,6 +3639,9 @@ data:extend({
       -- add 0.15 for silicon in krastorio
     }
   },
+  ------------------------------------------------------------------------------
+  -- Acrosphere product recipes for basic resources from acrovoid
+  ------------------------------------------------------------------------------
   {
     type = "recipe",
     name = "sp-uranium-from-acrovoid",  -- #ForRegEx# - recipe
@@ -4066,27 +4091,6 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-tungsten-powder-from-acrovoid",  -- #ForRegEx# - recipe
-    icons = util.create_acroproduct_conversion_icon("__Spaghenutti__/graphics/icons/tungsten-powder.png",
-                                                    "__Spaghenutti__/graphics/icons/acrovoid.png"),
-    icon_size = 64,
-    mip_maps = 4,
-    category = "acroproduct-conversion-with-acrovoid",
-    subgroup = "processed-resource",
-    enabled = true,
-    energy_required = 9,  -- time in seconds to make the item
-    ingredients = {
-      {type = "item", name = "sp-tungsten-powder", amount = 9},
-      {type = "item", name = "sp-acrovoid", amount = 1}
-    },
-    results = {
-      {type = "item", name = "sp-acrovoid", probability=0.98, amount = 1},
-      {type = "item", name = "sp-tungsten-powder", amount = 11},
-      {type = "item", name = "sp-chromite", probability=0.5, amount = 2}
-    }
-  },
-  {
-    type = "recipe",
     name = "sp-zircon-from-acrovoid",  -- #ForRegEx# - recipe
     icons = util.create_acroproduct_conversion_icon("__Spaghenutti__/graphics/icons/zircon.png",
                                                     "__Spaghenutti__/graphics/icons/acrovoid.png"),
@@ -4133,11 +4137,197 @@ data:extend({
       -- add 0.15% 1 Silicon in krastorio
     }
   },
-
   -- raw imersite with acrovoid in krastorio
   -- raw rare earths acrovoid in krastorio
   -- coke acrovoid in krastorio
   -- silicon acrovoid in krastorio
+  ------------------------------------------------------------------------------
+  -- Acrosphere product recipes for basic resources from acromatter
+  ------------------------------------------------------------------------------
+  {
+    type = "recipe",
+    name = "sp-enriched-aluminum-from-acromatter",  -- #ForRegEx# - recipe
+    icons = util.create_acroproduct_conversion_icon("__Spaghenutti__/graphics/icons/enriched-aluminum-1.png",
+                                                    "__Spaghenutti__/graphics/icons/acromatter.png"),
+    icon_size = 64,
+    mip_maps = 4,
+    category = "acroproduct-conversion-with-acromatter",
+    subgroup = "raw-resource",
+    enabled = true,
+    energy_required = 9,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-enriched-aluminum", amount = 12},
+      {type = "item", name = "sp-acromatter", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-enriched-aluminum", amount = 14},
+      {type = "item", name = "sp-acromatter", probability=0.99, amount = 1},
+      {type = "item", name = "sp-phosphorus", probability=0.1, amount = 2},
+      {type = "item", name = "sp-graphite", probability=0.05, amount = 2}
+      -- add 0.2 for 2 silicon in krastorio
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-enriched-chromite-from-acromatter",  -- #ForRegEx# - recipe
+    icons = util.create_acroproduct_conversion_icon("__Spaghenutti__/graphics/icons/enriched-chromite-1.png",
+                                                    "__Spaghenutti__/graphics/icons/acromatter.png"),
+    icon_size = 64,
+    mip_maps = 4,
+    category = "acroproduct-conversion-with-acromatter",
+    subgroup = "raw-resource",
+    enabled = true,
+    energy_required = 8,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-enriched-chromite", amount = 6},
+      {type = "item", name = "sp-acromatter", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-enriched-chromite", amount = 7},
+      {type = "item", name = "sp-acromatter", probability=0.99, amount = 1},
+      {type = "item", name = "iron-ore", probability=0.1, amount = 2},
+      {type = "item", name = "sp-tungsten-ore", probability=0.15, amount = 2}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-enriched-titanium-from-acromatter",  -- #ForRegEx# - recipe
+    icons = util.create_acroproduct_conversion_icon("__Spaghenutti__/graphics/icons/enriched-titanium-1.png",
+                                                    "__Spaghenutti__/graphics/icons/acromatter.png"),
+    icon_size = 64,
+    mip_maps = 4,
+    category = "acroproduct-conversion-with-acromatter",
+    subgroup = "raw-resource",
+    enabled = true,
+    energy_required = 10,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-enriched-titanium", amount = 10},
+      {type = "item", name = "sp-acromatter", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-enriched-titanium", amount = 11},
+      {type = "item", name = "sp-acromatter", probability=0.99, amount = 1},
+      {type = "item", name = "sp-chromite", probability=0.15, amount = 2},
+      {type = "item", name = "sp-zircon", probability=0.25, amount = 2}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-enriched-magnesium-from-acromatter",  -- #ForRegEx# - recipe
+    icons = util.create_acroproduct_conversion_icon("__Spaghenutti__/graphics/icons/enriched-magnesium-1.png",
+                                                    "__Spaghenutti__/graphics/icons/acromatter.png"),
+    icon_size = 64,
+    mip_maps = 4,
+    category = "acroproduct-conversion-with-acromatter",
+    subgroup = "raw-resource",
+    enabled = true,
+    energy_required = 8,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-enriched-magnesium", amount = 10},
+      {type = "item", name = "sp-acromatter", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-enriched-magnesium", amount = 11},
+      {type = "item", name = "sp-acromatter", probability=0.99, amount = 1},
+      {type = "item", name = "sp-calcium", probability=0.25, amount = 2},
+      {type = "item", name = "sp-sodium", probability=0.20, amount = 2}
+      -- add 0.05 for 2 lithium in krastorio
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-enriched-nickel-from-acromatter",  -- #ForRegEx# - recipe
+    icons = util.create_acroproduct_conversion_icon("__Spaghenutti__/graphics/icons/enriched-nickel-1.png",
+                                                    "__Spaghenutti__/graphics/icons/acromatter.png"),
+    icon_size = 64,
+    mip_maps = 4,
+    category = "acroproduct-conversion-with-acromatter",
+    subgroup = "raw-resource",
+    enabled = true,
+    energy_required = 12,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-enriched-nickel", amount = 8},
+      {type = "item", name = "sp-acromatter", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-enriched-nickel", amount = 10},
+      {type = "item", name = "sp-acromatter", probability=0.98, amount = 1},
+      {type = "item", name = "iron-ore", probability=0.3, amount = 2},
+      {type = "item", name = "copper-ore", probability=0.5, amount = 2},
+      {type = "item", name = "sp-palladium", probability=0.05, amount = 2},
+      {type = "item", name = "sp-platinum", probability=0.02, amount = 2}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-enriched-tinstone-from-acromatter",  -- #ForRegEx# - recipe
+    icons = util.create_acroproduct_conversion_icon("__Spaghenutti__/graphics/icons/enriched-tinstone-1.png",
+                                                    "__Spaghenutti__/graphics/icons/acromatter.png"),
+    icon_size = 64,
+    mip_maps = 4,
+    category = "acroproduct-conversion-with-acromatter",
+    subgroup = "raw-resource",
+    enabled = true,
+    energy_required = 6,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-enriched-tinstone", amount = 6},
+      {type = "item", name = "sp-acromatter", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-enriched-tinstone", amount = 7},
+      {type = "item", name = "sp-acromatter", probability=0.99, amount = 1},
+      {type = "item", name = "sp-leadstone", probability=0.5, amount = 2},
+      {type = "item", name = "sp-antimony", probability=0.12, amount = 2},
+      {type = "item", name = "sp-tellurium", probability=0.02, amount = 2}
+      -- add 0.15 for 2 silicon in krastorio
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-enriched-tungsten-from-acromatter",  -- #ForRegEx# - recipe
+    icons = util.create_acroproduct_conversion_icon("__Spaghenutti__/graphics/icons/enriched-tungsten-1.png",
+                                                    "__Spaghenutti__/graphics/icons/acromatter.png"),
+    icon_size = 64,
+    mip_maps = 4,
+    category = "acroproduct-conversion-with-acromatter",
+    subgroup = "raw-resource",
+    enabled = true,
+    energy_required = 12,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-enriched-tungsten", amount = 8},
+      {type = "item", name = "sp-acromatter", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-enriched-tungsten", amount = 9},
+      {type = "item", name = "sp-acromatter", probability=0.98, amount = 1},
+      {type = "item", name = "sp-chromite", probability=0.1, amount = 2}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-enriched-zinc-from-acrocrystal",  -- #ForRegEx# - recipe
+    icons = util.create_acroproduct_conversion_icon("__Spaghenutti__/graphics/icons/enriched-zinc-1.png",
+                                                    "__Spaghenutti__/graphics/icons/acrocrystal.png"),
+    icon_size = 64,
+    mip_maps = 4,
+    category = "acroproduct-conversion-with-acrocrystal",
+    subgroup = "raw-resource",
+    enabled = true,
+    energy_required = 7,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-enriched-zinc", amount = 8},
+      {type = "item", name = "sp-acrocrystal", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-enriched-zinc", amount = 9},
+      {type = "item", name = "sp-acrocrystal", probability=0.98, amount = 1},
+      {type = "item", name = "copper-ore", probability=0.2, amount = 2},
+      {type = "item", name = "sp-nickel-ore", probability=0.1, amount = 2}
+    }
+  },
+  -- enriched rare earths acromatter in krastorio
+  -- enriched iron acromatter in krastorio
+  -- enriched copper acromatter in krastorio
   ------------------------------------------------------------------------------
   -- Alternate recipes for vanilla items
   ------------------------------------------------------------------------------
