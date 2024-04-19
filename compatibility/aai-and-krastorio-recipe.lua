@@ -527,7 +527,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-rare-metal-processing",  -- #ForRegEx# - recipe
-    icons = util.combine_four_icons("__Spaghenutti__/graphics/icons/yittrium.png", 64, nil,
+    icons = util.combine_four_icons("__Spaghenutti__/graphics/icons/yttrium.png", 64, nil,
                                     "__Spaghenutti__/graphics/icons/lanthanum.png", 64, nil,
                                     "__Spaghenutti__/graphics/icons/cerium.png", 64, nil,
                                     "__Spaghenutti__/graphics/icons/neodymium.png", 64, nil),
@@ -541,7 +541,7 @@ data:extend({
       {type = "item", name = "rare-metals", amount = 2}
     },
     results = {
-      {type = "item", name = "sp-yittrium", probability = 0.06, amount = 1},
+      {type = "item", name = "sp-yttrium", probability = 0.06, amount = 1},
       {type = "item", name = "sp-lanthanum", probability = 0.09, amount = 1},
       {type = "item", name = "sp-cerium", probability = 0.15, amount = 1},
       {type = "item", name = "sp-neodymium", probability = 0.08, amount = 1},
@@ -1475,8 +1475,8 @@ util.change_recipe_ingredients("kr-advanced-solar-panel",
   12,
   24)
 util.change_recipe_ingredients("kr-energy-storage",
-  {{"processing-unit", 10}, {"energy-control-unit", 30}, {"sp-yittrium", 8}, {"sp-cerium", 20}, {"sp-superconductor", 5}, {"sp-duralumin", 20}},
-  {{"processing-unit", 20}, {"energy-control-unit", 60}, {"sp-yittrium", 12}, {"sp-cerium", 30}, {"sp-superconductor", 8}, {"sp-duralumin", 40}},
+  {{"processing-unit", 10}, {"energy-control-unit", 30}, {"sp-yttrium", 8}, {"sp-cerium", 20}, {"sp-superconductor", 5}, {"sp-duralumin", 20}},
+  {{"processing-unit", 20}, {"energy-control-unit", 60}, {"sp-yttrium", 12}, {"sp-cerium", 30}, {"sp-superconductor", 8}, {"sp-duralumin", 40}},
   30,
   60)
 util.change_recipe_ingredients("kr-fusion-reactor",

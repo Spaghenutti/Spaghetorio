@@ -33,7 +33,7 @@ Low prio
   - Create file for acroproduct-conversion recipes
 
 Future changes
-  - Replace rare-metals with yittrium, lanthanum, cerium, neodymium
+  - Replace rare-metals with yttrium, lanthanum, cerium, neodymium
 
 Notes:
   -

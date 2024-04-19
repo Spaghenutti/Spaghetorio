@@ -132,7 +132,7 @@ Noble metals
 
 Rare earths
   - rare-earths (missing resource)
-  +r Y yittrium  - for optical fibers 0.003
+  +r Y yttrium  - for optical fibers 0.003
   +r La lanthanum 0.004
   +r Ce cerium 0.007
   +r Nd neodymium 0.004

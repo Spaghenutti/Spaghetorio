@@ -586,12 +586,12 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-yittrium",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/icons/yittrium.png",
+    name = "sp-yttrium",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/yttrium.png",
     icon_size = 64,
     scale = 0.25,
     subgroup = "processed-resource",
-    order = "[yittrium]",
+    order = "[yttrium]",
     stack_size = 50
   },
   {

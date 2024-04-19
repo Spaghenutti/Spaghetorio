@@ -1103,7 +1103,7 @@ data:extend({
       {"explosives", 5},
       {"steel-plate", 5},
       {"sp-graphite", 2},
-      {"sp-yittrium", 1}
+      {"sp-yttrium", 1}
     },
     result = "cluster-grenade"
   },

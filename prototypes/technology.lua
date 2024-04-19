@@ -1976,7 +1976,7 @@ data:extend({
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-yemnuth-pearls-from-yittrium-and-lanthanum"
+        recipe = "sp-yemnuth-pearls-from-yttrium-and-lanthanum"
       },
     },
     prerequisites = {"logistic-science-pack"},

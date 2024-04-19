@@ -251,8 +251,8 @@ function data_util.create_acroproduct_conversion_icon(item_to_convert, acroprodu
 
   icons = {
     {icon = "__Spaghenutti__/graphics/hr-icons/background.png", icon_size = 256, scale = 0.5},
-    {icon = arrow_icon, icon_size = 256, scale = 0.75, shift = {16, 16}},
-    {icon = item_to_convert, icon_size = 64, scale = 1.15, shift = {19, 12}},
+    {icon = arrow_icon, icon_size = 256, scale = 0.7, shift = {15, 15}},
+    {icon = item_to_convert, icon_size = 64, scale = 1.15, shift = {18, 11}},
     {icon = acroproduct, icon_size = 64, scale = 0.8, shift = {-42, -42}}
   }
   return icons

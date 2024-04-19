@@ -1994,6 +1994,8 @@ data:extend({
   {
     type = "recipe",
     name = "sp-quasicrystal-1",  -- #ForRegEx# - recipe
+    icons = util.overlay_small_icon("__Spaghenutti__/graphics/icons/quasicrystal.png", 64,
+                                    "__base__/graphics/icons/copper-plate.png", 64),
     category = "advanced-smelting",
     enabled = false,
     energy_required = 30,  -- time in seconds to make the item
@@ -2011,6 +2013,8 @@ data:extend({
   {
     type = "recipe",
     name = "sp-quasicrystal-2",  -- #ForRegEx# - recipe
+    icons = util.overlay_small_icon("__Spaghenutti__/graphics/icons/quasicrystal.png", 64,
+                                    "__Spaghenutti__/graphics/icons/aluminum-sheet.png", 64),
     category = "advanced-smelting",
     enabled = false,
     energy_required = 40,  -- time in seconds to make the item
@@ -2457,7 +2461,7 @@ data:extend({
       {type = "item", name = "sp-yemnuth-shard", probability = 0.5, amount = 3},
       {type = "item", name = "sp-plutonium-240", probability = 0.02, amount = 3},
       {type = "item", name = "uranium-235", probability = 0.02, amount = 3},
-      {type = "item", name = "sp-yittrium", probability = 0.07, amount = 3},
+      {type = "item", name = "sp-yttrium", probability = 0.07, amount = 3},
       {type = "item", name = "sp-lanthanum", probability = 0.1, amount = 3},
       {type = "item", name = "sp-cerium", probability = 0.2, amount = 3},
       {type = "item", name = "sp-neodymium", probability = 0.09, amount = 3}
@@ -2466,6 +2470,9 @@ data:extend({
   {
     type = "recipe",
     name = "sp-yemnuth-pearls-from-cerium-and-neodymium",  -- #ForRegEx# - recipe
+    icons = util.overlay_two_small_icons("__Spaghenutti__/graphics/icons/yemnuth-pearls.png", 64,
+                                         "__Spaghenutti__/graphics/icons/cerium.png", 64,
+                                         "__Spaghenutti__/graphics/icons/neodymium.png", 64),
     category = "crafting",
     enabled = false,
     energy_required = 20,  -- time in seconds to make the item
@@ -2481,14 +2488,17 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-yemnuth-pearls-from-yittrium-and-lanthanum",  -- #ForRegEx# - recipe
+    name = "sp-yemnuth-pearls-from-yttrium-and-lanthanum",  -- #ForRegEx# - recipe
+    icons = util.overlay_two_small_icons("__Spaghenutti__/graphics/icons/yemnuth-pearls.png", 64,
+                                         "__Spaghenutti__/graphics/icons/yttrium.png", 64,
+                                         "__Spaghenutti__/graphics/icons/lanthanum.png", 64),
     category = "crafting",
     enabled = false,
     energy_required = 30,  -- time in seconds to make the item
     ingredients = {
       {type = "item", name = "sp-yemnuth-shard", amount = 15},
       {type = "item", name = "sp-high-purity-silicon", amount = 10},
-      {type = "item", name = "sp-yittrium", amount = 1},
+      {type = "item", name = "sp-yttrium", amount = 1},
       {type = "item", name = "sp-lanthanum", amount = 2}
     },
     results = {
@@ -2850,7 +2860,7 @@ data:extend({
     enabled = false,
     energy_required = 20,  -- time in seconds to make the item
     ingredients = {
-      {type = "item", name = "sp-yittrium", amount = 1},
+      {type = "item", name = "sp-yttrium", amount = 1},
       {type = "item", name = "sp-inconel", amount = 10},
       {type = "item", name = "sp-electrode", amount = 10},
       {type = "item", name = "sp-electromagnet", amount = 4},
@@ -3670,15 +3680,15 @@ data:extend({
     results = {
       {type = "item", name = "sp-acrovoid", probability=0.99, amount = 1},
       {type = "item", name = "sp-cerium", amount = 10},
-      {type = "item", name = "sp-yittrium", probability=0.05, amount = 1},
+      {type = "item", name = "sp-yttrium", probability=0.05, amount = 1},
       {type = "item", name = "sp-lanthanum", probability=0.1, amount = 1},
       {type = "item", name = "sp-neodymium", probability=0.1, amount = 1}
     }
   },
   {
     type = "recipe",
-    name = "sp-yittrium-from-acrovoid",  -- #ForRegEx# - recipe
-    icons = util.create_acroproduct_conversion_icon("__Spaghenutti__/graphics/icons/yittrium.png",
+    name = "sp-yttrium-from-acrovoid",  -- #ForRegEx# - recipe
+    icons = util.create_acroproduct_conversion_icon("__Spaghenutti__/graphics/icons/yttrium.png",
                                                     "__Spaghenutti__/graphics/icons/acrovoid.png"),
     icon_size = 64,
     mip_maps = 4,
@@ -3687,12 +3697,12 @@ data:extend({
     enabled = true,
     energy_required = 22,  -- time in seconds to make the item
     ingredients = {
-      {type = "item", name = "sp-yittrium", amount = 9},
+      {type = "item", name = "sp-yttrium", amount = 9},
       {type = "item", name = "sp-acrovoid", amount = 1}
     },
     results = {
       {type = "item", name = "sp-acrovoid", probability=0.99, amount = 1},
-      {type = "item", name = "sp-yittrium", amount = 10},
+      {type = "item", name = "sp-yttrium", amount = 10},
       {type = "item", name = "sp-cerium", probability=0.2, amount = 1},
       {type = "item", name = "sp-lanthanum", probability=0.2, amount = 1},
       {type = "item", name = "sp-neodymium", probability=0.1, amount = 1}
@@ -3717,7 +3727,7 @@ data:extend({
       {type = "item", name = "sp-acrovoid", probability=0.99, amount = 1},
       {type = "item", name = "sp-lanthanum", amount = 10},
       {type = "item", name = "sp-cerium", probability=0.2, amount = 1},
-      {type = "item", name = "sp-yittrium", probability=0.1, amount = 1},
+      {type = "item", name = "sp-yttrium", probability=0.1, amount = 1},
       {type = "item", name = "sp-neodymium", probability=0.08, amount = 1}
     }
   },
@@ -3740,54 +3750,8 @@ data:extend({
       {type = "item", name = "sp-acrovoid", probability=0.99, amount = 1},
       {type = "item", name = "sp-neodymium", amount = 16},
       {type = "item", name = "sp-cerium", probability=0.2, amount = 1},
-      {type = "item", name = "sp-yittrium", probability=0.15, amount = 1},
+      {type = "item", name = "sp-yttrium", probability=0.15, amount = 1},
       {type = "item", name = "sp-lanthanum", probability=0.07, amount = 1}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-fluorine-from-acrovoid",  -- #ForRegEx# - recipe
-    icons = util.create_acroproduct_conversion_icon("__Spaghenutti__/graphics/icons/fluorine.png",
-                                                    "__Spaghenutti__/graphics/icons/acrovoid.png"),
-    icon_size = 64,
-    mip_maps = 4,
-    category = "acroproduct-conversion-with-acrovoid",
-    subgroup = "processed-resource",
-    enabled = true,
-    energy_required = 8,  -- time in seconds to make the item
-    ingredients = {
-      {type = "item", name = "sp-fluorine", amount = 7},
-      {type = "item", name = "sp-acrovoid", amount = 1}
-    },
-    results = {
-      {type = "item", name = "sp-acrovoid", probability=0.99, amount = 1},
-      {type = "item", name = "sp-fluorine", amount = 8},
-      {type = "item", name = "sulfur", probability=0.15, amount = 1},
-      -- add 0.5% 20 chlorine in krastorio
-      -- add 0.2% 15 oxygen in krastorio
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-fluorine-from-acrovoid",  -- #ForRegEx# - recipe
-    icons = util.create_acroproduct_conversion_icon("__Spaghenutti__/graphics/icons/fluorine.png",
-                                                    "__Spaghenutti__/graphics/icons/acrovoid.png"),
-    icon_size = 64,
-    mip_maps = 4,
-    category = "acroproduct-conversion-with-acrovoid",
-    subgroup = "processed-resource",
-    enabled = true,
-    energy_required = 8,  -- time in seconds to make the item
-    ingredients = {
-      {type = "item", name = "sp-fluorine", amount = 7},
-      {type = "item", name = "sp-acrovoid", amount = 1}
-    },
-    results = {
-      {type = "item", name = "sp-acrovoid", probability=0.99, amount = 1},
-      {type = "item", name = "sp-fluorine", amount = 8},
-      {type = "item", name = "sulfur", probability=0.15, amount = 1},
-      -- add 0.5% 20 chlorine in krastorio
-      -- add 0.2% 15 oxygen in krastorio
     }
   },
   {
@@ -4076,9 +4040,104 @@ data:extend({
       -- add 0.15% 40 Nitrogen in krastorio
     }
   },
+  {
+    type = "recipe",
+    name = "sp-tellurium-from-acrovoid",  -- #ForRegEx# - recipe
+    icons = util.create_acroproduct_conversion_icon("__Spaghenutti__/graphics/icons/tellurium-1.png",
+                                                    "__Spaghenutti__/graphics/icons/acrovoid.png"),
+    icon_size = 64,
+    mip_maps = 4,
+    category = "acroproduct-conversion-with-acrovoid",
+    subgroup = "processed-resource",
+    enabled = true,
+    energy_required = 12,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-tellurium", amount = 10},
+      {type = "item", name = "sp-acrovoid", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-acrovoid", probability=0.99, amount = 1},
+      {type = "item", name = "sp-tellurium", amount = 11},
+      {type = "item", name = "sulfur", probability=0.25, amount = 2},
+      {type = "item", name = "sp-antimony", probability=0.12, amount = 1},
+      {type = "fluid", name = "sp-xenon", probability=0.02, amount = 1},
+      -- add 0.15% 45 Oxygen in krastorio
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-tungsten-powder-from-acrovoid",  -- #ForRegEx# - recipe
+    icons = util.create_acroproduct_conversion_icon("__Spaghenutti__/graphics/icons/tungsten-powder.png",
+                                                    "__Spaghenutti__/graphics/icons/acrovoid.png"),
+    icon_size = 64,
+    mip_maps = 4,
+    category = "acroproduct-conversion-with-acrovoid",
+    subgroup = "processed-resource",
+    enabled = true,
+    energy_required = 9,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-tungsten-powder", amount = 9},
+      {type = "item", name = "sp-acrovoid", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-acrovoid", probability=0.98, amount = 1},
+      {type = "item", name = "sp-tungsten-powder", amount = 11},
+      {type = "item", name = "sp-chromite", probability=0.5, amount = 2}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-zircon-from-acrovoid",  -- #ForRegEx# - recipe
+    icons = util.create_acroproduct_conversion_icon("__Spaghenutti__/graphics/icons/zircon.png",
+                                                    "__Spaghenutti__/graphics/icons/acrovoid.png"),
+    icon_size = 64,
+    mip_maps = 4,
+    category = "acroproduct-conversion-with-acrovoid",
+    subgroup = "processed-resource",
+    enabled = true,
+    energy_required = 5,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-zircon", amount = 6},
+      {type = "item", name = "sp-acrovoid", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-acrovoid", probability=0.99, amount = 1},
+      {type = "item", name = "sp-zircon", amount = 7},
+      {type = "item", name = "sp-titanium-ore", probability=0.2, amount = 2},
+      {type = "item", name = "sp-niobium-powder", probability=0.2, amount = 1},
+      {type = "item", name = "sp-yttrium", probability=0.02, amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-sulfur-from-acrovoid",  -- #ForRegEx# - recipe
+    icons = util.create_acroproduct_conversion_icon("__base__/graphics/icons/sulfur.png",
+                                                    "__Spaghenutti__/graphics/icons/acrovoid.png"),
+    icon_size = 64,
+    mip_maps = 4,
+    category = "acroproduct-conversion-with-acrovoid",
+    subgroup = "processed-resource",
+    enabled = true,
+    energy_required = 8,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sulfur", amount = 6},
+      {type = "item", name = "sp-acrovoid", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-acrovoid", probability=0.99, amount = 1},
+      {type = "item", name = "sulfur", amount = 8},
+      {type = "item", name = "sp-tellurium", probability=0.05, amount = 1},
+      {type = "item", name = "sp-phosphorus", probability=0.2, amount = 1},
+      {type = "item", name = "sp-fluorine", probability=0.16, amount = 1}
+      -- add 0.25% 60 Oxygen in krastorio
+      -- add 0.15% 1 Silicon in krastorio
+    }
+  },
 
   -- raw imersite with acrovoid in krastorio
   -- raw rare earths acrovoid in krastorio
+  -- coke acrovoid in krastorio
+  -- silicon acrovoid in krastorio
   ------------------------------------------------------------------------------
   -- Alternate recipes for vanilla items
   ------------------------------------------------------------------------------
