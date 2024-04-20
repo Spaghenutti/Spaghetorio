@@ -155,11 +155,11 @@ function data_util.combine_four_icons(icon_1, icon_1_size, shift_1, icon_2, icon
   end
 
   if (shift_3 == nil) then
-    shift_3 = {7*icon_3_size/64, 6*icon_3_size/64}
+    shift_3 = {-6*icon_4_size/64, 7*icon_4_size/64}
   end
 
   if (shift_4 == nil) then
-    shift_4 = {-6*icon_4_size/64, 7*icon_4_size/64}
+    shift_4 = {7*icon_3_size/64, 6*icon_3_size/64}
   end
 
   icons = {

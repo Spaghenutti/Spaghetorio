@@ -3137,7 +3137,7 @@ data:extend({
     mip_maps = 4,
     category = "acrosphere-conversion",
     subgroup = "sp-acrosphere",
-    enabled = true,
+    enabled = false,
     energy_required = 3,  -- time in seconds to make the item
     allowed_effects = {"consumption", "speed", "pollution"},
     ingredients = {
@@ -3165,7 +3165,7 @@ data:extend({
     mip_maps = 4,
     category = "acrosphere-conversion",
     subgroup = "sp-acrosphere",
-    enabled = true,
+    enabled = false,
     energy_required = 3,  -- time in seconds to make the item
     allowed_effects = {"consumption", "speed", "pollution"},
     ingredients = {
@@ -3193,7 +3193,7 @@ data:extend({
     mip_maps = 4,
     category = "acrosphere-conversion",
     subgroup = "sp-acrosphere",
-    enabled = true,
+    enabled = false,
     energy_required = 3,  -- time in seconds to make the item
     allowed_effects = {"consumption", "speed", "pollution"},
     ingredients = {
@@ -3221,7 +3221,7 @@ data:extend({
     mip_maps = 4,
     category = "acrosphere-conversion",
     subgroup = "sp-acrosphere",
-    enabled = true,
+    enabled = false,
     energy_required = 3,  -- time in seconds to make the item
     allowed_effects = {"consumption", "speed", "pollution"},
     ingredients = {
@@ -3243,7 +3243,7 @@ data:extend({
     mip_maps = 4,
     category = "acrosphere-conversion",
     subgroup = "sp-acroproduct",
-    enabled = true,
+    enabled = false,
     energy_required = 4,  -- time in seconds to make the item
     allowed_effects = {"consumption", "speed", "pollution"},
     ingredients = {
@@ -3268,7 +3268,7 @@ data:extend({
     mip_maps = 4,
     category = "acrosphere-conversion",
     subgroup = "sp-acroproduct",
-    enabled = true,
+    enabled = false,
     energy_required = 4,  -- time in seconds to make the item
     allowed_effects = {"consumption", "speed", "pollution"},
     ingredients = {
@@ -3293,7 +3293,7 @@ data:extend({
     mip_maps = 4,
     category = "acrosphere-conversion",
     subgroup = "sp-acroproduct",
-    enabled = true,
+    enabled = false,
     energy_required = 4,  -- time in seconds to make the item
     allowed_effects = {"consumption", "speed", "pollution"},
     ingredients = {
@@ -3322,7 +3322,7 @@ data:extend({
     mip_maps = 4,
     category = "acroproduct-conversion-with-acrocrystal",
     subgroup = "raw-resource",
-    enabled = true,
+    enabled = false,
     energy_required = 8,  -- time in seconds to make the item
     ingredients = {
       {type = "item", name = "iron-ore", amount = 10},
@@ -3345,7 +3345,7 @@ data:extend({
     mip_maps = 4,
     category = "acroproduct-conversion-with-acrocrystal",
     subgroup = "raw-resource",
-    enabled = true,
+    enabled = false,
     energy_required = 8,  -- time in seconds to make the item
     ingredients = {
       {type = "item", name = "copper-ore", amount = 10},
@@ -3370,7 +3370,7 @@ data:extend({
     mip_maps = 4,
     category = "acroproduct-conversion-with-acrocrystal",
     subgroup = "raw-resource",
-    enabled = true,
+    enabled = false,
     energy_required = 6,  -- time in seconds to make the item
     ingredients = {
       {type = "item", name = "stone", amount = 10},
@@ -3395,7 +3395,7 @@ data:extend({
     mip_maps = 4,
     category = "acroproduct-conversion-with-acrocrystal",
     subgroup = "raw-resource",
-    enabled = true,
+    enabled = false,
     energy_required = 6,  -- time in seconds to make the item
     ingredients = {
       {type = "item", name = "coal", amount = 10},
@@ -3419,7 +3419,7 @@ data:extend({
     mip_maps = 4,
     category = "acroproduct-conversion-with-acrocrystal",
     subgroup = "raw-resource",
-    enabled = true,
+    enabled = false,
     energy_required = 9,  -- time in seconds to make the item
     ingredients = {
       {type = "item", name = "sp-aluminum-ore", amount = 12},
@@ -3442,7 +3442,7 @@ data:extend({
     mip_maps = 4,
     category = "acroproduct-conversion-with-acrocrystal",
     subgroup = "raw-resource",
-    enabled = true,
+    enabled = false,
     energy_required = 8,  -- time in seconds to make the item
     ingredients = {
       {type = "item", name = "sp-chromite", amount = 6},
@@ -3464,7 +3464,7 @@ data:extend({
     mip_maps = 4,
     category = "acroproduct-conversion-with-acrocrystal",
     subgroup = "raw-resource",
-    enabled = true,
+    enabled = false,
     energy_required = 6,  -- time in seconds to make the item
     ingredients = {
       {type = "item", name = "sp-limestone", amount = 10},
@@ -3487,7 +3487,7 @@ data:extend({
     mip_maps = 4,
     category = "acroproduct-conversion-with-acrocrystal",
     subgroup = "raw-resource",
-    enabled = true,
+    enabled = false,
     energy_required = 10,  -- time in seconds to make the item
     ingredients = {
       {type = "item", name = "sp-titanium-ore", amount = 10},
@@ -3509,7 +3509,7 @@ data:extend({
     mip_maps = 4,
     category = "acroproduct-conversion-with-acrocrystal",
     subgroup = "raw-resource",
-    enabled = true,
+    enabled = false,
     energy_required = 8,  -- time in seconds to make the item
     ingredients = {
       {type = "item", name = "sp-magnesium-ore", amount = 10},
@@ -3532,7 +3532,7 @@ data:extend({
     mip_maps = 4,
     category = "acroproduct-conversion-with-acrocrystal",
     subgroup = "raw-resource",
-    enabled = true,
+    enabled = false,
     energy_required = 12,  -- time in seconds to make the item
     ingredients = {
       {type = "item", name = "sp-nickel-ore", amount = 8},
@@ -3556,7 +3556,7 @@ data:extend({
     mip_maps = 4,
     category = "acroproduct-conversion-with-acrocrystal",
     subgroup = "raw-resource",
-    enabled = true,
+    enabled = false,
     energy_required = 6,  -- time in seconds to make the item
     ingredients = {
       {type = "item", name = "sp-tinstone", amount = 6},
@@ -3580,7 +3580,7 @@ data:extend({
     mip_maps = 4,
     category = "acroproduct-conversion-with-acrocrystal",
     subgroup = "raw-resource",
-    enabled = true,
+    enabled = false,
     energy_required = 12,  -- time in seconds to make the item
     ingredients = {
       {type = "item", name = "sp-tungsten-ore", amount = 8},
@@ -3601,7 +3601,7 @@ data:extend({
     mip_maps = 4,
     category = "acroproduct-conversion-with-acrocrystal",
     subgroup = "raw-resource",
-    enabled = true,
+    enabled = false,
     energy_required = 7,  -- time in seconds to make the item
     ingredients = {
       {type = "item", name = "sp-zinc-ore", amount = 8},
@@ -3623,7 +3623,7 @@ data:extend({
     mip_maps = 4,
     category = "acroproduct-conversion-with-acrocrystal",
     subgroup = "raw-resource",
-    enabled = true,
+    enabled = false,
     energy_required = 8,  -- time in seconds to make the item
     ingredients = {
       {type = "item", name = "sp-zirconium-ore", amount = 9},
@@ -3651,7 +3651,7 @@ data:extend({
     mip_maps = 4,
     category = "acroproduct-conversion-with-acrovoid",
     subgroup = "processed-resource",
-    enabled = true,
+    enabled = false,
     energy_required = 20,  -- time in seconds to make the item
     ingredients = {
       {type = "item", name = "uranium-238", amount = 9},
@@ -3673,7 +3673,7 @@ data:extend({
     mip_maps = 4,
     category = "acroproduct-conversion-with-acrovoid",
     subgroup = "processed-resource",
-    enabled = true,
+    enabled = false,
     energy_required = 6,  -- time in seconds to make the item
     ingredients = {
       {type = "item", name = "sp-calcium", amount = 9},
@@ -3696,7 +3696,7 @@ data:extend({
     mip_maps = 4,
     category = "acroproduct-conversion-with-acrovoid",
     subgroup = "processed-resource",
-    enabled = true,
+    enabled = false,
     energy_required = 20,  -- time in seconds to make the item
     ingredients = {
       {type = "item", name = "sp-cerium", amount = 9},
@@ -3719,7 +3719,7 @@ data:extend({
     mip_maps = 4,
     category = "acroproduct-conversion-with-acrovoid",
     subgroup = "processed-resource",
-    enabled = true,
+    enabled = false,
     energy_required = 22,  -- time in seconds to make the item
     ingredients = {
       {type = "item", name = "sp-yttrium", amount = 9},
@@ -3742,7 +3742,7 @@ data:extend({
     mip_maps = 4,
     category = "acroproduct-conversion-with-acrovoid",
     subgroup = "processed-resource",
-    enabled = true,
+    enabled = false,
     energy_required = 18,  -- time in seconds to make the item
     ingredients = {
       {type = "item", name = "sp-lanthanum", amount = 9},
@@ -3765,7 +3765,7 @@ data:extend({
     mip_maps = 4,
     category = "acroproduct-conversion-with-acrovoid",
     subgroup = "processed-resource",
-    enabled = true,
+    enabled = false,
     energy_required = 16,  -- time in seconds to make the item
     ingredients = {
       {type = "item", name = "sp-neodymium", amount = 15},
@@ -3788,7 +3788,7 @@ data:extend({
     mip_maps = 4,
     category = "acroproduct-conversion-with-acrovoid",
     subgroup = "processed-resource",
-    enabled = true,
+    enabled = false,
     energy_required = 8,  -- time in seconds to make the item
     ingredients = {
       {type = "item", name = "sp-fluorine", amount = 7},
@@ -3811,7 +3811,7 @@ data:extend({
     mip_maps = 4,
     category = "acroproduct-conversion-with-acrovoid",
     subgroup = "processed-resource",
-    enabled = true,
+    enabled = false,
     energy_required = 15,  -- time in seconds to make the item
     ingredients = {
       {type = "item", name = "sp-gold", amount = 7},
@@ -3835,7 +3835,7 @@ data:extend({
     mip_maps = 4,
     category = "acroproduct-conversion-with-acrovoid",
     subgroup = "processed-resource",
-    enabled = true,
+    enabled = false,
     energy_required = 8,  -- time in seconds to make the item
     ingredients = {
       {type = "item", name = "sp-graphite", amount = 4},
@@ -3860,7 +3860,7 @@ data:extend({
     mip_maps = 4,
     category = "acroproduct-conversion-with-acrovoid",
     subgroup = "processed-resource",
-    enabled = true,
+    enabled = false,
     energy_required = 30,  -- time in seconds to make the item
     ingredients = {
       {type = "item", name = "sp-iridium", amount = 2},
@@ -3886,7 +3886,7 @@ data:extend({
     mip_maps = 4,
     category = "acroproduct-conversion-with-acrovoid",
     subgroup = "processed-resource",
-    enabled = true,
+    enabled = false,
     energy_required = 12,  -- time in seconds to make the item
     ingredients = {
       {type = "item", name = "sp-leadstone", amount = 9},
@@ -3909,7 +3909,7 @@ data:extend({
     mip_maps = 4,
     category = "acroproduct-conversion-with-acrovoid",
     subgroup = "processed-resource",
-    enabled = true,
+    enabled = false,
     energy_required = 24,  -- time in seconds to make the item
     ingredients = {
       {type = "item", name = "sp-palladium", amount = 4},
@@ -3932,7 +3932,7 @@ data:extend({
     mip_maps = 4,
     category = "acroproduct-conversion-with-acrovoid",
     subgroup = "processed-resource",
-    enabled = true,
+    enabled = false,
     energy_required = 7,  -- time in seconds to make the item
     ingredients = {
       {type = "item", name = "sp-phosphorus", amount = 7},
@@ -3957,7 +3957,7 @@ data:extend({
     mip_maps = 4,
     category = "acroproduct-conversion-with-acrovoid",
     subgroup = "processed-resource",
-    enabled = true,
+    enabled = false,
     energy_required = 25,  -- time in seconds to make the item
     ingredients = {
       {type = "item", name = "sp-platinum", amount = 7},
@@ -3981,7 +3981,7 @@ data:extend({
     mip_maps = 4,
     category = "acroproduct-conversion-with-acrovoid",
     subgroup = "processed-resource",
-    enabled = true,
+    enabled = false,
     energy_required = 18,  -- time in seconds to make the item
     ingredients = {
       {type = "item", name = "sp-plutonium-239", amount = 7},
@@ -4004,7 +4004,7 @@ data:extend({
     mip_maps = 4,
     category = "acroproduct-conversion-with-acrovoid",
     subgroup = "processed-resource",
-    enabled = true,
+    enabled = false,
     energy_required = 15,  -- time in seconds to make the item
     ingredients = {
       {type = "item", name = "sp-silver", amount = 7},
@@ -4027,7 +4027,7 @@ data:extend({
     mip_maps = 4,
     category = "acroproduct-conversion-with-acrovoid",
     subgroup = "processed-resource",
-    enabled = true,
+    enabled = false,
     energy_required = 10,  -- time in seconds to make the item
     ingredients = {
       {type = "item", name = "sp-sodium", amount = 7},
@@ -4050,7 +4050,7 @@ data:extend({
     mip_maps = 4,
     category = "acroproduct-conversion-with-acrovoid",
     subgroup = "processed-resource",
-    enabled = true,
+    enabled = false,
     energy_required = 10,  -- time in seconds to make the item
     ingredients = {
       {type = "item", name = "sp-antimony", amount = 10},
@@ -4074,7 +4074,7 @@ data:extend({
     mip_maps = 4,
     category = "acroproduct-conversion-with-acrovoid",
     subgroup = "processed-resource",
-    enabled = true,
+    enabled = false,
     energy_required = 12,  -- time in seconds to make the item
     ingredients = {
       {type = "item", name = "sp-tellurium", amount = 10},
@@ -4098,7 +4098,7 @@ data:extend({
     mip_maps = 4,
     category = "acroproduct-conversion-with-acrovoid",
     subgroup = "processed-resource",
-    enabled = true,
+    enabled = false,
     energy_required = 5,  -- time in seconds to make the item
     ingredients = {
       {type = "item", name = "sp-zircon", amount = 6},
@@ -4121,7 +4121,7 @@ data:extend({
     mip_maps = 4,
     category = "acroproduct-conversion-with-acrovoid",
     subgroup = "processed-resource",
-    enabled = true,
+    enabled = false,
     energy_required = 8,  -- time in seconds to make the item
     ingredients = {
       {type = "item", name = "sulfur", amount = 6},
@@ -4153,7 +4153,7 @@ data:extend({
     mip_maps = 4,
     category = "acroproduct-conversion-with-acromatter",
     subgroup = "raw-resource",
-    enabled = true,
+    enabled = false,
     energy_required = 9,  -- time in seconds to make the item
     ingredients = {
       {type = "item", name = "sp-enriched-aluminum", amount = 12},
@@ -4176,7 +4176,7 @@ data:extend({
     mip_maps = 4,
     category = "acroproduct-conversion-with-acromatter",
     subgroup = "raw-resource",
-    enabled = true,
+    enabled = false,
     energy_required = 8,  -- time in seconds to make the item
     ingredients = {
       {type = "item", name = "sp-enriched-chromite", amount = 6},
@@ -4198,7 +4198,7 @@ data:extend({
     mip_maps = 4,
     category = "acroproduct-conversion-with-acromatter",
     subgroup = "raw-resource",
-    enabled = true,
+    enabled = false,
     energy_required = 10,  -- time in seconds to make the item
     ingredients = {
       {type = "item", name = "sp-enriched-titanium", amount = 10},
@@ -4220,7 +4220,7 @@ data:extend({
     mip_maps = 4,
     category = "acroproduct-conversion-with-acromatter",
     subgroup = "raw-resource",
-    enabled = true,
+    enabled = false,
     energy_required = 8,  -- time in seconds to make the item
     ingredients = {
       {type = "item", name = "sp-enriched-magnesium", amount = 10},
@@ -4243,7 +4243,7 @@ data:extend({
     mip_maps = 4,
     category = "acroproduct-conversion-with-acromatter",
     subgroup = "raw-resource",
-    enabled = true,
+    enabled = false,
     energy_required = 12,  -- time in seconds to make the item
     ingredients = {
       {type = "item", name = "sp-enriched-nickel", amount = 8},
@@ -4267,7 +4267,7 @@ data:extend({
     mip_maps = 4,
     category = "acroproduct-conversion-with-acromatter",
     subgroup = "raw-resource",
-    enabled = true,
+    enabled = false,
     energy_required = 6,  -- time in seconds to make the item
     ingredients = {
       {type = "item", name = "sp-enriched-tinstone", amount = 6},
@@ -4291,7 +4291,7 @@ data:extend({
     mip_maps = 4,
     category = "acroproduct-conversion-with-acromatter",
     subgroup = "raw-resource",
-    enabled = true,
+    enabled = false,
     energy_required = 12,  -- time in seconds to make the item
     ingredients = {
       {type = "item", name = "sp-enriched-tungsten", amount = 8},
@@ -4310,9 +4310,9 @@ data:extend({
                                                     "__Spaghenutti__/graphics/icons/acrocrystal.png"),
     icon_size = 64,
     mip_maps = 4,
-    category = "acroproduct-conversion-with-acrocrystal",
+    category = "acroproduct-conversion-with-acromatter",
     subgroup = "raw-resource",
-    enabled = true,
+    enabled = false,
     energy_required = 7,  -- time in seconds to make the item
     ingredients = {
       {type = "item", name = "sp-enriched-zinc", amount = 8},

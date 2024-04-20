@@ -13,7 +13,7 @@ TODO:
     + Add recipes for enriched-resource and some processed-resource via acrovoid
     + Add recipes for enriched-resource via acromatter
   + Remove Acrospheres crushing recipes
-  - Add icons to acroproduct-conversion recipes
+  + Add icons to acroproduct-conversion recipes
   - Add techonolgies for acrospheres
   - Set enabled property of acrosphere recipes to false
   - Add rockets depending on the explorer

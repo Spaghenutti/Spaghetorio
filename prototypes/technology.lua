@@ -2695,6 +2695,113 @@ data:extend({
     },
     order = "a-h-a"
   },
+  {
+    type = "technology",
+    name = "sp-basic-acrosphere-conversion",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icons = util.combine_four_icons("__Spaghenutti__/graphics/hr-icons/blunagium-acrosphere-1.png", 256, nil,
+                                    "__Spaghenutti__/graphics/hr-icons/grobgnum-acrosphere-1.png", 256, nil,
+                                    "__Spaghenutti__/graphics/hr-icons/rukite-acrosphere-1.png", 256, nil,
+                                    "__Spaghenutti__/graphics/hr-icons/yemnuth-acrosphere-1.png", 256, nil),
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-blunagium-to-grobgnum-acrosphere"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-blunagium-to-rukite-acrosphere"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-grobgnum-to-yemnuth-acrosphere"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-rukite-to-yemnuth-acrosphere"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-yemnuth-to-blunagium-acrosphere"
+      },
+    },
+    prerequisites = {"logistic-science-pack"},
+    unit =
+    {
+      count = 100,
+      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-upgrade-acrosphere-conversion",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icons = util.combine_four_icons("__Spaghenutti__/graphics/hr-icons/blunagium-acrosphere-2.png", 256, nil,
+                                    "__Spaghenutti__/graphics/hr-icons/grobgnum-acrosphere-2.png", 256, nil,
+                                    "__Spaghenutti__/graphics/hr-icons/rukite-acrosphere-2.png", 256, nil,
+                                    "__Spaghenutti__/graphics/hr-icons/yemnuth-acrosphere-2.png", 256, nil),
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-upgrade-blunagium-acrosphere"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-upgrade-grobgnum-acrosphere"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-upgrade-rukite-acrosphere"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-upgrade-yemnuth-acrosphere"
+      }
+    },
+    prerequisites = {"sp-basic-acrosphere-conversion"},
+    unit =
+    {
+      count = 100,
+      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-acroproduct",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icons = util.combine_three_icons("__Spaghenutti__/graphics/hr-icons/acrocrystal.png", 256, nil,
+                                     "__Spaghenutti__/graphics/hr-icons/acromatter.png", 256, nil,
+                                     "__Spaghenutti__/graphics/hr-icons/acrovoid.png", 256, nil),
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-acrocrystal"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-acromatter"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-acrovoid"
+      },
+    },
+    prerequisites = {"sp-upgrade-acrosphere-conversion"},
+    unit =
+    {
+      count = 100,
+      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      time = 15
+    },
+    order = "a-h-a"
+  },
 })
 
 if not mods["Krastorio2"] then
