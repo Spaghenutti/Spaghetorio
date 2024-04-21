@@ -4429,8 +4429,31 @@ data:extend({
     },
     result = "green-wire"
   },
+  ------------------------------------------------------------------------------
+  -- Incomplete recipes
+  -- This recipes need to be updated after the statement 
+  -- "if not mods["Krastorio2"] then"
+  -- and in aai-and-krastorio-recipe.lua
+  ------------------------------------------------------------------------------
+  {
+    type = "recipe",
+    name = "sp-sodium-carbonate",  -- #ForRegEx# - recipe
+    category = "smelting",
+    enabled = false,
+    energy_required = 4,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-sodium", amount = 2},
+      -- {type = "item", name = "sp-coke", amount = 5}
+    },
+    results = {
+      {type = "item", name = "sp-sodium-carbonate", amount = 2}
+    }
+  },
 })
 
+--------------------------------------------------------------------------------
+-- Incompatible recipes
+--------------------------------------------------------------------------------
 if not mods["Krastorio2"] then
   data:extend({
     {
@@ -4470,20 +4493,6 @@ if not mods["Krastorio2"] then
       },
       results = {
         {type = "item", name = "sp-graphite", amount = 4}
-      }
-    },
-    {
-      type = "recipe",
-      name = "sp-sodium-carbonate",  -- #ForRegEx# - recipe
-      category = "smelting",
-      enabled = false,
-      energy_required = 4,  -- time in seconds to make the item
-      ingredients = {
-        {type = "item", name = "sp-sodium", amount = 2},
-        {type = "item", name = "sp-coke", amount = 5}
-      },
-      results = {
-        {type = "item", name = "sp-sodium-carbonate", amount = 2}
       }
     },
     {
@@ -5277,6 +5286,10 @@ if not mods["Krastorio2"] then
       }
     },
   })
+  ------------------------------------------------------------------------------
+  -- Update incompatible recipes
+  ------------------------------------------------------------------------------
+  table.insert(data.raw["recipe"]["sp-sodium-carbonate"].ingredients, {"sp-coke", 5})
 end
 
 -- Recipe changes for base factorio items

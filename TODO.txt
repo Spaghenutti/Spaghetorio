@@ -33,6 +33,7 @@ Low prio
   - Create file for acroproduct-conversion recipes
 
 Future changes
+  - Move incopatibel recipes outside of "not mods["Krastorio2"] then" statement and update them with correct values inside the statement
   - Replace rare-metals with yttrium, lanthanum, cerium, neodymium
 
 Notes:

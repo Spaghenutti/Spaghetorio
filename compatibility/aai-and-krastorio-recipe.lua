@@ -16,20 +16,6 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-sodium-carbonate",  -- #ForRegEx# - recipe
-    category = "smelting",
-    enabled = false,
-    energy_required = 4,  -- time in seconds to make the item
-    ingredients = {
-      {type = "item", name = "sp-sodium", amount = 2},
-      {type = "item", name = "coke", amount = 5}
-    },
-    results = {
-      {type = "item", name = "sp-sodium-carbonate", amount = 2}
-    }
-  },
-  {
-    type = "recipe",
     name = "sp-zirconia",  -- #ForRegEx# - recipe
     category = "smelting",
     enabled = false,
@@ -1516,6 +1502,7 @@ util.change_recipe_ingredients("kr-mineral-water-pumpjack",
   32)
 
 -- Changes to Spaghenutty
+table.insert(data.raw["recipe"]["sp-sodium-carbonate"].ingredients, {"coke", 5})
 util.change_recipe_ingredients("sp-titanium-nitride",
   {{type = "item", name = "sp-titanium-ingot", amount = 1}, {type = "fluid", name = "nitrogen", amount = 20}},  -- krastorio2 has nitrogen
   {{type = "item", name = "sp-titanium-ingot", amount = 2}, {type = "fluid", name = "nitrogen", amount = 40}},  -- krastorio2 has nitrogen
