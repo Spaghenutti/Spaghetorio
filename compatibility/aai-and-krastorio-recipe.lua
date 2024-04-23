@@ -1,6 +1,7 @@
 local util = require("data-util")
 
 data:extend({
+  -- Update crushing recipes
   {
     type = "recipe",
     name = "kr-vc-coal",  -- replaces sp-graphite recipe
@@ -14,502 +15,7 @@ data:extend({
       {type = "item", name = "sp-graphite", amount = 4}
     }
   },
-  {
-    type = "recipe",
-    name = "sp-zirconia",  -- #ForRegEx# - recipe
-    category = "smelting",
-    enabled = false,
-    energy_required = 3.2,  -- time in seconds to make the item
-    ingredients = {
-      {type = "item", name = "sp-zirconium-ore", amount = 1},
-      {type = "item", name = "sand", amount = 3}
-    },
-    results = {
-      {type = "item", name = "sp-zirconia", amount = 1}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-niobium-powder",  -- #ForRegEx# - recipe
-    category = "chemistry",
-    enabled = false,
-    energy_required = 4,  -- time in seconds to make the item
-    ingredients = {
-      {type = "item", name = "sand", amount = 8},
-      {type = "fluid", name = "water", amount = 50}
-    },
-    results = {
-      {type = "item", name = "sp-niobium-powder", amount = 2}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-aqueous-niobium-tantalum",  -- #ForRegEx# - recipe
-    icons = util.combine_two_icons("__Spaghenutti__/graphics/icons/aqueous-niobium.png", 64, nil,
-                                   "__Spaghenutti__/graphics/icons/aqueous-tantalum.png", 64, nil),
-    icon_size = 64,
-    mip_maps = 4,
-    category = "chemistry",
-    subgroup = "raw-resource",
-    enabled = false,
-    energy_required = 5,  -- time in seconds to make the item
-    ingredients = {
-      {type = "item", name = "sand", amount = 8},
-      {type = "item", name = "sp-fluorine", amount = 1},
-      {type = "fluid", name = "water", amount = 50}
-    },
-    results = {
-      {type = "fluid", name = "sp-aqueous-niobium", amount = 50},
-      {type = "fluid", name = "sp-aqueous-tantalum", amount = 6}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-gold",  -- #ForRegEx# - recipe
-    icon = "__Spaghenutti__/graphics/icons/gold.png",
-    icon_size = 64,
-    mip_maps = 4,
-    category = "chemistry",
-    subgroup = "raw-resource",
-    enabled = false,
-    energy_required = 3,  -- time in seconds to make the item
-    ingredients = {
-      {type = "item", name = "stone", amount = 1},
-      {type = "fluid", name = "water", amount = 40}
-    },
-    results = {
-      {type = "item", name = "sand", probability = 0.98, amount = 3},
-      {type = "item", name = "sp-gold", probability = 0.02, amount = 1}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-platinum-iridium",  -- #ForRegEx# - recipe
-    icons = util.combine_two_icons("__Spaghenutti__/graphics/icons/platinum.png", 64, nil,
-                                   "__Spaghenutti__/graphics/icons/iridium.png", 64, nil),
-    icon_size = 64,
-    mip_maps = 4,
-    category = "crafting",
-    subgroup = "raw-resource",
-    enabled = false,
-    energy_required = 4,  -- time in seconds to make the item
-    ingredients = {
-      {type = "item", name = "stone", amount = 1},
-    },
-    results = {
-      {type = "item", name = "sand", probability = 0.9807, amount = 3},
-      {type = "item", name = "sp-platinum", probability = 0.019, amount = 1},
-      {type = "item", name = "sp-iridium", probability = 0.0003, amount = 1}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-cobalt-sulfate",  -- #ForRegEx# - recipe
-    icon = "__Spaghenutti__/graphics/icons/cobalt-sulfate.png",
-    icon_size = 64,
-    mip_maps = 4,
-    category = "crafting",
-    subgroup = "raw-resource",
-    enabled = false,
-    energy_required = 0.4,  -- time in seconds to make the item
-    ingredients = {
-      {type = "item", name = "sp-nickel-ore", amount = 1}
-    },
-    results = {
-      {type = "item", name = "sp-cobalt-sulfate", probability = 0.03, amount = 1},
-      {type = "item", name = "sand", probability = 0.97, amount = 1}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-landfill-from-sand",
-    icons = util.overlay_small_icon("__base__/graphics/icons/landfill.png", 64,
-                                    "__Krastorio2Assets__/icons/items-with-variations/sand/sand.png", 64),
-    energy_required = 1,
-    enabled = false,
-    category = "crafting",
-    ingredients =
-    {
-      {"stone", 8},
-      {"sand", 30}
-    },
-    result = "landfill",
-    result_count = 1
-  },
-  {
-    type = "recipe",
-    name = "sp-stone-brick-from-sand",
-    icons = util.overlay_small_icon("__base__/graphics/icons/stone-brick.png", 64,
-                                    "__Krastorio2Assets__/icons/items-with-variations/sand/sand.png", 64),
-    category = "intermediate-smelting",
-    energy_required = 2,
-    enabled = false,
-    hide_from_player_crafting = true,
-    ingredients = {
-      {"sand", 8}
-    },
-    result = "stone-brick"
-  },
-  {
-    type = "recipe",
-    name = "sp-mirror",  -- #ForRegEx# - recipe
-    category = "crafting-with-fluid",
-    enabled = false,
-    energy_required = 2.8,  -- time in seconds to make the item
-    ingredients = {
-      {type = "item", name = "glass", amount = 2},
-      {type = "item", name = "sp-aluminum-sheet", amount = 1},
-      {type = "item", name = "sp-sodium-carbonate", amount = 3}
-    },
-    results = {
-      {type = "item", name = "sp-mirror", amount = 1}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-titanium-nitride",  -- #ForRegEx# - recipe
-    category = "chemistry",
-    enabled = false,
-    energy_required = 6,  -- time in seconds to make the item
-    ingredients = {
-      {type = "item", name = "sp-titanium-ingot", amount = 2},
-      {type = "fluid", name = "nitrogen", amount = 40},
-    },
-    results = {
-      {type = "item", name = "sp-titanium-nitride", amount = 2}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-kevlar",  -- #ForRegEx# - recipe
-    category = "crafting-with-fluid",
-    enabled = false,
-    energy_required = 4.8,  -- time in seconds to make the item
-    ingredients = {
-      {type = "item", name = "sp-graphite", amount = 4},
-      {type = "fluid", name = "nitrogen", amount = 15},
-    },
-    results = {
-      {type = "item", name = "sp-kevlar", amount = 2}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-uranium-fuel-rod",  -- #ForRegEx# - recipe
-    category = "crafting-with-fluid",
-    enabled = false,
-    energy_required = 4,  -- time in seconds to make the item
-    ingredients = {
-      {type = "item", name = "uranium-235", amount = 2},
-      {type = "item", name = "sp-graphite", amount = 2},
-      {type = "fluid", name = "nitrogen", amount = 100},
-    },
-    results = {
-      {type = "item", name = "sp-uranium-fuel-rod", amount = 1}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-epoxy",  -- #ForRegEx# - recipe
-    category = "chemistry",
-    enabled = false,
-    energy_required = 4,  -- time in seconds to make the item
-    ingredients = {
-      {type = "item", name = "sp-graphite", amount = 3},
-      {type = "fluid", name = "oxygen", amount = 35},
-      {type = "fluid", name = "hydrogen", amount = 15},
-    },
-    results = {
-      {type = "fluid", name = "sp-epoxy", amount = 20}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-cubit",  -- #ForRegEx# - recipe
-    category = "crafting-with-fluid",
-    enabled = false,
-    energy_required = 0.4,  -- time in seconds to make the item
-    ingredients = {
-      {type = "item", name = "sp-duralumin", amount = 1},
-      {type = "fluid", name = "hydrogen", amount = 1},
-    },
-    results = {
-      {type = "item", name = "sp-cubit", amount = 1}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-superconductor",  -- #ForRegEx# - recipe
-    category = "crafting-with-fluid",
-    enabled = false,
-    energy_required = 5,  -- time in seconds to make the item
-    ingredients = {
-      {type = "item", name = "sp-lanthanum", amount = 1},
-      {type = "item", name = "iron-plate", amount = 2},
-      {type = "fluid", name = "hydrogen", amount = 100}
-    },
-    results = {
-      {type = "item", name = "sp-superconductor", amount = 1}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-sodium-and-chlorine",  -- #ForRegEx# - recipe
-    icons = util.combine_two_icons("__Spaghenutti__/graphics/icons/sodium.png", 64, nil,
-                                   "__Krastorio2Assets__/icons/fluids/chlorine.png", 64, nil),
-    icon_size = 64,
-    mip_maps = 4,
-    category = "chemistry",
-    subgroup = "raw-resource",
-    enabled = false,
-    energy_required = 5,  -- time in seconds to make the item
-    ingredients = {
-      {type = "item", name = "sp-salt", amount = 2},
-    },
-    results = {
-      {type = "item", name = "sp-sodium", amount = 2},
-      {type = "fluid", name = "chlorine", amount = 3}
-    },
-    crafting_machine_tint = {
-      primary = {r = 1.000, g = 1.000, b = 1.000, a = 1.000}, -- #fefeffff
-      secondary = {r = 0.771, g = 0.771, b = 0.771, a = 1.000}, -- #c4c4c4ff
-      tertiary = {r = 0.768, g = 0.665, b = 0.762, a = 1.000}, -- #c3a9c2ff
-      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000}, -- #000000ff
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-magnesium-slab",  -- #ForRegEx# - recipe
-    icon = "__Spaghenutti__/graphics/icons/magnesium-slab.png",
-    icon_size = 64,
-    mip_maps = 4,
-    category = "chemistry",
-    subgroup = "raw-resource",
-    enabled = false,
-    energy_required = 3.2,  -- time in seconds to make the item
-    ingredients = {
-      {type = "item", name = "sp-magnesium-chloride", amount = 3}
-    },
-    results = {
-      {type = "item", name = "sp-magnesium-slab", amount = 2},
-      {type = "fluid", name = "chlorine", amount = 1}
-    },
-    crafting_machine_tint = {
-      primary = {r = 1.000, g = 1.000, b = 1.000, a = 1.000}, -- #fefeffff
-      secondary = {r = 0.771, g = 0.771, b = 0.771, a = 1.000}, -- #c4c4c4ff
-      tertiary = {r = 0.768, g = 0.665, b = 0.762, a = 1.000}, -- #c3a9c2ff
-      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000}, -- #000000ff
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-bleach",  -- #ForRegEx# - recipe
-    category = "chemistry",
-    enabled = false,
-    energy_required = 4,  -- time in seconds to make the item
-    ingredients = {
-      {type = "fluid", name = "oxygen", amount = 100},
-      {type = "fluid", name = "chlorine", amount = 50}
-    },
-    results = {
-      {type = "fluid", name = "sp-bleach", amount = 20}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-used-up-fuel-rod-reprocessing",  -- #ForRegEx# - recipe
-    icons = util.combine_two_icons("__Spaghenutti__/graphics/icons/used-up-fuel-rod.png", 64, nil,
-                                   "__base__/graphics/icons/uranium-238.png", 64, nil),
-    icon_size = 256,
-    scale = 0.25,
-    mip_maps = 4,
-    category = "crushing",
-    subgroup = "raw-resource",
-    enabled = false,
-    energy_required = 60,  -- time in seconds to make the item
-    ingredients = {
-      {type = "item", name = "sp-used-up-fuel-rod", amount = 5},
-      {type = "fluid", name = "sulfuric-acid", amount = 40}
-    },
-    results = {
-      {type = "item", name = "uranium-238", amount = 3},
-      {type = "item", name = "sp-nuclear-waste", amount = 1},
-      {type = "fluid", name = "heavy-water", amount = 10}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-advanced-used-up-fuel-rod-reprocessing",  -- #ForRegEx# - recipe
-    icons = util.combine_two_icons("__Spaghenutti__/graphics/icons/used-up-fuel-rod.png", 64, nil,
-                                   "__Spaghenutti__/graphics/icons/plutonium-239-1.png", 64, nil),
-    icon_size = 256,
-    scale = 0.25,
-    mip_maps = 4,
-    category = "crushing",
-    subgroup = "raw-resource",
-    enabled = false,
-    energy_required = 80,  -- time in seconds to make the item
-    ingredients = {
-      {type = "item", name = "sp-used-up-fuel-rod", amount = 6},
-      {type = "fluid", name = "chlorine", amount = 60}
-    },
-    results = {
-      {type = "item", name = "uranium-238", probability = 0.37, amount = 2},
-      {type = "item", name = "uranium-235", probability = 0.03, amount = 1},
-      {type = "item", name = "sp-plutonium-239", probability = 0.6, amount = 1},
-      {type = "item", name = "sp-nuclear-waste", amount = 1},
-      {type = "fluid", name = "heavy-water", amount = 10}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-lens",  -- #ForRegEx# - recipe
-    category = "crafting-with-fluid",
-    enabled = false,
-    energy_required = 2,  -- time in seconds to make the item
-    ingredients = {
-      {type = "item", name = "sp-silica", amount = 1},
-      {type = "fluid", name = "oxygen", amount = 40}
-    },
-    results = {
-      {type = "item", name = "sp-lens", amount = 1}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-composites",  -- #ForRegEx# - recipe
-    category = "crafting-with-fluid",
-    enabled = false,
-    energy_required = 3.2,  -- time in seconds to make the item
-    ingredients = {
-      {type = "item", name = "sp-graphite", amount = 3},
-      {type = "fluid", name = "oxygen", amount = 25},
-    },
-    results = {
-      {type = "item", name = "sp-composites", amount = 2}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-high-purity-silicon",  -- #ForRegEx# - recipe
-    icon = "__Spaghenutti__/graphics/icons/high-purity-silicon.png",
-    icon_size = 64,
-    mip_maps = 4,
-    category = "smelting",
-    subgroup = "advanced-raw-material",
-    enabled = false,
-    energy_required = 8,  -- time in seconds to make the item
-    ingredients = {
-      {type = "item", name = "silicon", amount = 1},
-    },
-    results = {
-      {type = "item", name = "sp-high-purity-silicon", probability = 0.3, amount = 1},
-      {type = "item", name = "silicon", probability = 0.7, amount = 1}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-diode",  -- #ForRegEx# - recipe
-    category = "crafting",
-    enabled = false,
-    energy_required = 2,  -- time in seconds to make the item
-    ingredients = {
-      {type = "item", name = "silicon", amount = 1},
-      {type = "item", name = "sp-phosphorus", amount = 1}
-    },
-    results = {
-      {type = "item", name = "sp-diode", amount = 2}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-transistor",  -- #ForRegEx# - recipe
-    category = "crafting",
-    enabled = false,
-    energy_required = 2.8,  -- time in seconds to make the item
-    ingredients = {
-      {type = "item", name = "silicon", amount = 2},
-      {type = "item", name = "sp-phosphorus", amount = 1}
-    },
-    results = {
-      {type = "item", name = "sp-transistor", amount = 2}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-light-emitting-diode",  -- #ForRegEx# - recipe
-    category = "crafting",
-    enabled = false,
-    energy_required = 2.8,  -- time in seconds to make the item
-    ingredients = {
-      {type = "item", name = "silicon", amount = 2},
-      {type = "item", name = "sp-phosphorus", amount = 1},
-      {type = "item", name = "sp-lanthanum", amount = 1}
-    },
-    results = {
-      {type = "item", name = "sp-light-emitting-diode", amount = 3}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-integrated-circuit",  -- #ForRegEx# - recipe
-    category = "crafting",
-    enabled = false,
-    energy_required = 3.2,  -- time in seconds to make the item
-    ingredients = {
-      {type = "item", name = "plastic-bar", amount = 1},
-      {type = "item", name = "silicon", amount = 2},
-      {type = "item", name = "copper-plate", amount = 1}
-    },
-    results = {
-      {type = "item", name = "sp-integrated-circuit", amount = 1}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-integrated-circuit",  -- #ForRegEx# - recipe
-    category = "crafting",
-    enabled = false,
-    energy_required = 3.6,  -- time in seconds to make the item
-    ingredients = {
-      {type = "item", name = "plastic-bar", amount = 1},
-      {type = "item", name = "silicon", amount = 2},
-      {type = "item", name = "copper-cable", amount = 1}
-    },
-    results = {
-      {type = "item", name = "sp-integrated-circuit", amount = 2}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-laser",  -- #ForRegEx# - recipe
-    category = "crafting-with-fluid",
-    enabled = false,
-    energy_required = 4,  -- time in seconds to make the item
-    ingredients = {
-      {type = "item", name = "plastic-bar", amount = 1},
-      {type = "item", name = "silicon", amount = 1},
-      {type = "item", name = "sp-aluminum-sheet", amount = 1},
-      {type = "item", name = "sp-silver", amount = 1},
-      {type = "fluid", name = "sp-helium", amount = 10}
-    },
-    results = {
-      {type = "item", name = "sp-laser", amount = 1}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-silica",  -- #ForRegEx# - recipe
-    category = "smelting",
-    enabled = false,
-    energy_required = 3.2,  -- time in seconds to make the item
-    ingredients = {
-      {type = "item", name = "quartz", amount = 1},
-    },
-    results = {
-      {type = "item", name = "sp-silica", amount = 1}
-    }
-  },
+  -- New aai / krastorio recipes
   {
     type = "recipe",
     name = "sp-rare-metal-processing",  -- #ForRegEx# - recipe
@@ -536,75 +42,6 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-plutonium-239-processing",  -- #ForRegEx# - recipe
-    icon = "__Spaghenutti__/graphics/icons/plutonium-239-1.png",
-    icon_size = 64,
-    mip_maps = 4,
-    category = "high-energy-physics",
-    subgroup = "raw-resource",
-    enabled = false,
-    energy_required = 3.2,  -- time in seconds to make the item
-    ingredients = {
-      {type = "item", name = "lithium", amount = 1},
-      {type = "item", name = "uranium-238", amount = 1}
-    },
-    results = {
-      {type = "item", name = "uranium-238", probability = 0.84, amount = 1},
-      {type = "item", name = "sp-plutonium-239", probability = 0.15, amount = 1},
-      {type = "item", name = "sp-plutonium-240", probability = 0.01, amount = 1}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-plutonium-240-processing",  -- #ForRegEx# - recipe
-    icon = "__Spaghenutti__/graphics/icons/plutonium-240-1.png",
-    icon_size = 64,
-    mip_maps = 4,
-    category = "high-energy-physics",
-    subgroup = "raw-resource",
-    enabled = false,
-    energy_required = 4,  -- time in seconds to make the item
-    ingredients = {
-      {type = "item", name = "lithium", amount = 1},
-      {type = "item", name = "sp-plutonium-239", amount = 1}
-    },
-    results = {
-      {type = "item", name = "uranium-238", probability = 0.2, amount = 1},
-      {type = "item", name = "sp-plutonium-239", probability = 0.72, amount = 1},
-      {type = "item", name = "sp-plutonium-240", probability = 0.08, amount = 1}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-urea",  -- #ForRegEx# - recipe
-    category = "chemistry",
-    enabled = false,
-    energy_required = 3.2,  -- time in seconds to make the item
-    ingredients = {
-      {type = "item", name = "sulfur", amount = 1},
-      {type = "fluid", name = "ammonia", amount = 50},
-    },
-    results = {
-      {type = "item", name = "sp-urea", amount = 1}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-carbon-fiber",  -- #ForRegEx# - recipe
-    category = "chemistry",
-    enabled = false,
-    energy_required = 3.2,  -- time in seconds to make the item
-    ingredients = {
-      {type = "item", name = "plastic-bar", amount = 3},
-      {type = "item", name = "sp-graphite", amount = 1},
-      {type = "fluid", name = "nitric-acid", amount = 50},
-    },
-    results = {
-      {type = "item", name = "sp-carbon-fiber", amount = 1}
-    }
-  },
-  {
-    type = "recipe",
     name = "sp-deuterium",  -- #ForRegEx# - recipe
     icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
     icon_size = 64,
@@ -619,54 +56,6 @@ data:extend({
     results = {
       {type = "fluid", name = "oxygen", amount = 50},
       {type = "fluid", name = "sp-deuterium", amount = 50}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-ethylene-dichloride",  -- #ForRegEx# - recipe
-    category = "chemistry",
-    enabled = false,
-    energy_required = 1.6,  -- time in seconds to make the item
-    ingredients = {
-      {type = "fluid", name = "sp-ethylene", amount = 60},
-      {type = "fluid", name = "chlorine", amount = 60},
-    },
-    results = {
-      {type = "fluid", name = "sp-ethylene-dichloride", amount = 60},
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-sodium-hydroxide-from-salt",  -- #ForRegEx# - recipe
-    icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
-    icon_size = 64,
-    scale = 0.25,
-    category = "electrolysis",
-    subgroup = "raw-resource",
-    enabled = false,
-    energy_required = 1.6,  -- time in seconds to make the item
-    ingredients = {
-      {type = "item", name = "sp-salt", amount = 2},
-      {type = "fluid", name = "water", amount = 60},
-    },
-    results = {
-      {type = "fluid", name = "sp-sodium-hydroxide", amount = 50},
-      {type = "fluid", name = "chlorine", amount = 50},
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-sodium-hydroxide-from-sodium",  -- #ForRegEx# - recipe
-    category = "chemistry",
-    enabled = false,
-    energy_required = 16,  -- time in seconds to make the item
-    ingredients = {
-      {type = "item", name = "sp-sodium", amount = 5},
-      {type = "fluid", name = "hydrogen", amount = 100},
-      {type = "fluid", name = "oxygen", amount = 100},
-    },
-    results = {
-      {type = "fluid", name = "sp-sodium-hydroxide", amount = 20},
     }
   },
   {
@@ -1501,18 +890,71 @@ util.change_recipe_ingredients("kr-mineral-water-pumpjack",
   16,
   32)
 
--- Changes to Spaghenutty
-table.insert(data.raw["recipe"]["sp-sodium-carbonate"].ingredients, {"coke", 5})
-util.change_recipe_ingredients("sp-titanium-nitride",
-  {{type = "item", name = "sp-titanium-ingot", amount = 1}, {type = "fluid", name = "nitrogen", amount = 20}},  -- krastorio2 has nitrogen
-  {{type = "item", name = "sp-titanium-ingot", amount = 2}, {type = "fluid", name = "nitrogen", amount = 40}},  -- krastorio2 has nitrogen
-  3,
-  4)
-util.change_recipe_ingredients("sp-train-boige",
-  {{"iron-beam", 4}, {"sp-steel-wheel", 4}, {"sp-bolts", 8}, {"sp-spring", 12}},
-  {{"iron-beam", 8}, {"sp-steel-wheel", 8}, {"sp-bolts", 16}, {"sp-spring", 24}},
-  3,
+
+------------------------------------------------------------------------------
+-- MARK: Changes to Spaghenutty
+------------------------------------------------------------------------------
+-- Change recipes
+util.change_recipe_ingredients("sp-methyl-tert-butyl-ether",
+  {{type = "fluid", name = "biomethanol", amount = 50}, {type = "fluid", name = "sp-propane", amount = 50}},
+  {{type = "fluid", name = "biomethanol", amount = 80}, {type = "fluid", name = "sp-propane", amount = 80}},
+  3.6,
   6)
+
+-- Add missing ingredients
+table.insert(data.raw.recipe["sp-sodium-carbonate"].ingredients, {type = "item", name = "coke", amount = 5})
+table.insert(data.raw.recipe["sp-graphite"].ingredients, {type = "item", name = "coke", amount = 3})
+table.insert(data.raw.recipe["sp-zirconia"].ingredients, {type = "item", name = "sand", amount = 3})
+table.insert(data.raw.recipe["sp-niobium-powder"].ingredients, {type = "item", name = "sand", amount = 8})
+table.insert(data.raw.recipe["sp-aqueous-niobium-tantalum"].ingredients, {type = "item", name = "sand", amount = 8})
+table.insert(data.raw.recipe["sp-landfill-from-sand"].ingredients, {type = "item", name = "sand", amount = 30})
+table.insert(data.raw.recipe["sp-stone-brick-from-sand"].ingredients, {type = "item", name = "sand", amount = 8})
+table.insert(data.raw.recipe["sp-mirror"].ingredients, {type = "item", name = "glass", amount = 2})
+table.insert(data.raw.recipe["sp-titanium-nitride"].ingredients, {type = "fluid", name = "nitrogen", amount = 40})
+table.insert(data.raw.recipe["sp-kevlar"].ingredients, {type = "fluid", name = "nitrogen", amount = 15})
+table.insert(data.raw.recipe["sp-uranium-fuel-rod"].ingredients, {type = "fluid", name = "nitrogen", amount = 100})
+table.insert(data.raw.recipe["sp-epoxy"].ingredients, {type = "fluid", name = "oxygen", amount = 35})
+table.insert(data.raw.recipe["sp-epoxy"].ingredients, {type = "fluid", name = "hydrogen", amount = 15})
+table.insert(data.raw.recipe["sp-cobit"].ingredients, {type = "fluid", name = "hydrogen", amount = 1})
+table.insert(data.raw.recipe["sp-superconductor"].ingredients, {type = "fluid", name = "hydrogen", amount = 100})
+table.insert(data.raw.recipe["sp-bleach"].ingredients, {type = "fluid", name = "oxygen", amount = 100})
+table.insert(data.raw.recipe["sp-bleach"].ingredients, {type = "fluid", name = "chlorine", amount = 50})
+table.insert(data.raw.recipe["sp-lens"].ingredients, {type = "fluid", name = "oxygen", amount = 40})
+table.insert(data.raw.recipe["sp-composites"].ingredients, {type = "fluid", name = "oxygen", amount = 25})
+table.insert(data.raw.recipe["sp-high-purity-silicon"].ingredients, {type = "item", name = "silicon", amount = 1})
+table.insert(data.raw.recipe["sp-diode"].ingredients, {type = "item", name = "silicon", amount = 1})
+table.insert(data.raw.recipe["sp-transistor"].ingredients, {type = "item", name = "silicon", amount = 2})
+table.insert(data.raw.recipe["sp-light-emitting-diode"].ingredients, {type = "item", name = "silicon", amount = 2})
+table.insert(data.raw.recipe["sp-integrated-circuit"].ingredients, {type = "item", name = "silicon", amount = 2})
+table.insert(data.raw.recipe["sp-laser"].ingredients, {type = "item", name = "silicon", amount = 1})
+table.insert(data.raw.recipe["sp-silica"].ingredients, {type = "item", name = "quartz", amount = 1})
+table.insert(data.raw.recipe["sp-plutonium-239-processing"].ingredients, {type = "item", name = "lithium", amount = 1})
+table.insert(data.raw.recipe["sp-plutonium-240-processing"].ingredients, {type = "item", name = "lithium", amount = 1})
+table.insert(data.raw.recipe["sp-advanced-used-up-fuel-rod-reprocessing"].ingredients, {type = "fluid", name = "chlorine", amount = 60})
+table.insert(data.raw.recipe["sp-urea"].ingredients, {type = "fluid", name = "ammonia", amount = 50})
+table.insert(data.raw.recipe["sp-carbon-fiber"].ingredients, {type = "fluid", name = "nitric-acid", amount = 50})
+table.insert(data.raw.recipe["sp-ethylene-dichloride"].ingredients, {type = "fluid", name = "chlorine", amount = 60})
+table.insert(data.raw.recipe["sp-sodium-hydroxide-from-sodium"].ingredients, {type = "fluid", name = "hydrogen", amount = 100})
+table.insert(data.raw.recipe["sp-sodium-hydroxide-from-sodium"].ingredients, {type = "fluid", name = "oxygen", amount = 100})
+table.insert(data.raw.recipe["sp-vinyl-chloride"].ingredients, {type = "fluid", name = "chlorine", amount = 30})
+table.insert(data.raw.recipe["sp-electrolyte"].ingredients, {type = "item", name = "lithium", amount = 3})
+table.insert(data.raw.recipe["sp-electrolyte"].ingredients, {type = "fluid", name = "chlorine", amount = 10})
+table.insert(data.raw.recipe["sp-helium"].ingredients, {type = "fluid", name = "hydrogen", amount = 2})
+table.insert(data.raw.recipe["sp-helium-3-from-helium-and-hydrogen"].ingredients, {type = "fluid", name = "hydrogen", amount = 10})
+table.insert(data.raw.recipe["sp-gravitonium"].ingredients, {type = "item", name = "tritium", amount = 3})
+table.insert(data.raw.recipe["sp-vacuum-tube"].ingredients, {type = "fluid", name = "hydrogen", amount = 5})
+table.insert(data.raw.recipe["sp-liquid-nitrogen"].ingredients, {type = "fluid", name = "nitrogen", amount = 5})
+
+-- Add missing results
+table.insert(data.raw.recipe["sp-gold"].results, {type = "item", name = "sand", probability = 0.98, amount = 3})
+table.insert(data.raw.recipe["sp-platinum-iridium"].results, {type = "item", name = "sand", probability = 0.9807, amount = 3})
+table.insert(data.raw.recipe["sp-sodium-and-chlorine"].results, {type = "fluid", name = "chlorine", amount = 3})
+table.insert(data.raw.recipe["sp-high-purity-silicon"].results, {type = "item", name = "silicon", probability = 0.7, amount = 1})
+table.insert(data.raw.recipe["sp-used-up-fuel-rod-reprocessing"].results, {type = "fluid", name = "deuterium", amount = 10})
+table.insert(data.raw.recipe["sp-advanced-used-up-fuel-rod-reprocessing"].results, {type = "fluid", name = "heavy-water", amount = 10})
+table.insert(data.raw.recipe["sp-magnesium-slab"].results, {type = "fluid", name = "chloride", amount = 10})
+table.insert(data.raw.recipe["sp-sodium-hydroxide-from-salt"].results, {type = "fluid", name = "chlorine", amount = 50})
+table.insert(data.raw.recipe["sp-tellurium-hydroxide"].results, {type = "item", name = "sand", probability = 0.92, amount = 3})
 
 -- Remove crushing recipes
 data.raw.recipe["kr-vc-sp-nuclear-waste"] = nil
