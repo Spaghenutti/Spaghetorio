@@ -1,7 +1,7 @@
 data:extend({
   ------------------------------------------------------------------------------
-  -- base-products --
-  -- Subgroup raw-resource --
+  -- MARK: base-products
+  -- MARK: Subgroup raw-resource
   ------------------------------------------------------------------------------
   {
     type = "item",
@@ -220,7 +220,7 @@ data:extend({
     stack_size = 100
   },
   ------------------------------------------------------------------------------
-  -- Subgroup enriched-resource --
+  -- MARK: Subgroup enriched-resource
   ------------------------------------------------------------------------------
   {
     type = "item",
@@ -351,7 +351,7 @@ data:extend({
     stack_size = 200
   },
   ------------------------------------------------------------------------------
-  -- Subgroup processed-resource --
+  -- MARK: Subgroup processed-resource
   ------------------------------------------------------------------------------
   {
     type = "item",
@@ -753,7 +753,7 @@ data:extend({
     stack_size = 200
   },
   ------------------------------------------------------------------------------
-  -- Subgroup raw-material --
+  -- MARK: Subgroup raw-material
   ------------------------------------------------------------------------------
   {
     type = "item",
@@ -916,7 +916,7 @@ data:extend({
     stack_size = 100
   },
   ------------------------------------------------------------------------------
-  -- subgroup alloy --
+  -- MARK: Subgroup alloy --
   ------------------------------------------------------------------------------
   {
     type = "item",
@@ -1039,7 +1039,7 @@ data:extend({
     stack_size = 100
   },
   ------------------------------------------------------------------------------
-  -- Subgroup advanced-raw-material --
+  -- MARK: Subgroup advanced-raw-material
   ------------------------------------------------------------------------------
   {
     type = "item",
@@ -1142,7 +1142,7 @@ data:extend({
     stack_size = 100
   },
   ------------------------------------------------------------------------------
-  -- Subgroup alien-material --
+  -- MARK: Subgroup alien-material
   ------------------------------------------------------------------------------
   {
     type = "item",
@@ -1315,7 +1315,7 @@ data:extend({
     stack_size = 100
   },
   ------------------------------------------------------------------------------
-  -- Subgroup acroproduct --
+  -- MARK: Subgroup acroproduct
   ------------------------------------------------------------------------------
   {
     type = "item",
@@ -1345,8 +1345,8 @@ data:extend({
     stack_size = 10
   },
   ------------------------------------------------------------------------------
-  -- Group intermediate-products --
-  -- Subgroup mechanical-component --
+  -- MARK: Group intermediate-products
+  -- MARK: Subgroup mechanical-component
   ------------------------------------------------------------------------------
   {
     type = "item",
@@ -1562,7 +1562,7 @@ data:extend({
     stack_size = 100
   },
   ------------------------------------------------------------------------------
-  -- Subgroup electrical-optical-component --
+  -- MARK: Subgroup electrical-optical-component
   ------------------------------------------------------------------------------
   {
     type = "item",
@@ -1815,7 +1815,7 @@ data:extend({
     stack_size = 100
   },
   ------------------------------------------------------------------------------
-  -- Subgroup intermediate-products --
+  -- MARK: Subgroup intermediate-products
   ------------------------------------------------------------------------------
   {
     type = "item",
@@ -1972,7 +1972,7 @@ data:extend({
     stack_size = 100
   },
   ------------------------------------------------------------------------------
-  -- Subgroup advanced-intermediate-product --
+  -- MARK: Subgroup advanced-intermediate-product
   ------------------------------------------------------------------------------
   {
     type = "item",
@@ -2146,7 +2146,7 @@ data:extend({
     stack_size = 50
   },
   ------------------------------------------------------------------------------
-  -- Subgroup chemical-product --
+  -- MARK: Subgroup chemical-product
   ------------------------------------------------------------------------------
   {
     type = "item",
@@ -2197,7 +2197,7 @@ data:extend({
     stack_size = 100
   },
   ------------------------------------------------------------------------------
-  -- Subgroup alien-product --
+  -- MARK: Subgroup alien-product
   ------------------------------------------------------------------------------
   {
     type = "item",
@@ -2310,7 +2310,7 @@ data:extend({
     stack_size = 1
   },
   ------------------------------------------------------------------------------
-  -- Subgroup fuel-processing --
+  -- MARK: Subgroup fuel-processing
   ------------------------------------------------------------------------------
   {
     type = "item",
@@ -2364,13 +2364,13 @@ data:extend({
     stack_size = 50
   },
   ------------------------------------------------------------------------------
-  -- Group logistics --
-  -- Subgroup logistics --
+  -- MARK: Group logistics
+  -- MARK: Subgroup logistics
   ------------------------------------------------------------------------------
 
   ------------------------------------------------------------------------------
-  -- Group prduction --
-  -- Subgroup space-related --
+  -- MARK: Group prduction
+  -- MARK: Subgroup space-related
   ------------------------------------------------------------------------------
   {
     type = "item",
@@ -2409,8 +2409,8 @@ data:extend({
     stack_size = 50
   },
   ------------------------------------------------------------------------------
-  -- Group science --
-    -- Subgroup basic-science --
+  -- MARK: Group science --
+  -- MARK: Subgroup basic-science
   ------------------------------------------------------------------------------
   {
     type = "tool",
@@ -2452,7 +2452,7 @@ data:extend({
     durability_description_value = "description.science-pack-remaining-amount-value"
   },
   ------------------------------------------------------------------------------
-  -- Subgroup intermediate-science --
+  -- MARK: Subgroup intermediate-science
   ------------------------------------------------------------------------------
   {
     type = "tool",
@@ -2572,7 +2572,7 @@ data:extend({
     durability_description_value = "description.science-pack-remaining-amount-value"
   },
   ------------------------------------------------------------------------------
-  -- Subgroup advanced-science --
+  -- MARK: Subgroup advanced-science
   ------------------------------------------------------------------------------
   {
     type = "tool",
@@ -2718,7 +2718,7 @@ data:extend({
     durability_description_value = "description.science-pack-remaining-amount-value"
   },
   ------------------------------------------------------------------------------
-  -- Subgroup sp-acrosphere --
+  -- MARK: Subgroup sp-acrosphere
   ------------------------------------------------------------------------------
   {
     type = "item",
@@ -2793,7 +2793,7 @@ data:extend({
     stack_size = 1
   },
   ------------------------------------------------------------------------------
-  -- Subgroup sp-acroproduct --
+  -- MARK: Subgroup sp-acroproduct
   ------------------------------------------------------------------------------
   {
     type = "item",

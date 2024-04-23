@@ -15,7 +15,11 @@ TODO:
   + Remove Acrospheres crushing recipes
   + Add icons to acroproduct-conversion recipes
   - Add techonolgies for acrospheres
-  - Set enabled property of acrosphere recipes to false
+  + Set enabled property of acrosphere recipes to false
+  - Add missing results for acrocrystal recipes
+  - Add missing results for acrovoid recipes
+  - Add missing results for acromatter recipes
+  - do TODO in recipes: "add uses to"
   - Add rockets depending on the explorer
   - Change labs in which tech cards are used
   - Change Factorio recipes
