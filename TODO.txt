@@ -16,9 +16,9 @@ TODO:
   + Add icons to acroproduct-conversion recipes
   - Add techonolgies for acrospheres
   + Set enabled property of acrosphere recipes to false
-  - Add missing results for acrocrystal recipes
-  - Add missing results for acrovoid recipes
-  - Add missing results for acromatter recipes
+  + Add missing results for acrocrystal recipes
+  + Add missing results for acrovoid recipes
+  + Add missing results for acromatter recipes
   - do TODO in recipes: "add uses to"
   - Add rockets depending on the explorer
   - Change labs in which tech cards are used
@@ -35,6 +35,8 @@ TODO:
 Low prio
   - Create function to generate acroproduct-conversion recipes
   - Create file for acroproduct-conversion recipes
+  - Add cobalt. Ctrl+F "-- add cobalt to items"
+  - Find different application for acromatter when playing without krastorio (other uses for acromatter than enriched recipes)
 
 Future changes
   - Move incopatibel recipes outside of "not mods["Krastorio2"] then" statement and update them with correct values inside the statement

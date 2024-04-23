@@ -60,6 +60,61 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "sp-wood-from-urea",  -- #ForRegEx# - recipe
+    icons = util.overlay_small_icon("__Krastorio2Assets__/icons/recipes/wood-plus.png", 64,
+                                    "__Spaghenutti__/graphics/icons/urea.png", 64),
+    category = "smelting",
+    enabled = false,
+    energy_required = 75,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-urea", amount = 1},
+      {type = "item", name = "landfill", amount = 3},
+      {type = "fluid", name = "water", amount = 300}
+    },
+    results = {
+      {type = "item", name = "wood", amount = 2}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-xenon-from-atmosphere",  -- #ForRegEx# - recipe
+    category = "atmosphere-condensation",
+    enabled = false,
+    energy_required = 10,  -- time in seconds to make the item
+    ingredients = {},
+    results = {
+      {type = "fluid", name = "sp-xenon", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-helium-from-atmosphere",  -- #ForRegEx# - recipe
+    category = "atmosphere-condensation",
+    enabled = false,
+    energy_required = 1,  -- time in seconds to make the item
+    ingredients = {},
+    results = {
+      {type = "fluid", name = "sp-helium", amount = 1}
+    }
+  },
+  -- MARK: Alternative Spaghenutty recipes with existing result product from aai / krastorio mod
+  {
+    type = "recipe",
+    name = "sp-glass-from-calcium",  -- #ForRegEx# - recipe
+    category = "smelting",
+    enabled = false,
+    energy_required = 2.4,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sand", amount = 3},
+      {type = "item", name = "sp-calcium", amount = 1}
+    },
+    results = {
+      {type = "item", name = "glass", amount = 1}
+    }
+  },
+  -- MARK: enriched resource recipes
+  {
+    type = "recipe",
     name = "sp-enriched-aluminum",  -- #ForRegEx# - recipe
     icon = "__Spaghenutti__/graphics/icons/enriched-aluminum-1.png",
     icon_size = 64,
@@ -342,61 +397,283 @@ data:extend({
       {type = "item", name = "sp-zinc-plate", amount = 2}
     }
   },
+  -- MARK: Acrosphere product recipes for basic resources from acromatter
   {
     type = "recipe",
-    name = "sp-wood-from-urea",  -- #ForRegEx# - recipe
-    icons = util.overlay_small_icon("__Krastorio2Assets__/icons/recipes/wood-plus.png", 64,
-                                    "__Spaghenutti__/graphics/icons/urea.png", 64),
-    category = "smelting",
+    name = "sp-enriched-aluminum-from-acromatter",  -- #ForRegEx# - recipe
+    icons = util.create_acroproduct_conversion_icon("__Spaghenutti__/graphics/icons/enriched-aluminum-1.png",
+                                                    "__Spaghenutti__/graphics/icons/acromatter.png"),
+    icon_size = 64,
+    mip_maps = 4,
+    category = "acroproduct-conversion-with-acromatter",
+    subgroup = "raw-resource",
     enabled = false,
-    energy_required = 75,  -- time in seconds to make the item
+    energy_required = 9,  -- time in seconds to make the item
     ingredients = {
-      {type = "item", name = "sp-urea", amount = 1},
-      {type = "item", name = "landfill", amount = 3},
-      {type = "fluid", name = "water", amount = 300}
+      {type = "item", name = "sp-enriched-aluminum", amount = 12},
+      {type = "item", name = "sp-acromatter", amount = 1}
     },
     results = {
-      {type = "item", name = "wood", amount = 2}
+      {type = "item", name = "sp-enriched-aluminum", amount = 14},
+      {type = "item", name = "sp-acromatter", probability=0.99, amount = 1},
+      {type = "item", name = "sp-phosphorus", probability=0.1, amount = 2},
+      {type = "item", name = "sp-graphite", probability=0.05, amount = 2},
+      {type = "item", name = "silicon", probability=0.2, amount = 2}
     }
   },
   {
     type = "recipe",
-    name = "sp-xenon-from-atmosphere",  -- #ForRegEx# - recipe
-    category = "atmosphere-condensation",
+    name = "sp-enriched-chromite-from-acromatter",  -- #ForRegEx# - recipe
+    icons = util.create_acroproduct_conversion_icon("__Spaghenutti__/graphics/icons/enriched-chromite-1.png",
+                                                    "__Spaghenutti__/graphics/icons/acromatter.png"),
+    icon_size = 64,
+    mip_maps = 4,
+    category = "acroproduct-conversion-with-acromatter",
+    subgroup = "raw-resource",
+    enabled = false,
+    energy_required = 8,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-enriched-chromite", amount = 6},
+      {type = "item", name = "sp-acromatter", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-enriched-chromite", amount = 7},
+      {type = "item", name = "sp-acromatter", probability=0.99, amount = 1},
+      {type = "item", name = "iron-ore", probability=0.1, amount = 2},
+      {type = "item", name = "sp-tungsten-ore", probability=0.15, amount = 2}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-enriched-titanium-from-acromatter",  -- #ForRegEx# - recipe
+    icons = util.create_acroproduct_conversion_icon("__Spaghenutti__/graphics/icons/enriched-titanium-1.png",
+                                                    "__Spaghenutti__/graphics/icons/acromatter.png"),
+    icon_size = 64,
+    mip_maps = 4,
+    category = "acroproduct-conversion-with-acromatter",
+    subgroup = "raw-resource",
     enabled = false,
     energy_required = 10,  -- time in seconds to make the item
-    ingredients = {},
-    results = {
-      {type = "fluid", name = "sp-xenon", amount = 1}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-helium-from-atmosphere",  -- #ForRegEx# - recipe
-    category = "atmosphere-condensation",
-    enabled = false,
-    energy_required = 1,  -- time in seconds to make the item
-    ingredients = {},
-    results = {
-      {type = "fluid", name = "sp-helium", amount = 1}
-    }
-  },
-  -- MARK: Alternative Spaghenutty recipes with existing result product from aai / krastorio mod
-  {
-    type = "recipe",
-    name = "sp-glass-from-calcium",  -- #ForRegEx# - recipe
-    category = "smelting",
-    enabled = false,
-    energy_required = 2.4,  -- time in seconds to make the item
     ingredients = {
-      {type = "item", name = "sand", amount = 3},
-      {type = "item", name = "sp-calcium", amount = 1}
+      {type = "item", name = "sp-enriched-titanium", amount = 10},
+      {type = "item", name = "sp-acromatter", amount = 1}
     },
     results = {
-      {type = "item", name = "glass", amount = 1}
+      {type = "item", name = "sp-enriched-titanium", amount = 11},
+      {type = "item", name = "sp-acromatter", probability=0.99, amount = 1},
+      {type = "item", name = "sp-chromite", probability=0.15, amount = 2},
+      {type = "item", name = "sp-zircon", probability=0.25, amount = 2}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-enriched-magnesium-from-acromatter",  -- #ForRegEx# - recipe
+    icons = util.create_acroproduct_conversion_icon("__Spaghenutti__/graphics/icons/enriched-magnesium-1.png",
+                                                    "__Spaghenutti__/graphics/icons/acromatter.png"),
+    icon_size = 64,
+    mip_maps = 4,
+    category = "acroproduct-conversion-with-acromatter",
+    subgroup = "raw-resource",
+    enabled = false,
+    energy_required = 8,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-enriched-magnesium", amount = 10},
+      {type = "item", name = "sp-acromatter", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-enriched-magnesium", amount = 11},
+      {type = "item", name = "sp-acromatter", probability=0.99, amount = 1},
+      {type = "item", name = "sp-calcium", probability=0.25, amount = 2},
+      {type = "item", name = "sp-sodium", probability=0.20, amount = 2},
+      {type = "item", name = "lithium", probability=0.05, amount = 2}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-enriched-nickel-from-acromatter",  -- #ForRegEx# - recipe
+    icons = util.create_acroproduct_conversion_icon("__Spaghenutti__/graphics/icons/enriched-nickel-1.png",
+                                                    "__Spaghenutti__/graphics/icons/acromatter.png"),
+    icon_size = 64,
+    mip_maps = 4,
+    category = "acroproduct-conversion-with-acromatter",
+    subgroup = "raw-resource",
+    enabled = false,
+    energy_required = 12,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-enriched-nickel", amount = 8},
+      {type = "item", name = "sp-acromatter", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-enriched-nickel", amount = 10},
+      {type = "item", name = "sp-acromatter", probability=0.98, amount = 1},
+      {type = "item", name = "iron-ore", probability=0.3, amount = 2},
+      {type = "item", name = "copper-ore", probability=0.5, amount = 2},
+      {type = "item", name = "sp-palladium", probability=0.05, amount = 2},
+      {type = "item", name = "sp-platinum", probability=0.02, amount = 2}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-enriched-tinstone-from-acromatter",  -- #ForRegEx# - recipe
+    icons = util.create_acroproduct_conversion_icon("__Spaghenutti__/graphics/icons/enriched-tinstone-1.png",
+                                                    "__Spaghenutti__/graphics/icons/acromatter.png"),
+    icon_size = 64,
+    mip_maps = 4,
+    category = "acroproduct-conversion-with-acromatter",
+    subgroup = "raw-resource",
+    enabled = false,
+    energy_required = 6,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-enriched-tinstone", amount = 6},
+      {type = "item", name = "sp-acromatter", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-enriched-tinstone", amount = 7},
+      {type = "item", name = "sp-acromatter", probability=0.99, amount = 1},
+      {type = "item", name = "sp-leadstone", probability=0.5, amount = 2},
+      {type = "item", name = "sp-antimony", probability=0.12, amount = 2},
+      {type = "item", name = "sp-tellurium", probability=0.02, amount = 2},
+      {type = "item", name = "silicon", probability=0.15, amount = 2}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-enriched-tungsten-from-acromatter",  -- #ForRegEx# - recipe
+    icons = util.create_acroproduct_conversion_icon("__Spaghenutti__/graphics/icons/enriched-tungsten-1.png",
+                                                    "__Spaghenutti__/graphics/icons/acromatter.png"),
+    icon_size = 64,
+    mip_maps = 4,
+    category = "acroproduct-conversion-with-acromatter",
+    subgroup = "raw-resource",
+    enabled = false,
+    energy_required = 12,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-enriched-tungsten", amount = 8},
+      {type = "item", name = "sp-acromatter", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-enriched-tungsten", amount = 9},
+      {type = "item", name = "sp-acromatter", probability=0.98, amount = 1},
+      {type = "item", name = "sp-chromite", probability=0.1, amount = 2}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-enriched-zinc-from-acrocrystal",  -- #ForRegEx# - recipe
+    icons = util.create_acroproduct_conversion_icon("__Spaghenutti__/graphics/icons/enriched-zinc-1.png",
+                                                    "__Spaghenutti__/graphics/icons/acrocrystal.png"),
+    icon_size = 64,
+    mip_maps = 4,
+    category = "acroproduct-conversion-with-acromatter",
+    subgroup = "raw-resource",
+    enabled = false,
+    energy_required = 7,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-enriched-zinc", amount = 8},
+      {type = "item", name = "sp-acrocrystal", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-enriched-zinc", amount = 9},
+      {type = "item", name = "sp-acrocrystal", probability=0.98, amount = 1},
+      {type = "item", name = "copper-ore", probability=0.2, amount = 2},
+      {type = "item", name = "sp-nickel-ore", probability=0.1, amount = 2}
     }
   },
 })
+
+------------------------------------------------------------------------------
+-- MARK: Changes to Spaghenutty
+------------------------------------------------------------------------------
+-- Change recipes
+util.change_recipe_ingredients("sp-methyl-tert-butyl-ether",
+  {{type = "fluid", name = "biomethanol", amount = 50}, {type = "fluid", name = "sp-propane", amount = 50}},
+  {{type = "fluid", name = "biomethanol", amount = 80}, {type = "fluid", name = "sp-propane", amount = 80}},
+  3.6,
+  6)
+
+-- Add missing ingredients
+table.insert(data.raw.recipe["sp-sodium-carbonate"].ingredients, {type = "item", name = "coke", amount = 5})
+table.insert(data.raw.recipe["sp-graphite"].ingredients, {type = "item", name = "coke", amount = 3})
+table.insert(data.raw.recipe["sp-zirconia"].ingredients, {type = "item", name = "sand", amount = 3})
+table.insert(data.raw.recipe["sp-niobium-powder"].ingredients, {type = "item", name = "sand", amount = 8})
+table.insert(data.raw.recipe["sp-aqueous-niobium-tantalum"].ingredients, {type = "item", name = "sand", amount = 8})
+table.insert(data.raw.recipe["sp-landfill-from-sand"].ingredients, {type = "item", name = "sand", amount = 30})
+table.insert(data.raw.recipe["sp-stone-brick-from-sand"].ingredients, {type = "item", name = "sand", amount = 8})
+table.insert(data.raw.recipe["sp-mirror"].ingredients, {type = "item", name = "glass", amount = 2})
+table.insert(data.raw.recipe["sp-titanium-nitride"].ingredients, {type = "fluid", name = "nitrogen", amount = 40})
+table.insert(data.raw.recipe["sp-kevlar"].ingredients, {type = "fluid", name = "nitrogen", amount = 15})
+table.insert(data.raw.recipe["sp-uranium-fuel-rod"].ingredients, {type = "fluid", name = "nitrogen", amount = 100})
+table.insert(data.raw.recipe["sp-epoxy"].ingredients, {type = "fluid", name = "oxygen", amount = 35})
+table.insert(data.raw.recipe["sp-epoxy"].ingredients, {type = "fluid", name = "hydrogen", amount = 15})
+table.insert(data.raw.recipe["sp-cubit"].ingredients, {type = "fluid", name = "hydrogen", amount = 1})
+table.insert(data.raw.recipe["sp-superconductor"].ingredients, {type = "fluid", name = "hydrogen", amount = 100})
+table.insert(data.raw.recipe["sp-bleach"].ingredients, {type = "fluid", name = "oxygen", amount = 100})
+table.insert(data.raw.recipe["sp-bleach"].ingredients, {type = "fluid", name = "chlorine", amount = 50})
+table.insert(data.raw.recipe["sp-lens"].ingredients, {type = "fluid", name = "oxygen", amount = 40})
+table.insert(data.raw.recipe["sp-composites"].ingredients, {type = "fluid", name = "oxygen", amount = 25})
+table.insert(data.raw.recipe["sp-high-purity-silicon"].ingredients, {type = "item", name = "silicon", amount = 1})
+table.insert(data.raw.recipe["sp-diode"].ingredients, {type = "item", name = "silicon", amount = 1})
+table.insert(data.raw.recipe["sp-transistor"].ingredients, {type = "item", name = "silicon", amount = 2})
+table.insert(data.raw.recipe["sp-light-emitting-diode"].ingredients, {type = "item", name = "silicon", amount = 2})
+table.insert(data.raw.recipe["sp-integrated-circuit"].ingredients, {type = "item", name = "silicon", amount = 2})
+table.insert(data.raw.recipe["sp-laser"].ingredients, {type = "item", name = "silicon", amount = 1})
+table.insert(data.raw.recipe["sp-silica"].ingredients, {type = "item", name = "quartz", amount = 1})
+table.insert(data.raw.recipe["sp-plutonium-239-processing"].ingredients, {type = "item", name = "lithium", amount = 1})
+table.insert(data.raw.recipe["sp-plutonium-240-processing"].ingredients, {type = "item", name = "lithium", amount = 1})
+table.insert(data.raw.recipe["sp-advanced-used-up-fuel-rod-reprocessing"].ingredients, {type = "fluid", name = "chlorine", amount = 60})
+table.insert(data.raw.recipe["sp-urea"].ingredients, {type = "fluid", name = "ammonia", amount = 50})
+table.insert(data.raw.recipe["sp-carbon-fiber"].ingredients, {type = "fluid", name = "nitric-acid", amount = 50})
+table.insert(data.raw.recipe["sp-ethylene-dichloride"].ingredients, {type = "fluid", name = "chlorine", amount = 60})
+table.insert(data.raw.recipe["sp-sodium-hydroxide-from-sodium"].ingredients, {type = "fluid", name = "hydrogen", amount = 100})
+table.insert(data.raw.recipe["sp-sodium-hydroxide-from-sodium"].ingredients, {type = "fluid", name = "oxygen", amount = 100})
+table.insert(data.raw.recipe["sp-vinyl-chloride"].ingredients, {type = "fluid", name = "chlorine", amount = 30})
+table.insert(data.raw.recipe["sp-electrolyte"].ingredients, {type = "item", name = "lithium", amount = 3})
+table.insert(data.raw.recipe["sp-electrolyte"].ingredients, {type = "fluid", name = "chlorine", amount = 10})
+table.insert(data.raw.recipe["sp-helium"].ingredients, {type = "fluid", name = "hydrogen", amount = 2})
+table.insert(data.raw.recipe["sp-helium-3-from-helium-and-hydrogen"].ingredients, {type = "fluid", name = "hydrogen", amount = 10})
+table.insert(data.raw.recipe["sp-gravitonium"].ingredients, {type = "item", name = "tritium", amount = 3})
+table.insert(data.raw.recipe["sp-vacuum-tube"].ingredients, {type = "item", name = "glass", amount = 3})
+table.insert(data.raw.recipe["sp-vacuum-tube"].ingredients, {type = "fluid", name = "hydrogen", amount = 5})
+table.insert(data.raw.recipe["sp-liquid-nitrogen"].ingredients, {type = "fluid", name = "nitrogen", amount = 5})
+table.insert(data.raw.recipe["sp-chronomatter"].ingredients, {type = "item", name = "imersite-powder", amount = 4})
+table.insert(data.raw.recipe["sp-bioreactor"].ingredients, {type = "item", name = "biomass", amount = 10})
+table.insert(data.raw.recipe["sp-grobgnum-explorer"].ingredients, {type = "item", name = "ai-core", amount = 20})
+
+-- Add missing results
+table.insert(data.raw.recipe["sp-gold"].results, {type = "item", name = "sand", probability = 0.98, amount = 3})
+table.insert(data.raw.recipe["sp-platinum-iridium"].results, {type = "item", name = "sand", probability = 0.9807, amount = 3})
+table.insert(data.raw.recipe["sp-sodium-and-chlorine"].results, {type = "fluid", name = "chlorine", amount = 3})
+table.insert(data.raw.recipe["sp-high-purity-silicon"].results, {type = "item", name = "silicon", probability = 0.7, amount = 1})
+table.insert(data.raw.recipe["sp-used-up-fuel-rod-reprocessing"].results, {type = "fluid", name = "heavy-water", amount = 10})
+table.insert(data.raw.recipe["sp-advanced-used-up-fuel-rod-reprocessing"].results, {type = "fluid", name = "heavy-water", amount = 10})
+table.insert(data.raw.recipe["sp-magnesium-slab"].results, {type = "fluid", name = "chlorine", amount = 10})
+table.insert(data.raw.recipe["sp-sodium-hydroxide-from-salt"].results, {type = "fluid", name = "chlorine", amount = 50})
+table.insert(data.raw.recipe["sp-tellurium-hydroxide"].results, {type = "item", name = "sand", probability = 0.92, amount = 3})
+table.insert(data.raw.recipe["sp-cobalt-sulfate"].results, {type = "item", name = "sand", probability = 0.3, amount = 1})
+table.insert(data.raw.recipe["sp-coal-from-acrocrystal"].results, {type = "item", name = "coke", probability=0.15, amount = 1})
+table.insert(data.raw.recipe["sp-aluminum-ore-from-acrocrystal"].results, {type = "item", name = "silicon", probability=0.2, amount = 1})
+table.insert(data.raw.recipe["sp-limestone-from-acrocrystal"].results, {type = "item", name = "sand", amount = 1})
+table.insert(data.raw.recipe["sp-magnesium-ore-from-acrocrystal"].results, {type = "item", name = "lithium", probability=0.05, amount = 1})
+table.insert(data.raw.recipe["sp-tinstone-from-acrocrystal"].results, {type = "item", name = "silicon", probability=0.15, amount = 1})
+table.insert(data.raw.recipe["sp-zirconium-ore-from-acrocrystal"].results, {type = "item", name = "silicon", probability=0.15, amount = 1})
+table.insert(data.raw.recipe["sp-calcium-from-acrovoid"].results, {type = "item", name = "lithium", probability=0.05, amount = 1})
+table.insert(data.raw.recipe["sp-fluorine-from-acrovoid"].results, {type = "fluid", name = "chlorine", amount = 10})
+table.insert(data.raw.recipe["sp-fluorine-from-acrovoid"].results, {type = "fluid", name = "oxygen", amount = 3})
+table.insert(data.raw.recipe["sp-graphite-from-acrovoid"].results, {type = "item", name = "silicon", probability=0.2, amount = 1})
+table.insert(data.raw.recipe["sp-graphite-from-acrovoid"].results, {type = "fluid", name = "nitrogen", amount = 10})
+table.insert(data.raw.recipe["sp-graphite-from-acrovoid"].results, {type = "fluid", name = "oxygen", amount = 2})
+table.insert(data.raw.recipe["sp-iridium-from-acrovoid"].results, {type = "item", name = "silicon", probability=0.2, amount = 1})
+table.insert(data.raw.recipe["sp-iridium-from-acrovoid"].results, {type = "fluid", name = "nitrogen", amount = 10})
+table.insert(data.raw.recipe["sp-iridium-from-acrovoid"].results, {type = "fluid", name = "oxygen", amount = 2})
+table.insert(data.raw.recipe["sp-leadstone-from-acrovoid"].results, {type = "item", name = "silicon", probability=0.12, amount = 1})
+table.insert(data.raw.recipe["sp-phosphorus-from-acrovoid"].results, {type = "item", name = "silicon", probability=0.01, amount = 1})
+table.insert(data.raw.recipe["sp-phosphorus-from-acrovoid"].results, {type = "fluid", name = "nitrogen", amount = 2})
+table.insert(data.raw.recipe["sp-sodium-from-acrovoid"].results, {type = "item", name = "lithium", probability=0.25, amount = 1})
+table.insert(data.raw.recipe["sp-sodium-from-acrovoid"].results, {type = "fluid", name = "hydrogen", amount = 10})
+table.insert(data.raw.recipe["sp-antimony-from-acrovoid"].results, {type = "fluid", name = "nitrogen", amount = 8})
+table.insert(data.raw.recipe["sp-tellurium-from-acrovoid"].results, {type = "fluid", name = "nitrogen", amount = 8})
+table.insert(data.raw.recipe["sp-sulfur-from-acrovoid"].results, {type = "item", name = "silicon", probability=0.15, amount = 1})
+table.insert(data.raw.recipe["sp-sulfur-from-acrovoid"].results, {type = "fluid", name = "oxygen", amount = 15})  
 
 -- MARK: Change recipe category
 data.raw.recipe["sp-aluminum-sheet"].category = "electrolysis"
@@ -711,77 +988,6 @@ util.change_recipe_ingredients("kr-mineral-water-pumpjack",
   {{"sp-stainless-steel", 32}, {"sp-bronze-rod", 24}, {"sp-pressure-tube", 24}, {"sp-bolts", 48}, {"engine-unit", 16}},
   16,
   32)
-
-
-------------------------------------------------------------------------------
--- MARK: Changes to Spaghenutty
-------------------------------------------------------------------------------
--- Change recipes
-util.change_recipe_ingredients("sp-methyl-tert-butyl-ether",
-  {{type = "fluid", name = "biomethanol", amount = 50}, {type = "fluid", name = "sp-propane", amount = 50}},
-  {{type = "fluid", name = "biomethanol", amount = 80}, {type = "fluid", name = "sp-propane", amount = 80}},
-  3.6,
-  6)
-
--- Add missing ingredients
-table.insert(data.raw.recipe["sp-sodium-carbonate"].ingredients, {type = "item", name = "coke", amount = 5})
-table.insert(data.raw.recipe["sp-graphite"].ingredients, {type = "item", name = "coke", amount = 3})
-table.insert(data.raw.recipe["sp-zirconia"].ingredients, {type = "item", name = "sand", amount = 3})
-table.insert(data.raw.recipe["sp-niobium-powder"].ingredients, {type = "item", name = "sand", amount = 8})
-table.insert(data.raw.recipe["sp-aqueous-niobium-tantalum"].ingredients, {type = "item", name = "sand", amount = 8})
-table.insert(data.raw.recipe["sp-landfill-from-sand"].ingredients, {type = "item", name = "sand", amount = 30})
-table.insert(data.raw.recipe["sp-stone-brick-from-sand"].ingredients, {type = "item", name = "sand", amount = 8})
-table.insert(data.raw.recipe["sp-mirror"].ingredients, {type = "item", name = "glass", amount = 2})
-table.insert(data.raw.recipe["sp-titanium-nitride"].ingredients, {type = "fluid", name = "nitrogen", amount = 40})
-table.insert(data.raw.recipe["sp-kevlar"].ingredients, {type = "fluid", name = "nitrogen", amount = 15})
-table.insert(data.raw.recipe["sp-uranium-fuel-rod"].ingredients, {type = "fluid", name = "nitrogen", amount = 100})
-table.insert(data.raw.recipe["sp-epoxy"].ingredients, {type = "fluid", name = "oxygen", amount = 35})
-table.insert(data.raw.recipe["sp-epoxy"].ingredients, {type = "fluid", name = "hydrogen", amount = 15})
-table.insert(data.raw.recipe["sp-cubit"].ingredients, {type = "fluid", name = "hydrogen", amount = 1})
-table.insert(data.raw.recipe["sp-superconductor"].ingredients, {type = "fluid", name = "hydrogen", amount = 100})
-table.insert(data.raw.recipe["sp-bleach"].ingredients, {type = "fluid", name = "oxygen", amount = 100})
-table.insert(data.raw.recipe["sp-bleach"].ingredients, {type = "fluid", name = "chlorine", amount = 50})
-table.insert(data.raw.recipe["sp-lens"].ingredients, {type = "fluid", name = "oxygen", amount = 40})
-table.insert(data.raw.recipe["sp-composites"].ingredients, {type = "fluid", name = "oxygen", amount = 25})
-table.insert(data.raw.recipe["sp-high-purity-silicon"].ingredients, {type = "item", name = "silicon", amount = 1})
-table.insert(data.raw.recipe["sp-diode"].ingredients, {type = "item", name = "silicon", amount = 1})
-table.insert(data.raw.recipe["sp-transistor"].ingredients, {type = "item", name = "silicon", amount = 2})
-table.insert(data.raw.recipe["sp-light-emitting-diode"].ingredients, {type = "item", name = "silicon", amount = 2})
-table.insert(data.raw.recipe["sp-integrated-circuit"].ingredients, {type = "item", name = "silicon", amount = 2})
-table.insert(data.raw.recipe["sp-laser"].ingredients, {type = "item", name = "silicon", amount = 1})
-table.insert(data.raw.recipe["sp-silica"].ingredients, {type = "item", name = "quartz", amount = 1})
-table.insert(data.raw.recipe["sp-plutonium-239-processing"].ingredients, {type = "item", name = "lithium", amount = 1})
-table.insert(data.raw.recipe["sp-plutonium-240-processing"].ingredients, {type = "item", name = "lithium", amount = 1})
-table.insert(data.raw.recipe["sp-advanced-used-up-fuel-rod-reprocessing"].ingredients, {type = "fluid", name = "chlorine", amount = 60})
-table.insert(data.raw.recipe["sp-urea"].ingredients, {type = "fluid", name = "ammonia", amount = 50})
-table.insert(data.raw.recipe["sp-carbon-fiber"].ingredients, {type = "fluid", name = "nitric-acid", amount = 50})
-table.insert(data.raw.recipe["sp-ethylene-dichloride"].ingredients, {type = "fluid", name = "chlorine", amount = 60})
-table.insert(data.raw.recipe["sp-sodium-hydroxide-from-sodium"].ingredients, {type = "fluid", name = "hydrogen", amount = 100})
-table.insert(data.raw.recipe["sp-sodium-hydroxide-from-sodium"].ingredients, {type = "fluid", name = "oxygen", amount = 100})
-table.insert(data.raw.recipe["sp-vinyl-chloride"].ingredients, {type = "fluid", name = "chlorine", amount = 30})
-table.insert(data.raw.recipe["sp-electrolyte"].ingredients, {type = "item", name = "lithium", amount = 3})
-table.insert(data.raw.recipe["sp-electrolyte"].ingredients, {type = "fluid", name = "chlorine", amount = 10})
-table.insert(data.raw.recipe["sp-helium"].ingredients, {type = "fluid", name = "hydrogen", amount = 2})
-table.insert(data.raw.recipe["sp-helium-3-from-helium-and-hydrogen"].ingredients, {type = "fluid", name = "hydrogen", amount = 10})
-table.insert(data.raw.recipe["sp-gravitonium"].ingredients, {type = "item", name = "tritium", amount = 3})
-table.insert(data.raw.recipe["sp-vacuum-tube"].ingredients, {type = "item", name = "glass", amount = 3})
-table.insert(data.raw.recipe["sp-vacuum-tube"].ingredients, {type = "fluid", name = "hydrogen", amount = 5})
-table.insert(data.raw.recipe["sp-liquid-nitrogen"].ingredients, {type = "fluid", name = "nitrogen", amount = 5})
-table.insert(data.raw.recipe["sp-chronomatter"].ingredients, {type = "item", name = "imersite-powder", amount = 4})
-table.insert(data.raw.recipe["sp-bioreactor"].ingredients, {type = "item", name = "biomass", amount = 10})
-table.insert(data.raw.recipe["sp-grobgnum-explorer"].ingredients, {type = "item", name = "ai-core", amount = 20})
-
--- Add missing results
-table.insert(data.raw.recipe["sp-gold"].results, {type = "item", name = "sand", probability = 0.98, amount = 3})
-table.insert(data.raw.recipe["sp-platinum-iridium"].results, {type = "item", name = "sand", probability = 0.9807, amount = 3})
-table.insert(data.raw.recipe["sp-sodium-and-chlorine"].results, {type = "fluid", name = "chlorine", amount = 3})
-table.insert(data.raw.recipe["sp-high-purity-silicon"].results, {type = "item", name = "silicon", probability = 0.7, amount = 1})
-table.insert(data.raw.recipe["sp-used-up-fuel-rod-reprocessing"].results, {type = "fluid", name = "heavy-water", amount = 10})
-table.insert(data.raw.recipe["sp-advanced-used-up-fuel-rod-reprocessing"].results, {type = "fluid", name = "heavy-water", amount = 10})
-table.insert(data.raw.recipe["sp-magnesium-slab"].results, {type = "fluid", name = "chlorine", amount = 10})
-table.insert(data.raw.recipe["sp-sodium-hydroxide-from-salt"].results, {type = "fluid", name = "chlorine", amount = 50})
-table.insert(data.raw.recipe["sp-tellurium-hydroxide"].results, {type = "item", name = "sand", probability = 0.92, amount = 3})
-table.insert(data.raw.recipe["sp-cobalt-sulfate"].results, {type = "item", name = "sand", probability = 0.3, amount = 1})
 
 -- Remove crushing recipes
 data.raw.recipe["kr-vc-sp-nuclear-waste"] = nil
