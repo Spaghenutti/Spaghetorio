@@ -2802,12 +2802,193 @@ data:extend({
     },
     order = "a-h-a"
   },
+  {
+    type = "technology",
+    name = "sp-raw-resource-from-acrocrystal",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icons = 
+    {
+      {icon = "__Spaghenutti__/graphics/arrows/acroproduct-recipes-arrow-256x256.png", icon_size = 256, scale = 2},
+      {icon = "__Spaghenutti__/graphics/hr-icons/acrocrystal.png", icon_size = 256}
+    },
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-iron-ore-from-acrocrystal"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-copper-ore-from-acrocrystal"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-stone-from-acrocrystal"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-coal-from-acrocrystal"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-aluminum-ore-from-acrocrystal"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-chromite-from-acrocrystal"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-limestone-from-acrocrystal"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-titanium-ore-from-acrocrystal"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-magnesium-ore-from-acrocrystal"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-nickel-ore-from-acrocrystal"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-tinstone-from-acrocrystal"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-tungsten-ore-from-acrocrystal"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-zinc-ore-from-acrocrystal"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-zirconium-ore-from-acrocrystal"
+      }
+    },
+    prerequisites = {"sp-acroproduct"},
+    unit =
+    {
+      count = 100,
+      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-processed-resource-from-acrovoid",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icons = 
+    {
+      {icon = "__Spaghenutti__/graphics/arrows/acroproduct-recipes-arrow-256x256.png", icon_size = 256, scale = 2},
+      {icon = "__Spaghenutti__/graphics/hr-icons/acrovoid.png", icon_size = 256}
+    },
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-uranium-from-acrovoid"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-calcium-from-acrovoid"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-cerium-from-acrovoid"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-yttrium-from-acrovoid"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-lanthanum-from-acrovoid"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-neodymium-from-acrovoid"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-fluorine-from-acrovoid"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-gold-from-acrovoid"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-graphite-from-acrovoid"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-iridium-from-acrovoid"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-leadstone-from-acrovoid"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-palladium-from-acrovoid"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-phosphorus-from-acrovoid"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-platinum-from-acrovoid"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-plutonium-from-acrovoid"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-silver-from-acrovoid"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-sodium-from-acrovoid"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-antimony-from-acrovoid"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-tellurium-from-acrovoid"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-zircon-from-acrovoid"
+      }
+    },
+    prerequisites = {"sp-upgrade-acrosphere-conversion"},
+    unit =
+    {
+      count = 100,
+      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      time = 15
+    },
+    order = "a-h-a"
+  },
 })
 
 if not mods["Krastorio2"] then
   data:extend({
-
+    
   })
+  
+  table.insert(data.raw.technology["sp-processed-resource-from-acrovoid"].effects, {type = "unlock-recipe", recipe = "sp-coke-from-acrovoid"})
+  table.insert(data.raw.technology["sp-processed-resource-from-acrovoid"].effects, {type = "unlock-recipe", recipe = "sp-silicon-from-acrovoid"})
 end
 
 table.insert(data.raw.technology["fluid-handling"].prerequisites, "sp-basic-alloy")

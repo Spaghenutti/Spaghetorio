@@ -149,6 +149,71 @@ data:extend({
     },
     order = "a-h-a"
   },
+  {
+    type = "technology",
+    name = "sp-enriched-resource-from-acromatter",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icons = 
+    {
+      {icon = "__Spaghenutti__/graphics/arrows/acroproduct-recipes-arrow-256x256.png", icon_size = 256, scale = 2},
+      {icon = "__Spaghenutti__/graphics/hr-icons/acromatter.png", icon_size = 256}
+    },
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-enriched-aluminum-from-acromatter"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-enriched-chromite-from-acromatter"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-enriched-titanium-from-acromatter"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-enriched-magnesium-from-acromatter"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-enriched-nickel-from-acromatter"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-enriched-tinstone-from-acromatter"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-enriched-tungsten-from-acromatter"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-enriched-zinc-from-acromatter"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-enriched-copper-from-acromatter"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-enriched-iron-from-acromatter"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-enriched-rare-metals-from-acromatter"
+      }
+    },
+    prerequisites = {"sp-upgrade-acrosphere-conversion"},
+    unit =
+    {
+      count = 100,
+      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      time = 15
+    },
+    order = "a-h-a"
+  },
 })
 
 -- spaghenutty thechnology changes
@@ -157,6 +222,10 @@ data.raw.technology["sp-coal-processing"].effects = {
   {type = "unlock-recipe", recipe = "coke"},
   {type = "unlock-recipe", recipe = "kr-vc-coal"}
 }
+
+table.insert(data.raw.technology["sp-raw-resource-from-acrocrystal"].effects, {type = "unlock-recipe", recipe = "sp-raw-rare-metals-from-acrocrystal"})
+table.insert(data.raw.technology["sp-processed-resource-from-acrovoid"].effects, {type = "unlock-recipe", recipe = "sp-coke-from-acrovoid"})
+table.insert(data.raw.technology["sp-processed-resource-from-acrovoid"].effects, {type = "unlock-recipe", recipe = "sp-silicon-from-acrovoid"})
 
 -- krastorio technology changes
 data.raw.technology["electronics"].prerequisites = {"automation", "automation-science-pack", "sp-basic-solder"}

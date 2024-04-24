@@ -4103,10 +4103,6 @@ data:extend({
       -- add 0.15% 1 Silicon in krastorio
     }
   },
-  -- raw imersite with acrovoid in krastorio
-  -- raw rare earths acrovoid in krastorio
-  -- coke acrovoid in krastorio
-  -- silicon acrovoid in krastorio
   ------------------------------------------------------------------------------
   -- Acrosphere product recipes for basic resources from acromatter
   -- MARK: Acromatter
@@ -5083,6 +5079,54 @@ if not mods["Krastorio2"] then
       },
       results = {
         {type = "item", name = "sp-lithium", amount = 2}
+      }
+    },
+    {
+      type = "recipe",
+      name = "sp-coke-from-acrovoid",  -- #ForRegEx# - recipe
+      icons = util.create_acroproduct_conversion_icon("__Spaghenutti__/graphics/icons/coke.png",
+                                                      "__Spaghenutti__/graphics/icons/acrovoid.png"),
+      icon_size = 64,
+      mip_maps = 4,
+      category = "acroproduct-conversion-with-acrovoid",
+      subgroup = "processed-resource",
+      enabled = false,
+      energy_required = 6,  -- time in seconds to make the item
+      ingredients = {
+        {type = "item", name = "sp-coke", amount = 6},
+        {type = "item", name = "sp-acrovoid", amount = 1}
+      },
+      results = {
+        {type = "item", name = "sp-acrovoid", probability=0.99, amount = 1},
+        {type = "item", name = "sp-coke", amount = 7},
+        {type = "item", name = "sp-graphite", probability=0.5, amount = 1},
+        {type = "item", name = "sulfur", probability=0.1, amount = 1},
+        {type = "fluid", name = "sp-hydrogen", amount = 4},
+        {type = "fluid", name = "sp-oxygen", amount = 12}
+      }
+    },
+    {
+      type = "recipe",
+      name = "sp-silicon-from-acrovoid",  -- #ForRegEx# - recipe
+      icons = util.create_acroproduct_conversion_icon("__Spaghenutti__/graphics/icons/coke.png",
+                                                      "__Spaghenutti__/graphics/icons/acrovoid.png"),
+      icon_size = 64,
+      mip_maps = 4,
+      category = "acroproduct-conversion-with-acrovoid",
+      subgroup = "processed-resource",
+      enabled = false,
+      energy_required = 12,  -- time in seconds to make the item
+      ingredients = {
+        {type = "item", name = "sp-silicon", amount = 4},
+        {type = "item", name = "sp-acrovoid", amount = 1}
+      },
+      results = {
+        {type = "item", name = "sp-acrovoid", probability=0.98, amount = 1},
+        {type = "item", name = "sp-silicon", amount = 6},
+        {type = "item", name = "sp-graphite", probability=0.3, amount = 1},
+        {type = "item", name = "sp-phosphorus", probability=0.2, amount = 1},
+        {type = "item", name = "sp-aluminum-ore", probability=0.2, amount = 1},
+        {type = "item", name = "sp-tinstone", probability=0.08, amount = 1},
       }
     },
   })

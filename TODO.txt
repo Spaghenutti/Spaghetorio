@@ -12,6 +12,7 @@ TODO:
     + Add recipes for raw-resource via acrocrystal
     + Add recipes for enriched-resource and some processed-resource via acrovoid
     + Add recipes for enriched-resource via acromatter
+    - Add recipes for fluids via acromatter
   + Remove Acrospheres crushing recipes
   + Add icons to acroproduct-conversion recipes
   - Add techonolgies for acrospheres
