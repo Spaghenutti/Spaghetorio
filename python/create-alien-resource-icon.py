@@ -1,13 +1,12 @@
 from PIL import Image
 import glob
-import os
 
 import constants
  
 ALIEN_RESOURCES = ["blunagium-mine", "rukite-mine", "yemnuth-mine"]
 FILE_TYPE_SUFFIX = ".png"
 FINAL_RES = 256  # Resolution X and Y. X ist then multiplied by the images found of one specific alien resource
-PATH = fr"{os.getcwd()}{constants.GRAPHICS_PATH}/alien-resource/"
+PATH = fr"{constants.GRAPHICS_PATH}/alien-resource/"
 
 def create_alien_resource():
     for alien_resource in ALIEN_RESOURCES:

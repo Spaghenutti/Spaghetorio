@@ -1,13 +1,14 @@
 from PIL import Image
 import glob
-import os
+
+import constants
  
 HR_PREFIX = "hr-"
 FILE_TYPE_SUFFIX = ".png"
 COMPRESSION_FACTOR = 2  # Compression factor of 2 for 1024x1024 image results in 512x512 image
 
 # find all high res images and 
-path = fr"{os.getcwd()}/resource/{HR_PREFIX}*{FILE_TYPE_SUFFIX}"
+path = fr"{constants.GRAPHICS_PATH}/resource/{HR_PREFIX}*{FILE_TYPE_SUFFIX}"
 
 def resize_images():
     file_paths = glob.glob(path, recursive=True)

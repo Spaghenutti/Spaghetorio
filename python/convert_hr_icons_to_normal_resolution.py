@@ -1,11 +1,12 @@
 from PIL import Image
 import glob
-import os
+
+import constants
 
 HR_ICONS_FOLDER = "hr-icons"
-HR_ICONS_PATH = fr"{os.getcwd()}/{HR_ICONS_FOLDER}/*"
+HR_ICONS_PATH = fr"{constants.GRAPHICS_PATH}/{HR_ICONS_FOLDER}/*"
 ICONS_FOLDER = "icons"
-ICONS_PATH = fr"{os.getcwd()}/{ICONS_FOLDER}/*"
+ICONS_PATH = fr"{constants.GRAPHICS_PATH}/{ICONS_FOLDER}/*"
 
 X_RES = 64
 Y_RES = 64
