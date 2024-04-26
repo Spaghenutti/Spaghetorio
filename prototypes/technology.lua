@@ -2971,7 +2971,7 @@ data:extend({
         recipe = "sp-zircon-from-acrovoid"
       }
     },
-    prerequisites = {"sp-upgrade-acrosphere-conversion"},
+    prerequisites = {"sp-acroproduct"},
     unit =
     {
       count = 100,

@@ -205,7 +205,7 @@ data:extend({
         recipe = "sp-enriched-rare-metals-from-acromatter"
       }
     },
-    prerequisites = {"sp-upgrade-acrosphere-conversion"},
+    prerequisites = {"sp-acroproduct"},
     unit =
     {
       count = 100,

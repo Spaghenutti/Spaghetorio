@@ -1,0 +1,18 @@
+################################
+# Editor configurations        #
+################################
+
+# All Files
+[*]
+charset = utf-8-bom
+end_of_line = crlf
+
+# Lua files
+[*.lua]
+indent_size = 2
+tab_width = 2
+
+# Python files
+[*.py]
+indent_size = 4
+tab_width = 4

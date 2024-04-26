@@ -15,7 +15,7 @@ TODO:
     - Add recipes for fluids via acromatter
   + Remove Acrospheres crushing recipes
   + Add icons to acroproduct-conversion recipes
-  - Add techonolgies for acrospheres
+  + Add techonolgies for acrospheres
   + Set enabled property of acrosphere recipes to false
   + Add missing results for acrocrystal recipes
   + Add missing results for acrovoid recipes
