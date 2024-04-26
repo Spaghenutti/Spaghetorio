@@ -31,13 +31,12 @@ TODO:
   - Add particle accelerator
   - Replace dummy icons
   - Fix barrel tints of fluids
-  - Fix smoke tints of chemical recipes
 
 Low prio
   - Create function to generate acroproduct-conversion recipes
   - Create file for acroproduct-conversion recipes
   - Add cobalt. Ctrl+F "-- add cobalt to items"
-  - Find different application for acromatter when playing without krastorio (other uses for acromatter than enriched recipes)
+  - Fix smoke tints of chemical recipes
 
 Future changes
   - Move incopatibel recipes outside of "not mods["Krastorio2"] then" statement and update them with correct values inside the statement
