@@ -1,7 +1,23 @@
 local util = require("data-util")
 
 -- TODO:
+--  - add many uses to:
+--    - "sp-rubber"
+--    - "sp-urea"
+--    - "sp-composites"
+--    - 
+--    - 
+--    - 
+--    - 
+--    - 
 --  - add uses to:
+--    - "sp-methyl-tert-butyl-ether" (fluid)
+--    - "sp-phosphoric-acid"
+--    - "sp-crucible"
+--    - "sp-laser"
+--    - 
+--    - 
+--    - 
 --    - "sp-antimony"
 --    - "sp-calcium"
 --    - "sp-liquid-sodium"
@@ -26,10 +42,9 @@ local util = require("data-util")
 --    - "sp-zirconia"
 --    - "sp-zirconium-rod"
 --    - "stone-tablet" (only k2)
---    - "sp-rubber"
---    - "sp-urea"
---    - "sp-methyl-tert-butyl-ether" (fluid)
---    - "sp-phosphoric-acid"
+
+
+
 --    - "sp-brass"
 --    - "sp-duralumin"
 --    - "sp-niobium-steel"
@@ -39,11 +54,8 @@ local util = require("data-util")
 --    - "sp-graphene"
 --    - "sp-diamond"
 --    - "sp-titanium-carbide"
---    - "sp-titanium-nitride"
---    - "sp-monocrystal"
---    - "sp-quasicrystal"
 --    - "sp-ceramics"
---    - "sp-crucible"
+
 --    - "sp-filter"
 --    - "sp-glass-fiber"
 --    - "sp-heat-resistant-tile"
@@ -61,12 +73,8 @@ local util = require("data-util")
 --    - "sp-coil"
 --    - "sp-compute-unit"
 --    - "sp-electrode"
---    - "sp-infra-red-filter"
+--    - "sp-infrared-filter"
 --    - "sp-integrated-circuit"
---    - "sp-laser"
---    - "sp-lens"
---    - "sp-light-emitting-diode"
---    - "sp-memory-chip"
 --    - "sp-lens"
 --    - "sp-mirror"
 --    - "sp-processor"
@@ -74,10 +82,8 @@ local util = require("data-util")
 --    - "sp-solder"
 --    - "sp-resistor"
 --    - "sp-transistor"
---    - "sp-vacuum-tube"
 --    - "sp-actuator"
 --    - "sp-catalyst"
---    - "sp-composites"
 --    - "sp-electromagnet"
 --    - "sp-gyro"
 --    - "sp-heating-filament"
@@ -5217,20 +5223,36 @@ end
 
 -- Recipe changes for base factorio items
 util.change_recipe_ingredients("speed-module",
-  {{"electronic-circuit", 5}, {"plastic-bar", 1}},
-  {{"electronic-circuit", 8}, {"plastic-bar", 2}},
+  {{"sp-diode", 3}, {"sp-resistor", 6}, {"sp-solder", 2}, {"electronic-circuit", 5}, {"plastic-bar", 1}},
+  {{"sp-diode", 5}, {"sp-resistor", 10}, {"sp-solder", 5}, {"electronic-circuit", 8}, {"plastic-bar", 2}},
   15,
   20)
 util.change_recipe_ingredients("speed-module-2",
-  {{"sp-circuit-board", 2}, {"advanced-circuit", 5}, {"sp-solder", 4}, {"sp-integrated-circuit", 2}},
-  {{"sp-circuit-board", 4}, {"advanced-circuit", 10}, {"sp-solder", 4}, {"sp-integrated-circuit", 4}},
+  {{"sp-circuit-board", 2}, {"advanced-circuit", 5}, {"sp-solder", 4}, {"sp-coil", 2}, {"sp-light-emitting-diode", 6}, {"sp-integrated-circuit", 2}},
+  {{"sp-circuit-board", 2}, {"advanced-circuit", 6}, {"sp-solder", 6}, {"sp-coil", 5}, {"sp-light-emitting-diode", 8}, {"sp-integrated-circuit", 3}},
   20,
   30)
 util.change_recipe_ingredients("speed-module-3",
-  {{"sp-circuit-board", 4}, {"advanced-circuit", 5}, {"sp-processor", 2}, {"sp-memory-chip", 2}, {"sp-cmos", 6}, {"sp-integrated-circuit", 2}},
-  {{"sp-circuit-board", 6}, {"advanced-circuit", 10}, {"sp-processor", 6}, {"sp-capacitor", 6}, {"sp-light-emitting-diode", 6}, {"sp-integrated-circuit", 4}},
+  {{"sp-circuit-board", 2}, {"sp-integrated-circuit", 5}, {"processing-unit", 5}, {"sp-processor", 1}, {"sp-cmos", 2}, {"sp-memory-chip", 6}},
+  {{"sp-circuit-board", 4}, {"sp-integrated-circuit", 8}, {"processing-unit", 5}, {"sp-processor", 2}, {"sp-cmos", 5}, {"sp-memory-chip", 12}},
   45,
   60)
+util.change_recipe_ingredients("productivity-module",
+  {{"sp-diode", 3}, {"sp-resistor", 4}, {"electronic-circuit", 3}, {"sp-solder", 2}, {"copper-cable", 2}, {"plastic-bar", 1}},
+  {{"sp-diode", 5}, {"sp-resistor", 5}, {"electronic-circuit", 4}, {"sp-solder", 5}, {"copper-cable", 5}, {"plastic-bar", 2}},
+  15,
+  20)
+util.change_recipe_ingredients("productivity-module-2",
+  {{"sp-circuit-board", 1}, {"advanced-circuit", 3}, {"sp-coil", 3}, {"sp-light-emitting-diode", 6}, {"sp-integrated-circuit", 2}},
+  {{"sp-circuit-board", 2}, {"advanced-circuit", 5}, {"sp-coil", 6}, {"sp-light-emitting-diode", 12}, {"sp-integrated-circuit", 3}},
+  20,
+  30)
+  util.change_recipe_ingredients("productivity-module-3",
+  {{"sp-circuit-board", 2}, {"sp-infrared-filter", 2}, {"processing-unit", 4}, {"sp-processor", 1}, {"sp-cmos", 2}, {"sp-memory-chip", 3}},
+  {{"sp-circuit-board", 3}, {"sp-infrared-filter", 5}, {"processing-unit", 5}, {"sp-processor", 2}, {"sp-cmos", 5}, {"sp-memory-chip", 6}},
+  45,
+  60)
+
 data.raw.recipe["cliff-explosives"].category = "crafting-with-fluid"
 util.change_recipe_ingredients("cliff-explosives",
   {{"sp-graphite", 1}, {"sulfur", 1}, {"iron-plate", 1}, {type="fluid", name="sp-sodium-hydroxide", amount=10}},

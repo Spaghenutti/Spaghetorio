@@ -2,7 +2,7 @@ import os
 
 PATH = os.getcwd()
 
-GRAPHICS_PATH = f"{PATH}/graphics"
-PROTOTYPES_PATH = f"{PATH}/prototypes"
+GRAPHICS_PATH = fr"{PATH}\graphics"
+PROTOTYPES_PATH = fr"{PATH}\prototypes"
 
-RECIPES_PATH = f"{PROTOTYPES_PATH}/recipes.lua"
+RECIPES_PATH = fr"{PROTOTYPES_PATH}\recipe.lua"

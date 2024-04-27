@@ -6,6 +6,8 @@ import re
 import helper
 import constants
 
+# REGEX_CONTENT_IN_CURLY_BARCKETS = "\{([^\)]+)\}"
+# REGEX_GET_DATA_EXTEND_CONTENT = "data:extend\(\n" + REGEX_CONTENT_IN_CURLY_BARCKETS
 
 class Ingredient:
     def __init__(self, name, type, amount):
@@ -28,7 +30,9 @@ class Recipe:
 
 
 def extract_recipes(text):
-    
+    recipes = text.split('MARK: Incomplete recipes')[0].split("  {\n")
+    recipes = text.split('MARK: Incomplete recipes')[0].split("  {\n")
+
     return list
 
 
