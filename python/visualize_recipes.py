@@ -1,4 +1,10 @@
+# Parses lua files and plots how often items / fluids are used in recipes
+# UNFINISHED
+
 import re
+
+import helper
+import constants
 
 
 class Ingredient:
@@ -22,6 +28,7 @@ class Recipe:
 
 
 def extract_recipes(text):
+    
     return list
 
 
@@ -29,9 +36,13 @@ def parse_new_recipe(text):
     pass
 
 
-def parse_file(text):
-    pass
+def parse(text):
+    individual_recipes = extract_recipes(text)
 
 
 if __name__ == "__main__":
-    parse_file
+    paths = [constants.RECIPES_PATH]
+
+    for path in paths:
+        text = helper.get_text_from_file(path)
+        parse(text)
