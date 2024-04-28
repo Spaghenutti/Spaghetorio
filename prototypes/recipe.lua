@@ -966,10 +966,10 @@ data:extend({
     enabled = false,
     energy_required = 1.2,  -- time in seconds to make the item
     ingredients = {
-      {type = "item", name = "iron-plate", amount = 2}
+      {type = "item", name = "iron-plate", amount = 1}
     },
     results = {
-      {type = "item", name = "sp-bolts", amount = 3}
+      {type = "item", name = "sp-bolts", amount = 4}
     }
   },
   {
@@ -5220,42 +5220,3 @@ if not mods["Krastorio2"] then
   table.insert(data.raw.recipe["sp-sulfur-from-acrovoid"].results, {type = "item", name = "sp-silicon", probability=0.15, amount = 1})
   table.insert(data.raw.recipe["sp-sulfur-from-acrovoid"].results, {type = "fluid", name = "sp-oxygen", amount = 15})  
 end
-
--- Recipe changes for base factorio items
-util.change_recipe_ingredients("speed-module",
-  {{"sp-diode", 3}, {"sp-resistor", 6}, {"sp-solder", 2}, {"electronic-circuit", 5}, {"plastic-bar", 1}},
-  {{"sp-diode", 5}, {"sp-resistor", 10}, {"sp-solder", 5}, {"electronic-circuit", 8}, {"plastic-bar", 2}},
-  15,
-  20)
-util.change_recipe_ingredients("speed-module-2",
-  {{"sp-circuit-board", 2}, {"advanced-circuit", 5}, {"sp-solder", 4}, {"sp-coil", 2}, {"sp-light-emitting-diode", 6}, {"sp-integrated-circuit", 2}},
-  {{"sp-circuit-board", 2}, {"advanced-circuit", 6}, {"sp-solder", 6}, {"sp-coil", 5}, {"sp-light-emitting-diode", 8}, {"sp-integrated-circuit", 3}},
-  20,
-  30)
-util.change_recipe_ingredients("speed-module-3",
-  {{"sp-circuit-board", 2}, {"sp-integrated-circuit", 5}, {"processing-unit", 5}, {"sp-processor", 1}, {"sp-cmos", 2}, {"sp-memory-chip", 6}},
-  {{"sp-circuit-board", 4}, {"sp-integrated-circuit", 8}, {"processing-unit", 5}, {"sp-processor", 2}, {"sp-cmos", 5}, {"sp-memory-chip", 12}},
-  45,
-  60)
-util.change_recipe_ingredients("productivity-module",
-  {{"sp-diode", 3}, {"sp-resistor", 4}, {"electronic-circuit", 3}, {"sp-solder", 2}, {"copper-cable", 2}, {"plastic-bar", 1}},
-  {{"sp-diode", 5}, {"sp-resistor", 5}, {"electronic-circuit", 4}, {"sp-solder", 5}, {"copper-cable", 5}, {"plastic-bar", 2}},
-  15,
-  20)
-util.change_recipe_ingredients("productivity-module-2",
-  {{"sp-circuit-board", 1}, {"advanced-circuit", 3}, {"sp-coil", 3}, {"sp-light-emitting-diode", 6}, {"sp-integrated-circuit", 2}},
-  {{"sp-circuit-board", 2}, {"advanced-circuit", 5}, {"sp-coil", 6}, {"sp-light-emitting-diode", 12}, {"sp-integrated-circuit", 3}},
-  20,
-  30)
-  util.change_recipe_ingredients("productivity-module-3",
-  {{"sp-circuit-board", 2}, {"sp-infrared-filter", 2}, {"processing-unit", 4}, {"sp-processor", 1}, {"sp-cmos", 2}, {"sp-memory-chip", 3}},
-  {{"sp-circuit-board", 3}, {"sp-infrared-filter", 5}, {"processing-unit", 5}, {"sp-processor", 2}, {"sp-cmos", 5}, {"sp-memory-chip", 6}},
-  45,
-  60)
-
-data.raw.recipe["cliff-explosives"].category = "crafting-with-fluid"
-util.change_recipe_ingredients("cliff-explosives",
-  {{"sp-graphite", 1}, {"sulfur", 1}, {"iron-plate", 1}, {type="fluid", name="sp-sodium-hydroxide", amount=10}},
-  {{"sp-graphite", 2}, {"sulfur", 2}, {"iron-plate", 1}, {type="fluid", name="sp-sodium-hydroxide", amount=20}},
-  3,
-  5)
