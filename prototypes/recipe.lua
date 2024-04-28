@@ -5218,5 +5218,5 @@ if not mods["Krastorio2"] then
   table.insert(data.raw.recipe["sp-antimony-from-acrovoid"].results, {type = "fluid", name = "sp-nitrogen", amount = 8})
   table.insert(data.raw.recipe["sp-tellurium-from-acrovoid"].results, {type = "fluid", name = "sp-nitrogen", amount = 8})
   table.insert(data.raw.recipe["sp-sulfur-from-acrovoid"].results, {type = "item", name = "sp-silicon", probability=0.15, amount = 1})
-  table.insert(data.raw.recipe["sp-sulfur-from-acrovoid"].results, {type = "fluid", name = "sp-oxygen", amount = 15})  
+  table.insert(data.raw.recipe["sp-sulfur-from-acrovoid"].results, {type = "fluid", name = "sp-oxygen", amount = 15})
 end

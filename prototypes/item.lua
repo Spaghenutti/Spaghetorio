@@ -2887,7 +2887,7 @@ if not mods["Krastorio2"] then
     },
     {
       type = "item",
-      name = "steel-gear-wheel",  -- #ForRegEx# - item
+      name = "sp-steel-gear-wheel",  -- #ForRegEx# - item
       icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-steel-gear-wheel.png",
       icon_size = 64,
       scale = 0.25,

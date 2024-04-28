@@ -323,7 +323,6 @@ data:extend({
     ingredients = {{"electronic-circuit", 1}},
     result = "discharge-defense-remote"
   },
-  -- MARK: Progress in recipe-changes
   {
     type = "recipe",
     name = "exoskeleton-equipment",
@@ -385,6 +384,7 @@ data:extend({
     },
     result = "laser-turret"
   },
+  -- MARK: Progress in recipe-changes
   {
     type = "recipe",
     name = "flamethrower-turret",
@@ -400,7 +400,6 @@ data:extend({
     },
     result = "flamethrower-turret"
   },
-
   {
     type = "recipe",
     name = "artillery-turret",
