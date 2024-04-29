@@ -384,7 +384,6 @@ data:extend({
     },
     result = "laser-turret"
   },
-  -- MARK: Progress in recipe-changes
   {
     type = "recipe",
     name = "flamethrower-turret",
@@ -435,6 +434,7 @@ data:extend({
     ingredients = {{"stone", 5}},
     result = "stone-furnace"
   },
+  -- MARK: Progress in recipe-changes
   {
     type = "recipe",
     name = "boiler",

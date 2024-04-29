@@ -784,6 +784,25 @@ table.insert(data.raw.recipe["sp-liquid-nitrogen"].ingredients, {type = "fluid",
 table.insert(data.raw.recipe["sp-chronomatter"].ingredients, {type = "item", name = "imersite-powder", amount = 4})
 table.insert(data.raw.recipe["sp-bioreactor"].ingredients, {type = "item", name = "biomass", amount = 10})
 table.insert(data.raw.recipe["sp-grobgnum-explorer"].ingredients, {type = "item", name = "ai-core", amount = 20})
+-- Add missing ingredients from recipe-changes.lua
+table.insert(data.raw.recipe["concrete"].normal.ingredients, {"sand", 5})
+table.insert(data.raw.recipe["steel-furnace"].normal.ingredients, {"stone-tablet", 40})
+table.insert(data.raw.recipe["steel-furnace"].normal.ingredients, {"steel-beam", 20})
+table.insert(data.raw.recipe["electric-furnace"].normal.ingredients, {"stone-tablet", 30})
+table.insert(data.raw.recipe["electric-furnace"].normal.ingredients, {"steel-beam", 20})
+table.insert(data.raw.recipe["electric-mining-drill"].normal.ingredients, {"iron-beam", 8})
+table.insert(data.raw.recipe["assembling-machine-1"].normal.ingredients, {"iron-beam", 10})
+table.insert(data.raw.recipe["assembling-machine-2"].normal.ingredients, {"iron-beam", 12})
+table.insert(data.raw.recipe["assembling-machine-2"].normal.ingredients, {"steel-gear-wheel", 20})
+table.insert(data.raw.recipe["lab"].normal.ingredients, {"iron-beam", 16})
+table.insert(data.raw.recipe["lab"].normal.ingredients, {"glass", 20})
+table.insert(data.raw.recipe["solar-panel"].ingredients, {"silicon", 40})
+table.insert(data.raw.recipe["medium-electric-pole"].normal.ingredients, {"iron-beam", 6})
+table.insert(data.raw.recipe["chemical-plant"].normal.ingredients, {"glass", 30})
+table.insert(data.raw.recipe["radar"].normal.ingredients, {"steel-beam", 6})
+table.insert(data.raw.recipe["radar"].normal.ingredients, {"steel-plate", 16})
+table.insert(data.raw.recipe["pump"].normal.ingredients, {"steel-plate", 3})
+table.insert(data.raw.recipe["heat-pipe"].ingredients, {"lithium", 10})
 
 -- Add missing results
 table.insert(data.raw.recipe["sp-gold"].results, {type = "item", name = "sand", probability = 0.98, amount = 3})
@@ -859,46 +878,7 @@ util.change_recipe_ingredients("lithium-sulfur-battery",  -- "huge storage tank"
   4,
   6)
 
--- MARK: Buildings
-
--- MARK: AAI Industries
-util.change_recipe_ingredients("burner-turbine",
-  {{"iron-beam", 8}, {"stone-brick", 24}, {"iron-gear-wheel", 6}, {"motor", 2}},
-  {{"iron-beam", 16}, {"stone-brick", 36}, {"iron-gear-wheel", 12}, {"motor", 4}},
-  8,
-  16)
-  util.change_recipe_ingredients("fuel-processor",
-  {{"iron-plate", 12}, {"stone-brick", 24}, {"sp-bolts", 20}, {"motor", 2}},
-  {{"iron-plate", 16}, {"stone-brick", 36}, {"sp-bolts", 24}, {"motor", 4}},
-  12,
-  24)
-util.change_recipe_ingredients("area-mining-drill",
-  {{"sp-monocrystal", 4}, {"sp-niobium-steel", 24}, {"imersium-gear-wheel", 16}, {"sp-titanium-carbide", 20}, {"electric-engine-unit", 10}, {"sp-transformer", 4}},
-  {{"sp-monocrystal", 8}, {"sp-niobium-steel", 32}, {"imersium-gear-wheel", 32}, {"sp-titanium-carbide", 30}, {"electric-engine-unit", 16}, {"sp-transformer", 8}},
-  36,
-  72)
-util.change_recipe_ingredients("burner-assembling-machine",
-  {{"stone-brick", 20}, {"iron-plate", 20}, {"sp-bolts", 24}, {"motor", 4}},
-  {{"stone-brick", 40}, {"iron-plate", 40}, {"sp-bolts", 40}, {"motor", 8}},
-  8,
-  16)
-util.change_recipe_ingredients("burner-lab",
-  {{"stone-brick", 12}, {"iron-plate", 20}, {"copper-plate", 16}},
-  {{"stone-brick", 24}, {"iron-plate", 40}, {"copper-plate", 32}},
-  8,
-  16)
-util.change_recipe_ingredients("engine-unit",
-  {{"sp-connecting-rod", 8}, {"steel-plate", 2}, {"sp-bolts", 6}, {"steel-gear-wheel", 4}},
-  {{"sp-connecting-rod", 12}, {"steel-plate", 4}, {"sp-bolts", 16}, {"steel-gear-wheel", 8}},
-  2.4,
-  4.8)
-util.change_recipe_ingredients("electric-engine-unit",
-  {{"sp-electromagnet", 6}, {"sp-ball-bearing", 2}, {"sp-duralumin", 2}, {"sp-bolts", 6}, {type = "fluid", name = "lubricant", amount = 40}},
-  {{"sp-electromagnet", 9}, {"sp-ball-bearing", 2}, {"sp-duralumin", 3}, {"sp-bolts", 8}, {type = "fluid", name = "lubricant", amount = 60}},
-  6,
-  8)
-
--- MARK: Krastorio
+-- MARK: Krastorio Buildings
 util.change_recipe_ingredients("kr-wind-turbine",
   {{"iron-plate", 12}, {"stone-brick", 4}, {"sp-bolts", 4}, {"electric-motor", 1}},
   {{"iron-plate", 24}, {"stone-brick", 4}, {"sp-bolts", 10}, {"electric-motor", 2}},
@@ -974,6 +954,43 @@ util.change_recipe_ingredients("kr-mineral-water-pumpjack",
   {{"sp-stainless-steel", 32}, {"sp-bronze-rod", 24}, {"sp-pressure-tube", 24}, {"sp-bolts", 48}, {"engine-unit", 16}},
   16,
   32)
+
+-- MARK: AAI Industries Buildings
+util.change_recipe_ingredients("burner-turbine",
+  {{"iron-beam", 8}, {"stone-brick", 24}, {"iron-gear-wheel", 6}, {"motor", 2}},
+  {{"iron-beam", 16}, {"stone-brick", 36}, {"iron-gear-wheel", 12}, {"motor", 4}},
+  8,
+  16)
+  util.change_recipe_ingredients("fuel-processor",
+  {{"iron-plate", 12}, {"stone-brick", 24}, {"sp-bolts", 20}, {"motor", 2}},
+  {{"iron-plate", 16}, {"stone-brick", 36}, {"sp-bolts", 24}, {"motor", 4}},
+  12,
+  24)
+util.change_recipe_ingredients("area-mining-drill",
+  {{"sp-monocrystal", 4}, {"sp-niobium-steel", 24}, {"imersium-gear-wheel", 16}, {"sp-titanium-carbide", 20}, {"electric-engine-unit", 10}, {"sp-transformer", 4}},
+  {{"sp-monocrystal", 8}, {"sp-niobium-steel", 32}, {"imersium-gear-wheel", 32}, {"sp-titanium-carbide", 30}, {"electric-engine-unit", 16}, {"sp-transformer", 8}},
+  36,
+  72)
+util.change_recipe_ingredients("burner-assembling-machine",
+  {{"stone-brick", 20}, {"iron-plate", 20}, {"sp-bolts", 24}, {"motor", 4}},
+  {{"stone-brick", 40}, {"iron-plate", 40}, {"sp-bolts", 40}, {"motor", 8}},
+  8,
+  16)
+util.change_recipe_ingredients("burner-lab",
+  {{"stone-brick", 12}, {"iron-plate", 20}, {"copper-plate", 16}},
+  {{"stone-brick", 24}, {"iron-plate", 40}, {"copper-plate", 32}},
+  8,
+  16)
+util.change_recipe_ingredients("engine-unit",
+  {{"sp-connecting-rod", 8}, {"steel-plate", 2}, {"sp-bolts", 6}, {"steel-gear-wheel", 4}},
+  {{"sp-connecting-rod", 12}, {"steel-plate", 4}, {"sp-bolts", 16}, {"steel-gear-wheel", 8}},
+  2.4,
+  4.8)
+util.change_recipe_ingredients("electric-engine-unit",
+  {{"sp-electromagnet", 6}, {"sp-ball-bearing", 2}, {"sp-duralumin", 2}, {"sp-bolts", 6}, {type = "fluid", name = "lubricant", amount = 40}},
+  {{"sp-electromagnet", 9}, {"sp-ball-bearing", 2}, {"sp-duralumin", 3}, {"sp-bolts", 8}, {type = "fluid", name = "lubricant", amount = 60}},
+  6,
+  8)
 
 -- Remove crushing recipes
 data.raw.recipe["kr-vc-sp-nuclear-waste"] = nil
