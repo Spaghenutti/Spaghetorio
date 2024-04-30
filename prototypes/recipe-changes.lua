@@ -148,16 +148,80 @@ util.change_recipe_ingredients("express-splitter",
   {{"iron-plate", 69}},
   69,
   69)
--- util.change_recipe_ingredients("",
---   {},
---   {},
---   1,
---   1)
--- util.change_recipe_ingredients("",
---   {},
---   {},
---   1,
---   1)
+-- Base: {"iron-plate", 10}; Krastorio {"iron-beam", 6}
+util.change_recipe_ingredients("medium-electric-pole",
+  {{"iron-stick", 4}, {"sp-bolts", 8}, {"sp-aluminum-cable", 4}},
+  {{"iron-stick", 8}, {"sp-bolts", 16}, {"sp-aluminum-cable", 10}},
+  2,
+  4)
+-- Base: {"iron-plate", 20}; Krastorio {"steel-beam", 8}
+util.change_recipe_ingredients("big-electric-pole",
+  {{"sp-bolts", 12}, {"sp-aluminum-cable", 10}, {"concrete", 4}},
+  {{"sp-bolts", 16}, {"sp-aluminum-cable", 20}, {"concrete", 4}},
+  4,
+  8)
+-- Base: {"iron-plate", 30}; Krastorio {"steel-beam", 12}
+util.change_recipe_ingredients("substation",
+  {{"sp-bolts", 20}, {"advanced-circuit", 2}, {"sp-aluminum-cable", 12}, {"concrete", 16}, {"sp-transformer", 1}, {"sp-relay", 4}},
+  {{"sp-bolts", 40}, {"advanced-circuit", 4}, {"sp-aluminum-cable", 24}, {"concrete", 16}, {"sp-transformer", 1}, {"sp-relay", 8}},
+  6,
+  12)
+util.change_recipe_ingredients("pipe",
+  {{"iron-plate", 2}},
+  {{"iron-plate", 5}},
+  0.2,
+  1)
+util.change_recipe_ingredients("pipe-to-ground",
+  {{"iron-plate", 2}, {"pipe", 10}},
+  {{"iron-plate", 5}, {"pipe", 12}},
+  0.5,
+  1)
+-- Base: {"steel-plate", 2}; Krastorio {"steel-beam", 2}
+-- Base: {"sp-wood", 4}; Krastorio {"wood", 4}
+util.change_recipe_ingredients("rail",
+  {{"stone", 4}, {"sp-bolts", 8}},
+  {{"stone", 4}, {"sp-bolts", 16}},
+  0.5,
+  1)
+-- Base: {"steel-plate", 12}; Krastorio {"steel-beam", 6}
+util.change_recipe_ingredients("train-stop",
+  {{"electronic-circuit", 4}, {"sp-bolts", 12}, {"sp-spring", 4}, {"copper-cable", 4}},
+  {{"electronic-circuit", 6}, {"sp-bolts", 20}, {"sp-spring", 4}, {"copper-cable", 8}},
+  3,
+  4)
+util.change_recipe_ingredients("rail-signal",
+  {{"small-lamp", 3}, {"electronic-circuit", 1}, {"sp-bolts", 4}, {"copper-cable", 2}},
+  {{"small-lamp", 3}, {"electronic-circuit", 2}, {"sp-bolts", 6}, {"copper-cable", 4}},
+  1,
+  2)
+util.change_recipe_ingredients("rail-chain-signal",
+  {{"small-lamp", 3}, {"electronic-circuit", 1}, {"sp-bolts", 4}, {"copper-cable", 4}},
+  {{"small-lamp", 3}, {"electronic-circuit", 2}, {"sp-bolts", 6}, {"copper-cable", 6}},
+  1,
+  2)
+util.change_recipe_ingredients("locomotive",
+  {{"small-lamp", 2}, {"boiler", 1}, {"engine-unit", 12}, {"electronic-circuit", 10}, {"steel-plate", 40}, {"sp-bolts", 60}, {"sp-copper-tube", 40}, {"sp-train-boige", 4}},
+  {{"small-lamp", 2}, {"boiler", 1}, {"engine-unit", 16}, {"electronic-circuit", 20}, {"steel-plate", 80}, {"sp-bolts", 120}, {"sp-copper-tube", 80}, {"sp-train-boige", 4}},
+  30,
+  60)
+util.change_recipe_ingredients("cargo-wagon",
+  {{"sp-spring", 4}, {"iron-plate", 32}, {"steel-plate", 12}, {"sp-bolts", 40}, {"sp-train-boige", 4}},
+  {{"sp-spring", 4}, {"iron-plate", 50}, {"steel-plate", 20}, {"sp-bolts", 60}, {"sp-train-boige", 4}},
+  20,
+  30)
+-- Kratorio: {"steel-beam", 8}
+util.change_recipe_ingredients("fluid-wagon",
+  {{"sp-spring", 4}, {"storage-tank", 3}, {"sp-valve", 6}, {"steel-plate", 12}, {"sp-bolts", 30}, {"sp-train-boige", 4}},
+  {{"sp-spring", 4}, {"storage-tank", 3}, {"sp-valve", 12}, {"steel-plate", 20}, {"sp-bolts", 40}, {"sp-train-boige", 4}},
+  20,
+  30)
+-- Base: {"iron-gear-wheel", 20}, Krastorio {"steel-gear-wheel", 20}
+-- Kratorio: {"automation-core", 8}
+util.change_recipe_ingredients("artillery-wagon",
+  {{"sp-spring", 20}, {"steel-plate", 40}, {"sp-bolts", 100}, {"sp-train-boige", 4}, {"artillery-turret", 1}, {"engine-unit", 4}, {"sp-heavy-ball-bearing", 2}},
+  {{"sp-spring", 32}, {"steel-plate", 80}, {"sp-bolts", 160}, {"sp-train-boige", 4}, {"artillery-turret", 1}, {"engine-unit", 8}, {"sp-heavy-ball-bearing", 4}},
+  60,
+  120)
 -- util.change_recipe_ingredients("",
 --   {},
 --   {},
@@ -345,12 +409,6 @@ util.change_recipe_ingredients("solar-panel",
   {{"sp-aluminum-frame", 10}, {"electronic-circuit", 8}, {"copper-cable", 20},{"sp-phosphorus", 12}},
   10,
   20)
--- Base: {"iron-plate", 10}; Krastorio {"iron-beam", 6}
-util.change_recipe_ingredients("medium-electric-pole",
-  {{"iron-stick", 4}, {"sp-bolts", 8}, {"sp-aluminum-cable", 4}},
-  {{"iron-stick", 8}, {"sp-bolts", 16}, {"sp-aluminum-cable", 10}},
-  4,
-  8)
 -- Base: {"sp-glass", 30}; Krastorio {"glass", 30}
 util.change_recipe_ingredients("chemical-plant",
   {{"steel-beam", 12}, {"electric-motor", 6}, {"stone-brick", 30}, {"sp-copper-tube", 16}, {"electronic-circuit", 16}},
@@ -467,20 +525,26 @@ table.insert(data.raw.recipe["filter-inserter"].normal.ingredients, {"sp-ball-be
 if not mods["Krastorio2"] then
   table.insert(data.raw.recipe["concrete"].normal.ingredients, {"sp-sand", 5})
   table.insert(data.raw.recipe["steel-furnace"].normal.ingredients, {"stone-brick", 40})
-  table.insert(data.raw.recipe["steel-furnace"].normal.ingredients, {"iron-plate", 40})
+  table.insert(data.raw.recipe["steel-furnace"].normal.ingredients, {"steel-plate", 20})
   table.insert(data.raw.recipe["electric-furnace"].normal.ingredients, {"stone-brick", 30})
   table.insert(data.raw.recipe["electric-furnace"].normal.ingredients, {"iron-plate", 40})
   table.insert(data.raw.recipe["electric-mining-drill"].normal.ingredients, {"iron-plate", 20})
   table.insert(data.raw.recipe["assembling-machine-1"].normal.ingredients, {"iron-plate", 24})
-  table.insert(data.raw.recipe["assembling-machine-2"].normal.ingredients, {"iron-plate", 40})
+  table.insert(data.raw.recipe["assembling-machine-2"].normal.ingredients, {"steel-plate", 24})
   table.insert(data.raw.recipe["assembling-machine-2"].normal.ingredients, {"iron-gear-wheel", 20})
   table.insert(data.raw.recipe["lab"].normal.ingredients, {"iron-plate", 40})
   table.insert(data.raw.recipe["lab"].normal.ingredients, {"sp-glass", 20})
   table.insert(data.raw.recipe["solar-panel"].ingredients, {"sp-silicon", 40})
   table.insert(data.raw.recipe["medium-electric-pole"].normal.ingredients, {"iron-plate", 10})
+  table.insert(data.raw.recipe["big-electric-pole"].normal.ingredients, {"steel-plate", 10})
+  table.insert(data.raw.recipe["substation"].normal.ingredients, {"steel-plate", 20})
   table.insert(data.raw.recipe["chemical-plant"].normal.ingredients, {"sp-glass", 30})
   table.insert(data.raw.recipe["radar"].normal.ingredients, {"iron-plate", 50})
   table.insert(data.raw.recipe["pump"].normal.ingredients, {"iron-plate", 8})
   table.insert(data.raw.recipe["heat-pipe"].ingredients, {"sp-lithium", 10})
+  table.insert(data.raw.recipe["rail"].ingredients, {"sp-wood", 4})
+  table.insert(data.raw.recipe["rail"].ingredients, {"steel-plate", 4})
+  table.insert(data.raw.recipe["train-stop"].ingredients, {"steel-plate", 12})
+  table.insert(data.raw.recipe["artillery-wagon"].ingredients, {"iron-gear-wheel", 20})
   -- table.insert(data.raw.recipe[""].ingredients, {})
 end

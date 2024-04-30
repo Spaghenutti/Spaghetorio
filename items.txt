@@ -33,7 +33,7 @@ Ni Nickel
 
 Na Sodium
   +r salt (NaCl extraction from seawater / lakes) -> can also directly be used for cleaning water
-  - used in lamps
+  - used in small-lamps
   +r sodium
   +r liquid-sodium -> wastewater treatment plants
 

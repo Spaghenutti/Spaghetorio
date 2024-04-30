@@ -798,11 +798,19 @@ table.insert(data.raw.recipe["lab"].normal.ingredients, {"iron-beam", 16})
 table.insert(data.raw.recipe["lab"].normal.ingredients, {"glass", 20})
 table.insert(data.raw.recipe["solar-panel"].ingredients, {"silicon", 40})
 table.insert(data.raw.recipe["medium-electric-pole"].normal.ingredients, {"iron-beam", 6})
+table.insert(data.raw.recipe["big-electric-pole"].normal.ingredients, {"steel-beam", 8})
+table.insert(data.raw.recipe["substation"].normal.ingredients, {"steel-beam", 12})
 table.insert(data.raw.recipe["chemical-plant"].normal.ingredients, {"glass", 30})
 table.insert(data.raw.recipe["radar"].normal.ingredients, {"steel-beam", 6})
 table.insert(data.raw.recipe["radar"].normal.ingredients, {"steel-plate", 16})
 table.insert(data.raw.recipe["pump"].normal.ingredients, {"steel-plate", 3})
 table.insert(data.raw.recipe["heat-pipe"].ingredients, {"lithium", 10})
+table.insert(data.raw.recipe["rail"].ingredients, {"wood", 4})
+table.insert(data.raw.recipe["rail"].ingredients, {"steel-beam", 2})
+table.insert(data.raw.recipe["train-stop"].ingredients, {"steel-beam", 8})
+table.insert(data.raw.recipe["fluid-wagon"].ingredients, {"steel-beam", 8})
+table.insert(data.raw.recipe["artillery-wagon"].ingredients, {"steel-gear-wheel", 20})
+table.insert(data.raw.recipe["artillery-wagon"].ingredients, {"automation-core", 8})
 
 -- Add missing results
 table.insert(data.raw.recipe["sp-gold"].results, {type = "item", name = "sand", probability = 0.98, amount = 3})
@@ -954,6 +962,11 @@ util.change_recipe_ingredients("kr-mineral-water-pumpjack",
   {{"sp-stainless-steel", 32}, {"sp-bronze-rod", 24}, {"sp-pressure-tube", 24}, {"sp-bolts", 48}, {"engine-unit", 16}},
   16,
   32)
+util.change_recipe_ingredients("kr-substation-mk2",
+  {{"sp-bolts", 20}, {"processing-unit", 4}, {"sp-aluminum-cable", 24}, {"imersium-beam", 12}, {"concrete", 16}, {"sp-electrode", 4}, {"sp-insulation-sheet", 12}},
+  {{"sp-bolts", 40}, {"processing-unit", 8}, {"sp-aluminum-cable", 48}, {"imersium-beam", 24}, {"concrete", 32}, {"sp-electrode", 8}, {"sp-insulation-sheet", 20}},
+  12,
+  24)
 
 -- MARK: AAI Industries Buildings
 util.change_recipe_ingredients("burner-turbine",

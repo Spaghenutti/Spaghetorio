@@ -2156,8 +2156,10 @@ data:extend({
     ingredients = {
       {type = "item", name = "sp-steel-wheel", amount = 4},
       {type = "item", name = "sp-bolts", amount = 8},
+      {type = "item", name = "sp-connecting-rod", amount = 6},
       {type = "item", name = "sp-spring", amount = 12},
       {type = "item", name = "steel-plate", amount = 4},
+      {type = "item", name = "sp-ball-bearing", amount = 4}
     },
     results = {
       {type = "item", name = "sp-train-boige", amount = 1}
