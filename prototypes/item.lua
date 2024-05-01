@@ -1360,6 +1360,16 @@ data:extend({
   },
   {
     type = "item",
+    name = "sp-anodized-aluminum",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/anodized-aluminum.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "mechanical-component",
+    order = "[aluminum-anodized]",
+    stack_size = 100
+  },
+  {
+    type = "item",
     name = "sp-aluminum-cable",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/icons/aluminum-cable.png",
     icon_size = 64,
@@ -1436,8 +1446,14 @@ data:extend({
   {
     type = "item",
     name = "sp-titanium-frame",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/icons/titanium-frame.png",
+    icon = "__Spaghenutti__/graphics/icons/titanium-frame-1.png",
     icon_size = 64,
+    pictures = {
+      { size = 64, filename = "__Spaghenutti__/graphics/icons/titanium-frame-1.png", scale = 0.25, mipmap_count = 4},
+      { size = 64, filename = "__Spaghenutti__/graphics/icons/titanium-frame-2.png", scale = 0.25, mipmap_count = 4},
+      { size = 64, filename = "__Spaghenutti__/graphics/icons/titanium-frame-3.png", scale = 0.25, mipmap_count = 4},
+      { size = 64, filename = "__Spaghenutti__/graphics/icons/titanium-frame-4.png", scale = 0.25, mipmap_count = 4}
+    },
     scale = 0.25,
     subgroup = "mechanical-component",
     order = "[titanium-frame]",
@@ -1817,6 +1833,33 @@ data:extend({
   ------------------------------------------------------------------------------
   -- MARK: Subgroup intermediate-products
   ------------------------------------------------------------------------------
+  {
+    type = "item",
+    name = "sp-gearbox",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/gearbox.png",
+    icon_size = 64, icon_mipmaps = 4,
+    subgroup = "intermediate-product",
+    order = "[gearbox]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "sp-heavy-gearbox",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/heavy-gearbox.png",
+    icon_size = 64, icon_mipmaps = 4,
+    subgroup = "intermediate-product",
+    order = "[gearbox-heavy]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "sp-differential",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/differential.png",
+    icon_size = 64, icon_mipmaps = 4,
+    subgroup = "intermediate-product",
+    order = "[differential]",
+    stack_size = 50
+  },
   {
     type = "item",
     name = "sp-electromagnet",  -- #ForRegEx# - item

@@ -108,6 +108,7 @@ local util = require("data-util")
 --    - "sp-relay"
 --    - "sp-insulation-sheet"
 --    - "sp-train-boige"
+--    - "sp-cybernetics"
 
 data:extend({
   {
@@ -147,6 +148,19 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-aluminum-frame", amount = 3}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-anodized-aluminum",  -- #ForRegEx# - recipe
+    category = "crafting",
+    enabled = false,
+    energy_required = 8,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-aluminum-sheet", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-anodized-aluminum", amount = 2}
     }
   },
   {
@@ -1412,6 +1426,58 @@ data:extend({
     },
     results = {
       {type = "fluid", name = "sp-coolant", amount = 50}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-gearbox",  -- #ForRegEx# - recipe
+    category = "crafting",
+    enabled = false,
+    energy_required = 2.8,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "iron-plate", amount = 1},
+      {type = "item", name = "iron-stick", amount = 1},
+      {type = "item", name = "iron-gear-wheel", amount = 5}
+    },
+    results = {
+      {type = "item", name = "sp-gearbox", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-heavy-gearbox",  -- #ForRegEx# - recipe
+    category = "crafting-with-fluid",
+    enabled = false,
+    energy_required = 5,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "steel-plate", amount = 2},
+      {type = "fluid", name = "lubricant", amount = 20},
+      {type = "item", name = "sp-bolts", amount = 6},
+      {type = "item", name = "sp-heavy-ball-bearing", amount = 3}
+      -- Base: {type = "item", name = "iron-gear-wheel", amount = 10}
+      -- Krastorio: {type = "item", name = "steel-gear-wheel", amount = 10}
+    },
+    results = {
+      {type = "item", name = "sp-heavy-gearbox", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-differential",  -- #ForRegEx# - recipe
+    category = "crafting-with-fluid",
+    enabled = false,
+    energy_required = 4,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-gearbox", amount = 1},
+      {type = "fluid", name = "lubricant", amount = 50},
+      {type = "item", name = "steel-plate", amount = 2},
+      {type = "item", name = "sp-bolts", amount = 4},
+      {type = "item", name = "sp-ball-bearing", amount = 3}
+      -- Base: {type = "item", name = "iron-gear-wheel", amount = 6}
+      -- Krastorio: {type = "item", name = "steel-gear-wheel", amount = 6}
+    },
+    results = {
+      {type = "item", name = "sp-differential", amount = 1}
     }
   },
   {
@@ -5185,6 +5251,8 @@ if not mods["Krastorio2"] then
   table.insert(data.raw.recipe["sp-vacuum-tube"].ingredients, {type = "item", name = "sp-glass", amount = 3})
   table.insert(data.raw.recipe["sp-vacuum-tube"].ingredients, {type = "fluid", name = "sp-hydrogen", amount = 5})
   table.insert(data.raw.recipe["sp-liquid-nitrogen"].ingredients, {type = "fluid", name = "sp-nitrogen", amount = 5})
+  table.insert(data.raw.recipe["sp-heavy-gearbox"].ingredients, {type = "item", name = "iron-gear-wheel", amount = 10})
+  table.insert(data.raw.recipe["sp-differential"].ingredients, {type = "item", name = "iron-gear-wheel", amount = 6})
   
   -- Add missing results
   table.insert(data.raw.recipe["sp-gold"].results, {type = "item", name = "sp-sand", probability = 0.98, amount = 3})

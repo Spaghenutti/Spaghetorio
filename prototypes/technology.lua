@@ -190,6 +190,27 @@ data:extend({
   },
   {
     type = "technology",
+    name = "sp-aluminum-treatment",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghenutti__/graphics/hr-icons/anodized-aluminum.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-anodized-aluminum"
+      }
+    },
+    prerequisites = {"sp-aluminum-processing"},
+    unit =
+    {
+      count = 100,
+      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
     name = "sp-coal-processing",  -- #ForRegEx# - technology
     icon_size = 256,
     icon = "__Spaghenutti__/graphics/hr-icons/graphite.png",
