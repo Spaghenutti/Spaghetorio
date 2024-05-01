@@ -69,7 +69,7 @@ local util = require("data-util")
 --    - "sp-antenna-chip"
 --    - "sp-capacitor"
 --    - "sp-diode"
---    - "sp-cmos"
+--    - "sp-cmos" (use optical sensor instead)
 --    - "sp-coil"
 --    - "sp-compute-unit"
 --    - "sp-electrode"

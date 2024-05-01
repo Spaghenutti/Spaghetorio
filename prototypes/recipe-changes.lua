@@ -56,8 +56,8 @@ util.change_recipe_ingredients("speed-module-2",
   20,
   30)
 util.change_recipe_ingredients("speed-module-3",
-  {{"sp-circuit-board", 2}, {"sp-integrated-circuit", 5}, {"processing-unit", 5}, {"sp-processor", 1}, {"sp-cmos", 2}, {"sp-memory-chip", 6}},
-  {{"sp-circuit-board", 4}, {"sp-integrated-circuit", 8}, {"processing-unit", 5}, {"sp-processor", 2}, {"sp-cmos", 5}, {"sp-memory-chip", 12}},
+  {{"sp-circuit-board", 2}, {"sp-integrated-circuit", 5}, {"processing-unit", 5}, {"sp-processor", 1}, {"sp-optical-sensor", 2}, {"sp-memory-chip", 6}},
+  {{"sp-circuit-board", 4}, {"sp-integrated-circuit", 8}, {"processing-unit", 5}, {"sp-processor", 2}, {"sp-optical-sensor", 5}, {"sp-memory-chip", 12}},
   45,
   60)
 util.change_recipe_ingredients("productivity-module",
@@ -71,8 +71,8 @@ util.change_recipe_ingredients("productivity-module-2",
   20,
   30)
 util.change_recipe_ingredients("productivity-module-3",
-  {{"sp-circuit-board", 2}, {"sp-infrared-filter", 2}, {"processing-unit", 4}, {"sp-processor", 1}, {"sp-cmos", 2}, {"sp-memory-chip", 3}},
-  {{"sp-circuit-board", 3}, {"sp-infrared-filter", 5}, {"processing-unit", 5}, {"sp-processor", 2}, {"sp-cmos", 5}, {"sp-memory-chip", 6}},
+  {{"sp-circuit-board", 2}, {"sp-infrared-filter", 2}, {"processing-unit", 4}, {"sp-processor", 1}, {"sp-optical-sensor", 2}, {"sp-memory-chip", 3}},
+  {{"sp-circuit-board", 3}, {"sp-infrared-filter", 5}, {"processing-unit", 5}, {"sp-processor", 2}, {"sp-optical-sensor", 5}, {"sp-memory-chip", 6}},
   45,
   60)
 util.change_recipe_ingredients("effectivity-module",
@@ -86,20 +86,15 @@ util.change_recipe_ingredients("effectivity-module-2",
   20,
   30)
 util.change_recipe_ingredients("effectivity-module-3",
-  {{"sp-circuit-board", 2}, {"sp-infrared-filter", 1}, {"processing-unit", 6}, {"sp-processor", 1}, {"sp-cmos", 1}, {"sp-memory-chip", 4}},
-  {{"sp-circuit-board", 3}, {"sp-infrared-filter", 2}, {"processing-unit", 8}, {"sp-processor", 2}, {"sp-cmos", 2}, {"sp-memory-chip", 6}},
+  {{"sp-circuit-board", 2}, {"sp-infrared-filter", 1}, {"processing-unit", 6}, {"sp-processor", 1}, {"sp-optical-sensor", 1}, {"sp-memory-chip", 4}},
+  {{"sp-circuit-board", 3}, {"sp-infrared-filter", 2}, {"processing-unit", 8}, {"sp-processor", 2}, {"sp-optical-sensor", 2}, {"sp-memory-chip", 6}},
   45,
   60)
-util.change_recipe_ingredients("stack-inserter",
-  {{"sp-stainless-steel-gear-wheel", 8}, {"sp-aluminum-frame", 6}, {"sp-bolts", 12}, {"electric-engine-unit", 2}, {"sp-circuit-board", 2}, {"sp-ball-bearing", 6}},
-  {{"sp-stainless-steel-gear-wheel", 15}, {"sp-aluminum-frame", 10}, {"sp-bolts", 20}, {"electric-engine-unit", 3}, {"sp-circuit-board", 2}, {"sp-ball-bearing", 8}},
-  2,
-  3)
-util.change_recipe_ingredients("stack-filter-inserter",
-  {{"sp-stainless-steel-gear-wheel", 8}, {"sp-aluminum-frame", 6}, {"sp-bolts", 12}, {"electric-engine-unit", 2}, {"sp-circuit-board", 2}, {"sp-cmos", 2}, {"sp-infrared-filter", 4}, {"sp-ball-bearing", 6}},
-  {{"sp-stainless-steel-gear-wheel", 15}, {"sp-aluminum-frame", 10}, {"sp-bolts", 20}, {"electric-engine-unit", 3}, {"sp-circuit-board", 2}, {"sp-cmos", 2}, {"sp-infrared-filter", 6}, {"sp-ball-bearing", 8}},
-  2,
-  3)
+  util.change_recipe_ingredients("flying-robot-frame",
+  {{"electric-engine-unit", 1}, {"copper-cable", 2}, {"sp-aluminum-frame", 2}, {"sp-bolts", 4}, {"sp-composites", 2}},
+  {{"electric-engine-unit", 2}, {"copper-cable", 4}, {"sp-aluminum-frame", 3}, {"sp-bolts", 6}, {"sp-composites", 3}},
+  6,
+  10)
 --------------------------------------------------------------------------------
 -- MARK: Logistics
 --------------------------------------------------------------------------------
@@ -148,6 +143,16 @@ util.change_recipe_ingredients("express-splitter",
   {{"iron-plate", 69}},
   69,
   69)
+util.change_recipe_ingredients("stack-inserter",
+  {{"sp-stainless-steel-gear-wheel", 8}, {"sp-aluminum-frame", 6}, {"sp-bolts", 12}, {"electric-engine-unit", 2}, {"sp-circuit-board", 2}, {"sp-ball-bearing", 6}},
+  {{"sp-stainless-steel-gear-wheel", 15}, {"sp-aluminum-frame", 10}, {"sp-bolts", 20}, {"electric-engine-unit", 3}, {"sp-circuit-board", 2}, {"sp-ball-bearing", 8}},
+  2,
+  3)
+util.change_recipe_ingredients("stack-filter-inserter",
+  {{"sp-stainless-steel-gear-wheel", 8}, {"sp-aluminum-frame", 6}, {"sp-bolts", 12}, {"electric-engine-unit", 2}, {"sp-circuit-board", 2}, {"sp-optical-sensor", 2}, {"sp-infrared-filter", 4}, {"sp-ball-bearing", 6}},
+  {{"sp-stainless-steel-gear-wheel", 15}, {"sp-aluminum-frame", 10}, {"sp-bolts", 20}, {"electric-engine-unit", 3}, {"sp-circuit-board", 2}, {"sp-optical-sensor", 2}, {"sp-infrared-filter", 6}, {"sp-ball-bearing", 8}},
+  2,
+  3)
 -- Base: {"iron-plate", 10}; Krastorio {"iron-beam", 6}
 util.change_recipe_ingredients("medium-electric-pole",
   {{"iron-stick", 4}, {"sp-bolts", 8}, {"sp-aluminum-cable", 4}},
@@ -222,26 +227,27 @@ util.change_recipe_ingredients("artillery-wagon",
   {{"sp-spring", 32}, {"steel-plate", 80}, {"sp-bolts", 160}, {"sp-train-boige", 4}, {"artillery-turret", 1}, {"engine-unit", 8}, {"sp-heavy-ball-bearing", 4}},
   60,
   120)
--- util.change_recipe_ingredients("",
---   {},
---   {},
---   1,
---   1)
--- util.change_recipe_ingredients("",
---   {},
---   {},
---   1,
---   1)
--- util.change_recipe_ingredients("",
---   {},
---   {},
---   1,
---   1)
--- util.change_recipe_ingredients("",
---   {},
---   {},
---   1,
---   1)
+util.change_recipe_ingredients("car",
+  {{"engine-unit", 1}, {"iron-stick", 4}, {"iron-gear-wheel", 12}, {"sp-bolts", 20}, {"steel-plate", 8}, {"sp-steel-wheel", 4}, {"sp-rubber", 4}, {"sp-ball-bearing", 16}},
+  {{"engine-unit", 2}, {"iron-stick", 12}, {"iron-gear-wheel", 12}, {"sp-bolts", 40}, {"steel-plate", 12}, {"sp-steel-wheel", 4}, {"sp-rubber", 4}, {"sp-ball-bearing", 24}},
+  20,
+  30)
+-- Base: {"iron-gear-wheel", 50}, Krastorio {"steel-gear-wheel", 50}
+util.change_recipe_ingredients("tank",
+  {{"sp-heavy-ball-bearing", 20}, {"engine-unit", 12}, {"steel-plate", 40}, {"sp-steel-wheel", 16}, {"sp-bolts", 120}, {"advanced-circuit", 10}, {"sp-titanium-plate", 16}},
+  {{"sp-heavy-ball-bearing", 32}, {"engine-unit", 24}, {"steel-plate", 60}, {"sp-steel-wheel", 20}, {"sp-bolts", 200}, {"advanced-circuit", 16}, {"sp-titanium-plate", 32}},
+  60,
+  90)
+util.change_recipe_ingredients("logistic-robot",
+  {{"flying-robot-frame", 1}, {"electric-engine-unit", 1}, {"battery", 4}, {"sp-optical-sensor", 2}, {"sp-titanium-plate", 2}},
+  {{"flying-robot-frame", 1}, {"electric-engine-unit", 1}, {"battery", 6}, {"sp-optical-sensor", 2}, {"sp-titanium-plate", 4}},
+  4,
+  6)
+  util.change_recipe_ingredients("construction-robot",
+  {{"flying-robot-frame", 1}, {"electric-engine-unit", 1}, {"battery", 4}, {"sp-optical-sensor", 2}, {"sp-titanium-plate", 2}},
+  {{"flying-robot-frame", 1}, {"electric-engine-unit", 1}, {"battery", 6}, {"sp-optical-sensor", 2}, {"sp-titanium-plate", 4}},
+  4,
+  6)
 -- util.change_recipe_ingredients("",
 --   {},
 --   {},
@@ -276,8 +282,8 @@ util.change_recipe_ingredients("artillery-wagon",
 -- MARK: Combat
 --------------------------------------------------------------------------------
 util.change_recipe_ingredients("night-vision-equipment",
-  {{"sp-circuit-board", 1}, {"sp-composites", 2}, {"plastic-bar", 2}, {"sp-cmos", 2}, {"sp-lens", 6}, {"sp-laser", 1}, {"sp-rubber", 1}},
-  {{"sp-circuit-board", 2}, {"sp-composites", 3}, {"plastic-bar", 3}, {"sp-cmos", 2}, {"sp-lens", 10}, {"sp-laser", 2}, {"sp-rubber", 2}},
+  {{"sp-circuit-board", 1}, {"sp-composites", 2}, {"plastic-bar", 2}, {"sp-optical-sensor", 2}, {"sp-lens", 6}, {"sp-laser", 1}, {"sp-rubber", 1}},
+  {{"sp-circuit-board", 2}, {"sp-composites", 3}, {"plastic-bar", 3}, {"sp-optical-sensor", 2}, {"sp-lens", 10}, {"sp-laser", 2}, {"sp-rubber", 2}},
   10,
   12)
 util.change_recipe_ingredients("belt-immunity-equipment",
@@ -479,8 +485,8 @@ util.change_recipe_ingredients("flamethrower-turret",
   30)
 data.raw.recipe["artillery-turret"].category = "crafting-with-fluid"
 util.change_recipe_ingredients("artillery-turret",
-  {{"steel-plate", 80}, {"concrete", 60}, {"sp-bolts", 200}, {"sp-circuit-board", 5}, {"sp-cmos", 2}, {"sp-lens", 5}, {"radar", 1}, {type = "fluid", name = "lubricant", amount = 100}},
-  {{"steel-plate", 100}, {"concrete", 100}, {"sp-bolts", 400}, {"sp-circuit-board", 8}, {"sp-cmos", 4}, {"sp-lens", 8}, {"radar", 1}, {type = "fluid", name = "lubricant", amount = 500}},
+  {{"steel-plate", 80}, {"concrete", 60}, {"sp-bolts", 200}, {"sp-circuit-board", 5}, {"sp-optical-sensor", 2}, {"sp-lens", 5}, {"radar", 1}, {type = "fluid", name = "lubricant", amount = 100}},
+  {{"steel-plate", 100}, {"concrete", 100}, {"sp-bolts", 400}, {"sp-circuit-board", 8}, {"sp-optical-sensor", 4}, {"sp-lens", 8}, {"radar", 1}, {type = "fluid", name = "lubricant", amount = 500}},
   40,
   60)
 util.change_recipe_ingredients("artillery-targeting-remote",
@@ -519,7 +525,7 @@ table.insert(data.raw.recipe["fast-inserter"].ingredients, {"sp-bolts", 4})
 table.insert(data.raw.recipe["fast-inserter"].ingredients, {"sp-ball-bearing", 2})
 table.insert(data.raw.recipe["filter-inserter"].normal.ingredients, {"electric-motor", 1})
 table.insert(data.raw.recipe["filter-inserter"].normal.ingredients, {"sp-bolts", 4})
-table.insert(data.raw.recipe["filter-inserter"].normal.ingredients, {"sp-cmos", 1})
+table.insert(data.raw.recipe["filter-inserter"].normal.ingredients, {"sp-optical-sensor", 1})
 table.insert(data.raw.recipe["filter-inserter"].normal.ingredients, {"sp-ball-bearing", 4})
 
 if not mods["Krastorio2"] then
@@ -546,5 +552,6 @@ if not mods["Krastorio2"] then
   table.insert(data.raw.recipe["rail"].ingredients, {"steel-plate", 4})
   table.insert(data.raw.recipe["train-stop"].ingredients, {"steel-plate", 12})
   table.insert(data.raw.recipe["artillery-wagon"].ingredients, {"iron-gear-wheel", 20})
+  table.insert(data.raw.recipe["tank"].ingredients, {"iron-gear-wheel", 50})
   -- table.insert(data.raw.recipe[""].ingredients, {})
 end

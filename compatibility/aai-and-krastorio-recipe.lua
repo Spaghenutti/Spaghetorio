@@ -811,6 +811,7 @@ table.insert(data.raw.recipe["train-stop"].ingredients, {"steel-beam", 8})
 table.insert(data.raw.recipe["fluid-wagon"].ingredients, {"steel-beam", 8})
 table.insert(data.raw.recipe["artillery-wagon"].ingredients, {"steel-gear-wheel", 20})
 table.insert(data.raw.recipe["artillery-wagon"].ingredients, {"automation-core", 8})
+table.insert(data.raw.recipe["tank"].ingredients, {"steel-gear-wheel", 50})
 
 -- Add missing results
 table.insert(data.raw.recipe["sp-gold"].results, {type = "item", name = "sand", probability = 0.98, amount = 3})
