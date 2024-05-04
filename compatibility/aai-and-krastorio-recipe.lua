@@ -786,7 +786,8 @@ table.insert(data.raw.recipe["sp-bioreactor"].ingredients, {type = "item", name 
 table.insert(data.raw.recipe["sp-grobgnum-explorer"].ingredients, {type = "item", name = "ai-core", amount = 20})
 table.insert(data.raw.recipe["sp-heavy-gearbox"].ingredients, {type = "item", name = "steel-gear-wheel", amount = 10})
 table.insert(data.raw.recipe["sp-differential"].ingredients, {type = "item", name = "steel-gear-wheel", amount = 6})
--- Add missing ingredients from recipe-changes.lua
+
+-- MARK: Add missing ingredients from recipe-changes.lua
 table.insert(data.raw.recipe["concrete"].normal.ingredients, {"sand", 5})
 table.insert(data.raw.recipe["steel-furnace"].normal.ingredients, {"stone-tablet", 40})
 table.insert(data.raw.recipe["steel-furnace"].normal.ingredients, {"steel-beam", 20})
@@ -795,7 +796,6 @@ table.insert(data.raw.recipe["electric-furnace"].normal.ingredients, {"steel-bea
 table.insert(data.raw.recipe["electric-mining-drill"].normal.ingredients, {"iron-beam", 8})
 table.insert(data.raw.recipe["assembling-machine-1"].normal.ingredients, {"iron-beam", 10})
 table.insert(data.raw.recipe["assembling-machine-2"].normal.ingredients, {"iron-beam", 12})
-table.insert(data.raw.recipe["assembling-machine-2"].normal.ingredients, {"steel-gear-wheel", 20})
 table.insert(data.raw.recipe["lab"].normal.ingredients, {"iron-beam", 16})
 table.insert(data.raw.recipe["lab"].normal.ingredients, {"glass", 20})
 table.insert(data.raw.recipe["solar-panel"].ingredients, {"silicon", 40})
@@ -811,11 +811,10 @@ table.insert(data.raw.recipe["rail"].ingredients, {"wood", 4})
 table.insert(data.raw.recipe["rail"].ingredients, {"steel-beam", 2})
 table.insert(data.raw.recipe["train-stop"].ingredients, {"steel-beam", 8})
 table.insert(data.raw.recipe["fluid-wagon"].ingredients, {"steel-beam", 8})
-table.insert(data.raw.recipe["artillery-wagon"].ingredients, {"steel-gear-wheel", 20})
 table.insert(data.raw.recipe["artillery-wagon"].ingredients, {"automation-core", 8})
-table.insert(data.raw.recipe["tank"].ingredients, {"steel-gear-wheel", 50})
+table.insert(data.raw.recipe["personal-roboport-equipment"].ingredients, {"automation-core", 5})
 
--- Add missing results
+-- MARK: Add missing results
 table.insert(data.raw.recipe["sp-gold"].results, {type = "item", name = "sand", probability = 0.98, amount = 3})
 table.insert(data.raw.recipe["sp-platinum-iridium"].results, {type = "item", name = "sand", probability = 0.9807, amount = 3})
 table.insert(data.raw.recipe["sp-sodium-and-chlorine"].results, {type = "fluid", name = "chlorine", amount = 3})
@@ -896,8 +895,8 @@ util.change_recipe_ingredients("kr-wind-turbine",
   10,
   20)
 util.change_recipe_ingredients("kr-crusher",
-  {{"iron-beam", 12}, {"iron-gear-wheel", 30}, {"sp-bolts", 36}, {"motor", 10}, {"stone-brick", 16}},
-  {{"iron-beam", 24}, {"iron-gear-wheel", 60}, {"sp-bolts", 72}, {"motor", 20}, {"stone-brick", 32}},
+  {{"iron-beam", 12}, {"iron-gear-wheel", 30}, {"sp-gearbox", 8}, {"sp-bolts", 36}, {"motor", 10}, {"stone-brick", 16}},
+  {{"iron-beam", 24}, {"iron-gear-wheel", 60}, {"sp-gearbox", 12}, {"sp-bolts", 72}, {"motor", 20}, {"stone-brick", 32}},
   12,
   24)
 util.change_recipe_ingredients("kr-greenhouse",
@@ -946,13 +945,13 @@ util.change_recipe_ingredients("kr-antimatter-reactor",
   1000,
   2000)
 util.change_recipe_ingredients("kr-electric-mining-drill-mk2",
-  {{"steel-beam", 12}, {"sp-bolts", 30}, {"sp-ceramics", 24}, {"electric-motor", 8}, {"sp-TiNb", 8}, {"steel-gear-wheel", 12}},
-  {{"steel-beam", 20}, {"sp-bolts", 50}, {"sp-ceramics", 24}, {"electric-motor", 12}, {"sp-TiNb", 16}, {"steel-gear-wheel", 20}},
+  {{"steel-beam", 12}, {"sp-bolts", 30}, {"sp-ceramics", 24}, {"electric-motor", 8}, {"sp-TiNb", 8}, {"sp-gearbox", 12}},
+  {{"steel-beam", 20}, {"sp-bolts", 50}, {"sp-ceramics", 24}, {"electric-motor", 12}, {"sp-TiNb", 16}, {"sp-gearbox", 20}},
   14,
   28)
 util.change_recipe_ingredients("kr-electric-mining-drill-mk3",
-  {{"sp-diamond", 8}, {"sp-niobium-steel", 20}, {"electric-engine-unit", 4}, {"sp-invar", 8}, {"sp-stainless-steel-gear-wheel", 12}},
-  {{"sp-diamond", 16}, {"sp-niobium-steel", 36}, {"electric-engine-unit", 8}, {"sp-invar", 20}, {"sp-stainless-steel-gear-wheel", 24}},
+  {{"sp-diamond", 8}, {"sp-niobium-steel", 20}, {"electric-engine-unit", 4}, {"sp-invar", 8}, {"sp-heavy-gearbox", 6}},
+  {{"sp-diamond", 16}, {"sp-niobium-steel", 36}, {"electric-engine-unit", 8}, {"sp-invar", 20}, {"sp-heavy-gearbox", 10}},
   20,
   40)
 util.change_recipe_ingredients("kr-quarry-drill",
@@ -973,8 +972,8 @@ util.change_recipe_ingredients("kr-substation-mk2",
 
 -- MARK: AAI Industries Buildings
 util.change_recipe_ingredients("burner-turbine",
-  {{"iron-beam", 8}, {"stone-brick", 24}, {"iron-gear-wheel", 6}, {"motor", 2}},
-  {{"iron-beam", 16}, {"stone-brick", 36}, {"iron-gear-wheel", 12}, {"motor", 4}},
+  {{"iron-beam", 8}, {"stone-brick", 24}, {"sp-gearbox", 2}, {"motor", 2}},
+  {{"iron-beam", 16}, {"stone-brick", 36}, {"sp-gearbox", 4}, {"motor", 4}},
   8,
   16)
   util.change_recipe_ingredients("fuel-processor",
@@ -998,8 +997,8 @@ util.change_recipe_ingredients("burner-lab",
   8,
   16)
 util.change_recipe_ingredients("engine-unit",
-  {{"sp-connecting-rod", 8}, {"steel-plate", 2}, {"sp-bolts", 6}, {"steel-gear-wheel", 4}},
-  {{"sp-connecting-rod", 12}, {"steel-plate", 4}, {"sp-bolts", 16}, {"steel-gear-wheel", 8}},
+  {{"sp-connecting-rod", 8}, {"steel-plate", 2}, {"sp-bolts", 6}, {"sp-gearbox", 1}},
+  {{"sp-connecting-rod", 12}, {"steel-plate", 4}, {"sp-bolts", 16}, {"sp-gearbox", 2}},
   2.4,
   4.8)
 util.change_recipe_ingredients("electric-engine-unit",

@@ -20,8 +20,8 @@ util.change_recipe_ingredients("electronic-circuit",
   0.5,
   1)
 util.change_recipe_ingredients("motor",
-  {{"iron-plate", 1}, {"sp-bolts", 3}, {"iron-gear-wheel", 2}},
-  {{"iron-plate", 2}, {"sp-bolts", 6}, {"iron-gear-wheel", 4}},
+  {{"iron-plate", 1}, {"sp-bolts", 3}, {"sp-gearbox", 1}},
+  {{"iron-plate", 2}, {"sp-bolts", 6}, {"sp-gearbox", 1}},
   2,
   3)
 util.change_recipe_ingredients("electric-motor",
@@ -99,8 +99,8 @@ util.change_recipe_ingredients("effectivity-module-3",
 -- MARK: Logistics
 --------------------------------------------------------------------------------
 util.change_recipe_ingredients("transport-belt",
-  {{"iron-plate", 1}, {"motor", 1}, {"iron-gear-wheel", 2}},
-  {{"iron-plate", 2}, {"motor", 1}, {"iron-gear-wheel", 2}},
+  {{"iron-plate", 1}, {"iron-stick", 1}, {"motor", 1}},
+  {{"iron-plate", 3}, {"iron-stick", 2}, {"motor", 1}},
   nil,
   nil)
 util.change_recipe_ingredients("fast-transport-belt",
@@ -220,22 +220,20 @@ util.change_recipe_ingredients("fluid-wagon",
   {{"sp-spring", 4}, {"storage-tank", 3}, {"sp-valve", 12}, {"steel-plate", 20}, {"sp-bolts", 40}, {"sp-train-boige", 4}},
   20,
   30)
--- Base: {"iron-gear-wheel", 20}, Krastorio {"steel-gear-wheel", 20}
 -- Kratorio: {"automation-core", 8}
 util.change_recipe_ingredients("artillery-wagon",
-  {{"sp-spring", 20}, {"steel-plate", 40}, {"sp-bolts", 100}, {"sp-train-boige", 4}, {"artillery-turret", 1}, {"engine-unit", 4}, {"sp-heavy-ball-bearing", 2}},
-  {{"sp-spring", 32}, {"steel-plate", 80}, {"sp-bolts", 160}, {"sp-train-boige", 4}, {"artillery-turret", 1}, {"engine-unit", 8}, {"sp-heavy-ball-bearing", 4}},
+  {{"sp-spring", 20}, {"steel-plate", 40}, {"sp-bolts", 100}, {"sp-train-boige", 4}, {"artillery-turret", 1}, {"engine-unit", 4}, {"sp-heavy-ball-bearing", 2}, {"sp-heavy-gearbox", 6}},
+  {{"sp-spring", 32}, {"steel-plate", 80}, {"sp-bolts", 160}, {"sp-train-boige", 4}, {"artillery-turret", 1}, {"engine-unit", 8}, {"sp-heavy-ball-bearing", 4}, {"sp-heavy-gearbox", 6}},
   60,
   120)
 util.change_recipe_ingredients("car",
-  {{"engine-unit", 1}, {"iron-stick", 4}, {"iron-gear-wheel", 12}, {"sp-bolts", 20}, {"steel-plate", 8}, {"sp-steel-wheel", 4}, {"sp-rubber", 4}, {"sp-ball-bearing", 16}},
-  {{"engine-unit", 2}, {"iron-stick", 12}, {"iron-gear-wheel", 12}, {"sp-bolts", 40}, {"steel-plate", 12}, {"sp-steel-wheel", 4}, {"sp-rubber", 4}, {"sp-ball-bearing", 24}},
+  {{"engine-unit", 1}, {"iron-stick", 4}, {"sp-gearbox", 2}, {"sp-differential", 1}, {"sp-bolts", 20}, {"steel-plate", 8}, {"sp-steel-wheel", 4}, {"sp-rubber", 4}, {"sp-ball-bearing", 16}},
+  {{"engine-unit", 2}, {"iron-stick", 12}, {"sp-gearbox", 5}, {"sp-differential", 1}, {"sp-bolts", 40}, {"steel-plate", 12}, {"sp-steel-wheel", 4}, {"sp-rubber", 4}, {"sp-ball-bearing", 24}},
   20,
   30)
--- Base: {"iron-gear-wheel", 50}, Krastorio {"steel-gear-wheel", 50}
 util.change_recipe_ingredients("tank",
-  {{"sp-heavy-ball-bearing", 20}, {"engine-unit", 12}, {"steel-plate", 40}, {"sp-steel-wheel", 16}, {"sp-bolts", 120}, {"advanced-circuit", 10}, {"sp-titanium-plate", 16}},
-  {{"sp-heavy-ball-bearing", 32}, {"engine-unit", 24}, {"steel-plate", 60}, {"sp-steel-wheel", 20}, {"sp-bolts", 200}, {"advanced-circuit", 16}, {"sp-titanium-plate", 32}},
+  {{"sp-heavy-ball-bearing", 20}, {"engine-unit", 12}, {"steel-plate", 40}, {"sp-steel-wheel", 16}, {"sp-bolts", 120}, {"advanced-circuit", 10}, {"sp-titanium-plate", 16}, {"sp-heavy-gearbox", 8}},
+  {{"sp-heavy-ball-bearing", 32}, {"engine-unit", 24}, {"steel-plate", 60}, {"sp-steel-wheel", 20}, {"sp-bolts", 200}, {"advanced-circuit", 16}, {"sp-titanium-plate", 32}, {"sp-heavy-gearbox", 12}},
   60,
   90)
 util.change_recipe_ingredients("logistic-robot",
@@ -341,9 +339,10 @@ util.change_recipe_ingredients("exoskeleton-equipment",
   {{"processing-unit", 12}, {"electric-engine-unit", 10}, {"sp-bolts", 40}, {"sp-stainless-steel-gear-wheel", 24}, {"sp-aluminum-frame", 12}, {"sp-ball-bearing", 12}, {"sp-spring", 20}},
   20,
   30)
+-- Krastorio: {"automation-core", 2}
 util.change_recipe_ingredients("personal-roboport-equipment",
-  {{"advanced-circuit", 6}, {"iron-gear-wheel", 16}, {"sp-aluminum-frame", 6}, {"sp-bolts", 16}, {"battery", 30}, {"sp-capacitor", 6}},
-  {{"advanced-circuit", 10}, {"iron-gear-wheel", 30}, {"sp-aluminum-frame", 10}, {"sp-bolts", 30}, {"battery", 60}, {"sp-capacitor", 12}},
+  {{"advanced-circuit", 6}, {"sp-aluminum-frame", 6}, {"sp-bolts", 16}, {"battery", 30}, {"sp-capacitor", 6}},
+  {{"advanced-circuit", 10}, {"sp-aluminum-frame", 10}, {"sp-bolts", 30}, {"battery", 60}, {"sp-capacitor", 12}},
   10,
   20)
 util.change_recipe_ingredients("personal-roboport-mk2-equipment",
@@ -375,8 +374,8 @@ util.change_recipe_ingredients("electric-furnace",
   32)
 -- Base: {"iron-plate", 20}; Krastorio {"iron-beam", 8}
 util.change_recipe_ingredients("electric-mining-drill",
-  {{"iron-gear-wheel", 24}, {"sp-bolts", 20}, {"electric-motor", 4}},
-  {{"iron-gear-wheel", 36}, {"sp-bolts", 28}, {"electric-motor", 8}},
+  {{"iron-gear-wheel", 12}, {"sp-gearbox", 5}, {"sp-bolts", 20}, {"electric-motor", 4}},
+  {{"iron-gear-wheel", 18}, {"sp-gearbox", 8}, {"sp-bolts", 28}, {"electric-motor", 8}},
   8,
   16)
 util.change_recipe_ingredients("boiler",
@@ -391,15 +390,14 @@ util.change_recipe_ingredients("steam-engine",
   24)
 -- Base: {"iron-plate", 24}; Krastorio {"iron-beam", 10}
 util.change_recipe_ingredients("assembling-machine-1",
-  {{"stone-brick", 20}, {"sp-bolts", 24}, {"electric-motor", 6}},
-  {{"stone-brick", 40}, {"sp-bolts", 40}, {"electric-motor", 12}},
+  {{"stone-brick", 20}, {"sp-bolts", 24}, {"electric-motor", 6}, {"sp-gearbox", 4}},
+  {{"stone-brick", 40}, {"sp-bolts", 40}, {"electric-motor", 12}, {"sp-gearbox", 6}},
   8,
   16)
 -- Base: {"iron-plate", 40}; Krastorio {"steel-beam", 12}
--- Base: {"iron-gear-wheel", 20}; Krastorio {"steel-gear-wheel", 20}
 util.change_recipe_ingredients("assembling-machine-2",
-  {{"electronic-circuit", 10}, {"engine-unit", 4}, {"stone-brick", 32}, {"sp-bolts", 24}},
-  {{"electronic-circuit", 20}, {"engine-unit", 8}, {"stone-brick", 64}, {"sp-bolts", 48}},
+  {{"electronic-circuit", 10}, {"engine-unit", 4}, {"stone-brick", 32}, {"sp-bolts", 24}, {"sp-gearbox", 6}},
+  {{"electronic-circuit", 20}, {"engine-unit", 8}, {"stone-brick", 64}, {"sp-bolts", 48}, {"sp-gearbox", 10}},
   10,
   20)
 -- Base: {"iron-plate", 40}; Krastorio {"iron-beam", 16}
@@ -537,7 +535,6 @@ if not mods["Krastorio2"] then
   table.insert(data.raw.recipe["electric-mining-drill"].normal.ingredients, {"iron-plate", 20})
   table.insert(data.raw.recipe["assembling-machine-1"].normal.ingredients, {"iron-plate", 24})
   table.insert(data.raw.recipe["assembling-machine-2"].normal.ingredients, {"steel-plate", 24})
-  table.insert(data.raw.recipe["assembling-machine-2"].normal.ingredients, {"iron-gear-wheel", 20})
   table.insert(data.raw.recipe["lab"].normal.ingredients, {"iron-plate", 40})
   table.insert(data.raw.recipe["lab"].normal.ingredients, {"sp-glass", 20})
   table.insert(data.raw.recipe["solar-panel"].ingredients, {"sp-silicon", 40})
@@ -551,7 +548,5 @@ if not mods["Krastorio2"] then
   table.insert(data.raw.recipe["rail"].ingredients, {"sp-wood", 4})
   table.insert(data.raw.recipe["rail"].ingredients, {"steel-plate", 4})
   table.insert(data.raw.recipe["train-stop"].ingredients, {"steel-plate", 12})
-  table.insert(data.raw.recipe["artillery-wagon"].ingredients, {"iron-gear-wheel", 20})
-  table.insert(data.raw.recipe["tank"].ingredients, {"iron-gear-wheel", 50})
   -- table.insert(data.raw.recipe[""].ingredients, {})
 end

@@ -20,7 +20,7 @@ TODO:
   + Add missing results for acrocrystal recipes
   + Add missing results for acrovoid recipes
   + Add missing results for acromatter recipes
-  - Updated recipes using gears with gearbox, heavy-gearbox and differential
+  + Updated recipes using gears with gearbox, heavy-gearbox and differential
   - Updated recipes for electronic components to have common intermediates
   - do TODO in recipes: "add uses to"
   - Add rockets depending on the explorer
