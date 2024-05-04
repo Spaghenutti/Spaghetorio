@@ -246,11 +246,48 @@ util.change_recipe_ingredients("logistic-robot",
   {{"flying-robot-frame", 1}, {"electric-engine-unit", 1}, {"battery", 6}, {"sp-optical-sensor", 2}, {"sp-titanium-plate", 4}},
   4,
   6)
--- util.change_recipe_ingredients("",
---   {},
---   {},
---   1,
---   1)
+util.change_recipe_ingredients("roboport",
+  {{"steel-plate", 16}, {"sp-bolts", 30}, {"advanced-circuit", 45}, {"copper-cable", 30}, {"sp-transformer", 6}, {"sp-electrode", 4}, {"sp-capacitor", 50}},
+  {{"steel-plate", 32}, {"sp-bolts", 60}, {"advanced-circuit", 60}, {"copper-cable", 40}, {"sp-transformer", 10}, {"sp-electrode", 8}, {"sp-capacitor", 80}},
+  20,
+  30)
+data.raw.recipe["red-wire"].category = "crafting-with-fluid"
+util.change_recipe_ingredients("red-wire",
+{{"copper-cable", 1}, {type = "fluid", name = "sp-vinyl-chloride", amount = 5}},
+{{"copper-cable", 1}, {type = "fluid", name = "sp-vinyl-chloride", amount = 10}},
+  0.5,
+  0.5)
+data.raw.recipe["green-wire"].category = "crafting-with-fluid"
+util.change_recipe_ingredients("green-wire",
+  {{"copper-cable", 1}, {type = "fluid", name = "sp-vinyl-chloride", amount = 5}},
+  {{"copper-cable", 1}, {type = "fluid", name = "sp-vinyl-chloride", amount = 10}},
+  0.5,
+  0.5)
+util.change_recipe_ingredients("arithmetic-combinator",
+  {{"copper-cable", 5}, {"electronic-circuit", 2}, {"sp-transistor", 20}, {"sp-solder", 2}, {"sp-resistor", 8}, {"sp-anodized-aluminum", 3}},
+  {{"copper-cable", 8}, {"electronic-circuit", 5}, {"sp-transistor", 50}, {"sp-solder", 4}, {"sp-resistor", 12}, {"sp-anodized-aluminum", 5}},
+  5,
+  8)
+util.change_recipe_ingredients("decider-combinator",
+  {{"copper-cable", 5}, {"electronic-circuit", 2}, {"sp-solder", 2}, {"sp-resistor", 8}, {"sp-anodized-aluminum", 3}},
+  {{"copper-cable", 8}, {"electronic-circuit", 5}, {"sp-solder", 3}, {"sp-resistor", 12}, {"sp-anodized-aluminum", 5}},
+  4,
+  8)
+util.change_recipe_ingredients("constant-combinator",
+  {{"copper-cable", 2}, {"electronic-circuit", 2}, {"sp-anodized-aluminum", 2}},
+  {{"copper-cable", 4}, {"electronic-circuit", 5}, {"sp-anodized-aluminum", 3}},
+  2,
+  3)
+util.change_recipe_ingredients("power-switch",
+  {{"sp-aluminum-cable", 2}, {"electronic-circuit", 2}, {"sp-anodized-aluminum", 2}, {"sp-electrode", 2}},
+  {{"sp-aluminum-cable", 4}, {"electronic-circuit", 5}, {"sp-anodized-aluminum", 3}, {"sp-electrode", 4}},
+  2,
+  3)
+util.change_recipe_ingredients("programmable-speaker",
+  {{"copper-cable", 2}, {"electronic-circuit", 2}, {"sp-magnet", 2}, {"iron-stick", 4}, {"sp-bolts", 6}, {"sp-aluminum-frame", 2}},
+  {{"copper-cable", 4}, {"electronic-circuit", 5}, {"sp-magnet", 2}, {"iron-stick", 8}, {"sp-bolts", 12}, {"sp-aluminum-frame", 3}},
+  2,
+  3)
 -- util.change_recipe_ingredients("",
 --   {},
 --   {},
