@@ -288,31 +288,12 @@ util.change_recipe_ingredients("programmable-speaker",
   {{"copper-cable", 4}, {"electronic-circuit", 5}, {"sp-magnet", 2}, {"iron-stick", 8}, {"sp-bolts", 12}, {"sp-aluminum-frame", 3}},
   2,
   3)
--- util.change_recipe_ingredients("",
---   {},
---   {},
---   1,
---   1)
--- util.change_recipe_ingredients("",
---   {},
---   {},
---   1,
---   1)
--- util.change_recipe_ingredients("",
---   {},
---   {},
---   1,
---   1)
--- util.change_recipe_ingredients("",
---   {},
---   {},
---   1,
---   1)
--- util.change_recipe_ingredients("",
---   {},
---   {},
---   1,
---   1)
+data.raw.recipe["cliff-explosives"].category = "crafting-with-fluid"
+util.change_recipe_ingredients("cliff-explosives",
+  {{"sp-graphite", 1}, {"sulfur", 1}, {"iron-plate", 1}, {type="fluid", name="sp-sodium-hydroxide", amount=10}},
+  {{"sp-graphite", 2}, {"sulfur", 2}, {"iron-plate", 1}, {type="fluid", name="sp-sodium-hydroxide", amount=20}},
+  2,
+  3)
 --------------------------------------------------------------------------------
 -- MARK: Combat
 --------------------------------------------------------------------------------
@@ -433,10 +414,36 @@ util.change_recipe_ingredients("assembling-machine-1",
   16)
 -- Base: {"iron-plate", 40}; Krastorio {"steel-beam", 12}
 util.change_recipe_ingredients("assembling-machine-2",
-  {{"electronic-circuit", 10}, {"engine-unit", 4}, {"stone-brick", 32}, {"sp-bolts", 24}, {"sp-gearbox", 6}},
-  {{"electronic-circuit", 20}, {"engine-unit", 8}, {"stone-brick", 64}, {"sp-bolts", 48}, {"sp-gearbox", 10}},
+  {{"electronic-circuit", 10}, {"engine-unit", 4}, {"stone-brick", 32}, {"steel-plate", 25}, {"sp-bolts", 24}, {"sp-gearbox", 6}},
+  {{"electronic-circuit", 20}, {"engine-unit", 8}, {"stone-brick", 64}, {"steel-plate", 50}, {"sp-bolts", 48}, {"sp-gearbox", 10}},
   10,
   20)
+util.change_recipe_ingredients("assembling-machine-3",
+  {{"advanced-circuit", 16}, {"electric-engine-unit", 8}, {"concrete", 32}, {"steel-plate", 25}, {"sp-bolts", 40}, {"sp-heavy-gearbox", 6}, {"sp-optical-sensor", 10}, {"sp-titanium-frame", 20}},
+  {{"advanced-circuit", 32}, {"electric-engine-unit", 12}, {"concrete", 60}, {"steel-plate", 50}, {"sp-bolts", 60}, {"sp-heavy-gearbox", 12}, {"sp-optical-sensor", 20}, {"sp-titanium-frame", 30}},
+  20,
+  30)
+-- Base: {"sp-glass", 10}; Krastorio {"glass", 10}
+util.change_recipe_ingredients("oil-refinery",
+  {{"steel-plate", 30}, {"sp-stainless-steel", 12}, {"pipe", 30}, {"stone-brick", 20}, {"electric-motor", 5}, {"sp-bolts", 40}, {"sp-valve", 12}},
+  {{"steel-plate", 50}, {"sp-stainless-steel", 20}, {"pipe", 50}, {"stone-brick", 30}, {"electric-motor", 10}, {"sp-bolts", 60}, {"sp-valve", 20}},
+  30,
+  45)
+-- util.change_recipe_ingredients("",
+--   {},
+--   {},
+--   1,
+--   1)
+-- util.change_recipe_ingredients("",
+--   {},
+--   {},
+--   1,
+--   1)
+-- util.change_recipe_ingredients("",
+--   {},
+--   {},
+--   1,
+--   1)
 -- Base: {"iron-plate", 40}; Krastorio {"iron-beam", 16}
 -- Base: {"sp-glass", 20}; Krastorio {"glass", 20}
 util.change_recipe_ingredients("lab",
@@ -535,12 +542,6 @@ util.change_recipe_ingredients("artillery-targeting-remote",
 --   {},
 --   1,
 --   1)
-data.raw.recipe["cliff-explosives"].category = "crafting-with-fluid"
-util.change_recipe_ingredients("cliff-explosives",
-  {{"sp-graphite", 1}, {"sulfur", 1}, {"iron-plate", 1}, {type="fluid", name="sp-sodium-hydroxide", amount=10}},
-  {{"sp-graphite", 2}, {"sulfur", 2}, {"iron-plate", 1}, {type="fluid", name="sp-sodium-hydroxide", amount=20}},
-  3,
-  5)
 
 -- MARK: Not sure if this is Krastorio
 util.change_recipe_ingredients("iron-beam",
@@ -585,5 +586,6 @@ if not mods["Krastorio2"] then
   table.insert(data.raw.recipe["rail"].ingredients, {"sp-wood", 4})
   table.insert(data.raw.recipe["rail"].ingredients, {"steel-plate", 4})
   table.insert(data.raw.recipe["train-stop"].ingredients, {"steel-plate", 12})
+  table.insert(data.raw.recipe["oil-refinery"].ingredients, {"sp-glass", 20})
   -- table.insert(data.raw.recipe[""].ingredients, {})
 end
