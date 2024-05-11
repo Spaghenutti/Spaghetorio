@@ -814,6 +814,7 @@ table.insert(data.raw.recipe["fluid-wagon"].ingredients, {"steel-beam", 8})
 table.insert(data.raw.recipe["artillery-wagon"].ingredients, {"automation-core", 8})
 table.insert(data.raw.recipe["personal-roboport-equipment"].ingredients, {"automation-core", 5})
 table.insert(data.raw.recipe["oil-refinery"].ingredients, {"glass", 20})
+table.insert(data.raw.recipe["satellite"].ingredients, {"lithium-sulfur-battery", 20})
 
 -- MARK: Add missing results
 table.insert(data.raw.recipe["sp-gold"].results, {type = "item", name = "sand", probability = 0.98, amount = 3})

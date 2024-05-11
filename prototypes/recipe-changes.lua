@@ -429,21 +429,22 @@ util.change_recipe_ingredients("oil-refinery",
   {{"steel-plate", 50}, {"sp-stainless-steel", 20}, {"pipe", 50}, {"stone-brick", 30}, {"electric-motor", 10}, {"sp-bolts", 60}, {"sp-valve", 20}},
   30,
   45)
--- util.change_recipe_ingredients("",
---   {},
---   {},
---   1,
---   1)
--- util.change_recipe_ingredients("",
---   {},
---   {},
---   1,
---   1)
--- util.change_recipe_ingredients("",
---   {},
---   {},
---   1,
---   1)
+util.change_recipe_ingredients("centrifuge",
+  {{"concrete", 20}, {"electric-motor", 12}, {"sp-bolts", 20}, {"sp-gearbox", 6}, {"sp-stainless-steel", 20}, {"sp-duralumin", 12}, {"sp-tungsten-carbide", 6}, {"sp-heavy-ball-bearing", 2}},
+  {{"concrete", 50}, {"electric-motor", 20}, {"sp-bolts", 40}, {"sp-gearbox", 20}, {"sp-stainless-steel", 40}, {"sp-duralumin", 25}, {"sp-tungsten-carbide", 12}, {"sp-heavy-ball-bearing", 2}},
+  20,
+  40)
+util.change_recipe_ingredients("beacon",
+  {{"sp-heatsink", 20}, {"sp-stainless-steel", 12}, {"sp-invar", 4}, {"concrete", 16}, {"sp-dynamo", 3}, {"sp-bolts", 40}, {"copper-cable", 20}, {"sp-transformer", 2}},
+  {{"sp-heatsink", 24}, {"sp-stainless-steel", 20}, {"sp-invar", 10}, {"concrete", 28}, {"sp-dynamo", 4}, {"sp-bolts", 75}, {"copper-cable", 50}, {"sp-transformer", 4}},
+  30,
+  45)
+-- Base: {"battery", 20}; Krastorio {"lithium-sulfur-battery", 20}
+util.change_recipe_ingredients("satellite",
+  {{"low-density-structure", 40}, {"solar-panel", 4}, {"sp-rocket-engine", 1}, {"sp-duralumin", 20}, {"sp-invar", 6}, {"sp-control-unit", 2}, {"sp-optical-sensor", 6}},
+  {{"low-density-structure", 50}, {"solar-panel", 6}, {"sp-rocket-engine", 1}, {"sp-duralumin", 30}, {"sp-invar", 20}, {"sp-control-unit", 6}, {"sp-optical-sensor", 12}},
+  20,
+  30)
 -- Base: {"iron-plate", 40}; Krastorio {"iron-beam", 16}
 -- Base: {"sp-glass", 20}; Krastorio {"glass", 20}
 util.change_recipe_ingredients("lab",
@@ -587,5 +588,6 @@ if not mods["Krastorio2"] then
   table.insert(data.raw.recipe["rail"].ingredients, {"steel-plate", 4})
   table.insert(data.raw.recipe["train-stop"].ingredients, {"steel-plate", 12})
   table.insert(data.raw.recipe["oil-refinery"].ingredients, {"sp-glass", 20})
+  table.insert(data.raw.recipe["satellite"].ingredients, {"battery", 20})
   -- table.insert(data.raw.recipe[""].ingredients, {})
 end
