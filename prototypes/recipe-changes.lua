@@ -292,8 +292,8 @@ data.raw.recipe["cliff-explosives"].category = "crafting-with-fluid"
 util.change_recipe_ingredients("cliff-explosives",
   {{"sp-graphite", 1}, {"sulfur", 1}, {"iron-plate", 1}, {type="fluid", name="sp-sodium-hydroxide", amount=10}},
   {{"sp-graphite", 2}, {"sulfur", 2}, {"iron-plate", 1}, {type="fluid", name="sp-sodium-hydroxide", amount=20}},
-  2,
-  3)
+  3,
+  5)
 --------------------------------------------------------------------------------
 -- MARK: Combat
 --------------------------------------------------------------------------------
@@ -368,6 +368,11 @@ util.change_recipe_ingredients("personal-roboport-mk2-equipment",
   {{"sp-circuit-board", 8}, {"sp-processor", 8}, {"sp-titanium-frame", 20}, {"sp-bolts", 20}, {"battery", 80}, {"sp-capacitor", 20}, {"sp-electrode", 16}},
   20,
   30)
+util.change_recipe_ingredients("rocket-silo",
+  {{"steel-plate", 80}, {"sp-bolts", 400}, {"sp-spring", 60}, {"refined-concrete", 1000}, {"sp-TiNb", 200}, {"sp-inconel", 140}, {"sp-tungsten-slab", 36}, {"pump", 36}, {"sp-pressure-tube", 100}, {"sp-pressure-tank", 20}, {"sp-flange", 40}, {"sp-valve", 200}, {"sp-cryostat", 8}, {"sp-spark-plug", 12}, {"sp-heavy-gearbox", 30}, {"sp-heavy-ball-bearing", 48}, {"sp-control-unit", 80}, {"rocket-control-unit", 100}, {"electric-motor", 20}, {"sp-heat-resistant-tile", 200}},
+  {{"steel-plate", 200}, {"sp-bolts", 1000}, {"sp-spring", 100}, {"refined-concrete", 2000}, {"sp-TiNb", 300}, {"sp-inconel", 250}, {"sp-tungsten-slab", 70}, {"pump", 60}, {"sp-pressure-tube", 200}, {"sp-pressure-tank", 50}, {"sp-flange", 100}, {"sp-valve", 500}, {"sp-cryostat", 12}, {"sp-spark-plug", 20}, {"sp-heavy-gearbox", 50}, {"sp-heavy-ball-bearing", 80}, {"sp-control-unit", 120}, {"rocket-control-unit", 150}, {"electric-motor", 50}, {"sp-heat-resistant-tile", 400}},
+  300,
+  600)
 --------------------------------------------------------------------------------
 -- MARK: Buildings
 --------------------------------------------------------------------------------

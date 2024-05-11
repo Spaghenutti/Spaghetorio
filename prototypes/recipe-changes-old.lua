@@ -1650,7 +1650,7 @@ data:extend({
       {"sp-cmos", 200},
       {"sp-processor", 40},
       {"sp-memory-chip", 24},
-      {"electric-engine-unit", 200},
+      {"electric-motor", 20},
       {"sp-heat-resistant-tile", 200}
     },
     energy_required = 300,
