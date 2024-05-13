@@ -38,6 +38,10 @@ data:extend({
       },
       {
         type = "unlock-recipe",
+        recipe = "sp-machined-parts"
+      },
+      {
+        type = "unlock-recipe",
         recipe = "sp-spring"
       }
     },
@@ -213,7 +217,7 @@ data:extend({
     type = "technology",
     name = "sp-coal-processing",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/graphite.png",
+    icon = "__Spaghenutti__/graphics/hr-icons/graphite-1.png",
     effects =
     {
       {
@@ -443,7 +447,7 @@ data:extend({
     type = "technology",
     name = "sp-basic-ceramics",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/ceramics.png",
+    icon = "__Spaghenutti__/graphics/hr-icons/ceramics-1.png",
     effects =
     {
       {
@@ -1627,7 +1631,7 @@ data:extend({
     type = "technology",
     name = "sp-titanium-nitride",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/titanium-nitride.png",
+    icon = "__Spaghenutti__/graphics/hr-icons/titanium-nitride-1.png",
     effects =
     {
       {

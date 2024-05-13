@@ -41,4 +41,3 @@ def create_mipmaps(num=4):
 if __name__ == "__main__":
     resize_images()
     create_mipmaps(4)
-

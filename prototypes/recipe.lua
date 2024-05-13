@@ -988,6 +988,19 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "sp-machined-parts",  -- #ForRegEx# - recipe
+    category = "crafting",
+    enabled = false,
+    energy_required = 2,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "iron-plate", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-bolts", amount = 2}
+    }
+  },
+  {
+    type = "recipe",
     name = "sp-ball-bearing",  -- #ForRegEx# - recipe
     category = "crafting-with-fluid",
     enabled = false,
@@ -3869,7 +3882,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-graphite-from-acrovoid",  -- #ForRegEx# - recipe
-    icons = util.create_acroproduct_conversion_icon("__Spaghenutti__/graphics/icons/graphite.png",
+    icons = util.create_acroproduct_conversion_icon("__Spaghenutti__/graphics/icons/graphite-1.png",
                                                     "__Spaghenutti__/graphics/icons/acrovoid.png"),
     icon_size = 64,
     mip_maps = 4,

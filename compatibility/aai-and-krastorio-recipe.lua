@@ -978,7 +978,7 @@ util.change_recipe_ingredients("burner-turbine",
   {{"iron-beam", 16}, {"stone-brick", 36}, {"sp-gearbox", 4}, {"motor", 4}},
   8,
   16)
-  util.change_recipe_ingredients("fuel-processor",
+util.change_recipe_ingredients("fuel-processor",
   {{"iron-plate", 12}, {"stone-brick", 24}, {"sp-bolts", 20}, {"motor", 2}},
   {{"iron-plate", 16}, {"stone-brick", 36}, {"sp-bolts", 24}, {"motor", 4}},
   12,

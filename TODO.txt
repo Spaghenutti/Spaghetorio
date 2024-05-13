@@ -21,6 +21,9 @@ TODO:
   + Add missing results for acrovoid recipes
   + Add missing results for acromatter recipes
   - Add new recipes for base and krastorio items
+  - Put petroleum gas icon on ethylene. Create new icon for petroleum gas.
+  - Add uses to compressor
+  - Add uses to machined parts
   + Updated recipes using gears with gearbox, heavy-gearbox and differential
   - Updated recipes for electronic components to have common intermediates
   - do TODO in recipes: "add uses to"
@@ -39,6 +42,7 @@ Low prio
   - Create function to generate acroproduct-conversion recipes
   - Create file for acroproduct-conversion recipes
   - Add cobalt. Ctrl+F "-- add cobalt to items"
+  - Add glow to tech cards
   - Fix smoke tints of chemical recipes
   - Fix sorting of items in lua. "Mark: buildings" does not exist as category
 

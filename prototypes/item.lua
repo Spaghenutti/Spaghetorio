@@ -427,8 +427,14 @@ data:extend({
   {
     type = "item",
     name = "sp-graphite",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/icons/graphite.png",
+    icon = "__Spaghenutti__/graphics/icons/graphite-1.png",
     icon_size = 64,
+    pictures = {
+      {size = 64, filename = "__Spaghenutti__/graphics/icons/graphite-1.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghenutti__/graphics/icons/graphite-2.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghenutti__/graphics/icons/graphite-3.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghenutti__/graphics/icons/graphite-4.png", scale = 0.25, mipmap_count = 4}
+    },
     scale = 0.25,
     subgroup = "processed-resource",
     order = "[graphite]",
@@ -1074,8 +1080,14 @@ data:extend({
   {
     type = "item",
     name = "sp-titanium-nitride",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/icons/titanium-nitride.png",
+    icon = "__Spaghenutti__/graphics/icons/titanium-nitride-1.png",
     icon_size = 64,
+    pictures = {
+      {size = 64, filename = "__Spaghenutti__/graphics/icons/titanium-nitride-1.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghenutti__/graphics/icons/titanium-nitride-2.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghenutti__/graphics/icons/titanium-nitride-3.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghenutti__/graphics/icons/titanium-nitride-4.png", scale = 0.25, mipmap_count = 4}
+    },
     scale = 0.25,
     subgroup = "advanced-raw-material",
     order = "[titanium-nitride]",
@@ -1445,6 +1457,22 @@ data:extend({
   },
   {
     type = "item",
+    name = "sp-machined-parts",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/machined-parts-4.png",
+    icon_size = 64,
+    scale = 0.25,
+    pictures = {
+      {size = 64, filename = "__Spaghenutti__/graphics/icons/machined-parts-1.png", scale = 0.25},
+      {size = 64, filename = "__Spaghenutti__/graphics/icons/machined-parts-2.png", scale = 0.25},
+      {size = 64, filename = "__Spaghenutti__/graphics/icons/machined-parts-3.png", scale = 0.25},
+      {size = 64, filename = "__Spaghenutti__/graphics/icons/machined-parts-4.png", scale = 0.25},
+    },
+    subgroup = "mechanical-component",
+    order = "iron[machined-parts]",
+    stack_size = 400
+  },
+  {
+    type = "item",
     name = "sp-titanium-frame",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/icons/titanium-frame-1.png",
     icon_size = 64,
@@ -1502,8 +1530,14 @@ data:extend({
   {
     type = "item",
     name = "sp-ceramics",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/icons/ceramics.png",
+    icon = "__Spaghenutti__/graphics/icons/ceramics-1.png",
     icon_size = 64,
+    pictures = {
+      {size = 64, filename = "__Spaghenutti__/graphics/icons/ceramics-1.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghenutti__/graphics/icons/ceramics-2.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghenutti__/graphics/icons/ceramics-3.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghenutti__/graphics/icons/ceramics-4.png", scale = 0.25, mipmap_count = 4}
+    },
     scale = 0.25,
     subgroup = "mechanical-component",
     order = "[ceramic]",
