@@ -975,7 +975,9 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-bolts",  -- #ForRegEx# - recipe
+    name = "sp-bolts-from-iron-plate",  -- #ForRegEx# - recipe
+    icons = util.overlay_small_icon("__Spaghenutti__/graphics/icons/bolts-1.png", 64,
+                                    "__base__/graphics/icons/iron-plate.png", 64),
     category = "crafting",
     enabled = false,
     energy_required = 1.2,  -- time in seconds to make the item
@@ -984,6 +986,22 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-bolts", amount = 4}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-bolts-from-steel-plate",  -- #ForRegEx# - recipe
+    icons = util.overlay_small_icon("__Spaghenutti__/graphics/icons/bolts-1.png", 64,
+                                    "__Krastorio2Assets__/icons/items/steel-plate.png", 64),
+    category = "crafting",
+    enabled = false,
+    energy_required = 2.5,  -- time in seconds to make the item
+    hide_from_player_crafting = true,
+    ingredients = {
+      {type = "item", name = "steel-plate", amount = 2}
+    },
+    results = {
+      {type = "item", name = "sp-bolts", amount = 9}
     }
   },
   {
@@ -1009,6 +1027,7 @@ data:extend({
     category = "crafting",
     enabled = false,
     energy_required = 6,  -- time in seconds to make the item
+    hide_from_player_crafting = true,
     ingredients = {
       {type = "item", name = "steel-plate", amount = 3}
     },
@@ -1517,7 +1536,7 @@ data:extend({
     enabled = false,
     energy_required = 3.2,  -- time in seconds to make the item
     ingredients = {
-      {type = "item", name = "iron-plate", amount = 1},
+      {type = "item", name = "sp-machined-parts", amount = 2},
       {type = "item", name = "iron-stick", amount = 1},
       {type = "item", name = "copper-cable", amount = 3}
     },
@@ -1532,7 +1551,7 @@ data:extend({
     enabled = false,
     energy_required = 3.2,  -- time in seconds to make the item
     ingredients = {
-      {type = "item", name = "iron-plate", amount = 1},
+      {type = "item", name = "sp-machined-parts", amount = 5},
       {type = "item", name = "sp-titanium-frame", amount = 1},
       {type = "item", name = "sp-ceramics", amount = 3},
       {type = "fluid", name = "sp-liquid-nitrogen", amount = 40}
@@ -2424,7 +2443,7 @@ data:extend({
       {type = "item", name = "sp-ball-bearing", amount = 4},
       {type = "item", name = "battery", amount = 4},
       {type = "item", name = "sp-bolts", amount = 2},
-      {type = "item", name = "iron-plate", amount = 2},
+      {type = "item", name = "sp-machined-parts", amount = 6},
     },
     results = {
       {type = "item", name = "sp-dynamo", amount = 1}

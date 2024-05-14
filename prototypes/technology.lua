@@ -34,7 +34,7 @@ data:extend({
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-bolts"
+        recipe = "sp-bolts-from-iron-plate"
       },
       {
         type = "unlock-recipe",
@@ -131,6 +131,10 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "sp-connecting-rod"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-bolts-from-steel-plate"
       },
       {
         type = "unlock-recipe",

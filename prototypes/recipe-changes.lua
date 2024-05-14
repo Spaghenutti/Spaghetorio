@@ -31,8 +31,8 @@ util.change_recipe_ingredients("motor",
   2,
   3)
 util.change_recipe_ingredients("electric-motor",
-  {{"copper-cable", 8}, {"sp-bolts", 6}, {"iron-plate", 2}, {"iron-stick", 1}},
-  {{"copper-cable", 16}, {"sp-bolts", 10}, {"iron-plate", 8}, {"iron-stick", 1}},
+  {{"copper-cable", 8}, {"sp-bolts", 6}, {"sp-machined-parts", 5}, {"iron-stick", 1}},
+  {{"copper-cable", 16}, {"sp-bolts", 10}, {"sp-machined-parts", 8}, {"iron-stick", 1}},
   nil,
   nil)
 util.change_recipe_ingredients("steel-plate",
@@ -110,45 +110,45 @@ util.change_recipe_ingredients("transport-belt",
   nil,
   nil)
 util.change_recipe_ingredients("fast-transport-belt",
-  {{"iron-plate", 69}},
-  {{"iron-plate", 69}},
-  69,
-  69)
+  {{"sp-aluminum-frame", 1}, {"electric-motor", 1}, {"sp-ball-bearing", 2}, {"electronic-circuit", 1}},
+  {{"sp-aluminum-frame", 2}, {"electric-motor", 1}, {"sp-ball-bearing", 2}, {"electronic-circuit", 2}},
+  nil,
+  nil)
 util.change_recipe_ingredients("express-transport-belt",
-  {{"iron-plate", 69}},
-  {{"iron-plate", 69}},
-  69,
-  69)
+  {{"sp-titanium-frame", 2}, {"electric-motor", 2}, {"sp-gearbox", 2}, {"advanced-circuit", 1}, {type = "fluid", name = "lubricant", amount = 25}},
+  {{"sp-titanium-frame", 3}, {"electric-motor", 2}, {"sp-gearbox", 2}, {"advanced-circuit", 2}, {type = "fluid", name = "lubricant", amount = 40}},
+  nil,
+  nil)
 util.change_recipe_ingredients("underground-belt",
-  {{"iron-plate", 2}, {"sp-bolts", 4}, {"transport-belt", 4}},
-  {{"iron-plate", 4}, {"sp-bolts", 8}, {"transport-belt", 4}},
+  {{"iron-plate", 2}, {"sp-bolts", 4}, {"transport-belt", 6}},
+  {{"iron-plate", 4}, {"sp-bolts", 8}, {"transport-belt", 6}},
   nil,
   nil)
 util.change_recipe_ingredients("fast-underground-belt",
-  {{"iron-plate", 69}},
-  {{"iron-plate", 69}},
-  69,
-  69)
+  {{"sp-machined-parts", 2}, {"sp-bolts", 4}, {"sp-spring", 4}, {"fast-transport-belt", 8}},
+  {{"sp-machined-parts", 4}, {"sp-bolts", 8}, {"sp-spring", 6}, {"fast-transport-belt", 8}},
+  nil,
+  nil)
 util.change_recipe_ingredients("express-underground-belt",
-  {{"iron-plate", 69}},
-  {{"iron-plate", 69}},
-  69,
-  69)
+  {{"sp-titanium-frame", 8}, {"sp-bolts", 12}, {"sp-electromagnet", 2}, {"express-transport-belt", 12}},
+  {{"sp-titanium-frame", 10}, {"sp-bolts", 20}, {"sp-electromagnet", 4}, {"express-transport-belt", 12}},
+  nil,
+  nil)
 util.change_recipe_ingredients("splitter",
   {{"motor", 2}, {"sp-bolts", 4}, {"transport-belt", 2}},
   {{"motor", 4}, {"sp-bolts", 8}, {"transport-belt", 4}},
   nil,
   nil)
 util.change_recipe_ingredients("fast-splitter",
-  {{"iron-plate", 69}},
-  {{"iron-plate", 69}},
-  69,
-  69)
+  {{"sp-machined-parts", 2}, {"sp-bolts", 4}, {"sp-gearbox", 2}, {"fast-transport-belt", 2}},
+  {{"sp-machined-parts", 2}, {"sp-bolts", 4}, {"sp-gearbox", 2}, {"fast-transport-belt", 2}},
+  nil,
+  nil)
 util.change_recipe_ingredients("express-splitter",
-  {{"iron-plate", 69}},
-  {{"iron-plate", 69}},
-  69,
-  69)
+  {{"sp-titanium-frame", 8}, {"sp-bolts", 6}, {"sp-actuator", 2}, {"express-transport-belt", 2}},
+  {{"sp-titanium-frame", 8}, {"sp-bolts", 8}, {"sp-actuator", 2}, {"express-transport-belt", 2}},
+  nil,
+  nil)
 util.change_recipe_ingredients("stack-inserter",
   {{"sp-stainless-steel-gear-wheel", 8}, {"sp-aluminum-frame", 6}, {"sp-bolts", 12}, {"electric-engine-unit", 2}, {"sp-circuit-board", 2}, {"sp-ball-bearing", 6}},
   {{"sp-stainless-steel-gear-wheel", 15}, {"sp-aluminum-frame", 10}, {"sp-bolts", 20}, {"electric-engine-unit", 3}, {"sp-circuit-board", 2}, {"sp-ball-bearing", 8}},
