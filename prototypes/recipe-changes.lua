@@ -14,6 +14,12 @@ util.change_recipe_ingredients("copper-plate",
   {{"copper-ore", 3}},
   8,
   12)
+data.raw.recipe["steel-plate"].category = "smelting"
+util.change_recipe_ingredients("steel-plate",
+  {{"iron-ore", 5}},
+  {{"iron-ore", 6}},
+  10,
+  14)
 util.change_recipe_ingredients("electronic-circuit",
   {{"copper-cable", 3}, {"wood", 3}, {"sp-solder", 1}},
   {{"copper-cable", 8}, {"wood", 5}, {"sp-solder", 2}},

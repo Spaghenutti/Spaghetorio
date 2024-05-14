@@ -988,7 +988,9 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-machined-parts",  -- #ForRegEx# - recipe
+    name = "sp-machined-parts-from-iron-plate",  -- #ForRegEx# - recipe
+    icons = util.overlay_small_icon("__Spaghenutti__/graphics/icons/machined-parts-4.png", 64,
+                                    "__base__/graphics/icons/iron-plate.png", 64),
     category = "crafting",
     enabled = false,
     energy_required = 2,  -- time in seconds to make the item
@@ -996,7 +998,22 @@ data:extend({
       {type = "item", name = "iron-plate", amount = 1}
     },
     results = {
-      {type = "item", name = "sp-bolts", amount = 2}
+      {type = "item", name = "sp-machined-parts", amount = 2}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-machined-parts-from-steel-plate",  -- #ForRegEx# - recipe
+    icons = util.overlay_small_icon("__Spaghenutti__/graphics/icons/machined-parts-4.png", 64,
+                                    "__Krastorio2Assets__/icons/items/steel-plate.png", 64),
+    category = "crafting",
+    enabled = false,
+    energy_required = 6,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "steel-plate", amount = 3}
+    },
+    results = {
+      {type = "item", name = "sp-machined-parts", amount = 7}
     }
   },
   {
@@ -1704,7 +1721,7 @@ data:extend({
       {type = "item", name = "sp-titanium-nitride", amount = 2},
       {type = "item", name = "sp-titanium-frame", amount = 20},
       {type = "item", name = "sp-flange", amount = 5},
-      {type = "item", name = "sp-turbine-blade", amount = 24},
+      {type = "item", name = "sp-turbine-blade", amount = 24}
     },
     results = {
       {type = "item", name = "sp-turbine-stator", amount = 1}
@@ -1845,7 +1862,7 @@ data:extend({
       {type = "item", name = "sp-tungsten-slab", amount = 1},
       {type = "item", name = "sp-zirconium-rod", amount = 2},
       {type = "item", name = "sp-cerium", amount = 1},
-      {type = "item", name = "sp-TiNb", amount = 8},
+      {type = "item", name = "sp-TiNb", amount = 8}
     },
     results = {
       {type = "item", name = "sp-empty-fuel-rod", amount = 1}
@@ -2054,8 +2071,7 @@ data:extend({
       {type = "item", name = "copper-plate", amount = 4},
       {type = "item", name = "iron-plate", amount = 1},
       {type = "item", name = "sp-aluminum-sheet", amount = 2},
-      {type = "item", name = "sp-chromium-plate", amount = 5},
-
+      {type = "item", name = "sp-chromium-plate", amount = 5}
     },
     results = {
       {type = "item", name = "sp-quasicrystal", amount = 1}
@@ -2089,7 +2105,7 @@ data:extend({
       {type = "item", name = "sp-niobium-steel", amount = 5},
       {type = "item", name = "sp-aluminum-brass", amount = 3},
       {type = "item", name = "sp-titanium-nitride", amount = 1},
-      {type = "fluid", name = "lubricant", amount = 20},
+      {type = "fluid", name = "lubricant", amount = 20}
     },
     results = {
       {type = "item", name = "sp-heavy-ball-bearing", amount = 4}
@@ -2107,7 +2123,7 @@ data:extend({
       {type = "item", name = "copper-cable", amount = 6},
       {type = "item", name = "steel-plate", amount = 8},
       {type = "item", name = "sp-ceramics", amount = 4},
-      {type = "item", name = "sp-iridium", amount = 1},
+      {type = "item", name = "sp-iridium", amount = 1}
     },
     results = {
       {type = "item", name = "sp-electrode", amount = 6}
@@ -2125,7 +2141,7 @@ data:extend({
       {type = "item", name = "copper-cable", amount = 2},
       {type = "item", name = "steel-plate", amount = 4},
       {type = "item", name = "sp-ceramics", amount = 2},
-      {type = "item", name = "sp-platinum", amount = 1},
+      {type = "item", name = "sp-platinum", amount = 1}
     },
     results = {
       {type = "item", name = "sp-electrode", amount = 3}
@@ -2143,7 +2159,7 @@ data:extend({
       {type = "item", name = "sp-stainless-steel", amount = 3},
       {type = "item", name = "sp-stainless-steel-gear-wheel", amount = 6},
       {type = "item", name = "advanced-circuit", amount = 2},
-      {type = "fluid", name = "lubricant", amount = 20},
+      {type = "fluid", name = "lubricant", amount = 20}
     },
     results = {
       {type = "item", name = "sp-actuator", amount = 1}

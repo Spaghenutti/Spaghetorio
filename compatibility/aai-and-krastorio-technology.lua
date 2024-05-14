@@ -108,10 +108,6 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "steel-gear-wheel"
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "steel-beam"
       }
     },
     prerequisites = { "steel-processing" },
@@ -239,6 +235,7 @@ data.raw.technology["kr-crusher"].unit = {count = 30,
 data.raw.technology["steel-processing"].prerequisites = {"sp-coal-processing"}
 data.raw.technology["steel-processing"].effects = {
   {type = "unlock-recipe", recipe = "steel-plate"},
+  {type = "unlock-recipe", recipe = "steel-beam"},
   {type = "unlock-recipe", recipe = "steel-chest"}
 }
 

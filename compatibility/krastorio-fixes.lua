@@ -30,6 +30,9 @@ data.raw.item["lithium-chloride"].subgroup = "processed-resource"
 data.raw.item["lithium"].subgroup = "processed-resource"
 data.raw.item["biomass"].subgroup = "processed-resource"
 
+data.raw.item["iron-beam"].subgroup = "raw-material"
+data.raw.item["steel-beam"].subgroup = "raw-material"
+
 data.raw.item["fertilizer"].subgroup = "chemical-product"
 
 data.raw.item["tritium"].subgroup = "advanced-raw-material"
@@ -38,15 +41,13 @@ data.raw.item["imersite-crystal"].subgroup = "alien-material"
 data.raw.item["matter-cube"].subgroup = "alien-material"
 data.raw.item["imersium-plate"].subgroup = "alien-material"
 data.raw.item["imersite-powder"].subgroup = "alien-material"
+data.raw.item["imersium-beam"].subgroup = "alien-material"
 
-data.raw.item["iron-beam"].subgroup = "mechanical-component"
-data.raw.item["steel-beam"].subgroup = "mechanical-component"
 data.raw.item["steel-gear-wheel"].subgroup = "mechanical-component"
 
 data.raw.item["lithium-sulfur-battery"].subgroup = "electrical-optical-component"
 data.raw.item["electronic-components"].subgroup = "electrical-optical-component"
 
-data.raw.item["imersium-beam"].subgroup = "alien-product"
 data.raw.item["imersium-gear-wheel"].subgroup = "alien-product"
 
 data.raw.item["fuel"].subgroup = "fuel-processing"

@@ -858,6 +858,17 @@ data.raw.recipe["sp-zinc-plate"].category = "electrolysis"
 data.raw.recipe["sp-sodium-hydroxide-from-liquid-sodium"].category = "electrolysis"
 data.raw.recipe["sp-nuclear-waste-processing"].category = "crushing"
 
+-- MARK: base crafting changes
+data.raw.recipe["steel-beam"].category = "smelting"
+util.change_recipe_ingredients("steel-plate",
+  {{"iron-plate", 5}, {"sp-graphite", 1}},
+  {{"iron-plate", 8}, {"sp-graphite", 2}},
+  20,
+  24)
+data.raw.recipe["steel-beam"].results = {{"steel-beam", 2}}
+data.raw.recipe["imersium-beam"].hidden = true
+data.raw.recipe["kr-s-c-imersium-beam"].category = "smelting"
+
 -- MARK: recipe changes
 util.change_recipe_ingredients("electronic-circuit-stone",
   {{"copper-cable", 3}, {"stone-tablet", 1}, {"sp-solder", 1}},

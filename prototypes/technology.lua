@@ -38,7 +38,7 @@ data:extend({
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-machined-parts"
+        recipe = "sp-machined-parts-from-iron-plate"
       },
       {
         type = "unlock-recipe",
@@ -131,6 +131,10 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "sp-connecting-rod"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-machined-parts-from-iron-plate"
       },
     },
     prerequisites = { "steel-processing" },
