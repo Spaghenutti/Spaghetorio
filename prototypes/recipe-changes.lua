@@ -97,8 +97,8 @@ util.change_recipe_ingredients("effectivity-module-3",
   45,
   60)
   util.change_recipe_ingredients("flying-robot-frame",
-  {{"electric-engine-unit", 1}, {"copper-cable", 2}, {"sp-aluminum-frame", 2}, {"sp-bolts", 4}, {"sp-composites", 2}},
-  {{"electric-engine-unit", 2}, {"copper-cable", 4}, {"sp-aluminum-frame", 3}, {"sp-bolts", 6}, {"sp-composites", 3}},
+  {{"electric-engine-unit", 1}, {"copper-cable", 2}, {"sp-machined-parts", 3}, {"sp-aluminum-frame", 2}, {"sp-bolts", 4}, {"sp-composites", 2}},
+  {{"electric-engine-unit", 2}, {"copper-cable", 4}, {"sp-machined-parts", 5}, {"sp-aluminum-frame", 3}, {"sp-bolts", 6}, {"sp-composites", 3}},
   6,
   10)
 --------------------------------------------------------------------------------
@@ -216,8 +216,8 @@ util.change_recipe_ingredients("locomotive",
   30,
   60)
 util.change_recipe_ingredients("cargo-wagon",
-  {{"sp-spring", 4}, {"iron-plate", 32}, {"steel-plate", 12}, {"sp-bolts", 40}, {"sp-train-boige", 4}},
-  {{"sp-spring", 4}, {"iron-plate", 50}, {"steel-plate", 20}, {"sp-bolts", 60}, {"sp-train-boige", 4}},
+  {{"sp-spring", 4}, {"sp-machined-parts", 12}, {"steel-plate", 32}, {"sp-bolts", 40}, {"sp-train-boige", 4}},
+  {{"sp-spring", 4}, {"sp-machined-parts", 32}, {"steel-plate", 40}, {"sp-bolts", 60}, {"sp-train-boige", 4}},
   20,
   30)
 -- Kratorio: {"steel-beam", 8}
@@ -233,8 +233,8 @@ util.change_recipe_ingredients("artillery-wagon",
   60,
   120)
 util.change_recipe_ingredients("car",
-  {{"engine-unit", 1}, {"iron-stick", 4}, {"sp-gearbox", 2}, {"sp-differential", 1}, {"sp-bolts", 20}, {"steel-plate", 8}, {"sp-steel-wheel", 4}, {"sp-rubber", 4}, {"sp-ball-bearing", 16}},
-  {{"engine-unit", 2}, {"iron-stick", 12}, {"sp-gearbox", 5}, {"sp-differential", 1}, {"sp-bolts", 40}, {"steel-plate", 12}, {"sp-steel-wheel", 4}, {"sp-rubber", 4}, {"sp-ball-bearing", 24}},
+  {{"engine-unit", 1}, {"sp-machined-parts", 12}, {"sp-gearbox", 2}, {"sp-differential", 1}, {"sp-bolts", 20}, {"steel-plate", 8}, {"sp-steel-wheel", 4}, {"sp-rubber", 4}, {"sp-ball-bearing", 16}},
+  {{"engine-unit", 2}, {"sp-machined-parts", 20}, {"sp-gearbox", 5}, {"sp-differential", 1}, {"sp-bolts", 40}, {"steel-plate", 12}, {"sp-steel-wheel", 4}, {"sp-rubber", 4}, {"sp-ball-bearing", 24}},
   20,
   30)
 util.change_recipe_ingredients("tank",

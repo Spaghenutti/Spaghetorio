@@ -990,8 +990,8 @@ util.change_recipe_ingredients("burner-turbine",
   8,
   16)
 util.change_recipe_ingredients("fuel-processor",
-  {{"iron-plate", 12}, {"stone-brick", 24}, {"sp-bolts", 20}, {"motor", 2}},
-  {{"iron-plate", 16}, {"stone-brick", 36}, {"sp-bolts", 24}, {"motor", 4}},
+  {{"iron-plate", 12}, {"stone-brick", 24}, {"sp-bolts", 20}, {"motor", 2}, {"sp-flange", 8}},
+  {{"iron-plate", 16}, {"stone-brick", 36}, {"sp-bolts", 24}, {"motor", 4}, {"sp-flange", 12}}},
   12,
   24)
 util.change_recipe_ingredients("area-mining-drill",

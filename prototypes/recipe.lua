@@ -1499,7 +1499,7 @@ data:extend({
     enabled = false,
     energy_required = 5,  -- time in seconds to make the item
     ingredients = {
-      {type = "item", name = "steel-plate", amount = 2},
+      {type = "item", name = "sp-machined-parts", amount = 2},
       {type = "fluid", name = "lubricant", amount = 20},
       {type = "item", name = "sp-bolts", amount = 6},
       {type = "item", name = "sp-heavy-ball-bearing", amount = 3}
@@ -1519,7 +1519,7 @@ data:extend({
     ingredients = {
       {type = "item", name = "sp-gearbox", amount = 1},
       {type = "fluid", name = "lubricant", amount = 50},
-      {type = "item", name = "steel-plate", amount = 2},
+      {type = "item", name = "sp-machined-parts", amount = 3},
       {type = "item", name = "sp-bolts", amount = 4},
       {type = "item", name = "sp-ball-bearing", amount = 3}
       -- Base: {type = "item", name = "iron-gear-wheel", amount = 6}
@@ -1739,6 +1739,7 @@ data:extend({
       {type = "item", name = "sp-TiAlSn", amount = 4},
       {type = "item", name = "sp-titanium-nitride", amount = 2},
       {type = "item", name = "sp-titanium-frame", amount = 20},
+      {type = "item", name = "sp-machined-parts", amount = 6},
       {type = "item", name = "sp-flange", amount = 5},
       {type = "item", name = "sp-turbine-blade", amount = 24}
     },
@@ -1802,6 +1803,7 @@ data:extend({
     energy_required = 8,  -- time in seconds to make the item
     ingredients = {
       {type = "item", name = "sp-titanium-frame", amount = 2},
+      {type = "item", name = "sp-machined-parts", amount = 6},
       {type = "item", name = "sp-actuator", amount = 2},
       {type = "item", name = "sp-advanced-compute-unit", amount = 1},
     },
@@ -1849,6 +1851,7 @@ data:extend({
     energy_required = 4,  -- time in seconds to make the item
     ingredients = {
       {type = "item", name = "sp-titanium-frame", amount = 2},
+      {type = "item", name = "sp-machined-parts", amount = 6},
       {type = "item", name = "solid-fuel", amount = 10},
       {type = "item", name = "sp-phosphorus", amount = 1}
     },
@@ -1980,6 +1983,7 @@ data:extend({
       {type = "item", name = "sp-vacuum-tube", amount = 16},
       {type = "item", name = "sp-glass-fiber", amount = 20},
       {type = "item", name = "sp-aluminum-frame", amount = 1},
+      {type = "item", name = "sp-machined-parts", amount = 6},
       {type = "item", name = "sp-gold", amount = 3}
     },
     results = {
@@ -2140,7 +2144,7 @@ data:extend({
     energy_required = 14,  -- time in seconds to make the item
     ingredients = {
       {type = "item", name = "copper-cable", amount = 6},
-      {type = "item", name = "steel-plate", amount = 8},
+      {type = "item", name = "sp-machined-parts", amount = 8},
       {type = "item", name = "sp-ceramics", amount = 4},
       {type = "item", name = "sp-iridium", amount = 1}
     },
@@ -2158,7 +2162,7 @@ data:extend({
     energy_required = 8,  -- time in seconds to make the item
     ingredients = {
       {type = "item", name = "copper-cable", amount = 2},
-      {type = "item", name = "steel-plate", amount = 4},
+      {type = "item", name = "sp-machined-parts", amount = 4},
       {type = "item", name = "sp-ceramics", amount = 2},
       {type = "item", name = "sp-platinum", amount = 1}
     },
@@ -2192,7 +2196,7 @@ data:extend({
     energy_required = 5,  -- time in seconds to make the item
     ingredients = {
       {type = "item", name = "sp-tungsten-slab", amount = 3},
-      {type = "item", name = "steel-plate", amount = 2},
+      {type = "item", name = "sp-machined-parts", amount = 2},
       {type = "item", name = "sp-ceramics", amount = 1},
       {type = "item", name = "sp-graphite", amount = 3}
     },
@@ -2242,7 +2246,7 @@ data:extend({
       {type = "item", name = "sp-insulation-sheet", amount = 2},
       {type = "item", name = "copper-cable", amount = 10},
       {type = "item", name = "sp-vacuum-tube", amount = 4},
-      {type = "item", name = "steel-plate", amount = 4}
+      {type = "item", name = "sp-machined-parts", amount = 4}
     },
     results = {
       {type = "item", name = "sp-transformer", amount = 1}
@@ -2272,7 +2276,7 @@ data:extend({
       {type = "item", name = "sp-bolts", amount = 8},
       {type = "item", name = "sp-connecting-rod", amount = 6},
       {type = "item", name = "sp-spring", amount = 12},
-      {type = "item", name = "steel-plate", amount = 4},
+      {type = "item", name = "sp-machined-parts", amount = 8},
       {type = "item", name = "sp-ball-bearing", amount = 4}
     },
     results = {
@@ -2459,7 +2463,7 @@ data:extend({
       {type = "item", name = "electric-motor", amount = 1},
       {type = "item", name = "sp-ball-bearing", amount = 4},
       {type = "item", name = "sp-bolts", amount = 2},
-      {type = "item", name = "steel-plate", amount = 6},
+      {type = "item", name = "sp-machined-parts", amount = 6},
     },
     results = {
       {type = "item", name = "sp-dynamo", amount = 1}
