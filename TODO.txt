@@ -20,18 +20,15 @@ TODO:
   + Add missing results for acrocrystal recipes
   + Add missing results for acrovoid recipes
   + Add missing results for acromatter recipes
-  - Add new recipes for base and krastorio items
   - Put petroleum gas icon on ethylene. Create new icon for petroleum gas.
-  - Add uses to compressor
-  - Add uses to machined parts
   + Updated recipes using gears with gearbox, heavy-gearbox and differential
   - Updated recipes for electronic components to have common intermediates
   - do TODO in recipes: "add uses to"
   - Add rockets depending on the explorer
   - Change labs in which tech cards are used
-  - Change Factorio recipes
-  - Change Krastorio recipes
-  - Change AAI recipes
+  ? Change Factorio recipes
+  ? Change Krastorio recipes
+  ? Change AAI recipes
   - Fix technology unlocking
   - Add cyclotron
   - Add particle accelerator
@@ -43,6 +40,8 @@ Low prio
   - Create file for acroproduct-conversion recipes
   - Add cobalt. Ctrl+F "-- add cobalt to items"
   - Add glow to tech cards
+  - Add infinite technologies
+  - Add recycling recipes (break unused things down to trash and use trash for low grade recipes)
   - Fix smoke tints of chemical recipes
   - Fix sorting of items in lua. "Mark: buildings" does not exist as category
 

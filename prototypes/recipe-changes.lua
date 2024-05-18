@@ -525,6 +525,10 @@ util.change_recipe_ingredients("offshore-pump",
   2,
   4)
 --------------------------------------------------------------------------------
+-- MARK: Technology
+--------------------------------------------------------------------------------
+-- Missing recipes. For Krastorio fixes are in aai-and-krastorio-final-fixes.lua
+--------------------------------------------------------------------------------
 -- MARK: Military
 --------------------------------------------------------------------------------
 util.change_recipe_ingredients("laser-turret",

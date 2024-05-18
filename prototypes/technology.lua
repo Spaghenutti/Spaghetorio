@@ -1,5 +1,13 @@
 local util = require("data-util")
 
+-- Order of base science
+-- automation-science-pack
+-- logistic-science-pack
+-- military-science-pack
+-- chemical-science-pack
+-- production-science-pack
+-- utility-science-pack
+
 data:extend({
   {
     type = "technology",
@@ -138,10 +146,10 @@ data:extend({
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-machined-parts-from-iron-plate"
+        recipe = "sp-machined-parts-from-steel-plate"
       },
     },
-    prerequisites = { "steel-processing" },
+    prerequisites = {"steel-processing", "sp-basic-alloy"},
     unit =
     {
       count = 50,
@@ -735,7 +743,7 @@ data:extend({
         recipe = "sp-aluminum-brass"
       },
     },
-    prerequisites = {"logistic-science-pack", "sp-nickel-and-cobalt"},
+    prerequisites = {"sp-aluminum-processing", "sp-zirconium-processing", "sp-magnesium-processing", "sp-zinc-processing"},
     unit =
     {
       count = 100,
@@ -1089,8 +1097,7 @@ data:extend({
     type = "technology",
     name = "sp-circuit-board",  -- #ForRegEx# - technology
     icon_size = 256,
-    icons = util.combine_two_icons("__Spaghenutti__/graphics/hr-icons/empty-circuit-board.png", 256, nil,
-                                   "__Spaghenutti__/graphics/hr-icons/circuit-board.png", 256, nil),
+    icon = "__Spaghenutti__/graphics/hr-icons/circuit-board.png",
     effects =
     {
       {
@@ -1208,7 +1215,7 @@ data:extend({
         recipe = "sp-quantum-data-plane"
       },
     },
-    prerequisites = {"logistic-science-pack"},
+    prerequisites = {"production-science-pack"},
     unit =
     {
       count = 100,
@@ -1275,7 +1282,7 @@ data:extend({
         recipe = "sp-neodymium-magnet"
       },
     },
-    prerequisites = {"logistic-science-pack"},
+    prerequisites = {"production-science-pack"},
     unit =
     {
       count = 100,
@@ -1296,7 +1303,7 @@ data:extend({
         recipe = "sp-diamond"
       },
     },
-    prerequisites = {"logistic-science-pack"},
+    prerequisites = {"production-science-pack"},
     unit =
     {
       count = 100,
@@ -1350,7 +1357,7 @@ data:extend({
         recipe = "sp-plate-heat-exchanger"
       },
     },
-    prerequisites = {"logistic-science-pack"},
+    prerequisites = {"production-science-pack"},
     unit =
     {
       count = 100,
@@ -1534,7 +1541,7 @@ data:extend({
         recipe = "sp-plutonium-240-processing"
       },
     },
-    prerequisites = {"logistic-science-pack"},
+    prerequisites = {"production-science-pack"},
     unit =
     {
       count = 100,
@@ -1668,7 +1675,7 @@ data:extend({
         recipe = "sp-superconductor"
       },
     },
-    prerequisites = {"logistic-science-pack"},
+    prerequisites = {"production-science-pack"},
     unit =
     {
       count = 100,
@@ -1888,7 +1895,7 @@ data:extend({
         recipe = "sp-quasicrystal-2"
       },
     },
-    prerequisites = {"logistic-science-pack"},
+    prerequisites = {"utility-science-pack"},
     unit =
     {
       count = 100,
@@ -1917,7 +1924,7 @@ data:extend({
         recipe = "sp-blunagium-foam"
       },
     },
-    prerequisites = {"logistic-science-pack"},
+    prerequisites = {"utility-science-pack"},
     unit =
     {
       count = 100,
@@ -1958,7 +1965,7 @@ data:extend({
         recipe = "sp-grobgnumylene"
       },
     },
-    prerequisites = {"logistic-science-pack"},
+    prerequisites = {"utility-science-pack"},
     unit =
     {
       count = 100,
@@ -1983,7 +1990,7 @@ data:extend({
         recipe = "sp-rukite-powder"
       },
     },
-    prerequisites = {"logistic-science-pack"},
+    prerequisites = {"utility-science-pack"},
     unit =
     {
       count = 100,
@@ -2012,7 +2019,7 @@ data:extend({
         recipe = "sp-yemnuth-pearls-from-yttrium-and-lanthanum"
       },
     },
-    prerequisites = {"logistic-science-pack"},
+    prerequisites = {"utility-science-pack"},
     unit =
     {
       count = 100,
@@ -2259,7 +2266,7 @@ data:extend({
         recipe = "sp-heavy-ball-bearing"
       },
     },
-    prerequisites = {"logistic-science-pack"},
+    prerequisites = {"production-science-pack"},
     unit =
     {
       count = 100,
@@ -2280,7 +2287,7 @@ data:extend({
         recipe = "sp-kevlar"
       },
     },
-    prerequisites = {"logistic-science-pack"},
+    prerequisites = {"production-science-pack"},
     unit =
     {
       count = 100,
@@ -2301,7 +2308,7 @@ data:extend({
         recipe = "sp-advanced-compute-unit"
       },
     },
-    prerequisites = {"logistic-science-pack"},
+    prerequisites = {"production-science-pack"},
     unit =
     {
       count = 100,
@@ -2326,7 +2333,7 @@ data:extend({
         recipe = "sp-electrode-from-iridium"
       },
     },
-    prerequisites = {"logistic-science-pack"},
+    prerequisites = {"production-science-pack"},
     unit =
     {
       count = 100,
@@ -2351,7 +2358,7 @@ data:extend({
         recipe = "sp-gamma-radiation-source"
       },
     },
-    prerequisites = {"logistic-science-pack"},
+    prerequisites = {"utility-science-pack"},
     unit =
     {
       count = 100,
@@ -2372,7 +2379,7 @@ data:extend({
         recipe = "sp-relay"
       },
     },
-    prerequisites = {"logistic-science-pack"},
+    prerequisites = {"production-science-pack"},
     unit =
     {
       count = 100,
@@ -2443,7 +2450,7 @@ data:extend({
         recipe = "sp-actuator"
       },
     },
-    prerequisites = {"logistic-science-pack"},
+    prerequisites = {"production-science-pack"},
     unit =
     {
       count = 100,
@@ -2464,7 +2471,7 @@ data:extend({
         recipe = "sp-catalyst-from-calcium-magnesium"
       },
     },
-    prerequisites = {"logistic-science-pack"},
+    prerequisites = {"production-science-pack"},
     unit =
     {
       count = 100,
@@ -2489,7 +2496,7 @@ data:extend({
         recipe = "sp-chronalyte"
       },
     },
-    prerequisites = {"logistic-science-pack"},
+    prerequisites = {"utility-science-pack"},
     unit =
     {
       count = 100,
@@ -2535,7 +2542,7 @@ data:extend({
         recipe = "sp-epoxy"
       },
     },
-    prerequisites = {"logistic-science-pack"},
+    prerequisites = {"chemical-science-pack"},
     unit =
     {
       count = 100,
@@ -2564,7 +2571,7 @@ data:extend({
         recipe = "sp-methyl-tert-butyl-ether"
       },
     },
-    prerequisites = {"logistic-science-pack"},
+    prerequisites = {"chemical-science-pack"},
     unit =
     {
       count = 100,
@@ -2589,7 +2596,7 @@ data:extend({
         recipe = "sp-sodium-hydroxide-from-sodium"
       },
     },
-    prerequisites = {"logistic-science-pack"},
+    prerequisites = {"chemical-science-pack"},
     unit =
     {
       count = 100,
@@ -2610,7 +2617,7 @@ data:extend({
         recipe = "sp-vinyl-chloride"
       },
     },
-    prerequisites = {"logistic-science-pack"},
+    prerequisites = {"chemical-science-pack"},
     unit =
     {
       count = 100,
@@ -2652,7 +2659,7 @@ data:extend({
         recipe = "sp-control-unit"
       },
     },
-    prerequisites = {"logistic-science-pack"},
+    prerequisites = {"utility-science-pack"},
     unit =
     {
       count = 100,
@@ -2673,7 +2680,7 @@ data:extend({
         recipe = "sp-cybernetics"
       },
     },
-    prerequisites = {"logistic-science-pack"},
+    prerequisites = {"utility-science-pack"},
     unit =
     {
       count = 100,
@@ -3023,6 +3030,18 @@ if not mods["Krastorio2"] then
   table.insert(data.raw.technology["sp-processed-resource-from-acrovoid"].effects, {type = "unlock-recipe", recipe = "sp-coke-from-acrovoid"})
   table.insert(data.raw.technology["sp-processed-resource-from-acrovoid"].effects, {type = "unlock-recipe", recipe = "sp-silicon-from-acrovoid"})
 end
+
+-- MARK: Tech changes
+table.insert(data.raw.technology["automation-science-pack"].prerequisites, "sp-mechanical-assembling")
+
+table.insert(data.raw.technology["gun-turret"].prerequisites, "sp-mechanical-assembling")
+
+table.insert(data.raw.technology["fast-inserter"].prerequisites, "sp-ball-bearing")
+
+table.insert(data.raw.technology["oil-processing"].prerequisites, "sp-stainless-steel-processing")
+
+table.insert(data.raw.technology["railway"].prerequisites, "sp-steel-wheel")
+table.insert(data.raw.technology["railway"].effects, {type = "unlock-recipe", recipe = "sp-train-boige"})
 
 table.insert(data.raw.technology["fluid-handling"].prerequisites, "sp-basic-alloy")
 table.insert(data.raw.technology["fluid-handling"].effects, {type = "unlock-recipe", recipe = "sp-valve"})

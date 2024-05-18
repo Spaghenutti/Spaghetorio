@@ -34,14 +34,18 @@ data:extend({
     {
       {
         type = "unlock-recipe",
-        recipe = "motor"
+        recipe = "iron-chest"
       },
       {
         type = "unlock-recipe",
-        recipe = "iron-chest"
+        recipe = "sp-gearbox"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "motor"
       },
     },
-    prerequisites = { "sp-iron-machining" },
+    prerequisites = {"sp-iron-machining", "sp-iron-extruding"},
     unit =
     {
       count = 5,
@@ -62,6 +66,7 @@ data:extend({
         recipe = "burner-assembling-machine"
       },
     },
+    prerequisites = {"kr-automation-core"},
     unit =
     {
       count = 5,
@@ -86,35 +91,11 @@ data:extend({
         recipe = "burner-inserter"
       },
     },
+    prerequisites = {"sp-iron-machining", "sp-iron-extruding"},
     unit =
     {
       count = 5,
       ingredients = {{"basic-tech-card", 1}},
-      time = 15
-    },
-    order = "a-h-a"
-  },
-  {
-    type = "technology",
-    name = "sp-steel-machining",  -- #ForRegEx# - technology
-    icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/connecting-rod.png",
-    effects =
-    {
-      {
-        type = "unlock-recipe",
-        recipe = "sp-connecting-rod"
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "steel-gear-wheel"
-      }
-    },
-    prerequisites = { "steel-processing" },
-    unit =
-    {
-      count = 50,
-      ingredients = {{"automation-science-pack", 1}},
       time = 15
     },
     order = "a-h-a"
@@ -140,7 +121,7 @@ data:extend({
     unit =
     {
       count = 50,
-      ingredients = {{"automation-science-pack", 1}},
+      ingredients = {{"chemical-science-pack", 1}},
       time = 15
     },
     order = "a-h-a"
@@ -212,18 +193,19 @@ data:extend({
   },
 })
 
--- spaghenutty thechnology changes
+-- MARK: spaghenutty thechnology changes
 data.raw.technology["sp-aluminum-processing"].prerequisites = {"kr-fluids-chemistry"}
 data.raw.technology["sp-coal-processing"].effects = {
   {type = "unlock-recipe", recipe = "coke"},
   {type = "unlock-recipe", recipe = "kr-vc-coal"}
 }
 
+table.insert(data.raw.technology["sp-steel-machining"].effects, {type = "unlock-recipe", recipe = "steel-gear-wheel"})
 table.insert(data.raw.technology["sp-raw-resource-from-acrocrystal"].effects, {type = "unlock-recipe", recipe = "sp-raw-rare-metals-from-acrocrystal"})
 table.insert(data.raw.technology["sp-processed-resource-from-acrovoid"].effects, {type = "unlock-recipe", recipe = "sp-coke-from-acrovoid"})
 table.insert(data.raw.technology["sp-processed-resource-from-acrovoid"].effects, {type = "unlock-recipe", recipe = "sp-silicon-from-acrovoid"})
 
--- krastorio technology changes
+-- MARK: Krastorio technology changes
 data.raw.technology["electronics"].prerequisites = {"automation", "automation-science-pack", "sp-basic-solder"}
 
 data.raw.technology["kr-crusher"].prerequisites = {"electricity"}
@@ -250,6 +232,11 @@ data.raw.technology["landfill"].effects = {
 
 data.raw.technology["kr-fluids-chemistry"].prerequisites = {"logistic-science-pack", "engine"}
 data.raw.technology["kr-fluids-chemistry"].unit = {count = 50, ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}}, time = 15}
+
+table.insert(data.raw.technology["kr-automation-core"].prerequisites, "sp-iron-machining")
+table.insert(data.raw.technology["kr-automation-core"].prerequisites, "sp-iron-extruding")
+
+table.insert(data.raw.technology["kr-mineral-water-gathering"].prerequisites, "sp-actuator")
 
 table.insert(data.raw.technology["kr-steel-fluid-tanks"].prerequisites, "sp-brass")
 

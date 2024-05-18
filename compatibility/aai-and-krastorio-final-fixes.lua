@@ -24,8 +24,8 @@ util.change_recipe_ingredients("automation-science-pack",
   20,
   30)
 util.change_recipe_ingredients("logistic-science-pack",
-  {{"inserter-parts", 5}, {"electronic-circuit", 5}, {"electric-motor", 1}, {"blank-tech-card", 5}},
-  {{"inserter-parts", 10}, {"electronic-circuit", 10}, {"electric-motor", 2}, {"blank-tech-card", 5}},
+  {{"electronic-circuit", 5}, {"electric-motor", 1}, {"engine-unit", 1}, {"blank-tech-card", 5}},
+  {{"electronic-circuit", 8}, {"electric-motor", 2}, {"engine-unit", 1}, {"blank-tech-card", 5}},
   20,
   30)
 

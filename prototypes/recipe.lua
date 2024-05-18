@@ -976,8 +976,8 @@ data:extend({
   {
     type = "recipe",
     name = "sp-bolts-from-iron-plate",  -- #ForRegEx# - recipe
-    icons = util.overlay_small_icon("__Spaghenutti__/graphics/icons/bolts-1.png", 64,
-                                    "__base__/graphics/icons/iron-plate.png", 64),
+    icon = "__Spaghenutti__/graphics/icons/bolts-1.png",
+    icon_size = 64,
     category = "crafting",
     enabled = false,
     energy_required = 1.2,  -- time in seconds to make the item
@@ -1007,8 +1007,8 @@ data:extend({
   {
     type = "recipe",
     name = "sp-machined-parts-from-iron-plate",  -- #ForRegEx# - recipe
-    icons = util.overlay_small_icon("__Spaghenutti__/graphics/icons/machined-parts-4.png", 64,
-                                    "__base__/graphics/icons/iron-plate.png", 64),
+    icon = "__Spaghenutti__/graphics/icons/machined-parts-4.png",
+    icon_size = 64,
     category = "crafting",
     enabled = false,
     energy_required = 2,  -- time in seconds to make the item
@@ -5083,7 +5083,7 @@ data:extend({
     icon = "__Spaghenutti__/graphics/icons/cobalt-sulfate.png",
     icon_size = 64,
     scale = 0.25,
-    category = "crafting",
+    category = "smelting",
     subgroup = "raw-resource",
     enabled = false,
     energy_required = 0.4,  -- time in seconds to make the item
