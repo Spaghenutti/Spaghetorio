@@ -29,7 +29,7 @@ TODO:
   ? Change Factorio recipes
   ? Change Krastorio recipes
   ? Change AAI recipes
-  - Fix technology unlocking
+  - Fix technology unlocking and add recipes for tech cards
   - Add cyclotron
   - Add particle accelerator
   - Replace dummy icons
