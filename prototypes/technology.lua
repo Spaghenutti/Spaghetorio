@@ -2508,8 +2508,8 @@ data:extend({
   {
     type = "technology",
     name = "sp-ethylene-products",  -- #ForRegEx# - technology
-    icon_size = 64,
-    icon = "__Spaghenutti__/graphics/dummy/dummy-technology-sp-copper-machining.png",
+    icon_size = 256,
+    icon = "__Spaghenutti__/graphics/hr-icons/propane.png",
     effects =
     {
       {
@@ -2554,8 +2554,8 @@ data:extend({
   {
     type = "technology",
     name = "sp-propane-products",  -- #ForRegEx# - technology
-    icon_size = 64,
-    icon = "__Spaghenutti__/graphics/dummy/dummy-technology-sp-epoxy.png",
+    icon_size = 256,
+    icon = "__Spaghenutti__/graphics/hr-icons/epoxy.png",
     effects =
     {
       {
@@ -2583,8 +2583,8 @@ data:extend({
   {
     type = "technology",
     name = "sp-sodium-hydroxide",  -- #ForRegEx# - technology
-    icon_size = 64,
-    icon = "__Spaghenutti__/graphics/dummy/dummy-technology-sp-sodium-hydroxide.png",
+    icon_size = 256,
+    icon = "__Spaghenutti__/graphics/hr-icons/sodium-hydroxide.png",
     effects =
     {
       {
@@ -2608,8 +2608,8 @@ data:extend({
   {
     type = "technology",
     name = "sp-vinyl-chloride",  -- #ForRegEx# - technology
-    icon_size = 64,
-    icon = "__Spaghenutti__/graphics/dummy/dummy-technology-sp-vinyl-chloride.png",
+    icon_size = 256,
+    icon = "__Spaghenutti__/graphics/hr-icons/vinyl-chloride.png",
     effects =
     {
       {

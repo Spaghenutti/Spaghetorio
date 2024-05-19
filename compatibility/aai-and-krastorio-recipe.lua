@@ -852,6 +852,9 @@ table.insert(data.raw.recipe["sp-tellurium-from-acrovoid"].results, {type = "flu
 table.insert(data.raw.recipe["sp-sulfur-from-acrovoid"].results, {type = "item", name = "silicon", probability=0.15, amount = 1})
 table.insert(data.raw.recipe["sp-sulfur-from-acrovoid"].results, {type = "fluid", name = "oxygen", amount = 15})  
 
+-- MARK: Update icons
+-- Add acion changes here
+
 -- MARK: Change recipe category
 data.raw.recipe["sp-aluminum-sheet"].category = "electrolysis"
 data.raw.recipe["sp-zinc-plate"].category = "electrolysis"

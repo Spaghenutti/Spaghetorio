@@ -16,6 +16,12 @@ function data_util.change_item_icon(name, icon, icon_size, icon_mipmaps)
   data.raw.item[name].icon_mipmaps = icon_mipmaps
 end
 
+function data_util.change_fluid_icon(name, icon, icon_size, icon_mipmaps)
+  data.raw.fluid[name].icon = icon
+  data.raw.fluid[name].icon_size = icon_size
+  data.raw.fluid[name].icon_mipmaps = icon_mipmaps
+end
+
 function data_util.change_tool_icon(name, icon, icon_size, icon_mipmaps)
   data.raw.tool[name].icon = icon
   data.raw.tool[name].icon_size = icon_size

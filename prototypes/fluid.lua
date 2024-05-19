@@ -54,7 +54,7 @@ data:extend({
     heat_capacity = "0.1KJ",
     base_color = {r=0.05, g=0.1, b=0.5},
     flow_color = {r=0.05, g=0.1, b=0.5},
-    icon = "__Spaghenutti__/graphics/dummy/dummy-fluid-sp-helium.png",
+    icon = "__Spaghenutti__/graphics/icons/helium.png",
     icon_size = 64,
     icon_mipmaps = 4,
     order = "a[fluid]-f[helium]"
@@ -66,7 +66,7 @@ data:extend({
     heat_capacity = "0.1KJ",
     base_color = {r=0.05, g=0.1, b=0.5},
     flow_color = {r=0.05, g=0.1, b=0.5},
-    icon = "__Spaghenutti__/graphics/dummy/dummy-fluid-sp-helium-3.png",
+    icon = "__Spaghenutti__/graphics/icons/helium-3.png",
     icon_size = 64,
     icon_mipmaps = 4,
     order = "a[fluid]-f[helium-3]"
@@ -138,7 +138,7 @@ data:extend({
     heat_capacity = "0.1KJ",
     base_color = {r=0.05, g=0.1, b=0.5},
     flow_color = {r=0.05, g=0.1, b=0.5},
-    icon = "__Spaghenutti__/graphics/dummy/dummy-fluid-sp-deuterium.png",
+    icon = "__base__/graphics/icons/fluid/petroleum-gas.png",
     icon_size = 64,
     icon_mipmaps = 4,
     order = "a[fluid]-f[ethylene]"
@@ -150,7 +150,7 @@ data:extend({
     heat_capacity = "0.1KJ",
     base_color = {r=0.05, g=0.1, b=0.5},
     flow_color = {r=0.05, g=0.1, b=0.5},
-    icon = "__Spaghenutti__/graphics/dummy/dummy-fluid-sp-deuterium.png",
+    icon = "__Spaghenutti__/graphics/icons/ethylene-dichloride.png",
     icon_size = 64,
     icon_mipmaps = 4,
     order = "a[fluid]-f[ethylene-dichloride]"
@@ -162,7 +162,7 @@ data:extend({
     heat_capacity = "0.1KJ",
     base_color = {r=0.05, g=0.1, b=0.5},
     flow_color = {r=0.05, g=0.1, b=0.5},
-    icon = "__Spaghenutti__/graphics/dummy/dummy-fluid-sp-deuterium.png",
+    icon = "__Spaghenutti__/graphics/icons/sodium-hydroxide.png",
     icon_size = 64,
     icon_mipmaps = 4,
     order = "a[fluid]-f[sodium-hydroxide]"
@@ -174,7 +174,7 @@ data:extend({
     heat_capacity = "0.1KJ",
     base_color = {r=0.05, g=0.1, b=0.5},
     flow_color = {r=0.05, g=0.1, b=0.5},
-    icon = "__Spaghenutti__/graphics/dummy/dummy-fluid-sp-deuterium.png",
+    icon = "__Spaghenutti__/graphics/icons/propane.png",
     icon_size = 64,
     icon_mipmaps = 4,
     order = "a[fluid]-f[propene]"
@@ -186,7 +186,7 @@ data:extend({
     heat_capacity = "0.1KJ",
     base_color = {r=0.05, g=0.1, b=0.5},
     flow_color = {r=0.05, g=0.1, b=0.5},
-    icon = "__Spaghenutti__/graphics/dummy/dummy-fluid-sp-deuterium.png",
+    icon = "__Spaghenutti__/graphics/icons/propylene.png",
     icon_size = 64,
     icon_mipmaps = 4,
     order = "a[fluid]-f[propylene]"
@@ -198,7 +198,7 @@ data:extend({
     heat_capacity = "0.1KJ",
     base_color = {r=0.05, g=0.1, b=0.5},
     flow_color = {r=0.05, g=0.1, b=0.5},
-    icon = "__Spaghenutti__/graphics/dummy/dummy-fluid-sp-deuterium.png",
+    icon = "__Spaghenutti__/graphics/icons/benzene.png",
     icon_size = 64,
     icon_mipmaps = 4,
     order = "a[fluid]-f[benzene]"
@@ -210,7 +210,7 @@ data:extend({
     heat_capacity = "0.1KJ",
     base_color = {r=0.05, g=0.1, b=0.5},
     flow_color = {r=0.05, g=0.1, b=0.5},
-    icon = "__Spaghenutti__/graphics/dummy/dummy-fluid-sp-deuterium.png",
+    icon = "__Spaghenutti__/graphics/icons/styrene.png",
     icon_size = 64,
     icon_mipmaps = 4,
     order = "a[fluid]-f[styrene]"
@@ -222,7 +222,7 @@ data:extend({
     heat_capacity = "0.1KJ",
     base_color = {r=0.05, g=0.1, b=0.5},
     flow_color = {r=0.05, g=0.1, b=0.5},
-    icon = "__Spaghenutti__/graphics/dummy/dummy-fluid-sp-deuterium.png",
+    icon = "__Spaghenutti__/graphics/icons/vinyl-chloride.png",
     icon_size = 64,
     icon_mipmaps = 4,
     order = "a[fluid]-f[vinyl-chloride]"
@@ -234,7 +234,7 @@ data:extend({
     heat_capacity = "0.1KJ",
     base_color = {r=0.05, g=0.1, b=0.5},
     flow_color = {r=0.05, g=0.1, b=0.5},
-    icon = "__Spaghenutti__/graphics/dummy/dummy-fluid-sp-deuterium.png",
+    icon = "__Spaghenutti__/graphics/icons/methyl-tert-butyl-ether.png",
     icon_size = 64,
     icon_mipmaps = 4,
     order = "a[fluid]-f[vinyl-chloride]"

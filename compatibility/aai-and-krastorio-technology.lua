@@ -78,8 +78,8 @@ data:extend({
   {
     type = "technology",
     name = "sp-burner-inserter",  -- #ForRegEx# - technology
-    icon_size = 64,
-    icon = "__Spaghenutti__/graphics/dummy/dummy-technology-sp-iron-extruding.png",
+    icon_size = 256,
+    icon = "__Spaghenutti__/graphics/hr-icons/burner-inserter.png",
     effects =
     {
       {

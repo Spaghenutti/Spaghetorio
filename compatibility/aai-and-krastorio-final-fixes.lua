@@ -33,3 +33,6 @@ util.change_recipe_ingredients("logistic-science-pack",
 data.raw.recipe["uranium-fuel-cell"].hidden = true
 data.raw.item["uranium-fuel-cell"].flags = {"hidden"}
 data.raw.item["used-up-uranium-fuel-cell"].flags = {"hidden"}
+
+-- Fix petroleum gas icon
+util.change_fluid_icon("petroleum-gas", "__Spaghenutti__/graphics/icons/petroleum-gas.png", 64, nil)

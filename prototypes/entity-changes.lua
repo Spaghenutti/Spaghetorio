@@ -19,10 +19,7 @@ if not mods["Krastorio2"] then
   end
 end
 
--- Changes steel-plate
-util.change_item_icon("steel-plate", "__Spaghenutti__/graphics/dummy/dummy-item-replacement-default.png", 128, nil)
-
--- Change subgroup of items
+-- MARK: Change Subgroups
 data.raw.item["sulfur"].subgroup = "processed-resource"
 data.raw.item["uranium-238"].subgroup = "processed-resource"
 data.raw.item["uranium-235"].subgroup = "processed-resource"

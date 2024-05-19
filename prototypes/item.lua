@@ -2915,7 +2915,7 @@ if not mods["Krastorio2"] then
     {
       type = "item",
       name = "sp-coke",  -- #ForRegEx# - item
-      icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-alumina.png",
+      icon = "__Spaghenutti__/graphics/dummy/dummy-item-sp-coke.png",
       icon_size = 64,
       scale = 0.25,
       subgroup = "processed-resource",

@@ -2301,7 +2301,8 @@ data:extend({
   {
     type = "recipe",
     name = "sp-ethylene-and-propene",  -- #ForRegEx# - recipe
-    icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
+    icons = util.combine_two_icons("__base__/graphics/icons/fluid/petroleum-gas.png", 64, nil,
+                                   "__Spaghenutti__/graphics/icons/propane.png", 64, nil),
     icon_size = 64,
     mip_maps = 4,
     category = "chemistry",
@@ -4244,8 +4245,9 @@ data:extend({
   {
     type = "recipe",
     name = "sp-landfill-from-iron-ore",
-    icons = util.overlay_small_icon("__base__/graphics/icons/landfill.png", 64,
-                                    "__base__/graphics/icons/iron-ore.png", 64),
+    icons = util.overlay_two_small_icons("__base__/graphics/icons/landfill.png", 64,
+                                         "__base__/graphics/icons/stone.png", 64,
+                                         "__base__/graphics/icons/iron-ore.png", 64),
     energy_required = 0.5,
     enabled = false,
     category = "crafting",
@@ -4307,7 +4309,7 @@ data:extend({
     type = "recipe",
     name = "sp-stone-brick-from-limestone",
     icons = util.overlay_small_icon("__base__/graphics/icons/stone-brick.png", 64,
-                                      "__Spaghenutti__/graphics/icons/limestone-1.png", 64),
+                                    "__Spaghenutti__/graphics/icons/limestone-1.png", 64),
     category = "intermediate-smelting",
     energy_required = 3.2,
     enabled = false,
@@ -4463,8 +4465,9 @@ data:extend({
   {
     type = "recipe",
     name = "sp-landfill-from-sand",
-    icons = util.overlay_small_icon("__base__/graphics/icons/landfill.png", 64,
-                                    "__Spaghenutti__/graphics/dummy/dummy-item-sp-sand.png", 64),
+    icons = util.overlay_two_small_icons("__base__/graphics/icons/landfill.png", 64,
+                                         "__base__/graphics/icons/stone.png", 64,
+                                         "__Krastorio2Assets__/icons/items-with-variations/sand/sand.png", 64),
     energy_required = 1,
     enabled = false,
     category = "crafting",
@@ -4481,7 +4484,7 @@ data:extend({
     type = "recipe",
     name = "sp-stone-brick-from-sand",
     icons = util.overlay_small_icon("__base__/graphics/icons/stone-brick.png", 64,
-                                    "__Spaghenutti__/graphics/dummy/dummy-item-sp-sand.png", 64),
+                                    "__Krastorio2Assets__/icons/items-with-variations/sand/sand.png", 64),
     category = "intermediate-smelting",
     energy_required = 2,
     enabled = false,
@@ -4600,6 +4603,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-sodium-and-chlorine",  -- #ForRegEx# - recipe
+    -- Update icons here, search: "-- Add acion changes here"
     icons = util.combine_two_icons("__Spaghenutti__/graphics/icons/sodium.png", 64, nil,
                                    "__Spaghenutti__/graphics/dummy/dummy-fluid-sp-chlorine.png", 64, nil),
     icon_size = 256,
@@ -4919,7 +4923,9 @@ data:extend({
   {
     type = "recipe",
     name = "sp-sodium-hydroxide-from-salt",  -- #ForRegEx# - recipe
-    icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
+    -- Update icons here, search: "-- Add acion changes here"
+    icons = util.combine_two_icons("__Spaghenutti__/graphics/icons/sodium-hydroxide.png", 64, nil,
+                                   "__Spaghenutti__/graphics/dummy/dummy-fluid-sp-chlorine.png", 64, nil),
     icon_size = 64,
     scale = 0.25,
     category = "chemistry",
@@ -5014,7 +5020,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-helium-3-from-helium-and-hydrogen",  -- #ForRegEx# - recipe
-    icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
+    icon = "__Spaghenutti__/graphics/icons/helium-3.png",
     icon_size = 64,
     mip_maps = 4,
     category = "crafting-with-fluid",
