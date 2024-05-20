@@ -348,11 +348,11 @@ data:extend({
         recipe = "sp-landfill-from-cement"
       },
     },
-    prerequisites = {"sp-aluminum-processing"},
+    prerequisites = {"chemical-science-pack"},
     unit =
     {
       count = 50,
-      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}, {"chemical-science-pack", 1}},
       time = 15
     },
     order = "a-h-a"
@@ -827,6 +827,27 @@ data:extend({
   },
   {
     type = "technology",
+    name = "sp-flange",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghenutti__/graphics/hr-icons/flange.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-flange"
+      },
+    },
+    prerequisites = {"sp-stainless-steel-processing"},
+    unit =
+    {
+      count = 100,
+      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
     name = "sp-pressure-fluid",  -- #ForRegEx# - technology
     icon_size = 256,
     icon = "__Spaghenutti__/graphics/hr-icons/pressure-tube.png",
@@ -845,7 +866,7 @@ data:extend({
         recipe = "sp-pressure-tube"
       },
     },
-    prerequisites = {"sp-nickel-alloys", "sp-stainless-steel-processing"},
+    prerequisites = {"sp-nickel-alloys", "sp-flange"},
     unit =
     {
       count = 100,
@@ -1084,7 +1105,7 @@ data:extend({
         recipe = "sp-transistor"
       },
     },
-    prerequisites = {"logistic-science-pack"},
+    prerequisites = {"sp-phosphorus-processing"},
     unit =
     {
       count = 100,
@@ -3020,6 +3041,9 @@ data:extend({
     },
     order = "a-h-a"
   },
+-- MARK: Science packs
+
+
 })
 
 if not mods["Krastorio2"] then
@@ -3034,6 +3058,9 @@ end
 -- MARK: Tech changes
 table.insert(data.raw.technology["automation-science-pack"].prerequisites, "sp-mechanical-assembling")
 
+table.insert(data.raw.technology["chemical-science-pack"].prerequisites, "sp-aluminum-processing")
+table.insert(data.raw.technology["chemical-science-pack"].prerequisites, "plastics")
+
 table.insert(data.raw.technology["gun-turret"].prerequisites, "sp-mechanical-assembling")
 
 table.insert(data.raw.technology["fast-inserter"].prerequisites, "sp-ball-bearing")
@@ -3042,6 +3069,8 @@ table.insert(data.raw.technology["oil-processing"].prerequisites, "sp-stainless-
 
 table.insert(data.raw.technology["railway"].prerequisites, "sp-steel-wheel")
 table.insert(data.raw.technology["railway"].effects, {type = "unlock-recipe", recipe = "sp-train-boige"})
+
+table.insert(data.raw.technology["advanced-material-processing"].effects, {type = "unlock-recipe", recipe = "sp-heating-filament"})
 
 table.insert(data.raw.technology["fluid-handling"].prerequisites, "sp-basic-alloy")
 table.insert(data.raw.technology["fluid-handling"].effects, {type = "unlock-recipe", recipe = "sp-valve"})

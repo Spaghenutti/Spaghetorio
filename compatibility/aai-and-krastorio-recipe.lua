@@ -97,7 +97,6 @@ data:extend({
       {type = "fluid", name = "sp-helium", amount = 1}
     }
   },
-  -- MARK: Alternative Spaghenutty recipes with existing result product from aai / krastorio mod
   {
     type = "recipe",
     name = "sp-glass-from-calcium",  -- #ForRegEx# - recipe
@@ -110,6 +109,30 @@ data:extend({
     },
     results = {
       {type = "item", name = "glass", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-separate-electronic-components",  -- #ForRegEx# - recipe
+    icon_size = 64,
+    icons = util.combine_four_icons("__Spaghenutti__/graphics/icons/capacitor.png", 64, nil,
+                                    "__Spaghenutti__/graphics/icons/transistor.png", 64, nil,
+                                    "__Spaghenutti__/graphics/icons/resistor.png", 64, nil,
+                                    "__Spaghenutti__/graphics/icons/vacuum-tube.png", 64, nil),
+    category = "crafting",
+    subgroup = "electrical-optical-component",
+    enabled = false,
+    energy_required = 3,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "electronic-components", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-coil", amount = 1, probability = 0.4},
+      {type = "item", name = "sp-capacitor", amount = 3, probability = 0.8},
+      {type = "item", name = "sp-transistor", amount = 2, probability = 0.5},
+      {type = "item", name = "sp-resistor", amount = 5, probability = 0.7},
+      {type = "item", name = "sp-vacuum-tube", amount = 1, probability = 0.2},
+      {type = "item", name = "sp-solder", amount = 1}
     }
   },
   -- MARK: enriched resource recipes
@@ -817,6 +840,7 @@ table.insert(data.raw.recipe["oil-refinery"].ingredients, {"glass", 20})
 table.insert(data.raw.recipe["satellite"].ingredients, {"lithium-sulfur-battery", 20})
 
 -- MARK: Add missing results
+table.insert(data.raw.recipe["sp-silica"].results, {type = "item", name = "sand", probability = 0.3, amount = 1})
 table.insert(data.raw.recipe["sp-gold"].results, {type = "item", name = "sand", probability = 0.98, amount = 3})
 table.insert(data.raw.recipe["sp-platinum-iridium"].results, {type = "item", name = "sand", probability = 0.9807, amount = 3})
 table.insert(data.raw.recipe["sp-sodium-and-chlorine"].results, {type = "fluid", name = "chlorine", amount = 3})
@@ -871,6 +895,11 @@ util.change_recipe_ingredients("steel-plate",
 data.raw.recipe["steel-beam"].results = {{"steel-beam", 2}}
 data.raw.recipe["imersium-beam"].hidden = true
 data.raw.recipe["kr-s-c-imersium-beam"].category = "smelting"
+util.change_recipe_ingredients("silicon",
+  {{"sp-silica", 3}},
+  {{"iron-plate", 4}},
+  12,
+  16)
 
 -- MARK: recipe changes
 util.change_recipe_ingredients("electronic-circuit-stone",
@@ -905,6 +934,21 @@ util.change_recipe_ingredients("lithium-sulfur-battery",  -- "huge storage tank"
   6)
 
 -- MARK: Krastorio Buildings
+util.change_recipe_ingredients("kr-loader",
+  {{"motor", 1}, {"sp-machined-parts", 2}, {"sp-bolts", 4}, {"transport-belt", 1}},
+  {{"motor", 1}, {"sp-machined-parts", 4}, {"sp-bolts", 6}, {"transport-belt", 1}},
+  2,
+  3)
+util.change_recipe_ingredients("kr-fast-loader",
+  {{"sp-aluminum-frame", 2}, {"electric-motor", 2}, {"fast-transport-belt", 1}, {"steel-gear-wheel", 4}, {"sp-bolts", 4}},
+  {{"sp-aluminum-frame", 4}, {"electric-motor", 2}, {"fast-transport-belt", 1}, {"steel-gear-wheel", 6}, {"sp-bolts", 6}},
+  2,
+  3)
+util.change_recipe_ingredients("kr-steel-pump",
+  {{"steel-plate", 5}, {"engine-unit", 2}, {"sp-bolts", 12}, {"sp-flange", 2}, {"sp-machined-parts", 4}},
+  {{"steel-plate", 8}, {"engine-unit", 2}, {"sp-bolts", 20}, {"sp-flange", 2}, {"sp-machined-parts", 10}},
+  2,
+  3)
 util.change_recipe_ingredients("kr-wind-turbine",
   {{"iron-plate", 12}, {"stone-brick", 4}, {"sp-bolts", 4}, {"electric-motor", 1}},
   {{"iron-plate", 24}, {"stone-brick", 4}, {"sp-bolts", 10}, {"electric-motor", 2}},

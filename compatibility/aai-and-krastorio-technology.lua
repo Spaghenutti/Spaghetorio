@@ -205,6 +205,8 @@ table.insert(data.raw.technology["sp-raw-resource-from-acrocrystal"].effects, {t
 table.insert(data.raw.technology["sp-processed-resource-from-acrovoid"].effects, {type = "unlock-recipe", recipe = "sp-coke-from-acrovoid"})
 table.insert(data.raw.technology["sp-processed-resource-from-acrovoid"].effects, {type = "unlock-recipe", recipe = "sp-silicon-from-acrovoid"})
 
+table.insert(data.raw.technology["sp-electrical-components"].prerequisites, "kr-silicon-processing")
+
 -- MARK: Krastorio technology changes
 data.raw.technology["electronics"].prerequisites = {"automation", "automation-science-pack", "sp-basic-solder"}
 
@@ -233,10 +235,14 @@ data.raw.technology["landfill"].effects = {
 data.raw.technology["kr-fluids-chemistry"].prerequisites = {"logistic-science-pack", "engine"}
 data.raw.technology["kr-fluids-chemistry"].unit = {count = 50, ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}}, time = 15}
 
+table.insert(data.raw.technology["advanced-electronics"].effects, {type = "unlock-recipe", recipe = "sp-separate-electronic-components"})
+
 table.insert(data.raw.technology["kr-automation-core"].prerequisites, "sp-iron-machining")
 table.insert(data.raw.technology["kr-automation-core"].prerequisites, "sp-iron-extruding")
 
 table.insert(data.raw.technology["kr-mineral-water-gathering"].prerequisites, "sp-actuator")
+
+table.insert(data.raw.technology["kr-steel-fluid-handling"].prerequisites, "sp-flange")
 
 table.insert(data.raw.technology["kr-steel-fluid-tanks"].prerequisites, "sp-brass")
 

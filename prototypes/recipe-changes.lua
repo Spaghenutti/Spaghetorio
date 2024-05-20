@@ -110,8 +110,8 @@ util.change_recipe_ingredients("transport-belt",
   nil,
   nil)
 util.change_recipe_ingredients("fast-transport-belt",
-  {{"sp-aluminum-frame", 1}, {"electric-motor", 1}, {"sp-ball-bearing", 2}, {"electronic-circuit", 1}},
-  {{"sp-aluminum-frame", 2}, {"electric-motor", 1}, {"sp-ball-bearing", 2}, {"electronic-circuit", 2}},
+  {{"sp-aluminum-frame", 1}, {"electric-motor", 1}, {"sp-bolts", 4}, {"electronic-circuit", 1}},
+  {{"sp-aluminum-frame", 2}, {"electric-motor", 1}, {"sp-bolts", 6}, {"electronic-circuit", 2}},
   nil,
   nil)
 util.change_recipe_ingredients("express-transport-belt",

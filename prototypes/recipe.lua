@@ -4251,6 +4251,7 @@ data:extend({
     energy_required = 0.5,
     enabled = false,
     category = "crafting",
+    hide_from_player_crafting = true,
     ingredients =
     {
       {"stone", 10},
@@ -4267,6 +4268,7 @@ data:extend({
     energy_required = 0.5,
     enabled = false,
     category = "crafting",
+    hide_from_player_crafting = true,
     ingredients =
     {
       {"sp-limestone", 16}
@@ -4283,6 +4285,7 @@ data:extend({
     energy_required = 0.5,
     enabled = false,
     category = "crafting",
+    hide_from_player_crafting = true,
     ingredients =
     {
       {"stone", 10},
@@ -4303,6 +4306,7 @@ data:extend({
       {"sp-cement", 4}
     },
     result = "landfill",
+    hide_from_player_crafting = true,
     result_count = 2
   },
   {
@@ -4765,14 +4769,19 @@ data:extend({
   {
     type = "recipe",
     name = "sp-silica",  -- #ForRegEx# - recipe
+    icon = "__Spaghenutti__/graphics/icons/silica.png",
+    icon_size = 64,
+    mip_maps = 4,
     category = "smelting",
+    subgroup = "processed-resource",
     enabled = false,
     energy_required = 3.2,  -- time in seconds to make the item
     ingredients = {
       -- {type = "item", name = "sp-quartz", amount = 1},
     },
     results = {
-      {type = "item", name = "sp-silica", amount = 1}
+      {type = "item", name = "sp-silica", amount = 1},
+      -- {type = "item", name = "sp-sand", amount = 1},
     }
   },
   {
@@ -5313,6 +5322,7 @@ if not mods["Krastorio2"] then
   table.insert(data.raw.recipe["sp-differential"].ingredients, {type = "item", name = "iron-gear-wheel", amount = 6})
   
   -- Add missing results
+  table.insert(data.raw.recipe["sp-silica"].results, {type = "item", name = "sp-sand", probability = 0.3, amount = 1})
   table.insert(data.raw.recipe["sp-gold"].results, {type = "item", name = "sp-sand", probability = 0.98, amount = 3})
   table.insert(data.raw.recipe["sp-platinum-iridium"].results, {type = "item", name = "sp-sand", probability = 0.9807, amount = 3})
   table.insert(data.raw.recipe["sp-sodium-and-chlorine"].results, {type = "fluid", name = "sp-chlorine", amount = 3})

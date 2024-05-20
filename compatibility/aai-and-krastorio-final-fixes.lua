@@ -28,11 +28,20 @@ util.change_recipe_ingredients("logistic-science-pack",
   {{"electronic-circuit", 8}, {"electric-motor", 2}, {"engine-unit", 1}, {"blank-tech-card", 5}},
   20,
   30)
+util.change_recipe_ingredients("chemical-science-pack",
+  {{type = "fluid", name = "sulfuric-acid", amount = 50}, {type = "fluid", name = "light-oil", amount = 30}, {"plastic-bar", 5}, {"sp-alumina", 3}, {"blank-tech-card", 5}},
+  {{type = "fluid", name = "sulfuric-acid", amount = 75}, {type = "fluid", name = "light-oil", amount = 50}, {"plastic-bar", 5}, {"sp-alumina", 5}, {"blank-tech-card", 5}},
+  20,
+  30)
 
--- hide uranium fuel
+-- Hide uranium fuel
 data.raw.recipe["uranium-fuel-cell"].hidden = true
 data.raw.item["uranium-fuel-cell"].flags = {"hidden"}
 data.raw.item["used-up-uranium-fuel-cell"].flags = {"hidden"}
+
+-- Hide electronic components recipe
+data.raw.recipe["electronic-components"].hidden = true
+data.raw.recipe["kr-s-c-electronic-components"].hidden = true
 
 -- Fix petroleum gas icon
 util.change_fluid_icon("petroleum-gas", "__Spaghenutti__/graphics/icons/petroleum-gas.png", 64, nil)

@@ -45,6 +45,7 @@ Low prio
   - Fix smoke tints of chemical recipes
   - Fix sorting of items in lua. "Mark: buildings" does not exist as category
   - Fix all icons where petroleum gas shows up
+  - Move science-pack changes to diffirent file than aai-and-krastorio-final-fixes.lua
 
 Future changes
   - Move incopatibel recipes outside of "not mods["Krastorio2"] then" statement and update them with correct values inside the statement
