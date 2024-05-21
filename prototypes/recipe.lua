@@ -4249,6 +4249,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-electronic-science-pack-1",
+    category = "crafting",
     enabled = false,
     energy_required = 24,
     ingredients =
@@ -4264,12 +4265,16 @@ data:extend({
   {
     type = "recipe",
     name = "sp-geological-science-pack-1",
+    category = "crafting",
     enabled = false,
     energy_required = 24,
     ingredients =
     -- Krastorio: {"blank-tech-card", 5}
     {
-      {"iron-plate", 69},
+      {"stone", 10},
+      {"sand", 10},
+      {"quartz", 5},
+      {type = "fluid", name = "water", amount = 50},
     },
     result_count = 5,
     result = "sp-geological-science-pack-1"
@@ -4277,6 +4282,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-material-science-pack-1",
+    category = "crafting",
     enabled = false,
     energy_required = 24,
     ingredients =
@@ -4290,6 +4296,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-automation-science-pack-2",
+    category = "crafting",
     enabled = false,
     energy_required = 24,
     ingredients =
@@ -4303,6 +4310,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-logistic-science-pack-2",
+    category = "crafting",
     enabled = false,
     energy_required = 24,
     ingredients =
@@ -4316,6 +4324,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-military-science-pack-2",
+    category = "crafting",
     enabled = false,
     energy_required = 24,
     ingredients =
@@ -4329,6 +4338,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-chemical-science-pack-2",
+    category = "crafting",
     enabled = false,
     energy_required = 24,
     ingredients =
@@ -4342,6 +4352,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-electronic-science-pack-2",
+    category = "crafting",
     enabled = false,
     energy_required = 24,
     ingredients =
@@ -4355,6 +4366,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-geological-science-pack-2",
+    category = "crafting",
     enabled = false,
     energy_required = 24,
     ingredients =
@@ -4368,6 +4380,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-material-science-pack-2",
+    category = "crafting",
     enabled = false,
     energy_required = 24,
     ingredients =
@@ -4381,6 +4394,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-astronomical-science-pack-2",
+    category = "crafting",
     enabled = false,
     energy_required = 24,
     ingredients =
@@ -4394,6 +4408,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-computer-science-pack-2",
+    category = "crafting",
     enabled = false,
     energy_required = 24,
     ingredients =
@@ -4403,6 +4418,160 @@ data:extend({
     },
     result_count = 5,
     result = "sp-computer-science-pack-2"
+  },
+  {
+    type = "recipe",
+    name = "sp-automation-science-pack-3",
+    category = "crafting",
+    enabled = false,
+    energy_required = 24,
+    ingredients =
+    -- Krastorio: {"blank-tech-card", 5}
+    {
+      {"iron-plate", 69},
+    },
+    result_count = 5,
+    result = "sp-automation-science-pack-3"
+  },
+  {
+    type = "recipe",
+    name = "sp-logistic-science-pack-3",
+    category = "crafting",
+    enabled = false,
+    energy_required = 24,
+    ingredients =
+    -- Krastorio: {"blank-tech-card", 5}
+    {
+      {"iron-plate", 69},
+    },
+    result_count = 5,
+    result = "sp-logistic-science-pack-3"
+  },
+  {
+    type = "recipe",
+    name = "sp-military-science-pack-3",
+    category = "crafting",
+    enabled = false,
+    energy_required = 24,
+    ingredients =
+    -- Krastorio: {"blank-tech-card", 5}
+    {
+      {"iron-plate", 69},
+    },
+    result_count = 5,
+    result = "sp-military-science-pack-3"
+  },
+  {
+    type = "recipe",
+    name = "sp-chemical-science-pack-3",
+    category = "crafting",
+    enabled = false,
+    energy_required = 24,
+    ingredients =
+    -- Krastorio: {"blank-tech-card", 5}
+    {
+      {"iron-plate", 69},
+    },
+    result_count = 5,
+    result = "sp-chemical-science-pack-3"
+  },
+  {
+    type = "recipe",
+    name = "sp-electronic-science-pack-3",
+    category = "crafting",
+    enabled = false,
+    energy_required = 24,
+    ingredients =
+    -- Krastorio: {"blank-tech-card", 5}
+    {
+      {"iron-plate", 69},
+    },
+    result_count = 5,
+    result = "sp-electronic-science-pack-3"
+  },
+  {
+    type = "recipe",
+    name = "sp-geological-science-pack-3",
+    category = "crafting",
+    enabled = false,
+    energy_required = 24,
+    ingredients =
+    -- Krastorio: {"blank-tech-card", 5}
+    {
+      {"iron-plate", 69},
+    },
+    result_count = 5,
+    result = "sp-geological-science-pack-3"
+  },
+  {
+    type = "recipe",
+    name = "sp-material-science-pack-3",
+    category = "crafting",
+    enabled = false,
+    energy_required = 24,
+    ingredients =
+    -- Krastorio: {"blank-tech-card", 5}
+    {
+      {"iron-plate", 69},
+    },
+    result_count = 5,
+    result = "sp-material-science-pack-3"
+  },
+  {
+    type = "recipe",
+    name = "sp-astronomical-science-pack-3",
+    category = "crafting",
+    enabled = false,
+    energy_required = 24,
+    ingredients =
+    -- Krastorio: {"blank-tech-card", 5}
+    {
+      {"iron-plate", 69},
+    },
+    result_count = 5,
+    result = "sp-astronomical-science-pack-3"
+  },
+  {
+    type = "recipe",
+    name = "sp-computer-science-pack-3",
+    category = "crafting",
+    enabled = false,
+    energy_required = 24,
+    ingredients =
+    -- Krastorio: {"blank-tech-card", 5}
+    {
+      {"iron-plate", 69},
+    },
+    result_count = 5,
+    result = "sp-computer-science-pack-3"
+  },
+  {
+    type = "recipe",
+    name = "sp-production-science-pack-3",
+    category = "crafting",
+    enabled = false,
+    energy_required = 24,
+    ingredients =
+    -- Krastorio: {"blank-tech-card", 5}
+    {
+      {"iron-plate", 69},
+    },
+    result_count = 5,
+    result = "sp-production-science-pack-3"
+  },
+  {
+    type = "recipe",
+    name = "sp-utility-science-pack-3",
+    category = "crafting",
+    enabled = false,
+    energy_required = 24,
+    ingredients =
+    -- Krastorio: {"blank-tech-card", 5}
+    {
+      {"iron-plate", 69},
+    },
+    result_count = 5,
+    result = "sp-utility-science-pack-3"
   },
   ------------------------------------------------------------------------------
   -- Alternate recipes for vanilla items

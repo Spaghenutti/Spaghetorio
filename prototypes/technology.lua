@@ -892,7 +892,7 @@ data:extend({
         recipe = "sp-sinter-filter"
       },
     },
-    prerequisites = {"sp-stainless-steel-processing", "plastics"},
+    prerequisites = {"sp-stainless-steel-processing", "plastics", "sp-basic-alloy"},
     unit =
     {
       count = 100,
@@ -1105,7 +1105,7 @@ data:extend({
         recipe = "sp-transistor"
       },
     },
-    prerequisites = {"sp-phosphorus-processing"},
+    prerequisites = {"sp-phosphorus-processing", "sp-electronic-science-pack-1"},
     unit =
     {
       count = 100,
@@ -1399,7 +1399,7 @@ data:extend({
         recipe = "sp-spark-plug"
       },
     },
-    prerequisites = {"logistic-science-pack"},
+    prerequisites = {"sp-nickel-alloys", "sp-advanced-ceramics"},
     unit =
     {
       count = 100,
@@ -3294,6 +3294,195 @@ data:extend({
     },
     order = "a-h-a"
   },
+  {
+    type = "technology",
+    name = "sp-automation-science-pack-3",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghenutti__/graphics/hr-icons/automation-science-pack-3.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-automation-science-pack-3"
+      },
+    },
+    prerequisites = {"sp-automation-science-pack-2", "sp-logistic-science-pack-2", "sp-chemical-science-pack-2", "sp-electronic-science-pack-2", "sp-geological-science-pack-2", "sp-astronomical-science-pack-2", "sp-material-science-pack-2"},
+    unit =
+    {
+      count = 100,
+      ingredients = {{"sp-automation-science-pack-2", 1}, {"sp-logistic-science-pack-2", 1}, {"sp-chemical-science-pack-2", 1}, {"sp-electronic-science-pack-2", 1}, {"sp-geological-science-pack-2", 1}, {"sp-astronomical-science-pack-2", 1}, {"sp-material-science-pack-2", 1}},
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-logistic-science-pack-3",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghenutti__/graphics/hr-icons/logistic-science-pack-3.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-logistic-science-pack-3"
+      },
+    },
+    prerequisites = {"sp-automation-science-pack-2", "sp-logistic-science-pack-2", "sp-chemical-science-pack-2", "sp-electronic-science-pack-2", "sp-geological-science-pack-2", "sp-astronomical-science-pack-2", "sp-material-science-pack-2"},
+    unit =
+    {
+      count = 100,
+      ingredients = {{"sp-automation-science-pack-2", 1}, {"sp-logistic-science-pack-2", 1}, {"sp-chemical-science-pack-2", 1}, {"sp-electronic-science-pack-2", 1}, {"sp-geological-science-pack-2", 1}, {"sp-astronomical-science-pack-2", 1}, {"sp-material-science-pack-2", 1}},
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-military-science-pack-3",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghenutti__/graphics/hr-icons/military-science-pack-3.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-military-science-pack-3"
+      },
+    },
+    prerequisites = {"sp-automation-science-pack-2", "sp-logistic-science-pack-2", "sp-military-science-pack-2", "sp-chemical-science-pack-2", "sp-electronic-science-pack-2", "sp-geological-science-pack-2", "sp-astronomical-science-pack-2", "sp-material-science-pack-2"},
+    unit =
+    {
+      count = 100,
+      ingredients = {{"sp-automation-science-pack-2", 1}, {"sp-logistic-science-pack-2", 1}, {"sp-military-science-pack-2", 1}, {"sp-chemical-science-pack-2", 1}, {"sp-electronic-science-pack-2", 1}, {"sp-geological-science-pack-2", 1}, {"sp-astronomical-science-pack-2", 1}, {"sp-material-science-pack-2", 1}},
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-chemical-science-pack-3",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghenutti__/graphics/hr-icons/chemical-science-pack-3.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-chemical-science-pack-3"
+      },
+    },
+    prerequisites = {"sp-automation-science-pack-2", "sp-logistic-science-pack-2", "sp-chemical-science-pack-2", "sp-electronic-science-pack-2", "sp-geological-science-pack-2", "sp-astronomical-science-pack-2", "sp-material-science-pack-2"},
+    unit =
+    {
+      count = 100,
+      ingredients = {{"sp-automation-science-pack-2", 1}, {"sp-logistic-science-pack-2", 1}, {"sp-chemical-science-pack-2", 1}, {"sp-electronic-science-pack-2", 1}, {"sp-geological-science-pack-2", 1}, {"sp-astronomical-science-pack-2", 1}, {"sp-material-science-pack-2", 1}},
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-electronic-science-pack-3",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghenutti__/graphics/hr-icons/electronic-science-pack-3.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-electronic-science-pack-3"
+      },
+    },
+    prerequisites = {"sp-automation-science-pack-2", "sp-logistic-science-pack-2", "sp-chemical-science-pack-2", "sp-electronic-science-pack-2", "sp-geological-science-pack-2", "sp-astronomical-science-pack-2", "sp-material-science-pack-2"},
+    unit =
+    {
+      count = 100,
+      ingredients = {{"sp-automation-science-pack-2", 1}, {"sp-logistic-science-pack-2", 1}, {"sp-chemical-science-pack-2", 1}, {"sp-electronic-science-pack-2", 1}, {"sp-geological-science-pack-2", 1}, {"sp-astronomical-science-pack-2", 1}, {"sp-material-science-pack-2", 1}},
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-geological-science-pack-3",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghenutti__/graphics/hr-icons/geological-science-pack-3.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-geological-science-pack-3"
+      },
+    },
+    prerequisites = {"sp-automation-science-pack-2", "sp-logistic-science-pack-2", "sp-chemical-science-pack-2", "sp-electronic-science-pack-2", "sp-geological-science-pack-2", "sp-astronomical-science-pack-2", "sp-material-science-pack-2"},
+    unit =
+    {
+      count = 100,
+      ingredients = {{"sp-automation-science-pack-2", 1}, {"sp-logistic-science-pack-2", 1}, {"sp-chemical-science-pack-2", 1}, {"sp-electronic-science-pack-2", 1}, {"sp-geological-science-pack-2", 1}, {"sp-astronomical-science-pack-2", 1}, {"sp-material-science-pack-2", 1}},
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-material-science-pack-3",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghenutti__/graphics/hr-icons/material-science-pack-3.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-material-science-pack-3"
+      },
+    },
+    prerequisites = {"sp-automation-science-pack-2", "sp-logistic-science-pack-2", "sp-chemical-science-pack-2", "sp-electronic-science-pack-2", "sp-geological-science-pack-2", "sp-astronomical-science-pack-2", "sp-material-science-pack-2"},
+    unit =
+    {
+      count = 100,
+      ingredients = {{"sp-automation-science-pack-2", 1}, {"sp-logistic-science-pack-2", 1}, {"sp-chemical-science-pack-2", 1}, {"sp-electronic-science-pack-2", 1}, {"sp-geological-science-pack-2", 1}, {"sp-astronomical-science-pack-2", 1}, {"sp-material-science-pack-2", 1}},
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-astronomical-science-pack-3",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghenutti__/graphics/hr-icons/astronomical-science-pack-3.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-astronomical-science-pack-3"
+      },
+    },
+    prerequisites = {"sp-automation-science-pack-2", "sp-logistic-science-pack-2", "sp-chemical-science-pack-2", "sp-electronic-science-pack-2", "sp-geological-science-pack-2", "sp-astronomical-science-pack-2", "sp-material-science-pack-2"},
+    unit =
+    {
+      count = 100,
+      ingredients = {{"sp-automation-science-pack-2", 1}, {"sp-logistic-science-pack-2", 1}, {"sp-chemical-science-pack-2", 1}, {"sp-electronic-science-pack-2", 1}, {"sp-geological-science-pack-2", 1}, {"sp-astronomical-science-pack-2", 1}, {"sp-material-science-pack-2", 1}},
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-computer-science-pack-3",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghenutti__/graphics/hr-icons/computer-science-pack-3.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-computer-science-pack-3"
+      },
+    },
+    prerequisites = {"sp-automation-science-pack-2", "sp-logistic-science-pack-2", "sp-chemical-science-pack-2", "sp-electronic-science-pack-2", "sp-geological-science-pack-2", "sp-astronomical-science-pack-2", "sp-material-science-pack-2"},
+    unit =
+    {
+      count = 100,
+      ingredients = {{"sp-automation-science-pack-2", 1}, {"sp-logistic-science-pack-2", 1}, {"sp-chemical-science-pack-2", 1}, {"sp-electronic-science-pack-2", 1}, {"sp-geological-science-pack-2", 1}, {"sp-astronomical-science-pack-2", 1}, {"sp-material-science-pack-2", 1}},
+      time = 15
+    },
+    order = "a-h-a"
+  },
 })
 
 if not mods["Krastorio2"] then
@@ -3329,6 +3518,7 @@ table.insert(data.raw.technology["fluid-handling"].effects, {type = "unlock-reci
 table.insert(data.raw.technology["nuclear-power"].effects, {type = "unlock-recipe", recipe = "sp-reactor-core"})
 table.insert(data.raw.technology["nuclear-power"].effects, {type = "unlock-recipe", recipe = "sp-control-rod"})
 
+-- data.raw.technology["landfill"].prerequisites = "sp-geological-science-pack-1"
 table.insert(data.raw.technology["landfill"].effects, {type = "unlock-recipe", recipe = "sp-landfill-from-limestone-and-stone"})
 table.insert(data.raw.technology["landfill"].effects, {type = "unlock-recipe", recipe = "sp-landfill-from-limestone"})
 table.insert(data.raw.technology["landfill"].effects, {type = "unlock-recipe", recipe = "sp-landfill-from-iron-ore"})

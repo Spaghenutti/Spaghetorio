@@ -235,7 +235,7 @@ data.raw.technology["landfill"].effects = {
 data.raw.technology["kr-fluids-chemistry"].prerequisites = {"logistic-science-pack", "engine"}
 data.raw.technology["kr-fluids-chemistry"].unit = {count = 50, ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}}, time = 15}
 
-table.insert(data.raw.technology["advanced-electronics"].prerequisites, "sp-electronic-science-pack-1")
+table.insert(data.raw.technology["advanced-electronics"].prerequisites, "sp-electronic-components")
 table.insert(data.raw.technology["advanced-electronics"].effects, {type = "unlock-recipe", recipe = "sp-separate-electronic-components"})
 
 table.insert(data.raw.technology["kr-automation-core"].prerequisites, "sp-iron-machining")
