@@ -1257,11 +1257,11 @@ data:extend({
         recipe = "sp-fabric"
       },
     },
-    prerequisites = {"logistic-science-pack"},
+    prerequisites = {"chemical-science-pack"},
     unit =
     {
       count = 100,
-      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}, {"chemical-science-pack", 1}},
       time = 15
     },
     order = "a-h-a"
@@ -1722,11 +1722,11 @@ data:extend({
         recipe = "sp-stibnite"
       },
     },
-    prerequisites = {"sulfur-processing"},
+    prerequisites = {"sp-chemical-science-pack-3"},
     unit =
     {
       count = 100,
-      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      ingredients = {{"sp-chemical-science-pack-3", 1}},
       time = 15
     },
     order = "a-h-a"
@@ -1769,7 +1769,7 @@ data:extend({
         recipe = "sp-high-purity-silicon"
       },
     },
-    prerequisites = {"logistic-science-pack"},
+    prerequisites = {"sp-electronic-science-pack-2"},
     unit =
     {
       count = 100,
@@ -1819,7 +1819,7 @@ data:extend({
         recipe = "sp-benzene"
       },
     },
-    prerequisites = {"sp-filter"},
+    prerequisites = {"sp-filter", "sp-phosphorus-processing"},
     unit =
     {
       count = 100,
@@ -2530,7 +2530,7 @@ data:extend({
     type = "technology",
     name = "sp-ethylene-products",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/propane.png",
+    icon = "__Spaghenutti__/graphics/hr-icons/ethylene-dichloride.png",
     effects =
     {
       {
@@ -2576,7 +2576,7 @@ data:extend({
     type = "technology",
     name = "sp-propane-products",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/epoxy.png",
+    icon = "__Spaghenutti__/graphics/hr-icons/methyl-tert-butyl-ether.png",
     effects =
     {
       {
@@ -3075,7 +3075,7 @@ data:extend({
         recipe = "sp-geological-science-pack-1"
       },
     },
-    prerequisites = {"logistic-science-pack"},
+    prerequisites = {},
     unit =
     {
       count = 100,
@@ -3518,7 +3518,19 @@ table.insert(data.raw.technology["fluid-handling"].effects, {type = "unlock-reci
 table.insert(data.raw.technology["nuclear-power"].effects, {type = "unlock-recipe", recipe = "sp-reactor-core"})
 table.insert(data.raw.technology["nuclear-power"].effects, {type = "unlock-recipe", recipe = "sp-control-rod"})
 
--- data.raw.technology["landfill"].prerequisites = "sp-geological-science-pack-1"
+data.raw.technology["landfill"].prerequisites = {"sp-geological-science-pack-1"}
+data.raw.technology["landfill"].unit = {
+  count = 50,
+  ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}, {"sp-geological-science-pack-1", 1}},
+  time = 15
+}
 table.insert(data.raw.technology["landfill"].effects, {type = "unlock-recipe", recipe = "sp-landfill-from-limestone-and-stone"})
 table.insert(data.raw.technology["landfill"].effects, {type = "unlock-recipe", recipe = "sp-landfill-from-limestone"})
 table.insert(data.raw.technology["landfill"].effects, {type = "unlock-recipe", recipe = "sp-landfill-from-iron-ore"})
+
+data.raw.technology["flammables"].prerequisites = {"chemical-science-pack"}
+data.raw.technology["flammables"].unit = {
+  count = 50,
+  ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}, {"chemical-science-pack", 1}},
+  time = 15
+}

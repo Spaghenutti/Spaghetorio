@@ -33,11 +33,6 @@ util.change_recipe_ingredients("chemical-science-pack",
   {{type = "fluid", name = "sulfuric-acid", amount = 75}, {type = "fluid", name = "petroleum-gas", amount = 50}, {"plastic-bar", 5}, {"sp-alumina", 5}, {"blank-tech-card", 5}},
   20,
   30)
-util.change_recipe_ingredients("chemical-science-pack",
-  {{"electronic-circuit", 5}, {"sp-solder", 5}, {"sp-alumina", 3}, {"blank-tech-card", 5}},
-  {{"electronic-circuit", 8}, {"sp-solder", 5}, {"sp-alumina", 5}, {"blank-tech-card", 5}},
-  20,
-  30)
 
 -- Hide uranium fuel
 data.raw.recipe["uranium-fuel-cell"].hidden = true

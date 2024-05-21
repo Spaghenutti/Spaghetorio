@@ -25,6 +25,11 @@ util.change_recipe_ingredients("electronic-circuit",
   {{"copper-cable", 8}, {"wood", 5}, {"sp-solder", 2}},
   0.5,
   1)
+util.change_recipe_ingredients("advanced-circuit",
+  {{"copper-cable", 3}, {"plastic-bar", 1}, {"sp-solder", 1}},
+  {{"copper-cable", 8}, {"wood", 5}, {"sp-solder", 2}},
+  0.5,
+  1)
 util.change_recipe_ingredients("motor",
   {{"iron-plate", 1}, {"sp-bolts", 3}, {"sp-gearbox", 1}},
   {{"iron-plate", 2}, {"sp-bolts", 6}, {"sp-gearbox", 1}},
@@ -604,5 +609,7 @@ if not mods["Krastorio2"] then
   table.insert(data.raw.recipe["train-stop"].ingredients, {"steel-plate", 12})
   table.insert(data.raw.recipe["oil-refinery"].ingredients, {"sp-glass", 20})
   table.insert(data.raw.recipe["satellite"].ingredients, {"battery", 20})
+  table.insert(data.raw.recipe["sp-geological-science-pack-1"].ingredients, {"sp-sand", 10})
+  table.insert(data.raw.recipe["sp-geological-science-pack-1"].ingredients, {"sp-quartz", 5})
   -- table.insert(data.raw.recipe[""].ingredients, {})
 end

@@ -4272,8 +4272,8 @@ data:extend({
     -- Krastorio: {"blank-tech-card", 5}
     {
       {"stone", 10},
-      {"sand", 10},
-      {"quartz", 5},
+      -- {"sand", 10},
+      -- {"quartz", 5},
       {type = "fluid", name = "water", amount = 50},
     },
     result_count = 5,

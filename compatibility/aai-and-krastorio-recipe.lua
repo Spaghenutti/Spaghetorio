@@ -810,6 +810,8 @@ table.insert(data.raw.recipe["sp-grobgnum-explorer"].ingredients, {type = "item"
 table.insert(data.raw.recipe["sp-heavy-gearbox"].ingredients, {type = "item", name = "steel-gear-wheel", amount = 10})
 table.insert(data.raw.recipe["sp-differential"].ingredients, {type = "item", name = "steel-gear-wheel", amount = 6})
 table.insert(data.raw.recipe["sp-electronic-science-pack-1"].ingredients, {type = "item", name = "blank-tech-card", amount = 5})
+table.insert(data.raw.recipe["sp-geological-science-pack-1"].ingredients, {type = "item", name = "quartz", amount = 5})
+table.insert(data.raw.recipe["sp-geological-science-pack-1"].ingredients, {type = "item", name = "sand", amount = 10})
 table.insert(data.raw.recipe["sp-geological-science-pack-1"].ingredients, {type = "item", name = "blank-tech-card", amount = 5})
 table.insert(data.raw.recipe["sp-material-science-pack-1"].ingredients, {type = "item", name = "blank-tech-card", amount = 5})
 table.insert(data.raw.recipe["sp-automation-science-pack-2"].ingredients, {type = "item", name = "blank-tech-card", amount = 5})
