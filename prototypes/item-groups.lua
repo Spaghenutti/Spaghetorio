@@ -88,10 +88,10 @@ data:extend({
     group = "intermediate-products",
     order = "d"
   },
-  -- electrical-optical-component are used where no force is applied
+  -- electronic-optical-component are used where no force is applied
   {
     type = "item-subgroup",
-    name = "electrical-optical-component",
+    name = "electronic-optical-component",
     group = "intermediate-products",
     order = "e"
   },

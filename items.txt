@@ -171,7 +171,7 @@ Alloys
 	- (steel) already exists
 	+r stainless-steel
   - brass (copper 65% and zinc 35%)
-  - white metal (Tin 60%, Antimony 10%, Copper 30%) weissmetall - Heavy-duty marine engine bearings, electrical machines
+  - white metal (Tin 60%, Antimony 10%, Copper 30%) weissmetall - Heavy-duty marine engine bearings, electronic machines
 	+r duralumin - aluminum 2000 Series (aerospace)
 	+r aluminum-brass - aluminum 7000 Series (strong alloy)
   - antimonial-lead (5% antimony 95% lead) for lead batteries
@@ -196,7 +196,7 @@ Basic Intermediates
 		+r mirror
 		+r lens
     +r infra-red-filter
-	- electrical components
+	- electronic components
 		+r resistor
 		+rrr capacitor
 		+r diode
@@ -322,7 +322,7 @@ Useless things
 Sciences
   - geological science pack
   - computer science pack
-  - electrical science pack
+  - electronic science pack
   - astronomical science pack
   - robotical science pack
   - quantum computing science pack
@@ -377,7 +377,7 @@ Other stuff from chat gpt:
   - AlphaWave AW-14: A device for generating and detecting alpha waves in the brain
   - BioChip BC-19: A biometric chip for identification and authentication
   - CyberEye CE-17: A cybernetic eye for enhancing vision and perception
-  - Dynamo DY-22: A dynamo for converting mechanical energy into electrical energy
+  - Dynamo DY-22: A dynamo for converting mechanical energy into electronic energy
   - Electrode ED-24: An electrode for conducting electricity and stimulating nerves
   - FusionCore FC-27: A fusion reactor for producing massive amounts of energy
   - GravityGun GG-29: A device for manipulating gravity and mass

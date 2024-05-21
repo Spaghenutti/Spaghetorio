@@ -120,7 +120,7 @@ data:extend({
                                     "__Spaghenutti__/graphics/icons/resistor.png", 64, nil,
                                     "__Spaghenutti__/graphics/icons/vacuum-tube.png", 64, nil),
     category = "crafting",
-    subgroup = "electrical-optical-component",
+    subgroup = "electronic-optical-component",
     enabled = false,
     energy_required = 3,  -- time in seconds to make the item
     ingredients = {
@@ -809,6 +809,8 @@ table.insert(data.raw.recipe["sp-bioreactor"].ingredients, {type = "item", name 
 table.insert(data.raw.recipe["sp-grobgnum-explorer"].ingredients, {type = "item", name = "ai-core", amount = 20})
 table.insert(data.raw.recipe["sp-heavy-gearbox"].ingredients, {type = "item", name = "steel-gear-wheel", amount = 10})
 table.insert(data.raw.recipe["sp-differential"].ingredients, {type = "item", name = "steel-gear-wheel", amount = 6})
+table.insert(data.raw.recipe["sp-electronic-science-pack-1"].ingredients, {type = "item", name = "blank-tech-card", amount = 5})
+
 
 -- MARK: Add missing ingredients from recipe-changes.lua
 table.insert(data.raw.recipe["concrete"].normal.ingredients, {"sand", 5})

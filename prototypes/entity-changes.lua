@@ -33,10 +33,10 @@ data.raw.item["iron-stick"].subgroup = "mechanical-component"
 data.raw.item["iron-gear-wheel"].subgroup = "mechanical-component"
 data.raw.item["low-density-structure"].subgroup = "mechanical-component"
 
-data.raw.item["electronic-circuit"].subgroup = "electrical-optical-component"
-data.raw.item["advanced-circuit"].subgroup = "electrical-optical-component"
-data.raw.item["processing-unit"].subgroup = "electrical-optical-component"  -- idea: use this as processor and change icon
-data.raw.item["battery"].subgroup = "electrical-optical-component"
+data.raw.item["electronic-circuit"].subgroup = "electronic-optical-component"
+data.raw.item["advanced-circuit"].subgroup = "electronic-optical-component"
+data.raw.item["processing-unit"].subgroup = "electronic-optical-component"  -- idea: use this as processor and change icon
+data.raw.item["battery"].subgroup = "electronic-optical-component"
 
 data.raw.item["rocket-control-unit"].subgroup = "advanced-intermediate-product"
 

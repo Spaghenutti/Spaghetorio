@@ -24,13 +24,18 @@ util.change_recipe_ingredients("automation-science-pack",
   20,
   30)
 util.change_recipe_ingredients("logistic-science-pack",
-  {{"electronic-circuit", 5}, {"electric-motor", 1}, {"engine-unit", 1}, {"blank-tech-card", 5}},
-  {{"electronic-circuit", 8}, {"electric-motor", 2}, {"engine-unit", 1}, {"blank-tech-card", 5}},
+  {{"sp-gearbox", 5}, {"electric-motor", 1}, {"engine-unit", 1}, {"blank-tech-card", 5}},
+  {{"sp-gearbox", 8}, {"electric-motor", 2}, {"engine-unit", 1}, {"blank-tech-card", 5}},
   20,
   30)
 util.change_recipe_ingredients("chemical-science-pack",
-  {{type = "fluid", name = "sulfuric-acid", amount = 50}, {type = "fluid", name = "light-oil", amount = 30}, {"plastic-bar", 5}, {"sp-alumina", 3}, {"blank-tech-card", 5}},
-  {{type = "fluid", name = "sulfuric-acid", amount = 75}, {type = "fluid", name = "light-oil", amount = 50}, {"plastic-bar", 5}, {"sp-alumina", 5}, {"blank-tech-card", 5}},
+  {{type = "fluid", name = "sulfuric-acid", amount = 50}, {type = "fluid", name = "petroleum-gas", amount = 30}, {"plastic-bar", 5}, {"sp-alumina", 3}, {"blank-tech-card", 5}},
+  {{type = "fluid", name = "sulfuric-acid", amount = 75}, {type = "fluid", name = "petroleum-gas", amount = 50}, {"plastic-bar", 5}, {"sp-alumina", 5}, {"blank-tech-card", 5}},
+  20,
+  30)
+util.change_recipe_ingredients("chemical-science-pack",
+  {{"electronic-circuit", 5}, {"sp-solder", 5}, {"sp-alumina", 3}, {"blank-tech-card", 5}},
+  {{"electronic-circuit", 8}, {"sp-solder", 5}, {"sp-alumina", 5}, {"blank-tech-card", 5}},
   20,
   30)
 

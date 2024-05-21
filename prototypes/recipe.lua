@@ -1086,11 +1086,12 @@ data:extend({
     enabled = false,
     energy_required = 2,  -- time in seconds to make the item
     ingredients = {
-      {type = "item", name = "sp-graphite", amount = 1},
-      {type = "item", name = "copper-plate", amount = 2}
+      {type = "item", name = "sp-graphite", amount = 2},
+      {type = "item", name = "sp-phosphoric-acid", amount = 1},
+      {type = "item", name = "copper-cable", amount = 1}
     },
     results = {
-      {type = "item", name = "sp-resistor", amount = 3}
+      {type = "item", name = "sp-resistor", amount = 4}
     }
   },
   {
@@ -1102,11 +1103,12 @@ data:extend({
     enabled = false,
     energy_required = 3.2,  -- time in seconds to make the item
     ingredients = {
-      {type = "item", name = "copper-plate", amount = 1},
+      {type = "item", name = "copper-cable", amount = 1},
+      {type = "item", name = "sp-phosphoric-acid", amount = 1},
       {type = "item", name = "sp-aluminum-sheet", amount = 2}
     },
     results = {
-      {type = "item", name = "sp-capacitor", amount = 2}
+      {type = "item", name = "sp-capacitor", amount = 3}
     }
   },
   {
@@ -1118,7 +1120,8 @@ data:extend({
     enabled = false,
     energy_required = 3.2,  -- time in seconds to make the item
     ingredients = {
-      {type = "item", name = "copper-plate", amount = 1},
+      {type = "item", name = "copper-cable", amount = 1},
+      {type = "item", name = "sp-phosphoric-acid", amount = 1},
       {type = "item", name = "sp-niobium-billet", amount = 2}
     },
     results = {
@@ -1134,7 +1137,8 @@ data:extend({
     enabled = false,
     energy_required = 4,  -- time in seconds to make the item
     ingredients = {
-      {type = "item", name = "copper-plate", amount = 1},
+      {type = "item", name = "copper-cable", amount = 1},
+      {type = "item", name = "sp-phosphorus", amount = 1},
       {type = "item", name = "sp-tantalum-billet", amount = 1}
     },
     results = {
@@ -1949,7 +1953,8 @@ data:extend({
     energy_required = 3,  -- time in seconds to make the item
     ingredients = {
       {type = "item", name = "sp-copper-tube", amount = 2},
-      {type = "item", name = "sp-aluminum-sheet", amount = 2},
+      {type = "item", name = "sp-aluminum-frame", amount = 1},
+      {type = "item", name = "sp-aluminum-sheet", amount = 3},
     },
     results = {
       {type = "item", name = "sp-heatsink", amount = 1}
@@ -4239,6 +4244,167 @@ data:extend({
   -- enriched iron acromatter in krastorio
   -- enriched copper acromatter in krastorio
   ------------------------------------------------------------------------------
+  -- MARK: Science pack
+  ------------------------------------------------------------------------------
+  {
+    type = "recipe",
+    name = "sp-electronic-science-pack-1",
+    enabled = false,
+    energy_required = 24,
+    ingredients =
+    -- Krastorio: {"blank-tech-card", 5}
+    {
+      {"copper-cable", 5},
+      {"electronic-circuit", 5},
+      {"sp-solder", 10}
+    },
+    result_count = 5,
+    result = "sp-electronic-science-pack-1"
+  },
+  {
+    type = "recipe",
+    name = "sp-geological-science-pack-1",
+    enabled = false,
+    energy_required = 24,
+    ingredients =
+    -- Krastorio: {"blank-tech-card", 5}
+    {
+      {"iron-plate", 69},
+    },
+    result_count = 5,
+    result = "sp-geological-science-pack-1"
+  },
+  {
+    type = "recipe",
+    name = "sp-material-science-pack-1",
+    enabled = false,
+    energy_required = 24,
+    ingredients =
+    -- Krastorio: {"blank-tech-card", 5}
+    {
+      {"iron-plate", 69},
+    },
+    result_count = 5,
+    result = "sp-material-science-pack-1"
+  },
+  {
+    type = "recipe",
+    name = "sp-automation-science-pack-2",
+    enabled = false,
+    energy_required = 24,
+    ingredients =
+    -- Krastorio: {"blank-tech-card", 5}
+    {
+      {"iron-plate", 69},
+    },
+    result_count = 5,
+    result = "sp-electronic-science-pack-2"
+  },
+  {
+    type = "recipe",
+    name = "sp-logistic-science-pack-2",
+    enabled = false,
+    energy_required = 24,
+    ingredients =
+    -- Krastorio: {"blank-tech-card", 5}
+    {
+      {"iron-plate", 69},
+    },
+    result_count = 5,
+    result = "sp-logistic-science-pack-2"
+  },
+  {
+    type = "recipe",
+    name = "sp-military-science-pack-2",
+    enabled = false,
+    energy_required = 24,
+    ingredients =
+    -- Krastorio: {"blank-tech-card", 5}
+    {
+      {"iron-plate", 69},
+    },
+    result_count = 5,
+    result = "sp-military-science-pack-2"
+  },
+  {
+    type = "recipe",
+    name = "sp-chemical-science-pack-2",
+    enabled = false,
+    energy_required = 24,
+    ingredients =
+    -- Krastorio: {"blank-tech-card", 5}
+    {
+      {"iron-plate", 69},
+    },
+    result_count = 5,
+    result = "sp-chemical-science-pack-2"
+  },
+  {
+    type = "recipe",
+    name = "sp-electronic-science-pack-2",
+    enabled = false,
+    energy_required = 24,
+    ingredients =
+    -- Krastorio: {"blank-tech-card", 5}
+    {
+      {"iron-plate", 69},
+    },
+    result_count = 5,
+    result = "sp-electronic-science-pack-2"
+  },
+  {
+    type = "recipe",
+    name = "sp-geological-science-pack-2",
+    enabled = false,
+    energy_required = 24,
+    ingredients =
+    -- Krastorio: {"blank-tech-card", 5}
+    {
+      {"iron-plate", 69},
+    },
+    result_count = 5,
+    result = "sp-geological-science-pack-2"
+  },
+  {
+    type = "recipe",
+    name = "sp-material-science-pack-2",
+    enabled = false,
+    energy_required = 24,
+    ingredients =
+    -- Krastorio: {"blank-tech-card", 5}
+    {
+      {"iron-plate", 69},
+    },
+    result_count = 5,
+    result = "sp-material-science-pack-2"
+  },
+  {
+    type = "recipe",
+    name = "sp-astronomical-science-pack-2",
+    enabled = false,
+    energy_required = 24,
+    ingredients =
+    -- Krastorio: {"blank-tech-card", 5}
+    {
+      {"iron-plate", 69},
+    },
+    result_count = 5,
+    result = "sp-astronomical-science-pack-2"
+  },
+  {
+    type = "recipe",
+    name = "sp-computer-science-pack-2",
+    enabled = false,
+    energy_required = 24,
+    ingredients =
+    -- Krastorio: {"blank-tech-card", 5}
+    {
+      {"iron-plate", 69},
+    },
+    result_count = 5,
+    result = "sp-computer-science-pack-2"
+  },
+  ------------------------------------------------------------------------------
   -- Alternate recipes for vanilla items
   -- MARK: Alt. recipes 
   ------------------------------------------------------------------------------
@@ -4699,10 +4865,11 @@ data:extend({
     energy_required = 2,  -- time in seconds to make the item
     ingredients = {
       -- {type = "item", name = "sp-silicon", amount = 1},
-      {type = "item", name = "sp-phosphorus", amount = 1}
+      {type = "item", name = "copper-cable", amount = 1},
+      {type = "item", name = "sp-phosphorus", amount = 2}
     },
     results = {
-      {type = "item", name = "sp-diode", amount = 2}
+      {type = "item", name = "sp-diode", amount = 3}
     }
   },
   {
@@ -4713,10 +4880,12 @@ data:extend({
     energy_required = 2.8,  -- time in seconds to make the item
     ingredients = {
       -- {type = "item", name = "sp-silicon", amount = 2},
-      {type = "item", name = "sp-phosphorus", amount = 1}
+      {type = "item", name = "copper-cable", amount = 1},
+      {type = "item", name = "sp-phosphorus", amount = 1},
+      {type = "item", name = "sp-phosphoric-acid", amount = 1}
     },
     results = {
-      {type = "item", name = "sp-transistor", amount = 2}
+      {type = "item", name = "sp-transistor", amount = 3}
     }
   },
   {
@@ -4726,6 +4895,7 @@ data:extend({
     enabled = false,
     energy_required = 2.8,  -- time in seconds to make the item
     ingredients = {
+      {type = "item", name = "copper-cable", amount = 1},
       -- {type = "item", name = "sp-silicon", amount = 2},
       {type = "item", name = "sp-phosphorus", amount = 1},
       {type = "item", name = "sp-lanthanum", amount = 1}

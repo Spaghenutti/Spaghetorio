@@ -1612,7 +1612,7 @@ data:extend({
     stack_size = 100
   },
   ------------------------------------------------------------------------------
-  -- MARK: electrical-optical-component
+  -- MARK: electronic-optical-component
   ------------------------------------------------------------------------------
   {
     type = "item",
@@ -1620,7 +1620,7 @@ data:extend({
     icon = "__Spaghenutti__/graphics/icons/mirror.png",
     icon_size = 64,
     scale = 0.25,
-    subgroup = "electrical-optical-component",
+    subgroup = "electronic-optical-component",
     order = "[mirror]",
     stack_size = 100
   },
@@ -1630,7 +1630,7 @@ data:extend({
     icon = "__Spaghenutti__/graphics/icons/lens.png",
     icon_size = 64,
     scale = 0.25,
-    subgroup = "electrical-optical-component",
+    subgroup = "electronic-optical-component",
     order = "[lens]",
     stack_size = 100
   },
@@ -1640,7 +1640,7 @@ data:extend({
     icon = "__Spaghenutti__/graphics/icons/infrared-filter.png",
     icon_size = 64,
     scale = 0.25,
-    subgroup = "electrical-optical-component",
+    subgroup = "electronic-optical-component",
     order = "[infra-red-filter]",
     stack_size = 100
   },
@@ -1650,7 +1650,7 @@ data:extend({
     icon = "__Spaghenutti__/graphics/icons/solder.png",
     icon_size = 64,
     scale = 0.25,
-    subgroup = "electrical-optical-component",
+    subgroup = "electronic-optical-component",
     order = "[solder]",
     stack_size = 100
   },
@@ -1660,7 +1660,7 @@ data:extend({
     icon = "__Spaghenutti__/graphics/icons/silver-solder.png",
     icon_size = 64,
     scale = 0.25,
-    subgroup = "electrical-optical-component",
+    subgroup = "electronic-optical-component",
     order = "[silver-solder]",
     stack_size = 100
   },
@@ -1670,7 +1670,7 @@ data:extend({
     icon = "__Spaghenutti__/graphics/icons/resistor.png",
     icon_size = 64,
     scale = 0.25,
-    subgroup = "electrical-optical-component",
+    subgroup = "electronic-optical-component",
     order = "[sp-resistor]",
     stack_size = 100
   },
@@ -1680,7 +1680,7 @@ data:extend({
     icon = "__Spaghenutti__/graphics/icons/capacitor.png",
     icon_size = 64,
     scale = 0.25,
-    subgroup = "electrical-optical-component",
+    subgroup = "electronic-optical-component",
     order = "[capacitor]",
     stack_size = 100
   },
@@ -1690,7 +1690,7 @@ data:extend({
     icon = "__Spaghenutti__/graphics/icons/diode.png",
     icon_size = 64,
     scale = 0.25,
-    subgroup = "electrical-optical-component",
+    subgroup = "electronic-optical-component",
     order = "[diode]",
     stack_size = 100
   },
@@ -1700,7 +1700,7 @@ data:extend({
     icon = "__Spaghenutti__/graphics/icons/transistor.png",
     icon_size = 64,
     scale = 0.25,
-    subgroup = "electrical-optical-component",
+    subgroup = "electronic-optical-component",
     order = "[transistor]",
     stack_size = 100
   },
@@ -1710,7 +1710,7 @@ data:extend({
     icon = "__Spaghenutti__/graphics/icons/light-emitting-diode.png",
     icon_size = 64,
     scale = 0.25,
-    subgroup = "electrical-optical-component",
+    subgroup = "electronic-optical-component",
     order = "[light-emitting-diode]",
     stack_size = 100
   },
@@ -1720,7 +1720,7 @@ data:extend({
     icon = "__Spaghenutti__/graphics/icons/coil.png",
     icon_size = 64,
     scale = 0.25,
-    subgroup = "electrical-optical-component",
+    subgroup = "electronic-optical-component",
     order = "[coil]",
     stack_size = 100
   },
@@ -1730,7 +1730,7 @@ data:extend({
     icon = "__Spaghenutti__/graphics/icons/relay.png",
     icon_size = 64,
     scale = 0.25,
-    subgroup = "electrical-optical-component",
+    subgroup = "electronic-optical-component",
     order = "[relay]",
     stack_size = 100
   },
@@ -1740,7 +1740,7 @@ data:extend({
     icon = "__Spaghenutti__/graphics/icons/empty-circuit-board.png",
     icon_size = 64,
     scale = 0.25,
-    subgroup = "electrical-optical-component",
+    subgroup = "electronic-optical-component",
     order = "[empty-circuit-board]",
     stack_size = 100
   },
@@ -1750,7 +1750,7 @@ data:extend({
     icon = "__Spaghenutti__/graphics/icons/circuit-board.png",
     icon_size = 64,
     scale = 0.25,
-    subgroup = "electrical-optical-component",
+    subgroup = "electronic-optical-component",
     order = "[circuit-board]",
     stack_size = 100
   },
@@ -1760,7 +1760,7 @@ data:extend({
     icon = "__Spaghenutti__/graphics/icons/vacuum-tube.png",
     icon_size = 64,
     scale = 0.25,
-    subgroup = "electrical-optical-component",
+    subgroup = "electronic-optical-component",
     order = "[vacuum-tube]",
     stack_size = 100
   },
@@ -1770,7 +1770,7 @@ data:extend({
     icon = "__Spaghenutti__/graphics/icons/compute-unit.png",
     icon_size = 64,
     scale = 0.25,
-    subgroup = "electrical-optical-component",
+    subgroup = "electronic-optical-component",
     order = "[compute-unit]",
     stack_size = 100
   },
@@ -1780,7 +1780,7 @@ data:extend({
     icon = "__Spaghenutti__/graphics/icons/advanced-compute-unit.png",
     icon_size = 64,
     scale = 0.25,
-    subgroup = "electrical-optical-component",
+    subgroup = "electronic-optical-component",
     order = "[advanced-compute-unit]",
     stack_size = 100
   },
@@ -1790,7 +1790,7 @@ data:extend({
     icon = "__Spaghenutti__/graphics/icons/integrated-circuit.png",
     icon_size = 64,
     scale = 0.25,
-    subgroup = "electrical-optical-component",
+    subgroup = "electronic-optical-component",
     order = "[integrated-circuit]",
     stack_size = 100
   },
@@ -1800,7 +1800,7 @@ data:extend({
     icon = "__Spaghenutti__/graphics/icons/memory-chip.png",
     icon_size = 64,
     scale = 0.25,
-    subgroup = "electrical-optical-component",
+    subgroup = "electronic-optical-component",
     order = "[memory-chip]",
     stack_size = 100
   },
@@ -1810,7 +1810,7 @@ data:extend({
     icon = "__Spaghenutti__/graphics/icons/antenna-chip.png",
     icon_size = 64,
     scale = 0.25,
-    subgroup = "electrical-optical-component",
+    subgroup = "electronic-optical-component",
     order = "[antenna-chip]",
     stack_size = 100
   },
@@ -1820,7 +1820,7 @@ data:extend({
     icon = "__Spaghenutti__/graphics/icons/processor.png",
     icon_size = 64,
     scale = 0.25,
-    subgroup = "electrical-optical-component",
+    subgroup = "electronic-optical-component",
     order = "[processor]",
     stack_size = 100
   },
@@ -1830,7 +1830,7 @@ data:extend({
     icon = "__Spaghenutti__/graphics/icons/cmos.png",
     icon_size = 64,
     scale = 0.25,
-    subgroup = "electrical-optical-component",
+    subgroup = "electronic-optical-component",
     order = "[cmos]",
     stack_size = 100
   },
@@ -1840,7 +1840,7 @@ data:extend({
     icon = "__Spaghenutti__/graphics/icons/laser.png",
     icon_size = 64,
     scale = 0.25,
-    subgroup = "electrical-optical-component",
+    subgroup = "electronic-optical-component",
     order = "[laser]",
     stack_size = 100
   },
@@ -1850,7 +1850,7 @@ data:extend({
     icon = "__Spaghenutti__/graphics/icons/electrode.png",
     icon_size = 64,
     scale = 0.25,
-    subgroup = "electrical-optical-component",
+    subgroup = "electronic-optical-component",
     order = "[electrode]",
     stack_size = 100
   },
@@ -1860,7 +1860,7 @@ data:extend({
     icon = "__Spaghenutti__/graphics/icons/sensor.png",
     icon_size = 64,
     scale = 0.25,
-    subgroup = "electrical-optical-component",
+    subgroup = "electronic-optical-component",
     order = "[sensor]",
     stack_size = 100
   },
@@ -2491,12 +2491,12 @@ data:extend({
   ------------------------------------------------------------------------------
   {
     type = "tool",
-    name = "sp-electrical-science-pack-1",  -- #ForRegEx# - tool
+    name = "sp-electronic-science-pack-1",  -- #ForRegEx# - tool
     localised_description = {"item-description.science-pack"},
-    icon = "__Spaghenutti__/graphics/icons/electrical-science-pack-1.png",
+    icon = "__Spaghenutti__/graphics/icons/electronic-science-pack-1.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "basic-science",
-    order = "e[electrical-science-pack]",
+    order = "e[electronic-science-pack]",
     stack_size = 200,
     durability = 1,
     durability_description_key = "description.science-pack-remaining-amount-key",
@@ -2585,12 +2585,12 @@ data:extend({
   },
   {
     type = "tool",
-    name = "sp-electrical-science-pack-2",  -- #ForRegEx# - tool
+    name = "sp-electronic-science-pack-2",  -- #ForRegEx# - tool
     localised_description = {"item-description.science-pack"},
     icon = "__Krastorio2Assets__/icons/cards/utility-tech-card.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "intermediate-science",
-    order = "e[electrical-science-pack]",
+    order = "e[electronic-science-pack]",
     stack_size = 200,
     durability = 1,
     durability_description_key = "description.science-pack-remaining-amount-key",
@@ -2705,12 +2705,12 @@ data:extend({
   },
   {
     type = "tool",
-    name = "sp-electrical-science-pack-3",  -- #ForRegEx# - tool
+    name = "sp-electronic-science-pack-3",  -- #ForRegEx# - tool
     localised_description = {"item-description.science-pack"},
-    icon = "__Spaghenutti__/graphics/icons/electrical-science-pack-3.png",
+    icon = "__Spaghenutti__/graphics/icons/electronic-science-pack-3.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "advanced-science",
-    order = "e[electrical-science-pack]",
+    order = "e[electronic-science-pack]",
     stack_size = 200,
     durability = 1,
     durability_description_key = "description.science-pack-remaining-amount-key",

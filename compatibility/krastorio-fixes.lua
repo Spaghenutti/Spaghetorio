@@ -45,8 +45,8 @@ data.raw.item["imersium-beam"].subgroup = "alien-material"
 
 data.raw.item["steel-gear-wheel"].subgroup = "mechanical-component"
 
-data.raw.item["lithium-sulfur-battery"].subgroup = "electrical-optical-component"
-data.raw.item["electronic-components"].subgroup = "electrical-optical-component"
+data.raw.item["lithium-sulfur-battery"].subgroup = "electronic-optical-component"
+data.raw.item["electronic-components"].subgroup = "electronic-optical-component"
 
 data.raw.item["imersium-gear-wheel"].subgroup = "alien-product"
 
