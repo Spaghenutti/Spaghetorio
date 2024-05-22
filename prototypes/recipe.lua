@@ -653,25 +653,6 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-cobalt-and-nickel",  -- #ForRegEx# - recipe
-    icon = "__Spaghenutti__/graphics/icons/cobalt-billet.png",
-    icon_size = 64,
-    mip_maps = 4,
-    category = "smelting",
-    subgroup = "raw-resource",
-    enabled = false,
-    energy_required = 3.2,  -- time in seconds to make the item
-    ingredients = {
-      {type = "item", name = "sp-nickel-ore", amount = 1}
-    },
-    results = {
-      {type = "item", name = "sp-nickel-ingot", probability = 0.4, amount = 1},
-      {type = "item", name = "iron-plate", probability = 0.35, amount = 1},
-      {type = "item", name = "sp-cobalt-billet", probability = 0.25, amount = 1}
-    }
-  },
-  {
-    type = "recipe",
     name = "sp-stibnite",  -- #ForRegEx# - recipe
     category = "smelting",
     enabled = false,
@@ -3091,8 +3072,7 @@ data:extend({
       {type = "item", name = "sp-tungsten-ore", probability=0.06, amount = 1},
       {type = "item", name = "sp-zirconium-ore", probability=0.10, amount = 1},
       {type = "item", name = "sp-cerium", probability=0.06, amount = 1},
-      {type = "item", name = "sp-niobium-powder", probability=0.3, amount = 1},
-      {type = "item", name = "sp-titanium-sponge", probability=0.38, amount = 1},
+      {type = "item", name = "sp-titanium-ore", probability=0.3, amount = 1}
     }
   },
   ------------------------------------------------------------------------------
@@ -4598,7 +4578,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-landfill-from-limestone",
-    icons = util.overlay_small_icon("__base__/graphics/icons/landfill.png", 64, 
+    icons = util.overlay_small_icon("__base__/graphics/icons/landfill.png", 64,
                                     "__Spaghenutti__/graphics/icons/limestone-1.png", 64),
     energy_required = 0.5,
     enabled = false,
@@ -5167,7 +5147,7 @@ data:extend({
     type = "recipe",
     name = "sp-used-up-fuel-rod-reprocessing",  -- #ForRegEx# - recipe
     icons = util.combine_two_icons("__Spaghenutti__/graphics/icons/used-up-fuel-rod.png", 64, nil,
-                                   "__base__/graphics/icons/uranium-238.png", 64, nil),
+                                   "__Spaghenutti__/graphics/icons/nuclear-waste.png", 64, nil),
     icon_size = 64,
     mip_maps = 4,
     category = "chemistry",
@@ -5186,9 +5166,9 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-advanced-used-up-fuel-rod-reprocessing",  -- #ForRegEx# - recipe
-    icons = util.combine_two_icons("__Spaghenutti__/graphics/icons/used-up-fuel-rod.png", 64, nil,
-                                   "__Spaghenutti__/graphics/icons/plutonium-239-1.png", 64, nil),
+    name = "sp-advanced-nuclear-waste-processing",  -- #ForRegEx# - recipe
+    icons = util.overlay_small_icon("__Spaghenutti__/graphics/icons/nuclear-waste.png", 64, 
+                                    "__Spaghenutti__/graphics/icons/plutonium-239-1.png", 64),
     icon_size = 256,
     scale = 0.25,
     category = "chemistry",
@@ -5196,15 +5176,16 @@ data:extend({
     enabled = false,
     energy_required = 80,  -- time in seconds to make the item
     ingredients = {
-      {type = "item", name = "sp-used-up-fuel-rod", amount = 6},
+      {type = "item", name = "sp-nuclear-waste", amount = 6},
       -- {type = "fluid", name = "sp-chlorine", amount = 60}
     },
     results = {
       {type = "item", name = "uranium-238", probability = 0.37, amount = 2},
       {type = "item", name = "uranium-235", probability = 0.03, amount = 1},
       {type = "item", name = "sp-plutonium-239", probability = 0.6, amount = 1},
-      {type = "item", name = "sp-nuclear-waste", amount = 1},
-      -- {type = "fluid", name = "sp-deuterium", amount = 10}
+      {type = "item", name = "sp-graphite", probability = 0.2, amount = 1},
+      -- {type = "item", name = "sp-lithium", probability = 0.2, amount = 1},
+      {type = "fluid", name = "sp-deuterium", amount = 10}
     }
   },
   {
@@ -5642,7 +5623,7 @@ if not mods["Krastorio2"] then
   table.insert(data.raw.recipe["sp-silica"].ingredients, {type = "item", name = "sp-quartz", amount = 1})
   table.insert(data.raw.recipe["sp-plutonium-239-processing"].ingredients, {type = "item", name = "sp-lithium", amount = 1})
   table.insert(data.raw.recipe["sp-plutonium-240-processing"].ingredients, {type = "item", name = "sp-lithium", amount = 1})
-  table.insert(data.raw.recipe["sp-advanced-used-up-fuel-rod-reprocessing"].ingredients, {type = "fluid", name = "sp-chlorine", amount = 60})
+  table.insert(data.raw.recipe["sp-advanced-nuclear-waste-processing"].ingredients, {type = "fluid", name = "sp-chlorine", amount = 60})
   table.insert(data.raw.recipe["sp-urea"].ingredients, {type = "fluid", name = "sp-ammonia", amount = 50})
   table.insert(data.raw.recipe["sp-carbon-fiber"].ingredients, {type = "fluid", name = "sp-nitric-acid", amount = 50})
   table.insert(data.raw.recipe["sp-ethylene-dichloride"].ingredients, {type = "fluid", name = "sp-chlorine", amount = 60})
@@ -5667,7 +5648,7 @@ if not mods["Krastorio2"] then
   table.insert(data.raw.recipe["sp-sodium-and-chlorine"].results, {type = "fluid", name = "sp-chlorine", amount = 3})
   table.insert(data.raw.recipe["sp-high-purity-silicon"].results, {type = "item", name = "sp-silicon", probability = 0.7, amount = 1})
   table.insert(data.raw.recipe["sp-used-up-fuel-rod-reprocessing"].results, {type = "fluid", name = "sp-deuterium", amount = 10})
-  table.insert(data.raw.recipe["sp-advanced-used-up-fuel-rod-reprocessing"].results, {type = "fluid", name = "sp-deuterium", amount = 10})
+  table.insert(data.raw.recipe["sp-advanced-nuclear-waste-processing"].results, {type = "item", name = "sp-lithium", probability = 0.2, amount = 1})
   table.insert(data.raw.recipe["sp-magnesium-slab"].results, {type = "fluid", name = "sp-chloride", amount = 10})
   table.insert(data.raw.recipe["sp-sodium-hydroxide-from-salt"].results, {type = "fluid", name = "sp-chlorine", amount = 50})
   table.insert(data.raw.recipe["sp-tellurium-hydroxide"].results, {type = "item", name = "sp-sand", probability = 0.92, amount = 3})

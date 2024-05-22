@@ -319,7 +319,7 @@ data:extend({
         recipe = "sp-graphene"
       },
     },
-    prerequisites = {"logistic-science-pack"},
+    prerequisites = {"sp-material-science-pack-2"},
     unit =
     {
       count = 100,
@@ -560,7 +560,7 @@ data:extend({
         recipe = "sp-aqueous-niobium-tantalum"
       },
     },
-    prerequisites = {"logistic-science-pack"},
+    prerequisites = {"sp-calcium-and-fluorine"},
     unit =
     {
       count = 100,
@@ -616,7 +616,7 @@ data:extend({
         recipe = "sp-tungsten-slab"
       },
     },
-    prerequisites = {"logistic-science-pack"},
+    prerequisites = {"sp-sodium-processing"},
     unit =
     {
       count = 100,
@@ -644,11 +644,7 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "sp-nickel-ingot"
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-cobalt-and-nickel"
-      },
+      }
     },
     prerequisites = {"logistic-science-pack"},
     unit =
@@ -1151,11 +1147,11 @@ data:extend({
         recipe = "sp-integrated-circuit"
       },
     },
-    prerequisites = {"logistic-science-pack"},
+    prerequisites = {"sp-electronic-science-pack-2"},
     unit =
     {
       count = 100,
-      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      ingredients = {{"sp-automation-science-pack-2", 1}, {"sp-logistic-science-pack-2", 1}, {"sp-chemical-science-pack-2", 1}, {"sp-electronic-science-pack-2", 1}},
       time = 15
     },
     order = "a-h-a"
@@ -1537,7 +1533,7 @@ data:extend({
         recipe = "sp-heat-resistant-tile"
       },
     },
-    prerequisites = {"logistic-science-pack"},
+    prerequisites = {"sp-basic-ceramics"},
     unit =
     {
       count = 100,
@@ -1612,7 +1608,7 @@ data:extend({
         recipe = "sp-uranium-fuel-rod"
       },
     },
-    prerequisites = {"logistic-science-pack"},
+    prerequisites = {"sp-material-science-pack-2"},
     unit =
     {
       count = 100,
@@ -1623,14 +1619,18 @@ data:extend({
   },
   {
     type = "technology",
-    name = "sp-nuclear-fuel-rod-recycling",  -- #ForRegEx# - technology
+    name = "sp-nuclear-waste-processing",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/used-up-fuel-rod.png",
+    icon = "__Spaghenutti__/graphics/hr-icons/nuclear-waste.png",
     effects =
     {
       {
         type = "unlock-recipe",
         recipe = "sp-used-up-fuel-rod-reprocessing"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-nuclear-waste-processing"
       },
     },
     prerequisites = {"sp-nuclear-fuel-rod"},
@@ -1644,17 +1644,18 @@ data:extend({
   },
   {
     type = "technology",
-    name = "sp-advanced-nuclear-fuel-rod-recycling",  -- #ForRegEx# - technology
+    name = "sp-advanced-nuclear-waste-processing",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/used-up-fuel-rod.png",
+    icons = util.overlay_small_icon_for_technology("__Spaghenutti__/graphics/hr-icons/nuclear-waste.png", 256,
+                                                   "__Spaghenutti__/graphics/hr-icons/plutonium-239-1.png", 256),
     effects =
     {
       {
         type = "unlock-recipe",
-        recipe = "sp-advanced-used-up-fuel-rod-reprocessing"
+        recipe = "sp-advanced-nuclear-waste-processing"
       },
     },
-    prerequisites = {"sp-nuclear-fuel-rod-recycling"},
+    prerequisites = {"sp-nuclear-waste-processing"},
     unit =
     {
       count = 100,
@@ -1861,7 +1862,7 @@ data:extend({
         recipe = "sp-invar"
       },
     },
-    prerequisites = {"logistic-science-pack"},
+    prerequisites = {"sp-nickel-and-cobalt"},
     unit =
     {
       count = 100,
@@ -1886,11 +1887,11 @@ data:extend({
         recipe = "sp-high-pressure-tank"
       },
     },
-    prerequisites = {"logistic-science-pack"},
+    prerequisites = {"sp-material-science-pack-2"},
     unit =
     {
       count = 100,
-      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      ingredients = {{"sp-automation-science-pack-2", 1}, {"sp-logistic-science-pack-2", 1}, {"sp-chemical-science-pack-2", 1}, {"sp-electronic-science-pack-2", 1}, {"sp-geological-science-pack-2", 1}, {"sp-astronomical-science-pack-2", 1}, {"sp-material-science-pack-2", 1}},
       time = 15
     },
     order = "a-h-a"
@@ -2726,28 +2727,7 @@ data:extend({
         recipe = "sp-nanowire"
       },
     },
-    prerequisites = {"logistic-science-pack"},
-    unit =
-    {
-      count = 100,
-      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
-      time = 15
-    },
-    order = "a-h-a"
-  },
-  {
-    type = "technology",
-    name = "sp-nuclear-waste-processing",  -- #ForRegEx# - technology
-    icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/nuclear-waste.png",
-    effects =
-    {
-      {
-        type = "unlock-recipe",
-        recipe = "sp-nuclear-waste-processing"
-      },
-    },
-    prerequisites = {"logistic-science-pack"},
+    prerequisites = {"sp-quantum-tech"},
     unit =
     {
       count = 100,
@@ -2787,7 +2767,7 @@ data:extend({
         recipe = "sp-yemnuth-to-blunagium-acrosphere"
       },
     },
-    prerequisites = {"logistic-science-pack"},
+    prerequisites = {"sp-logistic-science-pack-3"},
     unit =
     {
       count = 100,
@@ -3054,7 +3034,7 @@ data:extend({
         recipe = "sp-electronic-science-pack-1"
       },
     },
-    prerequisites = {"electronics", "logistic-science-pack"},
+    prerequisites = {"logistic-science-pack"},
     unit =
     {
       count = 100,
@@ -3510,7 +3490,9 @@ data.raw.technology["circuit-network"].prerequisites = {"sp-aluminum-processing"
 table.insert(data.raw.technology["railway"].prerequisites, "sp-steel-wheel")
 table.insert(data.raw.technology["railway"].effects, {type = "unlock-recipe", recipe = "sp-train-boige"})
 
-table.insert(data.raw.technology["advanced-material-processing"].effects, {type = "unlock-recipe", recipe = "sp-heating-filament"})
+table.insert(data.raw.technology["advanced-material-processing-2"].prerequisites, "sp-tungsten-processing")
+table.insert(data.raw.technology["advanced-material-processing-2"].prerequisites, "sp-basic-ceramics")
+table.insert(data.raw.technology["advanced-material-processing-2"].effects, {type = "unlock-recipe", recipe = "sp-heating-filament"})
 
 table.insert(data.raw.technology["fluid-handling"].prerequisites, "sp-basic-alloy")
 table.insert(data.raw.technology["fluid-handling"].effects, {type = "unlock-recipe", recipe = "sp-valve"})

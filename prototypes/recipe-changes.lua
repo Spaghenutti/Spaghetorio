@@ -308,6 +308,16 @@ util.change_recipe_ingredients("cliff-explosives",
 --------------------------------------------------------------------------------
 -- MARK: Combat
 --------------------------------------------------------------------------------
+util.change_recipe_ingredients("light-armor",
+  {{"iron-plate", 40}, {"sp-bolts", 10}},
+  {{"iron-plate", 60}, {"sp-bolts", 15}},
+  3,
+  5)
+util.change_recipe_ingredients("heavy-armor",
+  {{"steel-plate", 40}, {"sp-bolts", 10}, {"sp-gearbox", 2}, {"sp-machined-parts", 5}},
+  {{"steel-plate", 60}, {"sp-bolts", 15}, {"sp-gearbox", 4}, {"sp-machined-parts", 8}},
+  3,
+  5)
 util.change_recipe_ingredients("night-vision-equipment",
   {{"sp-circuit-board", 1}, {"sp-composites", 2}, {"plastic-bar", 2}, {"sp-optical-sensor", 2}, {"sp-lens", 6}, {"sp-laser", 1}, {"sp-rubber", 1}},
   {{"sp-circuit-board", 2}, {"sp-composites", 3}, {"plastic-bar", 3}, {"sp-optical-sensor", 2}, {"sp-lens", 10}, {"sp-laser", 2}, {"sp-rubber", 2}},
@@ -395,8 +405,8 @@ util.change_recipe_ingredients("stone-furnace",
 -- Base: {"stone-brick", 40}; Krastorio {"stone-tablet", 40}
 -- Base: {"iron-plate", 40}; Krastorio {"steel-beam", 20}
 util.change_recipe_ingredients("steel-furnace",
-  {{"sp-heating-filament", 6}, {"engine-unit", 12}},
-  {{"sp-heating-filament", 12}, {"engine-unit", 24}},
+  {{"engine-unit", 12}, {"sp-bolts", 10}},
+  {{"engine-unit", 24}, {"sp-bolts", 20}},
   12,
   24)
 -- Base: {"stone-brick", 30}; Krastorio {"stone-tablet", 30}

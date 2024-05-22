@@ -103,6 +103,14 @@ function data_util.overlay_small_icon(icon, icon_size, small_icon, small_icon_si
   return icons
 end
 
+function data_util.overlay_small_icon_for_technology(icon, icon_size, small_icon, small_icon_size)
+  icons = {
+    {icon = icon, icon_size = icon_size},
+    {icon = small_icon, icon_size = small_icon_size, scale = 0.5, shift = {70, -70}}
+  }
+  return icons
+end
+
 function data_util.overlay_two_small_icons(icon, icon_size, small_icon_1, small_icon_1_size, small_icon_2, small_icon_2_size)
   icons = {
     {icon = icon, icon_size = icon_size},
