@@ -1171,11 +1171,11 @@ data:extend({
   {
     type = "recipe",
     name = "sp-empty-circuit-board",  -- #ForRegEx# - recipe
-    category = "crafting",
+    category = "crafting-with-fluid",
     enabled = false,
     energy_required = 3.6,  -- time in seconds to make the item
     ingredients = {
-      {type = "item", name = "plastic-bar", amount = 1},
+      {type = "fluid", name = "sp-epoxy", amount = 10},
       {type = "item", name = "copper-cable", amount = 2},
       {type = "item", name = "sp-glass-fiber", amount = 1},
       {type = "item", name = "sp-solder", amount = 2}
