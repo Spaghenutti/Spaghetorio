@@ -1201,17 +1201,35 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "sp-processor"
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-compute-unit"
-      },
+      }
     },
     prerequisites = {"sp-silver-products", "sp-titanium-nitride", "sp-high-purity-silicon-processing"},
     unit =
     {
       count = 100,
       ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-compute-unit",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghenutti__/graphics/hr-icons/compute-unit.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-compute-unit"
+      },
+      -- TODO: Add GPU
+    },
+    prerequisites = {"sp-chemical-science-pack-2"},
+    unit =
+    {
+      count = 100,
+      ingredients = {{"sp-automation-science-pack-2", 1}, {"sp-logistic-science-pack-2", 1}, {"sp-chemical-science-pack-2", 1}, {"sp-electronic-science-pack-2", 1}, {"sp-geological-science-pack-2", 1}, {"sp-astronomical-science-pack-2", 1}, {"sp-material-science-pack-2", 1}},
       time = 15
     },
     order = "a-h-a"
@@ -1232,7 +1250,7 @@ data:extend({
         recipe = "sp-quantum-data-plane"
       },
     },
-    prerequisites = {"production-science-pack"},
+    prerequisites = {"sp-chemical-science-pack-3"},
     unit =
     {
       count = 100,

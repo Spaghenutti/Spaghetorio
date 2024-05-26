@@ -26,10 +26,15 @@ util.change_recipe_ingredients("electronic-circuit",
   0.5,
   1)
 util.change_recipe_ingredients("advanced-circuit",
-  {{"copper-cable", 3}, {"plastic-bar", 1}, {"sp-solder", 1}},
-  {{"copper-cable", 8}, {"wood", 5}, {"sp-solder", 2}},
-  0.5,
-  1)
+  {{"sp-basic-circuit-board", 1}, {"sp-transistor", 2}, {"sp-resistor", 4}, {"sp-capacitor", 1}, {"sp-coil", 2}, {"sp-diode", 2}},
+  {{"sp-basic-circuit-board", 1}, {"sp-transistor", 5}, {"sp-resistor", 6}, {"sp-capacitor", 2}, {"sp-coil", 2}, {"sp-diode", 4}},
+  3,
+  5)
+util.change_recipe_ingredients("processing-unit",
+  {{"sp-circuit-board", 1}, {"sp-integrated-circuit", 4}, {"sp-memory-chip", 2}},
+  {{"sp-circuit-board", 1}, {"sp-integrated-circuit", 6}, {"sp-memory-chip", 6}},
+  1.6,
+  3)
 util.change_recipe_ingredients("motor",
   {{"iron-plate", 1}, {"sp-bolts", 3}, {"sp-gearbox", 1}},
   {{"iron-plate", 2}, {"sp-bolts", 6}, {"sp-gearbox", 1}},

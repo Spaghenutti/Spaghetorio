@@ -1621,7 +1621,7 @@ data:extend({
     icon_size = 64,
     scale = 0.25,
     subgroup = "electronic-optical-component",
-    order = "[mirror]",
+    order = "optics-[mirror]",
     stack_size = 100
   },
   {
@@ -1631,7 +1631,7 @@ data:extend({
     icon_size = 64,
     scale = 0.25,
     subgroup = "electronic-optical-component",
-    order = "[lens]",
+    order = "optics-[lens]",
     stack_size = 100
   },
   {
@@ -1641,7 +1641,7 @@ data:extend({
     icon_size = 64,
     scale = 0.25,
     subgroup = "electronic-optical-component",
-    order = "[infra-red-filter]",
+    order = "optics-[infra-red-filter]",
     stack_size = 100
   },
   {
@@ -1651,7 +1651,7 @@ data:extend({
     icon_size = 64,
     scale = 0.25,
     subgroup = "electronic-optical-component",
-    order = "[solder]",
+    order = "a-wire-[solder]",
     stack_size = 100
   },
   {
@@ -1661,7 +1661,17 @@ data:extend({
     icon_size = 64,
     scale = 0.25,
     subgroup = "electronic-optical-component",
-    order = "[silver-solder]",
+    order = "a-wire-[silver-solder]",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "sp-insulated-wire",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/insulated-wire.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "electronic-optical-component",
+    order = "a-wire-[insulated-wire]",
     stack_size = 100
   },
   {
@@ -1671,7 +1681,7 @@ data:extend({
     icon_size = 64,
     scale = 0.25,
     subgroup = "electronic-optical-component",
-    order = "[sp-resistor]",
+    order = "basic-[sp-resistor]",
     stack_size = 100
   },
   {
@@ -1681,7 +1691,7 @@ data:extend({
     icon_size = 64,
     scale = 0.25,
     subgroup = "electronic-optical-component",
-    order = "[capacitor]",
+    order = "basic-[capacitor]",
     stack_size = 100
   },
   {
@@ -1691,7 +1701,7 @@ data:extend({
     icon_size = 64,
     scale = 0.25,
     subgroup = "electronic-optical-component",
-    order = "[diode]",
+    order = "basic-[diode]",
     stack_size = 100
   },
   {
@@ -1701,7 +1711,7 @@ data:extend({
     icon_size = 64,
     scale = 0.25,
     subgroup = "electronic-optical-component",
-    order = "[transistor]",
+    order = "basic-[transistor]",
     stack_size = 100
   },
   {
@@ -1711,7 +1721,7 @@ data:extend({
     icon_size = 64,
     scale = 0.25,
     subgroup = "electronic-optical-component",
-    order = "[light-emitting-diode]",
+    order = "basic-[light-emitting-diode]",
     stack_size = 100
   },
   {
@@ -1721,7 +1731,7 @@ data:extend({
     icon_size = 64,
     scale = 0.25,
     subgroup = "electronic-optical-component",
-    order = "[coil]",
+    order = "basic-[coil]",
     stack_size = 100
   },
   {
@@ -1731,7 +1741,7 @@ data:extend({
     icon_size = 64,
     scale = 0.25,
     subgroup = "electronic-optical-component",
-    order = "[relay]",
+    order = "z-[relay]",
     stack_size = 100
   },
   {
@@ -1741,7 +1751,7 @@ data:extend({
     icon_size = 64,
     scale = 0.25,
     subgroup = "electronic-optical-component",
-    order = "[empty-circuit-board]",
+    order = "g-aa[empty-circuit-board]",
     stack_size = 100
   },
   {
@@ -1751,7 +1761,7 @@ data:extend({
     icon_size = 64,
     scale = 0.25,
     subgroup = "electronic-optical-component",
-    order = "[circuit-board]",
+    order = "g-ab[circuit-board]",
     stack_size = 100
   },
   {
@@ -1761,7 +1771,7 @@ data:extend({
     icon_size = 64,
     scale = 0.25,
     subgroup = "electronic-optical-component",
-    order = "[vacuum-tube]",
+    order = "basic-[vacuum-tube]",
     stack_size = 100
   },
   {
@@ -1771,7 +1781,7 @@ data:extend({
     icon_size = 64,
     scale = 0.25,
     subgroup = "electronic-optical-component",
-    order = "[compute-unit]",
+    order = "z-[compute-unit]",
     stack_size = 100
   },
   {
@@ -1781,7 +1791,7 @@ data:extend({
     icon_size = 64,
     scale = 0.25,
     subgroup = "electronic-optical-component",
-    order = "[advanced-compute-unit]",
+    order = "semiconductor-z[advanced-compute-unit]",
     stack_size = 100
   },
   {
@@ -1791,7 +1801,7 @@ data:extend({
     icon_size = 64,
     scale = 0.25,
     subgroup = "electronic-optical-component",
-    order = "[integrated-circuit]",
+    order = "semiconductor-a[integrated-circuit]",
     stack_size = 100
   },
   {
@@ -1801,7 +1811,7 @@ data:extend({
     icon_size = 64,
     scale = 0.25,
     subgroup = "electronic-optical-component",
-    order = "[memory-chip]",
+    order = "semiconductor-a[memory-chip]",
     stack_size = 100
   },
   {
@@ -1811,7 +1821,7 @@ data:extend({
     icon_size = 64,
     scale = 0.25,
     subgroup = "electronic-optical-component",
-    order = "[antenna-chip]",
+    order = "semiconductor-b[antenna-chip]",
     stack_size = 100
   },
   {
@@ -1821,7 +1831,7 @@ data:extend({
     icon_size = 64,
     scale = 0.25,
     subgroup = "electronic-optical-component",
-    order = "[processor]",
+    order = "semiconductor-b[processor]",
     stack_size = 100
   },
   {
@@ -1831,7 +1841,7 @@ data:extend({
     icon_size = 64,
     scale = 0.25,
     subgroup = "electronic-optical-component",
-    order = "[cmos]",
+    order = "semiconductor-b[cmos]",
     stack_size = 100
   },
   {
@@ -1841,7 +1851,7 @@ data:extend({
     icon_size = 64,
     scale = 0.25,
     subgroup = "electronic-optical-component",
-    order = "[laser]",
+    order = "optics-y[laser]",
     stack_size = 100
   },
   {
@@ -1851,7 +1861,7 @@ data:extend({
     icon_size = 64,
     scale = 0.25,
     subgroup = "electronic-optical-component",
-    order = "[electrode]",
+    order = "z-[electrode]",
     stack_size = 100
   },
   {
@@ -1861,7 +1871,27 @@ data:extend({
     icon_size = 64,
     scale = 0.25,
     subgroup = "electronic-optical-component",
-    order = "[sensor]",
+    order = "optics-z[sensor]",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "sp-basic-circuit-board",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/basic-circuit-board.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "electronic-optical-component",
+    order = "f-aa[basic-circuit-board]",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "sp-advanced-processing-unit",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/advanced-processing-unit.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "electronic-optical-component",
+    order = "gz[advanced-processing-unit]",
     stack_size = 100
   },
   ------------------------------------------------------------------------------
@@ -2445,6 +2475,71 @@ data:extend({
   -- MARK: logistics
   ------------------------------------------------------------------------------
 
+    ------------------------------------------------------------------------------
+  -- MARK: Group prdoction
+  -- MARK: module
+  ------------------------------------------------------------------------------
+  {
+    type = "module",
+    name = "sp-speed-module-4",
+    localised_description = {"item-description.speed-module"},
+    icon = "__Spaghenutti__/graphics/icons/speed-module-4.png",
+    icon_size = 64, icon_mipmaps = 4,
+    subgroup = "module",
+    category = "speed",
+    tier = 4,
+    order = "a[speed]-d[speed-module-4]",
+    stack_size = 50,
+    effect = { speed = {bonus = 0.75}, consumption = {bonus = 1.0}},
+    beacon_tint =
+    {
+      primary = {r = 0.441, g = 0.714, b = 1.000, a = 1.000}, -- #70b6ffff
+      secondary = {r = 0.388, g = 0.976, b = 1.000, a = 1.000}, -- #63f8ffff
+    },
+    art_style = "vanilla",
+    requires_beacon_alt_mode = false
+  },
+  {
+    type = "module",
+    name = "sp-effectivity-module-4",
+    localised_description = {"item-description.effectivity-module"},
+    icon = "__Spaghenutti__/graphics/icons/effectivity-module-4.png",
+    icon_size = 64, icon_mipmaps = 4,
+    subgroup = "module",
+    category = "effectivity",
+    tier = 4,
+    order = "c[effectivity]-d[effectivity-module-4]",
+    stack_size = 50,
+    effect = { consumption = {bonus = -0.75}},
+    beacon_tint =
+    {
+      primary = { 0, 1, 0 },
+      secondary = {r = 0.370, g = 1.000, b = 0.370, a = 1.000}, -- #5eff5eff
+    },
+    art_style = "vanilla",
+    requires_beacon_alt_mode = false
+  },
+  {
+    type = "module",
+    name = "productivity-module-4",
+    localised_description = {"item-description.productivity-module"},
+    icon = "__Spaghenutti__/graphics/icons/productivity-module-4.png",
+    icon_size = 64, icon_mipmaps = 4,
+    subgroup = "module",
+    category = "productivity",
+    tier = 4,
+    order = "c[productivity]-d[productivity-module-4]",
+    stack_size = 50,
+    effect =
+    {
+      productivity = {bonus = 0.12},
+      consumption = {bonus = 0.9},
+      pollution = {bonus = 0.12},
+      speed = {bonus = -0.2}
+    },
+    limitation = productivity_module_limitation(),
+    limitation_message_key = "production-module-usable-only-on-intermediates"
+  },
   ------------------------------------------------------------------------------
   -- MARK: Group prduction
   -- MARK: space-related

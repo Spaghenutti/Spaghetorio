@@ -1170,6 +1170,35 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "sp-insulated-wire",  -- #ForRegEx# - recipe
+    category = "crafting-with-fluid",
+    enabled = false,
+    energy_required = 0.5,  -- time in seconds to make the item
+    ingredients = {
+      {type = "fluid", name = "sp-vinyl-chloride", amount = 10},
+      {type = "item", name = "copper-cable", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-insulated-wire", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-basic-circuit-board",  -- #ForRegEx# - recipe
+    category = "crafting",
+    enabled = false,
+    energy_required = 2.4,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "copper-cable", amount = 3},
+      {type = "item", name = "plastic-bar", amount = 2},
+      {type = "item", name = "sp-solder", amount = 2}
+    },
+    results = {
+      {type = "item", name = "sp-basic-circuit-board", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
     name = "sp-empty-circuit-board",  -- #ForRegEx# - recipe
     category = "crafting-with-fluid",
     enabled = false,
@@ -1177,8 +1206,8 @@ data:extend({
     ingredients = {
       {type = "fluid", name = "sp-epoxy", amount = 10},
       {type = "item", name = "copper-cable", amount = 2},
-      {type = "item", name = "sp-glass-fiber", amount = 1},
-      {type = "item", name = "sp-solder", amount = 2}
+      {type = "item", name = "sp-glass-fiber", amount = 3},
+      {type = "item", name = "sp-silver-solder", amount = 1}
     },
     results = {
       {type = "item", name = "sp-empty-circuit-board", amount = 1}
@@ -1195,7 +1224,7 @@ data:extend({
       {type = "item", name = "sp-vacuum-tube", amount = 2},
       {type = "item", name = "sp-resistor", amount = 4},
       {type = "item", name = "sp-capacitor", amount = 3},
-      {type = "item", name = "sp-diode", amount = 2},
+      {type = "item", name = "sp-light-emitting-diode", amount = 5},
       {type = "item", name = "sp-transistor", amount = 2}
     },
     results = {
