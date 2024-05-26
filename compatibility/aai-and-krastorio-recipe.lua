@@ -930,6 +930,7 @@ util.change_recipe_ingredients("silicon",
   16)
 
 -- MARK: recipe changes
+table.insert(data.raw.recipe["inserter-parts"].ingredients, {type = "item", name = "sp-machined-parts", amount = 1})
 util.change_recipe_ingredients("electronic-circuit-stone",
   {{"copper-cable", 3}, {"stone-tablet", 1}, {"sp-solder", 1}},
   {{"copper-cable", 8}, {"stone-tablet", 2}, {"sp-solder", 2}},

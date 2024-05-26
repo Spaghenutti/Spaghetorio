@@ -932,9 +932,9 @@ data:extend({
     name = "sp-spring",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
-    energy_required = 1.6,  -- time in seconds to make the item
+    energy_required = 0.8,  -- time in seconds to make the item
     ingredients = {
-      {type = "item", name = "iron-stick", amount = 2}
+      {type = "item", name = "iron-stick", amount = 1}
     },
     results = {
       {type = "item", name = "sp-spring", amount = 3}

@@ -36,8 +36,8 @@ util.change_recipe_ingredients("processing-unit",
   1.6,
   3)
 util.change_recipe_ingredients("motor",
-  {{"iron-plate", 1}, {"sp-bolts", 3}, {"sp-gearbox", 1}},
-  {{"iron-plate", 2}, {"sp-bolts", 6}, {"sp-gearbox", 1}},
+  {{"sp-machined-parts", 2}, {"sp-bolts", 3}, {"sp-gearbox", 1}},
+  {{"sp-machined-parts", 4}, {"sp-bolts", 6}, {"sp-gearbox", 1}},
   2,
   3)
 util.change_recipe_ingredients("electric-motor",
