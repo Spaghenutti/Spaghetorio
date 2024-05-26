@@ -34,6 +34,7 @@ TODO:
   - Add particle accelerator
   - Replace dummy icons
   - Fix barrel tints of fluids
+  - Add radiocativity to radioactive items
 
 Low prio
   - Create function to generate acroproduct-conversion recipes
@@ -44,7 +45,7 @@ Low prio
   - Add recycling recipes (break unused things down to trash and use trash for low grade recipes)
   - Fix smoke tints of chemical recipes
   - Fix sorting of items in lua. "Mark: buildings" does not exist as category
-  - Fix all icons where petroleum gas shows up
+  ? Fix all icons where petroleum gas shows up
   - Move science-pack changes to diffirent file than aai-and-krastorio-final-fixes.lua
   - Add normal and expensive recipes
   - Add duct tape, lol

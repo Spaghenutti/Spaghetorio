@@ -253,6 +253,11 @@ data.raw.technology["kr-decorations"].unit = {
 
 table.insert(data.raw.technology["advanced-electronics"].prerequisites, "sp-electronic-components")
 table.insert(data.raw.technology["advanced-electronics"].effects, {type = "unlock-recipe", recipe = "sp-separate-electronic-components"})
+table.insert(data.raw.technology["advanced-electronics"].effects, {type = "unlock-recipe", recipe = "sp-basic-circuit-board"})
+
+table.insert(data.raw.technology["advanced-electronics-2"].prerequisites, "sp-chemical-science-pack-2")
+table.insert(data.raw.technology["advanced-electronics"].effects, {type = "unlock-recipe", recipe = "sp-empty-circuit-board"})
+table.insert(data.raw.technology["advanced-electronics"].effects, {type = "unlock-recipe", recipe = "sp-circuit-board"})
 
 table.insert(data.raw.technology["kr-automation-core"].prerequisites, "sp-iron-machining")
 table.insert(data.raw.technology["kr-automation-core"].prerequisites, "sp-iron-extruding")

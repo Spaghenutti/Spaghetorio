@@ -1112,39 +1112,18 @@ data:extend({
   },
   {
     type = "technology",
-    name = "sp-circuit-board",  -- #ForRegEx# - technology
-    icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/circuit-board.png",
-    effects =
-    {
-      {
-        type = "unlock-recipe",
-        recipe = "sp-empty-circuit-board"
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-circuit-board"
-      },
-    },
-    prerequisites = {"logistic-science-pack"},
-    unit =
-    {
-      count = 100,
-      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
-      time = 15
-    },
-    order = "a-h-a"
-  },
-  {
-    type = "technology",
     name = "sp-integrated-circuit",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/integrated-circuit.png",
+    icon = "__Spaghenutti__/graphics/hr-icons/memory-chip.png",
     effects =
     {
       {
         type = "unlock-recipe",
         recipe = "sp-integrated-circuit"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-memory-chip"
       },
     },
     prerequisites = {"sp-electronic-science-pack-2"},
@@ -1172,7 +1151,7 @@ data:extend({
         recipe = "sp-mirror-from-silver"
       },
     },
-    prerequisites = {"sp-circuit-board"},
+    prerequisites = {"advanced-electronics"},
     unit =
     {
       count = 100,
@@ -1185,15 +1164,10 @@ data:extend({
     type = "technology",
     name = "sp-advanced-circuit-board",  -- #ForRegEx# - technology
     icon_size = 256,
-    icons = util.combine_three_icons("__Spaghenutti__/graphics/hr-icons/memory-chip.png", 256, nil,
-                                     "__Spaghenutti__/graphics/hr-icons/antenna-chip.png", 256, nil,
-                                     "__Spaghenutti__/graphics/hr-icons/processor.png", 256, nil),
+    icons = util.combine_two_icons("__Spaghenutti__/graphics/hr-icons/antenna-chip.png", 256, nil,
+                                   "__Spaghenutti__/graphics/hr-icons/processor.png", 256, nil),
     effects =
     {
-      {
-        type = "unlock-recipe",
-        recipe = "sp-memory-chip"
-      },
       {
         type = "unlock-recipe",
         recipe = "sp-antenna-chip"
