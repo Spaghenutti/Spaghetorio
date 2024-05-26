@@ -4297,7 +4297,9 @@ data:extend({
     ingredients =
     -- Krastorio: {"blank-tech-card", 5}
     {
-      {"iron-plate", 69},
+      {"sp-phosphoric-acid", 3},
+      {"plastic-bar", 5},
+      {"sp-bronze-rod", 5},
     },
     result_count = 5,
     result = "sp-material-science-pack-1"

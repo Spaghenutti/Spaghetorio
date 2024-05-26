@@ -909,7 +909,7 @@ data:extend({
         recipe = "sp-ball-bearing"
       },
     },
-    prerequisites = {"sp-stainless-steel-processing", "lubricant"},
+    prerequisites = {"lubricant"},
     unit =
     {
       count = 100,
@@ -3068,7 +3068,7 @@ data:extend({
         recipe = "sp-material-science-pack-1"
       },
     },
-    prerequisites = {"logistic-science-pack"},
+    prerequisites = {"plastics"},
     unit =
     {
       count = 100,
