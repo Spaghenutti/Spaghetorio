@@ -2459,11 +2459,12 @@ data:extend({
     enabled = false,
     energy_required = 3.6,  -- time in seconds to make the item
     ingredients = {
-      {type = "item", name = "electric-motor", amount = 1},
-      {type = "item", name = "sp-ball-bearing", amount = 4},
-      {type = "item", name = "battery", amount = 4},
-      {type = "item", name = "sp-bolts", amount = 2},
-      {type = "item", name = "sp-machined-parts", amount = 6},
+      {type = "item", name = "sp-ball-bearing", amount = 2},
+      {type = "item", name = "sp-magnet", amount = 4},
+      {type = "item", name = "sp-bolts", amount = 6},
+      {type = "item", name = "sp-machined-parts", amount = 3},
+      {type = "item", name = "copper-cable", amount = 2},
+      
     },
     results = {
       {type = "item", name = "sp-dynamo", amount = 1}
