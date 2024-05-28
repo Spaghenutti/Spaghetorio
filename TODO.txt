@@ -51,6 +51,7 @@ Low prio
   - Add normal and expensive recipes
   - Add duct tape, lol
   - Why cant I align the 3rd and 4th tier of tech cards... why.....????
+  - Why have some recipes not have a dropshadow???? select sp-tin-and-lead on furnace
 
 
 Future changes

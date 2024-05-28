@@ -930,6 +930,12 @@ util.change_recipe_ingredients("silicon",
   16)
 
 -- MARK: recipe changes
+-- Overwrite change done by krastorio
+util.change_recipe_ingredients("iron-beam",
+  {{"iron-ore", 5}},
+  {{"iron-ore", 6}},
+  12,
+  16)
 table.insert(data.raw.recipe["inserter-parts"].ingredients, {type = "item", name = "sp-machined-parts", amount = 1})
 util.change_recipe_ingredients("electronic-circuit-stone",
   {{"copper-cable", 3}, {"stone-tablet", 1}, {"sp-solder", 1}},

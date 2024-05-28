@@ -14,12 +14,12 @@ util.change_recipe_ingredients("copper-plate",
   {{"copper-ore", 3}},
   8,
   12)
-data.raw.recipe["steel-plate"].category = "smelting"
-util.change_recipe_ingredients("steel-plate",
+data.raw.recipe["iron-beam"].category = "smelting"
+util.change_recipe_ingredients("iron-beam",
   {{"iron-ore", 5}},
   {{"iron-ore", 6}},
-  10,
-  14)
+  12,
+  16)
 util.change_recipe_ingredients("electronic-circuit",
   {{"copper-cable", 3}, {"wood", 3}, {"sp-solder", 1}},
   {{"copper-cable", 8}, {"wood", 5}, {"sp-solder", 2}},
@@ -145,8 +145,8 @@ util.change_recipe_ingredients("express-underground-belt",
   nil,
   nil)
 util.change_recipe_ingredients("splitter",
-  {{"motor", 2}, {"sp-bolts", 4}, {"transport-belt", 2}},
-  {{"motor", 4}, {"sp-bolts", 8}, {"transport-belt", 4}},
+  {{"sp-machined-parts", 3}, {"sp-bolts", 4}, {"transport-belt", 2}},
+  {{"sp-machined-parts", 4}, {"sp-bolts", 8}, {"transport-belt", 4}},
   nil,
   nil)
 util.change_recipe_ingredients("fast-splitter",
