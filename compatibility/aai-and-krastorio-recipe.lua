@@ -5,14 +5,34 @@ data:extend({
   {
     type = "recipe",
     name = "kr-vc-coal",  -- replaces sp-graphite recipe
+    icon = "__Spaghenutti__/graphics/crushing/crushing-coal.png",
+    icon_size = 256,
     category = "crushing",
+    subgroup = "processed-resource",
     enabled = false,
-    energy_required = 3,  -- time in seconds to make the item
+    energy_required = 1,  -- time in seconds to make the item
     ingredients = {
       {type = "item", name = "coal", amount = 3}
     },
     results = {
-      {type = "item", name = "sp-graphite", amount = 4}
+      {type = "item", name = "sp-graphite", probability = 0.5, amount = 4},
+      {type = "item", name = "coke", probability = 0.5, amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "kr-vc-coke",  -- replaces sp-graphite recipe
+    icon = "__Spaghenutti__/graphics/crushing/crushing-coke.png",
+    icon_size = 256,
+    category = "crushing",
+    subgroup = "processed-resource",
+    enabled = false,
+    energy_required = 0.8,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "coke", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-graphite",  amount = 2}
     }
   },
   -- MARK: New aai / krastorio recipes
@@ -814,6 +834,7 @@ table.insert(data.raw.recipe["sp-geological-science-pack-1"].ingredients, {type 
 table.insert(data.raw.recipe["sp-geological-science-pack-1"].ingredients, {type = "item", name = "sand", amount = 10})
 table.insert(data.raw.recipe["sp-geological-science-pack-1"].ingredients, {type = "item", name = "blank-tech-card", amount = 5})
 table.insert(data.raw.recipe["sp-material-science-pack-1"].ingredients, {type = "item", name = "blank-tech-card", amount = 5})
+table.insert(data.raw.recipe["sp-material-science-pack-1"].ingredients, {type = "item", name = "steel-beam", amount = 3})
 table.insert(data.raw.recipe["sp-automation-science-pack-2"].ingredients, {type = "item", name = "blank-tech-card", amount = 5})
 table.insert(data.raw.recipe["sp-logistic-science-pack-2"].ingredients, {type = "item", name = "blank-tech-card", amount = 5})
 table.insert(data.raw.recipe["sp-military-science-pack-2"].ingredients, {type = "item", name = "blank-tech-card", amount = 5})

@@ -197,7 +197,8 @@ data:extend({
 data.raw.technology["sp-aluminum-processing"].prerequisites = {"kr-fluids-chemistry"}
 data.raw.technology["sp-coal-processing"].effects = {
   {type = "unlock-recipe", recipe = "coke"},
-  {type = "unlock-recipe", recipe = "kr-vc-coal"}
+  {type = "unlock-recipe", recipe = "kr-vc-coal"},
+  {type = "unlock-recipe", recipe = "kr-vc-coke"}
 }
 
 table.insert(data.raw.technology["sp-steel-machining"].effects, {type = "unlock-recipe", recipe = "steel-gear-wheel"})

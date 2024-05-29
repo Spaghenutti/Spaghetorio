@@ -4296,10 +4296,10 @@ data:extend({
     enabled = false,
     energy_required = 24,
     ingredients =
+    -- Base: {"iron-beam", 5}, Krastorio: {"steel-beam", 5}
     -- Krastorio: {"blank-tech-card", 5}
     {
-      {"sp-phosphoric-acid", 3},
-      {"plastic-bar", 5},
+      {"sp-aluminum-sheet", 5},
       {"sp-bronze-rod", 5},
     },
     result_count = 5,
@@ -5672,6 +5672,7 @@ if not mods["Krastorio2"] then
   table.insert(data.raw.recipe["sp-liquid-nitrogen"].ingredients, {type = "fluid", name = "sp-nitrogen", amount = 5})
   table.insert(data.raw.recipe["sp-heavy-gearbox"].ingredients, {type = "item", name = "iron-gear-wheel", amount = 10})
   table.insert(data.raw.recipe["sp-differential"].ingredients, {type = "item", name = "iron-gear-wheel", amount = 6})
+  table.insert(data.raw.recipe["sp-material-science-pack-1"].ingredients, {type = "item", name = "iron-beam", amount = 5})
   
   -- Add missing results
   table.insert(data.raw.recipe["sp-silica"].results, {type = "item", name = "sp-sand", probability = 0.3, amount = 1})

@@ -739,11 +739,11 @@ data:extend({
         recipe = "sp-aluminum-brass"
       },
     },
-    prerequisites = {"sp-aluminum-processing", "sp-zirconium-processing", "sp-magnesium-processing", "sp-zinc-processing"},
+    prerequisites = {"sp-material-science-pack-1", "sp-zirconium-processing", "sp-magnesium-processing", "sp-zinc-processing"},
     unit =
     {
       count = 100,
-      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}, {"sp-material-science-pack-1", 1}},
       time = 15
     },
     order = "a-h-a"
@@ -3068,7 +3068,7 @@ data:extend({
         recipe = "sp-material-science-pack-1"
       },
     },
-    prerequisites = {"plastics"},
+    prerequisites = {"sp-aluminum-processing"},
     unit =
     {
       count = 100,
@@ -3481,6 +3481,9 @@ data.raw.technology["circuit-network"].prerequisites = {"sp-aluminum-processing"
 
 table.insert(data.raw.technology["railway"].prerequisites, "sp-steel-wheel")
 table.insert(data.raw.technology["railway"].effects, {type = "unlock-recipe", recipe = "sp-train-boige"})
+
+table.insert(data.raw.technology["advanced-material-processing"].prerequisites, "sp-material-science-pack-1")
+table.insert(data.raw.technology["advanced-material-processing"].unit.ingredients, {"sp-material-science-pack-1", 1})
 
 table.insert(data.raw.technology["advanced-material-processing-2"].prerequisites, "sp-tungsten-processing")
 table.insert(data.raw.technology["advanced-material-processing-2"].prerequisites, "sp-basic-ceramics")
