@@ -52,6 +52,7 @@ Low prio
   - Add duct tape, lol
   - Why cant I align the 3rd and 4th tier of tech cards... why.....????
   - Why have some recipes not have a dropshadow???? select sp-tin-and-lead on furnace
+  - Add subgroups to fluids
 
 
 Future changes
