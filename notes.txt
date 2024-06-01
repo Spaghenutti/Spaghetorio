@@ -1,0 +1,11 @@
+
+logistic-science-pack
+
+sp-material-science-pack-1, sp-electrical-science-pack-1, sp-geological-science-pack
+
+chemical-science-pack
+
+
+sp-titanium-nitride
+
+sp-titanium-processing, (krastorio nitrogen)

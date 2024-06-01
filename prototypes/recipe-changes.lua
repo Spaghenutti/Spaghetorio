@@ -445,8 +445,8 @@ util.change_recipe_ingredients("assembling-machine-1",
   16)
 -- Base: {"iron-plate", 40}; Krastorio {"steel-beam", 12}
 util.change_recipe_ingredients("assembling-machine-2",
-  {{"electronic-circuit", 10}, {"engine-unit", 4}, {"stone-brick", 32}, {"steel-plate", 25}, {"sp-bolts", 24}, {"sp-gearbox", 6}},
-  {{"electronic-circuit", 20}, {"engine-unit", 8}, {"stone-brick", 64}, {"steel-plate", 50}, {"sp-bolts", 48}, {"sp-gearbox", 10}},
+  {{"electronic-circuit", 10}, {"engine-unit", 4}, {"stone-brick", 32}, {"steel-plate", 25}, {"sp-bolts", 24}, {"sp-heatsink", 6}},
+  {{"electronic-circuit", 20}, {"engine-unit", 8}, {"stone-brick", 64}, {"steel-plate", 50}, {"sp-bolts", 48}, {"sp-heatsink", 10}},
   10,
   20)
 util.change_recipe_ingredients("assembling-machine-3",

@@ -1015,11 +1015,16 @@ util.change_recipe_ingredients("kr-crusher",
   {{"iron-beam", 24}, {"iron-gear-wheel", 60}, {"sp-gearbox", 12}, {"sp-bolts", 72}, {"motor", 20}, {"stone-brick", 32}},
   12,
   24)
+  util.change_recipe_ingredients("kr-fluid-burner",
+  {{"steel-beam", 16}, {"sp-copper-tube", 30}, {"sp-valve", 4}, {"stone-brick", 8}, {"sp-bolts", 16}},
+  {{"steel-beam", 24}, {"sp-copper-tube", 50}, {"sp-valve", 8}, {"stone-brick", 20}, {"sp-bolts", 24}},
+  10,
+  20)
 util.change_recipe_ingredients("kr-greenhouse",
-  {{"iron-beam", 24}, {"sp-bolts", 48}, {"glass", 40}, {"stone-brick", 16}},
-  {{"iron-beam", 48}, {"sp-bolts", 96}, {"glass", 80}, {"stone-brick", 32}},
-  16,
-  32)
+  {{"steel-beam", 24}, {"sp-bolts", 48}, {"glass", 40}, {"stone-brick", 16}, {"landfill", 25}, {"sp-copper-tube", 20}, {"sp-valve", 8}},
+  {{"steel-beam", 48}, {"sp-bolts", 96}, {"glass", 80}, {"stone-brick", 32}, {"landfill", 25}, {"sp-copper-tube", 40}, {"sp-valve", 16}},
+  20,
+  40)
 util.change_recipe_ingredients("kr-filtration-plant",
   {{"steel-beam", 48}, {"sp-copper-tube", 50}, {"sp-bolts", 60}, {"glass", 20}, {"electric-motor", 12}, {"electronic-circuit", 12}},
   {{"steel-beam", 96}, {"sp-copper-tube", 100}, {"sp-bolts", 120}, {"glass", 40}, {"electric-motor", 24}, {"electronic-circuit", 24}},
@@ -1085,6 +1090,72 @@ util.change_recipe_ingredients("kr-substation-mk2",
   {{"sp-bolts", 40}, {"processing-unit", 8}, {"sp-aluminum-cable", 48}, {"imersium-beam", 24}, {"concrete", 32}, {"sp-electrode", 8}, {"sp-insulation-sheet", 20}},
   12,
   24)
+util.change_recipe_ingredients("kr-advanced-furnace",
+  {{"steel-plate", 69}},
+  {{"steel-plate", 69}},
+  69,
+  69)
+util.change_recipe_ingredients("kr-advanced-assembling-machine",
+  {{"steel-plate", 69}},
+  {{"steel-plate", 69}},
+  69,
+  69)
+util.change_recipe_ingredients("kr-bio-lab",
+  {{"steel-plate", 69}},
+  {{"steel-plate", 69}},
+  69,
+  69)
+util.change_recipe_ingredients("kr-fuel-refinery",
+  {{"steel-plate", 69}},
+  {{"steel-plate", 69}},
+  69,
+  69)
+util.change_recipe_ingredients("kr-research-server",
+  {{"steel-plate", 69}},
+  {{"steel-plate", 69}},
+  69,
+  69)
+util.change_recipe_ingredients("kr-quantum-computer",
+  {{"steel-plate", 69}},
+  {{"steel-plate", 69}},
+  69,
+  69)
+util.change_recipe_ingredients("kr-singularity-lab",
+  {{"steel-plate", 69}},
+  {{"steel-plate", 69}},
+  69,
+  69)
+util.change_recipe_ingredients("kr-matter-plant",
+  {{"steel-plate", 69}},
+  {{"steel-plate", 69}},
+  69,
+  69)
+util.change_recipe_ingredients("kr-matter-assembler",
+  {{"steel-plate", 69}},
+  {{"steel-plate", 69}},
+  69,
+  69)
+util.change_recipe_ingredients("kr-stabilizer-charging-station",
+  {{"steel-plate", 69}},
+  {{"steel-plate", 69}},
+  69,
+  69)
+util.change_recipe_ingredients("kr-singularity-beacon",
+  {{"steel-plate", 69}},
+  {{"steel-plate", 69}},
+  69,
+  69)
+-- Why cant i do this here???
+-- util.change_recipe_ingredients("kr-advanced-lab",
+--   {{"steel-plate", 69}},
+--   {{"steel-plate", 69}},
+--   69,
+--   69)
+-- util.change_recipe_ingredients("kr-air-filter",
+--   {{"steel-plate", 69}},
+--   {{"steel-plate", 69}},
+--   69,
+--   69)
 
 -- MARK: AAI Industries Buildings
 util.change_recipe_ingredients("burner-turbine",
@@ -1122,6 +1193,16 @@ util.change_recipe_ingredients("electric-engine-unit",
   {{"sp-electromagnet", 9}, {"sp-ball-bearing", 2}, {"sp-duralumin", 3}, {"sp-bolts", 8}, {type = "fluid", name = "lubricant", amount = 60}},
   6,
   8)
+util.change_recipe_ingredients("industrial-furnace",
+  {{"steel-plate", 69}},
+  {{"steel-plate", 69}},
+  69,
+  69)
+util.change_recipe_ingredients("area-mining-drill",
+  {{"steel-plate", 69}},
+  {{"steel-plate", 69}},
+  69,
+  69)
 
 -- Remove crushing recipes
 data.raw.recipe["kr-vc-sp-nuclear-waste"] = nil

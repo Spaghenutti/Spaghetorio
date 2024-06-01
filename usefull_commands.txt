@@ -2,7 +2,13 @@ Unresearch technology:
 
 /c for name, technology in pairs(game.player.force.technologies) do if (name == "landfill") then technology.researched=false end end
 
+--------------------------------------------------------------------------------
 
+Unresearch all technologies:
+
+/c for _,v in pairs(game.player.force.technologies) do v.researched=false end
+
+--------------------------------------------------------------------------------
 
 Add new resource patch
 This creates a new 11×11 patch of resources, centered on the player character, where the ground is not water. The patch it creates is perfectly square but it randomizes the amount similar to natural generation, with fewer ore at the edges and more ore in the center. The default numbers result in a patch with 2500-3000 ore.
