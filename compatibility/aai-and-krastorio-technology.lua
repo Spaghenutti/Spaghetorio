@@ -217,6 +217,8 @@ table.insert(data.raw.technology["sp-titanium-nitride"].prerequisites, "kr-atmos
 -- MARK: Krastorio technology changes
 table.insert(data.raw.technology["kr-steam-engine"].prerequisites, "sp-copper-machining")  -- Why is this a krastorio technology??
 
+table.insert(data.raw.technology["kr-fluids-chemistry"].prerequisites, "kr-basic-fluid-handling") 
+
 data.raw.technology["electronics"].prerequisites = {"automation", "automation-science-pack", "sp-basic-solder"}
 
 data.raw.technology["kr-crusher"].prerequisites = {"electricity"}

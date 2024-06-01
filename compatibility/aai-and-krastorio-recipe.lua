@@ -930,6 +930,7 @@ table.insert(data.raw.recipe["sp-sulfur-from-acrovoid"].results, {type = "fluid"
 
 -- MARK: Change recipe category
 data.raw.recipe["sp-aluminum-sheet"].category = "electrolysis"
+data.raw.recipe["sp-anodized-aluminum"].category = "electrolysis"
 data.raw.recipe["sp-zinc-plate"].category = "electrolysis"
 data.raw.recipe["sp-sodium-hydroxide-from-liquid-sodium"].category = "electrolysis"
 data.raw.recipe["sp-nuclear-waste-processing"].category = "crushing"
@@ -1026,13 +1027,13 @@ util.change_recipe_ingredients("kr-greenhouse",
   20,
   40)
 util.change_recipe_ingredients("kr-filtration-plant",
-  {{"steel-beam", 48}, {"sp-copper-tube", 50}, {"sp-bolts", 60}, {"glass", 20}, {"electric-motor", 12}, {"electronic-circuit", 12}},
-  {{"steel-beam", 96}, {"sp-copper-tube", 100}, {"sp-bolts", 120}, {"glass", 40}, {"electric-motor", 24}, {"electronic-circuit", 24}},
+  {{"steel-beam", 48}, {"sp-copper-tube", 50}, {"sp-bolts", 60}, {"glass", 20}, {"electric-motor", 12}, {"electronic-circuit", 12}, {"sp-valve", 16}},
+  {{"steel-beam", 96}, {"sp-copper-tube", 100}, {"sp-bolts", 120}, {"glass", 40}, {"electric-motor", 24}, {"electronic-circuit", 24}, {"sp-valve", 24}},
   24,
   48)
 util.change_recipe_ingredients("kr-electrolysis-plant",
-  {{"steel-beam", 36}, {"sp-bolts", 80}, {"glass", 24}, {"engine-unit", 8}, {"electronic-circuit", 8}},
-  {{"iron-beam", 72}, {"sp-bolts", 160}, {"glass", 48}, {"engine-unit", 12}, {"electronic-circuit", 12}},
+  {{"steel-beam", 36}, {"sp-bolts", 80}, {"glass", 24}, {"engine-unit", 8}, {"electronic-circuit", 8}, {"sp-valve", 8}},
+  {{"iron-beam", 72}, {"sp-bolts", 160}, {"glass", 48}, {"engine-unit", 12}, {"electronic-circuit", 12}, {"sp-valve", 16}},
   20,
   40)
 util.change_recipe_ingredients("kr-gas-power-station",

@@ -491,8 +491,8 @@ util.change_recipe_ingredients("solar-panel",
   20)
 -- Base: {"sp-glass", 30}; Krastorio {"glass", 30}
 util.change_recipe_ingredients("chemical-plant",
-  {{"steel-beam", 12}, {"electric-motor", 6}, {"stone-brick", 30}, {"sp-copper-tube", 16}, {"electronic-circuit", 16}},
-  {{"steel-beam", 24}, {"electric-motor", 10}, {"stone-brick", 40}, {"sp-copper-tube", 32}, {"electronic-circuit", 32}},
+  {{"steel-beam", 12}, {"electric-motor", 6}, {"stone-brick", 30}, {"sp-copper-tube", 16}, {"electronic-circuit", 16}, {"sp-valve", 4}},
+  {{"steel-beam", 24}, {"electric-motor", 10}, {"stone-brick", 40}, {"sp-copper-tube", 32}, {"electronic-circuit", 32}, {"sp-valve", 8}},
   12,
   24)
 -- Base: {"iron-plate", 50}; Krastorio {"steel-beam", 6}, {"steel-plate", 16}

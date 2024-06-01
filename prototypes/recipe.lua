@@ -153,11 +153,13 @@ data:extend({
   {
     type = "recipe",
     name = "sp-anodized-aluminum",  -- #ForRegEx# - recipe
-    category = "crafting",
+    category = "chemistry",
     enabled = false,
     energy_required = 8,  -- time in seconds to make the item
     ingredients = {
-      {type = "item", name = "sp-aluminum-sheet", amount = 1}
+      {type = "item", name = "sp-aluminum-sheet", amount = 1},
+      {type = "fluid", name = "water", amount = 50},
+      {type = "fluid", name = "sulfuric-acid", amount = 5},
     },
     results = {
       {type = "item", name = "sp-anodized-aluminum", amount = 2}
@@ -1609,9 +1611,10 @@ data:extend({
     name = "sp-valve",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
-    energy_required = 4,  -- time in seconds to make the item
+    energy_required = 1,  -- time in seconds to make the item
     ingredients = {
       {type = "item", name = "sp-bronze-rod", amount = 2},
+      {type = "item", name = "sp-machined-parts", amount = 1},
       {type = "item", name = "sp-bolts", amount = 1}
     },
     results = {

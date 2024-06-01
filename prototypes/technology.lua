@@ -220,11 +220,11 @@ data:extend({
         recipe = "sp-anodized-aluminum"
       }
     },
-    prerequisites = {"sp-aluminum-processing"},
+    prerequisites = {"sp-aluminum-processing", "chemical-science-pack"},
     unit =
     {
       count = 100,
-      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}, {"chemical-science-pack", 1}},
       time = 15
     },
     order = "a-h-a"
@@ -2877,7 +2877,11 @@ data:extend({
     unit =
     {
       count = 100,
-      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      ingredients = {
+        {"basic-tech-card", 1},
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1}
+      },
       time = 15
     },
     order = "a-h-a"
@@ -2954,7 +2958,11 @@ data:extend({
     unit =
     {
       count = 100,
-      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      ingredients = {
+        {"basic-tech-card", 1},
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1}
+      },
       time = 15
     },
     order = "a-h-a"
@@ -3055,7 +3063,11 @@ data:extend({
     unit =
     {
       count = 100,
-      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      ingredients = {
+        {"basic-tech-card", 1},
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1}
+      },
       time = 15
     },
     order = "a-h-a"
@@ -3078,7 +3090,11 @@ data:extend({
     unit =
     {
       count = 100,
-      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      ingredients = {
+        {"basic-tech-card", 1},
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1}
+      },
       time = 15
     },
     order = "a-h-a"
@@ -3099,7 +3115,11 @@ data:extend({
     unit =
     {
       count = 100,
-      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      ingredients = {
+        {"basic-tech-card", 1},
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1}
+      },
       time = 15
     },
     order = "a-h-a"
@@ -3121,7 +3141,11 @@ data:extend({
     unit =
     {
       count = 100,
-      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      ingredients = {
+        {"basic-tech-card", 1},
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1}
+      },
       time = 15
     },
     order = "a-h-a"
@@ -3138,11 +3162,25 @@ data:extend({
         recipe = "sp-automation-science-pack-2"
       },
     },
-    prerequisites = {"automation-science-pack", "logistic-science-pack", "chemical-science-pack", "sp-electronic-science-pack-1", "sp-geological-science-pack-1", "sp-material-science-pack-1"},
+    prerequisites = {
+      "automation-science-pack",
+      "logistic-science-pack",
+      "chemical-science-pack",
+      "sp-electronic-science-pack-1",
+      "sp-geological-science-pack-1",
+      "sp-material-science-pack-1"
+    },
     unit =
     {
       count = 100,
-      ingredients = {{"automation-science-pack", 1}, {"logistic-science-pack", 1}, {"chemical-science-pack", 1}, {"sp-electronic-science-pack-1", 1}, {"sp-geological-science-pack-1", 1}, {"sp-material-science-pack-1", 1}},
+      ingredients = {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"sp-electronic-science-pack-1", 1},
+        {"sp-geological-science-pack-1", 1},
+        {"sp-material-science-pack-1", 1}
+      },
       time = 15
     },
     order = "a-h-a"
@@ -3159,11 +3197,25 @@ data:extend({
         recipe = "sp-logistic-science-pack-2"
       },
     },
-    prerequisites = {"automation-science-pack", "logistic-science-pack", "chemical-science-pack", "sp-electronic-science-pack-1", "sp-geological-science-pack-1", "sp-material-science-pack-1"},
+    prerequisites = {
+      "automation-science-pack",
+      "logistic-science-pack",
+      "chemical-science-pack",
+      "sp-electronic-science-pack-1",
+      "sp-geological-science-pack-1",
+      "sp-material-science-pack-1"
+    },
     unit =
     {
       count = 100,
-      ingredients = {{"automation-science-pack", 1}, {"logistic-science-pack", 1}, {"chemical-science-pack", 1}, {"sp-electronic-science-pack-1", 1}, {"sp-geological-science-pack-1", 1}, {"sp-material-science-pack-1", 1}},
+      ingredients = {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"sp-electronic-science-pack-1", 1},
+        {"sp-geological-science-pack-1", 1},
+        {"sp-material-science-pack-1", 1}
+      },
       time = 15
     },
     order = "a-h-a"
@@ -3180,11 +3232,26 @@ data:extend({
         recipe = "sp-military-science-pack-2"
       },
     },
-    prerequisites = {"automation-science-pack", "logistic-science-pack", "military-science-pack", "chemical-science-pack", "sp-electronic-science-pack-1", "sp-geological-science-pack-1", "sp-material-science-pack-1"},
+    prerequisites = {
+      "automation-science-pack",
+      "logistic-science-pack",
+      "military-science-pack",
+      "chemical-science-pack",
+      "sp-electronic-science-pack-1",
+      "sp-geological-science-pack-1",
+      "sp-material-science-pack-1"},
     unit =
     {
       count = 100,
-      ingredients = {{"automation-science-pack", 1}, {"logistic-science-pack", 1}, {"military-science-pack", 1}, {"chemical-science-pack", 1}, {"sp-electronic-science-pack-1", 1}, {"sp-geological-science-pack-1", 1}, {"sp-material-science-pack-1", 1}},
+      ingredients = {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"military-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"sp-electronic-science-pack-1", 1},
+        {"sp-geological-science-pack-1", 1},
+        {"sp-material-science-pack-1", 1}
+      },
       time = 15
     },
     order = "a-h-a"
@@ -3201,11 +3268,25 @@ data:extend({
         recipe = "sp-chemical-science-pack-2"
       },
     },
-    prerequisites = {"automation-science-pack", "logistic-science-pack", "chemical-science-pack", "sp-electronic-science-pack-1", "sp-geological-science-pack-1", "sp-material-science-pack-1"},
+    prerequisites = {
+      "automation-science-pack",
+      "logistic-science-pack",
+      "chemical-science-pack",
+      "sp-electronic-science-pack-1",
+      "sp-geological-science-pack-1",
+      "sp-material-science-pack-1"
+    },
     unit =
     {
       count = 100,
-      ingredients = {{"automation-science-pack", 1}, {"logistic-science-pack", 1}, {"chemical-science-pack", 1}, {"sp-electronic-science-pack-1", 1}, {"sp-geological-science-pack-1", 1}, {"sp-material-science-pack-1", 1}},
+      ingredients = {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"sp-electronic-science-pack-1", 1},
+        {"sp-geological-science-pack-1", 1},
+        {"sp-material-science-pack-1", 1}
+      },
       time = 15
     },
     order = "a-h-a"
@@ -3222,11 +3303,25 @@ data:extend({
         recipe = "sp-electronic-science-pack-2"
       },
     },
-    prerequisites = {"automation-science-pack", "logistic-science-pack", "chemical-science-pack", "sp-electronic-science-pack-1", "sp-geological-science-pack-1", "sp-material-science-pack-1"},
+    prerequisites = {
+      "automation-science-pack",
+      "logistic-science-pack",
+      "chemical-science-pack",
+      "sp-electronic-science-pack-1",
+      "sp-geological-science-pack-1",
+      "sp-material-science-pack-1"
+    },
     unit =
     {
       count = 100,
-      ingredients = {{"automation-science-pack", 1}, {"logistic-science-pack", 1}, {"chemical-science-pack", 1}, {"sp-electronic-science-pack-1", 1}, {"sp-geological-science-pack-1", 1}, {"sp-material-science-pack-1", 1}},
+      ingredients = {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"sp-electronic-science-pack-1", 1},
+        {"sp-geological-science-pack-1", 1},
+        {"sp-material-science-pack-1", 1}
+      },
       time = 15
     },
     order = "a-h-a"
@@ -3243,11 +3338,25 @@ data:extend({
         recipe = "sp-geological-science-pack-2"
       },
     },
-    prerequisites = {"automation-science-pack", "logistic-science-pack", "chemical-science-pack", "sp-electronic-science-pack-1", "sp-geological-science-pack-1", "sp-material-science-pack-1"},
+    prerequisites = {
+      "automation-science-pack",
+      "logistic-science-pack",
+      "chemical-science-pack",
+      "sp-electronic-science-pack-1",
+      "sp-geological-science-pack-1",
+      "sp-material-science-pack-1"
+    },
     unit =
     {
       count = 100,
-      ingredients = {{"automation-science-pack", 1}, {"logistic-science-pack", 1}, {"chemical-science-pack", 1}, {"sp-electronic-science-pack-1", 1}, {"sp-geological-science-pack-1", 1}, {"sp-material-science-pack-1", 1}},
+      ingredients = {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"sp-electronic-science-pack-1", 1},
+        {"sp-geological-science-pack-1", 1},
+        {"sp-material-science-pack-1", 1}
+      },
       time = 15
     },
     order = "a-h-a"
@@ -3264,11 +3373,25 @@ data:extend({
         recipe = "sp-material-science-pack-2"
       },
     },
-    prerequisites = {"automation-science-pack", "logistic-science-pack", "chemical-science-pack", "sp-electronic-science-pack-1", "sp-geological-science-pack-1", "sp-material-science-pack-1"},
+    prerequisites = {
+      "automation-science-pack",
+      "logistic-science-pack", 
+      "chemical-science-pack",
+      "sp-electronic-science-pack-1",
+      "sp-geological-science-pack-1",
+      "sp-material-science-pack-1"
+    },
     unit =
     {
       count = 100,
-      ingredients = {{"automation-science-pack", 1}, {"logistic-science-pack", 1}, {"chemical-science-pack", 1}, {"sp-electronic-science-pack-1", 1}, {"sp-geological-science-pack-1", 1}, {"sp-material-science-pack-1", 1}},
+      ingredients = {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"sp-electronic-science-pack-1", 1},
+        {"sp-geological-science-pack-1", 1},
+        {"sp-material-science-pack-1", 1}
+      },
       time = 15
     },
     order = "a-h-a"
@@ -3285,11 +3408,25 @@ data:extend({
         recipe = "sp-astronomical-science-pack-2"
       },
     },
-    prerequisites = {"sp-automation-science-pack-2", "sp-logistic-science-pack-2", "sp-chemical-science-pack-2", "sp-electronic-science-pack-2", "sp-geological-science-pack-2", "sp-material-science-pack-2"},
+    prerequisites = {
+      "sp-automation-science-pack-2",
+      "sp-logistic-science-pack-2",
+      "sp-chemical-science-pack-2",
+      "sp-electronic-science-pack-2",
+      "sp-geological-science-pack-2",
+      "sp-material-science-pack-2"
+    },
     unit =
     {
       count = 100,
-      ingredients = {{"sp-automation-science-pack-2", 1}, {"sp-logistic-science-pack-2", 1}, {"sp-chemical-science-pack-2", 1}, {"sp-electronic-science-pack-2", 1}, {"sp-geological-science-pack-2", 1}, {"sp-material-science-pack-2", 1}},
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1}
+      },
       time = 15
     },
     order = "a-h-a"
@@ -3306,11 +3443,25 @@ data:extend({
         recipe = "sp-computer-science-pack-2"
       },
     },
-    prerequisites = {"sp-automation-science-pack-2", "sp-logistic-science-pack-2", "sp-chemical-science-pack-2", "sp-electronic-science-pack-2", "sp-geological-science-pack-2", "sp-material-science-pack-2"},
+    prerequisites = {
+      "sp-automation-science-pack-2",
+      "sp-logistic-science-pack-2",
+      "sp-chemical-science-pack-2",
+      "sp-electronic-science-pack-2",
+      "sp-geological-science-pack-2",
+      "sp-material-science-pack-2"
+    },
     unit =
     {
       count = 100,
-      ingredients = {{"sp-automation-science-pack-2", 1}, {"sp-logistic-science-pack-2", 1}, {"sp-chemical-science-pack-2", 1}, {"sp-electronic-science-pack-2", 1}, {"sp-geological-science-pack-2", 1}, {"sp-material-science-pack-2", 1}},
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1}
+      },
       time = 15
     },
     order = "a-h-a"
@@ -3327,11 +3478,27 @@ data:extend({
         recipe = "sp-automation-science-pack-3"
       },
     },
-    prerequisites = {"sp-automation-science-pack-2", "sp-logistic-science-pack-2", "sp-chemical-science-pack-2", "sp-electronic-science-pack-2", "sp-geological-science-pack-2", "sp-astronomical-science-pack-2", "sp-material-science-pack-2"},
+    prerequisites = {
+      "sp-automation-science-pack-2",
+      "sp-logistic-science-pack-2",
+      "sp-chemical-science-pack-2",
+      "sp-electronic-science-pack-2",
+      "sp-geological-science-pack-2",
+      "sp-astronomical-science-pack-2",
+      "sp-material-science-pack-2"
+    },
     unit =
     {
       count = 100,
-      ingredients = {{"sp-automation-science-pack-2", 1}, {"sp-logistic-science-pack-2", 1}, {"sp-chemical-science-pack-2", 1}, {"sp-electronic-science-pack-2", 1}, {"sp-geological-science-pack-2", 1}, {"sp-astronomical-science-pack-2", 1}, {"sp-material-science-pack-2", 1}},
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"sp-astronomical-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1}
+      },
       time = 15
     },
     order = "a-h-a"
@@ -3348,11 +3515,27 @@ data:extend({
         recipe = "sp-logistic-science-pack-3"
       },
     },
-    prerequisites = {"sp-automation-science-pack-2", "sp-logistic-science-pack-2", "sp-chemical-science-pack-2", "sp-electronic-science-pack-2", "sp-geological-science-pack-2", "sp-astronomical-science-pack-2", "sp-material-science-pack-2"},
+    prerequisites = {
+      "sp-automation-science-pack-2",
+      "sp-logistic-science-pack-2",
+      "sp-chemical-science-pack-2",
+      "sp-electronic-science-pack-2",
+      "sp-geological-science-pack-2",
+      "sp-astronomical-science-pack-2",
+      "sp-material-science-pack-2"
+    },
     unit =
     {
       count = 100,
-      ingredients = {{"sp-automation-science-pack-2", 1}, {"sp-logistic-science-pack-2", 1}, {"sp-chemical-science-pack-2", 1}, {"sp-electronic-science-pack-2", 1}, {"sp-geological-science-pack-2", 1}, {"sp-astronomical-science-pack-2", 1}, {"sp-material-science-pack-2", 1}},
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"sp-astronomical-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1}
+      },
       time = 15
     },
     order = "a-h-a"
@@ -3369,11 +3552,29 @@ data:extend({
         recipe = "sp-military-science-pack-3"
       },
     },
-    prerequisites = {"sp-automation-science-pack-2", "sp-logistic-science-pack-2", "sp-military-science-pack-2", "sp-chemical-science-pack-2", "sp-electronic-science-pack-2", "sp-geological-science-pack-2", "sp-astronomical-science-pack-2", "sp-material-science-pack-2"},
+    prerequisites = {
+      "sp-automation-science-pack-2",
+      "sp-logistic-science-pack-2",
+      "sp-military-science-pack-2",
+      "sp-chemical-science-pack-2",
+      "sp-electronic-science-pack-2",
+      "sp-geological-science-pack-2",
+      "sp-astronomical-science-pack-2",
+      "sp-material-science-pack-2"
+    },
     unit =
     {
       count = 100,
-      ingredients = {{"sp-automation-science-pack-2", 1}, {"sp-logistic-science-pack-2", 1}, {"sp-military-science-pack-2", 1}, {"sp-chemical-science-pack-2", 1}, {"sp-electronic-science-pack-2", 1}, {"sp-geological-science-pack-2", 1}, {"sp-astronomical-science-pack-2", 1}, {"sp-material-science-pack-2", 1}},
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-military-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"sp-astronomical-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1}
+      },
       time = 15
     },
     order = "a-h-a"
@@ -3390,11 +3591,27 @@ data:extend({
         recipe = "sp-chemical-science-pack-3"
       },
     },
-    prerequisites = {"sp-automation-science-pack-2", "sp-logistic-science-pack-2", "sp-chemical-science-pack-2", "sp-electronic-science-pack-2", "sp-geological-science-pack-2", "sp-astronomical-science-pack-2", "sp-material-science-pack-2"},
+    prerequisites = {
+      "sp-automation-science-pack-2",
+      "sp-logistic-science-pack-2",
+      "sp-chemical-science-pack-2",
+      "sp-electronic-science-pack-2",
+      "sp-geological-science-pack-2",
+      "sp-astronomical-science-pack-2",
+      "sp-material-science-pack-2"
+    },
     unit =
     {
       count = 100,
-      ingredients = {{"sp-automation-science-pack-2", 1}, {"sp-logistic-science-pack-2", 1}, {"sp-chemical-science-pack-2", 1}, {"sp-electronic-science-pack-2", 1}, {"sp-geological-science-pack-2", 1}, {"sp-astronomical-science-pack-2", 1}, {"sp-material-science-pack-2", 1}},
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"sp-astronomical-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1}
+      },
       time = 15
     },
     order = "a-h-a"
@@ -3411,11 +3628,27 @@ data:extend({
         recipe = "sp-electronic-science-pack-3"
       },
     },
-    prerequisites = {"sp-automation-science-pack-2", "sp-logistic-science-pack-2", "sp-chemical-science-pack-2", "sp-electronic-science-pack-2", "sp-geological-science-pack-2", "sp-astronomical-science-pack-2", "sp-material-science-pack-2"},
+    prerequisites = {
+      "sp-automation-science-pack-2",
+      "sp-logistic-science-pack-2",
+      "sp-chemical-science-pack-2",
+      "sp-electronic-science-pack-2",
+      "sp-geological-science-pack-2",
+      "sp-astronomical-science-pack-2",
+      "sp-material-science-pack-2"
+    },
     unit =
     {
       count = 100,
-      ingredients = {{"sp-automation-science-pack-2", 1}, {"sp-logistic-science-pack-2", 1}, {"sp-chemical-science-pack-2", 1}, {"sp-electronic-science-pack-2", 1}, {"sp-geological-science-pack-2", 1}, {"sp-astronomical-science-pack-2", 1}, {"sp-material-science-pack-2", 1}},
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"sp-astronomical-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1}
+      },
       time = 15
     },
     order = "a-h-a"
@@ -3432,11 +3665,27 @@ data:extend({
         recipe = "sp-geological-science-pack-3"
       },
     },
-    prerequisites = {"sp-automation-science-pack-2", "sp-logistic-science-pack-2", "sp-chemical-science-pack-2", "sp-electronic-science-pack-2", "sp-geological-science-pack-2", "sp-astronomical-science-pack-2", "sp-material-science-pack-2"},
+    prerequisites = {
+      "sp-automation-science-pack-2",
+      "sp-logistic-science-pack-2",
+      "sp-chemical-science-pack-2",
+      "sp-electronic-science-pack-2",
+      "sp-geological-science-pack-2",
+      "sp-astronomical-science-pack-2",
+      "sp-material-science-pack-2"
+    },
     unit =
     {
       count = 100,
-      ingredients = {{"sp-automation-science-pack-2", 1}, {"sp-logistic-science-pack-2", 1}, {"sp-chemical-science-pack-2", 1}, {"sp-electronic-science-pack-2", 1}, {"sp-geological-science-pack-2", 1}, {"sp-astronomical-science-pack-2", 1}, {"sp-material-science-pack-2", 1}},
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"sp-astronomical-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1}
+      },
       time = 15
     },
     order = "a-h-a"
@@ -3453,11 +3702,27 @@ data:extend({
         recipe = "sp-material-science-pack-3"
       },
     },
-    prerequisites = {"sp-automation-science-pack-2", "sp-logistic-science-pack-2", "sp-chemical-science-pack-2", "sp-electronic-science-pack-2", "sp-geological-science-pack-2", "sp-astronomical-science-pack-2", "sp-material-science-pack-2"},
+    prerequisites = {
+      "sp-automation-science-pack-2",
+      "sp-logistic-science-pack-2",
+      "sp-chemical-science-pack-2",
+      "sp-electronic-science-pack-2",
+      "sp-geological-science-pack-2",
+      "sp-astronomical-science-pack-2",
+      "sp-material-science-pack-2"
+    },
     unit =
     {
       count = 100,
-      ingredients = {{"sp-automation-science-pack-2", 1}, {"sp-logistic-science-pack-2", 1}, {"sp-chemical-science-pack-2", 1}, {"sp-electronic-science-pack-2", 1}, {"sp-geological-science-pack-2", 1}, {"sp-astronomical-science-pack-2", 1}, {"sp-material-science-pack-2", 1}},
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"sp-astronomical-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1}
+      },
       time = 15
     },
     order = "a-h-a"
@@ -3474,11 +3739,27 @@ data:extend({
         recipe = "sp-astronomical-science-pack-3"
       },
     },
-    prerequisites = {"sp-automation-science-pack-2", "sp-logistic-science-pack-2", "sp-chemical-science-pack-2", "sp-electronic-science-pack-2", "sp-geological-science-pack-2", "sp-astronomical-science-pack-2", "sp-material-science-pack-2"},
+    prerequisites = {
+      "sp-automation-science-pack-2",
+      "sp-logistic-science-pack-2",
+      "sp-chemical-science-pack-2",
+      "sp-electronic-science-pack-2",
+      "sp-geological-science-pack-2",
+      "sp-astronomical-science-pack-2",
+      "sp-material-science-pack-2"
+    },
     unit =
     {
       count = 100,
-      ingredients = {{"sp-automation-science-pack-2", 1}, {"sp-logistic-science-pack-2", 1}, {"sp-chemical-science-pack-2", 1}, {"sp-electronic-science-pack-2", 1}, {"sp-geological-science-pack-2", 1}, {"sp-astronomical-science-pack-2", 1}, {"sp-material-science-pack-2", 1}},
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1}, 
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"sp-astronomical-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1}
+      },
       time = 15
     },
     order = "a-h-a"
@@ -3495,11 +3776,27 @@ data:extend({
         recipe = "sp-computer-science-pack-3"
       },
     },
-    prerequisites = {"sp-automation-science-pack-2", "sp-logistic-science-pack-2", "sp-chemical-science-pack-2", "sp-electronic-science-pack-2", "sp-geological-science-pack-2", "sp-astronomical-science-pack-2", "sp-material-science-pack-2"},
+    prerequisites = {
+      "sp-automation-science-pack-2",
+      "sp-logistic-science-pack-2",
+      "sp-chemical-science-pack-2",
+      "sp-electronic-science-pack-2",
+      "sp-geological-science-pack-2",
+      "sp-astronomical-science-pack-2",
+      "sp-material-science-pack-2"
+    },
     unit =
     {
       count = 100,
-      ingredients = {{"sp-automation-science-pack-2", 1}, {"sp-logistic-science-pack-2", 1}, {"sp-chemical-science-pack-2", 1}, {"sp-electronic-science-pack-2", 1}, {"sp-geological-science-pack-2", 1}, {"sp-astronomical-science-pack-2", 1}, {"sp-material-science-pack-2", 1}},
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"sp-astronomical-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1}
+      },
       time = 15
     },
     order = "a-h-a"
@@ -3561,18 +3858,20 @@ data.raw.technology["automation-2"].unit.ingredients = {
 }
 
 data.raw.technology["landfill"].prerequisites = {"sp-geological-science-pack-1"}
-data.raw.technology["landfill"].unit = {
-  count = 50,
-  ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}, {"sp-geological-science-pack-1", 1}},
-  time = 15
+data.raw.technology["landfill"].unit.ingredients = {
+  {"basic-tech-card", 1},
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"sp-geological-science-pack-1", 1}
 }
 table.insert(data.raw.technology["landfill"].effects, {type = "unlock-recipe", recipe = "sp-landfill-from-limestone-and-stone"})
 table.insert(data.raw.technology["landfill"].effects, {type = "unlock-recipe", recipe = "sp-landfill-from-limestone"})
 table.insert(data.raw.technology["landfill"].effects, {type = "unlock-recipe", recipe = "sp-landfill-from-iron-ore"})
 
 data.raw.technology["flammables"].prerequisites = {"chemical-science-pack"}
-data.raw.technology["flammables"].unit = {
-  count = 50,
-  ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}, {"chemical-science-pack", 1}},
-  time = 15
+data.raw.technology["flammables"].unit.ingredients = {
+  {"basic-tech-card", 1},
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"chemical-science-pack", 1}
 }
