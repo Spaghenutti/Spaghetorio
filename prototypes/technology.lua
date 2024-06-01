@@ -3541,6 +3541,9 @@ table.insert(data.raw.technology["advanced-material-processing-2"].effects, {typ
 table.insert(data.raw.technology["fluid-handling"].prerequisites, "sp-basic-alloy")
 table.insert(data.raw.technology["fluid-handling"].effects, {type = "unlock-recipe", recipe = "sp-valve"})
 
+table.insert(data.raw.technology["railway"].prerequisites, "sp-geological-science-pack-1")
+table.insert(data.raw.technology["railway"].prerequisites, "sp-material-science-pack-1")
+
 table.insert(data.raw.technology["nuclear-power"].effects, {type = "unlock-recipe", recipe = "sp-reactor-core"})
 table.insert(data.raw.technology["nuclear-power"].effects, {type = "unlock-recipe", recipe = "sp-control-rod"})
 
