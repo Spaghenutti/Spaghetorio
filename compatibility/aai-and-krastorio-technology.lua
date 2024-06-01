@@ -245,16 +245,17 @@ data.raw.technology["kr-fluids-chemistry"].prerequisites = {"logistic-science-pa
 data.raw.technology["kr-fluids-chemistry"].unit = {count = 50, ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}}, time = 15}
 
 data.raw.technology["kr-greenhouse"].prerequisites = {"sp-geological-science-pack-1", "engine"}
-data.raw.technology["kr-greenhouse"].unit = {
-  count = 50,
-  ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}, {"sp-geological-science-pack-1", 1}},
-  time = 15
+data.raw.technology["kr-greenhouse"].unit.ingredients = {
+  {"basic-tech-card", 1},
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"sp-geological-science-pack-1", 1}
 }
-
-data.raw.technology["kr-decorations"].unit = {
-  count = 100,
-  ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}, {"sp-geological-science-pack-1", 1}},
-  time = 15
+data.raw.technology["kr-decorations"].unit.ingredients = {
+  {"basic-tech-card", 1},
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"sp-geological-science-pack-1", 1}
 }
 
 table.insert(data.raw.technology["advanced-electronics"].prerequisites, "sp-electronic-components")
@@ -267,6 +268,8 @@ table.insert(data.raw.technology["advanced-electronics"].effects, {type = "unloc
 
 table.insert(data.raw.technology["kr-automation-core"].prerequisites, "sp-iron-machining")
 table.insert(data.raw.technology["kr-automation-core"].prerequisites, "sp-iron-extruding")
+
+table.insert(data.raw.technology["kr-fluid-excess-handling"].prerequisites, "fluid-handling")
 
 table.insert(data.raw.technology["kr-mineral-water-gathering"].prerequisites, "sp-actuator")
 
@@ -305,4 +308,11 @@ table.insert(data.raw.technology["kr-bio-processing"].effects, {type = "unlock-r
 
 -- aai industry technology changes
 data.raw.technology["engine"].prerequisites = {"sp-steel-machining"}
-data.raw.technology["medium-electric-pole"].prerequisites = {"sp-aluminum-machining"}
+
+data.raw.technology["medium-electric-pole"].prerequisites = {"sp-aluminum-machining", "sp-electronic-science-pack-1"}
+data.raw.technology["medium-electric-pole"].unit.ingredients = {
+  {"basic-tech-card", 1},
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"sp-electronic-science-pack-1", 1}
+}

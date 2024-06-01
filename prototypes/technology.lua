@@ -1224,7 +1224,7 @@ data:extend({
       },
       -- TODO: Add GPU
     },
-    prerequisites = {"sp-chemical-science-pack-2"},
+    prerequisites = {"sp-chemical-science-pack-2", "sp-heatsink"},
     unit =
     {
       count = 100,
@@ -2465,7 +2465,7 @@ data:extend({
         recipe = "sp-vacuum-tube"
       },
     },
-    prerequisites = {"sp-relay"},
+    prerequisites = {"sp-relay", "sp-heatsink"},
     unit =
     {
       count = 100,
@@ -3062,6 +3062,7 @@ data:extend({
   },
   -- MARK: Science packs
   {
+    -- Finalized
     type = "technology",
     name = "sp-electronic-science-pack-1",  -- #ForRegEx# - technology
     icon_size = 256,
@@ -3104,6 +3105,7 @@ data:extend({
     order = "a-h-a"
   },
   {
+    -- Finalized
     type = "technology",
     name = "sp-material-science-pack-1",  -- #ForRegEx# - technology
     icon_size = 256,
@@ -3546,6 +3548,17 @@ table.insert(data.raw.technology["railway"].prerequisites, "sp-material-science-
 
 table.insert(data.raw.technology["nuclear-power"].effects, {type = "unlock-recipe", recipe = "sp-reactor-core"})
 table.insert(data.raw.technology["nuclear-power"].effects, {type = "unlock-recipe", recipe = "sp-control-rod"})
+
+table.insert(data.raw.technology["automation-2"].prerequisites, "sp-heatsink")
+table.insert(data.raw.technology["automation-2"].prerequisites, "sp-material-science-pack-1")
+table.insert(data.raw.technology["automation-2"].prerequisites, "sp-electronic-science-pack-1")
+data.raw.technology["automation-2"].unit.ingredients = {
+  {"basic-tech-card", 1},
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"sp-electronic-science-pack-1", 1},
+  {"sp-material-science-pack-1", 1}
+}
 
 data.raw.technology["landfill"].prerequisites = {"sp-geological-science-pack-1"}
 data.raw.technology["landfill"].unit = {
