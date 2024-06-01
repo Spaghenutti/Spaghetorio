@@ -3821,7 +3821,7 @@ table.insert(data.raw.technology["fast-inserter"].prerequisites, "sp-ball-bearin
 
 table.insert(data.raw.technology["oil-processing"].prerequisites, "sp-stainless-steel-processing")
 
-data.raw.technology["chemical-science-pack"].prerequisites = {"sp-aluminum-processing", "plastics", "sulfur-processing"}
+data.raw.technology["chemical-science-pack"].prerequisites = {"plastics", "sulfur-processing"}
 
 data.raw.technology["circuit-network"].prerequisites = {"sp-aluminum-processing", "sp-aluminum-treatment", "sp-vinyl-chloride", "sp-electronic-components", "sp-magnet"}
 

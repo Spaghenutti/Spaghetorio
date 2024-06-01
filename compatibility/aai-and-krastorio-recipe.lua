@@ -1146,12 +1146,12 @@ util.change_recipe_ingredients("kr-singularity-beacon",
   {{"steel-plate", 69}},
   69,
   69)
+util.change_recipe_ingredients("biusart-lab",
+  {{"steel-plate", 69}},
+  {{"steel-plate", 69}},
+  69,
+  69)
 -- Why cant i do this here???
--- util.change_recipe_ingredients("kr-advanced-lab",
---   {{"steel-plate", 69}},
---   {{"steel-plate", 69}},
---   69,
---   69)
 -- util.change_recipe_ingredients("kr-air-filter",
 --   {{"steel-plate", 69}},
 --   {{"steel-plate", 69}},

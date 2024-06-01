@@ -1963,7 +1963,7 @@ data:extend({
     name = "sp-heatsink",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
-    energy_required = 3,  -- time in seconds to make the item
+    energy_required = 2,  -- time in seconds to make the item
     ingredients = {
       {type = "item", name = "sp-copper-tube", amount = 2},
       {type = "item", name = "sp-aluminum-frame", amount = 1},
