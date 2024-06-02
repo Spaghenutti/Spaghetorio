@@ -251,6 +251,8 @@ data.raw.technology["kr-greenhouse"].unit.ingredients = {
   {"basic-tech-card", 1},
   {"automation-science-pack", 1},
   {"logistic-science-pack", 1},
+  {"sp-material-science-pack-1", 1},
+  {"sp-electronic-science-pack-1", 1},
   {"sp-geological-science-pack-1", 1}
 }
 data.raw.technology["kr-decorations"].unit.ingredients = {
@@ -284,6 +286,8 @@ table.insert(data.raw.technology["kr-stone-processing"].effects, {type = "unlock
 table.insert(data.raw.technology["kr-lithium-processing"].effects, {type = "unlock-recipe", recipe = "sp-lithium-oxide"})
 
 table.insert(data.raw.technology["kr-silicon-processing"].effects, {type = "unlock-recipe", recipe = "sp-silica"})
+table.insert(data.raw.technology["kr-silicon-processing"].unit.ingredients, {"sp-material-science-pack-1", 1})
+table.insert(data.raw.technology["kr-silicon-processing"].unit.ingredients, {"sp-electronic-science-pack-1", 1})
 
 table.insert(data.raw.technology["kr-enriched-ores"].effects, {type = "unlock-recipe", recipe = "sp-enriched-aluminum"})
 table.insert(data.raw.technology["kr-enriched-ores"].effects, {type = "unlock-recipe", recipe = "sp-alumina-from-enriched-aluminum"})

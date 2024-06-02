@@ -7,6 +7,8 @@
     "dependencies": ["aai-industry >= 0.5.22",
                      "Krastorio2 >= 1.3.23",
                      "base >= 1.1.0",
+                     "? jetpack >= 0.3.14",
+                     "? LogisticTrainNetwork >= 1.18.6",
                      "(?) alien-biomes >= 0.6.8",
                      "! Custom-Production-UI-Fixed >= 0.5.22"]
 }

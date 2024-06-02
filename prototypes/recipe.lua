@@ -1147,13 +1147,13 @@ data:extend({
     name = "sp-solder",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
-    energy_required = 3.2,  -- time in seconds to make the item
+    energy_required = 5,  -- time in seconds to make the item
     ingredients = {
-      {type = "item", name = "sp-lead-slab", amount = 1},
-      {type = "item", name = "sp-tin-ingot", amount = 3}
+      {type = "item", name = "sp-lead-slab", amount = 2},
+      {type = "item", name = "sp-tin-ingot", amount = 5}
     },
     results = {
-      {type = "item", name = "sp-solder", amount = 6}
+      {type = "item", name = "sp-solder", amount = 10}
     }
   },
   {
@@ -2294,8 +2294,7 @@ data:extend({
       {type = "item", name = "sp-bolts", amount = 8},
       {type = "item", name = "sp-connecting-rod", amount = 6},
       {type = "item", name = "sp-spring", amount = 12},
-      {type = "item", name = "sp-machined-parts", amount = 8},
-      {type = "item", name = "sp-ball-bearing", amount = 4}
+      {type = "item", name = "sp-machined-parts", amount = 8}
     },
     results = {
       {type = "item", name = "sp-train-boige", amount = 1}
