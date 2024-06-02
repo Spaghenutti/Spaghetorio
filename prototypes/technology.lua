@@ -680,7 +680,7 @@ data:extend({
         recipe = "sp-nickel-ingot"
       }
     },
-    prerequisites = {"sp-material-science-pack-1"},
+    prerequisites = {"advanced-material-processing"},
     unit =
     {
       count = 50,
@@ -858,36 +858,11 @@ data:extend({
   },
   {
     type = "technology",
-    name = "sp-flange",  -- #ForRegEx# - technology
-    icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/flange.png",
-    effects =
-    {
-      {
-        type = "unlock-recipe",
-        recipe = "sp-flange"
-      },
-    },
-    prerequisites = {"sp-stainless-steel-processing"},
-    unit =
-    {
-      count = 100,
-      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
-      time = 15
-    },
-    order = "a-h-a"
-  },
-  {
-    type = "technology",
     name = "sp-pressure-fluid",  -- #ForRegEx# - technology
     icon_size = 256,
     icon = "__Spaghenutti__/graphics/hr-icons/pressure-tube.png",
     effects =
     {
-      {
-        type = "unlock-recipe",
-        recipe = "sp-flange"
-      },
       {
         type = "unlock-recipe",
         recipe = "sp-pressure-tank"
@@ -897,7 +872,7 @@ data:extend({
         recipe = "sp-pressure-tube"
       },
     },
-    prerequisites = {"sp-nickel-alloys", "sp-flange"},
+    prerequisites = {"sp-nickel-alloys", "oil-processing"},
     unit =
     {
       count = 100,
@@ -923,11 +898,17 @@ data:extend({
         recipe = "sp-sinter-filter"
       },
     },
-    prerequisites = {"sp-stainless-steel-processing", "plastics", "sp-basic-alloy"},
+    prerequisites = {"chemical-science-pack"},
     unit =
     {
       count = 100,
-      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      ingredients = {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"sp-electronic-science-pack-1", 1},
+        {"sp-material-science-pack-1", 1}
+      },
       time = 15
     },
     order = "a-h-a"
@@ -1841,7 +1822,13 @@ data:extend({
     unit =
     {
       count = 100,
-      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      ingredients = {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"sp-electronic-science-pack-1", 1},
+        {"sp-material-science-pack-1", 1}
+      },
       time = 15
     },
     order = "a-h-a"
@@ -1870,7 +1857,13 @@ data:extend({
     unit =
     {
       count = 100,
-      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      ingredients = {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"sp-electronic-science-pack-1", 1},
+        {"sp-material-science-pack-1", 1}
+      },
       time = 15
     },
     order = "a-h-a"
@@ -2677,6 +2670,7 @@ data:extend({
     order = "a-h-a"
   },
   {
+    -- Finalized
     type = "technology",
     name = "sp-vinyl-chloride",  -- #ForRegEx# - technology
     icon_size = 256,
@@ -2687,12 +2681,22 @@ data:extend({
         type = "unlock-recipe",
         recipe = "sp-vinyl-chloride"
       },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-insulated-wire"
+      },
     },
-    prerequisites = {"chemical-science-pack"},
+    prerequisites = {"sp-rubber"},
     unit =
     {
       count = 100,
-      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      ingredients = {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"sp-electronic-science-pack-1", 1},
+        {"sp-material-science-pack-1", 1}
+      },
       time = 15
     },
     order = "a-h-a"
@@ -3902,6 +3906,8 @@ data.raw.technology["landfill"].unit.ingredients = {
 table.insert(data.raw.technology["landfill"].effects, {type = "unlock-recipe", recipe = "sp-landfill-from-limestone-and-stone"})
 table.insert(data.raw.technology["landfill"].effects, {type = "unlock-recipe", recipe = "sp-landfill-from-limestone"})
 table.insert(data.raw.technology["landfill"].effects, {type = "unlock-recipe", recipe = "sp-landfill-from-iron-ore"})
+
+table.insert(data.raw.technology["oil-processing"].effects, {type = "unlock-recipe", recipe = "sp-flange"})
 
 table.insert(data.raw.technology["solar-energy"].prerequisites, "sp-phosphorus-processing")
 data.raw.technology["solar-energy"].unit.ingredients = {

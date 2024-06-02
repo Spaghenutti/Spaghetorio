@@ -454,10 +454,16 @@ util.change_recipe_ingredients("assembling-machine-3",
   {{"advanced-circuit", 32}, {"electric-engine-unit", 12}, {"concrete", 60}, {"steel-plate", 50}, {"sp-bolts", 60}, {"sp-heavy-gearbox", 12}, {"sp-optical-sensor", 20}, {"sp-titanium-frame", 30}},
   20,
   30)
+-- aai {"engine-unit", 5}, Krastorio {"steel-gear-wheel", 8}
+util.change_recipe_ingredients("pumpjack",
+  {{"steel-beam", 24}, {"pipe", 20}, {"stone-brick", 12}, {"sp-valve", 8}, {"sp-flange", 6}},
+  {{"steel-beam", 40}, {"pipe", 50}, {"stone-brick", 20}, {"sp-valve", 12}, {"sp-flange", 12}},
+  16,
+  24)
 -- Base: {"sp-glass", 10}; Krastorio {"glass", 10}
 util.change_recipe_ingredients("oil-refinery",
-  {{"steel-plate", 30}, {"sp-stainless-steel", 12}, {"pipe", 30}, {"stone-brick", 20}, {"electric-motor", 5}, {"sp-bolts", 40}, {"sp-valve", 12}},
-  {{"steel-plate", 50}, {"sp-stainless-steel", 20}, {"pipe", 50}, {"stone-brick", 30}, {"electric-motor", 10}, {"sp-bolts", 60}, {"sp-valve", 20}},
+  {{"steel-plate", 30}, {"sp-stainless-steel", 12}, {"pipe", 30}, {"stone-brick", 20}, {"electric-motor", 5}, {"sp-bolts", 40}, {"sp-valve", 12}, {"sp-flange", 10}},
+  {{"steel-plate", 50}, {"sp-stainless-steel", 20}, {"pipe", 50}, {"stone-brick", 30}, {"electric-motor", 10}, {"sp-bolts", 60}, {"sp-valve", 20}, {"sp-flange", 20}},
   30,
   45)
 util.change_recipe_ingredients("centrifuge",

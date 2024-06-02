@@ -277,7 +277,7 @@ table.insert(data.raw.technology["kr-fluid-excess-handling"].prerequisites, "flu
 
 table.insert(data.raw.technology["kr-mineral-water-gathering"].prerequisites, "sp-actuator")
 
-table.insert(data.raw.technology["kr-steel-fluid-handling"].prerequisites, "sp-flange")
+table.insert(data.raw.technology["kr-steel-fluid-handling"].prerequisites, "oil-processing")
 
 table.insert(data.raw.technology["kr-steel-fluid-tanks"].prerequisites, "sp-brass")
 

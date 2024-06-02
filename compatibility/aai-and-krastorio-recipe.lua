@@ -884,6 +884,8 @@ table.insert(data.raw.recipe["train-stop"].ingredients, {"steel-beam", 8})
 table.insert(data.raw.recipe["fluid-wagon"].ingredients, {"steel-beam", 8})
 table.insert(data.raw.recipe["artillery-wagon"].ingredients, {"automation-core", 8})
 table.insert(data.raw.recipe["personal-roboport-equipment"].ingredients, {"automation-core", 5})
+table.insert(data.raw.recipe["pumpjack"].ingredients, {"engine-unit", 5})
+table.insert(data.raw.recipe["pumpjack"].ingredients, {"steel-gear-wheel", 8})
 table.insert(data.raw.recipe["oil-refinery"].ingredients, {"glass", 20})
 table.insert(data.raw.recipe["satellite"].ingredients, {"lithium-sulfur-battery", 20})
 
