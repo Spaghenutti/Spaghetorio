@@ -219,11 +219,18 @@ table.insert(data.raw.technology["kr-steam-engine"].prerequisites, "sp-copper-ma
 
 table.insert(data.raw.technology["kr-fluids-chemistry"].prerequisites, "kr-basic-fluid-handling") 
 
-data.raw.technology["electronics"].prerequisites = {"automation", "automation-science-pack", "sp-basic-solder"}
+data.raw.technology["electronics"].prerequisites = {
+  "automation",
+  "automation-science-pack",
+  "sp-basic-solder"
+}
 
 data.raw.technology["kr-crusher"].prerequisites = {"electricity"}
 data.raw.technology["kr-crusher"].unit = {count = 30,
-  ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}},
+  ingredients = {
+    {"basic-tech-card", 1},
+    {"automation-science-pack", 1}
+  },
   time = 30
 }
 
@@ -244,9 +251,16 @@ data.raw.technology["landfill"].effects = {
 }
 
 data.raw.technology["kr-fluids-chemistry"].prerequisites = {"logistic-science-pack", "engine"}
-data.raw.technology["kr-fluids-chemistry"].unit = {count = 50, ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}}, time = 15}
+data.raw.technology["kr-fluids-chemistry"].unit.ingredients = {
+  {"basic-tech-card", 1},
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1}
+}
 
-data.raw.technology["kr-greenhouse"].prerequisites = {"sp-geological-science-pack-1", "engine"}
+data.raw.technology["kr-greenhouse"].prerequisites = {
+  "sp-geological-science-pack-1",
+  "engine"
+}
 data.raw.technology["kr-greenhouse"].unit.ingredients = {
   {"basic-tech-card", 1},
   {"automation-science-pack", 1},
@@ -259,9 +273,19 @@ data.raw.technology["kr-decorations"].unit.ingredients = {
   {"basic-tech-card", 1},
   {"automation-science-pack", 1},
   {"logistic-science-pack", 1},
+  {"sp-material-science-pack-1", 1},
+  {"sp-electronic-science-pack-1", 1},
   {"sp-geological-science-pack-1", 1}
 }
 
+data.raw.technology["kr-atmosphere-condensation"].prerequisites = {"sp-geological-science-pack-1"}
+data.raw.technology["kr-atmosphere-condensation"].unit.ingredients = {
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"sp-material-science-pack-1", 1},
+  {"sp-electronic-science-pack-1", 1},
+  {"sp-geological-science-pack-1", 1}
+}
 table.insert(data.raw.technology["advanced-electronics"].prerequisites, "sp-electronic-components")
 table.insert(data.raw.technology["advanced-electronics"].effects, {type = "unlock-recipe", recipe = "sp-separate-electronic-components"})
 table.insert(data.raw.technology["advanced-electronics"].effects, {type = "unlock-recipe", recipe = "sp-basic-circuit-board"})

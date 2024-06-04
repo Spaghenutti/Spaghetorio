@@ -1,13 +1,5 @@
 local util = require("data-util")
 
--- Order of base science
--- automation-science-pack
--- logistic-science-pack
--- military-science-pack
--- chemical-science-pack
--- production-science-pack
--- utility-science-pack
-
 data:extend({
   {
     type = "technology",
@@ -1504,6 +1496,31 @@ data:extend({
   },
   {
     type = "technology",
+    name = "sp-plate-heat-exchanger",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghenutti__/graphics/hr-icons/plate-heat-exchanger.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-plate-heat-exchanger"
+      },
+    },
+    prerequisites = {"sp-heatsink"},
+    unit =
+    {
+      count = 100,
+      ingredients = {
+        {"basic-tech-card", 1},
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1}
+      },
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
     name = "sp-cooling",  -- #ForRegEx# - technology
     icon_size = 256,
     icon = "__Spaghenutti__/graphics/hr-icons/coolant.png",
@@ -1521,12 +1538,8 @@ data:extend({
         type = "unlock-recipe",
         recipe = "sp-cryostat"
       },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-plate-heat-exchanger"
-      },
     },
-    prerequisites = {"production-science-pack"},
+    prerequisites = {"production-science-pack", "sp-plate-heat-exchanger"},
     unit =
     {
       count = 100,

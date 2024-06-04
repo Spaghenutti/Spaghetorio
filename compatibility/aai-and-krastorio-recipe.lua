@@ -1108,6 +1108,11 @@ util.change_recipe_ingredients("kr-bio-lab",
   {{"steel-plate", 69}},
   69,
   69)
+util.change_recipe_ingredients("kr-atmospheric-condenser",
+  {{"sp-stainless-steel", 30}, {"electronic-circuit", 12}, {"sp-valve", 16}, {"sp-copper-tube", 30}, {"stone-brick", 20}, {"sp-plate-heat-exchanger", 10}, {"sp-bolts", 50}},
+  {{"sp-stainless-steel", 40}, {"electronic-circuit", 20}, {"sp-valve", 24}, {"sp-copper-tube", 50}, {"stone-brick", 30}, {"sp-plate-heat-exchanger", 20}, {"sp-bolts", 60}},
+  20,
+  30)
 util.change_recipe_ingredients("kr-fuel-refinery",
   {{"steel-plate", 69}},
   {{"steel-plate", 69}},
