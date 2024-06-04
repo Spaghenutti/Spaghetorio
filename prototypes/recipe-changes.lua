@@ -50,6 +50,11 @@ util.change_recipe_ingredients("steel-plate",
   {{"iron-plate", 6}, {"sp-graphite", 2}},
   nil,
   nil)
+util.change_recipe_ingredients("low-density-structure",
+  {{"sp-titanium-frame", 1}, {"sp-composites", 2}, {"sp-carbon-fiber", 5}},
+  {{"sp-titanium-frame", 2}, {"sp-composites", 3}, {"sp-carbon-fiber", 6}},
+  16,
+  20)
 -- Base: {"sp-sand", 5}; Krastorio {"sand", 5}
 util.change_recipe_ingredients("concrete",
   {{"sp-cement", 10}, {type="fluid", name="water", amount=100}},

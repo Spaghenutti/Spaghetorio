@@ -312,6 +312,8 @@ table.insert(data.raw.technology["kr-lithium-sulfur-battery"].effects, {type = "
 table.insert(data.raw.technology["kr-bio-processing"].effects, {type = "unlock-recipe", recipe = "sp-urea"})
 table.insert(data.raw.technology["kr-bio-processing"].effects, {type = "unlock-recipe", recipe = "sp-wood-from-urea"})
 
+data.raw.technology["kr-electric-mining-drill-mk2"].prerequisites = {"sp-titanium-alloys"}
+
 -- aai industry technology changes
 data.raw.technology["engine"].prerequisites = {"sp-steel-machining"}
 

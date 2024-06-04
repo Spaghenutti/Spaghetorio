@@ -2026,13 +2026,31 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "sp-catalyst-from-palladium",  -- #ForRegEx# - recipe
+    icons = util.overlay_small_icon("__Spaghenutti__/graphics/icons/catalyst.png", 64,
+                                    "__Spaghenutti__/graphics/icons/palladium.png", 64),
+    category = "crafting",
+    enabled = false,
+    energy_required = 2,  -- time in seconds to make the item
+    ingredients = {
+      {type = "item", name = "sp-stainless-steel", amount = 1},
+      {type = "item", name = "sp-palladium", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-catalyst", amount = 3}
+    }
+  },
+  {
+    type = "recipe",
     name = "sp-catalyst-from-liquid-sodium",  -- #ForRegEx# - recipe
     icons = util.overlay_small_icon("__Spaghenutti__/graphics/icons/catalyst.png", 64,
                                     "__Spaghenutti__/graphics/icons/liquid-sodium.png", 64),
     category = "chemistry",
     enabled = false,
-    energy_required = 3.2,  -- time in seconds to make the item
+    energy_required = 3,  -- time in seconds to make the item
     ingredients = {
+      {type = "item", name = "sp-graphite", amount = 2},
+      {type = "item", name = "sp-aluminum-sheet", amount = 2},
       {type = "fluid", name = "sp-liquid-sodium", amount = 20},
       {type = "fluid", name = "sp-propylene", amount = 40}
     },
@@ -2398,6 +2416,7 @@ data:extend({
     category = "chemistry",
     enabled = false,
     energy_required = 4.4,  -- time in seconds to make the item
+    hide_from_player_crafting = true,
     ingredients = {
       {type = "fluid", name = "petroleum-gas", amount = 100},
       {type = "item", name = "sp-sinter-filter", amount = 1},
@@ -2413,6 +2432,7 @@ data:extend({
     category = "chemistry",
     enabled = false,
     energy_required = 3.6,  -- time in seconds to make the item
+    hide_from_player_crafting = true,
     ingredients = {
       {type = "fluid", name = "sp-benzene", amount = 100},
       {type = "fluid", name = "water", amount = 1},
@@ -4958,7 +4978,7 @@ data:extend({
     name = "sp-sodium-and-chlorine",  -- #ForRegEx# - recipe
     -- Update icons here, search: "-- Add acion changes here"
     icons = util.combine_two_icons("__Spaghenutti__/graphics/icons/sodium.png", 64, nil,
-                                   "__Spaghenutti__/graphics/dummy/dummy-fluid-sp-chlorine.png", 64, nil),
+                                   "__Krastorio2Assets__/icons/fluids/chlorine.png", 64, nil),
     icon_size = 256,
     scale = 0.25,
     category = "chemistry",
@@ -5288,7 +5308,7 @@ data:extend({
     name = "sp-sodium-hydroxide-from-salt",  -- #ForRegEx# - recipe
     -- Update icons here, search: "-- Add acion changes here"
     icons = util.combine_two_icons("__Spaghenutti__/graphics/icons/sodium-hydroxide.png", 64, nil,
-                                   "__Spaghenutti__/graphics/dummy/dummy-fluid-sp-chlorine.png", 64, nil),
+                                   "__Krastorio2Assets__/icons/fluids/chlorine.png", 64, nil),
     icon_size = 64,
     scale = 0.25,
     category = "chemistry",

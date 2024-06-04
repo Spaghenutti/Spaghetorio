@@ -1,8 +1,8 @@
 local util = require("data-util")
 
 util.change_recipe_ingredients("logistic-train-stop",
-  {{"train-stop", 1}, {"small-lamp", 1}, {"copper-cable", 20}, {"electronic-circuit", 10}},
-  {{"train-stop", 1}, {"small-lamp", 1}, {"copper-cable", 30}, {"electronic-circuit", 15}},
+  {{"train-stop", 1}, {"small-lamp", 1}, {"sp-insulated-wire", 20}, {"electronic-circuit", 10}},
+  {{"train-stop", 1}, {"small-lamp", 1}, {"sp-insulated-wire", 30}, {"electronic-circuit", 15}},
   3,
   4)
 

@@ -16,7 +16,7 @@ data:extend({
     order="a-b-a",
     map_color = {r=1.0, g=0.2, b=0.2},
     minable = {
-      hardness = 1,
+      hardness = 2,
       mining_particle = "aluminum-ore-particle",
       mining_time = 1,
       result = "sp-aluminum-ore"
@@ -122,7 +122,7 @@ data:extend({
     autoplace = resource_autoplace.resource_autoplace_settings({
       name = "sp-limestone",
       order = "d",
-      base_density = 1,
+      base_density = 0.5,
       base_spots_per_km2 = 0.75,
       has_starting_area_placement = false,
       random_spot_size_minimum = 0.25,
@@ -160,7 +160,7 @@ data:extend({
     order="a-b-a",
     map_color = {r=0.4, g=0.3, b=0.3},
     minable = {
-      hardness = 1,
+      hardness = 3,
       mining_particle = "titanium-ore-particle",
       mining_time = 1,
       result = "sp-titanium-ore"
@@ -259,7 +259,9 @@ data:extend({
       hardness = 1,
       mining_particle = "nickel-ore-particle",
       mining_time = 1,
-      result = "sp-nickel-ore"
+      result = "sp-nickel-ore",
+      fluid_amount = 50,
+      required_fluid = "water",
       },
     collision_box = {{ -0.1, -0.1}, {0.1, 0.1}},
     selection_box = {{ -0.5, -0.5}, {0.5, 0.5}},
@@ -314,7 +316,7 @@ data:extend({
     autoplace = resource_autoplace.resource_autoplace_settings({
       name = "sp-spodumene",
       order = "d",
-      base_density = 1,
+      base_density = 0.8,
       base_spots_per_km2 = 0.75,
       has_starting_area_placement = false,
       random_spot_size_minimum = 0.25,
@@ -352,7 +354,7 @@ data:extend({
     order="a-b-a",
     map_color = {r=0.1, g=0.9, b=0.7},
     minable = {
-      hardness = 1,
+      hardness = 1.2,
       mining_particle = "tinstone-particle",
       mining_time = 1,
       result = "sp-tinstone"
@@ -400,7 +402,7 @@ data:extend({
     order="a-b-a",
     map_color = {r=0.35, g=0.15, b=0},
     minable = {
-      hardness = 1,
+      hardness = 4,
       mining_particle = "tungsten-ore-particle",
       mining_time = 1,
       result = "sp-tungsten-ore"
@@ -448,7 +450,7 @@ data:extend({
     order="a-b-a",
     map_color = {r=0, g=0.25, b=1},
     minable = {
-      hardness = 1,
+      hardness = 2,
       mining_particle = "zinc-ore-particle",
       mining_time = 1,
       result = "sp-zinc-ore"
@@ -496,7 +498,7 @@ data:extend({
     order="a-b-a",
     map_color = {r=0.8, g=0.65, b=0},
     minable = {
-      hardness = 1,
+      hardness = 2.5,
       mining_particle = "zirconium-ore-particle",
       mining_time = 1,
       result = "sp-zirconium-ore"

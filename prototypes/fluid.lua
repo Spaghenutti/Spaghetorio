@@ -322,7 +322,7 @@ if not mods["Krastorio2"] then
       heat_capacity = "0.1KJ",
       base_color = {r=0.58, g=0.95, b=0.5},
       flow_color = {r=0.58, g=0.95, b=0.5},
-      icon = "__Spaghenutti__/graphics/dummy/dummy-fluid-sp-chlorine.png",
+      icon = "__Krastorio2Assets__/icons/fluids/chlorine.png",
       icon_size = 64,
     icon_mipmaps = 4,
       order = "a[fluid]-f[chlorine]"
