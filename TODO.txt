@@ -53,12 +53,24 @@ Low prio
   - Why cant I align the 3rd and 4th tier of tech cards... why.....????
   - Why have some recipes not have a dropshadow???? select sp-tin-and-lead on furnace
   - Add subgroups to fluids
+  - Add ceramic matrix components
+  - Add compressor
+  - Add seal
+  - Add bearing
+  - Add more than 3 recipes to catalysts
+  - Fix vynil chloride icon
+  - Replace ore icons with factorio base icons
+  - Add crushing for ores before smelting. Use icons used for ores by midjourney
+  - Add different types of dirty water
+  - Dirty water can be filtered or evaporated. Add corresponding recipes for filtering and evaporating.
+  - Add crushing recipes
 
 
 Future changes
   - Move incopatibel recipes outside of "not mods["Krastorio2"] then" statement and update them with correct values inside the statement
   - Support text plates mod
   - Support jetpack mod
+  - Support LTN mod
 
 Notes:
   -
