@@ -274,29 +274,29 @@ util.change_recipe_ingredients("roboport",
   30)
 data.raw.recipe["red-wire"].category = "crafting-with-fluid"
 util.change_recipe_ingredients("red-wire",
-{{"copper-cable", 1}, {type = "fluid", name = "sp-vinyl-chloride", amount = 5}},
-{{"copper-cable", 1}, {type = "fluid", name = "sp-vinyl-chloride", amount = 10}},
+{{"sp-insulated-wire", 1}, {"sp-transistor", 1}, {type = "fluid", name = "sp-vinyl-chloride", amount = 5}},
+{{"sp-insulated-wire", 1}, {"sp-transistor", 2}, {type = "fluid", name = "sp-vinyl-chloride", amount = 10}},
   0.5,
   0.5)
 data.raw.recipe["green-wire"].category = "crafting-with-fluid"
 util.change_recipe_ingredients("green-wire",
-  {{"copper-cable", 1}, {type = "fluid", name = "sp-vinyl-chloride", amount = 5}},
-  {{"copper-cable", 1}, {type = "fluid", name = "sp-vinyl-chloride", amount = 10}},
+  {{"sp-insulated-wire", 1}, {"sp-transistor", 1}, {type = "fluid", name = "sp-vinyl-chloride", amount = 5}},
+  {{"sp-insulated-wire", 1}, {"sp-transistor", 2}, {type = "fluid", name = "sp-vinyl-chloride", amount = 10}},
   0.5,
   0.5)
 util.change_recipe_ingredients("arithmetic-combinator",
-  {{"copper-cable", 5}, {"electronic-circuit", 2}, {"sp-transistor", 20}, {"sp-solder", 2}, {"sp-resistor", 8}, {"sp-anodized-aluminum", 3}},
-  {{"copper-cable", 8}, {"electronic-circuit", 5}, {"sp-transistor", 50}, {"sp-solder", 4}, {"sp-resistor", 12}, {"sp-anodized-aluminum", 5}},
-  5,
-  8)
+  {{"sp-insulated-wire", 5}, {"electronic-circuit", 2}, {"sp-transistor", 20}, {"sp-solder", 2}, {"sp-resistor", 8}, {"sp-anodized-aluminum", 3}},
+  {{"sp-insulated-wire", 8}, {"electronic-circuit", 5}, {"sp-transistor", 50}, {"sp-solder", 4}, {"sp-resistor", 12}, {"sp-anodized-aluminum", 5}},
+  3,
+  5)
 util.change_recipe_ingredients("decider-combinator",
-  {{"copper-cable", 5}, {"electronic-circuit", 2}, {"sp-solder", 2}, {"sp-resistor", 8}, {"sp-anodized-aluminum", 3}},
-  {{"copper-cable", 8}, {"electronic-circuit", 5}, {"sp-solder", 3}, {"sp-resistor", 12}, {"sp-anodized-aluminum", 5}},
-  4,
-  8)
+  {{"sp-insulated-wire", 5}, {"electronic-circuit", 2}, {"sp-solder", 2}, {"sp-resistor", 8}, {"sp-anodized-aluminum", 3}},
+  {{"sp-insulated-wire", 8}, {"electronic-circuit", 5}, {"sp-solder", 3}, {"sp-resistor", 12}, {"sp-anodized-aluminum", 5}},
+  3,
+  5)
 util.change_recipe_ingredients("constant-combinator",
-  {{"copper-cable", 2}, {"electronic-circuit", 2}, {"sp-anodized-aluminum", 2}},
-  {{"copper-cable", 4}, {"electronic-circuit", 5}, {"sp-anodized-aluminum", 3}},
+  {{"sp-insulated-wire", 2}, {"electronic-circuit", 2}, {"sp-capacitor", 1}, {"sp-anodized-aluminum", 2}},
+  {{"sp-insulated-wire", 4}, {"electronic-circuit", 5}, {"sp-capacitor", 2}, {"sp-anodized-aluminum", 3}},
   2,
   3)
 util.change_recipe_ingredients("power-switch",

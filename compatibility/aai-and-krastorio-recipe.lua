@@ -10,7 +10,7 @@ data:extend({
     category = "crushing",
     subgroup = "processed-resource",
     enabled = false,
-    energy_required = 1,  -- time in seconds to make the item
+    energy_required = 1,
     ingredients = {
       {type = "item", name = "coal", amount = 3}
     },
@@ -27,7 +27,7 @@ data:extend({
     category = "crushing",
     subgroup = "processed-resource",
     enabled = false,
-    energy_required = 0.8,  -- time in seconds to make the item
+    energy_required = 0.8,
     ingredients = {
       {type = "item", name = "coke", amount = 1}
     },
@@ -48,7 +48,7 @@ data:extend({
     category = "chemistry",
     subgroup = "raw-resource",
     enabled = false,
-    energy_required = 3.2,  -- time in seconds to make the item
+    energy_required = 3.2,
     ingredients = {
       {type = "item", name = "rare-metals", amount = 2}
     },
@@ -69,7 +69,7 @@ data:extend({
     category = "electrolysis",
     subgroup = "raw-resource",
     enabled = false,
-    energy_required = 6,  -- time in seconds to make the item
+    energy_required = 6,
     ingredients = {
       {type = "fluid", name = "heavy-water", amount = 50},
     },
@@ -85,7 +85,7 @@ data:extend({
                                     "__Spaghenutti__/graphics/icons/urea.png", 64),
     category = "smelting",
     enabled = false,
-    energy_required = 75,  -- time in seconds to make the item
+    energy_required = 75,
     ingredients = {
       {type = "item", name = "sp-urea", amount = 1},
       {type = "item", name = "landfill", amount = 3},
@@ -100,7 +100,7 @@ data:extend({
     name = "sp-xenon-from-atmosphere",  -- #ForRegEx# - recipe
     category = "atmosphere-condensation",
     enabled = false,
-    energy_required = 10,  -- time in seconds to make the item
+    energy_required = 10,
     ingredients = {},
     results = {
       {type = "fluid", name = "sp-xenon", amount = 1}
@@ -111,7 +111,7 @@ data:extend({
     name = "sp-helium-from-atmosphere",  -- #ForRegEx# - recipe
     category = "atmosphere-condensation",
     enabled = false,
-    energy_required = 1,  -- time in seconds to make the item
+    energy_required = 1,
     ingredients = {},
     results = {
       {type = "fluid", name = "sp-helium", amount = 1}
@@ -122,7 +122,7 @@ data:extend({
     name = "sp-glass-from-calcium",  -- #ForRegEx# - recipe
     category = "smelting",
     enabled = false,
-    energy_required = 2.4,  -- time in seconds to make the item
+    energy_required = 2.4,
     ingredients = {
       {type = "item", name = "sand", amount = 3},
       {type = "item", name = "sp-calcium", amount = 1}
@@ -142,7 +142,7 @@ data:extend({
     category = "crafting",
     subgroup = "electronic-optical-component",
     enabled = false,
-    energy_required = 3,  -- time in seconds to make the item
+    energy_required = 3,
     ingredients = {
       {type = "item", name = "electronic-components", amount = 1},
     },
@@ -165,7 +165,7 @@ data:extend({
     category = "chemistry",
     subgroup = "enriched-resource",
     enabled = false,
-    energy_required = 2,  -- time in seconds to make the item
+    energy_required = 2,
     ingredients = {
       {type = "item", name = "sp-aluminum-ore", amount = 10},
       {type = "fluid", name = "chlorine", amount = 2},
@@ -183,7 +183,7 @@ data:extend({
                                     "__Spaghenutti__/graphics/icons/enriched-aluminum-1.png", 64),
     category = "smelting",
     enabled = false,
-    energy_required = 3,  -- time in seconds to make the item
+    energy_required = 3,
     ingredients = {
       {type = "item", name = "sp-enriched-aluminum", amount = 2}
     },
@@ -200,7 +200,7 @@ data:extend({
     category = "chemistry",
     subgroup = "enriched-resource",
     enabled = false,
-    energy_required = 2,  -- time in seconds to make the item
+    energy_required = 2,
     ingredients = {
       {type = "item", name = "sp-chromite", amount = 10},
       {type = "fluid", name = "sulfuric-acid", amount = 4},
@@ -219,7 +219,7 @@ data:extend({
                                     "__Spaghenutti__/graphics/icons/enriched-chromite-1.png", 64),
     category = "smelting",
     enabled = false,
-    energy_required = 5,  -- time in seconds to make the item
+    energy_required = 5,
     ingredients = {
       {type = "item", name = "sp-enriched-chromite", amount = 2}
     },
@@ -236,7 +236,7 @@ data:extend({
     category = "chemistry",
     subgroup = "enriched-resource",
     enabled = false,
-    energy_required = 2,  -- time in seconds to make the item
+    energy_required = 2,
     ingredients = {
       {type = "item", name = "sp-magnesium-ore", amount = 10},
       {type = "fluid", name = "sp-liquid-sodium", amount = 1},
@@ -255,7 +255,7 @@ data:extend({
                                     "__Spaghenutti__/graphics/icons/enriched-magnesium-1.png", 64),
     category = "smelting",
     enabled = false,
-    energy_required = 6,  -- time in seconds to make the item
+    energy_required = 6,
     ingredients = {
       {type = "item", name = "sp-enriched-magnesium", amount = 3}
     },
@@ -272,7 +272,7 @@ data:extend({
     category = "chemistry",
     subgroup = "enriched-resource",
     enabled = false,
-    energy_required = 2,  -- time in seconds to make the item
+    energy_required = 2,
     ingredients = {
       {type = "item", name = "sp-nickel-ore", amount = 8},
       {type = "fluid", name = "sulfuric-acid", amount = 2},
@@ -291,7 +291,7 @@ data:extend({
                                     "__Spaghenutti__/graphics/icons/enriched-nickel-1.png", 64),
     category = "smelting",
     enabled = false,
-    energy_required = 5,  -- time in seconds to make the item
+    energy_required = 5,
     ingredients = {
       {type = "item", name = "sp-enriched-nickel", amount = 1}
     },
@@ -308,7 +308,7 @@ data:extend({
     category = "chemistry",
     subgroup = "enriched-resource",
     enabled = false,
-    energy_required = 3,  -- time in seconds to make the item
+    energy_required = 3,
     ingredients = {
       {type = "item", name = "sp-tinstone", amount = 10},
       {type = "fluid", name = "nitric-acid", amount = 3},
@@ -327,7 +327,7 @@ data:extend({
                                     "__Spaghenutti__/graphics/icons/enriched-tinstone-1.png", 64),
     category = "smelting",
     enabled = false,
-    energy_required = 8,  -- time in seconds to make the item
+    energy_required = 8,
     ingredients = {
       {type = "item", name = "sp-enriched-tinstone", amount = 3}
     },
@@ -344,7 +344,7 @@ data:extend({
     category = "chemistry",
     subgroup = "enriched-resource",
     enabled = false,
-    energy_required = 4,  -- time in seconds to make the item
+    energy_required = 4,
     ingredients = {
       {type = "item", name = "sp-titanium-ore", amount = 12},
       {type = "fluid", name = "ammonia", amount = 2},
@@ -362,7 +362,7 @@ data:extend({
                                     "__Spaghenutti__/graphics/icons/enriched-titanium-1.png", 64),
     category = "smelting",
     enabled = false,
-    energy_required = 5,  -- time in seconds to make the item
+    energy_required = 5,
     ingredients = {
       {type = "item", name = "sp-enriched-titanium", amount = 2}
     },
@@ -379,7 +379,7 @@ data:extend({
     category = "chemistry",
     subgroup = "enriched-resource",
     enabled = false,
-    energy_required = 2,  -- time in seconds to make the item
+    energy_required = 2,
     ingredients = {
       {type = "item", name = "sp-tungsten-ore", amount = 10},
       {type = "fluid", name = "nitric-acid", amount = 4},
@@ -397,7 +397,7 @@ data:extend({
                                     "__Spaghenutti__/graphics/icons/enriched-tungsten-1.png", 64),
     category = "smelting",
     enabled = false,
-    energy_required = 8,  -- time in seconds to make the item
+    energy_required = 8,
     ingredients = {
       {type = "item", name = "sp-enriched-tungsten", amount = 1}
     },
@@ -414,7 +414,7 @@ data:extend({
     category = "chemistry",
     subgroup = "enriched-resource",
     enabled = false,
-    energy_required = 3.2,  -- time in seconds to make the item
+    energy_required = 3.2,
     ingredients = {
       {type = "item", name = "sp-zinc-ore", amount = 12},
       {type = "item", name = "sp-sodium-carbonate", amount = 2},
@@ -432,7 +432,7 @@ data:extend({
                                     "__Spaghenutti__/graphics/icons/enriched-zinc-1.png", 64),
     category = "smelting",
     enabled = false,
-    energy_required = 4,  -- time in seconds to make the item
+    energy_required = 4,
     ingredients = {
       {type = "item", name = "sp-enriched-zinc", amount = 1}
     },
@@ -451,7 +451,7 @@ data:extend({
     category = "acroproduct-conversion-with-acromatter",
     subgroup = "raw-resource",
     enabled = false,
-    energy_required = 9,  -- time in seconds to make the item
+    energy_required = 9,
     ingredients = {
       {type = "item", name = "sp-enriched-aluminum", amount = 12},
       {type = "item", name = "sp-acromatter", amount = 1}
@@ -474,7 +474,7 @@ data:extend({
     category = "acroproduct-conversion-with-acrocrystal",
     subgroup = "raw-resource",
     enabled = false,
-    energy_required = 15,  -- time in seconds to make the item
+    energy_required = 15,
     ingredients = {
       {type = "item", name = "raw-rare-metals", amount = 9},
       {type = "item", name = "sp-acrocrystal", amount = 1}
@@ -499,7 +499,7 @@ data:extend({
     category = "acroproduct-conversion-with-acrovoid",
     subgroup = "processed-resource",
     enabled = false,
-    energy_required = 6,  -- time in seconds to make the item
+    energy_required = 6,
     ingredients = {
       {type = "item", name = "coke", amount = 6},
       {type = "item", name = "sp-acrovoid", amount = 1}
@@ -523,7 +523,7 @@ data:extend({
     category = "acroproduct-conversion-with-acrovoid",
     subgroup = "processed-resource",
     enabled = false,
-    energy_required = 12,  -- time in seconds to make the item
+    energy_required = 12,
     ingredients = {
       {type = "item", name = "silicon", amount = 4},
       {type = "item", name = "sp-acrovoid", amount = 1}
@@ -547,7 +547,7 @@ data:extend({
     category = "acroproduct-conversion-with-acromatter",
     subgroup = "raw-resource",
     enabled = false,
-    energy_required = 8,  -- time in seconds to make the item
+    energy_required = 8,
     ingredients = {
       {type = "item", name = "sp-enriched-chromite", amount = 6},
       {type = "item", name = "sp-acromatter", amount = 1}
@@ -569,7 +569,7 @@ data:extend({
     category = "acroproduct-conversion-with-acromatter",
     subgroup = "raw-resource",
     enabled = false,
-    energy_required = 10,  -- time in seconds to make the item
+    energy_required = 10,
     ingredients = {
       {type = "item", name = "sp-enriched-titanium", amount = 10},
       {type = "item", name = "sp-acromatter", amount = 1}
@@ -591,7 +591,7 @@ data:extend({
     category = "acroproduct-conversion-with-acromatter",
     subgroup = "raw-resource",
     enabled = false,
-    energy_required = 8,  -- time in seconds to make the item
+    energy_required = 8,
     ingredients = {
       {type = "item", name = "sp-enriched-magnesium", amount = 10},
       {type = "item", name = "sp-acromatter", amount = 1}
@@ -614,7 +614,7 @@ data:extend({
     category = "acroproduct-conversion-with-acromatter",
     subgroup = "raw-resource",
     enabled = false,
-    energy_required = 12,  -- time in seconds to make the item
+    energy_required = 12,
     ingredients = {
       {type = "item", name = "sp-enriched-nickel", amount = 8},
       {type = "item", name = "sp-acromatter", amount = 1}
@@ -638,7 +638,7 @@ data:extend({
     category = "acroproduct-conversion-with-acromatter",
     subgroup = "raw-resource",
     enabled = false,
-    energy_required = 6,  -- time in seconds to make the item
+    energy_required = 6,
     ingredients = {
       {type = "item", name = "sp-enriched-tinstone", amount = 6},
       {type = "item", name = "sp-acromatter", amount = 1}
@@ -662,7 +662,7 @@ data:extend({
     category = "acroproduct-conversion-with-acromatter",
     subgroup = "raw-resource",
     enabled = false,
-    energy_required = 12,  -- time in seconds to make the item
+    energy_required = 12,
     ingredients = {
       {type = "item", name = "sp-enriched-tungsten", amount = 8},
       {type = "item", name = "sp-acromatter", amount = 1}
@@ -683,7 +683,7 @@ data:extend({
     category = "acroproduct-conversion-with-acromatter",
     subgroup = "raw-resource",
     enabled = false,
-    energy_required = 7,  -- time in seconds to make the item
+    energy_required = 7,
     ingredients = {
       {type = "item", name = "sp-enriched-zinc", amount = 8},
       {type = "item", name = "sp-acromatter", amount = 1}
@@ -705,7 +705,7 @@ data:extend({
     category = "acroproduct-conversion-with-acromatter",
     subgroup = "raw-resource",
     enabled = false,
-    energy_required = 8,  -- time in seconds to make the item
+    energy_required = 8,
     ingredients = {
       {type = "item", name = "enriched-iron", amount = 10},
       {type = "item", name = "sp-acromatter", amount = 1}
@@ -728,7 +728,7 @@ data:extend({
     category = "acroproduct-conversion-with-acromatter",
     subgroup = "raw-resource",
     enabled = false,
-    energy_required = 8,  -- time in seconds to make the item
+    energy_required = 8,
     ingredients = {
       {type = "item", name = "enriched-copper", amount = 10},
       {type = "item", name = "sp-acromatter", amount = 1}
@@ -753,7 +753,7 @@ data:extend({
     category = "acroproduct-conversion-with-acromatter",
     subgroup = "raw-resource",
     enabled = false,
-    energy_required = 15,  -- time in seconds to make the item
+    energy_required = 15,
     ingredients = {
       {type = "item", name = "enriched-rare-metals", amount = 9},
       {type = "item", name = "sp-acromatter", amount = 1}
