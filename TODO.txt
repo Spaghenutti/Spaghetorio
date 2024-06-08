@@ -64,6 +64,7 @@ Low prio
   - Add different types of dirty water
   - Dirty water can be filtered or evaporated. Add corresponding recipes for filtering and evaporating.
   - Add crushing recipes
+  - Add products of limestone, like fluorspar and the others in the correct proportions to concrete
 
 
 Future changes

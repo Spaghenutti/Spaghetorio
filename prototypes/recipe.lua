@@ -206,25 +206,6 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-calcium-carbonate",  -- #ForRegEx# - recipe
-    icons = util.combine_two_icons("__Spaghenutti__/graphics/icons/calcium-carbonate.png", 64, nil,
-                                   "__Spaghenutti__/graphics/icons/fluorspar.png", 64, nil),
-    icon_size = 64,
-    mip_maps = 4,
-    category = "chemistry",
-    subgroup = "processed-resource",
-    enabled = false,
-    energy_required = 4,
-    ingredients = {
-      {type = "item", name = "sp-limestone", amount = 2},
-    },
-    results = {
-      {type = "item", name = "sp-calcium-carbonate", probability = 0.8, amount = 3},
-      {type = "item", name = "sp-fluorspar", probability = 0.2, amount = 1}
-    }
-  },
-  {
-    type = "recipe",
     name = "sp-calcium-and-fluorine",  -- #ForRegEx# - recipe
     icons = util.combine_two_icons("__Spaghenutti__/graphics/icons/fluorine.png", 64, nil,
                                    "__Spaghenutti__/graphics/icons/calcium.png", 64, nil),
@@ -1023,14 +1004,15 @@ data:extend({
     name = "sp-ball-bearing",  -- #ForRegEx# - recipe
     category = "crafting-with-fluid",
     enabled = false,
-    energy_required = 2.4,
+    energy_required = 6,
     ingredients = {
-      {type = "item", name = "sp-bronze-rod", amount = 3},
+      {type = "item", name = "sp-stainless-steel", amount = 3},
+      {type = "item", name = "sp-bronze-rod", amount = 1},
       {type = "item", name = "sp-chromium-plate", amount = 2},
       {type = "fluid", name = "lubricant", amount = 5}
     },
     results = {
-      {type = "item", name = "sp-ball-bearing", amount = 3}
+      {type = "item", name = "sp-ball-bearing", amount = 4}
     }
   },
   {
@@ -4666,16 +4648,35 @@ data:extend({
   {
     type = "recipe",
     name = "sp-landfill-from-cement",
+    icons = util.overlay_small_icon("__base__/graphics/icons/landfill.png", 64,
+                                    "__Spaghenutti__/graphics/icons/cement.png", 64),
     energy_required = 1,
     enabled = false,
     category = "crafting",
+    hide_from_player_crafting = true,
     ingredients =
     {
       {"stone", 8},
       {"sp-cement", 4}
     },
     result = "landfill",
+    result_count = 2
+  },
+  {
+    type = "recipe",
+    name = "sp-landfill-from-flourspar",
+    icons = util.overlay_small_icon("__base__/graphics/icons/landfill.png", 64,
+                                    "__Spaghenutti__/graphics/icons/fluorspar.png", 64),
+    energy_required = 1,
+    enabled = false,
+    category = "crafting",
     hide_from_player_crafting = true,
+    ingredients =
+    {
+      {"stone", 18},
+      {"sp-fluorspar", 4}
+    },
+    result = "landfill",
     result_count = 2
   },
   {
@@ -5545,6 +5546,27 @@ if not mods["Krastorio2"] then
         secondary = {r = 0.771, g = 0.771, b = 0.771, a = 1.000}, -- #c4c4c4ff
         tertiary = {r = 0.768, g = 0.665, b = 0.762, a = 1.000}, -- #c3a9c2ff
         quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000}, -- #000000ff
+      }
+    },
+    {
+      type = "recipe",
+      -- In Krastorio called "kr-vc-sp-limestone"
+      name = "sp-calcium-carbonate",  -- #ForRegEx# - recipe
+      icons = util.combine_two_icons("__Spaghenutti__/graphics/icons/calcium-carbonate.png", 64, nil,
+                                     "__Spaghenutti__/graphics/icons/fluorspar.png", 64, nil),
+      icon_size = 64,
+      mip_maps = 4,
+      category = "chemistry",
+      subgroup = "processed-resource",
+      enabled = false,
+      energy_required = 4,
+      ingredients = {
+        {type = "item", name = "sp-limestone", amount = 2},
+      },
+      results = {
+        {type = "item", name = "sp-sand", amount = 3},
+        {type = "item", name = "sp-calcium-carbonate", probability = 0.8, amount = 3},
+        {type = "item", name = "sp-fluorspar", probability = 0.2, amount = 1}
       }
     },
     {

@@ -201,6 +201,8 @@ data.raw.technology["sp-coal-processing"].effects = {
   {type = "unlock-recipe", recipe = "kr-vc-coke"}
 }
 
+table.insert(data.raw.technology["sp-cement"].effects, {type = "unlock-recipe", recipe = "kr-vc-sp-limestone"})
+
 table.insert(data.raw.technology["sp-steel-machining"].effects, {type = "unlock-recipe", recipe = "steel-gear-wheel"})
 table.insert(data.raw.technology["sp-raw-resource-from-acrocrystal"].effects, {type = "unlock-recipe", recipe = "sp-raw-rare-metals-from-acrocrystal"})
 table.insert(data.raw.technology["sp-processed-resource-from-acrovoid"].effects, {type = "unlock-recipe", recipe = "sp-coke-from-acrovoid"})
@@ -290,13 +292,8 @@ data.raw.technology["kr-atmosphere-condensation"].unit.ingredients = {
   {"sp-electronic-science-pack-1", 1},
   {"sp-geological-science-pack-1", 1}
 }
-table.insert(data.raw.technology["advanced-electronics"].prerequisites, "sp-electronic-components")
-table.insert(data.raw.technology["advanced-electronics"].effects, {type = "unlock-recipe", recipe = "sp-separate-electronic-components"})
-table.insert(data.raw.technology["advanced-electronics"].effects, {type = "unlock-recipe", recipe = "sp-basic-circuit-board"})
 
-table.insert(data.raw.technology["advanced-electronics-2"].prerequisites, "sp-chemical-science-pack-2")
-table.insert(data.raw.technology["advanced-electronics"].effects, {type = "unlock-recipe", recipe = "sp-empty-circuit-board"})
-table.insert(data.raw.technology["advanced-electronics"].effects, {type = "unlock-recipe", recipe = "sp-circuit-board"})
+table.insert(data.raw.technology["advanced-electronics"].effects, {type = "unlock-recipe", recipe = "sp-separate-electronic-components"})
 
 table.insert(data.raw.technology["kr-automation-core"].prerequisites, "sp-iron-machining")
 table.insert(data.raw.technology["kr-automation-core"].prerequisites, "sp-iron-extruding")
@@ -351,4 +348,29 @@ data.raw.technology["medium-electric-pole"].unit.ingredients = {
   {"automation-science-pack", 1},
   {"logistic-science-pack", 1},
   {"sp-electronic-science-pack-1", 1}
+}
+
+data.raw.technology["toolbelt-3"].effects = {
+  {
+    modifier = 10,
+    type = "character-inventory-slots-bonus"
+  }
+}
+data.raw.technology["toolbelt-4"].effects = {
+  {
+    modifier = 10,
+    type = "character-inventory-slots-bonus"
+  }
+}
+data.raw.technology["toolbelt-5"].effects = {
+  {
+    modifier = 20,
+    type = "character-inventory-slots-bonus"
+  }
+}
+data.raw.technology["toolbelt-6"].effects = {
+  {
+    modifier = 20,
+    type = "character-inventory-slots-bonus"
+  }
 }

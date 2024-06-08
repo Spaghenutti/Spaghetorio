@@ -335,16 +335,16 @@ data:extend({
     {
       {
         type = "unlock-recipe",
-        recipe = "sp-calcium-carbonate"
-      },
-      {
-        type = "unlock-recipe",
         recipe = "sp-cement"
       },
       {
         type = "unlock-recipe",
         recipe = "sp-landfill-from-cement"
       },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-landfill-from-flourspar"
+      }
     },
     prerequisites = {
       "chemical-science-pack",
@@ -990,7 +990,12 @@ data:extend({
     unit =
     {
       count = 100,
-      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      ingredients = {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"sp-material-science-pack-1", 1},
+        {"chemical-science-pack", 1}
+      },
       time = 15
     },
     order = "a-h-a"
@@ -4052,6 +4057,7 @@ if not mods["Krastorio2"] then
   data:extend({
     
   })
+  table.insert(data.raw.technology["sp-cement"].effects, {type = "unlock-recipe", recipe = "sp-calcium-carbonate"})
 
   table.insert(data.raw.technology["sp-processed-resource-from-acrovoid"].effects, {type = "unlock-recipe", recipe = "sp-coke-from-acrovoid"})
   table.insert(data.raw.technology["sp-processed-resource-from-acrovoid"].effects, {type = "unlock-recipe", recipe = "sp-silicon-from-acrovoid"})
@@ -4202,14 +4208,22 @@ data.raw.technology["solar-energy"].unit.ingredients = {
 }
 
 table.insert(data.raw.technology["concrete"].prerequisites, "sp-cement")
-data.raw.technology["solar-energy"].unit.ingredients = {
-  {"basic-tech-card", 1},
+data.raw.technology["concrete"].unit.ingredients = {
   {"automation-science-pack", 1},
   {"logistic-science-pack", 1},
   {"chemical-science-pack", 1},
   {"sp-material-science-pack-1", 1},
   {"sp-geological-science-pack-1", 1}
-}  
+}
+
+data.raw.technology["electric-energy-distribution-1"].unit.ingredients = {
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"chemical-science-pack", 1},
+  {"sp-material-science-pack-1", 1},
+  {"sp-geological-science-pack-1", 1},
+  {"sp-electronic-science-pack-1", 1}
+}
 
 data.raw.technology["flammables"].prerequisites = {"chemical-science-pack"}
 data.raw.technology["flammables"].unit.ingredients = {
@@ -4225,6 +4239,46 @@ data.raw.technology["explosives"].unit.ingredients = {
   {"automation-science-pack", 1},
   {"logistic-science-pack", 1},
   {"sp-material-science-pack-1", 1},
+  {"chemical-science-pack", 1}
+}
+
+table.insert(data.raw.technology["advanced-electronics"].prerequisites, "sp-electronic-components")
+table.insert(data.raw.technology["advanced-electronics"].effects, {type = "unlock-recipe", recipe = "sp-basic-circuit-board"})
+data.raw.technology["advanced-electronics"].unit.ingredients = {
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"sp-material-science-pack-1", 1},
+  {"sp-electronic-science-pack-1", 1},
+  {"chemical-science-pack", 1}
+}
+
+table.insert(data.raw.technology["advanced-electronics-2"].prerequisites, "sp-chemical-science-pack-2")
+table.insert(data.raw.technology["advanced-electronics-2"].effects, {type = "unlock-recipe", recipe = "sp-empty-circuit-board"})
+table.insert(data.raw.technology["advanced-electronics-2"].effects, {type = "unlock-recipe", recipe = "sp-circuit-board"})
+
+data.raw.technology["advanced-oil-processing"].unit.ingredients = {
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"sp-material-science-pack-1", 1},
+  {"sp-electronic-science-pack-1", 1},
+  {"sp-geological-science-pack-1", 1},
+  {"chemical-science-pack", 1}
+}
+
+data.raw.technology["lubricant"].unit.ingredients = {
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"sp-material-science-pack-1", 1},
+  {"sp-electronic-science-pack-1", 1},
+  {"sp-geological-science-pack-1", 1},
+  {"chemical-science-pack", 1}
+}
+
+data.raw.technology["fast-inserter"].unit.ingredients = {
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"sp-material-science-pack-1", 1},
+  {"sp-electronic-science-pack-1", 1},
   {"chemical-science-pack", 1}
 }
 

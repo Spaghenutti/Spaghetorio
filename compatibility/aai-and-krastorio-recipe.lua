@@ -4,7 +4,7 @@ data:extend({
   -- MARK: Update crushing recipes
   {
     type = "recipe",
-    name = "kr-vc-coal",  -- replaces sp-graphite recipe
+    name = "kr-vc-coal",  -- replaces "sp-graphite" recipe
     icon = "__Spaghenutti__/graphics/crushing/crushing-coal.png",
     icon_size = 256,
     category = "crushing",
@@ -21,7 +21,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "kr-vc-coke",  -- replaces sp-graphite recipe
+    name = "kr-vc-coke",  -- replaces "sp-graphite" recipe
     icon = "__Spaghenutti__/graphics/crushing/crushing-coke.png",
     icon_size = 256,
     category = "crushing",
@@ -33,6 +33,25 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-graphite",  amount = 2}
+    }
+  },
+  {
+    type = "recipe",
+    name = "kr-vc-sp-limestone",  -- replaces "sp-calcium-carbonate" recipe
+    icon = "__Spaghenutti__/graphics/icons/calcium-carbonate.png",
+    icon_size = 64,
+    mip_maps = 4,
+    category = "crushing",
+    subgroup = "processed-resource",
+    enabled = false,
+    energy_required = 4,
+    ingredients = {
+      {type = "item", name = "sp-limestone", amount = 2},
+    },
+    results = {
+      {type = "item", name = "sand", amount = 3},
+      {type = "item", name = "sp-calcium-carbonate", probability = 0.8, amount = 3},
+      {type = "item", name = "sp-fluorspar", probability = 0.2, amount = 1}
     }
   },
   -- MARK: New aai / krastorio recipes
@@ -860,6 +879,7 @@ table.insert(data.raw.recipe["sp-utility-science-pack-3"].ingredients, {type = "
 
 -- MARK: Add missing ingredients from recipe-changes.lua
 table.insert(data.raw.recipe["concrete"].normal.ingredients, {"sand", 5})
+table.insert(data.raw.recipe["refined-concrete"].ingredients, {"sand", 8})
 table.insert(data.raw.recipe["steel-furnace"].normal.ingredients, {"stone-tablet", 40})
 table.insert(data.raw.recipe["steel-furnace"].normal.ingredients, {"steel-beam", 20})
 table.insert(data.raw.recipe["electric-furnace"].normal.ingredients, {"stone-tablet", 30})

@@ -61,6 +61,12 @@ util.change_recipe_ingredients("concrete",
   {{"sp-cement", 16}, {type="fluid", name="water", amount=160}},
   10,
   15)
+-- Base: {"sp-sand", 5}; Krastorio {"sand", 5}
+util.change_recipe_ingredients("refined-concrete",
+  {{"sp-cement", 16}, {"iron-stick", 4}, {"sp-alumina", 2}, {type="fluid", name="water", amount=150}},
+  {{"sp-cement", 20}, {"iron-stick", 6}, {"sp-alumina", 6}, {type="fluid", name="water", amount=300}},
+  12,
+  20)
 util.change_recipe_ingredients("steel-chest",
   {{"sp-bolts", 4}, {"steel-plate", 4}},
   {{"sp-bolts", 12}, {"steel-plate", 8}},
@@ -613,6 +619,7 @@ table.insert(data.raw.recipe["filter-inserter"].normal.ingredients, {"sp-ball-be
 
 if not mods["Krastorio2"] then
   table.insert(data.raw.recipe["concrete"].normal.ingredients, {"sp-sand", 5})
+  table.insert(data.raw.recipe["refined-concrete"].ingredients, {"sp-sand", 8})
   table.insert(data.raw.recipe["steel-furnace"].normal.ingredients, {"stone-brick", 40})
   table.insert(data.raw.recipe["steel-furnace"].normal.ingredients, {"steel-plate", 20})
   table.insert(data.raw.recipe["electric-furnace"].normal.ingredients, {"stone-brick", 30})
