@@ -4316,12 +4316,14 @@ data:extend({
     enabled = false,
     energy_required = 24,
     ingredients =
-    -- Krastorio: {"blank-tech-card", 5}
+    -- Krastorio: {"blank-tech-card", 5}, {"engine-unit", 2}
     {
-      {"iron-plate", 69},
+      {"fast-inserter", 1},
+      {"small-lamp", 5},
+      {"sp-electromagnet", 5}
     },
     result_count = 5,
-    result = "sp-electronic-science-pack-2"
+    result = "sp-automation-science-pack-2"
   },
   {
     type = "recipe",

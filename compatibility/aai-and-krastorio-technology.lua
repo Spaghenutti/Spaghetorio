@@ -339,6 +339,8 @@ table.insert(data.raw.technology["kr-bio-processing"].effects, {type = "unlock-r
 
 data.raw.technology["kr-electric-mining-drill-mk2"].prerequisites = {"sp-titanium-alloys"}
 
+data.raw.technology["kr-fuel"].prerequisites = {"sp-chemical-science-pack-2"}
+
 -- aai industry technology changes
 data.raw.technology["engine"].prerequisites = {"sp-steel-machining"}
 
@@ -349,6 +351,8 @@ data.raw.technology["medium-electric-pole"].unit.ingredients = {
   {"logistic-science-pack", 1},
   {"sp-electronic-science-pack-1", 1}
 }
+
+data.raw.technology["electric-engine"].prerequisites = {"sp-magnet", "sp-ball-bearing"}
 
 data.raw.technology["toolbelt-3"].effects = {
   {
