@@ -33,7 +33,7 @@ TODO:
   - Fix technology unlocking and add recipes for tech cards
   - Add cyclotron
   - Add particle accelerator
-  - Replace dummy icons
+  + Replace dummy icons
   - Fix barrel tints of fluids
   - Add radiocativity to radioactive items
 
@@ -64,14 +64,14 @@ Low prio
   - Add different types of dirty water
   - Dirty water can be filtered or evaporated. Add corresponding recipes for filtering and evaporating.
   - Add crushing recipes
-  - Add products of limestone, like fluorspar and the others in the correct proportions to concrete
+  + Add products of limestone, like fluorspar and the others in the correct proportions to concrete
 
 
 Future changes
   - Move incopatibel recipes outside of "not mods["Krastorio2"] then" statement and update them with correct values inside the statement
   - Support text plates mod
   - Support jetpack mod
-  - Support LTN mod
+  + Support LTN mod
 
 Notes:
   -

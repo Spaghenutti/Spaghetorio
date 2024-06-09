@@ -50,6 +50,11 @@ util.change_recipe_ingredients("steel-plate",
   {{"iron-plate", 6}, {"sp-graphite", 2}},
   nil,
   nil)
+util.change_recipe_ingredients("battery",
+  {{"iron-plate", 1}, {"sp-salt", 2}, {"sp-insulated-wire", 2}, {type="fluid", name="sulfuric-acid", amount=20}},
+  {{"iron-plate", 2}, {"sp-salt", 4}, {"sp-insulated-wire", 2}, {type="fluid", name="sulfuric-acid", amount=40}},
+  nil,
+  nil)
 util.change_recipe_ingredients("low-density-structure",
   {{"sp-titanium-frame", 1}, {"sp-composites", 2}, {"sp-carbon-fiber", 5}},
   {{"sp-titanium-frame", 2}, {"sp-composites", 3}, {"sp-carbon-fiber", 6}},

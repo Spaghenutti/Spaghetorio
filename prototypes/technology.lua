@@ -377,11 +377,15 @@ data:extend({
         recipe = "sp-crucible"
       }
     },
-    prerequisites = {"sp-cement"},
+    prerequisites = {"sp-material-science-pack-2"},
     unit =
     {
       count = 50,
-      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
+      },
       time = 15
     },
     order = "a-h-a"
@@ -4063,6 +4067,8 @@ table.insert(data.raw.technology["automation-science-pack"].prerequisites, "sp-m
 table.insert(data.raw.technology["gun-turret"].prerequisites, "sp-mechanical-assembling")
 
 table.insert(data.raw.technology["fast-inserter"].prerequisites, "sp-ball-bearing")
+
+table.insert(data.raw.technology["filter-inserter"].prerequisites, "sp-optical-sensor")
 
 data.raw.technology["chemical-science-pack"].prerequisites = {
   "plastics",
