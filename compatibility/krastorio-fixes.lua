@@ -65,6 +65,24 @@ data.raw.item["iron-beam"].order = "iron[iron-beam]"
 
 util.resize_building("furnace", "kr-crusher", {{-1.75, -1.75}, {1.75, 1.75}}, {{-2, -2}, {2, 2}}, 4/7, 4/7/2)
 
+-- Fix subgroup to fluids
+data.raw.fluid["mineral-water"].subgroup = "aqueous-fluid"
+data.raw.fluid["heavy-water"].subgroup = "aqueous-fluid"
+
+data.raw.fluid["dirty-water"].subgroup = "dirty-fluid"
+
+data.raw.fluid["nitric-acid"].subgroup = "chemical"
+data.raw.fluid["ammonia"].subgroup = "chemical"
+data.raw.fluid["chlorine"].subgroup = "chemical"
+data.raw.fluid["hydrogen-chloride"].subgroup = "chemical"
+data.raw.fluid["biomethanol"].subgroup = "chemical"
+
+data.raw.fluid["oxygen"].subgroup = "gas"
+data.raw.fluid["hydrogen"].subgroup = "gas"
+data.raw.fluid["nitrogen"].subgroup = "gas"
+
+data.raw.fluid["matter"].subgroup = "alien"
+
 -- Fix subgroup to science items
 data.raw.item["blank-tech-card"].subgroup = "science-item"
 data.raw.item["biters-research-data"].subgroup = "science-item"  -- in game called military-research-data

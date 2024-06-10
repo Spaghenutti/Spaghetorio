@@ -21,52 +21,58 @@ data:extend({
   },
   {
     type = "item-subgroup",
-    name = "enriched-resource",
+    name = "crushed-resource",
     group = "base-products",
     order = "b"
   },
   {
     type = "item-subgroup",
-    name = "processed-resource",
+    name = "enriched-resource",
     group = "base-products",
     order = "c"
+  },
+  {
+    type = "item-subgroup",
+    name = "processed-resource",
+    group = "base-products",
+    order = "d"
   },
   -- move raw-resources to new item group base-products
   {
     type = "item-subgroup",
     name = "raw-material",
     group = "base-products",
-    order = "d"
+    order = "e"
   },
   {
     type = "item-subgroup",
     name = "chemical-product",
     group = "base-products",
-    order = "e"
+    order = "f"
   },
   {
     type = "item-subgroup",
     name = "alloy",
     group = "base-products",
-    order = "f"
+    order = "g"
   },
   {
     type = "item-subgroup",
     name = "advanced-raw-material",
     group = "base-products",
-    order = "g"
+    order = "h"
   },
   {
     type = "item-subgroup",
     name = "alien-material",
     group = "base-products",
-    order = "h"
+    order = "i"
   },
   {
     type = "item-subgroup",
     name = "sp-acroproduct",
     group = "base-products",
-    order = "i"
+    order = "j"
   },
   ------------------------------------------------------------------------------
   -- MARK: intermediate-products
@@ -220,5 +226,53 @@ data:extend({
     icon = "__base__/graphics/item-group/military.png",
     icon_size = 128,
     icon_mipmaps = 2
+  },
+  ------------------------------------------------------------------------------
+  -- MARK: fluid
+  -- Set combat to seventh place
+  ------------------------------------------------------------------------------
+  {
+    type = "item-group",
+    name = "fluid",
+    order = "g",
+    icon = "__base__/graphics/item-group/military.png",
+    icon_size = 128,
+    icon_mipmaps = 2
+  },
+  {
+    type = "item-subgroup",
+    name = "aqueous-fluid",
+    group = "fluid",
+    order = "a"
+  },
+  {
+    type = "item-subgroup",
+    name = "dirty-fluid",
+    group = "fluid",
+    order = "b"
+  },
+  {
+    type = "item-subgroup",
+    name = "oil",
+    group = "fluid",
+    order = "c"
+  },
+  {
+    type = "item-subgroup",
+    name = "chemical",
+    group = "fluid",
+    order = "d"
+  },
+  {
+    type = "item-subgroup",
+    name = "gas",
+    group = "fluid",
+    order = "e"
+  },
+  {
+    type = "item-subgroup",
+    name = "alien",
+    group = "fluid",
+    order = "f"
   }
 })
