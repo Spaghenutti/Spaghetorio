@@ -78,6 +78,42 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "kr-vc-sp-copper-ore",
+    icon = "__Spaghenutti__/graphics/crushing/crushing-copper-ore.png",
+    icon_size = 256,
+    mip_maps = 4,
+    category = "crushing",
+    subgroup = "processed-resource",
+    enabled = false,
+    energy_required = 4,
+    ingredients = {
+      {type = "item", name = "sp-copper-ore", amount = 6},
+    },
+    results = {
+      {type = "item", name = "sand", probability = 0.5, amount = 1},
+      {type = "item", name = "sp-crushed-copper-ore", amount = 6}
+    }
+  },
+  {
+    type = "recipe",
+    name = "kr-vc-sp-iron-ore",
+    icon = "__Spaghenutti__/graphics/crushing/crushing-iron-ore.png",
+    icon_size = 256,
+    mip_maps = 4,
+    category = "crushing",
+    subgroup = "processed-resource",
+    enabled = false,
+    energy_required = 4,
+    ingredients = {
+      {type = "item", name = "sp-iron-ore", amount = 6},
+    },
+    results = {
+      {type = "item", name = "sand", amount = 1},
+      {type = "item", name = "sp-crushed-iron-ore", amount = 6}
+    }
+  },
+  {
+    type = "recipe",
     name = "kr-vc-sp-limestone",  -- replaces "sp-calcium-carbonate" recipe
     icon = "__Spaghenutti__/graphics/crushing/crushing-limestone.png",
     icon_size = 256,

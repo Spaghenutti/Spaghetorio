@@ -67,6 +67,7 @@ Low prio
   + Add products of limestone, like fluorspar and the others in the correct proportions to concrete
   - Add kevlar to pressure tanks
   - Add crushed rare metals
+  - Add smelting for crushed ores
 
 
 Future changes
