@@ -3,25 +3,20 @@ import glob
 
 import constants
 
-HR_ICONS_FOLDER = "hr-icons"
-HR_ICONS_PATH = fr"{constants.GRAPHICS_PATH}/{HR_ICONS_FOLDER}/*"
-ICONS_FOLDER = "icons"
-ICONS_PATH = fr"{constants.GRAPHICS_PATH}/{ICONS_FOLDER}/*"
-
 X_RES = 64
 Y_RES = 64
 
 def resize_images():
-    file_paths = glob.glob(HR_ICONS_PATH, recursive=True)
+    file_paths = glob.glob(constants.HR_ICONS_PATH, recursive=True)
     for file_path in file_paths:
         img = Image.open(file_path)
         img.thumbnail((X_RES, Y_RES))
 
-        normal_res_path = file_path.replace(HR_ICONS_FOLDER, ICONS_FOLDER)
+        normal_res_path = file_path.replace(constants.HR_ICONS_FOLDER, constants.ICONS_FOLDER)
         img.save(normal_res_path)
 
 def create_mipmaps(num=4):
-    file_paths = glob.glob(ICONS_PATH, recursive=True)
+    file_paths = glob.glob(constants.ICONS_PATH, recursive=True)
     for file_path in file_paths:
         img = Image.open(file_path)
         width, height = img.size

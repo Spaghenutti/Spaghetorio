@@ -473,7 +473,7 @@ data:extend({
   {
     type = "item",
     name = "sp-stibnite",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/icons/stibnite.png",
+    icon = "__Spaghenutti__/graphics/icons/stibnite-1.png",
     icon_size = 64,
     scale = 0.25,
     subgroup = "processed-resource",

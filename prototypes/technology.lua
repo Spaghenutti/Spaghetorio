@@ -1951,7 +1951,7 @@ data:extend({
     type = "technology",
     name = "sp-antimony-processing",  -- #ForRegEx# - technology
     icon_size = 256,
-    icons = util.combine_two_icons("__Spaghenutti__/graphics/hr-icons/stibnite.png", 256, nil,
+    icons = util.combine_two_icons("__Spaghenutti__/graphics/hr-icons/stibnite-1.png", 256, nil,
                                    "__Spaghenutti__/graphics/hr-icons/antimony.png", 256, nil),
     effects =
     {
