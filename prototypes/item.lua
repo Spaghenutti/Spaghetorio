@@ -22,7 +22,7 @@ data:extend({
   {
     type = "item",
     name = "sp-chromite",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/icons/chromite-2.png",
+    icon = "__Spaghenutti__/graphics/icons/chromite-1.png",
     icon_size = 64,
     icon_mipmaps = 4,
     pictures = {
@@ -38,7 +38,7 @@ data:extend({
   {
     type = "item",
     name = "sp-limestone",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/icons/limestone-3.png",
+    icon = "__Spaghenutti__/graphics/icons/limestone-1.png",
     icon_size = 64,
     icon_mipmaps = 4,
     pictures = {
@@ -54,7 +54,7 @@ data:extend({
   {
     type = "item",
     name = "sp-titanium-ore",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/icons/titanium-ore-4.png",
+    icon = "__Spaghenutti__/graphics/icons/titanium-ore-1.png",
     icon_size = 64,
     icon_mipmaps = 4,
     pictures = {
@@ -86,7 +86,7 @@ data:extend({
   {
     type = "item",
     name = "sp-tinstone",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/icons/tinstone-2.png",
+    icon = "__Spaghenutti__/graphics/icons/tinstone-1.png",
     icon_size = 64,
     icon_mipmaps = 4,
     pictures = {
@@ -102,7 +102,7 @@ data:extend({
   {
     type = "item",
     name = "sp-zirconium-ore",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/icons/zirconium-ore-3.png",
+    icon = "__Spaghenutti__/graphics/icons/zirconium-ore-1.png",
     icon_size = 64,
     icon_mipmaps = 4,
     pictures = {
@@ -118,7 +118,7 @@ data:extend({
   {
     type = "item",
     name = "sp-nickel-ore",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/icons/nickel-ore-4.png",
+    icon = "__Spaghenutti__/graphics/icons/nickel-ore-1.png",
     icon_size = 64,
     icon_mipmaps = 4,
     pictures = {
@@ -150,7 +150,7 @@ data:extend({
   {
     type = "item",
     name = "sp-zinc-ore",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/icons/zinc-ore-2.png",
+    icon = "__Spaghenutti__/graphics/icons/zinc-ore-1.png",
     icon_size = 64,
     icon_mipmaps = 4,
     pictures = {
@@ -166,7 +166,7 @@ data:extend({
   {
     type = "item",
     name = "sp-spodumene",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/icons/spodumene-3.png",
+    icon = "__Spaghenutti__/graphics/icons/spodumene-1.png",
     icon_size = 64,
     icon_mipmaps = 4,
     pictures = {
