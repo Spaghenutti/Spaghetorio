@@ -1,7 +1,48 @@
 local util = require("data-util")
 
 data:extend({
+  ------------------------------------------------------------------------------
   -- MARK: Update crushing recipes
+  ------------------------------------------------------------------------------
+  {
+    type = "recipe",
+    name = "kr-vc-sp-aluminum-ore",
+    icon = "__Spaghenutti__/graphics/crushing/crushing-aluminum-ore.png",
+    icon_size = 256,
+    mip_maps = 4,
+    category = "crushing",
+    subgroup = "processed-resource",
+    enabled = false,
+    energy_required = 6,
+    ingredients = {
+      {type = "item", name = "sp-aluminum-ore", amount = 3},
+    },
+    results = {
+      {type = "item", name = "sand", amount = 1},
+      {type = "item", name = "sp-crushed-aluminum-ore", amount = 3},
+      {type = "item", name = "sp-crushed-iron-ore", probability = 0.2, amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "kr-vc-sp-chromite",
+    icon = "__Spaghenutti__/graphics/crushing/crushing-chromite.png",
+    icon_size = 256,
+    mip_maps = 4,
+    category = "crushing",
+    subgroup = "processed-resource",
+    enabled = false,
+    energy_required = 4,
+    ingredients = {
+      {type = "item", name = "sp-chromite", amount = 3},
+    },
+    results = {
+      {type = "item", name = "sand", amount = 1},
+      {type = "item", name = "sp-crushed-chromite", amount = 3},
+      {type = "item", name = "sp-crushed-aluminum-ore", probability = 0.1, amount = 1},
+      {type = "item", name = "sp-crushed-iron-ore", probability = 0.5, amount = 1}
+    }
+  },
   {
     type = "recipe",
     name = "kr-vc-coal",  -- replaces "sp-graphite" recipe
@@ -38,8 +79,8 @@ data:extend({
   {
     type = "recipe",
     name = "kr-vc-sp-limestone",  -- replaces "sp-calcium-carbonate" recipe
-    icon = "__Spaghenutti__/graphics/icons/calcium-carbonate.png",
-    icon_size = 64,
+    icon = "__Spaghenutti__/graphics/crushing/crushing-limestone.png",
+    icon_size = 256,
     mip_maps = 4,
     category = "crushing",
     subgroup = "processed-resource",
@@ -54,7 +95,161 @@ data:extend({
       {type = "item", name = "sp-fluorspar", probability = 0.2, amount = 1}
     }
   },
+  {
+    type = "recipe",
+    name = "kr-vc-sp-magnesium-ore",
+    icon = "__Spaghenutti__/graphics/crushing/crushing-magnesium-ore.png",
+    icon_size = 256,
+    mip_maps = 4,
+    category = "crushing",
+    subgroup = "processed-resource",
+    enabled = false,
+    energy_required = 5.6,
+    ingredients = {
+      {type = "item", name = "sp-magnesium-ore", amount = 4},
+    },
+    results = {
+      {type = "item", name = "sand", amount = 2},
+      {type = "item", name = "sp-crushed-magnesium-ore", amount = 4},
+      {type = "item", name = "sp-crushed-zinc-ore", probability = 0.05, amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "kr-vc-sp-nickel-ore",
+    icon = "__Spaghenutti__/graphics/crushing/crushing-nickel-ore.png",
+    icon_size = 256,
+    mip_maps = 4,
+    category = "crushing",
+    subgroup = "processed-resource",
+    enabled = false,
+    energy_required = 5,
+    ingredients = {
+      {type = "item", name = "sp-nickel-ore", amount = 3},
+    },
+    results = {
+      {type = "item", name = "sand", probability = 0.5, amount = 1},
+      {type = "item", name = "sp-crushed-magnesium-ore", amount = 3},
+      {type = "item", name = "sp-crushed-iron-ore", probability = 0.5, amount = 1},
+      {type = "item", name = "sulfur", probability = 0.3, amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "kr-vc-sp-spodumene",
+    icon = "__Spaghenutti__/graphics/crushing/crushing-spodumene.png",
+    icon_size = 256,
+    mip_maps = 4,
+    category = "crushing",
+    subgroup = "processed-resource",
+    enabled = false,
+    energy_required = 8,
+    ingredients = {
+      {type = "item", name = "sp-spodumene", amount = 3},
+    },
+    results = {
+      {type = "item", name = "sand", amount = 3},
+      {type = "item", name = "lithium", probability = 0.3, amount = 1},
+      {type = "item", name = "sp-crushed-aluminum-ore", probability = 0.05, amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "kr-vc-sp-tinstone",
+    icon = "__Spaghenutti__/graphics/crushing/crushing-tinstone.png",
+    icon_size = 256,
+    mip_maps = 4,
+    category = "crushing",
+    subgroup = "processed-resource",
+    enabled = false,
+    energy_required = 3,
+    ingredients = {
+      {type = "item", name = "sp-tinstone", amount = 3},
+    },
+    results = {
+      {type = "item", name = "sand", amount = 1},
+      {type = "item", name = "sp-crushed-tinstone", probability = 0.75, amount = 3},
+      {type = "item", name = "sp-leadstone", probability = 0.75, amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "kr-vc-sp-titanium-ore",
+    icon = "__Spaghenutti__/graphics/crushing/crushing-titanium-ore.png",
+    icon_size = 256,
+    mip_maps = 4,
+    category = "crushing",
+    subgroup = "processed-resource",
+    enabled = false,
+    energy_required = 12,
+    ingredients = {
+      {type = "item", name = "sp-titanium-ore", amount = 3},
+    },
+    results = {
+      {type = "item", name = "sand", probability = 0.5, amount = 1},
+      {type = "item", name = "sp-crushed-titanium-ore", amount = 3}
+    }
+  },
+  {
+    type = "recipe",
+    name = "kr-vc-sp-tungsten-ore",
+    icon = "__Spaghenutti__/graphics/crushing/crushing-tungsten-ore.png",
+    icon_size = 256,
+    mip_maps = 4,
+    category = "crushing",
+    subgroup = "processed-resource",
+    enabled = false,
+    energy_required = 10,
+    ingredients = {
+      {type = "item", name = "sp-tungsten-ore", amount = 3},
+    },
+    results = {
+      {type = "item", name = "sand", probability = 0.5, amount = 1},
+      {type = "item", name = "sp-crushed-tungsten-ore", amount = 3},
+      {type = "item", name = "sp-crushed-iron-ore", probability = 0.5, amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "kr-vc-sp-zinc-ore",
+    icon = "__Spaghenutti__/graphics/crushing/crushing-zinc-ore.png",
+    icon_size = 256,
+    mip_maps = 4,
+    category = "crushing",
+    subgroup = "processed-resource",
+    enabled = false,
+    energy_required = 3.6,
+    ingredients = {
+      {type = "item", name = "sp-zinc-ore", amount = 3},
+    },
+    results = {
+      {type = "item", name = "sand", amount = 1},
+      {type = "item", name = "sp-crushed-zinc-ore", amount = 3},
+      {type = "item", name = "sp-crushed-iron-ore", probability = 0.5, amount = 1},
+      {type = "item", name = "sulfur", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "kr-vc-sp-zirconium-ore",
+    icon = "__Spaghenutti__/graphics/crushing/crushing-zirconium-ore.png",
+    icon_size = 256,
+    mip_maps = 4,
+    category = "crushing",
+    subgroup = "processed-resource",
+    enabled = false,
+    energy_required = 6,
+    ingredients = {
+      {type = "item", name = "sp-zirconium-ore", amount = 2},
+    },
+    results = {
+      {type = "item", name = "sand", amount = 1},
+      {type = "item", name = "sp-crushed-zirconium-ore", amount = 2}
+    }
+  },
+  ------------------------------------------------------------------------------
   -- MARK: New aai / krastorio recipes
+  ------------------------------------------------------------------------------
   {
     type = "recipe",
     name = "sp-rare-metal-processing",  -- #ForRegEx# - recipe
