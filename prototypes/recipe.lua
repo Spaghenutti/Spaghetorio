@@ -739,10 +739,222 @@ data:extend({
       {type = "item", name = "sp-stainless-steel", amount = 10}
     }
   },
+  ------------------------------------------------------------------------------
+  -- MARK: crushed-smelting
+  ------------------------------------------------------------------------------
+  {
+    type = "recipe",
+    name = "sp-crushed-iron-smelting",  -- #ForRegEx# - recipe
+    icons = util.overlay_small_icon("__base__/graphics/icons/iron-plate.png", 64,
+                                    "__Spaghenutti__/graphics/icons/crushed-iron-ore-1.png", 64),
+    category = "crushed-smelting",
+    subgroup = "raw-material",
+    enabled = false,
+    energy_required = 6,
+    hide_from_player_crafting = true,
+    ingredients = {
+      {type = "item", name = "sp-crushed-iron-ore", amount = 2}
+    },
+    results = {
+      {type = "item", name = "iron-plate", amount = 6}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-crushed-iron-smelting-into-beam",  -- #ForRegEx# - recipe
+    icons = util.overlay_small_icon("__base__/graphics/icons/steel-plate.png", 64,
+                                    "__Spaghenutti__/graphics/icons/crushed-iron-ore-1.png", 64),
+    category = "crushed-smelting",
+    subgroup = "raw-material",
+    enabled = false,
+    energy_required = 10,
+    hide_from_player_crafting = true,
+    ingredients = {
+      {type = "item", name = "sp-crushed-iron-ore", amount = 4}
+    },
+    results = {
+      {type = "item", name = "iron-beam", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-crushed-copper-smelting",  -- #ForRegEx# - recipe
+    icons = util.overlay_small_icon("__base__/graphics/icons/copper-plate.png", 64,
+                                    "__Spaghenutti__/graphics/icons/crushed-copper-ore-1.png", 64),
+    category = "crushed-smelting",
+    subgroup = "raw-material",
+    enabled = false,
+    energy_required = 6,
+    hide_from_player_crafting = true,
+    ingredients = {
+      {type = "item", name = "sp-crushed-copper-ore", amount = 2}
+    },
+    results = {
+      {type = "item", name = "copper-plate", amount = 6}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-crushed-aluminum-smelting",  -- #ForRegEx# - recipe
+    icons = util.overlay_small_icon("__Spaghenutti__/graphics/icons/alumina.png", 64,
+                                    "__Spaghenutti__/graphics/icons/crushed-aluminum-ore-1.png", 64),
+    category = "crushed-smelting",
+    subgroup = "raw-material",
+    enabled = false,
+    energy_required = 12,
+    hide_from_player_crafting = true,
+    ingredients = {
+      {type = "item", name = "sp-crushed-aluminum-ore", amount = 12}
+    },
+    results = {
+      {type = "item", name = "sp-alumina", amount = 10}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-crushed-chromite-smelting",  -- #ForRegEx# - recipe
+    icons = util.overlay_small_icon("__Spaghenutti__/graphics/icons/chromium-plate.png", 64,
+                                    "__Spaghenutti__/graphics/icons/crushed-chromite-1.png", 64),
+    category = "crushed-smelting",
+    subgroup = "raw-material",
+    enabled = false,
+    energy_required = 16,
+    hide_from_player_crafting = true,
+    ingredients = {
+      {type = "item", name = "sp-crushed-chromite", amount = 15}
+    },
+    results = {
+      {type = "item", name = "sp-chromium-plate", amount = 15},
+      {type = "item", name = "iron-plate", amount = 5}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-crushed-magnesium-smelting",  -- #ForRegEx# - recipe
+    icons = util.overlay_small_icon("__Spaghenutti__/graphics/icons/magnesium-chloride.png", 64,
+                                    "__Spaghenutti__/graphics/icons/crushed-magnesium-ore-1.png", 64),
+    category = "crushed-smelting",
+    subgroup = "raw-material",
+    enabled = false,
+    energy_required = 10,
+    hide_from_player_crafting = true,
+    ingredients = {
+      {type = "item", name = "sp-crushed-magnesium-ore", amount = 12}
+    },
+    results = {
+      {type = "item", name = "sp-magnesium-chloride", amount = 5}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-crushed-nickel-smelting",  -- #ForRegEx# - recipe
+    icons = util.overlay_small_icon("__Spaghenutti__/graphics/icons/nickel-ingot.png", 64,
+                                    "__Spaghenutti__/graphics/icons/crushed-nickel-ore-1.png", 64),
+    category = "crushed-smelting",
+    subgroup = "raw-material",
+    enabled = false,
+    energy_required = 16,
+    hide_from_player_crafting = true,
+    ingredients = {
+      {type = "item", name = "sp-crushed-nickel-ore", amount = 10}
+    },
+    results = {
+      {type = "item", name = "sp-nickel-ingot", amount = 8},
+      {type = "item", name = "iron-plate", amount = 5}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-crushed-tinstone-smelting",  -- #ForRegEx# - recipe
+    icons = util.overlay_small_icon("__Spaghenutti__/graphics/icons/tin-ingot.png", 64,
+                                    "__Spaghenutti__/graphics/icons/crushed-tinstone-1.png", 64),
+    category = "crushed-smelting",
+    subgroup = "raw-material",
+    enabled = false,
+    energy_required = 10,
+    hide_from_player_crafting = true,
+    ingredients = {
+      {type = "item", name = "sp-crushed-tinstone", amount = 10}
+    },
+    results = {
+      {type = "item", name = "sp-tin-ingot", amount = 12}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-crushed-titanium-smelting",  -- #ForRegEx# - recipe
+    icons = util.overlay_small_icon("__Spaghenutti__/graphics/icons/titanium-chloride.png", 64,
+                                    "__Spaghenutti__/graphics/icons/crushed-titanium-ore-1.png", 64),
+    category = "crushed-smelting",
+    subgroup = "raw-material",
+    enabled = false,
+    energy_required = 12,
+    hide_from_player_crafting = true,
+    ingredients = {
+      {type = "item", name = "sp-crushed-titanium-ore", amount = 15}
+    },
+    results = {
+      {type = "item", name = "sp-titanium-chloride", amount = 12}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-crushed-tungsten-smelting",  -- #ForRegEx# - recipe
+    icons = util.overlay_small_icon("__Spaghenutti__/graphics/icons/ammonium-paratungstate.png", 64,
+                                    "__Spaghenutti__/graphics/icons/crushed-tungsten-ore-1.png", 64),
+    category = "crushed-smelting",
+    subgroup = "raw-material",
+    enabled = false,
+    energy_required = 12,
+    hide_from_player_crafting = true,
+    ingredients = {
+      {type = "item", name = "sp-crushed-tungsten-ore", amount = 5}
+    },
+    results = {
+      {type = "item", name = "sp-ammonium-paratungstate", amount = 3}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-crushed-zinc-smelting",  -- #ForRegEx# - recipe
+    icons = util.overlay_small_icon("__Spaghenutti__/graphics/icons/zinc-sulfate-1.png", 64,
+                                    "__Spaghenutti__/graphics/icons/crushed-zinc-ore-1.png", 64),
+    category = "crushed-smelting",
+    subgroup = "raw-material",
+    enabled = false,
+    energy_required = 20,
+    hide_from_player_crafting = true,
+    ingredients = {
+      {type = "item", name = "sp-crushed-zinc-ore", amount = 8}
+    },
+    results = {
+      {type = "item", name = "sp-zinc-sulfate", amount = 16}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-crushed-zirconium-smelting",  -- #ForRegEx# - recipe
+    icons = util.overlay_small_icon("__Spaghenutti__/graphics/icons/zirconium-rod.png", 64,
+                                    "__Spaghenutti__/graphics/icons/crushed-zirconium-ore-1.png", 64),
+    category = "crushed-smelting",
+    subgroup = "raw-material",
+    enabled = false,
+    energy_required = 10,
+    hide_from_player_crafting = true,
+    ingredients = {
+      {type = "item", name = "sp-crushed-zirconium-ore", amount = 10}
+    },
+    results = {
+      {type = "item", name = "sp-zirconium-rod", amount = 12}
+    }
+  },
+  ------------------------------------------------------------------------------
+  -- MARK: intermediate-smelting
+  ------------------------------------------------------------------------------
   {
     type = "recipe",
     name = "sp-invar",  -- #ForRegEx# - recipe
-    category = "smelting",
+    category = "intermediate-smelting",
     enabled = false,
     energy_required = 12,
     ingredients = {
@@ -755,21 +967,8 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-stainless-steel-gear-wheel",  -- #ForRegEx# - recipe
-    category = "crafting",
-    enabled = false,
-    energy_required = 4,
-    ingredients = {
-      {type = "item", name = "sp-stainless-steel", amount = 2}
-    },
-    results = {
-      {type = "item", name = "sp-stainless-steel-gear-wheel", amount = 2}
-    }
-  },
-  {
-    type = "recipe",
     name = "sp-duralumin",  -- #ForRegEx# - recipe
-    category = "smelting",
+    category = "intermediate-smelting",
     enabled = false,
     energy_required = 16,
     ingredients = {
@@ -784,7 +983,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-aluminum-brass",  -- #ForRegEx# - recipe
-    category = "smelting",
+    category = "intermediate-smelting",
     enabled = false,
     energy_required = 16,
     ingredients = {
@@ -800,7 +999,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-inconel",  -- #ForRegEx# - recipe
-    category = "smelting",
+    category = "intermediate-smelting",
     enabled = false,
     energy_required = 16,
     ingredients = {
@@ -815,7 +1014,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-TiAlSn",  -- #ForRegEx# - recipe
-    category = "smelting",
+    category = "intermediate-smelting",
     enabled = false,
     energy_required = 14,
     ingredients = {
@@ -830,7 +1029,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-TiNb",  -- #ForRegEx# - recipe
-    category = "smelting",
+    category = "intermediate-smelting",
     enabled = false,
     energy_required = 8,
     ingredients = {
@@ -844,7 +1043,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-nitenol",  -- #ForRegEx# - recipe
-    category = "smelting",
+    category = "intermediate-smelting",
     enabled = false,
     energy_required = 8,
     ingredients = {
@@ -858,7 +1057,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-niobium-steel",  -- #ForRegEx# - recipe
-    category = "smelting",
+    category = "intermediate-smelting",
     enabled = false,
     energy_required = 24,
     ingredients = {
@@ -872,7 +1071,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-niobium-tin",  -- #ForRegEx# - recipe
-    category = "smelting",
+    category = "intermediate-smelting",
     enabled = false,
     energy_required = 4,
     ingredients = {
@@ -881,6 +1080,22 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-niobium-tin", amount = 2}
+    }
+  },
+  ------------------------------------------------------------------------------
+  -- MARK: crafting
+  ------------------------------------------------------------------------------
+  {
+    type = "recipe",
+    name = "sp-stainless-steel-gear-wheel",  -- #ForRegEx# - recipe
+    category = "crafting",
+    enabled = false,
+    energy_required = 4,
+    ingredients = {
+      {type = "item", name = "sp-stainless-steel", amount = 2}
+    },
+    results = {
+      {type = "item", name = "sp-stainless-steel-gear-wheel", amount = 2}
     }
   },
   {
@@ -1625,8 +1840,9 @@ data:extend({
     enabled = false,
     energy_required = 4,
     ingredients = {
-      {type = "item", name = "sp-stainless-steel", amount = 4},
-      {type = "item", name = "sp-flange", amount = 2}
+      {type = "item", name = "sp-stainless-steel", amount = 3},
+      {type = "item", name = "sp-flange", amount = 2},
+      {type = "item", name = "sp-carbon-fiber", amount = 6}
     },
     results = {
       {type = "item", name = "sp-pressure-tank", amount = 1}
@@ -1641,7 +1857,7 @@ data:extend({
     ingredients = {
       {type = "item", name = "sp-aluminum-brass", amount = 2},
       {type = "item", name = "sp-TiNb", amount = 1},
-      {type = "item", name = "sp-carbon-fiber", amount = 6}
+      {type = "item", name = "sp-kevlar", amount = 6}
     },
     results = {
       {type = "item", name = "sp-high-pressure-tank", amount = 1}
@@ -2481,13 +2697,14 @@ data:extend({
     enabled = false,
     energy_required = 3.6,
     ingredients = {
-      {type = "item", name = "electric-motor", amount = 1},
+      {type = "item", name = "pump", amount = 1},
       {type = "item", name = "sp-ball-bearing", amount = 4},
       {type = "item", name = "sp-bolts", amount = 2},
+      {type = "item", name = "sp-pressure-tank", amount = 2},
       {type = "item", name = "sp-machined-parts", amount = 6},
     },
     results = {
-      {type = "item", name = "sp-dynamo", amount = 1}
+      {type = "item", name = "sp-compressor", amount = 1}
     }
   },
   {
@@ -4697,25 +4914,20 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-red-wire-from-aluminum",
+    name = "sp-insulated-wire-from-aluminum",
+    icons = util.overlay_small_icon("__Spaghenutti__/graphics/icons/insulated-wire.png", 64,
+                                    "__Spaghenutti__/graphics/icons/aluminum-cable.png", 64),
+    category = "crafting-with-fluid",
     enabled = false,
-    ingredients =
-    {
-      {"electronic-circuit", 1},
-      {"sp-aluminum-cable", 1}
+    energy_required = 1,
+    hide_from_player_crafting = true,
+    ingredients = {
+      {type = "fluid", name = "sp-vinyl-chloride", amount = 30},
+      {type = "item", name = "sp-aluminum-cable", amount = 2}
     },
-    result = "red-wire"
-  },
-  {
-    type = "recipe",
-    name = "sp-green-wire-from-aluminum",
-    enabled = false,
-    ingredients =
-    {
-      {"electronic-circuit", 1},
-      {"sp-aluminum-cable", 1}
-    },
-    result = "green-wire"
+    results = {
+      {type = "item", name = "sp-insulated-wire", amount = 3}
+    }
   },
   ------------------------------------------------------------------------------
   -- MARK: Incomplete recipes

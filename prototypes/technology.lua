@@ -223,6 +223,72 @@ data:extend({
   },
   {
     type = "technology",
+    name = "sp-basic-crushing-smelting",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghenutti__/graphics/hr-icons/basic-crushing-smelting.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "kr-vc-iron-ore"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "kr-vc-copper-ore"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "kr-vc-sp-aluminum-ore"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "kr-vc-sp-tinstone"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-crushed-iron-smelting"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-crushed-iron-smelting-into-beam"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-crushed-copper-smelting"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-crushed-aluminum-smelting"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-crushed-tinstone-smelting"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-lead-slab"
+      },
+    },
+    prerequisites = {
+      "sp-geological-science-pack-1",
+      "advanced-material-processing",
+    },
+    unit =
+    {
+      count = 200,
+      ingredients = {
+        {"basic-tech-card", 1},
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"sp-geological-science-pack-1", 1},
+        {"sp-material-science-pack-1", 1}
+      },
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
     name = "sp-coal-processing",  -- #ForRegEx# - technology
     icon_size = 256,
     icon = "__Spaghenutti__/graphics/hr-icons/graphite-1.png",
@@ -241,7 +307,10 @@ data:extend({
     unit =
     {
       count = 50,
-      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}},
+      ingredients = {
+        {"basic-tech-card", 1},
+        {"automation-science-pack", 1}
+      },
       time = 15
     },
     order = "a-h-a"
@@ -272,7 +341,8 @@ data:extend({
         {"automation-science-pack", 1},
         {"logistic-science-pack", 1},
         {"chemical-science-pack", 1},
-        {"sp-material-science-pack-1", 1}},
+        {"sp-material-science-pack-1", 1}
+      },
       time = 15
     },
     order = "a-h-a"
@@ -691,17 +761,29 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "sp-nickel-ingot"
-      }
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-crushed-nickel-smelting"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "kr-vc-sp-nickel-ore"
+      },
     },
-    prerequisites = {"advanced-material-processing"},
+    prerequisites = {
+      "advanced-material-processing",
+      "sp-geological-science-pack-1"
+    },
     unit =
     {
-      count = 50,
+      count = 200,
       ingredients = {
         {"basic-tech-card", 1},
         {"automation-science-pack", 1},
         {"logistic-science-pack", 1},
-        {"sp-material-science-pack-1", 1}
+        {"sp-material-science-pack-1", 1},
+        {"sp-geological-science-pack-1", 1}
       },
       time = 15
     },
@@ -796,6 +878,14 @@ data:extend({
         type = "unlock-recipe",
         recipe = "sp-chromium-plate"
       },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-crushed-chromite-smelting"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "kr-vc-sp-chromite"
+      }
     },
     prerequisites = {
       "logistic-science-pack",
@@ -2692,11 +2782,101 @@ data:extend({
         recipe = "sp-vacuum-tube"
       },
     },
-    prerequisites = {"sp-relay", "sp-heatsink"},
+    prerequisites = {"sp-electronic-science-pack-2"},
     unit =
     {
       count = 100,
-      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-material-science-pack-1", 1}
+      },
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-dynamo",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghenutti__/graphics/hr-icons/dynamo.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-dynamo"
+      },
+    },
+    prerequisites = {"sp-electronic-science-pack-2"},
+    unit =
+    {
+      count = 100,
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-material-science-pack-1", 1}
+      },
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-compressor",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghenutti__/graphics/hr-icons/compressor.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-compressor"
+      },
+    },
+    prerequisites = {"sp-material-science-pack-2"},
+    unit =
+    {
+      count = 100,
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-electronic-science-pack-1", 1},
+        {"sp-material-science-pack-2", 1}
+      },
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-advanced-gearbox",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghenutti__/graphics/hr-icons/heavy-gearbox.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-heavy-gearbox"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-differential"
+      },
+    },
+    prerequisites = {
+      "sp-electronic-science-pack-2",
+      "sp-material-science-pack-2"
+    },
+    unit =
+    {
+      count = 100,
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1}
+      },
       time = 15
     },
     order = "a-h-a"
@@ -2742,7 +2922,11 @@ data:extend({
     unit =
     {
       count = 100,
-      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      ingredients = {
+        {"basic-tech-card", 1},
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1}
+      },
       time = 15
     },
     order = "a-h-a"
@@ -2940,6 +3124,10 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "sp-insulated-wire"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-insulated-wire-from-aluminum"
       },
     },
     prerequisites = {"sp-rubber"},

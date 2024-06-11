@@ -293,6 +293,11 @@ data.raw.technology["kr-atmosphere-condensation"].unit.ingredients = {
   {"sp-geological-science-pack-1", 1}
 }
 
+data.raw.technology["kr-gas-power-station"].prerequisites = {
+  "sp-dynamo",
+  "kr-steel-fluid-handling"
+}
+
 table.insert(data.raw.technology["advanced-electronics"].effects, {type = "unlock-recipe", recipe = "sp-separate-electronic-components"})
 
 table.insert(data.raw.technology["kr-automation-core"].prerequisites, "sp-iron-machining")

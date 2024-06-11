@@ -1,3 +1,4 @@
+
 TODO:
   + Add all the technology cards
     + 4 Levels:
@@ -37,6 +38,7 @@ TODO:
   - Fix barrel tints of fluids
   - Add radiocativity to radioactive items
 
+
 Low prio
   - Create function to generate acroproduct-conversion recipes
   - Create file for acroproduct-conversion recipes
@@ -68,6 +70,9 @@ Low prio
   - Add kevlar to pressure tanks
   - Add crushed rare metals
   - Add smelting for crushed ores
+  - Add seeds for tree -> Use actual trees to get wood and the seeds
+  - Add complex process for crushing and refining uranium ore
+  - Separate ores with centrifuges
 
 
 Future changes
@@ -75,6 +80,7 @@ Future changes
   - Support text plates mod
   - Support jetpack mod
   + Support LTN mod
+
 
 Notes:
   -

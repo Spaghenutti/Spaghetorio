@@ -78,7 +78,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "kr-vc-sp-copper-ore",
+    name = "kr-vc-copper-ore",
     icon = "__Spaghenutti__/graphics/crushing/crushing-copper-ore.png",
     icon_size = 256,
     mip_maps = 4,
@@ -87,7 +87,7 @@ data:extend({
     enabled = false,
     energy_required = 4,
     ingredients = {
-      {type = "item", name = "sp-copper-ore", amount = 6},
+      {type = "item", name = "copper-ore", amount = 6},
     },
     results = {
       {type = "item", name = "sand", probability = 0.5, amount = 1},
@@ -96,7 +96,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "kr-vc-sp-iron-ore",
+    name = "kr-vc-iron-ore",
     icon = "__Spaghenutti__/graphics/crushing/crushing-iron-ore.png",
     icon_size = 256,
     mip_maps = 4,
@@ -105,7 +105,7 @@ data:extend({
     enabled = false,
     energy_required = 4,
     ingredients = {
-      {type = "item", name = "sp-iron-ore", amount = 6},
+      {type = "item", name = "iron-ore", amount = 6},
     },
     results = {
       {type = "item", name = "sand", amount = 1},
@@ -1291,8 +1291,8 @@ util.change_recipe_ingredients("kr-electrolysis-plant",
   20,
   40)
 util.change_recipe_ingredients("kr-gas-power-station",
-  {{"steel-beam", 20}, {"sp-bolts", 30}, {"pipe", 20}, {"engine-unit", 8}, {"sp-dynamo", 4}, {"sp-valve", 10}},
-  {{"steel-beam", 40}, {"sp-bolts", 60}, {"pipe", 40}, {"engine-unit", 12}, {"sp-dynamo", 8}, {"sp-valve", 20}},
+  {{"steel-beam", 20}, {"sp-bolts", 30}, {"kr-steel-pipe", 20}, {"kr-steel-pump", 8}, {"sp-dynamo", 4}, {"sp-valve", 10}},
+  {{"steel-beam", 40}, {"sp-bolts", 60}, {"kr-steel-pipe", 40}, {"kr-steel-pump", 12}, {"sp-dynamo", 8}, {"sp-valve", 20}},
   20,
   40)
 util.change_recipe_ingredients("kr-advanced-solar-panel",

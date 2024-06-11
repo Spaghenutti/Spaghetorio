@@ -285,14 +285,14 @@ util.change_recipe_ingredients("roboport",
   30)
 data.raw.recipe["red-wire"].category = "crafting-with-fluid"
 util.change_recipe_ingredients("red-wire",
-{{"sp-insulated-wire", 1}, {"sp-transistor", 1}, {type = "fluid", name = "sp-vinyl-chloride", amount = 5}},
-{{"sp-insulated-wire", 1}, {"sp-transistor", 2}, {type = "fluid", name = "sp-vinyl-chloride", amount = 10}},
+{{"sp-insulated-wire", 1}, {"sp-transistor", 1}},
+{{"sp-insulated-wire", 1}, {"sp-transistor", 2}},
   0.5,
   0.5)
 data.raw.recipe["green-wire"].category = "crafting-with-fluid"
 util.change_recipe_ingredients("green-wire",
-  {{"sp-insulated-wire", 1}, {"sp-transistor", 1}, {type = "fluid", name = "sp-vinyl-chloride", amount = 5}},
-  {{"sp-insulated-wire", 1}, {"sp-transistor", 2}, {type = "fluid", name = "sp-vinyl-chloride", amount = 10}},
+  {{"sp-insulated-wire", 1}, {"sp-transistor", 1}},
+  {{"sp-insulated-wire", 1}, {"sp-transistor", 2}},
   0.5,
   0.5)
 util.change_recipe_ingredients("arithmetic-combinator",
