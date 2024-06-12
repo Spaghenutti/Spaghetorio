@@ -20,6 +20,19 @@ util.change_recipe_ingredients("iron-beam",
   {{"iron-ore", 6}},
   12,
   16)
+util.change_recipe_ingredients("sulfur",
+  {{type="fluid", name="water", amount=60}, {type="fluid", name="petroleum-gas", amount=60}},
+  {{type="fluid", name="water", amount=90}, {type="fluid", name="petroleum-gas", amount=90}},
+  2,
+  3)
+data.raw.recipe["sulfur"].results = {
+  {"sulfur", 4},
+  {type="fluid", name="sp-dirty-water-with-sulfur", amount=60}
+}
+data.raw.recipe["sulfur"].icon = "__base__/graphics/icons/sulfur.png"
+data.raw.recipe["sulfur"].icon_size = 64
+data.raw.recipe["sulfur"].subgroup = "raw-material"
+
 util.change_recipe_ingredients("electronic-circuit",
   {{"copper-cable", 3}, {"wood", 3}, {"sp-solder", 1}},
   {{"copper-cable", 8}, {"wood", 5}, {"sp-solder", 2}},

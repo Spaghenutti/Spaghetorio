@@ -1083,6 +1083,23 @@ data:extend({
     }
   },
   ------------------------------------------------------------------------------
+  -- MARK: filtering dirty water
+  ------------------------------------------------------------------------------
+  {
+    type = "recipe",
+    name = "sp-sulfur-catalyst",  -- #ForRegEx# - recipe
+    category = "chemistry",
+    enabled = false,
+    energy_required = 2,
+    ingredients = {
+      {type = "item", name = "sp-graphite", amount = 8},
+      {type = "fluid", name = "sp-dirty-water-with-sulfur", amount = 60}
+    },
+    results = {
+      {type = "item", name = "sp-sulfur-catalyst", amount = 1}
+    }
+  },
+  ------------------------------------------------------------------------------
   -- MARK: crafting
   ------------------------------------------------------------------------------
   {
@@ -1861,6 +1878,23 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-high-pressure-tank", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-sulfur-with-catalyst",  -- #ForRegEx# - recipe
+    icons = util.overlay_small_icon("__base__/graphics/icons/sulfur.png", 64,
+                                    "__Spaghenutti__/graphics/icons/sulfur-catalyst.png", 64),
+    category = "chemistry",
+    enabled = false,
+    energy_required = 2,
+    ingredients = {
+      {type = "item", name = "sp-sulfur-catalyst", amount = 1},
+      {type = "fluid", name = "petroleum-gas", amount = 60},
+      {type = "fluid", name = "water", amount = 60}
+    },
+    results = {
+      {type = "item", name = "sulfur", amount = 6}
     }
   },
   {

@@ -2065,6 +2065,37 @@ data:extend({
   },
   {
     type = "technology",
+    name = "sp-advanced-sulfur-processing",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghenutti__/graphics/hr-icons/sulfur-catalyst.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-sulfur-with-catalyst"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-sulfur-catalyst"
+      },
+    },
+    prerequisites = {"chemical-science-pack"},
+    unit =
+    {
+      count = 200,
+      ingredients = {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"sp-material-science-pack-1", 1},
+        {"sp-geological-science-pack-1", 1}
+      },
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
     name = "sp-tellurium-processing",  -- #ForRegEx# - technology
     icon_size = 256,
     icons = util.combine_two_icons("__Spaghenutti__/graphics/hr-icons/tellurium-hydroxide.png", 256, nil,

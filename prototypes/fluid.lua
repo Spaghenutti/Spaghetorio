@@ -137,6 +137,19 @@ data:extend({
   },
   {
     type = "fluid",
+    name = "sp-dirty-water-with-sulfur",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1KJ",
+    base_color = {r=0.05, g=0.1, b=0.5},
+    flow_color = {r=0.05, g=0.1, b=0.5},
+    icon = "__Spaghenutti__/graphics/icons/dirty-water-with-sulfur.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "dirty-fluid",
+    order = "a[fluid]-f[dirty-water-with-sulfur]"
+  },
+  {
+    type = "fluid",
     name = "sp-dirty-water-with-tin",  -- #ForRegEx# - fluid
     default_temperature = 25,
     heat_capacity = "0.1KJ",
@@ -249,7 +262,7 @@ data:extend({
     heat_capacity = "0.1KJ",
     base_color = {r=0.05, g=0.1, b=0.5},
     flow_color = {r=0.05, g=0.1, b=0.5},
-    icon = "__Spaghenutti__/graphics/dummy/dummy-fluid-sp-deuterium.png",
+    icon = "__Spaghenutti__/graphics/icons/deuterium.png",
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "gas",

@@ -2222,6 +2222,15 @@ data:extend({
   },
   {
     type = "item",
+    name = "sp-sulfur-catalyst",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/sulfur-catalyst.png",
+    icon_size = 64, icon_mipmaps = 4,
+    subgroup = "intermediate-product",
+    order = "[sulfur-catalyst]",
+    stack_size = 50
+  },
+  {
+    type = "item",
     name = "sp-catalyst",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/icons/catalyst.png",
     icon_size = 64, icon_mipmaps = 4,
