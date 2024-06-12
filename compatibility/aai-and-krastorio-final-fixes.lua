@@ -29,8 +29,8 @@ util.change_recipe_ingredients("logistic-science-pack",
   20,
   30)
 util.change_recipe_ingredients("chemical-science-pack",
-  {{type = "fluid", name = "sulfuric-acid", amount = 50}, {type = "fluid", name = "petroleum-gas", amount = 30}, {"plastic-bar", 5}, {"sp-graphite", 3}, {"blank-tech-card", 5}},
-  {{type = "fluid", name = "sulfuric-acid", amount = 75}, {type = "fluid", name = "petroleum-gas", amount = 50}, {"plastic-bar", 5}, {"sp-graphite", 5}, {"blank-tech-card", 5}},
+  {{type = "fluid", name = "sulfuric-acid", amount = 50}, {type = "fluid", name = "chlorine", amount = 30}, {"plastic-bar", 5}, {"sp-graphite", 3}, {"blank-tech-card", 5}},
+  {{type = "fluid", name = "sulfuric-acid", amount = 75}, {type = "fluid", name = "chlorine", amount = 50}, {"plastic-bar", 5}, {"sp-graphite", 5}, {"blank-tech-card", 5}},
   20,
   30)
 

@@ -1255,6 +1255,16 @@ util.change_recipe_ingredients("kr-fast-loader",
   {{"sp-aluminum-frame", 4}, {"electric-motor", 2}, {"fast-transport-belt", 1}, {"steel-gear-wheel", 6}, {"sp-bolts", 6}},
   2,
   3)
+  util.change_recipe_ingredients("kr-steel-pipe",
+  {{"sp-stainless-steel", 1}, {"sp-flange", 2}},
+  {{"sp-stainless-steel", 2}, {"sp-flange", 2}},
+  1,
+  1.5)
+util.change_recipe_ingredients("kr-steel-pipe-to-ground",
+  {{"kr-steel-pipe", 8}, {"sp-flange", 2}, {"sp-bolts", 8}},
+  {{"kr-steel-pipe", 12}, {"sp-flange", 2}, {"sp-bolts", 8}},
+  8,
+  12)
 util.change_recipe_ingredients("kr-steel-pump",
   {{"steel-plate", 5}, {"engine-unit", 2}, {"sp-bolts", 12}, {"sp-flange", 2}, {"sp-machined-parts", 4}},
   {{"steel-plate", 8}, {"engine-unit", 2}, {"sp-bolts", 20}, {"sp-flange", 2}, {"sp-machined-parts", 10}},

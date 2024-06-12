@@ -1087,16 +1087,22 @@ data:extend({
   ------------------------------------------------------------------------------
   {
     type = "recipe",
-    name = "sp-sulfur-catalyst",  -- #ForRegEx# - recipe
+    name = "sp-filter-dirty-water-with-sulfur",  -- #ForRegEx# - recipe
+    icon = "__Spaghenutti__/graphics/icons/dirty-water-with-sulfur.png",  -- TODO add filtering icon
+    icon_size = 64,
     category = "chemistry",
+    subgroup = "processed-resource",
     enabled = false,
     energy_required = 2,
     ingredients = {
-      {type = "item", name = "sp-graphite", amount = 8},
+      {type = "item", name = "sp-graphite", amount = 2},
       {type = "fluid", name = "sp-dirty-water-with-sulfur", amount = 60}
     },
     results = {
-      {type = "item", name = "sp-sulfur-catalyst", amount = 1}
+      {type = "item", name = "sulfur", amount = 2},
+      {type = "item", name = "copper-ore", amount = 1},
+      {type = "item", name = "sp-tinstone", probability = 0.5, amount = 1},
+      {type = "item", name = "sp-silver", probability = 0.2, amount = 1}
     }
   },
   ------------------------------------------------------------------------------
@@ -1884,12 +1890,12 @@ data:extend({
     type = "recipe",
     name = "sp-sulfur-with-catalyst",  -- #ForRegEx# - recipe
     icons = util.overlay_small_icon("__base__/graphics/icons/sulfur.png", 64,
-                                    "__Spaghenutti__/graphics/icons/sulfur-catalyst.png", 64),
+                                    "__Spaghenutti__/graphics/icons/catalyst.png", 64),
     category = "chemistry",
     enabled = false,
     energy_required = 2,
     ingredients = {
-      {type = "item", name = "sp-sulfur-catalyst", amount = 1},
+      {type = "item", name = "sp-catalyst", amount = 1},
       {type = "fluid", name = "petroleum-gas", amount = 60},
       {type = "fluid", name = "water", amount = 60}
     },

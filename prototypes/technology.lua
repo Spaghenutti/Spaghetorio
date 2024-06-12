@@ -2067,7 +2067,7 @@ data:extend({
     type = "technology",
     name = "sp-advanced-sulfur-processing",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/sulfur-catalyst.png",
+    icon = "__base__/graphics/technology/sulfur-processing.png",
     effects =
     {
       {
@@ -2076,19 +2076,19 @@ data:extend({
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-sulfur-catalyst"
-      },
+        recipe = "sp-filter-dirty-water-with-sulfur"
+      }
     },
-    prerequisites = {"chemical-science-pack"},
+    prerequisites = {"sp-chemical-science-pack-2"},
     unit =
     {
       count = 200,
       ingredients = {
-        {"automation-science-pack", 1},
-        {"logistic-science-pack", 1},
-        {"chemical-science-pack", 1},
-        {"sp-material-science-pack-1", 1},
-        {"sp-geological-science-pack-1", 1}
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1}
       },
       time = 15
     },
