@@ -1288,9 +1288,10 @@ data:extend({
     enabled = false,
     energy_required = 2,
     ingredients = {
-      {type = "item", name = "sp-graphite", amount = 2},
+      {type = "item", name = "sp-graphite", amount = 1},
       {type = "item", name = "sp-phosphoric-acid", amount = 1},
-      {type = "item", name = "copper-cable", amount = 1}
+      {type = "item", name = "copper-cable", amount = 2},
+      {type = "item", name = "sp-nickel-ingot", amount = 1}
     },
     results = {
       {type = "item", name = "sp-resistor", amount = 4}
@@ -1307,7 +1308,8 @@ data:extend({
     ingredients = {
       {type = "item", name = "copper-cable", amount = 1},
       {type = "item", name = "sp-phosphoric-acid", amount = 1},
-      {type = "item", name = "sp-aluminum-sheet", amount = 2}
+      {type = "item", name = "sp-aluminum-sheet", amount = 2},
+      {type = "item", name = "plastic-bar", amount = 1},
     },
     results = {
       {type = "item", name = "sp-capacitor", amount = 3}
@@ -1355,7 +1357,8 @@ data:extend({
     energy_required = 2,
     ingredients = {
       {type = "item", name = "copper-cable", amount = 3},
-      {type = "item", name = "sp-nickel-ingot", amount = 1}
+      {type = "item", name = "sp-chromium-plate", amount = 1},
+      {type = "item", name = "sp-aluminum-sheet", amount = 1}
     },
     results = {
       {type = "item", name = "sp-coil", amount = 3}
@@ -5309,7 +5312,8 @@ data:extend({
     ingredients = {
       -- {type = "item", name = "sp-silicon", amount = 1},
       {type = "item", name = "copper-cable", amount = 1},
-      {type = "item", name = "sp-phosphorus", amount = 2}
+      {type = "item", name = "sp-phosphorus", amount = 2},
+      {type = "item", name = "plastic-bar", amount = 1}
     },
     results = {
       {type = "item", name = "sp-diode", amount = 3}
@@ -5325,7 +5329,8 @@ data:extend({
       -- {type = "item", name = "sp-silicon", amount = 2},
       {type = "item", name = "copper-cable", amount = 1},
       {type = "item", name = "sp-phosphorus", amount = 1},
-      {type = "item", name = "sp-phosphoric-acid", amount = 1}
+      {type = "item", name = "sp-phosphoric-acid", amount = 1},
+      {type = "item", name = "plastic-bar", amount = 1}
     },
     results = {
       {type = "item", name = "sp-transistor", amount = 3}

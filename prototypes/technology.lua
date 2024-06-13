@@ -212,11 +212,20 @@ data:extend({
         recipe = "sp-anodized-aluminum"
       }
     },
-    prerequisites = {"sp-aluminum-processing", "chemical-science-pack"},
+    prerequisites = {
+      "sp-aluminum-processing",
+      "chemical-science-pack"},
     unit =
     {
       count = 100,
-      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}, {"chemical-science-pack", 1}},
+      ingredients = {
+        {"basic-tech-card", 1},
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"sp-electronic-science-pack-1", 1},
+        {"sp-material-science-pack-1", 1}
+      },
       time = 15
     },
     order = "a-h-a"
