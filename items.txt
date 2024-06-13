@@ -232,7 +232,6 @@ Basic Intermediates
     - Chlorine Cl
   +r flange
   +r filter
-  +r sinter-filter
   +r coolant
 
 Intermediates

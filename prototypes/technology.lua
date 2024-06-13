@@ -1053,18 +1053,13 @@ data:extend({
     type = "technology",
     name = "sp-filter",  -- #ForRegEx# - technology
     icon_size = 256,
-    icons = util.combine_two_icons("__Spaghenutti__/graphics/hr-icons/filter.png", 256, nil,
-                                   "__Spaghenutti__/graphics/hr-icons/sinter-filter.png", 256, nil),
+    icon = "__Spaghenutti__/graphics/hr-icons/filter.png",
     effects =
     {
       {
         type = "unlock-recipe",
         recipe = "sp-filter"
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-sinter-filter"
-      },
+      }
     },
     prerequisites = {"chemical-science-pack"},
     unit =

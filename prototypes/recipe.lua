@@ -63,7 +63,6 @@ local util = require("data-util")
 --    - "sp-kevlar"
 --    - "sp-magnet"
 --    - "sp-neodymium-magnet"
---    - "sp-sinter-filter"
 --    - "sp-spring"
 --    - "sp-advanced-compute-unit"
 --    - "sp-antenna-chip"
@@ -1686,20 +1685,6 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-sinter-filter",  -- #ForRegEx# - recipe
-    category = "crafting",
-    enabled = false,
-    energy_required = 2.4,
-    ingredients = {
-      {type = "item", name = "sp-bronze-rod", amount = 3},
-      {type = "item", name = "sp-stainless-steel", amount = 2}
-    },
-    results = {
-      {type = "item", name = "sp-sinter-filter", amount = 1}
-    }
-  },
-  {
-    type = "recipe",
     name = "sp-coolant",  -- #ForRegEx# - recipe
     category = "chemistry",
     enabled = false,
@@ -1770,7 +1755,7 @@ data:extend({
     name = "sp-electromagnet",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
-    energy_required = 3.2,
+    energy_required = 1.6,
     ingredients = {
       {type = "item", name = "sp-machined-parts", amount = 2},
       {type = "item", name = "iron-stick", amount = 1},
@@ -1801,7 +1786,7 @@ data:extend({
     name = "sp-plate-heat-exchanger",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
-    energy_required = 4,
+    energy_required = 2,
     ingredients = {
       {type = "item", name = "sp-bolts", amount = 1},
       {type = "item", name = "copper-plate", amount = 1},
@@ -1816,7 +1801,7 @@ data:extend({
     name = "sp-spark-plug",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
-    energy_required = 4,
+    energy_required = 3,
     ingredients = {
       {type = "item", name = "sp-inconel", amount = 2},
       {type = "item", name = "copper-plate", amount = 1},
@@ -1846,7 +1831,7 @@ data:extend({
     name = "sp-gyro",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
-    energy_required = 4,
+    energy_required = 2,
     ingredients = {
       {type = "item", name = "sp-magnet", amount = 2},
       {type = "item", name = "sp-silica", amount = 1},
@@ -1861,7 +1846,7 @@ data:extend({
     name = "sp-pressure-tank",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
-    energy_required = 4,
+    energy_required = 2,
     ingredients = {
       {type = "item", name = "sp-stainless-steel", amount = 3},
       {type = "item", name = "sp-flange", amount = 2},
@@ -1943,7 +1928,7 @@ data:extend({
                                     "__Spaghenutti__/graphics/icons/stainless-steel.png", 64),
     category = "crafting",
     enabled = false,
-    energy_required = 3.2,
+    energy_required = 6,
     ingredients = {
       {type = "item", name = "sp-stainless-steel", amount = 5}
     },
@@ -1958,7 +1943,7 @@ data:extend({
                                     "__Spaghenutti__/graphics/icons/TiAlSn.png", 64),
     category = "crafting",
     enabled = false,
-    energy_required = 4.8,
+    energy_required = 8,
     ingredients = {
       {type = "item", name = "sp-TiAlSn", amount = 3}
     },
@@ -2007,7 +1992,7 @@ data:extend({
     name = "sp-turbopump",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
-    energy_required = 4.8,
+    energy_required = 8,
     ingredients = {
       {type = "item", name = "sp-turbine-blade", amount = 10},
       {type = "item", name = "sp-ceramics", amount = 2},
@@ -2024,7 +2009,7 @@ data:extend({
     name = "sp-nozzle",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
-    energy_required = 5.6,
+    energy_required = 12,
     ingredients = {
       {type = "item", name = "copper-plate", amount = 2},
       {type = "item", name = "sp-TiAlSn", amount = 2},
@@ -2041,7 +2026,7 @@ data:extend({
     name = "sp-fuel-injector",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
-    energy_required = 1,
+    energy_required = 3,
     ingredients = {
       {type = "item", name = "sp-tungsten-carbide", amount = 1},
       {type = "item", name = "sp-inconel", amount = 1}
@@ -2564,7 +2549,7 @@ data:extend({
     energy_required = 3,
     ingredients = {
       {type = "fluid", name = "petroleum-gas", amount = 100},
-      {type = "item", name = "sp-sinter-filter", amount = 2},
+      {type = "item", name = "sp-filter", amount = 2},
       {type = "item", name = "coal", amount = 6},
     },
     results = {
@@ -2584,7 +2569,7 @@ data:extend({
     energy_required = 3,
     ingredients = {
       {type = "fluid", name = "petroleum-gas", amount = 100},
-      {type = "item", name = "sp-sinter-filter", amount = 1},
+      {type = "item", name = "sp-filter", amount = 1},
     },
     results = {
       {type = "fluid", name = "sp-ethylene", amount = 40},
@@ -2657,7 +2642,7 @@ data:extend({
     hide_from_player_crafting = true,
     ingredients = {
       {type = "fluid", name = "petroleum-gas", amount = 100},
-      {type = "item", name = "sp-sinter-filter", amount = 1},
+      {type = "item", name = "sp-filter", amount = 1},
       {type = "item", name = "coal", amount = 10},
     },
     results = {
@@ -3077,7 +3062,7 @@ data:extend({
     energy_required = 4,
     ingredients = {
       {type = "item", name = "sp-grobgnum", amount = 6},
-      {type = "item", name = "sp-sinter-filter", amount = 1},
+      {type = "item", name = "sp-filter", amount = 1},
       {type = "fluid", name = "sp-ethylene-dichloride", amount = 20}
     },
     results = {
@@ -3107,7 +3092,7 @@ data:extend({
     enabled = false,
     energy_required = 8,
     ingredients = {
-      {type = "item", name = "sp-sinter-filter", amount = 1},
+      {type = "item", name = "sp-filter", amount = 1},
       {type = "fluid", name = "sp-deuterium", amount = 20},
       {type = "fluid", name = "sp-grobgnum-slurry", amount = 20}
     },

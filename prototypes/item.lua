@@ -1744,16 +1744,6 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-sinter-filter",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/icons/sinter-filter.png",
-    icon_size = 64,
-    scale = 0.25,
-    subgroup = "mechanical-component",
-    order = "[sinter-filter]",
-    stack_size = 100
-  },
-  {
-    type = "item",
     name = "sp-crucible",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/icons/crucible.png",
     icon_size = 64,
