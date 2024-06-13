@@ -1724,6 +1724,22 @@ data:extend({
   },
   {
     type = "item",
+    name = "sp-ceramic-matrix-composites",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/ceramic-matrix-composites-1.png",
+    icon_size = 64,
+    pictures = {
+      {size = 64, filename = "__Spaghenutti__/graphics/icons/ceramic-matrix-composites-1.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghenutti__/graphics/icons/ceramic-matrix-composites-2.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghenutti__/graphics/icons/ceramic-matrix-composites-3.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghenutti__/graphics/icons/ceramic-matrix-composites-4.png", scale = 0.25, mipmap_count = 4}
+    },
+    scale = 0.25,
+    subgroup = "mechanical-component",
+    order = "[ceramic]",
+    stack_size = 100
+  },
+  {
+    type = "item",
     name = "sp-flange",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/icons/flange.png",
     icon_size = 64,

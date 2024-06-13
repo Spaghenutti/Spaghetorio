@@ -1646,6 +1646,22 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "sp-ceramic-matrix-composites",  -- #ForRegEx# - recipe
+    category = "crafting",
+    enabled = false,
+    energy_required = 12,
+    ingredients = {
+      {type = "item", name = "sp-tungsten-carbide", amount = 1},
+      {type = "item", name = "sp-TiNb", amount = 2},
+      {type = "item", name = "sp-graphene", amount = 3},
+      {type = "item", name = "sp-high-purity-silicon", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-ceramic-matrix-composites", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
     name = "sp-crucible",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
@@ -1948,7 +1964,7 @@ data:extend({
     enabled = false,
     energy_required = 8,
     ingredients = {
-      {type = "item", name = "sp-TiAlSn", amount = 3}
+      {type = "item", name = "sp-TiAlSn", amount = 6}
     },
     results = {
       {type = "item", name = "sp-turbine-blade", amount = 2}
@@ -2214,6 +2230,23 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-advanced-compute-unit", amount = 1}
+    }
+  },  {
+    type = "recipe",
+    name = "sp-advanced-processing-unit",  -- #ForRegEx# - recipe
+    category = "crafting",
+    enabled = false,
+    energy_required = 8,
+    -- TODO: Change recipe, its the same as adanced compute unit
+    ingredients = {
+      {type = "item", name = "sp-circuit-board", amount = 4},
+      {type = "item", name = "sp-aluminum-frame", amount = 2},
+      {type = "item", name = "sp-memory-chip", amount = 2},
+      {type = "item", name = "sp-processor", amount = 1},
+      {type = "item", name = "sp-integrated-circuit", amount = 5}
+    },
+    results = {
+      {type = "item", name = "sp-advanced-processing-unit", amount = 1}
     }
   },
   {

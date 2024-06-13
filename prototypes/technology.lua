@@ -611,12 +611,37 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "sp-tungsten-carbide"
-      },
+      }
     },
     prerequisites = {
       "sp-titanium-processing",
       "sp-basic-ceramics"
     },
+    unit =
+    {
+      count = 100,
+      ingredients = {
+        {"basic-tech-card", 1},
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1}
+      },
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-ceramic-matrix-composites",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghenutti__/graphics/hr-icons/ceramic-matrix-composites-1.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-ceramic-matrix-composites"
+      }
+    },
+    prerequisites = {"sp-advanced-ceramics"},
     unit =
     {
       count = 100,
@@ -1396,6 +1421,32 @@ data:extend({
         type = "unlock-recipe",
         recipe = "sp-memory-chip"
       },
+    },
+    prerequisites = {"sp-electronic-science-pack-2"},
+    unit =
+    {
+      count = 100,
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1}
+      },
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-advanced-processing-unit",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghenutti__/graphics/hr-icons/advanced-processing-unit.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-advanced-processing-unit"
+      }
     },
     prerequisites = {"sp-electronic-science-pack-2"},
     unit =

@@ -21,7 +21,7 @@ TODO:
   + Add missing results for acrocrystal recipes
   + Add missing results for acrovoid recipes
   + Add missing results for acromatter recipes
-  - Put petroleum gas icon on ethylene. Create new icon for petroleum gas.
+  + Put petroleum gas icon on ethylene. Create new icon for petroleum gas.
   + Updated recipes using gears with gearbox, heavy-gearbox and differential
   - Updated recipes for electronic components to have common intermediates
   - do TODO in recipes: "add uses to"
@@ -54,9 +54,9 @@ Low prio
   - Add duct tape, lol
   - Why cant I align the 3rd and 4th tier of tech cards... why.....????
   - Why have some recipes not have a dropshadow???? select sp-tin-and-lead on furnace
-  - Add subgroups to fluids
+  + Add subgroups to fluids
   - Add ceramic matrix components
-  - Add compressor
+  + Add compressor
   - Add seal
   - Add bearing
   - Add more than 3 recipes to catalysts

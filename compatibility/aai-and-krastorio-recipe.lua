@@ -370,15 +370,17 @@ data:extend({
   {
     type = "recipe",
     name = "sp-glass-from-calcium",  -- #ForRegEx# - recipe
+    icons = util.overlay_small_icon("__Krastorio2Assets__/icons/items/glass.png", 64,
+                                    "__Spaghenutti__/graphics/icons/calcium.png", 64),
     category = "smelting",
     enabled = false,
-    energy_required = 2.4,
+    energy_required = 15,
     ingredients = {
-      {type = "item", name = "sand", amount = 3},
-      {type = "item", name = "sp-calcium", amount = 1}
+      {type = "item", name = "sand", amount = 14},
+      {type = "item", name = "sp-calcium", amount = 4}
     },
     results = {
-      {type = "item", name = "glass", amount = 1}
+      {type = "item", name = "glass", amount = 10}
     }
   },
   {
