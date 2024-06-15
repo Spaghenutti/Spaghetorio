@@ -1,11 +1,32 @@
 
-logistic-science-pack
+Krastorio rare-metal items:
+  - "raw-rare-metals"
+  - "enriched-rare-metals"
+  - "rare-metals"
 
-sp-material-science-pack-1, sp-electrical-science-pack-1, sp-geological-science-pack
+Krastorio rare-metal recipes:
+  - filter-dirty-water
+  - enriched-rare-metals
 
-chemical-science-pack
+  - "rare-metals" (from raw rare metals)
+  - "rare-metals-2" (from enriched rare metals) 
 
-
-sp-titanium-nitride
-
-sp-titanium-processing, (krastorio nitrogen)
+  - "empty-dt-fuel"
+  - "imersium-plate"
+  - "imersium-beam"
+  - "imersium-gear-wheel"
+  - "matter-research-data"
+  - "tritium"
+  - "nitric-acid"
+  - "kr-advanced-chemical-plant"
+  - "kr-advanced-loader"
+  - "kr-advanced-radar"
+  - "kr-advanced-tank"
+  - "kr-advanced-transport-belt"
+  - "kr-intergalactic-transceiver"
+  - "kr-large-roboport"
+  - "kr-small-roboport"
+  - "kr-laser-artillery-turret"
+  - "kr-nuclear-locomotive"
+  - "kr-railgun-turret"
+  - "kr-rocket-turret"

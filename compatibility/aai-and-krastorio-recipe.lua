@@ -288,30 +288,6 @@ data:extend({
   ------------------------------------------------------------------------------
   {
     type = "recipe",
-    name = "sp-rare-metal-processing",  -- #ForRegEx# - recipe
-    icons = util.combine_four_icons("__Spaghenutti__/graphics/icons/yttrium.png", 64, nil,
-                                    "__Spaghenutti__/graphics/icons/lanthanum.png", 64, nil,
-                                    "__Spaghenutti__/graphics/icons/cerium.png", 64, nil,
-                                    "__Spaghenutti__/graphics/icons/neodymium.png", 64, nil),
-    icon_size = 64,
-    mip_maps = 4,
-    category = "chemistry",
-    subgroup = "raw-resource",
-    enabled = false,
-    energy_required = 3.2,
-    ingredients = {
-      {type = "item", name = "rare-metals", amount = 2}
-    },
-    results = {
-      {type = "item", name = "sp-yttrium", probability = 0.06, amount = 1},
-      {type = "item", name = "sp-lanthanum", probability = 0.09, amount = 1},
-      {type = "item", name = "sp-cerium", probability = 0.15, amount = 1},
-      {type = "item", name = "sp-neodymium", probability = 0.08, amount = 1},
-      {type = "item", name = "sand", probability = 0.62, amount = 1}
-    }
-  },
-  {
-    type = "recipe",
     name = "sp-deuterium",  -- #ForRegEx# - recipe
     icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
     icon_size = 64,
@@ -1209,6 +1185,35 @@ util.change_recipe_ingredients("silicon",
   {{"sp-silica", 24}},
   60,
   80)
+
+-- MARK: rare metals changes
+data.raw.recipe["rare-metals"].category = "chemistry"
+data.raw.recipe["rare-metals"].hide_from_player_crafting = true
+util.change_recipe_ingredients("rare-metals",
+  {{type = "fluid", name = "sp-sodium-hydroxide", amount = 20}, {"raw-rare-metals", 2}},
+  {{type = "fluid", name = "sp-sodium-hydroxide", amount = 30}, {"raw-rare-metals", 2}},
+  3,
+  5)
+data.raw.recipe["rare-metals"].results = {
+  {type = "item", name = "sp-yttrium", probability = 0.06, amount = 1},
+  {type = "item", name = "sp-lanthanum", probability = 0.09, amount = 1},
+  {type = "item", name = "sp-cerium", probability = 0.15, amount = 1},
+  {type = "item", name = "sp-neodymium", probability = 0.08, amount = 1},
+  {type = "item", name = "sand", probability = 0.62, amount = 1}
+}
+data.raw.recipe["rare-metals-2"].category = "chemistry"
+data.raw.recipe["rare-metals-2"].hide_from_player_crafting = true
+util.change_recipe_ingredients("rare-metals",
+  {{type = "fluid", name = "sp-sodium-hydroxide", amount = 15}, {"enriched-rare-metals", 3}},
+  {{type = "fluid", name = "sp-sodium-hydroxide", amount = 20}, {"enriched-rare-metals", 3}},
+  4,
+  6)
+data.raw.recipe["rare-metals-2"].results = {
+  {type = "item", name = "sp-yttrium", probability = 0.15, amount = 1},
+  {type = "item", name = "sp-lanthanum", probability = 0.3, amount = 1},
+  {type = "item", name = "sp-cerium", probability = 0.4, amount = 1},
+  {type = "item", name = "sp-neodymium", probability = 0.25, amount = 1}
+}
 
 -- MARK: recipe changes
 -- Overwrite change done by krastorio

@@ -2235,7 +2235,8 @@ data:extend({
     results = {
       {type = "item", name = "sp-advanced-compute-unit", amount = 1}
     }
-  },  {
+  },
+  {
     type = "recipe",
     name = "sp-advanced-processing-unit",  -- #ForRegEx# - recipe
     category = "crafting",

@@ -114,17 +114,20 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "rare-metals"
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-rare-metal-processing"
-      },
+      }
     },
-    prerequisites = {"kr-fluids-chemistry"},
+    prerequisites = {"sp-chemical-science-pack-2"},
     unit =
     {
       count = 50,
-      ingredients = {{"chemical-science-pack", 1}},
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1}
+      },
       time = 15
     },
     order = "a-h-a"
@@ -349,6 +352,14 @@ data.raw.technology["kr-electric-mining-drill-mk2"].prerequisites = {"sp-titaniu
 
 data.raw.technology["kr-fuel"].prerequisites = {"sp-chemical-science-pack-2"}
 
+data.raw.technology["kr-radar"].prerequisites = {"sp-electronic-science-pack-2"}
+data.raw.technology["kr-radar"].unit.ingredients = {
+  {"sp-automation-science-pack-2", 1},
+  {"sp-logistic-science-pack-2", 1},
+  {"sp-electronic-science-pack-2", 1},
+  {"sp-geological-science-pack-2", 1},
+  {"sp-material-science-pack-2", 1}
+}
 -- aai industry technology changes
 data.raw.technology["engine"].prerequisites = {"sp-steel-machining"}
 
@@ -360,7 +371,22 @@ data.raw.technology["medium-electric-pole"].unit.ingredients = {
   {"sp-electronic-science-pack-1", 1}
 }
 
+data.raw.technology["concrete-walls"].unit.ingredients = {
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"chemical-science-pack", 1},
+  {"sp-material-science-pack-1", 1},
+  {"sp-geological-science-pack-1", 1}
+}
+
 data.raw.technology["electric-engine"].prerequisites = {"sp-magnet", "sp-ball-bearing"}
+data.raw.technology["electric-engine"].unit.ingredients = {
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"chemical-science-pack", 1},
+  {"sp-material-science-pack-1", 1},
+  {"sp-electronic-science-pack-1", 1}
+}
 
 data.raw.technology["toolbelt-3"].effects = {
   {
