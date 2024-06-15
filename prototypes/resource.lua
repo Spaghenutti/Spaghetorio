@@ -115,7 +115,9 @@ data:extend({
       hardness = 1,
       mining_particle = "limestone-particle",
       mining_time = 1,
-      result = "sp-limestone"
+      result = "sp-limestone",
+      fluid_amount = 10,
+      required_fluid = "sp-sulfamate"
       },
     collision_box = {{ -0.1, -0.1}, {0.1, 0.1}},
     selection_box = {{ -0.5, -0.5}, {0.5, 0.5}},
@@ -163,7 +165,9 @@ data:extend({
       hardness = 3,
       mining_particle = "titanium-ore-particle",
       mining_time = 1,
-      result = "sp-titanium-ore"
+      result = "sp-titanium-ore",
+      fluid_amount = 15,
+      required_fluid = "sp-phosphoric-acid"
       },
     collision_box = {{ -0.1, -0.1}, {0.1, 0.1}},
     selection_box = {{ -0.5, -0.5}, {0.5, 0.5}},
@@ -211,7 +215,9 @@ data:extend({
       hardness = 1,
       mining_particle = "magnesium-ore-particle",
       mining_time = 1,
-      result = "sp-magnesium-ore"
+      result = "sp-magnesium-ore",
+      fluid_amount = 5,
+      required_fluid = "sp-phosphoric-acid"
       },
     collision_box = {{ -0.1, -0.1}, {0.1, 0.1}},
     selection_box = {{ -0.5, -0.5}, {0.5, 0.5}},
@@ -309,7 +315,9 @@ data:extend({
       hardness = 1,
       mining_particle = "spodumene-particle",
       mining_time = 1,
-      result = "sp-spodumene"
+      result = "sp-spodumene",
+      fluid_amount = 20,
+      required_fluid = "sp-sulfamate"
       },
     collision_box = {{ -0.1, -0.1}, {0.1, 0.1}},
     selection_box = {{ -0.5, -0.5}, {0.5, 0.5}},
@@ -405,7 +413,9 @@ data:extend({
       hardness = 4,
       mining_particle = "tungsten-ore-particle",
       mining_time = 1,
-      result = "sp-tungsten-ore"
+      result = "sp-tungsten-ore",
+      fluid_amount = 30,
+      required_fluid = "sp-perchloric-acid"
       },
     collision_box = {{ -0.1, -0.1}, {0.1, 0.1}},
     selection_box = {{ -0.5, -0.5}, {0.5, 0.5}},

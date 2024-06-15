@@ -1782,6 +1782,10 @@ data:extend({
         type = "unlock-recipe",
         recipe = "sp-phosphoric-acid"
       },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-sulfamate"
+      }
     },
     prerequisites = {"chemical-science-pack"},
     unit =
@@ -1793,6 +1797,33 @@ data:extend({
         {"chemical-science-pack", 1},
         {"sp-material-science-pack-1", 1},
         {"sp-geological-science-pack-1", 1}
+      },
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-perchloric-acid",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghenutti__/graphics/hr-icons/perchloric-acid.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-perchloric-acid"
+      }
+    },
+    prerequisites = {"sp-chemical-science-pack-2"},
+    unit =
+    {
+      count = 200,
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1}
       },
       time = 15
     },

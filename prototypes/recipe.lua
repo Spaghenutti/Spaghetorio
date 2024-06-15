@@ -12,7 +12,8 @@ local util = require("data-util")
 --    - 
 --  - add uses to:
 --    - "sp-methyl-tert-butyl-ether" (fluid)
---    - "sp-phosphoric-acid"
+--    - "sp-sulfamate" (fluid) (already used for mining)
+--    - "sp-perchloric-acid" (fluid) (already used for mining)
 --    - "sp-crucible"
 --    - "sp-laser"
 --    - 
@@ -1284,12 +1285,12 @@ data:extend({
   {
     type = "recipe",
     name = "sp-resistor",  -- #ForRegEx# - recipe
-    category = "crafting",
+    category = "crafting-with-fluid",
     enabled = false,
     energy_required = 2,
     ingredients = {
       {type = "item", name = "sp-graphite", amount = 1},
-      {type = "item", name = "sp-phosphoric-acid", amount = 1},
+      {type = "fluid", name = "sp-phosphoric-acid", amount = 12},
       {type = "item", name = "copper-cable", amount = 2},
       {type = "item", name = "sp-nickel-ingot", amount = 1}
     },
@@ -1300,14 +1301,12 @@ data:extend({
   {
     type = "recipe",
     name = "sp-capacitor-from-aluminum",  -- #ForRegEx# - recipe
-    icons = util.overlay_small_icon("__Spaghenutti__/graphics/icons/capacitor.png", 64,
-                                    "__Spaghenutti__/graphics/icons/aluminum-sheet.png", 64),
-    category = "crafting",
+    category = "crafting-with-fluid",
     enabled = false,
     energy_required = 3.2,
     ingredients = {
       {type = "item", name = "copper-cable", amount = 1},
-      {type = "item", name = "sp-phosphoric-acid", amount = 1},
+      {type = "fluid", name = "sp-phosphoric-acid", amount = 10},
       {type = "item", name = "sp-aluminum-sheet", amount = 2},
       {type = "item", name = "plastic-bar", amount = 1},
     },
@@ -1320,16 +1319,18 @@ data:extend({
     name = "sp-capacitor-from-niobium",  -- #ForRegEx# - recipe
     icons = util.overlay_small_icon("__Spaghenutti__/graphics/icons/capacitor.png", 64,
                                     "__Spaghenutti__/graphics/icons/niobium-billet.png", 64),
-    category = "crafting",
+    category = "crafting-with-fluid",
     enabled = false,
     energy_required = 3.2,
+    hide_from_player_crafting = true,
     ingredients = {
       {type = "item", name = "copper-cable", amount = 1},
-      {type = "item", name = "sp-phosphoric-acid", amount = 1},
-      {type = "item", name = "sp-niobium-billet", amount = 2}
+      {type = "fluid", name = "sp-phosphoric-acid", amount = 8},
+      {type = "item", name = "sp-niobium-billet", amount = 2},
+      {type = "item", name = "plastic-bar", amount = 1}
     },
     results = {
-      {type = "item", name = "sp-capacitor", amount = 3}
+      {type = "item", name = "sp-capacitor", amount = 6}
     }
   },
   {
@@ -1340,13 +1341,15 @@ data:extend({
     category = "crafting",
     enabled = false,
     energy_required = 4,
+    hide_from_player_crafting = true,
     ingredients = {
       {type = "item", name = "copper-cable", amount = 1},
       {type = "item", name = "sp-phosphorus", amount = 1},
-      {type = "item", name = "sp-tantalum-billet", amount = 1}
+      {type = "item", name = "sp-tantalum-billet", amount = 1},
+      {type = "item", name = "plastic-bar", amount = 1}
     },
     results = {
-      {type = "item", name = "sp-capacitor", amount = 3}
+      {type = "item", name = "sp-capacitor", amount = 5}
     }
   },
   {
@@ -1399,7 +1402,7 @@ data:extend({
     enabled = false,
     energy_required = 0.5,
     ingredients = {
-      {type = "fluid", name = "sp-vinyl-chloride", amount = 10},
+      {type = "fluid", name = "sp-vinyl-chloride", amount = 4},
       {type = "item", name = "copper-cable", amount = 1}
     },
     results = {
@@ -1563,11 +1566,12 @@ data:extend({
   {
     type = "recipe",
     name = "sp-fabric",  -- #ForRegEx# - recipe
-    category = "crafting",
+    category = "crafting-with-fluid",
     enabled = false,
     energy_required = 2.4,
     ingredients = {
-      {type = "item", name = "plastic-bar", amount = 2}
+      {type = "item", name = "plastic-bar", amount = 2},
+      {type = "fluid", name = "sp-sodium-hydroxide", amount = 10}
     },
     results = {
       {type = "item", name = "sp-fabric", amount = 1}
@@ -2337,14 +2341,47 @@ data:extend({
     type = "recipe",
     name = "sp-phosphoric-acid",  -- #ForRegEx# - recipe
     category = "chemistry",
+    subgroup = "fluid-recipes",
     enabled = false,
-    energy_required = 3.2,
+    energy_required = 12,
     ingredients = {
       {type = "item", name = "sp-phosphorus", amount = 2},
-      {type = "fluid", name = "water", amount = 200},
+      {type = "fluid", name = "water", amount = 150},
     },
     results = {
-      {type = "item", name = "sp-phosphoric-acid", amount = 1}
+      {type = "fluid", name = "sp-phosphoric-acid", amount = 25}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-sulfamate",  -- #ForRegEx# - recipe
+    category = "chemistry",
+    subgroup = "fluid-recipes",
+    enabled = false,
+    energy_required = 12,
+    ingredients = {
+      -- Base: {"sp-nitrogem", 10}, Krastorio: {"nitrogen", 10}
+      {type = "item", name = "sulfur", amount = 3},
+      {type = "fluid", name = "water", amount = 50}
+    },
+    results = {
+      {type = "fluid", name = "sp-sulfamate", amount = 30}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-perchloric-acid",  -- #ForRegEx# - recipe
+    category = "chemistry",
+    subgroup = "fluid-recipes",
+    enabled = false,
+    energy_required = 20,
+    ingredients = {
+      -- Base: {"water", 50}, Krastorio: {"mineral-water", 30}
+      -- Base: {"sp-chlorine", 20}, Krastorio: {"hydrogen-chloride", 20}
+      {type = "item", name = "sp-catalyst", amount = 1}
+    },
+    results = {
+      {type = "fluid", name = "sp-perchloric-acid", amount = 30}
     }
   },
   {
@@ -2356,7 +2393,7 @@ data:extend({
     ingredients = {
       {type = "item", name = "sulfur", amount = 3},
       {type = "fluid", name = "sp-styrene", amount = 50},
-      {type = "item", name = "sp-phosphoric-acid", amount = 1},
+      {type = "fluid", name = "sp-phosphoric-acid", amount = 10},
     },
     results = {
       {type = "item", name = "sp-rubber", amount = 1}
@@ -2581,8 +2618,9 @@ data:extend({
     type = "recipe",
     name = "sp-propane",  -- #ForRegEx# - recipe
     category = "chemistry",
+    subgroup = "fluid-recipes",
     enabled = false,
-    energy_required = 3,
+    energy_required = 12,
     ingredients = {
       {type = "fluid", name = "petroleum-gas", amount = 100},
       {type = "item", name = "sp-filter", amount = 2},
@@ -2600,9 +2638,9 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "chemistry",
-    subgroup = "processed-resource",
+    subgroup = "fluid-recipes",
     enabled = false,
-    energy_required = 3,
+    energy_required = 15,
     ingredients = {
       {type = "fluid", name = "petroleum-gas", amount = 100},
       {type = "item", name = "sp-filter", amount = 1},
@@ -2616,8 +2654,9 @@ data:extend({
     type = "recipe",
     name = "sp-methyl-tert-butyl-ether",  -- #ForRegEx# - recipe
     category = "chemistry",
+    subgroup = "fluid-recipes",
     enabled = false,
-    energy_required = 3.6,
+    energy_required = 18,
     ingredients = {
       {type = "fluid", name = "sp-styrene", amount = 20},
       {type = "fluid", name = "sp-propane", amount = 50}
@@ -2630,8 +2669,9 @@ data:extend({
     type = "recipe",
     name = "sp-propylene",  -- #ForRegEx# - recipe
     category = "chemistry",
+    subgroup = "fluid-recipes",
     enabled = false,
-    energy_required = 4,
+    energy_required = 20,
     ingredients = {
       {type = "fluid", name = "sp-propane", amount = 100},
       {type = "item", name = "sp-catalyst", amount = 1},
@@ -2644,8 +2684,9 @@ data:extend({
     type = "recipe",
     name = "sp-sodium-hydroxide-from-liquid-sodium",  -- #ForRegEx# - recipe
     category = "chemistry",
+    subgroup = "fluid-recipes",
     enabled = false,
-    energy_required = 12,
+    energy_required = 50,
     ingredients = {
       {type = "fluid", name = "sp-liquid-sodium", amount = 35},
       {type = "fluid", name = "water", amount = 100},
@@ -2658,8 +2699,9 @@ data:extend({
     type = "recipe",
     name = "sp-sodium-carbonate",  -- #ForRegEx# - recipe
     category = "chemistry",
+    subgroup = "fluid-recipes",
     enabled = false,
-    energy_required = 4,
+    energy_required = 16,
     ingredients = {
       {type = "fluid", name = "sp-liquid-sodium", amount = 60},
       {type = "fluid", name = "sp-oxygen", amount = 100},
@@ -2673,8 +2715,9 @@ data:extend({
     type = "recipe",
     name = "sp-benzene",  -- #ForRegEx# - recipe
     category = "chemistry",
+    subgroup = "fluid-recipes",
     enabled = false,
-    energy_required = 4.4,
+    energy_required = 16,
     hide_from_player_crafting = true,
     ingredients = {
       {type = "fluid", name = "petroleum-gas", amount = 100},
@@ -2682,23 +2725,24 @@ data:extend({
       {type = "item", name = "coal", amount = 10},
     },
     results = {
-      {type = "fluid", name = "sp-benzene", amount = 30}
+      {type = "fluid", name = "sp-benzene", amount = 50}
     }
   },
   {
     type = "recipe",
     name = "sp-styrene",  -- #ForRegEx# - recipe
     category = "chemistry",
+    subgroup = "fluid-recipes",
     enabled = false,
-    energy_required = 3.6,
+    energy_required = 12,
     hide_from_player_crafting = true,
     ingredients = {
-      {type = "fluid", name = "sp-benzene", amount = 100},
-      {type = "fluid", name = "water", amount = 1},
-      {type = "item", name = "iron-plate", amount = 2},
+      {type = "fluid", name = "sp-benzene", amount = 30},
+      {type = "fluid", name = "water", amount = 5},
+      {type = "item", name = "iron-plate", amount = 1},
     },
     results = {
-      {type = "fluid", name = "sp-styrene", amount = 50}
+      {type = "fluid", name = "sp-styrene", amount = 20}
     }
   },
   {
@@ -4983,7 +5027,7 @@ data:extend({
     energy_required = 1,
     hide_from_player_crafting = true,
     ingredients = {
-      {type = "fluid", name = "sp-vinyl-chloride", amount = 30},
+      {type = "fluid", name = "sp-vinyl-chloride", amount = 12},
       {type = "item", name = "sp-aluminum-cable", amount = 2}
     },
     results = {
@@ -5355,14 +5399,14 @@ data:extend({
   {
     type = "recipe",
     name = "sp-transistor",  -- #ForRegEx# - recipe
-    category = "crafting",
+    category = "crafting-with-fluid",
     enabled = false,
     energy_required = 2.8,
     ingredients = {
       -- {type = "item", name = "sp-silicon", amount = 2},
       {type = "item", name = "copper-cable", amount = 1},
       {type = "item", name = "sp-phosphorus", amount = 1},
-      {type = "item", name = "sp-phosphoric-acid", amount = 1},
+      {type = "fluid", name = "sp-phosphoric-acid", amount = 8},
       {type = "item", name = "plastic-bar", amount = 1}
     },
     results = {
@@ -5571,8 +5615,9 @@ data:extend({
     type = "recipe",
     name = "sp-ethylene-dichloride",  -- #ForRegEx# - recipe
     category = "chemistry",
+    subgroup = "fluid-recipes",
     enabled = false,
-    energy_required = 1.6,
+    energy_required = 12,
     hide_from_player_crafting = true,
     ingredients = {
       {type = "fluid", name = "sp-ethylene", amount = 60},
@@ -5591,9 +5636,9 @@ data:extend({
     icon_size = 64,
     scale = 0.25,
     category = "chemistry",
-    subgroup = "raw-resource",
+    subgroup = "fluid-recipes",
     enabled = false,
-    energy_required = 6,
+    energy_required = 30,
     hide_from_player_crafting = true,
     ingredients = {
       {type = "item", name = "sp-salt", amount = 2},
@@ -5608,8 +5653,9 @@ data:extend({
     type = "recipe",
     name = "sp-sodium-hydroxide-from-sodium",  -- #ForRegEx# - recipe
     category = "chemistry",
+    subgroup = "fluid-recipes",
     enabled = false,
-    energy_required = 16,
+    energy_required = 80,
     hide_from_player_crafting = true,
     ingredients = {
       {type = "item", name = "sp-sodium", amount = 5},
@@ -5624,8 +5670,9 @@ data:extend({
     type = "recipe",
     name = "sp-vinyl-chloride",  -- #ForRegEx# - recipe
     category = "chemistry",
+    subgroup = "fluid-recipes",
     enabled = false,
-    energy_required = 3.2,
+    energy_required = 15,
     hide_from_player_crafting = true,
     ingredients = {
       {type = "fluid", name = "sp-styrene", amount = 20},
@@ -5673,8 +5720,9 @@ data:extend({
     type = "recipe",
     name = "sp-helium",  -- #ForRegEx# - recipe
     category = "chemistry",
+    subgroup = "fluid-recipes",
     enabled = false,
-    energy_required = 1,
+    energy_required = 4,
     ingredients = {
       -- {type = "fluid", name = "sp-hydrogen", amount = 2}
     },
@@ -5688,10 +5736,10 @@ data:extend({
     icon = "__Spaghenutti__/graphics/icons/helium-3.png",
     icon_size = 64,
     mip_maps = 4,
-    category = "crafting-with-fluid",
-    subgroup = "processed-resource",
+    category = "chemistry",
+    subgroup = "fluid-recipes",
     enabled = false,
-    energy_required = 1,
+    energy_required = 40,
     ingredients = {
       {type = "fluid", name = "sp-helium", amount = 10},
       -- {type = "fluid", name = "sp-hydrogen", amount = 10}
@@ -5967,6 +6015,9 @@ if not mods["Krastorio2"] then
   table.insert(data.raw.recipe["sp-epoxy"].ingredients, {type = "fluid", name = "sp-hydrogen", amount = 15})
   table.insert(data.raw.recipe["sp-cubit"].ingredients, {type = "fluid", name = "sp-hydrogen", amount = 1})
   table.insert(data.raw.recipe["sp-superconductor"].ingredients, {type = "fluid", name = "sp-hydrogen", amount = 100})
+  table.insert(data.raw.recipe["sp-sulfamate"].ingredients, {type = "fluid", name = "sp-nitrogen", amount = 10})
+  table.insert(data.raw.recipe["sp-perchloric-acid"].ingredients, {type = "fluid", name = "sp-water", amount = 50})
+  table.insert(data.raw.recipe["sp-perchloric-acid"].ingredients, {type = "fluid", name = "sp-chlorine", amount = 20})
   table.insert(data.raw.recipe["sp-bleach"].ingredients, {type = "fluid", name = "sp-oxygen", amount = 100})
   table.insert(data.raw.recipe["sp-bleach"].ingredients, {type = "fluid", name = "sp-chlorine", amount = 50})
   table.insert(data.raw.recipe["sp-lens"].ingredients, {type = "fluid", name = "sp-oxygen", amount = 40})

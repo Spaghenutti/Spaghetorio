@@ -2452,15 +2452,6 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-phosphoric-acid",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/icons/phosphoric-acid.png",
-    icon_size = 64, icon_mipmaps = 4,
-    subgroup = "chemical-product",
-    order = "[phosphoric-acid]",
-    stack_size = 50
-  },
-  {
-    type = "item",
     name = "sp-urea",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/icons/urea.png",
     icon_size = 64, icon_mipmaps = 4,

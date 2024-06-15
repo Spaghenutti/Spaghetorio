@@ -273,6 +273,45 @@ data:extend({
   ------------------------------------------------------------------------------
   {
     type = "fluid",
+    name = "sp-phosphoric-acid",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1KJ",
+    base_color = {r=0.05, g=0.1, b=0.5},
+    flow_color = {r=0.05, g=0.1, b=0.5},
+    icon = "__Spaghenutti__/graphics/icons/phosphoric-acid.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "chemical",
+    order = "a[fluid]-f[phosphoric-acid]"
+  },
+  {
+    type = "fluid",
+    name = "sp-sulfamate",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1KJ",
+    base_color = {r=0.05, g=0.1, b=0.5},
+    flow_color = {r=0.05, g=0.1, b=0.5},
+    icon = "__Spaghenutti__/graphics/icons/sulfamate.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "chemical",
+    order = "a[fluid]-f[sulfamate]"
+  },
+  {
+    type = "fluid",
+    name = "sp-perchloric-acid",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1KJ",
+    base_color = {r=0.05, g=0.1, b=0.5},
+    flow_color = {r=0.05, g=0.1, b=0.5},
+    icon = "__Spaghenutti__/graphics/icons/perchloric-acid.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "chemical",
+    order = "a[fluid]-f[perchloric-acid]"
+  },
+  {
+    type = "fluid",
     name = "sp-liquid-nitrogen",  -- #ForRegEx# - fluid
     default_temperature = 25,
     heat_capacity = "0.1KJ",
