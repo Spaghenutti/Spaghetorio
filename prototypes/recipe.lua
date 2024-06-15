@@ -6029,7 +6029,7 @@ if not mods["Krastorio2"] then
   table.insert(data.raw.recipe["sp-light-emitting-diode"].ingredients, {type = "item", name = "sp-silicon", amount = 2})
   table.insert(data.raw.recipe["sp-integrated-circuit"].ingredients, {type = "item", name = "sp-silicon", amount = 2})
   table.insert(data.raw.recipe["sp-laser"].ingredients, {type = "item", name = "sp-silicon", amount = 1})
-  table.insert(data.raw.recipe["sp-silica"].ingredients, {type = "item", name = "sp-quartz", amount = 1})
+  table.insert(data.raw.recipe["sp-silica"].ingredients, {type = "item", name = "sp-quartz", amount = 5})
   table.insert(data.raw.recipe["sp-plutonium-239-processing"].ingredients, {type = "item", name = "sp-lithium", amount = 1})
   table.insert(data.raw.recipe["sp-plutonium-240-processing"].ingredients, {type = "item", name = "sp-lithium", amount = 1})
   table.insert(data.raw.recipe["sp-advanced-nuclear-waste-processing"].ingredients, {type = "fluid", name = "sp-chlorine", amount = 60})

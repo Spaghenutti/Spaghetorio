@@ -1061,7 +1061,7 @@ table.insert(data.raw.recipe["sp-transistor"].ingredients, {type = "item", name 
 table.insert(data.raw.recipe["sp-light-emitting-diode"].ingredients, {type = "item", name = "silicon", amount = 2})
 table.insert(data.raw.recipe["sp-integrated-circuit"].ingredients, {type = "item", name = "silicon", amount = 2})
 table.insert(data.raw.recipe["sp-laser"].ingredients, {type = "item", name = "silicon", amount = 1})
-table.insert(data.raw.recipe["sp-silica"].ingredients, {type = "item", name = "quartz", amount = 1})
+table.insert(data.raw.recipe["sp-silica"].ingredients, {type = "item", name = "quartz", amount = 5})
 table.insert(data.raw.recipe["sp-plutonium-239-processing"].ingredients, {type = "item", name = "lithium", amount = 1})
 table.insert(data.raw.recipe["sp-plutonium-240-processing"].ingredients, {type = "item", name = "lithium", amount = 1})
 table.insert(data.raw.recipe["sp-advanced-nuclear-waste-processing"].ingredients, {type = "fluid", name = "chlorine", amount = 60})
@@ -1205,10 +1205,10 @@ data.raw.recipe["steel-beam"].results = {{"steel-beam", 2}}
 data.raw.recipe["imersium-beam"].hidden = true
 data.raw.recipe["kr-s-c-imersium-beam"].category = "smelting"
 util.change_recipe_ingredients("silicon",
-  {{"sp-silica", 3}},
-  {{"iron-plate", 4}},
-  12,
-  16)
+  {{"sp-silica", 18}},
+  {{"sp-silica", 24}},
+  60,
+  80)
 
 -- MARK: recipe changes
 -- Overwrite change done by krastorio
