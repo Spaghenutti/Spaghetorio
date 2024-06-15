@@ -2285,6 +2285,7 @@ data:extend({
         {"automation-science-pack", 1},
         {"logistic-science-pack", 1},
         {"chemical-science-pack", 1},
+        {"sp-electronic-science-pack-1", 1},
         {"sp-material-science-pack-1", 1},
         {"sp-geological-science-pack-1", 1}
       },

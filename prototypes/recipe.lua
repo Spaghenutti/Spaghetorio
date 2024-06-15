@@ -2343,10 +2343,10 @@ data:extend({
     category = "chemistry",
     subgroup = "fluid-recipes",
     enabled = false,
-    energy_required = 12,
+    energy_required = 8,
     ingredients = {
-      {type = "item", name = "sp-phosphorus", amount = 2},
-      {type = "fluid", name = "water", amount = 150},
+      {type = "item", name = "sp-phosphorus", amount = 5},
+      {type = "fluid", name = "water", amount = 100},
     },
     results = {
       {type = "fluid", name = "sp-phosphoric-acid", amount = 25}
@@ -2392,11 +2392,12 @@ data:extend({
     energy_required = 3.2,
     ingredients = {
       {type = "item", name = "sulfur", amount = 3},
+      {type = "item", name = "sp-filter", amount = 1},
       {type = "fluid", name = "sp-styrene", amount = 50},
       {type = "fluid", name = "sp-phosphoric-acid", amount = 10},
     },
     results = {
-      {type = "item", name = "sp-rubber", amount = 1}
+      {type = "item", name = "sp-rubber", amount = 2}
     }
   },
   {
