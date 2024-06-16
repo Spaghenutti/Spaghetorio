@@ -77,7 +77,12 @@ data.raw.item["used-up-uranium-fuel-cell"].flags = {"hidden"}
 
 -- Hide electronic components recipe
 data.raw.recipe["electronic-components"].hidden = true
+-- data.raw.recipe["electronic-components-lithium"].hidden = true  -- This thing shows up in Krastorio but dunno whats going on here...
 data.raw.recipe["kr-s-c-electronic-components"].hidden = true
+data.raw.recipe["kr-vc-electronic-components"].hidden = true
+data.raw.recipe["kr-vc-advanced-circuit"].results = {
+  {type = "item", name = "electronic-components", amount = 2}
+}
 
 -- Fix petroleum gas icon
 util.change_fluid_icon("petroleum-gas", "__Spaghenutti__/graphics/icons/petroleum-gas.png", 64, nil)

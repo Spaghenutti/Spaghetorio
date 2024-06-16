@@ -237,7 +237,28 @@ data.raw.technology["low-density-structure"].prerequisites = {
 }
 table.insert(data.raw.technology["low-density-structure"].effects, {type = "unlock-recipe", recipe = "sp-composites"})
 
+data.raw.technology["modules"].prerequisites = {"sp-electronic-components"}
+data.raw.technology["modules"].unit.ingredients = {
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"sp-material-science-pack-1", 1},
+  {"sp-electronic-science-pack-1", 1},
+  {"chemical-science-pack", 1}
+}
+
+data.raw.technology["uranium-processing"].prerequisites = {"sp-logistic-science-pack-3"}
+data.raw.technology["uranium-processing"].unit.ingredients = {
+  {"sp-automation-science-pack-3", 1},
+  {"sp-logistic-science-pack-3", 1},
+  {"sp-material-science-pack-2", 1},
+  {"sp-electronic-science-pack-2", 1},
+  {"sp-geological-science-pack-2", 1},
+  {"sp-chemical-science-pack-2", 1}
+}
+
+--------------------------------------------------------------------------------
 -- MARK: Infinite techs
+--------------------------------------------------------------------------------
 data.raw.technology["research-speed-1"].prerequisites = {
   "chemical-science-pack",
   "sp-geological-science-pack-1"

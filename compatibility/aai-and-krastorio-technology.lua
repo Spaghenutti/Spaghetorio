@@ -352,13 +352,13 @@ data.raw.technology["kr-electric-mining-drill-mk2"].prerequisites = {"sp-titaniu
 
 data.raw.technology["kr-fuel"].prerequisites = {"sp-chemical-science-pack-2"}
 
-data.raw.technology["kr-radar"].prerequisites = {"sp-electronic-science-pack-2"}
+table.insert(data.raw.technology["kr-radar"].prerequisites, "sp-geological-science-pack-1")
 data.raw.technology["kr-radar"].unit.ingredients = {
-  {"sp-automation-science-pack-2", 1},
-  {"sp-logistic-science-pack-2", 1},
-  {"sp-electronic-science-pack-2", 1},
-  {"sp-geological-science-pack-2", 1},
-  {"sp-material-science-pack-2", 1}
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"sp-electronic-science-pack-1", 1},
+  {"sp-geological-science-pack-1", 1},
+  {"sp-material-science-pack-1", 1}
 }
 -- aai industry technology changes
 data.raw.technology["engine"].prerequisites = {"sp-steel-machining"}

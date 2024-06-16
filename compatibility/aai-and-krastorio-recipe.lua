@@ -1469,10 +1469,10 @@ util.change_recipe_ingredients("engine-unit",
   2.4,
   4.8)
 util.change_recipe_ingredients("electric-engine-unit",
-  {{"sp-electromagnet", 6}, {"sp-ball-bearing", 2}, {"sp-duralumin", 2}, {"sp-bolts", 6}, {type = "fluid", name = "lubricant", amount = 40}},
-  {{"sp-electromagnet", 9}, {"sp-ball-bearing", 2}, {"sp-duralumin", 3}, {"sp-bolts", 8}, {type = "fluid", name = "lubricant", amount = 60}},
-  6,
-  8)
+  {{"sp-electromagnet", 6}, {"sp-ball-bearing", 2}, {"sp-stainless-steel", 3}, {"sp-brass", 1}, {"sp-bolts", 6}, {type = "fluid", name = "lubricant", amount = 40}},
+  {{"sp-electromagnet", 9}, {"sp-ball-bearing", 2}, {"sp-stainless-steel", 4}, {"sp-brass", 1}, {"sp-bolts", 8}, {type = "fluid", name = "lubricant", amount = 60}},
+  4,
+  6)
 util.change_recipe_ingredients("industrial-furnace",
   {{"steel-plate", 69}},
   {{"steel-plate", 69}},

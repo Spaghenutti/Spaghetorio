@@ -91,8 +91,8 @@ util.change_recipe_ingredients("steel-chest",
   1,
   2)
 util.change_recipe_ingredients("speed-module",
-  {{"sp-diode", 3}, {"sp-resistor", 6}, {"sp-solder", 2}, {"electronic-circuit", 5}, {"plastic-bar", 1}},
-  {{"sp-diode", 5}, {"sp-resistor", 10}, {"sp-solder", 5}, {"electronic-circuit", 8}, {"plastic-bar", 2}},
+  {{"sp-capacitor", 3}, {"sp-diode", 6}, {"sp-solder", 2}, {"sp-insulated-wire", 2}, {"electronic-circuit", 5}, {"plastic-bar", 1}},
+  {{"sp-capacitor", 5}, {"sp-diode", 10}, {"sp-solder", 5}, {"sp-insulated-wire", 5}, {"electronic-circuit", 8}, {"plastic-bar", 2}},
   15,
   20)
 util.change_recipe_ingredients("speed-module-2",
@@ -106,8 +106,8 @@ util.change_recipe_ingredients("speed-module-3",
   45,
   60)
 util.change_recipe_ingredients("productivity-module",
-  {{"sp-diode", 3}, {"sp-resistor", 4}, {"electronic-circuit", 3}, {"sp-solder", 2}, {"copper-cable", 2}, {"plastic-bar", 1}},
-  {{"sp-diode", 5}, {"sp-resistor", 5}, {"electronic-circuit", 4}, {"sp-solder", 5}, {"copper-cable", 5}, {"plastic-bar", 2}},
+  {{"sp-transistor", 3}, {"sp-resistor", 4}, {"electronic-circuit", 3}, {"sp-solder", 2}, {"sp-insulated-wire", 2}, {"plastic-bar", 1}},
+  {{"sp-transistor", 5}, {"sp-resistor", 5}, {"electronic-circuit", 4}, {"sp-solder", 5}, {"sp-insulated-wire", 5}, {"plastic-bar", 2}},
   15,
   20)
 util.change_recipe_ingredients("productivity-module-2",
@@ -121,8 +121,8 @@ util.change_recipe_ingredients("productivity-module-3",
   45,
   60)
 util.change_recipe_ingredients("effectivity-module",
-  {{"sp-diode", 3}, {"sp-coil", 2}, {"electronic-circuit", 6}, {"sp-solder", 2}, {"copper-cable", 2}, {"plastic-bar", 1}},
-  {{"sp-diode", 5}, {"sp-coil", 3}, {"electronic-circuit", 10}, {"sp-solder", 4}, {"copper-cable", 4}, {"plastic-bar", 2}},
+  {{"sp-diode", 3}, {"sp-coil", 2}, {"electronic-circuit", 6}, {"sp-solder", 2}, {"sp-insulated-wire", 2}, {"plastic-bar", 1}},
+  {{"sp-diode", 5}, {"sp-coil", 3}, {"electronic-circuit", 10}, {"sp-solder", 4}, {"sp-insulated-wire", 4}, {"plastic-bar", 2}},
   15,
   20)
 util.change_recipe_ingredients("effectivity-module-2",
