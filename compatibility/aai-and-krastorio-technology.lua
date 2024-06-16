@@ -379,7 +379,11 @@ data.raw.technology["concrete-walls"].unit.ingredients = {
   {"sp-geological-science-pack-1", 1}
 }
 
-data.raw.technology["electric-engine"].prerequisites = {"sp-magnet", "sp-ball-bearing"}
+data.raw.technology["electric-engine"].prerequisites = {
+  "sp-magnet",
+  "sp-ball-bearing",
+  "sp-brass"
+}
 data.raw.technology["electric-engine"].unit.ingredients = {
   {"automation-science-pack", 1},
   {"logistic-science-pack", 1},

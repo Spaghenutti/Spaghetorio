@@ -333,6 +333,12 @@ util.change_recipe_ingredients("programmable-speaker",
   {{"copper-cable", 4}, {"electronic-circuit", 5}, {"sp-magnet", 2}, {"iron-stick", 8}, {"sp-bolts", 12}, {"sp-aluminum-frame", 3}},
   2,
   3)
+data.raw.recipe["explosives"].category = "crafting-with-fluid"
+util.change_recipe_ingredients("explosives",
+  {{"sp-graphite", 3}, {"iron-plate", 1}, {type="fluid", name="sp-sulfamate", amount=10}},
+  {{"sp-graphite", 6}, {"iron-plate", 1}, {type="fluid", name="sp-sulfamate", amount=20}},
+  3,
+  5)
 data.raw.recipe["cliff-explosives"].category = "crafting-with-fluid"
 util.change_recipe_ingredients("cliff-explosives",
   {{"sp-graphite", 1}, {"sulfur", 1}, {"iron-plate", 1}, {type="fluid", name="sp-sodium-hydroxide", amount=10}},
