@@ -189,8 +189,8 @@ util.change_recipe_ingredients("express-splitter",
   nil,
   nil)
 util.change_recipe_ingredients("stack-inserter",
-  {{"sp-stainless-steel-gear-wheel", 8}, {"sp-aluminum-frame", 6}, {"sp-bolts", 12}, {"electric-engine-unit", 2}, {"sp-circuit-board", 2}, {"sp-ball-bearing", 6}},
-  {{"sp-stainless-steel-gear-wheel", 15}, {"sp-aluminum-frame", 10}, {"sp-bolts", 20}, {"electric-engine-unit", 3}, {"sp-circuit-board", 2}, {"sp-ball-bearing", 8}},
+  {{"sp-stainless-steel-gear-wheel", 8}, {"sp-aluminum-frame", 6}, {"sp-bolts", 12}, {"electric-engine-unit", 2}, {"advanced-circuit", 2}, {"sp-ball-bearing", 6}},
+  {{"sp-stainless-steel-gear-wheel", 15}, {"sp-aluminum-frame", 10}, {"sp-bolts", 20}, {"electric-engine-unit", 3}, {"advanced-circuit", 3    }, {"sp-ball-bearing", 8}},
   2,
   3)
 util.change_recipe_ingredients("stack-filter-inserter",
@@ -349,15 +349,20 @@ util.change_recipe_ingredients("cliff-explosives",
 -- MARK: Combat
 --------------------------------------------------------------------------------
 util.change_recipe_ingredients("light-armor",
-  {{"iron-plate", 40}, {"sp-bolts", 10}},
-  {{"iron-plate", 60}, {"sp-bolts", 15}},
-  3,
-  5)
+  {{"iron-plate", 10}, {"sp-bolts", 6}},
+  {{"iron-plate", 16}, {"sp-bolts", 10}},
+  2,
+  3)
 util.change_recipe_ingredients("heavy-armor",
-  {{"steel-plate", 40}, {"sp-bolts", 10}, {"sp-gearbox", 2}, {"sp-machined-parts", 5}},
-  {{"steel-plate", 60}, {"sp-bolts", 15}, {"sp-gearbox", 4}, {"sp-machined-parts", 8}},
+  {{"steel-plate", 6}, {"sp-bolts", 10}, {"sp-gearbox", 2}, {"sp-machined-parts", 5}},
+  {{"steel-plate", 10}, {"sp-bolts", 15}, {"sp-gearbox", 4}, {"sp-machined-parts", 8}},
   3,
   5)
+util.change_recipe_ingredients("modular-armor",
+  {{"sp-fabric", 10}, {"sp-electromagnet", 4}, {"electronic-circuit", 8}, {"sp-bolts", 10}, {"sp-anodized-aluminum", 6}, {"sp-insulation-sheet", 2}},
+  {{"sp-fabric", 16}, {"sp-electromagnet", 6}, {"electronic-circuit", 12}, {"sp-bolts", 15}, {"sp-anodized-aluminum", 10}, {"sp-insulation-sheet", 4}},
+  5,
+  8)
 util.change_recipe_ingredients("night-vision-equipment",
   {{"sp-circuit-board", 1}, {"sp-composites", 2}, {"plastic-bar", 2}, {"sp-optical-sensor", 2}, {"sp-lens", 6}, {"sp-laser", 1}, {"sp-rubber", 1}},
   {{"sp-circuit-board", 2}, {"sp-composites", 3}, {"plastic-bar", 3}, {"sp-optical-sensor", 2}, {"sp-lens", 10}, {"sp-laser", 2}, {"sp-rubber", 2}},

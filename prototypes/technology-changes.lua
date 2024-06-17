@@ -257,8 +257,20 @@ data.raw.technology["cliff-explosives"].unit.ingredients = {
   {"chemical-science-pack", 1}
 }
 
-data.raw.technology["explosives"].prerequisites = {"sp-electronic-science-pack-2"}
+data.raw.technology["solar-energy"].prerequisites = {"sp-electronic-science-pack-2"}
 data.raw.technology["solar-energy"].unit.ingredients = {
+  {"sp-automation-science-pack-2", 1},
+  {"sp-logistic-science-pack-2", 1},
+  {"sp-material-science-pack-1", 1},
+  {"sp-electronic-science-pack-2", 1},
+  {"chemical-science-pack", 1}
+}
+
+data.raw.technology["electric-energy-accumulators"].prerequisites = {
+  "sp-electronic-science-pack-2",
+  "battery"
+}
+data.raw.technology["electric-energy-accumulators"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},
   {"sp-logistic-science-pack-2", 1},
   {"sp-material-science-pack-1", 1},
@@ -329,6 +341,16 @@ data.raw.technology["effectivity-module-3"].unit.ingredients = {
   {"sp-chemical-science-pack-2", 1}
 }
 
+data.raw.technology["rocket-fuel"].prerequisites = {"sp-chemical-science-pack-2"}
+data.raw.technology["rocket-fuel"].unit.ingredients = {
+  {"sp-automation-science-pack-2", 1},
+  {"sp-logistic-science-pack-2", 1},
+  {"sp-material-science-pack-2", 1},
+  {"sp-electronic-science-pack-2", 1},
+  {"sp-geological-science-pack-2", 1},
+  {"sp-chemical-science-pack-2", 1}
+}
+
 data.raw.technology["uranium-processing"].prerequisites = {"sp-logistic-science-pack-3"}
 data.raw.technology["uranium-processing"].unit.ingredients = {
   {"sp-automation-science-pack-3", 1},
@@ -337,6 +359,20 @@ data.raw.technology["uranium-processing"].unit.ingredients = {
   {"sp-electronic-science-pack-2", 1},
   {"sp-geological-science-pack-2", 1},
   {"sp-chemical-science-pack-2", 1}
+}
+
+data.raw.technology["modular-armor"].prerequisites = {
+  "sp-fabric",
+  "sp-insulation-sheet",
+  "sp-magnet",
+  "sp-aluminum-treatment"
+}
+data.raw.technology["modular-armor"].unit.ingredients = {
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"sp-material-science-pack-1", 1},
+  {"sp-electronic-science-pack-1", 1},
+  {"chemical-science-pack", 1}
 }
 
 --------------------------------------------------------------------------------

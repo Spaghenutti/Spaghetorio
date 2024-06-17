@@ -794,14 +794,19 @@ data:extend({
         recipe = "kr-vc-sp-tungsten-ore"
       }
     },
-    prerequisites = {"sp-sodium-processing"},
+    prerequisites = {
+      "sp-sodium-processing",
+      "sp-logistic-science-pack-2"
+    },
     unit =
     {
-      count = 100,
+      count = 300,
       ingredients = {
-        {"basic-tech-card", 1},
-        {"automation-science-pack", 1},
-        {"logistic-science-pack", 1}
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-material-science-pack-1", 1},
+        {"chemical-science-pack", 1},
+        {"sp-geological-science-pack-1", 1}
       },
       time = 15
     },
@@ -1256,14 +1261,13 @@ data:extend({
         recipe = "kr-vc-sp-magnesium-ore"
       },
     },
-    prerequisites = {"sp-cement"},
+    prerequisites = {"sp-logistic-science-pack-2"},
     unit =
     {
-      count = 100,
+      count = 200,
       ingredients = {
-        {"basic-tech-card", 1},
-        {"automation-science-pack", 1},
-        {"logistic-science-pack", 1},
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
         {"sp-material-science-pack-1", 1},
         {"sp-geological-science-pack-1", 1},
         {"chemical-science-pack", 1}
@@ -2953,7 +2957,10 @@ data:extend({
         recipe = "sp-vacuum-tube"
       },
     },
-    prerequisites = {"sp-electronic-science-pack-2"},
+    prerequisites = {
+      "sp-insulation-sheet",
+      "sp-electronic-science-pack-2"
+    },
     unit =
     {
       count = 100,

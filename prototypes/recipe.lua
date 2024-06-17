@@ -247,6 +247,7 @@ data:extend({
     type = "recipe",
     name = "sp-liquid-sodium",
     category = "chemistry",
+    subgroup = "fluid-recipes",
     energy_required = 1,
     enabled = false,
     ingredients = {
@@ -5106,7 +5107,7 @@ data:extend({
     icon_size = 256,
     scale = 0.25,
     category = "chemistry",
-    subgroup = "raw-resource",
+    subgroup = "fluid-recipes",
     enabled = false,
     energy_required = 5,
     ingredients = {
@@ -5641,11 +5642,11 @@ data:extend({
     category = "chemistry",
     subgroup = "fluid-recipes",
     enabled = false,
-    energy_required = 30,
+    energy_required = 10,
     hide_from_player_crafting = true,
     ingredients = {
-      {type = "item", name = "sp-salt", amount = 2},
-      {type = "fluid", name = "water", amount = 60},
+      {type = "item", name = "sp-salt", amount = 20},
+      {type = "fluid", name = "water", amount = 100},
     },
     results = {
       {type = "fluid", name = "sp-sodium-hydroxide", amount = 50},
@@ -5790,6 +5791,7 @@ data:extend({
     type = "recipe",
     name = "sp-liquid-nitrogen",  -- #ForRegEx# - recipe
     category = "chemistry",
+    subgroup = "fluid-recipes",
     enabled = false,
     energy_required = 1,
     ingredients = {

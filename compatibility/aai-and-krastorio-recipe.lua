@@ -1240,15 +1240,15 @@ util.change_recipe_ingredients("kr-big-container",  -- "warehouse"
   6,
   12)
 util.change_recipe_ingredients("kr-fluid-storage-1",  -- "large storage tank"
-  {{"sp-bolts", 8}, {"steel-plate", 10}, {"sp-brass", 4}, {"sp-valve", 4}},
-  {{"sp-bolts", 16}, {"steel-plate", 20}, {"sp-brass", 8}, {"sp-valve", 8}},
+  {{"sp-bolts", 8}, {"sp-stainless-steel", 10}, {"sp-brass", 4}, {"sp-valve", 4}, {"sp-flange", 4}},
+  {{"sp-bolts", 16}, {"sp-stainless-steel", 20}, {"sp-brass", 8}, {"sp-valve", 8}, {"sp-flange", 8}},
   6,
   12)
 util.change_recipe_ingredients("kr-fluid-storage-2",  -- "huge storage tank"
-  {{"sp-bolts", 8}, {"steel-plate", 4}, {"steel-beam", 12}, {"sp-brass", 16}, {"sp-valve", 12}},
-  {{"sp-bolts", 16}, {"steel-plate", 80}, {"steel-beam", 24}, {"sp-brass", 32}, {"sp-valve", 24}},
-  6,
-  12)
+  {{"sp-bolts", 30}, {"sp-stainless-steel", 40}, {"sp-brass", 16}, {"sp-valve", 12}, {"sp-flange", 12}},
+  {{"sp-bolts", 40}, {"sp-stainless-steel", 80}, {"sp-brass", 32}, {"sp-valve", 24}, {"sp-flange", 24}},
+  16,
+  30)
 util.change_recipe_ingredients("lithium-sulfur-battery",  -- "huge storage tank"
   {{"lithium", 1}, {"sp-aluminum-sheet", 1}, {type="fluid", name="sulfuric-acid", amount=10}, {"sp-graphite", 1}, {"sp-electrolyte", 1}},
   {{"lithium", 2}, {"sp-aluminum-sheet", 1}, {type="fluid", name="sulfuric-acid", amount=20}, {"sp-graphite", 1}, {"sp-electrolyte", 1}},
