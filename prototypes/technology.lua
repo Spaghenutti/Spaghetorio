@@ -341,6 +341,10 @@ data:extend({
         type = "unlock-recipe",
         recipe = "sp-zinc-plate"
       },
+      {
+        type = "unlock-recipe",
+        recipe = "kr-vc-sp-zinc-ore"
+      }
     },
     prerequisites = {"chemical-science-pack"},
     unit =
@@ -523,16 +527,21 @@ data:extend({
         type = "unlock-recipe",
         recipe = "sp-titanium-ingot"
       },
+      {
+        type = "unlock-recipe",
+        recipe = "kr-vc-sp-titanium-ore"
+      }
     },
-    prerequisites = {"chemical-science-pack", "sp-material-science-pack-1"},
+    prerequisites = {"sp-material-science-pack-2"},
     unit =
     {
       count = 200,
       ingredients = {
-        {"automation-science-pack", 1},
-        {"logistic-science-pack", 1},
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
         {"chemical-science-pack", 1},
-        {"sp-material-science-pack-1", 1}
+        {"sp-material-science-pack-2", 1},
+        {"sp-geological-science-pack-1", 1}
       },
       time = 15
     },
@@ -669,17 +678,25 @@ data:extend({
         type = "unlock-recipe",
         recipe = "sp-zirconium-rod"
       },
+      {
+        type = "unlock-recipe",
+        recipe = "kr-vc-sp-zirconium-ore"
+      }
     },
-    prerequisites = {"chemical-science-pack"},
+    prerequisites = {
+      "sp-material-science-pack-2",
+      "sp-geological-science-pack-2"
+    },
     unit =
     {
       count = 200,
       ingredients = {
-        {"automation-science-pack", 1},
-        {"logistic-science-pack", 1},
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-electronic-science-pack-1", 1},
         {"chemical-science-pack", 1},
-        {"sp-geological-science-pack-1", 1},
-        {"sp-material-science-pack-1", 1}
+        {"sp-geological-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1}
       },
       time = 15
     },
@@ -772,6 +789,10 @@ data:extend({
         type = "unlock-recipe",
         recipe = "sp-tungsten-slab"
       },
+      {
+        type = "unlock-recipe",
+        recipe = "kr-vc-sp-tungsten-ore"
+      }
     },
     prerequisites = {"sp-sodium-processing"},
     unit =
@@ -1230,11 +1251,43 @@ data:extend({
         type = "unlock-recipe",
         recipe = "sp-magnesium-slab"
       },
+      {
+        type = "unlock-recipe",
+        recipe = "kr-vc-sp-magnesium-ore"
+      },
     },
     prerequisites = {"sp-cement"},
     unit =
     {
       count = 100,
+      ingredients = {
+        {"basic-tech-card", 1},
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"sp-material-science-pack-1", 1},
+        {"sp-geological-science-pack-1", 1},
+        {"chemical-science-pack", 1}
+      },
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-salt",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghenutti__/graphics/hr-icons/salt.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-salt"
+      },
+    },
+    prerequisites = {"sp-filter"},
+    unit =
+    {
+      count = 50,
       ingredients = {
         {"basic-tech-card", 1},
         {"automation-science-pack", 1},
@@ -1256,10 +1309,6 @@ data:extend({
     {
       {
         type = "unlock-recipe",
-        recipe = "sp-salt"
-      },
-      {
-        type = "unlock-recipe",
         recipe = "sp-sodium-and-chlorine"
       },
       {
@@ -1271,10 +1320,10 @@ data:extend({
         recipe = "sp-sodium-carbonate"
       },
     },
-    prerequisites = {"chemical-science-pack"},
+    prerequisites = {"sp-salt"},
     unit =
     {
-      count = 100,
+      count = 200,
       ingredients = {
         {"basic-tech-card", 1},
         {"automation-science-pack", 1},
@@ -3148,16 +3197,15 @@ data:extend({
         recipe = "sp-epoxy"
       },
     },
-    prerequisites = {"chemical-science-pack"},
+    prerequisites = {"sp-chemical-science-pack-2"},
     unit =
     {
       count = 100,
       ingredients = {
-        {"basic-tech-card", 1},
-        {"automation-science-pack", 1},
-        {"logistic-science-pack", 1},
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
         {"sp-material-science-pack-1", 1},
-        {"chemical-science-pack", 1},
+        {"sp-chemical-science-pack-2", 1},
       },
       time = 15
     },
@@ -3751,12 +3799,9 @@ data:extend({
       },
     },
     prerequisites = {
-      "automation-science-pack",
-      "logistic-science-pack",
-      "chemical-science-pack",
-      "sp-electronic-science-pack-1",
-      "sp-geological-science-pack-1",
-      "sp-material-science-pack-1"
+      "sp-ball-bearing",
+      "sp-magnet",
+      "optics"
     },
     unit =
     {

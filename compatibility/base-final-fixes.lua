@@ -25,7 +25,7 @@ data.raw.technology["sulfur-processing"].unit.ingredients = {
   {"sp-geological-science-pack-1", 1}
 }
 
-data.raw.technology["battery"].prerequisites = {"sp-vinyl-chloride"}
+data.raw.technology["battery"].prerequisites = {"sp-vinyl-chloride", "sp-salt"}
 data.raw.technology["battery"].unit.ingredients = {
   {"automation-science-pack", 1},
   {"logistic-science-pack", 1},

@@ -227,13 +227,14 @@ data:extend({
     type = "recipe",
     name = "sp-salt",
     category = "chemistry",
-    energy_required = 1,
+    energy_required = 10,
     enabled = false,
     ingredients = {
       {type = "fluid", name = "water", amount = 50},
+      {type = "item", name = "sp-filter", amount = 1},
     },
     results = {
-      {type = "item", name = "sp-salt", amount = 2}
+      {type = "item", name = "sp-salt", amount = 1}
     },
     crafting_machine_tint = {
       primary = {r = 1.000, g = 1.000, b = 1.000, a = 1.000}, -- #fefeffff
@@ -4642,9 +4643,9 @@ data:extend({
     ingredients =
     -- Krastorio: {"blank-tech-card", 5}, {"engine-unit", 2}
     {
-      {"fast-inserter", 1},
+      {"sp-ball-bearing", 5},
       {"small-lamp", 5},
-      {"sp-electromagnet", 5}
+      {"sp-magnet", 10}
     },
     result_count = 5,
     result = "sp-automation-science-pack-2"

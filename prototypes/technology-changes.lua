@@ -3,8 +3,6 @@ table.insert(data.raw.technology["automation-science-pack"].prerequisites, "sp-m
 
 table.insert(data.raw.technology["gun-turret"].prerequisites, "sp-mechanical-assembling")
 
-table.insert(data.raw.technology["fast-inserter"].prerequisites, "sp-ball-bearing")
-
 table.insert(data.raw.technology["filter-inserter"].prerequisites, "sp-optical-sensor")
 
 data.raw.technology["chemical-science-pack"].prerequisites = {
@@ -12,7 +10,6 @@ data.raw.technology["chemical-science-pack"].prerequisites = {
   "sulfur-processing"
 }
 data.raw.technology["chemical-science-pack"].unit.ingredients = {
-  {"basic-tech-card", 1},
   {"automation-science-pack", 1},
   {"logistic-science-pack", 1},
   {"sp-material-science-pack-1", 1},
@@ -199,9 +196,16 @@ data.raw.technology["advanced-electronics"].unit.ingredients = {
   {"chemical-science-pack", 1}
 }
 
-table.insert(data.raw.technology["advanced-electronics-2"].prerequisites, "sp-chemical-science-pack-2")
+data.raw.technology["advanced-electronics-2"].prerequisites = {"sp-epoxy", "sp-electronic-science-pack-2"}
 table.insert(data.raw.technology["advanced-electronics-2"].effects, {type = "unlock-recipe", recipe = "sp-empty-circuit-board"})
 table.insert(data.raw.technology["advanced-electronics-2"].effects, {type = "unlock-recipe", recipe = "sp-circuit-board"})
+data.raw.technology["advanced-electronics-2"].unit.ingredients = {
+  {"sp-automation-science-pack-2", 1},
+  {"sp-logistic-science-pack-2", 1},
+  {"sp-material-science-pack-2", 1},
+  {"sp-electronic-science-pack-2", 1},
+  {"sp-chemical-science-pack-2", 1}
+}
 
 data.raw.technology["advanced-oil-processing"].unit.ingredients = {
   {"automation-science-pack", 1},
@@ -221,6 +225,7 @@ data.raw.technology["lubricant"].unit.ingredients = {
   {"chemical-science-pack", 1}
 }
 
+table.insert(data.raw.technology["fast-inserter"].prerequisites, "sp-ball-bearing")
 data.raw.technology["fast-inserter"].unit.ingredients = {
   {"automation-science-pack", 1},
   {"logistic-science-pack", 1},
@@ -260,7 +265,6 @@ data.raw.technology["solar-energy"].unit.ingredients = {
   {"sp-electronic-science-pack-2", 1},
   {"chemical-science-pack", 1}
 }
-
 
 data.raw.technology["modules"].prerequisites = {"sp-electronic-components"}
 data.raw.technology["modules"].unit.ingredients = {

@@ -320,6 +320,7 @@ table.insert(data.raw.technology["kr-steel-fluid-tanks"].prerequisites, "sp-bras
 table.insert(data.raw.technology["kr-stone-processing"].effects, {type = "unlock-recipe", recipe = "sp-stone-brick-from-sand"})
 
 table.insert(data.raw.technology["kr-lithium-processing"].effects, {type = "unlock-recipe", recipe = "sp-lithium-oxide"})
+table.insert(data.raw.technology["kr-lithium-processing"].effects, {type = "unlock-recipe", recipe = "kr-vc-sp-spodumene"})
 
 table.insert(data.raw.technology["kr-silicon-processing"].effects, {type = "unlock-recipe", recipe = "sp-silica"})
 table.insert(data.raw.technology["kr-silicon-processing"].unit.ingredients, {"sp-material-science-pack-1", 1})
