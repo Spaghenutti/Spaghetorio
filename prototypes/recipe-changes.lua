@@ -329,8 +329,8 @@ util.change_recipe_ingredients("power-switch",
   2,
   3)
 util.change_recipe_ingredients("programmable-speaker",
-  {{"copper-cable", 2}, {"electronic-circuit", 2}, {"sp-magnet", 2}, {"iron-stick", 4}, {"sp-bolts", 6}, {"sp-aluminum-frame", 2}},
-  {{"copper-cable", 4}, {"electronic-circuit", 5}, {"sp-magnet", 2}, {"iron-stick", 8}, {"sp-bolts", 12}, {"sp-aluminum-frame", 3}},
+  {{"copper-cable", 2}, {"electronic-circuit", 2}, {"sp-electromagnet", 3}, {"iron-stick", 4}, {"sp-bolts", 6}, {"sp-aluminum-frame", 2}},
+  {{"copper-cable", 4}, {"electronic-circuit", 5}, {"sp-electromagnet", 5}, {"iron-stick", 8}, {"sp-bolts", 12}, {"sp-aluminum-frame", 3}},
   2,
   3)
 data.raw.recipe["explosives"].category = "crafting-with-fluid"

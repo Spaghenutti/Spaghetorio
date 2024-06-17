@@ -2885,6 +2885,10 @@ data:extend({
         type = "unlock-recipe",
         recipe = "sp-electrode-from-iridium"
       },
+      {
+        type = "unlock-recipe",
+        recipe = "power-switch"
+      },
     },
     prerequisites = {"production-science-pack"},
     unit =

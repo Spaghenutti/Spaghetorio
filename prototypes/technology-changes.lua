@@ -16,6 +16,33 @@ data.raw.technology["chemical-science-pack"].unit.ingredients = {
   {"sp-geological-science-pack-1", 1}
 }
 
+-- Remove "power-switch" from circuit network
+data.raw.technology["circuit-network"].effects = {
+  {
+    type = "unlock-recipe",
+    recipe = "red-wire"
+  },
+  {
+    type = "unlock-recipe",
+    recipe = "green-wire"
+  },
+  {
+    type = "unlock-recipe",
+    recipe = "arithmetic-combinator"
+  },
+  {
+    type = "unlock-recipe",
+    recipe = "decider-combinator"
+  },
+  {
+    type = "unlock-recipe",
+    recipe = "constant-combinator"
+  },
+  {
+    type = "unlock-recipe",
+    recipe = "programmable-speaker"
+  }
+}
 data.raw.technology["circuit-network"].prerequisites = {
   "sp-aluminum-processing",
   "sp-aluminum-treatment",
