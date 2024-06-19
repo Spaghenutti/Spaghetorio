@@ -2884,11 +2884,7 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "sp-electrode-from-iridium"
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "power-switch"
-      },
+      }
     },
     prerequisites = {"production-science-pack"},
     unit =
@@ -3273,6 +3269,10 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "sp-sodium-hydroxide-from-sodium"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-sodium-hydroxide-from-liquid-sodium"
       },
     },
     prerequisites = {"sp-sodium-processing"},

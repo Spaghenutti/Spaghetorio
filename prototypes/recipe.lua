@@ -4646,7 +4646,8 @@ data:extend({
     {
       {"sp-ball-bearing", 5},
       {"small-lamp", 5},
-      {"sp-magnet", 10}
+      {"sp-magnet", 10},
+      {"sp-valve", 10}
     },
     result_count = 5,
     result = "sp-automation-science-pack-2"
@@ -4658,9 +4659,9 @@ data:extend({
     enabled = false,
     energy_required = 24,
     ingredients =
-    -- Krastorio: {"blank-tech-card", 5}
+    -- Krastorio: {"blank-tech-card", 5}, {"electric-engine-unit", 5}, {"engine-unit", 2}, {"automation-core", 10}
     {
-      {"iron-plate", 69},
+      {"sp-electromagnet", 8}
     },
     result_count = 5,
     result = "sp-logistic-science-pack-2"

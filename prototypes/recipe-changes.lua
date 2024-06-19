@@ -136,8 +136,8 @@ util.change_recipe_ingredients("effectivity-module-3",
   45,
   60)
 util.change_recipe_ingredients("flying-robot-frame",
-  {{"sp-ball-bearing", 1}, {"sp-insulated-wire", 2}, {"sp-titanium-frame", 2}, {"sp-composites", 2}},
-  {{"sp-ball-bearing", 2}, {"sp-insulated-wire", 4}, {"sp-titanium-frame", 3}, {"sp-composites", 3}},
+  {{"sp-ball-bearing", 1}, {"sp-insulated-wire", 2}, {"advanced-circuit", 2}, {"sp-titanium-frame", 2}, {"sp-composites", 2}},
+  {{"sp-ball-bearing", 2}, {"sp-insulated-wire", 4}, {"advanced-circuit", 3}, {"sp-titanium-frame", 3}, {"sp-composites", 3}},
   3,
   6)
 --------------------------------------------------------------------------------
@@ -282,18 +282,18 @@ util.change_recipe_ingredients("tank",
   60,
   90)
 util.change_recipe_ingredients("logistic-robot",
-  {{"flying-robot-frame", 1}, {"electric-engine-unit", 1}, {"battery", 4}, {"sp-optical-sensor", 2}, {"sp-titanium-plate", 2}},
-  {{"flying-robot-frame", 1}, {"electric-engine-unit", 1}, {"battery", 6}, {"sp-optical-sensor", 2}, {"sp-titanium-plate", 4}},
+  {{"flying-robot-frame", 1}, {"motor", 1}, {"battery", 4}, {"sp-optical-sensor", 2}, {"sp-titanium-plate", 2}},
+  {{"flying-robot-frame", 1}, {"motor", 2}, {"battery", 6}, {"sp-optical-sensor", 2}, {"sp-titanium-plate", 4}},
   4,
   6)
-  util.change_recipe_ingredients("construction-robot",
-  {{"flying-robot-frame", 1}, {"electric-engine-unit", 1}, {"battery", 4}, {"sp-optical-sensor", 2}, {"sp-titanium-plate", 2}},
-  {{"flying-robot-frame", 1}, {"electric-engine-unit", 1}, {"battery", 6}, {"sp-optical-sensor", 2}, {"sp-titanium-plate", 4}},
+util.change_recipe_ingredients("construction-robot",
+  {{"flying-robot-frame", 1}, {"motor", 1}, {"battery", 4}, {"sp-optical-sensor", 2}, {"sp-titanium-plate", 2}},
+  {{"flying-robot-frame", 1}, {"motor", 2}, {"battery", 6}, {"sp-optical-sensor", 2}, {"sp-titanium-plate", 4}},
   4,
   6)
 util.change_recipe_ingredients("roboport",
-  {{"steel-plate", 16}, {"sp-bolts", 30}, {"advanced-circuit", 45}, {"copper-cable", 30}, {"sp-transformer", 6}, {"sp-electrode", 4}, {"sp-capacitor", 50}},
-  {{"steel-plate", 32}, {"sp-bolts", 60}, {"advanced-circuit", 60}, {"copper-cable", 40}, {"sp-transformer", 10}, {"sp-electrode", 8}, {"sp-capacitor", 80}},
+  {{"sp-stainless-steel", 16}, {"sp-bolts", 30}, {"advanced-circuit", 45}, {"copper-cable", 30}, {"sp-transformer", 6}, {"sp-capacitor", 50}},
+  {{"sp-stainless-steel", 32}, {"sp-bolts", 60}, {"advanced-circuit", 60}, {"copper-cable", 40}, {"sp-transformer", 10}, {"sp-capacitor", 80}},
   20,
   30)
 data.raw.recipe["red-wire"].category = "crafting-with-fluid"
@@ -324,8 +324,8 @@ util.change_recipe_ingredients("constant-combinator",
   2,
   3)
 util.change_recipe_ingredients("power-switch",
-  {{"sp-aluminum-cable", 2}, {"electronic-circuit", 2}, {"sp-anodized-aluminum", 2}, {"sp-electrode", 2}},
-  {{"sp-aluminum-cable", 4}, {"electronic-circuit", 5}, {"sp-anodized-aluminum", 3}, {"sp-electrode", 4}},
+  {{"sp-aluminum-cable", 2}, {"motor", 1}, {"electronic-circuit", 2}, {"sp-anodized-aluminum", 2}},
+  {{"sp-aluminum-cable", 4}, {"motor", 1}, {"electronic-circuit", 5}, {"sp-anodized-aluminum", 3}},
   2,
   3)
 util.change_recipe_ingredients("programmable-speaker",
@@ -593,7 +593,12 @@ util.change_recipe_ingredients("offshore-pump",
 --------------------------------------------------------------------------------
 -- MARK: Technology
 --------------------------------------------------------------------------------
--- Missing recipes. For Krastorio fixes are in aai-and-krastorio-final-fixes.lua
+-- Krastorio {"blank-tech-card", 5}
+util.change_recipe_ingredients("production-science-pack",
+  {{"sp-heating-filament", 4}, {"sp-heatsink", 6}, {"sp-insulation-sheet", 4}, {"sp-rubber", 10}},
+  {{"sp-heating-filament", 4}, {"sp-heatsink", 6}, {"sp-insulation-sheet", 4}, {"sp-rubber", 10}},
+  24,
+  24)
 --------------------------------------------------------------------------------
 -- MARK: Military
 --------------------------------------------------------------------------------
