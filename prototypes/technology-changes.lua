@@ -5,6 +5,14 @@ table.insert(data.raw.technology["gun-turret"].prerequisites, "sp-mechanical-ass
 
 table.insert(data.raw.technology["filter-inserter"].prerequisites, "sp-optical-sensor")
 
+data.raw.technology["stack-inserter"].unit.ingredients = {
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"sp-material-science-pack-1", 1},
+  {"sp-geological-science-pack-1", 1},
+  {"sp-electronic-science-pack-1", 1}
+}
+
 data.raw.technology["chemical-science-pack"].prerequisites = {
   "plastics",
   "sulfur-processing"
@@ -14,6 +22,11 @@ data.raw.technology["chemical-science-pack"].unit.ingredients = {
   {"logistic-science-pack", 1},
   {"sp-material-science-pack-1", 1},
   {"sp-geological-science-pack-1", 1}
+}
+
+data.raw.technology["military-science-pack"].unit.ingredients = {
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1}
 }
 
 data.raw.technology["circuit-network"].prerequisites = {
@@ -436,24 +449,100 @@ data.raw.technology["toolbelt-3"].unit.ingredients = {
   {"chemical-science-pack", 1}
 }
 
+data.raw.technology["mining-productivity-1"].prerequisites = {
+  "sp-geological-science-pack-1"
+}
+data.raw.technology["mining-productivity-1"].unit.ingredients = {
+  {"basic-tech-card", 1},
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"sp-material-science-pack-1", 1},
+  {"sp-geological-science-pack-1", 1},
+}
+
+data.raw.technology["mining-productivity-2"].unit.ingredients = {
+  {"basic-tech-card", 1},
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"sp-material-science-pack-1", 1},
+  {"sp-geological-science-pack-1", 1},
+}
+
+data.raw.technology["mining-productivity-3"].prerequisites = {
+  "mining-productivity-2",
+  "chemical-science-pack"
+}
+data.raw.technology["mining-productivity-3"].unit.ingredients = {
+  {"basic-tech-card", 1},
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"sp-material-science-pack-1", 1},
+  {"sp-geological-science-pack-1", 1},
+  {"chemical-science-pack", 1}
+}
+
+data.raw.technology["mining-productivity-4"].prerequisites = {
+  "mining-productivity-3"
+}
+data.raw.technology["mining-productivity-4"].unit.ingredients = {
+  {"basic-tech-card", 1},
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"sp-material-science-pack-1", 1},
+  {"sp-geological-science-pack-1", 1},
+  {"chemical-science-pack", 1}
+}
+
 data.raw.technology["braking-force-1"].unit.ingredients = {
   {"basic-tech-card", 1},
   {"automation-science-pack", 1},
   {"logistic-science-pack", 1},
   {"sp-material-science-pack-1", 1},
-  {"sp-electronic-science-pack-1", 1},
-  {"sp-geological-science-pack-1", 1},
-  {"chemical-science-pack", 1}
+  {"sp-electronic-science-pack-1", 1}
 }
+
 data.raw.technology["braking-force-2"].unit.ingredients = {
   {"basic-tech-card", 1},
   {"automation-science-pack", 1},
   {"logistic-science-pack", 1},
   {"sp-material-science-pack-1", 1},
-  {"sp-electronic-science-pack-1", 1},
-  {"sp-geological-science-pack-1", 1},
-  {"chemical-science-pack", 1}
+  {"sp-electronic-science-pack-1", 1}
 }
+
+table.insert(data.raw.technology["braking-force-3"].prerequisites, "production-science-pack")
+data.raw.technology["braking-force-3"].unit.ingredients = {
+  {"sp-automation-science-pack-2", 1},
+  {"sp-logistic-science-pack-2", 1},
+  {"production-science-pack", 1},
+  {"sp-material-science-pack-1", 1},
+  {"sp-electronic-science-pack-1", 1}
+}
+
+data.raw.technology["braking-force-4"].unit.ingredients = {
+  {"sp-automation-science-pack-2", 1},
+  {"sp-logistic-science-pack-2", 1},
+  {"production-science-pack", 1},
+  {"sp-material-science-pack-1", 1},
+  {"sp-electronic-science-pack-1", 1}
+}
+
+data.raw.technology["braking-force-5"].unit.ingredients = {
+  {"sp-automation-science-pack-2", 1},
+  {"sp-logistic-science-pack-2", 1},
+  {"production-science-pack", 1},
+  {"sp-material-science-pack-1", 1},
+  {"sp-electronic-science-pack-1", 1}
+}
+
+table.insert(data.raw.technology["braking-force-3"].prerequisites, "sp-production-science-pack-3")
+data.raw.technology["braking-force-6"].unit.ingredients = {
+  {"sp-automation-science-pack-3", 1},
+  {"sp-logistic-science-pack-3", 1},
+  {"sp-production-science-pack-3", 1},
+  {"sp-material-science-pack-2", 1},
+  {"sp-electronic-science-pack-2", 1}
+}
+
 -- TODO: "braking-force-3" to "braking-force-7"
 
 -- MARK If not Krastorio

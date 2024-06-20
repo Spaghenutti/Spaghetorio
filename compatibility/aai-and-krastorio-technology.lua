@@ -361,7 +361,36 @@ data.raw.technology["kr-radar"].unit.ingredients = {
   {"sp-geological-science-pack-1", 1},
   {"sp-material-science-pack-1", 1}
 }
--- aai industry technology changes
+
+data.raw.technology["mining-productivity-11"].prerequisites = {
+  "mining-productivity-10",
+  "sp-geological-science-pack-2",
+  "sp-chemical-science-pack-2"
+}
+data.raw.technology["mining-productivity-11"].unit.ingredients = {
+  {"sp-automation-science-pack-2", 1},
+  {"sp-logistic-science-pack-2", 1},
+  {"sp-material-science-pack-2", 1},
+  {"production-science-pack", 1},
+  {"sp-geological-science-pack-2", 1},
+  {"sp-chemical-science-pack-2", 1}
+}
+
+data.raw.technology["mining-productivity-16"].prerequisites = {
+  "mining-productivity-15",
+  "sp-geological-science-pack-3",
+  "sp-chemical-science-pack-3"
+}
+data.raw.technology["mining-productivity-16"].unit.ingredients = {
+  {"sp-automation-science-pack-3", 1},
+  {"sp-logistic-science-pack-3", 1},
+  {"sp-material-science-pack-3", 1},
+  {"sp-production-science-pack-3", 1},
+  {"sp-geological-science-pack-3", 1},
+  {"sp-chemical-science-pack-3", 1}
+}
+
+-- MARK: aai industry technology changes
 data.raw.technology["engine"].prerequisites = {"sp-steel-machining"}
 
 data.raw.technology["medium-electric-pole"].prerequisites = {"sp-aluminum-machining", "sp-electronic-science-pack-1"}

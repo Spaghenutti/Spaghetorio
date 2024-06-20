@@ -4343,6 +4343,43 @@ data:extend({
   },
   {
     type = "technology",
+    name = "sp-production-science-pack-3",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghenutti__/graphics/hr-icons/production-science-pack-3.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-production-science-pack-3"
+      },
+    },
+    prerequisites = {
+      "sp-automation-science-pack-3",
+      "sp-logistic-science-pack-3",
+      "sp-chemical-science-pack-2",
+      "sp-electronic-science-pack-2",
+      "sp-geological-science-pack-2",
+      "sp-astronomical-science-pack-2",
+      "sp-material-science-pack-2"
+    },
+    unit =
+    {
+      count = 750,
+      ingredients = {
+        {"sp-automation-science-pack-3", 1},
+        {"sp-logistic-science-pack-3", 1},
+        {"sp-chemical-science-pack-2", 1}, 
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"sp-astronomical-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1}
+      },
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
     name = "sp-astronomical-science-pack-3",  -- #ForRegEx# - technology
     icon_size = 256,
     icon = "__Spaghenutti__/graphics/hr-icons/astronomical-science-pack-3.png",
