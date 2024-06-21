@@ -29,6 +29,19 @@ data.raw.technology["military-science-pack"].unit.ingredients = {
   {"logistic-science-pack", 1}
 }
 
+data.raw.technology["production-science-pack"].prerequisites = {
+  "sp-material-science-pack-2"
+}
+data.raw.technology["production-science-pack"].unit.count = 250
+data.raw.technology["production-science-pack"].unit.ingredients = {
+  {"sp-material-science-pack-2", 1},
+  {"logistic-science-pack", 1},
+  {"sp-material-science-pack-1", 1},
+  {"sp-electronic-science-pack-1", 1},
+  {"sp-geological-science-pack-1", 1},
+  {"chemical-science-pack", 1}
+}
+
 data.raw.technology["circuit-network"].prerequisites = {
   "sp-aluminum-processing",
   "sp-aluminum-treatment",

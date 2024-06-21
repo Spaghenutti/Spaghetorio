@@ -1527,11 +1527,17 @@ data:extend({
         recipe = "sp-mirror-from-silver"
       },
     },
-    prerequisites = {"advanced-electronics"},
+    prerequisites = {"sp-material-science-pack-2"},
     unit =
     {
       count = 100,
-      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
+        {"chemical-science-pack", 1},
+        {"production-science-pack", 1}
+      },
       time = 15
     },
     order = "a-h-a"

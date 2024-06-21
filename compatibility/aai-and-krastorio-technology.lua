@@ -362,11 +362,12 @@ data.raw.technology["kr-radar"].unit.ingredients = {
   {"sp-material-science-pack-1", 1}
 }
 
-data.raw.technology["mining-productivity-11"].prerequisites = {
-  "mining-productivity-10",
-  "sp-geological-science-pack-2",
-  "sp-chemical-science-pack-2"
-}
+data.raw.technology["kr-advanced-lab"].prerequisites = {"sp-material-science-pack-2"}
+
+data.raw.technology["kr-research-server"].prerequisites = {"sp-material-science-pack-2"} --{"production-science-pack"} Let me do production :(
+
+table.insert(data.raw.technology["mining-productivity-11"].prerequisites, "sp-geological-science-pack-2")
+table.insert(data.raw.technology["mining-productivity-11"].prerequisites, "sp-chemical-science-pack-2")
 data.raw.technology["mining-productivity-11"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},
   {"sp-logistic-science-pack-2", 1},
@@ -376,11 +377,8 @@ data.raw.technology["mining-productivity-11"].unit.ingredients = {
   {"sp-chemical-science-pack-2", 1}
 }
 
-data.raw.technology["mining-productivity-16"].prerequisites = {
-  "mining-productivity-15",
-  "sp-geological-science-pack-3",
-  "sp-chemical-science-pack-3"
-}
+table.insert(data.raw.technology["mining-productivity-16"].prerequisites, "sp-geological-science-pack-3")
+table.insert(data.raw.technology["mining-productivity-16"].prerequisites, "sp-chemical-science-pack-3")
 data.raw.technology["mining-productivity-16"].unit.ingredients = {
   {"sp-automation-science-pack-3", 1},
   {"sp-logistic-science-pack-3", 1},

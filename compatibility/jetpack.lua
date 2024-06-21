@@ -8,6 +8,16 @@ data.raw.recipe["jetpack-1"].ingredients = {
   {type = "item", name = "copper-cable", amount = 6},
 }
 
+data.raw.recipe["jetpack-2"].ingredients = {
+  {type = "item", name = "sp-valve", amount = 4},
+  {type = "item", name = "sp-aluminum-frame", amount = 4},
+  {type = "item", name = "kr-steel-pipe", amount = 10},
+  {type = "item", name = "advanced-circuit", amount = 8},
+  {type = "item", name = "sp-insulated-wire", amount = 10},
+  {type = "item", name = "electric-engine-unit", amount = 2},
+}
+
+
 if mods["aai-industry"] then
   table.insert(data.raw.recipe["jetpack-1"].ingredients, {type = "item", name = "engine-unit", amount = 1})
 end
