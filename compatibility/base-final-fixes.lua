@@ -38,3 +38,23 @@ data.raw.technology["battery"].unit.ingredients = {
   {"sp-material-science-pack-1", 1},
   {"sp-electronic-science-pack-1", 1}
 }
+
+data.raw.technology["production-science-pack"].prerequisites = {
+  "sp-automation-science-pack-2"
+}
+data.raw.technology["production-science-pack"].unit.ingredients = {
+  {"sp-automation-science-pack-2", 1},
+  {"logistic-science-pack", 1},
+  {"sp-material-science-pack-1", 1},
+  {"sp-electronic-science-pack-1", 1},
+  {"sp-geological-science-pack-1", 1},
+  {"chemical-science-pack", 1}
+}
+
+data.raw.technology["military-science-pack"].prerequisites = {
+  "logistic-science-pack"
+}
+data.raw.technology["military-science-pack"].unit.ingredients = {
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1}
+}

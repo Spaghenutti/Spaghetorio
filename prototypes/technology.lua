@@ -2030,10 +2030,10 @@ data:extend({
         recipe = "sp-plutonium-240-processing"
       },
     },
-    prerequisites = {"production-science-pack"},
+    prerequisites = {"kovarex-enrichment-process"},
     unit =
     {
-      count = 100,
+      count = 1000,
       ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
       time = 15
     },
@@ -2178,7 +2178,7 @@ data:extend({
         recipe = "sp-superconductor"
       },
     },
-    prerequisites = {"production-science-pack"},
+    prerequisites = {"sp-material-science-pack-2"},
     unit =
     {
       count = 100,
@@ -2944,11 +2944,17 @@ data:extend({
         recipe = "sp-relay"
       },
     },
-    prerequisites = {"production-science-pack"},
+    prerequisites = {"sp-electronic-components"},
     unit =
     {
       count = 100,
-      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      ingredients = {
+        {"basic-tech-card", 1},
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"sp-electronic-science-pack-1", 1},
+        {"sp-material-science-pack-1", 1}
+      },
       time = 15
     },
     order = "a-h-a"
@@ -3084,11 +3090,18 @@ data:extend({
         recipe = "sp-optical-sensor"
       },
     },
-    prerequisites = {"sp-relay"},
+    prerequisites = {"sp-electronic-science-pack-2"},
     unit =
     {
-      count = 100,
-      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      count = 200,
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"production-science-pack", 1},
+      },
       time = 15
     },
     order = "a-h-a"

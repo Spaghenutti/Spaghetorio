@@ -188,16 +188,6 @@ util.change_recipe_ingredients("express-splitter",
   {{"sp-titanium-frame", 8}, {"sp-bolts", 8}, {"sp-actuator", 2}, {"express-transport-belt", 2}},
   nil,
   nil)
-util.change_recipe_ingredients("stack-inserter",
-  {{"sp-stainless-steel-gear-wheel", 8}, {"sp-aluminum-frame", 6}, {"sp-bolts", 12}, {"electric-engine-unit", 2}, {"advanced-circuit", 2}, {"sp-ball-bearing", 6}},
-  {{"sp-stainless-steel-gear-wheel", 15}, {"sp-aluminum-frame", 10}, {"sp-bolts", 20}, {"electric-engine-unit", 3}, {"advanced-circuit", 3    }, {"sp-ball-bearing", 8}},
-  2,
-  3)
-util.change_recipe_ingredients("stack-filter-inserter",
-  {{"sp-stainless-steel-gear-wheel", 8}, {"sp-aluminum-frame", 6}, {"sp-bolts", 12}, {"electric-engine-unit", 2}, {"sp-circuit-board", 2}, {"sp-optical-sensor", 2}, {"sp-infrared-filter", 4}, {"sp-ball-bearing", 6}},
-  {{"sp-stainless-steel-gear-wheel", 15}, {"sp-aluminum-frame", 10}, {"sp-bolts", 20}, {"electric-engine-unit", 3}, {"sp-circuit-board", 2}, {"sp-optical-sensor", 2}, {"sp-infrared-filter", 6}, {"sp-ball-bearing", 8}},
-  2,
-  3)
 -- Base: {"iron-plate", 10}; Krastorio {"iron-beam", 6}
 util.change_recipe_ingredients("medium-electric-pole",
   {{"iron-stick", 4}, {"sp-bolts", 8}, {"sp-aluminum-cable", 4}},
@@ -643,13 +633,30 @@ table.insert(data.raw.recipe["inserter"].normal.ingredients, {"sp-bolts", 2})
 table.insert(data.raw.recipe["inserter"].normal.ingredients, {"sp-spring", 2})
 table.insert(data.raw.recipe["long-handed-inserter"].normal.ingredients, {"sp-bolts", 4})
 table.insert(data.raw.recipe["long-handed-inserter"].normal.ingredients, {"sp-spring", 2})
-table.insert(data.raw.recipe["fast-inserter"].ingredients, {"electric-motor", 1})
-table.insert(data.raw.recipe["fast-inserter"].ingredients, {"sp-bolts", 4})
-table.insert(data.raw.recipe["fast-inserter"].ingredients, {"sp-ball-bearing", 2})
-table.insert(data.raw.recipe["filter-inserter"].normal.ingredients, {"electric-motor", 1})
-table.insert(data.raw.recipe["filter-inserter"].normal.ingredients, {"sp-bolts", 4})
-table.insert(data.raw.recipe["filter-inserter"].normal.ingredients, {"sp-optical-sensor", 1})
-table.insert(data.raw.recipe["filter-inserter"].normal.ingredients, {"sp-ball-bearing", 4})
+-- Krastorio: {"inserter-parts", 2}
+util.change_recipe_ingredients("fast-inserter",
+  {{"electric-motor", 1}, {"sp-bolts", 4}, {"sp-ball-bearing", 2}, {"sp-aluminum-frame", 2}, {"electronic-circuit", 4}},
+  {{"electric-motor", 1}, {"sp-bolts", 6}, {"sp-ball-bearing", 4}, {"sp-aluminum-frame", 3}, {"electronic-circuit", 6}},
+  1,
+  2)
+-- Krastorio: {"inserter-parts", 2}
+util.change_recipe_ingredients("filter-inserter",
+  {{"electric-motor", 1}, {"sp-bolts", 4}, {"sp-ball-bearing", 4}, {"sp-aluminum-frame", 2}, {"sp-relay", 2}, {"advanced-circuit", 4}, {"sp-insulated-wire", 2}},
+  {{"electric-motor", 1}, {"sp-bolts", 6}, {"sp-ball-bearing", 6}, {"sp-aluminum-frame", 3}, {"sp-relay", 6}, {"electronic-circuit", 6}, {"sp-insulated-wire", 6}},
+  1.5,
+  3)
+-- Krastorio: {"inserter-parts", 3}
+util.change_recipe_ingredients("stack-inserter",
+  {{"sp-heavy-gearbox", 2}, {"sp-stainless-steel", 4}, {"sp-bolts", 12}, {"electric-engine-unit", 2}, {"advanced-circuit", 2}, {"sp-heavy-ball-bearing", 4}},
+  {{"sp-heavy-gearbox", 3}, {"sp-stainless-steel", 6}, {"sp-bolts", 20}, {"electric-engine-unit", 3}, {"advanced-circuit", 3}, {"sp-heavy-ball-bearing", 6}},
+  2,
+  3)
+-- Krastorio: {"inserter-parts", 3}
+util.change_recipe_ingredients("stack-filter-inserter",
+  {{"sp-heavy-gearbox", 2}, {"sp-stainless-steel", 4}, {"sp-bolts", 12}, {"electric-engine-unit", 2}, {"sp-circuit-board", 2}, {"sp-optical-sensor", 2}, {"sp-infrared-filter", 4}, {"sp-heavy-ball-bearing", 4}},
+  {{"sp-heavy-gearbox", 3}, {"sp-stainless-steel", 6}, {"sp-bolts", 20}, {"electric-engine-unit", 3}, {"sp-circuit-board", 2}, {"sp-optical-sensor", 2}, {"sp-infrared-filter", 6}, {"sp-heavy-ball-bearing", 6}},
+  2,
+  3)
 
 if not mods["Krastorio2"] then
   table.insert(data.raw.recipe["concrete"].normal.ingredients, {"sp-sand", 5})

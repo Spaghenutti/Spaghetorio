@@ -35,24 +35,6 @@ util.change_recipe_ingredients("chemical-science-pack",
   20,
   30)
 
--- Fix technologies
-data.raw.technology["production-science-pack"].prerequisites = {
-  "sp-automation-science-pack-2"
-}
-data.raw.technology["production-science-pack"].unit.ingredients = {
-  {"sp-automation-science-pack-2", 1},
-  {"logistic-science-pack", 1},
-  {"sp-material-science-pack-1", 1},
-  {"sp-electronic-science-pack-1", 1},
-  {"sp-geological-science-pack-1", 1},
-  {"chemical-science-pack", 1}
-}
-
-data.raw.technology["military-science-pack"].unit.ingredients = {
-  {"automation-science-pack", 1},
-  {"logistic-science-pack", 1}
-}
-
 -- Lab inputs
 table.insert(data.raw.lab["lab"].inputs, "sp-electronic-science-pack-1")
 table.insert(data.raw.lab["lab"].inputs, "sp-geological-science-pack-1")
