@@ -73,6 +73,8 @@ Low prio
   - Add seeds for tree -> Use actual trees to get wood and the seeds
   - Add complex process for crushing and refining uranium ore
   - Separate ores with centrifuges
+  - Do something interesting with coal liquifaction
+  - Unlock much earlier filter inserter
 
 
 Future changes

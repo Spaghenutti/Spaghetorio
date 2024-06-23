@@ -48,6 +48,11 @@ data.raw.technology["production-science-pack"].unit.ingredients = {
   {"chemical-science-pack", 1}
 }
 
+data.raw.technology["military-science-pack"].unit.ingredients = {
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1}
+}
+
 -- Lab inputs
 table.insert(data.raw.lab["lab"].inputs, "sp-electronic-science-pack-1")
 table.insert(data.raw.lab["lab"].inputs, "sp-geological-science-pack-1")

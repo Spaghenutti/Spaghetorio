@@ -1743,14 +1743,14 @@ data:extend({
     name = "sp-heavy-gearbox",  -- #ForRegEx# - recipe
     category = "crafting-with-fluid",
     enabled = false,
-    energy_required = 5,
+    energy_required = 4,
     ingredients = {
-      {type = "item", name = "sp-machined-parts", amount = 2},
+      {type = "item", name = "sp-machined-parts", amount = 8},
       {type = "fluid", name = "lubricant", amount = 20},
-      {type = "item", name = "sp-bolts", amount = 6},
-      {type = "item", name = "sp-heavy-ball-bearing", amount = 3}
-      -- Base: {type = "item", name = "iron-gear-wheel", amount = 10}
-      -- Krastorio: {type = "item", name = "steel-gear-wheel", amount = 10}
+      {type = "item", name = "sp-bolts", amount = 4},
+      {type = "item", name = "sp-heavy-ball-bearing", amount = 3},
+      {type = "item", name = "sp-stainless-steel", amount = 2},
+      {type = "item", name = "sp-stainless-steel-gear-wheel", amount = 10}
     },
     results = {
       {type = "item", name = "sp-heavy-gearbox", amount = 1}
@@ -1761,15 +1761,14 @@ data:extend({
     name = "sp-differential",  -- #ForRegEx# - recipe
     category = "crafting-with-fluid",
     enabled = false,
-    energy_required = 4,
+    energy_required = 6,
     ingredients = {
-      {type = "item", name = "sp-gearbox", amount = 1},
+      {type = "item", name = "sp-gearbox", amount = 2},
       {type = "fluid", name = "lubricant", amount = 50},
       {type = "item", name = "sp-machined-parts", amount = 3},
       {type = "item", name = "sp-bolts", amount = 4},
-      {type = "item", name = "sp-ball-bearing", amount = 3}
-      -- Base: {type = "item", name = "iron-gear-wheel", amount = 6}
-      -- Krastorio: {type = "item", name = "steel-gear-wheel", amount = 6}
+      {type = "item", name = "sp-ball-bearing", amount = 3},
+      {type = "item", name = "sp-stainless-steel-gear-wheel", amount = 12}
     },
     results = {
       {type = "item", name = "sp-differential", amount = 1}
@@ -6053,8 +6052,6 @@ if not mods["Krastorio2"] then
   table.insert(data.raw.recipe["sp-vacuum-tube"].ingredients, {type = "item", name = "sp-glass", amount = 3})
   table.insert(data.raw.recipe["sp-vacuum-tube"].ingredients, {type = "fluid", name = "sp-hydrogen", amount = 5})
   table.insert(data.raw.recipe["sp-liquid-nitrogen"].ingredients, {type = "fluid", name = "sp-nitrogen", amount = 5})
-  table.insert(data.raw.recipe["sp-heavy-gearbox"].ingredients, {type = "item", name = "iron-gear-wheel", amount = 10})
-  table.insert(data.raw.recipe["sp-differential"].ingredients, {type = "item", name = "iron-gear-wheel", amount = 6})
   table.insert(data.raw.recipe["sp-material-science-pack-1"].ingredients, {type = "item", name = "iron-beam", amount = 5})
   
   -- Add missing results

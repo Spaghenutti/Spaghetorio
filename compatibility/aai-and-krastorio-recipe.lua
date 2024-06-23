@@ -1058,8 +1058,6 @@ table.insert(data.raw.recipe["sp-liquid-nitrogen"].ingredients, {type = "fluid",
 table.insert(data.raw.recipe["sp-chronomatter"].ingredients, {type = "item", name = "imersite-powder", amount = 4})
 table.insert(data.raw.recipe["sp-bioreactor"].ingredients, {type = "item", name = "biomass", amount = 10})
 table.insert(data.raw.recipe["sp-grobgnum-explorer"].ingredients, {type = "item", name = "ai-core", amount = 20})
-table.insert(data.raw.recipe["sp-heavy-gearbox"].ingredients, {type = "item", name = "steel-gear-wheel", amount = 10})
-table.insert(data.raw.recipe["sp-differential"].ingredients, {type = "item", name = "steel-gear-wheel", amount = 6})
 table.insert(data.raw.recipe["sp-electronic-science-pack-1"].ingredients, {type = "item", name = "blank-tech-card", amount = 5})
 table.insert(data.raw.recipe["sp-geological-science-pack-1"].ingredients, {type = "item", name = "quartz", amount = 5})
 table.insert(data.raw.recipe["sp-geological-science-pack-1"].ingredients, {type = "item", name = "sand", amount = 10})
