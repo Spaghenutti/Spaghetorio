@@ -24,6 +24,19 @@ data.raw.technology["chemical-science-pack"].unit.ingredients = {
   {"sp-geological-science-pack-1", 1}
 }
 
+-- production-science-pack is done again in final fixes
+data.raw.technology["production-science-pack"].prerequisites = {
+  "sp-automation-science-pack-2"
+}
+data.raw.technology["production-science-pack"].unit.ingredients = {
+  {"sp-automation-science-pack-2", 1},
+  {"logistic-science-pack", 1},
+  {"sp-material-science-pack-1", 1},
+  {"sp-electronic-science-pack-1", 1},
+  {"sp-geological-science-pack-1", 1},
+  {"chemical-science-pack", 1}
+}
+
 data.raw.technology["military-science-pack"].unit.ingredients = {
   {"automation-science-pack", 1},
   {"logistic-science-pack", 1}
@@ -255,6 +268,15 @@ table.insert(data.raw.technology["fast-inserter"].prerequisites, "sp-ball-bearin
 data.raw.technology["fast-inserter"].unit.ingredients = {
   {"automation-science-pack", 1},
   {"logistic-science-pack", 1},
+  {"sp-material-science-pack-1", 1},
+  {"sp-electronic-science-pack-1", 1},
+  {"chemical-science-pack", 1}
+}
+
+table.insert(data.raw.technology["stack-inserter"].prerequisites, "sp-logistic-science-pack-2")
+data.raw.technology["stack-inserter"].unit.ingredients = {
+  {"automation-science-pack", 2},
+  {"logistic-science-pack", 2},
   {"sp-material-science-pack-1", 1},
   {"sp-electronic-science-pack-1", 1},
   {"chemical-science-pack", 1}

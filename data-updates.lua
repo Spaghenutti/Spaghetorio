@@ -4,6 +4,7 @@ require("prototypes.recipe-changes")
 -- MARK: AAI and Krastorio 2
 require("compatibility.aai-and-krastorio-recipe")
 require("compatibility.aai-and-krastorio-technology")
+require("compatibility.aai-and-krastorio-technology-changes")
 
 require("compatibility.krastorio-fixes")
 require("compatibility.aai-industry-fixes")
