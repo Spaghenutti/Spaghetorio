@@ -3107,9 +3107,11 @@ data:extend({
     {
       count = 100,
       ingredients = {
-        {"basic-tech-card", 1},
-        {"automation-science-pack", 1},
-        {"logistic-science-pack", 1}
+        {"sp-automation-science-pack-2", 1},
+        {"logistic-science-pack", 1},
+        {"production-science-pack", 1},
+        {"sp-material-science-pack-1", 1},
+        {"sp-electronic-science-pack-1", 1}
       },
       time = 15
     },

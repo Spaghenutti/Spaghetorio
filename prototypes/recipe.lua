@@ -2513,7 +2513,8 @@ data:extend({
     enabled = false,
     energy_required = 5,
     ingredients = {
-      {type = "item", name = "sp-laser", amount = 1},
+      {type = "item", name = "electric-motor", amount = 1},
+      {type = "item", name = "sp-ball-bearing", amount = 2},
       {type = "item", name = "sp-bolts", amount = 4},
       {type = "item", name = "sp-stainless-steel", amount = 3},
       {type = "item", name = "sp-stainless-steel-gear-wheel", amount = 6},

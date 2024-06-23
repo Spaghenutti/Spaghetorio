@@ -28,11 +28,12 @@ data.raw.technology["sulfur-processing"].unit.ingredients = {
 data.raw.technology["battery"].prerequisites = {
   "sp-vinyl-chloride",
   "sp-salt",
-  "sp-automation-science-pack-2"
+  "production-science-pack"
 }
 data.raw.technology["battery"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},
   {"logistic-science-pack", 1},
+  {"production-science-pack", 1},
   {"chemical-science-pack", 1},
   {"sp-material-science-pack-1", 1},
   {"sp-electronic-science-pack-1", 1}
