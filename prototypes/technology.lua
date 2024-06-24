@@ -2944,7 +2944,10 @@ data:extend({
         recipe = "sp-relay"
       },
     },
-    prerequisites = {"sp-electronic-components"},
+    prerequisites = {
+      "sp-electronic-components",
+      "sp-aluminum-treatment"
+    },
     unit =
     {
       count = 100,

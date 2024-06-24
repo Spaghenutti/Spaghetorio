@@ -2547,7 +2547,7 @@ data:extend({
     enabled = false,
     energy_required = 1.6,
     ingredients = {
-      {type = "item", name = "copper-plate", amount = 1},
+      {type = "item", name = "sp-anodized-aluminum", amount = 1},
       {type = "item", name = "sp-coil", amount = 1},
       {type = "item", name = "plastic-bar", amount = 1},
       {type = "item", name = "iron-stick", amount = 1}

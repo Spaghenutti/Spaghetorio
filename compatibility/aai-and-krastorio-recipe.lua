@@ -371,6 +371,7 @@ data:extend({
     subgroup = "electronic-optical-component",
     enabled = false,
     energy_required = 3,
+    hide_from_player_crafting = true,
     ingredients = {
       {type = "item", name = "electronic-components", amount = 1},
     },

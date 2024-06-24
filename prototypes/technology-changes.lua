@@ -4,6 +4,7 @@ table.insert(data.raw.technology["automation-science-pack"].prerequisites, "sp-m
 table.insert(data.raw.technology["gun-turret"].prerequisites, "sp-mechanical-assembling")
 
 table.insert(data.raw.technology["filter-inserter"].prerequisites, "sp-relay")
+table.insert(data.raw.technology["filter-inserter"].prerequisites, "advanced-electronics")
 
 data.raw.technology["chemical-science-pack"].prerequisites = {
   "plastics",
