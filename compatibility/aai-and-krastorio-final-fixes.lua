@@ -35,38 +35,38 @@ util.change_recipe_ingredients("chemical-science-pack",
   20,
   30)
 util.change_recipe_ingredients("military-science-pack",
-  {{"copper-plate", 69}},
-  {{"copper-plate", 69}},
+  {{"copper-plate", 69}, {"blank-tech-card", 5}},
+  {{"copper-plate", 69}, {"blank-tech-card", 5}},
   20,
   30)
 util.change_recipe_ingredients("production-science-pack",
-  {{"sp-filter", 5}, {"fast-inserter", 1}, {"kr-steel-pump", 1}, {"sp-relay", 5}},
-  {{"sp-filter", 8}, {"fast-inserter", 1}, {"kr-steel-pump", 2}, {"sp-relay", 8}},
+  {{"sp-filter", 5}, {"fast-inserter", 1}, {"kr-steel-pump", 1}, {"sp-relay", 5}, {"blank-tech-card", 5}},
+  {{"sp-filter", 8}, {"fast-inserter", 1}, {"kr-steel-pump", 2}, {"sp-relay", 8}, {"blank-tech-card", 5}},
   20,
   30)
 util.change_recipe_ingredients("utility-science-pack",
-  {{"copper-plate", 69}},
-  {{"copper-plate", 69}},
+  {{"copper-plate", 69}, {"blank-tech-card", 5}},
+  {{"copper-plate", 69}, {"blank-tech-card", 5}},
   20,
   30)
 util.change_recipe_ingredients("matter-tech-card",
-  {{"copper-plate", 69}},
-  {{"copper-plate", 69}},
+  {{"copper-plate", 69}, {"blank-tech-card", 5}},
+  {{"copper-plate", 69}, {"blank-tech-card", 5}},
   20,
   30)
 util.change_recipe_ingredients("space-science-pack", -- Optimization tech card
-  {{"copper-plate", 69}},
-  {{"copper-plate", 69}},
+  {{"copper-plate", 69}, {"blank-tech-card", 5}},
+  {{"copper-plate", 69}, {"blank-tech-card", 5}},
   20,
   30)
 util.change_recipe_ingredients("advanced-tech-card",
-  {{"copper-plate", 69}},
-  {{"copper-plate", 69}},
+  {{"copper-plate", 69}, {"blank-tech-card", 5}},
+  {{"copper-plate", 69}, {"blank-tech-card", 5}},
   20,
   30)
 util.change_recipe_ingredients("singularity-tech-card",
-  {{"copper-plate", 69}},
-  {{"copper-plate", 69}},
+  {{"copper-plate", 69}, {"blank-tech-card", 5}},
+  {{"copper-plate", 69}, {"blank-tech-card", 5}},
   20,
   30)
 

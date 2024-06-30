@@ -67,6 +67,23 @@ function data_util.change_recipe_ingredients(name, normal_ingredients, expensive
   end
 end
 
+-- FIXME: Not working for normal / expensive recipe
+function data_util.remove_ingredient(recipe, ingredient_name)
+  local ingredients = data.raw.recipe[recipe].ingredients
+  if next(ingredients) ~= nil then
+    for i, ingredient in pairs(ingredients) do
+      for _, ingredient_value in pairs(ingredient) do
+        log(ingredient_value)
+        if ingredient_value == ingredient_name then
+          table.remove(ingredients, i)
+          return true
+        end
+      end
+    end
+  end
+  return false
+end
+
 function data_util.disable_recipe(recipe_name)
   data.raw.recipe[recipe_name].enabled = false
 

@@ -125,7 +125,7 @@ data:extend({
     prerequisites = {"sp-chemical-science-pack-2"},
     unit =
     {
-      count = 50,
+      count = 500,
       ingredients = {
         {"sp-automation-science-pack-2", 1},
         {"sp-logistic-science-pack-2", 1},

@@ -14,7 +14,7 @@ data.raw.technology["filter-inserter"].unit.ingredients = {
 }
 
 table.insert(data.raw.technology["stack-filter-inserter"].prerequisites, "utility-science-pack")
-data.raw.technology["filter-inserter"].unit.ingredients = {
+data.raw.technology["stack-filter-inserter"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},
   {"sp-logistic-science-pack-2", 1},
   {"sp-material-science-pack-2", 1},

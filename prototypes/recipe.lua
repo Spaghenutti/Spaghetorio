@@ -2669,6 +2669,8 @@ data:extend({
   {
     type = "recipe",
     name = "sp-sodium-hydroxide-from-liquid-sodium",  -- #ForRegEx# - recipe
+    icons = util.overlay_small_icon("__Spaghenutti__/graphics/icons/sodium-hydroxide.png", 64,
+                                    "__Spaghenutti__/graphics/icons/liquid-sodium.png", 64),
     category = "chemistry",
     subgroup = "fluid-recipes",
     enabled = false,
@@ -4624,8 +4626,9 @@ data:extend({
     enabled = false,
     energy_required = 24,
     ingredients =
-    -- Krastorio: {"blank-tech-card", 5}, {"engine-unit", 2}
+    -- Krastorio: {"engine-unit", 2}
     {
+      {"automation-science-pack", 20},
       {"sp-ball-bearing", 5},
       {"small-lamp", 5},
       {"sp-magnet", 10},
@@ -4641,8 +4644,9 @@ data:extend({
     enabled = false,
     energy_required = 24,
     ingredients =
-    -- Krastorio: {"blank-tech-card", 5}, {"electric-engine-unit", 5}, {"engine-unit", 2}, {"automation-core", 10}
+    -- Krastorio: {"electric-engine-unit", 5}, {"engine-unit", 2}, {"automation-core", 10}
     {
+      {"logistic-science-pack", 20},
       {"sp-electromagnet", 8}
     },
     result_count = 5,
@@ -4655,9 +4659,9 @@ data:extend({
     enabled = false,
     energy_required = 24,
     ingredients =
-    -- Krastorio: {"blank-tech-card", 5}
     {
-      {"iron-plate", 69},
+      {"military-science-pack", 20},
+      {"iron-plate", 69}
     },
     result_count = 5,
     result = "sp-military-science-pack-2"
@@ -4669,9 +4673,9 @@ data:extend({
     enabled = false,
     energy_required = 24,
     ingredients =
-    -- Krastorio: {"blank-tech-card", 5}
     {
-      {"iron-plate", 69},
+      {"chemical-science-pack", 20},
+      {"iron-plate", 69}
     },
     result_count = 5,
     result = "sp-chemical-science-pack-2"
@@ -4683,9 +4687,9 @@ data:extend({
     enabled = false,
     energy_required = 24,
     ingredients =
-    -- Krastorio: {"blank-tech-card", 5}
     {
-      {"iron-plate", 69},
+      {"sp-electronic-science-pack-1", 20},
+      {"iron-plate", 69}
     },
     result_count = 5,
     result = "sp-electronic-science-pack-2"
@@ -4697,9 +4701,9 @@ data:extend({
     enabled = false,
     energy_required = 24,
     ingredients =
-    -- Krastorio: {"blank-tech-card", 5}
     {
-      {"iron-plate", 69},
+      {"sp-geological-science-pack-1", 20},
+      {"iron-plate", 69}
     },
     result_count = 5,
     result = "sp-geological-science-pack-2"
@@ -4711,9 +4715,9 @@ data:extend({
     enabled = false,
     energy_required = 24,
     ingredients =
-    -- Krastorio: {"blank-tech-card", 5}
     {
-      {"iron-plate", 69},
+      {"sp-material-science-pack-1", 20},
+      {"iron-plate", 69}
     },
     result_count = 5,
     result = "sp-material-science-pack-2"
@@ -4727,7 +4731,7 @@ data:extend({
     ingredients =
     -- Krastorio: {"blank-tech-card", 5}
     {
-      {"iron-plate", 69},
+      {"iron-plate", 69}
     },
     result_count = 5,
     result = "sp-astronomical-science-pack-2"
@@ -4753,9 +4757,9 @@ data:extend({
     enabled = false,
     energy_required = 24,
     ingredients =
-    -- Krastorio: {"blank-tech-card", 5}
     {
-      {"iron-plate", 69},
+      {"sp-automation-science-pack-2", 10},
+      {"iron-plate", 69}
     },
     result_count = 5,
     result = "sp-automation-science-pack-3"
@@ -4767,9 +4771,9 @@ data:extend({
     enabled = false,
     energy_required = 24,
     ingredients =
-    -- Krastorio: {"blank-tech-card", 5}
     {
-      {"iron-plate", 69},
+      {"sp-logistic-science-pack-2", 10},
+      {"iron-plate", 69}
     },
     result_count = 5,
     result = "sp-logistic-science-pack-3"
@@ -4781,9 +4785,9 @@ data:extend({
     enabled = false,
     energy_required = 24,
     ingredients =
-    -- Krastorio: {"blank-tech-card", 5}
     {
-      {"iron-plate", 69},
+      {"sp-military-science-pack-2", 10},
+      {"iron-plate", 69}
     },
     result_count = 5,
     result = "sp-military-science-pack-3"
@@ -4795,9 +4799,9 @@ data:extend({
     enabled = false,
     energy_required = 24,
     ingredients =
-    -- Krastorio: {"blank-tech-card", 5}
     {
-      {"iron-plate", 69},
+      {"sp-chemical-science-pack-2", 10},
+      {"iron-plate", 69}
     },
     result_count = 5,
     result = "sp-chemical-science-pack-3"
@@ -4809,9 +4813,9 @@ data:extend({
     enabled = false,
     energy_required = 24,
     ingredients =
-    -- Krastorio: {"blank-tech-card", 5}
     {
-      {"iron-plate", 69},
+      {"sp-electronic-science-pack-2", 10},
+      {"iron-plate", 69}
     },
     result_count = 5,
     result = "sp-electronic-science-pack-3"
@@ -4823,9 +4827,9 @@ data:extend({
     enabled = false,
     energy_required = 24,
     ingredients =
-    -- Krastorio: {"blank-tech-card", 5}
     {
-      {"iron-plate", 69},
+      {"sp-geological-science-pack-2", 10},
+      {"iron-plate", 69}
     },
     result_count = 5,
     result = "sp-geological-science-pack-3"
@@ -4837,9 +4841,9 @@ data:extend({
     enabled = false,
     energy_required = 24,
     ingredients =
-    -- Krastorio: {"blank-tech-card", 5}
     {
-      {"iron-plate", 69},
+      {"sp-material-science-pack-2", 10},
+      {"iron-plate", 69}
     },
     result_count = 5,
     result = "sp-material-science-pack-3"
@@ -4851,9 +4855,9 @@ data:extend({
     enabled = false,
     energy_required = 24,
     ingredients =
-    -- Krastorio: {"blank-tech-card", 5}
     {
-      {"iron-plate", 69},
+      {"sp-astronomical-science-pack-2", 20},
+      {"iron-plate", 69}
     },
     result_count = 5,
     result = "sp-astronomical-science-pack-3"
@@ -4865,9 +4869,9 @@ data:extend({
     enabled = false,
     energy_required = 24,
     ingredients =
-    -- Krastorio: {"blank-tech-card", 5}
     {
-      {"iron-plate", 69},
+      {"sp-computer-science-pack-2", 20},
+      {"iron-plate", 69}
     },
     result_count = 5,
     result = "sp-computer-science-pack-3"
@@ -4879,9 +4883,9 @@ data:extend({
     enabled = false,
     energy_required = 24,
     ingredients =
-    -- Krastorio: {"blank-tech-card", 5}
     {
-      {"iron-plate", 69},
+      {"production-science-pack", 10},
+      {"iron-plate", 69}
     },
     result_count = 5,
     result = "sp-production-science-pack-3"
@@ -4893,9 +4897,9 @@ data:extend({
     enabled = false,
     energy_required = 24,
     ingredients =
-    -- Krastorio: {"blank-tech-card", 5}
     {
-      {"iron-plate", 69},
+      {"utility-science-pack", 20},
+      {"iron-plate", 69}
     },
     result_count = 5,
     result = "sp-utility-science-pack-3"
@@ -5639,6 +5643,8 @@ data:extend({
   {
     type = "recipe",
     name = "sp-sodium-hydroxide-from-sodium",  -- #ForRegEx# - recipe
+    icons = util.overlay_small_icon("__Spaghenutti__/graphics/icons/sodium-hydroxide.png", 64,
+                                    "__Spaghenutti__/graphics/icons/sodium.png", 64),
     category = "chemistry",
     subgroup = "fluid-recipes",
     enabled = false,
