@@ -65,7 +65,6 @@ local util = require("data-util")
 --    - "sp-magnet"
 --    - "sp-neodymium-magnet"
 --    - "sp-spring"
---    - "sp-advanced-compute-unit"
 --    - "sp-antenna-chip"
 --    - "sp-capacitor"
 --    - "sp-diode"
@@ -2069,7 +2068,7 @@ data:extend({
       {type = "item", name = "sp-titanium-frame", amount = 2},
       {type = "item", name = "sp-machined-parts", amount = 6},
       {type = "item", name = "sp-actuator", amount = 2},
-      {type = "item", name = "sp-advanced-compute-unit", amount = 1},
+      {type = "item", name = "sp-processor", amount = 1},
     },
     results = {
       {type = "item", name = "sp-cybernetics", amount = 1}
@@ -2222,32 +2221,15 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-advanced-compute-unit",  -- #ForRegEx# - recipe
-    category = "crafting",
-    enabled = false,
-    energy_required = 8,
-    ingredients = {
-      {type = "item", name = "sp-circuit-board", amount = 4},
-      {type = "item", name = "sp-aluminum-frame", amount = 2},
-      {type = "item", name = "sp-memory-chip", amount = 2},
-      {type = "item", name = "sp-processor", amount = 1},
-      {type = "item", name = "sp-integrated-circuit", amount = 5}
-    },
-    results = {
-      {type = "item", name = "sp-advanced-compute-unit", amount = 1}
-    }
-  },
-  {
-    type = "recipe",
     name = "sp-advanced-processing-unit",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 8,
     -- TODO: Change recipe, its the same as adanced compute unit
     ingredients = {
-      {type = "item", name = "sp-circuit-board", amount = 4},
-      {type = "item", name = "sp-aluminum-frame", amount = 2},
-      {type = "item", name = "sp-memory-chip", amount = 2},
+      {type = "item", name = "sp-circuit-board", amount = 1},
+      {type = "item", name = "sp-anodized-aluminum", amount = 2},
+      {type = "item", name = "sp-memory-chip", amount = 4},
       {type = "item", name = "sp-processor", amount = 1},
       {type = "item", name = "sp-integrated-circuit", amount = 5}
     },
@@ -3348,7 +3330,7 @@ data:extend({
     enabled = false,
     energy_required = 60,
     ingredients = {
-      {type = "item", name = "sp-advanced-compute-unit", amount = 10},
+      {type = "item", name = "sp-advanced-processing-unit", amount = 10},
       {type = "item", name = "sp-duralumin", amount = 20},
       {type = "item", name = "sp-inconel", amount = 10},
       {type = "fluid", name = "sp-chronomatter", amount = 50},
@@ -3366,7 +3348,7 @@ data:extend({
     enabled = false,
     energy_required = 60,
     ingredients = {
-      {type = "item", name = "sp-advanced-compute-unit", amount = 12},
+      {type = "item", name = "sp-advanced-processing-unit", amount = 12},
       {type = "item", name = "sp-duralumin", amount = 30},
       {type = "item", name = "sp-titanium-carbide", amount = 10},
       {type = "item", name = "sp-gravitonium", amount = 30},

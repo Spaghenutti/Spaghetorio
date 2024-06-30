@@ -2826,7 +2826,12 @@ data:extend({
         recipe = "sp-heavy-ball-bearing"
       },
     },
-    prerequisites = {"production-science-pack"},
+    prerequisites = {
+      "production-science-pack",
+      "sp-aluminum-alloys",
+      "sp-niobium-alloys",
+      "sp-titanium-nitride"
+    },
     unit =
     {
       count = 100,
@@ -2850,27 +2855,6 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "sp-kevlar"
-      },
-    },
-    prerequisites = {"production-science-pack"},
-    unit =
-    {
-      count = 100,
-      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
-      time = 15
-    },
-    order = "a-h-a"
-  },
-  {
-    type = "technology",
-    name = "sp-advanced-compute-unit",  -- #ForRegEx# - technology
-    icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/advanced-compute-unit.png",
-    effects =
-    {
-      {
-        type = "unlock-recipe",
-        recipe = "sp-advanced-compute-unit"
       },
     },
     prerequisites = {"production-science-pack"},

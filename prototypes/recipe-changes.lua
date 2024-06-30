@@ -374,23 +374,23 @@ util.change_recipe_ingredients("energy-shield-mk2-equipment",
   20,
   30)
 util.change_recipe_ingredients("battery-equipment",
-  {{"battery", 4}, {"sp-aluminum-frame", 3}, {"sp-bolts", 6}, {"copper-cable", 4}},
-  {{"battery", 6}, {"sp-aluminum-frame", 6}, {"sp-bolts", 10}, {"copper-cable", 10}},
-  10,
-  15)
+  {{"battery", 4}, {"sp-aluminum-frame", 1}, {"sp-bolts", 6}, {"sp-insulated-wire", 2}},
+  {{"battery", 6}, {"sp-aluminum-frame", 2}, {"sp-bolts", 10}, {"sp-insulated-wire", 4}},
+  4,
+  6)
 util.change_recipe_ingredients("battery-mk2-equipment",
   {{"battery", 20}, {"sp-integrated-circuit", 5}, {"sp-circuit-board", 1}, {"sp-composites", 5}, {"sp-capacitor", 2}},
   {{"battery", 30}, {"sp-integrated-circuit", 8}, {"sp-circuit-board", 2}, {"sp-composites", 10}, {"sp-capacitor", 4}},
-  20,
-  30)
+  6,
+  10)
 util.change_recipe_ingredients("solar-panel-equipment",
   {{"solar-panel", 1}, {"sp-bolts", 10}, {"advanced-circuit", 2}, {"sp-aluminum-frame", 5}, {"copper-cable", 4}},
   {{"solar-panel", 1}, {"sp-bolts", 10}, {"advanced-circuit", 2}, {"sp-aluminum-frame", 5}, {"copper-cable", 8}},
   10,
   15)
 util.change_recipe_ingredients("fusion-reactor-equipment",
-  {{"sp-advanced-compute-unit", 10}, {"sp-bolts", 80}, {"sp-control-rod", 6}, {"sp-pressure-tube", 10}, {"sp-pressure-tank", 1}, {"electric-engine-unit", 4}, {"low-density-structure", 5}},
-  {{"sp-advanced-compute-unit", 16}, {"sp-bolts", 120}, {"sp-control-rod", 10}, {"sp-pressure-tube", 12}, {"sp-pressure-tank", 1}, {"electric-engine-unit", 6}, {"low-density-structure", 10}},
+  {{"sp-advanced-processing-unit", 10}, {"sp-bolts", 80}, {"sp-control-rod", 6}, {"sp-pressure-tube", 10}, {"sp-pressure-tank", 1}, {"electric-engine-unit", 4}, {"low-density-structure", 5}},
+  {{"sp-advanced-processing-unit", 16}, {"sp-bolts", 120}, {"sp-control-rod", 10}, {"sp-pressure-tube", 12}, {"sp-pressure-tank", 1}, {"electric-engine-unit", 6}, {"low-density-structure", 10}},
   60,
   90)
 util.change_recipe_ingredients("personal-laser-defense-equipment",

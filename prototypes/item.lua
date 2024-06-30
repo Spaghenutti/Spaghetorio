@@ -1971,16 +1971,6 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-advanced-compute-unit",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/icons/advanced-compute-unit.png",
-    icon_size = 64,
-    scale = 0.25,
-    subgroup = "electronic-optical-component",
-    order = "semiconductor-z[advanced-compute-unit]",
-    stack_size = 100
-  },
-  {
-    type = "item",
     name = "sp-integrated-circuit",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/icons/integrated-circuit.png",
     icon_size = 64,

@@ -5,6 +5,23 @@ table.insert(data.raw.technology["gun-turret"].prerequisites, "sp-mechanical-ass
 
 table.insert(data.raw.technology["filter-inserter"].prerequisites, "sp-relay")
 table.insert(data.raw.technology["filter-inserter"].prerequisites, "advanced-electronics")
+data.raw.technology["filter-inserter"].unit.ingredients = {
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"sp-material-science-pack-1", 1},
+  {"sp-electronic-science-pack-1", 1},
+  {"chemical-science-pack", 1}
+}
+
+table.insert(data.raw.technology["stack-filter-inserter"].prerequisites, "utility-science-pack")
+data.raw.technology["filter-inserter"].unit.ingredients = {
+  {"sp-automation-science-pack-2", 1},
+  {"sp-logistic-science-pack-2", 1},
+  {"sp-material-science-pack-2", 1},
+  {"sp-electronic-science-pack-2", 1},
+  {"production-science-pack", 1},
+  {"utility-science-pack", 1}
+}
 
 data.raw.technology["chemical-science-pack"].prerequisites = {
   "plastics",
@@ -320,6 +337,29 @@ data.raw.technology["electric-energy-accumulators"].unit.ingredients = {
   {"chemical-science-pack", 1}
 }
 
+data.raw.technology["battery-equipment"].prerequisites = {
+  "sp-logistic-science-pack-2"
+}
+data.raw.technology["battery-equipment"].unit.ingredients = {
+  {"sp-automation-science-pack-2", 1},
+  {"sp-logistic-science-pack-2", 1},
+  {"sp-material-science-pack-1", 1},
+  {"sp-electronic-science-pack-1", 1},
+  {"chemical-science-pack", 1},
+  {"production-science-pack", 1}
+}
+
+data.raw.technology["battery-mk2-equipment"].prerequisites = {
+  "sp-logistic-science-pack-3"
+}
+data.raw.technology["battery-mk2-equipment"].unit.ingredients = {
+  {"sp-automation-science-pack-3", 1},
+  {"sp-logistic-science-pack-3", 1},
+  {"sp-material-science-pack-2", 1},
+  {"sp-electronic-science-pack-2", 1},
+  {"sp-chemical-science-pack-2", 1},
+  {"production-science-pack", 1}
+}
 
 data.raw.technology["robotics"].prerequisites = {
   "sp-titanium-machining",
@@ -577,14 +617,16 @@ data.raw.technology["inserter-capacity-bonus-1"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},
   {"sp-logistic-science-pack-2", 1},
   {"sp-material-science-pack-1", 1},
-  {"sp-electronic-science-pack-1", 1}
+  {"sp-electronic-science-pack-1", 1},
+  {"production-science-pack", 1}
 }
 
 data.raw.technology["inserter-capacity-bonus-2"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},
   {"sp-logistic-science-pack-2", 1},
   {"sp-material-science-pack-1", 1},
-  {"sp-electronic-science-pack-1", 1}
+  {"sp-electronic-science-pack-1", 1},
+  {"production-science-pack", 1}
 }
 
 data.raw.technology["inserter-capacity-bonus-3"].prerequisites = {

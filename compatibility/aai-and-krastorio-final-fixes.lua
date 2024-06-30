@@ -34,6 +34,41 @@ util.change_recipe_ingredients("chemical-science-pack",
   {{type = "fluid", name = "sulfuric-acid", amount = 75}, {type = "fluid", name = "chlorine", amount = 50}, {"plastic-bar", 5}, {"sp-graphite", 5}, {"blank-tech-card", 5}},
   20,
   30)
+util.change_recipe_ingredients("military-science-pack",
+  {{"copper-plate", 69}},
+  {{"copper-plate", 69}},
+  20,
+  30)
+util.change_recipe_ingredients("production-science-pack",
+  {{"sp-filter", 5}, {"fast-inserter", 1}, {"kr-steel-pump", 1}, {"sp-relay", 5}},
+  {{"sp-filter", 8}, {"fast-inserter", 1}, {"kr-steel-pump", 2}, {"sp-relay", 8}},
+  20,
+  30)
+util.change_recipe_ingredients("utility-science-pack",
+  {{"copper-plate", 69}},
+  {{"copper-plate", 69}},
+  20,
+  30)
+util.change_recipe_ingredients("matter-tech-card",
+  {{"copper-plate", 69}},
+  {{"copper-plate", 69}},
+  20,
+  30)
+util.change_recipe_ingredients("space-science-pack", -- Optimization tech card
+  {{"copper-plate", 69}},
+  {{"copper-plate", 69}},
+  20,
+  30)
+util.change_recipe_ingredients("advanced-tech-card",
+  {{"copper-plate", 69}},
+  {{"copper-plate", 69}},
+  20,
+  30)
+util.change_recipe_ingredients("singularity-tech-card",
+  {{"copper-plate", 69}},
+  {{"copper-plate", 69}},
+  20,
+  30)
 
 -- Lab inputs
 table.insert(data.raw.lab["lab"].inputs, "sp-electronic-science-pack-1")

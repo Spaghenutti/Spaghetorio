@@ -1332,8 +1332,8 @@ util.change_recipe_ingredients("kr-energy-storage",
   30,
   60)
 util.change_recipe_ingredients("kr-fusion-reactor",
-  {{"concrete", 1000}, {"sp-stainless-steel", 1000}, {"sp-tungsten-slab", 300}, {"sp-graphene", 500}, {"sp-heat-resistant-tile", 200}, {"sp-control-unit", 100}, {"sp-advanced-compute-unit", 50}, {"sp-glass-fiber", 100}, {"sp-plate-heat-exchanger", 60}, {"sp-cryostat", 40}, {"sp-neodymium-magnet", 200}, {"sp-superconductor", 40}, {"sp-electromagnet", 250}, {"heat-pipe", 100}},
-  {{"concrete", 4000}, {"sp-stainless-steel", 3000}, {"sp-tungsten-slab", 500}, {"sp-graphene", 1000}, {"sp-heat-resistant-tile", 200}, {"sp-control-unit", 300}, {"sp-advanced-compute-unit", 100}, {"sp-glass-fiber", 250}, {"sp-plate-heat-exchanger", 200}, {"sp-cryostat", 100}, {"sp-neodymium-magnet", 400}, {"sp-superconductor", 100}, {"sp-electromagnet", 600}, {"heat-pipe", 200}},
+  {{"concrete", 1000}, {"sp-stainless-steel", 1000}, {"sp-tungsten-slab", 300}, {"sp-graphene", 500}, {"sp-heat-resistant-tile", 200}, {"sp-control-unit", 100}, {"sp-advanced-processing-unit", 50}, {"sp-glass-fiber", 100}, {"sp-plate-heat-exchanger", 60}, {"sp-cryostat", 40}, {"sp-neodymium-magnet", 200}, {"sp-superconductor", 40}, {"sp-electromagnet", 250}, {"heat-pipe", 100}},
+  {{"concrete", 4000}, {"sp-stainless-steel", 3000}, {"sp-tungsten-slab", 500}, {"sp-graphene", 1000}, {"sp-heat-resistant-tile", 200}, {"sp-control-unit", 300}, {"sp-advanced-processing-unit", 100}, {"sp-glass-fiber", 250}, {"sp-plate-heat-exchanger", 200}, {"sp-cryostat", 100}, {"sp-neodymium-magnet", 400}, {"sp-superconductor", 100}, {"sp-electromagnet", 600}, {"heat-pipe", 200}},
   700,
   3000)
 util.change_recipe_ingredients("kr-advanced-steam-turbine",
@@ -1442,6 +1442,18 @@ util.change_recipe_ingredients("biusart-lab",
 --   {{"steel-plate", 69}},
 --   69,
 --   69)
+
+-- MARK: Krastorio Combat
+util.change_recipe_ingredients("big-battery-equipment",
+  {{"battery-equipment", 4}, {"sp-aluminum-frame", 3}, {"sp-bolts", 6}, {"sp-insulated-wire", 4}, {"sp-heatsink", 2}},
+  {{"battery-equipment", 6}, {"sp-aluminum-frame", 6}, {"sp-bolts", 10}, {"sp-insulated-wire", 10}, {"sp-heatsink", 2}},
+  10,
+  15)
+util.change_recipe_ingredients("small-portable-generator",
+  {{"engine-unit", 1}, {"sp-machined-parts", 6}, {"sp-electromagnet", 2}, {"sp-insulated-wire", 2}},
+  {{"engine-unit", 2}, {"sp-machined-parts", 8}, {"sp-electromagnet", 6}, {"sp-insulated-wire", 4}},
+  6,
+  10)
 
 -- MARK: AAI Industries Buildings
 util.change_recipe_ingredients("burner-turbine",

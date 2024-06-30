@@ -45,7 +45,10 @@ data:extend({
         recipe = "motor"
       },
     },
-    prerequisites = {"sp-iron-machining", "sp-iron-extruding"},
+    prerequisites = {
+      "sp-iron-machining",
+      "sp-iron-extruding"
+    },
     unit =
     {
       count = 5,
@@ -91,7 +94,10 @@ data:extend({
         recipe = "burner-inserter"
       },
     },
-    prerequisites = {"sp-iron-machining", "sp-iron-extruding"},
+    prerequisites = {
+      "sp-iron-machining",
+      "sp-iron-extruding"
+    },
     unit =
     {
       count = 5,
@@ -192,7 +198,11 @@ data:extend({
     unit =
     {
       count = 100,
-      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      ingredients = {
+        {"basic-tech-card", 1},
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1}
+      },
       time = 15
     },
     order = "a-h-a"
