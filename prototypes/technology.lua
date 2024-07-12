@@ -1696,14 +1696,18 @@ data:extend({
         recipe = "sp-neodymium-magnet"
       },
     },
-    prerequisites = {"production-science-pack"},
+    prerequisites = {"sp-chemical-science-pack-2"},
     unit =
     {
       count = 100,
       ingredients = {
-        {"basic-tech-card", 1},
-        {"automation-science-pack", 1},
-        {"logistic-science-pack", 1}
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"production-science-pack", 1}
       },
       time = 15
     },

@@ -1186,9 +1186,10 @@ data.raw.recipe["rare-metals"].results = {
   {type = "item", name = "sp-neodymium", probability = 0.08, amount = 1},
   {type = "item", name = "sand", probability = 0.62, amount = 1}
 }
+
 data.raw.recipe["rare-metals-2"].category = "chemistry"
 data.raw.recipe["rare-metals-2"].hide_from_player_crafting = true
-util.change_recipe_ingredients("rare-metals",
+util.change_recipe_ingredients("rare-metals-2",
   {{type = "fluid", name = "sp-sodium-hydroxide", amount = 15}, {"enriched-rare-metals", 3}},
   {{type = "fluid", name = "sp-sodium-hydroxide", amount = 20}, {"enriched-rare-metals", 3}},
   4,
