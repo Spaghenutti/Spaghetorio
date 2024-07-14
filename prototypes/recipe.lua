@@ -14,7 +14,6 @@ local util = require("data-util")
 --    - "sp-methyl-tert-butyl-ether" (fluid)
 --    - "sp-sulfamate" (fluid) (already used for mining)
 --    - "sp-perchloric-acid" (fluid) (already used for mining)
---    - "sp-crucible"
 --    - "sp-laser"
 --    - 
 --    - 
@@ -1663,20 +1662,6 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-ceramic-matrix-composites", amount = 1}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-crucible",  -- #ForRegEx# - recipe
-    category = "crafting",
-    enabled = false,
-    energy_required = 4,
-    ingredients = {
-      {type = "item", name = "sp-calcium-carbonate", amount = 2},
-      {type = "item", name = "sp-graphite", amount = 3}
-    },
-    results = {
-      {type = "item", name = "sp-crucible", amount = 1}
     }
   },
   {

@@ -447,8 +447,8 @@ util.change_recipe_ingredients("steel-furnace",
 -- Base: {"stone-brick", 30}; Krastorio {"stone-tablet", 30}
 -- Base: {"iron-plate", 40}; Krastorio {"steel-beam", 20}
 util.change_recipe_ingredients("electric-furnace",
-  {{"sp-heating-filament", 10}, {"sp-crucible", 2}, {"sp-electromagnet", 20}, {"electric-motor", 8}},
-  {{"sp-heating-filament", 20}, {"sp-crucible", 6}, {"sp-electromagnet", 40}, {"electric-motor", 16}},
+  {{"sp-heating-filament", 10}, {"sp-electromagnet", 20}, {"electric-motor", 8}},
+  {{"sp-heating-filament", 20}, {"sp-electromagnet", 40}, {"electric-motor", 16}},
   16,
   32)
 -- Base: {"iron-plate", 20}; Krastorio {"iron-beam", 8}

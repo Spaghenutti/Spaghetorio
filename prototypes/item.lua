@@ -1760,16 +1760,6 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-crucible",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/icons/crucible.png",
-    icon_size = 64,
-    scale = 0.25,
-    subgroup = "mechanical-component",
-    order = "[crucible]",
-    stack_size = 100
-  },
-  {
-    type = "item",
     name = "sp-glass-fiber",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/icons/glass-fiber.png",
     icon_size = 64,

@@ -26,6 +26,9 @@ table.insert(data.raw.technology["sp-phosphorus-processing"].prerequisites, "kr-
 
 data.raw.technology["sp-neodymium-magnet"].prerequisites = {"kr-atmosphere-condensation"}
 
+data.raw.technology["sp-superconductor"].prerequisites = {"kr-rare-metals"}
+
+
 -- MARK: Base technology changes
 data.raw.technology["steel-processing"].prerequisites = {"sp-coal-processing"}
 data.raw.technology["steel-processing"].effects = {
@@ -175,7 +178,7 @@ data.raw.technology["kr-portable-generator"].unit.ingredients = {
   {"production-science-pack", 1}
 }
 
-data.raw.technology["kr-advanced-lab"].prerequisites = {"sp-automation-science-pack-2"}
+data.raw.technology["kr-advanced-lab"].prerequisites = {"sp-actuator"}
 data.raw.technology["kr-advanced-lab"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},
   {"logistic-science-pack", 1},
@@ -200,7 +203,6 @@ data.raw.technology["kr-research-server"].prerequisites = {
   }
 
 -- MARK: Krastorio infinite techs
-
 table.insert(data.raw.technology["mining-productivity-11"].prerequisites, "sp-geological-science-pack-2")
 table.insert(data.raw.technology["mining-productivity-11"].prerequisites, "sp-chemical-science-pack-2")
 data.raw.technology["mining-productivity-11"].unit.ingredients = {

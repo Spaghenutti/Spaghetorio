@@ -1382,10 +1382,10 @@ util.change_recipe_ingredients("kr-research-server",
   69,
   69)
 util.change_recipe_ingredients("kr-quantum-computer",
-  {{"glass", 20}, {"sp-stainless-steel", 12}, {"refined-concrete", 10}, {"sp-anodized-aluminum", 15}, {"advanced-circuit", 20}, {"sp-actuator", 6}},
-  {{"glass", 30}, {"sp-stainless-steel", 20}, {"refined-concrete", 16}, {"sp-anodized-aluminum", 20}, {"advanced-circuit", 30}, {"sp-actuator", 10}},
-  30,
-  50)
+  {{"steel-plate", 69}},
+  {{"steel-plate", 69}},
+  69,
+  69)
 util.change_recipe_ingredients("kr-singularity-lab",
   {{"steel-plate", 69}},
   {{"steel-plate", 69}},
@@ -1412,10 +1412,10 @@ util.change_recipe_ingredients("kr-singularity-beacon",
   69,
   69)
 util.change_recipe_ingredients("biusart-lab",
-  {{"steel-plate", 69}},
-  {{"steel-plate", 69}},
-  69,
-  69)
+  {{"glass", 20}, {"sp-stainless-steel", 12}, {"refined-concrete", 10}, {"sp-anodized-aluminum", 15}, {"advanced-circuit", 20}, {"sp-actuator", 6}},
+  {{"glass", 30}, {"sp-stainless-steel", 20}, {"refined-concrete", 16}, {"sp-anodized-aluminum", 20}, {"advanced-circuit", 30}, {"sp-actuator", 10}},
+  30,
+  50)
 -- Why cant i do this here???
 -- util.change_recipe_ingredients("kr-air-filter",
 --   {{"steel-plate", 69}},
