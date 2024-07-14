@@ -582,13 +582,9 @@ util.change_recipe_ingredients("offshore-pump",
   4)
 --------------------------------------------------------------------------------
 -- MARK: Technology
+-- See aai-and-krastorio-final-fixes.lua
 --------------------------------------------------------------------------------
--- Krastorio {"blank-tech-card", 5}
-util.change_recipe_ingredients("production-science-pack",
-  {{"sp-heating-filament", 4}, {"sp-heatsink", 6}, {"sp-insulation-sheet", 4}, {"sp-rubber", 10}},
-  {{"sp-heating-filament", 4}, {"sp-heatsink", 6}, {"sp-insulation-sheet", 4}, {"sp-rubber", 10}},
-  24,
-  24)
+
 --------------------------------------------------------------------------------
 -- MARK: Military
 --------------------------------------------------------------------------------

@@ -1382,10 +1382,10 @@ util.change_recipe_ingredients("kr-research-server",
   69,
   69)
 util.change_recipe_ingredients("kr-quantum-computer",
-  {{"steel-plate", 69}},
-  {{"steel-plate", 69}},
-  69,
-  69)
+  {{"glass", 20}, {"sp-stainless-steel", 12}, {"refined-concrete", 10}, {"sp-anodized-aluminum", 15}, {"advanced-circuit", 20}, {"sp-actuator", 6}},
+  {{"glass", 30}, {"sp-stainless-steel", 20}, {"refined-concrete", 16}, {"sp-anodized-aluminum", 20}, {"advanced-circuit", 30}, {"sp-actuator", 10}},
+  30,
+  50)
 util.change_recipe_ingredients("kr-singularity-lab",
   {{"steel-plate", 69}},
   {{"steel-plate", 69}},
@@ -1434,6 +1434,11 @@ util.change_recipe_ingredients("small-portable-generator",
   {{"engine-unit", 2}, {"sp-machined-parts", 8}, {"sp-electromagnet", 6}, {"sp-insulated-wire", 4}},
   6,
   10)
+util.change_recipe_ingredients("portable-generator",
+  {{"electric-engine-unit", 2}, {"sp-titanium-frame", 6}, {"sp-gearbox", 2}, {"sp-insulated-wire", 6}, {"sp-bolts", 10}, {"sp-heatsink", 1}},
+  {{"electric-engine-unit", 4}, {"sp-titanium-frame", 12}, {"sp-gearbox", 5}, {"sp-insulated-wire", 6}, {"sp-bolts", 20}, {"sp-heatsink", 2}},
+  12,
+  24)
 
 -- MARK: AAI Industries Buildings
 util.change_recipe_ingredients("burner-turbine",

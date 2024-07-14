@@ -40,8 +40,8 @@ util.change_recipe_ingredients("military-science-pack",
   20,
   30)
 util.change_recipe_ingredients("production-science-pack",
-  {{"sp-filter", 5}, {"fast-inserter", 1}, {"kr-steel-pump", 1}, {"sp-relay", 5}, {"blank-tech-card", 5}},
-  {{"sp-filter", 8}, {"fast-inserter", 1}, {"kr-steel-pump", 2}, {"sp-relay", 8}, {"blank-tech-card", 5}},
+  {{"sp-filter", 5}, {"sp-actuator", 5}, {"kr-steel-pump", 1}, {"sp-relay", 5}, {"blank-tech-card", 5}},
+  {{"sp-filter", 8}, {"sp-actuator", 8}, {"kr-steel-pump", 2}, {"sp-relay", 8}, {"blank-tech-card", 5}},
   20,
   30)
 util.change_recipe_ingredients("utility-science-pack",

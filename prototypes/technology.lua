@@ -3151,14 +3151,13 @@ data:extend({
         recipe = "sp-actuator"
       },
     },
-    prerequisites = {"production-science-pack"},
+    prerequisites = {"sp-automation-science-pack-2"},
     unit =
     {
       count = 100,
       ingredients = {
         {"sp-automation-science-pack-2", 1},
         {"logistic-science-pack", 1},
-        {"production-science-pack", 1},
         {"sp-material-science-pack-1", 1},
         {"sp-electronic-science-pack-1", 1}
       },

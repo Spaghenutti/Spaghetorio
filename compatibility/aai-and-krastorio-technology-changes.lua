@@ -26,26 +26,7 @@ table.insert(data.raw.technology["sp-phosphorus-processing"].prerequisites, "kr-
 
 data.raw.technology["sp-neodymium-magnet"].prerequisites = {"kr-atmosphere-condensation"}
 
--- MARK: Krastorio technology changes
-table.insert(data.raw.technology["kr-steam-engine"].prerequisites, "sp-copper-machining")  -- Why is this a krastorio technology??
-
-table.insert(data.raw.technology["kr-fluids-chemistry"].prerequisites, "kr-basic-fluid-handling") 
-
-data.raw.technology["electronics"].prerequisites = {
-  "automation",
-  "automation-science-pack",
-  "sp-basic-solder"
-}
-
-data.raw.technology["kr-crusher"].prerequisites = {"electricity"}
-data.raw.technology["kr-crusher"].unit = {count = 30,
-  ingredients = {
-    {"basic-tech-card", 1},
-    {"automation-science-pack", 1}
-  },
-  time = 30
-}
-
+-- MARK: Base technology changes
 data.raw.technology["steel-processing"].prerequisites = {"sp-coal-processing"}
 data.raw.technology["steel-processing"].effects = {
   {type = "unlock-recipe", recipe = "steel-plate"},
@@ -60,6 +41,28 @@ data.raw.technology["landfill"].effects = {
   {type = "unlock-recipe", recipe = "sp-landfill-from-limestone"},
   {type = "unlock-recipe", recipe = "sp-landfill-from-iron-ore"},
   {type = "unlock-recipe", recipe = "sp-landfill-from-sand"}
+}
+
+data.raw.technology["electronics"].prerequisites = {
+  "automation",
+  "automation-science-pack",
+  "sp-basic-solder"
+}
+
+table.insert(data.raw.technology["advanced-electronics"].effects, {type = "unlock-recipe", recipe = "sp-separate-electronic-components"})
+
+-- MARK: Krastorio technology changes
+table.insert(data.raw.technology["kr-steam-engine"].prerequisites, "sp-copper-machining")  -- Why is this a krastorio technology??
+
+table.insert(data.raw.technology["kr-fluids-chemistry"].prerequisites, "kr-basic-fluid-handling") 
+
+data.raw.technology["kr-crusher"].prerequisites = {"electricity"}
+data.raw.technology["kr-crusher"].unit = {count = 30,
+  ingredients = {
+    {"basic-tech-card", 1},
+    {"automation-science-pack", 1}
+  },
+  time = 30
 }
 
 data.raw.technology["kr-fluids-chemistry"].prerequisites = {"logistic-science-pack", "engine"}
@@ -106,8 +109,6 @@ data.raw.technology["kr-gas-power-station"].prerequisites = {
   "sp-dynamo",
   "kr-steel-fluid-handling"
 }
-
-table.insert(data.raw.technology["advanced-electronics"].effects, {type = "unlock-recipe", recipe = "sp-separate-electronic-components"})
 
 table.insert(data.raw.technology["kr-automation-core"].prerequisites, "sp-iron-machining")
 table.insert(data.raw.technology["kr-automation-core"].prerequisites, "sp-iron-extruding")
@@ -165,11 +166,38 @@ data.raw.technology["kr-radar"].unit.ingredients = {
   {"sp-material-science-pack-1", 1}
 }
 
-data.raw.technology["kr-advanced-lab"].prerequisites = {"sp-material-science-pack-2"}
+data.raw.technology["kr-portable-generator"].unit.ingredients = {
+  {"sp-automation-science-pack-2", 1},
+  {"sp-logistic-science-pack-2", 1},
+  {"sp-electronic-science-pack-1", 1},
+  {"sp-geological-science-pack-1", 1},
+  {"sp-material-science-pack-1", 1},
+  {"production-science-pack", 1}
+}
 
-data.raw.technology["kr-research-server"].prerequisites = {"sp-material-science-pack-2"} --{"production-science-pack"} Let me do production :(
+data.raw.technology["kr-advanced-lab"].prerequisites = {"sp-automation-science-pack-2"}
+data.raw.technology["kr-advanced-lab"].unit.ingredients = {
+  {"sp-automation-science-pack-2", 1},
+  {"logistic-science-pack", 1},
+  {"sp-material-science-pack-1", 1},
+  {"sp-geological-science-pack-1", 1},
+  {"sp-electronic-science-pack-1", 1},
+  {"chemical-science-pack", 1}
+}
 
--- MARK: Krastorio technology changes
+data.raw.technology["kr-research-server"].prerequisites = {
+  "production-science-pack",
+  "sp-material-science-pack-2",
+  "sp-electronic-science-pack-2"
+}
+  data.raw.technology["kr-research-server"].unit.ingredients = {
+    {"sp-automation-science-pack-2", 1},
+    {"sp-logistic-science-pack-2", 1},
+    {"sp-material-science-pack-2", 1},
+    {"sp-geological-science-pack-1", 1},
+    {"sp-electronic-science-pack-2", 1},
+    {"chemical-science-pack", 1}
+  }
 
 -- MARK: Krastorio infinite techs
 

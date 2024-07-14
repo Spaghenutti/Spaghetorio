@@ -338,7 +338,8 @@ data.raw.technology["electric-energy-accumulators"].unit.ingredients = {
 }
 
 data.raw.technology["battery-equipment"].prerequisites = {
-  "sp-logistic-science-pack-2"
+  "sp-logistic-science-pack-2",
+  "battery"
 }
 data.raw.technology["battery-equipment"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},

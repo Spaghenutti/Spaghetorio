@@ -40,7 +40,7 @@ data.raw.technology["battery"].unit.ingredients = {
 }
 
 data.raw.technology["production-science-pack"].prerequisites = {
-  "sp-automation-science-pack-2"
+  "sp-actuator"
 }
 data.raw.technology["production-science-pack"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},
