@@ -1851,21 +1851,6 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-pressure-tank",  -- #ForRegEx# - recipe
-    category = "crafting",
-    enabled = false,
-    energy_required = 2,
-    ingredients = {
-      {type = "item", name = "sp-stainless-steel", amount = 3},
-      {type = "item", name = "sp-flange", amount = 2},
-      {type = "item", name = "sp-carbon-fiber", amount = 6}
-    },
-    results = {
-      {type = "item", name = "sp-pressure-tank", amount = 1}
-    }
-  },
-  {
-    type = "recipe",
     name = "sp-high-pressure-tank",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
@@ -2183,7 +2168,7 @@ data:extend({
       {type = "item", name = "sp-plate-heat-exchanger", amount = 4},
       {type = "item", name = "sp-valve", amount = 16},
       {type = "item", name = "sp-flange", amount = 6},
-      {type = "item", name = "sp-pressure-tank", amount = 3}
+      {type = "item", name = "sp-high-pressure-tank", amount = 3}
     },
     results = {
       {type = "item", name = "sp-reactor-core", amount = 1}
@@ -2778,7 +2763,7 @@ data:extend({
       {type = "item", name = "pump", amount = 1},
       {type = "item", name = "sp-ball-bearing", amount = 4},
       {type = "item", name = "sp-bolts", amount = 2},
-      {type = "item", name = "sp-pressure-tank", amount = 2},
+      {type = "item", name = "sp-high-pressure-tank", amount = 2},
       {type = "item", name = "sp-machined-parts", amount = 6},
     },
     results = {
@@ -5202,7 +5187,7 @@ data:extend({
     enabled = false,
     energy_required = 4.8,
     ingredients = {
-      {type = "item", name = "sp-graphite", amount = 4},
+      {type = "item", name = "sp-carbon-fiber", amount = 3},
       -- {type = "fluid", name = "sp-nitrogen", amount = 15}
     },
     results = {
@@ -5579,8 +5564,9 @@ data:extend({
     enabled = false,
     energy_required = 3.2,
     ingredients = {
-      {type = "item", name = "plastic-bar", amount = 3},
-      {type = "item", name = "sp-graphite", amount = 1},
+      {type = "item", name = "plastic-bar", amount = 1},
+      {type = "item", name = "sp-graphite", amount = 4},
+      {type = "fluid", name = "sp-epoxy", amount = 5},
       -- {type = "fluid", name = "sp-nitric-acid", amount = 50}
     },
     results = {

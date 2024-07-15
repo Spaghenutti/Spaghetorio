@@ -58,3 +58,17 @@ data.raw.technology["military-science-pack"].unit.ingredients = {
   {"automation-science-pack", 1},
   {"logistic-science-pack", 1}
 }
+
+data.raw.technology["utility-science-pack"].prerequisites = {
+  "sp-chemical-science-pack-2",
+  "sp-electronic-science-pack-2"
+}
+data.raw.technology["utility-science-pack"].unit.ingredients = {
+  {"sp-automation-science-pack-2", 1},
+  {"sp-logistic-science-pack-2", 1},
+  {"sp-chemical-science-pack-2", 1},
+  {"sp-material-science-pack-2", 1},
+  {"production-science-pack", 1},
+  {"sp-geological-science-pack-2", 1},
+  {"sp-electronic-science-pack-2", 1}
+}

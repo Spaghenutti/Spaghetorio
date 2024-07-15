@@ -2136,15 +2136,6 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-pressure-tank",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/icons/pressure-tank.png",
-    icon_size = 64, icon_mipmaps = 4,
-    subgroup = "intermediate-product",
-    order = "[pressure-tank]",
-    stack_size = 50
-  },
-  {
-    type = "item",
     name = "sp-high-pressure-tank",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/icons/high-pressure-tank.png",
     icon_size = 64, icon_mipmaps = 4,

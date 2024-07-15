@@ -1372,10 +1372,10 @@ util.change_recipe_ingredients("kr-atmospheric-condenser",
   20,
   30)
 util.change_recipe_ingredients("kr-fuel-refinery",
-  {{"steel-plate", 69}},
-  {{"steel-plate", 69}},
-  69,
-  69)
+  {{"sp-stainless-steel", 20}, {"refined-concrete", 16}},
+  {{"sp-stainless-steel", 30}, {"refined-concrete", 24}},
+  24,
+  32)
 util.change_recipe_ingredients("kr-research-server",
   {{"steel-plate", 69}},
   {{"steel-plate", 69}},

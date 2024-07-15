@@ -389,8 +389,8 @@ util.change_recipe_ingredients("solar-panel-equipment",
   10,
   15)
 util.change_recipe_ingredients("fusion-reactor-equipment",
-  {{"sp-advanced-processing-unit", 10}, {"sp-bolts", 80}, {"sp-control-rod", 6}, {"sp-pressure-tube", 10}, {"sp-pressure-tank", 1}, {"electric-engine-unit", 4}, {"low-density-structure", 5}},
-  {{"sp-advanced-processing-unit", 16}, {"sp-bolts", 120}, {"sp-control-rod", 10}, {"sp-pressure-tube", 12}, {"sp-pressure-tank", 1}, {"electric-engine-unit", 6}, {"low-density-structure", 10}},
+  {{"sp-advanced-processing-unit", 10}, {"sp-bolts", 80}, {"sp-control-rod", 6}, {"sp-pressure-tube", 10}, {"sp-high-pressure-tank", 1}, {"electric-engine-unit", 4}, {"low-density-structure", 5}},
+  {{"sp-advanced-processing-unit", 16}, {"sp-bolts", 120}, {"sp-control-rod", 10}, {"sp-pressure-tube", 12}, {"sp-high-pressure-tank", 1}, {"electric-engine-unit", 6}, {"low-density-structure", 10}},
   60,
   90)
 util.change_recipe_ingredients("personal-laser-defense-equipment",
@@ -425,8 +425,8 @@ util.change_recipe_ingredients("personal-roboport-mk2-equipment",
   20,
   30)
 util.change_recipe_ingredients("rocket-silo",
-  {{"steel-plate", 80}, {"sp-bolts", 400}, {"sp-spring", 60}, {"refined-concrete", 1000}, {"sp-TiNb", 200}, {"sp-inconel", 140}, {"sp-tungsten-slab", 36}, {"pump", 36}, {"sp-pressure-tube", 100}, {"sp-pressure-tank", 20}, {"sp-flange", 40}, {"sp-valve", 200}, {"sp-cryostat", 8}, {"sp-spark-plug", 12}, {"sp-heavy-gearbox", 30}, {"sp-heavy-ball-bearing", 48}, {"sp-control-unit", 80}, {"rocket-control-unit", 100}, {"electric-motor", 20}, {"sp-heat-resistant-tile", 200}},
-  {{"steel-plate", 200}, {"sp-bolts", 1000}, {"sp-spring", 100}, {"refined-concrete", 2000}, {"sp-TiNb", 300}, {"sp-inconel", 250}, {"sp-tungsten-slab", 70}, {"pump", 60}, {"sp-pressure-tube", 200}, {"sp-pressure-tank", 50}, {"sp-flange", 100}, {"sp-valve", 500}, {"sp-cryostat", 12}, {"sp-spark-plug", 20}, {"sp-heavy-gearbox", 50}, {"sp-heavy-ball-bearing", 80}, {"sp-control-unit", 120}, {"rocket-control-unit", 150}, {"electric-motor", 50}, {"sp-heat-resistant-tile", 400}},
+  {{"steel-plate", 80}, {"sp-bolts", 400}, {"sp-spring", 60}, {"refined-concrete", 1000}, {"sp-TiNb", 200}, {"sp-inconel", 140}, {"sp-tungsten-slab", 36}, {"pump", 36}, {"sp-pressure-tube", 100}, {"sp-high-pressure-tank", 20}, {"sp-flange", 40}, {"sp-valve", 200}, {"sp-cryostat", 8}, {"sp-spark-plug", 12}, {"sp-heavy-gearbox", 30}, {"sp-heavy-ball-bearing", 48}, {"sp-control-unit", 80}, {"rocket-control-unit", 100}, {"electric-motor", 20}, {"sp-heat-resistant-tile", 200}},
+  {{"steel-plate", 200}, {"sp-bolts", 1000}, {"sp-spring", 100}, {"refined-concrete", 2000}, {"sp-TiNb", 300}, {"sp-inconel", 250}, {"sp-tungsten-slab", 70}, {"pump", 60}, {"sp-pressure-tube", 200}, {"sp-high-pressure-tank", 50}, {"sp-flange", 100}, {"sp-valve", 500}, {"sp-cryostat", 12}, {"sp-spark-plug", 20}, {"sp-heavy-gearbox", 50}, {"sp-heavy-ball-bearing", 80}, {"sp-control-unit", 120}, {"rocket-control-unit", 150}, {"electric-motor", 50}, {"sp-heat-resistant-tile", 400}},
   300,
   600)
 --------------------------------------------------------------------------------
@@ -555,8 +555,8 @@ util.change_recipe_ingredients("accumulator",
   10,
   20)
 util.change_recipe_ingredients("nuclear-reactor",
-  {{"concrete", 500}, {"sp-reactor-core", 1}, {"sp-control-unit", 100}, {"sp-niobium-steel", 300}, {"sp-TiAlSn", 200}, {"sp-heavy-ball-bearing", 20}, {"sp-pressure-tank", 40}, {"electric-engine-unit", 10}, {"sp-bolts", 1000}},
-  {{"concrete", 2000}, {"sp-reactor-core", 1}, {"sp-control-unit", 200}, {"sp-niobium-steel", 500}, {"sp-TiAlSn", 400}, {"sp-heavy-ball-bearing", 50}, {"sp-pressure-tank", 50}, {"electric-engine-unit", 40}, {"sp-bolts", 4000}},
+  {{"concrete", 500}, {"sp-reactor-core", 1}, {"sp-control-unit", 100}, {"sp-niobium-steel", 300}, {"sp-TiAlSn", 200}, {"sp-heavy-ball-bearing", 20}, {"sp-high-pressure-tank", 40}, {"electric-engine-unit", 10}, {"sp-bolts", 1000}},
+  {{"concrete", 2000}, {"sp-reactor-core", 1}, {"sp-control-unit", 200}, {"sp-niobium-steel", 500}, {"sp-TiAlSn", 400}, {"sp-heavy-ball-bearing", 50}, {"sp-high-pressure-tank", 50}, {"electric-engine-unit", 40}, {"sp-bolts", 4000}},
   500,
   2000)
 -- Base: {"sp-lithium", 10}; Krastorio {"lithium", 10}
