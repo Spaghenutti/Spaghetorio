@@ -5284,6 +5284,7 @@ data:extend({
     type = "recipe",
     name = "sp-bleach",  -- #ForRegEx# - recipe
     category = "chemistry",
+    subgroup = "fluid-recipes",
     enabled = false,
     energy_required = 4,
     ingredients = {

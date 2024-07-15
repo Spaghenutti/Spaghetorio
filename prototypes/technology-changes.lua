@@ -296,7 +296,7 @@ data.raw.technology["stack-inserter"].unit.ingredients = {
   {"production-science-pack", 1}
 }
 
-data.raw.technology["laser"].prerequisites = {"sp-advanced-optics"}
+data.raw.technology["laser"].prerequisites = {"sp-optics"}
 
 data.raw.technology["low-density-structure"].prerequisites = {"utility-science-pack"}
 data.raw.technology["low-density-structure"].unit.ingredients = {
