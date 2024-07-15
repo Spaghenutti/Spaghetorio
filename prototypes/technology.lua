@@ -1184,7 +1184,7 @@ data:extend({
     prerequisites = {"lubricant"},
     unit =
     {
-      count = 100,
+      count = 150,
       ingredients = {
         {"automation-science-pack", 1},
         {"logistic-science-pack", 1},
@@ -3234,12 +3234,12 @@ data:extend({
         recipe = "sp-actuator"
       },
     },
-    prerequisites = {"sp-automation-science-pack-2"},
+    prerequisites = {"automation-science-pack"},
     unit =
     {
-      count = 100,
+      count = 150,
       ingredients = {
-        {"sp-automation-science-pack-2", 1},
+        {"automation-science-pack", 1},
         {"logistic-science-pack", 1},
         {"sp-material-science-pack-1", 1},
         {"sp-electronic-science-pack-1", 1}

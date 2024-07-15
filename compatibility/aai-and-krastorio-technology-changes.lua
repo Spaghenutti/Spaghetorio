@@ -198,9 +198,14 @@ data.raw.technology["kr-portable-generator"].unit.ingredients = {
   {"production-science-pack", 1}
 }
 
-data.raw.technology["kr-advanced-lab"].prerequisites = {"sp-actuator"}
+data.raw.technology["kr-advanced-lab"].prerequisites = {
+  "sp-actuator",
+  "advanced-electronics",
+  "sp-aluminum-treatment",
+  "concrete"
+}
 data.raw.technology["kr-advanced-lab"].unit.ingredients = {
-  {"sp-automation-science-pack-2", 1},
+  {"automation-science-pack", 1},
   {"logistic-science-pack", 1},
   {"sp-material-science-pack-1", 1},
   {"sp-geological-science-pack-1", 1},
@@ -211,7 +216,8 @@ data.raw.technology["kr-advanced-lab"].unit.ingredients = {
 data.raw.technology["kr-research-server"].prerequisites = {
   "production-science-pack",
   "sp-material-science-pack-2",
-  "sp-electronic-science-pack-2"
+  "sp-electronic-science-pack-2",
+  "kr-advanced-lab"
 }
 data.raw.technology["kr-research-server"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},
