@@ -1372,8 +1372,8 @@ util.change_recipe_ingredients("kr-atmospheric-condenser",
   20,
   30)
 util.change_recipe_ingredients("kr-fuel-refinery",
-  {{"sp-stainless-steel", 20}, {"sp-brass", 12}, {"refined-concrete", 16}, {"sp-pressure-tube", 6}, {"advanced-circuit", 5}, {"sp-plate-heat-exchanger", 6}, {"sp-engine-unit", 4}},
-  {{"sp-stainless-steel", 30}, {"sp-brass", 20}, {"refined-concrete", 24}, {"sp-pressure-tube", 10}, {"advanced-circuit", 8}, {"sp-plate-heat-exchanger", 10}, {"sp-engine-unit", 6}},
+  {{"sp-stainless-steel", 20}, {"sp-brass", 12}, {"refined-concrete", 16}, {"sp-pressure-tube", 6}, {"advanced-circuit", 5}, {"sp-plate-heat-exchanger", 6}, {"engine-unit", 4}},
+  {{"sp-stainless-steel", 30}, {"sp-brass", 20}, {"refined-concrete", 24}, {"sp-pressure-tube", 10}, {"advanced-circuit", 8}, {"sp-plate-heat-exchanger", 10}, {"engine-unit", 6}},
   24,
   32)
 util.change_recipe_ingredients("kr-research-server",
