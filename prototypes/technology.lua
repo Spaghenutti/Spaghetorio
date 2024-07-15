@@ -594,7 +594,7 @@ data:extend({
     },
     unit =
     {
-      count = 100,
+      count = 300,
       ingredients = {
         {"sp-automation-science-pack-2", 1},
         {"sp-logistic-science-pack-2", 1},
@@ -800,17 +800,18 @@ data:extend({
     },
     prerequisites = {
       "sp-sodium-processing",
-      "sp-material-science-pack-2"
+      "sp-perchloric-acid"
     },
     unit =
     {
       count = 300,
       ingredients = {
         {"sp-automation-science-pack-2", 1},
-        {"logistic-science-pack", 1},
+        {"sp-logistic-science-pack-2", 1},
         {"sp-material-science-pack-2", 1},
-        {"chemical-science-pack", 1},
-        {"sp-geological-science-pack-1", 1}
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"production-science-pack", 1}
       },
       time = 15
     },
@@ -2277,7 +2278,7 @@ data:extend({
         recipe = "sp-filter-dirty-water-with-sulfur"
       }
     },
-    prerequisites = {"sp-chemical-science-pack-2"},
+    prerequisites = {"utility-science-pack"},
     unit =
     {
       count = 200,
@@ -2286,7 +2287,9 @@ data:extend({
         {"sp-logistic-science-pack-2", 1},
         {"sp-chemical-science-pack-2", 1},
         {"sp-material-science-pack-2", 1},
-        {"sp-geological-science-pack-2", 1}
+        {"sp-geological-science-pack-2", 1},
+        {"production-science-pack", 1},
+        {"utility-science-pack", 1}
       },
       time = 15
     },
@@ -2315,7 +2318,7 @@ data:extend({
     },
     unit =
     {
-      count = 100,
+      count = 200,
       ingredients = {
         {"sp-automation-science-pack-2", 1},
         {"sp-logistic-science-pack-2", 1},

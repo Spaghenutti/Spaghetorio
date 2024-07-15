@@ -24,6 +24,8 @@ table.insert(data.raw.technology["sp-titanium-nitride"].prerequisites, "kr-atmos
 
 table.insert(data.raw.technology["sp-phosphorus-processing"].prerequisites, "kr-atmosphere-condensation")
 
+table.insert(data.raw.technology["sp-tungsten-processing"].prerequisites, "kr-mineral-water-gathering")
+
 data.raw.technology["sp-neodymium-magnet"].prerequisites = {"kr-atmosphere-condensation"}
 
 data.raw.technology["sp-superconductor"].prerequisites = {"kr-rare-metals"}
