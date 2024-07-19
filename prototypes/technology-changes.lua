@@ -105,6 +105,14 @@ table.insert(data.raw.technology["advanced-material-processing"].unit.ingredient
 table.insert(data.raw.technology["advanced-material-processing-2"].prerequisites, "sp-tungsten-processing")
 table.insert(data.raw.technology["advanced-material-processing-2"].prerequisites, "sp-basic-ceramics")
 table.insert(data.raw.technology["advanced-material-processing-2"].effects, {type = "unlock-recipe", recipe = "sp-heating-filament"})
+data.raw.technology["advanced-material-processing-2"].unit.ingredients = {
+  {"sp-automation-science-pack-2", 1},
+  {"sp-logistic-science-pack-2", 1},
+  {"sp-material-science-pack-2", 1},
+  {"sp-chemical-science-pack-2", 1},
+  {"sp-geological-science-pack-2", 1},
+  {"production-science-pack", 1}
+}
 
 table.insert(data.raw.technology["fluid-handling"].prerequisites, "sp-basic-alloy")
 table.insert(data.raw.technology["fluid-handling"].effects, {type = "unlock-recipe", recipe = "sp-valve"})
@@ -183,12 +191,15 @@ data.raw.technology["sulfur-processing"].unit.ingredients = {
 }
 
 table.insert(data.raw.technology["solar-energy"].prerequisites, "sp-phosphorus-processing")
+table.insert(data.raw.technology["solar-energy"].prerequisites, "sp-electronic-science-pack-2")
+table.insert(data.raw.technology["solar-energy"].prerequisites, "sp-chemical-science-pack-2")
 data.raw.technology["solar-energy"].unit.ingredients = {
-  {"automation-science-pack", 1},
-  {"logistic-science-pack", 1},
-  {"sp-electronic-science-pack-1", 1},
-  {"sp-material-science-pack-1", 1},
-  {"chemical-science-pack", 1}
+  {"sp-automation-science-pack-2", 1},
+  {"sp-logistic-science-pack-2", 1},
+  {"sp-electronic-science-pack-2", 1},
+  {"sp-material-science-pack-2", 1},
+  {"sp-chemical-science-pack-2", 1},
+  {"production-science-pack", 1}
 }
 
 table.insert(data.raw.technology["concrete"].prerequisites, "sp-cement")
@@ -248,7 +259,7 @@ data.raw.technology["advanced-electronics"].unit.ingredients = {
 
 data.raw.technology["advanced-electronics-2"].prerequisites = {
   "sp-composites",
-  "sp-electronic-science-pack-2"
+  "sp-computer-science-pack-2"
 }
 table.insert(data.raw.technology["advanced-electronics-2"].effects, {type = "unlock-recipe", recipe = "sp-empty-circuit-board"})
 table.insert(data.raw.technology["advanced-electronics-2"].effects, {type = "unlock-recipe", recipe = "sp-circuit-board"})
@@ -257,7 +268,9 @@ data.raw.technology["advanced-electronics-2"].unit.ingredients = {
   {"sp-logistic-science-pack-2", 1},
   {"sp-material-science-pack-2", 1},
   {"sp-electronic-science-pack-2", 1},
-  {"sp-chemical-science-pack-2", 1}
+  {"sp-chemical-science-pack-2", 1},
+  {"sp-computer-science-pack-2", 1},
+  {"production-science-pack", 1}
 }
 
 data.raw.technology["advanced-oil-processing"].unit.ingredients = {
@@ -276,6 +289,17 @@ data.raw.technology["lubricant"].unit.ingredients = {
   {"sp-electronic-science-pack-1", 1},
   {"sp-geological-science-pack-1", 1},
   {"chemical-science-pack", 1}
+}
+
+-- "car"
+table.insert(data.raw.technology["automobilism"].prerequisites, "sp-advanced-gearbox")
+data.raw.technology["automobilism"].unit.ingredients = {
+  {"sp-automation-science-pack-2", 1},
+  {"sp-logistic-science-pack-2", 1},
+  {"sp-material-science-pack-2", 1},
+  {"sp-electronic-science-pack-1", 1},
+  {"chemical-science-pack", 1},
+  {"production-science-pack", 1}
 }
 
 table.insert(data.raw.technology["fast-inserter"].prerequisites, "sp-ball-bearing")
@@ -324,15 +348,7 @@ data.raw.technology["cliff-explosives"].unit.ingredients = {
   {"chemical-science-pack", 1}
 }
 
-data.raw.technology["solar-energy"].prerequisites = {"sp-electronic-science-pack-2"}
-data.raw.technology["solar-energy"].unit.ingredients = {
-  {"sp-automation-science-pack-2", 1},
-  {"sp-logistic-science-pack-2", 1},
-  {"sp-material-science-pack-1", 1},
-  {"sp-electronic-science-pack-2", 1},
-  {"chemical-science-pack", 1}
-}
-
+-- "accumulator"
 data.raw.technology["electric-energy-accumulators"].prerequisites = {
   "sp-electronic-science-pack-2",
   "battery"
@@ -342,7 +358,8 @@ data.raw.technology["electric-energy-accumulators"].unit.ingredients = {
   {"sp-logistic-science-pack-2", 1},
   {"sp-material-science-pack-1", 1},
   {"sp-electronic-science-pack-2", 1},
-  {"chemical-science-pack", 1}
+  {"chemical-science-pack", 1},
+  {"production-science-pack", 1}
 }
 
 data.raw.technology["battery-equipment"].prerequisites = {
@@ -391,30 +408,42 @@ data.raw.technology["modules"].unit.ingredients = {
   {"chemical-science-pack", 1}
 }
 
-data.raw.technology["speed-module-2"].prerequisites = {"sp-electronic-science-pack-2"}
+data.raw.technology["speed-module-2"].prerequisites = {
+  "sp-electronic-science-pack-2",
+  "production-science-pack"
+}
 data.raw.technology["speed-module-2"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},
   {"sp-logistic-science-pack-2", 1},
   {"sp-material-science-pack-1", 1},
   {"sp-electronic-science-pack-2", 1},
+  {"production-science-pack", 1},
   {"chemical-science-pack", 1}
 }
 
-data.raw.technology["productivity-module-2"].prerequisites = {"sp-electronic-science-pack-2"}
+data.raw.technology["productivity-module-2"].prerequisites = {
+  "sp-electronic-science-pack-2",
+  "production-science-pack"
+}
 data.raw.technology["productivity-module-2"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},
   {"sp-logistic-science-pack-2", 1},
   {"sp-material-science-pack-1", 1},
   {"sp-electronic-science-pack-2", 1},
+  {"production-science-pack", 1},
   {"chemical-science-pack", 1}
 }
 
-data.raw.technology["effectivity-module-2"].prerequisites = {"sp-electronic-science-pack-2"}
+data.raw.technology["effectivity-module-2"].prerequisites = {
+  "sp-electronic-science-pack-2",
+  "production-science-pack"
+}
 data.raw.technology["effectivity-module-2"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},
   {"sp-logistic-science-pack-2", 1},
   {"sp-material-science-pack-1", 1},
   {"sp-electronic-science-pack-2", 1},
+  {"production-science-pack", 1},
   {"chemical-science-pack", 1}
 }
 

@@ -225,7 +225,8 @@ data.raw.technology["kr-research-server"].unit.ingredients = {
   {"sp-material-science-pack-2", 1},
   {"sp-geological-science-pack-1", 1},
   {"sp-electronic-science-pack-2", 1},
-  {"chemical-science-pack", 1}
+  {"chemical-science-pack", 1},
+  {"production-science-pack", 1}
 }
 
 data.raw.technology["kr-mineral-water-gathering"].prerequisites = {

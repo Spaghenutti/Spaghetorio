@@ -590,7 +590,8 @@ data:extend({
       },
     },
     prerequisites = {
-      "sp-zirconium-processing"
+      "sp-zirconium-processing",
+      "production-science-pack"
     },
     unit =
     {
@@ -598,7 +599,10 @@ data:extend({
       ingredients = {
         {"sp-automation-science-pack-2", 1},
         {"sp-logistic-science-pack-2", 1},
-        {"sp-material-science-pack-2", 1}
+        {"chemical-science-pack", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
+        {"production-science-pack", 1}
       },
       time = 15
     },
@@ -623,15 +627,20 @@ data:extend({
     },
     prerequisites = {
       "sp-titanium-processing",
-      "sp-basic-ceramics"
+      "sp-basic-ceramics",
+      "utility-science-pack"
     },
     unit =
     {
-      count = 100,
+      count = 1000,
       ingredients = {
-        {"basic-tech-card", 1},
-        {"automation-science-pack", 1},
-        {"logistic-science-pack", 1}
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
+        {"production-science-pack", 1},
+        {"utility-science-pack", 1}
       },
       time = 15
     },
@@ -727,31 +736,6 @@ data:extend({
         type = "unlock-recipe",
         recipe = "sp-aqueous-niobium-tantalum"
       },
-    },
-    prerequisites = {"sp-calcium-and-fluorine"},
-    unit =
-    {
-      count = 100,
-      ingredients = {
-        {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"sp-material-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1},
-        {"sp-geological-science-pack-2", 1}
-      },
-      time = 15
-    },
-    order = "a-h-a"
-  },
-  {
-    type = "technology",
-    name = "sp-capacitor-from-niobium-and-tantalum",  -- #ForRegEx# - technology
-    icon_size = 256,
-    icons = util.combine_three_icons("__Spaghenutti__/graphics/hr-icons/capacitor.png", 256, nil,
-                                     "__Spaghenutti__/graphics/hr-icons/tantalum-billet.png", 256, nil,
-                                     "__Spaghenutti__/graphics/hr-icons/niobium-billet.png", 256, nil),
-    effects =
-    {
       {
         type = "unlock-recipe",
         recipe = "sp-capacitor-from-niobium"
@@ -759,13 +743,19 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "sp-capacitor-from-tantalum"
-      },
+      }
     },
-    prerequisites = {"sp-niobium-and-tantalum"},
+    prerequisites = {"sp-calcium-and-fluorine"},
     unit =
     {
-      count = 100,
-      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      count = 750,
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1}
+      },
       time = 15
     },
     order = "a-h-a"
@@ -892,6 +882,10 @@ data:extend({
         type = "unlock-recipe",
         recipe = "sp-palladium"
       },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-catalyst-from-palladium"
+      }
     },
     prerequisites = {
       "sp-material-science-pack-2",
@@ -906,37 +900,6 @@ data:extend({
         {"sp-material-science-pack-2", 1},
         {"chemical-science-pack", 1},
         {"sp-geological-science-pack-2", 1}
-      },
-      time = 15
-    },
-    order = "a-h-a"
-  },
-  {
-    type = "technology",
-    name = "sp-catalyst-from-palladium",  -- #ForRegEx# - technology
-    icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/catalyst.png",
-    effects =
-    {
-      {
-        type = "unlock-recipe",
-        recipe = "sp-catalyst-from-palladium"
-      }
-    },
-    prerequisites = {
-      "sp-noble-metals",
-      "sp-chemical-science-pack-2"
-    },
-    unit =
-    {
-      count = 50,
-      ingredients = {
-        {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"sp-material-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1},
-        {"sp-geological-science-pack-2", 1},
-        {"production-science-pack", 1}
       },
       time = 15
     },
@@ -1012,12 +975,14 @@ data:extend({
     },
     unit =
     {
-      count = 100,
+      count = 500,
       ingredients = {
-        {"basic-tech-card", 1},
-        {"automation-science-pack", 1},
-        {"logistic-science-pack", 1},
-        {"sp-material-science-pack-1", 1}
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-electronic-science-pack-1", 1},
+        {"chemical-science-pack", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1}
       },
       time = 15
     },
@@ -1071,15 +1036,18 @@ data:extend({
       "logistic-science-pack",
       "sp-titanium-machining",
       "sp-niobium-and-tantalum",
-      "sp-aluminum-machining"
+      "sp-material-science-pack-2"
     },
     unit =
     {
-      count = 100,
+      count = 1000,
       ingredients = {
-        {"basic-tech-card", 1},
-        {"automation-science-pack", 1},
-        {"logistic-science-pack", 1}
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"production-science-pack", 1}
       },
       time = 15
     },
@@ -1103,11 +1071,21 @@ data:extend({
         recipe = "sp-niobium-tin"
       },
     },
-    prerequisites = {"sp-niobium-and-tantalum"},
+    prerequisites = {
+      "sp-niobium-and-tantalum",
+      "utility-science-pack"
+    },
     unit =
     {
-      count = 100,
-      ingredients = {{"automation-science-pack", 1}, {"logistic-science-pack", 1}, {"chemical-science-pack", 1}, {"sp-material-science-pack-1", 1}},
+      count = 600,
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"production-science-pack", 1},
+        {"utility-science-pack", 1}
+      },
       time = 15
     },
     order = "a-h-a"
@@ -1327,37 +1305,6 @@ data:extend({
   },
   {
     type = "technology",
-    name = "sp-catalyst-from-liquid-sodium",  -- #ForRegEx# - technology
-    icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/catalyst.png",
-    effects =
-    {
-      {
-        type = "unlock-recipe",
-        recipe = "sp-catalyst-from-liquid-sodium"
-      }
-    },
-    prerequisites = {
-      "sp-sodium-processing",
-      "sp-propane-products"
-    },
-    unit =
-    {
-      count = 50,
-      ingredients = {
-        {"basic-tech-card", 1},
-        {"automation-science-pack", 1},
-        {"logistic-science-pack", 1},
-        {"sp-material-science-pack-1", 1},
-        {"sp-geological-science-pack-1", 1},
-        {"chemical-science-pack", 1}
-      },
-      time = 15
-    },
-    order = "a-h-a"
-  },
-  {
-    type = "technology",
     name = "sp-optics",  -- #ForRegEx# - technology
     icon_size = 256,
     mip_maps = 4,
@@ -1472,12 +1419,14 @@ data:extend({
     prerequisites = {"sp-electronic-science-pack-2"},
     unit =
     {
-      count = 100,
+      count = 500,
       ingredients = {
         {"sp-automation-science-pack-2", 1},
         {"sp-logistic-science-pack-2", 1},
         {"sp-chemical-science-pack-2", 1},
-        {"sp-electronic-science-pack-2", 1}
+        {"sp-electronic-science-pack-2", 1},
+        {"chemical-science-pack", 1},
+        {"production-science-pack", 1}
       },
       time = 15
     },
@@ -1495,7 +1444,7 @@ data:extend({
         recipe = "sp-advanced-processing-unit"
       }
     },
-    prerequisites = {"sp-electronic-science-pack-2"},
+    prerequisites = {"sp-electronic-science-pack-3"},
     unit =
     {
       count = 100,
@@ -1525,7 +1474,11 @@ data:extend({
         recipe = "sp-mirror-from-silver"
       },
     },
-    prerequisites = {"sp-noble-metals"},
+    prerequisites = {
+      "sp-noble-metals",
+      "sp-chemical-science-pack-2",
+      "sp-electronic-science-pack-2"
+    },
     unit =
     {
       count = 300,
@@ -1533,7 +1486,8 @@ data:extend({
         {"sp-automation-science-pack-2", 1},
         {"sp-logistic-science-pack-2", 1},
         {"sp-material-science-pack-2", 1},
-        {"chemical-science-pack", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
         {"production-science-pack", 1}
       },
       time = 15
@@ -2024,11 +1978,22 @@ data:extend({
         recipe = "sp-heat-resistant-tile"
       },
     },
-    prerequisites = {"sp-basic-ceramics"},
+    prerequisites = {
+      "sp-basic-ceramics",
+      "utility-science-pack"
+    },
     unit =
     {
-      count = 100,
-      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      count = 1000,
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
+        {"production-science-pack", 1},
+        {"utility-science-pack", 1}
+      },
       time = 15
     },
     order = "a-h-a"
@@ -2343,11 +2308,23 @@ data:extend({
         recipe = "sp-high-purity-silicon"
       },
     },
-    prerequisites = {"sp-electronic-science-pack-2"},
+    prerequisites = {
+      "sp-electronic-science-pack-2",
+      "sp-chemical-science-pack-2",
+      "sp-geological-science-pack-2"
+    },
     unit =
     {
-      count = 100,
-      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      count = 1000,
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"production-science-pack", 1}
+      },
       time = 15
     },
     order = "a-h-a"
@@ -3097,12 +3074,13 @@ data:extend({
     },
     unit =
     {
-      count = 100,
+      count = 150,
       ingredients = {
         {"sp-automation-science-pack-2", 1},
         {"sp-logistic-science-pack-2", 1},
         {"sp-electronic-science-pack-2", 1},
-        {"sp-material-science-pack-1", 1}
+        {"sp-material-science-pack-1", 1},
+        {"production-science-pack", 1}
       },
       time = 15
     },
@@ -3128,7 +3106,8 @@ data:extend({
         {"sp-automation-science-pack-2", 1},
         {"sp-logistic-science-pack-2", 1},
         {"sp-electronic-science-pack-2", 1},
-        {"sp-material-science-pack-1", 1}
+        {"sp-material-science-pack-1", 1},
+        {"production-science-pack", 1}
       },
       time = 15
     },
@@ -3206,7 +3185,7 @@ data:extend({
         recipe = "sp-optical-sensor"
       },
     },
-    prerequisites = {"sp-electronic-science-pack-2"},
+    prerequisites = {"sp-computer-science-pack-2"},
     unit =
     {
       count = 200,
@@ -3216,6 +3195,7 @@ data:extend({
         {"sp-material-science-pack-2", 1},
         {"sp-electronic-science-pack-2", 1},
         {"sp-chemical-science-pack-2", 1},
+        {"sp-computer-science-pack-2", 1},
         {"production-science-pack", 1},
       },
       time = 15
@@ -3352,6 +3332,10 @@ data:extend({
         type = "unlock-recipe",
         recipe = "sp-methyl-tert-butyl-ether"
       },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-catalyst-from-liquid-sodium"
+      }
     },
     prerequisites = {
       "sp-filter",
@@ -3359,12 +3343,14 @@ data:extend({
     },
     unit =
     {
-      count = 100,
+      count = 200,
       ingredients = {
-        {"automation-science-pack", 1},
-        {"logistic-science-pack", 1},
-        {"sp-material-science-pack-1", 1},
-        {"chemical-science-pack", 1}
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"production-science-pack", 1}
       },
       time = 15
     },
@@ -4048,7 +4034,9 @@ data:extend({
       },
     },
     prerequisites = {
-      "sp-logistic-science-pack-2"
+      "sp-logistic-science-pack-2",
+      "sp-material-science-pack-2",
+      "production-science-pack"
     },
     unit =
     {
@@ -4058,8 +4046,8 @@ data:extend({
         {"sp-logistic-science-pack-2", 1},
         {"chemical-science-pack", 1},
         {"sp-electronic-science-pack-1", 1},
-        {"sp-geological-science-pack-1", 1},
-        {"sp-material-science-pack-1", 1}
+        {"sp-material-science-pack-2", 1},
+        {"production-science-pack", 1}
       },
       time = 15
     },
@@ -4173,12 +4161,7 @@ data:extend({
       },
     },
     prerequisites = {
-      "sp-automation-science-pack-2",
-      "sp-logistic-science-pack-2",
-      "sp-chemical-science-pack-2",
-      "sp-electronic-science-pack-2",
-      "sp-geological-science-pack-2",
-      "sp-material-science-pack-2"
+      "sp-integrated-circuit"
     },
     unit =
     {
