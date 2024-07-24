@@ -13,6 +13,7 @@ data:extend({
     category = "crushing",
     subgroup = "processed-resource",
     enabled = false,
+    hide_from_player_crafting = true,
     energy_required = 6,
     ingredients = {
       {type = "item", name = "sp-aluminum-ore", amount = 3},
@@ -32,6 +33,7 @@ data:extend({
     category = "crushing",
     subgroup = "processed-resource",
     enabled = false,
+    hide_from_player_crafting = true,
     energy_required = 4,
     ingredients = {
       {type = "item", name = "sp-chromite", amount = 3},
@@ -51,6 +53,7 @@ data:extend({
     category = "crushing",
     subgroup = "processed-resource",
     enabled = false,
+    hide_from_player_crafting = true,
     energy_required = 1,
     ingredients = {
       {type = "item", name = "coal", amount = 3}
@@ -68,6 +71,7 @@ data:extend({
     category = "crushing",
     subgroup = "processed-resource",
     enabled = false,
+    hide_from_player_crafting = true,
     energy_required = 0.8,
     ingredients = {
       {type = "item", name = "coke", amount = 1}
@@ -85,6 +89,7 @@ data:extend({
     category = "crushing",
     subgroup = "processed-resource",
     enabled = false,
+    hide_from_player_crafting = true,
     energy_required = 4,
     ingredients = {
       {type = "item", name = "copper-ore", amount = 6},
@@ -103,6 +108,7 @@ data:extend({
     category = "crushing",
     subgroup = "processed-resource",
     enabled = false,
+    hide_from_player_crafting = true,
     energy_required = 4,
     ingredients = {
       {type = "item", name = "iron-ore", amount = 6},
@@ -121,6 +127,7 @@ data:extend({
     category = "crushing",
     subgroup = "processed-resource",
     enabled = false,
+    hide_from_player_crafting = true,
     energy_required = 4,
     ingredients = {
       {type = "item", name = "sp-limestone", amount = 2},
@@ -140,6 +147,7 @@ data:extend({
     category = "crushing",
     subgroup = "processed-resource",
     enabled = false,
+    hide_from_player_crafting = true,
     energy_required = 5.6,
     ingredients = {
       {type = "item", name = "sp-magnesium-ore", amount = 4},
@@ -159,6 +167,7 @@ data:extend({
     category = "crushing",
     subgroup = "processed-resource",
     enabled = false,
+    hide_from_player_crafting = true,
     energy_required = 5,
     ingredients = {
       {type = "item", name = "sp-nickel-ore", amount = 3},
@@ -179,6 +188,7 @@ data:extend({
     category = "crushing",
     subgroup = "processed-resource",
     enabled = false,
+    hide_from_player_crafting = true,
     energy_required = 8,
     ingredients = {
       {type = "item", name = "sp-spodumene", amount = 3},
@@ -198,6 +208,7 @@ data:extend({
     category = "crushing",
     subgroup = "processed-resource",
     enabled = false,
+    hide_from_player_crafting = true,
     energy_required = 3,
     ingredients = {
       {type = "item", name = "sp-tinstone", amount = 3},
@@ -217,6 +228,7 @@ data:extend({
     category = "crushing",
     subgroup = "processed-resource",
     enabled = false,
+    hide_from_player_crafting = true,
     energy_required = 12,
     ingredients = {
       {type = "item", name = "sp-titanium-ore", amount = 3},
@@ -235,6 +247,7 @@ data:extend({
     category = "crushing",
     subgroup = "processed-resource",
     enabled = false,
+    hide_from_player_crafting = true,
     energy_required = 10,
     ingredients = {
       {type = "item", name = "sp-tungsten-ore", amount = 3},
@@ -254,6 +267,7 @@ data:extend({
     category = "crushing",
     subgroup = "processed-resource",
     enabled = false,
+    hide_from_player_crafting = true,
     energy_required = 3.6,
     ingredients = {
       {type = "item", name = "sp-zinc-ore", amount = 3},
@@ -274,6 +288,7 @@ data:extend({
     category = "crushing",
     subgroup = "processed-resource",
     enabled = false,
+    hide_from_player_crafting = true,
     energy_required = 6,
     ingredients = {
       {type = "item", name = "sp-zirconium-ore", amount = 2},
@@ -350,6 +365,7 @@ data:extend({
                                     "__Spaghenutti__/graphics/icons/calcium.png", 64),
     category = "smelting",
     enabled = false,
+    hide_from_player_crafting = true,
     energy_required = 15,
     ingredients = {
       {type = "item", name = "sand", amount = 14},
@@ -1055,6 +1071,7 @@ table.insert(data.raw.recipe["sp-helium-3-from-helium-and-hydrogen"].ingredients
 table.insert(data.raw.recipe["sp-gravitonium"].ingredients, {type = "item", name = "tritium", amount = 3})
 table.insert(data.raw.recipe["sp-vacuum-tube"].ingredients, {type = "item", name = "glass", amount = 3})
 table.insert(data.raw.recipe["sp-vacuum-tube"].ingredients, {type = "fluid", name = "hydrogen", amount = 5})
+table.insert(data.raw.recipe["sp-pressure-tube"].ingredients, {type = "item", name = "glass", amount = 1})
 table.insert(data.raw.recipe["sp-liquid-nitrogen"].ingredients, {type = "fluid", name = "nitrogen", amount = 5})
 table.insert(data.raw.recipe["sp-chronomatter"].ingredients, {type = "item", name = "imersite-powder", amount = 4})
 table.insert(data.raw.recipe["sp-bioreactor"].ingredients, {type = "item", name = "biomass", amount = 10})
@@ -1109,7 +1126,7 @@ table.insert(data.raw.recipe["satellite"].ingredients, {"lithium-sulfur-battery"
 -- MARK: Add missing results
 table.insert(data.raw.recipe["sp-silica"].results, {type = "item", name = "sand", probability = 0.3, amount = 1})
 table.insert(data.raw.recipe["sp-gold"].results, {type = "item", name = "sand", probability = 0.98, amount = 3})
-table.insert(data.raw.recipe["sp-platinum-iridium"].results, {type = "item", name = "sand", probability = 0.9807, amount = 3})
+table.insert(data.raw.recipe["sp-platinum-iridium"].results, {type = "item", name = "sand", probability = 0.9807, amount = 1})
 table.insert(data.raw.recipe["sp-sodium-and-chlorine"].results, {type = "fluid", name = "chlorine", amount = 3})
 table.insert(data.raw.recipe["sp-high-purity-silicon"].results, {type = "item", name = "silicon", probability = 0.7, amount = 1})
 table.insert(data.raw.recipe["sp-used-up-fuel-rod-reprocessing"].results, {type = "fluid", name = "heavy-water", amount = 10})
@@ -1154,6 +1171,9 @@ data.raw.recipe["sp-zinc-plate"].category = "electrolysis"
 data.raw.recipe["sp-sodium-hydroxide-from-liquid-sodium"].category = "electrolysis"
 data.raw.recipe["sp-salt"].category = "fluid-filtration"
 data.raw.recipe["sp-nuclear-waste-processing"].category = "crushing"
+
+-- MARK: change subgroup
+data.raw.recipe["quartz"].subgroup = "processed-resource"
 
 -- MARK: base crafting changes
 data.raw.recipe["steel-beam"].category = "smelting"
@@ -1487,7 +1507,7 @@ util.change_recipe_ingredients("area-mining-drill",
   69,
   69)
 
--- Remove crushing recipes
+-- MARK: Remove crushing recipes
 data.raw.recipe["kr-vc-sp-nuclear-waste"] = nil
 data.raw.recipe["kr-vc-sp-blunagium-acrosphere-1"] = nil
 data.raw.recipe["kr-vc-sp-blunagium-acrosphere-2"] = nil

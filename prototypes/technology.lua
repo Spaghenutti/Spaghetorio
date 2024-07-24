@@ -971,7 +971,8 @@ data:extend({
     prerequisites = {
       "sp-zirconium-processing",
       "sp-magnesium-processing",
-      "sp-zinc-processing"
+      "sp-zinc-processing",
+      "advanced-material-processing-2"
     },
     unit =
     {
@@ -1000,10 +1001,10 @@ data:extend({
         recipe = "sp-inconel"
       },
     },
-    prerequisites = {"sp-chemical-science-pack-2"},
+    prerequisites = {"advanced-material-processing-2"},
     unit =
     {
-      count = 300,
+      count = 500,
       ingredients = {
         {"sp-automation-science-pack-2", 1},
         {"sp-logistic-science-pack-2", 1},
@@ -1033,10 +1034,9 @@ data:extend({
       },
     },
     prerequisites = {
-      "logistic-science-pack",
       "sp-titanium-machining",
       "sp-niobium-and-tantalum",
-      "sp-material-science-pack-2"
+      "advanced-material-processing-2"
     },
     unit =
     {
@@ -1103,7 +1103,6 @@ data:extend({
       },
     },
     prerequisites = {
-      "sp-nickel-alloys",
       "oil-processing"
     },
     unit =
@@ -1326,17 +1325,46 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "sp-infrared-filter"
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-laser"
-      },
+      }
     },
     prerequisites = {
       "sp-sodium-processing",
       "sp-material-science-pack-2",
       "sp-chemical-science-pack-2",
       "sp-electronic-science-pack-2",
+    },
+    unit =
+    {
+      count = 500,
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"production-science-pack", 1}
+      },
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-laser",  -- #ForRegEx# - technology
+    icon_size = 256,
+    mip_maps = 4,
+    icon = "__Spaghenutti__/graphics/hr-icons/laser.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-laser"
+      }
+    },
+    prerequisites = {
+      "sp-optics",
+      "sp-noble-gases",
+      "sp-noble-metals"
     },
     unit =
     {
@@ -2689,14 +2717,19 @@ data:extend({
         recipe = "sp-xenon-from-atmosphere"
       },
     },
-    prerequisites = {"sp-production-science-pack-3"},
+    prerequisites = {"sp-chemical-science-pack-2"},
     unit =
     {
-      count = 100,
+      count = 750,
       ingredients = {
         {"sp-automation-science-pack-2", 1},
         {"sp-logistic-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1}},
+        {"sp-material-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"production-science-pack", 1}
+      },
       time = 15
     },
     order = "a-h-a"

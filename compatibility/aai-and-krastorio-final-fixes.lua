@@ -105,6 +105,11 @@ table.insert(data.raw.lab["kr-singularity-lab"].inputs, "space-science-pack")  -
 table.insert(data.raw.lab["kr-singularity-lab"].inputs, "advanced-tech-card")
 table.insert(data.raw.lab["kr-singularity-lab"].inputs, "singularity-tech-card")
 
+-- Hide recipes from player
+-- can't find remanining recipe for wood
+data.raw.recipe["kr-grow-wood-with-water"].hide_from_player_crafting = true
+data.raw.recipe["kr-grow-wood-plus"].hide_from_player_crafting = true
+
 -- Hide uranium fuel
 data.raw.recipe["uranium-fuel-cell"].hidden = true
 data.raw.item["uranium-fuel-cell"].flags = {"hidden"}

@@ -437,19 +437,6 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-tellurium",  -- #ForRegEx# - recipe
-    category = "chemistry",
-    enabled = false,
-    energy_required = 8,
-    ingredients = {
-      {type = "item", name = "sulfur", amount = 20},
-    },
-    results = {
-      {type = "item", name = "sp-zircon", amount = 1}
-    }
-  },
-  {
-    type = "recipe",
     name = "sp-zircon",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
@@ -494,7 +481,7 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "smelting",
-    subgroup = "raw-resource",
+    subgroup = "raw-material",
     enabled = false,
     energy_required = 4,
     ingredients = {
@@ -592,7 +579,7 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "smelting",
-    subgroup = "raw-resource",
+    subgroup = "raw-material",
     enabled = false,
     energy_required = 3.2,
     ingredients = {
@@ -623,7 +610,7 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "smelting",
-    subgroup = "raw-resource",
+    subgroup = "raw-material",
     enabled = false,
     energy_required = 3.2,
     ingredients = {
@@ -672,7 +659,7 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "chemistry",
-    subgroup = "raw-resource",
+    subgroup = "processed-resource",
     enabled = false,
     energy_required = 4,
     ingredients = {
@@ -1141,8 +1128,10 @@ data:extend({
     enabled = false,
     energy_required = 3.2,
     ingredients = {
+      -- Base: {"sp-glass", 1}, Krastorio: {"glass", 1}
       {type = "item", name = "sp-stainless-steel", amount = 1},
-      {type = "item", name = "sp-inconel", amount = 1}
+      {type = "item", name = "sp-brass", amount = 3},
+      {type = "item", name = "sp-flange", amount = 2}
     },
     results = {
       {type = "item", name = "sp-pressure-tube", amount = 1}
@@ -2282,6 +2271,7 @@ data:extend({
                                     "__Spaghenutti__/graphics/icons/silver.png", 64),
     category = "crafting",
     enabled = false,
+    hide_from_player_crafting = true,
     energy_required = 3.2,
     ingredients = {
       {type = "item", name = "sp-silver", amount = 1},
@@ -2479,7 +2469,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-heating-filament",  -- #ForRegEx# - recipe
-    category = "crafting-with-fluid",
+    category = "crafting",
     enabled = false,
     energy_required = 5,
     ingredients = {
@@ -2599,7 +2589,8 @@ data:extend({
     energy_required = 15,
     ingredients = {
       {type = "fluid", name = "petroleum-gas", amount = 100},
-      {type = "item", name = "sp-filter", amount = 1},
+      {type = "item", name = "sp-filter", amount = 2},
+      {type = "item", name = "sp-catalyst", amount = 1}
     },
     results = {
       {type = "fluid", name = "sp-ethylene", amount = 40},
@@ -2614,6 +2605,7 @@ data:extend({
     enabled = false,
     energy_required = 18,
     ingredients = {
+      {type = "item", name = "sp-catalyst", amount = 1},
       {type = "fluid", name = "sp-styrene", amount = 20},
       {type = "fluid", name = "sp-propane", amount = 50}
     },
@@ -5084,7 +5076,7 @@ data:extend({
     icon_size = 64,
     scale = 0.25,
     category = "chemistry",
-    subgroup = "raw-resource",
+    subgroup = "processed-resource",
     enabled = false,
     energy_required = 3,
     ingredients = {
@@ -5104,7 +5096,7 @@ data:extend({
     icon_size = 256,
     scale = 0.25,
     category = "crafting",
-    subgroup = "raw-resource",
+    subgroup = "processed-resource",
     enabled = false,
     energy_required = 4,
     ingredients = {
@@ -5154,7 +5146,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-mirror",  -- #ForRegEx# - recipe
-    category = "crafting-with-fluid",
+    category = "crafting",
     enabled = false,
     energy_required = 2.8,
     ingredients = {
@@ -5213,8 +5205,9 @@ data:extend({
     type = "recipe",
     name = "sp-epoxy",  -- #ForRegEx# - recipe
     category = "chemistry",
+    subgroup = "fluid-recipes",
     enabled = false,
-    energy_required = 4,
+    energy_required = 10,
     ingredients = {
       {type = "item", name = "sp-graphite", amount = 3},
       -- {type = "fluid", name = "sp-oxygen", amount = 35},
@@ -5263,7 +5256,7 @@ data:extend({
     icon_size = 256,
     scale = 0.25,
     category = "chemistry",
-    subgroup = "raw-resource",
+    subgroup = "processed-resource",
     enabled = false,
     energy_required = 5,
     ingredients = {
@@ -5583,6 +5576,7 @@ data:extend({
     energy_required = 12,
     hide_from_player_crafting = true,
     ingredients = {
+      {type = "item", name = "sp-catalyst", amount = 1},
       {type = "fluid", name = "sp-ethylene", amount = 60},
       -- {type = "fluid", name = "sp-chlorine", amount = 60}
     },
@@ -5669,7 +5663,7 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "chemistry",
-    subgroup = "raw-resource",
+    subgroup = "processed-resource",
     enabled = false,
     energy_required = 3,
     ingredients = {
@@ -6011,13 +6005,14 @@ if not mods["Krastorio2"] then
   table.insert(data.raw.recipe["sp-gravitonium"].ingredients, {type = "item", name = "sp-tritium", amount = 3})
   table.insert(data.raw.recipe["sp-vacuum-tube"].ingredients, {type = "item", name = "sp-glass", amount = 3})
   table.insert(data.raw.recipe["sp-vacuum-tube"].ingredients, {type = "fluid", name = "sp-hydrogen", amount = 5})
+  table.insert(data.raw.recipe["sp-pressure-tube"].ingredients, {type = "item", name = "sp-glass", amount = 1})
   table.insert(data.raw.recipe["sp-liquid-nitrogen"].ingredients, {type = "fluid", name = "sp-nitrogen", amount = 5})
   table.insert(data.raw.recipe["sp-material-science-pack-1"].ingredients, {type = "item", name = "iron-beam", amount = 5})
   
   -- Add missing results
   table.insert(data.raw.recipe["sp-silica"].results, {type = "item", name = "sp-sand", probability = 0.3, amount = 1})
   table.insert(data.raw.recipe["sp-gold"].results, {type = "item", name = "sp-sand", probability = 0.98, amount = 3})
-  table.insert(data.raw.recipe["sp-platinum-iridium"].results, {type = "item", name = "sp-sand", probability = 0.9807, amount = 3})
+  table.insert(data.raw.recipe["sp-platinum-iridium"].results, {type = "item", name = "sp-sand", probability = 0.9807, amount = 1})
   table.insert(data.raw.recipe["sp-sodium-and-chlorine"].results, {type = "fluid", name = "sp-chlorine", amount = 3})
   table.insert(data.raw.recipe["sp-high-purity-silicon"].results, {type = "item", name = "sp-silicon", probability = 0.7, amount = 1})
   table.insert(data.raw.recipe["sp-used-up-fuel-rod-reprocessing"].results, {type = "fluid", name = "sp-deuterium", amount = 10})

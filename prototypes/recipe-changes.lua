@@ -31,7 +31,7 @@ data.raw.recipe["sulfur"].results = {
 }
 data.raw.recipe["sulfur"].icon = "__base__/graphics/icons/sulfur.png"
 data.raw.recipe["sulfur"].icon_size = 64
-data.raw.recipe["sulfur"].subgroup = "raw-material"
+data.raw.recipe["sulfur"].subgroup = "processed-resource"
 
 util.change_recipe_ingredients("electronic-circuit",
   {{"copper-cable", 3}, {"wood", 3}, {"sp-solder", 1}},
@@ -96,13 +96,13 @@ util.change_recipe_ingredients("speed-module",
   15,
   20)
 util.change_recipe_ingredients("speed-module-2",
-  {{"sp-circuit-board", 2}, {"advanced-circuit", 5}, {"sp-solder", 4}, {"sp-coil", 2}, {"sp-light-emitting-diode", 6}, {"sp-integrated-circuit", 2}},
-  {{"sp-circuit-board", 2}, {"advanced-circuit", 6}, {"sp-solder", 6}, {"sp-coil", 5}, {"sp-light-emitting-diode", 8}, {"sp-integrated-circuit", 3}},
+  {{"advanced-circuit", 5}, {"sp-solder", 4}, {"sp-coil", 2}, {"sp-light-emitting-diode", 6}, {"sp-integrated-circuit", 2}},
+  {{"advanced-circuit", 6}, {"sp-solder", 6}, {"sp-coil", 5}, {"sp-light-emitting-diode", 8}, {"sp-integrated-circuit", 3}},
   20,
   30)
 util.change_recipe_ingredients("speed-module-3",
-  {{"sp-circuit-board", 2}, {"sp-integrated-circuit", 5}, {"processing-unit", 5}, {"sp-processor", 1}, {"sp-optical-sensor", 2}, {"sp-memory-chip", 6}},
-  {{"sp-circuit-board", 4}, {"sp-integrated-circuit", 8}, {"processing-unit", 5}, {"sp-processor", 2}, {"sp-optical-sensor", 5}, {"sp-memory-chip", 12}},
+  {{"sp-integrated-circuit", 5}, {"processing-unit", 5}, {"sp-processor", 1}, {"sp-optical-sensor", 2}, {"sp-memory-chip", 6}},
+  {{"sp-integrated-circuit", 8}, {"processing-unit", 5}, {"sp-processor", 2}, {"sp-optical-sensor", 5}, {"sp-memory-chip", 12}},
   45,
   60)
 util.change_recipe_ingredients("productivity-module",
@@ -111,13 +111,13 @@ util.change_recipe_ingredients("productivity-module",
   15,
   20)
 util.change_recipe_ingredients("productivity-module-2",
-  {{"sp-circuit-board", 1}, {"advanced-circuit", 3}, {"sp-coil", 3}, {"sp-light-emitting-diode", 6}, {"sp-integrated-circuit", 2}},
-  {{"sp-circuit-board", 2}, {"advanced-circuit", 5}, {"sp-coil", 6}, {"sp-light-emitting-diode", 12}, {"sp-integrated-circuit", 3}},
+  {{"advanced-circuit", 3}, {"sp-coil", 3}, {"sp-light-emitting-diode", 6}, {"sp-integrated-circuit", 2}},
+  {{"advanced-circuit", 5}, {"sp-coil", 6}, {"sp-light-emitting-diode", 12}, {"sp-integrated-circuit", 3}},
   20,
   30)
 util.change_recipe_ingredients("productivity-module-3",
-  {{"sp-circuit-board", 2}, {"sp-infrared-filter", 2}, {"processing-unit", 4}, {"sp-processor", 1}, {"sp-optical-sensor", 2}, {"sp-memory-chip", 3}},
-  {{"sp-circuit-board", 3}, {"sp-infrared-filter", 5}, {"processing-unit", 5}, {"sp-processor", 2}, {"sp-optical-sensor", 5}, {"sp-memory-chip", 6}},
+  {{"processing-unit", 4}, {"sp-processor", 1}, {"sp-optical-sensor", 2}, {"sp-memory-chip", 3}},
+  {{"processing-unit", 5}, {"sp-processor", 2}, {"sp-optical-sensor", 5}, {"sp-memory-chip", 6}},
   45,
   60)
 util.change_recipe_ingredients("effectivity-module",
@@ -126,13 +126,13 @@ util.change_recipe_ingredients("effectivity-module",
   15,
   20)
 util.change_recipe_ingredients("effectivity-module-2",
-  {{"sp-circuit-board", 1}, {"advanced-circuit", 6}, {"sp-capacitor", 3}, {"sp-light-emitting-diode", 6}, {"sp-integrated-circuit", 1}},
-  {{"sp-circuit-board", 2}, {"advanced-circuit", 9}, {"sp-capacitor", 5}, {"sp-light-emitting-diode", 10}, {"sp-integrated-circuit", 2}},
+  {{"advanced-circuit", 6}, {"sp-capacitor", 3}, {"sp-light-emitting-diode", 6}, {"sp-integrated-circuit", 1}},
+  {{"advanced-circuit", 9}, {"sp-capacitor", 5}, {"sp-light-emitting-diode", 10}, {"sp-integrated-circuit", 2}},
   20,
   30)
 util.change_recipe_ingredients("effectivity-module-3",
-  {{"sp-circuit-board", 2}, {"sp-infrared-filter", 1}, {"processing-unit", 6}, {"sp-processor", 1}, {"sp-optical-sensor", 1}, {"sp-memory-chip", 4}},
-  {{"sp-circuit-board", 3}, {"sp-infrared-filter", 2}, {"processing-unit", 8}, {"sp-processor", 2}, {"sp-optical-sensor", 2}, {"sp-memory-chip", 6}},
+  {{"processing-unit", 6}, {"sp-processor", 1}, {"sp-optical-sensor", 1}, {"sp-memory-chip", 4}},
+  {{"processing-unit", 8}, {"sp-processor", 2}, {"sp-optical-sensor", 2}, {"sp-memory-chip", 6}},
   45,
   60)
 util.change_recipe_ingredients("flying-robot-frame",
