@@ -3224,5 +3224,15 @@ if not mods["Krastorio2"] then
       order = "[lithium]",
       stack_size = 100
     },
+    {
+      type = "item",
+      name = "sp-rare-metal-alloy",  -- #ForRegEx# - item
+      icon = "__Spaghenutti__/graphics/icons/niobium-tin.png",  -- Fix icon
+      icon_size = 64,
+      scale = 0.25,
+      subgroup = "alloy",
+      order = "[rare-metal-alloy]",
+      stack_size = 100
+    },
   })
 end

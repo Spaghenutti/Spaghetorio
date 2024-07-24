@@ -120,12 +120,31 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "rare-metals"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-rare-metal-alloy-from-yttrium"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-rare-metal-alloy-from-lanthanum"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-rare-metal-alloy-from-cerium"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-rare-metal-alloy-from-neodymium"
       }
     },
-    prerequisites = {"sp-chemical-science-pack-2"},
+    prerequisites = {
+      "sp-chemical-science-pack-2",
+      "kr-mineral-water-gathering"
+    },
     unit =
     {
-      count = 500,
+      count = 750,
       ingredients = {
         {"sp-automation-science-pack-2", 1},
         {"sp-logistic-science-pack-2", 1},

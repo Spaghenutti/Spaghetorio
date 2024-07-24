@@ -71,7 +71,7 @@ data.raw.tool["production-science-pack"].subgroup = "intermediate-science"
 data.raw.tool["utility-science-pack"].subgroup = "intermediate-science"
 data.raw.tool["space-science-pack"].subgroup = "advanced-science"
 
-data.raw.tool["production-science-pack"].prerequisites = {"automation-science-pack", "logistic-science-pack", "chemical-science-pack", "sp-electronic-science-pack-1", "sp-geological-science-pack-1", "sp-material-science-pack-1"}
+data.raw.tool["production-science-pack"].prerequisites = {"sp-automation-science-pack-2"}
 data.raw.tool["utility-science-pack"].prerequisites = {"automation-science-pack", "logistic-science-pack", "chemical-science-pack", "sp-electronic-science-pack-1", "sp-geological-science-pack-1", "sp-material-science-pack-1"}
 
 -- Change order of science items

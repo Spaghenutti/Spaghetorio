@@ -340,8 +340,9 @@ data:extend({
     type = "recipe",
     name = "sp-xenon-from-atmosphere",  -- #ForRegEx# - recipe
     category = "atmosphere-condensation",
+    subgroup = "fluid-recipes",
     enabled = false,
-    energy_required = 10,
+    energy_required = 15,
     ingredients = {},
     results = {
       {type = "fluid", name = "sp-xenon", amount = 1}
@@ -351,8 +352,9 @@ data:extend({
     type = "recipe",
     name = "sp-helium-from-atmosphere",  -- #ForRegEx# - recipe
     category = "atmosphere-condensation",
+    subgroup = "fluid-recipes",
     enabled = false,
-    energy_required = 1,
+    energy_required = 3,
     ingredients = {},
     results = {
       {type = "fluid", name = "sp-helium", amount = 1}
@@ -1066,7 +1068,7 @@ table.insert(data.raw.recipe["sp-sodium-hydroxide-from-sodium"].ingredients, {ty
 table.insert(data.raw.recipe["sp-vinyl-chloride"].ingredients, {type = "fluid", name = "chlorine", amount = 30})
 table.insert(data.raw.recipe["sp-electrolyte"].ingredients, {type = "item", name = "lithium", amount = 3})
 table.insert(data.raw.recipe["sp-electrolyte"].ingredients, {type = "fluid", name = "chlorine", amount = 10})
-table.insert(data.raw.recipe["sp-helium"].ingredients, {type = "fluid", name = "hydrogen", amount = 2})
+table.insert(data.raw.recipe["sp-helium"].ingredients, {type = "fluid", name = "hydrogen", amount = 40})
 table.insert(data.raw.recipe["sp-helium-3-from-helium-and-hydrogen"].ingredients, {type = "fluid", name = "hydrogen", amount = 10})
 table.insert(data.raw.recipe["sp-gravitonium"].ingredients, {type = "item", name = "tritium", amount = 3})
 table.insert(data.raw.recipe["sp-vacuum-tube"].ingredients, {type = "item", name = "glass", amount = 3})
@@ -1123,6 +1125,9 @@ table.insert(data.raw.recipe["pumpjack"].ingredients, {"steel-gear-wheel", 8})
 table.insert(data.raw.recipe["oil-refinery"].ingredients, {"glass", 20})
 table.insert(data.raw.recipe["satellite"].ingredients, {"lithium-sulfur-battery", 20})
 
+-- MARK: Add missing ingredients to krastorio items
+table.insert(data.raw.recipe["lithium-chloride"].ingredients, {type = "item", name = "sp-lithium-oxide", amount = 5})
+
 -- MARK: Add missing results
 table.insert(data.raw.recipe["sp-silica"].results, {type = "item", name = "sand", probability = 0.3, amount = 1})
 table.insert(data.raw.recipe["sp-gold"].results, {type = "item", name = "sand", probability = 0.98, amount = 3})
@@ -1159,7 +1164,11 @@ table.insert(data.raw.recipe["sp-sodium-from-acrovoid"].results, {type = "fluid"
 table.insert(data.raw.recipe["sp-antimony-from-acrovoid"].results, {type = "fluid", name = "nitrogen", amount = 8})
 table.insert(data.raw.recipe["sp-tellurium-from-acrovoid"].results, {type = "fluid", name = "nitrogen", amount = 8})
 table.insert(data.raw.recipe["sp-sulfur-from-acrovoid"].results, {type = "item", name = "silicon", probability=0.15, amount = 1})
-table.insert(data.raw.recipe["sp-sulfur-from-acrovoid"].results, {type = "fluid", name = "oxygen", amount = 15})  
+table.insert(data.raw.recipe["sp-sulfur-from-acrovoid"].results, {type = "fluid", name = "oxygen", amount = 15})
+table.insert(data.raw.recipe["sp-rare-metal-alloy-from-yttrium"].results, {type = "item", name = "rare-metals", amount = 6})
+table.insert(data.raw.recipe["sp-rare-metal-alloy-from-lanthanum"].results, {type = "item", name = "rare-metals", amount = 5})
+table.insert(data.raw.recipe["sp-rare-metal-alloy-from-cerium"].results, {type = "item", name = "rare-metals", amount = 10})
+table.insert(data.raw.recipe["sp-rare-metal-alloy-from-neodymium"].results, {type = "item", name = "rare-metals", amount = 6})
 
 -- MARK: Update icons
 -- Add acion changes here
@@ -1195,8 +1204,8 @@ util.change_recipe_ingredients("silicon",
 data.raw.recipe["rare-metals"].category = "chemistry"
 data.raw.recipe["rare-metals"].hide_from_player_crafting = true
 util.change_recipe_ingredients("rare-metals",
-  {{type = "fluid", name = "sp-sodium-hydroxide", amount = 20}, {"raw-rare-metals", 2}},
-  {{type = "fluid", name = "sp-sodium-hydroxide", amount = 30}, {"raw-rare-metals", 2}},
+  {{type = "fluid", name = "mineral-water", amount = 10}, {type = "fluid", name = "sp-sodium-hydroxide", amount = 20}, {"raw-rare-metals", 2}},
+  {{type = "fluid", name = "mineral-water", amount = 15}, {type = "fluid", name = "sp-sodium-hydroxide", amount = 30}, {"raw-rare-metals", 2}},
   3,
   5)
 data.raw.recipe["rare-metals"].results = {
@@ -1234,6 +1243,11 @@ util.change_recipe_ingredients("electronic-circuit-stone",
   {{"copper-cable", 8}, {"stone-tablet", 2}, {"sp-solder", 2}},
   0.5,
   1)
+util.change_recipe_ingredients("pollution-filter",
+  {{"sp-anodized-aluminum", 1}, {"sp-composites", 1}, {"sp-filter", 2}, {"sp-catalyst", 1}},
+  {{"sp-anodized-aluminum", 2}, {"sp-composites", 2}, {"sp-filter", 3}, {"sp-catalyst", 2}},
+  4,
+  6)
 util.change_recipe_ingredients("kr-medium-container",
   {{"sp-bolts", 8}, {"steel-plate", 12}, {"steel-beam", 4}},
   {{"sp-bolts", 16}, {"steel-plate", 24}, {"steel-beam", 8}},
@@ -1255,8 +1269,8 @@ util.change_recipe_ingredients("kr-fluid-storage-2",  -- "huge storage tank"
   16,
   30)
 util.change_recipe_ingredients("lithium-sulfur-battery",  -- "huge storage tank"
-  {{"lithium", 1}, {"sp-aluminum-sheet", 1}, {type="fluid", name="sulfuric-acid", amount=10}, {"sp-graphite", 1}, {"sp-electrolyte", 1}},
-  {{"lithium", 2}, {"sp-aluminum-sheet", 1}, {type="fluid", name="sulfuric-acid", amount=20}, {"sp-graphite", 1}, {"sp-electrolyte", 1}},
+  {{"lithium", 4}, {"sp-cobalt-billet", 1}, {"sp-aluminum-sheet", 1}, {type="fluid", name="sulfuric-acid", amount=10}, {"sp-graphite", 1}, {"sp-electrolyte", 1}},
+  {{"lithium", 6}, {"sp-cobalt-billet", 2}, {"sp-aluminum-sheet", 1}, {type="fluid", name="sulfuric-acid", amount=20}, {"sp-graphite", 1}, {"sp-electrolyte", 1}},
   4,
   6)
 
@@ -1271,7 +1285,7 @@ util.change_recipe_ingredients("kr-fast-loader",
   {{"sp-aluminum-frame", 4}, {"electric-motor", 2}, {"fast-transport-belt", 1}, {"steel-gear-wheel", 6}, {"sp-bolts", 6}},
   2,
   3)
-  util.change_recipe_ingredients("kr-steel-pipe",
+util.change_recipe_ingredients("kr-steel-pipe",
   {{"sp-stainless-steel", 1}, {"sp-flange", 2}},
   {{"sp-stainless-steel", 2}, {"sp-flange", 2}},
   1,
@@ -1281,6 +1295,16 @@ util.change_recipe_ingredients("kr-steel-pipe-to-ground",
   {{"kr-steel-pipe", 12}, {"sp-flange", 2}, {"sp-bolts", 8}},
   8,
   12)
+util.change_recipe_ingredients("kr-black-reinforced-plate",
+  {{"refined-concrete", 20}, {"sp-zircon", 2}, {"sp-tungsten-slab", 2}},
+  {{"refined-concrete", 20}, {"sp-zircon", 2}, {"sp-tungsten-slab", 2}},
+  5,
+  8)
+util.change_recipe_ingredients("kr-white-reinforced-plate",
+  {{"refined-concrete", 20}, {"sp-zircon", 2}, {"sp-titanium-ingot", 2}},
+  {{"refined-concrete", 20}, {"sp-zircon", 2}, {"sp-titanium-ingot", 2}},
+  5,
+  8)
 util.change_recipe_ingredients("kr-steel-pump",
   {{"steel-plate", 5}, {"engine-unit", 2}, {"sp-bolts", 12}, {"sp-flange", 2}, {"sp-machined-parts", 4}},
   {{"steel-plate", 8}, {"engine-unit", 2}, {"sp-bolts", 20}, {"sp-flange", 2}, {"sp-machined-parts", 10}},
@@ -1347,13 +1371,13 @@ util.change_recipe_ingredients("kr-antimatter-reactor",
   1000,
   2000)
 util.change_recipe_ingredients("kr-electric-mining-drill-mk2",
-  {{"steel-beam", 12}, {"sp-bolts", 30}, {"sp-ceramics", 24}, {"electric-motor", 8}, {"sp-TiNb", 8}, {"sp-gearbox", 12}},
-  {{"steel-beam", 20}, {"sp-bolts", 50}, {"sp-ceramics", 24}, {"electric-motor", 12}, {"sp-TiNb", 16}, {"sp-gearbox", 20}},
+  {{"steel-beam", 12}, {"sp-bolts", 30}, {"sp-ceramics", 16}, {"electric-engine-unit", 4}, {"sp-TiNb", 8}, {"sp-gearbox", 12}},
+  {{"steel-beam", 20}, {"sp-bolts", 50}, {"sp-ceramics", 24}, {"electric-engine-unit", 6}, {"sp-TiNb", 16}, {"sp-gearbox", 20}},
   14,
   28)
 util.change_recipe_ingredients("kr-electric-mining-drill-mk3",
-  {{"sp-diamond", 8}, {"sp-niobium-steel", 20}, {"electric-engine-unit", 4}, {"sp-invar", 8}, {"sp-heavy-gearbox", 6}},
-  {{"sp-diamond", 16}, {"sp-niobium-steel", 36}, {"electric-engine-unit", 8}, {"sp-invar", 20}, {"sp-heavy-gearbox", 10}},
+  {{"sp-diamond", 8}, {"sp-niobium-steel", 20}, {"electric-engine-unit", 8}, {"sp-invar", 8}, {"sp-heavy-gearbox", 6}},
+  {{"sp-diamond", 16}, {"sp-niobium-steel", 36}, {"electric-engine-unit", 12}, {"sp-invar", 20}, {"sp-heavy-gearbox", 10}},
   20,
   40)
 util.change_recipe_ingredients("kr-quarry-drill",
@@ -1396,11 +1420,16 @@ util.change_recipe_ingredients("kr-fuel-refinery",
   {{"sp-stainless-steel", 30}, {"sp-brass", 20}, {"refined-concrete", 24}, {"sp-pressure-tube", 10}, {"advanced-circuit", 8}, {"sp-plate-heat-exchanger", 10}, {"engine-unit", 6}},
   24,
   32)
+util.change_recipe_ingredients("kr-air-purifier",
+  {{"sp-stainless-steel", 8}, {"concrete", 6}, {"advanced-circuit", 4}, {"electric-engine-unit", 2}, {"sp-bolts", 5}, {"sp-dynamo", 1}, {"sp-transformer", 1}},
+  {{"sp-stainless-steel", 14}, {"concrete", 10}, {"advanced-circuit", 8}, {"electric-engine-unit", 3}, {"sp-bolts", 8}, {"sp-dynamo", 2}, {"sp-transformer", 2}},
+  15,
+  24)
 util.change_recipe_ingredients("kr-research-server",
-  {{"steel-plate", 69}},
-  {{"steel-plate", 69}},
-  69,
-  69)
+  {{"lithium-sulfur-battery", 10}, {"sp-glass-fiber", 20}, {"sp-dynamo", 2}, {"electric-engine-unit", 4}, {"sp-composites", 4}, {"kr-black-reinforced-plate", 16}, {"sp-TiAlSn", 20}, {"sp-stainless-steel", 8}, {"glass", 10}},
+  {{"lithium-sulfur-battery", 20}, {"sp-glass-fiber", 50}, {"sp-dynamo", 4}, {"electric-engine-unit", 8}, {"sp-composites", 10}, {"kr-black-reinforced-plate", 20}, {"sp-TiAlSn", 32}, {"sp-stainless-steel", 12}, {"glass", 20}},
+  50,
+  100)
 util.change_recipe_ingredients("kr-quantum-computer",
   {{"steel-plate", 69}},
   {{"steel-plate", 69}},
@@ -1459,6 +1488,11 @@ util.change_recipe_ingredients("portable-generator",
   {{"electric-engine-unit", 4}, {"sp-titanium-frame", 12}, {"sp-gearbox", 5}, {"sp-insulated-wire", 6}, {"sp-bolts", 20}, {"sp-heatsink", 2}},
   12,
   24)
+util.change_recipe_ingredients("big-solar-panel-equipment",
+  {{"solar-panel", 4}, {"sp-bolts", 16}, {"advanced-circuit", 5}, {"sp-titanium-frame", 2}, {"sp-insulated-wire", 4}},
+  {{"solar-panel", 6}, {"sp-bolts", 24}, {"advanced-circuit", 12}, {"sp-titanium-frame", 5}, {"sp-insulated-wire", 8}},
+  20,
+  30)
 
 -- MARK: AAI Industries Buildings
 util.change_recipe_ingredients("burner-turbine",

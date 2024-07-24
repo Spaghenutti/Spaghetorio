@@ -980,10 +980,11 @@ data:extend({
       ingredients = {
         {"sp-automation-science-pack-2", 1},
         {"sp-logistic-science-pack-2", 1},
-        {"sp-electronic-science-pack-1", 1},
-        {"chemical-science-pack", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
         {"sp-geological-science-pack-2", 1},
-        {"sp-material-science-pack-2", 1}
+        {"sp-material-science-pack-2", 1},
+        {"production-science-pack", 1}
       },
       time = 15
     },
@@ -1350,39 +1351,6 @@ data:extend({
   },
   {
     type = "technology",
-    name = "sp-laser",  -- #ForRegEx# - technology
-    icon_size = 256,
-    mip_maps = 4,
-    icon = "__Spaghenutti__/graphics/hr-icons/laser.png",
-    effects =
-    {
-      {
-        type = "unlock-recipe",
-        recipe = "sp-laser"
-      }
-    },
-    prerequisites = {
-      "sp-optics",
-      "sp-noble-gases",
-      "sp-noble-metals"
-    },
-    unit =
-    {
-      count = 500,
-      ingredients = {
-        {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"sp-material-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1},
-        {"sp-electronic-science-pack-2", 1},
-        {"production-science-pack", 1}
-      },
-      time = 15
-    },
-    order = "a-h-a"
-  },
-  {
-    type = "technology",
     name = "sp-electronic-components",  -- #ForRegEx# - technology
     icon_size = 256,
     icons = util.combine_three_icons("__Spaghenutti__/graphics/hr-icons/coil.png", 256, nil,
@@ -1444,16 +1412,19 @@ data:extend({
         recipe = "sp-memory-chip"
       },
     },
-    prerequisites = {"sp-electronic-science-pack-2"},
+    prerequisites = {
+      "sp-electronic-science-pack-2",
+      "sp-chemical-science-pack-2"
+    },
     unit =
     {
       count = 500,
       ingredients = {
         {"sp-automation-science-pack-2", 1},
         {"sp-logistic-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
         {"sp-electronic-science-pack-2", 1},
-        {"chemical-science-pack", 1},
+        {"sp-chemical-science-pack-2", 1},
         {"production-science-pack", 1}
       },
       time = 15
@@ -2507,7 +2478,7 @@ data:extend({
         {"sp-automation-science-pack-2", 1},
         {"sp-logistic-science-pack-2", 1},
         {"sp-chemical-science-pack-2", 1},
-        {"sp-electronic-science-pack-1", 1},
+        {"sp-electronic-science-pack-2", 1},
         {"sp-material-science-pack-2", 1},
         {"production-science-pack", 1}
       },
@@ -2539,7 +2510,7 @@ data:extend({
         {"sp-automation-science-pack-2", 1},
         {"sp-logistic-science-pack-2", 1},
         {"sp-chemical-science-pack-2", 1},
-        {"sp-electronic-science-pack-1", 1},
+        {"sp-electronic-science-pack-2", 1},
         {"sp-material-science-pack-2", 1},
         {"production-science-pack", 1}
       },
@@ -2710,6 +2681,10 @@ data:extend({
     {
       {
         type = "unlock-recipe",
+        recipe = "sp-helium"
+      },
+      {
+        type = "unlock-recipe",
         recipe = "sp-helium-from-atmosphere"
       },
       {
@@ -2797,11 +2772,22 @@ data:extend({
         recipe = "sp-ion-thruster"
       }
     },
-    prerequisites = {"sp-noble-gases"},
+    prerequisites = {
+      "sp-noble-gases",
+      "advanced-electronics-2"
+    },
     unit =
     {
-      count = 100,
-      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      count = 1000,
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-computer-science-pack-2", 1},
+        {"production-science-pack", 1}
+      },
       time = 15
     },
     order = "a-h-a"
@@ -3134,7 +3120,7 @@ data:extend({
     prerequisites = {"sp-electronic-science-pack-2"},
     unit =
     {
-      count = 100,
+      count = 200,
       ingredients = {
         {"sp-automation-science-pack-2", 1},
         {"sp-logistic-science-pack-2", 1},
@@ -3316,38 +3302,6 @@ data:extend({
   },
   {
     type = "technology",
-    name = "sp-ethylene-products",  -- #ForRegEx# - technology
-    icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/ethylene-dichloride.png",
-    effects =
-    {
-      {
-        type = "unlock-recipe",
-        recipe = "sp-ethylene-and-propene"
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-ethylene-dichloride"
-      },
-    },
-    prerequisites = {
-      "logistic-science-pack",
-      "sp-propane-products"
-    },
-    unit =
-    {
-      count = 100,
-      ingredients = {
-        {"basic-tech-card", 1},
-        {"automation-science-pack", 1},
-        {"logistic-science-pack", 1}
-      },
-      time = 15
-    },
-    order = "a-h-a"
-  },
-  {
-    type = "technology",
     name = "sp-propane-products",  -- #ForRegEx# - technology
     icon_size = 256,
     icon = "__Spaghenutti__/graphics/hr-icons/methyl-tert-butyl-ether.png",
@@ -3377,6 +3331,41 @@ data:extend({
     unit =
     {
       count = 200,
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"production-science-pack", 1}
+      },
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-ethylene-products",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghenutti__/graphics/hr-icons/ethylene-dichloride.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-ethylene-and-propene"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-ethylene-dichloride"
+      },
+    },
+    prerequisites = {
+      "logistic-science-pack",
+      "sp-propane-products"
+    },
+    unit =
+    {
+      count = 350,
       ingredients = {
         {"sp-automation-science-pack-2", 1},
         {"sp-logistic-science-pack-2", 1},

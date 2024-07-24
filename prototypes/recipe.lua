@@ -1069,6 +1069,76 @@ data:extend({
       {type = "item", name = "sp-niobium-tin", amount = 2}
     }
   },
+  {
+    type = "recipe",
+    name = "sp-rare-metal-alloy-from-yttrium",  -- #ForRegEx# - recipe
+    icons = util.overlay_small_icon("__Krastorio2Assets__/icons/items-with-variations/rare-metals/rare-metals.png", 64,
+                                    "__Spaghenutti__/graphics/icons/yttrium.png", 64),
+    category = "intermediate-smelting",
+    enabled = false,
+    energy_required = 16,
+    ingredients = {
+      {type = "item", name = "sp-yttrium", amount = 1},
+      {type = "item", name = "iron-plate", amount = 3},
+      {type = "item", name = "sp-chromium-plate", amount = 10}
+    },
+    results = {
+      -- Base {type = "item", name = "sp-rare-metal-alloy", amount = 6}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-rare-metal-alloy-from-lanthanum",  -- #ForRegEx# - recipe
+    icons = util.overlay_small_icon("__Krastorio2Assets__/icons/items-with-variations/rare-metals/rare-metals.png", 64,
+                                    "__Spaghenutti__/graphics/icons/lanthanum.png", 64),
+    category = "intermediate-smelting",
+    enabled = false,
+    energy_required = 20,
+    ingredients = {
+      {type = "item", name = "sp-lanthanum", amount = 1},
+      {type = "item", name = "copper-plate", amount = 3},
+      {type = "item", name = "sp-zinc-plate", amount = 8}
+    },
+    results = {
+      -- Base {type = "item", name = "sp-rare-metal-alloy", amount = 5}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-rare-metal-alloy-from-cerium",  -- #ForRegEx# - recipe
+    icons = util.overlay_small_icon("__Krastorio2Assets__/icons/items-with-variations/rare-metals/rare-metals.png", 64,
+                                    "__Spaghenutti__/graphics/icons/cerium.png", 64),
+    category = "intermediate-smelting",
+    enabled = false,
+    energy_required = 30,
+    ingredients = {
+      {type = "item", name = "sp-cerium", amount = 2},
+      {type = "item", name = "sp-tantalum-billet", amount = 3},
+      {type = "item", name = "sp-titanium-ingot", amount = 5},
+      {type = "item", name = "sp-aluminum-sheet", amount = 14}
+    },
+    results = {
+      -- Base {type = "item", name = "sp-rare-metal-alloy", amount = 10}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-rare-metal-alloy-from-neodymium",  -- #ForRegEx# - recipe
+    icons = util.overlay_small_icon("__Krastorio2Assets__/icons/items-with-variations/rare-metals/rare-metals.png", 64,
+                                    "__Spaghenutti__/graphics/icons/neodymium.png", 64),
+    category = "intermediate-smelting",
+    enabled = false,
+    energy_required = 24,
+    ingredients = {
+      {type = "item", name = "sp-neodymium", amount = 1},
+      {type = "item", name = "copper-plate", amount = 10},
+      {type = "item", name = "sp-lead-slab", amount = 3},
+      {type = "item", name = "sp-niobium-billet", amount = 2},
+    },
+    results = {
+      -- Base {type = "item", name = "sp-rare-metal-alloy", amount = 6}
+    }
+  },
   ------------------------------------------------------------------------------
   -- MARK: filtering dirty water
   ------------------------------------------------------------------------------
@@ -3261,6 +3331,8 @@ data:extend({
     ingredients = {
       {type = "item", name = "sp-yttrium", amount = 1},
       {type = "item", name = "sp-inconel", amount = 10},
+      {type = "item", name = "sp-duralumin", amount = 3},
+      {type = "item", name = "processing-unit", amount = 5},
       {type = "item", name = "sp-electrode", amount = 10},
       {type = "item", name = "sp-electromagnet", amount = 4},
       {type = "fluid", name = "sp-xenon", amount = 20}
@@ -5686,7 +5758,7 @@ data:extend({
       -- {type = "fluid", name = "sp-hydrogen", amount = 2}
     },
     results = {
-      {type = "fluid", name = "sp-helium", amount = 1}
+      {type = "fluid", name = "sp-helium", amount = 10}
     }
   },
   {
@@ -6000,7 +6072,7 @@ if not mods["Krastorio2"] then
   table.insert(data.raw.recipe["sp-vinyl-chloride"].ingredients, {type = "fluid", name = "sp-chlorine", amount = 30})
   table.insert(data.raw.recipe["sp-electrolyte"].ingredients, {type = "item", name = "sp-lithium", amount = 3})
   table.insert(data.raw.recipe["sp-electrolyte"].ingredients, {type = "fluid", name = "sp-chlorine", amount = 10})
-  table.insert(data.raw.recipe["sp-helium"].ingredients, {type = "fluid", name = "sp-hydrogen", amount = 2})
+  table.insert(data.raw.recipe["sp-helium"].ingredients, {type = "fluid", name = "sp-hydrogen", amount = 40})
   table.insert(data.raw.recipe["sp-helium-3-from-helium-and-hydrogen"].ingredients, {type = "fluid", name = "sp-hydrogen", amount = 10})
   table.insert(data.raw.recipe["sp-gravitonium"].ingredients, {type = "item", name = "sp-tritium", amount = 3})
   table.insert(data.raw.recipe["sp-vacuum-tube"].ingredients, {type = "item", name = "sp-glass", amount = 3})
@@ -6045,4 +6117,8 @@ if not mods["Krastorio2"] then
   table.insert(data.raw.recipe["sp-tellurium-from-acrovoid"].results, {type = "fluid", name = "sp-nitrogen", amount = 8})
   table.insert(data.raw.recipe["sp-sulfur-from-acrovoid"].results, {type = "item", name = "sp-silicon", probability=0.15, amount = 1})
   table.insert(data.raw.recipe["sp-sulfur-from-acrovoid"].results, {type = "fluid", name = "sp-oxygen", amount = 15})
+  table.insert(data.raw.recipe["sp-rare-metal-alloy-from-yttrium"].results, {type = "item", name = "sp-rare-metal-alloy", amount = 6})
+  table.insert(data.raw.recipe["sp-rare-metal-alloy-from-lanthanum"].results, {type = "item", name = "sp-rare-metal-alloy", amount = 5})
+  table.insert(data.raw.recipe["sp-rare-metal-alloy-from-cerium"].results, {type = "item", name = "sp-rare-metal-alloy", amount = 10})
+  table.insert(data.raw.recipe["sp-rare-metal-alloy-from-neodymium"].results, {type = "item", name = "sp-rare-metal-alloy", amount = 6})
 end
