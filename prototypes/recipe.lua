@@ -4745,13 +4745,18 @@ data:extend({
   {
     type = "recipe",
     name = "sp-material-science-pack-2",
-    category = "crafting",
+    category = "crafting-with-fluid",
     enabled = false,
     energy_required = 24,
     ingredients =
     {
       {"sp-material-science-pack-1", 20},
-      {"iron-plate", 69}
+      {type = "fluid", name = "sp-vinyl-chloride", amount = 10},
+      {type = "item", name = "sp-titanium-ingot", amount = 4},
+      {type = "item", name = "sp-brass", amount = 8},
+      {type = "item", name = "sp-stainless-steel", amount = 10},
+      {type = "item", name = "sp-zinc-plate", amount = 6},
+      {type = "item", name = "sp-nickel-ingot", amount = 5},
     },
     result_count = 5,
     result = "sp-material-science-pack-2"

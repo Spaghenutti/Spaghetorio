@@ -146,6 +146,13 @@ table.insert(data.raw.technology["kr-fluid-excess-handling"].prerequisites, "flu
 table.insert(data.raw.technology["kr-steel-fluid-handling"].prerequisites, "oil-processing")
 
 table.insert(data.raw.technology["kr-steel-fluid-tanks"].prerequisites, "sp-brass")
+data.raw.technology["kr-steel-fluid-tanks"].unit.ingredients = {
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"chemical-science-pack", 1},
+  {"sp-material-science-pack-1", 1},
+  {"sp-geological-science-pack-1", 1}
+}
 
 table.insert(data.raw.technology["kr-stone-processing"].effects, {type = "unlock-recipe", recipe = "sp-stone-brick-from-sand"})
 

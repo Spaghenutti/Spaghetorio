@@ -353,7 +353,7 @@ data:extend({
     prerequisites = {"chemical-science-pack"},
     unit =
     {
-      count = 50,
+      count = 100,
       ingredients = {
         {"automation-science-pack", 1},
         {"logistic-science-pack", 1},
@@ -380,8 +380,14 @@ data:extend({
     prerequisites = {"sp-zinc-processing"},
     unit =
     {
-      count = 50,
-      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      count = 75,
+      ingredients = {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"sp-material-science-pack-1", 1},
+        {"sp-geological-science-pack-1", 1}
+      },
       time = 15
     },
     order = "a-h-a"
@@ -523,7 +529,7 @@ data:extend({
         recipe = "sp-crushed-titanium-smelting"
       },
     },
-    prerequisites = {"sp-material-science-pack-2"},
+    prerequisites = {"production-science-pack"},
     unit =
     {
       count = 300,
@@ -531,7 +537,8 @@ data:extend({
         {"sp-automation-science-pack-2", 1},
         {"sp-logistic-science-pack-2", 1},
         {"chemical-science-pack", 1},
-        {"sp-material-science-pack-2", 1},
+        {"sp-material-science-pack-1", 1},
+        {"production-science-pack", 1},
         {"sp-geological-science-pack-1", 1}
       },
       time = 15
@@ -555,7 +562,7 @@ data:extend({
         recipe = "sp-titanium-plate"
       },
     },
-    prerequisites = {"sp-titanium-processing"},
+    prerequisites = {"sp-material-science-pack-2"},
     unit =
     {
       count = 500,
@@ -563,6 +570,7 @@ data:extend({
         {"sp-automation-science-pack-2", 1},
         {"sp-logistic-science-pack-2", 1},
         {"chemical-science-pack", 1},
+        {"production-science-pack", 1},
         {"sp-material-science-pack-2", 1}
       },
       time = 15
@@ -626,7 +634,7 @@ data:extend({
       }
     },
     prerequisites = {
-      "sp-titanium-processing",
+      "sp-material-science-pack-2",
       "sp-basic-ceramics",
       "utility-science-pack"
     },
@@ -2152,7 +2160,7 @@ data:extend({
         recipe = "sp-titanium-nitride"
       },
     },
-    prerequisites = {"sp-titanium-processing"},
+    prerequisites = {"sp-material-science-pack-2"},
     unit =
     {
       count = 150,
@@ -4118,18 +4126,19 @@ data:extend({
       },
     },
     prerequisites = {
-      "sp-automation-science-pack-2"
+      "sp-titanium-processing"
     },
     unit =
     {
-      count = 200,
+      count = 300,
       ingredients = {
         {"sp-automation-science-pack-2", 1},
-        {"logistic-science-pack", 1},
+        {"sp-logistic-science-pack-2", 1},
         {"chemical-science-pack", 1},
         {"sp-electronic-science-pack-1", 1},
         {"sp-geological-science-pack-1", 1},
-        {"sp-material-science-pack-1", 1}
+        {"sp-material-science-pack-1", 1},
+        {"production-science-pack", 1}
       },
       time = 15
     },
