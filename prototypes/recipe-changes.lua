@@ -353,6 +353,16 @@ util.change_recipe_ingredients("modular-armor",
   {{"sp-fabric", 16}, {"sp-electromagnet", 6}, {"electronic-circuit", 12}, {"sp-bolts", 15}, {"sp-anodized-aluminum", 10}, {"sp-insulation-sheet", 4}},
   5,
   8)
+util.change_recipe_ingredients("power-armor",
+  {{"sp-fabric", 10}, {"advanced-circuit", 10}, {"sp-titanium-frame", 8}, {"sp-inconel", 4}, {"sp-insulation-sheet", 4}, {"electric-engine-unit", 4}},
+  {{"sp-fabric", 12}, {"advanced-circuit", 20}, {"sp-titanium-frame", 12}, {"sp-inconel", 6}, {"sp-insulation-sheet", 10}, {"electric-engine-unit", 6}},
+  10,
+  16)
+util.change_recipe_ingredients("power-armor-mk2",
+  {{"iron-plate", 69}},
+  {{"iron-plate", 69}},
+  12,
+  24)
 util.change_recipe_ingredients("night-vision-equipment",
   {{"processing-unit", 1}, {"sp-composites", 2}, {"plastic-bar", 2}, {"sp-optical-sensor", 2}, {"sp-lens", 6}, {"sp-laser", 1}, {"sp-rubber", 1}},
   {{"processing-unit", 2}, {"sp-composites", 3}, {"plastic-bar", 3}, {"sp-optical-sensor", 2}, {"sp-lens", 10}, {"sp-laser", 2}, {"sp-rubber", 2}},
@@ -409,8 +419,8 @@ util.change_recipe_ingredients("discharge-defense-remote",
   2,
   3)
 util.change_recipe_ingredients("exoskeleton-equipment",
-  {{"processing-unit", 8}, {"electric-engine-unit", 6}, {"sp-bolts", 30}, {"sp-stainless-steel-gear-wheel", 16}, {"sp-aluminum-frame", 8}, {"sp-ball-bearing", 8}, {"sp-spring", 10}},
-  {{"processing-unit", 12}, {"electric-engine-unit", 10}, {"sp-bolts", 40}, {"sp-stainless-steel-gear-wheel", 24}, {"sp-aluminum-frame", 12}, {"sp-ball-bearing", 12}, {"sp-spring", 20}},
+  {{"advanced-circuit", 8}, {"electric-engine-unit", 6}, {"sp-bolts", 30}, {"sp-stainless-steel-gear-wheel", 16}, {"sp-aluminum-frame", 8}, {"sp-ball-bearing", 8}, {"sp-spring", 10}},
+  {{"advanced-circuit", 12}, {"electric-engine-unit", 10}, {"sp-bolts", 40}, {"sp-stainless-steel-gear-wheel", 24}, {"sp-aluminum-frame", 12}, {"sp-ball-bearing", 12}, {"sp-spring", 20}},
   20,
   30)
 -- Krastorio: {"automation-core", 2}
@@ -502,8 +512,8 @@ util.change_recipe_ingredients("centrifuge",
   20,
   40)
 util.change_recipe_ingredients("beacon",
-  {{"sp-heatsink", 20}, {"sp-stainless-steel", 12}, {"sp-invar", 4}, {"concrete", 16}, {"sp-dynamo", 3}, {"sp-bolts", 40}, {"copper-cable", 20}, {"sp-transformer", 2}},
-  {{"sp-heatsink", 24}, {"sp-stainless-steel", 20}, {"sp-invar", 10}, {"concrete", 28}, {"sp-dynamo", 4}, {"sp-bolts", 75}, {"copper-cable", 50}, {"sp-transformer", 4}},
+  {{"sp-heatsink", 20}, {"sp-stainless-steel", 12}, {"advanced-circuit", 4}, {"concrete", 16}, {"sp-dynamo", 3}, {"sp-bolts", 40}, {"sp-insulated-wire", 20}, {"sp-transformer", 2}},
+  {{"sp-heatsink", 24}, {"sp-stainless-steel", 20}, {"advanced-circuit", 10}, {"concrete", 28}, {"sp-dynamo", 4}, {"sp-bolts", 75}, {"sp-insulated-wire", 50}, {"sp-transformer", 4}},
   30,
   45)
 -- Base: {"battery", 20}; Krastorio {"lithium-sulfur-battery", 20}

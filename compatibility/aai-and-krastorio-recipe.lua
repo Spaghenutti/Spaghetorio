@@ -1085,6 +1085,7 @@ table.insert(data.raw.recipe["sp-logistic-science-pack-2"].ingredients, {type = 
 table.insert(data.raw.recipe["sp-logistic-science-pack-2"].ingredients, {type = "item", name = "engine-unit", amount = 2})
 table.insert(data.raw.recipe["sp-logistic-science-pack-2"].ingredients, {type = "item", name = "automation-core", amount = 5})
 table.insert(data.raw.recipe["sp-military-science-pack-2"].ingredients, {type = "item", name = "biters-research-data", amount = 2})
+table.insert(data.raw.recipe["sp-geological-science-pack-2"].ingredients, {type = "item", name = "wood", amount = 10})
 table.insert(data.raw.recipe["sp-astronomical-science-pack-2"].ingredients, {type = "item", name = "blank-tech-card", amount = 5})
 table.insert(data.raw.recipe["sp-computer-science-pack-2"].ingredients, {type = "item", name = "blank-tech-card", amount = 5})
 table.insert(data.raw.recipe["sp-military-science-pack-3"].ingredients, {type = "item", name = "biters-research-data", amount = 3})
@@ -1180,6 +1181,9 @@ data.raw.recipe["sp-zinc-plate"].category = "electrolysis"
 data.raw.recipe["sp-sodium-hydroxide-from-liquid-sodium"].category = "electrolysis"
 data.raw.recipe["sp-salt"].category = "fluid-filtration"
 data.raw.recipe["sp-nuclear-waste-processing"].category = "crushing"
+
+data.raw.recipe["sp-astronomical-science-pack-2"].category = "t2-tech-cards"
+data.raw.recipe["sp-computer-science-pack-2"].category = "t2-tech-cards"
 
 -- MARK: change subgroup
 data.raw.recipe["quartz"].subgroup = "processed-resource"
@@ -1472,7 +1476,29 @@ util.change_recipe_ingredients("biusart-lab",
 --   69,
 --   69)
 
--- MARK: Krastorio Combat
+util.change_recipe_ingredients("kr-tesla-coil",
+  {{"sp-dynamo", 2}, {"sp-vacuum-tube", 20}, {"advanced-circuit", 12}, {"sp-electromagnet", 20}, {"copper-cable", 16}, {"concrete", 24}, {"steel-beam", 16}},
+  {{"sp-dynamo", 3}, {"sp-vacuum-tube", 40}, {"advanced-circuit", 20}, {"sp-electromagnet", 30}, {"copper-cable", 50}, {"concrete", 48}, {"steel-beam", 20}},
+  30,
+  60)
+
+
+-- MARK: Krastorio equipment
+util.change_recipe_ingredients("power-armor-mk3",
+  {{"iron-plate", 69}},
+  {{"iron-plate", 69}},
+  20,
+  40)
+util.change_recipe_ingredients("power-armor-mk4",
+  {{"iron-plate", 69}},
+  {{"iron-plate", 69}},
+  30,
+  60)
+util.change_recipe_ingredients("energy-absorber",
+  {{"sp-inconel", 2}, {"sp-TiAlSn", 3}, {"copper-cable", 2}, {"sp-niobium-billet", 1}},
+  {{"sp-inconel", 3}, {"sp-TiAlSn", 5}, {"copper-cable", 5}, {"sp-niobium-billet", 1}},
+  4,
+  6)
 util.change_recipe_ingredients("big-battery-equipment",
   {{"battery-equipment", 4}, {"sp-aluminum-frame", 3}, {"sp-bolts", 6}, {"sp-insulated-wire", 4}, {"sp-heatsink", 2}},
   {{"battery-equipment", 6}, {"sp-aluminum-frame", 6}, {"sp-bolts", 10}, {"sp-insulated-wire", 10}, {"sp-heatsink", 2}},
@@ -1531,10 +1557,10 @@ util.change_recipe_ingredients("electric-engine-unit",
   4,
   6)
 util.change_recipe_ingredients("industrial-furnace",
-  {{"steel-plate", 69}},
-  {{"steel-plate", 69}},
-  69,
-  69)
+  {{"sp-stainless-steel", 20}, {"sp-heat-resistant-tile", 30}, {"sp-invar", 10}, {"advanced-circuit", 12}, {"sp-tungsten-carbide", 2}, {"sp-heating-filament", 20}, {"sp-electromagnet", 30}, {"refined-concrete", 40}},
+  {{"sp-stainless-steel", 32}, {"sp-heat-resistant-tile", 45}, {"sp-invar", 16}, {"advanced-circuit", 20}, {"sp-tungsten-carbide", 10}, {"sp-heating-filament", 30}, {"sp-electromagnet", 40}, {"refined-concrete", 60}},
+  40,
+  80)
 util.change_recipe_ingredients("area-mining-drill",
   {{"steel-plate", 69}},
   {{"steel-plate", 69}},

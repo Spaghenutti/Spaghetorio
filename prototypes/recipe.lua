@@ -69,7 +69,6 @@ local util = require("data-util")
 --    - "sp-diode"
 --    - "sp-cmos" (use optical sensor instead)
 --    - "sp-coil"
---    - "sp-compute-unit"
 --    - "sp-electrode"
 --    - "sp-infrared-filter"
 --    - "sp-integrated-circuit"
@@ -1610,24 +1609,6 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-compute-unit",  -- #ForRegEx# - recipe
-    category = "crafting",
-    enabled = false,
-    energy_required = 2,
-    ingredients = {
-      {type = "item", name = "sp-circuit-board", amount = 1},
-      {type = "item", name = "sp-memory-chip", amount = 2},
-      {type = "item", name = "sp-processor", amount = 1},
-      {type = "item", name = "sp-integrated-circuit", amount = 4},
-      {type = "item", name = "sp-coil", amount = 2},
-      {type = "item", name = "sp-heatsink", amount = 1}
-    },
-    results = {
-      {type = "item", name = "sp-compute-unit", amount = 1}
-    }
-  },
-  {
-    type = "recipe",
     name = "sp-heat-resistant-tile",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
@@ -2792,7 +2773,7 @@ data:extend({
     energy_required = 5,
     ingredients = {
       {type = "item", name = "sp-glass-fiber", amount = 1},
-      {type = "item", name = "sp-compute-unit", amount = 2},
+      {type = "item", name = "processing-unit", amount = 2},
       {type = "item", name = "sp-optical-sensor", amount = 2},
       {type = "item", name = "sp-relay", amount = 6},
     },
@@ -4729,7 +4710,10 @@ data:extend({
     ingredients =
     {
       {"chemical-science-pack", 20},
-      {"iron-plate", 69}
+      {"battery", 5},
+      {"sp-sodium-carbonate", 5},
+      {type = "fluid", name = "sp-sulfamate", amount = 20},
+      {type = "fluid", name = "sp-phosphoric-acid", amount = 20}
     },
     result_count = 5,
     result = "sp-chemical-science-pack-2"
@@ -4743,7 +4727,10 @@ data:extend({
     ingredients =
     {
       {"sp-electronic-science-pack-1", 20},
-      {"iron-plate", 69}
+      {"advanced-circuit", 5},
+      {"sp-relay", 5},
+      {"arithmetic-combinator", 2},
+      {"decider-combinator", 2}
     },
     result_count = 5,
     result = "sp-electronic-science-pack-2"
@@ -4757,7 +4744,11 @@ data:extend({
     ingredients =
     {
       {"sp-geological-science-pack-1", 20},
-      {"iron-plate", 69}
+      {"sp-zinc-sulfate", 5},
+      {"sp-leadstone", 2},
+      {"sulfur", 5},
+      -- {"wood", 10},
+      {type = "fluid", name = "crude-oil", amount = 20},
     },
     result_count = 5,
     result = "sp-geological-science-pack-2"
@@ -4790,7 +4781,10 @@ data:extend({
     ingredients =
     -- Krastorio: {"blank-tech-card", 5}
     {
-      {"iron-plate", 69}
+      {"sp-glass-fiber", 10},
+      {"sp-mirror", 5},
+      {"sp-lens", 5},
+      {"sp-laser", 5},
     },
     result_count = 5,
     result = "sp-astronomical-science-pack-2"
@@ -4804,7 +4798,10 @@ data:extend({
     ingredients =
     -- Krastorio: {"blank-tech-card", 5}
     {
-      {"iron-plate", 69},
+      {"sp-integrated-circuit", 5},
+      {"sp-memory-chip", 5},
+      {"sp-heatsink", 5},
+      {"sp-vacuum-tube", 5},
     },
     result_count = 5,
     result = "sp-computer-science-pack-2"
@@ -6090,7 +6087,8 @@ if not mods["Krastorio2"] then
   table.insert(data.raw.recipe["sp-pressure-tube"].ingredients, {type = "item", name = "sp-glass", amount = 1})
   table.insert(data.raw.recipe["sp-liquid-nitrogen"].ingredients, {type = "fluid", name = "sp-nitrogen", amount = 5})
   table.insert(data.raw.recipe["sp-material-science-pack-1"].ingredients, {type = "item", name = "iron-beam", amount = 5})
-  
+  table.insert(data.raw.recipe["sp-geological-science-pack-2"].ingredients, {type = "item", name = "sp-wood", amount = 10})
+
   -- Add missing results
   table.insert(data.raw.recipe["sp-silica"].results, {type = "item", name = "sp-sand", probability = 0.3, amount = 1})
   table.insert(data.raw.recipe["sp-gold"].results, {type = "item", name = "sp-sand", probability = 0.98, amount = 3})

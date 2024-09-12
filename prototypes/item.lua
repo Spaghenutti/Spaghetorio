@@ -1951,16 +1951,6 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-compute-unit",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/icons/compute-unit.png",
-    icon_size = 64,
-    scale = 0.25,
-    subgroup = "electronic-optical-component",
-    order = "z-[compute-unit]",
-    stack_size = 100
-  },
-  {
-    type = "item",
     name = "sp-integrated-circuit",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/icons/integrated-circuit.png",
     icon_size = 64,
