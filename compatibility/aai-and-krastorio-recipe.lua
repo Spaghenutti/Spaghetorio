@@ -1371,13 +1371,13 @@ util.change_recipe_ingredients("kr-antimatter-reactor",
   1000,
   2000)
 util.change_recipe_ingredients("kr-electric-mining-drill-mk2",
-  {{"steel-beam", 12}, {"sp-bolts", 30}, {"sp-ceramics", 16}, {"electric-engine-unit", 4}, {"sp-TiNb", 8}, {"sp-gearbox", 12}},
-  {{"steel-beam", 20}, {"sp-bolts", 50}, {"sp-ceramics", 24}, {"electric-engine-unit", 6}, {"sp-TiNb", 16}, {"sp-gearbox", 20}},
+  {{"steel-beam", 12}, {"sp-bolts", 30}, {"sp-ceramics", 16}, {"electric-engine-unit", 4}, {"sp-TiNb", 8}, {"sp-heavy-gearbox", 4}, {"advanced-circuit", 6}},
+  {{"steel-beam", 20}, {"sp-bolts", 50}, {"sp-ceramics", 24}, {"electric-engine-unit", 6}, {"sp-TiNb", 16}, {"sp-heavy-gearbox", 10}, {"advanced-circuit", 10}},
   14,
   28)
 util.change_recipe_ingredients("kr-electric-mining-drill-mk3",
-  {{"sp-diamond", 8}, {"sp-niobium-steel", 20}, {"electric-engine-unit", 8}, {"sp-invar", 8}, {"sp-heavy-gearbox", 6}},
-  {{"sp-diamond", 16}, {"sp-niobium-steel", 36}, {"electric-engine-unit", 12}, {"sp-invar", 20}, {"sp-heavy-gearbox", 10}},
+  {{"sp-diamond", 8}, {"sp-niobium-steel", 20}, {"electric-engine-unit", 8}, {"sp-invar", 8}, {"sp-heavy-gearbox", 6}, {"processing-unit", 6}},
+  {{"sp-diamond", 16}, {"sp-niobium-steel", 36}, {"electric-engine-unit", 12}, {"sp-invar", 20}, {"sp-heavy-gearbox", 10}, {"processing-unit", 10}},
   20,
   40)
 util.change_recipe_ingredients("kr-quarry-drill",
@@ -1426,8 +1426,8 @@ util.change_recipe_ingredients("kr-air-purifier",
   15,
   24)
 util.change_recipe_ingredients("kr-research-server",
-  {{"lithium-sulfur-battery", 10}, {"sp-glass-fiber", 20}, {"sp-dynamo", 2}, {"electric-engine-unit", 4}, {"sp-composites", 4}, {"kr-black-reinforced-plate", 16}, {"sp-TiAlSn", 20}, {"sp-stainless-steel", 8}, {"glass", 10}},
-  {{"lithium-sulfur-battery", 20}, {"sp-glass-fiber", 50}, {"sp-dynamo", 4}, {"electric-engine-unit", 8}, {"sp-composites", 10}, {"kr-black-reinforced-plate", 20}, {"sp-TiAlSn", 32}, {"sp-stainless-steel", 12}, {"glass", 20}},
+  {{"lithium-sulfur-battery", 10}, {"sp-glass-fiber", 20}, {"sp-dynamo", 2}, {"advanced-circuit", 20}, {"electric-engine-unit", 4}, {"sp-composites", 4}, {"kr-black-reinforced-plate", 16}, {"sp-TiAlSn", 20}, {"sp-stainless-steel", 8}, {"glass", 10}},
+  {{"lithium-sulfur-battery", 20}, {"sp-glass-fiber", 50}, {"sp-dynamo", 4}, {"advanced-circuit", 40}, {"electric-engine-unit", 8}, {"sp-composites", 10}, {"kr-black-reinforced-plate", 20}, {"sp-TiAlSn", 32}, {"sp-stainless-steel", 12}, {"glass", 20}},
   50,
   100)
 util.change_recipe_ingredients("kr-quantum-computer",

@@ -1519,20 +1519,39 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "sp-integrated-circuit",  -- #ForRegEx# - recipe
+    category = "crafting",
+    enabled = false,
+    energy_required = 12,
+    ingredients = {
+      {type = "item", name = "plastic-bar", amount = 1},
+      {type = "item", name = "sp-high-purity-silicon", amount = 4},
+      {type = "item", name = "copper-cable", amount = 2},
+      {type = "item", name = "sp-tellurium", amount = 2},
+      {type = "item", name = "sp-phosphorus", amount = 3},
+      {type = "item", name = "sp-silver-solder", amount = 1},
+      {type = "item", name = "sp-gold", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-integrated-circuit", amount = 5}
+    }
+  },
+  {
+    type = "recipe",
     name = "sp-memory-chip",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
-    energy_required = 4,
+    energy_required = 8,
     ingredients = {
       {type = "item", name = "plastic-bar", amount = 1},
-      {type = "item", name = "sp-high-purity-silicon", amount = 1},
-      {type = "item", name = "copper-cable", amount = 1},
+      {type = "item", name = "sp-high-purity-silicon", amount = 3},
+      {type = "item", name = "copper-cable", amount = 2},
       {type = "item", name = "sp-cerium", amount = 1},
-      {type = "item", name = "sp-phosphorus", amount = 1},
+      {type = "item", name = "sp-phosphorus", amount = 2},
       {type = "item", name = "sp-silver-solder", amount = 1}
     },
     results = {
-      {type = "item", name = "sp-memory-chip", amount = 2}
+      {type = "item", name = "sp-memory-chip", amount = 4}
     }
   },
   {
@@ -2802,14 +2821,15 @@ data:extend({
     name = "sp-dynamo",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
-    energy_required = 3.6,
+    energy_required = 6,
     ingredients = {
       {type = "item", name = "sp-ball-bearing", amount = 2},
       {type = "item", name = "sp-magnet", amount = 4},
       {type = "item", name = "sp-bolts", amount = 6},
-      {type = "item", name = "sp-machined-parts", amount = 3},
-      {type = "item", name = "copper-cable", amount = 2},
-      
+      {type = "item", name = "sp-machined-parts", amount = 12},
+      {type = "item", name = "sp-aluminum-frame", amount = 4},
+      {type = "item", name = "sp-insulated-wire", amount = 10},
+      {type = "item", name = "sp-transformer", amount = 1}
     },
     results = {
       {type = "item", name = "sp-dynamo", amount = 1}
@@ -5459,21 +5479,6 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-light-emitting-diode", amount = 3}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-integrated-circuit",  -- #ForRegEx# - recipe
-    category = "crafting",
-    enabled = false,
-    energy_required = 3.2,
-    ingredients = {
-      {type = "item", name = "plastic-bar", amount = 1},
-      -- {type = "item", name = "sp-silicon", amount = 2},
-      {type = "item", name = "copper-plate", amount = 1}
-    },
-    results = {
-      {type = "item", name = "sp-integrated-circuit", amount = 1}
     }
   },
   {

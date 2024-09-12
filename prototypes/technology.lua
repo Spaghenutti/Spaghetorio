@@ -897,7 +897,8 @@ data:extend({
     },
     prerequisites = {
       "sp-material-science-pack-2",
-      "sp-geological-science-pack-2"
+      "sp-geological-science-pack-2",
+      "sp-catalyst"
     },
     unit =
     {
@@ -1002,7 +1003,7 @@ data:extend({
     type = "technology",
     name = "sp-nickel-alloys",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/duralumin.png",
+    icon = "__Spaghenutti__/graphics/hr-icons/inconel.png",
     effects =
     {
       {
@@ -1338,8 +1339,7 @@ data:extend({
     },
     prerequisites = {
       "sp-sodium-processing",
-      "sp-material-science-pack-2",
-      "sp-chemical-science-pack-2",
+      "sp-niobium-and-tantalum",
       "sp-electronic-science-pack-2",
     },
     unit =
@@ -1421,8 +1421,9 @@ data:extend({
       },
     },
     prerequisites = {
-      "sp-electronic-science-pack-2",
-      "sp-chemical-science-pack-2"
+      "sp-silver-products",
+      "sp-high-purity-silicon-processing",
+      "sp-tellurium-processing"
     },
     unit =
     {
@@ -1519,17 +1520,19 @@ data:extend({
       }
     },
     prerequisites = {
-      "sp-silver-products",
-      "sp-titanium-nitride",
-      "sp-high-purity-silicon-processing"
+      "advanced-electronics-2"
     },
     unit =
     {
-      count = 100,
+      count = 1000,
       ingredients = {
-        {"basic-tech-card", 1},
-        {"automation-science-pack", 1},
-        {"logistic-science-pack", 1}
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-computer-science-pack-2", 1},
+        {"production-science-pack", 1}
       },
       time = 15
     },
@@ -1677,19 +1680,20 @@ data:extend({
       },
     },
     prerequisites = {
-      "sp-chemical-science-pack-2",
-      "sp-geological-science-pack-2"
+      "utility-science-pack"
     },
     unit =
     {
-      count = 100,
+      count = 1000,
       ingredients = {
         {"sp-automation-science-pack-2", 1},
         {"sp-logistic-science-pack-2", 1},
-        {"sp-material-science-pack-2", 1},
         {"sp-chemical-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
+        {"production-science-pack", 1},
         {"sp-geological-science-pack-2", 1},
-        {"production-science-pack", 1}
+        {"sp-electronic-science-pack-2", 1},
+        {"utility-science-pack", 1}
       },
       time = 15
     },
@@ -2290,7 +2294,7 @@ data:extend({
     },
     unit =
     {
-      count = 200,
+      count = 500,
       ingredients = {
         {"sp-automation-science-pack-2", 1},
         {"sp-logistic-science-pack-2", 1},
@@ -2942,19 +2946,22 @@ data:extend({
       },
     },
     prerequisites = {
-      "production-science-pack",
       "sp-aluminum-alloys",
       "sp-niobium-alloys",
       "sp-titanium-nitride"
     },
     unit =
     {
-      count = 100,
+      count = 150,
       ingredients = {
         {"sp-automation-science-pack-2", 1},
         {"sp-logistic-science-pack-2", 1},
-        {"sp-material-science-pack-1", 1},
-        {"production-science-pack", 1}
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
+        {"production-science-pack", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"utility-science-pack", 1}
       },
       time = 15
     },
@@ -3125,7 +3132,7 @@ data:extend({
         recipe = "sp-dynamo"
       },
     },
-    prerequisites = {"sp-electronic-science-pack-2"},
+    prerequisites = {"sp-transformer"},
     unit =
     {
       count = 200,
@@ -3185,12 +3192,16 @@ data:extend({
     prerequisites = {"sp-heavy-ball-bearing"},
     unit =
     {
-      count = 100,
+      count = 250,
       ingredients = {
         {"sp-automation-science-pack-2", 1},
         {"sp-logistic-science-pack-2", 1},
-        {"sp-material-science-pack-1", 1},
-        {"production-science-pack", 1}
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
+        {"production-science-pack", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"utility-science-pack", 1}
       },
       time = 15
     },
@@ -3267,7 +3278,10 @@ data:extend({
         recipe = "sp-catalyst-from-calcium-magnesium"
       },
     },
-    prerequisites = {"sp-calcium-and-fluorine"},
+    prerequisites = {
+      "sp-calcium-and-fluorine",
+      "sp-magnesium-processing"
+    },
     unit =
     {
       count = 100,
@@ -3368,8 +3382,7 @@ data:extend({
       },
     },
     prerequisites = {
-      "logistic-science-pack",
-      "sp-propane-products"
+      "sp-catalyst"
     },
     unit =
     {

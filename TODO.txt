@@ -60,7 +60,7 @@ Low prio
   - Add seal
   - Add bearing
   - Add more than 3 recipes to catalysts
-  - Fix vynil chloride icon
+  - Fix vinyl chloride icon
   - Replace ore icons with factorio base icons
   - Add crushing for ores before smelting. Use icons used for ores by midjourney
   - Add different types of dirty water

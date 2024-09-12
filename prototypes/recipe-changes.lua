@@ -550,10 +550,10 @@ util.change_recipe_ingredients("pump",
   2,
   4)
 util.change_recipe_ingredients("accumulator",
-  {{"battery", 5}, {"copper-cable", 10}, {"iron-plate", 2}, {"sp-transformer", 1}, {"electronic-circuit", 2}},
-  {{"battery", 10}, {"copper-cable", 20}, {"iron-plate", 5}, {"sp-transformer", 1}, {"electronic-circuit", 3}},
-  10,
-  20)
+  {{"battery", 4}, {"sp-capacitor", 6}, {"copper-cable", 10}, {"sp-aluminum-frame", 2}, {"sp-transformer", 1}, {"electronic-circuit", 2}},
+  {{"battery", 10}, {"sp-capacitor", 12}, {"copper-cable", 20}, {"sp-aluminum-frame", 5}, {"sp-transformer", 1}, {"electronic-circuit", 3}},
+  6,
+  12)
 util.change_recipe_ingredients("nuclear-reactor",
   {{"concrete", 500}, {"sp-reactor-core", 1}, {"sp-control-unit", 100}, {"sp-niobium-steel", 300}, {"sp-TiAlSn", 200}, {"sp-heavy-ball-bearing", 20}, {"sp-high-pressure-tank", 40}, {"electric-engine-unit", 10}, {"sp-bolts", 1000}},
   {{"concrete", 2000}, {"sp-reactor-core", 1}, {"sp-control-unit", 200}, {"sp-niobium-steel", 500}, {"sp-TiAlSn", 400}, {"sp-heavy-ball-bearing", 50}, {"sp-high-pressure-tank", 50}, {"electric-engine-unit", 40}, {"sp-bolts", 4000}},
