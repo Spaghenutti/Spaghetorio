@@ -11,9 +11,8 @@ data:extend({
     icon_size = 256,
     mip_maps = 4,
     category = "crushing",
-    subgroup = "processed-resource",
+    subgroup = "crushed-resource",
     enabled = false,
-    hide_from_player_crafting = true,
     energy_required = 6,
     ingredients = {
       {type = "item", name = "sp-aluminum-ore", amount = 3},
@@ -31,9 +30,8 @@ data:extend({
     icon_size = 256,
     mip_maps = 4,
     category = "crushing",
-    subgroup = "processed-resource",
+    subgroup = "crushed-resource",
     enabled = false,
-    hide_from_player_crafting = true,
     energy_required = 4,
     ingredients = {
       {type = "item", name = "sp-chromite", amount = 3},
@@ -51,9 +49,8 @@ data:extend({
     icon = "__Spaghenutti__/graphics/crushing/crushing-coal.png",
     icon_size = 256,
     category = "crushing",
-    subgroup = "processed-resource",
+    subgroup = "crushed-resource",
     enabled = false,
-    hide_from_player_crafting = true,
     energy_required = 1,
     ingredients = {
       {type = "item", name = "coal", amount = 3}
@@ -69,9 +66,8 @@ data:extend({
     icon = "__Spaghenutti__/graphics/crushing/crushing-coke.png",
     icon_size = 256,
     category = "crushing",
-    subgroup = "processed-resource",
+    subgroup = "crushed-resource",
     enabled = false,
-    hide_from_player_crafting = true,
     energy_required = 0.8,
     ingredients = {
       {type = "item", name = "coke", amount = 1}
@@ -87,9 +83,8 @@ data:extend({
     icon_size = 256,
     mip_maps = 4,
     category = "crushing",
-    subgroup = "processed-resource",
+    subgroup = "crushed-resource",
     enabled = false,
-    hide_from_player_crafting = true,
     energy_required = 4,
     ingredients = {
       {type = "item", name = "copper-ore", amount = 6},
@@ -106,9 +101,8 @@ data:extend({
     icon_size = 256,
     mip_maps = 4,
     category = "crushing",
-    subgroup = "processed-resource",
+    subgroup = "crushed-resource",
     enabled = false,
-    hide_from_player_crafting = true,
     energy_required = 4,
     ingredients = {
       {type = "item", name = "iron-ore", amount = 6},
@@ -125,9 +119,8 @@ data:extend({
     icon_size = 256,
     mip_maps = 4,
     category = "crushing",
-    subgroup = "processed-resource",
+    subgroup = "crushed-resource",
     enabled = false,
-    hide_from_player_crafting = true,
     energy_required = 4,
     ingredients = {
       {type = "item", name = "sp-limestone", amount = 2},
@@ -145,9 +138,8 @@ data:extend({
     icon_size = 256,
     mip_maps = 4,
     category = "crushing",
-    subgroup = "processed-resource",
+    subgroup = "crushed-resource",
     enabled = false,
-    hide_from_player_crafting = true,
     energy_required = 5.6,
     ingredients = {
       {type = "item", name = "sp-magnesium-ore", amount = 4},
@@ -165,9 +157,8 @@ data:extend({
     icon_size = 256,
     mip_maps = 4,
     category = "crushing",
-    subgroup = "processed-resource",
+    subgroup = "crushed-resource",
     enabled = false,
-    hide_from_player_crafting = true,
     energy_required = 5,
     ingredients = {
       {type = "item", name = "sp-nickel-ore", amount = 3},
@@ -186,9 +177,8 @@ data:extend({
     icon_size = 256,
     mip_maps = 4,
     category = "crushing",
-    subgroup = "processed-resource",
+    subgroup = "crushed-resource",
     enabled = false,
-    hide_from_player_crafting = true,
     energy_required = 8,
     ingredients = {
       {type = "item", name = "sp-spodumene", amount = 3},
@@ -206,9 +196,8 @@ data:extend({
     icon_size = 256,
     mip_maps = 4,
     category = "crushing",
-    subgroup = "processed-resource",
+    subgroup = "crushed-resource",
     enabled = false,
-    hide_from_player_crafting = true,
     energy_required = 3,
     ingredients = {
       {type = "item", name = "sp-tinstone", amount = 3},
@@ -226,9 +215,8 @@ data:extend({
     icon_size = 256,
     mip_maps = 4,
     category = "crushing",
-    subgroup = "processed-resource",
+    subgroup = "crushed-resource",
     enabled = false,
-    hide_from_player_crafting = true,
     energy_required = 12,
     ingredients = {
       {type = "item", name = "sp-titanium-ore", amount = 3},
@@ -245,9 +233,8 @@ data:extend({
     icon_size = 256,
     mip_maps = 4,
     category = "crushing",
-    subgroup = "processed-resource",
+    subgroup = "crushed-resource",
     enabled = false,
-    hide_from_player_crafting = true,
     energy_required = 10,
     ingredients = {
       {type = "item", name = "sp-tungsten-ore", amount = 3},
@@ -265,9 +252,8 @@ data:extend({
     icon_size = 256,
     mip_maps = 4,
     category = "crushing",
-    subgroup = "processed-resource",
+    subgroup = "crushed-resource",
     enabled = false,
-    hide_from_player_crafting = true,
     energy_required = 3.6,
     ingredients = {
       {type = "item", name = "sp-zinc-ore", amount = 3},
@@ -286,9 +272,8 @@ data:extend({
     icon_size = 256,
     mip_maps = 4,
     category = "crushing",
-    subgroup = "processed-resource",
+    subgroup = "crushed-resource",
     enabled = false,
-    hide_from_player_crafting = true,
     energy_required = 6,
     ingredients = {
       {type = "item", name = "sp-zirconium-ore", amount = 2},
@@ -420,7 +405,29 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-enriched-aluminum", amount = 6},
-      {type = "fluid", name = "dirty-water", amount = 50}
+      {type = "fluid", name = "sp-dirty-water-with-aluminum", amount = 50}
+    }
+  },
+  {
+    type = "recipe",
+    name = "dirty-water-filtration-aluminum",  -- #ForRegEx# - recipe
+    icon = "__Spaghenutti__/graphics/icons/dirty-water-with-aluminum.png",
+    icon_size = 64,
+    mip_maps = 4,
+    category = "fluid-filtration",
+    subgroup = "enriched-resource",
+    enabled = false,
+    hide_from_player_crafting = true,
+    energy_required = 3,
+    ingredients = {
+      {type = "fluid", name = "sp-dirty-water-with-aluminum", amount = 50},
+      {type = "fluid", name = "sp-bleach", amount = 8}
+    },
+    results = {
+      {type = "item", name = "sp-aluminum-ore", probability = 0.5, amount = 2},
+      {type = "item", name = "sp-silver", probability = 0.05, amount = 1},
+      {type = "item", name = "sp-gold", probability = 0.04, amount = 1},
+      {type = "fluid", name = "water", amount = 50}
     }
   },
   {
@@ -456,7 +463,29 @@ data:extend({
     results = {
       {type = "item", name = "iron-ore", amount = 4},
       {type = "item", name = "sp-enriched-chromite", amount = 6},
-      {type = "fluid", name = "dirty-water", amount = 30}
+      {type = "fluid", name = "sp-dirty-water-with-chromite", amount = 30}
+    }
+  },
+  {
+    type = "recipe",
+    name = "dirty-water-filtration-chromite",  -- #ForRegEx# - recipe
+    icon = "__Spaghenutti__/graphics/icons/dirty-water-with-chromite.png",
+    icon_size = 64,
+    mip_maps = 4,
+    category = "fluid-filtration",
+    subgroup = "enriched-resource",
+    enabled = false,
+    hide_from_player_crafting = true,
+    energy_required = 4,
+    ingredients = {
+      {type = "fluid", name = "sp-dirty-water-with-chromite", amount = 50},
+      {type = "fluid", name = "sp-bleach", amount = 5}
+    },
+    results = {
+      {type = "item", name = "sp-chromite", probability = 0.5, amount = 3},
+      {type = "item", name = "sp-tungsten-ore", probability = 0.1, amount = 1},
+      {type = "item", name = "sp-yttrium", probability = 0.03, amount = 1},
+      {type = "fluid", name = "water", amount = 50}
     }
   },
   {
@@ -492,7 +521,29 @@ data:extend({
     results = {
       {type = "item", name = "sp-salt", probability = 0.5, amount = 1},
       {type = "item", name = "sp-enriched-magnesium", amount = 5},
-      {type = "fluid", name = "dirty-water", amount = 20}
+      {type = "fluid", name = "sp-dirty-water-with-magnesium", amount = 20}
+    }
+  },
+  {
+    type = "recipe",
+    name = "dirty-water-filtration-magnesium",  -- #ForRegEx# - recipe
+    icon = "__Spaghenutti__/graphics/icons/dirty-water-with-magnesium.png",
+    icon_size = 64,
+    mip_maps = 4,
+    category = "fluid-filtration",
+    subgroup = "enriched-resource",
+    enabled = false,
+    hide_from_player_crafting = true,
+    energy_required = 3.6,
+    ingredients = {
+      {type = "fluid", name = "sp-dirty-water-with-magnesium", amount = 50},
+      {type = "fluid", name = "sp-bleach", amount = 10}
+    },
+    results = {
+      {type = "item", name = "sp-magnesium-ore", probability = 0.5, amount = 3},
+      {type = "item", name = "lithium", probability = 0.1, amount = 1},
+      {type = "item", name = "sp-yttrium", probability = 0.02, amount = 1},
+      {type = "fluid", name = "water", amount = 50}
     }
   },
   {
@@ -528,7 +579,29 @@ data:extend({
     results = {
       {type = "item", name = "iron-ore", amount = 6},
       {type = "item", name = "sp-enriched-nickel", amount = 5},
-      {type = "fluid", name = "dirty-water", amount = 20}
+      {type = "fluid", name = "sp-dirty-water-with-nickel", amount = 20}
+    }
+  },
+  {
+    type = "recipe",
+    name = "dirty-water-filtration-nickel",  -- #ForRegEx# - recipe
+    icon = "__Spaghenutti__/graphics/icons/dirty-water-with-nickel.png",
+    icon_size = 64,
+    mip_maps = 4,
+    category = "fluid-filtration",
+    subgroup = "enriched-resource",
+    enabled = false,
+    hide_from_player_crafting = true,
+    energy_required = 3,
+    ingredients = {
+      {type = "fluid", name = "sp-dirty-water-with-nickel", amount = 50},
+      {type = "fluid", name = "sp-bleach", amount = 4}
+    },
+    results = {
+      {type = "item", name = "sp-nickel-ore", probability = 0.5, amount = 2},
+      {type = "item", name = "sp-palladium", probability = 0.03, amount = 1},
+      {type = "item", name = "sp-platinum", probability = 0.02, amount = 1},
+      {type = "fluid", name = "water", amount = 50}
     }
   },
   {
@@ -564,7 +637,29 @@ data:extend({
     results = {
       {type = "item", name = "sp-leadstone", amount = 6},
       {type = "item", name = "sp-enriched-tinstone", amount = 5},
-      {type = "fluid", name = "dirty-water", amount = 20}
+      {type = "fluid", name = "sp-dirty-water-with-tin", amount = 20}
+    }
+  },
+  {
+    type = "recipe",
+    name = "dirty-water-filtration-tinstone",  -- #ForRegEx# - recipe
+    icon = "__Spaghenutti__/graphics/icons/dirty-water-with-tin.png",
+    icon_size = 64,
+    mip_maps = 4,
+    category = "fluid-filtration",
+    subgroup = "enriched-resource",
+    enabled = false,
+    hide_from_player_crafting = true,
+    energy_required = 2,
+    ingredients = {
+      {type = "fluid", name = "sp-dirty-water-with-tin", amount = 50},
+      {type = "fluid", name = "sp-bleach", amount = 4}
+    },
+    results = {
+      {type = "item", name = "sp-tinstone", probability = 0.5, amount = 1},
+      {type = "item", name = "sp-leadstone", probability = 0.2, amount = 1},
+      {type = "item", name = "sp-tellurium-hydroxide", probability = 0.01, amount = 1},
+      {type = "fluid", name = "water", amount = 50}
     }
   },
   {
@@ -599,7 +694,30 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-enriched-titanium", amount = 6},
-      {type = "fluid", name = "dirty-water", amount = 50}
+      {type = "item", name = "sp-zirconium-ore", amount = 1},
+      {type = "fluid", name = "sp-dirty-water-with-titanium", amount = 50}
+    }
+  },
+  {
+    type = "recipe",
+    name = "dirty-water-filtration-titanium",  -- #ForRegEx# - recipe
+    icon = "__Spaghenutti__/graphics/icons/dirty-water-with-titanium.png",
+    icon_size = 64,
+    mip_maps = 4,
+    category = "fluid-filtration",
+    subgroup = "enriched-resource",
+    enabled = false,
+    hide_from_player_crafting = true,
+    energy_required = 4,
+    ingredients = {
+      {type = "fluid", name = "sp-dirty-water-with-titanium", amount = 50},
+      {type = "fluid", name = "sp-bleach", amount = 4},
+    },
+    results = {
+      {type = "item", name = "sp-titanium-ore", probability = 0.5, amount = 2},
+      {type = "item", name = "sp-lanthanum", probability = 0.06, amount = 1},
+      {type = "item", name = "sp-cerium", probability = 0.02, amount = 1},
+      {type = "fluid", name = "water", amount = 50}
     }
   },
   {
@@ -634,7 +752,31 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-enriched-tungsten", amount = 5},
-      {type = "fluid", name = "dirty-water", amount = 35}
+      {type = "item", name = "sp-chromite", probability = 0.7, amount = 1},
+      {type = "fluid", name = "sp-dirty-water-with-tungsten", amount = 35}
+    }
+  },
+  {
+    type = "recipe",
+    name = "dirty-water-filtration-tungsten",  -- #ForRegEx# - recipe
+    icon = "__Spaghenutti__/graphics/icons/dirty-water-with-tungsten.png",
+    icon_size = 64,
+    mip_maps = 4,
+    category = "fluid-filtration",
+    subgroup = "enriched-resource",
+    enabled = false,
+    hide_from_player_crafting = true,
+    energy_required = 3,
+    ingredients = {
+      {type = "fluid", name = "sp-dirty-water-with-tungsten", amount = 50},
+      {type = "fluid", name = "sp-bleach", amount = 6}
+    },
+    results = {
+      {type = "item", name = "sp-tungsten-ore", probability = 0.5, amount = 2},
+      {type = "item", name = "sp-neodymium", probability = 0.03, amount = 1},
+      {type = "item", name = "sp-cerium", probability = 0.02, amount = 1},
+      {type = "item", name = "sp-iridium", probability = 0.02, amount = 1},
+      {type = "fluid", name = "water", amount = 50}
     }
   },
   {
@@ -669,7 +811,29 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-enriched-zinc", amount = 7},
-      {type = "fluid", name = "dirty-water", amount = 40}
+      {type = "fluid", name = "sp-dirty-water-with-zinc", amount = 40}
+    }
+  },
+  {
+    type = "recipe",
+    name = "dirty-water-filtration-zinc",  -- #ForRegEx# - recipe
+    icon = "__Spaghenutti__/graphics/icons/dirty-water-with-zinc.png",
+    icon_size = 64,
+    mip_maps = 4,
+    category = "fluid-filtration",
+    subgroup = "enriched-resource",
+    enabled = false,
+    hide_from_player_crafting = true,
+    energy_required = 4,
+    ingredients = {
+      {type = "fluid", name = "sp-dirty-water-with-zinc", amount = 50},
+      {type = "fluid", name = "sp-bleach", amount = 5}
+    },
+    results = {
+      {type = "item", name = "sp-zinc-ore", probability = 0.5, amount = 3},
+      {type = "item", name = "sp-silver", probability = 0.05, amount = 1},
+      {type = "item", name = "sp-neodymium", probability = 0.03, amount = 1},
+      {type = "fluid", name = "water", amount = 50}
     }
   },
   {
@@ -1187,6 +1351,17 @@ data.raw.recipe["sp-computer-science-pack-2"].category = "t2-tech-cards"
 
 -- MARK: change subgroup
 data.raw.recipe["quartz"].subgroup = "processed-resource"
+
+data.raw.recipe["enriched-iron"].subgroup = "enriched-resource"
+data.raw.recipe["enriched-copper"].subgroup = "enriched-resource"
+data.raw.recipe["enriched-rare-metals"].subgroup = "enriched-resource"
+
+data.raw.recipe["dirty-water-filtration-1"].subgroup = "enriched-resource"
+data.raw.recipe["dirty-water-filtration-1"].hide_from_player_crafting = true
+data.raw.recipe["dirty-water-filtration-2"].subgroup = "enriched-resource"
+data.raw.recipe["dirty-water-filtration-2"].hide_from_player_crafting = true
+data.raw.recipe["dirty-water-filtration-3"].subgroup = "enriched-resource"
+data.raw.recipe["dirty-water-filtration-3"].hide_from_player_crafting = true
 
 -- MARK: base crafting changes
 data.raw.recipe["steel-beam"].category = "smelting"

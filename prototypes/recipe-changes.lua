@@ -537,8 +537,8 @@ util.change_recipe_ingredients("oil-refinery",
   30,
   45)
 util.change_recipe_ingredients("centrifuge",
-  {{"concrete", 20}, {"electric-motor", 12}, {"sp-bolts", 20}, {"sp-gearbox", 6}, {"sp-stainless-steel", 20}, {"sp-duralumin", 12}, {"sp-tungsten-carbide", 6}, {"sp-heavy-ball-bearing", 2}},
-  {{"concrete", 50}, {"electric-motor", 20}, {"sp-bolts", 40}, {"sp-gearbox", 20}, {"sp-stainless-steel", 40}, {"sp-duralumin", 25}, {"sp-tungsten-carbide", 12}, {"sp-heavy-ball-bearing", 2}},
+  {{"concrete", 20}, {"electric-engine-unit", 12}, {"sp-bolts", 20}, {"sp-heavy-gearbox", 6}, {"sp-stainless-steel", 20}, {"sp-invar", 10}, {"sp-duralumin", 12}, {"sp-tungsten-carbide", 6}, {"sp-heavy-ball-bearing", 2}},
+  {{"concrete", 50}, {"electric-engine-unit", 20}, {"sp-bolts", 40}, {"sp-heavy-gearbox", 20}, {"sp-stainless-steel", 40}, {"sp-invar", 20}, {"sp-duralumin", 25}, {"sp-tungsten-carbide", 12}, {"sp-heavy-ball-bearing", 2}},
   20,
   40)
 util.change_recipe_ingredients("beacon",

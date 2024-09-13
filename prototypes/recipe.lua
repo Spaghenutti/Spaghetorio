@@ -1755,6 +1755,7 @@ data:extend({
     type = "recipe",
     name = "sp-coolant",  -- #ForRegEx# - recipe
     category = "chemistry",
+    subgroup = "fluid-recipes",
     enabled = false,
     energy_required = 3.2,
     ingredients = {
@@ -2236,7 +2237,9 @@ data:extend({
       {type = "item", name = "sp-plate-heat-exchanger", amount = 4},
       {type = "item", name = "sp-valve", amount = 16},
       {type = "item", name = "sp-flange", amount = 6},
-      {type = "item", name = "sp-high-pressure-tank", amount = 3}
+      {type = "item", name = "sp-high-pressure-tank", amount = 3},
+      {type = "item", name = "sp-stainless-steel", amount = 20},
+      {type = "item", name = "sp-niobium-tin", amount = 5},
     },
     results = {
       {type = "item", name = "sp-reactor-core", amount = 1}

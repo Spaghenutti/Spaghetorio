@@ -132,12 +132,7 @@ data.raw.technology["coal-liquefaction"].unit.ingredients = {
   {"production-science-pack", 1}
 }
 
-table.insert(data.raw.technology["nuclear-power"].effects, {type = "unlock-recipe", recipe = "sp-reactor-core"})
-table.insert(data.raw.technology["nuclear-power"].effects, {type = "unlock-recipe", recipe = "sp-control-rod"})
-table.insert(data.raw.technology["nuclear-power"].effects, {type = "unlock-recipe", recipe = "sp-uranium-fuel-rod"})
-table.insert(data.raw.technology["nuclear-power"].effects, {type = "unlock-recipe", recipe = "sp-empty-fuel-rod"})
-table.insert(data.raw.technology["nuclear-power"].prerequisites, "sp-turbine-parts")
-data.raw.technology["coal-liquefaction"].unit.ingredients = {
+data.raw.technology["kovarex-enrichment-process"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},
   {"sp-logistic-science-pack-2", 1},
   {"sp-material-science-pack-2", 1},
@@ -148,6 +143,21 @@ data.raw.technology["coal-liquefaction"].unit.ingredients = {
   {"utility-science-pack", 1}
 }
 
+table.insert(data.raw.technology["nuclear-power"].effects, {type = "unlock-recipe", recipe = "sp-reactor-core"})
+table.insert(data.raw.technology["nuclear-power"].effects, {type = "unlock-recipe", recipe = "sp-control-rod"})
+table.insert(data.raw.technology["nuclear-power"].effects, {type = "unlock-recipe", recipe = "sp-uranium-fuel-rod"})
+table.insert(data.raw.technology["nuclear-power"].effects, {type = "unlock-recipe", recipe = "sp-empty-fuel-rod"})
+table.insert(data.raw.technology["nuclear-power"].prerequisites, "sp-turbine-parts")
+data.raw.technology["nuclear-power"].unit.ingredients = {
+  {"sp-automation-science-pack-2", 1},
+  {"sp-logistic-science-pack-2", 1},
+  {"sp-material-science-pack-2", 1},
+  {"sp-electronic-science-pack-2", 1},
+  {"sp-geological-science-pack-2", 1},
+  {"sp-chemical-science-pack-2", 1},
+  {"production-science-pack", 1},
+  {"utility-science-pack", 1}
+}
 
 table.insert(data.raw.technology["automation-2"].prerequisites, "sp-heatsink")
 table.insert(data.raw.technology["automation-2"].prerequisites, "sp-material-science-pack-1")
@@ -664,7 +674,9 @@ data.raw.technology["rocket-fuel"].unit.ingredients = {
   {"sp-astronomical-science-pack-2", 1}
 }
 
-data.raw.technology["uranium-processing"].prerequisites = {"utility-science-pack"}
+data.raw.technology["uranium-processing"].prerequisites = {
+  "sp-advanced-gearbox"
+}
 data.raw.technology["uranium-processing"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},
   {"sp-logistic-science-pack-2", 1},
