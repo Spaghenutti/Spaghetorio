@@ -1962,7 +1962,7 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "smelting",
-    subgroup = "raw-resource",
+    subgroup = "processed-resource",
     enabled = false,
     energy_required = 3.6,
     ingredients = {

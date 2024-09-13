@@ -3734,11 +3734,21 @@ data:extend({
         recipe = "sp-yemnuth-to-blunagium-acrosphere"
       },
     },
-    prerequisites = {"sp-logistic-science-pack-3"},
+    prerequisites = {"sp-astronomical-science-pack-3"},
     unit =
     {
-      count = 100,
-      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      count = 2000,
+      ingredients = {
+        {"sp-automation-science-pack-3", 1},
+        {"sp-logistic-science-pack-3", 1},
+        {"sp-material-science-pack-3", 1},
+        {"sp-electronic-science-pack-3", 1},
+        {"sp-chemical-science-pack-3", 1},
+        {"sp-computer-science-pack-2", 1},
+        {"sp-production-science-pack-3", 1},
+        {"utility-science-pack", 1},
+        {"sp-astronomical-science-pack-3", 1}
+      },
       time = 15
     },
     order = "a-h-a"

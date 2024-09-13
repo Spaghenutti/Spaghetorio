@@ -1239,6 +1239,7 @@ table.insert(data.raw.recipe["sp-vacuum-tube"].ingredients, {type = "item", name
 table.insert(data.raw.recipe["sp-vacuum-tube"].ingredients, {type = "fluid", name = "hydrogen", amount = 5})
 table.insert(data.raw.recipe["sp-pressure-tube"].ingredients, {type = "item", name = "glass", amount = 1})
 table.insert(data.raw.recipe["sp-liquid-nitrogen"].ingredients, {type = "fluid", name = "nitrogen", amount = 5})
+table.insert(data.raw.recipe["battery-mk2-equipment"].ingredients, {"lithium-sulfur-battery", 20})
 table.insert(data.raw.recipe["sp-chronomatter"].ingredients, {type = "item", name = "imersite-powder", amount = 4})
 table.insert(data.raw.recipe["sp-bioreactor"].ingredients, {type = "item", name = "biomass", amount = 10})
 table.insert(data.raw.recipe["sp-grobgnum-explorer"].ingredients, {type = "item", name = "ai-core", amount = 20})
@@ -1757,6 +1758,13 @@ util.change_recipe_ingredients("kr-advanced-radar",
   30,
   60)
 
+-- MARK: Krastorio vehicle
+util.change_recipe_ingredients("kr-nuclear-locomotive",
+  {{"sp-control-unit", 16}, {"sp-reactor-core", 1}, {"sp-compressor", 2}, {"electric-engine-unit", 8}, {"sp-stainless-steel", 40}, {"sp-aluminum-brass", 10}, {"sp-train-boige", 4}, {"small-lamp", 2}},
+  {{"sp-control-unit", 30}, {"sp-reactor-core", 1}, {"sp-compressor", 4}, {"electric-engine-unit", 12}, {"sp-stainless-steel", 60}, {"sp-aluminum-brass", 20}, {"sp-train-boige", 6}, {"small-lamp", 4}},
+  40,
+  80)
+
 -- MARK: Krastorio equipment
 util.change_recipe_ingredients("power-armor-mk3",
   {{"iron-plate", 69}},
@@ -1778,6 +1786,11 @@ util.change_recipe_ingredients("big-battery-equipment",
   {{"battery-equipment", 6}, {"sp-aluminum-frame", 6}, {"sp-bolts", 10}, {"sp-insulated-wire", 10}, {"sp-heatsink", 2}},
   10,
   15)
+util.change_recipe_ingredients("big-battery-mk2-equipment",
+  {{"battery-mk2-equipment", 4}, {"sp-titanium-frame", 3}, {"sp-insulated-wire", 4}, {"sp-heatsink", 4}, {"sp-insulation-sheet", 2}},
+  {{"battery-mk2-equipment", 6}, {"sp-titanium-frame", 6}, {"sp-insulated-wire", 10}, {"sp-heatsink", 6}, {"sp-insulation-sheet", 3}},
+  15,
+  30)
 util.change_recipe_ingredients("small-portable-generator",
   {{"engine-unit", 1}, {"sp-machined-parts", 6}, {"sp-electromagnet", 2}, {"sp-insulated-wire", 2}},
   {{"engine-unit", 2}, {"sp-machined-parts", 8}, {"sp-electromagnet", 6}, {"sp-insulated-wire", 4}},

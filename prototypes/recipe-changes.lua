@@ -418,9 +418,10 @@ util.change_recipe_ingredients("battery-equipment",
   {{"battery", 6}, {"sp-aluminum-frame", 2}, {"sp-bolts", 10}, {"sp-insulated-wire", 4}},
   4,
   6)
+-- Base: {"battery", 20}; Krastorio {"lithium-sulfur-battery", 20}
 util.change_recipe_ingredients("battery-mk2-equipment",
-  {{"battery", 20}, {"sp-integrated-circuit", 5}, {"sp-circuit-board", 1}, {"sp-composites", 5}, {"sp-capacitor", 2}},
-  {{"battery", 30}, {"sp-integrated-circuit", 8}, {"sp-circuit-board", 2}, {"sp-composites", 10}, {"sp-capacitor", 4}},
+  {{"sp-integrated-circuit", 5}, {"processing-unit", 1}, {"sp-composites", 5}, {"sp-capacitor", 2}, {"sp-insulated-wire", 2}},
+  {{"sp-integrated-circuit", 8}, {"processing-unit", 2}, {"sp-composites", 10}, {"sp-capacitor", 4}, {"sp-insulated-wire", 4}},
   6,
   10)
 util.change_recipe_ingredients("solar-panel-equipment",
@@ -718,6 +719,7 @@ if not mods["Krastorio2"] then
   table.insert(data.raw.recipe["rail"].ingredients, {"steel-plate", 4})
   table.insert(data.raw.recipe["train-stop"].ingredients, {"steel-plate", 12})
   table.insert(data.raw.recipe["oil-refinery"].ingredients, {"sp-glass", 20})
+  table.insert(data.raw.recipe["battery-mk2-equipment"].ingredients, {"battery", 20})
   table.insert(data.raw.recipe["satellite"].ingredients, {"battery", 20})
   table.insert(data.raw.recipe["sp-geological-science-pack-1"].ingredients, {"sp-sand", 10})
   table.insert(data.raw.recipe["sp-geological-science-pack-1"].ingredients, {"sp-quartz", 5})
