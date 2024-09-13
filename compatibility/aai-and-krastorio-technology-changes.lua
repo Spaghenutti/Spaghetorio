@@ -347,6 +347,16 @@ data.raw.technology["kr-portable-generator"].unit.ingredients = {
   {"production-science-pack", 1}
 }
 
+data.raw.technology["kr-nuclear-reactor-equipment"].unit.ingredients = {
+  {"sp-automation-science-pack-2", 1},
+  {"sp-logistic-science-pack-2", 1},
+  {"sp-chemical-science-pack-2", 1},
+  {"sp-geological-science-pack-2", 1},
+  {"sp-material-science-pack-2", 1},
+  {"production-science-pack", 1},
+  {"utility-science-pack", 1}
+}
+
 data.raw.technology["kr-robot-battery"].prerequisites = {
   "construction-robotics",
   "logistic-robotics"

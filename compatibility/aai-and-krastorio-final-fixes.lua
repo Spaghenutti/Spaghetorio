@@ -1,4 +1,5 @@
 local util = require("data-util")
+local remove_prototypes = require("remove-prototypes")
 
 -- change stone furnace back to furnace type
 -- data.raw["assembling-machine"]["stone-furnace"].type = "furnace"
@@ -117,6 +118,8 @@ data.raw.recipe["kr-grow-wood-plus"].hide_from_player_crafting = true
 data.raw.recipe["uranium-fuel-cell"].hidden = true
 data.raw.item["uranium-fuel-cell"].flags = {"hidden"}
 data.raw.item["used-up-uranium-fuel-cell"].flags = {"hidden"}
+remove_prototypes.remove_one_prototype("recipe", "nuclear-fuel-reprocessing")
+data.raw.technology["nuclear-fuel-reprocessing"] = nil
 
 -- Hide electronic components recipe
 data.raw.recipe["electronic-components"].hidden = true

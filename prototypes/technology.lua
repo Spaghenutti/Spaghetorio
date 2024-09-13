@@ -2081,7 +2081,9 @@ data:extend({
         recipe = "sp-plutonium-240-fuel-rod"
       },
     },
-    prerequisites = {"nuclear-power"},
+    prerequisites = {
+      "sp-plutonium-processing"
+    },
     unit =
     {
       count = 1000,
@@ -2114,7 +2116,9 @@ data:extend({
         recipe = "sp-nuclear-waste-processing"
       },
     },
-    prerequisites = {"nuclear-power"},
+    prerequisites = {
+      "nuclear-power"
+    },
     unit =
     {
       count = 1000,
@@ -2144,11 +2148,22 @@ data:extend({
         recipe = "sp-advanced-nuclear-waste-processing"
       },
     },
-    prerequisites = {"sp-nuclear-waste-processing"},
+    prerequisites = {
+      "sp-nuclear-waste-processing",
+      "sp-plutonium-fuel-rod"
+    },
     unit =
     {
-      count = 100,
-      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      count = 2000,
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"production-science-pack", 1},
+        {"utility-science-pack", 1}
+      },
       time = 15
     },
     order = "a-h-a"

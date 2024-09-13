@@ -595,8 +595,8 @@ util.change_recipe_ingredients("accumulator",
   6,
   12)
 util.change_recipe_ingredients("nuclear-reactor",
-  {{"concrete", 500}, {"sp-reactor-core", 1}, {"sp-control-unit", 100}, {"sp-niobium-steel", 300}, {"sp-TiAlSn", 200}, {"sp-heavy-ball-bearing", 20}, {"sp-high-pressure-tank", 40}, {"electric-engine-unit", 10}, {"sp-bolts", 1000}},
-  {{"concrete", 2000}, {"sp-reactor-core", 1}, {"sp-control-unit", 200}, {"sp-niobium-steel", 500}, {"sp-TiAlSn", 400}, {"sp-heavy-ball-bearing", 50}, {"sp-high-pressure-tank", 50}, {"electric-engine-unit", 40}, {"sp-bolts", 4000}},
+  {{"refined-concrete", 500}, {"sp-reactor-core", 1}, {"sp-plate-heat-exchanger", 40}, {"sp-control-unit", 100}, {"sp-niobium-steel", 300}, {"sp-TiAlSn", 200}, {"sp-heavy-ball-bearing", 20}, {"sp-high-pressure-tank", 40}, {"electric-engine-unit", 10}, {"sp-bolts", 1000}},
+  {{"refined-concrete", 2000}, {"sp-reactor-core", 1}, {"sp-plate-heat-exchanger", 80}, {"sp-control-unit", 200}, {"sp-niobium-steel", 500}, {"sp-TiAlSn", 400}, {"sp-heavy-ball-bearing", 50}, {"sp-high-pressure-tank", 50}, {"electric-engine-unit", 40}, {"sp-bolts", 4000}},
   500,
   2000)
 -- Base: {"sp-lithium", 10}; Krastorio {"lithium", 10}

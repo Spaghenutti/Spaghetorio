@@ -1793,6 +1793,11 @@ util.change_recipe_ingredients("big-solar-panel-equipment",
   {{"solar-panel", 6}, {"sp-bolts", 24}, {"advanced-circuit", 12}, {"sp-titanium-frame", 5}, {"sp-insulated-wire", 8}},
   20,
   30)
+util.change_recipe_ingredients("nuclear-reactor-equipment",
+  {{"sp-reactor-core", 1}, {"sp-control-unit", 20}, {"sp-insulation-sheet", 10}, {"sp-kevlar", 5}, {"sp-niobium-steel", 4}, {"sp-ceramic-matrix-composites", 6}},
+  {{"sp-reactor-core", 1}, {"sp-control-unit", 40}, {"sp-insulation-sheet", 16}, {"sp-kevlar", 10}, {"sp-niobium-steel", 8}, {"sp-ceramic-matrix-composites", 12}},
+  30,
+  60)
 
 -- MARK: AAI Industries Buildings
 util.change_recipe_ingredients("burner-turbine",

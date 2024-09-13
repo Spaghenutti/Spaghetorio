@@ -19,5 +19,14 @@ data:extend({
       setting_type = "startup",
       default_value = 10,
       order = "ac"
-  }
+  },
+  -- Needed for removing prototypes -- Source: https://github.com/sparr/factorio-mod-remove-prototypes/blob/master/settings.lua
+  {
+    type = "string-setting",
+    name = "remove-prototypes-prototype-list",
+    setting_type = "startup",
+    admin = true,
+    default_value = "",
+    allow_blank = true
+  },
 })
