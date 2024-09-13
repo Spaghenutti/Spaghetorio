@@ -1982,10 +1982,13 @@ data:extend({
     enabled = false,
     energy_required = 6,
     ingredients = {
-      {type = "item", name = "sp-stainless-steel", amount = 5}
+      {type = "item", name = "sp-stainless-steel", amount = 5},
+      {type = "item", name = "sp-chromium-plate", amount = 1},
+      {type = "item", name = "sp-zirconium-rod", amount = 2},
+      {type = "item", name = "sp-titanium-plate", amount = 1},
     },
     results = {
-      {type = "item", name = "sp-turbine-blade", amount = 1}
+      {type = "item", name = "sp-turbine-blade", amount = 3}
     }
   },
   {
@@ -1997,10 +2000,12 @@ data:extend({
     enabled = false,
     energy_required = 8,
     ingredients = {
-      {type = "item", name = "sp-TiAlSn", amount = 6}
+      {type = "item", name = "sp-TiAlSn", amount = 6},
+      {type = "item", name = "sp-cobalt-billet", amount = 1},
+      {type = "item", name = "sp-tantalum-billet", amount = 2}
     },
     results = {
-      {type = "item", name = "sp-turbine-blade", amount = 2}
+      {type = "item", name = "sp-turbine-blade", amount = 3}
     }
   },
   {
@@ -2049,7 +2054,7 @@ data:extend({
       {type = "item", name = "sp-turbine-blade", amount = 10},
       {type = "item", name = "sp-ceramics", amount = 2},
       {type = "item", name = "sp-stainless-steel", amount = 3},
-      {type = "item", name = "sp-tungsten-slab", amount = 3},
+      {type = "item", name = "sp-tungsten-carbide", amount = 3},
       {type = "item", name = "sp-bolts", amount = 8}
     },
     results = {
@@ -2113,7 +2118,8 @@ data:extend({
       {type = "item", name = "sp-fuel-injector", amount = 20},
       {type = "item", name = "sp-tungsten-slab", amount = 2},
       {type = "item", name = "sp-inconel", amount = 3},
-      {type = "item", name = "sp-bolts", amount = 4}
+      {type = "item", name = "sp-bolts", amount = 4},
+      {type = "item", name = "sp-spark-plug", amount = 1},
     },
     results = {
       {type = "item", name = "sp-combustion-chamber", amount = 1}
@@ -2142,10 +2148,13 @@ data:extend({
     enabled = false,
     energy_required = 4,
     ingredients = {
-      {type = "item", name = "sp-titanium-frame", amount = 2},
-      {type = "item", name = "sp-machined-parts", amount = 6},
+      {type = "item", name = "sp-titanium-frame", amount = 5},
+      {type = "item", name = "sp-machined-parts", amount = 8},
+      {type = "item", name = "sp-phosphorus", amount = 1},
+      {type = "item", name = "sp-tungsten-slab", amount = 2},
+      {type = "item", name = "sp-insulation-sheet", amount = 2},
       {type = "item", name = "solid-fuel", amount = 10},
-      {type = "item", name = "sp-phosphorus", amount = 1}
+      {type = "item", name = "rocket-fuel", amount = 16}
     },
     results = {
       {type = "item", name = "sp-solid-rocket-motor", amount = 1}
@@ -2792,6 +2801,7 @@ data:extend({
       {type = "item", name = "sp-lens", amount = 5},
       {type = "item", name = "sp-cmos", amount = 1},
       {type = "item", name = "sp-mirror", amount = 2},
+      {type = "item", name = "sp-infrared-filter", amount = 1},
     },
     results = {
       {type = "item", name = "sp-optical-sensor", amount = 1}
@@ -3333,7 +3343,7 @@ data:extend({
       {type = "item", name = "sp-yttrium", amount = 1},
       {type = "item", name = "sp-inconel", amount = 10},
       {type = "item", name = "sp-duralumin", amount = 3},
-      {type = "item", name = "processing-unit", amount = 5},
+      {type = "item", name = "rocket-control-unit", amount = 5},
       {type = "item", name = "sp-electrode", amount = 10},
       {type = "item", name = "sp-electromagnet", amount = 4},
       {type = "fluid", name = "sp-xenon", amount = 20}

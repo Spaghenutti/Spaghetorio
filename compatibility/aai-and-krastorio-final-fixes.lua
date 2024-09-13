@@ -45,10 +45,13 @@ util.change_recipe_ingredients("production-science-pack",
   20,
   30)
 util.change_recipe_ingredients("utility-science-pack",
-  {{"copper-plate", 69}, {"blank-tech-card", 5}},
-  {{"copper-plate", 69}, {"blank-tech-card", 5}},
-  20,
-  30)
+  {{"electric-furnace", 1}, {"kr-electric-mining-drill-mk2", 1}, {"assembling-machine-2", 1}, {"kr-research-server", 1}},
+  {{"electric-furnace", 2}, {"kr-electric-mining-drill-mk2", 2}, {"assembling-machine-2", 2}, {"kr-research-server", 1}},
+  80,
+  120)
+data.raw.recipe["utility-science-pack"].results = {
+  {type = "item", name = "utility-science-pack", amount = 20}
+}
 util.change_recipe_ingredients("matter-tech-card",
   {{"copper-plate", 69}, {"blank-tech-card", 5}},
   {{"copper-plate", 69}, {"blank-tech-card", 5}},

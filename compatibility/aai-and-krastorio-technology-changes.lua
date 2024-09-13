@@ -175,6 +175,7 @@ table.insert(data.raw.technology["kr-silicon-processing"].unit.ingredients, {"sp
 table.insert(data.raw.technology["kr-silicon-processing"].unit.ingredients, {"sp-electronic-science-pack-1", 1})
 
 table.insert(data.raw.technology["kr-enriched-ores"].prerequisites, "utility-science-pack")
+table.insert(data.raw.technology["kr-enriched-ores"].prerequisites, "kr-rare-metals")
 table.insert(data.raw.technology["kr-enriched-ores"].effects, {type = "unlock-recipe", recipe = "sp-enriched-aluminum"})
 table.insert(data.raw.technology["kr-enriched-ores"].effects, {type = "unlock-recipe", recipe = "sp-alumina-from-enriched-aluminum"})
 table.insert(data.raw.technology["kr-enriched-ores"].effects, {type = "unlock-recipe", recipe = "sp-enriched-chromite"})
@@ -228,7 +229,12 @@ data.raw.technology["kr-electric-mining-drill-mk2"].unit.ingredients = {
   {"production-science-pack", 1}
 }
 
-data.raw.technology["kr-electric-mining-drill-mk3"].prerequisites = {"utility-science-pack"}
+data.raw.technology["kr-electric-mining-drill-mk3"].prerequisites = {
+  "sp-invar",
+  "sp-niobium-alloys",
+  "sp-diamond",
+  "sp-advanced-gearbox",
+}
 data.raw.technology["kr-electric-mining-drill-mk3"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},
   {"sp-logistic-science-pack-2", 1},
@@ -240,16 +246,20 @@ data.raw.technology["kr-electric-mining-drill-mk3"].unit.ingredients = {
   {"utility-science-pack", 1}
 }
 
-data.raw.technology["kr-quarry-minerals-extraction"].prerequisites = {"kr-electric-mining-drill-mk3"}
+data.raw.technology["kr-quarry-minerals-extraction"].prerequisites = {
+  "kr-electric-mining-drill-mk3",
+  "sp-automation-science-pack-3"
+}
 data.raw.technology["kr-quarry-minerals-extraction"].unit.ingredients = {
-  {"sp-automation-science-pack-2", 1},
+  {"sp-automation-science-pack-3", 1},
   {"sp-logistic-science-pack-2", 1},
   {"sp-material-science-pack-2", 1},
   {"sp-chemical-science-pack-2", 1},
   {"sp-geological-science-pack-2", 1},
   {"production-science-pack", 1},
   {"sp-electronic-science-pack-2", 1},
-  {"utility-science-pack", 1}
+  {"utility-science-pack", 1},
+  {"sp-computer-science-pack-2", 1}
 }
 
 data.raw.technology["kr-advanced-chemistry"].unit.ingredients = {
@@ -373,7 +383,8 @@ data.raw.technology["kr-research-server"].prerequisites = {
   "kr-lithium-sulfur-battery",
   "kr-advanced-lab",
   "sp-dynamo",
-  "sp-titanium-alloys"
+  "sp-titanium-alloys",
+  "sp-electrode"
 }
 data.raw.technology["kr-research-server"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},
@@ -384,6 +395,25 @@ data.raw.technology["kr-research-server"].unit.ingredients = {
   {"sp-chemical-science-pack-2", 1},
   {"production-science-pack", 1}
 }
+
+data.raw.technology["advanced-radar"].prerequisites = {
+  "sp-semiconductor",
+  "utility-science-pack",
+  "sp-control-unit",
+  "sp-advanced-gearbox"
+}
+data.raw.technology["advanced-radar"].unit.ingredients = {
+  {"sp-automation-science-pack-2", 1},
+  {"sp-logistic-science-pack-2", 1},
+  {"sp-material-science-pack-2", 1},
+  {"sp-geological-science-pack-2", 1},
+  {"sp-electronic-science-pack-2", 1},
+  {"sp-chemical-science-pack-2", 1},
+  {"production-science-pack", 1},
+  {"utility-science-pack", 1},
+  {"sp-computer-science-pack-2", 1}
+}
+
 
 data.raw.technology["kr-mineral-water-gathering"].prerequisites = {
   "sp-geological-science-pack-2",
@@ -406,6 +436,7 @@ data.raw.technology["kr-logistic-containers-1"].unit.ingredients = {
   {"sp-material-science-pack-2", 1},
   {"production-science-pack", 1}
 }
+
 table.insert(data.raw.technology["kr-tesla-coil"].prerequisites, "sp-nickel-alloys")
 table.insert(data.raw.technology["kr-tesla-coil"].prerequisites, "sp-titanium-alloys")
 data.raw.technology["kr-tesla-coil"].unit.ingredients = {
@@ -416,6 +447,55 @@ data.raw.technology["kr-tesla-coil"].unit.ingredients = {
   {"sp-geological-science-pack-2", 1},
   {"sp-chemical-science-pack-2", 1},
   {"production-science-pack", 1}
+}
+
+data.raw.technology["kr-advanced-additional-engine"].unit.ingredients = {
+  {"sp-automation-science-pack-2", 1},
+  {"sp-logistic-science-pack-2", 1},
+  {"sp-material-science-pack-2", 1},
+  {"sp-electronic-science-pack-2", 1},
+  {"sp-chemical-science-pack-2", 1},
+  {"sp-computer-science-pack-2", 1},
+  {"production-science-pack", 1},
+  {"utility-science-pack", 1}
+}
+
+data.raw.technology["kr-advanced-exoskeleton-equipment"].unit.ingredients = {
+  {"sp-automation-science-pack-2", 1},
+  {"sp-logistic-science-pack-2", 1},
+  {"sp-material-science-pack-2", 1},
+  {"sp-electronic-science-pack-2", 1},
+  {"sp-chemical-science-pack-2", 1},
+  {"sp-computer-science-pack-2", 1},
+  {"production-science-pack", 1},
+  {"utility-science-pack", 1}
+}
+
+table.insert(data.raw.technology["kr-logistic-containers-2"].prerequisites, "sp-control-unit")
+data.raw.technology["kr-logistic-containers-2"].unit.ingredients = {
+  {"sp-automation-science-pack-2", 1},
+  {"sp-logistic-science-pack-2", 1},
+  {"sp-material-science-pack-2", 1},
+  {"sp-electronic-science-pack-2", 1},
+  {"sp-chemical-science-pack-2", 1},
+  {"sp-computer-science-pack-2", 1},
+  {"production-science-pack", 1},
+  {"utility-science-pack", 1}
+}
+
+table.insert(data.raw.technology["kr-logistic-4"].prerequisites, "low-density-structure")
+table.insert(data.raw.technology["kr-logistic-4"].prerequisites, "sp-invar")
+table.insert(data.raw.technology["kr-logistic-4"].prerequisites, "sp-titanium-alloys")
+table.insert(data.raw.technology["kr-logistic-4"].prerequisites, "sp-aluminum-alloys")
+data.raw.technology["kr-logistic-4"].unit.ingredients = {
+  {"sp-automation-science-pack-2", 1},
+  {"sp-logistic-science-pack-2", 1},
+  {"sp-material-science-pack-2", 1},
+  {"sp-electronic-science-pack-2", 1},
+  {"sp-chemical-science-pack-2", 1},
+  {"sp-computer-science-pack-2", 1},
+  {"production-science-pack", 1},
+  {"utility-science-pack", 1}
 }
 
 -- MARK: Krastorio infinite techs
@@ -489,7 +569,19 @@ data.raw.technology["industrial-furnace"].unit.ingredients = {
 }
 
 data.raw.technology["area-mining-drill"].prerequisites = {
-  "kr-electric-mining-drill-mk3",
+  "kr-quarry-minerals-extraction",
+  "sp-production-science-pack-3",
+  "sp-geological-science-pack-3"
+}
+data.raw.technology["area-mining-drill"].unit.ingredients = {
+  {"sp-automation-science-pack-3", 1},
+  {"sp-logistic-science-pack-2", 1},
+  {"sp-material-science-pack-2", 1},
+  {"sp-electronic-science-pack-2", 1},
+  {"sp-geological-science-pack-3", 1},
+  {"sp-chemical-science-pack-2", 1},
+  {"sp-production-science-pack-3", 1},
+  {"utility-science-pack", 1}
 }
 
 data.raw.technology["toolbelt-3"].effects = {

@@ -48,6 +48,11 @@ util.change_recipe_ingredients("processing-unit",
   {{"sp-circuit-board", 1}, {"sp-integrated-circuit", 6}, {"sp-memory-chip", 6}},
   1.6,
   3)
+util.change_recipe_ingredients("rocket-control-unit",
+  {{"processing-unit", 4}, {"sp-processor", 3}, {"sp-antenna-chip", 3}, {"sp-anodized-aluminum", 2}, {"sp-glass-fiber", 5}, {"sp-insulated-wire", 5}},
+  {{"processing-unit", 10}, {"sp-processor", 6}, {"sp-antenna-chip", 6}, {"sp-anodized-aluminum", 3}, {"sp-glass-fiber", 10}, {"sp-insulated-wire", 12}},
+  6,
+  12)
 util.change_recipe_ingredients("motor",
   {{"sp-machined-parts", 2}, {"sp-bolts", 3}, {"sp-gearbox", 1}},
   {{"sp-machined-parts", 4}, {"sp-bolts", 6}, {"sp-gearbox", 1}},
@@ -88,6 +93,31 @@ util.change_recipe_ingredients("refined-concrete",
 util.change_recipe_ingredients("steel-chest",
   {{"sp-bolts", 4}, {"steel-plate", 4}},
   {{"sp-bolts", 12}, {"steel-plate", 8}},
+  1,
+  2)
+util.change_recipe_ingredients("logistic-chest-storage",
+  {{"steel-chest", 1}, {"electronic-circuit", 2}, {"advanced-circuit", 2}},
+  {{"steel-chest", 1}, {"electronic-circuit", 2}, {"advanced-circuit", 4}},
+  1,
+  2)
+util.change_recipe_ingredients("logistic-chest-passive-provider",
+  {{"steel-chest", 1}, {"electronic-circuit", 2}, {"advanced-circuit", 2}},
+  {{"steel-chest", 1}, {"electronic-circuit", 2}, {"advanced-circuit", 4}},
+  1,
+  2)
+util.change_recipe_ingredients("logistic-chest-active-provider",
+  {{"steel-chest", 1}, {"processing-unit", 3}},
+  {{"steel-chest", 1}, {"processing-unit", 5}},
+  1,
+  2)
+util.change_recipe_ingredients("logistic-chest-requester",
+  {{"steel-chest", 1}, {"processing-unit", 3}},
+  {{"steel-chest", 1}, {"processing-unit", 5}},
+  1,
+  2)
+util.change_recipe_ingredients("logistic-chest-buffer",
+  {{"steel-chest", 1}, {"processing-unit", 3}},
+  {{"steel-chest", 1}, {"processing-unit", 5}},
   1,
   2)
 util.change_recipe_ingredients("speed-module",
@@ -179,13 +209,13 @@ util.change_recipe_ingredients("splitter",
   nil,
   nil)
 util.change_recipe_ingredients("fast-splitter",
-  {{"sp-machined-parts", 2}, {"sp-bolts", 4}, {"sp-gearbox", 2}, {"fast-transport-belt", 2}},
-  {{"sp-machined-parts", 2}, {"sp-bolts", 4}, {"sp-gearbox", 2}, {"fast-transport-belt", 2}},
+  {{"sp-machined-parts", 2}, {"sp-bolts", 4}, {"sp-gearbox", 2}, {"fast-transport-belt", 2}, {"electronic-circuit", 2}},
+  {{"sp-machined-parts", 2}, {"sp-bolts", 4}, {"sp-gearbox", 2}, {"fast-transport-belt", 2}, {"electronic-circuit", 3}},
   nil,
   nil)
 util.change_recipe_ingredients("express-splitter",
-  {{"sp-titanium-frame", 8}, {"sp-bolts", 6}, {"sp-actuator", 2}, {"express-transport-belt", 2}},
-  {{"sp-titanium-frame", 8}, {"sp-bolts", 8}, {"sp-actuator", 2}, {"express-transport-belt", 2}},
+  {{"sp-titanium-frame", 8}, {"sp-bolts", 6}, {"sp-actuator", 2}, {"express-transport-belt", 2}, {"advanced-circuit", 2}},
+  {{"sp-titanium-frame", 8}, {"sp-bolts", 8}, {"sp-actuator", 2}, {"express-transport-belt", 2}, {"advanced-circuit", 3}},
   nil,
   nil)
 -- Base: {"iron-plate", 10}; Krastorio {"iron-beam", 6}
@@ -490,8 +520,8 @@ util.change_recipe_ingredients("assembling-machine-2",
   10,
   20)
 util.change_recipe_ingredients("assembling-machine-3",
-  {{"advanced-circuit", 16}, {"electric-engine-unit", 8}, {"concrete", 32}, {"steel-plate", 25}, {"sp-bolts", 40}, {"sp-heavy-gearbox", 6}, {"sp-optical-sensor", 10}, {"sp-titanium-frame", 20}},
-  {{"advanced-circuit", 32}, {"electric-engine-unit", 12}, {"concrete", 60}, {"steel-plate", 50}, {"sp-bolts", 60}, {"sp-heavy-gearbox", 12}, {"sp-optical-sensor", 20}, {"sp-titanium-frame", 30}},
+  {{"processing-unit", 12}, {"electric-engine-unit", 8}, {"concrete", 32}, {"steel-plate", 25}, {"sp-bolts", 40}, {"sp-heavy-gearbox", 6}, {"sp-optical-sensor", 10}, {"sp-titanium-frame", 20}},
+  {{"processing-unit", 24}, {"electric-engine-unit", 12}, {"concrete", 60}, {"steel-plate", 50}, {"sp-bolts", 60}, {"sp-heavy-gearbox", 12}, {"sp-optical-sensor", 20}, {"sp-titanium-frame", 30}},
   20,
   30)
 -- aai {"engine-unit", 5}, Krastorio {"steel-gear-wheel", 8}
@@ -659,8 +689,8 @@ util.change_recipe_ingredients("stack-inserter",
   3)
 -- Krastorio: {"inserter-parts", 3}
 util.change_recipe_ingredients("stack-filter-inserter",
-  {{"sp-heavy-gearbox", 2}, {"sp-stainless-steel", 4}, {"sp-bolts", 12}, {"electric-engine-unit", 2}, {"sp-circuit-board", 2}, {"sp-optical-sensor", 2}, {"sp-infrared-filter", 4}, {"sp-heavy-ball-bearing", 4}},
-  {{"sp-heavy-gearbox", 3}, {"sp-stainless-steel", 6}, {"sp-bolts", 20}, {"electric-engine-unit", 3}, {"sp-circuit-board", 2}, {"sp-optical-sensor", 2}, {"sp-infrared-filter", 6}, {"sp-heavy-ball-bearing", 6}},
+  {{"sp-heavy-gearbox", 2}, {"sp-stainless-steel", 4}, {"sp-bolts", 12}, {"electric-engine-unit", 4}, {"sp-control-unit", 1}, {"sp-heavy-ball-bearing", 4}},
+  {{"sp-heavy-gearbox", 3}, {"sp-stainless-steel", 6}, {"sp-bolts", 20}, {"electric-engine-unit", 6}, {"sp-control-unit", 2}, {"sp-heavy-ball-bearing", 6}},
   2,
   3)
 
