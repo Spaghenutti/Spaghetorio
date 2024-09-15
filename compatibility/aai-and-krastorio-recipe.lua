@@ -1794,6 +1794,33 @@ util.change_recipe_ingredients("big-battery-mk2-equipment",
   {{"battery-mk2-equipment", 6}, {"sp-titanium-frame", 6}, {"sp-insulated-wire", 10}, {"sp-heatsink", 6}, {"sp-insulation-sheet", 3}},
   15,
   30)
+data.raw.recipe["battery-mk3-equipment"].category = "crafting-with-fluid"
+util.change_recipe_ingredients("battery-mk3-equipment",
+  {
+    {type = "item", name = "sp-advanced-processing-unit", amount = 4},
+    {type = "item", name = "sp-yemnuth-pearls", amount = 2},
+    {type = "item", name = "imersite-powder", amount = 6},
+    {type = "item", name = "sp-graphene", amount = 10},
+    {type = "item", name = "sp-stibnite", amount = 2},
+    {type = "item", name = "sp-electrolyte", amount = 1},
+    {type = "fluid", name = "sp-aqueous-niobium", amount = 30}
+  },
+  {
+    {type = "item", name = "sp-advanced-processing-unit", amount = 6},
+    {type = "item", name = "sp-yemnuth-pearls", amount = 3},
+    {type = "item", name = "imersite-powder", amount = 10},
+    {type = "item", name = "sp-graphene", amount = 16},
+    {type = "item", name = "sp-stibnite", amount = 3},
+    {type = "item", name = "sp-electrolyte", amount = 1},
+    {type = "fluid", name = "sp-aqueous-niobium", amount = 50}
+  },
+  10,
+  15)
+util.change_recipe_ingredients("big-battery-mk3-equipment",
+  {{"battery-mk2-equipment", 6}, {"sp-invar", 10}, {"sp-carbon-nanotubes", 4}, {"sp-cryostat", 2}},
+  {{"battery-mk2-equipment", 10}, {"sp-invar", 20}, {"sp-carbon-nanotubes", 10}, {"sp-cryostat", 3}},
+  20,
+  40)
 util.change_recipe_ingredients("small-portable-generator",
   {{"engine-unit", 1}, {"sp-machined-parts", 6}, {"sp-electromagnet", 2}, {"sp-insulated-wire", 2}},
   {{"engine-unit", 2}, {"sp-machined-parts", 8}, {"sp-electromagnet", 6}, {"sp-insulated-wire", 4}},
@@ -1807,6 +1834,41 @@ util.change_recipe_ingredients("portable-generator",
 util.change_recipe_ingredients("big-solar-panel-equipment",
   {{"solar-panel", 4}, {"sp-bolts", 16}, {"advanced-circuit", 5}, {"sp-titanium-frame", 2}, {"sp-insulated-wire", 4}},
   {{"solar-panel", 6}, {"sp-bolts", 24}, {"advanced-circuit", 12}, {"sp-titanium-frame", 5}, {"sp-insulated-wire", 8}},
+  20,
+  30)
+util.change_recipe_ingredients(
+"imersite-solar-panel-equipment",
+  {
+    {type = "item", name = "sp-advanced-processing-unit", amount = 4},
+    {type = "item", name = "sp-niobium-steel", amount = 10},
+    {type = "item", name = "sp-graphene", amount = 10},
+    {type = "item", name = "sp-rukite-powder", amount = 4},
+    {type = "item", name = "imersite-powder", amount = 8},
+    {type = "item", name = "sp-quasicrystal", amount = 5},
+    {type = "fluid", name = "sp-aqueous-tantalum", amount = 10}
+  },
+  {
+    {type = "item", name = "sp-advanced-processing-unit", amount = 6},
+    {type = "item", name = "sp-niobium-steel", amount = 12},
+    {type = "item", name = "sp-graphene", amount = 16},
+    {type = "item", name = "sp-rukite-powder", amount = 8},
+    {type = "item", name = "imersite-powder", amount = 14},
+    {type = "item", name = "sp-quasicrystal", amount = 8},
+    {type = "fluid", name = "sp-aqueous-tantalum", amount = 20}
+  },
+  10,
+  20)
+util.change_recipe_ingredients("big-imersite-solar-panel-equipment",
+  {
+    {"imersite-solar-panel-equipment", 4},
+    {"sp-superconductor", 6},
+    {"sp-titanium-frame", 4},
+    {"sp-nitenol", 8}},
+  {
+    {"imersite-solar-panel-equipment", 6},
+    {"sp-superconductor", 12},
+    {"sp-titanium-frame", 6},
+    {"sp-nitenol", 14}},
   20,
   30)
 util.change_recipe_ingredients("nuclear-reactor-equipment",
