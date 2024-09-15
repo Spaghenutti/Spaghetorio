@@ -1253,7 +1253,10 @@ table.insert(data.raw.recipe["sp-military-science-pack-2"].ingredients, {type = 
 table.insert(data.raw.recipe["sp-geological-science-pack-2"].ingredients, {type = "item", name = "wood", amount = 10})
 table.insert(data.raw.recipe["sp-astronomical-science-pack-2"].ingredients, {type = "item", name = "blank-tech-card", amount = 5})
 table.insert(data.raw.recipe["sp-computer-science-pack-2"].ingredients, {type = "item", name = "blank-tech-card", amount = 5})
+table.insert(data.raw.recipe["sp-nuclear-science-pack-2"].ingredients, {type = "item", name = "blank-tech-card", amount = 50})
 table.insert(data.raw.recipe["sp-military-science-pack-3"].ingredients, {type = "item", name = "biters-research-data", amount = 3})
+table.insert(data.raw.recipe["sp-chemical-science-pack-3"].ingredients, {type = "item", name = "lithium-chloride", amount = 5})
+table.insert(data.raw.recipe["sp-chemical-science-pack-3"].ingredients, {type = "fluid", name = "nitric-acid", amount = 30})
 
 -- MARK: Add missing ingredients from recipe-changes.lua
 table.insert(data.raw.recipe["concrete"].normal.ingredients, {"sand", 5})
@@ -1656,8 +1659,8 @@ util.change_recipe_ingredients("kr-electric-mining-drill-mk3",
   20,
   40)
 util.change_recipe_ingredients("kr-quarry-drill",
-  {{"sp-diamond", 40}, {"sp-niobium-steel", 50}, {"electric-engine-unit", 20}, {"sp-invar", 20}, {"sp-pressure-tube", 12}, {"sp-compressor", 12}},
-  {{"sp-diamond", 80}, {"sp-niobium-steel", 100}, {"electric-engine-unit", 40}, {"sp-invar", 40}, {"sp-pressure-tube", 24}, {"sp-compressor", 24}},
+  {{"sp-diamond", 40}, {"sp-control-unit", 20}, {"sp-niobium-steel", 50}, {"electric-engine-unit", 20}, {"sp-invar", 20}, {"sp-carbon-nanotubes", 50}, {"sp-pressure-tube", 12}, {"sp-turbopump", 12}, {"refined-concrete", 120}},
+  {{"sp-diamond", 80}, {"sp-control-unit", 40}, {"sp-niobium-steel", 100}, {"electric-engine-unit", 40}, {"sp-invar", 40}, {"sp-carbon-nanotubes", 80}, {"sp-pressure-tube", 24}, {"sp-turbopump", 24}, {"refined-concrete", 200}},
   60,
   120)
 util.change_recipe_ingredients("kr-mineral-water-pumpjack",

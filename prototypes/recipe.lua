@@ -2266,13 +2266,13 @@ data:extend({
     category = "crafting",
     enabled = false,
     energy_required = 8,
-    -- TODO: Change recipe, its the same as adanced compute unit
     ingredients = {
       {type = "item", name = "sp-circuit-board", amount = 1},
       {type = "item", name = "sp-anodized-aluminum", amount = 2},
       {type = "item", name = "sp-memory-chip", amount = 4},
-      {type = "item", name = "sp-processor", amount = 1},
-      {type = "item", name = "sp-integrated-circuit", amount = 5}
+      {type = "item", name = "sp-processor", amount = 2},
+      {type = "item", name = "sp-integrated-circuit", amount = 5},
+      {type = "item", name = "sp-heatsink", amount = 1}
     },
     results = {
       {type = "item", name = "sp-advanced-processing-unit", amount = 1}
@@ -4821,6 +4821,22 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "sp-nuclear-science-pack-2",
+    category = "crafting",
+    enabled = false,
+    energy_required = 240,
+    ingredients =
+    -- Krastorio: {"blank-tech-card", 50}
+    {
+      {"uranium-238", 400},
+      {"uranium-235", 1},
+      {"sp-empty-fuel-rod", 50},
+    },
+    result_count = 5,
+    result = "sp-nuclear-science-pack-2"
+  },
+  {
+    type = "recipe",
     name = "sp-automation-science-pack-3",
     category = "crafting",
     enabled = false,
@@ -4828,7 +4844,11 @@ data:extend({
     ingredients =
     {
       {"sp-automation-science-pack-2", 10},
-      {"iron-plate", 69}
+      {"sp-electrode", 10},
+      {"sp-high-pressure-tank", 5},
+      {"sp-transformer", 5},
+      {"sp-plate-heat-exchanger", 5},
+      {"flying-robot-frame", 5}
     },
     result_count = 5,
     result = "sp-automation-science-pack-3"
@@ -4842,7 +4862,11 @@ data:extend({
     ingredients =
     {
       {"sp-logistic-science-pack-2", 10},
-      {"iron-plate", 69}
+      {"sp-differential", 5},
+      {"sp-heavy-gearbox", 5},
+      {"sp-pressure-tube", 5},
+      {"processing-unit", 10},
+      {"sp-insulated-wire", 20},
     },
     result_count = 5,
     result = "sp-logistic-science-pack-3"
@@ -4864,13 +4888,20 @@ data:extend({
   {
     type = "recipe",
     name = "sp-chemical-science-pack-3",
-    category = "crafting",
+    category = "chemistry",
     enabled = false,
     energy_required = 24,
     ingredients =
     {
-      {"sp-chemical-science-pack-2", 10},
-      {"iron-plate", 69}
+      {type = "item", name = "sp-chemical-science-pack-2", amount = 10},
+      {type = "fluid", name = "sp-methyl-tert-butyl-ether", amount = 20},
+      {type = "fluid", name = "sp-perchloric-acid", amount = 30},
+      {type = "item", name = "sp-catalyst", amount = 10},
+      {type = "item", name = "sp-composites", amount = 5},
+      {type = "item", name = "sp-carbon-nanotubes", amount = 10},
+      {type = "item", name = "sp-electrolyte", amount = 5},
+      -- Krastorio: {type = "item", name = "lithium-chloride", amount = 5},
+      -- Krastorio: {"nitric-acid", 30}
     },
     result_count = 5,
     result = "sp-chemical-science-pack-3"
@@ -4884,7 +4915,9 @@ data:extend({
     ingredients =
     {
       {"sp-electronic-science-pack-2", 10},
-      {"iron-plate", 69}
+      {"sp-antenna-chip", 8},
+      {"sp-cmos", 8},
+      {"sp-processor", 16}
     },
     result_count = 5,
     result = "sp-electronic-science-pack-3"
@@ -4892,13 +4925,20 @@ data:extend({
   {
     type = "recipe",
     name = "sp-geological-science-pack-3",
-    category = "crafting",
+    category = "chemistry",
     enabled = false,
     energy_required = 24,
     ingredients =
     {
-      {"sp-geological-science-pack-2", 10},
-      {"iron-plate", 69}
+      {type = "item", name = "sp-geological-science-pack-2", amount = 10},
+      {type = "fluid", name = "sp-phosphoric-acid", amount = 30},
+      {type = "fluid", name = "sp-aqueous-niobium", amount = 10},
+      {type = "item", name = "sp-catalyst", amount = 8},
+      {type = "item", name = "sp-silica", amount = 10},
+      {type = "item", name = "sp-zircon", amount = 10},
+      {type = "item", name = "sp-magnesium-chloride", amount = 5},
+      {type = "item", name = "sp-sodium-carbonate", amount = 8},
+      {type = "item", name = "sp-calcium", amount = 12}
     },
     result_count = 5,
     result = "sp-geological-science-pack-3"
@@ -4912,7 +4952,13 @@ data:extend({
     ingredients =
     {
       {"sp-material-science-pack-2", 10},
-      {"iron-plate", 69}
+      {"sp-diamond", 6},
+      {"sp-graphene", 12},
+      {"sp-tungsten-carbide", 4},
+      {"sp-TiNb", 5},
+      {"sp-nitenol", 5},
+      {"sp-inconel", 5},
+      {"sp-niobium-tin", 4}
     },
     result_count = 5,
     result = "sp-material-science-pack-3"
@@ -4934,16 +4980,32 @@ data:extend({
   {
     type = "recipe",
     name = "sp-computer-science-pack-3",
+    category = "crafting-with-fluid",
+    enabled = false,
+    energy_required = 24,
+    ingredients =
+    {
+      {type = "item", name = "sp-computer-science-pack-2", amount = 20},
+      {type = "item", name = "sp-advanced-processing-unit", amount = 20},
+      {type = "item", name = "sp-control-unit", amount = 10},
+      {type = "fluid", name = "sp-coolant", amount = 40}
+    },
+    result_count = 5,
+    result = "sp-computer-science-pack-3"
+  },
+  {
+    type = "recipe",
+    name = "sp-nuclear-science-pack-3",
     category = "crafting",
     enabled = false,
     energy_required = 24,
     ingredients =
     {
-      {"sp-computer-science-pack-2", 20},
+      {"sp-nuclear-science-pack-2", 10},
       {"iron-plate", 69}
     },
     result_count = 5,
-    result = "sp-computer-science-pack-3"
+    result = "sp-production-science-pack-3"
   },
   {
     type = "recipe",
@@ -5583,6 +5645,7 @@ data:extend({
     },
     results = {
       {type = "item", name = "uranium-238", amount = 3},
+      {type = "item", name = "sp-empty-fuel-rod", amount = 2},
       {type = "item", name = "sp-nuclear-waste", amount = 1},
       -- {type = "fluid", name = "sp-deuterium", amount = 10}
     }

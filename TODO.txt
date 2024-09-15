@@ -32,6 +32,7 @@ TODO:
   ? Change AAI recipes
   - Replace rare-metals with yttrium, lanthanum, cerium, neodymium
   - Fix technology unlocking and add recipes for tech cards
+  + Add nuclear science pack 2 and 3
   - Add cyclotron
   - Add particle accelerator
   + Replace dummy icons

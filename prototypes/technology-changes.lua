@@ -132,6 +132,7 @@ data.raw.technology["coal-liquefaction"].unit.ingredients = {
   {"production-science-pack", 1}
 }
 
+table.insert(data.raw.technology["kovarex-enrichment-process"].prerequisites, "sp-nuclear-science-pack-2")  -- Needs to be done with table.insert, otherwise there is a problem in krastorio
 data.raw.technology["kovarex-enrichment-process"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},
   {"sp-logistic-science-pack-2", 1},
@@ -140,14 +141,14 @@ data.raw.technology["kovarex-enrichment-process"].unit.ingredients = {
   {"sp-geological-science-pack-2", 1},
   {"sp-chemical-science-pack-2", 1},
   {"production-science-pack", 1},
-  {"utility-science-pack", 1}
+  {"utility-science-pack", 1},
+  {"sp-nuclear-science-pack-2", 1}
 }
 
 table.insert(data.raw.technology["nuclear-power"].effects, {type = "unlock-recipe", recipe = "sp-reactor-core"})
 table.insert(data.raw.technology["nuclear-power"].effects, {type = "unlock-recipe", recipe = "sp-control-rod"})
-table.insert(data.raw.technology["nuclear-power"].effects, {type = "unlock-recipe", recipe = "sp-uranium-fuel-rod"})
-table.insert(data.raw.technology["nuclear-power"].effects, {type = "unlock-recipe", recipe = "sp-empty-fuel-rod"})
 table.insert(data.raw.technology["nuclear-power"].prerequisites, "sp-turbine-parts")
+table.insert(data.raw.technology["nuclear-power"].prerequisites, "sp-nuclear-science-pack-2")
 data.raw.technology["nuclear-power"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},
   {"sp-logistic-science-pack-2", 1},
@@ -156,7 +157,8 @@ data.raw.technology["nuclear-power"].unit.ingredients = {
   {"sp-geological-science-pack-2", 1},
   {"sp-chemical-science-pack-2", 1},
   {"production-science-pack", 1},
-  {"utility-science-pack", 1}
+  {"utility-science-pack", 1},
+  {"sp-nuclear-science-pack-2", 1}
 }
 
 table.insert(data.raw.technology["automation-2"].prerequisites, "sp-heatsink")
@@ -696,6 +698,8 @@ data.raw.technology["rocket-fuel"].unit.ingredients = {
   {"sp-astronomical-science-pack-2", 1}
 }
 
+table.insert(data.raw.technology["uranium-processing"].effects, {type = "unlock-recipe", recipe = "sp-uranium-fuel-rod"})
+table.insert(data.raw.technology["uranium-processing"].effects, {type = "unlock-recipe", recipe = "sp-empty-fuel-rod"})
 data.raw.technology["uranium-processing"].prerequisites = {
   "sp-advanced-gearbox"
 }

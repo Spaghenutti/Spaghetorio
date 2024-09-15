@@ -2129,7 +2129,8 @@ data:extend({
         {"sp-chemical-science-pack-2", 1},
         {"sp-geological-science-pack-2", 1},
         {"production-science-pack", 1},
-        {"utility-science-pack", 1}
+        {"utility-science-pack", 1},
+        {"sp-nuclear-science-pack-2", 1}
       },
       time = 15
     },
@@ -4379,6 +4380,38 @@ data:extend({
   },
   {
     type = "technology",
+    name = "sp-nuclear-science-pack-2",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghenutti__/graphics/hr-icons/nuclear-science-pack-2.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-nuclear-science-pack-2"
+      },
+    },
+    prerequisites = {
+      "uranium-processing",
+      "utility-science-pack"
+    },
+    unit =
+    {
+      count = 250,
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"production-science-pack", 1},
+        {"sp-material-science-pack-2", 1},
+        {"utility-science-pack", 1}
+      },
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
     name = "sp-automation-science-pack-3",  -- #ForRegEx# - technology
     icon_size = 256,
     icon = "__Spaghenutti__/graphics/hr-icons/automation-science-pack-3.png",
@@ -4672,7 +4705,38 @@ data:extend({
       },
     },
     prerequisites = {
-      "sp-automation-science-pack-3"
+      "sp-advanced-processing-unit"
+    },
+    unit =
+    {
+      count = 750,
+      ingredients = {
+        {"sp-automation-science-pack-3", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"sp-astronomical-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1}
+      },
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-nuclear-science-pack-3",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghenutti__/graphics/hr-icons/nuclear-science-pack-3.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-nuclear-science-pack-3"
+      },
+    },
+    prerequisites = {
+      "sp-computer-science-pack-3"
     },
     unit =
     {

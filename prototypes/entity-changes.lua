@@ -86,3 +86,6 @@ data.raw["autoplace-control"]["crude-oil"].order = "c[crude-oil]"
 -- add crafting categories
 table.insert(data.raw["assembling-machine"]["centrifuge"].crafting_categories, "high-energy-physics")
 table.insert(data.raw["furnace"]["electric-furnace"].crafting_categories, "intermediate-smelting")
+
+-- MARK: Changes to rocket silo
+data.raw["rocket-silo"]["rocket-silo"].rocket_parts_required = 1

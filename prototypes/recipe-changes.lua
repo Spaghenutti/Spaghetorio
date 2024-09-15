@@ -218,6 +218,37 @@ util.change_recipe_ingredients("express-splitter",
   {{"sp-titanium-frame", 8}, {"sp-bolts", 8}, {"sp-actuator", 2}, {"express-transport-belt", 2}, {"advanced-circuit", 3}},
   nil,
   nil)
+
+table.insert(data.raw.recipe["burner-inserter"].normal.ingredients, {"sp-bolts", 3})
+table.insert(data.raw.recipe["inserter"].normal.ingredients, {"sp-bolts", 2})
+table.insert(data.raw.recipe["inserter"].normal.ingredients, {"sp-spring", 2})
+table.insert(data.raw.recipe["long-handed-inserter"].normal.ingredients, {"sp-bolts", 4})
+table.insert(data.raw.recipe["long-handed-inserter"].normal.ingredients, {"sp-spring", 2})
+-- Krastorio: {"inserter-parts", 2}
+util.change_recipe_ingredients("fast-inserter",
+  {{"electric-motor", 1}, {"sp-bolts", 4}, {"sp-ball-bearing", 2}, {"sp-aluminum-frame", 2}, {"electronic-circuit", 4}},
+  {{"electric-motor", 1}, {"sp-bolts", 6}, {"sp-ball-bearing", 4}, {"sp-aluminum-frame", 3}, {"electronic-circuit", 6}},
+  1,
+  2)
+-- Krastorio: {"inserter-parts", 2}
+util.change_recipe_ingredients("filter-inserter",
+  {{"electric-motor", 1}, {"sp-bolts", 4}, {"sp-ball-bearing", 4}, {"sp-aluminum-frame", 2}, {"sp-relay", 2}, {"advanced-circuit", 4}, {"sp-insulated-wire", 2}},
+  {{"electric-motor", 1}, {"sp-bolts", 6}, {"sp-ball-bearing", 6}, {"sp-aluminum-frame", 3}, {"sp-relay", 6}, {"electronic-circuit", 6}, {"sp-insulated-wire", 6}},
+  1.5,
+  3)
+-- Krastorio: {"inserter-parts", 3}
+util.change_recipe_ingredients("stack-inserter",
+  {{"sp-heavy-gearbox", 2}, {"sp-stainless-steel", 4}, {"sp-bolts", 12}, {"electric-engine-unit", 2}, {"advanced-circuit", 2}, {"sp-heavy-ball-bearing", 4}},
+  {{"sp-heavy-gearbox", 3}, {"sp-stainless-steel", 6}, {"sp-bolts", 20}, {"electric-engine-unit", 3}, {"advanced-circuit", 3}, {"sp-heavy-ball-bearing", 6}},
+  2,
+  3)
+-- Krastorio: {"inserter-parts", 3}
+util.change_recipe_ingredients("stack-filter-inserter",
+  {{"sp-heavy-gearbox", 2}, {"sp-stainless-steel", 4}, {"sp-bolts", 12}, {"electric-engine-unit", 4}, {"sp-control-unit", 1}, {"sp-heavy-ball-bearing", 4}},
+  {{"sp-heavy-gearbox", 3}, {"sp-stainless-steel", 6}, {"sp-bolts", 20}, {"electric-engine-unit", 6}, {"sp-control-unit", 2}, {"sp-heavy-ball-bearing", 6}},
+  2,
+  3)
+
 -- Base: {"iron-plate", 10}; Krastorio {"iron-beam", 6}
 util.change_recipe_ingredients("medium-electric-pole",
   {{"iron-stick", 4}, {"sp-bolts", 8}, {"sp-aluminum-cable", 4}},
@@ -470,6 +501,11 @@ util.change_recipe_ingredients("rocket-silo",
   {{"steel-plate", 200}, {"sp-bolts", 1000}, {"sp-spring", 100}, {"refined-concrete", 2000}, {"sp-TiNb", 300}, {"sp-inconel", 250}, {"sp-tungsten-slab", 70}, {"pump", 60}, {"sp-pressure-tube", 200}, {"sp-high-pressure-tank", 50}, {"sp-flange", 100}, {"sp-valve", 500}, {"sp-cryostat", 12}, {"sp-spark-plug", 20}, {"sp-heavy-gearbox", 50}, {"sp-heavy-ball-bearing", 80}, {"sp-control-unit", 120}, {"rocket-control-unit", 150}, {"electric-motor", 50}, {"sp-heat-resistant-tile", 400}},
   300,
   600)
+util.change_recipe_ingredients("rocket-part",
+  {{"rocket-control-unit", 80}, {"sp-heat-resistant-tile", 100}, {"sp-TiNb", 120}, {"sp-inconel", 200}, {"sp-duralumin", 500}, {"low-density-structure", 400}, {"rocket-fuel", 500}, {"sp-cryostat", 10}, {"sp-high-pressure-tank", 30}, {"sp-rocket-engine", 30}, {"sp-solid-rocket-motor", 24}, {"sp-insulated-wire", 160}},
+  {{"rocket-control-unit", 160}, {"sp-heat-resistant-tile", 200}, {"sp-TiNb", 240}, {"sp-inconel", 300}, {"sp-duralumin", 1000}, {"low-density-structure", 800}, {"rocket-fuel", 1000}, {"sp-cryostat", 20}, {"sp-high-pressure-tank", 50}, {"sp-rocket-engine", 50}, {"sp-solid-rocket-motor", 48}, {"sp-insulated-wire", 240}},
+  80,
+  160)
 --------------------------------------------------------------------------------
 -- MARK: Buildings
 --------------------------------------------------------------------------------
@@ -663,37 +699,6 @@ util.change_recipe_ingredients("iron-beam",
   {{"iron-plate", 2}},
   1,
   2)
-
--- MARK: Extend recipes
-table.insert(data.raw.recipe["burner-inserter"].normal.ingredients, {"sp-bolts", 3})
-table.insert(data.raw.recipe["inserter"].normal.ingredients, {"sp-bolts", 2})
-table.insert(data.raw.recipe["inserter"].normal.ingredients, {"sp-spring", 2})
-table.insert(data.raw.recipe["long-handed-inserter"].normal.ingredients, {"sp-bolts", 4})
-table.insert(data.raw.recipe["long-handed-inserter"].normal.ingredients, {"sp-spring", 2})
--- Krastorio: {"inserter-parts", 2}
-util.change_recipe_ingredients("fast-inserter",
-  {{"electric-motor", 1}, {"sp-bolts", 4}, {"sp-ball-bearing", 2}, {"sp-aluminum-frame", 2}, {"electronic-circuit", 4}},
-  {{"electric-motor", 1}, {"sp-bolts", 6}, {"sp-ball-bearing", 4}, {"sp-aluminum-frame", 3}, {"electronic-circuit", 6}},
-  1,
-  2)
--- Krastorio: {"inserter-parts", 2}
-util.change_recipe_ingredients("filter-inserter",
-  {{"electric-motor", 1}, {"sp-bolts", 4}, {"sp-ball-bearing", 4}, {"sp-aluminum-frame", 2}, {"sp-relay", 2}, {"advanced-circuit", 4}, {"sp-insulated-wire", 2}},
-  {{"electric-motor", 1}, {"sp-bolts", 6}, {"sp-ball-bearing", 6}, {"sp-aluminum-frame", 3}, {"sp-relay", 6}, {"electronic-circuit", 6}, {"sp-insulated-wire", 6}},
-  1.5,
-  3)
--- Krastorio: {"inserter-parts", 3}
-util.change_recipe_ingredients("stack-inserter",
-  {{"sp-heavy-gearbox", 2}, {"sp-stainless-steel", 4}, {"sp-bolts", 12}, {"electric-engine-unit", 2}, {"advanced-circuit", 2}, {"sp-heavy-ball-bearing", 4}},
-  {{"sp-heavy-gearbox", 3}, {"sp-stainless-steel", 6}, {"sp-bolts", 20}, {"electric-engine-unit", 3}, {"advanced-circuit", 3}, {"sp-heavy-ball-bearing", 6}},
-  2,
-  3)
--- Krastorio: {"inserter-parts", 3}
-util.change_recipe_ingredients("stack-filter-inserter",
-  {{"sp-heavy-gearbox", 2}, {"sp-stainless-steel", 4}, {"sp-bolts", 12}, {"electric-engine-unit", 4}, {"sp-control-unit", 1}, {"sp-heavy-ball-bearing", 4}},
-  {{"sp-heavy-gearbox", 3}, {"sp-stainless-steel", 6}, {"sp-bolts", 20}, {"electric-engine-unit", 6}, {"sp-control-unit", 2}, {"sp-heavy-ball-bearing", 6}},
-  2,
-  3)
 
 if not mods["Krastorio2"] then
   table.insert(data.raw.recipe["concrete"].normal.ingredients, {"sp-sand", 5})

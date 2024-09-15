@@ -2880,6 +2880,19 @@ data:extend({
     durability_description_key = "description.science-pack-remaining-amount-key",
     durability_description_value = "description.science-pack-remaining-amount-value"
   },
+  {
+    type = "tool",
+    name = "sp-nuclear-science-pack-2",  -- #ForRegEx# - tool
+    localised_description = {"item-description.science-pack"},
+    icon = "__Spaghenutti__/graphics/icons/nuclear-science-pack-2.png",
+    icon_size = 64, icon_mipmaps = 4,
+    subgroup = "intermediate-science",
+    order = "j[nuclear-science-pack]",
+    stack_size = 200,
+    durability = 1,
+    durability_description_key = "description.science-pack-remaining-amount-key",
+    durability_description_value = "description.science-pack-remaining-amount-value"
+  },
   ------------------------------------------------------------------------------
   -- MARK: advanced-science
   ------------------------------------------------------------------------------
@@ -3002,12 +3015,25 @@ data:extend({
   },
   {
     type = "tool",
+    name = "sp-nuclear-science-pack-3",  -- #ForRegEx# - tool
+    localised_description = {"item-description.science-pack"},
+    icon = "__Spaghenutti__/graphics/icons/nuclear-science-pack-3.png",
+    icon_size = 64, icon_mipmaps = 4,
+    subgroup = "advanced-science",
+    order = "j[nuclear-science-pack]",
+    stack_size = 200,
+    durability = 1,
+    durability_description_key = "description.science-pack-remaining-amount-key",
+    durability_description_value = "description.science-pack-remaining-amount-value"
+  },
+  {
+    type = "tool",
     name = "sp-production-science-pack-3",  -- #ForRegEx# - tool
     localised_description = {"item-description.science-pack"},
     icon = "__Spaghenutti__/graphics/icons/production-science-pack-3.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "advanced-science",
-    order = "j[production-science-pack]",
+    order = "k[production-science-pack]",
     stack_size = 200,
     durability = 1,
     durability_description_key = "description.science-pack-remaining-amount-key",
@@ -3020,7 +3046,7 @@ data:extend({
     icon = "__Spaghenutti__/graphics/icons/utility-science-pack-3.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "advanced-science",
-    order = "k[utility-science-pack]",
+    order = "l[utility-science-pack]",
     stack_size = 200,
     durability = 1,
     durability_description_key = "description.science-pack-remaining-amount-key",

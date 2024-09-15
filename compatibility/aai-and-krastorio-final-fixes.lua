@@ -119,6 +119,7 @@ data.raw.recipe["uranium-fuel-cell"].hidden = true
 data.raw.item["uranium-fuel-cell"].flags = {"hidden"}
 data.raw.item["used-up-uranium-fuel-cell"].flags = {"hidden"}
 remove_prototypes.remove_one_prototype("recipe", "nuclear-fuel-reprocessing")
+remove_prototypes.remove_one_prototype("recipe", "uranium-fuel-cell")
 data.raw.technology["nuclear-fuel-reprocessing"] = nil
 
 -- Hide electronic components recipe

@@ -61,7 +61,7 @@ data.raw.technology["military-science-pack"].unit.ingredients = {
 }
 
 data.raw.technology["utility-science-pack"].prerequisites = {
-  "kr-research-server"
+  "kr-research-server",
 }
 data.raw.technology["utility-science-pack"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},
