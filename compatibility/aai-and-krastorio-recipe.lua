@@ -1674,6 +1674,25 @@ util.change_recipe_ingredients("lithium-sulfur-battery",  -- "huge storage tank"
   },
   4,
   6)
+  util.change_recipe_ingredients("ai-core",  -- "huge storage tank"
+  {
+    {"sp-glass-fiber", 4},
+    {"sp-titanium-frame", 2},
+    {"sp-cryostat", 2},
+    {"sp-control-unit", 4},
+    {"sp-quantum-data-plane", 1},
+    {type="fluid", name="sp-liquid-nitrogen", amount=20}
+  },
+  {
+    {"sp-glass-fiber", 10},
+    {"sp-titanium-frame", 2},
+    {"sp-cryostat", 3},
+    {"sp-control-unit", 6},
+    {"sp-quantum-data-plane", 2},
+    {type="fluid", name="sp-liquid-nitrogen", amount=30}
+  },
+  16,
+  24)
 
 -- MARK: Krastorio Buildings
 util.change_recipe_ingredients("kr-loader",
@@ -2374,13 +2393,31 @@ util.change_recipe_ingredients("kr-research-server",
   100)
 util.change_recipe_ingredients("kr-quantum-computer",
   {
-    {"steel-plate", 69}
+    {"sp-quantum-data-plane", 10},
+    {"sp-turbopump", 2},
+    {"sp-advanced-processing-unit", 60},
+    {"sp-control-unit", 20},
+    {"ai-core", 16},
+    {"sp-superconductor", 8},
+    {"sp-glass-fiber", 250},
+    {"sp-cryostat", 20},
+    {"sp-plate-heat-exchanger", 32},
+    {"kr-black-reinforced-plate", 120}
   },
   {
-    {"steel-plate", 69}
+    {"sp-quantum-data-plane", 20},
+    {"sp-turbopump", 3},
+    {"sp-advanced-processing-unit", 100},
+    {"sp-control-unit", 30},
+    {"ai-core", 30},
+    {"sp-superconductor", 12},
+    {"sp-glass-fiber", 400},
+    {"sp-cryostat", 40},
+    {"sp-plate-heat-exchanger", 60},
+    {"kr-black-reinforced-plate", 200}
   },
-  69,
-  69)
+  90,
+  180)
 util.change_recipe_ingredients("kr-singularity-lab",
   {
     {"steel-plate", 69}
@@ -2763,27 +2800,6 @@ util.change_recipe_ingredients("fuel-processor",
   },
   12,
   24)
-util.change_recipe_ingredients("area-mining-drill",
-  {
-    {"sp-monocrystal", 4},
-    {"sp-ceramic-matrix-composites", 20},
-    {"sp-niobium-steel", 24},
-    {"imersium-gear-wheel", 16},
-    {"sp-titanium-carbide", 20},
-    {"electric-engine-unit", 10},
-    {"sp-transformer", 4}
-  },
-  {
-    {"sp-monocrystal", 8},
-    {"sp-ceramic-matrix-composites", 40},
-    {"sp-niobium-steel", 32},
-    {"imersium-gear-wheel", 32},
-    {"sp-titanium-carbide", 30},
-    {"electric-engine-unit", 16},
-    {"sp-transformer", 8}
-  },
-  36,
-  72)
 util.change_recipe_ingredients("burner-assembling-machine",
   {
     {"stone-brick", 20},
@@ -2871,15 +2887,27 @@ util.change_recipe_ingredients("industrial-furnace",
   },
   40,
   80)
-util.change_recipe_ingredients("area-mining-drill",
+  util.change_recipe_ingredients("area-mining-drill",
   {
-    {"steel-plate", 69}
+    {"sp-monocrystal", 4},
+    {"sp-ceramic-matrix-composites", 20},
+    {"sp-niobium-steel", 24},
+    {"imersium-gear-wheel", 16},
+    {"sp-titanium-carbide", 20},
+    {"electric-engine-unit", 10},
+    {"sp-transformer", 4}
   },
   {
-    {"steel-plate", 69}
+    {"sp-monocrystal", 8},
+    {"sp-ceramic-matrix-composites", 40},
+    {"sp-niobium-steel", 32},
+    {"imersium-gear-wheel", 32},
+    {"sp-titanium-carbide", 30},
+    {"electric-engine-unit", 16},
+    {"sp-transformer", 8}
   },
-  69,
-  69)
+  36,
+  72)
 
 -- MARK: Remove crushing recipes
 data.raw.recipe["kr-vc-sp-nuclear-waste"] = nil

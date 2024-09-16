@@ -1896,7 +1896,7 @@ data:extend({
       {type = "item", name = "sp-advanced-processing-unit", amount = 1}
     },
     results = {
-      {type = "item", name = "sp-servo-motor", amount = 1}
+      {type = "item", name = "sp-micro-machine", amount = 1}
     }
   },
   {
@@ -5447,14 +5447,14 @@ data:extend({
     name = "sp-cubit",  -- #ForRegEx# - recipe
     category = "crafting-with-fluid",
     enabled = false,
-    energy_required = 0.4,
+    energy_required = 0.8,
     ingredients = {
       {type = "item", name = "sp-monocrystal", amount = 1},
       -- {type = "fluid", name = "sp-hydrogen", amount = 1},
       {type = "item", name = "sp-graphene", amount = 2}
     },
     results = {
-      {type = "item", name = "sp-cubit", amount = 1}
+      {type = "item", name = "sp-cubit", amount = 10}
     }
   },
   {

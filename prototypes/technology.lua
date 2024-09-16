@@ -4796,7 +4796,11 @@ data:extend({
       },
     },
     prerequisites = {
-      "sp-automation-science-pack-3"
+      "sp-nuclear-science-pack-3",
+      "sp-blunagium-processing",
+      "sp-grobgnum-processing",
+      "sp-rukite-processing",
+      "sp-yemnuth-processing"
     },
     unit =
     {
@@ -4808,9 +4812,9 @@ data:extend({
         {"sp-electronic-science-pack-3", 1},
         {"sp-geological-science-pack-3", 1},
         {"sp-astronomical-science-pack-2", 1},
-        {"sp-material-science-pack-2", 1},
-        {"sp-nuclear-science-pack-2", 1},
-        {"sp-computer-science-pack-2", 1},
+        {"sp-material-science-pack-3", 1},
+        {"sp-nuclear-science-pack-3", 1},
+        {"sp-computer-science-pack-3", 1},
         {"utility-science-pack", 1},
       },
       time = 15
@@ -4875,9 +4879,9 @@ data:extend({
         {"sp-electronic-science-pack-3", 1},
         {"sp-geological-science-pack-3", 1},
         {"sp-astronomical-science-pack-2", 1},
-        {"sp-material-science-pack-2", 1},
+        {"sp-material-science-pack-3", 1},
         {"sp-nuclear-science-pack-2", 1},
-        {"sp-computer-science-pack-2", 1},
+        {"sp-computer-science-pack-3", 1},
         {"utility-science-pack", 1},
       },
       time = 15
