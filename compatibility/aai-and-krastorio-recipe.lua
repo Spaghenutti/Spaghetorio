@@ -2039,7 +2039,7 @@ util.change_recipe_ingredients("kr-advanced-solar-panel",
     {"imersite-crystal", 10},
     {"sp-tellurium", 3},
     {"sp-titanium-frame", 20},
-    {"processing-unit", 2}
+    {"sp-advanced-processing-unit", 2}
   },
   {
     {type = "fluid", name = "nitric-acid", amount = 50},

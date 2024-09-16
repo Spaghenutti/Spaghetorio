@@ -1668,6 +1668,22 @@ data:extend({
   },
   {
     type = "item",
+    name = "sp-micro-frame",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/micro-frame-1.png",
+    icon_size = 64,
+    pictures = {
+      { size = 64, filename = "__Spaghenutti__/graphics/icons/micro-frame-1.png", scale = 0.25, mipmap_count = 4},
+      { size = 64, filename = "__Spaghenutti__/graphics/icons/micro-frame-2.png", scale = 0.25, mipmap_count = 4},
+      { size = 64, filename = "__Spaghenutti__/graphics/icons/micro-frame-3.png", scale = 0.25, mipmap_count = 4},
+      { size = 64, filename = "__Spaghenutti__/graphics/icons/micro-frame-4.png", scale = 0.25, mipmap_count = 4}
+    },
+    scale = 0.25,
+    subgroup = "mechanical-component",
+    order = "[micro-frame]",
+    stack_size = 100
+  },
+  {
+    type = "item",
     name = "sp-ball-bearing",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/icons/ball-bearing.png",
     icon_size = 64,
@@ -2222,6 +2238,26 @@ data:extend({
     scale = 0.25,
     subgroup = "intermediate-product",
     order = "[compressor]",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "sp-servo-motor",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/servo-motor.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "intermediate-product",
+    order = "[servo-motor]",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "sp-micro-machine",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/micro-machine.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "intermediate-product",
+    order = "[micro-machine]",
     stack_size = 100
   },
   ------------------------------------------------------------------------------

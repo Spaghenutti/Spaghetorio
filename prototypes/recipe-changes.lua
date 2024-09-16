@@ -83,6 +83,7 @@ util.change_recipe_ingredients("advanced-circuit",
   },
   3,
   5)
+data.raw.item["processing-unit"].category = "crafting"
 util.change_recipe_ingredients("processing-unit",
   {
     {"sp-circuit-board", 1},
@@ -319,14 +320,16 @@ util.change_recipe_ingredients("speed-module-2",
 util.change_recipe_ingredients("speed-module-3",
   {
     {"sp-integrated-circuit", 5},
-    {"processing-unit", 5},
+    {"sp-advanced-processing-unit", 3},
+    {"sp-circuit-board", 2},
     {"sp-processor", 1},
     {"sp-optical-sensor", 2},
     {"sp-memory-chip", 6}
   },
   {
     {"sp-integrated-circuit", 8},
-    {"processing-unit", 5},
+    {"sp-advanced-processing-unit", 5},
+    {"sp-circuit-board", 3},
     {"sp-processor", 2},
     {"sp-optical-sensor", 5},
     {"sp-memory-chip", 12}
@@ -369,13 +372,15 @@ util.change_recipe_ingredients("productivity-module-2",
   30)
 util.change_recipe_ingredients("productivity-module-3",
   {
-    {"processing-unit", 4},
+    {"sp-advanced-processing-unit", 3},
+    {"sp-circuit-board", 2},
     {"sp-processor", 1},
     {"sp-optical-sensor", 2},
     {"sp-memory-chip", 3}
   },
   {
-    {"processing-unit", 5},
+    {"sp-advanced-processing-unit", 5},
+    {"sp-circuit-board", 3},
     {"sp-processor", 2},
     {"sp-optical-sensor", 5},
     {"sp-memory-chip", 6}
@@ -418,13 +423,15 @@ util.change_recipe_ingredients("effectivity-module-2",
   30)
 util.change_recipe_ingredients("effectivity-module-3",
   {
-    {"processing-unit", 6},
+    {"sp-advanced-processing-unit", 6},
+    {"sp-circuit-board", 1},
     {"sp-processor", 1},
     {"sp-optical-sensor", 1},
     {"sp-memory-chip", 4}
   },
   {
-    {"processing-unit", 8},
+    {"sp-advanced-processing-unit", 8},
+    {"sp-circuit-board", 2},
     {"sp-processor", 2},
     {"sp-optical-sensor", 2},
     {"sp-memory-chip", 6}

@@ -401,7 +401,7 @@ data.raw.technology["kr-advanced-fuel"].unit.ingredients = {
   {"utility-science-pack", 1}
 }
 
-table.insert(data.raw.technology["kr-advanced-solar-panel"].prerequisites, "sp-electronic-science-pack-3")
+table.insert(data.raw.technology["kr-advanced-solar-panel"].prerequisites, "sp-advanced-processing-unit")
 table.insert(data.raw.technology["kr-advanced-solar-panel"].prerequisites, "sp-production-science-pack-3")
 data.raw.technology["kr-advanced-solar-panel"].unit.ingredients = {
   {"sp-automation-science-pack-3", 1},

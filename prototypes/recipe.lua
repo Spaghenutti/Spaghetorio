@@ -361,6 +361,22 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "sp-micro-frame",  -- #ForRegEx# - recipe
+    category = "crafting",
+    enabled = false,
+    energy_required = 12,
+    ingredients = {
+      {type = "item", name = "sp-titanium-plate", amount = 2},
+      {type = "item", name = "sp-zirconium-rod", amount = 2},
+      {type = "item", name = "sp-duralumin", amount = 1},
+      {type = "item", name = "sp-niobium-tin", amount = 3},
+    },
+    results = {
+      {type = "item", name = "sp-micro-frame", amount = 4}
+    }
+  },
+  {
+    type = "recipe",
     name = "sp-tin-ingot",  -- #ForRegEx# - recipe
     category = "smelting",
     enabled = false,
@@ -640,7 +656,7 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "smelting",
-    subgroup = "raw-resource",
+    subgroup = "processed-resource",
     enabled = false,
     energy_required = 2.4,
     ingredients = {
@@ -1835,10 +1851,27 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "sp-servo-motor",  -- #ForRegEx# - recipe
+    category = "crafting",
+    enabled = false,
+    energy_required = 2,
+    ingredients = {
+      {type = "item", name = "plastic-bar", amount = 1},
+      {type = "item", name = "sp-insulated-wire", amount = 1},
+      {type = "item", name = "copper-cable", amount = 1},
+      {type = "item", name = "sp-electromagnet", amount = 1},
+      {type = "item", name = "sp-stainless-steel-gear-wheel", amount = 3}
+    },
+    results = {
+      {type = "item", name = "sp-servo-motor", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
     name = "sp-cryostat",  -- #ForRegEx# - recipe
     category = "crafting-with-fluid",
     enabled = false,
-    energy_required = 3.2,
+    energy_required = 5,
     ingredients = {
       {type = "item", name = "sp-machined-parts", amount = 5},
       {type = "item", name = "sp-titanium-frame", amount = 1},
@@ -1847,6 +1880,23 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-cryostat", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-micro-machine",  -- #ForRegEx# - recipe
+    category = "crafting",
+    enabled = false,
+    energy_required = 6,
+    ingredients = {
+      {type = "item", name = "sp-micro-frame", amount = 3},
+      {type = "item", name = "sp-glass-fiber", amount = 2},
+      {type = "item", name = "sp-optical-sensor", amount = 1},
+      {type = "item", name = "sp-servo-motor", amount = 2},
+      {type = "item", name = "sp-advanced-processing-unit", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-servo-motor", amount = 1}
     }
   },
   {
@@ -2103,7 +2153,9 @@ data:extend({
       {type = "item", name = "sp-titanium-frame", amount = 2},
       {type = "item", name = "sp-machined-parts", amount = 6},
       {type = "item", name = "sp-actuator", amount = 2},
-      {type = "item", name = "sp-processor", amount = 1},
+      {type = "item", name = "sp-advanced-processing-unit", amount = 1},
+      {type = "item", name = "sp-micro-machine", amount = 10},
+      
     },
     results = {
       {type = "item", name = "sp-cybernetics", amount = 1}
@@ -4865,6 +4917,7 @@ data:extend({
       {"sp-differential", 5},
       {"sp-heavy-gearbox", 5},
       {"sp-pressure-tube", 5},
+      {"sp-servo-motor", 10},
       {"processing-unit", 10},
       {"sp-insulated-wire", 20},
     },
@@ -4933,7 +4986,6 @@ data:extend({
       {type = "item", name = "sp-geological-science-pack-2", amount = 10},
       {type = "fluid", name = "sp-phosphoric-acid", amount = 30},
       {type = "fluid", name = "sp-aqueous-niobium", amount = 10},
-      {type = "item", name = "sp-catalyst", amount = 8},
       {type = "item", name = "sp-silica", amount = 10},
       {type = "item", name = "sp-zircon", amount = 10},
       {type = "item", name = "sp-magnesium-chloride", amount = 5},
@@ -4987,6 +5039,7 @@ data:extend({
     {
       {type = "item", name = "sp-computer-science-pack-2", amount = 20},
       {type = "item", name = "sp-advanced-processing-unit", amount = 20},
+      {type = "item", name = "sp-quantum-data-plane", amount = 5},
       {type = "item", name = "sp-control-unit", amount = 10},
       {type = "fluid", name = "sp-coolant", amount = 40}
     },
@@ -5005,7 +5058,7 @@ data:extend({
       {"iron-plate", 69}
     },
     result_count = 5,
-    result = "sp-production-science-pack-3"
+    result = "sp-nuclear-science-pack-3"
   },
   {
     type = "recipe",
@@ -5016,7 +5069,10 @@ data:extend({
     ingredients =
     {
       {"production-science-pack", 10},
-      {"iron-plate", 69}
+      {"sp-compressor", 5},
+      {"sp-dynamo", 5},
+      {"sp-cryostat", 5},
+      {"sp-turbopump", 5}
     },
     result_count = 5,
     result = "sp-production-science-pack-3"
@@ -5638,6 +5694,7 @@ data:extend({
     category = "chemistry",
     subgroup = "raw-resource",
     enabled = false,
+    hide_from_player_crafting = true,
     energy_required = 60,
     ingredients = {
       {type = "item", name = "sp-used-up-fuel-rod", amount = 5},
