@@ -20,57 +20,139 @@ util.disable_recipe("rare-metals")
 
 -- Science recipe changes
 util.change_recipe_ingredients("automation-science-pack",
-  {{"automation-core", 1}, {"motor", 1}, {"blank-tech-card", 5}},
-  {{"automation-core", 2}, {"motor", 2}, {"blank-tech-card", 5}},
+  {
+    {"automation-core", 1},
+    {"motor", 1},
+    {"blank-tech-card", 5}
+  },
+  {
+    {"automation-core", 2},
+    {"motor", 2},
+    {"blank-tech-card", 5}
+  },
   20,
   30)
 util.change_recipe_ingredients("logistic-science-pack",
-  {{"sp-gearbox", 5}, {"electric-motor", 1}, {"engine-unit", 1}, {"blank-tech-card", 5}},
-  {{"sp-gearbox", 8}, {"electric-motor", 2}, {"engine-unit", 1}, {"blank-tech-card", 5}},
+  {
+    {"sp-gearbox", 5},
+    {"electric-motor", 1},
+    {"engine-unit", 1},
+    {"blank-tech-card", 5}
+  },
+  {
+    {"sp-gearbox", 8},
+    {"electric-motor", 2},
+    {"engine-unit", 1},
+    {"blank-tech-card", 5}
+  },
   20,
   30)
 data.raw.recipe["chemical-science-pack"].category = "chemistry"
 util.change_recipe_ingredients("chemical-science-pack",
-  {{type = "fluid", name = "sulfuric-acid", amount = 50}, {type = "fluid", name = "chlorine", amount = 30}, {"plastic-bar", 5}, {"sp-graphite", 3}, {"blank-tech-card", 5}},
-  {{type = "fluid", name = "sulfuric-acid", amount = 75}, {type = "fluid", name = "chlorine", amount = 50}, {"plastic-bar", 5}, {"sp-graphite", 5}, {"blank-tech-card", 5}},
+  {
+    {type = "fluid", name = "sulfuric-acid", amount = 50},
+    {type = "fluid", name = "chlorine", amount = 30},
+    {"plastic-bar", 5},
+    {"sp-graphite", 3},
+    {"blank-tech-card", 5}
+  },
+  {
+    {type = "fluid", name = "sulfuric-acid", amount = 75},
+    {type = "fluid", name = "chlorine", amount = 50},
+    {"plastic-bar", 5},
+    {"sp-graphite", 5},
+    {"blank-tech-card", 5}
+  },
   20,
   30)
 util.change_recipe_ingredients("military-science-pack",
-  {{"copper-plate", 69}, {"blank-tech-card", 5}},
-  {{"copper-plate", 69}, {"blank-tech-card", 5}},
+  {
+    {"copper-plate", 69},
+    {"blank-tech-card", 5}
+  },
+  {
+    {"copper-plate", 69},
+    {"blank-tech-card", 5}
+  },
   20,
   30)
 util.change_recipe_ingredients("production-science-pack",
-  {{"sp-filter", 5}, {"sp-actuator", 5}, {"kr-steel-pump", 1}, {"sp-relay", 5}, {"blank-tech-card", 5}},
-  {{"sp-filter", 8}, {"sp-actuator", 8}, {"kr-steel-pump", 2}, {"sp-relay", 8}, {"blank-tech-card", 5}},
+  {
+    {"sp-filter", 5},
+    {"sp-actuator", 5},
+    {"kr-steel-pump", 1},
+    {"sp-relay", 5},
+    {"blank-tech-card", 5}
+  },
+  {
+    {"sp-filter", 8},
+    {"sp-actuator", 8},
+    {"kr-steel-pump", 2},
+    {"sp-relay", 8},
+    {"blank-tech-card", 5}
+  },
   20,
   30)
 util.change_recipe_ingredients("utility-science-pack",
-  {{"electric-furnace", 1}, {"kr-electric-mining-drill-mk2", 1}, {"assembling-machine-2", 1}, {"kr-research-server", 1}},
-  {{"electric-furnace", 2}, {"kr-electric-mining-drill-mk2", 2}, {"assembling-machine-2", 2}, {"kr-research-server", 1}},
+  {
+    {"electric-furnace", 1},
+    {"kr-electric-mining-drill-mk2", 1},
+    {"assembling-machine-2", 1},
+    {"kr-research-server", 1}
+  },
+  {
+    {"electric-furnace", 2},
+    {"kr-electric-mining-drill-mk2", 2},
+    {"assembling-machine-2", 2},
+    {"kr-research-server", 1}
+  },
   80,
   120)
 data.raw.recipe["utility-science-pack"].results = {
   {type = "item", name = "utility-science-pack", amount = 20}
 }
 util.change_recipe_ingredients("matter-tech-card",
-  {{"copper-plate", 69}, {"blank-tech-card", 5}},
-  {{"copper-plate", 69}, {"blank-tech-card", 5}},
+  {
+    {"copper-plate", 69},
+    {"blank-tech-card", 5}
+  },
+  {
+    {"copper-plate", 69},
+    {"blank-tech-card", 5}
+  },
   20,
   30)
 util.change_recipe_ingredients("space-science-pack", -- Optimization tech card
-  {{"copper-plate", 69}, {"blank-tech-card", 5}},
-  {{"copper-plate", 69}, {"blank-tech-card", 5}},
+  {
+    {"copper-plate", 69},
+    {"blank-tech-card", 5}
+  },
+  {
+    {"copper-plate", 69},
+    {"blank-tech-card", 5}
+  },
   20,
   30)
 util.change_recipe_ingredients("advanced-tech-card",
-  {{"copper-plate", 69}, {"blank-tech-card", 5}},
-  {{"copper-plate", 69}, {"blank-tech-card", 5}},
+  {
+    {"copper-plate", 69},
+    {"blank-tech-card", 5}
+  },
+  {
+    {"copper-plate", 69},
+    {"blank-tech-card", 5}
+  },
   20,
   30)
 util.change_recipe_ingredients("singularity-tech-card",
-  {{"copper-plate", 69}, {"blank-tech-card", 5}},
-  {{"copper-plate", 69}, {"blank-tech-card", 5}},
+  {
+    {"copper-plate", 69},
+    {"blank-tech-card", 5}
+  },
+  {
+    {"copper-plate", 69},
+    {"blank-tech-card", 5}
+  },
   20,
   30)
 

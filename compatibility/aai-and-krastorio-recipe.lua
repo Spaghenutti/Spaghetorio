@@ -1186,8 +1186,14 @@ data:extend({
 ------------------------------------------------------------------------------
 -- Change recipes
 util.change_recipe_ingredients("sp-methyl-tert-butyl-ether",
-  {{type = "fluid", name = "biomethanol", amount = 50}, {type = "fluid", name = "sp-propane", amount = 50}},
-  {{type = "fluid", name = "biomethanol", amount = 80}, {type = "fluid", name = "sp-propane", amount = 80}},
+  {
+    {type = "fluid", name = "biomethanol", amount = 50},
+    {type = "fluid", name = "sp-propane", amount = 50}
+  },
+  {
+    {type = "fluid", name = "biomethanol", amount = 80},
+    {type = "fluid", name = "sp-propane", amount = 80}
+  },
   3.6,
   6)
 
@@ -1370,16 +1376,26 @@ data.raw.recipe["dirty-water-filtration-3"].hide_from_player_crafting = true
 -- MARK: base crafting changes
 data.raw.recipe["steel-beam"].category = "smelting"
 util.change_recipe_ingredients("steel-plate",
-  {{"iron-plate", 5}, {"sp-graphite", 1}},
-  {{"iron-plate", 8}, {"sp-graphite", 2}},
+  {
+    {"iron-plate", 5},
+    {"sp-graphite", 1}
+  },
+  {
+    {"iron-plate", 8},
+    {"sp-graphite", 2}
+  },
   20,
   24)
 data.raw.recipe["steel-beam"].results = {{"steel-beam", 2}}
 data.raw.recipe["imersium-beam"].hidden = true
 data.raw.recipe["kr-s-c-imersium-beam"].category = "smelting"
 util.change_recipe_ingredients("silicon",
-  {{"sp-silica", 18}},
-  {{"sp-silica", 24}},
+  {
+    {"sp-silica", 18}
+  },
+  {
+    {"sp-silica", 24}
+  },
   60,
   80)
 
@@ -1387,8 +1403,16 @@ util.change_recipe_ingredients("silicon",
 data.raw.recipe["rare-metals"].category = "chemistry"
 data.raw.recipe["rare-metals"].hide_from_player_crafting = true
 util.change_recipe_ingredients("rare-metals",
-  {{type = "fluid", name = "mineral-water", amount = 10}, {type = "fluid", name = "sp-sodium-hydroxide", amount = 20}, {"raw-rare-metals", 2}},
-  {{type = "fluid", name = "mineral-water", amount = 15}, {type = "fluid", name = "sp-sodium-hydroxide", amount = 30}, {"raw-rare-metals", 2}},
+  {
+    {type = "fluid", name = "mineral-water", amount = 10},
+    {type = "fluid", name = "sp-sodium-hydroxide", amount = 20},
+    {"raw-rare-metals", 2}
+  },
+  {
+    {type = "fluid", name = "mineral-water", amount = 15},
+    {type = "fluid", name = "sp-sodium-hydroxide", amount = 30},
+    {"raw-rare-metals", 2}
+  },
   3,
   5)
 data.raw.recipe["rare-metals"].results = {
@@ -1402,8 +1426,14 @@ data.raw.recipe["rare-metals"].results = {
 data.raw.recipe["rare-metals-2"].category = "chemistry"
 data.raw.recipe["rare-metals-2"].hide_from_player_crafting = true
 util.change_recipe_ingredients("rare-metals-2",
-  {{type = "fluid", name = "sp-sodium-hydroxide", amount = 15}, {"enriched-rare-metals", 3}},
-  {{type = "fluid", name = "sp-sodium-hydroxide", amount = 20}, {"enriched-rare-metals", 3}},
+  {
+    {type = "fluid", name = "sp-sodium-hydroxide", amount = 15},
+    {"enriched-rare-metals", 3}
+  },
+  {
+    {type = "fluid", name = "sp-sodium-hydroxide", amount = 20},
+    {"enriched-rare-metals", 3}
+  },
   4,
   6)
 data.raw.recipe["rare-metals-2"].results = {
@@ -1422,325 +1452,997 @@ util.change_recipe_ingredients("iron-beam",
   16)
 table.insert(data.raw.recipe["inserter-parts"].ingredients, {type = "item", name = "sp-machined-parts", amount = 1})
 util.change_recipe_ingredients("electronic-circuit-stone",
-  {{"copper-cable", 3}, {"stone-tablet", 1}, {"sp-solder", 1}},
-  {{"copper-cable", 8}, {"stone-tablet", 2}, {"sp-solder", 2}},
+  {
+    {"copper-cable", 3},
+    {"stone-tablet", 1},
+    {"sp-solder", 1}
+  },
+  {
+    {"copper-cable", 8},
+    {"stone-tablet", 2},
+    {"sp-solder", 2}
+  },
   0.5,
   1)
 util.change_recipe_ingredients("pollution-filter",
-  {{"sp-anodized-aluminum", 1}, {"sp-composites", 1}, {"sp-filter", 2}, {"sp-catalyst", 1}},
-  {{"sp-anodized-aluminum", 2}, {"sp-composites", 2}, {"sp-filter", 3}, {"sp-catalyst", 2}},
+  {
+    {"sp-anodized-aluminum", 1},
+    {"sp-composites", 1},
+    {"sp-filter", 2},
+    {"sp-catalyst", 1}
+  },
+  {
+    {"sp-anodized-aluminum", 2},
+    {"sp-composites", 2},
+    {"sp-filter", 3},
+    {"sp-catalyst", 2}
+  },
   4,
   6)
 util.change_recipe_ingredients("kr-medium-container",
-  {{"sp-bolts", 8}, {"steel-plate", 12}, {"steel-beam", 4}},
-  {{"sp-bolts", 16}, {"steel-plate", 24}, {"steel-beam", 8}},
+  {
+    {"sp-bolts", 8},
+    {"steel-plate", 12},
+    {"steel-beam", 4}
+  },
+  {
+    {"sp-bolts", 16},
+    {"steel-plate", 24},
+    {"steel-beam", 8}
+  },
   2,
   4)
 util.change_recipe_ingredients("kr-big-container",  -- "warehouse"
-  {{"sp-bolts", 8}, {"steel-plate", 40}, {"steel-beam", 12}},
-  {{"sp-bolts", 16}, {"steel-plate", 80}, {"steel-beam", 24}},
+  {
+    {"sp-bolts", 8},
+    {"steel-plate", 40},
+    {"steel-beam", 12}
+  },
+  {
+    {"sp-bolts", 16},
+    {"steel-plate", 80},
+    {"steel-beam", 24}
+  },
   6,
   12)
 util.change_recipe_ingredients("kr-medium-storage-container",
-  {{"kr-medium-container", 1}, {"advanced-circuit", 5}},
-  {{"kr-medium-container", 1}, {"advanced-circuit", 10}},
+  {
+    {"kr-medium-container", 1},
+    {"advanced-circuit", 5}
+  },
+  {
+    {"kr-medium-container", 1},
+    {"advanced-circuit", 10}
+  },
   1.5,
   3)
 util.change_recipe_ingredients("kr-big-storage-container",
-  {{"kr-big-container", 1}, {"advanced-circuit", 20}},
-  {{"kr-big-container", 1}, {"advanced-circuit", 40}},
+  {
+    {"kr-big-container", 1},
+    {"advanced-circuit", 20}
+  },
+  {
+    {"kr-big-container", 1},
+    {"advanced-circuit", 40}
+  },
   5,
   8)
 util.change_recipe_ingredients("kr-medium-passive-provider-container",
-  {{"kr-medium-container", 1}, {"advanced-circuit", 5}},
-  {{"kr-medium-container", 1}, {"advanced-circuit", 10}},
+  {
+    {"kr-medium-container", 1},
+    {"advanced-circuit", 5}
+  },
+  {
+    {"kr-medium-container", 1},
+    {"advanced-circuit", 10}
+  },
   1.5,
   3)
 util.change_recipe_ingredients("kr-big-passive-provider-container",
-  {{"kr-big-container", 1}, {"advanced-circuit", 20}},
-  {{"kr-big-container", 1}, {"advanced-circuit", 40}},
+  {
+    {"kr-big-container", 1},
+    {"advanced-circuit", 20}
+  },
+  {
+    {"kr-big-container", 1},
+    {"advanced-circuit", 40}
+  },
   5,
   8)
 util.change_recipe_ingredients("kr-medium-active-provider-container",
-  {{"kr-medium-container", 1}, {"processing-unit", 5}},
-  {{"kr-medium-container", 1}, {"processing-unit", 10}},
+  {
+    {"kr-medium-container", 1},
+    {"processing-unit", 5}
+  },
+  {
+    {"kr-medium-container", 1},
+    {"processing-unit", 10}
+  },
   1.5,
   3)
 util.change_recipe_ingredients("kr-big-active-provider-container",
-  {{"kr-big-container", 1}, {"processing-unit", 20}, {"sp-control-unit", 5}},
-  {{"kr-big-container", 1}, {"processing-unit", 40}, {"sp-control-unit", 8}},
+  {
+    {"kr-big-container", 1},
+    {"processing-unit", 20},
+    {"sp-control-unit", 5}
+  },
+  {
+    {"kr-big-container", 1},
+    {"processing-unit", 40},
+    {"sp-control-unit", 8}
+  },
   5,
   8)
 util.change_recipe_ingredients("kr-medium-requester-container",
-  {{"kr-medium-container", 1}, {"processing-unit", 5}},
-  {{"kr-medium-container", 1}, {"processing-unit", 10}},
+  {
+    {"kr-medium-container", 1},
+    {"processing-unit", 5}
+  },
+  {
+    {"kr-medium-container", 1},
+    {"processing-unit", 10}
+  },
   1.5,
   3)
 util.change_recipe_ingredients("kr-big-requester-container",
-  {{"kr-big-container", 1}, {"processing-unit", 20}, {"sp-control-unit", 5}},
-  {{"kr-big-container", 1}, {"processing-unit", 40}, {"sp-control-unit", 8}},
+  {
+    {"kr-big-container", 1},
+    {"processing-unit", 20},
+    {"sp-control-unit", 5}
+  },
+  {
+    {"kr-big-container", 1},
+    {"processing-unit", 40},
+    {"sp-control-unit", 8}
+  },
   5,
   8)
 util.change_recipe_ingredients("kr-medium-buffer-container",
-  {{"kr-medium-container", 1}, {"processing-unit", 5}},
-  {{"kr-medium-container", 1}, {"processing-unit", 10}},
+  {
+    {"kr-medium-container", 1},
+    {"processing-unit", 5}
+  },
+  {
+    {"kr-medium-container", 1},
+    {"processing-unit", 10}
+  },
   1.5,
   3)
 util.change_recipe_ingredients("kr-big-buffer-container",
-  {{"kr-big-container", 1}, {"processing-unit", 20}, {"sp-control-unit", 5}},
-  {{"kr-big-container", 1}, {"processing-unit", 40}, {"sp-control-unit", 8}},
+  {
+    {"kr-big-container", 1},
+    {"processing-unit", 20},
+    {"sp-control-unit", 5}
+  },
+  {
+    {"kr-big-container", 1},
+    {"processing-unit", 40},
+    {"sp-control-unit", 8}
+  },
   5,
   8)
 util.change_recipe_ingredients("kr-fluid-storage-1",  -- "large storage tank"
-  {{"sp-bolts", 8}, {"sp-stainless-steel", 10}, {"sp-brass", 4}, {"sp-valve", 4}, {"sp-flange", 4}},
-  {{"sp-bolts", 16}, {"sp-stainless-steel", 20}, {"sp-brass", 8}, {"sp-valve", 8}, {"sp-flange", 8}},
+  {
+    {"sp-bolts", 8},
+    {"sp-stainless-steel", 10},
+    {"sp-brass", 4},
+    {"sp-valve", 4},
+    {"sp-flange", 4}
+  },
+  {
+    {"sp-bolts", 16},
+    {"sp-stainless-steel", 20},
+    {"sp-brass", 8},
+    {"sp-valve", 8},
+    {"sp-flange", 8}
+  },
   6,
   12)
 util.change_recipe_ingredients("kr-fluid-storage-2",  -- "huge storage tank"
-  {{"sp-bolts", 30}, {"sp-stainless-steel", 40}, {"sp-brass", 16}, {"sp-valve", 12}, {"sp-flange", 12}},
-  {{"sp-bolts", 40}, {"sp-stainless-steel", 80}, {"sp-brass", 32}, {"sp-valve", 24}, {"sp-flange", 24}},
+  {
+    {"sp-bolts", 30},
+    {"sp-stainless-steel", 40},
+    {"sp-brass", 16},
+    {"sp-valve", 12},
+    {"sp-flange", 12}
+  },
+  {
+    {"sp-bolts", 40},
+    {"sp-stainless-steel", 80},
+    {"sp-brass", 32},
+    {"sp-valve", 24},
+    {"sp-flange", 24}
+  },
   16,
   30)
 util.change_recipe_ingredients("lithium-sulfur-battery",  -- "huge storage tank"
-  {{"lithium", 4}, {"sp-cobalt-billet", 1}, {"sp-aluminum-sheet", 1}, {type="fluid", name="sulfuric-acid", amount=10}, {"sp-graphite", 1}, {"sp-electrolyte", 1}},
-  {{"lithium", 6}, {"sp-cobalt-billet", 2}, {"sp-aluminum-sheet", 1}, {type="fluid", name="sulfuric-acid", amount=20}, {"sp-graphite", 1}, {"sp-electrolyte", 1}},
+  {
+    {"lithium", 4},
+    {"sp-cobalt-billet", 1},
+    {"sp-aluminum-sheet", 1},
+    {type="fluid", name="sulfuric-acid", amount=10},
+    {"sp-graphite", 1},
+    {"sp-electrolyte", 1}
+  },
+  {
+    {"lithium", 6},
+    {"sp-cobalt-billet", 2},
+    {"sp-aluminum-sheet", 1},
+    {type="fluid", name="sulfuric-acid", amount=20},
+    {"sp-graphite", 1},
+    {"sp-electrolyte", 1}
+  },
   4,
   6)
 
 -- MARK: Krastorio Buildings
 util.change_recipe_ingredients("kr-loader",
-  {{"motor", 1}, {"sp-machined-parts", 2}, {"sp-bolts", 4}, {"transport-belt", 1}},
-  {{"motor", 1}, {"sp-machined-parts", 4}, {"sp-bolts", 6}, {"transport-belt", 1}},
+  {
+    {"motor", 1},
+    {"sp-machined-parts", 2},
+    {"sp-bolts", 4},
+    {"transport-belt", 1}
+  },
+  {
+    {"motor", 1},
+    {"sp-machined-parts", 4},
+    {"sp-bolts", 6},
+    {"transport-belt", 1}
+  },
   2,
   3)
 util.change_recipe_ingredients("kr-fast-loader",
-  {{"sp-aluminum-frame", 2}, {"electric-motor", 2}, {"fast-transport-belt", 1}, {"steel-gear-wheel", 4}, {"sp-bolts", 4}, {"electronic-circuit", 2}},
-  {{"sp-aluminum-frame", 4}, {"electric-motor", 2}, {"fast-transport-belt", 1}, {"steel-gear-wheel", 6}, {"sp-bolts", 6}, {"electronic-circuit", 3}},
+  {
+    {"sp-aluminum-frame", 2},
+    {"electric-motor", 2},
+    {"fast-transport-belt", 1},
+    {"steel-gear-wheel", 4},
+    {"sp-bolts", 4},
+    {"electronic-circuit", 2}
+  },
+  {
+    {"sp-aluminum-frame", 4},
+    {"electric-motor", 2},
+    {"fast-transport-belt", 1},
+    {"steel-gear-wheel", 6},
+    {"sp-bolts", 6},
+    {"electronic-circuit", 3}
+  },
   2,
   3)
 util.change_recipe_ingredients("kr-express-loader",
-  {{"sp-titanium-frame", 2}, {"sp-actuator", 4}, {"express-transport-belt", 1}, {"sp-bolts", 6}, {"advanced-circuit", 2}},
-  {{"sp-titanium-frame", 4}, {"sp-actuator", 6}, {"express-transport-belt", 1}, {"sp-bolts", 8}, {"advanced-circuit", 3}},
+  {
+    {"sp-titanium-frame", 2},
+    {"sp-actuator", 4},
+    {"express-transport-belt", 1},
+    {"sp-bolts", 6},
+    {"advanced-circuit", 2}
+  },
+  {
+    {"sp-titanium-frame", 4},
+    {"sp-actuator", 6},
+    {"express-transport-belt", 1},
+    {"sp-bolts", 8},
+    {"advanced-circuit", 3}
+  },
   2,
   3)
 util.change_recipe_ingredients("kr-advanced-transport-belt",
-  {{"processing-unit", 1}, {"electric-motor", 2}, {"sp-ball-bearing", 2}, {"sp-electromagnet", 2}, {"sp-aluminum-brass", 2}, {"low-density-structure", 1}},
-  {{"processing-unit", 2}, {"electric-motor", 2}, {"sp-ball-bearing", 4}, {"sp-electromagnet", 3}, {"sp-aluminum-brass", 3}, {"low-density-structure", 1}},
+  {
+    {"processing-unit", 1},
+    {"electric-motor", 2},
+    {"sp-ball-bearing", 2},
+    {"sp-electromagnet", 2},
+    {"sp-aluminum-brass", 2},
+    {"low-density-structure", 1}
+  },
+  {
+    {"processing-unit", 2},
+    {"electric-motor", 2},
+    {"sp-ball-bearing", 4},
+    {"sp-electromagnet", 3},
+    {"sp-aluminum-brass", 3},
+    {"low-density-structure", 1}
+  },
   1,
   1.5)
 util.change_recipe_ingredients("kr-advanced-underground-belt",
-  {{"kr-advanced-transport-belt", 16}, {"sp-TiNb", 4}, {"sp-invar", 5}, {"sp-heavy-gearbox", 4}, {"sp-compressor", 2}, {"sp-bolts", 20}},
-  {{"kr-advanced-transport-belt", 16}, {"sp-TiNb", 6}, {"sp-invar", 10}, {"sp-heavy-gearbox", 6}, {"sp-compressor", 2}, {"sp-bolts", 30}},
+  {
+    {"kr-advanced-transport-belt", 16},
+    {"sp-TiNb", 4},
+    {"sp-invar", 5},
+    {"sp-heavy-gearbox", 4},
+    {"sp-compressor", 2},
+    {"sp-bolts", 20}
+  },
+  {
+    {"kr-advanced-transport-belt", 16},
+    {"sp-TiNb", 6},
+    {"sp-invar", 10},
+    {"sp-heavy-gearbox", 6},
+    {"sp-compressor", 2},
+    {"sp-bolts", 30}
+  },
   3,
   5)
 util.change_recipe_ingredients("kr-advanced-splitter",
-  {{"kr-advanced-transport-belt", 2}, {"sp-invar", 3}, {"processing-unit", 2}, {"sp-actuator", 4}, {"sp-bolts", 6}},
-  {{"kr-advanced-transport-belt", 2}, {"sp-invar", 4}, {"processing-unit", 4}, {"sp-actuator", 6}, {"sp-bolts", 8}},
+  {
+    {"kr-advanced-transport-belt", 2},
+    {"sp-invar", 3},
+    {"processing-unit", 2},
+    {"sp-actuator", 4},
+    {"sp-bolts", 6}
+  },
+  {
+    {"kr-advanced-transport-belt", 2},
+    {"sp-invar", 4},
+    {"processing-unit", 4},
+    {"sp-actuator", 6},
+    {"sp-bolts", 8}
+  },
   3,
   5)
 util.change_recipe_ingredients("kr-advanced-loader",
-  {{"kr-advanced-transport-belt", 1}, {"sp-TiNb", 4}, {"processing-unit", 2}, {"sp-compressor", 2}, {"sp-bolts", 4}},
-  {{"kr-advanced-transport-belt", 1}, {"sp-TiNb", 6}, {"processing-unit", 4}, {"sp-compressor", 4}, {"sp-bolts", 6}},
+  {
+    {"kr-advanced-transport-belt", 1},
+    {"sp-TiNb", 4},
+    {"processing-unit", 2},
+    {"sp-compressor", 2},
+    {"sp-bolts", 4}
+  },
+  {
+    {"kr-advanced-transport-belt", 1},
+    {"sp-TiNb", 6},
+    {"processing-unit", 4},
+    {"sp-compressor", 4},
+    {"sp-bolts", 6}
+  },
   3,
   5)
 util.change_recipe_ingredients("kr-superior-transport-belt",
-  {{"sp-advanced-processing-unit", 69}},
-  {{"sp-advanced-processing-unit", 69}},
+  {
+    {"sp-advanced-processing-unit", 69}
+  },
+  {
+    {"sp-advanced-processing-unit", 69}
+  },
   2,
   3)
 util.change_recipe_ingredients("kr-superior-underground-belt",
-  {{"kr-superior-transport-belt", 24}},
-  {{"kr-superior-transport-belt", 24}},
+  {
+    {"kr-superior-transport-belt", 24}
+  },
+  {
+    {"kr-superior-transport-belt", 24}
+  },
   5,
   8)
 util.change_recipe_ingredients("kr-superior-splitter",
-  {{"kr-superior-transport-belt", 2}},
-  {{"kr-superior-transport-belt", 2}},
+  {
+    {"kr-superior-transport-belt", 2}
+  },
+  {
+    {"kr-superior-transport-belt", 2}
+  },
   4,
   6)
 util.change_recipe_ingredients("kr-superior-loader",
-  {{"kr-superior-transport-belt", 1}},
-  {{"kr-superior-transport-belt", 1},},
+  {
+    {"kr-superior-transport-belt", 1}
+  },
+  {
+    {"kr-superior-transport-belt", 1}
+  },
   3,
   5)
 util.change_recipe_ingredients("kr-steel-pipe",
-  {{"sp-stainless-steel", 1}, {"sp-flange", 2}},
-  {{"sp-stainless-steel", 2}, {"sp-flange", 2}},
+  {
+    {"sp-stainless-steel", 1},
+    {"sp-flange", 2}
+  },
+  {
+    {"sp-stainless-steel", 2},
+    {"sp-flange", 2}
+  },
   1,
   1.5)
 util.change_recipe_ingredients("kr-steel-pipe-to-ground",
-  {{"kr-steel-pipe", 8}, {"sp-flange", 2}, {"sp-bolts", 8}},
-  {{"kr-steel-pipe", 12}, {"sp-flange", 2}, {"sp-bolts", 8}},
+  {
+    {"kr-steel-pipe", 8},
+    {"sp-flange", 2},
+    {"sp-bolts", 8}
+  },
+  {
+    {"kr-steel-pipe", 12},
+    {"sp-flange", 2},
+    {"sp-bolts", 8}
+  },
   8,
   12)
 util.change_recipe_ingredients("kr-black-reinforced-plate",
-  {{"refined-concrete", 20}, {"sp-zircon", 2}, {"sp-tungsten-slab", 2}},
-  {{"refined-concrete", 20}, {"sp-zircon", 2}, {"sp-tungsten-slab", 2}},
+  {
+    {"refined-concrete", 20},
+    {"sp-zircon", 2},
+    {"sp-tungsten-slab", 2}
+  },
+  {
+    {"refined-concrete", 20},
+    {"sp-zircon", 2},
+    {"sp-tungsten-slab", 2}
+  },
   5,
   8)
 util.change_recipe_ingredients("kr-white-reinforced-plate",
-  {{"refined-concrete", 20}, {"sp-zircon", 2}, {"sp-titanium-ingot", 2}},
-  {{"refined-concrete", 20}, {"sp-zircon", 2}, {"sp-titanium-ingot", 2}},
+  {
+    {"refined-concrete", 20},
+    {"sp-zircon", 2},
+    {"sp-titanium-ingot", 2}
+  },
+  {
+    {"refined-concrete", 20},
+    {"sp-zircon", 2},
+    {"sp-titanium-ingot", 2}
+  },
   5,
   8)
 util.change_recipe_ingredients("kr-steel-pump",
-  {{"steel-plate", 5}, {"engine-unit", 2}, {"sp-bolts", 12}, {"sp-flange", 2}, {"sp-machined-parts", 4}},
-  {{"steel-plate", 8}, {"engine-unit", 2}, {"sp-bolts", 20}, {"sp-flange", 2}, {"sp-machined-parts", 10}},
+  {
+    {"steel-plate", 5},
+    {"engine-unit", 2},
+    {"sp-bolts", 12},
+    {"sp-flange", 2},
+    {"sp-machined-parts", 4}
+  },
+  {
+    {"steel-plate", 8},
+    {"engine-unit", 2},
+    {"sp-bolts", 20},
+    {"sp-flange", 2},
+    {"sp-machined-parts", 10}
+  },
   2,
   3)
 util.change_recipe_ingredients("kr-wind-turbine",
-  {{"iron-plate", 12}, {"stone-brick", 4}, {"sp-bolts", 4}, {"electric-motor", 1}},
-  {{"iron-plate", 24}, {"stone-brick", 4}, {"sp-bolts", 10}, {"electric-motor", 2}},
+  {
+    {"iron-plate", 12},
+    {"stone-brick", 4},
+    {"sp-bolts", 4},
+    {"electric-motor", 1}
+  },
+  {
+    {"iron-plate", 24},
+    {"stone-brick", 4},
+    {"sp-bolts", 10},
+    {"electric-motor", 2}
+  },
   10,
   20)
 util.change_recipe_ingredients("kr-crusher",
-  {{"iron-beam", 12}, {"iron-gear-wheel", 30}, {"sp-gearbox", 8}, {"sp-bolts", 36}, {"motor", 10}, {"stone-brick", 16}},
-  {{"iron-beam", 24}, {"iron-gear-wheel", 60}, {"sp-gearbox", 12}, {"sp-bolts", 72}, {"motor", 20}, {"stone-brick", 32}},
+  {
+    {"iron-beam", 12},
+    {"iron-gear-wheel", 30},
+    {"sp-gearbox", 8},
+    {"sp-bolts", 36},
+    {"motor", 10},
+    {"stone-brick", 16}
+  },
+  {
+    {"iron-beam", 24},
+    {"iron-gear-wheel", 60},
+    {"sp-gearbox", 12},
+    {"sp-bolts", 72},
+    {"motor", 20},
+    {"stone-brick", 32}
+  },
   12,
   24)
   util.change_recipe_ingredients("kr-fluid-burner",
-  {{"steel-beam", 16}, {"sp-copper-tube", 30}, {"sp-valve", 4}, {"stone-brick", 8}, {"sp-bolts", 16}},
-  {{"steel-beam", 24}, {"sp-copper-tube", 50}, {"sp-valve", 8}, {"stone-brick", 20}, {"sp-bolts", 24}},
+  {
+    {"steel-beam", 16},
+    {"sp-copper-tube", 30},
+    {"sp-valve", 4},
+    {"stone-brick", 8},
+    {"sp-bolts", 16}
+  },
+  {
+    {"steel-beam", 24},
+    {"sp-copper-tube", 50},
+    {"sp-valve", 8},
+    {"stone-brick", 20},
+    {"sp-bolts", 24}
+  },
   10,
   20)
 util.change_recipe_ingredients("kr-greenhouse",
-  {{"steel-beam", 24}, {"sp-bolts", 48}, {"glass", 40}, {"stone-brick", 16}, {"landfill", 25}, {"sp-copper-tube", 20}, {"sp-valve", 8}},
-  {{"steel-beam", 48}, {"sp-bolts", 96}, {"glass", 80}, {"stone-brick", 32}, {"landfill", 25}, {"sp-copper-tube", 40}, {"sp-valve", 16}},
+  {
+    {"steel-beam", 24},
+    {"sp-bolts", 48},
+    {"glass", 40},
+    {"stone-brick", 16},
+    {"landfill", 25},
+    {"sp-copper-tube", 20},
+    {"sp-valve", 8}
+  },
+  {
+    {"steel-beam", 48},
+    {"sp-bolts", 96},
+    {"glass", 80},
+    {"stone-brick", 32},
+    {"landfill", 25},
+    {"sp-copper-tube", 40},
+    {"sp-valve", 16}
+  },
   20,
   40)
 util.change_recipe_ingredients("kr-filtration-plant",
-  {{"steel-beam", 48}, {"sp-copper-tube", 50}, {"sp-bolts", 60}, {"glass", 20}, {"electric-motor", 12}, {"electronic-circuit", 12}, {"sp-valve", 16}},
-  {{"steel-beam", 96}, {"sp-copper-tube", 100}, {"sp-bolts", 120}, {"glass", 40}, {"electric-motor", 24}, {"electronic-circuit", 24}, {"sp-valve", 24}},
+  {
+    {"steel-beam", 48},
+    {"sp-copper-tube", 50},
+    {"sp-bolts", 60},
+    {"glass", 20},
+    {"electric-motor", 12},
+    {"electronic-circuit", 12},
+    {"sp-valve", 16}
+  },
+  {
+    {"steel-beam", 96},
+    {"sp-copper-tube", 100},
+    {"sp-bolts", 120},
+    {"glass", 40},
+    {"electric-motor", 24},
+    {"electronic-circuit", 24},
+    {"sp-valve", 24}
+  },
   24,
   48)
 util.change_recipe_ingredients("kr-electrolysis-plant",
-  {{"steel-beam", 36}, {"sp-bolts", 80}, {"glass", 24}, {"engine-unit", 8}, {"electronic-circuit", 8}, {"sp-valve", 8}},
-  {{"iron-beam", 72}, {"sp-bolts", 160}, {"glass", 48}, {"engine-unit", 12}, {"electronic-circuit", 12}, {"sp-valve", 16}},
+  {
+    {"steel-beam", 36},
+    {"sp-bolts", 80},
+    {"glass", 24},
+    {"engine-unit", 8},
+    {"electronic-circuit", 8},
+    {"sp-valve", 8}
+  },
+  {
+    {"iron-beam", 72},
+    {"sp-bolts", 160},
+    {"glass", 48},
+    {"engine-unit", 12},
+    {"electronic-circuit", 12},
+    {"sp-valve", 16}
+  },
   20,
   40)
 util.change_recipe_ingredients("kr-gas-power-station",
-  {{"steel-beam", 20}, {"sp-bolts", 30}, {"kr-steel-pipe", 20}, {"kr-steel-pump", 8}, {"sp-dynamo", 4}, {"sp-valve", 10}},
-  {{"steel-beam", 40}, {"sp-bolts", 60}, {"kr-steel-pipe", 40}, {"kr-steel-pump", 12}, {"sp-dynamo", 8}, {"sp-valve", 20}},
+  {
+    {"steel-beam", 20},
+    {"sp-bolts", 30},
+    {"kr-steel-pipe", 20},
+    {"kr-steel-pump", 8},
+    {"sp-dynamo", 4}, 
+    {"sp-valve", 10}
+  },
+  {
+    {"steel-beam", 40},
+    {"sp-bolts", 60},
+    {"kr-steel-pipe", 40},
+    {"kr-steel-pump", 12},
+    {"sp-dynamo", 8},
+    {"sp-valve", 20}
+  },
   20,
   40)
 util.change_recipe_ingredients("kr-advanced-solar-panel",
-  {{type = "fluid", name = "nitric-acid", amount = 25}, {"imersite-crystal", 10}, {"sp-tellurium", 3}, {"sp-titanium-frame", 20}, {"processing-unit", 2}},
-  {{type = "fluid", name = "nitric-acid", amount = 50}, {"imersite-crystal", 15}, {"sp-tellurium", 10}, {"sp-titanium-frame", 50}, {"processing-unit", 3}},
+  {
+    {type = "fluid", name = "nitric-acid", amount = 25},
+    {"imersite-crystal", 10},
+    {"sp-tellurium", 3},
+    {"sp-titanium-frame", 20},
+    {"processing-unit", 2}
+  },
+  {
+    {type = "fluid", name = "nitric-acid", amount = 50},
+    {"imersite-crystal", 15},
+    {"sp-tellurium", 10},
+    {"sp-titanium-frame", 50},
+    {"processing-unit", 3}
+  },
   12,
   24)
 util.change_recipe_ingredients("kr-energy-storage",
-  {{"processing-unit", 10}, {"energy-control-unit", 30}, {"sp-yttrium", 8}, {"sp-cerium", 20}, {"sp-superconductor", 5}, {"sp-duralumin", 20}},
-  {{"processing-unit", 20}, {"energy-control-unit", 60}, {"sp-yttrium", 12}, {"sp-cerium", 30}, {"sp-superconductor", 8}, {"sp-duralumin", 40}},
+  {
+    {"processing-unit", 10},
+    {"energy-control-unit", 30},
+    {"sp-yttrium", 8},
+    {"sp-cerium", 20},
+    {"sp-superconductor", 5},
+    {"sp-duralumin", 20}
+  },
+  {
+    {"processing-unit", 20},
+    {"energy-control-unit", 60},
+    {"sp-yttrium", 12},
+    {"sp-cerium", 30},
+    {"sp-superconductor", 8},
+    {"sp-duralumin", 40}
+  },
   30,
   60)
 util.change_recipe_ingredients("kr-fusion-reactor",
-  {{"concrete", 1000}, {"sp-stainless-steel", 1000}, {"sp-tungsten-slab", 300}, {"sp-graphene", 500}, {"sp-heat-resistant-tile", 200}, {"sp-control-unit", 100}, {"sp-advanced-processing-unit", 50}, {"sp-glass-fiber", 100}, {"sp-plate-heat-exchanger", 60}, {"sp-cryostat", 40}, {"sp-neodymium-magnet", 200}, {"sp-superconductor", 40}, {"sp-electromagnet", 250}, {"heat-pipe", 100}},
-  {{"concrete", 4000}, {"sp-stainless-steel", 3000}, {"sp-tungsten-slab", 500}, {"sp-graphene", 1000}, {"sp-heat-resistant-tile", 200}, {"sp-control-unit", 300}, {"sp-advanced-processing-unit", 100}, {"sp-glass-fiber", 250}, {"sp-plate-heat-exchanger", 200}, {"sp-cryostat", 100}, {"sp-neodymium-magnet", 400}, {"sp-superconductor", 100}, {"sp-electromagnet", 600}, {"heat-pipe", 200}},
+  {
+    {"concrete", 1000},
+    {"sp-stainless-steel", 1000},
+    {"sp-tungsten-slab", 300},
+    {"sp-graphene", 500},
+    {"sp-heat-resistant-tile", 200},
+    {"sp-control-unit", 100},
+    {"sp-advanced-processing-unit", 50},
+    {"sp-glass-fiber", 100},
+    {"sp-plate-heat-exchanger", 60},
+    {"sp-cryostat", 40},
+    {"sp-neodymium-magnet", 200},
+    {"sp-superconductor", 40},
+    {"sp-electromagnet", 250},
+    {"heat-pipe", 100}
+  },
+  {
+    {"concrete", 4000},
+    {"sp-stainless-steel", 3000},
+    {"sp-tungsten-slab", 500},
+    {"sp-graphene", 1000},
+    {"sp-heat-resistant-tile", 200},
+    {"sp-control-unit", 300},
+    {"sp-advanced-processing-unit", 100},
+    {"sp-glass-fiber", 250},
+    {"sp-plate-heat-exchanger", 200},
+    {"sp-cryostat", 100},
+    {"sp-neodymium-magnet", 400},
+    {"sp-superconductor", 100},
+    {"sp-electromagnet", 600},
+    {"heat-pipe", 200}
+  },
   700,
   3000)
 util.change_recipe_ingredients("kr-advanced-steam-turbine",
-  {{"electric-engine-unit", 20}, {"sp-turbine-rotor", 3}, {"sp-turbine-stator", 3}, {"sp-TiAlSn", 50}, {"sp-heavy-ball-bearing", 20}, {"sp-tungsten-carbide", 50}, {"sp-monocrystal", 30}},
-  {{"electric-engine-unit", 40}, {"sp-turbine-rotor", 3}, {"sp-turbine-stator", 3}, {"sp-TiAlSn", 80}, {"sp-heavy-ball-bearing", 40}, {"sp-tungsten-carbide", 100}, {"sp-monocrystal", 50}},
+  {
+    {"electric-engine-unit", 20},
+    {"sp-turbine-rotor", 3},
+    {"sp-turbine-stator", 3},
+    {"sp-TiAlSn", 50},
+    {"sp-heavy-ball-bearing", 20},
+    {"sp-tungsten-carbide", 50},
+    {"sp-monocrystal", 30}
+  },
+  {
+    {"electric-engine-unit", 40},
+    {"sp-turbine-rotor", 3},
+    {"sp-turbine-stator", 3},
+    {"sp-TiAlSn", 80},
+    {"sp-heavy-ball-bearing", 40},
+    {"sp-tungsten-carbide", 100},
+    {"sp-monocrystal", 50}
+  },
   90,
   150)
 util.change_recipe_ingredients("kr-antimatter-reactor",
-  {{"ai-core", 100}, {"imersium-beam", 500}, {"energy-control-unit", 50}, {"sp-carbon-nanotubes", 200}, {"sp-nanowire", 120}, {"sp-plasma-capsule", 40}, {"sp-nanobot", 80}, {"sp-biochip", 100}, {"sp-flux-capacitor", 20}},
-  {{"ai-core", 200}, {"imersium-beam", 1000}, {"energy-control-unit", 100}, {"sp-carbon-nanotubes", 400}, {"sp-nanowire", 250}, {"sp-plasma-capsule", 80}, {"sp-nanobot", 200}, {"sp-biochip", 200}, {"sp-flux-capacitor", 40}},
+  {
+    {"ai-core", 100},
+    {"imersium-beam", 500},
+    {"energy-control-unit", 50},
+    {"sp-carbon-nanotubes", 200},
+    {"sp-nanowire", 120},
+    {"sp-plasma-capsule", 40},
+    {"sp-nanobot", 80},
+    {"sp-biochip", 100},
+    {"sp-flux-capacitor", 20}
+  },
+  {
+    {"ai-core", 200},
+    {"imersium-beam", 1000},
+    {"energy-control-unit", 100},
+    {"sp-carbon-nanotubes", 400},
+    {"sp-nanowire", 250},
+    {"sp-plasma-capsule", 80},
+    {"sp-nanobot", 200},
+    {"sp-biochip", 200},
+    {"sp-flux-capacitor", 40}
+  },
   1000,
   2000)
 util.change_recipe_ingredients("kr-electric-mining-drill-mk2",
-  {{"steel-beam", 12}, {"sp-bolts", 30}, {"sp-ceramics", 16}, {"electric-engine-unit", 4}, {"sp-TiNb", 8}, {"sp-heavy-gearbox", 4}, {"advanced-circuit", 6}},
-  {{"steel-beam", 20}, {"sp-bolts", 50}, {"sp-ceramics", 24}, {"electric-engine-unit", 6}, {"sp-TiNb", 16}, {"sp-heavy-gearbox", 10}, {"advanced-circuit", 10}},
+  {
+    {"steel-beam", 12},
+    {"sp-bolts", 30},
+    {"sp-ceramics", 16},
+    {"electric-engine-unit", 4},
+    {"sp-TiNb", 8},
+    {"sp-heavy-gearbox", 4},
+    {"advanced-circuit", 6}
+  },
+  {
+    {"steel-beam", 20},
+    {"sp-bolts", 50},
+    {"sp-ceramics", 24},
+    {"electric-engine-unit", 6},
+    {"sp-TiNb", 16},
+    {"sp-heavy-gearbox", 10},
+    {"advanced-circuit", 10}
+  },
   14,
   28)
 util.change_recipe_ingredients("kr-electric-mining-drill-mk3",
-  {{"sp-diamond", 8}, {"sp-niobium-steel", 20}, {"electric-engine-unit", 8}, {"sp-invar", 8}, {"sp-heavy-gearbox", 6}, {"processing-unit", 6}},
-  {{"sp-diamond", 16}, {"sp-niobium-steel", 36}, {"electric-engine-unit", 12}, {"sp-invar", 20}, {"sp-heavy-gearbox", 10}, {"processing-unit", 10}},
+  {
+    {"sp-diamond", 8},
+    {"sp-niobium-steel", 20},
+    {"electric-engine-unit", 8},
+    {"sp-invar", 8},
+    {"sp-heavy-gearbox", 6},
+    {"processing-unit", 6}
+  },
+  {
+    {"sp-diamond", 16},
+    {"sp-niobium-steel", 36},
+    {"electric-engine-unit", 12},
+    {"sp-invar", 20},
+    {"sp-heavy-gearbox", 10},
+    {"processing-unit", 10}
+  },
   20,
   40)
 util.change_recipe_ingredients("kr-quarry-drill",
-  {{"sp-diamond", 40}, {"sp-control-unit", 20}, {"sp-niobium-steel", 50}, {"electric-engine-unit", 20}, {"sp-invar", 20}, {"sp-carbon-nanotubes", 50}, {"sp-pressure-tube", 12}, {"sp-turbopump", 12}, {"refined-concrete", 120}},
-  {{"sp-diamond", 80}, {"sp-control-unit", 40}, {"sp-niobium-steel", 100}, {"electric-engine-unit", 40}, {"sp-invar", 40}, {"sp-carbon-nanotubes", 80}, {"sp-pressure-tube", 24}, {"sp-turbopump", 24}, {"refined-concrete", 200}},
+  {
+    {"sp-diamond", 40},
+    {"sp-control-unit", 20},
+    {"sp-niobium-steel", 50},
+    {"electric-engine-unit", 20},
+    {"sp-invar", 20},
+    {"sp-carbon-nanotubes", 50},
+    {"sp-pressure-tube", 12},
+    {"sp-turbopump", 12},
+    {"refined-concrete", 120}
+  },
+  {
+    {"sp-diamond", 80},
+    {"sp-control-unit", 40},
+    {"sp-niobium-steel", 100},
+    {"electric-engine-unit", 40},
+    {"sp-invar", 40},
+    {"sp-carbon-nanotubes", 80},
+    {"sp-pressure-tube", 24},
+    {"sp-turbopump", 24},
+    {"refined-concrete", 200}
+  },
   60,
   120)
 util.change_recipe_ingredients("kr-mineral-water-pumpjack",
-  {{"sp-stainless-steel", 16}, {"sp-bronze-rod", 12}, {"sp-pressure-tube", 12}, {"sp-bolts", 24}, {"engine-unit", 8}},
-  {{"sp-stainless-steel", 32}, {"sp-bronze-rod", 24}, {"sp-pressure-tube", 24}, {"sp-bolts", 48}, {"engine-unit", 16}},
+  {
+    {"sp-stainless-steel", 16},
+    {"sp-bronze-rod", 12},
+    {"sp-pressure-tube", 12},
+    {"sp-bolts", 24},
+    {"engine-unit", 8}
+  },
+  {
+    {"sp-stainless-steel", 32},
+    {"sp-bronze-rod", 24},
+    {"sp-pressure-tube", 24},
+    {"sp-bolts", 48},
+    {"engine-unit", 16}
+  },
   16,
   32)
 util.change_recipe_ingredients("kr-substation-mk2",
-  {{"sp-bolts", 20}, {"processing-unit", 4}, {"sp-aluminum-cable", 24}, {"imersium-beam", 12}, {"concrete", 16}, {"sp-electrode", 4}, {"sp-insulation-sheet", 12}},
-  {{"sp-bolts", 40}, {"processing-unit", 8}, {"sp-aluminum-cable", 48}, {"imersium-beam", 24}, {"concrete", 32}, {"sp-electrode", 8}, {"sp-insulation-sheet", 20}},
+  {
+    {"sp-bolts", 20},
+    {"processing-unit", 4},
+    {"sp-aluminum-cable", 24},
+    {"imersium-beam", 12},
+    {"concrete", 16},
+    {"sp-electrode", 4},
+    {"sp-insulation-sheet", 12}
+  },
+  {
+    {"sp-bolts", 40},
+    {"processing-unit", 8},
+    {"sp-aluminum-cable", 48},
+    {"imersium-beam", 24},
+    {"concrete", 32},
+    {"sp-electrode", 8},
+    {"sp-insulation-sheet", 20}
+  },
   12,
   24)
 util.change_recipe_ingredients("kr-advanced-furnace",
-  {{"steel-plate", 69}},
-  {{"steel-plate", 69}},
+  {
+    {"steel-plate", 69}
+  },
+  {
+    {"steel-plate", 69}
+  },
   69,
   69)
 util.change_recipe_ingredients("kr-advanced-assembling-machine",
-  {{"steel-plate", 69}},
-  {{"steel-plate", 69}},
+  {
+    {"steel-plate", 69}
+  },
+  {
+    {"steel-plate", 69}
+  },
   69,
   69)
 util.change_recipe_ingredients("kr-bio-lab",
-  {{"steel-plate", 69}},
-  {{"steel-plate", 69}},
+  {
+    {"steel-plate", 69}
+  },
+  {
+    {"steel-plate", 69}
+  },
   69,
   69)
 util.change_recipe_ingredients("kr-atmospheric-condenser",
-  {{"sp-stainless-steel", 30}, {"electronic-circuit", 12}, {"sp-valve", 16}, {"sp-copper-tube", 30}, {"stone-brick", 20}, {"sp-plate-heat-exchanger", 10}, {"sp-bolts", 50}},
-  {{"sp-stainless-steel", 40}, {"electronic-circuit", 20}, {"sp-valve", 24}, {"sp-copper-tube", 50}, {"stone-brick", 30}, {"sp-plate-heat-exchanger", 20}, {"sp-bolts", 60}},
+  {
+    {"sp-stainless-steel", 30},
+    {"electronic-circuit", 12},
+    {"sp-valve", 16},
+    {"sp-copper-tube", 30},
+    {"stone-brick", 20},
+    {"sp-plate-heat-exchanger", 10},
+    {"sp-bolts", 50}
+  },
+  {
+    {"sp-stainless-steel", 40},
+    {"electronic-circuit", 20},
+    {"sp-valve", 24},
+    {"sp-copper-tube", 50},
+    {"stone-brick", 30},
+    {"sp-plate-heat-exchanger", 20},
+    {"sp-bolts", 60}
+  },
   20,
   30)
 util.change_recipe_ingredients("kr-fuel-refinery",
-  {{"sp-stainless-steel", 20}, {"sp-brass", 12}, {"refined-concrete", 16}, {"sp-pressure-tube", 6}, {"advanced-circuit", 5}, {"sp-plate-heat-exchanger", 6}, {"engine-unit", 4}},
-  {{"sp-stainless-steel", 30}, {"sp-brass", 20}, {"refined-concrete", 24}, {"sp-pressure-tube", 10}, {"advanced-circuit", 8}, {"sp-plate-heat-exchanger", 10}, {"engine-unit", 6}},
+  {
+    {"sp-stainless-steel", 20},
+    {"sp-brass", 12},
+    {"refined-concrete", 16},
+    {"sp-pressure-tube", 6},
+    {"advanced-circuit", 5},
+    {"sp-plate-heat-exchanger", 6},
+    {"engine-unit", 4}
+  },
+  {
+    {"sp-stainless-steel", 30},
+    {"sp-brass", 20},
+    {"refined-concrete", 24},
+    {"sp-pressure-tube", 10},
+    {"advanced-circuit", 8},
+    {"sp-plate-heat-exchanger", 10},
+    {"engine-unit", 6}
+  },
   24,
   32)
 util.change_recipe_ingredients("kr-air-purifier",
-  {{"sp-stainless-steel", 8}, {"concrete", 6}, {"advanced-circuit", 4}, {"electric-engine-unit", 2}, {"sp-bolts", 5}, {"sp-dynamo", 1}, {"sp-transformer", 1}},
-  {{"sp-stainless-steel", 14}, {"concrete", 10}, {"advanced-circuit", 8}, {"electric-engine-unit", 3}, {"sp-bolts", 8}, {"sp-dynamo", 2}, {"sp-transformer", 2}},
+  {
+    {"sp-stainless-steel", 8},
+    {"concrete", 6},
+    {"advanced-circuit", 4},
+    {"electric-engine-unit", 2},
+    {"sp-bolts", 5},
+    {"sp-dynamo", 1},
+    {"sp-transformer", 1}
+  },
+  {
+    {"sp-stainless-steel", 14},
+    {"concrete", 10},
+    {"advanced-circuit", 8},
+    {"electric-engine-unit", 3},
+    {"sp-bolts", 8},
+    {"sp-dynamo", 2},
+    {"sp-transformer", 2}
+  },
   15,
   24)
 util.change_recipe_ingredients("kr-research-server",
-  {{"lithium-sulfur-battery", 10}, {"sp-glass-fiber", 20}, {"sp-dynamo", 2}, {"advanced-circuit", 20}, {"electric-engine-unit", 4}, {"sp-composites", 4}, {"kr-black-reinforced-plate", 16}, {"sp-TiAlSn", 20}, {"sp-stainless-steel", 8}, {"glass", 10}, {"sp-electrode", 2}},
-  {{"lithium-sulfur-battery", 20}, {"sp-glass-fiber", 50}, {"sp-dynamo", 4}, {"advanced-circuit", 40}, {"electric-engine-unit", 8}, {"sp-composites", 10}, {"kr-black-reinforced-plate", 20}, {"sp-TiAlSn", 32}, {"sp-stainless-steel", 12}, {"glass", 20}, {"sp-electrode", 4}},
+  {
+    {"lithium-sulfur-battery", 10},
+    {"sp-glass-fiber", 20},
+    {"sp-dynamo", 2},
+    {"advanced-circuit", 20},
+    {"electric-engine-unit", 4},
+    {"sp-composites", 4},
+    {"kr-black-reinforced-plate", 16},
+    {"sp-TiAlSn", 20},
+    {"sp-stainless-steel", 8},
+    {"glass", 10},
+    {"sp-electrode", 2}
+  },
+  {
+    {"lithium-sulfur-battery", 20},
+    {"sp-glass-fiber", 50},
+    {"sp-dynamo", 4},
+    {"advanced-circuit", 40},
+    {"electric-engine-unit", 8},
+    {"sp-composites", 10},
+    {"kr-black-reinforced-plate", 20},
+    {"sp-TiAlSn", 32},
+    {"sp-stainless-steel", 12},
+    {"glass", 20},
+    {"sp-electrode", 4}
+  },
   50,
   100)
 util.change_recipe_ingredients("kr-quantum-computer",
-  {{"steel-plate", 69}},
-  {{"steel-plate", 69}},
+  {
+    {"steel-plate", 69}
+  },
+  {
+    {"steel-plate", 69}
+  },
   69,
   69)
 util.change_recipe_ingredients("kr-singularity-lab",
-  {{"steel-plate", 69}},
-  {{"steel-plate", 69}},
+  {
+    {"steel-plate", 69}
+  },
+  {
+    {"steel-plate", 69}
+  },
   69,
   69)
 util.change_recipe_ingredients("kr-matter-plant",
-  {{"steel-plate", 69}},
-  {{"steel-plate", 69}},
+  {
+    {"steel-plate", 69}
+  },
+  {
+    {"steel-plate", 69}
+  },
   69,
   69)
 util.change_recipe_ingredients("kr-matter-assembler",
-  {{"steel-plate", 69}},
-  {{"steel-plate", 69}},
+  {
+    {"steel-plate", 69}
+  },
+  {
+    {"steel-plate", 69}
+  },
   69,
   69)
 util.change_recipe_ingredients("kr-stabilizer-charging-station",
-  {{"steel-plate", 69}},
-  {{"steel-plate", 69}},
+  {
+    {"steel-plate", 69}
+  },
+  {
+    {"steel-plate", 69}
+  },
   69,
   69)
 util.change_recipe_ingredients("kr-singularity-beacon",
-  {{"steel-plate", 69}},
-  {{"steel-plate", 69}},
+  {
+    {"steel-plate", 69}
+  },
+  {
+    {"steel-plate", 69}
+  },
   69,
   69)
 util.change_recipe_ingredients("biusart-lab",
-  {{"glass", 20}, {"sp-stainless-steel", 12}, {"refined-concrete", 10}, {"sp-anodized-aluminum", 15}, {"advanced-circuit", 20}, {"sp-actuator", 6}},
-  {{"glass", 30}, {"sp-stainless-steel", 20}, {"refined-concrete", 16}, {"sp-anodized-aluminum", 20}, {"advanced-circuit", 30}, {"sp-actuator", 10}},
+  {
+    {"glass", 20},
+    {"sp-stainless-steel", 12},
+    {"refined-concrete", 10},
+    {"sp-anodized-aluminum", 15},
+    {"advanced-circuit", 20},
+    {"sp-actuator", 6}
+  },
+  {
+    {"glass", 30},
+    {"sp-stainless-steel", 20},
+    {"refined-concrete", 16},
+    {"sp-anodized-aluminum", 20},
+    {"advanced-circuit", 30},
+    {"sp-actuator", 10}
+  },
   30,
   50)
 -- Why cant i do this here???
@@ -1751,47 +2453,141 @@ util.change_recipe_ingredients("biusart-lab",
 --   69)
 
 util.change_recipe_ingredients("kr-tesla-coil",
-  {{"sp-dynamo", 2}, {"sp-vacuum-tube", 20}, {"advanced-circuit", 12}, {"sp-electromagnet", 20}, {"copper-cable", 16}, {"concrete", 24}, {"steel-beam", 16}},
-  {{"sp-dynamo", 3}, {"sp-vacuum-tube", 40}, {"advanced-circuit", 20}, {"sp-electromagnet", 30}, {"copper-cable", 50}, {"concrete", 48}, {"steel-beam", 20}},
+  {
+    {"sp-dynamo", 2},
+    {"sp-vacuum-tube", 20},
+    {"advanced-circuit", 12},
+    {"sp-electromagnet", 20},
+    {"copper-cable", 16},
+    {"concrete", 24},
+    {"steel-beam", 16}
+  },
+  {
+    {"sp-dynamo", 3},
+    {"sp-vacuum-tube", 40},
+    {"advanced-circuit", 20},
+    {"sp-electromagnet", 30},
+    {"copper-cable", 50},
+    {"concrete", 48}, 
+    {"steel-beam", 20}
+  },
   30,
   60)
 util.change_recipe_ingredients("kr-advanced-radar",
-  {{"sp-control-unit", 6}, {"steel-beam", 30},  {"sp-bolts", 40}, {"sp-antenna-chip", 10}, {"refined-concrete", 40}, {"electric-engine-unit", 4}, {"sp-heavy-gearbox", 2}},
-  {{"sp-control-unit", 6}, {"steel-beam", 30},  {"sp-bolts", 40}, {"sp-antenna-chip", 10}, {"refined-concrete", 40}, {"electric-engine-unit", 4}, {"sp-heavy-gearbox", 2}},
+  {
+    {"sp-control-unit", 6},
+    {"steel-beam", 30},
+    {"sp-bolts", 40},
+    {"sp-antenna-chip", 10},
+    {"refined-concrete", 40},
+    {"electric-engine-unit", 4},
+    {"sp-heavy-gearbox", 2}
+  },
+  {
+    {"sp-control-unit", 6},
+    {"steel-beam", 30},
+    {"sp-bolts", 40},
+    {"sp-antenna-chip", 10},
+    {"refined-concrete", 40},
+    {"electric-engine-unit", 4},
+    {"sp-heavy-gearbox", 2}
+  },
   30,
   60)
 
 -- MARK: Krastorio vehicle
 util.change_recipe_ingredients("kr-nuclear-locomotive",
-  {{"sp-control-unit", 16}, {"sp-reactor-core", 1}, {"sp-compressor", 2}, {"electric-engine-unit", 8}, {"sp-stainless-steel", 40}, {"sp-aluminum-brass", 10}, {"sp-train-boige", 4}, {"small-lamp", 2}},
-  {{"sp-control-unit", 30}, {"sp-reactor-core", 1}, {"sp-compressor", 4}, {"electric-engine-unit", 12}, {"sp-stainless-steel", 60}, {"sp-aluminum-brass", 20}, {"sp-train-boige", 6}, {"small-lamp", 4}},
+  {
+    {"sp-control-unit", 16},
+    {"sp-reactor-core", 1},
+    {"sp-compressor", 2},
+    {"electric-engine-unit", 8},
+    {"sp-stainless-steel", 40},
+    {"sp-aluminum-brass", 10},
+    {"sp-train-boige", 4},
+    {"small-lamp", 2}
+  },
+  {
+    {"sp-control-unit", 30},
+    {"sp-reactor-core", 1},
+    {"sp-compressor", 4},
+    {"electric-engine-unit", 12},
+    {"sp-stainless-steel", 60},
+    {"sp-aluminum-brass", 20},
+    {"sp-train-boige", 6},
+    {"small-lamp", 4}
+  },
   40,
   80)
 
 -- MARK: Krastorio equipment
 util.change_recipe_ingredients("power-armor-mk3",
-  {{"iron-plate", 69}},
-  {{"iron-plate", 69}},
+  {
+    {"iron-plate", 69}
+  },
+  {
+    {"iron-plate", 69}
+  },
   20,
   40)
 util.change_recipe_ingredients("power-armor-mk4",
-  {{"iron-plate", 69}},
-  {{"iron-plate", 69}},
+  {
+    {"iron-plate", 69}
+  },
+  {
+    {"iron-plate", 69}
+  },
   30,
   60)
 util.change_recipe_ingredients("energy-absorber",
-  {{"sp-inconel", 2}, {"sp-TiAlSn", 3}, {"copper-cable", 2}, {"sp-niobium-billet", 1}, {"sp-magnet", 2}},
-  {{"sp-inconel", 3}, {"sp-TiAlSn", 5}, {"copper-cable", 5}, {"sp-niobium-billet", 1}, {"sp-magnet", 2}},
+  {
+    {"sp-inconel", 2},
+    {"sp-TiAlSn", 3},
+    {"copper-cable", 2},
+    {"sp-niobium-billet", 1},
+    {"sp-magnet", 2}
+  },
+  {
+    {"sp-inconel", 3},
+    {"sp-TiAlSn", 5},
+    {"copper-cable", 5},
+    {"sp-niobium-billet", 1},
+    {"sp-magnet", 2}
+  },
   4,
   6)
 util.change_recipe_ingredients("big-battery-equipment",
-  {{"battery-equipment", 4}, {"sp-aluminum-frame", 3}, {"sp-bolts", 6}, {"sp-insulated-wire", 4}, {"sp-heatsink", 2}},
-  {{"battery-equipment", 6}, {"sp-aluminum-frame", 6}, {"sp-bolts", 10}, {"sp-insulated-wire", 10}, {"sp-heatsink", 2}},
+  {
+    {"battery-equipment", 4},
+    {"sp-aluminum-frame", 3},
+    {"sp-bolts", 6},
+    {"sp-insulated-wire", 4},
+    {"sp-heatsink", 2}
+  },
+  {
+    {"battery-equipment", 6},
+    {"sp-aluminum-frame", 6},
+    {"sp-bolts", 10},
+    {"sp-insulated-wire", 10},
+    {"sp-heatsink", 2}
+  },
   10,
   15)
 util.change_recipe_ingredients("big-battery-mk2-equipment",
-  {{"battery-mk2-equipment", 4}, {"sp-titanium-frame", 3}, {"sp-insulated-wire", 4}, {"sp-heatsink", 4}, {"sp-insulation-sheet", 2}},
-  {{"battery-mk2-equipment", 6}, {"sp-titanium-frame", 6}, {"sp-insulated-wire", 10}, {"sp-heatsink", 6}, {"sp-insulation-sheet", 3}},
+  {
+    {"battery-mk2-equipment", 4},
+    {"sp-titanium-frame", 3},
+    {"sp-insulated-wire", 4},
+    {"sp-heatsink", 4},
+    {"sp-insulation-sheet", 2}
+  },
+  {
+    {"battery-mk2-equipment", 6},
+    {"sp-titanium-frame", 6},
+    {"sp-insulated-wire", 10},
+    {"sp-heatsink", 6},
+    {"sp-insulation-sheet", 3}
+  },
   15,
   30)
 data.raw.recipe["battery-mk3-equipment"].category = "crafting-with-fluid"
@@ -1817,27 +2613,72 @@ util.change_recipe_ingredients("battery-mk3-equipment",
   10,
   15)
 util.change_recipe_ingredients("big-battery-mk3-equipment",
-  {{"battery-mk2-equipment", 6}, {"sp-invar", 10}, {"sp-carbon-nanotubes", 4}, {"sp-cryostat", 2}},
-  {{"battery-mk2-equipment", 10}, {"sp-invar", 20}, {"sp-carbon-nanotubes", 10}, {"sp-cryostat", 3}},
+  {
+    {"battery-mk2-equipment", 6},
+    {"sp-invar", 10},
+    {"sp-carbon-nanotubes", 4},
+    {"sp-cryostat", 2}
+  },
+  {
+    {"battery-mk2-equipment", 10},
+    {"sp-invar", 20},
+    {"sp-carbon-nanotubes", 10},
+    {"sp-cryostat", 3}
+  },
   20,
   40)
 util.change_recipe_ingredients("small-portable-generator",
-  {{"engine-unit", 1}, {"sp-machined-parts", 6}, {"sp-electromagnet", 2}, {"sp-insulated-wire", 2}},
-  {{"engine-unit", 2}, {"sp-machined-parts", 8}, {"sp-electromagnet", 6}, {"sp-insulated-wire", 4}},
+  {
+    {"engine-unit", 1},
+    {"sp-machined-parts", 6},
+    {"sp-electromagnet", 2},
+    {"sp-insulated-wire", 2}
+  },
+  {
+    {"engine-unit", 2},
+    {"sp-machined-parts", 8},
+    {"sp-electromagnet", 6},
+    {"sp-insulated-wire", 4}
+  },
   6,
   10)
 util.change_recipe_ingredients("portable-generator",
-  {{"electric-engine-unit", 2}, {"sp-titanium-frame", 6}, {"sp-gearbox", 2}, {"sp-insulated-wire", 6}, {"sp-bolts", 10}, {"sp-heatsink", 1}},
-  {{"electric-engine-unit", 4}, {"sp-titanium-frame", 12}, {"sp-gearbox", 5}, {"sp-insulated-wire", 6}, {"sp-bolts", 20}, {"sp-heatsink", 2}},
+  {
+    {"electric-engine-unit", 2},
+    {"sp-titanium-frame", 6},
+    {"sp-gearbox", 2},
+    {"sp-insulated-wire", 6},
+    {"sp-bolts", 10},
+    {"sp-heatsink", 1}
+  },
+  {
+    {"electric-engine-unit", 4},
+    {"sp-titanium-frame", 12},
+    {"sp-gearbox", 5},
+    {"sp-insulated-wire", 6},
+    {"sp-bolts", 20},
+    {"sp-heatsink", 2}
+  },
   12,
   24)
 util.change_recipe_ingredients("big-solar-panel-equipment",
-  {{"solar-panel", 4}, {"sp-bolts", 16}, {"advanced-circuit", 5}, {"sp-titanium-frame", 2}, {"sp-insulated-wire", 4}},
-  {{"solar-panel", 6}, {"sp-bolts", 24}, {"advanced-circuit", 12}, {"sp-titanium-frame", 5}, {"sp-insulated-wire", 8}},
+  {
+    {"solar-panel", 4},
+    {"sp-bolts", 16},
+    {"advanced-circuit", 5},
+    {"sp-titanium-frame", 2},
+    {"sp-insulated-wire", 4}
+  },
+  {
+    {"solar-panel", 6},
+    {"sp-bolts", 24},
+    {"advanced-circuit", 12},
+    {"sp-titanium-frame", 5},
+    {"sp-insulated-wire", 8}
+  },
   20,
   30)
-util.change_recipe_ingredients(
-"imersite-solar-panel-equipment",
+util.change_recipe_ingredients("imersite-solar-panel-equipment",
   {
     {type = "item", name = "sp-advanced-processing-unit", amount = 4},
     {type = "item", name = "sp-niobium-steel", amount = 10},
@@ -1872,55 +2713,171 @@ util.change_recipe_ingredients("big-imersite-solar-panel-equipment",
   20,
   30)
 util.change_recipe_ingredients("nuclear-reactor-equipment",
-  {{"sp-reactor-core", 1}, {"sp-control-unit", 20}, {"sp-insulation-sheet", 10}, {"sp-kevlar", 5}, {"sp-niobium-steel", 4}, {"sp-ceramic-matrix-composites", 6}},
-  {{"sp-reactor-core", 1}, {"sp-control-unit", 40}, {"sp-insulation-sheet", 16}, {"sp-kevlar", 10}, {"sp-niobium-steel", 8}, {"sp-ceramic-matrix-composites", 12}},
+  {
+    {"sp-reactor-core", 1},
+    {"sp-control-unit", 20},
+    {"sp-insulation-sheet", 10},
+    {"sp-kevlar", 5},
+    {"sp-niobium-steel", 4},
+    {"sp-ceramic-matrix-composites", 6}
+  },
+  {
+    {"sp-reactor-core", 1},
+    {"sp-control-unit", 40},
+    {"sp-insulation-sheet", 16},
+    {"sp-kevlar", 10},
+    {"sp-niobium-steel", 8},
+    {"sp-ceramic-matrix-composites", 12}
+  },
   30,
   60)
 
 -- MARK: AAI Industries Buildings
 util.change_recipe_ingredients("burner-turbine",
-  {{"iron-beam", 8}, {"stone-brick", 24}, {"sp-gearbox", 2}, {"motor", 2}},
-  {{"iron-beam", 16}, {"stone-brick", 36}, {"sp-gearbox", 4}, {"motor", 4}},
+  {
+    {"iron-beam", 8},
+    {"stone-brick", 24},
+    {"sp-gearbox", 2},
+    {"motor", 2}
+  },
+  {
+    {"iron-beam", 16},
+    {"stone-brick", 36},
+    {"sp-gearbox", 4},
+    {"motor", 4}
+  },
   8,
   16)
 util.change_recipe_ingredients("fuel-processor",
-  {{"iron-plate", 12}, {"stone-brick", 24}, {"sp-bolts", 20}, {"motor", 2}},
-  {{"iron-plate", 16}, {"stone-brick", 36}, {"sp-bolts", 24}, {"motor", 4}},
+  {
+    {"iron-plate", 12},
+    {"stone-brick", 24},
+    {"sp-bolts", 20},
+    {"motor", 2}
+  },
+  {
+    {"iron-plate", 16},
+    {"stone-brick", 36},
+    {"sp-bolts", 24},
+    {"motor", 4}
+  },
   12,
   24)
 util.change_recipe_ingredients("area-mining-drill",
-  {{"sp-monocrystal", 4}, {"sp-ceramic-matrix-composites", 20}, {"sp-niobium-steel", 24}, {"imersium-gear-wheel", 16}, {"sp-titanium-carbide", 20}, {"electric-engine-unit", 10}, {"sp-transformer", 4}},
-  {{"sp-monocrystal", 8}, {"sp-ceramic-matrix-composites", 40}, {"sp-niobium-steel", 32}, {"imersium-gear-wheel", 32}, {"sp-titanium-carbide", 30}, {"electric-engine-unit", 16}, {"sp-transformer", 8}},
+  {
+    {"sp-monocrystal", 4},
+    {"sp-ceramic-matrix-composites", 20},
+    {"sp-niobium-steel", 24},
+    {"imersium-gear-wheel", 16},
+    {"sp-titanium-carbide", 20},
+    {"electric-engine-unit", 10},
+    {"sp-transformer", 4}
+  },
+  {
+    {"sp-monocrystal", 8},
+    {"sp-ceramic-matrix-composites", 40},
+    {"sp-niobium-steel", 32},
+    {"imersium-gear-wheel", 32},
+    {"sp-titanium-carbide", 30},
+    {"electric-engine-unit", 16},
+    {"sp-transformer", 8}
+  },
   36,
   72)
 util.change_recipe_ingredients("burner-assembling-machine",
-  {{"stone-brick", 20}, {"iron-plate", 20}, {"sp-bolts", 24}, {"motor", 4}},
-  {{"stone-brick", 40}, {"iron-plate", 40}, {"sp-bolts", 40}, {"motor", 8}},
+  {
+    {"stone-brick", 20},
+    {"iron-plate", 20},
+    {"sp-bolts", 24},
+    {"motor", 4}
+  },
+  {
+    {"stone-brick", 40},
+    {"iron-plate", 40},
+    {"sp-bolts", 48},
+    {"motor", 8}
+  },
   8,
   16)
 util.change_recipe_ingredients("burner-lab",
-  {{"stone-brick", 12}, {"iron-plate", 20}, {"copper-plate", 16}},
-  {{"stone-brick", 24}, {"iron-plate", 40}, {"copper-plate", 32}},
+  {
+    {"stone-brick", 12},
+    {"iron-plate", 20},
+    {"copper-plate", 16}
+  },
+  {
+    {"stone-brick", 24},
+    {"iron-plate", 40},
+    {"copper-plate", 32}
+  },
   8,
   16)
 util.change_recipe_ingredients("engine-unit",
-  {{"sp-connecting-rod", 8}, {"steel-plate", 2}, {"sp-bolts", 6}, {"sp-gearbox", 1}},
-  {{"sp-connecting-rod", 12}, {"steel-plate", 4}, {"sp-bolts", 16}, {"sp-gearbox", 2}},
+  {
+    {"sp-connecting-rod", 8},
+    {"steel-plate", 2},
+    {"sp-bolts", 6},
+    {"sp-gearbox", 1}
+  },
+  {
+    {"sp-connecting-rod", 12},
+    {"steel-plate", 4},
+    {"sp-bolts", 16},
+    {"sp-gearbox", 2}
+  },
   2.4,
   4.8)
 util.change_recipe_ingredients("electric-engine-unit",
-  {{"sp-electromagnet", 6}, {"sp-ball-bearing", 2}, {"sp-stainless-steel", 3}, {"sp-brass", 1}, {"sp-bolts", 6}, {type = "fluid", name = "lubricant", amount = 40}},
-  {{"sp-electromagnet", 9}, {"sp-ball-bearing", 2}, {"sp-stainless-steel", 4}, {"sp-brass", 1}, {"sp-bolts", 8}, {type = "fluid", name = "lubricant", amount = 60}},
+  {
+    {"sp-electromagnet", 6},
+    {"sp-ball-bearing", 2},
+    {"sp-stainless-steel", 3},
+    {"sp-brass", 1},
+    {"sp-bolts", 6},
+    {type = "fluid", name = "lubricant", amount = 40}
+  },
+  {
+    {"sp-electromagnet", 9},
+    {"sp-ball-bearing", 2},
+    {"sp-stainless-steel", 4},
+    {"sp-brass", 1},
+    {"sp-bolts", 8},
+    {type = "fluid", name = "lubricant", amount = 60}
+  },
   4,
   6)
 util.change_recipe_ingredients("industrial-furnace",
-  {{"sp-stainless-steel", 20}, {"sp-heat-resistant-tile", 30}, {"sp-invar", 10}, {"advanced-circuit", 12}, {"sp-tungsten-carbide", 2}, {"sp-electrode", 4}, {"sp-heating-filament", 20}, {"sp-electromagnet", 30}, {"refined-concrete", 40}},
-  {{"sp-stainless-steel", 32}, {"sp-heat-resistant-tile", 45}, {"sp-invar", 16}, {"advanced-circuit", 20}, {"sp-tungsten-carbide", 10}, {"sp-electrode", 6}, {"sp-heating-filament", 30}, {"sp-electromagnet", 40}, {"refined-concrete", 60}},
+  {
+    {"sp-stainless-steel", 20},
+    {"sp-heat-resistant-tile", 30},
+    {"sp-invar", 10},
+    {"advanced-circuit", 12},
+    {"sp-tungsten-carbide", 2},
+    {"sp-electrode", 4},
+    {"sp-heating-filament", 20},
+    {"sp-electromagnet", 30},
+    {"refined-concrete", 40}
+  },
+  {
+    {"sp-stainless-steel", 32},
+    {"sp-heat-resistant-tile", 45},
+    {"sp-invar", 16},
+    {"advanced-circuit", 20},
+    {"sp-tungsten-carbide", 10},
+    {"sp-electrode", 6},
+    {"sp-heating-filament", 30},
+    {"sp-electromagnet", 40},
+    {"refined-concrete", 60}
+  },
   40,
   80)
 util.change_recipe_ingredients("area-mining-drill",
-  {{"steel-plate", 69}},
-  {{"steel-plate", 69}},
+  {
+    {"steel-plate", 69}
+  },
+  {
+    {"steel-plate", 69}
+  },
   69,
   69)
 
