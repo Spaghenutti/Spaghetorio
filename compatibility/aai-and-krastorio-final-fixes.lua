@@ -32,6 +32,7 @@ util.change_recipe_ingredients("automation-science-pack",
   },
   20,
   30)
+
 util.change_recipe_ingredients("logistic-science-pack",
   {
     {"sp-gearbox", 5},
@@ -47,6 +48,7 @@ util.change_recipe_ingredients("logistic-science-pack",
   },
   20,
   30)
+
 data.raw.recipe["chemical-science-pack"].category = "chemistry"
 util.change_recipe_ingredients("chemical-science-pack",
   {
@@ -65,6 +67,7 @@ util.change_recipe_ingredients("chemical-science-pack",
   },
   20,
   30)
+
 util.change_recipe_ingredients("military-science-pack",
   {
     {"copper-plate", 69},
@@ -76,6 +79,7 @@ util.change_recipe_ingredients("military-science-pack",
   },
   20,
   30)
+
 util.change_recipe_ingredients("production-science-pack",
   {
     {"sp-filter", 5},
@@ -93,6 +97,7 @@ util.change_recipe_ingredients("production-science-pack",
   },
   20,
   30)
+
 util.change_recipe_ingredients("utility-science-pack",
   {
     {"electric-furnace", 1},
@@ -108,20 +113,53 @@ util.change_recipe_ingredients("utility-science-pack",
   },
   80,
   120)
+
+data.raw.recipe["matter-research-data"].category = "crafting-with-fluid"
+util.change_recipe_ingredients("matter-research-data",
+  {
+    {"rare-metals", 5},
+    {"sp-graphene", 5},
+    {"tritium", 5},
+    {"sp-stibnite", 5},
+    {"biomass", 5},
+    {type = "fluid", name = "sp-helium-3", amount = 5}
+  },
+  {
+    {"rare-metals", 8},
+    {"sp-graphene", 8},
+    {"tritium", 8},
+    {"sp-stibnite", 8},
+    {"biomass", 8},
+    {type = "fluid", name = "sp-helium-3", amount = 8}
+  },
+  24,
+  32)
+
 data.raw.recipe["utility-science-pack"].results = {
   {type = "item", name = "utility-science-pack", amount = 20}
 }
 util.change_recipe_ingredients("matter-tech-card",
   {
-    {"copper-plate", 69},
+    {"sp-blunagium-bar", 5},
+    {"sp-grobgnum-bar", 5},
+    {"sp-rukite-bar", 5},
+    {"sp-yemnuth-shard", 5},
+    {"imersite-crystal", 5},
+    {"matter-research-data", 5},
     {"blank-tech-card", 5}
   },
   {
-    {"copper-plate", 69},
+    {"sp-blunagium-bar", 8},
+    {"sp-grobgnum-bar", 8},
+    {"sp-rukite-bar", 8},
+    {"sp-yemnuth-shard", 8},
+    {"imersite-crystal", 8},
+    {"matter-research-data", 5},
     {"blank-tech-card", 5}
   },
-  20,
-  30)
+  40,
+  60)
+
 util.change_recipe_ingredients("space-science-pack", -- Optimization tech card
   {
     {"copper-plate", 69},
@@ -133,6 +171,7 @@ util.change_recipe_ingredients("space-science-pack", -- Optimization tech card
   },
   20,
   30)
+
 util.change_recipe_ingredients("advanced-tech-card",
   {
     {"copper-plate", 69},
@@ -144,6 +183,7 @@ util.change_recipe_ingredients("advanced-tech-card",
   },
   20,
   30)
+
 util.change_recipe_ingredients("singularity-tech-card",
   {
     {"copper-plate", 69},
@@ -174,18 +214,19 @@ table.insert(data.raw.lab["biusart-lab"].inputs, "sp-computer-science-pack-2")
 table.insert(data.raw.lab["biusart-lab"].inputs, "production-science-pack")
 table.insert(data.raw.lab["biusart-lab"].inputs, "utility-science-pack")
 
+table.insert(data.raw.lab["biusart-lab"].inputs, "sp-automation-science-pack-3")
+table.insert(data.raw.lab["biusart-lab"].inputs, "sp-logistic-science-pack-3")
+table.insert(data.raw.lab["biusart-lab"].inputs, "sp-military-science-pack-3")
+table.insert(data.raw.lab["biusart-lab"].inputs, "sp-chemical-science-pack-3")
+table.insert(data.raw.lab["biusart-lab"].inputs, "sp-electronic-science-pack-3")
+table.insert(data.raw.lab["biusart-lab"].inputs, "sp-geological-science-pack-3")
+table.insert(data.raw.lab["biusart-lab"].inputs, "sp-material-science-pack-3")
+table.insert(data.raw.lab["biusart-lab"].inputs, "sp-computer-science-pack-3")
+table.insert(data.raw.lab["biusart-lab"].inputs, "sp-production-science-pack-3")
+
 data.raw.lab["kr-singularity-lab"].inputs = data.raw.lab["biusart-lab"].inputs
-table.insert(data.raw.lab["kr-singularity-lab"].inputs, "sp-automation-science-pack-3")
-table.insert(data.raw.lab["kr-singularity-lab"].inputs, "sp-logistic-science-pack-3")
-table.insert(data.raw.lab["kr-singularity-lab"].inputs, "sp-military-science-pack-3")
-table.insert(data.raw.lab["kr-singularity-lab"].inputs, "sp-chemical-science-pack-3")
-table.insert(data.raw.lab["kr-singularity-lab"].inputs, "sp-electronic-science-pack-3")
-table.insert(data.raw.lab["kr-singularity-lab"].inputs, "sp-geological-science-pack-3")
-table.insert(data.raw.lab["kr-singularity-lab"].inputs, "sp-material-science-pack-3")
-table.insert(data.raw.lab["kr-singularity-lab"].inputs, "sp-astronomical-science-pack-3")
-table.insert(data.raw.lab["kr-singularity-lab"].inputs, "sp-computer-science-pack-3")
-table.insert(data.raw.lab["kr-singularity-lab"].inputs, "sp-production-science-pack-3")
 table.insert(data.raw.lab["kr-singularity-lab"].inputs, "sp-utility-science-pack-3")
+table.insert(data.raw.lab["kr-singularity-lab"].inputs, "sp-astronomical-science-pack-3")
 table.insert(data.raw.lab["kr-singularity-lab"].inputs, "matter-tech-card")
 table.insert(data.raw.lab["kr-singularity-lab"].inputs, "space-science-pack")  -- Optimization tech card
 table.insert(data.raw.lab["kr-singularity-lab"].inputs, "advanced-tech-card")

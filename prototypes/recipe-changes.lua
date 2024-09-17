@@ -1335,21 +1335,23 @@ util.change_recipe_ingredients("solar-panel-equipment",
 util.change_recipe_ingredients("fusion-reactor-equipment",
   {
     {"sp-advanced-processing-unit", 10},
-    {"sp-bolts", 80},
-    {"sp-control-rod", 6},
+    {"sp-superconductor", 6},
+    {"sp-tungsten-carbide", 16},
     {"sp-pressure-tube", 10},
     {"sp-high-pressure-tank", 1},
     {"electric-engine-unit", 4},
-    {"low-density-structure", 5}
+    {"low-density-structure", 5},
+    {"sp-graphene", 20}
   },
   {
-    {"sp-advanced-processing-unit", 16},
-    {"sp-bolts", 120},
-    {"sp-control-rod", 10},
-    {"sp-pressure-tube", 12},
-    {"sp-high-pressure-tank", 1},
+    {"sp-advanced-processing-unit", 20},
+    {"sp-superconductor", 12},
+    {"sp-tungsten-carbide", 24},
+    {"sp-pressure-tube", 20},
+    {"sp-high-pressure-tank", 2},
     {"electric-engine-unit", 6},
-    {"low-density-structure", 10}
+    {"low-density-structure", 12},
+    {"sp-graphene", 50}
   },
   60,
   90)

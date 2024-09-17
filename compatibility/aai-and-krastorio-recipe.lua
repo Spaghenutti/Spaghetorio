@@ -1258,6 +1258,7 @@ table.insert(data.raw.recipe["sp-logistic-science-pack-2"].ingredients, {type = 
 table.insert(data.raw.recipe["sp-military-science-pack-2"].ingredients, {type = "item", name = "biters-research-data", amount = 2})
 table.insert(data.raw.recipe["sp-geological-science-pack-2"].ingredients, {type = "item", name = "wood", amount = 10})
 table.insert(data.raw.recipe["sp-astronomical-science-pack-2"].ingredients, {type = "item", name = "blank-tech-card", amount = 5})
+table.insert(data.raw.recipe["sp-astronomical-science-pack-2"].ingredients, {type = "item", name = "space-research-data", amount = 5})
 table.insert(data.raw.recipe["sp-computer-science-pack-2"].ingredients, {type = "item", name = "blank-tech-card", amount = 5})
 table.insert(data.raw.recipe["sp-nuclear-science-pack-2"].ingredients, {type = "item", name = "blank-tech-card", amount = 50})
 table.insert(data.raw.recipe["sp-military-science-pack-3"].ingredients, {type = "item", name = "biters-research-data", amount = 3})
@@ -1387,8 +1388,6 @@ util.change_recipe_ingredients("steel-plate",
   20,
   24)
 data.raw.recipe["steel-beam"].results = {{"steel-beam", 2}}
-data.raw.recipe["imersium-beam"].hidden = true
-data.raw.recipe["kr-s-c-imersium-beam"].category = "smelting"
 util.change_recipe_ingredients("silicon",
   {
     {"sp-silica", 18}
@@ -1655,7 +1654,7 @@ util.change_recipe_ingredients("kr-fluid-storage-2",  -- "huge storage tank"
   },
   16,
   30)
-util.change_recipe_ingredients("lithium-sulfur-battery",  -- "huge storage tank"
+util.change_recipe_ingredients("lithium-sulfur-battery",
   {
     {"lithium", 4},
     {"sp-cobalt-billet", 1},
@@ -1674,25 +1673,62 @@ util.change_recipe_ingredients("lithium-sulfur-battery",  -- "huge storage tank"
   },
   4,
   6)
-  util.change_recipe_ingredients("ai-core",  -- "huge storage tank"
+
+  util.change_recipe_ingredients("imersium-plate",
   {
-    {"sp-glass-fiber", 4},
-    {"sp-titanium-frame", 2},
-    {"sp-cryostat", 2},
-    {"sp-control-unit", 4},
-    {"sp-quantum-data-plane", 1},
-    {type="fluid", name="sp-liquid-nitrogen", amount=20}
+    {"rare-metals", 3},
+    {"imersite-powder", 9},
+    {"sp-cobalt-billet", 5},
+    {"sp-titanium-plate", 2}
   },
   {
-    {"sp-glass-fiber", 10},
-    {"sp-titanium-frame", 2},
-    {"sp-cryostat", 3},
-    {"sp-control-unit", 6},
-    {"sp-quantum-data-plane", 2},
-    {type="fluid", name="sp-liquid-nitrogen", amount=30}
+    {"rare-metals", 4},
+    {"imersite-powder", 12},
+    {"sp-cobalt-billet", 8},
+    {"sp-titanium-plate", 3}
+  },
+  24,
+  36)
+
+util.change_recipe_ingredients("imersium-beam",
+  {
+    {"rare-metals", 2},
+    {"imersite-powder", 6},
+    {"sp-tungsten-slab", 3},
+    {"sp-niobium-billet", 2}
+  },
+  {
+    {"rare-metals", 3},
+    {"imersite-powder", 8},
+    {"sp-tungsten-slab", 4},
+    {"sp-niobium-billet", 3}
   },
   16,
   24)
+data.raw.recipe["imersium-beam"].results = {
+  {"imersium-beam", 2},
+}
+data.raw.recipe["kr-s-c-imersium-beam"].hidden = true
+
+util.change_recipe_ingredients("energy-control-unit",
+  {
+    {"sp-gamma-radiation-source", 1},
+    {"imersium-gear-wheel", 6},
+    {"imersium-plate", 4},
+    {"sp-superconductor", 3},
+    {"sp-advanced-processing-unit", 5},
+    {"sp-ceramic-matrix-composites", 10}
+  },
+  {
+    {"sp-gamma-radiation-source", 1},
+    {"imersium-gear-wheel", 10},
+    {"imersium-plate", 6},
+    {"sp-superconductor", 6},
+    {"sp-advanced-processing-unit", 10},
+    {"sp-ceramic-matrix-composites", 16}
+  },
+  30,
+  60)
 
 -- MARK: Krastorio Buildings
 util.change_recipe_ingredients("kr-loader",
@@ -2292,13 +2328,23 @@ util.change_recipe_ingredients("kr-advanced-assembling-machine",
   69)
 util.change_recipe_ingredients("kr-bio-lab",
   {
-    {"steel-plate", 69}
+    {"sp-pressure-tube", 20},
+    {"fertilizer", 100},
+    {"sp-stainless-steel", 30},
+    {"kr-steel-pump", 12},
+    {"glass", 50},
+    {"sp-filter", 12}
   },
   {
-    {"steel-plate", 69}
+    {"sp-pressure-tube", 40},
+    {"fertilizer", 160},
+    {"sp-stainless-steel", 60},
+    {"kr-steel-pump", 20},
+    {"glass", 80},
+    {"sp-filter", 40}
   },
-  69,
-  69)
+  30,
+  60)
 util.change_recipe_ingredients("kr-atmospheric-condenser",
   {
     {"sp-stainless-steel", 30},
@@ -2420,13 +2466,31 @@ util.change_recipe_ingredients("kr-quantum-computer",
   180)
 util.change_recipe_ingredients("kr-singularity-lab",
   {
-    {"steel-plate", 69}
+    {"sp-niobium-steel", 100},
+    {"rare-metals", 40},
+    {"glass", 60},
+    {"sp-control-unit", 20},
+    {"ai-core", 50},
+    {"sp-micro-machine", 50},
+    {"sp-glass-fiber", 500},
+    {"sp-cryostat", 20},
+    {"sp-fermium-condensate", 10},
+    {"kr-black-reinforced-plate", 120}
   },
   {
-    {"steel-plate", 69}
+    {"sp-niobium-steel", 160},
+    {"rare-metals", 100},
+    {"glass", 80},
+    {"sp-control-unit", 60},
+    {"ai-core", 80},
+    {"sp-micro-machine", 72},
+    {"sp-glass-fiber", 800},
+    {"sp-cryostat", 30},
+    {"sp-fermium-condensate", 50},
+    {"kr-black-reinforced-plate", 200}
   },
-  69,
-  69)
+  60,
+  120)
 util.change_recipe_ingredients("kr-matter-plant",
   {
     {"steel-plate", 69}

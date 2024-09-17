@@ -24,8 +24,7 @@ data.raw.technology["jetpack-3"].unit.ingredients = {
   {"sp-chemical-science-pack-2", 1},
   {"sp-computer-science-pack-2", 1},
   {"production-science-pack", 1},
-  {"utility-science-pack", 1},
-  {"sp-astronomical-science-pack-2", 1}
+  {"utility-science-pack", 1}
 }
 
 table.insert(data.raw.technology["jetpack-4"].prerequisites, "sp-chemical-science-pack-2")

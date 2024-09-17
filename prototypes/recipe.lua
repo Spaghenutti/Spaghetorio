@@ -1893,6 +1893,7 @@ data:extend({
       {type = "item", name = "sp-glass-fiber", amount = 2},
       {type = "item", name = "sp-optical-sensor", amount = 1},
       {type = "item", name = "sp-servo-motor", amount = 2},
+      {type = "item", name = "sp-neodymium-magnet", amount = 2},
       {type = "item", name = "sp-advanced-processing-unit", amount = 1}
     },
     results = {
@@ -3382,7 +3383,8 @@ data:extend({
       {type = "item", name = "sp-nanoflex", amount = 2},
       {type = "item", name = "sp-nanowire", amount = 2},
       {type = "item", name = "sp-graphene", amount = 6},
-      {type = "item", name = "sp-quantum-crystal", amount = 1}
+      {type = "item", name = "sp-quantum-crystal", amount = 1},
+      {type = "item", name = "sp-cubit", amount = 16},
     },
     results = {
       {type = "item", name = "sp-nanobot", amount = 1}
@@ -4845,6 +4847,7 @@ data:extend({
     energy_required = 24,
     ingredients =
     -- Krastorio: {"blank-tech-card", 5}
+    -- Krastorio: {"space-research-data", 5}
     {
       {"sp-glass-fiber", 10},
       {"sp-mirror", 5},
@@ -5005,12 +5008,11 @@ data:extend({
     {
       {"sp-material-science-pack-2", 10},
       {"sp-diamond", 6},
-      {"sp-graphene", 12},
       {"sp-tungsten-carbide", 4},
-      {"sp-TiNb", 5},
       {"sp-nitenol", 5},
       {"sp-inconel", 5},
-      {"sp-niobium-tin", 4}
+      {"sp-niobium-tin", 4},
+      {"sp-ceramic-matrix-composites", 8}
     },
     result_count = 5,
     result = "sp-material-science-pack-3"
@@ -5020,13 +5022,17 @@ data:extend({
     name = "sp-astronomical-science-pack-3",
     category = "crafting",
     enabled = false,
-    energy_required = 24,
+    energy_required = 144,
     ingredients =
     {
-      {"sp-astronomical-science-pack-2", 20},
-      {"iron-plate", 69}
+      {"sp-astronomical-science-pack-2", 120},
+      {"satellite", 5},
+      {"sp-blunagium-explorer", 1},
+      {"sp-grobgnum-explorer", 1},
+      {"sp-rukite-explorer", 1},
+      {"sp-yemnuth-explorer", 1}
     },
-    result_count = 5,
+    result_count = 30,
     result = "sp-astronomical-science-pack-3"
   },
   {
@@ -5051,13 +5057,15 @@ data:extend({
     name = "sp-nuclear-science-pack-3",
     category = "crafting",
     enabled = false,
-    energy_required = 24,
+    energy_required = 48,
     ingredients =
     {
-      {"sp-nuclear-science-pack-2", 10},
-      {"iron-plate", 69}
+      {"sp-nuclear-science-pack-2", 20},
+      {"sp-reactor-core", 1},
+      {"sp-plutonium-fuel-rod", 10},
+      {"sp-uranium-fuel-rod", 10}
     },
-    result_count = 5,
+    result_count = 10,
     result = "sp-nuclear-science-pack-3"
   },
   {

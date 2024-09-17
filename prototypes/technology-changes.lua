@@ -562,8 +562,7 @@ data.raw.technology["rocket-control-unit"].unit.ingredients = {
   {"sp-chemical-science-pack-2", 1},
   {"sp-computer-science-pack-2", 1},
   {"production-science-pack", 1},
-  {"utility-science-pack", 1},
-  {"sp-astronomical-science-pack-2", 1}
+  {"utility-science-pack", 1}
 }
 
 data.raw.technology["rocket-silo"].prerequisites = {
@@ -582,8 +581,7 @@ data.raw.technology["rocket-silo"].unit.ingredients = {
   {"sp-chemical-science-pack-2", 1},
   {"sp-computer-science-pack-2", 1},
   {"production-science-pack", 1},
-  {"utility-science-pack", 1},
-  {"sp-astronomical-science-pack-2", 1}
+  {"utility-science-pack", 1}
 }
 
 data.raw.technology["modules"].prerequisites = {"sp-electronic-components"}
@@ -698,8 +696,7 @@ data.raw.technology["effectivity-module-3"].unit.ingredients = {
 }
 
 data.raw.technology["rocket-fuel"].prerequisites = {
-  "utility-science-pack",
-  "sp-astronomical-science-pack-2"
+  "utility-science-pack"
 }
 data.raw.technology["rocket-fuel"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},
@@ -709,8 +706,7 @@ data.raw.technology["rocket-fuel"].unit.ingredients = {
   {"sp-geological-science-pack-2", 1},
   {"sp-chemical-science-pack-2", 1},
   {"production-science-pack", 1},
-  {"utility-science-pack", 1},
-  {"sp-astronomical-science-pack-2", 1}
+  {"utility-science-pack", 1}
 }
 
 table.insert(data.raw.technology["uranium-processing"].effects, {type = "unlock-recipe", recipe = "sp-uranium-fuel-rod"})
@@ -779,6 +775,20 @@ data.raw.technology["solar-panel-equipment"].unit.ingredients = {
   {"sp-material-science-pack-2", 1},
   {"sp-chemical-science-pack-2", 1},
   {"production-science-pack", 1}
+}
+
+-- Why is this a base technology and not krastorio technology? Who knows...
+data.raw.technology["fusion-reactor-equipment"].unit.ingredients = {
+  {"sp-automation-science-pack-3", 1},
+  {"sp-logistic-science-pack-3", 1},
+  {"sp-chemical-science-pack-3", 1},
+  {"sp-electronic-science-pack-3", 1},
+  {"sp-geological-science-pack-3", 1},
+  {"sp-astronomical-science-pack-2", 1},
+  {"sp-material-science-pack-3", 1},
+  {"sp-nuclear-science-pack-3", 1},
+  {"sp-computer-science-pack-3", 1},
+  {"utility-science-pack", 1},
 }
 
 --------------------------------------------------------------------------------
