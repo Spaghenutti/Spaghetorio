@@ -3025,6 +3025,10 @@ data:extend({
         type = "unlock-recipe",
         recipe = "sp-blunagium-explorer"
       },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-blunagium-rocket-silo"
+      },
     },
     prerequisites = {
       "sp-extreme-low-temperature-tech",
@@ -3097,6 +3101,10 @@ data:extend({
         type = "unlock-recipe",
         recipe = "sp-rukite-explorer"
       },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-rukite-rocket-silo"
+      },
     },
     prerequisites = {
       "sp-gravitonium",
@@ -3145,6 +3153,10 @@ data:extend({
         type = "unlock-recipe",
         recipe = "sp-yemnuth-explorer"
       },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-yemnuth-rocket-silo"
+      },
     },
     prerequisites = {
       "sp-gravitonium",
@@ -3188,6 +3200,10 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "sp-biochip"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-grobgnum-rocket-silo"
       },
     },
     prerequisites = {
@@ -4911,14 +4927,16 @@ data:extend({
       ingredients = {
         {"sp-automation-science-pack-3", 1},
         {"sp-logistic-science-pack-3", 1},
-        {"sp-chemical-science-pack-3", 1}, 
+        {"sp-chemical-science-pack-3", 1},
         {"sp-electronic-science-pack-3", 1},
         {"sp-geological-science-pack-3", 1},
-        {"sp-astronomical-science-pack-2", 1},
         {"sp-material-science-pack-3", 1},
-        {"sp-nuclear-science-pack-3", 1},
         {"sp-computer-science-pack-3", 1},
-        {"utility-science-pack", 1},
+        {"sp-production-science-pack-3", 1},
+        {"sp-nuclear-science-pack-3", 1},
+        {"sp-astronomical-science-pack-2", 1},
+        {"matter-tech-card", 1},
+        {"sp-utility-science-pack-3", 1}
       },
       time = 15
     },

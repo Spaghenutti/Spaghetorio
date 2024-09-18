@@ -49,6 +49,8 @@ data.raw.item["lithium-sulfur-battery"].subgroup = "electronic-optical-component
 data.raw.item["electronic-components"].subgroup = "electronic-optical-component"
 
 data.raw.item["imersium-gear-wheel"].subgroup = "alien-product"
+data.raw.item["ai-core"].subgroup = "alien-product"
+data.raw.item["energy-control-unit"].subgroup = "alien-product"
 
 data.raw.item["fuel"].subgroup = "fuel-processing"
 data.raw.item["bio-fuel"].subgroup = "fuel-processing"

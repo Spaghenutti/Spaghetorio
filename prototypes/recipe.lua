@@ -2938,6 +2938,7 @@ data:extend({
     type = "recipe",
     name = "sp-chronomatter",  -- #ForRegEx# - recipe
     category = "chemistry",
+    subgroup = "fluid-recipes",
     enabled = false,
     energy_required = 6,
     ingredients = {
@@ -3225,6 +3226,7 @@ data:extend({
     type = "recipe",
     name = "sp-grobgnum-slurry",  -- #ForRegEx# - recipe
     category = "chemistry",
+    subgroup = "fluid-recipes",
     enabled = false,
     energy_required = 4,
     ingredients = {
@@ -3240,6 +3242,7 @@ data:extend({
     type = "recipe",
     name = "sp-grobgnumylene",  -- #ForRegEx# - recipe
     category = "chemistry",
+    subgroup = "fluid-recipes",
     enabled = false,
     energy_required = 12,
     ingredients = {
@@ -3256,6 +3259,7 @@ data:extend({
     type = "recipe",
     name = "sp-grobgnum-hydroxide",  -- #ForRegEx# - recipe
     category = "chemistry",
+    subgroup = "fluid-recipes",
     enabled = false,
     energy_required = 8,
     ingredients = {
@@ -3378,16 +3382,16 @@ data:extend({
     name = "sp-nanobot",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
-    energy_required = 8,
+    energy_required = 120,
     ingredients = {
-      {type = "item", name = "sp-nanoflex", amount = 2},
-      {type = "item", name = "sp-nanowire", amount = 2},
-      {type = "item", name = "sp-graphene", amount = 6},
-      {type = "item", name = "sp-quantum-crystal", amount = 1},
-      {type = "item", name = "sp-cubit", amount = 16},
+      {type = "item", name = "sp-nanoflex", amount = 20},
+      {type = "item", name = "sp-nanowire", amount = 30},
+      {type = "item", name = "sp-graphene", amount = 80},
+      {type = "item", name = "sp-quantum-crystal", amount = 10},
+      {type = "item", name = "sp-cubit", amount = 100},
     },
     results = {
-      {type = "item", name = "sp-nanobot", amount = 1}
+      {type = "item", name = "sp-nanobot", amount = 100}
     }
   },
   {
@@ -3429,42 +3433,6 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-rukite-explorer",  -- #ForRegEx# - recipe
-    category = "crafting-with-fluid",
-    enabled = false,
-    energy_required = 60,
-    ingredients = {
-      {type = "item", name = "sp-advanced-processing-unit", amount = 10},
-      {type = "item", name = "sp-duralumin", amount = 20},
-      {type = "item", name = "sp-inconel", amount = 10},
-      {type = "fluid", name = "sp-chronomatter", amount = 50},
-      {type = "item", name = "sp-flux-capacitor", amount = 1},
-      {type = "item", name = "sp-ion-thruster", amount = 1}
-    },
-    results = {
-      {type = "item", name = "sp-rukite-explorer", amount = 1}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-yemnuth-explorer",  -- #ForRegEx# - recipe
-    category = "crafting",
-    enabled = false,
-    energy_required = 60,
-    ingredients = {
-      {type = "item", name = "sp-advanced-processing-unit", amount = 12},
-      {type = "item", name = "sp-duralumin", amount = 30},
-      {type = "item", name = "sp-titanium-carbide", amount = 10},
-      {type = "item", name = "sp-gravitonium", amount = 30},
-      {type = "item", name = "sp-plasma-core", amount = 1},
-      {type = "item", name = "sp-ion-thruster", amount = 1}
-    },
-    results = {
-      {type = "item", name = "sp-yemnuth-explorer", amount = 1}
-    }
-  },
-  {
-    type = "recipe",
     name = "sp-blunagium-explorer",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
@@ -3483,6 +3451,51 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "sp-blunagium-rocket-silo",  -- #ForRegEx# - recipe
+    category = "crafting-with-fluid",
+    enabled = false,
+    energy_required = 300,
+    ingredients = {
+      {type = "item", name = "rocket-silo", amount = 1},
+      {type = "item", name = "sp-blunagium-bar", amount = 100},
+      {type = "item", name = "sp-blunagium-foam", amount = 100},
+      {type = "item", name = "sp-micro-machine", amount = 40},
+      {type = "item", name = "sp-superconductor", amount = 60},
+      {type = "fluid", name = "sp-liquid-nitrogen", amount = 400},
+    },
+    results = {
+      {type = "item", name = "sp-blunagium-rocket-silo", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-blunagium-rocket",  -- #ForRegEx# - recipe
+    category = "rocket-building",
+    enabled = false,
+    hide_from_player_crafting = true,
+    energy_required = 60,
+    ingredients = {
+      {type = "item", name = "rocket-control-unit", amount = 80},
+      {type = "item", name = "sp-advanced-processing-unit", amount = 120},
+      {type = "item", name = "sp-optical-sensor", amount = 200},
+      {type = "item", name = "sp-heat-resistant-tile", amount = 120},
+      {type = "item", name = "sp-inconel", amount = 200},
+      {type = "item", name = "sp-duralumin", amount = 350},
+      {type = "item", name = "rocket-fuel", amount = 800},
+      {type = "item", name = "sp-cryostat", amount = 10},
+      {type = "item", name = "sp-rocket-engine", amount = 30},
+      {type = "item", name = "sp-solid-rocket-motor", amount = 24},
+      {type = "item", name = "sp-insulated-wire", amount = 400},
+      {type = "item", name = "sp-nanobot", amount = 2000},
+      {type = "item", name = "sp-reactor-core", amount = 1},
+      {type = "item", name = "sp-plutonium-fuel-rod", amount = 8}
+    },
+    results = {
+      {type = "item", name = "sp-blunagium-rocket", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
     name = "sp-grobgnum-explorer",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
@@ -3496,6 +3509,175 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-grobgnum-explorer", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-grobgnum-rocket-silo",  -- #ForRegEx# - recipe
+    category = "crafting-with-fluid",
+    enabled = false,
+    energy_required = 240,
+    ingredients = {
+      {type = "item", name = "rocket-silo", amount = 1},
+      {type = "item", name = "sp-grobgnum-bar", amount = 80},
+      {type = "item", name = "sp-grobgnum-cube", amount = 120},
+      {type = "item", name = "sp-cybernetics", amount = 40},
+      {type = "item", name = "sp-superconductor", amount = 60},
+      {type = "item", name = "sp-chromium-plate", amount = 200},
+      {type = "item", name = "sp-fluorspar", amount = 300},
+      {type = "fluid", name = "sp-grobgnum-hydroxide", amount = 400},
+    },
+    results = {
+      {type = "item", name = "sp-grobgnum-rocket-silo", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-grobgnum-rocket",  -- #ForRegEx# - recipe
+    category = "rocket-building",
+    enabled = false,
+    hide_from_player_crafting = true,
+    energy_required = 60,
+    ingredients = {
+      {type = "item", name = "rocket-control-unit", amount = 40},
+      {type = "item", name = "sp-biochip", amount = 60},
+      {type = "item", name = "sp-optical-sensor", amount = 120},
+      {type = "item", name = "sp-heat-resistant-tile", amount = 300},
+      {type = "item", name = "sp-inconel", amount = 200},
+      {type = "item", name = "sp-TiAlSn", amount = 350},
+      {type = "item", name = "rocket-fuel", amount = 750},
+      {type = "item", name = "sp-rocket-engine", amount = 20},
+      {type = "item", name = "sp-solid-rocket-motor", amount = 48},
+      {type = "item", name = "sp-glass-fiber", amount = 250},
+      {type = "item", name = "sp-bioreactor", amount = 1},
+      {type = "item", name = "sp-grobgnum-shard", amount = 80},
+      {type = "item", name = "sp-grobgnum-droplet", amount = 100}
+    },
+    results = {
+      {type = "item", name = "sp-grobgnum-rocket", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-rukite-explorer",  -- #ForRegEx# - recipe
+    category = "crafting-with-fluid",
+    enabled = false,
+    energy_required = 360,
+    ingredients = {
+      {type = "item", name = "sp-advanced-processing-unit", amount = 10},
+      {type = "item", name = "sp-duralumin", amount = 20},
+      {type = "item", name = "sp-inconel", amount = 10},
+      {type = "fluid", name = "sp-chronomatter", amount = 50},
+      {type = "item", name = "sp-flux-capacitor", amount = 1},
+      {type = "item", name = "sp-ion-thruster", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-rukite-explorer", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-rukite-rocket-silo",  -- #ForRegEx# - recipe
+    category = "crafting",
+    enabled = false,
+    energy_required = 60,
+    ingredients = {
+      {type = "item", name = "rocket-silo", amount = 1},
+      {type = "item", name = "sp-chronalyte", amount = 20},
+      {type = "item", name = "sp-rukite-bar", amount = 30},
+      {type = "item", name = "sp-rukite-powder", amount = 60},
+      {type = "item", name = "sp-gravitonium", amount = 40},
+      {type = "item", name = "sp-brass", amount = 300},
+      {type = "item", name = "sp-diamond", amount = 120},
+      {type = "item", name = "sp-titanium-nitride", amount = 240}
+    },
+    results = {
+      {type = "item", name = "sp-rukite-rocket-silo", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-rukite-rocket",  -- #ForRegEx# - recipe
+    category = "rocket-building",
+    enabled = false,
+    hide_from_player_crafting = true,
+    energy_required = 60,
+    ingredients = {
+      {type = "item", name = "rocket-control-unit", amount = 40},
+      {type = "item", name = "sp-advanced-processing-unit", amount = 80},
+      {type = "item", name = "sp-control-unit", amount = 20},
+      {type = "item", name = "sp-heat-resistant-tile", amount = 450},
+      {type = "item", name = "sp-niobium-steel", amount = 160},
+      {type = "item", name = "sp-niobium-tin", amount = 40},
+      {type = "item", name = "sp-titanium-plate", amount = 200},
+      {type = "item", name = "rocket-fuel", amount = 750},
+      {type = "item", name = "sp-rocket-engine", amount = 8},
+      {type = "item", name = "sp-solid-rocket-motor", amount = 24},
+      {type = "item", name = "sp-glass-fiber", amount = 100},
+      {type = "item", name = "sp-rukite-powder", amount = 300}
+    },
+    results = {
+      {type = "item", name = "sp-rukite-rocket", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-yemnuth-explorer",  -- #ForRegEx# - recipe
+    category = "crafting",
+    enabled = false,
+    energy_required = 420,
+    ingredients = {
+      {type = "item", name = "sp-advanced-processing-unit", amount = 12},
+      {type = "item", name = "sp-duralumin", amount = 30},
+      {type = "item", name = "sp-titanium-carbide", amount = 10},
+      {type = "item", name = "sp-gravitonium", amount = 30},
+      {type = "item", name = "sp-plasma-core", amount = 1},
+      {type = "item", name = "sp-ion-thruster", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-yemnuth-explorer", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-yemnuth-rocket-silo",  -- #ForRegEx# - recipe
+    category = "crafting",
+    enabled = false,
+    energy_required = 60,
+    ingredients = {
+      {type = "item", name = "rocket-silo", amount = 1},
+      {type = "item", name = "sp-plasma-capsule", amount = 20},
+      {type = "item", name = "sp-gamma-radiation-source", amount = 20},
+      {type = "item", name = "sp-yemnuth-pearls", amount = 80},
+      {type = "item", name = "sp-yemnuth-shard", amount = 120},
+      {type = "item", name = "sp-aluminum-brass", amount = 100},
+      {type = "item", name = "sp-TiAlSn", amount = 60}
+    },
+    results = {
+      {type = "item", name = "sp-yemnuth-rocket-silo", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-yemnuth-rocket",  -- #ForRegEx# - recipe
+    category = "rocket-building",
+    enabled = false,
+    hide_from_player_crafting = true,
+    energy_required = 60,
+    ingredients = {
+      -- Krastorio {"dt-fuel", 5}
+      {type = "item", name = "rocket-control-unit", amount = 60},
+      {type = "item", name = "sp-advanced-processing-unit", amount = 200},
+      {type = "item", name = "sp-heat-resistant-tile", amount = 400},
+      {type = "item", name = "sp-invar", amount = 160},
+      {type = "item", name = "sp-tungsten-slab", amount = 40},
+      {type = "item", name = "sp-graphene", amount = 200},
+      {type = "item", name = "rocket-fuel", amount = 300},
+      {type = "item", name = "sp-rocket-engine", amount = 8},
+      {type = "item", name = "sp-solid-rocket-motor", amount = 96},
+    },
+    results = {
+      {type = "item", name = "sp-yemnuth-rocket", amount = 1}
     }
   },
   {

@@ -2507,7 +2507,7 @@ data:extend({
     scale = 0.25,
     subgroup = "alien-product",
     order = "[flux-capacitor]",
-    stack_size = 1
+    stack_size = 10
   },
   {
     type = "item",
@@ -2527,7 +2527,7 @@ data:extend({
     scale = 0.25,
     subgroup = "alien-product",
     order = "[plasma-core]",
-    stack_size = 1
+    stack_size = 10
   },
   {
     type = "item",
@@ -2547,7 +2547,7 @@ data:extend({
     scale = 0.25,
     subgroup = "alien-product",
     order = "[nanobot]",
-    stack_size = 100
+    stack_size = 5000
   },
   {
     type = "item",
@@ -2557,7 +2557,7 @@ data:extend({
     scale = 0.25,
     subgroup = "alien-product",
     order = "[vortex-core]",
-    stack_size = 1
+    stack_size = 10
   },
   {
     type = "item",
@@ -2587,7 +2587,7 @@ data:extend({
     scale = 0.25,
     subgroup = "alien-product",
     order = "[bioreactor]",
-    stack_size = 1
+    stack_size = 10
   },
   ------------------------------------------------------------------------------
   -- MARK: fuel-processing
@@ -2714,44 +2714,152 @@ data:extend({
     limitation_message_key = "production-module-usable-only-on-intermediates"
   },
   ------------------------------------------------------------------------------
-  -- MARK: Group prduction
+  -- MARK: Group production
   -- MARK: space-related
   ------------------------------------------------------------------------------
   {
     type = "item",
-    name = "sp-rukite-explorer",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/icons/rukite-explorer.png",
-    icon_size = 64, icon_mipmaps = 4,
-    subgroup = "space-related",
-    order = "[rukite-explorer]",
-    stack_size = 50
-  },
-  {
-    type = "item",
     name = "sp-blunagium-explorer",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/icons/blunagium-explorer.png",
-    icon_size = 64, icon_mipmaps = 4,
+    icon_size = 64,
+    icon_mipmaps = 4,
     subgroup = "space-related",
-    order = "[blunagium-explorer]",
-    stack_size = 50
-  },
-  {
-    type = "item",
-    name = "sp-yemnuth-explorer",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/icons/yemnuth-explorer.png",
-    icon_size = 64, icon_mipmaps = 4,
-    subgroup = "space-related",
-    order = "[yemnuth-explorer]",
-    stack_size = 50
+    order = "f[blunagium-explorer]",
+    rocket_launch_products = {
+      -- Krastorio: {"space-research-data", 500}
+      {type = "item", name = "sp-blunagium-acrosphere-1", probability = 0.5, amount = 1},
+      {type = "item", name = "sp-blunagium-acrosphere-2", probability = 0.03, amount = 1}
+    },
+    stack_size = 5
   },
   {
     type = "item",
     name = "sp-grobgnum-explorer",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/icons/grobgnum-explorer.png",
-    icon_size = 64, icon_mipmaps = 4,
+    icon_size = 64,
+    icon_mipmaps = 4,
     subgroup = "space-related",
-    order = "[grobgnum-explorer]",
-    stack_size = 50
+    order = "f[grobgnum-explorer]",
+    rocket_launch_products = {
+      -- Krastorio: {"space-research-data", 500}
+      {type = "item", name = "sp-grobgnum-acrosphere-1", probability = 0.5, amount = 1},
+      {type = "item", name = "sp-grobgnum-acrosphere-2", probability = 0.03, amount = 1}
+    },
+    stack_size = 5
+  },
+  {
+    type = "item",
+    name = "sp-rukite-explorer",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/rukite-explorer.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "space-related",
+    order = "f[rukite-explorer]",
+    rocket_launch_products = {
+      -- Krastorio: {"space-research-data", 500}
+      {type = "item", name = "sp-rukite-acrosphere-1", probability = 0.5, amount = 1},
+      {type = "item", name = "sp-rukite-acrosphere-2", probability = 0.03, amount = 1}
+    },
+    stack_size = 5
+  },
+  {
+    type = "item",
+    name = "sp-yemnuth-explorer",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/yemnuth-explorer.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "space-related",
+    order = "f[yemnuth-explorer]",
+    rocket_launch_products = {
+      -- Krastorio: {"space-research-data", 500}
+      {type = "item", name = "sp-yemnuth-acrosphere-1", probability = 0.5, amount = 1},
+      {type = "item", name = "sp-yemnuth-acrosphere-2", probability = 0.03, amount = 1}
+    },
+    stack_size = 5
+  },
+  {
+    type = "item",
+    name = "sp-blunagium-rocket",
+    icon = "__Spaghenutti__/graphics/icons/blunagium-rocket.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "space-related",
+    order = "b[blunagium-rocket]",
+    stack_size = 1
+  },
+  {
+    type = "item",
+    name = "sp-grobgnum-rocket",
+    icon = "__Spaghenutti__/graphics/icons/grobgnum-rocket.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "space-related",
+    order = "b[grobgnum-rocket]",
+    stack_size = 1
+  },
+  {
+    type = "item",
+    name = "sp-rukite-rocket",
+    icon = "__Spaghenutti__/graphics/icons/rukite-rocket.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "space-related",
+    order = "b[rukite-rocket]",
+    stack_size = 1
+  },
+  {
+    type = "item",
+    name = "sp-yemnuth-rocket",
+    icon = "__Spaghenutti__/graphics/icons/yemnuth-rocket.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "space-related",
+    order = "b[yemnuth-rocket]",
+    stack_size = 1
+  },
+  {
+    type = "item",
+    name = "sp-blunagium-rocket-silo",
+    icon = "__base__/graphics/icons/rocket-silo.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "space-related",
+    order = "a[blunagium-rocket-silo]",
+    place_result = "sp-blunagium-rocket-silo",
+    stack_size = 1
+  },
+  {
+    type = "item",
+    name = "sp-grobgnum-rocket-silo",
+    icon = "__base__/graphics/icons/rocket-silo.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "space-related",
+    order = "a[grobgnum-rocket-silo]",
+    place_result = "sp-grobgnum-rocket-silo",
+    stack_size = 1
+  },
+  {
+    type = "item",
+    name = "sp-rukite-rocket-silo",
+    icon = "__base__/graphics/icons/rocket-silo.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "space-related",
+    order = "a[rukite-rocket-silo]",
+    place_result = "sp-rukite-rocket-silo",
+    stack_size = 1
+  },
+  {
+    type = "item",
+    name = "sp-yemnuth-rocket-silo",
+    icon = "__base__/graphics/icons/rocket-silo.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "space-related",
+    order = "a[yemnuth-rocket-silo]",
+    place_result = "sp-yemnuth-rocket-silo",
+    stack_size = 1
   },
   ------------------------------------------------------------------------------
   -- MARK: Group science --

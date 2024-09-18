@@ -1249,6 +1249,7 @@ table.insert(data.raw.recipe["battery-mk2-equipment"].ingredients, {"lithium-sul
 table.insert(data.raw.recipe["sp-chronomatter"].ingredients, {type = "item", name = "imersite-powder", amount = 4})
 table.insert(data.raw.recipe["sp-bioreactor"].ingredients, {type = "item", name = "biomass", amount = 10})
 table.insert(data.raw.recipe["sp-grobgnum-explorer"].ingredients, {type = "item", name = "ai-core", amount = 20})
+table.insert(data.raw.recipe["sp-yemnuth-rocket"].ingredients, {type = "item", name = "dt-fuel", amount = 5})
 table.insert(data.raw.recipe["sp-geological-science-pack-1"].ingredients, {type = "item", name = "quartz", amount = 5})
 table.insert(data.raw.recipe["sp-geological-science-pack-1"].ingredients, {type = "item", name = "sand", amount = 10})
 table.insert(data.raw.recipe["sp-material-science-pack-1"].ingredients, {type = "item", name = "steel-beam", amount = 3})
@@ -1345,6 +1346,12 @@ table.insert(data.raw.recipe["sp-rare-metal-alloy-from-yttrium"].results, {type 
 table.insert(data.raw.recipe["sp-rare-metal-alloy-from-lanthanum"].results, {type = "item", name = "rare-metals", amount = 5})
 table.insert(data.raw.recipe["sp-rare-metal-alloy-from-cerium"].results, {type = "item", name = "rare-metals", amount = 10})
 table.insert(data.raw.recipe["sp-rare-metal-alloy-from-neodymium"].results, {type = "item", name = "rare-metals", amount = 6})
+
+-- MARK: Add missing rocket launch products
+table.insert(data.raw.item["sp-blunagium-explorer"].rocket_launch_products, {"space-research-data", 500})
+table.insert(data.raw.item["sp-grobgnum-explorer"].rocket_launch_products, {"space-research-data", 500})
+table.insert(data.raw.item["sp-rukite-explorer"].rocket_launch_products, {"space-research-data", 500})
+table.insert(data.raw.item["sp-yemnuth-explorer"].rocket_launch_products, {"space-research-data", 500})
 
 -- MARK: Update icons
 -- Add acion changes here
