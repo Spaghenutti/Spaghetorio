@@ -1357,12 +1357,44 @@ data:extend({
   },
   {
     type = "item",
+    name = "sp-rukite-plate",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/rukite-plate-1.png",
+    icon_size = 64,
+    scale = 0.25,
+    pictures = {
+      { size = 64, filename = "__Spaghenutti__/graphics/icons/rukite-plate-1.png", scale = 0.25, mipmap_count = 4},
+      { size = 64, filename = "__Spaghenutti__/graphics/icons/rukite-plate-2.png", scale = 0.25, mipmap_count = 4},
+      { size = 64, filename = "__Spaghenutti__/graphics/icons/rukite-plate-3.png", scale = 0.25, mipmap_count = 4},
+      { size = 64, filename = "__Spaghenutti__/graphics/icons/rukite-plate-4.png", scale = 0.25, mipmap_count = 4}
+    },
+    subgroup = "alien-material",
+    order = "rukite[rukite-plate]",
+    stack_size = 100
+  },
+  {
+    type = "item",
     name = "sp-yemnuth-shard",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/icons/yemnuth-shard.png",
     icon_size = 64,
     scale = 0.25,
     subgroup = "alien-material",
     order = "yemnuth[yemnuth-shard]",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "sp-yemnuth-plate",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/yemnuth-plate-1.png",
+    icon_size = 64,
+    scale = 0.25,
+    pictures = {
+      { size = 64, filename = "__Spaghenutti__/graphics/icons/yemnuth-plate-1.png", scale = 0.25, mipmap_count = 4},
+      { size = 64, filename = "__Spaghenutti__/graphics/icons/yemnuth-plate-2.png", scale = 0.25, mipmap_count = 4},
+      { size = 64, filename = "__Spaghenutti__/graphics/icons/yemnuth-plate-3.png", scale = 0.25, mipmap_count = 4},
+      { size = 64, filename = "__Spaghenutti__/graphics/icons/yemnuth-plate-4.png", scale = 0.25, mipmap_count = 4}
+    },
+    subgroup = "alien-material",
+    order = "yemnuth[yemnuth-plate]",
     stack_size = 100
   },
   {
@@ -1437,6 +1469,22 @@ data:extend({
   },
   {
     type = "item",
+    name = "sp-blunagium-plate",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/blunagium-plate-1.png",
+    icon_size = 64,
+    scale = 0.25,
+    pictures = {
+      { size = 64, filename = "__Spaghenutti__/graphics/icons/blunagium-plate-1.png", scale = 0.25, mipmap_count = 4},
+      { size = 64, filename = "__Spaghenutti__/graphics/icons/blunagium-plate-2.png", scale = 0.25, mipmap_count = 4},
+      { size = 64, filename = "__Spaghenutti__/graphics/icons/blunagium-plate-3.png", scale = 0.25, mipmap_count = 4},
+      { size = 64, filename = "__Spaghenutti__/graphics/icons/blunagium-plate-4.png", scale = 0.25, mipmap_count = 4}
+    },
+    subgroup = "alien-material",
+    order = "blunagium[blunagium-plate]",
+    stack_size = 100
+  },
+  {
+    type = "item",
     name = "sp-quantum-foam",  -- #ForRegEx# - item
     icon = "__Spaghenutti__/graphics/icons/quantum-foam.png",
     icon_size = 64,
@@ -1503,6 +1551,22 @@ data:extend({
     scale = 0.25,
     subgroup = "alien-material",
     order = "grobgnum[grobgnum-bar]",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "sp-grobgnum-plate",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/grobgnum-plate-1.png",
+    icon_size = 64,
+    scale = 0.25,
+    pictures = {
+      { size = 64, filename = "__Spaghenutti__/graphics/icons/grobgnum-plate-1.png", scale = 0.25, mipmap_count = 4},
+      { size = 64, filename = "__Spaghenutti__/graphics/icons/grobgnum-plate-2.png", scale = 0.25, mipmap_count = 4},
+      { size = 64, filename = "__Spaghenutti__/graphics/icons/grobgnum-plate-3.png", scale = 0.25, mipmap_count = 4},
+      { size = 64, filename = "__Spaghenutti__/graphics/icons/grobgnum-plate-4.png", scale = 0.25, mipmap_count = 4}
+    },
+    subgroup = "alien-material",
+    order = "grobgnum[grobgnum-plate]",
     stack_size = 100
   },
   ------------------------------------------------------------------------------

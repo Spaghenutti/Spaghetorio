@@ -1373,6 +1373,11 @@ data.raw.recipe["sp-nuclear-waste-processing"].category = "crushing"
 data.raw.recipe["sp-astronomical-science-pack-2"].category = "t2-tech-cards"
 data.raw.recipe["sp-computer-science-pack-2"].category = "t2-tech-cards"
 
+data.raw.recipe["sp-blunagium-plate"].category = "advanced-smelting"
+data.raw.recipe["sp-grobgnum-plate"].category = "advanced-smelting"
+data.raw.recipe["sp-rukite-plate"].category = "advanced-smelting"
+data.raw.recipe["sp-yemnuth-plate"].category = "advanced-smelting"
+
 -- MARK: change subgroup
 data.raw.recipe["quartz"].subgroup = "processed-resource"
 
@@ -1743,6 +1748,27 @@ util.change_recipe_ingredients("energy-control-unit",
   30,
   60)
 
+util.change_recipe_ingredients("matter-stabilizer",
+  {
+    {"imersium-plate", 4},
+    {"sp-micro-frame", 3},
+    {"sp-advanced-processing-unit", 5},
+    {"lithium-sulfur-battery", 4},
+    {"sp-plate-heat-exchanger", 2},
+    {"sp-ceramic-matrix-composites", 12}
+  },
+  {
+    {"imersium-plate", 8},
+    {"sp-micro-frame", 6},
+    {"sp-advanced-processing-unit", 8},
+    {"lithium-sulfur-battery", 6},
+    {"sp-plate-heat-exchanger", 4},
+    {"sp-ceramic-matrix-composites", 20}
+  },
+  12,
+  24)
+
+
 -- MARK: Krastorio Buildings
 util.change_recipe_ingredients("kr-loader",
   {
@@ -1869,37 +1895,65 @@ util.change_recipe_ingredients("kr-advanced-loader",
   5)
 util.change_recipe_ingredients("kr-superior-transport-belt",
   {
-    {"sp-advanced-processing-unit", 69}
+    {"sp-advanced-processing-unit", 1},
+    {"sp-blunagium-plate", 2},
+    {"imersium-gear-wheel", 3},
+    {"electric-engine-unit", 1},
+    {"sp-nanobot", 6},
+    {"sp-glass-fiber", 2}
   },
   {
-    {"sp-advanced-processing-unit", 69}
+    {"sp-advanced-processing-unit", 2},
+    {"sp-blunagium-plate", 3},
+    {"imersium-gear-wheel", 5},
+    {"electric-engine-unit", 1},
+    {"sp-nanobot", 12},
+    {"sp-glass-fiber", 3}
   },
   2,
   3)
 util.change_recipe_ingredients("kr-superior-underground-belt",
   {
-    {"kr-superior-transport-belt", 24}
+    {"kr-superior-transport-belt", 24},
+    {"imersium-beam", 20},
+    {"sp-compressor", 4},
+    {"sp-control-unit", 2}
   },
   {
-    {"kr-superior-transport-belt", 24}
+    {"kr-superior-transport-belt", 24},
+    {"imersium-beam", 32},
+    {"sp-compressor", 6},
+    {"sp-control-unit", 6}
   },
   5,
   8)
 util.change_recipe_ingredients("kr-superior-splitter",
   {
-    {"kr-superior-transport-belt", 2}
+    {"kr-superior-transport-belt", 2},
+    {"imersium-beam", 4},
+    {"sp-micro-machine", 6},
+    {"sp-superconductor", 4},
   },
   {
-    {"kr-superior-transport-belt", 2}
+    {"kr-superior-transport-belt", 2},
+    {"imersium-beam", 6},
+    {"sp-micro-machine", 10},
+    {"sp-superconductor", 6},
   },
   4,
   6)
 util.change_recipe_ingredients("kr-superior-loader",
   {
-    {"kr-superior-transport-belt", 1}
+    {"kr-superior-transport-belt", 1},
+    {"sp-superconductor", 6},
+    {"sp-nanobot", 24},
+    {"sp-micro-machine", 4},
   },
   {
-    {"kr-superior-transport-belt", 1}
+    {"kr-superior-transport-belt", 1},
+    {"sp-superconductor", 10},
+    {"sp-nanobot", 32},
+    {"sp-micro-machine", 8},
   },
   3,
   5)
@@ -2283,6 +2337,33 @@ util.change_recipe_ingredients("kr-quarry-drill",
   },
   60,
   120)
+util.change_recipe_ingredients("kr-advanced-chemical-plant",
+  {
+    {"sp-TiAlSn", 20},
+    {"sp-stainless-steel", 40},
+    {"glass", 60},
+    {"processing-unit", 32},
+    {"sp-compressor", 8},
+    {"sp-filter", 60},
+    {"sp-pressure-tube", 40},
+    {"sp-copper-tube", 100},
+    {"sp-flange", 20},
+    {"refined-concrete", 60}
+  },
+  {
+    {"sp-TiAlSn", 30},
+    {"sp-stainless-steel", 80},
+    {"glass", 90},
+    {"processing-unit", 40},
+    {"sp-compressor", 16},
+    {"sp-filter", 80},
+    {"sp-pressure-tube", 50},
+    {"sp-copper-tube", 160},
+    {"sp-flange", 40},
+    {"refined-concrete", 100}
+  },
+  40,
+  80)
 util.change_recipe_ingredients("kr-mineral-water-pumpjack",
   {
     {"sp-stainless-steel", 16},
@@ -2303,7 +2384,7 @@ util.change_recipe_ingredients("kr-mineral-water-pumpjack",
 util.change_recipe_ingredients("kr-substation-mk2",
   {
     {"sp-bolts", 20},
-    {"processing-unit", 4},
+    {"sp-advanced-processing-unit", 4},
     {"sp-aluminum-cable", 24},
     {"imersium-beam", 12},
     {"concrete", 16},
@@ -2312,7 +2393,7 @@ util.change_recipe_ingredients("kr-substation-mk2",
   },
   {
     {"sp-bolts", 40},
-    {"processing-unit", 8},
+    {"sp-advanced-processing-unit", 6},
     {"sp-aluminum-cable", 48},
     {"imersium-beam", 24},
     {"concrete", 32},
@@ -2323,13 +2404,33 @@ util.change_recipe_ingredients("kr-substation-mk2",
   24)
 util.change_recipe_ingredients("kr-advanced-furnace",
   {
-    {"steel-plate", 69}
+    {"sp-tungsten-slab", 40},
+    {"sp-graphene", 60},
+    {"sp-heat-resistant-tile", 120},
+    {"imersium-beam", 80},
+    {"sp-tungsten-carbide", 30},
+    {"sp-titanium-nitride", 20},
+    {"sp-heating-filament", 40},
+    {"sp-control-unit", 20},
+    {"electric-engine-unit", 32},
+    {"sp-electrode", 60},
+    {"kr-black-reinforced-plate", 100},
   },
   {
-    {"steel-plate", 69}
+    {"sp-tungsten-slab", 60},
+    {"sp-graphene", 90},
+    {"sp-heat-resistant-tile", 200},
+    {"imersium-beam", 100},
+    {"sp-tungsten-carbide", 50},
+    {"sp-titanium-nitride", 50},
+    {"sp-heating-filament", 60},
+    {"sp-control-unit", 30},
+    {"electric-engine-unit", 40},
+    {"sp-electrode", 80},
+    {"kr-black-reinforced-plate", 200},
   },
-  69,
-  69)
+  60,
+  90)
 util.change_recipe_ingredients("kr-advanced-assembling-machine",
   {
     {"steel-plate", 69}
@@ -2506,31 +2607,79 @@ util.change_recipe_ingredients("kr-singularity-lab",
   120)
 util.change_recipe_ingredients("kr-matter-plant",
   {
-    {"steel-plate", 69}
+    {"energy-control-unit", 20},
+    {"imersium-beam", 80},
+    {"sp-niobium-steel", 50},
+    {"rare-metals", 40},
+    {"ai-core", 40},
+    {"sp-turbopump", 60},
+    {"sp-pressure-tube", 20},
+    {"sp-plasma-core", 1},
+    {"kr-black-reinforced-plate", 80},
   },
   {
-    {"steel-plate", 69}
+    {"energy-control-unit", 50},
+    {"imersium-beam", 120},
+    {"sp-niobium-steel", 80},
+    {"rare-metals", 50},
+    {"ai-core", 60},
+    {"sp-turbopump", 80},
+    {"sp-pressure-tube", 60},
+    {"sp-plasma-core", 1},
+    {"kr-black-reinforced-plate", 200},
   },
-  69,
-  69)
+  90,
+  150)
 util.change_recipe_ingredients("kr-matter-assembler",
   {
-    {"steel-plate", 69}
+    {"energy-control-unit", 40},
+    {"imersium-plate", 40},
+    {"sp-nitenol", 40},
+    {"sp-TiNb", 120},
+    {"ai-core", 24},
+    {"sp-micro-machine", 10},
+    {"sp-carbon-nanotubes", 150},
+    {"sp-vortex-core", 1},
+    {"kr-black-reinforced-plate", 160},
   },
   {
-    {"steel-plate", 69}
+    {"energy-control-unit", 80},
+    {"imersium-plate", 80},
+    {"sp-nitenol", 60},
+    {"sp-TiNb", 160},
+    {"ai-core", 50},
+    {"sp-micro-machine", 40},
+    {"sp-carbon-nanotubes", 240},
+    {"sp-vortex-core", 1},
+    {"kr-black-reinforced-plate", 320},
   },
-  69,
-  69)
+  40,
+  60)
+
 util.change_recipe_ingredients("kr-stabilizer-charging-station",
   {
-    {"steel-plate", 69}
+    {"energy-control-unit", 16},
+    {"imersium-plate", 20},
+    {"ai-core", 16},
+    {"sp-micro-machine", 6},
+    {"sp-nanobot", 200},
+    {"sp-tungsten-carbide", 20},
+    {"sp-vortex-core", 1},
+    {"kr-black-reinforced-plate", 16},
   },
   {
-    {"steel-plate", 69}
+    {"energy-control-unit", 24},
+    {"imersium-plate", 32},
+    {"ai-core", 24},
+    {"sp-micro-machine", 10},
+    {"sp-nanobot", 300},
+    {"sptungsten-carbide", 32},
+    {"sp-vortex-core", 1},
+    {"kr-black-reinforced-plate", 32},
   },
-  69,
-  69)
+  40,
+  60)
+
 util.change_recipe_ingredients("kr-singularity-beacon",
   {
     {"steel-plate", 69}
@@ -2540,6 +2689,7 @@ util.change_recipe_ingredients("kr-singularity-beacon",
   },
   69,
   69)
+
 util.change_recipe_ingredients("biusart-lab",
   {
     {"glass", 20},
@@ -2587,6 +2737,7 @@ util.change_recipe_ingredients("kr-tesla-coil",
   },
   30,
   60)
+
 util.change_recipe_ingredients("kr-advanced-radar",
   {
     {"sp-control-unit", 6},
@@ -2644,6 +2795,7 @@ util.change_recipe_ingredients("power-armor-mk3",
   },
   20,
   40)
+
 util.change_recipe_ingredients("power-armor-mk4",
   {
     {"iron-plate", 69}
@@ -2653,6 +2805,7 @@ util.change_recipe_ingredients("power-armor-mk4",
   },
   30,
   60)
+
 util.change_recipe_ingredients("energy-absorber",
   {
     {"sp-inconel", 2},
@@ -2670,6 +2823,7 @@ util.change_recipe_ingredients("energy-absorber",
   },
   4,
   6)
+
 util.change_recipe_ingredients("big-battery-equipment",
   {
     {"battery-equipment", 4},
@@ -2687,6 +2841,7 @@ util.change_recipe_ingredients("big-battery-equipment",
   },
   10,
   15)
+
 util.change_recipe_ingredients("big-battery-mk2-equipment",
   {
     {"battery-mk2-equipment", 4},
@@ -2704,6 +2859,7 @@ util.change_recipe_ingredients("big-battery-mk2-equipment",
   },
   15,
   30)
+
 data.raw.recipe["battery-mk3-equipment"].category = "crafting-with-fluid"
 util.change_recipe_ingredients("battery-mk3-equipment",
   {
@@ -2726,6 +2882,7 @@ util.change_recipe_ingredients("battery-mk3-equipment",
   },
   10,
   15)
+
 util.change_recipe_ingredients("big-battery-mk3-equipment",
   {
     {"battery-mk2-equipment", 6},
@@ -2741,6 +2898,7 @@ util.change_recipe_ingredients("big-battery-mk3-equipment",
   },
   20,
   40)
+
 util.change_recipe_ingredients("small-portable-generator",
   {
     {"engine-unit", 1},
@@ -2756,6 +2914,7 @@ util.change_recipe_ingredients("small-portable-generator",
   },
   6,
   10)
+
 util.change_recipe_ingredients("portable-generator",
   {
     {"electric-engine-unit", 2},
@@ -2775,6 +2934,7 @@ util.change_recipe_ingredients("portable-generator",
   },
   12,
   24)
+
 util.change_recipe_ingredients("big-solar-panel-equipment",
   {
     {"solar-panel", 4},
@@ -2792,6 +2952,7 @@ util.change_recipe_ingredients("big-solar-panel-equipment",
   },
   20,
   30)
+
 util.change_recipe_ingredients("imersite-solar-panel-equipment",
   {
     {type = "item", name = "sp-advanced-processing-unit", amount = 4},
@@ -2813,6 +2974,7 @@ util.change_recipe_ingredients("imersite-solar-panel-equipment",
   },
   10,
   20)
+
 util.change_recipe_ingredients("big-imersite-solar-panel-equipment",
   {
     {"imersite-solar-panel-equipment", 4},
@@ -2826,6 +2988,7 @@ util.change_recipe_ingredients("big-imersite-solar-panel-equipment",
     {"sp-nitenol", 14}},
   20,
   30)
+
 util.change_recipe_ingredients("nuclear-reactor-equipment",
   {
     {"sp-reactor-core", 1},

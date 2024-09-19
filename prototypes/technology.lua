@@ -4891,7 +4891,8 @@ data:extend({
       },
     },
     prerequisites = {
-      "sp-automation-science-pack-3"
+      "sp-automation-science-pack-3",
+      "sp-compressor"
     },
     unit =
     {

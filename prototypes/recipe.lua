@@ -2936,6 +2936,26 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "sp-rukite-plate",  -- #ForRegEx# - recipe
+    icon_size = 64,
+    mip_maps = 4,
+    category = "intermediate-smelting",  -- Krastorio: category = "advanced-smelting"
+    enabled = false,
+    energy_required = 48,
+    ingredients = {
+      {type = "item", name = "sp-blunagium-bar", amount = 14},
+      {type = "item", name = "copper-plate", amount = 3},
+      {type = "item", name = "sp-tungsten-slab", amount = 5},
+      {type = "item", name = "sp-magnesium-slab", amount = 4},
+      {type = "item", name = "sp-platinum", amount = 1},
+      {type = "item", name = "sp-palladium", amount = 2},
+    },
+    results = {
+      {type = "item", name = "sp-rukite-plate", amount = 4}
+    }
+  },
+  {
+    type = "recipe",
     name = "sp-chronomatter",  -- #ForRegEx# - recipe
     category = "chemistry",
     subgroup = "fluid-recipes",
@@ -3002,6 +3022,25 @@ data:extend({
       {type = "item", name = "sp-lanthanum", probability = 0.1, amount = 3},
       {type = "item", name = "sp-cerium", probability = 0.2, amount = 3},
       {type = "item", name = "sp-neodymium", probability = 0.09, amount = 3}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-yemnuth-plate",  -- #ForRegEx# - recipe
+    icon_size = 64,
+    mip_maps = 4,
+    category = "intermediate-smelting",  -- Krastorio: category = "advanced-smelting"
+    enabled = false,
+    energy_required = 40,
+    ingredients = {
+      {type = "item", name = "sp-yemnuth-pearls", amount = 8},
+      {type = "item", name = "sp-chromium-plate", amount = 5},
+      {type = "item", name = "sp-stibnite", amount = 3},
+      {type = "item", name = "sp-yttrium", amount = 2},
+      {type = "item", name = "sp-high-purity-silicon", amount = 4},
+    },
+    results = {
+      {type = "item", name = "sp-yemnuth-plate", amount = 3}
     }
   },
   {
@@ -3176,6 +3215,26 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "sp-blunagium-plate",  -- #ForRegEx# - recipe
+    icon_size = 64,
+    mip_maps = 4,
+    category = "intermediate-smelting",  -- Krastorio: category = "advanced-smelting"
+    enabled = false,
+    energy_required = 50,
+    ingredients = {
+      {type = "item", name = "sp-blunagium-bar", amount = 16},
+      {type = "item", name = "sp-titanium-ingot", amount = 3},
+      {type = "item", name = "sp-zirconium-rod", amount = 5},
+      {type = "item", name = "sp-silver", amount = 6},
+      {type = "item", name = "sp-lanthanum", amount = 2},
+      {type = "item", name = "sp-neodymium", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-blunagium-plate", amount = 5}
+    }
+  },
+  {
+    type = "recipe",
     name = "sp-fermium-condensate",  -- #ForRegEx# - recipe
     category = "crafting-with-fluid",
     enabled = false,
@@ -3327,6 +3386,27 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "sp-grobgnum-plate",  -- #ForRegEx# - recipe
+    icon_size = 64,
+    mip_maps = 4,
+    category = "intermediate-smelting",  -- Krastorio: category = "advanced-smelting"
+    enabled = false,
+    energy_required = 60,
+    ingredients = {
+      {type = "item", name = "sp-grobgnum-bar", amount = 16},
+      {type = "item", name = "sp-grobgnum-droplet", amount = 6},
+      {type = "item", name = "sp-zinc-plate", amount = 5},
+      {type = "item", name = "sp-tantalum-billet", amount = 2},
+      {type = "item", name = "sp-tellurium", amount = 1},
+      {type = "item", name = "sp-lanthanum", amount = 5},
+      {type = "item", name = "sp-sodium", amount = 2},
+    },
+    results = {
+      {type = "item", name = "sp-grobgnum-plate", amount = 6}
+    }
+  },
+  {
+    type = "recipe",
     name = "sp-biochip",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
@@ -3473,6 +3553,7 @@ data:extend({
     category = "rocket-building",
     enabled = false,
     hide_from_player_crafting = true,
+    hidden = true,
     energy_required = 60,
     ingredients = {
       {type = "item", name = "rocket-control-unit", amount = 80},
@@ -3537,6 +3618,7 @@ data:extend({
     category = "rocket-building",
     enabled = false,
     hide_from_player_crafting = true,
+    hidden = true,
     energy_required = 60,
     ingredients = {
       {type = "item", name = "rocket-control-unit", amount = 40},
@@ -3601,6 +3683,7 @@ data:extend({
     category = "rocket-building",
     enabled = false,
     hide_from_player_crafting = true,
+    hidden = true,
     energy_required = 60,
     ingredients = {
       {type = "item", name = "rocket-control-unit", amount = 40},
@@ -3663,6 +3746,7 @@ data:extend({
     category = "rocket-building",
     enabled = false,
     hide_from_player_crafting = true,
+    hidden = true,
     energy_required = 60,
     ingredients = {
       -- Krastorio {"dt-fuel", 5}

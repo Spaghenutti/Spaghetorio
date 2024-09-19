@@ -43,6 +43,8 @@ TODO:
   - Add colors to blunagium, grobgnum, rukite and yemnuth rocket silos
   - Fix engine exhaust and shadow for rockets
   - Add recipes for converting matter into resources
+  - Add recipes for converting acrospheres into rare and noble metals (Check eliminated crushing recipes)
+  - Add smelt crafting recipes for advanced assembling machine (see "kr-automation")
 
 
 Low prio
