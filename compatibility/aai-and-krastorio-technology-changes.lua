@@ -56,6 +56,37 @@ table.insert(data.raw.technology["sp-rukite-processing"].prerequisites, "kr-quar
 
 table.insert(data.raw.technology["sp-yemnuth-processing"].prerequisites, "kr-quarry-minerals-extraction")
 
+table.insert(data.raw.technology["sp-basic-acrosphere-conversion"].prerequisites, "kr-matter-processing")
+data.raw.technology["sp-basic-acrosphere-conversion"].unit.ingredients = {
+  {"sp-automation-science-pack-3", 1},
+  {"sp-logistic-science-pack-3", 1},
+  {"sp-chemical-science-pack-3", 1},
+  {"sp-electronic-science-pack-3", 1},
+  {"sp-geological-science-pack-3", 1},
+  {"sp-material-science-pack-3", 1},
+  {"sp-computer-science-pack-3", 1},
+  {"sp-production-science-pack-3", 1},
+  {"sp-nuclear-science-pack-3", 1},
+  {"sp-astronomical-science-pack-2", 1},
+  {"sp-utility-science-pack-3", 1},
+  {"matter-tech-card", 1}
+}
+
+data.raw.technology["sp-upgrade-acrosphere-conversion"].unit.ingredients = {
+  {"sp-automation-science-pack-3", 1},
+  {"sp-logistic-science-pack-3", 1},
+  {"sp-chemical-science-pack-3", 1},
+  {"sp-electronic-science-pack-3", 1},
+  {"sp-geological-science-pack-3", 1},
+  {"sp-material-science-pack-3", 1},
+  {"sp-computer-science-pack-3", 1},
+  {"sp-production-science-pack-3", 1},
+  {"sp-nuclear-science-pack-3", 1},
+  {"sp-astronomical-science-pack-2", 1},
+  {"sp-utility-science-pack-3", 1},
+  {"matter-tech-card", 1}
+}
+
 table.insert(data.raw.technology["sp-nanobot"].prerequisites, "kr-matter-tech-card")
 data.raw.technology["sp-nanobot"].unit.ingredients = {
   {"sp-automation-science-pack-3", 1},
@@ -696,6 +727,12 @@ data.raw.technology["kr-research-server"].unit.ingredients = {
   {"production-science-pack", 1}
 }
 
+data.raw.technology["space-science-pack"].effects = { -- Optimization tech card
+  {
+    type = "unlock-recipe",
+    recipe = "space-science-pack"
+  }
+}
 data.raw.technology["space-science-pack"].prerequisites = { -- Optimization tech card
   "sp-astronomical-science-pack-3",
   "sp-utility-science-pack-3",
@@ -816,6 +853,156 @@ data.raw.technology["kr-logistic-4"].unit.ingredients = {
   {"sp-computer-science-pack-2", 1},
   {"production-science-pack", 1},
   {"utility-science-pack", 1}
+}
+
+data.raw.technology["kr-matter-coal-processing"].unit.ingredients = {
+  {"sp-automation-science-pack-3", 1},
+  {"sp-logistic-science-pack-3", 1},
+  {"sp-chemical-science-pack-3", 1},
+  {"sp-electronic-science-pack-3", 1},
+  {"sp-geological-science-pack-3", 1},
+  {"sp-material-science-pack-3", 1},
+  {"sp-computer-science-pack-3", 1},
+  {"sp-production-science-pack-3", 1},
+  {"sp-nuclear-science-pack-3", 1},
+  {"sp-astronomical-science-pack-2", 1},
+  {"sp-utility-science-pack-3", 1},
+  {"matter-tech-card", 1}
+}
+
+data.raw.technology["kr-matter-copper-processing"].unit.ingredients = {
+  {"sp-automation-science-pack-3", 1},
+  {"sp-logistic-science-pack-3", 1},
+  {"sp-chemical-science-pack-3", 1},
+  {"sp-electronic-science-pack-3", 1},
+  {"sp-geological-science-pack-3", 1},
+  {"sp-material-science-pack-3", 1},
+  {"sp-computer-science-pack-3", 1},
+  {"sp-production-science-pack-3", 1},
+  {"sp-nuclear-science-pack-3", 1},
+  {"sp-astronomical-science-pack-2", 1},
+  {"sp-utility-science-pack-3", 1},
+  {"matter-tech-card", 1}
+}
+
+data.raw.technology["kr-matter-iron-processing"].unit.ingredients = {
+  {"sp-automation-science-pack-3", 1},
+  {"sp-logistic-science-pack-3", 1},
+  {"sp-chemical-science-pack-3", 1},
+  {"sp-electronic-science-pack-3", 1},
+  {"sp-geological-science-pack-3", 1},
+  {"sp-material-science-pack-3", 1},
+  {"sp-computer-science-pack-3", 1},
+  {"sp-production-science-pack-3", 1},
+  {"sp-nuclear-science-pack-3", 1},
+  {"sp-astronomical-science-pack-2", 1},
+  {"sp-utility-science-pack-3", 1},
+  {"matter-tech-card", 1}
+}
+
+data.raw.technology["kr-matter-minerals-processing"].unit.ingredients = {
+  {"sp-automation-science-pack-3", 1},
+  {"sp-logistic-science-pack-3", 1},
+  {"sp-chemical-science-pack-3", 1},
+  {"sp-electronic-science-pack-3", 1},
+  {"sp-geological-science-pack-3", 1},
+  {"sp-material-science-pack-3", 1},
+  {"sp-computer-science-pack-3", 1},
+  {"sp-production-science-pack-3", 1},
+  {"sp-nuclear-science-pack-3", 1},
+  {"sp-astronomical-science-pack-2", 1},
+  {"sp-utility-science-pack-3", 1},
+  {"matter-tech-card", 1}
+}
+
+data.raw.technology["kr-matter-oil-processing"].unit.ingredients = {
+  {"sp-automation-science-pack-3", 1},
+  {"sp-logistic-science-pack-3", 1},
+  {"sp-chemical-science-pack-3", 1},
+  {"sp-electronic-science-pack-3", 1},
+  {"sp-geological-science-pack-3", 1},
+  {"sp-material-science-pack-3", 1},
+  {"sp-computer-science-pack-3", 1},
+  {"sp-production-science-pack-3", 1},
+  {"sp-nuclear-science-pack-3", 1},
+  {"sp-astronomical-science-pack-2", 1},
+  {"sp-utility-science-pack-3", 1},
+  {"matter-tech-card", 1}
+}
+
+data.raw.technology["kr-matter-rare-metals-processing"].unit.ingredients = {
+  {"sp-automation-science-pack-3", 1},
+  {"sp-logistic-science-pack-3", 1},
+  {"sp-chemical-science-pack-3", 1},
+  {"sp-electronic-science-pack-3", 1},
+  {"sp-geological-science-pack-3", 1},
+  {"sp-material-science-pack-3", 1},
+  {"sp-computer-science-pack-3", 1},
+  {"sp-production-science-pack-3", 1},
+  {"sp-nuclear-science-pack-3", 1},
+  {"sp-astronomical-science-pack-2", 1},
+  {"sp-utility-science-pack-3", 1},
+  {"matter-tech-card", 1}
+}
+
+data.raw.technology["kr-matter-rare-metals-processing"].unit.ingredients = {
+  {"sp-automation-science-pack-3", 1},
+  {"sp-logistic-science-pack-3", 1},
+  {"sp-chemical-science-pack-3", 1},
+  {"sp-electronic-science-pack-3", 1},
+  {"sp-geological-science-pack-3", 1},
+  {"sp-material-science-pack-3", 1},
+  {"sp-computer-science-pack-3", 1},
+  {"sp-production-science-pack-3", 1},
+  {"sp-nuclear-science-pack-3", 1},
+  {"sp-astronomical-science-pack-2", 1},
+  {"sp-utility-science-pack-3", 1},
+  {"matter-tech-card", 1}
+}
+
+data.raw.technology["kr-matter-stone-processing"].unit.ingredients = {
+  {"sp-automation-science-pack-3", 1},
+  {"sp-logistic-science-pack-3", 1},
+  {"sp-chemical-science-pack-3", 1},
+  {"sp-electronic-science-pack-3", 1},
+  {"sp-geological-science-pack-3", 1},
+  {"sp-material-science-pack-3", 1},
+  {"sp-computer-science-pack-3", 1},
+  {"sp-production-science-pack-3", 1},
+  {"sp-nuclear-science-pack-3", 1},
+  {"sp-astronomical-science-pack-2", 1},
+  {"sp-utility-science-pack-3", 1},
+  {"matter-tech-card", 1}
+}
+
+data.raw.technology["kr-matter-uranium-processing"].unit.ingredients = {
+  {"sp-automation-science-pack-3", 1},
+  {"sp-logistic-science-pack-3", 1},
+  {"sp-chemical-science-pack-3", 1},
+  {"sp-electronic-science-pack-3", 1},
+  {"sp-geological-science-pack-3", 1},
+  {"sp-material-science-pack-3", 1},
+  {"sp-computer-science-pack-3", 1},
+  {"sp-production-science-pack-3", 1},
+  {"sp-nuclear-science-pack-3", 1},
+  {"sp-astronomical-science-pack-2", 1},
+  {"sp-utility-science-pack-3", 1},
+  {"matter-tech-card", 1}
+}
+
+data.raw.technology["kr-matter-water-processing"].unit.ingredients = {
+  {"sp-automation-science-pack-3", 1},
+  {"sp-logistic-science-pack-3", 1},
+  {"sp-chemical-science-pack-3", 1},
+  {"sp-electronic-science-pack-3", 1},
+  {"sp-geological-science-pack-3", 1},
+  {"sp-material-science-pack-3", 1},
+  {"sp-computer-science-pack-3", 1},
+  {"sp-production-science-pack-3", 1},
+  {"sp-nuclear-science-pack-3", 1},
+  {"sp-astronomical-science-pack-2", 1},
+  {"sp-utility-science-pack-3", 1},
+  {"matter-tech-card", 1}
 }
 
 -- MARK: Krastorio infinite techs

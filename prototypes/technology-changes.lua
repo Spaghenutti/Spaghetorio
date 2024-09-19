@@ -565,6 +565,7 @@ data.raw.technology["rocket-control-unit"].unit.ingredients = {
   {"utility-science-pack", 1}
 }
 
+table.insert(data.raw.technology["rocket-silo"].effects, {type = "unlock-recipe", recipe = "satellite"})
 data.raw.technology["rocket-silo"].prerequisites = {
   "rocket-control-unit",
   "rocket-fuel",

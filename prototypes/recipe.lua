@@ -5272,13 +5272,19 @@ data:extend({
     name = "sp-utility-science-pack-3",
     category = "crafting",
     enabled = false,
-    energy_required = 24,
+    energy_required = 192,
     ingredients =
     {
-      {"utility-science-pack", 20},
-      {"iron-plate", 69}
+      -- Krastorio {"utility-science-pack", 40},
+      -- Krastorio {"kr-advanced-steam-turbine", 8},
+      -- Krastorio {"kr-quantum-computer", 1},
+      -- Krastorio {"kr-bio-lab", 2},
+      -- Krastorio {"kr-fuel-refinery", 2},
+      -- Krastorio {"kr-quarry-drill", 1},
+      {"assembling-machine-3", 4},
+      {"beacon", 4}
     },
-    result_count = 5,
+    result_count = 40,
     result = "sp-utility-science-pack-3"
   },
   ------------------------------------------------------------------------------

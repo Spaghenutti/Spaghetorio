@@ -2414,7 +2414,7 @@ data:extend({
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "advanced-intermediate-product",
     order = "[reactor-core]",
-    stack_size = 50
+    stack_size = 5
   },
   {
     type = "item",

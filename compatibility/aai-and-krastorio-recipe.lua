@@ -1265,6 +1265,12 @@ table.insert(data.raw.recipe["sp-nuclear-science-pack-2"].ingredients, {type = "
 table.insert(data.raw.recipe["sp-military-science-pack-3"].ingredients, {type = "item", name = "biters-research-data", amount = 3})
 table.insert(data.raw.recipe["sp-chemical-science-pack-3"].ingredients, {type = "item", name = "lithium-chloride", amount = 5})
 table.insert(data.raw.recipe["sp-chemical-science-pack-3"].ingredients, {type = "fluid", name = "nitric-acid", amount = 30})
+table.insert(data.raw.recipe["sp-utility-science-pack-3"].ingredients, {type = "item", name = "utility-science-pack", amount = 40})
+table.insert(data.raw.recipe["sp-utility-science-pack-3"].ingredients, {type = "item", name = "kr-advanced-steam-turbine", amount = 8})
+table.insert(data.raw.recipe["sp-utility-science-pack-3"].ingredients, {type = "item", name = "kr-quantum-computer", amount = 1})
+table.insert(data.raw.recipe["sp-utility-science-pack-3"].ingredients, {type = "item", name = "kr-bio-lab", amount = 4})
+table.insert(data.raw.recipe["sp-utility-science-pack-3"].ingredients, {type = "item", name = "kr-fuel-refinery", amount = 2})
+table.insert(data.raw.recipe["sp-utility-science-pack-3"].ingredients, {type = "item", name = "kr-quarry-drill", amount = 1})
 
 -- MARK: Add missing ingredients from recipe-changes.lua
 table.insert(data.raw.recipe["concrete"].normal.ingredients, {"sand", 5})

@@ -944,6 +944,7 @@ blunagium_rocket_silo.name = "sp-blunagium-rocket-silo"
 blunagium_rocket_silo.rocket_entity = "sp-blunagium-rocket"
 blunagium_rocket_silo.rocket_parts_required = 1
 blunagium_rocket_silo.fixed_recipe = "sp-blunagium-rocket"
+blunagium_rocket_silo.rocket_result_inventory_size = 3
 
 
 -- MARK: grobgnum rocket
@@ -968,6 +969,7 @@ grobgnum_rocket_silo.name = "sp-grobgnum-rocket-silo"
 grobgnum_rocket_silo.rocket_entity = "sp-grobgnum-rocket"
 grobgnum_rocket_silo.rocket_parts_required = 1
 grobgnum_rocket_silo.fixed_recipe = "sp-grobgnum-rocket"
+grobgnum_rocket_silo.rocket_result_inventory_size = 3
 
 -- MARK: rukite rocket
 rukite_rocket = table.deepcopy(data.raw["rocket-silo-rocket"]["rocket-silo-rocket"])
@@ -991,6 +993,7 @@ rukite_rocket_silo.name = "sp-rukite-rocket-silo"
 rukite_rocket_silo.rocket_entity = "sp-rukite-rocket"
 rukite_rocket_silo.rocket_parts_required = 1
 rukite_rocket_silo.fixed_recipe = "sp-rukite-rocket"
+rukite_rocket_silo.rocket_result_inventory_size = 3
 
 -- MARK: yemnuth rocket
 yemnuth_rocket = table.deepcopy(data.raw["rocket-silo-rocket"]["rocket-silo-rocket"])
@@ -1014,6 +1017,7 @@ yemnuth_rocket_silo.name = "sp-yemnuth-rocket-silo"
 yemnuth_rocket_silo.rocket_entity = "sp-yemnuth-rocket"
 yemnuth_rocket_silo.rocket_parts_required = 1
 yemnuth_rocket_silo.fixed_recipe = "sp-yemnuth-rocket"
+yemnuth_rocket_silo.rocket_result_inventory_size = 3
 
 data:extend({
   blunagium_rocket,

@@ -42,6 +42,7 @@ TODO:
   - Create better recipes for blunagium, grobgnum, rukite and yemnuth rocket silos
   - Add colors to blunagium, grobgnum, rukite and yemnuth rocket silos
   - Fix engine exhaust and shadow for rockets
+  - Add recipes for converting matter into resources
 
 
 Low prio
@@ -54,13 +55,13 @@ Low prio
   - Fix smoke tints of chemical recipes
   - Fix sorting of items in lua. "Mark: buildings" does not exist as category
   ? Fix all icons where petroleum gas shows up
-  - Move science-pack changes to diffirent file than aai-and-krastorio-final-fixes.lua
+  + Move science-pack changes to diffirent file than aai-and-krastorio-final-fixes.lua
   - Add normal and expensive recipes
   - Add duct tape, lol
   - Why cant I align the 3rd and 4th tier of tech cards... why.....????
-  - Why have some recipes not have a dropshadow???? select sp-tin-and-lead on furnace
+  - Why have some recipes not have a dropshadow???? See sp-tin-and-lead icon on furnace
   + Add subgroups to fluids
-  - Add ceramic matrix components
+  + Add ceramic matrix components
   + Add compressor
   - Add seal
   - Add bearing
