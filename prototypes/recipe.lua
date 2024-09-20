@@ -2482,7 +2482,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-monocrystal",  -- #ForRegEx# - recipe
-    category = "advanced-smelting",
+    category = "intermediate-smelting",
     enabled = false,
     energy_required = 30,
     ingredients = {
@@ -2499,7 +2499,7 @@ data:extend({
     name = "sp-quasicrystal-1",  -- #ForRegEx# - recipe
     icons = util.overlay_small_icon("__Spaghenutti__/graphics/icons/quasicrystal.png", 64,
                                     "__base__/graphics/icons/copper-plate.png", 64),
-    category = "advanced-smelting",
+    category = "intermediate-smelting",
     enabled = false,
     energy_required = 30,
     ingredients = {
@@ -2517,7 +2517,7 @@ data:extend({
     name = "sp-quasicrystal-2",  -- #ForRegEx# - recipe
     icons = util.overlay_small_icon("__Spaghenutti__/graphics/icons/quasicrystal.png", 64,
                                     "__Spaghenutti__/graphics/icons/aluminum-sheet.png", 64),
-    category = "advanced-smelting",
+    category = "intermediate-smelting",
     enabled = false,
     energy_required = 40,
     ingredients = {
@@ -2922,7 +2922,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-rukite-bar",  -- #ForRegEx# - recipe
-    category = "crafting",
+    category = "intermediate-smelting",
     enabled = false,
     energy_required = 3.6,
     ingredients = {
@@ -3168,7 +3168,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-blunagium-bar",  -- #ForRegEx# - recipe
-    category = "smelting",
+    category = "intermediate-smelting",
     enabled = false,
     energy_required = 6,
     ingredients = {

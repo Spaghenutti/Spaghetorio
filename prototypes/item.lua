@@ -2654,6 +2654,573 @@ data:extend({
     stack_size = 10
   },
   ------------------------------------------------------------------------------
+  -- MARK: intermediate-alien-product
+  ------------------------------------------------------------------------------
+  {
+    type = "item",
+    name = "sp-gravitational-wave-bridge",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/gravitational-wave-bridge.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "intermediate-alien-product",
+    order = "b[gravitational-wave-bridge]",
+    stack_size = 10
+  },
+  {
+    type = "item",
+    name = "sp-gravitational-wave-interferometer",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/gravitational-wave-interferometer.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "intermediate-alien-product",
+    order = "b[gravitational-wave-interferometer]",
+    stack_size = 10
+  },
+  {
+    type = "item",
+    name = "sp-gravitational-wave-splitter",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/gravitational-wave-splitter.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "intermediate-alien-product",
+    order = "b[gravitational-wave-splitter]",
+    stack_size = 10
+  },
+  {
+    type = "item",
+    name = "sp-blunagium-solenoid",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/blunagium-solenoid.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "intermediate-alien-product",
+    order = "b[blunagium-solenoid]",
+    stack_size = 10
+  },
+  {
+    type = "item",
+    name = "sp-boson-blossom",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/boson-blossom.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "intermediate-alien-product",
+    order = "b[boson-blossom]",
+    stack_size = 10
+  },
+  {
+    type = "item",
+    name = "sp-bio-capacitor",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/bio-capacitor.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "intermediate-alien-product",
+    order = "g[bio-capacitor]",
+    stack_size = 10
+  },
+  {
+    type = "item",
+    name = "sp-neuropuls-module",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/neuropuls-module.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "intermediate-alien-product",
+    order = "g[neuropuls-module]",
+    stack_size = 10
+  },
+  {
+    type = "item",
+    name = "sp-neural-fusion-card",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/neural-fusion-card.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "intermediate-alien-product",
+    order = "g[neural-fusion-card]",
+    stack_size = 10
+  },
+  {
+    type = "item",
+    name = "sp-synaptic-core-chip",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/synaptic-core-chip.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "intermediate-alien-product",
+    order = "g[synaptic-core-chip]",
+    stack_size = 10
+  },
+  {
+    type = "item",
+    name = "sp-alpha-wave-tray-array",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/alpha-wave-tray-array.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "intermediate-alien-product",
+    order = "i[alpha-wave-tray-array]",
+    stack_size = 10
+  },
+  {
+    type = "item",
+    name = "sp-radiation-channeler",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/radiation-channeler.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "intermediate-alien-product",
+    order = "i[radiation-channeler]",
+    stack_size = 10
+  },
+  {
+    type = "item",
+    name = "sp-ultra-violet-processor",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/ultra-violet-processor.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "intermediate-alien-product",
+    order = "i[ultra-violet-processor]",
+    stack_size = 10
+  },
+  {
+    type = "item",
+    name = "sp-extreme-heat-source",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/extreme-heat-source.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "intermediate-alien-product",
+    order = "r[extreme-heat-source]",
+    stack_size = 10
+  },
+  {
+    type = "item",
+    name = "sp-graphene-chip",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/graphene-chip.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "intermediate-alien-product",
+    order = "r[graphene-chip]",
+    stack_size = 10
+  },
+  {
+    type = "item",
+    name = "sp-rukite-gearbox",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/rukite-gearbox.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "intermediate-alien-product",
+    order = "r[rukite-gearbox]",
+    stack_size = 10
+  },
+  {
+    type = "item",
+    name = "sp-rukite-gear-wheel",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/rukite-gear-wheel.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "intermediate-alien-product",
+    order = "r[rukite-gear-wheel]",
+    stack_size = 10
+  },
+  {
+    type = "item",
+    name = "sp-holo-grip-controller",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/holo-grip-controller.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "intermediate-alien-product",
+    order = "r[holo-grip-controller]",
+    stack_size = 10
+  },
+  {
+    type = "item",
+    name = "sp-neutrino-strem-source",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/neutrino-strem-source.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "intermediate-alien-product",
+    order = "y[neutrino-strem-source]",
+    stack_size = 10
+  },
+  {
+    type = "item",
+    name = "sp-collapsed-orbitals",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/collapsed-orbitals.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "intermediate-alien-product",
+    order = "y[collapsed-orbitals]",
+    stack_size = 10
+  },
+  {
+    type = "item",
+    name = "sp-entangled-leptons",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/entangled-leptons.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "intermediate-alien-product",
+    order = "y[entangled-leptons]",
+    stack_size = 10
+  },
+  {
+    type = "item",
+    name = "sp-gluon-orb",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/gluon-orb.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "intermediate-alien-product",
+    order = "y[gluon-orb]",
+    stack_size = 10
+  },
+  {
+    type = "item",
+    name = "sp-quantum-tube",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/quantum-tube.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "intermediate-alien-product",
+    order = "y[quantum-tube]",
+    stack_size = 10
+  },
+  {
+    type = "item",
+    name = "sp-orbital-cell",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/orbital-cell.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "intermediate-alien-product",
+    order = "y[orbital-cell]",
+    stack_size = 10
+  },
+  {
+    type = "item",
+    name = "sp-quark-sphere",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/quark-sphere.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "intermediate-alien-product",
+    order = "y[quark-sphere]",
+    stack_size = 10
+  },
+  {
+    type = "item",
+    name = "sp-femto-navigator",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/femto-navigator.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "intermediate-alien-product",
+    order = "y[femto-navigator]",
+    stack_size = 10
+  },
+  {
+    type = "item",
+    name = "sp-energy-channeler",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/energy-channeler.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "intermediate-alien-product",
+    order = "y[energy-channeler]",
+    stack_size = 10
+  },
+  {
+    type = "item",
+    name = "sp-photon-pulse",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/photon-pulse.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "intermediate-alien-product",
+    order = "y[photon-pulse]",
+    stack_size = 10
+  },
+  {
+    type = "item",
+    name = "sp-quantized-compute-unit",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/quantized-compute-unit.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "intermediate-alien-product",
+    order = "y[quantized-compute-unit]",
+    stack_size = 10
+  },
+  {
+    type = "item",
+    name = "sp-quantized-orbital-flower",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/quantized-orbital-flower.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "intermediate-alien-product",
+    order = "y[quantized-orbital-flower]",
+    stack_size = 10
+  },
+  {
+    type = "item",
+    name = "sp-traped-quantum-energy",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/traped-quantum-energy.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "intermediate-alien-product",
+    order = "y[traped-quantum-energy]",
+    stack_size = 10
+  },
+  {
+    type = "item",
+    name = "sp-frictionless-bearing",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/frictionless-bearing.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "intermediate-alien-product",
+    order = "z[frictionless-bearing]",
+    stack_size = 10
+  },
+  {
+    type = "item",
+    name = "sp-frictionless-joint",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/frictionless-joint.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "intermediate-alien-product",
+    order = "z[frictionless-joint]",
+    stack_size = 10
+  },
+  ------------------------------------------------------------------------------
+  -- MARK: advanced-alien-product
+  ------------------------------------------------------------------------------
+  {
+    type = "item",
+    name = "sp-extreme-data-transfer-controller",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/extreme-data-transfer-controller.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "advanced-alien-product",
+    order = "[extreme-data-transfer-controller]",
+    stack_size = 10
+  },
+  {
+    type = "item",
+    name = "sp-information-cube",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/information-cube.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "advanced-alien-product",
+    order = "[information-cube]",
+    stack_size = 10
+  },
+  {
+    type = "item",
+    name = "sp-universal-storage-drive",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/universal-storage-drive.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "advanced-alien-product",
+    order = "[universal-storage-drive]",
+    stack_size = 10
+  },
+  {
+    type = "item",
+    name = "sp-miniaturized-star-core-stabilizer",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/miniaturized-star-core-stabilizer.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "advanced-alien-product",
+    order = "[miniaturized-star-core-stabilizer]",
+    stack_size = 10
+  },
+  {
+    type = "item",
+    name = "sp-omni-pulse-generator",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/omni-pulse-generator.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "advanced-alien-product",
+    order = "[omni-pulse-generator]",
+    stack_size = 10
+  },
+  {
+    type = "item",
+    name = "sp-quantum-capacitor",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/quantum-capacitor.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "advanced-alien-product",
+    order = "[quantum-capacitor]",
+    stack_size = 10
+  },
+  {
+    type = "item",
+    name = "sp-proton-neutron-frame",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/proton-neutron-frame.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "advanced-alien-product",
+    order = "[proton-neutron-frame]",
+    stack_size = 10
+  },
+  {
+    type = "item",
+    name = "sp-proton-neutron-superconductor",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/proton-neutron-superconductor.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "advanced-alien-product",
+    order = "[proton-neutron-superconductor]",
+    stack_size = 10
+  },
+  {
+    type = "item",
+    name = "sp-quantized-protons",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/quantized-protons.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "advanced-alien-product",
+    order = "[quantized-protons]",
+    stack_size = 10
+  },
+  {
+    type = "item",
+    name = "sp-lossless-power-conector",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/lossless-power-conector.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "advanced-alien-product",
+    order = "[lossless-power-conector]",
+    stack_size = 10
+  },
+  {
+    type = "item",
+    name = "sp-subatomic-condenser",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/subatomic-condenser.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "advanced-alien-product",
+    order = "[subatomic-condenser]",
+    stack_size = 10
+  },
+  {
+    type = "item",
+    name = "sp-miniaturized-stellar-bridge",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/miniaturized-stellar-bridge.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "advanced-alien-product",
+    order = "[miniaturized-stellar-bridge]",
+    stack_size = 10
+  },
+  {
+    type = "item",
+    name = "sp-neutrino-charger",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/neutrino-charger.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "advanced-alien-product",
+    order = "[neutrino-charger]",
+    stack_size = 10
+  },
+  {
+    type = "item",
+    name = "sp-relativity-condenser",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/relativity-condenser.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "advanced-alien-product",
+    order = "[relativity-condenser]",
+    stack_size = 10
+  },
+  {
+    type = "item",
+    name = "sp-sideral-compute-core",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/sideral-compute-core.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "advanced-alien-product",
+    order = "[sideral-compute-core]",
+    stack_size = 10
+  },
+  {
+    type = "item",
+    name = "sp-quantum-relativity-compute-unit",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/quantum-relativity-compute-unit.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "advanced-alien-product",
+    order = "[quantum-relativity-compute-unit]",
+    stack_size = 10
+  },
+  {
+    type = "item",
+    name = "sp-quark-gluon-probe",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/quark-gluon-probe.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "advanced-alien-product",
+    order = "[quark-gluon-probe]",
+    stack_size = 10
+  },
+  {
+    type = "item",
+    name = "sp-sideral-seal",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/sideral-seal.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "advanced-alien-product",
+    order = "[sideral-seal]",
+    stack_size = 10
+  },
+  {
+    type = "item",
+    name = "sp-evolution-cell-container",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/evolution-cell-container.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "advanced-alien-product",
+    order = "[evolution-cell-container]",
+    stack_size = 10
+  },
+  {
+    type = "item",
+    name = "sp-evolution-pulse-cell",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/evolution-pulse-cell.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "advanced-alien-product",
+    order = "[evolution-pulse-cell]",
+    stack_size = 10
+  },
+  {
+    type = "item",
+    name = "sp-hadron-beam-charger",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/hadron-beam-charger.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "advanced-alien-product",
+    order = "[hadron-beam-charger]",
+    stack_size = 10
+  },
+  {
+    type = "item",
+    name = "sp-quantum-stream-supply",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/quantum-stream-supply.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "advanced-alien-product",
+    order = "[quantum-stream-supply]",
+    stack_size = 10
+  },
+
+  {
+    type = "item",
+    name = "sp-quantum-switch",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/quantum-switch.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "advanced-alien-product",
+    order = "[quantum-switch]",
+    stack_size = 10
+  },
+  {
+    type = "item",
+    name = "sp-quark-gluon-plasma-container",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/quark-gluon-plasma-container.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "advanced-alien-product",
+    order = "[quark-gluon-plasma-container]",
+    stack_size = 10
+  },
+  ------------------------------------------------------------------------------
   -- MARK: fuel-processing
   ------------------------------------------------------------------------------
   {

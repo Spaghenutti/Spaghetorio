@@ -121,9 +121,21 @@ data:extend({
   },
   {
     type = "item-subgroup",
-    name = "fuel-processing",
+    name = "intermediate-alien-product",
     group = "intermediate-products",
     order = "j"
+  },
+  {
+    type = "item-subgroup",
+    name = "advanced-alien-product",
+    group = "intermediate-products",
+    order = "k"
+  },
+  {
+    type = "item-subgroup",
+    name = "fuel-processing",
+    group = "intermediate-products",
+    order = "z"
   },
   ------------------------------------------------------------------------------
   -- MARK: logistics
