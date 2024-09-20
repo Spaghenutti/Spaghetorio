@@ -83,6 +83,7 @@ Low prio
   - Separate ores with centrifuges
   - Do something interesting with coal liquifaction
   - Unlock much earlier filter inserter
+  - Add dark matter, quantized matter, polarized matter, dark energy as fluids
 
 
 Future changes

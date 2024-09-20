@@ -3940,6 +3940,153 @@ data:extend({
     },
     order = "a-h-a"
   },
+  ------------------------------------------------------------------------------
+  -- MARK: intermediate alien products
+  ------------------------------------------------------------------------------
+  {
+    type = "technology",
+    name = "sp-gravitational-devices",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghenutti__/graphics/hr-icons/boson-blossom.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-blunagium-solenoid"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-boson-blossom"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-gravitational-wave-bridge"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-gravitational-wave-interferometer"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-gravitational-wave-splitter"
+      }
+    },
+    prerequisites = {
+      "sp-astronomical-science-pack-3"
+    },
+    unit =
+    {
+      count = 1500,
+      ingredients = {
+        {"sp-automation-science-pack-3", 1},
+        {"sp-logistic-science-pack-3", 1},
+        {"sp-chemical-science-pack-3", 1},
+        {"sp-electronic-science-pack-3", 1},
+        {"sp-geological-science-pack-3", 1},
+        {"sp-material-science-pack-3", 1},
+        {"sp-computer-science-pack-3", 1},
+        {"sp-production-science-pack-3", 1},
+        {"sp-nuclear-science-pack-3", 1},
+        {"sp-astronomical-science-pack-3", 1},
+        {"sp-utility-science-pack-3", 1},
+        -- Krastorio: {"matter-tech-card", 1},
+        -- Krastorio: {"advanced-tech-card", 1}
+      },
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-rukite-gearbox",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghenutti__/graphics/hr-icons/rukite-gearbox.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-rukite-gear-wheel"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-rukite-gearbox"
+      }
+    },
+    prerequisites = {
+      "sp-astronomical-science-pack-3"
+    },
+    unit =
+    {
+      count = 400,
+      ingredients = {
+        {"sp-automation-science-pack-3", 1},
+        {"sp-logistic-science-pack-3", 1},
+        {"sp-chemical-science-pack-3", 1},
+        {"sp-electronic-science-pack-3", 1},
+        {"sp-geological-science-pack-3", 1},
+        {"sp-material-science-pack-3", 1},
+        {"sp-computer-science-pack-3", 1},
+        {"sp-production-science-pack-3", 1},
+        {"sp-nuclear-science-pack-3", 1},
+        {"sp-astronomical-science-pack-3", 1},
+        {"sp-utility-science-pack-3", 1},
+        -- Krastorio: {"matter-tech-card", 1},
+        -- Krastorio: {"advanced-tech-card", 1}
+      },
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-frictionless-joint",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghenutti__/graphics/hr-icons/frictionless-joint.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-frictionless-bearing"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-frictionless-joint"
+      }
+    },
+    prerequisites = {
+      "sp-rukite-gearbox",
+      "sp-gravitational-devices"
+    },
+    unit =
+    {
+      count = 200,
+      ingredients = {
+        {"sp-automation-science-pack-3", 1},
+        {"sp-logistic-science-pack-3", 1},
+        {"sp-chemical-science-pack-3", 1},
+        {"sp-electronic-science-pack-3", 1},
+        {"sp-geological-science-pack-3", 1},
+        {"sp-material-science-pack-3", 1},
+        {"sp-computer-science-pack-3", 1},
+        {"sp-production-science-pack-3", 1},
+        {"sp-nuclear-science-pack-3", 1},
+        {"sp-astronomical-science-pack-3", 1},
+        {"sp-utility-science-pack-3", 1},
+        -- Krastorio: {"matter-tech-card", 1},
+        -- Krastorio: {"advanced-tech-card", 1}
+      },
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  ------------------------------------------------------------------------------
+  -- MARK: advanced alien products
+  ------------------------------------------------------------------------------
+
+  ------------------------------------------------------------------------------
+  -- Acrosphere conversion recipes
+  -- MARK: Acrosphere technology
+  ------------------------------------------------------------------------------
   {
     type = "technology",
     name = "sp-basic-acrosphere-conversion",  -- #ForRegEx# - technology

@@ -1768,7 +1768,6 @@ util.change_recipe_ingredients("matter-stabilizer",
   12,
   24)
 
-
 -- MARK: Krastorio Buildings
 util.change_recipe_ingredients("kr-loader",
   {
@@ -1785,6 +1784,7 @@ util.change_recipe_ingredients("kr-loader",
   },
   2,
   3)
+
 util.change_recipe_ingredients("kr-fast-loader",
   {
     {"sp-aluminum-frame", 2},
@@ -1804,6 +1804,7 @@ util.change_recipe_ingredients("kr-fast-loader",
   },
   2,
   3)
+
 util.change_recipe_ingredients("kr-express-loader",
   {
     {"sp-titanium-frame", 2},
@@ -1821,6 +1822,7 @@ util.change_recipe_ingredients("kr-express-loader",
   },
   2,
   3)
+
 util.change_recipe_ingredients("kr-advanced-transport-belt",
   {
     {"processing-unit", 1},
@@ -1840,6 +1842,7 @@ util.change_recipe_ingredients("kr-advanced-transport-belt",
   },
   1,
   1.5)
+
 util.change_recipe_ingredients("kr-advanced-underground-belt",
   {
     {"kr-advanced-transport-belt", 16},
@@ -1859,6 +1862,7 @@ util.change_recipe_ingredients("kr-advanced-underground-belt",
   },
   3,
   5)
+
 util.change_recipe_ingredients("kr-advanced-splitter",
   {
     {"kr-advanced-transport-belt", 2},
@@ -1876,6 +1880,7 @@ util.change_recipe_ingredients("kr-advanced-splitter",
   },
   3,
   5)
+
 util.change_recipe_ingredients("kr-advanced-loader",
   {
     {"kr-advanced-transport-belt", 1},
@@ -1893,6 +1898,7 @@ util.change_recipe_ingredients("kr-advanced-loader",
   },
   3,
   5)
+
 util.change_recipe_ingredients("kr-superior-transport-belt",
   {
     {"sp-advanced-processing-unit", 1},
@@ -1912,6 +1918,7 @@ util.change_recipe_ingredients("kr-superior-transport-belt",
   },
   2,
   3)
+
 util.change_recipe_ingredients("kr-superior-underground-belt",
   {
     {"kr-superior-transport-belt", 24},
@@ -1927,6 +1934,7 @@ util.change_recipe_ingredients("kr-superior-underground-belt",
   },
   5,
   8)
+
 util.change_recipe_ingredients("kr-superior-splitter",
   {
     {"kr-superior-transport-belt", 2},
@@ -1942,6 +1950,7 @@ util.change_recipe_ingredients("kr-superior-splitter",
   },
   4,
   6)
+
 util.change_recipe_ingredients("kr-superior-loader",
   {
     {"kr-superior-transport-belt", 1},
@@ -1957,6 +1966,99 @@ util.change_recipe_ingredients("kr-superior-loader",
   },
   3,
   5)
+
+util.change_recipe_ingredients("kr-superior-inserter",
+  {
+    {"imersium-plate", 3},
+    {"sp-blunagium-plate", 2},
+    {"sp-glass-fiber", 3},
+    {"sp-frictionless-joint", 3},
+    {"sp-advanced-processing-unit", 4},
+    {"sp-micro-machine", 4},
+    {"energy-control-unit", 1}
+  },
+  {
+    {"imersium-plate", 4},
+    {"sp-blunagium-plate", 3},
+    {"sp-glass-fiber", 5},
+    {"sp-frictionless-joint", 6},
+    {"sp-advanced-processing-unit", 6},
+    {"sp-micro-machine", 6},
+    {"energy-control-unit", 2}
+  },
+  2,
+  3)
+
+util.change_recipe_ingredients("kr-superior-long-inserter",
+  {
+    {"imersium-plate", 3},
+    {"sp-rukite-plate", 4},
+    {"sp-glass-fiber", 3},
+    {"sp-frictionless-joint", 4},
+    {"sp-advanced-processing-unit", 4},
+    {"sp-micro-machine", 6},
+    {"energy-control-unit", 2}
+  },
+  {
+    {"imersium-plate", 4},
+    {"sp-rukite-plate", 4},
+    {"sp-glass-fiber", 5},
+    {"sp-frictionless-joint", 8},
+    {"sp-advanced-processing-unit", 6},
+    {"sp-micro-machine", 8},
+    {"energy-control-unit", 3}
+  },
+  3,
+  5)
+
+util.change_recipe_ingredients("kr-superior-filter-inserter",
+  {
+    {"imersium-plate", 4},
+    {"sp-grobgnum-plate", 3},
+    {"sp-glass-fiber", 3},
+    {"sp-frictionless-joint", 4},
+    {"sp-advanced-processing-unit", 4},
+    {"sp-control-unit", 3},
+    {"sp-micro-machine", 6},
+    {"energy-control-unit", 2}
+  },
+  {
+    {"imersium-plate", 6},
+    {"sp-grobgnum-plate", 4},
+    {"sp-glass-fiber", 5},
+    {"sp-frictionless-joint", 8},
+    {"sp-advanced-processing-unit", 6},
+    {"sp-control-unit", 4},
+    {"sp-micro-machine", 8},
+    {"energy-control-unit", 3}
+  },
+  3,
+  5)
+
+  util.change_recipe_ingredients("kr-superior-long-filter-inserter",
+  {
+    {"imersium-plate", 4},
+    {"sp-yemnuth-plate", 5},
+    {"sp-glass-fiber", 5},
+    {"sp-frictionless-joint", 6},
+    {"sp-advanced-processing-unit", 6},
+    {"sp-control-unit", 3},
+    {"sp-micro-machine", 12},
+    {"energy-control-unit", 4}
+  },
+  {
+    {"imersium-plate", 6},
+    {"sp-yemnuth-plate", 8},
+    {"sp-glass-fiber", 8},
+    {"sp-frictionless-joint", 12},
+    {"sp-advanced-processing-unit", 8},
+    {"sp-control-unit", 4},
+    {"sp-micro-machine", 16},
+    {"energy-control-unit", 6}
+  },
+  5,
+  8)
+
 util.change_recipe_ingredients("kr-steel-pipe",
   {
     {"sp-stainless-steel", 1},
@@ -1968,6 +2070,7 @@ util.change_recipe_ingredients("kr-steel-pipe",
   },
   1,
   1.5)
+
 util.change_recipe_ingredients("kr-steel-pipe-to-ground",
   {
     {"kr-steel-pipe", 8},
@@ -2433,13 +2536,83 @@ util.change_recipe_ingredients("kr-advanced-furnace",
   90)
 util.change_recipe_ingredients("kr-advanced-assembling-machine",
   {
-    {"steel-plate", 69}
+    {"sp-blunagium-plate", 32},
+    {"sp-grobgnum-plate", 24},
+    {"sp-rukite-plate", 20},
+    {"sp-yemnuth-plate", 30},
+    {"imersium-plate", 60},
+    {"sp-micro-machine", 40},
+    {"sp-nanobot", 200},
+    {"sp-turbopump", 12},
+    {"energy-control-unit", 16},
+    {"sp-superconductor", 40},
+    {"sp-advanced-processing-unit", 32},
+    {"kr-black-reinforced-plate", 30}
   },
   {
-    {"steel-plate", 69}
+    {"sp-blunagium-plate", 40},
+    {"sp-grobgnum-plate", 36},
+    {"sp-rukite-plate", 44},
+    {"sp-yemnuth-plate", 50},
+    {"imersium-plate", 80},
+    {"sp-micro-machine", 60},
+    {"sp-nanobot", 300},
+    {"sp-turbopump", 20},
+    {"energy-control-unit", 30},
+    {"sp-superconductor", 60},
+    {"sp-advanced-processing-unit", 48},
+    {"kr-black-reinforced-plate", 60}
   },
-  69,
-  69)
+  90,
+  150)
+util.change_recipe_ingredients("kr-small-roboport",
+  {
+    {"sp-yemnuth-plate", 16},
+    {"imersium-beam", 12},
+    {"sp-electrode", 6},
+    {"sp-transformer", 2},
+    {"lithium-sulfur-battery", 30},
+    {"sp-control-unit", 4},
+    {"kr-black-reinforced-plate", 4}
+  },
+  {
+    {"sp-yemnuth-plate", 24},
+    {"imersium-beam", 20},
+    {"sp-electrode", 12},
+    {"sp-transformer", 3},
+    {"lithium-sulfur-battery", 40},
+    {"sp-control-unit", 6},
+    {"kr-black-reinforced-plate", 8}
+  },
+  45,
+  90)
+util.change_recipe_ingredients("kr-large-roboport",
+  {
+    {"sp-stainless-steel", 30},
+    {"sp-yemnuth-plate", 40},
+    {"sp-rukite-plate", 32},
+    {"imersium-beam", 16},
+    {"sp-electrode", 24},
+    {"energy-control-unit", 8},
+    {"lithium-sulfur-battery", 100},
+    {"sp-advanced-processing-unit", 20},
+    {"sp-plate-heat-exchanger", 12},
+    {"kr-black-reinforced-plate", 60}
+  },
+  {
+    {"sp-stainless-steel", 40},
+    {"sp-yemnuth-plate", 60},
+    {"sp-rukite-plate", 48},
+    {"imersium-beam", 24},
+    {"sp-electrode", 48},
+    {"energy-control-unit", 16},
+    {"lithium-sulfur-battery", 160},
+    {"sp-advanced-processing-unit", 50},
+    {"sp-plate-heat-exchanger", 24},
+    {"kr-black-reinforced-plate", 120}
+  },
+  120,
+  180)
 util.change_recipe_ingredients("kr-bio-lab",
   {
     {"sp-pressure-tube", 20},

@@ -172,6 +172,56 @@ data.raw.technology["sp-flux-capacitor"].unit.ingredients = {
   {"matter-tech-card", 1}
 }
 
+table.insert(data.raw.technology["sp-gravitational-devices"].prerequisites, "kr-automation")
+data.raw.technology["sp-gravitational-devices"].unit.ingredients = {
+  {"sp-automation-science-pack-3", 1},
+  {"sp-logistic-science-pack-3", 1},
+  {"sp-chemical-science-pack-3", 1},
+  {"sp-electronic-science-pack-3", 1},
+  {"sp-geological-science-pack-3", 1},
+  {"sp-material-science-pack-3", 1},
+  {"sp-computer-science-pack-3", 1},
+  {"sp-production-science-pack-3", 1},
+  {"sp-nuclear-science-pack-3", 1},
+  {"sp-astronomical-science-pack-3", 1},
+  {"sp-utility-science-pack-3", 1},
+  {"matter-tech-card", 1},
+  {"advanced-tech-card", 1}
+}
+
+table.insert(data.raw.technology["sp-rukite-gearbox"].prerequisites, "kr-automation")
+data.raw.technology["sp-rukite-gearbox"].unit.ingredients = {
+  {"sp-automation-science-pack-3", 1},
+  {"sp-logistic-science-pack-3", 1},
+  {"sp-chemical-science-pack-3", 1},
+  {"sp-electronic-science-pack-3", 1},
+  {"sp-geological-science-pack-3", 1},
+  {"sp-material-science-pack-3", 1},
+  {"sp-computer-science-pack-3", 1},
+  {"sp-production-science-pack-3", 1},
+  {"sp-nuclear-science-pack-3", 1},
+  {"sp-astronomical-science-pack-3", 1},
+  {"sp-utility-science-pack-3", 1},
+  {"matter-tech-card", 1},
+  {"advanced-tech-card", 1}
+}
+
+data.raw.technology["sp-frictionless-joint"].unit.ingredients = {
+  {"sp-automation-science-pack-3", 1},
+  {"sp-logistic-science-pack-3", 1},
+  {"sp-chemical-science-pack-3", 1},
+  {"sp-electronic-science-pack-3", 1},
+  {"sp-geological-science-pack-3", 1},
+  {"sp-material-science-pack-3", 1},
+  {"sp-computer-science-pack-3", 1},
+  {"sp-production-science-pack-3", 1},
+  {"sp-nuclear-science-pack-3", 1},
+  {"sp-astronomical-science-pack-3", 1},
+  {"sp-utility-science-pack-3", 1},
+  {"matter-tech-card", 1},
+  {"advanced-tech-card", 1}
+}
+
 -- MARK: Base technology changes
 data.raw.technology["steel-processing"].prerequisites = {"sp-coal-processing"}
 data.raw.technology["steel-processing"].effects = {
@@ -964,7 +1014,7 @@ data.raw.technology["kr-logistic-5"].unit.ingredients = {
   {"advanced-tech-card", 1}
 }
 
-table.insert(data.raw.technology["kr-superior-inserters"].prerequisites, "kr-advanced-furnace")
+table.insert(data.raw.technology["kr-superior-inserters"].prerequisites, "sp-frictionless-joint")
 data.raw.technology["kr-superior-inserters"].unit.ingredients = {
   {"sp-automation-science-pack-3", 1},
   {"sp-logistic-science-pack-3", 1},

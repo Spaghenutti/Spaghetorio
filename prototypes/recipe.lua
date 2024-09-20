@@ -3788,6 +3788,157 @@ data:extend({
     }
   },
   ------------------------------------------------------------------------------
+  -- MARK: Alien tech manufacturing
+  -- Fix recipes by moving krastorio items to aai-and-krastorio-recipe.lua
+  ------------------------------------------------------------------------------
+  {
+    type = "recipe",
+    name = "sp-blunagium-solenoid",  -- #ForRegEx# - recipe
+    category = "alien-tech-manufacturing",
+    enabled = false,
+    energy_required = 20,
+    ingredients = {
+      {type = "item", name = "sp-boson-blossom", amount = 4},
+      {type = "item", name = "sp-blunagium-plate", amount = 2},
+      {type = "item", name = "sp-nanowire", amount = 5}
+    },
+    results = {
+      {type = "item", name = "sp-blunagium-solenoid", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-boson-blossom",  -- #ForRegEx# - recipe
+    category = "alien-tech-manufacturing",
+    enabled = false,
+    energy_required = 60,
+    ingredients = {
+      {type = "item", name = "sp-plutonium-240", amount = 1},
+      {type = "item", name = "sp-blunagium-foam", amount = 1},
+      {type = "item", name = "sp-blunagium-basalt", amount = 2},
+      {type = "item", name = "imersite-powder", amount = 3}
+    },
+    results = {
+      {type = "item", name = "sp-boson-blossom", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-gravitational-wave-bridge",  -- #ForRegEx# - recipe
+    category = "alien-tech-manufacturing",
+    enabled = false,
+    energy_required = 30,
+    ingredients = {
+      {type = "item", name = "sp-gravitational-wave-interferometer", amount = 3},
+      {type = "item", name = "sp-gravitational-wave-splitter", amount = 2},
+      {type = "item", name = "sp-blunagium-bar", amount = 2},
+      {type = "item", name = "sp-blunagium-plate", amount = 3},
+      {type = "item", name = "sp-nanowire", amount = 10}
+    },
+    results = {
+      {type = "item", name = "sp-gravitational-wave-bridge", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-gravitational-wave-interferometer",  -- #ForRegEx# - recipe
+    category = "alien-tech-manufacturing",
+    enabled = false,
+    energy_required = 30,
+    ingredients = {
+      {type = "item", name = "sp-nanoflex", amount = 1},
+      {type = "item", name = "sp-gravitational-wave-splitter", amount = 2},
+      {type = "item", name = "sp-fermium-condensate", amount = 2},
+      {type = "item", name = "sp-palladium", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-gravitational-wave-interferometer", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-gravitational-wave-splitter",  -- #ForRegEx# - recipe
+    category = "alien-tech-manufacturing",
+    enabled = false,
+    energy_required = 30,
+    ingredients = {
+      {type = "item", name = "sp-glass-fiber", amount = 2},
+      {type = "item", name = "sp-diamond", amount = 4},
+      {type = "item", name = "copper-plate", amount = 1},
+      {type = "item", name = "sp-blunagium-plate", amount = 2},
+      {type = "item", name = "sp-nanoflex", amount = 3}
+    },
+    results = {
+      {type = "item", name = "sp-gravitational-wave-splitter", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-rukite-gear-wheel",  -- #ForRegEx# - recipe
+    category = "alien-tech-manufacturing",
+    enabled = false,
+    energy_required = 24,
+    ingredients = {
+      {type = "item", name = "sp-rukite-plate", amount = 4},
+      {type = "item", name = "sp-rukite-powder", amount = 1},
+      {type = "item", name = "sp-tungsten-powder", amount = 2},
+      {type = "item", name = "sp-zirconia", amount = 6}
+    },
+    results = {
+      {type = "item", name = "sp-rukite-gear-wheel", amount = 3}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-rukite-gearbox",  -- #ForRegEx# - recipe
+    category = "alien-tech-manufacturing",
+    enabled = false,
+    energy_required = 10,
+    ingredients = {
+      {type = "item", name = "sp-rukite-gear-wheel", amount = 10},
+      {type = "item", name = "imersium-gear-wheel", amount = 4},
+      {type = "item", name = "sp-TiNb", amount = 2},
+      {type = "item", name = "sp-tungsten-carbide", amount = 3}
+    },
+    results = {
+      {type = "item", name = "sp-rukite-gearbox", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-frictionless-bearing",  -- #ForRegEx# - recipe
+    category = "alien-tech-manufacturing",
+    enabled = false,
+    energy_required = 36,
+    ingredients = {
+      {type = "item", name = "sp-rukite-powder", amount = 2},
+      {type = "item", name = "sp-blunagium-stone", amount = 1},
+      {type = "item", name = "imersite-powder", amount = 2},
+      {type = "item", name = "sp-rukite-plate", amount = 5}
+    },
+    results = {
+      {type = "item", name = "sp-frictionless-bearing", amount = 3}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-frictionless-joint",  -- #ForRegEx# - recipe
+    category = "alien-tech-manufacturing",
+    enabled = false,
+    energy_required = 6,
+    ingredients = {
+      {type = "item", name = "sp-frictionless-bearing", amount = 4},
+      {type = "item", name = "sp-yemnuth-plate", amount = 1},
+      {type = "item", name = "sp-nanowire", amount = 2},
+      {type = "item", name = "sp-blunagium-solenoid", amount = 1},
+      {type = "item", name = "sp-gravitational-wave-bridge", amount = 1},
+      {type = "item", name = "sp-rukite-gearbox", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-frictionless-joint", amount = 3}
+    }
+  },
+  ------------------------------------------------------------------------------
   -- Acrosphere conversion recipes
   -- MARK: Acrosphere
   ------------------------------------------------------------------------------
