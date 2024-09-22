@@ -4498,6 +4498,217 @@ data:extend({
       {type = "item", name = "sp-frictionless-joint", amount = 3}
     }
   },
+  {
+    type = "recipe",
+    name = "sp-quantum-relativity-compute-unit",  -- #ForRegEx# - recipe
+    category = "alien-tech-manufacturing",
+    enabled = false,
+    energy_required = 18,
+    ingredients = {
+      {type = "item", name = "sp-quantized-compute-unit", amount = 8},
+      {type = "item", name = "sp-quantum-tube", amount = 16},
+      {type = "item", name = "sp-blunagium-yemnuth-compound", amount = 2},
+      {type = "item", name = "sp-nanowire", amount = 2},
+      {type = "item", name = "sp-blunagium-solenoid", amount = 4},
+      {type = "item", name = "sp-gravitational-wave-bridge", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-quantum-relativity-compute-unit", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-quantum-stream-supply",  -- #ForRegEx# - recipe
+    category = "alien-tech-manufacturing",
+    enabled = false,
+    energy_required = 16,
+    ingredients = {
+      {type = "item", name = "sp-orbital-cell", amount = 1},
+      {type = "item", name = "sp-quantum-tube", amount = 20},
+      {type = "item", name = "sp-blunagium-yemnuth-compound", amount = 2},
+      {type = "item", name = "sp-nanowire", amount = 2},
+      {type = "item", name = "sp-blunagium-solenoid", amount = 4},
+      {type = "item", name = "sp-gravitational-wave-bridge", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-quantum-stream-supply", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-quantum-switch",  -- #ForRegEx# - recipe
+    category = "alien-tech-manufacturing",
+    enabled = false,
+    energy_required = 10,
+    ingredients = {
+      {type = "item", name = "sp-chronalyte", amount = 1},
+      {type = "item", name = "sp-orbital-cell", amount = 2},
+      {type = "item", name = "sp-blunagium-yemnuth-beam", amount = 2},
+      {type = "item", name = "sp-yemnuth-plate", amount = 2},
+      {type = "item", name = "sp-gravitational-wave-splitter", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-quantum-switch", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-subatomic-condenser",  -- #ForRegEx# - recipe
+    category = "alien-tech-manufacturing",
+    enabled = false,
+    energy_required = 4,
+    ingredients = {
+      {type = "item", name = "sp-quantum-switch", amount = 8},
+      {type = "item", name = "sp-quantum-stream-supply", amount = 1},
+      {type = "item", name = "sp-quantum-relativity-compute-unit", amount = 1},
+      {type = "item", name = "sp-alpha-wave-tray-array", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-subatomic-condenser", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-ultra-durable-ceramics",  -- #ForRegEx# - recipe
+    category = "intermediate-smelting",  -- Krastorio: category = "advanced-smelting"
+    enabled = false,
+    energy_required = 60,
+    ingredients = {
+      {type = "item", name = "sp-yemnuth-plate", amount = 6},
+      {type = "item", name = "sp-rukite-plate", amount = 6},
+      {type = "item", name = "sp-niobium-powder", amount = 2},
+      {type = "item", name = "sp-zircon", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-ultra-durable-ceramics", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-hot-stone",  -- #ForRegEx# - recipe
+    category = "intermediate-smelting",  -- Krastorio: category = "advanced-smelting"
+    enabled = false,
+    energy_required = 15,
+    ingredients = {
+      {type = "item", name = "sp-blunagium-yemnuth-beam", amount = 4},
+      {type = "item", name = "sp-ultra-durable-ceramics", amount = 1},
+      {type = "item", name = "sp-rukite-bar", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-hot-stone", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-charged-slab",  -- #ForRegEx# - recipe
+    category = "alien-tech-manufacturing",
+    enabled = false,
+    energy_required = 100,
+    ingredients = {
+      {type = "item", name = "sp-hot-stone", amount = 1},
+      {type = "item", name = "sp-gamma-radiation-source", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-charged-slab", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name =  "sp-extreme-heat-source",  -- #ForRegEx# - recipe
+    category = "alien-tech-manufacturing",
+    enabled = false,
+    energy_required = 20,
+    ingredients = {
+      {type = "item", name = "sp-charged-slab", amount = 6},
+      {type = "item", name = "sp-imersite-rukite-beam", amount = 12},
+      {type = "item", name = "sp-graphene-chip", amount = 1},
+      {type = "item", name = "sp-blunagium-solenoid", amount = 6},
+      -- Krastorio: {type = "item", name = "energy-control-unit", amount = 6}
+    },
+    results = {
+      {type = "item", name = "sp-extreme-heat-source", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-grobgnum-optics",  -- #ForRegEx# - recipe
+    category = "alien-tech-manufacturing",
+    enabled = false,
+    energy_required = 24,
+    ingredients = {
+      {type = "item", name = "sp-grobgnum-droplet", amount = 1},
+      {type = "item", name = "sp-high-purity-silicon", amount = 4},
+      {type = "fluid", name = "sp-aqueous-tantalum", amount = 6}
+      -- Krastorio: {type = "item", name = "imersium-plate", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-grobgnum-optics", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-proton-neutron-frame",  -- #ForRegEx# - recipe
+    category = "alien-tech-manufacturing",
+    enabled = false,
+    energy_required = 24,
+    ingredients = {
+      {type = "item", name = "sp-gamma-radiation-source", amount = 1},
+      {type = "item", name = "sp-grobgnum-optics", amount = 1},
+      {type = "item", name = "sp-lanthanum", amount = 1}
+      -- Krastorio: {type = "item", name = "tritium", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-proton-neutron-frame", amount = 6}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-proton-neutron-superconductor",  -- #ForRegEx# - recipe
+    category = "alien-tech-manufacturing",
+    enabled = false,
+    energy_required = 450,
+    ingredients = {
+      {type = "item", name = "sp-proton-neutron-frame", amount = 240},
+      {type = "item", name = "sp-quantized-protons", amount = 960},
+      {type = "item", name = "sp-extreme-heat-source", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-proton-neutron-superconductor", amount = 10}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-quantized-protons",  -- #ForRegEx# - recipe
+    category = "alien-tech-manufacturing",
+    enabled = false,
+    energy_required = 30,
+    ingredients = {
+      {type = "item", name = "sp-proton-neutron-frame", amount = 24},
+      {type = "item", name = "sp-quantum-tube", amount = 1},
+      {type = "item", name = "sp-gravitational-wave-bridge", amount = 1},
+      {type = "fluid", name = "sp-helium-3", amount = 5},
+    },
+    results = {
+      {type = "item", name = "sp-quantized-protons", amount = 50}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-quantum-capacitor",  -- #ForRegEx# - recipe
+    category = "alien-tech-manufacturing",
+    enabled = false,
+    energy_required = 50,
+    ingredients = {
+      {type = "item", name = "sp-quantized-protons", amount = 16},
+      {type = "item", name = "sp-quantum-foam", amount = 1},
+      {type = "item", name = "sp-quark-sphere", amount = 20},
+      {type = "item", name = "sp-collapsed-orbitals", amount = 30},
+      {type = "item", name = "sp-gluon-orb", amount = 20}
+    },
+    results = {
+      {type = "item", name = "sp-quantum-capacitor", amount = 1}
+    }
+  },
   ------------------------------------------------------------------------------
   -- Acrosphere conversion recipes
   -- MARK: Acrosphere

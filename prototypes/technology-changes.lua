@@ -769,6 +769,24 @@ data.raw.technology["power-armor"].unit.ingredients = {
   {"production-science-pack", 1}
 }
 
+data.raw.technology["power-armor-mk2"].prerequisites = {
+  "sp-compressor",
+  "sp-kevlar",
+  "advanced-electronics-2"
+}
+data.raw.technology["power-armor-mk2"].unit.ingredients = {
+  {"sp-automation-science-pack-2", 1},
+  {"sp-logistic-science-pack-2", 1},
+  {"sp-material-science-pack-2", 1},
+  {"sp-electronic-science-pack-2", 1},
+  {"sp-geological-science-pack-2", 1},
+  {"sp-chemical-science-pack-2", 1},
+  {"sp-military-science-pack-2", 1},
+  {"utility-science-pack", 1},
+  {"sp-computer-science-pack-2", 1},
+  {"production-science-pack", 1}
+}
+
 data.raw.technology["solar-panel-equipment"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},
   {"sp-logistic-science-pack-2", 1},

@@ -1195,13 +1195,25 @@ util.change_recipe_ingredients("power-armor",
   16)
 util.change_recipe_ingredients("power-armor-mk2",
   {
-    {"iron-plate", 69}
+    {"sp-fabric", 12},
+    {"sp-kevlar", 8},
+    {"processing-unit", 10},
+    {"sp-titanium-frame", 8},
+    {"sp-compressor", 1},
+    {"sp-insulation-sheet", 4},
+    {"electric-engine-unit", 12}
   },
   {
-    {"iron-plate", 69}
+    {"sp-fabric", 24},
+    {"sp-kevlar", 20},
+    {"processing-unit", 20},
+    {"sp-titanium-frame", 16},
+    {"sp-compressor", 2},
+    {"sp-insulation-sheet", 12},
+    {"electric-engine-unit", 16}
   },
-  12,
-  24)
+  16,
+  32)
 util.change_recipe_ingredients("night-vision-equipment",
   {
     {"processing-unit", 1},

@@ -164,10 +164,17 @@ util.change_recipe_ingredients("space-science-pack", -- Optimization tech card
   {
     {"sp-frictionless-bearing", 5},
     {"sp-gravitational-wave-bridge", 5},
+    {"sp-quantized-compute-unit", 5},
+    {"sp-femto-navigator", 5},
+    {"sp-radiation-channeler", 5},
     {"blank-tech-card", 5}
   },
   {
-    {"copper-plate", 69},
+    {"sp-frictionless-bearing", 8},
+    {"sp-gravitational-wave-bridge", 8},
+    {"sp-quantized-compute-unit", 8},
+    {"sp-femto-navigator", 8},
+    {"sp-radiation-channeler", 8},
     {"blank-tech-card", 5}
   },
   40,

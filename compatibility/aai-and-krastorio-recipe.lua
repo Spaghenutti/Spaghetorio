@@ -1268,10 +1268,11 @@ table.insert(data.raw.recipe["sp-alpha-wave-tray-array"].ingredients, {type = "i
 table.insert(data.raw.recipe["sp-radiation-channeler"].ingredients, {type = "item", name = "imersium-plate", amount = 1})
 table.insert(data.raw.recipe["sp-ultra-violet-processor"].ingredients, {type = "item", name = "imersite-crystal", amount = 1})
 table.insert(data.raw.recipe["sp-graphene-chip"].ingredients, {type = "item", name = "imersite-powder", amount = 1})
-
 table.insert(data.raw.recipe["sp-rukite-gear-wheel"].ingredients, {type = "item", name = "imersium-gear-wheel", amount = 4})
 table.insert(data.raw.recipe["sp-frictionless-bearing"].ingredients, {type = "item", name = "imersite-powder", amount = 2})
-
+table.insert(data.raw.recipe["sp-extreme-heat-source"].ingredients, {type = "item", name = "energy-control-unit", amount = 6})
+table.insert(data.raw.recipe["sp-grobgnum-optics"].ingredients, {type = "item", name = "imersium-plate", amount = 1})
+table.insert(data.raw.recipe["sp-proton-neutron-frame"].ingredients, {type = "item", name = "tritium", amount = 1})
 table.insert(data.raw.recipe["sp-productivity-module-4"].ingredients, {type = "item", name = "energy-control-unit", amount = 5})
 
 table.insert(data.raw.recipe["sp-geological-science-pack-1"].ingredients, {type = "item", name = "quartz", amount = 5})
@@ -1408,6 +1409,8 @@ data.raw.recipe["sp-grobgnum-rukite-beam"].category = "advanced-smelting"
 data.raw.recipe["sp-imersite-rukite-beam"].category = "advanced-smelting"
 data.raw.recipe["sp-blunagium-yemnuth-beam"].category = "advanced-smelting"
 data.raw.recipe["sp-charged-slab"].category = "advanced-smelting"
+data.raw.recipe["sp-ultra-durable-ceramics"].category = "advanced-smelting"
+data.raw.recipe["sp-hot-stone"].category = "advanced-smelting"
 
 data.raw.recipe["sp-speed-module-4"].category = "alien-tech-manufacturing"
 data.raw.recipe["sp-effectivity-module-4"].category = "alien-tech-manufacturing"
@@ -3238,6 +3241,7 @@ util.change_recipe_ingredients("burner-turbine",
   },
   8,
   16)
+
 util.change_recipe_ingredients("fuel-processor",
   {
     {"iron-plate", 12},
@@ -3253,6 +3257,31 @@ util.change_recipe_ingredients("fuel-processor",
   },
   12,
   24)
+
+util.change_recipe_ingredients("power-armor-mk3",
+  {
+    {"sp-advanced-processing-unit", 20},
+    {"sp-superconductor", 40},
+    {"sp-cryostat", 4},
+    {"sp-niobium-steel", 20},
+    {"sp-electrode", 10},
+    {"sp-fabric", 20},
+    {"sp-kevlar", 30},
+    {"flying-robot-frame", 12}
+  },
+  {
+    {"sp-advanced-processing-unit", 40},
+    {"sp-superconductor", 80},
+    {"sp-cryostat", 6},
+    {"sp-niobium-steel", 32},
+    {"sp-electrode", 20},
+    {"sp-fabric", 30},
+    {"sp-kevlar", 50},
+    {"flying-robot-frame", 20}
+  },
+  45,
+  90)
+
 util.change_recipe_ingredients("burner-assembling-machine",
   {
     {"stone-brick", 20},
@@ -3268,6 +3297,7 @@ util.change_recipe_ingredients("burner-assembling-machine",
   },
   8,
   16)
+
 util.change_recipe_ingredients("burner-lab",
   {
     {"stone-brick", 12},
@@ -3281,6 +3311,7 @@ util.change_recipe_ingredients("burner-lab",
   },
   8,
   16)
+
 util.change_recipe_ingredients("engine-unit",
   {
     {"sp-connecting-rod", 8},
@@ -3296,6 +3327,7 @@ util.change_recipe_ingredients("engine-unit",
   },
   2.4,
   4.8)
+
 util.change_recipe_ingredients("electric-engine-unit",
   {
     {"sp-electromagnet", 6},
@@ -3315,6 +3347,7 @@ util.change_recipe_ingredients("electric-engine-unit",
   },
   4,
   6)
+
 util.change_recipe_ingredients("industrial-furnace",
   {
     {"sp-stainless-steel", 20},
@@ -3340,6 +3373,7 @@ util.change_recipe_ingredients("industrial-furnace",
   },
   40,
   80)
+
   util.change_recipe_ingredients("area-mining-drill",
   {
     {"sp-monocrystal", 4},

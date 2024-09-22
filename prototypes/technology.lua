@@ -4510,7 +4510,162 @@ data:extend({
   ------------------------------------------------------------------------------
   -- MARK: advanced alien products
   ------------------------------------------------------------------------------
-
+  {
+    type = "technology",
+    name = "sp-advanced-quantum-technology",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghenutti__/graphics/hr-icons/subatomic-condenser.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-quantum-relativity-compute-unit"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-quantum-stream-supply"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-quantum-switch"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-subatomic-condenser"
+      }
+    },
+    prerequisites = {
+      "sp-advanced-alien-compounds"
+    },
+    unit =
+    {
+      count = 3000,
+      ingredients = {
+        {"sp-automation-science-pack-3", 1},
+        {"sp-logistic-science-pack-3", 1},
+        {"sp-chemical-science-pack-3", 1},
+        {"sp-electronic-science-pack-3", 1},
+        {"sp-geological-science-pack-3", 1},
+        {"sp-material-science-pack-3", 1},
+        {"sp-computer-science-pack-3", 1},
+        {"sp-production-science-pack-3", 1},
+        {"sp-nuclear-science-pack-3", 1},
+        {"sp-astronomical-science-pack-3", 1},
+        {"sp-utility-science-pack-3", 1},
+        {"space-science-pack", 1},
+        -- {"matter-tech-card", 1},
+        -- {"advanced-tech-card", 1}
+      },
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-extreme-heat-source",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghenutti__/graphics/hr-icons/extreme-heat-source.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-ultra-durable-ceramics"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-hot-stone"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-charged-slab"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-extreme-heat-source"
+      }
+    },
+    prerequisites = {
+      "sp-advanced-alien-compounds"
+    },
+    unit =
+    {
+      count = 1000,
+      ingredients = {
+        {"sp-automation-science-pack-3", 1},
+        {"sp-logistic-science-pack-3", 1},
+        {"sp-chemical-science-pack-3", 1},
+        {"sp-electronic-science-pack-3", 1},
+        {"sp-geological-science-pack-3", 1},
+        {"sp-material-science-pack-3", 1},
+        {"sp-computer-science-pack-3", 1},
+        {"sp-production-science-pack-3", 1},
+        {"sp-nuclear-science-pack-3", 1},
+        {"sp-astronomical-science-pack-3", 1},
+        {"sp-utility-science-pack-3", 1},
+        {"space-science-pack", 1},
+        -- {"matter-tech-card", 1},
+        -- {"advanced-tech-card", 1}
+      },
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-high-temperature-superconducting",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghenutti__/graphics/hr-icons/proton-neutron-superconductor.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-grobgnum-optics"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-proton-neutron-frame"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-proton-neutron-superconductor"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-quantized-protons"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-quantum-capacitor"
+      }
+    },
+    prerequisites = {
+      "sp-advanced-quantum-technology",
+      "sp-extreme-heat-source"
+    },
+    unit =
+    {
+      count = 2500,
+      ingredients = {
+        {"sp-automation-science-pack-3", 1},
+        {"sp-logistic-science-pack-3", 1},
+        {"sp-chemical-science-pack-3", 1},
+        {"sp-electronic-science-pack-3", 1},
+        {"sp-geological-science-pack-3", 1},
+        {"sp-material-science-pack-3", 1},
+        {"sp-computer-science-pack-3", 1},
+        {"sp-production-science-pack-3", 1},
+        {"sp-nuclear-science-pack-3", 1},
+        {"sp-astronomical-science-pack-3", 1},
+        {"sp-utility-science-pack-3", 1},
+        {"space-science-pack", 1},
+        -- {"matter-tech-card", 1},
+        -- {"advanced-tech-card", 1}
+      },
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  
   ------------------------------------------------------------------------------
   -- Acrosphere conversion recipes
   -- MARK: Acrosphere technology
