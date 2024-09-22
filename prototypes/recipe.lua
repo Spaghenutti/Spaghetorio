@@ -335,7 +335,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-titanium-frame",  -- #ForRegEx# - recipe
-    category = "smelting",
+    category = "crafting",
     enabled = false,
     energy_required = 2.4,
     ingredients = {
@@ -4679,7 +4679,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-quantized-protons",  -- #ForRegEx# - recipe
-    category = "alien-tech-manufacturing",
+    category = "matter-condensing",  -- Krastorio: "matter-items"
     enabled = false,
     energy_required = 30,
     ingredients = {
@@ -4695,7 +4695,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-quantum-capacitor",  -- #ForRegEx# - recipe
-    category = "alien-tech-manufacturing",
+    category = "matter-condensing",  -- Krastorio: "matter-items"
     enabled = false,
     energy_required = 50,
     ingredients = {

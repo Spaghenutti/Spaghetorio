@@ -25,7 +25,7 @@ TODO:
   + Updated recipes using gears with gearbox, heavy-gearbox and differential
   - Updated recipes for electronic components to have common intermediates
   - do TODO in recipes: "add uses to"
-  - Add rockets depending on the explorer
+  + Add rockets depending on the explorer
   - Change labs in which tech cards are used
   ? Change Factorio recipes
   ? Change Krastorio recipes
@@ -92,6 +92,7 @@ Future changes
   - Support text plates mod
   - Support jetpack mod
   + Support LTN mod
+  - remove some barrel recipes like, helium-3 or grobgnum-liquids
 
 
 Notes:

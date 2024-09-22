@@ -116,6 +116,7 @@ table.insert(data.raw["assembling-machine"]["kr-advanced-furnace"].crafting_cate
 
 table.insert(data.raw["assembling-machine"]["kr-advanced-assembling-machine"].crafting_categories, "alien-tech-manufacturing")
 
+table.insert(data.raw["assembling-machine"]["kr-matter-plant"].crafting_categories, "matter-condensing")
 table.insert(data.raw["assembling-machine"]["kr-matter-plant"].crafting_categories, "acrosphere-conversion")
 table.insert(data.raw["assembling-machine"]["kr-matter-plant"].crafting_categories, "acroproduct-conversion-with-acrocrystal")
 table.insert(data.raw["assembling-machine"]["kr-matter-plant"].crafting_categories, "acroproduct-conversion-with-acromatter")

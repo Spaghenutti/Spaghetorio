@@ -1420,6 +1420,8 @@ data.raw.recipe["sp-femto-navigator"].category = "matter-items"
 data.raw.recipe["sp-orbital-cell"].category = "matter-items"
 data.raw.recipe["sp-quantized-compute-unit"].category = "matter-items"
 data.raw.recipe["sp-quantum-tube"].category = "matter-items"
+data.raw.recipe["sp-quantized-protons"].category = "matter-items"
+data.raw.recipe["sp-quantum-capacitor"].category = "matter-items"
 
 -- MARK: change subgroup
 data.raw.recipe["quartz"].subgroup = "processed-resource"
