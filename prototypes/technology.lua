@@ -3940,6 +3940,216 @@ data:extend({
     },
     order = "a-h-a"
   },
+  {
+    type = "technology",
+    name = "sp-speed-module-4",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghenutti__/graphics/technology/speed-module-4.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-speed-module-4"
+      }
+    },
+    prerequisites = {
+      "sp-gravitational-devices"
+    },
+    unit =
+    {
+      count = 500,
+      ingredients = {
+        {"sp-automation-science-pack-3", 1},
+        {"sp-logistic-science-pack-3", 1},
+        {"sp-chemical-science-pack-3", 1},
+        {"sp-electronic-science-pack-3", 1},
+        {"sp-geological-science-pack-3", 1},
+        {"sp-material-science-pack-3", 1},
+        {"sp-computer-science-pack-3", 1},
+        {"sp-production-science-pack-3", 1},
+        {"sp-nuclear-science-pack-3", 1},
+        {"sp-astronomical-science-pack-3", 1},
+        {"sp-utility-science-pack-3", 1},
+        {"space-science-pack", 1}
+        -- Krastorio: {"matter-tech-card", 1},
+      },
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-effectivity-module-4",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghenutti__/graphics/technology/effectivity-module-4.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-effectivity-module-4"
+      }
+    },
+    prerequisites = {
+      "sp-advanced-bio-processors"
+    },
+    unit =
+    {
+      count = 500,
+      ingredients = {
+        {"sp-automation-science-pack-3", 1},
+        {"sp-logistic-science-pack-3", 1},
+        {"sp-chemical-science-pack-3", 1},
+        {"sp-electronic-science-pack-3", 1},
+        {"sp-geological-science-pack-3", 1},
+        {"sp-material-science-pack-3", 1},
+        {"sp-computer-science-pack-3", 1},
+        {"sp-production-science-pack-3", 1},
+        {"sp-nuclear-science-pack-3", 1},
+        {"sp-astronomical-science-pack-3", 1},
+        {"sp-utility-science-pack-3", 1},
+        {"space-science-pack", 1}
+        -- Krastorio: {"matter-tech-card", 1},
+      },
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-productivity-module-4",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghenutti__/graphics/technology/productivity-module-4.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-productivity-module-4"
+      }
+    },
+    prerequisites = {
+      "sp-frictionless-joint",
+      "sp-alien-processing"
+    },
+    unit =
+    {
+      count = 500,
+      ingredients = {
+        {"sp-automation-science-pack-3", 1},
+        {"sp-logistic-science-pack-3", 1},
+        {"sp-chemical-science-pack-3", 1},
+        {"sp-electronic-science-pack-3", 1},
+        {"sp-geological-science-pack-3", 1},
+        {"sp-material-science-pack-3", 1},
+        {"sp-computer-science-pack-3", 1},
+        {"sp-production-science-pack-3", 1},
+        {"sp-nuclear-science-pack-3", 1},
+        {"sp-astronomical-science-pack-3", 1},
+        {"sp-utility-science-pack-3", 1},
+        {"space-science-pack", 1}
+        -- Krastorio: {"matter-tech-card", 1},
+      },
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  ------------------------------------------------------------------------------
+  -- MARK: alien compounds
+  ------------------------------------------------------------------------------
+  {
+    type = "technology",
+    name = "sp-alien-compounds",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghenutti__/graphics/hr-icons/imersite-rukite-beam.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-blunagium-rukite-compound"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-blunagium-yemnuth-compound"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-grobgnum-rukite-compound"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-imersite-rukite-beam"
+      }
+    },
+    prerequisites = {
+      "sp-astronomical-science-pack-3"
+    },
+    unit =
+    {
+      count = 800,
+      ingredients = {
+        {"sp-automation-science-pack-3", 1},
+        {"sp-logistic-science-pack-3", 1},
+        {"sp-chemical-science-pack-3", 1},
+        {"sp-electronic-science-pack-3", 1},
+        {"sp-geological-science-pack-3", 1},
+        {"sp-material-science-pack-3", 1},
+        {"sp-computer-science-pack-3", 1},
+        {"sp-production-science-pack-3", 1},
+        {"sp-nuclear-science-pack-3", 1},
+        {"sp-astronomical-science-pack-3", 1},
+        {"sp-utility-science-pack-3", 1},
+        -- Krastorio: {"matter-tech-card", 1},
+        -- Krastorio: {"advanced-tech-card", 1}
+      },
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-advanced-alien-compounds",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghenutti__/graphics/hr-icons/blunagium-yemnuth-beam.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-grobgnum-rukite-beam"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-blunagium-yemnuth-beam"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-charged-slab"
+      }
+    },
+    prerequisites = {
+      "space-science-pack"
+    },
+    unit =
+    {
+      count = 1000,
+      ingredients = {
+        {"sp-automation-science-pack-3", 1},
+        {"sp-logistic-science-pack-3", 1},
+        {"sp-chemical-science-pack-3", 1},
+        {"sp-electronic-science-pack-3", 1},
+        {"sp-geological-science-pack-3", 1},
+        {"sp-material-science-pack-3", 1},
+        {"sp-computer-science-pack-3", 1},
+        {"sp-production-science-pack-3", 1},
+        {"sp-nuclear-science-pack-3", 1},
+        {"sp-astronomical-science-pack-3", 1},
+        {"sp-utility-science-pack-3", 1},
+        {"space-science-pack", 1}
+        -- Krastorio: {"matter-tech-card", 1},
+        -- Krastorio: {"advanced-tech-card", 1}
+      },
+      time = 15
+    },
+    order = "a-h-a"
+  },
   ------------------------------------------------------------------------------
   -- MARK: intermediate alien products
   ------------------------------------------------------------------------------
@@ -3977,6 +4187,55 @@ data:extend({
     unit =
     {
       count = 1500,
+      ingredients = {
+        {"sp-automation-science-pack-3", 1},
+        {"sp-logistic-science-pack-3", 1},
+        {"sp-chemical-science-pack-3", 1},
+        {"sp-electronic-science-pack-3", 1},
+        {"sp-geological-science-pack-3", 1},
+        {"sp-material-science-pack-3", 1},
+        {"sp-computer-science-pack-3", 1},
+        {"sp-production-science-pack-3", 1},
+        {"sp-nuclear-science-pack-3", 1},
+        {"sp-astronomical-science-pack-3", 1},
+        {"sp-utility-science-pack-3", 1},
+        -- Krastorio: {"matter-tech-card", 1},
+        -- Krastorio: {"advanced-tech-card", 1}
+      },
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-advanced-bio-processors",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghenutti__/graphics/hr-icons/neuropulse-module.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-bio-capacitor"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-neural-fusion-card"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-neuropulse-module"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-synaptic-core-chip"
+      }
+    },
+    prerequisites = {
+      "sp-astronomical-science-pack-3"
+    },
+    unit =
+    {
+      count = 750,
       ingredients = {
         {"sp-automation-science-pack-3", 1},
         {"sp-logistic-science-pack-3", 1},
@@ -4039,6 +4298,118 @@ data:extend({
   },
   {
     type = "technology",
+    name = "sp-quantum-realm",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghenutti__/graphics/hr-icons/quantized-orbital-flower.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-collapsed-orbitals"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-entangled-leptons"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-gluon-orb"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-neutrino-stream-source"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-quantized-orbital-flower"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-quark-sphere"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-trapped-quantum-energy"
+      }
+    },
+    prerequisites = {
+      "sp-astronomical-science-pack-3"
+    },
+    unit =
+    {
+      count = 2000,
+      ingredients = {
+        {"sp-automation-science-pack-3", 1},
+        {"sp-logistic-science-pack-3", 1},
+        {"sp-chemical-science-pack-3", 1},
+        {"sp-electronic-science-pack-3", 1},
+        {"sp-geological-science-pack-3", 1},
+        {"sp-material-science-pack-3", 1},
+        {"sp-computer-science-pack-3", 1},
+        {"sp-production-science-pack-3", 1},
+        {"sp-nuclear-science-pack-3", 1},
+        {"sp-astronomical-science-pack-3", 1},
+        {"sp-utility-science-pack-3", 1},
+        -- Krastorio: {"matter-tech-card", 1},
+        -- Krastorio: {"advanced-tech-card", 1}
+      },
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-quantum-realm-stabilization",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghenutti__/graphics/hr-icons/quantum-tube.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-femto-navigator"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-orbital-cell"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-quantized-compute-unit"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-quantum-tube"
+      }
+    },
+    prerequisites = {
+      "sp-quantum-realm",
+      "sp-alien-compounds",
+      "sp-gravitational-devices"
+    },
+    unit =
+    {
+      count = 1200,
+      ingredients = {
+        {"sp-automation-science-pack-3", 1},
+        {"sp-logistic-science-pack-3", 1},
+        {"sp-chemical-science-pack-3", 1},
+        {"sp-electronic-science-pack-3", 1},
+        {"sp-geological-science-pack-3", 1},
+        {"sp-material-science-pack-3", 1},
+        {"sp-computer-science-pack-3", 1},
+        {"sp-production-science-pack-3", 1},
+        {"sp-nuclear-science-pack-3", 1},
+        {"sp-astronomical-science-pack-3", 1},
+        {"sp-utility-science-pack-3", 1},
+        -- Krastorio: {"matter-tech-card", 1},
+        -- Krastorio: {"advanced-tech-card", 1}
+      },
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
     name = "sp-frictionless-joint",  -- #ForRegEx# - technology
     icon_size = 256,
     icon = "__Spaghenutti__/graphics/hr-icons/frictionless-joint.png",
@@ -4055,11 +4426,68 @@ data:extend({
     },
     prerequisites = {
       "sp-rukite-gearbox",
-      "sp-gravitational-devices"
+      "sp-gravitational-devices",
+      "sp-alien-compounds"
     },
     unit =
     {
       count = 200,
+      ingredients = {
+        {"sp-automation-science-pack-3", 1},
+        {"sp-logistic-science-pack-3", 1},
+        {"sp-chemical-science-pack-3", 1},
+        {"sp-electronic-science-pack-3", 1},
+        {"sp-geological-science-pack-3", 1},
+        {"sp-material-science-pack-3", 1},
+        {"sp-computer-science-pack-3", 1},
+        {"sp-production-science-pack-3", 1},
+        {"sp-nuclear-science-pack-3", 1},
+        {"sp-astronomical-science-pack-3", 1},
+        {"sp-utility-science-pack-3", 1},
+        -- Krastorio: {"matter-tech-card", 1},
+        -- Krastorio: {"advanced-tech-card", 1}
+      },
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-alien-processing",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghenutti__/graphics/hr-icons/alpha-wave-tray-array.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-alpha-wave-tray-array"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-radiation-channeler"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-ultra-violet-processor"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-graphene-chip"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-holo-grip-controller"
+      }
+    },
+    prerequisites = {
+      "sp-rukite-gearbox",
+      "sp-gravitational-devices",
+      "sp-alien-compounds",
+      "sp-quantum-realm"
+    },
+    unit =
+    {
+      count = 1000,
       ingredients = {
         {"sp-automation-science-pack-3", 1},
         {"sp-logistic-science-pack-3", 1},

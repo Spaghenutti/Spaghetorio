@@ -84,6 +84,7 @@ Low prio
   - Do something interesting with coal liquifaction
   - Unlock much earlier filter inserter
   - Add dark matter, quantized matter, polarized matter, dark energy as fluids
+  - disable handcrafting for all alien items
 
 
 Future changes

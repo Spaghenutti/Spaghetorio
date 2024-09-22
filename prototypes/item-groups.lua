@@ -70,9 +70,15 @@ data:extend({
   },
   {
     type = "item-subgroup",
-    name = "sp-acroproduct",
+    name = "alien-compound",
     group = "base-products",
     order = "j"
+  },
+  {
+    type = "item-subgroup",
+    name = "sp-acroproduct",
+    group = "base-products",
+    order = "k"
   },
   ------------------------------------------------------------------------------
   -- MARK: intermediate-products

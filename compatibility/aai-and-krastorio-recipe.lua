@@ -1250,6 +1250,30 @@ table.insert(data.raw.recipe["sp-chronomatter"].ingredients, {type = "item", nam
 table.insert(data.raw.recipe["sp-bioreactor"].ingredients, {type = "item", name = "biomass", amount = 10})
 table.insert(data.raw.recipe["sp-grobgnum-explorer"].ingredients, {type = "item", name = "ai-core", amount = 20})
 table.insert(data.raw.recipe["sp-yemnuth-rocket"].ingredients, {type = "item", name = "dt-fuel", amount = 5})
+table.insert(data.raw.recipe["sp-boson-blossom"].ingredients, {type = "item", name = "imersite-powder", amount = 3})
+table.insert(data.raw.recipe["sp-bio-capacitor"].ingredients, {type = "item", name = "biomass", amount = 2})
+table.insert(data.raw.recipe["sp-neural-fusion-card"].ingredients, {type = "item", name = "tritium", amount = 1})
+table.insert(data.raw.recipe["sp-neural-fusion-card"].ingredients, {type = "item", name = "lithium", amount = 1})
+table.insert(data.raw.recipe["sp-neural-fusion-card"].ingredients, {type = "item", name = "biomass", amount = 2})
+table.insert(data.raw.recipe["sp-neuropulse-module"].ingredients, {type = "item", name = "biomass", amount = 2})
+table.insert(data.raw.recipe["sp-neuropulse-module"].ingredients, {type = "item", name = "ai-core", amount = 2})
+table.insert(data.raw.recipe["sp-synaptic-core-chip"].ingredients, {type = "item", name = "biomass", amount = 3})
+table.insert(data.raw.recipe["sp-synaptic-core-chip"].ingredients, {type = "item", name = "ai-core", amount = 1})
+table.insert(data.raw.recipe["sp-gluon-orb"].ingredients, {type = "item", name = "tritium", amount = 1})
+table.insert(data.raw.recipe["sp-quark-sphere"].ingredients, {type = "fluid", name = "heavy-water", amount = 10})
+table.insert(data.raw.recipe["sp-trapped-quantum-energy"].ingredients, {type = "item", name = "imersite-powder", amount = 1})
+table.insert(data.raw.recipe["sp-alpha-wave-tray-array"].ingredients, {type = "item", name = "imersite-crystal", amount = 2})
+table.insert(data.raw.recipe["sp-alpha-wave-tray-array"].ingredients, {type = "item", name = "imersium-plate", amount = 1})
+table.insert(data.raw.recipe["sp-alpha-wave-tray-array"].ingredients, {type = "item", name = "energy-control-unit", amount = 1})
+table.insert(data.raw.recipe["sp-radiation-channeler"].ingredients, {type = "item", name = "imersium-plate", amount = 1})
+table.insert(data.raw.recipe["sp-ultra-violet-processor"].ingredients, {type = "item", name = "imersite-crystal", amount = 1})
+table.insert(data.raw.recipe["sp-graphene-chip"].ingredients, {type = "item", name = "imersite-powder", amount = 1})
+
+table.insert(data.raw.recipe["sp-rukite-gear-wheel"].ingredients, {type = "item", name = "imersium-gear-wheel", amount = 4})
+table.insert(data.raw.recipe["sp-frictionless-bearing"].ingredients, {type = "item", name = "imersite-powder", amount = 2})
+
+table.insert(data.raw.recipe["sp-productivity-module-4"].ingredients, {type = "item", name = "energy-control-unit", amount = 5})
+
 table.insert(data.raw.recipe["sp-geological-science-pack-1"].ingredients, {type = "item", name = "quartz", amount = 5})
 table.insert(data.raw.recipe["sp-geological-science-pack-1"].ingredients, {type = "item", name = "sand", amount = 10})
 table.insert(data.raw.recipe["sp-material-science-pack-1"].ingredients, {type = "item", name = "steel-beam", amount = 3})
@@ -1377,6 +1401,22 @@ data.raw.recipe["sp-blunagium-plate"].category = "advanced-smelting"
 data.raw.recipe["sp-grobgnum-plate"].category = "advanced-smelting"
 data.raw.recipe["sp-rukite-plate"].category = "advanced-smelting"
 data.raw.recipe["sp-yemnuth-plate"].category = "advanced-smelting"
+data.raw.recipe["sp-blunagium-rukite-compound"].category = "advanced-smelting"
+data.raw.recipe["sp-blunagium-yemnuth-compound"].category = "advanced-smelting"
+data.raw.recipe["sp-grobgnum-rukite-compound"].category = "advanced-smelting"
+data.raw.recipe["sp-grobgnum-rukite-beam"].category = "advanced-smelting"
+data.raw.recipe["sp-imersite-rukite-beam"].category = "advanced-smelting"
+data.raw.recipe["sp-blunagium-yemnuth-beam"].category = "advanced-smelting"
+data.raw.recipe["sp-charged-slab"].category = "advanced-smelting"
+
+data.raw.recipe["sp-speed-module-4"].category = "alien-tech-manufacturing"
+data.raw.recipe["sp-effectivity-module-4"].category = "alien-tech-manufacturing"
+data.raw.recipe["sp-productivity-module-4"].category = "alien-tech-manufacturing"
+
+data.raw.recipe["sp-femto-navigator"].category = "matter-items"
+data.raw.recipe["sp-orbital-cell"].category = "matter-items"
+data.raw.recipe["sp-quantized-compute-unit"].category = "matter-items"
+data.raw.recipe["sp-quantum-tube"].category = "matter-items"
 
 -- MARK: change subgroup
 data.raw.recipe["quartz"].subgroup = "processed-resource"

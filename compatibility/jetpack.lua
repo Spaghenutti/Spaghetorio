@@ -27,6 +27,16 @@ data.raw.recipe["jetpack-3"].ingredients = {
   {type = "item", name = "sp-solid-rocket-motor", amount = 2}
 }
 
+data.raw.recipe["jetpack-4"].ingredients = {
+  {type = "item", name = "sp-charged-slab", amount = 4},
+  {type = "item", name = "sp-titanium-frame", amount = 6},
+  {type = "item", name = "sp-frictionless-joint", amount = 6},
+  {type = "item", name = "sp-solid-rocket-motor", amount = 6},
+  {type = "item", name = "sp-alpha-wave-tray-array", amount = 6},
+  {type = "item", name = "sp-plasma-core", amount = 1},
+  {type = "item", name = "energy-control-unit", amount = 20}
+}
+
 if mods["aai-industry"] then
   table.insert(data.raw.recipe["jetpack-1"].ingredients, {type = "item", name = "engine-unit", amount = 1})
 end

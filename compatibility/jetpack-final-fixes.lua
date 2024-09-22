@@ -27,16 +27,24 @@ data.raw.technology["jetpack-3"].unit.ingredients = {
   {"utility-science-pack", 1}
 }
 
-table.insert(data.raw.technology["jetpack-4"].prerequisites, "sp-chemical-science-pack-2")
-table.insert(data.raw.technology["jetpack-4"].prerequisites, "utility-science-pack")
+table.insert(data.raw.technology["jetpack-4"].prerequisites, "sp-advanced-alien-compounds")
+table.insert(data.raw.technology["jetpack-4"].prerequisites, "sp-frictionless-joint")
+table.insert(data.raw.technology["jetpack-4"].prerequisites, "sp-alien-processing")
 data.raw.technology["jetpack-4"].unit.ingredients = {
-  {"sp-automation-science-pack-2", 1},
-  {"sp-logistic-science-pack-2", 1},
-  {"sp-electronic-science-pack-2", 1},
-  {"sp-material-science-pack-2", 1},
-  {"sp-chemical-science-pack-2", 1},
-  {"production-science-pack", 1},
-  {"utility-science-pack", 1}
+  {"sp-automation-science-pack-3", 1},
+  {"sp-logistic-science-pack-3", 1},
+  {"sp-chemical-science-pack-3", 1},
+  {"sp-electronic-science-pack-3", 1},
+  {"sp-geological-science-pack-3", 1},
+  {"sp-material-science-pack-3", 1},
+  {"sp-computer-science-pack-3", 1},
+  {"sp-production-science-pack-3", 1},
+  {"sp-nuclear-science-pack-3", 1},
+  {"sp-astronomical-science-pack-3", 1},
+  {"sp-utility-science-pack-3", 1},
+  {"space-science-pack", 1},
+  {"matter-tech-card", 1},
+  {"advanced-tech-card", 1}
 }
 
 if mods["Krastorio2"] then

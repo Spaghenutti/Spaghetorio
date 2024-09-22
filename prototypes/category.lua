@@ -18,6 +18,10 @@ data:extend({
   },
   {
     type = "recipe-category",
+    name = "matter-condensing"
+  },
+  {
+    type = "recipe-category",
     name = "acrosphere-conversion"
   },
   {

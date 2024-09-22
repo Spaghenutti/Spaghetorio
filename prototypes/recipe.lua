@@ -2936,26 +2936,6 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-rukite-plate",  -- #ForRegEx# - recipe
-    icon_size = 64,
-    mip_maps = 4,
-    category = "intermediate-smelting",  -- Krastorio: category = "advanced-smelting"
-    enabled = false,
-    energy_required = 48,
-    ingredients = {
-      {type = "item", name = "sp-blunagium-bar", amount = 14},
-      {type = "item", name = "copper-plate", amount = 3},
-      {type = "item", name = "sp-tungsten-slab", amount = 5},
-      {type = "item", name = "sp-magnesium-slab", amount = 4},
-      {type = "item", name = "sp-platinum", amount = 1},
-      {type = "item", name = "sp-palladium", amount = 2},
-    },
-    results = {
-      {type = "item", name = "sp-rukite-plate", amount = 4}
-    }
-  },
-  {
-    type = "recipe",
     name = "sp-chronomatter",  -- #ForRegEx# - recipe
     category = "chemistry",
     subgroup = "fluid-recipes",
@@ -3022,25 +3002,6 @@ data:extend({
       {type = "item", name = "sp-lanthanum", probability = 0.1, amount = 3},
       {type = "item", name = "sp-cerium", probability = 0.2, amount = 3},
       {type = "item", name = "sp-neodymium", probability = 0.09, amount = 3}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-yemnuth-plate",  -- #ForRegEx# - recipe
-    icon_size = 64,
-    mip_maps = 4,
-    category = "intermediate-smelting",  -- Krastorio: category = "advanced-smelting"
-    enabled = false,
-    energy_required = 40,
-    ingredients = {
-      {type = "item", name = "sp-yemnuth-pearls", amount = 8},
-      {type = "item", name = "sp-chromium-plate", amount = 5},
-      {type = "item", name = "sp-stibnite", amount = 3},
-      {type = "item", name = "sp-yttrium", amount = 2},
-      {type = "item", name = "sp-high-purity-silicon", amount = 4},
-    },
-    results = {
-      {type = "item", name = "sp-yemnuth-plate", amount = 3}
     }
   },
   {
@@ -3215,26 +3176,6 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-blunagium-plate",  -- #ForRegEx# - recipe
-    icon_size = 64,
-    mip_maps = 4,
-    category = "intermediate-smelting",  -- Krastorio: category = "advanced-smelting"
-    enabled = false,
-    energy_required = 50,
-    ingredients = {
-      {type = "item", name = "sp-blunagium-bar", amount = 16},
-      {type = "item", name = "sp-titanium-ingot", amount = 3},
-      {type = "item", name = "sp-zirconium-rod", amount = 5},
-      {type = "item", name = "sp-silver", amount = 6},
-      {type = "item", name = "sp-lanthanum", amount = 2},
-      {type = "item", name = "sp-neodymium", amount = 1},
-    },
-    results = {
-      {type = "item", name = "sp-blunagium-plate", amount = 5}
-    }
-  },
-  {
-    type = "recipe",
     name = "sp-fermium-condensate",  -- #ForRegEx# - recipe
     category = "crafting-with-fluid",
     enabled = false,
@@ -3382,27 +3323,6 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-grobgnum-bar", amount = 1}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-grobgnum-plate",  -- #ForRegEx# - recipe
-    icon_size = 64,
-    mip_maps = 4,
-    category = "intermediate-smelting",  -- Krastorio: category = "advanced-smelting"
-    enabled = false,
-    energy_required = 60,
-    ingredients = {
-      {type = "item", name = "sp-grobgnum-bar", amount = 16},
-      {type = "item", name = "sp-grobgnum-droplet", amount = 6},
-      {type = "item", name = "sp-zinc-plate", amount = 5},
-      {type = "item", name = "sp-tantalum-billet", amount = 2},
-      {type = "item", name = "sp-tellurium", amount = 1},
-      {type = "item", name = "sp-lanthanum", amount = 5},
-      {type = "item", name = "sp-sodium", amount = 2},
-    },
-    results = {
-      {type = "item", name = "sp-grobgnum-plate", amount = 6}
     }
   },
   {
@@ -3787,9 +3707,291 @@ data:extend({
       {type = "item", name = "sp-titanium-ore", probability=0.3, amount = 1}
     }
   },
+  {
+    type = "recipe",
+    name = "sp-speed-module-4",  -- #ForRegEx# - recipe
+    icon_size = 64,
+    mip_maps = 4,
+    category = "alien-tech-manufacturing",  -- Krastorio: category = "advanced-smelting"
+    enabled = false,
+    energy_required = 40,
+    ingredients = {
+      {type = "item", name = "sp-blunagium-solenoid", amount = 3},
+      {type = "item", name = "sp-gravitational-wave-bridge", amount = 2},
+      {type = "item", name = "sp-nanobot", amount = 100},
+      {type = "item", name = "sp-blunagium-plate", amount = 1},
+      {type = "item", name = "sp-nanowire", amount = 2},
+      {type = "item", name = "sp-control-unit", amount = 5}
+    },
+    results = {
+      {type = "item", name = "sp-speed-module-4", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-effectivity-module-4",  -- #ForRegEx# - recipe
+    icon_size = 64,
+    mip_maps = 4,
+    category = "alien-tech-manufacturing",  -- Krastorio: category = "advanced-smelting"
+    enabled = false,
+    energy_required = 40,
+    ingredients = {
+      {type = "item", name = "sp-bio-capacitor", amount = 1},
+      {type = "item", name = "sp-neural-fusion-card", amount = 1},
+      {type = "item", name = "sp-neuropulse-module", amount = 1},
+      {type = "item", name = "sp-synaptic-core-chip", amount = 1},
+      {type = "item", name = "sp-nanowire", amount = 6},
+      {type = "item", name = "sp-nanobot", amount = 100},
+      {type = "item", name = "sp-biochip", amount = 4},
+      {type = "item", name = "sp-micro-frame", amount = 4}
+    },
+    results = {
+      {type = "item", name = "sp-effectivity-module-4", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-productivity-module-4",  -- #ForRegEx# - recipe
+    icon_size = 64,
+    mip_maps = 4,
+    category = "alien-tech-manufacturing",  -- Krastorio: category = "advanced-smelting"
+    enabled = false,
+    energy_required = 40,
+    ingredients = {
+      {type = "item", name = "sp-holo-grip-controller", amount = 2},
+      {type = "item", name = "sp-graphene-chip", amount = 2},
+      {type = "item", name = "sp-rukite-gearbox", amount = 2},
+      {type = "item", name = "sp-frictionless-bearing", amount = 5},
+      {type = "item", name = "sp-nanowire", amount = 2},
+      {type = "item", name = "sp-nanobot", amount = 100},
+      {type = "item", name = "sp-micro-frame", amount = 6}
+      -- Krastorio: {"energy-control-unit", 5}
+    },
+    results = {
+      {type = "item", name = "sp-productivity-module-4", amount = 1}
+    }
+  },
+  ------------------------------------------------------------------------------
+  -- MARK: Alien compounds
+  -- TODO: fix recipes by moving krastorio items to aai-and-krastorio-recipe.lua
+  ------------------------------------------------------------------------------
+  {
+    type = "recipe",
+    name = "sp-blunagium-plate",  -- #ForRegEx# - recipe
+    icon_size = 64,
+    mip_maps = 4,
+    category = "intermediate-smelting",  -- Krastorio: category = "advanced-smelting"
+    enabled = false,
+    energy_required = 50,
+    ingredients = {
+      {type = "item", name = "sp-blunagium-bar", amount = 16},
+      {type = "item", name = "sp-titanium-ingot", amount = 3},
+      {type = "item", name = "sp-zirconium-rod", amount = 5},
+      {type = "item", name = "sp-silver", amount = 6},
+      {type = "item", name = "sp-lanthanum", amount = 2},
+      {type = "item", name = "sp-neodymium", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-blunagium-plate", amount = 5}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-grobgnum-plate",  -- #ForRegEx# - recipe
+    icon_size = 64,
+    mip_maps = 4,
+    category = "intermediate-smelting",  -- Krastorio: category = "advanced-smelting"
+    enabled = false,
+    energy_required = 60,
+    ingredients = {
+      {type = "item", name = "sp-grobgnum-bar", amount = 16},
+      {type = "item", name = "sp-grobgnum-droplet", amount = 6},
+      {type = "item", name = "sp-zinc-plate", amount = 5},
+      {type = "item", name = "sp-tantalum-billet", amount = 2},
+      {type = "item", name = "sp-tellurium", amount = 1},
+      {type = "item", name = "sp-lanthanum", amount = 5},
+      {type = "item", name = "sp-sodium", amount = 2},
+    },
+    results = {
+      {type = "item", name = "sp-grobgnum-plate", amount = 6}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-rukite-plate",  -- #ForRegEx# - recipe
+    icon_size = 64,
+    mip_maps = 4,
+    category = "intermediate-smelting",  -- Krastorio: category = "advanced-smelting"
+    enabled = false,
+    energy_required = 48,
+    ingredients = {
+      {type = "item", name = "sp-blunagium-bar", amount = 14},
+      {type = "item", name = "copper-plate", amount = 3},
+      {type = "item", name = "sp-tungsten-slab", amount = 5},
+      {type = "item", name = "sp-magnesium-slab", amount = 4},
+      {type = "item", name = "sp-platinum", amount = 1},
+      {type = "item", name = "sp-palladium", amount = 2},
+    },
+    results = {
+      {type = "item", name = "sp-rukite-plate", amount = 4}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-yemnuth-plate",  -- #ForRegEx# - recipe
+    icon_size = 64,
+    mip_maps = 4,
+    category = "intermediate-smelting",  -- Krastorio: category = "advanced-smelting"
+    enabled = false,
+    energy_required = 40,
+    ingredients = {
+      {type = "item", name = "sp-yemnuth-pearls", amount = 8},
+      {type = "item", name = "sp-chromium-plate", amount = 5},
+      {type = "item", name = "sp-stibnite", amount = 3},
+      {type = "item", name = "sp-yttrium", amount = 2},
+      {type = "item", name = "sp-high-purity-silicon", amount = 4},
+    },
+    results = {
+      {type = "item", name = "sp-yemnuth-plate", amount = 3}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-blunagium-rukite-compound",  -- #ForRegEx# - recipe
+    icon_size = 64,
+    mip_maps = 4,
+    category = "intermediate-smelting",  -- Krastorio: category = "advanced-smelting"
+    enabled = false,
+    energy_required = 60,
+    ingredients = {
+      {type = "item", name = "sp-rukite-plate", amount = 8},
+      {type = "item", name = "sp-blunagium-basalt", amount = 3},
+      {type = "item", name = "sp-blunagium-plate", amount = 4},
+      {type = "item", name = "sp-diamond", amount = 2},
+      {type = "item", name = "sp-antimony", amount = 2}
+    },
+    results = {
+      {type = "item", name = "sp-blunagium-rukite-compound", amount = 10}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-blunagium-yemnuth-compound",  -- #ForRegEx# - recipe
+    icon_size = 64,
+    mip_maps = 4,
+    category = "intermediate-smelting",  -- Krastorio: category = "advanced-smelting"
+    enabled = false,
+    energy_required = 50,
+    ingredients = {
+      {type = "item", name = "sp-blunagium-plate", amount = 8},
+      {type = "item", name = "sp-yemnuth-plate", amount = 6},
+      {type = "item", name = "sp-yemnuth-pearls", amount = 3},
+      {type = "item", name = "sp-zirconium-rod", amount = 2},
+      {type = "item", name = "sp-silver", amount = 3}
+    },
+    results = {
+      {type = "item", name = "sp-blunagium-yemnuth-compound", amount = 10}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-grobgnum-rukite-compound",  -- #ForRegEx# - recipe
+    icon_size = 64,
+    mip_maps = 4,
+    category = "intermediate-smelting",  -- Krastorio: category = "advanced-smelting"
+    enabled = false,
+    energy_required = 32,
+    ingredients = {
+      {type = "item", name = "sp-grobgnum-plate", amount = 3},
+      {type = "item", name = "sp-grobgnum-cube", amount = 1},
+      {type = "item", name = "sp-grobgnum-bar", amount = 1},
+      {type = "item", name = "sp-rukite-powder", amount = 4},
+      {type = "item", name = "sp-high-purity-silicon", amount = 2},
+      {type = "item", name = "sp-lead-slab", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-grobgnum-rukite-compound", amount = 5}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-imersite-rukite-beam",  -- #ForRegEx# - recipe
+    icon_size = 64,
+    mip_maps = 4,
+    category = "intermediate-smelting",  -- Krastorio: category = "advanced-smelting"
+    enabled = false,
+    energy_required = 45,
+    ingredients = {
+      {type = "item", name = "imersite-powder", amount = 6},
+      {type = "item", name = "sp-rukite-powder", amount = 5},
+      {type = "item", name = "sp-palladium", amount = 1},
+      {type = "item", name = "sp-lithium-oxide", amount = 1},
+      {type = "item", name = "sp-tungsten-powder", amount = 3}
+    },
+    results = {
+      {type = "item", name = "sp-imersite-rukite-beam", amount = 8}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-grobgnum-rukite-beam",  -- #ForRegEx# - recipe
+    icon_size = 64,
+    mip_maps = 4,
+    category = "intermediate-smelting",  -- Krastorio: category = "advanced-smelting"
+    enabled = false,
+    energy_required = 60,
+    ingredients = {
+      {type = "item", name = "sp-rukite-bar", amount = 2},
+      {type = "item", name = "sp-grobgnum-plate", amount = 8},
+      {type = "item", name = "uranium-235", amount = 1},
+      {type = "item", name = "sp-gold", amount = 1},
+      {type = "item", name = "sp-lanthanum", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-grobgnum-rukite-beam", amount = 6}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-blunagium-yemnuth-beam",  -- #ForRegEx# - recipe
+    icon_size = 64,
+    mip_maps = 4,
+    category = "intermediate-smelting",  -- Krastorio: category = "advanced-smelting"
+    enabled = false,
+    energy_required = 80,
+    ingredients = {
+      {type = "item", name = "sp-blunagium-plate", amount = 8},
+      {type = "item", name = "sp-yemnuth-pearls", amount = 5},
+      {type = "item", name = "sp-zircon", amount = 3},
+      {type = "item", name = "sp-platinum", amount = 1},
+      {type = "item", name = "sp-cobalt-billet", amount = 2}
+    },
+    results = {
+      {type = "item", name = "sp-blunagium-yemnuth-beam", amount = 5}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-charged-slab",  -- #ForRegEx# - recipe
+    icon_size = 64,
+    mip_maps = 4,
+    category = "intermediate-smelting",  -- Krastorio: category = "advanced-smelting"
+    enabled = false,
+    energy_required = 20,
+    ingredients = {
+      {type = "item", name = "sp-blunagium-basalt", amount = 1},
+      {type = "item", name = "sp-blunagium-rukite-compound", amount = 1},
+      {type = "item", name = "imersite-powder", amount = 3},
+      {type = "item", name = "sp-rukite-powder", amount = 2},
+      {type = "item", name = "sp-gravitonium", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-charged-slab", amount = 1}
+    }
+  },
   ------------------------------------------------------------------------------
   -- MARK: Alien tech manufacturing
-  -- Fix recipes by moving krastorio items to aai-and-krastorio-recipe.lua
+  -- TODO: fix recipes by moving krastorio items to aai-and-krastorio-recipe.lua
   ------------------------------------------------------------------------------
   {
     type = "recipe",
@@ -3816,7 +4018,7 @@ data:extend({
       {type = "item", name = "sp-plutonium-240", amount = 1},
       {type = "item", name = "sp-blunagium-foam", amount = 1},
       {type = "item", name = "sp-blunagium-basalt", amount = 2},
-      {type = "item", name = "imersite-powder", amount = 3}
+      -- Krastorio: {type = "item", name = "imersite-powder", amount = 3}
     },
     results = {
       {type = "item", name = "sp-boson-blossom", amount = 1}
@@ -3874,6 +4076,184 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "sp-bio-capacitor",  -- #ForRegEx# - recipe
+    category = "alien-tech-manufacturing",
+    enabled = false,
+    energy_required = 24,
+    ingredients = {
+      {type = "item", name = "sp-advanced-processing-unit", amount = 2},
+      {type = "item", name = "sp-nanowire", amount = 2},
+      {type = "item", name = "sp-grobgnum-droplet", amount = 2},
+      {type = "item", name = "sp-grobgnum-plate", amount = 1},
+      {type = "item", name = "sp-quasicrystal", amount = 1},
+      {type = "item", name = "sp-yttrium", amount = 1},
+      {type = "item", name = "sp-niobium-powder", amount = 1},
+      {type = "fluid", name = "sp-grobgnum-hydroxide", amount = 4},
+      -- Krastorio: {"biomass", 1}
+    },
+    results = {
+      {type = "item", name = "sp-bio-capacitor", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-neural-fusion-card",  -- #ForRegEx# - recipe
+    category = "alien-tech-manufacturing",
+    enabled = false,
+    energy_required = 30,
+    ingredients = {
+      {type = "item", name = "sp-advanced-processing-unit", amount = 2},
+      {type = "item", name = "sp-nanowire", amount = 1},
+      {type = "item", name = "sp-grobgnum-droplet", amount = 1},
+      {type = "item", name = "sp-grobgnum-plate", amount = 1},
+      {type = "item", name = "sp-graphene", amount = 3},
+      {type = "fluid", name = "sp-grobgnumylene", amount = 3},
+      -- Krastorio: {"tritium", 1},
+      -- Krastorio: {"lithium", 1},
+      -- Krastorio: {"biomass", 2}
+    },
+    results = {
+      {type = "item", name = "sp-neural-fusion-card", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-neuropulse-module",  -- #ForRegEx# - recipe
+    category = "alien-tech-manufacturing",
+    enabled = false,
+    energy_required = 36,
+    ingredients = {
+      {type = "item", name = "sp-quantum-foam", amount = 1},
+      {type = "item", name = "sp-grobgnum-shard", amount = 2},
+      {type = "item", name = "sp-grobgnum-plate", amount = 2},
+      {type = "item", name = "sp-glass-fiber", amount = 1},
+      {type = "item", name = "sp-stibnite", amount = 1},
+      {type = "fluid", name = "sp-grobgnumylene", amount = 5},
+      -- Krastorio: {"biomass", 2},
+      -- Krastorio: {"ai-core", 2}
+    },
+    results = {
+      {type = "item", name = "sp-neuropulse-module", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-synaptic-core-chip",  -- #ForRegEx# - recipe
+    category = "alien-tech-manufacturing",
+    enabled = false,
+    energy_required = 40,
+    ingredients = {
+      {type = "item", name = "sp-quantum-foam", amount = 1},
+      {type = "item", name = "sp-fermium-condensate", amount = 2},
+      {type = "item", name = "sp-grobgnum-shard", amount = 2},
+      {type = "item", name = "sp-grobgnum-plate", amount = 1},
+      {type = "item", name = "sp-glass-fiber", amount = 1},
+      {type = "item", name = "sp-antimony", amount = 2},
+      {type = "fluid", name = "sp-grobgnum-hydroxide", amount = 8},
+      -- Krastorio: {"biomass", 3},
+      -- Krastorio: {"ai-core", 1}
+    },
+    results = {
+      {type = "item", name = "sp-synaptic-core-chip", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-alpha-wave-tray-array",  -- #ForRegEx# - recipe
+    category = "alien-tech-manufacturing",
+    enabled = false,
+    energy_required = 30,
+    ingredients = {
+      {type = "item", name = "sp-radiation-channeler", amount = 8},
+      {type = "item", name = "sp-ultra-violet-processor", amount = 8},
+      {type = "item", name = "sp-graphene-chip", amount = 8},
+      {type = "item", name = "sp-holo-grip-controller", amount = 1},
+      {type = "item", name = "sp-neutrino-stream-source", amount = 2},
+      {type = "item", name = "sp-rukite-bar", amount = 2},
+      -- Krastorio: {type = "item", name = "imersite-crystal", amount = 2},
+      -- Krastorio: {type = "item", name = "imersium-plate", amount = 1},
+      -- Krastorio: {type = "item", name = "energy-control-unit", amount = 1},
+      {type = "item", name = "sp-TiNb", amount = 1},
+      {type = "item", name = "sp-niobium-steel", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-alpha-wave-tray-array", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-radiation-channeler",  -- #ForRegEx# - recipe
+    category = "alien-tech-manufacturing",
+    enabled = false,
+    energy_required = 24,
+    ingredients = {
+      {type = "item", name = "sp-lead-slab", amount = 1},
+      {type = "item", name = "sp-superconductor", amount = 1},
+      {type = "item", name = "sp-advanced-processing-unit", amount = 1},
+      {type = "item", name = "sp-blunagium-rukite-compound", amount = 1},
+      -- Krastorio: {type = "item", name = "imersium-plate", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-radiation-channeler", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-ultra-violet-processor",  -- #ForRegEx# - recipe
+    category = "alien-tech-manufacturing",
+    enabled = false,
+    energy_required = 8,
+    ingredients = {
+      {type = "item", name = "sp-phosphorus", amount = 10},
+      {type = "item", name = "sp-neodymium", amount = 1},
+      {type = "item", name = "sp-titanium-frame", amount = 1},
+      {type = "item", name = "sp-rukite-plate", amount = 1},
+      {type = "item", name = "sp-blunagium-solenoid", amount = 1},
+      -- Krastorio: {type = "item", name = "imersite-crystal", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-ultra-violet-processor", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-graphene-chip",  -- #ForRegEx# - recipe
+    category = "alien-tech-manufacturing",
+    enabled = false,
+    energy_required = 10,
+    ingredients = {
+      {type = "item", name = "sp-graphene", amount = 10},
+      {type = "item", name = "sp-carbon-nanotubes", amount = 8},
+      {type = "item", name = "sp-high-purity-silicon", amount = 1},
+      {type = "item", name = "sp-gold", amount = 1},
+      {type = "item", name = "sp-rukite-powder", amount = 1},
+      -- Krastorio: {type = "item", name = "imersite-powder", amount = 2},
+    },
+    results = {
+      {type = "item", name = "sp-graphene-chip", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-holo-grip-controller",  -- #ForRegEx# - recipe
+    category = "alien-tech-manufacturing",
+    enabled = false,
+    energy_required = 15,
+    ingredients = {
+      {type = "item", name = "sp-micro-frame", amount = 4},
+      {type = "item", name = "sp-titanium-frame", amount = 1},
+      {type = "item", name = "sp-zirconia", amount = 1},
+      {type = "item", name = "sp-rukite-powder", amount = 4},
+      {type = "item", name = "sp-tungsten-slab", amount = 1},
+      {type = "item", name = "sp-high-purity-silicon", amount = 2},
+      {type = "item", name = "sp-graphene", amount = 3},
+    },
+    results = {
+      {type = "item", name = "sp-holo-grip-controller", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
     name = "sp-rukite-gear-wheel",  -- #ForRegEx# - recipe
     category = "alien-tech-manufacturing",
     enabled = false,
@@ -3896,12 +4276,192 @@ data:extend({
     energy_required = 10,
     ingredients = {
       {type = "item", name = "sp-rukite-gear-wheel", amount = 10},
-      {type = "item", name = "imersium-gear-wheel", amount = 4},
+      -- Krastorio: {type = "item", name = "imersium-gear-wheel", amount = 4},
       {type = "item", name = "sp-TiNb", amount = 2},
       {type = "item", name = "sp-tungsten-carbide", amount = 3}
     },
     results = {
       {type = "item", name = "sp-rukite-gearbox", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-collapsed-orbitals",  -- #ForRegEx# - recipe
+    category = "matter-condensing",
+    enabled = false,
+    energy_required = 10,
+    ingredients = {
+      {type = "item", name = "sp-yemnuth-pearls", amount = 5},
+      {type = "item", name = "sp-rukite-powder", amount = 1},
+      {type = "item", name = "sp-plutonium-239", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-collapsed-orbitals", amount = 20}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-entangled-leptons",  -- #ForRegEx# - recipe
+    category = "matter-condensing",
+    enabled = false,
+    energy_required = 20,
+    ingredients = {
+      {type = "item", name = "sp-yemnuth-pearls", amount = 7},
+      {type = "item", name = "sp-blunagium-foam", amount = 1},
+      {type = "item", name = "sp-plutonium-240", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-entangled-leptons", amount = 30}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-gluon-orb",  -- #ForRegEx# - recipe
+    category = "matter-condensing",
+    enabled = false,
+    energy_required = 16,
+    ingredients = {
+      {type = "item", name = "sp-yemnuth-pearls", amount = 6},
+      {type = "item", name = "sp-plasma-crystal", amount = 1},
+      {type = "item", name = "sp-quantum-crystal", amount = 1},
+      {type = "fluid", name = "sp-xenon", amount = 5},
+      -- Krastorio: {"tritium", 1}
+    },
+    results = {
+      {type = "item", name = "sp-gluon-orb", amount = 25}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-neutrino-stream-source",  -- #ForRegEx# - recipe
+    category = "matter-condensing",
+    enabled = false,
+    energy_required = 60,
+    ingredients = {
+      {type = "item", name = "sp-collapsed-orbitals", amount = 24},
+      {type = "item", name = "sp-quark-sphere", amount = 20},
+      {type = "item", name = "sp-gluon-orb", amount = 30},
+      {type = "item", name = "sp-blunagium-yemnuth-compound", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-neutrino-stream-source", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-quantized-orbital-flower",  -- #ForRegEx# - recipe
+    category = "matter-condensing",
+    enabled = false,
+    energy_required = 80,
+    ingredients = {
+      {type = "item", name = "sp-collapsed-orbitals", amount = 100},
+      {type = "item", name = "sp-quark-sphere", amount = 8},
+      {type = "item", name = "sp-gluon-orb", amount = 6},
+      {type = "item", name = "sp-entangled-leptons", amount = 40},
+      {type = "item", name = "sp-fermium-condensate", amount = 5},
+      {type = "item", name = "sp-gamma-radiation-source", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-quantized-orbital-flower", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-quark-sphere",  -- #ForRegEx# - recipe
+    category = "matter-condensing",
+    enabled = false,
+    energy_required = 40,
+    ingredients = {
+      {type = "item", name = "sp-yemnuth-pearls", amount = 8},
+      {type = "item", name = "sp-yemnuth-plate", amount = 1},
+      {type = "item", name = "sp-stibnite", amount = 1},
+      -- {type = "fluid", name = "heavy-water", amount = 10},
+    },
+    results = {
+      {type = "item", name = "sp-quark-sphere", amount = 12}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-trapped-quantum-energy",  -- #ForRegEx# - recipe
+    category = "matter-condensing",
+    enabled = false,
+    energy_required = 45,
+    ingredients = {
+      {type = "item", name = "sp-plasma-crystal", amount = 1},
+      {type = "item", name = "sp-gravitonium", amount = 1},
+      -- {type = "item", name = "imersite-powder", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-trapped-quantum-energy", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-femto-navigator",  -- #ForRegEx# - recipe
+    category = "matter-condensing",  -- Krastorio: "matter-items"
+    enabled = false,
+    energy_required = 2,
+    ingredients = {
+      {type = "item", name = "sp-nanobot", amount = 1},
+      {type = "item", name = "sp-neutrino-stream-source", amount = 1},
+      {type = "item", name = "sp-nanoflex", amount = 1},
+      {type = "item", name = "sp-nanowire", amount = 1},
+      -- {type = "item", name = "imersite-powder", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-femto-navigator", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-orbital-cell",  -- #ForRegEx# - recipe
+    category = "matter-condensing",  -- Krastorio: "matter-items"
+    enabled = false,
+    energy_required = 2,
+    ingredients = {
+      {type = "item", name = "sp-collapsed-orbitals", amount = 10},
+      {type = "item", name = "sp-superconductor", amount = 2},
+      {type = "item", name = "sp-yemnuth-plate", amount = 1},
+      {type = "item", name = "sp-diamond", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-orbital-cell", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-quantized-compute-unit",  -- #ForRegEx# - recipe
+    category = "matter-condensing",  -- Krastorio: "matter-items"
+    enabled = false,
+    energy_required = 8,
+    ingredients = {
+      {type = "item", name = "sp-neutrino-stream-source", amount = 1},
+      {type = "item", name = "sp-quantized-orbital-flower", amount = 1},
+      {type = "item", name = "sp-orbital-cell", amount = 4},
+      {type = "item", name = "sp-blunagium-yemnuth-compound", amount = 1},
+      {type = "item", name = "sp-carbon-nanotubes", amount = 12}
+    },
+    results = {
+      {type = "item", name = "sp-quantized-compute-unit", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-quantum-tube",  -- #ForRegEx# - recipe
+    category = "matter-condensing",  -- Krastorio: "matter-items"
+    enabled = false,
+    energy_required = 12,
+    ingredients = {
+      {type = "item", name = "sp-neutrino-stream-source", amount = 1},
+      {type = "item", name = "sp-gravitational-wave-interferometer", amount = 1},
+      {type = "item", name = "sp-blunagium-yemnuth-compound", amount = 1},
+      {type = "item", name = "sp-zirconia", amount = 1},
+      {type = "item", name = "sp-quantum-foam", amount = 1},
+      {type = "item", name = "sp-quantum-crystal", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-quantum-tube", amount = 1}
     }
   },
   {
@@ -3913,8 +4473,8 @@ data:extend({
     ingredients = {
       {type = "item", name = "sp-rukite-powder", amount = 2},
       {type = "item", name = "sp-blunagium-stone", amount = 1},
-      {type = "item", name = "imersite-powder", amount = 2},
-      {type = "item", name = "sp-rukite-plate", amount = 5}
+      {type = "item", name = "sp-blunagium-rukite-compound", amount = 5},
+      -- Krastorio: {type = "item", name = "imersite-powder", amount = 2}
     },
     results = {
       {type = "item", name = "sp-frictionless-bearing", amount = 3}

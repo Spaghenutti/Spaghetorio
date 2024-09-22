@@ -39,9 +39,10 @@ data.raw.item["tritium"].subgroup = "advanced-raw-material"
 
 data.raw.item["imersite-crystal"].subgroup = "alien-material"
 data.raw.item["matter-cube"].subgroup = "alien-material"
-data.raw.item["imersium-plate"].subgroup = "alien-material"
 data.raw.item["imersite-powder"].subgroup = "alien-material"
-data.raw.item["imersium-beam"].subgroup = "alien-material"
+
+data.raw.item["imersium-plate"].subgroup = "alien-compound"
+data.raw.item["imersium-beam"].subgroup = "alien-compound"
 
 data.raw.item["steel-gear-wheel"].subgroup = "mechanical-component"
 

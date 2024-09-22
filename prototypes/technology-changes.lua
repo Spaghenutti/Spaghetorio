@@ -1225,6 +1225,22 @@ data.raw.technology["worker-robots-speed-5"].unit.ingredients = {
   {"sp-computer-science-pack-3", 1}
 }
 
+data.raw.technology["worker-robots-speed-6"].unit.ingredients = {
+  {"sp-automation-science-pack-3", 1},
+  {"sp-logistic-science-pack-3", 1},
+  {"sp-chemical-science-pack-3", 1},
+  {"sp-electronic-science-pack-3", 1},
+  {"sp-geological-science-pack-3", 1},
+  {"sp-material-science-pack-3", 1},
+  {"sp-computer-science-pack-3", 1},
+  {"sp-production-science-pack-3", 1},
+  {"sp-nuclear-science-pack-3", 1},
+  {"sp-astronomical-science-pack-3", 1},
+  {"sp-utility-science-pack-3", 1},
+  {"space-science-pack", 1},
+  -- Krastorio: {"matter-tech-card", 1}
+}
+
 data.raw.technology["worker-robots-storage-1"].prerequisites = {
   "sp-computer-science-pack-2",
   "logistic-robotics",

@@ -162,27 +162,34 @@ util.change_recipe_ingredients("matter-tech-card",
 
 util.change_recipe_ingredients("space-science-pack", -- Optimization tech card
   {
-    {"copper-plate", 69},
+    {"sp-frictionless-bearing", 5},
+    {"sp-gravitational-wave-bridge", 5},
     {"blank-tech-card", 5}
   },
   {
     {"copper-plate", 69},
     {"blank-tech-card", 5}
   },
-  20,
-  30)
+  40,
+  60)
 
 util.change_recipe_ingredients("advanced-tech-card",
   {
-    {"copper-plate", 69},
+    {"sp-biochip", 5},
+    {"sp-chronalyte", 5},
+    {"sp-nanowire", 5},
+    {"sp-plasma-capsule", 5},
     {"blank-tech-card", 5}
   },
   {
-    {"copper-plate", 69},
+    {"sp-biochip", 8},
+    {"sp-chronalyte", 8},
+    {"sp-nanowire", 8},
+    {"sp-plasma-capsule", 8},
     {"blank-tech-card", 5}
   },
-  20,
-  30)
+  40,
+  60)
 
 util.change_recipe_ingredients("singularity-tech-card",
   {
