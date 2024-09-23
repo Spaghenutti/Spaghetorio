@@ -1290,6 +1290,7 @@ table.insert(data.raw.recipe["sp-proton-neutron-frame"].ingredients, {type = "it
 table.insert(data.raw.recipe["sp-blunagium-imersite-slab"].ingredients, {type = "item", name = "imersite-crystal", amount = 1})
 table.insert(data.raw.recipe["sp-radiant-glass"].ingredients, {type = "item", name = "imersite-crystal", amount = 2})
 table.insert(data.raw.recipe["sp-radiant-glass"].ingredients, {type = "item", name = "imersite-powder", amount = 1})
+table.insert(data.raw.recipe["sp-evolution-pulse-cell"].ingredients, {type = "item", name = "biomass", amount = 20})
 table.insert(data.raw.recipe["sp-productivity-module-4"].ingredients, {type = "item", name = "energy-control-unit", amount = 5})
 
 table.insert(data.raw.recipe["sp-geological-science-pack-1"].ingredients, {type = "item", name = "quartz", amount = 5})
@@ -1409,8 +1410,13 @@ data.raw.recipe["sp-aluminum-sheet"].category = "electrolysis"
 data.raw.recipe["sp-anodized-aluminum"].category = "electrolysis"
 data.raw.recipe["sp-zinc-plate"].category = "electrolysis"
 data.raw.recipe["sp-sodium-hydroxide-from-liquid-sodium"].category = "electrolysis"
+
 data.raw.recipe["sp-salt"].category = "fluid-filtration"
+
 data.raw.recipe["sp-nuclear-waste-processing"].category = "crushing"
+
+data.raw.recipe["sp-evolution-cell-container"].category = "bioprocessing"
+data.raw.recipe["sp-evolution-pulse-cell"].category = "bioprocessing"
 
 data.raw.recipe["sp-astronomical-science-pack-2"].category = "t2-tech-cards"
 data.raw.recipe["sp-computer-science-pack-2"].category = "t2-tech-cards"
@@ -1430,6 +1436,7 @@ data.raw.recipe["sp-ultra-durable-ceramics"].category = "advanced-smelting"
 data.raw.recipe["sp-hot-stone"].category = "advanced-smelting"
 data.raw.recipe["sp-blunagium-imersite-slab"].category = "advanced-smelting"
 data.raw.recipe["sp-radiant-glass"].category = "advanced-smelting"
+data.raw.recipe["sp-vitality-prism"].category = "advanced-smelting"
 
 data.raw.recipe["sp-speed-module-4"].category = "alien-tech-manufacturing"
 data.raw.recipe["sp-effectivity-module-4"].category = "alien-tech-manufacturing"

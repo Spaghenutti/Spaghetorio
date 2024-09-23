@@ -125,6 +125,7 @@ data.raw.technology["kr-advanced-tech-card"].unit.ingredients = {
 }
 
 table.insert(data.raw.technology["kr-singularity-tech-card"].prerequisites, "sp-acroproduct")
+table.insert(data.raw.technology["kr-singularity-tech-card"].prerequisites, "sp-star-stabilization")
 data.raw.technology["kr-singularity-tech-card"].unit.ingredients = {
   {"sp-automation-science-pack-3", 1},
   {"sp-logistic-science-pack-3", 1},
@@ -1623,10 +1624,19 @@ table.insert(data.raw.technology["mining-productivity-16"].prerequisites, "sp-ch
 data.raw.technology["mining-productivity-16"].unit.ingredients = {
   {"sp-automation-science-pack-3", 1},
   {"sp-logistic-science-pack-3", 1},
-  {"sp-material-science-pack-3", 1},
-  {"sp-production-science-pack-3", 1},
+  {"sp-chemical-science-pack-3", 1},
+  {"sp-electronic-science-pack-3", 1},
   {"sp-geological-science-pack-3", 1},
-  {"sp-chemical-science-pack-3", 1}
+  {"sp-material-science-pack-3", 1},
+  {"sp-computer-science-pack-3", 1},
+  {"sp-production-science-pack-3", 1},
+  {"sp-nuclear-science-pack-3", 1},
+  {"sp-astronomical-science-pack-3", 1},
+  {"sp-utility-science-pack-3", 1},
+  {"space-science-pack", 1},
+  {"matter-tech-card", 1},
+  {"advanced-tech-card", 1},
+  {"singularity-tech-card", 1}
 }
 
 data.raw.technology["worker-robots-speed-6"].unit.ingredients = {

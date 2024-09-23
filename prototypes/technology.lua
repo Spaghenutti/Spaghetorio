@@ -4619,10 +4619,6 @@ data:extend({
     {
       {
         type = "unlock-recipe",
-        recipe = "sp-grobgnum-optics"
-      },
-      {
-        type = "unlock-recipe",
         recipe = "sp-proton-neutron-frame"
       },
       {
@@ -4640,7 +4636,8 @@ data:extend({
     },
     prerequisites = {
       "sp-advanced-quantum-technology",
-      "sp-extreme-heat-source"
+      "sp-extreme-heat-source",
+      "sp-alien-genetics"
     },
     unit =
     {
@@ -4811,6 +4808,56 @@ data:extend({
         -- Krastorio: {"matter-tech-card", 1},
         -- Krastorio: {"advanced-tech-card", 1},
         -- Krastorio: {"singularity-tech-card", 1}
+      },
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-alien-genetics",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghenutti__/graphics/hr-icons/evolution-cell-container.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-vitality-prism"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-evolution-cell-container"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-evolution-pulse-cell"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-grobgnum-optics"
+      }
+    },
+    prerequisites = {
+      "space-science-pack"
+    },
+    unit =
+    {
+      count = 1500,
+      ingredients = {
+        {"sp-automation-science-pack-3", 1},
+        {"sp-logistic-science-pack-3", 1},
+        {"sp-chemical-science-pack-3", 1},
+        {"sp-electronic-science-pack-3", 1},
+        {"sp-geological-science-pack-3", 1},
+        {"sp-material-science-pack-3", 1},
+        {"sp-computer-science-pack-3", 1},
+        {"sp-production-science-pack-3", 1},
+        {"sp-nuclear-science-pack-3", 1},
+        {"sp-astronomical-science-pack-3", 1},
+        {"sp-utility-science-pack-3", 1},
+        {"space-science-pack", 1},
+        -- Krastorio: {"matter-tech-card", 1},
+        -- Krastorio: {"advanced-tech-card", 1}
       },
       time = 15
     },

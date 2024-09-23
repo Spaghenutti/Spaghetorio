@@ -4025,6 +4025,24 @@ data:extend({
       {type = "item", name = "sp-radiant-glass", amount = 3}
     }
   },
+  {
+    type = "recipe",
+    name = "sp-vitality-prism",  -- #ForRegEx# - recipe
+    category = "alien-tech-manufacturing",  -- Krastorio: category = "advanced-smelting"
+    enabled = false,
+    energy_required = 75,
+    ingredients = {
+      {type = "item", name = "sp-grobgnum-shard", amount = 8},
+      {type = "item", name = "sp-blunagium-basalt", amount = 1},
+      {type = "item", name = "sp-rukite-powder", amount = 1},
+      {type = "item", name = "sp-yemnuth-pearls", amount = 1},
+      -- Krastorio: {type = "item", name = "imersite-powder", amount = 1},
+      {type = "item", name = "sp-diamond", amount = 6}
+    },
+    results = {
+      {type = "item", name = "sp-vitality-prism", amount = 3}
+    }
+  },
   ------------------------------------------------------------------------------
   -- MARK: Alien tech manufacturing
   -- TODO: fix recipes by moving krastorio items to aai-and-krastorio-recipe.lua
@@ -4907,6 +4925,42 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-energy-channeler", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-evolution-cell-container",  -- #ForRegEx# - recipe
+    category = "alien-tech-manufacturing",  -- Krastorio: category = "bioprocessing"
+    enabled = false,
+    energy_required = 16,
+    ingredients = {
+      {type = "item", name = "sp-evolution-pulse-cell", amount = 4},
+      {type = "fluid", name = "sp-grobgnumylene", amount = 20},
+      {type = "item", name = "sp-quasicrystal", amount = 4},
+      {type = "item", name = "sp-grobgnum-droplet", amount = 4},
+      {type = "item", name = "sp-grobgnum-rukite-beam", amount = 4},
+    },
+    results = {
+      {type = "item", name = "sp-evolution-cell-container", amount = 4}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-evolution-pulse-cell",  -- #ForRegEx# - recipe
+    category = "alien-tech-manufacturing",  -- Krastorio: category = "bioprocessing"
+    enabled = false,
+    energy_required = 120,
+    ingredients = {
+      {type = "item", name = "sp-vitality-prism", amount = 1},
+      {type = "fluid", name = "sp-perchloric-acid", amount = 100},
+      {type = "item", name = "sp-femto-navigator", amount = 140},
+      {type = "item", name = "sp-urea", amount = 1},
+      {type = "item", name = "sp-graphene", amount = 5},
+      {type = "item", name = "sp-grobgnum-optics", amount = 1},
+      -- Krastorio: {type = "item", name = "biomass", amount = 20},
+    },
+    results = {
+      {type = "item", name = "sp-evolution-pulse-cell", amount = 70}
     }
   },
   ------------------------------------------------------------------------------

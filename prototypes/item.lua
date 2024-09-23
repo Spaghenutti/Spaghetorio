@@ -3349,7 +3349,37 @@ data:extend({
     icon_size = 64,
     scale = 0.25,
     subgroup = "advanced-alien-product",
-    order = "[interdimensional-prism-chamber",
+    order = "[interdimensional-prism-chamber]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "sp-antimatter-engine",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/antimatter-engine.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "advanced-alien-product",
+    order = "[antimatter-engine]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "sp-dark-energy-harvester",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/dark-energy-harvester.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "advanced-alien-product",
+    order = "[dark-energy-harvester]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "sp-dark-mater-field-generator",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/dark-mater-field-generator.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "advanced-alien-product",
+    order = "[dark-mater-field-generator]",
     stack_size = 50
   },
   ------------------------------------------------------------------------------
