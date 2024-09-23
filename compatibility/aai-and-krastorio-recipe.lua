@@ -2927,13 +2927,53 @@ util.change_recipe_ingredients("kr-stabilizer-charging-station",
 
 util.change_recipe_ingredients("kr-singularity-beacon",
   {
-    {"steel-plate", 69}
+    {"sp-antimatter-engine", 1},
+    {"sp-sideral-compute-core", 1},
+    {"imersium-beam", 8},
+    {"sp-nanobot", 400},
+    {"kr-black-reinforced-plate", 4},
   },
   {
-    {"steel-plate", 69}
+    {"sp-antimatter-engine", 2},
+    {"sp-sideral-compute-core", 1},
+    {"imersium-beam", 12},
+    {"sp-nanobot", 600},
+    {"kr-black-reinforced-plate", 8},
   },
-  69,
-  69)
+  45,
+  75)
+
+util.change_recipe_ingredients("kr-planetary-teleporter",
+  {
+    {"sp-ultra-durable-ceramics", 40},
+    {"sp-blunagium-yemnuth-compound", 16},
+    {"sp-interdimensional-prism-chamber", 1},
+    {"kr-black-reinforced-plate", 36},
+  },
+  {
+    {"sp-antimatter-engine", 2},
+  },
+  120,
+  180)
+
+  data.raw.recipe["gps-satellite"].category = "crafting-with-fluid"
+util.change_recipe_ingredients("gps-satellite",
+  {
+    {"satellite", 1},
+    {"sp-cryostat", 4},
+    {"sp-advanced-processing-unit", 12},
+    {"sp-ion-thruster", 1},
+    {type = "fluid", name = "sp-xenon", amount = 100},
+  },
+  {
+    {"satellite", 1},
+    {"sp-cryostat", 8},
+    {"sp-advanced-processing-unit", 24},
+    {"sp-ion-thruster", 1},
+    {type = "fluid", name = "sp-xenon", amount = 200},
+  },
+  20,
+  40)
 
 util.change_recipe_ingredients("biusart-lab",
   {

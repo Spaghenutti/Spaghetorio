@@ -127,6 +127,7 @@ data.raw.technology["kr-advanced-tech-card"].unit.ingredients = {
 table.insert(data.raw.technology["kr-singularity-tech-card"].prerequisites, "sp-acroproduct")
 table.insert(data.raw.technology["kr-singularity-tech-card"].prerequisites, "sp-star-stabilization")
 table.insert(data.raw.technology["kr-singularity-tech-card"].prerequisites, "sp-alien-genetics")
+table.insert(data.raw.technology["kr-singularity-tech-card"].prerequisites, "sp-information-cube")
 data.raw.technology["kr-singularity-tech-card"].unit.ingredients = {
   {"sp-automation-science-pack-3", 1},
   {"sp-logistic-science-pack-3", 1},
@@ -390,6 +391,23 @@ data.raw.technology["sp-frictionless-joint"].unit.ingredients = {
 }
 
 data.raw.technology["sp-extreme-heat-source"].unit.ingredients = {
+  {"sp-automation-science-pack-3", 1},
+  {"sp-logistic-science-pack-3", 1},
+  {"sp-chemical-science-pack-3", 1},
+  {"sp-electronic-science-pack-3", 1},
+  {"sp-geological-science-pack-3", 1},
+  {"sp-material-science-pack-3", 1},
+  {"sp-computer-science-pack-3", 1},
+  {"sp-production-science-pack-3", 1},
+  {"sp-nuclear-science-pack-3", 1},
+  {"sp-astronomical-science-pack-3", 1},
+  {"sp-utility-science-pack-3", 1},
+  {"space-science-pack", 1},
+  {"matter-tech-card", 1},
+  {"advanced-tech-card", 1}
+}
+
+data.raw.technology["sp-information-cube"].unit.ingredients = {
   {"sp-automation-science-pack-3", 1},
   {"sp-logistic-science-pack-3", 1},
   {"sp-chemical-science-pack-3", 1},
@@ -1746,7 +1764,7 @@ data.raw.technology["kr-matter-cube"].unit.ingredients = {
 }
 
 data.raw.technology["kr-planetary-teleporter"].prerequisites = {
-  "sp-sideral-computing"
+  "sp-omni-pulse-generator"
 }
 data.raw.technology["kr-planetary-teleporter"].unit.ingredients = {
   {"sp-automation-science-pack-3", 1},
@@ -1767,7 +1785,7 @@ data.raw.technology["kr-planetary-teleporter"].unit.ingredients = {
 }
 
 data.raw.technology["kr-singularity-beacon"].prerequisites = {
-  "sp-sideral-computing"
+  "sp-dark-matter"
 }
 data.raw.technology["kr-singularity-beacon"].unit.ingredients = {
   {"sp-automation-science-pack-3", 1},

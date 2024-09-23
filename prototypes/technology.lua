@@ -4767,7 +4767,7 @@ data:extend({
   },
   {
     type = "technology",
-    name = "sp-sideral-computing",  -- #ForRegEx# - technology
+    name = "sp-information-cube",  -- #ForRegEx# - technology
     icon_size = 256,
     icon = "__Spaghenutti__/graphics/hr-icons/information-cube.png",
     effects =
@@ -4786,7 +4786,7 @@ data:extend({
       }
     },
     prerequisites = {
-      "sp-star-stabilization"
+      "sp-alien-crystal-refinment"
     },
     unit =
     {
@@ -4883,7 +4883,7 @@ data:extend({
       }
     },
     prerequisites = {
-      "sp-star-stabilization"
+      "sp-information-cube"
     },
     unit =
     {

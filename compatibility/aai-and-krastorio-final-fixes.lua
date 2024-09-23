@@ -207,6 +207,7 @@ data.raw.recipe["singularity-tech-card"].allow_productivity = false
 util.change_recipe_ingredients("singularity-tech-card",
   {
     {"sp-miniaturized-star-core-stabilizer", 1},
+    {"sp-information-cube", 1},
     {"sp-subatomic-condenser", 5},
     {"sp-alpha-wave-tray-array", 5},
     {"sp-femto-navigator", 200},
@@ -217,10 +218,11 @@ util.change_recipe_ingredients("singularity-tech-card",
     {"sp-grobgnum-acrosphere-2", 1},
     {"sp-rukite-acrosphere-2", 1},
     {"sp-yemnuth-acrosphere-2", 1},
-    {"blank-tech-card", 20}
+    {"blank-tech-card", 40}
   },
   {
     {"sp-miniaturized-star-core-stabilizer", 1},
+    {"sp-information-cube", 1},
     {"sp-subatomic-condenser", 8},
     {"sp-alpha-wave-tray-array", 10},
     {"sp-femto-navigator", 400},
@@ -231,12 +233,12 @@ util.change_recipe_ingredients("singularity-tech-card",
     {"sp-grobgnum-acrosphere-2", 1},
     {"sp-rukite-acrosphere-2", 1},
     {"sp-yemnuth-acrosphere-2", 1},
-    {"blank-tech-card", 20}
+    {"blank-tech-card", 40}
   },
   180,
   360)
 data.raw.recipe["singularity-tech-card"].results = {
-  {type = "item", name = "singularity-tech-card", amount = 20},
+  {type = "item", name = "singularity-tech-card", amount = 40},
   {type = "item", name = "matter-stabilizer", amount = 5},
   {type = "item", name = "sp-corrupted-acrosphere-1", probability = 0.25, amount = 1},
   {type = "item", name = "sp-corrupted-acrosphere-2", probability = 0.25, amount = 1},
