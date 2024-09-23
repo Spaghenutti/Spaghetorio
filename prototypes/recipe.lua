@@ -4823,7 +4823,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-lossless-power-conector",  -- #ForRegEx# - recipe
+    name = "sp-lossless-power-connector",  -- #ForRegEx# - recipe
     category = "alien-tech-manufacturing",
     enabled = false,
     energy_required = 6,
@@ -4835,7 +4835,7 @@ data:extend({
       {type = "item", name = "sp-radiation-channeler", amount = 1},
     },
     results = {
-      {type = "item", name = "sp-lossless-power-conector", amount = 1}
+      {type = "item", name = "sp-lossless-power-connector", amount = 1}
     }
   },
   {
@@ -4847,7 +4847,7 @@ data:extend({
     ingredients = {
       {type = "item", name = "sp-blunagium-imersite-slab", amount = 8},
       {type = "item", name = "sp-blunagium-yemnuth-beam", amount = 6},
-      {type = "item", name = "sp-lossless-power-conector", amount = 20},
+      {type = "item", name = "sp-lossless-power-connector", amount = 20},
       {type = "item", name = "sp-extreme-heat-source", amount = 6},
       {type = "item", name = "sp-proton-neutron-superconductor", amount = 12},
       {type = "item", name = "sp-miniaturized-stellar-bridge", amount = 1},
@@ -4954,13 +4954,201 @@ data:extend({
       {type = "item", name = "sp-vitality-prism", amount = 1},
       {type = "fluid", name = "sp-perchloric-acid", amount = 100},
       {type = "item", name = "sp-femto-navigator", amount = 140},
-      {type = "item", name = "sp-urea", amount = 1},
-      {type = "item", name = "sp-graphene", amount = 5},
+      -- {type = "item", name = "sp-urea", amount = 1},  -- If i add this the recipe dissapears from FNEI and from the kr-bio-lab
+      -- {type = "item", name = "sp-graphene", amount = 5},  -- If i add this the recipe dissapears from FNEI and from the kr-bio-lab
       {type = "item", name = "sp-grobgnum-optics", amount = 1},
+      -- {type = "item", name = "sp-quantum-foam", amount = 5},  -- If i add this the recipe dissapears from FNEI and from the kr-bio-lab
+      -- {type = "item", name = "sp-gravitonium", amount = 7},  -- If i add this the recipe dissapears from FNEI and from the kr-bio-lab
       -- Krastorio: {type = "item", name = "biomass", amount = 20},
     },
     results = {
       {type = "item", name = "sp-evolution-pulse-cell", amount = 70}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-antimatter-engine",  -- #ForRegEx# - recipe
+    category = "alien-tech-manufacturing",
+    enabled = false,
+    energy_required = 100,
+    ingredients = {
+      {type = "item", name = "sp-proton-neutron-superconductor", amount = 6},
+      {type = "item", name = "sp-frictionless-bearing", amount = 8},
+      {type = "item", name = "sp-rukite-gearbox", amount = 1},
+      {type = "item", name = "sp-blunagium-yemnuth-beam", amount = 4},
+      {type = "item", name = "sp-imersite-rukite-beam", amount = 10},
+      {type = "item", name = "sp-ultra-durable-ceramics", amount = 16},
+      {type = "item", name = "sp-radiation-channeler", amount = 2},
+      {type = "item", name = "sp-dark-energy-harvester", amount = 1},
+      {type = "item", name = "sp-extreme-heat-source", amount = 1},
+      {type = "item", name = "sp-lossless-power-connector", amount = 2},
+    },
+    results = {
+      {type = "item", name = "sp-antimatter-engine", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-dark-energy-harvester",  -- #ForRegEx# - recipe
+    category = "alien-tech-manufacturing",
+    enabled = false,
+    energy_required = 75,
+    ingredients = {
+      {type = "item", name = "sp-quark-gluon-probe", amount = 30},
+      {type = "item", name = "sp-neutrino-charger", amount = 4},
+      {type = "item", name = "sp-radiant-glass", amount = 2},
+      {type = "item", name = "sp-grobgnum-rukite-beam", amount = 2},
+      {type = "item", name = "sp-gravitonium", amount = 1},
+      -- Krastorio: {type = "fluid", name = "matter", amount = 100},
+    },
+    results = {
+      {type = "item", name = "sp-dark-energy-harvester", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-dark-matter-field-generator",  -- #ForRegEx# - recipe
+    category = "alien-tech-manufacturing",
+    enabled = false,
+    energy_required = 150,
+    ingredients = {
+      {type = "item", name = "sp-antimatter-engine", amount = 2},
+      {type = "item", name = "sp-miniaturized-stellar-bridge", amount = 1},
+      {type = "item", name = "sp-information-cube", amount = 1},
+      {type = "item", name = "sp-gravitational-wave-bridge", amount = 4},
+      {type = "item", name = "sp-sideral-seal", amount = 4},
+    },
+    results = {
+      {type = "item", name = "sp-dark-matter-field-generator", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-hadron-beam-charger",  -- #ForRegEx# - recipe
+    category = "alien-tech-manufacturing",
+    enabled = false,
+    energy_required = 60,
+    ingredients = {
+      {type = "item", name = "sp-energy-channeler", amount = 1},
+      {type = "item", name = "sp-radiation-channeler", amount = 1},
+      {type = "item", name = "sp-sideral-seal", amount = 1},
+      {type = "item", name = "sp-proton-neutron-superconductor", amount = 2},
+      {type = "item", name = "sp-quantum-capacitor", amount = 2},
+      {type = "item", name = "sp-ultra-durable-ceramics", amount = 4},
+    },
+    results = {
+      {type = "item", name = "sp-hadron-beam-charger", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-interdimensional-prism-chamber",  -- #ForRegEx# - recipe
+    category = "alien-tech-manufacturing",
+    enabled = false,
+    energy_required = 100,
+    ingredients = {
+      {type = "item", name = "sp-blunagium-imersite-slab", amount = 1},
+      {type = "item", name = "sp-radiant-glass", amount = 1},
+      {type = "item", name = "sp-blunagium-plate", amount = 1},
+      {type = "item", name = "sp-extreme-heat-source", amount = 1},
+      {type = "item", name = "sp-extreme-data-transfer-controller", amount = 1},
+      -- Krastorio: {type = "item", name = "imersite-crystal", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-interdimensional-prism-chamber", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-omni-pulse-generator",  -- #ForRegEx# - recipe
+    category = "alien-tech-manufacturing",
+    enabled = false,
+    energy_required = 80,
+    ingredients = {
+      {type = "item", name = "sp-interdimensional-prism-chamber", amount = 1},
+      {type = "item", name = "sp-sideral-compute-core", amount = 1},
+      {type = "item", name = "sp-relativity-condenser", amount = 1},
+      {type = "item", name = "sp-blunagium-yemnuth-beam", amount = 12},
+      {type = "item", name = "sp-grobgnum-rukite-beam", amount = 10},
+    },
+    results = {
+      {type = "item", name = "sp-omni-pulse-generator", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-quark-gluon-plasma-container",  -- #ForRegEx# - recipe
+    category = "alien-tech-manufacturing",
+    enabled = false,
+    energy_required = 12,
+    ingredients = {
+      {type = "item", name = "sp-radiant-glass", amount = 3},
+      {type = "item", name = "sp-grobgnum-rukite-beam", amount = 1},
+      {type = "item", name = "sp-rukite-powder", amount = 1},
+      {type = "item", name = "sp-energy-channeler", amount = 2},
+      {type = "fluid", name = "sp-xenon", amount = 10},
+    },
+    results = {
+      {type = "item", name = "sp-quark-gluon-plasma-container", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-quark-gluon-probe",  -- #ForRegEx# - recipe
+    category = "alien-tech-manufacturing",
+    enabled = false,
+    energy_required = 120,
+    ingredients = {
+      {type = "item", name = "sp-femto-navigator", amount = 80},
+      {type = "item", name = "sp-grobgnum-rukite-beam", amount = 1},
+      {type = "item", name = "sp-nanowire", amount = 8},
+      {type = "item", name = "sp-synaptic-core-chip", amount = 1},
+      {type = "item", name = "sp-neuropulse-module", amount = 1},
+      {type = "item", name = "sp-grobgnum-optics", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-quark-gluon-probe", amount = 80}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-relativity-condenser",  -- #ForRegEx# - recipe
+    category = "alien-tech-manufacturing",
+    enabled = false,
+    energy_required = 100,
+    ingredients = {
+      {type = "item", name = "sp-subatomic-condenser", amount = 4},
+      {type = "item", name = "sp-quantized-compute-unit", amount = 12},
+      {type = "item", name = "sp-energy-channeler", amount = 4},
+      {type = "item", name = "sp-hadron-beam-charger", amount = 6},
+      {type = "item", name = "sp-sideral-seal", amount = 12},
+      {type = "item", name = "sp-gravitational-wave-bridge", amount = 12},
+    },
+    results = {
+      {type = "item", name = "sp-relativity-condenser", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-sideral-compute-core",  -- #ForRegEx# - recipe
+    category = "alien-tech-manufacturing",
+    enabled = false,
+    energy_required = 180,
+    ingredients = {
+      {type = "item", name = "sp-information-cube", amount = 1},
+      {type = "item", name = "sp-vortex-core", amount = 1},
+      {type = "item", name = "sp-boson-blossom", amount = 18},
+      {type = "item", name = "sp-quantum-data-plane", amount = 50},
+      {type = "item", name = "sp-quantum-capacitor", amount = 30},
+      {type = "item", name = "sp-blunagium-imersite-slab", amount = 18},
+      {type = "item", name = "sp-evolution-cell-container", amount = 100},
+      {type = "item", name = "sp-sideral-seal", amount = 18},
+      {type = "item", name = "sp-neutrino-charger", amount = 25},
+      {type = "item", name = "sp-quark-gluon-probe", amount = 200},
+      {type = "item", name = "sp-quark-gluon-plasma-container", amount = 18},
+    },
+    results = {
+      {type = "item", name = "sp-sideral-compute-core", amount = 1}
     }
   },
   ------------------------------------------------------------------------------
@@ -6581,6 +6769,23 @@ data:extend({
     },
     result_count = 40,
     result = "sp-utility-science-pack-3"
+  },
+  {
+    type = "recipe",
+    name = "sp-uniformity-science-pack",
+    category = "crafting",
+    enabled = false,
+    energy_required = 192,
+    ingredients =
+    {
+      {"sp-antimatter-engine", 4},
+      {"sp-interdimensional-prism-chamber", 40},
+      {"sp-hadron-beam-charger", 20},
+      {"sp-sideral-compute-core", 1},
+      -- Krastorio: {"matter-cube", 1}
+    },
+    result_count = 40,
+    result = "sp-uniformity-science-pack"
   },
   ------------------------------------------------------------------------------
   -- Alternate recipes for vanilla items

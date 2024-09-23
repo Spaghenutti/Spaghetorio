@@ -386,7 +386,7 @@ Other stuff from chat gpt:
   - Kinetic K-37: A device for converting kinetic energy into other forms of energy
   - Luminex LX-39: A device for emitting and controlling light
   - Morphix MX-41: A device for changing shape and form
-  - NanoWire NW-43: A nanoscale wire for connecting and transmitting signals
+  - NanoWire NW-43: A nanoscale wire for conecting and transmitting signals
   - Optix OX-45: A device for manipulating and bending light
   - Pulse PU-47: A device for generating and sending pulses of energy
   - Quantum Q-49: A device for exploiting quantum phenomena and effects

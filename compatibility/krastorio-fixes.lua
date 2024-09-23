@@ -101,7 +101,7 @@ data.raw.tool["singularity-tech-card"].subgroup = "futuristic-science"
 -- Change order of science items
 data.raw.tool["production-science-pack"].order = "j[production-science-pack]"  -- Done here due to krastorio changing the order
 data.raw.tool["utility-science-pack"].order = "k[utility-science-pack]"  -- Done here due to krastorio changing the order
-data.raw.tool["matter-tech-card"].order = "l[matter-tech-card]"
+data.raw.tool["matter-tech-card"].order = "m[matter-tech-card]"
 
 -- Change order of autoplace control
 data.raw["autoplace-control"]["rare-metals"].order = "b[rare-metals]"

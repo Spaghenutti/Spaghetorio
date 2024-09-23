@@ -279,6 +279,7 @@ table.insert(data.raw.lab["kr-singularity-lab"].inputs, "matter-tech-card")
 table.insert(data.raw.lab["kr-singularity-lab"].inputs, "space-science-pack")  -- Optimization tech card
 table.insert(data.raw.lab["kr-singularity-lab"].inputs, "advanced-tech-card")
 table.insert(data.raw.lab["kr-singularity-lab"].inputs, "singularity-tech-card")
+table.insert(data.raw.lab["kr-singularity-lab"].inputs, "sp-uniformity-science-pack")
 
 -- Hide recipes from player
 -- can't find remanining recipe for wood

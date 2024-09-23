@@ -1291,8 +1291,8 @@ table.insert(data.raw.recipe["sp-blunagium-imersite-slab"].ingredients, {type = 
 table.insert(data.raw.recipe["sp-radiant-glass"].ingredients, {type = "item", name = "imersite-crystal", amount = 2})
 table.insert(data.raw.recipe["sp-radiant-glass"].ingredients, {type = "item", name = "imersite-powder", amount = 1})
 table.insert(data.raw.recipe["sp-evolution-pulse-cell"].ingredients, {type = "item", name = "biomass", amount = 20})
+table.insert(data.raw.recipe["sp-dark-energy-harvester"].ingredients, {type = "fluid", name = "matter", amount = 100})
 table.insert(data.raw.recipe["sp-productivity-module-4"].ingredients, {type = "item", name = "energy-control-unit", amount = 5})
-
 table.insert(data.raw.recipe["sp-geological-science-pack-1"].ingredients, {type = "item", name = "quartz", amount = 5})
 table.insert(data.raw.recipe["sp-geological-science-pack-1"].ingredients, {type = "item", name = "sand", amount = 10})
 table.insert(data.raw.recipe["sp-material-science-pack-1"].ingredients, {type = "item", name = "steel-beam", amount = 3})
@@ -1314,6 +1314,7 @@ table.insert(data.raw.recipe["sp-utility-science-pack-3"].ingredients, {type = "
 table.insert(data.raw.recipe["sp-utility-science-pack-3"].ingredients, {type = "item", name = "kr-bio-lab", amount = 4})
 table.insert(data.raw.recipe["sp-utility-science-pack-3"].ingredients, {type = "item", name = "kr-fuel-refinery", amount = 2})
 table.insert(data.raw.recipe["sp-utility-science-pack-3"].ingredients, {type = "item", name = "kr-quarry-drill", amount = 1})
+table.insert(data.raw.recipe["sp-uniformity-science-pack"].ingredients, {type = "item", name = "matter-cube", amount = 1})
 
 -- MARK: Add missing ingredients from recipe-changes.lua
 table.insert(data.raw.recipe["concrete"].normal.ingredients, {"sand", 5})

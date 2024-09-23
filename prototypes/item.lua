@@ -3194,12 +3194,12 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-lossless-power-conector",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/icons/lossless-power-conector.png",
+    name = "sp-lossless-power-connector",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/lossless-power-connector.png",
     icon_size = 64,
     scale = 0.25,
     subgroup = "advanced-alien-product",
-    order = "[lossless-power-conector]",
+    order = "[lossless-power-connector]",
     stack_size = 100
   },
   {
@@ -3374,13 +3374,13 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-dark-mater-field-generator",  -- #ForRegEx# - item
-    icon = "__Spaghenutti__/graphics/icons/dark-mater-field-generator.png",
+    name = "sp-dark-matter-field-generator",  -- #ForRegEx# - item
+    icon = "__Spaghenutti__/graphics/icons/dark-matter-field-generator.png",
     icon_size = 64,
     scale = 0.25,
     subgroup = "advanced-alien-product",
-    order = "[dark-mater-field-generator]",
-    stack_size = 50
+    order = "[dark-matter-field-generator]",
+    stack_size = 10
   },
   ------------------------------------------------------------------------------
   -- MARK: fuel-processing
@@ -3984,6 +3984,22 @@ data:extend({
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "advanced-science",
     order = "l[utility-science-pack]",
+    stack_size = 200,
+    durability = 1,
+    durability_description_key = "description.science-pack-remaining-amount-key",
+    durability_description_value = "description.science-pack-remaining-amount-value"
+  },
+  ------------------------------------------------------------------------------
+  -- MARK: futuristic-science
+  ------------------------------------------------------------------------------
+  {
+    type = "tool",
+    name = "sp-uniformity-science-pack",  -- #ForRegEx# - tool
+    localised_description = {"item-description.science-pack"},
+    icon = "__Spaghenutti__/graphics/icons/uniformity-science-pack.png",
+    icon_size = 64, icon_mipmaps = 4,
+    subgroup = "futuristic-science",
+    order = "[uniformity-science-pack]",
     stack_size = 200,
     durability = 1,
     durability_description_key = "description.science-pack-remaining-amount-key",

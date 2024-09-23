@@ -4636,8 +4636,7 @@ data:extend({
     },
     prerequisites = {
       "sp-advanced-quantum-technology",
-      "sp-extreme-heat-source",
-      "sp-alien-genetics"
+      "sp-extreme-heat-source"
     },
     unit =
     {
@@ -4715,7 +4714,7 @@ data:extend({
     {
       {
         type = "unlock-recipe",
-        recipe = "sp-lossless-power-conector"
+        recipe = "sp-lossless-power-connector"
       },
       {
         type = "unlock-recipe",
@@ -4858,6 +4857,187 @@ data:extend({
         {"space-science-pack", 1},
         -- Krastorio: {"matter-tech-card", 1},
         -- Krastorio: {"advanced-tech-card", 1}
+      },
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-sideral-computing",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghenutti__/graphics/hr-icons/sideral-compute-core.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-sideral-compute-core"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-quark-gluon-plasma-container"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-quark-gluon-probe"
+      }
+    },
+    prerequisites = {
+      "sp-star-stabilization"
+    },
+    unit =
+    {
+      count = 3000,
+      ingredients = {
+        {"sp-automation-science-pack-3", 1},
+        {"sp-logistic-science-pack-3", 1},
+        {"sp-chemical-science-pack-3", 1},
+        {"sp-electronic-science-pack-3", 1},
+        {"sp-geological-science-pack-3", 1},
+        {"sp-material-science-pack-3", 1},
+        {"sp-computer-science-pack-3", 1},
+        {"sp-production-science-pack-3", 1},
+        {"sp-nuclear-science-pack-3", 1},
+        {"sp-astronomical-science-pack-3", 1},
+        {"sp-utility-science-pack-3", 1},
+        {"space-science-pack", 1},
+        -- Krastorio: {"matter-tech-card", 1},
+        -- Krastorio: {"advanced-tech-card", 1},
+        -- Krastorio: {"singularity-tech-card", 1}
+      },
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-relativity-condenser",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghenutti__/graphics/hr-icons/relativity-condenser.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-relativity-condenser"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-hadron-beam-charger"
+      },
+    },
+    prerequisites = {
+      "sp-star-stabilization"
+    },
+    unit =
+    {
+      count = 1500,
+      ingredients = {
+        {"sp-automation-science-pack-3", 1},
+        {"sp-logistic-science-pack-3", 1},
+        {"sp-chemical-science-pack-3", 1},
+        {"sp-electronic-science-pack-3", 1},
+        {"sp-geological-science-pack-3", 1},
+        {"sp-material-science-pack-3", 1},
+        {"sp-computer-science-pack-3", 1},
+        {"sp-production-science-pack-3", 1},
+        {"sp-nuclear-science-pack-3", 1},
+        {"sp-astronomical-science-pack-3", 1},
+        {"sp-utility-science-pack-3", 1},
+        {"space-science-pack", 1},
+        -- Krastorio: {"matter-tech-card", 1},
+        -- Krastorio: {"advanced-tech-card", 1},
+        -- Krastorio: {"singularity-tech-card", 1}
+      },
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-omni-pulse-generator",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghenutti__/graphics/hr-icons/omni-pulse-generator.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-interdimensional-prism-chamber"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-omni-pulse-generator"
+      },
+    },
+    prerequisites = {
+      "sp-relativity-condenser",
+      "sp-sideral-computing"
+    },
+    unit =
+    {
+      count = 4000,
+      ingredients = {
+        {"sp-automation-science-pack-3", 1},
+        {"sp-logistic-science-pack-3", 1},
+        {"sp-chemical-science-pack-3", 1},
+        {"sp-electronic-science-pack-3", 1},
+        {"sp-geological-science-pack-3", 1},
+        {"sp-material-science-pack-3", 1},
+        {"sp-computer-science-pack-3", 1},
+        {"sp-production-science-pack-3", 1},
+        {"sp-nuclear-science-pack-3", 1},
+        {"sp-astronomical-science-pack-3", 1},
+        {"sp-utility-science-pack-3", 1},
+        {"space-science-pack", 1},
+        -- Krastorio: {"matter-tech-card", 1},
+        -- Krastorio: {"advanced-tech-card", 1},
+        -- Krastorio: {"singularity-tech-card", 1}
+      },
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-dark-matter",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghenutti__/graphics/hr-icons/antimatter-engine.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-antimatter-engine"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-dark-energy-harvester"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-dark-matter-field-generator"
+      },
+    },
+    prerequisites = {
+      "sp-sideral-computing"
+    },
+    unit =
+    {
+      count = 2000,
+      ingredients = {
+        {"sp-automation-science-pack-3", 1},
+        {"sp-logistic-science-pack-3", 1},
+        {"sp-chemical-science-pack-3", 1},
+        {"sp-electronic-science-pack-3", 1},
+        {"sp-geological-science-pack-3", 1},
+        {"sp-material-science-pack-3", 1},
+        {"sp-computer-science-pack-3", 1},
+        {"sp-production-science-pack-3", 1},
+        {"sp-nuclear-science-pack-3", 1},
+        {"sp-astronomical-science-pack-3", 1},
+        {"sp-utility-science-pack-3", 1},
+        {"space-science-pack", 1},
+        -- Krastorio: {"matter-tech-card", 1},
+        -- Krastorio: {"advanced-tech-card", 1},
+        -- Krastorio: {"singularity-tech-card", 1}
       },
       time = 15
     },
@@ -6013,6 +6193,46 @@ data:extend({
         {"sp-nuclear-science-pack-3", 1},
         {"sp-computer-science-pack-3", 1},
         {"utility-science-pack", 1},
+      },
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-uniformity-science-pack",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghenutti__/graphics/hr-icons/uniformity-science-pack.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-uniformity-science-pack"
+      },
+    },
+    prerequisites = {
+      "sp-omni-pulse-generator",
+      "sp-dark-matter",
+    },
+    unit =
+    {
+      count = 2500,
+      ingredients = {
+        {"sp-automation-science-pack-3", 1},
+        {"sp-logistic-science-pack-3", 1},
+        {"sp-chemical-science-pack-3", 1},
+        {"sp-electronic-science-pack-3", 1},
+        {"sp-geological-science-pack-3", 1},
+        {"sp-material-science-pack-3", 1},
+        {"sp-computer-science-pack-3", 1},
+        {"sp-production-science-pack-3", 1},
+        {"sp-nuclear-science-pack-3", 1},
+        {"sp-astronomical-science-pack-3", 1},
+        {"sp-utility-science-pack-3", 1},
+        {"space-science-pack", 1},
+        -- Krastorio: {"matter-tech-card", 1},
+        -- Krastorio: {"advanced-tech-card", 1},
+        -- Krastorio: {"singularity-tech-card", 1}
       },
       time = 15
     },
