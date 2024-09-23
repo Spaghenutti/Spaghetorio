@@ -174,6 +174,7 @@ data.raw.technology["automation-2"].unit.ingredients = {
 
 table.insert(data.raw.technology["automation-3"].prerequisites, "sp-advanced-gearbox")
 table.insert(data.raw.technology["automation-3"].prerequisites, "sp-optical-sensor")
+table.insert(data.raw.technology["automation-3"].prerequisites, "sp-servo-motor")
 data.raw.technology["automation-3"].unit.ingredients = {
   {"sp-logistic-science-pack-2", 1},
   {"sp-material-science-pack-2", 1},

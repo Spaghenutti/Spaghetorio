@@ -5536,7 +5536,8 @@ data:extend({
       },
     },
     prerequisites = {
-      "sp-automation-science-pack-2"
+      "sp-automation-science-pack-2",
+      "sp-servo-motor"
     },
     unit =
     {
@@ -5848,7 +5849,6 @@ data:extend({
       },
     },
     prerequisites = {
-      "sp-servo-motor",
       "sp-automation-science-pack-3"
     },
     unit =

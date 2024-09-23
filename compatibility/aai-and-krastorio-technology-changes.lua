@@ -1830,6 +1830,7 @@ data.raw.technology["kr-antimatter-reactor"].unit.ingredients = {
 data.raw.technology["kr-intergalactic-transceiver"].prerequisites = {
   "sp-uniformity-science-pack"
 }
+data.raw.technology["kr-antimatter-reactor"].unit.count = 10000
 data.raw.technology["kr-intergalactic-transceiver"].unit.ingredients = {
   {"sp-automation-science-pack-3", 1},
   {"sp-logistic-science-pack-3", 1},

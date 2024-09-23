@@ -6414,7 +6414,8 @@ data:extend({
     -- Krastorio: {"electric-engine-unit", 5}, {"engine-unit", 2}, {"automation-core", 10}
     {
       {"logistic-science-pack", 20},
-      {"sp-electromagnet", 8}
+      {"sp-electromagnet", 8},
+      {"sp-servo-motor", 8},
     },
     result_count = 5,
     result = "sp-logistic-science-pack-2"
