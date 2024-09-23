@@ -198,17 +198,49 @@ util.change_recipe_ingredients("advanced-tech-card",
   40,
   60)
 
+data.raw.recipe["singularity-tech-card"].icon = "__Krastorio2Assets__/icons/cards/singularity-tech-card.png"
+data.raw.recipe["singularity-tech-card"].icon_size = 64
+data.raw.recipe["singularity-tech-card"].mip_maps = 4
+data.raw.recipe["singularity-tech-card"].category = "matter-items"
+data.raw.recipe["singularity-tech-card"].subgroup = "futuristic-science"
+data.raw.recipe["singularity-tech-card"].allow_productivity = false
 util.change_recipe_ingredients("singularity-tech-card",
   {
-    {"copper-plate", 69},
-    {"blank-tech-card", 5}
+    {"sp-miniaturized-star-core-stabilizer", 1},
+    {"sp-subatomic-condenser", 5},
+    {"sp-alpha-wave-tray-array", 5},
+    {"sp-femto-navigator", 200},
+    {type = "fluid", name = "matter", amount = 100},
+    {"charged-matter-stabilizer", 5},
+    {"sp-blunagium-acrosphere-2", 1},
+    {"sp-grobgnum-acrosphere-2", 1},
+    {"sp-rukite-acrosphere-2", 1},
+    {"sp-yemnuth-acrosphere-2", 1},
+    {"blank-tech-card", 20}
   },
   {
-    {"copper-plate", 69},
-    {"blank-tech-card", 5}
+    {"sp-miniaturized-star-core-stabilizer", 1},
+    {"sp-subatomic-condenser", 8},
+    {"sp-alpha-wave-tray-array", 10},
+    {"sp-femto-navigator", 400},
+    {type = "fluid", name = "matter", amount = 200},
+    {"charged-matter-stabilizer", 5},
+    {"sp-blunagium-acrosphere-2", 1},
+    {"sp-grobgnum-acrosphere-2", 1},
+    {"sp-rukite-acrosphere-2", 1},
+    {"sp-yemnuth-acrosphere-2", 1},
+    {"blank-tech-card", 20}
   },
-  20,
-  30)
+  180,
+  360)
+data.raw.recipe["singularity-tech-card"].results = {
+  {type = "item", name = "singularity-tech-card", amount = 20},
+  {type = "item", name = "matter-stabilizer", amount = 5},
+  {type = "item", name = "sp-corrupted-acrosphere-1", probability = 0.25, amount = 1},
+  {type = "item", name = "sp-corrupted-acrosphere-2", probability = 0.25, amount = 1},
+  {type = "item", name = "sp-corrupted-acrosphere-3", probability = 0.25, amount = 1},
+  {type = "item", name = "sp-corrupted-acrosphere-4", probability = 0.25, amount = 1},
+}
 
 -- Lab inputs
 table.insert(data.raw.lab["lab"].inputs, "sp-electronic-science-pack-1")

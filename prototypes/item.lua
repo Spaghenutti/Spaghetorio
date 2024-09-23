@@ -2724,7 +2724,7 @@ data:extend({
     scale = 0.25,
     subgroup = "alien-product",
     order = "[nanowire]",
-    stack_size = 100
+    stack_size = 1000
   },
   {
     type = "item",
@@ -2764,7 +2764,7 @@ data:extend({
     scale = 0.25,
     subgroup = "alien-product",
     order = "[nanoflex]",
-    stack_size = 100
+    stack_size = 1000
   },
   {
     type = "item",
@@ -2787,7 +2787,7 @@ data:extend({
     scale = 0.25,
     subgroup = "intermediate-alien-product",
     order = "b[gravitational-wave-bridge]",
-    stack_size = 10
+    stack_size = 100
   },
   {
     type = "item",
@@ -2797,7 +2797,7 @@ data:extend({
     scale = 0.25,
     subgroup = "intermediate-alien-product",
     order = "b[gravitational-wave-interferometer]",
-    stack_size = 10
+    stack_size = 400
   },
   {
     type = "item",
@@ -2807,7 +2807,7 @@ data:extend({
     scale = 0.25,
     subgroup = "intermediate-alien-product",
     order = "b[gravitational-wave-splitter]",
-    stack_size = 10
+    stack_size = 100
   },
   {
     type = "item",
@@ -2817,7 +2817,7 @@ data:extend({
     scale = 0.25,
     subgroup = "intermediate-alien-product",
     order = "b[blunagium-solenoid]",
-    stack_size = 10
+    stack_size = 100
   },
   {
     type = "item",
@@ -2827,7 +2827,7 @@ data:extend({
     scale = 0.25,
     subgroup = "intermediate-alien-product",
     order = "b[boson-blossom]",
-    stack_size = 10
+    stack_size = 100
   },
   {
     type = "item",
@@ -2837,7 +2837,7 @@ data:extend({
     scale = 0.25,
     subgroup = "intermediate-alien-product",
     order = "g[grobgnum-optics]",
-    stack_size = 10
+    stack_size = 100
   },
   {
     type = "item",
@@ -2847,7 +2847,7 @@ data:extend({
     scale = 0.25,
     subgroup = "intermediate-alien-product",
     order = "g[bio-capacitor]",
-    stack_size = 10
+    stack_size = 100
   },
   {
     type = "item",
@@ -2857,7 +2857,7 @@ data:extend({
     scale = 0.25,
     subgroup = "intermediate-alien-product",
     order = "g[neuropulse-module]",
-    stack_size = 10
+    stack_size = 100
   },
   {
     type = "item",
@@ -2867,7 +2867,7 @@ data:extend({
     scale = 0.25,
     subgroup = "intermediate-alien-product",
     order = "g[neural-fusion-card]",
-    stack_size = 10
+    stack_size = 100
   },
   {
     type = "item",
@@ -2877,7 +2877,7 @@ data:extend({
     scale = 0.25,
     subgroup = "intermediate-alien-product",
     order = "g[synaptic-core-chip]",
-    stack_size = 10
+    stack_size = 100
   },
   {
     type = "item",
@@ -2887,7 +2887,7 @@ data:extend({
     scale = 0.25,
     subgroup = "intermediate-alien-product",
     order = "i[alpha-wave-tray-array]",
-    stack_size = 10
+    stack_size = 50
   },
   {
     type = "item",
@@ -2897,7 +2897,7 @@ data:extend({
     scale = 0.25,
     subgroup = "intermediate-alien-product",
     order = "i[radiation-channeler]",
-    stack_size = 10
+    stack_size = 100
   },
   {
     type = "item",
@@ -2907,7 +2907,7 @@ data:extend({
     scale = 0.25,
     subgroup = "intermediate-alien-product",
     order = "i[ultra-violet-processor]",
-    stack_size = 10
+    stack_size = 100
   },
   {
     type = "item",
@@ -2927,7 +2927,7 @@ data:extend({
     scale = 0.25,
     subgroup = "intermediate-alien-product",
     order = "r[graphene-chip]",
-    stack_size = 10
+    stack_size = 100
   },
   {
     type = "item",
@@ -2937,7 +2937,7 @@ data:extend({
     scale = 0.25,
     subgroup = "intermediate-alien-product",
     order = "r[rukite-gearbox]",
-    stack_size = 10
+    stack_size = 100
   },
   {
     type = "item",
@@ -2947,7 +2947,7 @@ data:extend({
     scale = 0.25,
     subgroup = "intermediate-alien-product",
     order = "r[rukite-gear-wheel]",
-    stack_size = 10
+    stack_size = 100
   },
   {
     type = "item",
@@ -2957,7 +2957,7 @@ data:extend({
     scale = 0.25,
     subgroup = "intermediate-alien-product",
     order = "r[holo-grip-controller]",
-    stack_size = 10
+    stack_size = 100
   },
   {
     type = "item",
@@ -2967,7 +2967,7 @@ data:extend({
     scale = 0.25,
     subgroup = "intermediate-alien-product",
     order = "y[neutrino-stream-source]",
-    stack_size = 10
+    stack_size = 2000
   },
   {
     type = "item",
@@ -2977,7 +2977,7 @@ data:extend({
     scale = 0.25,
     subgroup = "intermediate-alien-product",
     order = "y[collapsed-orbitals]",
-    stack_size = 10
+    stack_size = 2000
   },
   {
     type = "item",
@@ -2987,7 +2987,7 @@ data:extend({
     scale = 0.25,
     subgroup = "intermediate-alien-product",
     order = "y[entangled-leptons]",
-    stack_size = 10
+    stack_size = 2000
   },
   {
     type = "item",
@@ -2997,7 +2997,7 @@ data:extend({
     scale = 0.25,
     subgroup = "intermediate-alien-product",
     order = "y[gluon-orb]",
-    stack_size = 10
+    stack_size = 2000
   },
   {
     type = "item",
@@ -3007,7 +3007,7 @@ data:extend({
     scale = 0.25,
     subgroup = "intermediate-alien-product",
     order = "y[quantum-tube]",
-    stack_size = 10
+    stack_size = 100
   },
   {
     type = "item",
@@ -3017,7 +3017,7 @@ data:extend({
     scale = 0.25,
     subgroup = "intermediate-alien-product",
     order = "y[orbital-cell]",
-    stack_size = 10
+    stack_size = 100
   },
   {
     type = "item",
@@ -3027,7 +3027,7 @@ data:extend({
     scale = 0.25,
     subgroup = "intermediate-alien-product",
     order = "y[quark-sphere]",
-    stack_size = 10
+    stack_size = 2000
   },
   {
     type = "item",
@@ -3037,7 +3037,7 @@ data:extend({
     scale = 0.25,
     subgroup = "intermediate-alien-product",
     order = "y[femto-navigator]",
-    stack_size = 10
+    stack_size = 2000
   },
   {
     type = "item",
@@ -3047,7 +3047,7 @@ data:extend({
     scale = 0.25,
     subgroup = "intermediate-alien-product",
     order = "y[energy-channeler]",
-    stack_size = 10
+    stack_size = 50
   },
   {
     type = "item",
@@ -3057,7 +3057,7 @@ data:extend({
     scale = 0.25,
     subgroup = "intermediate-alien-product",
     order = "y[quantized-compute-unit]",
-    stack_size = 10
+    stack_size = 100
   },
   {
     type = "item",
@@ -3067,7 +3067,7 @@ data:extend({
     scale = 0.25,
     subgroup = "intermediate-alien-product",
     order = "y[quantized-orbital-flower]",
-    stack_size = 10
+    stack_size = 100
   },
   {
     type = "item",
@@ -3077,7 +3077,7 @@ data:extend({
     scale = 0.25,
     subgroup = "intermediate-alien-product",
     order = "y[trapped-quantum-energy]",
-    stack_size = 10
+    stack_size = 2000
   },
   {
     type = "item",
@@ -3087,7 +3087,7 @@ data:extend({
     scale = 0.25,
     subgroup = "intermediate-alien-product",
     order = "z[frictionless-bearing]",
-    stack_size = 10
+    stack_size = 100
   },
   {
     type = "item",
@@ -3097,7 +3097,7 @@ data:extend({
     scale = 0.25,
     subgroup = "intermediate-alien-product",
     order = "z[frictionless-joint]",
-    stack_size = 10
+    stack_size = 100
   },
   ------------------------------------------------------------------------------
   -- MARK: advanced-alien-product
@@ -3110,7 +3110,7 @@ data:extend({
     scale = 0.25,
     subgroup = "advanced-alien-product",
     order = "[extreme-data-transfer-controller]",
-    stack_size = 10
+    stack_size = 50
   },
   {
     type = "item",
@@ -3130,7 +3130,7 @@ data:extend({
     scale = 0.25,
     subgroup = "advanced-alien-product",
     order = "[universal-storage-drive]",
-    stack_size = 10
+    stack_size = 50
   },
   {
     type = "item",
@@ -3160,7 +3160,7 @@ data:extend({
     scale = 0.25,
     subgroup = "advanced-alien-product",
     order = "[quantum-capacitor]",
-    stack_size = 10
+    stack_size = 1000
   },
   {
     type = "item",
@@ -3170,7 +3170,7 @@ data:extend({
     scale = 0.25,
     subgroup = "advanced-alien-product",
     order = "[proton-neutron-frame]",
-    stack_size = 10
+    stack_size = 400
   },
   {
     type = "item",
@@ -3180,7 +3180,7 @@ data:extend({
     scale = 0.25,
     subgroup = "advanced-alien-product",
     order = "[proton-neutron-superconductor]",
-    stack_size = 10
+    stack_size = 100
   },
   {
     type = "item",
@@ -3190,7 +3190,7 @@ data:extend({
     scale = 0.25,
     subgroup = "advanced-alien-product",
     order = "[quantized-protons]",
-    stack_size = 10
+    stack_size = 2000
   },
   {
     type = "item",
@@ -3200,7 +3200,7 @@ data:extend({
     scale = 0.25,
     subgroup = "advanced-alien-product",
     order = "[lossless-power-conector]",
-    stack_size = 10
+    stack_size = 100
   },
   {
     type = "item",
@@ -3220,7 +3220,7 @@ data:extend({
     scale = 0.25,
     subgroup = "advanced-alien-product",
     order = "[miniaturized-stellar-bridge]",
-    stack_size = 10
+    stack_size = 50
   },
   {
     type = "item",
@@ -3230,7 +3230,7 @@ data:extend({
     scale = 0.25,
     subgroup = "advanced-alien-product",
     order = "[neutrino-charger]",
-    stack_size = 10
+    stack_size = 100
   },
   {
     type = "item",
@@ -3240,7 +3240,7 @@ data:extend({
     scale = 0.25,
     subgroup = "advanced-alien-product",
     order = "[relativity-condenser]",
-    stack_size = 10
+    stack_size = 50
   },
   {
     type = "item",
@@ -3260,7 +3260,7 @@ data:extend({
     scale = 0.25,
     subgroup = "advanced-alien-product",
     order = "[quantum-relativity-compute-unit]",
-    stack_size = 10
+    stack_size = 50
   },
   {
     type = "item",
@@ -3270,7 +3270,7 @@ data:extend({
     scale = 0.25,
     subgroup = "advanced-alien-product",
     order = "[quark-gluon-probe]",
-    stack_size = 10
+    stack_size = 2000
   },
   {
     type = "item",
@@ -3280,7 +3280,7 @@ data:extend({
     scale = 0.25,
     subgroup = "advanced-alien-product",
     order = "[sideral-seal]",
-    stack_size = 10
+    stack_size = 100
   },
   {
     type = "item",
@@ -3290,7 +3290,7 @@ data:extend({
     scale = 0.25,
     subgroup = "advanced-alien-product",
     order = "[evolution-cell-container]",
-    stack_size = 10
+    stack_size = 50
   },
   {
     type = "item",
@@ -3300,7 +3300,7 @@ data:extend({
     scale = 0.25,
     subgroup = "advanced-alien-product",
     order = "[evolution-pulse-cell]",
-    stack_size = 10
+    stack_size = 2000
   },
   {
     type = "item",
@@ -3310,7 +3310,7 @@ data:extend({
     scale = 0.25,
     subgroup = "advanced-alien-product",
     order = "[hadron-beam-charger]",
-    stack_size = 10
+    stack_size = 50
   },
   {
     type = "item",
@@ -3320,7 +3320,7 @@ data:extend({
     scale = 0.25,
     subgroup = "advanced-alien-product",
     order = "[quantum-stream-supply]",
-    stack_size = 10
+    stack_size = 50
   },
   {
     type = "item",
@@ -3330,7 +3330,7 @@ data:extend({
     scale = 0.25,
     subgroup = "advanced-alien-product",
     order = "[quantum-switch]",
-    stack_size = 10
+    stack_size = 100
   },
   {
     type = "item",
@@ -3340,7 +3340,7 @@ data:extend({
     scale = 0.25,
     subgroup = "advanced-alien-product",
     order = "[quark-gluon-plasma-container]",
-    stack_size = 10
+    stack_size = 50
   },
   {
     type = "item",
@@ -3350,7 +3350,7 @@ data:extend({
     scale = 0.25,
     subgroup = "advanced-alien-product",
     order = "[interdimensional-prism-chamber",
-    stack_size = 10
+    stack_size = 50
   },
   ------------------------------------------------------------------------------
   -- MARK: fuel-processing
