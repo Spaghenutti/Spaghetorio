@@ -4665,7 +4665,157 @@ data:extend({
     },
     order = "a-h-a"
   },
-  
+  {
+    type = "technology",
+    name = "sp-alien-crystal-refinment",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icons = util.combine_two_icons("__Spaghenutti__/graphics/hr-icons/blunagium-imersite-slab.png", 256, nil,
+                                   "__Spaghenutti__/graphics/hr-icons/radiant-glass.png", 256, nil),
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-blunagium-imersite-slab"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-radiant-glass"
+      }
+    },
+    prerequisites = {
+      "sp-advanced-quantum-technology",
+      "sp-extreme-heat-source"
+    },
+    unit =
+    {
+      count = 1600,
+      ingredients = {
+        {"sp-automation-science-pack-3", 1},
+        {"sp-logistic-science-pack-3", 1},
+        {"sp-chemical-science-pack-3", 1},
+        {"sp-electronic-science-pack-3", 1},
+        {"sp-geological-science-pack-3", 1},
+        {"sp-material-science-pack-3", 1},
+        {"sp-computer-science-pack-3", 1},
+        {"sp-production-science-pack-3", 1},
+        {"sp-nuclear-science-pack-3", 1},
+        {"sp-astronomical-science-pack-3", 1},
+        {"sp-utility-science-pack-3", 1},
+        {"space-science-pack", 1},
+        -- Krastorio: {"matter-tech-card", 1},
+        -- Krastorio: {"advanced-tech-card", 1}
+      },
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-star-stabilization",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghenutti__/graphics/hr-icons/miniaturized-star-core-stabilizer.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-lossless-power-conector"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-miniaturized-star-core-stabilizer"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-miniaturized-stellar-bridge"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-neutrino-charger"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-sideral-seal"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-energy-channeler"
+      }
+    },
+    prerequisites = {
+      "sp-advanced-quantum-technology",
+      "sp-extreme-heat-source",
+      "sp-alien-crystal-refinment"
+    },
+    unit =
+    {
+      count = 2000,
+      ingredients = {
+        {"sp-automation-science-pack-3", 1},
+        {"sp-logistic-science-pack-3", 1},
+        {"sp-chemical-science-pack-3", 1},
+        {"sp-electronic-science-pack-3", 1},
+        {"sp-geological-science-pack-3", 1},
+        {"sp-material-science-pack-3", 1},
+        {"sp-computer-science-pack-3", 1},
+        {"sp-production-science-pack-3", 1},
+        {"sp-nuclear-science-pack-3", 1},
+        {"sp-astronomical-science-pack-3", 1},
+        {"sp-utility-science-pack-3", 1},
+        {"space-science-pack", 1},
+        -- Krastorio: {"matter-tech-card", 1},
+        -- Krastorio: {"advanced-tech-card", 1}
+      },
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-sideral-computing",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghenutti__/graphics/hr-icons/information-cube.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-extreme-data-transfer-controller"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-information-cube"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-universal-storage-drive"
+      }
+    },
+    prerequisites = {
+      "sp-star-stabilization"
+    },
+    unit =
+    {
+      count = 4000,
+      ingredients = {
+        {"sp-automation-science-pack-3", 1},
+        {"sp-logistic-science-pack-3", 1},
+        {"sp-chemical-science-pack-3", 1},
+        {"sp-electronic-science-pack-3", 1},
+        {"sp-geological-science-pack-3", 1},
+        {"sp-material-science-pack-3", 1},
+        {"sp-computer-science-pack-3", 1},
+        {"sp-production-science-pack-3", 1},
+        {"sp-nuclear-science-pack-3", 1},
+        {"sp-astronomical-science-pack-3", 1},
+        {"sp-utility-science-pack-3", 1},
+        {"space-science-pack", 1},
+        -- Krastorio: {"matter-tech-card", 1},
+        -- Krastorio: {"advanced-tech-card", 1},
+        -- Krastorio: {"singularity-tech-card", 1}
+      },
+      time = 15
+    },
+    order = "a-h-a"
+  },
   ------------------------------------------------------------------------------
   -- Acrosphere conversion recipes
   -- MARK: Acrosphere technology
@@ -4795,14 +4945,27 @@ data:extend({
         recipe = "sp-acrovoid"
       },
     },
-    prerequisites = {"sp-upgrade-acrosphere-conversion"},
+    prerequisites = {
+      "sp-upgrade-acrosphere-conversion"
+    },
     unit =
     {
-      count = 100,
+      count = 10000,
       ingredients = {
-        {"basic-tech-card", 1},
-        {"automation-science-pack", 1},
-        {"logistic-science-pack", 1}
+        {"sp-automation-science-pack-3", 1},
+        {"sp-logistic-science-pack-3", 1},
+        {"sp-chemical-science-pack-3", 1},
+        {"sp-electronic-science-pack-3", 1},
+        {"sp-geological-science-pack-3", 1},
+        {"sp-material-science-pack-3", 1},
+        {"sp-computer-science-pack-3", 1},
+        {"sp-production-science-pack-3", 1},
+        {"sp-nuclear-science-pack-3", 1},
+        {"sp-astronomical-science-pack-3", 1},
+        {"sp-utility-science-pack-3", 1},
+        {"space-science-pack", 1},
+        -- Krastorio: {"matter-tech-card", 1},
+        -- Krastorio: {"advanced-tech-card", 1}
       },
       time = 15
     },

@@ -3989,6 +3989,42 @@ data:extend({
       {type = "item", name = "sp-charged-slab", amount = 1}
     }
   },
+  {
+    type = "recipe",
+    name = "sp-blunagium-imersite-slab",  -- #ForRegEx# - recipe
+    icon_size = 64,
+    mip_maps = 4,
+    category = "alien-tech-manufacturing",  -- Krastorio: category = "advanced-smelting"
+    enabled = false,
+    energy_required = 40,
+    ingredients = {
+      {type = "item", name = "sp-blunagium-plate", amount = 1},
+      {type = "item", name = "sp-blunagium-foam", amount = 2},
+      {type = "item", name = "sp-tantalum-billet", amount = 1},
+      -- Krastorio: {type = "item", name = "imersite-crystal", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-blunagium-imersite-slab", amount = 2}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-radiant-glass",  -- #ForRegEx# - recipe
+    icon_size = 64,
+    mip_maps = 4,
+    category = "alien-tech-manufacturing",  -- Krastorio: category = "advanced-smelting"
+    enabled = false,
+    energy_required = 50,
+    ingredients = {
+      -- Krastorio: {type = "item", name = "imersite-crystal", amount = 2},
+      -- Krastorio: {type = "item", name = "imersite-powder", amount = 1},
+      {type = "item", name = "sp-blunagium-bar", amount = 1},
+      {type = "item", name = "sp-quantum-crystal", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-radiant-glass", amount = 3}
+    }
+  },
   ------------------------------------------------------------------------------
   -- MARK: Alien tech manufacturing
   -- TODO: fix recipes by moving krastorio items to aai-and-krastorio-recipe.lua
@@ -4401,16 +4437,16 @@ data:extend({
     name = "sp-femto-navigator",  -- #ForRegEx# - recipe
     category = "matter-condensing",  -- Krastorio: "matter-items"
     enabled = false,
-    energy_required = 2,
+    energy_required = 5,
     ingredients = {
-      {type = "item", name = "sp-nanobot", amount = 1},
+      {type = "item", name = "sp-nanobot", amount = 10},
       {type = "item", name = "sp-neutrino-stream-source", amount = 1},
       {type = "item", name = "sp-nanoflex", amount = 1},
       {type = "item", name = "sp-nanowire", amount = 1},
       -- {type = "item", name = "imersite-powder", amount = 1},
     },
     results = {
-      {type = "item", name = "sp-femto-navigator", amount = 1}
+      {type = "item", name = "sp-femto-navigator", amount = 10}
     }
   },
   {
@@ -4670,7 +4706,7 @@ data:extend({
     ingredients = {
       {type = "item", name = "sp-proton-neutron-frame", amount = 240},
       {type = "item", name = "sp-quantized-protons", amount = 960},
-      {type = "item", name = "sp-extreme-heat-source", amount = 1},
+      {type = "item", name = "sp-extreme-heat-source", amount = 1}
     },
     results = {
       {type = "item", name = "sp-proton-neutron-superconductor", amount = 10}
@@ -4686,7 +4722,7 @@ data:extend({
       {type = "item", name = "sp-proton-neutron-frame", amount = 24},
       {type = "item", name = "sp-quantum-tube", amount = 1},
       {type = "item", name = "sp-gravitational-wave-bridge", amount = 1},
-      {type = "fluid", name = "sp-helium-3", amount = 5},
+      {type = "fluid", name = "sp-helium-3", amount = 5}
     },
     results = {
       {type = "item", name = "sp-quantized-protons", amount = 50}
@@ -4707,6 +4743,170 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-quantum-capacitor", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-extreme-data-transfer-controller",  -- #ForRegEx# - recipe
+    category = "alien-tech-manufacturing",
+    enabled = false,
+    energy_required = 20,
+    ingredients = {
+      {type = "item", name = "sp-chronalyte", amount = 3},
+      {type = "item", name = "sp-grobgnum-rukite-compound", amount = 2},
+      {type = "item", name = "sp-blunagium-rukite-compound", amount = 2},
+      {type = "item", name = "sp-holo-grip-controller", amount = 1},
+      {type = "item", name = "sp-ultra-violet-processor", amount = 32},
+      {type = "item", name = "sp-quantum-capacitor", amount = 6},
+    },
+    results = {
+      {type = "item", name = "sp-extreme-data-transfer-controller", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-information-cube",  -- #ForRegEx# - recipe
+    category = "alien-tech-manufacturing",
+    enabled = false,
+    energy_required = 150,
+    ingredients = {
+      {type = "item", name = "sp-extreme-data-transfer-controller", amount = 4},
+      {type = "item", name = "sp-alpha-wave-tray-array", amount = 8},
+      {type = "item", name = "sp-bio-capacitor", amount = 4},
+      {type = "item", name = "sp-neural-fusion-card", amount = 4},
+      {type = "item", name = "sp-neuropulse-module", amount = 4},
+      {type = "item", name = "sp-synaptic-core-chip", amount = 4},
+      {type = "item", name = "sp-quantized-compute-unit", amount = 20},
+      {type = "item", name = "sp-blunagium-imersite-slab", amount = 6},
+      {type = "item", name = "sp-universal-storage-drive", amount = 6},
+      {type = "item", name = "sp-nanobot", amount = 12000},
+    },
+    results = {
+      {type = "item", name = "sp-information-cube", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-universal-storage-drive",  -- #ForRegEx# - recipe
+    category = "alien-tech-manufacturing",
+    enabled = false,
+    energy_required = 40,
+    ingredients = {
+      {type = "item", name = "sp-imersite-rukite-beam", amount = 1},
+      {type = "item", name = "sp-alpha-wave-tray-array", amount = 1},
+      {type = "item", name = "sp-radiant-glass", amount = 12},
+      {type = "item", name = "sp-nanowire", amount = 4},
+      {type = "item", name = "sp-boson-blossom", amount = 2},
+      {type = "item", name = "sp-quantized-orbital-flower", amount = 2},
+    },
+    results = {
+      {type = "item", name = "sp-universal-storage-drive", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-lossless-power-conector",  -- #ForRegEx# - recipe
+    category = "alien-tech-manufacturing",
+    enabled = false,
+    energy_required = 6,
+    ingredients = {
+      {type = "item", name = "sp-radiant-glass", amount = 1},
+      {type = "item", name = "sp-grobgnum-optics", amount = 1},
+      {type = "item", name = "sp-blunagium-yemnuth-beam", amount = 1},
+      {type = "item", name = "sp-rukite-plate", amount = 1},
+      {type = "item", name = "sp-radiation-channeler", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-lossless-power-conector", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-miniaturized-star-core-stabilizer",  -- #ForRegEx# - recipe
+    category = "alien-tech-manufacturing",
+    enabled = false,
+    energy_required = 120,
+    ingredients = {
+      {type = "item", name = "sp-blunagium-imersite-slab", amount = 8},
+      {type = "item", name = "sp-blunagium-yemnuth-beam", amount = 6},
+      {type = "item", name = "sp-lossless-power-conector", amount = 20},
+      {type = "item", name = "sp-extreme-heat-source", amount = 6},
+      {type = "item", name = "sp-proton-neutron-superconductor", amount = 12},
+      {type = "item", name = "sp-miniaturized-stellar-bridge", amount = 1},
+      {type = "item", name = "sp-neutrino-charger", amount = 24},
+      {type = "item", name = "sp-sideral-seal", amount = 24},
+      {type = "item", name = "sp-energy-channeler", amount = 12},
+    },
+    results = {
+      {type = "item", name = "sp-miniaturized-star-core-stabilizer", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-miniaturized-stellar-bridge",  -- #ForRegEx# - recipe
+    category = "alien-tech-manufacturing",
+    enabled = false,
+    energy_required = 24,
+    ingredients = {
+      {type = "item", name = "sp-blunagium-imersite-slab", amount = 1},
+      {type = "item", name = "sp-blunagium-yemnuth-beam", amount = 1},
+      {type = "item", name = "sp-proton-neutron-superconductor", amount = 4},
+      {type = "item", name = "sp-grobgnum-optics", amount = 2}
+    },
+    results = {
+      {type = "item", name = "sp-miniaturized-stellar-bridge", amount = 1}
+    }
+  },
+
+  {
+    type = "recipe",
+    name = "sp-neutrino-charger",  -- #ForRegEx# - recipe
+    category = "alien-tech-manufacturing",
+    enabled = false,
+    energy_required = 24,
+    ingredients = {
+      {type = "item", name = "sp-gravitational-wave-interferometer", amount = 6},
+      {type = "item", name = "sp-quantum-tube", amount = 6},
+      {type = "item", name = "sp-proton-neutron-superconductor", amount = 4},
+      {type = "item", name = "sp-grobgnum-optics", amount = 2}
+    },
+    results = {
+      {type = "item", name = "sp-neutrino-charger", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-sideral-seal",  -- #ForRegEx# - recipe
+    category = "alien-tech-manufacturing",
+    enabled = false,
+    energy_required = 16,
+    ingredients = {
+      {type = "item", name = "sp-blunagium-imersite-slab", amount = 1},
+      {type = "item", name = "sp-blunagium-yemnuth-beam", amount = 1},
+      {type = "item", name = "sp-proton-neutron-superconductor", amount = 4},
+      {type = "item", name = "sp-grobgnum-optics", amount = 2},
+      {type = "item", name = "sp-radiation-channeler", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-sideral-seal", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-energy-channeler",  -- #ForRegEx# - recipe
+    category = "alien-tech-manufacturing",
+    enabled = false,
+    energy_required = 8,
+    ingredients = {
+      {type = "item", name = "sp-blunagium-yemnuth-compound", amount = 2},
+      {type = "item", name = "sp-yemnuth-plate", amount = 1},
+      {type = "item", name = "sp-orbital-cell", amount = 6},
+      {type = "item", name = "sp-trapped-quantum-energy", amount = 1},
+      {type = "item", name = "sp-quantized-compute-unit", amount = 2},
+      {type = "item", name = "sp-femto-navigator", amount = 40}
+    },
+    results = {
+      {type = "item", name = "sp-energy-channeler", amount = 1}
     }
   },
   ------------------------------------------------------------------------------

@@ -1273,6 +1273,9 @@ table.insert(data.raw.recipe["sp-frictionless-bearing"].ingredients, {type = "it
 table.insert(data.raw.recipe["sp-extreme-heat-source"].ingredients, {type = "item", name = "energy-control-unit", amount = 6})
 table.insert(data.raw.recipe["sp-grobgnum-optics"].ingredients, {type = "item", name = "imersium-plate", amount = 1})
 table.insert(data.raw.recipe["sp-proton-neutron-frame"].ingredients, {type = "item", name = "tritium", amount = 1})
+table.insert(data.raw.recipe["sp-blunagium-imersite-slab"].ingredients, {type = "item", name = "imersite-crystal", amount = 1})
+table.insert(data.raw.recipe["sp-radiant-glass"].ingredients, {type = "item", name = "imersite-crystal", amount = 2})
+table.insert(data.raw.recipe["sp-radiant-glass"].ingredients, {type = "item", name = "imersite-powder", amount = 1})
 table.insert(data.raw.recipe["sp-productivity-module-4"].ingredients, {type = "item", name = "energy-control-unit", amount = 5})
 
 table.insert(data.raw.recipe["sp-geological-science-pack-1"].ingredients, {type = "item", name = "quartz", amount = 5})
@@ -1411,6 +1414,8 @@ data.raw.recipe["sp-blunagium-yemnuth-beam"].category = "advanced-smelting"
 data.raw.recipe["sp-charged-slab"].category = "advanced-smelting"
 data.raw.recipe["sp-ultra-durable-ceramics"].category = "advanced-smelting"
 data.raw.recipe["sp-hot-stone"].category = "advanced-smelting"
+data.raw.recipe["sp-blunagium-imersite-slab"].category = "advanced-smelting"
+data.raw.recipe["sp-radiant-glass"].category = "advanced-smelting"
 
 data.raw.recipe["sp-speed-module-4"].category = "alien-tech-manufacturing"
 data.raw.recipe["sp-effectivity-module-4"].category = "alien-tech-manufacturing"
@@ -3006,23 +3011,107 @@ util.change_recipe_ingredients("kr-nuclear-locomotive",
 -- MARK: Krastorio equipment
 util.change_recipe_ingredients("power-armor-mk3",
   {
-    {"iron-plate", 69}
+    {"sp-advanced-processing-unit", 20},
+    {"sp-superconductor", 40},
+    {"sp-cryostat", 4},
+    {"sp-niobium-steel", 20},
+    {"sp-electrode", 10},
+    {"sp-fabric", 20},
+    {"sp-kevlar", 30},
+    {"flying-robot-frame", 12}
   },
   {
-    {"iron-plate", 69}
+    {"sp-advanced-processing-unit", 40},
+    {"sp-superconductor", 80},
+    {"sp-cryostat", 6},
+    {"sp-niobium-steel", 32},
+    {"sp-electrode", 20},
+    {"sp-fabric", 30},
+    {"sp-kevlar", 50},
+    {"flying-robot-frame", 20}
   },
-  20,
-  40)
+  45,
+  90)
 
 util.change_recipe_ingredients("power-armor-mk4",
   {
-    {"iron-plate", 69}
+    {"sp-kevlar", 50},
+    {"sp-frictionless-joint", 25},
+    {"sp-cybernetics", 12},
+    {"sp-grobgnum-rukite-beam", 12},
+    {"sp-proton-neutron-superconductor", 20},
+    {"sp-alpha-wave-tray-array", 5},
+    {"ai-core", 12},
+    {"energy-control-unit", 6},
+    {"sp-bioreactor", 1}
   },
   {
-    {"iron-plate", 69}
+    {"sp-kevlar", 80},
+    {"sp-frictionless-joint", 40},
+    {"sp-cybernetics", 18},
+    {"sp-grobgnum-rukite-beam", 24},
+    {"sp-proton-neutron-superconductor", 32},
+    {"sp-alpha-wave-tray-array", 8},
+    {"ai-core", 20},
+    {"energy-control-unit", 10},
+    {"sp-bioreactor", 1}
+  },
+  60,
+  120)
+
+util.change_recipe_ingredients("advanced-exoskeleton-equipment",
+  {
+    {"sp-TiAlSn", 6},
+    {"sp-titanium-frame", 10},
+    {"processing-unit", 5},
+    {"sp-heavy-gearbox", 2},
+    {"sp-heavy-ball-bearing", 10},
+    {"electric-engine-unit", 2},
+    {"sp-kevlar", 12},
+  },
+  {
+    {"sp-TiAlSn", 10},
+    {"sp-titanium-frame", 12},
+    {"processing-unit", 8},
+    {"sp-heavy-gearbox", 4},
+    {"sp-heavy-ball-bearing", 16},
+    {"electric-engine-unit", 4},
+    {"sp-kevlar", 20},
   },
   30,
   60)
+
+  util.change_recipe_ingredients("superior-exoskeleton-equipment",
+  {
+    {"sp-kevlar", 16},
+    {"imersium-plate", 2},
+    {"sp-grobgnum-rukite-beam", 6},
+    {"sp-synaptic-core-chip", 1},
+    {"sp-neuropulse-module", 2},
+    {"sp-rukite-gearbox", 4},
+    {"sp-frictionless-joint", 10},
+    {"sp-frictionless-bearing", 20},
+    {"sp-proton-neutron-superconductor", 12},
+    {"sp-cybernetics", 20},
+    {"sp-nanobot", 1000},
+    {"sp-nanowire", 30},
+  },
+  {
+    {"sp-kevlar", 24},
+    {"imersium-plate", 3},
+    {"sp-grobgnum-rukite-beam", 12},
+    {"sp-synaptic-core-chip", 2},
+    {"sp-neuropulse-module", 4},
+    {"sp-rukite-gearbox", 6},
+    {"sp-frictionless-joint", 16},
+    {"sp-frictionless-bearing", 24},
+    {"sp-proton-neutron-superconductor", 24},
+    {"sp-cybernetics", 30},
+    {"sp-nanobot", 1500},
+    {"sp-nanowire", 50},
+  },
+  45,
+  90)
 
 util.change_recipe_ingredients("energy-absorber",
   {
@@ -3259,30 +3348,6 @@ util.change_recipe_ingredients("fuel-processor",
   },
   12,
   24)
-
-util.change_recipe_ingredients("power-armor-mk3",
-  {
-    {"sp-advanced-processing-unit", 20},
-    {"sp-superconductor", 40},
-    {"sp-cryostat", 4},
-    {"sp-niobium-steel", 20},
-    {"sp-electrode", 10},
-    {"sp-fabric", 20},
-    {"sp-kevlar", 30},
-    {"flying-robot-frame", 12}
-  },
-  {
-    {"sp-advanced-processing-unit", 40},
-    {"sp-superconductor", 80},
-    {"sp-cryostat", 6},
-    {"sp-niobium-steel", 32},
-    {"sp-electrode", 20},
-    {"sp-fabric", 30},
-    {"sp-kevlar", 50},
-    {"flying-robot-frame", 20}
-  },
-  45,
-  90)
 
 util.change_recipe_ingredients("burner-assembling-machine",
   {
