@@ -251,7 +251,7 @@ table.insert(data.raw.lab["lab"].inputs, "sp-electronic-science-pack-1")
 table.insert(data.raw.lab["lab"].inputs, "sp-geological-science-pack-1")
 table.insert(data.raw.lab["lab"].inputs, "sp-material-science-pack-1")
 
-data.raw.lab["biusart-lab"].inputs = data.raw.lab["lab"].inputs
+data.raw.lab["biusart-lab"].inputs = table.deepcopy(data.raw.lab["lab"].inputs)
 table.insert(data.raw.lab["biusart-lab"].inputs, "sp-automation-science-pack-2")
 table.insert(data.raw.lab["biusart-lab"].inputs, "sp-logistic-science-pack-2")
 table.insert(data.raw.lab["biusart-lab"].inputs, "sp-military-science-pack-2")
@@ -274,7 +274,7 @@ table.insert(data.raw.lab["biusart-lab"].inputs, "sp-material-science-pack-3")
 table.insert(data.raw.lab["biusart-lab"].inputs, "sp-computer-science-pack-3")
 table.insert(data.raw.lab["biusart-lab"].inputs, "sp-production-science-pack-3")
 
-data.raw.lab["kr-singularity-lab"].inputs = data.raw.lab["biusart-lab"].inputs
+data.raw.lab["kr-singularity-lab"].inputs = table.deepcopy(data.raw.lab["biusart-lab"].inputs)
 table.insert(data.raw.lab["kr-singularity-lab"].inputs, "sp-utility-science-pack-3")
 table.insert(data.raw.lab["kr-singularity-lab"].inputs, "sp-astronomical-science-pack-3")
 table.insert(data.raw.lab["kr-singularity-lab"].inputs, "matter-tech-card")
