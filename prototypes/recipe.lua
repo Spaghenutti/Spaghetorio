@@ -1240,13 +1240,13 @@ data:extend({
     name = "sp-connecting-rod",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
-    energy_required = 1.6,
+    energy_required = 5,
     ingredients = {
-      {type = "item", name = "steel-plate", amount = 2},
-      {type = "item", name = "sp-bronze-rod", amount = 2}
+      {type = "item", name = "steel-plate", amount = 1},
+      {type = "item", name = "sp-bronze-rod", amount = 1}
     },
     results = {
-      {type = "item", name = "sp-connecting-rod", amount = 1}
+      {type = "item", name = "sp-connecting-rod", amount = 3}
     }
   },
   {

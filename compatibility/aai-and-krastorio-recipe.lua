@@ -1347,7 +1347,7 @@ table.insert(data.raw.recipe["train-stop"].ingredients, {"steel-beam", 8})
 table.insert(data.raw.recipe["fluid-wagon"].ingredients, {"steel-beam", 8})
 table.insert(data.raw.recipe["artillery-wagon"].ingredients, {"automation-core", 8})
 table.insert(data.raw.recipe["personal-roboport-equipment"].ingredients, {"automation-core", 5})
-table.insert(data.raw.recipe["pumpjack"].ingredients, {"engine-unit", 5})
+table.insert(data.raw.recipe["pumpjack"].ingredients, {"engine-unit", 2})
 table.insert(data.raw.recipe["pumpjack"].ingredients, {"steel-gear-wheel", 8})
 table.insert(data.raw.recipe["oil-refinery"].ingredients, {"glass", 20})
 table.insert(data.raw.recipe["satellite"].ingredients, {"lithium-sulfur-battery", 20})
@@ -2422,31 +2422,6 @@ util.change_recipe_ingredients("kr-advanced-steam-turbine",
   },
   90,
   150)
-util.change_recipe_ingredients("kr-antimatter-reactor",
-  {
-    {"ai-core", 100},
-    {"imersium-beam", 500},
-    {"energy-control-unit", 50},
-    {"sp-carbon-nanotubes", 200},
-    {"sp-nanowire", 120},
-    {"sp-plasma-capsule", 40},
-    {"sp-nanobot", 80},
-    {"sp-biochip", 100},
-    {"sp-flux-capacitor", 20}
-  },
-  {
-    {"ai-core", 200},
-    {"imersium-beam", 1000},
-    {"energy-control-unit", 100},
-    {"sp-carbon-nanotubes", 400},
-    {"sp-nanowire", 250},
-    {"sp-plasma-capsule", 80},
-    {"sp-nanobot", 200},
-    {"sp-biochip", 200},
-    {"sp-flux-capacitor", 40}
-  },
-  1000,
-  2000)
 util.change_recipe_ingredients("kr-electric-mining-drill-mk2",
   {
     {"steel-beam", 12},
@@ -3044,7 +3019,93 @@ util.change_recipe_ingredients("kr-advanced-radar",
   },
   30,
   60)
-
+util.change_recipe_ingredients("kr-antimatter-reactor",
+  {
+    {"sp-proton-neutron-superconductor", 300},
+    {"sp-extreme-heat-source", 12},
+    {"sp-energy-channeler", 100},
+    {"sp-radiation-channeler", 50},
+    {"sp-antimatter-engine", 6},
+    {"sp-grobgnum-rukite-beam", 120},
+    {"sp-blunagium-yemnuth-compound", 80},
+    {"sp-utradurable-ceramics", 60},
+    {"imersium-beam", 160},
+    {"energy-control-unit", 150},
+    {"sp-apha-wave-tray-array", 32},
+    {"sp-quark-gluon-probe", 5000},
+    {"sp-quantum-capacitor", 400},
+    {"sp-interdimensional-prism-chamber", 20},
+    {"kr-black-reinforced-plate", 400}
+  },
+  {
+    {"sp-proton-neutron-superconductor", 500},
+    {"sp-extreme-heat-source", 60},
+    {"sp-energy-channeler", 200},
+    {"sp-radiation-channeler", 100},
+    {"sp-antimatter-engine", 12},
+    {"sp-grobgnum-rukite-beam", 200},
+    {"sp-blunagium-yemnuth-compound", 150},
+    {"sp-utradurable-ceramics", 100},
+    {"imersium-beam", 300},
+    {"energy-control-unit", 400},
+    {"sp-apha-wave-tray-array", 60},
+    {"sp-quark-gluon-probe", 10000},
+    {"sp-quantum-capacitor", 600},
+    {"sp-interdimensional-prism-chamber", 20},
+    {"kr-black-reinforced-plate", 800}
+  },
+  600,
+  1200)
+util.change_recipe_ingredients("empty-antimatter-fuel-cell",
+  {
+    {"matter-stabilizer", 1},
+    {"sp-sideral-seal", 1},
+    {"sp-lossless-power-connector", 1},
+    {"sp-dark-energy-harvester", 1},
+    {"sp-quantum-capacitor", 12},
+  },
+  {
+    {"matter-stabilizer", 1},
+    {"sp-sideral-seal", 2},
+    {"sp-lossless-power-connector", 1},
+    {"sp-dark-energy-harvester", 1},
+    {"sp-quantum-capacitor", 24},
+  },
+  20,
+  30)
+util.change_recipe_ingredients("kr-antimatter-reactor",
+  {
+    {"sp-omni-pulse-generator", 1},
+    {"sp-dark-matter-field-generator", 8},
+    {"sp-information-cube", 1000},
+    {"sp-relativity-condenser", 10},
+    {"sp-sideral-compute-core", 50},
+    {"sp-hadron-beam-charger", 200},
+    {"sp-energy-channeler", 200},
+    {"sp-miniaturized-stellar-bridge", 200},
+    {"sp-blunagium-solenoid", 500},
+    {"sp-lossless-power-connector", 6000},
+    {"sp-nanowire", 10000},
+    {"matter-cube", 1000},
+    {"kr-black-reinforced-plate", 500}
+  },
+  {
+    {"sp-omni-pulse-generator", 1},
+    {"sp-dark-matter-field-generator", 12},
+    {"sp-information-cube", 2000},
+    {"sp-relativity-condenser", 30},
+    {"sp-sideral-compute-core", 80},
+    {"sp-hadron-beam-charger", 400},
+    {"sp-energy-channeler", 500},
+    {"sp-miniaturized-stellar-bridge", 600},
+    {"sp-blunagium-solenoid", 5000},
+    {"sp-lossless-power-connector", 10000},
+    {"sp-nanowire", 20000},
+    {"matter-cube", 5000},
+    {"kr-black-reinforced-plate", 2000}
+  },
+  900,
+  3600)
 -- MARK: Krastorio vehicle
 util.change_recipe_ingredients("kr-nuclear-locomotive",
   {
