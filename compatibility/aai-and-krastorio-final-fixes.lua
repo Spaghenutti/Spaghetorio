@@ -306,4 +306,4 @@ data.raw.recipe["kr-vc-advanced-circuit"].results = {
 }
 
 -- Fix petroleum gas icon
-util.change_fluid_icon("petroleum-gas", "__Spaghenutti__/graphics/icons/petroleum-gas.png", 64, nil)
+util.change_fluid_icon("petroleum-gas", "__Spaghetorio__/graphics/icons/petroleum-gas.png", 64, nil)

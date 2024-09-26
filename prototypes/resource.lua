@@ -9,7 +9,7 @@ data:extend({
   {
     type = "resource",
     name = "sp-aluminum-ore",
-    icon = "__Spaghenutti__/graphics/icons/aluminum-ore-1.png",
+    icon = "__Spaghetorio__/graphics/icons/aluminum-ore-1.png",
     icon_size = 64,
     icon_mipmaps = 4,
     flags = {"placeable-neutral"},
@@ -38,13 +38,13 @@ data:extend({
     stage_counts = {20000, 12000, 8000, 4000, 2000, 1000, 500, 200},
     stages = {
       sheet = {
-        filename = "__Spaghenutti__/graphics/resource/aluminum-ore-patches.png",
+        filename = "__Spaghetorio__/graphics/resource/aluminum-ore-patches.png",
         priority = "extra-high",
         size = 64,
         frame_count = 8,
         variation_count = 8,
         hr_version = {
-          filename = "__Spaghenutti__/graphics/resource/hr-aluminum-ore-patches.png",
+          filename = "__Spaghetorio__/graphics/resource/hr-aluminum-ore-patches.png",
           priority = "extra-high",
           size = 128,
           frame_count = 8,
@@ -57,7 +57,7 @@ data:extend({
   {
     type = "resource",
     name = "sp-chromite",
-    icon = "__Spaghenutti__/graphics/icons/chromite-1.png",
+    icon = "__Spaghetorio__/graphics/icons/chromite-1.png",
     icon_size = 64,
     icon_mipmaps = 4,
     flags = {"placeable-neutral"},
@@ -86,13 +86,13 @@ data:extend({
     stage_counts = {20000, 12000, 8000, 4000, 2000, 1000, 500, 200},
     stages = {
       sheet = {
-        filename = "__Spaghenutti__/graphics/resource/chromite-patches.png",
+        filename = "__Spaghetorio__/graphics/resource/chromite-patches.png",
         priority = "extra-high",
         size = 64,
         frame_count = 8,
         variation_count = 8,
         hr_version = {
-          filename = "__Spaghenutti__/graphics/resource/hr-chromite-patches.png",
+          filename = "__Spaghetorio__/graphics/resource/hr-chromite-patches.png",
           priority = "extra-high",
           size = 128,
           frame_count = 8,
@@ -105,7 +105,7 @@ data:extend({
   {
     type = "resource",
     name = "sp-limestone",
-    icon = "__Spaghenutti__/graphics/icons/limestone-1.png",
+    icon = "__Spaghetorio__/graphics/icons/limestone-1.png",
     icon_size = 64,
     icon_mipmaps = 4,
     flags = {"placeable-neutral"},
@@ -136,13 +136,13 @@ data:extend({
     stage_counts = {20000, 12000, 8000, 4000, 2000, 1000, 500, 200},
     stages = {
       sheet = {
-        filename = "__Spaghenutti__/graphics/resource/limestone-patches.png",
+        filename = "__Spaghetorio__/graphics/resource/limestone-patches.png",
         priority = "extra-high",
         size = 64,
         frame_count = 8,
         variation_count = 8,
         hr_version = {
-          filename = "__Spaghenutti__/graphics/resource/hr-limestone-patches.png",
+          filename = "__Spaghetorio__/graphics/resource/hr-limestone-patches.png",
           priority = "extra-high",
           size = 128,
           frame_count = 8,
@@ -155,7 +155,7 @@ data:extend({
   {
     type = "resource",
     name = "sp-titanium-ore",
-    icon = "__Spaghenutti__/graphics/icons/titanium-ore-1.png",
+    icon = "__Spaghetorio__/graphics/icons/titanium-ore-1.png",
     icon_size = 64,
     icon_mipmaps = 4,
     flags = {"placeable-neutral"},
@@ -186,13 +186,13 @@ data:extend({
     stage_counts = {20000, 12000, 8000, 4000, 2000, 1000, 500, 200},
     stages = {
       sheet = {
-        filename = "__Spaghenutti__/graphics/resource/titanium-ore-patches.png",
+        filename = "__Spaghetorio__/graphics/resource/titanium-ore-patches.png",
         priority = "extra-high",
         size = 64,
         frame_count = 8,
         variation_count = 8,
         hr_version = {
-          filename = "__Spaghenutti__/graphics/resource/hr-titanium-ore-patches.png",
+          filename = "__Spaghetorio__/graphics/resource/hr-titanium-ore-patches.png",
           priority = "extra-high",
           size = 128,
           frame_count = 8,
@@ -205,7 +205,7 @@ data:extend({
   {
     type = "resource",
     name = "sp-magnesium-ore",
-    icon = "__Spaghenutti__/graphics/icons/magnesium-ore-1.png",
+    icon = "__Spaghetorio__/graphics/icons/magnesium-ore-1.png",
     icon_size = 64,
     icon_mipmaps = 4,
     flags = {"placeable-neutral"},
@@ -236,13 +236,13 @@ data:extend({
     stage_counts = {20000, 12000, 8000, 4000, 2000, 1000, 500, 200},
     stages = {
       sheet = {
-        filename = "__Spaghenutti__/graphics/resource/magnesium-ore-patches.png",
+        filename = "__Spaghetorio__/graphics/resource/magnesium-ore-patches.png",
         priority = "extra-high",
         size = 64,
         frame_count = 8,
         variation_count = 8,
         hr_version = {
-          filename = "__Spaghenutti__/graphics/resource/hr-magnesium-ore-patches.png",
+          filename = "__Spaghetorio__/graphics/resource/hr-magnesium-ore-patches.png",
           priority = "extra-high",
           size = 128,
           frame_count = 8,
@@ -255,7 +255,7 @@ data:extend({
   {
     type = "resource",
     name = "sp-nickel-ore",
-    icon = "__Spaghenutti__/graphics/icons/nickel-ore-1.png",
+    icon = "__Spaghetorio__/graphics/icons/nickel-ore-1.png",
     icon_size = 64,
     icon_mipmaps = 4,
     flags = {"placeable-neutral"},
@@ -286,13 +286,13 @@ data:extend({
     stage_counts = {20000, 12000, 8000, 4000, 2000, 1000, 500, 200},
     stages = {
       sheet = {
-        filename = "__Spaghenutti__/graphics/resource/nickel-ore-patches.png",
+        filename = "__Spaghetorio__/graphics/resource/nickel-ore-patches.png",
         priority = "extra-high",
         size = 64,
         frame_count = 8,
         variation_count = 8,
         hr_version = {
-          filename = "__Spaghenutti__/graphics/resource/hr-nickel-ore-patches.png",
+          filename = "__Spaghetorio__/graphics/resource/hr-nickel-ore-patches.png",
           priority = "extra-high",
           size = 128,
           frame_count = 8,
@@ -305,7 +305,7 @@ data:extend({
   {
     type = "resource",
     name = "sp-spodumene",
-    icon = "__Spaghenutti__/graphics/icons/spodumene-1.png",
+    icon = "__Spaghetorio__/graphics/icons/spodumene-1.png",
     icon_size = 64,
     icon_mipmaps = 4,
     flags = {"placeable-neutral"},
@@ -336,13 +336,13 @@ data:extend({
     stage_counts = {20000, 12000, 8000, 4000, 2000, 1000, 500, 200},
     stages = {
       sheet = {
-        filename = "__Spaghenutti__/graphics/resource/spodumene-patches.png",
+        filename = "__Spaghetorio__/graphics/resource/spodumene-patches.png",
         priority = "extra-high",
         size = 64,
         frame_count = 8,
         variation_count = 8,
         hr_version = {
-          filename = "__Spaghenutti__/graphics/resource/hr-spodumene-patches.png",
+          filename = "__Spaghetorio__/graphics/resource/hr-spodumene-patches.png",
           priority = "extra-high",
           size = 128,
           frame_count = 8,
@@ -355,7 +355,7 @@ data:extend({
   {
     type = "resource",
     name = "sp-tinstone",
-    icon = "__Spaghenutti__/graphics/icons/tinstone-1.png",
+    icon = "__Spaghetorio__/graphics/icons/tinstone-1.png",
     icon_size = 64,
     icon_mipmaps = 4,
     flags = {"placeable-neutral"},
@@ -384,13 +384,13 @@ data:extend({
     stage_counts = {20000, 12000, 8000, 4000, 2000, 1000, 500, 200},
     stages = {
       sheet = {
-        filename = "__Spaghenutti__/graphics/resource/tinstone-patches.png",
+        filename = "__Spaghetorio__/graphics/resource/tinstone-patches.png",
         priority = "extra-high",
         size = 64,
         frame_count = 8,
         variation_count = 8,
         hr_version = {
-          filename = "__Spaghenutti__/graphics/resource/hr-tinstone-patches.png",
+          filename = "__Spaghetorio__/graphics/resource/hr-tinstone-patches.png",
           priority = "extra-high",
           size = 128,
           frame_count = 8,
@@ -403,7 +403,7 @@ data:extend({
   {
     type = "resource",
     name = "sp-tungsten-ore",
-    icon = "__Spaghenutti__/graphics/icons/tungsten-ore-1.png",
+    icon = "__Spaghetorio__/graphics/icons/tungsten-ore-1.png",
     icon_size = 64,
     icon_mipmaps = 4,
     flags = {"placeable-neutral"},
@@ -434,13 +434,13 @@ data:extend({
     stage_counts = {20000, 12000, 8000, 4000, 2000, 1000, 500, 200},
     stages = {
       sheet = {
-        filename = "__Spaghenutti__/graphics/resource/tungsten-ore-patches.png",
+        filename = "__Spaghetorio__/graphics/resource/tungsten-ore-patches.png",
         priority = "extra-high",
         size = 64,
         frame_count = 8,
         variation_count = 8,
         hr_version = {
-          filename = "__Spaghenutti__/graphics/resource/hr-tungsten-ore-patches.png",
+          filename = "__Spaghetorio__/graphics/resource/hr-tungsten-ore-patches.png",
           priority = "extra-high",
           size = 128,
           frame_count = 8,
@@ -453,7 +453,7 @@ data:extend({
   {
     type = "resource",
     name = "sp-zinc-ore",
-    icon = "__Spaghenutti__/graphics/icons/zinc-ore-1.png",
+    icon = "__Spaghetorio__/graphics/icons/zinc-ore-1.png",
     icon_size = 64,
     icon_mipmaps = 4,
     flags = {"placeable-neutral"},
@@ -482,13 +482,13 @@ data:extend({
     stage_counts = {20000, 12000, 8000, 4000, 2000, 1000, 500, 200},
     stages = {
       sheet = {
-        filename = "__Spaghenutti__/graphics/resource/zinc-ore-patches.png",
+        filename = "__Spaghetorio__/graphics/resource/zinc-ore-patches.png",
         priority = "extra-high",
         size = 64,
         frame_count = 8,
         variation_count = 8,
         hr_version = {
-          filename = "__Spaghenutti__/graphics/resource/hr-zinc-ore-patches.png",
+          filename = "__Spaghetorio__/graphics/resource/hr-zinc-ore-patches.png",
           priority = "extra-high",
           size = 128,
           frame_count = 8,
@@ -501,7 +501,7 @@ data:extend({
   {
     type = "resource",
     name = "sp-zirconium-ore",
-    icon = "__Spaghenutti__/graphics/icons/zirconium-ore-1.png",
+    icon = "__Spaghetorio__/graphics/icons/zirconium-ore-1.png",
     icon_size = 64,
     icon_mipmaps = 4,
     flags = {"placeable-neutral"},
@@ -530,13 +530,13 @@ data:extend({
     stage_counts = {20000, 12000, 8000, 4000, 2000, 1000, 500, 200},
     stages = {
       sheet = {
-        filename = "__Spaghenutti__/graphics/resource/zirconium-ore-patches.png",
+        filename = "__Spaghetorio__/graphics/resource/zirconium-ore-patches.png",
         priority = "extra-high",
         size = 64,
         frame_count = 8,
         variation_count = 8,
         hr_version = {
-          filename = "__Spaghenutti__/graphics/resource/hr-zirconium-ore-patches.png",
+          filename = "__Spaghetorio__/graphics/resource/hr-zirconium-ore-patches.png",
           priority = "extra-high",
           size = 128,
           frame_count = 8,
@@ -554,7 +554,7 @@ if mods["Krastorio2"] then
       type = "resource",
       name = "sp-blunagium",
       category = "kr-quarry",
-      icon = "__Spaghenutti__/graphics/icons/blunagium.png",
+      icon = "__Spaghetorio__/graphics/icons/blunagium.png",
       icon_size = 64,
       icon_mipmaps = 4,
       flags = {"placeable-neutral"},
@@ -594,7 +594,7 @@ if mods["Krastorio2"] then
       stage_counts = {0},
       stages = {
         sheet = {
-          filename = "__Spaghenutti__/graphics/alien-resource/blunagium-mine.png",
+          filename = "__Spaghetorio__/graphics/alien-resource/blunagium-mine.png",
           priority = "extra-high",
           width = 256,
           height = 256,
@@ -616,7 +616,7 @@ if mods["Krastorio2"] then
       type = "resource",
       name = "sp-rukite",
       category = "kr-quarry",
-      icon = "__Spaghenutti__/graphics/icons/rukite.png",
+      icon = "__Spaghetorio__/graphics/icons/rukite.png",
       icon_size = 64,
       icon_mipmaps = 4,
       flags = {"placeable-neutral"},
@@ -656,7 +656,7 @@ if mods["Krastorio2"] then
       stage_counts = {0},
       stages = {
         sheet = {
-          filename = "__Spaghenutti__/graphics/alien-resource/rukite-mine.png",
+          filename = "__Spaghetorio__/graphics/alien-resource/rukite-mine.png",
           priority = "extra-high",
           width = 256,
           height = 256,
@@ -678,7 +678,7 @@ if mods["Krastorio2"] then
       type = "resource",
       name = "sp-yemnuth",
       category = "kr-quarry",
-      icon = "__Spaghenutti__/graphics/icons/yemnuth.png",
+      icon = "__Spaghetorio__/graphics/icons/yemnuth.png",
       icon_size = 64,
       icon_mipmaps = 4,
       flags = {"placeable-neutral"},
@@ -718,7 +718,7 @@ if mods["Krastorio2"] then
       stage_counts = {0},
       stages = {
         sheet = {
-          filename = "__Spaghenutti__/graphics/alien-resource/yemnuth-mine.png",
+          filename = "__Spaghetorio__/graphics/alien-resource/yemnuth-mine.png",
           priority = "extra-high",
           width = 256,
           height = 256,

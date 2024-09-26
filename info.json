@@ -1,7 +1,7 @@
 {
-    "name": "Spaghenutti",
+    "name": "Spaghetorio",
     "version": "0.0.1",
-    "title": "Spaghenutti",
+    "title": "Spaghetorio",
     "author": "Spaghetti",
     "factorio_version": "1.1",
     "dependencies": ["aai-industry >= 0.5.22",

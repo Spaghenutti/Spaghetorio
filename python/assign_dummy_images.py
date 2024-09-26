@@ -11,9 +11,9 @@ def replace_default_images(path, object_type):
     #   group 1: type
     #   group 2: name
     #   group 3: icon
-    regex = fr"type = \"(.*?)\",\n(.*?)name = \"(.*?)\",([\s\S]*?)icon = \"__Spaghenutti__/graphics/dummy/dummy-{object_type}-default\.png\""
+    regex = fr"type = \"(.*?)\",\n(.*?)name = \"(.*?)\",([\s\S]*?)icon = \"__Spaghetorio__/graphics/dummy/dummy-{object_type}-default\.png\""
     # this glorious replacement replaces entire matched string with the correct dummy image path
-    replacement = f"type = \"\g<1>\",\n\g<2>name = \"\g<3>\",\g<4>icon = \"__Spaghenutti__/graphics/dummy/dummy-{object_type}-\g<3>.png\""
+    replacement = f"type = \"\g<1>\",\n\g<2>name = \"\g<3>\",\g<4>icon = \"__Spaghetorio__/graphics/dummy/dummy-{object_type}-\g<3>.png\""
 
     objects_lua = re.sub(regex, replacement, objects_lua)
 

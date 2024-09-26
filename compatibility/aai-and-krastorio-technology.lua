@@ -5,7 +5,7 @@ data:extend({
     type = "technology",
     name = "sp-iron-extruding",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/technology/iron-extruding.png",
+    icon = "__Spaghetorio__/graphics/technology/iron-extruding.png",
     effects =
     {
       {
@@ -82,7 +82,7 @@ data:extend({
     type = "technology",
     name = "sp-burner-inserter",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/burner-inserter.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/burner-inserter.png",
     effects =
     {
       {
@@ -165,8 +165,8 @@ data:extend({
     icon_size = 256,
     icons = 
     {
-      {icon = "__Spaghenutti__/graphics/arrows/acroproduct-recipes-arrow-256x256.png", icon_size = 256, scale = 2},
-      {icon = "__Spaghenutti__/graphics/hr-icons/acromatter.png", icon_size = 256}
+      {icon = "__Spaghetorio__/graphics/arrows/acroproduct-recipes-arrow-256x256.png", icon_size = 256, scale = 2},
+      {icon = "__Spaghetorio__/graphics/hr-icons/acromatter.png", icon_size = 256}
     },
     effects =
     {

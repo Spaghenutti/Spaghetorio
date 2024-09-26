@@ -147,7 +147,7 @@ function data_util.combine_two_icons(icon_1, icon_1_size, shift_1, icon_2, icon_
   end
 
   icons = {
-    {icon = "__Spaghenutti__/graphics/hr-icons/background.png", icon_size = 256, scale = icon_1_size/512},
+    {icon = "__Spaghetorio__/graphics/hr-icons/background.png", icon_size = 256, scale = icon_1_size/512},
     {icon = icon_1, icon_size = icon_1_size, scale = 0.35, shift = shift_1},
     {icon = icon_2, icon_size = icon_2_size, scale = 0.35, shift = shift_2}
   }
@@ -168,7 +168,7 @@ function data_util.combine_three_icons(icon_1, icon_1_size, shift_1, icon_2, ico
   end
 
   icons = {
-    {icon = "__Spaghenutti__/graphics/hr-icons/background.png", icon_size = 256, scale = icon_1_size/512},
+    {icon = "__Spaghetorio__/graphics/hr-icons/background.png", icon_size = 256, scale = icon_1_size/512},
     {icon = icon_1, icon_size = icon_1_size, scale = 0.3, shift = shift_1},
     {icon = icon_2, icon_size = icon_2_size, scale = 0.3, shift = shift_2},
     {icon = icon_3, icon_size = icon_3_size, scale = 0.3, shift = shift_3}
@@ -194,7 +194,7 @@ function data_util.combine_four_icons(icon_1, icon_1_size, shift_1, icon_2, icon
   end
 
   icons = {
-    {icon = "__Spaghenutti__/graphics/hr-icons/background.png", icon_size = 256, scale = icon_1_size/512},
+    {icon = "__Spaghetorio__/graphics/hr-icons/background.png", icon_size = 256, scale = icon_1_size/512},
     {icon = icon_1, icon_size = icon_1_size, scale = 0.27, shift = shift_1},
     {icon = icon_2, icon_size = icon_2_size, scale = 0.27, shift = shift_2},
     {icon = icon_3, icon_size = icon_3_size, scale = 0.27, shift = shift_3},
@@ -225,7 +225,7 @@ function data_util.combine_five_icons(icon_1, icon_1_size, shift_1, icon_2, icon
   end
 
   icons = {
-    {icon = "__Spaghenutti__/graphics/hr-icons/background.png", icon_size = 256, scale = icon_1_size/512},
+    {icon = "__Spaghetorio__/graphics/hr-icons/background.png", icon_size = 256, scale = icon_1_size/512},
     {icon = icon_1, icon_size = icon_1_size, scale = 0.23, shift = shift_1},
     {icon = icon_2, icon_size = icon_2_size, scale = 0.23, shift = shift_2},
     {icon = icon_3, icon_size = icon_3_size, scale = 0.23, shift = shift_3},
@@ -237,15 +237,15 @@ end
 
 function data_util.acrosphere_color_change_recipe_icon(sphere_1, sphere_2, sphere_3, sphere_4, arrow_type)
   if (arrow_type == "green") then
-    arrow_icon = "__Spaghenutti__/graphics/arrows/acrosphere-arrow-recipe-green-256x256.png"
+    arrow_icon = "__Spaghetorio__/graphics/arrows/acrosphere-arrow-recipe-green-256x256.png"
   end
 
   if (arrow_type == "red") then
-    arrow_icon = "__Spaghenutti__/graphics/arrows/acrosphere-arrow-recipe-red-256x256.png"
+    arrow_icon = "__Spaghetorio__/graphics/arrows/acrosphere-arrow-recipe-red-256x256.png"
   end
 
   icons = {
-    {icon = "__Spaghenutti__/graphics/hr-icons/background.png", icon_size = 256, scale = 0.5},
+    {icon = "__Spaghetorio__/graphics/hr-icons/background.png", icon_size = 256, scale = 0.5},
     {icon = sphere_1, icon_size = 64, scale = 0.8, shift = {-38, -38}},
     {icon = sphere_2, icon_size = 64, scale = 0.8, shift = {-38, 38}},
     {icon = sphere_3, icon_size = 64, scale = 0.8, shift = {38, -38}},
@@ -257,15 +257,15 @@ end
 
 function data_util.acrosphere_upgrade_recipe_icon(sphere_1, sphere_2, sphere_3, sphere_4, sphere_5, sphere_6, arrow_type)
   if (arrow_type == "green") then
-    arrow_icon = "__Spaghenutti__/graphics/arrows/acrosphere-tripple-arrow-recipe-green-256x256.png"
+    arrow_icon = "__Spaghetorio__/graphics/arrows/acrosphere-tripple-arrow-recipe-green-256x256.png"
   end
 
   if (arrow_type == "red") then
-    arrow_icon = "__Spaghenutti__/graphics/arrows/acrosphere-tripple-arrow-recipe-red-256x256.png"
+    arrow_icon = "__Spaghetorio__/graphics/arrows/acrosphere-tripple-arrow-recipe-red-256x256.png"
   end
 
   icons = {
-    {icon = "__Spaghenutti__/graphics/hr-icons/background.png", icon_size = 256, scale = 0.5},
+    {icon = "__Spaghetorio__/graphics/hr-icons/background.png", icon_size = 256, scale = 0.5},
     {icon = sphere_1, icon_size = 64, scale = 0.7, shift = {-32, -45}},
     {icon = sphere_2, icon_size = 64, scale = 0.7, shift = {-45, 0}},
     {icon = sphere_3, icon_size = 64, scale = 0.7, shift = {-32, 45}},
@@ -278,10 +278,10 @@ function data_util.acrosphere_upgrade_recipe_icon(sphere_1, sphere_2, sphere_3, 
 end
 
 function data_util.create_acroproduct_conversion_icon(item_to_convert, acroproduct)
-  arrow_icon = "__Spaghenutti__/graphics/arrows/acroproduct-recipes-arrow-256x256.png"
+  arrow_icon = "__Spaghetorio__/graphics/arrows/acroproduct-recipes-arrow-256x256.png"
 
   icons = {
-    {icon = "__Spaghenutti__/graphics/hr-icons/background.png", icon_size = 256, scale = 0.5},
+    {icon = "__Spaghetorio__/graphics/hr-icons/background.png", icon_size = 256, scale = 0.5},
     {icon = arrow_icon, icon_size = 256, scale = 0.7, shift = {15, 15}},
     {icon = item_to_convert, icon_size = 64, scale = 1.15, shift = {18, 11}},
     {icon = acroproduct, icon_size = 64, scale = 0.8, shift = {-42, -42}}

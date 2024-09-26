@@ -5,7 +5,7 @@ data:extend({
     type = "technology",
     name = "sp-copper-machining",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/copper-tube.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/copper-tube.png",
     effects =
     {
       {
@@ -25,7 +25,7 @@ data:extend({
     type = "technology",
     name = "sp-iron-machining",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/technology/hr-iron-gear-wheel.png",
+    icon = "__Spaghetorio__/graphics/technology/hr-iron-gear-wheel.png",
     effects =
     {
       {
@@ -57,9 +57,9 @@ data:extend({
     type = "technology",
     name = "sp-tin-processing",  -- #ForRegEx# - technology
     icon_size = 256,
-    -- icon = "__Spaghenutti__/graphics/hr-icons/tin-and-lead.png",
-    icons = util.combine_two_icons("__Spaghenutti__/graphics/hr-icons/tin-ingot.png", 256, nil,
-                                   "__Spaghenutti__/graphics/hr-icons/lead-slab.png", 256, nil),
+    -- icon = "__Spaghetorio__/graphics/hr-icons/tin-and-lead.png",
+    icons = util.combine_two_icons("__Spaghetorio__/graphics/hr-icons/tin-ingot.png", 256, nil,
+                                   "__Spaghetorio__/graphics/hr-icons/lead-slab.png", 256, nil),
     effects =
     {
       {
@@ -83,7 +83,7 @@ data:extend({
     type = "technology",
     name = "sp-basic-solder",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/solder.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/solder.png",
     effects =
     {
       {
@@ -104,7 +104,7 @@ data:extend({
     type = "technology",
     name = "sp-basic-alloy",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/bronze-rod.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/bronze-rod.png",
     effects =
     {
       {
@@ -125,7 +125,7 @@ data:extend({
     type = "technology",
     name = "sp-steel-machining",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/connecting-rod.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/connecting-rod.png",
     effects =
     {
       {
@@ -154,7 +154,7 @@ data:extend({
     type = "technology",
     name = "sp-aluminum-processing",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/aluminum-sheet.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/aluminum-sheet.png",
     effects =
     {
       {
@@ -179,7 +179,7 @@ data:extend({
     type = "technology",
     name = "sp-aluminum-machining",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/aluminum-frame.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/aluminum-frame.png",
     effects =
     {
       {
@@ -204,7 +204,7 @@ data:extend({
     type = "technology",
     name = "sp-aluminum-treatment",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/anodized-aluminum.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/anodized-aluminum.png",
     effects =
     {
       {
@@ -234,7 +234,7 @@ data:extend({
     type = "technology",
     name = "sp-basic-crushing-smelting",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/basic-crushing-smelting.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/basic-crushing-smelting.png",
     effects =
     {
       {
@@ -300,7 +300,7 @@ data:extend({
     type = "technology",
     name = "sp-coal-processing",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/graphite-1.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/graphite-1.png",
     effects =
     {
       {
@@ -329,8 +329,8 @@ data:extend({
     type = "technology",
     name = "sp-zinc-processing",  -- #ForRegEx# - technology
     icon_size = 256,
-    icons = util.combine_two_icons("__Spaghenutti__/graphics/hr-icons/zinc-sulfate-1.png", 256, nil,
-                                   "__Spaghenutti__/graphics/hr-icons/zinc-plate.png", 256, nil),
+    icons = util.combine_two_icons("__Spaghetorio__/graphics/hr-icons/zinc-sulfate-1.png", 256, nil,
+                                   "__Spaghetorio__/graphics/hr-icons/zinc-plate.png", 256, nil),
     effects =
     {
       {
@@ -369,7 +369,7 @@ data:extend({
     type = "technology",
     name = "sp-brass",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/brass.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/brass.png",
     effects =
     {
       {
@@ -397,8 +397,8 @@ data:extend({
     type = "technology",
     name = "sp-carbon-high-tech",  -- #ForRegEx# - technology
     icon_size = 256,
-    icons = util.combine_two_icons("__Spaghenutti__/graphics/hr-icons/carbon-nanotubes.png", 256, nil,
-                                   "__Spaghenutti__/graphics/hr-icons/graphene.png", 256, nil),
+    icons = util.combine_two_icons("__Spaghetorio__/graphics/hr-icons/carbon-nanotubes.png", 256, nil,
+                                   "__Spaghetorio__/graphics/hr-icons/graphene.png", 256, nil),
     effects =
     {
       {
@@ -431,7 +431,7 @@ data:extend({
     type = "technology",
     name = "sp-cement",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/cement.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/cement.png",
     effects =
     {
       {
@@ -471,8 +471,8 @@ data:extend({
     type = "technology",
     name = "sp-calcium-and-fluorine",  -- #ForRegEx# - technology
     icon_size = 256,
-    icons = util.combine_two_icons("__Spaghenutti__/graphics/hr-icons/fluorine.png", 256, nil,
-                                   "__Spaghenutti__/graphics/hr-icons/calcium.png", 256, nil),
+    icons = util.combine_two_icons("__Spaghetorio__/graphics/hr-icons/fluorine.png", 256, nil,
+                                   "__Spaghetorio__/graphics/hr-icons/calcium.png", 256, nil),
     effects =
     {
       {
@@ -505,7 +505,7 @@ data:extend({
     type = "technology",
     name = "sp-titanium-processing",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/titanium-ingot.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/titanium-ingot.png",
     effects =
     {
       {
@@ -549,8 +549,8 @@ data:extend({
     type = "technology",
     name = "sp-titanium-machining",  -- #ForRegEx# - technology
     icon_size = 256,
-    icons = util.combine_two_icons("__Spaghenutti__/graphics/hr-icons/titanium-frame-1.png", 256, nil,
-                                   "__Spaghenutti__/graphics/hr-icons/titanium-plate.png", 256, nil),
+    icons = util.combine_two_icons("__Spaghetorio__/graphics/hr-icons/titanium-frame-1.png", 256, nil,
+                                   "__Spaghetorio__/graphics/hr-icons/titanium-plate.png", 256, nil),
     effects =
     {
       {
@@ -581,7 +581,7 @@ data:extend({
     type = "technology",
     name = "sp-basic-ceramics",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/ceramics-1.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/ceramics-1.png",
     effects =
     {
       {
@@ -620,8 +620,8 @@ data:extend({
     type = "technology",
     name = "sp-advanced-ceramics",  -- #ForRegEx# - technology
     icon_size = 256,
-    icons = util.combine_two_icons("__Spaghenutti__/graphics/hr-icons/titanium-carbide.png", 256, nil,
-                                   "__Spaghenutti__/graphics/hr-icons/tungsten-carbide.png", 256, nil),
+    icons = util.combine_two_icons("__Spaghetorio__/graphics/hr-icons/titanium-carbide.png", 256, nil,
+                                   "__Spaghetorio__/graphics/hr-icons/tungsten-carbide.png", 256, nil),
     effects =
     {
       {
@@ -658,7 +658,7 @@ data:extend({
     type = "technology",
     name = "sp-ceramic-matrix-composites",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/ceramic-matrix-composites-1.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/ceramic-matrix-composites-1.png",
     effects =
     {
       {
@@ -692,7 +692,7 @@ data:extend({
     type = "technology",
     name = "sp-zirconium-processing",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/zirconium-rod.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/zirconium-rod.png",
     effects =
     {
       {
@@ -732,8 +732,8 @@ data:extend({
     type = "technology",
     name = "sp-niobium-and-tantalum",  -- #ForRegEx# - technology
     icon_size = 256,
-    icons = util.combine_two_icons("__Spaghenutti__/graphics/hr-icons/niobium-billet.png", 256, nil,
-                                   "__Spaghenutti__/graphics/hr-icons/tantalum-billet.png", 256, nil),
+    icons = util.combine_two_icons("__Spaghetorio__/graphics/hr-icons/niobium-billet.png", 256, nil,
+                                   "__Spaghetorio__/graphics/hr-icons/tantalum-billet.png", 256, nil),
     effects =
     {
       {
@@ -780,7 +780,7 @@ data:extend({
     type = "technology",
     name = "sp-tungsten-processing",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/tungsten-slab.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/tungsten-slab.png",
     effects =
     {
       {
@@ -828,8 +828,8 @@ data:extend({
     type = "technology",
     name = "sp-nickel-and-cobalt",  -- #ForRegEx# - technology
     icon_size = 256,
-    icons = util.combine_two_icons("__Spaghenutti__/graphics/hr-icons/nickel-ingot.png", 256, {-20, 20},
-                                   "__Spaghenutti__/graphics/hr-icons/cobalt-billet.png", 256, {20, -20}),
+    icons = util.combine_two_icons("__Spaghetorio__/graphics/hr-icons/nickel-ingot.png", 256, {-20, 20},
+                                   "__Spaghetorio__/graphics/hr-icons/cobalt-billet.png", 256, {20, -20}),
     effects =
     {
       {
@@ -875,11 +875,11 @@ data:extend({
     type = "technology",
     name = "sp-noble-metals",  -- #ForRegEx# - technology
     icon_size = 256,
-    icons = util.combine_five_icons("__Spaghenutti__/graphics/hr-icons/silver.png", 256, nil,
-                                    "__Spaghenutti__/graphics/hr-icons/palladium.png", 256, nil,
-                                    "__Spaghenutti__/graphics/hr-icons/gold.png", 256, nil,
-                                    "__Spaghenutti__/graphics/hr-icons/iridium.png", 256, nil,
-                                    "__Spaghenutti__/graphics/hr-icons/platinum.png", 256, nil),
+    icons = util.combine_five_icons("__Spaghetorio__/graphics/hr-icons/silver.png", 256, nil,
+                                    "__Spaghetorio__/graphics/hr-icons/palladium.png", 256, nil,
+                                    "__Spaghetorio__/graphics/hr-icons/gold.png", 256, nil,
+                                    "__Spaghetorio__/graphics/hr-icons/iridium.png", 256, nil,
+                                    "__Spaghetorio__/graphics/hr-icons/platinum.png", 256, nil),
     effects =
     {
       {
@@ -926,8 +926,8 @@ data:extend({
     type = "technology",
     name = "sp-stainless-steel-processing",  -- #ForRegEx# - technology
     icon_size = 256,
-    icons = util.combine_two_icons("__Spaghenutti__/graphics/hr-icons/stainless-steel.png", 256, nil,
-                                   "__Spaghenutti__/graphics/hr-icons/chromium-plate.png", 256, nil),
+    icons = util.combine_two_icons("__Spaghetorio__/graphics/hr-icons/stainless-steel.png", 256, nil,
+                                   "__Spaghetorio__/graphics/hr-icons/chromium-plate.png", 256, nil),
     effects =
     {
       {
@@ -972,8 +972,8 @@ data:extend({
     type = "technology",
     name = "sp-aluminum-alloys",  -- #ForRegEx# - technology
     icon_size = 256,
-    icons = util.combine_two_icons("__Spaghenutti__/graphics/hr-icons/duralumin.png", 256, nil,
-                                   "__Spaghenutti__/graphics/hr-icons/aluminum-brass.png", 256, nil),
+    icons = util.combine_two_icons("__Spaghetorio__/graphics/hr-icons/duralumin.png", 256, nil,
+                                   "__Spaghetorio__/graphics/hr-icons/aluminum-brass.png", 256, nil),
     effects =
     {
       {
@@ -1011,7 +1011,7 @@ data:extend({
     type = "technology",
     name = "sp-nickel-alloys",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/inconel.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/inconel.png",
     effects =
     {
       {
@@ -1038,8 +1038,8 @@ data:extend({
     type = "technology",
     name = "sp-titanium-alloys",  -- #ForRegEx# - technology
     icon_size = 256,
-    icons = util.combine_two_icons("__Spaghenutti__/graphics/hr-icons/TiAlSn.png", 256, nil,
-                                   "__Spaghenutti__/graphics/hr-icons/TiNb.png", 256, nil),
+    icons = util.combine_two_icons("__Spaghetorio__/graphics/hr-icons/TiAlSn.png", 256, nil,
+                                   "__Spaghetorio__/graphics/hr-icons/TiNb.png", 256, nil),
     effects =
     {
       {
@@ -1076,8 +1076,8 @@ data:extend({
     type = "technology",
     name = "sp-niobium-alloys",  -- #ForRegEx# - technology
     icon_size = 256,
-    icons = util.combine_two_icons("__Spaghenutti__/graphics/hr-icons/niobium-steel.png", 256, nil,
-                                   "__Spaghenutti__/graphics/hr-icons/niobium-tin.png", 256, nil),
+    icons = util.combine_two_icons("__Spaghetorio__/graphics/hr-icons/niobium-steel.png", 256, nil,
+                                   "__Spaghetorio__/graphics/hr-icons/niobium-tin.png", 256, nil),
     effects =
     {
       {
@@ -1112,7 +1112,7 @@ data:extend({
     type = "technology",
     name = "sp-pressure-fluid",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/pressure-tube.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/pressure-tube.png",
     effects =
     {
       {
@@ -1141,7 +1141,7 @@ data:extend({
     type = "technology",
     name = "sp-filter",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/filter.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/filter.png",
     effects =
     {
       {
@@ -1168,7 +1168,7 @@ data:extend({
     type = "technology",
     name = "sp-ball-bearing",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/ball-bearing.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/ball-bearing.png",
     effects =
     {
       {
@@ -1196,7 +1196,7 @@ data:extend({
     type = "technology",
     name = "sp-servo-motor",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/servo-motor.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/servo-motor.png",
     effects =
     {
       {
@@ -1228,7 +1228,7 @@ data:extend({
     type = "technology",
     name = "sp-bleach",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/bleach.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/bleach.png",
     effects =
     {
       {
@@ -1255,7 +1255,7 @@ data:extend({
     type = "technology",
     name = "sp-magnesium-processing",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/magnesium-slab.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/magnesium-slab.png",
     effects =
     {
       {
@@ -1294,7 +1294,7 @@ data:extend({
     type = "technology",
     name = "sp-salt",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/salt.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/salt.png",
     effects =
     {
       {
@@ -1322,7 +1322,7 @@ data:extend({
     type = "technology",
     name = "sp-sodium-processing",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/sodium.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/sodium.png",
     effects =
     {
       {
@@ -1403,9 +1403,9 @@ data:extend({
     type = "technology",
     name = "sp-electronic-components",  -- #ForRegEx# - technology
     icon_size = 256,
-    icons = util.combine_three_icons("__Spaghenutti__/graphics/hr-icons/coil.png", 256, nil,
-                                     "__Spaghenutti__/graphics/hr-icons/transistor.png", 256, nil,
-                                     "__Spaghenutti__/graphics/hr-icons/diode.png", 256, nil),
+    icons = util.combine_three_icons("__Spaghetorio__/graphics/hr-icons/coil.png", 256, nil,
+                                     "__Spaghetorio__/graphics/hr-icons/transistor.png", 256, nil,
+                                     "__Spaghetorio__/graphics/hr-icons/diode.png", 256, nil),
     effects =
     {
       {
@@ -1450,7 +1450,7 @@ data:extend({
     type = "technology",
     name = "sp-integrated-circuit",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/memory-chip.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/memory-chip.png",
     effects =
     {
       {
@@ -1486,7 +1486,7 @@ data:extend({
     type = "technology",
     name = "sp-advanced-processing-unit",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/advanced-processing-unit.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/advanced-processing-unit.png",
     effects =
     {
       {
@@ -1518,7 +1518,7 @@ data:extend({
     type = "technology",
     name = "sp-silver-products",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/silver-solder.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/silver-solder.png",
     effects =
     {
       {
@@ -1554,8 +1554,8 @@ data:extend({
     type = "technology",
     name = "sp-semiconductor",  -- #ForRegEx# - technology
     icon_size = 256,
-    icons = util.combine_two_icons("__Spaghenutti__/graphics/hr-icons/antenna-chip.png", 256, nil,
-                                   "__Spaghenutti__/graphics/hr-icons/processor.png", 256, nil),
+    icons = util.combine_two_icons("__Spaghetorio__/graphics/hr-icons/antenna-chip.png", 256, nil,
+                                   "__Spaghetorio__/graphics/hr-icons/processor.png", 256, nil),
     effects =
     {
       {
@@ -1590,7 +1590,7 @@ data:extend({
     type = "technology",
     name = "sp-quantum-computing",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/cubit.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/cubit.png",
     effects =
     {
       {
@@ -1628,7 +1628,7 @@ data:extend({
     type = "technology",
     name = "sp-fabric",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/fabric.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/fabric.png",
     effects =
     {
       {
@@ -1658,7 +1658,7 @@ data:extend({
     type = "technology",
     name = "sp-magnet",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/magnet.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/magnet.png",
     effects =
     {
       {
@@ -1692,7 +1692,7 @@ data:extend({
     type = "technology",
     name = "sp-neodymium-magnet",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/neodymium-magnet.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/neodymium-magnet.png",
     effects =
     {
       {
@@ -1724,7 +1724,7 @@ data:extend({
     type = "technology",
     name = "sp-diamond",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/diamond.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/diamond.png",
     effects =
     {
       {
@@ -1756,7 +1756,7 @@ data:extend({
     type = "technology",
     name = "sp-heatsink",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/heatsink.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/heatsink.png",
     effects =
     {
       {
@@ -1777,7 +1777,7 @@ data:extend({
     type = "technology",
     name = "sp-plate-heat-exchanger",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/plate-heat-exchanger.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/plate-heat-exchanger.png",
     effects =
     {
       {
@@ -1806,7 +1806,7 @@ data:extend({
     type = "technology",
     name = "sp-cooling",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/coolant.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/coolant.png",
     effects =
     {
       {
@@ -1843,7 +1843,7 @@ data:extend({
     type = "technology",
     name = "sp-spark-plug",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/spark-plug.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/spark-plug.png",
     effects =
     {
       {
@@ -1875,8 +1875,8 @@ data:extend({
     type = "technology",
     name = "sp-phosphorus-processing",  -- #ForRegEx# - technology
     icon_size = 256,
-    icons = util.combine_two_icons("__Spaghenutti__/graphics/hr-icons/phosphoric-acid.png", 256, nil,
-                                   "__Spaghenutti__/graphics/hr-icons/phosphorus.png", 256, nil),
+    icons = util.combine_two_icons("__Spaghetorio__/graphics/hr-icons/phosphoric-acid.png", 256, nil,
+                                   "__Spaghetorio__/graphics/hr-icons/phosphorus.png", 256, nil),
     effects =
     {
       {
@@ -1911,7 +1911,7 @@ data:extend({
     type = "technology",
     name = "sp-perchloric-acid",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/perchloric-acid.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/perchloric-acid.png",
     effects =
     {
       {
@@ -1938,7 +1938,7 @@ data:extend({
     type = "technology",
     name = "sp-turbine-parts",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/turbine-rotor.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/turbine-rotor.png",
     effects =
     {
       {
@@ -1986,7 +1986,7 @@ data:extend({
     type = "technology",
     name = "sp-rocket-engine",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/rocket-engine.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/rocket-engine.png",
     effects =
     {
       {
@@ -2031,7 +2031,7 @@ data:extend({
     type = "technology",
     name = "sp-solid-rocket-motor",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/solid-rocket-motor.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/solid-rocket-motor.png",
     effects =
     {
       {
@@ -2063,7 +2063,7 @@ data:extend({
     type = "technology",
     name = "sp-heat-resistant-tile",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/heat-resistant-tile.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/heat-resistant-tile.png",
     effects =
     {
       {
@@ -2095,7 +2095,7 @@ data:extend({
     type = "technology",
     name = "sp-plutonium-processing",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/plutonium-240-1.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/plutonium-240-1.png",
     effects =
     {
       {
@@ -2133,7 +2133,7 @@ data:extend({
     type = "technology",
     name = "sp-plutonium-fuel-rod",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/plutonium-fuel-rod.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/plutonium-fuel-rod.png",
     effects =
     {
       {
@@ -2170,7 +2170,7 @@ data:extend({
     type = "technology",
     name = "sp-nuclear-waste-processing",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/nuclear-waste.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/nuclear-waste.png",
     effects =
     {
       {
@@ -2206,8 +2206,8 @@ data:extend({
     type = "technology",
     name = "sp-advanced-nuclear-waste-processing",  -- #ForRegEx# - technology
     icon_size = 256,
-    icons = util.overlay_small_icon_for_technology("__Spaghenutti__/graphics/hr-icons/nuclear-waste.png", 256,
-                                                   "__Spaghenutti__/graphics/hr-icons/plutonium-239-1.png", 256),
+    icons = util.overlay_small_icon_for_technology("__Spaghetorio__/graphics/hr-icons/nuclear-waste.png", 256,
+                                                   "__Spaghetorio__/graphics/hr-icons/plutonium-239-1.png", 256),
     effects =
     {
       {
@@ -2242,7 +2242,7 @@ data:extend({
     type = "technology",
     name = "sp-titanium-nitride",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/titanium-nitride-1.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/titanium-nitride-1.png",
     effects =
     {
       {
@@ -2269,7 +2269,7 @@ data:extend({
     type = "technology",
     name = "sp-superconductor",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/superconductor.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/superconductor.png",
     effects =
     {
       {
@@ -2301,8 +2301,8 @@ data:extend({
     type = "technology",
     name = "sp-antimony-processing",  -- #ForRegEx# - technology
     icon_size = 256,
-    icons = util.combine_two_icons("__Spaghenutti__/graphics/hr-icons/stibnite-1.png", 256, nil,
-                                   "__Spaghenutti__/graphics/hr-icons/antimony.png", 256, nil),
+    icons = util.combine_two_icons("__Spaghetorio__/graphics/hr-icons/stibnite-1.png", 256, nil,
+                                   "__Spaghetorio__/graphics/hr-icons/antimony.png", 256, nil),
     effects =
     {
       {
@@ -2372,8 +2372,8 @@ data:extend({
     type = "technology",
     name = "sp-tellurium-processing",  -- #ForRegEx# - technology
     icon_size = 256,
-    icons = util.combine_two_icons("__Spaghenutti__/graphics/hr-icons/tellurium-hydroxide.png", 256, nil,
-                                   "__Spaghenutti__/graphics/hr-icons/tellurium-1.png", 256, nil),
+    icons = util.combine_two_icons("__Spaghetorio__/graphics/hr-icons/tellurium-hydroxide.png", 256, nil,
+                                   "__Spaghetorio__/graphics/hr-icons/tellurium-1.png", 256, nil),
     effects =
     {
       {
@@ -2408,7 +2408,7 @@ data:extend({
     type = "technology",
     name = "sp-high-purity-silicon-processing",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/high-purity-silicon.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/high-purity-silicon.png",
     effects =
     {
       {
@@ -2441,7 +2441,7 @@ data:extend({
     type = "technology",
     name = "sp-insulation-sheet",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/insulation-sheet.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/insulation-sheet.png",
     effects =
     {
       {
@@ -2468,7 +2468,7 @@ data:extend({
     type = "technology",
     name = "sp-rubber",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/rubber.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/rubber.png",
     effects =
     {
       {
@@ -2507,7 +2507,7 @@ data:extend({
     type = "technology",
     name = "sp-nitenol",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/nitenol.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/nitenol.png",
     effects =
     {
       {
@@ -2535,7 +2535,7 @@ data:extend({
     type = "technology",
     name = "sp-invar",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/invar.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/invar.png",
     effects =
     {
       {
@@ -2563,7 +2563,7 @@ data:extend({
     type = "technology",
     name = "sp-composites",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/composites.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/composites.png",
     effects =
     {
       {
@@ -2599,7 +2599,7 @@ data:extend({
     type = "technology",
     name = "sp-high-pressure-tank",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/high-pressure-tank.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/high-pressure-tank.png",
     effects =
     {
       {
@@ -2631,8 +2631,8 @@ data:extend({
     type = "technology",
     name = "sp-crystal-growing",  -- #ForRegEx# - technology
     icon_size = 256,
-    icons = util.combine_two_icons("__Spaghenutti__/graphics/hr-icons/quasicrystal.png", 256, nil,
-                                   "__Spaghenutti__/graphics/hr-icons/monocrystal.png", 256, nil),
+    icons = util.combine_two_icons("__Spaghetorio__/graphics/hr-icons/quasicrystal.png", 256, nil,
+                                   "__Spaghetorio__/graphics/hr-icons/monocrystal.png", 256, nil),
     effects =
     {
       {
@@ -2672,7 +2672,7 @@ data:extend({
     type = "technology",
     name = "sp-blunagium-processing",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/blunagium-bar.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/blunagium-bar.png",
     effects =
     {
       {
@@ -2718,7 +2718,7 @@ data:extend({
     type = "technology",
     name = "sp-grobgnum-processing",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/grobgnum-bar.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/grobgnum-bar.png",
     effects =
     {
       {
@@ -2776,7 +2776,7 @@ data:extend({
     type = "technology",
     name = "sp-rukite-processing",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/rukite-bar.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/rukite-bar.png",
     effects =
     {
       {
@@ -2818,7 +2818,7 @@ data:extend({
     type = "technology",
     name = "sp-yemnuth-processing",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/yemnuth-shard.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/yemnuth-shard.png",
     effects =
     {
       {
@@ -2864,7 +2864,7 @@ data:extend({
     type = "technology",
     name = "sp-noble-gases",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/xenon.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/xenon.png",
     effects =
     {
       {
@@ -2901,8 +2901,8 @@ data:extend({
     type = "technology",
     name = "sp-quantum-tech",  -- #ForRegEx# - technology
     icon_size = 256,
-    icons = util.combine_two_icons("__Spaghenutti__/graphics/hr-icons/quantum-crystal.png", 256, nil,
-                                   "__Spaghenutti__/graphics/hr-icons/quantum-foam.png", 256, nil),
+    icons = util.combine_two_icons("__Spaghetorio__/graphics/hr-icons/quantum-crystal.png", 256, nil,
+                                   "__Spaghetorio__/graphics/hr-icons/quantum-foam.png", 256, nil),
     effects =
     {
       {
@@ -2940,7 +2940,7 @@ data:extend({
     type = "technology",
     name = "sp-extreme-low-temperature-tech",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/fermium-condensate.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/fermium-condensate.png",
     effects =
     {
       {
@@ -2977,7 +2977,7 @@ data:extend({
     type = "technology",
     name = "sp-ion-thruster",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/ion-thruster.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/ion-thruster.png",
     effects =
     {
       {
@@ -3014,7 +3014,7 @@ data:extend({
     type = "technology",
     name = "sp-blunagium-explorer",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/blunagium-explorer.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/blunagium-explorer.png",
     effects =
     {
       {
@@ -3058,7 +3058,7 @@ data:extend({
     type = "technology",
     name = "sp-gravitonium",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/gravitonium.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/gravitonium.png",
     effects =
     {
       {
@@ -3094,7 +3094,7 @@ data:extend({
     type = "technology",
     name = "sp-rukite-explorer",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/rukite-explorer.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/rukite-explorer.png",
     effects =
     {
       {
@@ -3134,7 +3134,7 @@ data:extend({
     type = "technology",
     name = "sp-yemnuth-explorer",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/yemnuth-explorer.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/yemnuth-explorer.png",
     effects =
     {
       {
@@ -3186,7 +3186,7 @@ data:extend({
     type = "technology",
     name = "sp-grobgnum-explorer",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/grobgnum-explorer.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/grobgnum-explorer.png",
     effects =
     {
       {
@@ -3233,7 +3233,7 @@ data:extend({
     type = "technology",
     name = "sp-heavy-ball-bearing",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/heavy-bearing.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/heavy-bearing.png",
     effects =
     {
       {
@@ -3267,7 +3267,7 @@ data:extend({
     type = "technology",
     name = "sp-kevlar",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/kevlar.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/kevlar.png",
     effects =
     {
       {
@@ -3298,7 +3298,7 @@ data:extend({
     type = "technology",
     name = "sp-electrode",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/electrode.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/electrode.png",
     effects =
     {
       {
@@ -3333,7 +3333,7 @@ data:extend({
     type = "technology",
     name = "sp-flux-capacitor",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/flux-capacitor.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/flux-capacitor.png",
     effects =
     {
       {
@@ -3372,7 +3372,7 @@ data:extend({
     type = "technology",
     name = "sp-relay",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/relay.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/relay.png",
     effects =
     {
       {
@@ -3402,7 +3402,7 @@ data:extend({
     type = "technology",
     name = "sp-transformer",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/transformer.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/transformer.png",
     effects =
     {
       {
@@ -3436,7 +3436,7 @@ data:extend({
     type = "technology",
     name = "sp-dynamo",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/dynamo.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/dynamo.png",
     effects =
     {
       {
@@ -3463,7 +3463,7 @@ data:extend({
     type = "technology",
     name = "sp-compressor",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/compressor.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/compressor.png",
     effects =
     {
       {
@@ -3491,7 +3491,7 @@ data:extend({
     type = "technology",
     name = "sp-advanced-gearbox",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/heavy-gearbox.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/heavy-gearbox.png",
     effects =
     {
       {
@@ -3525,7 +3525,7 @@ data:extend({
     type = "technology",
     name = "sp-optical-sensor",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/cmos.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/cmos.png",
     effects =
     {
       {
@@ -3561,7 +3561,7 @@ data:extend({
     type = "technology",
     name = "sp-actuator",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/actuator.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/actuator.png",
     effects =
     {
       {
@@ -3587,7 +3587,7 @@ data:extend({
     type = "technology",
     name = "sp-catalyst",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/catalyst.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/catalyst.png",
     effects =
     {
       {
@@ -3618,7 +3618,7 @@ data:extend({
     type = "technology",
     name = "sp-chronomatter",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/chronomatter.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/chronomatter.png",
     effects =
     {
       {
@@ -3659,7 +3659,7 @@ data:extend({
     type = "technology",
     name = "sp-propane-products",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/methyl-tert-butyl-ether.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/methyl-tert-butyl-ether.png",
     effects =
     {
       {
@@ -3702,7 +3702,7 @@ data:extend({
     type = "technology",
     name = "sp-ethylene-products",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/ethylene-dichloride.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/ethylene-dichloride.png",
     effects =
     {
       {
@@ -3736,7 +3736,7 @@ data:extend({
     type = "technology",
     name = "sp-sodium-hydroxide",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/sodium-hydroxide.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/sodium-hydroxide.png",
     effects =
     {
       {
@@ -3772,7 +3772,7 @@ data:extend({
     type = "technology",
     name = "sp-vinyl-chloride",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/vinyl-chloride.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/vinyl-chloride.png",
     effects =
     {
       {
@@ -3808,7 +3808,7 @@ data:extend({
     type = "technology",
     name = "sp-steel-wheel",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/wheel.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/wheel.png",
     effects =
     {
       {
@@ -3829,7 +3829,7 @@ data:extend({
     type = "technology",
     name = "sp-control-unit",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/control-unit.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/control-unit.png",
     effects =
     {
       {
@@ -3864,7 +3864,7 @@ data:extend({
     type = "technology",
     name = "sp-cybernetics",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/cybernetics.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/cybernetics.png",
     effects =
     {
       {
@@ -3905,7 +3905,7 @@ data:extend({
     type = "technology",
     name = "sp-nanobot",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/nanobot.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/nanobot.png",
     effects =
     {
       {
@@ -3944,7 +3944,7 @@ data:extend({
     type = "technology",
     name = "sp-speed-module-4",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/technology/speed-module-4.png",
+    icon = "__Spaghetorio__/graphics/technology/speed-module-4.png",
     effects =
     {
       {
@@ -3981,7 +3981,7 @@ data:extend({
     type = "technology",
     name = "sp-effectivity-module-4",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/technology/effectivity-module-4.png",
+    icon = "__Spaghetorio__/graphics/technology/effectivity-module-4.png",
     effects =
     {
       {
@@ -4018,7 +4018,7 @@ data:extend({
     type = "technology",
     name = "sp-productivity-module-4",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/technology/productivity-module-4.png",
+    icon = "__Spaghetorio__/graphics/technology/productivity-module-4.png",
     effects =
     {
       {
@@ -4059,7 +4059,7 @@ data:extend({
     type = "technology",
     name = "sp-alien-compounds",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/imersite-rukite-beam.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/imersite-rukite-beam.png",
     effects =
     {
       {
@@ -4108,7 +4108,7 @@ data:extend({
     type = "technology",
     name = "sp-advanced-alien-compounds",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/blunagium-yemnuth-beam.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/blunagium-yemnuth-beam.png",
     effects =
     {
       {
@@ -4157,7 +4157,7 @@ data:extend({
     type = "technology",
     name = "sp-gravitational-devices",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/boson-blossom.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/boson-blossom.png",
     effects =
     {
       {
@@ -4210,7 +4210,7 @@ data:extend({
     type = "technology",
     name = "sp-advanced-bio-processors",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/neuropulse-module.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/neuropulse-module.png",
     effects =
     {
       {
@@ -4259,7 +4259,7 @@ data:extend({
     type = "technology",
     name = "sp-rukite-gearbox",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/rukite-gearbox.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/rukite-gearbox.png",
     effects =
     {
       {
@@ -4300,7 +4300,7 @@ data:extend({
     type = "technology",
     name = "sp-quantum-realm",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/quantized-orbital-flower.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/quantized-orbital-flower.png",
     effects =
     {
       {
@@ -4361,7 +4361,7 @@ data:extend({
     type = "technology",
     name = "sp-quantum-realm-stabilization",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/quantum-tube.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/quantum-tube.png",
     effects =
     {
       {
@@ -4412,7 +4412,7 @@ data:extend({
     type = "technology",
     name = "sp-frictionless-joint",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/frictionless-joint.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/frictionless-joint.png",
     effects =
     {
       {
@@ -4455,7 +4455,7 @@ data:extend({
     type = "technology",
     name = "sp-alien-processing",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/alpha-wave-tray-array.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/alpha-wave-tray-array.png",
     effects =
     {
       {
@@ -4514,7 +4514,7 @@ data:extend({
     type = "technology",
     name = "sp-advanced-quantum-technology",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/subatomic-condenser.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/subatomic-condenser.png",
     effects =
     {
       {
@@ -4564,7 +4564,7 @@ data:extend({
     type = "technology",
     name = "sp-extreme-heat-source",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/extreme-heat-source.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/extreme-heat-source.png",
     effects =
     {
       {
@@ -4614,7 +4614,7 @@ data:extend({
     type = "technology",
     name = "sp-high-temperature-superconducting",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/proton-neutron-superconductor.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/proton-neutron-superconductor.png",
     effects =
     {
       {
@@ -4665,8 +4665,8 @@ data:extend({
     type = "technology",
     name = "sp-alien-crystal-refinment",  -- #ForRegEx# - technology
     icon_size = 256,
-    icons = util.combine_two_icons("__Spaghenutti__/graphics/hr-icons/blunagium-imersite-slab.png", 256, nil,
-                                   "__Spaghenutti__/graphics/hr-icons/radiant-glass.png", 256, nil),
+    icons = util.combine_two_icons("__Spaghetorio__/graphics/hr-icons/blunagium-imersite-slab.png", 256, nil,
+                                   "__Spaghetorio__/graphics/hr-icons/radiant-glass.png", 256, nil),
     effects =
     {
       {
@@ -4709,7 +4709,7 @@ data:extend({
     type = "technology",
     name = "sp-star-stabilization",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/miniaturized-star-core-stabilizer.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/miniaturized-star-core-stabilizer.png",
     effects =
     {
       {
@@ -4769,7 +4769,7 @@ data:extend({
     type = "technology",
     name = "sp-information-cube",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/information-cube.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/information-cube.png",
     effects =
     {
       {
@@ -4816,7 +4816,7 @@ data:extend({
     type = "technology",
     name = "sp-alien-genetics",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/evolution-cell-container.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/evolution-cell-container.png",
     effects =
     {
       {
@@ -4866,7 +4866,7 @@ data:extend({
     type = "technology",
     name = "sp-sideral-computing",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/sideral-compute-core.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/sideral-compute-core.png",
     effects =
     {
       {
@@ -4913,7 +4913,7 @@ data:extend({
     type = "technology",
     name = "sp-relativity-condenser",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/relativity-condenser.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/relativity-condenser.png",
     effects =
     {
       {
@@ -4956,7 +4956,7 @@ data:extend({
     type = "technology",
     name = "sp-omni-pulse-generator",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/omni-pulse-generator.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/omni-pulse-generator.png",
     effects =
     {
       {
@@ -5000,7 +5000,7 @@ data:extend({
     type = "technology",
     name = "sp-dark-matter",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/antimatter-engine.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/antimatter-engine.png",
     effects =
     {
       {
@@ -5051,10 +5051,10 @@ data:extend({
     type = "technology",
     name = "sp-basic-acrosphere-conversion",  -- #ForRegEx# - technology
     icon_size = 256,
-    icons = util.combine_four_icons("__Spaghenutti__/graphics/hr-icons/blunagium-acrosphere-1.png", 256, nil,
-                                    "__Spaghenutti__/graphics/hr-icons/grobgnum-acrosphere-1.png", 256, nil,
-                                    "__Spaghenutti__/graphics/hr-icons/rukite-acrosphere-1.png", 256, nil,
-                                    "__Spaghenutti__/graphics/hr-icons/yemnuth-acrosphere-1.png", 256, nil),
+    icons = util.combine_four_icons("__Spaghetorio__/graphics/hr-icons/blunagium-acrosphere-1.png", 256, nil,
+                                    "__Spaghetorio__/graphics/hr-icons/grobgnum-acrosphere-1.png", 256, nil,
+                                    "__Spaghetorio__/graphics/hr-icons/rukite-acrosphere-1.png", 256, nil,
+                                    "__Spaghetorio__/graphics/hr-icons/yemnuth-acrosphere-1.png", 256, nil),
     effects =
     {
       {
@@ -5107,10 +5107,10 @@ data:extend({
     type = "technology",
     name = "sp-upgrade-acrosphere-conversion",  -- #ForRegEx# - technology
     icon_size = 256,
-    icons = util.combine_four_icons("__Spaghenutti__/graphics/hr-icons/blunagium-acrosphere-2.png", 256, nil,
-                                    "__Spaghenutti__/graphics/hr-icons/grobgnum-acrosphere-2.png", 256, nil,
-                                    "__Spaghenutti__/graphics/hr-icons/rukite-acrosphere-2.png", 256, nil,
-                                    "__Spaghenutti__/graphics/hr-icons/yemnuth-acrosphere-2.png", 256, nil),
+    icons = util.combine_four_icons("__Spaghetorio__/graphics/hr-icons/blunagium-acrosphere-2.png", 256, nil,
+                                    "__Spaghetorio__/graphics/hr-icons/grobgnum-acrosphere-2.png", 256, nil,
+                                    "__Spaghetorio__/graphics/hr-icons/rukite-acrosphere-2.png", 256, nil,
+                                    "__Spaghetorio__/graphics/hr-icons/yemnuth-acrosphere-2.png", 256, nil),
     effects =
     {
       {
@@ -5154,9 +5154,9 @@ data:extend({
     type = "technology",
     name = "sp-acroproduct",  -- #ForRegEx# - technology
     icon_size = 256,
-    icons = util.combine_three_icons("__Spaghenutti__/graphics/hr-icons/acrocrystal.png", 256, nil,
-                                     "__Spaghenutti__/graphics/hr-icons/acromatter.png", 256, nil,
-                                     "__Spaghenutti__/graphics/hr-icons/acrovoid.png", 256, nil),
+    icons = util.combine_three_icons("__Spaghetorio__/graphics/hr-icons/acrocrystal.png", 256, nil,
+                                     "__Spaghetorio__/graphics/hr-icons/acromatter.png", 256, nil,
+                                     "__Spaghetorio__/graphics/hr-icons/acrovoid.png", 256, nil),
     effects =
     {
       {
@@ -5204,8 +5204,8 @@ data:extend({
     icon_size = 256,
     icons = 
     {
-      {icon = "__Spaghenutti__/graphics/arrows/acroproduct-recipes-arrow-256x256.png", icon_size = 256, scale = 2},
-      {icon = "__Spaghenutti__/graphics/hr-icons/acrocrystal.png", icon_size = 256}
+      {icon = "__Spaghetorio__/graphics/arrows/acroproduct-recipes-arrow-256x256.png", icon_size = 256, scale = 2},
+      {icon = "__Spaghetorio__/graphics/hr-icons/acrocrystal.png", icon_size = 256}
     },
     effects =
     {
@@ -5298,8 +5298,8 @@ data:extend({
     icon_size = 256,
     icons = 
     {
-      {icon = "__Spaghenutti__/graphics/arrows/acroproduct-recipes-arrow-256x256.png", icon_size = 256, scale = 2},
-      {icon = "__Spaghenutti__/graphics/hr-icons/acrovoid.png", icon_size = 256}
+      {icon = "__Spaghetorio__/graphics/arrows/acroproduct-recipes-arrow-256x256.png", icon_size = 256, scale = 2},
+      {icon = "__Spaghetorio__/graphics/hr-icons/acrovoid.png", icon_size = 256}
     },
     effects =
     {
@@ -5416,7 +5416,7 @@ data:extend({
     type = "technology",
     name = "sp-electronic-science-pack-1",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/electronic-science-pack-1.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/electronic-science-pack-1.png",
     effects =
     {
       {
@@ -5470,7 +5470,7 @@ data:extend({
     type = "technology",
     name = "sp-material-science-pack-1",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/material-science-pack-1.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/material-science-pack-1.png",
     effects =
     {
       {
@@ -5495,7 +5495,7 @@ data:extend({
     type = "technology",
     name = "sp-automation-science-pack-2",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/automation-science-pack-2.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/automation-science-pack-2.png",
     effects =
     {
       {
@@ -5527,7 +5527,7 @@ data:extend({
     type = "technology",
     name = "sp-logistic-science-pack-2",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/logistic-science-pack-2.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/logistic-science-pack-2.png",
     effects =
     {
       {
@@ -5558,7 +5558,7 @@ data:extend({
     type = "technology",
     name = "sp-military-science-pack-2",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/military-science-pack-2.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/military-science-pack-2.png",
     effects =
     {
       {
@@ -5589,7 +5589,7 @@ data:extend({
     type = "technology",
     name = "sp-chemical-science-pack-2",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/chemical-science-pack-2.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/chemical-science-pack-2.png",
     effects =
     {
       {
@@ -5652,7 +5652,7 @@ data:extend({
     type = "technology",
     name = "sp-geological-science-pack-2",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/geological-science-pack-2.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/geological-science-pack-2.png",
     effects =
     {
       {
@@ -5682,7 +5682,7 @@ data:extend({
     type = "technology",
     name = "sp-material-science-pack-2",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/material-science-pack-2.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/material-science-pack-2.png",
     effects =
     {
       {
@@ -5745,7 +5745,7 @@ data:extend({
     type = "technology",
     name = "sp-computer-science-pack-2",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/computer-science-pack-2.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/computer-science-pack-2.png",
     effects =
     {
       {
@@ -5775,7 +5775,7 @@ data:extend({
     type = "technology",
     name = "sp-nuclear-science-pack-2",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/nuclear-science-pack-2.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/nuclear-science-pack-2.png",
     effects =
     {
       {
@@ -5807,7 +5807,7 @@ data:extend({
     type = "technology",
     name = "sp-automation-science-pack-3",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/automation-science-pack-3.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/automation-science-pack-3.png",
     effects =
     {
       {
@@ -5840,7 +5840,7 @@ data:extend({
     type = "technology",
     name = "sp-logistic-science-pack-3",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/logistic-science-pack-3.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/logistic-science-pack-3.png",
     effects =
     {
       {
@@ -5871,7 +5871,7 @@ data:extend({
     type = "technology",
     name = "sp-military-science-pack-3",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/military-science-pack-3.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/military-science-pack-3.png",
     effects =
     {
       {
@@ -5903,7 +5903,7 @@ data:extend({
     type = "technology",
     name = "sp-chemical-science-pack-3",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/chemical-science-pack-3.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/chemical-science-pack-3.png",
     effects =
     {
       {
@@ -5934,7 +5934,7 @@ data:extend({
     type = "technology",
     name = "sp-electronic-science-pack-3",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/electronic-science-pack-3.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/electronic-science-pack-3.png",
     effects =
     {
       {
@@ -5965,7 +5965,7 @@ data:extend({
     type = "technology",
     name = "sp-geological-science-pack-3",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/geological-science-pack-3.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/geological-science-pack-3.png",
     effects =
     {
       {
@@ -5996,7 +5996,7 @@ data:extend({
     type = "technology",
     name = "sp-material-science-pack-3",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/material-science-pack-3.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/material-science-pack-3.png",
     effects =
     {
       {
@@ -6028,7 +6028,7 @@ data:extend({
     type = "technology",
     name = "sp-production-science-pack-3",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/production-science-pack-3.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/production-science-pack-3.png",
     effects =
     {
       {
@@ -6060,7 +6060,7 @@ data:extend({
     type = "technology",
     name = "sp-astronomical-science-pack-3",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/astronomical-science-pack-3.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/astronomical-science-pack-3.png",
     effects =
     {
       {
@@ -6100,7 +6100,7 @@ data:extend({
     type = "technology",
     name = "sp-computer-science-pack-3",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/computer-science-pack-3.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/computer-science-pack-3.png",
     effects =
     {
       {
@@ -6132,7 +6132,7 @@ data:extend({
     type = "technology",
     name = "sp-nuclear-science-pack-3",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/nuclear-science-pack-3.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/nuclear-science-pack-3.png",
     effects =
     {
       {
@@ -6167,7 +6167,7 @@ data:extend({
     type = "technology",
     name = "sp-utility-science-pack-3",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/utility-science-pack-3.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/utility-science-pack-3.png",
     effects =
     {
       {
@@ -6202,7 +6202,7 @@ data:extend({
     type = "technology",
     name = "sp-uniformity-science-pack",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghenutti__/graphics/hr-icons/uniformity-science-pack.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/uniformity-science-pack.png",
     effects =
     {
       {

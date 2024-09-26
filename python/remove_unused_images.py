@@ -10,7 +10,7 @@ import re
 
 import constants
 
-IMAGE_REGEX = r"\"__Spaghenutti__[^\"]*\""
+IMAGE_REGEX = r"\"__Spaghetorio__[^\"]*\""
 
 image_paths = [y for x in os.walk(constants.GRAPHICS_PATH) for y in glob.glob(os.path.join(x[0], '*.png'))]  # images in graphics
 used_images_paths = []
@@ -29,7 +29,7 @@ for lua_file in lua_files:
     file.close()
 
 # fix paths
-used_images_paths = [used_images_path.replace(r"__Spaghenutti__", os.getcwd()).replace("\"", "").replace("\\", "/") for used_images_path in used_images_paths]
+used_images_paths = [used_images_path.replace(r"__Spaghetorio__", os.getcwd()).replace("\"", "").replace("\\", "/") for used_images_path in used_images_paths]
 
 # [print(used_images_path) for used_images_path in used_images_paths]
 

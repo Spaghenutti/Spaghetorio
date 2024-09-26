@@ -9,7 +9,7 @@ data:extend({
     type = "item-group",
     name = "base-products",
     order = "a",
-    icons = util.combine_three_icons("__base__/graphics/icons/coal.png", 64, nil, "__base__/graphics/icons/copper-plate.png", 64, nil, "__Spaghenutti__/graphics/icons/zircon.png", 64, nil),
+    icons = util.combine_three_icons("__base__/graphics/icons/coal.png", 64, nil, "__base__/graphics/icons/copper-plate.png", 64, nil, "__Spaghetorio__/graphics/icons/zircon.png", 64, nil),
     icon_size = 64,
   },
   -- move raw-resources to new item group base-products

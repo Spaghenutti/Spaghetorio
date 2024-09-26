@@ -7,7 +7,7 @@ data:extend({
   {
     type = "recipe",
     name = "kr-vc-sp-aluminum-ore",
-    icon = "__Spaghenutti__/graphics/crushing/crushing-aluminum-ore.png",
+    icon = "__Spaghetorio__/graphics/crushing/crushing-aluminum-ore.png",
     icon_size = 256,
     mip_maps = 4,
     category = "crushing",
@@ -26,7 +26,7 @@ data:extend({
   {
     type = "recipe",
     name = "kr-vc-sp-chromite",
-    icon = "__Spaghenutti__/graphics/crushing/crushing-chromite.png",
+    icon = "__Spaghetorio__/graphics/crushing/crushing-chromite.png",
     icon_size = 256,
     mip_maps = 4,
     category = "crushing",
@@ -46,7 +46,7 @@ data:extend({
   {
     type = "recipe",
     name = "kr-vc-coal",  -- replaces "sp-graphite" recipe
-    icon = "__Spaghenutti__/graphics/crushing/crushing-coal.png",
+    icon = "__Spaghetorio__/graphics/crushing/crushing-coal.png",
     icon_size = 256,
     category = "crushing",
     subgroup = "crushed-resource",
@@ -63,7 +63,7 @@ data:extend({
   {
     type = "recipe",
     name = "kr-vc-coke",  -- replaces "sp-graphite" recipe
-    icon = "__Spaghenutti__/graphics/crushing/crushing-coke.png",
+    icon = "__Spaghetorio__/graphics/crushing/crushing-coke.png",
     icon_size = 256,
     category = "crushing",
     subgroup = "crushed-resource",
@@ -79,7 +79,7 @@ data:extend({
   {
     type = "recipe",
     name = "kr-vc-copper-ore",
-    icon = "__Spaghenutti__/graphics/crushing/crushing-copper-ore.png",
+    icon = "__Spaghetorio__/graphics/crushing/crushing-copper-ore.png",
     icon_size = 256,
     mip_maps = 4,
     category = "crushing",
@@ -97,7 +97,7 @@ data:extend({
   {
     type = "recipe",
     name = "kr-vc-iron-ore",
-    icon = "__Spaghenutti__/graphics/crushing/crushing-iron-ore.png",
+    icon = "__Spaghetorio__/graphics/crushing/crushing-iron-ore.png",
     icon_size = 256,
     mip_maps = 4,
     category = "crushing",
@@ -115,7 +115,7 @@ data:extend({
   {
     type = "recipe",
     name = "kr-vc-sp-limestone",  -- replaces "sp-calcium-carbonate" recipe
-    icon = "__Spaghenutti__/graphics/crushing/crushing-limestone.png",
+    icon = "__Spaghetorio__/graphics/crushing/crushing-limestone.png",
     icon_size = 256,
     mip_maps = 4,
     category = "crushing",
@@ -134,7 +134,7 @@ data:extend({
   {
     type = "recipe",
     name = "kr-vc-sp-magnesium-ore",
-    icon = "__Spaghenutti__/graphics/crushing/crushing-magnesium-ore.png",
+    icon = "__Spaghetorio__/graphics/crushing/crushing-magnesium-ore.png",
     icon_size = 256,
     mip_maps = 4,
     category = "crushing",
@@ -153,7 +153,7 @@ data:extend({
   {
     type = "recipe",
     name = "kr-vc-sp-nickel-ore",
-    icon = "__Spaghenutti__/graphics/crushing/crushing-nickel-ore.png",
+    icon = "__Spaghetorio__/graphics/crushing/crushing-nickel-ore.png",
     icon_size = 256,
     mip_maps = 4,
     category = "crushing",
@@ -173,7 +173,7 @@ data:extend({
   {
     type = "recipe",
     name = "kr-vc-sp-spodumene",
-    icon = "__Spaghenutti__/graphics/crushing/crushing-spodumene.png",
+    icon = "__Spaghetorio__/graphics/crushing/crushing-spodumene.png",
     icon_size = 256,
     mip_maps = 4,
     category = "crushing",
@@ -192,7 +192,7 @@ data:extend({
   {
     type = "recipe",
     name = "kr-vc-sp-tinstone",
-    icon = "__Spaghenutti__/graphics/crushing/crushing-tinstone.png",
+    icon = "__Spaghetorio__/graphics/crushing/crushing-tinstone.png",
     icon_size = 256,
     mip_maps = 4,
     category = "crushing",
@@ -211,7 +211,7 @@ data:extend({
   {
     type = "recipe",
     name = "kr-vc-sp-titanium-ore",
-    icon = "__Spaghenutti__/graphics/crushing/crushing-titanium-ore.png",
+    icon = "__Spaghetorio__/graphics/crushing/crushing-titanium-ore.png",
     icon_size = 256,
     mip_maps = 4,
     category = "crushing",
@@ -229,7 +229,7 @@ data:extend({
   {
     type = "recipe",
     name = "kr-vc-sp-tungsten-ore",
-    icon = "__Spaghenutti__/graphics/crushing/crushing-tungsten-ore.png",
+    icon = "__Spaghetorio__/graphics/crushing/crushing-tungsten-ore.png",
     icon_size = 256,
     mip_maps = 4,
     category = "crushing",
@@ -248,7 +248,7 @@ data:extend({
   {
     type = "recipe",
     name = "kr-vc-sp-zinc-ore",
-    icon = "__Spaghenutti__/graphics/crushing/crushing-zinc-ore.png",
+    icon = "__Spaghetorio__/graphics/crushing/crushing-zinc-ore.png",
     icon_size = 256,
     mip_maps = 4,
     category = "crushing",
@@ -268,7 +268,7 @@ data:extend({
   {
     type = "recipe",
     name = "kr-vc-sp-zirconium-ore",
-    icon = "__Spaghenutti__/graphics/crushing/crushing-zirconium-ore.png",
+    icon = "__Spaghetorio__/graphics/crushing/crushing-zirconium-ore.png",
     icon_size = 256,
     mip_maps = 4,
     category = "crushing",
@@ -289,7 +289,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-deuterium",  -- #ForRegEx# - recipe
-    icon = "__Spaghenutti__/graphics/dummy/dummy-recipe-default.png",
+    icon = "__Spaghetorio__/graphics/dummy/dummy-recipe-default.png",
     icon_size = 64,
     mip_maps = 4,
     category = "electrolysis",
@@ -308,7 +308,7 @@ data:extend({
     type = "recipe",
     name = "sp-wood-from-urea",  -- #ForRegEx# - recipe
     icons = util.overlay_small_icon("__Krastorio2Assets__/icons/recipes/wood-plus.png", 64,
-                                    "__Spaghenutti__/graphics/icons/urea.png", 64),
+                                    "__Spaghetorio__/graphics/icons/urea.png", 64),
     category = "smelting",
     enabled = false,
     energy_required = 75,
@@ -349,7 +349,7 @@ data:extend({
     type = "recipe",
     name = "sp-glass-from-calcium",  -- #ForRegEx# - recipe
     icons = util.overlay_small_icon("__Krastorio2Assets__/icons/items/glass.png", 64,
-                                    "__Spaghenutti__/graphics/icons/calcium.png", 64),
+                                    "__Spaghetorio__/graphics/icons/calcium.png", 64),
     category = "smelting",
     enabled = false,
     hide_from_player_crafting = true,
@@ -366,10 +366,10 @@ data:extend({
     type = "recipe",
     name = "sp-separate-electronic-components",  -- #ForRegEx# - recipe
     icon_size = 64,
-    icons = util.combine_four_icons("__Spaghenutti__/graphics/icons/capacitor.png", 64, nil,
-                                    "__Spaghenutti__/graphics/icons/transistor.png", 64, nil,
-                                    "__Spaghenutti__/graphics/icons/resistor.png", 64, nil,
-                                    "__Spaghenutti__/graphics/icons/vacuum-tube.png", 64, nil),
+    icons = util.combine_four_icons("__Spaghetorio__/graphics/icons/capacitor.png", 64, nil,
+                                    "__Spaghetorio__/graphics/icons/transistor.png", 64, nil,
+                                    "__Spaghetorio__/graphics/icons/resistor.png", 64, nil,
+                                    "__Spaghetorio__/graphics/icons/vacuum-tube.png", 64, nil),
     category = "crafting",
     subgroup = "electronic-optical-component",
     enabled = false,
@@ -391,7 +391,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-enriched-aluminum",  -- #ForRegEx# - recipe
-    icon = "__Spaghenutti__/graphics/icons/enriched-aluminum-1.png",
+    icon = "__Spaghetorio__/graphics/icons/enriched-aluminum-1.png",
     icon_size = 64,
     mip_maps = 4,
     category = "chemistry",
@@ -411,7 +411,7 @@ data:extend({
   {
     type = "recipe",
     name = "dirty-water-filtration-aluminum",  -- #ForRegEx# - recipe
-    icon = "__Spaghenutti__/graphics/icons/dirty-water-with-aluminum.png",
+    icon = "__Spaghetorio__/graphics/icons/dirty-water-with-aluminum.png",
     icon_size = 64,
     mip_maps = 4,
     category = "fluid-filtration",
@@ -433,8 +433,8 @@ data:extend({
   {
     type = "recipe",
     name = "sp-alumina-from-enriched-aluminum",  -- #ForRegEx# - recipe
-    icons = util.overlay_small_icon("__Spaghenutti__/graphics/icons/alumina.png", 64,
-                                    "__Spaghenutti__/graphics/icons/enriched-aluminum-1.png", 64),
+    icons = util.overlay_small_icon("__Spaghetorio__/graphics/icons/alumina.png", 64,
+                                    "__Spaghetorio__/graphics/icons/enriched-aluminum-1.png", 64),
     category = "smelting",
     enabled = false,
     energy_required = 3,
@@ -448,7 +448,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-enriched-chromite",  -- #ForRegEx# - recipe
-    icon = "__Spaghenutti__/graphics/icons/enriched-chromite-1.png",
+    icon = "__Spaghetorio__/graphics/icons/enriched-chromite-1.png",
     icon_size = 64,
     mip_maps = 4,
     category = "chemistry",
@@ -469,7 +469,7 @@ data:extend({
   {
     type = "recipe",
     name = "dirty-water-filtration-chromite",  -- #ForRegEx# - recipe
-    icon = "__Spaghenutti__/graphics/icons/dirty-water-with-chromite.png",
+    icon = "__Spaghetorio__/graphics/icons/dirty-water-with-chromite.png",
     icon_size = 64,
     mip_maps = 4,
     category = "fluid-filtration",
@@ -491,8 +491,8 @@ data:extend({
   {
     type = "recipe",
     name = "sp-chromium-plate-from-enriched-chromite",  -- #ForRegEx# - recipe
-    icons = util.overlay_small_icon("__Spaghenutti__/graphics/icons/chromium-plate.png", 64,
-                                    "__Spaghenutti__/graphics/icons/enriched-chromite-1.png", 64),
+    icons = util.overlay_small_icon("__Spaghetorio__/graphics/icons/chromium-plate.png", 64,
+                                    "__Spaghetorio__/graphics/icons/enriched-chromite-1.png", 64),
     category = "smelting",
     enabled = false,
     energy_required = 5,
@@ -506,7 +506,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-enriched-magnesium",  -- #ForRegEx# - recipe
-    icon = "__Spaghenutti__/graphics/icons/enriched-magnesium-1.png",
+    icon = "__Spaghetorio__/graphics/icons/enriched-magnesium-1.png",
     icon_size = 64,
     mip_maps = 4,
     category = "chemistry",
@@ -527,7 +527,7 @@ data:extend({
   {
     type = "recipe",
     name = "dirty-water-filtration-magnesium",  -- #ForRegEx# - recipe
-    icon = "__Spaghenutti__/graphics/icons/dirty-water-with-magnesium.png",
+    icon = "__Spaghetorio__/graphics/icons/dirty-water-with-magnesium.png",
     icon_size = 64,
     mip_maps = 4,
     category = "fluid-filtration",
@@ -549,8 +549,8 @@ data:extend({
   {
     type = "recipe",
     name = "sp-magnesium-slab-from-enriched-magnesium",  -- #ForRegEx# - recipe
-    icons = util.overlay_small_icon("__Spaghenutti__/graphics/icons/magnesium-slab.png", 64,
-                                    "__Spaghenutti__/graphics/icons/enriched-magnesium-1.png", 64),
+    icons = util.overlay_small_icon("__Spaghetorio__/graphics/icons/magnesium-slab.png", 64,
+                                    "__Spaghetorio__/graphics/icons/enriched-magnesium-1.png", 64),
     category = "smelting",
     enabled = false,
     energy_required = 6,
@@ -564,7 +564,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-enriched-nickel",  -- #ForRegEx# - recipe
-    icon = "__Spaghenutti__/graphics/icons/enriched-nickel-1.png",
+    icon = "__Spaghetorio__/graphics/icons/enriched-nickel-1.png",
     icon_size = 64,
     mip_maps = 4,
     category = "chemistry",
@@ -585,7 +585,7 @@ data:extend({
   {
     type = "recipe",
     name = "dirty-water-filtration-nickel",  -- #ForRegEx# - recipe
-    icon = "__Spaghenutti__/graphics/icons/dirty-water-with-nickel.png",
+    icon = "__Spaghetorio__/graphics/icons/dirty-water-with-nickel.png",
     icon_size = 64,
     mip_maps = 4,
     category = "fluid-filtration",
@@ -607,8 +607,8 @@ data:extend({
   {
     type = "recipe",
     name = "sp-nickel-ingot-from-enriched-nickel",  -- #ForRegEx# - recipe
-    icons = util.overlay_small_icon("__Spaghenutti__/graphics/icons/nickel-ingot.png", 64,
-                                    "__Spaghenutti__/graphics/icons/enriched-nickel-1.png", 64),
+    icons = util.overlay_small_icon("__Spaghetorio__/graphics/icons/nickel-ingot.png", 64,
+                                    "__Spaghetorio__/graphics/icons/enriched-nickel-1.png", 64),
     category = "smelting",
     enabled = false,
     energy_required = 5,
@@ -622,7 +622,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-enriched-tinstone",  -- #ForRegEx# - recipe
-    icon = "__Spaghenutti__/graphics/icons/enriched-tinstone-1.png",
+    icon = "__Spaghetorio__/graphics/icons/enriched-tinstone-1.png",
     icon_size = 64,
     mip_maps = 4,
     category = "chemistry",
@@ -643,7 +643,7 @@ data:extend({
   {
     type = "recipe",
     name = "dirty-water-filtration-tinstone",  -- #ForRegEx# - recipe
-    icon = "__Spaghenutti__/graphics/icons/dirty-water-with-tin.png",
+    icon = "__Spaghetorio__/graphics/icons/dirty-water-with-tin.png",
     icon_size = 64,
     mip_maps = 4,
     category = "fluid-filtration",
@@ -665,8 +665,8 @@ data:extend({
   {
     type = "recipe",
     name = "sp-tin-ingot-from-enriched-tin",  -- #ForRegEx# - recipe
-    icons = util.overlay_small_icon("__Spaghenutti__/graphics/icons/tin-ingot.png", 64,
-                                    "__Spaghenutti__/graphics/icons/enriched-tinstone-1.png", 64),
+    icons = util.overlay_small_icon("__Spaghetorio__/graphics/icons/tin-ingot.png", 64,
+                                    "__Spaghetorio__/graphics/icons/enriched-tinstone-1.png", 64),
     category = "smelting",
     enabled = false,
     energy_required = 8,
@@ -680,7 +680,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-enriched-titanium",  -- #ForRegEx# - recipe
-    icon = "__Spaghenutti__/graphics/icons/enriched-titanium-1.png",
+    icon = "__Spaghetorio__/graphics/icons/enriched-titanium-1.png",
     icon_size = 64,
     mip_maps = 4,
     category = "chemistry",
@@ -701,7 +701,7 @@ data:extend({
   {
     type = "recipe",
     name = "dirty-water-filtration-titanium",  -- #ForRegEx# - recipe
-    icon = "__Spaghenutti__/graphics/icons/dirty-water-with-titanium.png",
+    icon = "__Spaghetorio__/graphics/icons/dirty-water-with-titanium.png",
     icon_size = 64,
     mip_maps = 4,
     category = "fluid-filtration",
@@ -723,8 +723,8 @@ data:extend({
   {
     type = "recipe",
     name = "sp-titanium-chloride-from-enriched-titanium",  -- #ForRegEx# - recipe
-    icons = util.overlay_small_icon("__Spaghenutti__/graphics/icons/titanium-chloride.png", 64,
-                                    "__Spaghenutti__/graphics/icons/enriched-titanium-1.png", 64),
+    icons = util.overlay_small_icon("__Spaghetorio__/graphics/icons/titanium-chloride.png", 64,
+                                    "__Spaghetorio__/graphics/icons/enriched-titanium-1.png", 64),
     category = "smelting",
     enabled = false,
     energy_required = 5,
@@ -738,7 +738,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-enriched-tungsten",  -- #ForRegEx# - recipe
-    icon = "__Spaghenutti__/graphics/icons/enriched-tungsten-1.png",
+    icon = "__Spaghetorio__/graphics/icons/enriched-tungsten-1.png",
     icon_size = 64,
     mip_maps = 4,
     category = "chemistry",
@@ -759,7 +759,7 @@ data:extend({
   {
     type = "recipe",
     name = "dirty-water-filtration-tungsten",  -- #ForRegEx# - recipe
-    icon = "__Spaghenutti__/graphics/icons/dirty-water-with-tungsten.png",
+    icon = "__Spaghetorio__/graphics/icons/dirty-water-with-tungsten.png",
     icon_size = 64,
     mip_maps = 4,
     category = "fluid-filtration",
@@ -782,8 +782,8 @@ data:extend({
   {
     type = "recipe",
     name = "sp-tungsten-ingot-from-enriched-tungsten",  -- #ForRegEx# - recipe
-    icons = util.overlay_small_icon("__Spaghenutti__/graphics/icons/ammonium-paratungstate.png", 64,
-                                    "__Spaghenutti__/graphics/icons/enriched-tungsten-1.png", 64),
+    icons = util.overlay_small_icon("__Spaghetorio__/graphics/icons/ammonium-paratungstate.png", 64,
+                                    "__Spaghetorio__/graphics/icons/enriched-tungsten-1.png", 64),
     category = "smelting",
     enabled = false,
     energy_required = 8,
@@ -797,7 +797,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-enriched-zinc",  -- #ForRegEx# - recipe
-    icon = "__Spaghenutti__/graphics/icons/enriched-zinc-1.png",
+    icon = "__Spaghetorio__/graphics/icons/enriched-zinc-1.png",
     icon_size = 64,
     mip_maps = 4,
     category = "chemistry",
@@ -817,7 +817,7 @@ data:extend({
   {
     type = "recipe",
     name = "dirty-water-filtration-zinc",  -- #ForRegEx# - recipe
-    icon = "__Spaghenutti__/graphics/icons/dirty-water-with-zinc.png",
+    icon = "__Spaghetorio__/graphics/icons/dirty-water-with-zinc.png",
     icon_size = 64,
     mip_maps = 4,
     category = "fluid-filtration",
@@ -839,8 +839,8 @@ data:extend({
   {
     type = "recipe",
     name = "sp-zinc-plate-from-enriched-zinc",  -- #ForRegEx# - recipe
-    icons = util.overlay_small_icon("__Spaghenutti__/graphics/icons/zinc-plate.png", 64,
-                                    "__Spaghenutti__/graphics/icons/enriched-zinc-1.png", 64),
+    icons = util.overlay_small_icon("__Spaghetorio__/graphics/icons/zinc-plate.png", 64,
+                                    "__Spaghetorio__/graphics/icons/enriched-zinc-1.png", 64),
     category = "smelting",
     enabled = false,
     energy_required = 4,
@@ -855,8 +855,8 @@ data:extend({
   {
     type = "recipe",
     name = "sp-enriched-aluminum-from-acromatter",  -- #ForRegEx# - recipe
-    icons = util.create_acroproduct_conversion_icon("__Spaghenutti__/graphics/icons/enriched-aluminum-1.png",
-                                                    "__Spaghenutti__/graphics/icons/acromatter.png"),
+    icons = util.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/enriched-aluminum-1.png",
+                                                    "__Spaghetorio__/graphics/icons/acromatter.png"),
     icon_size = 64,
     mip_maps = 4,
     category = "acroproduct-conversion-with-acromatter",
@@ -880,7 +880,7 @@ data:extend({
     type = "recipe",
     name = "sp-raw-rare-metals-from-acrocrystal",  -- #ForRegEx# - recipe
     icons = util.create_acroproduct_conversion_icon("__Krastorio2Assets__/icons/items-with-variations/raw-rare-metals/raw-rare-metals.png",
-                                                    "__Spaghenutti__/graphics/icons/acrocrystal.png"),
+                                                    "__Spaghetorio__/graphics/icons/acrocrystal.png"),
     icon_size = 64,
     mip_maps = 4,
     category = "acroproduct-conversion-with-acrocrystal",
@@ -906,7 +906,7 @@ data:extend({
     type = "recipe",
     name = "sp-coke-from-acrovoid",  -- #ForRegEx# - recipe
     icons = util.create_acroproduct_conversion_icon("__Krastorio2Assets__/icons/items-with-variations/coke/coke.png",
-                                                    "__Spaghenutti__/graphics/icons/acrovoid.png"),
+                                                    "__Spaghetorio__/graphics/icons/acrovoid.png"),
     icon_size = 64,
     mip_maps = 4,
     category = "acroproduct-conversion-with-acrovoid",
@@ -931,7 +931,7 @@ data:extend({
     type = "recipe",
     name = "sp-silicon-from-acrovoid",  -- #ForRegEx# - recipe
     icons = util.create_acroproduct_conversion_icon("__Krastorio2Assets__/icons/items-with-variations/silicon/silicon.png",
-                                                    "__Spaghenutti__/graphics/icons/acrovoid.png"),
+                                                    "__Spaghetorio__/graphics/icons/acrovoid.png"),
     icon_size = 64,
     mip_maps = 4,
     category = "acroproduct-conversion-with-acrovoid",
@@ -955,8 +955,8 @@ data:extend({
   {
     type = "recipe",
     name = "sp-enriched-chromite-from-acromatter",  -- #ForRegEx# - recipe
-    icons = util.create_acroproduct_conversion_icon("__Spaghenutti__/graphics/icons/enriched-chromite-1.png",
-                                                    "__Spaghenutti__/graphics/icons/acromatter.png"),
+    icons = util.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/enriched-chromite-1.png",
+                                                    "__Spaghetorio__/graphics/icons/acromatter.png"),
     icon_size = 64,
     mip_maps = 4,
     category = "acroproduct-conversion-with-acromatter",
@@ -978,8 +978,8 @@ data:extend({
   {
     type = "recipe",
     name = "sp-enriched-titanium-from-acromatter",  -- #ForRegEx# - recipe
-    icons = util.create_acroproduct_conversion_icon("__Spaghenutti__/graphics/icons/enriched-titanium-1.png",
-                                                    "__Spaghenutti__/graphics/icons/acromatter.png"),
+    icons = util.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/enriched-titanium-1.png",
+                                                    "__Spaghetorio__/graphics/icons/acromatter.png"),
     icon_size = 64,
     mip_maps = 4,
     category = "acroproduct-conversion-with-acromatter",
@@ -1001,8 +1001,8 @@ data:extend({
   {
     type = "recipe",
     name = "sp-enriched-magnesium-from-acromatter",  -- #ForRegEx# - recipe
-    icons = util.create_acroproduct_conversion_icon("__Spaghenutti__/graphics/icons/enriched-magnesium-1.png",
-                                                    "__Spaghenutti__/graphics/icons/acromatter.png"),
+    icons = util.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/enriched-magnesium-1.png",
+                                                    "__Spaghetorio__/graphics/icons/acromatter.png"),
     icon_size = 64,
     mip_maps = 4,
     category = "acroproduct-conversion-with-acromatter",
@@ -1025,8 +1025,8 @@ data:extend({
   {
     type = "recipe",
     name = "sp-enriched-nickel-from-acromatter",  -- #ForRegEx# - recipe
-    icons = util.create_acroproduct_conversion_icon("__Spaghenutti__/graphics/icons/enriched-nickel-1.png",
-                                                    "__Spaghenutti__/graphics/icons/acromatter.png"),
+    icons = util.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/enriched-nickel-1.png",
+                                                    "__Spaghetorio__/graphics/icons/acromatter.png"),
     icon_size = 64,
     mip_maps = 4,
     category = "acroproduct-conversion-with-acromatter",
@@ -1050,8 +1050,8 @@ data:extend({
   {
     type = "recipe",
     name = "sp-enriched-tinstone-from-acromatter",  -- #ForRegEx# - recipe
-    icons = util.create_acroproduct_conversion_icon("__Spaghenutti__/graphics/icons/enriched-tinstone-1.png",
-                                                    "__Spaghenutti__/graphics/icons/acromatter.png"),
+    icons = util.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/enriched-tinstone-1.png",
+                                                    "__Spaghetorio__/graphics/icons/acromatter.png"),
     icon_size = 64,
     mip_maps = 4,
     category = "acroproduct-conversion-with-acromatter",
@@ -1075,8 +1075,8 @@ data:extend({
   {
     type = "recipe",
     name = "sp-enriched-tungsten-from-acromatter",  -- #ForRegEx# - recipe
-    icons = util.create_acroproduct_conversion_icon("__Spaghenutti__/graphics/icons/enriched-tungsten-1.png",
-                                                    "__Spaghenutti__/graphics/icons/acromatter.png"),
+    icons = util.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/enriched-tungsten-1.png",
+                                                    "__Spaghetorio__/graphics/icons/acromatter.png"),
     icon_size = 64,
     mip_maps = 4,
     category = "acroproduct-conversion-with-acromatter",
@@ -1097,8 +1097,8 @@ data:extend({
   {
     type = "recipe",
     name = "sp-enriched-zinc-from-acromatter",  -- #ForRegEx# - recipe
-    icons = util.create_acroproduct_conversion_icon("__Spaghenutti__/graphics/icons/enriched-zinc-1.png",
-                                                    "__Spaghenutti__/graphics/icons/acromatter.png"),
+    icons = util.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/enriched-zinc-1.png",
+                                                    "__Spaghetorio__/graphics/icons/acromatter.png"),
     icon_size = 64,
     mip_maps = 4,
     category = "acroproduct-conversion-with-acromatter",
@@ -1121,7 +1121,7 @@ data:extend({
     type = "recipe",
     name = "sp-enriched-iron-from-acromatter",  -- #ForRegEx# - recipe
     icons = util.create_acroproduct_conversion_icon("__Krastorio2Assets__/icons/items-with-variations/enriched-iron/enriched-iron.png",
-                                                    "__Spaghenutti__/graphics/icons/acromatter.png"),
+                                                    "__Spaghetorio__/graphics/icons/acromatter.png"),
     icon_size = 64,
     mip_maps = 4,
     category = "acroproduct-conversion-with-acromatter",
@@ -1145,7 +1145,7 @@ data:extend({
     type = "recipe",
     name = "sp-enriched-copper-from-acromatter",  -- #ForRegEx# - recipe
     icons = util.create_acroproduct_conversion_icon("__Krastorio2Assets__/icons/items-with-variations/enriched-copper/enriched-copper.png",
-                                                    "__Spaghenutti__/graphics/icons/acromatter.png"),
+                                                    "__Spaghetorio__/graphics/icons/acromatter.png"),
     icon_size = 64,
     mip_maps = 4,
     category = "acroproduct-conversion-with-acromatter",
@@ -1171,7 +1171,7 @@ data:extend({
     type = "recipe",
     name = "sp-enriched-rare-metals-from-acromatter",  -- #ForRegEx# - recipe
     icons = util.create_acroproduct_conversion_icon("__Krastorio2Assets__/icons/items-with-variations/enriched-rare-metals/enriched-rare-metals.png",
-                                                    "__Spaghenutti__/graphics/icons/acromatter.png"),
+                                                    "__Spaghetorio__/graphics/icons/acromatter.png"),
     icon_size = 64,
     mip_maps = 4,
     category = "acroproduct-conversion-with-acromatter",

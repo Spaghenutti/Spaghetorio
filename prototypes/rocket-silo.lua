@@ -632,12 +632,12 @@ data:extend({
 
     rocket_sprite = util.add_shift_offset(util.by_pixel(0, 32*3.5), --util.mul_shift(rocket_rise_offset, -1),
     {
-      filename = "__Spaghenutti__/graphics/rocket/blunagium-rocket.png",  -- Wololo
+      filename = "__Spaghetorio__/graphics/rocket/blunagium-rocket.png",  -- Wololo
       width = 154,
       height = 300,
       shift = util.by_pixel(-4, -28),
       hr_version = {
-        filename = "__Spaghenutti__/graphics/rocket/hr-blunagium-rocket.png",  -- Wololo
+        filename = "__Spaghetorio__/graphics/rocket/hr-blunagium-rocket.png",  -- Wololo
         width = 310,
         height = 596,
         shift = util.by_pixel(-5, -27),
@@ -927,12 +927,12 @@ blunagium_rocket = table.deepcopy(data.raw["rocket-silo-rocket"]["rocket-silo-ro
 blunagium_rocket.name = "sp-blunagium-rocket"
 blunagium_rocket.rocket_sprite = util.add_shift_offset(util.by_pixel(0, 32*3.5), --util.mul_shift(rocket_rise_offset, -1),
 {
-  filename = "__Spaghenutti__/graphics/rocket/blunagium-rocket.png",  -- Wololo
+  filename = "__Spaghetorio__/graphics/rocket/blunagium-rocket.png",  -- Wololo
   width = 154,
   height = 300,
   shift = util.by_pixel(-4, -28),
   hr_version = {
-    filename = "__Spaghenutti__/graphics/rocket/hr-blunagium-rocket.png",  -- Wololo
+    filename = "__Spaghetorio__/graphics/rocket/hr-blunagium-rocket.png",  -- Wololo
     width = 310,
     height = 596,
     shift = util.by_pixel(-5, -27),
@@ -952,12 +952,12 @@ grobgnum_rocket = table.deepcopy(data.raw["rocket-silo-rocket"]["rocket-silo-roc
 grobgnum_rocket.name = "sp-grobgnum-rocket"
 grobgnum_rocket.rocket_sprite = util.add_shift_offset(util.by_pixel(0, 32*3.5), --util.mul_shift(rocket_rise_offset, -1),
 {
-  filename = "__Spaghenutti__/graphics/rocket/grobgnum-rocket.png",  -- Wololo
+  filename = "__Spaghetorio__/graphics/rocket/grobgnum-rocket.png",  -- Wololo
   width = 154,
   height = 300,
   shift = util.by_pixel(-4, -28),
   hr_version = {
-    filename = "__Spaghenutti__/graphics/rocket/hr-grobgnum-rocket.png",  -- Wololo
+    filename = "__Spaghetorio__/graphics/rocket/hr-grobgnum-rocket.png",  -- Wololo
     width = 310,
     height = 596,
     shift = util.by_pixel(-5, -27),
@@ -976,12 +976,12 @@ rukite_rocket = table.deepcopy(data.raw["rocket-silo-rocket"]["rocket-silo-rocke
 rukite_rocket.name = "sp-rukite-rocket"
 rukite_rocket.rocket_sprite = util.add_shift_offset(util.by_pixel(0, 32*3.5), --util.mul_shift(rocket_rise_offset, -1),
 {
-  filename = "__Spaghenutti__/graphics/rocket/rukite-rocket.png",  -- Wololo
+  filename = "__Spaghetorio__/graphics/rocket/rukite-rocket.png",  -- Wololo
   width = 154,
   height = 300,
   shift = util.by_pixel(-4, -28),
   hr_version = {
-    filename = "__Spaghenutti__/graphics/rocket/hr-rukite-rocket.png",  -- Wololo
+    filename = "__Spaghetorio__/graphics/rocket/hr-rukite-rocket.png",  -- Wololo
     width = 310,
     height = 596,
     shift = util.by_pixel(-5, -27),
@@ -1000,12 +1000,12 @@ yemnuth_rocket = table.deepcopy(data.raw["rocket-silo-rocket"]["rocket-silo-rock
 yemnuth_rocket.name = "sp-yemnuth-rocket"
 yemnuth_rocket.rocket_sprite = util.add_shift_offset(util.by_pixel(0, 32*3.5), --util.mul_shift(rocket_rise_offset, -1),
 {
-  filename = "__Spaghenutti__/graphics/rocket/yemnuth-rocket.png",  -- Wololo
+  filename = "__Spaghetorio__/graphics/rocket/yemnuth-rocket.png",  -- Wololo
   width = 154,
   height = 300,
   shift = util.by_pixel(-4, -28),
   hr_version = {
-    filename = "__Spaghenutti__/graphics/rocket/hr-yemnuth-rocket.png",  -- Wololo
+    filename = "__Spaghetorio__/graphics/rocket/hr-yemnuth-rocket.png",  -- Wololo
     width = 310,
     height = 596,
     shift = util.by_pixel(-5, -27),
