@@ -26,7 +26,7 @@ TODO:
   - Updated recipes for electronic components to have common intermediates
   - do TODO in recipes: "add uses to"
   + Add rockets depending on the explorer
-  - Change labs in which tech cards are used
+  + Change labs in which tech cards are used
   ? Change Factorio recipes
   ? Change Krastorio recipes
   ? Change AAI recipes
@@ -91,7 +91,7 @@ Low prio
 Future changes
   - Move incopatibel recipes outside of "not mods["Krastorio2"] then" statement and update them with correct values inside the statement
   - Support text plates mod
-  - Support jetpack mod
+  + Support jetpack mod
   + Support LTN mod
   - remove some barrel recipes like, helium-3 or grobgnum-liquids
 
