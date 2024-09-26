@@ -12,7 +12,7 @@ import constants
 
 IMAGE_REGEX = r"\"__Spaghetorio__[^\"]*\""
 
-image_paths = [y for x in os.walk(constants.GRAPHICS_PATH) for y in glob.glob(os.path.join(x[0], '*.png'))]  # images in graphics
+image_paths = [y.replace("\\", "/") for x in os.walk(constants.GRAPHICS_PATH) for y in glob.glob(os.path.join(x[0], '*.png'))]  # images in graphics
 used_images_paths = []
 lua_files = [y for x in os.walk(os.getcwd()) for y in glob.glob(os.path.join(x[0], '*.lua'))]  # images in graphics
 
@@ -33,8 +33,9 @@ used_images_paths = [used_images_path.replace(r"__Spaghetorio__", os.getcwd()).r
 
 # [print(used_images_path) for used_images_path in used_images_paths]
 
-for used_images_path in used_images_paths:
+for image_path in image_paths:
     try:
-        os.remove(used_images_path)
+        if image_path not in used_images_paths:
+            os.remove(image_path)
     except FileNotFoundError:
         pass
