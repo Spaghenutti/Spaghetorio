@@ -29,9 +29,12 @@ for lua_file in lua_files:
     file.close()
 
 # fix paths
-used_images_paths = [used_images_path.replace(r"__Spaghenutti__", os.getcwd()).replace("\"", "") for used_images_path in used_images_paths]
+used_images_paths = [used_images_path.replace(r"__Spaghenutti__", os.getcwd()).replace("\"", "").replace("\\", "/") for used_images_path in used_images_paths]
 
 # [print(used_images_path) for used_images_path in used_images_paths]
 
 for used_images_path in used_images_paths:
-     os.remove(used_images_path)
+    try:
+        os.remove(used_images_path)
+    except FileNotFoundError:
+        pass
