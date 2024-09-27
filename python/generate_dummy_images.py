@@ -1,3 +1,11 @@
+################################################################################
+#
+#  Creates sprites whit the name of item, recipe, technology and others. The
+#  sprites are saved in graphics/dummy
+#
+################################################################################
+
+
 from PIL import Image, ImageDraw, ImageFont
 import re
 

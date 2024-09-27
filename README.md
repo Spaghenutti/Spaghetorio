@@ -1,7 +1,5 @@
 # Spaghetorio
 
-
-
 Inspired by [brevven](https://mods.factorio.com/user/brevven).
 
 ## Features

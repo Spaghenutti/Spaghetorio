@@ -97,6 +97,14 @@ data:extend({
   },
   {
     type = "autoplace-control",
+    name = "sp-grobgnum",
+    localised_name = {"", "[entity=sp-grobgnum] ", {"entity-name.sp-grobgnum"}},
+    category = "resource",
+    richness = true,
+    order = "d[grobgnum]"
+  },
+  {
+    type = "autoplace-control",
     name = "sp-rukite",
     localised_name = {"", "[entity=sp-rukite] ", {"entity-name.sp-rukite"}},
     category = "resource",

@@ -1,9 +1,17 @@
+################################################################################
+#
+#  Creates one sprite with all resources that are part of a single alien
+#  resource
+#
+################################################################################
+
+
 from PIL import Image
 import glob
 
 import constants
  
-ALIEN_RESOURCES = ["blunagium-mine", "rukite-mine", "yemnuth-mine"]
+ALIEN_RESOURCES = ["blunagium-mine", "grobgnum-mine", "rukite-mine", "yemnuth-mine"]
 FILE_TYPE_SUFFIX = ".png"
 FINAL_RES = 256  # Resolution X and Y. X ist then multiplied by the images found of one specific alien resource
 PATH = fr"{constants.GRAPHICS_PATH}/alien-resource/"
