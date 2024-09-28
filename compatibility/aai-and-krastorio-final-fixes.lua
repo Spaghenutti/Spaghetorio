@@ -318,8 +318,4 @@ util.recipe.block_decomposition_for_recipe_category("acroproduct-conversion-with
 util.recipe.block_decomposition_for_recipe_category("acroproduct-conversion-with-acromatter")
 util.recipe.block_decomposition_for_recipe_category("acroproduct-conversion-with-acrovoid")
 
-util.recipe.block_decomposition_for_recipe_category("smelting")  -- helps to simplify total in raw calculation
-util.recipe.block_decomposition_for_recipe_category("intermediate-smelting")  -- helps to simplify total in raw calculation
-util.recipe.block_decomposition_for_recipe_category("advanced-smelting")  -- helps to simplify total in raw calculation
-util.recipe.block_decomposition_for_recipe_category("crushing")  -- helps to simplify total in raw calculation
-util.recipe.block_decomposition_for_recipe_category("matter-condensing")  -- helps to simplify total in raw calculation
+util.recipe.block_decomposition_recipe_with_multiple_results()
