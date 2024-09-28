@@ -204,7 +204,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-calcium-and-fluorine",  -- #ForRegEx# - recipe
-    icons = util.combine_two_icons("__Spaghetorio__/graphics/icons/fluorine.png", 64, nil,
+    icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/icons/fluorine.png", 64, nil,
                                    "__Spaghetorio__/graphics/icons/calcium.png", 64, nil),
     icon_size = 64,
     mip_maps = 4,
@@ -392,7 +392,7 @@ data:extend({
     type = "recipe",
     name = "sp-tin-and-lead",  -- #ForRegEx# - recipe
     -- icon = "__Spaghetorio__/graphics/icons/tin-and-lead.png",
-    icons = util.combine_two_icons("__Spaghetorio__/graphics/icons/tin-ingot.png", 64, nil, 
+    icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/icons/tin-ingot.png", 64, nil, 
                                    "__Spaghetorio__/graphics/icons/lead-slab.png", 64, nil),
     icon_size = 64,
     mip_maps = 4,
@@ -688,7 +688,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-silver-palladium",  -- #ForRegEx# - recipe
-    icons = util.combine_two_icons("__Spaghetorio__/graphics/icons/silver.png", 64, nil,
+    icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/icons/silver.png", 64, nil,
                                   "__Spaghetorio__/graphics/icons/palladium.png", 64, nil),
     icon_size = 64,
     mip_maps = 4,
@@ -747,7 +747,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-crushed-iron-smelting",  -- #ForRegEx# - recipe
-    icons = util.overlay_small_icon("__base__/graphics/icons/iron-plate.png", 64,
+    icons = util.icon.overlay_small_icon("__base__/graphics/icons/iron-plate.png", 64,
                                     "__Spaghetorio__/graphics/icons/crushed-iron-ore-1.png", 64),
     category = "crushed-smelting",
     subgroup = "raw-material",
@@ -764,7 +764,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-crushed-iron-smelting-into-beam",  -- #ForRegEx# - recipe
-    icons = util.overlay_small_icon("__base__/graphics/icons/steel-plate.png", 64,
+    icons = util.icon.overlay_small_icon("__base__/graphics/icons/steel-plate.png", 64,
                                     "__Spaghetorio__/graphics/icons/crushed-iron-ore-1.png", 64),
     category = "crushed-smelting",
     subgroup = "raw-material",
@@ -781,7 +781,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-crushed-copper-smelting",  -- #ForRegEx# - recipe
-    icons = util.overlay_small_icon("__base__/graphics/icons/copper-plate.png", 64,
+    icons = util.icon.overlay_small_icon("__base__/graphics/icons/copper-plate.png", 64,
                                     "__Spaghetorio__/graphics/icons/crushed-copper-ore-1.png", 64),
     category = "crushed-smelting",
     subgroup = "raw-material",
@@ -798,7 +798,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-crushed-aluminum-smelting",  -- #ForRegEx# - recipe
-    icons = util.overlay_small_icon("__Spaghetorio__/graphics/icons/alumina.png", 64,
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/alumina.png", 64,
                                     "__Spaghetorio__/graphics/icons/crushed-aluminum-ore-1.png", 64),
     category = "crushed-smelting",
     subgroup = "raw-material",
@@ -815,7 +815,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-crushed-chromite-smelting",  -- #ForRegEx# - recipe
-    icons = util.overlay_small_icon("__Spaghetorio__/graphics/icons/chromium-plate.png", 64,
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/chromium-plate.png", 64,
                                     "__Spaghetorio__/graphics/icons/crushed-chromite-1.png", 64),
     category = "crushed-smelting",
     subgroup = "raw-material",
@@ -833,7 +833,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-crushed-magnesium-smelting",  -- #ForRegEx# - recipe
-    icons = util.overlay_small_icon("__Spaghetorio__/graphics/icons/magnesium-chloride.png", 64,
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/magnesium-chloride.png", 64,
                                     "__Spaghetorio__/graphics/icons/crushed-magnesium-ore-1.png", 64),
     category = "crushed-smelting",
     subgroup = "raw-material",
@@ -850,7 +850,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-crushed-nickel-smelting",  -- #ForRegEx# - recipe
-    icons = util.overlay_small_icon("__Spaghetorio__/graphics/icons/nickel-ingot.png", 64,
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/nickel-ingot.png", 64,
                                     "__Spaghetorio__/graphics/icons/crushed-nickel-ore-1.png", 64),
     category = "crushed-smelting",
     subgroup = "raw-material",
@@ -868,7 +868,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-crushed-tinstone-smelting",  -- #ForRegEx# - recipe
-    icons = util.overlay_small_icon("__Spaghetorio__/graphics/icons/tin-ingot.png", 64,
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/tin-ingot.png", 64,
                                     "__Spaghetorio__/graphics/icons/crushed-tinstone-1.png", 64),
     category = "crushed-smelting",
     subgroup = "raw-material",
@@ -885,7 +885,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-crushed-titanium-smelting",  -- #ForRegEx# - recipe
-    icons = util.overlay_small_icon("__Spaghetorio__/graphics/icons/titanium-chloride.png", 64,
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/titanium-chloride.png", 64,
                                     "__Spaghetorio__/graphics/icons/crushed-titanium-ore-1.png", 64),
     category = "crushed-smelting",
     subgroup = "raw-material",
@@ -902,7 +902,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-crushed-tungsten-smelting",  -- #ForRegEx# - recipe
-    icons = util.overlay_small_icon("__Spaghetorio__/graphics/icons/ammonium-paratungstate.png", 64,
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/ammonium-paratungstate.png", 64,
                                     "__Spaghetorio__/graphics/icons/crushed-tungsten-ore-1.png", 64),
     category = "crushed-smelting",
     subgroup = "raw-material",
@@ -919,7 +919,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-crushed-zinc-smelting",  -- #ForRegEx# - recipe
-    icons = util.overlay_small_icon("__Spaghetorio__/graphics/icons/zinc-sulfate-1.png", 64,
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/zinc-sulfate-1.png", 64,
                                     "__Spaghetorio__/graphics/icons/crushed-zinc-ore-1.png", 64),
     category = "crushed-smelting",
     subgroup = "raw-material",
@@ -936,7 +936,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-crushed-zirconium-smelting",  -- #ForRegEx# - recipe
-    icons = util.overlay_small_icon("__Spaghetorio__/graphics/icons/zirconium-rod.png", 64,
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/zirconium-rod.png", 64,
                                     "__Spaghetorio__/graphics/icons/crushed-zirconium-ore-1.png", 64),
     category = "crushed-smelting",
     subgroup = "raw-material",
@@ -1087,7 +1087,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-rare-metal-alloy-from-yttrium",  -- #ForRegEx# - recipe
-    icons = util.overlay_small_icon("__Krastorio2Assets__/icons/items-with-variations/rare-metals/rare-metals.png", 64,
+    icons = util.icon.overlay_small_icon("__Krastorio2Assets__/icons/items-with-variations/rare-metals/rare-metals.png", 64,
                                     "__Spaghetorio__/graphics/icons/yttrium.png", 64),
     category = "intermediate-smelting",
     enabled = false,
@@ -1104,7 +1104,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-rare-metal-alloy-from-lanthanum",  -- #ForRegEx# - recipe
-    icons = util.overlay_small_icon("__Krastorio2Assets__/icons/items-with-variations/rare-metals/rare-metals.png", 64,
+    icons = util.icon.overlay_small_icon("__Krastorio2Assets__/icons/items-with-variations/rare-metals/rare-metals.png", 64,
                                     "__Spaghetorio__/graphics/icons/lanthanum.png", 64),
     category = "intermediate-smelting",
     enabled = false,
@@ -1121,7 +1121,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-rare-metal-alloy-from-cerium",  -- #ForRegEx# - recipe
-    icons = util.overlay_small_icon("__Krastorio2Assets__/icons/items-with-variations/rare-metals/rare-metals.png", 64,
+    icons = util.icon.overlay_small_icon("__Krastorio2Assets__/icons/items-with-variations/rare-metals/rare-metals.png", 64,
                                     "__Spaghetorio__/graphics/icons/cerium.png", 64),
     category = "intermediate-smelting",
     enabled = false,
@@ -1139,7 +1139,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-rare-metal-alloy-from-neodymium",  -- #ForRegEx# - recipe
-    icons = util.overlay_small_icon("__Krastorio2Assets__/icons/items-with-variations/rare-metals/rare-metals.png", 64,
+    icons = util.icon.overlay_small_icon("__Krastorio2Assets__/icons/items-with-variations/rare-metals/rare-metals.png", 64,
                                     "__Spaghetorio__/graphics/icons/neodymium.png", 64),
     category = "intermediate-smelting",
     enabled = false,
@@ -1267,7 +1267,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-bolts-from-steel-plate",  -- #ForRegEx# - recipe
-    icons = util.overlay_small_icon("__Spaghetorio__/graphics/icons/bolts-1.png", 64,
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/bolts-1.png", 64,
                                     "__Krastorio2Assets__/icons/items/steel-plate.png", 64),
     category = "crafting",
     enabled = false,
@@ -1298,7 +1298,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-machined-parts-from-steel-plate",  -- #ForRegEx# - recipe
-    icons = util.overlay_small_icon("__Spaghetorio__/graphics/icons/machined-parts-4.png", 64,
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/machined-parts-4.png", 64,
                                     "__Krastorio2Assets__/icons/items/steel-plate.png", 64),
     category = "crafting",
     enabled = false,
@@ -1391,7 +1391,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-capacitor-from-niobium",  -- #ForRegEx# - recipe
-    icons = util.overlay_small_icon("__Spaghetorio__/graphics/icons/capacitor.png", 64,
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/capacitor.png", 64,
                                     "__Spaghetorio__/graphics/icons/niobium-billet.png", 64),
     category = "crafting-with-fluid",
     enabled = false,
@@ -1410,7 +1410,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-capacitor-from-tantalum",  -- #ForRegEx# - recipe
-    icons = util.overlay_small_icon("__Spaghetorio__/graphics/icons/capacitor.png", 64,
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/capacitor.png", 64,
                                     "__Spaghetorio__/graphics/icons/tantalum-billet.png", 64),
     category = "crafting",
     enabled = false,
@@ -1978,7 +1978,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-sulfur-with-catalyst",  -- #ForRegEx# - recipe
-    icons = util.overlay_small_icon("__base__/graphics/icons/sulfur.png", 64,
+    icons = util.icon.overlay_small_icon("__base__/graphics/icons/sulfur.png", 64,
                                     "__Spaghetorio__/graphics/icons/catalyst.png", 64),
     category = "chemistry",
     enabled = false,
@@ -2028,7 +2028,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-turbine-blade-from-stainless-steel",  -- #ForRegEx# - recipe
-    icons = util.overlay_small_icon("__Spaghetorio__/graphics/icons/turbine-blade.png", 64,
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/turbine-blade.png", 64,
                                     "__Spaghetorio__/graphics/icons/stainless-steel.png", 64),
     category = "crafting",
     enabled = false,
@@ -2046,7 +2046,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-turbine-blade-from-TiAlSn",  -- #ForRegEx# - recipe
-    icons = util.overlay_small_icon("__Spaghetorio__/graphics/icons/turbine-blade.png", 64,
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/turbine-blade.png", 64,
                                     "__Spaghetorio__/graphics/icons/TiAlSn.png", 64),
     category = "crafting",
     enabled = false,
@@ -2248,7 +2248,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-plutonium-239-fuel-rod",  -- #ForRegEx# - recipe
-    icons = util.overlay_small_icon("__Spaghetorio__/graphics/icons/plutonium-fuel-rod.png", 64,
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/plutonium-fuel-rod.png", 64,
                                     "__Spaghetorio__/graphics/icons/plutonium-239-1.png", 64),
     category = "crafting",
     enabled = false,
@@ -2264,7 +2264,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-plutonium-240-fuel-rod",  -- #ForRegEx# - recipe
-    icons = util.overlay_small_icon("__Spaghetorio__/graphics/icons/plutonium-fuel-rod.png", 64,
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/plutonium-fuel-rod.png", 64,
                                     "__Spaghetorio__/graphics/icons/plutonium-240-1.png", 64),
     category = "crafting",
     enabled = false,
@@ -2352,7 +2352,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-catalyst-from-calcium-magnesium",  -- #ForRegEx# - recipe
-    icons = util.overlay_small_icon("__Spaghetorio__/graphics/icons/catalyst.png", 64,
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/catalyst.png", 64,
                                     "__Spaghetorio__/graphics/icons/magnesium-slab.png", 64),
     category = "crafting",
     enabled = false,
@@ -2368,7 +2368,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-catalyst-from-palladium",  -- #ForRegEx# - recipe
-    icons = util.overlay_small_icon("__Spaghetorio__/graphics/icons/catalyst.png", 64,
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/catalyst.png", 64,
                                     "__Spaghetorio__/graphics/icons/palladium.png", 64),
     category = "crafting",
     enabled = false,
@@ -2384,7 +2384,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-catalyst-from-liquid-sodium",  -- #ForRegEx# - recipe
-    icons = util.overlay_small_icon("__Spaghetorio__/graphics/icons/catalyst.png", 64,
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/catalyst.png", 64,
                                     "__Spaghetorio__/graphics/icons/liquid-sodium.png", 64),
     category = "chemistry",
     enabled = false,
@@ -2402,7 +2402,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-mirror-from-silver",  -- #ForRegEx# - recipe
-    icons = util.overlay_small_icon("__Spaghetorio__/graphics/icons/mirror.png", 64,
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/mirror.png", 64,
                                     "__Spaghetorio__/graphics/icons/silver.png", 64),
     category = "crafting",
     enabled = false,
@@ -2497,7 +2497,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-quasicrystal-1",  -- #ForRegEx# - recipe
-    icons = util.overlay_small_icon("__Spaghetorio__/graphics/icons/quasicrystal.png", 64,
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/quasicrystal.png", 64,
                                     "__base__/graphics/icons/copper-plate.png", 64),
     category = "intermediate-smelting",
     enabled = false,
@@ -2515,7 +2515,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-quasicrystal-2",  -- #ForRegEx# - recipe
-    icons = util.overlay_small_icon("__Spaghetorio__/graphics/icons/quasicrystal.png", 64,
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/quasicrystal.png", 64,
                                     "__Spaghetorio__/graphics/icons/aluminum-sheet.png", 64),
     category = "intermediate-smelting",
     enabled = false,
@@ -2549,7 +2549,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-electrode-from-iridium",  -- #ForRegEx# - recipe
-    icons = util.overlay_small_icon("__Spaghetorio__/graphics/icons/electrode.png", 64,
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/electrode.png", 64,
                                     "__Spaghetorio__/graphics/icons/iridium.png", 64),
     category = "crafting",
     enabled = false,
@@ -2567,7 +2567,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-electrode-from-platinum",  -- #ForRegEx# - recipe
-    icons = util.overlay_small_icon("__Spaghetorio__/graphics/icons/electrode.png", 64,
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/electrode.png", 64,
                                     "__Spaghetorio__/graphics/icons/platinum.png", 64),
     category = "crafting",
     enabled = false,
@@ -2714,7 +2714,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-ethylene-and-propene",  -- #ForRegEx# - recipe
-    icons = util.combine_two_icons("__base__/graphics/icons/fluid/petroleum-gas.png", 64, nil,
+    icons = util.icon.combine_two_icons("__base__/graphics/icons/fluid/petroleum-gas.png", 64, nil,
                                    "__Spaghetorio__/graphics/icons/propane.png", 64, nil),
     icon_size = 64,
     mip_maps = 4,
@@ -2766,7 +2766,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-sodium-hydroxide-from-liquid-sodium",  -- #ForRegEx# - recipe
-    icons = util.overlay_small_icon("__Spaghetorio__/graphics/icons/sodium-hydroxide.png", 64,
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/sodium-hydroxide.png", 64,
                                     "__Spaghetorio__/graphics/icons/liquid-sodium.png", 64),
     category = "chemistry",
     subgroup = "fluid-recipes",
@@ -3007,7 +3007,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-yemnuth-pearls-from-cerium-and-neodymium",  -- #ForRegEx# - recipe
-    icons = util.overlay_two_small_icons("__Spaghetorio__/graphics/icons/yemnuth-pearls.png", 64,
+    icons = util.icon.overlay_two_small_icons("__Spaghetorio__/graphics/icons/yemnuth-pearls.png", 64,
                                          "__Spaghetorio__/graphics/icons/cerium.png", 64,
                                          "__Spaghetorio__/graphics/icons/neodymium.png", 64),
     category = "crafting",
@@ -3026,7 +3026,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-yemnuth-pearls-from-yttrium-and-lanthanum",  -- #ForRegEx# - recipe
-    icons = util.overlay_two_small_icons("__Spaghetorio__/graphics/icons/yemnuth-pearls.png", 64,
+    icons = util.icon.overlay_two_small_icons("__Spaghetorio__/graphics/icons/yemnuth-pearls.png", 64,
                                          "__Spaghetorio__/graphics/icons/yttrium.png", 64,
                                          "__Spaghetorio__/graphics/icons/lanthanum.png", 64),
     category = "crafting",
@@ -3094,7 +3094,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-blunagium-processing",  -- #ForRegEx# - recipe
-    icons = util.combine_two_icons("__Spaghetorio__/graphics/icons/blunagium-stone.png", 64, nil,
+    icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/icons/blunagium-stone.png", 64, nil,
                                    "__Spaghetorio__/graphics/icons/blunagium-basalt.png", 64, nil),
     icon_size = 64,
     mip_maps = 4,
@@ -3274,7 +3274,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-grobgnum-slurry-processing",  -- #ForRegEx# - recipe
-    icons = util.combine_two_icons("__Spaghetorio__/graphics/icons/grobgnum-shard.png", 64, nil,
+    icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/icons/grobgnum-shard.png", 64, nil,
                                    "__Spaghetorio__/graphics/icons/grobgnum-droplet.png", 64, nil),
     icon_size = 64,
     mip_maps = 4,
@@ -5158,7 +5158,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-blunagium-to-grobgnum-acrosphere",  -- #ForRegEx# - recipe
-    icons = util.acrosphere_color_change_recipe_icon("__Spaghetorio__/graphics/icons/blunagium-acrosphere-1.png",
+    icons = util.icon.acrosphere_color_change_recipe_icon("__Spaghetorio__/graphics/icons/blunagium-acrosphere-1.png",
                                                      "__Spaghetorio__/graphics/icons/blunagium-acrosphere-2.png",
                                                      "__Spaghetorio__/graphics/icons/grobgnum-acrosphere-1.png",
                                                      "__Spaghetorio__/graphics/icons/grobgnum-acrosphere-2.png",
@@ -5182,7 +5182,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-blunagium-to-rukite-acrosphere",  -- #ForRegEx# - recipe
-    icons = util.acrosphere_color_change_recipe_icon("__Spaghetorio__/graphics/icons/blunagium-acrosphere-1.png",
+    icons = util.icon.acrosphere_color_change_recipe_icon("__Spaghetorio__/graphics/icons/blunagium-acrosphere-1.png",
                                                      "__Spaghetorio__/graphics/icons/blunagium-acrosphere-2.png",
                                                      "__Spaghetorio__/graphics/icons/rukite-acrosphere-1.png",
                                                      "__Spaghetorio__/graphics/icons/rukite-acrosphere-2.png",
@@ -5206,7 +5206,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-grobgnum-to-yemnuth-acrosphere",  -- #ForRegEx# - recipe
-    icons = util.acrosphere_color_change_recipe_icon("__Spaghetorio__/graphics/icons/grobgnum-acrosphere-1.png",
+    icons = util.icon.acrosphere_color_change_recipe_icon("__Spaghetorio__/graphics/icons/grobgnum-acrosphere-1.png",
                                                     "__Spaghetorio__/graphics/icons/grobgnum-acrosphere-2.png",
                                                     "__Spaghetorio__/graphics/icons/yemnuth-acrosphere-1.png",
                                                     "__Spaghetorio__/graphics/icons/yemnuth-acrosphere-2.png",
@@ -5230,7 +5230,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-rukite-to-yemnuth-acrosphere",  -- #ForRegEx# - recipe
-    icons = util.acrosphere_color_change_recipe_icon("__Spaghetorio__/graphics/icons/rukite-acrosphere-1.png",
+    icons = util.icon.acrosphere_color_change_recipe_icon("__Spaghetorio__/graphics/icons/rukite-acrosphere-1.png",
                                                      "__Spaghetorio__/graphics/icons/rukite-acrosphere-2.png",
                                                      "__Spaghetorio__/graphics/icons/yemnuth-acrosphere-1.png",
                                                      "__Spaghetorio__/graphics/icons/yemnuth-acrosphere-2.png",
@@ -5254,7 +5254,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-yemnuth-to-blunagium-acrosphere",  -- #ForRegEx# - recipe
-    icons = util.acrosphere_color_change_recipe_icon("__Spaghetorio__/graphics/icons/yemnuth-acrosphere-1.png",
+    icons = util.icon.acrosphere_color_change_recipe_icon("__Spaghetorio__/graphics/icons/yemnuth-acrosphere-1.png",
                                                      "__Spaghetorio__/graphics/icons/yemnuth-acrosphere-2.png",
                                                      "__Spaghetorio__/graphics/icons/blunagium-acrosphere-1.png",
                                                      "__Spaghetorio__/graphics/icons/blunagium-acrosphere-2.png",
@@ -5278,7 +5278,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-upgrade-blunagium-acrosphere",  -- #ForRegEx# - recipe
-    icons = util.acrosphere_upgrade_recipe_icon("__Spaghetorio__/graphics/icons/blunagium-acrosphere-1.png",
+    icons = util.icon.acrosphere_upgrade_recipe_icon("__Spaghetorio__/graphics/icons/blunagium-acrosphere-1.png",
                                                 "__Spaghetorio__/graphics/icons/grobgnum-acrosphere-1.png",
                                                 "__Spaghetorio__/graphics/icons/rukite-acrosphere-1.png",
                                                 "__Spaghetorio__/graphics/icons/blunagium-acrosphere-2.png",
@@ -5306,7 +5306,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-upgrade-grobgnum-acrosphere",  -- #ForRegEx# - recipe
-    icons = util.acrosphere_upgrade_recipe_icon("__Spaghetorio__/graphics/icons/grobgnum-acrosphere-1.png",
+    icons = util.icon.acrosphere_upgrade_recipe_icon("__Spaghetorio__/graphics/icons/grobgnum-acrosphere-1.png",
                                                 "__Spaghetorio__/graphics/icons/rukite-acrosphere-1.png",
                                                 "__Spaghetorio__/graphics/icons/yemnuth-acrosphere-1.png",
                                                 "__Spaghetorio__/graphics/icons/grobgnum-acrosphere-2.png",
@@ -5334,7 +5334,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-upgrade-rukite-acrosphere",  -- #ForRegEx# - recipe
-    icons = util.acrosphere_upgrade_recipe_icon("__Spaghetorio__/graphics/icons/rukite-acrosphere-1.png",
+    icons = util.icon.acrosphere_upgrade_recipe_icon("__Spaghetorio__/graphics/icons/rukite-acrosphere-1.png",
                                                 "__Spaghetorio__/graphics/icons/yemnuth-acrosphere-1.png",
                                                 "__Spaghetorio__/graphics/icons/blunagium-acrosphere-1.png",
                                                 "__Spaghetorio__/graphics/icons/rukite-acrosphere-2.png",
@@ -5362,7 +5362,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-upgrade-yemnuth-acrosphere",  -- #ForRegEx# - recipe
-    icons = util.acrosphere_upgrade_recipe_icon("__Spaghetorio__/graphics/icons/yemnuth-acrosphere-1.png",
+    icons = util.icon.acrosphere_upgrade_recipe_icon("__Spaghetorio__/graphics/icons/yemnuth-acrosphere-1.png",
                                                 "__Spaghetorio__/graphics/icons/blunagium-acrosphere-1.png",
                                                 "__Spaghetorio__/graphics/icons/grobgnum-acrosphere-1.png",
                                                 "__Spaghetorio__/graphics/icons/yemnuth-acrosphere-2.png",
@@ -5469,7 +5469,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-iron-ore-from-acrocrystal",  -- #ForRegEx# - recipe
-    icons = util.create_acroproduct_conversion_icon("__base__/graphics/icons/iron-ore.png",
+    icons = util.icon.create_acroproduct_conversion_icon("__base__/graphics/icons/iron-ore.png",
                                                     "__Spaghetorio__/graphics/icons/acrocrystal.png"),
     icon_size = 64,
     mip_maps = 4,
@@ -5498,7 +5498,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-copper-ore-from-acrocrystal",  -- #ForRegEx# - recipe
-    icons = util.create_acroproduct_conversion_icon("__base__/graphics/icons/copper-ore.png",
+    icons = util.icon.create_acroproduct_conversion_icon("__base__/graphics/icons/copper-ore.png",
                                                     "__Spaghetorio__/graphics/icons/acrocrystal.png"),
     icon_size = 64,
     mip_maps = 4,
@@ -5529,7 +5529,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-stone-from-acrocrystal",  -- #ForRegEx# - recipe
-    icons = util.create_acroproduct_conversion_icon("__base__/graphics/icons/stone.png",
+    icons = util.icon.create_acroproduct_conversion_icon("__base__/graphics/icons/stone.png",
                                                     "__Spaghetorio__/graphics/icons/acrocrystal.png"),
     icon_size = 64,
     mip_maps = 4,
@@ -5560,7 +5560,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-coal-from-acrocrystal",  -- #ForRegEx# - recipe
-    icons = util.create_acroproduct_conversion_icon("__base__/graphics/icons/coal.png",
+    icons = util.icon.create_acroproduct_conversion_icon("__base__/graphics/icons/coal.png",
                                                     "__Spaghetorio__/graphics/icons/acrocrystal.png"),
     icon_size = 64,
     mip_maps = 4,
@@ -5590,7 +5590,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-aluminum-ore-from-acrocrystal",  -- #ForRegEx# - recipe
-    icons = util.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/aluminum-ore-1.png",
+    icons = util.icon.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/aluminum-ore-1.png",
                                                     "__Spaghetorio__/graphics/icons/acrocrystal.png"),
     icon_size = 64,
     mip_maps = 4,
@@ -5619,7 +5619,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-chromite-from-acrocrystal",  -- #ForRegEx# - recipe
-    icons = util.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/chromite-1.png",
+    icons = util.icon.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/chromite-1.png",
                                                     "__Spaghetorio__/graphics/icons/acrocrystal.png"),
     icon_size = 64,
     mip_maps = 4,
@@ -5647,7 +5647,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-limestone-from-acrocrystal",  -- #ForRegEx# - recipe
-    icons = util.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/limestone-1.png",
+    icons = util.icon.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/limestone-1.png",
                                                     "__Spaghetorio__/graphics/icons/acrocrystal.png"),
     icon_size = 64,
     mip_maps = 4,
@@ -5676,7 +5676,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-titanium-ore-from-acrocrystal",  -- #ForRegEx# - recipe
-    icons = util.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/titanium-ore-1.png",
+    icons = util.icon.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/titanium-ore-1.png",
                                                     "__Spaghetorio__/graphics/icons/acrocrystal.png"),
     icon_size = 64,
     mip_maps = 4,
@@ -5704,7 +5704,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-magnesium-ore-from-acrocrystal",  -- #ForRegEx# - recipe
-    icons = util.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/magnesium-ore-1.png",
+    icons = util.icon.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/magnesium-ore-1.png",
                                                     "__Spaghetorio__/graphics/icons/acrocrystal.png"),
     icon_size = 64,
     mip_maps = 4,
@@ -5733,7 +5733,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-nickel-ore-from-acrocrystal",  -- #ForRegEx# - recipe
-    icons = util.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/nickel-ore-1.png",
+    icons = util.icon.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/nickel-ore-1.png",
                                                     "__Spaghetorio__/graphics/icons/acrocrystal.png"),
     icon_size = 64,
     mip_maps = 4,
@@ -5763,7 +5763,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-tinstone-from-acrocrystal",  -- #ForRegEx# - recipe
-    icons = util.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/tinstone-1.png",
+    icons = util.icon.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/tinstone-1.png",
                                                     "__Spaghetorio__/graphics/icons/acrocrystal.png"),
     icon_size = 64,
     mip_maps = 4,
@@ -5793,7 +5793,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-tungsten-ore-from-acrocrystal",  -- #ForRegEx# - recipe
-    icons = util.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/tungsten-ore-1.png",
+    icons = util.icon.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/tungsten-ore-1.png",
                                                     "__Spaghetorio__/graphics/icons/acrocrystal.png"),
     icon_size = 64,
     mip_maps = 4,
@@ -5820,7 +5820,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-zinc-ore-from-acrocrystal",  -- #ForRegEx# - recipe
-    icons = util.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/zinc-ore-1.png",
+    icons = util.icon.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/zinc-ore-1.png",
                                                     "__Spaghetorio__/graphics/icons/acrocrystal.png"),
     icon_size = 64,
     mip_maps = 4,
@@ -5848,7 +5848,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-zirconium-ore-from-acrocrystal",  -- #ForRegEx# - recipe
-    icons = util.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/zirconium-ore-1.png",
+    icons = util.icon.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/zirconium-ore-1.png",
                                                     "__Spaghetorio__/graphics/icons/acrocrystal.png"),
     icon_size = 64,
     mip_maps = 4,
@@ -5883,7 +5883,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-uranium-from-acrovoid",  -- #ForRegEx# - recipe
-    icons = util.create_acroproduct_conversion_icon("__base__/graphics/icons/uranium-238.png",
+    icons = util.icon.create_acroproduct_conversion_icon("__base__/graphics/icons/uranium-238.png",
                                                     "__Spaghetorio__/graphics/icons/acrovoid.png"),
     icon_size = 64,
     mip_maps = 4,
@@ -5911,7 +5911,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-calcium-from-acrovoid",  -- #ForRegEx# - recipe
-    icons = util.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/calcium.png",
+    icons = util.icon.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/calcium.png",
                                                     "__Spaghetorio__/graphics/icons/acrovoid.png"),
     icon_size = 64,
     mip_maps = 4,
@@ -5940,7 +5940,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-cerium-from-acrovoid",  -- #ForRegEx# - recipe
-    icons = util.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/cerium.png",
+    icons = util.icon.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/cerium.png",
                                                     "__Spaghetorio__/graphics/icons/acrovoid.png"),
     icon_size = 64,
     mip_maps = 4,
@@ -5969,7 +5969,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-yttrium-from-acrovoid",  -- #ForRegEx# - recipe
-    icons = util.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/yttrium.png",
+    icons = util.icon.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/yttrium.png",
                                                     "__Spaghetorio__/graphics/icons/acrovoid.png"),
     icon_size = 64,
     mip_maps = 4,
@@ -5998,7 +5998,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-lanthanum-from-acrovoid",  -- #ForRegEx# - recipe
-    icons = util.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/lanthanum.png",
+    icons = util.icon.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/lanthanum.png",
                                                     "__Spaghetorio__/graphics/icons/acrovoid.png"),
     icon_size = 64,
     mip_maps = 4,
@@ -6027,7 +6027,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-neodymium-from-acrovoid",  -- #ForRegEx# - recipe
-    icons = util.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/neodymium.png",
+    icons = util.icon.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/neodymium.png",
                                                     "__Spaghetorio__/graphics/icons/acrovoid.png"),
     icon_size = 64,
     mip_maps = 4,
@@ -6056,7 +6056,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-fluorine-from-acrovoid",  -- #ForRegEx# - recipe
-    icons = util.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/fluorine.png",
+    icons = util.icon.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/fluorine.png",
                                                     "__Spaghetorio__/graphics/icons/acrovoid.png"),
     icon_size = 64,
     mip_maps = 4,
@@ -6085,7 +6085,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-gold-from-acrovoid",  -- #ForRegEx# - recipe
-    icons = util.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/gold.png",
+    icons = util.icon.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/gold.png",
                                                     "__Spaghetorio__/graphics/icons/acrovoid.png"),
     icon_size = 64,
     mip_maps = 4,
@@ -6115,7 +6115,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-graphite-from-acrovoid",  -- #ForRegEx# - recipe
-    icons = util.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/graphite-1.png",
+    icons = util.icon.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/graphite-1.png",
                                                     "__Spaghetorio__/graphics/icons/acrovoid.png"),
     icon_size = 64,
     mip_maps = 4,
@@ -6146,7 +6146,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-iridium-from-acrovoid",  -- #ForRegEx# - recipe
-    icons = util.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/iridium.png",
+    icons = util.icon.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/iridium.png",
                                                     "__Spaghetorio__/graphics/icons/acrovoid.png"),
     icon_size = 64,
     mip_maps = 4,
@@ -6178,7 +6178,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-leadstone-from-acrovoid",  -- #ForRegEx# - recipe
-    icons = util.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/leadstone-1.png",
+    icons = util.icon.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/leadstone-1.png",
                                                     "__Spaghetorio__/graphics/icons/acrovoid.png"),
     icon_size = 64,
     mip_maps = 4,
@@ -6207,7 +6207,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-palladium-from-acrovoid",  -- #ForRegEx# - recipe
-    icons = util.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/palladium.png",
+    icons = util.icon.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/palladium.png",
                                                     "__Spaghetorio__/graphics/icons/acrovoid.png"),
     icon_size = 64,
     mip_maps = 4,
@@ -6236,7 +6236,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-phosphorus-from-acrovoid",  -- #ForRegEx# - recipe
-    icons = util.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/phosphorus.png",
+    icons = util.icon.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/phosphorus.png",
                                                     "__Spaghetorio__/graphics/icons/acrovoid.png"),
     icon_size = 64,
     mip_maps = 4,
@@ -6267,7 +6267,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-platinum-from-acrovoid",  -- #ForRegEx# - recipe
-    icons = util.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/platinum.png",
+    icons = util.icon.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/platinum.png",
                                                     "__Spaghetorio__/graphics/icons/acrovoid.png"),
     icon_size = 64,
     mip_maps = 4,
@@ -6297,7 +6297,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-plutonium-from-acrovoid",  -- #ForRegEx# - recipe
-    icons = util.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/plutonium-239-1.png",
+    icons = util.icon.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/plutonium-239-1.png",
                                                     "__Spaghetorio__/graphics/icons/acrovoid.png"),
     icon_size = 64,
     mip_maps = 4,
@@ -6326,7 +6326,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-silver-from-acrovoid",  -- #ForRegEx# - recipe
-    icons = util.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/silver.png",
+    icons = util.icon.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/silver.png",
                                                     "__Spaghetorio__/graphics/icons/acrovoid.png"),
     icon_size = 64,
     mip_maps = 4,
@@ -6355,7 +6355,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-sodium-from-acrovoid",  -- #ForRegEx# - recipe
-    icons = util.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/sodium.png",
+    icons = util.icon.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/sodium.png",
                                                     "__Spaghetorio__/graphics/icons/acrovoid.png"),
     icon_size = 64,
     mip_maps = 4,
@@ -6384,7 +6384,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-antimony-from-acrovoid",  -- #ForRegEx# - recipe
-    icons = util.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/antimony.png",
+    icons = util.icon.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/antimony.png",
                                                     "__Spaghetorio__/graphics/icons/acrovoid.png"),
     icon_size = 64,
     mip_maps = 4,
@@ -6414,7 +6414,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-tellurium-from-acrovoid",  -- #ForRegEx# - recipe
-    icons = util.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/tellurium-1.png",
+    icons = util.icon.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/tellurium-1.png",
                                                     "__Spaghetorio__/graphics/icons/acrovoid.png"),
     icon_size = 64,
     mip_maps = 4,
@@ -6444,7 +6444,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-zircon-from-acrovoid",  -- #ForRegEx# - recipe
-    icons = util.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/zircon.png",
+    icons = util.icon.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/zircon.png",
                                                     "__Spaghetorio__/graphics/icons/acrovoid.png"),
     icon_size = 64,
     mip_maps = 4,
@@ -6473,7 +6473,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-sulfur-from-acrovoid",  -- #ForRegEx# - recipe
-    icons = util.create_acroproduct_conversion_icon("__base__/graphics/icons/sulfur.png",
+    icons = util.icon.create_acroproduct_conversion_icon("__base__/graphics/icons/sulfur.png",
                                                     "__Spaghetorio__/graphics/icons/acrovoid.png"),
     icon_size = 64,
     mip_maps = 4,
@@ -6970,7 +6970,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-landfill-from-iron-ore",
-    icons = util.overlay_two_small_icons("__base__/graphics/icons/landfill.png", 64,
+    icons = util.icon.overlay_two_small_icons("__base__/graphics/icons/landfill.png", 64,
                                          "__base__/graphics/icons/stone.png", 64,
                                          "__base__/graphics/icons/iron-ore.png", 64),
     energy_required = 0.5,
@@ -6988,7 +6988,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-landfill-from-limestone",
-    icons = util.overlay_small_icon("__base__/graphics/icons/landfill.png", 64,
+    icons = util.icon.overlay_small_icon("__base__/graphics/icons/landfill.png", 64,
                                     "__Spaghetorio__/graphics/icons/limestone-1.png", 64),
     energy_required = 0.5,
     enabled = false,
@@ -7004,7 +7004,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-landfill-from-limestone-and-stone",
-    icons = util.overlay_two_small_icons("__base__/graphics/icons/landfill.png", 64,
+    icons = util.icon.overlay_two_small_icons("__base__/graphics/icons/landfill.png", 64,
                                          "__base__/graphics/icons/stone.png", 64,
                                          "__Spaghetorio__/graphics/icons/limestone-1.png", 64),
     energy_required = 0.5,
@@ -7022,7 +7022,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-landfill-from-cement",
-    icons = util.overlay_small_icon("__base__/graphics/icons/landfill.png", 64,
+    icons = util.icon.overlay_small_icon("__base__/graphics/icons/landfill.png", 64,
                                     "__Spaghetorio__/graphics/icons/cement.png", 64),
     energy_required = 1,
     enabled = false,
@@ -7039,7 +7039,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-landfill-from-flourspar",
-    icons = util.overlay_small_icon("__base__/graphics/icons/landfill.png", 64,
+    icons = util.icon.overlay_small_icon("__base__/graphics/icons/landfill.png", 64,
                                     "__Spaghetorio__/graphics/icons/fluorspar.png", 64),
     energy_required = 1,
     enabled = false,
@@ -7056,7 +7056,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-stone-brick-from-limestone",
-    icons = util.overlay_small_icon("__base__/graphics/icons/stone-brick.png", 64,
+    icons = util.icon.overlay_small_icon("__base__/graphics/icons/stone-brick.png", 64,
                                     "__Spaghetorio__/graphics/icons/limestone-1.png", 64),
     category = "intermediate-smelting",
     energy_required = 3.2,
@@ -7070,7 +7070,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-insulated-wire-from-aluminum",
-    icons = util.overlay_small_icon("__Spaghetorio__/graphics/icons/insulated-wire.png", 64,
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/insulated-wire.png", 64,
                                     "__Spaghetorio__/graphics/icons/aluminum-cable.png", 64),
     category = "crafting-with-fluid",
     enabled = false,
@@ -7148,7 +7148,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-aqueous-niobium-tantalum",  -- #ForRegEx# - recipe
-    icons = util.combine_two_icons("__Spaghetorio__/graphics/icons/aqueous-niobium.png", 64, nil,
+    icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/icons/aqueous-niobium.png", 64, nil,
                                     "__Spaghetorio__/graphics/icons/aqueous-tantalum.png", 64, nil),
     icon_size = 256,
     scale = 0.25,
@@ -7188,7 +7188,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-platinum-iridium",  -- #ForRegEx# - recipe
-    icons = util.combine_two_icons("__Spaghetorio__/graphics/icons/platinum.png", 64, nil,
+    icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/icons/platinum.png", 64, nil,
                                     "__Spaghetorio__/graphics/icons/iridium.png", 64, nil),
     icon_size = 256,
     scale = 0.25,
@@ -7208,7 +7208,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-landfill-from-sand",
-    icons = util.overlay_two_small_icons("__base__/graphics/icons/landfill.png", 64,
+    icons = util.icon.overlay_two_small_icons("__base__/graphics/icons/landfill.png", 64,
                                          "__base__/graphics/icons/stone.png", 64,
                                          "__Krastorio2Assets__/icons/items-with-variations/sand/sand.png", 64),
     energy_required = 1,
@@ -7226,7 +7226,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-stone-brick-from-sand",
-    icons = util.overlay_small_icon("__base__/graphics/icons/stone-brick.png", 64,
+    icons = util.icon.overlay_small_icon("__base__/graphics/icons/stone-brick.png", 64,
                                     "__Krastorio2Assets__/icons/items-with-variations/sand/sand.png", 64),
     category = "intermediate-smelting",
     energy_required = 2,
@@ -7348,7 +7348,7 @@ data:extend({
     type = "recipe",
     name = "sp-sodium-and-chlorine",  -- #ForRegEx# - recipe
     -- Update icons here, search: "-- Add acion changes here"
-    icons = util.combine_two_icons("__Spaghetorio__/graphics/icons/sodium.png", 64, nil,
+    icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/icons/sodium.png", 64, nil,
                                    "__Krastorio2Assets__/icons/fluids/chlorine.png", 64, nil),
     icon_size = 256,
     scale = 0.25,
@@ -7559,7 +7559,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-used-up-fuel-rod-reprocessing",  -- #ForRegEx# - recipe
-    icons = util.combine_two_icons("__Spaghetorio__/graphics/icons/used-up-fuel-rod.png", 64, nil,
+    icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/icons/used-up-fuel-rod.png", 64, nil,
                                    "__Spaghetorio__/graphics/icons/nuclear-waste.png", 64, nil),
     icon_size = 64,
     mip_maps = 4,
@@ -7582,7 +7582,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-advanced-nuclear-waste-processing",  -- #ForRegEx# - recipe
-    icons = util.overlay_small_icon("__Spaghetorio__/graphics/icons/nuclear-waste.png", 64, 
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/nuclear-waste.png", 64, 
                                     "__Spaghetorio__/graphics/icons/plutonium-239-1.png", 64),
     icon_size = 256,
     scale = 0.25,
@@ -7672,7 +7672,7 @@ data:extend({
     type = "recipe",
     name = "sp-sodium-hydroxide-from-salt",  -- #ForRegEx# - recipe
     -- Update icons here, search: "-- Add acion changes here"
-    icons = util.combine_two_icons("__Spaghetorio__/graphics/icons/sodium-hydroxide.png", 64, nil,
+    icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/icons/sodium-hydroxide.png", 64, nil,
                                    "__Krastorio2Assets__/icons/fluids/chlorine.png", 64, nil),
     icon_size = 64,
     scale = 0.25,
@@ -7693,7 +7693,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-sodium-hydroxide-from-sodium",  -- #ForRegEx# - recipe
-    icons = util.overlay_small_icon("__Spaghetorio__/graphics/icons/sodium-hydroxide.png", 64,
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/sodium-hydroxide.png", 64,
                                     "__Spaghetorio__/graphics/icons/sodium.png", 64),
     category = "chemistry",
     subgroup = "fluid-recipes",
@@ -7921,7 +7921,7 @@ if not mods["Krastorio2"] then
       type = "recipe",
       -- In Krastorio called "kr-vc-sp-limestone"
       name = "sp-calcium-carbonate",  -- #ForRegEx# - recipe
-      icons = util.combine_two_icons("__Spaghetorio__/graphics/icons/calcium-carbonate.png", 64, nil,
+      icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/icons/calcium-carbonate.png", 64, nil,
                                      "__Spaghetorio__/graphics/icons/fluorspar.png", 64, nil),
       icon_size = 64,
       mip_maps = 4,
@@ -7994,7 +7994,7 @@ if not mods["Krastorio2"] then
     {
       type = "recipe",
       name = "sp-coke-from-acrovoid",  -- #ForRegEx# - recipe
-      icons = util.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/coke.png",
+      icons = util.icon.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/coke.png",
                                                       "__Spaghetorio__/graphics/icons/acrovoid.png"),
       icon_size = 64,
       mip_maps = 4,
@@ -8023,7 +8023,7 @@ if not mods["Krastorio2"] then
     {
       type = "recipe",
       name = "sp-silicon-from-acrovoid",  -- #ForRegEx# - recipe
-      icons = util.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/coke.png",
+      icons = util.icon.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/coke.png",
                                                       "__Spaghetorio__/graphics/icons/acrovoid.png"),
       icon_size = 64,
       mip_maps = 4,

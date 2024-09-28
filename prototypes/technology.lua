@@ -58,7 +58,7 @@ data:extend({
     name = "sp-tin-processing",  -- #ForRegEx# - technology
     icon_size = 256,
     -- icon = "__Spaghetorio__/graphics/hr-icons/tin-and-lead.png",
-    icons = util.combine_two_icons("__Spaghetorio__/graphics/hr-icons/tin-ingot.png", 256, nil,
+    icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/hr-icons/tin-ingot.png", 256, nil,
                                    "__Spaghetorio__/graphics/hr-icons/lead-slab.png", 256, nil),
     effects =
     {
@@ -329,7 +329,7 @@ data:extend({
     type = "technology",
     name = "sp-zinc-processing",  -- #ForRegEx# - technology
     icon_size = 256,
-    icons = util.combine_two_icons("__Spaghetorio__/graphics/hr-icons/zinc-sulfate-1.png", 256, nil,
+    icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/hr-icons/zinc-sulfate-1.png", 256, nil,
                                    "__Spaghetorio__/graphics/hr-icons/zinc-plate.png", 256, nil),
     effects =
     {
@@ -397,7 +397,7 @@ data:extend({
     type = "technology",
     name = "sp-carbon-high-tech",  -- #ForRegEx# - technology
     icon_size = 256,
-    icons = util.combine_two_icons("__Spaghetorio__/graphics/hr-icons/carbon-nanotubes.png", 256, nil,
+    icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/hr-icons/carbon-nanotubes.png", 256, nil,
                                    "__Spaghetorio__/graphics/hr-icons/graphene.png", 256, nil),
     effects =
     {
@@ -471,7 +471,7 @@ data:extend({
     type = "technology",
     name = "sp-calcium-and-fluorine",  -- #ForRegEx# - technology
     icon_size = 256,
-    icons = util.combine_two_icons("__Spaghetorio__/graphics/hr-icons/fluorine.png", 256, nil,
+    icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/hr-icons/fluorine.png", 256, nil,
                                    "__Spaghetorio__/graphics/hr-icons/calcium.png", 256, nil),
     effects =
     {
@@ -549,7 +549,7 @@ data:extend({
     type = "technology",
     name = "sp-titanium-machining",  -- #ForRegEx# - technology
     icon_size = 256,
-    icons = util.combine_two_icons("__Spaghetorio__/graphics/hr-icons/titanium-frame-1.png", 256, nil,
+    icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/hr-icons/titanium-frame-1.png", 256, nil,
                                    "__Spaghetorio__/graphics/hr-icons/titanium-plate.png", 256, nil),
     effects =
     {
@@ -620,7 +620,7 @@ data:extend({
     type = "technology",
     name = "sp-advanced-ceramics",  -- #ForRegEx# - technology
     icon_size = 256,
-    icons = util.combine_two_icons("__Spaghetorio__/graphics/hr-icons/titanium-carbide.png", 256, nil,
+    icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/hr-icons/titanium-carbide.png", 256, nil,
                                    "__Spaghetorio__/graphics/hr-icons/tungsten-carbide.png", 256, nil),
     effects =
     {
@@ -732,7 +732,7 @@ data:extend({
     type = "technology",
     name = "sp-niobium-and-tantalum",  -- #ForRegEx# - technology
     icon_size = 256,
-    icons = util.combine_two_icons("__Spaghetorio__/graphics/hr-icons/niobium-billet.png", 256, nil,
+    icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/hr-icons/niobium-billet.png", 256, nil,
                                    "__Spaghetorio__/graphics/hr-icons/tantalum-billet.png", 256, nil),
     effects =
     {
@@ -828,7 +828,7 @@ data:extend({
     type = "technology",
     name = "sp-nickel-and-cobalt",  -- #ForRegEx# - technology
     icon_size = 256,
-    icons = util.combine_two_icons("__Spaghetorio__/graphics/hr-icons/nickel-ingot.png", 256, {-20, 20},
+    icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/hr-icons/nickel-ingot.png", 256, {-20, 20},
                                    "__Spaghetorio__/graphics/hr-icons/cobalt-billet.png", 256, {20, -20}),
     effects =
     {
@@ -875,7 +875,7 @@ data:extend({
     type = "technology",
     name = "sp-noble-metals",  -- #ForRegEx# - technology
     icon_size = 256,
-    icons = util.combine_five_icons("__Spaghetorio__/graphics/hr-icons/silver.png", 256, nil,
+    icons = util.icon.combine_five_icons("__Spaghetorio__/graphics/hr-icons/silver.png", 256, nil,
                                     "__Spaghetorio__/graphics/hr-icons/palladium.png", 256, nil,
                                     "__Spaghetorio__/graphics/hr-icons/gold.png", 256, nil,
                                     "__Spaghetorio__/graphics/hr-icons/iridium.png", 256, nil,
@@ -926,7 +926,7 @@ data:extend({
     type = "technology",
     name = "sp-stainless-steel-processing",  -- #ForRegEx# - technology
     icon_size = 256,
-    icons = util.combine_two_icons("__Spaghetorio__/graphics/hr-icons/stainless-steel.png", 256, nil,
+    icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/hr-icons/stainless-steel.png", 256, nil,
                                    "__Spaghetorio__/graphics/hr-icons/chromium-plate.png", 256, nil),
     effects =
     {
@@ -972,7 +972,7 @@ data:extend({
     type = "technology",
     name = "sp-aluminum-alloys",  -- #ForRegEx# - technology
     icon_size = 256,
-    icons = util.combine_two_icons("__Spaghetorio__/graphics/hr-icons/duralumin.png", 256, nil,
+    icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/hr-icons/duralumin.png", 256, nil,
                                    "__Spaghetorio__/graphics/hr-icons/aluminum-brass.png", 256, nil),
     effects =
     {
@@ -1038,7 +1038,7 @@ data:extend({
     type = "technology",
     name = "sp-titanium-alloys",  -- #ForRegEx# - technology
     icon_size = 256,
-    icons = util.combine_two_icons("__Spaghetorio__/graphics/hr-icons/TiAlSn.png", 256, nil,
+    icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/hr-icons/TiAlSn.png", 256, nil,
                                    "__Spaghetorio__/graphics/hr-icons/TiNb.png", 256, nil),
     effects =
     {
@@ -1076,7 +1076,7 @@ data:extend({
     type = "technology",
     name = "sp-niobium-alloys",  -- #ForRegEx# - technology
     icon_size = 256,
-    icons = util.combine_two_icons("__Spaghetorio__/graphics/hr-icons/niobium-steel.png", 256, nil,
+    icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/hr-icons/niobium-steel.png", 256, nil,
                                    "__Spaghetorio__/graphics/hr-icons/niobium-tin.png", 256, nil),
     effects =
     {
@@ -1403,7 +1403,7 @@ data:extend({
     type = "technology",
     name = "sp-electronic-components",  -- #ForRegEx# - technology
     icon_size = 256,
-    icons = util.combine_three_icons("__Spaghetorio__/graphics/hr-icons/coil.png", 256, nil,
+    icons =  util.icon.combine_three_icons("__Spaghetorio__/graphics/hr-icons/coil.png", 256, nil,
                                      "__Spaghetorio__/graphics/hr-icons/transistor.png", 256, nil,
                                      "__Spaghetorio__/graphics/hr-icons/diode.png", 256, nil),
     effects =
@@ -1554,7 +1554,7 @@ data:extend({
     type = "technology",
     name = "sp-semiconductor",  -- #ForRegEx# - technology
     icon_size = 256,
-    icons = util.combine_two_icons("__Spaghetorio__/graphics/hr-icons/antenna-chip.png", 256, nil,
+    icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/hr-icons/antenna-chip.png", 256, nil,
                                    "__Spaghetorio__/graphics/hr-icons/processor.png", 256, nil),
     effects =
     {
@@ -1875,7 +1875,7 @@ data:extend({
     type = "technology",
     name = "sp-phosphorus-processing",  -- #ForRegEx# - technology
     icon_size = 256,
-    icons = util.combine_two_icons("__Spaghetorio__/graphics/hr-icons/phosphoric-acid.png", 256, nil,
+    icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/hr-icons/phosphoric-acid.png", 256, nil,
                                    "__Spaghetorio__/graphics/hr-icons/phosphorus.png", 256, nil),
     effects =
     {
@@ -2206,7 +2206,7 @@ data:extend({
     type = "technology",
     name = "sp-advanced-nuclear-waste-processing",  -- #ForRegEx# - technology
     icon_size = 256,
-    icons = util.overlay_small_icon_for_technology("__Spaghetorio__/graphics/hr-icons/nuclear-waste.png", 256,
+    icons = util.icon.overlay_small_icon_for_technology("__Spaghetorio__/graphics/hr-icons/nuclear-waste.png", 256,
                                                    "__Spaghetorio__/graphics/hr-icons/plutonium-239-1.png", 256),
     effects =
     {
@@ -2301,7 +2301,7 @@ data:extend({
     type = "technology",
     name = "sp-antimony-processing",  -- #ForRegEx# - technology
     icon_size = 256,
-    icons = util.combine_two_icons("__Spaghetorio__/graphics/hr-icons/stibnite-1.png", 256, nil,
+    icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/hr-icons/stibnite-1.png", 256, nil,
                                    "__Spaghetorio__/graphics/hr-icons/antimony.png", 256, nil),
     effects =
     {
@@ -2372,7 +2372,7 @@ data:extend({
     type = "technology",
     name = "sp-tellurium-processing",  -- #ForRegEx# - technology
     icon_size = 256,
-    icons = util.combine_two_icons("__Spaghetorio__/graphics/hr-icons/tellurium-hydroxide.png", 256, nil,
+    icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/hr-icons/tellurium-hydroxide.png", 256, nil,
                                    "__Spaghetorio__/graphics/hr-icons/tellurium-1.png", 256, nil),
     effects =
     {
@@ -2631,7 +2631,7 @@ data:extend({
     type = "technology",
     name = "sp-crystal-growing",  -- #ForRegEx# - technology
     icon_size = 256,
-    icons = util.combine_two_icons("__Spaghetorio__/graphics/hr-icons/quasicrystal.png", 256, nil,
+    icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/hr-icons/quasicrystal.png", 256, nil,
                                    "__Spaghetorio__/graphics/hr-icons/monocrystal.png", 256, nil),
     effects =
     {
@@ -2901,7 +2901,7 @@ data:extend({
     type = "technology",
     name = "sp-quantum-tech",  -- #ForRegEx# - technology
     icon_size = 256,
-    icons = util.combine_two_icons("__Spaghetorio__/graphics/hr-icons/quantum-crystal.png", 256, nil,
+    icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/hr-icons/quantum-crystal.png", 256, nil,
                                    "__Spaghetorio__/graphics/hr-icons/quantum-foam.png", 256, nil),
     effects =
     {
@@ -4665,7 +4665,7 @@ data:extend({
     type = "technology",
     name = "sp-alien-crystal-refinment",  -- #ForRegEx# - technology
     icon_size = 256,
-    icons = util.combine_two_icons("__Spaghetorio__/graphics/hr-icons/blunagium-imersite-slab.png", 256, nil,
+    icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/hr-icons/blunagium-imersite-slab.png", 256, nil,
                                    "__Spaghetorio__/graphics/hr-icons/radiant-glass.png", 256, nil),
     effects =
     {
@@ -5051,7 +5051,7 @@ data:extend({
     type = "technology",
     name = "sp-basic-acrosphere-conversion",  -- #ForRegEx# - technology
     icon_size = 256,
-    icons = util.combine_four_icons("__Spaghetorio__/graphics/hr-icons/blunagium-acrosphere-1.png", 256, nil,
+    icons = util.icon.combine_four_icons("__Spaghetorio__/graphics/hr-icons/blunagium-acrosphere-1.png", 256, nil,
                                     "__Spaghetorio__/graphics/hr-icons/grobgnum-acrosphere-1.png", 256, nil,
                                     "__Spaghetorio__/graphics/hr-icons/rukite-acrosphere-1.png", 256, nil,
                                     "__Spaghetorio__/graphics/hr-icons/yemnuth-acrosphere-1.png", 256, nil),
@@ -5107,7 +5107,7 @@ data:extend({
     type = "technology",
     name = "sp-upgrade-acrosphere-conversion",  -- #ForRegEx# - technology
     icon_size = 256,
-    icons = util.combine_four_icons("__Spaghetorio__/graphics/hr-icons/blunagium-acrosphere-2.png", 256, nil,
+    icons = util.icon.combine_four_icons("__Spaghetorio__/graphics/hr-icons/blunagium-acrosphere-2.png", 256, nil,
                                     "__Spaghetorio__/graphics/hr-icons/grobgnum-acrosphere-2.png", 256, nil,
                                     "__Spaghetorio__/graphics/hr-icons/rukite-acrosphere-2.png", 256, nil,
                                     "__Spaghetorio__/graphics/hr-icons/yemnuth-acrosphere-2.png", 256, nil),
@@ -5154,7 +5154,7 @@ data:extend({
     type = "technology",
     name = "sp-acroproduct",  -- #ForRegEx# - technology
     icon_size = 256,
-    icons = util.combine_three_icons("__Spaghetorio__/graphics/hr-icons/acrocrystal.png", 256, nil,
+    icons =  util.icon.combine_three_icons("__Spaghetorio__/graphics/hr-icons/acrocrystal.png", 256, nil,
                                      "__Spaghetorio__/graphics/hr-icons/acromatter.png", 256, nil,
                                      "__Spaghetorio__/graphics/hr-icons/acrovoid.png", 256, nil),
     effects =

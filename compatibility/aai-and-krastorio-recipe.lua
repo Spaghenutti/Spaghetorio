@@ -307,7 +307,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-wood-from-urea",  -- #ForRegEx# - recipe
-    icons = util.overlay_small_icon("__Krastorio2Assets__/icons/recipes/wood-plus.png", 64,
+    icons = util.icon.overlay_small_icon("__Krastorio2Assets__/icons/recipes/wood-plus.png", 64,
                                     "__Spaghetorio__/graphics/icons/urea.png", 64),
     category = "smelting",
     enabled = false,
@@ -348,7 +348,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-glass-from-calcium",  -- #ForRegEx# - recipe
-    icons = util.overlay_small_icon("__Krastorio2Assets__/icons/items/glass.png", 64,
+    icons = util.icon.overlay_small_icon("__Krastorio2Assets__/icons/items/glass.png", 64,
                                     "__Spaghetorio__/graphics/icons/calcium.png", 64),
     category = "smelting",
     enabled = false,
@@ -366,7 +366,7 @@ data:extend({
     type = "recipe",
     name = "sp-separate-electronic-components",  -- #ForRegEx# - recipe
     icon_size = 64,
-    icons = util.combine_four_icons("__Spaghetorio__/graphics/icons/capacitor.png", 64, nil,
+    icons = util.icon.combine_four_icons("__Spaghetorio__/graphics/icons/capacitor.png", 64, nil,
                                     "__Spaghetorio__/graphics/icons/transistor.png", 64, nil,
                                     "__Spaghetorio__/graphics/icons/resistor.png", 64, nil,
                                     "__Spaghetorio__/graphics/icons/vacuum-tube.png", 64, nil),
@@ -433,7 +433,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-alumina-from-enriched-aluminum",  -- #ForRegEx# - recipe
-    icons = util.overlay_small_icon("__Spaghetorio__/graphics/icons/alumina.png", 64,
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/alumina.png", 64,
                                     "__Spaghetorio__/graphics/icons/enriched-aluminum-1.png", 64),
     category = "smelting",
     enabled = false,
@@ -491,7 +491,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-chromium-plate-from-enriched-chromite",  -- #ForRegEx# - recipe
-    icons = util.overlay_small_icon("__Spaghetorio__/graphics/icons/chromium-plate.png", 64,
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/chromium-plate.png", 64,
                                     "__Spaghetorio__/graphics/icons/enriched-chromite-1.png", 64),
     category = "smelting",
     enabled = false,
@@ -549,7 +549,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-magnesium-slab-from-enriched-magnesium",  -- #ForRegEx# - recipe
-    icons = util.overlay_small_icon("__Spaghetorio__/graphics/icons/magnesium-slab.png", 64,
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/magnesium-slab.png", 64,
                                     "__Spaghetorio__/graphics/icons/enriched-magnesium-1.png", 64),
     category = "smelting",
     enabled = false,
@@ -607,7 +607,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-nickel-ingot-from-enriched-nickel",  -- #ForRegEx# - recipe
-    icons = util.overlay_small_icon("__Spaghetorio__/graphics/icons/nickel-ingot.png", 64,
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/nickel-ingot.png", 64,
                                     "__Spaghetorio__/graphics/icons/enriched-nickel-1.png", 64),
     category = "smelting",
     enabled = false,
@@ -665,7 +665,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-tin-ingot-from-enriched-tin",  -- #ForRegEx# - recipe
-    icons = util.overlay_small_icon("__Spaghetorio__/graphics/icons/tin-ingot.png", 64,
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/tin-ingot.png", 64,
                                     "__Spaghetorio__/graphics/icons/enriched-tinstone-1.png", 64),
     category = "smelting",
     enabled = false,
@@ -723,7 +723,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-titanium-chloride-from-enriched-titanium",  -- #ForRegEx# - recipe
-    icons = util.overlay_small_icon("__Spaghetorio__/graphics/icons/titanium-chloride.png", 64,
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/titanium-chloride.png", 64,
                                     "__Spaghetorio__/graphics/icons/enriched-titanium-1.png", 64),
     category = "smelting",
     enabled = false,
@@ -782,7 +782,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-tungsten-ingot-from-enriched-tungsten",  -- #ForRegEx# - recipe
-    icons = util.overlay_small_icon("__Spaghetorio__/graphics/icons/ammonium-paratungstate.png", 64,
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/ammonium-paratungstate.png", 64,
                                     "__Spaghetorio__/graphics/icons/enriched-tungsten-1.png", 64),
     category = "smelting",
     enabled = false,
@@ -839,7 +839,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-zinc-plate-from-enriched-zinc",  -- #ForRegEx# - recipe
-    icons = util.overlay_small_icon("__Spaghetorio__/graphics/icons/zinc-plate.png", 64,
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/zinc-plate.png", 64,
                                     "__Spaghetorio__/graphics/icons/enriched-zinc-1.png", 64),
     category = "smelting",
     enabled = false,
@@ -855,7 +855,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-enriched-aluminum-from-acromatter",  -- #ForRegEx# - recipe
-    icons = util.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/enriched-aluminum-1.png",
+    icons = util.icon.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/enriched-aluminum-1.png",
                                                     "__Spaghetorio__/graphics/icons/acromatter.png"),
     icon_size = 64,
     mip_maps = 4,
@@ -884,7 +884,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-raw-rare-metals-from-acrocrystal",  -- #ForRegEx# - recipe
-    icons = util.create_acroproduct_conversion_icon("__Krastorio2Assets__/icons/items-with-variations/raw-rare-metals/raw-rare-metals.png",
+    icons = util.icon.create_acroproduct_conversion_icon("__Krastorio2Assets__/icons/items-with-variations/raw-rare-metals/raw-rare-metals.png",
                                                     "__Spaghetorio__/graphics/icons/acrocrystal.png"),
     icon_size = 64,
     mip_maps = 4,
@@ -910,7 +910,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-coke-from-acrovoid",  -- #ForRegEx# - recipe
-    icons = util.create_acroproduct_conversion_icon("__Krastorio2Assets__/icons/items-with-variations/coke/coke.png",
+    icons = util.icon.create_acroproduct_conversion_icon("__Krastorio2Assets__/icons/items-with-variations/coke/coke.png",
                                                     "__Spaghetorio__/graphics/icons/acrovoid.png"),
     icon_size = 64,
     mip_maps = 4,
@@ -940,7 +940,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-silicon-from-acrovoid",  -- #ForRegEx# - recipe
-    icons = util.create_acroproduct_conversion_icon("__Krastorio2Assets__/icons/items-with-variations/silicon/silicon.png",
+    icons = util.icon.create_acroproduct_conversion_icon("__Krastorio2Assets__/icons/items-with-variations/silicon/silicon.png",
                                                     "__Spaghetorio__/graphics/icons/acrovoid.png"),
     icon_size = 64,
     mip_maps = 4,
@@ -970,7 +970,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-enriched-chromite-from-acromatter",  -- #ForRegEx# - recipe
-    icons = util.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/enriched-chromite-1.png",
+    icons = util.icon.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/enriched-chromite-1.png",
                                                     "__Spaghetorio__/graphics/icons/acromatter.png"),
     icon_size = 64,
     mip_maps = 4,
@@ -998,7 +998,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-enriched-titanium-from-acromatter",  -- #ForRegEx# - recipe
-    icons = util.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/enriched-titanium-1.png",
+    icons = util.icon.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/enriched-titanium-1.png",
                                                     "__Spaghetorio__/graphics/icons/acromatter.png"),
     icon_size = 64,
     mip_maps = 4,
@@ -1026,7 +1026,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-enriched-magnesium-from-acromatter",  -- #ForRegEx# - recipe
-    icons = util.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/enriched-magnesium-1.png",
+    icons = util.icon.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/enriched-magnesium-1.png",
                                                     "__Spaghetorio__/graphics/icons/acromatter.png"),
     icon_size = 64,
     mip_maps = 4,
@@ -1055,7 +1055,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-enriched-nickel-from-acromatter",  -- #ForRegEx# - recipe
-    icons = util.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/enriched-nickel-1.png",
+    icons = util.icon.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/enriched-nickel-1.png",
                                                     "__Spaghetorio__/graphics/icons/acromatter.png"),
     icon_size = 64,
     mip_maps = 4,
@@ -1085,7 +1085,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-enriched-tinstone-from-acromatter",  -- #ForRegEx# - recipe
-    icons = util.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/enriched-tinstone-1.png",
+    icons = util.icon.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/enriched-tinstone-1.png",
                                                     "__Spaghetorio__/graphics/icons/acromatter.png"),
     icon_size = 64,
     mip_maps = 4,
@@ -1115,7 +1115,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-enriched-tungsten-from-acromatter",  -- #ForRegEx# - recipe
-    icons = util.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/enriched-tungsten-1.png",
+    icons = util.icon.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/enriched-tungsten-1.png",
                                                     "__Spaghetorio__/graphics/icons/acromatter.png"),
     icon_size = 64,
     mip_maps = 4,
@@ -1142,7 +1142,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-enriched-zinc-from-acromatter",  -- #ForRegEx# - recipe
-    icons = util.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/enriched-zinc-1.png",
+    icons = util.icon.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/enriched-zinc-1.png",
                                                     "__Spaghetorio__/graphics/icons/acromatter.png"),
     icon_size = 64,
     mip_maps = 4,
@@ -1170,7 +1170,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-enriched-iron-from-acromatter",  -- #ForRegEx# - recipe
-    icons = util.create_acroproduct_conversion_icon("__Krastorio2Assets__/icons/items-with-variations/enriched-iron/enriched-iron.png",
+    icons = util.icon.create_acroproduct_conversion_icon("__Krastorio2Assets__/icons/items-with-variations/enriched-iron/enriched-iron.png",
                                                     "__Spaghetorio__/graphics/icons/acromatter.png"),
     icon_size = 64,
     mip_maps = 4,
@@ -1199,7 +1199,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-enriched-copper-from-acromatter",  -- #ForRegEx# - recipe
-    icons = util.create_acroproduct_conversion_icon("__Krastorio2Assets__/icons/items-with-variations/enriched-copper/enriched-copper.png",
+    icons = util.icon.create_acroproduct_conversion_icon("__Krastorio2Assets__/icons/items-with-variations/enriched-copper/enriched-copper.png",
                                                     "__Spaghetorio__/graphics/icons/acromatter.png"),
     icon_size = 64,
     mip_maps = 4,
@@ -1230,7 +1230,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-enriched-rare-metals-from-acromatter",  -- #ForRegEx# - recipe
-    icons = util.create_acroproduct_conversion_icon("__Krastorio2Assets__/icons/items-with-variations/enriched-rare-metals/enriched-rare-metals.png",
+    icons = util.icon.create_acroproduct_conversion_icon("__Krastorio2Assets__/icons/items-with-variations/enriched-rare-metals/enriched-rare-metals.png",
                                                     "__Spaghetorio__/graphics/icons/acromatter.png"),
     icon_size = 64,
     mip_maps = 4,
@@ -1264,7 +1264,7 @@ data:extend({
 -- MARK: Changes to Spaghenutty
 ------------------------------------------------------------------------------
 -- Change recipes
-util.change_recipe_ingredients("sp-methyl-tert-butyl-ether",
+util.recipe.change_recipe_ingredients("sp-methyl-tert-butyl-ether",
   {
     {type = "fluid", name = "biomethanol", amount = 50},
     {type = "fluid", name = "sp-propane", amount = 50}
@@ -1531,7 +1531,7 @@ data.raw.recipe["dirty-water-filtration-3"].hide_from_player_crafting = true
 
 -- MARK: base crafting changes
 data.raw.recipe["steel-beam"].category = "smelting"
-util.change_recipe_ingredients("steel-plate",
+util.recipe.change_recipe_ingredients("steel-plate",
   {
     {"iron-plate", 5},
     {"sp-graphite", 1}
@@ -1543,7 +1543,7 @@ util.change_recipe_ingredients("steel-plate",
   20,
   24)
 data.raw.recipe["steel-beam"].results = {{"steel-beam", 2}}
-util.change_recipe_ingredients("silicon",
+util.recipe.change_recipe_ingredients("silicon",
   {
     {"sp-silica", 18}
   },
@@ -1556,7 +1556,7 @@ util.change_recipe_ingredients("silicon",
 -- MARK: rare metals changes
 data.raw.recipe["rare-metals"].category = "chemistry"
 data.raw.recipe["rare-metals"].hide_from_player_crafting = true
-util.change_recipe_ingredients("rare-metals",
+util.recipe.change_recipe_ingredients("rare-metals",
   {
     {type = "fluid", name = "mineral-water", amount = 10},
     {type = "fluid", name = "sp-sodium-hydroxide", amount = 20},
@@ -1579,7 +1579,7 @@ data.raw.recipe["rare-metals"].results = {
 
 data.raw.recipe["rare-metals-2"].category = "chemistry"
 data.raw.recipe["rare-metals-2"].hide_from_player_crafting = true
-util.change_recipe_ingredients("rare-metals-2",
+util.recipe.change_recipe_ingredients("rare-metals-2",
   {
     {type = "fluid", name = "sp-sodium-hydroxide", amount = 15},
     {"enriched-rare-metals", 3}
@@ -1599,13 +1599,13 @@ data.raw.recipe["rare-metals-2"].results = {
 
 -- MARK: recipe changes
 -- Overwrite change done by krastorio
-util.change_recipe_ingredients("iron-beam",
+util.recipe.change_recipe_ingredients("iron-beam",
   {{"iron-ore", 5}},
   {{"iron-ore", 6}},
   12,
   16)
 table.insert(data.raw.recipe["inserter-parts"].ingredients, {type = "item", name = "sp-machined-parts", amount = 1})
-util.change_recipe_ingredients("electronic-circuit-stone",
+util.recipe.change_recipe_ingredients("electronic-circuit-stone",
   {
     {"copper-cable", 3},
     {"stone-tablet", 1},
@@ -1618,7 +1618,7 @@ util.change_recipe_ingredients("electronic-circuit-stone",
   },
   0.5,
   1)
-util.change_recipe_ingredients("pollution-filter",
+util.recipe.change_recipe_ingredients("pollution-filter",
   {
     {"sp-anodized-aluminum", 1},
     {"sp-composites", 1},
@@ -1633,7 +1633,7 @@ util.change_recipe_ingredients("pollution-filter",
   },
   4,
   6)
-util.change_recipe_ingredients("kr-medium-container",
+util.recipe.change_recipe_ingredients("kr-medium-container",
   {
     {"sp-bolts", 8},
     {"steel-plate", 12},
@@ -1646,7 +1646,7 @@ util.change_recipe_ingredients("kr-medium-container",
   },
   2,
   4)
-util.change_recipe_ingredients("kr-big-container",  -- "warehouse"
+util.recipe.change_recipe_ingredients("kr-big-container",  -- "warehouse"
   {
     {"sp-bolts", 8},
     {"steel-plate", 40},
@@ -1659,7 +1659,7 @@ util.change_recipe_ingredients("kr-big-container",  -- "warehouse"
   },
   6,
   12)
-util.change_recipe_ingredients("kr-medium-storage-container",
+util.recipe.change_recipe_ingredients("kr-medium-storage-container",
   {
     {"kr-medium-container", 1},
     {"advanced-circuit", 5}
@@ -1670,7 +1670,7 @@ util.change_recipe_ingredients("kr-medium-storage-container",
   },
   1.5,
   3)
-util.change_recipe_ingredients("kr-big-storage-container",
+util.recipe.change_recipe_ingredients("kr-big-storage-container",
   {
     {"kr-big-container", 1},
     {"advanced-circuit", 20}
@@ -1681,7 +1681,7 @@ util.change_recipe_ingredients("kr-big-storage-container",
   },
   5,
   8)
-util.change_recipe_ingredients("kr-medium-passive-provider-container",
+util.recipe.change_recipe_ingredients("kr-medium-passive-provider-container",
   {
     {"kr-medium-container", 1},
     {"advanced-circuit", 5}
@@ -1692,7 +1692,7 @@ util.change_recipe_ingredients("kr-medium-passive-provider-container",
   },
   1.5,
   3)
-util.change_recipe_ingredients("kr-big-passive-provider-container",
+util.recipe.change_recipe_ingredients("kr-big-passive-provider-container",
   {
     {"kr-big-container", 1},
     {"advanced-circuit", 20}
@@ -1703,7 +1703,7 @@ util.change_recipe_ingredients("kr-big-passive-provider-container",
   },
   5,
   8)
-util.change_recipe_ingredients("kr-medium-active-provider-container",
+util.recipe.change_recipe_ingredients("kr-medium-active-provider-container",
   {
     {"kr-medium-container", 1},
     {"processing-unit", 5}
@@ -1714,7 +1714,7 @@ util.change_recipe_ingredients("kr-medium-active-provider-container",
   },
   1.5,
   3)
-util.change_recipe_ingredients("kr-big-active-provider-container",
+util.recipe.change_recipe_ingredients("kr-big-active-provider-container",
   {
     {"kr-big-container", 1},
     {"processing-unit", 20},
@@ -1727,7 +1727,7 @@ util.change_recipe_ingredients("kr-big-active-provider-container",
   },
   5,
   8)
-util.change_recipe_ingredients("kr-medium-requester-container",
+util.recipe.change_recipe_ingredients("kr-medium-requester-container",
   {
     {"kr-medium-container", 1},
     {"processing-unit", 5}
@@ -1738,7 +1738,7 @@ util.change_recipe_ingredients("kr-medium-requester-container",
   },
   1.5,
   3)
-util.change_recipe_ingredients("kr-big-requester-container",
+util.recipe.change_recipe_ingredients("kr-big-requester-container",
   {
     {"kr-big-container", 1},
     {"processing-unit", 20},
@@ -1751,7 +1751,7 @@ util.change_recipe_ingredients("kr-big-requester-container",
   },
   5,
   8)
-util.change_recipe_ingredients("kr-medium-buffer-container",
+util.recipe.change_recipe_ingredients("kr-medium-buffer-container",
   {
     {"kr-medium-container", 1},
     {"processing-unit", 5}
@@ -1762,7 +1762,7 @@ util.change_recipe_ingredients("kr-medium-buffer-container",
   },
   1.5,
   3)
-util.change_recipe_ingredients("kr-big-buffer-container",
+util.recipe.change_recipe_ingredients("kr-big-buffer-container",
   {
     {"kr-big-container", 1},
     {"processing-unit", 20},
@@ -1775,7 +1775,7 @@ util.change_recipe_ingredients("kr-big-buffer-container",
   },
   5,
   8)
-util.change_recipe_ingredients("kr-fluid-storage-1",  -- "large storage tank"
+util.recipe.change_recipe_ingredients("kr-fluid-storage-1",  -- "large storage tank"
   {
     {"sp-bolts", 8},
     {"sp-stainless-steel", 10},
@@ -1792,7 +1792,7 @@ util.change_recipe_ingredients("kr-fluid-storage-1",  -- "large storage tank"
   },
   6,
   12)
-util.change_recipe_ingredients("kr-fluid-storage-2",  -- "huge storage tank"
+util.recipe.change_recipe_ingredients("kr-fluid-storage-2",  -- "huge storage tank"
   {
     {"sp-bolts", 30},
     {"sp-stainless-steel", 40},
@@ -1809,7 +1809,7 @@ util.change_recipe_ingredients("kr-fluid-storage-2",  -- "huge storage tank"
   },
   16,
   30)
-util.change_recipe_ingredients("lithium-sulfur-battery",
+util.recipe.change_recipe_ingredients("lithium-sulfur-battery",
   {
     {"lithium", 4},
     {"sp-cobalt-billet", 1},
@@ -1829,7 +1829,7 @@ util.change_recipe_ingredients("lithium-sulfur-battery",
   4,
   6)
 
-  util.change_recipe_ingredients("imersium-plate",
+  util.recipe.change_recipe_ingredients("imersium-plate",
   {
     {"rare-metals", 3},
     {"imersite-powder", 9},
@@ -1845,7 +1845,7 @@ util.change_recipe_ingredients("lithium-sulfur-battery",
   24,
   36)
 
-util.change_recipe_ingredients("imersium-beam",
+util.recipe.change_recipe_ingredients("imersium-beam",
   {
     {"rare-metals", 2},
     {"imersite-powder", 6},
@@ -1865,7 +1865,7 @@ data.raw.recipe["imersium-beam"].results = {
 }
 data.raw.recipe["kr-s-c-imersium-beam"].hidden = true
 
-util.change_recipe_ingredients("energy-control-unit",
+util.recipe.change_recipe_ingredients("energy-control-unit",
   {
     {"sp-gamma-radiation-source", 1},
     {"imersium-gear-wheel", 6},
@@ -1885,7 +1885,7 @@ util.change_recipe_ingredients("energy-control-unit",
   30,
   60)
 
-util.change_recipe_ingredients("matter-stabilizer",
+util.recipe.change_recipe_ingredients("matter-stabilizer",
   {
     {"imersium-plate", 4},
     {"sp-micro-frame", 3},
@@ -1906,7 +1906,7 @@ util.change_recipe_ingredients("matter-stabilizer",
   24)
 
 -- MARK: Krastorio Buildings
-util.change_recipe_ingredients("kr-loader",
+util.recipe.change_recipe_ingredients("kr-loader",
   {
     {"motor", 1},
     {"sp-machined-parts", 2},
@@ -1922,7 +1922,7 @@ util.change_recipe_ingredients("kr-loader",
   2,
   3)
 
-util.change_recipe_ingredients("kr-fast-loader",
+util.recipe.change_recipe_ingredients("kr-fast-loader",
   {
     {"sp-aluminum-frame", 2},
     {"electric-motor", 2},
@@ -1942,7 +1942,7 @@ util.change_recipe_ingredients("kr-fast-loader",
   2,
   3)
 
-util.change_recipe_ingredients("kr-express-loader",
+util.recipe.change_recipe_ingredients("kr-express-loader",
   {
     {"sp-titanium-frame", 2},
     {"sp-actuator", 4},
@@ -1960,7 +1960,7 @@ util.change_recipe_ingredients("kr-express-loader",
   2,
   3)
 
-util.change_recipe_ingredients("kr-advanced-transport-belt",
+util.recipe.change_recipe_ingredients("kr-advanced-transport-belt",
   {
     {"processing-unit", 1},
     {"electric-motor", 2},
@@ -1980,7 +1980,7 @@ util.change_recipe_ingredients("kr-advanced-transport-belt",
   1,
   1.5)
 
-util.change_recipe_ingredients("kr-advanced-underground-belt",
+util.recipe.change_recipe_ingredients("kr-advanced-underground-belt",
   {
     {"kr-advanced-transport-belt", 16},
     {"sp-TiNb", 4},
@@ -2000,7 +2000,7 @@ util.change_recipe_ingredients("kr-advanced-underground-belt",
   3,
   5)
 
-util.change_recipe_ingredients("kr-advanced-splitter",
+util.recipe.change_recipe_ingredients("kr-advanced-splitter",
   {
     {"kr-advanced-transport-belt", 2},
     {"sp-invar", 3},
@@ -2018,7 +2018,7 @@ util.change_recipe_ingredients("kr-advanced-splitter",
   3,
   5)
 
-util.change_recipe_ingredients("kr-advanced-loader",
+util.recipe.change_recipe_ingredients("kr-advanced-loader",
   {
     {"kr-advanced-transport-belt", 1},
     {"sp-TiNb", 4},
@@ -2036,7 +2036,7 @@ util.change_recipe_ingredients("kr-advanced-loader",
   3,
   5)
 
-util.change_recipe_ingredients("kr-superior-transport-belt",
+util.recipe.change_recipe_ingredients("kr-superior-transport-belt",
   {
     {"sp-advanced-processing-unit", 1},
     {"sp-blunagium-plate", 2},
@@ -2056,7 +2056,7 @@ util.change_recipe_ingredients("kr-superior-transport-belt",
   2,
   3)
 
-util.change_recipe_ingredients("kr-superior-underground-belt",
+util.recipe.change_recipe_ingredients("kr-superior-underground-belt",
   {
     {"kr-superior-transport-belt", 24},
     {"imersium-beam", 20},
@@ -2072,7 +2072,7 @@ util.change_recipe_ingredients("kr-superior-underground-belt",
   5,
   8)
 
-util.change_recipe_ingredients("kr-superior-splitter",
+util.recipe.change_recipe_ingredients("kr-superior-splitter",
   {
     {"kr-superior-transport-belt", 2},
     {"imersium-beam", 4},
@@ -2088,7 +2088,7 @@ util.change_recipe_ingredients("kr-superior-splitter",
   4,
   6)
 
-util.change_recipe_ingredients("kr-superior-loader",
+util.recipe.change_recipe_ingredients("kr-superior-loader",
   {
     {"kr-superior-transport-belt", 1},
     {"sp-superconductor", 6},
@@ -2104,7 +2104,7 @@ util.change_recipe_ingredients("kr-superior-loader",
   3,
   5)
 
-util.change_recipe_ingredients("kr-superior-inserter",
+util.recipe.change_recipe_ingredients("kr-superior-inserter",
   {
     {"imersium-plate", 3},
     {"sp-blunagium-plate", 2},
@@ -2126,7 +2126,7 @@ util.change_recipe_ingredients("kr-superior-inserter",
   2,
   3)
 
-util.change_recipe_ingredients("kr-superior-long-inserter",
+util.recipe.change_recipe_ingredients("kr-superior-long-inserter",
   {
     {"imersium-plate", 3},
     {"sp-rukite-plate", 4},
@@ -2148,7 +2148,7 @@ util.change_recipe_ingredients("kr-superior-long-inserter",
   3,
   5)
 
-util.change_recipe_ingredients("kr-superior-filter-inserter",
+util.recipe.change_recipe_ingredients("kr-superior-filter-inserter",
   {
     {"imersium-plate", 4},
     {"sp-grobgnum-plate", 3},
@@ -2172,7 +2172,7 @@ util.change_recipe_ingredients("kr-superior-filter-inserter",
   3,
   5)
 
-  util.change_recipe_ingredients("kr-superior-long-filter-inserter",
+  util.recipe.change_recipe_ingredients("kr-superior-long-filter-inserter",
   {
     {"imersium-plate", 4},
     {"sp-yemnuth-plate", 5},
@@ -2196,7 +2196,7 @@ util.change_recipe_ingredients("kr-superior-filter-inserter",
   5,
   8)
 
-util.change_recipe_ingredients("kr-steel-pipe",
+util.recipe.change_recipe_ingredients("kr-steel-pipe",
   {
     {"sp-stainless-steel", 1},
     {"sp-flange", 2}
@@ -2208,7 +2208,7 @@ util.change_recipe_ingredients("kr-steel-pipe",
   1,
   1.5)
 
-util.change_recipe_ingredients("kr-steel-pipe-to-ground",
+util.recipe.change_recipe_ingredients("kr-steel-pipe-to-ground",
   {
     {"kr-steel-pipe", 8},
     {"sp-flange", 2},
@@ -2221,7 +2221,7 @@ util.change_recipe_ingredients("kr-steel-pipe-to-ground",
   },
   8,
   12)
-util.change_recipe_ingredients("kr-black-reinforced-plate",
+util.recipe.change_recipe_ingredients("kr-black-reinforced-plate",
   {
     {"refined-concrete", 20},
     {"sp-zircon", 2},
@@ -2234,7 +2234,7 @@ util.change_recipe_ingredients("kr-black-reinforced-plate",
   },
   5,
   8)
-util.change_recipe_ingredients("kr-white-reinforced-plate",
+util.recipe.change_recipe_ingredients("kr-white-reinforced-plate",
   {
     {"refined-concrete", 20},
     {"sp-zircon", 2},
@@ -2247,7 +2247,7 @@ util.change_recipe_ingredients("kr-white-reinforced-plate",
   },
   5,
   8)
-util.change_recipe_ingredients("kr-steel-pump",
+util.recipe.change_recipe_ingredients("kr-steel-pump",
   {
     {"steel-plate", 5},
     {"engine-unit", 2},
@@ -2264,7 +2264,7 @@ util.change_recipe_ingredients("kr-steel-pump",
   },
   2,
   3)
-util.change_recipe_ingredients("kr-wind-turbine",
+util.recipe.change_recipe_ingredients("kr-wind-turbine",
   {
     {"iron-plate", 12},
     {"stone-brick", 4},
@@ -2279,7 +2279,7 @@ util.change_recipe_ingredients("kr-wind-turbine",
   },
   10,
   20)
-util.change_recipe_ingredients("kr-crusher",
+util.recipe.change_recipe_ingredients("kr-crusher",
   {
     {"iron-beam", 12},
     {"iron-gear-wheel", 30},
@@ -2298,7 +2298,7 @@ util.change_recipe_ingredients("kr-crusher",
   },
   12,
   24)
-  util.change_recipe_ingredients("kr-fluid-burner",
+  util.recipe.change_recipe_ingredients("kr-fluid-burner",
   {
     {"steel-beam", 16},
     {"sp-copper-tube", 30},
@@ -2315,7 +2315,7 @@ util.change_recipe_ingredients("kr-crusher",
   },
   10,
   20)
-util.change_recipe_ingredients("kr-greenhouse",
+util.recipe.change_recipe_ingredients("kr-greenhouse",
   {
     {"steel-beam", 24},
     {"sp-bolts", 48},
@@ -2336,7 +2336,7 @@ util.change_recipe_ingredients("kr-greenhouse",
   },
   20,
   40)
-util.change_recipe_ingredients("kr-filtration-plant",
+util.recipe.change_recipe_ingredients("kr-filtration-plant",
   {
     {"steel-beam", 48},
     {"sp-copper-tube", 50},
@@ -2357,7 +2357,7 @@ util.change_recipe_ingredients("kr-filtration-plant",
   },
   24,
   48)
-util.change_recipe_ingredients("kr-electrolysis-plant",
+util.recipe.change_recipe_ingredients("kr-electrolysis-plant",
   {
     {"steel-beam", 36},
     {"sp-bolts", 80},
@@ -2376,7 +2376,7 @@ util.change_recipe_ingredients("kr-electrolysis-plant",
   },
   20,
   40)
-util.change_recipe_ingredients("kr-gas-power-station",
+util.recipe.change_recipe_ingredients("kr-gas-power-station",
   {
     {"steel-beam", 20},
     {"sp-bolts", 30},
@@ -2395,7 +2395,7 @@ util.change_recipe_ingredients("kr-gas-power-station",
   },
   20,
   40)
-util.change_recipe_ingredients("kr-advanced-solar-panel",
+util.recipe.change_recipe_ingredients("kr-advanced-solar-panel",
   {
     {type = "fluid", name = "nitric-acid", amount = 25},
     {"imersite-crystal", 10},
@@ -2412,7 +2412,7 @@ util.change_recipe_ingredients("kr-advanced-solar-panel",
   },
   12,
   24)
-util.change_recipe_ingredients("kr-energy-storage",
+util.recipe.change_recipe_ingredients("kr-energy-storage",
   {
     {"processing-unit", 10},
     {"energy-control-unit", 30},
@@ -2431,7 +2431,7 @@ util.change_recipe_ingredients("kr-energy-storage",
   },
   30,
   60)
-util.change_recipe_ingredients("kr-fusion-reactor",
+util.recipe.change_recipe_ingredients("kr-fusion-reactor",
   {
     {"concrete", 1000},
     {"sp-stainless-steel", 1000},
@@ -2466,7 +2466,7 @@ util.change_recipe_ingredients("kr-fusion-reactor",
   },
   700,
   3000)
-util.change_recipe_ingredients("kr-advanced-steam-turbine",
+util.recipe.change_recipe_ingredients("kr-advanced-steam-turbine",
   {
     {"electric-engine-unit", 20},
     {"sp-turbine-rotor", 3},
@@ -2487,7 +2487,7 @@ util.change_recipe_ingredients("kr-advanced-steam-turbine",
   },
   90,
   150)
-util.change_recipe_ingredients("kr-electric-mining-drill-mk2",
+util.recipe.change_recipe_ingredients("kr-electric-mining-drill-mk2",
   {
     {"steel-beam", 12},
     {"sp-bolts", 30},
@@ -2508,7 +2508,7 @@ util.change_recipe_ingredients("kr-electric-mining-drill-mk2",
   },
   14,
   28)
-util.change_recipe_ingredients("kr-electric-mining-drill-mk3",
+util.recipe.change_recipe_ingredients("kr-electric-mining-drill-mk3",
   {
     {"sp-diamond", 8},
     {"sp-niobium-steel", 20},
@@ -2527,7 +2527,7 @@ util.change_recipe_ingredients("kr-electric-mining-drill-mk3",
   },
   20,
   40)
-util.change_recipe_ingredients("kr-quarry-drill",
+util.recipe.change_recipe_ingredients("kr-quarry-drill",
   {
     {"sp-diamond", 40},
     {"sp-control-unit", 20},
@@ -2552,7 +2552,7 @@ util.change_recipe_ingredients("kr-quarry-drill",
   },
   60,
   120)
-util.change_recipe_ingredients("kr-advanced-chemical-plant",
+util.recipe.change_recipe_ingredients("kr-advanced-chemical-plant",
   {
     {"sp-TiAlSn", 20},
     {"sp-stainless-steel", 40},
@@ -2579,7 +2579,7 @@ util.change_recipe_ingredients("kr-advanced-chemical-plant",
   },
   40,
   80)
-util.change_recipe_ingredients("kr-mineral-water-pumpjack",
+util.recipe.change_recipe_ingredients("kr-mineral-water-pumpjack",
   {
     {"sp-stainless-steel", 16},
     {"sp-bronze-rod", 12},
@@ -2596,7 +2596,7 @@ util.change_recipe_ingredients("kr-mineral-water-pumpjack",
   },
   16,
   32)
-util.change_recipe_ingredients("kr-substation-mk2",
+util.recipe.change_recipe_ingredients("kr-substation-mk2",
   {
     {"sp-bolts", 20},
     {"sp-advanced-processing-unit", 4},
@@ -2617,7 +2617,7 @@ util.change_recipe_ingredients("kr-substation-mk2",
   },
   12,
   24)
-util.change_recipe_ingredients("kr-advanced-furnace",
+util.recipe.change_recipe_ingredients("kr-advanced-furnace",
   {
     {"sp-tungsten-slab", 40},
     {"sp-graphene", 60},
@@ -2646,7 +2646,7 @@ util.change_recipe_ingredients("kr-advanced-furnace",
   },
   60,
   90)
-util.change_recipe_ingredients("kr-advanced-assembling-machine",
+util.recipe.change_recipe_ingredients("kr-advanced-assembling-machine",
   {
     {"sp-blunagium-plate", 32},
     {"sp-grobgnum-plate", 24},
@@ -2677,7 +2677,7 @@ util.change_recipe_ingredients("kr-advanced-assembling-machine",
   },
   90,
   150)
-util.change_recipe_ingredients("kr-small-roboport",
+util.recipe.change_recipe_ingredients("kr-small-roboport",
   {
     {"sp-yemnuth-plate", 16},
     {"imersium-beam", 12},
@@ -2698,7 +2698,7 @@ util.change_recipe_ingredients("kr-small-roboport",
   },
   45,
   90)
-util.change_recipe_ingredients("kr-large-roboport",
+util.recipe.change_recipe_ingredients("kr-large-roboport",
   {
     {"sp-stainless-steel", 30},
     {"sp-yemnuth-plate", 40},
@@ -2725,7 +2725,7 @@ util.change_recipe_ingredients("kr-large-roboport",
   },
   120,
   180)
-util.change_recipe_ingredients("kr-bio-lab",
+util.recipe.change_recipe_ingredients("kr-bio-lab",
   {
     {"sp-pressure-tube", 20},
     {"fertilizer", 100},
@@ -2744,7 +2744,7 @@ util.change_recipe_ingredients("kr-bio-lab",
   },
   30,
   60)
-util.change_recipe_ingredients("kr-atmospheric-condenser",
+util.recipe.change_recipe_ingredients("kr-atmospheric-condenser",
   {
     {"sp-stainless-steel", 30},
     {"electronic-circuit", 12},
@@ -2765,7 +2765,7 @@ util.change_recipe_ingredients("kr-atmospheric-condenser",
   },
   20,
   30)
-util.change_recipe_ingredients("kr-fuel-refinery",
+util.recipe.change_recipe_ingredients("kr-fuel-refinery",
   {
     {"sp-stainless-steel", 20},
     {"sp-brass", 12},
@@ -2786,7 +2786,7 @@ util.change_recipe_ingredients("kr-fuel-refinery",
   },
   24,
   32)
-util.change_recipe_ingredients("kr-air-purifier",
+util.recipe.change_recipe_ingredients("kr-air-purifier",
   {
     {"sp-stainless-steel", 8},
     {"concrete", 6},
@@ -2807,7 +2807,7 @@ util.change_recipe_ingredients("kr-air-purifier",
   },
   15,
   24)
-util.change_recipe_ingredients("kr-research-server",
+util.recipe.change_recipe_ingredients("kr-research-server",
   {
     {"lithium-sulfur-battery", 10},
     {"sp-glass-fiber", 20},
@@ -2836,7 +2836,7 @@ util.change_recipe_ingredients("kr-research-server",
   },
   50,
   100)
-util.change_recipe_ingredients("kr-quantum-computer",
+util.recipe.change_recipe_ingredients("kr-quantum-computer",
   {
     {"sp-quantum-data-plane", 10},
     {"sp-turbopump", 2},
@@ -2863,7 +2863,7 @@ util.change_recipe_ingredients("kr-quantum-computer",
   },
   90,
   180)
-util.change_recipe_ingredients("kr-singularity-lab",
+util.recipe.change_recipe_ingredients("kr-singularity-lab",
   {
     {"sp-niobium-steel", 100},
     {"rare-metals", 40},
@@ -2890,7 +2890,7 @@ util.change_recipe_ingredients("kr-singularity-lab",
   },
   60,
   120)
-util.change_recipe_ingredients("kr-matter-plant",
+util.recipe.change_recipe_ingredients("kr-matter-plant",
   {
     {"energy-control-unit", 20},
     {"imersium-beam", 80},
@@ -2915,7 +2915,7 @@ util.change_recipe_ingredients("kr-matter-plant",
   },
   90,
   150)
-util.change_recipe_ingredients("kr-matter-assembler",
+util.recipe.change_recipe_ingredients("kr-matter-assembler",
   {
     {"energy-control-unit", 40},
     {"imersium-plate", 40},
@@ -2941,7 +2941,7 @@ util.change_recipe_ingredients("kr-matter-assembler",
   40,
   60)
 
-util.change_recipe_ingredients("kr-stabilizer-charging-station",
+util.recipe.change_recipe_ingredients("kr-stabilizer-charging-station",
   {
     {"energy-control-unit", 16},
     {"imersium-plate", 20},
@@ -2965,7 +2965,7 @@ util.change_recipe_ingredients("kr-stabilizer-charging-station",
   40,
   60)
 
-util.change_recipe_ingredients("kr-singularity-beacon",
+util.recipe.change_recipe_ingredients("kr-singularity-beacon",
   {
     {"sp-antimatter-engine", 1},
     {"sp-sideral-compute-core", 1},
@@ -2983,7 +2983,7 @@ util.change_recipe_ingredients("kr-singularity-beacon",
   45,
   75)
 
-util.change_recipe_ingredients("kr-planetary-teleporter",
+util.recipe.change_recipe_ingredients("kr-planetary-teleporter",
   {
     {"sp-ultra-durable-ceramics", 40},
     {"sp-blunagium-yemnuth-compound", 16},
@@ -2997,7 +2997,7 @@ util.change_recipe_ingredients("kr-planetary-teleporter",
   180)
 
   data.raw.recipe["gps-satellite"].category = "crafting-with-fluid"
-util.change_recipe_ingredients("gps-satellite",
+util.recipe.change_recipe_ingredients("gps-satellite",
   {
     {"satellite", 1},
     {"sp-cryostat", 4},
@@ -3015,7 +3015,7 @@ util.change_recipe_ingredients("gps-satellite",
   20,
   40)
 
-util.change_recipe_ingredients("biusart-lab",
+util.recipe.change_recipe_ingredients("biusart-lab",
   {
     {"glass", 20},
     {"sp-stainless-steel", 12},
@@ -3035,13 +3035,13 @@ util.change_recipe_ingredients("biusart-lab",
   30,
   50)
 -- Why cant i do this here???
--- util.change_recipe_ingredients("kr-air-filter",
+-- util.recipe.change_recipe_ingredients("kr-air-filter",
 --   {{"steel-plate", 69}},
 --   {{"steel-plate", 69}},
 --   69,
 --   69)
 
-util.change_recipe_ingredients("kr-tesla-coil",
+util.recipe.change_recipe_ingredients("kr-tesla-coil",
   {
     {"sp-dynamo", 2},
     {"sp-vacuum-tube", 20},
@@ -3063,7 +3063,7 @@ util.change_recipe_ingredients("kr-tesla-coil",
   30,
   60)
 
-util.change_recipe_ingredients("kr-advanced-radar",
+util.recipe.change_recipe_ingredients("kr-advanced-radar",
   {
     {"sp-control-unit", 6},
     {"steel-beam", 30},
@@ -3084,7 +3084,7 @@ util.change_recipe_ingredients("kr-advanced-radar",
   },
   30,
   60)
-util.change_recipe_ingredients("kr-antimatter-reactor",
+util.recipe.change_recipe_ingredients("kr-antimatter-reactor",
   {
     {"sp-proton-neutron-superconductor", 300},
     {"sp-extreme-heat-source", 12},
@@ -3121,7 +3121,7 @@ util.change_recipe_ingredients("kr-antimatter-reactor",
   },
   600,
   1200)
-util.change_recipe_ingredients("empty-antimatter-fuel-cell",
+util.recipe.change_recipe_ingredients("empty-antimatter-fuel-cell",
   {
     {"matter-stabilizer", 1},
     {"sp-sideral-seal", 1},
@@ -3138,7 +3138,7 @@ util.change_recipe_ingredients("empty-antimatter-fuel-cell",
   },
   20,
   30)
-util.change_recipe_ingredients("kr-antimatter-reactor",
+util.recipe.change_recipe_ingredients("kr-antimatter-reactor",
   {
     {"sp-omni-pulse-generator", 1},
     {"sp-dark-matter-field-generator", 8},
@@ -3172,7 +3172,7 @@ util.change_recipe_ingredients("kr-antimatter-reactor",
   900,
   3600)
 -- MARK: Krastorio vehicle
-util.change_recipe_ingredients("kr-nuclear-locomotive",
+util.recipe.change_recipe_ingredients("kr-nuclear-locomotive",
   {
     {"sp-control-unit", 16},
     {"sp-reactor-core", 1},
@@ -3197,7 +3197,7 @@ util.change_recipe_ingredients("kr-nuclear-locomotive",
   80)
 
 -- MARK: Krastorio equipment
-util.change_recipe_ingredients("power-armor-mk3",
+util.recipe.change_recipe_ingredients("power-armor-mk3",
   {
     {"sp-advanced-processing-unit", 20},
     {"sp-superconductor", 40},
@@ -3221,7 +3221,7 @@ util.change_recipe_ingredients("power-armor-mk3",
   45,
   90)
 
-util.change_recipe_ingredients("power-armor-mk4",
+util.recipe.change_recipe_ingredients("power-armor-mk4",
   {
     {"sp-kevlar", 50},
     {"sp-frictionless-joint", 25},
@@ -3247,7 +3247,7 @@ util.change_recipe_ingredients("power-armor-mk4",
   60,
   120)
 
-util.change_recipe_ingredients("advanced-exoskeleton-equipment",
+util.recipe.change_recipe_ingredients("advanced-exoskeleton-equipment",
   {
     {"sp-TiAlSn", 6},
     {"sp-titanium-frame", 10},
@@ -3269,7 +3269,7 @@ util.change_recipe_ingredients("advanced-exoskeleton-equipment",
   30,
   60)
 
-  util.change_recipe_ingredients("superior-exoskeleton-equipment",
+  util.recipe.change_recipe_ingredients("superior-exoskeleton-equipment",
   {
     {"sp-kevlar", 16},
     {"imersium-plate", 2},
@@ -3301,7 +3301,7 @@ util.change_recipe_ingredients("advanced-exoskeleton-equipment",
   45,
   90)
 
-util.change_recipe_ingredients("energy-absorber",
+util.recipe.change_recipe_ingredients("energy-absorber",
   {
     {"sp-inconel", 2},
     {"sp-TiAlSn", 3},
@@ -3319,7 +3319,7 @@ util.change_recipe_ingredients("energy-absorber",
   4,
   6)
 
-util.change_recipe_ingredients("big-battery-equipment",
+util.recipe.change_recipe_ingredients("big-battery-equipment",
   {
     {"battery-equipment", 4},
     {"sp-aluminum-frame", 3},
@@ -3337,7 +3337,7 @@ util.change_recipe_ingredients("big-battery-equipment",
   10,
   15)
 
-util.change_recipe_ingredients("big-battery-mk2-equipment",
+util.recipe.change_recipe_ingredients("big-battery-mk2-equipment",
   {
     {"battery-mk2-equipment", 4},
     {"sp-titanium-frame", 3},
@@ -3356,7 +3356,7 @@ util.change_recipe_ingredients("big-battery-mk2-equipment",
   30)
 
 data.raw.recipe["battery-mk3-equipment"].category = "crafting-with-fluid"
-util.change_recipe_ingredients("battery-mk3-equipment",
+util.recipe.change_recipe_ingredients("battery-mk3-equipment",
   {
     {type = "item", name = "sp-advanced-processing-unit", amount = 4},
     {type = "item", name = "sp-yemnuth-pearls", amount = 2},
@@ -3378,7 +3378,7 @@ util.change_recipe_ingredients("battery-mk3-equipment",
   10,
   15)
 
-util.change_recipe_ingredients("big-battery-mk3-equipment",
+util.recipe.change_recipe_ingredients("big-battery-mk3-equipment",
   {
     {"battery-mk2-equipment", 6},
     {"sp-invar", 10},
@@ -3394,7 +3394,7 @@ util.change_recipe_ingredients("big-battery-mk3-equipment",
   20,
   40)
 
-util.change_recipe_ingredients("small-portable-generator",
+util.recipe.change_recipe_ingredients("small-portable-generator",
   {
     {"engine-unit", 1},
     {"sp-machined-parts", 6},
@@ -3410,7 +3410,7 @@ util.change_recipe_ingredients("small-portable-generator",
   6,
   10)
 
-util.change_recipe_ingredients("portable-generator",
+util.recipe.change_recipe_ingredients("portable-generator",
   {
     {"electric-engine-unit", 2},
     {"sp-titanium-frame", 6},
@@ -3430,7 +3430,7 @@ util.change_recipe_ingredients("portable-generator",
   12,
   24)
 
-util.change_recipe_ingredients("big-solar-panel-equipment",
+util.recipe.change_recipe_ingredients("big-solar-panel-equipment",
   {
     {"solar-panel", 4},
     {"sp-bolts", 16},
@@ -3448,7 +3448,7 @@ util.change_recipe_ingredients("big-solar-panel-equipment",
   20,
   30)
 
-util.change_recipe_ingredients("imersite-solar-panel-equipment",
+util.recipe.change_recipe_ingredients("imersite-solar-panel-equipment",
   {
     {type = "item", name = "sp-advanced-processing-unit", amount = 4},
     {type = "item", name = "sp-niobium-steel", amount = 10},
@@ -3470,7 +3470,7 @@ util.change_recipe_ingredients("imersite-solar-panel-equipment",
   10,
   20)
 
-util.change_recipe_ingredients("big-imersite-solar-panel-equipment",
+util.recipe.change_recipe_ingredients("big-imersite-solar-panel-equipment",
   {
     {"imersite-solar-panel-equipment", 4},
     {"sp-superconductor", 6},
@@ -3484,7 +3484,7 @@ util.change_recipe_ingredients("big-imersite-solar-panel-equipment",
   20,
   30)
 
-util.change_recipe_ingredients("nuclear-reactor-equipment",
+util.recipe.change_recipe_ingredients("nuclear-reactor-equipment",
   {
     {"sp-reactor-core", 1},
     {"sp-control-unit", 20},
@@ -3505,7 +3505,7 @@ util.change_recipe_ingredients("nuclear-reactor-equipment",
   60)
 
 -- MARK: AAI Industries Buildings
-util.change_recipe_ingredients("burner-turbine",
+util.recipe.change_recipe_ingredients("burner-turbine",
   {
     {"iron-beam", 8},
     {"stone-brick", 24},
@@ -3521,7 +3521,7 @@ util.change_recipe_ingredients("burner-turbine",
   8,
   16)
 
-util.change_recipe_ingredients("fuel-processor",
+util.recipe.change_recipe_ingredients("fuel-processor",
   {
     {"iron-plate", 12},
     {"stone-brick", 24},
@@ -3537,7 +3537,7 @@ util.change_recipe_ingredients("fuel-processor",
   12,
   24)
 
-util.change_recipe_ingredients("burner-assembling-machine",
+util.recipe.change_recipe_ingredients("burner-assembling-machine",
   {
     {"stone-brick", 20},
     {"iron-plate", 20},
@@ -3553,7 +3553,7 @@ util.change_recipe_ingredients("burner-assembling-machine",
   8,
   16)
 
-util.change_recipe_ingredients("burner-lab",
+util.recipe.change_recipe_ingredients("burner-lab",
   {
     {"stone-brick", 12},
     {"iron-plate", 20},
@@ -3567,7 +3567,7 @@ util.change_recipe_ingredients("burner-lab",
   8,
   16)
 
-util.change_recipe_ingredients("engine-unit",
+util.recipe.change_recipe_ingredients("engine-unit",
   {
     {"sp-connecting-rod", 8},
     {"steel-plate", 2},
@@ -3583,7 +3583,7 @@ util.change_recipe_ingredients("engine-unit",
   2.4,
   4.8)
 
-util.change_recipe_ingredients("electric-engine-unit",
+util.recipe.change_recipe_ingredients("electric-engine-unit",
   {
     {"sp-electromagnet", 6},
     {"sp-ball-bearing", 2},
@@ -3603,7 +3603,7 @@ util.change_recipe_ingredients("electric-engine-unit",
   4,
   6)
 
-util.change_recipe_ingredients("industrial-furnace",
+util.recipe.change_recipe_ingredients("industrial-furnace",
   {
     {"sp-stainless-steel", 20},
     {"sp-heat-resistant-tile", 30},
@@ -3629,7 +3629,7 @@ util.change_recipe_ingredients("industrial-furnace",
   40,
   80)
 
-  util.change_recipe_ingredients("area-mining-drill",
+  util.recipe.change_recipe_ingredients("area-mining-drill",
   {
     {"sp-monocrystal", 4},
     {"sp-ceramic-matrix-composites", 20},

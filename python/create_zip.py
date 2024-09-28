@@ -68,20 +68,14 @@ def create_zip():
         for root, dirs, files in os.walk(PATH):
             for file in files:
                 relative_path = os.path.join(root, file).replace(f"{PATH}\\", "")
-                # print(file)
-                # print(os.path.join(root, file))
-                # print(relative_path)
                 if relative_path.split("\\")[0] not in PATHS_TO_SKIP:
                     z.write(os.path.join(root, file), fr"Spaghetorio\{relative_path}")
         
         # Add graphics
         for used_image_path in get_used_image_paths():
             relative_path = os.path.join(root, used_image_path).replace(f"{PATH}\\", "")
-            # print(used_image_path)
-            # print(relative_path)
-            # print("-------------------")
             try:
-                z.write(os.path.join(root, file), fr"Spaghetorio\{relative_path}")
+                z.write(used_image_path, fr"Spaghetorio\{relative_path}")
             except FileNotFoundError:
                 pass
 

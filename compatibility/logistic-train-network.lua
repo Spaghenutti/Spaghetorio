@@ -1,6 +1,6 @@
 local util = require("data-util")
 
-util.change_recipe_ingredients("logistic-train-stop",
+util.recipe.change_recipe_ingredients("logistic-train-stop",
   {
     {"train-stop", 1},
     {"small-lamp", 1},

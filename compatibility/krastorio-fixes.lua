@@ -1,22 +1,22 @@
 local util = require("data-util")
 
 -- Change item icons
-util.change_item_icon("copper-plate", "__base__/graphics/icons/copper-plate.png", 64, 4)
-util.change_item_icon("iron-plate", "__base__/graphics/icons/iron-plate.png", 64, 4)
-util.change_item_icon("iron-gear-wheel", "__base__/graphics/icons/iron-gear-wheel.png", 64, 4)
+util.icon.change_item_icon("copper-plate", "__base__/graphics/icons/copper-plate.png", 64, 4)
+util.icon.change_item_icon("iron-plate", "__base__/graphics/icons/iron-plate.png", 64, 4)
+util.icon.change_item_icon("iron-gear-wheel", "__base__/graphics/icons/iron-gear-wheel.png", 64, 4)
 
 -- Change recipe icons
-util.change_recipe_icon("iron-plate", "__base__/graphics/icons/iron-plate.png", 64, "__base__/graphics/icons/iron-ore-1.png", 64, 4)
-util.change_recipe_icon("copper-plate", "__base__/graphics/icons/copper-plate.png", 64, "__base__/graphics/icons/copper-ore-1.png", 64, 4)
+util.icon.change_recipe_icon("iron-plate", "__base__/graphics/icons/iron-plate.png", 64, "__base__/graphics/icons/iron-ore-1.png", 64, 4)
+util.icon.change_recipe_icon("copper-plate", "__base__/graphics/icons/copper-plate.png", 64, "__base__/graphics/icons/copper-ore-1.png", 64, 4)
 
 -- Change tool icons
-util.change_tool_icon("utility-science-pack", "__Spaghetorio__/graphics/icons/utility-science-pack-2.png", 64, 4)
-util.change_tool_icon("basic-tech-card", "__base__/graphics/icons/automation-science-pack.png", 64, 4)
-util.change_tool_icon("matter-tech-card", "__Spaghetorio__/graphics/icons/matter-science-pack-3.png", 64, 4)
+util.icon.change_tool_icon("utility-science-pack", "__Spaghetorio__/graphics/icons/utility-science-pack-2.png", 64, 4)
+util.icon.change_tool_icon("basic-tech-card", "__base__/graphics/icons/automation-science-pack.png", 64, 4)
+util.icon.change_tool_icon("matter-tech-card", "__Spaghetorio__/graphics/icons/matter-science-pack-3.png", 64, 4)
 
 -- Change technology icons
-util.change_technology_icon("utility-science-pack", "__Spaghetorio__/graphics/hr-icons/utility-science-pack-2.png", 256, nil)
-util.change_technology_icon("kr-matter-tech-card", "__Spaghetorio__/graphics/hr-icons/matter-science-pack-3.png", 256, nil)
+util.icon.change_technology_icon("utility-science-pack", "__Spaghetorio__/graphics/hr-icons/utility-science-pack-2.png", 256, nil)
+util.icon.change_technology_icon("kr-matter-tech-card", "__Spaghetorio__/graphics/hr-icons/matter-science-pack-3.png", 256, nil)
 
 data.raw.item["enriched-iron"].subgroup = "enriched-resource"
 data.raw.item["enriched-copper"].subgroup = "enriched-resource"
@@ -66,7 +66,7 @@ data.raw.capsule["first-aid-kit"].order  = "b[repair]-a[first-aid-kit]"
 
 data.raw.item["iron-beam"].order = "iron[iron-beam]"
 
-util.resize_building("furnace", "kr-crusher", {{-1.75, -1.75}, {1.75, 1.75}}, {{-2, -2}, {2, 2}}, 4/7, 4/7/2)
+util.building.resize_building("furnace", "kr-crusher", {{-1.75, -1.75}, {1.75, 1.75}}, {{-2, -2}, {2, 2}}, 4/7, 4/7/2)
 
 -- Fix subgroup to fluids
 data.raw.fluid["mineral-water"].subgroup = "aqueous-fluid"

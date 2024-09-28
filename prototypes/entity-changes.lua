@@ -5,7 +5,7 @@ if not mods["Krastorio2"] then
   -- Go through every furnace and convert to assembling machine
   for key, value in pairs(data.raw.furnace) do
     -- Only Furnaces that do smelting
-    if util.table_contains(value.crafting_categories, "smelting") then
+    if util.helper.table_contains(value.crafting_categories, "smelting") then
       local furnace = table.deepcopy(value)
       -- Except stone-furnace
       if not (value.name == "stone-furnace") then

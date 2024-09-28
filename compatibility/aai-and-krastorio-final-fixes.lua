@@ -6,20 +6,20 @@ local remove_prototypes = require("remove-prototypes")
 -- data.raw.furnace["stone-furnace"].type = "furnace"
 
 -- Lock items for game start
-util.disable_recipe("iron-stick")
-util.disable_recipe("iron-chest")
-util.disable_recipe("iron-beam")
-util.disable_recipe("inserter-parts")
-util.disable_recipe("motor")
-util.disable_recipe("iron-gear-wheel")
-util.disable_recipe("burner-inserter")
-util.disable_recipe("rare-metals")
+util.recipe.disable_recipe("iron-stick")
+util.recipe.disable_recipe("iron-chest")
+util.recipe.disable_recipe("iron-beam")
+util.recipe.disable_recipe("inserter-parts")
+util.recipe.disable_recipe("motor")
+util.recipe.disable_recipe("iron-gear-wheel")
+util.recipe.disable_recipe("burner-inserter")
+util.recipe.disable_recipe("rare-metals")
 
 -- Why cant i disable this items?
--- util.disable_recipe("transport-belt")
+-- util.recipe.disable_recipe("transport-belt")
 
 -- Science recipe changes
-util.change_recipe_ingredients("automation-science-pack",
+util.recipe.change_recipe_ingredients("automation-science-pack",
   {
     {"automation-core", 1},
     {"motor", 1},
@@ -33,7 +33,7 @@ util.change_recipe_ingredients("automation-science-pack",
   20,
   30)
 
-util.change_recipe_ingredients("logistic-science-pack",
+util.recipe.change_recipe_ingredients("logistic-science-pack",
   {
     {"sp-gearbox", 5},
     {"electric-motor", 1},
@@ -50,7 +50,7 @@ util.change_recipe_ingredients("logistic-science-pack",
   30)
 
 data.raw.recipe["chemical-science-pack"].category = "chemistry"
-util.change_recipe_ingredients("chemical-science-pack",
+util.recipe.change_recipe_ingredients("chemical-science-pack",
   {
     {type = "fluid", name = "sulfuric-acid", amount = 50},
     {type = "fluid", name = "chlorine", amount = 30},
@@ -68,7 +68,7 @@ util.change_recipe_ingredients("chemical-science-pack",
   20,
   30)
 
-util.change_recipe_ingredients("military-science-pack",
+util.recipe.change_recipe_ingredients("military-science-pack",
   {
     {"blank-tech-card", 5},
     {"biters-research-data", 1},
@@ -82,7 +82,7 @@ util.change_recipe_ingredients("military-science-pack",
   20,
   30)
 
-util.change_recipe_ingredients("production-science-pack",
+util.recipe.change_recipe_ingredients("production-science-pack",
   {
     {"sp-filter", 5},
     {"sp-actuator", 5},
@@ -100,7 +100,7 @@ util.change_recipe_ingredients("production-science-pack",
   20,
   30)
 
-util.change_recipe_ingredients("utility-science-pack",
+util.recipe.change_recipe_ingredients("utility-science-pack",
   {
     {"electric-furnace", 1},
     {"kr-electric-mining-drill-mk2", 1},
@@ -117,7 +117,7 @@ util.change_recipe_ingredients("utility-science-pack",
   120)
 
 data.raw.recipe["matter-research-data"].category = "crafting-with-fluid"
-util.change_recipe_ingredients("matter-research-data",
+util.recipe.change_recipe_ingredients("matter-research-data",
   {
     {"rare-metals", 5},
     {"sp-graphene", 5},
@@ -140,7 +140,7 @@ util.change_recipe_ingredients("matter-research-data",
 data.raw.recipe["utility-science-pack"].results = {
   {type = "item", name = "utility-science-pack", amount = 20}
 }
-util.change_recipe_ingredients("matter-tech-card",
+util.recipe.change_recipe_ingredients("matter-tech-card",
   {
     {"sp-blunagium-bar", 5},
     {"sp-grobgnum-bar", 5},
@@ -162,7 +162,7 @@ util.change_recipe_ingredients("matter-tech-card",
   40,
   60)
 
-util.change_recipe_ingredients("space-science-pack", -- Optimization tech card
+util.recipe.change_recipe_ingredients("space-science-pack", -- Optimization tech card
   {
     {"sp-frictionless-bearing", 5},
     {"sp-gravitational-wave-bridge", 5},
@@ -182,7 +182,7 @@ util.change_recipe_ingredients("space-science-pack", -- Optimization tech card
   40,
   60)
 
-util.change_recipe_ingredients("advanced-tech-card",
+util.recipe.change_recipe_ingredients("advanced-tech-card",
   {
     {"sp-biochip", 5},
     {"sp-chronalyte", 5},
@@ -206,7 +206,7 @@ data.raw.recipe["singularity-tech-card"].mip_maps = 4
 data.raw.recipe["singularity-tech-card"].category = "matter-items"
 data.raw.recipe["singularity-tech-card"].subgroup = "futuristic-science"
 data.raw.recipe["singularity-tech-card"].allow_productivity = false
-util.change_recipe_ingredients("singularity-tech-card",
+util.recipe.change_recipe_ingredients("singularity-tech-card",
   {
     -- {"sp-miniaturized-star-core-stabilizer", 1},  -- If i add this the recipe dissapears from FNEI
     -- {"sp-information-cube", 1},  -- If i add this the recipe dissapears from FNEI
@@ -308,18 +308,18 @@ data.raw.recipe["kr-vc-advanced-circuit"].results = {
 }
 
 -- Fix petroleum gas icon
-util.change_fluid_icon("petroleum-gas", "__Spaghetorio__/graphics/icons/petroleum-gas.png", 64, nil)
+util.icon.change_fluid_icon("petroleum-gas", "__Spaghetorio__/graphics/icons/petroleum-gas.png", 64, nil)
 
 -- block decomposition of certain recipe categories
-util.block_decomposition_for_recipe_category("crushed-smelting")
-util.block_decomposition_for_recipe_category("smelting-crafting")
-util.block_decomposition_for_recipe_category("matter-conversion")
-util.block_decomposition_for_recipe_category("acroproduct-conversion-with-acrocrystal")
-util.block_decomposition_for_recipe_category("acroproduct-conversion-with-acromatter")
-util.block_decomposition_for_recipe_category("acroproduct-conversion-with-acrovoid")
+util.recipe.block_decomposition_for_recipe_category("crushed-smelting")
+util.recipe.block_decomposition_for_recipe_category("smelting-crafting")
+util.recipe.block_decomposition_for_recipe_category("matter-conversion")
+util.recipe.block_decomposition_for_recipe_category("acroproduct-conversion-with-acrocrystal")
+util.recipe.block_decomposition_for_recipe_category("acroproduct-conversion-with-acromatter")
+util.recipe.block_decomposition_for_recipe_category("acroproduct-conversion-with-acrovoid")
 
-util.block_decomposition_for_recipe_category("smelting")  -- helps to simplify total in raw calculation
-util.block_decomposition_for_recipe_category("intermediate-smelting")  -- helps to simplify total in raw calculation
-util.block_decomposition_for_recipe_category("advanced-smelting")  -- helps to simplify total in raw calculation
-util.block_decomposition_for_recipe_category("crushing")  -- helps to simplify total in raw calculation
-util.block_decomposition_for_recipe_category("matter-condensing")  -- helps to simplify total in raw calculation
+util.recipe.block_decomposition_for_recipe_category("smelting")  -- helps to simplify total in raw calculation
+util.recipe.block_decomposition_for_recipe_category("intermediate-smelting")  -- helps to simplify total in raw calculation
+util.recipe.block_decomposition_for_recipe_category("advanced-smelting")  -- helps to simplify total in raw calculation
+util.recipe.block_decomposition_for_recipe_category("crushing")  -- helps to simplify total in raw calculation
+util.recipe.block_decomposition_for_recipe_category("matter-condensing")  -- helps to simplify total in raw calculation
