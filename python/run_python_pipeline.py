@@ -31,7 +31,7 @@ convert_hr_resource_to_normal_resultion.resize_images()
 
 create_alien_resource_icon.create_alien_resource()
 
-remove_unused_images.remove_unused_images()
+# remove_unused_images.remove_unused_images()
 
 create_zip.create_zip()
 
