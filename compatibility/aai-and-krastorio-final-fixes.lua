@@ -311,8 +311,8 @@ data.raw.recipe["kr-vc-advanced-circuit"].results = {
 util.icon.change_fluid_icon("petroleum-gas", "__Spaghetorio__/graphics/icons/petroleum-gas.png", 64, nil)
 
 -- block decomposition of certain recipe categories
-util.recipe.block_decomposition_for_recipe_category("crushed-smelting")
-util.recipe.block_decomposition_for_recipe_category("smelting-crafting")
+-- util.recipe.block_decomposition_for_recipe_category("crushed-smelting")
+-- util.recipe.block_decomposition_for_recipe_category("smelting-crafting")
 util.recipe.block_decomposition_for_recipe_category("matter-conversion")
 util.recipe.block_decomposition_for_recipe_category("acroproduct-conversion-with-acrocrystal")
 util.recipe.block_decomposition_for_recipe_category("acroproduct-conversion-with-acromatter")
