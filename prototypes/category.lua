@@ -6,6 +6,10 @@ data:extend({
   },
   {
     type = "recipe-category",
+    name = "advanced-chemistry"  -- Used for recipes with 3 fluids
+  },
+  {
+    type = "recipe-category",
     name = "alien-tech-manufacturing"
   },
   {

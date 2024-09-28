@@ -111,6 +111,8 @@ data.raw["autoplace-control"]["imersite"].order = "d[imersite]"
 -- add crafting categories
 table.insert(data.raw["assembling-machine"]["industrial-furnace"].crafting_categories, "crushed-smelting")
 
+table.insert(data.raw["assembling-machine"]["kr-advanced-chemical-plant"].crafting_categories, "advanced-chemistry")
+
 table.insert(data.raw["assembling-machine"]["kr-advanced-furnace"].crafting_categories, "crushed-smelting")
 table.insert(data.raw["assembling-machine"]["kr-advanced-furnace"].crafting_categories, "intermediate-smelting")
 

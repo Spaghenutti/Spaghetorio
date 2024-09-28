@@ -1,6 +1,6 @@
 ################################################################################
 #
-#  Creates low resolution images for the resources
+# Creates low resolution images for the resources
 #
 ################################################################################
 

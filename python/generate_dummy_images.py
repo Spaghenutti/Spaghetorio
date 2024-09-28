@@ -1,7 +1,7 @@
 ################################################################################
 #
-#  Creates sprites whit the name of item, recipe, technology and others. The
-#  sprites are saved in graphics/dummy
+# Creates sprites whit the name of item, recipe, technology and others. The
+# sprites are saved in graphics/dummy
 #
 ################################################################################
 

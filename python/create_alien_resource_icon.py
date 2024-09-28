@@ -1,7 +1,7 @@
 ################################################################################
 #
-#  Creates one sprite with all resources that are part of a single alien
-#  resource
+# Creates one sprite with all resources that are part of a single alien
+# resource
 #
 ################################################################################
 

@@ -6610,7 +6610,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-chemical-science-pack-3",
-    category = "chemistry",
+    category = "advanced-chemistry",
     enabled = false,
     energy_required = 24,
     ingredients =

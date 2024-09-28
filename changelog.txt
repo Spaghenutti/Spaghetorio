@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.1.2
+Date: 2024-09-28
+  Features:
+    - Created new recipe category for 3 fluids
+  Bugfixes:
+    - military tech cards has now the krastorio 2 recipe (recipes in military tech branch still need to be updated)
+---------------------------------------------------------------------------------------------------
 Version: 0.1.1
 Date: 2024-09-27
   Bugfixes:

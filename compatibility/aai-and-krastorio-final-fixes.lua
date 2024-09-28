@@ -70,12 +70,14 @@ util.change_recipe_ingredients("chemical-science-pack",
 
 util.change_recipe_ingredients("military-science-pack",
   {
-    {"copper-plate", 69},
-    {"blank-tech-card", 5}
+    {"blank-tech-card", 5},
+    {"biters-research-data", 1},
+    {"electronic-components", 5},
   },
   {
-    {"copper-plate", 69},
-    {"blank-tech-card", 5}
+    {"blank-tech-card", 8},
+    {"biters-research-data", 2},
+    {"electronic-components", 8},
   },
   20,
   30)
@@ -206,14 +208,14 @@ data.raw.recipe["singularity-tech-card"].subgroup = "futuristic-science"
 data.raw.recipe["singularity-tech-card"].allow_productivity = false
 util.change_recipe_ingredients("singularity-tech-card",
   {
-    {"sp-miniaturized-star-core-stabilizer", 1},
-    {"sp-information-cube", 1},
-    {"sp-subatomic-condenser", 5},
-    {"sp-alpha-wave-tray-array", 5},
-    {"sp-femto-navigator", 200},
+    -- {"sp-miniaturized-star-core-stabilizer", 1},  -- If i add this the recipe dissapears from FNEI
+    -- {"sp-information-cube", 1},  -- If i add this the recipe dissapears from FNEI
+    -- {"sp-subatomic-condenser", 5},  -- If i add this the recipe dissapears from FNEI
+    -- {"sp-alpha-wave-tray-array", 5},  -- If i add this the recipe dissapears from FNEI
+    -- {"sp-femto-navigator", 200},  -- If i add this the recipe dissapears from FNEI
     {type = "fluid", name = "matter", amount = 100},
     {"charged-matter-stabilizer", 5},
-    {"sp-evolution-cell-container", 20},
+    -- {"sp-evolution-cell-container", 20},  -- If i add this the recipe dissapears from FNEI
     {"sp-blunagium-acrosphere-2", 1},
     {"sp-grobgnum-acrosphere-2", 1},
     {"sp-rukite-acrosphere-2", 1},
@@ -221,14 +223,14 @@ util.change_recipe_ingredients("singularity-tech-card",
     {"blank-tech-card", 40}
   },
   {
-    {"sp-miniaturized-star-core-stabilizer", 1},
-    {"sp-information-cube", 1},
-    {"sp-subatomic-condenser", 8},
-    {"sp-alpha-wave-tray-array", 10},
-    {"sp-femto-navigator", 400},
+    -- {"sp-miniaturized-star-core-stabilizer", 1},  -- If i add this the recipe dissapears from FNEI
+    -- {"sp-information-cube", 1},  -- If i add this the recipe dissapears from FNEI
+    -- {"sp-subatomic-condenser", 8},  -- If i add this the recipe dissapears from FNEI
+    -- {"sp-alpha-wave-tray-array", 10},  -- If i add this the recipe dissapears from FNEI
+    -- {"sp-femto-navigator", 400},  -- If i add this the recipe dissapears from FNEI
     {type = "fluid", name = "matter", amount = 200},
     {"charged-matter-stabilizer", 5},
-    {"sp-evolution-cell-container", 40},
+    -- {"sp-evolution-cell-container", 40},  -- If i add this the recipe dissapears from FNEI
     {"sp-blunagium-acrosphere-2", 1},
     {"sp-grobgnum-acrosphere-2", 1},
     {"sp-rukite-acrosphere-2", 1},

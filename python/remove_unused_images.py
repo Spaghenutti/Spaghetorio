@@ -1,8 +1,8 @@
 ################################################################################
 #
-#                              IMPORTANT
+#                                 IMPORTANT
 #
-#               THIS FILE DELETES ALL THE UNUSED IMAGES
+#                   THIS FILE DELETES ALL THE UNUSED IMAGES
 #
 ################################################################################
 
