@@ -20,7 +20,7 @@ import remove_unused_images
 repo = git.Repo(os.getcwd())
 
 # Commit current changes
-git_utilities.git_push()
+# git_utilities.git_push()
 
 
 # Run scripts

@@ -5477,7 +5477,12 @@ data:extend({
     subgroup = "raw-resource",
     enabled = false,
     energy_required = 8,
-    allowed_effects = {"consumption", "speed", "pollution"},
+    allowed_effects = {
+      "consumption",
+      "speed",
+      "pollution"
+    },
+    allow_decomposition = false,
     ingredients = {
       {type = "item", name = "iron-ore", amount = 10},
       {type = "item", name = "sp-acrocrystal", amount = 1}
@@ -5501,7 +5506,12 @@ data:extend({
     subgroup = "raw-resource",
     enabled = false,
     energy_required = 8,
-    allowed_effects = {"consumption", "speed", "pollution"},
+    allowed_effects = {
+      "consumption",
+      "speed",
+      "pollution"
+    },
+    allow_decomposition = false,
     ingredients = {
       {type = "item", name = "copper-ore", amount = 10},
       {type = "item", name = "sp-acrocrystal", amount = 1}
@@ -5527,7 +5537,12 @@ data:extend({
     subgroup = "raw-resource",
     enabled = false,
     energy_required = 6,
-    allowed_effects = {"consumption", "speed", "pollution"},
+    allowed_effects = {
+      "consumption",
+      "speed",
+      "pollution"
+    },
+    allow_decomposition = false,
     ingredients = {
       {type = "item", name = "stone", amount = 10},
       {type = "item", name = "sp-acrocrystal", amount = 1}
@@ -5553,7 +5568,12 @@ data:extend({
     subgroup = "raw-resource",
     enabled = false,
     energy_required = 6,
-    allowed_effects = {"consumption", "speed", "pollution"},
+    allowed_effects = {
+      "consumption",
+      "speed",
+      "pollution"
+    },
+    allow_decomposition = false,
     ingredients = {
       {type = "item", name = "coal", amount = 10},
       {type = "item", name = "sp-acrocrystal", amount = 1}
@@ -5578,7 +5598,12 @@ data:extend({
     subgroup = "raw-resource",
     enabled = false,
     energy_required = 9,
-    allowed_effects = {"consumption", "speed", "pollution"},
+    allowed_effects = {
+      "consumption",
+      "speed",
+      "pollution"
+    },
+    allow_decomposition = false,
     ingredients = {
       {type = "item", name = "sp-aluminum-ore", amount = 12},
       {type = "item", name = "sp-acrocrystal", amount = 1}
@@ -5602,7 +5627,12 @@ data:extend({
     subgroup = "raw-resource",
     enabled = false,
     energy_required = 8,
-    allowed_effects = {"consumption", "speed", "pollution"},
+    allowed_effects = {
+      "consumption",
+      "speed",
+      "pollution"
+    },
+    allow_decomposition = false,
     ingredients = {
       {type = "item", name = "sp-chromite", amount = 6},
       {type = "item", name = "sp-acrocrystal", amount = 1}
@@ -5625,7 +5655,12 @@ data:extend({
     subgroup = "raw-resource",
     enabled = false,
     energy_required = 6,
-    allowed_effects = {"consumption", "speed", "pollution"},
+    allowed_effects = {
+      "consumption",
+      "speed",
+      "pollution"
+    },
+    allow_decomposition = false,
     ingredients = {
       {type = "item", name = "sp-limestone", amount = 10},
       {type = "item", name = "sp-acrocrystal", amount = 1}
@@ -5649,7 +5684,12 @@ data:extend({
     subgroup = "raw-resource",
     enabled = false,
     energy_required = 10,
-    allowed_effects = {"consumption", "speed", "pollution"},
+    allowed_effects = {
+      "consumption",
+      "speed",
+      "pollution"
+    },
+    allow_decomposition = false,
     ingredients = {
       {type = "item", name = "sp-titanium-ore", amount = 10},
       {type = "item", name = "sp-acrocrystal", amount = 1}
@@ -5672,7 +5712,12 @@ data:extend({
     subgroup = "raw-resource",
     enabled = false,
     energy_required = 8,
-    allowed_effects = {"consumption", "speed", "pollution"},
+    allowed_effects = {
+      "consumption",
+      "speed",
+      "pollution"
+    },
+    allow_decomposition = false,
     ingredients = {
       {type = "item", name = "sp-magnesium-ore", amount = 10},
       {type = "item", name = "sp-acrocrystal", amount = 1}
@@ -5696,7 +5741,12 @@ data:extend({
     subgroup = "raw-resource",
     enabled = false,
     energy_required = 12,
-    allowed_effects = {"consumption", "speed", "pollution"},
+    allowed_effects = {
+      "consumption",
+      "speed",
+      "pollution"
+    },
+    allow_decomposition = false,
     ingredients = {
       {type = "item", name = "sp-nickel-ore", amount = 8},
       {type = "item", name = "sp-acrocrystal", amount = 1}
@@ -5721,7 +5771,12 @@ data:extend({
     subgroup = "raw-resource",
     enabled = false,
     energy_required = 6,
-    allowed_effects = {"consumption", "speed", "pollution"},
+    allowed_effects = {
+      "consumption",
+      "speed",
+      "pollution"
+    },
+    allow_decomposition = false,
     ingredients = {
       {type = "item", name = "sp-tinstone", amount = 6},
       {type = "item", name = "sp-acrocrystal", amount = 1}
@@ -5746,7 +5801,12 @@ data:extend({
     subgroup = "raw-resource",
     enabled = false,
     energy_required = 12,
-    allowed_effects = {"consumption", "speed", "pollution"},
+    allowed_effects = {
+      "consumption",
+      "speed",
+      "pollution"
+    },
+    allow_decomposition = false,
     ingredients = {
       {type = "item", name = "sp-tungsten-ore", amount = 8},
       {type = "item", name = "sp-acrocrystal", amount = 1}
@@ -5768,7 +5828,12 @@ data:extend({
     subgroup = "raw-resource",
     enabled = false,
     energy_required = 7,
-    allowed_effects = {"consumption", "speed", "pollution"},
+    allowed_effects = {
+      "consumption",
+      "speed",
+      "pollution"
+    },
+    allow_decomposition = false,
     ingredients = {
       {type = "item", name = "sp-zinc-ore", amount = 8},
       {type = "item", name = "sp-acrocrystal", amount = 1}
@@ -5791,7 +5856,12 @@ data:extend({
     subgroup = "raw-resource",
     enabled = false,
     energy_required = 8,
-    allowed_effects = {"consumption", "speed", "pollution"},
+    allowed_effects = {
+      "consumption",
+      "speed",
+      "pollution"
+    },
+    allow_decomposition = false,
     ingredients = {
       {type = "item", name = "sp-zirconium-ore", amount = 9},
       {type = "fluid", name = "water", amount = 5},
@@ -5821,7 +5891,12 @@ data:extend({
     subgroup = "processed-resource",
     enabled = false,
     energy_required = 20,
-    allowed_effects = {"consumption", "speed", "pollution"},
+    allowed_effects = {
+      "consumption",
+      "speed",
+      "pollution"
+    },
+    allow_decomposition = false,
     ingredients = {
       {type = "item", name = "uranium-238", amount = 9},
       {type = "item", name = "sp-acrovoid", amount = 1}
@@ -5844,7 +5919,12 @@ data:extend({
     subgroup = "processed-resource",
     enabled = false,
     energy_required = 6,
-    allowed_effects = {"consumption", "speed", "pollution"},
+    allowed_effects = {
+      "consumption",
+      "speed",
+      "pollution"
+    },
+    allow_decomposition = false,
     ingredients = {
       {type = "item", name = "sp-calcium", amount = 9},
       {type = "item", name = "sp-acrovoid", amount = 1}
@@ -5868,7 +5948,12 @@ data:extend({
     subgroup = "processed-resource",
     enabled = false,
     energy_required = 20,
-    allowed_effects = {"consumption", "speed", "pollution"},
+    allowed_effects = {
+      "consumption",
+      "speed",
+      "pollution"
+    },
+    allow_decomposition = false,
     ingredients = {
       {type = "item", name = "sp-cerium", amount = 9},
       {type = "item", name = "sp-acrovoid", amount = 1}
@@ -5892,7 +5977,12 @@ data:extend({
     subgroup = "processed-resource",
     enabled = false,
     energy_required = 22,
-    allowed_effects = {"consumption", "speed", "pollution"},
+    allowed_effects = {
+      "consumption",
+      "speed",
+      "pollution"
+    },
+    allow_decomposition = false,
     ingredients = {
       {type = "item", name = "sp-yttrium", amount = 9},
       {type = "item", name = "sp-acrovoid", amount = 1}
@@ -5916,7 +6006,12 @@ data:extend({
     subgroup = "processed-resource",
     enabled = false,
     energy_required = 18,
-    allowed_effects = {"consumption", "speed", "pollution"},
+    allowed_effects = {
+      "consumption",
+      "speed",
+      "pollution"
+    },
+    allow_decomposition = false,
     ingredients = {
       {type = "item", name = "sp-lanthanum", amount = 9},
       {type = "item", name = "sp-acrovoid", amount = 1}
@@ -5940,7 +6035,12 @@ data:extend({
     subgroup = "processed-resource",
     enabled = false,
     energy_required = 16,
-    allowed_effects = {"consumption", "speed", "pollution"},
+    allowed_effects = {
+      "consumption",
+      "speed",
+      "pollution"
+    },
+    allow_decomposition = false,
     ingredients = {
       {type = "item", name = "sp-neodymium", amount = 15},
       {type = "item", name = "sp-acrovoid", amount = 1}
@@ -5964,7 +6064,12 @@ data:extend({
     subgroup = "processed-resource",
     enabled = false,
     energy_required = 8,
-    allowed_effects = {"consumption", "speed", "pollution"},
+    allowed_effects = {
+      "consumption",
+      "speed",
+      "pollution"
+    },
+    allow_decomposition = false,
     ingredients = {
       {type = "item", name = "sp-fluorine", amount = 7},
       {type = "item", name = "sp-acrovoid", amount = 1}
@@ -5988,7 +6093,12 @@ data:extend({
     subgroup = "processed-resource",
     enabled = false,
     energy_required = 15,
-    allowed_effects = {"consumption", "speed", "pollution"},
+    allowed_effects = {
+      "consumption",
+      "speed",
+      "pollution"
+    },
+    allow_decomposition = false,
     ingredients = {
       {type = "item", name = "sp-gold", amount = 7},
       {type = "item", name = "sp-acrovoid", amount = 1}
@@ -6013,7 +6123,12 @@ data:extend({
     subgroup = "processed-resource",
     enabled = false,
     energy_required = 8,
-    allowed_effects = {"consumption", "speed", "pollution"},
+    allowed_effects = {
+      "consumption",
+      "speed",
+      "pollution"
+    },
+    allow_decomposition = false,
     ingredients = {
       {type = "item", name = "sp-graphite", amount = 4},
       {type = "item", name = "sp-acrovoid", amount = 1}
@@ -6039,7 +6154,12 @@ data:extend({
     subgroup = "processed-resource",
     enabled = false,
     energy_required = 30,
-    allowed_effects = {"consumption", "speed", "pollution"},
+    allowed_effects = {
+      "consumption",
+      "speed",
+      "pollution"
+    },
+    allow_decomposition = false,
     ingredients = {
       {type = "item", name = "sp-iridium", amount = 2},
       {type = "item", name = "sp-acrovoid", amount = 1}
@@ -6066,7 +6186,12 @@ data:extend({
     subgroup = "processed-resource",
     enabled = false,
     energy_required = 12,
-    allowed_effects = {"consumption", "speed", "pollution"},
+    allowed_effects = {
+      "consumption",
+      "speed",
+      "pollution"
+    },
+    allow_decomposition = false,
     ingredients = {
       {type = "item", name = "sp-leadstone", amount = 9},
       {type = "item", name = "sp-acrovoid", amount = 1}
@@ -6090,7 +6215,12 @@ data:extend({
     subgroup = "processed-resource",
     enabled = false,
     energy_required = 24,
-    allowed_effects = {"consumption", "speed", "pollution"},
+    allowed_effects = {
+      "consumption",
+      "speed",
+      "pollution"
+    },
+    allow_decomposition = false,
     ingredients = {
       {type = "item", name = "sp-palladium", amount = 4},
       {type = "item", name = "sp-acrovoid", amount = 1}
@@ -6114,7 +6244,12 @@ data:extend({
     subgroup = "processed-resource",
     enabled = false,
     energy_required = 7,
-    allowed_effects = {"consumption", "speed", "pollution"},
+    allowed_effects = {
+      "consumption",
+      "speed",
+      "pollution"
+    },
+    allow_decomposition = false,
     ingredients = {
       {type = "item", name = "sp-phosphorus", amount = 7},
       {type = "item", name = "sp-acrovoid", amount = 1}
@@ -6140,7 +6275,12 @@ data:extend({
     subgroup = "processed-resource",
     enabled = false,
     energy_required = 25,
-    allowed_effects = {"consumption", "speed", "pollution"},
+    allowed_effects = {
+      "consumption",
+      "speed",
+      "pollution"
+    },
+    allow_decomposition = false,
     ingredients = {
       {type = "item", name = "sp-platinum", amount = 7},
       {type = "item", name = "sp-acrovoid", amount = 1}
@@ -6165,7 +6305,12 @@ data:extend({
     subgroup = "processed-resource",
     enabled = false,
     energy_required = 18,
-    allowed_effects = {"consumption", "speed", "pollution"},
+    allowed_effects = {
+      "consumption",
+      "speed",
+      "pollution"
+    },
+    allow_decomposition = false,
     ingredients = {
       {type = "item", name = "sp-plutonium-239", amount = 7},
       {type = "item", name = "sp-acrovoid", amount = 1}
@@ -6189,7 +6334,12 @@ data:extend({
     subgroup = "processed-resource",
     enabled = false,
     energy_required = 15,
-    allowed_effects = {"consumption", "speed", "pollution"},
+    allowed_effects = {
+      "consumption",
+      "speed",
+      "pollution"
+    },
+    allow_decomposition = false,
     ingredients = {
       {type = "item", name = "sp-silver", amount = 7},
       {type = "item", name = "sp-acrovoid", amount = 1}
@@ -6213,7 +6363,12 @@ data:extend({
     subgroup = "processed-resource",
     enabled = false,
     energy_required = 10,
-    allowed_effects = {"consumption", "speed", "pollution"},
+    allowed_effects = {
+      "consumption",
+      "speed",
+      "pollution"
+    },
+    allow_decomposition = false,
     ingredients = {
       {type = "item", name = "sp-sodium", amount = 7},
       {type = "item", name = "sp-acrovoid", amount = 1}
@@ -6237,7 +6392,12 @@ data:extend({
     subgroup = "processed-resource",
     enabled = false,
     energy_required = 10,
-    allowed_effects = {"consumption", "speed", "pollution"},
+    allowed_effects = {
+      "consumption",
+      "speed",
+      "pollution"
+    },
+    allow_decomposition = false,
     ingredients = {
       {type = "item", name = "sp-antimony", amount = 10},
       {type = "item", name = "sp-acrovoid", amount = 1}
@@ -6262,7 +6422,12 @@ data:extend({
     subgroup = "processed-resource",
     enabled = false,
     energy_required = 12,
-    allowed_effects = {"consumption", "speed", "pollution"},
+    allowed_effects = {
+      "consumption",
+      "speed",
+      "pollution"
+    },
+    allow_decomposition = false,
     ingredients = {
       {type = "item", name = "sp-tellurium", amount = 10},
       {type = "item", name = "sp-acrovoid", amount = 1}
@@ -6287,7 +6452,12 @@ data:extend({
     subgroup = "processed-resource",
     enabled = false,
     energy_required = 5,
-    allowed_effects = {"consumption", "speed", "pollution"},
+    allowed_effects = {
+      "consumption",
+      "speed",
+      "pollution"
+    },
+    allow_decomposition = false,
     ingredients = {
       {type = "item", name = "sp-zircon", amount = 6},
       {type = "item", name = "sp-acrovoid", amount = 1}
@@ -6311,7 +6481,12 @@ data:extend({
     subgroup = "processed-resource",
     enabled = false,
     energy_required = 8,
-    allowed_effects = {"consumption", "speed", "pollution"},
+    allowed_effects = {
+      "consumption",
+      "speed",
+      "pollution"
+    },
+    allow_decomposition = false,
     ingredients = {
       {type = "item", name = "sulfur", amount = 6},
       {type = "item", name = "sp-acrovoid", amount = 1}
@@ -7823,7 +7998,12 @@ if not mods["Krastorio2"] then
                                                       "__Spaghetorio__/graphics/icons/acrovoid.png"),
       icon_size = 64,
       mip_maps = 4,
-      category = "acroproduct-conversion-with-acrovoid",
+      allowed_effects = {
+        "consumption",
+        "speed",
+        "pollution"
+      },
+      allow_decomposition = false,
       subgroup = "processed-resource",
       enabled = false,
       energy_required = 6,
@@ -7851,6 +8031,12 @@ if not mods["Krastorio2"] then
       subgroup = "processed-resource",
       enabled = false,
       energy_required = 12,
+      allowed_effects = {
+        "consumption",
+        "speed",
+        "pollution"
+      },
+      allow_decomposition = false,
       ingredients = {
         {type = "item", name = "sp-silicon", amount = 4},
         {type = "item", name = "sp-acrovoid", amount = 1}

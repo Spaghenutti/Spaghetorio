@@ -863,7 +863,12 @@ data:extend({
     subgroup = "raw-resource",
     enabled = false,
     energy_required = 9,
-    allowed_effects = {"consumption", "speed", "pollution"},
+    allowed_effects = {
+      "consumption",
+      "speed",
+      "pollution"
+    },
+    allow_decomposition = false,
     ingredients = {
       {type = "item", name = "sp-enriched-aluminum", amount = 12},
       {type = "item", name = "sp-acromatter", amount = 1}
@@ -913,7 +918,12 @@ data:extend({
     subgroup = "processed-resource",
     enabled = false,
     energy_required = 6,
-    allowed_effects = {"consumption", "speed", "pollution"},
+    allowed_effects = {
+      "consumption",
+      "speed",
+      "pollution"
+    },
+    allow_decomposition = false,
     ingredients = {
       {type = "item", name = "coke", amount = 6},
       {type = "item", name = "sp-acrovoid", amount = 1}
@@ -938,7 +948,12 @@ data:extend({
     subgroup = "processed-resource",
     enabled = false,
     energy_required = 12,
-    allowed_effects = {"consumption", "speed", "pollution"},
+    allowed_effects = {
+      "consumption",
+      "speed",
+      "pollution"
+    },
+    allow_decomposition = false,
     ingredients = {
       {type = "item", name = "silicon", amount = 4},
       {type = "item", name = "sp-acrovoid", amount = 1}
@@ -963,7 +978,12 @@ data:extend({
     subgroup = "raw-resource",
     enabled = false,
     energy_required = 8,
-    allowed_effects = {"consumption", "speed", "pollution"},
+    allowed_effects = {
+      "consumption",
+      "speed",
+      "pollution"
+    },
+    allow_decomposition = false,
     ingredients = {
       {type = "item", name = "sp-enriched-chromite", amount = 6},
       {type = "item", name = "sp-acromatter", amount = 1}
@@ -984,7 +1004,12 @@ data:extend({
     mip_maps = 4,
     category = "acroproduct-conversion-with-acromatter",
     subgroup = "raw-resource",
-    allowed_effects = {"consumption", "speed", "pollution"},
+    allowed_effects = {
+      "consumption",
+      "speed",
+      "pollution"
+    },
+    allow_decomposition = false,
     enabled = false,
     energy_required = 10,
     ingredients = {
@@ -1007,9 +1032,14 @@ data:extend({
     mip_maps = 4,
     category = "acroproduct-conversion-with-acromatter",
     subgroup = "raw-resource",
-    allowed_effects = {"consumption", "speed", "pollution"},
     enabled = false,
     energy_required = 8,
+    allowed_effects = {
+      "consumption",
+      "speed",
+      "pollution"
+    },
+    allow_decomposition = false,
     ingredients = {
       {type = "item", name = "sp-enriched-magnesium", amount = 10},
       {type = "item", name = "sp-acromatter", amount = 1}
@@ -1033,7 +1063,12 @@ data:extend({
     subgroup = "raw-resource",
     enabled = false,
     energy_required = 12,
-    allowed_effects = {"consumption", "speed", "pollution"},
+    allowed_effects = {
+      "consumption",
+      "speed",
+      "pollution"
+    },
+    allow_decomposition = false,
     ingredients = {
       {type = "item", name = "sp-enriched-nickel", amount = 8},
       {type = "item", name = "sp-acromatter", amount = 1}
@@ -1058,7 +1093,12 @@ data:extend({
     subgroup = "raw-resource",
     enabled = false,
     energy_required = 6,
-    allowed_effects = {"consumption", "speed", "pollution"},
+    allowed_effects = {
+      "consumption",
+      "speed",
+      "pollution"
+    },
+    allow_decomposition = false,
     ingredients = {
       {type = "item", name = "sp-enriched-tinstone", amount = 6},
       {type = "item", name = "sp-acromatter", amount = 1}
@@ -1083,7 +1123,12 @@ data:extend({
     subgroup = "raw-resource",
     enabled = false,
     energy_required = 12,
-    allowed_effects = {"consumption", "speed", "pollution"},
+    allowed_effects = {
+      "consumption",
+      "speed",
+      "pollution"
+    },
+    allow_decomposition = false,
     ingredients = {
       {type = "item", name = "sp-enriched-tungsten", amount = 8},
       {type = "item", name = "sp-acromatter", amount = 1}
@@ -1105,7 +1150,12 @@ data:extend({
     subgroup = "raw-resource",
     enabled = false,
     energy_required = 7,
-    allowed_effects = {"consumption", "speed", "pollution"},
+    allowed_effects = {
+      "consumption",
+      "speed",
+      "pollution"
+    },
+    allow_decomposition = false,
     ingredients = {
       {type = "item", name = "sp-enriched-zinc", amount = 8},
       {type = "item", name = "sp-acromatter", amount = 1}
@@ -1128,7 +1178,12 @@ data:extend({
     subgroup = "raw-resource",
     enabled = false,
     energy_required = 8,
-    allowed_effects = {"consumption", "speed", "pollution"},
+    allowed_effects = {
+      "consumption",
+      "speed",
+      "pollution"
+    },
+    allow_decomposition = false,
     ingredients = {
       {type = "item", name = "enriched-iron", amount = 10},
       {type = "item", name = "sp-acromatter", amount = 1}
@@ -1152,7 +1207,12 @@ data:extend({
     subgroup = "raw-resource",
     enabled = false,
     energy_required = 8,
-    allowed_effects = {"consumption", "speed", "pollution"},
+    allowed_effects = {
+      "consumption",
+      "speed",
+      "pollution"
+    },
+    allow_decomposition = false,
     ingredients = {
       {type = "item", name = "enriched-copper", amount = 10},
       {type = "item", name = "sp-acromatter", amount = 1}
@@ -1178,7 +1238,12 @@ data:extend({
     subgroup = "raw-resource",
     enabled = false,
     energy_required = 15,
-    allowed_effects = {"consumption", "speed", "pollution"},
+    allowed_effects = {
+      "consumption",
+      "speed",
+      "pollution"
+    },
+    allow_decomposition = false,
     ingredients = {
       {type = "item", name = "enriched-rare-metals", amount = 9},
       {type = "item", name = "sp-acromatter", amount = 1}

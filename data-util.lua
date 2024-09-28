@@ -289,4 +289,12 @@ function data_util.create_acroproduct_conversion_icon(item_to_convert, acroprodu
   return icons
 end
 
+function data_util.block_decomposition_for_recipe_category(category)
+  for i, recipe in pairs(data.raw.recipe) do
+    if recipe.category == category then
+      recipe.allow_decomposition = false
+    end
+  end
+end
+
 return data_util
