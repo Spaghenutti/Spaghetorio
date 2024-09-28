@@ -43,10 +43,7 @@ def create_zip():
             for file in files:
                 relative_path = os.path.join(root, file).replace(f"{PATH}\\", "")
                 if relative_path.split("\\")[0] not in PATHS_TO_SKIP:
-                    if relative_path == file:
-                        z.write(file)
-                    else:
-                        z.write(os.path.join(root, file), relative_path)
+                    z.write(os.path.join(root, file), fr"Spaghetorio\{relative_path}")
 
 
 if __name__ == "__main__":
