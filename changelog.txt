@@ -1,5 +1,5 @@
 ---------------------------------------------------------------------------------------------------
-Version: 0.1.3
+Version: 0.1.4
 Date: 2024-09-28
   Bugfixes:
     - blocked decomposition for recipes with multiple outputs. The total raw calculation in recipes resulted in "Too complex" error.

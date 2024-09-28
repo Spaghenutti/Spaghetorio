@@ -27,7 +27,10 @@ PATHS_TO_SKIP = [".git",
                  "fonts",
                  "tests",
                  "python",
-                 "graphics"]
+                 "graphics",
+                 ".editorconfig",
+                 ".gitignore",
+                 "run_pipeline.bat"]
 
 
 def get_version_from_info_json() -> str:

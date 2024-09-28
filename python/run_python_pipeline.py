@@ -20,7 +20,7 @@ import remove_unused_images
 repo = git.Repo(os.getcwd())
 
 # Commit current changes
-# git_utilities.git_push()
+# git_utilities.git_push()  # This sometimes does not push all files
 
 
 # Run scripts
@@ -31,7 +31,7 @@ convert_hr_resource_to_normal_resultion.resize_images()
 
 create_alien_resource_icon.create_alien_resource()
 
-# remove_unused_images.remove_unused_images()
+# remove_unused_images.remove_unused_images()  # Deprecated since unused images are now not added to the zip file
 
 create_zip.create_zip()
 
