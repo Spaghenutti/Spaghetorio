@@ -1,12 +1,14 @@
 # Spaghetorio
 
+Overhaul mod for Krastorio 2. Adds many new ores and items to craft.
+
 Inspired by [brevven](https://mods.factorio.com/user/brevven).
 
 ## Features
 
-- 14 new ores like **aluminum ore**, **chromite**, **limestone**, **magnesium**, ...
-- over 350 new items  **inconel**, **copper tube**, **gear box**, **processor** and of course **dark energy harvester**
-- over 40 new fluids  **aqueous niobium**, **helium 3**, **ethylene**, **chronomatter**
+- 14 new ores like **aluminum ore**, **chromite**, **limestone**, **magnesium**
+- over 350 new items like **inconel**, **copper tube**, **gear box**, **processor** and of course **dark energy harvester**
+- over 40 new fluids like **aqueous niobium**, **helium 3**, **ethylene**, **chronomatter**
 - 26 new science packs
 - over 160 new techonolgies
 
@@ -14,6 +16,10 @@ Inspired by [brevven](https://mods.factorio.com/user/brevven).
 
 - Requires [Krastorio 2](https://mods.factorio.com/mod/Krastorio2)
 - Requires [AAI Industry](https://mods.factorio.com/mod/aai-industry?from=search)
+
+### Known issues
+
+- The very advanced recipes do not show up in the corresponding crafting machines
 
 ### TODO List
 
