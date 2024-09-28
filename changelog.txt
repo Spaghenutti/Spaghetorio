@@ -4,6 +4,8 @@ Date: 2024-09-28
   Bugfixes:
     - blocked decomposition for recipes with multiple outputs. The total raw calculation in recipes resulted in "Too complex" error.
     - light emitting diode is now researched with advanced electronics 2
+    - Reduced size of mod from 250 MB to 50 MB
+    - Fixed contact link
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.2
 Date: 2024-09-28
