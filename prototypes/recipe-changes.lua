@@ -1135,6 +1135,62 @@ util.recipe.change_recipe_ingredients("cliff-explosives",
 --------------------------------------------------------------------------------
 -- MARK: Combat
 --------------------------------------------------------------------------------
+util.recipe.change_recipe_ingredients("submachine-gun",
+  {
+    {"iron-plate", 3},
+    {"copper-plate", 1},
+    {"iron-stick", 2},
+    {"iron-gear-wheel", 3}
+  },
+  {
+    {"iron-plate", 4},
+    {"copper-plate", 2},
+    {"iron-stick", 4},
+    {"iron-gear-wheel", 5}
+  },
+  8,
+  12)
+util.recipe.change_recipe_ingredients("shotgun",
+  {
+    {"steel-plate", 3},
+    {"sp-lead-slab", 1},
+    {"sp-spring", 1},
+    {"sp-machined-parts", 3}
+  },
+  {
+    {"steel-plate", 4},
+    {"sp-lead-slab", 2},
+    {"sp-spring", 2},
+    {"sp-machined-parts", 5}
+  },
+  10,
+  16)
+util.recipe.change_recipe_ingredients("shotgun-shell",
+  {
+    {"iron-stick", 1},
+    {"copper-plate", 1},
+    {"sp-graphite", 1}
+  },
+  {
+    {"iron-stick", 1},
+    {"copper-plate", 1},
+    {"sp-graphite", 2}
+  },
+  2,
+  3)
+util.recipe.change_recipe_ingredients("grenade",
+  {
+    {"iron-stick", 1},
+    {"iron-plate", 2},
+    {"sp-graphite", 4}
+  },
+  {
+    {"iron-stick", 1},
+    {"iron-plate", 3},
+    {"sp-graphite", 6}
+  },
+  5,
+  8)
 util.recipe.change_recipe_ingredients("light-armor",
   {
     {"iron-plate", 10},

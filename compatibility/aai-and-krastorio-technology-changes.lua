@@ -36,6 +36,8 @@ data.raw.technology["sp-noble-gases"].prerequisites = {"kr-atmosphere-condensati
 
 data.raw.technology["sp-neodymium-magnet"].prerequisites = {"kr-rare-metals"}
 
+table.insert(data.raw.technology["sp-military-science-pack-2"].effects, {type = "unlock-recipe", recipe = "biters-research-data"})  -- military research data
+
 table.insert(data.raw.technology["sp-computer-science-pack-2"].prerequisites, "kr-research-server")
 
 table.insert(data.raw.technology["sp-astronomical-science-pack-2"].prerequisites, "kr-research-server")

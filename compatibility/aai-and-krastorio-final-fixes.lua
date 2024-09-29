@@ -71,13 +71,17 @@ util.recipe.change_recipe_ingredients("chemical-science-pack",
 util.recipe.change_recipe_ingredients("military-science-pack",
   {
     {"blank-tech-card", 5},
-    {"biters-research-data", 1},
-    {"electronic-components", 5},
+    {"shotgun", 1},
+    {"firearm-magazine", 5},
+    {"stone-wall", 5},
+    {"grenade", 3},
   },
   {
-    {"blank-tech-card", 8},
-    {"biters-research-data", 2},
-    {"electronic-components", 8},
+    {"blank-tech-card", 5},
+    {"shotgun", 2},
+    {"firearm-magazine", 8},
+    {"stone-wall", 8},
+    {"grenade", 5},
   },
   20,
   30)
@@ -305,6 +309,14 @@ data.raw.recipe["kr-s-c-electronic-components"].hidden = true
 data.raw.recipe["kr-vc-electronic-components"].hidden = true
 data.raw.recipe["kr-vc-advanced-circuit"].results = {
   {type = "item", name = "electronic-components", amount = 2}
+}
+
+-- Fix military tech tree
+data.raw.technology["military"].effects = {
+  {
+    type = "unlock-recipe",
+    recipe = "submachine-gun"
+  }
 }
 
 -- Fix petroleum gas icon

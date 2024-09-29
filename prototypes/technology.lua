@@ -16,7 +16,9 @@ data:extend({
     unit =
     {
       count = 2,
-      ingredients = {{"basic-tech-card", 1}},
+      ingredients = {
+        {"basic-tech-card", 1}
+      },
       time = 15
     },
     order = "a-h-a"
@@ -48,7 +50,9 @@ data:extend({
     unit =
     {
       count = 2,
-      ingredients = {{"basic-tech-card", 1}},
+      ingredients = {
+        {"basic-tech-card", 1}
+      },
       time = 15
     },
     order = "a-h-a"
@@ -74,7 +78,10 @@ data:extend({
     unit =
     {
       count = 10,
-      ingredients = {{"automation-science-pack", 1}},
+      ingredients = {
+        {"basic-tech-card", 1},
+        {"automation-science-pack", 1}
+      },
       time = 15
     },
     order = "a-h-a"
@@ -91,11 +98,15 @@ data:extend({
         recipe = "sp-solder"
       }
     },
-    prerequisites = { "sp-tin-processing" },
+    prerequisites = {
+      "sp-tin-processing"
+    },
     unit =
     {
       count = 10,
-      ingredients = {{"automation-science-pack", 1}},
+      ingredients = {
+        {"automation-science-pack", 1}
+      },
       time = 15
     },
     order = "a-h-a"
@@ -112,11 +123,15 @@ data:extend({
         recipe = "sp-bronze-rod"
       },
     },
-    prerequisites = { "sp-tin-processing" },
+    prerequisites = {
+      "sp-tin-processing"
+    },
     unit =
     {
       count = 25,
-      ingredients = {{"automation-science-pack", 1}},
+      ingredients = {
+        {"automation-science-pack", 1}
+      },
       time = 15
     },
     order = "a-h-a"
@@ -141,11 +156,16 @@ data:extend({
         recipe = "sp-machined-parts-from-steel-plate"
       },
     },
-    prerequisites = {"steel-processing", "sp-basic-alloy"},
+    prerequisites = {
+      "steel-processing",
+      "sp-basic-alloy"
+    },
     unit =
     {
       count = 50,
-      ingredients = {{"automation-science-pack", 1}},
+      ingredients = {
+        {"automation-science-pack", 1}
+      },
       time = 15
     },
     order = "a-h-a"
@@ -166,11 +186,17 @@ data:extend({
         recipe = "sp-aluminum-sheet"
       }
     },
-    prerequisites = {"logistic-science-pack"},
+    prerequisites = {
+      "logistic-science-pack"
+    },
     unit =
     {
       count = 100,
-      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      ingredients = {
+        {"basic-tech-card", 1},
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1}
+      },
       time = 15
     },
     order = "a-h-a"
@@ -195,7 +221,11 @@ data:extend({
     unit =
     {
       count = 100,
-      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      ingredients = {
+        {"basic-tech-card", 1},
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1}
+      },
       time = 15
     },
     order = "a-h-a"
@@ -312,7 +342,9 @@ data:extend({
         recipe = "sp-graphite"
       },
     },
-    prerequisites = {"automation-science-pack"},
+    prerequisites = {
+      "automation-science-pack"
+    },
     unit =
     {
       count = 50,
@@ -350,7 +382,9 @@ data:extend({
         recipe = "sp-crushed-zinc-smelting"
       }
     },
-    prerequisites = {"chemical-science-pack"},
+    prerequisites = {
+      "chemical-science-pack"
+    },
     unit =
     {
       count = 100,
@@ -377,7 +411,9 @@ data:extend({
         recipe = "sp-brass"
       }
     },
-    prerequisites = {"sp-zinc-processing"},
+    prerequisites = {
+      "sp-zinc-processing"
+    },
     unit =
     {
       count = 75,
@@ -410,7 +446,9 @@ data:extend({
         recipe = "sp-graphene"
       },
     },
-    prerequisites = {"utility-science-pack"},
+    prerequisites = {
+      "utility-science-pack"
+    },
     unit =
     {
       count = 1000,
@@ -529,7 +567,9 @@ data:extend({
         recipe = "sp-crushed-titanium-smelting"
       },
     },
-    prerequisites = {"production-science-pack"},
+    prerequisites = {
+      "production-science-pack"
+    },
     unit =
     {
       count = 300,
@@ -562,7 +602,9 @@ data:extend({
         recipe = "sp-titanium-plate"
       },
     },
-    prerequisites = {"sp-material-science-pack-2"},
+    prerequisites = {
+      "sp-material-science-pack-2"
+    },
     unit =
     {
       count = 500,
@@ -4047,6 +4089,49 @@ data:extend({
         {"sp-utility-science-pack-3", 1},
         {"space-science-pack", 1}
         -- Krastorio: {"matter-tech-card", 1},
+      },
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  ------------------------------------------------------------------------------
+  -- MARK: Military
+  ------------------------------------------------------------------------------
+  {
+    type = "technology",
+    name = "sp-intermediate-military",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__base__/graphics/technology/military.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "shotgun"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "shotgun-shell"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "slowdown-capsule"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "grenade"
+      }
+    },
+    prerequisites = {
+      "military",
+      "steel-processing",
+      "sp-tin-processing"
+    },
+    unit =
+    {
+      count = 20,
+      ingredients = {
+        {"basic-tech-card", 1},
+        {"automation-science-pack", 1}
       },
       time = 15
     },

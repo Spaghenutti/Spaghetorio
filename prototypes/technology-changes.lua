@@ -743,15 +743,25 @@ data.raw.technology["exoskeleton-equipment"].unit.ingredients = {
   {"production-science-pack", 1}
 }
 
+table.insert(data.raw.technology["heavy-armor"].prerequisites, "military-science-pack")
+data.raw.technology["heavy-armor"].unit.ingredients = {
+  {"basic-tech-card", 1},
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"military-science-pack", 1}
+}
+
 data.raw.technology["modular-armor"].prerequisites = {
   "sp-fabric",
   "sp-insulation-sheet",
   "sp-magnet",
-  "sp-aluminum-treatment"
+  "sp-aluminum-treatment",
+  "heavy-armor"
 }
 data.raw.technology["modular-armor"].unit.ingredients = {
   {"automation-science-pack", 1},
   {"logistic-science-pack", 1},
+  {"military-science-pack", 1},
   {"sp-material-science-pack-1", 1},
   {"sp-electronic-science-pack-1", 1},
   {"chemical-science-pack", 1}
@@ -759,12 +769,14 @@ data.raw.technology["modular-armor"].unit.ingredients = {
 
 data.raw.technology["power-armor"].prerequisites = {
   "advanced-electronics",
-  "electric-engine"
+  "electric-engine",
+  "sp-military-science-pack-2"
 }
 data.raw.technology["power-armor"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},
   {"sp-logistic-science-pack-2", 1},
   {"sp-material-science-pack-2", 1},
+  {"sp-military-science-pack-2", 1},
   {"sp-electronic-science-pack-2", 1},
   {"sp-geological-science-pack-2", 1},
   {"sp-chemical-science-pack-2", 1},
@@ -810,6 +822,29 @@ data.raw.technology["fusion-reactor-equipment"].unit.ingredients = {
   {"sp-nuclear-science-pack-3", 1},
   {"sp-computer-science-pack-3", 1},
   {"utility-science-pack", 1},
+}
+
+--------------------------------------------------------------------------------
+-- MARK: Military
+--------------------------------------------------------------------------------
+
+data.raw.technology["military"].prerequisites = {
+  "sp-iron-machining",
+  "sp-iron-extruding"
+}
+
+table.insert(data.raw.technology["military-2"].prerequisites, "military-science-pack")
+data.raw.technology["military-2"].effects ={
+  {
+    type = "unlock-recipe",
+    recipe = "piercing-rounds-magazine"
+  },
+}
+data.raw.technology["military-2"].unit.ingredients = {
+  {"basic-tech-card", 1},
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"military-science-pack", 1}
 }
 
 --------------------------------------------------------------------------------

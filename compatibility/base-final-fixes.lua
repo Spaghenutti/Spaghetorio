@@ -39,6 +39,26 @@ data.raw.technology["battery"].unit.ingredients = {
   {"sp-electronic-science-pack-1", 1}
 }
 
+table.insert(data.raw.technology["logistic-science-pack"].prerequisites, "engine")
+
+data.raw.technology["military-science-pack"].prerequisites = {
+  "sp-intermediate-military",
+  "gun-turret",
+  "stone-wall",
+  "logistic-science-pack"
+}
+data.raw.technology["military-science-pack"].unit.ingredients = {
+  {"basic-tech-card", 1},
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1}
+}
+data.raw.technology["military-science-pack"].effects = {
+  {
+    type = "unlock-recipe",
+    recipe = "military-science-pack"
+  }
+}
+
 data.raw.technology["production-science-pack"].prerequisites = {
   "sp-actuator",
   "sp-automation-science-pack-2"
@@ -50,14 +70,6 @@ data.raw.technology["production-science-pack"].unit.ingredients = {
   {"sp-electronic-science-pack-1", 1},
   {"sp-geological-science-pack-1", 1},
   {"chemical-science-pack", 1}
-}
-
-data.raw.technology["military-science-pack"].prerequisites = {
-  "logistic-science-pack"
-}
-data.raw.technology["military-science-pack"].unit.ingredients = {
-  {"automation-science-pack", 1},
-  {"logistic-science-pack", 1}
 }
 
 data.raw.technology["utility-science-pack"].prerequisites = {

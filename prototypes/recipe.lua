@@ -2156,7 +2156,7 @@ data:extend({
       {type = "item", name = "sp-actuator", amount = 2},
       {type = "item", name = "sp-advanced-processing-unit", amount = 1},
       {type = "item", name = "sp-micro-machine", amount = 10},
-      
+      {type = "item", name = "sp-light-emitting-diode", amount = 10}
     },
     results = {
       {type = "item", name = "sp-cybernetics", amount = 1}
