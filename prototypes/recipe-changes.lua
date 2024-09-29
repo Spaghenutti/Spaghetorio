@@ -13,6 +13,7 @@ util.recipe.change_recipe_ingredients("iron-plate",
   },
   8,
   12)
+
 util.recipe.change_recipe_ingredients("copper-plate",
   {
     {"copper-ore", 2}
@@ -22,6 +23,7 @@ util.recipe.change_recipe_ingredients("copper-plate",
   },
   8,
   12)
+
 data.raw.recipe["iron-beam"].category = "smelting"
 util.recipe.change_recipe_ingredients("iron-beam",
   {
@@ -32,6 +34,7 @@ util.recipe.change_recipe_ingredients("iron-beam",
   },
   12,
   16)
+
 util.recipe.change_recipe_ingredients("sulfur",
   {
     {type="fluid", name="water", amount=60},
@@ -43,6 +46,7 @@ util.recipe.change_recipe_ingredients("sulfur",
   },
   2,
   3)
+
 data.raw.recipe["sulfur"].results = {
   {"sulfur", 4},
   {type="fluid", name="sp-dirty-water-with-sulfur", amount=60}
@@ -64,6 +68,7 @@ util.recipe.change_recipe_ingredients("electronic-circuit",
   },
   0.5,
   1)
+
 util.recipe.change_recipe_ingredients("advanced-circuit",
   {
     {"sp-basic-circuit-board", 1},
@@ -83,6 +88,7 @@ util.recipe.change_recipe_ingredients("advanced-circuit",
   },
   3,
   5)
+
 data.raw.item["processing-unit"].category = "crafting"
 util.recipe.change_recipe_ingredients("processing-unit",
   {
@@ -97,6 +103,7 @@ util.recipe.change_recipe_ingredients("processing-unit",
   },
   1.6,
   3)
+
 util.recipe.change_recipe_ingredients("rocket-control-unit",
   {
     {"processing-unit", 4},
@@ -116,6 +123,7 @@ util.recipe.change_recipe_ingredients("rocket-control-unit",
   },
   6,
   12)
+
 util.recipe.change_recipe_ingredients("motor",
   {
     {"sp-machined-parts", 2},
@@ -129,6 +137,7 @@ util.recipe.change_recipe_ingredients("motor",
   },
   2,
   3)
+
 util.recipe.change_recipe_ingredients("electric-motor",
   {
     {"copper-cable", 8},
@@ -144,6 +153,7 @@ util.recipe.change_recipe_ingredients("electric-motor",
   },
   nil,
   nil)
+
 util.recipe.change_recipe_ingredients("steel-plate",
   {
     {"iron-plate", 5},
@@ -155,6 +165,7 @@ util.recipe.change_recipe_ingredients("steel-plate",
   },
   nil,
   nil)
+
 util.recipe.change_recipe_ingredients("battery",
   {
     {"iron-plate", 1},
@@ -170,6 +181,7 @@ util.recipe.change_recipe_ingredients("battery",
   },
   nil,
   nil)
+
 util.recipe.change_recipe_ingredients("low-density-structure",
   {
     {"sp-titanium-frame", 1},
@@ -183,6 +195,7 @@ util.recipe.change_recipe_ingredients("low-density-structure",
   },
   16,
   20)
+
 -- Base: {"sp-sand", 5}; Krastorio {"sand", 5}
 util.recipe.change_recipe_ingredients("concrete",
   {
@@ -195,6 +208,7 @@ util.recipe.change_recipe_ingredients("concrete",
   },
   10,
   15)
+
 -- Base: {"sp-sand", 5}; Krastorio {"sand", 5}
 util.recipe.change_recipe_ingredients("refined-concrete",
   {
@@ -211,6 +225,7 @@ util.recipe.change_recipe_ingredients("refined-concrete",
   },
   12,
   20)
+
 util.recipe.change_recipe_ingredients("steel-chest",
   {
     {"sp-bolts", 4},
@@ -222,6 +237,7 @@ util.recipe.change_recipe_ingredients("steel-chest",
   },
   1,
   2)
+
 util.recipe.change_recipe_ingredients("logistic-chest-storage",
   {
     {"steel-chest", 1},
@@ -235,6 +251,7 @@ util.recipe.change_recipe_ingredients("logistic-chest-storage",
   },
   1,
   2)
+
 util.recipe.change_recipe_ingredients("logistic-chest-passive-provider",
   {
     {"steel-chest", 1},
@@ -248,6 +265,7 @@ util.recipe.change_recipe_ingredients("logistic-chest-passive-provider",
   },
   1,
   2)
+
 util.recipe.change_recipe_ingredients("logistic-chest-active-provider",
   {
     {"steel-chest", 1},
@@ -259,6 +277,7 @@ util.recipe.change_recipe_ingredients("logistic-chest-active-provider",
   },
   1,
   2)
+
 util.recipe.change_recipe_ingredients("logistic-chest-requester",
   {
     {"steel-chest", 1},
@@ -270,6 +289,7 @@ util.recipe.change_recipe_ingredients("logistic-chest-requester",
   },
   1,
   2)
+
 util.recipe.change_recipe_ingredients("logistic-chest-buffer",
   {
     {"steel-chest", 1},
@@ -281,6 +301,7 @@ util.recipe.change_recipe_ingredients("logistic-chest-buffer",
   },
   1,
   2)
+
 util.recipe.change_recipe_ingredients("speed-module",
   {
     {"sp-capacitor", 3},
@@ -300,6 +321,7 @@ util.recipe.change_recipe_ingredients("speed-module",
   },
   15,
   20)
+
 util.recipe.change_recipe_ingredients("speed-module-2",
   {
     {"advanced-circuit", 5},
@@ -319,6 +341,7 @@ util.recipe.change_recipe_ingredients("speed-module-2",
   },
   20,
   30)
+
 util.recipe.change_recipe_ingredients("speed-module-3",
   {
     {"sp-integrated-circuit", 5},
@@ -338,6 +361,7 @@ util.recipe.change_recipe_ingredients("speed-module-3",
   },
   45,
   60)
+
 util.recipe.change_recipe_ingredients("productivity-module",
   {
     {"sp-transistor", 3},
@@ -357,6 +381,7 @@ util.recipe.change_recipe_ingredients("productivity-module",
   },
   15,
   20)
+
 util.recipe.change_recipe_ingredients("productivity-module-2",
   {
     {"advanced-circuit", 3},
@@ -372,6 +397,7 @@ util.recipe.change_recipe_ingredients("productivity-module-2",
   },
   20,
   30)
+
 util.recipe.change_recipe_ingredients("productivity-module-3",
   {
     {"sp-advanced-processing-unit", 3},
@@ -389,6 +415,7 @@ util.recipe.change_recipe_ingredients("productivity-module-3",
   },
   45,
   60)
+
 util.recipe.change_recipe_ingredients("effectivity-module",
   {
     {"sp-diode", 3},
@@ -408,6 +435,7 @@ util.recipe.change_recipe_ingredients("effectivity-module",
   },
   15,
   20)
+
 util.recipe.change_recipe_ingredients("effectivity-module-2",
   {
     {"advanced-circuit", 6},
@@ -423,6 +451,7 @@ util.recipe.change_recipe_ingredients("effectivity-module-2",
   },
   20,
   30)
+
 util.recipe.change_recipe_ingredients("effectivity-module-3",
   {
     {"sp-advanced-processing-unit", 6},
@@ -440,6 +469,7 @@ util.recipe.change_recipe_ingredients("effectivity-module-3",
   },
   45,
   60)
+
 util.recipe.change_recipe_ingredients("flying-robot-frame",
   {
     {"sp-ball-bearing", 1},
@@ -457,6 +487,7 @@ util.recipe.change_recipe_ingredients("flying-robot-frame",
   },
   3,
   6)
+
 --------------------------------------------------------------------------------
 -- MARK: Logistics
 --------------------------------------------------------------------------------
@@ -473,6 +504,7 @@ util.recipe.change_recipe_ingredients("transport-belt",
   },
   nil,
   nil)
+
 util.recipe.change_recipe_ingredients("fast-transport-belt",
   {
     {"sp-aluminum-frame", 1},
@@ -488,6 +520,7 @@ util.recipe.change_recipe_ingredients("fast-transport-belt",
   },
   nil,
   nil)
+
 util.recipe.change_recipe_ingredients("express-transport-belt",
   {
     {"sp-titanium-frame", 2},
@@ -505,6 +538,7 @@ util.recipe.change_recipe_ingredients("express-transport-belt",
   },
   nil,
   nil)
+
 util.recipe.change_recipe_ingredients("underground-belt",
   {
     {"iron-plate", 2},
@@ -518,6 +552,7 @@ util.recipe.change_recipe_ingredients("underground-belt",
   },
   nil,
   nil)
+
 util.recipe.change_recipe_ingredients("fast-underground-belt",
   {
     {"sp-machined-parts", 2},
@@ -533,6 +568,7 @@ util.recipe.change_recipe_ingredients("fast-underground-belt",
   },
   nil,
   nil)
+
 util.recipe.change_recipe_ingredients("express-underground-belt",
   {
     {"sp-titanium-frame", 8},
@@ -548,6 +584,7 @@ util.recipe.change_recipe_ingredients("express-underground-belt",
   },
   nil,
   nil)
+
 util.recipe.change_recipe_ingredients("splitter",
   {
     {"sp-machined-parts", 3},
@@ -561,6 +598,7 @@ util.recipe.change_recipe_ingredients("splitter",
   },
   nil,
   nil)
+
 util.recipe.change_recipe_ingredients("fast-splitter",
   {
     {"sp-machined-parts", 2},
@@ -578,6 +616,7 @@ util.recipe.change_recipe_ingredients("fast-splitter",
   },
   nil,
   nil)
+
 util.recipe.change_recipe_ingredients("express-splitter",
   {
     {"sp-titanium-frame", 8},
@@ -619,6 +658,7 @@ util.recipe.change_recipe_ingredients("fast-inserter",
   },
   1,
   2)
+
 -- Krastorio: {"inserter-parts", 2}
 util.recipe.change_recipe_ingredients("filter-inserter",
   {
@@ -641,6 +681,7 @@ util.recipe.change_recipe_ingredients("filter-inserter",
   },
   1.5,
   3)
+
 -- Krastorio: {"inserter-parts", 3}
 util.recipe.change_recipe_ingredients("stack-inserter",
   {
@@ -663,6 +704,7 @@ util.recipe.change_recipe_ingredients("stack-inserter",
   },
   2,
   3)
+
 -- Krastorio: {"inserter-parts", 3}
 util.recipe.change_recipe_ingredients("stack-filter-inserter",
   {
@@ -685,6 +727,7 @@ util.recipe.change_recipe_ingredients("stack-filter-inserter",
   },
   2,
   3)
+
 -- Base: {"iron-plate", 10}; Krastorio {"iron-beam", 6}
 util.recipe.change_recipe_ingredients("medium-electric-pole",
   {
@@ -699,6 +742,7 @@ util.recipe.change_recipe_ingredients("medium-electric-pole",
   },
   2,
   4)
+
 -- Base: {"iron-plate", 20}; Krastorio {"steel-beam", 8}
 util.recipe.change_recipe_ingredients("big-electric-pole",
   {
@@ -713,6 +757,7 @@ util.recipe.change_recipe_ingredients("big-electric-pole",
   },
   4,
   8)
+
 -- Base: {"iron-plate", 30}; Krastorio {"steel-beam", 12}
 util.recipe.change_recipe_ingredients("substation",
   {
@@ -733,6 +778,7 @@ util.recipe.change_recipe_ingredients("substation",
   },
   6,
   12)
+
 util.recipe.change_recipe_ingredients("pipe",
   {
     {"iron-plate", 2}
@@ -742,6 +788,7 @@ util.recipe.change_recipe_ingredients("pipe",
   },
   0.2,
   1)
+
 util.recipe.change_recipe_ingredients("pipe-to-ground",
   {
     {"iron-plate", 2},
@@ -753,6 +800,7 @@ util.recipe.change_recipe_ingredients("pipe-to-ground",
   },
   0.5,
   1)
+
 -- Base: {"steel-plate", 2}; Krastorio {"steel-beam", 2}
 -- Base: {"sp-wood", 4}; Krastorio {"wood", 4}
 util.recipe.change_recipe_ingredients("rail",
@@ -766,6 +814,7 @@ util.recipe.change_recipe_ingredients("rail",
   },
   0.5,
   1)
+
 -- Base: {"steel-plate", 12}; Krastorio {"steel-beam", 6}
 util.recipe.change_recipe_ingredients("train-stop",
   {
@@ -782,6 +831,7 @@ util.recipe.change_recipe_ingredients("train-stop",
   },
   3,
   4)
+
 util.recipe.change_recipe_ingredients("rail-signal",
   {
     {"small-lamp", 3},
@@ -797,6 +847,7 @@ util.recipe.change_recipe_ingredients("rail-signal",
   },
   1,
   2)
+
 util.recipe.change_recipe_ingredients("rail-chain-signal",
   {
     {"small-lamp", 3},
@@ -812,6 +863,7 @@ util.recipe.change_recipe_ingredients("rail-chain-signal",
   },
   1,
   2)
+
 util.recipe.change_recipe_ingredients("locomotive",
   {
     {"small-lamp", 2},
@@ -835,6 +887,7 @@ util.recipe.change_recipe_ingredients("locomotive",
   },
   30,
   60)
+
 util.recipe.change_recipe_ingredients("cargo-wagon",
   {
     {"sp-spring", 4},
@@ -852,6 +905,7 @@ util.recipe.change_recipe_ingredients("cargo-wagon",
   },
   20,
   30)
+
 -- Kratorio: {"steel-beam", 8}
 util.recipe.change_recipe_ingredients("fluid-wagon",
   {
@@ -872,6 +926,7 @@ util.recipe.change_recipe_ingredients("fluid-wagon",
   },
   20,
   30)
+
 -- Kratorio: {"automation-core", 8}
 util.recipe.change_recipe_ingredients("artillery-wagon",
   {
@@ -896,6 +951,7 @@ util.recipe.change_recipe_ingredients("artillery-wagon",
   },
   60,
   120)
+
 util.recipe.change_recipe_ingredients("car",
   {
     {"engine-unit", 1},
@@ -921,6 +977,7 @@ util.recipe.change_recipe_ingredients("car",
   },
   20,
   30)
+
 util.recipe.change_recipe_ingredients("tank",
   {
     {"sp-heavy-ball-bearing", 20},
@@ -944,6 +1001,7 @@ util.recipe.change_recipe_ingredients("tank",
   },
   60,
   90)
+
 util.recipe.change_recipe_ingredients("logistic-robot",
   {
     {"flying-robot-frame", 1},
@@ -959,6 +1017,7 @@ util.recipe.change_recipe_ingredients("logistic-robot",
   },
   4,
   6)
+
 util.recipe.change_recipe_ingredients("construction-robot",
   {
     {"flying-robot-frame", 1},
@@ -974,6 +1033,7 @@ util.recipe.change_recipe_ingredients("construction-robot",
   },
   4,
   6)
+
 util.recipe.change_recipe_ingredients("roboport",
   {
     {"sp-stainless-steel", 16},
@@ -993,18 +1053,20 @@ util.recipe.change_recipe_ingredients("roboport",
   },
   20,
   30)
+
 data.raw.recipe["red-wire"].category = "crafting-with-fluid"
 util.recipe.change_recipe_ingredients("red-wire",
-{
-  {"sp-insulated-wire", 1},
-  {"sp-transistor", 1}
-},
-{
-  {"sp-insulated-wire", 1},
-  {"sp-transistor", 2}
-},
+  {
+    {"sp-insulated-wire", 1},
+    {"sp-transistor", 1}
+  },
+  {
+    {"sp-insulated-wire", 1},
+    {"sp-transistor", 2}
+  },
   0.5,
   0.5)
+
 data.raw.recipe["green-wire"].category = "crafting-with-fluid"
 util.recipe.change_recipe_ingredients("green-wire",
   {
@@ -1017,6 +1079,7 @@ util.recipe.change_recipe_ingredients("green-wire",
   },
   0.5,
   0.5)
+
 util.recipe.change_recipe_ingredients("arithmetic-combinator",
   {
     {"sp-insulated-wire", 5},
@@ -1036,6 +1099,7 @@ util.recipe.change_recipe_ingredients("arithmetic-combinator",
   },
   3,
   5)
+
 util.recipe.change_recipe_ingredients("decider-combinator",
   {
     {"sp-insulated-wire", 5},
@@ -1053,6 +1117,7 @@ util.recipe.change_recipe_ingredients("decider-combinator",
   },
   3,
   5)
+
 util.recipe.change_recipe_ingredients("constant-combinator",
   {
     {"sp-insulated-wire", 2},
@@ -1068,6 +1133,7 @@ util.recipe.change_recipe_ingredients("constant-combinator",
   },
   2,
   3)
+
 util.recipe.change_recipe_ingredients("power-switch",
   {
     {"sp-aluminum-cable", 2},
@@ -1083,6 +1149,7 @@ util.recipe.change_recipe_ingredients("power-switch",
   },
   2,
   3)
+
 util.recipe.change_recipe_ingredients("programmable-speaker",
   {
     {"copper-cable", 2},
@@ -1102,6 +1169,7 @@ util.recipe.change_recipe_ingredients("programmable-speaker",
   },
   2,
   3)
+
 data.raw.recipe["explosives"].category = "crafting-with-fluid"
 util.recipe.change_recipe_ingredients("explosives",
   {
@@ -1116,6 +1184,7 @@ util.recipe.change_recipe_ingredients("explosives",
   },
   3,
   5)
+
 data.raw.recipe["cliff-explosives"].category = "crafting-with-fluid"
 util.recipe.change_recipe_ingredients("cliff-explosives",
   {
@@ -1132,6 +1201,7 @@ util.recipe.change_recipe_ingredients("cliff-explosives",
   },
   3,
   5)
+
 --------------------------------------------------------------------------------
 -- MARK: Combat
 --------------------------------------------------------------------------------
@@ -1150,6 +1220,7 @@ util.recipe.change_recipe_ingredients("submachine-gun",
   },
   8,
   12)
+
 util.recipe.change_recipe_ingredients("shotgun",
   {
     {"steel-plate", 3},
@@ -1165,6 +1236,41 @@ util.recipe.change_recipe_ingredients("shotgun",
   },
   10,
   16)
+
+util.recipe.change_recipe_ingredients("combat-shotgun",
+  {
+    {"sp-stainless-steel", 3},
+    {"sp-bronze-rod", 1},
+    {"sp-spring", 1},
+    {"sp-machined-parts", 6},
+    {"sp-graphite", 1}
+  },
+  {
+    {"sp-stainless-steel", 5},
+    {"sp-bronze-rod", 1},
+    {"sp-spring", 1},
+    {"sp-machined-parts", 10},
+    {"sp-graphite", 3}
+  },
+  12,
+  20)
+
+util.recipe.change_recipe_ingredients("piercing-rounds-magazine",
+  {
+    {"steel-plate", 1},
+    {"sp-bronze-rod", 1},
+    {"sp-alumina", 1},
+    {"sp-graphite", 1}
+  },
+  {
+    {"steel-plate", 2},
+    {"sp-bronze-rod", 1},
+    {"sp-alumina", 2},
+    {"sp-graphite", 1}
+  },
+  3,
+  5)
+
 util.recipe.change_recipe_ingredients("shotgun-shell",
   {
     {"iron-stick", 1},
@@ -1178,6 +1284,7 @@ util.recipe.change_recipe_ingredients("shotgun-shell",
   },
   2,
   3)
+
 util.recipe.change_recipe_ingredients("grenade",
   {
     {"iron-stick", 1},
@@ -1191,6 +1298,26 @@ util.recipe.change_recipe_ingredients("grenade",
   },
   5,
   8)
+
+data.raw.recipe["poison-capsule"].category = "crafting-with-fluid"
+util.recipe.change_recipe_ingredients("poison-capsule",
+  {
+    {"electronic-circuit", 1},
+    {"iron-plate", 2},
+    {"sp-chromium-plate", 1},
+    {"glass", 1},
+    {type = "fluid", name = "sp-sulfamate", amount = 10}
+  },
+  {
+    {"electronic-circuit", 2},
+    {"iron-plate", 3},
+    {"sp-chromium-plate", 2},
+    {"glass", 2},
+    {type = "fluid", name = "sp-sulfamate", amount = 15}
+  },
+  8,
+  12)
+
 util.recipe.change_recipe_ingredients("light-armor",
   {
     {"iron-plate", 10},
@@ -1202,6 +1329,7 @@ util.recipe.change_recipe_ingredients("light-armor",
   },
   2,
   3)
+
 util.recipe.change_recipe_ingredients("heavy-armor",
   {
     {"steel-plate", 6},
@@ -1217,6 +1345,7 @@ util.recipe.change_recipe_ingredients("heavy-armor",
   },
   3,
   5)
+
 util.recipe.change_recipe_ingredients("modular-armor",
   {
     {"sp-fabric", 10},
@@ -1236,6 +1365,7 @@ util.recipe.change_recipe_ingredients("modular-armor",
   },
   5,
   8)
+
 util.recipe.change_recipe_ingredients("power-armor",
   {
     {"sp-fabric", 10},
@@ -1257,6 +1387,7 @@ util.recipe.change_recipe_ingredients("power-armor",
   },
   10,
   16)
+
 util.recipe.change_recipe_ingredients("power-armor-mk2",
   {
     {"sp-fabric", 12},
@@ -1278,6 +1409,7 @@ util.recipe.change_recipe_ingredients("power-armor-mk2",
   },
   16,
   32)
+
 util.recipe.change_recipe_ingredients("night-vision-equipment",
   {
     {"processing-unit", 1},
@@ -1299,6 +1431,7 @@ util.recipe.change_recipe_ingredients("night-vision-equipment",
   },
   10,
   12)
+
 util.recipe.change_recipe_ingredients("belt-immunity-equipment",
   {
     {"processing-unit", 2},
@@ -1322,6 +1455,7 @@ util.recipe.change_recipe_ingredients("belt-immunity-equipment",
   },
   20,
   30)
+
 util.recipe.change_recipe_ingredients("energy-shield-equipment",
   {
     {"advanced-circuit", 5},
@@ -1337,6 +1471,7 @@ util.recipe.change_recipe_ingredients("energy-shield-equipment",
   },
   10,
   15)
+
 util.recipe.change_recipe_ingredients("energy-shield-mk2-equipment",
   {
     {"sp-integrated-circuit", 3},
@@ -1358,6 +1493,7 @@ util.recipe.change_recipe_ingredients("energy-shield-mk2-equipment",
   },
   20,
   30)
+
 util.recipe.change_recipe_ingredients("battery-equipment",
   {
     {"battery", 4},
@@ -1373,6 +1509,7 @@ util.recipe.change_recipe_ingredients("battery-equipment",
   },
   4,
   6)
+
 -- Base: {"battery", 20}; Krastorio {"lithium-sulfur-battery", 20}
 util.recipe.change_recipe_ingredients("battery-mk2-equipment",
   {
@@ -1391,6 +1528,7 @@ util.recipe.change_recipe_ingredients("battery-mk2-equipment",
   },
   6,
   10)
+
 util.recipe.change_recipe_ingredients("solar-panel-equipment",
   {
     {"solar-panel", 1},
@@ -1408,6 +1546,7 @@ util.recipe.change_recipe_ingredients("solar-panel-equipment",
   },
   10,
   15)
+
 util.recipe.change_recipe_ingredients("fusion-reactor-equipment",
   {
     {"sp-advanced-processing-unit", 10},
@@ -1431,6 +1570,7 @@ util.recipe.change_recipe_ingredients("fusion-reactor-equipment",
   },
   60,
   90)
+
 util.recipe.change_recipe_ingredients("personal-laser-defense-equipment",
   {
     {"processing-unit", 8},
@@ -1448,7 +1588,8 @@ util.recipe.change_recipe_ingredients("personal-laser-defense-equipment",
   },
   10,
   15)
-  util.recipe.change_recipe_ingredients("discharge-defense-equipment",
+
+util.recipe.change_recipe_ingredients("discharge-defense-equipment",
   {
     {"processing-unit", 3},
     {"sp-aluminum-frame", 6},
@@ -1465,6 +1606,7 @@ util.recipe.change_recipe_ingredients("personal-laser-defense-equipment",
   },
   20,
   30)
+
 util.recipe.change_recipe_ingredients("discharge-defense-remote",
   {
     {"electronic-circuit", 1},
@@ -1478,6 +1620,7 @@ util.recipe.change_recipe_ingredients("discharge-defense-remote",
   },
   2,
   3)
+
 util.recipe.change_recipe_ingredients("exoskeleton-equipment",
   {
     {"advanced-circuit", 8},
@@ -1501,6 +1644,7 @@ util.recipe.change_recipe_ingredients("exoskeleton-equipment",
   },
   20,
   30)
+
 -- Krastorio: {"automation-core", 2}
 util.recipe.change_recipe_ingredients("personal-roboport-equipment",
   {
@@ -1519,6 +1663,7 @@ util.recipe.change_recipe_ingredients("personal-roboport-equipment",
   },
   10,
   20)
+
 util.recipe.change_recipe_ingredients("personal-roboport-mk2-equipment",
   {
     {"sp-circuit-board", 5},
@@ -1540,6 +1685,7 @@ util.recipe.change_recipe_ingredients("personal-roboport-mk2-equipment",
   },
   20,
   30)
+
 util.recipe.change_recipe_ingredients("rocket-silo",
   {
     {"steel-plate", 80},
@@ -1587,6 +1733,7 @@ util.recipe.change_recipe_ingredients("rocket-silo",
   },
   300,
   600)
+
 util.recipe.change_recipe_ingredients("rocket-part",
   {
     {"rocket-control-unit", 80},
@@ -1617,6 +1764,7 @@ util.recipe.change_recipe_ingredients("rocket-part",
     {"sp-insulated-wire", 240}},
   80,
   160)
+
 --------------------------------------------------------------------------------
 -- MARK: Buildings
 --------------------------------------------------------------------------------
@@ -1629,6 +1777,7 @@ util.recipe.change_recipe_ingredients("stone-furnace",
   },
   3,
   6)
+
 -- Base: {"stone-brick", 40}; Krastorio {"stone-tablet", 40}
 -- Base: {"iron-plate", 40}; Krastorio {"steel-beam", 20}
 util.recipe.change_recipe_ingredients("steel-furnace",
@@ -1642,6 +1791,7 @@ util.recipe.change_recipe_ingredients("steel-furnace",
   },
   12,
   24)
+
 -- Base: {"stone-brick", 30}; Krastorio {"stone-tablet", 30}
 -- Base: {"iron-plate", 40}; Krastorio {"steel-beam", 20}
 util.recipe.change_recipe_ingredients("electric-furnace",
@@ -1657,6 +1807,7 @@ util.recipe.change_recipe_ingredients("electric-furnace",
   },
   16,
   32)
+
 -- Base: {"iron-plate", 20}; Krastorio {"iron-beam", 8}
 util.recipe.change_recipe_ingredients("electric-mining-drill",
   {
@@ -1673,6 +1824,7 @@ util.recipe.change_recipe_ingredients("electric-mining-drill",
   },
   8,
   16)
+
 util.recipe.change_recipe_ingredients("boiler",
   {
     {"copper-plate", 20},
@@ -1688,6 +1840,7 @@ util.recipe.change_recipe_ingredients("boiler",
   },
   8,
   16)
+
 util.recipe.change_recipe_ingredients("steam-engine",
   {
     {"stone-brick", 12},
@@ -1705,6 +1858,7 @@ util.recipe.change_recipe_ingredients("steam-engine",
   },
   12,
   24)
+
 -- Base: {"iron-plate", 24}; Krastorio {"iron-beam", 10}
 util.recipe.change_recipe_ingredients("assembling-machine-1",
   {
@@ -1721,6 +1875,7 @@ util.recipe.change_recipe_ingredients("assembling-machine-1",
   },
   8,
   16)
+
 -- Base: {"iron-plate", 40}; Krastorio {"steel-beam", 12}
 util.recipe.change_recipe_ingredients("assembling-machine-2",
   {
@@ -1741,6 +1896,7 @@ util.recipe.change_recipe_ingredients("assembling-machine-2",
   },
   10,
   20)
+
 util.recipe.change_recipe_ingredients("assembling-machine-3",
   {
     {"processing-unit", 12},
@@ -1766,6 +1922,7 @@ util.recipe.change_recipe_ingredients("assembling-machine-3",
   },
   20,
   30)
+
 -- aai {"engine-unit", 5}, Krastorio {"steel-gear-wheel", 8}
 util.recipe.change_recipe_ingredients("pumpjack",
   {
@@ -1784,6 +1941,7 @@ util.recipe.change_recipe_ingredients("pumpjack",
   },
   16,
   24)
+
 -- Base: {"sp-glass", 10}; Krastorio {"glass", 10}
 util.recipe.change_recipe_ingredients("oil-refinery",
   {
@@ -1808,6 +1966,7 @@ util.recipe.change_recipe_ingredients("oil-refinery",
   },
   30,
   45)
+
 util.recipe.change_recipe_ingredients("centrifuge",
   {
     {"concrete", 20},
@@ -1833,6 +1992,7 @@ util.recipe.change_recipe_ingredients("centrifuge",
   },
   20,
   40)
+
 util.recipe.change_recipe_ingredients("beacon",
   {
     {"sp-heatsink", 20},
@@ -1856,6 +2016,7 @@ util.recipe.change_recipe_ingredients("beacon",
   },
   30,
   45)
+
 -- Base: {"battery", 20}; Krastorio {"lithium-sulfur-battery", 20}
 util.recipe.change_recipe_ingredients("satellite",
   {
@@ -1878,6 +2039,7 @@ util.recipe.change_recipe_ingredients("satellite",
   },
   20,
   30)
+
 -- Base: {"iron-plate", 40}; Krastorio {"iron-beam", 16}
 -- Base: {"sp-glass", 20}; Krastorio {"glass", 20}
 util.recipe.change_recipe_ingredients("lab",
@@ -1893,6 +2055,7 @@ util.recipe.change_recipe_ingredients("lab",
   },
   10,
   20)
+
 -- Base: {"sp-silicon", 40}; Krastorio {"silicon", 40}
 util.recipe.change_recipe_ingredients("solar-panel",
   {
@@ -1909,6 +2072,7 @@ util.recipe.change_recipe_ingredients("solar-panel",
   },
   10,
   20)
+
 -- Base: {"sp-glass", 30}; Krastorio {"glass", 30}
 util.recipe.change_recipe_ingredients("chemical-plant",
   {
@@ -1929,6 +2093,7 @@ util.recipe.change_recipe_ingredients("chemical-plant",
   },
   12,
   24)
+
 -- Base: {"iron-plate", 50}; Krastorio {"steel-beam", 6}, {"steel-plate", 16}
 -- Krastorio: {"automation-core", 10}
 util.recipe.change_recipe_ingredients("radar",
@@ -1942,6 +2107,7 @@ util.recipe.change_recipe_ingredients("radar",
   },
   12,
   24)
+
 util.recipe.change_recipe_ingredients("storage-tank",
   {
     {"sp-copper-tube", 10},
@@ -1957,6 +2123,7 @@ util.recipe.change_recipe_ingredients("storage-tank",
   },
   8,
   16)
+
 -- Base: {"iron-plate", 8}; Krastorio {"steel-plate", 3}
 util.recipe.change_recipe_ingredients("pump",
   {
@@ -1971,6 +2138,7 @@ util.recipe.change_recipe_ingredients("pump",
   },
   2,
   4)
+
 util.recipe.change_recipe_ingredients("accumulator",
   {
     {"battery", 4},
@@ -1990,6 +2158,7 @@ util.recipe.change_recipe_ingredients("accumulator",
   },
   6,
   12)
+
 util.recipe.change_recipe_ingredients("nuclear-reactor",
   {
     {"refined-concrete", 500},
@@ -2017,6 +2186,7 @@ util.recipe.change_recipe_ingredients("nuclear-reactor",
   },
   500,
   2000)
+
 -- Base: {"sp-lithium", 10}; Krastorio {"lithium", 10}
 util.recipe.change_recipe_ingredients("heat-pipe",
   {
@@ -2029,6 +2199,7 @@ util.recipe.change_recipe_ingredients("heat-pipe",
   },
   2,
   4)
+
 util.recipe.change_recipe_ingredients("heat-exchanger",
   {
     {"sp-plate-heat-exchanger", 30},
@@ -2046,6 +2217,7 @@ util.recipe.change_recipe_ingredients("heat-exchanger",
   },
   12,
   24)
+
 util.recipe.change_recipe_ingredients("steam-turbine",
   {
     {"electric-engine-unit", 4},
@@ -2067,6 +2239,7 @@ util.recipe.change_recipe_ingredients("steam-turbine",
   },
   60,
   90)
+
 util.recipe.change_recipe_ingredients("offshore-pump",
   {
     {"iron-plate", 3},
@@ -2082,6 +2255,7 @@ util.recipe.change_recipe_ingredients("offshore-pump",
   },
   2,
   4)
+
 --------------------------------------------------------------------------------
 -- MARK: Technology
 -- See aai-and-krastorio-final-fixes.lua
@@ -2111,6 +2285,7 @@ util.recipe.change_recipe_ingredients("laser-turret",
   },
   20,
   30)
+
 util.recipe.change_recipe_ingredients("flamethrower-turret",
   {
     {"steel-plate", 30},
@@ -2130,6 +2305,7 @@ util.recipe.change_recipe_ingredients("flamethrower-turret",
   },
   20,
   30)
+
 data.raw.recipe["artillery-turret"].category = "crafting-with-fluid"
 util.recipe.change_recipe_ingredients("artillery-turret",
   {
@@ -2154,6 +2330,7 @@ util.recipe.change_recipe_ingredients("artillery-turret",
   },
   40,
   60)
+
 util.recipe.change_recipe_ingredients("artillery-targeting-remote",
   {
     {"processing-unit", 1},

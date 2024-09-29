@@ -690,7 +690,9 @@ data.raw.technology["sp-uniformity-science-pack"].unit.ingredients = {
   {"singularity-tech-card", 1}
 }
 
+--------------------------------------------------------------------------------
 -- MARK: Base technology changes
+--------------------------------------------------------------------------------
 data.raw.technology["steel-processing"].prerequisites = {"sp-coal-processing"}
 data.raw.technology["steel-processing"].effects = {
   {type = "unlock-recipe", recipe = "steel-plate"},
@@ -717,7 +719,26 @@ table.insert(data.raw.technology["advanced-electronics"].effects, {type = "unloc
 
 data.raw.technology["rocket-fuel"].prerequisites = {"kr-advanced-chemistry"}
 
+data.raw.technology["follower-robot-count-7"].unit.ingredients = {
+  {"sp-automation-science-pack-3", 1},
+  {"sp-logistic-science-pack-3", 1},
+  {"sp-chemical-science-pack-3", 1},
+  {"sp-electronic-science-pack-3", 1},
+  {"sp-geological-science-pack-3", 1},
+  {"sp-material-science-pack-3", 1},
+  {"sp-computer-science-pack-3", 1},
+  {"sp-production-science-pack-3", 1},
+  {"sp-nuclear-science-pack-3", 1},
+  {"sp-astronomical-science-pack-3", 1},
+  {"sp-utility-science-pack-3", 1},
+  {"space-science-pack", 1},
+  {"advanced-tech-card", 1},
+  {"matter-tech-card", 1}
+}
+
+--------------------------------------------------------------------------------
 -- MARK: Krastorio technology changes
+--------------------------------------------------------------------------------
 table.insert(data.raw.technology["kr-steam-engine"].prerequisites, "sp-copper-machining")  -- Why is this a krastorio technology??
 
 table.insert(data.raw.technology["kr-fluids-chemistry"].prerequisites, "kr-basic-fluid-handling") 
@@ -1023,7 +1044,8 @@ data.raw.technology["kr-radar"].unit.ingredients = {
   {"logistic-science-pack", 1},
   {"sp-electronic-science-pack-1", 1},
   {"sp-geological-science-pack-1", 1},
-  {"sp-material-science-pack-1", 1}
+  {"sp-material-science-pack-1", 1},
+  {"military-science-pack", 1}
 }
 
 data.raw.technology["kr-portable-generator"].unit.ingredients = {
@@ -1296,7 +1318,8 @@ data.raw.technology["advanced-radar"].prerequisites = {
   "sp-semiconductor",
   "utility-science-pack",
   "sp-control-unit",
-  "sp-advanced-gearbox"
+  "sp-advanced-gearbox",
+  "kr-radar"
 }
 data.raw.technology["advanced-radar"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},
@@ -1852,7 +1875,9 @@ data.raw.technology["kr-intergalactic-transceiver"].unit.ingredients = {
   {"sp-uniformity-science-pack", 1}
 }
 
+--------------------------------------------------------------------------------
 -- MARK: Krastorio infinite techs
+--------------------------------------------------------------------------------
 table.insert(data.raw.technology["mining-productivity-11"].prerequisites, "sp-geological-science-pack-2")
 table.insert(data.raw.technology["mining-productivity-11"].prerequisites, "sp-chemical-science-pack-2")
 data.raw.technology["mining-productivity-11"].unit.ingredients = {
@@ -1941,7 +1966,46 @@ data.raw.technology["worker-robots-speed-9"].unit.ingredients = {
   {"singularity-tech-card", 1},
 }
 
+data.raw.technology["follower-robot-count-8"].unit.ingredients = {
+  {"sp-automation-science-pack-3", 1},
+  {"sp-logistic-science-pack-3", 1},
+  {"sp-chemical-science-pack-3", 1},
+  {"sp-electronic-science-pack-3", 1},
+  {"sp-geological-science-pack-3", 1},
+  {"sp-material-science-pack-3", 1},
+  {"sp-military-science-pack-3", 1},
+  {"sp-computer-science-pack-3", 1},
+  {"sp-production-science-pack-3", 1},
+  {"sp-nuclear-science-pack-3", 1},
+  {"sp-astronomical-science-pack-3", 1},
+  {"sp-utility-science-pack-3", 1},
+  {"space-science-pack", 1},
+  {"advanced-tech-card", 1},
+  {"matter-tech-card", 1}
+}
+
+data.raw.technology["follower-robot-count-9"].unit.ingredients = {
+  {"sp-automation-science-pack-3", 1},
+  {"sp-logistic-science-pack-3", 1},
+  {"sp-chemical-science-pack-3", 1},
+  {"sp-electronic-science-pack-3", 1},
+  {"sp-geological-science-pack-3", 1},
+  {"sp-material-science-pack-3", 1},
+  {"sp-military-science-pack-3", 1},
+  {"sp-computer-science-pack-3", 1},
+  {"sp-production-science-pack-3", 1},
+  {"sp-nuclear-science-pack-3", 1},
+  {"sp-astronomical-science-pack-3", 1},
+  {"sp-utility-science-pack-3", 1},
+  {"space-science-pack", 1},
+  {"advanced-tech-card", 1},
+  {"matter-tech-card", 1},
+  {"singularity-tech-card", 1}
+}
+
+--------------------------------------------------------------------------------
 -- MARK: aai industry technology changes
+--------------------------------------------------------------------------------
 data.raw.technology["engine"].prerequisites = {"sp-steel-machining"}
 
 data.raw.technology["medium-electric-pole"].prerequisites = {"sp-aluminum-machining", "sp-electronic-science-pack-1"}
