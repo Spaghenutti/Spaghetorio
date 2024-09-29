@@ -86,6 +86,22 @@ util.recipe.change_recipe_ingredients("military-science-pack",
   20,
   30)
 
+util.recipe.change_recipe_ingredients("biters-research-data",
+  {
+    {"poison-capsule", 1},
+    {"piercing-rounds-magazine", 20},
+    {"land-mine", 4},
+    {"concrete-wall", 1}
+  },
+  {
+    {"poison-capsule", 2},
+    {"piercing-rounds-magazine", 30},
+    {"land-mine", 6},
+    {"concrete-wall", 2}
+  },
+  30,
+  45)
+
 util.recipe.change_recipe_ingredients("production-science-pack",
   {
     {"sp-filter", 5},

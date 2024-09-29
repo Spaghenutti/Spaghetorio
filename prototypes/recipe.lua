@@ -2207,8 +2207,7 @@ data:extend({
       {type = "item", name = "sp-phosphorus", amount = 1},
       {type = "item", name = "sp-tungsten-slab", amount = 2},
       {type = "item", name = "sp-insulation-sheet", amount = 2},
-      {type = "item", name = "solid-fuel", amount = 10},
-      {type = "item", name = "rocket-fuel", amount = 16}
+      {type = "item", name = "solid-fuel", amount = 10}
     },
     results = {
       {type = "item", name = "sp-solid-rocket-motor", amount = 1}
@@ -6604,7 +6603,9 @@ data:extend({
     ingredients =
     {
       {"military-science-pack", 20},
-      {"iron-plate", 69}
+      {"combat-shotgun", 2},
+      {"modular-armor", 2},
+      {"gun-turret", 1}
     },
     result_count = 5,
     result = "sp-military-science-pack-2"

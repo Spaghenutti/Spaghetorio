@@ -1005,13 +1005,15 @@ util.recipe.change_recipe_ingredients("tank",
 util.recipe.change_recipe_ingredients("logistic-robot",
   {
     {"flying-robot-frame", 1},
-    {"motor", 1},
+    {"electric-motor", 1},
+    {"advanced-circuit", 3},
     {"battery", 4},
     {"sp-titanium-plate", 2}
   },
   {
     {"flying-robot-frame", 1},
-    {"motor", 2},
+    {"electric-motor", 2},
+    {"advanced-circuit", 5},
     {"battery", 6},
     {"sp-titanium-plate", 4}
   },
@@ -1021,15 +1023,17 @@ util.recipe.change_recipe_ingredients("logistic-robot",
 util.recipe.change_recipe_ingredients("construction-robot",
   {
     {"flying-robot-frame", 1},
-    {"motor", 1},
+    {"electric-motor", 1},
+    {"advanced-circuit", 3},
     {"battery", 4},
-    {"sp-titanium-plate", 2}
+    {"sp-inconel", 2}
   },
   {
     {"flying-robot-frame", 1},
-    {"motor", 2},
+    {"electric-motor", 2},
+    {"advanced-circuit", 5},
     {"battery", 6},
-    {"sp-titanium-plate", 4}
+    {"sp-inconel", 4}
   },
   4,
   6)
@@ -1285,6 +1289,58 @@ util.recipe.change_recipe_ingredients("shotgun-shell",
   2,
   3)
 
+util.recipe.change_recipe_ingredients("rocket-launcher",
+  {
+    {"sp-stainless-steel", 4},
+    {"sp-brass", 1},
+    {"sp-machined-parts", 10},
+    {"sp-graphite", 2},
+    {"sp-bolts", 4}
+  },
+  {
+    {"sp-stainless-steel", 6},
+    {"sp-brass", 2},
+    {"sp-machined-parts", 12},
+    {"sp-graphite", 3},
+    {"sp-bolts", 6}
+  },
+  10,
+  16)
+
+-- Krastorio: {"steel-pump", 1}
+util.recipe.change_recipe_ingredients("flamethrower",
+  {
+    {"sp-stainless-steel", 2},
+    {"sp-brass", 3},
+    {"sp-valve", 1},
+    {"sp-machined-parts", 10},
+    {"sp-flange", 2},
+  },
+  {
+    {"sp-stainless-steel", 6},
+    {"sp-brass", 2},
+    {"sp-valve", 2},
+    {"sp-machined-parts", 12},
+    {"sp-graphite", 3},
+    {"sp-bolts", 6}
+  },
+  10,
+  16)
+
+util.recipe.change_recipe_ingredients("flamethrower-ammo",
+  {
+    {"sp-lead-slab", 3},
+    {"sp-flange", 1},
+    {type = "fluid", name = "crude-oil", amount = 100}
+  },
+  {
+    {"sp-lead-slab", 5},
+    {"sp-flange", 1},
+    {type = "fluid", name = "crude-oil", amount = 150}
+  },
+  5,
+  8)
+
 util.recipe.change_recipe_ingredients("grenade",
   {
     {"iron-stick", 1},
@@ -1317,6 +1373,132 @@ util.recipe.change_recipe_ingredients("poison-capsule",
   },
   8,
   12)
+
+data.raw.recipe["land-mine"].category = "crafting-with-fluid"
+util.recipe.change_recipe_ingredients("land-mine",
+  {
+    {"sp-graphite", 6},
+    {"sp-machined-parts", 12},
+    {"sp-bolts", 4},
+    {"electronic-circuit", 4},
+    {type="fluid", name="sp-sulfamate", amount=40}
+  },
+  {
+    {"sp-graphite", 10},
+    {"sp-machined-parts", 20},
+    {"sp-bolts", 8},
+    {"electronic-circuit", 8},
+    {type="fluid", name="sp-sulfamate", amount=60}
+  },
+  8,
+  12)
+
+util.recipe.change_recipe_ingredients("rocket",
+  {
+    {"advanced-circuit", 1},
+    {"sp-solid-rocket-motor", 1},
+    {"sp-aluminum-sheet", 1},
+    {"explosives", 1}
+  },
+  {
+    {"advanced-circuit", 2},
+    {"sp-solid-rocket-motor", 1},
+    {"sp-aluminum-sheet", 2},
+    {"explosives", 3}
+  },
+  4,
+  6)
+
+util.recipe.change_recipe_ingredients("explosive-rocket",
+  {
+    {"advanced-circuit", 2},
+    {"sp-insulated-wire", 3},
+    {"sp-solid-rocket-motor", 1},
+    {"sp-aluminum-sheet", 1},
+    {"explosives", 5},
+    {"sp-ammonium-paratungstate", 1}
+  },
+  {
+    {"advanced-circuit", 2},
+    {"sp-insulated-wire", 6},
+    {"sp-solid-rocket-motor", 1},
+    {"sp-aluminum-sheet", 2},
+    {"explosives", 7},
+    {"sp-ammonium-paratungstate", 2}
+  },
+  8,
+  12)
+
+-- Base: {"battery", 4}; Krastorio: {"lithium-sulfur-battery", 4}
+util.recipe.change_recipe_ingredients("defender-capsule",
+  {
+    {"flying-robot-frame", 1},
+    {"electric-motor", 1},
+    {"submachine-gun", 1},
+    {"sp-laser", 2},
+    {"advanced-circuit", 5},
+    -- {"battery", 4},
+    {"sp-inconel", 2}
+  },
+  {
+    {"flying-robot-frame", 1},
+    {"electric-motor", 2},
+    {"submachine-gun", 1},
+    {"sp-laser", 4},
+    {"advanced-circuit", 8},
+    -- {"battery", 6},
+    {"sp-inconel", 3}
+  },
+  10,
+  16)
+
+-- Base: {"battery", 6}; Krastorio: {"lithium-sulfur-battery", 6}
+util.recipe.change_recipe_ingredients("distractor-capsule",
+  {
+    {"flying-robot-frame", 3},
+    {"electric-motor", 3},
+    {"combat-shotgun", 3},
+    {"sp-laser", 6},
+    {"advanced-circuit", 6},
+    -- {"battery", 4},
+    {"sp-inconel", 2},
+    {"sp-stainless-steel", 3}
+  },
+  {
+    {"flying-robot-frame", 3},
+    {"electric-motor", 6},
+    {"combat-shotgun", 6},
+    {"sp-laser", 12},
+    {"advanced-circuit", 12},
+    -- {"battery", 6},
+    {"sp-inconel", 3},
+    {"sp-stainless-steel", 4}
+  },
+  10,
+  16)
+
+-- Base: {"battery", 6}; Krastorio: {"lithium-sulfur-battery", 6}
+util.recipe.change_recipe_ingredients("destroyer-capsule",
+ {
+   {"flying-robot-frame", 1},
+   {"electric-engine-unit", 2},
+   {"sp-laser", 10},
+   {"sp-turbine-blade", 12},
+   {"advanced-circuit", 5},
+   -- {"battery", 4},
+   {"sp-inconel", 2}
+ },
+ {
+   {"flying-robot-frame", 1},
+   {"electric-engine-unit", 4},
+   {"sp-laser", 20},
+   {"sp-turbine-blade", 24},
+   {"advanced-circuit", 8},
+   -- {"battery", 6},
+   {"sp-inconel", 3}
+ },
+ 10,
+ 16)
 
 util.recipe.change_recipe_ingredients("light-armor",
   {
@@ -2292,6 +2474,7 @@ util.recipe.change_recipe_ingredients("flamethrower-turret",
     {"sp-inconel", 4},
     {"sp-bolts", 30},
     {"sp-pressure-tube", 10},
+    {"sp-flange", 6},
     {"engine-unit", 5},
     {"pump", 2}
   },
@@ -2300,6 +2483,7 @@ util.recipe.change_recipe_ingredients("flamethrower-turret",
     {"sp-inconel", 10},
     {"sp-bolts", 50},
     {"sp-pressure-tube", 15},
+    {"sp-flange", 10},
     {"engine-unit", 8},
     {"pump", 5}
   },
@@ -2390,6 +2574,9 @@ if not mods["Krastorio2"] then
   table.insert(data.raw.recipe["oil-refinery"].ingredients, {"sp-glass", 20})
   table.insert(data.raw.recipe["battery-mk2-equipment"].ingredients, {"battery", 20})
   table.insert(data.raw.recipe["satellite"].ingredients, {"battery", 20})
+  table.insert(data.raw.recipe["defender-capsule"].ingredients, {"battery", 6})
+  table.insert(data.raw.recipe["distractor-capsule"].ingredients, {"battery", 6})
+  table.insert(data.raw.recipe["destroyer-capsule"].ingredients, {"battery", 6})
   table.insert(data.raw.recipe["sp-geological-science-pack-1"].ingredients, {"sp-sand", 10})
   table.insert(data.raw.recipe["sp-geological-science-pack-1"].ingredients, {"sp-quartz", 5})
   -- table.insert(data.raw.recipe[""].ingredients, {})

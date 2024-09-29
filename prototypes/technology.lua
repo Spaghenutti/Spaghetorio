@@ -2082,20 +2082,19 @@ data:extend({
       },
     },
     prerequisites = {
-      "rocket-fuel"
+      "sp-tungsten-processing",
+      "sp-insulation-sheet"
     },
     unit =
     {
-      count = 400,
+      count = 150,
       ingredients = {
         {"sp-automation-science-pack-2", 1},
         {"sp-logistic-science-pack-2", 1},
         {"sp-material-science-pack-2", 1},
-        {"sp-electronic-science-pack-2", 1},
         {"sp-chemical-science-pack-2", 1},
-        {"sp-computer-science-pack-2", 1},
-        {"production-science-pack", 1},
-        {"utility-science-pack", 1}
+        {"sp-geological-science-pack-2", 1},
+        {"production-science-pack", 1}
       },
       time = 15
     },
@@ -2491,7 +2490,9 @@ data:extend({
         recipe = "sp-insulation-sheet"
       },
     },
-    prerequisites = {"sp-rubber"},
+    prerequisites = {
+      "sp-rubber"
+    },
     unit =
     {
       count = 100,

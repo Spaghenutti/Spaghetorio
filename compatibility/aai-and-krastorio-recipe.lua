@@ -1416,6 +1416,10 @@ table.insert(data.raw.recipe["pumpjack"].ingredients, {"engine-unit", 2})
 table.insert(data.raw.recipe["pumpjack"].ingredients, {"steel-gear-wheel", 8})
 table.insert(data.raw.recipe["oil-refinery"].ingredients, {"glass", 20})
 table.insert(data.raw.recipe["satellite"].ingredients, {"lithium-sulfur-battery", 20})
+table.insert(data.raw.recipe["flamethrower"].ingredients, {"kr-steel-pump", 1})
+table.insert(data.raw.recipe["defender-capsule"].ingredients, {"lithium-sulfur-battery", 6})
+table.insert(data.raw.recipe["distractor-capsule"].ingredients, {"lithium-sulfur-battery", 6})
+table.insert(data.raw.recipe["destroyer-capsule"].ingredients, {"lithium-sulfur-battery", 6})
 
 -- MARK: Add missing ingredients to krastorio items
 table.insert(data.raw.recipe["lithium-chloride"].ingredients, {type = "item", name = "sp-lithium-oxide", amount = 5})
@@ -3629,7 +3633,7 @@ util.recipe.change_recipe_ingredients("industrial-furnace",
   40,
   80)
 
-  util.recipe.change_recipe_ingredients("area-mining-drill",
+util.recipe.change_recipe_ingredients("area-mining-drill",
   {
     {"sp-monocrystal", 4},
     {"sp-ceramic-matrix-composites", 20},
@@ -3650,6 +3654,36 @@ util.recipe.change_recipe_ingredients("industrial-furnace",
   },
   36,
   72)
+
+util.recipe.change_recipe_ingredients("concrete-wall",
+  {
+    {"concrete", 6},
+    {"steel-beam", 2},
+    {"iron-stick", 4}
+  },
+  {
+    {"concrete", 10},
+    {"steel-beam", 3},
+    {"iron-stick", 6}
+  },
+  2,
+  3)
+
+util.recipe.change_recipe_ingredients("steel-wall",
+  {
+    {"concrete", 6},
+    {"steel-beam", 3},
+    {"steel-plate", 12},
+    {"sp-bolts", 12}
+  },
+  {
+    {"concrete", 10},
+    {"steel-beam", 53},
+    {"steel-plate", 24},
+    {"sp-bolts", 20}
+  },
+  5,
+  8)
 
 -- MARK: Remove crushing recipes
 data.raw.recipe["kr-vc-sp-nuclear-waste"] = nil
