@@ -17,6 +17,7 @@ data.raw.technology["jetpack-2"].unit.ingredients = {
   {"military-science-pack", 1}
 }
 
+table.insert(data.raw.technology["jetpack-3"].prerequisites, "military-4")
 table.insert(data.raw.technology["jetpack-3"].prerequisites, "sp-solid-rocket-motor")
 data.raw.technology["jetpack-3"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},
@@ -33,6 +34,7 @@ data.raw.technology["jetpack-3"].unit.ingredients = {
 table.insert(data.raw.technology["jetpack-4"].prerequisites, "sp-advanced-alien-compounds")
 table.insert(data.raw.technology["jetpack-4"].prerequisites, "sp-frictionless-joint")
 table.insert(data.raw.technology["jetpack-4"].prerequisites, "sp-alien-processing")
+table.insert(data.raw.technology["jetpack-4"].prerequisites, "kr-military-5")
 data.raw.technology["jetpack-4"].unit.ingredients = {
   {"sp-automation-science-pack-3", 1},
   {"sp-logistic-science-pack-3", 1},

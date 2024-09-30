@@ -7813,7 +7813,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-vacuum-tube",  -- #ForRegEx# - recipe
-    category = "chemistry",
+    category = "crafting-with-fluid",
     enabled = false,
     energy_required = 5.2,
     ingredients = {

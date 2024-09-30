@@ -3484,7 +3484,8 @@ util.recipe.change_recipe_ingredients("big-imersite-solar-panel-equipment",
     {"imersite-solar-panel-equipment", 6},
     {"sp-superconductor", 12},
     {"sp-titanium-frame", 6},
-    {"sp-nitenol", 14}},
+    {"sp-nitenol", 14}
+  },
   20,
   30)
 
@@ -3507,6 +3508,104 @@ util.recipe.change_recipe_ingredients("nuclear-reactor-equipment",
   },
   30,
   60)
+
+util.recipe.change_recipe_ingredients("personal-submachine-laser-defense-mk1-equipment",
+  {
+    {"laser-turret", 1},
+    {"lithium-sulfur-battery", 5},
+    {"low-density-structure", 5},
+    {"sp-titanium-frame", 2},
+    {"processing-unit", 5},
+    {"sp-heatsink", 2},
+    {"sp-servo-motor", 8}
+  },
+  {
+    {"laser-turret", 2},
+    {"lithium-sulfur-battery", 8},
+    {"low-density-structure", 8},
+    {"sp-titanium-frame", 3},
+    {"processing-unit", 8},
+    {"sp-heatsink", 4},
+    {"sp-servo-motor", 12}
+  },
+  20,
+  30)
+
+util.recipe.change_recipe_ingredients("kr-railgun-turret",
+  {
+    {"sp-ceramic-matrix-composites", 12},
+    {"sp-invar", 10},
+    {"sp-TiAlSn", 6},
+    {"sp-stainless-steel", 20},
+    {"refined-concrete", 20},
+    {"electric-engine-unit", 4},
+    {"sp-spring", 16},
+    {"sp-heavy-gearbox", 4},
+    {"sp-transformer", 4},
+    {"sp-electromagnet", 30},
+    {"sp-capacitor", 50},
+    {"sp-control-unit", 2}
+  },
+  {
+    {"sp-ceramic-matrix-composites", 16},
+    {"sp-invar", 12},
+    {"sp-TiAlSn", 10},
+    {"sp-stainless-steel", 40},
+    {"refined-concrete", 36},
+    {"electric-engine-unit", 6},
+    {"sp-spring", 20},
+    {"sp-heavy-gearbox", 6},
+    {"sp-transformer", 8},
+    {"sp-electromagnet", 40},
+    {"sp-capacitor", 80},
+    {"sp-control-unit", 5}
+  },
+  40,
+  60)
+
+util.recipe.change_recipe_ingredients("basic-railgun-shell",
+  {
+    {"sp-TiAlSn", 3},
+    {"sp-TiNb", 1},
+    {"sp-inconel", 1},
+    {"sp-tungsten-carbide", 1},
+    {"sp-titanium-carbide", 2},
+  },
+  {
+    {"sp-TiAlSn", 5},
+    {"sp-TiNb", 2},
+    {"sp-inconel", 3},
+    {"sp-tungsten-carbide", 3},
+    {"sp-titanium-carbide", 5},
+  },
+  12,
+  20)
+
+util.recipe.change_recipe_ingredients("explosion-railgun-shell",
+  {
+    {"sp-TiAlSn", 3},
+    {"sp-TiNb", 1},
+    {"sp-inconel", 1},
+    {"sp-tungsten-carbide", 1},
+    {"sp-titanium-carbide", 2},
+    {"explosives", 10},
+    {"advanced-circuit", 1},
+    {"sp-spark-plug", 1},
+    {"sp-insulated-wire", 1}
+  },
+  {
+    {"sp-TiAlSn", 5},
+    {"sp-TiNb", 2},
+    {"sp-inconel", 3},
+    {"sp-tungsten-carbide", 3},
+    {"sp-titanium-carbide", 5},
+    {"explosives", 15},
+    {"advanced-circuit", 1},
+    {"sp-spark-plug", 1},
+    {"sp-insulated-wire", 1}
+  },
+  16,
+  24)
 
 -- MARK: AAI Industries Buildings
 util.recipe.change_recipe_ingredients("burner-turbine",

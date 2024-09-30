@@ -982,22 +982,24 @@ util.recipe.change_recipe_ingredients("tank",
   {
     {"sp-heavy-ball-bearing", 20},
     {"engine-unit", 12},
-    {"steel-plate", 40},
+    {"sp-stainless-steel", 40},
     {"sp-steel-wheel", 16},
     {"sp-bolts", 120},
     {"advanced-circuit", 10},
     {"sp-titanium-plate", 16},
-    {"sp-heavy-gearbox", 8}
+    {"sp-heavy-gearbox", 8},
+    {"sp-differential", 4}
   },
   {
     {"sp-heavy-ball-bearing", 32},
     {"engine-unit", 24},
-    {"steel-plate", 60},
+    {"sp-stainless-steel", 60},
     {"sp-steel-wheel", 20},
     {"sp-bolts", 200},
     {"advanced-circuit", 16},
     {"sp-titanium-plate", 32},
-    {"sp-heavy-gearbox", 12}
+    {"sp-heavy-gearbox", 12},
+    {"sp-differential", 16}
   },
   60,
   90)
@@ -1275,6 +1277,31 @@ util.recipe.change_recipe_ingredients("piercing-rounds-magazine",
   3,
   5)
 
+util.recipe.change_recipe_ingredients("uranium-rounds-magazine",
+  {
+    {"uranium-235", 1},
+    {"uranium-238", 20},
+    {"sp-copper-tube", 60},
+    {"sp-spark-plug", 100},
+    {"sp-stainless-steel", 24},
+    {"sp-tungsten-powder", 50},
+    {"sp-phosphorus", 50},
+  },
+  {
+    {"uranium-235", 1},
+    {"uranium-238", 20},
+    {"sp-copper-tube", 100},
+    {"sp-spark-plug", 100},
+    {"sp-stainless-steel", 50},
+    {"sp-tungsten-powder", 100},
+    {"sp-phosphorus", 100},
+  },
+  400,
+  600)
+data.raw.recipe["uranium-rounds-magazine"].results = {
+  {type = "item", name = "uranium-rounds-magazine", amount = 100}
+}
+
 util.recipe.change_recipe_ingredients("shotgun-shell",
   {
     {"iron-stick", 1},
@@ -1428,6 +1455,115 @@ util.recipe.change_recipe_ingredients("explosive-rocket",
   },
   8,
   12)
+
+util.recipe.change_recipe_ingredients("cannon-shell",
+  {
+    {"sp-tungsten-slab", 1},
+    {"sp-tungsten-carbide", 1},
+    {"steel-plate", 2},
+    {"sp-tungsten-powder", 1}
+  },
+  {
+    {"sp-tungsten-slab", 2},
+    {"sp-tungsten-carbide", 1},
+    {"steel-plate", 4},
+    {"sp-tungsten-powder", 1}
+  },
+  8,
+  12)
+
+data.raw.recipe["explosive-cannon-shell"].category = "crafting-with-fluid"
+util.recipe.change_recipe_ingredients("explosive-cannon-shell",
+  {
+    {"sp-tungsten-slab", 1},
+    {"sp-tungsten-carbide", 1},
+    {"steel-plate", 2},
+    {"sp-tungsten-powder", 2},
+    {"sp-vacuum-tube", 1},
+    {type = "fluid", name = "sp-sodium-hydroxide", amount = "10"}
+  },
+  {
+    {"sp-tungsten-slab", 2},
+    {"sp-tungsten-carbide", 1},
+    {"steel-plate", 4},
+    {"sp-tungsten-powder", 3},
+    {"sp-vacuum-tube", 1},
+    {type = "fluid", name = "sp-sodium-hydroxide", amount = "15"}
+  },
+  10,
+  16)
+
+data.raw.recipe["artillery-shell"].category = "crafting-with-fluid"
+util.recipe.change_recipe_ingredients("artillery-shell",
+  {
+    {"sp-tungsten-carbide", 10},
+    {"sp-spark-plug", 1},
+    {"sp-stainless-steel", 3},
+    {"sp-tungsten-powder", 5},
+    {"sp-invar", 2},
+    {"sp-antenna-chip", 1},
+    {"explosives", 8}
+  },
+  {
+    {"sp-tungsten-carbide", 20},
+    {"sp-spark-plug", 1},
+    {"sp-stainless-steel", 6},
+    {"sp-tungsten-powder", 8},
+    {"sp-invar", 3},
+    {"sp-antenna-chip", 1},
+    {"explosives", 12}
+  },
+  16,
+  24)
+
+util.recipe.change_recipe_ingredients("uranium-cannon-shell",
+  {
+    {"uranium-238", 2},
+    {"advanced-circuit", 1},
+    {"sp-spark-plug", 1},
+    {"sp-insulated-wire", 2},
+    {"sp-stainless-steel", 2},
+    {"sp-aluminum-brass", 1},
+    {"sp-tungsten-powder", 1}
+  },
+  {
+    {"uranium-238", 3},
+    {"advanced-circuit", 1},
+    {"sp-spark-plug", 1},
+    {"sp-insulated-wire", 2},
+    {"sp-stainless-steel", 3},
+    {"sp-aluminum-brass", 2},
+    {"sp-tungsten-powder", 2}
+  },
+  12,
+  16)
+
+util.recipe.change_recipe_ingredients("explosive-uranium-cannon-shell",
+  {
+    {"uranium-235", 1},
+    {"uranium-238", 60},
+    {"advanced-circuit", 30},
+    {"sp-spark-plug", 30},
+    {"sp-insulated-wire", 60},
+    {"sp-stainless-steel", 60},
+    {"sp-aluminum-brass", 30},
+    {"sp-tungsten-powder", 60}
+  },
+  {
+    {"uranium-235", 1},
+    {"uranium-238", 60},
+    {"advanced-circuit", 30},
+    {"sp-spark-plug", 1},
+    {"sp-insulated-wire", 60},
+    {"sp-stainless-steel", 90},
+    {"sp-aluminum-brass", 60},
+    {"sp-tungsten-powder", 60}
+  },
+  12,
+  16)
+data.raw.recipe["explosive-uranium-cannon-shell"].results = {
+  {type = "item", name = "explosive-uranium-cannon-shell", amount = 30}
+}
 
 -- Base: {"battery", 4}; Krastorio: {"lithium-sulfur-battery", 4}
 util.recipe.change_recipe_ingredients("defender-capsule",
@@ -1656,22 +1792,24 @@ util.recipe.change_recipe_ingredients("energy-shield-equipment",
 
 util.recipe.change_recipe_ingredients("energy-shield-mk2-equipment",
   {
-    {"sp-integrated-circuit", 3},
-    {"sp-circuit-board", 1},
+    {"processing-unit", 2},
     {"low-density-structure", 5},
     {"sp-composites", 5},
     {"sp-titanium-frame", 2},
+    {"sp-insulated-wire", 5},
     {"sp-capacitor", 10},
-    {"sp-neodymium-magnet", 6}
+    {"sp-neodymium-magnet", 6},
+    {"sp-servo-motor", 6}
   },
   {
-    {"sp-integrated-circuit", 5},
-    {"sp-circuit-board", 2},
-    {"low-density-structure", 10},
-    {"sp-composites", 10},
-    {"sp-titanium-frame", 4},
-    {"sp-capacitor", 10},
-    {"sp-neodymium-magnet", 6}
+    {"processing-unit", 3},
+    {"low-density-structure", 8},
+    {"sp-composites", 8},
+    {"sp-titanium-frame", 3},
+    {"sp-insulated-wire", 8},
+    {"sp-capacitor", 16},
+    {"sp-neodymium-magnet", 8},
+    {"sp-servo-motor", 10}
   },
   20,
   30)
@@ -2493,22 +2631,22 @@ util.recipe.change_recipe_ingredients("flamethrower-turret",
 data.raw.recipe["artillery-turret"].category = "crafting-with-fluid"
 util.recipe.change_recipe_ingredients("artillery-turret",
   {
-    {"steel-plate", 80},
+    {"sp-stainless-steel", 80},
+    {"sp-aluminum-brass", 20},
     {"concrete", 60},
     {"sp-bolts", 200},
-    {"sp-circuit-board", 5},
+    {"processing-unit", 5},
     {"sp-optical-sensor", 2},
-    {"sp-lens", 5},
     {"radar", 1},
     {type = "fluid", name = "lubricant", amount = 100}
   },
   {
-    {"steel-plate", 100},
+    {"sp-stainless-steel", 100},
+    {"sp-aluminum-brass", 40},
     {"concrete", 100},
     {"sp-bolts", 400},
-    {"sp-circuit-board", 8},
-    {"sp-optical-sensor", 4},
-    {"sp-lens", 8},
+    {"processing-unit", 8},
+    {"sp-optical-sensor", 3},
     {"radar", 1},
     {type = "fluid", name = "lubricant", amount = 500}
   },
@@ -2518,18 +2656,20 @@ util.recipe.change_recipe_ingredients("artillery-turret",
 util.recipe.change_recipe_ingredients("artillery-targeting-remote",
   {
     {"processing-unit", 1},
-    {"sp-circuit-board", 1},
     {"sp-antenna-chip", 1},
-    {"sp-coil", 2}
+    {"sp-coil", 2},
+    {"sp-insulated-wire", 2},
+    {"plastic-bar", 2}
   },
   {
     {"processing-unit", 2},
-    {"sp-circuit-board", 1},
     {"sp-antenna-chip", 2},
-    {"sp-coil", 5}
+    {"sp-coil", 5},
+    {"sp-insulated-wire", 3},
+    {"plastic-bar", 4}
   },
-  1,
-  2)
+  2,
+  3)
 
 -- util.recipe.change_recipe_ingredients("",
 --   {},

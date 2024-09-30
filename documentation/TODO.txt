@@ -86,6 +86,7 @@ Low prio
   - Unlock much earlier filter inserter
   - Add dark matter, quantized matter, polarized matter, dark energy as fluids
   - disable handcrafting for all alien items
+  - Add personal roboports MK3 and MK4
 
 
 Future changes
