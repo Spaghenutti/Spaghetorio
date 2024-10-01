@@ -5,19 +5,13 @@ local util = require("data-util")
 --    - "sp-rubber"
 --    - "sp-urea"
 --    - "sp-composites"
---    - 
---    - 
---    - 
---    - 
---    - 
+
 --  - add uses to:
 --    - "sp-methyl-tert-butyl-ether" (fluid)
 --    - "sp-sulfamate" (fluid) (already used for mining)
 --    - "sp-perchloric-acid" (fluid) (already used for mining)
 --    - "sp-laser"
---    - 
---    - 
---    - 
+
 --    - "sp-antimony"
 --    - "sp-calcium"
 --    - "sp-liquid-sodium"
@@ -42,8 +36,6 @@ local util = require("data-util")
 --    - "sp-zirconia"
 --    - "sp-zirconium-rod"
 --    - "stone-tablet" (only k2)
-
-
 
 --    - "sp-brass"
 --    - "sp-duralumin"
@@ -106,6 +98,7 @@ local util = require("data-util")
 --    - "sp-insulation-sheet"
 --    - "sp-train-boige"
 --    - "sp-cybernetics"
+
 
 data:extend({
   {
@@ -3768,6 +3761,39 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-productivity-module-4", amount = 1}
+    }
+  },
+  ------------------------------------------------------------------------------
+  -- MARK: Equipment
+  ------------------------------------------------------------------------------
+  {
+    type = "recipe",
+    name = "sp-personal-roboport-mk3-equipment",  -- #ForRegEx# - recipe
+    icon_size = 64,
+    mip_maps = 4,
+    category = "intermediate-smelting",  -- Krastorio: category = "advanced-smelting"
+    enabled = false,
+    energy_required = 69,
+    ingredients = {
+      {type = "item", name = "sp-blunagium-bar", amount = 69},
+    },
+    results = {
+      {type = "item", name = "sp-personal-roboport-mk3-equipment", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-personal-roboport-mk4-equipment",  -- #ForRegEx# - recipe
+    icon_size = 64,
+    mip_maps = 4,
+    category = "intermediate-smelting",  -- Krastorio: category = "advanced-smelting"
+    enabled = false,
+    energy_required = 69,
+    ingredients = {
+      {type = "item", name = "sp-blunagium-bar", amount = 69},
+    },
+    results = {
+      {type = "item", name = "sp-personal-roboport-mk4-equipment", amount = 1}
     }
   },
   ------------------------------------------------------------------------------

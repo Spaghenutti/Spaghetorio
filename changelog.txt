@@ -3,6 +3,7 @@ Version: 0.1.4
 Date: 2024-09-29
   Bugfixes:
     - Updated military tech tree and recipes
+    - Added personal roboports mk3 and mk4
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.3
 Date: 2024-09-28

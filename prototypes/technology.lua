@@ -4095,6 +4095,87 @@ data:extend({
     },
     order = "a-h-a"
   },
+  {
+    type = "technology",
+    name = "sp-personal-roboport-mk3-equipment",  -- #ForRegEx# - technology
+    icon_size = 128,
+    icon = "__Spaghetorio__/graphics/equipment/hr-personal-roboport-mk3-equipment.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-personal-roboport-mk3-equipment"
+      }
+    },
+    prerequisites = {
+      "sp-frictionless-joint",
+      "sp-alien-processing"
+    },
+    unit =
+    {
+      count = 500,
+      ingredients = {
+        {"sp-automation-science-pack-3", 1},
+        {"sp-logistic-science-pack-3", 1},
+        {"sp-chemical-science-pack-3", 1},
+        {"sp-electronic-science-pack-3", 1},
+        {"sp-geological-science-pack-3", 1},
+        {"sp-material-science-pack-3", 1},
+        {"sp-military-science-pack-3", 1},
+        {"sp-computer-science-pack-3", 1},
+        {"sp-production-science-pack-3", 1},
+        {"sp-nuclear-science-pack-3", 1},
+        {"sp-astronomical-science-pack-3", 1},
+        {"sp-utility-science-pack-3", 1},
+        {"space-science-pack", 1},
+        -- {"matter-tech-card", 1},
+        -- {"advanced-tech-card", 1}
+      },
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-personal-roboport-mk4-equipment",  -- #ForRegEx# - technology
+    icon_size = 128,
+    icon = "__Spaghetorio__/graphics/equipment/hr-personal-roboport-mk4-equipment.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-personal-roboport-mk4-equipment"
+      }
+    },
+    prerequisites = {
+      "sp-frictionless-joint",
+      "sp-alien-processing"
+    },
+    unit =
+    {
+      count = 500,
+      ingredients = {
+        {"sp-automation-science-pack-3", 1},
+        {"sp-logistic-science-pack-3", 1},
+        {"sp-chemical-science-pack-3", 1},
+        {"sp-electronic-science-pack-3", 1},
+        {"sp-geological-science-pack-3", 1},
+        {"sp-material-science-pack-3", 1},
+        {"sp-military-science-pack-3", 1},
+        {"sp-computer-science-pack-3", 1},
+        {"sp-production-science-pack-3", 1},
+        {"sp-nuclear-science-pack-3", 1},
+        {"sp-astronomical-science-pack-3", 1},
+        {"sp-utility-science-pack-3", 1},
+        {"space-science-pack", 1},
+        -- {"matter-tech-card", 1},
+        -- {"advanced-tech-card", 1},
+        -- {"singularity-tech-card", 1}
+      },
+      time = 15
+    },
+    order = "a-h-a"
+  },
   ------------------------------------------------------------------------------
   -- MARK: Military
   ------------------------------------------------------------------------------

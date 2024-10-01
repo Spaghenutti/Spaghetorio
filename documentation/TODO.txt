@@ -87,6 +87,10 @@ Low prio
   - Add dark matter, quantized matter, polarized matter, dark energy as fluids
   - disable handcrafting for all alien items
   - Add personal roboports MK3 and MK4
+  - Add uses to deuterium
+  - Add uses antimatter (icon already exists)
+  - Change chronomatter to fluid
+  - Add dark matter and dark energy as fluid
 
 
 Future changes

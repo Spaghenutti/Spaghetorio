@@ -4119,6 +4119,29 @@ data:extend({
     order = "a[corrupted-acrosphere-4]",
     stack_size = 1
   },
+  -- MARK: equipment
+  {
+    type = "item",
+    name = "sp-personal-roboport-mk3-equipment",
+    icon = "__Spaghetorio__/graphics/equipment/personal-roboport-mk3-equipment.png",
+    icon_size = 64, icon_mipmaps = 4,
+    placed_as_equipment_result = "sp-personal-roboport-mk3-equipment",
+    subgroup = "equipment",
+    order = "e[robotics]-c[personal-roboport-mk3-equipment]",
+    default_request_amount = 1,
+    stack_size = 20
+  },
+  {
+    type = "item",
+    name = "sp-personal-roboport-mk4-equipment",
+    icon = "__Spaghetorio__/graphics/equipment/personal-roboport-mk4-equipment.png",
+    icon_size = 64, icon_mipmaps = 4,
+    placed_as_equipment_result = "sp-personal-roboport-mk4-equipment",
+    subgroup = "equipment",
+    order = "e[robotics]-d[personal-roboport-mk4-equipment]",
+    default_request_amount = 1,
+    stack_size = 20
+  },
 })
 
 if not mods["Krastorio2"] then
