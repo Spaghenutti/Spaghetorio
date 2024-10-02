@@ -2308,7 +2308,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-advanced-processing-unit",  -- #ForRegEx# - recipe
-    category = "crafting",
+    category = "crafting-with-fluid",
     enabled = false,
     energy_required = 8,
     ingredients = {
@@ -2317,7 +2317,8 @@ data:extend({
       {type = "item", name = "sp-memory-chip", amount = 4},
       {type = "item", name = "sp-processor", amount = 2},
       {type = "item", name = "sp-integrated-circuit", amount = 5},
-      {type = "item", name = "sp-heatsink", amount = 1}
+      {type = "item", name = "sp-heatsink", amount = 1},
+      {type = "fluid", name = "sp-epoxy", amount = 5}
     },
     results = {
       {type = "item", name = "sp-advanced-processing-unit", amount = 1}

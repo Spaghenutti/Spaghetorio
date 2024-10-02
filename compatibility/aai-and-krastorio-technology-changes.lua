@@ -755,6 +755,8 @@ data.raw.technology["follower-robot-count-7"].unit.ingredients = {
   {"matter-tech-card", 1}
 }
 
+table.insert(data.raw.technology["spidertron"].prerequisites, "kr-military-5")
+
 --------------------------------------------------------------------------------
 -- MARK: Krastorio technology changes
 --------------------------------------------------------------------------------
@@ -1104,6 +1106,7 @@ table.insert(data.raw.technology["kr-fusion-energy"].prerequisites, "sp-supercon
 table.insert(data.raw.technology["kr-fusion-energy"].prerequisites, "sp-crystal-growing")
 table.insert(data.raw.technology["kr-fusion-energy"].prerequisites, "sp-neodymium-magnet")
 table.insert(data.raw.technology["kr-fusion-energy"].prerequisites, "sp-nuclear-science-pack-3")
+table.insert(data.raw.technology["kr-fusion-energy"].effects, {type = "unlock-recipe", recipe = "sp-deuterium"})
 data.raw.technology["kr-fusion-energy"].unit.ingredients = {
   {"sp-automation-science-pack-3", 1},
   {"sp-logistic-science-pack-3", 1},
@@ -1951,6 +1954,21 @@ data.raw.technology["kr-energy-shield-mk4-equipment"].unit.ingredients = {
   {"space-science-pack", 1},
   {"matter-tech-card", 1},
   {"advanced-tech-card", 1}
+}
+
+table.insert(data.raw.technology["kr-military-5"].prerequisites, "kr-fusion-energy")
+data.raw.technology["kr-military-5"].unit.ingredients = {
+  {"sp-automation-science-pack-3", 1},
+  {"sp-logistic-science-pack-3", 1},
+  {"sp-chemical-science-pack-3", 1},
+  {"sp-electronic-science-pack-3", 1},
+  {"sp-geological-science-pack-3", 1},
+  {"sp-astronomical-science-pack-2", 1},
+  {"sp-material-science-pack-3", 1},
+  {"sp-military-science-pack-3", 1},
+  {"sp-nuclear-science-pack-3", 1},
+  {"sp-computer-science-pack-3", 1},
+  {"utility-science-pack", 1},
 }
 
 table.insert(data.raw.technology["kr-personal-laser-defense-mk2-equipment"].prerequisites, "kr-military-5")

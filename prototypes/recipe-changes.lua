@@ -1316,6 +1316,22 @@ util.recipe.change_recipe_ingredients("shotgun-shell",
   2,
   3)
 
+util.recipe.change_recipe_ingredients("piercing-shotgun-shell",
+  {
+    {"sp-stainless-steel", 1},
+    {"sp-tungsten-powder", 1},
+    {"sp-graphite", 1},
+    {"sp-ceramics", 2}
+  },
+  {
+    {"sp-stainless-steel", 2},
+    {"sp-tungsten-powder", 2},
+    {"sp-graphite", 1},
+    {"sp-ceramics", 3}
+  },
+  2,
+  3)
+
 util.recipe.change_recipe_ingredients("rocket-launcher",
   {
     {"sp-stainless-steel", 4},
@@ -2082,6 +2098,87 @@ util.recipe.change_recipe_ingredients("rocket-part",
     {"sp-insulated-wire", 240}},
   80,
   160)
+
+-- Krastorio: {"ai-core", 8},
+-- Krastorio: {"lithium-sulfur-battery", 60},
+util.recipe.change_recipe_ingredients("spidertron",
+  {
+    {"low-density-structure", 100},
+    {"sp-duralumin", 80},
+    {"sp-TiAlSn", 16},
+    {"sp-tungsten-carbide", 16},
+    {"sp-heavy-gearbox", 16},
+    {"sp-heavy-ball-bearing", 80},
+    {"electric-engine-unit", 16},
+    {"sp-control-unit", 20},
+    {"sp-cybernetics", 32},
+    {"sp-glass-fiber", 100},
+    {"sp-servo-motor", 32},
+    {"sp-dynamo", 2},
+  },
+  {
+    {"low-density-structure", 150},
+    {"sp-duralumin", 120},
+    {"sp-TiAlSn", 32},
+    {"sp-tungsten-carbide", 16},
+    {"sp-heavy-gearbox", 24},
+    {"sp-heavy-ball-bearing", 112},
+    {"electric-engine-unit", 24},
+    {"sp-control-unit", 40},
+    {"sp-cybernetics", 64},
+    {"sp-glass-fiber", 160},
+    {"sp-servo-motor", 48},
+    {"sp-dynamo", 4},
+  },
+  120,
+  180)
+
+data.raw.recipe["spidertron-remote"].category = "crafting-with-fluid"
+util.recipe.change_recipe_ingredients("spidertron-remote",
+  {
+    {"sp-titanium-frame", 1},
+    {"sp-control-unit", 1},
+    {"sp-antenna-chip", 1},
+    {"sp-insulated-wire", 1},
+    {type = "fluid", name = "sp-epoxy", amount = 5},
+  },
+  {
+    {"sp-titanium-frame", 1},
+    {"sp-control-unit", 2},
+    {"sp-antenna-chip", 1},
+    {"sp-insulated-wire", 2},
+    {type = "fluid", name = "sp-epoxy", amount = 8},
+  },
+  8,
+  12)
+
+util.recipe.change_recipe_ingredients("atomic-bomb",
+  {
+    {"rocket-control-unit", 1},
+    {"sp-solid-rocket-motor", 1},
+    {"explosives", 8},
+    {"uranium-235", 10},
+    {"uranium-238", 20},
+    {"sp-titanium-plate", 6},
+    {"sp-aluminum-brass", 2},
+    {"sp-advanced-processing-unit", 2},
+    {"sp-insulated-wire", 16},
+    {"sp-servo-motor", 6},
+  },
+  {
+    {"rocket-control-unit", 2},
+    {"sp-solid-rocket-motor", 1},
+    {"explosives", 12},
+    {"uranium-235", 12},
+    {"uranium-238", 30},
+    {"sp-titanium-plate", 10},
+    {"sp-aluminum-brass", 3},
+    {"sp-advanced-processing-unit", 4},
+    {"sp-insulated-wire", 20},
+    {"sp-servo-motor", 12},
+  },
+  20,
+  30)
 
 --------------------------------------------------------------------------------
 -- MARK: Buildings

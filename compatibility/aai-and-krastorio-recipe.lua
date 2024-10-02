@@ -289,11 +289,11 @@ data:extend({
   {
     type = "recipe",
     name = "sp-deuterium",  -- #ForRegEx# - recipe
-    icon = "__Spaghetorio__/graphics/dummy/dummy-recipe-default.png",
+    icon = "__Spaghetorio__/graphics/icons/deuterium.png",
     icon_size = 64,
     mip_maps = 4,
     category = "electrolysis",
-    subgroup = "raw-resource",
+    subgroup = "fluid-recipes",
     enabled = false,
     energy_required = 6,
     ingredients = {
@@ -308,7 +308,7 @@ data:extend({
     type = "recipe",
     name = "sp-wood-from-urea",  -- #ForRegEx# - recipe
     icons = util.icon.overlay_small_icon("__Krastorio2Assets__/icons/recipes/wood-plus.png", 64,
-                                    "__Spaghetorio__/graphics/icons/urea.png", 64),
+                                         "__Spaghetorio__/graphics/icons/urea.png", 64),
     category = "smelting",
     enabled = false,
     energy_required = 75,
@@ -349,7 +349,7 @@ data:extend({
     type = "recipe",
     name = "sp-glass-from-calcium",  -- #ForRegEx# - recipe
     icons = util.icon.overlay_small_icon("__Krastorio2Assets__/icons/items/glass.png", 64,
-                                    "__Spaghetorio__/graphics/icons/calcium.png", 64),
+                                         "__Spaghetorio__/graphics/icons/calcium.png", 64),
     category = "smelting",
     enabled = false,
     hide_from_player_crafting = true,
@@ -367,9 +367,9 @@ data:extend({
     name = "sp-separate-electronic-components",  -- #ForRegEx# - recipe
     icon_size = 64,
     icons = util.icon.combine_four_icons("__Spaghetorio__/graphics/icons/capacitor.png", 64, nil,
-                                    "__Spaghetorio__/graphics/icons/transistor.png", 64, nil,
-                                    "__Spaghetorio__/graphics/icons/resistor.png", 64, nil,
-                                    "__Spaghetorio__/graphics/icons/vacuum-tube.png", 64, nil),
+                                         "__Spaghetorio__/graphics/icons/transistor.png", 64, nil,
+                                         "__Spaghetorio__/graphics/icons/resistor.png", 64, nil,
+                                         "__Spaghetorio__/graphics/icons/vacuum-tube.png", 64, nil),
     category = "crafting",
     subgroup = "electronic-optical-component",
     enabled = false,
@@ -1421,6 +1421,8 @@ table.insert(data.raw.recipe["flamethrower"].ingredients, {"kr-steel-pump", 1})
 table.insert(data.raw.recipe["defender-capsule"].ingredients, {"lithium-sulfur-battery", 6})
 table.insert(data.raw.recipe["distractor-capsule"].ingredients, {"lithium-sulfur-battery", 6})
 table.insert(data.raw.recipe["destroyer-capsule"].ingredients, {"lithium-sulfur-battery", 6})
+table.insert(data.raw.recipe["spidertron"].ingredients, {"ai-core", 8})
+table.insert(data.raw.recipe["spidertron"].ingredients, {"lithium-sulfur-battery", 60})
 
 -- MARK: Add missing ingredients to krastorio items
 table.insert(data.raw.recipe["lithium-chloride"].ingredients, {type = "item", name = "sp-lithium-oxide", amount = 5})
@@ -3557,6 +3559,29 @@ util.recipe.change_recipe_ingredients("nuclear-reactor-equipment",
   30,
   60)
 
+data.raw.recipe["personal-laser-defense-mk2-equipment"].category = "crafting-with-fluid"
+util.recipe.change_recipe_ingredients("personal-laser-defense-mk2-equipment",
+  {
+    {"sp-advanced-processing-unit", 8},
+    {"sp-titanium-frame", 3},
+    {"sp-laser", 8},
+    {"sp-vacuum-tube", 6},
+    {"sp-capacitor", 12},
+    {"lithium-sulfur-battery", 8},
+    {type = "fluid", name = "sp-helium", amount = 5}
+  },
+  {
+    {"sp-advanced-processing-unit", 12},
+    {"sp-titanium-frame", 4},
+    {"sp-laser", 12},
+    {"sp-vacuum-tube", 16},
+    {"sp-capacitor", 20},
+    {"lithium-sulfur-battery", 12},
+    {type = "fluid", name = "sp-helium", amount = 8}
+  },
+  12,
+  20)
+
 util.recipe.change_recipe_ingredients("personal-submachine-laser-defense-mk1-equipment",
   {
     {"laser-turret", 1},
@@ -3575,6 +3600,28 @@ util.recipe.change_recipe_ingredients("personal-submachine-laser-defense-mk1-equ
     {"processing-unit", 8},
     {"sp-heatsink", 4},
     {"sp-servo-motor", 12}
+  },
+  20,
+  30)
+
+util.recipe.change_recipe_ingredients("personal-submachine-laser-defense-mk2-equipment",
+  {
+    {"sp-laser", 4},
+    {"lithium-sulfur-battery", 8},
+    {"low-density-structure", 5},
+    {"sp-TiNb", 4},
+    {"sp-advanced-processing-unit", 5},
+    {"sp-glass-fiber", 4},
+    {"sp-electromagnet", 6}
+  },
+  {
+    {"sp-laser", 6},
+    {"lithium-sulfur-battery", 12},
+    {"low-density-structure", 10},
+    {"sp-TiNb", 5},
+    {"sp-advanced-processing-unit", 10},
+    {"sp-glass-fiber", 8},
+    {"sp-electromagnet", 12}
   },
   20,
   30)
@@ -3680,6 +3727,154 @@ util.recipe.change_recipe_ingredients("imersite-night-vision-equipment",
   },
   16,
   24)
+
+util.recipe.change_recipe_ingredients("impulse-rifle",
+  {
+    {"low-density-structure", 5},
+    {"sp-niobium-steel", 2},
+    {"sp-niobium-tin", 1},
+    {"sp-titanium-nitride", 2},
+    {"sp-laser", 1},
+    {"sp-advanced-processing-unit", 2},
+    {"sp-neodymium-magnet", 4}
+  },
+  {
+    {"low-density-structure", 6},
+    {"sp-niobium-steel", 3},
+    {"sp-niobium-tin", 2},
+    {"sp-titanium-nitride", 3},
+    {"sp-laser", 1},
+    {"sp-advanced-processing-unit", 4},
+    {"sp-neodymium-magnet", 6}
+  },
+  20,
+  30)
+
+data.raw.recipe["impulse-rifle-ammo"].category = "crafting-with-fluid"
+util.recipe.change_recipe_ingredients("impulse-rifle-ammo",
+  {
+    {"imersite-powder", 3},
+    {"sp-tungsten-powder", 1},
+    {"sp-niobium-steel", 1},
+    {type = "fluid", name = "sp-deuterium", amount = 5}
+  },
+  {
+    {"imersite-powder", 5},
+    {"sp-tungsten-powder", 2},
+    {"sp-niobium-steel", 1},
+    {type = "fluid", name = "sp-deuterium", amount = 10}
+  },
+  4,
+  6)
+
+data.raw.recipe["imersite-rounds-magazine"].category = "crafting-with-fluid"
+util.recipe.change_recipe_ingredients("imersite-rounds-magazine",
+  {
+    {"imersite-crystal", 1},
+    {"sp-duralumin", 1},
+    {"sp-titanium-nitride", 1},
+    {"sp-antimony", 1},
+    {type = "fluid", name = "sp-deuterium", amount = 3}
+  },
+  {
+    {"imersite-crystal", 1},
+    {"sp-duralumin", 2},
+    {"sp-titanium-nitride", 1},
+    {"sp-antimony", 2},
+    {type = "fluid", name = "sp-deuterium", amount = 5}
+  },
+  3,
+  5)
+
+util.recipe.change_recipe_ingredients("heavy-rocket-launcher",
+  {
+    {"sp-niobium-steel", 6},
+    {"sp-duralumin", 2},
+    {"sp-titanium-carbide", 2},
+    {"sp-laser", 1},
+    {"sp-advanced-processing-unit", 2},
+    {"sp-spark-plug", 1},
+    {"sp-electromagnet", 6}
+  },
+  {
+    {"sp-niobium-steel", 10},
+    {"sp-duralumin", 3},
+    {"sp-titanium-carbide", 4},
+    {"sp-laser", 1},
+    {"sp-advanced-processing-unit", 4},
+    {"sp-spark-plug", 1},
+    {"sp-electromagnet", 10}
+  },
+  30,
+  45)
+
+util.recipe.change_recipe_ingredients("heavy-rocket",
+  {
+    {"sp-solid-rocket-motor", 1},
+    {"rocket-control-unit", 1},
+    {"explosives", 8},
+    {"sp-titanium-plate", 2},
+    {"sp-advanced-processing-unit", 2},
+    {"sp-insulated-wire", 2},
+    {"sp-servo-motor", 6}
+  },
+  {
+    {"sp-solid-rocket-motor", 1},
+    {"rocket-control-unit", 1},
+    {"explosives", 12},
+    {"sp-titanium-plate", 3},
+    {"sp-advanced-processing-unit", 4},
+    {"sp-insulated-wire", 3},
+    {"sp-servo-motor", 12}
+  },
+  15,
+  20)
+
+util.recipe.change_recipe_ingredients("nuclear-artillery-shell",
+  {
+    {"sp-TiAlSn", 2},
+    {"sp-niobium-steel", 5},
+    {"sp-titanium-carbide", 5},
+    {"explosives", 8},
+    {"uranium-235", 6},
+    {"uranium-238", 14},
+    {"sp-advanced-processing-unit", 2},
+    {"sp-insulated-wire", 16}
+  },
+  {
+    {"sp-TiAlSn", 3},
+    {"sp-niobium-steel", 8},
+    {"sp-titanium-carbide", 6},
+    {"explosives", 12},
+    {"uranium-235", 10},
+    {"uranium-238", 24},
+    {"sp-advanced-processing-unit", 4},
+    {"sp-insulated-wire", 24}
+  },
+  15,
+  20)
+
+util.recipe.change_recipe_ingredients("energy-shield-mk3-equipment",
+  {
+    {"sp-advanced-processing-unit", 2},
+    {"low-density-structure", 5},
+    {"sp-titanium-frame", 2},
+    {"sp-kevlar", 6},
+    {"sp-carbon-nanotubes", 12},
+    {"sp-glass-fiber", 5},
+    {"lithium-sulfur-battery", 10}
+  },
+  {
+    {"sp-advanced-processing-unit", 3},
+    {"low-density-structure", 12},
+    {"sp-titanium-frame", 4},
+    {"sp-kevlar", 10},
+    {"sp-carbon-nanotubes", 20},
+    {"sp-glass-fiber", 8},
+    {"lithium-sulfur-battery", 20}
+  },
+  20,
+  30)
 
 -- MARK: AAI Industries Buildings
 util.recipe.change_recipe_ingredients("burner-turbine",

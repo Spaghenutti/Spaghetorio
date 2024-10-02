@@ -1052,6 +1052,34 @@ data.raw.technology["uranium-ammo"].unit.ingredients = {
   {"utility-science-pack", 1},
 }
 
+data.raw.technology["spidertron"].unit.ingredients = {
+  {"sp-automation-science-pack-3", 1},
+  {"sp-logistic-science-pack-3", 1},
+  {"sp-chemical-science-pack-3", 1},
+  {"sp-electronic-science-pack-3", 1},
+  {"sp-geological-science-pack-3", 1},
+  {"sp-astronomical-science-pack-2", 1},
+  {"sp-material-science-pack-3", 1},
+  {"sp-military-science-pack-3", 1},
+  {"sp-nuclear-science-pack-3", 1},
+  {"sp-computer-science-pack-3", 1},
+  {"utility-science-pack", 1},
+}
+
+data.raw.technology["atomic-bomb"].unit.ingredients = {
+  {"sp-automation-science-pack-3", 1},
+  {"sp-logistic-science-pack-3", 1},
+  {"sp-chemical-science-pack-3", 1},
+  {"sp-electronic-science-pack-3", 1},
+  {"sp-geological-science-pack-3", 1},
+  {"sp-astronomical-science-pack-2", 1},
+  {"sp-material-science-pack-3", 1},
+  {"sp-military-science-pack-3", 1},
+  {"sp-nuclear-science-pack-3", 1},
+  {"sp-computer-science-pack-3", 1},
+  {"utility-science-pack", 1},
+}
+
 --------------------------------------------------------------------------------
 -- MARK: Infinite techs
 --------------------------------------------------------------------------------

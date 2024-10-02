@@ -218,7 +218,7 @@ Basic Intermediates
 			- alnico-magnet (Aluminium (Al), Nickel (Ni), Cobalt (Co))
 			+r neodymium-magnet (Neodymium Iron Boron (NdFeB))
 			- samarium-cobalt magnets (SmCo magnets)
-		+r electro-magnet (wire around iron rod)
+		+r electromagnet (wire around iron rod)
 	+r superconductor
   +r cement
   +r ceramic
