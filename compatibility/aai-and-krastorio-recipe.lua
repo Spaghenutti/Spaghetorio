@@ -1834,7 +1834,31 @@ util.recipe.change_recipe_ingredients("lithium-sulfur-battery",
   4,
   6)
 
-  util.recipe.change_recipe_ingredients("imersium-plate",
+util.recipe.change_recipe_ingredients("ai-core",
+  {
+    {"sp-glass-fiber", 6},
+    {"sp-TiNb", 2},
+    {"sp-superconductor", 2},
+    {"sp-processor", 20},
+    {"sp-quantum-data-plane", 1},
+    {"sp-circuit-board", 5},
+    {"imersite-crystal", 1},
+    {type = "fluid", name = "sp-aqueous-niobium", amount = 30},
+  },
+  {
+    {"sp-glass-fiber", 10},
+    {"sp-TiNb", 3},
+    {"sp-superconductor", 6},
+    {"sp-processor", 30},
+    {"sp-quantum-data-plane", 1},
+    {"sp-circuit-board", 8},
+    {"imersite-crystal", 2},
+    {type = "fluid", name = "sp-aqueous-niobium", amount = 50},
+  },
+  16,
+  24)
+
+util.recipe.change_recipe_ingredients("imersium-plate",
   {
     {"rare-metals", 3},
     {"imersite-powder", 9},

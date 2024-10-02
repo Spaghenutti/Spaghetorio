@@ -1178,6 +1178,7 @@ data.raw.technology["kr-advanced-solar-panel"].unit.ingredients = {
   {"utility-science-pack", 1}
 }
 
+table.insert(data.raw.technology["kr-ai-core"].prerequisites, "sp-superconductor")
 table.insert(data.raw.technology["kr-ai-core"].prerequisites, "sp-production-science-pack-3")
 table.insert(data.raw.technology["kr-ai-core"].prerequisites, "sp-computer-science-pack-3")
 data.raw.technology["kr-ai-core"].unit.ingredients = {
