@@ -144,6 +144,7 @@ util.recipe.change_recipe_ingredients("matter-research-data",
     {"tritium", 5},
     {"sp-stibnite", 5},
     {"biomass", 5},
+    {"sp-neodymium-magnet", 5},
     {type = "fluid", name = "sp-helium-3", amount = 5}
   },
   {
@@ -152,6 +153,7 @@ util.recipe.change_recipe_ingredients("matter-research-data",
     {"tritium", 8},
     {"sp-stibnite", 8},
     {"biomass", 8},
+    {"sp-neodymium-magnet", 8},
     {type = "fluid", name = "sp-helium-3", amount = 8}
   },
   24,

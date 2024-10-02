@@ -1798,7 +1798,6 @@ util.recipe.change_recipe_ingredients("energy-shield-mk2-equipment",
     {"sp-titanium-frame", 2},
     {"sp-insulated-wire", 5},
     {"sp-capacitor", 10},
-    {"sp-neodymium-magnet", 6},
     {"sp-servo-motor", 6}
   },
   {
@@ -1808,7 +1807,6 @@ util.recipe.change_recipe_ingredients("energy-shield-mk2-equipment",
     {"sp-titanium-frame", 3},
     {"sp-insulated-wire", 8},
     {"sp-capacitor", 16},
-    {"sp-neodymium-magnet", 8},
     {"sp-servo-motor", 10}
   },
   20,

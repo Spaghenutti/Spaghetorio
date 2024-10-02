@@ -3250,7 +3250,8 @@ data:extend({
       },
     },
     prerequisites = {
-      "sp-gravitonium"
+      "sp-gravitonium",
+      "sp-cybernetics"
     },
     unit =
     {
@@ -3924,6 +3925,7 @@ data:extend({
       },
     },
     prerequisites = {
+      "sp-neodymium-magnet",
       "sp-material-science-pack-3",
       "sp-advanced-processing-unit"
     },
@@ -4108,8 +4110,8 @@ data:extend({
       }
     },
     prerequisites = {
-      "sp-frictionless-joint",
-      "sp-alien-processing"
+      "sp-advanced-processing-unit",
+      "sp-neodymium-magnet"
     },
     unit =
     {
@@ -4117,19 +4119,16 @@ data:extend({
       ingredients = {
         {"sp-automation-science-pack-3", 1},
         {"sp-logistic-science-pack-3", 1},
-        {"sp-chemical-science-pack-3", 1},
+        {"sp-chemical-science-pack-2", 1},
         {"sp-electronic-science-pack-3", 1},
-        {"sp-geological-science-pack-3", 1},
+        {"sp-geological-science-pack-2", 1},
         {"sp-material-science-pack-3", 1},
+        {"sp-computer-science-pack-2", 1},
         {"sp-military-science-pack-3", 1},
-        {"sp-computer-science-pack-3", 1},
-        {"sp-production-science-pack-3", 1},
-        {"sp-nuclear-science-pack-3", 1},
-        {"sp-astronomical-science-pack-3", 1},
-        {"sp-utility-science-pack-3", 1},
-        {"space-science-pack", 1},
-        -- {"matter-tech-card", 1},
-        -- {"advanced-tech-card", 1}
+        {"production-science-pack", 1},
+        {"sp-nuclear-science-pack-2", 1},
+        {"sp-astronomical-science-pack-2", 1},
+        {"utility-science-pack", 1},
       },
       time = 15
     },

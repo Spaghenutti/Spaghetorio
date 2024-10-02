@@ -2019,7 +2019,7 @@ data:extend({
     icon_size = 64,
     scale = 0.25,
     subgroup = "electronic-optical-component",
-    order = "optics-[infra-red-filter]",
+    order = "optics-[infrared-filter]",
     stack_size = 100
   },
   {

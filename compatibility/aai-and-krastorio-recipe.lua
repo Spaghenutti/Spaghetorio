@@ -1379,6 +1379,7 @@ table.insert(data.raw.recipe["sp-utility-science-pack-3"].ingredients, {type = "
 table.insert(data.raw.recipe["sp-utility-science-pack-3"].ingredients, {type = "item", name = "kr-bio-lab", amount = 4})
 table.insert(data.raw.recipe["sp-utility-science-pack-3"].ingredients, {type = "item", name = "kr-fuel-refinery", amount = 2})
 table.insert(data.raw.recipe["sp-utility-science-pack-3"].ingredients, {type = "item", name = "kr-quarry-drill", amount = 1})
+table.insert(data.raw.recipe["sp-military-science-pack-3"].ingredients, {type = "item", name = "basic-railgun-shell", amount = 3})
 table.insert(data.raw.recipe["sp-uniformity-science-pack"].ingredients, {type = "item", name = "matter-cube", amount = 1})
 
 -- MARK: Add missing ingredients from recipe-changes.lua
@@ -3088,6 +3089,7 @@ util.recipe.change_recipe_ingredients("kr-advanced-radar",
   },
   30,
   60)
+
 util.recipe.change_recipe_ingredients("kr-antimatter-reactor",
   {
     {"sp-proton-neutron-superconductor", 300},
@@ -3125,6 +3127,7 @@ util.recipe.change_recipe_ingredients("kr-antimatter-reactor",
   },
   600,
   1200)
+
 util.recipe.change_recipe_ingredients("empty-antimatter-fuel-cell",
   {
     {"matter-stabilizer", 1},
@@ -3142,6 +3145,26 @@ util.recipe.change_recipe_ingredients("empty-antimatter-fuel-cell",
   },
   20,
   30)
+
+data.raw.recipe["advanced-fuel"].category = "advanced-chemistry"
+util.recipe.change_recipe_ingredients("advanced-fuel",
+  {
+    {type = "fluid", name = "sp-sulfamate", amount = 25},
+    {type = "fluid", name = "nitric-acid", amount = 15},
+    {type = "fluid", name = "sp-aqueous-niobium", amount = 5},
+    {"imersite-powder", 6},
+    {"lithium-chloride", 2}
+  },
+  {
+    {type = "fluid", name = "sp-sulfamate", amount = 50},
+    {type = "fluid", name = "nitric-acid", amount = 30},
+    {type = "fluid", name = "sp-aqueous-niobium", amount = 8},
+    {"imersite-powder", 10},
+    {"lithium-chloride", 4}
+  },
+  12,
+  24)
+
 util.recipe.change_recipe_ingredients("kr-antimatter-reactor",
   {
     {"sp-omni-pulse-generator", 1},
@@ -3175,6 +3198,7 @@ util.recipe.change_recipe_ingredients("kr-antimatter-reactor",
   },
   900,
   3600)
+
 -- MARK: Krastorio vehicle
 util.recipe.change_recipe_ingredients("kr-nuclear-locomotive",
   {
@@ -3210,7 +3234,7 @@ util.recipe.change_recipe_ingredients("power-armor-mk3",
     {"sp-electrode", 10},
     {"sp-fabric", 20},
     {"sp-kevlar", 30},
-    {"flying-robot-frame", 12}
+    {"sp-cybernetics", 12}
   },
   {
     {"sp-advanced-processing-unit", 40},
@@ -3220,7 +3244,7 @@ util.recipe.change_recipe_ingredients("power-armor-mk3",
     {"sp-electrode", 20},
     {"sp-fabric", 30},
     {"sp-kevlar", 50},
-    {"flying-robot-frame", 20}
+    {"sp-cybernetics", 20}
   },
   45,
   90)
@@ -3603,6 +3627,32 @@ util.recipe.change_recipe_ingredients("explosion-railgun-shell",
     {"advanced-circuit", 1},
     {"sp-spark-plug", 1},
     {"sp-insulated-wire", 1}
+  },
+  16,
+  24)
+
+util.recipe.change_recipe_ingredients("imersite-night-vision-equipment",
+  {
+    {"low-density-structure", 3},
+    {"sp-insulation-sheet", 2},
+    {"sp-insulated-wire", 2},
+    {"sp-advanced-processing-unit", 2},
+    {"sp-lens", 16},
+    {"sp-infrared-filter", 4},
+    {"sp-vacuum-tube", 4},
+    {"imersite-crystal", 5},
+    {type = "fluid", name = "nitric-acid", amount = 25},
+  },
+  {
+    {"low-density-structure", 5},
+    {"sp-insulation-sheet", 4},
+    {"sp-insulated-wire", 3},
+    {"sp-advanced-processing-unit", 5},
+    {"sp-lens", 24},
+    {"sp-infrared-filter", 6},
+    {"sp-vacuum-tube", 10},
+    {"imersite-crystal", 8},
+    {type = "fluid", name = "nitric-acid", amount = 50},
   },
   16,
   24)

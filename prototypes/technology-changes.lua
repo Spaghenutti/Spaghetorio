@@ -1893,6 +1893,48 @@ data.raw.technology["weapon-shooting-speed-6"].unit.ingredients = {
   {"utility-science-pack", 1}
 }
 
+data.raw.technology["artillery-shell-range-1"].prerequisites = {
+  "sp-logistic-science-pack-3",
+  "sp-material-science-pack-3",
+  "sp-military-science-pack-3",
+  "artillery"
+}
+data.raw.technology["artillery-shell-range-1"].unit.ingredients = {
+  {"sp-automation-science-pack-3", 1},
+  {"sp-logistic-science-pack-3", 1},
+  {"sp-chemical-science-pack-2", 1},
+  {"sp-electronic-science-pack-2", 1},
+  {"sp-geological-science-pack-2", 1},
+  {"sp-material-science-pack-3", 1},
+  {"sp-computer-science-pack-2", 1},
+  {"sp-military-science-pack-3", 1},
+  {"production-science-pack", 1},
+  {"sp-nuclear-science-pack-2", 1},
+  {"sp-astronomical-science-pack-2", 1},
+  {"utility-science-pack", 1},
+}
+
+data.raw.technology["artillery-shell-speed-1"].prerequisites = {
+  "sp-logistic-science-pack-3",
+  "sp-material-science-pack-3",
+  "sp-military-science-pack-3",
+  "artillery"
+}
+data.raw.technology["artillery-shell-speed-1"].unit.ingredients = {
+  {"sp-automation-science-pack-3", 1},
+  {"sp-logistic-science-pack-3", 1},
+  {"sp-chemical-science-pack-2", 1},
+  {"sp-electronic-science-pack-2", 1},
+  {"sp-geological-science-pack-2", 1},
+  {"sp-material-science-pack-3", 1},
+  {"sp-computer-science-pack-2", 1},
+  {"sp-military-science-pack-3", 1},
+  {"production-science-pack", 1},
+  {"sp-nuclear-science-pack-2", 1},
+  {"sp-astronomical-science-pack-2", 1},
+  {"utility-science-pack", 1},
+}
+
 -- MARK If not Krastorio
 if not mods["Krastorio2"] then
   table.insert(data.raw.technology["sp-cement"].effects, {type = "unlock-recipe", recipe = "sp-calcium-carbonate"})

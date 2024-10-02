@@ -3775,7 +3775,14 @@ data:extend({
     enabled = false,
     energy_required = 69,
     ingredients = {
-      {type = "item", name = "sp-blunagium-bar", amount = 69},
+      {type = "item", name = "sp-advanced-processing-unit", amount = 20},
+      {type = "item", name = "sp-inconel", amount = 6},
+      {type = "item", name = "sp-neodymium-magnet", amount = 12},
+      {type = "item", name = "sp-electrode", amount = 6},
+      {type = "item", name = "sp-graphene", amount = 8},
+      {type = "item", name = "sp-insulated-wire", amount = 6},
+      {type = "item", name = "sp-dynamo", amount = 2},
+      {type = "item", name = "sp-servo-motor", amount = 20},
     },
     results = {
       {type = "item", name = "sp-personal-roboport-mk3-equipment", amount = 1}
@@ -6804,7 +6811,12 @@ data:extend({
     ingredients =
     {
       {"sp-military-science-pack-2", 10},
-      {"iron-plate", 69}
+      {"cannon-shell", 20},
+      {"destroyer-capsule", 3},
+      {"rocket", 3},
+      {"artillery-shell", 3},
+      {"energy-shield-mk2-equipment", 3},
+      -- Krastorio: {"basic-railgun-shell", 3}
     },
     result_count = 5,
     result = "sp-military-science-pack-3"

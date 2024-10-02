@@ -195,7 +195,7 @@ Basic Intermediates
 	- optical components
 		+r mirror
 		+r lens
-    +r infra-red-filter
+    +r infrared-filter
 	- electronic components
 		+r resistor
 		+rrr capacitor
