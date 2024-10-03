@@ -344,8 +344,12 @@ util.icon.change_fluid_icon("petroleum-gas", "__Spaghetorio__/graphics/icons/pet
 -- util.recipe.block_decomposition_for_recipe_category("crushed-smelting")
 -- util.recipe.block_decomposition_for_recipe_category("smelting-crafting")
 util.recipe.block_decomposition_for_recipe_category("matter-conversion")
+
 util.recipe.block_decomposition_for_recipe_category("acroproduct-conversion-with-acrocrystal")
 util.recipe.block_decomposition_for_recipe_category("acroproduct-conversion-with-acromatter")
 util.recipe.block_decomposition_for_recipe_category("acroproduct-conversion-with-acrovoid")
+
+util.recipe.block_decomposition_for_recipe_subgroup("crushed-resource")
+util.recipe.block_decomposition_for_recipe_subgroup("enriched-resource")
 
 util.recipe.block_decomposition_recipe_with_multiple_results()

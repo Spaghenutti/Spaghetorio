@@ -59,6 +59,14 @@ function data_util.block_decomposition_for_recipe_category(category)
   end
 end
 
+function data_util.block_decomposition_for_recipe_subgroup(subgroup)
+  for i, recipe in pairs(data.raw.recipe) do
+    if recipe.subgroup == subgroup then
+      recipe.allow_decomposition = false
+    end
+  end
+end
+
 function data_util.block_decomposition_recipe_with_multiple_results(category)
   for i, recipe in pairs(data.raw.recipe) do
     local results_count = 0
