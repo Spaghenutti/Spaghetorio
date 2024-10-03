@@ -91,6 +91,7 @@ Low prio
   - Add uses antimatter (icon already exists)
   - Change gravitonium to fluid
   - Add dark matter and dark energy as fluid
+  - infinite technologies "Follower robot count", "Artillery shell range", "Artillery shell shooting speed" should get a new higher tier with uniformity science pack
 
 
 Future changes

@@ -1318,13 +1318,13 @@ util.recipe.change_recipe_ingredients("shotgun-shell",
 
 util.recipe.change_recipe_ingredients("piercing-shotgun-shell",
   {
-    {"sp-stainless-steel", 1},
+    {"sp-lead-slab", 1},
     {"sp-tungsten-powder", 1},
     {"sp-graphite", 1},
     {"sp-ceramics", 2}
   },
   {
-    {"sp-stainless-steel", 2},
+    {"sp-lead-slab", 1},
     {"sp-tungsten-powder", 2},
     {"sp-graphite", 1},
     {"sp-ceramics", 3}

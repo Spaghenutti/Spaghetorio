@@ -1347,7 +1347,7 @@ table.insert(data.raw.recipe["sp-alpha-wave-tray-array"].ingredients, {type = "i
 table.insert(data.raw.recipe["sp-radiation-channeler"].ingredients, {type = "item", name = "imersium-plate", amount = 1})
 table.insert(data.raw.recipe["sp-ultra-violet-processor"].ingredients, {type = "item", name = "imersite-crystal", amount = 1})
 table.insert(data.raw.recipe["sp-graphene-chip"].ingredients, {type = "item", name = "imersite-powder", amount = 1})
-table.insert(data.raw.recipe["sp-rukite-gear-wheel"].ingredients, {type = "item", name = "imersium-gear-wheel", amount = 4})
+table.insert(data.raw.recipe["sp-rukite-gearbox"].ingredients, {type = "item", name = "imersium-gear-wheel", amount = 4})
 table.insert(data.raw.recipe["sp-frictionless-bearing"].ingredients, {type = "item", name = "imersite-powder", amount = 2})
 table.insert(data.raw.recipe["sp-extreme-heat-source"].ingredients, {type = "item", name = "energy-control-unit", amount = 6})
 table.insert(data.raw.recipe["sp-grobgnum-optics"].ingredients, {type = "item", name = "imersium-plate", amount = 1})
@@ -2633,6 +2633,7 @@ util.recipe.change_recipe_ingredients("kr-substation-mk2",
     {"sp-advanced-processing-unit", 4},
     {"sp-aluminum-cable", 24},
     {"imersium-beam", 12},
+    {"sp-rukite-plate", 4},
     {"concrete", 16},
     {"sp-electrode", 4},
     {"sp-insulation-sheet", 12}
@@ -2642,6 +2643,7 @@ util.recipe.change_recipe_ingredients("kr-substation-mk2",
     {"sp-advanced-processing-unit", 6},
     {"sp-aluminum-cable", 48},
     {"imersium-beam", 24},
+    {"sp-rukite-plate", 10},
     {"concrete", 32},
     {"sp-electrode", 8},
     {"sp-insulation-sheet", 20}
@@ -3250,6 +3252,34 @@ util.recipe.change_recipe_ingredients("kr-nuclear-locomotive",
   40,
   80)
 
+  util.recipe.change_recipe_ingredients("kr-advanced-tank",
+  {
+    {"sp-heavy-ball-bearing", 30},
+    {"engine-unit", 40},
+    {"sp-stainless-steel", 40},
+    {"sp-blunagium-rukite-compound", 60},
+    {"imersium-beam", 20},
+    {"sp-steel-wheel", 20},
+    {"ai-core", 10},
+    {"sp-control-unit", 16},
+    {"sp-rukite-gearbox", 20},
+    {"sp-differential", 4}
+  },
+  {
+    {"sp-heavy-ball-bearing", 60},
+    {"engine-unit", 60},
+    {"sp-stainless-steel", 50},
+    {"sp-blunagium-rukite-compound", 100},
+    {"imersium-beam", 30},
+    {"sp-steel-wheel", 40},
+    {"ai-core", 20},
+    {"sp-control-unit", 30},
+    {"sp-rukite-gearbox", 40},
+    {"sp-differential", 10}
+  },
+  90,
+  150)
+
 -- MARK: Krastorio equipment
 util.recipe.change_recipe_ingredients("power-armor-mk3",
   {
@@ -3582,6 +3612,53 @@ util.recipe.change_recipe_ingredients("personal-laser-defense-mk2-equipment",
   12,
   20)
 
+data.raw.recipe["personal-laser-defense-mk3-equipment"].category = "crafting-with-fluid"
+util.recipe.change_recipe_ingredients("personal-laser-defense-mk3-equipment",
+  {
+    {"ai-core", 4},
+    {"sp-blunagium-yemnuth-compound", 2},
+    {"sp-rukite-plate", 3},
+    {"sp-laser", 12},
+    {"sp-plasma-crystal", 1},
+    {"sp-radiation-channeler", 2},
+    {"energy-control-unit", 4},
+    {type = "fluid", name = "sp-xenon", amount = 5}
+  },
+  {
+    {"ai-core", 6},
+    {"sp-blunagium-yemnuth-compound", 3},
+    {"sp-rukite-plate", 6},
+    {"sp-laser", 20},
+    {"sp-plasma-crystal", 1},
+    {"sp-radiation-channeler", 4},
+    {"energy-control-unit", 6},
+    {type = "fluid", name = "sp-xenon", amount = 8}
+  },
+  15,
+  30)
+
+util.recipe.change_recipe_ingredients("personal-laser-defense-mk4-equipment",
+  {
+    {"sp-subatomic-condenser", 1},
+    {"sp-frictionless-joint", 4},
+    {"sp-proton-neutron-superconductor", 4},
+    {"sp-sideral-seal", 4},
+    {"sp-radiant-glass", 10},
+    {"sp-grobgnum-rukite-beam", 8},
+    {"sp-imersite-rukite-beam", 6},
+  },
+  {
+    {"sp-subatomic-condenser", 1},
+    {"sp-frictionless-joint", 6},
+    {"sp-proton-neutron-superconductor", 8},
+    {"sp-sideral-seal", 6},
+    {"sp-radiant-glass", 12},
+    {"sp-grobgnum-rukite-beam", 12},
+    {"sp-imersite-rukite-beam", 8},
+  },
+  45,
+  75)
+
 util.recipe.change_recipe_ingredients("personal-submachine-laser-defense-mk1-equipment",
   {
     {"laser-turret", 1},
@@ -3626,6 +3703,48 @@ util.recipe.change_recipe_ingredients("personal-submachine-laser-defense-mk2-equ
   20,
   30)
 
+util.recipe.change_recipe_ingredients("personal-submachine-laser-defense-mk3-equipment",
+  {
+    {"sp-TiNb", 4},
+    {"sp-blunagium-rukite-compound", 4},
+    {"ai-core", 5},
+    {"sp-glass-fiber", 4},
+    {"sp-superconductor", 6},
+    {"tritium", 1},
+    {"energy-control-unit", 6},
+  },
+  {
+    {"sp-TiNb", 5},
+    {"sp-blunagium-rukite-compound", 6},
+    {"ai-core", 6},
+    {"sp-glass-fiber", 8},
+    {"sp-superconductor", 10},
+    {"tritium", 2},
+    {"energy-control-unit", 12},
+  },
+  30,
+  45)
+
+util.recipe.change_recipe_ingredients("personal-submachine-laser-defense-mk4-equipment",
+  {
+    {"sp-extreme-heat-source", 1},
+    {"sp-frictionless-joint", 4},
+    {"sp-alpha-wave-tray-array", 1},
+    {"sp-vortex-core", 1},
+    {"sp-ultra-durable-ceramics", 10},
+    {"sp-grobgnum-rukite-beam", 8},
+  },
+  {
+    {"sp-extreme-heat-source", 1},
+    {"sp-frictionless-joint", 8},
+    {"sp-alpha-wave-tray-array", 1},
+    {"sp-vortex-core", 1},
+    {"sp-ultra-durable-ceramics", 12},
+    {"sp-grobgnum-rukite-beam", 12},
+  },
+  45,
+  75)
+
 util.recipe.change_recipe_ingredients("kr-railgun-turret",
   {
     {"sp-ceramic-matrix-composites", 12},
@@ -3639,7 +3758,8 @@ util.recipe.change_recipe_ingredients("kr-railgun-turret",
     {"sp-transformer", 4},
     {"sp-electromagnet", 30},
     {"sp-capacitor", 50},
-    {"sp-control-unit", 2}
+    {"sp-control-unit", 2},
+    {"kr-black-reinforced-plate", 32}
   },
   {
     {"sp-ceramic-matrix-composites", 16},
@@ -3653,7 +3773,8 @@ util.recipe.change_recipe_ingredients("kr-railgun-turret",
     {"sp-transformer", 8},
     {"sp-electromagnet", 40},
     {"sp-capacitor", 80},
-    {"sp-control-unit", 5}
+    {"sp-control-unit", 5},
+    {"kr-black-reinforced-plate", 64}
   },
   40,
   60)
@@ -3701,6 +3822,151 @@ util.recipe.change_recipe_ingredients("explosion-railgun-shell",
   },
   16,
   24)
+
+util.recipe.change_recipe_ingredients("antimatter-railgun-shell",
+  {
+    {"sp-blunagium-yemnuth-beam", 3},
+    {"sp-rukite-plate", 1},
+    {"sp-ultra-durable-ceramics", 2},
+    {"charged-antimatter-fuel-cell", 1},
+    {"sp-advanced-processing-unit", 1},
+  },
+  {
+    {"sp-blunagium-yemnuth-beam", 5},
+    {"sp-rukite-plate", 3},
+    {"sp-ultra-durable-ceramics", 4},
+    {"charged-antimatter-fuel-cell", 1},
+    {"sp-advanced-processing-unit", 2},
+  },
+  20,
+  30)
+
+util.recipe.change_recipe_ingredients("kr-rocket-turret",
+  {
+    {"sp-imersite-rukite-beam", 20},
+    {"sp-rukite-plate", 30},
+    {"sp-inconel", 12},
+    {"sp-rukite-gearbox", 4},
+    {"rocket-control-unit", 8},
+    {"sp-advanced-processing-unit", 12},
+    {"sp-spark-plug", 6},
+    {"electric-engine-unit", 4},
+    {"kr-black-reinforced-plate", 32}
+  },
+  {
+    {"sp-imersite-rukite-beam", 30},
+    {"sp-rukite-plate", 50},
+    {"sp-inconel", 16},
+    {"sp-rukite-gearbox", 6},
+    {"rocket-control-unit", 12},
+    {"sp-advanced-processing-unit", 20},
+    {"sp-spark-plug", 12},
+    {"electric-engine-unit", 8},
+    {"kr-black-reinforced-plate", 64}
+  },
+  40,
+  60)
+
+util.recipe.change_recipe_ingredients("explosive-turret-rocket",
+  {
+    {"sp-solid-rocket-motor", 1},
+    {"rocket-control-unit", 1},
+    {"explosives", 8},
+    {"sp-blunagium-rukite-compound", 2},
+    {"ai-core", 2},
+    {"sp-insulated-wire", 2},
+    {"sp-servo-motor", 6}
+  },
+  {
+    {"sp-solid-rocket-motor", 1},
+    {"rocket-control-unit", 1},
+    {"explosives", 12},
+    {"sp-blunagium-rukite-compound", 4},
+    {"ai-core", 3},
+    {"sp-insulated-wire", 3},
+    {"sp-servo-motor", 12}
+  },
+  12,
+  20)
+
+util.recipe.change_recipe_ingredients("nuclear-turret-rocket",
+  {
+    {"sp-solid-rocket-motor", 1},
+    {"rocket-control-unit", 2},
+    {"explosives", 8},
+    {"sp-plutonium-239", 1},
+    {"lithium", 3},
+    {"sp-blunagium-rukite-compound", 2},
+    {"ai-core", 6},
+    {"sp-glass-fiber", 3},
+    {"sp-servo-motor", 6}
+  },
+  {
+    {"sp-solid-rocket-motor", 1},
+    {"rocket-control-unit", 3},
+    {"explosives", 12},
+    {"sp-plutonium-239", 1},
+    {"lithium", 4},
+    {"sp-blunagium-rukite-compound", 3},
+    {"ai-core", 10},
+    {"sp-glass-fiber", 6},
+    {"sp-servo-motor", 12}
+  },
+  16,
+  24)
+
+util.recipe.change_recipe_ingredients("antimatter-turret-rocket",
+  {
+    {"sp-solid-rocket-motor", 1},
+    {"rocket-control-unit", 2},
+    {"charged-antimatter-fuel-cell", 1},
+    {"sp-blunagium-rukite-compound", 1},
+    {"sp-blunagium-yemnuth-beam", 2},
+    {"ai-core", 6},
+    {"sp-glass-fiber", 3},
+    {"sp-servo-motor", 6}
+  },
+  {
+    {"sp-solid-rocket-motor", 1},
+    {"rocket-control-unit", 5},
+    {"charged-antimatter-fuel-cell", 1},
+    {"sp-blunagium-rukite-compound", 2},
+    {"sp-blunagium-yemnuth-beam", 3},
+    {"ai-core", 10},
+    {"sp-glass-fiber", 6},
+    {"sp-servo-motor", 12}
+  },
+  16,
+  24)
+
+data.raw.recipe["kr-laser-artillery-turret"].category = "crafting-with-fluid"
+util.recipe.change_recipe_ingredients("kr-laser-artillery-turret",
+  {
+    {"sp-extreme-heat-source", 1},
+    {"energy-control-unit", 24},
+    {"imersium-plate", 40},
+    {"sp-blunagium-yemnuth-beam", 16},
+    {"sp-rukite-gearbox", 4},
+    {"sp-frictionless-joint", 2},
+    {"sp-alpha-wave-tray-array", 1},
+    {"sp-flux-capacitor", 10},
+    {type = "fluid", name = "sp-xenon", amount = 50},
+    {"kr-black-reinforced-plate", 32}
+  },
+  {
+    {"sp-extreme-heat-source", 1},
+    {"energy-control-unit", 40},
+    {"imersium-plate", 60},
+    {"sp-blunagium-yemnuth-beam", 30},
+    {"sp-rukite-gearbox", 6},
+    {"sp-frictionless-joint", 2},
+    {"sp-alpha-wave-tray-array", 1},
+    {"sp-flux-capacitor", 15},
+    {type = "fluid", name = "sp-xenon", amount = 100},
+    {"kr-black-reinforced-plate", 64}
+  },
+  45,
+  75)
 
 util.recipe.change_recipe_ingredients("imersite-night-vision-equipment",
   {
@@ -3830,6 +4096,30 @@ util.recipe.change_recipe_ingredients("heavy-rocket",
   15,
   20)
 
+util.recipe.change_recipe_ingredients("antimatter-rocket",
+  {
+    {"sp-solid-rocket-motor", 1},
+    {"charged-antimatter-fuel-cell", 3},
+    {"sp-extreme-heat-source", 1},
+    {"sp-blunagium-yemnuth-beam", 5},
+    {"sp-ultra-durable-ceramics", 2},
+    {"rocket-control-unit", 1},
+    {"sp-insulated-wire", 2},
+    {"sp-servo-motor", 6}
+  },
+  {
+    {"sp-solid-rocket-motor", 1},
+    {"charged-antimatter-fuel-cell", 4},
+    {"sp-extreme-heat-source", 1},
+    {"sp-blunagium-yemnuth-beam", 8},
+    {"sp-ultra-durable-ceramics", 3},
+    {"rocket-control-unit", 2},
+    {"sp-insulated-wire", 3},
+    {"sp-servo-motor", 12}
+  },
+  20,
+  30)
+
 util.recipe.change_recipe_ingredients("nuclear-artillery-shell",
   {
     {"sp-TiAlSn", 2},
@@ -3854,6 +4144,24 @@ util.recipe.change_recipe_ingredients("nuclear-artillery-shell",
   15,
   20)
 
+util.recipe.change_recipe_ingredients("antimatter-artillery-shell",
+  {
+    {"sp-ultra-durable-ceramics", 2},
+    {"sp-blunagium-yemnuth-beam", 3},
+    {"charged-antimatter-fuel-cell", 1},
+    {"sp-chronalyte", 2},
+    {"ai-core", 2},
+  },
+  {
+    {"sp-ultra-durable-ceramics", 3},
+    {"sp-blunagium-yemnuth-beam", 4},
+    {"charged-antimatter-fuel-cell", 1},
+    {"sp-chronalyte", 4},
+    {"ai-core", 5},
+  },
+  20,
+  30)
+
 util.recipe.change_recipe_ingredients("energy-shield-mk3-equipment",
   {
     {"sp-advanced-processing-unit", 2},
@@ -3875,6 +4183,108 @@ util.recipe.change_recipe_ingredients("energy-shield-mk3-equipment",
   },
   20,
   30)
+
+util.recipe.change_recipe_ingredients("energy-shield-mk4-equipment",
+  {
+    {"sp-alpha-wave-tray-array", 1},
+    {"sp-yemnuth-plate", 5},
+    {"sp-grobgnum-rukite-compound", 3},
+    {"sp-kevlar", 6},
+    {"sp-carbon-nanotubes", 12},
+    {"sp-cybernetics", 6},
+    {"sp-flux-capacitor", 2}
+  },
+  {
+    {"sp-alpha-wave-tray-array", 1},
+    {"sp-yemnuth-plate", 6},
+    {"sp-grobgnum-rukite-compound", 5},
+    {"sp-kevlar", 10},
+    {"sp-carbon-nanotubes", 20},
+    {"sp-cybernetics", 8},
+    {"sp-flux-capacitor", 4}
+  },
+  40,
+  60)
+
+data.raw.recipe["kr-creep-virus"].category = "advanced-chemistry"
+util.recipe.change_recipe_ingredients("kr-creep-virus",
+  {
+    {"imersite-powder", 6},
+    {"biomass", 2},
+    {"sp-aluminum-brass", 2},
+    {"sp-advanced-processing-unit", 1},
+    {type = "fluid", name = "sp-grobgnum-hydroxide", amount = 10},
+    {type = "fluid", name = "hydrogen-chloride", amount = 10},
+    {type = "fluid", name = "sp-sulfamate", amount = 20}
+  },
+  {
+    {"imersite-powder", 8},
+    {"biomass", 3},
+    {"sp-aluminum-brass", 3},
+    {"sp-advanced-processing-unit", 2},
+    {type = "fluid", name = "sp-grobgnum-hydroxide", amount = 15},
+    {type = "fluid", name = "hydrogen-chloride", amount = 20},
+    {type = "fluid", name = "sp-sulfamate", amount = 30}
+  },
+  16,
+  20)
+
+data.raw.recipe["kr-biter-virus"].category = "advanced-chemistry"
+util.recipe.change_recipe_ingredients("kr-biter-virus",
+  {
+    {"sp-rukite-powder", 5},
+    {"sp-titanium-chloride", 4},
+    {"sp-TiAlSn", 2},
+    {"sp-advanced-processing-unit", 2},
+    {type = "fluid", name = "sp-grobgnum-slurry", amount = 10},
+    {type = "fluid", name = "biomethanol", amount = 15},
+    {type = "fluid", name = "sp-sulfamate", amount = 25}
+  },
+  {
+    {"sp-rukite-powder", 8},
+    {"sp-titanium-chloride", 6},
+    {"sp-TiAlSn", 3},
+    {"sp-advanced-processing-unit", 2},
+    {type = "fluid", name = "sp-grobgnum-slurry", amount = 15},
+    {type = "fluid", name = "biomethanol", amount = 20},
+    {type = "fluid", name = "sp-sulfamate", amount = 30}
+  },
+  16,
+  20)
+
+util.recipe.change_recipe_ingredients("antimatter-reactor-equipment",
+{
+  {"sp-proton-neutron-superconductor", 20},
+  {"sp-extreme-heat-source", 4},
+  {"sp-energy-channeler", 12},
+  {"sp-radiation-channeler", 12},
+  {"sp-antimatter-engine", 1},
+  {"sp-grobgnum-rukite-beam", 12},
+  {"sp-blunagium-yemnuth-compound", 8},
+  {"energy-control-unit", 40},
+  {"sp-information-cube", 1},
+  {"sp-quark-gluon-probe", 1000},
+  {"sp-quark-gluon-plasma-container", 10},
+  {"sp-vortex-core", 1},
+  {"sp-interdimensional-prism-chamber", 20}
+},
+{
+  {"sp-proton-neutron-superconductor", 30},
+  {"sp-extreme-heat-source", 6},
+  {"sp-energy-channeler", 18},
+  {"sp-radiation-channeler", 18},
+  {"sp-antimatter-engine", 1},
+  {"sp-grobgnum-rukite-beam", 20},
+  {"sp-blunagium-yemnuth-compound", 12},
+  {"energy-control-unit", 60},
+  {"sp-information-cube", 1},
+  {"sp-quark-gluon-probe", 2000},
+  {"sp-quark-gluon-plasma-container", 12},
+  {"sp-vortex-core", 1},
+  {"sp-interdimensional-prism-chamber", 32}
+},
+120,
+180)
 
 -- MARK: AAI Industries Buildings
 util.recipe.change_recipe_ingredients("burner-turbine",

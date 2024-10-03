@@ -4952,7 +4952,8 @@ data:extend({
       }
     },
     prerequisites = {
-      "sp-alien-crystal-refinment"
+      "sp-alien-crystal-refinment",
+      "sp-advanced-bio-processors"
     },
     unit =
     {

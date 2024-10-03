@@ -3774,7 +3774,7 @@ data:extend({
     mip_maps = 4,
     category = "intermediate-smelting",  -- Krastorio: category = "advanced-smelting"
     enabled = false,
-    energy_required = 69,
+    energy_required = 30,
     ingredients = {
       {type = "item", name = "sp-advanced-processing-unit", amount = 20},
       {type = "item", name = "sp-inconel", amount = 6},
@@ -3796,9 +3796,17 @@ data:extend({
     mip_maps = 4,
     category = "intermediate-smelting",  -- Krastorio: category = "advanced-smelting"
     enabled = false,
-    energy_required = 69,
+    energy_required = 45,
     ingredients = {
-      {type = "item", name = "sp-blunagium-bar", amount = 69},
+      {type = "item", name = "sp-blunagium-rukite-compound", amount = 10},
+      {type = "item", name = "sp-blunagium-yemnuth-beam", amount = 6},
+      {type = "item", name = "sp-cybernetics", amount = 8},
+      {type = "item", name = "sp-bioreactor", amount = 1},
+      {type = "item", name = "sp-lossless-power-connector", amount = 12},
+      {type = "item", name = "sp-extreme-data-transfer-controller", amount = 1},
+      {type = "item", name = "sp-quantum-stream-supply", amount = 1},
+      {type = "item", name = "sp-energy-channeler", amount = 12},
+      {type = "item", name = "sp-nanobot", amount = 360},
     },
     results = {
       {type = "item", name = "sp-personal-roboport-mk4-equipment", amount = 1}

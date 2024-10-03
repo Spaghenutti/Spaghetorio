@@ -2776,6 +2776,16 @@ data:extend({
     order = "[bioreactor]",
     stack_size = 10
   },
+  {
+    type = "item",
+    name = "sp-rukite-gear-wheel",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/rukite-gear-wheel.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "alien-product",
+    order = "[rukite-gear-wheel]",
+    stack_size = 100
+  },
   ------------------------------------------------------------------------------
   -- MARK: intermediate-alien-product
   ------------------------------------------------------------------------------
@@ -2937,16 +2947,6 @@ data:extend({
     scale = 0.25,
     subgroup = "intermediate-alien-product",
     order = "r[rukite-gearbox]",
-    stack_size = 100
-  },
-  {
-    type = "item",
-    name = "sp-rukite-gear-wheel",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/icons/rukite-gear-wheel.png",
-    icon_size = 64,
-    scale = 0.25,
-    subgroup = "intermediate-alien-product",
-    order = "r[rukite-gear-wheel]",
     stack_size = 100
   },
   {

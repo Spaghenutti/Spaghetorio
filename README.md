@@ -20,12 +20,12 @@ Inspired by [brevven](https://mods.factorio.com/user/brevven).
 ### Known issues
 
 - The very advanced recipes do not show up in the corresponding crafting machines
+- Explorer satellites can be put into any rocket silo
 
 ### TODO List
 
 - Recipe / balance testing 
 - Add localization
-- Update military tech branch
 - Support for text plates
 
 ### Special Thanks
