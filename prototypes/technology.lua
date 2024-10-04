@@ -792,7 +792,7 @@ data:extend({
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-aqueous-niobium-tantalum"
+        recipe = "sp-aqueous-niobium-and-tantalum"
       },
       {
         type = "unlock-recipe",

@@ -27,11 +27,11 @@ TODO:
   - do TODO in recipes: "add uses to"
   + Add rockets depending on the explorer
   + Change labs in which tech cards are used
-  ? Change Factorio recipes
-  ? Change Krastorio recipes
-  ? Change AAI recipes
-  - Replace rare-metals with yttrium, lanthanum, cerium, neodymium
-  - Fix technology unlocking and add recipes for tech cards
+  + Change Factorio recipes
+  + Change Krastorio recipes
+  + Change AAI recipes
+  ? Replace rare-metals with yttrium, lanthanum, cerium, neodymium
+  + Fix technology unlocking and add recipes for tech cards
   + Add nuclear science pack 2 and 3
   - Add cyclotron
   - Add particle accelerator
@@ -46,6 +46,7 @@ TODO:
   - Add recipes for converting acrospheres into rare and noble metals (Check eliminated crushing recipes)
   - Add smelt crafting recipes for advanced assembling machine (see "kr-automation")
   - Disable productivity for acro-conversion recipes
+  - Asteroid mining
 
 
 Low prio

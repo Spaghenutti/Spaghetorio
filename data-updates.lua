@@ -5,6 +5,7 @@ require("prototypes.recipe-changes")
 require("compatibility.aai-and-krastorio-recipe")
 require("compatibility.aai-and-krastorio-technology")
 require("compatibility.aai-and-krastorio-technology-changes")
+require("compatibility.aai-and-krastorio-order-fixes")
 require("compatibility.krastorio-equipment")
 
 require("compatibility.krastorio-fixes")

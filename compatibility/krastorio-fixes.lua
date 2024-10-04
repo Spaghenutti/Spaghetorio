@@ -18,6 +18,7 @@ util.icon.change_tool_icon("matter-tech-card", "__Spaghetorio__/graphics/icons/m
 util.icon.change_technology_icon("utility-science-pack", "__Spaghetorio__/graphics/hr-icons/utility-science-pack-2.png", 256, nil)
 util.icon.change_technology_icon("kr-matter-tech-card", "__Spaghetorio__/graphics/hr-icons/matter-science-pack-3.png", 256, nil)
 
+-- Change item subgroups
 data.raw.item["enriched-iron"].subgroup = "enriched-resource"
 data.raw.item["enriched-copper"].subgroup = "enriched-resource"
 data.raw.item["enriched-rare-metals"].subgroup = "enriched-resource"
@@ -28,7 +29,6 @@ data.raw.item["coke"].subgroup = "processed-resource"
 data.raw.item["sand"].subgroup = "processed-resource"
 data.raw.item["lithium-chloride"].subgroup = "processed-resource"
 data.raw.item["lithium"].subgroup = "processed-resource"
-data.raw.item["biomass"].subgroup = "processed-resource"
 
 data.raw.item["iron-beam"].subgroup = "raw-material"
 data.raw.item["steel-beam"].subgroup = "raw-material"
@@ -40,6 +40,7 @@ data.raw.item["tritium"].subgroup = "advanced-raw-material"
 data.raw.item["imersite-crystal"].subgroup = "alien-material"
 data.raw.item["matter-cube"].subgroup = "alien-material"
 data.raw.item["imersite-powder"].subgroup = "alien-material"
+data.raw.item["biomass"].subgroup = "alien-material"
 
 data.raw.item["imersium-plate"].subgroup = "alien-compound"
 data.raw.item["imersium-beam"].subgroup = "alien-compound"
@@ -60,13 +61,6 @@ data.raw.item["empty-dt-fuel"].subgroup = "fuel-processing"
 data.raw.item["dt-fuel"].subgroup = "fuel-processing"
 data.raw.item["empty-antimatter-fuel-cell"].subgroup = "fuel-processing"
 data.raw.item["charged-antimatter-fuel-cell"].subgroup = "fuel-processing"
-
-data.raw.capsule["first-aid-kit"].subgroup = "tool"
-data.raw.capsule["first-aid-kit"].order  = "b[repair]-a[first-aid-kit]"
-
-data.raw.item["iron-beam"].order = "iron[iron-beam]"
-
-util.building.resize_building("furnace", "kr-crusher", {{-1.75, -1.75}, {1.75, 1.75}}, {{-2, -2}, {2, 2}}, 4/7, 4/7/2)
 
 -- Fix subgroup to fluids
 data.raw.fluid["mineral-water"].subgroup = "aqueous-fluid"
@@ -102,6 +96,17 @@ data.raw.tool["singularity-tech-card"].subgroup = "futuristic-science"
 data.raw.tool["production-science-pack"].order = "j[production-science-pack]"  -- Done here due to krastorio changing the order
 data.raw.tool["utility-science-pack"].order = "k[utility-science-pack]"  -- Done here due to krastorio changing the order
 data.raw.tool["matter-tech-card"].order = "m[matter-tech-card]"
+
+-- Change recipe subgroups
+data.raw.recipe["lithium-chloride"].subgroup = "processed-resource"
+data.raw.recipe["coal-filtration"].subgroup = "fluid-recipes"  -- needs to be done in aai-and-krastorio-final-fixes.lua
+
+-- Change capsule
+data.raw.capsule["first-aid-kit"].subgroup = "tool"
+data.raw.capsule["first-aid-kit"].order  = "b[repair]-a[first-aid-kit]"
+
+-- Resize buildings
+util.building.resize_building("furnace", "kr-crusher", {{-1.75, -1.75}, {1.75, 1.75}}, {{-2, -2}, {2, 2}}, 4/7, 4/7/2)
 
 -- Change order of autoplace control
 data.raw["autoplace-control"]["rare-metals"].order = "b[rare-metals]"

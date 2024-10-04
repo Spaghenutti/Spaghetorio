@@ -309,9 +309,11 @@ data:extend({
     name = "sp-wood-from-urea",  -- #ForRegEx# - recipe
     icons = util.icon.overlay_small_icon("__Krastorio2Assets__/icons/recipes/wood-plus.png", 64,
                                          "__Spaghetorio__/graphics/icons/urea.png", 64),
-    category = "smelting",
+    category = "crafting",
+    subgroup = "processed-resource",
     enabled = false,
     energy_required = 75,
+    hide_from_player_crafting = true,
     ingredients = {
       {type = "item", name = "sp-urea", amount = 1},
       {type = "item", name = "landfill", amount = 3},
@@ -340,6 +342,7 @@ data:extend({
     subgroup = "fluid-recipes",
     enabled = false,
     energy_required = 3,
+    hide_from_player_crafting = true,
     ingredients = {},
     results = {
       {type = "fluid", name = "sp-helium", amount = 1}
@@ -434,10 +437,11 @@ data:extend({
     type = "recipe",
     name = "sp-alumina-from-enriched-aluminum",  -- #ForRegEx# - recipe
     icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/alumina.png", 64,
-                                    "__Spaghetorio__/graphics/icons/enriched-aluminum-1.png", 64),
+                                         "__Spaghetorio__/graphics/icons/enriched-aluminum-1.png", 64),
     category = "smelting",
     enabled = false,
     energy_required = 3,
+    hide_from_player_crafting = true,
     ingredients = {
       {type = "item", name = "sp-enriched-aluminum", amount = 2}
     },
@@ -492,10 +496,11 @@ data:extend({
     type = "recipe",
     name = "sp-chromium-plate-from-enriched-chromite",  -- #ForRegEx# - recipe
     icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/chromium-plate.png", 64,
-                                    "__Spaghetorio__/graphics/icons/enriched-chromite-1.png", 64),
+                                         "__Spaghetorio__/graphics/icons/enriched-chromite-1.png", 64),
     category = "smelting",
     enabled = false,
     energy_required = 5,
+    hide_from_player_crafting = true,
     ingredients = {
       {type = "item", name = "sp-enriched-chromite", amount = 2}
     },
@@ -550,10 +555,11 @@ data:extend({
     type = "recipe",
     name = "sp-magnesium-slab-from-enriched-magnesium",  -- #ForRegEx# - recipe
     icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/magnesium-slab.png", 64,
-                                    "__Spaghetorio__/graphics/icons/enriched-magnesium-1.png", 64),
+                                         "__Spaghetorio__/graphics/icons/enriched-magnesium-1.png", 64),
     category = "smelting",
     enabled = false,
     energy_required = 6,
+    hide_from_player_crafting = true,
     ingredients = {
       {type = "item", name = "sp-enriched-magnesium", amount = 3}
     },
@@ -608,10 +614,11 @@ data:extend({
     type = "recipe",
     name = "sp-nickel-ingot-from-enriched-nickel",  -- #ForRegEx# - recipe
     icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/nickel-ingot.png", 64,
-                                    "__Spaghetorio__/graphics/icons/enriched-nickel-1.png", 64),
+                                         "__Spaghetorio__/graphics/icons/enriched-nickel-1.png", 64),
     category = "smelting",
     enabled = false,
     energy_required = 5,
+    hide_from_player_crafting = true,
     ingredients = {
       {type = "item", name = "sp-enriched-nickel", amount = 1}
     },
@@ -666,10 +673,11 @@ data:extend({
     type = "recipe",
     name = "sp-tin-ingot-from-enriched-tin",  -- #ForRegEx# - recipe
     icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/tin-ingot.png", 64,
-                                    "__Spaghetorio__/graphics/icons/enriched-tinstone-1.png", 64),
+                                         "__Spaghetorio__/graphics/icons/enriched-tinstone-1.png", 64),
     category = "smelting",
     enabled = false,
     energy_required = 8,
+    hide_from_player_crafting = true,
     ingredients = {
       {type = "item", name = "sp-enriched-tinstone", amount = 3}
     },
@@ -724,10 +732,11 @@ data:extend({
     type = "recipe",
     name = "sp-titanium-chloride-from-enriched-titanium",  -- #ForRegEx# - recipe
     icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/titanium-chloride.png", 64,
-                                    "__Spaghetorio__/graphics/icons/enriched-titanium-1.png", 64),
+                                         "__Spaghetorio__/graphics/icons/enriched-titanium-1.png", 64),
     category = "smelting",
     enabled = false,
     energy_required = 5,
+    hide_from_player_crafting = true,
     ingredients = {
       {type = "item", name = "sp-enriched-titanium", amount = 2}
     },
@@ -783,10 +792,11 @@ data:extend({
     type = "recipe",
     name = "sp-tungsten-ingot-from-enriched-tungsten",  -- #ForRegEx# - recipe
     icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/ammonium-paratungstate.png", 64,
-                                    "__Spaghetorio__/graphics/icons/enriched-tungsten-1.png", 64),
+                                         "__Spaghetorio__/graphics/icons/enriched-tungsten-1.png", 64),
     category = "smelting",
     enabled = false,
     energy_required = 8,
+    hide_from_player_crafting = true,
     ingredients = {
       {type = "item", name = "sp-enriched-tungsten", amount = 1}
     },
@@ -840,10 +850,11 @@ data:extend({
     type = "recipe",
     name = "sp-zinc-plate-from-enriched-zinc",  -- #ForRegEx# - recipe
     icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/zinc-plate.png", 64,
-                                    "__Spaghetorio__/graphics/icons/enriched-zinc-1.png", 64),
+                                         "__Spaghetorio__/graphics/icons/enriched-zinc-1.png", 64),
     category = "smelting",
     enabled = false,
     energy_required = 4,
+    hide_from_player_crafting = true,
     ingredients = {
       {type = "item", name = "sp-enriched-zinc", amount = 1}
     },
@@ -1281,7 +1292,7 @@ table.insert(data.raw.recipe["sp-sodium-carbonate"].ingredients, {type = "item",
 table.insert(data.raw.recipe["sp-graphite"].ingredients, {type = "item", name = "coke", amount = 3})
 table.insert(data.raw.recipe["sp-zirconia"].ingredients, {type = "item", name = "sand", amount = 3})
 table.insert(data.raw.recipe["sp-niobium-powder"].ingredients, {type = "item", name = "sand", amount = 8})
-table.insert(data.raw.recipe["sp-aqueous-niobium-tantalum"].ingredients, {type = "item", name = "sand", amount = 8})
+table.insert(data.raw.recipe["sp-aqueous-niobium-and-tantalum"].ingredients, {type = "item", name = "sand", amount = 8})
 table.insert(data.raw.recipe["sp-landfill-from-sand"].ingredients, {type = "item", name = "sand", amount = 30})
 table.insert(data.raw.recipe["sp-stone-brick-from-sand"].ingredients, {type = "item", name = "sand", amount = 8})
 table.insert(data.raw.recipe["sp-mirror"].ingredients, {type = "item", name = "glass", amount = 2})
@@ -1464,10 +1475,10 @@ table.insert(data.raw.recipe["sp-antimony-from-acrovoid"].results, {type = "flui
 table.insert(data.raw.recipe["sp-tellurium-from-acrovoid"].results, {type = "fluid", name = "nitrogen", amount = 8})
 table.insert(data.raw.recipe["sp-sulfur-from-acrovoid"].results, {type = "item", name = "silicon", probability=0.15, amount = 1})
 table.insert(data.raw.recipe["sp-sulfur-from-acrovoid"].results, {type = "fluid", name = "oxygen", amount = 15})
-table.insert(data.raw.recipe["sp-rare-metal-alloy-from-yttrium"].results, {type = "item", name = "rare-metals", amount = 6})
-table.insert(data.raw.recipe["sp-rare-metal-alloy-from-lanthanum"].results, {type = "item", name = "rare-metals", amount = 5})
-table.insert(data.raw.recipe["sp-rare-metal-alloy-from-cerium"].results, {type = "item", name = "rare-metals", amount = 10})
-table.insert(data.raw.recipe["sp-rare-metal-alloy-from-neodymium"].results, {type = "item", name = "rare-metals", amount = 6})
+table.insert(data.raw.recipe["sp-rare-metals-alloy-from-yttrium"].results, {type = "item", name = "rare-metals", amount = 6})
+table.insert(data.raw.recipe["sp-rare-metals-alloy-from-lanthanum"].results, {type = "item", name = "rare-metals", amount = 5})
+table.insert(data.raw.recipe["sp-rare-metals-alloy-from-cerium"].results, {type = "item", name = "rare-metals", amount = 10})
+table.insert(data.raw.recipe["sp-rare-metals-alloy-from-neodymium"].results, {type = "item", name = "rare-metals", amount = 6})
 
 -- MARK: Add missing rocket launch products
 table.insert(data.raw.item["sp-blunagium-explorer"].rocket_launch_products, {"space-research-data", 500})
@@ -1487,6 +1498,8 @@ data.raw.recipe["sp-sodium-hydroxide-from-liquid-sodium"].category = "electrolys
 data.raw.recipe["sp-salt"].category = "fluid-filtration"
 
 data.raw.recipe["sp-nuclear-waste-processing"].category = "crushing"
+
+data.raw.recipe["sp-wood-from-urea"].category = "growing"
 
 data.raw.recipe["sp-evolution-cell-container"].category = "bioprocessing"
 data.raw.recipe["sp-evolution-pulse-cell"].category = "bioprocessing"
@@ -1524,6 +1537,7 @@ data.raw.recipe["sp-quantum-capacitor"].category = "matter-items"
 
 -- MARK: change subgroup
 data.raw.recipe["quartz"].subgroup = "processed-resource"
+data.raw.recipe["kr-grow-wood-with-water"].subgroup = "processed-resource"
 
 data.raw.recipe["enriched-iron"].subgroup = "enriched-resource"
 data.raw.recipe["enriched-copper"].subgroup = "enriched-resource"

@@ -947,7 +947,7 @@ data:extend({
     icon_size = 64,
     scale = 0.25,
     subgroup = "raw-material",
-    order = "[aluminum-sheet]",
+    order = "a-plate-[aluminum-sheet]",
     stack_size = 100
   },
   {
@@ -957,7 +957,7 @@ data:extend({
     icon_size = 64,
     scale = 0.25,
     subgroup = "raw-material",
-    order = "[chromium-plate]",
+    order = "a-plate-[chromium-plate]",
     stack_size = 100
   },
   {
@@ -967,7 +967,7 @@ data:extend({
     icon_size = 64,
     scale = 0.25,
     subgroup = "raw-material",
-    order = "[nickel-ingot]",
+    order = "ingot-[nickel-ingot]",
     stack_size = 100
   },
   {
@@ -977,7 +977,7 @@ data:extend({
     icon_size = 64,
     scale = 0.25,
     subgroup = "raw-material",
-    order = "[titanium-ingot]",
+    order = "ingot-[titanium-ingot]",
     stack_size = 100
   },
   {
@@ -987,7 +987,7 @@ data:extend({
     icon_size = 64,
     scale = 0.25,
     subgroup = "raw-material",
-    order = "[titanium-plate]",
+    order = "a-plate-[titanium-plate]",
     stack_size = 100
   },
   {
@@ -997,7 +997,7 @@ data:extend({
     icon_size = 64,
     scale = 0.25,
     subgroup = "raw-material",
-    order = "[tin-ingot]",
+    order = "ingot-[tin-ingot]",
     stack_size = 100
   },
   {
@@ -1007,7 +1007,7 @@ data:extend({
     icon_size = 64,
     scale = 0.25,
     subgroup = "raw-material",
-    order = "[zirconium-rod]",
+    order = "rod-[zirconium-rod]",
     stack_size = 100
   },
   {
@@ -1027,7 +1027,7 @@ data:extend({
     icon_size = 64,
     scale = 0.25,
     subgroup = "raw-material",
-    order = "[zinc-plate]",
+    order = "a-plate-[zinc-plate]",
     stack_size = 100
   },
   {
@@ -1037,7 +1037,7 @@ data:extend({
     icon_size = 64,
     scale = 0.25,
     subgroup = "raw-material",
-    order = "[magnesium-slab]",
+    order = "ingot-[magnesium-slab]",
     stack_size = 100
   },
   {
@@ -1047,7 +1047,7 @@ data:extend({
     icon_size = 64,
     scale = 0.25,
     subgroup = "raw-material",
-    order = "[lead-slab]",
+    order = "ingot-[lead-slab]",
     stack_size = 100
   },
   {
@@ -1057,7 +1057,7 @@ data:extend({
     icon_size = 64,
     scale = 0.25,
     subgroup = "raw-material",
-    order = "[cobalt-billet]",
+    order = "ingot-[cobalt-billet]",
     stack_size = 200
   },
   {
@@ -1067,7 +1067,7 @@ data:extend({
     icon_size = 64,
     scale = 0.25,
     subgroup = "raw-material",
-    order = "[niobium-billet]",
+    order = "ingot-[niobium-billet]",
     stack_size = 100
   },
   {
@@ -1077,7 +1077,7 @@ data:extend({
     icon_size = 64,
     scale = 0.25,
     subgroup = "raw-material",
-    order = "[tantalum-billet]",
+    order = "ingot-[tantalum-billet]",
     stack_size = 100
   },
   {
@@ -1087,7 +1087,7 @@ data:extend({
     icon_size = 64,
     scale = 0.25,
     subgroup = "raw-material",
-    order = "[tungsten-slab]",
+    order = "ingot-[tungsten-slab]",
     stack_size = 100
   },
   {
@@ -1110,7 +1110,7 @@ data:extend({
     icon_size = 64,
     scale = 0.25,
     subgroup = "alloy",
-    order = "[bronze-rod]",
+    order = "rod-[bronze-rod]",
     stack_size = 100
   },
   {
@@ -1233,7 +1233,7 @@ data:extend({
     icon_size = 64,
     scale = 0.25,
     subgroup = "advanced-raw-material",
-    order = "[carbon-nanotubes]",
+    order = "carbon-[carbon-nanotubes]",
     stack_size = 100
   },
   {
@@ -1243,7 +1243,7 @@ data:extend({
     icon_size = 64,
     scale = 0.25,
     subgroup = "advanced-raw-material",
-    order = "[graphene]",
+    order = "carbon-[graphene]",
     stack_size = 100
   },
   {
@@ -1253,7 +1253,7 @@ data:extend({
     icon_size = 64,
     scale = 0.25,
     subgroup = "advanced-raw-material",
-    order = "[high-purity-silicon]",
+    order = "crystal-[high-purity-silicon]",
     stack_size = 100
   },
   {
@@ -1269,7 +1269,7 @@ data:extend({
     },
     scale = 0.25,
     subgroup = "advanced-raw-material",
-    order = "[titanium-nitride]",
+    order = "ceramic-[titanium-nitride]",
     stack_size = 100
   },
   {
@@ -1279,7 +1279,7 @@ data:extend({
     icon_size = 64,
     scale = 0.25,
     subgroup = "advanced-raw-material",
-    order = "[titanium-carbide]",
+    order = "ceramic-[titanium-carbide]",
     stack_size = 100
   },
   {
@@ -1289,7 +1289,7 @@ data:extend({
     icon_size = 64,
     scale = 0.25,
     subgroup = "advanced-raw-material",
-    order = "[tungsten-carbide]",
+    order = "ceramic-[tungsten-carbide]",
     stack_size = 100
   },
   {
@@ -1299,7 +1299,7 @@ data:extend({
     icon_size = 64,
     scale = 0.25,
     subgroup = "advanced-raw-material",
-    order = "[diamond]",
+    order = "crystal-[diamond]",
     stack_size = 100
   },
   {
@@ -1309,7 +1309,7 @@ data:extend({
     icon_size = 64,
     scale = 0.25,
     subgroup = "advanced-raw-material",
-    order = "[carbon-fiber]",
+    order = "carbon-[carbon-fiber]",
     stack_size = 100
   },
   {
@@ -1319,7 +1319,7 @@ data:extend({
     icon_size = 64,
     scale = 0.25,
     subgroup = "advanced-raw-material",
-    order = "crystal[monocrystal]",
+    order = "crystal-[monocrystal]",
     stack_size = 100
   },
   {
@@ -1329,7 +1329,7 @@ data:extend({
     icon_size = 64,
     scale = 0.25,
     subgroup = "advanced-raw-material",
-    order = "crystal[quasicrystal]",
+    order = "crystal-[quasicrystal]",
     stack_size = 100
   },
   ------------------------------------------------------------------------------
@@ -1521,7 +1521,7 @@ data:extend({
       { size = 64, filename = "__Spaghetorio__/graphics/icons/blunagium-plate-4.png", scale = 0.25, mipmap_count = 4}
     },
     subgroup = "alien-compound",
-    order = "[blunagium-plate]",
+    order = "a-plate-[blunagium-plate]",
     stack_size = 100
   },
   {
@@ -1537,7 +1537,7 @@ data:extend({
       { size = 64, filename = "__Spaghetorio__/graphics/icons/grobgnum-plate-4.png", scale = 0.25, mipmap_count = 4}
     },
     subgroup = "alien-compound",
-    order = "[grobgnum-plate]",
+    order = "a-plate-[grobgnum-plate]",
     stack_size = 100
   },
   {
@@ -1553,7 +1553,7 @@ data:extend({
       { size = 64, filename = "__Spaghetorio__/graphics/icons/rukite-plate-4.png", scale = 0.25, mipmap_count = 4}
     },
     subgroup = "alien-compound",
-    order = "[rukite-plate]",
+    order = "a-plate-[rukite-plate]",
     stack_size = 100
   },
   {
@@ -1569,7 +1569,7 @@ data:extend({
       { size = 64, filename = "__Spaghetorio__/graphics/icons/yemnuth-plate-4.png", scale = 0.25, mipmap_count = 4}
     },
     subgroup = "alien-compound",
-    order = "[yemnuth-plate]",
+    order = "a-plate-[yemnuth-plate]",
     stack_size = 100
   },
   {
@@ -1579,7 +1579,7 @@ data:extend({
     icon_size = 64,
     scale = 0.25,
     subgroup = "alien-compound",
-    order = "[blunagium-rukite-compound]",
+    order = "compound-[blunagium-rukite-compound]",
     stack_size = 100
   },
   {
@@ -1589,7 +1589,7 @@ data:extend({
     icon_size = 64,
     scale = 0.25,
     subgroup = "alien-compound",
-    order = "[blunagium-yemnuth-compound]",
+    order = "compound-[blunagium-yemnuth-compound]",
     stack_size = 100
   },
   {
@@ -1599,7 +1599,7 @@ data:extend({
     icon_size = 64,
     scale = 0.25,
     subgroup = "alien-compound",
-    order = "[grobgnum-rukite-beam]",
+    order = "beam-[grobgnum-rukite-beam]",
     stack_size = 100
   },
   {
@@ -1609,7 +1609,7 @@ data:extend({
     icon_size = 64,
     scale = 0.25,
     subgroup = "alien-compound",
-    order = "[grobgnum-rukite-compound]",
+    order = "compound-[grobgnum-rukite-compound]",
     stack_size = 100
   },
   {
@@ -1619,7 +1619,7 @@ data:extend({
     icon_size = 64,
     scale = 0.25,
     subgroup = "alien-compound",
-    order = "[ultra-durable-ceramics]",
+    order = "ceramics-[ultra-durable-ceramics]",
     stack_size = 100
   },
   {
@@ -1629,7 +1629,7 @@ data:extend({
     icon_size = 64,
     scale = 0.25,
     subgroup = "alien-compound",
-    order = "[blunagium-imersite-slab]",
+    order = "ceramics-[blunagium-imersite-slab]",
     stack_size = 100
   },
   {
@@ -1639,7 +1639,7 @@ data:extend({
     icon_size = 64,
     scale = 0.25,
     subgroup = "alien-compound",
-    order = "[blunagium-yemnuth-beam]",
+    order = "beam-[blunagium-yemnuth-beam]",
     stack_size = 100
   },
   {
@@ -1649,7 +1649,7 @@ data:extend({
     icon_size = 64,
     scale = 0.25,
     subgroup = "alien-compound",
-    order = "[charged-slab]",
+    order = "ingot-[charged-slab]",
     stack_size = 100
   },
   {
@@ -1659,7 +1659,7 @@ data:extend({
     icon_size = 64,
     scale = 0.25,
     subgroup = "alien-compound",
-    order = "[hot-stone]",
+    order = "ingot-[hot-stone]",
     stack_size = 100
   },
   {
@@ -1669,7 +1669,7 @@ data:extend({
     icon_size = 64,
     scale = 0.25,
     subgroup = "alien-compound",
-    order = "[imersite-rukite-beam]",
+    order = "beam-[imersite-rukite-beam]",
     stack_size = 100
   },
   {
@@ -1679,7 +1679,7 @@ data:extend({
     icon_size = 64,
     scale = 0.25,
     subgroup = "alien-compound",
-    order = "[radiant-glass]",
+    order = "ceramics-[radiant-glass]",
     stack_size = 100
   },
   {
@@ -1689,7 +1689,7 @@ data:extend({
     icon_size = 64,
     scale = 0.25,
     subgroup = "alien-compound",
-    order = "[vitality-prism]",
+    order = "ceramics-[vitality-prism]",
     stack_size = 100
   },
   ------------------------------------------------------------------------------
@@ -4218,7 +4218,7 @@ if not mods["Krastorio2"] then
     },
     {
       type = "item",
-      name = "sp-rare-metal-alloy",  -- #ForRegEx# - item
+      name = "sp-rare-metals-alloy",  -- #ForRegEx# - item
       icon = "__Spaghetorio__/graphics/icons/niobium-tin.png",  -- Fix icon
       icon_size = 64,
       scale = 0.25,

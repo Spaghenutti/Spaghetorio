@@ -67,7 +67,7 @@ function data_util.block_decomposition_for_recipe_subgroup(subgroup)
   end
 end
 
-function data_util.block_decomposition_recipe_with_multiple_results(category)
+function data_util.block_decomposition_recipe_with_multiple_results()
   for i, recipe in pairs(data.raw.recipe) do
     local results_count = 0
 
@@ -79,6 +79,14 @@ function data_util.block_decomposition_recipe_with_multiple_results(category)
       if results_count > 1 then
         recipe.allow_decomposition = false
       end
+    end
+  end
+end
+
+function data_util.hide_recipe_from_player_category(category)
+  for i, recipe in pairs(data.raw.recipe) do
+    if recipe.category == category then
+      recipe.hide_from_player_crafting = true
     end
   end
 end

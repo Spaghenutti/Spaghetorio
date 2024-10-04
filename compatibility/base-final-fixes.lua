@@ -1,6 +1,8 @@
 -- I gues krastorio or aai change something in their final fixes
 -- This file changes things back to the tweaks done in other files by this mod
 
+local util = require("data-util")
+
 data.raw.technology["oil-processing"].unit.ingredients = {
   {"basic-tech-card", 1},
   {"automation-science-pack", 1},
@@ -8,7 +10,7 @@ data.raw.technology["oil-processing"].unit.ingredients = {
   {"sp-material-science-pack-1", 1},
   {"sp-geological-science-pack-1", 1}
 }
-  
+
 data.raw.technology["plastics"].unit.ingredients = {
   {"basic-tech-card", 1},
   {"automation-science-pack", 1},
@@ -16,7 +18,7 @@ data.raw.technology["plastics"].unit.ingredients = {
   {"sp-material-science-pack-1", 1},
   {"sp-geological-science-pack-1", 1}
 }
-  
+
 data.raw.technology["sulfur-processing"].unit.ingredients = {
   {"basic-tech-card", 1},
   {"automation-science-pack", 1},
@@ -84,3 +86,15 @@ data.raw.technology["utility-science-pack"].unit.ingredients = {
   {"sp-geological-science-pack-2", 1},
   {"sp-electronic-science-pack-2", 1}
 }
+
+-- block decomposition of certain recipe categories
+util.recipe.block_decomposition_for_recipe_category("acroproduct-conversion-with-acrocrystal")
+util.recipe.block_decomposition_for_recipe_category("acroproduct-conversion-with-acromatter")
+util.recipe.block_decomposition_for_recipe_category("acroproduct-conversion-with-acrovoid")
+
+-- hide recipes from player
+util.recipe.hide_recipe_from_player_category("acroproduct-conversion-with-acrocrystal")
+util.recipe.hide_recipe_from_player_category("acroproduct-conversion-with-acromatter")
+util.recipe.hide_recipe_from_player_category("acroproduct-conversion-with-acrovoid")
+
+data.raw.recipe["electronic-circuit"].hide_from_player_crafting = true

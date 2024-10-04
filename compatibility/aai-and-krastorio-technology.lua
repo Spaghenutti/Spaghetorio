@@ -123,19 +123,19 @@ data:extend({
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-rare-metal-alloy-from-yttrium"
+        recipe = "sp-rare-metals-alloy-from-yttrium"
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-rare-metal-alloy-from-lanthanum"
+        recipe = "sp-rare-metals-alloy-from-lanthanum"
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-rare-metal-alloy-from-cerium"
+        recipe = "sp-rare-metals-alloy-from-cerium"
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-rare-metal-alloy-from-neodymium"
+        recipe = "sp-rare-metals-alloy-from-neodymium"
       }
     },
     prerequisites = {

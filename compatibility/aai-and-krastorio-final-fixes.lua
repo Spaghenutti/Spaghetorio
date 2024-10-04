@@ -312,6 +312,12 @@ table.insert(data.raw.lab["kr-singularity-lab"].inputs, "sp-uniformity-science-p
 data.raw.recipe["kr-grow-wood-with-water"].hide_from_player_crafting = true
 data.raw.recipe["kr-grow-wood-plus"].hide_from_player_crafting = true
 
+data.raw.recipe["rocket-fuel-with-ammonia"].hide_from_player_crafting = true
+data.raw.recipe["rocket-fuel-with-hydrogen-chloride"].hide_from_player_crafting = true
+
+data.raw.recipe["enriched-copper-plate"].hide_from_player_crafting = true
+data.raw.recipe["enriched-iron-plate"].hide_from_player_crafting = true
+
 -- Hide uranium fuel
 data.raw.recipe["uranium-fuel-cell"].hidden = true
 data.raw.item["uranium-fuel-cell"].flags = {"hidden"}
@@ -344,10 +350,6 @@ util.icon.change_fluid_icon("petroleum-gas", "__Spaghetorio__/graphics/icons/pet
 -- util.recipe.block_decomposition_for_recipe_category("crushed-smelting")
 -- util.recipe.block_decomposition_for_recipe_category("smelting-crafting")
 util.recipe.block_decomposition_for_recipe_category("matter-conversion")
-
-util.recipe.block_decomposition_for_recipe_category("acroproduct-conversion-with-acrocrystal")
-util.recipe.block_decomposition_for_recipe_category("acroproduct-conversion-with-acromatter")
-util.recipe.block_decomposition_for_recipe_category("acroproduct-conversion-with-acrovoid")
 
 util.recipe.block_decomposition_for_recipe_subgroup("crushed-resource")
 util.recipe.block_decomposition_for_recipe_subgroup("enriched-resource")

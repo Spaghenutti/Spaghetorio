@@ -19,7 +19,7 @@ if not mods["Krastorio2"] then
   end
 end
 
--- MARK: Change Subgroups
+-- MARK: Change item subgroups
 data.raw.item["sulfur"].subgroup = "processed-resource"
 data.raw.item["uranium-238"].subgroup = "processed-resource"
 data.raw.item["uranium-235"].subgroup = "processed-resource"
@@ -61,6 +61,9 @@ data.raw.item["iron-stick"].order = "iron[iron-stick]"
 -- change stack sizes
 data.raw.item["copper-cable"].stack_size = 400
 data.raw.item["chemical-plant"].stack_size = 50
+
+-- change recipe subgroups
+data.raw.recipe["uranium-processing"].subgroup = "processed-resource"
 
 -- Assing subgroup to science items
 data.raw.tool["automation-science-pack"].subgroup = "basic-science"
