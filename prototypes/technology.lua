@@ -3961,6 +3961,10 @@ data:extend({
         type = "unlock-recipe",
         recipe = "sp-nanowire"
       },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-nanoflex"
+      }
     },
     prerequisites = {
       "sp-quantum-tech"

@@ -26,7 +26,13 @@ function data_util.change_technology_icon(name, icon, icon_size, icon_mipmaps)
   data.raw.technology[name].icon_mipmaps = icon_mipmaps
 end
 
-function data_util.change_recipe_icon(name, icon, icon_size, small_icon, small_icon_size, icon_mipmaps)
+function data_util.change_recipe_icon(name, icon, icon_size, icon_mipmaps)
+  data.raw.recipe[name].icon = icon
+  data.raw.recipe[name].icon_size = icon_size
+  data.raw.recipe[name].icon_mipmaps = icon_mipmaps
+end
+
+function data_util.change_recipe_icons(name, icon, icon_size, small_icon, small_icon_size, icon_mipmaps)
   if small_icon then
     data.raw.recipe[name].icons = data_util.overlay_small_icon(icon, icon_size, small_icon, small_icon_size)
     data.raw.recipe[name].icon = nil
@@ -161,7 +167,7 @@ function data_util.combine_five_icons(icon_1, icon_1_size, shift_1, icon_2, icon
   return icons
 end
 
-function data_util.acrosphere_color_change_recipe_icon(sphere_1, sphere_2, sphere_3, sphere_4, arrow_type)
+function data_util.acrosphere_color_change_recipe_icons(sphere_1, sphere_2, sphere_3, sphere_4, arrow_type)
   if (arrow_type == "green") then
     arrow_icon = "__Spaghetorio__/graphics/arrows/acrosphere-arrow-recipe-green-256x256.png"
   end

@@ -6,8 +6,10 @@ util.icon.change_item_icon("iron-plate", "__base__/graphics/icons/iron-plate.png
 util.icon.change_item_icon("iron-gear-wheel", "__base__/graphics/icons/iron-gear-wheel.png", 64, 4)
 
 -- Change recipe icons
-util.icon.change_recipe_icon("iron-plate", "__base__/graphics/icons/iron-plate.png", 64, "__base__/graphics/icons/iron-ore-1.png", 64, 4)
-util.icon.change_recipe_icon("copper-plate", "__base__/graphics/icons/copper-plate.png", 64, "__base__/graphics/icons/copper-ore-1.png", 64, 4)
+util.icon.change_recipe_icon("iron-plate", "__base__/graphics/icons/iron-plate.png", 64, 4)
+data.raw.recipe["iron-plate"].icons = nil
+util.icon.change_recipe_icon("copper-plate", "__base__/graphics/icons/copper-plate.png", 64, 4)
+data.raw.recipe["copper-plate"].icons = nil
 
 -- Change tool icons
 util.icon.change_tool_icon("utility-science-pack", "__Spaghetorio__/graphics/icons/utility-science-pack-2.png", 64, 4)
@@ -96,10 +98,6 @@ data.raw.tool["singularity-tech-card"].subgroup = "futuristic-science"
 data.raw.tool["production-science-pack"].order = "j[production-science-pack]"  -- Done here due to krastorio changing the order
 data.raw.tool["utility-science-pack"].order = "k[utility-science-pack]"  -- Done here due to krastorio changing the order
 data.raw.tool["matter-tech-card"].order = "m[matter-tech-card]"
-
--- Change recipe subgroups
-data.raw.recipe["lithium-chloride"].subgroup = "processed-resource"
-data.raw.recipe["coal-filtration"].subgroup = "fluid-recipes"  -- needs to be done in aai-and-krastorio-final-fixes.lua
 
 -- Change capsule
 data.raw.capsule["first-aid-kit"].subgroup = "tool"

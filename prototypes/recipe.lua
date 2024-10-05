@@ -3034,7 +3034,7 @@ data:extend({
       {type = "item", name = "sp-cerium", probability = 0.2, amount = 3},
       {type = "item", name = "sp-neodymium", probability = 0.09, amount = 3}
     },
-    order = "yemnuth[yemnuth-shard]"
+    order = "yemnuth-[yemnuth-shard]"
   },
   {
     type = "recipe",
@@ -3744,7 +3744,7 @@ data:extend({
       {type = "item", name = "sp-cerium", probability=0.06, amount = 1},
       {type = "item", name = "sp-titanium-ore", probability=0.3, amount = 1}
     },
-    order = "z[nuclear]-[nuclear-waste-processing]"
+    order = "z[nuclear]-3-[nuclear-waste-processing]"
   },
   {
     type = "recipe",
@@ -5249,7 +5249,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-blunagium-to-grobgnum-acrosphere",  -- #ForRegEx# - recipe
-    icons = util.icon.acrosphere_color_change_recipe_icon("__Spaghetorio__/graphics/icons/blunagium-acrosphere-1.png",
+    icons = util.icon.acrosphere_color_change_recipe_icons("__Spaghetorio__/graphics/icons/blunagium-acrosphere-1.png",
                                                           "__Spaghetorio__/graphics/icons/blunagium-acrosphere-2.png",
                                                           "__Spaghetorio__/graphics/icons/grobgnum-acrosphere-1.png",
                                                           "__Spaghetorio__/graphics/icons/grobgnum-acrosphere-2.png",
@@ -5273,7 +5273,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-blunagium-to-rukite-acrosphere",  -- #ForRegEx# - recipe
-    icons = util.icon.acrosphere_color_change_recipe_icon("__Spaghetorio__/graphics/icons/blunagium-acrosphere-1.png",
+    icons = util.icon.acrosphere_color_change_recipe_icons("__Spaghetorio__/graphics/icons/blunagium-acrosphere-1.png",
                                                           "__Spaghetorio__/graphics/icons/blunagium-acrosphere-2.png",
                                                           "__Spaghetorio__/graphics/icons/rukite-acrosphere-1.png",
                                                           "__Spaghetorio__/graphics/icons/rukite-acrosphere-2.png",
@@ -5297,7 +5297,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-grobgnum-to-yemnuth-acrosphere",  -- #ForRegEx# - recipe
-    icons = util.icon.acrosphere_color_change_recipe_icon("__Spaghetorio__/graphics/icons/grobgnum-acrosphere-1.png",
+    icons = util.icon.acrosphere_color_change_recipe_icons("__Spaghetorio__/graphics/icons/grobgnum-acrosphere-1.png",
                                                          "__Spaghetorio__/graphics/icons/grobgnum-acrosphere-2.png",
                                                          "__Spaghetorio__/graphics/icons/yemnuth-acrosphere-1.png",
                                                          "__Spaghetorio__/graphics/icons/yemnuth-acrosphere-2.png",
@@ -5321,7 +5321,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-rukite-to-yemnuth-acrosphere",  -- #ForRegEx# - recipe
-    icons = util.icon.acrosphere_color_change_recipe_icon("__Spaghetorio__/graphics/icons/rukite-acrosphere-1.png",
+    icons = util.icon.acrosphere_color_change_recipe_icons("__Spaghetorio__/graphics/icons/rukite-acrosphere-1.png",
                                                           "__Spaghetorio__/graphics/icons/rukite-acrosphere-2.png",
                                                           "__Spaghetorio__/graphics/icons/yemnuth-acrosphere-1.png",
                                                           "__Spaghetorio__/graphics/icons/yemnuth-acrosphere-2.png",
@@ -5345,7 +5345,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-yemnuth-to-blunagium-acrosphere",  -- #ForRegEx# - recipe
-    icons = util.icon.acrosphere_color_change_recipe_icon("__Spaghetorio__/graphics/icons/yemnuth-acrosphere-1.png",
+    icons = util.icon.acrosphere_color_change_recipe_icons("__Spaghetorio__/graphics/icons/yemnuth-acrosphere-1.png",
                                                           "__Spaghetorio__/graphics/icons/yemnuth-acrosphere-2.png",
                                                           "__Spaghetorio__/graphics/icons/blunagium-acrosphere-1.png",
                                                           "__Spaghetorio__/graphics/icons/blunagium-acrosphere-2.png",
@@ -7636,7 +7636,7 @@ data:extend({
       {type = "item", name = "sp-plutonium-239", probability = 0.15, amount = 1},
       {type = "item", name = "sp-plutonium-240", probability = 0.01, amount = 1}
     },
-    order = "z[nuclear]-[plutonium-239]"
+    order = "z[nuclear]-2-[plutonium-239]"
   },
   {
     type = "recipe",
@@ -7657,7 +7657,7 @@ data:extend({
       {type = "item", name = "sp-plutonium-239", probability = 0.72, amount = 1},
       {type = "item", name = "sp-plutonium-240", probability = 0.08, amount = 1}
     },
-    order = "z[nuclear]-[plutonium-240]"
+    order = "z[nuclear]-2-[plutonium-240]"
   },
   {
     type = "recipe",
@@ -7681,7 +7681,7 @@ data:extend({
       {type = "item", name = "sp-nuclear-waste", amount = 1},
       -- {type = "fluid", name = "sp-deuterium", amount = 10}
     },
-    order = "z[nuclear]-[used-up-fuel-rod-reprocessing]"
+    order = "z[nuclear]-3-[used-up-fuel-rod-reprocessing]"
   },
   {
     type = "recipe",
@@ -7707,7 +7707,7 @@ data:extend({
       -- {type = "item", name = "sp-lithium", probability = 0.2, amount = 1},
       {type = "fluid", name = "sp-deuterium", amount = 10}
     },
-    order = "z[nuclear]-[nuclear-waste-processing]2"
+    order = "z[nuclear]-3-[nuclear-waste-processing]2"
   },
   {
     type = "recipe",

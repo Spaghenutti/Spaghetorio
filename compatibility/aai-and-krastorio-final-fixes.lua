@@ -318,6 +318,8 @@ data.raw.recipe["rocket-fuel-with-hydrogen-chloride"].hide_from_player_crafting 
 data.raw.recipe["enriched-copper-plate"].hide_from_player_crafting = true
 data.raw.recipe["enriched-iron-plate"].hide_from_player_crafting = true
 
+data.raw.recipe["fuel-2"].hide_from_player_crafting = true
+
 -- Hide uranium fuel
 data.raw.recipe["uranium-fuel-cell"].hidden = true
 data.raw.item["uranium-fuel-cell"].flags = {"hidden"}
@@ -343,7 +345,7 @@ data.raw.technology["military"].effects = {
   }
 }
 
--- Fix petroleum gas icon
+-- Fix icons
 util.icon.change_fluid_icon("petroleum-gas", "__Spaghetorio__/graphics/icons/petroleum-gas.png", 64, nil)
 
 -- block decomposition of certain recipe categories

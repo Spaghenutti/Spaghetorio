@@ -41,4 +41,5 @@ data.raw.recipe["steel-beam"].order = "beam-[steel-beam]"
 data.raw.recipe["imersium-beam"].order = "beam-[imersium-beam]"
 
 --MARK: Other
+data.raw.item["steel-gear-wheel"].order = "gear-[steel-gear-wheel]"
 data.raw.item["biomass"].order = "z-[biomass]"

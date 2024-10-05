@@ -97,4 +97,4 @@ util.recipe.hide_recipe_from_player_category("acroproduct-conversion-with-acrocr
 util.recipe.hide_recipe_from_player_category("acroproduct-conversion-with-acromatter")
 util.recipe.hide_recipe_from_player_category("acroproduct-conversion-with-acrovoid")
 
-data.raw.recipe["electronic-circuit"].hide_from_player_crafting = true
+data.raw.recipe["electronic-circuit"].hide_from_player_crafting = true  -- Does not work, I think the recipe is changed to "wooden-board" in Krastorio

@@ -1,10 +1,12 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.5
 Date: 2024-10-05
-  Bugfixes:
+  Features:
     - Changed order of many icons and recipes in inventory and crafting menu
     - Many recipes are now hidden from player
-    - Renamed rare metals to rare metals
+  Bugfixes:
+    - Renamed rare metal to rare metals
+    - Nanoflex is now unlocked by researching nanobots
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.4
 Date: 2024-09-29

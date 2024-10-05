@@ -1538,8 +1538,8 @@ data.raw.recipe["sp-quantum-capacitor"].category = "matter-items"
 -- MARK: change subgroup
 data.raw.recipe["quartz"].subgroup = "processed-resource"
 data.raw.recipe["kr-grow-wood-with-water"].subgroup = "processed-resource"
+data.raw.recipe["lithium-chloride"].subgroup = "processed-resource"
 
-data.raw.recipe["enriched-iron"].subgroup = "enriched-resource"
 data.raw.recipe["enriched-copper"].subgroup = "enriched-resource"
 data.raw.recipe["enriched-rare-metals"].subgroup = "enriched-resource"
 
@@ -1549,6 +1549,15 @@ data.raw.recipe["dirty-water-filtration-2"].subgroup = "enriched-resource"
 data.raw.recipe["dirty-water-filtration-2"].hide_from_player_crafting = true
 data.raw.recipe["dirty-water-filtration-3"].subgroup = "enriched-resource"
 data.raw.recipe["dirty-water-filtration-3"].hide_from_player_crafting = true
+
+data.raw.recipe["coal-filtration"].subgroup = "fluid-recipes"  -- needs to be done in aai-and-krastorio-final-fixes.lua
+
+data.raw.recipe["fuel-1"].subgroup = "fuel-processing"
+data.raw.recipe["fuel-2"].subgroup = "fuel-processing"
+data.raw.recipe["bio-fuel"].subgroup = "fuel-processing"
+data.raw.recipe["advanced-fuel"].subgroup = "fuel-processing"
+
+data.raw.recipe["imersite-crystal"].subgroup = "alien-material"
 
 -- MARK: base crafting changes
 data.raw.recipe["steel-beam"].category = "smelting"

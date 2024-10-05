@@ -50,13 +50,15 @@ data.raw.item["explosives"].subgroup = "ammo"
 data.raw.item["explosives"].order = "a-a"
 
 -- Change order of items
-data.raw.item["copper-plate"].order = "a-plate[copper]"
-data.raw.item["iron-plate"].order = "a-plate[iron]"
+data.raw.item["copper-plate"].order = "a-plate-[copper]"
+data.raw.item["iron-plate"].order = "a-plate-[iron]"
 
-data.raw.item["copper-cable"].order = "copper[copper-cable]"
+data.raw.item["copper-cable"].order = "cable-[copper-cable]"
 
-data.raw.item["iron-gear-wheel"].order = "iron[iron-gear-wheel]"
-data.raw.item["iron-stick"].order = "iron[iron-stick]"
+data.raw.item["iron-gear-wheel"].order = "gear-[iron-gear-wheel]"
+data.raw.item["iron-stick"].order = "frame-[iron-stick]"
+
+data.raw.item["low-density-structure"].order = "ceramic-[low-density-structure]"  -- I know its not supposed to be ceramics, but its my mod so i do whatever i want.
 
 -- change stack sizes
 data.raw.item["copper-cable"].stack_size = 400
@@ -64,6 +66,7 @@ data.raw.item["chemical-plant"].stack_size = 50
 
 -- change recipe subgroups
 data.raw.recipe["uranium-processing"].subgroup = "processed-resource"
+data.raw.recipe["kovarex-enrichment-process"].subgroup = "processed-resource"
 
 -- Assing subgroup to science items
 data.raw.tool["automation-science-pack"].subgroup = "basic-science"

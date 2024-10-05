@@ -1,5 +1,12 @@
 local util = require("data-util")
 
+-- Change subgroups
+data.raw.recipe["solid-fuel-from-light-oil"].subgroup = "fuel-processing"
+data.raw.recipe["solid-fuel-from-light-oil"].hide_from_player_crafting = true
+data.raw.recipe["solid-fuel-from-heavy-oil"].subgroup = "fuel-processing"
+data.raw.recipe["solid-fuel-from-heavy-oil"].hide_from_player_crafting = true
+data.raw.recipe["solid-fuel-from-petroleum-gas"].subgroup = "fuel-processing"
+
 --------------------------------------------------------------------------------
 -- Recipe changes for base factorio items
 -- MARK: Items
