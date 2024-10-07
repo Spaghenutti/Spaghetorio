@@ -941,12 +941,40 @@ blunagium_rocket.rocket_sprite = util.add_shift_offset(util.by_pixel(0, 32*3.5),
 })
 blunagium_rocket_silo = table.deepcopy(data.raw["rocket-silo"]["rocket-silo"])
 blunagium_rocket_silo.name = "sp-blunagium-rocket-silo"  -- #ForRegEx# - entity
+blunagium_rocket_silo.icon = "__Spaghetorio__/graphics/icons/blunagium-rocket-silo.png"
 blunagium_rocket_silo.crafting_categories = {"blunagium-rocket-building"}
 blunagium_rocket_silo.rocket_entity = "sp-blunagium-rocket"
 blunagium_rocket_silo.rocket_parts_required = 1
 blunagium_rocket_silo.fixed_recipe = "sp-blunagium-rocket"
 blunagium_rocket_silo.rocket_result_inventory_size = 3
-
+blunagium_rocket_silo.base_day_sprite = {
+  filename = "__Spaghetorio__/graphics/rocket/blunagium-rocket-silo.png",
+  width = 608,
+  height = 596,
+  shift = util.by_pixel(2, -2),
+  hr_version =
+  {
+    filename = "__Spaghetorio__/graphics/rocket/blunagium-rocket-silo.png",
+    width = 608,
+    height = 596,
+    shift = util.by_pixel(3, -1),
+    scale = 0.5
+  }
+}
+blunagium_rocket_silo.base_front_sprite = {
+  filename = "__Spaghetorio__/graphics/rocket/blunagium-rocket-silo-front.png",
+  width = 292,
+  height = 132,
+  shift = util.by_pixel(-2, 78),
+  hr_version =
+  {
+    filename = "__Spaghetorio__/graphics/rocket/blunagium-rocket-silo-front.png",
+    width = 580,
+    height = 262,
+    shift = util.by_pixel(-1, 78),
+    scale = 0.5
+  }
+}
 
 -- MARK: grobgnum rocket
 grobgnum_rocket = table.deepcopy(data.raw["rocket-silo-rocket"]["rocket-silo-rocket"])
@@ -967,11 +995,40 @@ grobgnum_rocket.rocket_sprite = util.add_shift_offset(util.by_pixel(0, 32*3.5), 
 })
 grobgnum_rocket_silo = table.deepcopy(data.raw["rocket-silo"]["rocket-silo"])
 grobgnum_rocket_silo.name = "sp-grobgnum-rocket-silo"  -- #ForRegEx# - entity
+grobgnum_rocket_silo.icon = "__Spaghetorio__/graphics/icons/grobgnum-rocket-silo.png"
 grobgnum_rocket_silo.crafting_categories = {"grobgnum-rocket-building"}
 grobgnum_rocket_silo.rocket_entity = "sp-grobgnum-rocket"
 grobgnum_rocket_silo.rocket_parts_required = 1
 grobgnum_rocket_silo.fixed_recipe = "sp-grobgnum-rocket"
 grobgnum_rocket_silo.rocket_result_inventory_size = 3
+grobgnum_rocket_silo.base_day_sprite = {
+  filename = "__Spaghetorio__/graphics/rocket/grobgnum-rocket-silo.png",
+  width = 608,
+  height = 596,
+  shift = util.by_pixel(2, -2),
+  hr_version =
+  {
+    filename = "__Spaghetorio__/graphics/rocket/grobgnum-rocket-silo.png",
+    width = 608,
+    height = 596,
+    shift = util.by_pixel(3, -1),
+    scale = 0.5
+  }
+}
+grobgnum_rocket_silo.base_front_sprite = {
+  filename = "__Spaghetorio__/graphics/rocket/grobgnum-rocket-silo-front.png",
+  width = 292,
+  height = 132,
+  shift = util.by_pixel(-2, 78),
+  hr_version =
+  {
+    filename = "__Spaghetorio__/graphics/rocket/grobgnum-rocket-silo-front.png",
+    width = 580,
+    height = 262,
+    shift = util.by_pixel(-1, 78),
+    scale = 0.5
+  }
+}
 
 -- MARK: rukite rocket
 rukite_rocket = table.deepcopy(data.raw["rocket-silo-rocket"]["rocket-silo-rocket"])
@@ -992,11 +1049,40 @@ rukite_rocket.rocket_sprite = util.add_shift_offset(util.by_pixel(0, 32*3.5), --
 })
 rukite_rocket_silo = table.deepcopy(data.raw["rocket-silo"]["rocket-silo"])
 rukite_rocket_silo.name = "sp-rukite-rocket-silo"  -- #ForRegEx# - entity
+rukite_rocket_silo.icon = "__Spaghetorio__/graphics/icons/rukite-rocket-silo.png"
 rukite_rocket_silo.crafting_categories = {"rukite-rocket-building"}
 rukite_rocket_silo.rocket_entity = "sp-rukite-rocket"
 rukite_rocket_silo.rocket_parts_required = 1
 rukite_rocket_silo.fixed_recipe = "sp-rukite-rocket"
 rukite_rocket_silo.rocket_result_inventory_size = 3
+rukite_rocket_silo.base_day_sprite = {
+  filename = "__Spaghetorio__/graphics/rocket/rukite-rocket-silo.png",
+  width = 608,
+  height = 596,
+  shift = util.by_pixel(2, -2),
+  hr_version =
+  {
+    filename = "__Spaghetorio__/graphics/rocket/rukite-rocket-silo.png",
+    width = 608,
+    height = 596,
+    shift = util.by_pixel(3, -1),
+    scale = 0.5
+  }
+}
+rukite_rocket_silo.base_front_sprite = {
+  filename = "__Spaghetorio__/graphics/rocket/rukite-rocket-silo-front.png",
+  width = 292,
+  height = 132,
+  shift = util.by_pixel(-2, 78),
+  hr_version =
+  {
+    filename = "__Spaghetorio__/graphics/rocket/rukite-rocket-silo-front.png",
+    width = 580,
+    height = 262,
+    shift = util.by_pixel(-1, 78),
+    scale = 0.5
+  }
+}
 
 -- MARK: yemnuth rocket
 yemnuth_rocket = table.deepcopy(data.raw["rocket-silo-rocket"]["rocket-silo-rocket"])
@@ -1017,11 +1103,40 @@ yemnuth_rocket.rocket_sprite = util.add_shift_offset(util.by_pixel(0, 32*3.5), -
 })
 yemnuth_rocket_silo = table.deepcopy(data.raw["rocket-silo"]["rocket-silo"])
 yemnuth_rocket_silo.name = "sp-yemnuth-rocket-silo"  -- #ForRegEx# - entity
+yemnuth_rocket_silo.icon = "__Spaghetorio__/graphics/icons/yemnuth-rocket-silo.png"
 yemnuth_rocket_silo.crafting_categories = {"yemnuth-rocket-building"}
 yemnuth_rocket_silo.rocket_entity = "sp-yemnuth-rocket"
 yemnuth_rocket_silo.rocket_parts_required = 1
 yemnuth_rocket_silo.fixed_recipe = "sp-yemnuth-rocket"
 yemnuth_rocket_silo.rocket_result_inventory_size = 3
+yemnuth_rocket_silo.base_day_sprite = {
+  filename = "__Spaghetorio__/graphics/rocket/yemnuth-rocket-silo.png",
+  width = 608,
+  height = 596,
+  shift = util.by_pixel(2, -2),
+  hr_version =
+  {
+    filename = "__Spaghetorio__/graphics/rocket/yemnuth-rocket-silo.png",
+    width = 608,
+    height = 596,
+    shift = util.by_pixel(3, -1),
+    scale = 0.5
+  }
+}
+yemnuth_rocket_silo.base_front_sprite = {
+  filename = "__Spaghetorio__/graphics/rocket/yemnuth-rocket-silo-front.png",
+  width = 292,
+  height = 132,
+  shift = util.by_pixel(-2, 78),
+  hr_version =
+  {
+    filename = "__Spaghetorio__/graphics/rocket/yemnuth-rocket-silo-front.png",
+    width = 580,
+    height = 262,
+    shift = util.by_pixel(-1, 78),
+    scale = 0.5
+  }
+}
 
 data:extend({
   blunagium_rocket,

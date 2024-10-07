@@ -3613,7 +3613,7 @@ data:extend({
   {
     type = "item",
     name = "sp-blunagium-rocket-silo",
-    icon = "__base__/graphics/icons/rocket-silo.png",
+    icon = "__Spaghetorio__/graphics/icons/blunagium-rocket-silo.png",
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "space-related",
@@ -3624,7 +3624,7 @@ data:extend({
   {
     type = "item",
     name = "sp-grobgnum-rocket-silo",
-    icon = "__base__/graphics/icons/rocket-silo.png",
+    icon = "__Spaghetorio__/graphics/icons/grobgnum-rocket-silo.png",
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "space-related",
@@ -3635,7 +3635,7 @@ data:extend({
   {
     type = "item",
     name = "sp-rukite-rocket-silo",
-    icon = "__base__/graphics/icons/rocket-silo.png",
+    icon = "__Spaghetorio__/graphics/icons/rukite-rocket-silo.png",
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "space-related",
@@ -3646,7 +3646,7 @@ data:extend({
   {
     type = "item",
     name = "sp-yemnuth-rocket-silo",
-    icon = "__base__/graphics/icons/rocket-silo.png",
+    icon = "__Spaghetorio__/graphics/icons/yemnuth-rocket-silo.png",
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "space-related",

@@ -6,9 +6,9 @@ Inspired by [brevven](https://mods.factorio.com/user/brevven).
 
 ## Features
 
-- 14 new ores like **aluminum ore**, **chromite**, **limestone**, **magnesium**
+- 14 new ores like **aluminum ore**, **chromite**, **limestone** and **magnesium**
 - over 350 new items like **inconel**, **copper tube**, **gear box**, **processor** and of course **dark energy harvester**
-- over 40 new fluids like **aqueous niobium**, **helium 3**, **ethylene**, **chronomatter**
+- over 40 new fluids like **aqueous niobium**, **helium 3**, **ethylene** and **chronomatter**
 - 26 new science packs
 - over 160 new techonolgies
 
