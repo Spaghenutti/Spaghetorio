@@ -8,7 +8,7 @@ local resource_autoplace = require("__core__/lualib/resource-autoplace")
 data:extend({
   {
     type = "resource",
-    name = "sp-aluminum-ore",
+    name = "sp-aluminum-ore",  -- #ForRegEx# - resource
     icon = "__Spaghetorio__/graphics/icons/aluminum-ore-1.png",
     icon_size = 64,
     icon_mipmaps = 4,
@@ -56,7 +56,7 @@ data:extend({
   },
   {
     type = "resource",
-    name = "sp-chromite",
+    name = "sp-chromite",  -- #ForRegEx# - resource
     icon = "__Spaghetorio__/graphics/icons/chromite-1.png",
     icon_size = 64,
     icon_mipmaps = 4,
@@ -104,7 +104,7 @@ data:extend({
   },
   {
     type = "resource",
-    name = "sp-limestone",
+    name = "sp-limestone",  -- #ForRegEx# - resource
     icon = "__Spaghetorio__/graphics/icons/limestone-1.png",
     icon_size = 64,
     icon_mipmaps = 4,
@@ -154,7 +154,7 @@ data:extend({
   },
   {
     type = "resource",
-    name = "sp-titanium-ore",
+    name = "sp-titanium-ore",  -- #ForRegEx# - resource
     icon = "__Spaghetorio__/graphics/icons/titanium-ore-1.png",
     icon_size = 64,
     icon_mipmaps = 4,
@@ -204,7 +204,7 @@ data:extend({
   },
   {
     type = "resource",
-    name = "sp-magnesium-ore",
+    name = "sp-magnesium-ore",  -- #ForRegEx# - resource
     icon = "__Spaghetorio__/graphics/icons/magnesium-ore-1.png",
     icon_size = 64,
     icon_mipmaps = 4,
@@ -254,7 +254,7 @@ data:extend({
   },
   {
     type = "resource",
-    name = "sp-nickel-ore",
+    name = "sp-nickel-ore",  -- #ForRegEx# - resource
     icon = "__Spaghetorio__/graphics/icons/nickel-ore-1.png",
     icon_size = 64,
     icon_mipmaps = 4,
@@ -304,7 +304,7 @@ data:extend({
   },
   {
     type = "resource",
-    name = "sp-spodumene",
+    name = "sp-spodumene",  -- #ForRegEx# - resource
     icon = "__Spaghetorio__/graphics/icons/spodumene-1.png",
     icon_size = 64,
     icon_mipmaps = 4,
@@ -354,7 +354,7 @@ data:extend({
   },
   {
     type = "resource",
-    name = "sp-tinstone",
+    name = "sp-tinstone",  -- #ForRegEx# - resource
     icon = "__Spaghetorio__/graphics/icons/tinstone-1.png",
     icon_size = 64,
     icon_mipmaps = 4,
@@ -402,7 +402,7 @@ data:extend({
   },
   {
     type = "resource",
-    name = "sp-tungsten-ore",
+    name = "sp-tungsten-ore",  -- #ForRegEx# - resource
     icon = "__Spaghetorio__/graphics/icons/tungsten-ore-1.png",
     icon_size = 64,
     icon_mipmaps = 4,
@@ -452,7 +452,7 @@ data:extend({
   },
   {
     type = "resource",
-    name = "sp-zinc-ore",
+    name = "sp-zinc-ore",  -- #ForRegEx# - resource
     icon = "__Spaghetorio__/graphics/icons/zinc-ore-1.png",
     icon_size = 64,
     icon_mipmaps = 4,
@@ -500,7 +500,7 @@ data:extend({
   },
   {
     type = "resource",
-    name = "sp-zirconium-ore",
+    name = "sp-zirconium-ore",  -- #ForRegEx# - resource
     icon = "__Spaghetorio__/graphics/icons/zirconium-ore-1.png",
     icon_size = 64,
     icon_mipmaps = 4,
@@ -552,7 +552,7 @@ if mods["Krastorio2"] then
   data:extend({
     {
       type = "resource",
-      name = "sp-blunagium",
+      name = "sp-blunagium",  -- #ForRegEx# - resource
       category = "kr-quarry",
       icon = "__Spaghetorio__/graphics/icons/blunagium.png",
       icon_size = 64,
@@ -614,7 +614,7 @@ if mods["Krastorio2"] then
     },
     {
       type = "resource",
-      name = "sp-grobgnum",
+      name = "sp-grobgnum",  -- #ForRegEx# - resource
       category = "kr-quarry",
       icon = "__Spaghetorio__/graphics/icons/grobgnum.png",
       icon_size = 64,
@@ -676,7 +676,7 @@ if mods["Krastorio2"] then
     },
     {
       type = "resource",
-      name = "sp-rukite",
+      name = "sp-rukite",  -- #ForRegEx# - resource
       category = "kr-quarry",
       icon = "__Spaghetorio__/graphics/icons/rukite.png",
       icon_size = 64,
@@ -738,7 +738,7 @@ if mods["Krastorio2"] then
     },
     {
       type = "resource",
-      name = "sp-yemnuth",
+      name = "sp-yemnuth",  -- #ForRegEx# - resource
       category = "kr-quarry",
       icon = "__Spaghetorio__/graphics/icons/yemnuth.png",
       icon_size = 64,

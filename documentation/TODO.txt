@@ -47,6 +47,8 @@ TODO:
   - Add smelt crafting recipes for advanced assembling machine (see "kr-automation")
   - Disable productivity for acro-conversion recipes
   - Asteroid mining
+  - Add uses for lead
+  - Add multiple recipes for blank tech card
 
 
 Low prio

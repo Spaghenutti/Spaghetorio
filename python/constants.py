@@ -2,6 +2,7 @@ import os
 
 PATH = os.getcwd()
 
+COMPATIBILITY_PATH = fr"{PATH}\compatibility"
 GRAPHICS_PATH = fr"{PATH}\graphics"
 LOCALE_PATH = fr"{PATH}\locale"
 PROTOTYPES_PATH = fr"{PATH}\prototypes"
