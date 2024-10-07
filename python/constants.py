@@ -20,3 +20,5 @@ ITEMS_PATH = fr"{PROTOTYPES_PATH}\item.lua"
 FLUID_PATH = fr"{PROTOTYPES_PATH}\fluid.lua"
 RECIPES_PATH = fr"{PROTOTYPES_PATH}\recipe.lua"
 TECHNOLOGIES_PATH = fr"{PROTOTYPES_PATH}\technology.lua"
+KRASTORIO_TECHNOLOGIES_PATH = fr"{COMPATIBILITY_PATH}\aai-and-krastorio-technology.lua"
+

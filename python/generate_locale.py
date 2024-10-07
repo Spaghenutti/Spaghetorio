@@ -66,7 +66,7 @@ def get_sections(object_type: str) -> List[str]:
         case "technology":
             return ["technology-name"]
         case _:
-            raise KeyError(f"Lua type {object_type} not not matching known locale section.")
+            raise KeyError(f"Lua type {object_type} not matching known locale section.")
 
 
 def extend_locale(matches: List[Tuple[str, str]],
@@ -74,21 +74,20 @@ def extend_locale(matches: List[Tuple[str, str]],
     """
     Extends cfg locale file with keys and values from matches
     """
-    # config = configparser.ConfigParser()
-    # config.read(constants.LOCALE_ENGLISH_PATH)
-
-
     # Read the configuration file
     config = configparser.ConfigParser()
     config.read(locale_path)
 
-    # Sort the sections
-    sorted_sections = sorted(config.sections())
-
-    # Generate new key values
+    # Generate new key values from lua file
     for match in matches:
         key, value = generate_locale_value(match[0])
-        sorted_config.set(get_sections(match[1]), key, value)
+        # Add the keys and values
+        for section in get_sections(match[1]):
+            if not config.has_option(section, key):
+                config.set(section, key, value)
+
+    # Sort the sections
+    sorted_sections = sorted(config.sections())
 
     # Create a new ConfigParser object to store the sorted sections
     sorted_config = configparser.ConfigParser()
@@ -107,6 +106,10 @@ def extend_locale(matches: List[Tuple[str, str]],
     print("Sections sorted and written to 'sorted_example.ini'")
 
 
-
 if __name__ == "__main__":
+    extend_locale(parse_lua(constants.AUTOPLACE_CONTROL_PATH))
     extend_locale(parse_lua(constants.ITEMS_PATH))
+    extend_locale(parse_lua(constants.FLUID_PATH))
+    extend_locale(parse_lua(constants.RECIPES_PATH))
+    extend_locale(parse_lua(constants.TECHNOLOGIES_PATH))
+    extend_locale(parse_lua(constants.KRASTORIO_TECHNOLOGIES_PATH))
