@@ -1,4 +1,12 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.1.7
+Date: 2024-10-08
+  Features:
+    - Update locale for rockets
+    - Improved rocket graphics
+  Bugfixes:
+    - Putting wrong explorer into rocket now results in loosing it
+---------------------------------------------------------------------------------------------------
 Version: 0.1.6
 Date: 2024-10-07
   Features:

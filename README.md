@@ -20,13 +20,14 @@ Inspired by [brevven](https://mods.factorio.com/user/brevven).
 ### Known issues
 
 - The very advanced recipes do not show up in the corresponding crafting machines
-- Explorer satellites can be put into any rocket silo
+- Colors of barrels and smoke tints are all same color for items in this mod
+- Some items are missing radioactivity
 
 ### TODO List
 
 - Recipe / balance testing 
-- Add localization
 - Support for text plates
+- Add new buildings (Thank to custom graphics from [Hurricane046](https://mods.factorio.com/user/Hurricane046))
 
 ### Special Thanks
 
