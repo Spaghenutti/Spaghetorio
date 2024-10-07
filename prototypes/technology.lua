@@ -3070,6 +3070,10 @@ data:extend({
       },
       {
         type = "unlock-recipe",
+        recipe = "sp-blunagium-rocket"
+      },
+      {
+        type = "unlock-recipe",
         recipe = "sp-blunagium-rocket-silo"
       },
     },
@@ -3146,6 +3150,10 @@ data:extend({
       },
       {
         type = "unlock-recipe",
+        recipe = "sp-rukite-rocket"
+      },
+      {
+        type = "unlock-recipe",
         recipe = "sp-rukite-rocket-silo"
       },
     },
@@ -3198,6 +3206,10 @@ data:extend({
       },
       {
         type = "unlock-recipe",
+        recipe = "sp-yemnuth-rocket"
+      },
+      {
+        type = "unlock-recipe",
         recipe = "sp-yemnuth-rocket-silo"
       },
     },
@@ -3234,15 +3246,19 @@ data:extend({
     {
       {
         type = "unlock-recipe",
-        recipe = "sp-grobgnum-explorer"
-      },
-      {
-        type = "unlock-recipe",
         recipe = "sp-bioreactor"
       },
       {
         type = "unlock-recipe",
         recipe = "sp-biochip"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-grobgnum-explorer"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-grobgnum-rocket"
       },
       {
         type = "unlock-recipe",

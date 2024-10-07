@@ -7,6 +7,8 @@ import constants
 
 
 NAME_REGEX = r"name = \"([^\"]*)\",  -- #ForRegEx# - ([A-Za-z-]+)"
+UPDATE_NAME_REGEX = r".name = \"([^\"]*)\"  -- #ForRegEx# - ([A-Za-z-]+)"
+ALL_REGEX = [NAME_REGEX, UPDATE_NAME_REGEX]
 
 
 def parse_lua(lua_path: str) -> List[Tuple[str, str]]:
@@ -16,7 +18,7 @@ def parse_lua(lua_path: str) -> List[Tuple[str, str]]:
     @return List with found matches
     """
     with open(lua_path) as f:
-        matches = re.findall(NAME_REGEX, f.read())
+        matches = re.findall("|".join(ALL_REGEX), f.read())
 
     return matches
 
@@ -42,13 +44,15 @@ def get_sections(object_type: str) -> List[str]:
     match object_type:
         case "autoplace-control":
             return ["autoplace-control-name"]
+        case "entity":
+            return ["entity-name"]
         case "fluid":
             return ["fluid-name"]
         case "item" | "tool":
             return ["item-name"]
         case "recipe":
             return ["recipe-name"]
-        case "technology":
+        case "technology": 
             return ["technology-name"]
         case _:
             raise KeyError(f"Lua type {object_type} not matching known locale section.")
@@ -66,11 +70,13 @@ def extend_locale(matches: List[Tuple[str, str]],
     # Generate new key values from lua file
     for match in matches:
         try:
-            key, value = generate_locale_value(match[0])
-            # Add the keys and values
-            for section in get_sections(match[1]):
-                if not config.has_option(section, key):
-                    config.set(section, key, value)
+            for pair_index in range(len(ALL_REGEX)):
+                if match[pair_index*2] != "":
+                    key, value = generate_locale_value(match[pair_index*2])
+                    # Add the keys and values
+                    for section in get_sections(match[pair_index*2 + 1]):
+                        if not config.has_option(section, key):
+                            config.set(section, key, value)
         except KeyError as k:
             print(f"Skipping locale generation. {k}") 
 
@@ -91,8 +97,6 @@ def extend_locale(matches: List[Tuple[str, str]],
     with open(locale_path, 'w') as configfile:
         sorted_config.write(configfile, space_around_delimiters=False)
 
-    print("Sections sorted and written to 'sorted_example.ini'")
-
 
 def update_locale() -> None:
     """
@@ -104,8 +108,9 @@ def update_locale() -> None:
     extend_locale(parse_lua(constants.FLUID_PATH))
     extend_locale(parse_lua(constants.RECIPES_PATH))
     extend_locale(parse_lua(constants.KRASTORIO_RECIPES_PATH))
+    extend_locale(parse_lua(constants.ROCKET_SILO_PATH))
     extend_locale(parse_lua(constants.TECHNOLOGIES_PATH))
-    extend_locale(parse_lua(constants.KRASTORIO_TECHNOLOGIES_PATH))
+    extend_locale(parse_lua(constants.KRASTORIO_TECHNOLOGIES_PATH)) 
 
 
 if __name__ == "__main__":

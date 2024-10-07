@@ -40,6 +40,22 @@ data:extend({
     type = "recipe-category",
     name = "acroproduct-conversion-with-acrovoid"
   },
+  {
+    type = "recipe-category",
+    name = "blunagium-rocket-building"
+  },
+  {
+    type = "recipe-category",
+    name = "grobgnum-rocket-building"
+  },
+  {
+    type = "recipe-category",
+    name = "rukite-rocket-building"
+  },
+  {
+    type = "recipe-category",
+    name = "yemnuth-rocket-building"
+  }
 })
 
 table.insert(data.raw.furnace["steel-furnace"].crafting_categories, "crushed-smelting")

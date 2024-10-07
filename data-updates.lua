@@ -1,3 +1,4 @@
+
 -- Remove when updating file is done
 require("prototypes.recipe-changes")
 

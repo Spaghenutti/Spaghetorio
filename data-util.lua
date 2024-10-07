@@ -1,3 +1,4 @@
+
 local data_util = {}
 
 data_util.building = require("util.building")

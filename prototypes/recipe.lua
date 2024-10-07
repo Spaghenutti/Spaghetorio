@@ -3508,7 +3508,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-blunagium-rocket",  -- #ForRegEx# - recipe
-    category = "rocket-building",
+    category = "blunagium-rocket-building",
     enabled = false,
     hide_from_player_crafting = true,
     hidden = true,
@@ -3573,7 +3573,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-grobgnum-rocket",  -- #ForRegEx# - recipe
-    category = "rocket-building",
+    category = "grobgnum-rocket-building",
     enabled = false,
     hide_from_player_crafting = true,
     hidden = true,
@@ -3638,7 +3638,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-rukite-rocket",  -- #ForRegEx# - recipe
-    category = "rocket-building",
+    category = "rukite-rocket-building",
     enabled = false,
     hide_from_player_crafting = true,
     hidden = true,
@@ -3701,7 +3701,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-yemnuth-rocket",  -- #ForRegEx# - recipe
-    category = "rocket-building",
+    category = "yemnuth-rocket-building",
     enabled = false,
     hide_from_player_crafting = true,
     hidden = true,

@@ -19,7 +19,7 @@ AUTOPLACE_CONTROL_PATH = fr"{PROTOTYPES_PATH}\autoplace-control.lua"
 ITEMS_PATH = fr"{PROTOTYPES_PATH}\item.lua"
 FLUID_PATH = fr"{PROTOTYPES_PATH}\fluid.lua"
 RECIPES_PATH = fr"{PROTOTYPES_PATH}\recipe.lua"
+ROCKET_SILO_PATH = fr"{PROTOTYPES_PATH}\rocket-silo.lua"
 KRASTORIO_RECIPES_PATH = fr"{COMPATIBILITY_PATH}\aai-and-krastorio-recipe.lua"
 TECHNOLOGIES_PATH = fr"{PROTOTYPES_PATH}\technology.lua"
 KRASTORIO_TECHNOLOGIES_PATH = fr"{COMPATIBILITY_PATH}\aai-and-krastorio-technology.lua"
-
