@@ -939,6 +939,84 @@ blunagium_rocket.rocket_sprite = util.add_shift_offset(util.by_pixel(0, 32*3.5),
     scale = 0.5
   }
 })
+blunagium_rocket.rocket_flame_animation = util.add_shift_offset(util.by_pixel(-2, 257),
+  {
+    filename = "__base__/graphics/entity/rocket-silo/10-jet-flame.png",
+    priority = "medium",
+    blend_mode = "additive",
+    width = 87,
+    height = 128,
+    frame_count = 8,
+    line_length = 8,
+    animation_speed = 0.5,
+    scale = 0.4,
+    shift = util.by_pixel(-0.5, -2),
+    hr_version = {
+      filename = "__base__/graphics/entity/rocket-silo/hr-10-jet-flame.png",
+      priority = "medium",
+      blend_mode = "additive",
+      width = 172,
+      height = 256,
+      frame_count = 8,
+      line_length = 8,
+      animation_speed = 0.5,
+      scale = 0.4/2,
+      shift = util.by_pixel(-1, -2)
+    }
+  })
+blunagium_rocket.rocket_flame_left_animation = util.add_shift_offset(util.by_pixel(-28, 233),
+  {
+    filename = "__base__/graphics/entity/rocket-silo/10-jet-flame.png",
+    priority = "medium",
+    blend_mode = "additive",
+    width = 87,
+    height = 128,
+    frame_count = 8,
+    line_length = 8,
+    animation_speed = 0.5,
+    scale = 0.35,
+    shift = util.by_pixel(-0.5, -2),
+    hr_version = {
+      filename = "__base__/graphics/entity/rocket-silo/hr-10-jet-flame.png",
+      priority = "medium",
+      blend_mode = "additive",
+      width = 172,
+      height = 256,
+      frame_count = 8,
+      line_length = 8,
+      animation_speed = 0.5,
+      scale = 0.35/2,
+      shift = util.by_pixel(-1, -2)
+    }
+  })
+blunagium_rocket.rocket_flame_left_rotation = 0
+blunagium_rocket.rocket_flame_right_animation = util.add_shift_offset(util.by_pixel(24, 235),
+  {
+    filename = "__base__/graphics/entity/rocket-silo/10-jet-flame.png",
+    priority = "medium",
+    blend_mode = "additive",
+    width = 87,
+    height = 128,
+    frame_count = 8,
+    line_length = 8,
+    animation_speed = 0.5,
+    scale = 0.35,
+    shift = util.by_pixel(-0.5, -2),
+    hr_version = {
+      filename = "__base__/graphics/entity/rocket-silo/hr-10-jet-flame.png",
+      priority = "medium",
+      blend_mode = "additive",
+      width = 172,
+      height = 256,
+      frame_count = 8,
+      line_length = 8,
+      animation_speed = 0.5,
+      scale = 0.35/2,
+      shift = util.by_pixel(-1, -2)
+    }
+  })
+blunagium_rocket.rocket_flame_right_rotation = 0
+
 blunagium_rocket_silo = table.deepcopy(data.raw["rocket-silo"]["rocket-silo"])
 blunagium_rocket_silo.name = "sp-blunagium-rocket-silo"  -- #ForRegEx# - entity
 blunagium_rocket_silo.icon = "__Spaghetorio__/graphics/icons/blunagium-rocket-silo.png"
