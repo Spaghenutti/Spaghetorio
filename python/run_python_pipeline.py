@@ -36,7 +36,7 @@ create_alien_resource_icon.create_alien_resource()
 create_zip.create_zip()
 
 # Revert changes done by scripts
-repo.git.reset('--hard')
+# repo.git.reset('--hard')
 
 
 # Delete content in __pycache__

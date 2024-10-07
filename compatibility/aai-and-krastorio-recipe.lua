@@ -6,7 +6,7 @@ data:extend({
   ------------------------------------------------------------------------------
   {
     type = "recipe",
-    name = "kr-vc-sp-aluminum-ore",
+    name = "kr-vc-sp-aluminum-ore",  -- #ForRegEx# - recipe
     icon = "__Spaghetorio__/graphics/crushing/crushing-aluminum-ore.png",
     icon_size = 256,
     mip_maps = 4,
@@ -25,7 +25,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "kr-vc-sp-chromite",
+    name = "kr-vc-sp-chromite",  -- #ForRegEx# - recipe
     icon = "__Spaghetorio__/graphics/crushing/crushing-chromite.png",
     icon_size = 256,
     mip_maps = 4,
@@ -114,7 +114,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "kr-vc-sp-limestone",  -- replaces "sp-calcium-carbonate" recipe
+    name = "kr-vc-sp-limestone",  -- #ForRegEx# - recipe  -- replaces "sp-calcium-carbonate" recipe
     icon = "__Spaghetorio__/graphics/crushing/crushing-limestone.png",
     icon_size = 256,
     mip_maps = 4,
@@ -133,7 +133,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "kr-vc-sp-magnesium-ore",
+    name = "kr-vc-sp-magnesium-ore",  -- #ForRegEx# - recipe
     icon = "__Spaghetorio__/graphics/crushing/crushing-magnesium-ore.png",
     icon_size = 256,
     mip_maps = 4,
@@ -152,7 +152,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "kr-vc-sp-nickel-ore",
+    name = "kr-vc-sp-nickel-ore",  -- #ForRegEx# - recipe
     icon = "__Spaghetorio__/graphics/crushing/crushing-nickel-ore.png",
     icon_size = 256,
     mip_maps = 4,
@@ -172,7 +172,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "kr-vc-sp-spodumene",
+    name = "kr-vc-sp-spodumene",  -- #ForRegEx# - recipe
     icon = "__Spaghetorio__/graphics/crushing/crushing-spodumene.png",
     icon_size = 256,
     mip_maps = 4,
@@ -191,7 +191,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "kr-vc-sp-tinstone",
+    name = "kr-vc-sp-tinstone",  -- #ForRegEx# - recipe
     icon = "__Spaghetorio__/graphics/crushing/crushing-tinstone.png",
     icon_size = 256,
     mip_maps = 4,
@@ -210,7 +210,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "kr-vc-sp-titanium-ore",
+    name = "kr-vc-sp-titanium-ore",  -- #ForRegEx# - recipe
     icon = "__Spaghetorio__/graphics/crushing/crushing-titanium-ore.png",
     icon_size = 256,
     mip_maps = 4,
@@ -228,7 +228,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "kr-vc-sp-tungsten-ore",
+    name = "kr-vc-sp-tungsten-ore",  -- #ForRegEx# - recipe
     icon = "__Spaghetorio__/graphics/crushing/crushing-tungsten-ore.png",
     icon_size = 256,
     mip_maps = 4,
@@ -247,7 +247,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "kr-vc-sp-zinc-ore",
+    name = "kr-vc-sp-zinc-ore",  -- #ForRegEx# - recipe
     icon = "__Spaghetorio__/graphics/crushing/crushing-zinc-ore.png",
     icon_size = 256,
     mip_maps = 4,
@@ -267,7 +267,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "kr-vc-sp-zirconium-ore",
+    name = "kr-vc-sp-zirconium-ore",  -- #ForRegEx# - recipe
     icon = "__Spaghetorio__/graphics/crushing/crushing-zirconium-ore.png",
     icon_size = 256,
     mip_maps = 4,
@@ -413,7 +413,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "dirty-water-filtration-aluminum",  -- #ForRegEx# - recipe
+    name = "sp-dirty-water-filtration-aluminum",  -- #ForRegEx# - recipe
     icon = "__Spaghetorio__/graphics/icons/dirty-water-with-aluminum.png",
     icon_size = 64,
     mip_maps = 4,
@@ -472,7 +472,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "dirty-water-filtration-chromite",  -- #ForRegEx# - recipe
+    name = "sp-dirty-water-filtration-chromite",  -- #ForRegEx# - recipe
     icon = "__Spaghetorio__/graphics/icons/dirty-water-with-chromite.png",
     icon_size = 64,
     mip_maps = 4,
@@ -531,7 +531,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "dirty-water-filtration-magnesium",  -- #ForRegEx# - recipe
+    name = "sp-dirty-water-filtration-magnesium",  -- #ForRegEx# - recipe
     icon = "__Spaghetorio__/graphics/icons/dirty-water-with-magnesium.png",
     icon_size = 64,
     mip_maps = 4,
@@ -590,7 +590,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "dirty-water-filtration-nickel",  -- #ForRegEx# - recipe
+    name = "sp-dirty-water-filtration-nickel",  -- #ForRegEx# - recipe
     icon = "__Spaghetorio__/graphics/icons/dirty-water-with-nickel.png",
     icon_size = 64,
     mip_maps = 4,
@@ -649,7 +649,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "dirty-water-filtration-tinstone",  -- #ForRegEx# - recipe
+    name = "sp-dirty-water-filtration-tinstone",  -- #ForRegEx# - recipe
     icon = "__Spaghetorio__/graphics/icons/dirty-water-with-tin.png",
     icon_size = 64,
     mip_maps = 4,
@@ -708,7 +708,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "dirty-water-filtration-titanium",  -- #ForRegEx# - recipe
+    name = "sp-dirty-water-filtration-titanium",  -- #ForRegEx# - recipe
     icon = "__Spaghetorio__/graphics/icons/dirty-water-with-titanium.png",
     icon_size = 64,
     mip_maps = 4,
@@ -767,7 +767,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "dirty-water-filtration-tungsten",  -- #ForRegEx# - recipe
+    name = "sp-dirty-water-filtration-tungsten",  -- #ForRegEx# - recipe
     icon = "__Spaghetorio__/graphics/icons/dirty-water-with-tungsten.png",
     icon_size = 64,
     mip_maps = 4,
@@ -826,7 +826,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "dirty-water-filtration-zinc",  -- #ForRegEx# - recipe
+    name = "sp-dirty-water-filtration-zinc",  -- #ForRegEx# - recipe
     icon = "__Spaghetorio__/graphics/icons/dirty-water-with-zinc.png",
     icon_size = 64,
     mip_maps = 4,
