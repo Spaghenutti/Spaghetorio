@@ -19,7 +19,6 @@ Inspired by [brevven](https://mods.factorio.com/user/brevven).
 
 ### Known issues
 
-- The very advanced recipes do not show up in the corresponding crafting machines
 - Colors of barrels and smoke tints are all same color for items in this mod
 - Some items are missing radioactivity
 

@@ -40,6 +40,7 @@ data.raw.recipe["glass"].order = "a-plate-1-[glass]"
 data.raw.recipe["steel-beam"].order = "beam-[steel-beam]"
 data.raw.recipe["imersium-beam"].order = "beam-[imersium-beam]"
 
---MARK: Other
+--MARK: Items
+data.raw.item["steel-plate"].order = "a-plate-[steel-plate]"
 data.raw.item["steel-gear-wheel"].order = "gear-[steel-gear-wheel]"
 data.raw.item["biomass"].order = "z-[biomass]"
