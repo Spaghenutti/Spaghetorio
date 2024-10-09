@@ -1,6 +1,8 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.8
-Date: 2024-10-07
+Date: 2024-10-10
+  Features:
+    - Added radioactivity to nuclear items. Only works upon creating a new game.
   Bugfixes:
     - Changed position of steel plate icon
     - Moved krastorio matter-conversion and matter-deconversion recipes to base products item group
