@@ -2,8 +2,8 @@
 Buildings: Graphics (https://www.figma.com/proto/8ecwGOzYos13D0JTwV5kO9/Factorio-Buildings?node-id=2585-1158&node-type=frame&t=Tt0H6pFe0h0uH68x-0&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1ui%3D1&hotspot-hints=0&hide-ui=1)
   - cyclotron (Use convector building from hurricane406)
   - particle accelerator (Use fusion reactor building from hurricane406)
-  - Acroshpere converter (Use oxidizer building from hurricane406)
-  - core miner (Use core extractor building from hurricane406)
+  - Acroshpere converter or blunagium extractor (Use oxidizer building from hurricane406)
+  - core miner (Use core extractor building from hurricane406) (for version 0.2.0)
     - Core mining should have different ressources to mine from. Every resource returns a combination of ores / metals.
   - Lumber mill (Use Lumber mill from hurricane406)
   - Low gravity assembling machine (Use Low gravity assembling machine from hurricane406)
@@ -17,6 +17,8 @@ Items:
   - Antimatter cube
   - Quantized matter
   - Polarized matter
+  - Coolant with different temperatures (coolant does not have a real purpose right now, see Idea coolant)
+  - Vacuum chamber
   - Alloys:
 
   - For semiconductors:
@@ -24,33 +26,38 @@ Items:
     - Silicon nitride
   - Nuclear products:
     - Isotopes of some elements. (Create recipes which take in one isotope and have 50% chance during their halflife to convert to another element)
-  - Remove some barrel recipes like helium-3, grobgnum-liquids and matter recipes (Or add other containers that are not normal barrels)
   - Alloy science pack t2 and t3
   - More T4 tech cards
 
 Recipes:
-  - Disable productivity for acro-conversion recipes
+  + Disable productivity for acro-conversion recipes
   - Add multiple recipes for blank tech cards
   - Add recipes for fluids via acromatter
   - Dirty water can be evaporated
   - Add more complex recipe change for semiconductors
   - Add alternative recipes for existing things that use lead (like pipes, valves...)
   - Add smelt crafting recipes for advanced assembling machine (see "kr-automation")
+  + Remove some barrel recipes like helium-3, grobgnum-liquids and matter recipes (Or add other containers that are not normal barrels)
   - Add recycling recipes for items that clog up production chain (break unused things down to trash and use trash for low grade recipes)
   - Add special barrel for alien liquids
   - Add special barrel for cold liquids like liquid nitrogen
   - Add special barrel for radioactive liquids
 
 Resources:
-  - Obsidian (volcanic rock that contains silica, aluminum and potassium)
+  - Obsidian (for core miner - volcanic rock that contains silica, aluminum and potassium) (for version 0.2.0)
 
 Technologies:
   - Add Infinite technologies:
     -
 
 Ideas:
-  - Add scripting to acrospheres
   - Change fluid inputs and outputs for kr-matter-plant and kr-matter-assembler
+  - Configure stack sizes in settings
+  - Burn useless things for energy
+  - Add multiple liquit inputs / outputs for assembling machines. Coolant might be here interesting to use.
+  - Create multiple resurce patches for grobgnum (for version 0.2.0)
+  - Only higher tier miners can mine high tier resources (for version 0.2.0)
+  - Add scripting to acrospheres (for version 0.3.0 or higher)
 
 Other:
   - Support text plates mod
@@ -68,6 +75,7 @@ Other:
     - Infra red filter
   - Add glow to alien items
   - Fix stack sizes (for version 0.2.0)
+  - Fix resource spawning (for version 0.2.0)
 
 Low prio:
   - Reorder in lua code recipes, items for simpler searching

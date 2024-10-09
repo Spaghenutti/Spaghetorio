@@ -97,9 +97,10 @@ function data_util.hide_recipe_from_player_category(category)
 end
 
 -- remove barrel recipes for a given fluid
-function data_util.remove_barrel_recipe(fluid)
-  remove_prototypes.remove_one_prototype("recipe", "fill-"..fluid.."-barrel")
-  remove_prototypes.remove_one_prototype("recipe", "empty-"..fluid.."-barrel")
+function data_util.remove_barrel_recipe(fluid_name)
+  remove_prototypes.remove_one_prototype("recipe", "fill-"..fluid_name.."-barrel")
+  remove_prototypes.remove_one_prototype("recipe", "empty-"..fluid_name.."-barrel")
+  -- remove_prototypes.remove_one_prototype("item", fluid_name.."-barrel")  -- dunno why this results in crash
 end
 
 return data_util
