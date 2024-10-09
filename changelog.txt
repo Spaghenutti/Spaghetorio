@@ -3,6 +3,7 @@ Version: 0.1.8
 Date: 2024-10-07
   Bugfixes:
     - Changed position of steel plate icon
+    - Moved krastorio matter convertion recipes to base products item group
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.7
 Date: 2024-10-08

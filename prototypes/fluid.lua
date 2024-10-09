@@ -508,6 +508,45 @@ data:extend({
     subgroup = "alien",
     order = "a[fluid]-f[chronomatter]"
   },
+  {
+    type = "fluid",
+    name = "sp-antimatter",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1KJ",
+    base_color = {r=0.05, g=0.1, b=0.5},
+    flow_color = {r=0.05, g=0.1, b=0.5},
+    icon = "__Spaghetorio__/graphics/icons/antimatter.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "alien",
+    order = "a[fluid]-y2[antimatter]"
+  },
+  {
+    type = "fluid",
+    name = "sp-dark-matter",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1KJ",
+    base_color = {r=0.05, g=0.1, b=0.5},
+    flow_color = {r=0.05, g=0.1, b=0.5},
+    icon = "__Spaghetorio__/graphics/icons/dark-matter.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "alien",
+    order = "a[fluid]-z1[dark-matter]"
+  },
+  {
+    type = "fluid",
+    name = "sp-dark-energy",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1KJ",
+    base_color = {r=0.05, g=0.1, b=0.5},
+    flow_color = {r=0.05, g=0.1, b=0.5},
+    icon = "__Spaghetorio__/graphics/icons/dark-energy.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "alien",
+    order = "a[fluid]-z2[dark-energy]"
+  },
 })
 
 if not mods["Krastorio2"] then

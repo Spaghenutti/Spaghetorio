@@ -44,3 +44,14 @@ data.raw.recipe["imersium-beam"].order = "beam-[imersium-beam]"
 data.raw.item["steel-plate"].order = "a-plate-[steel-plate]"
 data.raw.item["steel-gear-wheel"].order = "gear-[steel-gear-wheel]"
 data.raw.item["biomass"].order = "z-[biomass]"
+
+--MARK: Fluids
+data.raw.fluid["matter"].order = "a[fluid]-y1[matter]"
+
+-- Change order of science items
+data.raw.tool["production-science-pack"].order = "j[production-science-pack]"  -- Done here due to krastorio changing the order
+data.raw.tool["utility-science-pack"].order = "k[utility-science-pack]"  -- Done here due to krastorio changing the order
+data.raw.tool["matter-tech-card"].order = "m[matter-tech-card]"
+
+-- Change capsule
+data.raw.capsule["first-aid-kit"].order  = "b[repair]-a[first-aid-kit]"

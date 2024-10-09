@@ -1,4 +1,77 @@
 
+Buildings: Graphics (https://www.figma.com/proto/8ecwGOzYos13D0JTwV5kO9/Factorio-Buildings?node-id=2585-1158&node-type=frame&t=Tt0H6pFe0h0uH68x-0&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1ui%3D1&hotspot-hints=0&hide-ui=1)
+  - cyclotron (Use convector building from hurricane406)
+  - particle accelerator (Use fusion reactor building from hurricane406)
+  - core miner (Use core extractor building from hurricane406)
+    - Core mining should have different ressources to mine from. Every resource returns a combination of ores / metals.
+
+Items:
+  - Seal
+  - Bearing
+  - Seeds (for trees)
+  - Antimatter trains
+  - Antimatter cube
+  - Quantized matter
+  - Polarized matter
+  - Alloys:
+
+  - For semiconductors:
+    - Tantalum nitride
+    - Silicon nitride
+  - Nuclear products:
+    - Isotopes of some elements. (Create recipes which take in one isotope and have 50% chance during their halflife to convert to another element)
+  - Remove some barrel recipes like helium-3, grobgnum-liquids and matter recipes (Or add other containers that are not normal barrels)
+  - Alloy science pack t2 and t3
+  - More T4 tech cards
+
+Recipes:
+  - Disable productivity for acro-conversion recipes
+  - Add multiple recipes for blank tech cards
+  - Add recipes for fluids via acromatter
+  - Dirty water can be evaporated
+  - Add more complex recipe change for semiconductors
+  - Add alternative recipes for existing things that use lead (like pipes, valves...)
+  - Add smelt crafting recipes for advanced assembling machine (see "kr-automation")
+  - Add recycling recipes for items that clog up production chain (break unused things down to trash and use trash for low grade recipes)
+
+Resources:
+  - Obsidian (volcanic rock that contains silica, aluminum and potassium)
+
+Technologies:
+  - Add Infinite technologies:
+    -
+
+Ideas:
+  - 
+
+Other:
+  - Support text plates mod
+  - Fix energy values of fluids
+  - Fix barrel tints
+  - Fix smoke tints for chemical plant
+  - Krastorio: add radioactivity
+  - Asteroid mining
+  - Add glow to tech cards
+  - Update icons with isometric perspective:
+    - Alloys
+    - Plates
+    - Ingots
+    - Mirror
+    - Infra red filter
+  - Add glow to alien items
+  - Fix stack sizes (for version 0.2.0)
+
+Low prio:
+  - Reorder recipes, items for simpler searching in code
+  - Add new files for changing subgroup (just like order-fixes.lua)
+  - Create function to generate acroproduct-conversion recipes
+  - Create file for acroproduct-conversion recipes
+  - For items and fluids add to icon chemical formula and add picture without chemical formula (such that when item is on conveyor belt text does not show up). Also try to add this feature for barrels.
+
+------------------------------------------------------------------------------------------------------------------------
+-- DEPRECATED TODO
+------------------------------------------------------------------------------------------------------------------------
+
 TODO:
   + Add all the technology cards
     + 4 Levels:
@@ -40,11 +113,11 @@ TODO:
   - Fix barrel tints of fluids
   - Add radiocativity to radioactive items
   + Fix such that only blunagium explorer can be launched from blunagium rocket silo (also do this for grobgnum, rukite and yemnuth)
-  - Create better recipes for blunagium, grobgnum, rukite and yemnuth rocket silos
-  - Add colors to blunagium, grobgnum, rukite and yemnuth rocket silos
-  - Fix engine exhaust and shadow for rockets
-  - Add recipes for converting matter into resources
-  - Add recipes for converting acrospheres into rare and noble metals (Check eliminated crushing recipes)
+  + Create better recipes for blunagium, grobgnum, rukite and yemnuth rocket silos
+  + Add colors to blunagium, grobgnum, rukite and yemnuth rocket silos
+  + Fix engine exhaust and shadow for rockets
+  + Add recipes for converting matter into resources
+  + Add recipes for converting acrospheres into rare and noble metals (Check eliminated crushing recipes)
   - Add smelt crafting recipes for advanced assembling machine (see "kr-automation")
   - Disable productivity for acro-conversion recipes
   - Asteroid mining
@@ -73,12 +146,12 @@ Low prio
   - Add seal
   - Add bearing
   - Add more than 3 recipes to catalysts
-  - Fix vinyl chloride icon
-  - Replace ore icons with factorio base icons
-  - Add crushing for ores before smelting. Use icons used for ores by midjourney
-  - Add different types of dirty water
+  + Fix vinyl chloride icon
+  + Replace ore icons with factorio base icons
+  + Add crushing for ores before smelting. Use icons used for ores by midjourney
+  + Add different types of dirty water
   - Dirty water can be filtered or evaporated. Add corresponding recipes for filtering and evaporating.
-  - Add crushing recipes
+  + Add crushing recipes
   + Add products of limestone, like fluorspar and the others in the correct proportions to concrete
   - Add kevlar to pressure tanks
   - Add crushed rare metals
@@ -90,8 +163,8 @@ Low prio
   - Unlock much earlier filter inserter
   - Add dark matter, quantized matter, polarized matter, dark energy as fluids
   - disable handcrafting for all alien items
-  - Add personal roboports MK3 and MK4
-  - Add uses to deuterium
+  + Add personal roboports MK3 and MK4
+  + Add uses to deuterium
   - Add uses antimatter (icon already exists)
   - Change gravitonium to fluid
   - Add dark matter and dark energy as fluid
