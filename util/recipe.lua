@@ -1,4 +1,5 @@
 -- Contains functions for editing recipes
+local remove_prototypes = require("remove-prototypes")
 
 local data_util = {}
 
@@ -93,6 +94,12 @@ function data_util.hide_recipe_from_player_category(category)
       recipe.hide_from_player_crafting = true
     end
   end
+end
+
+-- remove barrel recipes for a given fluid
+function data_util.remove_barrel_recipe(fluid)
+  remove_prototypes.remove_one_prototype("recipe", "fill-"..fluid.."-barrel")
+  remove_prototypes.remove_one_prototype("recipe", "empty-"..fluid.."-barrel")
 end
 
 return data_util

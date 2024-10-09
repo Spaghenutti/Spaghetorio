@@ -6,6 +6,7 @@ Date: 2024-10-10
   Bugfixes:
     - Changed position of steel plate icon
     - Moved krastorio matter-conversion and matter-deconversion recipes to base products item group
+    - Removed recipes from barrel recipes that are not supposed to exist (like dark energy in a barrel seems anticlimactic)
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.7
 Date: 2024-10-08

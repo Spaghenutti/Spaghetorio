@@ -2,8 +2,12 @@
 Buildings: Graphics (https://www.figma.com/proto/8ecwGOzYos13D0JTwV5kO9/Factorio-Buildings?node-id=2585-1158&node-type=frame&t=Tt0H6pFe0h0uH68x-0&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1ui%3D1&hotspot-hints=0&hide-ui=1)
   - cyclotron (Use convector building from hurricane406)
   - particle accelerator (Use fusion reactor building from hurricane406)
+  - Acroshpere converter (Use oxidizer building from hurricane406)
   - core miner (Use core extractor building from hurricane406)
     - Core mining should have different ressources to mine from. Every resource returns a combination of ores / metals.
+  - Lumber mill (Use Lumber mill from hurricane406)
+  - Low gravity assembling machine (Use Low gravity assembling machine from hurricane406)
+  - Something else :D (Use Arc furnace from hurricane406) - I think the building uses heatpipes
 
 Items:
   - Seal
@@ -33,6 +37,9 @@ Recipes:
   - Add alternative recipes for existing things that use lead (like pipes, valves...)
   - Add smelt crafting recipes for advanced assembling machine (see "kr-automation")
   - Add recycling recipes for items that clog up production chain (break unused things down to trash and use trash for low grade recipes)
+  - Add special barrel for alien liquids
+  - Add special barrel for cold liquids like liquid nitrogen
+  - Add special barrel for radioactive liquids
 
 Resources:
   - Obsidian (volcanic rock that contains silica, aluminum and potassium)
@@ -42,14 +49,15 @@ Technologies:
     -
 
 Ideas:
-  - 
+  - Add scripting to acrospheres
+  - Change fluid inputs and outputs for kr-matter-plant and kr-matter-assembler
 
 Other:
   - Support text plates mod
   - Fix energy values of fluids
   - Fix barrel tints
   - Fix smoke tints for chemical plant
-  - Krastorio: add radioactivity
+  + Krastorio: add radioactivity
   - Asteroid mining
   - Add glow to tech cards
   - Update icons with isometric perspective:
@@ -62,7 +70,7 @@ Other:
   - Fix stack sizes (for version 0.2.0)
 
 Low prio:
-  - Reorder recipes, items for simpler searching in code
+  - Reorder in lua code recipes, items for simpler searching
   - Add new files for changing subgroup (just like order-fixes.lua)
   - Create function to generate acroproduct-conversion recipes
   - Create file for acroproduct-conversion recipes

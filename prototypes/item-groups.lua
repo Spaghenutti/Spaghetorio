@@ -294,3 +294,6 @@ data:extend({
     order = "f"
   }
 })
+
+data.raw["item-subgroup"]["fill-barrel"].group = "fluid"
+data.raw["item-subgroup"]["empty-barrel"].group = "fluid"

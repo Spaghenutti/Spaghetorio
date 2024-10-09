@@ -2773,12 +2773,6 @@ util.recipe.change_recipe_ingredients("artillery-targeting-remote",
   2,
   3)
 
--- util.recipe.change_recipe_ingredients("",
---   {},
---   {},
---   1,
---   1)
-
 -- MARK: Not sure if this is Krastorio
 util.recipe.change_recipe_ingredients("iron-beam",
   {
@@ -2789,6 +2783,19 @@ util.recipe.change_recipe_ingredients("iron-beam",
   },
   1,
   2)
+
+-- Remove barrel recipes
+util.recipe.remove_barrel_recipe("sp-liquid-nitrogen")
+util.recipe.remove_barrel_recipe("heavy-water")
+util.recipe.remove_barrel_recipe("sp-deuterium")
+
+util.recipe.remove_barrel_recipe("sp-chronomatter")
+util.recipe.remove_barrel_recipe("sp-grobgnum-hydroxide")
+util.recipe.remove_barrel_recipe("sp-grobgnum-slurry")
+util.recipe.remove_barrel_recipe("sp-grobgnumylene")
+util.recipe.remove_barrel_recipe("sp-antimatter")
+util.recipe.remove_barrel_recipe("sp-dark-matter")
+util.recipe.remove_barrel_recipe("sp-dark-energy")
 
 if not mods["Krastorio2"] then
   table.insert(data.raw.recipe["concrete"].normal.ingredients, {"sp-sand", 5})
