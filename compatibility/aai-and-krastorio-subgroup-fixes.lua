@@ -99,3 +99,7 @@ data.raw.recipe["bio-fuel"].subgroup = "fuel-processing"
 data.raw.recipe["advanced-fuel"].subgroup = "fuel-processing"
 
 data.raw.recipe["imersite-crystal"].subgroup = "alien-material"
+
+-- MARK: Change group
+data.raw["item-subgroup"]["matter-conversion"].group = "base-products"
+data.raw["item-subgroup"]["matter-deconversion"].group = "base-products"

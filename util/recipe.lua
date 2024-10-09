@@ -51,6 +51,7 @@ function data_util.disable_recipe(recipe_name)
   end
 end
 
+-- Sets allow_decomposition of recipe to false for a given category
 function data_util.block_decomposition_for_recipe_category(category)
   for i, recipe in pairs(data.raw.recipe) do
     if recipe.category == category then
@@ -59,6 +60,7 @@ function data_util.block_decomposition_for_recipe_category(category)
   end
 end
 
+-- Sets allow_decomposition of recipe to false for a given subgroup
 function data_util.block_decomposition_for_recipe_subgroup(subgroup)
   for i, recipe in pairs(data.raw.recipe) do
     if recipe.subgroup == subgroup then
@@ -67,6 +69,7 @@ function data_util.block_decomposition_for_recipe_subgroup(subgroup)
   end
 end
 
+-- Sets allow_decomposition of recipe to false if a recipe has multiple results
 function data_util.block_decomposition_recipe_with_multiple_results()
   for i, recipe in pairs(data.raw.recipe) do
     local results_count = 0
@@ -83,6 +86,7 @@ function data_util.block_decomposition_recipe_with_multiple_results()
   end
 end
 
+-- Sets hide_from_player_crafting of recipe to false for a given category
 function data_util.hide_recipe_from_player_category(category)
   for i, recipe in pairs(data.raw.recipe) do
     if recipe.category == category then
