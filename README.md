@@ -9,6 +9,7 @@ Inspired by [brevven](https://mods.factorio.com/user/brevven).
 - 14 new ores like **aluminum ore**, **chromite**, **limestone** and **magnesium**
 - over 350 new items like **inconel**, **copper tube**, **gear box**, **processor** and of course **dark energy harvester**
 - over 40 new fluids like **aqueous niobium**, **helium 3**, **ethylene** and **chronomatter**
+- over 500 new recipes
 - 26 new science packs
 - over 160 new techonolgies
 
@@ -16,11 +17,6 @@ Inspired by [brevven](https://mods.factorio.com/user/brevven).
 
 - Requires [Krastorio 2](https://mods.factorio.com/mod/Krastorio2)
 - Requires [AAI Industry](https://mods.factorio.com/mod/aai-industry?from=search)
-
-### Known issues
-
-- Colors of barrels and smoke tints are all same color for items in this mod
-- Some items are missing radioactivity
 
 ### TODO List
 
