@@ -7,6 +7,10 @@ Date: 2024-10-10
     - Changed position of steel plate icon
     - Moved krastorio matter-conversion and matter-deconversion recipes to base products item group
     - Removed recipes from barrel recipes that are not supposed to exist (like dark energy in a barrel seems anticlimactic)
+    - Fixed barrel tints 
+    - Fixed chemistry crafting machine tints
+    - Nickel ore is now correctly crushed into crushed nickel ore
+    - Some crushing recipes have more than 3 outputs. The krastorio crusher now has 8 output slots.
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.7
 Date: 2024-10-08

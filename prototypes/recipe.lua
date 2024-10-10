@@ -153,6 +153,12 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-anodized-aluminum", amount = 2}
+    },
+    crafting_machine_tint = {
+      primary = {r = 1.000, g = 1.000, b = 1.000, a = 1.000},
+      secondary = {r = 0.771, g = 0.771, b = 0.771, a = 1.000},
+      tertiary = {r = 0.768, g = 0.665, b = 0.762, a = 1.000},
+      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
     }
   },
   {
@@ -211,6 +217,12 @@ data:extend({
     results = {
       {type = "item", name = "sp-fluorine", amount = 2},
       {type = "item", name = "sp-calcium", amount = 2}
+    },
+    crafting_machine_tint = {
+      primary = {r = 1.000, g = 0.900, b = 1.900, a = 1.000},
+      secondary = {r = 0.771, g = 0.7, b = 0.7, a = 1.000},
+      tertiary = {r = 0.768, g = 0.5, b = 0.5, a = 1.000},
+      quaternary = {r = 0.2, g = 0.000, b = 0.000, a = 1.000},
     }
   },
   {
@@ -227,10 +239,10 @@ data:extend({
       {type = "item", name = "sp-salt", amount = 1}
     },
     crafting_machine_tint = {
-      primary = {r = 1.000, g = 1.000, b = 1.000, a = 1.000}, -- #fefeffff
-      secondary = {r = 0.771, g = 0.771, b = 0.771, a = 1.000}, -- #c4c4c4ff
-      tertiary = {r = 0.768, g = 0.665, b = 0.762, a = 1.000}, -- #c3a9c2ff
-      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000}, -- #000000ff
+      primary = {r = 1.000, g = 1.000, b = 1.000, a = 1.000},
+      secondary = {r = 0.771, g = 0.771, b = 0.771, a = 1.000},
+      tertiary = {r = 0.768, g = 0.665, b = 0.762, a = 1.000},
+      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
     }
   },
   {
@@ -247,10 +259,10 @@ data:extend({
       {type = "fluid", name = "sp-liquid-sodium", amount = 40}
     },
     crafting_machine_tint = {
-      primary = {r = 1.000, g = 1.000, b = 1.000, a = 1.000}, -- #fefeffff
-      secondary = {r = 0.771, g = 0.771, b = 0.771, a = 1.000}, -- #c4c4c4ff
-      tertiary = {r = 0.768, g = 0.665, b = 0.762, a = 1.000}, -- #c3a9c2ff
-      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000}, -- #000000ff
+      primary = {r = 1.000, g = 1.000, b = 0.0, a = 1.000},
+      secondary = {r = 0.771, g = 0.771, b = 0.0, a = 1.000},
+      tertiary = {r = 0.768, g = 0.665, b = 0.0, a = 1.000},
+      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
     },
     order = "[liquid]-[liquid-sodium]"
   },
@@ -513,6 +525,12 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-niobium-billet", amount = 1}
+    },
+    crafting_machine_tint = {
+      primary = {r = 0.500, g = 1.000, b = 0.500, a = 1.000},
+      secondary = {r = 0.0, g = 0.771, b = 0.0, a = 1.000},
+      tertiary = {r = 0.0, g = 0.665, b = 0.0, a = 1.000},
+      quaternary = {r = 0.000, g = 0.2, b = 0.000, a = 1.000},
     }
   },
   {
@@ -526,6 +544,12 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-tantalum-billet", amount = 1}
+    },
+    crafting_machine_tint = {
+      primary = {r = 0.700, g = 1.000, b = 0.700, a = 1.000},
+      secondary = {r = 0.30, g = 0.771, b = 0.30, a = 1.000},
+      tertiary = {r = 0.0, g = 0.665, b = 0.0, a = 1.000},
+      quaternary = {r = 0.000, g = 0.2, b = 0.000, a = 1.000},
     }
   },
   {
@@ -680,6 +704,12 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-tellurium", amount = 2},
+    },
+    crafting_machine_tint = {
+      primary = {r = 0.500, g = 0.500, b = 0.500, a = 1.000},
+      secondary = {r = 0.3, g = 0.3, b = 0.3, a = 1.000},
+      tertiary = {r = 0.2, g = 0.2, b = 0.2, a = 1.000},
+      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
     }
   },
   {
@@ -1181,6 +1211,12 @@ data:extend({
       {type = "item", name = "copper-ore", amount = 1},
       {type = "item", name = "sp-tinstone", probability = 0.5, amount = 1},
       {type = "item", name = "sp-silver", probability = 0.2, amount = 1}
+    },
+    crafting_machine_tint = {
+      primary = {r = 0.000, g = 0.000, b = 0.500, a = 1.000},
+      secondary = {r = 0.0, g = 0.0, b = 0.3, a = 1.000},
+      tertiary = {r = 0.0, g = 0.0, b = 0.2, a = 1.000},
+      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
     },
     order = "z-filtration-[sulfur]"
   },
@@ -1789,6 +1825,12 @@ data:extend({
     results = {
       {type = "fluid", name = "sp-coolant", amount = 50}
     },
+    crafting_machine_tint = {
+      primary = {r = 0.500, g = 0.500, b = 1.000, a = 1.000},
+      secondary = {r = 0.500, g = 0.500, b = 1.000, a = 1.000},
+      tertiary = {r = 0.200, g = 0.200, b = 1.000, a = 1.000},
+      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
+    },
     order = "[liquid]-[aqueous-niobium-and-tantalum]"
   },
   {
@@ -1999,6 +2041,12 @@ data:extend({
     },
     results = {
       {type = "item", name = "sulfur", amount = 6}
+    },
+    crafting_machine_tint = {
+      primary = {r = 1.000, g = 1.000, b = 0.500, a = 1.000},
+      secondary = {r = 0.771, g = 0.771, b = 0.0, a = 1.000},
+      tertiary = {r = 0.768, g = 0.665, b = 0.0, a = 1.000},
+      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
     }
   },
   {
@@ -2013,6 +2061,12 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-phosphorus", amount = 1}
+    },
+    crafting_machine_tint = {
+      primary = {r = 1.000, g = 0.3, b = 0.3, a = 1.000},
+      secondary = {r = 0.771, g = 0.0, b = 0.0, a = 1.000},
+      tertiary = {r = 0.768, g = 0.0, b = 0.0, a = 1.000},
+      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
     }
   },
   {
@@ -2413,6 +2467,12 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-catalyst", amount = 1}
+    },
+    crafting_machine_tint = {
+      primary = {r = 1.000, g = 1.000, b = 0.500, a = 1.000},
+      secondary = {r = 0.771, g = 0.771, b = 0.0, a = 1.000},
+      tertiary = {r = 0.768, g = 0.665, b = 0.0, a = 1.000},
+      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
     }
   },
   {
@@ -2446,6 +2506,12 @@ data:extend({
     results = {
       {type = "fluid", name = "sp-phosphoric-acid", amount = 25}
     },
+    crafting_machine_tint = {
+      primary = {r = 1.000, g = 1.000, b = 0.000, a = 1.000},
+      secondary = {r = 0.771, g = 0.771, b = 0.0, a = 1.000},
+      tertiary = {r = 0.768, g = 0.665, b = 0.0, a = 1.000},
+      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
+    },
     order = "molecule-[phosphoric-acid]"
   },
   {
@@ -2462,6 +2528,12 @@ data:extend({
     },
     results = {
       {type = "fluid", name = "sp-sulfamate", amount = 30}
+    },
+    crafting_machine_tint = {
+      primary = {r = 1.000, g = 0.6, b = 0.4, a = 1.000},
+      secondary = {r = 0.771, g = 0.3, b = 0.2, a = 1.000},
+      tertiary = {r = 0.768, g = 0.0, b = 0.0, a = 1.000},
+      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
     },
     order = "molecule-[sulfamate]"
   },
@@ -2480,6 +2552,12 @@ data:extend({
     results = {
       {type = "fluid", name = "sp-perchloric-acid", amount = 30}
     },
+    crafting_machine_tint = {
+      primary = {r = 0.800, g = 1.000, b = 0.4, a = 1.000},
+      secondary = {r = 0.4, g = 0.771, b = 0.2, a = 1.000},
+      tertiary = {r = 0.0, g = 0.665, b = 0.0, a = 1.000},
+      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
+    },
     order = "molecule-[perchloric-acid]"
   },
   {
@@ -2496,6 +2574,12 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-rubber", amount = 2}
+    },
+    crafting_machine_tint = {
+      primary = {r = 0.3, g = 0.3, b = 0.3, a = 1.000},
+      secondary = {r = 0.1, g = 0.1, b = 0.1, a = 1.000},
+      tertiary = {r = 0.0, g = 0.0, b = 0.0, a = 1.000},
+      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
     }
   },
   {
@@ -2670,6 +2754,12 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-insulation-sheet", amount = 1}
+    },
+    crafting_machine_tint = {
+      primary = {r = 1.000, g = 1.000, b = 1.000, a = 1.000},
+      secondary = {r = 0.9, g = 0.9, b = 0.9, a = 1.000},
+      tertiary = {r = 0.7, g = 0.7, b = 0.7, a = 1.000},
+      quaternary = {r = 0.5, g = 0.5, b = 0.5, a = 1.000},
     }
   },
   {
@@ -2735,6 +2825,12 @@ data:extend({
     results = {
       {type = "fluid", name = "sp-propane", amount = 40}
     },
+    crafting_machine_tint = {
+      primary = {r = 0.7, g = 0.7, b = 0.7, a = 1.000},
+      secondary = {r = 0.2, g = 0.2, b = 0.2, a = 1.000},
+      tertiary = {r = 0.0, g = 0.0, b = 0.0, a = 1.000},
+      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
+    },
     order = "molecule-[propane]"
   },
   {
@@ -2757,6 +2853,12 @@ data:extend({
       {type = "fluid", name = "sp-ethylene", amount = 40},
       {type = "fluid", name = "sp-propane", amount = 50},
     },
+    crafting_machine_tint = {
+      primary = {r = 0.8, g = 0.8, b = 0.8, a = 1.000},
+      secondary = {r = 0.2, g = 0.2, b = 0.2, a = 1.000},
+      tertiary = {r = 0.1, g = 0.1, b = 0.1, a = 1.000},
+      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
+    },
     order = "molecule-[ethylene-and-propene]"
   },
   {
@@ -2774,6 +2876,12 @@ data:extend({
     results = {
       {type = "fluid", name = "sp-methyl-tert-butyl-ether", amount = 50}
     },
+    crafting_machine_tint = {
+      primary = {r = 0.7, g = 0.7, b = 0.7, a = 1.000},
+      secondary = {r = 0.3, g = 0.3, b = 0.3, a = 1.000},
+      tertiary = {r = 0.0, g = 0.0, b = 0.0, a = 1.000},
+      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
+    },
     order = "molecule-[methyl-tert-butyl-ether]"
   },
   {
@@ -2789,6 +2897,12 @@ data:extend({
     },
     results = {
       {type = "fluid", name = "sp-propylene", amount = 100},
+    },
+    crafting_machine_tint = {
+      primary = {r = 0.9, g = 0.9, b = 0.9, a = 1.000},
+      secondary = {r = 0.5, g = 0.5, b = 0.5, a = 1.000},
+      tertiary = {r = 0.0, g = 0.0, b = 0.0, a = 1.000},
+      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
     },
     order = "molecule-[propylene]"
   },
@@ -2808,6 +2922,12 @@ data:extend({
     results = {
       {type = "fluid", name = "sp-sodium-hydroxide", amount = 20},
     },
+    crafting_machine_tint = {
+      primary = {r = 0.6, g = 0.0, b = 0.6, a = 1.000},
+      secondary = {r = 0.3, g = 0.0, b = 0.3, a = 1.000},
+      tertiary = {r = 0.1, g = 0.0, b = 0.1, a = 1.000},
+      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
+    }
   },
   {
     type = "recipe",
@@ -2823,6 +2943,12 @@ data:extend({
     },
     results = {
       {type = "fluid", name = "sp-sodium-hydroxide", amount = 60},
+    },
+    crafting_machine_tint = {
+      primary = {r = 0.6, g = 0.4, b = 0.6, a = 1.000},
+      secondary = {r = 0.3, g = 0.2, b = 0.3, a = 1.000},
+      tertiary = {r = 0.1, g = 0.1, b = 0.1, a = 1.000},
+      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
     }
   },
   {
@@ -2840,6 +2966,12 @@ data:extend({
     },
     results = {
       {type = "fluid", name = "sp-benzene", amount = 50}
+    },
+    crafting_machine_tint = {
+      primary = {r = 0.6, g = 0.6, b = 0.6, a = 1.000},
+      secondary = {r = 0.3, g = 0.3, b = 0.3, a = 1.000},
+      tertiary = {r = 0.1, g = 0.1, b = 0.1, a = 1.000},
+      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
     }
   },
   {
@@ -2857,6 +2989,12 @@ data:extend({
     },
     results = {
       {type = "fluid", name = "sp-styrene", amount = 20}
+    },
+    crafting_machine_tint = {
+      primary = {r = 0.3, g = 0.3, b = 0.3, a = 1.000},
+      secondary = {r = 0.1, g = 0.1, b = 0.1, a = 1.000},
+      tertiary = {r = 0.1, g = 0.1, b = 0.1, a = 1.000},
+      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
     }
   },
   {
@@ -2978,6 +3116,12 @@ data:extend({
     },
     results = {
       {type = "fluid", name = "sp-chronomatter", amount = 1}
+    },
+    crafting_machine_tint = {
+      primary = {r = 1.000, g = 0.000, b = 0.000, a = 1.000},
+      secondary = {r = 0.9, g = 0.0, b = 0.0, a = 1.000},
+      tertiary = {r = 0.8, g = 0.0, b = 0.0, a = 1.000},
+      quaternary = {r = 0.3, g = 0.000, b = 0.000, a = 1.000},
     },
     order = "z[alien]-[chronomatter]"
   },
@@ -3271,6 +3415,12 @@ data:extend({
     results = {
       {type = "fluid", name = "sp-grobgnum-slurry", amount = 20}
     },
+    crafting_machine_tint = {
+      primary = {r = 0.000, g = 0.8, b = 0.000, a = 1.000},
+      secondary = {r = 0.0, g = 0.3, b = 0.0, a = 1.000},
+      tertiary = {r = 0.0, g = 0.0, b = 0.0, a = 1.000},
+      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
+    },
     order = "z[alien]-[grobgnum-slurry]"
   },
   {
@@ -3289,6 +3439,12 @@ data:extend({
     results = {
       {type = "fluid", name = "sp-grobgnumylene", amount = 20}
     },
+    crafting_machine_tint = {
+      primary = {r = 0.000, g = 1.000, b = 0.000, a = 1.000},
+      secondary = {r = 0.0, g = 0.7, b = 0.0, a = 1.000},
+      tertiary = {r = 0.0, g = 0.6, b = 0.0, a = 1.000},
+      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
+    },
     order = "z[alien]-[grobgnumylene]"
   },
   {
@@ -3305,6 +3461,12 @@ data:extend({
     },
     results = {
       {type = "fluid", name = "sp-grobgnum-hydroxide", amount = 20}
+    },
+    crafting_machine_tint = {
+      primary = {r = 0.3, g = 1.000, b = 0.3, a = 1.000},
+      secondary = {r = 0.2, g = 0.7, b = 0.2, a = 1.000},
+      tertiary = {r = 0.0, g = 0.6, b = 0.0, a = 1.000},
+      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
     },
     order = "z[alien]-[grobgnum-hydroxide]"
   },
@@ -3345,6 +3507,12 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-grobgnum-cube", amount = 1}
+    },
+    crafting_machine_tint = {
+      primary = {r = 0.2, g = 1.000, b = 0.2, a = 1.000},
+      secondary = {r = 0.1, g = 0.7, b = 0.1, a = 1.000},
+      tertiary = {r = 0.0, g = 0.2, b = 0.0, a = 1.000},
+      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
     }
   },
   {
@@ -3361,6 +3529,12 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-grobgnum-bar", amount = 1}
+    },
+    crafting_machine_tint = {
+      primary = {r = 0.5, g = 1.000, b = 0.5, a = 1.000},
+      secondary = {r = 0.3, g = 0.7, b = 0.3, a = 1.000},
+      tertiary = {r = 0.0, g = 0.2, b = 0.0, a = 1.000},
+      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
     }
   },
   {
@@ -3413,6 +3587,12 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-bioreactor", amount = 1}
+    },
+    crafting_machine_tint = {
+      primary = {r = 0.2, g = 1.000, b = 0.2, a = 1.000},
+      secondary = {r = 0.1, g = 0.7, b = 0.1, a = 1.000},
+      tertiary = {r = 0.0, g = 0.5, b = 0.0, a = 1.000},
+      quaternary = {r = 0.000, g = 0.2, b = 0.000, a = 1.000},
     }
   },
   {
@@ -3743,6 +3923,12 @@ data:extend({
       {type = "item", name = "sp-zirconium-ore", probability=0.10, amount = 1},
       {type = "item", name = "sp-cerium", probability=0.06, amount = 1},
       {type = "item", name = "sp-titanium-ore", probability=0.3, amount = 1}
+    },
+    crafting_machine_tint = {
+      primary = {r = 0.2, g = 0.500, b = 0.2, a = 1.000},
+      secondary = {r = 0.0, g = 0.7, b = 0.0, a = 1.000},
+      tertiary = {r = 0.0, g = 0.2, b = 0.0, a = 1.000},
+      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000}
     },
     order = "z[nuclear]-3-[nuclear-waste-processing]"
   },
@@ -6935,7 +7121,13 @@ data:extend({
       {type = "item", name = "sp-calcium", amount = 12}
     },
     result_count = 5,
-    result = "sp-geological-science-pack-3"
+    result = "sp-geological-science-pack-3",
+    crafting_machine_tint = {
+      primary = {r = 0.2, g = 0.1, b = 0.1, a = 1.000},
+      secondary = {r = 0.2, g = 0.0, b = 0.1, a = 1.000},
+      tertiary = {r = 0.2, g = 0.1, b = 0.0, a = 1.000},
+      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000}
+    }
   },
   {
     type = "recipe",
@@ -7241,13 +7433,19 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-niobium-powder", amount = 2}
+    },
+    crafting_machine_tint = {
+      primary = {r = 0.2, g = 0.5, b = 0.2, a = 1.000},
+      secondary = {r = 0.0, g = 0.3, b = 0.0, a = 1.000},
+      tertiary = {r = 0.0, g = 0.2, b = 0.0, a = 1.000},
+      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000}
     }
   },
   {
     type = "recipe",
     name = "sp-aqueous-niobium-and-tantalum",  -- #ForRegEx# - recipe
     icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/icons/aqueous-niobium.png", 64, nil,
-                                         "__Spaghetorio__/graphics/icons/aqueous-tantalum.png", 64, nil),
+                                        "__Spaghetorio__/graphics/icons/aqueous-tantalum.png", 64, nil),
     icon_size = 256,
     scale = 0.25,
     category = "chemistry",
@@ -7262,6 +7460,12 @@ data:extend({
     results = {
       {type = "fluid", name = "sp-aqueous-niobium", amount = 50},
       {type = "fluid", name = "sp-aqueous-tantalum", amount = 6}
+    },
+    crafting_machine_tint = {
+      primary = {r = 1.000, g = 0, b = 1.000, a = 1.000},
+      secondary = {r = 0.771, g = 0.0, b = 0.771, a = 1.000},
+      tertiary = {r = 0.0, g = 0.0, b = 0.0, a = 1.000},
+      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
     },
     order = "[liquid]-[aqueous-niobium-and-tantalum]"
   },
@@ -7282,6 +7486,12 @@ data:extend({
     results = {
       -- {type = "item", name = "sp-sand", probability = 0.98, amount = 3},
       {type = "item", name = "sp-gold", probability = 0.02, amount = 1}
+    },
+    crafting_machine_tint = {
+      primary = {r = 1.000, g = 1.000, b = 0.000, a = 1.000},
+      secondary = {r = 0.8, g = 0.8, b = 0.0, a = 1.000},
+      tertiary = {r = 0.7, g = 0.7, b = 0.0, a = 1.000},
+      quaternary = {r = 0.6, g = 0.6, b = 0.000, a = 1.000},
     }
   },
   {
@@ -7366,6 +7576,12 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-titanium-nitride", amount = 2}
+    },
+    crafting_machine_tint = {
+      primary = {r = 0.5, g = 0.5, b = 0.000, a = 1.000},
+      secondary = {r = 0.2, g = 0.2, b = 0.0, a = 1.000},
+      tertiary = {r = 0.0, g = 0.0, b = 0.0, a = 1.000},
+      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
     }
   },
   {
@@ -7411,6 +7627,12 @@ data:extend({
     },
     results = {
       {type = "fluid", name = "sp-epoxy", amount = 20}
+    },
+    crafting_machine_tint = {
+      primary = {r = 0.9, g = 0.9, b = 1.0, a = 1.000},
+      secondary = {r = 0.7, g = 0.7, b = 1.0, a = 1.000},
+      tertiary = {r = 0.5, g = 0.5, b = 0.6, a = 1.000},
+      quaternary = {r = 0.3, g = 0.3, b = 0.4, a = 1.000},
     },
     order = "[liquid]-[epoxy]"
   },
@@ -7464,10 +7686,10 @@ data:extend({
       -- {type = "fluid", name = "sp-chlorine", amount = 3}
     },
     crafting_machine_tint = {
-      primary = {r = 1.000, g = 1.000, b = 1.000, a = 1.000}, -- #fefeffff
-      secondary = {r = 0.771, g = 0.771, b = 0.771, a = 1.000}, -- #c4c4c4ff
-      tertiary = {r = 0.768, g = 0.665, b = 0.762, a = 1.000}, -- #c3a9c2ff
-      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000}, -- #000000ff
+      primary = {r = 1.000, g = 1.000, b = 1.000, a = 1.000},
+      secondary = {r = 0.771, g = 0.771, b = 0.771, a = 1.000},
+      tertiary = {r = 0.768, g = 0.665, b = 0.762, a = 1.000},
+      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
     }
   },
   {
@@ -7483,6 +7705,12 @@ data:extend({
     },
     results = {
       {type = "fluid", name = "sp-bleach", amount = 20}
+    },
+    crafting_machine_tint = {
+      primary = {r = 0.4, g = 0.4, b = 0.5, a = 1.000},
+      secondary = {r = 0.2, g = 0.2, b = 0.4, a = 1.000},
+      tertiary = {r = 0.0, g = 0.0, b = 0.0, a = 1.000},
+      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
     },
     order = "[liquid]-[bleach]"
   },
@@ -7681,6 +7909,12 @@ data:extend({
       {type = "item", name = "sp-nuclear-waste", amount = 1},
       -- {type = "fluid", name = "sp-deuterium", amount = 10}
     },
+    crafting_machine_tint = {
+      primary = {r = 0.4, g = 1.000, b = 0.4, a = 1.000},
+      secondary = {r = 0.4, g = 0.7, b = 0.4, a = 1.000},
+      tertiary = {r = 0.0, g = 0.7, b = 0.0, a = 1.000},
+      quaternary = {r = 0.000, g = 0.3, b = 0.000, a = 1.000},
+    },
     order = "z[nuclear]-3-[used-up-fuel-rod-reprocessing]"
   },
   {
@@ -7707,6 +7941,12 @@ data:extend({
       -- {type = "item", name = "sp-lithium", probability = 0.2, amount = 1},
       {type = "fluid", name = "sp-deuterium", amount = 10}
     },
+    crafting_machine_tint = {
+      primary = {r = 0.4, g = 1.000, b = 0.8, a = 1.000},
+      secondary = {r = 0.4, g = 0.7, b = 0.6, a = 1.000},
+      tertiary = {r = 0.0, g = 0.7, b = 0.6, a = 1.000},
+      quaternary = {r = 0.000, g = 0.3, b = 0.3, a = 1.000},
+    },
     order = "z[nuclear]-3-[nuclear-waste-processing]2"
   },
   {
@@ -7726,6 +7966,12 @@ data:extend({
       {type = "item", name = "sp-magnesium-slab", amount = 2},
       -- {type = "fluid", name = "sp-chloride", amount = 10}
     },
+    crafting_machine_tint = {
+      primary = {r = 0.7, g = 1.000, b = 0.7, a = 1.000},
+      secondary = {r = 0.0, g = 0.5, b = 0.2, a = 1.000},
+      tertiary = {r = 0.0, g = 0.2, b = 0.1, a = 1.000},
+      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
+    },
     order = "ingot-[magnesium-slab]"
   },
   {
@@ -7740,6 +7986,12 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-urea", amount = 1}
+    },
+    crafting_machine_tint = {
+      primary = {r = 1.000, g = 1.000, b = 1.000, a = 1.000},
+      secondary = {r = 0.771, g = 0.771, b = 0.771, a = 1.000},
+      tertiary = {r = 0.768, g = 0.665, b = 0.762, a = 1.000},
+      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
     }
   },
   {
@@ -7756,6 +8008,12 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-carbon-fiber", amount = 1}
+    },
+    crafting_machine_tint = {
+      primary = {r = 0.8, g = 0.8, b = 0.8, a = 1.000},
+      secondary = {r = 0.2, g = 0.2, b = 0.2, a = 1.000},
+      tertiary = {r = 0.0, g = 0.0, b = 0.0, a = 1.000},
+      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
     }
   },
   {
@@ -7773,6 +8031,12 @@ data:extend({
     },
     results = {
       {type = "fluid", name = "sp-ethylene-dichloride", amount = 60},
+    },
+    crafting_machine_tint = {
+      primary = {r = 0.3, g = 1.000, b = 0.3, a = 1.000},
+      secondary = {r = 0.0, g = 0.3, b = 0.0, a = 1.000},
+      tertiary = {r = 0.0, g = 0.0, b = 0.0, a = 1.000},
+      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
     }
   },
   {
@@ -7795,6 +8059,12 @@ data:extend({
     results = {
       {type = "fluid", name = "sp-sodium-hydroxide", amount = 50},
       -- {type = "fluid", name = "sp-chlorine", amount = 50}
+    },
+    crafting_machine_tint = {
+      primary = {r = 0.6, g = 0.4, b = 0.6, a = 1.000},
+      secondary = {r = 0.3, g = 0.2, b = 0.3, a = 1.000},
+      tertiary = {r = 0.1, g = 0.1, b = 0.1, a = 1.000},
+      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
     }
   },
   {
@@ -7814,6 +8084,12 @@ data:extend({
     },
     results = {
       {type = "fluid", name = "sp-sodium-hydroxide", amount = 20},
+    },
+    crafting_machine_tint = {
+      primary = {r = 0.6, g = 0.4, b = 0.6, a = 1.000},
+      secondary = {r = 0.3, g = 0.2, b = 0.3, a = 1.000},
+      tertiary = {r = 0.1, g = 0.1, b = 0.1, a = 1.000},
+      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
     }
   },
   {
@@ -7830,6 +8106,12 @@ data:extend({
     },
     results = {
       {type = "fluid", name = "sp-vinyl-chloride", amount = 30}
+    },
+    crafting_machine_tint = {
+      primary = {r = 0.3, g = 0.7, b = 0.3, a = 1.000},
+      secondary = {r = 0.2, g = 0.6, b = 0.2, a = 1.000},
+      tertiary = {r = 0.1, g = 0.3, b = 0.1, a = 1.000},
+      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
     }
   },
   {
@@ -7845,6 +8127,12 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-electrolyte", amount = 1}
+    },
+    crafting_machine_tint = {
+      primary = {r = 0.0, g = 0.0, b = 0.4, a = 1.000},
+      secondary = {r = 0.0, g = 0.0, b = 0.3, a = 1.000},
+      tertiary = {r = 0.0, g = 0.0, b = 0.2, a = 1.000},
+      quaternary = {r = 0.0, g = 0.0, b = 0.0, a = 1.000},
     }
   },
   {
@@ -7864,6 +8152,12 @@ data:extend({
     results = {
       -- {type = "item", name = "sp-sand", probability = 0.92, amount = 3},
       {type = "item", name = "sp-tellurium-hydroxide", probability = 0.08, amount = 1}
+    },
+    crafting_machine_tint = {
+      primary = {r = 1.000, g = 1.000, b = 1.000, a = 1.000},
+      secondary = {r = 0.771, g = 0.771, b = 0.771, a = 1.000},
+      tertiary = {r = 0.768, g = 0.665, b = 0.762, a = 1.000},
+      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
     }
   },
   {
@@ -7878,6 +8172,12 @@ data:extend({
     },
     results = {
       {type = "fluid", name = "sp-helium", amount = 10}
+    },
+    crafting_machine_tint = {
+      primary = {r = 1.000, g = 1.000, b = 1.000, a = 1.000},
+      secondary = {r = 0.9, g = 0.9, b = 1.0, a = 1.000},
+      tertiary = {r = 0.7, g = 0.7, b = 0.9, a = 1.000},
+      quaternary = {r = 0.5, g = 0.5, b = 0.8, a = 1.000},
     }
   },
   {
@@ -7897,6 +8197,12 @@ data:extend({
     results = {
       {type = "fluid", name = "sp-helium-3", amount = 1},
       {type = "fluid", name = "sp-helium", amount = 9}
+    },
+    crafting_machine_tint = {
+      primary = {r = 1.000, g = 1.000, b = 1.000, a = 1.000},
+      secondary = {r = 0.9, g = 0.9, b = 1.0, a = 1.000},
+      tertiary = {r = 0.8, g = 0.8, b = 1.0, a = 1.000},
+      quaternary = {r = 0.7, g = 0.7, b = 1.0, a = 1.000},
     }
   },
   {
@@ -7945,6 +8251,12 @@ data:extend({
     },
     results = {
       {type = "fluid", name = "sp-liquid-nitrogen", amount = 5}
+    },
+    crafting_machine_tint = {
+      primary = {r = 1.000, g = 1.000, b = 1.000, a = 1.000},
+      secondary = {r = 0.0, g = 0.3, b = 0.8, a = 1.000},
+      tertiary = {r = 0.0, g = 0.0, b = 0.5, a = 1.000},
+      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
     },
     order = "[liquid]-[liquid-nitrogen]"
   },
@@ -8018,10 +8330,10 @@ if not mods["Krastorio2"] then
         {type = "item", name = "sp-quartz", amount = 2}
       },
       crafting_machine_tint = {
-        primary = {r = 1.000, g = 1.000, b = 1.000, a = 1.000}, -- #fefeffff
-        secondary = {r = 0.771, g = 0.771, b = 0.771, a = 1.000}, -- #c4c4c4ff
-        tertiary = {r = 0.768, g = 0.665, b = 0.762, a = 1.000}, -- #c3a9c2ff
-        quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000}, -- #000000ff
+        primary = {r = 1.000, g = 1.000, b = 1.000, a = 1.000},
+        secondary = {r = 0.8, g = 0.8, b = 0.8, a = 1.000},
+        tertiary = {r = 0.7, g = 0.7, b = 0.7, a = 1.000},
+        quaternary = {r = 0.3, g = 0.3, b = 0.3, a = 1.000},
       }
     },
     {
@@ -8043,6 +8355,12 @@ if not mods["Krastorio2"] then
         {type = "item", name = "sp-sand", amount = 3},
         {type = "item", name = "sp-calcium-carbonate", probability = 0.8, amount = 3},
         {type = "item", name = "sp-fluorspar", probability = 0.2, amount = 1}
+      },
+      crafting_machine_tint = {
+        primary = {r = 1.000, g = 1.000, b = 1.000, a = 1.000},
+        secondary = {r = 0.6, g = 0.6, b = 0.6, a = 1.000},
+        tertiary = {r = 0.4, g = 0.4, b = 0.4, a = 1.000},
+        quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
       }
     },
     {

@@ -165,7 +165,7 @@ data:extend({
     },
     results = {
       {type = "item", name = "sand", probability = 0.5, amount = 1},
-      {type = "item", name = "sp-crushed-magnesium-ore", amount = 3},
+      {type = "item", name = "sp-crushed-nickel-ore", amount = 3},
       {type = "item", name = "sp-crushed-iron-ore", probability = 0.5, amount = 1},
       {type = "item", name = "sulfur", probability = 0.3, amount = 1}
     }

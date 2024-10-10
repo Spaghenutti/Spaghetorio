@@ -42,6 +42,7 @@ Recipes:
   - Add special barrel for alien liquids
   - Add special barrel for cold liquids like liquid nitrogen
   - Add special barrel for radioactive liquids
+  - Not sure why enriched zirconium ore is missing
 
 Resources:
   - Obsidian (for core miner - volcanic rock that contains silica, aluminum and potassium) (for version 0.2.0)
@@ -55,13 +56,14 @@ Ideas:
   - Configure stack sizes in settings
   - Burn useless things for energy
   - Add multiple liquit inputs / outputs for assembling machines. Coolant might be here interesting to use.
+  - Insertirters can be affected by modules
   - Create multiple resurce patches for grobgnum (for version 0.2.0)
   - Only higher tier miners can mine high tier resources (for version 0.2.0)
   - Add scripting to acrospheres (for version 0.3.0 or higher)
 
 Other:
   - Support text plates mod
-  - Fix energy values of fluids
+  - Fix energy values of fluids (see heat_capacity)
   - Fix barrel tints
   - Fix smoke tints for chemical plant
   + Krastorio: add radioactivity

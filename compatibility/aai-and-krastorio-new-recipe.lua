@@ -127,6 +127,12 @@ data:extend({
     results = {
       {type = "item", name = "sp-enriched-aluminum", amount = 6},
       {type = "fluid", name = "sp-dirty-water-with-aluminum", amount = 50}
+    },
+    crafting_machine_tint = {
+      primary = {r = 1.000, g = 0.5, b = 0.5, a = 1.000},
+      secondary = {r = 0.8, g = 0.3, b = 0.3, a = 1.000},
+      tertiary = {r = 0.6, g = 0.0, b = 0.0, a = 1.000},
+      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
     }
   },
   {
@@ -149,7 +155,13 @@ data:extend({
       {type = "item", name = "sp-silver", probability = 0.05, amount = 1},
       {type = "item", name = "sp-gold", probability = 0.04, amount = 1},
       {type = "fluid", name = "water", amount = 50}
-    }
+    },
+    crafting_machine_tint = {
+      primary = {r = 0.000, g = 0.000, b = 0.500, a = 1.000},
+      secondary = {r = 0.0, g = 0.0, b = 0.3, a = 1.000},
+      tertiary = {r = 0.0, g = 0.0, b = 0.2, a = 1.000},
+      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
+    },
   },
   {
     type = "recipe",
@@ -186,6 +198,12 @@ data:extend({
       {type = "item", name = "iron-ore", amount = 4},
       {type = "item", name = "sp-enriched-chromite", amount = 6},
       {type = "fluid", name = "sp-dirty-water-with-chromite", amount = 30}
+    },
+    crafting_machine_tint = {
+      primary = {r = 0.4, g = 0.000, b = 1.000, a = 1.000},
+      secondary = {r = 0.0, g = 0.0, b = 0.6, a = 1.000},
+      tertiary = {r = 0.0, g = 0.0, b = 0.4, a = 1.000},
+      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
     }
   },
   {
@@ -208,7 +226,13 @@ data:extend({
       {type = "item", name = "sp-tungsten-ore", probability = 0.1, amount = 1},
       {type = "item", name = "sp-yttrium", probability = 0.03, amount = 1},
       {type = "fluid", name = "water", amount = 50}
-    }
+    },
+    crafting_machine_tint = {
+      primary = {r = 0.000, g = 0.000, b = 0.500, a = 1.000},
+      secondary = {r = 0.0, g = 0.0, b = 0.3, a = 1.000},
+      tertiary = {r = 0.0, g = 0.0, b = 0.2, a = 1.000},
+      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
+    },
   },
   {
     type = "recipe",
@@ -245,6 +269,12 @@ data:extend({
       {type = "item", name = "sp-salt", probability = 0.5, amount = 1},
       {type = "item", name = "sp-enriched-magnesium", amount = 5},
       {type = "fluid", name = "sp-dirty-water-with-magnesium", amount = 20}
+    },
+    crafting_machine_tint = {
+      primary = {r = 1.000, g = 1.000, b = 1.000, a = 1.000},
+      secondary = {r = 0.5, g = 0.5, b = 0.7, a = 1.000},
+      tertiary = {r = 0.2, g = 0.2, b = 0.7, a = 1.000},
+      quaternary = {r = 0.000, g = 0.000, b = 0.3, a = 1.000},
     }
   },
   {
@@ -267,7 +297,13 @@ data:extend({
       {type = "item", name = "lithium", probability = 0.1, amount = 1},
       {type = "item", name = "sp-yttrium", probability = 0.02, amount = 1},
       {type = "fluid", name = "water", amount = 50}
-    }
+    },
+    crafting_machine_tint = {
+      primary = {r = 0.000, g = 0.000, b = 0.500, a = 1.000},
+      secondary = {r = 0.0, g = 0.0, b = 0.3, a = 1.000},
+      tertiary = {r = 0.0, g = 0.0, b = 0.2, a = 1.000},
+      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
+    },
   },
   {
     type = "recipe",
@@ -304,6 +340,12 @@ data:extend({
       {type = "item", name = "iron-ore", amount = 6},
       {type = "item", name = "sp-enriched-nickel", amount = 5},
       {type = "fluid", name = "sp-dirty-water-with-nickel", amount = 20}
+    },
+    crafting_machine_tint = {
+      primary = {r = 1.000, g = 0.5, b = 1.000, a = 1.000},
+      secondary = {r = 0.3, g = 0.0, b = 0.7, a = 1.000},
+      tertiary = {r = 0.0, g = 0.0, b = 0.5, a = 1.000},
+      quaternary = {r = 0.000, g = 0.000, b = 0.3, a = 1.000},
     }
   },
   {
@@ -326,7 +368,13 @@ data:extend({
       {type = "item", name = "sp-palladium", probability = 0.03, amount = 1},
       {type = "item", name = "sp-platinum", probability = 0.02, amount = 1},
       {type = "fluid", name = "water", amount = 50}
-    }
+    },
+    crafting_machine_tint = {
+      primary = {r = 0.000, g = 0.000, b = 0.500, a = 1.000},
+      secondary = {r = 0.0, g = 0.0, b = 0.3, a = 1.000},
+      tertiary = {r = 0.0, g = 0.0, b = 0.2, a = 1.000},
+      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
+    },
   },
   {
     type = "recipe",
@@ -363,6 +411,12 @@ data:extend({
       {type = "item", name = "sp-leadstone", amount = 6},
       {type = "item", name = "sp-enriched-tinstone", amount = 5},
       {type = "fluid", name = "sp-dirty-water-with-tin", amount = 20}
+    },
+    crafting_machine_tint = {
+      primary = {r = 0.8, g = 0.4, b = 0.4, a = 1.000},
+      secondary = {r = 0.5, g = 0.3, b = 0.3, a = 1.000},
+      tertiary = {r = 0.2, g = 0.0, b = 0.0, a = 1.000},
+      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
     }
   },
   {
@@ -385,7 +439,13 @@ data:extend({
       {type = "item", name = "sp-leadstone", probability = 0.2, amount = 1},
       {type = "item", name = "sp-tellurium-hydroxide", probability = 0.01, amount = 1},
       {type = "fluid", name = "water", amount = 50}
-    }
+    },
+    crafting_machine_tint = {
+      primary = {r = 0.000, g = 0.000, b = 0.500, a = 1.000},
+      secondary = {r = 0.0, g = 0.0, b = 0.3, a = 1.000},
+      tertiary = {r = 0.0, g = 0.0, b = 0.2, a = 1.000},
+      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
+    },
   },
   {
     type = "recipe",
@@ -422,6 +482,12 @@ data:extend({
       {type = "item", name = "sp-enriched-titanium", amount = 6},
       {type = "item", name = "sp-zirconium-ore", amount = 1},
       {type = "fluid", name = "sp-dirty-water-with-titanium", amount = 50}
+    },
+    crafting_machine_tint = {
+      primary = {r = 0.8, g = 0.4, b = 0.7, a = 1.000},
+      secondary = {r = 0.5, g = 0.3, b = 0.4, a = 1.000},
+      tertiary = {r = 0.2, g = 0.0, b = 0.1, a = 1.000},
+      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
     }
   },
   {
@@ -444,7 +510,13 @@ data:extend({
       {type = "item", name = "sp-lanthanum", probability = 0.06, amount = 1},
       {type = "item", name = "sp-cerium", probability = 0.02, amount = 1},
       {type = "fluid", name = "water", amount = 50}
-    }
+    },
+    crafting_machine_tint = {
+      primary = {r = 0.000, g = 0.000, b = 0.500, a = 1.000},
+      secondary = {r = 0.0, g = 0.0, b = 0.3, a = 1.000},
+      tertiary = {r = 0.0, g = 0.0, b = 0.2, a = 1.000},
+      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
+    },
   },
   {
     type = "recipe",
@@ -481,6 +553,12 @@ data:extend({
       {type = "item", name = "sp-enriched-tungsten", amount = 5},
       {type = "item", name = "sp-chromite", probability = 0.7, amount = 1},
       {type = "fluid", name = "sp-dirty-water-with-tungsten", amount = 35}
+    },
+    crafting_machine_tint = {
+      primary = {r = 0.8, g = 0.4, b = 0.5, a = 1.000},
+      secondary = {r = 0.5, g = 0.3, b = 0.35, a = 1.000},
+      tertiary = {r = 0.2, g = 0.0, b = 0.2, a = 1.000},
+      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
     }
   },
   {
@@ -504,7 +582,13 @@ data:extend({
       {type = "item", name = "sp-cerium", probability = 0.02, amount = 1},
       {type = "item", name = "sp-iridium", probability = 0.02, amount = 1},
       {type = "fluid", name = "water", amount = 50}
-    }
+    },
+    crafting_machine_tint = {
+      primary = {r = 0.000, g = 0.000, b = 0.500, a = 1.000},
+      secondary = {r = 0.0, g = 0.0, b = 0.3, a = 1.000},
+      tertiary = {r = 0.0, g = 0.0, b = 0.2, a = 1.000},
+      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
+    },
   },
   {
     type = "recipe",
@@ -540,6 +624,12 @@ data:extend({
     results = {
       {type = "item", name = "sp-enriched-zinc", amount = 7},
       {type = "fluid", name = "sp-dirty-water-with-zinc", amount = 40}
+    },
+    crafting_machine_tint = {
+      primary = {r = 0.8, g = 0.7, b = 0.8, a = 1.000},
+      secondary = {r = 0.5, g = 0.3, b = 0.4, a = 1.000},
+      tertiary = {r = 0.2, g = 0.2, b = 0.2, a = 1.000},
+      quaternary = {r = 0.1, g = 0.1, b = 0.1, a = 1.000},
     }
   },
   {
@@ -562,7 +652,13 @@ data:extend({
       {type = "item", name = "sp-silver", probability = 0.05, amount = 1},
       {type = "item", name = "sp-neodymium", probability = 0.03, amount = 1},
       {type = "fluid", name = "water", amount = 50}
-    }
+    },
+    crafting_machine_tint = {
+      primary = {r = 0.000, g = 0.000, b = 0.500, a = 1.000},
+      secondary = {r = 0.0, g = 0.0, b = 0.3, a = 1.000},
+      tertiary = {r = 0.0, g = 0.0, b = 0.2, a = 1.000},
+      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
+    },
   },
   {
     type = "recipe",
