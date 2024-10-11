@@ -62,20 +62,6 @@ data.raw.recipe["sulfur"].icon = "__base__/graphics/icons/sulfur.png"
 data.raw.recipe["sulfur"].icon_size = 64
 data.raw.recipe["sulfur"].subgroup = "processed-resource"
 
-util.recipe.change_recipe_ingredients("electronic-circuit",
-  {
-    {"copper-cable", 3},
-    {"wood", 3},
-    {"sp-solder", 1}
-  },
-  {
-    {"copper-cable", 8},
-    {"wood", 5},
-    {"sp-solder", 2}
-  },
-  0.5,
-  1)
-
 util.recipe.change_recipe_ingredients("advanced-circuit",
   {
     {"sp-basic-circuit-board", 1},
@@ -549,11 +535,13 @@ util.recipe.change_recipe_ingredients("express-transport-belt",
 util.recipe.change_recipe_ingredients("underground-belt",
   {
     {"iron-plate", 2},
+    {"sp-wooden-board", 2},
     {"sp-bolts", 4},
     {"transport-belt", 6}
   },
   {
-    {"iron-plate", 4},
+    {"iron-plate", 3},
+    {"sp-wooden-board", 4},
     {"sp-bolts", 8},
     {"transport-belt", 6}
   },
@@ -643,7 +631,9 @@ util.recipe.change_recipe_ingredients("express-splitter",
   nil)
 
 table.insert(data.raw.recipe["burner-inserter"].normal.ingredients, {"sp-bolts", 3})
+table.insert(data.raw.recipe["burner-inserter"].normal.ingredients, {"sp-wooden-board", 1})
 table.insert(data.raw.recipe["inserter"].normal.ingredients, {"sp-bolts", 2})
+table.insert(data.raw.recipe["inserter"].normal.ingredients, {"sp-wooden-board", 1})
 table.insert(data.raw.recipe["inserter"].normal.ingredients, {"sp-spring", 2})
 table.insert(data.raw.recipe["long-handed-inserter"].normal.ingredients, {"sp-bolts", 4})
 table.insert(data.raw.recipe["long-handed-inserter"].normal.ingredients, {"sp-spring", 2})
@@ -809,14 +799,15 @@ util.recipe.change_recipe_ingredients("pipe-to-ground",
   1)
 
 -- Base: {"steel-plate", 2}; Krastorio {"steel-beam", 2}
--- Base: {"sp-wood", 4}; Krastorio {"wood", 4}
 util.recipe.change_recipe_ingredients("rail",
   {
     {"stone", 4},
+    {"sp-wooden-board", 2},
     {"sp-bolts", 8}
   },
   {
     {"stone", 4},
+    {"sp-wooden-board", 4},
     {"sp-bolts", 16}
   },
   0.5,
@@ -826,12 +817,14 @@ util.recipe.change_recipe_ingredients("rail",
 util.recipe.change_recipe_ingredients("train-stop",
   {
     {"electronic-circuit", 4},
+    {"sp-wooden-board", 16},
     {"sp-bolts", 12},
     {"sp-spring", 4},
     {"copper-cable", 4}
   },
   {
     {"electronic-circuit", 6},
+    {"sp-wooden-board", 24},
     {"sp-bolts", 20},
     {"sp-spring", 4},
     {"copper-cable", 8}
@@ -843,12 +836,14 @@ util.recipe.change_recipe_ingredients("rail-signal",
   {
     {"small-lamp", 3},
     {"electronic-circuit", 1},
+    {"sp-wooden-board", 2},
     {"sp-bolts", 4},
     {"copper-cable", 2}
   },
   {
     {"small-lamp", 3},
     {"electronic-circuit", 2},
+    {"sp-wooden-board", 3},
     {"sp-bolts", 6},
     {"copper-cable", 4}
   },
@@ -859,12 +854,14 @@ util.recipe.change_recipe_ingredients("rail-chain-signal",
   {
     {"small-lamp", 3},
     {"electronic-circuit", 1},
+    {"sp-wooden-board", 2},
     {"sp-bolts", 4},
     {"copper-cable", 4}
   },
   {
     {"small-lamp", 3},
     {"electronic-circuit", 2},
+    {"sp-wooden-board", 3},
     {"sp-bolts", 6},
     {"copper-cable", 6}
   },

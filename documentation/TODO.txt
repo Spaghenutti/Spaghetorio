@@ -24,6 +24,7 @@ Items:
   - For semiconductors:
     - Tantalum nitride
     - Silicon nitride
+    - Wafer
   - Nuclear products:
     - Isotopes of some elements. (Create recipes which take in one isotope and have 50% chance during their halflife to convert to another element)
   - Alloy science pack t2 and t3
@@ -57,15 +58,17 @@ Ideas:
   - Burn useless things for energy
   - Add multiple liquit inputs / outputs for assembling machines. Coolant might be here interesting to use.
   - Insertirters can be affected by modules
+  - Krastorio has 3 icons for blank tech cards, edit its colors and use it for different things.
   - Create multiple resurce patches for grobgnum (for version 0.2.0)
   - Only higher tier miners can mine high tier resources (for version 0.2.0)
   - Add scripting to acrospheres (for version 0.3.0 or higher)
 
 Other:
+  + Fix complex recipes not showing up in some machines
   - Support text plates mod
   - Fix energy values of fluids (see heat_capacity)
-  - Fix barrel tints
-  - Fix smoke tints for chemical plant
+  + Fix barrel tints
+  + Fix smoke tints for chemical plant
   + Krastorio: add radioactivity
   - Asteroid mining
   - Add glow to tech cards

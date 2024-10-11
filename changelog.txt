@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.2.0
+Date: 2024-10-11
+  Features:
+    - Added wooden board
+  Bugfixes:
+    - Unlock unlimited ingredient count for krastorio buildings
+---------------------------------------------------------------------------------------------------
 Version: 0.1.8
 Date: 2024-10-10
   Features:

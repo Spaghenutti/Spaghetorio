@@ -390,7 +390,7 @@ table.insert(data.raw.recipe["sp-logistic-science-pack-2"].ingredients, {type = 
 table.insert(data.raw.recipe["sp-logistic-science-pack-2"].ingredients, {type = "item", name = "engine-unit", amount = 2})
 table.insert(data.raw.recipe["sp-logistic-science-pack-2"].ingredients, {type = "item", name = "automation-core", amount = 5})
 table.insert(data.raw.recipe["sp-military-science-pack-2"].ingredients, {type = "item", name = "biters-research-data", amount = 2})
-table.insert(data.raw.recipe["sp-geological-science-pack-2"].ingredients, {type = "item", name = "wood", amount = 10})
+table.insert(data.raw.recipe["sp-geological-science-pack-2"].ingredients, {type = "item", name = "sp-wooden-board", amount = 10})
 table.insert(data.raw.recipe["sp-astronomical-science-pack-2"].ingredients, {type = "item", name = "blank-tech-card", amount = 5})
 table.insert(data.raw.recipe["sp-astronomical-science-pack-2"].ingredients, {type = "item", name = "space-research-data", amount = 5})
 table.insert(data.raw.recipe["sp-computer-science-pack-2"].ingredients, {type = "item", name = "blank-tech-card", amount = 5})
@@ -432,7 +432,6 @@ table.insert(data.raw.recipe["fast-inserter"].ingredients, {"inserter-parts", 2}
 table.insert(data.raw.recipe["filter-inserter"].ingredients, {"inserter-parts", 2})
 table.insert(data.raw.recipe["stack-inserter"].ingredients, {"inserter-parts", 4})
 table.insert(data.raw.recipe["stack-filter-inserter"].ingredients, {"inserter-parts", 4})
-table.insert(data.raw.recipe["rail"].ingredients, {"wood", 4})
 table.insert(data.raw.recipe["rail"].ingredients, {"steel-beam", 2})
 table.insert(data.raw.recipe["train-stop"].ingredients, {"steel-beam", 8})
 table.insert(data.raw.recipe["fluid-wagon"].ingredients, {"steel-beam", 8})
@@ -900,17 +899,31 @@ util.recipe.change_recipe_ingredients("matter-stabilizer",
   12,
   24)
 
+util.recipe.change_recipe_ingredients("blank-tech-card",
+  {
+    {"iron-plate", 3},
+    {"copper-cable", 2},
+  },
+  {
+    {"iron-plate", 4},
+    {"copper-cable", 3},
+  },
+  2,
+  3)
+
 -- MARK: Krastorio Buildings
 util.recipe.change_recipe_ingredients("kr-loader",
   {
     {"motor", 1},
     {"sp-machined-parts", 2},
+    {"sp-wooden-board", 1},
     {"sp-bolts", 4},
     {"transport-belt", 1}
   },
   {
     {"motor", 1},
     {"sp-machined-parts", 4},
+    {"sp-wooden-board", 2},
     {"sp-bolts", 6},
     {"transport-belt", 1}
   },
@@ -3270,12 +3283,14 @@ util.recipe.change_recipe_ingredients("burner-turbine",
 util.recipe.change_recipe_ingredients("fuel-processor",
   {
     {"iron-plate", 12},
+    {"sp-wooden-board", 20},
     {"stone-brick", 24},
     {"sp-bolts", 20},
     {"motor", 2}
   },
   {
     {"iron-plate", 16},
+    {"sp-wooden-board", 30},
     {"stone-brick", 36},
     {"sp-bolts", 24},
     {"motor", 4}
@@ -3287,12 +3302,14 @@ util.recipe.change_recipe_ingredients("burner-assembling-machine",
   {
     {"stone-brick", 20},
     {"iron-plate", 20},
+    {"sp-wooden-board", 12},
     {"sp-bolts", 24},
     {"motor", 4}
   },
   {
     {"stone-brick", 40},
     {"iron-plate", 40},
+    {"sp-wooden-board", 16},
     {"sp-bolts", 48},
     {"motor", 8}
   },

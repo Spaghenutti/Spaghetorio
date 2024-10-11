@@ -1,5 +1,8 @@
 
 table.insert(data.raw.technology["automation-science-pack"].prerequisites, "sp-mechanical-assembling")
+table.insert(data.raw.technology["automation-science-pack"].prerequisites, "sp-wood-cutting")
+table.insert(data.raw.technology["automation-science-pack"].effects, {type = "unlock-recipe", recipe = "sp-blank-tech-card-from-stone-tablet"})
+table.insert(data.raw.technology["automation-science-pack"].effects, {type = "unlock-recipe", recipe = "sp-blank-tech-card-from-wooden-board"})
 
 table.insert(data.raw.technology["gun-turret"].prerequisites, "sp-mechanical-assembling")
 

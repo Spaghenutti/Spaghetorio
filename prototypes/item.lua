@@ -10,10 +10,10 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     pictures = {
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/aluminum-ore-1.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/aluminum-ore-2.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/aluminum-ore-3.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/aluminum-ore-4.png", scale = 0.25, mipmap_count = 4}
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/aluminum-ore-1.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/aluminum-ore-2.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/aluminum-ore-3.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/aluminum-ore-4.png", scale = 0.25, mipmap_count = 4}
     },
     subgroup = "raw-resource",
     order = "[aluminum-ore]",
@@ -26,10 +26,10 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     pictures = {
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/chromite-1.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/chromite-2.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/chromite-3.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/chromite-4.png", scale = 0.25, mipmap_count = 4}
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/chromite-1.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/chromite-2.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/chromite-3.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/chromite-4.png", scale = 0.25, mipmap_count = 4}
     },
     subgroup = "raw-resource",
     order = "[chromite]",
@@ -42,10 +42,10 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     pictures = {
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/limestone-1.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/limestone-2.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/limestone-3.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/limestone-4.png", scale = 0.25, mipmap_count = 4}
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/limestone-1.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/limestone-2.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/limestone-3.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/limestone-4.png", scale = 0.25, mipmap_count = 4}
     },
     subgroup = "raw-resource",
     order = "[limestone]",
@@ -58,10 +58,10 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     pictures = {
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/titanium-ore-1.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/titanium-ore-2.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/titanium-ore-3.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/titanium-ore-4.png", scale = 0.25, mipmap_count = 4}
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/titanium-ore-1.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/titanium-ore-2.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/titanium-ore-3.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/titanium-ore-4.png", scale = 0.25, mipmap_count = 4}
     },
     subgroup = "raw-resource",
     order = "[titanium-ore]",
@@ -74,10 +74,10 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     pictures = {
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/magnesium-ore-1.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/magnesium-ore-2.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/magnesium-ore-3.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/magnesium-ore-4.png", scale = 0.25, mipmap_count = 4}
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/magnesium-ore-1.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/magnesium-ore-2.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/magnesium-ore-3.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/magnesium-ore-4.png", scale = 0.25, mipmap_count = 4}
     },
     subgroup = "raw-resource",
     order = "[magnesium-ore]",
@@ -90,10 +90,10 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     pictures = {
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/tinstone-1.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/tinstone-2.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/tinstone-3.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/tinstone-4.png", scale = 0.25, mipmap_count = 4}
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/tinstone-1.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/tinstone-2.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/tinstone-3.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/tinstone-4.png", scale = 0.25, mipmap_count = 4}
     },
     subgroup = "raw-resource",
     order = "[tinstone]",
@@ -106,10 +106,10 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     pictures = {
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/zirconium-ore-1.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/zirconium-ore-2.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/zirconium-ore-3.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/zirconium-ore-4.png", scale = 0.25, mipmap_count = 4}
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/zirconium-ore-1.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/zirconium-ore-2.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/zirconium-ore-3.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/zirconium-ore-4.png", scale = 0.25, mipmap_count = 4}
     },
     subgroup = "raw-resource",
     order = "[zirconium-ore]",
@@ -122,10 +122,10 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     pictures = {
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/nickel-ore-1.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/nickel-ore-2.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/nickel-ore-3.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/nickel-ore-4.png", scale = 0.25, mipmap_count = 4}
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/nickel-ore-1.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/nickel-ore-2.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/nickel-ore-3.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/nickel-ore-4.png", scale = 0.25, mipmap_count = 4}
     },
     subgroup = "raw-resource",
     order = "[nickel-ore]",
@@ -138,10 +138,10 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     pictures = {
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/tungsten-ore-1.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/tungsten-ore-2.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/tungsten-ore-3.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/tungsten-ore-4.png", scale = 0.25, mipmap_count = 4}
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/tungsten-ore-1.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/tungsten-ore-2.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/tungsten-ore-3.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/tungsten-ore-4.png", scale = 0.25, mipmap_count = 4}
     },
     subgroup = "raw-resource",
     order = "[tungsten-ore]",
@@ -154,10 +154,10 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     pictures = {
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/zinc-ore-1.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/zinc-ore-2.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/zinc-ore-3.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/zinc-ore-4.png", scale = 0.25, mipmap_count = 4}
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/zinc-ore-1.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/zinc-ore-2.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/zinc-ore-3.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/zinc-ore-4.png", scale = 0.25, mipmap_count = 4}
     },
     subgroup = "raw-resource",
     order = "[zinc-ore]",
@@ -170,10 +170,10 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     pictures = {
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/spodumene-1.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/spodumene-2.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/spodumene-3.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/spodumene-4.png", scale = 0.25, mipmap_count = 4}
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/spodumene-1.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/spodumene-2.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/spodumene-3.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/spodumene-4.png", scale = 0.25, mipmap_count = 4}
     },
     subgroup = "raw-resource",
     order = "[spodumene]",
@@ -229,10 +229,10 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     pictures = {
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-copper-ore-1.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-copper-ore-2.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-copper-ore-3.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-copper-ore-4.png", scale = 0.25, mipmap_count = 4}
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-copper-ore-1.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-copper-ore-2.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-copper-ore-3.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-copper-ore-4.png", scale = 0.25, mipmap_count = 4}
     },
     subgroup = "crushed-resource",
     order = "[crushed-copper-ore]",
@@ -245,10 +245,10 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     pictures = {
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-iron-ore-1.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-iron-ore-2.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-iron-ore-3.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-iron-ore-4.png", scale = 0.25, mipmap_count = 4}
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-iron-ore-1.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-iron-ore-2.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-iron-ore-3.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-iron-ore-4.png", scale = 0.25, mipmap_count = 4}
     },
     subgroup = "crushed-resource",
     order = "[crushed-iron-ore]",
@@ -261,10 +261,10 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     pictures = {
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-aluminum-ore-1.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-aluminum-ore-2.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-aluminum-ore-3.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-aluminum-ore-4.png", scale = 0.25, mipmap_count = 4}
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-aluminum-ore-1.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-aluminum-ore-2.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-aluminum-ore-3.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-aluminum-ore-4.png", scale = 0.25, mipmap_count = 4}
     },
     subgroup = "crushed-resource",
     order = "[crushed-aluminum-ore]",
@@ -277,10 +277,10 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     pictures = {
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-chromite-1.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-chromite-2.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-chromite-3.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-chromite-4.png", scale = 0.25, mipmap_count = 4}
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-chromite-1.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-chromite-2.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-chromite-3.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-chromite-4.png", scale = 0.25, mipmap_count = 4}
     },
     subgroup = "crushed-resource",
     order = "[crushed-chromite]",
@@ -293,10 +293,10 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     pictures = {
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-titanium-ore-1.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-titanium-ore-2.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-titanium-ore-3.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-titanium-ore-4.png", scale = 0.25, mipmap_count = 4}
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-titanium-ore-1.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-titanium-ore-2.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-titanium-ore-3.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-titanium-ore-4.png", scale = 0.25, mipmap_count = 4}
     },
     subgroup = "crushed-resource",
     order = "[crushed-titanium-ore]",
@@ -309,10 +309,10 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     pictures = {
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-magnesium-ore-1.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-magnesium-ore-2.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-magnesium-ore-3.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-magnesium-ore-4.png", scale = 0.25, mipmap_count = 4}
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-magnesium-ore-1.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-magnesium-ore-2.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-magnesium-ore-3.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-magnesium-ore-4.png", scale = 0.25, mipmap_count = 4}
     },
     subgroup = "crushed-resource",
     order = "[crushed-magnesium-ore]",
@@ -325,10 +325,10 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     pictures = {
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-tinstone-1.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-tinstone-2.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-tinstone-3.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-tinstone-4.png", scale = 0.25, mipmap_count = 4}
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-tinstone-1.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-tinstone-2.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-tinstone-3.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-tinstone-4.png", scale = 0.25, mipmap_count = 4}
     },
     subgroup = "crushed-resource",
     order = "[crushed-tinstone]",
@@ -341,10 +341,10 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     pictures = {
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-zirconium-ore-1.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-zirconium-ore-2.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-zirconium-ore-3.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-zirconium-ore-4.png", scale = 0.25, mipmap_count = 4}
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-zirconium-ore-1.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-zirconium-ore-2.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-zirconium-ore-3.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-zirconium-ore-4.png", scale = 0.25, mipmap_count = 4}
     },
     subgroup = "crushed-resource",
     order = "[crushed-zirconium-ore]",
@@ -357,10 +357,10 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     pictures = {
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-nickel-ore-1.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-nickel-ore-2.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-nickel-ore-3.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-nickel-ore-4.png", scale = 0.25, mipmap_count = 4}
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-nickel-ore-1.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-nickel-ore-2.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-nickel-ore-3.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-nickel-ore-4.png", scale = 0.25, mipmap_count = 4}
     },
     subgroup = "crushed-resource",
     order = "[crushed-nickel-ore]",
@@ -373,10 +373,10 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     pictures = {
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-tungsten-ore-1.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-tungsten-ore-2.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-tungsten-ore-3.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-tungsten-ore-4.png", scale = 0.25, mipmap_count = 4}
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-tungsten-ore-1.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-tungsten-ore-2.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-tungsten-ore-3.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-tungsten-ore-4.png", scale = 0.25, mipmap_count = 4}
     },
     subgroup = "crushed-resource",
     order = "[crushed-tungsten-ore]",
@@ -389,10 +389,10 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     pictures = {
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-zinc-ore-1.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-zinc-ore-2.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-zinc-ore-3.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-zinc-ore-4.png", scale = 0.25, mipmap_count = 4}
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-zinc-ore-1.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-zinc-ore-2.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-zinc-ore-3.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-zinc-ore-4.png", scale = 0.25, mipmap_count = 4}
     },
     subgroup = "crushed-resource",
     order = "[crushed-zinc-ore]",
@@ -408,10 +408,10 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     pictures = {
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-aluminum-1.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-aluminum-2.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-aluminum-3.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-aluminum-4.png", scale = 0.25, mipmap_count = 4}
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-aluminum-1.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-aluminum-2.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-aluminum-3.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-aluminum-4.png", scale = 0.25, mipmap_count = 4}
     },
     subgroup = "enriched-resource",
     order = "[enriched-aluminum]",
@@ -424,10 +424,10 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     pictures = {
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-tungsten-1.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-tungsten-2.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-tungsten-3.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-tungsten-4.png", scale = 0.25, mipmap_count = 4}
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-tungsten-1.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-tungsten-2.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-tungsten-3.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-tungsten-4.png", scale = 0.25, mipmap_count = 4}
     },
     subgroup = "enriched-resource",
     order = "[enriched-tungsten]",
@@ -440,10 +440,10 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     pictures = {
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-titanium-1.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-titanium-2.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-titanium-3.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-titanium-4.png", scale = 0.25, mipmap_count = 4}
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-titanium-1.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-titanium-2.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-titanium-3.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-titanium-4.png", scale = 0.25, mipmap_count = 4}
     },
     subgroup = "enriched-resource",
     order = "[enriched-titanium]",
@@ -456,10 +456,10 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     pictures = {
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-chromite-1.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-chromite-2.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-chromite-3.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-chromite-4.png", scale = 0.25, mipmap_count = 4}
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-chromite-1.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-chromite-2.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-chromite-3.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-chromite-4.png", scale = 0.25, mipmap_count = 4}
     },
     subgroup = "enriched-resource",
     order = "[enriched-chromite]",
@@ -472,10 +472,10 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     pictures = {
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-magnesium-1.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-magnesium-2.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-magnesium-3.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-magnesium-4.png", scale = 0.25, mipmap_count = 4}
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-magnesium-1.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-magnesium-2.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-magnesium-3.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-magnesium-4.png", scale = 0.25, mipmap_count = 4}
     },
     subgroup = "enriched-resource",
     order = "[enriched-magnesium]",
@@ -488,10 +488,10 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     pictures = {
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-nickel-1.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-nickel-2.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-nickel-3.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-nickel-4.png", scale = 0.25, mipmap_count = 4}
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-nickel-1.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-nickel-2.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-nickel-3.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-nickel-4.png", scale = 0.25, mipmap_count = 4}
     },
     subgroup = "enriched-resource",
     order = "[enriched-nickel]",
@@ -504,10 +504,10 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     pictures = {
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-zinc-1.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-zinc-2.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-zinc-3.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-zinc-4.png", scale = 0.25, mipmap_count = 4}
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-zinc-1.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-zinc-2.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-zinc-3.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-zinc-4.png", scale = 0.25, mipmap_count = 4}
     },
     subgroup = "enriched-resource",
     order = "[enriched-zinc]",
@@ -520,10 +520,10 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     pictures = {
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-tinstone-1.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-tinstone-2.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-tinstone-3.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-tinstone-4.png", scale = 0.25, mipmap_count = 4}
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-tinstone-1.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-tinstone-2.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-tinstone-3.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-tinstone-4.png", scale = 0.25, mipmap_count = 4}
     },
     subgroup = "enriched-resource",
     order = "[enriched-tinstone]",
@@ -539,10 +539,10 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     pictures = {
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/zinc-sulfate-1.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/zinc-sulfate-2.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/zinc-sulfate-3.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/zinc-sulfate-4.png", scale = 0.25, mipmap_count = 4}
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/zinc-sulfate-1.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/zinc-sulfate-2.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/zinc-sulfate-3.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/zinc-sulfate-4.png", scale = 0.25, mipmap_count = 4}
     },
     subgroup = "processed-resource",
     order = "[zinc-sulfate]",
@@ -565,10 +565,10 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     pictures = {
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/leadstone-1.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/leadstone-2.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/leadstone-3.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/leadstone-4.png", scale = 0.25, mipmap_count = 4}
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/leadstone-1.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/leadstone-2.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/leadstone-3.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/leadstone-4.png", scale = 0.25, mipmap_count = 4}
     },
     subgroup = "processed-resource",
     order = "[leadstone]",
@@ -876,10 +876,10 @@ data:extend({
     icon_size = 64,
     scale = 0.25,
     pictures = {
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/plutonium-239-1.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/plutonium-239-2.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/plutonium-239-3.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/plutonium-239-4.png", scale = 0.25, mipmap_count = 4}
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/plutonium-239-1.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/plutonium-239-2.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/plutonium-239-3.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/plutonium-239-4.png", scale = 0.25, mipmap_count = 4}
     },
     subgroup = "processed-resource",
     order = "[plutonium-239]",
@@ -892,10 +892,10 @@ data:extend({
     icon_size = 64,
     scale = 0.25,
     pictures = {
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/plutonium-240-1.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/plutonium-240-2.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/plutonium-240-3.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/plutonium-240-4.png", scale = 0.25, mipmap_count = 4}
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/plutonium-240-1.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/plutonium-240-2.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/plutonium-240-3.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/plutonium-240-4.png", scale = 0.25, mipmap_count = 4}
     },
     subgroup = "processed-resource",
     order = "[plutonium-240]",
@@ -918,10 +918,10 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     pictures = {
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/tellurium-1.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/tellurium-2.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/tellurium-3.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/tellurium-4.png", scale = 0.25, mipmap_count = 4}
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/tellurium-1.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/tellurium-2.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/tellurium-3.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/tellurium-4.png", scale = 0.25, mipmap_count = 4}
     },
     subgroup = "processed-resource",
     order = "[tellurium]",
@@ -1098,6 +1098,22 @@ data:extend({
     scale = 0.25,
     subgroup = "raw-material",
     order = "[cement]",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "sp-wooden-board",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/wooden-board-1.png",
+    icon_size = 64,
+    scale = 0.25,
+    pictures = {
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/wooden-board-1.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/wooden-board-2.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/wooden-board-3.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/wooden-board-4.png", scale = 0.25, mipmap_count = 4}
+    },
+    subgroup = "raw-material",
+    order = "a-plate-1-[wooden-board]",
     stack_size = 100
   },
   ------------------------------------------------------------------------------
@@ -1515,10 +1531,10 @@ data:extend({
     icon_size = 64,
     scale = 0.25,
     pictures = {
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/blunagium-plate-1.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/blunagium-plate-2.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/blunagium-plate-3.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/blunagium-plate-4.png", scale = 0.25, mipmap_count = 4}
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/blunagium-plate-1.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/blunagium-plate-2.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/blunagium-plate-3.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/blunagium-plate-4.png", scale = 0.25, mipmap_count = 4}
     },
     subgroup = "alien-compound",
     order = "a-plate-[blunagium-plate]",
@@ -1531,10 +1547,10 @@ data:extend({
     icon_size = 64,
     scale = 0.25,
     pictures = {
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/grobgnum-plate-1.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/grobgnum-plate-2.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/grobgnum-plate-3.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/grobgnum-plate-4.png", scale = 0.25, mipmap_count = 4}
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/grobgnum-plate-1.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/grobgnum-plate-2.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/grobgnum-plate-3.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/grobgnum-plate-4.png", scale = 0.25, mipmap_count = 4}
     },
     subgroup = "alien-compound",
     order = "a-plate-[grobgnum-plate]",
@@ -1547,10 +1563,10 @@ data:extend({
     icon_size = 64,
     scale = 0.25,
     pictures = {
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/rukite-plate-1.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/rukite-plate-2.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/rukite-plate-3.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/rukite-plate-4.png", scale = 0.25, mipmap_count = 4}
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/rukite-plate-1.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/rukite-plate-2.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/rukite-plate-3.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/rukite-plate-4.png", scale = 0.25, mipmap_count = 4}
     },
     subgroup = "alien-compound",
     order = "a-plate-[rukite-plate]",
@@ -1563,10 +1579,10 @@ data:extend({
     icon_size = 64,
     scale = 0.25,
     pictures = {
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/yemnuth-plate-1.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/yemnuth-plate-2.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/yemnuth-plate-3.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/yemnuth-plate-4.png", scale = 0.25, mipmap_count = 4}
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/yemnuth-plate-1.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/yemnuth-plate-2.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/yemnuth-plate-3.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/yemnuth-plate-4.png", scale = 0.25, mipmap_count = 4}
     },
     subgroup = "alien-compound",
     order = "a-plate-[yemnuth-plate]",
@@ -1833,10 +1849,10 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/titanium-frame-1.png",
     icon_size = 64,
     pictures = {
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/titanium-frame-1.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/titanium-frame-2.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/titanium-frame-3.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/titanium-frame-4.png", scale = 0.25, mipmap_count = 4}
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/titanium-frame-1.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/titanium-frame-2.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/titanium-frame-3.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/titanium-frame-4.png", scale = 0.25, mipmap_count = 4}
     },
     scale = 0.25,
     subgroup = "mechanical-component",
@@ -1849,10 +1865,10 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/micro-frame-1.png",
     icon_size = 64,
     pictures = {
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/micro-frame-1.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/micro-frame-2.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/micro-frame-3.png", scale = 0.25, mipmap_count = 4},
-      { size = 64, filename = "__Spaghetorio__/graphics/icons/micro-frame-4.png", scale = 0.25, mipmap_count = 4}
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/micro-frame-1.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/micro-frame-2.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/micro-frame-3.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/micro-frame-4.png", scale = 0.25, mipmap_count = 4}
     },
     scale = 0.25,
     subgroup = "mechanical-component",

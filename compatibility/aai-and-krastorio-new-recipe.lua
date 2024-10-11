@@ -4,6 +4,55 @@ data:extend({
   ------------------------------------------------------------------------------
   -- MARK: New aai / krastorio recipes
   ------------------------------------------------------------------------------
+  -- util.recipe.change_recipe_ingredients("blank-tech-card",
+  -- {
+  --   {"iron-plate", 2},
+  --   {"copper-cable", 2},
+  -- },
+  -- {
+  --   {"iron-plate", 2},
+  --   {"copper-cable", 3},
+  -- },
+  -- 2,
+  -- 3)
+  {
+    -- AAI
+    type = "recipe",
+    name = "sp-blank-tech-card-from-stone-tablet",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__Krastorio2Assets__/icons/items-with-variations/blank-tech-card/blank-tech-card-1.png", 64,
+                                         "__aai-industry__/graphics/icons/stone-tablet.png", 64),
+    icon_size = 64,
+    mip_maps = 4,
+    category = "crafting",
+    subgroup = "science-pack",
+    enabled = false,
+    energy_required = 2,
+    ingredients = {
+      {type = "item", name = "copper-cable", amount = 2},
+      {type = "item", name = "stone-tablet", amount = 2},
+    },
+    result = "blank-tech-card",
+    result_count = 5,
+  },
+  {
+    type = "recipe",
+    name = "sp-blank-tech-card-from-wooden-board",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__Krastorio2Assets__/icons/items-with-variations/blank-tech-card/blank-tech-card-1.png", 64,
+                                         "__Spaghetorio__/graphics/icons/wooden-board-1.png", 64),
+    icon_size = 64,
+    mip_maps = 4,
+    category = "crafting",
+    subgroup = "science-pack",
+    enabled = false,
+    energy_required = 2,
+    ingredients = {
+      {type = "item", name = "copper-cable", amount = 2},
+      {type = "item", name = "sp-wooden-board", amount = 1},
+      {type = "item", name = "iron-plate", amount = 1},
+    },
+    result = "blank-tech-card",
+    result_count = 5,
+  },
   {
     type = "recipe",
     name = "sp-deuterium",  -- #ForRegEx# - recipe

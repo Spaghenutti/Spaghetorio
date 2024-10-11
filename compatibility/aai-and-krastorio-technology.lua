@@ -69,11 +69,16 @@ data:extend({
         recipe = "burner-assembling-machine"
       },
     },
-    prerequisites = {"kr-automation-core"},
+    prerequisites = {
+      "kr-automation-core",
+      "sp-wood-cutting"
+    },
     unit =
     {
       count = 5,
-      ingredients = {{"basic-tech-card", 1}},
+      ingredients = {
+        {"basic-tech-card", 1}
+      },
       time = 15
     },
     order = "a-h-a"

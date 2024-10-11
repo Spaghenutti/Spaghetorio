@@ -3,6 +3,28 @@ local util = require("data-util")
 data:extend({
   {
     type = "technology",
+    name = "sp-wood-cutting",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghetorio__/graphics/hr-icons/wooden-board-1.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-wooden-board"
+      }
+    },
+    unit =
+    {
+      count = 5,
+      ingredients = {
+        {"basic-tech-card", 1}
+      },
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
     name = "sp-copper-machining",  -- #ForRegEx# - technology
     icon_size = 256,
     icon = "__Spaghetorio__/graphics/hr-icons/copper-tube.png",

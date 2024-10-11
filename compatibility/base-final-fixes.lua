@@ -97,4 +97,18 @@ util.recipe.hide_recipe_from_player_category("acroproduct-conversion-with-acrocr
 util.recipe.hide_recipe_from_player_category("acroproduct-conversion-with-acromatter")
 util.recipe.hide_recipe_from_player_category("acroproduct-conversion-with-acrovoid")
 
-data.raw.recipe["electronic-circuit"].hide_from_player_crafting = true  -- Does not work, I think the recipe is changed to "wooden-board" in Krastorio
+data.raw.recipe["electronic-circuit"].hide_from_player_crafting = true  -- Does not work, I think the recipe is changed to "sp-wooden-board" in Krastorio
+util.recipe.change_recipe_ingredients("electronic-circuit",
+  {
+    {"copper-cable", 5},
+    {"sp-wooden-board", 2},
+    {"sp-solder", 2}
+  },
+  {
+    {"copper-cable", 8},
+    {"sp-wooden-board", 2},
+    {"sp-solder", 2}
+  },
+  1,
+  1.5)
+data.raw.recipe["electronic-circuit"].results = {"electronic-circuit", 2}

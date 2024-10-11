@@ -1225,6 +1225,19 @@ data:extend({
   ------------------------------------------------------------------------------
   {
     type = "recipe",
+    name = "sp-wooden-board",  -- #ForRegEx# - recipe
+    category = "crafting",
+    enabled = false,
+    energy_required = 1,
+    ingredients = {
+      {type = "item", name = "wood", amount = 2}
+    },
+    results = {
+      {type = "item", name = "sp-wooden-board", amount = 3}
+    }
+  },
+  {
+    type = "recipe",
     name = "sp-stainless-steel-gear-wheel",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
@@ -5231,11 +5244,11 @@ data:extend({
       {type = "item", name = "sp-vitality-prism", amount = 1},
       {type = "fluid", name = "sp-perchloric-acid", amount = 100},
       {type = "item", name = "sp-femto-navigator", amount = 140},
-      -- {type = "item", name = "sp-urea", amount = 1},  -- If i add this the recipe dissapears from FNEI and from the kr-bio-lab
-      -- {type = "item", name = "sp-graphene", amount = 5},  -- If i add this the recipe dissapears from FNEI and from the kr-bio-lab
+      {type = "item", name = "sp-urea", amount = 1},
+      {type = "item", name = "sp-graphene", amount = 5},
       {type = "item", name = "sp-grobgnum-optics", amount = 1},
-      -- {type = "item", name = "sp-quantum-foam", amount = 5},  -- If i add this the recipe dissapears from FNEI and from the kr-bio-lab
-      -- {type = "item", name = "sp-gravitonium", amount = 7},  -- If i add this the recipe dissapears from FNEI and from the kr-bio-lab
+      {type = "item", name = "sp-quantum-foam", amount = 5},
+      {type = "item", name = "sp-gravitonium", amount = 7},
       -- Krastorio: {type = "item", name = "biomass", amount = 20},
     },
     results = {
