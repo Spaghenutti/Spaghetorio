@@ -34,7 +34,7 @@ Inspired by [brevven](https://mods.factorio.com/user/brevven).
 ## For version 0.3
 
 - Support for [text plates](https://mods.factorio.com/mod/textplates?from=search)
-- Add new buildings (Thank to custom graphics from [Hurricane046](https://mods.factorio.com/user/Hurricane046))
+- Add new buildings (Thanks to custom graphics from [Hurricane046](https://mods.factorio.com/user/Hurricane046))
 
 ### Special Thanks
 
