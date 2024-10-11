@@ -18,10 +18,22 @@ Inspired by [brevven](https://mods.factorio.com/user/brevven).
 - Requires [Krastorio 2](https://mods.factorio.com/mod/Krastorio2)
 - Requires [AAI Industry](https://mods.factorio.com/mod/aai-industry?from=search)
 
-### TODO List
+### Open Tasks
+## For version 0.2
 
+- Add core miner
+- Add lumber mill
+- Add wooden board
+- Add alternative recipes that consume commonly produce byproducts (lead, ...)
+- Add alternative recipes for commonly produced items (blank data card, circuits, ...)
+- Fix stack sizes of items
+- Change spawning of recources
+- More liquids for alien materials
 - Recipe / balance testing 
-- Support for text plates
+
+## For version 0.3
+
+- Support for [text plates](https://mods.factorio.com/mod/textplates?from=search)
 - Add new buildings (Thank to custom graphics from [Hurricane046](https://mods.factorio.com/user/Hurricane046))
 
 ### Special Thanks
