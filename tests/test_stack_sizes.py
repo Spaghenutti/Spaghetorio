@@ -9,17 +9,27 @@ import re
 
 PATH = os.getcwd()
 ITEMS_PATH = fr"{PATH}\prototypes\item.lua"
-ITEM_WITH_STACK_SIZE = r"name = \"([^\"]*)\",  -- #ForRegEx# - item[a-zA-Z0-9=_ .,\[\]\"\/\-\n]*stack_size = ([0-9]*)"
+ITEM_SIZE_REGEX = r"name = \"([^\"]*)\",  -- (#ForRegEx#|#Missing regex#)"
+ITEM_WITH_STACK_SIZE_REGEX = r"name = \"([^\"]*)\",  -- (#ForRegEx#|#Missing regex#)[^#]*stack_size = ([0-9]*)"
+STACK_SIZE_REGEX = r"stack_size = ([0-9]*)"
 
-def parse_items():
+def test_count_stack_sizes():
     """
-    Parses items.lua and returns matches with item name and stack sizes
+    Parses items.lua verifies num of matches and listings of stack sizes have
+    same length
     """
     with open(ITEMS_PATH) as f:
-        matches = re.findall(ITEM_WITH_STACK_SIZE, f.read())
+        items_text = f.read()
+        item_matches = re.findall(ITEM_SIZE_REGEX, items_text)
+        item_stack_size_matches = re.findall(ITEM_WITH_STACK_SIZE_REGEX, items_text)
+        stack_size_matches = re.findall(STACK_SIZE_REGEX, items_text)
 
-    return matches
+    print(len(item_matches))
+    print(len(item_stack_size_matches))
+    print(len(stack_size_matches))
+
+    assert (len(item_matches) == len(item_stack_size_matches)) and (len(item_matches) == len(stack_size_matches))
 
 
 if __name__ == "__main__":
-    [print(match) for match in parse_items()]
+    print(test_count_stack_sizes())

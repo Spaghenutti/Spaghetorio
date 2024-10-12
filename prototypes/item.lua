@@ -3463,7 +3463,7 @@ data:extend({
   ------------------------------------------------------------------------------
   {
     type = "module",
-    name = "sp-speed-module-4",
+    name = "sp-speed-module-4",  -- #ForRegEx# - item
     localised_description = {"item-description.speed-module"},
     icon = "__Spaghetorio__/graphics/icons/speed-module-4.png",
     icon_size = 64, icon_mipmaps = 4,
@@ -3483,7 +3483,7 @@ data:extend({
   },
   {
     type = "module",
-    name = "sp-effectivity-module-4",
+    name = "sp-effectivity-module-4",  -- #ForRegEx# - item
     localised_description = {"item-description.effectivity-module"},
     icon = "__Spaghetorio__/graphics/icons/effectivity-module-4.png",
     icon_size = 64, icon_mipmaps = 4,
@@ -3503,7 +3503,7 @@ data:extend({
   },
   {
     type = "module",
-    name = "sp-productivity-module-4",
+    name = "sp-productivity-module-4",  -- #ForRegEx# - item
     localised_description = {"item-description.productivity-module"},
     icon = "__Spaghetorio__/graphics/icons/productivity-module-4.png",
     icon_size = 64, icon_mipmaps = 4,
@@ -3588,7 +3588,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-blunagium-rocket",
+    name = "sp-blunagium-rocket",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/blunagium-rocket.png",
     icon_size = 64,
     icon_mipmaps = 4,
@@ -3598,7 +3598,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-grobgnum-rocket",
+    name = "sp-grobgnum-rocket",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/grobgnum-rocket.png",
     icon_size = 64,
     icon_mipmaps = 4,
@@ -3608,7 +3608,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-rukite-rocket",
+    name = "sp-rukite-rocket",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/rukite-rocket.png",
     icon_size = 64,
     icon_mipmaps = 4,
@@ -3618,7 +3618,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-yemnuth-rocket",
+    name = "sp-yemnuth-rocket",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/yemnuth-rocket.png",
     icon_size = 64,
     icon_mipmaps = 4,
@@ -3628,7 +3628,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-blunagium-rocket-silo",
+    name = "sp-blunagium-rocket-silo",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/blunagium-rocket-silo.png",
     icon_size = 64,
     icon_mipmaps = 4,
@@ -3639,7 +3639,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-grobgnum-rocket-silo",
+    name = "sp-grobgnum-rocket-silo",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/grobgnum-rocket-silo.png",
     icon_size = 64,
     icon_mipmaps = 4,
@@ -3650,7 +3650,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-rukite-rocket-silo",
+    name = "sp-rukite-rocket-silo",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/rukite-rocket-silo.png",
     icon_size = 64,
     icon_mipmaps = 4,
@@ -3661,7 +3661,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-yemnuth-rocket-silo",
+    name = "sp-yemnuth-rocket-silo",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/yemnuth-rocket-silo.png",
     icon_size = 64,
     icon_mipmaps = 4,
@@ -4135,10 +4135,12 @@ data:extend({
     order = "a[corrupted-acrosphere-4]",
     stack_size = 1
   },
+  ------------------------------------------------------------------------------
   -- MARK: equipment
+  ------------------------------------------------------------------------------
   {
     type = "item",
-    name = "sp-personal-roboport-mk3-equipment",  -- Missing regex
+    name = "sp-personal-roboport-mk3-equipment",  -- #Missing regex#
     icon = "__Spaghetorio__/graphics/equipment/personal-roboport-mk3-equipment.png",
     icon_size = 64, icon_mipmaps = 4,
     placed_as_equipment_result = "sp-personal-roboport-mk3-equipment",
@@ -4149,7 +4151,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-personal-roboport-mk4-equipment",  -- Missing regex
+    name = "sp-personal-roboport-mk4-equipment",  -- #Missing regex#
     icon = "__Spaghetorio__/graphics/equipment/personal-roboport-mk4-equipment.png",
     icon_size = 64, icon_mipmaps = 4,
     placed_as_equipment_result = "sp-personal-roboport-mk4-equipment",
