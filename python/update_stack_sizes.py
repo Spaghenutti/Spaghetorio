@@ -24,7 +24,8 @@ def parse_items() -> Tuple[str, str]:
 
 def extend_krastorio_stack_sizes(matches) -> None:
     """
-    Extends krastorio-stack-sizes.lua with items that should be editable by the kr-stack-size setting
+    Extends krastorio-stack-sizes.lua with items that should be editable by the
+    kr-stack-size setting
     """
     matches.sort(key=lambda x: x[0].upper())
 
@@ -46,6 +47,16 @@ def extend_krastorio_stack_sizes(matches) -> None:
         f.write("")
 
     f.close()
+
+
+def update_stack_sizes() -> None:
+    """
+    Parses items.lua and returns matches with item name and stack sizes and 
+    extends krastorio-stack-sizes.lua with items that should be editable by the
+    kr-stack-size setting
+    """
+    krastorio_compatible_matches, _ = parse_items()
+    extend_krastorio_stack_sizes(krastorio_compatible_matches)
 
 
 if __name__ == "__main__":

@@ -13,6 +13,7 @@ import convert_hr_resource_to_normal_resultion
 import create_alien_resource_icon
 import create_zip
 import generate_locale
+import update_stack_sizes
 import git_utilities
 import remove_unused_images
 
@@ -33,6 +34,8 @@ convert_hr_resource_to_normal_resultion.resize_images()
 create_alien_resource_icon.create_alien_resource()
 
 generate_locale.update_locale()
+
+update_stack_sizes.update_stack_sizes()
 
 # remove_unused_images.remove_unused_images()  # Deprecated since unused images are now not added to the zip file
 
