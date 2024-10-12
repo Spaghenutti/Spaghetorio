@@ -65,6 +65,7 @@ Ideas:
 
 Other:
   + Fix complex recipes not showing up in some machines
+  - break down space research data into circuits / minerals
   - Support text plates mod
   - Fix energy values of fluids (see heat_capacity)
   + Fix barrel tints

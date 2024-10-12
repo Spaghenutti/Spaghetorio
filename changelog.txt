@@ -3,6 +3,8 @@ Version: 0.2.0
 Date: 2024-10-13
   Features:
     - Added wooden board
+    - Engineer spawns now with biolab, pipes and offshore pump for easier wood production
+    - Support for krastorio custom stack sizes
   Bugfixes:
     - Unlock unlimited ingredient count for krastorio buildings
 ---------------------------------------------------------------------------------------------------

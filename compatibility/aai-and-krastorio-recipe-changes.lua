@@ -2,7 +2,7 @@ local util = require("data-util")
 
 data:extend({
   ------------------------------------------------------------------------------
-  -- MARK: Update crushing recipes
+  -- MARK: Update crushing recipes for ores
   ------------------------------------------------------------------------------
   {
     type = "recipe",
@@ -494,10 +494,10 @@ table.insert(data.raw.recipe["sp-rare-metals-alloy-from-cerium"].results, {type 
 table.insert(data.raw.recipe["sp-rare-metals-alloy-from-neodymium"].results, {type = "item", name = "rare-metals", amount = 6})
 
 -- MARK: Add missing rocket launch products
-table.insert(data.raw.item["sp-blunagium-explorer"].rocket_launch_products, {"space-research-data", 500})
-table.insert(data.raw.item["sp-grobgnum-explorer"].rocket_launch_products, {"space-research-data", 500})
-table.insert(data.raw.item["sp-rukite-explorer"].rocket_launch_products, {"space-research-data", 500})
-table.insert(data.raw.item["sp-yemnuth-explorer"].rocket_launch_products, {"space-research-data", 500})
+table.insert(data.raw.item["sp-blunagium-explorer"].rocket_launch_products, {"space-research-data", 50})
+table.insert(data.raw.item["sp-grobgnum-explorer"].rocket_launch_products, {"space-research-data", 50})
+table.insert(data.raw.item["sp-rukite-explorer"].rocket_launch_products, {"space-research-data", 50})
+table.insert(data.raw.item["sp-yemnuth-explorer"].rocket_launch_products, {"space-research-data", 50})
 
 -- MARK: base crafting changes
 data.raw.recipe["steel-beam"].category = "smelting"
@@ -3443,6 +3443,16 @@ util.recipe.change_recipe_ingredients("steel-wall",
   },
   5,
   8)
+
+
+-- MARK: Add uses to crushing recipes
+data.raw.recipe["kr-vc-space-research-data"].subgroup = "crushed-resource"
+data.raw.recipe["kr-vc-space-research-data"].results = {
+  {type = "item", name = "rocket-control-unit", probability = 0.1, amount = 1},
+  {type = "item", name = "processing-unit", probability = 0.3, amount = 2},
+  {type = "item", name = "electronic-components", amount = 20}
+}
+
 
 -- MARK: Remove crushing recipes
 data.raw.recipe["kr-vc-sp-nuclear-waste"] = nil

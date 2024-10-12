@@ -24,9 +24,10 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "crafting",
-    subgroup = "science-pack",
+    subgroup = "science-item",
     enabled = false,
     energy_required = 2,
+    hide_from_player_crafting = true,
     ingredients = {
       {type = "item", name = "copper-cable", amount = 2},
       {type = "item", name = "stone-tablet", amount = 2},
@@ -42,9 +43,10 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "crafting",
-    subgroup = "science-pack",
+    subgroup = "science-item",
     enabled = false,
     energy_required = 2,
+    hide_from_player_crafting = true,
     ingredients = {
       {type = "item", name = "copper-cable", amount = 2},
       {type = "item", name = "sp-wooden-board", amount = 1},
