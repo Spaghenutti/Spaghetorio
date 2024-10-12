@@ -1770,7 +1770,7 @@ data:extend({
     icon_mipmaps = 4,
     subgroup = "mechanical-component",
     order = "cable-[aluminum-cable]",
-    stack_size = 400
+    stack_size = 200
   },
   {
     type = "item",
@@ -1780,7 +1780,7 @@ data:extend({
     scale = 0.25,
     subgroup = "mechanical-component",
     order = "frame-1-[copper-tube]",
-    stack_size = 400
+    stack_size = 200
   },
   {
     type = "item",
@@ -1790,7 +1790,7 @@ data:extend({
     scale = 0.25,
     subgroup = "mechanical-component",
     order = "other-1-[spring]",
-    stack_size = 400
+    stack_size = 200
   },
   {
     type = "item",
@@ -1800,7 +1800,7 @@ data:extend({
     scale = 0.25,
     subgroup = "mechanical-component",
     order = "gear-[stainless-steel-gear-wheel]",
-    stack_size = 400
+    stack_size = 200
   },
   {
     type = "item",
@@ -1810,7 +1810,7 @@ data:extend({
     scale = 0.25,
     subgroup = "mechanical-component",
     order = "other-[connecting-rod]",
-    stack_size = 400
+    stack_size = 200
   },
   {
     type = "item",
@@ -1825,7 +1825,7 @@ data:extend({
     },
     subgroup = "mechanical-component",
     order = "other-[bolts]",
-    stack_size = 400
+    stack_size = 200
   },
   {
     type = "item",
@@ -1841,7 +1841,7 @@ data:extend({
     },
     subgroup = "mechanical-component",
     order = "frame-2-[machined-parts]",
-    stack_size = 400
+    stack_size = 200
   },
   {
     type = "item",
@@ -2833,7 +2833,7 @@ data:extend({
     scale = 0.25,
     subgroup = "intermediate-alien-product",
     order = "blunagium-2-[gravitational-wave-interferometer]",
-    stack_size = 400
+    stack_size = 200
   },
   {
     type = "item",
@@ -3186,7 +3186,7 @@ data:extend({
     scale = 0.25,
     subgroup = "advanced-alien-product",
     order = "quantum-[proton-neutron-frame]",
-    stack_size = 400
+    stack_size = 200
   },
   {
     type = "item",
@@ -4138,7 +4138,7 @@ data:extend({
   -- MARK: equipment
   {
     type = "item",
-    name = "sp-personal-roboport-mk3-equipment",
+    name = "sp-personal-roboport-mk3-equipment",  -- Missing regex
     icon = "__Spaghetorio__/graphics/equipment/personal-roboport-mk3-equipment.png",
     icon_size = 64, icon_mipmaps = 4,
     placed_as_equipment_result = "sp-personal-roboport-mk3-equipment",
@@ -4149,7 +4149,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-personal-roboport-mk4-equipment",
+    name = "sp-personal-roboport-mk4-equipment",  -- Missing regex
     icon = "__Spaghetorio__/graphics/equipment/personal-roboport-mk4-equipment.png",
     icon_size = 64, icon_mipmaps = 4,
     placed_as_equipment_result = "sp-personal-roboport-mk4-equipment",
@@ -4220,7 +4220,7 @@ if not mods["Krastorio2"] then
       scale = 0.25,
       subgroup = "mechanical-component",
       order = "[steel-gear-wheel]",
-      stack_size = 400
+      stack_size = 200
     },
     {
       type = "item",
