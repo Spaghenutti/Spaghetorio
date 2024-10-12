@@ -1,13 +1,13 @@
 
 Buildings: Graphics (https://www.figma.com/proto/8ecwGOzYos13D0JTwV5kO9/Factorio-Buildings?node-id=2585-1158&node-type=frame&t=Tt0H6pFe0h0uH68x-0&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1ui%3D1&hotspot-hints=0&hide-ui=1)
-  - cyclotron (Use convector building from hurricane406)
-  - particle accelerator (Use fusion reactor building from hurricane406)
+  - Heat treatment convector (Use convector building from hurricane406)
+  - particle accelerator / cyclotron (Use fusion reactor building from hurricane406)
   - Acroshpere converter or blunagium extractor (Use oxidizer building from hurricane406)
   - core miner (Use core extractor building from hurricane406) (for version 0.2.0)
     - Core mining should have different ressources to mine from. Every resource returns a combination of ores / metals.
   - Lumber mill (Use Lumber mill from hurricane406)
   - Low gravity assembling machine (Use Low gravity assembling machine from hurricane406)
-  - Something else :D (Use Arc furnace from hurricane406) - I think the building uses heatpipes
+  - Electrolysis plant for factorio space age (Use Arc furnace from hurricane406) - I think the building uses heatpipes
 
 Items:
   - Seal
@@ -20,6 +20,15 @@ Items:
   - Coolant with different temperatures (coolant does not have a real purpose right now, see Idea coolant)
   - Vacuum chamber
   - Alloys:
+    - Spring steel
+      - (1% carbon, 0.5% magnesium, 0.3% silicon)
+      - (1% carbon, 1% magnesium, 0.9% chrome)
+      - (1% carbon, 16% magnesium, 18% chrome, 7% nickel)
+      - Used for ball bearings
+      - springs
+      - assembling / manufacturing machines
+      - inserters / inserter parts
+      - Aquired by hardening
 
   - For semiconductors:
     - Tantalum nitride

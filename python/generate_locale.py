@@ -28,9 +28,11 @@ def generate_locale_value(key: str) -> Tuple[str, str]:
     Generates the locale value given a key and returns both as tuple
     """
     if key.startswith("sp-"):
-        value = key[3:].replace("-", " ").capitalize()
+        value = key[3:].replace("-", " ")
+        value = value[0].capitalize() + value[1:]
     elif key.startswith("kr-vc-sp-"):
-        value = key[9:].replace("-", " ").capitalize()
+        value = key[9:].replace("-", " ")
+        value = value[0].capitalize() + value[1:]
     else:
         raise KeyError(f"Key {key} does not start with \"sp-\" or \"kr-vc-sp-\"")
     
@@ -65,6 +67,7 @@ def extend_locale(matches: List[Tuple[str, str]],
     """
     # Read the configuration file
     config = configparser.ConfigParser()
+    config.optionxform = str
     config.read(locale_path)
 
     # Generate new key values from lua file
@@ -81,15 +84,16 @@ def extend_locale(matches: List[Tuple[str, str]],
             print(f"Skipping locale generation. {k}") 
 
     # Sort the sections
-    sorted_sections = sorted(config.sections())
+    sorted_sections = sorted(config.sections(), key=lambda v: v[0].upper())
 
     # Create a new ConfigParser object to store the sorted sections
     sorted_config = configparser.ConfigParser()
+    sorted_config.optionxform = str
 
     # Add the sorted sections to the new ConfigParser object
     for section in sorted_sections:
         sorted_config.add_section(section)
-        sorted_items = sorted(config.items(section))
+        sorted_items = sorted(config.items(section), key=lambda v: v[0].upper())
         for key, value in sorted_items:
             sorted_config.set(section, key, value)
 
