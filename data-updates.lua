@@ -10,10 +10,12 @@ require("compatibility.aai-and-krastorio-subgroup-fixes")
 require("compatibility.aai-and-krastorio-order-fixes")
 require("compatibility.aai-and-krastorio-technology")
 require("compatibility.aai-and-krastorio-technology-changes")
+
 require("compatibility.krastorio-building")
 require("compatibility.krastorio-equipment")
-
 require("compatibility.krastorio-stack-sizes")
+require("compatibility.krastorio-resource")
+
 require("compatibility.krastorio-fixes")
 require("compatibility.aai-industry-fixes")
 

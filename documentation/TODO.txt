@@ -89,8 +89,8 @@ Other:
     - Mirror
     - Infra red filter
   - Add glow to alien items
-  - Fix stack sizes (for version 0.2.0)
-  - Fix resource spawning (for version 0.2.0)
+  + Fix stack sizes (for version 0.2.0)
+  + Fix resource spawning (for version 0.2.0)
   + Add greenhouse on spawning with some pumps and pipes (for version 0.2.0)
 
 Low prio:

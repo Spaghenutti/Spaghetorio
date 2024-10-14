@@ -6,6 +6,7 @@ Date: 2024-10-13
     - Engineer spawns now with biolab, pipes and offshore pump for easier wood production
     - Support for krastorio custom stack sizes
     - Space research data is now crushed into rocket control unit, processing unit and electronic components
+    - Update to resource spawning
   Bugfixes:
     - Unlock unlimited ingredient count for krastorio buildings
     - Locale fixes
