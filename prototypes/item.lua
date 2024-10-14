@@ -4256,7 +4256,7 @@ data:extend({
   ------------------------------------------------------------------------------
   {
     type = "item",
-    name = "sp-lumber-mill",
+    name = "sp-lumber-mill",  -- #ForRegEx# - building
     icon = "__Spaghetorio__/graphics/icons/lumber-mill.png",
     icon_size = 64,
     icon_mipmaps = 4,

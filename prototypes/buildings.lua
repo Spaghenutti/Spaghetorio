@@ -4,7 +4,7 @@ local hit_effects = require("__base__/prototypes/entity/hit-effects")
 data:extend({
   {
     type = "assembling-machine",
-    name = "sp-lumber-mill",
+    name = "sp-lumber-mill",  -- #ForRegEx# - entity-name
     icon_size = 64,
     icon_mipmaps = 4,
     icon = "__Spaghetorio__/graphics/icons/lumber-mill.png",
