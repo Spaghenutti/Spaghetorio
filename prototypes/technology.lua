@@ -5317,9 +5317,9 @@ data:extend({
     name = "sp-upgrade-acrosphere-conversion",  -- #ForRegEx# - technology
     icon_size = 256,
     icons = util.icon.combine_four_icons("__Spaghetorio__/graphics/hr-icons/blunagium-acrosphere-2.png", 256, nil,
-                                    "__Spaghetorio__/graphics/hr-icons/grobgnum-acrosphere-2.png", 256, nil,
-                                    "__Spaghetorio__/graphics/hr-icons/rukite-acrosphere-2.png", 256, nil,
-                                    "__Spaghetorio__/graphics/hr-icons/yemnuth-acrosphere-2.png", 256, nil),
+                                         "__Spaghetorio__/graphics/hr-icons/grobgnum-acrosphere-2.png", 256, nil,
+                                         "__Spaghetorio__/graphics/hr-icons/rukite-acrosphere-2.png", 256, nil,
+                                         "__Spaghetorio__/graphics/hr-icons/yemnuth-acrosphere-2.png", 256, nil),
     effects =
     {
       {
@@ -5346,14 +5346,18 @@ data:extend({
       ingredients = {
         {"sp-automation-science-pack-3", 1},
         {"sp-logistic-science-pack-3", 1},
-        {"sp-material-science-pack-3", 1},
-        {"sp-electronic-science-pack-3", 1},
         {"sp-chemical-science-pack-3", 1},
+        {"sp-electronic-science-pack-3", 1},
+        {"sp-geological-science-pack-3", 1},
+        {"sp-material-science-pack-3", 1},
         {"sp-computer-science-pack-3", 1},
         {"sp-production-science-pack-3", 1},
         {"sp-nuclear-science-pack-3", 1},
+        {"sp-astronomical-science-pack-3", 1},
         {"sp-utility-science-pack-3", 1},
-        {"sp-astronomical-science-pack-3", 1}
+        -- Krastorio: {"matter-tech-card", 1},
+        -- Krastorio: {"advanced-tech-card", 1},
+        -- Krastorio: {"space-science-pack", 1}
       },
       time = 15
     },

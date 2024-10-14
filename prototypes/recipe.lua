@@ -5743,8 +5743,8 @@ data:extend({
       {type = "fluid", name = "sp-chronomatter", amount = 10},
       {type = "item", name = "sp-yemnuth-acrosphere-1", amount = 1},
       {type = "item", name = "sp-grobgnum-acrosphere-2", amount = 1},
-      {type = "item", name = "sp-corrupted-acrosphere-1", amount = 1},
-      {type = "item", name = "sp-corrupted-acrosphere-2", amount = 1}
+      {type = "item", name = "sp-corrupted-acrosphere-3", amount = 1},
+      {type = "item", name = "sp-corrupted-acrosphere-4", amount = 1}
     },
     results = {
       {type = "item", name = "sp-rukite-acrosphere-1", amount = 1},

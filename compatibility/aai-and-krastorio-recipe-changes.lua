@@ -282,8 +282,106 @@ data:extend({
       {type = "item", name = "sand", amount = 1},
       {type = "item", name = "sp-crushed-zirconium-ore", amount = 2}
     }
+  },
+  {
+    type = "recipe",
+    name = "kr-vc-sp-corrupted-acrosphere-1",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/hr-icons/corrupted-acrosphere-1.png",
+    icon_size = 256,
+    mip_maps = 4,
+    category = "crushing",
+    subgroup = "crushed-resource",
+    enabled = false,
+    energy_required = 8,
+    hide_from_player_crafting = true,
+    ingredients = {
+      {type = "item", name = "sp-corrupted-acrosphere-1", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-yttrium", amount = 12},
+      {type = "item", name = "sp-blunagium", amount = 6}
+    }
+  },
+  {
+    type = "recipe",
+    name = "kr-vc-sp-corrupted-acrosphere-2",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/hr-icons/corrupted-acrosphere-2.png",
+    icon_size = 256,
+    mip_maps = 4,
+    category = "crushing",
+    subgroup = "crushed-resource",
+    enabled = false,
+    energy_required = 8,
+    hide_from_player_crafting = true,
+    ingredients = {
+      {type = "item", name = "sp-corrupted-acrosphere-2", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-lanthanum", amount = 10},
+      {type = "item", name = "sp-grobgnum", amount = 6}
+    }
+  },
+  {
+    type = "recipe",
+    name = "kr-vc-sp-corrupted-acrosphere-3",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/hr-icons/corrupted-acrosphere-3.png",
+    icon_size = 256,
+    mip_maps = 4,
+    category = "crushing",
+    subgroup = "crushed-resource",
+    enabled = false,
+    energy_required = 8,
+    hide_from_player_crafting = true,
+    ingredients = {
+      {type = "item", name = "sp-corrupted-acrosphere-3", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-cerium", amount = 6},
+      {type = "item", name = "sp-rukite", amount = 6}
+    }
+  },
+  {
+    type = "recipe",
+    name = "kr-vc-sp-corrupted-acrosphere-4",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/hr-icons/corrupted-acrosphere-4.png",
+    icon_size = 256,
+    mip_maps = 4,
+    category = "crushing",
+    subgroup = "crushed-resource",
+    enabled = false,
+    energy_required = 8,
+    hide_from_player_crafting = true,
+    ingredients = {
+      {type = "item", name = "sp-corrupted-acrosphere-4", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-neodymium", amount = 10},
+      {type = "item", name = "sp-yemnuth", amount = 6}
+    }
   }
 })
+
+-- MARK: Add uses to Krastorio crushing recipes
+data.raw.recipe["kr-vc-space-research-data"].subgroup = "crushed-resource"
+data.raw.recipe["kr-vc-space-research-data"].results = {
+  {type = "item", name = "rocket-control-unit", probability = 0.1, amount = 1},
+  {type = "item", name = "processing-unit", probability = 0.3, amount = 2},
+  {type = "item", name = "electronic-components", amount = 20}
+}
+
+-- MARK: Remove crushing recipes
+data.raw.recipe["kr-vc-sp-nuclear-waste"] = nil
+data.raw.recipe["kr-vc-sp-blunagium-acrosphere-1"] = nil
+data.raw.recipe["kr-vc-sp-blunagium-acrosphere-2"] = nil
+data.raw.recipe["kr-vc-sp-grobgnum-acrosphere-1"] = nil
+data.raw.recipe["kr-vc-sp-grobgnum-acrosphere-2"] = nil
+data.raw.recipe["kr-vc-sp-rukite-acrosphere-1"] = nil
+data.raw.recipe["kr-vc-sp-rukite-acrosphere-2"] = nil
+data.raw.recipe["kr-vc-sp-yemnuth-acrosphere-1"] = nil
+data.raw.recipe["kr-vc-sp-yemnuth-acrosphere-2"] = nil
+data.raw.recipe["kr-vc-sp-acrocrystal"] = nil
+data.raw.recipe["kr-vc-sp-acromatter"] = nil
+data.raw.recipe["kr-vc-sp-acrovoid"] = nil
 
 ------------------------------------------------------------------------------
 -- MARK: Changes to Spaghenutty
@@ -3443,27 +3541,3 @@ util.recipe.change_recipe_ingredients("steel-wall",
   },
   5,
   8)
-
-
--- MARK: Add uses to crushing recipes
-data.raw.recipe["kr-vc-space-research-data"].subgroup = "crushed-resource"
-data.raw.recipe["kr-vc-space-research-data"].results = {
-  {type = "item", name = "rocket-control-unit", probability = 0.1, amount = 1},
-  {type = "item", name = "processing-unit", probability = 0.3, amount = 2},
-  {type = "item", name = "electronic-components", amount = 20}
-}
-
-
--- MARK: Remove crushing recipes
-data.raw.recipe["kr-vc-sp-nuclear-waste"] = nil
-data.raw.recipe["kr-vc-sp-blunagium-acrosphere-1"] = nil
-data.raw.recipe["kr-vc-sp-blunagium-acrosphere-2"] = nil
-data.raw.recipe["kr-vc-sp-grobgnum-acrosphere-1"] = nil
-data.raw.recipe["kr-vc-sp-grobgnum-acrosphere-2"] = nil
-data.raw.recipe["kr-vc-sp-rukite-acrosphere-1"] = nil
-data.raw.recipe["kr-vc-sp-rukite-acrosphere-2"] = nil
-data.raw.recipe["kr-vc-sp-yemnuth-acrosphere-1"] = nil
-data.raw.recipe["kr-vc-sp-yemnuth-acrosphere-2"] = nil
-data.raw.recipe["kr-vc-sp-acrocrystal"] = nil
-data.raw.recipe["kr-vc-sp-acromatter"] = nil
-data.raw.recipe["kr-vc-sp-acrovoid"] = nil

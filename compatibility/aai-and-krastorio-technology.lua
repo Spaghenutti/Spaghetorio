@@ -246,4 +246,57 @@ data:extend({
     },
     order = "a-h-a"
   },
+  {
+    type = "technology",
+    name = "sp-crush-acrospheres",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icons = util.icon.combine_four_icons("__Spaghetorio__/graphics/hr-icons/corrupted-acrosphere-1.png", 256, nil,
+                                         "__Spaghetorio__/graphics/hr-icons/corrupted-acrosphere-2.png", 256, nil,
+                                         "__Spaghetorio__/graphics/hr-icons/corrupted-acrosphere-3.png", 256, nil,
+                                         "__Spaghetorio__/graphics/hr-icons/corrupted-acrosphere-4.png", 256, nil),
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "kr-vc-sp-corrupted-acrosphere-1"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "kr-vc-sp-corrupted-acrosphere-2"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "kr-vc-sp-corrupted-acrosphere-3"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "kr-vc-sp-corrupted-acrosphere-4"
+      }
+    },
+    prerequisites = {
+      "sp-upgrade-acrosphere-conversion"
+    },
+    unit =
+    {
+      count = 2000,
+      ingredients = {
+        {"sp-automation-science-pack-3", 1},
+        {"sp-logistic-science-pack-3", 1},
+        {"sp-chemical-science-pack-3", 1},
+        {"sp-electronic-science-pack-3", 1},
+        {"sp-geological-science-pack-3", 1},
+        {"sp-material-science-pack-3", 1},
+        {"sp-computer-science-pack-3", 1},
+        {"sp-production-science-pack-3", 1},
+        {"sp-nuclear-science-pack-3", 1},
+        {"sp-astronomical-science-pack-3", 1},
+        {"sp-utility-science-pack-3", 1},
+        {"matter-tech-card", 1},
+        {"advanced-tech-card", 1},
+        {"space-science-pack", 1}
+      },
+      time = 15
+    },
+    order = "a-h-a"
+  },
 })
