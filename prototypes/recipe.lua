@@ -1221,14 +1221,14 @@ data:extend({
     order = "z-filtration-[sulfur]"
   },
   ------------------------------------------------------------------------------
-  -- MARK: crafting
+  -- MARK: sawing
   ------------------------------------------------------------------------------
   {
     type = "recipe",
     name = "sp-wooden-board",  -- #ForRegEx# - recipe
-    category = "crafting",
-    enabled = false,
-    energy_required = 1,
+    category = "sawing",
+    enabled = true,
+    energy_required = 0.5,
     ingredients = {
       {type = "item", name = "wood", amount = 2}
     },
@@ -1236,6 +1236,9 @@ data:extend({
       {type = "item", name = "sp-wooden-board", amount = 3}
     }
   },
+  ------------------------------------------------------------------------------
+  -- MARK: crafting
+  ------------------------------------------------------------------------------
   {
     type = "recipe",
     name = "sp-stainless-steel-gear-wheel",  -- #ForRegEx# - recipe
@@ -4010,6 +4013,30 @@ data:extend({
     }
   },
   ------------------------------------------------------------------------------
+  -- MARK: Building
+  ------------------------------------------------------------------------------
+  {
+    type = "recipe",
+    name = "sp-lumber-mill",  -- #ForRegEx# - recipe
+    icon_size = 64,
+    mip_maps = 4,
+    category = "crafting",
+    enabled = false,
+    energy_required = 20,
+    ingredients = {
+      {type = "item", name = "motor", amount = 6},
+      {type = "item", name = "sp-spring", amount = 8},
+      {type = "item", name = "iron-beam", amount = 10},
+      {type = "item", name = "sp-bolts", amount = 16},
+      {type = "item", name = "sp-gearbox", amount = 4},
+      {type = "item", name = "stone-brick", amount = 12},
+      {type = "item", name = "sp-wooden-board", amount = 20},
+    },
+    results = {
+      {type = "item", name = "sp-lumber-mill", amount = 1}
+    }
+  },
+  ------------------------------------------------------------------------------
   -- MARK: Equipment
   ------------------------------------------------------------------------------
   {
@@ -4017,7 +4044,7 @@ data:extend({
     name = "sp-personal-roboport-mk3-equipment",  -- #ForRegEx# - recipe
     icon_size = 64,
     mip_maps = 4,
-    category = "intermediate-smelting",  -- Krastorio: category = "advanced-smelting"
+    category = "crafting",
     enabled = false,
     energy_required = 30,
     ingredients = {
@@ -4039,7 +4066,7 @@ data:extend({
     name = "sp-personal-roboport-mk4-equipment",  -- #ForRegEx# - recipe
     icon_size = 64,
     mip_maps = 4,
-    category = "intermediate-smelting",  -- Krastorio: category = "advanced-smelting"
+    category = "crafting",
     enabled = false,
     energy_required = 45,
     ingredients = {

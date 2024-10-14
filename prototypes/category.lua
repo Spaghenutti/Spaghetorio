@@ -2,6 +2,10 @@
 data:extend({
   {
     type = "recipe-category",
+    name = "sawing"
+  },
+  {
+    type = "recipe-category",
     name = "crushed-smelting"
   },
   {

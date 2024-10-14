@@ -18,7 +18,7 @@ Inspired by [brevven](https://mods.factorio.com/user/brevven).
 - Requires [Krastorio 2](https://mods.factorio.com/mod/Krastorio2)
 - Requires [AAI Industry](https://mods.factorio.com/mod/aai-industry?from=search)
 
-### Open Tasks
+### Roadmap
 ## For version 0.2
 
 - Add core miner

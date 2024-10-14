@@ -588,7 +588,8 @@ data:extend({
     type = "item",
     name = "sp-cobalt-sulfate",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/cobalt-sulfate.png",
-    icon_size = 64, icon_mipmaps = 4,
+    icon_size = 64,
+    icon_mipmaps = 4,
     subgroup = "processed-resource",
     order = "[cobalt-sulfate]",
     stack_size = 200
@@ -1715,7 +1716,8 @@ data:extend({
     type = "item",
     name = "sp-acrocrystal",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/acrocrystal.png",
-    icon_size = 64, icon_mipmaps = 4,
+    icon_size = 64,
+    icon_mipmaps = 4,
     subgroup = "sp-acroproduct",
     order = "b[acrocrystal]",
     stack_size = 10
@@ -1724,7 +1726,8 @@ data:extend({
     type = "item",
     name = "sp-acromatter",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/acromatter.png",
-    icon_size = 64, icon_mipmaps = 4,
+    icon_size = 64,
+    icon_mipmaps = 4,
     subgroup = "sp-acroproduct",
     order = "b[acromatter]",
     stack_size = 10
@@ -1733,7 +1736,8 @@ data:extend({
     type = "item",
     name = "sp-acrovoid",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/acrovoid.png",
-    icon_size = 64, icon_mipmaps = 4,
+    icon_size = 64,
+    icon_mipmaps = 4,
     subgroup = "sp-acroproduct",
     order = "b[acrovoid]",
     stack_size = 10
@@ -1931,7 +1935,8 @@ data:extend({
     type = "item",
     name = "sp-composites",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/composites.png",
-    icon_size = 64, icon_mipmaps = 4,
+    icon_size = 64,
+    icon_mipmaps = 4,
     subgroup = "mechanical-component",
     order = "ceramic-[composites]",
     stack_size = 50
@@ -1979,7 +1984,8 @@ data:extend({
     type = "item",
     name = "sp-heat-resistant-tile",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/heat-resistant-tile.png",
-    icon_size = 64, icon_mipmaps = 4,
+    icon_size = 64,
+    icon_mipmaps = 4,
     subgroup = "mechanical-component",
     order = "ceramic-[heat-resistant-tile]",
     stack_size = 100
@@ -2284,7 +2290,8 @@ data:extend({
     type = "item",
     name = "sp-gearbox",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/gearbox.png",
-    icon_size = 64, icon_mipmaps = 4,
+    icon_size = 64,
+    icon_mipmaps = 4,
     subgroup = "intermediate-product",
     order = "gearbox-[gearbox]",
     stack_size = 50
@@ -2293,7 +2300,8 @@ data:extend({
     type = "item",
     name = "sp-heavy-gearbox",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/heavy-gearbox.png",
-    icon_size = 64, icon_mipmaps = 4,
+    icon_size = 64,
+    icon_mipmaps = 4,
     subgroup = "intermediate-product",
     order = "gearbox-[gearbox-heavy]",
     stack_size = 50
@@ -2302,7 +2310,8 @@ data:extend({
     type = "item",
     name = "sp-differential",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/differential.png",
-    icon_size = 64, icon_mipmaps = 4,
+    icon_size = 64,
+    icon_mipmaps = 4,
     subgroup = "intermediate-product",
     order = "gearbox-z-[differential]",
     stack_size = 50
@@ -2311,7 +2320,8 @@ data:extend({
     type = "item",
     name = "sp-electromagnet",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/electromagnet.png",
-    icon_size = 64, icon_mipmaps = 4,
+    icon_size = 64,
+    icon_mipmaps = 4,
     subgroup = "intermediate-product",
     order = "electric-[electromagnet]",
     stack_size = 50
@@ -2320,7 +2330,8 @@ data:extend({
     type = "item",
     name = "sp-plate-heat-exchanger",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/plate-heat-exchanger.png",
-    icon_size = 64, icon_mipmaps = 4,
+    icon_size = 64,
+    icon_mipmaps = 4,
     subgroup = "intermediate-product",
     order = "heat-[plate-heat-exchanger]",
     stack_size = 50
@@ -2329,7 +2340,8 @@ data:extend({
     type = "item",
     name = "sp-valve",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/valve.png",
-    icon_size = 64, icon_mipmaps = 4,
+    icon_size = 64,
+    icon_mipmaps = 4,
     subgroup = "intermediate-product",
     order = "pressure-[valve]",
     stack_size = 50
@@ -2338,7 +2350,8 @@ data:extend({
     type = "item",
     name = "sp-gyro",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/gyro.png",
-    icon_size = 64, icon_mipmaps = 4,
+    icon_size = 64,
+    icon_mipmaps = 4,
     subgroup = "intermediate-product",
     order = "other-[gyro]",
     stack_size = 50
@@ -2347,7 +2360,8 @@ data:extend({
     type = "item",
     name = "sp-dynamo",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/dynamo.png",
-    icon_size = 64, icon_mipmaps = 4,
+    icon_size = 64,
+    icon_mipmaps = 4,
     subgroup = "intermediate-product",
     order = "electric-[dynamo]",
     stack_size = 50
@@ -2356,7 +2370,8 @@ data:extend({
     type = "item",
     name = "sp-high-pressure-tank",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/high-pressure-tank.png",
-    icon_size = 64, icon_mipmaps = 4,
+    icon_size = 64,
+    icon_mipmaps = 4,
     subgroup = "intermediate-product",
     order = "pressure-[high-pressure-tank]",
     stack_size = 50
@@ -2365,7 +2380,8 @@ data:extend({
     type = "item",
     name = "sp-fabric",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/fabric.png",
-    icon_size = 64, icon_mipmaps = 4,
+    icon_size = 64,
+    icon_mipmaps = 4,
     subgroup = "intermediate-product",
     order = "other-[fabric]",
     stack_size = 50
@@ -2374,7 +2390,8 @@ data:extend({
     type = "item",
     name = "sp-steel-wheel",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/wheel.png",
-    icon_size = 64, icon_mipmaps = 4,
+    icon_size = 64,
+    icon_mipmaps = 4,
     subgroup = "intermediate-product",
     order = "train-[wheel]",
     stack_size = 50
@@ -2383,7 +2400,8 @@ data:extend({
     type = "item",
     name = "sp-train-boige",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/train-boige.png",
-    icon_size = 64, icon_mipmaps = 4,
+    icon_size = 64,
+    icon_mipmaps = 4,
     subgroup = "intermediate-product",
     order = "train-[train-boige]",
     stack_size = 50
@@ -2392,7 +2410,8 @@ data:extend({
     type = "item", 
     name = "sp-transformer",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/transformer.png",
-    icon_size = 64, icon_mipmaps = 4,
+    icon_size = 64,
+    icon_mipmaps = 4,
     subgroup = "intermediate-product",
     order = "electric-[transformer]",
     stack_size = 50
@@ -2401,7 +2420,8 @@ data:extend({
     type = "item",
     name = "sp-actuator",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/actuator.png",
-    icon_size = 64, icon_mipmaps = 4,
+    icon_size = 64,
+    icon_mipmaps = 4,
     subgroup = "intermediate-product",
     order = "electric-[actuator]",
     stack_size = 50
@@ -2410,7 +2430,8 @@ data:extend({
     type = "item",
     name = "sp-catalyst",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/catalyst.png",
-    icon_size = 64, icon_mipmaps = 4,
+    icon_size = 64,
+    icon_mipmaps = 4,
     subgroup = "intermediate-product",
     order = "cheamical-[catalyst]",
     stack_size = 50
@@ -2419,7 +2440,8 @@ data:extend({
     type = "item",
     name = "sp-heatsink",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/heatsink.png",
-    icon_size = 64, icon_mipmaps = 4,
+    icon_size = 64,
+    icon_mipmaps = 4,
     subgroup = "intermediate-product",
     order = "heat-[heatsink]",
     stack_size = 50
@@ -2428,7 +2450,8 @@ data:extend({
     type = "item",
     name = "sp-heating-filament",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/heating-filament.png",
-    icon_size = 64, icon_mipmaps = 4,
+    icon_size = 64,
+    icon_mipmaps = 4,
     subgroup = "intermediate-product",
     order = "heat-[heating-filament]",
     stack_size = 50
@@ -2470,7 +2493,8 @@ data:extend({
     type = "item",
     name = "sp-superconductor",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/superconductor.png",
-    icon_size = 64, icon_mipmaps = 4,
+    icon_size = 64,
+    icon_mipmaps = 4,
     subgroup = "advanced-intermediate-product",
     order = "[superconductor]",
     stack_size = 50
@@ -2479,7 +2503,8 @@ data:extend({
     type = "item",
     name = "sp-cryostat",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/cryostat.png",
-    icon_size = 64, icon_mipmaps = 4,
+    icon_size = 64,
+    icon_mipmaps = 4,
     subgroup = "advanced-intermediate-product",
     order = "[cryostat]",
     stack_size = 50
@@ -2488,7 +2513,8 @@ data:extend({
     type = "item",
     name = "sp-spark-plug",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/spark-plug.png",
-    icon_size = 64, icon_mipmaps = 4,
+    icon_size = 64,
+    icon_mipmaps = 4,
     subgroup = "advanced-intermediate-product",
     order = "[spark-plug]",
     stack_size = 50
@@ -2497,7 +2523,8 @@ data:extend({
     type = "item",
     name = "sp-turbine-blade",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/turbine-blade.png",
-    icon_size = 64, icon_mipmaps = 4,
+    icon_size = 64,
+    icon_mipmaps = 4,
     subgroup = "advanced-intermediate-product",
     order = "[turbine-blade]",
     stack_size = 50
@@ -2506,7 +2533,8 @@ data:extend({
     type = "item",
     name = "sp-turbine-rotor",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/turbine-rotor.png",
-    icon_size = 64, icon_mipmaps = 4,
+    icon_size = 64,
+    icon_mipmaps = 4,
     subgroup = "advanced-intermediate-product",
     order = "[turbine-rotor]",
     stack_size = 50
@@ -2515,7 +2543,8 @@ data:extend({
     type = "item",
     name = "sp-turbine-stator",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/turbine-stator.png",
-    icon_size = 64, icon_mipmaps = 4,
+    icon_size = 64,
+    icon_mipmaps = 4,
     subgroup = "advanced-intermediate-product",
     order = "[turbine-stator]",
     stack_size = 50
@@ -2524,7 +2553,8 @@ data:extend({
     type = "item",
     name = "sp-turbopump",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/turbopump.png",
-    icon_size = 64, icon_mipmaps = 4,
+    icon_size = 64,
+    icon_mipmaps = 4,
     subgroup = "advanced-intermediate-product",
     order = "[turbopump]",
     stack_size = 50
@@ -2533,7 +2563,8 @@ data:extend({
     type = "item",
     name = "sp-nozzle",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/nozzle.png",
-    icon_size = 64, icon_mipmaps = 4,
+    icon_size = 64,
+    icon_mipmaps = 4,
     subgroup = "advanced-intermediate-product",
     order = "[nozzle]",
     stack_size = 50
@@ -2542,7 +2573,8 @@ data:extend({
     type = "item",
     name = "sp-fuel-injector",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/fuel-injector.png",
-    icon_size = 64, icon_mipmaps = 4,
+    icon_size = 64,
+    icon_mipmaps = 4,
     subgroup = "advanced-intermediate-product",
     order = "[fuel-infector]",
     stack_size = 50
@@ -2551,7 +2583,8 @@ data:extend({
     type = "item",
     name = "sp-combustion-chamber",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/combustion-chamber.png",
-    icon_size = 64, icon_mipmaps = 4,
+    icon_size = 64,
+    icon_mipmaps = 4,
     subgroup = "advanced-intermediate-product",
     order = "[combustion-chamber]",
     stack_size = 50
@@ -2560,7 +2593,8 @@ data:extend({
     type = "item",
     name = "sp-rocket-engine",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/rocket-engine.png",
-    icon_size = 64, icon_mipmaps = 4,
+    icon_size = 64,
+    icon_mipmaps = 4,
     subgroup = "advanced-intermediate-product",
     order = "[rocket-engine]",
     stack_size = 50
@@ -2569,7 +2603,8 @@ data:extend({
     type = "item",
     name = "sp-solid-rocket-motor",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/solid-rocket-motor.png",
-    icon_size = 64, icon_mipmaps = 4,
+    icon_size = 64,
+    icon_mipmaps = 4,
     subgroup = "advanced-intermediate-product",
     order = "[solid-rocket-motor]",
     stack_size = 50
@@ -2578,7 +2613,8 @@ data:extend({
     type = "item",
     name = "sp-ion-thruster",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/ion-thruster.png",
-    icon_size = 64, icon_mipmaps = 4,
+    icon_size = 64,
+    icon_mipmaps = 4,
     subgroup = "advanced-intermediate-product",
     order = "[ion-thruster]",
     stack_size = 50
@@ -2587,7 +2623,8 @@ data:extend({
     type = "item",
     name = "sp-cubit",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/cubit.png",
-    icon_size = 64, icon_mipmaps = 4,
+    icon_size = 64,
+    icon_mipmaps = 4,
     subgroup = "advanced-intermediate-product",
     order = "[cubit]",
     stack_size = 50
@@ -2596,7 +2633,8 @@ data:extend({
     type = "item",
     name = "sp-quantum-data-plane",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/quantum-data-plane.png",
-    icon_size = 64, icon_mipmaps = 4,
+    icon_size = 64,
+    icon_mipmaps = 4,
     subgroup = "advanced-intermediate-product",
     order = "[quantum-data-plane]",
     stack_size = 50
@@ -2605,7 +2643,8 @@ data:extend({
     type = "item",
     name = "sp-control-rod",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/control-rod.png",
-    icon_size = 64, icon_mipmaps = 4,
+    icon_size = 64,
+    icon_mipmaps = 4,
     subgroup = "advanced-intermediate-product",
     order = "[control-rod]",
     stack_size = 50
@@ -2614,7 +2653,8 @@ data:extend({
     type = "item",
     name = "sp-reactor-core",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/reactor-core.png",
-    icon_size = 64, icon_mipmaps = 4,
+    icon_size = 64,
+    icon_mipmaps = 4,
     subgroup = "advanced-intermediate-product",
     order = "[reactor-core]",
     stack_size = 5
@@ -2623,7 +2663,8 @@ data:extend({
     type = "item",
     name = "sp-control-unit",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/control-unit.png",
-    icon_size = 64, icon_mipmaps = 4,
+    icon_size = 64,
+    icon_mipmaps = 4,
     subgroup = "advanced-intermediate-product",
     order = "[control-unit]",
     stack_size = 50
@@ -2632,7 +2673,8 @@ data:extend({
     type = "item",
     name = "sp-cybernetics",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/cybernetics.png",
-    icon_size = 64, icon_mipmaps = 4,
+    icon_size = 64,
+    icon_mipmaps = 4,
     subgroup = "advanced-intermediate-product",
     order = "[cybernetics]",
     stack_size = 50
@@ -2654,7 +2696,8 @@ data:extend({
     type = "item",
     name = "sp-urea",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/urea.png",
-    icon_size = 64, icon_mipmaps = 4,
+    icon_size = 64,
+    icon_mipmaps = 4,
     subgroup = "chemical-product",
     order = "[urea]",
     stack_size = 50
@@ -3405,7 +3448,8 @@ data:extend({
     type = "item",
     name = "sp-empty-fuel-rod",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/empty-fuel-rod.png",
-    icon_size = 64, icon_mipmaps = 4,
+    icon_size = 64,
+    icon_mipmaps = 4,
     subgroup = "fuel-processing",
     order = "nuclear-a[empty-fuel-rod]",
     stack_size = 50
@@ -3414,7 +3458,8 @@ data:extend({
     type = "item",
     name = "sp-uranium-fuel-rod",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/uranium-fuel-rod.png",
-    icon_size = 64, icon_mipmaps = 4,
+    icon_size = 64,
+    icon_mipmaps = 4,
     subgroup = "fuel-processing",
     order = "nuclear[uranium-fuel-rod]",
     fuel_category = "nuclear",
@@ -3426,7 +3471,8 @@ data:extend({
     type = "item",
     name = "sp-plutonium-fuel-rod",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/plutonium-fuel-rod.png",
-    icon_size = 64, icon_mipmaps = 4,
+    icon_size = 64,
+    icon_mipmaps = 4,
     subgroup = "fuel-processing",
     order = "nuclear[plutonium-fuel-rod]",
     fuel_category = "nuclear",
@@ -3438,7 +3484,8 @@ data:extend({
     type = "item",
     name = "sp-used-up-fuel-rod",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/used-up-fuel-rod.png",
-    icon_size = 64, icon_mipmaps = 4,
+    icon_size = 64,
+    icon_mipmaps = 4,
     subgroup = "fuel-processing",
     order = "nuclear-a[used-up-fuel-rod]",
     stack_size = 50
@@ -3447,7 +3494,8 @@ data:extend({
     type = "item",
     name = "sp-nuclear-waste",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/nuclear-waste.png",
-    icon_size = 64, icon_mipmaps = 4,
+    icon_size = 64,
+    icon_mipmaps = 4,
     subgroup = "fuel-processing",
     order = "nuclear-a[nuclear-waste]",
     stack_size = 50
@@ -3466,7 +3514,8 @@ data:extend({
     name = "sp-speed-module-4",  -- #ForRegEx# - item
     localised_description = {"item-description.speed-module"},
     icon = "__Spaghetorio__/graphics/icons/speed-module-4.png",
-    icon_size = 64, icon_mipmaps = 4,
+    icon_size = 64,
+    icon_mipmaps = 4,
     subgroup = "module",
     category = "speed",
     tier = 4,
@@ -3486,7 +3535,8 @@ data:extend({
     name = "sp-effectivity-module-4",  -- #ForRegEx# - item
     localised_description = {"item-description.effectivity-module"},
     icon = "__Spaghetorio__/graphics/icons/effectivity-module-4.png",
-    icon_size = 64, icon_mipmaps = 4,
+    icon_size = 64,
+    icon_mipmaps = 4,
     subgroup = "module",
     category = "effectivity",
     tier = 4,
@@ -3506,7 +3556,8 @@ data:extend({
     name = "sp-productivity-module-4",  -- #ForRegEx# - item
     localised_description = {"item-description.productivity-module"},
     icon = "__Spaghetorio__/graphics/icons/productivity-module-4.png",
-    icon_size = 64, icon_mipmaps = 4,
+    icon_size = 64,
+    icon_mipmaps = 4,
     subgroup = "module",
     category = "productivity",
     tier = 4,
@@ -3679,7 +3730,8 @@ data:extend({
     name = "sp-electronic-science-pack-1",  -- #ForRegEx# - tool
     localised_description = {"item-description.science-pack"},
     icon = "__Spaghetorio__/graphics/icons/electronic-science-pack-1.png",
-    icon_size = 64, icon_mipmaps = 4,
+    icon_size = 64,
+    icon_mipmaps = 4,
     subgroup = "basic-science",
     order = "e[electronic-science-pack]",
     stack_size = 200,
@@ -3692,7 +3744,8 @@ data:extend({
     name = "sp-geological-science-pack-1",  -- #ForRegEx# - tool
     localised_description = {"item-description.science-pack"},
     icon = "__Krastorio2Assets__/icons/cards/basic-tech-card.png",
-    icon_size = 64, icon_mipmaps = 4,
+    icon_size = 64,
+    icon_mipmaps = 4,
     subgroup = "basic-science",
     order = "f[geological-science-pack]",
     stack_size = 200,
@@ -3705,7 +3758,8 @@ data:extend({
     name = "sp-material-science-pack-1",  -- #ForRegEx# - tool
     localised_description = {"item-description.science-pack"},
     icon = "__Spaghetorio__/graphics/icons/material-science-pack-1.png",
-    icon_size = 64, icon_mipmaps = 4,
+    icon_size = 64,
+    icon_mipmaps = 4,
     subgroup = "basic-science",
     order = "g[material-science-pack]",
     stack_size = 200,
@@ -3721,7 +3775,8 @@ data:extend({
     name = "sp-automation-science-pack-2",  -- #ForRegEx# - tool
     localised_description = {"item-description.science-pack"},
     icon = "__Spaghetorio__/graphics/icons/automation-science-pack-2.png",
-    icon_size = 64, icon_mipmaps = 4,
+    icon_size = 64,
+    icon_mipmaps = 4,
     subgroup = "intermediate-science",
     order = "a[automation-science-pack]",
     stack_size = 200,
@@ -3734,7 +3789,8 @@ data:extend({
     name = "sp-logistic-science-pack-2",  -- #ForRegEx# - tool
     localised_description = {"item-description.science-pack"},
     icon = "__Spaghetorio__/graphics/icons/logistic-science-pack-2.png",
-    icon_size = 64, icon_mipmaps = 4,
+    icon_size = 64,
+    icon_mipmaps = 4,
     subgroup = "intermediate-science",
     order = "b[logistic-science-pack]",
     stack_size = 200,
@@ -3747,7 +3803,8 @@ data:extend({
     name = "sp-military-science-pack-2",  -- #ForRegEx# - tool
     localised_description = {"item-description.science-pack"},
     icon = "__Spaghetorio__/graphics/icons/military-science-pack-2.png",
-    icon_size = 64, icon_mipmaps = 4,
+    icon_size = 64,
+    icon_mipmaps = 4,
     subgroup = "intermediate-science",
     order = "c[military-science-pack]",
     stack_size = 200,
@@ -3760,7 +3817,8 @@ data:extend({
     name = "sp-chemical-science-pack-2",  -- #ForRegEx# - tool
     localised_description = {"item-description.science-pack"},
     icon = "__Spaghetorio__/graphics/icons/chemical-science-pack-2.png",
-    icon_size = 64, icon_mipmaps = 4,
+    icon_size = 64,
+    icon_mipmaps = 4,
     subgroup = "intermediate-science",
     order = "d[chemical-science-pack]",
     stack_size = 200,
@@ -3773,7 +3831,8 @@ data:extend({
     name = "sp-electronic-science-pack-2",  -- #ForRegEx# - tool
     localised_description = {"item-description.science-pack"},
     icon = "__Krastorio2Assets__/icons/cards/utility-tech-card.png",
-    icon_size = 64, icon_mipmaps = 4,
+    icon_size = 64,
+    icon_mipmaps = 4,
     subgroup = "intermediate-science",
     order = "e[electronic-science-pack]",
     stack_size = 200,
@@ -3786,7 +3845,8 @@ data:extend({
     name = "sp-geological-science-pack-2",  -- #ForRegEx# - tool
     localised_description = {"item-description.science-pack"},
     icon = "__Spaghetorio__/graphics/icons/geological-science-pack-2.png",
-    icon_size = 64, icon_mipmaps = 4,
+    icon_size = 64,
+    icon_mipmaps = 4,
     subgroup = "intermediate-science",
     order = "f[geological-science-pack]",
     stack_size = 200,
@@ -3799,7 +3859,8 @@ data:extend({
     name = "sp-material-science-pack-2",  -- #ForRegEx# - tool
     localised_description = {"item-description.science-pack"},
     icon = "__Spaghetorio__/graphics/icons/material-science-pack-2.png",
-    icon_size = 64, icon_mipmaps = 4,
+    icon_size = 64,
+    icon_mipmaps = 4,
     subgroup = "intermediate-science",
     order = "g[material-science-pack]",
     stack_size = 200,
@@ -3812,7 +3873,8 @@ data:extend({
     name = "sp-astronomical-science-pack-2",  -- #ForRegEx# - tool
     localised_description = {"item-description.science-pack"},
     icon = "__Krastorio2Assets__/icons/cards/matter-tech-card.png",
-    icon_size = 64, icon_mipmaps = 4,
+    icon_size = 64,
+    icon_mipmaps = 4,
     subgroup = "intermediate-science",
     order = "h[astronomical-science-pack]",
     stack_size = 200,
@@ -3825,7 +3887,8 @@ data:extend({
     name = "sp-computer-science-pack-2",  -- #ForRegEx# - tool
     localised_description = {"item-description.science-pack"},
     icon = "__Spaghetorio__/graphics/icons/computer-science-pack-2.png",
-    icon_size = 64, icon_mipmaps = 4,
+    icon_size = 64,
+    icon_mipmaps = 4,
     subgroup = "intermediate-science",
     order = "i[computer-science-pack]",
     stack_size = 200,
@@ -3838,7 +3901,8 @@ data:extend({
     name = "sp-nuclear-science-pack-2",  -- #ForRegEx# - tool
     localised_description = {"item-description.science-pack"},
     icon = "__Spaghetorio__/graphics/icons/nuclear-science-pack-2.png",
-    icon_size = 64, icon_mipmaps = 4,
+    icon_size = 64,
+    icon_mipmaps = 4,
     subgroup = "intermediate-science",
     order = "j[nuclear-science-pack]",
     stack_size = 200,
@@ -3854,7 +3918,8 @@ data:extend({
     name = "sp-automation-science-pack-3",  -- #ForRegEx# - tool
     localised_description = {"item-description.science-pack"},
     icon = "__Spaghetorio__/graphics/icons/automation-science-pack-3.png",
-    icon_size = 64, icon_mipmaps = 4,
+    icon_size = 64,
+    icon_mipmaps = 4,
     subgroup = "advanced-science",
     order = "a[automation-science-pack]",
     stack_size = 200,
@@ -3867,7 +3932,8 @@ data:extend({
     name = "sp-logistic-science-pack-3",  -- #ForRegEx# - tool
     localised_description = {"item-description.science-pack"},
     icon = "__Spaghetorio__/graphics/icons/logistic-science-pack-3.png",
-    icon_size = 64, icon_mipmaps = 4,
+    icon_size = 64,
+    icon_mipmaps = 4,
     subgroup = "advanced-science",
     order = "b[logistic-science-pack]",
     stack_size = 200,
@@ -3880,7 +3946,8 @@ data:extend({
     name = "sp-military-science-pack-3",  -- #ForRegEx# - tool
     localised_description = {"item-description.science-pack"},
     icon = "__Spaghetorio__/graphics/icons/military-science-pack-3.png",
-    icon_size = 64, icon_mipmaps = 4,
+    icon_size = 64,
+    icon_mipmaps = 4,
     subgroup = "advanced-science",
     order = "c[military-science-pack]",
     stack_size = 200,
@@ -3893,7 +3960,8 @@ data:extend({
     name = "sp-chemical-science-pack-3",  -- #ForRegEx# - tool
     localised_description = {"item-description.science-pack"},
     icon = "__Spaghetorio__/graphics/icons/chemical-science-pack-3.png",
-    icon_size = 64, icon_mipmaps = 4,
+    icon_size = 64,
+    icon_mipmaps = 4,
     subgroup = "advanced-science",
     order = "d[chemical-science-pack]",
     stack_size = 200,
@@ -3906,7 +3974,8 @@ data:extend({
     name = "sp-electronic-science-pack-3",  -- #ForRegEx# - tool
     localised_description = {"item-description.science-pack"},
     icon = "__Spaghetorio__/graphics/icons/electronic-science-pack-3.png",
-    icon_size = 64, icon_mipmaps = 4,
+    icon_size = 64,
+    icon_mipmaps = 4,
     subgroup = "advanced-science",
     order = "e[electronic-science-pack]",
     stack_size = 200,
@@ -3919,7 +3988,8 @@ data:extend({
     name = "sp-geological-science-pack-3",  -- #ForRegEx# - tool
     localised_description = {"item-description.science-pack"},
     icon = "__Spaghetorio__/graphics/icons/geological-science-pack-3.png",
-    icon_size = 64, icon_mipmaps = 4,
+    icon_size = 64,
+    icon_mipmaps = 4,
     subgroup = "advanced-science",
     order = "f[geological-science-pack]",
     stack_size = 200,
@@ -3932,7 +4002,8 @@ data:extend({
     name = "sp-material-science-pack-3",  -- #ForRegEx# - tool
     localised_description = {"item-description.science-pack"},
     icon = "__Spaghetorio__/graphics/icons/material-science-pack-3.png",
-    icon_size = 64, icon_mipmaps = 4,
+    icon_size = 64,
+    icon_mipmaps = 4,
     subgroup = "advanced-science",
     order = "g[material-science-pack]",
     stack_size = 200,
@@ -3945,7 +4016,8 @@ data:extend({
     name = "sp-astronomical-science-pack-3",  -- #ForRegEx# - tool
     localised_description = {"item-description.science-pack"},
     icon = "__Spaghetorio__/graphics/icons/astronomical-science-pack-3.png",
-    icon_size = 64, icon_mipmaps = 4,
+    icon_size = 64,
+    icon_mipmaps = 4,
     subgroup = "advanced-science",
     order = "h[astronomical-science-pack]",
     stack_size = 200,
@@ -3958,7 +4030,8 @@ data:extend({
     name = "sp-computer-science-pack-3",  -- #ForRegEx# - tool
     localised_description = {"item-description.science-pack"},
     icon = "__Spaghetorio__/graphics/icons/computer-science-pack-3.png",
-    icon_size = 64, icon_mipmaps = 4,
+    icon_size = 64,
+    icon_mipmaps = 4,
     subgroup = "advanced-science",
     order = "i[computer-science-pack]",
     stack_size = 200,
@@ -3971,7 +4044,8 @@ data:extend({
     name = "sp-nuclear-science-pack-3",  -- #ForRegEx# - tool
     localised_description = {"item-description.science-pack"},
     icon = "__Spaghetorio__/graphics/icons/nuclear-science-pack-3.png",
-    icon_size = 64, icon_mipmaps = 4,
+    icon_size = 64,
+    icon_mipmaps = 4,
     subgroup = "advanced-science",
     order = "j[nuclear-science-pack]",
     stack_size = 200,
@@ -3984,7 +4058,8 @@ data:extend({
     name = "sp-production-science-pack-3",  -- #ForRegEx# - tool
     localised_description = {"item-description.science-pack"},
     icon = "__Spaghetorio__/graphics/icons/production-science-pack-3.png",
-    icon_size = 64, icon_mipmaps = 4,
+    icon_size = 64,
+    icon_mipmaps = 4,
     subgroup = "advanced-science",
     order = "k[production-science-pack]",
     stack_size = 200,
@@ -3997,7 +4072,8 @@ data:extend({
     name = "sp-utility-science-pack-3",  -- #ForRegEx# - tool
     localised_description = {"item-description.science-pack"},
     icon = "__Spaghetorio__/graphics/icons/utility-science-pack-3.png",
-    icon_size = 64, icon_mipmaps = 4,
+    icon_size = 64,
+    icon_mipmaps = 4,
     subgroup = "advanced-science",
     order = "l[utility-science-pack]",
     stack_size = 200,
@@ -4013,7 +4089,8 @@ data:extend({
     name = "sp-uniformity-science-pack",  -- #ForRegEx# - tool
     localised_description = {"item-description.science-pack"},
     icon = "__Spaghetorio__/graphics/icons/uniformity-science-pack.png",
-    icon_size = 64, icon_mipmaps = 4,
+    icon_size = 64,
+    icon_mipmaps = 4,
     subgroup = "futuristic-science",
     order = "[uniformity-science-pack]",
     stack_size = 200,
@@ -4028,7 +4105,8 @@ data:extend({
     type = "item",
     name = "sp-blunagium-acrosphere-1",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/blunagium-acrosphere-1.png",
-    icon_size = 64, icon_mipmaps = 4,
+    icon_size = 64,
+    icon_mipmaps = 4,
     subgroup = "sp-acrosphere",
     order = "[blunagium-acrosphere-1]",
     stack_size = 1
@@ -4037,7 +4115,8 @@ data:extend({
     type = "item",
     name = "sp-blunagium-acrosphere-2",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/blunagium-acrosphere-2.png",
-    icon_size = 64, icon_mipmaps = 4,
+    icon_size = 64,
+    icon_mipmaps = 4,
     subgroup = "sp-acrosphere",
     order = "[blunagium-acrosphere-2]",
     stack_size = 1
@@ -4046,7 +4125,8 @@ data:extend({
     type = "item",
     name = "sp-grobgnum-acrosphere-1",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/grobgnum-acrosphere-1.png",
-    icon_size = 64, icon_mipmaps = 4,
+    icon_size = 64,
+    icon_mipmaps = 4,
     subgroup = "sp-acrosphere",
     order = "[grobgnum-acrosphere-1]",
     stack_size = 1
@@ -4055,7 +4135,8 @@ data:extend({
     type = "item",
     name = "sp-grobgnum-acrosphere-2",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/grobgnum-acrosphere-2.png",
-    icon_size = 64, icon_mipmaps = 4,
+    icon_size = 64,
+    icon_mipmaps = 4,
     subgroup = "sp-acrosphere",
     order = "[grobgnum-acrosphere-2]",
     stack_size = 1
@@ -4064,7 +4145,8 @@ data:extend({
     type = "item",
     name = "sp-rukite-acrosphere-1",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/rukite-acrosphere-1.png",
-    icon_size = 64, icon_mipmaps = 4,
+    icon_size = 64,
+    icon_mipmaps = 4,
     subgroup = "sp-acrosphere",
     order = "[rukite-acrosphere-1]",
     stack_size = 1
@@ -4073,7 +4155,8 @@ data:extend({
     type = "item",
     name = "sp-rukite-acrosphere-2",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/rukite-acrosphere-2.png",
-    icon_size = 64, icon_mipmaps = 4,
+    icon_size = 64,
+    icon_mipmaps = 4,
     subgroup = "sp-acrosphere",
     order = "[rukite-acrosphere-2]",
     stack_size = 1
@@ -4082,7 +4165,8 @@ data:extend({
     type = "item",
     name = "sp-yemnuth-acrosphere-1",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/yemnuth-acrosphere-1.png",
-    icon_size = 64, icon_mipmaps = 4,
+    icon_size = 64,
+    icon_mipmaps = 4,
     subgroup = "sp-acrosphere",
     order = "[yemnuth-acrosphere-1]",
     stack_size = 1
@@ -4091,7 +4175,8 @@ data:extend({
     type = "item",
     name = "sp-yemnuth-acrosphere-2",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/yemnuth-acrosphere-2.png",
-    icon_size = 64, icon_mipmaps = 4,
+    icon_size = 64,
+    icon_mipmaps = 4,
     subgroup = "sp-acrosphere",
     order = "[yemnuth-acrosphere-2]",
     stack_size = 1
@@ -4103,7 +4188,8 @@ data:extend({
     type = "item",
     name = "sp-corrupted-acrosphere-1",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/corrupted-acrosphere-1.png",
-    icon_size = 64, icon_mipmaps = 4,
+    icon_size = 64,
+    icon_mipmaps = 4,
     subgroup = "sp-acrosphere-corrupted",
     order = "a[corrupted-acrosphere-1]",
     stack_size = 1
@@ -4112,7 +4198,8 @@ data:extend({
     type = "item",
     name = "sp-corrupted-acrosphere-2",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/corrupted-acrosphere-2.png",
-    icon_size = 64, icon_mipmaps = 4,
+    icon_size = 64,
+    icon_mipmaps = 4,
     subgroup = "sp-acrosphere-corrupted",
     order = "a[corrupted-acrosphere-2]",
     stack_size = 1
@@ -4121,7 +4208,8 @@ data:extend({
     type = "item",
     name = "sp-corrupted-acrosphere-3",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/corrupted-acrosphere-3.png",
-    icon_size = 64, icon_mipmaps = 4,
+    icon_size = 64,
+    icon_mipmaps = 4,
     subgroup = "sp-acrosphere-corrupted",
     order = "a[corrupted-acrosphere-3]",
     stack_size = 1
@@ -4130,7 +4218,8 @@ data:extend({
     type = "item",
     name = "sp-corrupted-acrosphere-4",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/corrupted-acrosphere-4.png",
-    icon_size = 64, icon_mipmaps = 4,
+    icon_size = 64,
+    icon_mipmaps = 4,
     subgroup = "sp-acrosphere-corrupted",
     order = "a[corrupted-acrosphere-4]",
     stack_size = 1
@@ -4142,7 +4231,8 @@ data:extend({
     type = "item",
     name = "sp-personal-roboport-mk3-equipment",  -- #Missing regex#
     icon = "__Spaghetorio__/graphics/equipment/personal-roboport-mk3-equipment.png",
-    icon_size = 64, icon_mipmaps = 4,
+    icon_size = 64,
+    icon_mipmaps = 4,
     placed_as_equipment_result = "sp-personal-roboport-mk3-equipment",
     subgroup = "equipment",
     order = "e[robotics]-c[personal-roboport-mk3-equipment]",
@@ -4153,12 +4243,27 @@ data:extend({
     type = "item",
     name = "sp-personal-roboport-mk4-equipment",  -- #Missing regex#
     icon = "__Spaghetorio__/graphics/equipment/personal-roboport-mk4-equipment.png",
-    icon_size = 64, icon_mipmaps = 4,
+    icon_size = 64,
+    icon_mipmaps = 4,
     placed_as_equipment_result = "sp-personal-roboport-mk4-equipment",
     subgroup = "equipment",
     order = "e[robotics]-d[personal-roboport-mk4-equipment]",
     default_request_amount = 1,
     stack_size = 20
+  },
+  ------------------------------------------------------------------------------
+  -- MARK: Buildings
+  ------------------------------------------------------------------------------
+  {
+    type = "item",
+    name = "sp-lumber-mill",
+    icon = "__Spaghetorio__/graphics/icons/lumber-mill.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "production-machine",
+    order = "[lumber-mill]",
+    place_result = "sp-lumber-mill",
+    stack_size = 50,
   },
 })
 

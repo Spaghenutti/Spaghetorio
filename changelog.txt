@@ -10,6 +10,7 @@ Date: 2024-10-13
   Bugfixes:
     - Unlock unlimited ingredient count for krastorio buildings
     - Locale fixes
+    - personal roboports mk3 and mk4 are now in crafting category
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.8
 Date: 2024-10-10

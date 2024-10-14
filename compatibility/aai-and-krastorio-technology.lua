@@ -70,8 +70,7 @@ data:extend({
       },
     },
     prerequisites = {
-      "kr-automation-core",
-      "sp-wood-cutting"
+      "kr-automation-core"
     },
     unit =
     {

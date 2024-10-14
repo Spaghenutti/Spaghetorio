@@ -1,5 +1,6 @@
 
 require("prototypes.autoplace-control")
+require("prototypes.buildings")
 require("prototypes.category")
 require("prototypes.entity-changes")
 require("prototypes.equipment")
