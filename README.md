@@ -21,7 +21,6 @@ Inspired by [brevven](https://mods.factorio.com/user/brevven).
 ### Roadmap
 ## For version 0.2
 
-- Add core miner
 - Add lumber mill
 - Add wooden board
 - Add alternative recipes that consume commonly produce byproducts (lead, ...)
@@ -29,12 +28,16 @@ Inspired by [brevven](https://mods.factorio.com/user/brevven).
 - Fix stack sizes of items
 - Change spawning of recources
 - More liquids for alien materials
-- Recipe / balance testing 
 
-## For version 0.3
+## Updates for Factorio Space age
+
+- Remove Krastorio dependancy, but still support compatibility
+- Remove AAI dependancy, but still support compatibility
+- Add new buildings (Thanks to custom graphics from [Hurricane046](https://mods.factorio.com/user/Hurricane046))
+
+## Future plans
 
 - Support for [text plates](https://mods.factorio.com/mod/textplates?from=search)
-- Add new buildings (Thanks to custom graphics from [Hurricane046](https://mods.factorio.com/user/Hurricane046))
 
 ### Special Thanks
 
