@@ -5,6 +5,8 @@ table.insert(data.raw.technology["automation-science-pack"].effects, {type = "un
 
 table.insert(data.raw.technology["gun-turret"].prerequisites, "sp-mechanical-assembling")
 
+table.insert(data.raw.technology["engine"].effects, {type = "unlock-recipe", recipe = "sp-engine-unit-from-lead"})
+
 table.insert(data.raw.technology["filter-inserter"].prerequisites, "sp-relay")
 table.insert(data.raw.technology["filter-inserter"].prerequisites, "advanced-electronics")
 data.raw.technology["filter-inserter"].unit.ingredients = {
@@ -123,6 +125,7 @@ data.raw.technology["advanced-material-processing-2"].unit.ingredients = {
 
 table.insert(data.raw.technology["fluid-handling"].prerequisites, "sp-basic-alloy")
 table.insert(data.raw.technology["fluid-handling"].effects, {type = "unlock-recipe", recipe = "sp-valve"})
+table.insert(data.raw.technology["fluid-handling"].effects, {type = "unlock-recipe", recipe = "sp-valve-from-lead"})
 
 data.raw.technology["coal-liquefaction"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},

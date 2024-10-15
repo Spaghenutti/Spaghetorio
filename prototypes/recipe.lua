@@ -6831,7 +6831,7 @@ data:extend({
   ------------------------------------------------------------------------------
   {
     type = "recipe",
-    name = "sp-electronic-science-pack-1",
+    name = "sp-electronic-science-pack-1",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 24,
@@ -6847,7 +6847,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-geological-science-pack-1",
+    name = "sp-geological-science-pack-1",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 24,
@@ -6864,7 +6864,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-material-science-pack-1",
+    name = "sp-material-science-pack-1",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 24,
@@ -6880,7 +6880,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-automation-science-pack-2",
+    name = "sp-automation-science-pack-2",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 24,
@@ -6898,7 +6898,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-logistic-science-pack-2",
+    name = "sp-logistic-science-pack-2",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 24,
@@ -6914,7 +6914,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-military-science-pack-2",
+    name = "sp-military-science-pack-2",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 24,
@@ -6930,7 +6930,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-chemical-science-pack-2",
+    name = "sp-chemical-science-pack-2",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 24,
@@ -6947,7 +6947,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-electronic-science-pack-2",
+    name = "sp-electronic-science-pack-2",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 24,
@@ -6964,7 +6964,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-geological-science-pack-2",
+    name = "sp-geological-science-pack-2",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 24,
@@ -6982,7 +6982,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-material-science-pack-2",
+    name = "sp-material-science-pack-2",  -- #ForRegEx# - recipe
     category = "crafting-with-fluid",
     enabled = false,
     energy_required = 24,
@@ -7001,7 +7001,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-astronomical-science-pack-2",
+    name = "sp-astronomical-science-pack-2",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 24,
@@ -7019,7 +7019,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-computer-science-pack-2",
+    name = "sp-computer-science-pack-2",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 24,
@@ -7036,7 +7036,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-nuclear-science-pack-2",
+    name = "sp-nuclear-science-pack-2",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 240,
@@ -7052,7 +7052,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-automation-science-pack-3",
+    name = "sp-automation-science-pack-3",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 24,
@@ -7070,7 +7070,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-logistic-science-pack-3",
+    name = "sp-logistic-science-pack-3",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 24,
@@ -7089,7 +7089,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-military-science-pack-3",
+    name = "sp-military-science-pack-3",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 24,
@@ -7108,7 +7108,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-chemical-science-pack-3",
+    name = "sp-chemical-science-pack-3",  -- #ForRegEx# - recipe
     category = "advanced-chemistry",
     enabled = false,
     energy_required = 24,
@@ -7129,7 +7129,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-electronic-science-pack-3",
+    name = "sp-electronic-science-pack-3",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 24,
@@ -7145,7 +7145,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-geological-science-pack-3",
+    name = "sp-geological-science-pack-3",  -- #ForRegEx# - recipe
     category = "chemistry",
     enabled = false,
     energy_required = 24,
@@ -7171,7 +7171,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-material-science-pack-3",
+    name = "sp-material-science-pack-3",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 24,
@@ -7190,7 +7190,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-astronomical-science-pack-3",
+    name = "sp-astronomical-science-pack-3",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 144,
@@ -7208,7 +7208,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-computer-science-pack-3",
+    name = "sp-computer-science-pack-3",  -- #ForRegEx# - recipe
     category = "crafting-with-fluid",
     enabled = false,
     energy_required = 24,
@@ -7225,7 +7225,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-nuclear-science-pack-3",
+    name = "sp-nuclear-science-pack-3",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 48,
@@ -7241,7 +7241,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-production-science-pack-3",
+    name = "sp-production-science-pack-3",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 24,
@@ -7258,7 +7258,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-utility-science-pack-3",
+    name = "sp-utility-science-pack-3",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 192,
@@ -7278,7 +7278,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-uniformity-science-pack",
+    name = "sp-uniformity-science-pack",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 192,
@@ -7299,7 +7299,7 @@ data:extend({
   ------------------------------------------------------------------------------
   {
     type = "recipe",
-    name = "sp-landfill-from-iron-ore",
+    name = "sp-landfill-from-iron-ore",  -- #ForRegEx# - recipe
     icons = util.icon.overlay_two_small_icons("__base__/graphics/icons/landfill.png", 64,
                                               "__base__/graphics/icons/stone.png", 64,
                                               "__base__/graphics/icons/iron-ore.png", 64),
@@ -7317,7 +7317,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-landfill-from-limestone",
+    name = "sp-landfill-from-limestone",  -- #ForRegEx# - recipe
     icons = util.icon.overlay_small_icon("__base__/graphics/icons/landfill.png", 64,
                                          "__Spaghetorio__/graphics/icons/limestone-1.png", 64),
     energy_required = 0.5,
@@ -7333,7 +7333,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-landfill-from-limestone-and-stone",
+    name = "sp-landfill-from-limestone-and-stone",  -- #ForRegEx# - recipe
     icons = util.icon.overlay_two_small_icons("__base__/graphics/icons/landfill.png", 64,
                                               "__base__/graphics/icons/stone.png", 64,
                                               "__Spaghetorio__/graphics/icons/limestone-1.png", 64),
@@ -7351,7 +7351,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-landfill-from-cement",
+    name = "sp-landfill-from-cement",  -- #ForRegEx# - recipe
     icons = util.icon.overlay_small_icon("__base__/graphics/icons/landfill.png", 64,
                                          "__Spaghetorio__/graphics/icons/cement.png", 64),
     energy_required = 1,
@@ -7368,7 +7368,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-landfill-from-flourspar",
+    name = "sp-landfill-from-flourspar",  -- #ForRegEx# - recipe
     icons = util.icon.overlay_small_icon("__base__/graphics/icons/landfill.png", 64,
                                          "__Spaghetorio__/graphics/icons/fluorspar.png", 64),
     energy_required = 1,
@@ -7385,7 +7385,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-stone-brick-from-limestone",
+    name = "sp-stone-brick-from-limestone",  -- #ForRegEx# - recipe
     icons = util.icon.overlay_small_icon("__base__/graphics/icons/stone-brick.png", 64,
                                          "__Spaghetorio__/graphics/icons/limestone-1.png", 64),
     category = "intermediate-smelting",
@@ -7399,7 +7399,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-insulated-wire-from-aluminum",
+    name = "sp-insulated-wire-from-aluminum",  -- #ForRegEx# - recipe
     icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/insulated-wire.png", 64,
                                          "__Spaghetorio__/graphics/icons/aluminum-cable.png", 64),
     category = "crafting-with-fluid",
@@ -7412,6 +7412,42 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-insulated-wire", amount = 3}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-pipe-from-lead",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__base__/graphics/icons/pipe.png", 64,
+                                         "__Spaghetorio__/graphics/icons/lead-slab.png", 64),
+    category = "crafting",
+    enabled = false,
+    energy_required = 1,
+    hide_from_player_crafting = true,
+    ingredients = {
+      {type = "item", name = "iron-plate", amount = 8},
+      {type = "item", name = "sp-lead-slab", amount = 2}
+    },
+    results = {
+      {type = "item", name = "pipe", amount = 5}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-valve-from-lead",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/valve.png", 64,
+                                         "__Spaghetorio__/graphics/icons/lead-slab.png", 64),
+    category = "crafting",
+    enabled = false,
+    energy_required = 4,
+    hide_from_player_crafting = true,
+    ingredients = {
+      {type = "item", name = "sp-machined-parts", amount = 4},
+      {type = "item", name = "sp-bolts", amount = 4},
+      {type = "item", name = "sp-bronze-rod", amount = 6},
+      {type = "item", name = "sp-lead-slab", amount = 2}
+    },
+    results = {
+      {type = "item", name = "sp-valve", amount = 4}
     }
   },
   ------------------------------------------------------------------------------

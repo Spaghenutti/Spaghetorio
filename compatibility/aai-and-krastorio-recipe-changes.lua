@@ -1311,8 +1311,8 @@ util.recipe.change_recipe_ingredients("kr-steel-pipe",
     {"sp-stainless-steel", 2},
     {"sp-flange", 2}
   },
-  1,
-  1.5)
+  0.5,
+  1.0)
 
 util.recipe.change_recipe_ingredients("kr-steel-pipe-to-ground",
   {

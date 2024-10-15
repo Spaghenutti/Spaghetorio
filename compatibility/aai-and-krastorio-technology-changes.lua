@@ -762,7 +762,10 @@ table.insert(data.raw.technology["spidertron"].prerequisites, "kr-military-5")
 --------------------------------------------------------------------------------
 table.insert(data.raw.technology["kr-steam-engine"].prerequisites, "sp-copper-machining")  -- Why is this a krastorio technology??
 
-table.insert(data.raw.technology["kr-fluids-chemistry"].prerequisites, "kr-basic-fluid-handling") 
+table.insert(data.raw.technology["kr-basic-fluid-handling"].prerequisites, "sp-tin-processing")
+table.insert(data.raw.technology["kr-basic-fluid-handling"].effects, {type = "unlock-recipe", recipe = "sp-pipe-from-lead"})
+
+table.insert(data.raw.technology["kr-fluids-chemistry"].prerequisites, "kr-basic-fluid-handling")
 
 data.raw.technology["kr-crusher"].prerequisites = {"electricity"}
 data.raw.technology["kr-crusher"].unit = {count = 30,
@@ -834,6 +837,7 @@ table.insert(data.raw.technology["kr-automation-core"].prerequisites, "sp-iron-e
 table.insert(data.raw.technology["kr-fluid-excess-handling"].prerequisites, "fluid-handling")
 
 table.insert(data.raw.technology["kr-steel-fluid-handling"].prerequisites, "oil-processing")
+table.insert(data.raw.technology["kr-steel-fluid-handling"].effects, {type = "unlock-recipe", recipe = "sp-steel-pipe-from-lead"})
 
 table.insert(data.raw.technology["kr-steel-fluid-tanks"].prerequisites, "sp-brass")
 data.raw.technology["kr-steel-fluid-tanks"].unit.ingredients = {

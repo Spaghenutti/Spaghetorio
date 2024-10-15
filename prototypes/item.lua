@@ -4261,7 +4261,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "production-machine",
-    order = "[lumber-mill]",
+    order = "d[lumber-mill]",
     place_result = "sp-lumber-mill",
     stack_size = 50,
   },

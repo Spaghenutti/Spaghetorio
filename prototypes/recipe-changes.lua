@@ -784,7 +784,7 @@ util.recipe.change_recipe_ingredients("pipe",
     {"iron-plate", 5}
   },
   0.2,
-  1)
+  0.5)
 
 util.recipe.change_recipe_ingredients("pipe-to-ground",
   {

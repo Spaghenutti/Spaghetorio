@@ -1,7 +1,8 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.2.0
-Date: 2024-10-13
+Date: 2024-10-15
   Features:
+    - New Building: Lumber mill
     - Added wooden board
     - Engineer spawns now with biolab, pipes and offshore pump for easier wood production
     - Support for krastorio custom stack sizes

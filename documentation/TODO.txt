@@ -92,6 +92,7 @@ Other:
   + Fix stack sizes (for version 0.2.0)
   + Fix resource spawning (for version 0.2.0)
   + Add greenhouse on spawning with some pumps and pipes (for version 0.2.0)
+  - More realistic weapons setting changes also the actual weapons that exist
 
 Low prio:
   - Reorder in lua code recipes, items for simpler searching

@@ -159,6 +159,44 @@ data:extend({
       {type = "item", name = "sp-solder", amount = 1}
     }
   },
+  {
+    type = "recipe",
+    name = "sp-steel-pipe-from-lead",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__Krastorio2Assets__/icons/entities/steel-pipe.png", 64,
+                                         "__Spaghetorio__/graphics/icons/lead-slab.png", 64),
+    category = "crafting",
+    enabled = false,
+    energy_required = 2.5,
+    hide_from_player_crafting = true,
+    ingredients = {
+      {type = "item", name = "sp-flange", amount = 10},
+      {type = "item", name = "sp-stainless-steel", amount = 4},
+      {type = "item", name = "sp-lead-slab", amount = 2}
+    },
+    results = {
+      {type = "item", name = "kr-steel-pipe", amount = 5}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-engine-unit-from-lead",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__aai-industry__/graphics/icons/multi-cylinder-engine.png", 64,
+                                         "__Spaghetorio__/graphics/icons/lead-slab.png", 64),
+    category = "crafting",
+    enabled = false,
+    energy_required = 7,
+    hide_from_player_crafting = true,
+    ingredients = {
+      {type = "item", name = "sp-connecting-rod", amount = 24},
+      {type = "item", name = "steel-plate", amount = 5},
+      {type = "item", name = "sp-bolts", amount = 18},
+      {type = "item", name = "sp-gearbox", amount = 3},
+      {type = "item", name = "sp-lead-slab", amount = 1}
+    },
+    results = {
+      {type = "item", name = "kr-steel-pipe", amount = 5}
+    }
+  },
   -- MARK: enriched resource recipes
   {
     type = "recipe",
