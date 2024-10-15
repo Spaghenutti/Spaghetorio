@@ -3441,6 +3441,16 @@ data:extend({
     order = "zz-matter-[dark-matter-field-generator]",
     stack_size = 10
   },
+  {
+    type = "item",
+    name = "sp-dark-matter-container",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/dark-matter-container.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "advanced-alien-product",
+    order = "zz-matter-[dark-matter-container]",
+    stack_size = 10
+  },
   ------------------------------------------------------------------------------
   -- MARK: fuel-processing
   ------------------------------------------------------------------------------
@@ -3584,7 +3594,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "space-related",
-    order = "f[blunagium-explorer]",
+    order = "m-2-[blunagium-explorer]",
     rocket_launch_products = {
       -- Krastorio: {"space-research-data", 500}
       {type = "item", name = "sp-blunagium-acrosphere-1", probability = 0.5, amount = 1},
@@ -3599,7 +3609,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "space-related",
-    order = "f[grobgnum-explorer]",
+    order = "m-2-[grobgnum-explorer]",
     rocket_launch_products = {
       -- Krastorio: {"space-research-data", 500}
       {type = "item", name = "sp-grobgnum-acrosphere-1", probability = 0.5, amount = 1},
@@ -3614,7 +3624,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "space-related",
-    order = "f[rukite-explorer]",
+    order = "m-2-[rukite-explorer]",
     rocket_launch_products = {
       -- Krastorio: {"space-research-data", 500}
       {type = "item", name = "sp-rukite-acrosphere-1", probability = 0.5, amount = 1},
@@ -3629,7 +3639,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "space-related",
-    order = "f[yemnuth-explorer]",
+    order = "m-2-[yemnuth-explorer]",
     rocket_launch_products = {
       -- Krastorio: {"space-research-data", 500}
       {type = "item", name = "sp-yemnuth-acrosphere-1", probability = 0.5, amount = 1},
@@ -3719,6 +3729,19 @@ data:extend({
     subgroup = "space-related",
     order = "a[yemnuth-rocket-silo]",
     place_result = "sp-yemnuth-rocket-silo",
+    stack_size = 1
+  },
+  {
+    type = "item",
+    name = "sp-dark-matter-mining-satellite",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/dark-matter-mining-satellite.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "space-related",
+    order = "m-3-[dark-matter-mining-satellite]",
+    rocket_launch_products = {
+      {type = "item", name = "sp-dark-matter-container", amount = 10}
+    },
     stack_size = 1
   },
   ------------------------------------------------------------------------------

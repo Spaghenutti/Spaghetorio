@@ -480,6 +480,7 @@ table.insert(data.raw.recipe["sp-radiant-glass"].ingredients, {type = "item", na
 table.insert(data.raw.recipe["sp-radiant-glass"].ingredients, {type = "item", name = "imersite-powder", amount = 1})
 table.insert(data.raw.recipe["sp-evolution-pulse-cell"].ingredients, {type = "item", name = "biomass", amount = 20})
 table.insert(data.raw.recipe["sp-dark-energy-harvester"].ingredients, {type = "fluid", name = "matter", amount = 100})
+table.insert(data.raw.recipe["sp-dark-energy"].ingredients, {type = "fluid", name = "matter", amount = 1})
 table.insert(data.raw.recipe["sp-productivity-module-4"].ingredients, {type = "item", name = "energy-control-unit", amount = 5})
 table.insert(data.raw.recipe["sp-geological-science-pack-1"].ingredients, {type = "item", name = "quartz", amount = 5})
 table.insert(data.raw.recipe["sp-geological-science-pack-1"].ingredients, {type = "item", name = "sand", amount = 10})
@@ -548,6 +549,7 @@ table.insert(data.raw.recipe["spidertron"].ingredients, {"lithium-sulfur-battery
 
 -- MARK: Add missing ingredients to krastorio items
 table.insert(data.raw.recipe["lithium-chloride"].ingredients, {type = "item", name = "sp-lithium-oxide", amount = 5})
+table.insert(data.raw.recipe["charged-antimatter-fuel-cell"].ingredients, {type = "fluid", name = "sp-antimatter", amount = 1000})
 
 -- MARK: Add missing results
 table.insert(data.raw.recipe["sp-silica"].results, {type = "item", name = "sand", probability = 0.3, amount = 1})

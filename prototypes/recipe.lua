@@ -5329,7 +5329,6 @@ data:extend({
     enabled = false,
     energy_required = 150,
     ingredients = {
-      {type = "item", name = "sp-antimatter-engine", amount = 2},
       {type = "item", name = "sp-miniaturized-stellar-bridge", amount = 1},
       {type = "item", name = "sp-information-cube", amount = 1},
       {type = "item", name = "sp-gravitational-wave-bridge", amount = 4},
@@ -5466,6 +5465,68 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-sideral-compute-core", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-dark-matter-mining-satellite",  -- #ForRegEx# - recipe
+    category = "alien-tech-manufacturing",
+    enabled = false,
+    energy_required = 40,
+    ingredients = {
+      {type = "item", name = "sp-aluminum-brass", amount = 6},
+      {type = "item", name = "sp-inconel", amount = 8},
+      {type = "item", name = "sp-blunagium-yemnuth-beam", amount = 12},
+      {type = "item", name = "sp-dark-matter-field-generator", amount = 1},
+      {type = "item", name = "sp-vortex-core", amount = 1},
+      {type = "item", name = "sp-plasma-core", amount = 1},
+      {type = "item", name = "sp-quark-gluon-probe", amount = 80},
+      {type = "item", name = "sp-quark-gluon-plasma-container", amount = 8},
+    },
+    results = {
+      {type = "item", name = "sp-sideral-compute-core", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-dark-matter",  -- #ForRegEx# - recipe
+    category = "alien-tech-manufacturing",
+    enabled = false,
+    energy_required = 8,
+    ingredients = {
+      {type = "item", name = "sp-dark-matter-container", amount = 1},
+    },
+    results = {
+      {type = "fluid", name = "sp-dark-matter", amount = 1000}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-antimatter",  -- #ForRegEx# - recipe
+    category = "alien-tech-manufacturing",
+    enabled = false,
+    energy_required = 12,
+    ingredients = {
+      {type = "item", name = "sp-evolution-pulse-cell", amount = 10},
+      {type = "item", name = "sp-interdimensional-prism-chamber", amount = 1},
+      {type = "fluid", name = "sp-dark-matter", amount = 1},
+    },
+    results = {
+      {type = "fluid", name = "sp-antimatter", amount = 10}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-dark-energy",  -- #ForRegEx# - recipe
+    category = "alien-tech-manufacturing",
+    enabled = false,
+    energy_required = 0.01,
+    ingredients = {
+      -- Krastorio: {type = "fluid", name = "matter", amount = 1},
+      {type = "fluid", name = "sp-antimatter", amount = 1},
+    },
+    results = {
+      {type = "fluid", name = "sp-dark-energy", amount = 1000}
     }
   },
   ------------------------------------------------------------------------------
@@ -7279,7 +7340,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-uniformity-science-pack",  -- #ForRegEx# - recipe
-    category = "crafting",
+    category = "matter-items",
     enabled = false,
     energy_required = 192,
     ingredients =
@@ -7288,6 +7349,7 @@ data:extend({
       {"sp-interdimensional-prism-chamber", 40},
       {"sp-hadron-beam-charger", 20},
       {"sp-sideral-compute-core", 1},
+      {type = "fluid", name = "sp-dark-energy", amount = 10},
       -- Krastorio: {"matter-cube", 1}
     },
     result_count = 40,

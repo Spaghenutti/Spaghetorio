@@ -19,8 +19,11 @@ data.raw.recipe["sulfuric-acid"].order = "molecule-[sulfuric-acid]"
 data.raw.recipe["copper-plate"].order = "a-plate-[copper-plate]"
 data.raw.recipe["iron-plate"].order = "a-plate-[iron-plate]"
 
--- MARK: other
+-- MARK: other recipes
 data.raw.recipe["uranium-processing"].order = "z[nuclear]-1-[uranium-processing]"
 data.raw.recipe["kovarex-enrichment-process"].order = "z[nuclear]-1-[uranium-processing]"
 data.raw.recipe["iron-beam"].order = "beam-[iron-beam]"
 data.raw.recipe["iron-stick"].order = "frame-1-[iron-beam]"
+
+-- MARK: items
+data.raw.item["satellite"].order = "m-1-[satellite]"

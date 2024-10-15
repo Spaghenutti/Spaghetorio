@@ -5213,6 +5213,57 @@ data:extend({
     type = "technology",
     name = "sp-dark-matter",  -- #ForRegEx# - technology
     icon_size = 256,
+    icon = "__Spaghetorio__/graphics/hr-icons/dark-matter-mining-satellite.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-dark-energy-harvester"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-dark-matter-field-generator"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-dark-matter-mining-satellite"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-dark-matter"
+      }
+    },
+    prerequisites = {
+      "sp-sideral-computing"
+    },
+    unit =
+    {
+      count = 2000,
+      ingredients = {
+        {"sp-automation-science-pack-3", 1},
+        {"sp-logistic-science-pack-3", 1},
+        {"sp-chemical-science-pack-3", 1},
+        {"sp-electronic-science-pack-3", 1},
+        {"sp-geological-science-pack-3", 1},
+        {"sp-material-science-pack-3", 1},
+        {"sp-computer-science-pack-3", 1},
+        {"sp-production-science-pack-3", 1},
+        {"sp-nuclear-science-pack-3", 1},
+        {"sp-astronomical-science-pack-3", 1},
+        {"sp-utility-science-pack-3", 1},
+        {"space-science-pack", 1},
+        -- Krastorio: {"matter-tech-card", 1},
+        -- Krastorio: {"advanced-tech-card", 1},
+        -- Krastorio: {"singularity-tech-card", 1}
+      },
+      time = 15
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-antimatter",  -- #ForRegEx# - technology
+    icon_size = 256,
     icon = "__Spaghetorio__/graphics/hr-icons/antimatter-engine.png",
     effects =
     {
@@ -5222,15 +5273,15 @@ data:extend({
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-dark-energy-harvester"
+        recipe = "sp-antimatter"
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-dark-matter-field-generator"
-      },
+        recipe = "sp-dark-energy"
+      }
     },
     prerequisites = {
-      "sp-sideral-computing"
+      "sp-dark-matter"
     },
     unit =
     {
@@ -6429,7 +6480,7 @@ data:extend({
     },
     prerequisites = {
       "sp-omni-pulse-generator",
-      "sp-dark-matter",
+      "sp-antimatter",
     },
     unit =
     {

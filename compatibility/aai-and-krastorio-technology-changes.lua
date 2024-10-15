@@ -671,6 +671,24 @@ data.raw.technology["sp-dark-matter"].unit.ingredients = {
   {"singularity-tech-card", 1}
 }
 
+data.raw.technology["sp-antimatter"].unit.ingredients = {
+  {"sp-automation-science-pack-3", 1},
+  {"sp-logistic-science-pack-3", 1},
+  {"sp-chemical-science-pack-3", 1},
+  {"sp-electronic-science-pack-3", 1},
+  {"sp-geological-science-pack-3", 1},
+  {"sp-material-science-pack-3", 1},
+  {"sp-computer-science-pack-3", 1},
+  {"sp-production-science-pack-3", 1},
+  {"sp-nuclear-science-pack-3", 1},
+  {"sp-astronomical-science-pack-3", 1},
+  {"sp-utility-science-pack-3", 1},
+  {"space-science-pack", 1},
+  {"matter-tech-card", 1},
+  {"advanced-tech-card", 1},
+  {"singularity-tech-card", 1}
+}
+
 table.insert(data.raw.technology["sp-uniformity-science-pack"].prerequisites, "kr-matter-cube")
 data.raw.technology["sp-uniformity-science-pack"].unit.ingredients = {
   {"sp-automation-science-pack-3", 1},
@@ -1800,7 +1818,7 @@ data.raw.technology["kr-planetary-teleporter"].unit.ingredients = {
 }
 
 data.raw.technology["kr-singularity-beacon"].prerequisites = {
-  "sp-dark-matter"
+  "sp-antimatter"
 }
 data.raw.technology["kr-singularity-beacon"].unit.ingredients = {
   {"sp-automation-science-pack-3", 1},
