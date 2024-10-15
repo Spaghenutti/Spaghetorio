@@ -18,7 +18,7 @@ Inspired by [brevven](https://mods.factorio.com/user/brevven).
 - Requires [Krastorio 2](https://mods.factorio.com/mod/Krastorio2)
 - Requires [AAI Industry](https://mods.factorio.com/mod/aai-industry?from=search)
 
-### Updates for Factorio Space age
+### Updates for Factorio Space Age
 
 - Remove Krastorio dependancy, but still support compatibility
 - Remove AAI dependancy, but still support compatibility
