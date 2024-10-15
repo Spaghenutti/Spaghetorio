@@ -18,18 +18,7 @@ Inspired by [brevven](https://mods.factorio.com/user/brevven).
 - Requires [Krastorio 2](https://mods.factorio.com/mod/Krastorio2)
 - Requires [AAI Industry](https://mods.factorio.com/mod/aai-industry?from=search)
 
-### Roadmap
-## For version 0.2
-
-- Add lumber mill
-- Add wooden board
-- Add alternative recipes that consume commonly produce byproducts (lead, ...)
-- Add alternative recipes for commonly produced items (blank data card, circuits, ...)
-- Fix stack sizes of items
-- Change spawning of recources
-- More liquids for alien materials
-
-## Updates for Factorio Space age
+### Updates for Factorio Space age
 
 - Remove Krastorio dependancy, but still support compatibility
 - Remove AAI dependancy, but still support compatibility
