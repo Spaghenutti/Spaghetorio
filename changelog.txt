@@ -1,6 +1,8 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.2.0
 Date: 2024-10-15
+  Notes:
+    - If you have already a big factory it might not be worth upgrading since some recipes have changed
   Features:
     - New Building: Lumber mill
     - Added wooden board
