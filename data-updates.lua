@@ -13,8 +13,9 @@ require("compatibility.aai-and-krastorio-technology-changes")
 
 require("compatibility.krastorio-building")
 require("compatibility.krastorio-equipment")
-require("compatibility.krastorio-stack-sizes")
+require("compatibility.krastorio-realistic-weapons")
 require("compatibility.krastorio-resource")
+require("compatibility.krastorio-stack-sizes")
 
 require("compatibility.krastorio-fixes")
 require("compatibility.aai-industry-fixes")

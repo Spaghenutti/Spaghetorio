@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.2.1
+Date: 2024-10-16
+  Features:
+    - New recipes for military items
+  Bugfixes:
+    - Fixed military tech tree for Krastorio2 "more realistic guns" setting is enabled
+---------------------------------------------------------------------------------------------------
 Version: 0.2.0
 Date: 2024-10-15
   Notes:

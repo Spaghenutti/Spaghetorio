@@ -337,14 +337,6 @@ data.raw.recipe["kr-vc-advanced-circuit"].results = {
   {type = "item", name = "electronic-components", amount = 2}
 }
 
--- Fix military tech tree
-data.raw.technology["military"].effects = {
-  {
-    type = "unlock-recipe",
-    recipe = "submachine-gun"
-  }
-}
-
 -- Fix icons
 util.icon.change_fluid_icon("petroleum-gas", "__Spaghetorio__/graphics/icons/petroleum-gas.png", 64, nil)
 
