@@ -94,5 +94,6 @@ data:extend({
       }
     },
     energy_usage = "300kW",
+    module_specification = {module_slots = 3, module_info_icon_shift = {0, 1.5}, module_info_icon_scale = 1}
   }
 })

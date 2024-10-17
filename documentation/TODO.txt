@@ -41,7 +41,7 @@ Items:
 
 Recipes:
   + Disable productivity for acro-conversion recipes
-  - Add multiple recipes for blank tech cards
+  + Add multiple recipes for blank tech cards
   - Add recipes for fluids via acromatter
   - Dirty water can be evaporated
   - Add more complex recipe change for semiconductors

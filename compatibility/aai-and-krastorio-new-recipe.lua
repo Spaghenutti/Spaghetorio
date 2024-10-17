@@ -197,7 +197,9 @@ data:extend({
       {type = "item", name = "kr-steel-pipe", amount = 5}
     }
   },
+  ------------------------------------------------------------------------------
   -- MARK: enriched resource recipes
+  ------------------------------------------------------------------------------
   {
     type = "recipe",
     name = "sp-enriched-aluminum",  -- #ForRegEx# - recipe
@@ -765,12 +767,304 @@ data:extend({
       {type = "item", name = "sp-zinc-plate", amount = 2}
     }
   },
+  ------------------------------------------------------------------------------
+  -- MARK: enriched resource recipes for crushed ores
+  ------------------------------------------------------------------------------
+  {
+    type = "recipe",
+    name = "sp-enriched-copper-from-crushed-resource",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__Krastorio2Assets__/icons/items-with-variations/enriched-copper/enriched-copper.png", 64,
+                                         "__Spaghetorio__/graphics/icons/crushed-copper-ore-1.png", 64),
+    icon_size = 64,
+    mip_maps = 4,
+    category = "chemistry",
+    subgroup = "enriched-resource",
+    enabled = false,
+    energy_required = 2.5,
+    hide_from_player_crafting = true,
+    ingredients = {
+      {type = "item", name = "sp-crushed-copper-ore", amount = 8},
+      {type = "fluid", name = "sulfuric-acid", amount = 3},
+      {type = "fluid", name = "water", amount = 50}
+    },
+    results = {
+      {type = "item", name = "enriched-copper", amount = 7},
+      {type = "item", name = "enriched-iron", probability = 0.1, amount = 1},
+      {type = "fluid", name = "dirty-water", amount = 50}
+    },
+    crafting_machine_tint = {
+      primary = {r = 1.000, g = 0.5, b = 0.5, a = 1.000},
+      secondary = {r = 0.8, g = 0.3, b = 0.3, a = 1.000},
+      tertiary = {r = 0.6, g = 0.0, b = 0.0, a = 1.000},
+      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-enriched-iron-from-crushed-resource",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__Krastorio2Assets__/icons/items-with-variations/enriched-iron/enriched-iron.png", 64,
+                                         "__Spaghetorio__/graphics/icons/crushed-iron-ore-1.png", 64),
+    icon_size = 64,
+    mip_maps = 4,
+    category = "chemistry",
+    subgroup = "enriched-resource",
+    enabled = false,
+    energy_required = 1.5,
+    hide_from_player_crafting = true,
+    ingredients = {
+      {type = "item", name = "sp-crushed-iron-ore", amount = 8},
+      {type = "fluid", name = "chlorine", amount = 2},
+      {type = "fluid", name = "water", amount = 50}
+    },
+    results = {
+      {type = "item", name = "sp-enriched-aluminum", amount = 8},
+      {type = "fluid", name = "sp-dirty-water-with-aluminum", amount = 50}
+    },
+    crafting_machine_tint = {
+      primary = {r = 1.000, g = 0.5, b = 0.5, a = 1.000},
+      secondary = {r = 0.8, g = 0.3, b = 0.3, a = 1.000},
+      tertiary = {r = 0.6, g = 0.0, b = 0.0, a = 1.000},
+      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-enriched-aluminum-from-crushed-resource",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/enriched-aluminum-1.png", 64,
+                                         "__Spaghetorio__/graphics/icons/crushed-aluminum-ore-1.png", 64),
+    icon_size = 64,
+    mip_maps = 4,
+    category = "chemistry",
+    subgroup = "enriched-resource",
+    enabled = false,
+    energy_required = 1.5,
+    hide_from_player_crafting = true,
+    ingredients = {
+      {type = "item", name = "sp-crushed-aluminum-ore", amount = 8},
+      {type = "fluid", name = "chlorine", amount = 2},
+      {type = "fluid", name = "water", amount = 50}
+    },
+    results = {
+      {type = "item", name = "sp-enriched-aluminum", amount = 8},
+      {type = "fluid", name = "sp-dirty-water-with-aluminum", amount = 50}
+    },
+    crafting_machine_tint = {
+      primary = {r = 1.000, g = 0.5, b = 0.5, a = 1.000},
+      secondary = {r = 0.8, g = 0.3, b = 0.3, a = 1.000},
+      tertiary = {r = 0.6, g = 0.0, b = 0.0, a = 1.000},
+      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-enriched-chromite-from-crushed-resource",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/enriched-chromite-1.png", 64,
+                                         "__Spaghetorio__/graphics/icons/crushed-chromite-1.png", 64),
+    icon_size = 64,
+    mip_maps = 4,
+    category = "chemistry",
+    subgroup = "enriched-resource",
+    enabled = false,
+    energy_required = 1.5,
+    hide_from_player_crafting = true,
+    ingredients = {
+      {type = "item", name = "sp-crushed-chromite", amount = 8},
+      {type = "fluid", name = "sulfuric-acid", amount = 4},
+      {type = "fluid", name = "water", amount = 30}
+    },
+    results = {
+      {type = "item", name = "iron-ore", amount = 4},
+      {type = "item", name = "sp-enriched-chromite", amount = 8},
+      {type = "fluid", name = "sp-dirty-water-with-chromite", amount = 30}
+    },
+    crafting_machine_tint = {
+      primary = {r = 0.4, g = 0.000, b = 1.000, a = 1.000},
+      secondary = {r = 0.0, g = 0.0, b = 0.6, a = 1.000},
+      tertiary = {r = 0.0, g = 0.0, b = 0.4, a = 1.000},
+      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-enriched-magnesium-from-crushed-resource",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/enriched-magnesium-1.png", 64,
+                                         "__Spaghetorio__/graphics/icons/crushed-magnesium-ore-1.png", 64),
+    icon_size = 64,
+    mip_maps = 4,
+    category = "chemistry",
+    subgroup = "enriched-resource",
+    enabled = false,
+    energy_required = 1.5,
+    hide_from_player_crafting = true,
+    ingredients = {
+      {type = "item", name = "sp-crushed-magnesium-ore", amount = 8},
+      {type = "fluid", name = "sp-liquid-sodium", amount = 1},
+      {type = "fluid", name = "water", amount = 20}
+    },
+    results = {
+      {type = "item", name = "sp-salt", probability = 0.5, amount = 1},
+      {type = "item", name = "sp-enriched-magnesium", amount = 7},
+      {type = "fluid", name = "sp-dirty-water-with-magnesium", amount = 20}
+    },
+    crafting_machine_tint = {
+      primary = {r = 1.000, g = 1.000, b = 1.000, a = 1.000},
+      secondary = {r = 0.5, g = 0.5, b = 0.7, a = 1.000},
+      tertiary = {r = 0.2, g = 0.2, b = 0.7, a = 1.000},
+      quaternary = {r = 0.000, g = 0.000, b = 0.3, a = 1.000},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-enriched-nickel-from-crushed-resource",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/enriched-nickel-1.png", 64,
+                                         "__Spaghetorio__/graphics/icons/crushed-nickel-ore-1.png", 64),
+    icon_size = 64,
+    mip_maps = 4,
+    category = "chemistry",
+    subgroup = "enriched-resource",
+    enabled = false,
+    energy_required = 1.5,
+    hide_from_player_crafting = true,
+    ingredients = {
+      {type = "item", name = "sp-crushed-nickel-ore", amount = 7},
+      {type = "fluid", name = "sulfuric-acid", amount = 2},
+      {type = "fluid", name = "water", amount = 20}
+    },
+    results = {
+      {type = "item", name = "iron-ore", amount = 6},
+      {type = "item", name = "sp-enriched-nickel", amount = 7},
+      {type = "fluid", name = "sp-dirty-water-with-nickel", amount = 20}
+    },
+    crafting_machine_tint = {
+      primary = {r = 1.000, g = 0.5, b = 1.000, a = 1.000},
+      secondary = {r = 0.3, g = 0.0, b = 0.7, a = 1.000},
+      tertiary = {r = 0.0, g = 0.0, b = 0.5, a = 1.000},
+      quaternary = {r = 0.000, g = 0.000, b = 0.3, a = 1.000},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-enriched-tinstone-from-crushed-resource",  -- #ForRegEx# - recipe  
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/enriched-tinstone-1.png", 64,
+                                         "__Spaghetorio__/graphics/icons/crushed-tinstone-1.png", 64),
+    icon_size = 64,
+    mip_maps = 4,
+    category = "chemistry",
+    subgroup = "enriched-resource",
+    enabled = false,
+    energy_required = 2,
+    hide_from_player_crafting = true,
+    ingredients = {
+      {type = "item", name = "sp-crushed-tinstone", amount = 5},
+      {type = "fluid", name = "nitric-acid", amount = 1},
+      {type = "fluid", name = "water", amount = 20}
+    },
+    results = {
+      {type = "item", name = "sp-leadstone", amount = 2},
+      {type = "item", name = "sp-enriched-tinstone", amount = 7},
+      {type = "fluid", name = "sp-dirty-water-with-tin", amount = 20}
+    },
+    crafting_machine_tint = {
+      primary = {r = 0.8, g = 0.4, b = 0.4, a = 1.000},
+      secondary = {r = 0.5, g = 0.3, b = 0.3, a = 1.000},
+      tertiary = {r = 0.2, g = 0.0, b = 0.0, a = 1.000},
+      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-enriched-titanium-from-crushed-resource",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/enriched-titanium-1.png", 64,
+                                         "__Spaghetorio__/graphics/icons/crushed-titanium-ore-1.png", 64),
+    icon_size = 64,
+    mip_maps = 4,
+    category = "chemistry",
+    subgroup = "enriched-resource",
+    enabled = false,
+    energy_required = 3,
+    hide_from_player_crafting = true,
+    ingredients = {
+      {type = "item", name = "sp-crushed-titanium-ore", amount = 12},
+      {type = "fluid", name = "ammonia", amount = 3},
+      {type = "fluid", name = "water", amount = 50}
+    },
+    results = {
+      {type = "item", name = "sp-enriched-titanium", amount = 9},
+      {type = "item", name = "sp-zirconium-ore", amount = 1},
+      {type = "fluid", name = "sp-dirty-water-with-titanium", amount = 50}
+    },
+    crafting_machine_tint = {
+      primary = {r = 0.8, g = 0.4, b = 0.7, a = 1.000},
+      secondary = {r = 0.5, g = 0.3, b = 0.4, a = 1.000},
+      tertiary = {r = 0.2, g = 0.0, b = 0.1, a = 1.000},
+      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-enriched-tungsten-from-crushed-resource",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/enriched-tungsten-1.png", 64,
+                                         "__Spaghetorio__/graphics/icons/crushed-tungsten-ore-1.png", 64),
+    icon_size = 64,
+    mip_maps = 4,
+    category = "chemistry",
+    subgroup = "enriched-resource",
+    enabled = false,
+    energy_required = 2,
+    hide_from_player_crafting = true,
+    ingredients = {
+      {type = "item", name = "sp-crushed-tungsten-ore", amount = 8},
+      {type = "fluid", name = "nitric-acid", amount = 4},
+      {type = "fluid", name = "water", amount = 35}
+    },
+    results = {
+      {type = "item", name = "sp-enriched-tungsten", amount = 6},
+      {type = "item", name = "sp-chromite", probability = 0.7, amount = 1},
+      {type = "fluid", name = "sp-dirty-water-with-tungsten", amount = 35}
+    },
+    crafting_machine_tint = {
+      primary = {r = 0.8, g = 0.4, b = 0.5, a = 1.000},
+      secondary = {r = 0.5, g = 0.3, b = 0.35, a = 1.000},
+      tertiary = {r = 0.2, g = 0.0, b = 0.2, a = 1.000},
+      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-enriched-zinc-from-crushed-resource",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/enriched-zinc-1.png", 64,
+                                         "__Spaghetorio__/graphics/icons/crushed-zinc-ore-1.png", 64),
+    icon_size = 64,
+    mip_maps = 4,
+    category = "chemistry",
+    subgroup = "enriched-resource",
+    enabled = false,
+    energy_required = 2.5,
+    hide_from_player_crafting = true,
+    ingredients = {
+      {type = "item", name = "sp-crushed-zinc-ore", amount = 10},
+      {type = "item", name = "sp-sodium-carbonate", amount = 3},
+      {type = "fluid", name = "water", amount = 40}
+    },
+    results = {
+      {type = "item", name = "sp-enriched-zinc", amount = 8},
+      {type = "fluid", name = "sp-dirty-water-with-zinc", amount = 40}
+    },
+    crafting_machine_tint = {
+      primary = {r = 0.8, g = 0.7, b = 0.8, a = 1.000},
+      secondary = {r = 0.5, g = 0.3, b = 0.4, a = 1.000},
+      tertiary = {r = 0.2, g = 0.2, b = 0.2, a = 1.000},
+      quaternary = {r = 0.1, g = 0.1, b = 0.1, a = 1.000},
+    }
+  },
+  ------------------------------------------------------------------------------
   -- MARK: Acrosphere product recipes for basic resources from acromatter
+  ------------------------------------------------------------------------------
   {
     type = "recipe",
     name = "sp-enriched-aluminum-from-acromatter",  -- #ForRegEx# - recipe
     icons = util.icon.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/enriched-aluminum-1.png",
-                                                    "__Spaghetorio__/graphics/icons/acromatter.png"),
+                                                         "__Spaghetorio__/graphics/icons/acromatter.png"),
     icon_size = 64,
     mip_maps = 4,
     category = "acroproduct-conversion-with-acromatter",
@@ -799,7 +1093,7 @@ data:extend({
     type = "recipe",
     name = "sp-raw-rare-metals-from-acrocrystal",  -- #ForRegEx# - recipe
     icons = util.icon.create_acroproduct_conversion_icon("__Krastorio2Assets__/icons/items-with-variations/raw-rare-metals/raw-rare-metals.png",
-                                                    "__Spaghetorio__/graphics/icons/acrocrystal.png"),
+                                                         "__Spaghetorio__/graphics/icons/acrocrystal.png"),
     icon_size = 64,
     mip_maps = 4,
     category = "acroproduct-conversion-with-acrocrystal",
@@ -825,7 +1119,7 @@ data:extend({
     type = "recipe",
     name = "sp-coke-from-acrovoid",  -- #ForRegEx# - recipe
     icons = util.icon.create_acroproduct_conversion_icon("__Krastorio2Assets__/icons/items-with-variations/coke/coke.png",
-                                                    "__Spaghetorio__/graphics/icons/acrovoid.png"),
+                                                         "__Spaghetorio__/graphics/icons/acrovoid.png"),
     icon_size = 64,
     mip_maps = 4,
     category = "acroproduct-conversion-with-acrovoid",
@@ -855,7 +1149,7 @@ data:extend({
     type = "recipe",
     name = "sp-silicon-from-acrovoid",  -- #ForRegEx# - recipe
     icons = util.icon.create_acroproduct_conversion_icon("__Krastorio2Assets__/icons/items-with-variations/silicon/silicon.png",
-                                                    "__Spaghetorio__/graphics/icons/acrovoid.png"),
+                                                         "__Spaghetorio__/graphics/icons/acrovoid.png"),
     icon_size = 64,
     mip_maps = 4,
     category = "acroproduct-conversion-with-acrovoid",
@@ -885,7 +1179,7 @@ data:extend({
     type = "recipe",
     name = "sp-enriched-chromite-from-acromatter",  -- #ForRegEx# - recipe
     icons = util.icon.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/enriched-chromite-1.png",
-                                                    "__Spaghetorio__/graphics/icons/acromatter.png"),
+                                                         "__Spaghetorio__/graphics/icons/acromatter.png"),
     icon_size = 64,
     mip_maps = 4,
     category = "acroproduct-conversion-with-acromatter",
@@ -913,7 +1207,7 @@ data:extend({
     type = "recipe",
     name = "sp-enriched-titanium-from-acromatter",  -- #ForRegEx# - recipe
     icons = util.icon.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/enriched-titanium-1.png",
-                                                    "__Spaghetorio__/graphics/icons/acromatter.png"),
+                                                         "__Spaghetorio__/graphics/icons/acromatter.png"),
     icon_size = 64,
     mip_maps = 4,
     category = "acroproduct-conversion-with-acromatter",
@@ -941,7 +1235,7 @@ data:extend({
     type = "recipe",
     name = "sp-enriched-magnesium-from-acromatter",  -- #ForRegEx# - recipe
     icons = util.icon.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/enriched-magnesium-1.png",
-                                                    "__Spaghetorio__/graphics/icons/acromatter.png"),
+                                                         "__Spaghetorio__/graphics/icons/acromatter.png"),
     icon_size = 64,
     mip_maps = 4,
     category = "acroproduct-conversion-with-acromatter",
@@ -970,7 +1264,7 @@ data:extend({
     type = "recipe",
     name = "sp-enriched-nickel-from-acromatter",  -- #ForRegEx# - recipe
     icons = util.icon.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/enriched-nickel-1.png",
-                                                    "__Spaghetorio__/graphics/icons/acromatter.png"),
+                                                         "__Spaghetorio__/graphics/icons/acromatter.png"),
     icon_size = 64,
     mip_maps = 4,
     category = "acroproduct-conversion-with-acromatter",
@@ -1000,7 +1294,7 @@ data:extend({
     type = "recipe",
     name = "sp-enriched-tinstone-from-acromatter",  -- #ForRegEx# - recipe
     icons = util.icon.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/enriched-tinstone-1.png",
-                                                    "__Spaghetorio__/graphics/icons/acromatter.png"),
+                                                         "__Spaghetorio__/graphics/icons/acromatter.png"),
     icon_size = 64,
     mip_maps = 4,
     category = "acroproduct-conversion-with-acromatter",
@@ -1030,7 +1324,7 @@ data:extend({
     type = "recipe",
     name = "sp-enriched-tungsten-from-acromatter",  -- #ForRegEx# - recipe
     icons = util.icon.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/enriched-tungsten-1.png",
-                                                    "__Spaghetorio__/graphics/icons/acromatter.png"),
+                                                         "__Spaghetorio__/graphics/icons/acromatter.png"),
     icon_size = 64,
     mip_maps = 4,
     category = "acroproduct-conversion-with-acromatter",
@@ -1057,7 +1351,7 @@ data:extend({
     type = "recipe",
     name = "sp-enriched-zinc-from-acromatter",  -- #ForRegEx# - recipe
     icons = util.icon.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/enriched-zinc-1.png",
-                                                    "__Spaghetorio__/graphics/icons/acromatter.png"),
+                                                         "__Spaghetorio__/graphics/icons/acromatter.png"),
     icon_size = 64,
     mip_maps = 4,
     category = "acroproduct-conversion-with-acromatter",
@@ -1085,7 +1379,7 @@ data:extend({
     type = "recipe",
     name = "sp-enriched-iron-from-acromatter",  -- #ForRegEx# - recipe
     icons = util.icon.create_acroproduct_conversion_icon("__Krastorio2Assets__/icons/items-with-variations/enriched-iron/enriched-iron.png",
-                                                    "__Spaghetorio__/graphics/icons/acromatter.png"),
+                                                         "__Spaghetorio__/graphics/icons/acromatter.png"),
     icon_size = 64,
     mip_maps = 4,
     category = "acroproduct-conversion-with-acromatter",
@@ -1114,7 +1408,7 @@ data:extend({
     type = "recipe",
     name = "sp-enriched-copper-from-acromatter",  -- #ForRegEx# - recipe
     icons = util.icon.create_acroproduct_conversion_icon("__Krastorio2Assets__/icons/items-with-variations/enriched-copper/enriched-copper.png",
-                                                    "__Spaghetorio__/graphics/icons/acromatter.png"),
+                                                         "__Spaghetorio__/graphics/icons/acromatter.png"),
     icon_size = 64,
     mip_maps = 4,
     category = "acroproduct-conversion-with-acromatter",
@@ -1145,7 +1439,7 @@ data:extend({
     type = "recipe",
     name = "sp-enriched-rare-metals-from-acromatter",  -- #ForRegEx# - recipe
     icons = util.icon.create_acroproduct_conversion_icon("__Krastorio2Assets__/icons/items-with-variations/enriched-rare-metals/enriched-rare-metals.png",
-                                                    "__Spaghetorio__/graphics/icons/acromatter.png"),
+                                                         "__Spaghetorio__/graphics/icons/acromatter.png"),
     icon_size = 64,
     mip_maps = 4,
     category = "acroproduct-conversion-with-acromatter",

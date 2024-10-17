@@ -22,6 +22,7 @@ util.icon.change_technology_icon("kr-matter-tech-card", "__Spaghetorio__/graphic
 
 -- Resize buildings
 util.building.resize_building("furnace", "kr-crusher", {{-1.75, -1.75}, {1.75, 1.75}}, {{-2, -2}, {2, 2}}, 4/7, 4/7/2)
+data.raw.furnace["kr-crusher"].module_specification = {module_slots = 4, module_info_icon_shift = {0, 1.1}, module_info_icon_scale = 0.7}
 
 -- Change order of autoplace control
 data.raw["autoplace-control"]["rare-metals"].order = "b[rare-metals]"

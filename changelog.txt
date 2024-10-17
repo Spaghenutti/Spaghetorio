@@ -1,9 +1,12 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.2.3
 Date: 2024-10-16
+  Features:
+    - New recipes enriching crushed ores
   Bugfixes:
     - Changed order and subgroups of some items
     - Reduced size of mod by removing some hr graphics
+    - Fixed module icons on alt view for krastorio crusher and lumber mill
 ---------------------------------------------------------------------------------------------------
 Version: 0.2.2
 Date: 2024-10-16

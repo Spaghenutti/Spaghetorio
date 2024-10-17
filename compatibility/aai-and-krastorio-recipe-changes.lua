@@ -13,7 +13,7 @@ data:extend({
     category = "crushing",
     subgroup = "crushed-resource",
     enabled = false,
-    energy_required = 6,
+    energy_required = 2,
     ingredients = {
       {type = "item", name = "sp-aluminum-ore", amount = 3},
     },
@@ -32,7 +32,7 @@ data:extend({
     category = "crushing",
     subgroup = "crushed-resource",
     enabled = false,
-    energy_required = 4,
+    energy_required = 1.5,
     ingredients = {
       {type = "item", name = "sp-chromite", amount = 3},
     },
@@ -85,7 +85,7 @@ data:extend({
     category = "crushing",
     subgroup = "crushed-resource",
     enabled = false,
-    energy_required = 4,
+    energy_required = 1,
     ingredients = {
       {type = "item", name = "copper-ore", amount = 6},
     },
@@ -103,7 +103,7 @@ data:extend({
     category = "crushing",
     subgroup = "crushed-resource",
     enabled = false,
-    energy_required = 4,
+    energy_required = 1,
     ingredients = {
       {type = "item", name = "iron-ore", amount = 6},
     },
@@ -121,7 +121,7 @@ data:extend({
     category = "crushing",
     subgroup = "crushed-resource",
     enabled = false,
-    energy_required = 4,
+    energy_required = 0.5,
     ingredients = {
       {type = "item", name = "sp-limestone", amount = 2},
     },
@@ -140,7 +140,7 @@ data:extend({
     category = "crushing",
     subgroup = "crushed-resource",
     enabled = false,
-    energy_required = 5.6,
+    energy_required = 2,
     ingredients = {
       {type = "item", name = "sp-magnesium-ore", amount = 4},
     },
@@ -159,7 +159,7 @@ data:extend({
     category = "crushing",
     subgroup = "crushed-resource",
     enabled = false,
-    energy_required = 5,
+    energy_required = 1.5,
     ingredients = {
       {type = "item", name = "sp-nickel-ore", amount = 3},
     },
@@ -179,7 +179,7 @@ data:extend({
     category = "crushing",
     subgroup = "crushed-resource",
     enabled = false,
-    energy_required = 8,
+    energy_required = 1,
     ingredients = {
       {type = "item", name = "sp-spodumene", amount = 3},
     },
@@ -198,7 +198,7 @@ data:extend({
     category = "crushing",
     subgroup = "crushed-resource",
     enabled = false,
-    energy_required = 3,
+    energy_required = 1,
     ingredients = {
       {type = "item", name = "sp-tinstone", amount = 3},
     },
@@ -217,7 +217,7 @@ data:extend({
     category = "crushing",
     subgroup = "crushed-resource",
     enabled = false,
-    energy_required = 12,
+    energy_required = 3,
     ingredients = {
       {type = "item", name = "sp-titanium-ore", amount = 3},
     },
@@ -235,7 +235,7 @@ data:extend({
     category = "crushing",
     subgroup = "crushed-resource",
     enabled = false,
-    energy_required = 10,
+    energy_required = 2.5,
     ingredients = {
       {type = "item", name = "sp-tungsten-ore", amount = 3},
     },
@@ -254,7 +254,7 @@ data:extend({
     category = "crushing",
     subgroup = "crushed-resource",
     enabled = false,
-    energy_required = 3.6,
+    energy_required = 1,
     ingredients = {
       {type = "item", name = "sp-zinc-ore", amount = 3},
     },
@@ -274,7 +274,7 @@ data:extend({
     category = "crushing",
     subgroup = "crushed-resource",
     enabled = false,
-    energy_required = 6,
+    energy_required = 2,
     ingredients = {
       {type = "item", name = "sp-zirconium-ore", amount = 2},
     },
