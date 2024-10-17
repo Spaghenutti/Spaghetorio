@@ -4,17 +4,6 @@ data:extend({
   ------------------------------------------------------------------------------
   -- MARK: New aai / krastorio recipes
   ------------------------------------------------------------------------------
-  -- util.recipe.change_recipe_ingredients("blank-tech-card",
-  -- {
-  --   {"iron-plate", 2},
-  --   {"copper-cable", 2},
-  -- },
-  -- {
-  --   {"iron-plate", 2},
-  --   {"copper-cable", 3},
-  -- },
-  -- 2,
-  -- 3)
   {
     -- AAI
     type = "recipe",
@@ -260,6 +249,7 @@ data:extend({
     icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/alumina.png", 64,
                                          "__Spaghetorio__/graphics/icons/enriched-aluminum-1.png", 64),
     category = "smelting",
+    subgroup = "processed-resource",
     enabled = false,
     energy_required = 3,
     hide_from_player_crafting = true,

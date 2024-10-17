@@ -803,7 +803,8 @@ data:extend({
     },
     results = {
       {type = "item", name = "iron-beam", amount = 1}
-    }
+    },
+    order = "beam-[iron-beam]"
   },
   {
     type = "recipe",
@@ -828,7 +829,7 @@ data:extend({
     icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/alumina.png", 64,
                                          "__Spaghetorio__/graphics/icons/crushed-aluminum-ore-1.png", 64),
     category = "crushed-smelting",
-    subgroup = "raw-material",
+    subgroup = "processed-resource",
     enabled = false,
     energy_required = 12,
     hide_from_player_crafting = true,
@@ -863,7 +864,7 @@ data:extend({
     icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/magnesium-chloride.png", 64,
                                          "__Spaghetorio__/graphics/icons/crushed-magnesium-ore-1.png", 64),
     category = "crushed-smelting",
-    subgroup = "raw-material",
+    subgroup = "processed-resource",
     enabled = false,
     energy_required = 10,
     hide_from_player_crafting = true,
@@ -915,7 +916,7 @@ data:extend({
     icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/titanium-chloride.png", 64,
                                          "__Spaghetorio__/graphics/icons/crushed-titanium-ore-1.png", 64),
     category = "crushed-smelting",
-    subgroup = "raw-material",
+    subgroup = "processed-resource",
     enabled = false,
     energy_required = 12,
     hide_from_player_crafting = true,
@@ -932,7 +933,7 @@ data:extend({
     icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/ammonium-paratungstate.png", 64,
                                          "__Spaghetorio__/graphics/icons/crushed-tungsten-ore-1.png", 64),
     category = "crushed-smelting",
-    subgroup = "raw-material",
+    subgroup = "processed-resource",
     enabled = false,
     energy_required = 12,
     hide_from_player_crafting = true,
@@ -949,7 +950,7 @@ data:extend({
     icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/zinc-sulfate-1.png", 64,
                                          "__Spaghetorio__/graphics/icons/crushed-zinc-ore-1.png", 64),
     category = "crushed-smelting",
-    subgroup = "raw-material",
+    subgroup = "processed-resource",
     enabled = false,
     energy_required = 20,
     hide_from_player_crafting = true,

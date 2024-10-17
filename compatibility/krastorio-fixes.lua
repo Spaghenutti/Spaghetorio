@@ -3,6 +3,7 @@ local util = require("data-util")
 -- Change item icons
 util.icon.change_item_icon("copper-plate", "__base__/graphics/icons/copper-plate.png", 64, 4)
 util.icon.change_item_icon("iron-plate", "__base__/graphics/icons/iron-plate.png", 64, 4)
+util.icon.change_item_icon("iron-beam", "__base__/graphics/icons/steel-plate.png", 64, 4)
 util.icon.change_item_icon("iron-gear-wheel", "__base__/graphics/icons/iron-gear-wheel.png", 64, 4)
 
 -- Change recipe icons
@@ -10,6 +11,8 @@ util.icon.change_recipe_icon("iron-plate", "__base__/graphics/icons/iron-plate.p
 data.raw.recipe["iron-plate"].icons = nil
 util.icon.change_recipe_icon("copper-plate", "__base__/graphics/icons/copper-plate.png", 64, 4)
 data.raw.recipe["copper-plate"].icons = nil
+util.icon.change_recipe_icon("iron-beam", "__base__/graphics/icons/steel-plate.png", 64, 4)
+data.raw.recipe["iron-beam"].icons = nil
 
 -- Change tool icons
 util.icon.change_tool_icon("utility-science-pack", "__Spaghetorio__/graphics/icons/utility-science-pack-2.png", 64, 4)

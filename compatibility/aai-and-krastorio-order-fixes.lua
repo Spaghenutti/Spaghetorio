@@ -35,6 +35,8 @@ data.raw.recipe["steel-plate"].order = "a-plate-[steel-plate]"
 data.raw.recipe["stone-tablet"].order = "a-plate-[stone-tablet]"  -- AAI
 data.raw.recipe["imersium-plate"].order = "a-plate-[imersium-plate]"
 data.raw.recipe["glass"].order = "a-plate-1-[glass]"
+data.raw.recipe["enriched-iron-plate"].order = "a-plate-[iron-plate]"
+data.raw.recipe["enriched-copper-plate"].order = "a-plate-[copper-plate]"
 
 -- MARK: Beam
 data.raw.recipe["steel-beam"].order = "beam-[steel-beam]"
