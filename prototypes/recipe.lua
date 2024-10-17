@@ -5492,6 +5492,7 @@ data:extend({
     name = "sp-dark-matter",  -- #ForRegEx# - recipe
     category = "alien-tech-manufacturing",
     enabled = false,
+    subgroup = "fluid-recipes",
     energy_required = 8,
     ingredients = {
       {type = "item", name = "sp-dark-matter-container", amount = 1},
@@ -5505,6 +5506,7 @@ data:extend({
     name = "sp-antimatter",  -- #ForRegEx# - recipe
     category = "alien-tech-manufacturing",
     enabled = false,
+    subgroup = "fluid-recipes",
     energy_required = 12,
     ingredients = {
       {type = "item", name = "sp-evolution-pulse-cell", amount = 10},
@@ -5520,6 +5522,7 @@ data:extend({
     name = "sp-dark-energy",  -- #ForRegEx# - recipe
     category = "alien-tech-manufacturing",
     enabled = false,
+    subgroup = "fluid-recipes",
     energy_required = 0.01,
     ingredients = {
       -- Krastorio: {type = "fluid", name = "matter", amount = 1},

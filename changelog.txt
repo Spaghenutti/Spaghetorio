@@ -7,6 +7,8 @@ Date: 2024-10-16
     - Changed order and subgroups of some items
     - Reduced size of mod by removing some hr graphics
     - Fixed module icons on alt view for krastorio crusher and lumber mill
+    - Fixed subgroup of alien fluid recipes
+    - Fixed fluid inputs for filtration plant
 ---------------------------------------------------------------------------------------------------
 Version: 0.2.2
 Date: 2024-10-16
