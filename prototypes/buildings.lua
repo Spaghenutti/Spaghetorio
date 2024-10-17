@@ -36,18 +36,19 @@ data:extend({
           line_length = 8,
           animation_speed = 0.75,
           shift = util.by_pixel(0, 0),
-          hr_version =
-          {
-            filename = "__Spaghetorio__/graphics/buildings/lumber-mill-hr-animation.png",
-            priority = "extra-high",
-            width = 460,
-            height = 500,
-            frame_count = 80,
-            line_length = 8,
-            animation_speed = 0.75,
-            shift = util.by_pixel(0, 0),
-            scale = 0.5
-          }
+          -- The image is 37 MB large
+          -- hr_version =
+          -- {
+          --   filename = "__Spaghetorio__/graphics/buildings/lumber-mill-hr-animation.png",  -- #SKIP IMAGE#
+          --   priority = "extra-high",
+          --   width = 460,
+          --   height = 500,
+          --   frame_count = 80,
+          --   line_length = 8,
+          --   animation_speed = 0.75,
+          --   shift = util.by_pixel(0, 0),
+          --   scale = 0.5
+          -- }
         },
         {
           filename = "__Spaghetorio__/graphics/buildings/lumber-mill-hr-shadow.png",

@@ -27,3 +27,17 @@ data.raw.recipe["iron-stick"].order = "frame-1-[iron-beam]"
 
 -- MARK: items
 data.raw.item["satellite"].order = "m-1-[satellite]"
+data.raw.item["uranium-235"].order = "z-nuclear-2-[uranium-235]"
+data.raw.item["uranium-238"].order = "z-nuclear-1-[uranium-238]"
+
+-- Change order of science items
+-- data.raw.tool["production-science-pack"].order = "h[production-science-pack]"
+-- data.raw.tool["utility-science-pack"].order = "i[utility-science-pack]"
+
+-- Change order of autoplace control
+data.raw["autoplace-control"]["iron-ore"].order = "b[iron-ore]"
+data.raw["autoplace-control"]["copper-ore"].order = "b[copper-ore]"
+data.raw["autoplace-control"]["stone"].order = "b[stone]"
+data.raw["autoplace-control"]["coal"].order = "b[coal]"
+data.raw["autoplace-control"]["uranium-ore"].order = "b[uranium-ore]"
+data.raw["autoplace-control"]["crude-oil"].order = "c[crude-oil]"

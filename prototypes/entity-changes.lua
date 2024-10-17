@@ -77,18 +77,6 @@ data.raw.tool["production-science-pack"].subgroup = "intermediate-science"
 data.raw.tool["utility-science-pack"].subgroup = "intermediate-science"
 data.raw.tool["space-science-pack"].subgroup = "advanced-science"
 
--- Change order of science items
--- data.raw.tool["production-science-pack"].order = "h[production-science-pack]"
--- data.raw.tool["utility-science-pack"].order = "i[utility-science-pack]"
-
--- Change order of autoplace control
-data.raw["autoplace-control"]["iron-ore"].order = "b[iron-ore]"
-data.raw["autoplace-control"]["copper-ore"].order = "b[copper-ore]"
-data.raw["autoplace-control"]["stone"].order = "b[stone]"
-data.raw["autoplace-control"]["coal"].order = "b[coal]"
-data.raw["autoplace-control"]["uranium-ore"].order = "b[uranium-ore]"
-data.raw["autoplace-control"]["crude-oil"].order = "c[crude-oil]"
-
 -- add crafting categories
 table.insert(data.raw["assembling-machine"]["centrifuge"].crafting_categories, "high-energy-physics")
 table.insert(data.raw["furnace"]["electric-furnace"].crafting_categories, "intermediate-smelting")

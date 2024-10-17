@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.2.3
+Date: 2024-10-16
+  Bugfixes:
+    - Changed order and subgroups of some items
+    - Reduced size of mod by removing some hr graphics
+---------------------------------------------------------------------------------------------------
 Version: 0.2.2
 Date: 2024-10-16
   Bugfixes:

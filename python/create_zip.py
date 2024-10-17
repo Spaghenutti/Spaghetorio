@@ -18,7 +18,8 @@ INFO_JSON_PATH = fr"{PATH}\info.json"
 INFO_JSON_VERSION_REGEX = r"\"version\": \"([A-Za-z0-9]+(\.[A-Za-z0-9]+)+)\""
 TARGET_PATH = r"D:\Factorio modding\Spaghetorio versions\\"
 
-IMAGE_REGEX = r"\"__Spaghetorio__[^\"]*\""
+IMAGE_REGEX = r"\"([^\"]*.png)\"([^\n]*)"
+SKIP_IMAGE_FLAG = r"#SKIP IMAGE#"
 
 
 PATHS_TO_SKIP = [".git",
@@ -54,8 +55,15 @@ def get_used_image_paths() -> List[str]:
         file = open(lua_file, mode = 'r')
         file_content = file.read()
         found_image_paths = re.findall(IMAGE_REGEX, file_content)
+ 
         for found_image_path in found_image_paths:
-            used_images_paths.append(found_image_path)
+            include_image = True
+            for group in found_image_path:
+                if SKIP_IMAGE_FLAG in group:
+                    include_image = False
+
+            if include_image:
+                used_images_paths.append(found_image_path[0])
         file.close()
 
     # fix paths

@@ -43,6 +43,8 @@ data.raw.item["dt-fuel"].subgroup = "fuel-processing"
 data.raw.item["empty-antimatter-fuel-cell"].subgroup = "fuel-processing"
 data.raw.item["charged-antimatter-fuel-cell"].subgroup = "fuel-processing"
 
+data.raw.item["gps-satellite"].subgroup = "space-related"
+
 -- MARK: fluid
 data.raw.fluid["mineral-water"].subgroup = "aqueous-fluid"
 data.raw.fluid["heavy-water"].subgroup = "aqueous-fluid"

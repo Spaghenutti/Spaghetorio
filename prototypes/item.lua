@@ -883,7 +883,7 @@ data:extend({
       {size = 64, filename = "__Spaghetorio__/graphics/icons/plutonium-239-4.png", scale = 0.25, mipmap_count = 4}
     },
     subgroup = "processed-resource",
-    order = "[plutonium-239]",
+    order = "z-nuclear-3-[plutonium-239]",
     stack_size = 50
   },
   {
@@ -899,7 +899,7 @@ data:extend({
       {size = 64, filename = "__Spaghetorio__/graphics/icons/plutonium-240-4.png", scale = 0.25, mipmap_count = 4}
     },
     subgroup = "processed-resource",
-    order = "[plutonium-240]",
+    order = "z-nuclear-3-[plutonium-240]",
     stack_size = 50
   },
   {
@@ -3497,7 +3497,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "fuel-processing",
-    order = "nuclear-a[used-up-fuel-rod]",
+    order = "nuclear-y[used-up-fuel-rod]",
     stack_size = 50
   },
   {
@@ -3507,7 +3507,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "fuel-processing",
-    order = "nuclear-a[nuclear-waste]",
+    order = "nuclear-z[nuclear-waste]",
     stack_size = 50
   },
   ------------------------------------------------------------------------------

@@ -44,6 +44,7 @@ data.raw.recipe["imersium-beam"].order = "beam-[imersium-beam]"
 data.raw.item["steel-plate"].order = "a-plate-[steel-plate]"
 data.raw.item["steel-gear-wheel"].order = "gear-[steel-gear-wheel]"
 data.raw.item["biomass"].order = "z-[biomass]"
+data.raw.item["gps-satellite"].order = "m-3-[gps-satellite]"
 
 --MARK: Fluids
 data.raw.fluid["matter"].order = "a[fluid]-y1[matter]"
