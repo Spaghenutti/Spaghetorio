@@ -9,6 +9,7 @@ Date: 2024-10-16
     - Fixed module icons on alt view for krastorio crusher and lumber mill
     - Fixed subgroup of alien fluid recipes
     - Fixed fluid inputs for filtration plant
+    - Fixed locale of bleach and epoxy
 ---------------------------------------------------------------------------------------------------
 Version: 0.2.2
 Date: 2024-10-16

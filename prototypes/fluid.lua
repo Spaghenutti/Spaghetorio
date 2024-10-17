@@ -312,7 +312,7 @@ data:extend({
   },
   {
     type = "fluid",
-    name = "sp-epoxy",  -- #ForRegEx# - item
+    name = "sp-epoxy",  -- #ForRegEx# - fluid
     default_temperature = 25,
     heat_capacity = "0.1KJ",
     base_color = {r=0.85, g=0.85, b=0.9},
@@ -325,7 +325,7 @@ data:extend({
   },
   {
     type = "fluid",
-    name = "sp-bleach",  -- #ForRegEx# - item
+    name = "sp-bleach",  -- #ForRegEx# - fluid
     default_temperature = 25,
     heat_capacity = "0.1KJ",
     base_color = {r=0.25, g=0.25, b=0.3},
