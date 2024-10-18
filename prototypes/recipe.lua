@@ -397,9 +397,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-tin-and-lead",  -- #ForRegEx# - recipe
-    -- icon = "__Spaghetorio__/graphics/icons/tin-and-lead.png",
-    icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/icons/tin-ingot.png", 64, nil, 
-                                        "__Spaghetorio__/graphics/icons/lead-slab.png", 64, nil),
+    icon = "__Spaghetorio__/graphics/icons/tin-and-lead.png",
     icon_size = 64,
     mip_maps = 4,
     category = "smelting",
