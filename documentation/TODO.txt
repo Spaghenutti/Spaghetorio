@@ -29,6 +29,92 @@ Items:
       - assembling / manufacturing machines
       - inserters / inserter parts
       - Aquired by hardening
+    - Nickel-Cobalt: 
+      - 30% nickel, 70% cobalt
+      - A good example is the nickel-cobalt alloy, MP35N, which consists of nickel and cobalt and is ideally suited to marine and subsea applications due to its resistance to hydrogen sulphide, salt water and mineral acids, which can have a highly corrosive effect on most metals. Monel is a nickel-based alloy that incorporates copper and iron. It is corrosion resistant and acid resistant, so is suitable for marine applications as well as applications involving acids and other highly corrosive substances.
+    + Nickel-Titanium (nitenol)
+      + Superelasticity (springs)
+    - Hastealloy
+      - 57% Nickel, 27% Molybdenum, 16% chromium
+      - Chemical processing
+      - pollution control
+    - Monel
+      - 63% Nickel, 30% copper, 2% Manganese, 1% Iron, 4% Titanium
+      - Marine engineering
+      - Chemical processing
+    - Waspalloy
+      - 60% nickel, 20% chromium, 20% cobalt
+      - Aerospace
+      - Gas turbine
+    - Satellite 6 alloy
+      - 60% cobalt, 30% Chromium, 6% tungsten, 2% manganese, 2% molybden
+      - cutting tools
+      - wear resistant applications
+    - Elgiloy:
+      - 40% cobalt, 20% chromium, 15% nickel, 15% iron, 8% molybden, 2% manganese
+      - springs
+      - medical devices
+    - Maraging Steel: 
+      - Nickel (18%), Cobalt (8-12%), Molybdenum (3-5%) rest iron
+      - Aerospace, tooling.
+    - Kovar:
+      - Nickel (29%), Cobalt (17%), Iron (balance) 
+      - Electronics
+      - glass-to-metal seals.
+    - Zircaloy: 
+      - Zirconium (98%), Tin (1.5%) 
+      - Nuclear reactors.
+  - Exotic alloys:
+    - Alnico: Aluminum (8%), Nickel (14%), Cobalt (24%), Iron (balance) - Magnets, sensors.
+    - Samarium-Cobalt (SmCo): Samarium (35%), Cobalt (65%) - Permanent magnets, aerospace.
+    - Neodymium-Iron-Boron (NdFeB): Neodymium (29-32%), Iron (64-68%), Boron (1%) - High-strength magnets, electronics.
+    - Mischmetal: Cerium (50%), Lanthanum (25%), Neodymium (18%), Praseodymium (5%) - Lighter flints, steel additives.
+    - Terfenol-D: Terbium (0.3%), Dysprosium (0.7%), Iron (balance) - Actuators, sensors.
+    - Gd5Si2Ge2: Gadolinium (62%), Silicon (19%), Germanium (19%) - Magnetic refrigeration.
+    - LaNi5: Lanthanum (20%), Nickel (80%) - Hydrogen storage, batteries.
+    - CeO2-ZrO2: Cerium (50%), Zirconium (50%) - Catalysts, fuel cells.
+    - YAG (Yttrium Aluminum Garnet): Yttrium (34%), Aluminum (66%) - Lasers, optics.
+    - YBCO (Yttrium Barium Copper Oxide): Yttrium (13%), Barium (34%), Copper (53%) - Superconductors.
+    - Praseodymium-Nickel (PrNi5): Praseodymium (20%), Nickel (80%) - Hydrogen storage.
+    - CeMg12: Cerium (8%), Magnesium (92%) - Hydrogen storage.
+    - LaNi4.7Al0.3: Lanthanum (20%), Nickel (75%), Aluminum (5%) - Hydrogen storage.
+    - Nd2Fe14B: Neodymium (29-32%), Iron (64-68%), Boron (1%) - Permanent magnets.
+    - Sm2Co17: Samarium (11%), Cobalt (89%) - High-temperature magnets.
+    - DyFe2: Dysprosium (33%), Iron (67%) - Magnetostrictive materials.
+    - TbFe2: Terbium (33%), Iron (67%) - Magnetostrictive materials.
+    - GdFe2: Gadolinium (33%), Iron (67%) - Magnetostrictive materials.
+    - HoFe2: Holmium (33%), Iron (67%) - Magnetostrictive materials.
+    - ErFe2: Erbium (33%), Iron (67%) - Magnetostrictive materials.
+    - TmFe2: Thulium (33%), Iron (67%) - Magnetostrictive materials.
+    - YFe2: Yttrium (33%), Iron (67%) - Magnetostrictive materials.
+    - CeFe2: Cerium (33%), Iron (67%) - Magnetostrictive materials.
+    - LaFe2: Lanthanum (33%), Iron (67%) - Magnetostrictive materials.
+    - PrFe2: Praseodymium (33%), Iron (67%) - Magnetostrictive materials.
+    - NdFe2: Neodymium (33%), Iron (67%) - Magnetostrictive materials.
+    - SmFe2: Samarium (33%), Iron (67%) - Magnetostrictive materials.
+    - EuFe2: Europium (33%), Iron (67%) - Magnetostrictive materials.
+    - Gd5(Si2Ge2): Gadolinium (62%), Silicon (19%), Germanium (19%) - Magnetic refrigeration.
+    - TbDyFe: Terbium (33%), Dysprosium (33%), Iron (34%) - Magnetostrictive materials.
+    - LaNi4.5Mn0.5: Lanthanum (20%), Nickel (75%), Manganese (5%) - Hydrogen storage.
+    - CeNi5: Cerium (20%), Nickel (80%) - Hydrogen storage.
+    - PrNi5: Praseodymium (20%), Nickel (80%) - Hydrogen storage.
+    - NdNi5: Neodymium (20%), Nickel (80%) - Hydrogen storage.
+    - SmNi5: Samarium (20%), Nickel (80%) - Hydrogen storage.
+    - EuNi5: Europium (20%), Nickel (80%) - Hydrogen storage.
+    - GdNi5: Gadolinium (20%), Nickel (80%) - Hydrogen storage.
+    - TbNi5: Terbium (20%), Nickel (80%) - Hydrogen storage.
+    - DyNi5: Dysprosium (20%), Nickel (80%) - Hydrogen storage.
+    - HoNi5: Holmium (20%), Nickel (80%) - Hydrogen storage.
+    - ErNi5: Erbium (20%), Nickel (80%) - Hydrogen storage.
+    - TmNi5: Thulium (20%), Nickel (80%) - Hydrogen storage.
+    - YNi5: Yttrium (20%), Nickel (80%) - Hydrogen storage.
+    - LaNi4.5Co0.5: Lanthanum (20%), Nickel (75%), Cobalt (5%) - Hydrogen storage.
+    - CeNi4.5Co0.5: Cerium (20%), Nickel (75%), Cobalt (5%) - Hydrogen storage.
+    - PrNi4.5Co0.5: Praseodymium (20%), Nickel (75%), Cobalt (5%) - Hydrogen storage.
+    - NdNi4.5Co0.5: Neodymium (20%), Nickel (75%), Cobalt (5%) - Hydrogen storage.
+    - SmNi4.5Co0.5: Samarium (20%), Nickel (75%), Cobalt (5%) - Hydrogen storage.
+    - EuNi4.5Co0.5: Europium (20%), Nickel (75%), Cobalt (5%) - Hydrogen storage.
+    - GdNi4.5Co0.5: Gadolinium (20%), Nickel (75%), Cobalt (5%) - Hydrogen storage.
 
   - For semiconductors:
     - Tantalum nitride
