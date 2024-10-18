@@ -1144,8 +1144,8 @@ data:extend({
     type = "technology",
     name = "sp-niobium-alloys",  -- #ForRegEx# - technology
     icon_size = 256,
-    icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/hr-icons/niobium-steel.png", 256, nil,
-                                   "__Spaghetorio__/graphics/hr-icons/niobium-tin.png", 256, nil),
+    icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/hr-icons/niobium-tin.png", 256, nil,
+                                        "__Spaghetorio__/graphics/hr-icons/niobium-steel.png", 256, nil),
     effects =
     {
       {
