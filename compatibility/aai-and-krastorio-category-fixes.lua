@@ -4,6 +4,7 @@ data.raw.recipe["sp-aluminum-sheet"].category = "electrolysis"
 data.raw.recipe["sp-anodized-aluminum"].category = "electrolysis"
 data.raw.recipe["sp-zinc-plate"].category = "electrolysis"
 data.raw.recipe["sp-sodium-hydroxide-from-liquid-sodium"].category = "electrolysis"
+data.raw.recipe["sp-titanium-sponge"].category = "electrolysis"
 
 data.raw.recipe["sp-salt"].category = "fluid-filtration"
 

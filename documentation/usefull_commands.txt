@@ -38,3 +38,9 @@ for y=-size, size do
 		end
 	end
 end
+
+--------------------------------------------------------------------------------
+
+Take screenshot:
+
+/screenshot
