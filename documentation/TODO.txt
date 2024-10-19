@@ -5,21 +5,11 @@ Buildings: Graphics (https://www.figma.com/proto/8ecwGOzYos13D0JTwV5kO9/Factorio
   - Acroshpere converter or blunagium extractor (Use oxidizer building from hurricane406)
   - core miner (Use core extractor building from hurricane406) (for version 0.2.0)
     - Core mining should have different ressources to mine from. Every resource returns a combination of ores / metals.
-  - Lumber mill (Use Lumber mill from hurricane406)
+  + Lumber mill (Use Lumber mill from hurricane406)
   - Low gravity assembling machine (Use Low gravity assembling machine from hurricane406)
   - Electrolysis plant for factorio space age (Use Arc furnace from hurricane406) - I think the building uses heatpipes
 
 Items:
-  - Seal
-  - Bearing
-  - Seeds (for trees)
-  - Antimatter trains
-  - Antimatter cube
-  - Quantized matter
-  - Polarized matter
-  - Coolant with different temperatures (coolant does not have a real purpose right now, see Idea coolant)
-  - Vacuum chamber
-  - x-ray tube (sterilization or something)
   - Elements:
     - K potassium
       - Chemical Reactions: Potassium compounds act as catalysts in various chemical reactions. For example, potassium permanganate (KMnO₄) is used as an oxidizing agent in chemical synthesis3.
@@ -113,6 +103,25 @@ Items:
       - Thermocouples: Rhenium is used in the production of thermocouples, which are devices that measure temperature in high-temperature environments. Rhenium-based thermocouples are essential in industries such as nuclear, chemical, and automotive1.
       - Electrical Contacts: Due to its excellent electrical conductivity and resistance to wear, rhenium is used in electrical contacts and filaments1.
 
+    - Ru Ruthenium
+      - Catalysis: Ruthenium is widely used as a catalyst in chemical reactions, particularly in the hydrogenation of organic compounds and the synthesis of ammonia12. Its catalytic properties make it valuable in the chemical industry.
+      - Electronics: It is used in the manufacture of wear-resistant electrical contacts and thick-film resistors34. Ruthenium’s excellent electrical conductivity and durability enhance the performance and longevity of electronic components.
+      - Data Storage: In the electronics industry, ruthenium is utilized in the production of hard drives and semiconductor chips2. It helps improve the efficiency and reliability of these devices.
+      - Alloys: Ruthenium is often alloyed with platinum and palladium to enhance their hardness and resistance to corrosion3. These alloys are used in various high-stress applications, including in the aerospace and automotive industries.
+      - Photomasks: A newer application of ruthenium is as a capping layer for extreme ultraviolet (EUV) photomasks, which are essential in advanced semiconductor manufacturing3.
+    - Os Osmium
+      - Alloys: Osmium is used to produce very hard alloys, often combined with platinum or iridium. These alloys are utilized in applications requiring extreme durability and hardness, such as fountain pen tips, instrument pivots, and needles12.
+      - Electrical Contacts: Due to its excellent conductivity and resistance to wear, osmium is used in electrical contacts and filaments3.
+      - Catalysis: Osmium compounds, particularly osmium tetroxide, are used as catalysts in chemical reactions, including organic synthesis and the production of certain pharmaceuticals12.
+      - Industrial-Grade Sealants and Lubricants: Osmium is also used in the creation of industrial-grade sealants and lubricants, enhancing their performance under high-stress conditions3.
+    
+    - Rh Rhodium
+      - Catalytic Converters: Rhodium is primarily used in catalytic converters for automobiles. It helps reduce harmful emissions by converting toxic gases like nitrogen oxides into less harmful substances12.
+      - Plating: Rhodium is used for electroplating jewelry and other decorative items. Its high reflectivity and resistance to tarnish enhance the appearance and durability of these items3.
+      - Electronics: Rhodium is used in the electronics industry for its excellent electrical conductivity and resistance to corrosion. It is often used in electrical contacts and connectors12.
+      - Glass Manufacturing: Rhodium is used in the production of glass, particularly in the manufacture of fiberglass and optical glass. It helps improve the quality and durability of the glass1.
+      - Chemical Industry: Rhodium is used as a catalyst in various chemical reactions, including the production of acetic acid and hydrogenation processes3.
+
     - Ac Actinium
       - Neutron Source: Actinium-227 is used as a neutron source in scientific research and industrial applications. It helps in neutron radiography and other neutron-based imaging techniques2.
 
@@ -162,6 +171,7 @@ Items:
     - Zircaloy: 
       - Zirconium (98%), Tin (1.5%) 
       - Nuclear reactors.
+  
   - Exotic alloys:
     - Alnico: Aluminum (8%), Nickel (14%), Cobalt (24%), Iron (balance) - Magnets, sensors.
     - Samarium-Cobalt (SmCo): Samarium (35%), Cobalt (65%) - Permanent magnets, aerospace.
@@ -214,6 +224,17 @@ Items:
     - EuNi4.5Co0.5: Europium (20%), Nickel (75%), Cobalt (5%) - Hydrogen storage.
     - GdNi4.5Co0.5: Gadolinium (20%), Nickel (75%), Cobalt (5%) - Hydrogen storage.
 
+  - Seal
+  - Bearing
+  - Seeds (for trees)
+  - Antimatter trains
+  - Antimatter cube
+  - Quantized matter
+  - Polarized matter
+  - Coolant with different temperatures (coolant does not have a real purpose right now, see Idea coolant)
+  - Vacuum chamber
+  - x-ray tube (sterilization or something)
+  - Crucible
   - For semiconductors:
     - Tantalum nitride
     - Silicon nitride
@@ -226,6 +247,7 @@ Items:
 Recipes:
   + Disable productivity for acro-conversion recipes
   + Add multiple recipes for blank tech cards
+  + break down space research data into circuits / minerals
   - Add recipes for fluids via acromatter
   - Dirty water can be evaporated
   - Add more complex recipe change for semiconductors
@@ -243,22 +265,28 @@ Resources:
 
 Technologies:
   - Add Infinite technologies:
-    -
+    - tool belt
+    - inserter speed
+    - inserter capacity
+    - braking force
+    - train speed
+    - research speed
+    - pole range
+    - pole coverage
 
 Ideas:
-  - Change fluid inputs and outputs for kr-matter-plant and kr-matter-assembler
-  - Configure stack sizes in settings
+  + Change fluid inputs and outputs for kr-matter-plant and kr-matter-assembler
+  + Configure stack sizes in settings
   - Burn useless things for energy
   - Add multiple liquit inputs / outputs for assembling machines. Coolant might be here interesting to use.
-  - Insertirters can be affected by modules
+  - Inserters can be affected by modules
   - Krastorio has 3 icons for blank tech cards, edit its colors and use it for different things.
-  - Create multiple resurce patches for grobgnum (for version 0.2.0)
-  - Only higher tier miners can mine high tier resources (for version 0.2.0)
-  - Add scripting to acrospheres (for version 0.3.0 or higher)
+  - Create multiple resurce patches for grobgnum (for version 0.4.0 or higher)
+  - Only higher tier miners can mine high tier resources (for version 0.3.0 or higher)
+  - Add scripting to acrospheres (for version 0.4.0 or higher)
 
 Other:
   + Fix complex recipes not showing up in some machines
-  - break down space research data into circuits / minerals
   - Support text plates mod
   - Fix energy values of fluids (see heat_capacity)
   + Fix barrel tints
@@ -266,17 +294,17 @@ Other:
   + Krastorio: add radioactivity
   - Asteroid mining
   - Add glow to tech cards
-  - Update icons with isometric perspective:
-    - Alloys
-    - Plates
-    - Ingots
-    - Mirror
-    - Infra red filter
+  + Update icons with isometric perspective:
+    + Alloys
+    + Plates
+    + Ingots
+    + Mirror
+    + Infra red filter
   - Add glow to alien items
   + Fix stack sizes (for version 0.2.0)
   + Fix resource spawning (for version 0.2.0)
   + Add greenhouse on spawning with some pumps and pipes (for version 0.2.0)
-  - More realistic weapons setting changes also the actual weapons that exist
+  + More realistic weapons setting changes also the actual weapons that exist. Support this krastorio setting properly.
 
 Low prio:
   - Reorder in lua code recipes, items for simpler searching
