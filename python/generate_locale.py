@@ -29,7 +29,6 @@ def generate_locale_value(key: str, object_type: str=None) -> Tuple[str, str]:
     """
     if object_type in ["infinite-technology"]:
         key = "-".join(key.split("-")[:-1])
-        print(key)
 
     if key.startswith("sp-"):
         value = key[3:].replace("-", " ")
