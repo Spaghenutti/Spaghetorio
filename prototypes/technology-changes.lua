@@ -1213,6 +1213,7 @@ data.raw.technology["mining-productivity-3"].unit.ingredients = {
 data.raw.technology["mining-productivity-4"].prerequisites = {
   "mining-productivity-3"
 }
+data.raw.technology["mining-productivity-4"].unit.count_formula = "L*500"
 data.raw.technology["mining-productivity-4"].unit.ingredients = {
   {"basic-tech-card", 1},
   {"automation-science-pack", 1},
@@ -1448,6 +1449,7 @@ data.raw.technology["worker-robots-speed-1"].prerequisites = {
   "logistic-robotics",
   "construction-robotics"
 }
+data.raw.technology["worker-robots-speed-1"].unit.count = 200
 data.raw.technology["worker-robots-speed-1"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},
   {"sp-logistic-science-pack-2", 1},
@@ -1462,6 +1464,7 @@ data.raw.technology["worker-robots-speed-2"].prerequisites = {
   "worker-robots-speed-1",
   "utility-science-pack"
 }
+data.raw.technology["worker-robots-speed-2"].unit.count = 400
 data.raw.technology["worker-robots-speed-2"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},
   {"sp-logistic-science-pack-2", 1},
@@ -1480,6 +1483,7 @@ data.raw.technology["worker-robots-speed-3"].prerequisites = {
   "sp-production-science-pack-3",
   "utility-science-pack"
 }
+data.raw.technology["worker-robots-speed-3"].unit.count = 500
 data.raw.technology["worker-robots-speed-3"].unit.ingredients = {
   {"sp-automation-science-pack-3", 1},
   {"sp-logistic-science-pack-3", 1},
@@ -1491,6 +1495,7 @@ data.raw.technology["worker-robots-speed-3"].unit.ingredients = {
   {"sp-computer-science-pack-2", 1}
 }
 
+data.raw.technology["worker-robots-speed-4"].unit.count = 750
 data.raw.technology["worker-robots-speed-4"].unit.ingredients = {
   {"sp-automation-science-pack-3", 1},
   {"sp-logistic-science-pack-3", 1},
@@ -1507,6 +1512,7 @@ data.raw.technology["worker-robots-speed-5"].prerequisites = {
   "sp-chemical-science-pack-3",
   "sp-computer-science-pack-3"
 }
+data.raw.technology["worker-robots-speed-5"].unit.count = 1000
 data.raw.technology["worker-robots-speed-5"].unit.ingredients = {
   {"sp-automation-science-pack-3", 1},
   {"sp-logistic-science-pack-3", 1},
@@ -1518,6 +1524,7 @@ data.raw.technology["worker-robots-speed-5"].unit.ingredients = {
   {"sp-computer-science-pack-3", 1}
 }
 
+data.raw.technology["worker-robots-speed-6"].unit.count_formula = "1500+(L-6)*500"
 data.raw.technology["worker-robots-speed-6"].unit.ingredients = {
   {"sp-automation-science-pack-3", 1},
   {"sp-logistic-science-pack-3", 1},

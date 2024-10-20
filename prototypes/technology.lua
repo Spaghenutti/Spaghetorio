@@ -6506,4 +6506,397 @@ data:extend({
     },
     order = "a-h-a"
   },
+  ------------------------------------------------------------------------------
+  --- Infinite technologies
+  ------------------------------------------------------------------------------
+  {
+    type = "technology",
+    name = "sp-worker-robots-storage-4",  -- #ForRegEx# - technology
+    icon_size = 256, icon_mipmaps = 4,
+    icons =
+    {
+      {
+        icon = "__base__/graphics/technology/worker-robots-storage.png",
+        icon_size = 256, icon_mipmaps = 4
+      },
+      {
+        icon = "__core__/graphics/icons/technology/constants/constant-capacity.png",
+        icon_size = 128,
+        icon_mipmaps = 3,
+        shift = {100, 100}
+      }
+    },
+    effects =
+    {
+      {
+        type = "worker-robot-storage",
+        modifier = 1
+      }
+    },
+    prerequisites = {
+      "worker-robots-storage-3"
+    },
+    unit =
+    {
+      count_formula = "((L-3)^2)*1000",
+      ingredients =
+      {
+        {"sp-automation-science-pack-3", 1},
+        {"sp-logistic-science-pack-3", 1},
+        {"sp-chemical-science-pack-3", 1},
+        {"sp-electronic-science-pack-3", 1},
+        {"sp-geological-science-pack-3", 1},
+        {"sp-material-science-pack-3", 1},
+        {"sp-computer-science-pack-3", 1},
+        {"sp-production-science-pack-3", 1},
+        {"sp-nuclear-science-pack-3", 1},
+        {"sp-astronomical-science-pack-3", 1},
+        {"sp-utility-science-pack-3", 1},
+        {"space-science-pack", 1},
+        -- Krastorio: {"matter-tech-card", 1},
+        -- Krastorio: {"advanced-tech-card", 1},
+        -- Krastorio: {"singularity-tech-card", 1}
+      },
+      time = 60
+    },
+    max_level = 5,
+    upgrade = true,
+    order = "c-k-g-c"
+  },
+  {
+    type = "technology",
+    name = "sp-worker-robots-storage-6",  -- #ForRegEx# - technology
+    icon_size = 256, icon_mipmaps = 4,
+    icons =
+    {
+      {
+        icon = "__base__/graphics/technology/worker-robots-storage.png",
+        icon_size = 256, icon_mipmaps = 4
+      },
+      {
+        icon = "__core__/graphics/icons/technology/constants/constant-capacity.png",
+        icon_size = 128,
+        icon_mipmaps = 3,
+        shift = {100, 100}
+      }
+    },
+    effects =
+    {
+      {
+        type = "worker-robot-storage",
+        modifier = 1
+      }
+    },
+    prerequisites = {
+      "sp-worker-robots-storage-4"
+    },
+    unit =
+    {
+      count_formula = "((L-4)^2)*1000",
+      ingredients =
+      {
+        {"sp-automation-science-pack-3", 1},
+        {"sp-logistic-science-pack-3", 1},
+        {"sp-chemical-science-pack-3", 1},
+        {"sp-electronic-science-pack-3", 1},
+        {"sp-geological-science-pack-3", 1},
+        {"sp-material-science-pack-3", 1},
+        {"sp-computer-science-pack-3", 1},
+        {"sp-production-science-pack-3", 1},
+        {"sp-nuclear-science-pack-3", 1},
+        {"sp-astronomical-science-pack-3", 1},
+        {"sp-utility-science-pack-3", 1},
+        {"space-science-pack", 1},
+        {"sp-uniformity-science-pack", 1},
+        -- Krastorio: {"matter-tech-card", 1},
+        -- Krastorio: {"advanced-tech-card", 1},
+        -- Krastorio: {"singularity-tech-card", 1}
+      },
+      time = 60
+    },
+    max_level = "infinite",
+    upgrade = true,
+    order = "c-k-g-c"
+  },
+  {
+    type = "technology",
+    name = "sp-toolbelt-7",  -- #ForRegEx# - technology
+    icon_size = 256, icon_mipmaps = 4,
+    icons =
+    {
+      {
+        icon = "__base__/graphics/technology/toolbelt.png",
+        icon_size = 256, icon_mipmaps = 4
+      },
+      {
+        icon = "__core__/graphics/icons/technology/constants/constant-capacity.png",
+        icon_size = 128,
+        icon_mipmaps = 3,
+        shift = {100, 100}
+      }
+    },
+    effects =
+    {
+      {
+        modifier = 20,
+        type = "character-inventory-slots-bonus"
+      }
+    },
+    prerequisites = {
+      "toolbelt-6"
+    },
+    unit =
+    {
+      count_formula = "((L-6)^2)*1000+1000",
+      ingredients =
+      {
+        {"sp-automation-science-pack-3", 1},
+        {"sp-logistic-science-pack-3", 1},
+        {"sp-chemical-science-pack-3", 1},
+        {"sp-electronic-science-pack-3", 1},
+        {"sp-geological-science-pack-3", 1},
+        {"sp-material-science-pack-3", 1},
+        {"sp-computer-science-pack-3", 1},
+        {"sp-production-science-pack-3", 1},
+        {"sp-nuclear-science-pack-3", 1},
+        {"sp-astronomical-science-pack-3", 1},
+        {"sp-utility-science-pack-3", 1},
+        {"space-science-pack", 1},
+        {"sp-uniformity-science-pack", 1},
+        -- Krastorio: {"matter-tech-card", 1},
+        -- Krastorio: {"advanced-tech-card", 1},
+        -- Krastorio: {"singularity-tech-card", 1}
+      },
+      time = 60
+    },
+    max_level = "infinite",
+    upgrade = true,
+    order = "c-k-g-c"
+  },
+  {
+    type = "technology",
+    name = "sp-inserter-capacity-bonus-8",  -- #ForRegEx# - technology
+    icon_size = 256, icon_mipmaps = 4,
+    icons =
+    {
+      {
+        icon = "__base__/graphics/technology/inserter-capacity.png",
+        icon_size = 256, icon_mipmaps = 4
+      },
+      {
+        icon = "__core__/graphics/icons/technology/constants/constant-capacity.png",
+        icon_size = 128,
+        icon_mipmaps = 3,
+        shift = {100, 100}
+      }
+    },
+    effects =
+    {
+      {
+        type = "inserter-stack-size-bonus",
+        modifier = 2
+      },
+      {
+        type = "stack-inserter-capacity-bonus",
+        modifier = 2
+      }
+    },
+    prerequisites = {
+      "inserter-capacity-bonus-7"
+    },
+    unit =
+    {
+      count_formula = "((L-7)^2)*5000",
+      ingredients =
+      {
+        {"sp-automation-science-pack-3", 1},
+        {"sp-logistic-science-pack-3", 1},
+        {"sp-chemical-science-pack-3", 1},
+        {"sp-electronic-science-pack-3", 1},
+        {"sp-geological-science-pack-3", 1},
+        {"sp-material-science-pack-3", 1},
+        {"sp-computer-science-pack-3", 1},
+        {"sp-production-science-pack-3", 1},
+        {"sp-nuclear-science-pack-3", 1},
+        {"sp-astronomical-science-pack-3", 1},
+        {"sp-utility-science-pack-3", 1},
+        {"space-science-pack", 1},
+        -- Krastorio: {"matter-tech-card", 1},
+        -- Krastorio: {"advanced-tech-card", 1},
+      },
+      time = 60
+    },
+    max_level = 10,
+    upgrade = true,
+    order = "c-k-g-c"
+  },
+  {
+    type = "technology",
+    name = "sp-inserter-capacity-bonus-11",  -- #ForRegEx# - technology
+    icon_size = 256, icon_mipmaps = 4,
+    icons =
+    {
+      {
+        icon = "__base__/graphics/technology/inserter-capacity.png",
+        icon_size = 256, icon_mipmaps = 4
+      },
+      {
+        icon = "__core__/graphics/icons/technology/constants/constant-capacity.png",
+        icon_size = 128,
+        icon_mipmaps = 3,
+        shift = {100, 100}
+      }
+    },
+    effects =
+    {
+      {
+        type = "inserter-stack-size-bonus",
+        modifier = 2
+      },
+      {
+        type = "stack-inserter-capacity-bonus",
+        modifier = 2
+      }
+    },
+    prerequisites = {
+      "sp-inserter-capacity-bonus-8"
+    },
+    unit =
+    {
+      count_formula = "((L-7)^2)*5000",
+      ingredients =
+      {
+        {"sp-automation-science-pack-3", 1},
+        {"sp-logistic-science-pack-3", 1},
+        {"sp-chemical-science-pack-3", 1},
+        {"sp-electronic-science-pack-3", 1},
+        {"sp-geological-science-pack-3", 1},
+        {"sp-material-science-pack-3", 1},
+        {"sp-computer-science-pack-3", 1},
+        {"sp-production-science-pack-3", 1},
+        {"sp-nuclear-science-pack-3", 1},
+        {"sp-astronomical-science-pack-3", 1},
+        {"sp-utility-science-pack-3", 1},
+        {"space-science-pack", 1},
+        {"sp-uniformity-science-pack", 1},
+        -- Krastorio: {"matter-tech-card", 1},
+        -- Krastorio: {"advanced-tech-card", 1},
+        -- Krastorio: {"singularity-tech-card", 1}
+      },
+      time = 60
+    },
+    max_level = "infinite",
+    upgrade = true,
+    order = "c-k-g-c"
+  },
+  {
+    type = "technology",
+    name = "sp-braking-force-8",  -- #ForRegEx# - technology
+    icon_size = 256, icon_mipmaps = 4,
+    icons =
+    {
+      {
+        icon = "__base__/graphics/technology/braking-force.png",
+        icon_size = 256, icon_mipmaps = 4
+      },
+      {
+        icon = "__core__/graphics/icons/technology/constants/constant-speed.png",
+        icon_size = 128,
+        icon_mipmaps = 3,
+        shift = {100, 100}
+      }
+    },
+    effects =
+    {
+      {
+        type = "train-braking-force-bonus",
+        modifier = 0.15
+      }
+    },
+    prerequisites = {
+      "braking-force-7"
+    },
+    unit =
+    {
+      count_formula = "((L-7)^2)*1000",
+      ingredients =
+      {
+        {"sp-automation-science-pack-3", 1},
+        {"sp-logistic-science-pack-3", 1},
+        {"sp-chemical-science-pack-3", 1},
+        {"sp-electronic-science-pack-3", 1},
+        {"sp-geological-science-pack-3", 1},
+        {"sp-material-science-pack-3", 1},
+        {"sp-computer-science-pack-3", 1},
+        {"sp-production-science-pack-3", 1},
+        {"sp-nuclear-science-pack-3", 1},
+        {"sp-astronomical-science-pack-3", 1},
+        {"sp-utility-science-pack-3", 1},
+        {"space-science-pack", 1},
+        {"sp-uniformity-science-pack", 1},
+        -- Krastorio: {"matter-tech-card", 1},
+        -- Krastorio: {"advanced-tech-card", 1},
+        -- Krastorio: {"singularity-tech-card", 1}
+      },
+      time = 60
+    },
+    max_level = "infinite",
+    upgrade = true,
+    order = "b-f-g"
+  },
+  {
+    type = "technology",
+    name = "sp-research-speed-7",  -- #ForRegEx# - technology
+    icon_size = 256, icon_mipmaps = 4,
+    icons =
+    {
+      {
+        icon = "__base__/graphics/technology/research-speed.png",
+        icon_size = 256, icon_mipmaps = 4
+      },
+      {
+        icon = "__core__/graphics/icons/technology/constants/constant-speed.png",
+        icon_size = 128,
+        icon_mipmaps = 3,
+        shift = {100, 100}
+      }
+    },
+    effects =
+    {
+      {
+        type = "laboratory-speed",
+        modifier = 0.6
+      }
+    },
+    prerequisites = {
+      "research-speed-6"
+    },
+    unit =
+    {
+      count_formula = "(L-6)*1000",
+      ingredients =
+      {
+        {"sp-automation-science-pack-3", 1},
+        {"sp-logistic-science-pack-3", 1},
+        {"sp-chemical-science-pack-3", 1},
+        {"sp-electronic-science-pack-3", 1},
+        {"sp-geological-science-pack-3", 1},
+        {"sp-material-science-pack-3", 1},
+        {"sp-computer-science-pack-3", 1},
+        {"sp-production-science-pack-3", 1},
+        {"sp-nuclear-science-pack-3", 1},
+        {"sp-astronomical-science-pack-3", 1},
+        {"sp-utility-science-pack-3", 1},
+        {"space-science-pack", 1},
+        {"sp-uniformity-science-pack", 1},
+        -- Krastorio: {"matter-tech-card", 1},
+        -- Krastorio: {"advanced-tech-card", 1},
+        -- Krastorio: {"singularity-tech-card", 1}
+      },
+      time = 60
+    },
+    max_level = "infinite",
+    upgrade = true,
+    order = "c-m-d"
+  },
 })
