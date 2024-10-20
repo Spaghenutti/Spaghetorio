@@ -23,10 +23,14 @@ def parse_lua(lua_path: str) -> List[Tuple[str, str]]:
     return matches
 
 
-def generate_locale_value(key: str) -> Tuple[str, str]:
+def generate_locale_value(key: str, object_type: str=None) -> Tuple[str, str]:
     """
     Generates the locale value given a key and returns both as tuple
     """
+    if object_type in ["infinite-technology"]:
+        key = "-".join(key.split("-")[:-1])
+        print(key)
+
     if key.startswith("sp-"):
         value = key[3:].replace("-", " ")
         value = value[0].capitalize() + value[1:]
@@ -56,7 +60,7 @@ def get_sections(object_type: str) -> List[str]:
             return ["item-name"]
         case "recipe":
             return ["recipe-name"]
-        case "technology": 
+        case "technology" | "infinite-technology": 
             return ["technology-name"]
         case _:
             raise KeyError(f"Lua type {object_type} not matching known locale section.")
@@ -77,7 +81,7 @@ def extend_locale(matches: List[Tuple[str, str]],
         try:
             for pair_index in range(len(ALL_REGEX)):
                 if match[pair_index*2] != "":
-                    key, value = generate_locale_value(match[pair_index*2])
+                    key, value = generate_locale_value(match[pair_index*2], match[pair_index*2 + 1])
                     # Add the keys and values
                     for section in get_sections(match[pair_index*2 + 1]):
                         if not config.has_option(section, key):

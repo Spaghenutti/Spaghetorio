@@ -6507,11 +6507,11 @@ data:extend({
     order = "a-h-a"
   },
   ------------------------------------------------------------------------------
-  --- Infinite technologies
+  --- MARK: Infinite technologies
   ------------------------------------------------------------------------------
   {
     type = "technology",
-    name = "sp-worker-robots-storage-4",  -- #ForRegEx# - technology
+    name = "sp-worker-robots-storage-4",  -- #ForRegEx# - infinite-technology
     icon_size = 256, icon_mipmaps = 4,
     icons =
     {
@@ -6565,7 +6565,7 @@ data:extend({
   },
   {
     type = "technology",
-    name = "sp-worker-robots-storage-6",  -- #ForRegEx# - technology
+    name = "sp-worker-robots-storage-6",  -- #ForRegEx# - infinite-technology
     icon_size = 256, icon_mipmaps = 4,
     icons =
     {
@@ -6620,7 +6620,7 @@ data:extend({
   },
   {
     type = "technology",
-    name = "sp-toolbelt-7",  -- #ForRegEx# - technology
+    name = "sp-toolbelt-7",  -- #ForRegEx# - infinite-technology
     icon_size = 256, icon_mipmaps = 4,
     icons =
     {
@@ -6675,7 +6675,7 @@ data:extend({
   },
   {
     type = "technology",
-    name = "sp-inserter-capacity-bonus-8",  -- #ForRegEx# - technology
+    name = "sp-inserter-capacity-bonus-8",  -- #ForRegEx# - infinite-technology
     icon_size = 256, icon_mipmaps = 4,
     icons =
     {
@@ -6732,7 +6732,7 @@ data:extend({
   },
   {
     type = "technology",
-    name = "sp-inserter-capacity-bonus-11",  -- #ForRegEx# - technology
+    name = "sp-inserter-capacity-bonus-11",  -- #ForRegEx# - infinite-technology
     icon_size = 256, icon_mipmaps = 4,
     icons =
     {
@@ -6791,7 +6791,7 @@ data:extend({
   },
   {
     type = "technology",
-    name = "sp-braking-force-8",  -- #ForRegEx# - technology
+    name = "sp-braking-force-8",  -- #ForRegEx# - infinite-technology
     icon_size = 256, icon_mipmaps = 4,
     icons =
     {
@@ -6846,7 +6846,7 @@ data:extend({
   },
   {
     type = "technology",
-    name = "sp-research-speed-7",  -- #ForRegEx# - technology
+    name = "sp-research-speed-7",  -- #ForRegEx# - infinite-technology
     icon_size = 256, icon_mipmaps = 4,
     icons =
     {
