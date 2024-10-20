@@ -265,12 +265,12 @@ Resources:
 
 Technologies:
   - Add Infinite technologies:
-    - tool belt
+    + tool belt
     - inserter speed
-    - inserter capacity
-    - braking force
+    + inserter capacity
+    + braking force
     - train speed
-    - research speed
+    + research speed
     - pole range
     - pole coverage
 
