@@ -1,16 +1,13 @@
 {
     "name": "Spaghetorio",
-    "version": "0.2.5",
+    "version": "0.3.0",
     "title": "Spaghetorio",
-    "description": "Adds lots of new ores, items and recipes. Requires Krastorio and AAI Industries.",
+    "description": "Adds lots of new ores, items and recipes",
     "author": "Spaghetti",
     "contact": "https://github.com/Spaghenutti/Spaghetorio/issues",
-    "factorio_version": "1.1",
-    "dependencies": ["aai-industry >= 0.5.22",
-                     "Krastorio2 >= 1.3.23",
-                     "base >= 1.1.0",
-                     "? jetpack >= 0.3.14",
-                     "? LogisticTrainNetwork >= 1.18.6",
-                     "(?) alien-biomes >= 0.6.8",
+    "factorio_version": "2.0",
+    "dependencies": ["base >= 2.0.28",
+                     "space-age >= 2.0.28",
+                     "EverythingOnNauvis >= 0.1.0",
                      "! Custom-Production-UI-Fixed >= 0.5.22"]
 }
