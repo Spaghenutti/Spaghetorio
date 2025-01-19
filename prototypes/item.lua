@@ -182,6 +182,22 @@ data:extend({
   },
   {
     type = "item",
+    name = "sp-raw-rare-metals",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/raw-rare-metals/raw-rare-metals.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    pictures = {
+      {size = 64, filename = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/raw-rare-metals/raw-rare-metals.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/raw-rare-metals/raw-rare-metals-1.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/raw-rare-metals/raw-rare-metals-2.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/raw-rare-metals/raw-rare-metals-3.png", scale = 0.5, mipmap_count = 4}
+    },
+    subgroup = "raw-resource",
+    order = "[raw-rare-metals]",
+    stack_size = 200
+  },
+  {
+    type = "item",
     name = "sp-rukite",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/rukite.png",
     icon_size = 64,
@@ -219,6 +235,98 @@ data:extend({
     subgroup = "raw-resource",
     order = "z-alien[grobgnum]",
     stack_size = 100
+  },
+  {
+    type = "item",
+    name = "raw-imersite",
+    icon = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/raw-imersite/raw-imersite.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    pictures = {
+      {
+        layers = {
+          {
+            filename = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/raw-imersite/raw-imersite.png",
+            size = 64,
+            scale = 0.5,
+            mipmap_count = 4,
+          },
+          {
+            filename = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/raw-imersite/raw-imersite-light.png",
+            size = 64,
+            scale = 0.5,
+            mipmap_count = 4,
+            draw_as_light = true,
+            flags = { "light" },
+            blend_mode = "additive",
+            tint = { r = 0.3, g = 0.3, b = 0.3, a = 0.3 },
+          },
+        },
+      },
+      {
+        layers = {
+          {
+            filename = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/raw-imersite/raw-imersite-1.png",
+            size = 64,
+            scale = 0.5,
+            mipmap_count = 4,
+          },
+          {
+            filename = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/raw-imersite/raw-imersite-1-light.png",
+            size = 64,
+            scale = 0.5,
+            mipmap_count = 4,
+            draw_as_light = true,
+            flags = { "light" },
+            blend_mode = "additive",
+            tint = { r = 0.3, g = 0.3, b = 0.3, a = 0.3 },
+          },
+        },
+      },
+      {
+        layers = {
+          {
+            filename = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/raw-imersite/raw-imersite-2.png",
+            size = 64,
+            scale = 0.5,
+            mipmap_count = 4,
+          },
+          {
+            filename = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/raw-imersite/raw-imersite-2-light.png",
+            size = 64,
+            scale = 0.5,
+            mipmap_count = 4,
+            draw_as_light = true,
+            flags = { "light" },
+            blend_mode = "additive",
+            tint = { r = 0.3, g = 0.3, b = 0.3, a = 0.3 },
+          },
+        },
+      },
+      {
+        layers = {
+          {
+            filename = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/raw-imersite/raw-imersite-3.png",
+            size = 64,
+            scale = 0.5,
+            mipmap_count = 4,
+          },
+          {
+            filename = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/raw-imersite/raw-imersite-3-light.png",
+            size = 64,
+            scale = 0.5,
+            mipmap_count = 4,
+            draw_as_light = true,
+            flags = { "light" },
+            blend_mode = "additive",
+            tint = { r = 0.3, g = 0.3, b = 0.3, a = 0.3 },
+          },
+        },
+      },
+    },
+    subgroup = "raw-resource",
+    order = "z-alien[raw-imersite]",
+    stack_size = 100,
   },
   ------------------------------------------------------------------------------
   -- MARK: crushed-resource
@@ -402,6 +510,51 @@ data:extend({
   ------------------------------------------------------------------------------
   -- MARK: enriched-resource
   ------------------------------------------------------------------------------
+  {
+    type = "item",
+    name = "sp-enriched-iron",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/enriched-iron/enriched-iron.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    pictures = {
+      {size = 64, filename = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/enriched-iron/enriched-iron.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/enriched-iron/enriched-iron-1.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/enriched-iron/enriched-iron-2.png", scale = 0.5, mipmap_count = 4},
+    },
+    subgroup = "enriched-resource",
+    order = "[enriched-iron]",
+    stack_size = 200
+  },
+  {
+    type = "item",
+    name = "sp-enriched-copper",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/enriched-copper/enriched-copper.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    pictures = {
+      {size = 64, filename = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/enriched-copper/enriched-copper.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/enriched-copper/enriched-copper-1.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/enriched-copper/enriched-copper-2.png", scale = 0.5, mipmap_count = 4},
+    },
+    subgroup = "enriched-resource",
+    order = "[enriched-copper]",
+    stack_size = 200
+  },
+  {
+    type = "item",
+    name = "sp-enriched-rare-metals",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/enriched-rare-metals/enriched-rare-metals.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    pictures = {
+      {size = 64, filename = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/enriched-rare-metals/enriched-rare-metals.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/enriched-rare-metals/enriched-rare-metals-1.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/enriched-rare-metals/enriched-rare-metals-2.png", scale = 0.5, mipmap_count = 4},
+    },
+    subgroup = "enriched-resource",
+    order = "[enriched-rare-metals]",
+    stack_size = 200
+  },
   {
     type = "item",
     name = "sp-enriched-aluminum",  -- #ForRegEx# - item
@@ -888,6 +1041,20 @@ data:extend({
   },
   {
     type = "item",
+    name = "sp-lithium-chloride",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/lithium-chloride/lithium-chloride.png",
+    icon_size = 64,
+    scale = 0.5,
+    pictures = {
+      {size = 64, filename = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/lithium-chloride/lithium-chloride.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/lithium-chloride/lithium-chloride-1.png", scale = 0.5, mipmap_count = 4}
+    },
+    subgroup = "alien-compound",
+    order = "a-plate-[blunagium-plate]",
+    stack_size = 100
+  },
+  {
+    type = "item",
     name = "sp-plutonium-239",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/plutonium-239-1.png",
     icon_size = 64,
@@ -999,6 +1166,78 @@ data:extend({
     subgroup = "processed-resource",
     order = "silicon-[silicon]",
     stack_size = 100
+  },
+  {
+    type = "item",
+    name = "sp-imersite-powder",
+    icon = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/imersite-powder/imersite-powder.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    pictures = {
+      {
+        layers = {
+          {
+            filename = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/imersite-powder/imersite-powder.png",
+            size = 64,
+            scale = 0.5,
+            mipmap_count = 4,
+          },
+          {
+            filename = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/imersite-powder/imersite-powder-light.png",
+            size = 64,
+            scale = 0.5,
+            mipmap_count = 4,
+            draw_as_light = true,
+            flags = { "light" },
+            blend_mode = "additive",
+            tint = { r = 0.3, g = 0.3, b = 0.3, a = 0.3 },
+          },
+        },
+      },
+      {
+        layers = {
+          {
+            filename = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/imersite-powder/imersite-powder-1.png",
+            size = 64,
+            scale = 0.5,
+            mipmap_count = 4,
+          },
+          {
+            filename = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/imersite-powder/imersite-powder-1-light.png",
+            size = 64,
+            scale = 0.5,
+            mipmap_count = 4,
+            draw_as_light = true,
+            flags = { "light" },
+            blend_mode = "additive",
+            tint = { r = 0.3, g = 0.3, b = 0.3, a = 0.3 },
+          },
+        },
+      },
+      {
+        layers = {
+          {
+            filename = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/imersite-powder/imersite-powder-2.png",
+            size = 64,
+            scale = 0.5,
+            mipmap_count = 4,
+          },
+          {
+            filename = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/imersite-powder/imersite-powder-2-light.png",
+            size = 64,
+            scale = 0.5,
+            mipmap_count = 4,
+            draw_as_light = true,
+            flags = { "light" },
+            blend_mode = "additive",
+            tint = { r = 0.3, g = 0.3, b = 0.3, a = 0.3 },
+          },
+        },
+      },
+    },
+    subgroup = "processed-resource",
+    order = "z-alien[imersite-powder]",
+    stack_size = 200,
   },
   ------------------------------------------------------------------------------
   -- MARK: raw-material
@@ -1632,6 +1871,118 @@ data:extend({
     subgroup = "alien-material",
     order = "grobgnum-[grobgnum-bar]",
     stack_size = 100
+  },
+  {
+    type = "item",
+    name = "sp-imersite-crystal",
+    icon = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/imersite-crystal/imersite-crystal.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    pictures = {
+      {
+        layers = {
+          {
+            filename = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/imersite-crystal/imersite-crystal.png",
+            size = 64,
+            scale = 0.5,
+            mipmap_count = 4,
+          },
+          {
+            filename = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/imersite-crystal/imersite-crystal-light.png",
+            size = 64,
+            scale = 0.5,
+            mipmap_count = 4,
+            draw_as_light = true,
+            flags = { "light" },
+            blend_mode = "additive",
+            tint = { r = 0.3, g = 0.3, b = 0.3, a = 0.3 },
+          },
+        },
+      },
+      {
+        layers = {
+          {
+            filename = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/imersite-crystal/imersite-crystal-1.png",
+            size = 64,
+            scale = 0.5,
+            mipmap_count = 4,
+          },
+          {
+            filename = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/imersite-crystal/imersite-crystal-1-light.png",
+            size = 64,
+            scale = 0.5,
+            mipmap_count = 4,
+            draw_as_light = true,
+            flags = { "light" },
+            blend_mode = "additive",
+            tint = { r = 0.3, g = 0.3, b = 0.3, a = 0.3 },
+          },
+        },
+      },
+      {
+        layers = {
+          {
+            filename = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/imersite-crystal/imersite-crystal-2.png",
+            size = 64,
+            scale = 0.5,
+            mipmap_count = 4,
+          },
+          {
+            filename = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/imersite-crystal/imersite-crystal-2-light.png",
+            size = 64,
+            scale = 0.5,
+            mipmap_count = 4,
+            draw_as_light = true,
+            flags = { "light" },
+            blend_mode = "additive",
+            tint = { r = 0.3, g = 0.3, b = 0.3, a = 0.3 },
+          },
+        },
+      },
+      {
+        layers = {
+          {
+            filename = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/imersite-crystal/imersite-crystal-3.png",
+            size = 64,
+            scale = 0.5,
+            mipmap_count = 4,
+          },
+          {
+            filename = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/imersite-crystal/imersite-crystal-3-light.png",
+            size = 64,
+            scale = 0.5,
+            mipmap_count = 4,
+            draw_as_light = true,
+            flags = { "light" },
+            blend_mode = "additive",
+            tint = { r = 0.3, g = 0.3, b = 0.3, a = 0.3 },
+          },
+        },
+      },
+      {
+        layers = {
+          {
+            filename = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/imersite-crystal/imersite-crystal-4.png",
+            size = 64,
+            scale = 0.5,
+            mipmap_count = 4,
+          },
+          {
+            filename = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/imersite-crystal/imersite-crystal-4-light.png",
+            size = 64,
+            scale = 0.5,
+            mipmap_count = 4,
+            draw_as_light = true,
+            flags = { "light" },
+            blend_mode = "additive",
+            tint = { r = 0.3, g = 0.3, b = 0.3, a = 0.3 },
+          },
+        },
+      },
+    },
+    subgroup = "alien-material",
+    order = "imersite-[imersite-crystal]",
+    stack_size = 50,
   },
   ------------------------------------------------------------------------------
   -- MARK: alien-compound

@@ -116,11 +116,8 @@ def update_locale() -> None:
     extend_locale(parse_lua(constants.ITEMS_PATH))
     extend_locale(parse_lua(constants.FLUID_PATH))
     extend_locale(parse_lua(constants.RECIPES_PATH))
-    extend_locale(parse_lua(constants.KRASTORIO_NEW_RECIPES_PATH))
-    extend_locale(parse_lua(constants.KRASTORIO_RECIPES_CHANGES_PATH))
     extend_locale(parse_lua(constants.ROCKET_SILO_PATH))
     extend_locale(parse_lua(constants.TECHNOLOGIES_PATH))
-    extend_locale(parse_lua(constants.KRASTORIO_TECHNOLOGIES_PATH)) 
 
 
 if __name__ == "__main__":
