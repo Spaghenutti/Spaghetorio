@@ -1894,7 +1894,7 @@ data:extend({
     icon_size = 64,
     scale = 0.25,
     subgroup = "mechanical-component",
-    order = "gear-[steel-gear-wheel]",
+    order = "gear-s1-[steel-gear-wheel]",
     stack_size = 200
   },
   {
@@ -1904,7 +1904,7 @@ data:extend({
     icon_size = 64,
     scale = 0.25,
     subgroup = "mechanical-component",
-    order = "gear-[stainless-steel-gear-wheel]",
+    order = "gear-s2-[stainless-steel-gear-wheel]",
     stack_size = 200
   },
   {
@@ -2662,16 +2662,6 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-rocket-control-unit",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/icons/rocket-control-unit.png",
-    icon_size = 256,
-    icon_mipmaps = 4,
-    subgroup = "advanced-intermediate-product",
-    order = "[rocket-control-unit]",
-    stack_size = 50
-  },
-  {
-    type = "item",
     name = "sp-nozzle",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/nozzle.png",
     icon_size = 64,
@@ -2777,7 +2767,17 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "advanced-intermediate-product",
-    order = "[control-unit]",
+    order = "control-unit-[control-unit]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "sp-rocket-control-unit",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/rocket-control-unit.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "advanced-intermediate-product",
+    order = "control-unit-[rocket-control-unit]",
     stack_size = 50
   },
   {

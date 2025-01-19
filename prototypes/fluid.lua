@@ -54,6 +54,32 @@ data:extend({
     subgroup = "aqueous-fluid",
     order = "a[fluid]-f[coolant]"
   },
+  {
+    type = "fluid",
+    name = "sp-mineral-water",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    base_color = {r=0.4, g=1.0, b=0.4},
+    flow_color = {r=0.4, g=1.0, b=0.4},
+    icon = "__Spaghetorio__/graphics/krastorio/icons/fluids/mineral-water.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "aqueous-fluid",
+    order = "a[fluid]-h[mineral-water]"
+  },
+  {
+    type = "fluid",
+    name = "sp-heavy-water",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    base_color = {r=0.4, g=1.0, b=0.4},
+    flow_color = {r=0.4, g=1.0, b=0.4},
+    icon = "__Spaghetorio__/graphics/krastorio/icons/fluids/heavy-water.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "aqueous-fluid",
+    order = "a[fluid]-h[heavy-water]"
+  },
   ------------------------------------------------------------------------------
   -- MARK: dirty-fluid
   ------------------------------------------------------------------------------
@@ -518,6 +544,32 @@ data:extend({
     subgroup = "chemical",
     order = "a[fluid]-f[vinyl-chloride]"
   },
+  {
+    type = "fluid",
+    name = "sp-biomethanol",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    base_color = {r=0.15, g=0.0, b=0.0},
+    flow_color = {r=0.15, g=0.0, b=0.0},
+    icon = "__Spaghetorio__/graphics/krastorio/icons/fluids/biomethanol.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "chemical",
+    order = "a[fluid]-f[biomethanol]"
+  },
+  {
+    type = "fluid",
+    name = "sp-hydrogen-chloride",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    base_color = {r=0.15, g=0.0, b=0.0},
+    flow_color = {r=0.15, g=0.0, b=0.0},
+    icon = "__Spaghetorio__/graphics/krastorio/icons/fluids/hydrogen-chloride.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "chemical",
+    order = "a[fluid]-f[hydrogen-chloride]"
+  },
   ------------------------------------------------------------------------------
   -- MARK: alien
   ------------------------------------------------------------------------------
@@ -572,6 +624,19 @@ data:extend({
     icon_mipmaps = 4,
     subgroup = "alien",
     order = "a[fluid]-f[chronomatter]"
+  },
+  {
+    type = "fluid",
+    name = "sp-matter",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    base_color = {r=1.0, g=0.1, b=0.1},
+    flow_color = {r=1.0, g=0.1, b=0.1},
+    icon = "__Spaghetorio__/graphics/krastorio/icons/fluids/matter.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "alien",
+    order = "a[fluid]-y1[antimatter]"
   },
   {
     type = "fluid",
