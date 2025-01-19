@@ -409,7 +409,7 @@ util.recipe.change_recipe_ingredients("productivity-module-3",
   45,
   60)
 
-util.recipe.change_recipe_ingredients("effectivity-module",
+util.recipe.change_recipe_ingredients("efficiency-module",
   {
     {"sp-diode", 3},
     {"sp-coil", 2},
@@ -429,7 +429,7 @@ util.recipe.change_recipe_ingredients("effectivity-module",
   15,
   20)
 
-util.recipe.change_recipe_ingredients("effectivity-module-2",
+util.recipe.change_recipe_ingredients("efficiency-module-2",
   {
     {"advanced-circuit", 6},
     {"sp-capacitor", 3},
@@ -445,7 +445,7 @@ util.recipe.change_recipe_ingredients("effectivity-module-2",
   20,
   30)
 
-util.recipe.change_recipe_ingredients("effectivity-module-3",
+util.recipe.change_recipe_ingredients("efficiency-module-3",
   {
     {"sp-advanced-processing-unit", 6},
     {"sp-circuit-board", 1},

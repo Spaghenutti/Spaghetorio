@@ -62,9 +62,8 @@ data:extend({
   }
 })
 
-table.insert(data.raw.furnace["steel-furnace"].crafting_categories, "crushed-smelting")
-table.insert(data.raw.furnace["electric-furnace"].crafting_categories, "crushed-smelting")
+table.insert(data.raw["furnace"]["steel-furnace"].crafting_categories, "crushed-smelting")
+table.insert(data.raw["furnace"]["electric-furnace"].crafting_categories, "crushed-smelting")
+table.insert(data.raw["furnace"]["electric-furnace"].crafting_categories, "intermediate-smelting")
 
-if not mods["Krastorio2"] then
-  table.insert(data.raw["assembling-machine"]["assembling-machine-3"].crafting_categories, "alien-tech-manufacturing")
-end
+table.insert(data.raw["assembling-machine"]["centrifuge"].crafting_categories, "high-energy-physics")

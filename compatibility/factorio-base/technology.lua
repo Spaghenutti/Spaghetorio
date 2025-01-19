@@ -652,7 +652,7 @@ data.raw.technology["productivity-module-2"].unit.ingredients = {
   {"chemical-science-pack", 1}
 }
 
-data.raw.technology["effectivity-module"].unit.ingredients = {
+data.raw.technology["efficiency-module"].unit.ingredients = {
   {"automation-science-pack", 1},
   {"logistic-science-pack", 1},
   {"sp-material-science-pack-1", 1},
@@ -660,10 +660,10 @@ data.raw.technology["effectivity-module"].unit.ingredients = {
   {"chemical-science-pack", 1}
 }
 
-data.raw.technology["effectivity-module-2"].prerequisites = {
+data.raw.technology["efficiency-module-2"].prerequisites = {
   "sp-integrated-circuit"
 }
-data.raw.technology["effectivity-module-2"].unit.ingredients = {
+data.raw.technology["efficiency-module-2"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},
   {"sp-logistic-science-pack-2", 1},
   {"sp-material-science-pack-1", 1},
@@ -700,10 +700,10 @@ data.raw.technology["productivity-module-3"].unit.ingredients = {
   {"sp-computer-science-pack-2", 1}
 }
 
-data.raw.technology["effectivity-module-3"].prerequisites = {
+data.raw.technology["efficiency-module-3"].prerequisites = {
   "sp-advanced-processing-unit"
 }
-data.raw.technology["effectivity-module-3"].unit.ingredients = {
+data.raw.technology["efficiency-module-3"].unit.ingredients = {
   {"sp-automation-science-pack-3", 1},
   {"sp-logistic-science-pack-3", 1},
   {"sp-material-science-pack-2", 1},

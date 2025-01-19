@@ -800,7 +800,7 @@ data:extend({
       {type = "item", name = "sp-crushed-iron-ore", amount = 4}
     },
     results = {
-      {type = "item", name = "iron-beam", amount = 1}
+      {type = "item", name = "steel-plate", amount = 1}
     },
     order = "beam-[iron-beam]"
   },
@@ -3969,7 +3969,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-effectivity-module-4",  -- #ForRegEx# - recipe
+    name = "sp-efficiency-module-4",  -- #ForRegEx# - recipe
     icon_size = 64,
     mip_maps = 4,
     category = "alien-tech-manufacturing",  -- Krastorio: category = "advanced-smelting"
@@ -3986,7 +3986,7 @@ data:extend({
       {type = "item", name = "sp-micro-frame", amount = 4}
     },
     results = {
-      {type = "item", name = "sp-effectivity-module-4", amount = 1}
+      {type = "item", name = "sp-efficiency-module-4", amount = 1}
     }
   },
   {
@@ -4025,7 +4025,7 @@ data:extend({
     ingredients = {
       {type = "item", name = "motor", amount = 6},
       {type = "item", name = "sp-spring", amount = 8},
-      {type = "item", name = "iron-beam", amount = 10},
+      {type = "item", name = "steel-plate", amount = 10},
       {type = "item", name = "sp-bolts", amount = 16},
       {type = "item", name = "sp-gearbox", amount = 4},
       {type = "item", name = "stone-brick", amount = 12},
@@ -6932,7 +6932,7 @@ data:extend({
     enabled = false,
     energy_required = 24,
     ingredients =
-    -- Base: {"iron-beam", 5}, Krastorio: {"steel-beam", 5}
+    -- Base: {"steel-plate", 5}, Krastorio: {"steel-beam", 5}
     -- Krastorio: {"blank-tech-card", 5}
     {
       {"sp-aluminum-sheet", 5},
@@ -8667,7 +8667,7 @@ if not mods["Krastorio2"] then
   table.insert(data.raw.recipe["sp-vacuum-tube"].ingredients, {type = "fluid", name = "sp-hydrogen", amount = 5})
   table.insert(data.raw.recipe["sp-pressure-tube"].ingredients, {type = "item", name = "sp-glass", amount = 1})
   table.insert(data.raw.recipe["sp-liquid-nitrogen"].ingredients, {type = "fluid", name = "sp-nitrogen", amount = 5})
-  table.insert(data.raw.recipe["sp-material-science-pack-1"].ingredients, {type = "item", name = "iron-beam", amount = 5})
+  table.insert(data.raw.recipe["sp-material-science-pack-1"].ingredients, {type = "item", name = "steel-plate", amount = 5})
   table.insert(data.raw.recipe["sp-geological-science-pack-2"].ingredients, {type = "item", name = "sp-wood", amount = 10})
 
   -- Add missing results

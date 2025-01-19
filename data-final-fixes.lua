@@ -5,5 +5,5 @@
 --     require("compatibility.jetpack-final-fixes")
 -- end
 
--- require("prototypes.order-fixes")
+require("compatibility.factorio-base.order")
 -- require("compatibility.base-final-fixes")

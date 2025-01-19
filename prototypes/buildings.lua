@@ -11,7 +11,7 @@ data:extend({
     flags = {"placeable-neutral", "placeable-player", "player-creation"},
     minable = {hardness = 1, mining_time = 1, result = "sp-lumber-mill"},
     max_health = 500,
-    corpse = "kr-big-random-pipes-remnant",
+    -- corpse = "kr-big-random-pipes-remnant",
     dying_explosion = "big-explosion",
     damaged_trigger_effect = hit_effects.entity(),
     {
@@ -20,9 +20,6 @@ data:extend({
     collision_box = {{-3.25, -3.25}, {3.25, 3.25}},
     selection_box = {{-3.5, -3.5}, {3.5, 3.5}},
     fast_replaceable_group = "sp-lumber-mill",
-    module_specification = {
-      module_slots = 3,
-    },
     allowed_effects = {"consumption", "speed", "productivity", "pollution"},
     animation = {
       layers =
@@ -71,10 +68,10 @@ data:extend({
     energy_source =
     {
       type = "burner",
-      fuel_category = "chemical",
+      fuel_categories = {"chemical"},
       effectivity = 1,
+      emissions_per_minute = {pollution = 1},
       fuel_inventory_size = 1,
-      emissions_per_minute = 2,
       light_flicker =
       {
         color = {0,0,0},

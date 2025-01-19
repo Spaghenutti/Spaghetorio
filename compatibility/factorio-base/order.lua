@@ -18,16 +18,28 @@ data.raw.recipe["sulfuric-acid"].order = "molecule-[sulfuric-acid]"
 -- MARK: plate
 data.raw.recipe["copper-plate"].order = "a-plate-[copper-plate]"
 data.raw.recipe["iron-plate"].order = "a-plate-[iron-plate]"
-data.raw.recipe["iron-beam"].order = "beam-[iron-beam]"
+data.raw.recipe["steel-plate"].order = "beam-[iron-beam]"
 
 -- MARK: other recipes
 data.raw.recipe["uranium-processing"].order = "z[nuclear]-1-[uranium-processing]"
 data.raw.recipe["kovarex-enrichment-process"].order = "z[nuclear]-1-[uranium-processing]"
-data.raw.recipe["iron-beam"].order = "beam-[iron-beam]"
+data.raw.recipe["steel-plate"].order = "beam-[iron-beam]"
 data.raw.recipe["iron-stick"].order = "frame-1-[iron-stick]"
 
 -- MARK: items
-data.raw.item["satellite"].order = "m-1-[satellite]"
+data.raw.item["copper-plate"].order = "a-plate-[copper]"
+data.raw.item["iron-plate"].order = "a-plate-[iron]"
+
+data.raw.item["copper-cable"].order = "cable-[copper-cable]"
+
+data.raw.item["iron-gear-wheel"].order = "gear-[iron-gear-wheel]"
+data.raw.item["iron-stick"].order = "frame-[iron-stick]"
+
+data.raw.item["low-density-structure"].order = "ceramic-[low-density-structure]"  -- I know its not supposed to be ceramics, but its my mod so i do whatever i want.
+
+data.raw.item["explosives"].order = "a-a"
+
+-- data.raw.item["satellite"].order = "m-1-[satellite]"
 data.raw.item["uranium-235"].order = "z-nuclear-2-[uranium-235]"
 data.raw.item["uranium-238"].order = "z-nuclear-1-[uranium-238]"
 

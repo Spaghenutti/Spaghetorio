@@ -1,3 +1,4 @@
+
 data:extend({
   ------------------------------------------------------------------------------
   -- MARK: base-products
@@ -2561,6 +2562,16 @@ data:extend({
   },
   {
     type = "item",
+    name = "sp-rocket-control-unit",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/rocket-control-unit.png",
+    icon_size = 128,
+    icon_mipmaps = 4,
+    subgroup = "advanced-intermediate-product",
+    order = "[rocket-control-unit]",
+    stack_size = 50
+  },
+  {
+    type = "item",
     name = "sp-nozzle",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/nozzle.png",
     icon_size = 64,
@@ -3531,7 +3542,11 @@ data:extend({
     tier = 4,
     order = "a[speed]-d[speed-module-4]",
     stack_size = 50,
-    effect = { speed = {bonus = 0.75}, consumption = {bonus = 1.0}},
+    effect = {
+      speed = 0.75,
+      consumption = 1.0,
+      quality = -0.4
+    },
     beacon_tint =
     {
       primary = {r = 0.441, g = 0.714, b = 1.000, a = 1.000}, -- #70b6ffff
@@ -3542,17 +3557,19 @@ data:extend({
   },
   {
     type = "module",
-    name = "sp-effectivity-module-4",  -- #ForRegEx# - item
-    localised_description = {"item-description.effectivity-module"},
-    icon = "__Spaghetorio__/graphics/icons/effectivity-module-4.png",
+    name = "sp-efficiency-module-4",  -- #ForRegEx# - item
+    localised_description = {"item-description.efficiency-module"},
+    icon = "__Spaghetorio__/graphics/icons/efficiency-module-4.png",
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "module",
-    category = "effectivity",
+    category = "efficiency",
     tier = 4,
-    order = "c[effectivity]-d[effectivity-module-4]",
+    order = "c[efficiency]-d[efficiency-module-4]",
     stack_size = 50,
-    effect = { consumption = {bonus = -0.75}},
+    effect = {
+      consumption = -0.75
+    },
     beacon_tint =
     {
       primary = { 0, 1, 0 },
@@ -3575,12 +3592,11 @@ data:extend({
     stack_size = 50,
     effect =
     {
-      productivity = {bonus = 0.12},
-      consumption = {bonus = 0.9},
-      pollution = {bonus = 0.12},
-      speed = {bonus = -0.2}
+      productivity = 0.12,
+      consumption = 0.9,
+      pollution = 0.12,
+      speed = -0.2
     },
-    limitation = productivity_module_limitation(),
     limitation_message_key = "production-module-usable-only-on-intermediates"
   },
   ------------------------------------------------------------------------------
@@ -3687,50 +3703,50 @@ data:extend({
     order = "b[yemnuth-rocket]",
     stack_size = 1
   },
-  {
-    type = "item",
-    name = "sp-blunagium-rocket-silo",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/icons/blunagium-rocket-silo.png",
-    icon_size = 64,
-    icon_mipmaps = 4,
-    subgroup = "space-related",
-    order = "a[blunagium-rocket-silo]",
-    place_result = "sp-blunagium-rocket-silo",
-    stack_size = 1
-  },
-  {
-    type = "item",
-    name = "sp-grobgnum-rocket-silo",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/icons/grobgnum-rocket-silo.png",
-    icon_size = 64,
-    icon_mipmaps = 4,
-    subgroup = "space-related",
-    order = "a[grobgnum-rocket-silo]",
-    place_result = "sp-grobgnum-rocket-silo",
-    stack_size = 1
-  },
-  {
-    type = "item",
-    name = "sp-rukite-rocket-silo",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/icons/rukite-rocket-silo.png",
-    icon_size = 64,
-    icon_mipmaps = 4,
-    subgroup = "space-related",
-    order = "a[rukite-rocket-silo]",
-    place_result = "sp-rukite-rocket-silo",
-    stack_size = 1
-  },
-  {
-    type = "item",
-    name = "sp-yemnuth-rocket-silo",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/icons/yemnuth-rocket-silo.png",
-    icon_size = 64,
-    icon_mipmaps = 4,
-    subgroup = "space-related",
-    order = "a[yemnuth-rocket-silo]",
-    place_result = "sp-yemnuth-rocket-silo",
-    stack_size = 1
-  },
+  -- {
+  --   type = "item",
+  --   name = "sp-blunagium-rocket-silo",  -- #ForRegEx# - item
+  --   icon = "__Spaghetorio__/graphics/icons/blunagium-rocket-silo.png",
+  --   icon_size = 64,
+  --   icon_mipmaps = 4,
+  --   subgroup = "space-related",
+  --   order = "a[blunagium-rocket-silo]",
+  --   place_result = "sp-blunagium-rocket-silo",
+  --   stack_size = 1
+  -- },
+  -- {
+  --   type = "item",
+  --   name = "sp-grobgnum-rocket-silo",  -- #ForRegEx# - item
+  --   icon = "__Spaghetorio__/graphics/icons/grobgnum-rocket-silo.png",
+  --   icon_size = 64,
+  --   icon_mipmaps = 4,
+  --   subgroup = "space-related",
+  --   order = "a[grobgnum-rocket-silo]",
+  --   place_result = "sp-grobgnum-rocket-silo",
+  --   stack_size = 1
+  -- },
+  -- {
+  --   type = "item",
+  --   name = "sp-rukite-rocket-silo",  -- #ForRegEx# - item
+  --   icon = "__Spaghetorio__/graphics/icons/rukite-rocket-silo.png",
+  --   icon_size = 64,
+  --   icon_mipmaps = 4,
+  --   subgroup = "space-related",
+  --   order = "a[rukite-rocket-silo]",
+  --   place_result = "sp-rukite-rocket-silo",
+  --   stack_size = 1
+  -- },
+  -- {
+  --   type = "item",
+  --   name = "sp-yemnuth-rocket-silo",  -- #ForRegEx# - item
+  --   icon = "__Spaghetorio__/graphics/icons/yemnuth-rocket-silo.png",
+  --   icon_size = 64,
+  --   icon_mipmaps = 4,
+  --   subgroup = "space-related",
+  --   order = "a[yemnuth-rocket-silo]",
+  --   place_result = "sp-yemnuth-rocket-silo",
+  --   stack_size = 1
+  -- },
   {
     type = "item",
     name = "sp-dark-matter-mining-satellite",  -- #ForRegEx# - item
@@ -3766,7 +3782,7 @@ data:extend({
     type = "tool",
     name = "sp-geological-science-pack-1",  -- #ForRegEx# - tool
     localised_description = {"item-description.science-pack"},
-    icon = "__Krastorio2Assets__/icons/cards/basic-tech-card.png",
+    icon = "__Spaghetorio__/graphics/krastorio/icons/cards/basic-tech-card.png",
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "basic-science",
@@ -3853,7 +3869,7 @@ data:extend({
     type = "tool",
     name = "sp-electronic-science-pack-2",  -- #ForRegEx# - tool
     localised_description = {"item-description.science-pack"},
-    icon = "__Krastorio2Assets__/icons/cards/utility-tech-card.png",
+    icon = "__Spaghetorio__/graphics/krastorio/icons/cards/utility-tech-card.png",
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "intermediate-science",
@@ -3895,7 +3911,7 @@ data:extend({
     type = "tool",
     name = "sp-astronomical-science-pack-2",  -- #ForRegEx# - tool
     localised_description = {"item-description.science-pack"},
-    icon = "__Krastorio2Assets__/icons/cards/matter-tech-card.png",
+    icon = "__Spaghetorio__/graphics/krastorio/icons/cards/matter-tech-card.png",
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "intermediate-science",
@@ -4345,7 +4361,7 @@ if not mods["Krastorio2"] then
     {
       type = "item",
       name = "sp-steel-gear-wheel",  -- #ForRegEx# - item
-      icon = "__Spaghetorio__/graphics/dummy/dummy-item-sp-steel-gear-wheel.png",
+      icon = "__Spaghetorio__/graphics/dummy/dummy-item-sp-lithium.png",
       icon_size = 64,
       scale = 0.25,
       subgroup = "mechanical-component",

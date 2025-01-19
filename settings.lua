@@ -7,7 +7,7 @@ data:extend({
       localised_name = {"mod-setting-name.sp-character-panel-width"},
       localised_description = {"mod-setting-description.sp-character-panel-width"},
       setting_type = "startup",
-      default_value = 15,
+      default_value = 16,
       order = "aa"
   },
   -- {
@@ -28,7 +28,7 @@ data:extend({
     localised_name = {"mod-setting-name.sp-crafting-panel-width"},
     localised_description = {"mod-setting-description.sp-crafting-panel-width"},
     setting_type = "startup",
-    default_value = 20,
+    default_value = 16,
     order = "ac"
   },
   -- Needed for removing prototypes -- Source: https://github.com/sparr/factorio-mod-remove-prototypes/blob/master/settings.lua

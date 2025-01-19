@@ -4070,14 +4070,14 @@ data:extend({
   },
   {
     type = "technology",
-    name = "sp-effectivity-module-4",  -- #ForRegEx# - technology
+    name = "sp-efficiency-module-4",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghetorio__/graphics/technology/effectivity-module-4.png",
+    icon = "__Spaghetorio__/graphics/technology/efficiency-module-4.png",
     effects =
     {
       {
         type = "unlock-recipe",
-        recipe = "sp-effectivity-module-4"
+        recipe = "sp-efficiency-module-4"
       }
     },
     prerequisites = {
