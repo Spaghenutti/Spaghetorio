@@ -205,6 +205,45 @@ data:extend({
   ------------------------------------------------------------------------------
   {
     type = "fluid",
+    name = "sp-nitrogen",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    base_color = {r=0.05, g=0.1, b=0.5},
+    flow_color = {r=0.05, g=0.1, b=0.5},
+    icon = "__Spaghetorio__/graphics/krastorio/icons/fluids/nitrogen.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "gas",
+    order = "a[fluid]-f[nitrogen]"
+  },
+  {
+    type = "fluid",
+    name = "sp-hydrogen",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    base_color = {r=0.05, g=0.1, b=0.5},
+    flow_color = {r=0.05, g=0.1, b=0.5},
+    icon = "__Spaghetorio__/graphics/krastorio/icons/fluids/hydrogen.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "gas",
+    order = "a[fluid]-f[hydrogen]"
+  },
+  {
+    type = "fluid",
+    name = "sp-oxygen",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    base_color = {r=0.05, g=0.1, b=0.5},
+    flow_color = {r=0.05, g=0.1, b=0.5},
+    icon = "__Spaghetorio__/graphics/krastorio/icons/fluids/oxygen.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "gas",
+    order = "a[fluid]-f[oxygen]"
+  },
+  {
+    type = "fluid",
     name = "sp-helium",  -- #ForRegEx# - fluid
     default_temperature = 25,
     heat_capacity = "0.1kJ",
@@ -214,7 +253,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "gas",
-    order = "a[fluid]-f[helium]"
+    order = "a[fluid]-g[helium]"
   },
   {
     type = "fluid",
@@ -227,7 +266,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "gas",
-    order = "a[fluid]-f[helium-3]"
+    order = "a[fluid]-g[helium-3]"
   },
   {
     type = "fluid",
@@ -240,7 +279,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "gas",
-    order = "a[fluid]-f[xenon]"
+    order = "a[fluid]-g[xenon]"
   },
   {
     type = "fluid",
@@ -253,11 +292,37 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "gas",
-    order = "a[fluid]-f[deuterium]"
+    order = "a[fluid]-h[deuterium]"
   },
   ------------------------------------------------------------------------------
   -- MARK: chemical
   ------------------------------------------------------------------------------
+  {
+    type = "fluid",
+    name = "sp-chlorine",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    base_color = {r=0.58, g=0.95, b=0.5},
+    flow_color = {r=0.58, g=0.95, b=0.5},
+    icon = "__Spaghetorio__/graphics/krastorio/icons/fluids/chlorine.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "chemical",
+    order = "a[fluid]-f[chlorine]"
+  },
+  {
+    type = "fluid",
+    name = "sp-nitric-acid",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    base_color = {r=0.05, g=0.1, b=0.5},
+    flow_color = {r=0.05, g=0.1, b=0.5},
+    icon = "__Spaghetorio__/graphics/krastorio/icons/fluids/nitric-acid.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "chemical",
+    order = "a[fluid]-f[nitric-acid]"
+  },
   {
     type = "fluid",
     name = "sp-phosphoric-acid",  -- #ForRegEx# - fluid
@@ -548,86 +613,3 @@ data:extend({
     order = "a[fluid]-z2[dark-energy]"
   },
 })
-
-if not mods["Krastorio2"] then
-  data:extend({
-    {
-      type = "fluid",
-      name = "sp-nitrogen",  -- #ForRegEx# - fluid
-      default_temperature = 25,
-      heat_capacity = "0.1kJ",
-      base_color = {r=0.05, g=0.1, b=0.5},
-      flow_color = {r=0.05, g=0.1, b=0.5},
-      icon = "__Spaghetorio__/graphics/dummy/dummy-fluid-sp-nitrogen.png",
-      icon_size = 64,
-      icon_mipmaps = 4,
-      subgroup = "gas",
-      order = "a[fluid]-f[nitrogen]"
-    },
-    {
-      type = "fluid",
-      name = "sp-hydrogen",  -- #ForRegEx# - fluid
-      default_temperature = 25,
-      heat_capacity = "0.1kJ",
-      base_color = {r=0.05, g=0.1, b=0.5},
-      flow_color = {r=0.05, g=0.1, b=0.5},
-      icon = "__Spaghetorio__/graphics/dummy/dummy-fluid-sp-hydrogen.png",
-      icon_size = 64,
-      icon_mipmaps = 4,
-      subgroup = "gas",
-      order = "a[fluid]-f[hydrogen]"
-    },
-    {
-      type = "fluid",
-      name = "sp-chlorine",  -- #ForRegEx# - fluid
-      default_temperature = 25,
-      heat_capacity = "0.1kJ",
-      base_color = {r=0.58, g=0.95, b=0.5},
-      flow_color = {r=0.58, g=0.95, b=0.5},
-      icon = "__Spaghetorio__/graphics/dummy/dummy-fluid-sp-chlorine.png",
-      icon_size = 64,
-      icon_mipmaps = 4,
-      subgroup = "chemical",
-      order = "a[fluid]-f[chlorine]"
-    },
-    {
-      type = "fluid",
-      name = "sp-oxygen",  -- #ForRegEx# - fluid
-      default_temperature = 25,
-      heat_capacity = "0.1kJ",
-      base_color = {r=0.05, g=0.1, b=0.5},
-      flow_color = {r=0.05, g=0.1, b=0.5},
-      icon = "__Spaghetorio__/graphics/dummy/dummy-fluid-sp-oxygen.png",
-      icon_size = 64,
-      icon_mipmaps = 4,
-      subgroup = "gas",
-      order = "a[fluid]-f[oxygen]"
-    },
-    {
-      type = "fluid",
-      name = "sp-ammonia",  -- #ForRegEx# - fluid
-      default_temperature = 25,
-      heat_capacity = "0.1kJ",
-      base_color = {r=0.05, g=0.1, b=0.5},
-      flow_color = {r=0.05, g=0.1, b=0.5},
-      icon = "__Spaghetorio__/graphics/dummy/dummy-fluid-sp-oxygen.png",
-      icon_size = 64,
-      icon_mipmaps = 4,
-      subgroup = "chemical",
-      order = "a[fluid]-f[ammonia]"
-    },
-    {
-      type = "fluid",
-      name = "sp-nitric-acid",  -- #ForRegEx# - fluid
-      default_temperature = 25,
-      heat_capacity = "0.1kJ",
-      base_color = {r=0.05, g=0.1, b=0.5},
-      flow_color = {r=0.05, g=0.1, b=0.5},
-      icon = "__Spaghetorio__/graphics/dummy/dummy-fluid-sp-oxygen.png",
-      icon_size = 64,
-      icon_mipmaps = 4,
-      subgroup = "chemical",
-      order = "a[fluid]-f[nitric-acid]"
-    },
-  })
-end

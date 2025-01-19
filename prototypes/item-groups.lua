@@ -251,7 +251,7 @@ data:extend({
   ------------------------------------------------------------------------------
   {
     type = "item-group",
-    name = "fluid",
+    name = "fluids",
     order = "g",
     icon = "__base__/graphics/item-group/fluids.png",
     icon_size = 128,
@@ -260,40 +260,40 @@ data:extend({
   {
     type = "item-subgroup",
     name = "aqueous-fluid",
-    group = "fluid",
+    group = "fluids",
     order = "a"
   },
   {
     type = "item-subgroup",
     name = "dirty-fluid",
-    group = "fluid",
+    group = "fluids",
     order = "b"
   },
   {
     type = "item-subgroup",
     name = "oil",
-    group = "fluid",
+    group = "fluids",
     order = "c"
   },
   {
     type = "item-subgroup",
     name = "chemical",
-    group = "fluid",
+    group = "fluids",
     order = "d"
   },
   {
     type = "item-subgroup",
     name = "gas",
-    group = "fluid",
+    group = "fluids",
     order = "e"
   },
   {
     type = "item-subgroup",
     name = "alien",
-    group = "fluid",
+    group = "fluids",
     order = "f"
   }
 })
 
-data.raw["item-subgroup"]["fill-barrel"].group = "fluid"
-data.raw["item-subgroup"]["empty-barrel"].group = "fluid"
+data.raw["item-subgroup"]["fill-barrel"].group = "fluids"
+data.raw["item-subgroup"]["empty-barrel"].group = "fluids"

@@ -607,6 +607,21 @@ data:extend({
   },
   {
     type = "item",
+    name = "sp-sand",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/sand/sand.png",
+    icon_size = 64,
+    scale = 0.25,
+    pictures = {
+      {size = 64, filename = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/sand/sand.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/sand/sand-1.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/sand/sand-2.png", scale = 0.25, mipmap_count = 4}
+    },
+    subgroup = "processed-resource",
+    order = "[sand]",
+    stack_size = 100
+  },
+  {
+    type = "item",
     name = "sp-graphite",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/graphite-1.png",
     icon_size = 64,
@@ -678,7 +693,7 @@ data:extend({
     icon_size = 64,
     scale = 0.25,
     subgroup = "processed-resource",
-    order = "[silica]",
+    order = "silicon-[silica]",
     stack_size = 200
   },
   {
@@ -939,6 +954,52 @@ data:extend({
     order = "[sp-antimony]",
     stack_size = 200
   },
+  {
+    type = "item",
+    name = "sp-coke",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/coke/coke.png",
+    icon_size = 64,
+    scale = 0.25,
+    pictures = {
+      {size = 64, filename = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/coke/coke.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/coke/coke-1.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/coke/coke-2.png", scale = 0.25, mipmap_count = 4}
+    },
+    subgroup = "processed-resource",
+    order = "[coke]",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "sp-quartz",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/quartz/quartz.png",
+    icon_size = 64,
+    scale = 0.25,
+    pictures = {
+      {size = 64, filename = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/quartz/quartz.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/quartz/quartz-1.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/quartz/quartz-2.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/quartz/quartz-3.png", scale = 0.25, mipmap_count = 4}
+    },
+    subgroup = "processed-resource",
+    order = "silicon-[quartz]",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "sp-silicon",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/silicon/silicon.png",
+    icon_size = 64,
+    scale = 0.25,
+    pictures = {
+      {size = 64, filename = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/silicon/silicon.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/silicon/silicon-1.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/silicon/silicon-2.png", scale = 0.25, mipmap_count = 4}
+    },
+    subgroup = "processed-resource",
+    order = "silicon-[silicon]",
+    stack_size = 100
+  },
   ------------------------------------------------------------------------------
   -- MARK: raw-material
   ------------------------------------------------------------------------------
@@ -1118,6 +1179,16 @@ data:extend({
     order = "a-plate-1-[wooden-board]",
     stack_size = 100
   },
+  {
+    type = "item",
+    name = "sp-glass",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/krastorio/icons/items/glass.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "raw-material",
+    order = "a-plate-1-[glass]",
+    stack_size = 100
+  },
   ------------------------------------------------------------------------------
   -- MARK: alloy --
   ------------------------------------------------------------------------------
@@ -1239,6 +1310,25 @@ data:extend({
     scale = 0.25,
     subgroup = "alloy",
     order = "[niobium-tin]",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "sp-rare-metals-alloy",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/rare-metals/rare-metals.png",
+    icon_size = 64,
+    scale = 0.25,
+    pictures = {
+      {size = 64, filename = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/rare-metals/rare-metals.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/rare-metals/rare-metals-1.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/rare-metals/rare-metals-2.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/rare-metals/rare-metals-3.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/rare-metals/rare-metals-4.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/rare-metals/rare-metals-5.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/rare-metals/rare-metals-6.png", scale = 0.25, mipmap_count = 4}
+    },
+    subgroup = "alloy",
+    order = "[rare-metal-alloy]",
     stack_size = 100
   },
   ------------------------------------------------------------------------------
@@ -1795,6 +1885,16 @@ data:extend({
     scale = 0.25,
     subgroup = "mechanical-component",
     order = "other-1-[spring]",
+    stack_size = 200
+  },
+  {
+    type = "item",
+    name = "sp-steel-gear-wheel",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/krastorio/icons/items/steel-gear-wheel.png",
+    icon_size = 64,
+    scale = 0.25,
+    subgroup = "mechanical-component",
+    order = "gear-[steel-gear-wheel]",
     stack_size = 200
   },
   {
@@ -2564,7 +2664,7 @@ data:extend({
     type = "item",
     name = "sp-rocket-control-unit",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/rocket-control-unit.png",
-    icon_size = 128,
+    icon_size = 256,
     icon_mipmaps = 4,
     subgroup = "advanced-intermediate-product",
     order = "[rocket-control-unit]",
@@ -4305,88 +4405,3 @@ data:extend({
     stack_size = 50,
   },
 })
-
-if not mods["Krastorio2"] then
-  data:extend({
-    {
-      type = "item",
-      name = "sp-coke",  -- #ForRegEx# - item
-      icon = "__Spaghetorio__/graphics/dummy/dummy-item-sp-coke.png",
-      icon_size = 64,
-      scale = 0.25,
-      subgroup = "processed-resource",
-      order = "[coke]",
-      stack_size = 100
-    },
-    {
-      type = "item",
-      name = "sp-sand",  -- #ForRegEx# - item
-      icon = "__Spaghetorio__/graphics/dummy/dummy-item-sp-sand.png",
-      icon_size = 64,
-      icon_mipmaps = 4,
-      subgroup = "raw-resource",
-      order = "[sand]",
-      stack_size = 100
-    },
-    {
-      type = "item",
-      name = "sp-glass",  -- #ForRegEx# - item
-      icon = "__Spaghetorio__/graphics/dummy/dummy-item-sp-glass.png",
-      icon_size = 64,
-      scale = 0.25,
-      subgroup = "raw-material",
-      order = "[glass]",
-      stack_size = 100
-    },
-    {
-      type = "item",
-      name = "sp-quartz",  -- #ForRegEx# - item
-      icon = "__Spaghetorio__/graphics/dummy/dummy-item-sp-quartz.png",
-      icon_size = 64,
-      scale = 0.25,
-      subgroup = "processed-resource",
-      order = "[quartz]",
-      stack_size = 100
-    },
-    {
-      type = "item",
-      name = "sp-silicon",  -- #ForRegEx# - item
-      icon = "__Spaghetorio__/graphics/dummy/dummy-item-sp-silicon.png",
-      icon_size = 64,
-      scale = 0.25,
-      subgroup = "processed-resource",
-      order = "[silicon]",
-      stack_size = 100
-    },
-    {
-      type = "item",
-      name = "sp-steel-gear-wheel",  -- #ForRegEx# - item
-      icon = "__Spaghetorio__/graphics/dummy/dummy-item-sp-lithium.png",
-      icon_size = 64,
-      scale = 0.25,
-      subgroup = "mechanical-component",
-      order = "[steel-gear-wheel]",
-      stack_size = 200
-    },
-    {
-      type = "item",
-      name = "sp-lithium",  -- #ForRegEx# - item
-      icon = "__Spaghetorio__/graphics/dummy/dummy-item-sp-lithium.png",
-      icon_size = 64,
-      scale = 0.25,
-      subgroup = "processed-resource",
-      order = "[lithium]",
-      stack_size = 100
-    },
-    {
-      type = "item",
-      name = "sp-rare-metals-alloy",  -- #ForRegEx# - item
-      icon = "__Spaghetorio__/graphics/icons/niobium-tin.png",  -- Fix icon
-      icon_size = 64,
-      scale = 0.25,
-      subgroup = "alloy",
-      order = "[rare-metal-alloy]",
-      stack_size = 100
-    },
-  })
-end
