@@ -1,5 +1,12 @@
 
 data:extend({
+  -- MARK: Fuel Category
+  {
+    type = "fuel-category",
+    name = "antimatter-fuel",
+  },
+
+  -- MARK: Recipe Category
   {
     type = "recipe-category",
     name = "sawing"

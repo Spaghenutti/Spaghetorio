@@ -1,5 +1,8 @@
 local util = require("data-util")
 
+-- MARK: Change icons
+data.raw.item["steel-plate"].icon = "__Spaghetorio__/graphics/krastorio/icons/items/steel-plate.png"
+
 -- MARK: Change item subgroups
 data.raw.item["sulfur"].subgroup = "processed-resource"
 data.raw.item["uranium-238"].subgroup = "processed-resource"
@@ -52,7 +55,6 @@ data.raw.tool["space-science-pack"].subgroup = "advanced-science"
 -- MARK: change stack sizes
 data.raw.item["copper-cable"].stack_size = 400
 data.raw.item["chemical-plant"].stack_size = 50
-
 
 -- MARK: change recipe subgroups
 data.raw.recipe["uranium-processing"].subgroup = "processed-resource"
