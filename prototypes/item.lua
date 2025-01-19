@@ -775,22 +775,6 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-graphite",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/icons/graphite-1.png",
-    icon_size = 64,
-    pictures = {
-      {size = 64, filename = "__Spaghetorio__/graphics/icons/graphite-1.png", scale = 0.5, mipmap_count = 4},
-      {size = 64, filename = "__Spaghetorio__/graphics/icons/graphite-2.png", scale = 0.5, mipmap_count = 4},
-      {size = 64, filename = "__Spaghetorio__/graphics/icons/graphite-3.png", scale = 0.5, mipmap_count = 4},
-      {size = 64, filename = "__Spaghetorio__/graphics/icons/graphite-4.png", scale = 0.5, mipmap_count = 4}
-    },
-    scale = 0.5,
-    subgroup = "processed-resource",
-    order = "[graphite]",
-    stack_size = 200
-  },
-  {
-    type = "item",
     name = "sp-calcium-carbonate",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/calcium-carbonate.png",
     icon_size = 64,
@@ -1049,9 +1033,9 @@ data:extend({
       {size = 64, filename = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/lithium-chloride/lithium-chloride.png", scale = 0.5, mipmap_count = 4},
       {size = 64, filename = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/lithium-chloride/lithium-chloride-1.png", scale = 0.5, mipmap_count = 4}
     },
-    subgroup = "alien-compound",
-    order = "a-plate-[blunagium-plate]",
-    stack_size = 100
+    subgroup = "processed-resource",
+    order = "[lithium-chloride]",
+    stack_size = 200
   },
   {
     type = "item",
@@ -3286,16 +3270,6 @@ data:extend({
     scale = 0.5,
     subgroup = "chemical-product",
     order = "[insulation-sheet]",
-    stack_size = 100
-  },
-  {
-    type = "item",
-    name = "sp-electrolyte",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/icons/electrolyte.png",
-    icon_size = 64,
-    scale = 0.5,
-    subgroup = "chemical-product",
-    order = "[electrolyte]",
     stack_size = 100
   },
   ------------------------------------------------------------------------------

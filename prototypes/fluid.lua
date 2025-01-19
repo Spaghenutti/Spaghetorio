@@ -43,19 +43,6 @@ data:extend({
   },
   {
     type = "fluid",
-    name = "sp-coolant",  -- #ForRegEx# - fluid
-    default_temperature = 25,
-    heat_capacity = "0.1kJ",
-    base_color = {r=0.5, g=0.83, b=1.0},
-    flow_color = {r=0.5, g=0.83, b=1.0},
-    icon = "__Spaghetorio__/graphics/icons/coolant.png",
-    icon_size = 64,
-    icon_mipmaps = 4,
-    subgroup = "aqueous-fluid",
-    order = "a[fluid]-f[coolant]"
-  },
-  {
-    type = "fluid",
     name = "sp-mineral-water",  -- #ForRegEx# - fluid
     default_temperature = 25,
     heat_capacity = "0.1kJ",

@@ -7,7 +7,7 @@ data:extend({
       localised_name = {"mod-setting-name.sp-character-panel-width"},
       localised_description = {"mod-setting-description.sp-character-panel-width"},
       setting_type = "startup",
-      default_value = 16,
+      default_value = 10,
       order = "aa"
   },
   -- {
