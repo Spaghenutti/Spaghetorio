@@ -123,12 +123,16 @@ data:extend({
 
 data.raw.planet["nauvis"].map_gen_settings.autoplace_controls["sp-aluminum-ore"] = {}
 data.raw.planet["nauvis"].map_gen_settings.autoplace_controls["sp-chromite"] = {}
+data.raw.planet["nauvis"].map_gen_settings.autoplace_controls["sp-limestone"] = {}
 data.raw.planet["nauvis"].map_gen_settings.autoplace_controls["sp-magnesium-ore"] = {}
 data.raw.planet["nauvis"].map_gen_settings.autoplace_controls["sp-nickel-ore"] = {}
+data.raw.planet["nauvis"].map_gen_settings.autoplace_controls["sp-spodumene"] = {}
 data.raw.planet["nauvis"].map_gen_settings.autoplace_controls["sp-tinstone"] = {}
 data.raw.planet["nauvis"].map_gen_settings.autoplace_controls["sp-titanium-ore"] = {}
+data.raw.planet["nauvis"].map_gen_settings.autoplace_controls["sp-tungsten-ore"] = {}
 data.raw.planet["nauvis"].map_gen_settings.autoplace_controls["sp-zinc-ore"] = {}
 data.raw.planet["nauvis"].map_gen_settings.autoplace_controls["sp-zirconium-ore"] = {}
+
 data.raw.planet["nauvis"].map_gen_settings.autoplace_controls["sp-blunagium"] = {}
 data.raw.planet["nauvis"].map_gen_settings.autoplace_controls["sp-grobgnum"] = {}
 data.raw.planet["nauvis"].map_gen_settings.autoplace_controls["sp-rukite"] = {}

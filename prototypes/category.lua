@@ -1,5 +1,11 @@
 
 data:extend({
+  -- MARK: Resource Category
+  {
+    type = "resource-category",
+    name = "sp-kr-quarry",
+  },
+
   -- MARK: Fuel Category
   {
     type = "fuel-category",

@@ -147,15 +147,15 @@ local function particle(name, tint)
 end
 
 data:extend({
-  particle("aluminum-ore-particle", {r=1.0, g=0.5, b=0.5, a=1.0}),
-  particle("chromite-particle", {r=0.5, g=0.5, b=1.0, a=1.0}),
-  particle("limestone-particle", {r=1.0, g=1.0, b=0.8, a=1.0}),
-  particle("titanium-ore-particle", {r=0.6, g=0.45, b=0.45, a=1.0}),
-  particle("magnesium-ore-particle", {r=0.75, g=0.75, b=0.75, a=1.0}),
-  particle("nickel-ore-particle", {r=0.3, g=0.9, b=0.61, a=1.0}),
-  particle("spodumene-particle", {r=0.5, g=1, b=0.6, a=1.0}),
-  particle("tinstone-particle", {r=0.1, g=0.9, b=0.7, a=1.0}),
-  particle("tungsten-ore-particle", {r=0.35, g=0.15, b=0, a=1.0}),
-  particle("zinc-ore-particle", {r=0, g=0.25, b=1, a=1.0}),
-  particle("zirconium-ore-particle", {r=0.8, g=0.65, b=0, a=1.0}),
+  particle("sp-aluminum-ore-particle", {r=1.0, g=0.5, b=0.5, a=1.0}),
+  particle("sp-chromite-particle", {r=0.5, g=0.5, b=1.0, a=1.0}),
+  particle("sp-limestone-particle", {r=1.0, g=1.0, b=0.8, a=1.0}),
+  particle("sp-titanium-ore-particle", {r=0.6, g=0.45, b=0.45, a=1.0}),
+  particle("sp-magnesium-ore-particle", {r=0.75, g=0.75, b=0.75, a=1.0}),
+  particle("sp-nickel-ore-particle", {r=0.3, g=0.9, b=0.61, a=1.0}),
+  particle("sp-spodumene-particle", {r=0.5, g=1, b=0.6, a=1.0}),
+  particle("sp-tinstone-particle", {r=0.1, g=0.9, b=0.7, a=1.0}),
+  particle("sp-tungsten-ore-particle", {r=0.35, g=0.15, b=0, a=1.0}),
+  particle("sp-zinc-ore-particle", {r=0, g=0.25, b=1, a=1.0}),
+  particle("sp-zirconium-ore-particle", {r=0.8, g=0.65, b=0, a=1.0}),
 })
