@@ -1635,16 +1635,6 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-tungsten-carbide",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/icons/tungsten-carbide.png",
-    icon_size = 64,
-    scale = 0.5,
-    subgroup = "advanced-raw-material",
-    order = "ceramic-[tungsten-carbide]",
-    stack_size = 100
-  },
-  {
-    type = "item",
     name = "sp-diamond",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/diamond.png",
     icon_size = 64,
@@ -4110,12 +4100,12 @@ data:extend({
   ------------------------------------------------------------------------------
   {
     type = "item",
-    name = "sp-advanced-fuel",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/krastorio/icons/items/advanced-fuel.png",
+    name = "sp-fuel",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/krastorio/icons/items/fuel.png",
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "fuel-processing",
-    order = "b[chemistry]-c[advanced-fuel]",
+    order = "b[chemistry]-b[fuel]",
     stack_size = 50
   },
   {
@@ -4126,6 +4116,16 @@ data:extend({
     icon_mipmaps = 4,
     subgroup = "fuel-processing",
     order = "b[chemistry]-b[bio-fuel]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "sp-advanced-fuel",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/krastorio/icons/items/advanced-fuel.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "fuel-processing",
+    order = "b[chemistry]-c[advanced-fuel]",
     stack_size = 50
   },
   {
@@ -4251,6 +4251,47 @@ data:extend({
     icon_mipmaps = 4,
     subgroup = "fuel-processing",
     order = "antimatter-z[empty-antimatter-fuel-cell]",
+    stack_size = 10,
+  },
+  {
+    type = "item",
+    name = "empty-dt-fuel",
+    icon = "__Spaghetorio__/graphics/krastorio/icons/items/empty-dt-fuel.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "fuel-processing",
+    order = "fusion-[empty-dt-fuel]",
+    stack_size = 10,
+  },
+  {
+    type = "item",
+    name = "dt-fuel",
+    icon = "__Spaghetorio__/graphics/krastorio/icons/items/dt-fuel.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    pictures = {
+      layers = {
+        {
+          filename = "__Spaghetorio__/graphics/krastorio/icons/items/dt-fuel.png",
+          size = 64,
+          scale = 0.5,
+          mipmap_count = 4,
+        },
+        {
+          filename = "__Spaghetorio__/graphics/krastorio/icons/items/dt-fuel-light.png",
+          size = 64,
+          scale = 0.5,
+          mipmap_count = 4,
+          draw_as_light = true,
+          flags = { "light" },
+        },
+      },
+    },
+    fuel_category = "fusion",
+    fuel_value = "40GJ",
+    burnt_result = "empty-dt-fuel",
+    subgroup = "fuel-processing",
+    order = "fusion-[dt-fuel]",
     stack_size = 10,
   },
   ------------------------------------------------------------------------------

@@ -5,8 +5,14 @@ Factorio Space age
     - fluoroketone-cold - coolant
     - electrolyte - electrolyte (solid)
     - carbon - graphite
+    - tungsten carbide - tungsten carbide
+    - tungsten
+    - limestone - calcite
   - Update recepies for
     - lithium processing
+  - ores
+    - limestone as barium ore (baryt)
+    - tungsten ore as mercury ore (cinnabar)
 
 
 Buildings: Graphics (https://www.figma.com/proto/8ecwGOzYos13D0JTwV5kO9/Factorio-Buildings?node-id=2585-1158&node-type=frame&t=Tt0H6pFe0h0uH68x-0&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1ui%3D1&hotspot-hints=0&hide-ui=1)

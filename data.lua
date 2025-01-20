@@ -15,6 +15,7 @@ require("prototypes.resource")
 -- require("prototypes.technology")
 -- require("prototypes.technology-changes")
 
+require("compatibility.EverythingOnNauvis.order")
 
 require("compatibility.factorio-base.character")
 require("compatibility.factorio-base.entity")
@@ -23,3 +24,5 @@ require("compatibility.factorio-base.order")
 -- require("compatibility.factorio-base.recipe")
 require("compatibility.factorio-base.resource")
 -- require("compatibility.factorio-base.technology")
+
+require("compatibility.space-age.order")
