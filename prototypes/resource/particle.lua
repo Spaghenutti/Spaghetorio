@@ -1,0 +1,161 @@
+
+local function particle_pictures(tint)
+  return
+  {
+    {
+      filename = "__Spaghetorio__/graphics/base/ore/ore-particle-1.png",
+      priority = "extra-high",
+      tint = tint,
+      width = 16,
+      height = 16,
+      frame_count = 1,
+      hr_version = {
+        filename = "__Spaghetorio__/graphics/base/ore/hr-ore-particle-1.png",
+        priority = "extra-high",
+        tint = tint,
+        width = 32,
+        height = 32,
+        frame_count = 1,
+        scale = 0.5
+      }
+    },
+    {
+      filename = "__Spaghetorio__/graphics/base/ore/ore-particle-2.png",
+      priority = "extra-high",
+      tint = tint,
+      width = 16,
+      height = 16,
+      frame_count = 1,
+      hr_version = {
+        filename = "__Spaghetorio__/graphics/base/ore/hr-ore-particle-2.png",
+        priority = "extra-high",
+        tint = tint,
+        width = 32,
+        height = 32,
+        frame_count = 1,
+        scale = 0.5
+      }
+    },
+    {
+      filename = "__Spaghetorio__/graphics/base/ore/ore-particle-3.png",
+      priority = "extra-high",
+      tint = tint,
+      width = 16,
+      height = 16,
+      frame_count = 1,
+      hr_version = {
+        filename = "__Spaghetorio__/graphics/base/ore/hr-ore-particle-3.png",
+        priority = "extra-high",
+        tint = tint,
+        width = 32,
+        height = 32,
+        frame_count = 1,
+        scale = 0.5
+      }
+    },
+    {
+      filename = "__Spaghetorio__/graphics/base/ore/ore-particle-4.png",
+      priority = "extra-high",
+      tint = tint,
+      width = 16,
+      height = 16,
+      frame_count = 1,
+      hr_version = {
+        filename = "__Spaghetorio__/graphics/base/ore/hr-ore-particle-4.png",
+        priority = "extra-high",
+        tint = tint,
+        width = 32,
+        height = 32,
+        frame_count = 1,
+        scale = 0.5
+      }
+    }
+  }
+end
+
+local function particle(name, tint)
+  return
+  {
+    type = "optimized-particle",
+    name = name,
+    flags = {"not-on-map"},
+    life_time = 180,
+    pictures = particle_pictures(tint),
+    shadows = {
+      {
+        filename = "__Spaghetorio__/graphics/base/ore/ore-particle-shadow-1.png",
+        priority = "extra-high",
+        width = 16,
+        height = 16,
+        frame_count = 1,
+        hr_version = {
+          filename = "__Spaghetorio__/graphics/base/ore/hr-ore-particle-shadow-1.png",
+          priority = "extra-high",
+          width = 32,
+          height = 32,
+          frame_count = 1,
+          scale = 0.5
+        }
+      },
+      {
+        filename = "__Spaghetorio__/graphics/base/ore/ore-particle-shadow-2.png",
+        priority = "extra-high",
+        width = 16,
+        height = 16,
+        frame_count = 1,
+        hr_version = {
+          filename = "__Spaghetorio__/graphics/base/ore/hr-ore-particle-shadow-2.png",
+          priority = "extra-high",
+          width = 32,
+          height = 32,
+          frame_count = 1,
+          scale = 0.5
+        }
+      },
+      {
+        filename = "__Spaghetorio__/graphics/base/ore/ore-particle-shadow-3.png",
+        priority = "extra-high",
+        width = 16,
+        height = 16,
+        frame_count = 1,
+        hr_version = {
+          filename = "__Spaghetorio__/graphics/base/ore/hr-ore-particle-shadow-3.png",
+          priority = "extra-high",
+          width = 32,
+          height = 32,
+          frame_count = 1,
+          scale = 0.5
+        }
+      },
+      {
+        filename = "__Spaghetorio__/graphics/base/ore/ore-particle-shadow-4.png",
+        priority = "extra-high",
+        width = 16,
+        height = 16,
+        frame_count = 1,
+        hr_version = {
+          filename = "__Spaghetorio__/graphics/base/ore/hr-ore-particle-shadow-4.png",
+          priority = "extra-high",
+          width = 32,
+          height = 32,
+          frame_count = 1,
+          scale = 0.5
+        }
+      }
+    }
+  }
+end
+
+data:extend({
+  particle("aluminum-ore-particle", {r=1.0, g=0.5, b=0.5, a=1.0}),
+  particle("chromite-particle", {r=0.5, g=0.5, b=1.0, a=1.0}),
+  particle("limestone-particle", {r=1.0, g=1.0, b=0.8, a=1.0}),
+  particle("titanium-ore-particle", {r=0.6, g=0.45, b=0.45, a=1.0}),
+  particle("magnesium-ore-particle", {r=0.75, g=0.75, b=0.75, a=1.0}),
+  particle("nickel-ore-particle", {r=0.3, g=0.9, b=0.61, a=1.0}),
+  particle("spodumene-particle", {r=0.5, g=1, b=0.6, a=1.0}),
+  particle("tinstone-particle", {r=0.1, g=0.9, b=0.7, a=1.0}),
+  particle("tungsten-ore-particle", {r=0.35, g=0.15, b=0, a=1.0}),
+  particle("zinc-ore-particle", {r=0, g=0.25, b=1, a=1.0}),
+  particle("zirconium-ore-particle", {r=0.8, g=0.65, b=0, a=1.0}),
+})
