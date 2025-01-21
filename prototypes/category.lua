@@ -9,19 +9,77 @@ data:extend({
   -- MARK: Fuel Category
   {
     type = "fuel-category",
-    name = "antimatter-fuel",
+    name = "sp-kr-antimatter-fuel",
   },
 
   -- MARK: Recipe Category
   {
+    -- Growing, used by greenhouse
+    type = "recipe-category",
+    name = "sp-kr-growing",
+  },
+  {
+    -- Bioprocessing, used by bio-lab
+    type = "recipe-category",
+    name = "sp-kr-bioprocessing",
+  },
+  {
+    -- Crushing, used by crusher
+    type = "recipe-category",
+    name = "sp-kr-crushing",
+  },
+  {
+    -- Void Crushing, used by crusher
+    type = "recipe-category",
+    name = "sp-kr-void-crushing",
+  },
+  {
+    -- Crushing, used by crusher
+    type = "recipe-category",
+    name = "sp-kr-fuel-burning",
+  },
+  {
+    -- Electrolysis, used by filtration plant
+    type = "recipe-category",
+    name = "sp-kr-electrolysis",
+  },
+  {
+    -- Fluid filtration, used by electrolysis plant
+    type = "recipe-category",
+    name = "sp-kr-fluid-filtration",
+  },
+  {
+    -- Atmosphere condensation, used by atmospheric condenser to extract gases from the atmosphere
+    type = "recipe-category",
+    name = "sp-kr-atmosphere-condensation",
+  },
+  {
+    -- Fuel crafting category
+    type = "recipe-category",
+    name = "sp-kr-fuel-refinery",
+  },
+  {
+    -- Advanced Smelting crafting category for Advanced Furnace
+    type = "recipe-category",
+    name = "sp-kr-advanced-smelting",
+  },
+  {
+    -- Crafting category for building that are furnace and assemblers at the same time
+    type = "recipe-category",
+    name = "sp-kr-smelting-crafting",
+  },
+  {
+    -- From items to matter
     type = "recipe-category",
     name = "sp-kr-matter-conversion",
   },
   {
+    -- From matter to items
     type = "recipe-category",
     name = "sp-kr-matter-deconversion",
   },
   {
+    -- Items that in parts use matter
     type = "recipe-category",
     name = "sp-kr-matter-items",
   },

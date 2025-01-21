@@ -1,0 +1,28 @@
+Regex for replacing {"blank-tech-card", 5} to {type = "item", name = "blank-tech-card", amount = 5}
+
+\{"([^"]*)", (\d+)\}
+{type = "item", name = "$1", amount = $2}
+
+
+kr_remnants_path .. "
+"__Spaghetorio__/graphics/krastorio/entities/remnants/
+
+
+emissions_per_minute = (\d+)
+emissions_per_minute = {pollution = $1}
+
+
+kr_entities_path .. "
+"__Spaghetorio__/graphics/krastorio/entities/
+
+
+kr_entities_icons_path .. "
+"__Spaghetorio__/graphics/krastorio/icons/entities/
+
+
+kr_buildings_sounds_path .. "
+"__Spaghetorio__/sounds/buildings/
+
+
+off_when_no_fluid_recipe
+fluid_boxes_off_when_no_fluid_recipe

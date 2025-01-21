@@ -4151,6 +4151,32 @@ data:extend({
       {type = "item", name = "sp-lumber-mill", amount = 1}
     }
   },
+  {
+    type = "recipe",
+    name = "sp-kr-advanced-assembling-machine",  -- #ForRegEx# - recipe
+    icon_size = 64,
+    mip_maps = 4,
+    category = "crafting",
+    enabled = false,
+    energy_required = 90,
+    ingredients = {
+      {type = "item", name = "sp-blunagium-plate", amount = 32},
+      {type = "item", name = "sp-grobgnum-plate", amount = 24},
+      {type = "item", name = "sp-rukite-plate", amount = 20},
+      {type = "item", name = "sp-yemnuth-plate", amount = 30},
+      {type = "item", name = "sp-imersium-plate", amount = 60},
+      {type = "item", name = "sp-micro-machine", amount = 40},
+      {type = "item", name = "sp-nanobot", amount = 200},
+      {type = "item", name = "sp-turbopump", amount = 12},
+      {type = "item", name = "sp-energy-control-unit", amount = 16},
+      {type = "item", name = "superconductor", amount = 40},
+      {type = "item", name = "sp-advanced-processing-unit", amount = 32},
+      -- {type = "item", name = "kr-black-reinforced-plate", amount = 30}
+    },
+    results = {
+      {type = "item", name = "sp-kr-advanced-assembling-machine", amount = 1}
+    }
+  },
   ------------------------------------------------------------------------------
   -- MARK: Equipment
   ------------------------------------------------------------------------------

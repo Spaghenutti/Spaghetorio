@@ -17,12 +17,6 @@ Factorio Space age
     - spodumene as arsen ore
 
 
-Regex for replacing {"blank-tech-card", 5} to {type = "item", name = "blank-tech-card", amount = 5}
-
-\{"([^"]*)", (\d+)\}
-{type = "item", name = "$1", amount = $2}
-
-
 Buildings: Graphics (https://www.figma.com/proto/8ecwGOzYos13D0JTwV5kO9/Factorio-Buildings?node-id=2585-1158&node-type=frame&t=Tt0H6pFe0h0uH68x-0&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1ui%3D1&hotspot-hints=0&hide-ui=1)
   - Heat treatment convector (Use convector building from hurricane406)
   - particle accelerator / cyclotron (Use fusion reactor building from hurricane406)
