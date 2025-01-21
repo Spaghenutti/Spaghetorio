@@ -103,6 +103,19 @@ local util = require("data-util")
 data:extend({
   {
     type = "recipe",
+    name = "sp-iron-beam",  -- #ForRegEx# - recipe
+    category = "smelting",
+    enabled = false,
+    energy_required = 1,
+    ingredients = {
+      {type = "item", name = "iron-ore", amount = 3}
+    },
+    results = {
+      {type = "item", name = "sp-iron-beam", amount = 2}
+    }
+  },
+  {
+    type = "recipe",
     name = "sp-alumina",  -- #ForRegEx# - recipe
     category = "smelting",
     enabled = false,
@@ -3026,6 +3039,24 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-control-unit", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-rocket-control-unit",  -- #ForRegEx# - recipe
+    category = "crafting",
+    enabled = false,
+    energy_required = 5,
+    ingredients = {
+      {type = "item", name = "processing-unit", amount = 4},
+      {type = "item", name = "sp-processor", amount = 3},
+      {type = "item", name = "sp-anodized-aluminum", amount = 2},
+      {type = "item", name = "sp-antenna-chip", amount = 3},
+      {type = "item", name = "sp-glass-fiber", amount = 4},
+      {type = "item", name = "sp-insulated-wire", amount = 4},
+    },
+    results = {
+      {type = "item", name = "sp-rocket-control-unit", amount = 1}
     }
   },
   {
@@ -6918,8 +6949,8 @@ data:extend({
     -- Krastorio: {"blank-tech-card", 5}
     {
       {"stone", 10},
-      -- {"sand", 10},
-      -- {"quartz", 5},
+      {"sp-sand", 10},
+      {"sp-quartz", 5},
       {type = "fluid", name = "water", amount = 50},
     },
     result_count = 5,
