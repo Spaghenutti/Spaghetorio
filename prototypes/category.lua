@@ -15,6 +15,19 @@ data:extend({
   -- MARK: Recipe Category
   {
     type = "recipe-category",
+    name = "sp-kr-matter-conversion",
+  },
+  {
+    type = "recipe-category",
+    name = "sp-kr-matter-deconversion",
+  },
+  {
+    type = "recipe-category",
+    name = "sp-kr-matter-items",
+  },
+
+  {
+    type = "recipe-category",
     name = "sawing"
   },
   {

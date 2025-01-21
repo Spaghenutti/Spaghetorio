@@ -194,7 +194,7 @@ data:extend({
     enabled = false,
     energy_required = 10,
     ingredients = {
-      {type = "item", name = "sp-graphite", amount = 1}
+      {type = "item", name = "carbon", amount = 1}
     },
     results = {
       {type = "item", name = "sp-carbon-nanotubes", amount = 5}
@@ -207,7 +207,7 @@ data:extend({
     enabled = false,
     energy_required = 8,
     ingredients = {
-      {type = "item", name = "sp-graphite", amount = 1}
+      {type = "item", name = "carbon", amount = 1}
     },
     results = {
       {type = "item", name = "sp-graphene", amount = 4}
@@ -372,7 +372,7 @@ data:extend({
     energy_required = 2.4,
     ingredients = {
       {type = "item", name = "sp-titanium-ingot", amount = 1},
-      {type = "item", name = "sp-graphite", amount = 3},
+      {type = "item", name = "carbon", amount = 3},
     },
     results = {
       {type = "item", name = "sp-titanium-carbide", amount = 2}
@@ -601,20 +601,6 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-tungsten-slab", amount = 3}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-tungsten-carbide",  -- #ForRegEx# - recipe
-    category = "smelting",
-    enabled = false,
-    energy_required = 20,
-    ingredients = {
-      {type = "item", name = "sp-tungsten-powder", amount = 4},
-      {type = "item", name = "sp-graphite", amount = 3}
-    },
-    results = {
-      {type = "item", name = "sp-tungsten-carbide", amount = 3}
     }
   },
   {
@@ -1126,7 +1112,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-rare-metals-alloy-from-yttrium",  -- #ForRegEx# - recipe
-    icon = "__Krastorio2Assets__/icons/items-with-variations/rare-metals/rare-metals.png",
+    icon = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/rare-metals/rare-metals.png",
     icon_size = 64,
     mip_maps = 4,
     category = "intermediate-smelting",
@@ -1139,14 +1125,14 @@ data:extend({
       {type = "item", name = "sp-chromium-plate", amount = 10}
     },
     results = {
-      -- Base {type = "item", name = "sp-rare-metals-alloy", amount = 6}
+      {type = "item", name = "sp-rare-metals-alloy", amount = 6}
     },
     order = "ingot-[rare-metals-1]"
   },
   {
     type = "recipe",
     name = "sp-rare-metals-alloy-from-lanthanum",  -- #ForRegEx# - recipe
-    icons = util.icon.overlay_small_icon("__Krastorio2Assets__/icons/items-with-variations/rare-metals/rare-metals.png", 64,
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/krastorio/icons/items-with-variations/rare-metals/rare-metals.png", 64,
                                          "__Spaghetorio__/graphics/icons/lanthanum.png", 64),
     category = "intermediate-smelting",
     enabled = false,
@@ -1158,14 +1144,14 @@ data:extend({
       {type = "item", name = "sp-zinc-plate", amount = 8}
     },
     results = {
-      -- Base {type = "item", name = "sp-rare-metals-alloy", amount = 5}
+      {type = "item", name = "sp-rare-metals-alloy", amount = 5}
     },
     order = "ingot-[rare-metals-alloy-from-lanthanum]"
   },
   {
     type = "recipe",
     name = "sp-rare-metals-alloy-from-cerium",  -- #ForRegEx# - recipe
-    icons = util.icon.overlay_small_icon("__Krastorio2Assets__/icons/items-with-variations/rare-metals/rare-metals.png", 64,
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/krastorio/icons/items-with-variations/rare-metals/rare-metals.png", 64,
                                          "__Spaghetorio__/graphics/icons/cerium.png", 64),
     category = "intermediate-smelting",
     enabled = false,
@@ -1178,14 +1164,14 @@ data:extend({
       {type = "item", name = "sp-aluminum-sheet", amount = 14}
     },
     results = {
-      -- Base {type = "item", name = "sp-rare-metals-alloy", amount = 10}
+      {type = "item", name = "sp-rare-metals-alloy", amount = 10}
     },
     order = "ingot-[rare-metals-alloy-from-cerium]"
   },
   {
     type = "recipe",
     name = "sp-rare-metals-alloy-from-neodymium",  -- #ForRegEx# - recipe
-    icons = util.icon.overlay_small_icon("__Krastorio2Assets__/icons/items-with-variations/rare-metals/rare-metals.png", 64,
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/krastorio/icons/items-with-variations/rare-metals/rare-metals.png", 64,
                                          "__Spaghetorio__/graphics/icons/neodymium.png", 64),
     category = "intermediate-smelting",
     enabled = false,
@@ -1198,7 +1184,7 @@ data:extend({
       {type = "item", name = "sp-niobium-billet", amount = 2},
     },
     results = {
-      -- Base {type = "item", name = "sp-rare-metals-alloy", amount = 6}
+      {type = "item", name = "sp-rare-metals-alloy", amount = 6}
     },
     order = "ingot-[rare-metals-alloy-from-neodymium]"
   },
@@ -1215,7 +1201,7 @@ data:extend({
     enabled = false,
     energy_required = 2,
     ingredients = {
-      {type = "item", name = "sp-graphite", amount = 2},
+      {type = "item", name = "carbon", amount = 2},
       {type = "fluid", name = "sp-dirty-water-with-sulfur", amount = 60}
     },
     results = {
@@ -1284,7 +1270,7 @@ data:extend({
     enabled = false,
     energy_required = 3.2,
     ingredients = {
-      -- Base: {"sp-glass", 1}, Krastorio: {"glass", 1}
+      -- Base: {type = "item", name = "sp-glass", amount = 1}, Krastorio: {type = "item", name = "glass", amount = 1}
       {type = "item", name = "sp-stainless-steel", amount = 1},
       {type = "item", name = "sp-brass", amount = 3},
       {type = "item", name = "sp-flange", amount = 2}
@@ -1339,7 +1325,7 @@ data:extend({
     type = "recipe",
     name = "sp-bolts-from-steel-plate",  -- #ForRegEx# - recipe
     icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/bolts-1.png", 64,
-                                         "__Krastorio2Assets__/icons/items/steel-plate.png", 64),
+                                         "__Spaghetorio__/graphics/krastorio/icons/items/steel-plate.png", 64),
     category = "crafting",
     enabled = false,
     energy_required = 2.5,
@@ -1370,7 +1356,7 @@ data:extend({
     type = "recipe",
     name = "sp-machined-parts-from-steel-plate",  -- #ForRegEx# - recipe
     icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/machined-parts-4.png", 64,
-                                         "__Krastorio2Assets__/icons/items/steel-plate.png", 64),
+                                         "__Spaghetorio__/graphics/krastorio/icons/items/steel-plate.png", 64),
     category = "crafting",
     enabled = false,
     energy_required = 6,
@@ -1434,7 +1420,7 @@ data:extend({
     enabled = false,
     energy_required = 2,
     ingredients = {
-      {type = "item", name = "sp-graphite", amount = 1},
+      {type = "item", name = "carbon", amount = 1},
       {type = "fluid", name = "sp-phosphoric-acid", amount = 12},
       {type = "item", name = "copper-cable", amount = 2},
       {type = "item", name = "sp-nickel-ingot", amount = 1}
@@ -1703,7 +1689,7 @@ data:extend({
     ingredients = {
       {type = "item", name = "sp-zirconia", amount = 2},
       {type = "item", name = "sp-silica", amount = 1},
-      {type = "item", name = "sp-graphite", amount = 3}
+      {type = "item", name = "carbon", amount = 3}
     },
     results = {
       {type = "item", name = "sp-heat-resistant-tile", amount = 1}
@@ -1774,7 +1760,7 @@ data:extend({
     enabled = false,
     energy_required = 8,
     ingredients = {
-      {type = "item", name = "sp-graphite", amount = 12}
+      {type = "item", name = "carbon", amount = 12}
     },
     results = {
       {type = "item", name = "sp-diamond", amount = 1}
@@ -1801,7 +1787,7 @@ data:extend({
     enabled = false,
     energy_required = 12,
     ingredients = {
-      {type = "item", name = "sp-tungsten-carbide", amount = 1},
+      {type = "item", name = "tungsten-carbide", amount = 1},
       {type = "item", name = "sp-TiNb", amount = 2},
       {type = "item", name = "sp-graphene", amount = 3},
       {type = "item", name = "sp-high-purity-silicon", amount = 1}
@@ -1837,29 +1823,6 @@ data:extend({
     results = {
       {type = "item", name = "sp-filter", amount = 1}
     }
-  },
-  {
-    type = "recipe",
-    name = "sp-coolant",  -- #ForRegEx# - recipe
-    category = "chemistry",
-    subgroup = "fluid-recipes",
-    enabled = false,
-    energy_required = 3.2,
-    ingredients = {
-      {type = "item", name = "sp-fluorine", amount = 1},
-      {type = "item", name = "sp-graphite", amount = 1},
-      {type = "fluid", name = "water", amount = 50}
-    },
-    results = {
-      {type = "fluid", name = "sp-coolant", amount = 50}
-    },
-    crafting_machine_tint = {
-      primary = {r = 0.500, g = 0.500, b = 1.000, a = 1.000},
-      secondary = {r = 0.500, g = 0.500, b = 1.000, a = 1.000},
-      tertiary = {r = 0.200, g = 0.200, b = 1.000, a = 1.000},
-      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
-    },
-    order = "[liquid]-[aqueous-niobium-and-tantalum]"
   },
   {
     type = "recipe",
@@ -2002,7 +1965,7 @@ data:extend({
     ingredients = {
       {type = "item", name = "sp-inconel", amount = 2},
       {type = "item", name = "copper-plate", amount = 1},
-      {type = "item", name = "sp-tungsten-carbide", amount = 1}
+      {type = "item", name = "tungsten-carbide", amount = 1}
     },
     results = {
       {type = "item", name = "sp-spark-plug", amount = 4}
@@ -2199,7 +2162,7 @@ data:extend({
       {type = "item", name = "sp-turbine-blade", amount = 10},
       {type = "item", name = "sp-ceramics", amount = 2},
       {type = "item", name = "sp-stainless-steel", amount = 3},
-      {type = "item", name = "sp-tungsten-carbide", amount = 3},
+      {type = "item", name = "tungsten-carbide", amount = 3},
       {type = "item", name = "sp-bolts", amount = 8}
     },
     results = {
@@ -2216,7 +2179,7 @@ data:extend({
       {type = "item", name = "copper-plate", amount = 2},
       {type = "item", name = "sp-TiAlSn", amount = 2},
       {type = "item", name = "sp-tungsten-slab", amount = 6},
-      {type = "item", name = "sp-tungsten-carbide", amount = 2},
+      {type = "item", name = "tungsten-carbide", amount = 2},
       {type = "item", name = "sp-bolts", amount = 4}
     },
     results = {
@@ -2230,7 +2193,7 @@ data:extend({
     enabled = false,
     energy_required = 3,
     ingredients = {
-      {type = "item", name = "sp-tungsten-carbide", amount = 1},
+      {type = "item", name = "tungsten-carbide", amount = 1},
       {type = "item", name = "sp-inconel", amount = 1}
     },
     results = {
@@ -2327,7 +2290,7 @@ data:extend({
     enabled = false,
     energy_required = 20,
     ingredients = {
-      {type = "item", name = "sp-graphite", amount = 2},
+      {type = "item", name = "carbon", amount = 2},
       {type = "item", name = "sp-tungsten-slab", amount = 1},
       {type = "item", name = "sp-zirconium-rod", amount = 2},
       {type = "item", name = "sp-cerium", amount = 1},
@@ -2488,7 +2451,7 @@ data:extend({
     energy_required = 3,
     hide_from_player_crafting = true,
     ingredients = {
-      {type = "item", name = "sp-graphite", amount = 2},
+      {type = "item", name = "carbon", amount = 2},
       {type = "item", name = "sp-aluminum-sheet", amount = 2},
       {type = "fluid", name = "sp-liquid-sodium", amount = 20},
       {type = "fluid", name = "sp-propylene", amount = 40}
@@ -2550,7 +2513,7 @@ data:extend({
     enabled = false,
     energy_required = 12,
     ingredients = {
-      -- Base: {"sp-nitrogem", 10}, Krastorio: {"nitrogen", 10}
+      -- Base: {type = "item", name = "sp-nitrogem", amount = 10}, Krastorio: {type = "item", name = "nitrogen", amount = 10}
       {type = "item", name = "sulfur", amount = 3},
       {type = "fluid", name = "water", amount = 50}
     },
@@ -2573,8 +2536,8 @@ data:extend({
     enabled = false,
     energy_required = 20,
     ingredients = {
-      -- Base: {"water", 50}, Krastorio: {"mineral-water", 30}
-      -- Base: {"sp-chlorine", 20}, Krastorio: {"hydrogen-chloride", 20}
+      -- Base: {type = "item", name = "water", amount = 50}, Krastorio: {type = "item", name = "mineral-water", amount = 30}
+      -- Base: {type = "item", name = "sp-chlorine", amount = 20}, Krastorio: {type = "item", name = "hydrogen-chloride", amount = 20}
       {type = "item", name = "sp-catalyst", amount = 1}
     },
     results = {
@@ -2726,7 +2689,7 @@ data:extend({
     enabled = false,
     energy_required = 5,
     ingredients = {
-      {type = "item", name = "electric-motor", amount = 1},
+      {type = "item", name = "electric-engine-unit", amount = 1},
       {type = "item", name = "sp-ball-bearing", amount = 2},
       {type = "item", name = "sp-bolts", amount = 4},
       {type = "item", name = "sp-stainless-steel", amount = 3},
@@ -2748,7 +2711,7 @@ data:extend({
       {type = "item", name = "sp-tungsten-slab", amount = 3},
       {type = "item", name = "sp-machined-parts", amount = 2},
       {type = "item", name = "sp-ceramics", amount = 1},
-      {type = "item", name = "sp-graphite", amount = 3}
+      {type = "item", name = "carbon", amount = 3}
     },
     results = {
       {type = "item", name = "sp-heating-filament", amount = 1}
@@ -3141,7 +3104,7 @@ data:extend({
     energy_required = 3.6,
     ingredients = {
       {type = "item", name = "sp-tungsten-powder", amount = 1},
-      {type = "item", name = "sp-graphite", amount = 1},
+      {type = "item", name = "carbon", amount = 1},
       {type = "item", name = "sp-rukite-powder", amount = 4}
     },
     results = {
@@ -3290,7 +3253,7 @@ data:extend({
     ingredients = {
       {type = "item", name = "sp-plasma-crystal", amount = 1},
       {type = "item", name = "sp-monocrystal", amount = 1},
-      {type = "item", name = "sp-tungsten-carbide", amount = 4},
+      {type = "item", name = "tungsten-carbide", amount = 4},
       {type = "item", name = "sp-titanium-nitride", amount = 2},
     },
     results = {
@@ -3478,7 +3441,7 @@ data:extend({
     energy_required = 12,
     ingredients = {
       {type = "item", name = "sp-catalyst", amount = 2},
-      {type = "item", name = "sp-graphite", amount = 6},
+      {type = "item", name = "carbon", amount = 6},
       {type = "fluid", name = "sp-styrene", amount = 10},
       {type = "fluid", name = "sp-grobgnum-slurry", amount = 50}
     },
@@ -3668,7 +3631,7 @@ data:extend({
       {type = "item", name = "sp-yttrium", amount = 1},
       {type = "item", name = "sp-inconel", amount = 10},
       {type = "item", name = "sp-duralumin", amount = 3},
-      {type = "item", name = "rocket-control-unit", amount = 5},
+      {type = "item", name = "sp-rocket-control-unit", amount = 5},
       {type = "item", name = "sp-electrode", amount = 10},
       {type = "item", name = "sp-electromagnet", amount = 4},
       {type = "fluid", name = "sp-xenon", amount = 20}
@@ -3713,24 +3676,24 @@ data:extend({
       {type = "item", name = "sp-blunagium-explorer", amount = 1}
     }
   },
-  {
-    type = "recipe",
-    name = "sp-blunagium-rocket-silo",  -- #ForRegEx# - recipe
-    category = "crafting-with-fluid",
-    enabled = false,
-    energy_required = 300,
-    ingredients = {
-      {type = "item", name = "rocket-silo", amount = 1},
-      {type = "item", name = "sp-blunagium-bar", amount = 100},
-      {type = "item", name = "sp-blunagium-foam", amount = 100},
-      {type = "item", name = "sp-micro-machine", amount = 40},
-      {type = "item", name = "sp-superconductor", amount = 60},
-      {type = "fluid", name = "sp-liquid-nitrogen", amount = 400},
-    },
-    results = {
-      {type = "item", name = "sp-blunagium-rocket-silo", amount = 1}
-    }
-  },
+  -- {
+  --   type = "recipe",
+  --   name = "sp-blunagium-rocket-silo",  -- #ForRegEx# - recipe
+  --   category = "crafting-with-fluid",
+  --   enabled = false,
+  --   energy_required = 300,
+  --   ingredients = {
+  --     {type = "item", name = "rocket-silo", amount = 1},
+  --     {type = "item", name = "sp-blunagium-bar", amount = 100},
+  --     {type = "item", name = "sp-blunagium-foam", amount = 100},
+  --     {type = "item", name = "sp-micro-machine", amount = 40},
+  --     {type = "item", name = "sp-superconductor", amount = 60},
+  --     {type = "fluid", name = "sp-liquid-nitrogen", amount = 400},
+  --   },
+  --   results = {
+  --     {type = "item", name = "sp-blunagium-rocket-silo", amount = 1}
+  --   }
+  -- },
   {
     type = "recipe",
     name = "sp-blunagium-rocket",  -- #ForRegEx# - recipe
@@ -3740,7 +3703,7 @@ data:extend({
     hidden = true,
     energy_required = 60,
     ingredients = {
-      {type = "item", name = "rocket-control-unit", amount = 80},
+      {type = "item", name = "sp-rocket-control-unit", amount = 80},
       {type = "item", name = "sp-advanced-processing-unit", amount = 120},
       {type = "item", name = "sp-optical-sensor", amount = 200},
       {type = "item", name = "sp-heat-resistant-tile", amount = 120},
@@ -3776,26 +3739,26 @@ data:extend({
       {type = "item", name = "sp-grobgnum-explorer", amount = 1}
     }
   },
-  {
-    type = "recipe",
-    name = "sp-grobgnum-rocket-silo",  -- #ForRegEx# - recipe
-    category = "crafting-with-fluid",
-    enabled = false,
-    energy_required = 240,
-    ingredients = {
-      {type = "item", name = "rocket-silo", amount = 1},
-      {type = "item", name = "sp-grobgnum-bar", amount = 80},
-      {type = "item", name = "sp-grobgnum-cube", amount = 120},
-      {type = "item", name = "sp-cybernetics", amount = 40},
-      {type = "item", name = "sp-superconductor", amount = 60},
-      {type = "item", name = "sp-chromium-plate", amount = 200},
-      {type = "item", name = "sp-fluorspar", amount = 300},
-      {type = "fluid", name = "sp-grobgnum-hydroxide", amount = 400},
-    },
-    results = {
-      {type = "item", name = "sp-grobgnum-rocket-silo", amount = 1}
-    }
-  },
+  -- {
+  --   type = "recipe",
+  --   name = "sp-grobgnum-rocket-silo",  -- #ForRegEx# - recipe
+  --   category = "crafting-with-fluid",
+  --   enabled = false,
+  --   energy_required = 240,
+  --   ingredients = {
+  --     {type = "item", name = "rocket-silo", amount = 1},
+  --     {type = "item", name = "sp-grobgnum-bar", amount = 80},
+  --     {type = "item", name = "sp-grobgnum-cube", amount = 120},
+  --     {type = "item", name = "sp-cybernetics", amount = 40},
+  --     {type = "item", name = "sp-superconductor", amount = 60},
+  --     {type = "item", name = "sp-chromium-plate", amount = 200},
+  --     {type = "item", name = "sp-fluorspar", amount = 300},
+  --     {type = "fluid", name = "sp-grobgnum-hydroxide", amount = 400},
+  --   },
+  --   results = {
+  --     {type = "item", name = "sp-grobgnum-rocket-silo", amount = 1}
+  --   }
+  -- },
   {
     type = "recipe",
     name = "sp-grobgnum-rocket",  -- #ForRegEx# - recipe
@@ -3805,7 +3768,7 @@ data:extend({
     hidden = true,
     energy_required = 60,
     ingredients = {
-      {type = "item", name = "rocket-control-unit", amount = 40},
+      {type = "item", name = "sp-rocket-control-unit", amount = 40},
       {type = "item", name = "sp-biochip", amount = 60},
       {type = "item", name = "sp-optical-sensor", amount = 120},
       {type = "item", name = "sp-heat-resistant-tile", amount = 300},
@@ -3841,26 +3804,26 @@ data:extend({
       {type = "item", name = "sp-rukite-explorer", amount = 1}
     }
   },
-  {
-    type = "recipe",
-    name = "sp-rukite-rocket-silo",  -- #ForRegEx# - recipe
-    category = "crafting",
-    enabled = false,
-    energy_required = 60,
-    ingredients = {
-      {type = "item", name = "rocket-silo", amount = 1},
-      {type = "item", name = "sp-chronalyte", amount = 20},
-      {type = "item", name = "sp-rukite-bar", amount = 30},
-      {type = "item", name = "sp-rukite-powder", amount = 60},
-      {type = "item", name = "sp-gravitonium", amount = 40},
-      {type = "item", name = "sp-brass", amount = 300},
-      {type = "item", name = "sp-diamond", amount = 120},
-      {type = "item", name = "sp-titanium-nitride", amount = 240}
-    },
-    results = {
-      {type = "item", name = "sp-rukite-rocket-silo", amount = 1}
-    }
-  },
+  -- {
+  --   type = "recipe",
+  --   name = "sp-rukite-rocket-silo",  -- #ForRegEx# - recipe
+  --   category = "crafting",
+  --   enabled = false,
+  --   energy_required = 60,
+  --   ingredients = {
+  --     {type = "item", name = "rocket-silo", amount = 1},
+  --     {type = "item", name = "sp-chronalyte", amount = 20},
+  --     {type = "item", name = "sp-rukite-bar", amount = 30},
+  --     {type = "item", name = "sp-rukite-powder", amount = 60},
+  --     {type = "item", name = "sp-gravitonium", amount = 40},
+  --     {type = "item", name = "sp-brass", amount = 300},
+  --     {type = "item", name = "sp-diamond", amount = 120},
+  --     {type = "item", name = "sp-titanium-nitride", amount = 240}
+  --   },
+  --   results = {
+  --     {type = "item", name = "sp-rukite-rocket-silo", amount = 1}
+  --   }
+  -- },
   {
     type = "recipe",
     name = "sp-rukite-rocket",  -- #ForRegEx# - recipe
@@ -3870,7 +3833,7 @@ data:extend({
     hidden = true,
     energy_required = 60,
     ingredients = {
-      {type = "item", name = "rocket-control-unit", amount = 40},
+      {type = "item", name = "sp-rocket-control-unit", amount = 40},
       {type = "item", name = "sp-advanced-processing-unit", amount = 80},
       {type = "item", name = "sp-control-unit", amount = 20},
       {type = "item", name = "sp-heat-resistant-tile", amount = 450},
@@ -3905,25 +3868,25 @@ data:extend({
       {type = "item", name = "sp-yemnuth-explorer", amount = 1}
     }
   },
-  {
-    type = "recipe",
-    name = "sp-yemnuth-rocket-silo",  -- #ForRegEx# - recipe
-    category = "crafting",
-    enabled = false,
-    energy_required = 60,
-    ingredients = {
-      {type = "item", name = "rocket-silo", amount = 1},
-      {type = "item", name = "sp-plasma-capsule", amount = 20},
-      {type = "item", name = "sp-gamma-radiation-source", amount = 20},
-      {type = "item", name = "sp-yemnuth-pearls", amount = 80},
-      {type = "item", name = "sp-yemnuth-shard", amount = 120},
-      {type = "item", name = "sp-aluminum-brass", amount = 100},
-      {type = "item", name = "sp-TiAlSn", amount = 60}
-    },
-    results = {
-      {type = "item", name = "sp-yemnuth-rocket-silo", amount = 1}
-    }
-  },
+  -- {
+  --   type = "recipe",
+  --   name = "sp-yemnuth-rocket-silo",  -- #ForRegEx# - recipe
+  --   category = "crafting",
+  --   enabled = false,
+  --   energy_required = 60,
+  --   ingredients = {
+  --     {type = "item", name = "rocket-silo", amount = 1},
+  --     {type = "item", name = "sp-plasma-capsule", amount = 20},
+  --     {type = "item", name = "sp-gamma-radiation-source", amount = 20},
+  --     {type = "item", name = "sp-yemnuth-pearls", amount = 80},
+  --     {type = "item", name = "sp-yemnuth-shard", amount = 120},
+  --     {type = "item", name = "sp-aluminum-brass", amount = 100},
+  --     {type = "item", name = "sp-TiAlSn", amount = 60}
+  --   },
+  --   results = {
+  --     {type = "item", name = "sp-yemnuth-rocket-silo", amount = 1}
+  --   }
+  -- },
   {
     type = "recipe",
     name = "sp-yemnuth-rocket",  -- #ForRegEx# - recipe
@@ -3933,8 +3896,8 @@ data:extend({
     hidden = true,
     energy_required = 60,
     ingredients = {
-      -- Krastorio {"dt-fuel", 5}
-      {type = "item", name = "rocket-control-unit", amount = 60},
+      -- Krastorio {type = "item", name = "dt-fuel", amount = 5}
+      {type = "item", name = "sp-rocket-control-unit", amount = 60},
       {type = "item", name = "sp-advanced-processing-unit", amount = 200},
       {type = "item", name = "sp-heat-resistant-tile", amount = 400},
       {type = "item", name = "sp-invar", amount = 160},
@@ -3964,7 +3927,7 @@ data:extend({
     results = {
       {type = "item", name = "sp-plutonium-239", probability=0.005, amount = 1},
       {type = "item", name = "uranium-238", probability=0.015, amount = 1},
-      {type = "item", name = "sp-graphite", probability=0.08, amount = 1},
+      {type = "item", name = "carbon", probability=0.08, amount = 1},
       {type = "item", name = "sp-tungsten-ore", probability=0.06, amount = 1},
       {type = "item", name = "sp-zirconium-ore", probability=0.10, amount = 1},
       {type = "item", name = "sp-cerium", probability=0.06, amount = 1},
@@ -4036,7 +3999,7 @@ data:extend({
       {type = "item", name = "sp-nanowire", amount = 2},
       {type = "item", name = "sp-nanobot", amount = 100},
       {type = "item", name = "sp-micro-frame", amount = 6}
-      -- Krastorio: {"energy-control-unit", 5}
+      -- Krastorio: {type = "item", name = "energy-control-unit", amount = 5}
     },
     results = {
       {type = "item", name = "sp-productivity-module-4", amount = 1}
@@ -4054,7 +4017,7 @@ data:extend({
     enabled = false,
     energy_required = 20,
     ingredients = {
-      {type = "item", name = "motor", amount = 6},
+      {type = "item", name = "engine-unit", amount = 6},
       {type = "item", name = "sp-spring", amount = 8},
       {type = "item", name = "steel-plate", amount = 10},
       {type = "item", name = "sp-bolts", amount = 16},
@@ -4269,7 +4232,7 @@ data:extend({
     enabled = false,
     energy_required = 45,
     ingredients = {
-      {type = "item", name = "imersite-powder", amount = 6},
+      {type = "item", name = "sp-imersite-powder", amount = 6},
       {type = "item", name = "sp-rukite-powder", amount = 5},
       {type = "item", name = "sp-palladium", amount = 1},
       {type = "item", name = "sp-lithium-oxide", amount = 1},
@@ -4328,7 +4291,7 @@ data:extend({
     ingredients = {
       {type = "item", name = "sp-blunagium-basalt", amount = 1},
       {type = "item", name = "sp-blunagium-rukite-compound", amount = 1},
-      {type = "item", name = "imersite-powder", amount = 3},
+      {type = "item", name = "sp-imersite-powder", amount = 3},
       {type = "item", name = "sp-rukite-powder", amount = 2},
       {type = "item", name = "sp-gravitonium", amount = 1}
     },
@@ -4364,7 +4327,7 @@ data:extend({
     energy_required = 50,
     ingredients = {
       -- Krastorio: {type = "item", name = "imersite-crystal", amount = 2},
-      -- Krastorio: {type = "item", name = "imersite-powder", amount = 1},
+      -- Krastorio: {type = "item", name = "sp-imersite-powder", amount = 1},
       {type = "item", name = "sp-blunagium-bar", amount = 1},
       {type = "item", name = "sp-quantum-crystal", amount = 1}
     },
@@ -4383,7 +4346,7 @@ data:extend({
       {type = "item", name = "sp-blunagium-basalt", amount = 1},
       {type = "item", name = "sp-rukite-powder", amount = 1},
       {type = "item", name = "sp-yemnuth-pearls", amount = 1},
-      -- Krastorio: {type = "item", name = "imersite-powder", amount = 1},
+      -- Krastorio: {type = "item", name = "sp-imersite-powder", amount = 1},
       {type = "item", name = "sp-diamond", amount = 6}
     },
     results = {
@@ -4419,7 +4382,7 @@ data:extend({
       {type = "item", name = "sp-plutonium-240", amount = 1},
       {type = "item", name = "sp-blunagium-foam", amount = 1},
       {type = "item", name = "sp-blunagium-basalt", amount = 2},
-      -- Krastorio: {type = "item", name = "imersite-powder", amount = 3}
+      -- Krastorio: {type = "item", name = "sp-imersite-powder", amount = 3}
     },
     results = {
       {type = "item", name = "sp-boson-blossom", amount = 1}
@@ -4490,7 +4453,7 @@ data:extend({
       {type = "item", name = "sp-yttrium", amount = 1},
       {type = "item", name = "sp-niobium-powder", amount = 1},
       {type = "fluid", name = "sp-grobgnum-hydroxide", amount = 4},
-      -- Krastorio: {"biomass", 1}
+      -- Krastorio: {type = "item", name = "biomass", amount = 1}
     },
     results = {
       {type = "item", name = "sp-bio-capacitor", amount = 1}
@@ -4509,9 +4472,9 @@ data:extend({
       {type = "item", name = "sp-grobgnum-plate", amount = 1},
       {type = "item", name = "sp-graphene", amount = 3},
       {type = "fluid", name = "sp-grobgnumylene", amount = 3},
-      -- Krastorio: {"tritium", 1},
-      -- Krastorio: {"lithium", 1},
-      -- Krastorio: {"biomass", 2}
+      -- Krastorio: {type = "item", name = "tritium", amount = 1},
+      -- Krastorio: {type = "item", name = "lithium", amount = 1},
+      -- Krastorio: {type = "item", name = "biomass", amount = 2}
     },
     results = {
       {type = "item", name = "sp-neural-fusion-card", amount = 1}
@@ -4530,8 +4493,8 @@ data:extend({
       {type = "item", name = "sp-glass-fiber", amount = 1},
       {type = "item", name = "sp-stibnite", amount = 1},
       {type = "fluid", name = "sp-grobgnumylene", amount = 5},
-      -- Krastorio: {"biomass", 2},
-      -- Krastorio: {"ai-core", 2}
+      -- Krastorio: {type = "item", name = "biomass", amount = 2},
+      -- Krastorio: {type = "item", name = "ai-core", amount = 2}
     },
     results = {
       {type = "item", name = "sp-neuropulse-module", amount = 1}
@@ -4551,8 +4514,8 @@ data:extend({
       {type = "item", name = "sp-glass-fiber", amount = 1},
       {type = "item", name = "sp-antimony", amount = 2},
       {type = "fluid", name = "sp-grobgnum-hydroxide", amount = 8},
-      -- Krastorio: {"biomass", 3},
-      -- Krastorio: {"ai-core", 1}
+      -- Krastorio: {type = "item", name = "biomass", amount = 3},
+      -- Krastorio: {type = "item", name = "ai-core", amount = 1}
     },
     results = {
       {type = "item", name = "sp-synaptic-core-chip", amount = 1}
@@ -4628,7 +4591,7 @@ data:extend({
       {type = "item", name = "sp-high-purity-silicon", amount = 1},
       {type = "item", name = "sp-gold", amount = 1},
       {type = "item", name = "sp-rukite-powder", amount = 1},
-      -- Krastorio: {type = "item", name = "imersite-powder", amount = 2},
+      -- Krastorio: {type = "item", name = "sp-imersite-powder", amount = 2},
     },
     results = {
       {type = "item", name = "sp-graphene-chip", amount = 1}
@@ -4679,7 +4642,7 @@ data:extend({
       {type = "item", name = "sp-rukite-gear-wheel", amount = 10},
       -- Krastorio: {type = "item", name = "imersium-gear-wheel", amount = 4},
       {type = "item", name = "sp-TiNb", amount = 2},
-      {type = "item", name = "sp-tungsten-carbide", amount = 3}
+      {type = "item", name = "tungsten-carbide", amount = 3}
     },
     results = {
       {type = "item", name = "sp-rukite-gearbox", amount = 1}
@@ -4726,7 +4689,7 @@ data:extend({
       {type = "item", name = "sp-plasma-crystal", amount = 1},
       {type = "item", name = "sp-quantum-crystal", amount = 1},
       {type = "fluid", name = "sp-xenon", amount = 5},
-      -- Krastorio: {"tritium", 1}
+      -- Krastorio: {type = "item", name = "tritium", amount = 1}
     },
     results = {
       {type = "item", name = "sp-gluon-orb", amount = 25}
@@ -4791,7 +4754,7 @@ data:extend({
     ingredients = {
       {type = "item", name = "sp-plasma-crystal", amount = 1},
       {type = "item", name = "sp-gravitonium", amount = 1},
-      -- {type = "item", name = "imersite-powder", amount = 1},
+      -- {type = "item", name = "sp-imersite-powder", amount = 1},
     },
     results = {
       {type = "item", name = "sp-trapped-quantum-energy", amount = 10}
@@ -4800,7 +4763,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-femto-navigator",  -- #ForRegEx# - recipe
-    category = "matter-condensing",  -- Krastorio: "matter-items"
+    category = "sp-kr-matter-items",
     enabled = false,
     energy_required = 5,
     ingredients = {
@@ -4808,7 +4771,7 @@ data:extend({
       {type = "item", name = "sp-neutrino-stream-source", amount = 1},
       {type = "item", name = "sp-nanoflex", amount = 1},
       {type = "item", name = "sp-nanowire", amount = 1},
-      -- {type = "item", name = "imersite-powder", amount = 1},
+      -- {type = "item", name = "sp-imersite-powder", amount = 1},
     },
     results = {
       {type = "item", name = "sp-femto-navigator", amount = 10}
@@ -4817,7 +4780,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-orbital-cell",  -- #ForRegEx# - recipe
-    category = "matter-condensing",  -- Krastorio: "matter-items"
+    category = "sp-kr-matter-items",
     enabled = false,
     energy_required = 2,
     ingredients = {
@@ -4833,7 +4796,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-quantized-compute-unit",  -- #ForRegEx# - recipe
-    category = "matter-condensing",  -- Krastorio: "matter-items"
+    category = "sp-kr-matter-items",
     enabled = false,
     energy_required = 8,
     ingredients = {
@@ -4850,7 +4813,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-quantum-tube",  -- #ForRegEx# - recipe
-    category = "matter-condensing",  -- Krastorio: "matter-items"
+    category = "sp-kr-matter-items",
     enabled = false,
     energy_required = 12,
     ingredients = {
@@ -4875,7 +4838,7 @@ data:extend({
       {type = "item", name = "sp-rukite-powder", amount = 2},
       {type = "item", name = "sp-blunagium-stone", amount = 1},
       {type = "item", name = "sp-blunagium-rukite-compound", amount = 5},
-      -- Krastorio: {type = "item", name = "imersite-powder", amount = 2}
+      -- Krastorio: {type = "item", name = "sp-imersite-powder", amount = 2}
     },
     results = {
       {type = "item", name = "sp-frictionless-bearing", amount = 3}
@@ -5080,7 +5043,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-quantized-protons",  -- #ForRegEx# - recipe
-    category = "matter-condensing",  -- Krastorio: "matter-items"
+    category = "sp-kr-matter-items",
     enabled = false,
     energy_required = 30,
     ingredients = {
@@ -5096,7 +5059,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-quantum-capacitor",  -- #ForRegEx# - recipe
-    category = "matter-condensing",  -- Krastorio: "matter-items"
+    category = "sp-kr-matter-items",
     enabled = false,
     energy_required = 50,
     ingredients = {
@@ -5994,7 +5957,7 @@ data:extend({
       {type = "item", name = "sp-acrocrystal", probability=0.98, amount = 1},
       {type = "item", name = "stone", probability=0.15, amount = 1},
       {type = "item", name = "iron-ore", probability=0.1, amount = 1},
-      {type = "item", name = "sp-graphite", probability=0.1, amount = 1}
+      {type = "item", name = "carbon", probability=0.1, amount = 1}
       -- add coke for krastorio
     }
   },
@@ -6023,7 +5986,7 @@ data:extend({
       {type = "item", name = "sp-aluminum-ore", amount = 14},
       {type = "item", name = "sp-acrocrystal", probability=0.99, amount = 1},
       {type = "item", name = "sp-phosphorus", probability=0.1, amount = 1},
-      {type = "item", name = "sp-graphite", probability=0.05, amount = 1}
+      {type = "item", name = "carbon", probability=0.05, amount = 1}
       -- add 0.2 for silicon in krastorio
     }
   },
@@ -6541,12 +6504,12 @@ data:extend({
     },
     allow_decomposition = false,
     ingredients = {
-      {type = "item", name = "sp-graphite", amount = 4},
+      {type = "item", name = "carbon", amount = 4},
       {type = "item", name = "sp-acrovoid", amount = 1}
     },
     results = {
       {type = "item", name = "sp-acrovoid", probability=0.99, amount = 1},
-      {type = "item", name = "sp-graphite", amount = 5},
+      {type = "item", name = "carbon", amount = 5},
       {type = "item", name = "sp-tinstone", probability=0.15, amount = 1},
       {type = "item", name = "sp-leadstone", probability=0.1, amount = 1}
     }
@@ -6611,7 +6574,7 @@ data:extend({
       {type = "item", name = "sp-acrovoid", probability=0.99, amount = 1},
       {type = "item", name = "sp-leadstone", amount = 10},
       {type = "item", name = "sp-tinstone", probability=0.4, amount = 1},
-      {type = "item", name = "sp-graphite", probability=0.2, amount = 1},
+      {type = "item", name = "carbon", probability=0.2, amount = 1},
       -- add 0.12% silicon in krastorio
     }
   },
@@ -6930,31 +6893,33 @@ data:extend({
     enabled = false,
     energy_required = 24,
     ingredients =
-    -- Krastorio: {"blank-tech-card", 5}
+    -- Krastorio: {type = "item", name = "blank-tech-card", amount = 5}
     {
-      {"copper-cable", 5},
-      {"electronic-circuit", 5},
-      {"sp-solder", 10}
+      {type = "item", name = "copper-cable", amount = 5},
+      {type = "item", name = "electronic-circuit", amount = 5},
+      {type = "item", name = "sp-solder", amount = 10}
     },
-    result_count = 5,
-    result = "sp-electronic-science-pack-1"
+    results = {
+      {type = "item", name = "sp-electronic-science-pack-1", amount = 5}
+    }
   },
   {
     type = "recipe",
     name = "sp-geological-science-pack-1",  -- #ForRegEx# - recipe
-    category = "crafting",
+    category = "crafting-with-fluid",
     enabled = false,
     energy_required = 24,
     ingredients =
-    -- Krastorio: {"blank-tech-card", 5}
+    -- Krastorio: {type = "item", name = "blank-tech-card", amount = 5}
     {
-      {"stone", 10},
-      {"sp-sand", 10},
-      {"sp-quartz", 5},
+      {type = "item", name = "stone", amount = 10},
+      {type = "item", name = "sp-sand", amount = 10},
+      {type = "item", name = "sp-quartz", amount = 5},
       {type = "fluid", name = "water", amount = 50},
     },
-    result_count = 5,
-    result = "sp-geological-science-pack-1"
+    results = {
+      {type = "item", name = "sp-geological-science-pack-1", amount = 5}
+    }
   },
   {
     type = "recipe",
@@ -6963,14 +6928,15 @@ data:extend({
     enabled = false,
     energy_required = 24,
     ingredients =
-    -- Base: {"steel-plate", 5}, Krastorio: {"steel-beam", 5}
-    -- Krastorio: {"blank-tech-card", 5}
+    -- Base: {type = "item", name = "steel-plate", amount = 5}, Krastorio: {type = "item", name = "steel-beam", amount = 5}
+    -- Krastorio: {type = "item", name = "blank-tech-card", amount = 5}
     {
-      {"sp-aluminum-sheet", 5},
-      {"sp-bronze-rod", 5},
+      {type = "item", name = "sp-aluminum-sheet", amount = 5},
+      {type = "item", name = "sp-bronze-rod", amount = 5},
     },
-    result_count = 5,
-    result = "sp-material-science-pack-1"
+    results = {
+      {type = "item", name = "sp-material-science-pack-1", amount = 5}
+    }
   },
   {
     type = "recipe",
@@ -6979,16 +6945,17 @@ data:extend({
     enabled = false,
     energy_required = 24,
     ingredients =
-    -- Krastorio: {"engine-unit", 2}
     {
-      {"automation-science-pack", 20},
-      {"sp-ball-bearing", 5},
-      {"small-lamp", 5},
-      {"sp-magnet", 10},
-      {"sp-valve", 10}
+      {type = "item", name = "automation-science-pack", amount = 20},
+      {type = "item", name = "engine-unit", amount = 2},
+      {type = "item", name = "sp-ball-bearing", amount = 5},
+      {type = "item", name = "small-lamp", amount = 5},
+      {type = "item", name = "sp-magnet", amount = 10},
+      {type = "item", name = "sp-valve", amount = 10}
     },
-    result_count = 5,
-    result = "sp-automation-science-pack-2"
+    results = {
+      {type = "item", name = "sp-automation-science-pack-2", amount = 5}
+    }
   },
   {
     type = "recipe",
@@ -6997,14 +6964,15 @@ data:extend({
     enabled = false,
     energy_required = 24,
     ingredients =
-    -- Krastorio: {"electric-engine-unit", 5}, {"engine-unit", 2}, {"automation-core", 10}
+    -- Krastorio: {type = "item", name = "electric-engine-unit", amount = 5}, {type = "item", name = "engine-unit", amount = 2}, {type = "item", name = "automation-core", amount = 10}
     {
-      {"logistic-science-pack", 20},
-      {"sp-electromagnet", 8},
-      {"sp-servo-motor", 8},
+      {type = "item", name = "logistic-science-pack", amount = 20},
+      {type = "item", name = "sp-electromagnet", amount = 8},
+      {type = "item", name = "sp-servo-motor", amount = 8},
     },
-    result_count = 5,
-    result = "sp-logistic-science-pack-2"
+    results = {
+      {type = "item", name = "sp-logistic-science-pack-2", amount = 5}
+    }
   },
   {
     type = "recipe",
@@ -7014,30 +6982,32 @@ data:extend({
     energy_required = 24,
     ingredients =
     {
-      {"military-science-pack", 20},
-      {"combat-shotgun", 2},
-      {"modular-armor", 2},
-      {"gun-turret", 1}
+      {type = "item", name = "military-science-pack", amount = 20},
+      {type = "item", name = "combat-shotgun", amount = 2},
+      {type = "item", name = "modular-armor", amount = 2},
+      {type = "item", name = "gun-turret", amount = 1}
     },
-    result_count = 5,
-    result = "sp-military-science-pack-2"
+    results = {
+      {type = "item", name = "sp-military-science-pack-2", amount = 5}
+    }
   },
   {
     type = "recipe",
     name = "sp-chemical-science-pack-2",  -- #ForRegEx# - recipe
-    category = "crafting",
+    category = "chemistry",
     enabled = false,
     energy_required = 24,
     ingredients =
     {
-      {"chemical-science-pack", 20},
-      {"battery", 5},
-      {"sp-sodium-carbonate", 5},
+      {type = "item", name = "chemical-science-pack", amount = 20},
+      {type = "item", name = "battery", amount = 5},
+      {type = "item", name = "sp-sodium-carbonate", amount = 5},
       {type = "fluid", name = "sp-sulfamate", amount = 20},
       {type = "fluid", name = "sp-phosphoric-acid", amount = 20}
     },
-    result_count = 5,
-    result = "sp-chemical-science-pack-2"
+    results = {
+      {type = "item", name = "sp-chemical-science-pack-2", amount = 5}
+    }
   },
   {
     type = "recipe",
@@ -7047,32 +7017,34 @@ data:extend({
     energy_required = 24,
     ingredients =
     {
-      {"sp-electronic-science-pack-1", 20},
-      {"advanced-circuit", 5},
-      {"sp-relay", 5},
-      {"arithmetic-combinator", 2},
-      {"decider-combinator", 2}
+      {type = "item", name = "sp-electronic-science-pack-1", amount = 20},
+      {type = "item", name = "advanced-circuit", amount = 5},
+      {type = "item", name = "sp-relay", amount = 5},
+      {type = "item", name = "arithmetic-combinator", amount = 2},
+      {type = "item", name = "decider-combinator", amount = 2}
     },
-    result_count = 5,
-    result = "sp-electronic-science-pack-2"
+    results = {
+      {type = "item", name = "sp-electronic-science-pack-2", amount = 5}
+    }
   },
   {
     type = "recipe",
     name = "sp-geological-science-pack-2",  -- #ForRegEx# - recipe
-    category = "crafting",
+    category = "crafting-with-fluid",
     enabled = false,
     energy_required = 24,
     ingredients =
     {
-      {"sp-geological-science-pack-1", 20},
-      {"sp-zinc-sulfate", 5},
-      {"sp-leadstone", 2},
-      {"sulfur", 5},
-      -- {"wood", 10},
+      {type = "item", name = "sp-geological-science-pack-1", amount = 20},
+      {type = "item", name = "sp-zinc-sulfate", amount = 5},
+      {type = "item", name = "sp-leadstone", amount = 2},
+      {type = "item", name = "sulfur", amount = 5},
+      -- {type = "item", name = "wood", amount = 10},
       {type = "fluid", name = "crude-oil", amount = 20},
     },
-    result_count = 5,
-    result = "sp-geological-science-pack-2"
+    results = {
+      {type = "item", name = "sp-geological-science-pack-2", amount = 5}
+    }
   },
   {
     type = "recipe",
@@ -7082,7 +7054,7 @@ data:extend({
     energy_required = 24,
     ingredients =
     {
-      {"sp-material-science-pack-1", 20},
+      {type = "item", name = "sp-material-science-pack-1", amount = 20},
       {type = "fluid", name = "sp-vinyl-chloride", amount = 10},
       {type = "item", name = "sp-titanium-ingot", amount = 4},
       {type = "item", name = "sp-brass", amount = 8},
@@ -7090,8 +7062,9 @@ data:extend({
       {type = "item", name = "sp-zinc-plate", amount = 6},
       {type = "item", name = "sp-nickel-ingot", amount = 5},
     },
-    result_count = 5,
-    result = "sp-material-science-pack-2"
+    results = {
+      {type = "item", name = "sp-material-science-pack-2", amount = 5}
+    }
   },
   {
     type = "recipe",
@@ -7100,16 +7073,17 @@ data:extend({
     enabled = false,
     energy_required = 24,
     ingredients =
-    -- Krastorio: {"blank-tech-card", 5}
-    -- Krastorio: {"space-research-data", 5}
+    -- Krastorio: {type = "item", name = "blank-tech-card", amount = 5}
+    -- Krastorio: {type = "item", name = "space-research-data", amount = 5}
     {
-      {"sp-glass-fiber", 10},
-      {"sp-mirror", 5},
-      {"sp-lens", 5},
-      {"sp-laser", 5},
+      {type = "item", name = "sp-glass-fiber", amount = 10},
+      {type = "item", name = "sp-mirror", amount = 5},
+      {type = "item", name = "sp-lens", amount = 5},
+      {type = "item", name = "sp-laser", amount = 5},
     },
-    result_count = 5,
-    result = "sp-astronomical-science-pack-2"
+    results = {
+      {type = "item", name = "sp-astronomical-science-pack-2", amount = 5}
+    }
   },
   {
     type = "recipe",
@@ -7118,15 +7092,16 @@ data:extend({
     enabled = false,
     energy_required = 24,
     ingredients =
-    -- Krastorio: {"blank-tech-card", 5}
+    -- Krastorio: {type = "item", name = "blank-tech-card", amount = 5}
     {
-      {"sp-integrated-circuit", 5},
-      {"sp-memory-chip", 5},
-      {"sp-heatsink", 5},
-      {"sp-vacuum-tube", 5},
+      {type = "item", name = "sp-integrated-circuit", amount = 5},
+      {type = "item", name = "sp-memory-chip", amount = 5},
+      {type = "item", name = "sp-heatsink", amount = 5},
+      {type = "item", name = "sp-vacuum-tube", amount = 5},
     },
-    result_count = 5,
-    result = "sp-computer-science-pack-2"
+    results = {
+      {type = "item", name = "sp-computer-science-pack-2", amount = 5}
+    }
   },
   {
     type = "recipe",
@@ -7135,14 +7110,15 @@ data:extend({
     enabled = false,
     energy_required = 240,
     ingredients =
-    -- Krastorio: {"blank-tech-card", 50}
+    -- Krastorio: {type = "item", name = "blank-tech-card", amount = 50}
     {
-      {"uranium-238", 400},
-      {"uranium-235", 1},
-      {"sp-empty-fuel-rod", 50},
+      {type = "item", name = "uranium-238", amount = 400},
+      {type = "item", name = "uranium-235", amount = 1},
+      {type = "item", name = "sp-empty-fuel-rod", amount = 50},
     },
-    result_count = 5,
-    result = "sp-nuclear-science-pack-2"
+    results = {
+      {type = "item", name = "sp-nuclear-science-pack-2", amount = 5}
+    }
   },
   {
     type = "recipe",
@@ -7152,15 +7128,16 @@ data:extend({
     energy_required = 24,
     ingredients =
     {
-      {"sp-automation-science-pack-2", 10},
-      {"sp-electrode", 10},
-      {"sp-high-pressure-tank", 5},
-      {"sp-transformer", 5},
-      {"sp-plate-heat-exchanger", 5},
-      {"flying-robot-frame", 5}
+      {type = "item", name = "sp-automation-science-pack-2", amount = 10},
+      {type = "item", name = "sp-electrode", amount = 10},
+      {type = "item", name = "sp-high-pressure-tank", amount = 5},
+      {type = "item", name = "sp-transformer", amount = 5},
+      {type = "item", name = "sp-plate-heat-exchanger", amount = 5},
+      {type = "item", name = "flying-robot-frame", amount = 5}
     },
-    result_count = 5,
-    result = "sp-automation-science-pack-3"
+    results = {
+      {type = "item", name = "sp-automation-science-pack-3", amount = 5}
+    }
   },
   {
     type = "recipe",
@@ -7170,16 +7147,17 @@ data:extend({
     energy_required = 24,
     ingredients =
     {
-      {"sp-logistic-science-pack-2", 10},
-      {"sp-differential", 5},
-      {"sp-heavy-gearbox", 5},
-      {"sp-pressure-tube", 5},
-      {"sp-servo-motor", 10},
-      {"processing-unit", 10},
-      {"sp-insulated-wire", 20},
+      {type = "item", name = "sp-logistic-science-pack-2", amount = 10},
+      {type = "item", name = "sp-differential", amount = 5},
+      {type = "item", name = "sp-heavy-gearbox", amount = 5},
+      {type = "item", name = "sp-pressure-tube", amount = 5},
+      {type = "item", name = "sp-servo-motor", amount = 10},
+      {type = "item", name = "processing-unit", amount = 10},
+      {type = "item", name = "sp-insulated-wire", amount = 20},
     },
-    result_count = 5,
-    result = "sp-logistic-science-pack-3"
+    results = {
+      {type = "item", name = "sp-logistic-science-pack-3", amount = 5}
+    }
   },
   {
     type = "recipe",
@@ -7189,16 +7167,17 @@ data:extend({
     energy_required = 24,
     ingredients =
     {
-      {"sp-military-science-pack-2", 10},
-      {"cannon-shell", 20},
-      {"destroyer-capsule", 3},
-      {"rocket", 3},
-      {"artillery-shell", 3},
-      {"energy-shield-mk2-equipment", 3},
-      -- Krastorio: {"basic-railgun-shell", 3}
+      {type = "item", name = "sp-military-science-pack-2", amount = 10},
+      {type = "item", name = "cannon-shell", amount = 20},
+      {type = "item", name = "destroyer-capsule", amount = 3},
+      {type = "item", name = "rocket", amount = 3},
+      {type = "item", name = "artillery-shell", amount = 3},
+      {type = "item", name = "energy-shield-mk2-equipment", amount = 3},
+      -- Krastorio: {type = "item", name = "basic-railgun-shell", amount = 3}
     },
-    result_count = 5,
-    result = "sp-military-science-pack-3"
+    results = {
+      {type = "item", name = "sp-military-science-pack-3", amount = 5}
+    }
   },
   {
     type = "recipe",
@@ -7214,12 +7193,13 @@ data:extend({
       {type = "item", name = "sp-catalyst", amount = 10},
       {type = "item", name = "sp-composites", amount = 5},
       {type = "item", name = "sp-carbon-nanotubes", amount = 10},
-      {type = "item", name = "sp-electrolyte", amount = 5},
+      {type = "fluid", name = "electrolyte", amount = 5},
       -- Krastorio: {type = "item", name = "lithium-chloride", amount = 5},
-      -- Krastorio: {"nitric-acid", 30}
+      -- Krastorio: {type = "item", name = "nitric-acid", amount = 30}
     },
-    result_count = 5,
-    result = "sp-chemical-science-pack-3"
+    results = {
+      {type = "item", name = "sp-chemical-science-pack-3", amount = 5}
+    }
   },
   {
     type = "recipe",
@@ -7229,13 +7209,14 @@ data:extend({
     energy_required = 24,
     ingredients =
     {
-      {"sp-electronic-science-pack-2", 10},
-      {"sp-antenna-chip", 8},
-      {"sp-cmos", 8},
-      {"sp-processor", 16}
+      {type = "item", name = "sp-electronic-science-pack-2", amount = 10},
+      {type = "item", name = "sp-antenna-chip", amount = 8},
+      {type = "item", name = "sp-cmos", amount = 8},
+      {type = "item", name = "sp-processor", amount = 16}
     },
-    result_count = 5,
-    result = "sp-electronic-science-pack-3"
+    results = {
+      {type = "item", name = "sp-electronic-science-pack-3", amount = 5}
+    }
   },
   {
     type = "recipe",
@@ -7254,8 +7235,9 @@ data:extend({
       {type = "item", name = "sp-sodium-carbonate", amount = 8},
       {type = "item", name = "sp-calcium", amount = 12}
     },
-    result_count = 5,
-    result = "sp-geological-science-pack-3",
+    results = {
+      {type = "item", name = "sp-geological-science-pack-3", amount = 5}
+    },
     crafting_machine_tint = {
       primary = {r = 0.2, g = 0.1, b = 0.1, a = 1.000},
       secondary = {r = 0.2, g = 0.0, b = 0.1, a = 1.000},
@@ -7271,16 +7253,17 @@ data:extend({
     energy_required = 24,
     ingredients =
     {
-      {"sp-material-science-pack-2", 10},
-      {"sp-diamond", 6},
-      {"sp-tungsten-carbide", 4},
-      {"sp-nitenol", 5},
-      {"sp-inconel", 5},
-      {"sp-niobium-tin", 4},
-      {"sp-ceramic-matrix-composites", 8}
+      {type = "item", name = "sp-material-science-pack-2", amount = 10},
+      {type = "item", name = "sp-diamond", amount = 6},
+      {type = "item", name = "tungsten-carbide", amount = 4},
+      {type = "item", name = "sp-nitenol", amount = 5},
+      {type = "item", name = "sp-inconel", amount = 5},
+      {type = "item", name = "sp-niobium-tin", amount = 4},
+      {type = "item", name = "sp-ceramic-matrix-composites", amount = 8}
     },
-    result_count = 5,
-    result = "sp-material-science-pack-3"
+    results = {
+      {type = "item", name = "sp-material-science-pack-3", amount = 5}
+    }
   },
   {
     type = "recipe",
@@ -7290,15 +7273,16 @@ data:extend({
     energy_required = 144,
     ingredients =
     {
-      {"sp-astronomical-science-pack-2", 120},
-      {"satellite", 5},
-      {"sp-blunagium-explorer", 1},
-      {"sp-grobgnum-explorer", 1},
-      {"sp-rukite-explorer", 1},
-      {"sp-yemnuth-explorer", 1}
+      {type = "item", name = "sp-astronomical-science-pack-2", amount = 120},
+      -- {type = "item", name = "satellite", amount = 5}, removed by space age
+      {type = "item", name = "sp-blunagium-explorer", amount = 1},
+      {type = "item", name = "sp-grobgnum-explorer", amount = 1},
+      {type = "item", name = "sp-rukite-explorer", amount = 1},
+      {type = "item", name = "sp-yemnuth-explorer", amount = 1}
     },
-    result_count = 30,
-    result = "sp-astronomical-science-pack-3"
+    results = {
+      {type = "item", name = "sp-astronomical-science-pack-3", amount = 30}
+    }
   },
   {
     type = "recipe",
@@ -7312,10 +7296,11 @@ data:extend({
       {type = "item", name = "sp-advanced-processing-unit", amount = 20},
       {type = "item", name = "sp-quantum-data-plane", amount = 5},
       {type = "item", name = "sp-control-unit", amount = 10},
-      {type = "fluid", name = "sp-coolant", amount = 40}
+      {type = "fluid", name = "fluoroketone-cold", amount = 40}
     },
-    result_count = 5,
-    result = "sp-computer-science-pack-3"
+    results = {
+      {type = "item", name = "sp-computer-science-pack-3", amount = 5}
+    }
   },
   {
     type = "recipe",
@@ -7325,13 +7310,14 @@ data:extend({
     energy_required = 48,
     ingredients =
     {
-      {"sp-nuclear-science-pack-2", 20},
-      {"sp-reactor-core", 1},
-      {"sp-plutonium-fuel-rod", 10},
-      {"sp-uranium-fuel-rod", 10}
+      {type = "item", name = "sp-nuclear-science-pack-2", amount = 20},
+      {type = "item", name = "sp-reactor-core", amount = 1},
+      {type = "item", name = "sp-plutonium-fuel-rod", amount = 10},
+      {type = "item", name = "sp-uranium-fuel-rod", amount = 10}
     },
-    result_count = 10,
-    result = "sp-nuclear-science-pack-3"
+    results = {
+      {type = "item", name = "sp-nuclear-science-pack-3", amount = 10}
+    }
   },
   {
     type = "recipe",
@@ -7341,14 +7327,15 @@ data:extend({
     energy_required = 24,
     ingredients =
     {
-      {"production-science-pack", 10},
-      {"sp-compressor", 5},
-      {"sp-dynamo", 5},
-      {"sp-cryostat", 5},
-      {"sp-turbopump", 5}
+      {type = "item", name = "production-science-pack", amount = 10},
+      {type = "item", name = "sp-compressor", amount = 5},
+      {type = "item", name = "sp-dynamo", amount = 5},
+      {type = "item", name = "sp-cryostat", amount = 5},
+      {type = "item", name = "sp-turbopump", amount = 5}
     },
-    result_count = 5,
-    result = "sp-production-science-pack-3"
+    results = {
+      {type = "item", name = "sp-production-science-pack-3", amount = 5}
+    }
   },
   {
     type = "recipe",
@@ -7358,35 +7345,37 @@ data:extend({
     energy_required = 192,
     ingredients =
     {
-      -- Krastorio {"utility-science-pack", 40},
-      -- Krastorio {"kr-advanced-steam-turbine", 8},
-      -- Krastorio {"kr-quantum-computer", 1},
-      -- Krastorio {"kr-bio-lab", 2},
-      -- Krastorio {"kr-fuel-refinery", 2},
-      -- Krastorio {"kr-quarry-drill", 1},
-      {"assembling-machine-3", 4},
-      {"beacon", 4}
+      -- Krastorio {type = "item", name = "utility-science-pack", amount = 40},
+      -- Krastorio {type = "item", name = "kr-advanced-steam-turbine", amount = 8},
+      -- Krastorio {type = "item", name = "kr-quantum-computer", amount = 1},
+      -- Krastorio {type = "item", name = "kr-bio-lab", amount = 2},
+      -- Krastorio {type = "item", name = "kr-fuel-refinery", amount = 2},
+      -- Krastorio {type = "item", name = "kr-quarry-drill", amount = 1},
+      {type = "item", name = "assembling-machine-3", amount = 4},
+      {type = "item", name = "beacon", amount = 4}
     },
-    result_count = 40,
-    result = "sp-utility-science-pack-3"
+    results = {
+      {type = "item", name = "sp-utility-science-pack-3", amount = 40}
+    }
   },
   {
     type = "recipe",
     name = "sp-uniformity-science-pack",  -- #ForRegEx# - recipe
-    category = "matter-items",
+    category = "sp-kr-matter-items",
     enabled = false,
     energy_required = 192,
     ingredients =
     {
-      {"sp-antimatter-engine", 4},
-      {"sp-interdimensional-prism-chamber", 40},
-      {"sp-hadron-beam-charger", 20},
-      {"sp-sideral-compute-core", 1},
+      {type = "item", name = "sp-antimatter-engine", amount = 4},
+      {type = "item", name = "sp-interdimensional-prism-chamber", amount = 40},
+      {type = "item", name = "sp-hadron-beam-charger", amount = 20},
+      {type = "item", name = "sp-sideral-compute-core", amount = 1},
       {type = "fluid", name = "sp-dark-energy", amount = 10},
-      -- Krastorio: {"matter-cube", 1}
+      -- Krastorio: {type = "item", name = "matter-cube", amount = 1}
     },
-    result_count = 40,
-    result = "sp-uniformity-science-pack"
+    results = {
+      {type = "item", name = "sp-uniformity-science-pack", amount = 40}
+    }
   },
   ------------------------------------------------------------------------------
   -- Alternate recipes for vanilla items
@@ -7404,11 +7393,12 @@ data:extend({
     hide_from_player_crafting = true,
     ingredients =
     {
-      {"stone", 10},
-      {"iron-ore", 6}
+      {type = "item", name = "stone", amount = 10},
+      {type = "item", name = "iron-ore", amount = 6}
     },
-    result= "landfill",
-    result_count = 1
+    results = {
+      {type = "item", name = "landfill", amount = 1}
+    }
   },
   {
     type = "recipe",
@@ -7421,10 +7411,11 @@ data:extend({
     hide_from_player_crafting = true,
     ingredients =
     {
-      {"sp-limestone", 16}
+      {type = "item", name = "sp-limestone", amount = 16}
     },
-    result= "landfill",
-    result_count = 1
+    results = {
+      {type = "item", name = "landfill", amount = 1}
+    }
   },
   {
     type = "recipe",
@@ -7438,11 +7429,12 @@ data:extend({
     hide_from_player_crafting = true,
     ingredients =
     {
-      {"stone", 10},
-      {"sp-limestone", 6}
+      {type = "item", name = "stone", amount = 10},
+      {type = "item", name = "sp-limestone", amount = 6}
     },
-    result= "landfill",
-    result_count = 1
+    results = {
+      {type = "item", name = "landfill", amount = 1}
+    }
   },
   {
     type = "recipe",
@@ -7455,11 +7447,12 @@ data:extend({
     hide_from_player_crafting = true,
     ingredients =
     {
-      {"stone", 8},
-      {"sp-cement", 4}
+      {type = "item", name = "stone", amount = 8},
+      {type = "item", name = "sp-cement", amount = 4}
     },
-    result = "landfill",
-    result_count = 2
+    results = {
+      {type = "item", name = "landfill", amount = 2}
+    }
   },
   {
     type = "recipe",
@@ -7472,11 +7465,12 @@ data:extend({
     hide_from_player_crafting = true,
     ingredients =
     {
-      {"stone", 18},
-      {"sp-fluorspar", 4}
+      {type = "item", name = "stone", amount = 18},
+      {type = "item", name = "sp-fluorspar", amount = 4}
     },
-    result = "landfill",
-    result_count = 2
+    results = {
+      {type = "item", name = "landfill", amount = 2}
+    }
   },
   {
     type = "recipe",
@@ -7488,9 +7482,11 @@ data:extend({
     enabled = false,
     hide_from_player_crafting = true,
     ingredients = {
-      {"sp-limestone", 2}
+      {type = "item", name = "sp-limestone", amount = 2}
     },
-    result = "stone-brick"
+    results = {
+      {type = "item", name = "stone-brick", amount = 1}
+    }
   },
   {
     type = "recipe",
@@ -7563,19 +7559,6 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-sodium-carbonate", amount = 2}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-graphite",  -- #ForRegEx# - recipe
-    category = "smelting",
-    enabled = false,
-    energy_required = 6,
-    ingredients = {
-      -- {type = "item", name = "sp-coke", amount = 3}
-    },
-    results = {
-      {type = "item", name = "sp-graphite", amount = 4}
     }
   },
   {
@@ -7690,7 +7673,7 @@ data:extend({
     name = "sp-landfill-from-sand",
     icons = util.icon.overlay_two_small_icons("__base__/graphics/icons/landfill.png", 64,
                                               "__base__/graphics/icons/stone.png", 64,
-                                              "__Krastorio2Assets__/icons/items-with-variations/sand/sand.png", 64),
+                                              "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/sand/sand.png", 64),
     energy_required = 1,
     enabled = false,
     category = "crafting",
@@ -7707,7 +7690,7 @@ data:extend({
     type = "recipe",
     name = "sp-stone-brick-from-sand",
     icons = util.icon.overlay_small_icon("__base__/graphics/icons/stone-brick.png", 64,
-                                         "__Krastorio2Assets__/icons/items-with-variations/sand/sand.png", 64),
+                                         "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/sand/sand.png", 64),
     category = "intermediate-smelting",
     energy_required = 2,
     enabled = false,
@@ -7792,7 +7775,7 @@ data:extend({
     enabled = false,
     energy_required = 10,
     ingredients = {
-      {type = "item", name = "sp-graphite", amount = 3},
+      {type = "item", name = "carbon", amount = 3},
       -- {type = "fluid", name = "sp-oxygen", amount = 35},
       -- {type = "fluid", name = "sp-hydrogen", amount = 15},
     },
@@ -7842,7 +7825,7 @@ data:extend({
     name = "sp-sodium-and-chlorine",  -- #ForRegEx# - recipe
     -- Update icons here, search: "-- Add acion changes here"
     icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/icons/sodium.png", 64, nil,
-                                        "__Krastorio2Assets__/icons/fluids/chlorine.png", 64, nil),
+                                        "__Spaghetorio__/graphics/krastorio/icons/fluids/chlorine.png", 64, nil),
     icon_size = 256,
     scale = 0.25,
     category = "chemistry",
@@ -7907,7 +7890,7 @@ data:extend({
     enabled = false,
     energy_required = 3.2,
     ingredients = {
-      {type = "item", name = "sp-graphite", amount = 3},
+      {type = "item", name = "carbon", amount = 3},
       -- {type = "fluid", name = "sp-oxygen", amount = 25},
     },
     results = {
@@ -8027,7 +8010,7 @@ data:extend({
     enabled = false,
     energy_required = 3.2,
     ingredients = {
-      -- {type = "item", name = "sp-lithium", amount = 1},
+      -- {type = "item", name = "lithium", amount = 1},
       {type = "item", name = "uranium-238", amount = 1}
     },
     results = {
@@ -8048,7 +8031,7 @@ data:extend({
     enabled = false,
     energy_required = 4,
     ingredients = {
-      -- {type = "item", name = "sp-lithium", amount = 1},
+      -- {type = "item", name = "lithium", amount = 1},
       {type = "item", name = "sp-plutonium-239", amount = 1}
     },
     results = {
@@ -8108,8 +8091,8 @@ data:extend({
       {type = "item", name = "uranium-238", probability = 0.37, amount = 2},
       {type = "item", name = "uranium-235", probability = 0.03, amount = 1},
       {type = "item", name = "sp-plutonium-239", probability = 0.6, amount = 1},
-      {type = "item", name = "sp-graphite", probability = 0.2, amount = 1},
-      -- {type = "item", name = "sp-lithium", probability = 0.2, amount = 1},
+      {type = "item", name = "carbon", probability = 0.2, amount = 1},
+      -- {type = "item", name = "lithium", probability = 0.2, amount = 1},
       {type = "fluid", name = "sp-deuterium", amount = 10}
     },
     crafting_machine_tint = {
@@ -8135,7 +8118,7 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-magnesium-slab", amount = 2},
-      -- {type = "fluid", name = "sp-chloride", amount = 10}
+      -- {type = "fluid", name = "sp-chlorine", amount = 10}
     },
     crafting_machine_tint = {
       primary = {r = 0.7, g = 1.000, b = 0.7, a = 1.000},
@@ -8153,7 +8136,7 @@ data:extend({
     energy_required = 3.2,
     ingredients = {
       {type = "item", name = "sulfur", amount = 1},
-      -- {type = "fluid", name = "sp-ammonia", amount = 50}
+      -- {type = "fluid", name = "ammonia", amount = 50}
     },
     results = {
       {type = "item", name = "sp-urea", amount = 1}
@@ -8173,7 +8156,7 @@ data:extend({
     energy_required = 3.2,
     ingredients = {
       {type = "item", name = "plastic-bar", amount = 1},
-      {type = "item", name = "sp-graphite", amount = 4},
+      {type = "item", name = "carbon", amount = 4},
       {type = "fluid", name = "sp-epoxy", amount = 5},
       -- {type = "fluid", name = "sp-nitric-acid", amount = 50}
     },
@@ -8215,7 +8198,7 @@ data:extend({
     name = "sp-sodium-hydroxide-from-salt",  -- #ForRegEx# - recipe
     -- Update icons here, search: "-- Add acion changes here"
     icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/icons/sodium-hydroxide.png", 64, nil,
-                                        "__Krastorio2Assets__/icons/fluids/chlorine.png", 64, nil),
+                                        "__Spaghetorio__/graphics/krastorio/icons/fluids/chlorine.png", 64, nil),
     icon_size = 64,
     scale = 0.25,
     category = "chemistry",
@@ -8283,27 +8266,6 @@ data:extend({
       secondary = {r = 0.2, g = 0.6, b = 0.2, a = 1.000},
       tertiary = {r = 0.1, g = 0.3, b = 0.1, a = 1.000},
       quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-electrolyte",  -- #ForRegEx# - recipe
-    category = "chemistry",
-    enabled = false,
-    energy_required = 2,
-    ingredients = {
-      -- {type = "item", name = "sp-lithium", amount = 3},
-      -- {type = "fluid", name = "sp-chlorine", amount = 10},
-      {type = "fluid", name = "sp-propylene", amount = 10}
-    },
-    results = {
-      {type = "item", name = "sp-electrolyte", amount = 1}
-    },
-    crafting_machine_tint = {
-      primary = {r = 0.0, g = 0.0, b = 0.4, a = 1.000},
-      secondary = {r = 0.0, g = 0.0, b = 0.3, a = 1.000},
-      tertiary = {r = 0.0, g = 0.0, b = 0.2, a = 1.000},
-      quaternary = {r = 0.0, g = 0.0, b = 0.0, a = 1.000},
     }
   },
   {
@@ -8402,7 +8364,7 @@ data:extend({
     ingredients = {
       -- {type = "item", name = "sp-glass", amount = 3},
       {type = "item", name = "copper-cable", amount = 2},
-      {type = "item", name = "sp-graphite", amount = 1},
+      {type = "item", name = "carbon", amount = 1},
       {type = "item", name = "sp-cobalt-billet", amount = 1},
       -- {type = "fluid", name = "sp-hydrogen", amount = 5}
     },
@@ -8486,7 +8448,7 @@ if not mods["Krastorio2"] then
     {
       type = "recipe",
       name = "sp-quartz",  -- #ForRegEx# - recipe
-      icon = "__Spaghetorio__/graphics/icons/quartz.png",
+      -- icon = "__Spaghetorio__/graphics/icons/quartz.png",
       icon_size = 64,
       scale = 0.25,
       category = "chemistry",
@@ -8532,7 +8494,8 @@ if not mods["Krastorio2"] then
         secondary = {r = 0.6, g = 0.6, b = 0.6, a = 1.000},
         tertiary = {r = 0.4, g = 0.4, b = 0.4, a = 1.000},
         quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
-      }
+      },
+      allow_quality = false
     },
     {
       type = "recipe",
@@ -8576,21 +8539,8 @@ if not mods["Krastorio2"] then
     },
     {
       type = "recipe",
-      name = "sp-lithium",  -- #ForRegEx# - recipe
-      category = "smelting",
-      enabled = false,
-      energy_required = 2.4,
-      ingredients = {
-        {type = "item", name = "sp-lithium-oxide", amount = 2}
-      },
-      results = {
-        {type = "item", name = "sp-lithium", amount = 2}
-      }
-    },
-    {
-      type = "recipe",
       name = "sp-coke-from-acrovoid",  -- #ForRegEx# - recipe
-      icons = util.icon.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/coke.png",
+      icons = util.icon.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/krastorio/icons/items-with-variations/coke/coke.png",
                                                            "__Spaghetorio__/graphics/icons/acrovoid.png"),
       icon_size = 64,
       mip_maps = 4,
@@ -8600,6 +8550,7 @@ if not mods["Krastorio2"] then
         "pollution"
       },
       allow_decomposition = false,
+      category = "acroproduct-conversion-with-acrovoid",
       subgroup = "processed-resource",
       enabled = false,
       energy_required = 6,
@@ -8610,16 +8561,17 @@ if not mods["Krastorio2"] then
       results = {
         {type = "item", name = "sp-acrovoid", probability=0.99, amount = 1},
         {type = "item", name = "sp-coke", amount = 7},
-        {type = "item", name = "sp-graphite", probability=0.5, amount = 1},
+        {type = "item", name = "carbon", probability=0.5, amount = 1},
         {type = "item", name = "sulfur", probability=0.1, amount = 1},
         {type = "fluid", name = "sp-hydrogen", amount = 4},
         {type = "fluid", name = "sp-oxygen", amount = 12}
-      }
+      },
+      allow_quality = false
     },
     {
       type = "recipe",
       name = "sp-silicon-from-acrovoid",  -- #ForRegEx# - recipe
-      icons = util.icon.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/coke.png",
+      icons = util.icon.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/krastorio/icons/items-with-variations/silicon/silicon.png",
                                                            "__Spaghetorio__/graphics/icons/acrovoid.png"),
       icon_size = 64,
       mip_maps = 4,
@@ -8640,11 +8592,12 @@ if not mods["Krastorio2"] then
       results = {
         {type = "item", name = "sp-acrovoid", probability=0.98, amount = 1},
         {type = "item", name = "sp-silicon", amount = 6},
-        {type = "item", name = "sp-graphite", probability=0.3, amount = 1},
+        {type = "item", name = "carbon", probability=0.3, amount = 1},
         {type = "item", name = "sp-phosphorus", probability=0.2, amount = 1},
         {type = "item", name = "sp-aluminum-ore", probability=0.2, amount = 1},
         {type = "item", name = "sp-tinstone", probability=0.08, amount = 1},
-      }
+      },
+      allow_quality = false
     },
   })
   ------------------------------------------------------------------------------
@@ -8652,7 +8605,7 @@ if not mods["Krastorio2"] then
   ------------------------------------------------------------------------------
   -- Add missing ingredients
   table.insert(data.raw.recipe["sp-sodium-carbonate"].ingredients, {type = "item", name = "sp-coke", amount = 5})
-  table.insert(data.raw.recipe["sp-graphite"].ingredients, {type = "item", name = "sp-coke", amount = 3})
+  table.insert(data.raw.recipe["carbon"].ingredients, {type = "item", name = "sp-coke", amount = 3})
   table.insert(data.raw.recipe["sp-zirconia"].ingredients, {type = "item", name = "sp-sand", amount = 3})
   table.insert(data.raw.recipe["sp-niobium-powder"].ingredients, {type = "item", name = "sp-sand", amount = 8})
   table.insert(data.raw.recipe["sp-aqueous-niobium-and-tantalum"].ingredients, {type = "item", name = "sp-sand", amount = 8})
@@ -8667,7 +8620,7 @@ if not mods["Krastorio2"] then
   table.insert(data.raw.recipe["sp-cubit"].ingredients, {type = "fluid", name = "sp-hydrogen", amount = 1})
   table.insert(data.raw.recipe["sp-superconductor"].ingredients, {type = "fluid", name = "sp-hydrogen", amount = 100})
   table.insert(data.raw.recipe["sp-sulfamate"].ingredients, {type = "fluid", name = "sp-nitrogen", amount = 10})
-  table.insert(data.raw.recipe["sp-perchloric-acid"].ingredients, {type = "fluid", name = "sp-water", amount = 50})
+  table.insert(data.raw.recipe["sp-perchloric-acid"].ingredients, {type = "fluid", name = "water", amount = 50})
   table.insert(data.raw.recipe["sp-perchloric-acid"].ingredients, {type = "fluid", name = "sp-chlorine", amount = 20})
   table.insert(data.raw.recipe["sp-bleach"].ingredients, {type = "fluid", name = "sp-oxygen", amount = 100})
   table.insert(data.raw.recipe["sp-bleach"].ingredients, {type = "fluid", name = "sp-chlorine", amount = 50})
@@ -8680,17 +8633,15 @@ if not mods["Krastorio2"] then
   table.insert(data.raw.recipe["sp-integrated-circuit"].ingredients, {type = "item", name = "sp-silicon", amount = 2})
   table.insert(data.raw.recipe["sp-laser"].ingredients, {type = "item", name = "sp-silicon", amount = 1})
   table.insert(data.raw.recipe["sp-silica"].ingredients, {type = "item", name = "sp-quartz", amount = 5})
-  table.insert(data.raw.recipe["sp-plutonium-239-processing"].ingredients, {type = "item", name = "sp-lithium", amount = 1})
-  table.insert(data.raw.recipe["sp-plutonium-240-processing"].ingredients, {type = "item", name = "sp-lithium", amount = 1})
+  table.insert(data.raw.recipe["sp-plutonium-239-processing"].ingredients, {type = "item", name = "lithium", amount = 1})
+  table.insert(data.raw.recipe["sp-plutonium-240-processing"].ingredients, {type = "item", name = "lithium", amount = 1})
   table.insert(data.raw.recipe["sp-advanced-nuclear-waste-processing"].ingredients, {type = "fluid", name = "sp-chlorine", amount = 60})
-  table.insert(data.raw.recipe["sp-urea"].ingredients, {type = "fluid", name = "sp-ammonia", amount = 50})
+  table.insert(data.raw.recipe["sp-urea"].ingredients, {type = "fluid", name = "ammonia", amount = 50})
   table.insert(data.raw.recipe["sp-carbon-fiber"].ingredients, {type = "fluid", name = "sp-nitric-acid", amount = 50})
   table.insert(data.raw.recipe["sp-ethylene-dichloride"].ingredients, {type = "fluid", name = "sp-chlorine", amount = 60})
   table.insert(data.raw.recipe["sp-sodium-hydroxide-from-sodium"].ingredients, {type = "fluid", name = "sp-hydrogen", amount = 100})
   table.insert(data.raw.recipe["sp-sodium-hydroxide-from-sodium"].ingredients, {type = "fluid", name = "sp-oxygen", amount = 100})
   table.insert(data.raw.recipe["sp-vinyl-chloride"].ingredients, {type = "fluid", name = "sp-chlorine", amount = 30})
-  table.insert(data.raw.recipe["sp-electrolyte"].ingredients, {type = "item", name = "sp-lithium", amount = 3})
-  table.insert(data.raw.recipe["sp-electrolyte"].ingredients, {type = "fluid", name = "sp-chlorine", amount = 10})
   table.insert(data.raw.recipe["sp-helium"].ingredients, {type = "fluid", name = "sp-hydrogen", amount = 40})
   table.insert(data.raw.recipe["sp-helium-3-from-helium-and-hydrogen"].ingredients, {type = "fluid", name = "sp-hydrogen", amount = 10})
   table.insert(data.raw.recipe["sp-gravitonium"].ingredients, {type = "item", name = "sp-tritium", amount = 3})
@@ -8699,7 +8650,7 @@ if not mods["Krastorio2"] then
   table.insert(data.raw.recipe["sp-pressure-tube"].ingredients, {type = "item", name = "sp-glass", amount = 1})
   table.insert(data.raw.recipe["sp-liquid-nitrogen"].ingredients, {type = "fluid", name = "sp-nitrogen", amount = 5})
   table.insert(data.raw.recipe["sp-material-science-pack-1"].ingredients, {type = "item", name = "steel-plate", amount = 5})
-  table.insert(data.raw.recipe["sp-geological-science-pack-2"].ingredients, {type = "item", name = "sp-wood", amount = 10})
+  table.insert(data.raw.recipe["sp-geological-science-pack-2"].ingredients, {type = "item", name = "wood", amount = 10})
 
   -- Add missing results
   table.insert(data.raw.recipe["sp-silica"].results, {type = "item", name = "sp-sand", probability = 0.3, amount = 1})
@@ -8708,18 +8659,18 @@ if not mods["Krastorio2"] then
   table.insert(data.raw.recipe["sp-sodium-and-chlorine"].results, {type = "fluid", name = "sp-chlorine", amount = 3})
   table.insert(data.raw.recipe["sp-high-purity-silicon"].results, {type = "item", name = "sp-silicon", probability = 0.7, amount = 1})
   table.insert(data.raw.recipe["sp-used-up-fuel-rod-reprocessing"].results, {type = "fluid", name = "sp-deuterium", amount = 10})
-  table.insert(data.raw.recipe["sp-advanced-nuclear-waste-processing"].results, {type = "item", name = "sp-lithium", probability = 0.2, amount = 1})
-  table.insert(data.raw.recipe["sp-magnesium-slab"].results, {type = "fluid", name = "sp-chloride", amount = 10})
+  table.insert(data.raw.recipe["sp-advanced-nuclear-waste-processing"].results, {type = "item", name = "lithium", probability = 0.2, amount = 1})
+  table.insert(data.raw.recipe["sp-magnesium-slab"].results, {type = "fluid", name = "sp-chlorine", amount = 10})
   table.insert(data.raw.recipe["sp-sodium-hydroxide-from-salt"].results, {type = "fluid", name = "sp-chlorine", amount = 50})
   table.insert(data.raw.recipe["sp-tellurium-hydroxide"].results, {type = "item", name = "sp-sand", probability = 0.92, amount = 3})
   table.insert(data.raw.recipe["sp-cobalt-sulfate"].results, {type = "item", name = "sp-sand", probability = 0.3, amount = 1})
   table.insert(data.raw.recipe["sp-coal-from-acrocrystal"].results, {type = "item", name = "sp-coke", probability=0.15, amount = 1})
   table.insert(data.raw.recipe["sp-aluminum-ore-from-acrocrystal"].results, {type = "item", name = "sp-silicon", probability=0.2, amount = 1})
   table.insert(data.raw.recipe["sp-limestone-from-acrocrystal"].results, {type = "item", name = "sp-sand", amount = 1})
-  table.insert(data.raw.recipe["sp-magnesium-ore-from-acrocrystal"].results, {type = "item", name = "sp-lithium", probability=0.05, amount = 1})
+  table.insert(data.raw.recipe["sp-magnesium-ore-from-acrocrystal"].results, {type = "item", name = "lithium", probability=0.05, amount = 1})
   table.insert(data.raw.recipe["sp-tinstone-from-acrocrystal"].results, {type = "item", name = "sp-silicon", probability=0.15, amount = 1})
   table.insert(data.raw.recipe["sp-zirconium-ore-from-acrocrystal"].results, {type = "item", name = "sp-silicon", probability=0.15, amount = 1})
-  table.insert(data.raw.recipe["sp-calcium-from-acrovoid"].results, {type = "item", name = "sp-lithium", probability=0.05, amount = 1})
+  table.insert(data.raw.recipe["sp-calcium-from-acrovoid"].results, {type = "item", name = "lithium", probability=0.05, amount = 1})
   table.insert(data.raw.recipe["sp-fluorine-from-acrovoid"].results, {type = "fluid", name = "sp-chlorine", amount = 10})
   table.insert(data.raw.recipe["sp-fluorine-from-acrovoid"].results, {type = "fluid", name = "sp-oxygen", amount = 3})
   table.insert(data.raw.recipe["sp-graphite-from-acrovoid"].results, {type = "item", name = "sp-silicon", probability=0.2, amount = 1})
@@ -8731,7 +8682,7 @@ if not mods["Krastorio2"] then
   table.insert(data.raw.recipe["sp-leadstone-from-acrovoid"].results, {type = "item", name = "sp-silicon", probability=0.12, amount = 1})
   table.insert(data.raw.recipe["sp-phosphorus-from-acrovoid"].results, {type = "item", name = "sp-silicon", probability=0.01, amount = 1})
   table.insert(data.raw.recipe["sp-phosphorus-from-acrovoid"].results, {type = "fluid", name = "sp-nitrogen", amount = 2})
-  table.insert(data.raw.recipe["sp-sodium-from-acrovoid"].results, {type = "item", name = "sp-lithium", probability=0.25, amount = 1})
+  table.insert(data.raw.recipe["sp-sodium-from-acrovoid"].results, {type = "item", name = "lithium", probability=0.25, amount = 1})
   table.insert(data.raw.recipe["sp-sodium-from-acrovoid"].results, {type = "fluid", name = "sp-hydrogen", amount = 10})
   table.insert(data.raw.recipe["sp-antimony-from-acrovoid"].results, {type = "fluid", name = "sp-nitrogen", amount = 8})
   table.insert(data.raw.recipe["sp-tellurium-from-acrovoid"].results, {type = "fluid", name = "sp-nitrogen", amount = 8})
