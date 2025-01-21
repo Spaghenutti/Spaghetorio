@@ -1,30 +1,23 @@
 -- Contains functions for editing recipes
 local remove_prototypes = require("remove-prototypes")
+local item_util = require("util.item")
 
 local data_util = {}
 
-function data_util.change_recipe_ingredients(name, normal_ingredients, expensive_ingredients, normal_energy, expensive_energy)
-  data.raw.recipe[name].ingredients = normal_ingredients
-  if not (normal_energy == nil) then
-    data.raw.recipe[name].energy_required = normal_energy
-  end
-
-  if data.raw.recipe[name].normal then
-    data.raw.recipe[name].normal.ingredients = normal_ingredients
-    if not (normal_energy == nil) then
-      data.raw.recipe[name].normal.energy_required = normal_energy
+function data_util.change_recipe_ingredients(name, ingredients, energy_required)
+  local updated_ingredients = {}
+  for _, ingredient in pairs(ingredients) do
+    if ingredient.type == nil then
+      table.insert(updated_ingredients, item_util.extend_dictionary(ingredient))
     end
   end
 
-  if data.raw.recipe[name].expensive then
-    data.raw.recipe[name].expensive.ingredients = expensive_ingredients
-    if not (expensive_energy == nil) then
-      data.raw.recipe[name].expensive.energy_required = expensive_energy
-    end
+  data.raw.recipe[name].ingredients = updated_ingredients
+  if not (energy_required == nil) then
+    data.raw.recipe[name].energy_required = energy_required
   end
 end
 
--- FIXME: Not working for normal / expensive recipe
 function data_util.remove_ingredient(recipe, ingredient_name)
   local ingredients = data.raw.recipe[recipe].ingredients
   if next(ingredients) ~= nil then
