@@ -28,3 +28,5 @@
 -- if mods["jetpack"] then
 --     require("compatibility.jetpack")
 -- end
+
+require("compatibility.EverythingOnNauvis.resource-updates")

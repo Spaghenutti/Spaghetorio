@@ -5,7 +5,6 @@
 
 local resource_autoplace = require("resource-autoplace")
 local base_sounds = require("__base__.prototypes.entity.sounds")
--- local simulations = require("__space-age__.prototypes.factoriopedia-simulations")
 
 local stone_driving_sound =
 {
@@ -392,11 +391,11 @@ data:extend({
 data.raw.planet["nauvis"].map_gen_settings.autoplace_settings.entity.settings["sp-aluminum-ore"] = {}
 data.raw.planet["nauvis"].map_gen_settings.autoplace_settings.entity.settings["sp-chromite"] = {}
 data.raw.planet["nauvis"].map_gen_settings.autoplace_settings.entity.settings["sp-limestone"] = {}
-data.raw.planet["nauvis"].map_gen_settings.autoplace_settings.entity.settings["sp-titanium-ore"] = {}
 data.raw.planet["nauvis"].map_gen_settings.autoplace_settings.entity.settings["sp-magnesium-ore"] = {}
 data.raw.planet["nauvis"].map_gen_settings.autoplace_settings.entity.settings["sp-nickel-ore"] = {}
 data.raw.planet["nauvis"].map_gen_settings.autoplace_settings.entity.settings["sp-spodumene"] = {}
 data.raw.planet["nauvis"].map_gen_settings.autoplace_settings.entity.settings["sp-tinstone"] = {}
+data.raw.planet["nauvis"].map_gen_settings.autoplace_settings.entity.settings["sp-titanium-ore"] = {}
 data.raw.planet["nauvis"].map_gen_settings.autoplace_settings.entity.settings["sp-tungsten-ore"] = {}
 data.raw.planet["nauvis"].map_gen_settings.autoplace_settings.entity.settings["sp-zinc-ore"] = {}
 data.raw.planet["nauvis"].map_gen_settings.autoplace_settings.entity.settings["sp-zirconium-ore"] = {}
