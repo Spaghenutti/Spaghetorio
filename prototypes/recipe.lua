@@ -84,7 +84,7 @@ local util = require("data-util")
 --    - "sp-cryostat"
 --    - "sp-quantum-data-plane"
 --    - "sp-spark-plug"
---    - "sp-superconductor"
+--    - "superconductor"
 --    - "sp-deuterium" (fluid)
 --    - "sp-ethylene" (fluid)
 --    - "sp-ethylene-dichloride" (fluid)
@@ -3391,7 +3391,7 @@ data:extend({
     ingredients = {
       {type = "item", name = "sp-heat-resistant-tile", amount = 10},
       {type = "item", name = "sp-fuel-injector", amount = 8},
-      {type = "item", name = "sp-superconductor", amount = 12},
+      {type = "item", name = "superconductor", amount = 12},
       {type = "item", name = "sp-titanium-nitride", amount = 2},
       {type = "item", name = "sp-plasma-capsule", amount = 1}
     },
@@ -3809,7 +3809,7 @@ data:extend({
   --     {type = "item", name = "sp-blunagium-bar", amount = 100},
   --     {type = "item", name = "sp-blunagium-foam", amount = 100},
   --     {type = "item", name = "sp-micro-machine", amount = 40},
-  --     {type = "item", name = "sp-superconductor", amount = 60},
+  --     {type = "item", name = "superconductor", amount = 60},
   --     {type = "fluid", name = "sp-liquid-nitrogen", amount = 400},
   --   },
   --   results = {
@@ -3872,7 +3872,7 @@ data:extend({
   --     {type = "item", name = "sp-grobgnum-bar", amount = 80},
   --     {type = "item", name = "sp-grobgnum-cube", amount = 120},
   --     {type = "item", name = "sp-cybernetics", amount = 40},
-  --     {type = "item", name = "sp-superconductor", amount = 60},
+  --     {type = "item", name = "superconductor", amount = 60},
   --     {type = "item", name = "sp-chromium-plate", amount = 200},
   --     {type = "item", name = "sp-fluorspar", amount = 300},
   --     {type = "fluid", name = "sp-grobgnum-hydroxide", amount = 400},
@@ -4674,7 +4674,7 @@ data:extend({
     energy_required = 24,
     ingredients = {
       {type = "item", name = "sp-lead-slab", amount = 1},
-      {type = "item", name = "sp-superconductor", amount = 1},
+      {type = "item", name = "superconductor", amount = 1},
       {type = "item", name = "sp-advanced-processing-unit", amount = 1},
       {type = "item", name = "sp-blunagium-rukite-compound", amount = 1},
       {type = "item", name = "sp-imersium-plate", amount = 1},
@@ -4907,7 +4907,7 @@ data:extend({
     energy_required = 2,
     ingredients = {
       {type = "item", name = "sp-collapsed-orbitals", amount = 10},
-      {type = "item", name = "sp-superconductor", amount = 2},
+      {type = "item", name = "superconductor", amount = 2},
       {type = "item", name = "sp-yemnuth-plate", amount = 1},
       {type = "item", name = "sp-diamond", amount = 1}
     },
@@ -7991,21 +7991,6 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-superconductor",  -- #ForRegEx# - recipe
-    category = "crafting-with-fluid",
-    enabled = false,
-    energy_required = 5,
-    ingredients = {
-      {type = "item", name = "sp-lanthanum", amount = 1},
-      {type = "item", name = "iron-plate", amount = 2},
-      {type = "fluid", name = "sp-hydrogen", amount = 100}
-    },
-    results = {
-      {type = "item", name = "sp-superconductor", amount = 1}
-    }
-  },
-  {
-    type = "recipe",
     name = "sp-sodium-and-chlorine",  -- #ForRegEx# - recipe
     -- Update icons here, search: "-- Add acion changes here"
     icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/icons/sodium.png", 64, nil,
@@ -8597,98 +8582,3 @@ data:extend({
     }
   },
 })
-
-
-------------------------------------------------------------------------------
--- MARK: missing ingredients
-------------------------------------------------------------------------------
-
--- table.insert(data.raw.recipe["sp-sodium-carbonate"].ingredients, {type = "item", name = "sp-coke", amount = 5})
--- table.insert(data.raw.recipe["carbon"].ingredients, {type = "item", name = "sp-coke", amount = 3})
--- table.insert(data.raw.recipe["sp-zirconia"].ingredients, {type = "item", name = "sp-sand", amount = 3})
--- table.insert(data.raw.recipe["sp-niobium-powder"].ingredients, {type = "item", name = "sp-sand", amount = 8})
--- table.insert(data.raw.recipe["sp-aqueous-niobium-and-tantalum"].ingredients, {type = "item", name = "sp-sand", amount = 8})
--- table.insert(data.raw.recipe["sp-landfill-from-sand"].ingredients, {type = "item", name = "sp-sand", amount = 30})
--- table.insert(data.raw.recipe["sp-stone-brick-from-sand"].ingredients, {type = "item", name = "sp-sand", amount = 8})
--- table.insert(data.raw.recipe["sp-mirror"].ingredients, {type = "item", name = "sp-glass", amount = 2})
--- table.insert(data.raw.recipe["sp-titanium-nitride"].ingredients, {type = "fluid", name = "sp-nitrogen", amount = 40})
--- table.insert(data.raw.recipe["sp-kevlar"].ingredients, {type = "fluid", name = "sp-nitrogen", amount = 15})
--- table.insert(data.raw.recipe["sp-uranium-fuel-rod"].ingredients, {type = "fluid", name = "sp-nitrogen", amount = 100})
--- table.insert(data.raw.recipe["sp-epoxy"].ingredients, {type = "fluid", name = "sp-oxygen", amount = 35})
--- table.insert(data.raw.recipe["sp-epoxy"].ingredients, {type = "fluid", name = "sp-hydrogen", amount = 15})
--- table.insert(data.raw.recipe["sp-cubit"].ingredients, {type = "fluid", name = "sp-hydrogen", amount = 1})
--- table.insert(data.raw.recipe["sp-superconductor"].ingredients, {type = "fluid", name = "sp-hydrogen", amount = 100})
--- table.insert(data.raw.recipe["sp-sulfamate"].ingredients, {type = "fluid", name = "sp-nitrogen", amount = 10})
--- table.insert(data.raw.recipe["sp-perchloric-acid"].ingredients, {type = "fluid", name = "water", amount = 50})
--- table.insert(data.raw.recipe["sp-perchloric-acid"].ingredients, {type = "fluid", name = "sp-chlorine", amount = 20})
--- table.insert(data.raw.recipe["sp-bleach"].ingredients, {type = "fluid", name = "sp-oxygen", amount = 100})
--- table.insert(data.raw.recipe["sp-bleach"].ingredients, {type = "fluid", name = "sp-chlorine", amount = 50})
--- table.insert(data.raw.recipe["sp-lens"].ingredients, {type = "fluid", name = "sp-oxygen", amount = 40})
--- table.insert(data.raw.recipe["sp-composites"].ingredients, {type = "fluid", name = "sp-oxygen", amount = 25})
--- table.insert(data.raw.recipe["sp-high-purity-silicon"].ingredients, {type = "item", name = "sp-silicon", amount = 1})
--- table.insert(data.raw.recipe["sp-diode"].ingredients, {type = "item", name = "sp-silicon", amount = 1})
--- table.insert(data.raw.recipe["sp-transistor"].ingredients, {type = "item", name = "sp-silicon", amount = 2})
--- table.insert(data.raw.recipe["sp-light-emitting-diode"].ingredients, {type = "item", name = "sp-silicon", amount = 2})
--- table.insert(data.raw.recipe["sp-integrated-circuit"].ingredients, {type = "item", name = "sp-silicon", amount = 2})
--- table.insert(data.raw.recipe["sp-laser"].ingredients, {type = "item", name = "sp-silicon", amount = 1})
--- table.insert(data.raw.recipe["sp-silica"].ingredients, {type = "item", name = "sp-quartz", amount = 5})
--- table.insert(data.raw.recipe["sp-plutonium-239-processing"].ingredients, {type = "item", name = "lithium", amount = 1})
--- table.insert(data.raw.recipe["sp-plutonium-240-processing"].ingredients, {type = "item", name = "lithium", amount = 1})
--- table.insert(data.raw.recipe["sp-advanced-nuclear-waste-processing"].ingredients, {type = "fluid", name = "sp-chlorine", amount = 60})
--- table.insert(data.raw.recipe["sp-urea"].ingredients, {type = "fluid", name = "ammonia", amount = 50})
--- table.insert(data.raw.recipe["sp-carbon-fiber"].ingredients, {type = "fluid", name = "sp-nitric-acid", amount = 50})
--- table.insert(data.raw.recipe["sp-ethylene-dichloride"].ingredients, {type = "fluid", name = "sp-chlorine", amount = 60})
--- table.insert(data.raw.recipe["sp-sodium-hydroxide-from-sodium"].ingredients, {type = "fluid", name = "sp-hydrogen", amount = 100})
--- table.insert(data.raw.recipe["sp-sodium-hydroxide-from-sodium"].ingredients, {type = "fluid", name = "sp-oxygen", amount = 100})
--- table.insert(data.raw.recipe["sp-vinyl-chloride"].ingredients, {type = "fluid", name = "sp-chlorine", amount = 30})
--- table.insert(data.raw.recipe["sp-helium"].ingredients, {type = "fluid", name = "sp-hydrogen", amount = 40})
--- table.insert(data.raw.recipe["sp-helium-3-from-helium-and-hydrogen"].ingredients, {type = "fluid", name = "sp-hydrogen", amount = 10})
--- table.insert(data.raw.recipe["sp-gravitonium"].ingredients, {type = "item", name = "sp-tritium", amount = 3})
--- table.insert(data.raw.recipe["sp-vacuum-tube"].ingredients, {type = "item", name = "sp-glass", amount = 3})
--- table.insert(data.raw.recipe["sp-vacuum-tube"].ingredients, {type = "fluid", name = "sp-hydrogen", amount = 5})
--- table.insert(data.raw.recipe["sp-pressure-tube"].ingredients, {type = "item", name = "sp-glass", amount = 1})
--- table.insert(data.raw.recipe["sp-liquid-nitrogen"].ingredients, {type = "fluid", name = "sp-nitrogen", amount = 5})
--- table.insert(data.raw.recipe["sp-material-science-pack-1"].ingredients, {type = "item", name = "steel-plate", amount = 5})
--- table.insert(data.raw.recipe["sp-geological-science-pack-2"].ingredients, {type = "item", name = "wood", amount = 10})
-
--- -- Add missing results
--- table.insert(data.raw.recipe["sp-silica"].results, {type = "item", name = "sp-sand", probability = 0.3, amount = 1})
--- table.insert(data.raw.recipe["sp-gold"].results, {type = "item", name = "sp-sand", probability = 0.98, amount = 3})
--- table.insert(data.raw.recipe["sp-platinum-iridium"].results, {type = "item", name = "sp-sand", probability = 0.9807, amount = 1})
--- table.insert(data.raw.recipe["sp-sodium-and-chlorine"].results, {type = "fluid", name = "sp-chlorine", amount = 3})
--- table.insert(data.raw.recipe["sp-high-purity-silicon"].results, {type = "item", name = "sp-silicon", probability = 0.7, amount = 1})
--- table.insert(data.raw.recipe["sp-used-up-fuel-rod-reprocessing"].results, {type = "fluid", name = "sp-deuterium", amount = 10})
--- table.insert(data.raw.recipe["sp-advanced-nuclear-waste-processing"].results, {type = "item", name = "lithium", probability = 0.2, amount = 1})
--- table.insert(data.raw.recipe["sp-magnesium-slab"].results, {type = "fluid", name = "sp-chlorine", amount = 10})
--- table.insert(data.raw.recipe["sp-sodium-hydroxide-from-salt"].results, {type = "fluid", name = "sp-chlorine", amount = 50})
--- table.insert(data.raw.recipe["sp-tellurium-hydroxide"].results, {type = "item", name = "sp-sand", probability = 0.92, amount = 3})
--- table.insert(data.raw.recipe["sp-cobalt-sulfate"].results, {type = "item", name = "sp-sand", probability = 0.3, amount = 1})
--- table.insert(data.raw.recipe["sp-coal-from-acrocrystal"].results, {type = "item", name = "sp-coke", probability=0.15, amount = 1})
--- table.insert(data.raw.recipe["sp-aluminum-ore-from-acrocrystal"].results, {type = "item", name = "sp-silicon", probability=0.2, amount = 1})
--- table.insert(data.raw.recipe["sp-limestone-from-acrocrystal"].results, {type = "item", name = "sp-sand", amount = 1})
--- table.insert(data.raw.recipe["sp-magnesium-ore-from-acrocrystal"].results, {type = "item", name = "lithium", probability=0.05, amount = 1})
--- table.insert(data.raw.recipe["sp-tinstone-from-acrocrystal"].results, {type = "item", name = "sp-silicon", probability=0.15, amount = 1})
--- table.insert(data.raw.recipe["sp-zirconium-ore-from-acrocrystal"].results, {type = "item", name = "sp-silicon", probability=0.15, amount = 1})
--- table.insert(data.raw.recipe["sp-calcium-from-acrovoid"].results, {type = "item", name = "lithium", probability=0.05, amount = 1})
--- table.insert(data.raw.recipe["sp-fluorine-from-acrovoid"].results, {type = "fluid", name = "sp-chlorine", amount = 10})
--- table.insert(data.raw.recipe["sp-fluorine-from-acrovoid"].results, {type = "fluid", name = "sp-oxygen", amount = 3})
--- table.insert(data.raw.recipe["sp-graphite-from-acrovoid"].results, {type = "item", name = "sp-silicon", probability=0.2, amount = 1})
--- table.insert(data.raw.recipe["sp-graphite-from-acrovoid"].results, {type = "fluid", name = "sp-nitrogen", amount = 10})
--- table.insert(data.raw.recipe["sp-graphite-from-acrovoid"].results, {type = "fluid", name = "sp-oxygen", amount = 2})
--- table.insert(data.raw.recipe["sp-iridium-from-acrovoid"].results, {type = "item", name = "sp-silicon", probability=0.2, amount = 1})
--- table.insert(data.raw.recipe["sp-iridium-from-acrovoid"].results, {type = "fluid", name = "sp-nitrogen", amount = 10})
--- table.insert(data.raw.recipe["sp-iridium-from-acrovoid"].results, {type = "fluid", name = "sp-oxygen", amount = 2})
--- table.insert(data.raw.recipe["sp-leadstone-from-acrovoid"].results, {type = "item", name = "sp-silicon", probability=0.12, amount = 1})
--- table.insert(data.raw.recipe["sp-phosphorus-from-acrovoid"].results, {type = "item", name = "sp-silicon", probability=0.01, amount = 1})
--- table.insert(data.raw.recipe["sp-phosphorus-from-acrovoid"].results, {type = "fluid", name = "sp-nitrogen", amount = 2})
--- table.insert(data.raw.recipe["sp-sodium-from-acrovoid"].results, {type = "item", name = "lithium", probability=0.25, amount = 1})
--- table.insert(data.raw.recipe["sp-sodium-from-acrovoid"].results, {type = "fluid", name = "sp-hydrogen", amount = 10})
--- table.insert(data.raw.recipe["sp-antimony-from-acrovoid"].results, {type = "fluid", name = "sp-nitrogen", amount = 8})
--- table.insert(data.raw.recipe["sp-tellurium-from-acrovoid"].results, {type = "fluid", name = "sp-nitrogen", amount = 8})
--- table.insert(data.raw.recipe["sp-sulfur-from-acrovoid"].results, {type = "item", name = "sp-silicon", probability=0.15, amount = 1})
--- table.insert(data.raw.recipe["sp-sulfur-from-acrovoid"].results, {type = "fluid", name = "sp-oxygen", amount = 15})
--- table.insert(data.raw.recipe["sp-rare-metals-alloy-from-yttrium"].results, {type = "item", name = "sp-rare-metals-alloy", amount = 6})
--- table.insert(data.raw.recipe["sp-rare-metals-alloy-from-lanthanum"].results, {type = "item", name = "sp-rare-metals-alloy", amount = 5})
--- table.insert(data.raw.recipe["sp-rare-metals-alloy-from-cerium"].results, {type = "item", name = "sp-rare-metals-alloy", amount = 10})
--- table.insert(data.raw.recipe["sp-rare-metals-alloy-from-neodymium"].results, {type = "item", name = "sp-rare-metals-alloy", amount = 6})
-

@@ -84,4 +84,19 @@ data:extend({
       quaternary = {r = 0.0, g = 0.0, b = 0.0, a = 1.000},
     }
   },
+  {
+    type = "recipe",
+    name = "superconductor",  -- #ForRegEx# - recipe
+    category = "crafting-with-fluid",
+    enabled = false,
+    energy_required = 5,
+    ingredients = {
+      {type = "item", name = "sp-lanthanum", amount = 1},
+      {type = "item", name = "iron-plate", amount = 2},
+      {type = "fluid", name = "sp-hydrogen", amount = 100}
+    },
+    results = {
+      {type = "item", name = "superconductor", amount = 1}
+    }
+  },
 })

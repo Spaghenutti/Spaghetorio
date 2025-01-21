@@ -3003,16 +3003,6 @@ data:extend({
   ------------------------------------------------------------------------------
   {
     type = "item",
-    name = "sp-superconductor",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/icons/superconductor.png",
-    icon_size = 64,
-    icon_mipmaps = 4,
-    subgroup = "advanced-intermediate-product",
-    order = "[superconductor]",
-    stack_size = 50
-  },
-  {
-    type = "item",
     name = "sp-cryostat",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/cryostat.png",
     icon_size = 64,

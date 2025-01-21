@@ -1031,7 +1031,7 @@ util.recipe.change_recipe_ingredients("solar-panel-equipment",
 util.recipe.change_recipe_ingredients("fusion-reactor-equipment",
   {
     {"sp-advanced-processing-unit", 10},
-    {"sp-superconductor", 6},
+    {"superconductor", 6},
     {"tungsten-carbide", 16},
     {"sp-pressure-tube", 10},
     {"sp-high-pressure-tank", 1},
