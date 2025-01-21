@@ -3267,6 +3267,28 @@ data:extend({
   ------------------------------------------------------------------------------
   {
     type = "item",
+    name = "sp-biomass",
+    icon = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/biomass/biomass.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    pictures = {
+      {size = 64, filename = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/biomass/biomass.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/biomass/biomass-1.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/biomass/biomass-2.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/biomass/biomass-3.png", scale = 0.25, mipmap_count = 4},
+    },
+    fuel_category = "chemical",
+    fuel_value = "2MJ",
+    fuel_emissions_multiplier = 0.8,
+    fuel_acceleration_multiplier = 0.8,
+    fuel_top_speed_multiplier = 0.8,
+    flags = { "always-show" },
+    subgroup = "alien-product",
+    order = "a[biomass]",
+    stack_size = 100,
+  },
+  {
+    type = "item",
     name = "sp-gamma-radiation-source",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/gamma-radiation-source.png",
     icon_size = 64,
@@ -4255,7 +4277,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "empty-dt-fuel",
+    name = "sp-empty-dt-fuel",
     icon = "__Spaghetorio__/graphics/krastorio/icons/items/empty-dt-fuel.png",
     icon_size = 64,
     icon_mipmaps = 4,
@@ -4265,7 +4287,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "dt-fuel",
+    name = "sp-dt-fuel",
     icon = "__Spaghetorio__/graphics/krastorio/icons/items/dt-fuel.png",
     icon_size = 64,
     icon_mipmaps = 4,
@@ -4289,7 +4311,7 @@ data:extend({
     },
     fuel_category = "fusion",
     fuel_value = "40GJ",
-    burnt_result = "empty-dt-fuel",
+    burnt_result = "sp-empty-dt-fuel",
     subgroup = "fuel-processing",
     order = "fusion-[dt-fuel]",
     stack_size = 10,
@@ -4537,6 +4559,46 @@ data:extend({
   -- MARK: Group science --
   -- MARK: basic-science
   ------------------------------------------------------------------------------
+  {
+    type = "item",
+    name = "sp-blank-tech-card",
+    icon =  "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/blank-tech-card/blank-tech-card-1.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "science-pack",
+    order = "a00[blank-tech-card]",
+    stack_size = 200,
+  },
+  {
+    type = "item",
+    name = "sp-biters-research-data",
+    icon = "__Spaghetorio__/graphics/krastorio/icons/cards/biters-research-data.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "science-pack",
+    order = "a01[biters-research-data]",
+    stack_size = 200,
+  },
+  {
+    type = "item",
+    name = "sp-matter-research-data",
+    icon = "__Spaghetorio__/graphics/krastorio/icons/cards/matter-research-data.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "science-pack",
+    order = "a02[matter-research-data]",
+    stack_size = 200,
+  },
+  {
+    type = "item",
+    name = "sp-space-research-data",
+    icon = "__Spaghetorio__/graphics/krastorio/icons/cards/space-research-data.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "science-pack",
+    order = "a03[space-research-data]",
+    stack_size = 1000,
+  },
   {
     type = "tool",
     name = "sp-electronic-science-pack-1",  -- #ForRegEx# - tool

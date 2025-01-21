@@ -101,6 +101,62 @@ local util = require("data-util")
 
 
 data:extend({
+  ------------------------------------------------------------------------------
+  -- MARK: smelting
+  ------------------------------------------------------------------------------
+  {
+    type = "recipe",
+    name = "sp-coke",  -- #ForRegEx# - recipe
+    category = "smelting",
+    enabled = false,
+    energy_required = 4,
+    ingredients = {
+      {type = "item", name = "coal", amount = 2}
+    },
+    results = {
+      {type = "item", name = "sp-coke", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-glass",  -- #ForRegEx# - recipe
+    category = "smelting",
+    enabled = false,
+    energy_required = 3.2,
+    ingredients = {
+      {type = "item", name = "sp-sand", amount = 4}
+    },
+    results = {
+      {type = "item", name = "sp-glass", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-glass-from-calcium",  -- #ForRegEx# - recipe
+    category = "smelting",
+    enabled = false,
+    energy_required = 2.4,
+    ingredients = {
+      {type = "item", name = "sp-sand", amount = 3},
+      {type = "item", name = "sp-calcium", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-glass", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-silicon",  -- #ForRegEx# - recipe
+    category = "smelting",
+    enabled = false,
+    energy_required = 4,
+    ingredients = {
+      {type = "item", name = "sp-silica", amount = 3},
+    },
+    results = {
+      {type = "item", name = "sp-silicon", amount = 2}
+    }
+  },
   {
     type = "recipe",
     name = "sp-iron-beam",  -- #ForRegEx# - recipe
@@ -173,6 +229,35 @@ data:extend({
       tertiary = {r = 0.768, g = 0.665, b = 0.762, a = 1.000},
       quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
     }
+  },
+
+  {
+    type = "recipe",
+    -- In Krastorio called "kr-vc-sp-limestone"
+    name = "sp-calcium-carbonate",  -- #ForRegEx# - recipe
+    icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/icons/calcium-carbonate.png", 64, nil,
+                                        "__Spaghetorio__/graphics/icons/fluorspar.png", 64, nil),
+    icon_size = 64,
+    mip_maps = 4,
+    category = "chemistry",
+    subgroup = "processed-resource",
+    enabled = false,
+    energy_required = 4,
+    ingredients = {
+      {type = "item", name = "sp-limestone", amount = 2},
+    },
+    results = {
+      {type = "item", name = "sp-sand", amount = 3},
+      {type = "item", name = "sp-calcium-carbonate", probability = 0.8, amount = 3},
+      {type = "item", name = "sp-fluorspar", probability = 0.2, amount = 1}
+    },
+    crafting_machine_tint = {
+      primary = {r = 1.000, g = 1.000, b = 1.000, a = 1.000},
+      secondary = {r = 0.6, g = 0.6, b = 0.6, a = 1.000},
+      tertiary = {r = 0.4, g = 0.4, b = 0.4, a = 1.000},
+      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
+    },
+    allow_quality = false
   },
   {
     type = "recipe",
@@ -752,6 +837,43 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "sp-sand",  -- #ForRegEx# - recipe
+    category = "crafting",
+    enabled = false,
+    energy_required = 2,
+    ingredients = {
+      {type = "item", name = "stone", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-sand", amount = 3}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-quartz",  -- #ForRegEx# - recipe
+    -- icon = "__Spaghetorio__/graphics/icons/quartz.png",
+    icon_size = 64,
+    scale = 0.25,
+    category = "chemistry",
+    subgroup = "raw-resource",
+    enabled = false,
+    energy_required = 3.2,
+    ingredients = {
+      {type = "item", name = "sp-sand", amount = 2},
+      {type = "fluid", name = "water", amount = 30}
+    },
+    results = {
+      {type = "item", name = "sp-quartz", amount = 2}
+    },
+    crafting_machine_tint = {
+      primary = {r = 1.000, g = 1.000, b = 1.000, a = 1.000},
+      secondary = {r = 0.8, g = 0.8, b = 0.8, a = 1.000},
+      tertiary = {r = 0.7, g = 0.7, b = 0.7, a = 1.000},
+      quaternary = {r = 0.3, g = 0.3, b = 0.3, a = 1.000},
+    }
+  },
+  {
+    type = "recipe",
     name = "sp-stainless-steel",  -- #ForRegEx# - recipe
     category = "smelting",
     enabled = false,
@@ -1270,7 +1392,7 @@ data:extend({
     enabled = false,
     energy_required = 3.2,
     ingredients = {
-      -- Base: {type = "item", name = "sp-glass", amount = 1}, Krastorio: {type = "item", name = "glass", amount = 1}
+      {type = "item", name = "sp-glass", amount = 1},
       {type = "item", name = "sp-stainless-steel", amount = 1},
       {type = "item", name = "sp-brass", amount = 3},
       {type = "item", name = "sp-flange", amount = 2}
@@ -2513,8 +2635,8 @@ data:extend({
     enabled = false,
     energy_required = 12,
     ingredients = {
-      -- Base: {type = "item", name = "sp-nitrogem", amount = 10}, Krastorio: {type = "item", name = "nitrogen", amount = 10}
       {type = "item", name = "sulfur", amount = 3},
+      {type = "fluid", name = "sp-nitrogen", amount = 10},
       {type = "fluid", name = "water", amount = 50}
     },
     results = {
@@ -2536,9 +2658,9 @@ data:extend({
     enabled = false,
     energy_required = 20,
     ingredients = {
-      -- Base: {type = "item", name = "water", amount = 50}, Krastorio: {type = "item", name = "mineral-water", amount = 30}
-      -- Base: {type = "item", name = "sp-chlorine", amount = 20}, Krastorio: {type = "item", name = "hydrogen-chloride", amount = 20}
-      {type = "item", name = "sp-catalyst", amount = 1}
+      {type = "item", name = "sp-catalyst", amount = 1},
+      {type = "fluid", name = "sp-mineral-water", amount = 50},
+      {type = "fluid", name = "sp-hydrogen-chloride", amount = 20}
     },
     results = {
       {type = "fluid", name = "sp-perchloric-acid", amount = 30}
@@ -3896,7 +4018,7 @@ data:extend({
     hidden = true,
     energy_required = 60,
     ingredients = {
-      -- Krastorio {type = "item", name = "dt-fuel", amount = 5}
+      {type = "item", name = "sp-dt-fuel", amount = 5},
       {type = "item", name = "sp-rocket-control-unit", amount = 60},
       {type = "item", name = "sp-advanced-processing-unit", amount = 200},
       {type = "item", name = "sp-heat-resistant-tile", amount = 400},
@@ -3998,8 +4120,8 @@ data:extend({
       {type = "item", name = "sp-frictionless-bearing", amount = 5},
       {type = "item", name = "sp-nanowire", amount = 2},
       {type = "item", name = "sp-nanobot", amount = 100},
-      {type = "item", name = "sp-micro-frame", amount = 6}
-      -- Krastorio: {type = "item", name = "energy-control-unit", amount = 5}
+      {type = "item", name = "sp-micro-frame", amount = 6},
+      {type = "item", name = "sp-energy-control-unit", amount = 5}
     },
     results = {
       {type = "item", name = "sp-productivity-module-4", amount = 1}
@@ -4311,7 +4433,7 @@ data:extend({
       {type = "item", name = "sp-blunagium-plate", amount = 1},
       {type = "item", name = "sp-blunagium-foam", amount = 2},
       {type = "item", name = "sp-tantalum-billet", amount = 1},
-      -- Krastorio: {type = "item", name = "imersite-crystal", amount = 1}
+      {type = "item", name = "sp-imersite-crystal", amount = 1}
     },
     results = {
       {type = "item", name = "sp-blunagium-imersite-slab", amount = 2}
@@ -4326,8 +4448,8 @@ data:extend({
     enabled = false,
     energy_required = 50,
     ingredients = {
-      -- Krastorio: {type = "item", name = "imersite-crystal", amount = 2},
-      -- Krastorio: {type = "item", name = "sp-imersite-powder", amount = 1},
+      {type = "item", name = "sp-imersite-crystal", amount = 2},
+      {type = "item", name = "sp-imersite-powder", amount = 1},
       {type = "item", name = "sp-blunagium-bar", amount = 1},
       {type = "item", name = "sp-quantum-crystal", amount = 1}
     },
@@ -4346,7 +4468,7 @@ data:extend({
       {type = "item", name = "sp-blunagium-basalt", amount = 1},
       {type = "item", name = "sp-rukite-powder", amount = 1},
       {type = "item", name = "sp-yemnuth-pearls", amount = 1},
-      -- Krastorio: {type = "item", name = "sp-imersite-powder", amount = 1},
+      {type = "item", name = "sp-imersite-powder", amount = 1},
       {type = "item", name = "sp-diamond", amount = 6}
     },
     results = {
@@ -4382,7 +4504,7 @@ data:extend({
       {type = "item", name = "sp-plutonium-240", amount = 1},
       {type = "item", name = "sp-blunagium-foam", amount = 1},
       {type = "item", name = "sp-blunagium-basalt", amount = 2},
-      -- Krastorio: {type = "item", name = "sp-imersite-powder", amount = 3}
+      {type = "item", name = "sp-imersite-powder", amount = 3}
     },
     results = {
       {type = "item", name = "sp-boson-blossom", amount = 1}
@@ -4453,7 +4575,7 @@ data:extend({
       {type = "item", name = "sp-yttrium", amount = 1},
       {type = "item", name = "sp-niobium-powder", amount = 1},
       {type = "fluid", name = "sp-grobgnum-hydroxide", amount = 4},
-      -- Krastorio: {type = "item", name = "biomass", amount = 1}
+      {type = "item", name = "sp-biomass", amount = 1}
     },
     results = {
       {type = "item", name = "sp-bio-capacitor", amount = 1}
@@ -4472,9 +4594,9 @@ data:extend({
       {type = "item", name = "sp-grobgnum-plate", amount = 1},
       {type = "item", name = "sp-graphene", amount = 3},
       {type = "fluid", name = "sp-grobgnumylene", amount = 3},
-      -- Krastorio: {type = "item", name = "tritium", amount = 1},
-      -- Krastorio: {type = "item", name = "lithium", amount = 1},
-      -- Krastorio: {type = "item", name = "biomass", amount = 2}
+      {type = "item", name = "sp-tritium", amount = 1},
+      {type = "item", name = "lithium", amount = 1},
+      {type = "item", name = "sp-biomass", amount = 2}
     },
     results = {
       {type = "item", name = "sp-neural-fusion-card", amount = 1}
@@ -4493,8 +4615,8 @@ data:extend({
       {type = "item", name = "sp-glass-fiber", amount = 1},
       {type = "item", name = "sp-stibnite", amount = 1},
       {type = "fluid", name = "sp-grobgnumylene", amount = 5},
-      -- Krastorio: {type = "item", name = "biomass", amount = 2},
-      -- Krastorio: {type = "item", name = "ai-core", amount = 2}
+      {type = "item", name = "sp-biomass", amount = 2},
+      {type = "item", name = "sp-ai-core", amount = 2}
     },
     results = {
       {type = "item", name = "sp-neuropulse-module", amount = 1}
@@ -4514,8 +4636,8 @@ data:extend({
       {type = "item", name = "sp-glass-fiber", amount = 1},
       {type = "item", name = "sp-antimony", amount = 2},
       {type = "fluid", name = "sp-grobgnum-hydroxide", amount = 8},
-      -- Krastorio: {type = "item", name = "biomass", amount = 3},
-      -- Krastorio: {type = "item", name = "ai-core", amount = 1}
+      {type = "item", name = "sp-biomass", amount = 3},
+      {type = "item", name = "sp-ai-core", amount = 1}
     },
     results = {
       {type = "item", name = "sp-synaptic-core-chip", amount = 1}
@@ -4534,9 +4656,9 @@ data:extend({
       {type = "item", name = "sp-holo-grip-controller", amount = 1},
       {type = "item", name = "sp-neutrino-stream-source", amount = 2},
       {type = "item", name = "sp-rukite-bar", amount = 2},
-      -- Krastorio: {type = "item", name = "imersite-crystal", amount = 2},
-      -- Krastorio: {type = "item", name = "imersium-plate", amount = 1},
-      -- Krastorio: {type = "item", name = "energy-control-unit", amount = 1},
+      {type = "item", name = "sp-imersite-crystal", amount = 2},
+      {type = "item", name = "sp-imersium-plate", amount = 1},
+      {type = "item", name = "sp-energy-control-unit", amount = 1},
       {type = "item", name = "sp-TiNb", amount = 1},
       {type = "item", name = "sp-niobium-steel", amount = 1},
     },
@@ -4555,7 +4677,7 @@ data:extend({
       {type = "item", name = "sp-superconductor", amount = 1},
       {type = "item", name = "sp-advanced-processing-unit", amount = 1},
       {type = "item", name = "sp-blunagium-rukite-compound", amount = 1},
-      -- Krastorio: {type = "item", name = "imersium-plate", amount = 1},
+      {type = "item", name = "sp-imersium-plate", amount = 1},
     },
     results = {
       {type = "item", name = "sp-radiation-channeler", amount = 1}
@@ -4573,7 +4695,7 @@ data:extend({
       {type = "item", name = "sp-titanium-frame", amount = 1},
       {type = "item", name = "sp-rukite-plate", amount = 1},
       {type = "item", name = "sp-blunagium-solenoid", amount = 1},
-      -- Krastorio: {type = "item", name = "imersite-crystal", amount = 1},
+      {type = "item", name = "sp-imersite-crystal", amount = 1},
     },
     results = {
       {type = "item", name = "sp-ultra-violet-processor", amount = 1}
@@ -4591,7 +4713,7 @@ data:extend({
       {type = "item", name = "sp-high-purity-silicon", amount = 1},
       {type = "item", name = "sp-gold", amount = 1},
       {type = "item", name = "sp-rukite-powder", amount = 1},
-      -- Krastorio: {type = "item", name = "sp-imersite-powder", amount = 2},
+      {type = "item", name = "sp-imersite-powder", amount = 2},
     },
     results = {
       {type = "item", name = "sp-graphene-chip", amount = 1}
@@ -4640,7 +4762,7 @@ data:extend({
     energy_required = 10,
     ingredients = {
       {type = "item", name = "sp-rukite-gear-wheel", amount = 10},
-      -- Krastorio: {type = "item", name = "imersium-gear-wheel", amount = 4},
+      {type = "item", name = "sp-imersium-gear-wheel", amount = 4},
       {type = "item", name = "sp-TiNb", amount = 2},
       {type = "item", name = "tungsten-carbide", amount = 3}
     },
@@ -4689,7 +4811,7 @@ data:extend({
       {type = "item", name = "sp-plasma-crystal", amount = 1},
       {type = "item", name = "sp-quantum-crystal", amount = 1},
       {type = "fluid", name = "sp-xenon", amount = 5},
-      -- Krastorio: {type = "item", name = "tritium", amount = 1}
+      {type = "item", name = "sp-tritium", amount = 1}
     },
     results = {
       {type = "item", name = "sp-gluon-orb", amount = 25}
@@ -4739,7 +4861,7 @@ data:extend({
       {type = "item", name = "sp-yemnuth-pearls", amount = 8},
       {type = "item", name = "sp-yemnuth-plate", amount = 1},
       {type = "item", name = "sp-stibnite", amount = 1},
-      -- {type = "fluid", name = "heavy-water", amount = 10},
+      {type = "fluid", name = "sp-heavy-water", amount = 10},
     },
     results = {
       {type = "item", name = "sp-quark-sphere", amount = 12}
@@ -4754,7 +4876,7 @@ data:extend({
     ingredients = {
       {type = "item", name = "sp-plasma-crystal", amount = 1},
       {type = "item", name = "sp-gravitonium", amount = 1},
-      -- {type = "item", name = "sp-imersite-powder", amount = 1},
+      {type = "item", name = "sp-imersite-powder", amount = 1},
     },
     results = {
       {type = "item", name = "sp-trapped-quantum-energy", amount = 10}
@@ -4771,7 +4893,7 @@ data:extend({
       {type = "item", name = "sp-neutrino-stream-source", amount = 1},
       {type = "item", name = "sp-nanoflex", amount = 1},
       {type = "item", name = "sp-nanowire", amount = 1},
-      -- {type = "item", name = "sp-imersite-powder", amount = 1},
+      {type = "item", name = "sp-imersite-powder", amount = 1},
     },
     results = {
       {type = "item", name = "sp-femto-navigator", amount = 10}
@@ -4838,7 +4960,7 @@ data:extend({
       {type = "item", name = "sp-rukite-powder", amount = 2},
       {type = "item", name = "sp-blunagium-stone", amount = 1},
       {type = "item", name = "sp-blunagium-rukite-compound", amount = 5},
-      -- Krastorio: {type = "item", name = "sp-imersite-powder", amount = 2}
+      {type = "item", name = "sp-imersite-powder", amount = 2}
     },
     results = {
       {type = "item", name = "sp-frictionless-bearing", amount = 3}
@@ -4987,7 +5109,7 @@ data:extend({
       {type = "item", name = "sp-imersite-rukite-beam", amount = 12},
       {type = "item", name = "sp-graphene-chip", amount = 1},
       {type = "item", name = "sp-blunagium-solenoid", amount = 6},
-      -- Krastorio: {type = "item", name = "energy-control-unit", amount = 6}
+      {type = "item", name = "sp-energy-control-unit", amount = 6}
     },
     results = {
       {type = "item", name = "sp-extreme-heat-source", amount = 1}
@@ -5002,8 +5124,8 @@ data:extend({
     ingredients = {
       {type = "item", name = "sp-grobgnum-droplet", amount = 1},
       {type = "item", name = "sp-high-purity-silicon", amount = 4},
-      {type = "fluid", name = "sp-aqueous-tantalum", amount = 6}
-      -- Krastorio: {type = "item", name = "imersium-plate", amount = 1}
+      {type = "fluid", name = "sp-aqueous-tantalum", amount = 6},
+      {type = "item", name = "sp-imersium-plate", amount = 1}
     },
     results = {
       {type = "item", name = "sp-grobgnum-optics", amount = 1}
@@ -5018,8 +5140,8 @@ data:extend({
     ingredients = {
       {type = "item", name = "sp-gamma-radiation-source", amount = 1},
       {type = "item", name = "sp-grobgnum-optics", amount = 1},
-      {type = "item", name = "sp-lanthanum", amount = 1}
-      -- Krastorio: {type = "item", name = "tritium", amount = 1}
+      {type = "item", name = "sp-lanthanum", amount = 1},
+      {type = "item", name = "sp-tritium", amount = 1}
     },
     results = {
       {type = "item", name = "sp-proton-neutron-frame", amount = 6}
@@ -5269,7 +5391,7 @@ data:extend({
       {type = "item", name = "sp-grobgnum-optics", amount = 1},
       {type = "item", name = "sp-quantum-foam", amount = 5},
       {type = "item", name = "sp-gravitonium", amount = 7},
-      -- Krastorio: {type = "item", name = "biomass", amount = 20},
+      {type = "item", name = "sp-biomass", amount = 20},
     },
     results = {
       {type = "item", name = "sp-evolution-pulse-cell", amount = 70}
@@ -5309,7 +5431,7 @@ data:extend({
       {type = "item", name = "sp-radiant-glass", amount = 2},
       {type = "item", name = "sp-grobgnum-rukite-beam", amount = 2},
       {type = "item", name = "sp-gravitonium", amount = 1},
-      -- Krastorio: {type = "fluid", name = "matter", amount = 100},
+      {type = "fluid", name = "sp-matter", amount = 100},
     },
     results = {
       {type = "item", name = "sp-dark-energy-harvester", amount = 1}
@@ -5361,7 +5483,7 @@ data:extend({
       {type = "item", name = "sp-blunagium-plate", amount = 1},
       {type = "item", name = "sp-extreme-heat-source", amount = 1},
       {type = "item", name = "sp-extreme-data-transfer-controller", amount = 1},
-      -- Krastorio: {type = "item", name = "imersite-crystal", amount = 1}
+      {type = "item", name = "sp-imersite-crystal", amount = 1}
     },
     results = {
       {type = "item", name = "sp-interdimensional-prism-chamber", amount = 1}
@@ -5518,7 +5640,7 @@ data:extend({
     subgroup = "fluid-recipes",
     energy_required = 0.01,
     ingredients = {
-      -- Krastorio: {type = "fluid", name = "matter", amount = 1},
+      {type = "fluid", name = "sp-matter", amount = 1},
       {type = "fluid", name = "sp-antimatter", amount = 1},
     },
     results = {
@@ -5927,8 +6049,8 @@ data:extend({
       {type = "item", name = "iron-ore", probability=0.15, amount = 1},
       {type = "item", name = "sp-zirconium-ore", probability=0.05, amount = 1},
       {type = "item", name = "sp-limestone", probability=0.5, amount = 1},
-      -- add silicon for krastorio
-      -- add sand as guaranteed product in krastorio
+      {type = "item", name = "sp-silicon", probability=0.3, amount = 1},
+      {type = "item", name = "sp-sand", amount = 3},
     }
   },
   {
@@ -5958,7 +6080,6 @@ data:extend({
       {type = "item", name = "stone", probability=0.15, amount = 1},
       {type = "item", name = "iron-ore", probability=0.1, amount = 1},
       {type = "item", name = "carbon", probability=0.1, amount = 1}
-      -- add coke for krastorio
     }
   },
   {
@@ -5986,8 +6107,8 @@ data:extend({
       {type = "item", name = "sp-aluminum-ore", amount = 14},
       {type = "item", name = "sp-acrocrystal", probability=0.99, amount = 1},
       {type = "item", name = "sp-phosphorus", probability=0.1, amount = 1},
-      {type = "item", name = "carbon", probability=0.05, amount = 1}
-      -- add 0.2 for silicon in krastorio
+      {type = "item", name = "carbon", probability=0.05, amount = 1},
+      {type = "item", name = "sp-silicon", probability=0.2, amount = 1}
     }
   },
   {
@@ -6043,8 +6164,8 @@ data:extend({
       {type = "item", name = "sp-limestone", amount = 12},
       {type = "item", name = "sp-acrocrystal", probability=0.99, amount = 1},
       {type = "item", name = "stone", probability=0.2, amount = 1},
-      {type = "item", name = "sp-calcium", probability=0.5, amount = 1}
-      -- add sand as guaranteed product in krastorio
+      {type = "item", name = "sp-calcium", probability=0.5, amount = 1},
+      {type = "item", name = "sp-sand",  amount = 2}
     }
   },
   {
@@ -6100,8 +6221,8 @@ data:extend({
       {type = "item", name = "sp-magnesium-ore", amount = 11},
       {type = "item", name = "sp-acrocrystal", probability=0.99, amount = 1},
       {type = "item", name = "sp-calcium", probability=0.25, amount = 1},
-      {type = "item", name = "sp-sodium", probability=0.20, amount = 1}
-      -- add 0.05 for lithium in krastorio
+      {type = "item", name = "sp-sodium", probability=0.20, amount = 1},
+      {type = "item", name = "lithium", probability=0.06, amount = 1}
     }
   },
   {
@@ -6160,8 +6281,8 @@ data:extend({
       {type = "item", name = "sp-acrocrystal", probability=0.99, amount = 1},
       {type = "item", name = "sp-leadstone", probability=0.5, amount = 1},
       {type = "item", name = "sp-antimony", probability=0.12, amount = 1},
-      {type = "item", name = "sp-tellurium", probability=0.02, amount = 1}
-      -- add 0.15 for silicon in krastorio
+      {type = "item", name = "sp-tellurium", probability=0.02, amount = 1},
+      {type = "item", name = "sp-silicon", probability=0.15, amount = 1}
     }
   },
   {
@@ -6245,15 +6366,78 @@ data:extend({
       {type = "item", name = "sp-zirconium-ore", amount = 10},
       {type = "item", name = "sp-acrocrystal", probability=0.99, amount = 1},
       {type = "item", name = "sp-titanium-ore", probability=0.5, amount = 1},
+      {type = "item", name = "sp-silicon", probability=0.15, amount = 1},
       {type = "fluid", name = "sp-aqueous-niobium", probability=0.1, amount = 1},
       {type = "fluid", name = "sp-aqueous-tantalum", probability=0.05, amount = 1}
-      -- add 0.15 for silicon in krastorio
     }
   },
   ------------------------------------------------------------------------------
   -- Acrosphere product recipes for basic resources from acrovoid
   -- MARK: Acrovoid
   ------------------------------------------------------------------------------
+  
+  {
+    type = "recipe",
+    name = "sp-coke-from-acrovoid",  -- #ForRegEx# - recipe
+    icons = util.icon.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/krastorio/icons/items-with-variations/coke/coke.png",
+                                                         "__Spaghetorio__/graphics/icons/acrovoid.png"),
+    icon_size = 64,
+    mip_maps = 4,
+    allowed_effects = {
+      "consumption",
+      "speed",
+      "pollution"
+    },
+    allow_decomposition = false,
+    category = "acroproduct-conversion-with-acrovoid",
+    subgroup = "processed-resource",
+    enabled = false,
+    energy_required = 6,
+    ingredients = {
+      {type = "item", name = "sp-coke", amount = 6},
+      {type = "item", name = "sp-acrovoid", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-acrovoid", probability=0.99, amount = 1},
+      {type = "item", name = "sp-coke", amount = 7},
+      {type = "item", name = "carbon", probability=0.5, amount = 1},
+      {type = "item", name = "sulfur", probability=0.1, amount = 1},
+      {type = "fluid", name = "sp-hydrogen", amount = 4},
+      {type = "fluid", name = "sp-oxygen", amount = 12}
+    },
+    allow_quality = false
+  },
+  {
+    type = "recipe",
+    name = "sp-silicon-from-acrovoid",  -- #ForRegEx# - recipe
+    icons = util.icon.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/krastorio/icons/items-with-variations/silicon/silicon.png",
+                                                         "__Spaghetorio__/graphics/icons/acrovoid.png"),
+    icon_size = 64,
+    mip_maps = 4,
+    category = "acroproduct-conversion-with-acrovoid",
+    subgroup = "processed-resource",
+    enabled = false,
+    energy_required = 12,
+    allowed_effects = {
+      "consumption",
+      "speed",
+      "pollution"
+    },
+    allow_decomposition = false,
+    ingredients = {
+      {type = "item", name = "sp-silicon", amount = 4},
+      {type = "item", name = "sp-acrovoid", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-acrovoid", probability=0.98, amount = 1},
+      {type = "item", name = "sp-silicon", amount = 6},
+      {type = "item", name = "carbon", probability=0.3, amount = 1},
+      {type = "item", name = "sp-phosphorus", probability=0.2, amount = 1},
+      {type = "item", name = "sp-aluminum-ore", probability=0.2, amount = 1},
+      {type = "item", name = "sp-tinstone", probability=0.08, amount = 1},
+    },
+    allow_quality = false
+  },
   {
     type = "recipe",
     name = "sp-uranium-from-acrovoid",  -- #ForRegEx# - recipe
@@ -6308,7 +6492,7 @@ data:extend({
       {type = "item", name = "sp-calcium", amount = 10},
       {type = "item", name = "sp-sodium", probability=0.2, amount = 1},
       {type = "item", name = "sp-titanium-ore", probability=0.1, amount = 1},
-      -- add 0.05 lithium in krastorio
+      {type = "item", name = "lithium", probability=0.05, amount = 1},
     }
   },
   {
@@ -6452,8 +6636,8 @@ data:extend({
       {type = "item", name = "sp-acrovoid", probability=0.99, amount = 1},
       {type = "item", name = "sp-fluorine", amount = 8},
       {type = "item", name = "sulfur", probability=0.15, amount = 1},
-      -- add 10 chlorine in krastorio
-      -- add 3 oxygen in krastorio
+      {type = "fluid", name = "sp-chlorine", amount = 10},
+      {type = "fluid", name = "sp-oxygen", amount = 1},
     }
   },
   {
@@ -6511,11 +6695,11 @@ data:extend({
       {type = "item", name = "sp-acrovoid", probability=0.99, amount = 1},
       {type = "item", name = "carbon", amount = 5},
       {type = "item", name = "sp-tinstone", probability=0.15, amount = 1},
-      {type = "item", name = "sp-leadstone", probability=0.1, amount = 1}
+      {type = "item", name = "sp-leadstone", probability=0.1, amount = 1},
+      {type = "item", name = "sp-silicon", probability=0.2, amount = 1},
+      {type = "fluid", name = "sp-chlorine", amount = 10},
+      {type = "fluid", name = "sp-oxygen", amount = 3},
     }
-    -- add 0.2% Silicon in krastorio
-    -- add 10 Nitrogen in krastorio
-    -- add 2 Oxygen in krastorio  
   },
   {
     type = "recipe",
@@ -6542,11 +6726,11 @@ data:extend({
       {type = "item", name = "sp-acrovoid", probability=0.97, amount = 1},
       {type = "item", name = "sp-iridium", amount = 3},
       {type = "item", name = "sp-platinum", probability=0.15, amount = 1},
-      {type = "item", name = "sp-gold", probability=0.08, amount = 1}
+      {type = "item", name = "sp-gold", probability=0.08, amount = 1},
+      {type = "item", name = "sp-silicon", probability=0.2, amount = 1},
+      {type = "fluid", name = "sp-chlorine", amount = 10},
+      {type = "fluid", name = "sp-oxygen", amount = 2},
     }
-    -- add 0.2% Silicon in krastorio
-    -- add 20 Nitrogen in krastorio
-    -- add 2 Oxygen in krastorio  
     -- add cobalt to items
   },
   {
@@ -6575,7 +6759,7 @@ data:extend({
       {type = "item", name = "sp-leadstone", amount = 10},
       {type = "item", name = "sp-tinstone", probability=0.4, amount = 1},
       {type = "item", name = "carbon", probability=0.2, amount = 1},
-      -- add 0.12% silicon in krastorio
+      {type = "item", name = "sp-silicon", probability=0.12, amount = 1},
     }
   },
   {
@@ -6634,8 +6818,8 @@ data:extend({
       {type = "item", name = "sp-antimony", probability=0.24, amount = 1},
       {type = "item", name = "sulfur", probability=0.12, amount = 1},
       {type = "item", name = "sp-aluminum-ore", probability=0.08, amount = 1},
-      -- add 10 Nitrogen in krastorio
-      -- add 0.01% Silicon in krastorio
+      {type = "item", name = "sp-silicon", probability=0.02, amount = 1},
+      {type = "fluid", name = "sp-nitrogen", amount = 10},
     }
   },
   {
@@ -6751,8 +6935,8 @@ data:extend({
       {type = "item", name = "sp-acrovoid", probability=0.99, amount = 1},
       {type = "item", name = "sp-sodium", amount = 8},
       {type = "item", name = "sp-calcium", probability=0.07, amount = 1},
-      -- add 0.25% lithium in krastorio
-      -- add 10 hydrogen in krastorio
+      {type = "item", name = "lithium", probability=0.25, amount = 1},
+      {type = "fluid", name = "sp-hydrogen", amount = 10},
     }
   },
   {
@@ -6782,7 +6966,7 @@ data:extend({
       {type = "item", name = "sp-phosphorus", probability=0.15, amount = 1},
       {type = "item", name = "sp-tinstone", probability=0.2, amount = 1},
       {type = "item", name = "sp-tellurium", probability=0.16, amount = 1},
-      -- add 8 Nitrogen in krastorio
+      {type = "fluid", name = "sp-nitrogen", amount = 8},
     }
   },
   {
@@ -6812,7 +6996,7 @@ data:extend({
       {type = "item", name = "sulfur", probability=0.25, amount = 2},
       {type = "item", name = "sp-antimony", probability=0.12, amount = 1},
       {type = "fluid", name = "sp-xenon", probability=0.02, amount = 1},
-      -- add 8 Oxygen in krastorio
+      {type = "fluid", name = "sp-oxygen", amount = 8},
     }
   },
   {
@@ -6870,9 +7054,9 @@ data:extend({
       {type = "item", name = "sulfur", amount = 8},
       {type = "item", name = "sp-tellurium", probability=0.05, amount = 1},
       {type = "item", name = "sp-phosphorus", probability=0.2, amount = 1},
-      {type = "item", name = "sp-fluorine", probability=0.16, amount = 1}
-      -- add 15 Oxygen in krastorio
-      -- add 0.15% 1 Silicon in krastorio
+      {type = "item", name = "sp-fluorine", probability=0.16, amount = 1},
+      {type = "item", name = "sp-silicon", probability=0.15, amount = 1},
+      {type = "fluid", name = "sp-oxygen", amount = 15}
     }
   },
   ------------------------------------------------------------------------------
@@ -6893,7 +7077,7 @@ data:extend({
     enabled = false,
     energy_required = 24,
     ingredients =
-    -- Krastorio: {type = "item", name = "blank-tech-card", amount = 5}
+    -- Krastorio: {type = "item", name = "sp-blank-tech-card", amount = 5}
     {
       {type = "item", name = "copper-cable", amount = 5},
       {type = "item", name = "electronic-circuit", amount = 5},
@@ -6910,8 +7094,8 @@ data:extend({
     enabled = false,
     energy_required = 24,
     ingredients =
-    -- Krastorio: {type = "item", name = "blank-tech-card", amount = 5}
     {
+      {type = "item", name = "sp-blank-tech-card", amount = 5},
       {type = "item", name = "stone", amount = 10},
       {type = "item", name = "sp-sand", amount = 10},
       {type = "item", name = "sp-quartz", amount = 5},
@@ -6928,9 +7112,9 @@ data:extend({
     enabled = false,
     energy_required = 24,
     ingredients =
-    -- Base: {type = "item", name = "steel-plate", amount = 5}, Krastorio: {type = "item", name = "steel-beam", amount = 5}
-    -- Krastorio: {type = "item", name = "blank-tech-card", amount = 5}
     {
+      {type = "item", name = "sp-blank-tech-card", amount = 5},
+      {type = "item", name = "sp-steel-beam", amount = 5},
       {type = "item", name = "sp-aluminum-sheet", amount = 5},
       {type = "item", name = "sp-bronze-rod", amount = 5},
     },
@@ -6964,9 +7148,11 @@ data:extend({
     enabled = false,
     energy_required = 24,
     ingredients =
-    -- Krastorio: {type = "item", name = "electric-engine-unit", amount = 5}, {type = "item", name = "engine-unit", amount = 2}, {type = "item", name = "automation-core", amount = 10}
     {
       {type = "item", name = "logistic-science-pack", amount = 20},
+      {type = "item", name = "electric-engine-unit", amount = 5},
+      {type = "item", name = "engine-unit", amount = 2},
+      {type = "item", name = "sp-automation-core", amount = 10},
       {type = "item", name = "sp-electromagnet", amount = 8},
       {type = "item", name = "sp-servo-motor", amount = 8},
     },
@@ -7039,7 +7225,7 @@ data:extend({
       {type = "item", name = "sp-zinc-sulfate", amount = 5},
       {type = "item", name = "sp-leadstone", amount = 2},
       {type = "item", name = "sulfur", amount = 5},
-      -- {type = "item", name = "wood", amount = 10},
+      {type = "item", name = "wood", amount = 10},
       {type = "fluid", name = "crude-oil", amount = 20},
     },
     results = {
@@ -7073,9 +7259,9 @@ data:extend({
     enabled = false,
     energy_required = 24,
     ingredients =
-    -- Krastorio: {type = "item", name = "blank-tech-card", amount = 5}
-    -- Krastorio: {type = "item", name = "space-research-data", amount = 5}
     {
+      {type = "item", name = "sp-blank-tech-card", amount = 5},
+      {type = "item", name = "sp-space-research-data", amount = 5},
       {type = "item", name = "sp-glass-fiber", amount = 10},
       {type = "item", name = "sp-mirror", amount = 5},
       {type = "item", name = "sp-lens", amount = 5},
@@ -7092,8 +7278,8 @@ data:extend({
     enabled = false,
     energy_required = 24,
     ingredients =
-    -- Krastorio: {type = "item", name = "blank-tech-card", amount = 5}
     {
+      {type = "item", name = "sp-blank-tech-card", amount = 5},
       {type = "item", name = "sp-integrated-circuit", amount = 5},
       {type = "item", name = "sp-memory-chip", amount = 5},
       {type = "item", name = "sp-heatsink", amount = 5},
@@ -7110,8 +7296,8 @@ data:extend({
     enabled = false,
     energy_required = 240,
     ingredients =
-    -- Krastorio: {type = "item", name = "blank-tech-card", amount = 50}
     {
+      {type = "item", name = "sp-blank-tech-card", amount = 50},
       {type = "item", name = "uranium-238", amount = 400},
       {type = "item", name = "uranium-235", amount = 1},
       {type = "item", name = "sp-empty-fuel-rod", amount = 50},
@@ -7172,8 +7358,7 @@ data:extend({
       {type = "item", name = "destroyer-capsule", amount = 3},
       {type = "item", name = "rocket", amount = 3},
       {type = "item", name = "artillery-shell", amount = 3},
-      {type = "item", name = "energy-shield-mk2-equipment", amount = 3},
-      -- Krastorio: {type = "item", name = "basic-railgun-shell", amount = 3}
+      {type = "item", name = "energy-shield-mk2-equipment", amount = 3}
     },
     results = {
       {type = "item", name = "sp-military-science-pack-3", amount = 5}
@@ -7188,14 +7373,13 @@ data:extend({
     ingredients =
     {
       {type = "item", name = "sp-chemical-science-pack-2", amount = 10},
-      {type = "fluid", name = "sp-methyl-tert-butyl-ether", amount = 20},
-      {type = "fluid", name = "sp-perchloric-acid", amount = 30},
       {type = "item", name = "sp-catalyst", amount = 10},
       {type = "item", name = "sp-composites", amount = 5},
       {type = "item", name = "sp-carbon-nanotubes", amount = 10},
+      {type = "item", name = "sp-lithium-chloride", amount = 5},
       {type = "fluid", name = "electrolyte", amount = 5},
-      -- Krastorio: {type = "item", name = "lithium-chloride", amount = 5},
-      -- Krastorio: {type = "item", name = "nitric-acid", amount = 30}
+      {type = "fluid", name = "sp-methyl-tert-butyl-ether", amount = 20},
+      {type = "fluid", name = "sp-perchloric-acid", amount = 30},
     },
     results = {
       {type = "item", name = "sp-chemical-science-pack-3", amount = 5}
@@ -7371,7 +7555,7 @@ data:extend({
       {type = "item", name = "sp-hadron-beam-charger", amount = 20},
       {type = "item", name = "sp-sideral-compute-core", amount = 1},
       {type = "fluid", name = "sp-dark-energy", amount = 10},
-      -- Krastorio: {type = "item", name = "matter-cube", amount = 1}
+      {type = "item", name = "sp-matter-cube", amount = 1}
     },
     results = {
       {type = "item", name = "sp-uniformity-science-pack", amount = 40}
@@ -7555,7 +7739,7 @@ data:extend({
     energy_required = 4,
     ingredients = {
       {type = "item", name = "sp-sodium", amount = 2},
-      -- {type = "item", name = "sp-coke", amount = 5}
+      {type = "item", name = "sp-coke", amount = 5}
     },
     results = {
       {type = "item", name = "sp-sodium-carbonate", amount = 2}
@@ -7569,7 +7753,7 @@ data:extend({
     energy_required = 3.2,
     ingredients = {
       {type = "item", name = "sp-zirconium-ore", amount = 1},
-      -- {type = "item", name = "sp-sand", amount = 3}
+      {type = "item", name = "sp-sand", amount = 3}
     },
     results = {
       {type = "item", name = "sp-zirconia", amount = 1}
@@ -7582,7 +7766,7 @@ data:extend({
     enabled = false,
     energy_required = 4,
     ingredients = {
-      -- {type = "item", name = "sp-sand", amount = 8},
+      {type = "item", name = "sp-sand", amount = 8},
       {type = "fluid", name = "water", amount = 50}
     },
     results = {
@@ -7607,7 +7791,7 @@ data:extend({
     enabled = false,
     energy_required = 5,
     ingredients = {
-      -- {type = "item", name = "sp-sand", amount = 8},
+      {type = "item", name = "sp-sand", amount = 8},
       {type = "item", name = "sp-fluorine", amount = 1},
       {type = "fluid", name = "water", amount = 50}
     },
@@ -7638,7 +7822,7 @@ data:extend({
       {type = "fluid", name = "water", amount = 40}
     },
     results = {
-      -- {type = "item", name = "sp-sand", probability = 0.98, amount = 3},
+      {type = "item", name = "sp-sand", probability = 0.98, amount = 3},
       {type = "item", name = "sp-gold", probability = 0.02, amount = 1}
     },
     crafting_machine_tint = {
@@ -7663,7 +7847,7 @@ data:extend({
       {type = "item", name = "stone", amount = 1},
     },
     results = {
-      -- {type = "item", name = "sp-sand", probability = 0.9807, amount = 3},
+      {type = "item", name = "sp-sand", probability = 0.9807, amount = 3},
       {type = "item", name = "sp-platinum", probability = 0.019, amount = 1},
       {type = "item", name = "sp-iridium", probability = 0.0003, amount = 1}
     }
@@ -7680,7 +7864,7 @@ data:extend({
     ingredients =
     {
       {type = "item", name = "stone", amount = 8},
-      -- {type = "item", name = "sp-sand", amount = 30}
+      {type = "item", name = "sp-sand", amount = 30}
     },
     results = {
       {type = "item", name = "landfill", amount = 1}
@@ -7697,7 +7881,7 @@ data:extend({
     hide_from_player_crafting = true,
     ingredients =
     {
-      -- {type = "item", name = "sp-sand", amount = 8}
+      {type = "item", name = "sp-sand", amount = 8}
     },
     results = {
       {type = "item", name = "stone-brick", amount = 1}
@@ -7710,7 +7894,7 @@ data:extend({
     enabled = false,
     energy_required = 2.8,
     ingredients = {
-      -- {type = "item", name = "sp-glass", amount = 2},
+      {type = "item", name = "sp-glass", amount = 2},
       {type = "item", name = "sp-aluminum-sheet", amount = 1},
       {type = "item", name = "sp-sodium-carbonate", amount = 2}
     },
@@ -7726,7 +7910,7 @@ data:extend({
     energy_required = 6,
     ingredients = {
       {type = "item", name = "sp-titanium-ingot", amount = 2},
-      -- {type = "fluid", name = "sp-nitrogen", amount = 40}
+      {type = "fluid", name = "sp-nitrogen", amount = 40}
     },
     results = {
       {type = "item", name = "sp-titanium-nitride", amount = 2}
@@ -7746,7 +7930,7 @@ data:extend({
     energy_required = 4.8,
     ingredients = {
       {type = "item", name = "sp-carbon-fiber", amount = 3},
-      -- {type = "fluid", name = "sp-nitrogen", amount = 15}
+      {type = "fluid", name = "sp-nitrogen", amount = 15}
     },
     results = {
       {type = "item", name = "sp-kevlar", amount = 2}
@@ -7761,7 +7945,7 @@ data:extend({
     ingredients = {
       {type = "item", name = "uranium-235", amount = 2},
       {type = "item", name = "sp-empty-fuel-rod", amount = 1},
-      -- {type = "fluid", name = "sp-nitrogen", amount = 100}
+      {type = "fluid", name = "sp-nitrogen", amount = 100}
     },
     results = {
       {type = "item", name = "sp-uranium-fuel-rod", amount = 1}
@@ -7776,8 +7960,8 @@ data:extend({
     energy_required = 10,
     ingredients = {
       {type = "item", name = "carbon", amount = 3},
-      -- {type = "fluid", name = "sp-oxygen", amount = 35},
-      -- {type = "fluid", name = "sp-hydrogen", amount = 15},
+      {type = "fluid", name = "sp-oxygen", amount = 35},
+      {type = "fluid", name = "sp-hydrogen", amount = 15},
     },
     results = {
       {type = "fluid", name = "sp-epoxy", amount = 20}
@@ -7798,7 +7982,7 @@ data:extend({
     energy_required = 0.8,
     ingredients = {
       {type = "item", name = "sp-monocrystal", amount = 1},
-      -- {type = "fluid", name = "sp-hydrogen", amount = 1},
+      {type = "fluid", name = "sp-hydrogen", amount = 1},
       {type = "item", name = "sp-graphene", amount = 2}
     },
     results = {
@@ -7814,7 +7998,7 @@ data:extend({
     ingredients = {
       {type = "item", name = "sp-lanthanum", amount = 1},
       {type = "item", name = "iron-plate", amount = 2},
-      -- {type = "fluid", name = "sp-hydrogen", amount = 100}
+      {type = "fluid", name = "sp-hydrogen", amount = 100}
     },
     results = {
       {type = "item", name = "sp-superconductor", amount = 1}
@@ -7837,7 +8021,7 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-sodium", amount = 2},
-      -- {type = "fluid", name = "sp-chlorine", amount = 3}
+      {type = "fluid", name = "sp-chlorine", amount = 3}
     },
     crafting_machine_tint = {
       primary = {r = 1.000, g = 1.000, b = 1.000, a = 1.000},
@@ -7854,8 +8038,8 @@ data:extend({
     enabled = false,
     energy_required = 4,
     ingredients = {
-      -- {type = "fluid", name = "sp-oxygen", amount = 100},
-      -- {type = "fluid", name = "sp-chlorine", amount = 50}
+      {type = "fluid", name = "sp-oxygen", amount = 100},
+      {type = "fluid", name = "sp-chlorine", amount = 50}
     },
     results = {
       {type = "fluid", name = "sp-bleach", amount = 20}
@@ -7876,7 +8060,7 @@ data:extend({
     energy_required = 4,
     ingredients = {
       {type = "item", name = "sp-silica", amount = 2},
-      -- {type = "fluid", name = "sp-oxygen", amount = 40},
+      {type = "fluid", name = "sp-oxygen", amount = 40},
       {type = "item", name = "sp-calcium", amount = 1},
     },
     results = {
@@ -7891,7 +8075,7 @@ data:extend({
     energy_required = 3.2,
     ingredients = {
       {type = "item", name = "carbon", amount = 3},
-      -- {type = "fluid", name = "sp-oxygen", amount = 25},
+      {type = "fluid", name = "sp-oxygen", amount = 25},
     },
     results = {
       {type = "item", name = "sp-composites", amount = 2}
@@ -7908,11 +8092,11 @@ data:extend({
     enabled = false,
     energy_required = 8,
     ingredients = {
-      -- {type = "item", name = "sp-silicon", amount = 1},
+      {type = "item", name = "sp-silicon", amount = 1},
     },
     results = {
       {type = "item", name = "sp-high-purity-silicon", probability = 0.3, amount = 1},
-      -- {type = "item", name = "sp-silicon", probability = 0.7, amount = 1}
+      {type = "item", name = "sp-silicon", probability = 0.7, amount = 1}
     }
   },
   {
@@ -7922,7 +8106,7 @@ data:extend({
     enabled = false,
     energy_required = 2,
     ingredients = {
-      -- {type = "item", name = "sp-silicon", amount = 1},
+      {type = "item", name = "sp-silicon", amount = 1},
       {type = "item", name = "copper-cable", amount = 1},
       {type = "item", name = "sp-phosphorus", amount = 2},
       {type = "item", name = "plastic-bar", amount = 1}
@@ -7938,7 +8122,7 @@ data:extend({
     enabled = false,
     energy_required = 2.8,
     ingredients = {
-      -- {type = "item", name = "sp-silicon", amount = 2},
+      {type = "item", name = "sp-silicon", amount = 2},
       {type = "item", name = "copper-cable", amount = 1},
       {type = "item", name = "sp-phosphorus", amount = 1},
       {type = "fluid", name = "sp-phosphoric-acid", amount = 8},
@@ -7956,7 +8140,7 @@ data:extend({
     energy_required = 2.8,
     ingredients = {
       {type = "item", name = "copper-cable", amount = 1},
-      -- {type = "item", name = "sp-silicon", amount = 2},
+      {type = "item", name = "sp-silicon", amount = 2},
       {type = "item", name = "sp-phosphorus", amount = 1},
       {type = "item", name = "sp-lanthanum", amount = 1}
     },
@@ -7972,7 +8156,7 @@ data:extend({
     energy_required = 4,
     ingredients = {
       {type = "item", name = "plastic-bar", amount = 1},
-      -- {type = "item", name = "sp-silicon", amount = 1},
+      {type = "item", name = "sp-silicon", amount = 1},
       {type = "item", name = "sp-aluminum-sheet", amount = 1},
       {type = "item", name = "sp-silver", amount = 1},
       {type = "fluid", name = "sp-helium", amount = 10}
@@ -7992,11 +8176,11 @@ data:extend({
     enabled = false,
     energy_required = 3.2,
     ingredients = {
-      -- {type = "item", name = "sp-quartz", amount = 1},
+      {type = "item", name = "sp-quartz", amount = 1},
     },
     results = {
       {type = "item", name = "sp-silica", amount = 1},
-      -- {type = "item", name = "sp-sand", amount = 1},
+      {type = "item", name = "sp-sand", amount = 1},
     }
   },
   {
@@ -8010,7 +8194,7 @@ data:extend({
     enabled = false,
     energy_required = 3.2,
     ingredients = {
-      -- {type = "item", name = "lithium", amount = 1},
+      {type = "item", name = "lithium", amount = 1},
       {type = "item", name = "uranium-238", amount = 1}
     },
     results = {
@@ -8031,7 +8215,7 @@ data:extend({
     enabled = false,
     energy_required = 4,
     ingredients = {
-      -- {type = "item", name = "lithium", amount = 1},
+      {type = "item", name = "lithium", amount = 1},
       {type = "item", name = "sp-plutonium-239", amount = 1}
     },
     results = {
@@ -8061,7 +8245,7 @@ data:extend({
       {type = "item", name = "uranium-238", amount = 3},
       {type = "item", name = "sp-empty-fuel-rod", amount = 2},
       {type = "item", name = "sp-nuclear-waste", amount = 1},
-      -- {type = "fluid", name = "sp-deuterium", amount = 10}
+      {type = "fluid", name = "sp-deuterium", amount = 10}
     },
     crafting_machine_tint = {
       primary = {r = 0.4, g = 1.000, b = 0.4, a = 1.000},
@@ -8085,14 +8269,14 @@ data:extend({
     hide_from_player_crafting = true,
     ingredients = {
       {type = "item", name = "sp-nuclear-waste", amount = 6},
-      -- {type = "fluid", name = "sp-chlorine", amount = 60}
+      {type = "fluid", name = "sp-chlorine", amount = 60}
     },
     results = {
       {type = "item", name = "uranium-238", probability = 0.37, amount = 2},
       {type = "item", name = "uranium-235", probability = 0.03, amount = 1},
       {type = "item", name = "sp-plutonium-239", probability = 0.6, amount = 1},
       {type = "item", name = "carbon", probability = 0.2, amount = 1},
-      -- {type = "item", name = "lithium", probability = 0.2, amount = 1},
+      {type = "item", name = "lithium", probability = 0.2, amount = 1},
       {type = "fluid", name = "sp-deuterium", amount = 10}
     },
     crafting_machine_tint = {
@@ -8118,7 +8302,7 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-magnesium-slab", amount = 2},
-      -- {type = "fluid", name = "sp-chlorine", amount = 10}
+      {type = "fluid", name = "sp-chlorine", amount = 10}
     },
     crafting_machine_tint = {
       primary = {r = 0.7, g = 1.000, b = 0.7, a = 1.000},
@@ -8136,7 +8320,7 @@ data:extend({
     energy_required = 3.2,
     ingredients = {
       {type = "item", name = "sulfur", amount = 1},
-      -- {type = "fluid", name = "ammonia", amount = 50}
+      {type = "fluid", name = "ammonia", amount = 50}
     },
     results = {
       {type = "item", name = "sp-urea", amount = 1}
@@ -8158,7 +8342,7 @@ data:extend({
       {type = "item", name = "plastic-bar", amount = 1},
       {type = "item", name = "carbon", amount = 4},
       {type = "fluid", name = "sp-epoxy", amount = 5},
-      -- {type = "fluid", name = "sp-nitric-acid", amount = 50}
+      {type = "fluid", name = "sp-nitric-acid", amount = 50}
     },
     results = {
       {type = "item", name = "sp-carbon-fiber", amount = 1}
@@ -8181,7 +8365,7 @@ data:extend({
     ingredients = {
       {type = "item", name = "sp-catalyst", amount = 1},
       {type = "fluid", name = "sp-ethylene", amount = 60},
-      -- {type = "fluid", name = "sp-chlorine", amount = 60}
+      {type = "fluid", name = "sp-chlorine", amount = 60}
     },
     results = {
       {type = "fluid", name = "sp-ethylene-dichloride", amount = 60},
@@ -8212,7 +8396,7 @@ data:extend({
     },
     results = {
       {type = "fluid", name = "sp-sodium-hydroxide", amount = 50},
-      -- {type = "fluid", name = "sp-chlorine", amount = 50}
+      {type = "fluid", name = "sp-chlorine", amount = 50}
     },
     crafting_machine_tint = {
       primary = {r = 0.6, g = 0.4, b = 0.6, a = 1.000},
@@ -8233,8 +8417,8 @@ data:extend({
     hide_from_player_crafting = true,
     ingredients = {
       {type = "item", name = "sp-sodium", amount = 5},
-      -- {type = "fluid", name = "sp-hydrogen", amount = 100},
-      -- {type = "fluid", name = "sp-oxygen", amount = 100}
+      {type = "fluid", name = "sp-hydrogen", amount = 100},
+      {type = "fluid", name = "sp-oxygen", amount = 100}
     },
     results = {
       {type = "fluid", name = "sp-sodium-hydroxide", amount = 20},
@@ -8256,7 +8440,7 @@ data:extend({
     hide_from_player_crafting = true,
     ingredients = {
       {type = "fluid", name = "sp-styrene", amount = 20},
-      -- {type = "fluid", name = "sp-chlorine", amount = 30}
+      {type = "fluid", name = "sp-chlorine", amount = 30}
     },
     results = {
       {type = "fluid", name = "sp-vinyl-chloride", amount = 30}
@@ -8283,7 +8467,7 @@ data:extend({
       {type = "fluid", name = "sp-bleach", amount = 5},
     },
     results = {
-      -- {type = "item", name = "sp-sand", probability = 0.92, amount = 3},
+      {type = "item", name = "sp-sand", probability = 0.92, amount = 3},
       {type = "item", name = "sp-tellurium-hydroxide", probability = 0.08, amount = 1}
     },
     crafting_machine_tint = {
@@ -8301,7 +8485,7 @@ data:extend({
     enabled = false,
     energy_required = 4,
     ingredients = {
-      -- {type = "fluid", name = "sp-hydrogen", amount = 2}
+      {type = "fluid", name = "sp-hydrogen", amount = 2}
     },
     results = {
       {type = "fluid", name = "sp-helium", amount = 10}
@@ -8325,7 +8509,7 @@ data:extend({
     energy_required = 40,
     ingredients = {
       {type = "fluid", name = "sp-helium", amount = 10},
-      -- {type = "fluid", name = "sp-hydrogen", amount = 10}
+      {type = "fluid", name = "sp-hydrogen", amount = 10}
     },
     results = {
       {type = "fluid", name = "sp-helium-3", amount = 1},
@@ -8348,7 +8532,7 @@ data:extend({
       {type = "item", name = "sp-yemnuth-pearls", amount = 5},
       {type = "item", name = "sp-quantum-crystal", amount = 2},
       {type = "item", name = "sp-quasicrystal", amount = 1},
-      -- {type = "item", name = "sp-tritium", amount = 3},
+      {type = "item", name = "sp-tritium", amount = 3},
       {type = "fluid", name = "sp-xenon", amount = 1}
     },
     results = {
@@ -8362,11 +8546,11 @@ data:extend({
     enabled = false,
     energy_required = 5.2,
     ingredients = {
-      -- {type = "item", name = "sp-glass", amount = 3},
+      {type = "item", name = "sp-glass", amount = 3},
       {type = "item", name = "copper-cable", amount = 2},
       {type = "item", name = "carbon", amount = 1},
       {type = "item", name = "sp-cobalt-billet", amount = 1},
-      -- {type = "fluid", name = "sp-hydrogen", amount = 5}
+      {type = "fluid", name = "sp-hydrogen", amount = 5}
     },
     results = {
       {type = "item", name = "sp-vacuum-tube", amount = 2}
@@ -8380,7 +8564,7 @@ data:extend({
     enabled = false,
     energy_required = 1,
     ingredients = {
-      -- {type = "fluid", name = "sp-nitrogen", amount = 5}
+      {type = "fluid", name = "sp-nitrogen", amount = 5}
     },
     results = {
       {type = "fluid", name = "sp-liquid-nitrogen", amount = 5}
@@ -8409,287 +8593,102 @@ data:extend({
     results = {
       {type = "item", name = "sp-cobalt-sulfate", probability = 0.2, amount = 1},
       {type = "item", name = "iron-ore", probability = 0.5, amount = 1},
-      -- {type = "item", name = "sp-sand", probability = 0.3, amount = 1}
+      {type = "item", name = "sp-sand", probability = 0.3, amount = 1}
     }
   },
 })
 
---------------------------------------------------------------------------------
--- MARK: Incompatible recipes
---------------------------------------------------------------------------------
-if not mods["Krastorio2"] then
-  data:extend({
-    {
-      type = "recipe",
-      name = "sp-coke",  -- #ForRegEx# - recipe
-      category = "smelting",
-      enabled = false,
-      energy_required = 4,
-      ingredients = {
-        {type = "item", name = "coal", amount = 2}
-      },
-      results = {
-        {type = "item", name = "sp-coke", amount = 1}
-      }
-    },
-    {
-      type = "recipe",
-      name = "sp-sand",  -- #ForRegEx# - recipe
-      category = "crafting",
-      enabled = false,
-      energy_required = 2,
-      ingredients = {
-        {type = "item", name = "stone", amount = 1},
-      },
-      results = {
-        {type = "item", name = "sp-sand", amount = 3}
-      }
-    },
-    {
-      type = "recipe",
-      name = "sp-quartz",  -- #ForRegEx# - recipe
-      -- icon = "__Spaghetorio__/graphics/icons/quartz.png",
-      icon_size = 64,
-      scale = 0.25,
-      category = "chemistry",
-      subgroup = "raw-resource",
-      enabled = false,
-      energy_required = 3.2,
-      ingredients = {
-        {type = "item", name = "sp-sand", amount = 2},
-        {type = "fluid", name = "water", amount = 30}
-      },
-      results = {
-        {type = "item", name = "sp-quartz", amount = 2}
-      },
-      crafting_machine_tint = {
-        primary = {r = 1.000, g = 1.000, b = 1.000, a = 1.000},
-        secondary = {r = 0.8, g = 0.8, b = 0.8, a = 1.000},
-        tertiary = {r = 0.7, g = 0.7, b = 0.7, a = 1.000},
-        quaternary = {r = 0.3, g = 0.3, b = 0.3, a = 1.000},
-      }
-    },
-    {
-      type = "recipe",
-      -- In Krastorio called "kr-vc-sp-limestone"
-      name = "sp-calcium-carbonate",  -- #ForRegEx# - recipe
-      icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/icons/calcium-carbonate.png", 64, nil,
-                                          "__Spaghetorio__/graphics/icons/fluorspar.png", 64, nil),
-      icon_size = 64,
-      mip_maps = 4,
-      category = "chemistry",
-      subgroup = "processed-resource",
-      enabled = false,
-      energy_required = 4,
-      ingredients = {
-        {type = "item", name = "sp-limestone", amount = 2},
-      },
-      results = {
-        {type = "item", name = "sp-sand", amount = 3},
-        {type = "item", name = "sp-calcium-carbonate", probability = 0.8, amount = 3},
-        {type = "item", name = "sp-fluorspar", probability = 0.2, amount = 1}
-      },
-      crafting_machine_tint = {
-        primary = {r = 1.000, g = 1.000, b = 1.000, a = 1.000},
-        secondary = {r = 0.6, g = 0.6, b = 0.6, a = 1.000},
-        tertiary = {r = 0.4, g = 0.4, b = 0.4, a = 1.000},
-        quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
-      },
-      allow_quality = false
-    },
-    {
-      type = "recipe",
-      name = "sp-glass",  -- #ForRegEx# - recipe
-      category = "smelting",
-      enabled = false,
-      energy_required = 3.2,
-      ingredients = {
-        {type = "item", name = "sp-sand", amount = 4}
-      },
-      results = {
-        {type = "item", name = "sp-glass", amount = 1}
-      }
-    },
-    {
-      type = "recipe",
-      name = "sp-glass-from-calcium",  -- #ForRegEx# - recipe
-      category = "smelting",
-      enabled = false,
-      energy_required = 2.4,
-      ingredients = {
-        {type = "item", name = "sp-sand", amount = 3},
-        {type = "item", name = "sp-calcium", amount = 1}
-      },
-      results = {
-        {type = "item", name = "sp-glass", amount = 1}
-      }
-    },
-    {
-      type = "recipe",
-      name = "sp-silicon",  -- #ForRegEx# - recipe
-      category = "smelting",
-      enabled = false,
-      energy_required = 4,
-      ingredients = {
-        {type = "item", name = "sp-silica", amount = 3},
-      },
-      results = {
-        {type = "item", name = "sp-silicon", amount = 2}
-      }
-    },
-    {
-      type = "recipe",
-      name = "sp-coke-from-acrovoid",  -- #ForRegEx# - recipe
-      icons = util.icon.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/krastorio/icons/items-with-variations/coke/coke.png",
-                                                           "__Spaghetorio__/graphics/icons/acrovoid.png"),
-      icon_size = 64,
-      mip_maps = 4,
-      allowed_effects = {
-        "consumption",
-        "speed",
-        "pollution"
-      },
-      allow_decomposition = false,
-      category = "acroproduct-conversion-with-acrovoid",
-      subgroup = "processed-resource",
-      enabled = false,
-      energy_required = 6,
-      ingredients = {
-        {type = "item", name = "sp-coke", amount = 6},
-        {type = "item", name = "sp-acrovoid", amount = 1}
-      },
-      results = {
-        {type = "item", name = "sp-acrovoid", probability=0.99, amount = 1},
-        {type = "item", name = "sp-coke", amount = 7},
-        {type = "item", name = "carbon", probability=0.5, amount = 1},
-        {type = "item", name = "sulfur", probability=0.1, amount = 1},
-        {type = "fluid", name = "sp-hydrogen", amount = 4},
-        {type = "fluid", name = "sp-oxygen", amount = 12}
-      },
-      allow_quality = false
-    },
-    {
-      type = "recipe",
-      name = "sp-silicon-from-acrovoid",  -- #ForRegEx# - recipe
-      icons = util.icon.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/krastorio/icons/items-with-variations/silicon/silicon.png",
-                                                           "__Spaghetorio__/graphics/icons/acrovoid.png"),
-      icon_size = 64,
-      mip_maps = 4,
-      category = "acroproduct-conversion-with-acrovoid",
-      subgroup = "processed-resource",
-      enabled = false,
-      energy_required = 12,
-      allowed_effects = {
-        "consumption",
-        "speed",
-        "pollution"
-      },
-      allow_decomposition = false,
-      ingredients = {
-        {type = "item", name = "sp-silicon", amount = 4},
-        {type = "item", name = "sp-acrovoid", amount = 1}
-      },
-      results = {
-        {type = "item", name = "sp-acrovoid", probability=0.98, amount = 1},
-        {type = "item", name = "sp-silicon", amount = 6},
-        {type = "item", name = "carbon", probability=0.3, amount = 1},
-        {type = "item", name = "sp-phosphorus", probability=0.2, amount = 1},
-        {type = "item", name = "sp-aluminum-ore", probability=0.2, amount = 1},
-        {type = "item", name = "sp-tinstone", probability=0.08, amount = 1},
-      },
-      allow_quality = false
-    },
-  })
-  ------------------------------------------------------------------------------
-  -- MARK: Update incompatible recipes
-  ------------------------------------------------------------------------------
-  -- Add missing ingredients
-  table.insert(data.raw.recipe["sp-sodium-carbonate"].ingredients, {type = "item", name = "sp-coke", amount = 5})
-  table.insert(data.raw.recipe["carbon"].ingredients, {type = "item", name = "sp-coke", amount = 3})
-  table.insert(data.raw.recipe["sp-zirconia"].ingredients, {type = "item", name = "sp-sand", amount = 3})
-  table.insert(data.raw.recipe["sp-niobium-powder"].ingredients, {type = "item", name = "sp-sand", amount = 8})
-  table.insert(data.raw.recipe["sp-aqueous-niobium-and-tantalum"].ingredients, {type = "item", name = "sp-sand", amount = 8})
-  table.insert(data.raw.recipe["sp-landfill-from-sand"].ingredients, {type = "item", name = "sp-sand", amount = 30})
-  table.insert(data.raw.recipe["sp-stone-brick-from-sand"].ingredients, {type = "item", name = "sp-sand", amount = 8})
-  table.insert(data.raw.recipe["sp-mirror"].ingredients, {type = "item", name = "sp-glass", amount = 2})
-  table.insert(data.raw.recipe["sp-titanium-nitride"].ingredients, {type = "fluid", name = "sp-nitrogen", amount = 40})
-  table.insert(data.raw.recipe["sp-kevlar"].ingredients, {type = "fluid", name = "sp-nitrogen", amount = 15})
-  table.insert(data.raw.recipe["sp-uranium-fuel-rod"].ingredients, {type = "fluid", name = "sp-nitrogen", amount = 100})
-  table.insert(data.raw.recipe["sp-epoxy"].ingredients, {type = "fluid", name = "sp-oxygen", amount = 35})
-  table.insert(data.raw.recipe["sp-epoxy"].ingredients, {type = "fluid", name = "sp-hydrogen", amount = 15})
-  table.insert(data.raw.recipe["sp-cubit"].ingredients, {type = "fluid", name = "sp-hydrogen", amount = 1})
-  table.insert(data.raw.recipe["sp-superconductor"].ingredients, {type = "fluid", name = "sp-hydrogen", amount = 100})
-  table.insert(data.raw.recipe["sp-sulfamate"].ingredients, {type = "fluid", name = "sp-nitrogen", amount = 10})
-  table.insert(data.raw.recipe["sp-perchloric-acid"].ingredients, {type = "fluid", name = "water", amount = 50})
-  table.insert(data.raw.recipe["sp-perchloric-acid"].ingredients, {type = "fluid", name = "sp-chlorine", amount = 20})
-  table.insert(data.raw.recipe["sp-bleach"].ingredients, {type = "fluid", name = "sp-oxygen", amount = 100})
-  table.insert(data.raw.recipe["sp-bleach"].ingredients, {type = "fluid", name = "sp-chlorine", amount = 50})
-  table.insert(data.raw.recipe["sp-lens"].ingredients, {type = "fluid", name = "sp-oxygen", amount = 40})
-  table.insert(data.raw.recipe["sp-composites"].ingredients, {type = "fluid", name = "sp-oxygen", amount = 25})
-  table.insert(data.raw.recipe["sp-high-purity-silicon"].ingredients, {type = "item", name = "sp-silicon", amount = 1})
-  table.insert(data.raw.recipe["sp-diode"].ingredients, {type = "item", name = "sp-silicon", amount = 1})
-  table.insert(data.raw.recipe["sp-transistor"].ingredients, {type = "item", name = "sp-silicon", amount = 2})
-  table.insert(data.raw.recipe["sp-light-emitting-diode"].ingredients, {type = "item", name = "sp-silicon", amount = 2})
-  table.insert(data.raw.recipe["sp-integrated-circuit"].ingredients, {type = "item", name = "sp-silicon", amount = 2})
-  table.insert(data.raw.recipe["sp-laser"].ingredients, {type = "item", name = "sp-silicon", amount = 1})
-  table.insert(data.raw.recipe["sp-silica"].ingredients, {type = "item", name = "sp-quartz", amount = 5})
-  table.insert(data.raw.recipe["sp-plutonium-239-processing"].ingredients, {type = "item", name = "lithium", amount = 1})
-  table.insert(data.raw.recipe["sp-plutonium-240-processing"].ingredients, {type = "item", name = "lithium", amount = 1})
-  table.insert(data.raw.recipe["sp-advanced-nuclear-waste-processing"].ingredients, {type = "fluid", name = "sp-chlorine", amount = 60})
-  table.insert(data.raw.recipe["sp-urea"].ingredients, {type = "fluid", name = "ammonia", amount = 50})
-  table.insert(data.raw.recipe["sp-carbon-fiber"].ingredients, {type = "fluid", name = "sp-nitric-acid", amount = 50})
-  table.insert(data.raw.recipe["sp-ethylene-dichloride"].ingredients, {type = "fluid", name = "sp-chlorine", amount = 60})
-  table.insert(data.raw.recipe["sp-sodium-hydroxide-from-sodium"].ingredients, {type = "fluid", name = "sp-hydrogen", amount = 100})
-  table.insert(data.raw.recipe["sp-sodium-hydroxide-from-sodium"].ingredients, {type = "fluid", name = "sp-oxygen", amount = 100})
-  table.insert(data.raw.recipe["sp-vinyl-chloride"].ingredients, {type = "fluid", name = "sp-chlorine", amount = 30})
-  table.insert(data.raw.recipe["sp-helium"].ingredients, {type = "fluid", name = "sp-hydrogen", amount = 40})
-  table.insert(data.raw.recipe["sp-helium-3-from-helium-and-hydrogen"].ingredients, {type = "fluid", name = "sp-hydrogen", amount = 10})
-  table.insert(data.raw.recipe["sp-gravitonium"].ingredients, {type = "item", name = "sp-tritium", amount = 3})
-  table.insert(data.raw.recipe["sp-vacuum-tube"].ingredients, {type = "item", name = "sp-glass", amount = 3})
-  table.insert(data.raw.recipe["sp-vacuum-tube"].ingredients, {type = "fluid", name = "sp-hydrogen", amount = 5})
-  table.insert(data.raw.recipe["sp-pressure-tube"].ingredients, {type = "item", name = "sp-glass", amount = 1})
-  table.insert(data.raw.recipe["sp-liquid-nitrogen"].ingredients, {type = "fluid", name = "sp-nitrogen", amount = 5})
-  table.insert(data.raw.recipe["sp-material-science-pack-1"].ingredients, {type = "item", name = "steel-plate", amount = 5})
-  table.insert(data.raw.recipe["sp-geological-science-pack-2"].ingredients, {type = "item", name = "wood", amount = 10})
 
-  -- Add missing results
-  table.insert(data.raw.recipe["sp-silica"].results, {type = "item", name = "sp-sand", probability = 0.3, amount = 1})
-  table.insert(data.raw.recipe["sp-gold"].results, {type = "item", name = "sp-sand", probability = 0.98, amount = 3})
-  table.insert(data.raw.recipe["sp-platinum-iridium"].results, {type = "item", name = "sp-sand", probability = 0.9807, amount = 1})
-  table.insert(data.raw.recipe["sp-sodium-and-chlorine"].results, {type = "fluid", name = "sp-chlorine", amount = 3})
-  table.insert(data.raw.recipe["sp-high-purity-silicon"].results, {type = "item", name = "sp-silicon", probability = 0.7, amount = 1})
-  table.insert(data.raw.recipe["sp-used-up-fuel-rod-reprocessing"].results, {type = "fluid", name = "sp-deuterium", amount = 10})
-  table.insert(data.raw.recipe["sp-advanced-nuclear-waste-processing"].results, {type = "item", name = "lithium", probability = 0.2, amount = 1})
-  table.insert(data.raw.recipe["sp-magnesium-slab"].results, {type = "fluid", name = "sp-chlorine", amount = 10})
-  table.insert(data.raw.recipe["sp-sodium-hydroxide-from-salt"].results, {type = "fluid", name = "sp-chlorine", amount = 50})
-  table.insert(data.raw.recipe["sp-tellurium-hydroxide"].results, {type = "item", name = "sp-sand", probability = 0.92, amount = 3})
-  table.insert(data.raw.recipe["sp-cobalt-sulfate"].results, {type = "item", name = "sp-sand", probability = 0.3, amount = 1})
-  table.insert(data.raw.recipe["sp-coal-from-acrocrystal"].results, {type = "item", name = "sp-coke", probability=0.15, amount = 1})
-  table.insert(data.raw.recipe["sp-aluminum-ore-from-acrocrystal"].results, {type = "item", name = "sp-silicon", probability=0.2, amount = 1})
-  table.insert(data.raw.recipe["sp-limestone-from-acrocrystal"].results, {type = "item", name = "sp-sand", amount = 1})
-  table.insert(data.raw.recipe["sp-magnesium-ore-from-acrocrystal"].results, {type = "item", name = "lithium", probability=0.05, amount = 1})
-  table.insert(data.raw.recipe["sp-tinstone-from-acrocrystal"].results, {type = "item", name = "sp-silicon", probability=0.15, amount = 1})
-  table.insert(data.raw.recipe["sp-zirconium-ore-from-acrocrystal"].results, {type = "item", name = "sp-silicon", probability=0.15, amount = 1})
-  table.insert(data.raw.recipe["sp-calcium-from-acrovoid"].results, {type = "item", name = "lithium", probability=0.05, amount = 1})
-  table.insert(data.raw.recipe["sp-fluorine-from-acrovoid"].results, {type = "fluid", name = "sp-chlorine", amount = 10})
-  table.insert(data.raw.recipe["sp-fluorine-from-acrovoid"].results, {type = "fluid", name = "sp-oxygen", amount = 3})
-  table.insert(data.raw.recipe["sp-graphite-from-acrovoid"].results, {type = "item", name = "sp-silicon", probability=0.2, amount = 1})
-  table.insert(data.raw.recipe["sp-graphite-from-acrovoid"].results, {type = "fluid", name = "sp-nitrogen", amount = 10})
-  table.insert(data.raw.recipe["sp-graphite-from-acrovoid"].results, {type = "fluid", name = "sp-oxygen", amount = 2})
-  table.insert(data.raw.recipe["sp-iridium-from-acrovoid"].results, {type = "item", name = "sp-silicon", probability=0.2, amount = 1})
-  table.insert(data.raw.recipe["sp-iridium-from-acrovoid"].results, {type = "fluid", name = "sp-nitrogen", amount = 10})
-  table.insert(data.raw.recipe["sp-iridium-from-acrovoid"].results, {type = "fluid", name = "sp-oxygen", amount = 2})
-  table.insert(data.raw.recipe["sp-leadstone-from-acrovoid"].results, {type = "item", name = "sp-silicon", probability=0.12, amount = 1})
-  table.insert(data.raw.recipe["sp-phosphorus-from-acrovoid"].results, {type = "item", name = "sp-silicon", probability=0.01, amount = 1})
-  table.insert(data.raw.recipe["sp-phosphorus-from-acrovoid"].results, {type = "fluid", name = "sp-nitrogen", amount = 2})
-  table.insert(data.raw.recipe["sp-sodium-from-acrovoid"].results, {type = "item", name = "lithium", probability=0.25, amount = 1})
-  table.insert(data.raw.recipe["sp-sodium-from-acrovoid"].results, {type = "fluid", name = "sp-hydrogen", amount = 10})
-  table.insert(data.raw.recipe["sp-antimony-from-acrovoid"].results, {type = "fluid", name = "sp-nitrogen", amount = 8})
-  table.insert(data.raw.recipe["sp-tellurium-from-acrovoid"].results, {type = "fluid", name = "sp-nitrogen", amount = 8})
-  table.insert(data.raw.recipe["sp-sulfur-from-acrovoid"].results, {type = "item", name = "sp-silicon", probability=0.15, amount = 1})
-  table.insert(data.raw.recipe["sp-sulfur-from-acrovoid"].results, {type = "fluid", name = "sp-oxygen", amount = 15})
-  table.insert(data.raw.recipe["sp-rare-metals-alloy-from-yttrium"].results, {type = "item", name = "sp-rare-metals-alloy", amount = 6})
-  table.insert(data.raw.recipe["sp-rare-metals-alloy-from-lanthanum"].results, {type = "item", name = "sp-rare-metals-alloy", amount = 5})
-  table.insert(data.raw.recipe["sp-rare-metals-alloy-from-cerium"].results, {type = "item", name = "sp-rare-metals-alloy", amount = 10})
-  table.insert(data.raw.recipe["sp-rare-metals-alloy-from-neodymium"].results, {type = "item", name = "sp-rare-metals-alloy", amount = 6})
-end
+------------------------------------------------------------------------------
+-- MARK: missing ingredients
+------------------------------------------------------------------------------
+
+-- table.insert(data.raw.recipe["sp-sodium-carbonate"].ingredients, {type = "item", name = "sp-coke", amount = 5})
+-- table.insert(data.raw.recipe["carbon"].ingredients, {type = "item", name = "sp-coke", amount = 3})
+-- table.insert(data.raw.recipe["sp-zirconia"].ingredients, {type = "item", name = "sp-sand", amount = 3})
+-- table.insert(data.raw.recipe["sp-niobium-powder"].ingredients, {type = "item", name = "sp-sand", amount = 8})
+-- table.insert(data.raw.recipe["sp-aqueous-niobium-and-tantalum"].ingredients, {type = "item", name = "sp-sand", amount = 8})
+-- table.insert(data.raw.recipe["sp-landfill-from-sand"].ingredients, {type = "item", name = "sp-sand", amount = 30})
+-- table.insert(data.raw.recipe["sp-stone-brick-from-sand"].ingredients, {type = "item", name = "sp-sand", amount = 8})
+-- table.insert(data.raw.recipe["sp-mirror"].ingredients, {type = "item", name = "sp-glass", amount = 2})
+-- table.insert(data.raw.recipe["sp-titanium-nitride"].ingredients, {type = "fluid", name = "sp-nitrogen", amount = 40})
+-- table.insert(data.raw.recipe["sp-kevlar"].ingredients, {type = "fluid", name = "sp-nitrogen", amount = 15})
+-- table.insert(data.raw.recipe["sp-uranium-fuel-rod"].ingredients, {type = "fluid", name = "sp-nitrogen", amount = 100})
+-- table.insert(data.raw.recipe["sp-epoxy"].ingredients, {type = "fluid", name = "sp-oxygen", amount = 35})
+-- table.insert(data.raw.recipe["sp-epoxy"].ingredients, {type = "fluid", name = "sp-hydrogen", amount = 15})
+-- table.insert(data.raw.recipe["sp-cubit"].ingredients, {type = "fluid", name = "sp-hydrogen", amount = 1})
+-- table.insert(data.raw.recipe["sp-superconductor"].ingredients, {type = "fluid", name = "sp-hydrogen", amount = 100})
+-- table.insert(data.raw.recipe["sp-sulfamate"].ingredients, {type = "fluid", name = "sp-nitrogen", amount = 10})
+-- table.insert(data.raw.recipe["sp-perchloric-acid"].ingredients, {type = "fluid", name = "water", amount = 50})
+-- table.insert(data.raw.recipe["sp-perchloric-acid"].ingredients, {type = "fluid", name = "sp-chlorine", amount = 20})
+-- table.insert(data.raw.recipe["sp-bleach"].ingredients, {type = "fluid", name = "sp-oxygen", amount = 100})
+-- table.insert(data.raw.recipe["sp-bleach"].ingredients, {type = "fluid", name = "sp-chlorine", amount = 50})
+-- table.insert(data.raw.recipe["sp-lens"].ingredients, {type = "fluid", name = "sp-oxygen", amount = 40})
+-- table.insert(data.raw.recipe["sp-composites"].ingredients, {type = "fluid", name = "sp-oxygen", amount = 25})
+-- table.insert(data.raw.recipe["sp-high-purity-silicon"].ingredients, {type = "item", name = "sp-silicon", amount = 1})
+-- table.insert(data.raw.recipe["sp-diode"].ingredients, {type = "item", name = "sp-silicon", amount = 1})
+-- table.insert(data.raw.recipe["sp-transistor"].ingredients, {type = "item", name = "sp-silicon", amount = 2})
+-- table.insert(data.raw.recipe["sp-light-emitting-diode"].ingredients, {type = "item", name = "sp-silicon", amount = 2})
+-- table.insert(data.raw.recipe["sp-integrated-circuit"].ingredients, {type = "item", name = "sp-silicon", amount = 2})
+-- table.insert(data.raw.recipe["sp-laser"].ingredients, {type = "item", name = "sp-silicon", amount = 1})
+-- table.insert(data.raw.recipe["sp-silica"].ingredients, {type = "item", name = "sp-quartz", amount = 5})
+-- table.insert(data.raw.recipe["sp-plutonium-239-processing"].ingredients, {type = "item", name = "lithium", amount = 1})
+-- table.insert(data.raw.recipe["sp-plutonium-240-processing"].ingredients, {type = "item", name = "lithium", amount = 1})
+-- table.insert(data.raw.recipe["sp-advanced-nuclear-waste-processing"].ingredients, {type = "fluid", name = "sp-chlorine", amount = 60})
+-- table.insert(data.raw.recipe["sp-urea"].ingredients, {type = "fluid", name = "ammonia", amount = 50})
+-- table.insert(data.raw.recipe["sp-carbon-fiber"].ingredients, {type = "fluid", name = "sp-nitric-acid", amount = 50})
+-- table.insert(data.raw.recipe["sp-ethylene-dichloride"].ingredients, {type = "fluid", name = "sp-chlorine", amount = 60})
+-- table.insert(data.raw.recipe["sp-sodium-hydroxide-from-sodium"].ingredients, {type = "fluid", name = "sp-hydrogen", amount = 100})
+-- table.insert(data.raw.recipe["sp-sodium-hydroxide-from-sodium"].ingredients, {type = "fluid", name = "sp-oxygen", amount = 100})
+-- table.insert(data.raw.recipe["sp-vinyl-chloride"].ingredients, {type = "fluid", name = "sp-chlorine", amount = 30})
+-- table.insert(data.raw.recipe["sp-helium"].ingredients, {type = "fluid", name = "sp-hydrogen", amount = 40})
+-- table.insert(data.raw.recipe["sp-helium-3-from-helium-and-hydrogen"].ingredients, {type = "fluid", name = "sp-hydrogen", amount = 10})
+-- table.insert(data.raw.recipe["sp-gravitonium"].ingredients, {type = "item", name = "sp-tritium", amount = 3})
+-- table.insert(data.raw.recipe["sp-vacuum-tube"].ingredients, {type = "item", name = "sp-glass", amount = 3})
+-- table.insert(data.raw.recipe["sp-vacuum-tube"].ingredients, {type = "fluid", name = "sp-hydrogen", amount = 5})
+-- table.insert(data.raw.recipe["sp-pressure-tube"].ingredients, {type = "item", name = "sp-glass", amount = 1})
+-- table.insert(data.raw.recipe["sp-liquid-nitrogen"].ingredients, {type = "fluid", name = "sp-nitrogen", amount = 5})
+-- table.insert(data.raw.recipe["sp-material-science-pack-1"].ingredients, {type = "item", name = "steel-plate", amount = 5})
+-- table.insert(data.raw.recipe["sp-geological-science-pack-2"].ingredients, {type = "item", name = "wood", amount = 10})
+
+-- -- Add missing results
+-- table.insert(data.raw.recipe["sp-silica"].results, {type = "item", name = "sp-sand", probability = 0.3, amount = 1})
+-- table.insert(data.raw.recipe["sp-gold"].results, {type = "item", name = "sp-sand", probability = 0.98, amount = 3})
+-- table.insert(data.raw.recipe["sp-platinum-iridium"].results, {type = "item", name = "sp-sand", probability = 0.9807, amount = 1})
+-- table.insert(data.raw.recipe["sp-sodium-and-chlorine"].results, {type = "fluid", name = "sp-chlorine", amount = 3})
+-- table.insert(data.raw.recipe["sp-high-purity-silicon"].results, {type = "item", name = "sp-silicon", probability = 0.7, amount = 1})
+-- table.insert(data.raw.recipe["sp-used-up-fuel-rod-reprocessing"].results, {type = "fluid", name = "sp-deuterium", amount = 10})
+-- table.insert(data.raw.recipe["sp-advanced-nuclear-waste-processing"].results, {type = "item", name = "lithium", probability = 0.2, amount = 1})
+-- table.insert(data.raw.recipe["sp-magnesium-slab"].results, {type = "fluid", name = "sp-chlorine", amount = 10})
+-- table.insert(data.raw.recipe["sp-sodium-hydroxide-from-salt"].results, {type = "fluid", name = "sp-chlorine", amount = 50})
+-- table.insert(data.raw.recipe["sp-tellurium-hydroxide"].results, {type = "item", name = "sp-sand", probability = 0.92, amount = 3})
+-- table.insert(data.raw.recipe["sp-cobalt-sulfate"].results, {type = "item", name = "sp-sand", probability = 0.3, amount = 1})
+-- table.insert(data.raw.recipe["sp-coal-from-acrocrystal"].results, {type = "item", name = "sp-coke", probability=0.15, amount = 1})
+-- table.insert(data.raw.recipe["sp-aluminum-ore-from-acrocrystal"].results, {type = "item", name = "sp-silicon", probability=0.2, amount = 1})
+-- table.insert(data.raw.recipe["sp-limestone-from-acrocrystal"].results, {type = "item", name = "sp-sand", amount = 1})
+-- table.insert(data.raw.recipe["sp-magnesium-ore-from-acrocrystal"].results, {type = "item", name = "lithium", probability=0.05, amount = 1})
+-- table.insert(data.raw.recipe["sp-tinstone-from-acrocrystal"].results, {type = "item", name = "sp-silicon", probability=0.15, amount = 1})
+-- table.insert(data.raw.recipe["sp-zirconium-ore-from-acrocrystal"].results, {type = "item", name = "sp-silicon", probability=0.15, amount = 1})
+-- table.insert(data.raw.recipe["sp-calcium-from-acrovoid"].results, {type = "item", name = "lithium", probability=0.05, amount = 1})
+-- table.insert(data.raw.recipe["sp-fluorine-from-acrovoid"].results, {type = "fluid", name = "sp-chlorine", amount = 10})
+-- table.insert(data.raw.recipe["sp-fluorine-from-acrovoid"].results, {type = "fluid", name = "sp-oxygen", amount = 3})
+-- table.insert(data.raw.recipe["sp-graphite-from-acrovoid"].results, {type = "item", name = "sp-silicon", probability=0.2, amount = 1})
+-- table.insert(data.raw.recipe["sp-graphite-from-acrovoid"].results, {type = "fluid", name = "sp-nitrogen", amount = 10})
+-- table.insert(data.raw.recipe["sp-graphite-from-acrovoid"].results, {type = "fluid", name = "sp-oxygen", amount = 2})
+-- table.insert(data.raw.recipe["sp-iridium-from-acrovoid"].results, {type = "item", name = "sp-silicon", probability=0.2, amount = 1})
+-- table.insert(data.raw.recipe["sp-iridium-from-acrovoid"].results, {type = "fluid", name = "sp-nitrogen", amount = 10})
+-- table.insert(data.raw.recipe["sp-iridium-from-acrovoid"].results, {type = "fluid", name = "sp-oxygen", amount = 2})
+-- table.insert(data.raw.recipe["sp-leadstone-from-acrovoid"].results, {type = "item", name = "sp-silicon", probability=0.12, amount = 1})
+-- table.insert(data.raw.recipe["sp-phosphorus-from-acrovoid"].results, {type = "item", name = "sp-silicon", probability=0.01, amount = 1})
+-- table.insert(data.raw.recipe["sp-phosphorus-from-acrovoid"].results, {type = "fluid", name = "sp-nitrogen", amount = 2})
+-- table.insert(data.raw.recipe["sp-sodium-from-acrovoid"].results, {type = "item", name = "lithium", probability=0.25, amount = 1})
+-- table.insert(data.raw.recipe["sp-sodium-from-acrovoid"].results, {type = "fluid", name = "sp-hydrogen", amount = 10})
+-- table.insert(data.raw.recipe["sp-antimony-from-acrovoid"].results, {type = "fluid", name = "sp-nitrogen", amount = 8})
+-- table.insert(data.raw.recipe["sp-tellurium-from-acrovoid"].results, {type = "fluid", name = "sp-nitrogen", amount = 8})
+-- table.insert(data.raw.recipe["sp-sulfur-from-acrovoid"].results, {type = "item", name = "sp-silicon", probability=0.15, amount = 1})
+-- table.insert(data.raw.recipe["sp-sulfur-from-acrovoid"].results, {type = "fluid", name = "sp-oxygen", amount = 15})
+-- table.insert(data.raw.recipe["sp-rare-metals-alloy-from-yttrium"].results, {type = "item", name = "sp-rare-metals-alloy", amount = 6})
+-- table.insert(data.raw.recipe["sp-rare-metals-alloy-from-lanthanum"].results, {type = "item", name = "sp-rare-metals-alloy", amount = 5})
+-- table.insert(data.raw.recipe["sp-rare-metals-alloy-from-cerium"].results, {type = "item", name = "sp-rare-metals-alloy", amount = 10})
+-- table.insert(data.raw.recipe["sp-rare-metals-alloy-from-neodymium"].results, {type = "item", name = "sp-rare-metals-alloy", amount = 6})
+
