@@ -1,8 +1,9 @@
 
+require("prototypes.buildings.lumber-mill")
+require("prototypes.entities.big-random-pipes-remnant")
 require("prototypes.resource.autoplace-control")
 require("prototypes.resource.particle")
 require("prototypes.resource.resource")
-require("prototypes.buildings")
 require("prototypes.category")
 require("prototypes.equipment")
 require("prototypes.fluid")
