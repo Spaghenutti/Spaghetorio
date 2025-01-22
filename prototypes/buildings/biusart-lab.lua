@@ -158,7 +158,21 @@ data:extend({
     },
     energy_usage = "250kW",
     researching_speed = 1,
-    inputs = {},
+    inputs =
+    {
+      "automation-science-pack",
+      "logistic-science-pack",
+      "military-science-pack",
+      "chemical-science-pack",
+      "production-science-pack",
+      "utility-science-pack",
+      "space-science-pack",
+      "metallurgic-science-pack",
+      "agricultural-science-pack",
+      "electromagnetic-science-pack",
+      "cryogenic-science-pack",
+      "promethium-science-pack"
+    },
     module_slots = 3,
   },
 })

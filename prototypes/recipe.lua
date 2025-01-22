@@ -4384,6 +4384,27 @@ data:extend({
       {type = "item", name = "sp-biusart-lab", amount = 1}
     }
   },
+  {
+    type = "recipe",
+    name = "sp-kr-crusher",
+    icon_size = 64,
+    mip_maps = 4,
+    category = "crafting",
+    energy_required = 16,
+    enabled = false,
+    ingredients = {
+      {type = "item", name = "sp-iron-beam", amount = 12},
+      {type = "item", name = "iron-gear-wheel", amount = 30},
+      {type = "item", name = "sp-gearbox", amount = 8},
+      {type = "item", name = "sp-bolts", amount = 36},
+      {type = "item", name = "engine-unit", amount = 10},
+      {type = "item", name = "stone-brick", amount = 16}
+    },
+    results = {
+      {type = "item", name = "sp-kr-crusher", amount = 1}
+    }
+  },
+
 
 --   -- MARK: Krastorio Buildings
 -- util.recipe.change_recipe_ingredients("kr-loader",
@@ -4736,25 +4757,7 @@ data:extend({
 -- },
 -- 10,
 -- 20)
--- util.recipe.change_recipe_ingredients("kr-crusher",
--- {
---   {type = "item", name = "iron-beam", amount = 12},
---   {type = "item", name = "iron-gear-wheel", amount = 30},
---   {type = "item", name = "sp-gearbox", amount = 8},
---   {type = "item", name = "sp-bolts", amount = 36},
---   {type = "item", name = "engine-unit", amount = 10},
---   {type = "item", name = "stone-brick", amount = 16}
--- },
--- {
---   {type = "item", name = "iron-beam", amount = 24},
---   {type = "item", name = "iron-gear-wheel", amount = 60},
---   {type = "item", name = "sp-gearbox", amount = 12},
---   {type = "item", name = "sp-bolts", amount = 72},
---   {type = "item", name = "engine-unit", amount = 20},
---   {type = "item", name = "stone-brick", amount = 32}
--- },
--- 12,
--- 24)
+
 -- util.recipe.change_recipe_ingredients("kr-fluid-burner",
 -- {
 --   {type = "item", name = "sp-steel-beam", amount = 16},
@@ -4804,7 +4807,7 @@ data:extend({
 --   {type = "item", name = "sp-valve", amount = 8}
 -- },
 -- {
---   {type = "item", name = "iron-beam", amount = 72},
+--   {type = "item", name = "sp-iron-beam", amount = 72},
 --   {type = "item", name = "sp-bolts", amount = 160},
 --   {type = "item", name = "sp-glass", amount = 48},
 --   {type = "item", name = "engine-unit", amount = 12},
