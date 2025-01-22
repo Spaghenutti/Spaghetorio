@@ -4404,6 +4404,26 @@ data:extend({
       {type = "item", name = "sp-kr-crusher", amount = 1}
     }
   },
+  {
+    type = "recipe",
+    name = "sp-kr-electrolysis-plant",
+    icon_size = 64,
+    mip_maps = 4,
+    category = "crafting",
+    energy_required = 20,
+    enabled = false,
+    ingredients = {
+      {type = "item", name = "sp-steel-beam", amount = 36},
+      {type = "item", name = "sp-bolts", amount = 80},
+      {type = "item", name = "sp-glass", amount = 24},
+      {type = "item", name = "engine-unit", amount = 8},
+      {type = "item", name = "electronic-circuit", amount = 8},
+      {type = "item", name = "sp-valve", amount = 8}
+    },
+    results = {
+      {type = "item", name = "sp-kr-electrolysis-plant", amount = 1}
+    }
+  },
 
 
 --   -- MARK: Krastorio Buildings
@@ -4797,25 +4817,7 @@ data:extend({
 -- },
 -- 24,
 -- 48)
--- util.recipe.change_recipe_ingredients("kr-electrolysis-plant",
--- {
---   {type = "item", name = "sp-steel-beam", amount = 36},
---   {type = "item", name = "sp-bolts", amount = 80},
---   {type = "item", name = "sp-glass", amount = 24},
---   {type = "item", name = "engine-unit", amount = 8},
---   {type = "item", name = "electronic-circuit", amount = 8},
---   {type = "item", name = "sp-valve", amount = 8}
--- },
--- {
---   {type = "item", name = "sp-iron-beam", amount = 72},
---   {type = "item", name = "sp-bolts", amount = 160},
---   {type = "item", name = "sp-glass", amount = 48},
---   {type = "item", name = "engine-unit", amount = 12},
---   {type = "item", name = "electronic-circuit", amount = 12},
---   {type = "item", name = "sp-valve", amount = 16}
--- },
--- 20,
--- 40)
+
 -- util.recipe.change_recipe_ingredients("kr-gas-power-station",
 -- {
 --   {type = "item", name = "sp-steel-beam", amount = 20},

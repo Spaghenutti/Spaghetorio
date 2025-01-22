@@ -69,17 +69,17 @@ data:extend({
           },
         },
       },
-    },
-    working_visualisations = {
-      {
-        animation = {
-          filename = "__Spaghetorio__/graphics/krastorio/entities/bio-lab/bio-lab-working.png",
-          width = 193,
-          height = 171,
-          shift = { 0.05, -0.31 },
-          frame_count = 30,
-          line_length = 5,
-          animation_speed = 0.35,
+      working_visualisations = {
+        {
+          animation = {
+            filename = "__Spaghetorio__/graphics/krastorio/entities/bio-lab/bio-lab-working.png",
+            width = 193,
+            height = 171,
+            shift = { 0.05, -0.31 },
+            frame_count = 30,
+            line_length = 5,
+            animation_speed = 0.35,
+          },
         },
       },
     },
