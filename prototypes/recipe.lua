@@ -4616,186 +4616,58 @@ data:extend({
       {type = "item", name = "sp-kr-small-roboport", amount = 1}
     }
   },
-
-
   {
     type = "recipe",
-    name = "sp-kr-loader",
+    name = "sp-kr-matter-assembler",
     icon_size = 64,
     mip_maps = 4,
     category = "crafting",
-    energy_required = 2,
+    energy_required = 60,
     enabled = false,
     ingredients = {
-      {type = "item", name = "engine-unit", amount = 1},
-      {type = "item", name = "sp-machined-parts", amount = 2},
-      {type = "item", name = "sp-wooden-board", amount = 1},
-      {type = "item", name = "sp-bolts", amount = 4},
-      {type = "item", name = "transport-belt", amount = 1}
+      {type = "item", name = "sp-energy-control-unit", amount = 40},
+      {type = "item", name = "sp-imersium-plate", amount = 40},
+      {type = "item", name = "sp-nitenol", amount = 40},
+      {type = "item", name = "sp-TiNb", amount = 120},
+      {type = "item", name = "sp-ai-core", amount = 24},
+      {type = "item", name = "sp-micro-machine", amount = 10},
+      {type = "item", name = "sp-carbon-nanotubes", amount = 150},
+      {type = "item", name = "sp-vortex-core", amount = 1},
+      -- {type = "item", name = "kr-black-reinforced-plate", amount = 160},
     },
     results = {
-      {type = "item", name = "sp-kr-loader", amount = 1}
+      {type = "item", name = "sp-kr-matter-assembler", amount = 1}
     }
   },
   {
     type = "recipe",
-    name = "sp-kr-fast-loader",
+    name = "sp-kr-matter-assembler",
     icon_size = 64,
     mip_maps = 4,
     category = "crafting",
-    energy_required = 2,
+    energy_required = 90,
     enabled = false,
     ingredients = {
-    {type = "item", name = "sp-aluminum-frame", amount = 2},
-    {type = "item", name = "electric-engine-unit", amount = 2},
-    {type = "item", name = "fast-transport-belt", amount = 1},
-    {type = "item", name = "sp-steel-gear-wheel", amount = 4},
-    {type = "item", name = "sp-bolts", amount = 4},
-    {type = "item", name = "electronic-circuit", amount = 2}
+      {type = "item", name = "sp-energy-control-unit", amount = 20},
+      {type = "item", name = "sp-imersium-beam", amount = 80},
+      {type = "item", name = "sp-niobium-steel", amount = 50},
+      {type = "item", name = "sp-rare-metals-alloy", amount = 40},
+      {type = "item", name = "sp-ai-core", amount = 40},
+      {type = "item", name = "sp-turbopump", amount = 60},
+      {type = "item", name = "sp-pressure-tube", amount = 20},
+      {type = "item", name = "sp-plasma-core", amount = 1},
+      -- {type = "item", name = "kr-black-reinforced-plate", amount = 80},
     },
     results = {
-      {type = "item", name = "sp-kr-fast-loader", amount = 1}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-kr-express-loader",
-    icon_size = 64,
-    mip_maps = 4,
-    category = "crafting",
-    energy_required = 2,
-    enabled = false,
-    ingredients = {
-      {type = "item", name = "sp-titanium-frame", amount = 2},
-      {type = "item", name = "sp-actuator", amount = 4},
-      {type = "item", name = "express-transport-belt", amount = 1},
-      {type = "item", name = "sp-bolts", amount = 6},
-      {type = "item", name = "advanced-circuit", amount = 2}
-    },
-    results = {
-      {type = "item", name = "sp-kr-express-loader", amount = 1}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-kr-turbo-loader",
-    icon_size = 64,
-    mip_maps = 4,
-    category = "crafting",
-    energy_required = 2,
-    enabled = false,
-    ingredients = {
-      {type = "item", name = "turbo-transport-belt", amount = 1},
-      {type = "item", name = "sp-TiNb", amount = 4},
-      {type = "item", name = "processing-unit", amount = 2},
-      {type = "item", name = "sp-compressor", amount = 2},
-      {type = "item", name = "sp-bolts", amount = 4}
-    },
-    results = {
-      {type = "item", name = "sp-kr-turbo-loader", amount = 1}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-kr-superior-transport-belt",
-    icon_size = 64,
-    mip_maps = 4,
-    category = "crafting",
-    energy_required = 2,
-    enabled = false,
-    ingredients = {
-      {type = "item", name = "sp-advanced-processing-unit", amount = 1},
-      {type = "item", name = "sp-blunagium-plate", amount = 2},
-      {type = "item", name = "sp-imersium-gear-wheel", amount = 3},
-      {type = "item", name = "electric-engine-unit", amount = 1},
-      {type = "item", name = "sp-nanobot", amount = 6},
-      {type = "item", name = "sp-glass-fiber", amount = 2}
-    },
-    results = {
-      {type = "item", name = "sp-kr-superior-transport-belt", amount = 1}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-kr-superior-underground-belt",
-    icon_size = 64,
-    mip_maps = 4,
-    category = "crafting",
-    energy_required = 2,
-    enabled = false,
-    ingredients = {
-      {type = "item", name = "sp-kr-superior-transport-belt", amount = 24},
-      {type = "item", name = "sp-imersium-beam", amount = 20},
-      {type = "item", name = "sp-compressor", amount = 4},
-      {type = "item", name = "sp-control-unit", amount = 2}
-    },
-    results = {
-      {type = "item", name = "sp-kr-superior-underground-belt", amount = 1}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-kr-superior-splitter",
-    icon_size = 64,
-    mip_maps = 4,
-    category = "crafting",
-    energy_required = 2,
-    enabled = false,
-    ingredients = {
-      {type = "item", name = "sp-kr-superior-transport-belt", amount = 2},
-      {type = "item", name = "sp-imersium-beam", amount = 4},
-      {type = "item", name = "sp-micro-machine", amount = 6},
-      {type = "item", name = "superconductor", amount = 4},
-    },
-    results = {
-      {type = "item", name = "sp-kr-superior-splitter", amount = 1}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-kr-superior-loader",
-    icon_size = 64,
-    mip_maps = 4,
-    category = "crafting",
-    energy_required = 2,
-    enabled = false,
-    ingredients = {
-      {type = "item", name = "sp-kr-superior-transport-belt", amount = 1},
-      {type = "item", name = "superconductor", amount = 6},
-      {type = "item", name = "sp-nanobot", amount = 24},
-      {type = "item", name = "sp-micro-machine", amount = 4},
-    },
-    results = {
-      {type = "item", name = "sp-kr-superior-loader", amount = 1}
+      {type = "item", name = "sp-kr-matter-assembler", amount = 1}
     }
   },
 
--- util.recipe.change_recipe_ingredients("kr-superior-inserter",
--- {
---   {type = "item", name = "imersium-plate", amount = 3},
---   {type = "item", name = "sp-blunagium-plate", amount = 2},
---   {type = "item", name = "sp-glass-fiber", amount = 3},
---   {type = "item", name = "sp-frictionless-joint", amount = 3},
---   {type = "item", name = "sp-advanced-processing-unit", amount = 4},
---   {type = "item", name = "sp-micro-machine", amount = 4},
---   {type = "item", name = "sp-energy-control-unit", amount = 1}
--- },
--- {
---   {type = "item", name = "imersium-plate", amount = 4},
---   {type = "item", name = "sp-blunagium-plate", amount = 3},
---   {type = "item", name = "sp-glass-fiber", amount = 5},
---   {type = "item", name = "sp-frictionless-joint", amount = 6},
---   {type = "item", name = "sp-advanced-processing-unit", amount = 6},
---   {type = "item", name = "sp-micro-machine", amount = 6},
---   {type = "item", name = "sp-energy-control-unit", amount = 2}
--- },
--- 2,
--- 3)
 
 --   -- MARK: Krastorio Buildings
 -- util.recipe.change_recipe_ingredients("kr-superior-long-inserter",
 -- {
---   {type = "item", name = "imersium-plate", amount = 3},
+--   {type = "item", name = "sp-imersium-plate", amount = 3},
 --   {type = "item", name = "sp-rukite-plate", amount = 4},
 --   {type = "item", name = "sp-glass-fiber", amount = 3},
 --   {type = "item", name = "sp-frictionless-joint", amount = 4},
@@ -4804,7 +4676,7 @@ data:extend({
 --   {type = "item", name = "sp-energy-control-unit", amount = 2}
 -- },
 -- {
---   {type = "item", name = "imersium-plate", amount = 4},
+--   {type = "item", name = "sp-imersium-plate", amount = 4},
 --   {type = "item", name = "sp-rukite-plate", amount = 4},
 --   {type = "item", name = "sp-glass-fiber", amount = 5},
 --   {type = "item", name = "sp-frictionless-joint", amount = 8},
@@ -4817,7 +4689,7 @@ data:extend({
 
 -- util.recipe.change_recipe_ingredients("kr-superior-filter-inserter",
 -- {
---   {type = "item", name = "imersium-plate", amount = 4},
+--   {type = "item", name = "sp-imersium-plate", amount = 4},
 --   {type = "item", name = "sp-grobgnum-plate", amount = 3},
 --   {type = "item", name = "sp-glass-fiber", amount = 3},
 --   {type = "item", name = "sp-frictionless-joint", amount = 4},
@@ -4827,7 +4699,7 @@ data:extend({
 --   {type = "item", name = "sp-energy-control-unit", amount = 2}
 -- },
 -- {
---   {type = "item", name = "imersium-plate", amount = 6},
+--   {type = "item", name = "sp-imersium-plate", amount = 6},
 --   {type = "item", name = "sp-grobgnum-plate", amount = 4},
 --   {type = "item", name = "sp-glass-fiber", amount = 5},
 --   {type = "item", name = "sp-frictionless-joint", amount = 8},
@@ -4841,7 +4713,7 @@ data:extend({
 
 -- util.recipe.change_recipe_ingredients("kr-superior-long-filter-inserter",
 -- {
---   {type = "item", name = "imersium-plate", amount = 4},
+--   {type = "item", name = "sp-imersium-plate", amount = 4},
 --   {type = "item", name = "sp-yemnuth-plate", amount = 5},
 --   {type = "item", name = "sp-glass-fiber", amount = 5},
 --   {type = "item", name = "sp-frictionless-joint", amount = 6},
@@ -4851,7 +4723,7 @@ data:extend({
 --   {type = "item", name = "sp-energy-control-unit", amount = 4}
 -- },
 -- {
---   {type = "item", name = "imersium-plate", amount = 6},
+--   {type = "item", name = "sp-imersium-plate", amount = 6},
 --   {type = "item", name = "sp-yemnuth-plate", amount = 8},
 --   {type = "item", name = "sp-glass-fiber", amount = 8},
 --   {type = "item", name = "sp-frictionless-joint", amount = 12},
@@ -5087,7 +4959,7 @@ data:extend({
 --   {type = "item", name = "sp-turbopump", amount = 2},
 --   {type = "item", name = "sp-advanced-processing-unit", amount = 60},
 --   {type = "item", name = "sp-control-unit", amount = 20},
---   {type = "item", name = "ai-core", amount = 16},
+--   {type = "item", name = "sp-ai-core", amount = 16},
 --   {type = "item", name = "superconductor", amount = 8},
 --   {type = "item", name = "sp-glass-fiber", amount = 250},
 --   {type = "item", name = "sp-cryostat", amount = 20},
@@ -5099,7 +4971,7 @@ data:extend({
 --   {type = "item", name = "sp-turbopump", amount = 3},
 --   {type = "item", name = "sp-advanced-processing-unit", amount = 100},
 --   {type = "item", name = "sp-control-unit", amount = 30},
---   {type = "item", name = "ai-core", amount = 30},
+--   {type = "item", name = "sp-ai-core", amount = 30},
 --   {type = "item", name = "superconductor", amount = 12},
 --   {type = "item", name = "sp-glass-fiber", amount = 400},
 --   {type = "item", name = "sp-cryostat", amount = 40},
@@ -5111,10 +4983,10 @@ data:extend({
 -- util.recipe.change_recipe_ingredients("kr-singularity-lab",
 -- {
 --   {type = "item", name = "sp-niobium-steel", amount = 100},
---   {type = "item", name = "rare-metals", amount = 40},
+--   {type = "item", name = "sp-rare-metals-alloy", amount = 40},
 --   {type = "item", name = "sp-glass", amount = 60},
 --   {type = "item", name = "sp-control-unit", amount = 20},
---   {type = "item", name = "ai-core", amount = 50},
+--   {type = "item", name = "sp-ai-core", amount = 50},
 --   {type = "item", name = "sp-micro-machine", amount = 50},
 --   {type = "item", name = "sp-glass-fiber", amount = 500},
 --   {type = "item", name = "sp-cryostat", amount = 20},
@@ -5123,10 +4995,10 @@ data:extend({
 -- },
 -- {
 --   {type = "item", name = "sp-niobium-steel", amount = 160},
---   {type = "item", name = "rare-metals", amount = 100},
+--   {type = "item", name = "sp-rare-metals-alloy", amount = 100},
 --   {type = "item", name = "sp-glass", amount = 80},
 --   {type = "item", name = "sp-control-unit", amount = 60},
---   {type = "item", name = "ai-core", amount = 80},
+--   {type = "item", name = "sp-ai-core", amount = 80},
 --   {type = "item", name = "sp-micro-machine", amount = 72},
 --   {type = "item", name = "sp-glass-fiber", amount = 800},
 --   {type = "item", name = "sp-cryostat", amount = 30},
@@ -5135,62 +5007,13 @@ data:extend({
 -- },
 -- 60,
 -- 120)
--- util.recipe.change_recipe_ingredients("kr-matter-plant",
--- {
---   {type = "item", name = "sp-energy-control-unit", amount = 20},
---   {type = "item", name = "sp-imersium-beam", amount = 80},
---   {type = "item", name = "sp-niobium-steel", amount = 50},
---   {type = "item", name = "rare-metals", amount = 40},
---   {type = "item", name = "ai-core", amount = 40},
---   {type = "item", name = "sp-turbopump", amount = 60},
---   {type = "item", name = "sp-pressure-tube", amount = 20},
---   {type = "item", name = "sp-plasma-core", amount = 1},
---   {type = "item", name = "kr-black-reinforced-plate", amount = 80},
--- },
--- {
---   {type = "item", name = "sp-energy-control-unit", amount = 50},
---   {type = "item", name = "sp-imersium-beam", amount = 120},
---   {type = "item", name = "sp-niobium-steel", amount = 80},
---   {type = "item", name = "rare-metals", amount = 50},
---   {type = "item", name = "ai-core", amount = 60},
---   {type = "item", name = "sp-turbopump", amount = 80},
---   {type = "item", name = "sp-pressure-tube", amount = 60},
---   {type = "item", name = "sp-plasma-core", amount = 1},
---   {type = "item", name = "kr-black-reinforced-plate", amount = 200},
--- },
--- 90,
--- 150)
--- util.recipe.change_recipe_ingredients("kr-matter-assembler",
--- {
---   {type = "item", name = "sp-energy-control-unit", amount = 40},
---   {type = "item", name = "imersium-plate", amount = 40},
---   {type = "item", name = "sp-nitenol", amount = 40},
---   {type = "item", name = "sp-TiNb", amount = 120},
---   {type = "item", name = "ai-core", amount = 24},
---   {type = "item", name = "sp-micro-machine", amount = 10},
---   {type = "item", name = "sp-carbon-nanotubes", amount = 150},
---   {type = "item", name = "sp-vortex-core", amount = 1},
---   {type = "item", name = "kr-black-reinforced-plate", amount = 160},
--- },
--- {
---   {type = "item", name = "sp-energy-control-unit", amount = 80},
---   {type = "item", name = "imersium-plate", amount = 80},
---   {type = "item", name = "sp-nitenol", amount = 60},
---   {type = "item", name = "sp-TiNb", amount = 160},
---   {type = "item", name = "ai-core", amount = 50},
---   {type = "item", name = "sp-micro-machine", amount = 40},
---   {type = "item", name = "sp-carbon-nanotubes", amount = 240},
---   {type = "item", name = "sp-vortex-core", amount = 1},
---   {type = "item", name = "kr-black-reinforced-plate", amount = 320},
--- },
--- 40,
--- 60)
+
 
 -- util.recipe.change_recipe_ingredients("kr-stabilizer-charging-station",
 -- {
 --   {type = "item", name = "sp-energy-control-unit", amount = 16},
---   {type = "item", name = "imersium-plate", amount = 20},
---   {type = "item", name = "ai-core", amount = 16},
+--   {type = "item", name = "sp-imersium-plate", amount = 20},
+--   {type = "item", name = "sp-ai-core", amount = 16},
 --   {type = "item", name = "sp-micro-machine", amount = 6},
 --   {type = "item", name = "sp-nanobot", amount = 200},
 --   {type = "item", name = "sp-tungsten-carbide", amount = 20},
@@ -5199,8 +5022,8 @@ data:extend({
 -- },
 -- {
 --   {type = "item", name = "sp-energy-control-unit", amount = 24},
---   {type = "item", name = "imersium-plate", amount = 32},
---   {type = "item", name = "ai-core", amount = 24},
+--   {type = "item", name = "sp-imersium-plate", amount = 32},
+--   {type = "item", name = "sp-ai-core", amount = 24},
 --   {type = "item", name = "sp-micro-machine", amount = 10},
 --   {type = "item", name = "sp-nanobot", amount = 300},
 --   {type = "item", name = "sptungsten-carbide", amount = 32},
@@ -5240,6 +5063,160 @@ data:extend({
 -- },
 -- 120,
 -- 180)
+  ------------------------------------------------------------------------------
+  -- MARK: Transport belts
+  ------------------------------------------------------------------------------
+  {
+    type = "recipe",
+    name = "sp-kr-loader",
+    icon_size = 64,
+    mip_maps = 4,
+    category = "crafting",
+    energy_required = 2,
+    enabled = false,
+    ingredients = {
+      {type = "item", name = "engine-unit", amount = 1},
+      {type = "item", name = "sp-machined-parts", amount = 2},
+      {type = "item", name = "sp-wooden-board", amount = 1},
+      {type = "item", name = "sp-bolts", amount = 4},
+      {type = "item", name = "transport-belt", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-kr-loader", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-kr-fast-loader",
+    icon_size = 64,
+    mip_maps = 4,
+    category = "crafting",
+    energy_required = 2,
+    enabled = false,
+    ingredients = {
+    {type = "item", name = "sp-aluminum-frame", amount = 2},
+    {type = "item", name = "electric-engine-unit", amount = 2},
+    {type = "item", name = "fast-transport-belt", amount = 1},
+    {type = "item", name = "sp-steel-gear-wheel", amount = 4},
+    {type = "item", name = "sp-bolts", amount = 4},
+    {type = "item", name = "electronic-circuit", amount = 2}
+    },
+    results = {
+      {type = "item", name = "sp-kr-fast-loader", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-kr-express-loader",
+    icon_size = 64,
+    mip_maps = 4,
+    category = "crafting",
+    energy_required = 2,
+    enabled = false,
+    ingredients = {
+      {type = "item", name = "sp-titanium-frame", amount = 2},
+      {type = "item", name = "sp-actuator", amount = 4},
+      {type = "item", name = "express-transport-belt", amount = 1},
+      {type = "item", name = "sp-bolts", amount = 6},
+      {type = "item", name = "advanced-circuit", amount = 2}
+    },
+    results = {
+      {type = "item", name = "sp-kr-express-loader", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-kr-turbo-loader",
+    icon_size = 64,
+    mip_maps = 4,
+    category = "crafting",
+    energy_required = 2,
+    enabled = false,
+    ingredients = {
+      {type = "item", name = "turbo-transport-belt", amount = 1},
+      {type = "item", name = "sp-TiNb", amount = 4},
+      {type = "item", name = "processing-unit", amount = 2},
+      {type = "item", name = "sp-compressor", amount = 2},
+      {type = "item", name = "sp-bolts", amount = 4}
+    },
+    results = {
+      {type = "item", name = "sp-kr-turbo-loader", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-kr-superior-transport-belt",
+    icon_size = 64,
+    mip_maps = 4,
+    category = "crafting",
+    energy_required = 2,
+    enabled = false,
+    ingredients = {
+      {type = "item", name = "sp-advanced-processing-unit", amount = 1},
+      {type = "item", name = "sp-blunagium-plate", amount = 2},
+      {type = "item", name = "sp-imersium-gear-wheel", amount = 3},
+      {type = "item", name = "electric-engine-unit", amount = 1},
+      {type = "item", name = "sp-nanobot", amount = 6},
+      {type = "item", name = "sp-glass-fiber", amount = 2}
+    },
+    results = {
+      {type = "item", name = "sp-kr-superior-transport-belt", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-kr-superior-underground-belt",
+    icon_size = 64,
+    mip_maps = 4,
+    category = "crafting",
+    energy_required = 2,
+    enabled = false,
+    ingredients = {
+      {type = "item", name = "sp-kr-superior-transport-belt", amount = 24},
+      {type = "item", name = "sp-imersium-beam", amount = 20},
+      {type = "item", name = "sp-compressor", amount = 4},
+      {type = "item", name = "sp-control-unit", amount = 2}
+    },
+    results = {
+      {type = "item", name = "sp-kr-superior-underground-belt", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-kr-superior-splitter",
+    icon_size = 64,
+    mip_maps = 4,
+    category = "crafting",
+    energy_required = 2,
+    enabled = false,
+    ingredients = {
+      {type = "item", name = "sp-kr-superior-transport-belt", amount = 2},
+      {type = "item", name = "sp-imersium-beam", amount = 4},
+      {type = "item", name = "sp-micro-machine", amount = 6},
+      {type = "item", name = "superconductor", amount = 4},
+    },
+    results = {
+      {type = "item", name = "sp-kr-superior-splitter", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-kr-superior-loader",
+    icon_size = 64,
+    mip_maps = 4,
+    category = "crafting",
+    energy_required = 2,
+    enabled = false,
+    ingredients = {
+      {type = "item", name = "sp-kr-superior-transport-belt", amount = 1},
+      {type = "item", name = "superconductor", amount = 6},
+      {type = "item", name = "sp-nanobot", amount = 24},
+      {type = "item", name = "sp-micro-machine", amount = 4},
+    },
+    results = {
+      {type = "item", name = "sp-kr-superior-loader", amount = 1}
+    }
+  },
   ------------------------------------------------------------------------------
   -- MARK: Equipment
   ------------------------------------------------------------------------------

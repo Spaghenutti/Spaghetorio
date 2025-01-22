@@ -30,7 +30,7 @@ data:extend({
     fast_replaceable_group = "kr-quarry-drills",
     max_health = 1000,
     resource_categories = { "kr-quarry" },
-    corpse = "kr-big-random-pipes-remnant",
+    corpse = "sp-kr-big-random-pipes-remnant",
     dying_explosion = "big-explosion",
     resistances = {
       { type = "physical", percent = 50 },

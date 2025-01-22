@@ -1,7 +1,7 @@
 data:extend({
   {
     type = "corpse",
-    name = "kr-particle-accelerator-remnant",
+    name = "sp-kr-particle-accelerator-remnant",
     localised_name = { "remnant-name", { "entity-name.kr-particle-accelerator" } },
     icon = "__Spaghetorio__/graphics/krastorio/icons/entities/fusion-reactor.png",
     icon_size = 64,

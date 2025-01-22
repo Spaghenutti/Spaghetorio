@@ -130,7 +130,7 @@ data:extend({
     },
     minable = { mining_time = 0.5, result = "kr-shelter" },
     max_health = 1500,
-    corpse = "kr-medium-random-pipes-remnant",
+    corpse = "sp-kr-medium-random-pipes-remnant",
     collision_box = { { -2.75, -2.75 }, { 2.75, 2.75 } },
     selection_box = { { -3, -3 }, { 3, 3.20 } },
     resistances = {

@@ -1,24 +1,19 @@
 local hit_effects = require("__base__/prototypes/entity/hit-effects")
 local sounds = require("__base__/prototypes/entity/sounds")
 
-local kr_icons_size = false
-
-if krastorio.general.getSafeSettingValue("kr-large-icons") then
-  kr_icons_size = true
-end
 
 data:extend({
   {
     type = "assembling-machine",
-    name = "kr-matter-plant",
+    name = "sp-kr-matter-plant",
     icon = "__Spaghetorio__/graphics/krastorio/icons/entities/matter-plant.png",
     icon_size = 128,
     icon_mipmaps = 4,
     flags = { "placeable-neutral", "placeable-player", "player-creation" },
-    minable = { mining_time = 1, result = "kr-matter-plant" },
+    minable = { mining_time = 1, result = "sp-kr-matter-plant" },
     max_health = 2000,
     damaged_trigger_effect = hit_effects.entity(),
-    corpse = "matter-plant-remnant",
+    corpse = "sp-kr-matter-plant-remnant",
     dying_explosion = "medium-matter-explosion",
     resistances = {
       { type = "physical", percent = 60 },
@@ -31,161 +26,97 @@ data:extend({
         production_type = "input",
         pipe_picture = sp_kr_pipe_path,
         pipe_covers = pipecoverspictures(),
-        base_area = 10,
-        base_level = -1,
-        pipe_connections = { {flow_direction="input", direction = defines.direction.south, position = {0, -4}} },
+        volume = 1000,
+        pipe_connections = {{flow_direction="input", direction = defines.direction.north, position = {0, -3}}},
       },
       -- Outputs
       {
         production_type = "output",
         pipe_picture = sp_kr_pipe_path,
         pipe_covers = pipecoverspictures(),
-        base_area = 10,
-        base_level = 1,
-        pipe_connections = { {flow_direction="output", direction = defines.direction.south, position = {-4, 0}} },
+        volume = 1000,
+        pipe_connections = {
+          {flow_direction="output", direction = defines.direction.west, position = {-3, 0}},
+          {flow_direction="output", direction = defines.direction.east, position = {3, 0}},
+          {flow_direction="output", direction = defines.direction.south, position = {0, 3}}
+        },
       },
-      {
-        production_type = "output",
-        pipe_picture = sp_kr_pipe_path,
-        pipe_covers = pipecoverspictures(),
-        base_area = 10,
-        base_level = 1,
-        pipe_connections = { {flow_direction="output", direction = defines.direction.south, position = {4, 0}} },
-      },
-      {
-        production_type = "output",
-        pipe_picture = sp_kr_pipe_path,
-        pipe_covers = pipecoverspictures(),
-        base_area = 10,
-        base_level = 1,
-        pipe_connections = { {flow_direction="output", direction = defines.direction.south, position = {0, 4}} },
-      },
-      fluid_boxes_off_when_no_fluid_recipe = false,
     },
+    fluid_boxes_off_when_no_fluid_recipe = false,
     collision_box = { { -3.25, -3.25 }, { 3.25, 3.25 } },
     selection_box = { { -3.5, -3.5 }, { 3.5, 3.5 } },
     fast_replaceable_group = "assembling-machine",
-    scale_entity_info_icon = kr_icons_size,
-    animation = {
-      layers = {
-        {
-          filename = "__Spaghetorio__/graphics/krastorio/entities/matter-plant/matter-plant.png",
-          priority = "high",
-          scale = scale,
-          width = 231,
-          height = 250,
-          frame_count = 1,
-          shift = { -0.1, -0.2 },
-          hr_version = {
-            filename = "__Spaghetorio__/graphics/krastorio/entities/matter-plant/hr-matter-plant.png",
+    graphics_set = {
+      animation = {
+        layers = {
+          {
+            filename = "__Spaghetorio__/graphics/krastorio/entities/matter-plant/matter-plant.png",
             priority = "high",
-            width = 462,
-            height = 500,
+            scale = scale,
+            width = 231,
+            height = 250,
             frame_count = 1,
             shift = { -0.1, -0.2 },
-            scale = 0.5,
           },
-        },
-        {
-          filename = "__Spaghetorio__/graphics/krastorio/entities/matter-plant/matter-plant-sh.png",
-          priority = "high",
-          scale = scale,
-          width = 252,
-          height = 222,
-          frame_count = 1,
-          draw_as_shadow = true,
-          shift = { 0.23, 0.24 },
-          hr_version = {
-            filename = "__Spaghetorio__/graphics/krastorio/entities/matter-plant/hr-matter-plant-sh.png",
+          {
+            filename = "__Spaghetorio__/graphics/krastorio/entities/matter-plant/matter-plant-sh.png",
             priority = "high",
-            width = 504,
-            height = 444,
+            scale = scale,
+            width = 252,
+            height = 222,
             frame_count = 1,
             draw_as_shadow = true,
             shift = { 0.23, 0.24 },
-            scale = 0.5,
           },
         },
       },
-    },
-    working_visualisations = {
-      {
-        draw_as_light = true,
-        blend_mode = "additive-soft",
-        animation = {
-          filename = "__Spaghetorio__/graphics/krastorio/entities/matter-plant/matter-plant-working-light.png",
-          priority = "high",
-          scale = scale,
-          width = 231,
-          height = 250,
-          frame_count = 30,
-          line_length = 6,
-          shift = { -0.1, -0.2 },
-          animation_speed = 0.75,
-          hr_version = {
-            filename = "__Spaghetorio__/graphics/krastorio/entities/matter-plant/hr-matter-plant-working-light.png",
+      working_visualisations = {
+        {
+          draw_as_light = true,
+          blend_mode = "additive-soft",
+          animation = {
+            filename = "__Spaghetorio__/graphics/krastorio/entities/matter-plant/matter-plant-working-light.png",
             priority = "high",
-            width = 462,
-            height = 500,
+            scale = scale,
+            width = 231,
+            height = 250,
             frame_count = 30,
             line_length = 6,
             shift = { -0.1, -0.2 },
-            scale = 0.5,
             animation_speed = 0.75,
           },
         },
-      },
-      {
-        draw_as_glow = true,
-        blend_mode = "additive-soft",
-        synced_fadeout = true,
-        animation = {
-          filename = "__Spaghetorio__/graphics/krastorio/entities/matter-plant/matter-plant-working-glow.png",
-          priority = "high",
-          scale = scale,
-          width = 231,
-          height = 250,
-          frame_count = 30,
-          line_length = 6,
-          shift = { -0.1, -0.2 },
-          animation_speed = 0.75,
-          hr_version = {
-            filename = "__Spaghetorio__/graphics/krastorio/entities/matter-plant/hr-matter-plant-working-glow.png",
+        {
+          draw_as_glow = true,
+          blend_mode = "additive-soft",
+          synced_fadeout = true,
+          animation = {
+            filename = "__Spaghetorio__/graphics/krastorio/entities/matter-plant/matter-plant-working-glow.png",
             priority = "high",
-            width = 462,
-            height = 500,
+            scale = scale,
+            width = 231,
+            height = 250,
             frame_count = 30,
             line_length = 6,
             shift = { -0.1, -0.2 },
-            scale = 0.5,
             animation_speed = 0.75,
           },
         },
-      },
-      {
-        animation = {
-          filename = "__Spaghetorio__/graphics/krastorio/entities/matter-plant/matter-plant-working.png",
-          scale = scale,
-          width = 231,
-          height = 250,
-          frame_count = 30,
-          line_length = 6,
-          shift = { -0.1, -0.2 },
-          animation_speed = 0.75,
-          hr_version = {
-            filename = "__Spaghetorio__/graphics/krastorio/entities/matter-plant/hr-matter-plant-working.png",
-            width = 462,
-            height = 500,
+        {
+          animation = {
+            filename = "__Spaghetorio__/graphics/krastorio/entities/matter-plant/matter-plant-working.png",
+            scale = scale,
+            width = 231,
+            height = 250,
             frame_count = 30,
             line_length = 6,
             shift = { -0.1, -0.2 },
-            scale = 0.5,
             animation_speed = 0.75,
           },
         },
       },
     },
-    crafting_categories = { "matter-conversion" },
+    crafting_categories = { "sp-kr-matter-conversion" },
     vehicle_impact_sound = sounds.generic_impact,
     working_sound = {
       sound = { filename = "__Spaghetorio__/sounds/buildings/matter-plant.ogg" },
@@ -200,7 +131,7 @@ data:extend({
     },
     energy_usage = "24.19MW",
     ingredient_count = 6,
-    module_specification = { module_slots = 4, module_info_icon_shift = { 0, 1.7 }, module_info_icon_scale = 1 },
+    module_slots = 4,
     allowed_effects = { "consumption", "speed", "pollution" },
     open_sound = { filename = "__Spaghetorio__/sounds/buildings/open.ogg", volume = 1 },
     close_sound = { filename = "__Spaghetorio__/sounds/buildings/close.ogg", volume = 1 },

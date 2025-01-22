@@ -20,7 +20,7 @@ data:extend({
     max_health = 2000,
     damaged_trigger_effect = hit_effects.entity(),
     dying_explosion = "big-explosion",
-    corpse = "kr-big-random-pipes-remnant",
+    corpse = "sp-kr-big-random-pipes-remnant",
     resistances = {
       { type = "physical", percent = 60 },
       { type = "fire", percent = 90 },

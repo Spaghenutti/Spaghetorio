@@ -1,24 +1,19 @@
 local hit_effects = require("__base__/prototypes/entity/hit-effects")
 local sounds = require("__base__/prototypes/entity/sounds")
 
-local kr_icons_size = false
-
-if krastorio.general.getSafeSettingValue("kr-large-icons") then
-  kr_icons_size = true
-end
 
 data:extend({
   {
     type = "assembling-machine",
-    name = "kr-matter-assembler",
+    name = "sp-kr-matter-assembler",
     icon = "__Spaghetorio__/graphics/krastorio/icons/entities/matter-assembler.png",
     icon_size = 128,
     icon_mipmaps = 4,
     flags = { "placeable-neutral", "placeable-player", "player-creation" },
-    minable = { mining_time = 1, result = "kr-matter-assembler" },
+    minable = { mining_time = 1, result = "sp-kr-matter-assembler" },
     max_health = 2000,
     damaged_trigger_effect = hit_effects.entity(),
-    corpse = "kr-medium-random-pipes-remnant",
+    corpse = "sp-kr-medium-random-pipes-remnant",
     dying_explosion = "medium-matter-explosion",
     resistances = {
       { type = "physical", percent = 50 },
@@ -31,175 +26,98 @@ data:extend({
         production_type = "input",
         pipe_picture = sp_kr_pipe_path,
         pipe_covers = pipecoverspictures(),
-        base_area = 10,
-        base_level = -1,
-        pipe_connections = { {flow_direction="input", direction = defines.direction.south, position = {0, -4}} },
+        volume = 1000,
+        pipe_connections = {{flow_direction="input", direction = defines.direction.north, position = {0, -3}}},
       },
       -- Outputs
       {
         production_type = "output",
         pipe_picture = sp_kr_pipe_path,
         pipe_covers = pipecoverspictures(),
-        base_area = 10,
-        base_level = 1,
-        pipe_connections = { {flow_direction="output", direction = defines.direction.south, position = {-4, 0}} },
+        volume = 1000,
+        pipe_connections = {
+          {flow_direction="output", direction = defines.direction.west, position = {-3, 0}},
+          {flow_direction="output", direction = defines.direction.east, position = {3, 0}},
+          {flow_direction="output", direction = defines.direction.south, position = {0, 3}}
+        },
       },
-      {
-        production_type = "output",
-        pipe_picture = sp_kr_pipe_path,
-        pipe_covers = pipecoverspictures(),
-        base_area = 10,
-        base_level = 1,
-        pipe_connections = { {flow_direction="output", direction = defines.direction.south, position = {4, 0}} },
-      },
-      {
-        production_type = "output",
-        pipe_picture = sp_kr_pipe_path,
-        pipe_covers = pipecoverspictures(),
-        base_area = 10,
-        base_level = 1,
-        pipe_connections = { {flow_direction="output", direction = defines.direction.south, position = {0, 4}} },
-      },
-      fluid_boxes_off_when_no_fluid_recipe = false,
     },
+    fluid_boxes_off_when_no_fluid_recipe = false,
     collision_box = { { -3.25, -3.25 }, { 3.25, 3.25 } },
     selection_box = { { -3.5, -3.5 }, { 3.5, 3.5 } },
     fast_replaceable_group = "assembling-machine",
-    scale_entity_info_icon = kr_icons_size,
-    animation = {
-      layers = {
-        {
-          filename = "__Spaghetorio__/graphics/krastorio/entities/matter-assembler/matter-assembler.png",
-          priority = "high",
-          width = 236,
-          height = 244,
-          frame_count = 1,
-          shift = { 0, -0.15 },
-          hr_version = {
-            filename = "__Spaghetorio__/graphics/krastorio/entities/matter-assembler/hr-matter-assembler.png",
+    graphics_set = {
+      animation = {
+        layers = {
+          {
+            filename = "__Spaghetorio__/graphics/krastorio/entities/matter-assembler/matter-assembler.png",
             priority = "high",
-            width = 473,
-            height = 489,
+            width = 236,
+            height = 244,
             frame_count = 1,
-            scale = 0.5,
             shift = { 0, -0.15 },
           },
-        },
-        {
-          filename = "__Spaghetorio__/graphics/krastorio/entities/matter-assembler/matter-assembler-sh.png",
-          priority = "medium",
-          width = 254,
-          height = 223,
-          frame_count = 1,
-          shift = { 0.38, 0.22 },
-          draw_as_shadow = true,
-          hr_version = {
-            filename = "__Spaghetorio__/graphics/krastorio/entities/matter-assembler/hr-matter-assembler-sh.png",
+          {
+            filename = "__Spaghetorio__/graphics/krastorio/entities/matter-assembler/matter-assembler-sh.png",
             priority = "medium",
-            width = 508,
-            height = 446,
+            width = 254,
+            height = 223,
             frame_count = 1,
-            scale = 0.5,
             shift = { 0.38, 0.22 },
             draw_as_shadow = true,
           },
         },
       },
-    },
-    working_visualisations = {
-      {
-        draw_as_light = true,
-        animation = {
-          filename = "__Spaghetorio__/graphics/krastorio/entities/matter-assembler/matter-assembler-working-glow-light.png",
-          priority = "high",
-          width = 72,
-          height = 55,
-          frame_count = 30,
-          line_length = 6,
-          animation_speed = 0.75,
-          shift = { 0, -0.23 },
-          hr_version = {
-            filename = "__Spaghetorio__/graphics/krastorio/entities/matter-assembler/hr-matter-assembler-working-glow-light.png",
+      working_visualisations = {
+        {
+          draw_as_light = true,
+          animation = {
+            filename = "__Spaghetorio__/graphics/krastorio/entities/matter-assembler/matter-assembler-working-glow-light.png",
             priority = "high",
-            width = 144,
-            height = 110,
+            width = 72,
+            height = 55,
             frame_count = 30,
             line_length = 6,
-            scale = 0.5,
             animation_speed = 0.75,
             shift = { 0, -0.23 },
           },
         },
-      },
-      {
-        draw_as_glow = true,
-        blend_mode = "additive",
-        synced_fadeout = true,
-        animation = {
-          filename = "__Spaghetorio__/graphics/krastorio/entities/matter-assembler/matter-assembler-working-glow.png",
-          priority = "high",
-          width = 72,
-          height = 55,
-          frame_count = 30,
-          line_length = 6,
-          animation_speed = 0.75,
-          shift = { 0, -0.23 },
-          hr_version = {
-            filename = "__Spaghetorio__/graphics/krastorio/entities/matter-assembler/hr-matter-assembler-working-glow.png",
+        {
+          draw_as_glow = true,
+          blend_mode = "additive",
+          synced_fadeout = true,
+          animation = {
+            filename = "__Spaghetorio__/graphics/krastorio/entities/matter-assembler/matter-assembler-working-glow.png",
             priority = "high",
-            width = 144,
-            height = 110,
+            width = 72,
+            height = 55,
             frame_count = 30,
             line_length = 6,
-            scale = 0.5,
             animation_speed = 0.75,
             shift = { 0, -0.23 },
           },
         },
-      },
-      {
-        animation = {
-          layers = {
-            {
-              filename = "__Spaghetorio__/graphics/krastorio/entities/matter-assembler/matter-assembler-working-light.png",
-              priority = "high",
-              width = 236,
-              height = 244,
-              frame_count = 30,
-              line_length = 6,
-              animation_speed = 0.75,
-              shift = { 0, -0.15 },
-              draw_as_light = true,
-              hr_version = {
-                filename = "__Spaghetorio__/graphics/krastorio/entities/matter-assembler/hr-matter-assembler-working-light.png",
+        {
+          animation = {
+            layers = {
+              {
+                filename = "__Spaghetorio__/graphics/krastorio/entities/matter-assembler/matter-assembler-working-light.png",
                 priority = "high",
-                width = 473,
-                height = 489,
+                width = 236,
+                height = 244,
                 frame_count = 30,
                 line_length = 6,
-                scale = 0.5,
                 animation_speed = 0.75,
                 shift = { 0, -0.15 },
                 draw_as_light = true,
               },
-            },
-            {
-              filename = "__Spaghetorio__/graphics/krastorio/entities/matter-assembler/matter-assembler-working.png",
-              priority = "high",
-              width = 236,
-              height = 244,
-              frame_count = 30,
-              line_length = 6,
-              animation_speed = 0.75,
-              shift = { 0, -0.15 },
-              hr_version = {
-                filename = "__Spaghetorio__/graphics/krastorio/entities/matter-assembler/hr-matter-assembler-working.png",
+              {
+                filename = "__Spaghetorio__/graphics/krastorio/entities/matter-assembler/matter-assembler-working.png",
                 priority = "high",
-                width = 473,
-                height = 489,
+                width = 236,
+                height = 244,
                 frame_count = 30,
                 line_length = 6,
-                scale = 0.5,
                 animation_speed = 0.75,
                 shift = { 0, -0.15 },
               },
@@ -214,7 +132,7 @@ data:extend({
         },
       },
     },
-    crafting_categories = { "matter-deconversion", "matter-items" },
+    crafting_categories = { "sp-kr-matter-deconversion", "sp-kr-matter-items" },
     vehicle_impact_sound = sounds.generic_impact,
     working_sound = {
       sound = {
@@ -247,7 +165,7 @@ data:extend({
 
     energy_usage = "48.39MW",
     ingredient_count = 6,
-    module_specification = { module_slots = 4, module_info_icon_shift = { 0, 1.8 }, module_info_icon_scale = 0.6 },
+    module_slots = 4,
     allowed_effects = { "consumption", "productivity", "speed", "pollution" },
     open_sound = sounds.machine_open,
     close_sound = sounds.machine_close,

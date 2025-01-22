@@ -8,7 +8,7 @@ data:extend({
     flags = { "placeable-neutral", "placeable-player", "player-creation" },
     minable = { hardness = 1, mining_time = 5, result = "sp-kr-particle-accelerator" },
     max_health = 7500,
-    corpse = "kr-particle-accelerator-remnant",
+    corpse = "sp-kr-particle-accelerator-remnant",
     dying_explosion = "medium-explosion",
     show_recipe_icon = false,
     resistances = {

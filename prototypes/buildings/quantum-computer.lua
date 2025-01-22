@@ -77,7 +77,7 @@ data:extend({
     minable = { mining_time = 1, result = "kr-quantum-computer" },
     damaged_trigger_effect = hit_effects.entity(),
     max_health = 1000,
-    corpse = "kr-medium-random-pipes-remnant",
+    corpse = "sp-kr-medium-random-pipes-remnant",
     dying_explosion = "medium-explosion",
     resistances = {
       { type = "physical", percent = 50 },
