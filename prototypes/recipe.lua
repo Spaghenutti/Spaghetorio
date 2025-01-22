@@ -4424,6 +4424,26 @@ data:extend({
       {type = "item", name = "sp-kr-electrolysis-plant", amount = 1}
     }
   },
+  {
+    type = "recipe",
+    name = "sp-kr-energy-storage",
+    icon_size = 64,
+    mip_maps = 4,
+    category = "crafting",
+    energy_required = 30,
+    enabled = false,
+    ingredients = {
+      {type = "item", name = "processing-unit", amount = 10},
+      {type = "item", name = "sp-energy-control-unit", amount = 30},
+      {type = "item", name = "sp-yttrium", amount = 8},
+      {type = "item", name = "sp-cerium", amount = 20},
+      {type = "item", name = "superconductor", amount = 5},
+      {type = "item", name = "sp-duralumin", amount = 20}
+    },
+    results = {
+      {type = "item", name = "sp-kr-energy-storage", amount = 1}
+    }
+  },
 
 
 --   -- MARK: Krastorio Buildings
@@ -4600,13 +4620,13 @@ data:extend({
 --   {type = "item", name = "kr-superior-transport-belt", amount = 2},
 --   {type = "item", name = "imersium-beam", amount = 4},
 --   {type = "item", name = "sp-micro-machine", amount = 6},
---   {type = "item", name = "sp-superconductor", amount = 4},
+--   {type = "item", name = "superconductor", amount = 4},
 -- },
 -- {
 --   {type = "item", name = "kr-superior-transport-belt", amount = 2},
 --   {type = "item", name = "imersium-beam", amount = 6},
 --   {type = "item", name = "sp-micro-machine", amount = 10},
---   {type = "item", name = "sp-superconductor", amount = 6},
+--   {type = "item", name = "superconductor", amount = 6},
 -- },
 -- 4,
 -- 6)
@@ -4614,13 +4634,13 @@ data:extend({
 -- util.recipe.change_recipe_ingredients("kr-superior-loader",
 -- {
 --   {type = "item", name = "kr-superior-transport-belt", amount = 1},
---   {type = "item", name = "sp-superconductor", amount = 6},
+--   {type = "item", name = "superconductor", amount = 6},
 --   {type = "item", name = "sp-nanobot", amount = 24},
 --   {type = "item", name = "sp-micro-machine", amount = 4},
 -- },
 -- {
 --   {type = "item", name = "kr-superior-transport-belt", amount = 1},
---   {type = "item", name = "sp-superconductor", amount = 10},
+--   {type = "item", name = "superconductor", amount = 10},
 --   {type = "item", name = "sp-nanobot", amount = 32},
 --   {type = "item", name = "sp-micro-machine", amount = 8},
 -- },
@@ -4635,7 +4655,7 @@ data:extend({
 --   {type = "item", name = "sp-frictionless-joint", amount = 3},
 --   {type = "item", name = "sp-advanced-processing-unit", amount = 4},
 --   {type = "item", name = "sp-micro-machine", amount = 4},
---   {type = "item", name = "energy-control-unit", amount = 1}
+--   {type = "item", name = "sp-energy-control-unit", amount = 1}
 -- },
 -- {
 --   {type = "item", name = "imersium-plate", amount = 4},
@@ -4644,7 +4664,7 @@ data:extend({
 --   {type = "item", name = "sp-frictionless-joint", amount = 6},
 --   {type = "item", name = "sp-advanced-processing-unit", amount = 6},
 --   {type = "item", name = "sp-micro-machine", amount = 6},
---   {type = "item", name = "energy-control-unit", amount = 2}
+--   {type = "item", name = "sp-energy-control-unit", amount = 2}
 -- },
 -- 2,
 -- 3)
@@ -4657,7 +4677,7 @@ data:extend({
 --   {type = "item", name = "sp-frictionless-joint", amount = 4},
 --   {type = "item", name = "sp-advanced-processing-unit", amount = 4},
 --   {type = "item", name = "sp-micro-machine", amount = 6},
---   {type = "item", name = "energy-control-unit", amount = 2}
+--   {type = "item", name = "sp-energy-control-unit", amount = 2}
 -- },
 -- {
 --   {type = "item", name = "imersium-plate", amount = 4},
@@ -4666,7 +4686,7 @@ data:extend({
 --   {type = "item", name = "sp-frictionless-joint", amount = 8},
 --   {type = "item", name = "sp-advanced-processing-unit", amount = 6},
 --   {type = "item", name = "sp-micro-machine", amount = 8},
---   {type = "item", name = "energy-control-unit", amount = 3}
+--   {type = "item", name = "sp-energy-control-unit", amount = 3}
 -- },
 -- 3,
 -- 5)
@@ -4680,7 +4700,7 @@ data:extend({
 --   {type = "item", name = "sp-advanced-processing-unit", amount = 4},
 --   {type = "item", name = "sp-control-unit", amount = 3},
 --   {type = "item", name = "sp-micro-machine", amount = 6},
---   {type = "item", name = "energy-control-unit", amount = 2}
+--   {type = "item", name = "sp-energy-control-unit", amount = 2}
 -- },
 -- {
 --   {type = "item", name = "imersium-plate", amount = 6},
@@ -4690,7 +4710,7 @@ data:extend({
 --   {type = "item", name = "sp-advanced-processing-unit", amount = 6},
 --   {type = "item", name = "sp-control-unit", amount = 4},
 --   {type = "item", name = "sp-micro-machine", amount = 8},
---   {type = "item", name = "energy-control-unit", amount = 3}
+--   {type = "item", name = "sp-energy-control-unit", amount = 3}
 -- },
 -- 3,
 -- 5)
@@ -4704,7 +4724,7 @@ data:extend({
 --   {type = "item", name = "sp-advanced-processing-unit", amount = 6},
 --   {type = "item", name = "sp-control-unit", amount = 3},
 --   {type = "item", name = "sp-micro-machine", amount = 12},
---   {type = "item", name = "energy-control-unit", amount = 4}
+--   {type = "item", name = "sp-energy-control-unit", amount = 4}
 -- },
 -- {
 --   {type = "item", name = "imersium-plate", amount = 6},
@@ -4714,7 +4734,7 @@ data:extend({
 --   {type = "item", name = "sp-advanced-processing-unit", amount = 8},
 --   {type = "item", name = "sp-control-unit", amount = 4},
 --   {type = "item", name = "sp-micro-machine", amount = 16},
---   {type = "item", name = "energy-control-unit", amount = 6}
+--   {type = "item", name = "sp-energy-control-unit", amount = 6}
 -- },
 -- 5,
 -- 8)
@@ -4838,25 +4858,6 @@ data:extend({
 -- 20,
 -- 40)
 
--- util.recipe.change_recipe_ingredients("kr-energy-storage",
--- {
---   {type = "item", name = "processing-unit", amount = 10},
---   {type = "item", name = "energy-control-unit", amount = 30},
---   {type = "item", name = "sp-yttrium", amount = 8},
---   {type = "item", name = "sp-cerium", amount = 20},
---   {type = "item", name = "sp-superconductor", amount = 5},
---   {type = "item", name = "sp-duralumin", amount = 20}
--- },
--- {
---   {type = "item", name = "processing-unit", amount = 20},
---   {type = "item", name = "energy-control-unit", amount = 60},
---   {type = "item", name = "sp-yttrium", amount = 12},
---   {type = "item", name = "sp-cerium", amount = 30},
---   {type = "item", name = "sp-superconductor", amount = 8},
---   {type = "item", name = "sp-duralumin", amount = 40}
--- },
--- 30,
--- 60)
 -- util.recipe.change_recipe_ingredients("kr-fusion-reactor",
 -- {
 --   {type = "item", name = "concrete", amount = 1000},
@@ -4870,7 +4871,7 @@ data:extend({
 --   {type = "item", name = "sp-plate-heat-exchanger", amount = 60},
 --   {type = "item", name = "sp-cryostat", amount = 40},
 --   {type = "item", name = "sp-neodymium-magnet", amount = 200},
---   {type = "item", name = "sp-superconductor", amount = 40},
+--   {type = "item", name = "superconductor", amount = 40},
 --   {type = "item", name = "sp-electromagnet", amount = 250},
 --   {type = "item", name = "heat-pipe", amount = 100}
 -- },
@@ -4886,7 +4887,7 @@ data:extend({
 --   {type = "item", name = "sp-plate-heat-exchanger", amount = 200},
 --   {type = "item", name = "sp-cryostat", amount = 100},
 --   {type = "item", name = "sp-neodymium-magnet", amount = 400},
---   {type = "item", name = "sp-superconductor", amount = 100},
+--   {type = "item", name = "superconductor", amount = 100},
 --   {type = "item", name = "sp-electromagnet", amount = 600},
 --   {type = "item", name = "heat-pipe", amount = 200}
 -- },
@@ -5026,7 +5027,7 @@ data:extend({
 --   {type = "item", name = "sp-rukite-plate", amount = 32},
 --   {type = "item", name = "imersium-beam", amount = 16},
 --   {type = "item", name = "sp-electrode", amount = 24},
---   {type = "item", name = "energy-control-unit", amount = 8},
+--   {type = "item", name = "sp-energy-control-unit", amount = 8},
 --   {type = "item", name = "lithium-sulfur-battery", amount = 100},
 --   {type = "item", name = "sp-advanced-processing-unit", amount = 20},
 --   {type = "item", name = "sp-plate-heat-exchanger", amount = 12},
@@ -5038,7 +5039,7 @@ data:extend({
 --   {type = "item", name = "sp-rukite-plate", amount = 48},
 --   {type = "item", name = "imersium-beam", amount = 24},
 --   {type = "item", name = "sp-electrode", amount = 48},
---   {type = "item", name = "energy-control-unit", amount = 16},
+--   {type = "item", name = "sp-energy-control-unit", amount = 16},
 --   {type = "item", name = "lithium-sulfur-battery", amount = 160},
 --   {type = "item", name = "sp-advanced-processing-unit", amount = 50},
 --   {type = "item", name = "sp-plate-heat-exchanger", amount = 24},
@@ -5126,7 +5127,7 @@ data:extend({
 --   {type = "item", name = "sp-advanced-processing-unit", amount = 60},
 --   {type = "item", name = "sp-control-unit", amount = 20},
 --   {type = "item", name = "ai-core", amount = 16},
---   {type = "item", name = "sp-superconductor", amount = 8},
+--   {type = "item", name = "superconductor", amount = 8},
 --   {type = "item", name = "sp-glass-fiber", amount = 250},
 --   {type = "item", name = "sp-cryostat", amount = 20},
 --   {type = "item", name = "sp-plate-heat-exchanger", amount = 32},
@@ -5138,7 +5139,7 @@ data:extend({
 --   {type = "item", name = "sp-advanced-processing-unit", amount = 100},
 --   {type = "item", name = "sp-control-unit", amount = 30},
 --   {type = "item", name = "ai-core", amount = 30},
---   {type = "item", name = "sp-superconductor", amount = 12},
+--   {type = "item", name = "superconductor", amount = 12},
 --   {type = "item", name = "sp-glass-fiber", amount = 400},
 --   {type = "item", name = "sp-cryostat", amount = 40},
 --   {type = "item", name = "sp-plate-heat-exchanger", amount = 60},
@@ -5175,7 +5176,7 @@ data:extend({
 -- 120)
 -- util.recipe.change_recipe_ingredients("kr-matter-plant",
 -- {
---   {type = "item", name = "energy-control-unit", amount = 20},
+--   {type = "item", name = "sp-energy-control-unit", amount = 20},
 --   {type = "item", name = "imersium-beam", amount = 80},
 --   {type = "item", name = "sp-niobium-steel", amount = 50},
 --   {type = "item", name = "rare-metals", amount = 40},
@@ -5186,7 +5187,7 @@ data:extend({
 --   {type = "item", name = "kr-black-reinforced-plate", amount = 80},
 -- },
 -- {
---   {type = "item", name = "energy-control-unit", amount = 50},
+--   {type = "item", name = "sp-energy-control-unit", amount = 50},
 --   {type = "item", name = "imersium-beam", amount = 120},
 --   {type = "item", name = "sp-niobium-steel", amount = 80},
 --   {type = "item", name = "rare-metals", amount = 50},
@@ -5200,7 +5201,7 @@ data:extend({
 -- 150)
 -- util.recipe.change_recipe_ingredients("kr-matter-assembler",
 -- {
---   {type = "item", name = "energy-control-unit", amount = 40},
+--   {type = "item", name = "sp-energy-control-unit", amount = 40},
 --   {type = "item", name = "imersium-plate", amount = 40},
 --   {type = "item", name = "sp-nitenol", amount = 40},
 --   {type = "item", name = "sp-TiNb", amount = 120},
@@ -5211,7 +5212,7 @@ data:extend({
 --   {type = "item", name = "kr-black-reinforced-plate", amount = 160},
 -- },
 -- {
---   {type = "item", name = "energy-control-unit", amount = 80},
+--   {type = "item", name = "sp-energy-control-unit", amount = 80},
 --   {type = "item", name = "imersium-plate", amount = 80},
 --   {type = "item", name = "sp-nitenol", amount = 60},
 --   {type = "item", name = "sp-TiNb", amount = 160},
@@ -5226,7 +5227,7 @@ data:extend({
 
 -- util.recipe.change_recipe_ingredients("kr-stabilizer-charging-station",
 -- {
---   {type = "item", name = "energy-control-unit", amount = 16},
+--   {type = "item", name = "sp-energy-control-unit", amount = 16},
 --   {type = "item", name = "imersium-plate", amount = 20},
 --   {type = "item", name = "ai-core", amount = 16},
 --   {type = "item", name = "sp-micro-machine", amount = 6},
@@ -5236,7 +5237,7 @@ data:extend({
 --   {type = "item", name = "kr-black-reinforced-plate", amount = 16},
 -- },
 -- {
---   {type = "item", name = "energy-control-unit", amount = 24},
+--   {type = "item", name = "sp-energy-control-unit", amount = 24},
 --   {type = "item", name = "imersium-plate", amount = 32},
 --   {type = "item", name = "ai-core", amount = 24},
 --   {type = "item", name = "sp-micro-machine", amount = 10},
