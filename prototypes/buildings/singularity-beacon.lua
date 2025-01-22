@@ -5,7 +5,7 @@ data:extend({
   {
     type = "beacon",
     name = "kr-singularity-beacon",
-    icon = kr_entities_icons_path .. "singularity-beacon.png",
+    icon = "__Spaghetorio__/graphics/krastorio/icons/entities/singularity-beacon.png",
     icon_size = 64,
     icon_mipmaps = 4,
     flags = { "placeable-player", "player-creation" },
@@ -17,12 +17,12 @@ data:extend({
     selection_box = { { -0.9, -0.9 }, { 0.9, 0.9 } },
     damaged_trigger_effect = hit_effects.entity(),
     base_picture = {
-      filename = kr_entities_path .. "singularity-beacon/singularity-beacon.png",
+      filename = "__Spaghetorio__/graphics/krastorio/entities/singularity-beacon/singularity-beacon.png",
       width = 90,
       height = 90,
       shift = util.by_pixel(0, -5),
       hr_version = {
-        filename = kr_entities_path .. "singularity-beacon/hr-singularity-beacon.png",
+        filename = "__Spaghetorio__/graphics/krastorio/entities/singularity-beacon/hr-singularity-beacon.png",
         width = 360,
         height = 360,
         shift = util.by_pixel(0, -5),
@@ -32,7 +32,7 @@ data:extend({
     animation = {
       layers = {
         {
-          filename = kr_entities_path .. "singularity-beacon/singularity-beacon-w-light.png",
+          filename = "__Spaghetorio__/graphics/krastorio/entities/singularity-beacon/singularity-beacon-w-light.png",
           width = 48,
           height = 54,
           frame_count = 10,
@@ -42,7 +42,7 @@ data:extend({
           flags = { "light" },
           animation_speed = 0.5,
           hr_version = {
-            filename = kr_entities_path .. "singularity-beacon/hr-singularity-beacon-w-light.png",
+            filename = "__Spaghetorio__/graphics/krastorio/entities/singularity-beacon/hr-singularity-beacon-w-light.png",
             width = 190,
             height = 214,
             frame_count = 10,
@@ -55,7 +55,7 @@ data:extend({
           },
         },
         {
-          filename = kr_entities_path .. "singularity-beacon/singularity-beacon-w.png",
+          filename = "__Spaghetorio__/graphics/krastorio/entities/singularity-beacon/singularity-beacon-w.png",
           width = 48,
           height = 54,
           frame_count = 10,
@@ -63,7 +63,7 @@ data:extend({
           shift = util.by_pixel(0, -11.5),
           animation_speed = 0.5,
           hr_version = {
-            filename = kr_entities_path .. "singularity-beacon/hr-singularity-beacon-w.png",
+            filename = "__Spaghetorio__/graphics/krastorio/entities/singularity-beacon/hr-singularity-beacon-w.png",
             width = 190,
             height = 214,
             frame_count = 10,
@@ -76,7 +76,7 @@ data:extend({
       },
     },
     animation_shadow = {
-      filename = kr_entities_path .. "singularity-beacon/singularity-beacon-ws.png",
+      filename = "__Spaghetorio__/graphics/krastorio/entities/singularity-beacon/singularity-beacon-ws.png",
       width = 10,
       height = 10,
       frame_count = 10,
@@ -105,7 +105,7 @@ data:extend({
 
     water_reflection = {
       pictures = {
-        filename = kr_entities_path .. "singularity-beacon/singularity-beacon-reflection.png",
+        filename = "__Spaghetorio__/graphics/krastorio/entities/singularity-beacon/singularity-beacon-reflection.png",
         priority = "extra-high",
         width = 20,
         height = 25,
@@ -119,7 +119,7 @@ data:extend({
 
     supply_area_distance = 2.0,
     distribution_effectivity = 0.75,
-    open_sound = { filename = kr_sounds_mod .. "buildings/open.ogg", volume = 1 },
-    close_sound = { filename = kr_sounds_mod .. "buildings/close.ogg", volume = 1 },
+    open_sound = { filename = "__Spaghetorio__/sounds/buildings/open.ogg", volume = 1 },
+    close_sound = { filename = "__Spaghetorio__/sounds/buildings/close.ogg", volume = 1 },
   },
 })

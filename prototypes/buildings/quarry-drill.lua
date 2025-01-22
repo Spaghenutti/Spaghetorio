@@ -21,7 +21,7 @@ data:extend({
   {
     type = "mining-drill",
     name = "kr-quarry-drill",
-    icon = kr_entities_icons_path .. "quarry-drill.png",
+    icon = "__Spaghetorio__/graphics/krastorio/icons/entities/quarry-drill.png",
     icon_size = 64,
     icon_mipmaps = 4,
     flags = { "placeable-neutral", "player-creation" },
@@ -44,7 +44,7 @@ data:extend({
     energy_source = {
       type = "electric",
       usage_priority = "secondary-input",
-      emissions_per_minute = 100,
+      emissions_per_minute = {pollution = 100},
     },
     energy_usage = "2.5MW",
     mining_speed = 10,
@@ -60,7 +60,7 @@ data:extend({
       layers = {
         {
           priority = "extra-high",
-          filename = kr_entities_path .. "quarry-drill/quarry-drill-light.png",
+          filename = "__Spaghetorio__/graphics/krastorio/entities/quarry-drill/quarry-drill-light.png",
           width = 220,
           height = 232,
           frame_count = 90,
@@ -73,7 +73,7 @@ data:extend({
           scale = 1.04,
           hr_version = {
             priority = "extra-high",
-            filename = kr_entities_path .. "quarry-drill/hr-quarry-drill-light.png",
+            filename = "__Spaghetorio__/graphics/krastorio/entities/quarry-drill/hr-quarry-drill-light.png",
             width = 440,
             height = 464,
             frame_count = 90,
@@ -88,7 +88,7 @@ data:extend({
         },
         {
           priority = "high",
-          filename = kr_entities_path .. "quarry-drill/quarry-drill.png",
+          filename = "__Spaghetorio__/graphics/krastorio/entities/quarry-drill/quarry-drill.png",
           width = 220,
           height = 232,
           frame_count = 90,
@@ -98,7 +98,7 @@ data:extend({
           scale = 1.04,
           hr_version = {
             priority = "high",
-            filename = kr_entities_path .. "quarry-drill/hr-quarry-drill.png",
+            filename = "__Spaghetorio__/graphics/krastorio/entities/quarry-drill/hr-quarry-drill.png",
             width = 440,
             height = 464,
             frame_count = 90,
@@ -110,7 +110,7 @@ data:extend({
         },
         {
           priority = "medium",
-          filename = kr_entities_path .. "quarry-drill/quarry-drill-sh.png",
+          filename = "__Spaghetorio__/graphics/krastorio/entities/quarry-drill/quarry-drill-sh.png",
           width = 250,
           height = 211,
           frame_count = 1,
@@ -121,7 +121,7 @@ data:extend({
           scale = 1.04,
           hr_version = {
             priority = "medium",
-            filename = kr_entities_path .. "quarry-drill/hr-quarry-drill-sh.png",
+            filename = "__Spaghetorio__/graphics/krastorio/entities/quarry-drill/hr-quarry-drill-sh.png",
             width = 500,
             height = 422,
             frame_count = 1,
@@ -137,7 +137,7 @@ data:extend({
     vehicle_impact_sound = sounds.generic_impact,
     working_sound = {
       sound = {
-        filename = kr_buildings_sounds_path .. "quarry-drill.ogg",
+        filename = "__Spaghetorio__/sounds/buildings/quarry-drill.ogg",
         volume = 0.5,
       },
       idle_sound = { filename = "__base__/sound/idle1.ogg" },

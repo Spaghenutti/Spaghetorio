@@ -5,7 +5,7 @@ data:extend({
   {
     type = "accumulator",
     name = "kr-energy-storage",
-    icon = kr_entities_icons_path .. "energy-storage.png",
+    icon = "__Spaghetorio__/graphics/krastorio/icons/entities/energy-storage.png",
     icon_size = 64,
     icon_mipmaps = 4,
     flags = { "placeable-neutral", "placeable-player", "player-creation", "not-rotatable" },
@@ -32,14 +32,14 @@ data:extend({
     picture = {
       layers = {
         {
-          filename = kr_entities_path .. "energy-storage/energy-storage.png",
+          filename = "__Spaghetorio__/graphics/krastorio/entities/energy-storage/energy-storage.png",
           width = 190,
           height = 190,
           frame_count = 1,
           scale = 1.1,
           shift = { 0, -0.4 },
           hr_version = {
-            filename = kr_entities_path .. "energy-storage/hr-energy-storage.png",
+            filename = "__Spaghetorio__/graphics/krastorio/entities/energy-storage/hr-energy-storage.png",
             width = 380,
             height = 380,
             scale = 0.55,
@@ -48,7 +48,7 @@ data:extend({
           },
         },
         {
-          filename = kr_entities_path .. "energy-storage/energy-storage-sh.png",
+          filename = "__Spaghetorio__/graphics/krastorio/entities/energy-storage/energy-storage-sh.png",
           width = 207,
           height = 135,
           frame_count = 1,
@@ -56,7 +56,7 @@ data:extend({
           scale = 1.1,
           shift = { 0.72, 0.56 },
           hr_version = {
-            filename = kr_entities_path .. "energy-storage/hr-energy-storage-sh.png",
+            filename = "__Spaghetorio__/graphics/krastorio/entities/energy-storage/hr-energy-storage-sh.png",
             width = 414,
             height = 270,
             scale = 0.55,
@@ -70,7 +70,7 @@ data:extend({
     charge_animation = {
       layers = {
         {
-          filename = kr_entities_path .. "energy-storage/energy-storage.png",
+          filename = "__Spaghetorio__/graphics/krastorio/entities/energy-storage/energy-storage.png",
           width = 190,
           height = 190,
           frame_count = 1,
@@ -79,7 +79,7 @@ data:extend({
           scale = 1.1,
           shift = { 0, -0.4 },
           hr_version = {
-            filename = kr_entities_path .. "energy-storage/hr-energy-storage.png",
+            filename = "__Spaghetorio__/graphics/krastorio/entities/energy-storage/hr-energy-storage.png",
             width = 380,
             height = 380,
             scale = 0.55,
@@ -90,7 +90,7 @@ data:extend({
           },
         },
         {
-          filename = kr_entities_path .. "energy-storage/energy-storage-sh.png",
+          filename = "__Spaghetorio__/graphics/krastorio/entities/energy-storage/energy-storage-sh.png",
           width = 207,
           height = 135,
           frame_count = 1,
@@ -100,7 +100,7 @@ data:extend({
           scale = 1.1,
           shift = { 0.72, 0.56 },
           hr_version = {
-            filename = kr_entities_path .. "energy-storage/hr-energy-storage-sh.png",
+            filename = "__Spaghetorio__/graphics/krastorio/entities/energy-storage/hr-energy-storage-sh.png",
             width = 414,
             height = 270,
             scale = 0.55,
@@ -112,7 +112,7 @@ data:extend({
           },
         },
         {
-          filename = kr_entities_path .. "energy-storage/energy-storage-charge.png",
+          filename = "__Spaghetorio__/graphics/krastorio/entities/energy-storage/energy-storage-charge.png",
           width = 190,
           height = 190,
           frame_count = 2,
@@ -122,7 +122,7 @@ data:extend({
           shift = { 0, -0.4 },
           draw_as_glow = true,
           hr_version = {
-            filename = kr_entities_path .. "energy-storage/hr-energy-storage-charge.png",
+            filename = "__Spaghetorio__/graphics/krastorio/entities/energy-storage/hr-energy-storage-charge.png",
             width = 380,
             height = 380,
             scale = 0.55,
@@ -134,7 +134,7 @@ data:extend({
           },
         },
         {
-          filename = kr_entities_path .. "energy-storage/energy-storage-light.png",
+          filename = "__Spaghetorio__/graphics/krastorio/entities/energy-storage/energy-storage-light.png",
           width = 190,
           height = 190,
           frame_count = 1,
@@ -144,7 +144,7 @@ data:extend({
           shift = { 0, -0.4 },
           draw_as_light = true,
           hr_version = {
-            filename = kr_entities_path .. "energy-storage/hr-energy-storage-light.png",
+            filename = "__Spaghetorio__/graphics/krastorio/entities/energy-storage/hr-energy-storage-light.png",
             width = 380,
             height = 380,
             scale = 0.55,
@@ -160,7 +160,7 @@ data:extend({
     discharge_animation = {
       layers = {
         {
-          filename = kr_entities_path .. "energy-storage/energy-storage.png",
+          filename = "__Spaghetorio__/graphics/krastorio/entities/energy-storage/energy-storage.png",
           width = 190,
           height = 190,
           frame_count = 1,
@@ -169,7 +169,7 @@ data:extend({
           scale = 1.1,
           shift = { 0, -0.4 },
           hr_version = {
-            filename = kr_entities_path .. "energy-storage/hr-energy-storage.png",
+            filename = "__Spaghetorio__/graphics/krastorio/entities/energy-storage/hr-energy-storage.png",
             width = 380,
             height = 380,
             scale = 0.55,
@@ -180,7 +180,7 @@ data:extend({
           },
         },
         {
-          filename = kr_entities_path .. "energy-storage/energy-storage-sh.png",
+          filename = "__Spaghetorio__/graphics/krastorio/entities/energy-storage/energy-storage-sh.png",
           width = 207,
           height = 135,
           frame_count = 1,
@@ -190,7 +190,7 @@ data:extend({
           scale = 1.1,
           shift = { 0.72, 0.56 },
           hr_version = {
-            filename = kr_entities_path .. "energy-storage/hr-energy-storage-sh.png",
+            filename = "__Spaghetorio__/graphics/krastorio/entities/energy-storage/hr-energy-storage-sh.png",
             width = 414,
             height = 270,
             scale = 0.55,
@@ -202,7 +202,7 @@ data:extend({
           },
         },
         {
-          filename = kr_entities_path .. "energy-storage/energy-storage-discharge.png",
+          filename = "__Spaghetorio__/graphics/krastorio/entities/energy-storage/energy-storage-discharge.png",
           width = 190,
           height = 190,
           frame_count = 2,
@@ -212,7 +212,7 @@ data:extend({
           shift = { 0, -0.4 },
           draw_as_glow = true,
           hr_version = {
-            filename = kr_entities_path .. "energy-storage/hr-energy-storage-discharge.png",
+            filename = "__Spaghetorio__/graphics/krastorio/entities/energy-storage/hr-energy-storage-discharge.png",
             width = 380,
             height = 380,
             scale = 0.55,
@@ -224,7 +224,7 @@ data:extend({
           },
         },
         {
-          filename = kr_entities_path .. "energy-storage/energy-storage-light.png",
+          filename = "__Spaghetorio__/graphics/krastorio/entities/energy-storage/energy-storage-light.png",
           width = 190,
           height = 190,
           frame_count = 1,
@@ -234,7 +234,7 @@ data:extend({
           shift = { 0, -0.4 },
           draw_as_light = true,
           hr_version = {
-            filename = kr_entities_path .. "energy-storage/hr-energy-storage-light.png",
+            filename = "__Spaghetorio__/graphics/krastorio/entities/energy-storage/hr-energy-storage-light.png",
             width = 380,
             height = 380,
             scale = 0.55,
@@ -266,7 +266,7 @@ data:extend({
     vehicle_impact_sound = sounds.generic_impact,
     working_sound = {
       sound = {
-        filename = kr_buildings_sounds_path .. "energy-storage-working.ogg",
+        filename = "__Spaghetorio__/sounds/buildings/energy-storage-working.ogg",
         volume = 0.9,
       },
       idle_sound = {
@@ -280,7 +280,7 @@ data:extend({
 
     water_reflection = {
       pictures = {
-        filename = kr_entities_path .. "energy-storage/energy-storage-reflection.png",
+        filename = "__Spaghetorio__/graphics/krastorio/entities/energy-storage/energy-storage-reflection.png",
         priority = "extra-high",
         width = 44,
         height = 44,

@@ -17,7 +17,7 @@ if krastorio.general.getSafeSettingValue("kr-loaders") then
   function createKrastorioLoader(data)
     local name = data.name
     local speed = data.speed
-    local icon = data.icon or kr_entities_icons_path .. "loaders/" .. name .. ".png"
+    local icon = data.icon or "__Spaghetorio__/graphics/krastorio/icons/entities/loaders/" .. name .. ".png"
     local icon_size = data.icon_size or 64
     local icon_mipmaps = data.icon_mipmaps or 4
     local belt_animation_set = data.belt_animation_set
@@ -27,14 +27,14 @@ if krastorio.general.getSafeSettingValue("kr-loaders") then
     local rust_layer_direction_in, rust_layer_direction_out = nil, nil
     if data.apply_rust ~= false then
       rust_layer_direction_in = {
-        filename = kr_entities_path .. "loader/kr-loader-rust.png",
+        filename = "__Spaghetorio__/graphics/krastorio/entities/loader/kr-loader-rust.png",
         priority = "extra-high",
         shift = { 0.15625, 0.0703125 },
         width = 53,
         height = 43,
         y = 43,
         hr_version = {
-          filename = kr_entities_path .. "loader/hr-kr-loader-rust.png",
+          filename = "__Spaghetorio__/graphics/krastorio/entities/loader/hr-kr-loader-rust.png",
           priority = "extra-high",
           shift = { 0.15625, 0.0703125 },
           width = 106,
@@ -44,13 +44,13 @@ if krastorio.general.getSafeSettingValue("kr-loaders") then
         },
       }
       rust_layer_direction_out = {
-        filename = kr_entities_path .. "loader/kr-loader-rust.png",
+        filename = "__Spaghetorio__/graphics/krastorio/entities/loader/kr-loader-rust.png",
         priority = "extra-high",
         shift = { 0.15625, 0.0703125 },
         width = 53,
         height = 43,
         hr_version = {
-          filename = kr_entities_path .. "loader/hr-kr-loader-rust.png",
+          filename = "__Spaghetorio__/graphics/krastorio/entities/loader/hr-kr-loader-rust.png",
           priority = "extra-high",
           shift = { 0.15625, 0.0703125 },
           width = 106,
@@ -102,14 +102,14 @@ if krastorio.general.getSafeSettingValue("kr-loaders") then
         direction_in = {
           sheets = {
             {
-              filename = kr_entities_path .. "loader/kr-loader.png",
+              filename = "__Spaghetorio__/graphics/krastorio/entities/loader/kr-loader.png",
               priority = "extra-high",
               shift = { 0.15625, 0.0703125 },
               width = 53,
               height = 43,
               y = 43,
               hr_version = {
-                filename = kr_entities_path .. "loader/hr-kr-loader.png",
+                filename = "__Spaghetorio__/graphics/krastorio/entities/loader/hr-kr-loader.png",
                 priority = "extra-high",
                 shift = { 0.15625, 0.0703125 },
                 width = 106,
@@ -119,7 +119,7 @@ if krastorio.general.getSafeSettingValue("kr-loaders") then
               },
             },
             {
-              filename = kr_entities_path .. "loader/kr-loader-mask.png",
+              filename = "__Spaghetorio__/graphics/krastorio/entities/loader/kr-loader-mask.png",
               priority = "extra-high",
               shift = { 0.15625, 0.0703125 },
               width = 53,
@@ -127,7 +127,7 @@ if krastorio.general.getSafeSettingValue("kr-loaders") then
               y = 43,
               tint = loader_tint,
               hr_version = {
-                filename = kr_entities_path .. "loader/hr-kr-loader-mask.png",
+                filename = "__Spaghetorio__/graphics/krastorio/entities/loader/hr-kr-loader-mask.png",
                 priority = "extra-high",
                 shift = { 0.15625, 0.0703125 },
                 width = 106,
@@ -143,13 +143,13 @@ if krastorio.general.getSafeSettingValue("kr-loaders") then
         direction_out = {
           sheets = {
             {
-              filename = kr_entities_path .. "loader/kr-loader.png",
+              filename = "__Spaghetorio__/graphics/krastorio/entities/loader/kr-loader.png",
               priority = "extra-high",
               shift = { 0.15625, 0.0703125 },
               width = 53,
               height = 43,
               hr_version = {
-                filename = kr_entities_path .. "loader/hr-kr-loader.png",
+                filename = "__Spaghetorio__/graphics/krastorio/entities/loader/hr-kr-loader.png",
                 priority = "extra-high",
                 shift = { 0.15625, 0.0703125 },
                 width = 106,
@@ -158,14 +158,14 @@ if krastorio.general.getSafeSettingValue("kr-loaders") then
               },
             },
             {
-              filename = kr_entities_path .. "loader/kr-loader-mask.png",
+              filename = "__Spaghetorio__/graphics/krastorio/entities/loader/kr-loader-mask.png",
               priority = "extra-high",
               shift = { 0.15625, 0.0703125 },
               width = 53,
               height = 43,
               tint = loader_tint,
               hr_version = {
-                filename = kr_entities_path .. "loader/hr-kr-loader-mask.png",
+                filename = "__Spaghetorio__/graphics/krastorio/entities/loader/hr-kr-loader-mask.png",
                 priority = "extra-high",
                 shift = { 0.15625, 0.0703125 },
                 width = 106,

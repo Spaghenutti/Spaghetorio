@@ -17,7 +17,7 @@ data:extend({
     {
       count = 2,
       ingredients = {
-        {"basic-tech-card", 1}
+        {type = "item", name = "basic-tech-card", amount = 1}
       },
       time = 15
     },
@@ -51,7 +51,7 @@ data:extend({
     {
       count = 2,
       ingredients = {
-        {"basic-tech-card", 1}
+        {type = "item", name = "basic-tech-card", amount = 1}
       },
       time = 15
     },
@@ -76,8 +76,8 @@ data:extend({
     {
       count = 5,
       ingredients = {
-        {"basic-tech-card", 1},
-        {"automation-science-pack", 1}
+        {type = "item", name = "basic-tech-card", amount = 1},
+        {type = "item", name = "automation-science-pack", amount = 1}
       },
       time = 15
     },
@@ -105,8 +105,8 @@ data:extend({
     {
       count = 10,
       ingredients = {
-        {"basic-tech-card", 1},
-        {"automation-science-pack", 1}
+        {type = "item", name = "basic-tech-card", amount = 1},
+        {type = "item", name = "automation-science-pack", amount = 1}
       },
       time = 15
     },
@@ -131,7 +131,7 @@ data:extend({
     {
       count = 10,
       ingredients = {
-        {"automation-science-pack", 1}
+        {type = "item", name = "automation-science-pack", amount = 1}
       },
       time = 15
     },
@@ -156,7 +156,7 @@ data:extend({
     {
       count = 25,
       ingredients = {
-        {"automation-science-pack", 1}
+        {type = "item", name = "automation-science-pack", amount = 1}
       },
       time = 15
     },
@@ -190,7 +190,7 @@ data:extend({
     {
       count = 50,
       ingredients = {
-        {"automation-science-pack", 1}
+        {type = "item", name = "automation-science-pack", amount = 1}
       },
       time = 15
     },
@@ -219,9 +219,9 @@ data:extend({
     {
       count = 100,
       ingredients = {
-        {"basic-tech-card", 1},
-        {"automation-science-pack", 1},
-        {"logistic-science-pack", 1}
+        {type = "item", name = "basic-tech-card", amount = 1},
+        {type = "item", name = "automation-science-pack", amount = 1},
+        {type = "item", name = "logistic-science-pack", amount = 1}
       },
       time = 15
     },
@@ -248,9 +248,9 @@ data:extend({
     {
       count = 100,
       ingredients = {
-        {"basic-tech-card", 1},
-        {"automation-science-pack", 1},
-        {"logistic-science-pack", 1}
+        {type = "item", name = "basic-tech-card", amount = 1},
+        {type = "item", name = "automation-science-pack", amount = 1},
+        {type = "item", name = "logistic-science-pack", amount = 1}
       },
       time = 15
     },
@@ -275,12 +275,12 @@ data:extend({
     {
       count = 100,
       ingredients = {
-        {"basic-tech-card", 1},
-        {"automation-science-pack", 1},
-        {"logistic-science-pack", 1},
-        {"chemical-science-pack", 1},
-        {"sp-electronic-science-pack-1", 1},
-        {"sp-material-science-pack-1", 1}
+        {type = "item", name = "basic-tech-card", amount = 1},
+        {type = "item", name = "automation-science-pack", amount = 1},
+        {type = "item", name = "logistic-science-pack", amount = 1},
+        {type = "item", name = "chemical-science-pack", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-1", amount = 1},
+        {type = "item", name = "sp-material-science-pack-1", amount = 1}
       },
       time = 15
     },
@@ -342,11 +342,11 @@ data:extend({
     {
       count = 200,
       ingredients = {
-        {"basic-tech-card", 1},
-        {"automation-science-pack", 1},
-        {"logistic-science-pack", 1},
-        {"sp-geological-science-pack-1", 1},
-        {"sp-material-science-pack-1", 1}
+        {type = "item", name = "basic-tech-card", amount = 1},
+        {type = "item", name = "automation-science-pack", amount = 1},
+        {type = "item", name = "logistic-science-pack", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-1", amount = 1},
+        {type = "item", name = "sp-material-science-pack-1", amount = 1}
       },
       time = 15
     },
@@ -375,8 +375,8 @@ data:extend({
     {
       count = 50,
       ingredients = {
-        {"basic-tech-card", 1},
-        {"automation-science-pack", 1}
+        {type = "item", name = "basic-tech-card", amount = 1},
+        {type = "item", name = "automation-science-pack", amount = 1}
       },
       time = 15
     },
@@ -415,11 +415,11 @@ data:extend({
     {
       count = 100,
       ingredients = {
-        {"automation-science-pack", 1},
-        {"logistic-science-pack", 1},
-        {"chemical-science-pack", 1},
-        {"sp-material-science-pack-1", 1},
-        {"sp-geological-science-pack-1", 1}
+        {type = "item", name = "automation-science-pack", amount = 1},
+        {type = "item", name = "logistic-science-pack", amount = 1},
+        {type = "item", name = "chemical-science-pack", amount = 1},
+        {type = "item", name = "sp-material-science-pack-1", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-1", amount = 1}
       },
       time = 15
     },
@@ -444,11 +444,11 @@ data:extend({
     {
       count = 75,
       ingredients = {
-        {"automation-science-pack", 1},
-        {"logistic-science-pack", 1},
-        {"chemical-science-pack", 1},
-        {"sp-material-science-pack-1", 1},
-        {"sp-geological-science-pack-1", 1}
+        {type = "item", name = "automation-science-pack", amount = 1},
+        {type = "item", name = "logistic-science-pack", amount = 1},
+        {type = "item", name = "chemical-science-pack", amount = 1},
+        {type = "item", name = "sp-material-science-pack-1", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-1", amount = 1}
       },
       time = 15
     },
@@ -479,12 +479,12 @@ data:extend({
     {
       count = 1000,
       ingredients = {
-        {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"sp-material-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1},
-        {"utility-science-pack", 1},
-        {"production-science-pack", 1}
+        {type = "item", name = "sp-automation-science-pack-2", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-2", amount = 1},
+        {type = "item", name = "sp-material-science-pack-2", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-2", amount = 1},
+        {type = "item", name = "utility-science-pack", amount = 1},
+        {type = "item", name = "production-science-pack", amount = 1}
       },
       time = 15
     },
@@ -519,12 +519,12 @@ data:extend({
     {
       count = 50,
       ingredients = {
-        {"basic-tech-card", 1},
-        {"automation-science-pack", 1},
-        {"logistic-science-pack", 1},
-        {"chemical-science-pack", 1},
-        {"sp-material-science-pack-1", 1},
-        {"sp-geological-science-pack-1", 1}
+        {type = "item", name = "basic-tech-card", amount = 1},
+        {type = "item", name = "automation-science-pack", amount = 1},
+        {type = "item", name = "logistic-science-pack", amount = 1},
+        {type = "item", name = "chemical-science-pack", amount = 1},
+        {type = "item", name = "sp-material-science-pack-1", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-1", amount = 1}
       },
       time = 15
     },
@@ -553,12 +553,12 @@ data:extend({
     {
       count = 100,
       ingredients = {
-        {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"sp-material-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1},
-        {"sp-geological-science-pack-2", 1},
-        {"production-science-pack", 1}
+        {type = "item", name = "sp-automation-science-pack-2", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-2", amount = 1},
+        {type = "item", name = "sp-material-science-pack-2", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-2", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-2", amount = 1},
+        {type = "item", name = "production-science-pack", amount = 1}
       },
       time = 15
     },
@@ -600,12 +600,12 @@ data:extend({
     {
       count = 300,
       ingredients = {
-        {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"chemical-science-pack", 1},
-        {"sp-material-science-pack-1", 1},
-        {"production-science-pack", 1},
-        {"sp-geological-science-pack-1", 1}
+        {type = "item", name = "sp-automation-science-pack-2", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-2", amount = 1},
+        {type = "item", name = "chemical-science-pack", amount = 1},
+        {type = "item", name = "sp-material-science-pack-1", amount = 1},
+        {type = "item", name = "production-science-pack", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-1", amount = 1}
       },
       time = 15
     },
@@ -635,11 +635,11 @@ data:extend({
     {
       count = 500,
       ingredients = {
-        {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"chemical-science-pack", 1},
-        {"production-science-pack", 1},
-        {"sp-material-science-pack-2", 1}
+        {type = "item", name = "sp-automation-science-pack-2", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-2", amount = 1},
+        {type = "item", name = "chemical-science-pack", amount = 1},
+        {type = "item", name = "production-science-pack", amount = 1},
+        {type = "item", name = "sp-material-science-pack-2", amount = 1}
       },
       time = 15
     },
@@ -673,12 +673,12 @@ data:extend({
     {
       count = 300,
       ingredients = {
-        {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"chemical-science-pack", 1},
-        {"sp-geological-science-pack-2", 1},
-        {"sp-material-science-pack-2", 1},
-        {"production-science-pack", 1}
+        {type = "item", name = "sp-automation-science-pack-2", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-2", amount = 1},
+        {type = "item", name = "chemical-science-pack", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-2", amount = 1},
+        {type = "item", name = "sp-material-science-pack-2", amount = 1},
+        {type = "item", name = "production-science-pack", amount = 1}
       },
       time = 15
     },
@@ -710,13 +710,13 @@ data:extend({
     {
       count = 1000,
       ingredients = {
-        {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1},
-        {"sp-geological-science-pack-2", 1},
-        {"sp-material-science-pack-2", 1},
-        {"production-science-pack", 1},
-        {"utility-science-pack", 1}
+        {type = "item", name = "sp-automation-science-pack-2", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-2", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-2", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-2", amount = 1},
+        {type = "item", name = "sp-material-science-pack-2", amount = 1},
+        {type = "item", name = "production-science-pack", amount = 1},
+        {type = "item", name = "utility-science-pack", amount = 1}
       },
       time = 15
     },
@@ -742,14 +742,14 @@ data:extend({
     {
       count = 300,
       ingredients = {
-        {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"sp-material-science-pack-2", 1},
-        {"sp-geological-science-pack-2", 1},
-        {"sp-electronic-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1},
-        {"production-science-pack", 1},
-        {"utility-science-pack", 1},
+        {type = "item", name = "sp-automation-science-pack-2", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-2", amount = 1},
+        {type = "item", name = "sp-material-science-pack-2", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-2", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-2", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-2", amount = 1},
+        {type = "item", name = "production-science-pack", amount = 1},
+        {type = "item", name = "utility-science-pack", amount = 1},
       },
       time = 15
     },
@@ -784,12 +784,12 @@ data:extend({
     {
       count = 200,
       ingredients = {
-        {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"sp-electronic-science-pack-1", 1},
-        {"chemical-science-pack", 1},
-        {"sp-geological-science-pack-2", 1},
-        {"sp-material-science-pack-2", 1}
+        {type = "item", name = "sp-automation-science-pack-2", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-2", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-1", amount = 1},
+        {type = "item", name = "chemical-science-pack", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-2", amount = 1},
+        {type = "item", name = "sp-material-science-pack-2", amount = 1}
       },
       time = 15
     },
@@ -834,11 +834,11 @@ data:extend({
     {
       count = 750,
       ingredients = {
-        {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"sp-material-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1},
-        {"sp-geological-science-pack-2", 1}
+        {type = "item", name = "sp-automation-science-pack-2", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-2", amount = 1},
+        {type = "item", name = "sp-material-science-pack-2", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-2", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-2", amount = 1}
       },
       time = 15
     },
@@ -880,12 +880,12 @@ data:extend({
     {
       count = 300,
       ingredients = {
-        {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"sp-material-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1},
-        {"sp-geological-science-pack-2", 1},
-        {"production-science-pack", 1}
+        {type = "item", name = "sp-automation-science-pack-2", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-2", amount = 1},
+        {type = "item", name = "sp-material-science-pack-2", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-2", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-2", amount = 1},
+        {type = "item", name = "production-science-pack", amount = 1}
       },
       time = 15
     },
@@ -929,11 +929,11 @@ data:extend({
     {
       count = 200,
       ingredients = {
-        {"basic-tech-card", 1},
-        {"automation-science-pack", 1},
-        {"logistic-science-pack", 1},
-        {"sp-material-science-pack-1", 1},
-        {"sp-geological-science-pack-1", 1}
+        {type = "item", name = "basic-tech-card", amount = 1},
+        {type = "item", name = "automation-science-pack", amount = 1},
+        {type = "item", name = "logistic-science-pack", amount = 1},
+        {type = "item", name = "sp-material-science-pack-1", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-1", amount = 1}
       },
       time = 15
     },
@@ -980,11 +980,11 @@ data:extend({
     {
       count = 500,
       ingredients = {
-        {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"sp-material-science-pack-2", 1},
-        {"chemical-science-pack", 1},
-        {"sp-geological-science-pack-2", 1}
+        {type = "item", name = "sp-automation-science-pack-2", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-2", amount = 1},
+        {type = "item", name = "sp-material-science-pack-2", amount = 1},
+        {type = "item", name = "chemical-science-pack", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-2", amount = 1}
       },
       time = 15
     },
@@ -1027,10 +1027,10 @@ data:extend({
     {
       count = 100,
       ingredients = {
-        {"basic-tech-card", 1},
-        {"automation-science-pack", 1},
-        {"logistic-science-pack", 1},
-        {"sp-material-science-pack-1", 1}
+        {type = "item", name = "basic-tech-card", amount = 1},
+        {type = "item", name = "automation-science-pack", amount = 1},
+        {type = "item", name = "logistic-science-pack", amount = 1},
+        {type = "item", name = "sp-material-science-pack-1", amount = 1}
       },
       time = 15
     },
@@ -1063,13 +1063,13 @@ data:extend({
     {
       count = 500,
       ingredients = {
-        {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"sp-electronic-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1},
-        {"sp-geological-science-pack-2", 1},
-        {"sp-material-science-pack-2", 1},
-        {"production-science-pack", 1}
+        {type = "item", name = "sp-automation-science-pack-2", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-2", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-2", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-2", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-2", amount = 1},
+        {type = "item", name = "sp-material-science-pack-2", amount = 1},
+        {type = "item", name = "production-science-pack", amount = 1}
       },
       time = 15
     },
@@ -1092,11 +1092,11 @@ data:extend({
     {
       count = 500,
       ingredients = {
-        {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"sp-material-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1},
-        {"production-science-pack", 1}
+        {type = "item", name = "sp-automation-science-pack-2", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-2", amount = 1},
+        {type = "item", name = "sp-material-science-pack-2", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-2", amount = 1},
+        {type = "item", name = "production-science-pack", amount = 1}
       },
       time = 15
     },
@@ -1128,12 +1128,12 @@ data:extend({
     {
       count = 1000,
       ingredients = {
-        {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"sp-material-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1},
-        {"sp-geological-science-pack-2", 1},
-        {"production-science-pack", 1}
+        {type = "item", name = "sp-automation-science-pack-2", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-2", amount = 1},
+        {type = "item", name = "sp-material-science-pack-2", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-2", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-2", amount = 1},
+        {type = "item", name = "production-science-pack", amount = 1}
       },
       time = 15
     },
@@ -1165,12 +1165,12 @@ data:extend({
     {
       count = 600,
       ingredients = {
-        {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"sp-material-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1},
-        {"production-science-pack", 1},
-        {"utility-science-pack", 1}
+        {type = "item", name = "sp-automation-science-pack-2", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-2", amount = 1},
+        {type = "item", name = "sp-material-science-pack-2", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-2", amount = 1},
+        {type = "item", name = "production-science-pack", amount = 1},
+        {type = "item", name = "utility-science-pack", amount = 1}
       },
       time = 15
     },
@@ -1195,11 +1195,11 @@ data:extend({
     {
       count = 100,
       ingredients = {
-        {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"sp-material-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1},
-        {"production-science-pack", 1}
+        {type = "item", name = "sp-automation-science-pack-2", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-2", amount = 1},
+        {type = "item", name = "sp-material-science-pack-2", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-2", amount = 1},
+        {type = "item", name = "production-science-pack", amount = 1}
       },
       time = 15
     },
@@ -1222,11 +1222,11 @@ data:extend({
     {
       count = 100,
       ingredients = {
-        {"automation-science-pack", 1},
-        {"logistic-science-pack", 1},
-        {"chemical-science-pack", 1},
-        {"sp-material-science-pack-1", 1},
-        {"sp-geological-science-pack-1", 1}
+        {type = "item", name = "automation-science-pack", amount = 1},
+        {type = "item", name = "logistic-science-pack", amount = 1},
+        {type = "item", name = "chemical-science-pack", amount = 1},
+        {type = "item", name = "sp-material-science-pack-1", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-1", amount = 1}
       },
       time = 15
     },
@@ -1251,10 +1251,10 @@ data:extend({
     {
       count = 150,
       ingredients = {
-        {"automation-science-pack", 1},
-        {"logistic-science-pack", 1},
-        {"sp-material-science-pack-1", 1},
-        {"chemical-science-pack", 1}
+        {type = "item", name = "automation-science-pack", amount = 1},
+        {type = "item", name = "logistic-science-pack", amount = 1},
+        {type = "item", name = "sp-material-science-pack-1", amount = 1},
+        {type = "item", name = "chemical-science-pack", amount = 1}
       },
       time = 15
     },
@@ -1282,11 +1282,11 @@ data:extend({
     {
       count = 100,
       ingredients = {
-        {"automation-science-pack", 1},
-        {"logistic-science-pack", 1},
-        {"sp-material-science-pack-1", 1},
-        {"sp-electronic-science-pack-1", 1},
-        {"chemical-science-pack", 1}
+        {type = "item", name = "automation-science-pack", amount = 1},
+        {type = "item", name = "logistic-science-pack", amount = 1},
+        {type = "item", name = "sp-material-science-pack-1", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-1", amount = 1},
+        {type = "item", name = "chemical-science-pack", amount = 1}
       },
       time = 15
     },
@@ -1309,11 +1309,11 @@ data:extend({
     {
       count = 250,
       ingredients = {
-        {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1},
-        {"sp-material-science-pack-2", 1},
-        {"production-science-pack", 1}
+        {type = "item", name = "sp-automation-science-pack-2", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-2", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-2", amount = 1},
+        {type = "item", name = "sp-material-science-pack-2", amount = 1},
+        {type = "item", name = "production-science-pack", amount = 1}
       },
       time = 15
     },
@@ -1348,11 +1348,11 @@ data:extend({
     {
       count = 200,
       ingredients = {
-        {"sp-automation-science-pack-2", 1},
-        {"logistic-science-pack", 1},
-        {"sp-material-science-pack-2", 1},
-        {"sp-geological-science-pack-1", 1},
-        {"chemical-science-pack", 1}
+        {type = "item", name = "sp-automation-science-pack-2", amount = 1},
+        {type = "item", name = "logistic-science-pack", amount = 1},
+        {type = "item", name = "sp-material-science-pack-2", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-1", amount = 1},
+        {type = "item", name = "chemical-science-pack", amount = 1}
       },
       time = 15
     },
@@ -1375,12 +1375,12 @@ data:extend({
     {
       count = 50,
       ingredients = {
-        {"basic-tech-card", 1},
-        {"automation-science-pack", 1},
-        {"logistic-science-pack", 1},
-        {"sp-material-science-pack-1", 1},
-        {"sp-geological-science-pack-1", 1},
-        {"chemical-science-pack", 1}
+        {type = "item", name = "basic-tech-card", amount = 1},
+        {type = "item", name = "automation-science-pack", amount = 1},
+        {type = "item", name = "logistic-science-pack", amount = 1},
+        {type = "item", name = "sp-material-science-pack-1", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-1", amount = 1},
+        {type = "item", name = "chemical-science-pack", amount = 1}
       },
       time = 15
     },
@@ -1411,12 +1411,12 @@ data:extend({
     {
       count = 200,
       ingredients = {
-        {"basic-tech-card", 1},
-        {"automation-science-pack", 1},
-        {"logistic-science-pack", 1},
-        {"sp-material-science-pack-1", 1},
-        {"sp-geological-science-pack-1", 1},
-        {"chemical-science-pack", 1}
+        {type = "item", name = "basic-tech-card", amount = 1},
+        {type = "item", name = "automation-science-pack", amount = 1},
+        {type = "item", name = "logistic-science-pack", amount = 1},
+        {type = "item", name = "sp-material-science-pack-1", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-1", amount = 1},
+        {type = "item", name = "chemical-science-pack", amount = 1}
       },
       time = 15
     },
@@ -1456,12 +1456,12 @@ data:extend({
     {
       count = 500,
       ingredients = {
-        {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"sp-material-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1},
-        {"sp-electronic-science-pack-2", 1},
-        {"production-science-pack", 1}
+        {type = "item", name = "sp-automation-science-pack-2", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-2", amount = 1},
+        {type = "item", name = "sp-material-science-pack-2", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-2", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-2", amount = 1},
+        {type = "item", name = "production-science-pack", amount = 1}
       },
       time = 15
     },
@@ -1504,11 +1504,11 @@ data:extend({
     {
       count = 100,
       ingredients = {
-        {"automation-science-pack", 1},
-        {"logistic-science-pack", 1},
-        {"chemical-science-pack", 1},
-        {"sp-material-science-pack-1", 1},
-        {"sp-electronic-science-pack-1", 1}
+        {type = "item", name = "automation-science-pack", amount = 1},
+        {type = "item", name = "logistic-science-pack", amount = 1},
+        {type = "item", name = "chemical-science-pack", amount = 1},
+        {type = "item", name = "sp-material-science-pack-1", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-1", amount = 1}
       },
       time = 15
     },
@@ -1539,12 +1539,12 @@ data:extend({
     {
       count = 500,
       ingredients = {
-        {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"sp-material-science-pack-2", 1},
-        {"sp-electronic-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1},
-        {"production-science-pack", 1}
+        {type = "item", name = "sp-automation-science-pack-2", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-2", amount = 1},
+        {type = "item", name = "sp-material-science-pack-2", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-2", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-2", amount = 1},
+        {type = "item", name = "production-science-pack", amount = 1}
       },
       time = 15
     },
@@ -1569,14 +1569,14 @@ data:extend({
     {
       count = 250,
       ingredients = {
-        {"sp-automation-science-pack-3", 1},
-        {"sp-logistic-science-pack-3", 1},
-        {"sp-material-science-pack-2", 1},
-        {"sp-electronic-science-pack-3", 1},
-        {"sp-chemical-science-pack-2", 1},
-        {"production-science-pack", 1},
-        {"utility-science-pack", 1},
-        {"sp-computer-science-pack-2", 1}
+        {type = "item", name = "sp-automation-science-pack-3", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-material-science-pack-2", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-2", amount = 1},
+        {type = "item", name = "production-science-pack", amount = 1},
+        {type = "item", name = "utility-science-pack", amount = 1},
+        {type = "item", name = "sp-computer-science-pack-2", amount = 1}
       },
       time = 15
     },
@@ -1607,12 +1607,12 @@ data:extend({
     {
       count = 300,
       ingredients = {
-        {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"sp-material-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1},
-        {"sp-electronic-science-pack-2", 1},
-        {"production-science-pack", 1}
+        {type = "item", name = "sp-automation-science-pack-2", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-2", amount = 1},
+        {type = "item", name = "sp-material-science-pack-2", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-2", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-2", amount = 1},
+        {type = "item", name = "production-science-pack", amount = 1}
       },
       time = 15
     },
@@ -1642,13 +1642,13 @@ data:extend({
     {
       count = 1000,
       ingredients = {
-        {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"sp-material-science-pack-2", 1},
-        {"sp-electronic-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1},
-        {"sp-computer-science-pack-2", 1},
-        {"production-science-pack", 1}
+        {type = "item", name = "sp-automation-science-pack-2", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-2", amount = 1},
+        {type = "item", name = "sp-material-science-pack-2", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-2", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-2", amount = 1},
+        {type = "item", name = "sp-computer-science-pack-2", amount = 1},
+        {type = "item", name = "production-science-pack", amount = 1}
       },
       time = 15
     },
@@ -1679,14 +1679,14 @@ data:extend({
     {
       count = 500,
       ingredients = {
-        {"sp-automation-science-pack-3", 1},
-        {"sp-logistic-science-pack-3", 1},
-        {"sp-chemical-science-pack-3", 1},
-        {"sp-electronic-science-pack-3", 1},
-        {"sp-material-science-pack-3", 1},
-        {"sp-geological-science-pack-2", 1},
-        {"production-science-pack", 1},
-        {"utility-science-pack", 1}
+        {type = "item", name = "sp-automation-science-pack-3", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-material-science-pack-3", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-2", amount = 1},
+        {type = "item", name = "production-science-pack", amount = 1},
+        {type = "item", name = "utility-science-pack", amount = 1}
       },
       time = 15
     },
@@ -1711,11 +1711,11 @@ data:extend({
     {
       count = 100,
       ingredients = {
-        {"basic-tech-card", 1},
-        {"automation-science-pack", 1},
-        {"logistic-science-pack", 1},
-        {"chemical-science-pack", 1},
-        {"sp-material-science-pack-1", 1}
+        {type = "item", name = "basic-tech-card", amount = 1},
+        {type = "item", name = "automation-science-pack", amount = 1},
+        {type = "item", name = "logistic-science-pack", amount = 1},
+        {type = "item", name = "chemical-science-pack", amount = 1},
+        {type = "item", name = "sp-material-science-pack-1", amount = 1}
       },
       time = 15
     },
@@ -1746,11 +1746,11 @@ data:extend({
     {
       count = 50,
       ingredients = {
-        {"basic-tech-card", 1}, 
-        {"automation-science-pack", 1},
-        {"sp-electronic-science-pack-1", 1},
-        {"sp-material-science-pack-1", 1},
-        {"logistic-science-pack", 1}
+        {type = "item", name = "basic-tech-card", amount = 1}, 
+        {type = "item", name = "automation-science-pack", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-1", amount = 1},
+        {type = "item", name = "sp-material-science-pack-1", amount = 1},
+        {type = "item", name = "logistic-science-pack", amount = 1}
       },
       time = 15
     },
@@ -1775,14 +1775,14 @@ data:extend({
     {
       count = 500,
       ingredients = {
-        {"sp-automation-science-pack-3", 1},
-        {"sp-logistic-science-pack-3", 1},
-        {"sp-chemical-science-pack-2", 1},
-        {"sp-electronic-science-pack-2", 1},
-        {"sp-material-science-pack-3", 1},
-        {"sp-geological-science-pack-2", 1},
-        {"production-science-pack", 1},
-        {"utility-science-pack", 1}
+        {type = "item", name = "sp-automation-science-pack-3", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-2", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-2", amount = 1},
+        {type = "item", name = "sp-material-science-pack-3", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-2", amount = 1},
+        {type = "item", name = "production-science-pack", amount = 1},
+        {type = "item", name = "utility-science-pack", amount = 1}
       },
       time = 15
     },
@@ -1807,14 +1807,14 @@ data:extend({
     {
       count = 1000,
       ingredients = {
-        {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1},
-        {"sp-material-science-pack-2", 1},
-        {"production-science-pack", 1},
-        {"sp-geological-science-pack-2", 1},
-        {"sp-electronic-science-pack-2", 1},
-        {"utility-science-pack", 1}
+        {type = "item", name = "sp-automation-science-pack-2", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-2", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-2", amount = 1},
+        {type = "item", name = "sp-material-science-pack-2", amount = 1},
+        {type = "item", name = "production-science-pack", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-2", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-2", amount = 1},
+        {type = "item", name = "utility-science-pack", amount = 1}
       },
       time = 15
     },
@@ -1836,7 +1836,7 @@ data:extend({
     unit =
     {
       count = 100,
-      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      ingredients = {{type = "item", name = "basic-tech-card", amount = 1}, {type = "item", name = "automation-science-pack", amount = 1}, {type = "item", name = "logistic-science-pack", amount = 1}},
       time = 15
     },
     order = "a-h-a"
@@ -1861,10 +1861,10 @@ data:extend({
     {
       count = 100,
       ingredients = {
-        {"basic-tech-card", 1},
-        {"automation-science-pack", 1},
-        {"logistic-science-pack", 1},
-        {"sp-material-science-pack-1", 1}
+        {type = "item", name = "basic-tech-card", amount = 1},
+        {type = "item", name = "automation-science-pack", amount = 1},
+        {type = "item", name = "logistic-science-pack", amount = 1},
+        {type = "item", name = "sp-material-science-pack-1", amount = 1}
       },
       time = 15
     },
@@ -1895,13 +1895,13 @@ data:extend({
     {
       count = 100,
       ingredients = {
-        {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"sp-material-science-pack-2", 1},
-        {"sp-electronic-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1},
-        {"utility-science-pack", 1},
-        {"production-science-pack", 1}
+        {type = "item", name = "sp-automation-science-pack-2", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-2", amount = 1},
+        {type = "item", name = "sp-material-science-pack-2", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-2", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-2", amount = 1},
+        {type = "item", name = "utility-science-pack", amount = 1},
+        {type = "item", name = "production-science-pack", amount = 1}
       },
       time = 15
     },
@@ -1927,13 +1927,13 @@ data:extend({
     {
       count = 200,
       ingredients = {
-        {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"sp-material-science-pack-2", 1},
-        {"sp-electronic-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1},
-        {"production-science-pack", 1},
-        {"utility-science-pack", 1}
+        {type = "item", name = "sp-automation-science-pack-2", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-2", amount = 1},
+        {type = "item", name = "sp-material-science-pack-2", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-2", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-2", amount = 1},
+        {type = "item", name = "production-science-pack", amount = 1},
+        {type = "item", name = "utility-science-pack", amount = 1}
       },
       time = 15
     },
@@ -1965,11 +1965,11 @@ data:extend({
     {
       count = 100,
       ingredients = {
-        {"automation-science-pack", 1},
-        {"logistic-science-pack", 1},
-        {"chemical-science-pack", 1},
-        {"sp-material-science-pack-1", 1},
-        {"sp-geological-science-pack-1", 1}
+        {type = "item", name = "automation-science-pack", amount = 1},
+        {type = "item", name = "logistic-science-pack", amount = 1},
+        {type = "item", name = "chemical-science-pack", amount = 1},
+        {type = "item", name = "sp-material-science-pack-1", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-1", amount = 1}
       },
       time = 15
     },
@@ -1992,11 +1992,11 @@ data:extend({
     {
       count = 200,
       ingredients = {
-        {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1},
-        {"sp-material-science-pack-2", 1},
-        {"sp-geological-science-pack-2", 1}
+        {type = "item", name = "sp-automation-science-pack-2", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-2", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-2", amount = 1},
+        {type = "item", name = "sp-material-science-pack-2", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-2", amount = 1}
       },
       time = 15
     },
@@ -2037,14 +2037,14 @@ data:extend({
     {
       count = 750,
       ingredients = {
-        {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"sp-material-science-pack-2", 1},
-        {"sp-electronic-science-pack-2", 1},
-        {"sp-geological-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1},
-        {"production-science-pack", 1},
-        {"utility-science-pack", 1}
+        {type = "item", name = "sp-automation-science-pack-2", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-2", amount = 1},
+        {type = "item", name = "sp-material-science-pack-2", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-2", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-2", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-2", amount = 1},
+        {type = "item", name = "production-science-pack", amount = 1},
+        {type = "item", name = "utility-science-pack", amount = 1}
       },
       time = 15
     },
@@ -2082,14 +2082,14 @@ data:extend({
     {
       count = 500,
       ingredients = {
-        {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"sp-material-science-pack-2", 1},
-        {"sp-electronic-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1},
-        {"sp-computer-science-pack-2", 1},
-        {"production-science-pack", 1},
-        {"utility-science-pack", 1}
+        {type = "item", name = "sp-automation-science-pack-2", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-2", amount = 1},
+        {type = "item", name = "sp-material-science-pack-2", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-2", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-2", amount = 1},
+        {type = "item", name = "sp-computer-science-pack-2", amount = 1},
+        {type = "item", name = "production-science-pack", amount = 1},
+        {type = "item", name = "utility-science-pack", amount = 1}
       },
       time = 15
     },
@@ -2115,12 +2115,12 @@ data:extend({
     {
       count = 150,
       ingredients = {
-        {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"sp-material-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1},
-        {"sp-geological-science-pack-2", 1},
-        {"production-science-pack", 1}
+        {type = "item", name = "sp-automation-science-pack-2", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-2", amount = 1},
+        {type = "item", name = "sp-material-science-pack-2", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-2", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-2", amount = 1},
+        {type = "item", name = "production-science-pack", amount = 1}
       },
       time = 15
     },
@@ -2146,13 +2146,13 @@ data:extend({
     {
       count = 1000,
       ingredients = {
-        {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1},
-        {"sp-geological-science-pack-2", 1},
-        {"sp-material-science-pack-2", 1},
-        {"production-science-pack", 1},
-        {"utility-science-pack", 1}
+        {type = "item", name = "sp-automation-science-pack-2", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-2", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-2", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-2", amount = 1},
+        {type = "item", name = "sp-material-science-pack-2", amount = 1},
+        {type = "item", name = "production-science-pack", amount = 1},
+        {type = "item", name = "utility-science-pack", amount = 1}
       },
       time = 15
     },
@@ -2182,15 +2182,15 @@ data:extend({
     {
       count = 1000,
       ingredients = {
-        {"sp-automation-science-pack-3", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"sp-material-science-pack-2", 1},
-        {"sp-electronic-science-pack-2", 1},
-        {"sp-geological-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1},
-        {"sp-production-science-pack-3", 1},
-        {"utility-science-pack", 1},
-        {"sp-nuclear-science-pack-2", 1}
+        {type = "item", name = "sp-automation-science-pack-3", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-2", amount = 1},
+        {type = "item", name = "sp-material-science-pack-2", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-2", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-2", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-2", amount = 1},
+        {type = "item", name = "sp-production-science-pack-3", amount = 1},
+        {type = "item", name = "utility-science-pack", amount = 1},
+        {type = "item", name = "sp-nuclear-science-pack-2", amount = 1}
       },
       time = 15
     },
@@ -2219,15 +2219,15 @@ data:extend({
     {
       count = 1000,
       ingredients = {
-        {"sp-automation-science-pack-3", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"sp-material-science-pack-2", 1},
-        {"sp-electronic-science-pack-2", 1},
-        {"sp-geological-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1},
-        {"sp-production-science-pack-3", 1},
-        {"utility-science-pack", 1},
-        {"sp-nuclear-science-pack-2", 1}
+        {type = "item", name = "sp-automation-science-pack-3", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-2", amount = 1},
+        {type = "item", name = "sp-material-science-pack-2", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-2", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-2", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-2", amount = 1},
+        {type = "item", name = "sp-production-science-pack-3", amount = 1},
+        {type = "item", name = "utility-science-pack", amount = 1},
+        {type = "item", name = "sp-nuclear-science-pack-2", amount = 1}
       },
       time = 15
     },
@@ -2256,14 +2256,14 @@ data:extend({
     {
       count = 1000,
       ingredients = {
-        {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"sp-material-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1},
-        {"sp-geological-science-pack-2", 1},
-        {"production-science-pack", 1},
-        {"utility-science-pack", 1},
-        {"sp-nuclear-science-pack-2", 1}
+        {type = "item", name = "sp-automation-science-pack-2", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-2", amount = 1},
+        {type = "item", name = "sp-material-science-pack-2", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-2", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-2", amount = 1},
+        {type = "item", name = "production-science-pack", amount = 1},
+        {type = "item", name = "utility-science-pack", amount = 1},
+        {type = "item", name = "sp-nuclear-science-pack-2", amount = 1}
       },
       time = 15
     },
@@ -2290,15 +2290,15 @@ data:extend({
     {
       count = 2000,
       ingredients = {
-        {"sp-automation-science-pack-3", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"sp-material-science-pack-2", 1},
-        {"sp-electronic-science-pack-2", 1},
-        {"sp-geological-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1},
-        {"sp-production-science-pack-3", 1},
-        {"utility-science-pack", 1},
-        {"sp-nuclear-science-pack-2", 1}
+        {type = "item", name = "sp-automation-science-pack-3", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-2", amount = 1},
+        {type = "item", name = "sp-material-science-pack-2", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-2", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-2", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-2", amount = 1},
+        {type = "item", name = "sp-production-science-pack-3", amount = 1},
+        {type = "item", name = "utility-science-pack", amount = 1},
+        {type = "item", name = "sp-nuclear-science-pack-2", amount = 1}
       },
       time = 15
     },
@@ -2322,11 +2322,11 @@ data:extend({
     {
       count = 150,
       ingredients = {
-        {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"chemical-science-pack", 1},
-        {"sp-material-science-pack-2", 1},
-        {"sp-geological-science-pack-1", 1}
+        {type = "item", name = "sp-automation-science-pack-2", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-2", amount = 1},
+        {type = "item", name = "chemical-science-pack", amount = 1},
+        {type = "item", name = "sp-material-science-pack-2", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-1", amount = 1}
       },
       time = 15
     },
@@ -2351,14 +2351,14 @@ data:extend({
     {
       count = 500,
       ingredients = {
-        {"sp-automation-science-pack-3", 1},
-        {"sp-logistic-science-pack-3", 1},
-        {"sp-chemical-science-pack-2", 1},
-        {"sp-electronic-science-pack-2", 1},
-        {"sp-material-science-pack-3", 1},
-        {"sp-geological-science-pack-2", 1},
-        {"production-science-pack", 1},
-        {"utility-science-pack", 1}
+        {type = "item", name = "sp-automation-science-pack-3", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-2", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-2", amount = 1},
+        {type = "item", name = "sp-material-science-pack-3", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-2", amount = 1},
+        {type = "item", name = "production-science-pack", amount = 1},
+        {type = "item", name = "utility-science-pack", amount = 1}
       },
       time = 15
     },
@@ -2389,14 +2389,14 @@ data:extend({
     {
       count = 150,
       ingredients = {
-        {"sp-automation-science-pack-3", 1},
-        {"sp-logistic-science-pack-3", 1},
-        {"sp-chemical-science-pack-3", 1},
-        {"sp-electronic-science-pack-2", 1},
-        {"sp-material-science-pack-3", 1},
-        {"sp-geological-science-pack-2", 1},
-        {"production-science-pack", 1},
-        {"utility-science-pack", 1}
+        {type = "item", name = "sp-automation-science-pack-3", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-2", amount = 1},
+        {type = "item", name = "sp-material-science-pack-3", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-2", amount = 1},
+        {type = "item", name = "production-science-pack", amount = 1},
+        {type = "item", name = "utility-science-pack", amount = 1}
       },
       time = 15
     },
@@ -2423,13 +2423,13 @@ data:extend({
     {
       count = 200,
       ingredients = {
-        {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1},
-        {"sp-material-science-pack-2", 1},
-        {"sp-geological-science-pack-2", 1},
-        {"production-science-pack", 1},
-        {"utility-science-pack", 1}
+        {type = "item", name = "sp-automation-science-pack-2", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-2", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-2", amount = 1},
+        {type = "item", name = "sp-material-science-pack-2", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-2", amount = 1},
+        {type = "item", name = "production-science-pack", amount = 1},
+        {type = "item", name = "utility-science-pack", amount = 1}
       },
       time = 15
     },
@@ -2460,12 +2460,12 @@ data:extend({
     {
       count = 500,
       ingredients = {
-        {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1},
-        {"sp-material-science-pack-2", 1},
-        {"sp-geological-science-pack-2", 1},
-        {"production-science-pack", 1}
+        {type = "item", name = "sp-automation-science-pack-2", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-2", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-2", amount = 1},
+        {type = "item", name = "sp-material-science-pack-2", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-2", amount = 1},
+        {type = "item", name = "production-science-pack", amount = 1}
       },
       time = 15
     },
@@ -2492,13 +2492,13 @@ data:extend({
     {
       count = 1000,
       ingredients = {
-        {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"sp-material-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1},
-        {"sp-geological-science-pack-2", 1},
-        {"sp-electronic-science-pack-2", 1},
-        {"production-science-pack", 1}
+        {type = "item", name = "sp-automation-science-pack-2", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-2", amount = 1},
+        {type = "item", name = "sp-material-science-pack-2", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-2", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-2", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-2", amount = 1},
+        {type = "item", name = "production-science-pack", amount = 1}
       },
       time = 15
     },
@@ -2523,11 +2523,11 @@ data:extend({
     {
       count = 100,
       ingredients = {
-        {"automation-science-pack", 1},
-        {"logistic-science-pack", 1},
-        {"chemical-science-pack", 1},
-        {"sp-electronic-science-pack-1", 1},
-        {"sp-material-science-pack-1", 1}
+        {type = "item", name = "automation-science-pack", amount = 1},
+        {type = "item", name = "logistic-science-pack", amount = 1},
+        {type = "item", name = "chemical-science-pack", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-1", amount = 1},
+        {type = "item", name = "sp-material-science-pack-1", amount = 1}
       },
       time = 15
     },
@@ -2561,12 +2561,12 @@ data:extend({
     {
       count = 100,
       ingredients = {
-        {"automation-science-pack", 1},
-        {"logistic-science-pack", 1},
-        {"chemical-science-pack", 1},
-        {"sp-electronic-science-pack-1", 1},
-        {"sp-material-science-pack-1", 1},
-        {"sp-geological-science-pack-1", 1}
+        {type = "item", name = "automation-science-pack", amount = 1},
+        {type = "item", name = "logistic-science-pack", amount = 1},
+        {type = "item", name = "chemical-science-pack", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-1", amount = 1},
+        {type = "item", name = "sp-material-science-pack-1", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-1", amount = 1}
       },
       time = 15
     },
@@ -2589,12 +2589,12 @@ data:extend({
     {
       count = 600,
       ingredients = {
-        {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"sp-material-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1},
-        {"production-science-pack", 1},
-        {"utility-science-pack", 1}
+        {type = "item", name = "sp-automation-science-pack-2", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-2", amount = 1},
+        {type = "item", name = "sp-material-science-pack-2", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-2", amount = 1},
+        {type = "item", name = "production-science-pack", amount = 1},
+        {type = "item", name = "utility-science-pack", amount = 1}
       },
       time = 15
     },
@@ -2617,12 +2617,12 @@ data:extend({
     {
       count = 500,
       ingredients = {
-        {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"sp-material-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1},
-        {"production-science-pack", 1},
-        {"utility-science-pack", 1}
+        {type = "item", name = "sp-automation-science-pack-2", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-2", amount = 1},
+        {type = "item", name = "sp-material-science-pack-2", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-2", amount = 1},
+        {type = "item", name = "production-science-pack", amount = 1},
+        {type = "item", name = "utility-science-pack", amount = 1}
       },
       time = 15
     },
@@ -2653,12 +2653,12 @@ data:extend({
     {
       count = 500,
       ingredients = {
-        {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1},
-        {"sp-electronic-science-pack-2", 1},
-        {"sp-material-science-pack-2", 1},
-        {"production-science-pack", 1}
+        {type = "item", name = "sp-automation-science-pack-2", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-2", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-2", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-2", amount = 1},
+        {type = "item", name = "sp-material-science-pack-2", amount = 1},
+        {type = "item", name = "production-science-pack", amount = 1}
       },
       time = 15
     },
@@ -2685,12 +2685,12 @@ data:extend({
     {
       count = 200,
       ingredients = {
-        {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1},
-        {"sp-electronic-science-pack-2", 1},
-        {"sp-material-science-pack-2", 1},
-        {"production-science-pack", 1}
+        {type = "item", name = "sp-automation-science-pack-2", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-2", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-2", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-2", amount = 1},
+        {type = "item", name = "sp-material-science-pack-2", amount = 1},
+        {type = "item", name = "production-science-pack", amount = 1}
       },
       time = 15
     },
@@ -2724,14 +2724,14 @@ data:extend({
     {
       count = 600,
       ingredients = {
-        {"sp-automation-science-pack-3", 1},
-        {"sp-logistic-science-pack-3", 1},
-        {"sp-chemical-science-pack-2", 1},
-        {"sp-electronic-science-pack-2", 1},
-        {"sp-material-science-pack-3", 1},
-        {"sp-geological-science-pack-2", 1},
-        {"production-science-pack", 1},
-        {"utility-science-pack", 1}
+        {type = "item", name = "sp-automation-science-pack-3", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-2", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-2", amount = 1},
+        {type = "item", name = "sp-material-science-pack-3", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-2", amount = 1},
+        {type = "item", name = "production-science-pack", amount = 1},
+        {type = "item", name = "utility-science-pack", amount = 1}
       },
       time = 15
     },
@@ -2767,17 +2767,17 @@ data:extend({
     {
       count = 2000,
       ingredients = {
-        {"sp-automation-science-pack-3", 1},
-        {"sp-logistic-science-pack-3", 1},
-        {"sp-material-science-pack-3", 1},
-        {"sp-electronic-science-pack-2", 1},
-        {"sp-geological-science-pack-3", 1},
-        {"sp-chemical-science-pack-3", 1},
-        {"sp-production-science-pack-3", 1},
-        {"utility-science-pack", 1},
-        {"sp-astronomical-science-pack-2", 1},
-        {"sp-computer-science-pack-2", 1},
-        {"sp-nuclear-science-pack-2", 1}
+        {type = "item", name = "sp-automation-science-pack-3", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-material-science-pack-3", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-2", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-3", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-production-science-pack-3", amount = 1},
+        {type = "item", name = "utility-science-pack", amount = 1},
+        {type = "item", name = "sp-astronomical-science-pack-2", amount = 1},
+        {type = "item", name = "sp-computer-science-pack-2", amount = 1},
+        {type = "item", name = "sp-nuclear-science-pack-2", amount = 1}
       },
       time = 15
     },
@@ -2825,17 +2825,17 @@ data:extend({
     {
       count = 1500,
       ingredients = {
-        {"sp-automation-science-pack-3", 1},
-        {"sp-logistic-science-pack-3", 1},
-        {"sp-material-science-pack-3", 1},
-        {"sp-electronic-science-pack-2", 1},
-        {"sp-geological-science-pack-3", 1},
-        {"sp-chemical-science-pack-3", 1},
-        {"sp-production-science-pack-3", 1},
-        {"utility-science-pack", 1},
-        {"sp-astronomical-science-pack-2", 1},
-        {"sp-computer-science-pack-2", 1},
-        {"sp-nuclear-science-pack-2", 1}
+        {type = "item", name = "sp-automation-science-pack-3", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-material-science-pack-3", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-2", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-3", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-production-science-pack-3", amount = 1},
+        {type = "item", name = "utility-science-pack", amount = 1},
+        {type = "item", name = "sp-astronomical-science-pack-2", amount = 1},
+        {type = "item", name = "sp-computer-science-pack-2", amount = 1},
+        {type = "item", name = "sp-nuclear-science-pack-2", amount = 1}
       },
       time = 15
     },
@@ -2867,17 +2867,17 @@ data:extend({
     {
       count = 2500,
       ingredients = {
-        {"sp-automation-science-pack-3", 1},
-        {"sp-logistic-science-pack-3", 1},
-        {"sp-material-science-pack-3", 1},
-        {"sp-electronic-science-pack-2", 1},
-        {"sp-geological-science-pack-3", 1},
-        {"sp-chemical-science-pack-3", 1},
-        {"sp-production-science-pack-3", 1},
-        {"utility-science-pack", 1},
-        {"sp-astronomical-science-pack-2", 1},
-        {"sp-computer-science-pack-2", 1},
-        {"sp-nuclear-science-pack-2", 1}
+        {type = "item", name = "sp-automation-science-pack-3", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-material-science-pack-3", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-2", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-3", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-production-science-pack-3", amount = 1},
+        {type = "item", name = "utility-science-pack", amount = 1},
+        {type = "item", name = "sp-astronomical-science-pack-2", amount = 1},
+        {type = "item", name = "sp-computer-science-pack-2", amount = 1},
+        {type = "item", name = "sp-nuclear-science-pack-2", amount = 1}
       },
       time = 15
     },
@@ -2913,17 +2913,17 @@ data:extend({
     {
       count = 2000,
       ingredients = {
-        {"sp-automation-science-pack-3", 1},
-        {"sp-logistic-science-pack-3", 1},
-        {"sp-material-science-pack-3", 1},
-        {"sp-electronic-science-pack-2", 1},
-        {"sp-geological-science-pack-3", 1},
-        {"sp-chemical-science-pack-3", 1},
-        {"sp-production-science-pack-3", 1},
-        {"utility-science-pack", 1},
-        {"sp-astronomical-science-pack-2", 1},
-        {"sp-computer-science-pack-2", 1},
-        {"sp-nuclear-science-pack-2", 1}
+        {type = "item", name = "sp-automation-science-pack-3", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-material-science-pack-3", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-2", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-3", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-production-science-pack-3", amount = 1},
+        {type = "item", name = "utility-science-pack", amount = 1},
+        {type = "item", name = "sp-astronomical-science-pack-2", amount = 1},
+        {type = "item", name = "sp-computer-science-pack-2", amount = 1},
+        {type = "item", name = "sp-nuclear-science-pack-2", amount = 1}
       },
       time = 15
     },
@@ -2954,13 +2954,13 @@ data:extend({
     {
       count = 750,
       ingredients = {
-        {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"sp-material-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1},
-        {"sp-electronic-science-pack-2", 1},
-        {"sp-geological-science-pack-2", 1},
-        {"production-science-pack", 1}
+        {type = "item", name = "sp-automation-science-pack-2", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-2", amount = 1},
+        {type = "item", name = "sp-material-science-pack-2", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-2", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-2", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-2", amount = 1},
+        {type = "item", name = "production-science-pack", amount = 1}
       },
       time = 15
     },
@@ -2991,15 +2991,15 @@ data:extend({
     {
       count = 500,
       ingredients = {
-        {"sp-automation-science-pack-3", 1},
-        {"sp-logistic-science-pack-3", 1},
-        {"sp-chemical-science-pack-3", 1},
-        {"sp-electronic-science-pack-3", 1},
-        {"sp-geological-science-pack-3", 1},
-        {"sp-material-science-pack-3", 1},
-        {"sp-computer-science-pack-3", 1},
-        {"sp-production-science-pack-3", 1},
-        {"utility-science-pack", 1}
+        {type = "item", name = "sp-automation-science-pack-3", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-3", amount = 1},
+        {type = "item", name = "sp-material-science-pack-3", amount = 1},
+        {type = "item", name = "sp-computer-science-pack-3", amount = 1},
+        {type = "item", name = "sp-production-science-pack-3", amount = 1},
+        {type = "item", name = "utility-science-pack", amount = 1}
       },
       time = 15
     },
@@ -3028,15 +3028,15 @@ data:extend({
     {
       count = 600,
       ingredients = {
-        {"sp-automation-science-pack-3", 1},
-        {"sp-logistic-science-pack-3", 1},
-        {"sp-chemical-science-pack-3", 1},
-        {"sp-electronic-science-pack-3", 1},
-        {"sp-geological-science-pack-3", 1},
-        {"sp-material-science-pack-3", 1},
-        {"sp-computer-science-pack-3", 1},
-        {"sp-production-science-pack-3", 1},
-        {"utility-science-pack", 1}
+        {type = "item", name = "sp-automation-science-pack-3", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-3", amount = 1},
+        {type = "item", name = "sp-material-science-pack-3", amount = 1},
+        {type = "item", name = "sp-computer-science-pack-3", amount = 1},
+        {type = "item", name = "sp-production-science-pack-3", amount = 1},
+        {type = "item", name = "utility-science-pack", amount = 1}
       },
       time = 15
     },
@@ -3065,15 +3065,15 @@ data:extend({
     {
       count = 1000,
       ingredients = {
-        {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"sp-material-science-pack-2", 1},
-        {"sp-electronic-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1},
-        {"sp-computer-science-pack-2", 1},
-        {"production-science-pack", 1},
-        {"utility-science-pack", 1},
-        {"sp-astronomical-science-pack-2", 1}
+        {type = "item", name = "sp-automation-science-pack-2", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-2", amount = 1},
+        {type = "item", name = "sp-material-science-pack-2", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-2", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-2", amount = 1},
+        {type = "item", name = "sp-computer-science-pack-2", amount = 1},
+        {type = "item", name = "production-science-pack", amount = 1},
+        {type = "item", name = "utility-science-pack", amount = 1},
+        {type = "item", name = "sp-astronomical-science-pack-2", amount = 1}
       },
       time = 15
     },
@@ -3111,17 +3111,17 @@ data:extend({
     {
       count = 300,
       ingredients = {
-        {"sp-automation-science-pack-3", 1},
-        {"sp-logistic-science-pack-3", 1},
-        {"sp-chemical-science-pack-3", 1},
-        {"sp-electronic-science-pack-3", 1},
-        {"sp-geological-science-pack-3", 1},
-        {"sp-material-science-pack-3", 1},
-        {"sp-computer-science-pack-3", 1},
-        {"sp-production-science-pack-3", 1},
-        {"sp-nuclear-science-pack-3", 1},
-        {"sp-astronomical-science-pack-2", 1},
-        {"sp-utility-science-pack-3", 1}
+        {type = "item", name = "sp-automation-science-pack-3", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-3", amount = 1},
+        {type = "item", name = "sp-material-science-pack-3", amount = 1},
+        {type = "item", name = "sp-computer-science-pack-3", amount = 1},
+        {type = "item", name = "sp-production-science-pack-3", amount = 1},
+        {type = "item", name = "sp-nuclear-science-pack-3", amount = 1},
+        {type = "item", name = "sp-astronomical-science-pack-2", amount = 1},
+        {type = "item", name = "sp-utility-science-pack-3", amount = 1}
       },
       time = 15
     },
@@ -3147,17 +3147,17 @@ data:extend({
     {
       count = 2000,
       ingredients = {
-        {"sp-automation-science-pack-3", 1},
-        {"sp-logistic-science-pack-3", 1},
-        {"sp-chemical-science-pack-3", 1},
-        {"sp-electronic-science-pack-3", 1},
-        {"sp-geological-science-pack-3", 1},
-        {"sp-material-science-pack-3", 1},
-        {"sp-computer-science-pack-3", 1},
-        {"sp-production-science-pack-3", 1},
-        {"sp-nuclear-science-pack-3", 1},
-        {"sp-astronomical-science-pack-2", 1},
-        {"utility-science-pack", 1}
+        {type = "item", name = "sp-automation-science-pack-3", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-3", amount = 1},
+        {type = "item", name = "sp-material-science-pack-3", amount = 1},
+        {type = "item", name = "sp-computer-science-pack-3", amount = 1},
+        {type = "item", name = "sp-production-science-pack-3", amount = 1},
+        {type = "item", name = "sp-nuclear-science-pack-3", amount = 1},
+        {type = "item", name = "sp-astronomical-science-pack-2", amount = 1},
+        {type = "item", name = "utility-science-pack", amount = 1}
       },
       time = 15
     },
@@ -3191,17 +3191,17 @@ data:extend({
     {
       count = 300,
       ingredients = {
-        {"sp-automation-science-pack-3", 1},
-        {"sp-logistic-science-pack-3", 1},
-        {"sp-chemical-science-pack-3", 1},
-        {"sp-electronic-science-pack-3", 1},
-        {"sp-geological-science-pack-3", 1},
-        {"sp-material-science-pack-3", 1},
-        {"sp-computer-science-pack-3", 1},
-        {"sp-production-science-pack-3", 1},
-        {"sp-nuclear-science-pack-3", 1},
-        {"sp-astronomical-science-pack-2", 1},
-        {"sp-utility-science-pack-3", 1}
+        {type = "item", name = "sp-automation-science-pack-3", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-3", amount = 1},
+        {type = "item", name = "sp-material-science-pack-3", amount = 1},
+        {type = "item", name = "sp-computer-science-pack-3", amount = 1},
+        {type = "item", name = "sp-production-science-pack-3", amount = 1},
+        {type = "item", name = "sp-nuclear-science-pack-3", amount = 1},
+        {type = "item", name = "sp-astronomical-science-pack-2", amount = 1},
+        {type = "item", name = "sp-utility-science-pack-3", amount = 1}
       },
       time = 15
     },
@@ -3247,17 +3247,17 @@ data:extend({
     {
       count = 300,
       ingredients = {
-        {"sp-automation-science-pack-3", 1},
-        {"sp-logistic-science-pack-3", 1},
-        {"sp-chemical-science-pack-3", 1},
-        {"sp-electronic-science-pack-3", 1},
-        {"sp-geological-science-pack-3", 1},
-        {"sp-material-science-pack-3", 1},
-        {"sp-computer-science-pack-3", 1},
-        {"sp-production-science-pack-3", 1},
-        {"sp-nuclear-science-pack-3", 1},
-        {"sp-astronomical-science-pack-2", 1},
-        {"sp-utility-science-pack-3", 1}
+        {type = "item", name = "sp-automation-science-pack-3", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-3", amount = 1},
+        {type = "item", name = "sp-material-science-pack-3", amount = 1},
+        {type = "item", name = "sp-computer-science-pack-3", amount = 1},
+        {type = "item", name = "sp-production-science-pack-3", amount = 1},
+        {type = "item", name = "sp-nuclear-science-pack-3", amount = 1},
+        {type = "item", name = "sp-astronomical-science-pack-2", amount = 1},
+        {type = "item", name = "sp-utility-science-pack-3", amount = 1}
       },
       time = 15
     },
@@ -3299,17 +3299,17 @@ data:extend({
     {
       count = 300,
       ingredients = {
-        {"sp-automation-science-pack-3", 1},
-        {"sp-logistic-science-pack-3", 1},
-        {"sp-chemical-science-pack-3", 1},
-        {"sp-electronic-science-pack-3", 1},
-        {"sp-geological-science-pack-3", 1},
-        {"sp-material-science-pack-3", 1},
-        {"sp-computer-science-pack-3", 1},
-        {"sp-production-science-pack-3", 1},
-        {"sp-nuclear-science-pack-3", 1},
-        {"sp-astronomical-science-pack-2", 1},
-        {"sp-utility-science-pack-3", 1}
+        {type = "item", name = "sp-automation-science-pack-3", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-3", amount = 1},
+        {type = "item", name = "sp-material-science-pack-3", amount = 1},
+        {type = "item", name = "sp-computer-science-pack-3", amount = 1},
+        {type = "item", name = "sp-production-science-pack-3", amount = 1},
+        {type = "item", name = "sp-nuclear-science-pack-3", amount = 1},
+        {type = "item", name = "sp-astronomical-science-pack-2", amount = 1},
+        {type = "item", name = "sp-utility-science-pack-3", amount = 1}
       },
       time = 15
     },
@@ -3336,14 +3336,14 @@ data:extend({
     {
       count = 150,
       ingredients = {
-        {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1},
-        {"sp-material-science-pack-2", 1},
-        {"production-science-pack", 1},
-        {"sp-geological-science-pack-2", 1},
-        {"sp-electronic-science-pack-2", 1},
-        {"utility-science-pack", 1}
+        {type = "item", name = "sp-automation-science-pack-2", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-2", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-2", amount = 1},
+        {type = "item", name = "sp-material-science-pack-2", amount = 1},
+        {type = "item", name = "production-science-pack", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-2", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-2", amount = 1},
+        {type = "item", name = "utility-science-pack", amount = 1}
       },
       time = 15
     },
@@ -3370,11 +3370,11 @@ data:extend({
     {
       count = 300,
       ingredients = {
-        {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"sp-material-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1},
-        {"production-science-pack", 1}
+        {type = "item", name = "sp-automation-science-pack-2", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-2", amount = 1},
+        {type = "item", name = "sp-material-science-pack-2", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-2", amount = 1},
+        {type = "item", name = "production-science-pack", amount = 1}
       },
       time = 15
     },
@@ -3405,11 +3405,11 @@ data:extend({
     {
       count = 300,
       ingredients = {
-        {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1},
-        {"sp-material-science-pack-2", 1},
-        {"production-science-pack", 1}
+        {type = "item", name = "sp-automation-science-pack-2", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-2", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-2", amount = 1},
+        {type = "item", name = "sp-material-science-pack-2", amount = 1},
+        {type = "item", name = "production-science-pack", amount = 1}
       },
       time = 15
     },
@@ -3438,17 +3438,17 @@ data:extend({
     {
       count = 1000,
       ingredients = {
-        {"sp-automation-science-pack-3", 1},
-        {"sp-logistic-science-pack-3", 1},
-        {"sp-chemical-science-pack-3", 1},
-        {"sp-electronic-science-pack-3", 1},
-        {"sp-geological-science-pack-3", 1},
-        {"sp-material-science-pack-3", 1},
-        {"sp-computer-science-pack-3", 1},
-        {"sp-production-science-pack-3", 1},
-        {"sp-nuclear-science-pack-3", 1},
-        {"sp-astronomical-science-pack-2", 1},
-        {"utility-science-pack", 1}
+        {type = "item", name = "sp-automation-science-pack-3", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-3", amount = 1},
+        {type = "item", name = "sp-material-science-pack-3", amount = 1},
+        {type = "item", name = "sp-computer-science-pack-3", amount = 1},
+        {type = "item", name = "sp-production-science-pack-3", amount = 1},
+        {type = "item", name = "sp-nuclear-science-pack-3", amount = 1},
+        {type = "item", name = "sp-astronomical-science-pack-2", amount = 1},
+        {type = "item", name = "utility-science-pack", amount = 1}
       },
       time = 15
     },
@@ -3474,11 +3474,11 @@ data:extend({
     {
       count = 100,
       ingredients = {
-        {"basic-tech-card", 1},
-        {"automation-science-pack", 1},
-        {"logistic-science-pack", 1},
-        {"sp-electronic-science-pack-1", 1},
-        {"sp-material-science-pack-1", 1}
+        {type = "item", name = "basic-tech-card", amount = 1},
+        {type = "item", name = "automation-science-pack", amount = 1},
+        {type = "item", name = "logistic-science-pack", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-1", amount = 1},
+        {type = "item", name = "sp-material-science-pack-1", amount = 1}
       },
       time = 15
     },
@@ -3508,11 +3508,11 @@ data:extend({
     {
       count = 150,
       ingredients = {
-        {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"sp-electronic-science-pack-2", 1},
-        {"sp-material-science-pack-1", 1},
-        {"production-science-pack", 1}
+        {type = "item", name = "sp-automation-science-pack-2", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-2", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-2", amount = 1},
+        {type = "item", name = "sp-material-science-pack-1", amount = 1},
+        {type = "item", name = "production-science-pack", amount = 1}
       },
       time = 15
     },
@@ -3535,11 +3535,11 @@ data:extend({
     {
       count = 200,
       ingredients = {
-        {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"sp-electronic-science-pack-2", 1},
-        {"sp-material-science-pack-1", 1},
-        {"production-science-pack", 1}
+        {type = "item", name = "sp-automation-science-pack-2", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-2", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-2", amount = 1},
+        {type = "item", name = "sp-material-science-pack-1", amount = 1},
+        {type = "item", name = "production-science-pack", amount = 1}
       },
       time = 15
     },
@@ -3562,12 +3562,12 @@ data:extend({
     {
       count = 200,
       ingredients = {
-        {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1},
-        {"sp-electronic-science-pack-2", 1},
-        {"sp-material-science-pack-2", 1},
-        {"production-science-pack", 1}
+        {type = "item", name = "sp-automation-science-pack-2", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-2", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-2", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-2", amount = 1},
+        {type = "item", name = "sp-material-science-pack-2", amount = 1},
+        {type = "item", name = "production-science-pack", amount = 1}
       },
       time = 15
     },
@@ -3594,14 +3594,14 @@ data:extend({
     {
       count = 250,
       ingredients = {
-        {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1},
-        {"sp-material-science-pack-2", 1},
-        {"production-science-pack", 1},
-        {"sp-geological-science-pack-2", 1},
-        {"sp-electronic-science-pack-2", 1},
-        {"utility-science-pack", 1}
+        {type = "item", name = "sp-automation-science-pack-2", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-2", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-2", amount = 1},
+        {type = "item", name = "sp-material-science-pack-2", amount = 1},
+        {type = "item", name = "production-science-pack", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-2", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-2", amount = 1},
+        {type = "item", name = "utility-science-pack", amount = 1}
       },
       time = 15
     },
@@ -3631,13 +3631,13 @@ data:extend({
     {
       count = 200,
       ingredients = {
-        {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"sp-material-science-pack-2", 1},
-        {"sp-electronic-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1},
-        {"sp-computer-science-pack-2", 1},
-        {"production-science-pack", 1},
+        {type = "item", name = "sp-automation-science-pack-2", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-2", amount = 1},
+        {type = "item", name = "sp-material-science-pack-2", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-2", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-2", amount = 1},
+        {type = "item", name = "sp-computer-science-pack-2", amount = 1},
+        {type = "item", name = "production-science-pack", amount = 1},
       },
       time = 15
     },
@@ -3660,10 +3660,10 @@ data:extend({
     {
       count = 150,
       ingredients = {
-        {"automation-science-pack", 1},
-        {"logistic-science-pack", 1},
-        {"sp-material-science-pack-1", 1},
-        {"sp-electronic-science-pack-1", 1}
+        {type = "item", name = "automation-science-pack", amount = 1},
+        {type = "item", name = "logistic-science-pack", amount = 1},
+        {type = "item", name = "sp-material-science-pack-1", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-1", amount = 1}
       },
       time = 15
     },
@@ -3689,12 +3689,12 @@ data:extend({
     {
       count = 100,
       ingredients = {
-        {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"sp-material-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1},
-        {"sp-geological-science-pack-2", 1},
-        {"production-science-pack", 1}
+        {type = "item", name = "sp-automation-science-pack-2", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-2", amount = 1},
+        {type = "item", name = "sp-material-science-pack-2", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-2", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-2", amount = 1},
+        {type = "item", name = "production-science-pack", amount = 1}
       },
       time = 15
     },
@@ -3725,17 +3725,17 @@ data:extend({
     {
       count = 2000,
       ingredients = {
-        {"sp-automation-science-pack-3", 1},
-        {"sp-logistic-science-pack-3", 1},
-        {"sp-chemical-science-pack-3", 1},
-        {"sp-electronic-science-pack-3", 1},
-        {"sp-geological-science-pack-3", 1},
-        {"sp-material-science-pack-3", 1},
-        {"sp-computer-science-pack-3", 1},
-        {"sp-production-science-pack-3", 1},
-        {"sp-nuclear-science-pack-3", 1},
-        {"sp-astronomical-science-pack-2", 1},
-        {"utility-science-pack", 1}
+        {type = "item", name = "sp-automation-science-pack-3", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-3", amount = 1},
+        {type = "item", name = "sp-material-science-pack-3", amount = 1},
+        {type = "item", name = "sp-computer-science-pack-3", amount = 1},
+        {type = "item", name = "sp-production-science-pack-3", amount = 1},
+        {type = "item", name = "sp-nuclear-science-pack-3", amount = 1},
+        {type = "item", name = "sp-astronomical-science-pack-2", amount = 1},
+        {type = "item", name = "utility-science-pack", amount = 1}
       },
       time = 15
     },
@@ -3773,12 +3773,12 @@ data:extend({
     {
       count = 200,
       ingredients = {
-        {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"sp-material-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1},
-        {"sp-geological-science-pack-2", 1},
-        {"production-science-pack", 1}
+        {type = "item", name = "sp-automation-science-pack-2", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-2", amount = 1},
+        {type = "item", name = "sp-material-science-pack-2", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-2", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-2", amount = 1},
+        {type = "item", name = "production-science-pack", amount = 1}
       },
       time = 15
     },
@@ -3807,12 +3807,12 @@ data:extend({
     {
       count = 350,
       ingredients = {
-        {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"sp-material-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1},
-        {"sp-geological-science-pack-2", 1},
-        {"production-science-pack", 1}
+        {type = "item", name = "sp-automation-science-pack-2", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-2", amount = 1},
+        {type = "item", name = "sp-material-science-pack-2", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-2", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-2", amount = 1},
+        {type = "item", name = "production-science-pack", amount = 1}
       },
       time = 15
     },
@@ -3843,11 +3843,11 @@ data:extend({
     {
       count = 100,
       ingredients = {
-        {"automation-science-pack", 1},
-        {"logistic-science-pack", 1},
-        {"sp-material-science-pack-1", 1},
-        {"sp-geological-science-pack-1", 1},
-        {"chemical-science-pack", 1}
+        {type = "item", name = "automation-science-pack", amount = 1},
+        {type = "item", name = "logistic-science-pack", amount = 1},
+        {type = "item", name = "sp-material-science-pack-1", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-1", amount = 1},
+        {type = "item", name = "chemical-science-pack", amount = 1}
       },
       time = 15
     },
@@ -3879,12 +3879,12 @@ data:extend({
     {
       count = 100,
       ingredients = {
-        {"automation-science-pack", 1},
-        {"logistic-science-pack", 1},
-        {"chemical-science-pack", 1},
-        {"sp-electronic-science-pack-1", 1},
-        {"sp-material-science-pack-1", 1},
-        {"sp-geological-science-pack-1", 1}
+        {type = "item", name = "automation-science-pack", amount = 1},
+        {type = "item", name = "logistic-science-pack", amount = 1},
+        {type = "item", name = "chemical-science-pack", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-1", amount = 1},
+        {type = "item", name = "sp-material-science-pack-1", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-1", amount = 1}
       },
       time = 15
     },
@@ -3906,7 +3906,7 @@ data:extend({
     unit =
     {
       count = 100,
-      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      ingredients = {{type = "item", name = "basic-tech-card", amount = 1}, {type = "item", name = "automation-science-pack", amount = 1}, {type = "item", name = "logistic-science-pack", amount = 1}},
       time = 15
     },
     order = "a-h-a"
@@ -3932,15 +3932,15 @@ data:extend({
     {
       count = 400,
       ingredients = {
-        {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"sp-material-science-pack-2", 1},
-        {"sp-electronic-science-pack-2", 1},
-        {"sp-geological-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1},
-        {"production-science-pack", 1},
-        {"utility-science-pack", 1},
-        {"sp-computer-science-pack-2", 1}
+        {type = "item", name = "sp-automation-science-pack-2", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-2", amount = 1},
+        {type = "item", name = "sp-material-science-pack-2", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-2", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-2", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-2", amount = 1},
+        {type = "item", name = "production-science-pack", amount = 1},
+        {type = "item", name = "utility-science-pack", amount = 1},
+        {type = "item", name = "sp-computer-science-pack-2", amount = 1}
       },
       time = 15
     },
@@ -3975,14 +3975,14 @@ data:extend({
     {
       count = 500,
       ingredients = {
-        {"sp-automation-science-pack-3", 1},
-        {"sp-logistic-science-pack-3", 1},
-        {"sp-material-science-pack-3", 1},
-        {"sp-electronic-science-pack-3", 1},
-        {"sp-chemical-science-pack-2", 1},
-        {"production-science-pack", 1},
-        {"utility-science-pack", 1},
-        {"sp-computer-science-pack-2", 1}
+        {type = "item", name = "sp-automation-science-pack-3", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-material-science-pack-3", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-2", amount = 1},
+        {type = "item", name = "production-science-pack", amount = 1},
+        {type = "item", name = "utility-science-pack", amount = 1},
+        {type = "item", name = "sp-computer-science-pack-2", amount = 1}
       },
       time = 15
     },
@@ -4015,17 +4015,17 @@ data:extend({
     {
       count = 1200,
       ingredients = {
-        {"sp-automation-science-pack-3", 1},
-        {"sp-logistic-science-pack-3", 1},
-        {"sp-chemical-science-pack-3", 1},
-        {"sp-electronic-science-pack-3", 1},
-        {"sp-geological-science-pack-3", 1},
-        {"sp-material-science-pack-3", 1},
-        {"sp-computer-science-pack-3", 1},
-        {"sp-production-science-pack-3", 1},
-        {"sp-nuclear-science-pack-3", 1},
-        {"sp-astronomical-science-pack-2", 1},
-        {"utility-science-pack", 1}
+        {type = "item", name = "sp-automation-science-pack-3", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-3", amount = 1},
+        {type = "item", name = "sp-material-science-pack-3", amount = 1},
+        {type = "item", name = "sp-computer-science-pack-3", amount = 1},
+        {type = "item", name = "sp-production-science-pack-3", amount = 1},
+        {type = "item", name = "sp-nuclear-science-pack-3", amount = 1},
+        {type = "item", name = "sp-astronomical-science-pack-2", amount = 1},
+        {type = "item", name = "utility-science-pack", amount = 1}
       },
       time = 15
     },
@@ -4050,19 +4050,19 @@ data:extend({
     {
       count = 500,
       ingredients = {
-        {"sp-automation-science-pack-3", 1},
-        {"sp-logistic-science-pack-3", 1},
-        {"sp-chemical-science-pack-3", 1},
-        {"sp-electronic-science-pack-3", 1},
-        {"sp-geological-science-pack-3", 1},
-        {"sp-material-science-pack-3", 1},
-        {"sp-computer-science-pack-3", 1},
-        {"sp-production-science-pack-3", 1},
-        {"sp-nuclear-science-pack-3", 1},
-        {"sp-astronomical-science-pack-3", 1},
-        {"sp-utility-science-pack-3", 1},
-        {"space-science-pack", 1}
-        -- Krastorio: {"matter-tech-card", 1},
+        {type = "item", name = "sp-automation-science-pack-3", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-3", amount = 1},
+        {type = "item", name = "sp-material-science-pack-3", amount = 1},
+        {type = "item", name = "sp-computer-science-pack-3", amount = 1},
+        {type = "item", name = "sp-production-science-pack-3", amount = 1},
+        {type = "item", name = "sp-nuclear-science-pack-3", amount = 1},
+        {type = "item", name = "sp-astronomical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-utility-science-pack-3", amount = 1},
+        {type = "item", name = "space-science-pack", amount = 1}
+        -- Krastorio: {type = "item", name = "matter-tech-card", amount = 1},
       },
       time = 15
     },
@@ -4087,19 +4087,19 @@ data:extend({
     {
       count = 500,
       ingredients = {
-        {"sp-automation-science-pack-3", 1},
-        {"sp-logistic-science-pack-3", 1},
-        {"sp-chemical-science-pack-3", 1},
-        {"sp-electronic-science-pack-3", 1},
-        {"sp-geological-science-pack-3", 1},
-        {"sp-material-science-pack-3", 1},
-        {"sp-computer-science-pack-3", 1},
-        {"sp-production-science-pack-3", 1},
-        {"sp-nuclear-science-pack-3", 1},
-        {"sp-astronomical-science-pack-3", 1},
-        {"sp-utility-science-pack-3", 1},
-        {"space-science-pack", 1}
-        -- Krastorio: {"matter-tech-card", 1},
+        {type = "item", name = "sp-automation-science-pack-3", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-3", amount = 1},
+        {type = "item", name = "sp-material-science-pack-3", amount = 1},
+        {type = "item", name = "sp-computer-science-pack-3", amount = 1},
+        {type = "item", name = "sp-production-science-pack-3", amount = 1},
+        {type = "item", name = "sp-nuclear-science-pack-3", amount = 1},
+        {type = "item", name = "sp-astronomical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-utility-science-pack-3", amount = 1},
+        {type = "item", name = "space-science-pack", amount = 1}
+        -- Krastorio: {type = "item", name = "matter-tech-card", amount = 1},
       },
       time = 15
     },
@@ -4125,19 +4125,19 @@ data:extend({
     {
       count = 500,
       ingredients = {
-        {"sp-automation-science-pack-3", 1},
-        {"sp-logistic-science-pack-3", 1},
-        {"sp-chemical-science-pack-3", 1},
-        {"sp-electronic-science-pack-3", 1},
-        {"sp-geological-science-pack-3", 1},
-        {"sp-material-science-pack-3", 1},
-        {"sp-computer-science-pack-3", 1},
-        {"sp-production-science-pack-3", 1},
-        {"sp-nuclear-science-pack-3", 1},
-        {"sp-astronomical-science-pack-3", 1},
-        {"sp-utility-science-pack-3", 1},
-        {"space-science-pack", 1}
-        -- Krastorio: {"matter-tech-card", 1},
+        {type = "item", name = "sp-automation-science-pack-3", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-3", amount = 1},
+        {type = "item", name = "sp-material-science-pack-3", amount = 1},
+        {type = "item", name = "sp-computer-science-pack-3", amount = 1},
+        {type = "item", name = "sp-production-science-pack-3", amount = 1},
+        {type = "item", name = "sp-nuclear-science-pack-3", amount = 1},
+        {type = "item", name = "sp-astronomical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-utility-science-pack-3", amount = 1},
+        {type = "item", name = "space-science-pack", amount = 1}
+        -- Krastorio: {type = "item", name = "matter-tech-card", amount = 1},
       },
       time = 15
     },
@@ -4163,18 +4163,18 @@ data:extend({
     {
       count = 500,
       ingredients = {
-        {"sp-automation-science-pack-3", 1},
-        {"sp-logistic-science-pack-3", 1},
-        {"sp-chemical-science-pack-2", 1},
-        {"sp-electronic-science-pack-3", 1},
-        {"sp-geological-science-pack-2", 1},
-        {"sp-material-science-pack-3", 1},
-        {"sp-computer-science-pack-2", 1},
-        {"sp-military-science-pack-3", 1},
-        {"production-science-pack", 1},
-        {"sp-nuclear-science-pack-2", 1},
-        {"sp-astronomical-science-pack-2", 1},
-        {"utility-science-pack", 1},
+        {type = "item", name = "sp-automation-science-pack-3", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-2", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-2", amount = 1},
+        {type = "item", name = "sp-material-science-pack-3", amount = 1},
+        {type = "item", name = "sp-computer-science-pack-2", amount = 1},
+        {type = "item", name = "sp-military-science-pack-3", amount = 1},
+        {type = "item", name = "production-science-pack", amount = 1},
+        {type = "item", name = "sp-nuclear-science-pack-2", amount = 1},
+        {type = "item", name = "sp-astronomical-science-pack-2", amount = 1},
+        {type = "item", name = "utility-science-pack", amount = 1},
       },
       time = 15
     },
@@ -4200,22 +4200,22 @@ data:extend({
     {
       count = 500,
       ingredients = {
-        {"sp-automation-science-pack-3", 1},
-        {"sp-logistic-science-pack-3", 1},
-        {"sp-chemical-science-pack-3", 1},
-        {"sp-electronic-science-pack-3", 1},
-        {"sp-geological-science-pack-3", 1},
-        {"sp-material-science-pack-3", 1},
-        {"sp-military-science-pack-3", 1},
-        {"sp-computer-science-pack-3", 1},
-        {"sp-production-science-pack-3", 1},
-        {"sp-nuclear-science-pack-3", 1},
-        {"sp-astronomical-science-pack-3", 1},
-        {"sp-utility-science-pack-3", 1},
-        {"space-science-pack", 1},
-        -- {"matter-tech-card", 1},
-        -- {"advanced-tech-card", 1},
-        -- {"singularity-tech-card", 1}
+        {type = "item", name = "sp-automation-science-pack-3", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-3", amount = 1},
+        {type = "item", name = "sp-material-science-pack-3", amount = 1},
+        {type = "item", name = "sp-military-science-pack-3", amount = 1},
+        {type = "item", name = "sp-computer-science-pack-3", amount = 1},
+        {type = "item", name = "sp-production-science-pack-3", amount = 1},
+        {type = "item", name = "sp-nuclear-science-pack-3", amount = 1},
+        {type = "item", name = "sp-astronomical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-utility-science-pack-3", amount = 1},
+        {type = "item", name = "space-science-pack", amount = 1},
+        -- {type = "item", name = "matter-tech-card", amount = 1},
+        -- {type = "item", name = "advanced-tech-card", amount = 1},
+        -- {type = "item", name = "singularity-tech-card", amount = 1}
       },
       time = 15
     },
@@ -4257,8 +4257,8 @@ data:extend({
     {
       count = 20,
       ingredients = {
-        {"basic-tech-card", 1},
-        {"automation-science-pack", 1}
+        {type = "item", name = "basic-tech-card", amount = 1},
+        {type = "item", name = "automation-science-pack", amount = 1}
       },
       time = 15
     },
@@ -4298,19 +4298,19 @@ data:extend({
     {
       count = 800,
       ingredients = {
-        {"sp-automation-science-pack-3", 1},
-        {"sp-logistic-science-pack-3", 1},
-        {"sp-chemical-science-pack-3", 1},
-        {"sp-electronic-science-pack-3", 1},
-        {"sp-geological-science-pack-3", 1},
-        {"sp-material-science-pack-3", 1},
-        {"sp-computer-science-pack-3", 1},
-        {"sp-production-science-pack-3", 1},
-        {"sp-nuclear-science-pack-3", 1},
-        {"sp-astronomical-science-pack-3", 1},
-        {"sp-utility-science-pack-3", 1},
-        -- Krastorio: {"matter-tech-card", 1},
-        -- Krastorio: {"advanced-tech-card", 1}
+        {type = "item", name = "sp-automation-science-pack-3", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-3", amount = 1},
+        {type = "item", name = "sp-material-science-pack-3", amount = 1},
+        {type = "item", name = "sp-computer-science-pack-3", amount = 1},
+        {type = "item", name = "sp-production-science-pack-3", amount = 1},
+        {type = "item", name = "sp-nuclear-science-pack-3", amount = 1},
+        {type = "item", name = "sp-astronomical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-utility-science-pack-3", amount = 1},
+        -- Krastorio: {type = "item", name = "matter-tech-card", amount = 1},
+        -- Krastorio: {type = "item", name = "advanced-tech-card", amount = 1}
       },
       time = 15
     },
@@ -4343,20 +4343,20 @@ data:extend({
     {
       count = 1000,
       ingredients = {
-        {"sp-automation-science-pack-3", 1},
-        {"sp-logistic-science-pack-3", 1},
-        {"sp-chemical-science-pack-3", 1},
-        {"sp-electronic-science-pack-3", 1},
-        {"sp-geological-science-pack-3", 1},
-        {"sp-material-science-pack-3", 1},
-        {"sp-computer-science-pack-3", 1},
-        {"sp-production-science-pack-3", 1},
-        {"sp-nuclear-science-pack-3", 1},
-        {"sp-astronomical-science-pack-3", 1},
-        {"sp-utility-science-pack-3", 1},
-        {"space-science-pack", 1}
-        -- Krastorio: {"matter-tech-card", 1},
-        -- Krastorio: {"advanced-tech-card", 1}
+        {type = "item", name = "sp-automation-science-pack-3", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-3", amount = 1},
+        {type = "item", name = "sp-material-science-pack-3", amount = 1},
+        {type = "item", name = "sp-computer-science-pack-3", amount = 1},
+        {type = "item", name = "sp-production-science-pack-3", amount = 1},
+        {type = "item", name = "sp-nuclear-science-pack-3", amount = 1},
+        {type = "item", name = "sp-astronomical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-utility-science-pack-3", amount = 1},
+        {type = "item", name = "space-science-pack", amount = 1}
+        -- Krastorio: {type = "item", name = "matter-tech-card", amount = 1},
+        -- Krastorio: {type = "item", name = "advanced-tech-card", amount = 1}
       },
       time = 15
     },
@@ -4400,19 +4400,19 @@ data:extend({
     {
       count = 1500,
       ingredients = {
-        {"sp-automation-science-pack-3", 1},
-        {"sp-logistic-science-pack-3", 1},
-        {"sp-chemical-science-pack-3", 1},
-        {"sp-electronic-science-pack-3", 1},
-        {"sp-geological-science-pack-3", 1},
-        {"sp-material-science-pack-3", 1},
-        {"sp-computer-science-pack-3", 1},
-        {"sp-production-science-pack-3", 1},
-        {"sp-nuclear-science-pack-3", 1},
-        {"sp-astronomical-science-pack-3", 1},
-        {"sp-utility-science-pack-3", 1},
-        -- Krastorio: {"matter-tech-card", 1},
-        -- Krastorio: {"advanced-tech-card", 1}
+        {type = "item", name = "sp-automation-science-pack-3", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-3", amount = 1},
+        {type = "item", name = "sp-material-science-pack-3", amount = 1},
+        {type = "item", name = "sp-computer-science-pack-3", amount = 1},
+        {type = "item", name = "sp-production-science-pack-3", amount = 1},
+        {type = "item", name = "sp-nuclear-science-pack-3", amount = 1},
+        {type = "item", name = "sp-astronomical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-utility-science-pack-3", amount = 1},
+        -- Krastorio: {type = "item", name = "matter-tech-card", amount = 1},
+        -- Krastorio: {type = "item", name = "advanced-tech-card", amount = 1}
       },
       time = 15
     },
@@ -4449,19 +4449,19 @@ data:extend({
     {
       count = 750,
       ingredients = {
-        {"sp-automation-science-pack-3", 1},
-        {"sp-logistic-science-pack-3", 1},
-        {"sp-chemical-science-pack-3", 1},
-        {"sp-electronic-science-pack-3", 1},
-        {"sp-geological-science-pack-3", 1},
-        {"sp-material-science-pack-3", 1},
-        {"sp-computer-science-pack-3", 1},
-        {"sp-production-science-pack-3", 1},
-        {"sp-nuclear-science-pack-3", 1},
-        {"sp-astronomical-science-pack-3", 1},
-        {"sp-utility-science-pack-3", 1},
-        -- Krastorio: {"matter-tech-card", 1},
-        -- Krastorio: {"advanced-tech-card", 1}
+        {type = "item", name = "sp-automation-science-pack-3", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-3", amount = 1},
+        {type = "item", name = "sp-material-science-pack-3", amount = 1},
+        {type = "item", name = "sp-computer-science-pack-3", amount = 1},
+        {type = "item", name = "sp-production-science-pack-3", amount = 1},
+        {type = "item", name = "sp-nuclear-science-pack-3", amount = 1},
+        {type = "item", name = "sp-astronomical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-utility-science-pack-3", amount = 1},
+        -- Krastorio: {type = "item", name = "matter-tech-card", amount = 1},
+        -- Krastorio: {type = "item", name = "advanced-tech-card", amount = 1}
       },
       time = 15
     },
@@ -4490,19 +4490,19 @@ data:extend({
     {
       count = 400,
       ingredients = {
-        {"sp-automation-science-pack-3", 1},
-        {"sp-logistic-science-pack-3", 1},
-        {"sp-chemical-science-pack-3", 1},
-        {"sp-electronic-science-pack-3", 1},
-        {"sp-geological-science-pack-3", 1},
-        {"sp-material-science-pack-3", 1},
-        {"sp-computer-science-pack-3", 1},
-        {"sp-production-science-pack-3", 1},
-        {"sp-nuclear-science-pack-3", 1},
-        {"sp-astronomical-science-pack-3", 1},
-        {"sp-utility-science-pack-3", 1},
-        -- Krastorio: {"matter-tech-card", 1},
-        -- Krastorio: {"advanced-tech-card", 1}
+        {type = "item", name = "sp-automation-science-pack-3", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-3", amount = 1},
+        {type = "item", name = "sp-material-science-pack-3", amount = 1},
+        {type = "item", name = "sp-computer-science-pack-3", amount = 1},
+        {type = "item", name = "sp-production-science-pack-3", amount = 1},
+        {type = "item", name = "sp-nuclear-science-pack-3", amount = 1},
+        {type = "item", name = "sp-astronomical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-utility-science-pack-3", amount = 1},
+        -- Krastorio: {type = "item", name = "matter-tech-card", amount = 1},
+        -- Krastorio: {type = "item", name = "advanced-tech-card", amount = 1}
       },
       time = 15
     },
@@ -4551,19 +4551,19 @@ data:extend({
     {
       count = 2000,
       ingredients = {
-        {"sp-automation-science-pack-3", 1},
-        {"sp-logistic-science-pack-3", 1},
-        {"sp-chemical-science-pack-3", 1},
-        {"sp-electronic-science-pack-3", 1},
-        {"sp-geological-science-pack-3", 1},
-        {"sp-material-science-pack-3", 1},
-        {"sp-computer-science-pack-3", 1},
-        {"sp-production-science-pack-3", 1},
-        {"sp-nuclear-science-pack-3", 1},
-        {"sp-astronomical-science-pack-3", 1},
-        {"sp-utility-science-pack-3", 1},
-        -- Krastorio: {"matter-tech-card", 1},
-        -- Krastorio: {"advanced-tech-card", 1}
+        {type = "item", name = "sp-automation-science-pack-3", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-3", amount = 1},
+        {type = "item", name = "sp-material-science-pack-3", amount = 1},
+        {type = "item", name = "sp-computer-science-pack-3", amount = 1},
+        {type = "item", name = "sp-production-science-pack-3", amount = 1},
+        {type = "item", name = "sp-nuclear-science-pack-3", amount = 1},
+        {type = "item", name = "sp-astronomical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-utility-science-pack-3", amount = 1},
+        -- Krastorio: {type = "item", name = "matter-tech-card", amount = 1},
+        -- Krastorio: {type = "item", name = "advanced-tech-card", amount = 1}
       },
       time = 15
     },
@@ -4602,19 +4602,19 @@ data:extend({
     {
       count = 1200,
       ingredients = {
-        {"sp-automation-science-pack-3", 1},
-        {"sp-logistic-science-pack-3", 1},
-        {"sp-chemical-science-pack-3", 1},
-        {"sp-electronic-science-pack-3", 1},
-        {"sp-geological-science-pack-3", 1},
-        {"sp-material-science-pack-3", 1},
-        {"sp-computer-science-pack-3", 1},
-        {"sp-production-science-pack-3", 1},
-        {"sp-nuclear-science-pack-3", 1},
-        {"sp-astronomical-science-pack-3", 1},
-        {"sp-utility-science-pack-3", 1},
-        -- Krastorio: {"matter-tech-card", 1},
-        -- Krastorio: {"advanced-tech-card", 1}
+        {type = "item", name = "sp-automation-science-pack-3", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-3", amount = 1},
+        {type = "item", name = "sp-material-science-pack-3", amount = 1},
+        {type = "item", name = "sp-computer-science-pack-3", amount = 1},
+        {type = "item", name = "sp-production-science-pack-3", amount = 1},
+        {type = "item", name = "sp-nuclear-science-pack-3", amount = 1},
+        {type = "item", name = "sp-astronomical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-utility-science-pack-3", amount = 1},
+        -- Krastorio: {type = "item", name = "matter-tech-card", amount = 1},
+        -- Krastorio: {type = "item", name = "advanced-tech-card", amount = 1}
       },
       time = 15
     },
@@ -4645,19 +4645,19 @@ data:extend({
     {
       count = 200,
       ingredients = {
-        {"sp-automation-science-pack-3", 1},
-        {"sp-logistic-science-pack-3", 1},
-        {"sp-chemical-science-pack-3", 1},
-        {"sp-electronic-science-pack-3", 1},
-        {"sp-geological-science-pack-3", 1},
-        {"sp-material-science-pack-3", 1},
-        {"sp-computer-science-pack-3", 1},
-        {"sp-production-science-pack-3", 1},
-        {"sp-nuclear-science-pack-3", 1},
-        {"sp-astronomical-science-pack-3", 1},
-        {"sp-utility-science-pack-3", 1},
-        -- Krastorio: {"matter-tech-card", 1},
-        -- Krastorio: {"advanced-tech-card", 1}
+        {type = "item", name = "sp-automation-science-pack-3", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-3", amount = 1},
+        {type = "item", name = "sp-material-science-pack-3", amount = 1},
+        {type = "item", name = "sp-computer-science-pack-3", amount = 1},
+        {type = "item", name = "sp-production-science-pack-3", amount = 1},
+        {type = "item", name = "sp-nuclear-science-pack-3", amount = 1},
+        {type = "item", name = "sp-astronomical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-utility-science-pack-3", amount = 1},
+        -- Krastorio: {type = "item", name = "matter-tech-card", amount = 1},
+        -- Krastorio: {type = "item", name = "advanced-tech-card", amount = 1}
       },
       time = 15
     },
@@ -4701,19 +4701,19 @@ data:extend({
     {
       count = 1000,
       ingredients = {
-        {"sp-automation-science-pack-3", 1},
-        {"sp-logistic-science-pack-3", 1},
-        {"sp-chemical-science-pack-3", 1},
-        {"sp-electronic-science-pack-3", 1},
-        {"sp-geological-science-pack-3", 1},
-        {"sp-material-science-pack-3", 1},
-        {"sp-computer-science-pack-3", 1},
-        {"sp-production-science-pack-3", 1},
-        {"sp-nuclear-science-pack-3", 1},
-        {"sp-astronomical-science-pack-3", 1},
-        {"sp-utility-science-pack-3", 1},
-        -- Krastorio: {"matter-tech-card", 1},
-        -- Krastorio: {"advanced-tech-card", 1}
+        {type = "item", name = "sp-automation-science-pack-3", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-3", amount = 1},
+        {type = "item", name = "sp-material-science-pack-3", amount = 1},
+        {type = "item", name = "sp-computer-science-pack-3", amount = 1},
+        {type = "item", name = "sp-production-science-pack-3", amount = 1},
+        {type = "item", name = "sp-nuclear-science-pack-3", amount = 1},
+        {type = "item", name = "sp-astronomical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-utility-science-pack-3", amount = 1},
+        -- Krastorio: {type = "item", name = "matter-tech-card", amount = 1},
+        -- Krastorio: {type = "item", name = "advanced-tech-card", amount = 1}
       },
       time = 15
     },
@@ -4753,20 +4753,20 @@ data:extend({
     {
       count = 3000,
       ingredients = {
-        {"sp-automation-science-pack-3", 1},
-        {"sp-logistic-science-pack-3", 1},
-        {"sp-chemical-science-pack-3", 1},
-        {"sp-electronic-science-pack-3", 1},
-        {"sp-geological-science-pack-3", 1},
-        {"sp-material-science-pack-3", 1},
-        {"sp-computer-science-pack-3", 1},
-        {"sp-production-science-pack-3", 1},
-        {"sp-nuclear-science-pack-3", 1},
-        {"sp-astronomical-science-pack-3", 1},
-        {"sp-utility-science-pack-3", 1},
-        {"space-science-pack", 1},
-        -- {"matter-tech-card", 1},
-        -- {"advanced-tech-card", 1}
+        {type = "item", name = "sp-automation-science-pack-3", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-3", amount = 1},
+        {type = "item", name = "sp-material-science-pack-3", amount = 1},
+        {type = "item", name = "sp-computer-science-pack-3", amount = 1},
+        {type = "item", name = "sp-production-science-pack-3", amount = 1},
+        {type = "item", name = "sp-nuclear-science-pack-3", amount = 1},
+        {type = "item", name = "sp-astronomical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-utility-science-pack-3", amount = 1},
+        {type = "item", name = "space-science-pack", amount = 1},
+        -- {type = "item", name = "matter-tech-card", amount = 1},
+        -- {type = "item", name = "advanced-tech-card", amount = 1}
       },
       time = 15
     },
@@ -4803,20 +4803,20 @@ data:extend({
     {
       count = 1000,
       ingredients = {
-        {"sp-automation-science-pack-3", 1},
-        {"sp-logistic-science-pack-3", 1},
-        {"sp-chemical-science-pack-3", 1},
-        {"sp-electronic-science-pack-3", 1},
-        {"sp-geological-science-pack-3", 1},
-        {"sp-material-science-pack-3", 1},
-        {"sp-computer-science-pack-3", 1},
-        {"sp-production-science-pack-3", 1},
-        {"sp-nuclear-science-pack-3", 1},
-        {"sp-astronomical-science-pack-3", 1},
-        {"sp-utility-science-pack-3", 1},
-        {"space-science-pack", 1},
-        -- {"matter-tech-card", 1},
-        -- {"advanced-tech-card", 1}
+        {type = "item", name = "sp-automation-science-pack-3", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-3", amount = 1},
+        {type = "item", name = "sp-material-science-pack-3", amount = 1},
+        {type = "item", name = "sp-computer-science-pack-3", amount = 1},
+        {type = "item", name = "sp-production-science-pack-3", amount = 1},
+        {type = "item", name = "sp-nuclear-science-pack-3", amount = 1},
+        {type = "item", name = "sp-astronomical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-utility-science-pack-3", amount = 1},
+        {type = "item", name = "space-science-pack", amount = 1},
+        -- {type = "item", name = "matter-tech-card", amount = 1},
+        -- {type = "item", name = "advanced-tech-card", amount = 1}
       },
       time = 15
     },
@@ -4854,20 +4854,20 @@ data:extend({
     {
       count = 2500,
       ingredients = {
-        {"sp-automation-science-pack-3", 1},
-        {"sp-logistic-science-pack-3", 1},
-        {"sp-chemical-science-pack-3", 1},
-        {"sp-electronic-science-pack-3", 1},
-        {"sp-geological-science-pack-3", 1},
-        {"sp-material-science-pack-3", 1},
-        {"sp-computer-science-pack-3", 1},
-        {"sp-production-science-pack-3", 1},
-        {"sp-nuclear-science-pack-3", 1},
-        {"sp-astronomical-science-pack-3", 1},
-        {"sp-utility-science-pack-3", 1},
-        {"space-science-pack", 1},
-        -- {"matter-tech-card", 1},
-        -- {"advanced-tech-card", 1}
+        {type = "item", name = "sp-automation-science-pack-3", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-3", amount = 1},
+        {type = "item", name = "sp-material-science-pack-3", amount = 1},
+        {type = "item", name = "sp-computer-science-pack-3", amount = 1},
+        {type = "item", name = "sp-production-science-pack-3", amount = 1},
+        {type = "item", name = "sp-nuclear-science-pack-3", amount = 1},
+        {type = "item", name = "sp-astronomical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-utility-science-pack-3", amount = 1},
+        {type = "item", name = "space-science-pack", amount = 1},
+        -- {type = "item", name = "matter-tech-card", amount = 1},
+        -- {type = "item", name = "advanced-tech-card", amount = 1}
       },
       time = 15
     },
@@ -4898,20 +4898,20 @@ data:extend({
     {
       count = 1600,
       ingredients = {
-        {"sp-automation-science-pack-3", 1},
-        {"sp-logistic-science-pack-3", 1},
-        {"sp-chemical-science-pack-3", 1},
-        {"sp-electronic-science-pack-3", 1},
-        {"sp-geological-science-pack-3", 1},
-        {"sp-material-science-pack-3", 1},
-        {"sp-computer-science-pack-3", 1},
-        {"sp-production-science-pack-3", 1},
-        {"sp-nuclear-science-pack-3", 1},
-        {"sp-astronomical-science-pack-3", 1},
-        {"sp-utility-science-pack-3", 1},
-        {"space-science-pack", 1},
-        -- Krastorio: {"matter-tech-card", 1},
-        -- Krastorio: {"advanced-tech-card", 1}
+        {type = "item", name = "sp-automation-science-pack-3", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-3", amount = 1},
+        {type = "item", name = "sp-material-science-pack-3", amount = 1},
+        {type = "item", name = "sp-computer-science-pack-3", amount = 1},
+        {type = "item", name = "sp-production-science-pack-3", amount = 1},
+        {type = "item", name = "sp-nuclear-science-pack-3", amount = 1},
+        {type = "item", name = "sp-astronomical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-utility-science-pack-3", amount = 1},
+        {type = "item", name = "space-science-pack", amount = 1},
+        -- Krastorio: {type = "item", name = "matter-tech-card", amount = 1},
+        -- Krastorio: {type = "item", name = "advanced-tech-card", amount = 1}
       },
       time = 15
     },
@@ -4958,20 +4958,20 @@ data:extend({
     {
       count = 2000,
       ingredients = {
-        {"sp-automation-science-pack-3", 1},
-        {"sp-logistic-science-pack-3", 1},
-        {"sp-chemical-science-pack-3", 1},
-        {"sp-electronic-science-pack-3", 1},
-        {"sp-geological-science-pack-3", 1},
-        {"sp-material-science-pack-3", 1},
-        {"sp-computer-science-pack-3", 1},
-        {"sp-production-science-pack-3", 1},
-        {"sp-nuclear-science-pack-3", 1},
-        {"sp-astronomical-science-pack-3", 1},
-        {"sp-utility-science-pack-3", 1},
-        {"space-science-pack", 1},
-        -- Krastorio: {"matter-tech-card", 1},
-        -- Krastorio: {"advanced-tech-card", 1}
+        {type = "item", name = "sp-automation-science-pack-3", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-3", amount = 1},
+        {type = "item", name = "sp-material-science-pack-3", amount = 1},
+        {type = "item", name = "sp-computer-science-pack-3", amount = 1},
+        {type = "item", name = "sp-production-science-pack-3", amount = 1},
+        {type = "item", name = "sp-nuclear-science-pack-3", amount = 1},
+        {type = "item", name = "sp-astronomical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-utility-science-pack-3", amount = 1},
+        {type = "item", name = "space-science-pack", amount = 1},
+        -- Krastorio: {type = "item", name = "matter-tech-card", amount = 1},
+        -- Krastorio: {type = "item", name = "advanced-tech-card", amount = 1}
       },
       time = 15
     },
@@ -5005,21 +5005,21 @@ data:extend({
     {
       count = 4000,
       ingredients = {
-        {"sp-automation-science-pack-3", 1},
-        {"sp-logistic-science-pack-3", 1},
-        {"sp-chemical-science-pack-3", 1},
-        {"sp-electronic-science-pack-3", 1},
-        {"sp-geological-science-pack-3", 1},
-        {"sp-material-science-pack-3", 1},
-        {"sp-computer-science-pack-3", 1},
-        {"sp-production-science-pack-3", 1},
-        {"sp-nuclear-science-pack-3", 1},
-        {"sp-astronomical-science-pack-3", 1},
-        {"sp-utility-science-pack-3", 1},
-        {"space-science-pack", 1},
-        -- Krastorio: {"matter-tech-card", 1},
-        -- Krastorio: {"advanced-tech-card", 1},
-        -- Krastorio: {"singularity-tech-card", 1}
+        {type = "item", name = "sp-automation-science-pack-3", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-3", amount = 1},
+        {type = "item", name = "sp-material-science-pack-3", amount = 1},
+        {type = "item", name = "sp-computer-science-pack-3", amount = 1},
+        {type = "item", name = "sp-production-science-pack-3", amount = 1},
+        {type = "item", name = "sp-nuclear-science-pack-3", amount = 1},
+        {type = "item", name = "sp-astronomical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-utility-science-pack-3", amount = 1},
+        {type = "item", name = "space-science-pack", amount = 1},
+        -- Krastorio: {type = "item", name = "matter-tech-card", amount = 1},
+        -- Krastorio: {type = "item", name = "advanced-tech-card", amount = 1},
+        -- Krastorio: {type = "item", name = "singularity-tech-card", amount = 1}
       },
       time = 15
     },
@@ -5056,20 +5056,20 @@ data:extend({
     {
       count = 1500,
       ingredients = {
-        {"sp-automation-science-pack-3", 1},
-        {"sp-logistic-science-pack-3", 1},
-        {"sp-chemical-science-pack-3", 1},
-        {"sp-electronic-science-pack-3", 1},
-        {"sp-geological-science-pack-3", 1},
-        {"sp-material-science-pack-3", 1},
-        {"sp-computer-science-pack-3", 1},
-        {"sp-production-science-pack-3", 1},
-        {"sp-nuclear-science-pack-3", 1},
-        {"sp-astronomical-science-pack-3", 1},
-        {"sp-utility-science-pack-3", 1},
-        {"space-science-pack", 1},
-        -- Krastorio: {"matter-tech-card", 1},
-        -- Krastorio: {"advanced-tech-card", 1}
+        {type = "item", name = "sp-automation-science-pack-3", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-3", amount = 1},
+        {type = "item", name = "sp-material-science-pack-3", amount = 1},
+        {type = "item", name = "sp-computer-science-pack-3", amount = 1},
+        {type = "item", name = "sp-production-science-pack-3", amount = 1},
+        {type = "item", name = "sp-nuclear-science-pack-3", amount = 1},
+        {type = "item", name = "sp-astronomical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-utility-science-pack-3", amount = 1},
+        {type = "item", name = "space-science-pack", amount = 1},
+        -- Krastorio: {type = "item", name = "matter-tech-card", amount = 1},
+        -- Krastorio: {type = "item", name = "advanced-tech-card", amount = 1}
       },
       time = 15
     },
@@ -5102,21 +5102,21 @@ data:extend({
     {
       count = 3000,
       ingredients = {
-        {"sp-automation-science-pack-3", 1},
-        {"sp-logistic-science-pack-3", 1},
-        {"sp-chemical-science-pack-3", 1},
-        {"sp-electronic-science-pack-3", 1},
-        {"sp-geological-science-pack-3", 1},
-        {"sp-material-science-pack-3", 1},
-        {"sp-computer-science-pack-3", 1},
-        {"sp-production-science-pack-3", 1},
-        {"sp-nuclear-science-pack-3", 1},
-        {"sp-astronomical-science-pack-3", 1},
-        {"sp-utility-science-pack-3", 1},
-        {"space-science-pack", 1},
-        -- Krastorio: {"matter-tech-card", 1},
-        -- Krastorio: {"advanced-tech-card", 1},
-        -- Krastorio: {"singularity-tech-card", 1}
+        {type = "item", name = "sp-automation-science-pack-3", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-3", amount = 1},
+        {type = "item", name = "sp-material-science-pack-3", amount = 1},
+        {type = "item", name = "sp-computer-science-pack-3", amount = 1},
+        {type = "item", name = "sp-production-science-pack-3", amount = 1},
+        {type = "item", name = "sp-nuclear-science-pack-3", amount = 1},
+        {type = "item", name = "sp-astronomical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-utility-science-pack-3", amount = 1},
+        {type = "item", name = "space-science-pack", amount = 1},
+        -- Krastorio: {type = "item", name = "matter-tech-card", amount = 1},
+        -- Krastorio: {type = "item", name = "advanced-tech-card", amount = 1},
+        -- Krastorio: {type = "item", name = "singularity-tech-card", amount = 1}
       },
       time = 15
     },
@@ -5145,21 +5145,21 @@ data:extend({
     {
       count = 1500,
       ingredients = {
-        {"sp-automation-science-pack-3", 1},
-        {"sp-logistic-science-pack-3", 1},
-        {"sp-chemical-science-pack-3", 1},
-        {"sp-electronic-science-pack-3", 1},
-        {"sp-geological-science-pack-3", 1},
-        {"sp-material-science-pack-3", 1},
-        {"sp-computer-science-pack-3", 1},
-        {"sp-production-science-pack-3", 1},
-        {"sp-nuclear-science-pack-3", 1},
-        {"sp-astronomical-science-pack-3", 1},
-        {"sp-utility-science-pack-3", 1},
-        {"space-science-pack", 1},
-        -- Krastorio: {"matter-tech-card", 1},
-        -- Krastorio: {"advanced-tech-card", 1},
-        -- Krastorio: {"singularity-tech-card", 1}
+        {type = "item", name = "sp-automation-science-pack-3", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-3", amount = 1},
+        {type = "item", name = "sp-material-science-pack-3", amount = 1},
+        {type = "item", name = "sp-computer-science-pack-3", amount = 1},
+        {type = "item", name = "sp-production-science-pack-3", amount = 1},
+        {type = "item", name = "sp-nuclear-science-pack-3", amount = 1},
+        {type = "item", name = "sp-astronomical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-utility-science-pack-3", amount = 1},
+        {type = "item", name = "space-science-pack", amount = 1},
+        -- Krastorio: {type = "item", name = "matter-tech-card", amount = 1},
+        -- Krastorio: {type = "item", name = "advanced-tech-card", amount = 1},
+        -- Krastorio: {type = "item", name = "singularity-tech-card", amount = 1}
       },
       time = 15
     },
@@ -5189,21 +5189,21 @@ data:extend({
     {
       count = 4000,
       ingredients = {
-        {"sp-automation-science-pack-3", 1},
-        {"sp-logistic-science-pack-3", 1},
-        {"sp-chemical-science-pack-3", 1},
-        {"sp-electronic-science-pack-3", 1},
-        {"sp-geological-science-pack-3", 1},
-        {"sp-material-science-pack-3", 1},
-        {"sp-computer-science-pack-3", 1},
-        {"sp-production-science-pack-3", 1},
-        {"sp-nuclear-science-pack-3", 1},
-        {"sp-astronomical-science-pack-3", 1},
-        {"sp-utility-science-pack-3", 1},
-        {"space-science-pack", 1},
-        -- Krastorio: {"matter-tech-card", 1},
-        -- Krastorio: {"advanced-tech-card", 1},
-        -- Krastorio: {"singularity-tech-card", 1}
+        {type = "item", name = "sp-automation-science-pack-3", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-3", amount = 1},
+        {type = "item", name = "sp-material-science-pack-3", amount = 1},
+        {type = "item", name = "sp-computer-science-pack-3", amount = 1},
+        {type = "item", name = "sp-production-science-pack-3", amount = 1},
+        {type = "item", name = "sp-nuclear-science-pack-3", amount = 1},
+        {type = "item", name = "sp-astronomical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-utility-science-pack-3", amount = 1},
+        {type = "item", name = "space-science-pack", amount = 1},
+        -- Krastorio: {type = "item", name = "matter-tech-card", amount = 1},
+        -- Krastorio: {type = "item", name = "advanced-tech-card", amount = 1},
+        -- Krastorio: {type = "item", name = "singularity-tech-card", amount = 1}
       },
       time = 15
     },
@@ -5240,21 +5240,21 @@ data:extend({
     {
       count = 2000,
       ingredients = {
-        {"sp-automation-science-pack-3", 1},
-        {"sp-logistic-science-pack-3", 1},
-        {"sp-chemical-science-pack-3", 1},
-        {"sp-electronic-science-pack-3", 1},
-        {"sp-geological-science-pack-3", 1},
-        {"sp-material-science-pack-3", 1},
-        {"sp-computer-science-pack-3", 1},
-        {"sp-production-science-pack-3", 1},
-        {"sp-nuclear-science-pack-3", 1},
-        {"sp-astronomical-science-pack-3", 1},
-        {"sp-utility-science-pack-3", 1},
-        {"space-science-pack", 1},
-        -- Krastorio: {"matter-tech-card", 1},
-        -- Krastorio: {"advanced-tech-card", 1},
-        -- Krastorio: {"singularity-tech-card", 1}
+        {type = "item", name = "sp-automation-science-pack-3", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-3", amount = 1},
+        {type = "item", name = "sp-material-science-pack-3", amount = 1},
+        {type = "item", name = "sp-computer-science-pack-3", amount = 1},
+        {type = "item", name = "sp-production-science-pack-3", amount = 1},
+        {type = "item", name = "sp-nuclear-science-pack-3", amount = 1},
+        {type = "item", name = "sp-astronomical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-utility-science-pack-3", amount = 1},
+        {type = "item", name = "space-science-pack", amount = 1},
+        -- Krastorio: {type = "item", name = "matter-tech-card", amount = 1},
+        -- Krastorio: {type = "item", name = "advanced-tech-card", amount = 1},
+        -- Krastorio: {type = "item", name = "singularity-tech-card", amount = 1}
       },
       time = 15
     },
@@ -5287,21 +5287,21 @@ data:extend({
     {
       count = 2000,
       ingredients = {
-        {"sp-automation-science-pack-3", 1},
-        {"sp-logistic-science-pack-3", 1},
-        {"sp-chemical-science-pack-3", 1},
-        {"sp-electronic-science-pack-3", 1},
-        {"sp-geological-science-pack-3", 1},
-        {"sp-material-science-pack-3", 1},
-        {"sp-computer-science-pack-3", 1},
-        {"sp-production-science-pack-3", 1},
-        {"sp-nuclear-science-pack-3", 1},
-        {"sp-astronomical-science-pack-3", 1},
-        {"sp-utility-science-pack-3", 1},
-        {"space-science-pack", 1},
-        -- Krastorio: {"matter-tech-card", 1},
-        -- Krastorio: {"advanced-tech-card", 1},
-        -- Krastorio: {"singularity-tech-card", 1}
+        {type = "item", name = "sp-automation-science-pack-3", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-3", amount = 1},
+        {type = "item", name = "sp-material-science-pack-3", amount = 1},
+        {type = "item", name = "sp-computer-science-pack-3", amount = 1},
+        {type = "item", name = "sp-production-science-pack-3", amount = 1},
+        {type = "item", name = "sp-nuclear-science-pack-3", amount = 1},
+        {type = "item", name = "sp-astronomical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-utility-science-pack-3", amount = 1},
+        {type = "item", name = "space-science-pack", amount = 1},
+        -- Krastorio: {type = "item", name = "matter-tech-card", amount = 1},
+        -- Krastorio: {type = "item", name = "advanced-tech-card", amount = 1},
+        -- Krastorio: {type = "item", name = "singularity-tech-card", amount = 1}
       },
       time = 15
     },
@@ -5352,16 +5352,16 @@ data:extend({
     {
       count = 2000,
       ingredients = {
-        {"sp-automation-science-pack-3", 1},
-        {"sp-logistic-science-pack-3", 1},
-        {"sp-material-science-pack-3", 1},
-        {"sp-electronic-science-pack-3", 1},
-        {"sp-chemical-science-pack-3", 1},
-        {"sp-computer-science-pack-3", 1},
-        {"sp-production-science-pack-3", 1},
-        {"sp-nuclear-science-pack-3", 1},
-        {"sp-utility-science-pack-3", 1},
-        {"sp-astronomical-science-pack-3", 1}
+        {type = "item", name = "sp-automation-science-pack-3", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-material-science-pack-3", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-computer-science-pack-3", amount = 1},
+        {type = "item", name = "sp-production-science-pack-3", amount = 1},
+        {type = "item", name = "sp-nuclear-science-pack-3", amount = 1},
+        {type = "item", name = "sp-utility-science-pack-3", amount = 1},
+        {type = "item", name = "sp-astronomical-science-pack-3", amount = 1}
       },
       time = 15
     },
@@ -5399,20 +5399,20 @@ data:extend({
     {
       count = 2500,
       ingredients = {
-        {"sp-automation-science-pack-3", 1},
-        {"sp-logistic-science-pack-3", 1},
-        {"sp-chemical-science-pack-3", 1},
-        {"sp-electronic-science-pack-3", 1},
-        {"sp-geological-science-pack-3", 1},
-        {"sp-material-science-pack-3", 1},
-        {"sp-computer-science-pack-3", 1},
-        {"sp-production-science-pack-3", 1},
-        {"sp-nuclear-science-pack-3", 1},
-        {"sp-astronomical-science-pack-3", 1},
-        {"sp-utility-science-pack-3", 1},
-        -- Krastorio: {"matter-tech-card", 1},
-        -- Krastorio: {"advanced-tech-card", 1},
-        -- Krastorio: {"space-science-pack", 1}
+        {type = "item", name = "sp-automation-science-pack-3", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-3", amount = 1},
+        {type = "item", name = "sp-material-science-pack-3", amount = 1},
+        {type = "item", name = "sp-computer-science-pack-3", amount = 1},
+        {type = "item", name = "sp-production-science-pack-3", amount = 1},
+        {type = "item", name = "sp-nuclear-science-pack-3", amount = 1},
+        {type = "item", name = "sp-astronomical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-utility-science-pack-3", amount = 1},
+        -- Krastorio: {type = "item", name = "matter-tech-card", amount = 1},
+        -- Krastorio: {type = "item", name = "advanced-tech-card", amount = 1},
+        -- Krastorio: {type = "item", name = "space-science-pack", amount = 1}
       },
       time = 15
     },
@@ -5447,20 +5447,20 @@ data:extend({
     {
       count = 10000,
       ingredients = {
-        {"sp-automation-science-pack-3", 1},
-        {"sp-logistic-science-pack-3", 1},
-        {"sp-chemical-science-pack-3", 1},
-        {"sp-electronic-science-pack-3", 1},
-        {"sp-geological-science-pack-3", 1},
-        {"sp-material-science-pack-3", 1},
-        {"sp-computer-science-pack-3", 1},
-        {"sp-production-science-pack-3", 1},
-        {"sp-nuclear-science-pack-3", 1},
-        {"sp-astronomical-science-pack-3", 1},
-        {"sp-utility-science-pack-3", 1},
-        {"space-science-pack", 1},
-        -- Krastorio: {"matter-tech-card", 1},
-        -- Krastorio: {"advanced-tech-card", 1}
+        {type = "item", name = "sp-automation-science-pack-3", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-3", amount = 1},
+        {type = "item", name = "sp-material-science-pack-3", amount = 1},
+        {type = "item", name = "sp-computer-science-pack-3", amount = 1},
+        {type = "item", name = "sp-production-science-pack-3", amount = 1},
+        {type = "item", name = "sp-nuclear-science-pack-3", amount = 1},
+        {type = "item", name = "sp-astronomical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-utility-science-pack-3", amount = 1},
+        {type = "item", name = "space-science-pack", amount = 1},
+        -- Krastorio: {type = "item", name = "matter-tech-card", amount = 1},
+        -- Krastorio: {type = "item", name = "advanced-tech-card", amount = 1}
       },
       time = 15
     },
@@ -5541,20 +5541,20 @@ data:extend({
     {
       count = 1000,
       ingredients = {
-        {"sp-automation-science-pack-3", 1},
-        {"sp-logistic-science-pack-3", 1},
-        {"sp-chemical-science-pack-3", 1},
-        {"sp-electronic-science-pack-3", 1},
-        {"sp-geological-science-pack-3", 1},
-        {"sp-material-science-pack-3", 1},
-        {"sp-computer-science-pack-3", 1},
-        {"sp-production-science-pack-3", 1},
-        {"sp-nuclear-science-pack-3", 1},
-        {"sp-astronomical-science-pack-3", 1},
-        {"sp-utility-science-pack-3", 1},
-        {"space-science-pack", 1},
-        -- Krastorio: {"matter-tech-card", 1},
-        -- Krastorio: {"advanced-tech-card", 1}
+        {type = "item", name = "sp-automation-science-pack-3", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-3", amount = 1},
+        {type = "item", name = "sp-material-science-pack-3", amount = 1},
+        {type = "item", name = "sp-computer-science-pack-3", amount = 1},
+        {type = "item", name = "sp-production-science-pack-3", amount = 1},
+        {type = "item", name = "sp-nuclear-science-pack-3", amount = 1},
+        {type = "item", name = "sp-astronomical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-utility-science-pack-3", amount = 1},
+        {type = "item", name = "space-science-pack", amount = 1},
+        -- Krastorio: {type = "item", name = "matter-tech-card", amount = 1},
+        -- Krastorio: {type = "item", name = "advanced-tech-card", amount = 1}
       },
       time = 15
     },
@@ -5659,20 +5659,20 @@ data:extend({
     {
       count = 1000,
       ingredients = {
-        {"sp-automation-science-pack-3", 1},
-        {"sp-logistic-science-pack-3", 1},
-        {"sp-chemical-science-pack-3", 1},
-        {"sp-electronic-science-pack-3", 1},
-        {"sp-geological-science-pack-3", 1},
-        {"sp-material-science-pack-3", 1},
-        {"sp-computer-science-pack-3", 1},
-        {"sp-production-science-pack-3", 1},
-        {"sp-nuclear-science-pack-3", 1},
-        {"sp-astronomical-science-pack-3", 1},
-        {"sp-utility-science-pack-3", 1},
-        {"space-science-pack", 1},
-        -- Krastorio: {"matter-tech-card", 1},
-        -- Krastorio: {"advanced-tech-card", 1}
+        {type = "item", name = "sp-automation-science-pack-3", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-3", amount = 1},
+        {type = "item", name = "sp-material-science-pack-3", amount = 1},
+        {type = "item", name = "sp-computer-science-pack-3", amount = 1},
+        {type = "item", name = "sp-production-science-pack-3", amount = 1},
+        {type = "item", name = "sp-nuclear-science-pack-3", amount = 1},
+        {type = "item", name = "sp-astronomical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-utility-science-pack-3", amount = 1},
+        {type = "item", name = "space-science-pack", amount = 1},
+        -- Krastorio: {type = "item", name = "matter-tech-card", amount = 1},
+        -- Krastorio: {type = "item", name = "advanced-tech-card", amount = 1}
       },
       time = 15
     },
@@ -5697,9 +5697,9 @@ data:extend({
     {
       count = 100,
       ingredients = {
-        {"basic-tech-card", 1},
-        {"automation-science-pack", 1},
-        {"logistic-science-pack", 1}
+        {type = "item", name = "basic-tech-card", amount = 1},
+        {type = "item", name = "automation-science-pack", amount = 1},
+        {type = "item", name = "logistic-science-pack", amount = 1}
       },
       time = 15
     },
@@ -5723,11 +5723,11 @@ data:extend({
     {
       count = 100,
       ingredients = {
-        {"basic-tech-card", 1},
-        {"automation-science-pack", 1},
-        {"logistic-science-pack", 1},
-        {"sp-material-science-pack-1", 1},
-        {"sp-electronic-science-pack-1", 1}
+        {type = "item", name = "basic-tech-card", amount = 1},
+        {type = "item", name = "automation-science-pack", amount = 1},
+        {type = "item", name = "logistic-science-pack", amount = 1},
+        {type = "item", name = "sp-material-science-pack-1", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-1", amount = 1}
       },
       time = 15
     },
@@ -5751,9 +5751,9 @@ data:extend({
     {
       count = 100,
       ingredients = {
-        {"basic-tech-card", 1},
-        {"automation-science-pack", 1},
-        {"logistic-science-pack", 1}
+        {type = "item", name = "basic-tech-card", amount = 1},
+        {type = "item", name = "automation-science-pack", amount = 1},
+        {type = "item", name = "logistic-science-pack", amount = 1}
       },
       time = 15
     },
@@ -5780,12 +5780,12 @@ data:extend({
     {
       count = 200,
       ingredients = {
-        {"automation-science-pack", 1},
-        {"logistic-science-pack", 1},
-        {"chemical-science-pack", 1},
-        {"sp-electronic-science-pack-1", 1},
-        {"sp-geological-science-pack-1", 1},
-        {"sp-material-science-pack-1", 1}
+        {type = "item", name = "automation-science-pack", amount = 1},
+        {type = "item", name = "logistic-science-pack", amount = 1},
+        {type = "item", name = "chemical-science-pack", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-1", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-1", amount = 1},
+        {type = "item", name = "sp-material-science-pack-1", amount = 1}
       },
       time = 15
     },
@@ -5811,12 +5811,12 @@ data:extend({
     {
       count = 200,
       ingredients = {
-        {"sp-automation-science-pack-2", 1},
-        {"logistic-science-pack", 1},
-        {"chemical-science-pack", 1},
-        {"sp-electronic-science-pack-1", 1},
-        {"sp-geological-science-pack-1", 1},
-        {"sp-material-science-pack-1", 1}
+        {type = "item", name = "sp-automation-science-pack-2", amount = 1},
+        {type = "item", name = "logistic-science-pack", amount = 1},
+        {type = "item", name = "chemical-science-pack", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-1", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-1", amount = 1},
+        {type = "item", name = "sp-material-science-pack-1", amount = 1}
       },
       time = 15
     },
@@ -5841,13 +5841,13 @@ data:extend({
     {
       count = 200,
       ingredients = {
-        {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"military-science-pack", 1},
-        {"chemical-science-pack", 1},
-        {"sp-electronic-science-pack-1", 1},
-        {"sp-geological-science-pack-1", 1},
-        {"sp-material-science-pack-1", 1}
+        {type = "item", name = "sp-automation-science-pack-2", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-2", amount = 1},
+        {type = "item", name = "military-science-pack", amount = 1},
+        {type = "item", name = "chemical-science-pack", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-1", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-1", amount = 1},
+        {type = "item", name = "sp-material-science-pack-1", amount = 1}
       },
       time = 15
     },
@@ -5873,12 +5873,12 @@ data:extend({
     {
       count = 200,
       ingredients = {
-        {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"chemical-science-pack", 1},
-        {"sp-electronic-science-pack-1", 1},
-        {"sp-geological-science-pack-1", 1},
-        {"sp-material-science-pack-1", 1}
+        {type = "item", name = "sp-automation-science-pack-2", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-2", amount = 1},
+        {type = "item", name = "chemical-science-pack", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-1", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-1", amount = 1},
+        {type = "item", name = "sp-material-science-pack-1", amount = 1}
       },
       time = 15
     },
@@ -5905,12 +5905,12 @@ data:extend({
     {
       count = 200,
       ingredients = {
-        {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"chemical-science-pack", 1},
-        {"sp-electronic-science-pack-1", 1},
-        {"sp-material-science-pack-2", 1},
-        {"production-science-pack", 1}
+        {type = "item", name = "sp-automation-science-pack-2", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-2", amount = 1},
+        {type = "item", name = "chemical-science-pack", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-1", amount = 1},
+        {type = "item", name = "sp-material-science-pack-2", amount = 1},
+        {type = "item", name = "production-science-pack", amount = 1}
       },
       time = 15
     },
@@ -5935,12 +5935,12 @@ data:extend({
     {
       count = 200,
       ingredients = {
-        {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"chemical-science-pack", 1},
-        {"sp-electronic-science-pack-1", 1},
-        {"sp-geological-science-pack-1", 1},
-        {"sp-material-science-pack-1", 1}
+        {type = "item", name = "sp-automation-science-pack-2", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-2", amount = 1},
+        {type = "item", name = "chemical-science-pack", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-1", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-1", amount = 1},
+        {type = "item", name = "sp-material-science-pack-1", amount = 1}
       },
       time = 15
     },
@@ -5965,13 +5965,13 @@ data:extend({
     {
       count = 300,
       ingredients = {
-        {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"chemical-science-pack", 1},
-        {"sp-electronic-science-pack-1", 1},
-        {"sp-geological-science-pack-1", 1},
-        {"sp-material-science-pack-1", 1},
-        {"production-science-pack", 1}
+        {type = "item", name = "sp-automation-science-pack-2", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-2", amount = 1},
+        {type = "item", name = "chemical-science-pack", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-1", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-1", amount = 1},
+        {type = "item", name = "sp-material-science-pack-1", amount = 1},
+        {type = "item", name = "production-science-pack", amount = 1}
       },
       time = 15
     },
@@ -5996,14 +5996,14 @@ data:extend({
     {
       count = 250,
       ingredients = {
-        {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"sp-material-science-pack-2", 1},
-        {"sp-electronic-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1},
-        {"sp-computer-science-pack-2", 1},
-        {"production-science-pack", 1},
-        {"utility-science-pack", 1}
+        {type = "item", name = "sp-automation-science-pack-2", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-2", amount = 1},
+        {type = "item", name = "sp-material-science-pack-2", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-2", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-2", amount = 1},
+        {type = "item", name = "sp-computer-science-pack-2", amount = 1},
+        {type = "item", name = "production-science-pack", amount = 1},
+        {type = "item", name = "utility-science-pack", amount = 1}
       },
       time = 15
     },
@@ -6028,12 +6028,12 @@ data:extend({
     {
       count = 250,
       ingredients = {
-        {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1},
-        {"sp-electronic-science-pack-2", 1},
-        {"production-science-pack", 1},
-        {"sp-material-science-pack-2", 1}
+        {type = "item", name = "sp-automation-science-pack-2", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-2", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-2", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-2", amount = 1},
+        {type = "item", name = "production-science-pack", amount = 1},
+        {type = "item", name = "sp-material-science-pack-2", amount = 1}
       },
       time = 15
     },
@@ -6059,13 +6059,13 @@ data:extend({
     {
       count = 250,
       ingredients = {
-        {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1},
-        {"sp-electronic-science-pack-2", 1},
-        {"production-science-pack", 1},
-        {"sp-material-science-pack-2", 1},
-        {"utility-science-pack", 1}
+        {type = "item", name = "sp-automation-science-pack-2", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-2", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-2", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-2", amount = 1},
+        {type = "item", name = "production-science-pack", amount = 1},
+        {type = "item", name = "sp-material-science-pack-2", amount = 1},
+        {type = "item", name = "utility-science-pack", amount = 1}
       },
       time = 15
     },
@@ -6092,13 +6092,13 @@ data:extend({
     {
       count = 500,
       ingredients = {
-        {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1},
-        {"sp-electronic-science-pack-2", 1},
-        {"sp-geological-science-pack-2", 1},
-        {"sp-astronomical-science-pack-2", 1},
-        {"sp-material-science-pack-2", 1}
+        {type = "item", name = "sp-automation-science-pack-2", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-2", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-2", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-2", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-2", amount = 1},
+        {type = "item", name = "sp-astronomical-science-pack-2", amount = 1},
+        {type = "item", name = "sp-material-science-pack-2", amount = 1}
       },
       time = 15
     },
@@ -6123,13 +6123,13 @@ data:extend({
     {
       count = 500,
       ingredients = {
-        {"sp-automation-science-pack-3", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1},
-        {"sp-electronic-science-pack-2", 1},
-        {"sp-geological-science-pack-2", 1},
-        {"sp-astronomical-science-pack-2", 1},
-        {"sp-material-science-pack-2", 1}
+        {type = "item", name = "sp-automation-science-pack-3", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-2", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-2", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-2", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-2", amount = 1},
+        {type = "item", name = "sp-astronomical-science-pack-2", amount = 1},
+        {type = "item", name = "sp-material-science-pack-2", amount = 1}
       },
       time = 15
     },
@@ -6154,14 +6154,14 @@ data:extend({
     {
       count = 500,
       ingredients = {
-        {"sp-automation-science-pack-3", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"sp-military-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1},
-        {"sp-electronic-science-pack-2", 1},
-        {"sp-geological-science-pack-2", 1},
-        {"sp-astronomical-science-pack-2", 1},
-        {"sp-material-science-pack-2", 1}
+        {type = "item", name = "sp-automation-science-pack-3", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-2", amount = 1},
+        {type = "item", name = "sp-military-science-pack-2", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-2", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-2", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-2", amount = 1},
+        {type = "item", name = "sp-astronomical-science-pack-2", amount = 1},
+        {type = "item", name = "sp-material-science-pack-2", amount = 1}
       },
       time = 15
     },
@@ -6186,13 +6186,13 @@ data:extend({
     {
       count = 500,
       ingredients = {
-        {"sp-automation-science-pack-3", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1},
-        {"sp-electronic-science-pack-2", 1},
-        {"sp-geological-science-pack-2", 1},
-        {"sp-astronomical-science-pack-2", 1},
-        {"sp-material-science-pack-2", 1}
+        {type = "item", name = "sp-automation-science-pack-3", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-2", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-2", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-2", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-2", amount = 1},
+        {type = "item", name = "sp-astronomical-science-pack-2", amount = 1},
+        {type = "item", name = "sp-material-science-pack-2", amount = 1}
       },
       time = 15
     },
@@ -6217,13 +6217,13 @@ data:extend({
     {
       count = 500,
       ingredients = {
-        {"sp-automation-science-pack-3", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1},
-        {"sp-electronic-science-pack-2", 1},
-        {"sp-geological-science-pack-2", 1},
-        {"sp-astronomical-science-pack-2", 1},
-        {"sp-material-science-pack-2", 1}
+        {type = "item", name = "sp-automation-science-pack-3", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-2", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-2", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-2", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-2", amount = 1},
+        {type = "item", name = "sp-astronomical-science-pack-2", amount = 1},
+        {type = "item", name = "sp-material-science-pack-2", amount = 1}
       },
       time = 15
     },
@@ -6248,13 +6248,13 @@ data:extend({
     {
       count = 500,
       ingredients = {
-        {"sp-automation-science-pack-3", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1},
-        {"sp-electronic-science-pack-2", 1},
-        {"sp-geological-science-pack-2", 1},
-        {"sp-astronomical-science-pack-2", 1},
-        {"sp-material-science-pack-2", 1}
+        {type = "item", name = "sp-automation-science-pack-3", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-2", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-2", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-2", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-2", amount = 1},
+        {type = "item", name = "sp-astronomical-science-pack-2", amount = 1},
+        {type = "item", name = "sp-material-science-pack-2", amount = 1}
       },
       time = 15
     },
@@ -6280,13 +6280,13 @@ data:extend({
     {
       count = 500,
       ingredients = {
-        {"sp-automation-science-pack-3", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1},
-        {"sp-electronic-science-pack-2", 1},
-        {"sp-geological-science-pack-2", 1},
-        {"sp-astronomical-science-pack-2", 1},
-        {"sp-material-science-pack-2", 1}
+        {type = "item", name = "sp-automation-science-pack-3", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-2", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-2", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-2", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-2", amount = 1},
+        {type = "item", name = "sp-astronomical-science-pack-2", amount = 1},
+        {type = "item", name = "sp-material-science-pack-2", amount = 1}
       },
       time = 15
     },
@@ -6312,13 +6312,13 @@ data:extend({
     {
       count = 750,
       ingredients = {
-        {"sp-automation-science-pack-3", 1},
-        {"sp-logistic-science-pack-3", 1},
-        {"sp-chemical-science-pack-2", 1}, 
-        {"sp-electronic-science-pack-2", 1},
-        {"sp-geological-science-pack-2", 1},
-        {"sp-astronomical-science-pack-2", 1},
-        {"sp-material-science-pack-2", 1}
+        {type = "item", name = "sp-automation-science-pack-3", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-2", amount = 1}, 
+        {type = "item", name = "sp-electronic-science-pack-2", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-2", amount = 1},
+        {type = "item", name = "sp-astronomical-science-pack-2", amount = 1},
+        {type = "item", name = "sp-material-science-pack-2", amount = 1}
       },
       time = 15
     },
@@ -6347,18 +6347,18 @@ data:extend({
     {
       count = 750,
       ingredients = {
-        {"sp-automation-science-pack-3", 1},
-        {"sp-logistic-science-pack-3", 1},
-        {"sp-chemical-science-pack-3", 1},
-        {"sp-electronic-science-pack-3", 1},
-        {"sp-geological-science-pack-3", 1},
-        {"sp-material-science-pack-3", 1},
-        {"sp-computer-science-pack-3", 1},
-        {"sp-production-science-pack-3", 1},
-        {"sp-nuclear-science-pack-3", 1},
-        {"sp-astronomical-science-pack-2", 1},
-        {"matter-tech-card", 1},
-        {"sp-utility-science-pack-3", 1}
+        {type = "item", name = "sp-automation-science-pack-3", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-3", amount = 1},
+        {type = "item", name = "sp-material-science-pack-3", amount = 1},
+        {type = "item", name = "sp-computer-science-pack-3", amount = 1},
+        {type = "item", name = "sp-production-science-pack-3", amount = 1},
+        {type = "item", name = "sp-nuclear-science-pack-3", amount = 1},
+        {type = "item", name = "sp-astronomical-science-pack-2", amount = 1},
+        {type = "item", name = "matter-tech-card", amount = 1},
+        {type = "item", name = "sp-utility-science-pack-3", amount = 1}
       },
       time = 15
     },
@@ -6383,14 +6383,14 @@ data:extend({
     {
       count = 750,
       ingredients = {
-        {"sp-automation-science-pack-3", 1},
-        {"sp-logistic-science-pack-3", 1},
-        {"sp-chemical-science-pack-3", 1},
-        {"sp-electronic-science-pack-3", 1},
-        {"sp-material-science-pack-3", 1},
-        {"sp-geological-science-pack-2", 1},
-        {"production-science-pack", 1},
-        {"utility-science-pack", 1}
+        {type = "item", name = "sp-automation-science-pack-3", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-material-science-pack-3", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-2", amount = 1},
+        {type = "item", name = "production-science-pack", amount = 1},
+        {type = "item", name = "utility-science-pack", amount = 1}
       },
       time = 15
     },
@@ -6416,16 +6416,16 @@ data:extend({
     {
       count = 750,
       ingredients = {
-        {"sp-automation-science-pack-3", 1},
-        {"sp-logistic-science-pack-3", 1},
-        {"sp-chemical-science-pack-3", 1},
-        {"sp-electronic-science-pack-3", 1},
-        {"sp-geological-science-pack-3", 1},
-        {"sp-astronomical-science-pack-2", 1},
-        {"sp-material-science-pack-3", 1},
-        {"sp-nuclear-science-pack-2", 1},
-        {"sp-computer-science-pack-3", 1},
-        {"utility-science-pack", 1},
+        {type = "item", name = "sp-automation-science-pack-3", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-3", amount = 1},
+        {type = "item", name = "sp-astronomical-science-pack-2", amount = 1},
+        {type = "item", name = "sp-material-science-pack-3", amount = 1},
+        {type = "item", name = "sp-nuclear-science-pack-2", amount = 1},
+        {type = "item", name = "sp-computer-science-pack-3", amount = 1},
+        {type = "item", name = "utility-science-pack", amount = 1},
       },
       time = 15
     },
@@ -6451,16 +6451,16 @@ data:extend({
     {
       count = 750,
       ingredients = {
-        {"sp-automation-science-pack-3", 1},
-        {"sp-logistic-science-pack-3", 1},
-        {"sp-chemical-science-pack-3", 1},
-        {"sp-electronic-science-pack-3", 1},
-        {"sp-geological-science-pack-3", 1},
-        {"sp-astronomical-science-pack-2", 1},
-        {"sp-material-science-pack-3", 1},
-        {"sp-nuclear-science-pack-3", 1},
-        {"sp-computer-science-pack-3", 1},
-        {"utility-science-pack", 1},
+        {type = "item", name = "sp-automation-science-pack-3", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-3", amount = 1},
+        {type = "item", name = "sp-astronomical-science-pack-2", amount = 1},
+        {type = "item", name = "sp-material-science-pack-3", amount = 1},
+        {type = "item", name = "sp-nuclear-science-pack-3", amount = 1},
+        {type = "item", name = "sp-computer-science-pack-3", amount = 1},
+        {type = "item", name = "utility-science-pack", amount = 1},
       },
       time = 15
     },
@@ -6486,21 +6486,21 @@ data:extend({
     {
       count = 2500,
       ingredients = {
-        {"sp-automation-science-pack-3", 1},
-        {"sp-logistic-science-pack-3", 1},
-        {"sp-chemical-science-pack-3", 1},
-        {"sp-electronic-science-pack-3", 1},
-        {"sp-geological-science-pack-3", 1},
-        {"sp-material-science-pack-3", 1},
-        {"sp-computer-science-pack-3", 1},
-        {"sp-production-science-pack-3", 1},
-        {"sp-nuclear-science-pack-3", 1},
-        {"sp-astronomical-science-pack-3", 1},
-        {"sp-utility-science-pack-3", 1},
-        {"space-science-pack", 1},
-        -- Krastorio: {"matter-tech-card", 1},
-        -- Krastorio: {"advanced-tech-card", 1},
-        -- Krastorio: {"singularity-tech-card", 1}
+        {type = "item", name = "sp-automation-science-pack-3", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-3", amount = 1},
+        {type = "item", name = "sp-material-science-pack-3", amount = 1},
+        {type = "item", name = "sp-computer-science-pack-3", amount = 1},
+        {type = "item", name = "sp-production-science-pack-3", amount = 1},
+        {type = "item", name = "sp-nuclear-science-pack-3", amount = 1},
+        {type = "item", name = "sp-astronomical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-utility-science-pack-3", amount = 1},
+        {type = "item", name = "space-science-pack", amount = 1},
+        -- Krastorio: {type = "item", name = "matter-tech-card", amount = 1},
+        -- Krastorio: {type = "item", name = "advanced-tech-card", amount = 1},
+        -- Krastorio: {type = "item", name = "singularity-tech-card", amount = 1}
       },
       time = 15
     },
@@ -6541,21 +6541,21 @@ data:extend({
       count_formula = "((L-3)^2)*1000",
       ingredients =
       {
-        {"sp-automation-science-pack-3", 1},
-        {"sp-logistic-science-pack-3", 1},
-        {"sp-chemical-science-pack-3", 1},
-        {"sp-electronic-science-pack-3", 1},
-        {"sp-geological-science-pack-3", 1},
-        {"sp-material-science-pack-3", 1},
-        {"sp-computer-science-pack-3", 1},
-        {"sp-production-science-pack-3", 1},
-        {"sp-nuclear-science-pack-3", 1},
-        {"sp-astronomical-science-pack-3", 1},
-        {"sp-utility-science-pack-3", 1},
-        {"space-science-pack", 1},
-        -- Krastorio: {"matter-tech-card", 1},
-        -- Krastorio: {"advanced-tech-card", 1},
-        -- Krastorio: {"singularity-tech-card", 1}
+        {type = "item", name = "sp-automation-science-pack-3", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-3", amount = 1},
+        {type = "item", name = "sp-material-science-pack-3", amount = 1},
+        {type = "item", name = "sp-computer-science-pack-3", amount = 1},
+        {type = "item", name = "sp-production-science-pack-3", amount = 1},
+        {type = "item", name = "sp-nuclear-science-pack-3", amount = 1},
+        {type = "item", name = "sp-astronomical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-utility-science-pack-3", amount = 1},
+        {type = "item", name = "space-science-pack", amount = 1},
+        -- Krastorio: {type = "item", name = "matter-tech-card", amount = 1},
+        -- Krastorio: {type = "item", name = "advanced-tech-card", amount = 1},
+        -- Krastorio: {type = "item", name = "singularity-tech-card", amount = 1}
       },
       time = 60
     },
@@ -6595,22 +6595,22 @@ data:extend({
       count_formula = "((L-4)^2)*1000",
       ingredients =
       {
-        {"sp-automation-science-pack-3", 1},
-        {"sp-logistic-science-pack-3", 1},
-        {"sp-chemical-science-pack-3", 1},
-        {"sp-electronic-science-pack-3", 1},
-        {"sp-geological-science-pack-3", 1},
-        {"sp-material-science-pack-3", 1},
-        {"sp-computer-science-pack-3", 1},
-        {"sp-production-science-pack-3", 1},
-        {"sp-nuclear-science-pack-3", 1},
-        {"sp-astronomical-science-pack-3", 1},
-        {"sp-utility-science-pack-3", 1},
-        {"space-science-pack", 1},
-        {"sp-uniformity-science-pack", 1},
-        -- Krastorio: {"matter-tech-card", 1},
-        -- Krastorio: {"advanced-tech-card", 1},
-        -- Krastorio: {"singularity-tech-card", 1}
+        {type = "item", name = "sp-automation-science-pack-3", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-3", amount = 1},
+        {type = "item", name = "sp-material-science-pack-3", amount = 1},
+        {type = "item", name = "sp-computer-science-pack-3", amount = 1},
+        {type = "item", name = "sp-production-science-pack-3", amount = 1},
+        {type = "item", name = "sp-nuclear-science-pack-3", amount = 1},
+        {type = "item", name = "sp-astronomical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-utility-science-pack-3", amount = 1},
+        {type = "item", name = "space-science-pack", amount = 1},
+        {type = "item", name = "sp-uniformity-science-pack", amount = 1},
+        -- Krastorio: {type = "item", name = "matter-tech-card", amount = 1},
+        -- Krastorio: {type = "item", name = "advanced-tech-card", amount = 1},
+        -- Krastorio: {type = "item", name = "singularity-tech-card", amount = 1}
       },
       time = 60
     },
@@ -6650,22 +6650,22 @@ data:extend({
       count_formula = "((L-6)^2)*1000+1000",
       ingredients =
       {
-        {"sp-automation-science-pack-3", 1},
-        {"sp-logistic-science-pack-3", 1},
-        {"sp-chemical-science-pack-3", 1},
-        {"sp-electronic-science-pack-3", 1},
-        {"sp-geological-science-pack-3", 1},
-        {"sp-material-science-pack-3", 1},
-        {"sp-computer-science-pack-3", 1},
-        {"sp-production-science-pack-3", 1},
-        {"sp-nuclear-science-pack-3", 1},
-        {"sp-astronomical-science-pack-3", 1},
-        {"sp-utility-science-pack-3", 1},
-        {"space-science-pack", 1},
-        {"sp-uniformity-science-pack", 1},
-        -- Krastorio: {"matter-tech-card", 1},
-        -- Krastorio: {"advanced-tech-card", 1},
-        -- Krastorio: {"singularity-tech-card", 1}
+        {type = "item", name = "sp-automation-science-pack-3", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-3", amount = 1},
+        {type = "item", name = "sp-material-science-pack-3", amount = 1},
+        {type = "item", name = "sp-computer-science-pack-3", amount = 1},
+        {type = "item", name = "sp-production-science-pack-3", amount = 1},
+        {type = "item", name = "sp-nuclear-science-pack-3", amount = 1},
+        {type = "item", name = "sp-astronomical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-utility-science-pack-3", amount = 1},
+        {type = "item", name = "space-science-pack", amount = 1},
+        {type = "item", name = "sp-uniformity-science-pack", amount = 1},
+        -- Krastorio: {type = "item", name = "matter-tech-card", amount = 1},
+        -- Krastorio: {type = "item", name = "advanced-tech-card", amount = 1},
+        -- Krastorio: {type = "item", name = "singularity-tech-card", amount = 1}
       },
       time = 60
     },
@@ -6709,20 +6709,20 @@ data:extend({
       count_formula = "((L-7)^2)*5000",
       ingredients =
       {
-        {"sp-automation-science-pack-3", 1},
-        {"sp-logistic-science-pack-3", 1},
-        {"sp-chemical-science-pack-3", 1},
-        {"sp-electronic-science-pack-3", 1},
-        {"sp-geological-science-pack-3", 1},
-        {"sp-material-science-pack-3", 1},
-        {"sp-computer-science-pack-3", 1},
-        {"sp-production-science-pack-3", 1},
-        {"sp-nuclear-science-pack-3", 1},
-        {"sp-astronomical-science-pack-3", 1},
-        {"sp-utility-science-pack-3", 1},
-        {"space-science-pack", 1},
-        -- Krastorio: {"matter-tech-card", 1},
-        -- Krastorio: {"advanced-tech-card", 1},
+        {type = "item", name = "sp-automation-science-pack-3", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-3", amount = 1},
+        {type = "item", name = "sp-material-science-pack-3", amount = 1},
+        {type = "item", name = "sp-computer-science-pack-3", amount = 1},
+        {type = "item", name = "sp-production-science-pack-3", amount = 1},
+        {type = "item", name = "sp-nuclear-science-pack-3", amount = 1},
+        {type = "item", name = "sp-astronomical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-utility-science-pack-3", amount = 1},
+        {type = "item", name = "space-science-pack", amount = 1},
+        -- Krastorio: {type = "item", name = "matter-tech-card", amount = 1},
+        -- Krastorio: {type = "item", name = "advanced-tech-card", amount = 1},
       },
       time = 60
     },
@@ -6766,22 +6766,22 @@ data:extend({
       count_formula = "((L-7)^2)*5000",
       ingredients =
       {
-        {"sp-automation-science-pack-3", 1},
-        {"sp-logistic-science-pack-3", 1},
-        {"sp-chemical-science-pack-3", 1},
-        {"sp-electronic-science-pack-3", 1},
-        {"sp-geological-science-pack-3", 1},
-        {"sp-material-science-pack-3", 1},
-        {"sp-computer-science-pack-3", 1},
-        {"sp-production-science-pack-3", 1},
-        {"sp-nuclear-science-pack-3", 1},
-        {"sp-astronomical-science-pack-3", 1},
-        {"sp-utility-science-pack-3", 1},
-        {"space-science-pack", 1},
-        {"sp-uniformity-science-pack", 1},
-        -- Krastorio: {"matter-tech-card", 1},
-        -- Krastorio: {"advanced-tech-card", 1},
-        -- Krastorio: {"singularity-tech-card", 1}
+        {type = "item", name = "sp-automation-science-pack-3", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-3", amount = 1},
+        {type = "item", name = "sp-material-science-pack-3", amount = 1},
+        {type = "item", name = "sp-computer-science-pack-3", amount = 1},
+        {type = "item", name = "sp-production-science-pack-3", amount = 1},
+        {type = "item", name = "sp-nuclear-science-pack-3", amount = 1},
+        {type = "item", name = "sp-astronomical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-utility-science-pack-3", amount = 1},
+        {type = "item", name = "space-science-pack", amount = 1},
+        {type = "item", name = "sp-uniformity-science-pack", amount = 1},
+        -- Krastorio: {type = "item", name = "matter-tech-card", amount = 1},
+        -- Krastorio: {type = "item", name = "advanced-tech-card", amount = 1},
+        -- Krastorio: {type = "item", name = "singularity-tech-card", amount = 1}
       },
       time = 60
     },
@@ -6821,22 +6821,22 @@ data:extend({
       count_formula = "((L-7)^2)*1000",
       ingredients =
       {
-        {"sp-automation-science-pack-3", 1},
-        {"sp-logistic-science-pack-3", 1},
-        {"sp-chemical-science-pack-3", 1},
-        {"sp-electronic-science-pack-3", 1},
-        {"sp-geological-science-pack-3", 1},
-        {"sp-material-science-pack-3", 1},
-        {"sp-computer-science-pack-3", 1},
-        {"sp-production-science-pack-3", 1},
-        {"sp-nuclear-science-pack-3", 1},
-        {"sp-astronomical-science-pack-3", 1},
-        {"sp-utility-science-pack-3", 1},
-        {"space-science-pack", 1},
-        {"sp-uniformity-science-pack", 1},
-        -- Krastorio: {"matter-tech-card", 1},
-        -- Krastorio: {"advanced-tech-card", 1},
-        -- Krastorio: {"singularity-tech-card", 1}
+        {type = "item", name = "sp-automation-science-pack-3", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-3", amount = 1},
+        {type = "item", name = "sp-material-science-pack-3", amount = 1},
+        {type = "item", name = "sp-computer-science-pack-3", amount = 1},
+        {type = "item", name = "sp-production-science-pack-3", amount = 1},
+        {type = "item", name = "sp-nuclear-science-pack-3", amount = 1},
+        {type = "item", name = "sp-astronomical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-utility-science-pack-3", amount = 1},
+        {type = "item", name = "space-science-pack", amount = 1},
+        {type = "item", name = "sp-uniformity-science-pack", amount = 1},
+        -- Krastorio: {type = "item", name = "matter-tech-card", amount = 1},
+        -- Krastorio: {type = "item", name = "advanced-tech-card", amount = 1},
+        -- Krastorio: {type = "item", name = "singularity-tech-card", amount = 1}
       },
       time = 60
     },
@@ -6876,22 +6876,22 @@ data:extend({
       count_formula = "(L-6)*1000",
       ingredients =
       {
-        {"sp-automation-science-pack-3", 1},
-        {"sp-logistic-science-pack-3", 1},
-        {"sp-chemical-science-pack-3", 1},
-        {"sp-electronic-science-pack-3", 1},
-        {"sp-geological-science-pack-3", 1},
-        {"sp-material-science-pack-3", 1},
-        {"sp-computer-science-pack-3", 1},
-        {"sp-production-science-pack-3", 1},
-        {"sp-nuclear-science-pack-3", 1},
-        {"sp-astronomical-science-pack-3", 1},
-        {"sp-utility-science-pack-3", 1},
-        {"space-science-pack", 1},
-        {"sp-uniformity-science-pack", 1},
-        -- Krastorio: {"matter-tech-card", 1},
-        -- Krastorio: {"advanced-tech-card", 1},
-        -- Krastorio: {"singularity-tech-card", 1}
+        {type = "item", name = "sp-automation-science-pack-3", amount = 1},
+        {type = "item", name = "sp-logistic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-chemical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-electronic-science-pack-3", amount = 1},
+        {type = "item", name = "sp-geological-science-pack-3", amount = 1},
+        {type = "item", name = "sp-material-science-pack-3", amount = 1},
+        {type = "item", name = "sp-computer-science-pack-3", amount = 1},
+        {type = "item", name = "sp-production-science-pack-3", amount = 1},
+        {type = "item", name = "sp-nuclear-science-pack-3", amount = 1},
+        {type = "item", name = "sp-astronomical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-utility-science-pack-3", amount = 1},
+        {type = "item", name = "space-science-pack", amount = 1},
+        {type = "item", name = "sp-uniformity-science-pack", amount = 1},
+        -- Krastorio: {type = "item", name = "matter-tech-card", amount = 1},
+        -- Krastorio: {type = "item", name = "advanced-tech-card", amount = 1},
+        -- Krastorio: {type = "item", name = "singularity-tech-card", amount = 1}
       },
       time = 60
     },

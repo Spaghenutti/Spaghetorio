@@ -2,7 +2,7 @@ data:extend({
   {
     type = "assembling-machine", --type = "furnace",
     name = "kr-fusion-reactor",
-    icon = kr_entities_icons_path .. "fusion-reactor.png",
+    icon = "__Spaghetorio__/graphics/krastorio/icons/entities/fusion-reactor.png",
     icon_size = 64,
     icon_mipmaps = 4,
     flags = { "placeable-neutral", "placeable-player", "player-creation" },
@@ -21,7 +21,7 @@ data:extend({
       {
         production_type = "input",
         pipe_covers = pipecoverspictures(),
-        pipe_picture = kr_pipe_path,
+        pipe_picture = sp_kr_pipe_path,
         base_area = 10,
         base_level = -1,
         pipe_connections = { { type = "input", position = { 0, 8 } } },
@@ -29,24 +29,24 @@ data:extend({
       {
         production_type = "output",
         pipe_covers = pipecoverspictures(),
-        pipe_picture = kr_pipe_path,
+        pipe_picture = sp_kr_pipe_path,
         base_area = 1000,
         base_level = 1,
         pipe_connections = { { type = "output", position = { 0, -8 } } },
       },
-      off_when_no_fluid_recipe = false,
+      fluid_boxes_off_when_no_fluid_recipe = false,
     },
     collision_box = { { -7.25, -7.25 }, { 7.25, 7.25 } },
     selection_box = { { -7.5, -7.5 }, { 7.5, 7.5 } },
     animation = {
       layers = {
         {
-          filename = kr_entities_path .. "fusion-reactor/fusion-reactor.png",
+          filename = "__Spaghetorio__/graphics/krastorio/entities/fusion-reactor/fusion-reactor.png",
           width = 550,
           height = 550,
           shift = { 1.01, 0 },
           hr_version = {
-            filename = kr_entities_path .. "fusion-reactor/hr-fusion-reactor.png",
+            filename = "__Spaghetorio__/graphics/krastorio/entities/fusion-reactor/hr-fusion-reactor.png",
             width = 1100,
             height = 1100,
             scale = 0.5,
@@ -54,7 +54,7 @@ data:extend({
           },
         },
         {
-          filename = kr_entities_path .. "fusion-reactor/fusion-reactor-shadow.png",
+          filename = "__Spaghetorio__/graphics/krastorio/entities/fusion-reactor/fusion-reactor-shadow.png",
           priority = "medium",
           scale = scale,
           width = 550,
@@ -62,7 +62,7 @@ data:extend({
           shift = { 1.01, 0 },
           draw_as_shadow = true,
           hr_version = {
-            filename = kr_entities_path .. "fusion-reactor/hr-fusion-reactor-shadow.png",
+            filename = "__Spaghetorio__/graphics/krastorio/entities/fusion-reactor/hr-fusion-reactor-shadow.png",
             priority = "medium",
             width = 1100,
             height = 1100,
@@ -76,7 +76,7 @@ data:extend({
     working_visualisations = {
       {
         animation = {
-          filename = kr_entities_path .. "fusion-reactor/fusion-reactor-steam.png",
+          filename = "__Spaghetorio__/graphics/krastorio/entities/fusion-reactor/fusion-reactor-steam.png",
           priority = "extra-high",
           line_length = 10,
           width = 40,
@@ -92,7 +92,7 @@ data:extend({
       },
       {
         animation = {
-          filename = kr_entities_path .. "fusion-reactor/fusion-reactor-steam.png",
+          filename = "__Spaghetorio__/graphics/krastorio/entities/fusion-reactor/fusion-reactor-steam.png",
           priority = "extra-high",
           line_length = 10,
           width = 40,
@@ -108,7 +108,7 @@ data:extend({
       },
       {
         animation = {
-          filename = kr_entities_path .. "fusion-reactor/fusion-reactor-animation-glow.png",
+          filename = "__Spaghetorio__/graphics/krastorio/entities/fusion-reactor/fusion-reactor-animation-glow.png",
           priority = "high",
           line_length = 6,
           width = 313,
@@ -119,7 +119,7 @@ data:extend({
           draw_as_glow = true,
           blend_mode = "additive",
           hr_version = {
-            filename = kr_entities_path .. "fusion-reactor/hr-fusion-reactor-animation-glow.png",
+            filename = "__Spaghetorio__/graphics/krastorio/entities/fusion-reactor/hr-fusion-reactor-animation-glow.png",
             priority = "high",
             line_length = 6,
             width = 626,
@@ -136,7 +136,7 @@ data:extend({
       {
         draw_as_light = true,
         animation = {
-          filename = kr_entities_path .. "fusion-reactor/fusion-reactor-animation-light.png",
+          filename = "__Spaghetorio__/graphics/krastorio/entities/fusion-reactor/fusion-reactor-animation-light.png",
           line_length = 6,
           width = 313,
           height = 344,
@@ -144,7 +144,7 @@ data:extend({
           animation_speed = 0.75,
           shift = { 2.18, -2.358 },
           hr_version = {
-            filename = kr_entities_path .. "fusion-reactor/hr-fusion-reactor-animation-light.png",
+            filename = "__Spaghetorio__/graphics/krastorio/entities/fusion-reactor/hr-fusion-reactor-animation-light.png",
             line_length = 6,
             width = 626,
             height = 688,
@@ -157,7 +157,7 @@ data:extend({
       },
       {
         animation = {
-          filename = kr_entities_path .. "fusion-reactor/fusion-reactor-light.png",
+          filename = "__Spaghetorio__/graphics/krastorio/entities/fusion-reactor/fusion-reactor-light.png",
           priority = "high",
           width = 550,
           height = 550,
@@ -168,7 +168,7 @@ data:extend({
           draw_as_light = true,
           blend_mode = "additive-soft",
           hr_version = {
-            filename = kr_entities_path .. "fusion-reactor/hr-fusion-reactor-light.png",
+            filename = "__Spaghetorio__/graphics/krastorio/entities/fusion-reactor/hr-fusion-reactor-light.png",
             priority = "high",
             width = 1100,
             height = 1100,
@@ -184,7 +184,7 @@ data:extend({
       },
       {
         animation = {
-          filename = kr_entities_path .. "fusion-reactor/fusion-reactor-animation.png",
+          filename = "__Spaghetorio__/graphics/krastorio/entities/fusion-reactor/fusion-reactor-animation.png",
           line_length = 6,
           width = 313,
           height = 344,
@@ -192,7 +192,7 @@ data:extend({
           animation_speed = 0.75,
           shift = { 2.18, -2.358 },
           hr_version = {
-            filename = kr_entities_path .. "fusion-reactor/hr-fusion-reactor-animation.png",
+            filename = "__Spaghetorio__/graphics/krastorio/entities/fusion-reactor/hr-fusion-reactor-animation.png",
             line_length = 6,
             width = 626,
             height = 688,
@@ -216,7 +216,7 @@ data:extend({
     vehicle_impact_sound = { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
     working_sound = {
       sound = {
-        filename = kr_buildings_sounds_path .. "fusion-reactor.ogg",
+        filename = "__Spaghetorio__/sounds/buildings/fusion-reactor.ogg",
         volume = 1.25,
         audible_distance_modifier = 10,
       },
@@ -228,12 +228,12 @@ data:extend({
     energy_source = {
       type = "electric",
       usage_priority = "secondary-input",
-      emissions_per_minute = 5,
+      emissions_per_minute = {pollution = 5},
     },
 
     water_reflection = {
       pictures = {
-        filename = kr_entities_path .. "fusion-reactor/fusion-reactor-reflection.png",
+        filename = "__Spaghetorio__/graphics/krastorio/entities/fusion-reactor/fusion-reactor-reflection.png",
         priority = "extra-high",
         width = 110,
         height = 110,
@@ -248,7 +248,7 @@ data:extend({
     energy_usage = "483.4MW",
     source_inventory_size = 0,
     result_inventory_size = 1,
-    open_sound = { filename = kr_buildings_sounds_path .. "open.ogg", volume = 1 },
-    close_sound = { filename = kr_buildings_sounds_path .. "close.ogg", volume = 0.85 },
+    open_sound = { filename = "__Spaghetorio__/sounds/buildings/open.ogg", volume = 1 },
+    close_sound = { filename = "__Spaghetorio__/sounds/buildings/close.ogg", volume = 0.85 },
   },
 })

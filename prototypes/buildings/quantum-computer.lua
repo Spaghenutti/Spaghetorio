@@ -4,13 +4,13 @@ local sounds = require("__base__/prototypes/entity/sounds")
 function quantumkpipepictures()
   return {
     north = {
-      filename = kr_entities_path .. "quantum-computer/quantum-computer-k-pipe-N.png",
+      filename = "__Spaghetorio__/graphics/krastorio/entities/quantum-computer/quantum-computer-k-pipe-N.png",
       priority = "extra-high",
       width = 39, --35
       height = 36, -- 18
       shift = util.by_pixel(4.25, 23),
       hr_version = {
-        filename = kr_entities_path .. "quantum-computer/hr-quantum-computer-k-pipe-N.png",
+        filename = "__Spaghetorio__/graphics/krastorio/entities/quantum-computer/hr-quantum-computer-k-pipe-N.png",
         priority = "extra-high",
         width = 78, --71
         height = 71, -- 38
@@ -19,13 +19,13 @@ function quantumkpipepictures()
       },
     },
     east = {
-      filename = kr_entities_path .. "quantum-computer/quantum-computer-k-pipe-E.png",
+      filename = "__Spaghetorio__/graphics/krastorio/entities/quantum-computer/quantum-computer-k-pipe-E.png",
       priority = "extra-high",
       width = 20,
       height = 38,
       shift = util.by_pixel(-25, 1),
       hr_version = {
-        filename = kr_entities_path .. "quantum-computer/hr-quantum-computer-k-pipe-E.png",
+        filename = "__Spaghetorio__/graphics/krastorio/entities/quantum-computer/hr-quantum-computer-k-pipe-E.png",
         priority = "extra-high",
         width = 42,
         height = 76,
@@ -34,13 +34,13 @@ function quantumkpipepictures()
       },
     },
     south = {
-      filename = kr_entities_path .. "quantum-computer/quantum-computer-k-pipe-S.png",
+      filename = "__Spaghetorio__/graphics/krastorio/entities/quantum-computer/quantum-computer-k-pipe-S.png",
       priority = "extra-high",
       width = 44,
       height = 31,
       shift = util.by_pixel(0, -31.5),
       hr_version = {
-        filename = kr_entities_path .. "quantum-computer/hr-quantum-computer-k-pipe-S.png",
+        filename = "__Spaghetorio__/graphics/krastorio/entities/quantum-computer/hr-quantum-computer-k-pipe-S.png",
         priority = "extra-high",
         width = 88,
         height = 61,
@@ -49,13 +49,13 @@ function quantumkpipepictures()
       },
     },
     west = {
-      filename = kr_entities_path .. "quantum-computer/quantum-computer-k-pipe-W.png",
+      filename = "__Spaghetorio__/graphics/krastorio/entities/quantum-computer/quantum-computer-k-pipe-W.png",
       priority = "extra-high",
       width = 19,
       height = 37,
       shift = util.by_pixel(25.5, 1.5),
       hr_version = {
-        filename = kr_entities_path .. "quantum-computer/hr-quantum-computer-k-pipe-W.png",
+        filename = "__Spaghetorio__/graphics/krastorio/entities/quantum-computer/hr-quantum-computer-k-pipe-W.png",
         priority = "extra-high",
         width = 39,
         height = 73,
@@ -70,7 +70,7 @@ data:extend({
   {
     type = "assembling-machine",
     name = "kr-quantum-computer",
-    icon = kr_entities_icons_path .. "quantum-computer.png",
+    icon = "__Spaghetorio__/graphics/krastorio/icons/entities/quantum-computer.png",
     icon_size = 64,
     icon_mipmaps = 4,
     flags = { "placeable-neutral", "placeable-player", "player-creation" },
@@ -105,13 +105,13 @@ data:extend({
         pipe_connections = { { type = "output", position = { 0.5, 3.5 } } },
         secondary_draw_orders = { north = -1 },
       },
-      off_when_no_fluid_recipe = true,
+      fluid_boxes_off_when_no_fluid_recipe = true,
     },
     fast_replaceable_group = "assembling-machine",
     animation = {
       layers = {
         {
-          filename = kr_entities_path .. "quantum-computer/quantum-computer.png",
+          filename = "__Spaghetorio__/graphics/krastorio/entities/quantum-computer/quantum-computer.png",
           priority = "high",
           width = 200,
           height = 210,
@@ -120,7 +120,7 @@ data:extend({
           line_length = 8,
           animation_speed = 0.25,
           hr_version = {
-            filename = kr_entities_path .. "quantum-computer/hr-quantum-computer.png",
+            filename = "__Spaghetorio__/graphics/krastorio/entities/quantum-computer/hr-quantum-computer.png",
             priority = "high",
             width = 400,
             height = 420,
@@ -132,7 +132,7 @@ data:extend({
           },
         },
         {
-          filename = kr_entities_path .. "quantum-computer/quantum-computer-sh.png",
+          filename = "__Spaghetorio__/graphics/krastorio/entities/quantum-computer/quantum-computer-sh.png",
           priority = "medium",
           width = 201,
           height = 181,
@@ -142,7 +142,7 @@ data:extend({
           draw_as_shadow = true,
           animation_speed = 0.25,
           hr_version = {
-            filename = kr_entities_path .. "quantum-computer/hr-quantum-computer-sh.png",
+            filename = "__Spaghetorio__/graphics/krastorio/entities/quantum-computer/hr-quantum-computer-sh.png",
             priority = "medium",
             width = 402,
             height = 362,
@@ -161,14 +161,14 @@ data:extend({
     energy_source = {
       type = "electric",
       usage_priority = "secondary-input",
-      emissions_per_minute = 5,
+      emissions_per_minute = {pollution = 5},
     },
     energy_usage = "1MW",
     working_visualisations = {
       {
         draw_as_light = true,
         animation = {
-          filename = kr_entities_path .. "quantum-computer/quantum-computer-light.png",
+          filename = "__Spaghetorio__/graphics/krastorio/entities/quantum-computer/quantum-computer-light.png",
           priority = "extra-high",
           width = 200,
           height = 210,
@@ -177,7 +177,7 @@ data:extend({
           line_length = 8,
           animation_speed = 0.25,
           hr_version = {
-            filename = kr_entities_path .. "quantum-computer/hr-quantum-computer-light.png",
+            filename = "__Spaghetorio__/graphics/krastorio/entities/quantum-computer/hr-quantum-computer-light.png",
             priority = "extra-high",
             width = 400,
             height = 420,
@@ -193,7 +193,7 @@ data:extend({
         draw_as_glow = true,
         blend_mode = "additive-soft",
         animation = {
-          filename = kr_entities_path .. "quantum-computer/quantum-computer-glow.png",
+          filename = "__Spaghetorio__/graphics/krastorio/entities/quantum-computer/quantum-computer-glow.png",
           priority = "extra-high",
           width = 200,
           height = 210,
@@ -202,7 +202,7 @@ data:extend({
           line_length = 8,
           animation_speed = 0.25,
           hr_version = {
-            filename = kr_entities_path .. "quantum-computer/hr-quantum-computer-glow.png",
+            filename = "__Spaghetorio__/graphics/krastorio/entities/quantum-computer/hr-quantum-computer-glow.png",
             priority = "extra-high",
             width = 400,
             height = 420,
@@ -225,12 +225,12 @@ data:extend({
     },
     module_specification = { module_slots = 4 },
     allowed_effects = { "consumption", "speed", "productivity", "pollution" },
-    open_sound = { filename = kr_sounds_mod .. "buildings/open.ogg", volume = 1 },
-    close_sound = { filename = kr_sounds_mod .. "buildings/close.ogg", volume = 1 },
+    open_sound = { filename = "__Spaghetorio__/sounds/buildings/open.ogg", volume = 1 },
+    close_sound = { filename = "__Spaghetorio__/sounds/buildings/close.ogg", volume = 1 },
     vehicle_impact_sound = sounds.generic_impact,
     working_sound = {
       sound = {
-        filename = kr_buildings_sounds_path .. "quantum-computer.ogg",
+        filename = "__Spaghetorio__/sounds/buildings/quantum-computer.ogg",
         volume = 0.75,
       },
       idle_sound = { filename = "__base__/sound/idle1.ogg" },

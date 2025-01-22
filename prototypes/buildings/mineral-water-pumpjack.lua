@@ -2,7 +2,7 @@ data:extend({
   {
     type = "mining-drill",
     name = "kr-mineral-water-pumpjack",
-    icon = kr_entities_icons_path .. "mineral-water-pumpjack.png",
+    icon = "__Spaghetorio__/graphics/krastorio/icons/entities/mineral-water-pumpjack.png",
     icon_size = 64,
     icon_mipmaps = 4,
     flags = { "placeable-neutral", "player-creation" },
@@ -16,7 +16,7 @@ data:extend({
     drawing_box = { { -1.6, -2.5 }, { 1.5, 1.6 } },
     energy_source = {
       type = "electric",
-      emissions_per_minute = 10,
+      emissions_per_minute = {pollution = 10},
       usage_priority = "secondary-input",
     },
     output_fluid_box = {
@@ -35,7 +35,7 @@ data:extend({
     vector_to_place_result = { 0, 0 },
     module_specification = { module_slots = 2 },
     radius_visualisation_picture = {
-      filename = kr_entities_path .. "mineral-water-pumpjack/mineral-water-pumpjack-radius-visualization.png",
+      filename = "__Spaghetorio__/graphics/krastorio/entities/mineral-water-pumpjack/mineral-water-pumpjack-radius-visualization.png",
       width = 12,
       height = 12,
     },
@@ -44,13 +44,13 @@ data:extend({
     base_picture = {
       sheets = {
         {
-          filename = kr_entities_path .. "mineral-water-pumpjack/mineral-water-pumpjack-base.png",
+          filename = "__Spaghetorio__/graphics/krastorio/entities/mineral-water-pumpjack/mineral-water-pumpjack-base.png",
           priority = "extra-high",
           width = 131,
           height = 137,
           shift = util.by_pixel(-2.5, -4.5),
           hr_version = {
-            filename = kr_entities_path .. "mineral-water-pumpjack/hr-mineral-water-pumpjack-base.png",
+            filename = "__Spaghetorio__/graphics/krastorio/entities/mineral-water-pumpjack/hr-mineral-water-pumpjack-base.png",
             priority = "extra-high",
             width = 261,
             height = 273,
@@ -59,14 +59,14 @@ data:extend({
           },
         },
         {
-          filename = kr_entities_path .. "mineral-water-pumpjack/mineral-water-pumpjack-base-shadow.png",
+          filename = "__Spaghetorio__/graphics/krastorio/entities/mineral-water-pumpjack/mineral-water-pumpjack-base-shadow.png",
           priority = "extra-high",
           width = 110,
           height = 111,
           draw_as_shadow = true,
           shift = util.by_pixel(6, 0.5),
           hr_version = {
-            filename = kr_entities_path .. "mineral-water-pumpjack/hr-mineral-water-pumpjack-base-shadow.png",
+            filename = "__Spaghetorio__/graphics/krastorio/entities/mineral-water-pumpjack/hr-mineral-water-pumpjack-base-shadow.png",
             width = 220,
             height = 220,
             scale = 0.5,
@@ -81,7 +81,7 @@ data:extend({
         layers = {
           {
             priority = "high",
-            filename = kr_entities_path .. "mineral-water-pumpjack/mineral-water-pumpjack-horsehead.png",
+            filename = "__Spaghetorio__/graphics/krastorio/entities/mineral-water-pumpjack/mineral-water-pumpjack-horsehead.png",
             line_length = 8,
             width = 104,
             height = 102,
@@ -90,7 +90,7 @@ data:extend({
             animation_speed = 0.5,
             hr_version = {
               priority = "high",
-              filename = kr_entities_path .. "mineral-water-pumpjack/hr-mineral-water-pumpjack-horsehead.png",
+              filename = "__Spaghetorio__/graphics/krastorio/entities/mineral-water-pumpjack/hr-mineral-water-pumpjack-horsehead.png",
               animation_speed = 0.5,
               scale = 0.5,
               line_length = 8,
@@ -102,7 +102,7 @@ data:extend({
           },
           {
             priority = "high",
-            filename = kr_entities_path .. "mineral-water-pumpjack/mineral-water-pumpjack-horsehead-shadow.png",
+            filename = "__Spaghetorio__/graphics/krastorio/entities/mineral-water-pumpjack/mineral-water-pumpjack-horsehead-shadow.png",
             animation_speed = 0.5,
             draw_as_shadow = true,
             line_length = 8,
@@ -112,7 +112,7 @@ data:extend({
             shift = util.by_pixel(17.5, 14.5),
             hr_version = {
               priority = "high",
-              filename = kr_entities_path .. "mineral-water-pumpjack/hr-mineral-water-pumpjack-horsehead-shadow.png",
+              filename = "__Spaghetorio__/graphics/krastorio/entities/mineral-water-pumpjack/hr-mineral-water-pumpjack-horsehead-shadow.png",
               animation_speed = 0.5,
               draw_as_shadow = true,
               line_length = 8,

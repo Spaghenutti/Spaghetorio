@@ -4,7 +4,7 @@ data:extend({
   {
     type = "furnace",
     name = "kr-fluid-burner",
-    icon = kr_entities_icons_path .. "fluid-burner.png",
+    icon = "__Spaghetorio__/graphics/krastorio/icons/entities/fluid-burner.png",
     icon_size = 64,
     icon_mipmaps = 4,
     flags = { "placeable-neutral", "placeable-player", "player-creation" },
@@ -20,12 +20,12 @@ data:extend({
       {
         production_type = "input",
         pipe_covers = pipecoverspictures(),
-        pipe_picture = kr_pipe_path,
+        pipe_picture = sp_kr_pipe_path,
         base_area = 5,
         base_level = -1,
         pipe_connections = { { type = "input", position = { 0.5, 1.5 } } },
       },
-      off_when_no_fluid_recipe = false,
+      fluid_boxes_off_when_no_fluid_recipe = false,
     },
     collision_box = { { -0.9, -0.9 }, { 0.9, 0.9 } },
     selection_box = { { -1, -1 }, { 1, 1 } },
@@ -33,13 +33,13 @@ data:extend({
       north = {
         layers = {
           {
-            filename = kr_entities_path .. "fluid-burner/fluid-burner-n.png",
+            filename = "__Spaghetorio__/graphics/krastorio/entities/fluid-burner/fluid-burner-n.png",
             width = 75,
             height = 150,
             frame_count = 1,
             shift = { 0, -1 },
             hr_version = {
-              filename = kr_entities_path .. "fluid-burner/hr-fluid-burner-n.png",
+              filename = "__Spaghetorio__/graphics/krastorio/entities/fluid-burner/hr-fluid-burner-n.png",
               width = 150,
               height = 300,
               scale = 0.5,
@@ -48,7 +48,7 @@ data:extend({
             },
           },
           {
-            filename = kr_entities_path .. "fluid-burner/fluid-burner-sh.png",
+            filename = "__Spaghetorio__/graphics/krastorio/entities/fluid-burner/fluid-burner-sh.png",
             priority = "high",
             scale = scale,
             width = 129,
@@ -57,7 +57,7 @@ data:extend({
             frame_count = 1,
             draw_as_shadow = true,
             hr_version = {
-              filename = kr_entities_path .. "fluid-burner/hr-fluid-burner-sh.png",
+              filename = "__Spaghetorio__/graphics/krastorio/entities/fluid-burner/hr-fluid-burner-sh.png",
               priority = "high",
               width = 258,
               height = 94,
@@ -72,13 +72,13 @@ data:extend({
       east = {
         layers = {
           {
-            filename = kr_entities_path .. "fluid-burner/fluid-burner-e.png",
+            filename = "__Spaghetorio__/graphics/krastorio/entities/fluid-burner/fluid-burner-e.png",
             width = 75,
             height = 150,
             frame_count = 1,
             shift = { 0, -1 },
             hr_version = {
-              filename = kr_entities_path .. "fluid-burner/hr-fluid-burner-e.png",
+              filename = "__Spaghetorio__/graphics/krastorio/entities/fluid-burner/hr-fluid-burner-e.png",
               width = 150,
               height = 300,
               scale = 0.5,
@@ -87,7 +87,7 @@ data:extend({
             },
           },
           {
-            filename = kr_entities_path .. "fluid-burner/fluid-burner-sh.png",
+            filename = "__Spaghetorio__/graphics/krastorio/entities/fluid-burner/fluid-burner-sh.png",
             priority = "high",
             scale = scale,
             width = 129,
@@ -96,7 +96,7 @@ data:extend({
             frame_count = 1,
             draw_as_shadow = true,
             hr_version = {
-              filename = kr_entities_path .. "fluid-burner/hr-fluid-burner-sh.png",
+              filename = "__Spaghetorio__/graphics/krastorio/entities/fluid-burner/hr-fluid-burner-sh.png",
               priority = "high",
               width = 258,
               height = 94,
@@ -111,7 +111,7 @@ data:extend({
       south = {
         layers = {
           {
-            filename = kr_entities_path .. "fluid-burner/fluid-burner-s.png",
+            filename = "__Spaghetorio__/graphics/krastorio/entities/fluid-burner/fluid-burner-s.png",
             width = 75,
             height = 150,
             frame_count = 1,
@@ -119,7 +119,7 @@ data:extend({
             shift = { 0, -1 },
             --animation_speed = 0.5
             hr_version = {
-              filename = kr_entities_path .. "fluid-burner/hr-fluid-burner-s.png",
+              filename = "__Spaghetorio__/graphics/krastorio/entities/fluid-burner/hr-fluid-burner-s.png",
               width = 150,
               height = 300,
               scale = 0.5,
@@ -128,7 +128,7 @@ data:extend({
             },
           },
           {
-            filename = kr_entities_path .. "fluid-burner/fluid-burner-sh.png",
+            filename = "__Spaghetorio__/graphics/krastorio/entities/fluid-burner/fluid-burner-sh.png",
             priority = "high",
             scale = scale,
             width = 129,
@@ -137,7 +137,7 @@ data:extend({
             frame_count = 1,
             draw_as_shadow = true,
             hr_version = {
-              filename = kr_entities_path .. "fluid-burner/hr-fluid-burner-sh.png",
+              filename = "__Spaghetorio__/graphics/krastorio/entities/fluid-burner/hr-fluid-burner-sh.png",
               priority = "high",
               width = 258,
               height = 94,
@@ -152,13 +152,13 @@ data:extend({
       west = {
         layers = {
           {
-            filename = kr_entities_path .. "fluid-burner/fluid-burner-w.png",
+            filename = "__Spaghetorio__/graphics/krastorio/entities/fluid-burner/fluid-burner-w.png",
             width = 75,
             height = 150,
             frame_count = 1,
             shift = { 0, -1 },
             hr_version = {
-              filename = kr_entities_path .. "fluid-burner/hr-fluid-burner-w.png",
+              filename = "__Spaghetorio__/graphics/krastorio/entities/fluid-burner/hr-fluid-burner-w.png",
               width = 150,
               height = 300,
               scale = 0.5,
@@ -167,7 +167,7 @@ data:extend({
             },
           },
           {
-            filename = kr_entities_path .. "fluid-burner/fluid-burner-sh.png",
+            filename = "__Spaghetorio__/graphics/krastorio/entities/fluid-burner/fluid-burner-sh.png",
             priority = "high",
             scale = scale,
             width = 129,
@@ -176,7 +176,7 @@ data:extend({
             frame_count = 1,
             draw_as_shadow = true,
             hr_version = {
-              filename = kr_entities_path .. "fluid-burner/hr-fluid-burner-sh.png",
+              filename = "__Spaghetorio__/graphics/krastorio/entities/fluid-burner/hr-fluid-burner-sh.png",
               priority = "high",
               width = 258,
               height = 94,
@@ -194,7 +194,7 @@ data:extend({
         apply_recipe_tint = "quaternary",
         fadeout = true,
         animation = {
-          filename = kr_entities_path .. "fluid-burner/fluid-burner-fire.png",
+          filename = "__Spaghetorio__/graphics/krastorio/entities/fluid-burner/fluid-burner-fire.png",
           line_length = 10,
           width = 40,
           height = 81,
@@ -217,7 +217,7 @@ data:extend({
     vehicle_impact_sound = { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
     working_sound = {
       sound = {
-        filename = kr_buildings_sounds_path .. "fluid-burner.ogg",
+        filename = "__Spaghetorio__/sounds/buildings/fluid-burner.ogg",
         volume = 1,
       },
       idle_sound = {
@@ -230,12 +230,12 @@ data:extend({
     energy_source = {
       type = "electric",
       usage_priority = "secondary-input",
-      emissions_per_minute = 5,
+      emissions_per_minute = {pollution = 5},
     },
 
     water_reflection = {
       pictures = {
-        filename = kr_entities_path .. "fluid-burner/fluid-burner-reflection.png",
+        filename = "__Spaghetorio__/graphics/krastorio/entities/fluid-burner/fluid-burner-reflection.png",
         priority = "extra-high",
         width = 20,
         height = 30,

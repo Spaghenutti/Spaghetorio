@@ -11,7 +11,7 @@ data:extend({
   {
     type = "assembling-machine",
     name = "kr-electrolysis-plant",
-    icon = kr_entities_icons_path .. "electrolysis-plant.png",
+    icon = "__Spaghetorio__/graphics/krastorio/icons/entities/electrolysis-plant.png",
     icon_size = 64,
     icon_mipmaps = 4,
     flags = { "placeable-neutral", "placeable-player", "player-creation" },
@@ -29,7 +29,7 @@ data:extend({
       {
         production_type = "input",
         pipe_covers = pipecoverspictures(),
-        pipe_picture = kr_pipe_path,
+        pipe_picture = sp_kr_pipe_path,
         base_area = 10,
         base_level = -1,
         pipe_connections = { { type = "input", position = { -3, -1 } } },
@@ -37,7 +37,7 @@ data:extend({
       {
         production_type = "input",
         pipe_covers = pipecoverspictures(),
-        pipe_picture = kr_pipe_path,
+        pipe_picture = sp_kr_pipe_path,
         base_area = 10,
         base_level = -1,
         pipe_connections = { { type = "input", position = { -3, 1 } } },
@@ -46,7 +46,7 @@ data:extend({
       {
         production_type = "output",
         pipe_covers = pipecoverspictures(),
-        pipe_picture = kr_pipe_path,
+        pipe_picture = sp_kr_pipe_path,
         base_area = 10,
         base_level = 1,
         pipe_connections = { { type = "output", position = { 3, -1 } } },
@@ -54,12 +54,12 @@ data:extend({
       {
         production_type = "output",
         pipe_covers = pipecoverspictures(),
-        pipe_picture = kr_pipe_path,
+        pipe_picture = sp_kr_pipe_path,
         base_area = 10,
         base_level = 1,
         pipe_connections = { { type = "output", position = { 3, 1 } } },
       },
-      off_when_no_fluid_recipe = false,
+      fluid_boxes_off_when_no_fluid_recipe = false,
     },
     collision_box = { { -2.3, -2.3 }, { 2.3, 2.3 } },
     selection_box = { { -2.5, -2.5 }, { 2.5, 2.5 } },
@@ -69,13 +69,13 @@ data:extend({
     animation = {
       layers = {
         {
-          filename = kr_entities_path .. "electrolysis-plant/electrolysis-plant.png",
+          filename = "__Spaghetorio__/graphics/krastorio/entities/electrolysis-plant/electrolysis-plant.png",
           width = 190,
           height = 190,
           frame_count = 1,
           shift = { 0, 0 },
           hr_version = {
-            filename = kr_entities_path .. "electrolysis-plant/hr-electrolysis-plant.png",
+            filename = "__Spaghetorio__/graphics/krastorio/entities/electrolysis-plant/hr-electrolysis-plant.png",
             width = 380,
             height = 380,
             scale = 0.5,
@@ -84,14 +84,14 @@ data:extend({
           },
         },
         {
-          filename = kr_entities_path .. "electrolysis-plant/electrolysis-plant-sh.png",
+          filename = "__Spaghetorio__/graphics/krastorio/entities/electrolysis-plant/electrolysis-plant-sh.png",
           width = 190,
           height = 190,
           frame_count = 1,
           draw_as_shadow = true,
           shift = { 0, 0 },
           hr_version = {
-            filename = kr_entities_path .. "electrolysis-plant/hr-electrolysis-plant-sh.png",
+            filename = "__Spaghetorio__/graphics/krastorio/entities/electrolysis-plant/hr-electrolysis-plant-sh.png",
             width = 380,
             height = 380,
             scale = 0.5,
@@ -106,7 +106,7 @@ data:extend({
       {
         apply_recipe_tint = "primary",
         animation = {
-          filename = kr_entities_path .. "electrolysis-plant/electrolysis-plant-work.png",
+          filename = "__Spaghetorio__/graphics/krastorio/entities/electrolysis-plant/electrolysis-plant-work.png",
           width = 190,
           height = 190,
           frame_count = 12,
@@ -116,7 +116,7 @@ data:extend({
           blend_mode = "additive",
           draw_as_glow = true,
           hr_version = {
-            filename = kr_entities_path .. "electrolysis-plant/hr-electrolysis-plant-work.png",
+            filename = "__Spaghetorio__/graphics/krastorio/entities/electrolysis-plant/hr-electrolysis-plant-work.png",
             width = 380,
             height = 380,
             scale = 0.5,
@@ -132,7 +132,7 @@ data:extend({
       {
         apply_recipe_tint = "primary",
         animation = {
-          filename = kr_entities_path .. "electrolysis-plant/electrolysis-plant-work-light.png",
+          filename = "__Spaghetorio__/graphics/krastorio/entities/electrolysis-plant/electrolysis-plant-work-light.png",
           width = 190,
           height = 190,
           frame_count = 12,
@@ -141,7 +141,7 @@ data:extend({
           shift = { 0, 0 },
           draw_as_light = true,
           hr_version = {
-            filename = kr_entities_path .. "electrolysis-plant/hr-electrolysis-plant-work-light.png",
+            filename = "__Spaghetorio__/graphics/krastorio/entities/electrolysis-plant/hr-electrolysis-plant-work-light.png",
             width = 380,
             height = 380,
             scale = 0.5,
@@ -158,7 +158,7 @@ data:extend({
     vehicle_impact_sound = { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
     working_sound = {
       sound = {
-        filename = kr_buildings_sounds_path .. "electrolysis-plant.ogg",
+        filename = "__Spaghetorio__/sounds/buildings/electrolysis-plant.ogg",
         volume = 0.85,
       },
       idle_sound = {
@@ -172,12 +172,12 @@ data:extend({
     energy_source = {
       type = "electric",
       usage_priority = "secondary-input",
-      emissions_per_minute = 0.5,
+      emissions_per_minute = {pollution = 0}.5,
     },
 
     water_reflection = {
       pictures = {
-        filename = kr_entities_path .. "electrolysis-plant/electrolysis-plant-reflection.png",
+        filename = "__Spaghetorio__/graphics/krastorio/entities/electrolysis-plant/electrolysis-plant-reflection.png",
         priority = "extra-high",
         width = 42,
         height = 38,

@@ -2,7 +2,7 @@ data:extend({
   {
     type = "lab",
     name = "biusart-lab",
-    icon = kr_entities_icons_path .. "biusart-lab.png",
+    icon = "__Spaghetorio__/graphics/krastorio/icons/entities/biusart-lab.png",
     icon_size = 64,
     icon_mipmaps = 4,
     flags = { "placeable-player", "player-creation" },
@@ -21,7 +21,7 @@ data:extend({
     on_animation = {
       layers = {
         {
-          filename = kr_entities_path .. "biusart-lab/biusart-lab-anim-light.png",
+          filename = "__Spaghetorio__/graphics/krastorio/entities/biusart-lab/biusart-lab-anim-light.png",
           width = 75,
           height = 75,
           frame_count = 29,
@@ -31,7 +31,7 @@ data:extend({
           draw_as_light = true,
           scale = 2 * 0.64,
           hr_version = {
-            filename = kr_entities_path .. "biusart-lab/hr-biusart-lab-anim-light.png",
+            filename = "__Spaghetorio__/graphics/krastorio/entities/biusart-lab/hr-biusart-lab-anim-light.png",
             width = 150,
             height = 150,
             frame_count = 29,
@@ -43,7 +43,7 @@ data:extend({
           },
         },
         {
-          filename = kr_entities_path .. "biusart-lab/biusart-lab-anim.png",
+          filename = "__Spaghetorio__/graphics/krastorio/entities/biusart-lab/biusart-lab-anim.png",
           width = 75,
           height = 75,
           frame_count = 29,
@@ -52,7 +52,7 @@ data:extend({
           shift = { 0, -0.05 },
           scale = 2 * 0.64,
           hr_version = {
-            filename = kr_entities_path .. "biusart-lab/hr-biusart-lab-anim.png",
+            filename = "__Spaghetorio__/graphics/krastorio/entities/biusart-lab/hr-biusart-lab-anim.png",
             width = 150,
             height = 150,
             frame_count = 29,
@@ -63,7 +63,7 @@ data:extend({
           },
         },
         {
-          filename = kr_entities_path .. "biusart-lab/biusart-lab-anim.png",
+          filename = "__Spaghetorio__/graphics/krastorio/entities/biusart-lab/biusart-lab-anim.png",
           width = 75,
           height = 75,
           frame_count = 29,
@@ -72,7 +72,7 @@ data:extend({
           shift = { 0, -0.05 },
           scale = 2 * 0.64,
           hr_version = {
-            filename = kr_entities_path .. "biusart-lab/hr-biusart-lab-anim.png",
+            filename = "__Spaghetorio__/graphics/krastorio/entities/biusart-lab/hr-biusart-lab-anim.png",
             width = 150,
             height = 150,
             frame_count = 29,
@@ -83,7 +83,7 @@ data:extend({
           },
         },
         {
-          filename = kr_entities_path .. "biusart-lab/biusart-lab-anim.png",
+          filename = "__Spaghetorio__/graphics/krastorio/entities/biusart-lab/biusart-lab-anim.png",
           width = 75,
           height = 75,
           frame_count = 29,
@@ -92,7 +92,7 @@ data:extend({
           shift = { 0, -0.05 },
           scale = 2 * 0.64,
           hr_version = {
-            filename = kr_entities_path .. "biusart-lab/hr-biusart-lab-anim.png",
+            filename = "__Spaghetorio__/graphics/krastorio/entities/biusart-lab/hr-biusart-lab-anim.png",
             width = 150,
             height = 150,
             frame_count = 29,
@@ -103,7 +103,7 @@ data:extend({
           },
         },
         {
-          filename = kr_entities_path .. "biusart-lab/biusart-lab-light-anim.png",
+          filename = "__Spaghetorio__/graphics/krastorio/entities/biusart-lab/biusart-lab-light-anim.png",
           width = 75,
           height = 75,
           frame_count = 29,
@@ -113,7 +113,7 @@ data:extend({
           scale = 2 * 0.64,
           blend_mode = "additive-soft",
           hr_version = {
-            filename = kr_entities_path .. "biusart-lab/hr-biusart-lab-light-anim.png",
+            filename = "__Spaghetorio__/graphics/krastorio/entities/biusart-lab/hr-biusart-lab-light-anim.png",
             width = 150,
             height = 150,
             frame_count = 29,
@@ -125,7 +125,7 @@ data:extend({
           },
         },
         {
-          filename = kr_entities_path .. "biusart-lab/biusart-lab-light-anim.png",
+          filename = "__Spaghetorio__/graphics/krastorio/entities/biusart-lab/biusart-lab-light-anim.png",
           width = 75,
           height = 75,
           frame_count = 29,
@@ -136,7 +136,7 @@ data:extend({
           scale = 2 * 0.64,
           blend_mode = "additive-soft",
           hr_version = {
-            filename = kr_entities_path .. "biusart-lab/hr-biusart-lab-light-anim.png",
+            filename = "__Spaghetorio__/graphics/krastorio/entities/biusart-lab/hr-biusart-lab-light-anim.png",
             width = 150,
             height = 150,
             frame_count = 29,
@@ -149,7 +149,7 @@ data:extend({
           },
         },
         {
-          filename = kr_entities_path .. "biusart-lab/biusart-lab-shadow.png",
+          filename = "__Spaghetorio__/graphics/krastorio/entities/biusart-lab/biusart-lab-shadow.png",
           width = 120,
           height = 120,
           frame_count = 1,
@@ -160,7 +160,7 @@ data:extend({
           scale = 2 * 0.75,
           draw_as_shadow = true,
           hr_version = {
-            filename = kr_entities_path .. "biusart-lab/hr-biusart-lab-shadow.png",
+            filename = "__Spaghetorio__/graphics/krastorio/entities/biusart-lab/hr-biusart-lab-shadow.png",
             width = 240,
             height = 240,
             frame_count = 1,
@@ -173,7 +173,7 @@ data:extend({
           },
         },
         {
-          filename = kr_entities_path .. "biusart-lab/biusart-lab-ao.png",
+          filename = "__Spaghetorio__/graphics/krastorio/entities/biusart-lab/biusart-lab-ao.png",
           width = 110,
           height = 110,
           frame_count = 1,
@@ -182,7 +182,7 @@ data:extend({
           shift = { 0, -0.05 },
           scale = 2 * 0.50,
           hr_version = {
-            filename = kr_entities_path .. "biusart-lab/hr-biusart-lab-ao.png",
+            filename = "__Spaghetorio__/graphics/krastorio/entities/biusart-lab/hr-biusart-lab-ao.png",
             width = 220,
             height = 220,
             frame_count = 1,
@@ -197,14 +197,14 @@ data:extend({
     off_animation = {
       layers = {
         {
-          filename = kr_entities_path .. "biusart-lab/biusart-lab.png",
+          filename = "__Spaghetorio__/graphics/krastorio/entities/biusart-lab/biusart-lab.png",
           width = 75,
           height = 75,
           frame_count = 1,
           shift = { 0, -0.05 },
           scale = 2 * 0.64,
           hr_version = {
-            filename = kr_entities_path .. "biusart-lab/hr-biusart-lab.png",
+            filename = "__Spaghetorio__/graphics/krastorio/entities/biusart-lab/hr-biusart-lab.png",
             width = 150,
             height = 150,
             frame_count = 1,
@@ -213,7 +213,7 @@ data:extend({
           },
         },
         {
-          filename = kr_entities_path .. "biusart-lab/biusart-lab-shadow.png",
+          filename = "__Spaghetorio__/graphics/krastorio/entities/biusart-lab/biusart-lab-shadow.png",
           width = 120,
           height = 120,
           frame_count = 1,
@@ -222,7 +222,7 @@ data:extend({
           scale = 2 * 0.75,
           draw_as_shadow = true,
           hr_version = {
-            filename = kr_entities_path .. "biusart-lab/hr-biusart-lab-shadow.png",
+            filename = "__Spaghetorio__/graphics/krastorio/entities/biusart-lab/hr-biusart-lab-shadow.png",
             width = 240,
             height = 240,
             frame_count = 1,
@@ -233,7 +233,7 @@ data:extend({
           },
         },
         {
-          filename = kr_entities_path .. "biusart-lab/biusart-lab-ao.png",
+          filename = "__Spaghetorio__/graphics/krastorio/entities/biusart-lab/biusart-lab-ao.png",
           width = 110,
           height = 110,
           frame_count = 1,
@@ -242,7 +242,7 @@ data:extend({
           shift = { 0, -0.05 },
           scale = 2 * 0.5,
           hr_version = {
-            filename = kr_entities_path .. "biusart-lab/hr-biusart-lab-ao.png",
+            filename = "__Spaghetorio__/graphics/krastorio/entities/biusart-lab/hr-biusart-lab-ao.png",
             width = 220,
             height = 220,
             frame_count = 1,
@@ -256,7 +256,7 @@ data:extend({
     },
     working_sound = {
       sound = {
-        filename = kr_buildings_sounds_path .. "biusart-lab.ogg",
+        filename = "__Spaghetorio__/sounds/buildings/biusart-lab.ogg",
         volume = 0.7,
       },
       apparent_volume = 1,

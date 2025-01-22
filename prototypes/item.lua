@@ -4397,7 +4397,7 @@ data:extend({
     subgroup = "space-related",
     order = "m-2-[blunagium-explorer]",
     rocket_launch_products = {
-      -- Krastorio: {"space-research-data", 500}
+      -- Krastorio: {type = "item", name = "space-research-data", amount = 500}
       {type = "item", name = "sp-blunagium-acrosphere-1", probability = 0.5, amount = 1},
       {type = "item", name = "sp-blunagium-acrosphere-2", probability = 0.03, amount = 1}
     },
@@ -4412,7 +4412,7 @@ data:extend({
     subgroup = "space-related",
     order = "m-2-[grobgnum-explorer]",
     rocket_launch_products = {
-      -- Krastorio: {"space-research-data", 500}
+      -- Krastorio: {type = "item", name = "space-research-data", amount = 500}
       {type = "item", name = "sp-grobgnum-acrosphere-1", probability = 0.5, amount = 1},
       {type = "item", name = "sp-grobgnum-acrosphere-2", probability = 0.03, amount = 1}
     },
@@ -4427,7 +4427,7 @@ data:extend({
     subgroup = "space-related",
     order = "m-2-[rukite-explorer]",
     rocket_launch_products = {
-      -- Krastorio: {"space-research-data", 500}
+      -- Krastorio: {type = "item", name = "space-research-data", amount = 500}
       {type = "item", name = "sp-rukite-acrosphere-1", probability = 0.5, amount = 1},
       {type = "item", name = "sp-rukite-acrosphere-2", probability = 0.03, amount = 1}
     },
@@ -4442,7 +4442,7 @@ data:extend({
     subgroup = "space-related",
     order = "m-2-[yemnuth-explorer]",
     rocket_launch_products = {
-      -- Krastorio: {"space-research-data", 500}
+      -- Krastorio: {type = "item", name = "space-research-data", amount = 500}
       {type = "item", name = "sp-yemnuth-acrosphere-1", probability = 0.5, amount = 1},
       {type = "item", name = "sp-yemnuth-acrosphere-2", probability = 0.03, amount = 1}
     },

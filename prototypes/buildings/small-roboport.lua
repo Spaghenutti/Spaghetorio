@@ -2,7 +2,7 @@ local hit_effects = require("__base__/prototypes/entity/hit-effects")
 local sounds = require("__base__/prototypes/entity/sounds")
 local variations_util = require(kr_public_lib .. "create-roboport-states")
 local empty_sprite = {
-  filename = kr_entities_path .. "empty.png",
+  filename = "__Spaghetorio__/graphics/krastorio/entities/empty.png",
   width = 1,
   height = 1,
   frame_count = 1,
@@ -12,7 +12,7 @@ data:extend({
   {
     type = "roboport",
     name = "kr-small-roboport",
-    icon = kr_entities_icons_path .. "small-roboport.png",
+    icon = "__Spaghetorio__/graphics/krastorio/icons/entities/small-roboport.png",
     icon_size = 64,
     icon_mipmaps = 4,
     flags = { "placeable-player", "player-creation" },
@@ -57,13 +57,13 @@ data:extend({
     base = {
       layers = {
         {
-          filename = kr_entities_path .. "small-roboport/small-roboport.png",
+          filename = "__Spaghetorio__/graphics/krastorio/entities/small-roboport/small-roboport.png",
           width = 120,
           height = 150,
           shift = { 0, -0.1 },
           scale = 0.5,
           hr_version = {
-            filename = kr_entities_path .. "small-roboport/hr-small-roboport.png",
+            filename = "__Spaghetorio__/graphics/krastorio/entities/small-roboport/hr-small-roboport.png",
             width = 240,
             height = 300,
             shift = { 0, -0.1 },
@@ -71,14 +71,14 @@ data:extend({
           },
         },
         {
-          filename = kr_entities_path .. "small-roboport/small-roboport-sh.png",
+          filename = "__Spaghetorio__/graphics/krastorio/entities/small-roboport/small-roboport-sh.png",
           width = 163,
           height = 84,
           shift = { 0.48, 0.43 },
           draw_as_shadow = true,
           scale = 0.5,
           hr_version = {
-            filename = kr_entities_path .. "small-roboport/hr-small-roboport-sh.png",
+            filename = "__Spaghetorio__/graphics/krastorio/entities/small-roboport/hr-small-roboport-sh.png",
             width = 322,
             height = 166,
             shift = { 0.48, 0.43 },
@@ -92,7 +92,7 @@ data:extend({
     base_animation = {
       layers = {
         {
-          filename = kr_entities_path .. "small-roboport/small-roboport-animation.png",
+          filename = "__Spaghetorio__/graphics/krastorio/entities/small-roboport/small-roboport-animation.png",
           priority = "high",
           width = 55,
           height = 40,
@@ -102,7 +102,7 @@ data:extend({
           draw_as_glow = true,
           animation_speed = 0.1,
           hr_version = {
-            filename = kr_entities_path .. "small-roboport/hr-small-roboport-animation.png",
+            filename = "__Spaghetorio__/graphics/krastorio/entities/small-roboport/hr-small-roboport-animation.png",
             priority = "high",
             width = 110,
             height = 80,
@@ -114,7 +114,7 @@ data:extend({
           },
         },
         {
-          filename = kr_entities_path .. "small-roboport/small-roboport-animation-light.png",
+          filename = "__Spaghetorio__/graphics/krastorio/entities/small-roboport/small-roboport-animation-light.png",
           priority = "high",
           width = 55,
           height = 40,
@@ -124,7 +124,7 @@ data:extend({
           draw_as_light = true,
           animation_speed = 0.1,
           hr_version = {
-            filename = kr_entities_path .. "small-roboport/hr-small-roboport-animation-light.png",
+            filename = "__Spaghetorio__/graphics/krastorio/entities/small-roboport/hr-small-roboport-animation-light.png",
             priority = "high",
             width = 110,
             height = 80,
@@ -142,7 +142,7 @@ data:extend({
     recharging_animation = {
       layers = {
         {
-          filename = kr_entities_path .. "small-roboport/small-roboport-recharging.png",
+          filename = "__Spaghetorio__/graphics/krastorio/entities/small-roboport/small-roboport-recharging.png",
           priority = "high",
           width = 37,
           height = 35,
@@ -152,7 +152,7 @@ data:extend({
           animation_speed = 0.5,
         },
         {
-          filename = kr_entities_path .. "small-roboport/small-roboport-recharging-light.png",
+          filename = "__Spaghetorio__/graphics/krastorio/entities/small-roboport/small-roboport-recharging-light.png",
           priority = "high",
           width = 37,
           height = 35,
@@ -171,7 +171,7 @@ data:extend({
 
     water_reflection = {
       pictures = {
-        filename = kr_entities_path .. "small-roboport/small-roboport-reflection.png",
+        filename = "__Spaghetorio__/graphics/krastorio/entities/small-roboport/small-roboport-reflection.png",
         priority = "extra-high",
         width = 16,
         height = 22,

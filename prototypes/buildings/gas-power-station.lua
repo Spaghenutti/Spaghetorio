@@ -2,7 +2,7 @@ local hit_effects = require("__base__/prototypes/entity/hit-effects")
 local animation = {
   layers = {
     {
-      filename = kr_entities_path .. "gas-power-station/gas-power-station.png",
+      filename = "__Spaghetorio__/graphics/krastorio/entities/gas-power-station/gas-power-station.png",
       width = 190,
       height = 190,
       frame_count = 32,
@@ -10,7 +10,7 @@ local animation = {
       animation_speed = 1.2,
       shift = { 0, 0 },
       hr_version = {
-        filename = kr_entities_path .. "gas-power-station/hr-gas-power-station.png",
+        filename = "__Spaghetorio__/graphics/krastorio/entities/gas-power-station/hr-gas-power-station.png",
         width = 380,
         height = 380,
         scale = 0.5,
@@ -21,14 +21,14 @@ local animation = {
       },
     },
     {
-      filename = kr_entities_path .. "pipe-patch/pipe-patch.png",
+      filename = "__Spaghetorio__/graphics/krastorio/entities/pipe-patch/pipe-patch.png",
       width = 28,
       height = 25,
       frame_count = 1,
       repeat_count = 32,
       shift = { 0, 2.5 },
       hr_version = {
-        filename = kr_entities_path .. "pipe-patch/hr-pipe-patch.png",
+        filename = "__Spaghetorio__/graphics/krastorio/entities/pipe-patch/hr-pipe-patch.png",
         width = 55,
         height = 50,
         frame_count = 1,
@@ -39,7 +39,7 @@ local animation = {
     },
 
     {
-      filename = kr_entities_path .. "gas-power-station/gas-power-station-sh.png",
+      filename = "__Spaghetorio__/graphics/krastorio/entities/gas-power-station/gas-power-station-sh.png",
       width = 190,
       height = 190,
       frame_count = 1,
@@ -48,7 +48,7 @@ local animation = {
       draw_as_shadow = true,
       shift = { 0, 0 },
       hr_version = {
-        filename = kr_entities_path .. "gas-power-station/hr-gas-power-station-sh.png",
+        filename = "__Spaghetorio__/graphics/krastorio/entities/gas-power-station/hr-gas-power-station-sh.png",
         width = 380,
         height = 380,
         scale = 0.5,
@@ -83,14 +83,14 @@ data:extend({
       shift = { -0.53125, -0.4375 },
       priority = "high",
       animation_speed = 0.25,
-      filename = "__base__/graphics/entity/smoke/smoke.png", --kr_entities_path .. "gas-power-station/gas-power-station-smoke.png",
+      filename = "__base__/graphics/entity/smoke/smoke.png", --"__Spaghetorio__/graphics/krastorio/entities/gas-power-station/gas-power-station-smoke.png",
       flags = { "smoke" },
     },
   },
   {
     type = "generator",
     name = "kr-gas-power-station",
-    icon = kr_entities_icons_path .. "gas-power-station.png",
+    icon = "__Spaghetorio__/graphics/krastorio/icons/entities/gas-power-station.png",
     icon_size = 64,
     icon_mipmaps = 4,
     flags = { "placeable-neutral", "player-creation" },
@@ -114,8 +114,8 @@ data:extend({
     damaged_trigger_effect = hit_effects.entity(),
     fluid_box = {
       pipe_covers = pipecoverspictures(),
-      pipe_picture = kr_pipe_path,
-      off_when_no_fluid_recipe = false,
+      pipe_picture = sp_kr_pipe_path,
+      fluid_boxes_off_when_no_fluid_recipe = false,
       base_area = 1,
       height = 2,
       base_level = -1,
@@ -131,7 +131,7 @@ data:extend({
     energy_source = {
       type = "electric",
       usage_priority = "secondary-output",
-      emissions_per_minute = 30,
+      emissions_per_minute = {pollution = 30},
     },
     horizontal_animation = animation,
     vertical_animation = animation,
@@ -156,11 +156,11 @@ data:extend({
       sound = {
         variations = {
           {
-            filename = kr_buildings_sounds_path .. "gas-power-station-1.ogg",
+            filename = "__Spaghetorio__/sounds/buildings/gas-power-station-1.ogg",
             volume = 0.8,
           },
           {
-            filename = kr_buildings_sounds_path .. "gas-power-station-2.ogg",
+            filename = "__Spaghetorio__/sounds/buildings/gas-power-station-2.ogg",
             volume = 0.75,
           },
         },
@@ -178,7 +178,7 @@ data:extend({
 
     water_reflection = {
       pictures = {
-        filename = kr_entities_path .. "gas-power-station/gas-power-station-reflection.png",
+        filename = "__Spaghetorio__/graphics/krastorio/entities/gas-power-station/gas-power-station-reflection.png",
         priority = "extra-high",
         width = 42,
         height = 38,

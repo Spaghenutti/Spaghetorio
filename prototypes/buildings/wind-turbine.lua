@@ -3,11 +3,11 @@ local hit_effects = require("__base__/prototypes/entity/hit-effects")
 local wind_turbine_persistent_sound = {
   variations = {
     {
-      filename = kr_buildings_sounds_path .. "wind-turbine-rotating.ogg",
+      filename = "__Spaghetorio__/sounds/buildings/wind-turbine-rotating.ogg",
       volume = 0.55,
     },
     {
-      filename = kr_buildings_sounds_path .. "wind-turbine-rotating-2.ogg",
+      filename = "__Spaghetorio__/sounds/buildings/wind-turbine-rotating-2.ogg",
       volume = 0.38,
     },
   },
@@ -22,7 +22,7 @@ data:extend({
   {
     type = "electric-energy-interface",
     name = "kr-wind-turbine",
-    icon = kr_entities_icons_path .. "wind-turbine.png",
+    icon = "__Spaghetorio__/graphics/krastorio/icons/entities/wind-turbine.png",
     icon_size = 64,
     icon_mipmaps = 4,
     flags = { "placeable-neutral", "player-creation", "not-rotatable" },
@@ -59,7 +59,7 @@ data:extend({
 
     water_reflection = {
       pictures = {
-        filename = kr_entities_path .. "wind-turbine/wind-turbine-reflection.png",
+        filename = "__Spaghetorio__/graphics/krastorio/entities/wind-turbine/wind-turbine-reflection.png",
         priority = "extra-high",
         width = 20,
         height = 25,
@@ -76,7 +76,7 @@ data:extend({
     animation = {
       layers = {
         {
-          filename = kr_entities_path .. "wind-turbine/wind-turbine.png",
+          filename = "__Spaghetorio__/graphics/krastorio/entities/wind-turbine/wind-turbine.png",
           priority = "high",
           width = 98,
           height = 143,
@@ -85,7 +85,7 @@ data:extend({
           animation_speed = 0.8,
           shift = { 0, -1.2 },
           hr_version = {
-            filename = kr_entities_path .. "wind-turbine/hr-wind-turbine.png",
+            filename = "__Spaghetorio__/graphics/krastorio/entities/wind-turbine/hr-wind-turbine.png",
             priority = "medium",
             width = 196,
             height = 286,
@@ -97,7 +97,7 @@ data:extend({
           },
         },
         {
-          filename = kr_entities_path .. "wind-turbine/wind-turbine-shadow.png",
+          filename = "__Spaghetorio__/graphics/krastorio/entities/wind-turbine/wind-turbine-shadow.png",
           priority = "high",
           width = 121,
           height = 50,
@@ -108,7 +108,7 @@ data:extend({
           draw_as_shadow = true,
           shift = { 1.15, 0.05 },
           hr_version = {
-            filename = kr_entities_path .. "wind-turbine/hr-wind-turbine-shadow.png",
+            filename = "__Spaghetorio__/graphics/krastorio/entities/wind-turbine/hr-wind-turbine-shadow.png",
             priority = "medium",
             width = 242,
             height = 100,

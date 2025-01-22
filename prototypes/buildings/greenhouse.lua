@@ -7,7 +7,7 @@ end
 local hit_effects = require("__base__/prototypes/entity/hit-effects")
 
 local greenhouse_working_sound = {
-  filename = kr_buildings_sounds_path .. "greenhouse.ogg",
+  filename = "__Spaghetorio__/sounds/buildings/greenhouse.ogg",
   volume = 0.75,
   idle_sound = { filename = "__base__/sound/idle1.ogg" },
   aggregation = {
@@ -23,7 +23,7 @@ data:extend({
     name = "kr-greenhouse",
     icon_size = 64,
     icon_mipmaps = 4,
-    icon = kr_entities_icons_path .. "greenhouse.png",
+    icon = "__Spaghetorio__/graphics/krastorio/icons/entities/greenhouse.png",
     flags = { "placeable-neutral", "placeable-player", "player-creation" },
     minable = { hardness = 1, mining_time = 1, result = "kr-greenhouse" },
     max_health = 500,
@@ -36,7 +36,7 @@ data:extend({
     fluid_boxes = {
       {
         production_type = "input",
-        pipe_picture = kr_pipe_path,
+        pipe_picture = sp_kr_pipe_path,
         pipe_covers = pipecoverspictures(),
         base_area = 10,
         height = 2,
@@ -48,7 +48,7 @@ data:extend({
           { type = "input-output", position = { 0, 4 } },
         },
       },
-      off_when_no_fluid_recipe = false,
+      fluid_boxes_off_when_no_fluid_recipe = false,
     },
     collision_box = { { -3.25, -3.25 }, { 3.25, 3.25 } },
     selection_box = { { -3.5, -3.5 }, { 3.5, 3.5 } },
@@ -60,14 +60,14 @@ data:extend({
     animation = {
       layers = {
         {
-          filename = kr_entities_path .. "greenhouse/greenhouse.png",
+          filename = "__Spaghetorio__/graphics/krastorio/entities/greenhouse/greenhouse.png",
           priority = "high",
           scale = scale,
           width = 256,
           height = 256,
           frame_count = 1,
           hr_version = {
-            filename = kr_entities_path .. "greenhouse/hr-greenhouse.png",
+            filename = "__Spaghetorio__/graphics/krastorio/entities/greenhouse/hr-greenhouse.png",
             priority = "high",
             width = 512,
             height = 512,
@@ -76,7 +76,7 @@ data:extend({
           },
         },
         {
-          filename = kr_entities_path .. "greenhouse/greenhouse-sh.png",
+          filename = "__Spaghetorio__/graphics/krastorio/entities/greenhouse/greenhouse-sh.png",
           priority = "high",
           scale = scale,
           width = 256,
@@ -85,7 +85,7 @@ data:extend({
           frame_count = 1,
           draw_as_shadow = true,
           hr_version = {
-            filename = kr_entities_path .. "greenhouse/hr-greenhouse-sh.png",
+            filename = "__Spaghetorio__/graphics/krastorio/entities/greenhouse/hr-greenhouse-sh.png",
             priority = "high",
             width = 512,
             height = 512,
@@ -101,7 +101,7 @@ data:extend({
       {
         draw_as_light = true,
         animation = {
-          filename = kr_entities_path .. "greenhouse/greenhouse-light.png",
+          filename = "__Spaghetorio__/graphics/krastorio/entities/greenhouse/greenhouse-light.png",
           scale = scale,
           width = 256,
           height = 256,
@@ -109,7 +109,7 @@ data:extend({
           repeat_count = 10,
           animation_speed = 0.35,
           hr_version = {
-            filename = kr_entities_path .. "greenhouse/hr-greenhouse-light.png",
+            filename = "__Spaghetorio__/graphics/krastorio/entities/greenhouse/hr-greenhouse-light.png",
             width = 512,
             height = 512,
             frame_count = 1,
@@ -121,7 +121,7 @@ data:extend({
       },
       {
         animation = {
-          filename = kr_entities_path .. "greenhouse/greenhouse-working.png",
+          filename = "__Spaghetorio__/graphics/krastorio/entities/greenhouse/greenhouse-working.png",
           scale = scale,
           width = 256,
           height = 256,
@@ -129,7 +129,7 @@ data:extend({
           line_length = 5,
           animation_speed = 0.35,
           hr_version = {
-            filename = kr_entities_path .. "greenhouse/hr-greenhouse-working.png",
+            filename = "__Spaghetorio__/graphics/krastorio/entities/greenhouse/hr-greenhouse-working.png",
             width = 512,
             height = 512,
             frame_count = 10,
