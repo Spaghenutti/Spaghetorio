@@ -13,6 +13,11 @@ data:extend({
   },
 
   -- MARK: Recipe Category
+  -- Nuclear fusion, used by fusion reactors for make steam
+  {
+    type = "recipe-category",
+    name = "sp-kr-nuclear-fusion",
+  },
   {
     -- Growing, used by greenhouse
     type = "recipe-category",

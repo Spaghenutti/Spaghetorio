@@ -4505,6 +4505,34 @@ data:extend({
       {type = "item", name = "sp-kr-fuel-refinery", amount = 1}
     }
   },
+  {
+    type = "recipe",
+    name = "sp-kr-particle-accelerator",
+    icon_size = 64,
+    mip_maps = 4,
+    category = "crafting",
+    energy_required = 750,
+    enabled = false,
+    ingredients = {
+      {type = "item", name = "concrete", amount = 1000},
+      {type = "item", name = "sp-stainless-steel", amount = 1000},
+      {type = "item", name = "sp-tungsten-slab", amount = 300},
+      {type = "item", name = "sp-graphene", amount = 500},
+      {type = "item", name = "sp-heat-resistant-tile", amount = 200},
+      {type = "item", name = "sp-control-unit", amount = 100},
+      {type = "item", name = "sp-advanced-processing-unit", amount = 50},
+      {type = "item", name = "sp-glass-fiber", amount = 100},
+      {type = "item", name = "sp-plate-heat-exchanger", amount = 60},
+      {type = "item", name = "sp-cryostat", amount = 40},
+      {type = "item", name = "sp-neodymium-magnet", amount = 200},
+      {type = "item", name = "superconductor", amount = 40},
+      {type = "item", name = "sp-electromagnet", amount = 250},
+      {type = "item", name = "heat-pipe", amount = 100}
+    },
+    results = {
+      {type = "item", name = "sp-kr-particle-accelerator", amount = 1}
+    }
+  },
 
 
 --   -- MARK: Krastorio Buildings
@@ -4879,41 +4907,6 @@ data:extend({
 -- 20,
 -- 40)
 
--- util.recipe.change_recipe_ingredients("kr-fusion-reactor",
--- {
---   {type = "item", name = "concrete", amount = 1000},
---   {type = "item", name = "sp-stainless-steel", amount = 1000},
---   {type = "item", name = "sp-tungsten-slab", amount = 300},
---   {type = "item", name = "sp-graphene", amount = 500},
---   {type = "item", name = "sp-heat-resistant-tile", amount = 200},
---   {type = "item", name = "sp-control-unit", amount = 100},
---   {type = "item", name = "sp-advanced-processing-unit", amount = 50},
---   {type = "item", name = "sp-glass-fiber", amount = 100},
---   {type = "item", name = "sp-plate-heat-exchanger", amount = 60},
---   {type = "item", name = "sp-cryostat", amount = 40},
---   {type = "item", name = "sp-neodymium-magnet", amount = 200},
---   {type = "item", name = "superconductor", amount = 40},
---   {type = "item", name = "sp-electromagnet", amount = 250},
---   {type = "item", name = "heat-pipe", amount = 100}
--- },
--- {
---   {type = "item", name = "concrete", amount = 4000},
---   {type = "item", name = "sp-stainless-steel", amount = 3000},
---   {type = "item", name = "sp-tungsten-slab", amount = 500},
---   {type = "item", name = "sp-graphene", amount = 1000},
---   {type = "item", name = "sp-heat-resistant-tile", amount = 200},
---   {type = "item", name = "sp-control-unit", amount = 300},
---   {type = "item", name = "sp-advanced-processing-unit", amount = 100},
---   {type = "item", name = "sp-glass-fiber", amount = 250},
---   {type = "item", name = "sp-plate-heat-exchanger", amount = 200},
---   {type = "item", name = "sp-cryostat", amount = 100},
---   {type = "item", name = "sp-neodymium-magnet", amount = 400},
---   {type = "item", name = "superconductor", amount = 100},
---   {type = "item", name = "sp-electromagnet", amount = 600},
---   {type = "item", name = "heat-pipe", amount = 200}
--- },
--- 700,
--- 3000)
 -- util.recipe.change_recipe_ingredients("kr-electric-mining-drill-mk2",
 -- {
 --   {type = "item", name = "sp-steel-beam", amount = 12},
