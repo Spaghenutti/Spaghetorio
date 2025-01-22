@@ -222,7 +222,7 @@ data:extend({
       orientation_to_variation = false,
     },
 
-    energy_usage = "250KW",
+    energy_usage = "250kW",
     ingredient_count = 6,
     module_specification = { module_slots = 2 },
     allowed_effects = { "consumption", "speed", "productivity", "pollution" },

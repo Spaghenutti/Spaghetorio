@@ -26,7 +26,7 @@ data:extend({
       production_type = "input",
       base_area = 1,
       base_level = -1,
-      pipe_connections = { { type = "input", position = { 5, 0 } } },
+      pipe_connections = { {flow_direction="input", direction = defines.direction.south, position = {5, 0}} },
     },
     energy_source = {
       type = "electric",

@@ -4324,18 +4324,58 @@ data:extend({
       {type = "item", name = "sp-kr-atmospheric-condenser", amount = 1}
     }
   },
+  {
+    type = "recipe",
+    name = "sp-kr-bio-lab",
+    icon_size = 64,
+    mip_maps = 4,
+    category = "crafting",
+    energy_required = 30,
+    enabled = false,
+    ingredients = {
+      {type = "item", name = "sp-pressure-tube", amount = 20},
+      {type = "item", name = "sp-stainless-steel", amount = 30},
+      {type = "item", name = "pump", amount = 12},
+      {type = "item", name = "sp-glass", amount = 50},
+      {type = "item", name = "sp-filter", amount = 12}
+    },
+    results = {
+      {type = "item", name = "sp-kr-bio-lab", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-kr-greenhouse",
+    icon_size = 64,
+    mip_maps = 4,
+    category = "crafting",
+    energy_required = 20,
+    enabled = false,
+    ingredients = {
+      {type = "item", name = "sp-steel-beam", amount = 24},
+      {type = "item", name = "sp-bolts", amount = 48},
+      {type = "item", name = "sp-glass", amount = 40},
+      {type = "item", name = "stone-brick", amount = 16},
+      {type = "item", name = "landfill", amount = 25},
+      {type = "item", name = "sp-copper-tube", amount = 20},
+      {type = "item", name = "sp-valve", amount = 8}
+    },
+    results = {
+      {type = "item", name = "sp-kr-greenhouse", amount = 1}
+    }
+  },
 
 --   -- MARK: Krastorio Buildings
 -- util.recipe.change_recipe_ingredients("kr-loader",
 -- {
---   {type = "item", name = "motor", amount = 1},
+--   {type = "item", name = "engine-unit", amount = 1},
 --   {type = "item", name = "sp-machined-parts", amount = 2},
 --   {type = "item", name = "sp-wooden-board", amount = 1},
 --   {type = "item", name = "sp-bolts", amount = 4},
 --   {type = "item", name = "transport-belt", amount = 1}
 -- },
 -- {
---   {type = "item", name = "motor", amount = 1},
+--   {type = "item", name = "engine-unit", amount = 1},
 --   {type = "item", name = "sp-machined-parts", amount = 4},
 --   {type = "item", name = "sp-wooden-board", amount = 2},
 --   {type = "item", name = "sp-bolts", amount = 6},
@@ -4349,7 +4389,7 @@ data:extend({
 --   {type = "item", name = "sp-aluminum-frame", amount = 2},
 --   {type = "item", name = "electric-motor", amount = 2},
 --   {type = "item", name = "fast-transport-belt", amount = 1},
---   {type = "item", name = "steel-gear-wheel", amount = 4},
+--   {type = "item", name = "sp-steel-gear-wheel", amount = 4},
 --   {type = "item", name = "sp-bolts", amount = 4},
 --   {type = "item", name = "electronic-circuit", amount = 2}
 -- },
@@ -4357,7 +4397,7 @@ data:extend({
 --   {type = "item", name = "sp-aluminum-frame", amount = 4},
 --   {type = "item", name = "electric-motor", amount = 2},
 --   {type = "item", name = "fast-transport-belt", amount = 1},
---   {type = "item", name = "steel-gear-wheel", amount = 6},
+--   {type = "item", name = "sp-steel-gear-wheel", amount = 6},
 --   {type = "item", name = "sp-bolts", amount = 6},
 --   {type = "item", name = "electronic-circuit", amount = 3}
 -- },
@@ -4618,31 +4658,6 @@ data:extend({
 -- 5,
 -- 8)
 
--- util.recipe.change_recipe_ingredients("kr-steel-pipe",
--- {
---   {type = "item", name = "sp-stainless-steel", amount = 1},
---   {type = "item", name = "sp-flange", amount = 2}
--- },
--- {
---   {type = "item", name = "sp-stainless-steel", amount = 2},
---   {type = "item", name = "sp-flange", amount = 2}
--- },
--- 0.5,
--- 1.0)
-
--- util.recipe.change_recipe_ingredients("kr-steel-pipe-to-ground",
--- {
---   {type = "item", name = "kr-steel-pipe", amount = 8},
---   {type = "item", name = "sp-flange", amount = 2},
---   {type = "item", name = "sp-bolts", amount = 8}
--- },
--- {
---   {type = "item", name = "kr-steel-pipe", amount = 12},
---   {type = "item", name = "sp-flange", amount = 2},
---   {type = "item", name = "sp-bolts", amount = 8}
--- },
--- 8,
--- 12)
 -- util.recipe.change_recipe_ingredients("kr-black-reinforced-plate",
 -- {
 --   {type = "item", name = "refined-concrete", amount = 20},
@@ -4707,7 +4722,7 @@ data:extend({
 --   {type = "item", name = "iron-gear-wheel", amount = 30},
 --   {type = "item", name = "sp-gearbox", amount = 8},
 --   {type = "item", name = "sp-bolts", amount = 36},
---   {type = "item", name = "motor", amount = 10},
+--   {type = "item", name = "engine-unit", amount = 10},
 --   {type = "item", name = "stone-brick", amount = 16}
 -- },
 -- {
@@ -4715,21 +4730,21 @@ data:extend({
 --   {type = "item", name = "iron-gear-wheel", amount = 60},
 --   {type = "item", name = "sp-gearbox", amount = 12},
 --   {type = "item", name = "sp-bolts", amount = 72},
---   {type = "item", name = "motor", amount = 20},
+--   {type = "item", name = "engine-unit", amount = 20},
 --   {type = "item", name = "stone-brick", amount = 32}
 -- },
 -- 12,
 -- 24)
 -- util.recipe.change_recipe_ingredients("kr-fluid-burner",
 -- {
---   {type = "item", name = "steel-beam", amount = 16},
+--   {type = "item", name = "sp-steel-beam", amount = 16},
 --   {type = "item", name = "sp-copper-tube", amount = 30},
 --   {type = "item", name = "sp-valve", amount = 4},
 --   {type = "item", name = "stone-brick", amount = 8},
 --   {type = "item", name = "sp-bolts", amount = 16}
 -- },
 -- {
---   {type = "item", name = "steel-beam", amount = 24},
+--   {type = "item", name = "sp-steel-beam", amount = 24},
 --   {type = "item", name = "sp-copper-tube", amount = 50},
 --   {type = "item", name = "sp-valve", amount = 8},
 --   {type = "item", name = "stone-brick", amount = 20},
@@ -4737,42 +4752,22 @@ data:extend({
 -- },
 -- 10,
 -- 20)
--- util.recipe.change_recipe_ingredients("kr-greenhouse",
--- {
---   {type = "item", name = "steel-beam", amount = 24},
---   {type = "item", name = "sp-bolts", amount = 48},
---   {type = "item", name = "glass", amount = 40},
---   {type = "item", name = "stone-brick", amount = 16},
---   {type = "item", name = "landfill", amount = 25},
---   {type = "item", name = "sp-copper-tube", amount = 20},
---   {type = "item", name = "sp-valve", amount = 8}
--- },
--- {
---   {type = "item", name = "steel-beam", amount = 48},
---   {type = "item", name = "sp-bolts", amount = 96},
---   {type = "item", name = "glass", amount = 80},
---   {type = "item", name = "stone-brick", amount = 32},
---   {type = "item", name = "landfill", amount = 25},
---   {type = "item", name = "sp-copper-tube", amount = 40},
---   {type = "item", name = "sp-valve", amount = 16}
--- },
--- 20,
--- 40)
+
 -- util.recipe.change_recipe_ingredients("kr-filtration-plant",
 -- {
---   {type = "item", name = "steel-beam", amount = 48},
+--   {type = "item", name = "sp-steel-beam", amount = 48},
 --   {type = "item", name = "sp-copper-tube", amount = 50},
 --   {type = "item", name = "sp-bolts", amount = 60},
---   {type = "item", name = "glass", amount = 20},
+--   {type = "item", name = "sp-glass", amount = 20},
 --   {type = "item", name = "electric-motor", amount = 12},
 --   {type = "item", name = "electronic-circuit", amount = 12},
 --   {type = "item", name = "sp-valve", amount = 16}
 -- },
 -- {
---   {type = "item", name = "steel-beam", amount = 96},
+--   {type = "item", name = "sp-steel-beam", amount = 96},
 --   {type = "item", name = "sp-copper-tube", amount = 100},
 --   {type = "item", name = "sp-bolts", amount = 120},
---   {type = "item", name = "glass", amount = 40},
+--   {type = "item", name = "sp-glass", amount = 40},
 --   {type = "item", name = "electric-motor", amount = 24},
 --   {type = "item", name = "electronic-circuit", amount = 24},
 --   {type = "item", name = "sp-valve", amount = 24}
@@ -4781,9 +4776,9 @@ data:extend({
 -- 48)
 -- util.recipe.change_recipe_ingredients("kr-electrolysis-plant",
 -- {
---   {type = "item", name = "steel-beam", amount = 36},
+--   {type = "item", name = "sp-steel-beam", amount = 36},
 --   {type = "item", name = "sp-bolts", amount = 80},
---   {type = "item", name = "glass", amount = 24},
+--   {type = "item", name = "sp-glass", amount = 24},
 --   {type = "item", name = "engine-unit", amount = 8},
 --   {type = "item", name = "electronic-circuit", amount = 8},
 --   {type = "item", name = "sp-valve", amount = 8}
@@ -4791,7 +4786,7 @@ data:extend({
 -- {
 --   {type = "item", name = "iron-beam", amount = 72},
 --   {type = "item", name = "sp-bolts", amount = 160},
---   {type = "item", name = "glass", amount = 48},
+--   {type = "item", name = "sp-glass", amount = 48},
 --   {type = "item", name = "engine-unit", amount = 12},
 --   {type = "item", name = "electronic-circuit", amount = 12},
 --   {type = "item", name = "sp-valve", amount = 16}
@@ -4800,18 +4795,18 @@ data:extend({
 -- 40)
 -- util.recipe.change_recipe_ingredients("kr-gas-power-station",
 -- {
---   {type = "item", name = "steel-beam", amount = 20},
+--   {type = "item", name = "sp-steel-beam", amount = 20},
 --   {type = "item", name = "sp-bolts", amount = 30},
---   {type = "item", name = "kr-steel-pipe", amount = 20},
---   {type = "item", name = "kr-steel-pump", amount = 8},
+--   {type = "item", name = "pipe", amount = 20},
+--   {type = "item", name = "pump", amount = 8},
 --   {type = "item", name = "sp-dynamo", amount = 4}, 
 --   {type = "item", name = "sp-valve", amount = 10}
 -- },
 -- {
---   {type = "item", name = "steel-beam", amount = 40},
+--   {type = "item", name = "sp-steel-beam", amount = 40},
 --   {type = "item", name = "sp-bolts", amount = 60},
---   {type = "item", name = "kr-steel-pipe", amount = 40},
---   {type = "item", name = "kr-steel-pump", amount = 12},
+--   {type = "item", name = "pipe", amount = 40},
+--   {type = "item", name = "pump", amount = 12},
 --   {type = "item", name = "sp-dynamo", amount = 8},
 --   {type = "item", name = "sp-valve", amount = 20}
 -- },
@@ -4874,7 +4869,7 @@ data:extend({
 -- 3000)
 -- util.recipe.change_recipe_ingredients("kr-electric-mining-drill-mk2",
 -- {
---   {type = "item", name = "steel-beam", amount = 12},
+--   {type = "item", name = "sp-steel-beam", amount = 12},
 --   {type = "item", name = "sp-bolts", amount = 30},
 --   {type = "item", name = "sp-ceramics", amount = 16},
 --   {type = "item", name = "electric-engine-unit", amount = 4},
@@ -4883,7 +4878,7 @@ data:extend({
 --   {type = "item", name = "advanced-circuit", amount = 6}
 -- },
 -- {
---   {type = "item", name = "steel-beam", amount = 20},
+--   {type = "item", name = "sp-steel-beam", amount = 20},
 --   {type = "item", name = "sp-bolts", amount = 50},
 --   {type = "item", name = "sp-ceramics", amount = 24},
 --   {type = "item", name = "electric-engine-unit", amount = 6},
@@ -5026,25 +5021,7 @@ data:extend({
 -- },
 -- 120,
 -- 180)
--- util.recipe.change_recipe_ingredients("kr-bio-lab",
--- {
---   {type = "item", name = "sp-pressure-tube", amount = 20},
---   {type = "item", name = "fertilizer", amount = 100},
---   {type = "item", name = "sp-stainless-steel", amount = 30},
---   {type = "item", name = "kr-steel-pump", amount = 12},
---   {type = "item", name = "glass", amount = 50},
---   {type = "item", name = "sp-filter", amount = 12}
--- },
--- {
---   {type = "item", name = "sp-pressure-tube", amount = 40},
---   {type = "item", name = "fertilizer", amount = 160},
---   {type = "item", name = "sp-stainless-steel", amount = 60},
---   {type = "item", name = "kr-steel-pump", amount = 20},
---   {type = "item", name = "glass", amount = 80},
---   {type = "item", name = "sp-filter", amount = 40}
--- },
--- 30,
--- 60)
+
 
 -- util.recipe.change_recipe_ingredients("kr-fuel-refinery",
 -- {
@@ -5099,7 +5076,7 @@ data:extend({
 --   {type = "item", name = "kr-black-reinforced-plate", amount = 16},
 --   {type = "item", name = "sp-TiAlSn", amount = 20},
 --   {type = "item", name = "sp-stainless-steel", amount = 8},
---   {type = "item", name = "glass", amount = 10},
+--   {type = "item", name = "sp-glass", amount = 10},
 --   {type = "item", name = "sp-electrode", amount = 2}
 -- },
 -- {
@@ -5112,7 +5089,7 @@ data:extend({
 --   {type = "item", name = "kr-black-reinforced-plate", amount = 20},
 --   {type = "item", name = "sp-TiAlSn", amount = 32},
 --   {type = "item", name = "sp-stainless-steel", amount = 12},
---   {type = "item", name = "glass", amount = 20},
+--   {type = "item", name = "sp-glass", amount = 20},
 --   {type = "item", name = "sp-electrode", amount = 4}
 -- },
 -- 50,
@@ -5148,7 +5125,7 @@ data:extend({
 -- {
 --   {type = "item", name = "sp-niobium-steel", amount = 100},
 --   {type = "item", name = "rare-metals", amount = 40},
---   {type = "item", name = "glass", amount = 60},
+--   {type = "item", name = "sp-glass", amount = 60},
 --   {type = "item", name = "sp-control-unit", amount = 20},
 --   {type = "item", name = "ai-core", amount = 50},
 --   {type = "item", name = "sp-micro-machine", amount = 50},
@@ -5160,7 +5137,7 @@ data:extend({
 -- {
 --   {type = "item", name = "sp-niobium-steel", amount = 160},
 --   {type = "item", name = "rare-metals", amount = 100},
---   {type = "item", name = "glass", amount = 80},
+--   {type = "item", name = "sp-glass", amount = 80},
 --   {type = "item", name = "sp-control-unit", amount = 60},
 --   {type = "item", name = "ai-core", amount = 80},
 --   {type = "item", name = "sp-micro-machine", amount = 72},

@@ -4,6 +4,10 @@ Regex for replacing {"blank-tech-card", 5} to {type = "item", name = "blank-tech
 {type = "item", name = "$1", amount = $2}
 
 
+(\d+)KW"
+$1kW"
+
+
 kr_items_icons_path .. "
 "__Spaghetorio__/graphics/krastorio/icons/items/
 
@@ -20,7 +24,11 @@ base_area = -?\d+,(\n\s+)base_level = -?\d+,\n\s+pipe_connections = \{ \{ type =
 volume = 1000,$1pipe_connections = {{flow_direction="$2", direction = defines.direction.south, position = {$3, $4}}},$1secondary_draw_orders = {north = $5}
 
 
-emissions_per_minute = (\d+)
+\{ type = "([-\w]+)", position = \{ (-?\d+), (-?\d+) \} \}
+{flow_direction="$1", direction = defines.direction.south, position = {$2, $3}}
+
+
+emissions_per_minute = ([-.\d]+)
 emissions_per_minute = {pollution = $1}
 
 

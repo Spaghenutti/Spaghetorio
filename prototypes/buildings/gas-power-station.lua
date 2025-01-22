@@ -120,10 +120,10 @@ data:extend({
       height = 2,
       base_level = -1,
       pipe_connections = {
-        { type = "input-output", position = { 3, 0 } },
-        { type = "input-output", position = { -3, 0 } },
-        { type = "input-output", position = { 0, 3 } },
-        { type = "input-output", position = { 0, -3 } },
+        {flow_direction="input-output", direction = defines.direction.south, position = {3, 0}},
+        {flow_direction="input-output", direction = defines.direction.south, position = {-3, 0}},
+        {flow_direction="input-output", direction = defines.direction.south, position = {0, 3}},
+        {flow_direction="input-output", direction = defines.direction.south, position = {0, -3}},
       },
       production_type = "input-output",
       minimum_temperature = 25.0,
@@ -193,6 +193,6 @@ data:extend({
     audible_distance_modifier = 5,
     min_perceived_performance = 0.25,
     performance_to_sound_speedup = 0.5,
-    max_power_output = "4500KW",
+    max_power_output = "4500kW",
   },
 })

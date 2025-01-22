@@ -32,7 +32,7 @@ data:extend({
         pipe_picture = sp_kr_pipe_path,
         base_area = 10,
         base_level = -1,
-        pipe_connections = { { type = "input", position = { -3, -1 } } },
+        pipe_connections = { {flow_direction="input", direction = defines.direction.south, position = {-3, -1}} },
       },
       {
         production_type = "input",
@@ -40,7 +40,7 @@ data:extend({
         pipe_picture = sp_kr_pipe_path,
         base_area = 10,
         base_level = -1,
-        pipe_connections = { { type = "input", position = { -3, 1 } } },
+        pipe_connections = { {flow_direction="input", direction = defines.direction.south, position = {-3, 1}} },
       },
       -- Output
       {
@@ -49,7 +49,7 @@ data:extend({
         pipe_picture = sp_kr_pipe_path,
         base_area = 10,
         base_level = 1,
-        pipe_connections = { { type = "output", position = { 3, -1 } } },
+        pipe_connections = { {flow_direction="output", direction = defines.direction.south, position = {3, -1}} },
       },
       {
         production_type = "output",
@@ -57,7 +57,7 @@ data:extend({
         pipe_picture = sp_kr_pipe_path,
         base_area = 10,
         base_level = 1,
-        pipe_connections = { { type = "output", position = { 3, 1 } } },
+        pipe_connections = { {flow_direction="output", direction = defines.direction.south, position = {3, 1}} },
       },
       fluid_boxes_off_when_no_fluid_recipe = false,
     },

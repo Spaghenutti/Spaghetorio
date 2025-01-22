@@ -200,14 +200,14 @@ data:extend({
         pipe_covers = pipecoverspictures(),
         base_area = 10,
         base_level = -1,
-        pipe_connections = { { type = "input", position = { -1, -2 } } },
+        pipe_connections = { {flow_direction="input", direction = defines.direction.south, position = {-1, -2}} },
       },
       {
         production_type = "input",
         pipe_covers = pipecoverspictures(),
         base_area = 10,
         base_level = -1,
-        pipe_connections = { { type = "input", position = { 1, -2 } } },
+        pipe_connections = { {flow_direction="input", direction = defines.direction.south, position = {1, -2}} },
       },
       -- Outputs
       {
