@@ -4444,6 +4444,27 @@ data:extend({
       {type = "item", name = "sp-kr-energy-storage", amount = 1}
     }
   },
+  {
+    type = "recipe",
+    name = "sp-kr-filtration-plant",
+    icon_size = 64,
+    mip_maps = 4,
+    category = "crafting",
+    energy_required = 30,
+    enabled = false,
+    ingredients = {
+      {type = "item", name = "sp-steel-beam", amount = 48},
+      {type = "item", name = "sp-copper-tube", amount = 50},
+      {type = "item", name = "sp-bolts", amount = 60},
+      {type = "item", name = "sp-glass", amount = 20},
+      {type = "item", name = "electric-engine-unit", amount = 12},
+      {type = "item", name = "electronic-circuit", amount = 12},
+      {type = "item", name = "sp-valve", amount = 16}
+    },
+    results = {
+      {type = "item", name = "sp-kr-filtration-plant", amount = 1}
+    }
+  },
 
 
 --   -- MARK: Krastorio Buildings
@@ -4468,7 +4489,7 @@ data:extend({
 -- util.recipe.change_recipe_ingredients("kr-fast-loader",
 -- {
 --   {type = "item", name = "sp-aluminum-frame", amount = 2},
---   {type = "item", name = "electric-motor", amount = 2},
+--   {type = "item", name = "electric-engine-unit", amount = 2},
 --   {type = "item", name = "fast-transport-belt", amount = 1},
 --   {type = "item", name = "sp-steel-gear-wheel", amount = 4},
 --   {type = "item", name = "sp-bolts", amount = 4},
@@ -4476,7 +4497,7 @@ data:extend({
 -- },
 -- {
 --   {type = "item", name = "sp-aluminum-frame", amount = 4},
---   {type = "item", name = "electric-motor", amount = 2},
+--   {type = "item", name = "electric-engine-unit", amount = 2},
 --   {type = "item", name = "fast-transport-belt", amount = 1},
 --   {type = "item", name = "sp-steel-gear-wheel", amount = 6},
 --   {type = "item", name = "sp-bolts", amount = 6},
@@ -4506,7 +4527,7 @@ data:extend({
 -- util.recipe.change_recipe_ingredients("kr-advanced-transport-belt",
 -- {
 --   {type = "item", name = "processing-unit", amount = 1},
---   {type = "item", name = "electric-motor", amount = 2},
+--   {type = "item", name = "electric-engine-unit", amount = 2},
 --   {type = "item", name = "sp-ball-bearing", amount = 2},
 --   {type = "item", name = "sp-electromagnet", amount = 2},
 --   {type = "item", name = "sp-aluminum-brass", amount = 2},
@@ -4514,7 +4535,7 @@ data:extend({
 -- },
 -- {
 --   {type = "item", name = "processing-unit", amount = 2},
---   {type = "item", name = "electric-motor", amount = 2},
+--   {type = "item", name = "electric-engine-unit", amount = 2},
 --   {type = "item", name = "sp-ball-bearing", amount = 4},
 --   {type = "item", name = "sp-electromagnet", amount = 3},
 --   {type = "item", name = "sp-aluminum-brass", amount = 3},
@@ -4787,13 +4808,13 @@ data:extend({
 --   {type = "item", name = "iron-plate", amount = 12},
 --   {type = "item", name = "stone-brick", amount = 4},
 --   {type = "item", name = "sp-bolts", amount = 4},
---   {type = "item", name = "electric-motor", amount = 1}
+--   {type = "item", name = "electric-engine-unit", amount = 1}
 -- },
 -- {
 --   {type = "item", name = "iron-plate", amount = 24},
 --   {type = "item", name = "stone-brick", amount = 4},
 --   {type = "item", name = "sp-bolts", amount = 10},
---   {type = "item", name = "electric-motor", amount = 2}
+--   {type = "item", name = "electric-engine-unit", amount = 2}
 -- },
 -- 10,
 -- 20)
@@ -4816,27 +4837,7 @@ data:extend({
 -- 10,
 -- 20)
 
--- util.recipe.change_recipe_ingredients("kr-filtration-plant",
--- {
---   {type = "item", name = "sp-steel-beam", amount = 48},
---   {type = "item", name = "sp-copper-tube", amount = 50},
---   {type = "item", name = "sp-bolts", amount = 60},
---   {type = "item", name = "sp-glass", amount = 20},
---   {type = "item", name = "electric-motor", amount = 12},
---   {type = "item", name = "electronic-circuit", amount = 12},
---   {type = "item", name = "sp-valve", amount = 16}
--- },
--- {
---   {type = "item", name = "sp-steel-beam", amount = 96},
---   {type = "item", name = "sp-copper-tube", amount = 100},
---   {type = "item", name = "sp-bolts", amount = 120},
---   {type = "item", name = "sp-glass", amount = 40},
---   {type = "item", name = "electric-motor", amount = 24},
---   {type = "item", name = "electronic-circuit", amount = 24},
---   {type = "item", name = "sp-valve", amount = 24}
--- },
--- 24,
--- 48)
+
 
 -- util.recipe.change_recipe_ingredients("kr-gas-power-station",
 -- {
