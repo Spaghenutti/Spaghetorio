@@ -26,3 +26,7 @@ kr_buildings_sounds_path .. "
 
 off_when_no_fluid_recipe
 fluid_boxes_off_when_no_fluid_recipe
+
+
+kr_pipe_path
+sp_kr_pipe_path

@@ -2,11 +2,13 @@
 -- MARK: Prototypes
 -- Buildings
 require("prototypes.buildings.advanced-assembling-machine")
+require("prototypes.buildings.advanced-chemical-plant")
 require("prototypes.buildings.lumber-mill")
 
 -- Entitites
 require("prototypes.entities.big-random-pipes-remnant")
 require("prototypes.entities.medium-random-pipes-remnant")
+require("prototypes.entities.pipe-patch")
 
 -- Resource
 require("prototypes.resource.autoplace-control")

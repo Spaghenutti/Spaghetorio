@@ -4177,6 +4177,30 @@ data:extend({
       {type = "item", name = "sp-kr-advanced-assembling-machine", amount = 1}
     }
   },
+  {
+    type = "recipe",
+    name = "sp-kr-advanced-chemical-plant",  -- #ForRegEx# - recipe
+    icon_size = 64,
+    mip_maps = 4,
+    category = "crafting",
+    enabled = false,
+    energy_required = 45,
+    ingredients =   {
+      {type = "item", name = "sp-TiAlSn", amount = 20},
+      {type = "item", name = "sp-stainless-steel", amount = 40},
+      {type = "item", name = "sp-glass", amount = 60},
+      {type = "item", name = "processing-unit", amount = 32},
+      {type = "item", name = "sp-compressor", amount = 8},
+      {type = "item", name = "sp-filter", amount = 60},
+      {type = "item", name = "sp-pressure-tube", amount = 40},
+      {type = "item", name = "sp-copper-tube", amount = 100},
+      {type = "item", name = "sp-flange", amount = 20},
+      {type = "item", name = "refined-concrete", amount = 60}
+    },
+    results = {
+      {type = "item", name = "sp-kr-advanced-chemical-plant", amount = 1}
+    }
+  },
   ------------------------------------------------------------------------------
   -- MARK: Equipment
   ------------------------------------------------------------------------------

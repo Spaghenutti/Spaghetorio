@@ -30,3 +30,15 @@ Krastorio rare-metal recipes:
   - "kr-nuclear-locomotive"
   - "kr-railgun-turret"
   - "kr-rocket-turret"
+
+To create new building:
+  - building.lua and import in data.lua
+  - If copying from krastorio:
+    - remove code for kr_icons_size variable
+    - replace strings with replace_strings.txt
+    - remove hr_version of pictures, animation, icons, ...
+    - rename "kr- to "sp-kr- for the name
+    - change animation = {...} to graphics_set = {animation = {...}}
+    - change module_specification = {...} to module_slots = x
+  - item
+  - recipe

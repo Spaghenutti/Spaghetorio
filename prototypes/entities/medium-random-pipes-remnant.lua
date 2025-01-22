@@ -20,16 +20,7 @@ data:extend({
       width = 175,
       height = 175,
       frame_count = 1,
-      direction_count = 1,
-      hr_version = {
-        filename = "__Spaghetorio__/graphics/krastorio/entities/remnants/medium-random-pipes-remnant/hr-medium-random-pipes-remnant.png",
-        line_length = 1,
-        width = 350,
-        height = 350,
-        frame_count = 1,
-        direction_count = 1,
-        scale = 0.5,
-      },
+      direction_count = 1
     }),
   },
 })
