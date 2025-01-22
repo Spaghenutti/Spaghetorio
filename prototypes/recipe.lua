@@ -4465,6 +4465,25 @@ data:extend({
       {type = "item", name = "sp-kr-filtration-plant", amount = 1}
     }
   },
+  {
+    type = "recipe",
+    name = "sp-kr-fluid-burner",
+    icon_size = 64,
+    mip_maps = 4,
+    category = "crafting",
+    energy_required = 10,
+    enabled = false,
+    ingredients = {
+      {type = "item", name = "sp-steel-beam", amount = 16},
+      {type = "item", name = "sp-copper-tube", amount = 30},
+      {type = "item", name = "sp-valve", amount = 4},
+      {type = "item", name = "stone-brick", amount = 8},
+      {type = "item", name = "sp-bolts", amount = 16}
+    },
+    results = {
+      {type = "item", name = "sp-kr-fluid-burner", amount = 1}
+    }
+  },
 
 
 --   -- MARK: Krastorio Buildings
@@ -4818,26 +4837,6 @@ data:extend({
 -- },
 -- 10,
 -- 20)
-
--- util.recipe.change_recipe_ingredients("kr-fluid-burner",
--- {
---   {type = "item", name = "sp-steel-beam", amount = 16},
---   {type = "item", name = "sp-copper-tube", amount = 30},
---   {type = "item", name = "sp-valve", amount = 4},
---   {type = "item", name = "stone-brick", amount = 8},
---   {type = "item", name = "sp-bolts", amount = 16}
--- },
--- {
---   {type = "item", name = "sp-steel-beam", amount = 24},
---   {type = "item", name = "sp-copper-tube", amount = 50},
---   {type = "item", name = "sp-valve", amount = 8},
---   {type = "item", name = "stone-brick", amount = 20},
---   {type = "item", name = "sp-bolts", amount = 24}
--- },
--- 10,
--- 20)
-
-
 
 -- util.recipe.change_recipe_ingredients("kr-gas-power-station",
 -- {

@@ -93,7 +93,7 @@ data:extend({
         pipe_covers = pipecoverspictures(),
         base_area = 10,
         base_level = -1,
-        pipe_connections = { { type = "input", position = { -0.5, -3.5 } } },
+        pipe_connections = { {flow_direction="input", direction = defines.direction.south, position = {-0.5, -3.5}} },
         secondary_draw_orders = { north = -1 },
       },
       {
@@ -102,7 +102,7 @@ data:extend({
         pipe_covers = pipecoverspictures(),
         base_area = 10,
         base_level = 1,
-        pipe_connections = { { type = "output", position = { 0.5, 3.5 } } },
+        pipe_connections = { {flow_direction="output", direction = defines.direction.south, position = {0.5, 3.5}} },
         secondary_draw_orders = { north = -1 },
       },
       fluid_boxes_off_when_no_fluid_recipe = true,

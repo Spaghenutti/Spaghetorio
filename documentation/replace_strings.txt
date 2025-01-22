@@ -24,7 +24,7 @@ base_area = -?\d+,(\n\s+)base_level = -?\d+,\n\s+pipe_connections = \{ \{ type =
 volume = 1000,$1pipe_connections = {{flow_direction="$2", direction = defines.direction.south, position = {$3, $4}}},$1secondary_draw_orders = {north = $5}
 
 
-\{ type = "([-\w]+)", position = \{ (-?\d+), (-?\d+) \} \}
+\{ type = "([-\w]+)", position = \{ ([-.\d]+), ([-.\d]+) \} \}
 {flow_direction="$1", direction = defines.direction.south, position = {$2, $3}}
 
 
