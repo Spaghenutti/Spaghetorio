@@ -6,6 +6,7 @@ require("prototypes.buildings.advanced-chemical-plant")
 require("prototypes.buildings.advanced-furnace")
 require("prototypes.buildings.advanced-solar-panel")
 require("prototypes.buildings.antimatter-reactor")
+require("prototypes.buildings.atmospheric-condenser")
 require("prototypes.buildings.lumber-mill")
 
 -- Entitites

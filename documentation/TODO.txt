@@ -15,6 +15,11 @@ Factorio Space age
     - limestone as barium ore (baryt)
     - tungsten ore as mercury ore (cinnabar)
     - spodumene as arsen ore
+    - Add cobalt
+
+
+Krastorio cleanup
+  - remove not needed explosions
 
 
 Buildings: Graphics (https://www.figma.com/proto/8ecwGOzYos13D0JTwV5kO9/Factorio-Buildings?node-id=2585-1158&node-type=frame&t=Tt0H6pFe0h0uH68x-0&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1ui%3D1&hotspot-hints=0&hide-ui=1)

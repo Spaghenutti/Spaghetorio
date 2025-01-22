@@ -1,7 +1,7 @@
 data:extend({
   {
     type = "corpse",
-    name = "kr-medium-random-pipes-remnant",
+    name = "sp-kr-medium-random-pipes-remnant",
     icon = "__Spaghetorio__/graphics/krastorio/icons/entities/remnants-icon.png",
     icon_size = 64,
     flags = { "placeable-neutral", "building-direction-8-way", "not-on-map" },

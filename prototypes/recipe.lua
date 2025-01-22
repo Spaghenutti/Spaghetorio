@@ -4303,6 +4303,27 @@ data:extend({
       {type = "item", name = "sp-kr-antimatter-reactor", amount = 1}
     }
   },
+  {
+    type = "recipe",
+    name = "sp-kr-atmospheric-condenser",
+    icon_size = 64,
+    mip_maps = 4,
+    category = "crafting",
+    energy_required = 20,
+    enabled = false,
+    ingredients = {
+      {type = "item", name = "sp-stainless-steel", amount = 30},
+      {type = "item", name = "electronic-circuit", amount = 12},
+      {type = "item", name = "sp-valve", amount = 16},
+      {type = "item", name = "sp-copper-tube", amount = 30},
+      {type = "item", name = "stone-brick", amount = 20},
+      {type = "item", name = "sp-plate-heat-exchanger", amount = 10},
+      {type = "item", name = "sp-bolts", amount = 50}
+    },
+    results = {
+      {type = "item", name = "sp-kr-atmospheric-condenser", amount = 1}
+    }
+  },
 
 --   -- MARK: Krastorio Buildings
 -- util.recipe.change_recipe_ingredients("kr-loader",
@@ -5024,27 +5045,7 @@ data:extend({
 -- },
 -- 30,
 -- 60)
--- util.recipe.change_recipe_ingredients("kr-atmospheric-condenser",
--- {
---   {type = "item", name = "sp-stainless-steel", amount = 30},
---   {type = "item", name = "electronic-circuit", amount = 12},
---   {type = "item", name = "sp-valve", amount = 16},
---   {type = "item", name = "sp-copper-tube", amount = 30},
---   {type = "item", name = "stone-brick", amount = 20},
---   {type = "item", name = "sp-plate-heat-exchanger", amount = 10},
---   {type = "item", name = "sp-bolts", amount = 50}
--- },
--- {
---   {type = "item", name = "sp-stainless-steel", amount = 40},
---   {type = "item", name = "electronic-circuit", amount = 20},
---   {type = "item", name = "sp-valve", amount = 24},
---   {type = "item", name = "sp-copper-tube", amount = 50},
---   {type = "item", name = "stone-brick", amount = 30},
---   {type = "item", name = "sp-plate-heat-exchanger", amount = 20},
---   {type = "item", name = "sp-bolts", amount = 60}
--- },
--- 20,
--- 30)
+
 -- util.recipe.change_recipe_ingredients("kr-fuel-refinery",
 -- {
 --   {type = "item", name = "sp-stainless-steel", amount = 20},

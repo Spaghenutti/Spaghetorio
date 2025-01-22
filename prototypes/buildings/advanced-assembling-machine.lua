@@ -44,7 +44,7 @@ data:extend({
     flags = { "placeable-neutral", "placeable-player", "player-creation" },
     minable = { mining_time = 1, result = "sp-kr-advanced-assembling-machine" },
     max_health = 800,
-    corpse = "kr-medium-random-pipes-remnant",
+    corpse = "sp-kr-medium-random-pipes-remnant",
     dying_explosion = "big-explosion",
     resistances = {
       { type = "physical", percent = 50 },
