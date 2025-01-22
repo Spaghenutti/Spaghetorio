@@ -4364,6 +4364,26 @@ data:extend({
       {type = "item", name = "sp-kr-greenhouse", amount = 1}
     }
   },
+  {
+    type = "recipe",
+    name = "sp-biusart-lab",
+    icon_size = 64,
+    mip_maps = 4,
+    category = "crafting",
+    energy_required = 30,
+    enabled = false,
+    ingredients = {
+      {type = "item", name = "sp-glass", amount = 20},
+      {type = "item", name = "sp-stainless-steel", amount = 12},
+      {type = "item", name = "refined-concrete", amount = 10},
+      {type = "item", name = "sp-anodized-aluminum", amount = 15},
+      {type = "item", name = "advanced-circuit", amount = 20},
+      {type = "item", name = "sp-actuator", amount = 6}
+    },
+    results = {
+      {type = "item", name = "sp-biusart-lab", amount = 1}
+    }
+  },
 
 --   -- MARK: Krastorio Buildings
 -- util.recipe.change_recipe_ingredients("kr-loader",

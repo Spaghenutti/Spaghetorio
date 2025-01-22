@@ -5398,17 +5398,17 @@ data:extend({
   --   stack_size = 50,
   -- },
   -- -- Laboratories
-  -- {
-  --   type = "item",
-  --   name = "biusart-lab",
-  --   icon = "__Spaghetorio__/graphics/krastorio/icons/entities/biusart-lab.png",
-  --   icon_size = 64,
-  --   icon_mipmaps = 4,
-  --   subgroup = "production-machine",
-  --   order = "g[lab]-g2[advanced-lab]",
-  --   place_result = "biusart-lab",
-  --   stack_size = 50,
-  -- },
+  {
+    type = "item",
+    name = "sp-biusart-lab",
+    icon = "__Spaghetorio__/graphics/krastorio/icons/entities/biusart-lab.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "production-machine",
+    order = "g[lab]-g2[advanced-lab]",
+    place_result = "sp-biusart-lab",
+    stack_size = 50,
+  },
   -- {
   --   type = "item",
   --   name = "sp-kr-singularity-lab",

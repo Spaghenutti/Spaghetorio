@@ -35,9 +35,9 @@ data:extend({
         pipe_covers = pipecoverspictures(),
         volume = 1000,
         pipe_connections = {
-          {flow_direction="input-output", direction = defines.direction.south, position = {0, -3}},
-          {flow_direction="input-output", direction = defines.direction.south, position = {-3, 0}},
-          {flow_direction="input-output", direction = defines.direction.south, position = {3, 0}},
+          {flow_direction="input-output", direction = defines.direction.north, position = {0, -3}},
+          {flow_direction="input-output", direction = defines.direction.west, position = {-3, 0}},
+          {flow_direction="input-output", direction = defines.direction.east, position = {3, 0}},
           {flow_direction="input-output", direction = defines.direction.south, position = {0, 3}},
         },
       },
