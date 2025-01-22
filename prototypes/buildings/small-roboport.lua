@@ -1,6 +1,5 @@
 local hit_effects = require("__base__/prototypes/entity/hit-effects")
 local sounds = require("__base__/prototypes/entity/sounds")
-local variations_util = require(kr_public_lib .. "create-roboport-states")
 local empty_sprite = {
   filename = "__Spaghetorio__/graphics/krastorio/entities/empty.png",
   width = 1,
@@ -11,12 +10,12 @@ local empty_sprite = {
 data:extend({
   {
     type = "roboport",
-    name = "kr-small-roboport",
+    name = "sp-kr-small-roboport",
     icon = "__Spaghetorio__/graphics/krastorio/icons/entities/small-roboport.png",
     icon_size = 64,
     icon_mipmaps = 4,
     flags = { "placeable-player", "player-creation" },
-    minable = { mining_time = 0.5, result = "kr-small-roboport" },
+    minable = { mining_time = 0.5, result = "sp-kr-small-roboport" },
     max_health = 350,
     corpse = "medium-remnants",
     damaged_trigger_effect = hit_effects.entity(),
@@ -62,13 +61,6 @@ data:extend({
           height = 150,
           shift = { 0, -0.1 },
           scale = 0.5,
-          hr_version = {
-            filename = "__Spaghetorio__/graphics/krastorio/entities/small-roboport/hr-small-roboport.png",
-            width = 240,
-            height = 300,
-            shift = { 0, -0.1 },
-            scale = 0.25,
-          },
         },
         {
           filename = "__Spaghetorio__/graphics/krastorio/entities/small-roboport/small-roboport-sh.png",
@@ -77,14 +69,6 @@ data:extend({
           shift = { 0.48, 0.43 },
           draw_as_shadow = true,
           scale = 0.5,
-          hr_version = {
-            filename = "__Spaghetorio__/graphics/krastorio/entities/small-roboport/hr-small-roboport-sh.png",
-            width = 322,
-            height = 166,
-            shift = { 0.48, 0.43 },
-            draw_as_shadow = true,
-            scale = 0.25,
-          },
         },
       },
     },
@@ -101,17 +85,6 @@ data:extend({
           shift = { 0, -0.92 },
           draw_as_glow = true,
           animation_speed = 0.1,
-          hr_version = {
-            filename = "__Spaghetorio__/graphics/krastorio/entities/small-roboport/hr-small-roboport-animation.png",
-            priority = "high",
-            width = 110,
-            height = 80,
-            scale = 0.25,
-            frame_count = 8,
-            shift = { 0, -0.92 },
-            draw_as_glow = true,
-            animation_speed = 0.1,
-          },
         },
         {
           filename = "__Spaghetorio__/graphics/krastorio/entities/small-roboport/small-roboport-animation-light.png",
@@ -123,17 +96,6 @@ data:extend({
           shift = { 0, -0.92 },
           draw_as_light = true,
           animation_speed = 0.1,
-          hr_version = {
-            filename = "__Spaghetorio__/graphics/krastorio/entities/small-roboport/hr-small-roboport-animation-light.png",
-            priority = "high",
-            width = 110,
-            height = 80,
-            scale = 0.25,
-            frame_count = 8,
-            shift = { 0, -0.92 },
-            draw_as_light = true,
-            animation_speed = 0.1,
-          },
         },
       },
     },
@@ -189,4 +151,3 @@ data:extend({
   },
 })
 
-variations_util.createRoboportVariations("kr-small-roboport")

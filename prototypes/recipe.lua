@@ -2513,6 +2513,24 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "sp-lithium-sulfur-battery",  -- #ForRegEx# - recipe
+    category = "chemistry",
+    enabled = false,
+    energy_required = 5,
+    ingredients = {
+      {type = "item", name = "lithium", amount = 4},
+      {type = "item", name = "sp-cobalt-billet", amount = 1},
+      {type = "item", name = "sp-aluminum-sheet", amount = 1},
+      {type = "item", name = "carbon", amount = 1},
+      {type = "fluid", name = "sulfuric-acid", amount = 10},
+      {type = "fluid", name = "electrolyte", amount = 4}
+    },
+    results = {
+      {type = "item", name = "sp-lithium-sulfur-battery", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
     name = "sp-quantum-data-plane",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
@@ -4553,7 +4571,74 @@ data:extend({
       {type = "item", name = "sp-kr-gas-power-station", amount = 1}
     }
   },
+  {
+    type = "recipe",
+    name = "sp-kr-large-roboport",
+    icon_size = 64,
+    mip_maps = 4,
+    category = "crafting",
+    energy_required = 120,
+    enabled = false,
+    ingredients = {
+        {type = "item", name = "sp-stainless-steel", amount = 30},
+        {type = "item", name = "sp-yemnuth-plate", amount = 40},
+        {type = "item", name = "sp-rukite-plate", amount = 32},
+        {type = "item", name = "sp-imersium-beam", amount = 16},
+        {type = "item", name = "sp-electrode", amount = 24},
+        {type = "item", name = "sp-energy-control-unit", amount = 8},
+        {type = "item", name = "sp-lithium-sulfur-battery", amount = 100},
+        {type = "item", name = "sp-advanced-processing-unit", amount = 20},
+        {type = "item", name = "sp-plate-heat-exchanger", amount = 12},
+        -- {type = "item", name = "kr-black-reinforced-plate", amount = 60}
+      },
+    results = {
+      {type = "item", name = "sp-kr-large-roboport", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-kr-small-roboport",
+    icon_size = 64,
+    mip_maps = 4,
+    category = "crafting",
+    energy_required = 45,
+    enabled = false,
+    ingredients = {
+      {type = "item", name = "sp-yemnuth-plate", amount = 16},
+      {type = "item", name = "sp-imersium-beam", amount = 12},
+      {type = "item", name = "sp-electrode", amount = 6},
+      {type = "item", name = "sp-transformer", amount = 2},
+      {type = "item", name = "sp-lithium-sulfur-battery", amount = 30},
+      {type = "item", name = "sp-control-unit", amount = 4},
+      --  {type = "item", name = "kr-black-reinforced-plate", amount = 4}
+    },
+    results = {
+      {type = "item", name = "sp-kr-small-roboport", amount = 1}
+    }
+  },
 
+
+  -- util.recipe.change_recipe_ingredients("kr-small-roboport",
+-- {
+--   {type = "item", name = "sp-yemnuth-plate", amount = 16},
+--   {type = "item", name = "sp-imersium-beam", amount = 12},
+--   {type = "item", name = "sp-electrode", amount = 6},
+--   {type = "item", name = "sp-transformer", amount = 2},
+--   {type = "item", name = "sp-lithium-sulfur-battery", amount = 30},
+--   {type = "item", name = "sp-control-unit", amount = 4},
+--   {type = "item", name = "kr-black-reinforced-plate", amount = 4}
+-- },
+-- {
+--   {type = "item", name = "sp-yemnuth-plate", amount = 24},
+--   {type = "item", name = "sp-imersium-beam", amount = 20},
+--   {type = "item", name = "sp-electrode", amount = 12},
+--   {type = "item", name = "sp-transformer", amount = 3},
+--   {type = "item", name = "sp-lithium-sulfur-battery", amount = 40},
+--   {type = "item", name = "sp-control-unit", amount = 6},
+--   {type = "item", name = "kr-black-reinforced-plate", amount = 8}
+-- },
+-- 45,
+-- 90)
 
 --   -- MARK: Krastorio Buildings
 -- util.recipe.change_recipe_ingredients("kr-loader",
@@ -4711,13 +4796,13 @@ data:extend({
 -- util.recipe.change_recipe_ingredients("kr-superior-underground-belt",
 -- {
 --   {type = "item", name = "kr-superior-transport-belt", amount = 24},
---   {type = "item", name = "imersium-beam", amount = 20},
+--   {type = "item", name = "sp-imersium-beam", amount = 20},
 --   {type = "item", name = "sp-compressor", amount = 4},
 --   {type = "item", name = "sp-control-unit", amount = 2}
 -- },
 -- {
 --   {type = "item", name = "kr-superior-transport-belt", amount = 24},
---   {type = "item", name = "imersium-beam", amount = 32},
+--   {type = "item", name = "sp-imersium-beam", amount = 32},
 --   {type = "item", name = "sp-compressor", amount = 6},
 --   {type = "item", name = "sp-control-unit", amount = 6}
 -- },
@@ -4727,13 +4812,13 @@ data:extend({
 -- util.recipe.change_recipe_ingredients("kr-superior-splitter",
 -- {
 --   {type = "item", name = "kr-superior-transport-belt", amount = 2},
---   {type = "item", name = "imersium-beam", amount = 4},
+--   {type = "item", name = "sp-imersium-beam", amount = 4},
 --   {type = "item", name = "sp-micro-machine", amount = 6},
 --   {type = "item", name = "superconductor", amount = 4},
 -- },
 -- {
 --   {type = "item", name = "kr-superior-transport-belt", amount = 2},
---   {type = "item", name = "imersium-beam", amount = 6},
+--   {type = "item", name = "sp-imersium-beam", amount = 6},
 --   {type = "item", name = "sp-micro-machine", amount = 10},
 --   {type = "item", name = "superconductor", amount = 6},
 -- },
@@ -4995,7 +5080,7 @@ data:extend({
 --   {type = "item", name = "sp-bolts", amount = 20},
 --   {type = "item", name = "sp-advanced-processing-unit", amount = 4},
 --   {type = "item", name = "sp-aluminum-cable", amount = 24},
---   {type = "item", name = "imersium-beam", amount = 12},
+--   {type = "item", name = "sp-imersium-beam", amount = 12},
 --   {type = "item", name = "sp-rukite-plate", amount = 4},
 --   {type = "item", name = "concrete", amount = 16},
 --   {type = "item", name = "sp-electrode", amount = 4},
@@ -5005,7 +5090,7 @@ data:extend({
 --   {type = "item", name = "sp-bolts", amount = 40},
 --   {type = "item", name = "sp-advanced-processing-unit", amount = 6},
 --   {type = "item", name = "sp-aluminum-cable", amount = 48},
---   {type = "item", name = "imersium-beam", amount = 24},
+--   {type = "item", name = "sp-imersium-beam", amount = 24},
 --   {type = "item", name = "sp-rukite-plate", amount = 10},
 --   {type = "item", name = "concrete", amount = 32},
 --   {type = "item", name = "sp-electrode", amount = 8},
@@ -5013,54 +5098,8 @@ data:extend({
 -- },
 -- 12,
 -- 24)
--- util.recipe.change_recipe_ingredients("kr-small-roboport",
--- {
---   {type = "item", name = "sp-yemnuth-plate", amount = 16},
---   {type = "item", name = "imersium-beam", amount = 12},
---   {type = "item", name = "sp-electrode", amount = 6},
---   {type = "item", name = "sp-transformer", amount = 2},
---   {type = "item", name = "lithium-sulfur-battery", amount = 30},
---   {type = "item", name = "sp-control-unit", amount = 4},
---   {type = "item", name = "kr-black-reinforced-plate", amount = 4}
--- },
--- {
---   {type = "item", name = "sp-yemnuth-plate", amount = 24},
---   {type = "item", name = "imersium-beam", amount = 20},
---   {type = "item", name = "sp-electrode", amount = 12},
---   {type = "item", name = "sp-transformer", amount = 3},
---   {type = "item", name = "lithium-sulfur-battery", amount = 40},
---   {type = "item", name = "sp-control-unit", amount = 6},
---   {type = "item", name = "kr-black-reinforced-plate", amount = 8}
--- },
--- 45,
--- 90)
--- util.recipe.change_recipe_ingredients("kr-large-roboport",
--- {
---   {type = "item", name = "sp-stainless-steel", amount = 30},
---   {type = "item", name = "sp-yemnuth-plate", amount = 40},
---   {type = "item", name = "sp-rukite-plate", amount = 32},
---   {type = "item", name = "imersium-beam", amount = 16},
---   {type = "item", name = "sp-electrode", amount = 24},
---   {type = "item", name = "sp-energy-control-unit", amount = 8},
---   {type = "item", name = "lithium-sulfur-battery", amount = 100},
---   {type = "item", name = "sp-advanced-processing-unit", amount = 20},
---   {type = "item", name = "sp-plate-heat-exchanger", amount = 12},
---   {type = "item", name = "kr-black-reinforced-plate", amount = 60}
--- },
--- {
---   {type = "item", name = "sp-stainless-steel", amount = 40},
---   {type = "item", name = "sp-yemnuth-plate", amount = 60},
---   {type = "item", name = "sp-rukite-plate", amount = 48},
---   {type = "item", name = "imersium-beam", amount = 24},
---   {type = "item", name = "sp-electrode", amount = 48},
---   {type = "item", name = "sp-energy-control-unit", amount = 16},
---   {type = "item", name = "lithium-sulfur-battery", amount = 160},
---   {type = "item", name = "sp-advanced-processing-unit", amount = 50},
---   {type = "item", name = "sp-plate-heat-exchanger", amount = 24},
---   {type = "item", name = "kr-black-reinforced-plate", amount = 120}
--- },
--- 120,
--- 180)
+
+
 
 -- util.recipe.change_recipe_ingredients("kr-air-purifier",
 -- {
@@ -5085,7 +5124,7 @@ data:extend({
 -- 24)
 -- util.recipe.change_recipe_ingredients("kr-research-server",
 -- {
---   {type = "item", name = "lithium-sulfur-battery", amount = 10},
+--   {type = "item", name = "sp-lithium-sulfur-battery", amount = 10},
 --   {type = "item", name = "sp-glass-fiber", amount = 20},
 --   {type = "item", name = "sp-dynamo", amount = 2},
 --   {type = "item", name = "advanced-circuit", amount = 20},
@@ -5098,7 +5137,7 @@ data:extend({
 --   {type = "item", name = "sp-electrode", amount = 2}
 -- },
 -- {
---   {type = "item", name = "lithium-sulfur-battery", amount = 20},
+--   {type = "item", name = "sp-lithium-sulfur-battery", amount = 20},
 --   {type = "item", name = "sp-glass-fiber", amount = 50},
 --   {type = "item", name = "sp-dynamo", amount = 4},
 --   {type = "item", name = "advanced-circuit", amount = 40},
@@ -5169,7 +5208,7 @@ data:extend({
 -- util.recipe.change_recipe_ingredients("kr-matter-plant",
 -- {
 --   {type = "item", name = "sp-energy-control-unit", amount = 20},
---   {type = "item", name = "imersium-beam", amount = 80},
+--   {type = "item", name = "sp-imersium-beam", amount = 80},
 --   {type = "item", name = "sp-niobium-steel", amount = 50},
 --   {type = "item", name = "rare-metals", amount = 40},
 --   {type = "item", name = "ai-core", amount = 40},
@@ -5180,7 +5219,7 @@ data:extend({
 -- },
 -- {
 --   {type = "item", name = "sp-energy-control-unit", amount = 50},
---   {type = "item", name = "imersium-beam", amount = 120},
+--   {type = "item", name = "sp-imersium-beam", amount = 120},
 --   {type = "item", name = "sp-niobium-steel", amount = 80},
 --   {type = "item", name = "rare-metals", amount = 50},
 --   {type = "item", name = "ai-core", amount = 60},
@@ -5245,14 +5284,14 @@ data:extend({
 -- {
 --   {type = "item", name = "sp-antimatter-engine", amount = 1},
 --   {type = "item", name = "sp-sideral-compute-core", amount = 1},
---   {type = "item", name = "imersium-beam", amount = 8},
+--   {type = "item", name = "sp-imersium-beam", amount = 8},
 --   {type = "item", name = "sp-nanobot", amount = 400},
 --   {type = "item", name = "kr-black-reinforced-plate", amount = 4},
 -- },
 -- {
 --   {type = "item", name = "sp-antimatter-engine", amount = 2},
 --   {type = "item", name = "sp-sideral-compute-core", amount = 1},
---   {type = "item", name = "imersium-beam", amount = 12},
+--   {type = "item", name = "sp-imersium-beam", amount = 12},
 --   {type = "item", name = "sp-nanobot", amount = 600},
 --   {type = "item", name = "kr-black-reinforced-plate", amount = 8},
 -- },

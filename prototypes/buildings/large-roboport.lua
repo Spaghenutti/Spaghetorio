@@ -1,18 +1,17 @@
 local hit_effects = require("__base__/prototypes/entity/hit-effects")
 local sounds = require("__base__/prototypes/entity/sounds")
-local variations_util = require(kr_public_lib .. "create-roboport-states")
 
 data:extend({
   {
     type = "roboport",
-    name = "kr-large-roboport",
+    name = "sp-kr-large-roboport",
     icon = "__Spaghetorio__/graphics/krastorio/icons/entities/large-roboport.png",
     icon_size = 64,
     icon_mipmaps = 4,
     flags = { "placeable-neutral", "placeable-player", "player-creation", "not-rotatable" },
-    minable = { mining_time = 1, result = "kr-large-roboport" },
+    minable = { mining_time = 1, result = "sp-kr-large-roboport" },
     max_health = 3500,
-    corpse = "kr-big-random-pipes-remnant",
+    corpse = "sp-kr-big-random-pipes-remnant",
     damaged_trigger_effect = hit_effects.entity(),
     collision_box = { { -3.75, -3.38 }, { 3.99, 3.75 } },
     selection_box = { { -4, -4 }, { 4, 4 } },
@@ -67,13 +66,6 @@ data:extend({
           width = 280,
           height = 280,
           shift = { 0, 0.08 },
-          hr_version = {
-            filename = "__Spaghetorio__/graphics/krastorio/entities/large-roboport/hr-large-roboport.png",
-            width = 560,
-            height = 560,
-            shift = { 0, 0.08 },
-            scale = 0.5,
-          },
         },
         {
           filename = "__Spaghetorio__/graphics/krastorio/entities/large-roboport/large-roboport-sh.png",
@@ -81,14 +73,6 @@ data:extend({
           height = 213,
           shift = { 1.1, 1.19 },
           draw_as_shadow = true,
-          hr_version = {
-            filename = "__Spaghetorio__/graphics/krastorio/entities/large-roboport/hr-large-roboport-sh.png",
-            width = 626,
-            height = 426,
-            shift = { 1.1, 1.19 },
-            draw_as_shadow = true,
-            scale = 0.5,
-          },
         },
       },
     },
@@ -97,13 +81,6 @@ data:extend({
       width = 68,
       height = 56,
       shift = { 0, 0.28 },
-      hr_version = {
-        filename = "__Spaghetorio__/graphics/krastorio/entities/large-roboport/hr-large-roboport-patch.png",
-        width = 138,
-        height = 112,
-        shift = { 0, 0.28 },
-        scale = 0.5,
-      },
     },
     base_animation = {
       layers = {
@@ -117,18 +94,6 @@ data:extend({
           shift = { 0, -0.75 },
           draw_as_glow = true,
           animation_speed = 0.1,
-          hr_version = {
-            filename = "__Spaghetorio__/graphics/krastorio/entities/large-roboport/hr-large-roboport-animation.png",
-            priority = "medium",
-            width = 350,
-            height = 286,
-            scale = 0.5,
-            line_length = 6,
-            frame_count = 12,
-            shift = { 0, -0.75 },
-            draw_as_glow = true,
-            animation_speed = 0.1,
-          },
         },
         {
           filename = "__Spaghetorio__/graphics/krastorio/entities/large-roboport/large-roboport-animation-light.png",
@@ -140,18 +105,6 @@ data:extend({
           shift = { 0, -0.75 },
           draw_as_light = true,
           animation_speed = 0.1,
-          hr_version = {
-            filename = "__Spaghetorio__/graphics/krastorio/entities/large-roboport/hr-large-roboport-animation-light.png",
-            priority = "high",
-            width = 350,
-            height = 286,
-            scale = 0.5,
-            line_length = 6,
-            frame_count = 12,
-            shift = { 0, -0.75 },
-            draw_as_light = true,
-            animation_speed = 0.1,
-          },
         },
       },
     },
@@ -162,15 +115,6 @@ data:extend({
       height = 18,
       frame_count = 16,
       shift = { 0, -0.85 },
-      hr_version = {
-        filename = "__Spaghetorio__/graphics/krastorio/entities/large-roboport/hr-large-roboport-door-up.png",
-        priority = "medium",
-        width = 98,
-        height = 38,
-        scale = 0.5,
-        frame_count = 16,
-        shift = { 0, -0.86 },
-      },
     },
     door_animation_down = {
       filename = "__Spaghetorio__/graphics/krastorio/entities/large-roboport/large-roboport-door-down.png",
@@ -179,15 +123,6 @@ data:extend({
       height = 18,
       frame_count = 16,
       shift = { 0, -0.29 },
-      hr_version = {
-        filename = "__Spaghetorio__/graphics/krastorio/entities/large-roboport/hr-large-roboport-door-down.png",
-        priority = "medium",
-        width = 98,
-        height = 36,
-        scale = 0.5,
-        frame_count = 16,
-        shift = { 0, -0.285 },
-      },
     },
     recharging_animation = {
       layers = {
@@ -277,5 +212,3 @@ data:extend({
     close_sound = sounds.machine_close,
   },
 })
-
-variations_util.createRoboportVariations("kr-large-roboport")

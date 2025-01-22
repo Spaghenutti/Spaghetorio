@@ -2755,6 +2755,16 @@ data:extend({
     order = "gz[advanced-processing-unit]",
     stack_size = 100
   },
+  {
+    type = "item",
+    name = "sp-lithium-sulfur-battery",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/krastorio//icons/items/lithium-sulfur-battery.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "electronic-optical-component",
+    order = "gz[lithium-sulfur-battery]",
+    stack_size = 100
+  },
   ------------------------------------------------------------------------------
   -- MARK: intermediate-products
   ------------------------------------------------------------------------------
@@ -5522,29 +5532,29 @@ data:extend({
   --   place_result = "sp-kr-superior-underground-belt",
   --   stack_size = 50,
   -- },
-  -- -- logistic network
-  -- {
-  --   type = "item",
-  --   name = "sp-kr-small-roboport",
-  --   icon = "__Spaghetorio__/graphics/krastorio/icons/entities/small-roboport.png",
-  --   icon_size = 64,
-  --   icon_mipmaps = 4,
-  --   subgroup = "logistic-network",
-  --   order = "c[signal]-b[small-roboport]",
-  --   place_result = "sp-kr-small-roboport",
-  --   stack_size = 50,
-  -- },
-  -- {
-  --   type = "item",
-  --   name = "sp-kr-large-roboport",
-  --   icon = "__Spaghetorio__/graphics/krastorio/icons/entities/large-roboport.png",
-  --   icon_size = 64,
-  --   icon_mipmaps = 4,
-  --   subgroup = "logistic-network",
-  --   order = "c[signal]-c[large-roboport]",
-  --   place_result = "sp-kr-large-roboport",
-  --   stack_size = 50,
-  -- },
+  -- logistic network
+  {
+    type = "item",
+    name = "sp-kr-small-roboport",
+    icon = "__Spaghetorio__/graphics/krastorio/icons/entities/small-roboport.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "logistic-network",
+    order = "c[signal]-b[small-roboport]",
+    place_result = "sp-kr-small-roboport",
+    stack_size = 50,
+  },
+  {
+    type = "item",
+    name = "sp-kr-large-roboport",
+    icon = "__Spaghetorio__/graphics/krastorio/icons/entities/large-roboport.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "logistic-network",
+    order = "c[signal]-c[large-roboport]",
+    place_result = "sp-kr-large-roboport",
+    stack_size = 50,
+  },
   -- -- Module
   -- {
   --   type = "item",
