@@ -4136,9 +4136,9 @@ data:extend({
   --   energy_required = 5,
   --   enabled = false,
   --   ingredients = {
-  --     {"refined-concrete", 20},
-  --     {"sp-zircon", 2},
-  --     {"sp-tungsten-slab", 2}
+  --     {type = "item", name = "refined-concrete", amount = 20},
+  --     {type = "item", name = "sp-zircon", amount = 2},
+  --     {type = "item", name = "sp-tungsten-slab", amount = 2}
   --   },
   --   result = "sp-kr-black-reinforced-plate",
   --   result_count = 10,
@@ -4149,9 +4149,9 @@ data:extend({
   --   energy_required = 5,
   --   enabled = false,
   --   ingredients = {
-  --     {"refined-concrete", 20},
-  --     {"sp-zircon", 2},
-  --     {"sp-titanium-ingot", 2}
+  --     {type = "item", name = "refined-concrete", amount = 20},
+  --     {type = "item", name = "sp-zircon", amount = 2},
+  --     {type = "item", name = "sp-titanium-ingot", amount = 2}
   --   },
   --   result = "sp-kr-white-reinforced-plate",
   --   result_count = 10,
@@ -4272,6 +4272,35 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-kr-advanced-solar-panel", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-kr-antimatter-reactor",
+    icon_size = 64,
+    mip_maps = 4,
+    category = "crafting",
+    energy_required = 600,
+    enabled = false,
+    ingredients = {
+      {type = "item", name = "sp-proton-neutron-superconductor", amount = 300},
+      {type = "item", name = "sp-extreme-heat-source", amount = 12},
+      {type = "item", name = "sp-energy-channeler", amount = 100},
+      {type = "item", name = "sp-radiation-channeler", amount = 50},
+      {type = "item", name = "sp-antimatter-engine", amount = 6},
+      {type = "item", name = "sp-grobgnum-rukite-beam", amount = 120},
+      {type = "item", name = "sp-blunagium-yemnuth-compound", amount = 80},
+      {type = "item", name = "sp-ultra-durable-ceramics", amount = 60},
+      {type = "item", name = "sp-imersium-beam", amount = 160},
+      {type = "item", name = "sp-energy-control-unit", amount = 150},
+      {type = "item", name = "sp-alpha-wave-tray-array", amount = 32},
+      {type = "item", name = "sp-quark-gluon-probe", amount = 5000},
+      {type = "item", name = "sp-quantum-capacitor", amount = 400},
+      {type = "item", name = "sp-interdimensional-prism-chamber", amount = 20},
+      -- {type = "item", name = "sp-kr-black-reinforced-plate", amount = 400}
+    },
+    results = {
+      {type = "item", name = "sp-kr-antimatter-reactor", amount = 1}
     }
   },
 
@@ -4822,27 +4851,6 @@ data:extend({
 -- },
 -- 700,
 -- 3000)
--- util.recipe.change_recipe_ingredients("kr-advanced-steam-turbine",
--- {
---   {type = "item", name = "electric-engine-unit", amount = 20},
---   {type = "item", name = "sp-turbine-rotor", amount = 3},
---   {type = "item", name = "sp-turbine-stator", amount = 3},
---   {type = "item", name = "sp-TiAlSn", amount = 50},
---   {type = "item", name = "sp-heavy-ball-bearing", amount = 20},
---   {type = "item", name = "sp-tungsten-carbide", amount = 50},
---   {type = "item", name = "sp-monocrystal", amount = 30}
--- },
--- {
---   {type = "item", name = "electric-engine-unit", amount = 40},
---   {type = "item", name = "sp-turbine-rotor", amount = 3},
---   {type = "item", name = "sp-turbine-stator", amount = 3},
---   {type = "item", name = "sp-TiAlSn", amount = 80},
---   {type = "item", name = "sp-heavy-ball-bearing", amount = 40},
---   {type = "item", name = "sp-tungsten-carbide", amount = 100},
---   {type = "item", name = "sp-monocrystal", amount = 50}
--- },
--- 90,
--- 150)
 -- util.recipe.change_recipe_ingredients("kr-electric-mining-drill-mk2",
 -- {
 --   {type = "item", name = "steel-beam", amount = 12},

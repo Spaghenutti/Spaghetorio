@@ -36,9 +36,17 @@ kr_buildings_sounds_path .. "
 "__Spaghetorio__/sounds/buildings/
 
 
+kr_sounds_mod .. "
+"__Spaghetorio__/sounds/
+
+
 off_when_no_fluid_recipe
 fluid_boxes_off_when_no_fluid_recipe
 
 
 kr_pipe_path
 sp_kr_pipe_path
+
+
+kr_explosions_sprites_path .. "
+"__Spaghetorio__/graphics/krastorio/entities/explosions/

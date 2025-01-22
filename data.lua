@@ -5,10 +5,13 @@ require("prototypes.buildings.advanced-assembling-machine")
 require("prototypes.buildings.advanced-chemical-plant")
 require("prototypes.buildings.advanced-furnace")
 require("prototypes.buildings.advanced-solar-panel")
+require("prototypes.buildings.antimatter-reactor")
 require("prototypes.buildings.lumber-mill")
 
 -- Entitites
+require("prototypes.entities.antimatter-reactor-remnant")
 require("prototypes.entities.big-random-pipes-remnant")
+require("prototypes.entities.explosions")
 require("prototypes.entities.medium-random-pipes-remnant")
 require("prototypes.entities.pipe-patch")
 
