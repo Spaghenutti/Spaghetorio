@@ -4533,6 +4533,26 @@ data:extend({
       {type = "item", name = "sp-kr-particle-accelerator", amount = 1}
     }
   },
+  {
+    type = "recipe",
+    name = "sp-kr-gas-power-station",
+    icon_size = 64,
+    mip_maps = 4,
+    category = "crafting",
+    energy_required = 24,
+    enabled = false,
+    ingredients = {
+      {type = "item", name = "sp-steel-beam", amount = 20},
+      {type = "item", name = "sp-bolts", amount = 30},
+      {type = "item", name = "pipe", amount = 20},
+      {type = "item", name = "pump", amount = 8},
+      {type = "item", name = "sp-dynamo", amount = 4},
+      {type = "item", name = "sp-valve", amount = 10}
+    },
+    results = {
+      {type = "item", name = "sp-kr-gas-power-station", amount = 1}
+    }
+  },
 
 
 --   -- MARK: Krastorio Buildings
@@ -4886,26 +4906,6 @@ data:extend({
 -- },
 -- 10,
 -- 20)
-
--- util.recipe.change_recipe_ingredients("kr-gas-power-station",
--- {
---   {type = "item", name = "sp-steel-beam", amount = 20},
---   {type = "item", name = "sp-bolts", amount = 30},
---   {type = "item", name = "pipe", amount = 20},
---   {type = "item", name = "pump", amount = 8},
---   {type = "item", name = "sp-dynamo", amount = 4}, 
---   {type = "item", name = "sp-valve", amount = 10}
--- },
--- {
---   {type = "item", name = "sp-steel-beam", amount = 40},
---   {type = "item", name = "sp-bolts", amount = 60},
---   {type = "item", name = "pipe", amount = 40},
---   {type = "item", name = "pump", amount = 12},
---   {type = "item", name = "sp-dynamo", amount = 8},
---   {type = "item", name = "sp-valve", amount = 20}
--- },
--- 20,
--- 40)
 
 -- util.recipe.change_recipe_ingredients("kr-electric-mining-drill-mk2",
 -- {
