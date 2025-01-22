@@ -40,5 +40,7 @@ To create new building:
     - rename "kr- to "sp-kr- for the name
     - change animation = {...} to graphics_set = {animation = {...}}
     - change module_specification = {...} to module_slots = x
+    - change off_when_no_fluid_recipe to fluid_boxes_off_when_no_fluid_recipe and move outside of fluid_boxes = {...}
+    - check crafting categories
   - item
   - recipe

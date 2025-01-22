@@ -3,6 +3,7 @@
 -- Buildings
 require("prototypes.buildings.advanced-assembling-machine")
 require("prototypes.buildings.advanced-chemical-plant")
+require("prototypes.buildings.advanced-furnace")
 require("prototypes.buildings.lumber-mill")
 
 -- Entitites

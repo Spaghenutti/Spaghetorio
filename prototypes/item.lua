@@ -5116,20 +5116,53 @@ data:extend({
     stack_size = 20
   },
   ------------------------------------------------------------------------------
+  -- MARK: Terrain
+  ------------------------------------------------------------------------------
+  -- {
+  --   type = "item",
+  --   name = "sp-kr-black-reinforced-plate",
+  --   icon = "__Spaghetorio__/graphics/krastorio/icons/items/black-reinforced-plate.png",
+  --   icon_size = 64,
+  --   icon_mipmaps = 4,
+  --   subgroup = "terrain",
+  --   order = "z[black-reinforced-plate]-a1[black-reinforced-plate]",
+  --   place_as_tile = {
+  --     result = "sp-kr-black-reinforced-plate",
+  --     condition_size = 1,
+  --     condition = {layers={water_tile=true}}
+  --   },
+  --   stack_size = 200,
+  -- },
+  -- {
+  --   type = "item",
+  --   name = "sp-kr-white-reinforced-plate",
+  --   icon = "__Spaghetorio__/graphics/krastorio/icons/items/white-reinforced-plate.png",
+  --   icon_size = 64,
+  --   icon_mipmaps = 4,
+  --   subgroup = "terrain",
+  --   order = "z[white-reinforced-plate]-a2[white-reinforced-plate]",
+  --   place_as_tile = {
+  --     result = "sp-kr-white-reinforced-plate",
+  --     condition_size = 1,
+  --     condition = {layers={water_tile=true}}
+  --   },
+  --   stack_size = 200,
+  -- },
+  ------------------------------------------------------------------------------
   -- MARK: Buildings
   ------------------------------------------------------------------------------
   -- Smelting machine
-  -- {
-  --   type = "item",
-  --   name = "sp-kr-advanced-furnace",
-  --   icon = "__Spaghetorio__/graphics/krastorio/icons/entities/advanced-furnace.png",
-  --   icon_size = 128,
-  --   icon_mipmaps = 4,
-  --   subgroup = "smelting-machine",
-  --   order = "c[electric-furnace]-f[advanced-furnace]",
-  --   place_result = "sp-kr-advanced-furnace",
-  --   stack_size = 50,
-  -- },
+  {
+    type = "item",
+    name = "sp-kr-advanced-furnace",
+    icon = "__Spaghetorio__/graphics/krastorio/icons/entities/advanced-furnace.png",
+    icon_size = 128,
+    icon_mipmaps = 4,
+    subgroup = "smelting-machine",
+    order = "c[electric-furnace]-f[advanced-furnace]",
+    place_result = "sp-kr-advanced-furnace",
+    stack_size = 50,
+  },
   -- Production machines
   {
     type = "item",
