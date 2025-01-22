@@ -4484,6 +4484,27 @@ data:extend({
       {type = "item", name = "sp-kr-fluid-burner", amount = 1}
     }
   },
+  {
+    type = "recipe",
+    name = "sp-kr-fuel-refinery",
+    icon_size = 64,
+    mip_maps = 4,
+    category = "crafting",
+    energy_required = 10,
+    enabled = false,
+    ingredients = {
+      {type = "item", name = "sp-stainless-steel", amount = 20},
+      {type = "item", name = "sp-brass", amount = 12},
+      {type = "item", name = "refined-concrete", amount = 16},
+      {type = "item", name = "sp-pressure-tube", amount = 6},
+      {type = "item", name = "advanced-circuit", amount = 5},
+      {type = "item", name = "sp-plate-heat-exchanger", amount = 6},
+      {type = "item", name = "engine-unit", amount = 4}
+    },
+    results = {
+      {type = "item", name = "sp-kr-fuel-refinery", amount = 1}
+    }
+  },
 
 
 --   -- MARK: Krastorio Buildings
@@ -5048,28 +5069,6 @@ data:extend({
 -- 120,
 -- 180)
 
-
--- util.recipe.change_recipe_ingredients("kr-fuel-refinery",
--- {
---   {type = "item", name = "sp-stainless-steel", amount = 20},
---   {type = "item", name = "sp-brass", amount = 12},
---   {type = "item", name = "refined-concrete", amount = 16},
---   {type = "item", name = "sp-pressure-tube", amount = 6},
---   {type = "item", name = "advanced-circuit", amount = 5},
---   {type = "item", name = "sp-plate-heat-exchanger", amount = 6},
---   {type = "item", name = "engine-unit", amount = 4}
--- },
--- {
---   {type = "item", name = "sp-stainless-steel", amount = 30},
---   {type = "item", name = "sp-brass", amount = 20},
---   {type = "item", name = "refined-concrete", amount = 24},
---   {type = "item", name = "sp-pressure-tube", amount = 10},
---   {type = "item", name = "advanced-circuit", amount = 8},
---   {type = "item", name = "sp-plate-heat-exchanger", amount = 10},
---   {type = "item", name = "engine-unit", amount = 6}
--- },
--- 24,
--- 32)
 -- util.recipe.change_recipe_ingredients("kr-air-purifier",
 -- {
 --   {type = "item", name = "sp-stainless-steel", amount = 8},
