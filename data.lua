@@ -1,5 +1,6 @@
 
 -- MARK: Prototypes
+
 -- Buildings
 require("prototypes.buildings.advanced-assembling-machine")
 require("prototypes.buildings.advanced-chemical-plant")
@@ -19,7 +20,6 @@ require("prototypes.buildings.gas-power-station")
 require("prototypes.buildings.greenhouse")
 -- require("prototypes.buildings.intergalactic-transceiver")
 require("prototypes.buildings.large-roboport")
--- require("prototypes.buildings.loaders")
 require("prototypes.buildings.lumber-mill")
 -- require("prototypes.buildings.matter-assembler")
 -- require("prototypes.buildings.matter-plant")
@@ -44,6 +44,16 @@ require("prototypes.entities.explosions")
 require("prototypes.entities.medium-random-pipes-remnant")
 require("prototypes.entities.particle-accelerator-remnant")
 require("prototypes.entities.pipe-patch")
+require("prototypes.entities.superior-splitter-remnant")
+require("prototypes.entities.superior-transport-belt-remnant")
+require("prototypes.entities.superior-underground-belt-remnant")
+
+-- Transport belts
+require("prototypes.transport-belts.superior-transport-belt.animation-set") -- Must be loaded before the belts set
+require("prototypes.transport-belts.superior-transport-belt.superior-splitter")
+require("prototypes.transport-belts.superior-transport-belt.superior-transport-belt")
+require("prototypes.transport-belts.superior-transport-belt.superior-underground-belt")
+require("prototypes.transport-belts.loaders")
 
 -- Resource
 require("prototypes.resource.autoplace-control")

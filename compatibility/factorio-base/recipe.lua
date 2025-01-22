@@ -294,6 +294,18 @@ util.recipe.change_recipe_ingredients("express-transport-belt",
   },
   nil)
 
+
+util.recipe.change_recipe_ingredients("turbo-transport-belt",
+  {
+    {type = "item", name = "processing-unit", amount = 1},
+    {type = "item", name = "electric-engine-unit", amount = 2},
+    {type = "item", name = "sp-ball-bearing", amount = 2},
+    {type = "item", name = "sp-electromagnet", amount = 2},
+    {type = "item", name = "sp-aluminum-brass", amount = 2},
+    {type = "item", name = "low-density-structure", amount = 1}
+  },
+  nil)
+
 util.recipe.change_recipe_ingredients("underground-belt",
   {
     {type = "item", name = "iron-plate", amount = 2},
@@ -318,6 +330,17 @@ util.recipe.change_recipe_ingredients("express-underground-belt",
     {type = "item", name = "sp-bolts", amount = 12},
     {type = "item", name = "sp-electromagnet", amount = 2},
     {type = "item", name = "express-transport-belt", amount = 12}
+  },
+  nil)
+
+util.recipe.change_recipe_ingredients("turbo-underground-belt",
+  {
+    {type = "item", name = "turbo-transport-belt", amount = 16},
+    {type = "item", name = "sp-TiNb", amount = 4},
+    {type = "item", name = "sp-invar", amount = 5},
+    {type = "item", name = "sp-heavy-gearbox", amount = 4},
+    {type = "item", name = "sp-compressor", amount = 2},
+    {type = "item", name = "sp-bolts", amount = 20}
   },
   nil)
 
@@ -346,6 +369,16 @@ util.recipe.change_recipe_ingredients("express-splitter",
     {type = "item", name = "sp-actuator", amount = 2},
     {type = "item", name = "express-transport-belt", amount = 2},
     {type = "item", name = "advanced-circuit", amount = 2}
+  },
+  nil)
+
+util.recipe.change_recipe_ingredients("turbo-splitter",
+  {
+    {type = "item", name = "turbo-transport-belt", amount = 2},
+    {type = "item", name = "sp-invar", amount = 3},
+    {type = "item", name = "processing-unit", amount = 2},
+    {type = "item", name = "sp-actuator", amount = 4},
+    {type = "item", name = "sp-bolts", amount = 6}
   },
   nil)
 
