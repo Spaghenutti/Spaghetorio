@@ -4255,18 +4255,25 @@ data:extend({
       {type = "item", name = "sp-kr-advanced-furnace", amount = 1}
     }
   },
-  --   {type = "item", name = "sp-tungsten-slab", amount = 40},
---   {type = "item", name = "sp-graphene", amount = 60},
---   {type = "item", name = "sp-heat-resistant-tile", amount = 120},
---   {type = "item", name = "imersium-beam", amount = 80},
---   {type = "item", name = "sp-tungsten-carbide", amount = 30},
---   {type = "item", name = "sp-titanium-nitride", amount = 20},
---   {type = "item", name = "sp-heating-filament", amount = 40},
---   {type = "item", name = "sp-control-unit", amount = 20},
---   {type = "item", name = "electric-engine-unit", amount = 32},
---   {type = "item", name = "sp-electrode", amount = 60},
---   {type = "item", name = "kr-black-reinforced-plate", amount = 100},
-
+  {
+    type = "recipe",
+    name = "sp-kr-advanced-solar-panel",
+    icon_size = 64,
+    mip_maps = 4,
+    category = "crafting-with-fluid",
+    energy_required = 12,
+    enabled = false,
+    ingredients = {
+      {type = "fluid", name = "sp-nitric-acid", amount = 25},
+      {type = "item", name = "sp-imersite-crystal", amount = 10},
+      {type = "item", name = "sp-tellurium", amount = 3},
+      {type = "item", name = "sp-titanium-frame", amount = 20},
+      {type = "item", name = "sp-advanced-processing-unit", amount = 2}
+    },
+    results = {
+      {type = "item", name = "sp-kr-advanced-solar-panel", amount = 1}
+    }
+  },
 
 --   -- MARK: Krastorio Buildings
 -- util.recipe.change_recipe_ingredients("kr-loader",
@@ -4760,23 +4767,7 @@ data:extend({
 -- },
 -- 20,
 -- 40)
--- util.recipe.change_recipe_ingredients("kr-advanced-solar-panel",
--- {
---   {type = "fluid", name = "nitric-acid", amount = 25},
---   {type = "item", name = "imersite-crystal", amount = 10},
---   {type = "item", name = "sp-tellurium", amount = 3},
---   {type = "item", name = "sp-titanium-frame", amount = 20},
---   {type = "item", name = "sp-advanced-processing-unit", amount = 2}
--- },
--- {
---   {type = "fluid", name = "nitric-acid", amount = 50},
---   {type = "item", name = "imersite-crystal", amount = 15},
---   {type = "item", name = "sp-tellurium", amount = 10},
---   {type = "item", name = "sp-titanium-frame", amount = 50},
---   {type = "item", name = "processing-unit", amount = 3}
--- },
--- 12,
--- 24)
+
 -- util.recipe.change_recipe_ingredients("kr-energy-storage",
 -- {
 --   {type = "item", name = "processing-unit", amount = 10},
