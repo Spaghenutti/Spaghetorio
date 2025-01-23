@@ -4832,104 +4832,9 @@ data:extend({
       {type = "item", name = "sp-kr-stabilizer-charging-station", amount = 1}
     }
   },
-
 --   -- MARK: Krastorio Buildings
--- util.recipe.change_recipe_ingredients("kr-superior-long-inserter",
--- {
---   {type = "item", name = "sp-imersium-plate", amount = 3},
---   {type = "item", name = "sp-rukite-plate", amount = 4},
---   {type = "item", name = "sp-glass-fiber", amount = 3},
---   {type = "item", name = "sp-frictionless-joint", amount = 4},
---   {type = "item", name = "sp-advanced-processing-unit", amount = 4},
---   {type = "item", name = "sp-micro-machine", amount = 6},
---   {type = "item", name = "sp-energy-control-unit", amount = 2}
--- },
--- {
---   {type = "item", name = "sp-imersium-plate", amount = 4},
---   {type = "item", name = "sp-rukite-plate", amount = 4},
---   {type = "item", name = "sp-glass-fiber", amount = 5},
---   {type = "item", name = "sp-frictionless-joint", amount = 8},
---   {type = "item", name = "sp-advanced-processing-unit", amount = 6},
---   {type = "item", name = "sp-micro-machine", amount = 8},
---   {type = "item", name = "sp-energy-control-unit", amount = 3}
--- },
--- 3,
--- 5)
 
--- util.recipe.change_recipe_ingredients("kr-superior-filter-inserter",
--- {
---   {type = "item", name = "sp-imersium-plate", amount = 4},
---   {type = "item", name = "sp-grobgnum-plate", amount = 3},
---   {type = "item", name = "sp-glass-fiber", amount = 3},
---   {type = "item", name = "sp-frictionless-joint", amount = 4},
---   {type = "item", name = "sp-advanced-processing-unit", amount = 4},
---   {type = "item", name = "sp-control-unit", amount = 3},
---   {type = "item", name = "sp-micro-machine", amount = 6},
---   {type = "item", name = "sp-energy-control-unit", amount = 2}
--- },
--- {
---   {type = "item", name = "sp-imersium-plate", amount = 6},
---   {type = "item", name = "sp-grobgnum-plate", amount = 4},
---   {type = "item", name = "sp-glass-fiber", amount = 5},
---   {type = "item", name = "sp-frictionless-joint", amount = 8},
---   {type = "item", name = "sp-advanced-processing-unit", amount = 6},
---   {type = "item", name = "sp-control-unit", amount = 4},
---   {type = "item", name = "sp-micro-machine", amount = 8},
---   {type = "item", name = "sp-energy-control-unit", amount = 3}
--- },
--- 3,
--- 5)
 
--- util.recipe.change_recipe_ingredients("kr-superior-long-filter-inserter",
--- {
---   {type = "item", name = "sp-imersium-plate", amount = 4},
---   {type = "item", name = "sp-yemnuth-plate", amount = 5},
---   {type = "item", name = "sp-glass-fiber", amount = 5},
---   {type = "item", name = "sp-frictionless-joint", amount = 6},
---   {type = "item", name = "sp-advanced-processing-unit", amount = 6},
---   {type = "item", name = "sp-control-unit", amount = 3},
---   {type = "item", name = "sp-micro-machine", amount = 12},
---   {type = "item", name = "sp-energy-control-unit", amount = 4}
--- },
--- {
---   {type = "item", name = "sp-imersium-plate", amount = 6},
---   {type = "item", name = "sp-yemnuth-plate", amount = 8},
---   {type = "item", name = "sp-glass-fiber", amount = 8},
---   {type = "item", name = "sp-frictionless-joint", amount = 12},
---   {type = "item", name = "sp-advanced-processing-unit", amount = 8},
---   {type = "item", name = "sp-control-unit", amount = 4},
---   {type = "item", name = "sp-micro-machine", amount = 16},
---   {type = "item", name = "sp-energy-control-unit", amount = 6}
--- },
--- 5,
--- 8)
-
--- util.recipe.change_recipe_ingredients("kr-black-reinforced-plate",
--- {
---   {type = "item", name = "refined-concrete", amount = 20},
---   {type = "item", name = "sp-zircon", amount = 2},
---   {type = "item", name = "sp-tungsten-slab", amount = 2}
--- },
--- {
---   {type = "item", name = "refined-concrete", amount = 20},
---   {type = "item", name = "sp-zircon", amount = 2},
---   {type = "item", name = "sp-tungsten-slab", amount = 2}
--- },
--- 5,
--- 8)
--- util.recipe.change_recipe_ingredients("kr-white-reinforced-plate",
--- {
---   {type = "item", name = "refined-concrete", amount = 20},
---   {type = "item", name = "sp-zircon", amount = 2},
---   {type = "item", name = "sp-titanium-ingot", amount = 2}
--- },
--- {
---   {type = "item", name = "refined-concrete", amount = 20},
---   {type = "item", name = "sp-zircon", amount = 2},
---   {type = "item", name = "sp-titanium-ingot", amount = 2}
--- },
--- 5,
--- 8)
 -- util.recipe.change_recipe_ingredients("kr-steel-pump",
 -- {
 --   {type = "item", name = "steel-plate", amount = 5},
@@ -5065,6 +4970,51 @@ data:extend({
 -- },
 -- 120,
 -- 180)
+  ------------------------------------------------------------------------------
+  -- MARK: Inserters
+  ------------------------------------------------------------------------------
+  {
+    type = "recipe",
+    name = "sp-kr-superior-inserter",
+    icon_size = 64,
+    mip_maps = 4,
+    category = "crafting",
+    energy_required = 6,
+    enabled = false,
+    ingredients = {
+      {type = "item", name = "sp-imersium-plate", amount = 3},
+      {type = "item", name = "sp-blunagium-plate", amount = 2},
+      {type = "item", name = "sp-glass-fiber", amount = 3},
+      {type = "item", name = "sp-frictionless-joint", amount = 3},
+      {type = "item", name = "sp-advanced-processing-unit", amount = 4},
+      {type = "item", name = "sp-micro-machine", amount = 4},
+      {type = "item", name = "sp-energy-control-unit", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-kr-superior-inserter", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-kr-superior-long-inserter",
+    icon_size = 64,
+    mip_maps = 4,
+    category = "crafting",
+    energy_required = 10,
+    enabled = false,
+    ingredients = {
+      {type = "item", name = "sp-imersium-plate", amount = 3},
+      {type = "item", name = "sp-rukite-plate", amount = 4},
+      {type = "item", name = "sp-glass-fiber", amount = 3},
+      {type = "item", name = "sp-frictionless-joint", amount = 4},
+      {type = "item", name = "sp-advanced-processing-unit", amount = 4},
+      {type = "item", name = "sp-micro-machine", amount = 6},
+      {type = "item", name = "sp-energy-control-unit", amount = 2}
+    },
+    results = {
+      {type = "item", name = "sp-kr-superior-long-inserter", amount = 1}
+    }
+  },
   ------------------------------------------------------------------------------
   -- MARK: Transport belts
   ------------------------------------------------------------------------------
