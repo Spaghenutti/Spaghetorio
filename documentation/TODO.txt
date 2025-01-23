@@ -19,7 +19,25 @@ Factorio Space age
 
 
 Krastorio cleanup
-  - remove not needed explosions
+  + remove not needed explosions
+
+
+hurricane406 graphics
+  - Greenhouse
+  - Disruptor
+  - Alloy forge
+  - Atom forge -> Breeder reactor
+  - Chemical stager
+  - Thermal plant -> Geothermal plant - Can only be built on geothermal vents. Connects to heatpipes.
+  - Pathogen lab (in later update with biological tech branch)
+  - Fusion reactor -> cyclotron
+  - Lumber mill -> Add more wood items
+  - Scrubber -> Solvant extractor / Rotary kiln
+  - Gravity assembler
+  - Arc furnace -> Connects to heatpipes.
+  - Core extractor
+  - Oxidizer
+  - Convector -> Induction hardener
 
 
 Buildings: Graphics (https://www.figma.com/proto/8ecwGOzYos13D0JTwV5kO9/Factorio-Buildings?node-id=2585-1158&node-type=frame&t=Tt0H6pFe0h0uH68x-0&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1ui%3D1&hotspot-hints=0&hide-ui=1)
