@@ -4768,6 +4768,31 @@ data:extend({
       {type = "item", name = "sp-kr-singularity-beacon", amount = 1}
     }
   },
+  {
+    type = "recipe",
+    name = "sp-kr-singularity-lab",
+    icon_size = 64,
+    mip_maps = 4,
+    category = "crafting",
+    energy_required = 60,
+    enabled = false,
+    ingredients = {
+      {type = "item", name = "sp-niobium-steel", amount = 100},
+      {type = "item", name = "sp-rare-metals-alloy", amount = 40},
+      {type = "item", name = "sp-glass", amount = 60},
+      {type = "item", name = "sp-control-unit", amount = 20},
+      {type = "item", name = "sp-ai-core", amount = 50},
+      {type = "item", name = "sp-micro-machine", amount = 50},
+      {type = "item", name = "sp-glass-fiber", amount = 500},
+      {type = "item", name = "sp-cryostat", amount = 20},
+      {type = "item", name = "sp-fermium-condensate", amount = 10},
+      -- {type = "item", name = "kr-black-reinforced-plate", amount = 120}
+    },
+    results = {
+      {type = "item", name = "sp-kr-singularity-lab", amount = 1}
+    }
+  },
+
 
 --   -- MARK: Krastorio Buildings
 -- util.recipe.change_recipe_ingredients("kr-superior-long-inserter",
@@ -4981,8 +5006,6 @@ data:extend({
 -- 12,
 -- 24)
 
-
-
 -- util.recipe.change_recipe_ingredients("kr-air-purifier",
 -- {
 --   {type = "item", name = "sp-stainless-steel", amount = 8},
@@ -5004,36 +5027,6 @@ data:extend({
 -- },
 -- 15,
 -- 24)
-
-
--- util.recipe.change_recipe_ingredients("kr-singularity-lab",
--- {
---   {type = "item", name = "sp-niobium-steel", amount = 100},
---   {type = "item", name = "sp-rare-metals-alloy", amount = 40},
---   {type = "item", name = "sp-glass", amount = 60},
---   {type = "item", name = "sp-control-unit", amount = 20},
---   {type = "item", name = "sp-ai-core", amount = 50},
---   {type = "item", name = "sp-micro-machine", amount = 50},
---   {type = "item", name = "sp-glass-fiber", amount = 500},
---   {type = "item", name = "sp-cryostat", amount = 20},
---   {type = "item", name = "sp-fermium-condensate", amount = 10},
---   {type = "item", name = "kr-black-reinforced-plate", amount = 120}
--- },
--- {
---   {type = "item", name = "sp-niobium-steel", amount = 160},
---   {type = "item", name = "sp-rare-metals-alloy", amount = 100},
---   {type = "item", name = "sp-glass", amount = 80},
---   {type = "item", name = "sp-control-unit", amount = 60},
---   {type = "item", name = "sp-ai-core", amount = 80},
---   {type = "item", name = "sp-micro-machine", amount = 72},
---   {type = "item", name = "sp-glass-fiber", amount = 800},
---   {type = "item", name = "sp-cryostat", amount = 30},
---   {type = "item", name = "sp-fermium-condensate", amount = 50},
---   {type = "item", name = "kr-black-reinforced-plate", amount = 200}
--- },
--- 60,
--- 120)
-
 
 -- util.recipe.change_recipe_ingredients("kr-stabilizer-charging-station",
 -- {

@@ -5430,17 +5430,17 @@ data:extend({
     place_result = "sp-biusart-lab",
     stack_size = 50,
   },
-  -- {
-  --   type = "item",
-  --   name = "sp-kr-singularity-lab",
-  --   icon = "__Spaghetorio__/graphics/krastorio/icons/entities/singularity-lab.png",
-  --   icon_size = 64,
-  --   icon_mipmaps = 4,
-  --   subgroup = "production-machine",
-  --   order = "g[lab]-g3[kr-singularity-lab]",
-  --   place_result = "sp-kr-singularity-lab",
-  --   stack_size = 25,
-  -- },
+  {
+    type = "item",
+    name = "sp-kr-singularity-lab",
+    icon = "__Spaghetorio__/graphics/krastorio/icons/entities/singularity-lab.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "production-machine",
+    order = "g[lab]-g3[kr-singularity-lab]",
+    place_result = "sp-kr-singularity-lab",
+    stack_size = 25,
+  },
   -- -- Energy production
   -- {
   --   type = "item",

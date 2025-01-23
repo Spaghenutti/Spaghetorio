@@ -1,22 +1,16 @@
 local hit_effects = require("__base__/prototypes/entity/hit-effects")
 local sounds = require("__base__/prototypes/entity/sounds")
 
--- Labs do not support entity info icon scaling...
--- local kr_icons_size = false
-
--- if krastorio.general.getSafeSettingValue("kr-large-icons") then
---   kr_icons_size = true
--- end
 
 data:extend({
   {
     type = "lab",
-    name = "kr-singularity-lab",
+    name = "sp-kr-singularity-lab",
     icon = "__Spaghetorio__/graphics/krastorio/icons/entities/singularity-lab.png",
     icon_size = 64,
     icon_mipmaps = 4,
     flags = { "placeable-player", "player-creation" },
-    minable = { mining_time = 2, result = "kr-singularity-lab" },
+    minable = { mining_time = 2, result = "sp-kr-singularity-lab" },
     max_health = 2000,
     damaged_trigger_effect = hit_effects.entity(),
     dying_explosion = "big-explosion",
@@ -29,47 +23,7 @@ data:extend({
     collision_box = { { -3.75, -3.75 }, { 3.75, 3.75 } },
     selection_box = { { -3.9, -3.9 }, { 3.9, 3.9 } },
     fast_replaceable_group = "assembling-machine",
-    -- scale_entity_info_icon = kr_icons_size,
-    off_animation = {
-      layers = {
-        {
-          filename = "__Spaghetorio__/graphics/krastorio/entities/singularity-lab/singularity-lab.png",
-          priority = "high",
-          width = 260,
-          height = 250,
-          shift = { 0.0, -0.1 },
-          frame_count = 1,
-          hr_version = {
-            filename = "__Spaghetorio__/graphics/krastorio/entities/singularity-lab/hr-singularity-lab.png",
-            priority = "high",
-            width = 520,
-            height = 500,
-            shift = { 0.0, -0.1 },
-            frame_count = 1,
-            scale = 0.5,
-          },
-        },
-        {
-          filename = "__Spaghetorio__/graphics/krastorio/entities/singularity-lab/singularity-lab-sh.png",
-          priority = "high",
-          width = 274,
-          height = 241,
-          shift = { 0.22, 0.18 },
-          frame_count = 1,
-          draw_as_shadow = true,
-          hr_version = {
-            filename = "__Spaghetorio__/graphics/krastorio/entities/singularity-lab/hr-singularity-lab-sh.png",
-            priority = "high",
-            width = 548,
-            height = 482,
-            shift = { 0.22, 0.18 },
-            frame_count = 1,
-            draw_as_shadow = true,
-            scale = 0.5,
-          },
-        },
-      },
-    },
+    -- "lab" do not have graphics_set in factorio 2.0.30
     on_animation = {
       layers = {
         {
@@ -82,18 +36,6 @@ data:extend({
           line_length = 6,
           animation_speed = 0.85,
           draw_as_light = true,
-          hr_version = {
-            filename = "__Spaghetorio__/graphics/krastorio/entities/singularity-lab/hr-singularity-lab-glow-light.png",
-            priority = "high",
-            width = 153,
-            height = 117,
-            shift = { 0, -0.8 },
-            frame_count = 60,
-            line_length = 6,
-            scale = 0.5,
-            animation_speed = 0.85,
-            draw_as_light = true,
-          },
         },
         {
           filename = "__Spaghetorio__/graphics/krastorio/entities/singularity-lab/singularity-lab-glow.png",
@@ -105,18 +47,6 @@ data:extend({
           line_length = 6,
           animation_speed = 0.85,
           blend_mode = "additive",
-          hr_version = {
-            filename = "__Spaghetorio__/graphics/krastorio/entities/singularity-lab/hr-singularity-lab-glow.png",
-            priority = "high",
-            width = 153,
-            height = 117,
-            shift = { 0, -0.8 },
-            frame_count = 60,
-            line_length = 6,
-            scale = 0.5,
-            animation_speed = 0.85,
-            blend_mode = "additive",
-          },
         },
         {
           filename = "__Spaghetorio__/graphics/krastorio/entities/singularity-lab/singularity-lab-light.png",
@@ -127,17 +57,6 @@ data:extend({
           draw_as_light = true,
           frame_count = 1,
           repeat_count = 60,
-          hr_version = {
-            filename = "__Spaghetorio__/graphics/krastorio/entities/singularity-lab/hr-singularity-lab-light.png",
-            priority = "high",
-            width = 520,
-            height = 500,
-            shift = { 0.0, -0.1 },
-            draw_as_light = true,
-            frame_count = 1,
-            repeat_count = 60,
-            scale = 0.5,
-          },
         },
         {
           filename = "__Spaghetorio__/graphics/krastorio/entities/singularity-lab/singularity-lab-working.png",
@@ -147,16 +66,6 @@ data:extend({
           frame_count = 60,
           line_length = 10,
           animation_speed = 0.85,
-          hr_version = {
-            filename = "__Spaghetorio__/graphics/krastorio/entities/singularity-lab/hr-singularity-lab-working.png",
-            width = 520,
-            height = 500,
-            shift = { 0.0, -0.1 },
-            frame_count = 60,
-            line_length = 10,
-            scale = 0.5,
-            animation_speed = 0.85,
-          },
         },
         {
           filename = "__Spaghetorio__/graphics/krastorio/entities/singularity-lab/singularity-lab-sh.png",
@@ -167,17 +76,27 @@ data:extend({
           frame_count = 1,
           draw_as_shadow = true,
           repeat_count = 60,
-          hr_version = {
-            filename = "__Spaghetorio__/graphics/krastorio/entities/singularity-lab/hr-singularity-lab-sh.png",
-            priority = "medium",
-            width = 548,
-            height = 482,
-            shift = { 0.22, 0.18 },
-            frame_count = 1,
-            repeat_count = 60,
-            draw_as_shadow = true,
-            scale = 0.5,
-          },
+        },
+      },
+    },
+    off_animation = {
+      layers = {
+        {
+          filename = "__Spaghetorio__/graphics/krastorio/entities/singularity-lab/singularity-lab.png",
+          priority = "high",
+          width = 260,
+          height = 250,
+          shift = { 0.0, -0.1 },
+          frame_count = 1,
+        },
+        {
+          filename = "__Spaghetorio__/graphics/krastorio/entities/singularity-lab/singularity-lab-sh.png",
+          priority = "high",
+          width = 274,
+          height = 241,
+          shift = { 0.22, 0.18 },
+          frame_count = 1,
+          draw_as_shadow = true,
         },
       },
     },
@@ -190,7 +109,21 @@ data:extend({
       },
     },
     researching_speed = 1,
-    inputs = {},
+    inputs =
+    {
+      "automation-science-pack",
+      "logistic-science-pack",
+      "military-science-pack",
+      "chemical-science-pack",
+      "production-science-pack",
+      "utility-science-pack",
+      "space-science-pack",
+      "metallurgic-science-pack",
+      "agricultural-science-pack",
+      "electromagnetic-science-pack",
+      "cryogenic-science-pack",
+      "promethium-science-pack"
+    },
     vehicle_impact_sound = sounds.generic_impact,
     working_sound = {
       sound = {
@@ -208,7 +141,7 @@ data:extend({
       --emissions_per_minute = {pollution = 10}
     },
     energy_usage = "10MW",
-    module_specification = { module_slots = 4, module_info_icon_shift = { 0, 2.1 }, module_info_icon_scale = 0.6 },
+    module_slots = 6,
     open_sound = { filename = "__Spaghetorio__/sounds/buildings/open.ogg", volume = 1 },
     close_sound = { filename = "__Spaghetorio__/sounds/buildings/close.ogg", volume = 1 },
   },
