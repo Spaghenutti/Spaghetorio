@@ -4662,6 +4662,55 @@ data:extend({
       {type = "item", name = "sp-kr-matter-assembler", amount = 1}
     }
   },
+  {
+    type = "recipe",
+    name = "sp-kr-quantum-computer",
+    icon_size = 64,
+    mip_maps = 4,
+    category = "crafting",
+    energy_required = 90,
+    enabled = false,
+    ingredients = {
+      {type = "item", name = "sp-quantum-data-plane", amount = 10},
+      {type = "item", name = "sp-turbopump", amount = 2},
+      {type = "item", name = "sp-advanced-processing-unit", amount = 60},
+      {type = "item", name = "sp-control-unit", amount = 20},
+      {type = "item", name = "sp-ai-core", amount = 16},
+      {type = "item", name = "superconductor", amount = 8},
+      {type = "item", name = "sp-glass-fiber", amount = 250},
+      {type = "item", name = "sp-cryostat", amount = 20},
+      {type = "item", name = "sp-plate-heat-exchanger", amount = 32},
+      -- {type = "item", name = "kr-black-reinforced-plate", amount = 120}
+    },
+    results = {
+      {type = "item", name = "sp-kr-quantum-computer", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-kr-research-server",
+    icon_size = 64,
+    mip_maps = 4,
+    category = "crafting",
+    energy_required = 50,
+    enabled = false,
+    ingredients = {
+      {type = "item", name = "sp-lithium-sulfur-battery", amount = 10},
+      {type = "item", name = "sp-glass-fiber", amount = 20},
+      {type = "item", name = "sp-dynamo", amount = 2},
+      {type = "item", name = "advanced-circuit", amount = 20},
+      {type = "item", name = "electric-engine-unit", amount = 4},
+      {type = "item", name = "sp-composites", amount = 4},
+      {type = "item", name = "sp-TiAlSn", amount = 20},
+      {type = "item", name = "sp-stainless-steel", amount = 8},
+      {type = "item", name = "sp-glass", amount = 10},
+      {type = "item", name = "sp-electrode", amount = 2},
+      -- {type = "item", name = "kr-black-reinforced-plate", amount = 16}
+    },
+    results = {
+      {type = "item", name = "sp-kr-research-server", amount = 1}
+    }
+  },
 
 
 --   -- MARK: Krastorio Buildings
@@ -4924,62 +4973,8 @@ data:extend({
 -- },
 -- 15,
 -- 24)
--- util.recipe.change_recipe_ingredients("kr-research-server",
--- {
---   {type = "item", name = "sp-lithium-sulfur-battery", amount = 10},
---   {type = "item", name = "sp-glass-fiber", amount = 20},
---   {type = "item", name = "sp-dynamo", amount = 2},
---   {type = "item", name = "advanced-circuit", amount = 20},
---   {type = "item", name = "electric-engine-unit", amount = 4},
---   {type = "item", name = "sp-composites", amount = 4},
---   {type = "item", name = "kr-black-reinforced-plate", amount = 16},
---   {type = "item", name = "sp-TiAlSn", amount = 20},
---   {type = "item", name = "sp-stainless-steel", amount = 8},
---   {type = "item", name = "sp-glass", amount = 10},
---   {type = "item", name = "sp-electrode", amount = 2}
--- },
--- {
---   {type = "item", name = "sp-lithium-sulfur-battery", amount = 20},
---   {type = "item", name = "sp-glass-fiber", amount = 50},
---   {type = "item", name = "sp-dynamo", amount = 4},
---   {type = "item", name = "advanced-circuit", amount = 40},
---   {type = "item", name = "electric-engine-unit", amount = 8},
---   {type = "item", name = "sp-composites", amount = 10},
---   {type = "item", name = "kr-black-reinforced-plate", amount = 20},
---   {type = "item", name = "sp-TiAlSn", amount = 32},
---   {type = "item", name = "sp-stainless-steel", amount = 12},
---   {type = "item", name = "sp-glass", amount = 20},
---   {type = "item", name = "sp-electrode", amount = 4}
--- },
--- 50,
--- 100)
--- util.recipe.change_recipe_ingredients("kr-quantum-computer",
--- {
---   {type = "item", name = "sp-quantum-data-plane", amount = 10},
---   {type = "item", name = "sp-turbopump", amount = 2},
---   {type = "item", name = "sp-advanced-processing-unit", amount = 60},
---   {type = "item", name = "sp-control-unit", amount = 20},
---   {type = "item", name = "sp-ai-core", amount = 16},
---   {type = "item", name = "superconductor", amount = 8},
---   {type = "item", name = "sp-glass-fiber", amount = 250},
---   {type = "item", name = "sp-cryostat", amount = 20},
---   {type = "item", name = "sp-plate-heat-exchanger", amount = 32},
---   {type = "item", name = "kr-black-reinforced-plate", amount = 120}
--- },
--- {
---   {type = "item", name = "sp-quantum-data-plane", amount = 20},
---   {type = "item", name = "sp-turbopump", amount = 3},
---   {type = "item", name = "sp-advanced-processing-unit", amount = 100},
---   {type = "item", name = "sp-control-unit", amount = 30},
---   {type = "item", name = "sp-ai-core", amount = 30},
---   {type = "item", name = "superconductor", amount = 12},
---   {type = "item", name = "sp-glass-fiber", amount = 400},
---   {type = "item", name = "sp-cryostat", amount = 40},
---   {type = "item", name = "sp-plate-heat-exchanger", amount = 60},
---   {type = "item", name = "kr-black-reinforced-plate", amount = 200}
--- },
--- 90,
--- 180)
+
+
 -- util.recipe.change_recipe_ingredients("kr-singularity-lab",
 -- {
 --   {type = "item", name = "sp-niobium-steel", amount = 100},

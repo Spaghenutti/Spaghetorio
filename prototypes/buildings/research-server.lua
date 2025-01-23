@@ -9,14 +9,6 @@ function serverkpipepictures()
       width = 35,
       height = 18,
       shift = util.by_pixel(2.5, 14),
-      hr_version = {
-        filename = "__Spaghetorio__/graphics/krastorio/entities/research-server/hr-research-server-k-pipe-N.png",
-        priority = "extra-high",
-        width = 71,
-        height = 38,
-        shift = util.by_pixel(2.25, 13.5),
-        scale = 0.5,
-      },
     },
     east = {
       filename = "__Spaghetorio__/graphics/krastorio/entities/research-server/research-server-k-pipe-E.png",
@@ -24,14 +16,6 @@ function serverkpipepictures()
       width = 20,
       height = 38,
       shift = util.by_pixel(-25, 1),
-      hr_version = {
-        filename = "__Spaghetorio__/graphics/krastorio/entities/research-server/hr-research-server-k-pipe-E.png",
-        priority = "extra-high",
-        width = 42,
-        height = 76,
-        shift = util.by_pixel(-24.5, 1),
-        scale = 0.5,
-      },
     },
     south = {
       filename = "__Spaghetorio__/graphics/krastorio/entities/research-server/research-server-k-pipe-S.png",
@@ -39,14 +23,6 @@ function serverkpipepictures()
       width = 44,
       height = 31,
       shift = util.by_pixel(0, -31.5),
-      hr_version = {
-        filename = "__Spaghetorio__/graphics/krastorio/entities/research-server/hr-research-server-k-pipe-S.png",
-        priority = "extra-high",
-        width = 88,
-        height = 61,
-        shift = util.by_pixel(0, -31.25),
-        scale = 0.5,
-      },
     },
     west = {
       filename = "__Spaghetorio__/graphics/krastorio/entities/research-server/research-server-k-pipe-W.png",
@@ -54,14 +30,6 @@ function serverkpipepictures()
       width = 19,
       height = 37,
       shift = util.by_pixel(25.5, 1.5),
-      hr_version = {
-        filename = "__Spaghetorio__/graphics/krastorio/entities/research-server/hr-research-server-k-pipe-W.png",
-        priority = "extra-high",
-        width = 39,
-        height = 73,
-        shift = util.by_pixel(25.75, 1.25),
-        scale = 0.5,
-      },
     },
   }
 end
@@ -69,12 +37,12 @@ end
 data:extend({
   {
     type = "assembling-machine",
-    name = "kr-research-server",
+    name = "sp-kr-research-server",
     icon = "__Spaghetorio__/graphics/krastorio/icons/entities/research-server.png",
     icon_size = 64,
     icon_mipmaps = 4,
     flags = { "placeable-neutral", "placeable-player", "player-creation" },
-    minable = { mining_time = 0.5, result = "kr-research-server" },
+    minable = { mining_time = 0.5, result = "sp-kr-research-server" },
     damaged_trigger_effect = hit_effects.entity(),
     max_health = 250,
     corpse = "medium-remnants",
@@ -90,7 +58,7 @@ data:extend({
         pipe_picture = serverkpipepictures(),
         pipe_covers = pipecoverspictures(),
         volume = 1000,
-        pipe_connections = {{flow_direction="input", direction = defines.direction.south, position = {0, -2}}},
+        pipe_connections = {{flow_direction="input", direction = defines.direction.south, position = {0, -1}}},
         secondary_draw_orders = {north = -1},
       },
       {
@@ -98,94 +66,61 @@ data:extend({
         pipe_picture = serverkpipepictures(),
         pipe_covers = pipecoverspictures(),
         volume = 1000,
-        pipe_connections = {{flow_direction="output", direction = defines.direction.south, position = {0, 2}}},
+        pipe_connections = {{flow_direction="output", direction = defines.direction.south, position = {0, 1}}},
         secondary_draw_orders = {north = -1},
       },
-      fluid_boxes_off_when_no_fluid_recipe = true,
     },
-    animation = {
-      layers = {
-        {
-          filename = "__Spaghetorio__/graphics/krastorio/entities/research-server/research-server.png",
-          priority = "high",
-          scale = scale,
-          width = 128,
-          height = 128,
-          shift = { 0., -0.2 },
-          frame_count = 60,
-          line_length = 15,
-          animation_speed = 0.9,
-          hr_version = {
-            filename = "__Spaghetorio__/graphics/krastorio/entities/research-server/hr-research-server.png",
+    fluid_boxes_off_when_no_fluid_recipe = true,
+    graphics_set = {
+      animation = {
+        layers = {
+          {
+            filename = "__Spaghetorio__/graphics/krastorio/entities/research-server/research-server.png",
             priority = "high",
-            width = 256,
-            height = 256,
+            scale = scale,
+            width = 128,
+            height = 128,
             shift = { 0., -0.2 },
             frame_count = 60,
             line_length = 15,
             animation_speed = 0.9,
-            scale = 0.5,
           },
-        },
-        {
-          filename = "__Spaghetorio__/graphics/krastorio/entities/research-server/research-server-shadow.png",
-          priority = "high",
-          scale = scale,
-          width = 128,
-          height = 128,
-          draw_as_shadow = true,
-          shift = { 0., -0.2 },
-          frame_count = 60,
-          line_length = 15,
-          animation_speed = 0.9,
-          hr_version = {
-            filename = "__Spaghetorio__/graphics/krastorio/entities/research-server/hr-research-server-shadow.png",
+          {
+            filename = "__Spaghetorio__/graphics/krastorio/entities/research-server/research-server-shadow.png",
             priority = "high",
-            width = 256,
-            height = 256,
+            scale = scale,
+            width = 128,
+            height = 128,
             draw_as_shadow = true,
             shift = { 0., -0.2 },
             frame_count = 60,
             line_length = 15,
             animation_speed = 0.9,
-            scale = 0.5,
           },
         },
       },
-    },
-    working_visualisations = {
-      {
-        animation = {
-          filename = "__Spaghetorio__/graphics/krastorio/entities/research-server/research-server-light.png",
-          priority = "extra-high",
-          scale = scale,
-          width = 128,
-          height = 128,
-          shift = { 0., -0.2 },
-          draw_as_light = true,
-          frame_count = 60,
-          line_length = 15,
-          animation_speed = 0.9,
-          hr_version = {
-            filename = "__Spaghetorio__/graphics/krastorio/entities/research-server/hr-research-server-light.png",
+      working_visualisations = {
+        {
+          animation = {
+            filename = "__Spaghetorio__/graphics/krastorio/entities/research-server/research-server-light.png",
             priority = "extra-high",
-            width = 256,
-            height = 256,
+            scale = scale,
+            width = 128,
+            height = 128,
             shift = { 0., -0.2 },
             draw_as_light = true,
             frame_count = 60,
             line_length = 15,
             animation_speed = 0.9,
-            scale = 0.5,
           },
         },
-      },
-      {
-        light = {
-          intensity = 0.25,
-          size = 1,
-          shift = { 0.0, 0.0 },
-          color = { r = 0.1, g = 0.5, b = 1 },
+        {
+          light = {
+            intensity = 0.25,
+            size = 1,
+            shift = { 0.0, 0.0 },
+            color = { r = 0.1, g = 0.5, b = 1 },
+          },
         },
       },
     },
@@ -200,7 +135,7 @@ data:extend({
       idle_sound = { filename = "__base__/sound/idle1.ogg" },
       apparent_volume = 1.5,
     },
-    crafting_categories = { "research-data", "t2-tech-cards" },
+    crafting_categories = { "sp-kr-research-data", "t2-science" },
     crafting_speed = 1,
     energy_source = {
       type = "electric",
@@ -224,7 +159,7 @@ data:extend({
 
     energy_usage = "250kW",
     ingredient_count = 6,
-    module_specification = { module_slots = 2 },
+     module_slots = 2,
     allowed_effects = { "consumption", "speed", "productivity", "pollution" },
     open_sound = { filename = "__Spaghetorio__/sounds/buildings/open.ogg", volume = 1 },
     close_sound = { filename = "__Spaghetorio__/sounds/buildings/close.ogg", volume = 1 },
