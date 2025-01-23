@@ -1,4 +1,8 @@
 
+local hit_effects = require("__base__/prototypes/entity/hit-effects")
+local sounds = require("__base__/prototypes/entity/sounds")
+
+
 function assemblerkpipepictures()
   return {
     north = {
@@ -31,9 +35,6 @@ function assemblerkpipepictures()
     }
   }
 end
-
-local hit_effects = require("__base__/prototypes/entity/hit-effects")
-local sounds = require("__base__/prototypes/entity/sounds")
 
 data:extend({
   {

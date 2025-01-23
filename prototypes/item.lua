@@ -5339,6 +5339,17 @@ data:extend({
     place_result = "sp-kr-matter-assembler",
     stack_size = 25,
   },
+  {
+    type = "item",
+    name = "sp-kr-stellar-sinkhole-forge",
+    icon = "__Spaghetorio__/graphics/krastorio/icons/entities/intergalactic-transceiver.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "production-machine",
+    order = "i[matter]-z[stellar-sinkhole-forge]",
+    place_result = "sp-kr-stellar-sinkhole-forge",
+    stack_size = 25,
+  },
   -- {
   --   type = "item",
   --   name = "sp-kr-stabilizer-charging-station",

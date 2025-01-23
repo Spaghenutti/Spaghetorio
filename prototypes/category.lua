@@ -136,6 +136,10 @@ data:extend({
   },
   {
     type = "recipe-category",
+    name = "black-hole-forging"
+  },
+  {
+    type = "recipe-category",
     name = "acrosphere-conversion"
   },
   {

@@ -4711,7 +4711,21 @@ data:extend({
       {type = "item", name = "sp-kr-research-server", amount = 1}
     }
   },
-
+  {
+    type = "recipe",
+    name = "sp-kr-stellar-sinkhole-forge",
+    icon_size = 64,
+    mip_maps = 4,
+    category = "crafting",
+    energy_required = 900,
+    enabled = false,
+    ingredients = {
+      {type = "item", name = "iron-plate", amount = 69},
+    },
+    results = {
+      {type = "item", name = "sp-kr-stellar-sinkhole-forge", amount = 1}
+    }
+  },
 
 --   -- MARK: Krastorio Buildings
 -- util.recipe.change_recipe_ingredients("kr-superior-long-inserter",
