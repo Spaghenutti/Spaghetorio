@@ -4726,6 +4726,30 @@ data:extend({
       {type = "item", name = "sp-kr-stellar-sinkhole-forge", amount = 1}
     }
   },
+  {
+    type = "recipe",
+    name = "sp-kr-quarry-drill",
+    icon_size = 64,
+    mip_maps = 4,
+    category = "crafting",
+    energy_required = 60,
+    enabled = false,
+    ingredients = {
+      {type = "item", name = "sp-diamond", amount = 40},
+      {type = "item", name = "sp-control-unit", amount = 20},
+      {type = "item", name = "sp-niobium-steel", amount = 50},
+      {type = "item", name = "electric-engine-unit", amount = 20},
+      {type = "item", name = "sp-invar", amount = 20},
+      {type = "item", name = "sp-carbon-nanotubes", amount = 50},
+      {type = "item", name = "sp-pressure-tube", amount = 12},
+      {type = "item", name = "sp-turbopump", amount = 12},
+      {type = "item", name = "refined-concrete", amount = 120}
+    },
+    results = {
+      {type = "item", name = "sp-kr-quarry-drill", amount = 1}
+    }
+  },
+
 
 --   -- MARK: Krastorio Buildings
 -- util.recipe.change_recipe_ingredients("kr-superior-long-inserter",
@@ -4897,31 +4921,6 @@ data:extend({
 -- },
 -- 20,
 -- 40)
--- util.recipe.change_recipe_ingredients("kr-quarry-drill",
--- {
---   {type = "item", name = "sp-diamond", amount = 40},
---   {type = "item", name = "sp-control-unit", amount = 20},
---   {type = "item", name = "sp-niobium-steel", amount = 50},
---   {type = "item", name = "electric-engine-unit", amount = 20},
---   {type = "item", name = "sp-invar", amount = 20},
---   {type = "item", name = "sp-carbon-nanotubes", amount = 50},
---   {type = "item", name = "sp-pressure-tube", amount = 12},
---   {type = "item", name = "sp-turbopump", amount = 12},
---   {type = "item", name = "refined-concrete", amount = 120}
--- },
--- {
---   {type = "item", name = "sp-diamond", amount = 80},
---   {type = "item", name = "sp-control-unit", amount = 40},
---   {type = "item", name = "sp-niobium-steel", amount = 100},
---   {type = "item", name = "electric-engine-unit", amount = 40},
---   {type = "item", name = "sp-invar", amount = 40},
---   {type = "item", name = "sp-carbon-nanotubes", amount = 80},
---   {type = "item", name = "sp-pressure-tube", amount = 24},
---   {type = "item", name = "sp-turbopump", amount = 24},
---   {type = "item", name = "refined-concrete", amount = 200}
--- },
--- 60,
--- 120)
 
 -- util.recipe.change_recipe_ingredients("kr-mineral-water-pumpjack",
 -- {
