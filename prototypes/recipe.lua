@@ -4749,7 +4749,25 @@ data:extend({
       {type = "item", name = "sp-kr-quarry-drill", amount = 1}
     }
   },
-
+  {
+    type = "recipe",
+    name = "sp-kr-singularity-beacon",
+    icon_size = 64,
+    mip_maps = 4,
+    category = "crafting",
+    energy_required = 45,
+    enabled = false,
+    ingredients = {
+      {type = "item", name = "sp-antimatter-engine", amount = 1},
+      {type = "item", name = "sp-sideral-compute-core", amount = 1},
+      {type = "item", name = "sp-imersium-beam", amount = 8},
+      {type = "item", name = "sp-nanobot", amount = 400},
+      -- {type = "item", name = "kr-black-reinforced-plate", amount = 4},
+    },
+    results = {
+      {type = "item", name = "sp-kr-singularity-beacon", amount = 1}
+    }
+  },
 
 --   -- MARK: Krastorio Buildings
 -- util.recipe.change_recipe_ingredients("kr-superior-long-inserter",
@@ -5041,23 +5059,7 @@ data:extend({
 -- 40,
 -- 60)
 
--- util.recipe.change_recipe_ingredients("kr-singularity-beacon",
--- {
---   {type = "item", name = "sp-antimatter-engine", amount = 1},
---   {type = "item", name = "sp-sideral-compute-core", amount = 1},
---   {type = "item", name = "sp-imersium-beam", amount = 8},
---   {type = "item", name = "sp-nanobot", amount = 400},
---   {type = "item", name = "kr-black-reinforced-plate", amount = 4},
--- },
--- {
---   {type = "item", name = "sp-antimatter-engine", amount = 2},
---   {type = "item", name = "sp-sideral-compute-core", amount = 1},
---   {type = "item", name = "sp-imersium-beam", amount = 12},
---   {type = "item", name = "sp-nanobot", amount = 600},
---   {type = "item", name = "kr-black-reinforced-plate", amount = 8},
--- },
--- 45,
--- 75)
+
 
 -- util.recipe.change_recipe_ingredients("kr-planetary-teleporter",
 -- {

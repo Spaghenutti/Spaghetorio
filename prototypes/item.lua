@@ -5621,30 +5621,18 @@ data:extend({
     place_result = "sp-kr-large-roboport",
     stack_size = 50,
   },
-  -- -- Module
-  -- {
-  --   type = "item",
-  --   name = "sp-kr-singularity-beacon",
-  --   icon = "__Spaghetorio__/graphics/krastorio/icons/entities/singularity-beacon.png",
-  --   icon_size = 64,
-  --   icon_mipmaps = 4,
-  --   subgroup = "module",
-  --   order = "8[singularity-beacon]",
-  --   place_result = "sp-kr-singularity-beacon",
-  --   stack_size = 50,
-  -- },
-  -- -- radars and rockets
-  -- {
-  --   type = "item",
-  --   name = "sp-kr-intergalactic-transceiver",
-  --   icon = "__Spaghetorio__/graphics/krastorio/icons/entities/intergalactic-transceiver.png",
-  --   icon_size = 64,
-  --   icon_mipmaps = 4,
-  --   subgroup = "radars-and-rockets",
-  --   order = "zzz[rocket-silo]-zzzz[intergalactic-transceiver]",
-  --   place_result = "sp-kr-intergalactic-transceiver",
-  --   stack_size = 1,
-  -- },
+  -- Module
+  {
+    type = "item",
+    name = "sp-kr-singularity-beacon",
+    icon = "__Spaghetorio__/graphics/krastorio/icons/entities/singularity-beacon.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "module",
+    order = "8[singularity-beacon]",
+    place_result = "sp-kr-singularity-beacon",
+    stack_size = 50,
+  },
   -- -- inserters
   -- {
   --   type = "item",
