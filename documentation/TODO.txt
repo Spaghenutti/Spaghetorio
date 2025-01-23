@@ -23,7 +23,7 @@ Krastorio cleanup
 
 
 hurricane406 graphics
-  - Greenhouse
+  - Greenhouse -> Already exists from krastorio
   - Disruptor
   - Alloy forge
   - Atom forge -> Breeder reactor

@@ -1,7 +1,7 @@
 
 -- MARK: Prototypes
 
--- Buildings
+--  Krastorio Buildings
 require("prototypes.buildings.advanced-assembling-machine")
 require("prototypes.buildings.advanced-chemical-plant")
 require("prototypes.buildings.advanced-furnace")
@@ -19,7 +19,6 @@ require("prototypes.buildings.fuel-refinery")
 require("prototypes.buildings.gas-power-station")
 require("prototypes.buildings.greenhouse")
 require("prototypes.buildings.large-roboport")
-require("prototypes.buildings.lumber-mill")
 require("prototypes.buildings.matter-assembler")
 require("prototypes.buildings.matter-plant")
 -- require("prototypes.buildings.mineral-water-pumpjack")
@@ -36,6 +35,21 @@ require("prototypes.buildings.stabilizer-charging-station")
 require("prototypes.buildings.stellar-sinkhole-forge")
 require("prototypes.buildings.superior-inserters")
 require("prototypes.buildings.wind-turbine")
+
+-- Hurricane046 Buildings
+-- require("prototypes.buildings.alloy-forge")
+-- require("prototypes.buildings.arc-furnace")
+-- require("prototypes.buildings.breeder-reactor")  -- atom forge
+-- require("prototypes.buildings.chemical-stager")
+-- require("prototypes.buildings.core-extractor")
+-- require("prototypes.buildings.cyclotron")  -- fusion reactor
+-- require("prototypes.buildings.geothermal-plant")
+-- require("prototypes.buildings.gravity-assembler")
+-- require("prototypes.buildings.induction-hardening-facility")  -- convector
+require("prototypes.buildings.lumber-mill")
+-- require("prototypes.buildings.oxydizer")
+-- require("prototypes.buildings.pathogen-lab")
+-- require("prototypes.buildings.rotary-kiln")  -- scrubber
 
 -- Entitites
 require("prototypes.entities.antimatter-reactor-remnant")

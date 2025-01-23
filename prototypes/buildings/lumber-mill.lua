@@ -22,7 +22,7 @@ data:extend({
       animation = {
         layers = {
           {
-            filename = "__Spaghetorio__/graphics/buildings/lumber-mill-animation.png",
+            filename = "__Spaghetorio__/graphics/buildings/lumber-mill/lumber-mill-animation.png",
             priority = "extra-high",
             width = 230,
             height = 250,
@@ -32,12 +32,12 @@ data:extend({
             shift = util.by_pixel(0, 0),
           },
           {
-            filename = "__Spaghetorio__/graphics/buildings/lumber-mill-hr-shadow.png",
-            priority = "extra-high",
-            width = 700/500,
-            height = 700/500,
-            frame_count = 80,
-            animation_speed = 0.75,
+            filename = "__Spaghetorio__/graphics/buildings/lumber-mill/lumber-mill-hr-shadow.png",
+            width = 700,
+            height = 700,
+            scale = 0.5,
+            frame_count = 1,
+            repeat_count = 80,
             draw_as_shadow = true,
             shift = util.by_pixel(0, 0)
           }
