@@ -4814,6 +4814,24 @@ data:extend({
       {type = "item", name = "sp-kr-stabilizer-charging-station", amount = 1}
     }
   },
+  {
+    type = "recipe",
+    name = "sp-kr-stabilizer-charging-station",
+    icon_size = 64,
+    mip_maps = 4,
+    category = "crafting",
+    energy_required = 8,
+    enabled = false,
+    ingredients = {
+      {type = "item", name = "iron-plate", amount = 12},
+      {type = "item", name = "stone-brick", amount = 4},
+      {type = "item", name = "sp-bolts", amount = 4},
+      {type = "item", name = "electric-engine-unit", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-kr-stabilizer-charging-station", amount = 1}
+    }
+  },
 
 --   -- MARK: Krastorio Buildings
 -- util.recipe.change_recipe_ingredients("kr-superior-long-inserter",
@@ -4929,21 +4947,7 @@ data:extend({
 -- },
 -- 2,
 -- 3)
--- util.recipe.change_recipe_ingredients("kr-wind-turbine",
--- {
---   {type = "item", name = "iron-plate", amount = 12},
---   {type = "item", name = "stone-brick", amount = 4},
---   {type = "item", name = "sp-bolts", amount = 4},
---   {type = "item", name = "electric-engine-unit", amount = 1}
--- },
--- {
---   {type = "item", name = "iron-plate", amount = 24},
---   {type = "item", name = "stone-brick", amount = 4},
---   {type = "item", name = "sp-bolts", amount = 10},
---   {type = "item", name = "electric-engine-unit", amount = 2}
--- },
--- 10,
--- 20)
+
 
 -- util.recipe.change_recipe_ingredients("kr-electric-mining-drill-mk2",
 -- {

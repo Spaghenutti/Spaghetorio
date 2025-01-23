@@ -5441,18 +5441,18 @@ data:extend({
     place_result = "sp-kr-singularity-lab",
     stack_size = 25,
   },
-  -- -- Energy production
-  -- {
-  --   type = "item",
-  --   name = "sp-kr-wind-turbine",
-  --   icon = "__Spaghetorio__/graphics/krastorio/icons/entities/wind-turbine.png",
-  --   icon_size = 64,
-  --   icon_mipmaps = 4,
-  --   subgroup = "energy",
-  --   order = "00[solar-panel]-a[wind-turbine]",
-  --   place_result = "sp-kr-wind-turbine",
-  --   stack_size = 50,
-  -- },
+  -- Energy production
+  {
+    type = "item",
+    name = "sp-kr-wind-turbine",
+    icon = "__Spaghetorio__/graphics/krastorio/icons/entities/wind-turbine.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "energy",
+    order = "00[solar-panel]-a[wind-turbine]",
+    place_result = "sp-kr-wind-turbine",
+    stack_size = 50,
+  },
   {
     type = "item",
     name = "sp-kr-gas-power-station",

@@ -35,7 +35,7 @@ require("prototypes.buildings.small-roboport")
 require("prototypes.buildings.stabilizer-charging-station")
 require("prototypes.buildings.stellar-sinkhole-forge")
 -- require("prototypes.buildings.superior-inserters")
--- require("prototypes.buildings.wind-turbine")
+require("prototypes.buildings.wind-turbine")
 
 -- Entitites
 require("prototypes.entities.antimatter-reactor-remnant")
