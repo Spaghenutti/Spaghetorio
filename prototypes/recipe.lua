@@ -4792,7 +4792,28 @@ data:extend({
       {type = "item", name = "sp-kr-singularity-lab", amount = 1}
     }
   },
-
+  {
+    type = "recipe",
+    name = "sp-kr-stabilizer-charging-station",
+    icon_size = 64,
+    mip_maps = 4,
+    category = "crafting",
+    energy_required = 40,
+    enabled = false,
+    ingredients = {
+      {type = "item", name = "sp-energy-control-unit", amount = 16},
+      {type = "item", name = "sp-imersium-plate", amount = 20},
+      {type = "item", name = "sp-ai-core", amount = 16},
+      {type = "item", name = "sp-micro-machine", amount = 6},
+      {type = "item", name = "sp-nanobot", amount = 200},
+      {type = "item", name = "tungsten-carbide", amount = 20},
+      {type = "item", name = "sp-vortex-core", amount = 1},
+      -- {type = "item", name = "kr-black-reinforced-plate", amount = 16},
+    },
+    results = {
+      {type = "item", name = "sp-kr-stabilizer-charging-station", amount = 1}
+    }
+  },
 
 --   -- MARK: Krastorio Buildings
 -- util.recipe.change_recipe_ingredients("kr-superior-long-inserter",
@@ -5027,32 +5048,6 @@ data:extend({
 -- },
 -- 15,
 -- 24)
-
--- util.recipe.change_recipe_ingredients("kr-stabilizer-charging-station",
--- {
---   {type = "item", name = "sp-energy-control-unit", amount = 16},
---   {type = "item", name = "sp-imersium-plate", amount = 20},
---   {type = "item", name = "sp-ai-core", amount = 16},
---   {type = "item", name = "sp-micro-machine", amount = 6},
---   {type = "item", name = "sp-nanobot", amount = 200},
---   {type = "item", name = "sp-tungsten-carbide", amount = 20},
---   {type = "item", name = "sp-vortex-core", amount = 1},
---   {type = "item", name = "kr-black-reinforced-plate", amount = 16},
--- },
--- {
---   {type = "item", name = "sp-energy-control-unit", amount = 24},
---   {type = "item", name = "sp-imersium-plate", amount = 32},
---   {type = "item", name = "sp-ai-core", amount = 24},
---   {type = "item", name = "sp-micro-machine", amount = 10},
---   {type = "item", name = "sp-nanobot", amount = 300},
---   {type = "item", name = "sptungsten-carbide", amount = 32},
---   {type = "item", name = "sp-vortex-core", amount = 1},
---   {type = "item", name = "kr-black-reinforced-plate", amount = 32},
--- },
--- 40,
--- 60)
-
-
 
 -- util.recipe.change_recipe_ingredients("kr-planetary-teleporter",
 -- {

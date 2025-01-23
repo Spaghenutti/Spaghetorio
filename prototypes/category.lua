@@ -13,6 +13,11 @@ data:extend({
   },
 
   -- MARK: Recipe Category
+  -- Used in stabilizer charging station
+  {
+    type = "recipe-category",
+    name = "sp-kr-stabilizer-charging",
+  },
   -- Nuclear fusion, used by fusion reactors for make steam
   {
     type = "recipe-category",

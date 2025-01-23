@@ -4,12 +4,12 @@ local sounds = require("__base__/prototypes/entity/sounds")
 data:extend({
   {
     type = "furnace",
-    name = "kr-stabilizer-charging-station",
+    name = "sp-kr-stabilizer-charging-station",
     icon = "__Spaghetorio__/graphics/krastorio/icons/entities/stabilizer-charging-station.png",
     icon_size = 128,
     icon_mipmaps = 4,
     flags = { "placeable-neutral", "placeable-player", "player-creation" },
-    minable = { mining_time = 0.5, result = "kr-stabilizer-charging-station" },
+    minable = { mining_time = 0.5, result = "sp-kr-stabilizer-charging-station" },
     max_health = 200,
     damaged_trigger_effect = hit_effects.entity(),
     dying_explosion = "small-matter-explosion",
@@ -20,81 +20,50 @@ data:extend({
     },
     collision_box = { { -0.7, -0.7 }, { 0.7, 0.7 } },
     selection_box = { { -0.9, -0.9 }, { 0.9, 0.9 } },
-    animation = {
-      layers = {
-        {
-          filename = "__Spaghetorio__/graphics/krastorio/entities/stabilizer-charging-station/stabilizer-charging-station.png",
-          priority = "high",
-          width = 85,
-          height = 85,
-          frame_count = 80,
-          line_length = 10,
-          animation_speed = 0.4,
-          scale = 0.8,
-          hr_version = {
-            filename = "__Spaghetorio__/graphics/krastorio/entities/stabilizer-charging-station/hr-stabilizer-charging-station.png",
+    graphics_set = {
+      animation = {
+        layers = {
+          {
+            filename = "__Spaghetorio__/graphics/krastorio/entities/stabilizer-charging-station/stabilizer-charging-station.png",
             priority = "high",
-            width = 170,
-            height = 170,
+            width = 85,
+            height = 85,
             frame_count = 80,
             line_length = 10,
             animation_speed = 0.4,
-            scale = 0.4,
+            scale = 0.8,
           },
-        },
-        {
-          filename = "__Spaghetorio__/graphics/krastorio/entities/stabilizer-charging-station/stabilizer-charging-station-sh.png",
-          priority = "high",
-          width = 85,
-          height = 72,
-          frame_count = 80,
-          line_length = 8,
-          animation_speed = 0.4,
-          shift = { 0.23, 0.262 },
-          draw_as_shadow = true,
-          scale = 0.9,
-          hr_version = {
-            filename = "__Spaghetorio__/graphics/krastorio/entities/stabilizer-charging-station/hr-stabilizer-charging-station-sh.png",
+          {
+            filename = "__Spaghetorio__/graphics/krastorio/entities/stabilizer-charging-station/stabilizer-charging-station-sh.png",
             priority = "high",
-            width = 170,
-            height = 144,
+            width = 85,
+            height = 72,
             frame_count = 80,
             line_length = 8,
             animation_speed = 0.4,
             shift = { 0.23, 0.262 },
             draw_as_shadow = true,
-            scale = 0.4,
+            scale = 0.9,
           },
         },
       },
-    },
-    working_visualisations = {
-      {
-        animation = {
-          filename = "__Spaghetorio__/graphics/krastorio/entities/stabilizer-charging-station/stabilizer-charging-station-light.png",
-          priority = "high",
-          width = 85,
-          height = 85,
-          frame_count = 80,
-          line_length = 10,
-          animation_speed = 0.4,
-          scale = 0.8,
-          draw_as_light = true,
-          hr_version = {
-            filename = "__Spaghetorio__/graphics/krastorio/entities/stabilizer-charging-station/hr-stabilizer-charging-station-light.png",
+      working_visualisations = {
+        {
+          animation = {
+            filename = "__Spaghetorio__/graphics/krastorio/entities/stabilizer-charging-station/stabilizer-charging-station-light.png",
             priority = "high",
-            width = 170,
-            height = 170,
+            width = 85,
+            height = 85,
             frame_count = 80,
             line_length = 10,
             animation_speed = 0.4,
-            scale = 0.4,
+            scale = 0.8,
             draw_as_light = true,
           },
         },
       },
     },
-    crafting_categories = { "stabilizer-charging" },
+    crafting_categories = { "sp-kr-stabilizer-charging" },
     vehicle_impact_sound = sounds.generic_impact,
     working_sound = {
       sound = {
@@ -128,10 +97,9 @@ data:extend({
     },
 
     energy_usage = "1MW",
-    -- ingredient_count = 1,
     result_inventory_size = 1,
     source_inventory_size = 1,
-    module_specification = { module_slots = 2 },
+    module_slots = 2,
     allowed_effects = { "consumption", "speed", "pollution" },
     open_sound = sounds.machine_open,
     close_sound = sounds.machine_close,

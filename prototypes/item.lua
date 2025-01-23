@@ -5350,17 +5350,17 @@ data:extend({
     place_result = "sp-kr-stellar-sinkhole-forge",
     stack_size = 25,
   },
-  -- {
-  --   type = "item",
-  --   name = "sp-kr-stabilizer-charging-station",
-  --   icon = "__Spaghetorio__/graphics/krastorio/icons/entities/stabilizer-charging-station.png",
-  --   icon_size = 128,
-  --   icon_mipmaps = 4,
-  --   subgroup = "production-machine",
-  --   order = "i[matter]-c[stabilizer-charging-station]",
-  --   place_result = "sp-kr-stabilizer-charging-station",
-  --   stack_size = 50,
-  -- },
+  {
+    type = "item",
+    name = "sp-kr-stabilizer-charging-station",
+    icon = "__Spaghetorio__/graphics/krastorio/icons/entities/stabilizer-charging-station.png",
+    icon_size = 128,
+    icon_mipmaps = 4,
+    subgroup = "production-machine",
+    order = "i[matter]-c[stabilizer-charging-station]",
+    place_result = "sp-kr-stabilizer-charging-station",
+    stack_size = 50,
+  },
   -- -- Storage
   -- {
   --   type = "item",
