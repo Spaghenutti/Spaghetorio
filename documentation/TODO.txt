@@ -28,6 +28,7 @@ hurricane406 graphics
   - Alloy forge
   - Atom forge -> Breeder reactor
   - Chemical stager
+  - Quantum stabilizer
   - Thermal plant -> Geothermal plant - Can only be built on geothermal vents. Connects to heatpipes.
   - Pathogen lab (in later update with biological tech branch)
   - Fusion reactor -> cyclotron
