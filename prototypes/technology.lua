@@ -5710,7 +5710,7 @@ data:extend({
     type = "technology",
     name = "sp-geological-science-pack-1",  -- #ForRegEx# - technology
     icon_size = 64,
-    icon = "__Krastorio2Assets__/icons/cards/basic-tech-card.png",
+    icon = "__Spaghetorio__/graphics/krastorio/icons/cards/basic-tech-card.png",
     effects =
     {
       {
@@ -5888,7 +5888,7 @@ data:extend({
     type = "technology",
     name = "sp-electronic-science-pack-2",  -- #ForRegEx# - technology
     icon_size = 64,
-    icon = "__Krastorio2Assets__/icons/cards/utility-tech-card.png",
+    icon = "__Spaghetorio__/graphics/krastorio/icons/cards/utility-tech-card.png",
     effects =
     {
       {
@@ -5981,7 +5981,7 @@ data:extend({
     type = "technology",
     name = "sp-astronomical-science-pack-2",  -- #ForRegEx# - technology
     icon_size = 64,
-    icon = "__Krastorio2Assets__/icons/cards/matter-tech-card.png",
+    icon = "__Spaghetorio__/graphics/krastorio/icons/cards/matter-tech-card.png",
     effects =
     {
       {

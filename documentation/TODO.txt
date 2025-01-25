@@ -35,7 +35,7 @@ hurricane406 graphics
   - Lumber mill -> Add more wood items
   - Scrubber -> Solvant extractor / Rotary kiln
   - Gravity assembler
-  - Arc furnace -> Connects to heatpipes.
+  - Arc furnace -> Connects to heatpipes. Add heatpipes to space age reactor and increase temp to 4000 °C
   - Core extractor
   - Oxidizer
   - Convector -> Induction hardener

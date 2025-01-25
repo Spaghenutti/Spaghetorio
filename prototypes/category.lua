@@ -49,12 +49,12 @@ data:extend({
     name = "sp-kr-fuel-burning",
   },
   {
-    -- Electrolysis, used by filtration plant
+    -- Electrolysis, used by electrolysis plant
     type = "recipe-category",
     name = "sp-kr-electrolysis",
   },
   {
-    -- Fluid filtration, used by electrolysis plant
+    -- Fluid filtration, used by filtration plant
     type = "recipe-category",
     name = "sp-kr-fluid-filtration",
   },
@@ -118,6 +118,22 @@ data:extend({
   {
     type = "recipe-category",
     name = "crushed-smelting"
+  },
+  {
+    type = "recipe-category",
+    name = "enriching-raw-resource"
+  },
+  {
+    type = "recipe-category",
+    name = "enriching-crushed-resource"
+  },
+  {
+    type = "recipe-category",
+    name = "smelting-enriched-resource"
+  },
+  {
+    type = "recipe-category",
+    name = "dirty-water-filtering"
   },
   {
     type = "recipe-category",
