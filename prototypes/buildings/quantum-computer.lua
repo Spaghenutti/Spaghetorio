@@ -138,7 +138,7 @@ data:extend({
         },
       },
     },
-    crafting_categories = { "sp-kr-research-data", "t2-science", "t3-science" },
+    crafting_categories = { "sp-kr-research-data"},
     crafting_speed = 3,
     energy_source = {
       type = "electric",

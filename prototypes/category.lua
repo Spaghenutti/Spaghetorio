@@ -98,19 +98,6 @@ data:extend({
     type = "recipe-category",
     name = "sp-kr-research-data",
   },
-
-  {
-    type = "recipe-category",
-    name = "t1-science"
-  },
-  {
-    type = "recipe-category",
-    name = "t2-science"
-  },
-  {
-    type = "recipe-category",
-    name = "t3-science"
-  },
   {
     type = "recipe-category",
     name = "sawing"
