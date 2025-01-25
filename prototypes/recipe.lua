@@ -520,6 +520,25 @@ data:extend({
       {type = "item", name = "sp-glass", amount = 10}
     }
   },
+  {
+    type = "recipe",
+    name = "sp-lithium-oxide",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/icons/lithium-oxide.png",
+    icon_size = 64,
+    mip_maps = 4,
+    category = "smelting",
+    subgroup = "processed-resource",
+    enabled = false,
+    energy_required = 3.6,
+    ingredients = {
+      {type = "item", name = "sp-spodumene", amount = 4}
+    },
+    results = {
+      {type = "item", name = "sp-lithium-oxide", amount = 1},
+      {type = "item", name = "sp-alumina", amount = 1},
+      {type = "item", name = "sp-silica", amount = 1}
+    }
+  },
   ------------------------------------------------------------------------------
   -- MARK: crushed-smelting
   ------------------------------------------------------------------------------
@@ -982,6 +1001,76 @@ data:extend({
       {type = "item", name = "sp-nickel-ingot", probability = 0.485, amount = 1},
       {type = "item", name = "iron-plate", probability = 0.485, amount = 1},
       {type = "item", name = "sp-palladium", probability = 0.03, amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-monocrystal",  -- #ForRegEx# - recipe
+    category = "intermediate-smelting",
+    enabled = false,
+    energy_required = 30,
+    ingredients = {
+      {type = "item", name = "sp-titanium-plate", amount = 6},
+      {type = "item", name = "sp-lanthanum", amount = 1},
+      {type = "item", name = "sp-iridium", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-monocrystal", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-quasicrystal-1",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/icons/quasicrystal.png",
+    icon_size = 64,
+    mip_maps = 4,
+    category = "intermediate-smelting",
+    enabled = false,
+    energy_required = 30,
+    ingredients = {
+      {type = "item", name = "copper-plate", amount = 4},
+      {type = "item", name = "iron-plate", amount = 1},
+      {type = "item", name = "sp-aluminum-sheet", amount = 2},
+      {type = "item", name = "sp-chromium-plate", amount = 5}
+    },
+    results = {
+      {type = "item", name = "sp-quasicrystal", amount = 1}
+    },
+    order = "crystal-[quasicrystal-1]"
+  },
+  {
+    type = "recipe",
+    name = "sp-quasicrystal-2",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/quasicrystal.png", 64,
+                                         "__Spaghetorio__/graphics/icons/aluminum-sheet.png", 64),
+    category = "intermediate-smelting",
+    enabled = false,
+    energy_required = 40,
+    hide_from_player_crafting = true,
+    ingredients = {
+      {type = "item", name = "sp-nickel-ingot", amount = 3},
+      {type = "item", name = "sp-aluminum-sheet", amount = 5},
+      {type = "item", name = "sp-palladium", amount = 1},
+      {type = "item", name = "sp-niobium-billet", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-quasicrystal", amount = 4}
+    },
+    order = "crystal-[quasicrystal-1]"
+  },
+  {
+    type = "recipe",
+    name = "sp-rukite-bar",  -- #ForRegEx# - recipe
+    category = "intermediate-smelting",
+    enabled = false,
+    energy_required = 3.6,
+    ingredients = {
+      {type = "item", name = "sp-tungsten-powder", amount = 1},
+      {type = "item", name = "carbon", amount = 1},
+      {type = "item", name = "sp-rukite-powder", amount = 4}
+    },
+    results = {
+      {type = "item", name = "sp-rukite-bar", amount = 1}
     }
   },
   ------------------------------------------------------------------------------
@@ -2047,7 +2136,300 @@ data:extend({
       quaternary = {r = 0.3, g = 0.3, b = 0.3, a = 1.000},
     }
   },
-
+  {
+    type = "recipe",
+    name = "sp-sulfur-with-catalyst",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__base__/graphics/icons/sulfur.png", 64,
+                                         "__Spaghetorio__/graphics/icons/catalyst.png", 64),
+    category = "chemistry",
+    enabled = false,
+    energy_required = 2,
+    hide_from_player_crafting = true,
+    ingredients = {
+      {type = "item", name = "sp-catalyst", amount = 1},
+      {type = "fluid", name = "petroleum-gas", amount = 60},
+      {type = "fluid", name = "water", amount = 60}
+    },
+    results = {
+      {type = "item", name = "sulfur", amount = 6}
+    },
+    crafting_machine_tint = {
+      primary = {r = 1.000, g = 1.000, b = 0.500, a = 1.000},
+      secondary = {r = 0.771, g = 0.771, b = 0.0, a = 1.000},
+      tertiary = {r = 0.768, g = 0.665, b = 0.0, a = 1.000},
+      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-phosphorus",  -- #ForRegEx# - recipe
+    category = "chemistry",
+    enabled = false,
+    energy_required = 2.4,
+    ingredients = {
+      {type = "item", name = "sp-limestone", amount = 2},
+      {type = "fluid", name = "sulfuric-acid", amount = 2}
+    },
+    results = {
+      {type = "item", name = "sp-phosphorus", amount = 1}
+    },
+    crafting_machine_tint = {
+      primary = {r = 1.000, g = 0.3, b = 0.3, a = 1.000},
+      secondary = {r = 0.771, g = 0.0, b = 0.0, a = 1.000},
+      tertiary = {r = 0.768, g = 0.0, b = 0.0, a = 1.000},
+      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-lithium-sulfur-battery",  -- #ForRegEx# - recipe
+    category = "chemistry",
+    enabled = false,
+    energy_required = 5,
+    ingredients = {
+      {type = "item", name = "lithium", amount = 4},
+      {type = "item", name = "sp-cobalt-billet", amount = 1},
+      {type = "item", name = "sp-aluminum-sheet", amount = 1},
+      {type = "item", name = "carbon", amount = 1},
+      {type = "fluid", name = "sulfuric-acid", amount = 10},
+      {type = "fluid", name = "electrolyte", amount = 4}
+    },
+    results = {
+      {type = "item", name = "sp-lithium-sulfur-battery", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-catalyst-from-liquid-sodium",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/catalyst.png", 64,
+                                         "__Spaghetorio__/graphics/icons/liquid-sodium.png", 64),
+    category = "chemistry",
+    enabled = false,
+    energy_required = 3,
+    hide_from_player_crafting = true,
+    ingredients = {
+      {type = "item", name = "carbon", amount = 2},
+      {type = "item", name = "sp-aluminum-sheet", amount = 2},
+      {type = "fluid", name = "sp-liquid-sodium", amount = 20},
+      {type = "fluid", name = "sp-propylene", amount = 40}
+    },
+    results = {
+      {type = "item", name = "sp-catalyst", amount = 1}
+    },
+    crafting_machine_tint = {
+      primary = {r = 1.000, g = 1.000, b = 0.500, a = 1.000},
+      secondary = {r = 0.771, g = 0.771, b = 0.0, a = 1.000},
+      tertiary = {r = 0.768, g = 0.665, b = 0.0, a = 1.000},
+      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-insulation-sheet",  -- #ForRegEx# - recipe
+    category = "chemistry",
+    enabled = false,
+    energy_required = 2,
+    ingredients = {
+      {type = "item", name = "plastic-bar", amount = 1},
+      {type = "fluid", name = "sp-styrene", amount = 10}
+    },
+    results = {
+      {type = "item", name = "sp-insulation-sheet", amount = 1}
+    },
+    crafting_machine_tint = {
+      primary = {r = 1.000, g = 1.000, b = 1.000, a = 1.000},
+      secondary = {r = 0.9, g = 0.9, b = 0.9, a = 1.000},
+      tertiary = {r = 0.7, g = 0.7, b = 0.7, a = 1.000},
+      quaternary = {r = 0.5, g = 0.5, b = 0.5, a = 1.000},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-propane",  -- #ForRegEx# - recipe
+    category = "chemistry",
+    subgroup = "fluid-recipes",
+    enabled = false,
+    energy_required = 12,
+    ingredients = {
+      {type = "fluid", name = "petroleum-gas", amount = 100},
+      {type = "item", name = "sp-filter", amount = 2},
+      {type = "item", name = "coal", amount = 6},
+    },
+    results = {
+      {type = "fluid", name = "sp-propane", amount = 40}
+    },
+    crafting_machine_tint = {
+      primary = {r = 0.7, g = 0.7, b = 0.7, a = 1.000},
+      secondary = {r = 0.2, g = 0.2, b = 0.2, a = 1.000},
+      tertiary = {r = 0.0, g = 0.0, b = 0.0, a = 1.000},
+      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
+    },
+    order = "molecule-[propane]"
+  },
+  {
+    type = "recipe",
+    name = "sp-ethylene-and-propene",  -- #ForRegEx# - recipe
+    icons = util.icon.combine_two_icons("__base__/graphics/icons/fluid/petroleum-gas.png", 64, nil,
+                                        "__Spaghetorio__/graphics/icons/propane.png", 64, nil),
+    icon_size = 64,
+    mip_maps = 4,
+    category = "chemistry",
+    subgroup = "fluid-recipes",
+    enabled = false,
+    energy_required = 15,
+    ingredients = {
+      {type = "fluid", name = "petroleum-gas", amount = 100},
+      {type = "item", name = "sp-filter", amount = 2},
+      {type = "item", name = "sp-catalyst", amount = 1}
+    },
+    results = {
+      {type = "fluid", name = "sp-ethylene", amount = 40},
+      {type = "fluid", name = "sp-propane", amount = 50},
+    },
+    crafting_machine_tint = {
+      primary = {r = 0.8, g = 0.8, b = 0.8, a = 1.000},
+      secondary = {r = 0.2, g = 0.2, b = 0.2, a = 1.000},
+      tertiary = {r = 0.1, g = 0.1, b = 0.1, a = 1.000},
+      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
+    },
+    order = "molecule-[ethylene-and-propene]"
+  },
+  {
+    type = "recipe",
+    name = "sp-methyl-tert-butyl-ether",  -- #ForRegEx# - recipe
+    category = "chemistry",
+    subgroup = "fluid-recipes",
+    enabled = false,
+    energy_required = 18,
+    ingredients = {
+      {type = "item", name = "sp-catalyst", amount = 1},
+      {type = "fluid", name = "sp-styrene", amount = 20},
+      {type = "fluid", name = "sp-propane", amount = 50}
+    },
+    results = {
+      {type = "fluid", name = "sp-methyl-tert-butyl-ether", amount = 50}
+    },
+    crafting_machine_tint = {
+      primary = {r = 0.7, g = 0.7, b = 0.7, a = 1.000},
+      secondary = {r = 0.3, g = 0.3, b = 0.3, a = 1.000},
+      tertiary = {r = 0.0, g = 0.0, b = 0.0, a = 1.000},
+      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
+    },
+    order = "molecule-[methyl-tert-butyl-ether]"
+  },
+  {
+    type = "recipe",
+    name = "sp-propylene",  -- #ForRegEx# - recipe
+    category = "chemistry",
+    subgroup = "fluid-recipes",
+    enabled = false,
+    energy_required = 20,
+    ingredients = {
+      {type = "fluid", name = "sp-propane", amount = 100},
+      {type = "item", name = "sp-catalyst", amount = 1},
+    },
+    results = {
+      {type = "fluid", name = "sp-propylene", amount = 100},
+    },
+    crafting_machine_tint = {
+      primary = {r = 0.9, g = 0.9, b = 0.9, a = 1.000},
+      secondary = {r = 0.5, g = 0.5, b = 0.5, a = 1.000},
+      tertiary = {r = 0.0, g = 0.0, b = 0.0, a = 1.000},
+      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
+    },
+    order = "molecule-[propylene]"
+  },
+  {
+    type = "recipe",
+    name = "sp-sodium-hydroxide-from-liquid-sodium",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/sodium-hydroxide.png", 64,
+                                         "__Spaghetorio__/graphics/icons/liquid-sodium.png", 64),
+    category = "chemistry",
+    subgroup = "fluid-recipes",
+    enabled = false,
+    energy_required = 50,
+    ingredients = {
+      {type = "fluid", name = "sp-liquid-sodium", amount = 35},
+      {type = "fluid", name = "water", amount = 100},
+    },
+    results = {
+      {type = "fluid", name = "sp-sodium-hydroxide", amount = 20},
+    },
+    crafting_machine_tint = {
+      primary = {r = 0.6, g = 0.0, b = 0.6, a = 1.000},
+      secondary = {r = 0.3, g = 0.0, b = 0.3, a = 1.000},
+      tertiary = {r = 0.1, g = 0.0, b = 0.1, a = 1.000},
+      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-sodium-carbonate",  -- #ForRegEx# - recipe
+    category = "chemistry",
+    subgroup = "fluid-recipes",
+    enabled = false,
+    energy_required = 16,
+    ingredients = {
+      {type = "fluid", name = "sp-liquid-sodium", amount = 60},
+      {type = "fluid", name = "sp-oxygen", amount = 100},
+      {type = "item", name = "sp-graphie", amount = 3},
+    },
+    results = {
+      {type = "fluid", name = "sp-sodium-hydroxide", amount = 60},
+    },
+    crafting_machine_tint = {
+      primary = {r = 0.6, g = 0.4, b = 0.6, a = 1.000},
+      secondary = {r = 0.3, g = 0.2, b = 0.3, a = 1.000},
+      tertiary = {r = 0.1, g = 0.1, b = 0.1, a = 1.000},
+      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-benzene",  -- #ForRegEx# - recipe
+    category = "chemistry",
+    subgroup = "fluid-recipes",
+    enabled = false,
+    energy_required = 16,
+    hide_from_player_crafting = true,
+    ingredients = {
+      {type = "fluid", name = "petroleum-gas", amount = 100},
+      {type = "item", name = "sp-filter", amount = 1},
+      {type = "item", name = "coal", amount = 10},
+    },
+    results = {
+      {type = "fluid", name = "sp-benzene", amount = 50}
+    },
+    crafting_machine_tint = {
+      primary = {r = 0.6, g = 0.6, b = 0.6, a = 1.000},
+      secondary = {r = 0.3, g = 0.3, b = 0.3, a = 1.000},
+      tertiary = {r = 0.1, g = 0.1, b = 0.1, a = 1.000},
+      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-styrene",  -- #ForRegEx# - recipe
+    category = "chemistry",
+    subgroup = "fluid-recipes",
+    enabled = false,
+    energy_required = 12,
+    hide_from_player_crafting = true,
+    ingredients = {
+      {type = "fluid", name = "sp-benzene", amount = 30},
+      {type = "fluid", name = "water", amount = 5},
+      {type = "item", name = "iron-plate", amount = 1},
+    },
+    results = {
+      {type = "fluid", name = "sp-styrene", amount = 20}
+    },
+    crafting_machine_tint = {
+      primary = {r = 0.3, g = 0.3, b = 0.3, a = 1.000},
+      secondary = {r = 0.1, g = 0.1, b = 0.1, a = 1.000},
+      tertiary = {r = 0.1, g = 0.1, b = 0.1, a = 1.000},
+      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
+    }
+  },
   ------------------------------------------------------------------------------
   -- MARK: sp-kr-fluid-filtration
   ------------------------------------------------------------------------------
@@ -2077,6 +2459,96 @@ data:extend({
       quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
     },
     order = "z-filtration-[sulfur]"
+  },
+  {
+    type = "recipe",
+    name = "sp-phosphoric-acid",  -- #ForRegEx# - recipe
+    category = "chemistry",
+    subgroup = "fluid-recipes",
+    enabled = false,
+    energy_required = 8,
+    ingredients = {
+      {type = "item", name = "sp-phosphorus", amount = 5},
+      {type = "fluid", name = "water", amount = 100},
+    },
+    results = {
+      {type = "fluid", name = "sp-phosphoric-acid", amount = 25}
+    },
+    crafting_machine_tint = {
+      primary = {r = 1.000, g = 1.000, b = 0.000, a = 1.000},
+      secondary = {r = 0.771, g = 0.771, b = 0.0, a = 1.000},
+      tertiary = {r = 0.768, g = 0.665, b = 0.0, a = 1.000},
+      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
+    },
+    order = "molecule-[phosphoric-acid]"
+  },
+  {
+    type = "recipe",
+    name = "sp-sulfamate",  -- #ForRegEx# - recipe
+    category = "chemistry",
+    subgroup = "fluid-recipes",
+    enabled = false,
+    energy_required = 12,
+    ingredients = {
+      {type = "item", name = "sulfur", amount = 3},
+      {type = "fluid", name = "sp-nitrogen", amount = 10},
+      {type = "fluid", name = "water", amount = 50}
+    },
+    results = {
+      {type = "fluid", name = "sp-sulfamate", amount = 30}
+    },
+    crafting_machine_tint = {
+      primary = {r = 1.000, g = 0.6, b = 0.4, a = 1.000},
+      secondary = {r = 0.771, g = 0.3, b = 0.2, a = 1.000},
+      tertiary = {r = 0.768, g = 0.0, b = 0.0, a = 1.000},
+      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
+    },
+    order = "molecule-[sulfamate]"
+  },
+  {
+    type = "recipe",
+    name = "sp-perchloric-acid",  -- #ForRegEx# - recipe
+    category = "chemistry",
+    subgroup = "fluid-recipes",
+    enabled = false,
+    energy_required = 20,
+    ingredients = {
+      {type = "item", name = "sp-catalyst", amount = 1},
+      {type = "fluid", name = "sp-mineral-water", amount = 50},
+      {type = "fluid", name = "sp-hydrogen-chloride", amount = 20}
+    },
+    results = {
+      {type = "fluid", name = "sp-perchloric-acid", amount = 30}
+    },
+    crafting_machine_tint = {
+      primary = {r = 0.800, g = 1.000, b = 0.4, a = 1.000},
+      secondary = {r = 0.4, g = 0.771, b = 0.2, a = 1.000},
+      tertiary = {r = 0.0, g = 0.665, b = 0.0, a = 1.000},
+      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
+    },
+    order = "molecule-[perchloric-acid]"
+  },
+  {
+    type = "recipe",
+    name = "sp-rubber",  -- #ForRegEx# - recipe
+    category = "chemistry",
+    enabled = false,
+    energy_required = 3.2,
+    ingredients = {
+      {type = "item", name = "sulfur", amount = 3},
+      {type = "item", name = "sp-filter", amount = 1},
+      {type = "fluid", name = "sp-styrene", amount = 50},
+      {type = "fluid", name = "sp-phosphoric-acid", amount = 10},
+    },
+    results = {
+      {type = "item", name = "sp-rubber", amount = 2}
+    },
+    crafting_machine_tint = {
+      primary = {r = 0.3, g = 0.3, b = 0.3, a = 1.000},
+      secondary = {r = 0.1, g = 0.1, b = 0.1, a = 1.000},
+      tertiary = {r = 0.0, g = 0.0, b = 0.0, a = 1.000},
+      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
+    }
   },
   ------------------------------------------------------------------------------
   -- MARK: sp-kr-atmosphere-condensation
@@ -2779,127 +3251,9 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-ball-bearing",  -- #ForRegEx# - recipe
-    category = "crafting-with-fluid",
-    enabled = false,
-    energy_required = 6,
-    ingredients = {
-      {type = "item", name = "sp-stainless-steel", amount = 3},
-      {type = "item", name = "sp-bronze-rod", amount = 1},
-      {type = "item", name = "sp-chromium-plate", amount = 2},
-      {type = "fluid", name = "lubricant", amount = 5}
-    },
-    results = {
-      {type = "item", name = "sp-ball-bearing", amount = 4}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-infrared-filter",  -- #ForRegEx# - recipe
-    category = "crafting-with-fluid",
-    enabled = false,
-    energy_required = 1.6,
-    ingredients = {
-      {type = "fluid", name = "sp-aqueous-tantalum", amount = 10},
-      {type = "item", name = "sp-silica", amount = 1}
-    },
-    results = {
-      {type = "item", name = "sp-infrared-filter", amount = 1}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-glass-fiber",  -- #ForRegEx# - recipe
-    category = "crafting",
-    enabled = false,
-    energy_required = 8,
-    ingredients = {
-      {type = "item", name = "sp-silica", amount = 4},
-      {type = "item", name = "sp-aluminum-sheet", amount = 2},
-      {type = "item", name = "sp-sodium", amount = 1}
-    },
-    results = {
-      {type = "item", name = "sp-glass-fiber", amount = 5}
-    }
-  },
-  ------------------------------------------------------------------------------
-  -- MARK: crafting-with-fluid
-  ------------------------------------------------------------------------------
-  {
-    type = "recipe",
-    name = "sp-wood-from-urea",  -- #ForRegEx# - recipe
-    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/krastorio/icons/recipes/wood-plus.png", 64,
-                                         "__Spaghetorio__/graphics/icons/urea.png", 64),
-    category = "crafting-with-fluid",
-    subgroup = "processed-resource",
-    enabled = false,
-    energy_required = 75,
-    hide_from_player_crafting = true,
-    ingredients = {
-      {type = "item", name = "sp-urea", amount = 1},
-      {type = "item", name = "landfill", amount = 3},
-      {type = "fluid", name = "water", amount = 300}
-    },
-    results = {
-      {type = "item", name = "wood", amount = 2}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-resistor",  -- #ForRegEx# - recipe
-    category = "crafting-with-fluid",
-    enabled = false,
-    energy_required = 2,
-    ingredients = {
-      {type = "item", name = "carbon", amount = 1},
-      {type = "fluid", name = "sp-phosphoric-acid", amount = 12},
-      {type = "item", name = "copper-cable", amount = 2},
-      {type = "item", name = "sp-nickel-ingot", amount = 1}
-    },
-    results = {
-      {type = "item", name = "sp-resistor", amount = 4}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-capacitor-from-aluminum",  -- #ForRegEx# - recipe
-    category = "crafting-with-fluid",
-    enabled = false,
-    energy_required = 3.2,
-    ingredients = {
-      {type = "item", name = "copper-cable", amount = 1},
-      {type = "fluid", name = "sp-phosphoric-acid", amount = 10},
-      {type = "item", name = "sp-aluminum-sheet", amount = 2},
-      {type = "item", name = "plastic-bar", amount = 1},
-    },
-    results = {
-      {type = "item", name = "sp-capacitor", amount = 3}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-capacitor-from-niobium",  -- #ForRegEx# - recipe
-    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/capacitor.png", 64,
-                                         "__Spaghetorio__/graphics/icons/niobium-billet.png", 64),
-    category = "crafting-with-fluid",
-    enabled = false,
-    energy_required = 3.2,
-    hide_from_player_crafting = true,
-    ingredients = {
-      {type = "item", name = "copper-cable", amount = 1},
-      {type = "fluid", name = "sp-phosphoric-acid", amount = 8},
-      {type = "item", name = "sp-niobium-billet", amount = 2},
-      {type = "item", name = "plastic-bar", amount = 1}
-    },
-    results = {
-      {type = "item", name = "sp-capacitor", amount = 6}
-    }
-  },
-  {
-    type = "recipe",
     name = "sp-capacitor-from-tantalum",  -- #ForRegEx# - recipe
     icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/capacitor.png", 64,
-                                         "__Spaghetorio__/graphics/icons/tantalum-billet.png", 64),
+                                        "__Spaghetorio__/graphics/icons/tantalum-billet.png", 64),
     category = "crafting",
     enabled = false,
     energy_required = 4,
@@ -2957,18 +3311,20 @@ data:extend({
       {type = "item", name = "sp-silver-solder", amount = 10}
     }
   },
+
   {
     type = "recipe",
-    name = "sp-insulated-wire",  -- #ForRegEx# - recipe
-    category = "crafting-with-fluid",
+    name = "sp-glass-fiber",  -- #ForRegEx# - recipe
+    category = "crafting",
     enabled = false,
-    energy_required = 0.5,
+    energy_required = 8,
     ingredients = {
-      {type = "fluid", name = "sp-vinyl-chloride", amount = 4},
-      {type = "item", name = "copper-cable", amount = 1}
+      {type = "item", name = "sp-silica", amount = 4},
+      {type = "item", name = "sp-aluminum-sheet", amount = 2},
+      {type = "item", name = "sp-sodium", amount = 1}
     },
     results = {
-      {type = "item", name = "sp-insulated-wire", amount = 1}
+      {type = "item", name = "sp-glass-fiber", amount = 5}
     }
   },
   {
@@ -2984,22 +3340,6 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-basic-circuit-board", amount = 1}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-empty-circuit-board",  -- #ForRegEx# - recipe
-    category = "crafting-with-fluid",
-    enabled = false,
-    energy_required = 3.6,
-    ingredients = {
-      {type = "fluid", name = "sp-epoxy", amount = 10},
-      {type = "item", name = "copper-cable", amount = 2},
-      {type = "item", name = "sp-glass-fiber", amount = 3},
-      {type = "item", name = "sp-silver-solder", amount = 1}
-    },
-    results = {
-      {type = "item", name = "sp-empty-circuit-board", amount = 1}
     }
   },
   {
@@ -3128,20 +3468,6 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-fabric",  -- #ForRegEx# - recipe
-    category = "crafting-with-fluid",
-    enabled = false,
-    energy_required = 2.4,
-    ingredients = {
-      {type = "item", name = "plastic-bar", amount = 2},
-      {type = "fluid", name = "sp-sodium-hydroxide", amount = 10}
-    },
-    results = {
-      {type = "item", name = "sp-fabric", amount = 1}
-    }
-  },
-  {
-    type = "recipe",
     name = "sp-magnet",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
@@ -3166,22 +3492,6 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-neodymium-magnet", amount = 2}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-cement",  -- #ForRegEx# - recipe
-    category = "crafting-with-fluid",
-    enabled = false,
-    energy_required = 2,
-    ingredients = {
-      {type = "item", name = "sp-calcium-carbonate", amount = 5},
-      {type = "item", name = "sp-alumina", amount = 1},
-      {type = "item", name = "iron-ore", amount = 2},
-      {type = "fluid", name = "water", amount = 100}
-    },
-    results = {
-      {type = "item", name = "sp-cement", amount = 3}
     }
   },
   {
@@ -3269,44 +3579,7 @@ data:extend({
     results = {
       {type = "item", name = "sp-gearbox", amount = 1}
     }
-  },
-  {
-    type = "recipe",
-    name = "sp-heavy-gearbox",  -- #ForRegEx# - recipe
-    category = "crafting-with-fluid",
-    enabled = false,
-    energy_required = 4,
-    ingredients = {
-      {type = "item", name = "sp-machined-parts", amount = 8},
-      {type = "fluid", name = "lubricant", amount = 20},
-      {type = "item", name = "sp-bolts", amount = 4},
-      {type = "item", name = "sp-heavy-ball-bearing", amount = 3},
-      {type = "item", name = "sp-stainless-steel", amount = 2},
-      {type = "item", name = "sp-stainless-steel-gear-wheel", amount = 10}
-    },
-    results = {
-      {type = "item", name = "sp-heavy-gearbox", amount = 1}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-differential",  -- #ForRegEx# - recipe
-    category = "crafting-with-fluid",
-    enabled = false,
-    energy_required = 6,
-    ingredients = {
-      {type = "item", name = "sp-gearbox", amount = 2},
-      {type = "fluid", name = "lubricant", amount = 50},
-      {type = "item", name = "sp-machined-parts", amount = 3},
-      {type = "item", name = "sp-bolts", amount = 4},
-      {type = "item", name = "sp-ball-bearing", amount = 3},
-      {type = "item", name = "sp-stainless-steel-gear-wheel", amount = 12}
-    },
-    results = {
-      {type = "item", name = "sp-differential", amount = 1}
-    }
-  },
-  {
+  },{
     type = "recipe",
     name = "sp-electromagnet",  -- #ForRegEx# - recipe
     category = "crafting",
@@ -3336,22 +3609,6 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-servo-motor", amount = 1}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-cryostat",  -- #ForRegEx# - recipe
-    category = "crafting-with-fluid",
-    enabled = false,
-    energy_required = 5,
-    ingredients = {
-      {type = "item", name = "sp-machined-parts", amount = 5},
-      {type = "item", name = "sp-titanium-frame", amount = 1},
-      {type = "item", name = "sp-ceramics", amount = 3},
-      {type = "fluid", name = "sp-liquid-nitrogen", amount = 40}
-    },
-    results = {
-      {type = "item", name = "sp-cryostat", amount = 1}
     }
   },
   {
@@ -3449,345 +3706,6 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-sulfur-with-catalyst",  -- #ForRegEx# - recipe
-    icons = util.icon.overlay_small_icon("__base__/graphics/icons/sulfur.png", 64,
-                                         "__Spaghetorio__/graphics/icons/catalyst.png", 64),
-    category = "chemistry",
-    enabled = false,
-    energy_required = 2,
-    hide_from_player_crafting = true,
-    ingredients = {
-      {type = "item", name = "sp-catalyst", amount = 1},
-      {type = "fluid", name = "petroleum-gas", amount = 60},
-      {type = "fluid", name = "water", amount = 60}
-    },
-    results = {
-      {type = "item", name = "sulfur", amount = 6}
-    },
-    crafting_machine_tint = {
-      primary = {r = 1.000, g = 1.000, b = 0.500, a = 1.000},
-      secondary = {r = 0.771, g = 0.771, b = 0.0, a = 1.000},
-      tertiary = {r = 0.768, g = 0.665, b = 0.0, a = 1.000},
-      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-phosphorus",  -- #ForRegEx# - recipe
-    category = "chemistry",
-    enabled = false,
-    energy_required = 2.4,
-    ingredients = {
-      {type = "item", name = "sp-limestone", amount = 2},
-      {type = "fluid", name = "sulfuric-acid", amount = 2}
-    },
-    results = {
-      {type = "item", name = "sp-phosphorus", amount = 1}
-    },
-    crafting_machine_tint = {
-      primary = {r = 1.000, g = 0.3, b = 0.3, a = 1.000},
-      secondary = {r = 0.771, g = 0.0, b = 0.0, a = 1.000},
-      tertiary = {r = 0.768, g = 0.0, b = 0.0, a = 1.000},
-      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-lithium-oxide",  -- #ForRegEx# - recipe
-    icon = "__Spaghetorio__/graphics/icons/lithium-oxide.png",
-    icon_size = 64,
-    mip_maps = 4,
-    category = "smelting",
-    subgroup = "processed-resource",
-    enabled = false,
-    energy_required = 3.6,
-    ingredients = {
-      {type = "item", name = "sp-spodumene", amount = 4}
-    },
-    results = {
-      {type = "item", name = "sp-lithium-oxide", amount = 1},
-      {type = "item", name = "sp-alumina", amount = 1},
-      {type = "item", name = "sp-silica", amount = 1}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-turbine-blade-from-stainless-steel",  -- #ForRegEx# - recipe
-    icon = "__Spaghetorio__/graphics/icons/turbine-blade.png",
-    icon_size = 64,
-    mip_maps = 4,
-    category = "crafting",
-    enabled = false,
-    energy_required = 6,
-    ingredients = {
-      {type = "item", name = "sp-stainless-steel", amount = 5},
-      {type = "item", name = "sp-chromium-plate", amount = 1},
-      {type = "item", name = "sp-zirconium-rod", amount = 2},
-      {type = "item", name = "sp-titanium-plate", amount = 1},
-    },
-    results = {
-      {type = "item", name = "sp-turbine-blade", amount = 3}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-turbine-blade-from-TiAlSn",  -- #ForRegEx# - recipe
-    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/turbine-blade.png", 64,
-                                         "__Spaghetorio__/graphics/icons/TiAlSn.png", 64),
-    category = "crafting",
-    enabled = false,
-    energy_required = 8,
-    hide_from_player_crafting = true,
-    ingredients = {
-      {type = "item", name = "sp-TiAlSn", amount = 6},
-      {type = "item", name = "sp-cobalt-billet", amount = 1},
-      {type = "item", name = "sp-tantalum-billet", amount = 2}
-    },
-    results = {
-      {type = "item", name = "sp-turbine-blade", amount = 3}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-turbine-rotor",  -- #ForRegEx# - recipe
-    category = "crafting",
-    enabled = false,
-    energy_required = 30,
-    ingredients = {
-      {type = "item", name = "sp-TiAlSn", amount = 4},
-      {type = "item", name = "sp-titanium-carbide", amount = 2},
-      {type = "item", name = "sp-titanium-nitride", amount = 1},
-      {type = "item", name = "sp-tungsten-slab", amount = 5},
-      {type = "item", name = "sp-ceramics", amount = 5},
-      {type = "item", name = "sp-turbine-blade", amount = 24}
-    },
-    results = {
-      {type = "item", name = "sp-turbine-rotor", amount = 1}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-turbine-stator",  -- #ForRegEx# - recipe
-    category = "crafting",
-    enabled = false,
-    energy_required = 26,
-    ingredients = {
-      {type = "item", name = "sp-TiAlSn", amount = 4},
-      {type = "item", name = "sp-titanium-nitride", amount = 2},
-      {type = "item", name = "sp-titanium-frame", amount = 20},
-      {type = "item", name = "sp-machined-parts", amount = 6},
-      {type = "item", name = "sp-flange", amount = 5},
-      {type = "item", name = "sp-turbine-blade", amount = 24}
-    },
-    results = {
-      {type = "item", name = "sp-turbine-stator", amount = 1}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-turbopump",  -- #ForRegEx# - recipe
-    category = "crafting",
-    enabled = false,
-    energy_required = 8,
-    ingredients = {
-      {type = "item", name = "sp-turbine-blade", amount = 10},
-      {type = "item", name = "sp-ceramics", amount = 2},
-      {type = "item", name = "sp-stainless-steel", amount = 3},
-      {type = "item", name = "tungsten-carbide", amount = 3},
-      {type = "item", name = "sp-bolts", amount = 8}
-    },
-    results = {
-      {type = "item", name = "sp-turbopump", amount = 1}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-nozzle",  -- #ForRegEx# - recipe
-    category = "crafting",
-    enabled = false,
-    energy_required = 12,
-    ingredients = {
-      {type = "item", name = "copper-plate", amount = 2},
-      {type = "item", name = "sp-TiAlSn", amount = 2},
-      {type = "item", name = "sp-tungsten-slab", amount = 6},
-      {type = "item", name = "tungsten-carbide", amount = 2},
-      {type = "item", name = "sp-bolts", amount = 4}
-    },
-    results = {
-      {type = "item", name = "sp-nozzle", amount = 1}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-fuel-injector",  -- #ForRegEx# - recipe
-    category = "crafting",
-    enabled = false,
-    energy_required = 3,
-    ingredients = {
-      {type = "item", name = "tungsten-carbide", amount = 1},
-      {type = "item", name = "sp-inconel", amount = 1}
-    },
-    results = {
-      {type = "item", name = "sp-fuel-injector", amount = 1}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-cybernetics",  -- #ForRegEx# - recipe
-    category = "crafting",
-    enabled = false,
-    energy_required = 8,
-    ingredients = {
-      {type = "item", name = "sp-titanium-frame", amount = 2},
-      {type = "item", name = "sp-machined-parts", amount = 6},
-      {type = "item", name = "sp-actuator", amount = 2},
-      {type = "item", name = "sp-advanced-processing-unit", amount = 1},
-      {type = "item", name = "sp-micro-machine", amount = 10},
-      {type = "item", name = "sp-light-emitting-diode", amount = 10}
-    },
-    results = {
-      {type = "item", name = "sp-cybernetics", amount = 1}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-combustion-chamber",  -- #ForRegEx# - recipe
-    category = "crafting",
-    enabled = false,
-    energy_required = 24,
-    ingredients = {
-      {type = "item", name = "sp-fuel-injector", amount = 20},
-      {type = "item", name = "sp-tungsten-slab", amount = 2},
-      {type = "item", name = "sp-inconel", amount = 3},
-      {type = "item", name = "sp-bolts", amount = 4},
-      {type = "item", name = "sp-spark-plug", amount = 1},
-    },
-    results = {
-      {type = "item", name = "sp-combustion-chamber", amount = 1}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-rocket-engine",  -- #ForRegEx# - recipe
-    category = "crafting",
-    enabled = false,
-    energy_required = 4,
-    ingredients = {
-      {type = "item", name = "sp-turbopump", amount = 2},
-      {type = "item", name = "sp-nozzle", amount = 1},
-      {type = "item", name = "sp-combustion-chamber", amount = 1},
-      {type = "item", name = "sp-bolts", amount = 6}
-    },
-    results = {
-      {type = "item", name = "sp-rocket-engine", amount = 1}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-solid-rocket-motor",  -- #ForRegEx# - recipe
-    category = "crafting",
-    enabled = false,
-    energy_required = 4,
-    ingredients = {
-      {type = "item", name = "sp-titanium-frame", amount = 5},
-      {type = "item", name = "sp-machined-parts", amount = 8},
-      {type = "item", name = "sp-phosphorus", amount = 1},
-      {type = "item", name = "sp-tungsten-slab", amount = 2},
-      {type = "item", name = "sp-insulation-sheet", amount = 2},
-      {type = "item", name = "solid-fuel", amount = 10}
-    },
-    results = {
-      {type = "item", name = "sp-solid-rocket-motor", amount = 1}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-control-rod",  -- #ForRegEx# - recipe
-    category = "crafting",
-    enabled = false,
-    energy_required = 4.8,
-    ingredients = {
-      {type = "item", name = "sp-TiAlSn", amount = 3},
-      {type = "item", name = "sp-zirconium-rod", amount = 1}
-    },
-    results = {
-      {type = "item", name = "sp-control-rod", amount = 1}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-empty-fuel-rod",  -- #ForRegEx# - recipe
-    category = "crafting",
-    enabled = false,
-    energy_required = 20,
-    ingredients = {
-      {type = "item", name = "carbon", amount = 2},
-      {type = "item", name = "sp-tungsten-slab", amount = 1},
-      {type = "item", name = "sp-zirconium-rod", amount = 2},
-      {type = "item", name = "sp-cerium", amount = 1},
-      {type = "item", name = "sp-TiNb", amount = 8}
-    },
-    results = {
-      {type = "item", name = "sp-empty-fuel-rod", amount = 1}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-plutonium-239-fuel-rod",  -- #ForRegEx# - recipe
-    icon = "__Spaghetorio__/graphics/icons/plutonium-fuel-rod.png",
-    icon_size = 64,
-    mip_maps = 4,
-    category = "crafting",
-    enabled = false,
-    energy_required = 5.2,
-    ingredients = {
-      {type = "item", name = "sp-plutonium-239", amount = 4},
-      {type = "item", name = "sp-empty-fuel-rod", amount = 1}
-    },
-    results = {
-      {type = "item", name = "sp-plutonium-fuel-rod", amount = 1}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-plutonium-240-fuel-rod",  -- #ForRegEx# - recipe
-    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/plutonium-fuel-rod.png", 64,
-                                         "__Spaghetorio__/graphics/icons/plutonium-240-1.png", 64),
-    category = "crafting",
-    enabled = false,
-    energy_required = 6,
-    hide_from_player_crafting = true,
-    ingredients = {
-      {type = "item", name = "sp-plutonium-239", amount = 1},
-      {type = "item", name = "sp-plutonium-240", amount = 1},
-      {type = "item", name = "sp-empty-fuel-rod", amount = 1}
-    },
-    results = {
-      {type = "item", name = "sp-plutonium-fuel-rod", amount = 1}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-reactor-core",  -- #ForRegEx# - recipe
-    category = "advanced-crafting",
-    enabled = false,
-    energy_required = 30,
-    ingredients = {
-      {type = "item", name = "sp-control-rod", amount = 50},
-      {type = "item", name = "sp-pressure-tube", amount = 10},
-      {type = "item", name = "sp-plate-heat-exchanger", amount = 4},
-      {type = "item", name = "sp-valve", amount = 16},
-      {type = "item", name = "sp-flange", amount = 6},
-      {type = "item", name = "sp-high-pressure-tank", amount = 3},
-      {type = "item", name = "sp-stainless-steel", amount = 20},
-      {type = "item", name = "sp-niobium-tin", amount = 5},
-    },
-    results = {
-      {type = "item", name = "sp-reactor-core", amount = 1}
-    }
-  },
-  {
-    type = "recipe",
     name = "sp-heatsink",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
@@ -3799,61 +3717,6 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-heatsink", amount = 1}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-advanced-processing-unit",  -- #ForRegEx# - recipe
-    category = "crafting-with-fluid",
-    enabled = false,
-    energy_required = 8,
-    ingredients = {
-      {type = "item", name = "sp-circuit-board", amount = 1},
-      {type = "item", name = "sp-anodized-aluminum", amount = 2},
-      {type = "item", name = "sp-memory-chip", amount = 4},
-      {type = "item", name = "sp-processor", amount = 2},
-      {type = "item", name = "sp-integrated-circuit", amount = 5},
-      {type = "item", name = "sp-heatsink", amount = 1},
-      {type = "fluid", name = "sp-epoxy", amount = 5}
-    },
-    results = {
-      {type = "item", name = "sp-advanced-processing-unit", amount = 1}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-lithium-sulfur-battery",  -- #ForRegEx# - recipe
-    category = "chemistry",
-    enabled = false,
-    energy_required = 5,
-    ingredients = {
-      {type = "item", name = "lithium", amount = 4},
-      {type = "item", name = "sp-cobalt-billet", amount = 1},
-      {type = "item", name = "sp-aluminum-sheet", amount = 1},
-      {type = "item", name = "carbon", amount = 1},
-      {type = "fluid", name = "sulfuric-acid", amount = 10},
-      {type = "fluid", name = "electrolyte", amount = 4}
-    },
-    results = {
-      {type = "item", name = "sp-lithium-sulfur-battery", amount = 1}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-quantum-data-plane",  -- #ForRegEx# - recipe
-    category = "crafting",
-    enabled = false,
-    energy_required = 30,
-    ingredients = {
-      {type = "item", name = "sp-cubit", amount = 1000},
-      {type = "item", name = "sp-vacuum-tube", amount = 16},
-      {type = "item", name = "sp-glass-fiber", amount = 20},
-      {type = "item", name = "sp-aluminum-frame", amount = 1},
-      {type = "item", name = "sp-machined-parts", amount = 6},
-      {type = "item", name = "sp-gold", amount = 3}
-    },
-    results = {
-      {type = "item", name = "sp-quantum-data-plane", amount = 1}
     }
   },
   {
@@ -3892,31 +3755,6 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-catalyst-from-liquid-sodium",  -- #ForRegEx# - recipe
-    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/catalyst.png", 64,
-                                         "__Spaghetorio__/graphics/icons/liquid-sodium.png", 64),
-    category = "chemistry",
-    enabled = false,
-    energy_required = 3,
-    hide_from_player_crafting = true,
-    ingredients = {
-      {type = "item", name = "carbon", amount = 2},
-      {type = "item", name = "sp-aluminum-sheet", amount = 2},
-      {type = "fluid", name = "sp-liquid-sodium", amount = 20},
-      {type = "fluid", name = "sp-propylene", amount = 40}
-    },
-    results = {
-      {type = "item", name = "sp-catalyst", amount = 1}
-    },
-    crafting_machine_tint = {
-      primary = {r = 1.000, g = 1.000, b = 0.500, a = 1.000},
-      secondary = {r = 0.771, g = 0.771, b = 0.0, a = 1.000},
-      tertiary = {r = 0.768, g = 0.665, b = 0.0, a = 1.000},
-      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
-    }
-  },
-  {
-    type = "recipe",
     name = "sp-mirror-from-silver",  -- #ForRegEx# - recipe
     icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/mirror.png", 64,
                                          "__Spaghetorio__/graphics/icons/silver.png", 64),
@@ -3930,167 +3768,6 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-mirror", amount = 2}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-phosphoric-acid",  -- #ForRegEx# - recipe
-    category = "chemistry",
-    subgroup = "fluid-recipes",
-    enabled = false,
-    energy_required = 8,
-    ingredients = {
-      {type = "item", name = "sp-phosphorus", amount = 5},
-      {type = "fluid", name = "water", amount = 100},
-    },
-    results = {
-      {type = "fluid", name = "sp-phosphoric-acid", amount = 25}
-    },
-    crafting_machine_tint = {
-      primary = {r = 1.000, g = 1.000, b = 0.000, a = 1.000},
-      secondary = {r = 0.771, g = 0.771, b = 0.0, a = 1.000},
-      tertiary = {r = 0.768, g = 0.665, b = 0.0, a = 1.000},
-      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
-    },
-    order = "molecule-[phosphoric-acid]"
-  },
-  {
-    type = "recipe",
-    name = "sp-sulfamate",  -- #ForRegEx# - recipe
-    category = "chemistry",
-    subgroup = "fluid-recipes",
-    enabled = false,
-    energy_required = 12,
-    ingredients = {
-      {type = "item", name = "sulfur", amount = 3},
-      {type = "fluid", name = "sp-nitrogen", amount = 10},
-      {type = "fluid", name = "water", amount = 50}
-    },
-    results = {
-      {type = "fluid", name = "sp-sulfamate", amount = 30}
-    },
-    crafting_machine_tint = {
-      primary = {r = 1.000, g = 0.6, b = 0.4, a = 1.000},
-      secondary = {r = 0.771, g = 0.3, b = 0.2, a = 1.000},
-      tertiary = {r = 0.768, g = 0.0, b = 0.0, a = 1.000},
-      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
-    },
-    order = "molecule-[sulfamate]"
-  },
-  {
-    type = "recipe",
-    name = "sp-perchloric-acid",  -- #ForRegEx# - recipe
-    category = "chemistry",
-    subgroup = "fluid-recipes",
-    enabled = false,
-    energy_required = 20,
-    ingredients = {
-      {type = "item", name = "sp-catalyst", amount = 1},
-      {type = "fluid", name = "sp-mineral-water", amount = 50},
-      {type = "fluid", name = "sp-hydrogen-chloride", amount = 20}
-    },
-    results = {
-      {type = "fluid", name = "sp-perchloric-acid", amount = 30}
-    },
-    crafting_machine_tint = {
-      primary = {r = 0.800, g = 1.000, b = 0.4, a = 1.000},
-      secondary = {r = 0.4, g = 0.771, b = 0.2, a = 1.000},
-      tertiary = {r = 0.0, g = 0.665, b = 0.0, a = 1.000},
-      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
-    },
-    order = "molecule-[perchloric-acid]"
-  },
-  {
-    type = "recipe",
-    name = "sp-rubber",  -- #ForRegEx# - recipe
-    category = "chemistry",
-    enabled = false,
-    energy_required = 3.2,
-    ingredients = {
-      {type = "item", name = "sulfur", amount = 3},
-      {type = "item", name = "sp-filter", amount = 1},
-      {type = "fluid", name = "sp-styrene", amount = 50},
-      {type = "fluid", name = "sp-phosphoric-acid", amount = 10},
-    },
-    results = {
-      {type = "item", name = "sp-rubber", amount = 2}
-    },
-    crafting_machine_tint = {
-      primary = {r = 0.3, g = 0.3, b = 0.3, a = 1.000},
-      secondary = {r = 0.1, g = 0.1, b = 0.1, a = 1.000},
-      tertiary = {r = 0.0, g = 0.0, b = 0.0, a = 1.000},
-      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-monocrystal",  -- #ForRegEx# - recipe
-    category = "intermediate-smelting",
-    enabled = false,
-    energy_required = 30,
-    ingredients = {
-      {type = "item", name = "sp-titanium-plate", amount = 6},
-      {type = "item", name = "sp-lanthanum", amount = 1},
-      {type = "item", name = "sp-iridium", amount = 1},
-    },
-    results = {
-      {type = "item", name = "sp-monocrystal", amount = 1}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-quasicrystal-1",  -- #ForRegEx# - recipe
-    icon = "__Spaghetorio__/graphics/icons/quasicrystal.png",
-    icon_size = 64,
-    mip_maps = 4,
-    category = "intermediate-smelting",
-    enabled = false,
-    energy_required = 30,
-    ingredients = {
-      {type = "item", name = "copper-plate", amount = 4},
-      {type = "item", name = "iron-plate", amount = 1},
-      {type = "item", name = "sp-aluminum-sheet", amount = 2},
-      {type = "item", name = "sp-chromium-plate", amount = 5}
-    },
-    results = {
-      {type = "item", name = "sp-quasicrystal", amount = 1}
-    },
-    order = "crystal-[quasicrystal-1]"
-  },
-  {
-    type = "recipe",
-    name = "sp-quasicrystal-2",  -- #ForRegEx# - recipe
-    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/quasicrystal.png", 64,
-                                         "__Spaghetorio__/graphics/icons/aluminum-sheet.png", 64),
-    category = "intermediate-smelting",
-    enabled = false,
-    energy_required = 40,
-    hide_from_player_crafting = true,
-    ingredients = {
-      {type = "item", name = "sp-nickel-ingot", amount = 3},
-      {type = "item", name = "sp-aluminum-sheet", amount = 5},
-      {type = "item", name = "sp-palladium", amount = 1},
-      {type = "item", name = "sp-niobium-billet", amount = 1}
-    },
-    results = {
-      {type = "item", name = "sp-quasicrystal", amount = 4}
-    },
-    order = "crystal-[quasicrystal-1]"
-  },
-  {
-    type = "recipe",
-    name = "sp-heavy-ball-bearing",  -- #ForRegEx# - recipe
-    category = "crafting-with-fluid",
-    enabled = false,
-    energy_required = 5,
-    ingredients = {
-      {type = "item", name = "sp-niobium-steel", amount = 5},
-      {type = "item", name = "sp-aluminum-brass", amount = 3},
-      {type = "item", name = "sp-titanium-nitride", amount = 1},
-      {type = "fluid", name = "lubricant", amount = 20}
-    },
-    results = {
-      {type = "item", name = "sp-heavy-ball-bearing", amount = 4}
     }
   },
   {
@@ -4131,25 +3808,7 @@ data:extend({
       {type = "item", name = "sp-electrode", amount = 3}
     }
   },
-  {
-    type = "recipe",
-    name = "sp-actuator",  -- #ForRegEx# - recipe
-    category = "crafting-with-fluid",
-    enabled = false,
-    energy_required = 5,
-    ingredients = {
-      {type = "item", name = "electric-engine-unit", amount = 1},
-      {type = "item", name = "sp-ball-bearing", amount = 2},
-      {type = "item", name = "sp-bolts", amount = 4},
-      {type = "item", name = "sp-stainless-steel", amount = 3},
-      {type = "item", name = "sp-stainless-steel-gear-wheel", amount = 6},
-      {type = "item", name = "advanced-circuit", amount = 2},
-      {type = "fluid", name = "lubricant", amount = 20}
-    },
-    results = {
-      {type = "item", name = "sp-actuator", amount = 1}
-    }
-  },
+
   {
     type = "recipe",
     name = "sp-heating-filament",  -- #ForRegEx# - recipe
@@ -4180,26 +3839,6 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-relay", amount = 1}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-insulation-sheet",  -- #ForRegEx# - recipe
-    category = "chemistry",
-    enabled = false,
-    energy_required = 2,
-    ingredients = {
-      {type = "item", name = "plastic-bar", amount = 1},
-      {type = "fluid", name = "sp-styrene", amount = 10}
-    },
-    results = {
-      {type = "item", name = "sp-insulation-sheet", amount = 1}
-    },
-    crafting_machine_tint = {
-      primary = {r = 1.000, g = 1.000, b = 1.000, a = 1.000},
-      secondary = {r = 0.9, g = 0.9, b = 0.9, a = 1.000},
-      tertiary = {r = 0.7, g = 0.7, b = 0.7, a = 1.000},
-      quaternary = {r = 0.5, g = 0.5, b = 0.5, a = 1.000},
     }
   },
   {
@@ -4250,193 +3889,7 @@ data:extend({
       {type = "item", name = "sp-train-boige", amount = 1}
     }
   },
-  {
-    type = "recipe",
-    name = "sp-propane",  -- #ForRegEx# - recipe
-    category = "chemistry",
-    subgroup = "fluid-recipes",
-    enabled = false,
-    energy_required = 12,
-    ingredients = {
-      {type = "fluid", name = "petroleum-gas", amount = 100},
-      {type = "item", name = "sp-filter", amount = 2},
-      {type = "item", name = "coal", amount = 6},
-    },
-    results = {
-      {type = "fluid", name = "sp-propane", amount = 40}
-    },
-    crafting_machine_tint = {
-      primary = {r = 0.7, g = 0.7, b = 0.7, a = 1.000},
-      secondary = {r = 0.2, g = 0.2, b = 0.2, a = 1.000},
-      tertiary = {r = 0.0, g = 0.0, b = 0.0, a = 1.000},
-      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
-    },
-    order = "molecule-[propane]"
-  },
-  {
-    type = "recipe",
-    name = "sp-ethylene-and-propene",  -- #ForRegEx# - recipe
-    icons = util.icon.combine_two_icons("__base__/graphics/icons/fluid/petroleum-gas.png", 64, nil,
-                                        "__Spaghetorio__/graphics/icons/propane.png", 64, nil),
-    icon_size = 64,
-    mip_maps = 4,
-    category = "chemistry",
-    subgroup = "fluid-recipes",
-    enabled = false,
-    energy_required = 15,
-    ingredients = {
-      {type = "fluid", name = "petroleum-gas", amount = 100},
-      {type = "item", name = "sp-filter", amount = 2},
-      {type = "item", name = "sp-catalyst", amount = 1}
-    },
-    results = {
-      {type = "fluid", name = "sp-ethylene", amount = 40},
-      {type = "fluid", name = "sp-propane", amount = 50},
-    },
-    crafting_machine_tint = {
-      primary = {r = 0.8, g = 0.8, b = 0.8, a = 1.000},
-      secondary = {r = 0.2, g = 0.2, b = 0.2, a = 1.000},
-      tertiary = {r = 0.1, g = 0.1, b = 0.1, a = 1.000},
-      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
-    },
-    order = "molecule-[ethylene-and-propene]"
-  },
-  {
-    type = "recipe",
-    name = "sp-methyl-tert-butyl-ether",  -- #ForRegEx# - recipe
-    category = "chemistry",
-    subgroup = "fluid-recipes",
-    enabled = false,
-    energy_required = 18,
-    ingredients = {
-      {type = "item", name = "sp-catalyst", amount = 1},
-      {type = "fluid", name = "sp-styrene", amount = 20},
-      {type = "fluid", name = "sp-propane", amount = 50}
-    },
-    results = {
-      {type = "fluid", name = "sp-methyl-tert-butyl-ether", amount = 50}
-    },
-    crafting_machine_tint = {
-      primary = {r = 0.7, g = 0.7, b = 0.7, a = 1.000},
-      secondary = {r = 0.3, g = 0.3, b = 0.3, a = 1.000},
-      tertiary = {r = 0.0, g = 0.0, b = 0.0, a = 1.000},
-      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
-    },
-    order = "molecule-[methyl-tert-butyl-ether]"
-  },
-  {
-    type = "recipe",
-    name = "sp-propylene",  -- #ForRegEx# - recipe
-    category = "chemistry",
-    subgroup = "fluid-recipes",
-    enabled = false,
-    energy_required = 20,
-    ingredients = {
-      {type = "fluid", name = "sp-propane", amount = 100},
-      {type = "item", name = "sp-catalyst", amount = 1},
-    },
-    results = {
-      {type = "fluid", name = "sp-propylene", amount = 100},
-    },
-    crafting_machine_tint = {
-      primary = {r = 0.9, g = 0.9, b = 0.9, a = 1.000},
-      secondary = {r = 0.5, g = 0.5, b = 0.5, a = 1.000},
-      tertiary = {r = 0.0, g = 0.0, b = 0.0, a = 1.000},
-      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
-    },
-    order = "molecule-[propylene]"
-  },
-  {
-    type = "recipe",
-    name = "sp-sodium-hydroxide-from-liquid-sodium",  -- #ForRegEx# - recipe
-    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/sodium-hydroxide.png", 64,
-                                         "__Spaghetorio__/graphics/icons/liquid-sodium.png", 64),
-    category = "chemistry",
-    subgroup = "fluid-recipes",
-    enabled = false,
-    energy_required = 50,
-    ingredients = {
-      {type = "fluid", name = "sp-liquid-sodium", amount = 35},
-      {type = "fluid", name = "water", amount = 100},
-    },
-    results = {
-      {type = "fluid", name = "sp-sodium-hydroxide", amount = 20},
-    },
-    crafting_machine_tint = {
-      primary = {r = 0.6, g = 0.0, b = 0.6, a = 1.000},
-      secondary = {r = 0.3, g = 0.0, b = 0.3, a = 1.000},
-      tertiary = {r = 0.1, g = 0.0, b = 0.1, a = 1.000},
-      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-sodium-carbonate",  -- #ForRegEx# - recipe
-    category = "chemistry",
-    subgroup = "fluid-recipes",
-    enabled = false,
-    energy_required = 16,
-    ingredients = {
-      {type = "fluid", name = "sp-liquid-sodium", amount = 60},
-      {type = "fluid", name = "sp-oxygen", amount = 100},
-      {type = "item", name = "sp-graphie", amount = 3},
-    },
-    results = {
-      {type = "fluid", name = "sp-sodium-hydroxide", amount = 60},
-    },
-    crafting_machine_tint = {
-      primary = {r = 0.6, g = 0.4, b = 0.6, a = 1.000},
-      secondary = {r = 0.3, g = 0.2, b = 0.3, a = 1.000},
-      tertiary = {r = 0.1, g = 0.1, b = 0.1, a = 1.000},
-      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-benzene",  -- #ForRegEx# - recipe
-    category = "chemistry",
-    subgroup = "fluid-recipes",
-    enabled = false,
-    energy_required = 16,
-    hide_from_player_crafting = true,
-    ingredients = {
-      {type = "fluid", name = "petroleum-gas", amount = 100},
-      {type = "item", name = "sp-filter", amount = 1},
-      {type = "item", name = "coal", amount = 10},
-    },
-    results = {
-      {type = "fluid", name = "sp-benzene", amount = 50}
-    },
-    crafting_machine_tint = {
-      primary = {r = 0.6, g = 0.6, b = 0.6, a = 1.000},
-      secondary = {r = 0.3, g = 0.3, b = 0.3, a = 1.000},
-      tertiary = {r = 0.1, g = 0.1, b = 0.1, a = 1.000},
-      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-styrene",  -- #ForRegEx# - recipe
-    category = "chemistry",
-    subgroup = "fluid-recipes",
-    enabled = false,
-    energy_required = 12,
-    hide_from_player_crafting = true,
-    ingredients = {
-      {type = "fluid", name = "sp-benzene", amount = 30},
-      {type = "fluid", name = "water", amount = 5},
-      {type = "item", name = "iron-plate", amount = 1},
-    },
-    results = {
-      {type = "fluid", name = "sp-styrene", amount = 20}
-    },
-    crafting_machine_tint = {
-      primary = {r = 0.3, g = 0.3, b = 0.3, a = 1.000},
-      secondary = {r = 0.1, g = 0.1, b = 0.1, a = 1.000},
-      tertiary = {r = 0.1, g = 0.1, b = 0.1, a = 1.000},
-      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
-    }
-  },
+  
   {
     type = "recipe",
     name = "sp-control-unit",  -- #ForRegEx# - recipe
@@ -4547,19 +4000,585 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-rukite-bar",  -- #ForRegEx# - recipe
-    category = "intermediate-smelting",
+    name = "sp-gamma-radiation-source",  -- #ForRegEx# - recipe
+    category = "crafting",
+    enabled = false,
+    energy_required = 6,
+    ingredients = {
+      {type = "item", name = "sp-iridium", amount = 1},
+      {type = "item", name = "sp-rukite-bar", amount = 4},
+      {type = "item", name = "sp-plutonium-240", amount = 1},
+      {type = "item", name = "sp-niobium-tin", amount = 3}
+    },
+    results = {
+      {type = "item", name = "sp-gamma-radiation-source", amount = 1}
+    }
+  },
+  ------------------------------------------------------------------------------
+  -- MARK: crafting-with-fluid
+  ------------------------------------------------------------------------------
+  {
+    type = "recipe",
+    name = "sp-wood-from-urea",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/krastorio/icons/recipes/wood-plus.png", 64,
+                                         "__Spaghetorio__/graphics/icons/urea.png", 64),
+    category = "crafting-with-fluid",
+    subgroup = "processed-resource",
+    enabled = false,
+    energy_required = 75,
+    hide_from_player_crafting = true,
+    ingredients = {
+      {type = "item", name = "sp-urea", amount = 1},
+      {type = "item", name = "landfill", amount = 3},
+      {type = "fluid", name = "water", amount = 300}
+    },
+    results = {
+      {type = "item", name = "wood", amount = 2}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-resistor",  -- #ForRegEx# - recipe
+    category = "crafting-with-fluid",
+    enabled = false,
+    energy_required = 2,
+    ingredients = {
+      {type = "item", name = "carbon", amount = 1},
+      {type = "fluid", name = "sp-phosphoric-acid", amount = 12},
+      {type = "item", name = "copper-cable", amount = 2},
+      {type = "item", name = "sp-nickel-ingot", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-resistor", amount = 4}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-capacitor-from-aluminum",  -- #ForRegEx# - recipe
+    category = "crafting-with-fluid",
+    enabled = false,
+    energy_required = 3.2,
+    ingredients = {
+      {type = "item", name = "copper-cable", amount = 1},
+      {type = "fluid", name = "sp-phosphoric-acid", amount = 10},
+      {type = "item", name = "sp-aluminum-sheet", amount = 2},
+      {type = "item", name = "plastic-bar", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-capacitor", amount = 3}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-capacitor-from-niobium",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/capacitor.png", 64,
+                                         "__Spaghetorio__/graphics/icons/niobium-billet.png", 64),
+    category = "crafting-with-fluid",
+    enabled = false,
+    energy_required = 3.2,
+    hide_from_player_crafting = true,
+    ingredients = {
+      {type = "item", name = "copper-cable", amount = 1},
+      {type = "fluid", name = "sp-phosphoric-acid", amount = 8},
+      {type = "item", name = "sp-niobium-billet", amount = 2},
+      {type = "item", name = "plastic-bar", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-capacitor", amount = 6}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-ball-bearing",  -- #ForRegEx# - recipe
+    category = "crafting-with-fluid",
+    enabled = false,
+    energy_required = 6,
+    ingredients = {
+      {type = "item", name = "sp-stainless-steel", amount = 3},
+      {type = "item", name = "sp-bronze-rod", amount = 1},
+      {type = "item", name = "sp-chromium-plate", amount = 2},
+      {type = "fluid", name = "lubricant", amount = 5}
+    },
+    results = {
+      {type = "item", name = "sp-ball-bearing", amount = 4}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-infrared-filter",  -- #ForRegEx# - recipe
+    category = "crafting-with-fluid",
+    enabled = false,
+    energy_required = 1.6,
+    ingredients = {
+      {type = "fluid", name = "sp-aqueous-tantalum", amount = 10},
+      {type = "item", name = "sp-silica", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-infrared-filter", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-insulated-wire",  -- #ForRegEx# - recipe
+    category = "crafting-with-fluid",
+    enabled = false,
+    energy_required = 0.5,
+    ingredients = {
+      {type = "fluid", name = "sp-vinyl-chloride", amount = 4},
+      {type = "item", name = "copper-cable", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-insulated-wire", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-empty-circuit-board",  -- #ForRegEx# - recipe
+    category = "crafting-with-fluid",
     enabled = false,
     energy_required = 3.6,
     ingredients = {
-      {type = "item", name = "sp-tungsten-powder", amount = 1},
-      {type = "item", name = "carbon", amount = 1},
-      {type = "item", name = "sp-rukite-powder", amount = 4}
+      {type = "fluid", name = "sp-epoxy", amount = 10},
+      {type = "item", name = "copper-cable", amount = 2},
+      {type = "item", name = "sp-glass-fiber", amount = 3},
+      {type = "item", name = "sp-silver-solder", amount = 1}
     },
     results = {
-      {type = "item", name = "sp-rukite-bar", amount = 1}
+      {type = "item", name = "sp-empty-circuit-board", amount = 1}
     }
   },
+  {
+    type = "recipe",
+    name = "sp-fabric",  -- #ForRegEx# - recipe
+    category = "crafting-with-fluid",
+    enabled = false,
+    energy_required = 2.4,
+    ingredients = {
+      {type = "item", name = "plastic-bar", amount = 2},
+      {type = "fluid", name = "sp-sodium-hydroxide", amount = 10}
+    },
+    results = {
+      {type = "item", name = "sp-fabric", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-cement",  -- #ForRegEx# - recipe
+    category = "crafting-with-fluid",
+    enabled = false,
+    energy_required = 2,
+    ingredients = {
+      {type = "item", name = "sp-calcium-carbonate", amount = 5},
+      {type = "item", name = "sp-alumina", amount = 1},
+      {type = "item", name = "iron-ore", amount = 2},
+      {type = "fluid", name = "water", amount = 100}
+    },
+    results = {
+      {type = "item", name = "sp-cement", amount = 3}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-heavy-gearbox",  -- #ForRegEx# - recipe
+    category = "crafting-with-fluid",
+    enabled = false,
+    energy_required = 4,
+    ingredients = {
+      {type = "item", name = "sp-machined-parts", amount = 8},
+      {type = "fluid", name = "lubricant", amount = 20},
+      {type = "item", name = "sp-bolts", amount = 4},
+      {type = "item", name = "sp-heavy-ball-bearing", amount = 3},
+      {type = "item", name = "sp-stainless-steel", amount = 2},
+      {type = "item", name = "sp-stainless-steel-gear-wheel", amount = 10}
+    },
+    results = {
+      {type = "item", name = "sp-heavy-gearbox", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-differential",  -- #ForRegEx# - recipe
+    category = "crafting-with-fluid",
+    enabled = false,
+    energy_required = 6,
+    ingredients = {
+      {type = "item", name = "sp-gearbox", amount = 2},
+      {type = "fluid", name = "lubricant", amount = 50},
+      {type = "item", name = "sp-machined-parts", amount = 3},
+      {type = "item", name = "sp-bolts", amount = 4},
+      {type = "item", name = "sp-ball-bearing", amount = 3},
+      {type = "item", name = "sp-stainless-steel-gear-wheel", amount = 12}
+    },
+    results = {
+      {type = "item", name = "sp-differential", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-cryostat",  -- #ForRegEx# - recipe
+    category = "crafting-with-fluid",
+    enabled = false,
+    energy_required = 5,
+    ingredients = {
+      {type = "item", name = "sp-machined-parts", amount = 5},
+      {type = "item", name = "sp-titanium-frame", amount = 1},
+      {type = "item", name = "sp-ceramics", amount = 3},
+      {type = "fluid", name = "sp-liquid-nitrogen", amount = 40}
+    },
+    results = {
+      {type = "item", name = "sp-cryostat", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-advanced-processing-unit",  -- #ForRegEx# - recipe
+    category = "crafting-with-fluid",
+    enabled = false,
+    energy_required = 8,
+    ingredients = {
+      {type = "item", name = "sp-circuit-board", amount = 1},
+      {type = "item", name = "sp-anodized-aluminum", amount = 2},
+      {type = "item", name = "sp-memory-chip", amount = 4},
+      {type = "item", name = "sp-processor", amount = 2},
+      {type = "item", name = "sp-integrated-circuit", amount = 5},
+      {type = "item", name = "sp-heatsink", amount = 1},
+      {type = "fluid", name = "sp-epoxy", amount = 5}
+    },
+    results = {
+      {type = "item", name = "sp-advanced-processing-unit", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-heavy-ball-bearing",  -- #ForRegEx# - recipe
+    category = "crafting-with-fluid",
+    enabled = false,
+    energy_required = 5,
+    ingredients = {
+      {type = "item", name = "sp-niobium-steel", amount = 5},
+      {type = "item", name = "sp-aluminum-brass", amount = 3},
+      {type = "item", name = "sp-titanium-nitride", amount = 1},
+      {type = "fluid", name = "lubricant", amount = 20}
+    },
+    results = {
+      {type = "item", name = "sp-heavy-ball-bearing", amount = 4}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-actuator",  -- #ForRegEx# - recipe
+    category = "crafting-with-fluid",
+    enabled = false,
+    energy_required = 5,
+    ingredients = {
+      {type = "item", name = "electric-engine-unit", amount = 1},
+      {type = "item", name = "sp-ball-bearing", amount = 2},
+      {type = "item", name = "sp-bolts", amount = 4},
+      {type = "item", name = "sp-stainless-steel", amount = 3},
+      {type = "item", name = "sp-stainless-steel-gear-wheel", amount = 6},
+      {type = "item", name = "advanced-circuit", amount = 2},
+      {type = "fluid", name = "lubricant", amount = 20}
+    },
+    results = {
+      {type = "item", name = "sp-actuator", amount = 1}
+    }
+  },
+  -- MARK: advanced-crafting
+  {
+    type = "recipe",
+    name = "sp-turbine-blade-from-stainless-steel",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/icons/turbine-blade.png",
+    icon_size = 64,
+    mip_maps = 4,
+    category = "advanced-crafting",
+    enabled = false,
+    energy_required = 6,
+    ingredients = {
+      {type = "item", name = "sp-stainless-steel", amount = 5},
+      {type = "item", name = "sp-chromium-plate", amount = 1},
+      {type = "item", name = "sp-zirconium-rod", amount = 2},
+      {type = "item", name = "sp-titanium-plate", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-turbine-blade", amount = 3}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-turbine-blade-from-TiAlSn",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/turbine-blade.png", 64,
+                                         "__Spaghetorio__/graphics/icons/TiAlSn.png", 64),
+    category = "advanced-crafting",
+    enabled = false,
+    energy_required = 8,
+    hide_from_player_crafting = true,
+    ingredients = {
+      {type = "item", name = "sp-TiAlSn", amount = 6},
+      {type = "item", name = "sp-cobalt-billet", amount = 1},
+      {type = "item", name = "sp-tantalum-billet", amount = 2}
+    },
+    results = {
+      {type = "item", name = "sp-turbine-blade", amount = 3}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-turbine-rotor",  -- #ForRegEx# - recipe
+    category = "advanced-crafting",
+    enabled = false,
+    energy_required = 30,
+    ingredients = {
+      {type = "item", name = "sp-TiAlSn", amount = 4},
+      {type = "item", name = "sp-titanium-carbide", amount = 2},
+      {type = "item", name = "sp-titanium-nitride", amount = 1},
+      {type = "item", name = "sp-tungsten-slab", amount = 5},
+      {type = "item", name = "sp-ceramics", amount = 5},
+      {type = "item", name = "sp-turbine-blade", amount = 24}
+    },
+    results = {
+      {type = "item", name = "sp-turbine-rotor", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-turbine-stator",  -- #ForRegEx# - recipe
+    category = "advanced-crafting",
+    enabled = false,
+    energy_required = 26,
+    ingredients = {
+      {type = "item", name = "sp-TiAlSn", amount = 4},
+      {type = "item", name = "sp-titanium-nitride", amount = 2},
+      {type = "item", name = "sp-titanium-frame", amount = 20},
+      {type = "item", name = "sp-machined-parts", amount = 6},
+      {type = "item", name = "sp-flange", amount = 5},
+      {type = "item", name = "sp-turbine-blade", amount = 24}
+    },
+    results = {
+      {type = "item", name = "sp-turbine-stator", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-turbopump",  -- #ForRegEx# - recipe
+    category = "advanced-crafting",
+    enabled = false,
+    energy_required = 8,
+    ingredients = {
+      {type = "item", name = "sp-turbine-blade", amount = 10},
+      {type = "item", name = "sp-ceramics", amount = 2},
+      {type = "item", name = "sp-stainless-steel", amount = 3},
+      {type = "item", name = "tungsten-carbide", amount = 3},
+      {type = "item", name = "sp-bolts", amount = 8}
+    },
+    results = {
+      {type = "item", name = "sp-turbopump", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-nozzle",  -- #ForRegEx# - recipe
+    category = "advanced-crafting",
+    enabled = false,
+    energy_required = 12,
+    ingredients = {
+      {type = "item", name = "copper-plate", amount = 2},
+      {type = "item", name = "sp-TiAlSn", amount = 2},
+      {type = "item", name = "sp-tungsten-slab", amount = 6},
+      {type = "item", name = "tungsten-carbide", amount = 2},
+      {type = "item", name = "sp-bolts", amount = 4}
+    },
+    results = {
+      {type = "item", name = "sp-nozzle", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-fuel-injector",  -- #ForRegEx# - recipe
+    category = "advanced-crafting",
+    enabled = false,
+    energy_required = 3,
+    ingredients = {
+      {type = "item", name = "tungsten-carbide", amount = 1},
+      {type = "item", name = "sp-inconel", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-fuel-injector", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-cybernetics",  -- #ForRegEx# - recipe
+    category = "advanced-crafting",
+    enabled = false,
+    energy_required = 8,
+    ingredients = {
+      {type = "item", name = "sp-titanium-frame", amount = 2},
+      {type = "item", name = "sp-machined-parts", amount = 6},
+      {type = "item", name = "sp-actuator", amount = 2},
+      {type = "item", name = "sp-advanced-processing-unit", amount = 1},
+      {type = "item", name = "sp-micro-machine", amount = 10},
+      {type = "item", name = "sp-light-emitting-diode", amount = 10}
+    },
+    results = {
+      {type = "item", name = "sp-cybernetics", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-combustion-chamber",  -- #ForRegEx# - recipe
+    category = "advanced-crafting",
+    enabled = false,
+    energy_required = 24,
+    ingredients = {
+      {type = "item", name = "sp-fuel-injector", amount = 20},
+      {type = "item", name = "sp-tungsten-slab", amount = 2},
+      {type = "item", name = "sp-inconel", amount = 3},
+      {type = "item", name = "sp-bolts", amount = 4},
+      {type = "item", name = "sp-spark-plug", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-combustion-chamber", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-rocket-engine",  -- #ForRegEx# - recipe
+    category = "advanced-crafting",
+    enabled = false,
+    energy_required = 4,
+    ingredients = {
+      {type = "item", name = "sp-turbopump", amount = 2},
+      {type = "item", name = "sp-nozzle", amount = 1},
+      {type = "item", name = "sp-combustion-chamber", amount = 1},
+      {type = "item", name = "sp-bolts", amount = 6}
+    },
+    results = {
+      {type = "item", name = "sp-rocket-engine", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-solid-rocket-motor",  -- #ForRegEx# - recipe
+    category = "advanced-crafting",
+    enabled = false,
+    energy_required = 4,
+    ingredients = {
+      {type = "item", name = "sp-titanium-frame", amount = 5},
+      {type = "item", name = "sp-machined-parts", amount = 8},
+      {type = "item", name = "sp-phosphorus", amount = 1},
+      {type = "item", name = "sp-tungsten-slab", amount = 2},
+      {type = "item", name = "sp-insulation-sheet", amount = 2},
+      {type = "item", name = "solid-fuel", amount = 10}
+    },
+    results = {
+      {type = "item", name = "sp-solid-rocket-motor", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-control-rod",  -- #ForRegEx# - recipe
+    category = "advanced-crafting",
+    enabled = false,
+    energy_required = 4.8,
+    ingredients = {
+      {type = "item", name = "sp-TiAlSn", amount = 3},
+      {type = "item", name = "sp-zirconium-rod", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-control-rod", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-empty-fuel-rod",  -- #ForRegEx# - recipe
+    category = "advanced-crafting",
+    enabled = false,
+    energy_required = 20,
+    ingredients = {
+      {type = "item", name = "carbon", amount = 2},
+      {type = "item", name = "sp-tungsten-slab", amount = 1},
+      {type = "item", name = "sp-zirconium-rod", amount = 2},
+      {type = "item", name = "sp-cerium", amount = 1},
+      {type = "item", name = "sp-TiNb", amount = 8}
+    },
+    results = {
+      {type = "item", name = "sp-empty-fuel-rod", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-plutonium-239-fuel-rod",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/icons/plutonium-fuel-rod.png",
+    icon_size = 64,
+    mip_maps = 4,
+    category = "advanced-crafting",
+    enabled = false,
+    energy_required = 5.2,
+    ingredients = {
+      {type = "item", name = "sp-plutonium-239", amount = 4},
+      {type = "item", name = "sp-empty-fuel-rod", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-plutonium-fuel-rod", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-plutonium-240-fuel-rod",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/plutonium-fuel-rod.png", 64,
+                                         "__Spaghetorio__/graphics/icons/plutonium-240-1.png", 64),
+    category = "advanced-crafting",
+    enabled = false,
+    energy_required = 6,
+    hide_from_player_crafting = true,
+    ingredients = {
+      {type = "item", name = "sp-plutonium-239", amount = 1},
+      {type = "item", name = "sp-plutonium-240", amount = 1},
+      {type = "item", name = "sp-empty-fuel-rod", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-plutonium-fuel-rod", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-reactor-core",  -- #ForRegEx# - recipe
+    category = "advanced-crafting",
+    enabled = false,
+    energy_required = 30,
+    ingredients = {
+      {type = "item", name = "sp-control-rod", amount = 50},
+      {type = "item", name = "sp-pressure-tube", amount = 10},
+      {type = "item", name = "sp-plate-heat-exchanger", amount = 4},
+      {type = "item", name = "sp-valve", amount = 16},
+      {type = "item", name = "sp-flange", amount = 6},
+      {type = "item", name = "sp-high-pressure-tank", amount = 3},
+      {type = "item", name = "sp-stainless-steel", amount = 20},
+      {type = "item", name = "sp-niobium-tin", amount = 5},
+    },
+    results = {
+      {type = "item", name = "sp-reactor-core", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-quantum-data-plane",  -- #ForRegEx# - recipe
+    category = "advanced-crafting",
+    enabled = false,
+    energy_required = 30,
+    ingredients = {
+      {type = "item", name = "sp-cubit", amount = 1000},
+      {type = "item", name = "sp-vacuum-tube", amount = 16},
+      {type = "item", name = "sp-glass-fiber", amount = 20},
+      {type = "item", name = "sp-aluminum-frame", amount = 1},
+      {type = "item", name = "sp-machined-parts", amount = 6},
+      {type = "item", name = "sp-gold", amount = 3}
+    },
+    results = {
+      {type = "item", name = "sp-quantum-data-plane", amount = 1}
+    }
+  },
+  -- MARK: Sort Category
   {
     type = "recipe",
     name = "sp-chronomatter",  -- #ForRegEx# - recipe
@@ -4583,22 +4602,7 @@ data:extend({
     },
     order = "z[alien]-[chronomatter]"
   },
-  {
-    type = "recipe",
-    name = "sp-gamma-radiation-source",  -- #ForRegEx# - recipe
-    category = "crafting",
-    enabled = false,
-    energy_required = 6,
-    ingredients = {
-      {type = "item", name = "sp-iridium", amount = 1},
-      {type = "item", name = "sp-rukite-bar", amount = 4},
-      {type = "item", name = "sp-plutonium-240", amount = 1},
-      {type = "item", name = "sp-niobium-tin", amount = 3}
-    },
-    results = {
-      {type = "item", name = "sp-gamma-radiation-source", amount = 1}
-    }
-  },
+
   {
     type = "recipe",
     name = "sp-chronalyte",  -- #ForRegEx# - recipe
