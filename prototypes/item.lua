@@ -4557,7 +4557,7 @@ data:extend({
   },
   ------------------------------------------------------------------------------
   -- MARK: Group science --
-  -- MARK: basic-science
+  -- MARK: science-item
   ------------------------------------------------------------------------------
   {
     type = "item",
@@ -4565,7 +4565,7 @@ data:extend({
     icon =  "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/blank-tech-card/blank-tech-card-1.png",
     icon_size = 64,
     icon_mipmaps = 4,
-    subgroup = "science-pack",
+    subgroup = "science-item",
     order = "a00[blank-tech-card]",
     stack_size = 200,
   },
@@ -4575,7 +4575,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/krastorio/icons/cards/biters-research-data.png",
     icon_size = 64,
     icon_mipmaps = 4,
-    subgroup = "science-pack",
+    subgroup = "science-item",
     order = "a01[biters-research-data]",
     stack_size = 200,
   },
@@ -4585,7 +4585,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/krastorio/icons/cards/matter-research-data.png",
     icon_size = 64,
     icon_mipmaps = 4,
-    subgroup = "science-pack",
+    subgroup = "science-item",
     order = "a02[matter-research-data]",
     stack_size = 200,
   },
@@ -4595,10 +4595,30 @@ data:extend({
     icon = "__Spaghetorio__/graphics/krastorio/icons/cards/space-research-data.png",
     icon_size = 64,
     icon_mipmaps = 4,
-    subgroup = "science-pack",
+    subgroup = "science-item",
     order = "a03[space-research-data]",
     stack_size = 1000,
   },
+  ------------------------------------------------------------------------------
+  -- MARK: fundamental-science
+  ------------------------------------------------------------------------------
+  {
+    type = "tool",
+    name = "basic-tech-card",
+    localised_description = { "item-description.science-pack" },
+    icon = "__Spaghetorio__/graphics/krastorio/icons/cards/basic-tech-card.png",
+    stack_size = 200,
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "fundamental-science",
+    order = "b01[basic-tech-card]",
+    durability = 1,
+    durability_description_key = "description.science-pack-remaining-amount-key",
+    durability_description_value = "description.science-pack-remaining-amount-value",
+  },
+  ------------------------------------------------------------------------------
+  -- MARK: basic-science
+  ------------------------------------------------------------------------------
   {
     type = "tool",
     name = "sp-electronic-science-pack-1",  -- #ForRegEx# - tool
@@ -4955,6 +4975,38 @@ data:extend({
     durability_description_key = "description.science-pack-remaining-amount-key",
     durability_description_value = "description.science-pack-remaining-amount-value"
   },
+  {
+    type = "tool",
+    name = "matter-tech-card",
+    localised_description = { "item-description.science-pack" },
+    icon = "__Spaghetorio__/graphics/krastorio/icons/cards/matter-tech-card.png",
+    stack_size = 200,
+    icon_size = 64,
+    icon_mipmaps = 4,
+    pictures = {
+      layers = {
+        {
+          size = 64,
+          filename = "__Spaghetorio__/graphics/krastorio/icons/cards/matter-tech-card.png",
+          scale = 0.25,
+          mipmap_count = 4,
+        },
+        {
+          draw_as_light = true,
+          flags = { "light" },
+          size = 64,
+          filename = "__Spaghetorio__/graphics/krastorio/icons/cards/matter-tech-card-light.png",
+          scale = 0.25,
+          mipmap_count = 4,
+        },
+      },
+    },
+    subgroup = "advanced-science",
+    order = "b09[matter-tech-card]",
+    durability = 1,
+    durability_description_key = "description.science-pack-remaining-amount-key",
+    durability_description_value = "description.science-pack-remaining-amount-value",
+  },
   ------------------------------------------------------------------------------
   -- MARK: futuristic-science
   ------------------------------------------------------------------------------
@@ -4971,6 +5023,70 @@ data:extend({
     durability = 1,
     durability_description_key = "description.science-pack-remaining-amount-key",
     durability_description_value = "description.science-pack-remaining-amount-value"
+  },
+  {
+    type = "tool",
+    name = "advanced-tech-card",
+    localised_description = { "item-description.science-pack" },
+    icon = "__Spaghetorio__/graphics/krastorio/icons/cards/advanced-tech-card.png",
+    stack_size = 200,
+    icon_size = 64,
+    icon_mipmaps = 4,
+    pictures = {
+      layers = {
+        {
+          size = 64,
+          filename = "__Spaghetorio__/graphics/krastorio/icons/cards/advanced-tech-card.png",
+          scale = 0.25,
+          mipmap_count = 4,
+        },
+        {
+          draw_as_light = true,
+          flags = { "light" },
+          size = 64,
+          filename = "__Spaghetorio__/graphics/krastorio/icons/cards/advanced-tech-card-light.png",
+          scale = 0.25,
+          mipmap_count = 4,
+        },
+      },
+    },
+    subgroup = "futuristic-science",
+    order = "b10[advanced-tech-card]",
+    durability = 1,
+    durability_description_key = "description.science-pack-remaining-amount-key",
+    durability_description_value = "description.science-pack-remaining-amount-value",
+  },
+  {
+    type = "tool",
+    name = "singularity-tech-card",
+    localised_description = { "item-description.science-pack" },
+    icon = "__Spaghetorio__/graphics/krastorio/icons/cards/singularity-tech-card.png",
+    stack_size = 200,
+    icon_size = 64,
+    icon_mipmaps = 4,
+    pictures = {
+      layers = {
+        {
+          size = 64,
+          filename = "__Spaghetorio__/graphics/krastorio/icons/cards/singularity-tech-card.png",
+          scale = 0.25,
+          mipmap_count = 4,
+        },
+        {
+          draw_as_light = true,
+          flags = { "light" },
+          size = 64,
+          filename = "__Spaghetorio__/graphics/krastorio/icons/cards/singularity-tech-card-light.png",
+          scale = 0.25,
+          mipmap_count = 4,
+        },
+      },
+    },
+    subgroup = "futuristic-science",
+    order = "b11[singularity-tech-card]",
+    durability = 1,
+    durability_description_key = "description.science-pack-remaining-amount-key",
+    durability_description_value = "description.science-pack-remaining-amount-value",
   },
   ------------------------------------------------------------------------------
   -- MARK: sp-acrosphere

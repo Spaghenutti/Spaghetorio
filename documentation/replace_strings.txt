@@ -72,6 +72,9 @@ kr_explosions_sprites_path .. "
 "sp-crushing-
 
 
+kr_cards_icons_path .. "
+"__Spaghetorio__/graphics/krastorio/icons/cards/
+
 --------------------------------------------------------------------------------
 
 

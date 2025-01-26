@@ -83,8 +83,7 @@ require("prototypes.item-groups")
 -- require("prototypes.noise-layer")
 require("prototypes.recipe")
 -- require("prototypes.rocket-silo")
--- require("prototypes.technology")
--- require("prototypes.technology-changes")
+require("prototypes.technology")
 
 -- MARK: Compatibility
 -- EverythingOnNauvis
@@ -97,7 +96,7 @@ require("compatibility.factorio-base.inventory-settings")
 require("compatibility.factorio-base.order")
 require("compatibility.factorio-base.recipe")
 require("compatibility.factorio-base.resource")
--- require("compatibility.factorio-base.technology")
+require("compatibility.factorio-base.technology")
 
 -- space-age
 require("compatibility.space-age.order")
