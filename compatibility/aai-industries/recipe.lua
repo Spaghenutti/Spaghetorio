@@ -48,16 +48,16 @@ data:extend({
 -- MARK: Recipe changes
 util.recipe.change_recipe_ingredients("burner-turbine",
   {
-    {"iron-beam", 8},
+    {"sp-iron-beam", 8},
     {"stone-brick", 24},
     {"sp-gearbox", 2},
-    {"motor", 2}
+    {"engine-unit", 2}
   },
   {
-    {"iron-beam", 16},
+    {"sp-iron-beam", 16},
     {"stone-brick", 36},
     {"sp-gearbox", 4},
-    {"motor", 4}
+    {"engine-unit", 4}
   },
   8,
   16)
@@ -68,14 +68,14 @@ util.recipe.change_recipe_ingredients("fuel-processor",
     {"sp-wooden-board", 20},
     {"stone-brick", 24},
     {"sp-bolts", 20},
-    {"motor", 2}
+    {"engine-unit", 2}
   },
   {
     {"iron-plate", 16},
     {"sp-wooden-board", 30},
     {"stone-brick", 36},
     {"sp-bolts", 24},
-    {"motor", 4}
+    {"engine-unit", 4}
   },
   12,
   24)
@@ -86,14 +86,14 @@ util.recipe.change_recipe_ingredients("burner-assembling-machine",
     {"iron-plate", 20},
     {"sp-wooden-board", 12},
     {"sp-bolts", 24},
-    {"motor", 4}
+    {"engine-unit", 4}
   },
   {
     {"stone-brick", 40},
     {"iron-plate", 40},
     {"sp-wooden-board", 16},
     {"sp-bolts", 48},
-    {"motor", 8}
+    {"engine-unit", 8}
   },
   8,
   16)
@@ -154,7 +154,7 @@ util.recipe.change_recipe_ingredients("industrial-furnace",
     {"sp-heat-resistant-tile", 30},
     {"sp-invar", 10},
     {"advanced-circuit", 12},
-    {"sp-tungsten-carbide", 2},
+    {"tungsten-carbide", 2},
     {"sp-electrode", 4},
     {"sp-heating-filament", 20},
     {"sp-electromagnet", 30},
@@ -165,7 +165,7 @@ util.recipe.change_recipe_ingredients("industrial-furnace",
     {"sp-heat-resistant-tile", 45},
     {"sp-invar", 16},
     {"advanced-circuit", 20},
-    {"sp-tungsten-carbide", 10},
+    {"tungsten-carbide", 10},
     {"sp-electrode", 6},
     {"sp-heating-filament", 30},
     {"sp-electromagnet", 40},

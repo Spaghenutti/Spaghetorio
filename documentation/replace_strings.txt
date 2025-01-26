@@ -75,6 +75,10 @@ kr_explosions_sprites_path .. "
 kr_cards_icons_path .. "
 "__Spaghetorio__/graphics/krastorio/icons/cards/
 
+
+kr_technologies_icons_path .. "
+"__Spaghetorio__/graphics/krastorio/technologies/
+
 --------------------------------------------------------------------------------
 
 

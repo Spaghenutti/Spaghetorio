@@ -1,3 +1,4 @@
+
 local util = require("data-util")
 
 -- Change subgroups
@@ -6,6 +7,13 @@ data.raw.recipe["solid-fuel-from-light-oil"].hide_from_player_crafting = true
 data.raw.recipe["solid-fuel-from-heavy-oil"].subgroup = "fuel-processing"
 data.raw.recipe["solid-fuel-from-heavy-oil"].hide_from_player_crafting = true
 data.raw.recipe["solid-fuel-from-petroleum-gas"].subgroup = "fuel-processing"
+
+-- Lock items for game start
+util.recipe.disable_recipe("iron-stick")
+util.recipe.disable_recipe("iron-chest")
+util.recipe.disable_recipe("iron-gear-wheel")
+util.recipe.disable_recipe("engine-unit")
+util.recipe.disable_recipe("burner-inserter")
 
 --------------------------------------------------------------------------------
 -- Recipe changes for base factorio items

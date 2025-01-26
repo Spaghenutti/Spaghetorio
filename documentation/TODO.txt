@@ -21,6 +21,10 @@ Factorio Space age
 Krastorio cleanup
   + remove not needed explosions
 
+Technologies which unlock items allready unlocked by base factorio
+  - "sp-cooling" (see how this can be somewhat close in tree with "fluoroketone-cold" recipe)
+  - "sp-advanced-ceramics"
+
 
 hurricane406 graphics
   - Greenhouse -> Already exists from krastorio

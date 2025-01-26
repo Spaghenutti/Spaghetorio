@@ -1,7 +1,5 @@
-
-
+-- MARK: Science pack
 data.raw.tool["automation-science-pack"].icon = "__Spaghetorio__/graphics/krastorio/icons/cards/automation-tech-card.png"
--- data.raw.tool["automation-science-pack"].order = "b02[automation-tech-card]"
 data.raw.tool["automation-science-pack"].pictures = {
   layers = {
     {

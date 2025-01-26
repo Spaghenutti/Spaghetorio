@@ -33,11 +33,11 @@ def generate_locale_value(key: str, object_type: str=None) -> Tuple[str, str]:
     if key.startswith("sp-"):
         value = key[3:].replace("-", " ")
         value = value[0].capitalize() + value[1:]
-    elif key.startswith("kr-vc-sp-"):
+    elif key.startswith("sp-crushing-"):
         value = key[9:].replace("-", " ")
         value = value[0].capitalize() + value[1:]
     else:
-        raise KeyError(f"Key {key} does not start with \"sp-\" or \"kr-vc-sp-\"")
+        raise KeyError(f"Key {key} does not start with \"sp-\" or \"sp-crushing-\"")
     
     return (key, value)
 
