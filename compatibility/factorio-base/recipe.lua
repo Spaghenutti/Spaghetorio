@@ -1519,6 +1519,17 @@ util.recipe.change_recipe_ingredients("artillery-turret",
     {type = "fluid", name = "lubricant", amount = 100}
   },
   40)
+-- MARK: Science packs
+util.recipe.change_recipe_ingredients("space-science-pack",
+  {
+    {type = "item", name = "sp-blank-tech-card", amount = 5},
+    {type = "item", name = "sp-space-research-data", amount = 5},
+    {type = "item", name = "sp-glass-fiber", amount = 10},
+    {type = "item", name = "sp-mirror", amount = 5},
+    {type = "item", name = "sp-lens", amount = 5},
+    {type = "item", name = "sp-laser", amount = 5},
+  },
+  24)
 
 -- Remove barrel recipes
 util.recipe.remove_barrel_recipe("sp-liquid-nitrogen")

@@ -4606,7 +4606,7 @@ data:extend({
     type = "tool",
     name = "basic-tech-card",
     localised_description = { "item-description.science-pack" },
-    icon = "__Spaghetorio__/graphics/krastorio/icons/cards/basic-tech-card.png",
+    icon = "__base__/graphics/icons/automation-science-pack.png",
     stack_size = 200,
     icon_size = 64,
     icon_mipmaps = 4,
@@ -4764,20 +4764,6 @@ data:extend({
   },
   {
     type = "tool",
-    name = "sp-astronomical-science-pack-2",  -- #ForRegEx# - tool
-    localised_description = {"item-description.science-pack"},
-    icon = "__Spaghetorio__/graphics/krastorio/icons/cards/matter-tech-card.png",
-    icon_size = 64,
-    icon_mipmaps = 4,
-    subgroup = "intermediate-science",
-    order = "h[astronomical-science-pack]",
-    stack_size = 200,
-    durability = 1,
-    durability_description_key = "description.science-pack-remaining-amount-key",
-    durability_description_value = "description.science-pack-remaining-amount-value"
-  },
-  {
-    type = "tool",
     name = "sp-computer-science-pack-2",  -- #ForRegEx# - tool
     localised_description = {"item-description.science-pack"},
     icon = "__Spaghetorio__/graphics/icons/computer-science-pack-2.png",
@@ -4907,7 +4893,7 @@ data:extend({
   },
   {
     type = "tool",
-    name = "sp-astronomical-science-pack-3",  -- #ForRegEx# - tool
+    name = "sp-space-science-pack-3",  -- #ForRegEx# - tool
     localised_description = {"item-description.science-pack"},
     icon = "__Spaghetorio__/graphics/icons/astronomical-science-pack-3.png",
     icon_size = 64,
@@ -4975,11 +4961,28 @@ data:extend({
     durability_description_key = "description.science-pack-remaining-amount-key",
     durability_description_value = "description.science-pack-remaining-amount-value"
   },
+  ------------------------------------------------------------------------------
+  -- MARK: futuristic-science
+  ------------------------------------------------------------------------------
   {
     type = "tool",
-    name = "matter-tech-card",
+    name = "matter-tech-card",  -- #ForRegEx# - tool
+    localised_description = {"item-description.science-pack"},
+    icon = "__Spaghetorio__/graphics/icons/matter-science-pack-3.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "futuristic-science",
+    order = "a[matter-tech-card]",
+    stack_size = 200,
+    durability = 1,
+    durability_description_key = "description.science-pack-remaining-amount-key",
+    durability_description_value = "description.science-pack-remaining-amount-value"
+  },
+  {
+    type = "tool",
+    name = "optimization-tech-card",
     localised_description = { "item-description.science-pack" },
-    icon = "__Spaghetorio__/graphics/krastorio/icons/cards/matter-tech-card.png",
+    icon = "__Spaghetorio__/graphics/krastorio/icons/cards/optimization-tech-card.png",
     stack_size = 200,
     icon_size = 64,
     icon_mipmaps = 4,
@@ -4987,7 +4990,7 @@ data:extend({
       layers = {
         {
           size = 64,
-          filename = "__Spaghetorio__/graphics/krastorio/icons/cards/matter-tech-card.png",
+          filename = "__Spaghetorio__/graphics/krastorio/icons/cards/optimization-tech-card.png",
           scale = 0.25,
           mipmap_count = 4,
         },
@@ -5001,28 +5004,11 @@ data:extend({
         },
       },
     },
-    subgroup = "advanced-science",
-    order = "b09[matter-tech-card]",
+    subgroup = "futuristic-science",
+    order = "b[matter-tech-card]",
     durability = 1,
     durability_description_key = "description.science-pack-remaining-amount-key",
     durability_description_value = "description.science-pack-remaining-amount-value",
-  },
-  ------------------------------------------------------------------------------
-  -- MARK: futuristic-science
-  ------------------------------------------------------------------------------
-  {
-    type = "tool",
-    name = "sp-uniformity-science-pack",  -- #ForRegEx# - tool
-    localised_description = {"item-description.science-pack"},
-    icon = "__Spaghetorio__/graphics/icons/uniformity-science-pack.png",
-    icon_size = 64,
-    icon_mipmaps = 4,
-    subgroup = "futuristic-science",
-    order = "[uniformity-science-pack]",
-    stack_size = 200,
-    durability = 1,
-    durability_description_key = "description.science-pack-remaining-amount-key",
-    durability_description_value = "description.science-pack-remaining-amount-value"
   },
   {
     type = "tool",
@@ -5051,7 +5037,7 @@ data:extend({
       },
     },
     subgroup = "futuristic-science",
-    order = "b10[advanced-tech-card]",
+    order = "c[advanced-tech-card]",
     durability = 1,
     durability_description_key = "description.science-pack-remaining-amount-key",
     durability_description_value = "description.science-pack-remaining-amount-value",
@@ -5083,10 +5069,24 @@ data:extend({
       },
     },
     subgroup = "futuristic-science",
-    order = "b11[singularity-tech-card]",
+    order = "d[singularity-tech-card]",
     durability = 1,
     durability_description_key = "description.science-pack-remaining-amount-key",
     durability_description_value = "description.science-pack-remaining-amount-value",
+  },
+  {
+    type = "tool",
+    name = "sp-uniformity-science-pack",  -- #ForRegEx# - tool
+    localised_description = {"item-description.science-pack"},
+    icon = "__Spaghetorio__/graphics/icons/uniformity-science-pack.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "futuristic-science",
+    order = "e[uniformity-science-pack]",
+    stack_size = 200,
+    durability = 1,
+    durability_description_key = "description.science-pack-remaining-amount-key",
+    durability_description_value = "description.science-pack-remaining-amount-value"
   },
   ------------------------------------------------------------------------------
   -- MARK: sp-acrosphere

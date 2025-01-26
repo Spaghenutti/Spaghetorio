@@ -4267,25 +4267,6 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-astronomical-science-pack-2",  -- #ForRegEx# - recipe
-    category = "crafting",
-    enabled = false,
-    energy_required = 24,
-    ingredients =
-    {
-      {type = "item", name = "sp-blank-tech-card", amount = 5},
-      {type = "item", name = "sp-space-research-data", amount = 5},
-      {type = "item", name = "sp-glass-fiber", amount = 10},
-      {type = "item", name = "sp-mirror", amount = 5},
-      {type = "item", name = "sp-lens", amount = 5},
-      {type = "item", name = "sp-laser", amount = 5},
-    },
-    results = {
-      {type = "item", name = "sp-astronomical-science-pack-2", amount = 5}
-    }
-  },
-  {
-    type = "recipe",
     name = "sp-computer-science-pack-2",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
@@ -4433,13 +4414,13 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-astronomical-science-pack-3",  -- #ForRegEx# - recipe
+    name = "sp-space-science-pack-3",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     energy_required = 144,
     ingredients =
     {
-      {type = "item", name = "sp-astronomical-science-pack-2", amount = 120},
+      {type = "item", name = "space-science-pack", amount = 120},
       -- {type = "item", name = "satellite", amount = 5}, removed by space age
       {type = "item", name = "sp-blunagium-explorer", amount = 1},
       {type = "item", name = "sp-grobgnum-explorer", amount = 1},
@@ -4447,7 +4428,7 @@ data:extend({
       {type = "item", name = "sp-yemnuth-explorer", amount = 1}
     },
     results = {
-      {type = "item", name = "sp-astronomical-science-pack-3", amount = 30}
+      {type = "item", name = "sp-space-science-pack-3", amount = 30}
     }
   },
   {

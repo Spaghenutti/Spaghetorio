@@ -822,7 +822,7 @@ data.raw.technology["fusion-reactor-equipment"].unit.ingredients = {
   {type = "item", name = "sp-chemical-science-pack-3", amount = 1},
   {type = "item", name = "sp-electronic-science-pack-3", amount = 1},
   {type = "item", name = "sp-geological-science-pack-3", amount = 1},
-  {type = "item", name = "sp-astronomical-science-pack-2", amount = 1},
+  {type = "item", name = "space-science-pack", amount = 1},
   {type = "item", name = "sp-material-science-pack-3", amount = 1},
   {type = "item", name = "sp-nuclear-science-pack-3", amount = 1},
   {type = "item", name = "sp-computer-science-pack-3", amount = 1},
@@ -1051,7 +1051,7 @@ data.raw.technology["spidertron"].unit.ingredients = {
   {type = "item", name = "sp-chemical-science-pack-3", amount = 1},
   {type = "item", name = "sp-electronic-science-pack-3", amount = 1},
   {type = "item", name = "sp-geological-science-pack-3", amount = 1},
-  {type = "item", name = "sp-astronomical-science-pack-2", amount = 1},
+  {type = "item", name = "space-science-pack", amount = 1},
   {type = "item", name = "sp-material-science-pack-3", amount = 1},
   {type = "item", name = "sp-military-science-pack-3", amount = 1},
   {type = "item", name = "sp-nuclear-science-pack-3", amount = 1},
@@ -1065,7 +1065,7 @@ data.raw.technology["atomic-bomb"].unit.ingredients = {
   {type = "item", name = "sp-chemical-science-pack-3", amount = 1},
   {type = "item", name = "sp-electronic-science-pack-3", amount = 1},
   {type = "item", name = "sp-geological-science-pack-3", amount = 1},
-  {type = "item", name = "sp-astronomical-science-pack-2", amount = 1},
+  {type = "item", name = "space-science-pack", amount = 1},
   {type = "item", name = "sp-material-science-pack-3", amount = 1},
   {type = "item", name = "sp-military-science-pack-3", amount = 1},
   {type = "item", name = "sp-nuclear-science-pack-3", amount = 1},
@@ -1137,7 +1137,7 @@ data.raw.technology["research-speed-5"].unit.ingredients = {
   {type = "item", name = "sp-production-science-pack-3", amount = 1},
   {type = "item", name = "sp-computer-science-pack-3", amount = 1},
   {type = "item", name = "utility-science-pack", amount = 1},
-  {type = "item", name = "sp-astronomical-science-pack-2", amount = 1}
+  {type = "item", name = "space-science-pack", amount = 1}
 }
 
 data.raw.technology["research-speed-6"].unit.ingredients = {
@@ -1149,7 +1149,7 @@ data.raw.technology["research-speed-6"].unit.ingredients = {
   {type = "item", name = "sp-production-science-pack-3", amount = 1},
   {type = "item", name = "sp-computer-science-pack-3", amount = 1},
   {type = "item", name = "utility-science-pack", amount = 1},
-  {type = "item", name = "sp-astronomical-science-pack-2", amount = 1}
+  {type = "item", name = "space-science-pack", amount = 1}
 }
 
 data.raw.technology["mining-productivity-1"].prerequisites = {
@@ -1245,7 +1245,7 @@ data.raw.technology["braking-force-7"].unit.ingredients = {
   {type = "item", name = "sp-chemical-science-pack-3", amount = 1},
   {type = "item", name = "sp-electronic-science-pack-3", amount = 1},
   {type = "item", name = "sp-geological-science-pack-3", amount = 1},
-  {type = "item", name = "sp-astronomical-science-pack-2", amount = 1},
+  {type = "item", name = "space-science-pack", amount = 1},
   {type = "item", name = "sp-material-science-pack-3", amount = 1},
   {type = "item", name = "sp-nuclear-science-pack-3", amount = 1},
   {type = "item", name = "sp-computer-science-pack-3", amount = 1},
@@ -1496,7 +1496,7 @@ data.raw.technology["worker-robots-speed-6"].unit.ingredients = {
   {type = "item", name = "sp-computer-science-pack-3", amount = 1},
   {type = "item", name = "sp-production-science-pack-3", amount = 1},
   {type = "item", name = "sp-nuclear-science-pack-3", amount = 1},
-  {type = "item", name = "sp-astronomical-science-pack-3", amount = 1},
+  {type = "item", name = "sp-space-science-pack-3", amount = 1},
   {type = "item", name = "sp-utility-science-pack-3", amount = 1},
   {type = "item", name = "space-science-pack", amount = 1},
   -- Krastorio: {type = "item", name = "matter-tech-card", amount = 1}
@@ -1816,7 +1816,7 @@ data.raw.technology["artillery-shell-range-1"].unit.ingredients = {
   {type = "item", name = "sp-military-science-pack-3", amount = 1},
   {type = "item", name = "production-science-pack", amount = 1},
   {type = "item", name = "sp-nuclear-science-pack-2", amount = 1},
-  {type = "item", name = "sp-astronomical-science-pack-2", amount = 1},
+  {type = "item", name = "space-science-pack", amount = 1},
   {type = "item", name = "utility-science-pack", amount = 1},
 }
 
@@ -1837,7 +1837,7 @@ data.raw.technology["artillery-shell-speed-1"].unit.ingredients = {
   {type = "item", name = "sp-military-science-pack-3", amount = 1},
   {type = "item", name = "production-science-pack", amount = 1},
   {type = "item", name = "sp-nuclear-science-pack-2", amount = 1},
-  {type = "item", name = "sp-astronomical-science-pack-2", amount = 1},
+  {type = "item", name = "space-science-pack", amount = 1},
   {type = "item", name = "utility-science-pack", amount = 1},
 }
 

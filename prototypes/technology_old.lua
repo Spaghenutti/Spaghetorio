@@ -2776,7 +2776,7 @@ data:extend({
         {type = "item", name = "sp-chemical-science-pack-3", amount = 1},
         {type = "item", name = "sp-production-science-pack-3", amount = 1},
         {type = "item", name = "utility-science-pack", amount = 1},
-        {type = "item", name = "sp-astronomical-science-pack-2", amount = 1},
+        {type = "item", name = "space-science-pack", amount = 1},
         {type = "item", name = "sp-computer-science-pack-2", amount = 1},
         {type = "item", name = "sp-nuclear-science-pack-2", amount = 1}
       },
@@ -2834,7 +2834,7 @@ data:extend({
         {type = "item", name = "sp-chemical-science-pack-3", amount = 1},
         {type = "item", name = "sp-production-science-pack-3", amount = 1},
         {type = "item", name = "utility-science-pack", amount = 1},
-        {type = "item", name = "sp-astronomical-science-pack-2", amount = 1},
+        {type = "item", name = "space-science-pack", amount = 1},
         {type = "item", name = "sp-computer-science-pack-2", amount = 1},
         {type = "item", name = "sp-nuclear-science-pack-2", amount = 1}
       },
@@ -2876,7 +2876,7 @@ data:extend({
         {type = "item", name = "sp-chemical-science-pack-3", amount = 1},
         {type = "item", name = "sp-production-science-pack-3", amount = 1},
         {type = "item", name = "utility-science-pack", amount = 1},
-        {type = "item", name = "sp-astronomical-science-pack-2", amount = 1},
+        {type = "item", name = "space-science-pack", amount = 1},
         {type = "item", name = "sp-computer-science-pack-2", amount = 1},
         {type = "item", name = "sp-nuclear-science-pack-2", amount = 1}
       },
@@ -2922,7 +2922,7 @@ data:extend({
         {type = "item", name = "sp-chemical-science-pack-3", amount = 1},
         {type = "item", name = "sp-production-science-pack-3", amount = 1},
         {type = "item", name = "utility-science-pack", amount = 1},
-        {type = "item", name = "sp-astronomical-science-pack-2", amount = 1},
+        {type = "item", name = "space-science-pack", amount = 1},
         {type = "item", name = "sp-computer-science-pack-2", amount = 1},
         {type = "item", name = "sp-nuclear-science-pack-2", amount = 1}
       },
@@ -3057,7 +3057,7 @@ data:extend({
     },
     prerequisites = {
       "processing-unit",
-      "sp-astronomical-science-pack-2",
+      "space-science-pack",
       "sp-semiconductor",
       "sp-optics"
     },
@@ -3093,7 +3093,7 @@ data:extend({
     prerequisites = {
       "sp-noble-gases",
       "processing-unit",
-      "sp-astronomical-science-pack-2",
+      "space-science-pack",
       "rocket-control-unit",
       "sp-rocket-engine"
     },
@@ -3109,7 +3109,7 @@ data:extend({
         {type = "item", name = "sp-computer-science-pack-2", amount = 1},
         {type = "item", name = "production-science-pack", amount = 1},
         {type = "item", name = "utility-science-pack", amount = 1},
-        {type = "item", name = "sp-astronomical-science-pack-2", amount = 1}
+        {type = "item", name = "space-science-pack", amount = 1}
       },
       time = 15
     },
@@ -3156,7 +3156,7 @@ data:extend({
         {type = "item", name = "sp-computer-science-pack-3", amount = 1},
         {type = "item", name = "sp-production-science-pack-3", amount = 1},
         {type = "item", name = "sp-nuclear-science-pack-3", amount = 1},
-        {type = "item", name = "sp-astronomical-science-pack-2", amount = 1},
+        {type = "item", name = "space-science-pack", amount = 1},
         {type = "item", name = "sp-utility-science-pack-3", amount = 1}
       },
       time = 15
@@ -3192,7 +3192,7 @@ data:extend({
         {type = "item", name = "sp-computer-science-pack-3", amount = 1},
         {type = "item", name = "sp-production-science-pack-3", amount = 1},
         {type = "item", name = "sp-nuclear-science-pack-3", amount = 1},
-        {type = "item", name = "sp-astronomical-science-pack-2", amount = 1},
+        {type = "item", name = "space-science-pack", amount = 1},
         {type = "item", name = "utility-science-pack", amount = 1}
       },
       time = 15
@@ -3236,7 +3236,7 @@ data:extend({
         {type = "item", name = "sp-computer-science-pack-3", amount = 1},
         {type = "item", name = "sp-production-science-pack-3", amount = 1},
         {type = "item", name = "sp-nuclear-science-pack-3", amount = 1},
-        {type = "item", name = "sp-astronomical-science-pack-2", amount = 1},
+        {type = "item", name = "space-science-pack", amount = 1},
         {type = "item", name = "sp-utility-science-pack-3", amount = 1}
       },
       time = 15
@@ -3292,7 +3292,7 @@ data:extend({
         {type = "item", name = "sp-computer-science-pack-3", amount = 1},
         {type = "item", name = "sp-production-science-pack-3", amount = 1},
         {type = "item", name = "sp-nuclear-science-pack-3", amount = 1},
-        {type = "item", name = "sp-astronomical-science-pack-2", amount = 1},
+        {type = "item", name = "space-science-pack", amount = 1},
         {type = "item", name = "sp-utility-science-pack-3", amount = 1}
       },
       time = 15
@@ -3344,7 +3344,7 @@ data:extend({
         {type = "item", name = "sp-computer-science-pack-3", amount = 1},
         {type = "item", name = "sp-production-science-pack-3", amount = 1},
         {type = "item", name = "sp-nuclear-science-pack-3", amount = 1},
-        {type = "item", name = "sp-astronomical-science-pack-2", amount = 1},
+        {type = "item", name = "space-science-pack", amount = 1},
         {type = "item", name = "sp-utility-science-pack-3", amount = 1}
       },
       time = 15
@@ -3483,7 +3483,7 @@ data:extend({
         {type = "item", name = "sp-computer-science-pack-3", amount = 1},
         {type = "item", name = "sp-production-science-pack-3", amount = 1},
         {type = "item", name = "sp-nuclear-science-pack-3", amount = 1},
-        {type = "item", name = "sp-astronomical-science-pack-2", amount = 1},
+        {type = "item", name = "space-science-pack", amount = 1},
         {type = "item", name = "utility-science-pack", amount = 1}
       },
       time = 15
@@ -3770,7 +3770,7 @@ data:extend({
         {type = "item", name = "sp-computer-science-pack-3", amount = 1},
         {type = "item", name = "sp-production-science-pack-3", amount = 1},
         {type = "item", name = "sp-nuclear-science-pack-3", amount = 1},
-        {type = "item", name = "sp-astronomical-science-pack-2", amount = 1},
+        {type = "item", name = "space-science-pack", amount = 1},
         {type = "item", name = "utility-science-pack", amount = 1}
       },
       time = 15
@@ -4060,7 +4060,7 @@ data:extend({
         {type = "item", name = "sp-computer-science-pack-3", amount = 1},
         {type = "item", name = "sp-production-science-pack-3", amount = 1},
         {type = "item", name = "sp-nuclear-science-pack-3", amount = 1},
-        {type = "item", name = "sp-astronomical-science-pack-2", amount = 1},
+        {type = "item", name = "space-science-pack", amount = 1},
         {type = "item", name = "utility-science-pack", amount = 1}
       },
       time = 15
@@ -4095,7 +4095,7 @@ data:extend({
         {type = "item", name = "sp-computer-science-pack-3", amount = 1},
         {type = "item", name = "sp-production-science-pack-3", amount = 1},
         {type = "item", name = "sp-nuclear-science-pack-3", amount = 1},
-        {type = "item", name = "sp-astronomical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-space-science-pack-3", amount = 1},
         {type = "item", name = "sp-utility-science-pack-3", amount = 1},
         {type = "item", name = "space-science-pack", amount = 1}
         -- Krastorio: {type = "item", name = "matter-tech-card", amount = 1},
@@ -4132,7 +4132,7 @@ data:extend({
         {type = "item", name = "sp-computer-science-pack-3", amount = 1},
         {type = "item", name = "sp-production-science-pack-3", amount = 1},
         {type = "item", name = "sp-nuclear-science-pack-3", amount = 1},
-        {type = "item", name = "sp-astronomical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-space-science-pack-3", amount = 1},
         {type = "item", name = "sp-utility-science-pack-3", amount = 1},
         {type = "item", name = "space-science-pack", amount = 1}
         -- Krastorio: {type = "item", name = "matter-tech-card", amount = 1},
@@ -4170,7 +4170,7 @@ data:extend({
         {type = "item", name = "sp-computer-science-pack-3", amount = 1},
         {type = "item", name = "sp-production-science-pack-3", amount = 1},
         {type = "item", name = "sp-nuclear-science-pack-3", amount = 1},
-        {type = "item", name = "sp-astronomical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-space-science-pack-3", amount = 1},
         {type = "item", name = "sp-utility-science-pack-3", amount = 1},
         {type = "item", name = "space-science-pack", amount = 1}
         -- Krastorio: {type = "item", name = "matter-tech-card", amount = 1},
@@ -4209,7 +4209,7 @@ data:extend({
         {type = "item", name = "sp-military-science-pack-3", amount = 1},
         {type = "item", name = "production-science-pack", amount = 1},
         {type = "item", name = "sp-nuclear-science-pack-2", amount = 1},
-        {type = "item", name = "sp-astronomical-science-pack-2", amount = 1},
+        {type = "item", name = "space-science-pack", amount = 1},
         {type = "item", name = "utility-science-pack", amount = 1},
       },
       time = 15
@@ -4246,7 +4246,7 @@ data:extend({
         {type = "item", name = "sp-computer-science-pack-3", amount = 1},
         {type = "item", name = "sp-production-science-pack-3", amount = 1},
         {type = "item", name = "sp-nuclear-science-pack-3", amount = 1},
-        {type = "item", name = "sp-astronomical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-space-science-pack-3", amount = 1},
         {type = "item", name = "sp-utility-science-pack-3", amount = 1},
         {type = "item", name = "space-science-pack", amount = 1},
         -- {type = "item", name = "matter-tech-card", amount = 1},
@@ -4328,7 +4328,7 @@ data:extend({
       }
     },
     prerequisites = {
-      "sp-astronomical-science-pack-3"
+      "sp-space-science-pack-3"
     },
     unit =
     {
@@ -4343,7 +4343,7 @@ data:extend({
         {type = "item", name = "sp-computer-science-pack-3", amount = 1},
         {type = "item", name = "sp-production-science-pack-3", amount = 1},
         {type = "item", name = "sp-nuclear-science-pack-3", amount = 1},
-        {type = "item", name = "sp-astronomical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-space-science-pack-3", amount = 1},
         {type = "item", name = "sp-utility-science-pack-3", amount = 1},
         -- Krastorio: {type = "item", name = "matter-tech-card", amount = 1},
         -- Krastorio: {type = "item", name = "advanced-tech-card", amount = 1}
@@ -4388,7 +4388,7 @@ data:extend({
         {type = "item", name = "sp-computer-science-pack-3", amount = 1},
         {type = "item", name = "sp-production-science-pack-3", amount = 1},
         {type = "item", name = "sp-nuclear-science-pack-3", amount = 1},
-        {type = "item", name = "sp-astronomical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-space-science-pack-3", amount = 1},
         {type = "item", name = "sp-utility-science-pack-3", amount = 1},
         {type = "item", name = "space-science-pack", amount = 1}
         -- Krastorio: {type = "item", name = "matter-tech-card", amount = 1},
@@ -4430,7 +4430,7 @@ data:extend({
       }
     },
     prerequisites = {
-      "sp-astronomical-science-pack-3"
+      "sp-space-science-pack-3"
     },
     unit =
     {
@@ -4445,7 +4445,7 @@ data:extend({
         {type = "item", name = "sp-computer-science-pack-3", amount = 1},
         {type = "item", name = "sp-production-science-pack-3", amount = 1},
         {type = "item", name = "sp-nuclear-science-pack-3", amount = 1},
-        {type = "item", name = "sp-astronomical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-space-science-pack-3", amount = 1},
         {type = "item", name = "sp-utility-science-pack-3", amount = 1},
         -- Krastorio: {type = "item", name = "matter-tech-card", amount = 1},
         -- Krastorio: {type = "item", name = "advanced-tech-card", amount = 1}
@@ -4479,7 +4479,7 @@ data:extend({
       }
     },
     prerequisites = {
-      "sp-astronomical-science-pack-3"
+      "sp-space-science-pack-3"
     },
     unit =
     {
@@ -4494,7 +4494,7 @@ data:extend({
         {type = "item", name = "sp-computer-science-pack-3", amount = 1},
         {type = "item", name = "sp-production-science-pack-3", amount = 1},
         {type = "item", name = "sp-nuclear-science-pack-3", amount = 1},
-        {type = "item", name = "sp-astronomical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-space-science-pack-3", amount = 1},
         {type = "item", name = "sp-utility-science-pack-3", amount = 1},
         -- Krastorio: {type = "item", name = "matter-tech-card", amount = 1},
         -- Krastorio: {type = "item", name = "advanced-tech-card", amount = 1}
@@ -4520,7 +4520,7 @@ data:extend({
       }
     },
     prerequisites = {
-      "sp-astronomical-science-pack-3"
+      "sp-space-science-pack-3"
     },
     unit =
     {
@@ -4535,7 +4535,7 @@ data:extend({
         {type = "item", name = "sp-computer-science-pack-3", amount = 1},
         {type = "item", name = "sp-production-science-pack-3", amount = 1},
         {type = "item", name = "sp-nuclear-science-pack-3", amount = 1},
-        {type = "item", name = "sp-astronomical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-space-science-pack-3", amount = 1},
         {type = "item", name = "sp-utility-science-pack-3", amount = 1},
         -- Krastorio: {type = "item", name = "matter-tech-card", amount = 1},
         -- Krastorio: {type = "item", name = "advanced-tech-card", amount = 1}
@@ -4581,7 +4581,7 @@ data:extend({
       }
     },
     prerequisites = {
-      "sp-astronomical-science-pack-3"
+      "sp-space-science-pack-3"
     },
     unit =
     {
@@ -4596,7 +4596,7 @@ data:extend({
         {type = "item", name = "sp-computer-science-pack-3", amount = 1},
         {type = "item", name = "sp-production-science-pack-3", amount = 1},
         {type = "item", name = "sp-nuclear-science-pack-3", amount = 1},
-        {type = "item", name = "sp-astronomical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-space-science-pack-3", amount = 1},
         {type = "item", name = "sp-utility-science-pack-3", amount = 1},
         -- Krastorio: {type = "item", name = "matter-tech-card", amount = 1},
         -- Krastorio: {type = "item", name = "advanced-tech-card", amount = 1}
@@ -4647,7 +4647,7 @@ data:extend({
         {type = "item", name = "sp-computer-science-pack-3", amount = 1},
         {type = "item", name = "sp-production-science-pack-3", amount = 1},
         {type = "item", name = "sp-nuclear-science-pack-3", amount = 1},
-        {type = "item", name = "sp-astronomical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-space-science-pack-3", amount = 1},
         {type = "item", name = "sp-utility-science-pack-3", amount = 1},
         -- Krastorio: {type = "item", name = "matter-tech-card", amount = 1},
         -- Krastorio: {type = "item", name = "advanced-tech-card", amount = 1}
@@ -4690,7 +4690,7 @@ data:extend({
         {type = "item", name = "sp-computer-science-pack-3", amount = 1},
         {type = "item", name = "sp-production-science-pack-3", amount = 1},
         {type = "item", name = "sp-nuclear-science-pack-3", amount = 1},
-        {type = "item", name = "sp-astronomical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-space-science-pack-3", amount = 1},
         {type = "item", name = "sp-utility-science-pack-3", amount = 1},
         -- Krastorio: {type = "item", name = "matter-tech-card", amount = 1},
         -- Krastorio: {type = "item", name = "advanced-tech-card", amount = 1}
@@ -4746,7 +4746,7 @@ data:extend({
         {type = "item", name = "sp-computer-science-pack-3", amount = 1},
         {type = "item", name = "sp-production-science-pack-3", amount = 1},
         {type = "item", name = "sp-nuclear-science-pack-3", amount = 1},
-        {type = "item", name = "sp-astronomical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-space-science-pack-3", amount = 1},
         {type = "item", name = "sp-utility-science-pack-3", amount = 1},
         -- Krastorio: {type = "item", name = "matter-tech-card", amount = 1},
         -- Krastorio: {type = "item", name = "advanced-tech-card", amount = 1}
@@ -4798,7 +4798,7 @@ data:extend({
         {type = "item", name = "sp-computer-science-pack-3", amount = 1},
         {type = "item", name = "sp-production-science-pack-3", amount = 1},
         {type = "item", name = "sp-nuclear-science-pack-3", amount = 1},
-        {type = "item", name = "sp-astronomical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-space-science-pack-3", amount = 1},
         {type = "item", name = "sp-utility-science-pack-3", amount = 1},
         {type = "item", name = "space-science-pack", amount = 1},
         -- {type = "item", name = "matter-tech-card", amount = 1},
@@ -4848,7 +4848,7 @@ data:extend({
         {type = "item", name = "sp-computer-science-pack-3", amount = 1},
         {type = "item", name = "sp-production-science-pack-3", amount = 1},
         {type = "item", name = "sp-nuclear-science-pack-3", amount = 1},
-        {type = "item", name = "sp-astronomical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-space-science-pack-3", amount = 1},
         {type = "item", name = "sp-utility-science-pack-3", amount = 1},
         {type = "item", name = "space-science-pack", amount = 1},
         -- {type = "item", name = "matter-tech-card", amount = 1},
@@ -4899,7 +4899,7 @@ data:extend({
         {type = "item", name = "sp-computer-science-pack-3", amount = 1},
         {type = "item", name = "sp-production-science-pack-3", amount = 1},
         {type = "item", name = "sp-nuclear-science-pack-3", amount = 1},
-        {type = "item", name = "sp-astronomical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-space-science-pack-3", amount = 1},
         {type = "item", name = "sp-utility-science-pack-3", amount = 1},
         {type = "item", name = "space-science-pack", amount = 1},
         -- {type = "item", name = "matter-tech-card", amount = 1},
@@ -4943,7 +4943,7 @@ data:extend({
         {type = "item", name = "sp-computer-science-pack-3", amount = 1},
         {type = "item", name = "sp-production-science-pack-3", amount = 1},
         {type = "item", name = "sp-nuclear-science-pack-3", amount = 1},
-        {type = "item", name = "sp-astronomical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-space-science-pack-3", amount = 1},
         {type = "item", name = "sp-utility-science-pack-3", amount = 1},
         {type = "item", name = "space-science-pack", amount = 1},
         -- Krastorio: {type = "item", name = "matter-tech-card", amount = 1},
@@ -5003,7 +5003,7 @@ data:extend({
         {type = "item", name = "sp-computer-science-pack-3", amount = 1},
         {type = "item", name = "sp-production-science-pack-3", amount = 1},
         {type = "item", name = "sp-nuclear-science-pack-3", amount = 1},
-        {type = "item", name = "sp-astronomical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-space-science-pack-3", amount = 1},
         {type = "item", name = "sp-utility-science-pack-3", amount = 1},
         {type = "item", name = "space-science-pack", amount = 1},
         -- Krastorio: {type = "item", name = "matter-tech-card", amount = 1},
@@ -5050,7 +5050,7 @@ data:extend({
         {type = "item", name = "sp-computer-science-pack-3", amount = 1},
         {type = "item", name = "sp-production-science-pack-3", amount = 1},
         {type = "item", name = "sp-nuclear-science-pack-3", amount = 1},
-        {type = "item", name = "sp-astronomical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-space-science-pack-3", amount = 1},
         {type = "item", name = "sp-utility-science-pack-3", amount = 1},
         {type = "item", name = "space-science-pack", amount = 1},
         -- Krastorio: {type = "item", name = "matter-tech-card", amount = 1},
@@ -5101,7 +5101,7 @@ data:extend({
         {type = "item", name = "sp-computer-science-pack-3", amount = 1},
         {type = "item", name = "sp-production-science-pack-3", amount = 1},
         {type = "item", name = "sp-nuclear-science-pack-3", amount = 1},
-        {type = "item", name = "sp-astronomical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-space-science-pack-3", amount = 1},
         {type = "item", name = "sp-utility-science-pack-3", amount = 1},
         {type = "item", name = "space-science-pack", amount = 1},
         -- Krastorio: {type = "item", name = "matter-tech-card", amount = 1},
@@ -5147,7 +5147,7 @@ data:extend({
         {type = "item", name = "sp-computer-science-pack-3", amount = 1},
         {type = "item", name = "sp-production-science-pack-3", amount = 1},
         {type = "item", name = "sp-nuclear-science-pack-3", amount = 1},
-        {type = "item", name = "sp-astronomical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-space-science-pack-3", amount = 1},
         {type = "item", name = "sp-utility-science-pack-3", amount = 1},
         {type = "item", name = "space-science-pack", amount = 1},
         -- Krastorio: {type = "item", name = "matter-tech-card", amount = 1},
@@ -5190,7 +5190,7 @@ data:extend({
         {type = "item", name = "sp-computer-science-pack-3", amount = 1},
         {type = "item", name = "sp-production-science-pack-3", amount = 1},
         {type = "item", name = "sp-nuclear-science-pack-3", amount = 1},
-        {type = "item", name = "sp-astronomical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-space-science-pack-3", amount = 1},
         {type = "item", name = "sp-utility-science-pack-3", amount = 1},
         {type = "item", name = "space-science-pack", amount = 1},
         -- Krastorio: {type = "item", name = "matter-tech-card", amount = 1},
@@ -5234,7 +5234,7 @@ data:extend({
         {type = "item", name = "sp-computer-science-pack-3", amount = 1},
         {type = "item", name = "sp-production-science-pack-3", amount = 1},
         {type = "item", name = "sp-nuclear-science-pack-3", amount = 1},
-        {type = "item", name = "sp-astronomical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-space-science-pack-3", amount = 1},
         {type = "item", name = "sp-utility-science-pack-3", amount = 1},
         {type = "item", name = "space-science-pack", amount = 1},
         -- Krastorio: {type = "item", name = "matter-tech-card", amount = 1},
@@ -5285,7 +5285,7 @@ data:extend({
         {type = "item", name = "sp-computer-science-pack-3", amount = 1},
         {type = "item", name = "sp-production-science-pack-3", amount = 1},
         {type = "item", name = "sp-nuclear-science-pack-3", amount = 1},
-        {type = "item", name = "sp-astronomical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-space-science-pack-3", amount = 1},
         {type = "item", name = "sp-utility-science-pack-3", amount = 1},
         {type = "item", name = "space-science-pack", amount = 1},
         -- Krastorio: {type = "item", name = "matter-tech-card", amount = 1},
@@ -5332,7 +5332,7 @@ data:extend({
         {type = "item", name = "sp-computer-science-pack-3", amount = 1},
         {type = "item", name = "sp-production-science-pack-3", amount = 1},
         {type = "item", name = "sp-nuclear-science-pack-3", amount = 1},
-        {type = "item", name = "sp-astronomical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-space-science-pack-3", amount = 1},
         {type = "item", name = "sp-utility-science-pack-3", amount = 1},
         {type = "item", name = "space-science-pack", amount = 1},
         -- Krastorio: {type = "item", name = "matter-tech-card", amount = 1},
@@ -5397,7 +5397,7 @@ data:extend({
         {type = "item", name = "sp-production-science-pack-3", amount = 1},
         {type = "item", name = "sp-nuclear-science-pack-3", amount = 1},
         {type = "item", name = "sp-utility-science-pack-3", amount = 1},
-        {type = "item", name = "sp-astronomical-science-pack-3", amount = 1}
+        {type = "item", name = "sp-space-science-pack-3", amount = 1}
       },
       time = 15
     },
@@ -5444,7 +5444,7 @@ data:extend({
         {type = "item", name = "sp-computer-science-pack-3", amount = 1},
         {type = "item", name = "sp-production-science-pack-3", amount = 1},
         {type = "item", name = "sp-nuclear-science-pack-3", amount = 1},
-        {type = "item", name = "sp-astronomical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-space-science-pack-3", amount = 1},
         {type = "item", name = "sp-utility-science-pack-3", amount = 1},
         -- Krastorio: {type = "item", name = "matter-tech-card", amount = 1},
         -- Krastorio: {type = "item", name = "advanced-tech-card", amount = 1},
@@ -5492,7 +5492,7 @@ data:extend({
         {type = "item", name = "sp-computer-science-pack-3", amount = 1},
         {type = "item", name = "sp-production-science-pack-3", amount = 1},
         {type = "item", name = "sp-nuclear-science-pack-3", amount = 1},
-        {type = "item", name = "sp-astronomical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-space-science-pack-3", amount = 1},
         {type = "item", name = "sp-utility-science-pack-3", amount = 1},
         {type = "item", name = "space-science-pack", amount = 1},
         -- Krastorio: {type = "item", name = "matter-tech-card", amount = 1},
@@ -5586,7 +5586,7 @@ data:extend({
         {type = "item", name = "sp-computer-science-pack-3", amount = 1},
         {type = "item", name = "sp-production-science-pack-3", amount = 1},
         {type = "item", name = "sp-nuclear-science-pack-3", amount = 1},
-        {type = "item", name = "sp-astronomical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-space-science-pack-3", amount = 1},
         {type = "item", name = "sp-utility-science-pack-3", amount = 1},
         {type = "item", name = "space-science-pack", amount = 1},
         -- Krastorio: {type = "item", name = "matter-tech-card", amount = 1},
@@ -5704,7 +5704,7 @@ data:extend({
         {type = "item", name = "sp-computer-science-pack-3", amount = 1},
         {type = "item", name = "sp-production-science-pack-3", amount = 1},
         {type = "item", name = "sp-nuclear-science-pack-3", amount = 1},
-        {type = "item", name = "sp-astronomical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-space-science-pack-3", amount = 1},
         {type = "item", name = "sp-utility-science-pack-3", amount = 1},
         {type = "item", name = "space-science-pack", amount = 1},
         -- Krastorio: {type = "item", name = "matter-tech-card", amount = 1},
@@ -6015,14 +6015,14 @@ data:extend({
   },
   {
     type = "technology",
-    name = "sp-astronomical-science-pack-2",  -- #ForRegEx# - technology
+    name = "space-science-pack",  -- #ForRegEx# - technology
     icon_size = 64,
     icon = "__Spaghetorio__/graphics/krastorio/icons/cards/matter-tech-card.png",
     effects =
     {
       {
         type = "unlock-recipe",
-        recipe = "sp-astronomical-science-pack-2"
+        recipe = "space-science-pack"
       },
     },
     prerequisites = {
@@ -6120,7 +6120,7 @@ data:extend({
       },
     },
     prerequisites = {
-      "sp-astronomical-science-pack-2",
+      "space-science-pack",
       "sp-computer-science-pack-2",
       "utility-science-pack"
     },
@@ -6133,7 +6133,7 @@ data:extend({
         {type = "item", name = "sp-chemical-science-pack-2", amount = 1},
         {type = "item", name = "sp-electronic-science-pack-2", amount = 1},
         {type = "item", name = "sp-geological-science-pack-2", amount = 1},
-        {type = "item", name = "sp-astronomical-science-pack-2", amount = 1},
+        {type = "item", name = "space-science-pack", amount = 1},
         {type = "item", name = "sp-material-science-pack-2", amount = 1}
       },
       time = 15
@@ -6164,7 +6164,7 @@ data:extend({
         {type = "item", name = "sp-chemical-science-pack-2", amount = 1},
         {type = "item", name = "sp-electronic-science-pack-2", amount = 1},
         {type = "item", name = "sp-geological-science-pack-2", amount = 1},
-        {type = "item", name = "sp-astronomical-science-pack-2", amount = 1},
+        {type = "item", name = "space-science-pack", amount = 1},
         {type = "item", name = "sp-material-science-pack-2", amount = 1}
       },
       time = 15
@@ -6196,7 +6196,7 @@ data:extend({
         {type = "item", name = "sp-chemical-science-pack-2", amount = 1},
         {type = "item", name = "sp-electronic-science-pack-2", amount = 1},
         {type = "item", name = "sp-geological-science-pack-2", amount = 1},
-        {type = "item", name = "sp-astronomical-science-pack-2", amount = 1},
+        {type = "item", name = "space-science-pack", amount = 1},
         {type = "item", name = "sp-material-science-pack-2", amount = 1}
       },
       time = 15
@@ -6227,7 +6227,7 @@ data:extend({
         {type = "item", name = "sp-chemical-science-pack-2", amount = 1},
         {type = "item", name = "sp-electronic-science-pack-2", amount = 1},
         {type = "item", name = "sp-geological-science-pack-2", amount = 1},
-        {type = "item", name = "sp-astronomical-science-pack-2", amount = 1},
+        {type = "item", name = "space-science-pack", amount = 1},
         {type = "item", name = "sp-material-science-pack-2", amount = 1}
       },
       time = 15
@@ -6258,7 +6258,7 @@ data:extend({
         {type = "item", name = "sp-chemical-science-pack-2", amount = 1},
         {type = "item", name = "sp-electronic-science-pack-2", amount = 1},
         {type = "item", name = "sp-geological-science-pack-2", amount = 1},
-        {type = "item", name = "sp-astronomical-science-pack-2", amount = 1},
+        {type = "item", name = "space-science-pack", amount = 1},
         {type = "item", name = "sp-material-science-pack-2", amount = 1}
       },
       time = 15
@@ -6289,7 +6289,7 @@ data:extend({
         {type = "item", name = "sp-chemical-science-pack-2", amount = 1},
         {type = "item", name = "sp-electronic-science-pack-2", amount = 1},
         {type = "item", name = "sp-geological-science-pack-2", amount = 1},
-        {type = "item", name = "sp-astronomical-science-pack-2", amount = 1},
+        {type = "item", name = "space-science-pack", amount = 1},
         {type = "item", name = "sp-material-science-pack-2", amount = 1}
       },
       time = 15
@@ -6321,7 +6321,7 @@ data:extend({
         {type = "item", name = "sp-chemical-science-pack-2", amount = 1},
         {type = "item", name = "sp-electronic-science-pack-2", amount = 1},
         {type = "item", name = "sp-geological-science-pack-2", amount = 1},
-        {type = "item", name = "sp-astronomical-science-pack-2", amount = 1},
+        {type = "item", name = "space-science-pack", amount = 1},
         {type = "item", name = "sp-material-science-pack-2", amount = 1}
       },
       time = 15
@@ -6353,7 +6353,7 @@ data:extend({
         {type = "item", name = "sp-chemical-science-pack-2", amount = 1}, 
         {type = "item", name = "sp-electronic-science-pack-2", amount = 1},
         {type = "item", name = "sp-geological-science-pack-2", amount = 1},
-        {type = "item", name = "sp-astronomical-science-pack-2", amount = 1},
+        {type = "item", name = "space-science-pack", amount = 1},
         {type = "item", name = "sp-material-science-pack-2", amount = 1}
       },
       time = 15
@@ -6362,14 +6362,14 @@ data:extend({
   },
   {
     type = "technology",
-    name = "sp-astronomical-science-pack-3",  -- #ForRegEx# - technology
+    name = "sp-space-science-pack-3",  -- #ForRegEx# - technology
     icon_size = 256,
     icon = "__Spaghetorio__/graphics/hr-icons/astronomical-science-pack-3.png",
     effects =
     {
       {
         type = "unlock-recipe",
-        recipe = "sp-astronomical-science-pack-3"
+        recipe = "sp-space-science-pack-3"
       },
     },
     prerequisites = {
@@ -6392,7 +6392,7 @@ data:extend({
         {type = "item", name = "sp-computer-science-pack-3", amount = 1},
         {type = "item", name = "sp-production-science-pack-3", amount = 1},
         {type = "item", name = "sp-nuclear-science-pack-3", amount = 1},
-        {type = "item", name = "sp-astronomical-science-pack-2", amount = 1},
+        {type = "item", name = "space-science-pack", amount = 1},
         {type = "item", name = "matter-tech-card", amount = 1},
         {type = "item", name = "sp-utility-science-pack-3", amount = 1}
       },
@@ -6457,7 +6457,7 @@ data:extend({
         {type = "item", name = "sp-chemical-science-pack-3", amount = 1},
         {type = "item", name = "sp-electronic-science-pack-3", amount = 1},
         {type = "item", name = "sp-geological-science-pack-3", amount = 1},
-        {type = "item", name = "sp-astronomical-science-pack-2", amount = 1},
+        {type = "item", name = "space-science-pack", amount = 1},
         {type = "item", name = "sp-material-science-pack-3", amount = 1},
         {type = "item", name = "sp-nuclear-science-pack-2", amount = 1},
         {type = "item", name = "sp-computer-science-pack-3", amount = 1},
@@ -6492,7 +6492,7 @@ data:extend({
         {type = "item", name = "sp-chemical-science-pack-3", amount = 1},
         {type = "item", name = "sp-electronic-science-pack-3", amount = 1},
         {type = "item", name = "sp-geological-science-pack-3", amount = 1},
-        {type = "item", name = "sp-astronomical-science-pack-2", amount = 1},
+        {type = "item", name = "space-science-pack", amount = 1},
         {type = "item", name = "sp-material-science-pack-3", amount = 1},
         {type = "item", name = "sp-nuclear-science-pack-3", amount = 1},
         {type = "item", name = "sp-computer-science-pack-3", amount = 1},
@@ -6531,7 +6531,7 @@ data:extend({
         {type = "item", name = "sp-computer-science-pack-3", amount = 1},
         {type = "item", name = "sp-production-science-pack-3", amount = 1},
         {type = "item", name = "sp-nuclear-science-pack-3", amount = 1},
-        {type = "item", name = "sp-astronomical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-space-science-pack-3", amount = 1},
         {type = "item", name = "sp-utility-science-pack-3", amount = 1},
         {type = "item", name = "space-science-pack", amount = 1},
         -- Krastorio: {type = "item", name = "matter-tech-card", amount = 1},
@@ -6586,7 +6586,7 @@ data:extend({
         {type = "item", name = "sp-computer-science-pack-3", amount = 1},
         {type = "item", name = "sp-production-science-pack-3", amount = 1},
         {type = "item", name = "sp-nuclear-science-pack-3", amount = 1},
-        {type = "item", name = "sp-astronomical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-space-science-pack-3", amount = 1},
         {type = "item", name = "sp-utility-science-pack-3", amount = 1},
         {type = "item", name = "space-science-pack", amount = 1},
         -- Krastorio: {type = "item", name = "matter-tech-card", amount = 1},
@@ -6640,7 +6640,7 @@ data:extend({
         {type = "item", name = "sp-computer-science-pack-3", amount = 1},
         {type = "item", name = "sp-production-science-pack-3", amount = 1},
         {type = "item", name = "sp-nuclear-science-pack-3", amount = 1},
-        {type = "item", name = "sp-astronomical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-space-science-pack-3", amount = 1},
         {type = "item", name = "sp-utility-science-pack-3", amount = 1},
         {type = "item", name = "space-science-pack", amount = 1},
         {type = "item", name = "sp-uniformity-science-pack", amount = 1},
@@ -6742,7 +6742,7 @@ data:extend({
         {type = "item", name = "sp-computer-science-pack-3", amount = 1},
         {type = "item", name = "sp-production-science-pack-3", amount = 1},
         {type = "item", name = "sp-nuclear-science-pack-3", amount = 1},
-        {type = "item", name = "sp-astronomical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-space-science-pack-3", amount = 1},
         {type = "item", name = "sp-utility-science-pack-3", amount = 1},
         {type = "item", name = "space-science-pack", amount = 1},
         {type = "item", name = "sp-uniformity-science-pack", amount = 1},
@@ -6782,7 +6782,7 @@ data:extend({
         {type = "item", name = "sp-computer-science-pack-3", amount = 1},
         {type = "item", name = "sp-production-science-pack-3", amount = 1},
         {type = "item", name = "sp-nuclear-science-pack-3", amount = 1},
-        {type = "item", name = "sp-astronomical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-space-science-pack-3", amount = 1},
         {type = "item", name = "sp-utility-science-pack-3", amount = 1},
         {type = "item", name = "space-science-pack", amount = 1}
         -- Krastorio: {type = "item", name = "advanced-tech-card", amount = 1}
@@ -6839,7 +6839,7 @@ data:extend({
         {type = "item", name = "sp-computer-science-pack-3", amount = 1},
         {type = "item", name = "sp-production-science-pack-3", amount = 1},
         {type = "item", name = "sp-nuclear-science-pack-3", amount = 1},
-        {type = "item", name = "sp-astronomical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-space-science-pack-3", amount = 1},
         {type = "item", name = "sp-utility-science-pack-3", amount = 1},
         {type = "item", name = "space-science-pack", amount = 1},
         -- Krastorio: {type = "item", name = "matter-tech-card", amount = 1},
@@ -6896,7 +6896,7 @@ data:extend({
         {type = "item", name = "sp-computer-science-pack-3", amount = 1},
         {type = "item", name = "sp-production-science-pack-3", amount = 1},
         {type = "item", name = "sp-nuclear-science-pack-3", amount = 1},
-        {type = "item", name = "sp-astronomical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-space-science-pack-3", amount = 1},
         {type = "item", name = "sp-utility-science-pack-3", amount = 1},
         {type = "item", name = "space-science-pack", amount = 1},
         {type = "item", name = "sp-uniformity-science-pack", amount = 1},
@@ -6951,7 +6951,7 @@ data:extend({
         {type = "item", name = "sp-computer-science-pack-3", amount = 1},
         {type = "item", name = "sp-production-science-pack-3", amount = 1},
         {type = "item", name = "sp-nuclear-science-pack-3", amount = 1},
-        {type = "item", name = "sp-astronomical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-space-science-pack-3", amount = 1},
         {type = "item", name = "sp-utility-science-pack-3", amount = 1},
         {type = "item", name = "space-science-pack", amount = 1},
         {type = "item", name = "sp-uniformity-science-pack", amount = 1},
@@ -7006,7 +7006,7 @@ data:extend({
         {type = "item", name = "sp-computer-science-pack-3", amount = 1},
         {type = "item", name = "sp-production-science-pack-3", amount = 1},
         {type = "item", name = "sp-nuclear-science-pack-3", amount = 1},
-        {type = "item", name = "sp-astronomical-science-pack-3", amount = 1},
+        {type = "item", name = "sp-space-science-pack-3", amount = 1},
         {type = "item", name = "sp-utility-science-pack-3", amount = 1},
         {type = "item", name = "space-science-pack", amount = 1},
         {type = "item", name = "sp-uniformity-science-pack", amount = 1},
