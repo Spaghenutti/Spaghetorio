@@ -270,7 +270,8 @@ data:extend({
       }
     },
     prerequisites = {
-      "logistic-science-pack"
+      "logistic-science-pack",
+      "sp-kr-fluids-chemistry"
     },
     unit =
     {
@@ -1826,7 +1827,8 @@ data:extend({
       },
     },
     prerequisites = {
-      "sp-material-science-pack-3"
+      "sp-material-science-pack-3",
+      "sp-kr-atmosphere-condensation"
     },
     unit =
     {
@@ -2013,7 +2015,10 @@ data:extend({
         recipe = "sp-sulfamate"
       }
     },
-    prerequisites = {"chemical-science-pack"},
+    prerequisites = {
+      "chemical-science-pack",
+      "sp-kr-atmosphere-condensation"
+    },
     unit =
     {
       count = 100,
@@ -2370,7 +2375,10 @@ data:extend({
         recipe = "sp-titanium-nitride"
       },
     },
-    prerequisites = {"sp-material-science-pack-2"},
+    prerequisites = {
+      "sp-material-science-pack-2",
+      "sp-kr-atmosphere-condensation"
+    },
     unit =
     {
       count = 150,
@@ -3002,7 +3010,10 @@ data:extend({
         recipe = "sp-xenon-from-atmosphere"
       },
     },
-    prerequisites = {"sp-chemical-science-pack-2"},
+    prerequisites = {
+      "sp-chemical-science-pack-2",
+      "sp-kr-atmosphere-condensation"
+    },
     unit =
     {
       count = 750,

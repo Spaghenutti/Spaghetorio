@@ -79,6 +79,19 @@ kr_cards_icons_path .. "
 kr_technologies_icons_path .. "
 "__Spaghetorio__/graphics/krastorio/technologies/
 
+
+kr_recipes_icons_path .. "
+"__Spaghetorio__/graphics/krastorio/icons/recipes/
+
+
+kr_items_with_variations_icons_path .. "
+"__Spaghetorio__/graphics/krastorio/icons/items-with-variations/
+
+
+kr_fluids_icons_path .. "
+"__Spaghetorio__/graphics/krastorio/icons/fluids/
+
+
 --------------------------------------------------------------------------------
 
 

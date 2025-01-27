@@ -75,6 +75,7 @@ require("prototypes.transport-belts.loaders")
 require("prototypes.resource.autoplace-control")
 require("prototypes.resource.particle")
 require("prototypes.resource.resource")
+
 require("prototypes.category")
 require("prototypes.equipment")
 require("prototypes.fluid")
@@ -84,6 +85,8 @@ require("prototypes.item-groups")
 require("prototypes.recipe")
 -- require("prototypes.rocket-silo")
 require("prototypes.technology")
+
+require("prototypes.krastorio-technologies")
 
 -- MARK: Compatibility
 -- EverythingOnNauvis

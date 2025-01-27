@@ -2528,6 +2528,78 @@ data:extend({
   ------------------------------------------------------------------------------
   {
     type = "recipe",
+    name = "sp-hydrogen",
+    category = "sp-kr-atmosphere-condensation",
+    icon = "__Spaghetorio__/graphics/krastorio/icons/fluids/hydrogen.png",
+    icon_size = 64,
+    energy_required = 20,
+    enabled = false,
+    always_show_made_in = true,
+    always_show_products = true,
+    hide_from_player_crafting = true,
+    ingredients = {},
+    results = {
+      { type = "fluid", name = "sp-hydrogen", amount = 30 },
+    },
+    subgroup = "raw-material",
+    order = "a[atmosphere-condensation]-a1[hydrogen]",
+  },
+  {
+    type = "recipe",
+    name = "sp-oxygen",
+    category = "sp-kr-atmosphere-condensation",
+    icon = "__Spaghetorio__/graphics/krastorio/icons/fluids/oxygen.png",
+    icon_size = 64,
+    energy_required = 5,
+    enabled = false,
+    always_show_made_in = true,
+    always_show_products = true,
+    hide_from_player_crafting = true,
+    ingredients = {},
+    results = {
+      { type = "fluid", name = "sp-oxygen", amount = 30 },
+    },
+    subgroup = "raw-material",
+    order = "a[atmosphere-condensation]-a2[oxygen]",
+  },
+  {
+    type = "recipe",
+    name = "sp-nitrogen",
+    category = "sp-kr-atmosphere-condensation",
+    icon = "__Spaghetorio__/graphics/krastorio/icons/fluids/nitrogen.png",
+    icon_size = 64,
+    energy_required = 30,
+    enabled = false,
+    always_show_made_in = true,
+    always_show_products = true,
+    hide_from_player_crafting = true,
+    ingredients = {},
+    results = {
+      { type = "fluid", name = "sp-nitrogen", amount = 30 },
+    },
+    subgroup = "raw-material",
+    order = "a[atmosphere-condensation]-a3[nitrogen]",
+  },
+  {
+    type = "recipe",
+    name = "sp-water-from-atmosphere",
+    category = "sp-kr-atmosphere-condensation",
+    icon = "__Spaghetorio__/graphics/krastorio/icons/fluids/water.png",
+    icon_size = 64,
+    energy_required = 10,
+    enabled = false,
+    always_show_made_in = true,
+    always_show_products = true,
+    hide_from_player_crafting = true,
+    ingredients = {},
+    results = {
+      { type = "fluid", name = "water", amount = 30 },
+    },
+    subgroup = "raw-material",
+    order = "a[atmosphere-condensation]-a0[water]",
+  },
+  {
+    type = "recipe",
     name = "sp-xenon-from-atmosphere",  -- #ForRegEx# - recipe
     category = "sp-kr-atmosphere-condensation",
     subgroup = "fluid-recipes",
@@ -5125,6 +5197,106 @@ data:extend({
     }
   },
   -- MARK: Sort Category
+  {
+    type = "recipe",
+    name = "sp-kr-grow-wood-with-water",
+    category = "sp-kr-growing",
+    energy_required = 60,
+    enabled = false,
+    ingredients = {
+      { type = "fluid", name = "water", amount = 200 },
+    },
+    results = {
+      {type = "item", name = "wood", amount = 40},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-kr-grow-wood-plus",
+    category = "sp-kr-growing",
+    icon = "__Spaghetorio__/graphics/krastorio/icons/recipes/wood-plus.png",
+    icon_size = 64,
+    energy_required = 60,
+    enabled = false,
+    ingredients = {
+      { type = "fluid", name = "water", amount = 200 },
+      { type = "item", name = "nutrients", amount = 1 },
+    },
+    results = {
+      {type = "item", name = "wood", amount = 80},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-kr-water-electrolysis",
+    category = "sp-kr-electrolysis",
+    icon = "__Spaghetorio__/graphics/krastorio/icons/recipes/water-electrolysis.png",
+    icon_size = 128,
+    energy_required = 3,
+    enabled = false,
+    always_show_made_in = true,
+    always_show_products = true,
+    ingredients = {
+      { type = "item", name = "sp-sand", amount = 10 },
+      { type = "fluid", name = "water", amount = 40 },
+    },
+    results = {
+      { type = "fluid", name = "sp-chlorine", amount = 20 },
+      { type = "fluid", name = "sp-hydrogen", amount = 30 },
+    },
+    crafting_machine_tint = {
+      primary = { r = 0.10, g = 0.75, b = 0.10, a = 0.10 },
+    },
+    subgroup = "fluid-recipes",
+    order = "y01[water-electrolysis]",
+  },
+  {
+    type = "recipe",
+    name = "sp-kr-water-separation",
+    category = "sp-kr-electrolysis",
+    icon = "__Spaghetorio__/graphics/krastorio/icons/recipes/water-separation.png",
+    icon_size = 128,
+    energy_required = 3,
+    enabled = false,
+    always_show_made_in = true,
+    always_show_products = true,
+    ingredients = {
+      { type = "fluid", name = "water", amount = 50 },
+    },
+    results = {
+      { type = "fluid", name = "sp-oxygen", amount = 20 },
+      { type = "fluid", name = "sp-hydrogen", amount = 30 },
+    },
+    crafting_machine_tint = {
+      primary = { r = 0.75, g = 0.10, b = 0.10, a = 0.10 },
+    },
+    subgroup = "fluid-recipes",
+    order = "y02[water-separation]",
+  },
+  {
+    type = "recipe",
+    name = "sp-heavy-water",
+    category = "sp-kr-electrolysis",
+    energy_required = 120,
+    enabled = false,
+    always_show_made_in = true,
+    always_show_products = true,
+    allow_productivity = true,
+    ingredients = {
+      { type = "fluid", name = "water", amount = 500 },
+    },
+    crafting_machine_tint = {
+      primary = { r = 0.405, g = 0.402, b = 1.000, a = 1.000 },
+      secondary = { r = 0.391, g = 0.720, b = 1.000, a = 0.900 },
+      tertiary = { r = 1.000, g = 1.000, b = 1.000, a = 0.500 },
+      quaternary = { r = 1.000, g = 1.000, b = 1.000, a = 0.300 },
+    },
+    results = {
+      { type = "fluid", name = "sp-heavy-water", amount = 20 },
+    },
+    subgroup = "fluid-recipes",
+    order = "y06[heavy-water]",
+  },
   {
     type = "recipe",
     name = "sp-chronomatter",  -- #ForRegEx# - recipe
