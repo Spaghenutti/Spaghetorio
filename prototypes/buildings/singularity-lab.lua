@@ -145,11 +145,11 @@ data:extend({
       "sp-nuclear-science-pack-3",
       "sp-utility-science-pack-3",
       "sp-space-science-pack-3",
-      "matter-tech-card",
+      "sp-matter-science-pack",
 
       "space-science-pack",  -- Optimization tech card
-      "advanced-tech-card",
-      "singularity-tech-card",
+      "sp-advanced-science-pack",
+      "sp-singularity-science-pack",
       "sp-uniformity-science-pack"
     },
     vehicle_impact_sound = sounds.generic_impact,

@@ -4161,7 +4161,7 @@ data:extend({
         {"sp-space-science-pack-3", 1},
         {"sp-utility-science-pack-3", 1},
         {"space-science-pack", 1}
-        -- Krastorio: {"matter-tech-card", 1},
+        -- Krastorio: {"sp-matter-science-pack", 1},
       },
       time = 15
     },
@@ -4198,7 +4198,7 @@ data:extend({
         {"sp-space-science-pack-3", 1},
         {"sp-utility-science-pack-3", 1},
         {"space-science-pack", 1}
-        -- Krastorio: {"matter-tech-card", 1},
+        -- Krastorio: {"sp-matter-science-pack", 1},
       },
       time = 15
     },
@@ -4236,7 +4236,7 @@ data:extend({
         {"sp-space-science-pack-3", 1},
         {"sp-utility-science-pack-3", 1},
         {"space-science-pack", 1}
-        -- Krastorio: {"matter-tech-card", 1},
+        -- Krastorio: {"sp-matter-science-pack", 1},
       },
       time = 15
     },
@@ -4312,9 +4312,9 @@ data:extend({
         {"sp-space-science-pack-3", 1},
         {"sp-utility-science-pack-3", 1},
         {"space-science-pack", 1},
-        -- {"matter-tech-card", 1},
-        -- {"advanced-tech-card", 1},
-        -- {"singularity-tech-card", 1}
+        -- {"sp-matter-science-pack", 1},
+        -- {"sp-advanced-science-pack", 1},
+        -- {"sp-singularity-science-pack", 1}
       },
       time = 15
     },
@@ -4408,8 +4408,8 @@ data:extend({
         {"sp-nuclear-science-pack-3", 1},
         {"sp-space-science-pack-3", 1},
         {"sp-utility-science-pack-3", 1},
-        -- Krastorio: {"matter-tech-card", 1},
-        -- Krastorio: {"advanced-tech-card", 1}
+        -- Krastorio: {"sp-matter-science-pack", 1},
+        -- Krastorio: {"sp-advanced-science-pack", 1}
       },
       time = 15
     },
@@ -4454,8 +4454,8 @@ data:extend({
         {"sp-space-science-pack-3", 1},
         {"sp-utility-science-pack-3", 1},
         {"space-science-pack", 1}
-        -- Krastorio: {"matter-tech-card", 1},
-        -- Krastorio: {"advanced-tech-card", 1}
+        -- Krastorio: {"sp-matter-science-pack", 1},
+        -- Krastorio: {"sp-advanced-science-pack", 1}
       },
       time = 15
     },
@@ -4510,8 +4510,8 @@ data:extend({
         {"sp-nuclear-science-pack-3", 1},
         {"sp-space-science-pack-3", 1},
         {"sp-utility-science-pack-3", 1},
-        -- Krastorio: {"matter-tech-card", 1},
-        -- Krastorio: {"advanced-tech-card", 1}
+        -- Krastorio: {"sp-matter-science-pack", 1},
+        -- Krastorio: {"sp-advanced-science-pack", 1}
       },
       time = 15
     },
@@ -4559,8 +4559,8 @@ data:extend({
         {"sp-nuclear-science-pack-3", 1},
         {"sp-space-science-pack-3", 1},
         {"sp-utility-science-pack-3", 1},
-        -- Krastorio: {"matter-tech-card", 1},
-        -- Krastorio: {"advanced-tech-card", 1}
+        -- Krastorio: {"sp-matter-science-pack", 1},
+        -- Krastorio: {"sp-advanced-science-pack", 1}
       },
       time = 15
     },
@@ -4600,8 +4600,8 @@ data:extend({
         {"sp-nuclear-science-pack-3", 1},
         {"sp-space-science-pack-3", 1},
         {"sp-utility-science-pack-3", 1},
-        -- Krastorio: {"matter-tech-card", 1},
-        -- Krastorio: {"advanced-tech-card", 1}
+        -- Krastorio: {"sp-matter-science-pack", 1},
+        -- Krastorio: {"sp-advanced-science-pack", 1}
       },
       time = 15
     },
@@ -4661,8 +4661,8 @@ data:extend({
         {"sp-nuclear-science-pack-3", 1},
         {"sp-space-science-pack-3", 1},
         {"sp-utility-science-pack-3", 1},
-        -- Krastorio: {"matter-tech-card", 1},
-        -- Krastorio: {"advanced-tech-card", 1}
+        -- Krastorio: {"sp-matter-science-pack", 1},
+        -- Krastorio: {"sp-advanced-science-pack", 1}
       },
       time = 15
     },
@@ -4712,8 +4712,8 @@ data:extend({
         {"sp-nuclear-science-pack-3", 1},
         {"sp-space-science-pack-3", 1},
         {"sp-utility-science-pack-3", 1},
-        -- Krastorio: {"matter-tech-card", 1},
-        -- Krastorio: {"advanced-tech-card", 1}
+        -- Krastorio: {"sp-matter-science-pack", 1},
+        -- Krastorio: {"sp-advanced-science-pack", 1}
       },
       time = 15
     },
@@ -4755,8 +4755,8 @@ data:extend({
         {"sp-nuclear-science-pack-3", 1},
         {"sp-space-science-pack-3", 1},
         {"sp-utility-science-pack-3", 1},
-        -- Krastorio: {"matter-tech-card", 1},
-        -- Krastorio: {"advanced-tech-card", 1}
+        -- Krastorio: {"sp-matter-science-pack", 1},
+        -- Krastorio: {"sp-advanced-science-pack", 1}
       },
       time = 15
     },
@@ -4811,8 +4811,8 @@ data:extend({
         {"sp-nuclear-science-pack-3", 1},
         {"sp-space-science-pack-3", 1},
         {"sp-utility-science-pack-3", 1},
-        -- Krastorio: {"matter-tech-card", 1},
-        -- Krastorio: {"advanced-tech-card", 1}
+        -- Krastorio: {"sp-matter-science-pack", 1},
+        -- Krastorio: {"sp-advanced-science-pack", 1}
       },
       time = 15
     },
@@ -4864,8 +4864,8 @@ data:extend({
         {"sp-space-science-pack-3", 1},
         {"sp-utility-science-pack-3", 1},
         {"space-science-pack", 1},
-        -- {"matter-tech-card", 1},
-        -- {"advanced-tech-card", 1}
+        -- {"sp-matter-science-pack", 1},
+        -- {"sp-advanced-science-pack", 1}
       },
       time = 15
     },
@@ -4914,8 +4914,8 @@ data:extend({
         {"sp-space-science-pack-3", 1},
         {"sp-utility-science-pack-3", 1},
         {"space-science-pack", 1},
-        -- {"matter-tech-card", 1},
-        -- {"advanced-tech-card", 1}
+        -- {"sp-matter-science-pack", 1},
+        -- {"sp-advanced-science-pack", 1}
       },
       time = 15
     },
@@ -4965,8 +4965,8 @@ data:extend({
         {"sp-space-science-pack-3", 1},
         {"sp-utility-science-pack-3", 1},
         {"space-science-pack", 1},
-        -- {"matter-tech-card", 1},
-        -- {"advanced-tech-card", 1}
+        -- {"sp-matter-science-pack", 1},
+        -- {"sp-advanced-science-pack", 1}
       },
       time = 15
     },
@@ -5009,8 +5009,8 @@ data:extend({
         {"sp-space-science-pack-3", 1},
         {"sp-utility-science-pack-3", 1},
         {"space-science-pack", 1},
-        -- Krastorio: {"matter-tech-card", 1},
-        -- Krastorio: {"advanced-tech-card", 1}
+        -- Krastorio: {"sp-matter-science-pack", 1},
+        -- Krastorio: {"sp-advanced-science-pack", 1}
       },
       time = 15
     },
@@ -5069,8 +5069,8 @@ data:extend({
         {"sp-space-science-pack-3", 1},
         {"sp-utility-science-pack-3", 1},
         {"space-science-pack", 1},
-        -- Krastorio: {"matter-tech-card", 1},
-        -- Krastorio: {"advanced-tech-card", 1}
+        -- Krastorio: {"sp-matter-science-pack", 1},
+        -- Krastorio: {"sp-advanced-science-pack", 1}
       },
       time = 15
     },
@@ -5116,9 +5116,9 @@ data:extend({
         {"sp-space-science-pack-3", 1},
         {"sp-utility-science-pack-3", 1},
         {"space-science-pack", 1},
-        -- Krastorio: {"matter-tech-card", 1},
-        -- Krastorio: {"advanced-tech-card", 1},
-        -- Krastorio: {"singularity-tech-card", 1}
+        -- Krastorio: {"sp-matter-science-pack", 1},
+        -- Krastorio: {"sp-advanced-science-pack", 1},
+        -- Krastorio: {"sp-singularity-science-pack", 1}
       },
       time = 15
     },
@@ -5167,8 +5167,8 @@ data:extend({
         {"sp-space-science-pack-3", 1},
         {"sp-utility-science-pack-3", 1},
         {"space-science-pack", 1},
-        -- Krastorio: {"matter-tech-card", 1},
-        -- Krastorio: {"advanced-tech-card", 1}
+        -- Krastorio: {"sp-matter-science-pack", 1},
+        -- Krastorio: {"sp-advanced-science-pack", 1}
       },
       time = 15
     },
@@ -5213,9 +5213,9 @@ data:extend({
         {"sp-space-science-pack-3", 1},
         {"sp-utility-science-pack-3", 1},
         {"space-science-pack", 1},
-        -- Krastorio: {"matter-tech-card", 1},
-        -- Krastorio: {"advanced-tech-card", 1},
-        -- Krastorio: {"singularity-tech-card", 1}
+        -- Krastorio: {"sp-matter-science-pack", 1},
+        -- Krastorio: {"sp-advanced-science-pack", 1},
+        -- Krastorio: {"sp-singularity-science-pack", 1}
       },
       time = 15
     },
@@ -5256,9 +5256,9 @@ data:extend({
         {"sp-space-science-pack-3", 1},
         {"sp-utility-science-pack-3", 1},
         {"space-science-pack", 1},
-        -- Krastorio: {"matter-tech-card", 1},
-        -- Krastorio: {"advanced-tech-card", 1},
-        -- Krastorio: {"singularity-tech-card", 1}
+        -- Krastorio: {"sp-matter-science-pack", 1},
+        -- Krastorio: {"sp-advanced-science-pack", 1},
+        -- Krastorio: {"sp-singularity-science-pack", 1}
       },
       time = 15
     },
@@ -5300,9 +5300,9 @@ data:extend({
         {"sp-space-science-pack-3", 1},
         {"sp-utility-science-pack-3", 1},
         {"space-science-pack", 1},
-        -- Krastorio: {"matter-tech-card", 1},
-        -- Krastorio: {"advanced-tech-card", 1},
-        -- Krastorio: {"singularity-tech-card", 1}
+        -- Krastorio: {"sp-matter-science-pack", 1},
+        -- Krastorio: {"sp-advanced-science-pack", 1},
+        -- Krastorio: {"sp-singularity-science-pack", 1}
       },
       time = 15
     },
@@ -5351,9 +5351,9 @@ data:extend({
         {"sp-space-science-pack-3", 1},
         {"sp-utility-science-pack-3", 1},
         {"space-science-pack", 1},
-        -- Krastorio: {"matter-tech-card", 1},
-        -- Krastorio: {"advanced-tech-card", 1},
-        -- Krastorio: {"singularity-tech-card", 1}
+        -- Krastorio: {"sp-matter-science-pack", 1},
+        -- Krastorio: {"sp-advanced-science-pack", 1},
+        -- Krastorio: {"sp-singularity-science-pack", 1}
       },
       time = 15
     },
@@ -5398,9 +5398,9 @@ data:extend({
         {"sp-space-science-pack-3", 1},
         {"sp-utility-science-pack-3", 1},
         {"space-science-pack", 1},
-        -- Krastorio: {"matter-tech-card", 1},
-        -- Krastorio: {"advanced-tech-card", 1},
-        -- Krastorio: {"singularity-tech-card", 1}
+        -- Krastorio: {"sp-matter-science-pack", 1},
+        -- Krastorio: {"sp-advanced-science-pack", 1},
+        -- Krastorio: {"sp-singularity-science-pack", 1}
       },
       time = 15
     },
@@ -5509,8 +5509,8 @@ data:extend({
         {"sp-nuclear-science-pack-3", 1},
         {"sp-space-science-pack-3", 1},
         {"sp-utility-science-pack-3", 1},
-        -- Krastorio: {"matter-tech-card", 1},
-        -- Krastorio: {"advanced-tech-card", 1},
+        -- Krastorio: {"sp-matter-science-pack", 1},
+        -- Krastorio: {"sp-advanced-science-pack", 1},
         -- Krastorio: {"space-science-pack", 1}
       },
       time = 15
@@ -5558,8 +5558,8 @@ data:extend({
         {"sp-space-science-pack-3", 1},
         {"sp-utility-science-pack-3", 1},
         {"space-science-pack", 1},
-        -- Krastorio: {"matter-tech-card", 1},
-        -- Krastorio: {"advanced-tech-card", 1}
+        -- Krastorio: {"sp-matter-science-pack", 1},
+        -- Krastorio: {"sp-advanced-science-pack", 1}
       },
       time = 15
     },
@@ -5652,8 +5652,8 @@ data:extend({
         {"sp-space-science-pack-3", 1},
         {"sp-utility-science-pack-3", 1},
         {"space-science-pack", 1},
-        -- Krastorio: {"matter-tech-card", 1},
-        -- Krastorio: {"advanced-tech-card", 1}
+        -- Krastorio: {"sp-matter-science-pack", 1},
+        -- Krastorio: {"sp-advanced-science-pack", 1}
       },
       time = 15
     },
@@ -5770,8 +5770,8 @@ data:extend({
         {"sp-space-science-pack-3", 1},
         {"sp-utility-science-pack-3", 1},
         {"space-science-pack", 1},
-        -- Krastorio: {"matter-tech-card", 1},
-        -- Krastorio: {"advanced-tech-card", 1}
+        -- Krastorio: {"sp-matter-science-pack", 1},
+        -- Krastorio: {"sp-advanced-science-pack", 1}
       },
       time = 15
     },
@@ -6111,38 +6111,6 @@ data:extend({
         {"sp-geological-science-pack-1", 1},
         {"sp-material-science-pack-1", 1},
         {"production-science-pack", 1}
-      },
-      time = 15
-    },
-    order = "a-h-a"
-  },
-  {
-    type = "technology",
-    name = "space-science-pack",  -- #ForRegEx# - technology
-    icon_size = 64,
-    icon = "__Spaghetorio__/graphics/krastorio/icons/cards/matter-tech-card.png",
-    effects =
-    {
-      {
-        type = "unlock-recipe",
-        recipe = "space-science-pack"
-      },
-    },
-    prerequisites = {
-      "rocket-silo"
-    },
-    unit =
-    {
-      count = 250,
-      ingredients = {
-        {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"sp-material-science-pack-2", 1},
-        {"sp-electronic-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1},
-        {"sp-computer-science-pack-2", 1},
-        {"production-science-pack", 1},
-        {"utility-science-pack", 1}
       },
       time = 15
     },
@@ -6496,7 +6464,7 @@ data:extend({
         {"sp-production-science-pack-3", 1},
         {"sp-nuclear-science-pack-3", 1},
         {"space-science-pack", 1},
-        {"matter-tech-card", 1},
+        {"sp-matter-science-pack", 1},
         {"sp-utility-science-pack-3", 1}
       },
       time = 15
@@ -6637,9 +6605,9 @@ data:extend({
         {"sp-space-science-pack-3", 1},
         {"sp-utility-science-pack-3", 1},
         {"space-science-pack", 1},
-        -- Krastorio: {"matter-tech-card", 1},
-        -- Krastorio: {"advanced-tech-card", 1},
-        -- Krastorio: {"singularity-tech-card", 1}
+        -- Krastorio: {"sp-matter-science-pack", 1},
+        -- Krastorio: {"sp-advanced-science-pack", 1},
+        -- Krastorio: {"sp-singularity-science-pack", 1}
       },
       time = 15
     },
@@ -6692,9 +6660,9 @@ data:extend({
         {"sp-space-science-pack-3", 1},
         {"sp-utility-science-pack-3", 1},
         {"space-science-pack", 1},
-        -- Krastorio: {"matter-tech-card", 1},
-        -- Krastorio: {"advanced-tech-card", 1},
-        -- Krastorio: {"singularity-tech-card", 1}
+        -- Krastorio: {"sp-matter-science-pack", 1},
+        -- Krastorio: {"sp-advanced-science-pack", 1},
+        -- Krastorio: {"sp-singularity-science-pack", 1}
       },
       time = 60
     },
@@ -6747,9 +6715,9 @@ data:extend({
         {"sp-utility-science-pack-3", 1},
         {"space-science-pack", 1},
         {"sp-uniformity-science-pack", 1},
-        -- Krastorio: {"matter-tech-card", 1},
-        -- Krastorio: {"advanced-tech-card", 1},
-        -- Krastorio: {"singularity-tech-card", 1}
+        -- Krastorio: {"sp-matter-science-pack", 1},
+        -- Krastorio: {"sp-advanced-science-pack", 1},
+        -- Krastorio: {"sp-singularity-science-pack", 1}
       },
       time = 60
     },
@@ -7027,9 +6995,9 @@ data:extend({
         {"sp-utility-science-pack-3", 1},
         {"space-science-pack", 1},
         {"sp-uniformity-science-pack", 1},
-        -- Krastorio: {"matter-tech-card", 1},
-        -- Krastorio: {"advanced-tech-card", 1},
-        -- Krastorio: {"singularity-tech-card", 1}
+        -- Krastorio: {"sp-matter-science-pack", 1},
+        -- Krastorio: {"sp-advanced-science-pack", 1},
+        -- Krastorio: {"sp-singularity-science-pack", 1}
       },
       time = 60
     },
@@ -7066,8 +7034,8 @@ data:extend({
         {"sp-space-science-pack-3", 1},
         {"sp-utility-science-pack-3", 1},
         {"space-science-pack", 1}
-        -- Krastorio: {"advanced-tech-card", 1}
-        -- Krastorio: {"matter-tech-card", 1}
+        -- Krastorio: {"sp-advanced-science-pack", 1}
+        -- Krastorio: {"sp-matter-science-pack", 1}
       },
       time = 30,
       count_formula = "(1.5^(L-6))*1000"
@@ -7123,8 +7091,8 @@ data:extend({
         {"sp-space-science-pack-3", 1},
         {"sp-utility-science-pack-3", 1},
         {"space-science-pack", 1},
-        -- Krastorio: {"matter-tech-card", 1},
-        -- Krastorio: {"advanced-tech-card", 1},
+        -- Krastorio: {"sp-matter-science-pack", 1},
+        -- Krastorio: {"sp-advanced-science-pack", 1},
       },
       time = 60
     },
@@ -7181,9 +7149,9 @@ data:extend({
         {"sp-utility-science-pack-3", 1},
         {"space-science-pack", 1},
         {"sp-uniformity-science-pack", 1},
-        -- Krastorio: {"matter-tech-card", 1},
-        -- Krastorio: {"advanced-tech-card", 1},
-        -- Krastorio: {"singularity-tech-card", 1}
+        -- Krastorio: {"sp-matter-science-pack", 1},
+        -- Krastorio: {"sp-advanced-science-pack", 1},
+        -- Krastorio: {"sp-singularity-science-pack", 1}
       },
       time = 60
     },
@@ -7236,9 +7204,9 @@ data:extend({
         {"sp-utility-science-pack-3", 1},
         {"space-science-pack", 1},
         {"sp-uniformity-science-pack", 1},
-        -- Krastorio: {"matter-tech-card", 1},
-        -- Krastorio: {"advanced-tech-card", 1},
-        -- Krastorio: {"singularity-tech-card", 1}
+        -- Krastorio: {"sp-matter-science-pack", 1},
+        -- Krastorio: {"sp-advanced-science-pack", 1},
+        -- Krastorio: {"sp-singularity-science-pack", 1}
       },
       time = 60
     },
@@ -7291,9 +7259,9 @@ data:extend({
         {"sp-utility-science-pack-3", 1},
         {"space-science-pack", 1},
         {"sp-uniformity-science-pack", 1},
-        -- Krastorio: {"matter-tech-card", 1},
-        -- Krastorio: {"advanced-tech-card", 1},
-        -- Krastorio: {"singularity-tech-card", 1}
+        -- Krastorio: {"sp-matter-science-pack", 1},
+        -- Krastorio: {"sp-advanced-science-pack", 1},
+        -- Krastorio: {"sp-singularity-science-pack", 1}
       },
       time = 60
     },

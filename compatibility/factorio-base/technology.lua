@@ -1497,7 +1497,7 @@ data.raw.technology["worker-robots-speed-6"].unit.ingredients = {
   {"sp-space-science-pack-3", 1},
   {"sp-utility-science-pack-3", 1},
   {"space-science-pack", 1},
-  -- Krastorio: {"matter-tech-card", 1}
+  -- Krastorio: {"sp-matter-science-pack", 1}
 }
 
 data.raw.technology["worker-robots-speed-7"].unit.count_formula = "1500+(L-6)*500"
@@ -1514,7 +1514,7 @@ data.raw.technology["worker-robots-speed-7"].unit.ingredients = {
   {"sp-space-science-pack-3", 1},
   {"sp-utility-science-pack-3", 1},
   {"space-science-pack", 1},
-  -- Krastorio: {"matter-tech-card", 1}
+  -- Krastorio: {"sp-matter-science-pack", 1}
 }
 
 data.raw.technology["worker-robots-storage-1"].prerequisites = {

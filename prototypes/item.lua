@@ -1394,16 +1394,6 @@ data:extend({
   },
   {
     type = "item",
-    name = "tungsten-plate",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/icons/tungsten-slab.png",
-    icon_size = 64,
-    scale = 0.5,
-    subgroup = "raw-material",
-    order = "ingot-[tungsten-slab]",
-    stack_size = 100
-  },
-  {
-    type = "item",
     name = "sp-cement",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/cement.png",
     icon_size = 64,
@@ -4972,7 +4962,7 @@ data:extend({
   ------------------------------------------------------------------------------
   {
     type = "tool",
-    name = "matter-tech-card",  -- #ForRegEx# - tool
+    name = "sp-matter-science-pack",  -- #ForRegEx# - tool
     localised_description = {"item-description.science-pack"},
     icon = "__Spaghetorio__/graphics/icons/matter-science-pack-3.png",
     icon_size = 64,
@@ -4986,7 +4976,7 @@ data:extend({
   },
   {
     type = "tool",
-    name = "optimization-tech-card",
+    name = "sp-optimization-science-pack",  -- #ForRegEx# - tool
     localised_description = { "item-description.science-pack" },
     icon = "__Spaghetorio__/graphics/krastorio/icons/cards/optimization-tech-card.png",
     stack_size = 200,
@@ -5018,7 +5008,7 @@ data:extend({
   },
   {
     type = "tool",
-    name = "advanced-tech-card",
+    name = "sp-advanced-science-pack",  -- #ForRegEx# - tool
     localised_description = { "item-description.science-pack" },
     icon = "__Spaghetorio__/graphics/krastorio/icons/cards/advanced-tech-card.png",
     stack_size = 200,
@@ -5050,7 +5040,7 @@ data:extend({
   },
   {
     type = "tool",
-    name = "singularity-tech-card",
+    name = "sp-singularity-science-pack",  -- #ForRegEx# - tool
     localised_description = { "item-description.science-pack" },
     icon = "__Spaghetorio__/graphics/krastorio/icons/cards/singularity-tech-card.png",
     stack_size = 200,
