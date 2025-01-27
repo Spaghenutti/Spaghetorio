@@ -84,7 +84,7 @@ data:extend({
     type = "technology",
     name = "sp-iron-machining",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghetorio__/graphics/technology/hr-iron-gear-wheel.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/machined-parts-3.png",
     effects =
     {
       {
@@ -1484,7 +1484,7 @@ data:extend({
     name = "sp-optics",  -- #ForRegEx# - technology
     icon_size = 256,
     mip_maps = 4,
-    icon = "__base__/graphics/technology/optics.png",
+    icon = "__base__/graphics/technology/lamp.png",
     effects =
     {
       {
