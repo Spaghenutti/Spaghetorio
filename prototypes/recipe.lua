@@ -7142,7 +7142,7 @@ data:extend({
     ingredients = {
       {type = "item", name = "sp-yemnuth-pearls", amount = 8},
       {type = "item", name = "sp-chromium-plate", amount = 5},
-      {type = "item", name = "sp-stibnite", amount = 3},
+      {type = "item", name = "sp-antimony", amount = 3},
       {type = "item", name = "sp-yttrium", amount = 2},
       {type = "item", name = "sp-high-purity-silicon", amount = 4},
     },
@@ -7477,7 +7477,7 @@ data:extend({
       {type = "item", name = "sp-grobgnum-shard", amount = 2},
       {type = "item", name = "sp-grobgnum-plate", amount = 2},
       {type = "item", name = "sp-glass-fiber", amount = 1},
-      {type = "item", name = "sp-stibnite", amount = 1},
+      {type = "item", name = "sp-antimony", amount = 1},
       {type = "fluid", name = "sp-grobgnumylene", amount = 5},
       {type = "item", name = "sp-biomass", amount = 2},
       {type = "item", name = "sp-ai-core", amount = 2}
@@ -7724,7 +7724,7 @@ data:extend({
     ingredients = {
       {type = "item", name = "sp-yemnuth-pearls", amount = 8},
       {type = "item", name = "sp-yemnuth-plate", amount = 1},
-      {type = "item", name = "sp-stibnite", amount = 1},
+      {type = "item", name = "sp-antimony", amount = 1},
       {type = "fluid", name = "sp-heavy-water", amount = 10},
     },
     results = {

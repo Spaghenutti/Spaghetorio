@@ -1,7 +1,59 @@
 
 Factorio Space age
   - Add some new ores (note down how they are supposed to be processed)
-    - ...
+    + barium-ore
+      - barium-ore + sulfuric-acid -> barium-sulfamate (chemistry)
+      - barium-sulfamate + carbon -> barium-sulfide (smelting)
+      - barium-sulfide -> barium-billet (smelting)
+      - barium-sulfide + oxygen -> drilling-fluid
+      - barium-sulfide + carbon + oxygen -> barium-carbonate + sulfur (barium-carbonate used in glass and ceramics)
+      - barium-billet + titanium-ingot -> barium-titanate (for electronic components like capacitors)
+    + mercury-ore
+      - mercury-ore -> mercury + sulfur + stone
+      - used in relay
+      - used in catalyst
+    + stibnite
+      - stibnite -> antimony-oxide (smelting)
+      - antimony-oxide + carbon -> antimony (smelting)
+      - antimony + chlorine -> antimony-trichloride (used for organic synthesis)
+      - antimony + iod -> antimony-triiodide (thin film for semiconductor)
+      - copper + antimony -> copper-antimony (for bearings, solar cells and electronic layers)
+      - add uses to antimony
+    - boron-ore (kernite)
+      - boron-ore + phosphoric-acid -> sodium-borate (chemistry)
+      - sodium-borate + chlorine -> boron + salt (chemistry)
+      - boron + hydrogen -> diborane (B2H6) (rocket fuel and used to produce high purity boron)
+      - boron + carbon -> boron-carbide (B4C) (abrasive materials, armor plating, and neutron radiation control)
+      - boron + phosphorus -> boron-phosphide (BP) (High temperature semiconductor)
+      - boron + silicon -> boron-silicade (B6Si) (High temperature semiconductor)
+    + cobalt-ore
+      - cobalt-ore -> crushed-cobalt-ore + arsenic-trioxide (crushing)
+      - cobalt-ore -> cobalt-oxide (smelting)
+      - cobalt-oxide + sulfuric-acid -> cobalt-sulfate (chemistry)
+      - cobalt-sulfate -> cobalt
+      - 30% nickel + 70% cobalt -> nickel-cobalt (corrosion resistant)
+      - 60% nickel + 20% chromium + 20% cobalt -> waspaloy (used in Aerospace and gas turbine)
+      - 60% cobalt + 30% Chromium + 6% tungsten + 2% manganese + 2% molybdenum = satellite 6 alloy (used in cutting tools and wear resistant applications)
+      - 40% cobalt, 20% chromium, 15% nickel, 15% iron, 8% molybdenum, 2% manganese = elgiloy (for springs and mdeical devices)
+      - Nickel (18%), Cobalt (8-12%), Molybdenum (3-5%) rest iron -> maraging-steel (used for Aerospace, tooling)
+      - Nickel (29%), Cobalt (17%), Iron (balance) -> kovar (used for Electronics, glass-to-metal seals)
+      - arsenic-trioxide + hydrogen -> arsen
+      - arsen + sulfur -> arsenic-sulfide (As2S3) (Used as a semiconductor material)
+      - arsen + iod -> arsenic-iodide (AsI3) (Used in the synthesis of organic arsenic compounds and as a reagent in chemical analysis)
+    - molybdenum-ore
+      - molybdenum-ore -> molybdenum-trioxide (smelting)
+      - molybdenum-trioxide -> molybdenum (smelting)
+      - lead + molybden + oxygen -> lead-molybdate (PbMoO4) (for radiation measurement)
+      - sodium + molybden + oxygen -> sodium->molybdate (Na2MoO4) (for water treatment)
+    - manganese-ore
+      - manganese-ore -> manganese-dioxide (smelting)
+      - manganese-dioxide -> manganese (electrolysis)
+      - manganese + chlorine -> manganese-chloride (MnCl2) (for battery cells)
+      - check aluminum alloys that already exist in spaghetorio mod that might use manganese
+
+
+
+
   - Add ores for core extractor
     - ...
     - add core extractor
@@ -10,9 +62,12 @@ Factorio Space age
       - dummy technology
   - Update groups
     - add new biological group
+    - separate base-products group into base-products and base-materials
     - update subgroups
     - update orders
   - Add remaining hurricane buildings
+  - remove catalyst items, recipes and technologies
+  - remove all factorio alternative recipe chains for processing liquids on different planets
   - Add weight to every item
   - Space age items - Spaghetorio
     - ammonia - ammonia
