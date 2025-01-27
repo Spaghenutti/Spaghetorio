@@ -1,4 +1,18 @@
+
 Factorio Space age
+  - Add some new ores (note down how they are supposed to be processed)
+    - ...
+  - Add ores for core extractor
+    - ...
+    - add core extractor
+      - building
+      - dummy recipe
+      - dummy technology
+  - Update groups
+    - add new biological group
+    - update subgroups
+    - update orders
+  - Add remaining hurricane buildings
   - Add weight to every item
   - Space age items - Spaghetorio
     - ammonia - ammonia
@@ -11,6 +25,8 @@ Factorio Space age
     - superconductor - superconductor
   - Update recepies for
     - lithium processing
+    - tungsten processing
+    + remove everything regarding limestone
   - ores
     + limestone as barium ore (baryt)
     + tungsten ore as mercury ore (cinnabar)

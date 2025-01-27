@@ -136,6 +136,7 @@ data.raw.planet["nauvis"].map_gen_settings.autoplace_controls["sp-cobalt-ore"] =
 data.raw.planet["nauvis"].map_gen_settings.autoplace_controls["sp-magnesium-ore"] = {}
 data.raw.planet["nauvis"].map_gen_settings.autoplace_controls["sp-mercury-ore"] = {}
 data.raw.planet["nauvis"].map_gen_settings.autoplace_controls["sp-nickel-ore"] = {}
+data.raw.planet["nauvis"].map_gen_settings.autoplace_controls["sp-stibnite"] = {}
 data.raw.planet["nauvis"].map_gen_settings.autoplace_controls["sp-tinstone"] = {}
 data.raw.planet["nauvis"].map_gen_settings.autoplace_controls["sp-titanium-ore"] = {}
 data.raw.planet["nauvis"].map_gen_settings.autoplace_controls["sp-zinc-ore"] = {}
