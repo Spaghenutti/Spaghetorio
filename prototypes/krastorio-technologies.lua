@@ -140,163 +140,139 @@ data:extend({
       time = 45,
     },
   },
---   {
---     type = "technology",
---     name = "sp-kr-air-purification",
---     
---     icon = "__Spaghetorio__/graphics/krastorio/technologies/air-purifier.png",
---     icon_size = 256,
---     icon_mipmaps = 4,
---     effects = {
---       {
---         type = "unlock-recipe",
---         recipe = "sp-kr-air-purifier",
---       },
---       {
---         type = "unlock-recipe",
---         recipe = "pollution-filter",
---       },
---       {
---         type = "unlock-recipe",
---         recipe = "sp-kr-air-cleaning",
---       },
---       {
---         type = "unlock-recipe",
---         recipe = "restore-used-pollution-filter",
---       },
---     },
---     prerequisites = { "sp-kr-advanced-chemistry", "engine" },
---     order = "a-e-d",
---     unit = {
---       count = 275,
---       ingredients = {
---         { "automation-science-pack", 1 },
---         { "logistic-science-pack", 1 },
---         { "chemical-science-pack", 1 },
---       },
---       time = 45,
---     },
---   },
---   {
---     type = "technology",
---     name = "sp-kr-fusion-energy",
---     
---     icon = "__Spaghetorio__/graphics/krastorio/technologies/fusion-energy.png",
---     icon_size = 256,
---     icon_mipmaps = 4,
---     effects = {
---       {
---         type = "unlock-recipe",
---         recipe = "sp-kr-fusion-reactor",
---       },
---       {
---         type = "unlock-recipe",
---         recipe = "sp-kr-advanced-steam-turbine",
---       },
---       {
---         type = "unlock-recipe",
---         recipe = krastorio.recipes.changed_names["heavy-water"] or "heavy-water",
---       },
---       {
---         type = "unlock-recipe",
---         recipe = krastorio.recipes.changed_names["tritium"] or "tritium",
---       },
---       {
---         type = "unlock-recipe",
---         recipe = krastorio.recipes.changed_names["empty-dt-fuel"] or "empty-dt-fuel",
---       },
---       {
---         type = "unlock-recipe",
---         recipe = krastorio.recipes.changed_names["dt-fuel"] or "dt-fuel",
---       },
---     },
---     prerequisites = {
---       "advanced-electronics-2",
---       "sp-kr-lithium-processing",
---       "nuclear-power",
---       "utility-science-pack",
---       "low-density-structure",
---       "kovarex-enrichment-process",
---     },
---     unit = {
---       count = 1500,
---       ingredients = {
---         { "automation-science-pack", 1 },
---         { "logistic-science-pack", 1 },
---         { "chemical-science-pack", 1 },
---         { "production-science-pack", 1 },
---         { "utility-science-pack", 1 },
---       },
---       time = 60,
---     },
---   },
---   ---
---   -- Fuels
---   ---
---   {
---     type = "technology",
---     name = "sp-kr-fuel",
---     
---     icon = "__Spaghetorio__/graphics/krastorio/technologies/fuel-refinery.png",
---     icon_size = 256,
---     icon_mipmaps = 4,
---     effects = {
---       {
---         type = "unlock-recipe",
---         recipe = "sp-kr-fuel-refinery",
---       },
---       {
---         type = "unlock-recipe",
---         recipe = krastorio.recipes.changed_names["fuel-1"] or "fuel-1",
---       },
---       {
---         type = "unlock-recipe",
---         recipe = krastorio.recipes.changed_names["fuel-2"] or "fuel-2",
---       },
---     },
---     prerequisites = { "oil-processing" },
---     unit = {
---       count = 125,
---       ingredients = {
---         { "basic-tech-card", 1 },
---         { "automation-science-pack", 1 },
---         { "logistic-science-pack", 1 },
---       },
---       time = 45,
---     },
---   },
+  {
+    type = "technology",
+    name = "sp-kr-particle-accelerator",
+    icon = "__Spaghetorio__/graphics/krastorio/technologies/fusion-energy.png",
+    icon_size = 256,
+    icon_mipmaps = 4,
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-kr-particle-accelerator",
+      },
+      -- {
+      --   type = "unlock-recipe",
+      --   recipe = "sp-kr-advanced-steam-turbine",
+      -- },
+      -- {
+      --   type = "unlock-recipe",
+      --   recipe = krastorio.recipes.changed_names["heavy-water"] or "heavy-water",
+      -- },
+      -- {
+      --   type = "unlock-recipe",
+      --   recipe = krastorio.recipes.changed_names["tritium"] or "tritium",
+      -- },
+      -- {
+      --   type = "unlock-recipe",
+      --   recipe = krastorio.recipes.changed_names["empty-dt-fuel"] or "empty-dt-fuel",
+      -- },
+      -- {
+      --   type = "unlock-recipe",
+      --   recipe = krastorio.recipes.changed_names["dt-fuel"] or "dt-fuel",
+      -- },
+    },
+    prerequisites = {
+      "processing-unit",
+      -- "sp-kr-lithium-processing",
+      "nuclear-power",
+      "utility-science-pack",
+      "low-density-structure",
+      "kovarex-enrichment-process",
+      -- "sp-superconductor",
+      "sp-crystal-growing",
+      "sp-neodymium-magnet",
+      "sp-nuclear-science-pack-3"
+    },
+    unit = {
+      count = 1500,
+      ingredients = {
+        {"sp-automation-science-pack-3", 1},
+        {"sp-logistic-science-pack-3", 1},
+        {"sp-chemical-science-pack-3", 1},
+        {"sp-electronic-science-pack-3", 1},
+        {"sp-geological-science-pack-3", 1},
+        {"space-science-pack", 1},
+        {"sp-material-science-pack-3", 1},
+        {"sp-nuclear-science-pack-3", 1},
+        {"sp-computer-science-pack-3", 1},
+        {"utility-science-pack", 1},
+      },
+      time = 60,
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-kr-fuel",
+    icon = "__Spaghetorio__/graphics/krastorio/technologies/fuel-refinery.png",
+    icon_size = 256,
+    icon_mipmaps = 4,
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-kr-fuel-refinery",
+      },
+      -- {
+      --   type = "unlock-recipe",
+      --   recipe = krastorio.recipes.changed_names["fuel-1"] or "fuel-1",
+      -- },
+      -- {
+      --   type = "unlock-recipe",
+      --   recipe = krastorio.recipes.changed_names["fuel-2"] or "fuel-2",
+      -- },
+    },
+    prerequisites = {
+      "oil-processing",
+      "sp-pressure-fluid"
+    },
+    unit = {
+      count = 125,
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-electronic-science-pack-1", 1},
+        {"sp-geological-science-pack-1", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"production-science-pack", 1}
+      },
+      time = 45,
+    },
+  },
 --   -----------------------------------------------------------------------------------------------------------------
 --   --------------------------------------------------PURE RECIPES---------------------------------------------------
 --   -----------------------------------------------------------------------------------------------------------------
---   {
---     type = "technology",
---     name = "sp-kr-silicon-processing",
---     
---     icon = "__Spaghetorio__/graphics/krastorio/technologies/silicon-processing.png",
---     icon_size = 256,
---     icon_mipmaps = 4,
---     effects = {
---       {
---         type = "unlock-recipe",
---         recipe = krastorio.recipes.changed_names["silicon"] or "silicon",
---       },
---       {
---         type = "unlock-recipe",
---         recipe = krastorio.recipes.changed_names["quartz"] or "quartz",
---       },
---     },
---     prerequisites = { "sp-kr-fluids-chemistry", "automation-2" },
---     order = "c-a",
---     unit = {
---       count = 125,
---       ingredients = {
---         { "basic-tech-card", 1 },
---         { "automation-science-pack", 1 },
---         { "logistic-science-pack", 1 },
---       },
---       time = 30,
---     },
---   },
+  {
+    type = "technology",
+    name = "sp-kr-silicon-processing",
+    icon = "__Spaghetorio__/graphics/krastorio/technologies/silicon-processing.png",
+    icon_size = 256,
+    icon_mipmaps = 4,
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-silicon",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-quartz",
+      },
+    },
+    prerequisites = {
+      "sp-kr-fluids-chemistry",
+      "automation-2"
+    },
+    order = "c-a",
+    unit = {
+      count = 125,
+      ingredients = {
+        { "basic-tech-card", 1 },
+        { "automation-science-pack", 1 },
+        { "logistic-science-pack", 1 },
+      },
+      time = 30,
+    },
+  },
 --   {
 --     type = "technology",
 --     name = "sp-kr-advanced-chemistry",

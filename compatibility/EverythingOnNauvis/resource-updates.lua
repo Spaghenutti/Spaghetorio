@@ -23,13 +23,13 @@ end
 data.extend({
   noise_expression("sp-aluminum-ore", "resource"),
   noise_expression("sp-chromite", "resource"),
-  noise_expression("sp-limestone", "resource"),
+  noise_expression("sp-cobalt-ore", "resource"),
+  noise_expression("sp-barium-ore", "resource"),
   noise_expression("sp-magnesium-ore", "resource"),
+  noise_expression("sp-mercury-ore", "resource"),
   noise_expression("sp-nickel-ore", "resource"),
-  noise_expression("sp-spodumene", "resource"),
   noise_expression("sp-tinstone", "resource"),
   noise_expression("sp-titanium-ore", "resource"),
-  noise_expression("sp-tungsten-ore", "resource"),
   noise_expression("sp-zinc-ore", "resource"),
   noise_expression("sp-zirconium-ore", "resource"),
 
@@ -42,13 +42,13 @@ data.extend({
 
 terrain.mask_off_ammonia_ocean("sp-aluminum-ore", "resource")
 terrain.mask_off_ammonia_ocean("sp-chromite", "resource")
-terrain.mask_off_ammonia_ocean("sp-limestone", "resource")
+terrain.mask_off_ammonia_ocean("sp-cobalt-ore", "resource")
+terrain.mask_off_ammonia_ocean("sp-barium-ore", "resource")
+terrain.mask_off_ammonia_ocean("sp-mercury-ore", "resource")
 terrain.mask_off_ammonia_ocean("sp-magnesium-ore", "resource")
 terrain.mask_off_ammonia_ocean("sp-nickel-ore", "resource")
-terrain.mask_off_ammonia_ocean("sp-spodumene", "resource")
 terrain.mask_off_ammonia_ocean("sp-tinstone", "resource")
 terrain.mask_off_ammonia_ocean("sp-titanium-ore", "resource")
-terrain.mask_off_ammonia_ocean("sp-tungsten-ore", "resource")
 terrain.mask_off_ammonia_ocean("sp-zinc-ore", "resource")
 terrain.mask_off_ammonia_ocean("sp-zirconium-ore", "resource")
 

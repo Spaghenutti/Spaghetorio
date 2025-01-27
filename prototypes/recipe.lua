@@ -20,7 +20,7 @@ local util = require("data-util")
 --    - "sp-zircon"
 --    - "sp-platinum"
 --    - "sp-palladium"
---    - "sp-tungsten-slab"
+--    - "tungsten-plate"
 --    - "sp-niobium-powder"
 --    - "sp-niobium-billet"
 --    - "sp-lithium-oxide"
@@ -341,7 +341,7 @@ data:extend({
     enabled = false,
     energy_required = 8,
     ingredients = {
-      {type = "item", name = "sp-tungsten-ore", amount = 2}
+      {type = "item", name = "tungsten-ore", amount = 2}
     },
     results = {
       {type = "item", name = "sp-ammonium-paratungstate", amount = 1}
@@ -359,19 +359,6 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-tungsten-powder", amount = 6}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-tungsten-slab",  -- #ForRegEx# - recipe
-    category = "smelting",
-    enabled = false,
-    energy_required = 6,
-    ingredients = {
-      {type = "item", name = "sp-tungsten-powder", amount = 6}
-    },
-    results = {
-      {type = "item", name = "sp-tungsten-slab", amount = 3}
     }
   },
   {
@@ -427,19 +414,6 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-stibnite",  -- #ForRegEx# - recipe
-    category = "smelting",
-    enabled = false,
-    energy_required = 5,
-    ingredients = {
-      {type = "item", name = "sp-limestone", amount = 4}
-    },
-    results = {
-      {type = "item", name = "sp-stibnite", amount = 1}
-    }
-  },
-  {
-    type = "recipe",
     name = "sp-antimony",  -- #ForRegEx# - recipe
     icon = "__Spaghetorio__/graphics/icons/antimony.png",
     icon_size = 64,
@@ -488,25 +462,25 @@ data:extend({
       {type = "item", name = "sp-glass", amount = 10}
     }
   },
-  {
-    type = "recipe",
-    name = "sp-lithium-oxide",  -- #ForRegEx# - recipe
-    icon = "__Spaghetorio__/graphics/icons/lithium-oxide.png",
-    icon_size = 64,
-    mip_maps = 4,
-    category = "smelting",
-    subgroup = "processed-resource",
-    enabled = false,
-    energy_required = 3.6,
-    ingredients = {
-      {type = "item", name = "sp-spodumene", amount = 4}
-    },
-    results = {
-      {type = "item", name = "sp-lithium-oxide", amount = 1},
-      {type = "item", name = "sp-alumina", amount = 1},
-      {type = "item", name = "sp-silica", amount = 1}
-    }
-  },
+  -- {
+  --   type = "recipe",
+  --   name = "sp-lithium-oxide",  -- #ForRegEx# - recipe
+  --   icon = "__Spaghetorio__/graphics/icons/lithium-oxide.png",
+  --   icon_size = 64,
+  --   mip_maps = 4,
+  --   category = "smelting",
+  --   subgroup = "processed-resource",
+  --   enabled = false,
+  --   energy_required = 3.6,
+  --   ingredients = {
+  --     {type = "item", name = "sp-spodumene", amount = 4}
+  --   },
+  --   results = {
+  --     {type = "item", name = "sp-lithium-oxide", amount = 1},
+  --     {type = "item", name = "sp-alumina", amount = 1},
+  --     {type = "item", name = "sp-silica", amount = 1}
+  --   }
+  -- },
   ------------------------------------------------------------------------------
   -- MARK: crushed-smelting
   ------------------------------------------------------------------------------
@@ -958,7 +932,7 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "intermediate-smelting",
-    subgroup = "raw-resource",
+    subgroup = "processed-resource",
     enabled = false,
     energy_required = 4,
     hide_from_player_crafting = true,
@@ -1051,7 +1025,7 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "enriching-raw-resource",
-    subgroup = "enriched-resource",
+    subgroup = "enriched-resource-recipe",
     enabled = false,
     energy_required = 2,
     ingredients = {
@@ -1077,7 +1051,7 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "enriching-raw-resource",
-    subgroup = "enriched-resource",
+    subgroup = "enriched-resource-recipe",
     enabled = false,
     energy_required = 2,
     ingredients = {
@@ -1104,7 +1078,7 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "enriching-raw-resource",
-    subgroup = "enriched-resource",
+    subgroup = "enriched-resource-recipe",
     enabled = false,
     energy_required = 2,
     ingredients = {
@@ -1131,7 +1105,7 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "enriching-raw-resource",
-    subgroup = "enriched-resource",
+    subgroup = "enriched-resource-recipe",
     enabled = false,
     energy_required = 2,
     ingredients = {
@@ -1158,7 +1132,7 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "enriching-raw-resource",
-    subgroup = "enriched-resource",
+    subgroup = "enriched-resource-recipe",
     enabled = false,
     energy_required = 3,
     ingredients = {
@@ -1185,7 +1159,7 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "enriching-raw-resource",
-    subgroup = "enriched-resource",
+    subgroup = "enriched-resource-recipe",
     enabled = false,
     energy_required = 4,
     ingredients = {
@@ -1212,11 +1186,11 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "enriching-raw-resource",
-    subgroup = "enriched-resource",
+    subgroup = "enriched-resource-recipe",
     enabled = false,
     energy_required = 2,
     ingredients = {
-      {type = "item", name = "sp-tungsten-ore", amount = 10},
+      {type = "item", name = "tungsten-ore", amount = 10},
       {type = "fluid", name = "sp-nitric-acid", amount = 4},
       {type = "fluid", name = "water", amount = 35}
     },
@@ -1239,7 +1213,7 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "enriching-raw-resource",
-    subgroup = "enriched-resource",
+    subgroup = "enriched-resource-recipe",
     enabled = false,
     energy_required = 3.2,
     ingredients = {
@@ -1269,7 +1243,7 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "enriching-crushed-resource",
-    subgroup = "enriched-resource",
+    subgroup = "enriched-crushed-resource-recipe",
     enabled = false,
     energy_required = 2.5,
     hide_from_player_crafting = true,
@@ -1298,7 +1272,7 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "enriching-crushed-resource",
-    subgroup = "enriched-resource",
+    subgroup = "enriched-crushed-resource-recipe",
     enabled = false,
     energy_required = 1.5,
     hide_from_player_crafting = true,
@@ -1326,7 +1300,7 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "enriching-crushed-resource",
-    subgroup = "enriched-resource",
+    subgroup = "enriched-crushed-resource-recipe",
     enabled = false,
     energy_required = 1.5,
     hide_from_player_crafting = true,
@@ -1354,7 +1328,7 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "enriching-crushed-resource",
-    subgroup = "enriched-resource",
+    subgroup = "enriched-crushed-resource-recipe",
     enabled = false,
     energy_required = 1.5,
     hide_from_player_crafting = true,
@@ -1383,7 +1357,7 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "enriching-crushed-resource",
-    subgroup = "enriched-resource",
+    subgroup = "enriched-crushed-resource-recipe",
     enabled = false,
     energy_required = 1.5,
     hide_from_player_crafting = true,
@@ -1412,7 +1386,7 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "enriching-crushed-resource",
-    subgroup = "enriched-resource",
+    subgroup = "enriched-crushed-resource-recipe",
     enabled = false,
     energy_required = 1.5,
     hide_from_player_crafting = true,
@@ -1441,7 +1415,7 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "enriching-crushed-resource",
-    subgroup = "enriched-resource",
+    subgroup = "enriched-crushed-resource-recipe",
     enabled = false,
     energy_required = 2,
     hide_from_player_crafting = true,
@@ -1470,7 +1444,7 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "enriching-crushed-resource",
-    subgroup = "enriched-resource",
+    subgroup = "enriched-crushed-resource-recipe",
     enabled = false,
     energy_required = 3,
     hide_from_player_crafting = true,
@@ -1499,7 +1473,7 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "enriching-crushed-resource",
-    subgroup = "enriched-resource",
+    subgroup = "enriched-crushed-resource-recipe",
     enabled = false,
     energy_required = 2,
     hide_from_player_crafting = true,
@@ -1528,7 +1502,7 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "enriching-crushed-resource",
-    subgroup = "enriched-resource",
+    subgroup = "enriched-crushed-resource-recipe",
     enabled = false,
     energy_required = 2.5,
     hide_from_player_crafting = true,
@@ -1690,7 +1664,7 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "dirty-water-filtering",
-    subgroup = "enriched-resource",
+    subgroup = "dirty-fluid-filtration",
     enabled = false,
     hide_from_player_crafting = true,
     energy_required = 3,
@@ -1718,7 +1692,7 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "dirty-water-filtering",
-    subgroup = "enriched-resource",
+    subgroup = "dirty-fluid-filtration",
     enabled = false,
     hide_from_player_crafting = true,
     energy_required = 4,
@@ -1728,7 +1702,7 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-chromite", probability = 0.5, amount = 3},
-      {type = "item", name = "sp-tungsten-ore", probability = 0.1, amount = 1},
+      {type = "item", name = "tungsten-ore", probability = 0.1, amount = 1},
       {type = "item", name = "sp-yttrium", probability = 0.03, amount = 1},
       {type = "fluid", name = "water", amount = 50}
     },
@@ -1746,7 +1720,7 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "dirty-water-filtering",
-    subgroup = "enriched-resource",
+    subgroup = "dirty-fluid-filtration",
     enabled = false,
     hide_from_player_crafting = true,
     energy_required = 3.6,
@@ -1774,7 +1748,7 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "dirty-water-filtering",
-    subgroup = "enriched-resource",
+    subgroup = "dirty-fluid-filtration",
     enabled = false,
     hide_from_player_crafting = true,
     energy_required = 3,
@@ -1802,7 +1776,7 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "dirty-water-filtering",
-    subgroup = "enriched-resource",
+    subgroup = "dirty-fluid-filtration",
     enabled = false,
     hide_from_player_crafting = true,
     energy_required = 2,
@@ -1830,7 +1804,7 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "dirty-water-filtering",
-    subgroup = "enriched-resource",
+    subgroup = "dirty-fluid-filtration",
     enabled = false,
     hide_from_player_crafting = true,
     energy_required = 4,
@@ -1858,7 +1832,7 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "dirty-water-filtering",
-    subgroup = "enriched-resource",
+    subgroup = "dirty-fluid-filtration",
     enabled = false,
     hide_from_player_crafting = true,
     energy_required = 3,
@@ -1867,7 +1841,7 @@ data:extend({
       {type = "fluid", name = "sp-bleach", amount = 6}
     },
     results = {
-      {type = "item", name = "sp-tungsten-ore", probability = 0.5, amount = 2},
+      {type = "item", name = "tungsten-ore", probability = 0.5, amount = 2},
       {type = "item", name = "sp-neodymium", probability = 0.03, amount = 1},
       {type = "item", name = "sp-cerium", probability = 0.02, amount = 1},
       {type = "item", name = "sp-iridium", probability = 0.02, amount = 1},
@@ -1887,7 +1861,7 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "dirty-water-filtering",
-    subgroup = "enriched-resource",
+    subgroup = "dirty-fluid-filtration",
     enabled = false,
     hide_from_player_crafting = true,
     energy_required = 4,
@@ -2074,7 +2048,7 @@ data:extend({
     enabled = false,
     energy_required = 2.4,
     ingredients = {
-      {type = "item", name = "sp-limestone", amount = 2},
+      {type = "item", name = "calcite", amount = 2},
       {type = "fluid", name = "sulfuric-acid", amount = 2}
     },
     results = {
@@ -2633,7 +2607,7 @@ data:extend({
     icon_size = 256,
     mip_maps = 4,
     category = "crushing",
-    subgroup = "crushed-resource",
+    subgroup = "crushed-resource-recipe",
     enabled = false,
     energy_required = 2,
     ingredients = {
@@ -2652,7 +2626,7 @@ data:extend({
     icon_size = 256,
     mip_maps = 4,
     category = "crushing",
-    subgroup = "crushed-resource",
+    subgroup = "crushed-resource-recipe",
     enabled = false,
     energy_required = 1.5,
     ingredients = {
@@ -2671,7 +2645,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/crushing/crushing-coal.png",
     icon_size = 256,
     category = "crushing",
-    subgroup = "crushed-resource",
+    subgroup = "crushed-resource-recipe",
     enabled = false,
     energy_required = 1,
     ingredients = {
@@ -2688,7 +2662,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/crushing/crushing-coke.png",
     icon_size = 256,
     category = "crushing",
-    subgroup = "crushed-resource",
+    subgroup = "crushed-resource-recipe",
     enabled = false,
     energy_required = 0.8,
     ingredients = {
@@ -2705,7 +2679,7 @@ data:extend({
     icon_size = 256,
     mip_maps = 4,
     category = "crushing",
-    subgroup = "crushed-resource",
+    subgroup = "crushed-resource-recipe",
     enabled = false,
     energy_required = 1,
     ingredients = {
@@ -2723,7 +2697,7 @@ data:extend({
     icon_size = 256,
     mip_maps = 4,
     category = "crushing",
-    subgroup = "crushed-resource",
+    subgroup = "crushed-resource-recipe",
     enabled = false,
     energy_required = 1,
     ingredients = {
@@ -2736,31 +2710,12 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-crushing-limestone",
-    icon = "__Spaghetorio__/graphics/crushing/crushing-limestone.png",
-    icon_size = 256,
-    mip_maps = 4,
-    category = "crushing",
-    subgroup = "crushed-resource",
-    enabled = false,
-    energy_required = 0.5,
-    ingredients = {
-      {type = "item", name = "sp-limestone", amount = 2},
-    },
-    results = {
-      {type = "item", name = "sp-sand", amount = 3},
-      {type = "item", name = "sp-calcium-carbonate", probability = 0.8, amount = 3},
-      {type = "item", name = "sp-fluorspar", probability = 0.2, amount = 1}
-    }
-  },
-  {
-    type = "recipe",
     name = "sp-crushing-magnesium-ore",  -- #ForRegEx# - recipe
     icon = "__Spaghetorio__/graphics/crushing/crushing-magnesium-ore.png",
     icon_size = 256,
     mip_maps = 4,
     category = "crushing",
-    subgroup = "crushed-resource",
+    subgroup = "crushed-resource-recipe",
     enabled = false,
     energy_required = 2,
     ingredients = {
@@ -2779,7 +2734,7 @@ data:extend({
     icon_size = 256,
     mip_maps = 4,
     category = "crushing",
-    subgroup = "crushed-resource",
+    subgroup = "crushed-resource-recipe",
     enabled = false,
     energy_required = 1.5,
     ingredients = {
@@ -2792,25 +2747,25 @@ data:extend({
       {type = "item", name = "sulfur", probability = 0.3, amount = 1}
     }
   },
-  {
-    type = "recipe",
-    name = "sp-crushing-spodumene",  -- #ForRegEx# - recipe
-    icon = "__Spaghetorio__/graphics/crushing/crushing-spodumene.png",
-    icon_size = 256,
-    mip_maps = 4,
-    category = "crushing",
-    subgroup = "crushed-resource",
-    enabled = false,
-    energy_required = 1,
-    ingredients = {
-      {type = "item", name = "sp-spodumene", amount = 3},
-    },
-    results = {
-      {type = "item", name = "sp-sand", amount = 3},
-      {type = "item", name = "lithium", probability = 0.3, amount = 1},
-      {type = "item", name = "sp-crushed-aluminum-ore", probability = 0.05, amount = 1}
-    }
-  },
+  -- {
+  --   type = "recipe",
+  --   name = "sp-crushing-spodumene",  -- #ForRegEx# - recipe
+  --   icon = "__Spaghetorio__/graphics/crushing/crushing-spodumene.png",
+  --   icon_size = 256,
+  --   mip_maps = 4,
+  --   category = "crushing",
+  --   subgroup = "crushed-resource-recipe",
+  --   enabled = false,
+  --   energy_required = 1,
+  --   ingredients = {
+  --     {type = "item", name = "sp-spodumene", amount = 3},
+  --   },
+  --   results = {
+  --     {type = "item", name = "sp-sand", amount = 3},
+  --     {type = "item", name = "lithium", probability = 0.3, amount = 1},
+  --     {type = "item", name = "sp-crushed-aluminum-ore", probability = 0.05, amount = 1}
+  --   }
+  -- },
   {
     type = "recipe",
     name = "sp-crushing-tinstone",  -- #ForRegEx# - recipe
@@ -2818,7 +2773,7 @@ data:extend({
     icon_size = 256,
     mip_maps = 4,
     category = "crushing",
-    subgroup = "crushed-resource",
+    subgroup = "crushed-resource-recipe",
     enabled = false,
     energy_required = 1,
     ingredients = {
@@ -2837,7 +2792,7 @@ data:extend({
     icon_size = 256,
     mip_maps = 4,
     category = "crushing",
-    subgroup = "crushed-resource",
+    subgroup = "crushed-resource-recipe",
     enabled = false,
     energy_required = 3,
     ingredients = {
@@ -2855,11 +2810,11 @@ data:extend({
     icon_size = 256,
     mip_maps = 4,
     category = "crushing",
-    subgroup = "crushed-resource",
+    subgroup = "crushed-resource-recipe",
     enabled = false,
     energy_required = 2.5,
     ingredients = {
-      {type = "item", name = "sp-tungsten-ore", amount = 3},
+      {type = "item", name = "tungsten-ore", amount = 3},
     },
     results = {
       {type = "item", name = "sp-sand", probability = 0.5, amount = 1},
@@ -2874,7 +2829,7 @@ data:extend({
     icon_size = 256,
     mip_maps = 4,
     category = "crushing",
-    subgroup = "crushed-resource",
+    subgroup = "crushed-resource-recipe",
     enabled = false,
     energy_required = 1,
     ingredients = {
@@ -2894,7 +2849,7 @@ data:extend({
     icon_size = 256,
     mip_maps = 4,
     category = "crushing",
-    subgroup = "crushed-resource",
+    subgroup = "crushed-resource-recipe",
     enabled = false,
     energy_required = 2,
     ingredients = {
@@ -2912,7 +2867,7 @@ data:extend({
     icon_size = 256,
     mip_maps = 4,
     category = "crushing",
-    subgroup = "crushed-resource",
+    subgroup = "sp-crushing-acrosphere-corrupted",
     enabled = false,
     energy_required = 8,
     hide_from_player_crafting = true,
@@ -2931,7 +2886,7 @@ data:extend({
     icon_size = 256,
     mip_maps = 4,
     category = "crushing",
-    subgroup = "crushed-resource",
+    subgroup = "sp-crushing-acrosphere-corrupted",
     enabled = false,
     energy_required = 8,
     hide_from_player_crafting = true,
@@ -2950,7 +2905,7 @@ data:extend({
     icon_size = 256,
     mip_maps = 4,
     category = "crushing",
-    subgroup = "crushed-resource",
+    subgroup = "sp-crushing-acrosphere-corrupted",
     enabled = false,
     energy_required = 8,
     hide_from_player_crafting = true,
@@ -2969,7 +2924,7 @@ data:extend({
     icon_size = 256,
     mip_maps = 4,
     category = "crushing",
-    subgroup = "crushed-resource",
+    subgroup = "sp-crushing-acrosphere-corrupted",
     enabled = false,
     energy_required = 8,
     hide_from_player_crafting = true,
@@ -3011,7 +2966,7 @@ data:extend({
       {type = "item", name = "sp-plutonium-239", probability=0.005, amount = 1},
       {type = "item", name = "uranium-238", probability=0.015, amount = 1},
       {type = "item", name = "carbon", probability=0.08, amount = 1},
-      {type = "item", name = "sp-tungsten-ore", probability=0.06, amount = 1},
+      {type = "item", name = "tungsten-ore", probability=0.06, amount = 1},
       {type = "item", name = "sp-zirconium-ore", probability=0.10, amount = 1},
       {type = "item", name = "sp-cerium", probability=0.06, amount = 1},
       {type = "item", name = "sp-titanium-ore", probability=0.3, amount = 1}
@@ -3801,6 +3756,19 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "sp-steel-gear-wheel",
+    energy_required = 1.5,
+    enabled = false,
+    allow_productivity = true,
+    ingredients = {
+      {type = "item", name = "steel-plate", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-steel-gear-wheel", amount = 2}
+    }
+  },
+  {
+    type = "recipe",
     name = "sp-gearbox",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
@@ -4050,7 +4018,7 @@ data:extend({
     enabled = false,
     energy_required = 5,
     ingredients = {
-      {type = "item", name = "sp-tungsten-slab", amount = 3},
+      {type = "item", name = "tungsten-plate", amount = 3},
       {type = "item", name = "sp-machined-parts", amount = 2},
       {type = "item", name = "sp-ceramics", amount = 1},
       {type = "item", name = "carbon", amount = 3}
@@ -4227,7 +4195,7 @@ data:extend({
     results = {
       {type = "item", name = "sp-rukite-powder", probability = 0.3, amount = 2},
       {type = "item", name = "coal", probability = 0.3, amount = 2},
-      {type = "item", name = "sp-tungsten-ore", probability = 0.3, amount = 2},
+      {type = "item", name = "tungsten-ore", probability = 0.3, amount = 2},
       {type = "item", name = "sp-titanium-ore", probability = 0.1, amount = 2}
     },
     order = "rukite[rukite-powder]"
@@ -4949,7 +4917,7 @@ data:extend({
       {type = "item", name = "sp-TiAlSn", amount = 4},
       {type = "item", name = "sp-titanium-carbide", amount = 2},
       {type = "item", name = "sp-titanium-nitride", amount = 1},
-      {type = "item", name = "sp-tungsten-slab", amount = 5},
+      {type = "item", name = "tungsten-plate", amount = 5},
       {type = "item", name = "sp-ceramics", amount = 5},
       {type = "item", name = "sp-turbine-blade", amount = 24}
     },
@@ -5001,7 +4969,7 @@ data:extend({
     ingredients = {
       {type = "item", name = "copper-plate", amount = 2},
       {type = "item", name = "sp-TiAlSn", amount = 2},
-      {type = "item", name = "sp-tungsten-slab", amount = 6},
+      {type = "item", name = "tungsten-plate", amount = 6},
       {type = "item", name = "tungsten-carbide", amount = 2},
       {type = "item", name = "sp-bolts", amount = 4}
     },
@@ -5049,7 +5017,7 @@ data:extend({
     energy_required = 24,
     ingredients = {
       {type = "item", name = "sp-fuel-injector", amount = 20},
-      {type = "item", name = "sp-tungsten-slab", amount = 2},
+      {type = "item", name = "tungsten-plate", amount = 2},
       {type = "item", name = "sp-inconel", amount = 3},
       {type = "item", name = "sp-bolts", amount = 4},
       {type = "item", name = "sp-spark-plug", amount = 1},
@@ -5084,7 +5052,7 @@ data:extend({
       {type = "item", name = "sp-titanium-frame", amount = 5},
       {type = "item", name = "sp-machined-parts", amount = 8},
       {type = "item", name = "sp-phosphorus", amount = 1},
-      {type = "item", name = "sp-tungsten-slab", amount = 2},
+      {type = "item", name = "tungsten-plate", amount = 2},
       {type = "item", name = "sp-insulation-sheet", amount = 2},
       {type = "item", name = "solid-fuel", amount = 10}
     },
@@ -5114,7 +5082,7 @@ data:extend({
     energy_required = 20,
     ingredients = {
       {type = "item", name = "carbon", amount = 2},
-      {type = "item", name = "sp-tungsten-slab", amount = 1},
+      {type = "item", name = "tungsten-plate", amount = 1},
       {type = "item", name = "sp-zirconium-rod", amount = 2},
       {type = "item", name = "sp-cerium", amount = 1},
       {type = "item", name = "sp-TiNb", amount = 8}
@@ -6056,7 +6024,7 @@ data:extend({
       {type = "item", name = "sp-advanced-processing-unit", amount = 200},
       {type = "item", name = "sp-heat-resistant-tile", amount = 400},
       {type = "item", name = "sp-invar", amount = 160},
-      {type = "item", name = "sp-tungsten-slab", amount = 40},
+      {type = "item", name = "tungsten-plate", amount = 40},
       {type = "item", name = "sp-graphene", amount = 200},
       {type = "item", name = "rocket-fuel", amount = 300},
       {type = "item", name = "sp-rocket-engine", amount = 8},
@@ -6142,7 +6110,7 @@ data:extend({
   --   ingredients = {
   --     {type = "item", name = "refined-concrete", amount = 20},
   --     {type = "item", name = "sp-zircon", amount = 2},
-  --     {type = "item", name = "sp-tungsten-slab", amount = 2}
+  --     {type = "item", name = "tungsten-plate", amount = 2}
   --   },
   --   result = "sp-kr-black-reinforced-plate",
   --   result_count = 10,
@@ -6243,7 +6211,7 @@ data:extend({
     enabled = false,
     energy_required = 90,
     ingredients = {
-      {type = "item", name = "sp-tungsten-slab", amount = 40},
+      {type = "item", name = "tungsten-plate", amount = 40},
       {type = "item", name = "sp-graphene", amount = 60},
       {type = "item", name = "sp-heat-resistant-tile", amount = 120},
       {type = "item", name = "sp-imersium-beam", amount = 80},
@@ -6520,7 +6488,7 @@ data:extend({
     ingredients = {
       {type = "item", name = "concrete", amount = 1000},
       {type = "item", name = "sp-stainless-steel", amount = 1000},
-      {type = "item", name = "sp-tungsten-slab", amount = 300},
+      {type = "item", name = "tungsten-plate", amount = 300},
       {type = "item", name = "sp-graphene", amount = 500},
       {type = "item", name = "sp-heat-resistant-tile", amount = 200},
       {type = "item", name = "sp-control-unit", amount = 100},
@@ -7153,7 +7121,7 @@ data:extend({
     ingredients = {
       {type = "item", name = "sp-blunagium-bar", amount = 14},
       {type = "item", name = "copper-plate", amount = 3},
-      {type = "item", name = "sp-tungsten-slab", amount = 5},
+      {type = "item", name = "tungsten-plate", amount = 5},
       {type = "item", name = "sp-magnesium-slab", amount = 4},
       {type = "item", name = "sp-platinum", amount = 1},
       {type = "item", name = "sp-palladium", amount = 2},
@@ -7626,7 +7594,7 @@ data:extend({
       {type = "item", name = "sp-titanium-frame", amount = 1},
       {type = "item", name = "sp-zirconia", amount = 1},
       {type = "item", name = "sp-rukite-powder", amount = 4},
-      {type = "item", name = "sp-tungsten-slab", amount = 1},
+      {type = "item", name = "tungsten-plate", amount = 1},
       {type = "item", name = "sp-high-purity-silicon", amount = 2},
       {type = "item", name = "sp-graphene", amount = 3},
     },
@@ -8828,7 +8796,7 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "acroproduct-conversion-with-acrocrystal",
-    subgroup = "raw-resource",
+    subgroup = "enriched-resource-from-acrocrystal",
     enabled = false,
     energy_required = 8,
     allowed_effects = {
@@ -8857,7 +8825,7 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "acroproduct-conversion-with-acrocrystal",
-    subgroup = "raw-resource",
+    subgroup = "enriched-resource-from-acrocrystal",
     enabled = false,
     energy_required = 8,
     allowed_effects = {
@@ -8888,7 +8856,7 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "acroproduct-conversion-with-acrocrystal",
-    subgroup = "raw-resource",
+    subgroup = "enriched-resource-from-acrocrystal",
     enabled = false,
     energy_required = 6,
     allowed_effects = {
@@ -8906,7 +8874,7 @@ data:extend({
       {type = "item", name = "sp-acrocrystal", probability=0.98, amount = 1},
       {type = "item", name = "iron-ore", probability=0.15, amount = 1},
       {type = "item", name = "sp-zirconium-ore", probability=0.05, amount = 1},
-      {type = "item", name = "sp-limestone", probability=0.5, amount = 1},
+      {type = "item", name = "calcite", probability=0.5, amount = 1},
       {type = "item", name = "sp-silicon", probability=0.3, amount = 1},
       {type = "item", name = "sp-sand", amount = 3},
     }
@@ -8919,7 +8887,7 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "acroproduct-conversion-with-acrocrystal",
-    subgroup = "raw-resource",
+    subgroup = "enriched-resource-from-acrocrystal",
     enabled = false,
     energy_required = 6,
     allowed_effects = {
@@ -8948,7 +8916,7 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "acroproduct-conversion-with-acrocrystal",
-    subgroup = "raw-resource",
+    subgroup = "enriched-resource-from-acrocrystal",
     enabled = false,
     energy_required = 9,
     allowed_effects = {
@@ -8977,7 +8945,7 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "acroproduct-conversion-with-acrocrystal",
-    subgroup = "raw-resource",
+    subgroup = "enriched-resource-from-acrocrystal",
     enabled = false,
     energy_required = 8,
     allowed_effects = {
@@ -8994,18 +8962,18 @@ data:extend({
       {type = "item", name = "sp-chromite", amount = 7},
       {type = "item", name = "sp-acrocrystal", probability=0.995, amount = 1},
       {type = "item", name = "iron-ore", probability=0.1, amount = 1},
-      {type = "item", name = "sp-tungsten-ore", probability=0.15, amount = 1}
+      {type = "item", name = "tungsten-ore", probability=0.15, amount = 1}
     }
   },
   {
     type = "recipe",
-    name = "sp-limestone-from-acrocrystal",  -- #ForRegEx# - recipe
-    icons = util.icon.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/limestone-1.png",
+    name = "sp-calcite-from-acrocrystal",  -- #ForRegEx# - recipe
+    icons = util.icon.create_acroproduct_conversion_icon("__space-age__/graphics/icons/calcite.png",
                                                          "__Spaghetorio__/graphics/icons/acrocrystal.png"),
     icon_size = 64,
     mip_maps = 4,
     category = "acroproduct-conversion-with-acrocrystal",
-    subgroup = "raw-resource",
+    subgroup = "enriched-resource-from-acrocrystal",
     enabled = false,
     energy_required = 6,
     allowed_effects = {
@@ -9015,11 +8983,11 @@ data:extend({
     },
     allow_decomposition = false,
     ingredients = {
-      {type = "item", name = "sp-limestone", amount = 10},
+      {type = "item", name = "calcite", amount = 10},
       {type = "item", name = "sp-acrocrystal", amount = 1}
     },
     results = {
-      {type = "item", name = "sp-limestone", amount = 12},
+      {type = "item", name = "calcite", amount = 12},
       {type = "item", name = "sp-acrocrystal", probability=0.99, amount = 1},
       {type = "item", name = "stone", probability=0.2, amount = 1},
       {type = "item", name = "sp-calcium", probability=0.5, amount = 1},
@@ -9034,7 +9002,7 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "acroproduct-conversion-with-acrocrystal",
-    subgroup = "raw-resource",
+    subgroup = "enriched-resource-from-acrocrystal",
     enabled = false,
     energy_required = 10,
     allowed_effects = {
@@ -9062,7 +9030,7 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "acroproduct-conversion-with-acrocrystal",
-    subgroup = "raw-resource",
+    subgroup = "enriched-resource-from-acrocrystal",
     enabled = false,
     energy_required = 8,
     allowed_effects = {
@@ -9091,7 +9059,7 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "acroproduct-conversion-with-acrocrystal",
-    subgroup = "raw-resource",
+    subgroup = "enriched-resource-from-acrocrystal",
     enabled = false,
     energy_required = 12,
     allowed_effects = {
@@ -9121,7 +9089,7 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "acroproduct-conversion-with-acrocrystal",
-    subgroup = "raw-resource",
+    subgroup = "enriched-resource-from-acrocrystal",
     enabled = false,
     energy_required = 6,
     allowed_effects = {
@@ -9146,12 +9114,12 @@ data:extend({
   {
     type = "recipe",
     name = "sp-tungsten-ore-from-acrocrystal",  -- #ForRegEx# - recipe
-    icons = util.icon.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/tungsten-ore-1.png",
+    icons = util.icon.create_acroproduct_conversion_icon("__space-age__/graphics/icons/tungsten-ore.png",
                                                          "__Spaghetorio__/graphics/icons/acrocrystal.png"),
     icon_size = 64,
     mip_maps = 4,
     category = "acroproduct-conversion-with-acrocrystal",
-    subgroup = "raw-resource",
+    subgroup = "enriched-resource-from-acrocrystal",
     enabled = false,
     energy_required = 12,
     allowed_effects = {
@@ -9161,11 +9129,11 @@ data:extend({
     },
     allow_decomposition = false,
     ingredients = {
-      {type = "item", name = "sp-tungsten-ore", amount = 8},
+      {type = "item", name = "tungsten-ore", amount = 8},
       {type = "item", name = "sp-acrocrystal", amount = 1}
     },
     results = {
-      {type = "item", name = "sp-tungsten-ore", amount = 9},
+      {type = "item", name = "tungsten-ore", amount = 9},
       {type = "item", name = "sp-acrocrystal", probability=0.98, amount = 1},
       {type = "item", name = "sp-chromite", probability=0.1, amount = 1}
     }
@@ -9178,7 +9146,7 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "acroproduct-conversion-with-acrocrystal",
-    subgroup = "raw-resource",
+    subgroup = "enriched-resource-from-acrocrystal",
     enabled = false,
     energy_required = 7,
     allowed_effects = {
@@ -9206,7 +9174,7 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "acroproduct-conversion-with-acrocrystal",
-    subgroup = "raw-resource",
+    subgroup = "enriched-resource-from-acrocrystal",
     enabled = false,
     energy_required = 8,
     allowed_effects = {
@@ -9233,7 +9201,6 @@ data:extend({
   -- Acrosphere product recipes for basic resources from acrovoid
   -- MARK: Acrovoid
   ------------------------------------------------------------------------------
-  
   {
     type = "recipe",
     name = "sp-coke-from-acrovoid",  -- #ForRegEx# - recipe
@@ -9248,7 +9215,7 @@ data:extend({
     },
     allow_decomposition = false,
     category = "acroproduct-conversion-with-acrovoid",
-    subgroup = "processed-resource",
+    subgroup = "processed-resource-from-acrovoid",
     enabled = false,
     energy_required = 6,
     ingredients = {
@@ -9273,7 +9240,7 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "acroproduct-conversion-with-acrovoid",
-    subgroup = "processed-resource",
+    subgroup = "processed-resource-from-acrovoid",
     enabled = false,
     energy_required = 12,
     allowed_effects = {
@@ -9304,7 +9271,7 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "acroproduct-conversion-with-acrovoid",
-    subgroup = "processed-resource",
+    subgroup = "processed-resource-from-acrovoid",
     enabled = false,
     energy_required = 20,
     allowed_effects = {
@@ -9332,7 +9299,7 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "acroproduct-conversion-with-acrovoid",
-    subgroup = "processed-resource",
+    subgroup = "processed-resource-from-acrovoid",
     enabled = false,
     energy_required = 6,
     allowed_effects = {
@@ -9361,7 +9328,7 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "acroproduct-conversion-with-acrovoid",
-    subgroup = "processed-resource",
+    subgroup = "processed-resource-from-acrovoid",
     enabled = false,
     energy_required = 20,
     allowed_effects = {
@@ -9390,7 +9357,7 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "acroproduct-conversion-with-acrovoid",
-    subgroup = "processed-resource",
+    subgroup = "processed-resource-from-acrovoid",
     enabled = false,
     energy_required = 22,
     allowed_effects = {
@@ -9419,7 +9386,7 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "acroproduct-conversion-with-acrovoid",
-    subgroup = "processed-resource",
+    subgroup = "processed-resource-from-acrovoid",
     enabled = false,
     energy_required = 18,
     allowed_effects = {
@@ -9448,7 +9415,7 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "acroproduct-conversion-with-acrovoid",
-    subgroup = "processed-resource",
+    subgroup = "processed-resource-from-acrovoid",
     enabled = false,
     energy_required = 16,
     allowed_effects = {
@@ -9477,7 +9444,7 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "acroproduct-conversion-with-acrovoid",
-    subgroup = "processed-resource",
+    subgroup = "processed-resource-from-acrovoid",
     enabled = false,
     energy_required = 8,
     allowed_effects = {
@@ -9506,7 +9473,7 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "acroproduct-conversion-with-acrovoid",
-    subgroup = "processed-resource",
+    subgroup = "processed-resource-from-acrovoid",
     enabled = false,
     energy_required = 15,
     allowed_effects = {
@@ -9536,7 +9503,7 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "acroproduct-conversion-with-acrovoid",
-    subgroup = "processed-resource",
+    subgroup = "processed-resource-from-acrovoid",
     enabled = false,
     energy_required = 8,
     allowed_effects = {
@@ -9567,7 +9534,7 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "acroproduct-conversion-with-acrovoid",
-    subgroup = "processed-resource",
+    subgroup = "processed-resource-from-acrovoid",
     enabled = false,
     energy_required = 30,
     allowed_effects = {
@@ -9599,7 +9566,7 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "acroproduct-conversion-with-acrovoid",
-    subgroup = "processed-resource",
+    subgroup = "processed-resource-from-acrovoid",
     enabled = false,
     energy_required = 12,
     allowed_effects = {
@@ -9628,7 +9595,7 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "acroproduct-conversion-with-acrovoid",
-    subgroup = "processed-resource",
+    subgroup = "processed-resource-from-acrovoid",
     enabled = false,
     energy_required = 24,
     allowed_effects = {
@@ -9657,7 +9624,7 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "acroproduct-conversion-with-acrovoid",
-    subgroup = "processed-resource",
+    subgroup = "processed-resource-from-acrovoid",
     enabled = false,
     energy_required = 7,
     allowed_effects = {
@@ -9688,7 +9655,7 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "acroproduct-conversion-with-acrovoid",
-    subgroup = "processed-resource",
+    subgroup = "processed-resource-from-acrovoid",
     enabled = false,
     energy_required = 25,
     allowed_effects = {
@@ -9718,7 +9685,7 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "acroproduct-conversion-with-acrovoid",
-    subgroup = "processed-resource",
+    subgroup = "processed-resource-from-acrovoid",
     enabled = false,
     energy_required = 18,
     allowed_effects = {
@@ -9747,7 +9714,7 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "acroproduct-conversion-with-acrovoid",
-    subgroup = "processed-resource",
+    subgroup = "processed-resource-from-acrovoid",
     enabled = false,
     energy_required = 15,
     allowed_effects = {
@@ -9776,7 +9743,7 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "acroproduct-conversion-with-acrovoid",
-    subgroup = "processed-resource",
+    subgroup = "processed-resource-from-acrovoid",
     enabled = false,
     energy_required = 10,
     allowed_effects = {
@@ -9805,7 +9772,7 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "acroproduct-conversion-with-acrovoid",
-    subgroup = "processed-resource",
+    subgroup = "processed-resource-from-acrovoid",
     enabled = false,
     energy_required = 10,
     allowed_effects = {
@@ -9835,7 +9802,7 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "acroproduct-conversion-with-acrovoid",
-    subgroup = "processed-resource",
+    subgroup = "processed-resource-from-acrovoid",
     enabled = false,
     energy_required = 12,
     allowed_effects = {
@@ -9865,7 +9832,7 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "acroproduct-conversion-with-acrovoid",
-    subgroup = "processed-resource",
+    subgroup = "processed-resource-from-acrovoid",
     enabled = false,
     energy_required = 5,
     allowed_effects = {
@@ -9894,7 +9861,7 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "acroproduct-conversion-with-acrovoid",
-    subgroup = "processed-resource",
+    subgroup = "processed-resource-from-acrovoid",
     enabled = false,
     energy_required = 8,
     allowed_effects = {
@@ -9929,7 +9896,7 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "acroproduct-conversion-with-acromatter",
-    subgroup = "raw-resource",
+    subgroup = "raw-resource-from-acromatter",
     enabled = false,
     energy_required = 9,
     allowed_effects = {
@@ -9958,7 +9925,7 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "acroproduct-conversion-with-acromatter",
-    subgroup = "raw-resource",
+    subgroup = "raw-resource-from-acromatter",
     enabled = false,
     energy_required = 8,
     allowed_effects = {
@@ -9975,7 +9942,7 @@ data:extend({
       {type = "item", name = "sp-enriched-chromite", amount = 7},
       {type = "item", name = "sp-acromatter", probability=0.99, amount = 1},
       {type = "item", name = "iron-ore", probability=0.1, amount = 2},
-      {type = "item", name = "sp-tungsten-ore", probability=0.15, amount = 2}
+      {type = "item", name = "tungsten-ore", probability=0.15, amount = 2}
     }
   },
   {
@@ -9986,7 +9953,7 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "acroproduct-conversion-with-acromatter",
-    subgroup = "raw-resource",
+    subgroup = "raw-resource-from-acromatter",
     allowed_effects = {
       "consumption",
       "speed",
@@ -10014,7 +9981,7 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "acroproduct-conversion-with-acromatter",
-    subgroup = "raw-resource",
+    subgroup = "raw-resource-from-acromatter",
     enabled = false,
     energy_required = 8,
     allowed_effects = {
@@ -10043,7 +10010,7 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "acroproduct-conversion-with-acromatter",
-    subgroup = "raw-resource",
+    subgroup = "raw-resource-from-acromatter",
     enabled = false,
     energy_required = 12,
     allowed_effects = {
@@ -10073,7 +10040,7 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "acroproduct-conversion-with-acromatter",
-    subgroup = "raw-resource",
+    subgroup = "raw-resource-from-acromatter",
     enabled = false,
     energy_required = 6,
     allowed_effects = {
@@ -10103,7 +10070,7 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "acroproduct-conversion-with-acromatter",
-    subgroup = "raw-resource",
+    subgroup = "raw-resource-from-acromatter",
     enabled = false,
     energy_required = 12,
     allowed_effects = {
@@ -10130,7 +10097,7 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "acroproduct-conversion-with-acromatter",
-    subgroup = "raw-resource",
+    subgroup = "raw-resource-from-acromatter",
     enabled = false,
     energy_required = 7,
     allowed_effects = {
@@ -10158,7 +10125,7 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "acroproduct-conversion-with-acromatter",
-    subgroup = "raw-resource",
+    subgroup = "raw-resource-from-acromatter",
     enabled = false,
     energy_required = 8,
     allowed_effects = {
@@ -10187,7 +10154,7 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "acroproduct-conversion-with-acromatter",
-    subgroup = "raw-resource",
+    subgroup = "raw-resource-from-acromatter",
     enabled = false,
     energy_required = 8,
     allowed_effects = {
@@ -10218,7 +10185,7 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "acroproduct-conversion-with-acromatter",
-    subgroup = "raw-resource",
+    subgroup = "raw-resource-from-acromatter",
     enabled = false,
     energy_required = 15,
     allowed_effects = {
@@ -10247,66 +10214,6 @@ data:extend({
   ------------------------------------------------------------------------------
   -- MARK: acroproduct-conversion-with-acrovoid
   ------------------------------------------------------------------------------
-  {
-    type = "recipe",
-    name = "sp-coke-from-acrovoid",  -- #ForRegEx# - recipe
-    icons = util.icon.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/krastorio/icons/items-with-variations/coke/coke.png",
-                                                         "__Spaghetorio__/graphics/icons/acrovoid.png"),
-    icon_size = 64,
-    mip_maps = 4,
-    category = "acroproduct-conversion-with-acrovoid",
-    subgroup = "processed-resource",
-    enabled = false,
-    energy_required = 6,
-    allowed_effects = {
-      "consumption",
-      "speed",
-      "pollution"
-    },
-    allow_decomposition = false,
-    ingredients = {
-      {type = "item", name = "sp-coke", amount = 6},
-      {type = "item", name = "sp-acrovoid", amount = 1}
-    },
-    results = {
-      {type = "item", name = "sp-acrovoid", probability=0.99, amount = 1},
-      {type = "item", name = "sp-coke", amount = 7},
-      {type = "item", name = "carbon", probability=0.5, amount = 1},
-      {type = "item", name = "sulfur", probability=0.1, amount = 1},
-      {type = "fluid", name = "sp-hydrogen", amount = 4},
-      {type = "fluid", name = "sp-oxygen", amount = 12}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-silicon-from-acrovoid",  -- #ForRegEx# - recipe
-    icons = util.icon.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/krastorio/icons/items-with-variations/silicon/silicon.png",
-                                                         "__Spaghetorio__/graphics/icons/acrovoid.png"),
-    icon_size = 64,
-    mip_maps = 4,
-    category = "acroproduct-conversion-with-acrovoid",
-    subgroup = "processed-resource",
-    enabled = false,
-    energy_required = 12,
-    allowed_effects = {
-      "consumption",
-      "speed",
-      "pollution"
-    },
-    allow_decomposition = false,
-    ingredients = {
-      {type = "item", name = "sp-silicon", amount = 4},
-      {type = "item", name = "sp-acrovoid", amount = 1}
-    },
-    results = {
-      {type = "item", name = "sp-acrovoid", probability=0.98, amount = 1},
-      {type = "item", name = "sp-silicon", amount = 6},
-      {type = "item", name = "carbon", probability=0.3, amount = 1},
-      {type = "item", name = "sp-phosphorus", probability=0.2, amount = 1},
-      {type = "item", name = "sp-aluminum-ore", probability=0.2, amount = 1},
-      {type = "item", name = "sp-tinstone", probability=0.08, amount = 1},
-    }
-  },
 
   {
     type = "recipe",
@@ -10352,42 +10259,6 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-landfill-from-limestone",  -- #ForRegEx# - recipe
-    icons = util.icon.overlay_small_icon("__base__/graphics/icons/landfill.png", 64,
-                                         "__Spaghetorio__/graphics/icons/limestone-1.png", 64),
-    energy_required = 0.5,
-    enabled = false,
-    category = "crafting",
-    hide_from_player_crafting = true,
-    ingredients =
-    {
-      {type = "item", name = "sp-limestone", amount = 16}
-    },
-    results = {
-      {type = "item", name = "landfill", amount = 1}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-landfill-from-limestone-and-stone",  -- #ForRegEx# - recipe
-    icons = util.icon.overlay_two_small_icons("__base__/graphics/icons/landfill.png", 64,
-                                              "__base__/graphics/icons/stone.png", 64,
-                                              "__Spaghetorio__/graphics/icons/limestone-1.png", 64),
-    energy_required = 0.5,
-    enabled = false,
-    category = "crafting",
-    hide_from_player_crafting = true,
-    ingredients =
-    {
-      {type = "item", name = "stone", amount = 10},
-      {type = "item", name = "sp-limestone", amount = 6}
-    },
-    results = {
-      {type = "item", name = "landfill", amount = 1}
-    }
-  },
-  {
-    type = "recipe",
     name = "sp-landfill-from-cement",  -- #ForRegEx# - recipe
     icons = util.icon.overlay_small_icon("__base__/graphics/icons/landfill.png", 64,
                                          "__Spaghetorio__/graphics/icons/cement.png", 64),
@@ -10420,22 +10291,6 @@ data:extend({
     },
     results = {
       {type = "item", name = "landfill", amount = 2}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-stone-brick-from-limestone",  -- #ForRegEx# - recipe
-    icons = util.icon.overlay_small_icon("__base__/graphics/icons/stone-brick.png", 64,
-                                         "__Spaghetorio__/graphics/icons/limestone-1.png", 64),
-    category = "intermediate-smelting",
-    energy_required = 3.2,
-    enabled = false,
-    hide_from_player_crafting = true,
-    ingredients = {
-      {type = "item", name = "sp-limestone", amount = 2}
-    },
-    results = {
-      {type = "item", name = "stone-brick", amount = 1}
     }
   },
   {

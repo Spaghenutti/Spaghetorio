@@ -238,6 +238,10 @@ data:extend({
         type = "unlock-recipe",
         recipe = "sp-machined-parts-from-steel-plate"
       },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-steel-gear-wheel"
+      },
     },
     prerequisites = {
       "steel-processing",
@@ -919,7 +923,7 @@ data:extend({
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-tungsten-slab"
+        recipe = "tungsten-plate"
       },
       {
         type = "unlock-recipe",
@@ -2436,10 +2440,6 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "sp-antimony"
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-stibnite"
       },
     },
     prerequisites = {
@@ -5602,7 +5602,7 @@ data:extend({
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-limestone-from-acrocrystal"
+        recipe = "sp-calcite-from-acrocrystal"
       },
       {
         type = "unlock-recipe",
@@ -5855,7 +5855,9 @@ data:extend({
         recipe = "sp-geological-science-pack-1"
       },
     },
-    prerequisites = {},
+    prerequisites = {
+      "sp-kr-silicon-processing",
+    },
     unit =
     {
       count = 100,

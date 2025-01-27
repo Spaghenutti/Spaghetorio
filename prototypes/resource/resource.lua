@@ -175,9 +175,9 @@ data:extend({
   ),
   basic_resource(
     {
-      name = "limestone",
-      icon = "__Spaghetorio__/graphics/icons/limestone-1.png",
-      stages_filename = "__Spaghetorio__/graphics/resource/limestone-patches.png",
+      name = "barium-ore",
+      icon = "__Spaghetorio__/graphics/icons/barium-ore-1.png",
+      stages_filename = "__Spaghetorio__/graphics/resource/barium-ore-patches.png",
       order = "a",
       mining_time = 1,
       map_color = {r=1.0, g=1.0, b=0.8},
@@ -251,13 +251,32 @@ data:extend({
   ),
   basic_resource(
     {
-      name = "spodumene",
-      icon = "__Spaghetorio__/graphics/icons/spodumene-1.png",
-      stages_filename = "__Spaghetorio__/graphics/resource/spodumene-patches.png",
+      name = "cobalt-ore",
+      icon = "__Spaghetorio__/graphics/icons/cobalt-ore-1.png",
+      stages_filename = "__Spaghetorio__/graphics/resource/cobalt-ore-patches.png",
       order = "d",
       mining_time = 1,
       map_color = {r=0.5, g=1, b=0.6},
       mining_visualisation_tint = {r=0.5, g=1, b=0.6, a=1.0},
+    },
+    {
+      base_density = 1,
+      base_spots_per_km2 = 0.13,
+      has_starting_area_placement = false,
+      regular_blob_amplitude_multiplier = 1,
+      regular_rq_factor_multiplier = 0.9,
+      candidate_spot_count = 22,
+    }
+  ),
+  basic_resource(
+    {
+      name = "stibnite",
+      icon = "__Spaghetorio__/graphics/icons/stibnite-1.png",
+      stages_filename = "__Spaghetorio__/graphics/resource/stibnite-patches.png",
+      order = "d",
+      mining_time = 1,
+      map_color = {r=0.4, g=0.85, b=0.8},
+      mining_visualisation_tint = {r=0.4, g=0.85, b=0.8, a=1.0},
     },
     {
       base_density = 1,
@@ -288,9 +307,9 @@ data:extend({
   ),
   basic_resource(
     {
-      name = "tungsten-ore",
-      icon = "__Spaghetorio__/graphics/icons/tungsten-ore-1.png",
-      stages_filename = "__Spaghetorio__/graphics/resource/tungsten-ore-patches.png",
+      name = "mercury-ore",
+      icon = "__Spaghetorio__/graphics/icons/mercury-ore-1.png",
+      stages_filename = "__Spaghetorio__/graphics/resource/mercury-ore-patches.png",
       order = "m",
       mining_time = 1,
       map_color = {r=0.35, g=0.15, b=0},
@@ -389,14 +408,15 @@ data:extend({
 
 
 data.raw.planet["nauvis"].map_gen_settings.autoplace_settings.entity.settings["sp-aluminum-ore"] = {}
+data.raw.planet["nauvis"].map_gen_settings.autoplace_settings.entity.settings["sp-barium-ore"] = {}
 data.raw.planet["nauvis"].map_gen_settings.autoplace_settings.entity.settings["sp-chromite"] = {}
-data.raw.planet["nauvis"].map_gen_settings.autoplace_settings.entity.settings["sp-limestone"] = {}
+data.raw.planet["nauvis"].map_gen_settings.autoplace_settings.entity.settings["sp-cobalt-ore"] = {}
 data.raw.planet["nauvis"].map_gen_settings.autoplace_settings.entity.settings["sp-magnesium-ore"] = {}
+data.raw.planet["nauvis"].map_gen_settings.autoplace_settings.entity.settings["sp-mercury-ore"] = {}
 data.raw.planet["nauvis"].map_gen_settings.autoplace_settings.entity.settings["sp-nickel-ore"] = {}
-data.raw.planet["nauvis"].map_gen_settings.autoplace_settings.entity.settings["sp-spodumene"] = {}
+data.raw.planet["nauvis"].map_gen_settings.autoplace_settings.entity.settings["sp-stibnite"] = {}
 data.raw.planet["nauvis"].map_gen_settings.autoplace_settings.entity.settings["sp-tinstone"] = {}
 data.raw.planet["nauvis"].map_gen_settings.autoplace_settings.entity.settings["sp-titanium-ore"] = {}
-data.raw.planet["nauvis"].map_gen_settings.autoplace_settings.entity.settings["sp-tungsten-ore"] = {}
 data.raw.planet["nauvis"].map_gen_settings.autoplace_settings.entity.settings["sp-zinc-ore"] = {}
 data.raw.planet["nauvis"].map_gen_settings.autoplace_settings.entity.settings["sp-zirconium-ore"] = {}
 

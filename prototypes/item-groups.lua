@@ -21,9 +21,21 @@ data:extend({
   },
   {
     type = "item-subgroup",
+    name = "raw-resource-from-acromatter",
+    group = "base-products",
+    order = "a-z-acromatter"
+  },
+  {
+    type = "item-subgroup",
     name = "crushed-resource",
     group = "base-products",
     order = "b"
+  },
+  {
+    type = "item-subgroup",
+    name = "crushed-resource-recipe",
+    group = "base-products",
+    order = "b-recipe"
   },
   {
     type = "item-subgroup",
@@ -33,9 +45,33 @@ data:extend({
   },
   {
     type = "item-subgroup",
+    name = "enriched-resource-recipe",  -- Corresponds to category "enriching-raw-resource"
+    group = "base-products",
+    order = "c-b"
+  },
+  {
+    type = "item-subgroup",
+    name = "enriched-crushed-resource-recipe",  -- Corresponds to category "enriching-crushed-resource"
+    group = "base-products",
+    order = "c-c"
+  },
+  {
+    type = "item-subgroup",
+    name = "enriched-resource-from-acrocrystal",
+    group = "base-products",
+    order = "c-z-acrocrystal"
+  },
+  {
+    type = "item-subgroup",
     name = "processed-resource",
     group = "base-products",
     order = "d"
+  },
+  {
+    type = "item-subgroup",
+    name = "processed-resource-from-acrovoid",
+    group = "base-products",
+    order = "d-z-acrovoid"
   },
   -- move raw-resources to new item group base-products
   {
@@ -233,6 +269,12 @@ data:extend({
     group = "science-products",
     order = "i"
   },
+  {
+    type = "item-subgroup",
+    name = "sp-crushing-acrosphere-corrupted",
+    group = "base-products",
+    order = "i-crushing"
+  },
   ------------------------------------------------------------------------------
   -- MARK: combat
   -- Set combat to sixth place
@@ -268,6 +310,12 @@ data:extend({
     name = "dirty-fluid",
     group = "fluids",
     order = "b"
+  },
+  {
+    type = "item-subgroup",
+    name = "dirty-fluid-filtration",  -- Corresponds to category "dirty-water-filtering"
+    group = "fluids",
+    order = "b-b"
   },
   {
     type = "item-subgroup",

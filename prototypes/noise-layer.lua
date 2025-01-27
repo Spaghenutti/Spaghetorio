@@ -9,7 +9,7 @@ data:extend({
   },
   {
     type = "noise-layer",
-    name = "sp-limestone"
+    name = "sp-barium-ore"
   },
   {
     type = "noise-layer",
@@ -25,7 +25,7 @@ data:extend({
   },
   {
     type = "noise-layer",
-    name = "sp-spodumene"
+    name = "sp-cobalt-ore"
   },
   {
     type = "noise-layer",
@@ -33,7 +33,7 @@ data:extend({
   },
   {
     type = "noise-layer",
-    name = "sp-tungsten-ore"
+    name = "sp-mercury-ore"
   },
   {
     type = "noise-layer",

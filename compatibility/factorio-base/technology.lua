@@ -185,8 +185,6 @@ data.raw.technology["landfill"].unit.ingredients = {
   {"logistic-science-pack", 1},
   {"sp-geological-science-pack-1", 1}
 }
-table.insert(data.raw.technology["landfill"].effects, {type = "unlock-recipe", recipe = "sp-landfill-from-limestone-and-stone"})
-table.insert(data.raw.technology["landfill"].effects, {type = "unlock-recipe", recipe = "sp-landfill-from-limestone"})
 table.insert(data.raw.technology["landfill"].effects, {type = "unlock-recipe", recipe = "sp-landfill-from-iron-ore"})
 
 table.insert(data.raw.technology["oil-processing"].prerequisites, "sp-stainless-steel-processing")
@@ -1905,10 +1903,6 @@ data.raw.technology["utility-science-pack"].unit.ingredients = {
   {"sp-electronic-science-pack-2", 1}
 }
 
--- MARK If not Krastorio
-if not mods["Krastorio2"] then
-  table.insert(data.raw.technology["sp-cement"].effects, {type = "unlock-recipe", recipe = "sp-crushing-limestone"})
 
-  table.insert(data.raw.technology["sp-processed-resource-from-acrovoid"].effects, {type = "unlock-recipe", recipe = "sp-coke-from-acrovoid"})
-  table.insert(data.raw.technology["sp-processed-resource-from-acrovoid"].effects, {type = "unlock-recipe", recipe = "sp-silicon-from-acrovoid"})
-end
+table.insert(data.raw.technology["sp-processed-resource-from-acrovoid"].effects, {type = "unlock-recipe", recipe = "sp-coke-from-acrovoid"})
+table.insert(data.raw.technology["sp-processed-resource-from-acrovoid"].effects, {type = "unlock-recipe", recipe = "sp-silicon-from-acrovoid"})

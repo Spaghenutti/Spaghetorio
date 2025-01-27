@@ -38,18 +38,18 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-limestone",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/icons/limestone-1.png",
+    name = "sp-barium-ore",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/barium-ore-1.png",
     icon_size = 64,
     icon_mipmaps = 4,
     pictures = {
-      {size = 64, filename = "__Spaghetorio__/graphics/icons/limestone-1.png", scale = 0.5, mipmap_count = 4},
-      {size = 64, filename = "__Spaghetorio__/graphics/icons/limestone-2.png", scale = 0.5, mipmap_count = 4},
-      {size = 64, filename = "__Spaghetorio__/graphics/icons/limestone-3.png", scale = 0.5, mipmap_count = 4},
-      {size = 64, filename = "__Spaghetorio__/graphics/icons/limestone-4.png", scale = 0.5, mipmap_count = 4}
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/barium-ore-1.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/barium-ore-2.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/barium-ore-3.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/barium-ore-4.png", scale = 0.5, mipmap_count = 4}
     },
     subgroup = "raw-resource",
-    order = "[limestone]",
+    order = "[barium-ore]",
     stack_size = 200
   },
   {
@@ -134,18 +134,18 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-tungsten-ore",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/icons/tungsten-ore-1.png",
+    name = "sp-mercury-ore",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/mercury-ore-1.png",
     icon_size = 64,
     icon_mipmaps = 4,
     pictures = {
-      {size = 64, filename = "__Spaghetorio__/graphics/icons/tungsten-ore-1.png", scale = 0.5, mipmap_count = 4},
-      {size = 64, filename = "__Spaghetorio__/graphics/icons/tungsten-ore-2.png", scale = 0.5, mipmap_count = 4},
-      {size = 64, filename = "__Spaghetorio__/graphics/icons/tungsten-ore-3.png", scale = 0.5, mipmap_count = 4},
-      {size = 64, filename = "__Spaghetorio__/graphics/icons/tungsten-ore-4.png", scale = 0.5, mipmap_count = 4}
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/mercury-ore-1.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/mercury-ore-2.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/mercury-ore-3.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/mercury-ore-4.png", scale = 0.5, mipmap_count = 4}
     },
     subgroup = "raw-resource",
-    order = "[tungsten-ore]",
+    order = "[mercury-ore]",
     stack_size = 200
   },
   {
@@ -166,18 +166,34 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-spodumene",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/icons/spodumene-1.png",
+    name = "sp-cobalt-ore",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/cobalt-ore-1.png",
     icon_size = 64,
     icon_mipmaps = 4,
     pictures = {
-      {size = 64, filename = "__Spaghetorio__/graphics/icons/spodumene-1.png", scale = 0.5, mipmap_count = 4},
-      {size = 64, filename = "__Spaghetorio__/graphics/icons/spodumene-2.png", scale = 0.5, mipmap_count = 4},
-      {size = 64, filename = "__Spaghetorio__/graphics/icons/spodumene-3.png", scale = 0.5, mipmap_count = 4},
-      {size = 64, filename = "__Spaghetorio__/graphics/icons/spodumene-4.png", scale = 0.5, mipmap_count = 4}
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/cobalt-ore-1.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/cobalt-ore-2.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/cobalt-ore-3.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/cobalt-ore-4.png", scale = 0.5, mipmap_count = 4}
     },
     subgroup = "raw-resource",
-    order = "[spodumene]",
+    order = "[cobalt-ore]",
+    stack_size = 200
+  },
+  {
+    type = "item",
+    name = "sp-stibnite",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/stibnite-1.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    pictures = {
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/stibnite-1.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/stibnite-2.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/stibnite-3.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/stibnite-4.png", scale = 0.5, mipmap_count = 4}
+    },
+    subgroup = "raw-resource",
+    order = "[stibnite]",
     stack_size = 200
   },
   {
@@ -805,16 +821,6 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-stibnite",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/icons/stibnite-1.png",
-    icon_size = 64,
-    scale = 0.5,
-    subgroup = "processed-resource",
-    order = "[stibnite]",
-    stack_size = 200
-  },
-  {
-    type = "item",
     name = "sp-magnesium-chloride",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/magnesium-chloride.png",
     icon_size = 64,
@@ -1388,7 +1394,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-tungsten-slab",  -- #ForRegEx# - item
+    name = "tungsten-plate",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/tungsten-slab.png",
     icon_size = 64,
     scale = 0.5,

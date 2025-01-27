@@ -12,10 +12,14 @@ Factorio Space age
   - Update recepies for
     - lithium processing
   - ores
-    - limestone as barium ore (baryt)
-    - tungsten ore as mercury ore (cinnabar)
-    - spodumene as arsen ore
-    - Add cobalt
+    + limestone as barium ore (baryt)
+    + tungsten ore as mercury ore (cinnabar)
+      - fix icons for tungsten ore crushing and enriching
+    - spodumene as cobalt ore (in cobalt ore traces of arsen are found)
+    - Add Cobalt
+    + Add stibnite as ore
+      - add crushed recipe
+      - add enriched recipe
 
 
 Krastorio cleanup

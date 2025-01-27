@@ -31,6 +31,12 @@ util.recipe.change_recipe_ingredients("copper-plate",
   },
   8)
 
+util.recipe.change_recipe_ingredients("tungsten-plate",
+  {
+    {type = "item", name = "sp-tungsten-powder", amount = 6},
+    {type = "fluid", name = "molten-iron", amount = 10},
+  },
+  10)
 -- util.recipe.change_recipe_ingredients("sulfur",
 --   {
 --     {type="fluid", name="water", amount=60},
@@ -845,7 +851,7 @@ util.recipe.change_recipe_ingredients("explosive-rocket",
 
 util.recipe.change_recipe_ingredients("cannon-shell",
   {
-    {type = "item", name = "sp-tungsten-slab", amount = 1},
+    {type = "item", name = "tungsten-plate", amount = 1},
     {type = "item", name = "tungsten-carbide", amount = 1},
     {type = "item", name = "steel-plate", amount = 2},
     {type = "item", name = "sp-tungsten-powder", amount = 1}
@@ -855,7 +861,7 @@ util.recipe.change_recipe_ingredients("cannon-shell",
 data.raw.recipe["explosive-cannon-shell"].category = "crafting-with-fluid"
 util.recipe.change_recipe_ingredients("explosive-cannon-shell",
   {
-    {type = "item", name = "sp-tungsten-slab", amount = 1},
+    {type = "item", name = "tungsten-plate", amount = 1},
     {type = "item", name = "tungsten-carbide", amount = 1},
     {type = "item", name = "steel-plate", amount = 2},
     {type = "item", name = "sp-tungsten-powder", amount = 2},
@@ -1146,7 +1152,7 @@ util.recipe.change_recipe_ingredients("rocket-silo",
     {type = "item", name = "refined-concrete", amount = 1000},
     {type = "item", name = "sp-TiNb", amount = 200},
     {type = "item", name = "sp-inconel", amount = 140},
-    {type = "item", name = "sp-tungsten-slab", amount = 36},
+    {type = "item", name = "tungsten-plate", amount = 36},
     {type = "item", name = "pump", amount = 36},
     {type = "item", name = "sp-pressure-tube", amount = 100},
     {type = "item", name = "sp-high-pressure-tank", amount = 20},
