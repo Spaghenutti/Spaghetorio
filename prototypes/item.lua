@@ -167,7 +167,7 @@ data:extend({
   {
     type = "item",
     name = "sp-cobalt-ore",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/icons/cobalt-ore-1.png",
+    icon = "__Spaghetorio__/graphics/icons/cobalt-ore-3.png",
     icon_size = 64,
     icon_mipmaps = 4,
     pictures = {
@@ -194,6 +194,54 @@ data:extend({
     },
     subgroup = "raw-resource",
     order = "[stibnite]",
+    stack_size = 200
+  },
+  {
+    type = "item",
+    name = "sp-boron-ore",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/boron-ore-1.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    pictures = {
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/boron-ore-1.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/boron-ore-2.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/boron-ore-3.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/boron-ore-4.png", scale = 0.5, mipmap_count = 4}
+    },
+    subgroup = "raw-resource",
+    order = "[boron-ore]",
+    stack_size = 200
+  },
+  {
+    type = "item",
+    name = "sp-manganese-ore",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/manganese-ore-1.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    pictures = {
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/manganese-ore-1.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/manganese-ore-2.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/manganese-ore-3.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/manganese-ore-4.png", scale = 0.5, mipmap_count = 4}
+    },
+    subgroup = "raw-resource",
+    order = "[manganese-ore]",
+    stack_size = 200
+  },
+  {
+    type = "item",
+    name = "sp-molybdenum-ore",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/molybdenum-ore-1.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    pictures = {
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/molybdenum-ore-1.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/molybdenum-ore-2.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/molybdenum-ore-3.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/molybdenum-ore-4.png", scale = 0.5, mipmap_count = 4}
+    },
+    subgroup = "raw-resource",
+    order = "[molybdenum-ore]",
     stack_size = 200
   },
   {
@@ -414,15 +462,15 @@ data:extend({
   {
     type = "item",
     name = "sp-crushed-cobalt-ore",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/dummy/dummy-item-default.png",
+    icon = "__Spaghetorio__/graphics/icons/crushed-cobalt-ore-4.png",
     icon_size = 64,
     icon_mipmaps = 4,
-    -- pictures = {
-    --   {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-cobalt-ore-1.png", scale = 0.5, mipmap_count = 4},
-    --   {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-cobalt-ore-2.png", scale = 0.5, mipmap_count = 4},
-    --   {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-cobalt-ore-3.png", scale = 0.5, mipmap_count = 4},
-    --   {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-cobalt-ore-4.png", scale = 0.5, mipmap_count = 4}
-    -- },
+    pictures = {
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-cobalt-ore-1.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-cobalt-ore-2.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-cobalt-ore-3.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-cobalt-ore-4.png", scale = 0.5, mipmap_count = 4}
+    },
     subgroup = "crushed-resource",
     order = "[crushed-cobalt-ore]",
     stack_size = 200
@@ -1120,7 +1168,7 @@ data:extend({
   {
     type = "item",
     name = "sp-barium-sulfamate",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/dummy/dummy-item-default.png",
+    icon = "__Spaghetorio__/graphics/icons/barium-sulfamate.png",
     icon_size = 64,
     scale = 0.5,
     subgroup = "processed-resource",
@@ -1130,7 +1178,7 @@ data:extend({
   {
     type = "item",
     name = "sp-barium-sulfide",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/dummy/dummy-item-default.png",
+    icon = "__Spaghetorio__/graphics/icons/barium-sulfide.png",
     icon_size = 64,
     scale = 0.5,
     subgroup = "processed-resource",
@@ -1139,18 +1187,8 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-barium-carbonate",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/dummy/dummy-item-default.png",
-    icon_size = 64,
-    scale = 0.5,
-    subgroup = "processed-resource",
-    order = "[barium-carbonate]",
-    stack_size = 200
-  },
-  {
-    type = "item",
     name = "sp-antimony-oxide",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/dummy/dummy-item-default.png",
+    icon = "__Spaghetorio__/graphics/icons/antimony-oxide.png",
     icon_size = 64,
     scale = 0.5,
     subgroup = "processed-resource",
@@ -1159,28 +1197,8 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-antimony-trichloride",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/dummy/dummy-item-default.png",
-    icon_size = 64,
-    scale = 0.5,
-    subgroup = "processed-resource",
-    order = "[antimony-trichloride]",
-    stack_size = 200
-  },
-  {
-    type = "item",
-    name = "sp-antimony-triiodide",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/dummy/dummy-item-default.png",
-    icon_size = 64,
-    scale = 0.5,
-    subgroup = "processed-resource",
-    order = "[antimony-triiodide]",
-    stack_size = 200
-  },
-  {
-    type = "item",
     name = "sp-sodium-borate",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/dummy/dummy-item-default.png",
+    icon = "__Spaghetorio__/graphics/icons/sodium-borate.png",
     icon_size = 64,
     scale = 0.5,
     subgroup = "processed-resource",
@@ -1190,7 +1208,7 @@ data:extend({
   {
     type = "item",
     name = "sp-cobalt-oxide",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/dummy/dummy-item-default.png",
+    icon = "__Spaghetorio__/graphics/icons/cobalt-oxide.png",
     icon_size = 64,
     scale = 0.5,
     subgroup = "processed-resource",
@@ -1199,18 +1217,8 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-cobalt-sulfate",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/dummy/dummy-item-default.png",
-    icon_size = 64,
-    scale = 0.5,
-    subgroup = "processed-resource",
-    order = "[cobalt-sulfate]",
-    stack_size = 200
-  },
-  {
-    type = "item",
     name = "sp-arsenic-trioxide",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/dummy/dummy-item-default.png",
+    icon = "__Spaghetorio__/graphics/icons/arsenic-trioxide.png",
     icon_size = 64,
     scale = 0.5,
     subgroup = "processed-resource",
@@ -1219,28 +1227,8 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-arsenic-sulfide",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/dummy/dummy-item-default.png",
-    icon_size = 64,
-    scale = 0.5,
-    subgroup = "processed-resource",
-    order = "[arsenic-sulfide]",
-    stack_size = 200
-  },
-  {
-    type = "item",
-    name = "sp-arsenic-iodide",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/dummy/dummy-item-default.png",
-    icon_size = 64,
-    scale = 0.5,
-    subgroup = "processed-resource",
-    order = "[arsenic-iodide]",
-    stack_size = 200
-  },
-  {
-    type = "item",
     name = "sp-molybdenum-trioxide",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/dummy/dummy-item-default.png",
+    icon = "__Spaghetorio__/graphics/icons/molybdenum-trioxide.png",
     icon_size = 64,
     scale = 0.5,
     subgroup = "processed-resource",
@@ -1250,22 +1238,12 @@ data:extend({
   {
     type = "item",
     name = "sp-manganese-dioxide",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/dummy/dummy-item-default.png",
+    icon = "__Spaghetorio__/graphics/icons/manganese-dioxide.png",
     icon_size = 64,
     scale = 0.5,
     subgroup = "processed-resource",
     order = "[manganese-dioxide]",
     stack_size = 200
-  },
-  {
-    type = "item",
-    name = "sp-sodium-molybdate",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/dummy/dummy-item-default.png",
-    icon_size = 64,
-    scale = 0.5,
-    subgroup = "processed-resource",
-    order = "[sodium-molybdate]",
-    stack_size = 100
   },
   {
     type = "item",
@@ -1597,7 +1575,7 @@ data:extend({
   {
     type = "item",
     name = "sp-boron-pillet",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/dummy/dummy-item-default.png",
+    icon = "__Spaghetorio__/graphics/icons/boron-pillet.png",
     icon_size = 64,
     scale = 0.5,
     subgroup = "raw-material",
@@ -1607,7 +1585,7 @@ data:extend({
   {
     type = "item",
     name = "sp-arsen-pillet",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/dummy/dummy-item-default.png",
+    icon = "__Spaghetorio__/graphics/icons/arsen-pillet.png",
     icon_size = 64,
     scale = 0.5,
     subgroup = "raw-material",
@@ -1617,7 +1595,7 @@ data:extend({
   {
     type = "item",
     name = "sp-molybdenum-pillet",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/dummy/dummy-item-default.png",
+    icon = "__Spaghetorio__/graphics/icons/molybdenum-pillet.png",
     icon_size = 64,
     scale = 0.5,
     subgroup = "raw-material",
@@ -1627,7 +1605,7 @@ data:extend({
   {
     type = "item",
     name = "sp-manganese-ingot",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/dummy/dummy-item-default.png",
+    icon = "__Spaghetorio__/graphics/icons/manganese-ingot.png",
     icon_size = 64,
     scale = 0.5,
     subgroup = "raw-material",
@@ -1637,11 +1615,11 @@ data:extend({
   {
     type = "item",
     name = "sp-antimony-pillet",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/dummy/dummy-item-default.png",
+    icon = "__Spaghetorio__/graphics/icons/antimony-pillet.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "processed-resource",
-    order = "[sp-antimony]",
+    subgroup = "raw-material",
+    order = "pillet-[sp-antimony]",
     stack_size = 200
   },
   ------------------------------------------------------------------------------
@@ -1770,7 +1748,7 @@ data:extend({
   {
     type = "item",
     name = "sp-copper-antimony",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/dummy/dummy-item-default.png",
+    icon = "__Spaghetorio__/graphics/icons/copper-antimony.png",
     icon_size = 64,
     scale = 0.5,
     subgroup = "alloy",
@@ -1780,7 +1758,7 @@ data:extend({
   {
     type = "item",
     name = "sp-nickel-cobalt",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/dummy/dummy-item-default.png",
+    icon = "__Spaghetorio__/graphics/icons/nickel-cobalt.png",
     icon_size = 64,
     scale = 0.5,
     subgroup = "alloy",
@@ -1790,7 +1768,7 @@ data:extend({
   {
     type = "item",
     name = "sp-waspaloy",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/dummy/dummy-item-default.png",
+    icon = "__Spaghetorio__/graphics/icons/waspaloy.png",
     icon_size = 64,
     scale = 0.5,
     subgroup = "alloy",
@@ -1801,7 +1779,7 @@ data:extend({
     -- also called satellite-6-alloy
     type = "item",
     name = "sp-chromium-cobalt",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/dummy/dummy-item-default.png",
+    icon = "__Spaghetorio__/graphics/icons/chromium-cobalt.png",
     icon_size = 64,
     scale = 0.5,
     subgroup = "alloy",
@@ -1811,7 +1789,7 @@ data:extend({
   {
     type = "item",
     name = "sp-elgiloy",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/dummy/dummy-item-default.png",
+    icon = "__Spaghetorio__/graphics/icons/elgiloy.png",
     icon_size = 64,
     scale = 0.5,
     subgroup = "alloy",
@@ -1821,7 +1799,7 @@ data:extend({
   {
     type = "item",
     name = "sp-maraging-steel",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/dummy/dummy-item-default.png",
+    icon = "__Spaghetorio__/graphics/icons/maraging-steel.png",
     icon_size = 64,
     scale = 0.5,
     subgroup = "alloy",
@@ -1831,7 +1809,7 @@ data:extend({
   {
     type = "item",
     name = "sp-kovar",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/dummy/dummy-item-default.png",
+    icon = "__Spaghetorio__/graphics/icons/kovar.png",
     icon_size = 64,
     scale = 0.5,
     subgroup = "alloy",
@@ -1939,7 +1917,7 @@ data:extend({
   {
     type = "item",
     name = "sp-boron-carbide",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/dummy/dummy-item-default.png",
+    icon = "__Spaghetorio__/graphics/icons/boron-carbide.png",
     icon_size = 64,
     scale = 0.5,
     subgroup = "advanced-raw-material",
@@ -1949,7 +1927,7 @@ data:extend({
   {
     type = "item",
     name = "sp-boron-phosphide",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/dummy/dummy-item-default.png",
+    icon = "__Spaghetorio__/graphics/icons/boron-phosphide.png",
     icon_size = 64,
     scale = 0.5,
     subgroup = "advanced-raw-material",
@@ -1959,7 +1937,7 @@ data:extend({
   {
     type = "item",
     name = "sp-boron-silicade",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/dummy/dummy-item-default.png",
+    icon = "__Spaghetorio__/graphics/icons/boron-silicade.png",
     icon_size = 64,
     scale = 0.5,
     subgroup = "advanced-raw-material",
@@ -1969,7 +1947,7 @@ data:extend({
   {
     type = "item",
     name = "sp-lead-molybdate",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/dummy/dummy-item-default.png",
+    icon = "__Spaghetorio__/graphics/icons/lead-molybdate.png",
     icon_size = 64,
     scale = 0.5,
     subgroup = "advanced-raw-material",
@@ -1978,19 +1956,8 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-manganese-chloride",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/dummy/dummy-item-default.png",
-    icon_size = 64,
-    scale = 0.5,
-    subgroup = "advanced-raw-material",
-    order = "[manganese-chloride]",
-    stack_size = 100
-  },
-  
-  {
-    type = "item",
     name = "sp-barium-titanate",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/dummy/dummy-item-default.png",
+    icon = "__Spaghetorio__/graphics/icons/barium-titanate.png",
     icon_size = 64,
     scale = 0.5,
     subgroup = "advanced-raw-material",
@@ -3604,6 +3571,76 @@ data:extend({
     scale = 0.5,
     subgroup = "chemical-product",
     order = "[insulation-sheet]",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "sp-barium-carbonate",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/barium-carbonate.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "chemical-product",
+    order = "[barium-carbonate]",
+    stack_size = 200
+  },
+  {
+    type = "item",
+    name = "sp-antimony-trichloride",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/antimony-trichloride.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "chemical-product",
+    order = "[antimony-trichloride]",
+    stack_size = 200
+  },
+  {
+    type = "item",
+    name = "sp-antimony-triiodide",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/antimony-triiodide.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "chemical-product",
+    order = "[antimony-triiodide]",
+    stack_size = 200
+  },
+  {
+    type = "item",
+    name = "sp-arsenic-sulfide",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/arsenic-sulfide.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "chemical-product",
+    order = "[arsenic-sulfide]",
+    stack_size = 200
+  },
+  {
+    type = "item",
+    name = "sp-arsenic-iodide",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/arsenic-iodide.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "chemical-product",
+    order = "[arsenic-iodide]",
+    stack_size = 200
+  },
+  {
+    type = "item",
+    name = "sp-sodium-molybdate",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/sodium-molybdate.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "chemical-product",
+    order = "[sodium-molybdate]",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "sp-manganese-chloride",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/manganese-chloride.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "chemical-product",
+    order = "[manganese-chloride]",
     stack_size = 100
   },
   ------------------------------------------------------------------------------

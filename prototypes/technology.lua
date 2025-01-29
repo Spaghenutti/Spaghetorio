@@ -2434,7 +2434,7 @@ data:extend({
     name = "sp-antimony-processing",  -- #ForRegEx# - technology
     icon_size = 256,
     icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/hr-icons/stibnite-1.png", 256, nil,
-                                        "__Spaghetorio__/graphics/hr-icons/antimony.png", 256, nil),
+                                        "__Spaghetorio__/graphics/hr-icons/antimony-pillet.png", 256, nil),
     effects =
     {
       {
@@ -5737,10 +5737,6 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "sp-sodium-from-acrovoid"
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-antimony-from-acrovoid"
       },
       {
         type = "unlock-recipe",

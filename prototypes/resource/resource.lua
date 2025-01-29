@@ -156,25 +156,6 @@ data:extend({
   ),
   basic_resource(
     {
-      name = "chromite",
-      icon = "__Spaghetorio__/graphics/icons/chromite-1.png",
-      stages_filename = "__Spaghetorio__/graphics/resource/chromite-patches.png",
-      order = "f",
-      mining_time = 1,
-      map_color = {r=0.5, g=0.5, b=1.0},
-      mining_visualisation_tint = {r=0.5, g=0.5, b=1.0, a=1.0},
-    },
-    {
-      base_density = 9,
-      base_spots_per_km2 = 0.4,
-      has_starting_area_placement = false,
-      regular_blob_amplitude_multiplier = 1,
-      regular_rq_factor_multiplier = 0.9,
-      candidate_spot_count = 22,
-    }
-  ),
-  basic_resource(
-    {
       name = "barium-ore",
       icon = "__Spaghetorio__/graphics/icons/barium-ore-1.png",
       stages_filename = "__Spaghetorio__/graphics/resource/barium-ore-patches.png",
@@ -186,6 +167,44 @@ data:extend({
     {
       base_density = 1,
       base_spots_per_km2 = 0.1,
+      has_starting_area_placement = false,
+      regular_blob_amplitude_multiplier = 1,
+      regular_rq_factor_multiplier = 0.9,
+      candidate_spot_count = 22,
+    }
+  ),
+  basic_resource(
+    {
+      name = "boron-ore",
+      icon = "__Spaghetorio__/graphics/icons/boron-ore-1.png",
+      stages_filename = "__Spaghetorio__/graphics/resource/boron-ore-patches.png",
+      order = "a",
+      mining_time = 1,
+      map_color = {r=0.1, g=0.1, b=0.2},
+      mining_visualisation_tint = {r=0.1, g=0.1, b=0.2, a=1.0},
+    },
+    {
+      base_density = 2,
+      base_spots_per_km2 = 0.2,
+      has_starting_area_placement = false,
+      regular_blob_amplitude_multiplier = 1,
+      regular_rq_factor_multiplier = 0.9,
+      candidate_spot_count = 22,
+    }
+  ),
+  basic_resource(
+    {
+      name = "chromite",
+      icon = "__Spaghetorio__/graphics/icons/chromite-1.png",
+      stages_filename = "__Spaghetorio__/graphics/resource/chromite-patches.png",
+      order = "f",
+      mining_time = 1,
+      map_color = {r=0.5, g=0.5, b=1.0},
+      mining_visualisation_tint = {r=0.5, g=0.5, b=1.0, a=1.0},
+    },
+    {
+      base_density = 9,
+      base_spots_per_km2 = 0.4,
       has_starting_area_placement = false,
       regular_blob_amplitude_multiplier = 1,
       regular_rq_factor_multiplier = 0.9,
@@ -220,6 +239,44 @@ data:extend({
       mining_time = 1,
       map_color = {r=0.75, g=0.75, b=0.75},
       mining_visualisation_tint = {r=0.75, g=0.75, b=0.75, a=1.0},
+    },
+    {
+      base_density = 8.5,
+      base_spots_per_km2 = 0.37,
+      has_starting_area_placement = false,
+      regular_blob_amplitude_multiplier = 1,
+      regular_rq_factor_multiplier = 0.9,
+      candidate_spot_count = 22,
+    }
+  ),
+  basic_resource(
+    {
+      name = "manganese-ore",
+      icon = "__Spaghetorio__/graphics/icons/manganese-ore-1.png",
+      stages_filename = "__Spaghetorio__/graphics/resource/manganese-ore-patches.png",
+      order = "d",
+      mining_time = 1,
+      map_color = {r=0.7, g=0.9, b=0.8},
+      mining_visualisation_tint = {r=0.7, g=0.9, b=0.8, a=1.0},
+    },
+    {
+      base_density = 8.5,
+      base_spots_per_km2 = 0.37,
+      has_starting_area_placement = false,
+      regular_blob_amplitude_multiplier = 1,
+      regular_rq_factor_multiplier = 0.9,
+      candidate_spot_count = 22,
+    }
+  ),
+  basic_resource(
+    {
+      name = "molybdenum-ore",
+      icon = "__Spaghetorio__/graphics/icons/molybdenum-ore-1.png",
+      stages_filename = "__Spaghetorio__/graphics/resource/molybdenum-ore-patches.png",
+      order = "d",
+      mining_time = 1,
+      map_color = {r=0.1, g=0.8, b=0.8},
+      mining_visualisation_tint = {r=0.1, g=0.8, b=0.8, a=1.0},
     },
     {
       base_density = 8.5,
@@ -409,10 +466,13 @@ data:extend({
 
 data.raw.planet["nauvis"].map_gen_settings.autoplace_settings.entity.settings["sp-aluminum-ore"] = {}
 data.raw.planet["nauvis"].map_gen_settings.autoplace_settings.entity.settings["sp-barium-ore"] = {}
+data.raw.planet["nauvis"].map_gen_settings.autoplace_settings.entity.settings["sp-boron-ore"] = {}
 data.raw.planet["nauvis"].map_gen_settings.autoplace_settings.entity.settings["sp-chromite"] = {}
 data.raw.planet["nauvis"].map_gen_settings.autoplace_settings.entity.settings["sp-cobalt-ore"] = {}
 data.raw.planet["nauvis"].map_gen_settings.autoplace_settings.entity.settings["sp-magnesium-ore"] = {}
+data.raw.planet["nauvis"].map_gen_settings.autoplace_settings.entity.settings["sp-manganese-ore"] = {}
 data.raw.planet["nauvis"].map_gen_settings.autoplace_settings.entity.settings["sp-mercury-ore"] = {}
+data.raw.planet["nauvis"].map_gen_settings.autoplace_settings.entity.settings["sp-molybdenum-ore"] = {}
 data.raw.planet["nauvis"].map_gen_settings.autoplace_settings.entity.settings["sp-nickel-ore"] = {}
 data.raw.planet["nauvis"].map_gen_settings.autoplace_settings.entity.settings["sp-stibnite"] = {}
 data.raw.planet["nauvis"].map_gen_settings.autoplace_settings.entity.settings["sp-tinstone"] = {}

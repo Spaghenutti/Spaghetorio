@@ -415,7 +415,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-antimony-pillet",  -- #ForRegEx# - recipe
-    icon = "__Spaghetorio__/graphics/icons/antimony.png",
+    icon = "__Spaghetorio__/graphics/icons/antimony-pillet.png",
     icon_size = 64,
     mip_maps = 4,
     category = "smelting",
@@ -9762,36 +9762,6 @@ data:extend({
       {type = "item", name = "sp-calcium", probability=0.07, amount = 1},
       {type = "item", name = "lithium", probability=0.25, amount = 1},
       {type = "fluid", name = "sp-hydrogen", amount = 10},
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-antimony-from-acrovoid",  -- #ForRegEx# - recipe
-    icons = util.icon.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/antimony.png",
-                                                         "__Spaghetorio__/graphics/icons/acrovoid.png"),
-    icon_size = 64,
-    mip_maps = 4,
-    category = "acroproduct-conversion-with-acrovoid",
-    subgroup = "processed-resource-from-acrovoid",
-    enabled = false,
-    energy_required = 10,
-    allowed_effects = {
-      "consumption",
-      "speed",
-      "pollution"
-    },
-    allow_decomposition = false,
-    ingredients = {
-      {type = "item", name = "sp-antimony-pillet", amount = 10},
-      {type = "item", name = "sp-acrovoid", amount = 1}
-    },
-    results = {
-      {type = "item", name = "sp-acrovoid", probability=0.98, amount = 1},
-      {type = "item", name = "sp-antimony-pillet", amount = 12},
-      {type = "item", name = "sp-phosphorus", probability=0.15, amount = 1},
-      {type = "item", name = "sp-tinstone", probability=0.2, amount = 1},
-      {type = "item", name = "sp-tellurium", probability=0.16, amount = 1},
-      {type = "fluid", name = "sp-nitrogen", amount = 8},
     }
   },
   {

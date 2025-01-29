@@ -97,6 +97,30 @@ data:extend({
   },
   {
     type = "autoplace-control",
+    name = "sp-boron-ore",  -- #ForRegEx# - autoplace-control
+    localised_name = {"", "[entity=sp-boron-ore] ", {"entity-name.sp-boron-ore"}},
+    category = "resource",
+    richness = true,
+    order = "b[boron-ore]"
+  },
+  {
+    type = "autoplace-control",
+    name = "sp-manganese-ore",  -- #ForRegEx# - autoplace-control
+    localised_name = {"", "[entity=sp-manganese-ore] ", {"entity-name.sp-manganese-ore"}},
+    category = "resource",
+    richness = true,
+    order = "b[manganese-ore]"
+  },
+  {
+    type = "autoplace-control",
+    name = "sp-molybdenum-ore",  -- #ForRegEx# - autoplace-control
+    localised_name = {"", "[entity=sp-molybdenum-ore] ", {"entity-name.sp-molybdenum-ore"}},
+    category = "resource",
+    richness = true,
+    order = "b[molybdenum-ore]"
+  },
+  {
+    type = "autoplace-control",
     name = "sp-blunagium",  -- #ForRegEx# - autoplace-control
     localised_name = {"", "[entity=sp-blunagium] ", {"entity-name.sp-blunagium"}},
     category = "resource",
