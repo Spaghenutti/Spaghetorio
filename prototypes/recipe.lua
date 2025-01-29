@@ -1015,6 +1015,74 @@ data:extend({
       {type = "item", name = "sp-rukite-bar", amount = 1}
     }
   },
+  {
+    type = "recipe",
+    name = "sp-barium-sulfide",  -- #ForRegEx# - recipe
+    category = "intermediate-smelting",
+    enabled = false,
+    energy_required = 4,
+    ingredients = {
+      {type = "item", name = "sp-barium-sulfamate", amount = 8},
+      {type = "item", name = "carbon", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-barium-sulfide", amount = 8}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-barium-billet",  -- #ForRegEx# - recipe
+    category = "intermediate-smelting",
+    enabled = false,
+    energy_required = 8,
+    ingredients = {
+      {type = "item", name = "sp-barium-sulfamate", amount = 8},
+    },
+    results = {
+      {type = "item", name = "sp-barium-billet", amount = 8}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-antimony-oxide",  -- #ForRegEx# - recipe
+    category = "intermediate-smelting",
+    enabled = false,
+    energy_required = 6,
+    ingredients = {
+      {type = "item", name = "sp-stibnite", amount = 8},
+    },
+    results = {
+      {type = "item", name = "sp-antimony-oxide", amount = 6}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-antimony-pillet",  -- #ForRegEx# - recipe
+    category = "intermediate-smelting",
+    enabled = false,
+    energy_required = 10,
+    ingredients = {
+      {type = "item", name = "sp-antimony-oxide", amount = 8},
+      {type = "item", name = "carbon", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-antimony-pillet", amount = 20}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-copper-antimony",  -- #ForRegEx# - recipe
+    category = "intermediate-smelting",
+    enabled = false,
+    energy_required = 8,
+    ingredients = {
+      {type = "item", name = "copper-plate", amount = 4},
+      {type = "item", name = "sp-antimony-pillet", amount = 3},
+    },
+    results = {
+      {type = "item", name = "sp-copper-antimony", amount = 4}
+    }
+  },
   ------------------------------------------------------------------------------
   -- MARK: enriching-raw-resource
   ------------------------------------------------------------------------------
@@ -2380,6 +2448,135 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "sp-barium-sulfamate",  -- #ForRegEx# - recipe
+    category = "chemistry",
+    enabled = false,
+    energy_required = 4,
+    ingredients = {
+      {type = "item", name = "sp-barium-ore", amount = 3},
+      {type = "fluid", name = "sulfuric-acid", amount = 5},
+    },
+    results = {
+      {type = "item", name = "sp-barium-sulfamate", amount = 4}
+    },
+    -- crafting_machine_tint = {
+    --   primary = {r = 0.3, g = 0.3, b = 0.3, a = 1.000},
+    --   secondary = {r = 0.1, g = 0.1, b = 0.1, a = 1.000},
+    --   tertiary = {r = 0.0, g = 0.0, b = 0.0, a = 1.000},
+    --   quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
+    -- }
+  },
+  {
+    type = "recipe",
+    name = "sp-barium-carbonate",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/icons/barium-carbonate.png",
+    icon_size = 64,
+    category = "chemistry",
+    subgroup = "chemical-product",
+    enabled = false,
+    energy_required = 6,
+    ingredients = {
+      {type = "item", name = "sp-barium-sulfide", amount = 3},
+      {type = "fluid", name = "sp-oxygen", amount = 5},
+      {type = "item", name = "carbon", amount = 2},
+    },
+    results = {
+      {type = "item", name = "sp-barium-carbonate", amount = 2},
+      {type = "item", name = "sulfur", amount = 1},
+    },
+    -- crafting_machine_tint = {
+    --   primary = {r = 0.3, g = 0.3, b = 0.3, a = 1.000},
+    --   secondary = {r = 0.1, g = 0.1, b = 0.1, a = 1.000},
+    --   tertiary = {r = 0.0, g = 0.0, b = 0.0, a = 1.000},
+    --   quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
+    -- }
+  },
+  {
+    type = "recipe",
+    name = "sp-barium-titanate",  -- #ForRegEx# - recipe
+    category = "chemistry",
+    enabled = false,
+    energy_required = 3,
+    ingredients = {
+      {type = "item", name = "sp-barium-billet", amount = 1},
+      {type = "item", name = "sp-titanium-ingot", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-barium-titanate", amount = 1},
+    },
+    -- crafting_machine_tint = {
+    --   primary = {r = 0.3, g = 0.3, b = 0.3, a = 1.000},
+    --   secondary = {r = 0.1, g = 0.1, b = 0.1, a = 1.000},
+    --   tertiary = {r = 0.0, g = 0.0, b = 0.0, a = 1.000},
+    --   quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
+    -- }
+  },
+  {
+    type = "recipe",
+    name = "sp-mercury",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/icons/barium-carbonate.png",
+    icon_size = 64,
+    category = "chemistry",
+    subgroup = "fluid-recipes",
+    enabled = false,
+    energy_required = 2,
+    ingredients = {
+      {type = "item", name = "sp-mercury-ore", amount = 3},
+    },
+    results = {
+      {type = "fluid", name = "sp-mercury", amount = 5},
+      {type = "item", name = "sulfur", amount = 1},
+      {type = "item", name = "stone", amount = 2},
+    },
+    -- crafting_machine_tint = {
+    --   primary = {r = 0.3, g = 0.3, b = 0.3, a = 1.000},
+    --   secondary = {r = 0.1, g = 0.1, b = 0.1, a = 1.000},
+    --   tertiary = {r = 0.0, g = 0.0, b = 0.0, a = 1.000},
+    --   quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
+    -- }
+  },
+  {
+    type = "recipe",
+    name = "sp-antimony-trichloride",  -- #ForRegEx# - recipe
+    category = "chemistry",
+    enabled = false,
+    energy_required = 8,
+    ingredients = {
+      {type = "item", name = "sp-antimony-pillet", amount = 1},
+      {type = "fluid", name = "sp-chlorine", amount = 20},
+    },
+    results = {
+      {type = "item", name = "sp-antimony-trichloride", amount = 3},
+    },
+    -- crafting_machine_tint = {
+    --   primary = {r = 0.3, g = 0.3, b = 0.3, a = 1.000},
+    --   secondary = {r = 0.1, g = 0.1, b = 0.1, a = 1.000},
+    --   tertiary = {r = 0.0, g = 0.0, b = 0.0, a = 1.000},
+    --   quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
+    -- }
+  },
+  {
+    type = "recipe",
+    name = "sp-antimony-triiodide",  -- #ForRegEx# - recipe
+    category = "chemistry",
+    enabled = false,
+    energy_required = 8,
+    ingredients = {
+      {type = "item", name = "sp-antimony-pillet", amount = 1},
+      -- {type = "fluid", name = "sp-iod", amount = 20},
+    },
+    results = {
+      {type = "item", name = "sp-antimony-triiodide", amount = 3},
+    },
+    -- crafting_machine_tint = {
+    --   primary = {r = 0.3, g = 0.3, b = 0.3, a = 1.000},
+    --   secondary = {r = 0.1, g = 0.1, b = 0.1, a = 1.000},
+    --   tertiary = {r = 0.0, g = 0.0, b = 0.0, a = 1.000},
+    --   quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
+    -- }
+  },
+  {
+    type = "recipe",
     name = "sp-chemical-science-pack-2",  -- #ForRegEx# - recipe
     category = "chemistry",
     enabled = false,
@@ -2496,6 +2693,27 @@ data:extend({
       tertiary = {r = 0.768, g = 0.665, b = 0.762, a = 1.000},
       quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
     }
+  },
+  {
+    type = "recipe",
+    name = "sp-drilling-fluid",  -- #ForRegEx# - recipe
+    category = "sp-kr-fluid-filtration",
+    enabled = false,
+    energy_required = 6,
+    ingredients = {
+      {type = "item", name = "sp-barium-sulfide", amount = 3},
+      {type = "fluid", name = "sp-oxygen", amount = 5},
+      {type = "fluid", name = "water", amount = 50},
+    },
+    results = {
+      {type = "fluid", name = "sp-drilling-fluid", amount = 50}
+    },
+    -- crafting_machine_tint = {
+    --   primary = {r = 0.3, g = 0.3, b = 0.3, a = 1.000},
+    --   secondary = {r = 0.1, g = 0.1, b = 0.1, a = 1.000},
+    --   tertiary = {r = 0.0, g = 0.0, b = 0.0, a = 1.000},
+    --   quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
+    -- }
   },
   ------------------------------------------------------------------------------
   -- MARK: sp-kr-atmosphere-condensation
@@ -3015,6 +3233,35 @@ data:extend({
     },
     results = {
       {type = "item", name = "wood", amount = 2}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-kr-grow-wood-with-water",
+    category = "sp-kr-growing",
+    energy_required = 60,
+    enabled = false,
+    ingredients = {
+      { type = "fluid", name = "water", amount = 200 },
+    },
+    results = {
+      {type = "item", name = "wood", amount = 40},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-kr-grow-wood-plus",
+    category = "sp-kr-growing",
+    icon = "__Spaghetorio__/graphics/krastorio/icons/recipes/wood-plus.png",
+    icon_size = 64,
+    energy_required = 60,
+    enabled = false,
+    ingredients = {
+      { type = "fluid", name = "water", amount = 200 },
+      { type = "item", name = "nutrients", amount = 1 },
+    },
+    results = {
+      {type = "item", name = "wood", amount = 80},
     }
   },
   ------------------------------------------------------------------------------
@@ -5165,35 +5412,6 @@ data:extend({
     }
   },
   -- MARK: Sort Category
-  {
-    type = "recipe",
-    name = "sp-kr-grow-wood-with-water",
-    category = "sp-kr-growing",
-    energy_required = 60,
-    enabled = false,
-    ingredients = {
-      { type = "fluid", name = "water", amount = 200 },
-    },
-    results = {
-      {type = "item", name = "wood", amount = 40},
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-kr-grow-wood-plus",
-    category = "sp-kr-growing",
-    icon = "__Spaghetorio__/graphics/krastorio/icons/recipes/wood-plus.png",
-    icon_size = 64,
-    energy_required = 60,
-    enabled = false,
-    ingredients = {
-      { type = "fluid", name = "water", amount = 200 },
-      { type = "item", name = "nutrients", amount = 1 },
-    },
-    results = {
-      {type = "item", name = "wood", amount = 80},
-    }
-  },
   {
     type = "recipe",
     name = "sp-kr-water-electrolysis",

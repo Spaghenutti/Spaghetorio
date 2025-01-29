@@ -68,8 +68,11 @@ data:extend({
     order = "a[fluid]-h[heavy-water]"
   },
   {
-    type = "item",
-    name = "sp-drilling-fluid",  -- #ForRegEx# - item
+    type = "fluid",
+    name = "sp-drilling-fluid",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    base_color = {r=0.4, g=0.2, b=0.4},
+    flow_color = {r=0.4, g=0.2, b=0.4},
     icon = "__Spaghetorio__/graphics/dummy/dummy-item-default.png",
     icon_size = 64,
     scale = 0.5,
@@ -78,8 +81,11 @@ data:extend({
     stack_size = 200
   },
   {
-    type = "item",
-    name = "sp-mercury",  -- #ForRegEx# - item
+    type = "fluid",
+    name = "sp-mercury",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    base_color = {r=0.9, g=0.9, b=0.9},
+    flow_color = {r=0.9, g=1.0, b=0.9},
     icon = "__Spaghetorio__/graphics/dummy/dummy-item-default.png",
     icon_size = 64,
     scale = 0.5,
@@ -582,8 +588,8 @@ data:extend({
     name = "sp-diborane",  -- #ForRegEx# - fluid
     default_temperature = 25,
     heat_capacity = "0.1kJ",
-    base_color = {r=0.15, g=0.0, b=0.0},
-    flow_color = {r=0.15, g=0.0, b=0.0},
+    base_color = {r=0.15, g=0.1, b=0.1},
+    flow_color = {r=0.15, g=0.1, b=0.1},
     icon = "__Spaghetorio__/graphics/dummy/dummy-item-default.png",
     icon_size = 64,
     icon_mipmaps = 4,

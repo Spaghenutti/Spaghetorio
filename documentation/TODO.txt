@@ -2,23 +2,23 @@
 Factorio Space age
   - Add some new ores (note down how they are supposed to be processed)
     + barium-ore
-      - barium-ore + sulfuric-acid -> barium-sulfamate (chemistry)
-      - barium-sulfamate + carbon -> barium-sulfide (smelting)
-      - barium-sulfide -> barium-billet (smelting)
-      - barium-sulfide + oxygen -> drilling-fluid
-      - barium-sulfide + carbon + oxygen -> barium-carbonate + sulfur (barium-carbonate used in glass and ceramics)
-      - barium-billet + titanium-ingot -> barium-titanate (for electronic components like capacitors)
+      + barium-ore + sulfuric-acid -> barium-sulfamate (chemistry)
+      + barium-sulfamate + carbon -> barium-sulfide (smelting)
+      + barium-sulfide -> barium-billet (smelting)
+      + barium-sulfide + oxygen -> drilling-fluid (fluid-filtration)
+      + barium-sulfide + carbon + oxygen -> barium-carbonate + sulfur (barium-carbonate used in glass and ceramics)
+      + barium-billet + titanium-ingot -> barium-titanate (for electronic components like capacitors)
       - barium-ore from acrocrystal
     + mercury-ore
-      - mercury-ore -> mercury + sulfur + stone
+      + mercury-ore -> mercury + sulfur + stone
       - used in relay
       - used in catalyst
     + stibnite
-      - stibnite -> antimony-oxide (smelting)
-      - antimony-oxide + carbon -> antimony-pillet (smelting)
-      - antimony-pillet + chlorine -> antimony-trichloride (used for organic synthesis)
-      - antimony-pillet + iod -> antimony-triiodide (thin film for semiconductor)
-      - copper + antimony-pillet -> copper-antimony (for bearings, solar cells and electronic layers)
+      + stibnite -> antimony-oxide (smelting)
+      + antimony-oxide + carbon -> antimony-pillet (smelting)
+      + antimony-pillet + chlorine -> antimony-trichloride (used for organic synthesis)
+      + antimony-pillet + iod -> antimony-triiodide (thin film for semiconductor)
+      + copper + antimony-pillet -> copper-antimony (for bearings, solar cells and electronic layers)
       + add uses to antimony
       - stibnite from acrocrystal
     - boron-ore (kernite)
