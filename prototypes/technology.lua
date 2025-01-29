@@ -910,7 +910,7 @@ data:extend({
     type = "technology",
     name = "sp-tungsten-processing",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghetorio__/graphics/hr-icons/tungsten-slab.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/tungsten-powder.png",
     effects =
     {
       {
@@ -2434,12 +2434,12 @@ data:extend({
     name = "sp-antimony-processing",  -- #ForRegEx# - technology
     icon_size = 256,
     icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/hr-icons/stibnite-1.png", 256, nil,
-                                   "__Spaghetorio__/graphics/hr-icons/antimony.png", 256, nil),
+                                        "__Spaghetorio__/graphics/hr-icons/antimony.png", 256, nil),
     effects =
     {
       {
         type = "unlock-recipe",
-        recipe = "sp-antimony"
+        recipe = "sp-antimony-pillet"
       },
     },
     prerequisites = {

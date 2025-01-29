@@ -67,6 +67,26 @@ data:extend({
     subgroup = "aqueous-fluid",
     order = "a[fluid]-h[heavy-water]"
   },
+  {
+    type = "item",
+    name = "sp-drilling-fluid",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/dummy/dummy-item-default.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "aqueous-fluid",
+    order = "[drilling-fluid]",
+    stack_size = 200
+  },
+  {
+    type = "item",
+    name = "sp-mercury",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/dummy/dummy-item-default.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "aqueous-fluid",
+    order = "[mercury]",
+    stack_size = 200
+  },
   ------------------------------------------------------------------------------
   -- MARK: dirty-fluid
   ------------------------------------------------------------------------------
@@ -556,6 +576,19 @@ data:extend({
     icon_mipmaps = 4,
     subgroup = "chemical",
     order = "a[fluid]-f[hydrogen-chloride]"
+  },
+  {
+    type = "fluid",
+    name = "sp-diborane",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    base_color = {r=0.15, g=0.0, b=0.0},
+    flow_color = {r=0.15, g=0.0, b=0.0},
+    icon = "__Spaghetorio__/graphics/dummy/dummy-item-default.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "chemical",
+    order = "a[fluid]-f[diborane]"
   },
   ------------------------------------------------------------------------------
   -- MARK: alien

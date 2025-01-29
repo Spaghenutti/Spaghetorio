@@ -21,9 +21,9 @@ data:extend({
   },
   {
     type = "item-subgroup",
-    name = "raw-resource-from-acromatter",
+    name = "enriched-resource-from-acrocrystal",
     group = "base-products",
-    order = "a-z-acromatter"
+    order = "a-z-acrocrystal"
   },
   {
     type = "item-subgroup",
@@ -57,9 +57,9 @@ data:extend({
   },
   {
     type = "item-subgroup",
-    name = "enriched-resource-from-acrocrystal",
+    name = "raw-resource-from-acromatter",
     group = "base-products",
-    order = "c-z-acrocrystal"
+    order = "c-z-acromatter"
   },
   {
     type = "item-subgroup",

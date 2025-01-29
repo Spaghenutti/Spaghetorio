@@ -12,7 +12,7 @@ local util = require("data-util")
 --    - "sp-perchloric-acid" (fluid) (already used for mining)
 --    - "sp-laser"
 
---    - "sp-antimony"
+--    - "sp-antimony-pillet"
 --    - "sp-calcium"
 --    - "sp-liquid-sodium"
 --    - "sp-stibnite"
@@ -414,7 +414,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-antimony",  -- #ForRegEx# - recipe
+    name = "sp-antimony-pillet",  -- #ForRegEx# - recipe
     icon = "__Spaghetorio__/graphics/icons/antimony.png",
     icon_size = 64,
     mip_maps = 4,
@@ -426,7 +426,7 @@ data:extend({
       {type = "item", name = "sp-stibnite", amount = 1}
     },
     results = {
-      {type = "item", name = "sp-antimony", amount = 1},
+      {type = "item", name = "sp-antimony-pillet", amount = 1},
       {type = "item", name = "sulfur", amount = 1}
     }
   },
@@ -5275,7 +5275,7 @@ data:extend({
     ingredients = {
       {type = "item", name = "sp-monocrystal", amount = 1},
       {type = "item", name = "sp-rukite-powder", amount = 4},
-      {type = "item", name = "sp-antimony", amount = 4}
+      {type = "item", name = "sp-antimony-pillet", amount = 4}
     },
     results = {
       {type = "fluid", name = "sp-chronomatter", amount = 1}
@@ -5461,7 +5461,7 @@ data:extend({
       {type = "item", name = "sp-blunagium-bar", amount = 2},
       {type = "item", name = "sp-graphene", amount = 5},
       {type = "item", name = "sp-platinum", amount = 2},
-      {type = "item", name = "sp-antimony", amount = 2},
+      {type = "item", name = "sp-antimony-pillet", amount = 2},
       {type = "fluid", name = "sp-helium", amount = 10},
     },
     results = {
@@ -7142,7 +7142,7 @@ data:extend({
     ingredients = {
       {type = "item", name = "sp-yemnuth-pearls", amount = 8},
       {type = "item", name = "sp-chromium-plate", amount = 5},
-      {type = "item", name = "sp-antimony", amount = 3},
+      {type = "item", name = "sp-antimony-pillet", amount = 3},
       {type = "item", name = "sp-yttrium", amount = 2},
       {type = "item", name = "sp-high-purity-silicon", amount = 4},
     },
@@ -7164,7 +7164,7 @@ data:extend({
       {type = "item", name = "sp-blunagium-basalt", amount = 3},
       {type = "item", name = "sp-blunagium-plate", amount = 4},
       {type = "item", name = "sp-diamond", amount = 2},
-      {type = "item", name = "sp-antimony", amount = 2}
+      {type = "item", name = "sp-antimony-pillet", amount = 2}
     },
     results = {
       {type = "item", name = "sp-blunagium-rukite-compound", amount = 10}
@@ -7477,7 +7477,7 @@ data:extend({
       {type = "item", name = "sp-grobgnum-shard", amount = 2},
       {type = "item", name = "sp-grobgnum-plate", amount = 2},
       {type = "item", name = "sp-glass-fiber", amount = 1},
-      {type = "item", name = "sp-antimony", amount = 1},
+      {type = "item", name = "sp-antimony-pillet", amount = 1},
       {type = "fluid", name = "sp-grobgnumylene", amount = 5},
       {type = "item", name = "sp-biomass", amount = 2},
       {type = "item", name = "sp-ai-core", amount = 2}
@@ -7498,7 +7498,7 @@ data:extend({
       {type = "item", name = "sp-grobgnum-shard", amount = 2},
       {type = "item", name = "sp-grobgnum-plate", amount = 1},
       {type = "item", name = "sp-glass-fiber", amount = 1},
-      {type = "item", name = "sp-antimony", amount = 2},
+      {type = "item", name = "sp-antimony-pillet", amount = 2},
       {type = "fluid", name = "sp-grobgnum-hydroxide", amount = 8},
       {type = "item", name = "sp-biomass", amount = 3},
       {type = "item", name = "sp-ai-core", amount = 1}
@@ -7724,7 +7724,7 @@ data:extend({
     ingredients = {
       {type = "item", name = "sp-yemnuth-pearls", amount = 8},
       {type = "item", name = "sp-yemnuth-plate", amount = 1},
-      {type = "item", name = "sp-antimony", amount = 1},
+      {type = "item", name = "sp-antimony-pillet", amount = 1},
       {type = "fluid", name = "sp-heavy-water", amount = 10},
     },
     results = {
@@ -9106,7 +9106,7 @@ data:extend({
       {type = "item", name = "sp-tinstone", amount = 7},
       {type = "item", name = "sp-acrocrystal", probability=0.99, amount = 1},
       {type = "item", name = "sp-leadstone", probability=0.5, amount = 1},
-      {type = "item", name = "sp-antimony", probability=0.12, amount = 1},
+      {type = "item", name = "sp-antimony-pillet", probability=0.12, amount = 1},
       {type = "item", name = "sp-tellurium", probability=0.02, amount = 1},
       {type = "item", name = "sp-silicon", probability=0.15, amount = 1}
     }
@@ -9640,7 +9640,7 @@ data:extend({
     results = {
       {type = "item", name = "sp-acrovoid", probability=0.99, amount = 1},
       {type = "item", name = "sp-phosphorus", amount = 8},
-      {type = "item", name = "sp-antimony", probability=0.24, amount = 1},
+      {type = "item", name = "sp-antimony-pillet", probability=0.24, amount = 1},
       {type = "item", name = "sulfur", probability=0.12, amount = 1},
       {type = "item", name = "sp-aluminum-ore", probability=0.08, amount = 1},
       {type = "item", name = "sp-silicon", probability=0.02, amount = 1},
@@ -9782,12 +9782,12 @@ data:extend({
     },
     allow_decomposition = false,
     ingredients = {
-      {type = "item", name = "sp-antimony", amount = 10},
+      {type = "item", name = "sp-antimony-pillet", amount = 10},
       {type = "item", name = "sp-acrovoid", amount = 1}
     },
     results = {
       {type = "item", name = "sp-acrovoid", probability=0.98, amount = 1},
-      {type = "item", name = "sp-antimony", amount = 12},
+      {type = "item", name = "sp-antimony-pillet", amount = 12},
       {type = "item", name = "sp-phosphorus", probability=0.15, amount = 1},
       {type = "item", name = "sp-tinstone", probability=0.2, amount = 1},
       {type = "item", name = "sp-tellurium", probability=0.16, amount = 1},
@@ -9819,7 +9819,7 @@ data:extend({
       {type = "item", name = "sp-acrovoid", probability=0.99, amount = 1},
       {type = "item", name = "sp-tellurium", amount = 11},
       {type = "item", name = "sulfur", probability=0.25, amount = 2},
-      {type = "item", name = "sp-antimony", probability=0.12, amount = 1},
+      {type = "item", name = "sp-antimony-pillet", probability=0.12, amount = 1},
       {type = "fluid", name = "sp-xenon", probability=0.02, amount = 1},
       {type = "fluid", name = "sp-oxygen", amount = 8},
     }
@@ -10057,7 +10057,7 @@ data:extend({
       {type = "item", name = "sp-enriched-tinstone", amount = 7},
       {type = "item", name = "sp-acromatter", probability=0.99, amount = 1},
       {type = "item", name = "sp-leadstone", probability=0.5, amount = 2},
-      {type = "item", name = "sp-antimony", probability=0.12, amount = 2},
+      {type = "item", name = "sp-antimony-pillet", probability=0.12, amount = 2},
       {type = "item", name = "sp-tellurium", probability=0.02, amount = 2},
       {type = "item", name = "sp-silicon", probability=0.15, amount = 2}
     }
