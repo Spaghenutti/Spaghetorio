@@ -2563,7 +2563,7 @@ data:extend({
     energy_required = 8,
     ingredients = {
       {type = "item", name = "sp-antimony-pillet", amount = 1},
-      -- {type = "fluid", name = "sp-iod", amount = 20},
+      -- {type = "fluid", name = "sp-iodine", amount = 20},
     },
     results = {
       {type = "item", name = "sp-antimony-triiodide", amount = 3},

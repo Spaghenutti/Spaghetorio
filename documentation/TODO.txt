@@ -17,7 +17,7 @@ Factorio Space age
       + stibnite -> antimony-oxide (smelting)
       + antimony-oxide + carbon -> antimony-pillet (smelting)
       + antimony-pillet + chlorine -> antimony-trichloride (used for organic synthesis)
-      + antimony-pillet + iod -> antimony-triiodide (thin film for semiconductor)
+      + antimony-pillet + iodine -> antimony-triiodide (thin film for semiconductor)
       + copper + antimony-pillet -> copper-antimony (for bearings, solar cells and electronic layers)
       + add uses to antimony
       - stibnite from acrocrystal
@@ -42,7 +42,7 @@ Factorio Space age
       - Nickel (29%), Cobalt (17%), Iron (balance) -> kovar (used for Electronics, glass-to-metal seals)
       - arsenic-trioxide + hydrogen -> arsen-pillet
       - arsen-pillet + sulfur -> arsenic-sulfide (As2S3) (Used as a semiconductor material)
-      - arsen-pillet + iod -> arsenic-iodide (AsI3) (Used in the synthesis of organic arsenic compounds and as a reagent in chemical analysis)
+      - arsen-pillet + iodine -> arsenic-iodide (AsI3) (Used in the synthesis of organic arsenic compounds and as a reagent in chemical analysis)
       - cobalt-ore from acrocrystal
     - molybdenum-ore
       - molybdenum-ore -> molybdenum-trioxide (smelting)
@@ -59,6 +59,8 @@ Factorio Space age
 
 
   - Add Krastorio matter conversion recipes
+  + Add mineral water
+  - Add imersite
   - Add ores for core extractor
     - ...
     - add core extractor

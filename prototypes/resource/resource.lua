@@ -6,11 +6,23 @@
 local resource_autoplace = require("resource-autoplace")
 local base_sounds = require("__base__.prototypes.entity.sounds")
 
+
 local stone_driving_sound =
 {
   sound =
   {
     filename = "__base__/sound/driving/vehicle-surface-stone.ogg", volume = 0.8,
+    advanced_volume_control = {fades = {fade_in = {curve_type = "cosine", from = {control = 0.5, volume_percentage = 0.0}, to = {1.5, 100.0 }}}}
+  },
+  fade_ticks = 6
+}
+
+
+local oil_driving_sound =
+{
+  sound =
+  {
+    filename = "__base__/sound/driving/vehicle-surface-oil.ogg", volume = 0.8,
     advanced_volume_control = {fades = {fade_in = {curve_type = "cosine", from = {control = 0.5, volume_percentage = 0.0}, to = {1.5, 100.0 }}}}
   },
   fade_ticks = 6
@@ -68,6 +80,75 @@ local function basic_resource(resource_parameters, autoplace_parameters)
     map_color = resource_parameters.map_color,
     mining_visualisation_tint = resource_parameters.mining_visualisation_tint,
     factoriopedia_simulation = resource_parameters.factoriopedia_simulation
+  }
+end
+
+local function fluid_resource(resource_parameters, autoplace_parameters)
+  return
+  {
+    type = "resource",
+    name = "sp-" .. resource_parameters.name,
+    icon = resource_parameters.icon,
+    flags = {"placeable-neutral"},
+    category = "basic-fluid",
+    subgroup = "mineable-fluids",
+    order= "fluid-"..resource_parameters.order,
+    infinite = true,
+    highlight = true,
+    minimum = 60000,
+    normal = 300000,
+    infinite_depletion_amount = 10,
+    resource_patch_search_radius = 12,
+    tree_removal_probability = 0.7,
+    tree_removal_max_distance = 32 * 32,
+    minable =
+    {
+      mining_time = 1,
+      results =
+      {
+        {
+          type = "fluid",
+          name = "sp-" .. resource_parameters.name,
+          amount_min = 10,
+          amount_max = 10,
+          probability = 1
+        }
+      }
+    },
+    walking_sound = base_sounds.oil,
+    driving_sound = oil_driving_sound,
+    collision_box = {{-1.4, -1.4}, {1.4, 1.4}},
+    selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
+    autoplace = resource_autoplace.resource_autoplace_settings
+    {
+      name = "sp-" .. resource_parameters.name,
+      order = resource_parameters.order,
+      base_density = autoplace_parameters.base_density,
+      base_spots_per_km = autoplace_parameters.base_spots_per_km,
+      random_probability = autoplace_parameters.random_probability,
+      random_spot_size_minimum = 1,
+      random_spot_size_maximum = 1, -- don't randomize spot size
+      additional_richness = autoplace_parameters.additional_richness,
+      has_starting_area_placement = autoplace_parameters.has_starting_area_placement,
+      regular_rq_factor_multiplier = autoplace_parameters.regular_rq_factor_multiplier,
+      -- starting_rq_factor_multiplier = autoplace_parameters.starting_rq_factor_multiplier,
+      -- candidate_spot_count = autoplace_parameters.candidate_spot_count,
+      -- tile_restriction = autoplace_parameters.tile_restriction,
+    },
+    stage_counts = {0},
+    stages =
+    {
+      sheet = util.sprite_load(resource_parameters.stages_filename,
+      {
+        priority = "extra-high",
+        scale = 0.5,
+        variation_count = 1,
+        frame_count = resource_parameters.stages_filename_count,
+      })
+    },
+    draw_stateless_visualisation_under_building = false,
+    map_color = resource_parameters.map_color,
+    map_grid = false
   }
 end
 
@@ -357,6 +438,7 @@ data:extend({
     {
       base_density = 10,
       base_spots_per_km2 = 0.1,
+      has_starting_area_placement = true,
       regular_rq_factor_multiplier = 1.10,
       starting_rq_factor_multiplier = 1.5,
       candidate_spot_count = 22,
@@ -420,6 +502,26 @@ data:extend({
     }
   ),
 
+  -- MARK: Fluid resource
+  fluid_resource(
+    {
+      name = "mineral-water",
+      icon = "__Spaghetorio__/graphics/krastorio/icons/fluids/mineral-water.png",
+      stages_filename = "__Spaghetorio__/graphics/krastorio/resources/mineral-water",  -- It is so dissapointing to see that here i have to remove the .png for this to work...
+      stages_filename_count = 8,
+      order = "a",
+      map_color = {r=0.0, g=0.1, b=0.6},
+    },
+    {
+      base_density = 40,
+      base_spots_per_km = 0.5,
+      random_probability = 1 / 48,
+      additional_richness = 2000000,
+      has_starting_area_placement = false,
+      regular_rq_factor_multiplier = 1,
+    }
+  ),
+
   -- MARK: Quarry resource
   quarry_resource(
     {
@@ -441,6 +543,16 @@ data:extend({
       mining_visualisation_tint = {r = 0.1, g = 0.8, b = 0.1},
     }
   ),
+  -- quarry_resource(
+  --   {
+  --     name = "imersite",
+  --     icon = "__Spaghetorio__/graphics/icons/grobgnum.png",
+  --     stages_filename = "__Spaghetorio__/graphics/krastorio/resources/mineral-water.png",
+  --     mining_time = 1,
+  --     map_color = {r = 0, g = 0.7, b = 0},
+  --     mining_visualisation_tint = {r = 0.1, g = 0.8, b = 0.1},
+  --   }
+  -- ),
   quarry_resource(
     {
       name = "rukite",
@@ -479,6 +591,8 @@ data.raw.planet["nauvis"].map_gen_settings.autoplace_settings.entity.settings["s
 data.raw.planet["nauvis"].map_gen_settings.autoplace_settings.entity.settings["sp-titanium-ore"] = {}
 data.raw.planet["nauvis"].map_gen_settings.autoplace_settings.entity.settings["sp-zinc-ore"] = {}
 data.raw.planet["nauvis"].map_gen_settings.autoplace_settings.entity.settings["sp-zirconium-ore"] = {}
+
+data.raw.planet["nauvis"].map_gen_settings.autoplace_settings.entity.settings["sp-mineral-water"] = {}
 
 data.raw.planet["nauvis"].map_gen_settings.autoplace_settings.entity.settings["sp-blunagium"] = {}
 data.raw.planet["nauvis"].map_gen_settings.autoplace_settings.entity.settings["sp-grobgnum"] = {}

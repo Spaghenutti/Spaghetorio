@@ -1,4 +1,5 @@
 data:extend({
+  -- MARK: Normal resource
   {
     type = "autoplace-control",
     name = "sp-aluminum-ore",  -- #ForRegEx# - autoplace-control
@@ -119,6 +120,16 @@ data:extend({
     richness = true,
     order = "b[molybdenum-ore]"
   },
+  -- MARK: Fluid resource
+  {
+    type = "autoplace-control",
+    name = "sp-mineral-water",
+    localised_name = {"", "[entity=sp-mineral-water] ", {"entity-name.sp-mineral-water"}},
+    richness = true,
+    order = "a-e",
+    category = "resource"
+  },
+  -- MARK: Quarry resource
   {
     type = "autoplace-control",
     name = "sp-blunagium",  -- #ForRegEx# - autoplace-control
@@ -155,16 +166,21 @@ data:extend({
 
 data.raw.planet["nauvis"].map_gen_settings.autoplace_controls["sp-aluminum-ore"] = {}
 data.raw.planet["nauvis"].map_gen_settings.autoplace_controls["sp-barium-ore"] = {}
+data.raw.planet["nauvis"].map_gen_settings.autoplace_controls["sp-boron-ore"] = {}
 data.raw.planet["nauvis"].map_gen_settings.autoplace_controls["sp-chromite"] = {}
 data.raw.planet["nauvis"].map_gen_settings.autoplace_controls["sp-cobalt-ore"] = {}
 data.raw.planet["nauvis"].map_gen_settings.autoplace_controls["sp-magnesium-ore"] = {}
+data.raw.planet["nauvis"].map_gen_settings.autoplace_controls["sp-manganese-ore"] = {}
 data.raw.planet["nauvis"].map_gen_settings.autoplace_controls["sp-mercury-ore"] = {}
+data.raw.planet["nauvis"].map_gen_settings.autoplace_controls["sp-molybdenum-ore"] = {}
 data.raw.planet["nauvis"].map_gen_settings.autoplace_controls["sp-nickel-ore"] = {}
 data.raw.planet["nauvis"].map_gen_settings.autoplace_controls["sp-stibnite"] = {}
 data.raw.planet["nauvis"].map_gen_settings.autoplace_controls["sp-tinstone"] = {}
 data.raw.planet["nauvis"].map_gen_settings.autoplace_controls["sp-titanium-ore"] = {}
 data.raw.planet["nauvis"].map_gen_settings.autoplace_controls["sp-zinc-ore"] = {}
 data.raw.planet["nauvis"].map_gen_settings.autoplace_controls["sp-zirconium-ore"] = {}
+
+data.raw.planet["nauvis"].map_gen_settings.autoplace_controls["sp-mineral-water"] = {}
 
 data.raw.planet["nauvis"].map_gen_settings.autoplace_controls["sp-blunagium"] = {}
 data.raw.planet["nauvis"].map_gen_settings.autoplace_controls["sp-grobgnum"] = {}
