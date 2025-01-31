@@ -7,7 +7,7 @@ data:extend({
     enabled = false,
     energy_required = 6,
     ingredients = {
-      -- {type = "item", name = "sp-coke", amount = 3}
+      {type = "item", name = "sp-coke", amount = 3}
     },
     results = {
       {type = "item", name = "carbon", amount = 4}
@@ -52,19 +52,6 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "lithium",  -- #ForRegEx# - recipe
-    category = "smelting",
-    enabled = false,
-    energy_required = 2.4,
-    ingredients = {
-      {type = "item", name = "sp-lithium-oxide", amount = 2}
-    },
-    results = {
-      {type = "item", name = "lithium", amount = 2}
-    }
-  },
-  {
-    type = "recipe",
     name = "electrolyte",  -- #ForRegEx# - recipe
     category = "chemistry",
     enabled = false,
@@ -97,6 +84,20 @@ data:extend({
     },
     results = {
       {type = "item", name = "superconductor", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "lithium",  -- #ForRegEx# - recipe
+    category = "advanced-chemistry",
+    enabled = false,
+    energy_required = 10,
+    ingredients = {
+      {type = "item", name = "sp-lithium-chloride", amount = 2},
+      {type = "fluid", name = "sp-sodium-hydroxide", amount = 5}
+    },
+    results = {
+      {type = "item", name = "lithium", amount = 2},
     }
   },
 })

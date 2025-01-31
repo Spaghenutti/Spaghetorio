@@ -524,7 +524,7 @@ data:extend({
   fluid_resource(
     {
       name = "iodine-brine",
-      icon = "__Spaghetorio__/graphics/dummy/dummy-item-default.png",
+      icon = "__Spaghetorio__/graphics/icons/iodine-brine.png",
       stages_filename = "__space-age__/graphics/entity/fluorine-vent/fluorine-vent",  -- It is so dissapointing to see that here i have to remove the .png for this to work...
       stages_filename_count = 4,
       order = "a",

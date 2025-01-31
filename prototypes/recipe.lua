@@ -462,25 +462,6 @@ data:extend({
       {type = "item", name = "sp-glass", amount = 10}
     }
   },
-  -- {
-  --   type = "recipe",
-  --   name = "sp-lithium-oxide",  -- #ForRegEx# - recipe
-  --   icon = "__Spaghetorio__/graphics/icons/lithium-oxide.png",
-  --   icon_size = 64,
-  --   mip_maps = 4,
-  --   category = "smelting",
-  --   subgroup = "processed-resource",
-  --   enabled = false,
-  --   energy_required = 3.6,
-  --   ingredients = {
-  --     {type = "item", name = "sp-spodumene", amount = 4}
-  --   },
-  --   results = {
-  --     {type = "item", name = "sp-lithium-oxide", amount = 1},
-  --     {type = "item", name = "sp-alumina", amount = 1},
-  --     {type = "item", name = "sp-silica", amount = 1}
-  --   }
-  -- },
   ------------------------------------------------------------------------------
   -- MARK: crushed-smelting
   ------------------------------------------------------------------------------
@@ -1723,7 +1704,7 @@ data:extend({
     }
   },
   ------------------------------------------------------------------------------
-  -- MARK: dirty-water-filtering
+  -- MARK: sp-kr-fluid-filtration
   ------------------------------------------------------------------------------
   {
     type = "recipe",
@@ -1731,7 +1712,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/dirty-water-with-aluminum.png",
     icon_size = 64,
     mip_maps = 4,
-    category = "dirty-water-filtering",
+    category = "sp-kr-fluid-filtration",
     subgroup = "dirty-fluid-filtration",
     enabled = false,
     hide_from_player_crafting = true,
@@ -1759,7 +1740,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/dirty-water-with-chromite.png",
     icon_size = 64,
     mip_maps = 4,
-    category = "dirty-water-filtering",
+    category = "sp-kr-fluid-filtration",
     subgroup = "dirty-fluid-filtration",
     enabled = false,
     hide_from_player_crafting = true,
@@ -1787,7 +1768,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/dirty-water-with-magnesium.png",
     icon_size = 64,
     mip_maps = 4,
-    category = "dirty-water-filtering",
+    category = "sp-kr-fluid-filtration",
     subgroup = "dirty-fluid-filtration",
     enabled = false,
     hide_from_player_crafting = true,
@@ -1815,7 +1796,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/dirty-water-with-nickel.png",
     icon_size = 64,
     mip_maps = 4,
-    category = "dirty-water-filtering",
+    category = "sp-kr-fluid-filtration",
     subgroup = "dirty-fluid-filtration",
     enabled = false,
     hide_from_player_crafting = true,
@@ -1843,7 +1824,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/dirty-water-with-tin.png",
     icon_size = 64,
     mip_maps = 4,
-    category = "dirty-water-filtering",
+    category = "sp-kr-fluid-filtration",
     subgroup = "dirty-fluid-filtration",
     enabled = false,
     hide_from_player_crafting = true,
@@ -1871,7 +1852,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/dirty-water-with-titanium.png",
     icon_size = 64,
     mip_maps = 4,
-    category = "dirty-water-filtering",
+    category = "sp-kr-fluid-filtration",
     subgroup = "dirty-fluid-filtration",
     enabled = false,
     hide_from_player_crafting = true,
@@ -1899,7 +1880,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/dirty-water-with-tungsten.png",
     icon_size = 64,
     mip_maps = 4,
-    category = "dirty-water-filtering",
+    category = "sp-kr-fluid-filtration",
     subgroup = "dirty-fluid-filtration",
     enabled = false,
     hide_from_player_crafting = true,
@@ -1928,7 +1909,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/dirty-water-with-zinc.png",
     icon_size = 64,
     mip_maps = 4,
-    category = "dirty-water-filtering",
+    category = "sp-kr-fluid-filtration",
     subgroup = "dirty-fluid-filtration",
     enabled = false,
     hide_from_player_crafting = true,
@@ -1949,6 +1930,26 @@ data:extend({
       tertiary = {r = 0.0, g = 0.0, b = 0.2, a = 1.000},
       quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
     },
+  },
+  {
+    type = "recipe",
+    name = "sp-iodine-sludge",  -- #ForRegEx# - recipe
+    category = "sp-kr-fluid-filtration",
+    enabled = false,
+    energy_required = 2,
+    ingredients = {
+      {type = "fluid", name = "sp-iodine-brine", amount = 20},
+      {type = "fluid", name = "sp-chlorine", amount = 5}
+    },
+    results = {
+      {type = "fluid", name = "sp-iodine-sludge", amount = 20}
+    },
+    -- crafting_machine_tint = {
+    --   primary = {r = 0.000, g = 0.000, b = 0.500, a = 1.000},
+    --   secondary = {r = 0.0, g = 0.0, b = 0.3, a = 1.000},
+    --   tertiary = {r = 0.0, g = 0.0, b = 0.2, a = 1.000},
+    --   quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
+    -- },
   },
   ------------------------------------------------------------------------------
   -- MARK: chemistry
@@ -2563,7 +2564,7 @@ data:extend({
     energy_required = 8,
     ingredients = {
       {type = "item", name = "sp-antimony-pillet", amount = 1},
-      -- {type = "fluid", name = "sp-iodine", amount = 20},
+      {type = "item", name = "sp-iodine", amount = 20},
     },
     results = {
       {type = "item", name = "sp-antimony-triiodide", amount = 3},
@@ -2620,6 +2621,92 @@ data:extend({
       quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000}
     }
   },
+  {
+    type = "recipe",
+    name = "sp-iodine",  -- #ForRegEx# - recipe
+    category = "chemistry",
+    enabled = false,
+    energy_required = 2,
+    ingredients = {
+      {type = "fluid", name = "sp-iodine-sludge", amount = 10},
+    },
+    results = {
+      {type = "item", name = "sp-iodine", amount = 3}
+    },
+    -- crafting_machine_tint = {
+    --   primary = {r = 0.2, g = 0.1, b = 0.1, a = 1.000},
+    --   secondary = {r = 0.2, g = 0.0, b = 0.1, a = 1.000},
+    --   tertiary = {r = 0.2, g = 0.1, b = 0.0, a = 1.000},
+    --   quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000}
+    -- }
+  },
+  {
+    type = "recipe",
+    name = "sp-sodium-borate",  -- #ForRegEx# - recipe
+    category = "chemistry",
+    enabled = false,
+    energy_required = 5,
+    ingredients = {
+      {type = "item", name = "sp-boron-ore", amount = 10},
+      {type = "fluid", name = "sp-phosphoric-acid", amount = 20},
+    },
+    results = {
+      {type = "item", name = "sp-sodium-borate", amount = 8}
+    },
+    -- crafting_machine_tint = {
+    --   primary = {r = 0.2, g = 0.1, b = 0.1, a = 1.000},
+    --   secondary = {r = 0.2, g = 0.0, b = 0.1, a = 1.000},
+    --   tertiary = {r = 0.2, g = 0.1, b = 0.0, a = 1.000},
+    --   quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000}
+    -- }
+  },
+  {
+    type = "recipe",
+    name = "sp-boron-pillet",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/icons/boron-pillet.png",
+    icon_size = 64,
+    category = "chemistry",
+    subgroup = "chemical-product",
+    enabled = false,
+    energy_required = 6,
+    ingredients = {
+      {type = "item", name = "sp-sodium-borate", amount = 4},
+      {type = "fluid", name = "sp-chlorine", amount = 5},
+    },
+    results = {
+      {type = "item", name = "sp-boron-pillet", amount = 3},
+      {type = "item", name = "sp-salt", amount = 1}
+    },
+    -- crafting_machine_tint = {
+    --   primary = {r = 0.2, g = 0.1, b = 0.1, a = 1.000},
+    --   secondary = {r = 0.2, g = 0.0, b = 0.1, a = 1.000},
+    --   tertiary = {r = 0.2, g = 0.1, b = 0.0, a = 1.000},
+    --   quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000}
+    -- }
+  },
+  ------------------------------------------------------------------------------
+  -- MARK: sp-kr-fuel-refinery
+  ------------------------------------------------------------------------------
+  {
+    type = "recipe",
+    name = "sp-diborane",  -- #ForRegEx# - recipe
+    category = "sp-kr-fuel-refinery",
+    enabled = false,
+    energy_required = 5,
+    ingredients = {
+      {type = "item", name = "sp-sodium-borate", amount = 1},
+      {type = "fluid", name = "water", amount = 20},
+    },
+    results = {
+      {type = "fluid", name = "sp-diborane", amount = 4},
+    },
+    -- crafting_machine_tint = {
+    --   primary = {r = 0.2, g = 0.1, b = 0.1, a = 1.000},
+    --   secondary = {r = 0.2, g = 0.0, b = 0.1, a = 1.000},
+    --   tertiary = {r = 0.2, g = 0.1, b = 0.0, a = 1.000},
+    --   quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000}
+    -- }
+  },
   ------------------------------------------------------------------------------
   -- MARK: advanced-chemistry
   ------------------------------------------------------------------------------
@@ -2642,6 +2729,91 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-chemical-science-pack-3", amount = 5}
+    }
+  },
+  ------------------------------------------------------------------------------
+  -- MARK: chemical-staging
+  ------------------------------------------------------------------------------
+  {
+    type = "recipe",
+    name = "sp-boron-phosphide",  -- #ForRegEx# - recipe
+    category = "chemical-staging",
+    enabled = false,
+    energy_required = 10,
+    ingredients =
+    {
+      {type = "item", name = "sp-boron-pillet", amount = 2},
+      {type = "item", name = "sp-phosphorus", amount = 3},
+    },
+    results = {
+      {type = "item", name = "sp-boron-phosphide", amount = 2}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-lithium-oxide",  -- #ForRegEx# - recipe
+    category = "chemical-staging",
+    enabled = false,
+    energy_required = 4,
+    ingredients = {
+      {type = "fluid", name = "lithium-brine", amount = 2},
+      {type = "fluid", name = "water", amount = 20},
+      {type = "item", name = "calcite", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-lithium-oxide", amount = 3}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-lithium-chloride",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/lithium-chloride/lithium-chloride.png",
+    icon_size = 64,
+    mip_maps = 4,
+    category = "chemical-staging",
+    subgroup = "fluid-recipes",
+    enabled = false,
+    energy_required = 1,
+    ingredients = {
+      {type = "item", name = "sp-lithium-oxide", amount = 4},
+      {type = "fluid", name = "sp-hydrogen-chloride", amount = 3}
+    },
+    results = {
+      {type = "item", name = "sp-lithium-chloride", amount = 3},
+      {type = "fluid", name = "water", amount = 10},
+    }
+  },
+  ------------------------------------------------------------------------------
+  -- MARK: induction-hardening
+  ------------------------------------------------------------------------------
+  {
+    type = "recipe",
+    name = "sp-boron-carbide",  -- #ForRegEx# - recipe
+    category = "induction-hardening",
+    enabled = false,
+    energy_required = 20,
+    ingredients =
+    {
+      {type = "item", name = "sp-boron-pillet", amount = 4},
+      {type = "item", name = "carbon", amount = 2},
+    },
+    results = {
+      {type = "item", name = "sp-boron-carbide", amount = 3}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-boron-silicade",  -- #ForRegEx# - recipe
+    category = "induction-hardening",
+    enabled = false,
+    energy_required = 12,
+    ingredients =
+    {
+      {type = "item", name = "sp-boron-pillet", amount = 6},
+      {type = "item", name = "sp-silicon", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-boron-silicade", amount = 4}
     }
   },
   ------------------------------------------------------------------------------
@@ -2731,7 +2903,7 @@ data:extend({
     hide_from_player_crafting = true,
     ingredients = {},
     results = {
-      { type = "fluid", name = "sp-hydrogen", amount = 30 },
+      {type = "fluid", name = "sp-hydrogen", amount = 30 },
     },
     subgroup = "raw-material",
     order = "a[atmosphere-condensation]-a1[hydrogen]",
@@ -2749,7 +2921,7 @@ data:extend({
     hide_from_player_crafting = true,
     ingredients = {},
     results = {
-      { type = "fluid", name = "sp-oxygen", amount = 30 },
+      {type = "fluid", name = "sp-oxygen", amount = 30 },
     },
     subgroup = "raw-material",
     order = "a[atmosphere-condensation]-a2[oxygen]",
@@ -2767,7 +2939,7 @@ data:extend({
     hide_from_player_crafting = true,
     ingredients = {},
     results = {
-      { type = "fluid", name = "sp-nitrogen", amount = 30 },
+      {type = "fluid", name = "sp-nitrogen", amount = 30 },
     },
     subgroup = "raw-material",
     order = "a[atmosphere-condensation]-a3[nitrogen]",
@@ -2785,7 +2957,7 @@ data:extend({
     hide_from_player_crafting = true,
     ingredients = {},
     results = {
-      { type = "fluid", name = "water", amount = 30 },
+      {type = "fluid", name = "water", amount = 30 },
     },
     subgroup = "raw-material",
     order = "a[atmosphere-condensation]-a0[water]",
@@ -3080,6 +3252,25 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "sp-crushing-cobalt-ore",  -- #ForRegEx# - recipe
+    icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/icons/crushed-cobalt-ore-4.png", 64, nil,
+                                        "__Spaghetorio__/graphics/icons/arsenic-trioxide.png", 64, nil),
+    icon_size = 64,
+    mip_maps = 4,
+    category = "crushing",
+    subgroup = "crushed-resource-recipe",
+    enabled = false,
+    energy_required = 2,
+    ingredients = {
+      {type = "item", name = "sp-cobalt-ore", amount = 3},
+    },
+    results = {
+      {type = "item", name = "sp-crushed-cobalt-ore", probability = 0.9, amount = 3},
+      {type = "item", name = "sp-arsenic-trioxide", probability = 0.1, amount = 2}
+    }
+  },
+  {
+    type = "recipe",
     name = "sp-crushing-corrupted-acrosphere-1",  -- #ForRegEx# - recipe
     icon = "__Spaghetorio__/graphics/hr-icons/corrupted-acrosphere-1.png",
     icon_size = 256,
@@ -3189,12 +3380,6 @@ data:extend({
       {type = "item", name = "sp-cerium", probability=0.06, amount = 1},
       {type = "item", name = "sp-titanium-ore", probability=0.3, amount = 1}
     },
-    crafting_machine_tint = {
-      primary = {r = 0.2, g = 0.500, b = 0.2, a = 1.000},
-      secondary = {r = 0.0, g = 0.7, b = 0.0, a = 1.000},
-      tertiary = {r = 0.0, g = 0.2, b = 0.0, a = 1.000},
-      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000}
-    },
     order = "z[nuclear]-3-[nuclear-waste-processing]"
   },
   ------------------------------------------------------------------------------
@@ -3242,7 +3427,7 @@ data:extend({
     energy_required = 60,
     enabled = false,
     ingredients = {
-      { type = "fluid", name = "water", amount = 200 },
+      {type = "fluid", name = "water", amount = 200 },
     },
     results = {
       {type = "item", name = "wood", amount = 40},
@@ -3257,8 +3442,8 @@ data:extend({
     energy_required = 60,
     enabled = false,
     ingredients = {
-      { type = "fluid", name = "water", amount = 200 },
-      { type = "item", name = "nutrients", amount = 1 },
+      {type = "fluid", name = "water", amount = 200 },
+      {type = "item", name = "nutrients", amount = 1 },
     },
     results = {
       {type = "item", name = "wood", amount = 80},
@@ -3421,6 +3606,77 @@ data:extend({
       {type = "fluid", name = "sp-oxygen", amount = 50},
       {type = "fluid", name = "sp-deuterium", amount = 50}
     }
+  },
+  {
+    type = "recipe",
+    name = "sp-kr-water-electrolysis",
+    category = "sp-kr-electrolysis",
+    icon = "__Spaghetorio__/graphics/krastorio/icons/recipes/water-electrolysis.png",
+    icon_size = 128,
+    energy_required = 3,
+    enabled = false,
+    always_show_made_in = true,
+    always_show_products = true,
+    ingredients = {
+      {type = "item", name = "sp-sand", amount = 10},
+      {type = "fluid", name = "water", amount = 40},
+    },
+    results = {
+      {type = "fluid", name = "sp-chlorine", amount = 20},
+      {type = "fluid", name = "sp-hydrogen", amount = 30},
+    },
+    crafting_machine_tint = {
+      primary = {r = 0.10, g = 0.75, b = 0.10, a = 0.10},
+    },
+    subgroup = "fluid-recipes",
+    order = "y01[water-electrolysis]",
+  },
+  {
+    type = "recipe",
+    name = "sp-kr-water-separation",
+    category = "sp-kr-electrolysis",
+    icon = "__Spaghetorio__/graphics/krastorio/icons/recipes/water-separation.png",
+    icon_size = 128,
+    energy_required = 3,
+    enabled = false,
+    always_show_made_in = true,
+    always_show_products = true,
+    ingredients = {
+      {type = "fluid", name = "water", amount = 50},
+    },
+    results = {
+      {type = "fluid", name = "sp-oxygen", amount = 20},
+      {type = "fluid", name = "sp-hydrogen", amount = 30},
+    },
+    crafting_machine_tint = {
+      primary = {r = 0.75, g = 0.10, b = 0.10, a = 0.10},
+    },
+    subgroup = "fluid-recipes",
+    order = "y02[water-separation]",
+  },
+  {
+    type = "recipe",
+    name = "sp-heavy-water",
+    category = "sp-kr-electrolysis",
+    energy_required = 120,
+    enabled = false,
+    always_show_made_in = true,
+    always_show_products = true,
+    allow_productivity = true,
+    ingredients = {
+      {type = "fluid", name = "water", amount = 500},
+    },
+    crafting_machine_tint = {
+      primary = {r = 0.405, g = 0.402, b = 1.000, a = 1.000},
+      secondary = {r = 0.391, g = 0.720, b = 1.000, a = 0.900},
+      tertiary = {r = 1.000, g = 1.000, b = 1.000, a = 0.500},
+      quaternary = {r = 1.000, g = 1.000, b = 1.000, a = 0.300},
+    },
+    results = {
+      {type = "fluid", name = "sp-heavy-water", amount = 20 },
+    },
+    subgroup = "fluid-recipes",
+    order = "y06[heavy-water]",
   },
   ------------------------------------------------------------------------------
   -- MARK: crafting
@@ -5411,77 +5667,31 @@ data:extend({
       {type = "item", name = "sp-quantum-data-plane", amount = 1}
     }
   },
+  ------------------------------------------------------------------------------
   -- MARK: Sort Category
+  ------------------------------------------------------------------------------
   {
     type = "recipe",
-    name = "sp-kr-water-electrolysis",
-    category = "sp-kr-electrolysis",
-    icon = "__Spaghetorio__/graphics/krastorio/icons/recipes/water-electrolysis.png",
-    icon_size = 128,
-    energy_required = 3,
+    name = "sp-chronomatter",  -- #ForRegEx# - recipe
+    category = "chemistry",
+    subgroup = "fluid-recipes",
     enabled = false,
-    always_show_made_in = true,
-    always_show_products = true,
+    energy_required = 6,
     ingredients = {
-      { type = "item", name = "sp-sand", amount = 10 },
-      { type = "fluid", name = "water", amount = 40 },
+      {type = "item", name = "sp-monocrystal", amount = 1},
+      {type = "item", name = "sp-rukite-powder", amount = 4},
+      {type = "item", name = "sp-antimony-pillet", amount = 4}
     },
     results = {
-      { type = "fluid", name = "sp-chlorine", amount = 20 },
-      { type = "fluid", name = "sp-hydrogen", amount = 30 },
+      {type = "fluid", name = "sp-chronomatter", amount = 1}
     },
     crafting_machine_tint = {
-      primary = { r = 0.10, g = 0.75, b = 0.10, a = 0.10 },
+      primary = {r = 1.000, g = 0.000, b = 0.000, a = 1.000},
+      secondary = {r = 0.9, g = 0.0, b = 0.0, a = 1.000},
+      tertiary = {r = 0.8, g = 0.0, b = 0.0, a = 1.000},
+      quaternary = {r = 0.3, g = 0.000, b = 0.000, a = 1.000},
     },
-    subgroup = "fluid-recipes",
-    order = "y01[water-electrolysis]",
-  },
-  {
-    type = "recipe",
-    name = "sp-kr-water-separation",
-    category = "sp-kr-electrolysis",
-    icon = "__Spaghetorio__/graphics/krastorio/icons/recipes/water-separation.png",
-    icon_size = 128,
-    energy_required = 3,
-    enabled = false,
-    always_show_made_in = true,
-    always_show_products = true,
-    ingredients = {
-      { type = "fluid", name = "water", amount = 50 },
-    },
-    results = {
-      { type = "fluid", name = "sp-oxygen", amount = 20 },
-      { type = "fluid", name = "sp-hydrogen", amount = 30 },
-    },
-    crafting_machine_tint = {
-      primary = { r = 0.75, g = 0.10, b = 0.10, a = 0.10 },
-    },
-    subgroup = "fluid-recipes",
-    order = "y02[water-separation]",
-  },
-  {
-    type = "recipe",
-    name = "sp-heavy-water",
-    category = "sp-kr-electrolysis",
-    energy_required = 120,
-    enabled = false,
-    always_show_made_in = true,
-    always_show_products = true,
-    allow_productivity = true,
-    ingredients = {
-      { type = "fluid", name = "water", amount = 500 },
-    },
-    crafting_machine_tint = {
-      primary = { r = 0.405, g = 0.402, b = 1.000, a = 1.000 },
-      secondary = { r = 0.391, g = 0.720, b = 1.000, a = 0.900 },
-      tertiary = { r = 1.000, g = 1.000, b = 1.000, a = 0.500 },
-      quaternary = { r = 1.000, g = 1.000, b = 1.000, a = 0.300 },
-    },
-    results = {
-      { type = "fluid", name = "sp-heavy-water", amount = 20 },
-    },
-    subgroup = "fluid-recipes",
-    order = "y06[heavy-water]",
+    order = "z[alien]-[chronomatter]"
   },
   {
     type = "recipe",

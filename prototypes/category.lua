@@ -120,11 +120,15 @@ data:extend({
   },
   {
     type = "recipe-category",
-    name = "dirty-water-filtering"
+    name = "advanced-chemistry"  -- Used for recipes with 3 fluids
   },
   {
     type = "recipe-category",
-    name = "advanced-chemistry"  -- Used for recipes with 3 fluids
+    name = "chemical-staging"
+  },
+  {
+    type = "recipe-category",
+    name = "induction-hardening"
   },
   {
     type = "recipe-category",

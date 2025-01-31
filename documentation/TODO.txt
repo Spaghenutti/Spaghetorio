@@ -21,13 +21,13 @@ Factorio Space age
       + copper + antimony-pillet -> copper-antimony (for bearings, solar cells and electronic layers)
       + add uses to antimony
       - stibnite from acrocrystal
-    - boron-ore (kernite)
-      - boron-ore + phosphoric-acid -> sodium-borate (chemistry)
-      - sodium-borate + chlorine -> boron-pillet + salt (chemistry)
-      - boron-pillet + hydrogen -> diborane (B2H6) (rocket fuel and used to produce high purity boron)
-      - boron-pillet + carbon -> boron-carbide (B4C) (abrasive materials, armor plating, and neutron radiation control)
-      - boron-pillet + phosphorus -> boron-phosphide (BP) (High temperature semiconductor)
-      - boron-pillet + silicon -> boron-silicade (B6Si) (High temperature semiconductor)
+    + boron-ore (kernite)
+      + boron-ore + phosphoric-acid -> sodium-borate (chemistry)
+      + sodium-borate + chlorine -> boron-pillet + salt (chemistry)
+      + sodium-borate + water -> diborane (B2H6) (rocket fuel and used to produce high purity boron)
+      + boron-pillet + carbon -> boron-carbide (B4C) (abrasive materials, armor plating, and neutron radiation control)
+      + boron-pillet + phosphorus -> boron-phosphide (BP) (High temperature semiconductor)
+      + boron-pillet + silicon -> boron-silicade (B6Si) (High temperature semiconductor)
       - boron-ore from acrocrystal
     + cobalt-ore
       - cobalt-ore -> crushed-cobalt-ore + arsenic-trioxide (crushing)
@@ -44,21 +44,26 @@ Factorio Space age
       - arsen-pillet + sulfur -> arsenic-sulfide (As2S3) (Used as a semiconductor material)
       - arsen-pillet + iodine -> arsenic-iodide (AsI3) (Used in the synthesis of organic arsenic compounds and as a reagent in chemical analysis)
       - cobalt-ore from acrocrystal
-    - molybdenum-ore
+    + molybdenum-ore
       - molybdenum-ore -> molybdenum-trioxide (smelting)
       - molybdenum-trioxide -> molybdenum-pillet (smelting)
       - lead + molybden-pillet + oxygen -> lead-molybdate (PbMoO4) (for radiation measurement)
       - sodium + molybden-pillet + oxygen -> sodium-molybdate (Na2MoO4) (for water treatment)
       - molybdenum-ore from acrocrystal
-    - manganese-ore
+    "-" manganese-ore
       - manganese-ore -> manganese-dioxide (smelting)
       - manganese-dioxide -> manganese-ingot (electrolysis)
       - manganese-ingot + chlorine -> manganese-chloride (MnCl2) (for battery cells)
       - check aluminum alloys that already exist in spaghetorio mod that might use manganese
       - manganese-ore from acrocrystal
-    - iodine-brine
-      - iodine-brine + chlorine -> iodine-sludge
-      - iodine-sludge -> idonine
+    + iodine-brine
+      + iodine-brine + chlorine -> iodine-sludge
+      + iodine-sludge -> idonine
+    + lithium
+      + lithium-brine + water -> lithium-oxide
+      + lithium-oxide + hydrogen-chloride -> lithium-chloride + water
+      + lithium-chloride + sodium-hydroxide -> lithium
+
 
 
   - Add Krastorio matter conversion recipes

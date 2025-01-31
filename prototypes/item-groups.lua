@@ -313,7 +313,7 @@ data:extend({
   },
   {
     type = "item-subgroup",
-    name = "dirty-fluid-filtration",  -- Corresponds to category "dirty-water-filtering"
+    name = "dirty-fluid-filtration",  -- Corresponds to category "sp-kr-fluid-filtration"
     group = "fluids",
     order = "b-b"
   },
