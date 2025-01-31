@@ -30,27 +30,27 @@ Factorio Space age
       + boron-pillet + silicon -> boron-silicade (B6Si) (High temperature semiconductor)
       - boron-ore from acrocrystal
     + cobalt-ore
-      - cobalt-ore -> crushed-cobalt-ore + arsenic-trioxide (crushing)
-      - cobalt-ore -> cobalt-oxide (smelting)
-      - cobalt-oxide + sulfuric-acid -> cobalt-sulfate (chemistry)
+      + cobalt-ore -> crushed-cobalt-ore + arsenic-trioxide (crushing)
+      + cobalt-ore -> cobalt-oxide (smelting)
+      + cobalt-oxide + sulfuric-acid -> cobalt-sulfate (chemistry)
       + cobalt-sulfate -> cobalt-billet
-      - 30% nickel + 70% cobalt -> nickel-cobalt (corrosion resistant)
-      - 60% nickel + 20% chromium + 20% cobalt -> waspaloy (used in Aerospace and gas turbine)
-      - 60% cobalt + 30% Chromium + 6% tungsten + 2% manganese + 2% molybdenum = satellite 6 alloy (used in cutting tools and wear resistant applications)
-      - 40% cobalt, 20% chromium, 15% nickel, 15% iron, 8% molybdenum, 2% manganese = elgiloy (for springs and mdeical devices)
-      - Nickel (18%), Cobalt (8-12%), Molybdenum (3-5%) rest iron -> maraging-steel (used for Aerospace, tooling)
-      - Nickel (29%), Cobalt (17%), Iron (balance) -> kovar (used for Electronics, glass-to-metal seals)
-      - arsenic-trioxide + hydrogen -> arsen-pillet
-      - arsen-pillet + sulfur -> arsenic-sulfide (As2S3) (Used as a semiconductor material)
-      - arsen-pillet + iodine -> arsenic-iodide (AsI3) (Used in the synthesis of organic arsenic compounds and as a reagent in chemical analysis)
+      + 30% nickel + 70% cobalt -> nickel-cobalt (corrosion resistant)
+      + 60% nickel + 20% chromium + 20% cobalt -> waspaloy (used in Aerospace and gas turbine)
+      + 60% cobalt + 30% Chromium + 6% tungsten + 2% manganese + 2% molybdenum = satellite 6 alloy (used in cutting tools and wear resistant applications)
+      + 40% cobalt, 20% chromium, 15% nickel, 15% iron, 8% molybdenum, 2% manganese = elgiloy (for springs and mdeical devices)
+      + Nickel (18%), Cobalt (8-12%), Molybdenum (3-5%) rest iron -> maraging-steel (used for Aerospace, tooling)
+      + Nickel (29%), Cobalt (17%), Iron (balance) -> kovar (used for Electronics, glass-to-metal seals)
+      + arsenic-trioxide + hydrogen -> arsen-pillet
+      + arsen-pillet + sulfur -> arsenic-sulfide (As2S3) (Used as a semiconductor material)
+      + arsen-pillet + iodine -> arsenic-iodide (AsI3) (Used in the synthesis of organic arsenic compounds and as a reagent in chemical analysis)
       - cobalt-ore from acrocrystal
     + molybdenum-ore
-      - molybdenum-ore -> molybdenum-trioxide (smelting)
-      - molybdenum-trioxide -> molybdenum-pillet (smelting)
-      - lead + molybden-pillet + oxygen -> lead-molybdate (PbMoO4) (for radiation measurement)
-      - sodium + molybden-pillet + oxygen -> sodium-molybdate (Na2MoO4) (for water treatment)
+      + molybdenum-ore -> molybdenum-trioxide (smelting)
+      + molybdenum-trioxide -> molybdenum-pillet (smelting)
+      + lead + molybdenum-pillet + oxygen -> lead-molybdate (PbMoO4) (for radiation measurement)
+      + sodium + molybdenum-pillet + oxygen -> sodium-molybdate (Na2MoO4) (for water treatment)
       - molybdenum-ore from acrocrystal
-    "-" manganese-ore
+    + manganese-ore
       - manganese-ore -> manganese-dioxide (smelting)
       - manganese-dioxide -> manganese-ingot (electrolysis)
       - manganese-ingot + chlorine -> manganese-chloride (MnCl2) (for battery cells)

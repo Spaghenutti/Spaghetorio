@@ -462,6 +462,45 @@ data:extend({
       {type = "item", name = "sp-glass", amount = 10}
     }
   },
+  {
+    type = "recipe",
+    name = "sp-cobalt-oxide",  -- #ForRegEx# - recipe
+    category = "smelting",
+    enabled = false,
+    energy_required = 12,
+    ingredients = {
+      {type = "item", name = "sp-cobalt-ore", amount = 10},
+    },
+    results = {
+      {type = "item", name = "sp-cobalt-oxide", amount = 12}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-molybdenum-trioxide",  -- #ForRegEx# - recipe
+    category = "smelting",
+    enabled = false,
+    energy_required = 20,
+    ingredients = {
+      {type = "item", name = "sp-molybdenum-ore", amount = 8},
+    },
+    results = {
+      {type = "item", name = "sp-molybdenum-trioxide", amount = 6}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-molybdenum-pillet",  -- #ForRegEx# - recipe
+    category = "smelting",
+    enabled = false,
+    energy_required = 16,
+    ingredients = {
+      {type = "item", name = "sp-molybdenum-trioxide", amount = 4},
+    },
+    results = {
+      {type = "item", name = "sp-molybdenum-pillet", amount = 3}
+    }
+  },
   ------------------------------------------------------------------------------
   -- MARK: crushed-smelting
   ------------------------------------------------------------------------------
@@ -1062,6 +1101,116 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-copper-antimony", amount = 4}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-nickel-cobalt",  -- #ForRegEx# - recipe
+    category = "intermediate-smelting",
+    enabled = false,
+    energy_required = 12,
+    ingredients = {
+      {type = "item", name = "sp-nickel-ingot", amount = 3},
+      {type = "item", name = "sp-cobalt-billet", amount = 7},
+    },
+    results = {
+      {type = "item", name = "sp-nickel-cobalt", amount = 6}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-waspaloy",  -- #ForRegEx# - recipe
+    category = "intermediate-smelting",
+    enabled = false,
+    energy_required = 16,
+    ingredients = {
+      {type = "item", name = "sp-nickel-ingot", amount = 6},
+      {type = "item", name = "sp-chromium-plate", amount = 2},
+      {type = "item", name = "sp-cobalt-billet", amount = 2},
+    },
+    results = {
+      {type = "item", name = "sp-waspaloy", amount = 6}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-waspaloy",  -- #ForRegEx# - recipe
+    category = "intermediate-smelting",
+    enabled = false,
+    energy_required = 16,
+    ingredients = {
+      {type = "item", name = "sp-nickel-ingot", amount = 6},
+      {type = "item", name = "sp-chromium-plate", amount = 2},
+      {type = "item", name = "sp-cobalt-billet", amount = 2},
+    },
+    results = {
+      {type = "item", name = "sp-waspaloy", amount = 6}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-chromium-cobalt",  -- #ForRegEx# - recipe
+    category = "intermediate-smelting",
+    enabled = false,
+    energy_required = 30,
+    ingredients = {
+      {type = "item", name = "sp-cobalt-billet", amount = 12},
+      {type = "item", name = "sp-chromium-plate", amount = 6},
+      {type = "item", name = "tungsten-plate", amount = 2},
+      {type = "item", name = "sp-molybdenum-pillet", amount = 1},
+      {type = "item", name = "sp-manganese-ingot", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-chromium-cobalt", amount = 15}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-elgiloy",  -- #ForRegEx# - recipe
+    category = "intermediate-smelting",
+    enabled = false,
+    energy_required = 50,
+    ingredients = {
+      {type = "item", name = "sp-cobalt-billet", amount = 16},
+      {type = "item", name = "sp-chromium-plate", amount = 8},
+      {type = "item", name = "sp-nickel-ingot", amount = 6},
+      {type = "item", name = "iron-plate", amount = 3},
+      {type = "item", name = "sp-molybdenum-pillet", amount = 2},
+      {type = "item", name = "sp-manganese-ingot", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-elgiloy", amount = 24}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-maraging-steel",  -- #ForRegEx# - recipe
+    category = "intermediate-smelting",
+    enabled = false,
+    energy_required = 24,
+    ingredients = {
+      {type = "item", name = "iron-plate", amount = 7},
+      {type = "item", name = "sp-nickel-ingot", amount = 4},
+      {type = "item", name = "sp-cobalt-billet", amount = 2},
+      {type = "item", name = "sp-molybdenum-pillet", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-maraging-steel", amount = 10}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-kovar",  -- #ForRegEx# - recipe
+    category = "intermediate-smelting",
+    enabled = false,
+    energy_required = 12,
+    ingredients = {
+      {type = "item", name = "iron-plate", amount = 5},
+      {type = "item", name = "sp-nickel-ingot", amount = 4},
+      {type = "item", name = "sp-cobalt-billet", amount = 3},
+    },
+    results = {
+      {type = "item", name = "sp-kovar", amount = 6}
     }
   },
   ------------------------------------------------------------------------------
@@ -2684,6 +2833,26 @@ data:extend({
     --   quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000}
     -- }
   },
+  {
+    type = "recipe",
+    name = "sp-cobalt-sulfate",  -- #ForRegEx# - recipe
+    category = "chemistry",
+    enabled = false,
+    energy_required = 4,
+    ingredients = {
+      {type = "item", name = "sp-cobalt-oxide", amount = 6},
+      {type = "fluid", name = "sulfuric-acid", amount = 10},
+    },
+    results = {
+      {type = "item", name = "sp-cobalt-sulfate", amount = 3}
+    },
+    -- crafting_machine_tint = {
+    --   primary = {r = 0.2, g = 0.1, b = 0.1, a = 1.000},
+    --   secondary = {r = 0.2, g = 0.0, b = 0.1, a = 1.000},
+    --   tertiary = {r = 0.2, g = 0.1, b = 0.0, a = 1.000},
+    --   quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000}
+    -- }
+  },
   ------------------------------------------------------------------------------
   -- MARK: sp-kr-fuel-refinery
   ------------------------------------------------------------------------------
@@ -2729,6 +2898,48 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-chemical-science-pack-3", amount = 5}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-arsen-pillet",  -- #ForRegEx# - recipe
+    category = "advanced-chemistry",
+    enabled = false,
+    energy_required = 20,
+    ingredients = {
+      {type = "item", name = "sp-arsenic-trioxide", amount = 5},
+      {type = "fluid", name = "sp-hydrogen", amount = 20},
+    },
+    results = {
+      {type = "item", name = "sp-arsen-pillet", amount = 3}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-arsenic-sulfide",  -- #ForRegEx# - recipe
+    category = "advanced-chemistry",
+    enabled = false,
+    energy_required = 4,
+    ingredients = {
+      {type = "item", name = "sp-arsen-pillet", amount = 2},
+      {type = "item", name = "sulfur", amount = 2},
+    },
+    results = {
+      {type = "item", name = "sp-arsenic-sulfide", amount = 3}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-arsenic-iodide",  -- #ForRegEx# - recipe
+    category = "advanced-chemistry",
+    enabled = false,
+    energy_required = 8,
+    ingredients = {
+      {type = "item", name = "sp-arsen-pillet", amount = 2},
+      {type = "item", name = "sp-iodine", amount = 3},
+    },
+    results = {
+      {type = "item", name = "sp-arsenic-iodide", amount = 3}
     }
   },
   ------------------------------------------------------------------------------
@@ -2783,6 +2994,21 @@ data:extend({
       {type = "fluid", name = "water", amount = 10},
     }
   },
+  {
+    type = "recipe",
+    name = "sp-sodium-molybdate",  -- #ForRegEx# - recipe
+    category = "chemical-staging",
+    enabled = false,
+    energy_required = 5,
+    ingredients = {
+      {type = "item", name = "sp-molybdenum-pillet", amount = 1},
+      {type = "fluid", name = "sp-liquid-sodium", amount = 5},
+      {type = "fluid", name = "sp-oxygen", amount = 10}
+    },
+    results = {
+      {type = "item", name = "sp-sodium-molybdate", amount = 2}
+    }
+  },
   ------------------------------------------------------------------------------
   -- MARK: induction-hardening
   ------------------------------------------------------------------------------
@@ -2814,6 +3040,21 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-boron-silicade", amount = 4}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-lead-molybdate",  -- #ForRegEx# - recipe
+    category = "induction-hardening",
+    enabled = false,
+    energy_required = 15,
+    ingredients = {
+      {type = "item", name = "sp-molybdenum-pillet", amount = 3},
+      {type = "item", name = "sp-lead-slab", amount = 1},
+      {type = "fluid", name = "sp-oxygen", amount = 10}
+    },
+    results = {
+      {type = "item", name = "sp-lead-molybdate", amount = 3}
     }
   },
   ------------------------------------------------------------------------------
@@ -3137,25 +3378,6 @@ data:extend({
       {type = "item", name = "sulfur", probability = 0.3, amount = 1}
     }
   },
-  -- {
-  --   type = "recipe",
-  --   name = "sp-crushing-spodumene",  -- #ForRegEx# - recipe
-  --   icon = "__Spaghetorio__/graphics/crushing/crushing-spodumene.png",
-  --   icon_size = 256,
-  --   mip_maps = 4,
-  --   category = "crushing",
-  --   subgroup = "crushed-resource-recipe",
-  --   enabled = false,
-  --   energy_required = 1,
-  --   ingredients = {
-  --     {type = "item", name = "sp-spodumene", amount = 3},
-  --   },
-  --   results = {
-  --     {type = "item", name = "sp-sand", amount = 3},
-  --     {type = "item", name = "lithium", probability = 0.3, amount = 1},
-  --     {type = "item", name = "sp-crushed-aluminum-ore", probability = 0.05, amount = 1}
-  --   }
-  -- },
   {
     type = "recipe",
     name = "sp-crushing-tinstone",  -- #ForRegEx# - recipe
