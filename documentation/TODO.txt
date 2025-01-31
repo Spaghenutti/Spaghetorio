@@ -56,6 +56,9 @@ Factorio Space age
       - manganese-ingot + chlorine -> manganese-chloride (MnCl2) (for battery cells)
       - check aluminum alloys that already exist in spaghetorio mod that might use manganese
       - manganese-ore from acrocrystal
+    - iodine-brine
+      - iodine-brine + chlorine -> iodine-sludge
+      - iodine-sludge -> idonine
 
 
   - Add Krastorio matter conversion recipes

@@ -2514,7 +2514,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-mercury",  -- #ForRegEx# - recipe
-    icon = "__Spaghetorio__/graphics/icons/barium-carbonate.png",
+    icon = "__Spaghetorio__/graphics/icons/mercury.png",
     icon_size = 64,
     category = "chemistry",
     subgroup = "fluid-recipes",

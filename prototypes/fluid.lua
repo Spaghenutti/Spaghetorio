@@ -73,7 +73,7 @@ data:extend({
     default_temperature = 25,
     base_color = {r=0.4, g=0.2, b=0.4},
     flow_color = {r=0.4, g=0.2, b=0.4},
-    icon = "__Spaghetorio__/graphics/dummy/dummy-item-default.png",
+    icon = "__Spaghetorio__/graphics/icons/drilling-fluid.png",
     icon_size = 64,
     scale = 0.5,
     subgroup = "aqueous-fluid",
@@ -82,11 +82,37 @@ data:extend({
   },
   {
     type = "fluid",
+    name = "sp-iodine-brine",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    base_color = {r=0.9, g=0.9, b=0.5},
+    flow_color = {r=0.9, g=0.9, b=0.5},
+    icon = "__Spaghetorio__/graphics/icons/iodine-brine.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "aqueous-fluid",
+    order = "[iodine-brine]",
+    stack_size = 200
+  },
+  {
+    type = "fluid",
+    name = "sp-iodine-sludge",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    base_color = {r=1.0, g=1.0, b=0.6},
+    flow_color = {r=1.0, g=1.0, b=0.6},
+    icon = "__Spaghetorio__/graphics/icons/iodine-sludge.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "aqueous-fluid",
+    order = "[iodine-brine]",
+    stack_size = 200
+  },
+  {
+    type = "fluid",
     name = "sp-mercury",  -- #ForRegEx# - fluid
     default_temperature = 25,
     base_color = {r=0.9, g=0.9, b=0.9},
     flow_color = {r=0.9, g=1.0, b=0.9},
-    icon = "__Spaghetorio__/graphics/dummy/dummy-item-default.png",
+    icon = "__Spaghetorio__/graphics/icons/mercury.png",
     icon_size = 64,
     scale = 0.5,
     subgroup = "aqueous-fluid",
@@ -590,7 +616,7 @@ data:extend({
     heat_capacity = "0.1kJ",
     base_color = {r=0.15, g=0.1, b=0.1},
     flow_color = {r=0.15, g=0.1, b=0.1},
-    icon = "__Spaghetorio__/graphics/dummy/dummy-item-default.png",
+    icon = "__Spaghetorio__/graphics/icons/diborane.png",
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "chemical",

@@ -1247,6 +1247,16 @@ data:extend({
   },
   {
     type = "item",
+    name = "sp-iodine",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/iodine.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "processed-resource",
+    order = "[iodine]",
+    stack_size = 200
+  },
+  {
+    type = "item",
     name = "sp-coke",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/coke/coke.png",
     icon_size = 64,

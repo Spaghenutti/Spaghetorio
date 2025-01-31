@@ -521,6 +521,24 @@ data:extend({
       regular_rq_factor_multiplier = 1,
     }
   ),
+  fluid_resource(
+    {
+      name = "iodine-brine",
+      icon = "__Spaghetorio__/graphics/dummy/dummy-item-default.png",
+      stages_filename = "__space-age__/graphics/entity/fluorine-vent/fluorine-vent",  -- It is so dissapointing to see that here i have to remove the .png for this to work...
+      stages_filename_count = 4,
+      order = "a",
+      map_color = {r=1, g=1, b=0.6},
+    },
+    {
+      base_density = 40,
+      base_spots_per_km = 0.5,
+      random_probability = 1 / 48,
+      additional_richness = 2000000,
+      has_starting_area_placement = false,
+      regular_rq_factor_multiplier = 1,
+    }
+  ),
 
   -- MARK: Quarry resource
   quarry_resource(
@@ -575,6 +593,66 @@ data:extend({
   ),
 })
 
+-- MARK: Add animations to resources
+data.raw.resource["sp-iodine-brine"].stateless_visualisation = {
+  {
+    count = 1,
+    render_layer = "smoke",
+    animation = util.sprite_load("__space-age__/graphics/entity/lithium-brine/smoke-1",
+    {
+      priority = "extra-high",
+      frame_count = 64,
+      animation_speed = 0.35,
+      tint = {r=0.6, g=0.6, b=0.2, a= 1},
+      scale = 0.75,
+      shift = {0,-0.23}
+    })
+  },
+  {
+    count = 1,
+    render_layer = "smoke",
+    animation = util.sprite_load("__space-age__/graphics/entity/lithium-brine/smoke-2",
+    {
+      priority = "extra-high",
+      frame_count = 64,
+      animation_speed = 0.35,
+      tint = {r=0, g=0.9, b=1,a= 0.35},
+      scale = 0.75,
+      shift = {0,-0.23}
+    })
+  },
+  {
+    count = 1,
+    render_layer = "smoke",
+    animation = {
+      filename = "__space-age__/graphics/entity/fluorine-vent/fluorine-vent-gas-outer.png",
+      frame_count = 47,
+      line_length = 16,
+      width = 90,
+      height = 188,
+      animation_speed = 0.5,
+      shift = util.by_pixel(-2, 24 -152),
+      scale = 1.5,
+      tint = util.multiply_color({r=1, g=1, b=0.6}, 0.1)
+    }
+  },
+  {
+    count = 1,
+    render_layer = "smoke",
+    animation = {
+      filename = "__space-age__/graphics/entity/fluorine-vent/fluorine-vent-gas-inner.png",
+      frame_count = 47,
+      line_length = 16,
+      width = 40,
+      height = 84,
+      animation_speed = 0.5,
+      shift = util.by_pixel(0, 24 -78),
+      scale = 1.5,
+      tint = util.multiply_color({r=1, g=1, b=0.6}, 0.1)
+    }
+  }
+}
+
 
 data.raw.planet["nauvis"].map_gen_settings.autoplace_settings.entity.settings["sp-aluminum-ore"] = {}
 data.raw.planet["nauvis"].map_gen_settings.autoplace_settings.entity.settings["sp-barium-ore"] = {}
@@ -592,6 +670,7 @@ data.raw.planet["nauvis"].map_gen_settings.autoplace_settings.entity.settings["s
 data.raw.planet["nauvis"].map_gen_settings.autoplace_settings.entity.settings["sp-zinc-ore"] = {}
 data.raw.planet["nauvis"].map_gen_settings.autoplace_settings.entity.settings["sp-zirconium-ore"] = {}
 
+data.raw.planet["nauvis"].map_gen_settings.autoplace_settings.entity.settings["sp-iodine-brine"] = {}
 data.raw.planet["nauvis"].map_gen_settings.autoplace_settings.entity.settings["sp-mineral-water"] = {}
 
 data.raw.planet["nauvis"].map_gen_settings.autoplace_settings.entity.settings["sp-blunagium"] = {}

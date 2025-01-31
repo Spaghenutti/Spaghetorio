@@ -123,10 +123,18 @@ data:extend({
   -- MARK: Fluid resource
   {
     type = "autoplace-control",
+    name = "sp-iodine-brine",
+    localised_name = {"", "[entity=sp-iodine-brine] ", {"entity-name.sp-iodine-brine"}},
+    richness = true,
+    order = "a-[iodine-brine]",
+    category = "resource"
+  },
+  {
+    type = "autoplace-control",
     name = "sp-mineral-water",
     localised_name = {"", "[entity=sp-mineral-water] ", {"entity-name.sp-mineral-water"}},
     richness = true,
-    order = "a-e",
+    order = "a-[mineral-water]",
     category = "resource"
   },
   -- MARK: Quarry resource
@@ -180,6 +188,7 @@ data.raw.planet["nauvis"].map_gen_settings.autoplace_controls["sp-titanium-ore"]
 data.raw.planet["nauvis"].map_gen_settings.autoplace_controls["sp-zinc-ore"] = {}
 data.raw.planet["nauvis"].map_gen_settings.autoplace_controls["sp-zirconium-ore"] = {}
 
+data.raw.planet["nauvis"].map_gen_settings.autoplace_controls["sp-iodine-brine"] = {}
 data.raw.planet["nauvis"].map_gen_settings.autoplace_controls["sp-mineral-water"] = {}
 
 data.raw.planet["nauvis"].map_gen_settings.autoplace_controls["sp-blunagium"] = {}
