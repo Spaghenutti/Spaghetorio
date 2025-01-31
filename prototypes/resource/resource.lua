@@ -341,8 +341,8 @@ data:extend({
       mining_visualisation_tint = {r=0.7, g=0.9, b=0.8, a=1.0},
     },
     {
-      base_density = 8.5,
-      base_spots_per_km2 = 0.37,
+      base_density = 1,
+      base_spots_per_km2 = 0.21,
       has_starting_area_placement = false,
       regular_blob_amplitude_multiplier = 1,
       regular_rq_factor_multiplier = 0.9,

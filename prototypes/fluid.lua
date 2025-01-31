@@ -202,19 +202,6 @@ data:extend({
   },
   {
     type = "fluid",
-    name = "sp-dirty-water-with-sulfur",  -- #ForRegEx# - fluid
-    default_temperature = 25,
-    heat_capacity = "0.1kJ",
-    base_color = {r=0.2, g=0.3, b=0.05},
-    flow_color = {r=0.2, g=0.3, b=0.05},
-    icon = "__Spaghetorio__/graphics/icons/dirty-water-with-sulfur.png",
-    icon_size = 64,
-    icon_mipmaps = 4,
-    subgroup = "dirty-fluid",
-    order = "a[fluid]-f[dirty-water-with-sulfur]"
-  },
-  {
-    type = "fluid",
     name = "sp-dirty-water-with-tin",  -- #ForRegEx# - fluid
     default_temperature = 25,
     heat_capacity = "0.1kJ",

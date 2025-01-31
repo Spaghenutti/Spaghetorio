@@ -11,7 +11,7 @@ Factorio Space age
       - barium-ore from acrocrystal
     + mercury-ore
       + mercury-ore -> mercury + sulfur + stone
-      - used in relay
+      + used in relay
       - used in catalyst
     + stibnite
       + stibnite -> antimony-oxide (smelting)
@@ -51,9 +51,9 @@ Factorio Space age
       + sodium + molybdenum-pillet + oxygen -> sodium-molybdate (Na2MoO4) (for water treatment)
       - molybdenum-ore from acrocrystal
     + manganese-ore
-      - manganese-ore -> manganese-dioxide (smelting)
-      - manganese-dioxide -> manganese-ingot (electrolysis)
-      - manganese-ingot + chlorine -> manganese-chloride (MnCl2) (for battery cells)
+      + manganese-ore -> manganese-dioxide (smelting)
+      + manganese-dioxide -> manganese-ingot (electrolysis)
+      + manganese-ingot + chlorine -> manganese-chloride (MnCl2) (for battery cells)
       - check aluminum alloys that already exist in spaghetorio mod that might use manganese
       - manganese-ore from acrocrystal
     + iodine-brine
@@ -63,8 +63,6 @@ Factorio Space age
       + lithium-brine + water -> lithium-oxide
       + lithium-oxide + hydrogen-chloride -> lithium-chloride + water
       + lithium-chloride + sodium-hydroxide -> lithium
-
-
 
   - Add Krastorio matter conversion recipes
   + Add mineral water
@@ -81,7 +79,7 @@ Factorio Space age
     - update subgroups
     - update orders
   - Add remaining hurricane buildings
-  - remove catalyst items, recipes and technologies
+  + remove catalyst items, recipes and technologies
   - remove all factorio alternative recipe chains for processing liquids on different planets
   - Add weight to every item
   - Space age items - Spaghetorio

@@ -1027,16 +1027,11 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "sp-palladium"
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-catalyst-from-palladium"
       }
     },
     prerequisites = {
       "sp-material-science-pack-2",
-      "sp-geological-science-pack-2",
-      "sp-catalyst"
+      "sp-geological-science-pack-2"
     },
     unit =
     {
@@ -2465,39 +2460,6 @@ data:extend({
   },
   {
     type = "technology",
-    name = "sp-advanced-sulfur-processing",  -- #ForRegEx# - technology
-    icon_size = 256,
-    icon = "__base__/graphics/technology/sulfur-processing.png",
-    effects =
-    {
-      {
-        type = "unlock-recipe",
-        recipe = "sp-sulfur-with-catalyst"
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-filter-dirty-water-with-sulfur"
-      }
-    },
-    prerequisites = {"utility-science-pack"},
-    unit =
-    {
-      count = 200,
-      ingredients = {
-        {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1},
-        {"sp-material-science-pack-2", 1},
-        {"sp-geological-science-pack-2", 1},
-        {"production-science-pack", 1},
-        {"utility-science-pack", 1}
-      },
-      time = 15
-    },
-    order = "a-h-a"
-  },
-  {
-    type = "technology",
     name = "sp-tellurium-processing",  -- #ForRegEx# - technology
     icon_size = 256,
     icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/hr-icons/tellurium-hydroxide.png", 256, nil,
@@ -3770,37 +3732,6 @@ data:extend({
   },
   {
     type = "technology",
-    name = "sp-catalyst",  -- #ForRegEx# - technology
-    icon_size = 256,
-    icon = "__Spaghetorio__/graphics/hr-icons/catalyst.png",
-    effects =
-    {
-      {
-        type = "unlock-recipe",
-        recipe = "sp-catalyst-from-calcium-magnesium"
-      },
-    },
-    prerequisites = {
-      "sp-calcium-and-fluorine",
-      "sp-magnesium-processing"
-    },
-    unit =
-    {
-      count = 100,
-      ingredients = {
-        {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"sp-material-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1},
-        {"sp-geological-science-pack-2", 1},
-        {"production-science-pack", 1}
-      },
-      time = 15
-    },
-    order = "a-h-a"
-  },
-  {
-    type = "technology",
     name = "sp-chronomatter",  -- #ForRegEx# - technology
     icon_size = 256,
     icon = "__Spaghetorio__/graphics/hr-icons/chronomatter.png",
@@ -3858,15 +3789,10 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "sp-methyl-tert-butyl-ether"
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-catalyst-from-liquid-sodium"
       }
     },
     prerequisites = {
-      "sp-filter",
-      "sp-catalyst"
+      "sp-filter"
     },
     unit =
     {
@@ -3900,7 +3826,7 @@ data:extend({
       },
     },
     prerequisites = {
-      "sp-catalyst"
+      "sp-filter"
     },
     unit =
     {

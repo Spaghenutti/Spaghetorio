@@ -501,6 +501,19 @@ data:extend({
       {type = "item", name = "sp-molybdenum-pillet", amount = 3}
     }
   },
+  {
+    type = "recipe",
+    name = "sp-manganese-dioxide",  -- #ForRegEx# - recipe
+    category = "smelting",
+    enabled = false,
+    energy_required = 6,
+    ingredients = {
+      {type = "item", name = "sp-manganese-ore", amount = 5},
+    },
+    results = {
+      {type = "item", name = "sp-manganese-dioxide", amount = 3}
+    }
+  },
   ------------------------------------------------------------------------------
   -- MARK: crushed-smelting
   ------------------------------------------------------------------------------
@@ -2237,30 +2250,6 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-sulfur-with-catalyst",  -- #ForRegEx# - recipe
-    icons = util.icon.overlay_small_icon("__base__/graphics/icons/sulfur.png", 64,
-                                         "__Spaghetorio__/graphics/icons/catalyst.png", 64),
-    category = "chemistry",
-    enabled = false,
-    energy_required = 2,
-    hide_from_player_crafting = true,
-    ingredients = {
-      {type = "item", name = "sp-catalyst", amount = 1},
-      {type = "fluid", name = "petroleum-gas", amount = 60},
-      {type = "fluid", name = "water", amount = 60}
-    },
-    results = {
-      {type = "item", name = "sulfur", amount = 6}
-    },
-    crafting_machine_tint = {
-      primary = {r = 1.000, g = 1.000, b = 0.500, a = 1.000},
-      secondary = {r = 0.771, g = 0.771, b = 0.0, a = 1.000},
-      tertiary = {r = 0.768, g = 0.665, b = 0.0, a = 1.000},
-      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
-    }
-  },
-  {
-    type = "recipe",
     name = "sp-phosphorus",  -- #ForRegEx# - recipe
     category = "chemistry",
     enabled = false,
@@ -2295,31 +2284,6 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-lithium-sulfur-battery", amount = 1}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-catalyst-from-liquid-sodium",  -- #ForRegEx# - recipe
-    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/catalyst.png", 64,
-                                         "__Spaghetorio__/graphics/icons/liquid-sodium.png", 64),
-    category = "chemistry",
-    enabled = false,
-    energy_required = 3,
-    hide_from_player_crafting = true,
-    ingredients = {
-      {type = "item", name = "carbon", amount = 2},
-      {type = "item", name = "sp-aluminum-sheet", amount = 2},
-      {type = "fluid", name = "sp-liquid-sodium", amount = 20},
-      {type = "fluid", name = "sp-propylene", amount = 40}
-    },
-    results = {
-      {type = "item", name = "sp-catalyst", amount = 1}
-    },
-    crafting_machine_tint = {
-      primary = {r = 1.000, g = 1.000, b = 0.500, a = 1.000},
-      secondary = {r = 0.771, g = 0.771, b = 0.0, a = 1.000},
-      tertiary = {r = 0.768, g = 0.665, b = 0.0, a = 1.000},
-      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
     }
   },
   {
@@ -2379,7 +2343,7 @@ data:extend({
     ingredients = {
       {type = "fluid", name = "petroleum-gas", amount = 100},
       {type = "item", name = "sp-filter", amount = 2},
-      {type = "item", name = "sp-catalyst", amount = 1}
+      -- {type = "item", name = "sp-catalyst", amount = 1}
     },
     results = {
       {type = "fluid", name = "sp-ethylene", amount = 40},
@@ -2401,7 +2365,7 @@ data:extend({
     enabled = false,
     energy_required = 18,
     ingredients = {
-      {type = "item", name = "sp-catalyst", amount = 1},
+      -- {type = "item", name = "sp-catalyst", amount = 1},
       {type = "fluid", name = "sp-styrene", amount = 20},
       {type = "fluid", name = "sp-propane", amount = 50}
     },
@@ -2425,7 +2389,7 @@ data:extend({
     energy_required = 20,
     ingredients = {
       {type = "fluid", name = "sp-propane", amount = 100},
-      {type = "item", name = "sp-catalyst", amount = 1},
+      -- {type = "item", name = "sp-catalyst", amount = 1},
     },
     results = {
       {type = "fluid", name = "sp-propylene", amount = 100},
@@ -2559,7 +2523,7 @@ data:extend({
     enabled = false,
     energy_required = 20,
     ingredients = {
-      {type = "item", name = "sp-catalyst", amount = 1},
+      -- {type = "item", name = "sp-catalyst", amount = 1},
       {type = "fluid", name = "sp-mineral-water", amount = 50},
       {type = "fluid", name = "sp-hydrogen-chloride", amount = 20}
     },
@@ -2888,7 +2852,7 @@ data:extend({
     ingredients =
     {
       {type = "item", name = "sp-chemical-science-pack-2", amount = 10},
-      {type = "item", name = "sp-catalyst", amount = 10},
+      -- {type = "item", name = "sp-catalyst", amount = 10},
       {type = "item", name = "sp-composites", amount = 5},
       {type = "item", name = "sp-carbon-nanotubes", amount = 10},
       {type = "item", name = "sp-lithium-chloride", amount = 5},
@@ -2940,6 +2904,20 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-arsenic-iodide", amount = 3}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-manganese-chloride",  -- #ForRegEx# - recipe
+    category = "advanced-chemistry",
+    enabled = false,
+    energy_required = 2,
+    ingredients = {
+      {type = "item", name = "sp-manganese-ingot", amount = 2},
+      {type = "fluid", name = "sp-chlorine", amount = 5},
+    },
+    results = {
+      {type = "item", name = "sp-manganese-chloride", amount = 3}
     }
   },
   ------------------------------------------------------------------------------
@@ -3060,33 +3038,6 @@ data:extend({
   ------------------------------------------------------------------------------
   -- MARK: sp-kr-fluid-filtration
   ------------------------------------------------------------------------------
-  {
-    type = "recipe",
-    name = "sp-filter-dirty-water-with-sulfur",  -- #ForRegEx# - recipe
-    icon = "__Spaghetorio__/graphics/icons/dirty-water-with-sulfur.png",  -- TODO add filtering icon
-    icon_size = 64,
-    category = "sp-kr-fluid-filtration",
-    subgroup = "fluid-recipes",
-    enabled = false,
-    energy_required = 2,
-    ingredients = {
-      {type = "item", name = "carbon", amount = 2},
-      {type = "fluid", name = "sp-dirty-water-with-sulfur", amount = 60}
-    },
-    results = {
-      {type = "item", name = "sulfur", amount = 2},
-      {type = "item", name = "copper-ore", amount = 1},
-      {type = "item", name = "sp-tinstone", probability = 0.5, amount = 1},
-      {type = "item", name = "sp-silver", probability = 0.2, amount = 1}
-    },
-    crafting_machine_tint = {
-      primary = {r = 0.000, g = 0.000, b = 0.500, a = 1.000},
-      secondary = {r = 0.0, g = 0.0, b = 0.3, a = 1.000},
-      tertiary = {r = 0.0, g = 0.0, b = 0.2, a = 1.000},
-      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
-    },
-    order = "z-filtration-[sulfur]"
-  },
   {
     type = "recipe",
     name = "sp-salt",
@@ -3809,6 +3760,19 @@ data:extend({
       secondary = {r = 0.3, g = 0.0, b = 0.3, a = 1.000},
       tertiary = {r = 0.1, g = 0.0, b = 0.1, a = 1.000},
       quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-manganese-ingot",  -- #ForRegEx# - recipe
+    category = "sp-kr-electrolysis",
+    enabled = false,
+    energy_required = 4,
+    ingredients = {
+      {type = "item", name = "sp-manganese-dioxide", amount = 5}
+    },
+    results = {
+      {type = "item", name = "sp-manganese-ingot", amount = 3}
     }
   },
   {
@@ -4648,40 +4612,6 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-catalyst-from-calcium-magnesium",  -- #ForRegEx# - recipe
-    icon = "__Spaghetorio__/graphics/icons/catalyst.png",
-    icon_size = 64,
-    mip_maps = 4,
-    category = "crafting",
-    enabled = false,
-    energy_required = 3.2,
-    ingredients = {
-      {type = "item", name = "sp-magnesium-slab", amount = 3},
-      {type = "item", name = "sp-calcium", amount = 3}
-    },
-    results = {
-      {type = "item", name = "sp-catalyst", amount = 1}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-catalyst-from-palladium",  -- #ForRegEx# - recipe
-    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/catalyst.png", 64,
-                                         "__Spaghetorio__/graphics/icons/palladium.png", 64),
-    category = "crafting",
-    enabled = false,
-    energy_required = 2,
-    hide_from_player_crafting = true,
-    ingredients = {
-      {type = "item", name = "sp-stainless-steel", amount = 1},
-      {type = "item", name = "sp-palladium", amount = 1}
-    },
-    results = {
-      {type = "item", name = "sp-catalyst", amount = 3}
-    }
-  },
-  {
-    type = "recipe",
     name = "sp-mirror-from-silver",  -- #ForRegEx# - recipe
     icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/mirror.png", 64,
                                          "__Spaghetorio__/graphics/icons/silver.png", 64),
@@ -4750,22 +4680,6 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-heating-filament", amount = 1}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-relay",  -- #ForRegEx# - recipe
-    category = "crafting",
-    enabled = false,
-    energy_required = 1.6,
-    ingredients = {
-      {type = "item", name = "sp-anodized-aluminum", amount = 1},
-      {type = "item", name = "sp-coil", amount = 1},
-      {type = "item", name = "plastic-bar", amount = 1},
-      {type = "item", name = "iron-stick", amount = 1}
-    },
-    results = {
-      {type = "item", name = "sp-relay", amount = 1}
     }
   },
   {
@@ -5334,6 +5248,23 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-infrared-filter", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-relay",  -- #ForRegEx# - recipe
+    category = "crafting-with-fluid",
+    enabled = false,
+    energy_required = 1.6,
+    ingredients = {
+      {type = "item", name = "sp-anodized-aluminum", amount = 1},
+      {type = "item", name = "sp-coil", amount = 1},
+      {type = "item", name = "plastic-bar", amount = 1},
+      {type = "item", name = "iron-stick", amount = 1},
+      {type = "fluid", name = "sp-mercury", amount = 2}
+    },
+    results = {
+      {type = "item", name = "sp-relay", amount = 1}
     }
   },
   {
@@ -6213,7 +6144,7 @@ data:extend({
     enabled = false,
     energy_required = 12,
     ingredients = {
-      {type = "item", name = "sp-catalyst", amount = 2},
+      -- {type = "item", name = "sp-catalyst", amount = 2},
       {type = "item", name = "carbon", amount = 6},
       {type = "fluid", name = "sp-styrene", amount = 10},
       {type = "fluid", name = "sp-grobgnum-slurry", amount = 50}
@@ -11589,7 +11520,7 @@ data:extend({
     energy_required = 12,
     hide_from_player_crafting = true,
     ingredients = {
-      {type = "item", name = "sp-catalyst", amount = 1},
+      -- {type = "item", name = "sp-catalyst", amount = 1},
       {type = "fluid", name = "sp-ethylene", amount = 60},
       {type = "fluid", name = "sp-chlorine", amount = 60}
     },
