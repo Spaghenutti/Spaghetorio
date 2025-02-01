@@ -40,6 +40,8 @@ data.extend({
   noise_expression("sp-iodine-brine", "resource"),
   noise_expression("sp-mineral-water", "resource"),
 
+  noise_expression("sp-core-rift", "resource"),
+
   noise_expression("sp-blunagium", "resource"),
   noise_expression("sp-grobgnum", "resource"),
   noise_expression("sp-imersite", "resource"),

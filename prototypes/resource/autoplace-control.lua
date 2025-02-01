@@ -137,6 +137,15 @@ data:extend({
     order = "a-[mineral-water]",
     category = "resource"
   },
+  -- MARK: Core resource
+  {
+    type = "autoplace-control",
+    name = "sp-core-rift",  -- #ForRegEx# - autoplace-control
+    localised_name = {"", "[entity=sp-core-rift] ", {"entity-name.sp-core-rift"}},
+    category = "resource",
+    richness = true,
+    order = "c[core-rift]"
+  },
   -- MARK: Quarry resource
   {
     type = "autoplace-control",
@@ -198,6 +207,8 @@ data.raw.planet["nauvis"].map_gen_settings.autoplace_controls["sp-zirconium-ore"
 
 data.raw.planet["nauvis"].map_gen_settings.autoplace_controls["sp-iodine-brine"] = {}
 data.raw.planet["nauvis"].map_gen_settings.autoplace_controls["sp-mineral-water"] = {}
+
+data.raw.planet["nauvis"].map_gen_settings.autoplace_controls["sp-core-rift"] = {}
 
 data.raw.planet["nauvis"].map_gen_settings.autoplace_controls["sp-blunagium"] = {}
 data.raw.planet["nauvis"].map_gen_settings.autoplace_controls["sp-grobgnum"] = {}

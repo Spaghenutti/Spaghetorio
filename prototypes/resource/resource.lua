@@ -36,14 +36,14 @@ local function basic_resource(resource_parameters, autoplace_parameters)
     name = "sp-" .. resource_parameters.name,
     icon = resource_parameters.icon,
     flags = {"placeable-neutral"},
-    order= "b-"..resource_parameters.order,
+    order = "b-"..resource_parameters.order,
     tree_removal_probability = 0.8,
     tree_removal_max_distance = 32 * 32,
     minable = resource_parameters.minable or
     {
       mining_particle = "sp-" .. resource_parameters.name .. "-particle",
       mining_time = resource_parameters.mining_time,
-      result = "sp-" .. resource_parameters.name
+      result = resource_parameters.mining_result or "sp-" .. resource_parameters.name,
     },
     category = resource_parameters.category,
     subgroup = resource_parameters.subgroup,
@@ -92,7 +92,7 @@ local function fluid_resource(resource_parameters, autoplace_parameters)
     flags = {"placeable-neutral"},
     category = "basic-fluid",
     subgroup = "mineable-fluids",
-    order= "fluid-"..resource_parameters.order,
+    order = "fluid-"..resource_parameters.order,
     infinite = true,
     highlight = true,
     minimum = 60000,
@@ -108,7 +108,7 @@ local function fluid_resource(resource_parameters, autoplace_parameters)
       {
         {
           type = "fluid",
-          name = "sp-" .. resource_parameters.name,
+          name = resource_parameters.mining_result or "sp-" .. resource_parameters.name,
           amount_min = 10,
           amount_max = 10,
           probability = 1
@@ -157,7 +157,7 @@ local function core_resource(resource_parameters)
     {
     type = "resource",
     name = "sp-" .. resource_parameters.name,
-    category = "sp-kr-quarry",
+    category = "sp-core",
     icon = resource_parameters.icon,
     icon_size = 64,
     icon_mipmaps = 4,
@@ -177,8 +177,8 @@ local function core_resource(resource_parameters)
       mining_time = 2,
       result = resource_parameters.mining_result or "sp-" .. resource_parameters.name,
     },
-    collision_box = {{-3.4, -3.4 }, {3.4, 3.4}},
-    selection_box = {{-3.5, -3.5 }, {3.5, 3.5}},
+    collision_box = {{-5.4, -5.4 }, {5.4, 5.4}},
+    selection_box = {{-5.5, -5.5 }, {5.5, 5.5}},
     autoplace = resource_autoplace.resource_autoplace_settings{
       name = "sp-" .. resource_parameters.name,
       order = resource_parameters.order,
@@ -195,11 +195,11 @@ local function core_resource(resource_parameters)
       sheet = {
         filename = resource_parameters.stages_filename,
         priority = "extra-high",
-        width = resource_parameters.stages_width or 256,
-        height = resource_parameters.stages_height or 256,
-        frame_count = resource_parameters.frame_count or 4,
+        width = resource_parameters.stages_width or 500,
+        height = resource_parameters.stages_height or 500,
+        frame_count = resource_parameters.frame_count or 6,
         variation_count = 1,
-        scale = 0.8,
+        scale = 0.6,
       },
     },
     effect_animation_period = 5,
@@ -600,6 +600,19 @@ data:extend({
     }
   ),
 
+  -- MARK: core resource
+  core_resource(
+    {
+      name = "core-rift",
+      icon = "__Spaghetorio__/graphics/icons/core-rift.png",
+      stages_filename = "__Spaghetorio__/graphics/resource/core-rift.png",
+      mining_time = 1,
+      mining_result = "iron-plate",
+      map_color = {r = 0.1, g = 0.05, b = 0.05},
+      mining_visualisation_tint = {r = 0.1, g = 0.05, b = 0.05},
+    }
+  ),
+
   -- MARK: Quarry resource
   quarry_resource(
     {
@@ -764,6 +777,8 @@ data.raw.planet["nauvis"].map_gen_settings.autoplace_settings.entity.settings["s
 
 data.raw.planet["nauvis"].map_gen_settings.autoplace_settings.entity.settings["sp-iodine-brine"] = {}
 data.raw.planet["nauvis"].map_gen_settings.autoplace_settings.entity.settings["sp-mineral-water"] = {}
+
+data.raw.planet["nauvis"].map_gen_settings.autoplace_settings.entity.settings["sp-core-rift"] = {}
 
 data.raw.planet["nauvis"].map_gen_settings.autoplace_settings.entity.settings["sp-blunagium"] = {}
 data.raw.planet["nauvis"].map_gen_settings.autoplace_settings.entity.settings["sp-grobgnum"] = {}
