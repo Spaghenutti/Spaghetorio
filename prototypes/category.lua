@@ -5,6 +5,10 @@ data:extend({
     type = "resource-category",
     name = "sp-kr-quarry",
   },
+  {
+    type = "resource-category",
+    name = "sp-core",
+  },
 
   -- MARK: Fuel Category
   {

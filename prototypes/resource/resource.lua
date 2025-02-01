@@ -152,7 +152,7 @@ local function fluid_resource(resource_parameters, autoplace_parameters)
   }
 end
 
-local function quarry_resource(resource_parameters)
+local function core_resource(resource_parameters)
   return
     {
     type = "resource",
@@ -213,6 +213,66 @@ local function quarry_resource(resource_parameters)
   }
 end
 
+local function quarry_resource(resource_parameters)
+  return
+    {
+    type = "resource",
+    name = "sp-" .. resource_parameters.name,
+    category = "sp-kr-quarry",
+    icon = resource_parameters.icon,
+    icon_size = 64,
+    icon_mipmaps = 4,
+    flags = {"placeable-neutral"},
+    order = "z-" .. resource_parameters.name,
+    subgroup = "raw-resource",
+    infinite = false,
+    highlight = true,
+    minimum = 50,
+    normal = 350,
+    infinite_depletion_amount = 10,
+    resource_patch_search_radius = 12,
+    tree_removal_probability = 1,
+    tree_removal_max_distance = 32 * 32,
+    minable = {
+      hardness = 1,
+      mining_time = 2,
+      result = resource_parameters.mining_result or "sp-" .. resource_parameters.name,
+    },
+    collision_box = {{-3.4, -3.4 }, {3.4, 3.4}},
+    selection_box = {{-3.5, -3.5 }, {3.5, 3.5}},
+    autoplace = resource_autoplace.resource_autoplace_settings{
+      name = "sp-" .. resource_parameters.name,
+      order = resource_parameters.order,
+      base_density = 1,
+      base_spots_per_km = 0.1,
+      has_starting_area_placement = false,
+      additional_richness = 350000,
+      regular_rq_factor_multiplier = 0.1,
+      starting_rq_factor_multiplier = 0.1,
+      candidate_spot_count = 22,
+    },
+    stage_counts = {0},
+    stages = {
+      sheet = {
+        filename = resource_parameters.stages_filename,
+        priority = "extra-high",
+        width = resource_parameters.stages_width or 256,
+        height = resource_parameters.stages_height or 256,
+        frame_count = resource_parameters.frame_count or 4,
+        variation_count = 1,
+        scale = 0.8,
+      },
+    },
+    effect_animation_period = 5,
+    effect_animation_period_deviation = 1,
+    effect_darkness_multiplier = 3.5,
+    min_effect_alpha = 0.2,
+    max_effect_alpha = 0.3,
+    map_color = resource_parameters.map_color,
+    mining_visualisation_tint = resource_parameters.mining_visualisation_tint,
+    map_grid = false,
+  }
+end
 
 data:extend({
   -- MARK: Basic resource

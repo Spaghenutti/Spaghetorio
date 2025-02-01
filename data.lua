@@ -41,7 +41,7 @@ require("prototypes.buildings.wind-turbine")
 -- require("prototypes.buildings.arc-furnace")
 -- require("prototypes.buildings.breeder-reactor")  -- atom forge
 -- require("prototypes.buildings.chemical-stager")
--- require("prototypes.buildings.core-extractor")
+require("prototypes.buildings.core-extractor")
 -- require("prototypes.buildings.cyclotron")  -- fusion reactor
 -- require("prototypes.buildings.geothermal-plant")
 -- require("prototypes.buildings.gravity-assembler")

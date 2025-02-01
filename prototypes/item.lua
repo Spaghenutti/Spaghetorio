@@ -5904,6 +5904,7 @@ data:extend({
   --   place_result = "sp-kr-mineral-water-pumpjack",
   --   stack_size = 50,
   -- },
+  -- Extraction machine
   {
     type = "item",
     name = "sp-kr-quarry-drill",
@@ -5915,7 +5916,18 @@ data:extend({
     place_result = "sp-kr-quarry-drill",
     stack_size = 50,
   },
-  -- -- Laboratories
+  {
+    type = "item",
+    name = "sp-core-extractor",
+    icon = "__Spaghetorio__/graphics/icons/core-extractor.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "extraction-machine",
+    order = "a[items]-e[core-extractor]",
+    place_result = "sp-core-extractor",
+    stack_size = 50,
+  },  
+  -- Laboratories
   {
     type = "item",
     name = "sp-biusart-lab",
@@ -6005,7 +6017,54 @@ data:extend({
     place_result = "sp-kr-advanced-solar-panel",
     stack_size = 50,
   },
-  -- -- Tramsport belt
+  -- logistic network
+  {
+    type = "item",
+    name = "sp-kr-small-roboport",
+    icon = "__Spaghetorio__/graphics/krastorio/icons/entities/small-roboport.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "logistic-network",
+    order = "c[signal]-b[small-roboport]",
+    place_result = "sp-kr-small-roboport",
+    stack_size = 50,
+  },
+  {
+    type = "item",
+    name = "sp-kr-large-roboport",
+    icon = "__Spaghetorio__/graphics/krastorio/icons/entities/large-roboport.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "logistic-network",
+    order = "c[signal]-c[large-roboport]",
+    place_result = "sp-kr-large-roboport",
+    stack_size = 50,
+  },
+  -- Module
+  {
+    type = "item",
+    name = "sp-kr-singularity-beacon",
+    icon = "__Spaghetorio__/graphics/krastorio/icons/entities/singularity-beacon.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "module",
+    order = "8[singularity-beacon]",
+    place_result = "sp-kr-singularity-beacon",
+    stack_size = 50,
+  },
+  -- -- teleporter
+  -- {
+  --   type = "item",
+  --   name = "sp-kr-planetary-teleporter",
+  --   icon = "__Spaghetorio__/graphics/krastorio/icons/entities/planetary-teleporter.png",
+  --   icon_size = 64,
+  --   icon_mipmaps = 4,
+  --   subgroup = "energy-pipe-distribution",
+  --   order = "z-z-b[kr-planetary-teleporter]",
+  --   place_result = "sp-kr-planetary-teleporter",
+  --   stack_size = 50,
+  -- },
+  -- MARK: Tramsport belt
   {
     type = "item",
     name = "sp-kr-loader",
@@ -6095,42 +6154,7 @@ data:extend({
     place_result = "sp-kr-superior-underground-belt",
     stack_size = 50,
   },
-  -- logistic network
-  {
-    type = "item",
-    name = "sp-kr-small-roboport",
-    icon = "__Spaghetorio__/graphics/krastorio/icons/entities/small-roboport.png",
-    icon_size = 64,
-    icon_mipmaps = 4,
-    subgroup = "logistic-network",
-    order = "c[signal]-b[small-roboport]",
-    place_result = "sp-kr-small-roboport",
-    stack_size = 50,
-  },
-  {
-    type = "item",
-    name = "sp-kr-large-roboport",
-    icon = "__Spaghetorio__/graphics/krastorio/icons/entities/large-roboport.png",
-    icon_size = 64,
-    icon_mipmaps = 4,
-    subgroup = "logistic-network",
-    order = "c[signal]-c[large-roboport]",
-    place_result = "sp-kr-large-roboport",
-    stack_size = 50,
-  },
-  -- Module
-  {
-    type = "item",
-    name = "sp-kr-singularity-beacon",
-    icon = "__Spaghetorio__/graphics/krastorio/icons/entities/singularity-beacon.png",
-    icon_size = 64,
-    icon_mipmaps = 4,
-    subgroup = "module",
-    order = "8[singularity-beacon]",
-    place_result = "sp-kr-singularity-beacon",
-    stack_size = 50,
-  },
-  -- inserters
+  -- MARK: inserters
   {
     type = "item",
     name = "sp-kr-superior-inserter",
@@ -6153,16 +6177,4 @@ data:extend({
     place_result = "sp-kr-superior-long-inserter",
     stack_size = 50,
   },
-  -- -- teleporter
-  -- {
-  --   type = "item",
-  --   name = "sp-kr-planetary-teleporter",
-  --   icon = "__Spaghetorio__/graphics/krastorio/icons/entities/planetary-teleporter.png",
-  --   icon_size = 64,
-  --   icon_mipmaps = 4,
-  --   subgroup = "energy-pipe-distribution",
-  --   order = "z-z-b[kr-planetary-teleporter]",
-  --   place_result = "sp-kr-planetary-teleporter",
-  --   stack_size = 50,
-  -- },
 })
