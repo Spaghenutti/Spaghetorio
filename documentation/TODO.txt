@@ -12,6 +12,7 @@ Factorio Space age
     + mercury-ore
       + mercury-ore -> mercury + sulfur + stone
       + used in relay
+      - used as liquid metal coolant in breeder reactor
       - used in catalyst
     + stibnite
       + stibnite -> antimony-oxide (smelting)
@@ -66,7 +67,7 @@ Factorio Space age
 
   - Add Krastorio matter conversion recipes
   + Add mineral water
-  - Add imersite
+  + Add imersite
   - Add ores for core extractor
     - ...
     - add core extractor

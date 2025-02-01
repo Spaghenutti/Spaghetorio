@@ -302,7 +302,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "raw-imersite",
+    name = "sp-raw-imersite",
     icon = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/raw-imersite/raw-imersite.png",
     icon_size = 64,
     icon_mipmaps = 4,

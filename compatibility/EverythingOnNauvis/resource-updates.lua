@@ -22,19 +22,27 @@ end
 
 data.extend({
   noise_expression("sp-aluminum-ore", "resource"),
+  noise_expression("sp-barium-ore", "resource"),
+  noise_expression("sp-boron-ore", "resource"),
   noise_expression("sp-chromite", "resource"),
   noise_expression("sp-cobalt-ore", "resource"),
-  noise_expression("sp-barium-ore", "resource"),
   noise_expression("sp-magnesium-ore", "resource"),
+  noise_expression("sp-manganese-ore", "resource"),
   noise_expression("sp-mercury-ore", "resource"),
+  noise_expression("sp-molybdenum-ore", "resource"),
   noise_expression("sp-nickel-ore", "resource"),
+  noise_expression("sp-stibnite", "resource"),
   noise_expression("sp-tinstone", "resource"),
   noise_expression("sp-titanium-ore", "resource"),
   noise_expression("sp-zinc-ore", "resource"),
   noise_expression("sp-zirconium-ore", "resource"),
 
+  noise_expression("sp-iodine-brine", "resource"),
+  noise_expression("sp-mineral-water", "resource"),
+
   noise_expression("sp-blunagium", "resource"),
   noise_expression("sp-grobgnum", "resource"),
+  noise_expression("sp-imersite", "resource"),
   noise_expression("sp-rukite", "resource"),
   noise_expression("sp-yemnuth", "resource"),
 })

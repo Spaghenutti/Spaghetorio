@@ -175,7 +175,7 @@ local function quarry_resource(resource_parameters)
     minable = {
       hardness = 1,
       mining_time = 2,
-      result = "sp-" .. resource_parameters.name,
+      result = resource_parameters.mining_result or "sp-" .. resource_parameters.name,
     },
     collision_box = {{-3.4, -3.4 }, {3.4, 3.4}},
     selection_box = {{-3.5, -3.5 }, {3.5, 3.5}},
@@ -195,9 +195,9 @@ local function quarry_resource(resource_parameters)
       sheet = {
         filename = resource_parameters.stages_filename,
         priority = "extra-high",
-        width = 256,
-        height = 256,
-        frame_count = 4,
+        width = resource_parameters.stages_width or 256,
+        height = resource_parameters.stages_height or 256,
+        frame_count = resource_parameters.frame_count or 4,
         variation_count = 1,
         scale = 0.8,
       },
@@ -561,16 +561,20 @@ data:extend({
       mining_visualisation_tint = {r = 0.1, g = 0.8, b = 0.1},
     }
   ),
-  -- quarry_resource(
-  --   {
-  --     name = "imersite",
-  --     icon = "__Spaghetorio__/graphics/icons/grobgnum.png",
-  --     stages_filename = "__Spaghetorio__/graphics/krastorio/resources/mineral-water.png",
-  --     mining_time = 1,
-  --     map_color = {r = 0, g = 0.7, b = 0},
-  --     mining_visualisation_tint = {r = 0.1, g = 0.8, b = 0.1},
-  --   }
-  -- ),
+  quarry_resource(
+    {
+      name = "imersite",
+      icon = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/raw-imersite/raw-imersite.png",
+      stages_filename = "__Spaghetorio__/graphics/krastorio/resources/imersite/imersite-rift.png",
+      stages_width = 250,
+      stages_height = 250,
+      frame_count = 6,
+      mining_time = 1,
+      mining_result = "sp-raw-imersite",
+      map_color = {r = 1, g = 0.5, b = 1},
+      mining_visualisation_tint = {r = 0.792, g = 0.050, b = 0.858},
+    }
+  ),
   quarry_resource(
     {
       name = "rukite",
@@ -653,7 +657,35 @@ data.raw.resource["sp-iodine-brine"].stateless_visualisation = {
   }
 }
 
+-- TODO: The animation here does not work
+data.raw.resource["sp-imersite"].stage_counts = { 0 }
+data.raw.resource["sp-imersite"].stages = {
+  sheet = {
+    filename = "__Spaghetorio__/graphics/krastorio/resources/imersite/imersite-rift.png",
+    priority = "extra-high",
+    width = 250,
+    height = 250,
+    frame_count = 6,
+    variation_count = 1,
+    scale = 0.8,
+  },
+}
+data.raw.resource["sp-imersite"].stages_effect = {
+  sheets = {
+    {
+      filename = "__Spaghetorio__/graphics/krastorio/resources/imersite/imersite-rift-glow.png",
+      priority = "extra-high",
+      width = 250,
+      height = 250,
+      frame_count = 6,
+      variation_count = 1,
+      draw_as_glow = true,
+      scale = 0.8,
+    }
+  }
+}
 
+-- MARK: Add resources to nauvis
 data.raw.planet["nauvis"].map_gen_settings.autoplace_settings.entity.settings["sp-aluminum-ore"] = {}
 data.raw.planet["nauvis"].map_gen_settings.autoplace_settings.entity.settings["sp-barium-ore"] = {}
 data.raw.planet["nauvis"].map_gen_settings.autoplace_settings.entity.settings["sp-boron-ore"] = {}
@@ -675,5 +707,6 @@ data.raw.planet["nauvis"].map_gen_settings.autoplace_settings.entity.settings["s
 
 data.raw.planet["nauvis"].map_gen_settings.autoplace_settings.entity.settings["sp-blunagium"] = {}
 data.raw.planet["nauvis"].map_gen_settings.autoplace_settings.entity.settings["sp-grobgnum"] = {}
+data.raw.planet["nauvis"].map_gen_settings.autoplace_settings.entity.settings["sp-imersite"] = {}
 data.raw.planet["nauvis"].map_gen_settings.autoplace_settings.entity.settings["sp-rukite"] = {}
 data.raw.planet["nauvis"].map_gen_settings.autoplace_settings.entity.settings["sp-yemnuth"] = {}

@@ -156,6 +156,14 @@ data:extend({
   },
   {
     type = "autoplace-control",
+    name = "sp-imersite",  -- #ForRegEx# - autoplace-control
+    localised_name = {"", "[entity=sp-imersite] ", {"entity-name.sp-imersite"}},
+    category = "resource",
+    richness = true,
+    order = "d[imersite]"
+  },
+  {
+    type = "autoplace-control",
     name = "sp-rukite",  -- #ForRegEx# - autoplace-control
     localised_name = {"", "[entity=sp-rukite] ", {"entity-name.sp-rukite"}},
     category = "resource",
@@ -193,5 +201,6 @@ data.raw.planet["nauvis"].map_gen_settings.autoplace_controls["sp-mineral-water"
 
 data.raw.planet["nauvis"].map_gen_settings.autoplace_controls["sp-blunagium"] = {}
 data.raw.planet["nauvis"].map_gen_settings.autoplace_controls["sp-grobgnum"] = {}
+data.raw.planet["nauvis"].map_gen_settings.autoplace_controls["sp-imersite"] = {}
 data.raw.planet["nauvis"].map_gen_settings.autoplace_controls["sp-rukite"] = {}
 data.raw.planet["nauvis"].map_gen_settings.autoplace_controls["sp-yemnuth"] = {}
