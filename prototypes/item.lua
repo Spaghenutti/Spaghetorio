@@ -294,6 +294,28 @@ data:extend({
   },
   {
     type = "item",
+    name = "sp-core-fragment",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/core-fragment-2.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    pictures = {
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/core-fragment-1.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/core-fragment-2.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/core-fragment-3.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/core-fragment-4.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/core-fragment-5.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/core-fragment-6.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/core-fragment-7.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/core-fragment-8.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/core-fragment-9.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/core-fragment-10.png", scale = 0.5, mipmap_count = 4}
+    },
+    subgroup = "raw-resource",
+    order = "[raw-rare-metals]",
+    stack_size = 200
+  },
+  {
+    type = "item",
     name = "sp-rukite",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/rukite.png",
     icon_size = 64,

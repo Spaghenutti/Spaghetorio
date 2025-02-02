@@ -645,7 +645,7 @@ data:extend({
       icon = "__Spaghetorio__/graphics/icons/core-rift.png",
       stages_filename = "__Spaghetorio__/graphics/resource/core-rift.png",
       mining_time = 1,
-      mining_result = "iron-plate",
+      mining_result = "sp-core-fragment",
       map_color = {r = 0.1, g = 0.05, b = 0.05},
       mining_visualisation_tint = {r = 0.1, g = 0.05, b = 0.05},
     }
