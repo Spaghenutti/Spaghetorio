@@ -57,12 +57,14 @@ local function basic_resource(resource_parameters, autoplace_parameters)
       name = "sp-" .. resource_parameters.name,
       order = resource_parameters.order,
       base_density = autoplace_parameters.base_density,
-      base_spots_per_km = autoplace_parameters.base_spots_per_km2,
+      richness_post_multiplier = autoplace_parameters.richness_post_multiplier or 0.01,
+      regular_rq_factor_multiplier = autoplace_parameters.regular_rq_factor_multiplier or 0.1,
+      base_spots_per_km2 = autoplace_parameters.base_spots_per_km2 or 0.001,
+      -- random_probability = 0.1,
       has_starting_area_placement = autoplace_parameters.has_starting_area_placement,
-      regular_rq_factor_multiplier = autoplace_parameters.regular_rq_factor_multiplier,
-      starting_rq_factor_multiplier = autoplace_parameters.starting_rq_factor_multiplier,
-      candidate_spot_count = autoplace_parameters.candidate_spot_count,
-      tile_restriction = autoplace_parameters.tile_restriction
+      random_spot_size_minimum = 2,
+      random_spot_size_maximum = 4,
+      candidate_spot_count = autoplace_parameters.candidate_spot_count or 22,
     },
     stage_counts = {15000, 9500, 5500, 2900, 1300, 400, 150, 80},
     stages =
@@ -123,17 +125,13 @@ local function fluid_resource(resource_parameters, autoplace_parameters)
     {
       name = "sp-" .. resource_parameters.name,
       order = resource_parameters.order,
-      base_density = autoplace_parameters.base_density,
-      base_spots_per_km = autoplace_parameters.base_spots_per_km,
-      random_probability = autoplace_parameters.random_probability,
+      base_density = autoplace_parameters.base_density or 50,
+      base_spots_per_km2 = autoplace_parameters.base_spots_per_km2 or 0.1,
+      random_probability = autoplace_parameters.random_probability or 0.02,
       random_spot_size_minimum = 1,
-      random_spot_size_maximum = 1, -- don't randomize spot size
-      additional_richness = autoplace_parameters.additional_richness,
-      has_starting_area_placement = autoplace_parameters.has_starting_area_placement,
-      regular_rq_factor_multiplier = autoplace_parameters.regular_rq_factor_multiplier,
-      -- starting_rq_factor_multiplier = autoplace_parameters.starting_rq_factor_multiplier,
-      -- candidate_spot_count = autoplace_parameters.candidate_spot_count,
-      -- tile_restriction = autoplace_parameters.tile_restriction,
+      random_spot_size_maximum = 1,
+      additional_richness = autoplace_parameters.additional_richness or 2000000,
+      regular_rq_factor_multiplier = autoplace_parameters.regular_rq_factor_multiplier or 1,
     },
     stage_counts = {0},
     stages =
@@ -182,12 +180,11 @@ local function core_resource(resource_parameters)
     autoplace = resource_autoplace.resource_autoplace_settings{
       name = "sp-" .. resource_parameters.name,
       order = resource_parameters.order,
-      base_density = 1,
-      base_spots_per_km = 0.1,
+      base_density = 0.01,
+      base_spots_per_km2 = 0.001,
       has_starting_area_placement = false,
-      additional_richness = 350000,
+      additional_richness = 10000000,
       regular_rq_factor_multiplier = 0.1,
-      starting_rq_factor_multiplier = 0.1,
       candidate_spot_count = 22,
     },
     stage_counts = {0},
@@ -243,12 +240,11 @@ local function quarry_resource(resource_parameters)
     autoplace = resource_autoplace.resource_autoplace_settings{
       name = "sp-" .. resource_parameters.name,
       order = resource_parameters.order,
-      base_density = 1,
-      base_spots_per_km = 0.1,
+      base_density = 0.01,
+      base_spots_per_km2 = 0.001,
       has_starting_area_placement = false,
-      additional_richness = 350000,
+      additional_richness = 3500000,
       regular_rq_factor_multiplier = 0.1,
-      starting_rq_factor_multiplier = 0.1,
       candidate_spot_count = 22,
     },
     stage_counts = {0},
@@ -282,17 +278,13 @@ data:extend({
       icon = "__Spaghetorio__/graphics/icons/aluminum-ore-1.png",
       stages_filename = "__Spaghetorio__/graphics/resource/aluminum-ore-patches.png",
       order = "g",
-      mining_time = 1,
+      mining_time = 0.8,
       map_color = {r=1.0, g=0.2, b=0.2},
       mining_visualisation_tint = {r=1.0, g=0.5, b=0.5, a=1.0}
     },
     {
-      base_density = 10,
-      base_spots_per_km2 = 0.5,
+      base_density = 6,
       has_starting_area_placement = false,
-      regular_blob_amplitude_multiplier = 1,
-      regular_rq_factor_multiplier = 0.9,
-      candidate_spot_count = 22,
     }
   ),
   basic_resource(
@@ -301,17 +293,13 @@ data:extend({
       icon = "__Spaghetorio__/graphics/icons/barium-ore-1.png",
       stages_filename = "__Spaghetorio__/graphics/resource/barium-ore-patches.png",
       order = "a",
-      mining_time = 1,
+      mining_time = 2,
       map_color = {r=1.0, g=1.0, b=0.8},
       mining_visualisation_tint = {r=1.0, g=1.0, b=0.8, a=1.0},
     },
     {
       base_density = 1,
-      base_spots_per_km2 = 0.1,
       has_starting_area_placement = false,
-      regular_blob_amplitude_multiplier = 1,
-      regular_rq_factor_multiplier = 0.9,
-      candidate_spot_count = 22,
     }
   ),
   basic_resource(
@@ -320,17 +308,13 @@ data:extend({
       icon = "__Spaghetorio__/graphics/icons/boron-ore-1.png",
       stages_filename = "__Spaghetorio__/graphics/resource/boron-ore-patches.png",
       order = "a",
-      mining_time = 1,
+      mining_time = 4,
       map_color = {r=0.1, g=0.1, b=0.2},
       mining_visualisation_tint = {r=0.1, g=0.1, b=0.2, a=1.0},
     },
     {
-      base_density = 2,
-      base_spots_per_km2 = 0.2,
+      base_density = 1.2,
       has_starting_area_placement = false,
-      regular_blob_amplitude_multiplier = 1,
-      regular_rq_factor_multiplier = 0.9,
-      candidate_spot_count = 22,
     }
   ),
   basic_resource(
@@ -339,17 +323,13 @@ data:extend({
       icon = "__Spaghetorio__/graphics/icons/chromite-1.png",
       stages_filename = "__Spaghetorio__/graphics/resource/chromite-patches.png",
       order = "f",
-      mining_time = 1,
+      mining_time = 2,
       map_color = {r=0.5, g=0.5, b=1.0},
       mining_visualisation_tint = {r=0.5, g=0.5, b=1.0, a=1.0},
     },
     {
-      base_density = 9,
-      base_spots_per_km2 = 0.4,
+      base_density = 5,
       has_starting_area_placement = false,
-      regular_blob_amplitude_multiplier = 1,
-      regular_rq_factor_multiplier = 0.9,
-      candidate_spot_count = 22,
     }
   ),
   basic_resource(
@@ -358,17 +338,13 @@ data:extend({
       icon = "__Spaghetorio__/graphics/icons/cobalt-ore-1.png",
       stages_filename = "__Spaghetorio__/graphics/resource/cobalt-ore-patches.png",
       order = "d",
-      mining_time = 1,
+      mining_time = 3.5,
       map_color = {r=0.5, g=1, b=0.6},
       mining_visualisation_tint = {r=0.5, g=1, b=0.6, a=1.0},
     },
     {
-      base_density = 1,
-      base_spots_per_km2 = 0.13,
+      base_density = 3.5,
       has_starting_area_placement = false,
-      regular_blob_amplitude_multiplier = 1,
-      regular_rq_factor_multiplier = 0.9,
-      candidate_spot_count = 22,
     }
   ),
   basic_resource(
@@ -377,17 +353,13 @@ data:extend({
       icon = "__Spaghetorio__/graphics/icons/magnesium-ore-1.png",
       stages_filename = "__Spaghetorio__/graphics/resource/magnesium-ore-patches.png",
       order = "d",
-      mining_time = 1,
+      mining_time = 1.25,
       map_color = {r=0.75, g=0.75, b=0.75},
       mining_visualisation_tint = {r=0.75, g=0.75, b=0.75, a=1.0},
     },
     {
-      base_density = 8.5,
-      base_spots_per_km2 = 0.37,
+      base_density = 3,
       has_starting_area_placement = false,
-      regular_blob_amplitude_multiplier = 1,
-      regular_rq_factor_multiplier = 0.9,
-      candidate_spot_count = 22,
     }
   ),
   basic_resource(
@@ -396,17 +368,13 @@ data:extend({
       icon = "__Spaghetorio__/graphics/icons/manganese-ore-1.png",
       stages_filename = "__Spaghetorio__/graphics/resource/manganese-ore-patches.png",
       order = "d",
-      mining_time = 1,
+      mining_time = 2,
       map_color = {r=0.7, g=0.9, b=0.8},
       mining_visualisation_tint = {r=0.7, g=0.9, b=0.8, a=1.0},
     },
     {
-      base_density = 1,
-      base_spots_per_km2 = 0.21,
+      base_density = 3.2,
       has_starting_area_placement = false,
-      regular_blob_amplitude_multiplier = 1,
-      regular_rq_factor_multiplier = 0.9,
-      candidate_spot_count = 22,
     }
   ),
   basic_resource(
@@ -415,17 +383,13 @@ data:extend({
       icon = "__Spaghetorio__/graphics/icons/mercury-ore-1.png",
       stages_filename = "__Spaghetorio__/graphics/resource/mercury-ore-patches.png",
       order = "m",
-      mining_time = 1,
+      mining_time = 5,
       map_color = {r=0.35, g=0.15, b=0},
       mining_visualisation_tint = {r=0.35, g=0.15, b=0, a=1.0},
     },
     {
-      base_density = 7,
-      base_spots_per_km2 = 0.47,
+      base_density = 1.5,
       has_starting_area_placement = false,
-      regular_blob_amplitude_multiplier = 1,
-      regular_rq_factor_multiplier = 0.9,
-      candidate_spot_count = 22,
     }
   ),
   basic_resource(
@@ -434,17 +398,13 @@ data:extend({
       icon = "__Spaghetorio__/graphics/icons/molybdenum-ore-1.png",
       stages_filename = "__Spaghetorio__/graphics/resource/molybdenum-ore-patches.png",
       order = "d",
-      mining_time = 1,
+      mining_time = 3,
       map_color = {r=0.1, g=0.8, b=0.8},
       mining_visualisation_tint = {r=0.1, g=0.8, b=0.8, a=1.0},
     },
     {
-      base_density = 8.5,
-      base_spots_per_km2 = 0.37,
+      base_density = 1.2,
       has_starting_area_placement = false,
-      regular_blob_amplitude_multiplier = 1,
-      regular_rq_factor_multiplier = 0.9,
-      candidate_spot_count = 22,
     }
   ),
   basic_resource(
@@ -458,12 +418,8 @@ data:extend({
       mining_visualisation_tint = {r=0.3, g=0.9, b=0.61, a=1.0},
     },
     {
-      base_density = 4,
-      base_spots_per_km2 = 0.27,
+      base_density = 3,
       has_starting_area_placement = false,
-      regular_blob_amplitude_multiplier = 1,
-      regular_rq_factor_multiplier = 0.9,
-      candidate_spot_count = 22,
     }
   ),
   basic_resource(
@@ -472,17 +428,13 @@ data:extend({
       icon = "__Spaghetorio__/graphics/icons/potassium-ore-1.png",
       stages_filename = "__Spaghetorio__/graphics/resource/potassium-ore-patches.png",
       order = "p",
-      mining_time = 1,
+      mining_time = 0.5,
       map_color = {r=0.8, g=0.1, b=0.1},
       mining_visualisation_tint = {r=0.8, g=0.1, b=0.1, a=1.0},
     },
     {
-      base_density = 1.5,
-      base_spots_per_km2 = 0.15,
+      base_density = 2.5,
       has_starting_area_placement = false,
-      regular_blob_amplitude_multiplier = 1,
-      regular_rq_factor_multiplier = 0.9,
-      candidate_spot_count = 22,
     }
   ),
   basic_resource(
@@ -497,11 +449,7 @@ data:extend({
     },
     {
       base_density = 1,
-      base_spots_per_km2 = 0.13,
       has_starting_area_placement = false,
-      regular_blob_amplitude_multiplier = 1,
-      regular_rq_factor_multiplier = 0.9,
-      candidate_spot_count = 22,
     }
   ),
   basic_resource(
@@ -515,12 +463,8 @@ data:extend({
       mining_visualisation_tint = {r=0.1, g=0.9, b=0.7, a=1.0},
     },
     {
-      base_density = 10,
-      base_spots_per_km2 = 0.1,
+      base_density = 8,
       has_starting_area_placement = true,
-      regular_rq_factor_multiplier = 1.10,
-      starting_rq_factor_multiplier = 1.5,
-      candidate_spot_count = 22,
     }
   ),
   basic_resource(
@@ -529,17 +473,13 @@ data:extend({
       icon = "__Spaghetorio__/graphics/icons/titanium-ore-1.png",
       stages_filename = "__Spaghetorio__/graphics/resource/titanium-ore-patches.png",
       order = "m",
-      mining_time = 1,
+      mining_time = 2,
       map_color = {r=0.4, g=0.3, b=0.3},
       mining_visualisation_tint = {r=0.6, g=0.45, b=0.45, a=1.0},
     },
     {
-      base_density = 8,
-      base_spots_per_km2 = 0.39,
+      base_density = 4.5,
       has_starting_area_placement = false,
-      regular_blob_amplitude_multiplier = 1,
-      regular_rq_factor_multiplier = 0.9,
-      candidate_spot_count = 22,
     }
   ),
   basic_resource(
@@ -548,17 +488,13 @@ data:extend({
       icon = "__Spaghetorio__/graphics/icons/vanadium-ore-1.png",
       stages_filename = "__Spaghetorio__/graphics/resource/vanadium-ore-patches.png",
       order = "o",
-      mining_time = 1,
+      mining_time = 2,
       map_color = {r=1.0, g=0.3, b=0.3},
       mining_visualisation_tint = {r=1.0, g=0.3, b=0.3, a=1.0},
     },
     {
-      base_density = 2,
-      base_spots_per_km2 = 0.2,
+      base_density = 1.2,
       has_starting_area_placement = false,
-      regular_blob_amplitude_multiplier = 1,
-      regular_rq_factor_multiplier = 0.9,
-      candidate_spot_count = 22,
     }
   ),
   basic_resource(
@@ -572,12 +508,8 @@ data:extend({
       mining_visualisation_tint = {r=0, g=0.25, b=1, a=1.0},
     },
     {
-      base_density = 8.5,
-      base_spots_per_km2 = 0.42,
+      base_density = 2.5,
       has_starting_area_placement = false,
-      regular_blob_amplitude_multiplier = 1,
-      regular_rq_factor_multiplier = 0.9,
-      candidate_spot_count = 22,
     }
   ),
   basic_resource(
@@ -586,17 +518,13 @@ data:extend({
       icon = "__Spaghetorio__/graphics/icons/zirconium-ore-1.png",
       stages_filename = "__Spaghetorio__/graphics/resource/zirconium-ore-patches.png",
       order = "h",
-      mining_time = 1,
+      mining_time = 1.5,
       map_color = {r=0.8, g=0.65, b=0},
       mining_visualisation_tint = {r=0.8, g=0.65, b=0, a=1.0},
     },
     {
-      base_density = 5,
-      base_spots_per_km2 = 0.38,
+      base_density = 2.25,
       has_starting_area_placement = false,
-      regular_blob_amplitude_multiplier = 1,
-      regular_rq_factor_multiplier = 0.9,
-      candidate_spot_count = 22,
     }
   ),
 
@@ -611,12 +539,7 @@ data:extend({
       map_color = {r=0.0, g=0.1, b=0.6},
     },
     {
-      base_density = 40,
-      base_spots_per_km = 0.5,
-      random_probability = 1 / 48,
-      additional_richness = 2000000,
-      has_starting_area_placement = false,
-      regular_rq_factor_multiplier = 1,
+      base_spots_per_km2 = 0.1,
     }
   ),
   fluid_resource(
@@ -629,12 +552,7 @@ data:extend({
       map_color = {r=1, g=1, b=0.6},
     },
     {
-      base_density = 40,
-      base_spots_per_km = 0.5,
-      random_probability = 1 / 48,
-      additional_richness = 2000000,
-      has_starting_area_placement = false,
-      regular_rq_factor_multiplier = 1,
+      base_spots_per_km2 = 0.08,
     }
   ),
 

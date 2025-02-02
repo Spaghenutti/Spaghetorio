@@ -31,9 +31,11 @@ data.extend({
   noise_expression("sp-mercury-ore", "resource"),
   noise_expression("sp-molybdenum-ore", "resource"),
   noise_expression("sp-nickel-ore", "resource"),
+  noise_expression("sp-potassium-ore", "resource"),
   noise_expression("sp-stibnite", "resource"),
   noise_expression("sp-tinstone", "resource"),
   noise_expression("sp-titanium-ore", "resource"),
+  noise_expression("sp-vanadium-ore", "resource"),
   noise_expression("sp-zinc-ore", "resource"),
   noise_expression("sp-zirconium-ore", "resource"),
 
@@ -51,18 +53,31 @@ data.extend({
 
 
 terrain.mask_off_ammonia_ocean("sp-aluminum-ore", "resource")
+terrain.mask_off_ammonia_ocean("sp-barium-ore", "resource")
+terrain.mask_off_ammonia_ocean("sp-boron-ore", "resource")
 terrain.mask_off_ammonia_ocean("sp-chromite", "resource")
 terrain.mask_off_ammonia_ocean("sp-cobalt-ore", "resource")
 terrain.mask_off_ammonia_ocean("sp-barium-ore", "resource")
-terrain.mask_off_ammonia_ocean("sp-mercury-ore", "resource")
 terrain.mask_off_ammonia_ocean("sp-magnesium-ore", "resource")
+terrain.mask_off_ammonia_ocean("sp-manganese-ore", "resource")
+terrain.mask_off_ammonia_ocean("sp-mercury-ore", "resource")
+terrain.mask_off_ammonia_ocean("sp-molybdenum-ore", "resource")
 terrain.mask_off_ammonia_ocean("sp-nickel-ore", "resource")
+terrain.mask_off_ammonia_ocean("sp-potassium-ore", "resource")
+terrain.mask_off_ammonia_ocean("sp-stibnite", "resource")
 terrain.mask_off_ammonia_ocean("sp-tinstone", "resource")
 terrain.mask_off_ammonia_ocean("sp-titanium-ore", "resource")
+terrain.mask_off_ammonia_ocean("sp-vanadium-ore", "resource")
 terrain.mask_off_ammonia_ocean("sp-zinc-ore", "resource")
 terrain.mask_off_ammonia_ocean("sp-zirconium-ore", "resource")
 
+terrain.mask_off_ammonia_ocean("sp-iodine-brine", "resource")
+terrain.mask_off_ammonia_ocean("sp-mineral-water", "resource")
+
+terrain.mask_off_ammonia_ocean("sp-core-rift", "resource")
+
 terrain.mask_off_ammonia_ocean("sp-blunagium", "resource")
 terrain.mask_off_ammonia_ocean("sp-grobgnum", "resource")
+terrain.mask_off_ammonia_ocean("sp-imersite", "resource")
 terrain.mask_off_ammonia_ocean("sp-rukite", "resource")
 terrain.mask_off_ammonia_ocean("sp-yemnuth", "resource")

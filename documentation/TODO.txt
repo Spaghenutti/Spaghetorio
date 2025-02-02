@@ -82,7 +82,7 @@ Factorio Space age
       + potassium-chloride + water -> potassium-hydroxade (electrolysis)
       + hydrogen-cyanide + potassium-hydroxade -> potassium-cyanide (KCN): Used in gold mining, electroplating, and as a reagent in chemical synthesis.
 
-    - core-rift
+    + core-rift
 
   - Add Krastorio matter conversion recipes
   + Add mineral water
@@ -95,9 +95,10 @@ Factorio Space age
       - dummy technology
   - Update groups
     - add new biological group
-    - separate base-products group into base-products and base-materials
+    - separate base-products group into base-prwdoducts and base-materials
     - update subgroups
     - update orders
+  - fix resolution of potassium-ore, vanadium-ore and manganese-ore patches sprites
   - Add remaining hurricane buildings
   + remove catalyst items, recipes and technologies
   - remove all factorio alternative recipe chains for processing liquids on different planets
