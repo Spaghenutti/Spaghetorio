@@ -5,14 +5,14 @@ local item_util = require("util.item")
 local data_util = {}
 
 function data_util.change_recipe_ingredients(name, ingredients, energy_required)
-  local updated_ingredients = {}
-  for _, ingredient in pairs(ingredients) do
-    if ingredient.type == nil then
-      table.insert(updated_ingredients, item_util.extend_dictionary(ingredient))
-    end
-  end
+  -- local updated_ingredients = {}
+  -- for _, ingredient in pairs(ingredients) do
+  --   if ingredient.type == nil then
+  --     table.insert(updated_ingredients, item_util.extend_dictionary(ingredient))
+  --   end
+  -- end
 
-  data.raw.recipe[name].ingredients = updated_ingredients
+  data.raw.recipe[name].ingredients = ingredients
   if not (energy_required == nil) then
     data.raw.recipe[name].energy_required = energy_required
   end

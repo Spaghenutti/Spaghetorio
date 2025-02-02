@@ -18,6 +18,9 @@ data.raw.recipe["casting-pipe"].subgroup = "casting-mechanical-component"
 data.raw.recipe["casting-pipe-to-ground"].subgroup = "casting-mechanical-component"
 data.raw.recipe["concrete-from-molten-iron"].subgroup = "casting-mechanical-component"
 
+-- MARK: Fix order... agane...
+data.raw["autoplace-control"]["sulfuric_acid_geyser"].order = "c[sulfuric-acid-geyser]"
+
 
 data.raw.lab["biolab"].inputs = {
   "basic-tech-card",

@@ -79,7 +79,7 @@ require("prototypes.resource.resource")
 require("prototypes.category")
 require("prototypes.equipment")
 require("prototypes.fluid")
-require("prototypes.map-gen-presets")
+-- require("prototypes.map-gen-presets") maybe activate this thing after first playthrough
 require("prototypes.item")
 require("prototypes.item-groups")
 -- require("prototypes.noise-layer")

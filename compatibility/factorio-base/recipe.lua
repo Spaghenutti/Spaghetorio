@@ -866,7 +866,7 @@ util.recipe.change_recipe_ingredients("explosive-cannon-shell",
     {type = "item", name = "steel-plate", amount = 2},
     {type = "item", name = "sp-tungsten-powder", amount = 2},
     {type = "item", name = "sp-vacuum-tube", amount = 1},
-    {type = "fluid", name = "sp-sodium-hydroxide", amount = "10"}
+    {type = "fluid", name = "sp-sodium-hydroxide", amount = 10}
   },
   10)
 

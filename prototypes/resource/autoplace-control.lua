@@ -139,18 +139,18 @@ data:extend({
   -- MARK: Fluid resource
   {
     type = "autoplace-control",
-    name = "sp-iodine-brine",
+    name = "sp-iodine-brine",  -- #ForRegEx# - autoplace-control
     localised_name = {"", "[entity=sp-iodine-brine] ", {"entity-name.sp-iodine-brine"}},
     richness = true,
-    order = "a-[iodine-brine]",
+    order = "c[iodine-brine]",
     category = "resource"
   },
   {
     type = "autoplace-control",
-    name = "sp-mineral-water",
+    name = "sp-mineral-water",  -- #ForRegEx# - autoplace-control
     localised_name = {"", "[entity=sp-mineral-water] ", {"entity-name.sp-mineral-water"}},
     richness = true,
-    order = "a-[mineral-water]",
+    order = "c[mineral-water]",
     category = "resource"
   },
   -- MARK: Core resource
