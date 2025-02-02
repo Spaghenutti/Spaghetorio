@@ -103,4 +103,6 @@ require("compatibility.factorio-base.resource")
 require("compatibility.factorio-base.technology")
 
 -- space-age
+require("compatibility.space-age.entity")
 require("compatibility.space-age.order")
+require("compatibility.space-age.recipe")

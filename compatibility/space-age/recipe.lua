@@ -57,12 +57,12 @@ data:extend({
     enabled = false,
     energy_required = 2,
     ingredients = {
-      -- {type = "item", name = "lithium", amount = 3},
-      -- {type = "fluid", name = "sp-chlorine", amount = 10},
+      {type = "item", name = "lithium", amount = 3},
+      {type = "fluid", name = "sp-chlorine", amount = 10},
       {type = "fluid", name = "sp-propylene", amount = 10}
     },
     results = {
-      {type = "fluid", name = "sp-electrolyte", amount = 10}
+      {type = "fluid", name = "electrolyte", amount = 10}
     },
     crafting_machine_tint = {
       primary = {r = 0.0, g = 0.0, b = 0.4, a = 1.000},
@@ -121,5 +121,5 @@ data:extend({
       tertiary = {r = 0.0, g = 0.0, b = 0.0, a = 1.000},
       quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
     }
-  },
+  }
 })
