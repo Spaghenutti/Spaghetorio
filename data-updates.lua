@@ -33,4 +33,5 @@ require("compatibility.EverythingOnNauvis.resource-updates")
 
 require("compatibility.factorio-base.data-updates")
 
+require("compatibility.space-age.entity")  -- some lua scripts require to keep the subgroup of recipe
 require("compatibility.space-age.data-updates")

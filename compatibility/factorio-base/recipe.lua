@@ -109,7 +109,7 @@ util.recipe.change_recipe_ingredients("low-density-structure",
   {
     {type = "item", name = "sp-titanium-frame", amount = 1},
     {type = "item", name = "sp-composites", amount = 2},
-    {type = "item", name = "sp-carbon-fiber", amount = 5}
+    {type = "item", name = "carbon-fiber", amount = 5}
   },
   16)
 

@@ -5,8 +5,9 @@ data.raw.item["steel-plate"].icon = "__Spaghetorio__/graphics/krastorio/icons/it
 
 -- MARK: Change item subgroups
 data.raw.item["sulfur"].subgroup = "processed-resource"
-data.raw.item["uranium-238"].subgroup = "processed-resource"
-data.raw.item["uranium-235"].subgroup = "processed-resource"
+
+data.raw.item["uranium-238"].subgroup = "radioactive-resource"
+data.raw.item["uranium-235"].subgroup = "radioactive-resource"
 
 data.raw.item["low-density-structure"].subgroup = "advanced-raw-material"
 
@@ -57,8 +58,9 @@ data.raw.item["copper-cable"].stack_size = 400
 data.raw.item["chemical-plant"].stack_size = 50
 
 -- MARK: change recipe subgroups
-data.raw.recipe["uranium-processing"].subgroup = "processed-resource"
-data.raw.recipe["kovarex-enrichment-process"].subgroup = "processed-resource"
+data.raw.recipe["nuclear-fuel-reprocessing"].subgroup = "radioactive-resource"
+data.raw.recipe["uranium-processing"].subgroup = "radioactive-resource"
+data.raw.recipe["kovarex-enrichment-process"].subgroup = "radioactive-resource"
 
 -- MARK: Changes to rocket silo
 data.raw["rocket-silo"]["rocket-silo"].rocket_parts_required = 1

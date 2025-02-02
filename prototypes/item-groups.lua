@@ -7,113 +7,144 @@ data:extend({
   ------------------------------------------------------------------------------
   {
     type = "item-group",
-    name = "base-products",
+    name = "base-resources",
     order = "a",
-    icons =  util.icon.combine_three_icons("__base__/graphics/icons/coal.png", 64, nil, "__base__/graphics/icons/copper-plate.png", 64, nil, "__Spaghetorio__/graphics/icons/zircon.png", 64, nil),
+    icons =  util.icon.combine_three_icons("__base__/graphics/icons/iron-ore.png", 64, nil,
+                                           "__Spaghetorio__/graphics/icons/core-fragment-2.png", 64, nil,
+                                           "__Spaghetorio__/graphics/icons/zircon.png", 64, nil),
     icon_size = 64,
   },
-  -- move raw-resources to new item group base-products
   {
     type = "item-subgroup",
     name = "raw-resource",
-    group = "base-products",
+    group = "base-resources",
     order = "a"
   },
   {
     type = "item-subgroup",
+    name = "casting-raw-resource",
+    group = "base-resources",
+    order = "a-b-casting"
+  },
+  {
+    type = "item-subgroup",
     name = "enriched-resource-from-acrocrystal",
-    group = "base-products",
+    group = "base-resources",
     order = "a-z-acrocrystal"
   },
   {
     type = "item-subgroup",
     name = "crushed-resource",
-    group = "base-products",
+    group = "base-resources",
     order = "b"
   },
   {
     type = "item-subgroup",
     name = "crushed-resource-recipe",
-    group = "base-products",
+    group = "base-resources",
     order = "b-recipe"
   },
   {
     type = "item-subgroup",
     name = "enriched-resource",
-    group = "base-products",
+    group = "base-resources",
     order = "c"
   },
   {
     type = "item-subgroup",
     name = "enriched-resource-recipe",  -- Corresponds to category "enriching-raw-resource"
-    group = "base-products",
+    group = "base-resources",
     order = "c-b"
   },
   {
     type = "item-subgroup",
     name = "enriched-crushed-resource-recipe",  -- Corresponds to category "enriching-crushed-resource"
-    group = "base-products",
+    group = "base-resources",
     order = "c-c"
   },
   {
     type = "item-subgroup",
     name = "raw-resource-from-acromatter",
-    group = "base-products",
+    group = "base-resources",
     order = "c-z-acromatter"
   },
   {
     type = "item-subgroup",
     name = "processed-resource",
-    group = "base-products",
+    group = "base-resources",
     order = "d"
   },
   {
     type = "item-subgroup",
     name = "processed-resource-from-acrovoid",
-    group = "base-products",
+    group = "base-resources",
     order = "d-z-acrovoid"
   },
-  -- move raw-resources to new item group base-products
   {
     type = "item-subgroup",
-    name = "raw-material",
-    group = "base-products",
+    name = "radioactive-resource",
+    group = "base-resources",
     order = "e"
   },
   {
     type = "item-subgroup",
-    name = "chemical-product",
-    group = "base-products",
+    name = "alien-processed-resource",
+    group = "base-resources",
     order = "f"
+  },
+  ------------------------------------------------------------------------------
+  -- MARK: base-materials
+  -- New group base-products in first place
+  ------------------------------------------------------------------------------
+  {
+    type = "item-group",
+    name = "base-materials",
+    order = "b",
+    icons =  util.icon.combine_three_icons("__base__/graphics/icons/iron-plate.png", 64, nil,
+                                           "__Spaghetorio__/graphics/icons/lead-molybdate.png", 64, nil,
+                                           "__Spaghetorio__/graphics/icons/copper-antimony.png", 64, nil),
+    icon_size = 64,
+  },
+  {
+    type = "item-subgroup",
+    name = "raw-material",
+    group = "base-materials",
+    order = "e"
+  },
+  {
+    type = "item-subgroup",
+    name = "casting-raw-material",
+    group = "base-materials",
+    order = "e-b-casting"
   },
   {
     type = "item-subgroup",
     name = "alloy",
-    group = "base-products",
+    group = "base-materials",
+    order = "f"
+  },
+  {
+    type = "item-subgroup",
+    name = "chemical-product",
+    group = "base-materials",
     order = "g"
   },
   {
     type = "item-subgroup",
     name = "advanced-raw-material",
-    group = "base-products",
+    group = "base-materials",
     order = "h"
   },
   {
     type = "item-subgroup",
-    name = "alien-material",
-    group = "base-products",
-    order = "i"
-  },
-  {
-    type = "item-subgroup",
     name = "alien-compound",
-    group = "base-products",
+    group = "base-materials",
     order = "j"
   },
   {
     type = "item-subgroup",
     name = "sp-acroproduct",
-    group = "base-products",
+    group = "base-materials",
     order = "k"
   },
   ------------------------------------------------------------------------------
@@ -123,11 +154,12 @@ data:extend({
   {
     type = "item-group",
     name = "intermediate-products",
-    order = "b",
+    order = "c",
     order_in_recipe = "0",
-    icon = "__base__/graphics/item-group/intermediate-products.png",
-    icon_size = 128,
-    icon_mipmaps = 2
+    icons =  util.icon.combine_three_icons("__base__/graphics/icons/copper-cable.png", 64, nil,
+                                           "__Spaghetorio__/graphics/icons/heavy-gearbox.png", 64, nil,
+                                           "__Spaghetorio__/graphics/icons/processor.png", 64, nil),
+    icon_size = 64,
   },
   -- mechanical-component are used where a force is applied
   {
@@ -135,6 +167,12 @@ data:extend({
     name = "mechanical-component",
     group = "intermediate-products",
     order = "d"
+  },
+  {
+    type = "item-subgroup",
+    name = "casting-mechanical-component",
+    group = "intermediate-products",
+    order = "d-b"
   },
   -- electronic-optical-component are used where no force is applied
   {
@@ -272,7 +310,7 @@ data:extend({
   {
     type = "item-subgroup",
     name = "sp-crushing-acrosphere-corrupted",
-    group = "base-products",
+    group = "base-resources",
     order = "i-crushing"
   },
   ------------------------------------------------------------------------------

@@ -2660,7 +2660,7 @@ data:extend({
     {
       {
         type = "unlock-recipe",
-        recipe = "sp-carbon-fiber"
+        recipe = "carbon-fiber"
       },
       {
         type = "unlock-recipe",

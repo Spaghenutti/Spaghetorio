@@ -1173,7 +1173,7 @@ data:extend({
       {size = 64, filename = "__Spaghetorio__/graphics/icons/plutonium-239-3.png", scale = 0.5, mipmap_count = 4},
       {size = 64, filename = "__Spaghetorio__/graphics/icons/plutonium-239-4.png", scale = 0.5, mipmap_count = 4}
     },
-    subgroup = "processed-resource",
+    subgroup = "radioactive-resource",
     order = "z-nuclear-3-[plutonium-239]",
     stack_size = 50
   },
@@ -1189,7 +1189,7 @@ data:extend({
       {size = 64, filename = "__Spaghetorio__/graphics/icons/plutonium-240-3.png", scale = 0.5, mipmap_count = 4},
       {size = 64, filename = "__Spaghetorio__/graphics/icons/plutonium-240-4.png", scale = 0.5, mipmap_count = 4}
     },
-    subgroup = "processed-resource",
+    subgroup = "radioactive-resource",
     order = "z-nuclear-3-[plutonium-240]",
     stack_size = 50
   },
@@ -1377,42 +1377,12 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-vanadyl-sulfate",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/icons/vanadyl-sulfate.png",
-    icon_size = 64,
-    scale = 0.5,
-    subgroup = "processed-resource",
-    order = "[vanadyl-sulfate]",
-    stack_size = 200
-  },
-  {
-    type = "item",
     name = "sp-potassium-chloride",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/potassium-chloride.png",
     icon_size = 64,
     scale = 0.5,
     subgroup = "processed-resource",
     order = "[potassium-chloride]",
-    stack_size = 200
-  },
-  {
-    type = "item",
-    name = "sp-potassium-hydroxade",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/icons/potassium-hydroxade.png",
-    icon_size = 64,
-    scale = 0.5,
-    subgroup = "processed-resource",
-    order = "[potassium-hydroxade]",
-    stack_size = 200
-  },
-  {
-    type = "item",
-    name = "sp-potassium-cyanide",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/icons/potassium-cyanide.png",
-    icon_size = 64,
-    scale = 0.5,
-    subgroup = "processed-resource",
-    order = "[potassium-cyanide]",
     stack_size = 200
   },
   {
@@ -2080,16 +2050,6 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-carbon-fiber",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/icons/carbon-fiber.png",
-    icon_size = 64,
-    scale = 0.5,
-    subgroup = "advanced-raw-material",
-    order = "carbon-[carbon-fiber]",
-    stack_size = 100
-  },
-  {
-    type = "item",
     name = "sp-boron-carbide",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/boron-carbide.png",
     icon_size = 64,
@@ -2167,7 +2127,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/rukite-powder.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "alien-material",
+    subgroup = "alien-processed-resource",
     order = "rukite-[rukite-powder]",
     stack_size = 100
   },
@@ -2177,7 +2137,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/rukite-bar.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "alien-material",
+    subgroup = "alien-processed-resource",
     order = "rukite-[rukite-bar]",
     stack_size = 100
   },
@@ -2187,7 +2147,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/yemnuth-shard.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "alien-material",
+    subgroup = "alien-processed-resource",
     order = "yemnuth-[yemnuth-shard]",
     stack_size = 100
   },
@@ -2197,7 +2157,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/yemnuth-pearls.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "alien-material",
+    subgroup = "alien-processed-resource",
     order = "yemnuth-[yemnuth-pearl]",
     stack_size = 100
   },
@@ -2207,7 +2167,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/plasma-crystal.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "alien-material",
+    subgroup = "alien-processed-resource",
     order = "yemnuth-[plasma-crystal]",
     stack_size = 100
   },
@@ -2217,7 +2177,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/gravitonium.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "alien-material",
+    subgroup = "alien-processed-resource",
     order = "yemnuth-z-[gravitonium]",
     stack_size = 100
   },
@@ -2227,7 +2187,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/blunagium-foam.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "alien-material",
+    subgroup = "alien-processed-resource",
     order = "blunagium-[blunagium-foam]",
     stack_size = 100
   },
@@ -2237,7 +2197,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/blunagium-stone.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "alien-material",
+    subgroup = "alien-processed-resource",
     order = "blunagium-[blunagium-stone]",
     stack_size = 100
   },
@@ -2247,7 +2207,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/blunagium-basalt.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "alien-material",
+    subgroup = "alien-processed-resource",
     order = "blunagium-[blunagium-basalt]",
     stack_size = 100
   },
@@ -2257,7 +2217,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/blunagium-bar.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "alien-material",
+    subgroup = "alien-processed-resource",
     order = "blunagium-[blunagium-bar]",
     stack_size = 100
   },
@@ -2267,7 +2227,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/quantum-foam.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "alien-material",
+    subgroup = "alien-processed-resource",
     order = "blunagium-[quantum-foam]",
     stack_size = 100
   },
@@ -2277,7 +2237,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/quantum-crystal.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "alien-material",
+    subgroup = "alien-processed-resource",
     order = "blunagium-[quantum-crystal]",
     stack_size = 100
   },
@@ -2287,7 +2247,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/fermium-condensate.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "alien-material",
+    subgroup = "alien-processed-resource",
     order = "blunagium-[fermium-condensate]",
     stack_size = 100
   },
@@ -2297,7 +2257,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/grobgnum-cube.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "alien-material",
+    subgroup = "alien-processed-resource",
     order = "grobgnum-[grobgnum-cube]",
     stack_size = 100
   },
@@ -2307,7 +2267,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/grobgnum-shard.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "alien-material",
+    subgroup = "alien-processed-resource",
     order = "grobgnum-[grobgnum-shard]",
     stack_size = 100
   },
@@ -2317,7 +2277,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/grobgnum-droplet.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "alien-material",
+    subgroup = "alien-processed-resource",
     order = "grobgnum-[grobgnum-droplet]",
     stack_size = 100
   },
@@ -2327,7 +2287,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/grobgnum-bar.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "alien-material",
+    subgroup = "alien-processed-resource",
     order = "grobgnum-[grobgnum-bar]",
     stack_size = 100
   },
@@ -2439,7 +2399,7 @@ data:extend({
         },
       },
     },
-    subgroup = "alien-material",
+    subgroup = "alien-processed-resource",
     order = "imersite-[imersite-crystal]",
     stack_size = 50,
   },
@@ -3806,6 +3766,36 @@ data:extend({
     subgroup = "chemical-product",
     order = "[manganese-chloride]",
     stack_size = 100
+  },
+  {
+    type = "item",
+    name = "sp-vanadyl-sulfate",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/vanadyl-sulfate.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "chemical-product",
+    order = "[vanadyl-sulfate]",
+    stack_size = 200
+  },
+  {
+    type = "item",
+    name = "sp-potassium-hydroxade",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/potassium-hydroxade.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "chemical-product",
+    order = "[potassium-hydroxade]",
+    stack_size = 200
+  },
+  {
+    type = "item",
+    name = "sp-potassium-cyanide",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/potassium-cyanide.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "chemical-product",
+    order = "[potassium-cyanide]",
+    stack_size = 200
   },
   ------------------------------------------------------------------------------
   -- MARK: alien-product

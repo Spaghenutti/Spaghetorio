@@ -41,7 +41,6 @@ local util = require("data-util")
 --    - "sp-duralumin"
 --    - "sp-niobium-steel"
 --    - "sp-niobium-tin"
---    - "sp-carbon-fiber"
 --    - "sp-carbon-nanotubes"
 --    - "sp-graphene"
 --    - "sp-diamond"
@@ -1951,6 +1950,24 @@ data:extend({
       {type = "item", name = "sp-vanadium-plate", amount = 1}
     }
   },
+  {
+    type = "recipe",
+    name = "sp-boron-pillet",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/icons/boron-pillet.png",
+    icon_size = 64,
+    category = "metallurgy",
+    subgroup = "raw-material",
+    enabled = false,
+    energy_required = 6,
+    ingredients = {
+      {type = "item", name = "sp-sodium-borate", amount = 4},
+      {type = "fluid", name = "sp-chlorine", amount = 5},
+    },
+    results = {
+      {type = "item", name = "sp-boron-pillet", amount = 3},
+      {type = "item", name = "sp-salt", amount = 1}
+    }
+  },
   ------------------------------------------------------------------------------
   -- MARK: sp-kr-fluid-filtration
   ------------------------------------------------------------------------------
@@ -2861,30 +2878,6 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-boron-pillet",  -- #ForRegEx# - recipe
-    icon = "__Spaghetorio__/graphics/icons/boron-pillet.png",
-    icon_size = 64,
-    category = "chemistry",
-    subgroup = "chemical-product",
-    enabled = false,
-    energy_required = 6,
-    ingredients = {
-      {type = "item", name = "sp-sodium-borate", amount = 4},
-      {type = "fluid", name = "sp-chlorine", amount = 5},
-    },
-    results = {
-      {type = "item", name = "sp-boron-pillet", amount = 3},
-      {type = "item", name = "sp-salt", amount = 1}
-    },
-    -- crafting_machine_tint = {
-    --   primary = {r = 0.2, g = 0.1, b = 0.1, a = 1.000},
-    --   secondary = {r = 0.2, g = 0.0, b = 0.1, a = 1.000},
-    --   tertiary = {r = 0.2, g = 0.1, b = 0.0, a = 1.000},
-    --   quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000}
-    -- }
-  },
-  {
-    type = "recipe",
     name = "sp-cobalt-sulfate",  -- #ForRegEx# - recipe
     category = "chemistry",
     enabled = false,
@@ -3736,7 +3729,7 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "crushing",
-    subgroup = "processed-resource",
+    subgroup = "radioactive-resource",
     enabled = false,
     energy_required = 20,
     ingredients = {
@@ -5037,7 +5030,7 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "crafting",
-    subgroup = "alien-material",
+    subgroup = "alien-processed-resource",
     enabled = false,
     energy_required = 3.6,
     ingredients = {
@@ -6088,7 +6081,7 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "crafting",
-    subgroup = "alien-material",
+    subgroup = "alien-processed-resource",
     enabled = false,
     energy_required = 4,
     ingredients = {
@@ -6201,7 +6194,7 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "crafting",
-    subgroup = "alien-material",
+    subgroup = "alien-processed-resource",
     enabled = false,
     energy_required = 4,
     ingredients = {
@@ -6403,7 +6396,7 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "crafting-with-fluid",
-    subgroup = "alien-material",
+    subgroup = "alien-processed-resource",
     enabled = false,
     energy_required = 8,
     ingredients = {
@@ -11313,7 +11306,7 @@ data:extend({
     enabled = false,
     energy_required = 4.8,
     ingredients = {
-      {type = "item", name = "sp-carbon-fiber", amount = 3},
+      {type = "item", name = "carbon-fiber", amount = 3},
       {type = "fluid", name = "sp-nitrogen", amount = 15}
     },
     results = {
@@ -11559,7 +11552,7 @@ data:extend({
     icon_size = 64,
     scale = 0.25,
     category = "high-energy-physics",
-    subgroup = "processed-resource",
+    subgroup = "radioactive-resource",
     enabled = false,
     energy_required = 3.2,
     ingredients = {
@@ -11580,7 +11573,7 @@ data:extend({
     icon_size = 64,
     scale = 0.25,
     category = "high-energy-physics",
-    subgroup = "processed-resource",
+    subgroup = "radioactive-resource",
     enabled = false,
     energy_required = 4,
     ingredients = {
@@ -11602,7 +11595,7 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "chemistry",
-    subgroup = "processed-resource",
+    subgroup = "radioactive-resource",
     enabled = false,
     hide_from_player_crafting = true,
     energy_required = 60,
@@ -11632,7 +11625,7 @@ data:extend({
     icon_size = 256,
     scale = 0.25,
     category = "chemistry",
-    subgroup = "processed-resource",
+    subgroup = "radioactive-resource",
     enabled = false,
     energy_required = 80,
     hide_from_player_crafting = true,
@@ -11698,28 +11691,6 @@ data:extend({
       primary = {r = 1.000, g = 1.000, b = 1.000, a = 1.000},
       secondary = {r = 0.771, g = 0.771, b = 0.771, a = 1.000},
       tertiary = {r = 0.768, g = 0.665, b = 0.762, a = 1.000},
-      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-carbon-fiber",  -- #ForRegEx# - recipe
-    category = "chemistry",
-    enabled = false,
-    energy_required = 3.2,
-    ingredients = {
-      {type = "item", name = "plastic-bar", amount = 1},
-      {type = "item", name = "carbon", amount = 4},
-      {type = "fluid", name = "sp-epoxy", amount = 5},
-      {type = "fluid", name = "sp-nitric-acid", amount = 50}
-    },
-    results = {
-      {type = "item", name = "sp-carbon-fiber", amount = 1}
-    },
-    crafting_machine_tint = {
-      primary = {r = 0.8, g = 0.8, b = 0.8, a = 1.000},
-      secondary = {r = 0.2, g = 0.2, b = 0.2, a = 1.000},
-      tertiary = {r = 0.0, g = 0.0, b = 0.0, a = 1.000},
       quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
     }
   },

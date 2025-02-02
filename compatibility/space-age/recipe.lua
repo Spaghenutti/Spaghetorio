@@ -100,4 +100,26 @@ data:extend({
       {type = "item", name = "lithium", amount = 2},
     }
   },
+  {
+    type = "recipe",
+    name = "carbon-fiber",  -- #ForRegEx# - recipe
+    category = "chemistry",
+    enabled = false,
+    energy_required = 3.2,
+    ingredients = {
+      {type = "item", name = "plastic-bar", amount = 1},
+      {type = "item", name = "carbon", amount = 4},
+      {type = "fluid", name = "sp-epoxy", amount = 5},
+      {type = "fluid", name = "sp-nitric-acid", amount = 50}
+    },
+    results = {
+      {type = "item", name = "carbon-fiber", amount = 1}
+    },
+    crafting_machine_tint = {
+      primary = {r = 0.8, g = 0.8, b = 0.8, a = 1.000},
+      secondary = {r = 0.2, g = 0.2, b = 0.2, a = 1.000},
+      tertiary = {r = 0.0, g = 0.0, b = 0.0, a = 1.000},
+      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
+    }
+  },
 })

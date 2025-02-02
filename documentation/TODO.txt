@@ -87,10 +87,10 @@ Factorio Space age
   - Add Krastorio matter conversion recipes
   + Add mineral water
   + Add imersite
-  - Add ores for core extractor
+  + Add ores for core extractor
     - ...
     - add core extractor
-      - building
+      + building
       - dummy recipe
       - dummy technology
   - Update groups
