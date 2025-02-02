@@ -64,23 +64,23 @@ Factorio Space age
       + lithium-brine + water -> lithium-oxide
       + lithium-oxide + hydrogen-chloride -> lithium-chloride + water
       + lithium-chloride + sodium-hydroxide -> lithium
-    - vanadium
-      - vanadium-ore -> vanadium-pentoxide: sed as a catalyst in the production of sulfuric acid and in the manufacturing of ceramics and glass.
-      - sodium-carbonate + vanadium-pentoxide -> vanadium-bearing-solution
-      - vanadium-bearing-solution -> ammonium-metavanadate (NH4VO3): Used in the preparation of other vanadium compounds and as a catalyst in organic synthesis.
-      - ammonium-metavanadate + sodium-hydroxide -> vanadium-plate
-      - vanadium-plate + sulfuric-acid = vanadyl-sulfate (VOSO4): Used in dietary supplements and as a catalyst in chemical reactions
-      - titanium-aluminum-vanadium (Ti-6Al-4V): used in aerospace
-      - vanadium-aluminum (V-Al): used in aerospace
-      - vanadium-steel: used in high-speed machinery
-    - potassium
-      - potassium-ore (sylvite (KCl) and carnallite (KMgCl3·6H2O)) + magnesium-chloride -> potassium-chloride (Used in fertilizers, as a salt substitute in food, and in medical treatments for potassium deficiency.)
-      - potassium-chloride -> potassium-ingot
-      - potassium-ingot + manganese-ingot + 100 water -> potassium-permanganate-solution (KMnO4): Used as a disinfectant, water treatment chemical, and in organic synthesis.
-      - potassium-ingot + chromium-plate + 75 water -> potassium-dichromate-solution (K2Cr2O7): Used in tanning leather, as a corrosion inhibitor, and in the production of pigments.
-      - ammonia + carbon -> hydrogen-cyanide
-      - potassium-chloride + water -> potassium-hydroxade (electrolysis)
-      - hydrogen-cyanide + potassium-hydroxade -> potassium-cyanide (KCN): Used in gold mining, electroplating, and as a reagent in chemical synthesis.
+    + vanadium
+      + vanadium-ore -> vanadium-pentoxide: used as a catalyst in the production of sulfuric acid and in the manufacturing of ceramics and glass.
+      + sodium-carbonate + vanadium-pentoxide + water -> vanadium-bearing-solution
+      + vanadium-bearing-solution -> ammonium-metavanadate (NH4VO3): Used in the preparation of other vanadium compounds and as a catalyst in organic synthesis.
+      + ammonium-metavanadate + sodium-hydroxide -> vanadium-plate
+      + vanadium-plate + sulfuric-acid = vanadyl-sulfate (VOSO4): Used in dietary supplements and as a catalyst in chemical reactions
+      + titanium-aluminum-vanadium (Ti-6Al-4V): used in aerospace
+      + vanadium-aluminum (V-Al): used in aerospace
+      + vanadium-steel: used in high-speed machinery
+    + potassium
+      + potassium-ore (sylvite (KCl) and carnallite (KMgCl3·6H2O)) + magnesium-chloride -> potassium-chloride (Used in fertilizers, as a salt substitute in food, and in medical treatments for potassium deficiency.)
+      + potassium-chloride -> potassium-ingot
+      + potassium-ingot + manganese-ingot + 100 water -> potassium-permanganate-solution (KMnO4): Used as a disinfectant, water treatment chemical, and in organic synthesis.
+      + potassium-ingot + chromium-plate + 75 water -> potassium-dichromate-solution (K2Cr2O7): Used in tanning leather, as a corrosion inhibitor, and in the production of pigments.
+      + ammonia + carbon -> hydrogen-cyanide
+      + potassium-chloride + water -> potassium-hydroxade (electrolysis)
+      + hydrogen-cyanide + potassium-hydroxade -> potassium-cyanide (KCN): Used in gold mining, electroplating, and as a reagent in chemical synthesis.
 
     - core-rift
 

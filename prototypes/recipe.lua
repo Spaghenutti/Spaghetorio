@@ -514,6 +514,32 @@ data:extend({
       {type = "item", name = "sp-manganese-dioxide", amount = 3}
     }
   },
+  {
+    type = "recipe",
+    name = "sp-vanadium-pentoxide",  -- #ForRegEx# - recipe
+    category = "smelting",
+    enabled = false,
+    energy_required = 8,
+    ingredients = {
+      {type = "item", name = "sp-vanadium-ore", amount = 5},
+    },
+    results = {
+      {type = "item", name = "sp-vanadium-pentoxide", amount = 2}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-potassium-ingot",  -- #ForRegEx# - recipe
+    category = "smelting",
+    enabled = false,
+    energy_required = 4,
+    ingredients = {
+      {type = "item", name = "sp-potassium-chloride", amount = 4},
+    },
+    results = {
+      {type = "item", name = "sp-potassium-ingot", amount = 3}
+    }
+  },
   ------------------------------------------------------------------------------
   -- MARK: crushed-smelting
   ------------------------------------------------------------------------------
@@ -1226,6 +1252,49 @@ data:extend({
       {type = "item", name = "sp-kovar", amount = 6}
     }
   },
+  {
+    type = "recipe",
+    name = "sp-titanium-aluminum-vanadium",  -- #ForRegEx# - recipe
+    category = "intermediate-smelting",
+    enabled = false,
+    energy_required = 16,
+    ingredients = {
+      {type = "item", name = "sp-titanium-ingot", amount = 1},
+      {type = "item", name = "sp-aluminum-sheet", amount = 10},
+      {type = "item", name = "sp-vanadium-plate", amount = 4},
+    },
+    results = {
+      {type = "item", name = "sp-titanium-aluminum-vanadium", amount = 6}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-vanadium-aluminum",  -- #ForRegEx# - recipe
+    category = "intermediate-smelting",
+    enabled = false,
+    energy_required = 14,
+    ingredients = {
+      {type = "item", name = "sp-aluminum-sheet", amount = 6},
+      {type = "item", name = "sp-vanadium-plate", amount = 5},
+    },
+    results = {
+      {type = "item", name = "sp-vanadium-aluminum", amount = 6}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-vanadium-steel",  -- #ForRegEx# - recipe
+    category = "intermediate-smelting",
+    enabled = false,
+    energy_required = 14,
+    ingredients = {
+      {type = "item", name = "steel-plate", amount = 10},
+      {type = "item", name = "sp-vanadium-plate", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-vanadium-steel", amount = 10}
+    }
+  },
   ------------------------------------------------------------------------------
   -- MARK: enriching-raw-resource
   ------------------------------------------------------------------------------
@@ -1863,6 +1932,23 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-zinc-plate", amount = 2}
+    }
+  },
+  ------------------------------------------------------------------------------
+  -- MARK: metallurgy
+  ------------------------------------------------------------------------------
+  {
+    type = "recipe",
+    name = "sp-vanadium-plate",  -- #ForRegEx# - recipe
+    category = "metallurgy",
+    enabled = false,
+    energy_required = 10,
+    ingredients = {
+      {type = "item", name = "sp-ammonium-metavanadate", amount = 2},
+      {type = "fluid", name = "sp-sodium-hydroxide", amount = 4}
+    },
+    results = {
+      {type = "item", name = "sp-vanadium-plate", amount = 1}
     }
   },
   ------------------------------------------------------------------------------
@@ -2817,21 +2903,38 @@ data:extend({
     --   quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000}
     -- }
   },
-  ------------------------------------------------------------------------------
-  -- MARK: sp-kr-fuel-refinery
-  ------------------------------------------------------------------------------
   {
     type = "recipe",
-    name = "sp-diborane",  -- #ForRegEx# - recipe
-    category = "sp-kr-fuel-refinery",
+    name = "sp-vanadium-bearing-solution",  -- #ForRegEx# - recipe
+    category = "chemistry",
     enabled = false,
-    energy_required = 5,
+    energy_required = 8,
     ingredients = {
-      {type = "item", name = "sp-sodium-borate", amount = 1},
+      {type = "item", name = "sp-sodium-carbonate", amount = 6},
+      {type = "item", name = "sp-vanadium-pentoxide", amount = 3},
       {type = "fluid", name = "water", amount = 20},
     },
     results = {
-      {type = "fluid", name = "sp-diborane", amount = 4},
+      {type = "fluid", name = "sp-vanadium-bearing-solution", amount = 20}
+    },
+    -- crafting_machine_tint = {
+    --   primary = {r = 0.2, g = 0.1, b = 0.1, a = 1.000},
+    --   secondary = {r = 0.2, g = 0.0, b = 0.1, a = 1.000},
+    --   tertiary = {r = 0.2, g = 0.1, b = 0.0, a = 1.000},
+    --   quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000}
+    -- }
+  },
+  {
+    type = "recipe",
+    name = "sp-ammonium-metavanadate",  -- #ForRegEx# - recipe
+    category = "chemistry",
+    enabled = false,
+    energy_required = 10,
+    ingredients = {
+      {type = "fluid", name = "sp-vanadium-bearing-solution", amount = 5}
+    },
+    results = {
+      {type = "item", name = "sp-ammonium-metavanadate", amount = 1}
     },
     -- crafting_machine_tint = {
     --   primary = {r = 0.2, g = 0.1, b = 0.1, a = 1.000},
@@ -2920,6 +3023,34 @@ data:extend({
       {type = "item", name = "sp-manganese-chloride", amount = 3}
     }
   },
+  {
+    type = "recipe",
+    name = "sp-potassium-chloride",  -- #ForRegEx# - recipe
+    category = "advanced-chemistry",
+    enabled = false,
+    energy_required = 3,
+    ingredients = {
+      {type = "item", name = "sp-potassium-ore", amount = 2},
+      {type = "item", name = "sp-magnesium-chloride", amount = 2},
+    },
+    results = {
+      {type = "item", name = "sp-potassium-chloride", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-potassium-cyanide",  -- #ForRegEx# - recipe
+    category = "advanced-chemistry",
+    enabled = false,
+    energy_required = 6,
+    ingredients = {
+      {type = "item", name = "sp-potassium-hydroxade", amount = 3},
+      {type = "fluid", name = "sp-hydrogen-cyanide", amount = 4},
+    },
+    results = {
+      {type = "item", name = "sp-potassium-cyanide", amount = 3}
+    }
+  },
   ------------------------------------------------------------------------------
   -- MARK: chemical-staging
   ------------------------------------------------------------------------------
@@ -2986,6 +3117,73 @@ data:extend({
     results = {
       {type = "item", name = "sp-sodium-molybdate", amount = 2}
     }
+  },
+  {
+    type = "recipe",
+    name = "sp-potassium-permanganate-solution",  -- #ForRegEx# - recipe
+    category = "chemical-staging",
+    enabled = false,
+    energy_required = 6,
+    ingredients = {
+      {type = "item", name = "sp-potassium-ingot", amount = 1},
+      {type = "item", name = "sp-manganese-ingot", amount = 1},
+      {type = "fluid", name = "water", amount = 200}
+    },
+    results = {
+      {type = "fluid", name = "sp-potassium-permanganate-solution", amount = 10}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-potassium-dichromate-solution",  -- #ForRegEx# - recipe
+    category = "chemical-staging",
+    enabled = false,
+    energy_required = 4,
+    ingredients = {
+      {type = "item", name = "sp-potassium-ingot", amount = 1},
+      {type = "item", name = "sp-chromium-plate", amount = 1},
+      {type = "fluid", name = "water", amount = 150}
+    },
+    results = {
+      {type = "fluid", name = "sp-potassium-dichromate-solution", amount = 10}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-hydrogen-cyanide",  -- #ForRegEx# - recipe
+    category = "chemical-staging",
+    enabled = false,
+    energy_required = 1,
+    ingredients = {
+      {type = "item", name = "carbon", amount = 2},
+      {type = "fluid", name = "ammonia", amount = 3}
+    },
+    results = {
+      {type = "fluid", name = "sp-hydrogen-cyanide", amount = 3}
+    }
+  },
+  ------------------------------------------------------------------------------
+  -- MARK: sp-kr-fuel-refinery
+  ------------------------------------------------------------------------------
+  {
+    type = "recipe",
+    name = "sp-diborane",  -- #ForRegEx# - recipe
+    category = "sp-kr-fuel-refinery",
+    enabled = false,
+    energy_required = 5,
+    ingredients = {
+      {type = "item", name = "sp-sodium-borate", amount = 1},
+      {type = "fluid", name = "water", amount = 20},
+    },
+    results = {
+      {type = "fluid", name = "sp-diborane", amount = 4},
+    },
+    -- crafting_machine_tint = {
+    --   primary = {r = 0.2, g = 0.1, b = 0.1, a = 1.000},
+    --   secondary = {r = 0.2, g = 0.0, b = 0.1, a = 1.000},
+    --   tertiary = {r = 0.2, g = 0.1, b = 0.0, a = 1.000},
+    --   quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000}
+    -- }
   },
   ------------------------------------------------------------------------------
   -- MARK: induction-hardening
@@ -3863,6 +4061,20 @@ data:extend({
     },
     subgroup = "fluid-recipes",
     order = "y06[heavy-water]",
+  },
+  {
+    type = "recipe",
+    name = "sp-potassium-hydroxade",  -- #ForRegEx# - recipe
+    category = "sp-kr-electrolysis",
+    enabled = false,
+    energy_required = 4,
+    ingredients = {
+      {type = "item", name = "sp-potassium-chloride", amount = 1},
+      {type = "fluid", name = "water", amount = 5}
+    },
+    results = {
+      {type = "item", name = "sp-potassium-hydroxade", amount = 1}
+    }
   },
   ------------------------------------------------------------------------------
   -- MARK: crafting
