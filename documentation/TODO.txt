@@ -64,6 +64,25 @@ Factorio Space age
       + lithium-brine + water -> lithium-oxide
       + lithium-oxide + hydrogen-chloride -> lithium-chloride + water
       + lithium-chloride + sodium-hydroxide -> lithium
+    - vanadium
+      - vanadium-ore -> vanadium-pentoxide: sed as a catalyst in the production of sulfuric acid and in the manufacturing of ceramics and glass.
+      - sodium-carbonate + vanadium-pentoxide -> vanadium-bearing-solution
+      - vanadium-bearing-solution -> ammonium-metavanadate (NH4VO3): Used in the preparation of other vanadium compounds and as a catalyst in organic synthesis.
+      - ammonium-metavanadate + sodium-hydroxide -> vanadium-plate
+      - vanadium-plate + sulfuric-acid = vanadyl-sulfate (VOSO4): Used in dietary supplements and as a catalyst in chemical reactions
+      - titanium-aluminum-vanadium (Ti-6Al-4V): used in aerospace
+      - vanadium-aluminum (V-Al): used in aerospace
+      - vanadium-steel: used in high-speed machinery
+    - potassium
+      - potassium-ore (sylvite (KCl) and carnallite (KMgCl3·6H2O)) + magnesium-chloride -> potassium-chloride (Used in fertilizers, as a salt substitute in food, and in medical treatments for potassium deficiency.)
+      - potassium-chloride -> potassium-ingot
+      - potassium-ingot + manganese-ingot + 100 water -> potassium-permanganate-solution (KMnO4): Used as a disinfectant, water treatment chemical, and in organic synthesis.
+      - potassium-ingot + chromium-plate + 75 water -> potassium-dichromate-solution (K2Cr2O7): Used in tanning leather, as a corrosion inhibitor, and in the production of pigments.
+      - ammonia + carbon -> hydrogen-cyanide
+      - potassium-chloride + water -> potassium-hydroxade (electrolysis)
+      - hydrogen-cyanide + potassium-hydroxade -> potassium-cyanide (KCN): Used in gold mining, electroplating, and as a reagent in chemical synthesis.
+
+    - core-rift
 
   - Add Krastorio matter conversion recipes
   + Add mineral water
@@ -259,6 +278,64 @@ Items:
 
     - Ac Actinium
       - Neutron Source: Actinium-227 is used as a neutron source in scientific research and industrial applications. It helps in neutron radiography and other neutron-based imaging techniques2.
+
+
+    - gallium + indium + thallium
+      - add to crushed aluminum, gallite as output
+      - add to crushed zinc, gallite as output
+      - gallite -> gallium
+      - gallite -> indium (advanced-smelting)
+      - gallite -> thallium (arc-furnace)
+      - gallium + arsen -> gallium-arsenide (LED and solar cells)
+      - gallium + nitrogen -> Gallium-Nitride (GaN): Used in high-power and high-frequency electronic devices, such as transistors and LEDs.
+      - gallium + oxygen -> Gallium-Oxide (Ga2O3): Used in gas sensors and as a transparent conductive oxide in optoelectronic devices.
+      - gallium + chlorine -> Gallium-Trichloride (GaCl3): Used as a catalyst in organic synthesis and in the production of other gallium compounds.
+      - gallium + phosphorus -> Gallium-Phosphide (GaP): Used in optoelectronic devices, such as LEDs and photodetectors.
+      - gallium + indium + tin -> Galinstan: used as a non-toxic alternative to mercury in thermometers and other applications.
+      - Gallium-Aluminum Alloy (Ga-Al): Used in the production of high-strength, lightweight materials for aerospace and automotive applications.
+      - Gallium-Tin Alloy (Ga-Sn): Used in low-melting-point solders and as a heat transfer medium in cooling systems.
+      - Indium Phosphide (InP): Used in high-speed and high-frequency electronics, such as transistors and laser diodes.
+      - Indium Antimonide (InSb): Used in infrared detectors and thermal imaging cameras.
+      - Indium(III) Chloride (InCl3): Used as a catalyst in organic synthesis and in the production of other indium compounds.
+      - Indium-Gallium-Zinc Oxide (IGZO): Used in thin-film transistors for high-resolution displays.
+      - Thallium(I) Bromide (TlBr): Used in infrared optics and as a scintillation detector.
+      - Thallium(I) Iodide (TlI): Used in high-temperature superconductors and in the production of special glasses.
+      - Thallium(III) Oxide (Tl2O3): Used in the production of semiconductors and as a catalyst in chemical reactions.
+      - Thallium-Mercury Alloy (Tl-Hg): Used in low-freezing-point alloys and in the production of special glasses.
+      - Thallium-Lead Alloy (Tl-Pb): Used in the production of antifriction materials and in the manufacturing of special glasses.
+    - germanium
+      - zinc-ore + sulfuric-acid -> germanium-oxide
+      - crushed-zinc-ore + sulfuric-acid -> germanium-oxide
+      - enriched-zinc-ore + sulfuric-acid -> germanium-oxide
+      - germanium-oxide -> germanium-ingot
+      - Germanium Dioxide (GeO2): Used in the production of optical fibers and infrared optics.
+      - Germane (GeH4): Used in the semiconductor industry for the production of high-purity germanium crystals.
+      - Germanium Tetrachloride (GeCl4): Used in the production of optical fibers and as a precursor for other germanium compounds.
+      - Germanium Sulfide (GeS2): Used in the production of infrared optics and as a semiconductor material.
+      - Germanium Nitride (Ge3N4): Used in the production of high-temperature ceramics and as a semiconductor material.
+    - selenium
+      - add to crushed copper, selenium-dioxide as output
+      - add to crushed nickel, selenium-dioxide as output
+      - add to crushed lead, selenium-dioxide as output
+      - selenium-dioxide + Ammonium-Hydroxide + iron -> selenium-pillet
+      - Selenium Dioxide (SeO2): Used as a catalyst in the production of chemicals and in the glass industry to decolorize glass.
+      - Selenium Sulfide (SeS2): Used in anti-dandruff shampoos and as a fungicide.
+      - Selenic Acid (H2SeO4): Used in the production of selenium compounds and as an oxidizing agent in chemical reactions.
+      - Selenous Acid (H2SeO3): Used in the production of selenium compounds and as a reagent in chemical analysis.
+      - Sodium Selenite (Na2SeO3): Used as a dietary supplement and in animal feed to correct selenium deficiencies.
+      - Sodium Selenate (Na2SeO4): Used as a dietary supplement and in the production of glass and ceramics.
+      - Zinc Selenide (ZnSe): Used in infrared optics and as a semiconductor material.
+      - Copper Selenide (Cu2Se): Used in the production of solar cells and as a semiconductor material.
+      - Cadmium Selenide (CdSe): Used in the production of quantum dots and as a semiconductor material.
+      - Selenium Hexafluoride (SeF6): Used as a gaseous dielectric in high-voltage applications.
+    - Add Alkaline solutions like:
+      - Potassium Hydroxide (KOH): Used in the manufacture of biodiesel, as an electrolyte in alkaline batteries, and in soap making.
+      - Calcium Hydroxide (Ca(OH)2): Also known as slaked lime, it is used in water treatment, construction (as lime mortar), and in the food industry.
+      - Ammonium Hydroxide (NH4OH): Commonly known as ammonia solution, it is used in household cleaners, fertilizers, and in the textile industry.
+      - Magnesium Hydroxide (Mg(OH)2): Used as an antacid and laxative, and in wastewater treatment.
+      - Barium Hydroxide (Ba(OH)2): Used in the manufacture of thermoplastics, as a lubricant additive, and in the sugar industry.
+      - Lithium Hydroxide (LiOH): Used in the production of lithium-ion batteries and as a carbon dioxide scrubber in breathing gas purification systems.
+
 
 
   - Alloys:

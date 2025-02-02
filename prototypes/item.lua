@@ -246,6 +246,38 @@ data:extend({
   },
   {
     type = "item",
+    name = "sp-potassium-ore",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/potassium-ore-1.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    pictures = {
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/potassium-ore-1.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/potassium-ore-2.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/potassium-ore-3.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/potassium-ore-4.png", scale = 0.5, mipmap_count = 4}
+    },
+    subgroup = "raw-resource",
+    order = "[potassium-ore]",
+    stack_size = 200
+  },
+  {
+    type = "item",
+    name = "sp-vanadium-ore",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/vanadium-ore-1.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    pictures = {
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/vanadium-ore-1.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/vanadium-ore-2.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/vanadium-ore-3.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/vanadium-ore-4.png", scale = 0.5, mipmap_count = 4}
+    },
+    subgroup = "raw-resource",
+    order = "[vanadium-ore]",
+    stack_size = 200
+  },
+  {
+    type = "item",
     name = "sp-raw-rare-metals",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/raw-rare-metals/raw-rare-metals.png",
     icon_size = 64,
@@ -1303,6 +1335,66 @@ data:extend({
   },
   {
     type = "item",
+    name = "sp-vanadium-pentoxide",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/vanadium-pentoxide.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "processed-resource",
+    order = "[vanadium-pentoxide]",
+    stack_size = 200
+  },
+  {
+    type = "item",
+    name = "sp-ammonium-metavanadate",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/ammonium-metavanadate.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "processed-resource",
+    order = "[ammonium-metavanadate]",
+    stack_size = 200
+  },
+  {
+    type = "item",
+    name = "sp-vanadyl-sulfate",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/vanadyl-sulfate.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "processed-resource",
+    order = "[vanadyl-sulfate]",
+    stack_size = 200
+  },
+  {
+    type = "item",
+    name = "sp-potassium-chloride",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/potassium-chloride.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "processed-resource",
+    order = "[potassium-chloride]",
+    stack_size = 200
+  },
+  {
+    type = "item",
+    name = "sp-potassium-hydroxade",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/potassium-hydroxade.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "processed-resource",
+    order = "[potassium-hydroxade]",
+    stack_size = 200
+  },
+  {
+    type = "item",
+    name = "sp-potassium-cyanide",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/potassium-cyanide.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "processed-resource",
+    order = "[potassium-cyanide]",
+    stack_size = 200
+  },
+  {
+    type = "item",
     name = "sp-imersite-powder",
     icon = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/imersite-powder/imersite-powder.png",
     icon_size = 64,
@@ -1423,7 +1515,7 @@ data:extend({
     icon_size = 64,
     scale = 0.5,
     subgroup = "raw-material",
-    order = "ingot-[nickel-ingot]",
+    order = "ingot-a-[nickel-ingot]",
     stack_size = 100
   },
   {
@@ -1433,7 +1525,7 @@ data:extend({
     icon_size = 64,
     scale = 0.5,
     subgroup = "raw-material",
-    order = "ingot-[titanium-ingot]",
+    order = "ingot-a-[titanium-ingot]",
     stack_size = 100
   },
   {
@@ -1453,7 +1545,17 @@ data:extend({
     icon_size = 64,
     scale = 0.5,
     subgroup = "raw-material",
-    order = "ingot-[tin-ingot]",
+    order = "ingot-a-[tin-ingot]",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "sp-potassium-ingot",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/potassium-ingot.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "raw-material",
+    order = "ingot-a-[potassium-ingot]",
     stack_size = 100
   },
   {
@@ -1488,12 +1590,22 @@ data:extend({
   },
   {
     type = "item",
+    name = "sp-vanadium-plate",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/vanadium-plate.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "raw-material",
+    order = "a-plate-[vanadium-plate]",
+    stack_size = 100
+  },
+  {
+    type = "item",
     name = "sp-magnesium-slab",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/magnesium-slab.png",
     icon_size = 64,
     scale = 0.5,
     subgroup = "raw-material",
-    order = "ingot-[magnesium-slab]",
+    order = "ingot-slab-[magnesium-slab]",
     stack_size = 100
   },
   {
@@ -1503,7 +1615,7 @@ data:extend({
     icon_size = 64,
     scale = 0.5,
     subgroup = "raw-material",
-    order = "ingot-[lead-slab]",
+    order = "ingot-slab-[lead-slab]",
     stack_size = 100
   },
   {
@@ -1513,7 +1625,7 @@ data:extend({
     icon_size = 64,
     scale = 0.5,
     subgroup = "raw-material",
-    order = "ingot-[cobalt-billet]",
+    order = "ingot-billet-[cobalt-billet]",
     stack_size = 200
   },
   {
@@ -1523,7 +1635,7 @@ data:extend({
     icon_size = 64,
     scale = 0.5,
     subgroup = "raw-material",
-    order = "ingot-[niobium-billet]",
+    order = "ingot-billet-[niobium-billet]",
     stack_size = 100
   },
   {
@@ -1533,7 +1645,7 @@ data:extend({
     icon_size = 64,
     scale = 0.5,
     subgroup = "raw-material",
-    order = "ingot-[tantalum-billet]",
+    order = "ingot-billet-[tantalum-billet]",
     stack_size = 100
   },
   {
@@ -1579,7 +1691,7 @@ data:extend({
     icon_size = 64,
     scale = 0.5,
     subgroup = "raw-material",
-    order = "ingot-[barium-billet]",
+    order = "ingot-billet-[barium-billet]",
     stack_size = 100
   },
   {
@@ -1619,7 +1731,7 @@ data:extend({
     icon_size = 64,
     scale = 0.5,
     subgroup = "raw-material",
-    order = "ingot-[manganese-ingot]",
+    order = "ingot-a-[manganese-ingot]",
     stack_size = 200
   },
   {
@@ -1824,6 +1936,36 @@ data:extend({
     scale = 0.5,
     subgroup = "alloy",
     order = "[kovar]",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "sp-titanium-aluminum-vanadium",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/titanium-aluminum-vanadium.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "alloy",
+    order = "[titanium-aluminum-vanadium]",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "sp-vanadium-aluminum",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/vanadium-aluminum.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "alloy",
+    order = "[vanadium-aluminum]",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "sp-vanadium-steel",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/vanadium-steel.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "alloy",
+    order = "[vanadium-steel]",
     stack_size = 100
   },
   {

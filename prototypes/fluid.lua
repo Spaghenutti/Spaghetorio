@@ -119,6 +119,45 @@ data:extend({
     order = "[mercury]",
     stack_size = 200
   },
+  {
+    type = "fluid",
+    name = "sp-vanadium-bearing-solution",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    base_color = {r=0.5, g=0.6, b=0.0},
+    flow_color = {r=0.5, g=0.6, b=0.0},
+    icon = "__Spaghetorio__/graphics/icons/vanadium-bearing-solution.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "aqueous-fluid",
+    order = "[vanadium-bearing-solution]",
+    stack_size = 200
+  },
+  {
+    type = "fluid",
+    name = "sp-potassium-permanganate-solution",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    base_color = {r=0.55, g=0.2, b=1.0},
+    flow_color = {r=0.55, g=0.2, b=1.0},
+    icon = "__Spaghetorio__/graphics/icons/potassium-permanganate-solution.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "aqueous-fluid",
+    order = "[potassium-permanganate-solution]",
+    stack_size = 200
+  },
+  {
+    type = "fluid",
+    name = "sp-potassium-dichromate-solution",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    base_color = {r=1.0, g=0.4, b=0.0},
+    flow_color = {r=1.0, g=0.4, b=0.0},
+    icon = "__Spaghetorio__/graphics/icons/potassium-dichromate-solution.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "aqueous-fluid",
+    order = "[potassium-dichromate-solution]",
+    stack_size = 200
+  },
   ------------------------------------------------------------------------------
   -- MARK: dirty-fluid
   ------------------------------------------------------------------------------
@@ -608,6 +647,19 @@ data:extend({
     icon_mipmaps = 4,
     subgroup = "chemical",
     order = "a[fluid]-f[diborane]"
+  },
+  {
+    type = "fluid",
+    name = "sp-hydrogen-cyanide",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    base_color = {r=0.0, g=0.0, b=0.55},
+    flow_color = {r=0.0, g=0.0, b=0.55},
+    icon = "__Spaghetorio__/graphics/icons/hydrogen-cyanide.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "chemical",
+    order = "a[fluid]-f[hydrogen-cyanide]"
   },
   ------------------------------------------------------------------------------
   -- MARK: alien

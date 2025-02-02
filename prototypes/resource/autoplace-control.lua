@@ -10,6 +10,22 @@ data:extend({
   },
   {
     type = "autoplace-control",
+    name = "sp-boron-ore",  -- #ForRegEx# - autoplace-control
+    localised_name = {"", "[entity=sp-boron-ore] ", {"entity-name.sp-boron-ore"}},
+    category = "resource",
+    richness = true,
+    order = "b[boron-ore]"
+  },
+  {
+    type = "autoplace-control",
+    name = "sp-cobalt-ore",  -- #ForRegEx# - autoplace-control
+    localised_name = {"", "[entity=sp-cobalt-ore] ", {"entity-name.sp-cobalt-ore"}},
+    category = "resource",
+    richness = true,
+    order = "b[cobalt-ore]"
+  },
+  {
+    type = "autoplace-control",
     name = "sp-chromite",  -- #ForRegEx# - autoplace-control
     localised_name = {"", "[entity=sp-chromite] ", {"entity-name.sp-chromite"}},
     category = "resource",
@@ -26,19 +42,35 @@ data:extend({
   },
   {
     type = "autoplace-control",
-    name = "sp-titanium-ore",  -- #ForRegEx# - autoplace-control
-    localised_name = {"", "[entity=sp-titanium-ore] ", {"entity-name.sp-titanium-ore"}},
-    category = "resource",
-    richness = true,
-    order = "b[titanium-ore]"
-  },
-  {
-    type = "autoplace-control",
     name = "sp-magnesium-ore",  -- #ForRegEx# - autoplace-control
     localised_name = {"", "[entity=sp-magnesium-ore] ", {"entity-name.sp-magnesium-ore"}},
     category = "resource",
     richness = true,
     order = "b[magnesium-ore]"
+  },
+  {
+    type = "autoplace-control",
+    name = "sp-manganese-ore",  -- #ForRegEx# - autoplace-control
+    localised_name = {"", "[entity=sp-manganese-ore] ", {"entity-name.sp-manganese-ore"}},
+    category = "resource",
+    richness = true,
+    order = "b[manganese-ore]"
+  },
+  {
+    type = "autoplace-control",
+    name = "sp-mercury-ore",  -- #ForRegEx# - autoplace-control
+    localised_name = {"", "[entity=sp-mercury-ore] ", {"entity-name.sp-mercury-ore"}},
+    category = "resource",
+    richness = true,
+    order = "b[mercury-ore]"
+  },
+  {
+    type = "autoplace-control",
+    name = "sp-molybdenum-ore",  -- #ForRegEx# - autoplace-control
+    localised_name = {"", "[entity=sp-molybdenum-ore] ", {"entity-name.sp-molybdenum-ore"}},
+    category = "resource",
+    richness = true,
+    order = "b[molybdenum-ore]"
   },
   {
     type = "autoplace-control",
@@ -50,11 +82,11 @@ data:extend({
   },
   {
     type = "autoplace-control",
-    name = "sp-cobalt-ore",  -- #ForRegEx# - autoplace-control
-    localised_name = {"", "[entity=sp-cobalt-ore] ", {"entity-name.sp-cobalt-ore"}},
+    name = "sp-potassium-ore",  -- #ForRegEx# - autoplace-control
+    localised_name = {"", "[entity=sp-potassium-ore] ", {"entity-name.sp-potassium-ore"}},
     category = "resource",
     richness = true,
-    order = "b[cobalt-ore]"
+    order = "b[potassium-ore]"
   },
   {
     type = "autoplace-control",
@@ -74,11 +106,19 @@ data:extend({
   },
   {
     type = "autoplace-control",
-    name = "sp-mercury-ore",  -- #ForRegEx# - autoplace-control
-    localised_name = {"", "[entity=sp-mercury-ore] ", {"entity-name.sp-mercury-ore"}},
+    name = "sp-titanium-ore",  -- #ForRegEx# - autoplace-control
+    localised_name = {"", "[entity=sp-titanium-ore] ", {"entity-name.sp-titanium-ore"}},
     category = "resource",
     richness = true,
-    order = "b[mercury-ore]"
+    order = "b[titanium-ore]"
+  },
+  {
+    type = "autoplace-control",
+    name = "sp-vanadium-ore",  -- #ForRegEx# - autoplace-control
+    localised_name = {"", "[entity=sp-vanadium-ore] ", {"entity-name.sp-vanadium-ore"}},
+    category = "resource",
+    richness = true,
+    order = "b[vanadium-ore]"
   },
   {
     type = "autoplace-control",
@@ -95,30 +135,6 @@ data:extend({
     category = "resource",
     richness = true,
     order = "b[zirconium-ore]"
-  },
-  {
-    type = "autoplace-control",
-    name = "sp-boron-ore",  -- #ForRegEx# - autoplace-control
-    localised_name = {"", "[entity=sp-boron-ore] ", {"entity-name.sp-boron-ore"}},
-    category = "resource",
-    richness = true,
-    order = "b[boron-ore]"
-  },
-  {
-    type = "autoplace-control",
-    name = "sp-manganese-ore",  -- #ForRegEx# - autoplace-control
-    localised_name = {"", "[entity=sp-manganese-ore] ", {"entity-name.sp-manganese-ore"}},
-    category = "resource",
-    richness = true,
-    order = "b[manganese-ore]"
-  },
-  {
-    type = "autoplace-control",
-    name = "sp-molybdenum-ore",  -- #ForRegEx# - autoplace-control
-    localised_name = {"", "[entity=sp-molybdenum-ore] ", {"entity-name.sp-molybdenum-ore"}},
-    category = "resource",
-    richness = true,
-    order = "b[molybdenum-ore]"
   },
   -- MARK: Fluid resource
   {
@@ -199,9 +215,11 @@ data.raw.planet["nauvis"].map_gen_settings.autoplace_controls["sp-manganese-ore"
 data.raw.planet["nauvis"].map_gen_settings.autoplace_controls["sp-mercury-ore"] = {}
 data.raw.planet["nauvis"].map_gen_settings.autoplace_controls["sp-molybdenum-ore"] = {}
 data.raw.planet["nauvis"].map_gen_settings.autoplace_controls["sp-nickel-ore"] = {}
+data.raw.planet["nauvis"].map_gen_settings.autoplace_controls["sp-potassium-ore"] = {}
 data.raw.planet["nauvis"].map_gen_settings.autoplace_controls["sp-stibnite"] = {}
 data.raw.planet["nauvis"].map_gen_settings.autoplace_controls["sp-tinstone"] = {}
 data.raw.planet["nauvis"].map_gen_settings.autoplace_controls["sp-titanium-ore"] = {}
+data.raw.planet["nauvis"].map_gen_settings.autoplace_controls["sp-vanadium-ore"] = {}
 data.raw.planet["nauvis"].map_gen_settings.autoplace_controls["sp-zinc-ore"] = {}
 data.raw.planet["nauvis"].map_gen_settings.autoplace_controls["sp-zirconium-ore"] = {}
 

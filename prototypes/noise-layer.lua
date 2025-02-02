@@ -1,3 +1,5 @@
+
+-- TODO: clarify if this here is still needed?
 data:extend({
   {
     type = "noise-layer",
@@ -5,23 +7,11 @@ data:extend({
   },
   {
     type = "noise-layer",
-    name = "sp-chromite"
-  },
-  {
-    type = "noise-layer",
     name = "sp-barium-ore"
   },
   {
     type = "noise-layer",
-    name = "sp-magnesium-ore"
-  },
-  {
-    type = "noise-layer",
-    name = "sp-nickel-ore"
-  },
-  {
-    type = "noise-layer",
-    name = "sp-titanium-ore"
+    name = "sp-chromite"
   },
   {
     type = "noise-layer",
@@ -29,7 +19,7 @@ data:extend({
   },
   {
     type = "noise-layer",
-    name = "sp-tinstone"
+    name = "sp-magnesium-ore"
   },
   {
     type = "noise-layer",
@@ -37,7 +27,23 @@ data:extend({
   },
   {
     type = "noise-layer",
-    name = "sp-zirconium-ore"
+    name = "sp-nickel-ore"
+  },
+  {
+    type = "noise-layer",
+    name = "sp-potassium-ore"
+  },
+  {
+    type = "noise-layer",
+    name = "sp-titanium-ore"
+  },
+  {
+    type = "noise-layer",
+    name = "sp-tinstone"
+  },
+  {
+    type = "noise-layer",
+    name = "sp-vanadium-ore"
   },
   {
     type = "noise-layer",
@@ -45,7 +51,16 @@ data:extend({
   },
   {
     type = "noise-layer",
+    name = "sp-zirconium-ore"
+  },
+
+  {
+    type = "noise-layer",
     name = "sp-blunagium"
+  },
+  {
+    type = "noise-layer",
+    name = "sp-grobgnum"
   },
   {
     type = "noise-layer",

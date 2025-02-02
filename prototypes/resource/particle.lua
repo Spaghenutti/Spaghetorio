@@ -89,9 +89,11 @@ data:extend({
   particle("sp-manganese-ore-particle", {r=1.0, g=0.5, b=0.5, a=1.0}),
   particle("sp-mercury-ore-particle", {r=0.35, g=0.15, b=0, a=1.0}),
   particle("sp-molybdenum-ore-particle", {r=1.0, g=0.5, b=0.5, a=1.0}),
-  particle("sp-nickel-ore-particle", {r=0.3, g=0.9, b=0.61, a=1.0}),
+  particle("sp-nickel-ore-particle", {r=0.8, g=0.1, b=0.1, a=1.0}),
+  particle("sp-potassium-ore-particle", {r=0.3, g=0.9, b=0.61, a=1.0}),
   particle("sp-stibnite-particle", {r=0.5, g=1, b=0.6, a=1.0}),
   particle("sp-tinstone-particle", {r=0.1, g=0.9, b=0.7, a=1.0}),
+  particle("sp-vanadium-ore-particle", {r=1.0, g=0.3, b=0.3, a=1.0}),
   particle("sp-zinc-ore-particle", {r=0, g=0.25, b=1, a=1.0}),
   particle("sp-zirconium-ore-particle", {r=0.8, g=0.65, b=0, a=1.0}),
 })
