@@ -387,15 +387,15 @@ util.recipe.change_recipe_ingredients("turbo-underground-belt",
 
 util.recipe.change_recipe_ingredients("splitter",
   {
-    {type = "item", name = "sp-machined-parts", amount = 3},
-    {type = "item", name = "sp-bolts", amount = 4},
+    {type = "item", name = "sp-automation-core", amount = 1},
+    {type = "item", name = "sp-bolts", amount = 2},
     {type = "item", name = "transport-belt", amount = 2}
   },
   nil)
 
 util.recipe.change_recipe_ingredients("fast-splitter",
   {
-    {type = "item", name = "sp-machined-parts", amount = 2},
+    {type = "item", name = "sp-automation-core", amount = 2},
     {type = "item", name = "sp-bolts", amount = 4},
     {type = "item", name = "sp-gearbox", amount = 2},
     {type = "item", name = "fast-transport-belt", amount = 2},
@@ -425,11 +425,25 @@ util.recipe.change_recipe_ingredients("turbo-splitter",
 
 table.insert(data.raw.recipe["burner-inserter"].ingredients, {type = "item", name = "sp-bolts", amount = 3})
 table.insert(data.raw.recipe["burner-inserter"].ingredients, {type = "item", name = "sp-wooden-board", amount = 1})
-table.insert(data.raw.recipe["inserter"].ingredients, {type = "item", name = "sp-bolts", amount = 2})
-table.insert(data.raw.recipe["inserter"].ingredients, {type = "item", name = "sp-wooden-board", amount = 1})
-table.insert(data.raw.recipe["inserter"].ingredients, {type = "item", name = "sp-spring", amount = 2})
-table.insert(data.raw.recipe["long-handed-inserter"].ingredients, {type = "item", name = "sp-bolts", amount = 4})
-table.insert(data.raw.recipe["long-handed-inserter"].ingredients, {type = "item", name = "sp-spring", amount = 2})
+
+util.recipe.change_recipe_ingredients("inserter",
+  {
+    {type = "item", name = "electronic-circuit", amount = 1},
+    {type = "item", name = "sp-wooden-board", amount = 1},
+    {type = "item", name = "sp-bolts", amount = 2},
+    {type = "item", name = "sp-spring", amount = 1}
+  },
+  0.5)
+
+util.recipe.change_recipe_ingredients("long-handed-inserter",
+  {
+    {type = "item", name = "electronic-circuit", amount = 1},
+    {type = "item", name = "sp-gearbox", amount = 1},
+    {type = "item", name = "sp-wooden-board", amount = 3},
+    {type = "item", name = "sp-bolts", amount = 4},
+    {type = "item", name = "sp-spring", amount = 2}
+  },
+  1)
 
 util.recipe.change_recipe_ingredients("fast-inserter",
   {

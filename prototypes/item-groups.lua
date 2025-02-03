@@ -267,12 +267,6 @@ data:extend({
   },
   {
     type = "item-subgroup",
-    name = "fundamental-science",
-    group = "science-products",
-    order = "c"
-  },
-  {
-    type = "item-subgroup",
     name = "basic-science",
     group = "science-products",
     order = "d"

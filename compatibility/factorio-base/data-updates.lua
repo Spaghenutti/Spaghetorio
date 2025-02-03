@@ -1,6 +1,5 @@
 
 data.raw.lab["lab"].inputs = {
-  "basic-tech-card",
   "automation-science-pack",
   "logistic-science-pack",
   "military-science-pack",

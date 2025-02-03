@@ -111,8 +111,6 @@ data:extend({
     researching_speed = 1,
     inputs =
     {
-      "basic-tech-card",
-
       "automation-science-pack",
       "logistic-science-pack",
       "military-science-pack",

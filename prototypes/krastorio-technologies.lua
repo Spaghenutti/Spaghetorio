@@ -12,18 +12,13 @@ data:extend({
       },
     },
     prerequisites = {
-        "sp-geological-science-pack-1",
-        "engine"
+        "fluid-handling",
+        "landfill"
     },
     unit = {
-      count = 15,
+      count = 20,
       ingredients = {
-        {"basic-tech-card", 1},
         {"automation-science-pack", 1},
-        -- {"logistic-science-pack", 1},
-        -- {"sp-material-science-pack-1", 1},
-        -- {"sp-electronic-science-pack-1", 1},
-        -- {"sp-geological-science-pack-1", 1}
       },
       time = 30,
     },
@@ -59,7 +54,6 @@ data:extend({
     unit = {
       count = 100,
       ingredients = {
-        { "basic-tech-card", 1 },
         { "automation-science-pack", 1 },
       },
       time = 45,
@@ -85,7 +79,6 @@ data:extend({
     unit = {
       count = 150,
       ingredients = {
-        { "basic-tech-card", 1 },
         { "automation-science-pack", 1 },
         { "logistic-science-pack", 1 },
       },
@@ -262,7 +255,6 @@ data:extend({
     unit = {
       count = 125,
       ingredients = {
-        { "basic-tech-card", 1 },
         { "automation-science-pack", 1 },
         { "logistic-science-pack", 1 },
       },

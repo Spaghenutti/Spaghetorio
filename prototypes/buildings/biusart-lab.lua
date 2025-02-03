@@ -158,9 +158,7 @@ data:extend({
     },
     energy_usage = "250kW",
     researching_speed = 1,
-    inputs ={
-      "basic-tech-card",
-
+    inputs = {
       "automation-science-pack",
       "logistic-science-pack",
       "military-science-pack",

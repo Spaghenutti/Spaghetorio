@@ -23,8 +23,6 @@ data.raw["autoplace-control"]["sulfuric_acid_geyser"].order = "c[sulfuric-acid-g
 
 
 data.raw.lab["biolab"].inputs = {
-  "basic-tech-card",
-
   "automation-science-pack",
   "logistic-science-pack",
   "military-science-pack",

@@ -4,7 +4,6 @@
 local util = require("data-util")
 
 data.raw.technology["oil-processing"].unit.ingredients = {
-  {type = "item", name = "basic-tech-card", amount = 1},
   {type = "item", name = "automation-science-pack", amount = 1},
   {type = "item", name = "logistic-science-pack", amount = 1},
   {type = "item", name = "sp-material-science-pack-1", amount = 1},
@@ -12,7 +11,6 @@ data.raw.technology["oil-processing"].unit.ingredients = {
 }
 
 data.raw.technology["plastics"].unit.ingredients = {
-  {type = "item", name = "basic-tech-card", amount = 1},
   {type = "item", name = "automation-science-pack", amount = 1},
   {type = "item", name = "logistic-science-pack", amount = 1},
   {type = "item", name = "sp-material-science-pack-1", amount = 1},
@@ -20,7 +18,6 @@ data.raw.technology["plastics"].unit.ingredients = {
 }
 
 data.raw.technology["sulfur-processing"].unit.ingredients = {
-  {type = "item", name = "basic-tech-card", amount = 1},
   {type = "item", name = "automation-science-pack", amount = 1},
   {type = "item", name = "logistic-science-pack", amount = 1},
   {type = "item", name = "sp-material-science-pack-1", amount = 1},
@@ -50,7 +47,6 @@ data.raw.technology["military-science-pack"].prerequisites = {
   "logistic-science-pack"
 }
 data.raw.technology["military-science-pack"].unit.ingredients = {
-  {type = "item", name = "basic-tech-card", amount = 1},
   {type = "item", name = "automation-science-pack", amount = 1},
   {type = "item", name = "logistic-science-pack", amount = 1}
 }

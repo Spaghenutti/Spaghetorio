@@ -4391,6 +4391,21 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "sp-automation-core",  -- #ForRegEx# - recipe
+    category = "crafting",
+    enabled = false,
+    energy_required = 1,
+    ingredients = {
+      {type = "item", name = "sp-steel-gear-wheel", amount = 3},
+      {type = "item", name = "sp-bronze-rod", amount = 1},
+      {type = "item", name = "electronic-circuit", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-automation-core", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
     name = "sp-solder",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,

@@ -104,13 +104,12 @@ data:extend({
       }
     },
     prerequisites = {
-      "automation-science-pack"
+      "engine"
     },
     unit =
     {
       count = 5,
       ingredients = {
-        {"basic-tech-card", 1},
         {"automation-science-pack", 1}
       },
       time = 15
@@ -169,6 +168,31 @@ data:extend({
   },
   {
     type = "technology",
+    name = "sp-kr-automation-core",
+    mod = "Krastorio2",
+    icon = "__Spaghetorio__/graphics/krastorio/technologies/automation-core.png",
+    icon_size = 256,
+    icon_mipmaps = 4,
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-automation-core",
+      },
+    },
+    prerequisites = {
+      "sp-steel-machining",
+      "sp-basic-alloy",
+    },
+    unit = {
+      count = 20,
+      ingredients = {
+        {"automation-science-pack", 1},
+      },
+      time = 20,
+    },
+  },
+  {
+    type = "technology",
     name = "sp-crusher",  -- #ForRegEx# - technology
     icon_size = 256,
     icon = "__Spaghetorio__/graphics/technology/crusher-horizontal.png",
@@ -177,6 +201,10 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "crusher"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-sand"
       },
     },
     prerequisites = {
@@ -298,7 +326,6 @@ data:extend({
     {
       count = 100,
       ingredients = {
-        {"basic-tech-card", 1},
         {"automation-science-pack", 1},
         {"logistic-science-pack", 1}
       },
@@ -327,7 +354,6 @@ data:extend({
     {
       count = 100,
       ingredients = {
-        {"basic-tech-card", 1},
         {"automation-science-pack", 1},
         {"logistic-science-pack", 1}
       },
@@ -354,7 +380,6 @@ data:extend({
     {
       count = 100,
       ingredients = {
-        {"basic-tech-card", 1},
         {"automation-science-pack", 1},
         {"logistic-science-pack", 1},
         {"chemical-science-pack", 1},
@@ -421,7 +446,6 @@ data:extend({
     {
       count = 200,
       ingredients = {
-        {"basic-tech-card", 1},
         {"automation-science-pack", 1},
         {"logistic-science-pack", 1},
         {"sp-geological-science-pack-1", 1},
@@ -454,7 +478,6 @@ data:extend({
     {
       count = 50,
       ingredients = {
-        {"basic-tech-card", 1},
         {"automation-science-pack", 1}
       },
       time = 15
@@ -598,7 +621,6 @@ data:extend({
     {
       count = 50,
       ingredients = {
-        {"basic-tech-card", 1},
         {"automation-science-pack", 1},
         {"logistic-science-pack", 1},
         {"chemical-science-pack", 1},
@@ -1008,7 +1030,6 @@ data:extend({
     {
       count = 200,
       ingredients = {
-        {"basic-tech-card", 1},
         {"automation-science-pack", 1},
         {"logistic-science-pack", 1},
         {"sp-material-science-pack-1", 1},
@@ -1101,7 +1122,6 @@ data:extend({
     {
       count = 100,
       ingredients = {
-        {"basic-tech-card", 1},
         {"automation-science-pack", 1},
         {"logistic-science-pack", 1},
         {"sp-material-science-pack-1", 1}
@@ -1449,7 +1469,6 @@ data:extend({
     {
       count = 50,
       ingredients = {
-        {"basic-tech-card", 1},
         {"automation-science-pack", 1},
         {"logistic-science-pack", 1},
         {"sp-material-science-pack-1", 1},
@@ -1485,7 +1504,6 @@ data:extend({
     {
       count = 200,
       ingredients = {
-        {"basic-tech-card", 1},
         {"automation-science-pack", 1},
         {"logistic-science-pack", 1},
         {"sp-material-science-pack-1", 1},
@@ -1785,7 +1803,6 @@ data:extend({
     {
       count = 100,
       ingredients = {
-        {"basic-tech-card", 1},
         {"automation-science-pack", 1},
         {"logistic-science-pack", 1},
         {"chemical-science-pack", 1},
@@ -1820,7 +1837,6 @@ data:extend({
     {
       count = 50,
       ingredients = {
-        {"basic-tech-card", 1}, 
         {"automation-science-pack", 1},
         {"sp-electronic-science-pack-1", 1},
         {"sp-material-science-pack-1", 1},
@@ -1911,7 +1927,10 @@ data:extend({
     unit =
     {
       count = 100,
-      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      ingredients = {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1}
+      },
       time = 15
     },
     order = "a-h-a"
@@ -1936,7 +1955,6 @@ data:extend({
     {
       count = 100,
       ingredients = {
-        {"basic-tech-card", 1},
         {"automation-science-pack", 1},
         {"logistic-science-pack", 1},
         {"sp-material-science-pack-1", 1}
@@ -3552,7 +3570,6 @@ data:extend({
     {
       count = 100,
       ingredients = {
-        {"basic-tech-card", 1},
         {"automation-science-pack", 1},
         {"logistic-science-pack", 1},
         {"sp-electronic-science-pack-1", 1},
@@ -3948,7 +3965,10 @@ data:extend({
     unit =
     {
       count = 100,
-      ingredients = {{"basic-tech-card", 1}, {"automation-science-pack", 1}, {"logistic-science-pack", 1}},
+      ingredients = {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1}
+      },
       time = 15
     },
     order = "a-h-a"
@@ -4299,7 +4319,6 @@ data:extend({
     {
       count = 20,
       ingredients = {
-        {"basic-tech-card", 1},
         {"automation-science-pack", 1}
       },
       time = 15
@@ -5773,7 +5792,6 @@ data:extend({
     {
       count = 100,
       ingredients = {
-        {"basic-tech-card", 1},
         {"automation-science-pack", 1},
         {"logistic-science-pack", 1}
       },
@@ -5801,7 +5819,6 @@ data:extend({
     {
       count = 100,
       ingredients = {
-        {"basic-tech-card", 1},
         {"automation-science-pack", 1},
         {"logistic-science-pack", 1},
         {"sp-material-science-pack-1", 1},
@@ -5829,7 +5846,6 @@ data:extend({
     {
       count = 100,
       ingredients = {
-        {"basic-tech-card", 1},
         {"automation-science-pack", 1},
         {"logistic-science-pack", 1}
       },
@@ -6697,7 +6713,6 @@ data:extend({
       count = 500,
       ingredients =
       {
-        {"basic-tech-card", 1},
         {"automation-science-pack", 1},
         {"logistic-science-pack", 1},
         {"sp-material-science-pack-1", 1},
@@ -6742,7 +6757,6 @@ data:extend({
       count = 1000,
       ingredients =
       {
-        {"basic-tech-card", 1},
         {"automation-science-pack", 1},
         {"logistic-science-pack", 1},
         {"sp-material-science-pack-1", 1},
@@ -6787,7 +6801,6 @@ data:extend({
       count = 2000,
       ingredients =
       {
-        {"basic-tech-card", 1},
         {"automation-science-pack", 1},
         {"logistic-science-pack", 1},
         {"sp-material-science-pack-1", 1},

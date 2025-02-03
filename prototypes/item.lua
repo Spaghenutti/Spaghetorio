@@ -2792,7 +2792,7 @@ data:extend({
   {
     type = "item",
     name = "sp-bolts",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/icons/bolts-2.png",
+    icon = "__Spaghetorio__/graphics/icons/bolts-1.png",
     icon_size = 64,
     scale = 0.5,
     pictures = {
@@ -5159,23 +5159,6 @@ data:extend({
     subgroup = "science-item",
     order = "a03[space-research-data]",
     stack_size = 1000,
-  },
-  ------------------------------------------------------------------------------
-  -- MARK: fundamental-science
-  ------------------------------------------------------------------------------
-  {
-    type = "tool",
-    name = "basic-tech-card",
-    localised_description = { "item-description.science-pack" },
-    icon = "__base__/graphics/icons/automation-science-pack.png",
-    stack_size = 200,
-    icon_size = 64,
-    icon_mipmaps = 4,
-    subgroup = "fundamental-science",
-    order = "b01[basic-tech-card]",
-    durability = 1,
-    durability_description_key = "description.science-pack-remaining-amount-key",
-    durability_description_value = "description.science-pack-remaining-amount-value",
   },
   ------------------------------------------------------------------------------
   -- MARK: basic-science
