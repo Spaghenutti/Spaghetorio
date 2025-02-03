@@ -18,11 +18,10 @@ data:extend({
         recipe = "sp-iron-beam"
       }
     },
-    unit =
-    {
-      count = 5,
-      ingredients = {{"basic-tech-card", 1}},
-      time = 15
+    research_trigger = {
+      type = "craft-item",
+      item = "iron-plate",
+      count = 10
     },
     order = "a-h-a"
   },
@@ -48,19 +47,17 @@ data:extend({
     },
     prerequisites = {
       "sp-iron-machining",
-      "sp-iron-extruding"
     },
-    unit =
-    {
-      count = 5,
-      ingredients = {{"basic-tech-card", 1}},
-      time = 15
+    research_trigger = {
+      type = "craft-item",
+      item = "sp-machined-parts",
+      count = 10
     },
     order = "a-h-a"
   },
   {
     type = "technology",
-    name = "sp-copper-machining",  -- #ForRegEx# - technology
+    name = "sp-copper-extruding",  -- #ForRegEx# - technology
     icon_size = 256,
     icon = "__Spaghetorio__/graphics/hr-icons/copper-tube.png",
     effects =
@@ -68,15 +65,16 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "sp-copper-tube"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "copper-cable"
       }
     },
-    unit =
-    {
-      count = 2,
-      ingredients = {
-        {"basic-tech-card", 1}
-      },
-      time = 15
+    research_trigger = {
+      type = "craft-item",
+      item = "copper-plate",
+      count = 5
     },
     order = "a-h-a"
   },
@@ -93,7 +91,7 @@ data:extend({
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-bolts-from-iron-plate"
+        recipe = "sp-bolts-from-iron-stick"
       },
       {
         type = "unlock-recipe",
@@ -104,13 +102,14 @@ data:extend({
         recipe = "sp-spring"
       }
     },
-    unit =
+    prerequisites = {
+      "sp-iron-extruding",
+    },
+    research_trigger =
     {
-      count = 2,
-      ingredients = {
-        {"basic-tech-card", 1}
-      },
-      time = 15
+      type = "craft-item",
+      item = "iron-stick",
+      count = 10
     },
     order = "a-h-a"
   },
@@ -124,6 +123,10 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "sp-lumber-mill"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-wood-chips"
       }
     },
     prerequisites = {
@@ -158,39 +161,79 @@ data:extend({
         recipe = "sp-tin-and-lead"
       },
     },
-    unit =
+    research_trigger =
     {
-      count = 10,
-      ingredients = {
-        {"basic-tech-card", 1},
-        {"automation-science-pack", 1}
-      },
-      time = 15
+      type = "mine-entity",
+      entity = "sp-tinstone"
     },
     order = "a-h-a"
   },
   {
     type = "technology",
-    name = "sp-basic-solder",  -- #ForRegEx# - technology
+    name = "sp-tin-processing",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghetorio__/graphics/hr-icons/solder.png",
+    -- icon = "__Spaghetorio__/graphics/hr-icons/tin-and-lead.png",
+    icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/hr-icons/tin-ingot.png", 256, nil,
+                                   "__Spaghetorio__/graphics/hr-icons/lead-slab.png", 256, nil),
     effects =
     {
       {
         type = "unlock-recipe",
-        recipe = "sp-solder"
-      }
+        recipe = "sp-tin-ingot"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-tin-and-lead"
+      },
+    },
+    research_trigger =
+    {
+      type = "mine-entity",
+      entity = "sp-tinstone"
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-crusher",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghetorio__/graphics/technology/crusher-horizontal.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "crusher"
+      },
     },
     prerequisites = {
-      "sp-tin-processing"
+      "automation"
     },
-    unit =
+    research_trigger = {
+      type = "craft-item",
+      item = "assembling-machine-1",
+      count = 1
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-glass",  -- #ForRegEx# - technology
+    icon_size = 64,  -- TODO: fix icon
+    icon = "__Spaghetorio__/graphics/krastorio/icons/items/glass.png",
+    effects =
     {
-      count = 10,
-      ingredients = {
-        {"automation-science-pack", 1}
+      {
+        type = "unlock-recipe",
+        recipe = "sp-glass"
       },
-      time = 15
+    },
+    prerequisites = {
+      "sp-crusher"
+    },
+    research_trigger = {
+      type = "craft-item",
+      item = "sp-sand",
+      count = 10
     },
     order = "a-h-a"
   },

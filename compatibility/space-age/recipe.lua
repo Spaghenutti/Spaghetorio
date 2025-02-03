@@ -121,5 +121,48 @@ data:extend({
       tertiary = {r = 0.0, g = 0.0, b = 0.0, a = 1.000},
       quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
     }
-  }
+  },
+  {
+    type = "recipe",
+    name = "wood-processing",
+    icon = "__base__/graphics/icons/tree-08.png",
+    category = "sp-kr-growing",
+    subgroup = "processed-resource",
+    order = "b[nauvis-agriculture]-a[wood-processing]",
+    enabled = true,
+    allow_productivity = true,
+    energy_required = 60,
+    ingredients = {
+      {type = "item", name = "tree-seed", amount = 1},
+      {type = "fluid", name = "water", amount = 100}
+    },
+    results =
+    {
+      {type = "item", name = "wood", amount = 10},
+    },
+    auto_recycle = false,
+    crafting_machine_tint =
+    {
+      primary = {r = 0.442, g = 0.205, b = 0.090, a = 1.000}, -- #703416ff
+      secondary = {r = 1.000, g = 0.500, b = 0.000, a = 1.000}, -- #ff7f00ff
+    }
+  },
+  -- MARK: buildings
+  {
+    type = "recipe",
+    name = "crusher",
+    category = "crafting",
+    enabled = false,
+    ingredients =
+    {
+      {type = "item", name = "steel-plate", amount = 10},
+      {type = "item", name = "sp-gearbox", amount = 6},
+      {type = "item", name = "sp-bolts", amount = 12},
+      {type = "item", name = "electric-engine-unit", amount = 4}
+    },
+    energy_required = 10,
+    results = {
+      {type="item", name="crusher", amount=1}
+    }
+  },
 })

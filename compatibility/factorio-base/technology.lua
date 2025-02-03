@@ -1,6 +1,72 @@
 
-table.insert(data.raw.technology["automation-science-pack"].prerequisites, "sp-mechanical-assembling")
+data.raw.technology["electronics"].effects = {
+  {
+    type = "unlock-recipe",
+    recipe = "sp-solder"
+  },
+  {
+    type = "unlock-recipe",
+    recipe = "electronic-circuit"
+  },
+  {
+    type = "unlock-recipe",
+    recipe = "inserter"
+  },
+  {
+    type = "unlock-recipe",
+    recipe = "small-electric-pole"
+  }
+}
+data.raw.technology["electronics"].research_trigger = {
+  type = "craft-item",
+  item = "copper-cable",
+  count = 5
+}
+data.raw.technology["electronics"].prerequisites = {
+  "sp-copper-extruding",
+  "sp-tin-processing"
+}
+
+data.raw.technology["electric-engine"].unit = nil
+data.raw.technology["electric-engine"].research_trigger = {
+  type = "craft-item",
+  item = "sp-bolts",
+  count = 10
+}
+data.raw.technology["electric-engine"].prerequisites = {
+  "sp-iron-machining",
+  "electronics"
+}
+
+data.raw.technology["steam-power"].prerequisites = {
+  "electric-engine",
+  "sp-copper-extruding"
+}
+data.raw.technology["steam-power"].research_trigger = {
+  type = "craft-item",
+  item = "electric-engine-unit",
+  count = 1
+}
+
+data.raw.technology["automation"].unit = nil
+data.raw.technology["automation"].prerequisites = {
+  "steam-power",
+}
+data.raw.technology["automation"].research_trigger = {
+  type = "craft-item",
+  item = "steam-engine",
+  count = 1
+}
+
+table.insert(data.raw.technology["automation-science-pack"].effects, {type = "unlock-recipe", recipe = "lab"})
 table.insert(data.raw.technology["automation-science-pack"].effects, {type = "unlock-recipe", recipe = "sp-blank-tech-card-from-wooden-board"})
+data.raw.technology["automation-science-pack"].research_trigger =
+{
+  type = "craft-item",
+  item = "sp-glass",
+  count = 10
+}
+data.raw.technology["automation-science-pack"].prerequisites = {"sp-glass"}
 
 table.insert(data.raw.technology["gun-turret"].prerequisites, "sp-mechanical-assembling")
 
@@ -834,8 +900,7 @@ data.raw.technology["fusion-reactor-equipment"].unit.ingredients = {
 --------------------------------------------------------------------------------
 
 data.raw.technology["military"].prerequisites = {
-  "sp-iron-machining",
-  "sp-iron-extruding"
+  "sp-iron-machining"
 }
 
 table.insert(data.raw.technology["military-2"].prerequisites, "military-science-pack")

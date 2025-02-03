@@ -54,6 +54,14 @@ util.recipe.change_recipe_ingredients("tungsten-plate",
 
 util.recipe.change_recipe_ingredients("advanced-circuit",
   {
+    {type = "item", name = "copper-cable", amount = 2},
+    {type = "item", name = "sp-wooden-board", amount = 1},
+    {type = "item", name = "sp-solder", amount = 1}
+  },
+  0.5)
+
+util.recipe.change_recipe_ingredients("advanced-circuit",
+  {
     {type = "item", name = "sp-basic-circuit-board", amount = 1},
     {type = "item", name = "sp-transistor", amount = 2},
     {type = "item", name = "sp-resistor", amount = 4},
@@ -82,7 +90,7 @@ util.recipe.change_recipe_ingredients("engine-unit",
 
 util.recipe.change_recipe_ingredients("electric-engine-unit",
   {
-    {type = "item", name = "copper-cable", amount = 8},
+    {type = "item", name = "electronic-circuit", amount = 1},
     {type = "item", name = "sp-bolts", amount = 6},
     {type = "item", name = "sp-machined-parts", amount = 5},
     {type = "item", name = "iron-stick", amount = 1}

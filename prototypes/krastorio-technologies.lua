@@ -10,26 +10,22 @@ data:extend({
         type = "unlock-recipe",
         recipe = "sp-kr-greenhouse",
       },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-kr-grow-wood-with-water",
-      },
     },
     prerequisites = {
         "sp-geological-science-pack-1",
         "engine"
     },
     unit = {
-      count = 40,
+      count = 15,
       ingredients = {
         {"basic-tech-card", 1},
         {"automation-science-pack", 1},
-        {"logistic-science-pack", 1},
-        {"sp-material-science-pack-1", 1},
-        {"sp-electronic-science-pack-1", 1},
-        {"sp-geological-science-pack-1", 1}
+        -- {"logistic-science-pack", 1},
+        -- {"sp-material-science-pack-1", 1},
+        -- {"sp-electronic-science-pack-1", 1},
+        -- {"sp-geological-science-pack-1", 1}
       },
-      time = 45,
+      time = 30,
     },
   },
   {

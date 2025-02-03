@@ -1668,6 +1668,32 @@ data:extend({
   },
   {
     type = "item",
+    name = "sp-wooden-pole",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/wooden-pole-1.png",
+    icon_size = 64,
+    scale = 0.5,
+    pictures = {
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/wooden-pole-1.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/wooden-pole-2.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/wooden-pole-3.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/wooden-pole-4.png", scale = 0.5, mipmap_count = 4}
+    },
+    subgroup = "raw-material",
+    order = "wood-[wooden-pole]",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "sp-wood-chips",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/wood-chips.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "raw-material",
+    order = "wood-[wood-chips]",
+    stack_size = 100
+  },
+  {
+    type = "item",
     name = "sp-glass",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/krastorio/icons/items/glass.png",
     icon_size = 64,

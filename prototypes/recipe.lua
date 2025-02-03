@@ -3754,12 +3754,38 @@ data:extend({
     name = "sp-wooden-board",  -- #ForRegEx# - recipe
     category = "sawing",
     enabled = true,
-    energy_required = 0.5,
+    energy_required = 2,
     ingredients = {
-      {type = "item", name = "wood", amount = 2}
+      {type = "item", name = "wood", amount = 1}
     },
     results = {
-      {type = "item", name = "sp-wooden-board", amount = 3}
+      {type = "item", name = "sp-wooden-board", amount = 10}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-wooden-pole",  -- #ForRegEx# - recipe
+    category = "sawing",
+    enabled = true,
+    energy_required = 0.1,
+    ingredients = {
+      {type = "item", name = "wood", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-wooden-pole", amount = 2}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-wood-chips",  -- #ForRegEx# - recipe
+    category = "sawing",
+    enabled = false,
+    energy_required = 1.5,
+    ingredients = {
+      {type = "item", name = "wood", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-wood-chips", amount = 20}
     }
   },
   ------------------------------------------------------------------------------
@@ -3786,31 +3812,28 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-kr-grow-wood-with-water",
+    name = "sp-seed-processing",  -- #ForRegEx# - recipe
+    icon = "__base__/graphics/icons/tree-08.png",
     category = "sp-kr-growing",
-    energy_required = 60,
-    enabled = false,
+    subgroup = "processed-resource",
+    order = "b[nauvis-agriculture]-a[seed-processing]",
+    enabled = true,
+    allow_productivity = true,
+    energy_required = 90,
     ingredients = {
-      {type = "fluid", name = "water", amount = 200 },
+      {type = "item", name = "tree-seed", amount = 1},
+      {type = "fluid", name = "water", amount = 100}
     },
-    results = {
-      {type = "item", name = "wood", amount = 40},
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-kr-grow-wood-plus",
-    category = "sp-kr-growing",
-    icon = "__Spaghetorio__/graphics/krastorio/icons/recipes/wood-plus.png",
-    icon_size = 64,
-    energy_required = 60,
-    enabled = false,
-    ingredients = {
-      {type = "fluid", name = "water", amount = 200 },
-      {type = "item", name = "nutrients", amount = 1 },
+    results =
+    {
+      {type = "item", name = "wood", amount = 5},
+      {type = "item", name = "tree-seed", amount = 5},
     },
-    results = {
-      {type = "item", name = "wood", amount = 80},
+    auto_recycle = false,
+    crafting_machine_tint =
+    {
+      primary = {r = 0.442, g = 0.205, b = 0.090, a = 1.000}, -- #703416ff
+      secondary = {r = 1.000, g = 0.500, b = 0.000, a = 1.000}, -- #ff7f00ff
     }
   },
   ------------------------------------------------------------------------------
@@ -4272,14 +4295,14 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-bolts-from-iron-plate",  -- #ForRegEx# - recipe
+    name = "sp-bolts-from-iron-stick",  -- #ForRegEx# - recipe
     icon = "__Spaghetorio__/graphics/icons/bolts-1.png",
     icon_size = 64,
     category = "crafting",
     enabled = false,
     energy_required = 1.2,
     ingredients = {
-      {type = "item", name = "iron-plate", amount = 1}
+      {type = "item", name = "iron-stick", amount = 1}
     },
     results = {
       {type = "item", name = "sp-bolts", amount = 4}
@@ -4298,7 +4321,7 @@ data:extend({
       {type = "item", name = "steel-plate", amount = 2}
     },
     results = {
-      {type = "item", name = "sp-bolts", amount = 9}
+      {type = "item", name = "sp-bolts", amount = 18}
     }
   },
   {
