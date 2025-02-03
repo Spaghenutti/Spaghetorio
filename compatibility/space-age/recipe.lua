@@ -155,7 +155,7 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      {type = "item", name = "steel-plate", amount = 10},
+      {type = "item", name = "sp-iron-beam", amount = 10},
       {type = "item", name = "sp-gearbox", amount = 6},
       {type = "item", name = "sp-bolts", amount = 12},
       {type = "item", name = "electric-engine-unit", amount = 4}

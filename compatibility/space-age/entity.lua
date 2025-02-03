@@ -22,3 +22,6 @@ data.raw.item["superconductor"].subgroup = "electronic-optical-component"
 data.raw.item["supercapacitor"].subgroup = "electronic-optical-component"
 
 data.raw.item["quantum-processor"].subgroup = "advanced-intermediate-product"
+
+-- group production
+data.raw.item["crusher"].subgroup = "production-machine"

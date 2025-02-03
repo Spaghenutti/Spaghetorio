@@ -27,36 +27,6 @@ data:extend({
   },
   {
     type = "technology",
-    name = "sp-mechanical-assembling",  -- #ForRegEx# - technology
-    icon_size = 256,
-    icon = "__base__/graphics/technology/engine.png",
-    effects =
-    {
-      {
-        type = "unlock-recipe",
-        recipe = "iron-chest"
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-gearbox"
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "engine-unit"
-      },
-    },
-    prerequisites = {
-      "sp-iron-machining",
-    },
-    research_trigger = {
-      type = "craft-item",
-      item = "sp-machined-parts",
-      count = 10
-    },
-    order = "a-h-a"
-  },
-  {
-    type = "technology",
     name = "sp-copper-extruding",  -- #ForRegEx# - technology
     icon_size = 256,
     icon = "__Spaghetorio__/graphics/hr-icons/copper-tube.png",
@@ -100,7 +70,11 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "sp-spring"
-      }
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "iron-chest"
+      },
     },
     prerequisites = {
       "sp-iron-extruding",
@@ -250,7 +224,7 @@ data:extend({
       },
     },
     prerequisites = {
-      "sp-tin-processing"
+      "automation-science-pack"
     },
     unit =
     {

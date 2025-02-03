@@ -34,3 +34,5 @@ require("compatibility.EverythingOnNauvis.resource-updates")
 require("compatibility.factorio-base.data-updates")
 
 require("compatibility.space-age.data-updates")
+
+require("compatibility.data-updates")

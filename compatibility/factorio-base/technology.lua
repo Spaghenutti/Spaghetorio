@@ -30,7 +30,7 @@ data.raw.technology["electronics"].prerequisites = {
 data.raw.technology["electric-engine"].unit = nil
 data.raw.technology["electric-engine"].research_trigger = {
   type = "craft-item",
-  item = "sp-bolts",
+  item = "electronic-circuit",
   count = 10
 }
 data.raw.technology["electric-engine"].prerequisites = {
@@ -48,6 +48,7 @@ data.raw.technology["steam-power"].research_trigger = {
   count = 1
 }
 
+table.insert(data.raw.technology["automation"].effects, {type = "unlock-recipe", recipe = "sp-gearbox"})
 data.raw.technology["automation"].unit = nil
 data.raw.technology["automation"].prerequisites = {
   "steam-power",
@@ -68,7 +69,11 @@ data.raw.technology["automation-science-pack"].research_trigger =
 }
 data.raw.technology["automation-science-pack"].prerequisites = {"sp-glass"}
 
-table.insert(data.raw.technology["gun-turret"].prerequisites, "sp-mechanical-assembling")
+data.raw.technology["engine"].prerequisites = {
+  "sp-steel-machining",
+}
+
+table.insert(data.raw.technology["gun-turret"].prerequisites, "sp-iron-machining")
 
 table.insert(data.raw.technology["bulk-inserter"].prerequisites, "sp-relay")
 data.raw.technology["bulk-inserter"].unit.ingredients = {

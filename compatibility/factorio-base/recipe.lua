@@ -87,7 +87,7 @@ util.recipe.change_recipe_ingredients("advanced-circuit",
   },
   3)
 
-data.raw.item["processing-unit"].category = "crafting"
+data.raw.recipe["processing-unit"].category = "crafting"
 util.recipe.change_recipe_ingredients("processing-unit",
   {
     {type = "item", name = "sp-circuit-board", amount = 1},
@@ -96,14 +96,17 @@ util.recipe.change_recipe_ingredients("processing-unit",
   },
   1.6)
 
+data.raw.recipe["engine-unit"].category = "crafting"
 util.recipe.change_recipe_ingredients("engine-unit",
   {
-    {type = "item", name = "sp-machined-parts", amount = 2},
+    {type = "item", name = "steel-plate", amount = 2},
     {type = "item", name = "sp-bolts", amount = 3},
-    {type = "item", name = "sp-gearbox", amount = 1}
+    {type = "item", name = "sp-gearbox", amount = 1},
+    {type = "item", name = "sp-connecting-rod", amount = 2}
   },
   2)
 
+data.raw.recipe["electric-engine-unit"].category = "crafting"
 util.recipe.change_recipe_ingredients("electric-engine-unit",
   {
     {type = "item", name = "electronic-circuit", amount = 1},
@@ -111,7 +114,7 @@ util.recipe.change_recipe_ingredients("electric-engine-unit",
     {type = "item", name = "sp-machined-parts", amount = 5},
     {type = "item", name = "iron-stick", amount = 1}
   },
-  nil)
+  3)
 
 util.recipe.change_recipe_ingredients("steel-plate",
   {
@@ -309,14 +312,14 @@ util.recipe.change_recipe_ingredients("transport-belt",
   {
     {type = "item", name = "iron-plate", amount = 1},
     {type = "item", name = "iron-stick", amount = 1},
-    {type = "item", name = "engine-unit", amount = 1}
+    {type = "item", name = "electric-engine-unit", amount = 1}
   },
   nil)
 
 util.recipe.change_recipe_ingredients("fast-transport-belt",
   {
     {type = "item", name = "sp-aluminum-frame", amount = 1},
-    {type = "item", name = "electric-engine-unit", amount = 1},
+    {type = "item", name = "engine-unit", amount = 1},
     {type = "item", name = "sp-bolts", amount = 4},
     {type = "item", name = "electronic-circuit", amount = 1}
   },
