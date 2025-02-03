@@ -52,7 +52,23 @@ util.recipe.change_recipe_ingredients("tungsten-plate",
 -- data.raw.recipe["sulfur"].icon_size = 64
 -- data.raw.recipe["sulfur"].subgroup = "processed-resource"
 
-util.recipe.change_recipe_ingredients("advanced-circuit",
+data.raw.recipe["wooden-chest"].enabled = true
+util.recipe.change_recipe_ingredients("wooden-chest",
+  {
+    {type = "item", name = "sp-wooden-board", amount = 6},
+  },
+  1)
+
+util.recipe.change_recipe_ingredients("burner-mining-drill",
+  {
+    {type = "item", name = "sp-spring", amount = 2},
+    {type = "item", name = "sp-machined-parts", amount = 2},
+    {type = "item", name = "sp-bolts", amount = 4},
+    {type = "item", name = "iron-gear-wheel", amount = 4},
+  },
+  3)
+
+util.recipe.change_recipe_ingredients("electronic-circuit",
   {
     {type = "item", name = "copper-cable", amount = 2},
     {type = "item", name = "sp-wooden-board", amount = 1},

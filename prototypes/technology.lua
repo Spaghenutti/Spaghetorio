@@ -21,7 +21,7 @@ data:extend({
     research_trigger = {
       type = "craft-item",
       item = "iron-plate",
-      count = 10
+      count = 2
     },
     order = "a-h-a"
   },
@@ -109,7 +109,7 @@ data:extend({
     {
       type = "craft-item",
       item = "iron-stick",
-      count = 10
+      count = 2
     },
     order = "a-h-a"
   },
