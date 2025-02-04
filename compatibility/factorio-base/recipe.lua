@@ -19,17 +19,34 @@ util.recipe.disable_recipe("burner-inserter")
 -- Recipe changes for base factorio items
 -- MARK: Items
 --------------------------------------------------------------------------------
+
 util.recipe.change_recipe_ingredients("iron-plate",
   {
-    {type = "item", name = "iron-ore", amount = 2}
+    {type = "item", name = "iron-ore", amount = 1}
   },
-  8)
+  3.2)
+data.raw.recipe["iron-plate"].results = {
+    {type = "item", name = "iron-plate", amount = 2}
+  }
+
+util.recipe.change_recipe_ingredients("iron-gear-wheel",
+  {
+    {type = "item", name = "iron-plate", amount = 2}
+  },
+  1)
+
+data.raw.recipe["iron-gear-wheel"].results = {
+    {type = "item", name = "iron-gear-wheel", amount = 3}
+  }
 
 util.recipe.change_recipe_ingredients("copper-plate",
   {
     {type = "item", name = "copper-ore", amount = 2}
   },
-  8)
+  3.2)
+data.raw.recipe["copper-plate"].results = {
+    {type = "item", name = "copper-plate", amount = 2}
+  }
 
 util.recipe.change_recipe_ingredients("tungsten-plate",
   {
@@ -116,12 +133,15 @@ util.recipe.change_recipe_ingredients("electric-engine-unit",
   },
   3)
 
+data.raw.recipe["steel-plate"].results = {
+  {type = "item", name = "steel-plate", amount = 4}
+}
 util.recipe.change_recipe_ingredients("steel-plate",
   {
     {type = "item", name = "iron-plate", amount = 5},
     {type = "item", name = "carbon", amount = 1}
   },
-  nil)
+  12)
 
 util.recipe.change_recipe_ingredients("battery",
   {
@@ -1574,7 +1594,23 @@ util.recipe.change_recipe_ingredients("artillery-turret",
     {type = "fluid", name = "lubricant", amount = 100}
   },
   40)
+--------------------------------------------------------------------------------
 -- MARK: Science packs
+--------------------------------------------------------------------------------
+data.raw.recipe["automation-science-pack"].results = {
+  {type = "item", name = "automation-science-pack", amount = 5}
+}
+util.recipe.change_recipe_ingredients("automation-science-pack",
+  {
+    {type = "item", name = "sp-gearbox", amount = 5},
+    {type = "item", name = "electric-engine-unit", amount = 5},
+    {type = "item", name = "electronic-circuit", amount = 5},
+    {type = "item", name = "sp-blank-tech-card", amount = 5}
+  },
+  20)
+data.raw.recipe["space-science-pack"].results = {
+  {type = "item", name = "space-science-pack", amount = 5}
+}
 util.recipe.change_recipe_ingredients("space-science-pack",
   {
     {type = "item", name = "sp-blank-tech-card", amount = 5},

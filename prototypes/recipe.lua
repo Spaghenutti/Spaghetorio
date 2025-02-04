@@ -105,19 +105,6 @@ data:extend({
   ------------------------------------------------------------------------------
   {
     type = "recipe",
-    name = "sp-coke",  -- #ForRegEx# - recipe
-    category = "smelting",
-    enabled = false,
-    energy_required = 4,
-    ingredients = {
-      {type = "item", name = "coal", amount = 2}
-    },
-    results = {
-      {type = "item", name = "sp-coke", amount = 1}
-    }
-  },
-  {
-    type = "recipe",
     name = "sp-glass",  -- #ForRegEx# - recipe
     category = "smelting",
     enabled = false,
@@ -161,7 +148,7 @@ data:extend({
     name = "sp-iron-beam",  -- #ForRegEx# - recipe
     category = "smelting",
     enabled = false,
-    energy_required = 1,
+    energy_required = 6.4,
     ingredients = {
       {type = "item", name = "iron-ore", amount = 3}
     },
@@ -3420,13 +3407,13 @@ data:extend({
     category = "crushing",
     subgroup = "crushed-resource-recipe",
     enabled = false,
-    energy_required = 1,
+    energy_required = 2,
     ingredients = {
       {type = "item", name = "coal", amount = 3}
     },
     results = {
-      {type = "item", name = "carbon", probability = 0.5, amount = 4},
-      {type = "item", name = "sp-coke", probability = 0.5, amount = 1}
+      {type = "item", name = "carbon", probability = 0.5, amount = 1},
+      {type = "item", name = "sp-coke", probability = 0.5, amount = 4}
     }
   },
   {
@@ -3437,12 +3424,12 @@ data:extend({
     category = "crushing",
     subgroup = "crushed-resource-recipe",
     enabled = false,
-    energy_required = 0.8,
+    energy_required = 1.5,
     ingredients = {
-      {type = "item", name = "sp-coke", amount = 1}
+      {type = "item", name = "sp-coke", amount = 2}
     },
     results = {
-      {type = "item", name = "carbon",  amount = 2}
+      {type = "item", name = "carbon",  amount = 3}
     }
   },
   {
@@ -4205,23 +4192,17 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-blank-tech-card-from-wooden-board",  -- #ForRegEx# - recipe
-    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/krastorio/icons/items-with-variations/blank-tech-card/blank-tech-card-1.png", 64,
-                                         "__Spaghetorio__/graphics/icons/wooden-board-1.png", 64),
-    icon_size = 64,
-    mip_maps = 4,
+    name = "sp-blank-tech-card",  -- #ForRegEx# - recipe
     category = "crafting",
-    subgroup = "science-item",
     enabled = false,
     energy_required = 2,
-    hide_from_player_crafting = true,
     ingredients = {
       {type = "item", name = "copper-cable", amount = 2},
       {type = "item", name = "sp-wooden-board", amount = 1},
       {type = "item", name = "iron-plate", amount = 1},
     },
     results = {
-      {type = "item", name = "sp-blank-tech-card", amount = 5}
+      {type = "item", name = "sp-blank-tech-card", amount = 1}
     }
   },
   {
@@ -4295,8 +4276,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-bolts-from-iron-stick",  -- #ForRegEx# - recipe
-    icon = "__Spaghetorio__/graphics/icons/bolts-1.png",
+    name = "sp-bolts",  -- #ForRegEx# - recipe
     icon_size = 64,
     category = "crafting",
     enabled = false,
@@ -4310,24 +4290,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-bolts-from-steel-plate",  -- #ForRegEx# - recipe
-    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/bolts-1.png", 64,
-                                         "__Spaghetorio__/graphics/krastorio/icons/items/steel-plate.png", 64),
-    category = "crafting",
-    enabled = false,
-    energy_required = 2.5,
-    hide_from_player_crafting = true,
-    ingredients = {
-      {type = "item", name = "steel-plate", amount = 2}
-    },
-    results = {
-      {type = "item", name = "sp-bolts", amount = 18}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-machined-parts-from-iron-plate",  -- #ForRegEx# - recipe
-    icon = "__Spaghetorio__/graphics/icons/machined-parts-4.png",
+    name = "sp-machined-parts",  -- #ForRegEx# - recipe
     icon_size = 64,
     category = "crafting",
     enabled = false,
@@ -4337,22 +4300,6 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-machined-parts", amount = 2}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-machined-parts-from-steel-plate",  -- #ForRegEx# - recipe
-    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/machined-parts-4.png", 64,
-                                         "__Spaghetorio__/graphics/krastorio/icons/items/steel-plate.png", 64),
-    category = "crafting",
-    enabled = false,
-    energy_required = 6,
-    hide_from_player_crafting = true,
-    ingredients = {
-      {type = "item", name = "steel-plate", amount = 3}
-    },
-    results = {
-      {type = "item", name = "sp-machined-parts", amount = 7}
     }
   },
   {
@@ -7697,7 +7644,7 @@ data:extend({
     energy_required = 2,
     enabled = false,
     ingredients = {
-      {type = "item", name = "engine-unit", amount = 1},
+      {type = "item", name = "electric-engine-unit", amount = 1},
       {type = "item", name = "sp-machined-parts", amount = 2},
       {type = "item", name = "sp-wooden-board", amount = 1},
       {type = "item", name = "sp-bolts", amount = 4},
@@ -7717,7 +7664,7 @@ data:extend({
     enabled = false,
     ingredients = {
     {type = "item", name = "sp-aluminum-frame", amount = 2},
-    {type = "item", name = "electric-engine-unit", amount = 2},
+    {type = "item", name = "engine-unit", amount = 2},
     {type = "item", name = "fast-transport-belt", amount = 1},
     {type = "item", name = "sp-steel-gear-wheel", amount = 4},
     {type = "item", name = "sp-bolts", amount = 4},

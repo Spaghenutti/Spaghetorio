@@ -61,11 +61,11 @@ data:extend({
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-bolts-from-iron-stick"
+        recipe = "sp-bolts"
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-machined-parts-from-iron-plate"
+        recipe = "sp-machined-parts"
       },
       {
         type = "unlock-recipe",
@@ -184,7 +184,7 @@ data:extend({
       "sp-basic-alloy",
     },
     unit = {
-      count = 20,
+      count = 15,
       ingredients = {
         {"automation-science-pack", 1},
       },
@@ -205,6 +205,14 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "sp-sand"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-crushing-coal",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-crushing-coke",
       },
     },
     prerequisites = {
@@ -256,7 +264,7 @@ data:extend({
     },
     unit =
     {
-      count = 25,
+      count = 5,
       ingredients = {
         {"automation-science-pack", 1}
       },
@@ -277,14 +285,6 @@ data:extend({
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-bolts-from-steel-plate"
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-machined-parts-from-steel-plate"
-      },
-      {
-        type = "unlock-recipe",
         recipe = "sp-steel-gear-wheel"
       },
     },
@@ -294,7 +294,7 @@ data:extend({
     },
     unit =
     {
-      count = 50,
+      count = 15,
       ingredients = {
         {"automation-science-pack", 1}
       },
@@ -450,35 +450,6 @@ data:extend({
         {"logistic-science-pack", 1},
         {"sp-geological-science-pack-1", 1},
         {"sp-material-science-pack-1", 1}
-      },
-      time = 15
-    },
-    order = "a-h-a"
-  },
-  {
-    type = "technology",
-    name = "sp-coal-processing",  -- #ForRegEx# - technology
-    icon_size = 256,
-    icon = "__Spaghetorio__/graphics/hr-icons/graphite-1.png",
-    effects =
-    {
-      {
-        type = "unlock-recipe",
-        recipe = "sp-coke"
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "carbon"
-      },
-    },
-    prerequisites = {
-      "automation-science-pack"
-    },
-    unit =
-    {
-      count = 50,
-      ingredients = {
-        {"automation-science-pack", 1}
       },
       time = 15
     },

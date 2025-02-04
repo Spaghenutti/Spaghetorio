@@ -25,3 +25,6 @@ data.raw.item["quantum-processor"].subgroup = "advanced-intermediate-product"
 
 -- group production
 data.raw.item["crusher"].subgroup = "production-machine"
+
+-- MARK: Change fuel values
+data.raw.item["carbon"].fuel_value = "4MJ"

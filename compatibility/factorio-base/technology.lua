@@ -60,7 +60,7 @@ data.raw.technology["automation"].research_trigger = {
 }
 
 table.insert(data.raw.technology["automation-science-pack"].effects, {type = "unlock-recipe", recipe = "lab"})
-table.insert(data.raw.technology["automation-science-pack"].effects, {type = "unlock-recipe", recipe = "sp-blank-tech-card-from-wooden-board"})
+table.insert(data.raw.technology["automation-science-pack"].effects, {type = "unlock-recipe", recipe = "sp-blank-tech-card"})
 data.raw.technology["automation-science-pack"].research_trigger =
 {
   type = "craft-item",
@@ -115,11 +115,15 @@ data.raw.technology["circuit-network"].unit.ingredients = {
   {"chemical-science-pack", 1}
 }
 
+table.insert(data.raw.technology["logistics"].effects, {type = "unlock-recipe", recipe = "sp-kr-loader"})
 table.insert(data.raw.technology["logistics"].prerequisites, "sp-kr-automation-core")
 
+table.insert(data.raw.technology["logistics-2"].effects, {type = "unlock-recipe", recipe = "sp-kr-fast-loader"})
 table.insert(data.raw.technology["logistics-2"].prerequisites, "sp-aluminum-processing")
 table.insert(data.raw.technology["logistics-2"].prerequisites, "electronics")
 
+
+table.insert(data.raw.technology["logistics-3"].effects, {type = "unlock-recipe", recipe = "sp-kr-express-loader"})
 data.raw.technology["logistics-3"].prerequisites = {
   "sp-titanium-machining",
   "sp-actuator",
@@ -192,7 +196,7 @@ data.raw.technology["fluid-handling"].prerequisites = {
   "sp-basic-alloy",
   "steel-processing",
 }
-data.raw.technology["advanced-material-processing-2"].unit.ingredients = {
+data.raw.technology["fluid-handling"].unit.ingredients = {
   {"automation-science-pack", 1}
 }
 
@@ -265,6 +269,15 @@ data.raw.technology["landfill"].unit.ingredients = {
   {"automation-science-pack", 1}
 }
 table.insert(data.raw.technology["landfill"].effects, {type = "unlock-recipe", recipe = "sp-landfill-from-iron-ore"})
+
+data.raw.technology["steel-processing"].unit = {
+  count = 5,
+  ingredients = {
+    {"automation-science-pack", 1},
+  },
+  time = 15
+}
+
 
 table.insert(data.raw.technology["oil-processing"].prerequisites, "sp-stainless-steel-processing")
 table.insert(data.raw.technology["oil-processing"].prerequisites, "sp-geological-science-pack-1")

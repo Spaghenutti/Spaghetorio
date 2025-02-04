@@ -1321,6 +1321,8 @@ data:extend({
       {size = 64, filename = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/coke/coke-2.png", scale = 0.5, mipmap_count = 4}
     },
     subgroup = "processed-resource",
+    fuel_category = "chemical",
+    fuel_value = "6MJ",
     order = "[coke]",
     stack_size = 100
   },
@@ -2796,9 +2798,9 @@ data:extend({
     icon_size = 64,
     scale = 0.5,
     pictures = {
-      {size = 64, filename = "__Spaghetorio__/graphics/icons/bolts-1.png", scale = 0.25},
-      {size = 64, filename = "__Spaghetorio__/graphics/icons/bolts-2.png", scale = 0.25},
-      {size = 64, filename = "__Spaghetorio__/graphics/icons/bolts-3.png", scale = 0.25},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/bolts-1.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/bolts-2.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/bolts-3.png", scale = 0.5, mipmap_count = 4},
     },
     subgroup = "mechanical-component",
     order = "other-[bolts]",
@@ -2811,10 +2813,10 @@ data:extend({
     icon_size = 64,
     scale = 0.5,
     pictures = {
-      {size = 64, filename = "__Spaghetorio__/graphics/icons/machined-parts-1.png", scale = 0.25},
-      {size = 64, filename = "__Spaghetorio__/graphics/icons/machined-parts-2.png", scale = 0.25},
-      {size = 64, filename = "__Spaghetorio__/graphics/icons/machined-parts-3.png", scale = 0.25},
-      {size = 64, filename = "__Spaghetorio__/graphics/icons/machined-parts-4.png", scale = 0.25},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/machined-parts-1.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/machined-parts-2.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/machined-parts-3.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/machined-parts-4.png", scale = 0.5, mipmap_count = 4},
     },
     subgroup = "mechanical-component",
     order = "frame-2-[machined-parts]",
@@ -3833,10 +3835,10 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     pictures = {
-      {size = 64, filename = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/biomass/biomass.png", scale = 0.25, mipmap_count = 4},
-      {size = 64, filename = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/biomass/biomass-1.png", scale = 0.25, mipmap_count = 4},
-      {size = 64, filename = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/biomass/biomass-2.png", scale = 0.25, mipmap_count = 4},
-      {size = 64, filename = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/biomass/biomass-3.png", scale = 0.25, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/biomass/biomass.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/biomass/biomass-1.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/biomass/biomass-2.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/biomass/biomass-3.png", scale = 0.5, mipmap_count = 4},
     },
     fuel_category = "chemical",
     fuel_value = "2MJ",
@@ -5535,7 +5537,7 @@ data:extend({
         {
           size = 64,
           filename = "__Spaghetorio__/graphics/krastorio/icons/cards/optimization-tech-card.png",
-          scale = 0.25,
+          scale = 0.5,
           mipmap_count = 4,
         },
         {
@@ -5543,7 +5545,7 @@ data:extend({
           flags = { "light" },
           size = 64,
           filename = "__Spaghetorio__/graphics/krastorio/icons/cards/matter-tech-card-light.png",
-          scale = 0.25,
+          scale = 0.5,
           mipmap_count = 4,
         },
       },
@@ -5567,7 +5569,7 @@ data:extend({
         {
           size = 64,
           filename = "__Spaghetorio__/graphics/krastorio/icons/cards/advanced-tech-card.png",
-          scale = 0.25,
+          scale = 0.5,
           mipmap_count = 4,
         },
         {
@@ -5575,7 +5577,7 @@ data:extend({
           flags = { "light" },
           size = 64,
           filename = "__Spaghetorio__/graphics/krastorio/icons/cards/advanced-tech-card-light.png",
-          scale = 0.25,
+          scale = 0.5,
           mipmap_count = 4,
         },
       },
@@ -5599,7 +5601,7 @@ data:extend({
         {
           size = 64,
           filename = "__Spaghetorio__/graphics/krastorio/icons/cards/singularity-tech-card.png",
-          scale = 0.25,
+          scale = 0.5,
           mipmap_count = 4,
         },
         {
@@ -5607,7 +5609,7 @@ data:extend({
           flags = { "light" },
           size = 64,
           filename = "__Spaghetorio__/graphics/krastorio/icons/cards/singularity-tech-card-light.png",
-          scale = 0.25,
+          scale = 0.5,
           mipmap_count = 4,
         },
       },

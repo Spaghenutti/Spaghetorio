@@ -1,18 +1,5 @@
 
 data:extend({
-{
-    type = "recipe",
-    name = "carbon",  -- #ForRegEx# - recipe
-    category = "smelting",
-    enabled = false,
-    energy_required = 6,
-    ingredients = {
-      {type = "item", name = "sp-coke", amount = 3}
-    },
-    results = {
-      {type = "item", name = "carbon", amount = 4}
-    }
-  },
   {
     type = "recipe",
     name = "tungsten-carbide",  -- #ForRegEx# - recipe
