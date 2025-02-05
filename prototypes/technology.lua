@@ -527,7 +527,38 @@ data:extend({
     },
     order = "a-h-a"
   },
-  -- update technologies below
+  {
+    type = "technology",
+    -- extends base technology to 3rd tier
+    name = "electric-energy-distribution-3",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__base__/graphics/technology/electric-energy-distribution-2.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "substation"
+      }
+    },
+    prerequisites = {
+      "sp-relay",
+      "sp-transformer",
+      "electric-energy-distribution-2"
+    },
+    unit =
+    {
+      count = 75,
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1}
+      },
+      time = 15
+    },
+    order = "a-h-a"
+  },
   {
     type = "technology",
     name = "sp-carbon-high-tech",  -- #ForRegEx# - technology

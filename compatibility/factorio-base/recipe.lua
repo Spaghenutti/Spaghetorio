@@ -1634,8 +1634,8 @@ util.recipe.change_recipe_ingredients("automation-science-pack",
   },
   20)
 data.raw.recipe["automation-science-pack"].results = {
-    {type = "item", name = "automation-science-pack", amount = 5}
-  }
+  {type = "item", name = "automation-science-pack", amount = 5}
+}
 
 util.recipe.change_recipe_ingredients("logistic-science-pack",
   {
@@ -1645,6 +1645,9 @@ util.recipe.change_recipe_ingredients("logistic-science-pack",
     {type = "item", name = "sp-blank-tech-card", amount = 5}
   },
   20)
+data.raw.recipe["logistic-science-pack"].results = {
+    {type = "item", name = "logistic-science-pack", amount = 5}
+  }
 
 data.raw.recipe["automation-science-pack"].results = {
     {type = "item", name = "automation-science-pack", amount = 5}
