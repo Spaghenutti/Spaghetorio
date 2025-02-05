@@ -19,3 +19,6 @@ for key, value in pairs(data.raw.furnace) do
     data:extend({furnace})
   end
 end
+
+-- Overwrite technology change by Everything on nauvis
+table.insert(data.raw.technology["agriculture"].prerequisites, "chemical-science-pack")

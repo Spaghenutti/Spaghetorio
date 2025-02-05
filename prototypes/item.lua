@@ -1666,6 +1666,8 @@ data:extend({
     },
     subgroup = "raw-material",
     order = "a-plate-1-[wooden-board]",
+    fuel_value = "0.2MJ",
+    fuel_category = "chemical",
     stack_size = 100
   },
   {
@@ -1682,6 +1684,8 @@ data:extend({
     },
     subgroup = "raw-material",
     order = "wood-[wooden-pole]",
+    fuel_value = "1MJ",
+    fuel_category = "chemical",
     stack_size = 100
   },
   {
@@ -1692,6 +1696,8 @@ data:extend({
     scale = 0.5,
     subgroup = "raw-material",
     order = "wood-[wood-chips]",
+    fuel_value = "0.1MJ",
+    fuel_category = "chemical",
     stack_size = 100
   },
   {
@@ -4685,13 +4691,27 @@ data:extend({
   ------------------------------------------------------------------------------
   {
     type = "item",
+    name = "sp-wood-fuel",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/wood-fuel.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "fuel-processing",
+    order = "b[chemistry]-b[wood-fuel]",
+    fuel_category = "chemical",
+    fuel_value = "8MJ",
+    stack_size = 100
+  },
+  {
+    type = "item",
     name = "sp-fuel",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/krastorio/icons/items/fuel.png",
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "fuel-processing",
     order = "b[chemistry]-b[fuel]",
-    stack_size = 50
+    fuel_category = "chemical",
+    fuel_value = "12MJ",
+    stack_size = 100
   },
   {
     type = "item",
@@ -4701,7 +4721,9 @@ data:extend({
     icon_mipmaps = 4,
     subgroup = "fuel-processing",
     order = "b[chemistry]-b[bio-fuel]",
-    stack_size = 50
+    fuel_category = "chemical",
+    fuel_value = "12MJ",
+    stack_size = 100
   },
   {
     type = "item",
@@ -4711,7 +4733,9 @@ data:extend({
     icon_mipmaps = 4,
     subgroup = "fuel-processing",
     order = "b[chemistry]-c[advanced-fuel]",
-    stack_size = 50
+    fuel_category = "chemical",
+    fuel_value = "25MJ",
+    stack_size = 100
   },
   {
     type = "item",

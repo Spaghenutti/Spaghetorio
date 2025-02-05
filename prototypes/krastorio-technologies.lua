@@ -25,6 +25,29 @@ data:extend({
   },
   {
     type = "technology",
+    name = "sp-kr-wind-turbine",
+    icon = "__Spaghetorio__/graphics/krastorio/icons/entities/wind-turbine.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-kr-wind-turbine",
+      },
+    },
+    prerequisites = {
+        "sp-steel-machining"
+    },
+    unit = {
+      count = 20,
+      ingredients = {
+        {"automation-science-pack", 1},
+      },
+      time = 30,
+    },
+  },
+  {
+    type = "technology",
     name = "sp-kr-fluids-chemistry",
     icon = "__Spaghetorio__/graphics/krastorio/technologies/fluids-chemistry.png",
     icon_size = 256,
@@ -46,17 +69,21 @@ data:extend({
         type = "unlock-recipe",
         recipe = "sp-kr-water-electrolysis",
       },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-wood-fuel",
+      },
     },
     prerequisites = {
       "logistic-science-pack",
-      "engine"
     },
     unit = {
-      count = 100,
+      count = 50,
       ingredients = {
-        { "automation-science-pack", 1 },
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1}
       },
-      time = 45,
+      time = 30,
     },
   },
   {

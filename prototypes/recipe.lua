@@ -2936,6 +2936,26 @@ data:extend({
     --   quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000}
     -- }
   },
+  {
+    type = "recipe",
+    name = "sp-wood-fuel",  -- #ForRegEx# - recipe
+    category = "chemistry",
+    enabled = false,
+    energy_required = 2,
+    ingredients = {
+      {type = "item", name = "sp-wood-chips", amount = 5},
+      {type = "item", name = "sp-coke", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-wood-fuel", amount = 1}
+    },
+    -- crafting_machine_tint = {
+    --   primary = {r = 0.2, g = 0.1, b = 0.1, a = 1.000},
+    --   secondary = {r = 0.2, g = 0.0, b = 0.1, a = 1.000},
+    --   tertiary = {r = 0.2, g = 0.1, b = 0.0, a = 1.000},
+    --   quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000}
+    -- }
+  },
   ------------------------------------------------------------------------------
   -- MARK: advanced-chemistry
   ------------------------------------------------------------------------------
@@ -4313,6 +4333,25 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-machined-parts", amount = 2}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-kr-wind-turbine",  -- #ForRegEx# - recipe
+    icon_size = 64,
+    category = "crafting",
+    enabled = false,
+    energy_required = 10,
+    ingredients = {
+      {type = "item", name = "steel-plate", amount = 8},
+      {type = "item", name = "sp-steel-beam", amount = 6},
+      {type = "item", name = "electronic-circuit", amount = 2},
+      {type = "item", name = "sp-bolts", amount = 24},
+      {type = "item", name = "electric-engine-unit", amount = 1},
+      {type = "item", name = "sp-gearbox", amount = 2}
+    },
+    results = {
+      {type = "item", name = "sp-kr-wind-turbine", amount = 1}
     }
   },
   {

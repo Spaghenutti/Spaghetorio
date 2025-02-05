@@ -1625,20 +1625,31 @@ util.recipe.change_recipe_ingredients("artillery-turret",
 --------------------------------------------------------------------------------
 -- MARK: Science packs
 --------------------------------------------------------------------------------
-data.raw.recipe["automation-science-pack"].results = {
-  {type = "item", name = "automation-science-pack", amount = 5}
-}
 util.recipe.change_recipe_ingredients("automation-science-pack",
   {
     {type = "item", name = "sp-gearbox", amount = 5},
-    {type = "item", name = "electric-engine-unit", amount = 5},
-    {type = "item", name = "electronic-circuit", amount = 5},
+    {type = "item", name = "electric-engine-unit", amount = 2},
+    {type = "item", name = "electronic-circuit", amount = 2},
     {type = "item", name = "sp-blank-tech-card", amount = 5}
   },
   20)
-data.raw.recipe["space-science-pack"].results = {
-  {type = "item", name = "space-science-pack", amount = 5}
-}
+data.raw.recipe["automation-science-pack"].results = {
+    {type = "item", name = "automation-science-pack", amount = 5}
+  }
+
+util.recipe.change_recipe_ingredients("logistic-science-pack",
+  {
+    {type = "item", name = "engine-unit", amount = 5},
+    {type = "item", name = "sp-automation-core", amount = 2},
+    {type = "item", name = "sp-valve", amount = 2},
+    {type = "item", name = "sp-blank-tech-card", amount = 5}
+  },
+  20)
+
+data.raw.recipe["automation-science-pack"].results = {
+    {type = "item", name = "automation-science-pack", amount = 5}
+  }
+
 util.recipe.change_recipe_ingredients("space-science-pack",
   {
     {type = "item", name = "sp-blank-tech-card", amount = 5},
@@ -1649,6 +1660,9 @@ util.recipe.change_recipe_ingredients("space-science-pack",
     {type = "item", name = "sp-laser", amount = 5},
   },
   24)
+data.raw.recipe["space-science-pack"].results = {
+    {type = "item", name = "space-science-pack", amount = 5}
+  }
 
 -- Remove barrel recipes
 util.recipe.remove_barrel_recipe("sp-liquid-nitrogen")

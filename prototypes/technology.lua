@@ -3721,7 +3721,10 @@ data:extend({
         recipe = "sp-actuator"
       },
     },
-    prerequisites = {"automation-science-pack"},
+    prerequisites = {
+      "sp-material-science-pack-1",
+      "sp-electronic-science-pack-1"
+    },
     unit =
     {
       count = 150,
