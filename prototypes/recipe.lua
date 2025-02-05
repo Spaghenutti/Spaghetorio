@@ -158,6 +158,19 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "sp-steel-beam",  -- #ForRegEx# - recipe
+    category = "smelting",
+    enabled = false,
+    energy_required = 5,
+    ingredients = {
+      {type = "item", name = "steel-plate", amount = 3}
+    },
+    results = {
+      {type = "item", name = "sp-steel-beam", amount = 2}
+    }
+  },
+  {
+    type = "recipe",
     name = "sp-alumina",  -- #ForRegEx# - recipe
     category = "smelting",
     enabled = false,
@@ -4265,7 +4278,7 @@ data:extend({
     name = "sp-connecting-rod",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
-    energy_required = 5,
+    energy_required = 1,
     ingredients = {
       {type = "item", name = "steel-plate", amount = 1},
       {type = "item", name = "sp-bronze-rod", amount = 1}
@@ -4294,7 +4307,7 @@ data:extend({
     icon_size = 64,
     category = "crafting",
     enabled = false,
-    energy_required = 2,
+    energy_required = 1.5,
     ingredients = {
       {type = "item", name = "iron-plate", amount = 1}
     },
@@ -4341,7 +4354,7 @@ data:extend({
     name = "sp-automation-core",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
-    energy_required = 1,
+    energy_required = 1.5,
     ingredients = {
       {type = "item", name = "sp-steel-gear-wheel", amount = 3},
       {type = "item", name = "sp-bronze-rod", amount = 1},
@@ -4370,7 +4383,7 @@ data:extend({
     name = "sp-silver-solder",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
-    energy_required = 16,
+    energy_required = 4,
     ingredients = {
       {type = "item", name = "sp-silver", amount = 1},
       {type = "item", name = "sp-tin-ingot", amount = 8}
@@ -4651,11 +4664,11 @@ data:extend({
     name = "sp-gearbox",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
-    energy_required = 2.8,
+    energy_required = 1,
     ingredients = {
       {type = "item", name = "iron-plate", amount = 1},
       {type = "item", name = "iron-stick", amount = 1},
-      {type = "item", name = "iron-gear-wheel", amount = 5}
+      {type = "item", name = "iron-gear-wheel", amount = 3}
     },
     results = {
       {type = "item", name = "sp-gearbox", amount = 1}

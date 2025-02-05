@@ -76,7 +76,14 @@ data.raw.technology["engine"].unit.ingredients = {
   {"automation-science-pack", 1},
 }
 
-table.insert(data.raw.technology["gun-turret"].prerequisites, "sp-iron-machining")
+data.raw.technology["gun-turret"].prerequisites = {"electric-engine"}
+data.raw.technology["gun-turret"].unit = nil
+data.raw.technology["gun-turret"].research_trigger =
+{
+  type = "craft-item",
+  item = "electric-engine-unit",
+  count = 15
+}
 
 table.insert(data.raw.technology["bulk-inserter"].prerequisites, "sp-relay")
 data.raw.technology["bulk-inserter"].unit.ingredients = {
@@ -270,6 +277,7 @@ data.raw.technology["landfill"].unit.ingredients = {
 }
 table.insert(data.raw.technology["landfill"].effects, {type = "unlock-recipe", recipe = "sp-landfill-from-iron-ore"})
 
+table.insert(data.raw.technology["steel-processing"].effects, {type = "unlock-recipe", recipe = "sp-steel-beam"})
 data.raw.technology["steel-processing"].unit = {
   count = 5,
   ingredients = {

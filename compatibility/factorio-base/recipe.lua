@@ -76,6 +76,16 @@ util.recipe.change_recipe_ingredients("wooden-chest",
   },
   1)
 
+ util.recipe.change_recipe_ingredients("small-electric-pole",
+  {
+    {type = "item", name = "copper-cable", amount = 1},
+    {type = "item", name = "sp-wooden-pole", amount = 1}
+  },
+  0.5)
+data.raw.recipe["small-electric-pole"].results = {
+    {type = "item", name = "small-electric-pole", amount = 1}
+  }
+
 util.recipe.change_recipe_ingredients("burner-mining-drill",
   {
     {type = "item", name = "sp-spring", amount = 2},
@@ -131,7 +141,7 @@ util.recipe.change_recipe_ingredients("electric-engine-unit",
     {type = "item", name = "sp-machined-parts", amount = 5},
     {type = "item", name = "iron-stick", amount = 1}
   },
-  3)
+  1)
 
 data.raw.recipe["steel-plate"].results = {
   {type = "item", name = "steel-plate", amount = 4}
@@ -759,17 +769,35 @@ util.recipe.change_recipe_ingredients("cliff-explosives",
   },
   3)
 
+util.recipe.change_recipe_ingredients("small-lamp",
+  {
+    {type = "item", name = "copper-cable", amount = 2},
+    {type = "item", name = "electronic-circuit", amount = 1},
+    {type = "item", name = "sp-glass", amount = 1},
+    {type = "item", name = "iron-plate", amount = 1},
+  },
+  1)
+
 --------------------------------------------------------------------------------
 -- MARK: Combat
 --------------------------------------------------------------------------------
 util.recipe.change_recipe_ingredients("submachine-gun",
   {
-    {type = "item", name = "iron-plate", amount = 3},
-    {type = "item", name = "copper-plate", amount = 1},
-    {type = "item", name = "iron-stick", amount = 2},
-    {type = "item", name = "iron-gear-wheel", amount = 3}
+    {type = "item", name = "sp-machined-parts", amount = 3},
+    {type = "item", name = "sp-spring", amount = 2},
+    {type = "item", name = "sp-bolts", amount = 6},
+    {type = "item", name = "electric-engine-unit", amount = 2}
   },
-  8)
+  4)
+
+util.recipe.change_recipe_ingredients("submachine-gun",
+  {
+    {type = "item", name = "iron-plate", amount = 1},
+    {type = "item", name = "sp-spring", amount = 1},
+    {type = "item", name = "iron-stick", amount = 2},
+    {type = "item", name = "sp-lead-slab", amount = 1},
+  },
+  3)
 
 util.recipe.change_recipe_ingredients("shotgun",
   {
@@ -778,7 +806,7 @@ util.recipe.change_recipe_ingredients("shotgun",
     {type = "item", name = "sp-spring", amount = 1},
     {type = "item", name = "sp-machined-parts", amount = 3}
   },
-  10)
+  4)
 
 util.recipe.change_recipe_ingredients("combat-shotgun",
   {
@@ -788,7 +816,7 @@ util.recipe.change_recipe_ingredients("combat-shotgun",
     {type = "item", name = "sp-machined-parts", amount = 6},
     {type = "item", name = "carbon", amount = 1}
   },
-  12)
+  6)
 
 util.recipe.change_recipe_ingredients("piercing-rounds-magazine",
   {
@@ -797,7 +825,7 @@ util.recipe.change_recipe_ingredients("piercing-rounds-magazine",
     {type = "item", name = "sp-alumina", amount = 1},
     {type = "item", name = "carbon", amount = 1}
   },
-  3)
+  1.5)
 
 util.recipe.change_recipe_ingredients("uranium-rounds-magazine",
   {

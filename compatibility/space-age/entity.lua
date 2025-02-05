@@ -28,3 +28,6 @@ data.raw.item["crusher"].subgroup = "production-machine"
 
 -- MARK: Change fuel values
 data.raw.item["carbon"].fuel_value = "4MJ"
+
+-- MARK: stack size
+data.raw.item["crusher"].stack_size = 50

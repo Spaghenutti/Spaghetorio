@@ -1465,12 +1465,12 @@ data:extend({
   {
     type = "item",
     name = "sp-iron-beam",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/krastorio/icons/items/iron-beam.png",
+    icon = "__base__/graphics/icons/steel-plate.png",
     icon_size = 64,
     scale = 0.5,
     subgroup = "raw-material",
     order = "beam-[iron-beam]",
-    stack_size = 50
+    stack_size = 100
   },
   {
     type = "item",
@@ -1480,7 +1480,7 @@ data:extend({
     scale = 0.5,
     subgroup = "raw-material",
     order = "beam-[steel-beam]",
-    stack_size = 50
+    stack_size = 100
   },
   {
     type = "item",
