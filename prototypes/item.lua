@@ -5923,7 +5923,7 @@ data:extend({
     icon_mipmaps = 4,
     subgroup = "production-machine",
     order = "d[chemical-stager]",
-    -- place_result = "sp-chemical-stager",
+    place_result = "sp-chemical-stager",
     stack_size = 50,
   },
   {

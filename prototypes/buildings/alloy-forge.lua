@@ -1,5 +1,4 @@
 
-
 local hit_effects = require("__base__/prototypes/entity/hit-effects")
 local sounds = require("__base__/prototypes/entity/sounds")
 
@@ -170,17 +169,6 @@ data:extend({
       type = "electric",
       usage_priority = "secondary-input",
       emissions_per_minute = {pollution = 4},
-      smoke =
-      {
-        {
-          name = "smoke",
-          deviation = {0.1, 0.1},
-          frequency = 5,
-          position = {3, -2.5},
-          starting_vertical_speed = 0.08,
-          starting_frame_deviation = 60
-        }
-      }
     },
     energy_usage = "2000kW",
     perceived_performance = {minimum = 0.25, maximum = 20},

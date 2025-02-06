@@ -1,5 +1,4 @@
 
-
 local hit_effects = require("__base__/prototypes/entity/hit-effects")
 local sounds = require("__base__/prototypes/entity/sounds")
 
@@ -13,7 +12,7 @@ local sounds = require("__base__/prototypes/entity/sounds")
 
 local graphics_frame_count = 80
 local graphics_animation_speed = 0.7
-local graphics_shift = {0, 0}
+local graphics_shift = {0, -0.5}
 local graphics_set = {
   animation = {
     layers = {
@@ -78,42 +77,6 @@ local graphics_set = {
         },
       },
     },
-    -- {
-    --   -- light at top of chimney
-    --   light = {
-    --     intensity = 0.65,
-    --     size = 3,
-    --     shift = {-0.5, -2.5},
-    --     color = {r = 0.2, g = 1, b = 0.35},
-    --   },
-    -- },
-    -- {
-    --   light = {
-    --     -- light at bottom left where the atom glows
-    --     intensity = 0.3,
-    --     size = 4,
-    --     shift = {-1, 1.75},
-    --     color = {r = 0.2, g = 1, b = 0.35},
-    --   },
-    -- },
-    -- {
-    --   light = {
-    --     -- light at the right pipe
-    --     intensity = 0.65,
-    --     size = 3,
-    --     shift = {2, -0.5},
-    --     color = {r = 0.2, g = 1, b = 0.35},
-    --   },
-    -- },
-    -- {
-    --   light = {
-    --     -- light at the right bottom red shaft
-    --     intensity = 0.2,
-    --     size = 3,
-    --     shift = {1.75, -1},
-    --     color = {r = 1.0, g = 0.2, b = 0.2},
-    --   },
-    -- },
   },
 }
 
