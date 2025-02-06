@@ -11,7 +11,7 @@ local sounds = require("__base__/prototypes/entity/sounds")
 --   {variation = 7, main_offset = util.by_pixel(-27, 53), shadow_offset = util.by_pixel(-18, 55), show_shadow = false}
 -- })
 
-local graphics_shift = {0, -0.4},
+local graphics_shift = {0, -0.4}
 local graphics_set = {
   animation = {
     layers = {
