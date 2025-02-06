@@ -132,6 +132,10 @@ data:extend({
   },
   {
     type = "recipe-category",
+    name = "quantum-assembling"
+  },
+  {
+    type = "recipe-category",
     name = "crushed-smelting"
   },
   {

@@ -5901,7 +5901,7 @@ data:extend({
     icon_mipmaps = 4,
     subgroup = "production-machine",
     order = "d[quantum-stabilizer]",
-    -- place_result = "sp-quantum-stabilizer",
+    place_result = "sp-quantum-stabilizer",
     stack_size = 50,
   },
   {

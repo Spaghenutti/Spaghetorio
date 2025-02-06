@@ -50,7 +50,7 @@ require("prototypes.buildings.induction-hardening-facility")  -- convector
 require("prototypes.buildings.lumber-mill")
 require("prototypes.buildings.oxidizer")
 require("prototypes.buildings.pathogen-lab")
--- require("prototypes.buildings.quantum-stabilizer")
+require("prototypes.buildings.quantum-stabilizer")
 
 -- Entitites
 require("prototypes.entities.antimatter-reactor-remnant")
