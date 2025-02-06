@@ -81,7 +81,7 @@ def get_used_image_paths() -> List[str]:
 
 def create_zip() -> None:
     """
-
+    Creates zip file containing all needed files for running the mod
     """
     zip_path = fr"{TARGET_PATH}\Spaghetorio_{get_version_from_info_json()}.zip"
     with zipfile.ZipFile(zip_path, "w") as z:
@@ -104,17 +104,6 @@ def create_zip() -> None:
                 image_lua_relative_path = relative_path.replace(".png", ".lua")
                 if os.path.exists(image_lua_relative_path):
                     z.write(used_image_path.replace(".png", ".lua"), fr"Spaghetorio\{image_lua_relative_path}")
-
-            # Add script file to image file. Many graphics do not have .lua file
-            # print(relative_path)
-            # if os.path.exists(relative_path.replace(".png", ".lua")):
-            #     print(relative_path.replace(".png", ".lua"))
-            #     z.write(used_image_path.replace(".png", ".lua"), fr"Spaghetorio\{relative_path.replace(".png", ".lua")}")
-            # try:
-            #     z.write(used_image_path.replace(".png", ".lua"), fr"Spaghetorio\{relative_path.replace(".png", ".lua")}")
-            # except FileNotFoundError:
-            #     # Many graphics do not have .lua file
-            #     pass
 
 
 if __name__ == "__main__":

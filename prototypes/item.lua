@@ -5890,7 +5890,7 @@ data:extend({
     icon_mipmaps = 4,
     subgroup = "production-machine",
     order = "d[breeder-reactor]",
-    -- place_result = "sp-breeder-reactor",
+    place_result = "sp-breeder-reactor",
     stack_size = 50,
   },
   {

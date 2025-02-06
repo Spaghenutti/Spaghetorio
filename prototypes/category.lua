@@ -108,6 +108,10 @@ data:extend({
   },
   {
     type = "recipe-category",
+    name = "atom-breeding"
+  },
+  {
+    type = "recipe-category",
     name = "crushed-smelting"
   },
   {

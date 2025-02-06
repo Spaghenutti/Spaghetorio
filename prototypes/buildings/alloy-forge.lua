@@ -11,6 +11,8 @@ local sounds = require("__base__/prototypes/entity/sounds")
 --   {variation = 7, main_offset = util.by_pixel(-27, 53), shadow_offset = util.by_pixel(-18, 55), show_shadow = false}
 -- })
 
+local graphics_frame_count = 120
+local graphics_animation_speed = 0.25
 local graphics_shift = {0, -0.4}
 local graphics_set = {
   animation = {
@@ -20,8 +22,8 @@ local graphics_set = {
         width = 2160 / 8,
         height = 2320 / 8,
         shift = graphics_shift,
-        frame_count = 120,
-        animation_speed = 0.25,
+        frame_count = graphics_frame_count,
+        animation_speed = graphics_animation_speed,
         stripes =
         {
           {
@@ -43,9 +45,9 @@ local graphics_set = {
         height = 400,
         shift = graphics_shift,
         frame_count = 1,
-        repeat_count = 120,
+        repeat_count = graphics_frame_count,
         draw_as_shadow = true,
-        animation_speed = 0.25,
+        animation_speed = graphics_animation_speed,
       },
     },
   },
@@ -58,9 +60,9 @@ local graphics_set = {
         width = 2160 / 8,
         height = 2320 / 8,
         shift = graphics_shift,
-        frame_count = 120,
-        draw_as_light = true,
-        animation_speed = 0.25,
+        frame_count = graphics_frame_count,
+        draw_as_light = false,
+        animation_speed = graphics_animation_speed,
         blend_mode = "additive",
         stripes =
         {
