@@ -68,17 +68,6 @@ data:extend({
         minimum_intensity = 0.6,
         maximum_intensity = 0.95
       },
-      smoke =
-      {
-        {
-          name = "smoke",
-          deviation = {0.1, 0.1},
-          frequency = 5,
-          position = {-0.3, -3.7},
-          starting_vertical_speed = 0.08,
-          starting_frame_deviation = 60
-        }
-      }
     },
     energy_usage = "300kW",
     module_slots = 3,

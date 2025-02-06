@@ -61,7 +61,7 @@ local graphics_set = {
         height = 2320 / 8,
         shift = graphics_shift,
         frame_count = graphics_frame_count,
-        draw_as_light = false,
+        draw_as_glow = true,
         animation_speed = graphics_animation_speed,
         blend_mode = "additive",
         stripes =
@@ -77,15 +77,6 @@ local graphics_set = {
             height_in_frames = 7,
           },
         },
-      },
-    },
-    {
-      -- constant_speed = true,
-      light = {
-        intensity = 0.65,
-        size = 8,
-        -- shift = { 1.29, 2 },
-        color = { r = 1, g = 0.35, b = 0.2 },
       },
     },
   },
@@ -178,7 +169,18 @@ data:extend({
     {
       type = "electric",
       usage_priority = "secondary-input",
-      emissions_per_minute = {pollution = 4}
+      emissions_per_minute = {pollution = 4},
+      smoke =
+      {
+        {
+          name = "smoke",
+          deviation = {0.1, 0.1},
+          frequency = 5,
+          position = {3, -2.5},
+          starting_vertical_speed = 0.08,
+          starting_frame_deviation = 60
+        }
+      }
     },
     energy_usage = "2000kW",
     perceived_performance = {minimum = 0.25, maximum = 20},

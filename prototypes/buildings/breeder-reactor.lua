@@ -13,7 +13,7 @@ local sounds = require("__base__/prototypes/entity/sounds")
 
 local graphics_frame_count = 80
 local graphics_animation_speed = 0.7
-local graphics_shift = {0, -0.4}
+local graphics_shift = {0, 0}
 local graphics_set = {
   animation = {
     layers = {
@@ -60,7 +60,7 @@ local graphics_set = {
         height = 1920 / 8,
         shift = graphics_shift,
         frame_count = graphics_frame_count,
-        draw_as_light = false,
+        draw_as_glow = true,
         animation_speed = graphics_animation_speed,
         blend_mode = "additive",
         stripes =
@@ -78,15 +78,42 @@ local graphics_set = {
         },
       },
     },
-    {
-      -- constant_speed = true,
-      light = {
-        intensity = 0.65,
-        size = 8,
-        -- shift = { 1.29, 2 },
-        color = { r = 0.2, g = 1, b = 0.35 },
-      },
-    },
+    -- {
+    --   -- light at top of chimney
+    --   light = {
+    --     intensity = 0.65,
+    --     size = 3,
+    --     shift = {-0.5, -2.5},
+    --     color = {r = 0.2, g = 1, b = 0.35},
+    --   },
+    -- },
+    -- {
+    --   light = {
+    --     -- light at bottom left where the atom glows
+    --     intensity = 0.3,
+    --     size = 4,
+    --     shift = {-1, 1.75},
+    --     color = {r = 0.2, g = 1, b = 0.35},
+    --   },
+    -- },
+    -- {
+    --   light = {
+    --     -- light at the right pipe
+    --     intensity = 0.65,
+    --     size = 3,
+    --     shift = {2, -0.5},
+    --     color = {r = 0.2, g = 1, b = 0.35},
+    --   },
+    -- },
+    -- {
+    --   light = {
+    --     -- light at the right bottom red shaft
+    --     intensity = 0.2,
+    --     size = 3,
+    --     shift = {1.75, -1},
+    --     color = {r = 1.0, g = 0.2, b = 0.2},
+    --   },
+    -- },
   },
 }
 
@@ -164,7 +191,7 @@ data:extend({
     damaged_trigger_effect = hit_effects.entity(),
     -- drawing_box_vertical_extension = 1.3,
     -- effect_receiver = {base_effect = {productivity = 0.5}},
-    module_slots = 6,
+    module_slots = 2,
     icon_draw_specification = {scale = 1.5, shift = {0, -0.5}},
     icons_positioning =
     {
