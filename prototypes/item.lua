@@ -5956,7 +5956,7 @@ data:extend({
     icon_mipmaps = 4,
     subgroup = "production-machine",
     order = "d[cyclotron]",
-    -- place_result = "sp-cyclotron",
+    place_result = "sp-cyclotron",
     stack_size = 50,
   },
   {

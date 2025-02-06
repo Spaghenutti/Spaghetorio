@@ -112,6 +112,10 @@ data:extend({
   },
   {
     type = "recipe-category",
+    name = "atom-smashing"
+  },
+  {
+    type = "recipe-category",
     name = "crushed-smelting"
   },
   {
