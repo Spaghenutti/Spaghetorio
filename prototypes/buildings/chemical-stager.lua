@@ -136,7 +136,7 @@ data:extend({
     damaged_trigger_effect = hit_effects.entity(),
     effect_receiver = {base_effect = {productivity = 0.2}},
     module_slots = 6,
-    icon_draw_specification = {scale = 2, shift = {0, 0.5}},
+    icon_draw_specification = {scale = 1.5, shift = {0, 0.5}},
     icons_positioning =
     {
       {inventory_index = defines.inventory.assembling_machine_modules, shift = {0, 1.25}}

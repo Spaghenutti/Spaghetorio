@@ -11,7 +11,7 @@ local sounds = require("__base__/prototypes/entity/sounds")
 -- })
 
 local graphics_frame_count = 60
-local graphics_animation_speed = 0.4
+local graphics_animation_speed = 0.7
 local graphics_shift = {0, 0}
 local graphics_scale = 0.8
 local graphics_set = {
@@ -111,14 +111,14 @@ data:extend({
     selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
     damaged_trigger_effect = hit_effects.entity(),
     module_slots = 6,
-    icon_draw_specification = {scale = 2, shift = {0, 0.5}},
+    icon_draw_specification = {scale = 1, shift = {0, 0}},
     icons_positioning =
     {
       {inventory_index = defines.inventory.assembling_machine_modules, shift = {0, 1.25}}
     },
-    allowed_effects = {"consumption", "speed", "productivity", "pollution", "quality"},
+    allowed_effects = {"consumption", "productivity", "pollution"},
     crafting_categories = {"chemistry", "freezing", "thawing"},
-    crafting_speed = 2,
+    crafting_speed = 1,
     energy_source =
     {
       type = "electric",

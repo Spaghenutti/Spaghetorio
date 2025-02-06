@@ -124,6 +124,10 @@ data:extend({
   },
   {
     type = "recipe-category",
+    name = "gravity-assembling"  -- unfreeziing
+  },
+  {
+    type = "recipe-category",
     name = "crushed-smelting"
   },
   {

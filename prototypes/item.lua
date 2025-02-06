@@ -5945,7 +5945,7 @@ data:extend({
     icon_mipmaps = 4,
     subgroup = "production-machine",
     order = "d[gravity-assembler]",
-    -- place_result = "sp-gravity-assembler",
+    place_result = "sp-gravity-assembler",
     stack_size = 50,
   },
   {
