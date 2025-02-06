@@ -5912,7 +5912,7 @@ data:extend({
     icon_mipmaps = 4,
     subgroup = "production-machine",
     order = "d[pathogen-lab]",
-    -- place_result = "sp-pathogen-lab",
+    place_result = "sp-pathogen-lab",
     stack_size = 50,
   },
   {

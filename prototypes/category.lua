@@ -124,7 +124,11 @@ data:extend({
   },
   {
     type = "recipe-category",
-    name = "gravity-assembling"  -- unfreeziing
+    name = "gravity-assembling"
+  },
+  {
+    type = "recipe-category",
+    name = "pathogen-growing"
   },
   {
     type = "recipe-category",

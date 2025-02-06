@@ -49,7 +49,7 @@ require("prototypes.buildings.gravity-assembler")
 require("prototypes.buildings.induction-hardening-facility")  -- convector
 require("prototypes.buildings.lumber-mill")
 require("prototypes.buildings.oxidizer")
--- require("prototypes.buildings.pathogen-lab")
+require("prototypes.buildings.pathogen-lab")
 -- require("prototypes.buildings.quantum-stabilizer")
 
 -- Entitites
