@@ -5856,7 +5856,7 @@ data:extend({
     icon_mipmaps = 4,
     subgroup = "smelting-machine",
     order = "c[electric-furnace]-f[alloy-forge]",
-    -- place_result = "sp-alloy-forge",
+    place_result = "sp-alloy-forge",
     stack_size = 50,
   },
   {
@@ -5929,7 +5929,7 @@ data:extend({
   {
     type = "item",
     name = "sp-freezer",  -- #ForRegEx# - building
-    icon = "__Spaghetorio__/graphics/icons/chemical-stager.png",
+    icon = "__Spaghetorio__/graphics/icons/freezer.png",
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "production-machine",

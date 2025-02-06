@@ -81,6 +81,7 @@ data:extend({
       }
     },
     energy_usage = "300kW",
-    module_slots = 3
+    module_slots = 3,
+    icon_draw_specification = {scale = 1.5, shift = {0, 0}},
   }
 })
