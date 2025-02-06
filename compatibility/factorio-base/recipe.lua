@@ -1379,10 +1379,10 @@ util.recipe.change_recipe_ingredients("assembling-machine-1",
 
 util.recipe.change_recipe_ingredients("assembling-machine-2",
   {
-    {type = "item", name = "steel-plate", amount = 20},
+    {type = "item", name = "sp-aluminum-frame", amount = 20},
     {type = "item", name = "sp-steel-beam", amount = 24},
     {type = "item", name = "electronic-circuit", amount = 10},
-    {type = "item", name = "engine-unit", amount = 4},
+    {type = "item", name = "electric-engine-unit", amount = 6},
     {type = "item", name = "stone-brick", amount = 32},
     {type = "item", name = "sp-bolts", amount = 24},
     {type = "item", name = "sp-heatsink", amount = 6}

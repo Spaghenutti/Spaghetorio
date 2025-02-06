@@ -3753,8 +3753,7 @@ data:extend({
       },
     },
     prerequisites = {
-      "sp-material-science-pack-1",
-      "sp-electronic-science-pack-1"
+      "advanced-circuit"
     },
     unit =
     {

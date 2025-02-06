@@ -5850,6 +5850,28 @@ data:extend({
   -- Smelting machine
   {
     type = "item",
+    name = "sp-alloy-forge",
+    icon = "__Spaghetorio__/graphics/icons/alloy-forge.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "smelting-machine",
+    order = "c[electric-furnace]-f[alloy-forge]",
+    -- place_result = "sp-alloy-forge",
+    stack_size = 50,
+  },
+  {
+    type = "item",
+    name = "sp-arc-furnace",
+    icon = "__Spaghetorio__/graphics/icons/arc-furnace.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "smelting-machine",
+    order = "c[electric-furnace]-f[arc-furnace]",
+    -- place_result = "sp-arc-furnace",
+    stack_size = 50,
+  },
+  {
+    type = "item",
     name = "sp-kr-advanced-furnace",
     icon = "__Spaghetorio__/graphics/krastorio/icons/entities/advanced-furnace.png",
     icon_size = 128,
@@ -5860,6 +5882,116 @@ data:extend({
     stack_size = 50,
   },
   -- Production machines
+  {
+    type = "item",
+    name = "sp-breeder-reactor",  -- #ForRegEx# - building
+    icon = "__Spaghetorio__/graphics/icons/breeder-reactor.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "production-machine",
+    order = "d[breeder-reactor]",
+    -- place_result = "sp-breeder-reactor",
+    stack_size = 50,
+  },
+  {
+    type = "item",
+    name = "sp-quantum-stabilizer",  -- #ForRegEx# - building
+    icon = "__Spaghetorio__/graphics/icons/quantum-stabilizer.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "production-machine",
+    order = "d[quantum-stabilizer]",
+    -- place_result = "sp-quantum-stabilizer",
+    stack_size = 50,
+  },
+  {
+    type = "item",
+    name = "sp-pathogen-lab",  -- #ForRegEx# - building
+    icon = "__Spaghetorio__/graphics/icons/pathogen-lab.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "production-machine",
+    order = "d[pathogen-lab]",
+    -- place_result = "sp-pathogen-lab",
+    stack_size = 50,
+  },
+  {
+    type = "item",
+    name = "sp-chemical-stager",  -- #ForRegEx# - building
+    icon = "__Spaghetorio__/graphics/icons/chemical-stager.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "production-machine",
+    order = "d[chemical-stager]",
+    -- place_result = "sp-chemical-stager",
+    stack_size = 50,
+  },
+  {
+    type = "item",
+    name = "sp-freezer",  -- #ForRegEx# - building
+    icon = "__Spaghetorio__/graphics/icons/chemical-stager.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "production-machine",
+    order = "d[freezer]",
+    -- place_result = "sp-freezer",
+    stack_size = 50,
+  },
+  {
+    type = "item",
+    name = "sp-gravity-assembler",  -- #ForRegEx# - building
+    icon = "__Spaghetorio__/graphics/icons/gravity-assembler.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "production-machine",
+    order = "d[gravity-assembler]",
+    -- place_result = "sp-gravity-assembler",
+    stack_size = 50,
+  },
+  {
+    type = "item",
+    name = "sp-cyclotron",  -- #ForRegEx# - building
+    icon = "__Spaghetorio__/graphics/icons/cyclotron.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "production-machine",
+    order = "d[cyclotron]",
+    -- place_result = "sp-cyclotron",
+    stack_size = 50,
+  },
+  {
+    type = "item",
+    name = "sp-oxidizer",  -- #ForRegEx# - building
+    icon = "__Spaghetorio__/graphics/icons/oxidizer.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "production-machine",
+    order = "d[oxidizer]",
+    -- place_result = "sp-oxidizer",
+    stack_size = 50,
+  },
+  {
+    type = "item",
+    name = "sp-induction-hardening-facility",  -- #ForRegEx# - building
+    icon = "__Spaghetorio__/graphics/icons/induction-hardening-facility.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "production-machine",
+    order = "d[induction-hardening-facility]",
+    -- place_result = "sp-induction-hardening-facility",
+    stack_size = 50,
+  },
+  -- {
+  --   type = "item",
+  --   name = "sp-research-center",  -- #ForRegEx# - building
+  --   icon = "__Spaghetorio__/graphics/icons/research-center.png",
+  --   icon_size = 64,
+  --   icon_mipmaps = 4,
+  --   subgroup = "production-machine",
+  --   order = "d[research-center]",
+  --   -- place_result = "sp-research-center",
+  --   stack_size = 50,
+  -- },
   {
     type = "item",
     name = "sp-lumber-mill",  -- #ForRegEx# - building

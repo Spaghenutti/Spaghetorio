@@ -3905,7 +3905,7 @@ data:extend({
     name = "sp-aluminum-sheet",  -- #ForRegEx# - recipe
     category = "sp-kr-electrolysis",
     enabled = false,
-    energy_required = 4,
+    energy_required = 3,
     ingredients = {
       {type = "item", name = "sp-alumina", amount = 3}
     },
@@ -5684,7 +5684,7 @@ data:extend({
     ingredients =
     {
       {type = "item", name = "sp-blank-tech-card", amount = 5},
-      {type = "item", name = "stone", amount = 10},
+      {type = "item", name = "wood", amount = 5},
       {type = "item", name = "sp-sand", amount = 10},
       {type = "item", name = "sp-quartz", amount = 5},
       {type = "fluid", name = "water", amount = 50},
