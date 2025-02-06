@@ -37,40 +37,6 @@ data:extend({
           height_in_frames = 5,
         },
       },
-      hr_version = {
-        width = 628,
-        height = 720,
-        frame_count = 100,
-        priority = "very-low",
-        flags = { "linear-magnification" },
-        shift = util.by_pixel(0.5, -122.5), --shift = util.by_pixel(0.5, -62.5), shifted by 60 due to scaling and centering
-        draw_as_glow = true,
-        animation_speed = 0.5 * 0.75,
-        scale = 1.5,
-        dice_y = 5,
-        stripes = {
-          {
-            filename = "__Spaghetorio__/graphics/krastorio/entities/explosions/hr-matter-explosion-1.png",
-            width_in_frames = 5,
-            height_in_frames = 5,
-          },
-          {
-            filename = "__Spaghetorio__/graphics/krastorio/entities/explosions/hr-matter-explosion-2.png",
-            width_in_frames = 5,
-            height_in_frames = 5,
-          },
-          {
-            filename = "__Spaghetorio__/graphics/krastorio/entities/explosions/hr-matter-explosion-3.png",
-            width_in_frames = 5,
-            height_in_frames = 5,
-          },
-          {
-            filename = "__Spaghetorio__/graphics/krastorio/entities/explosions/hr-matter-explosion-4.png",
-            width_in_frames = 5,
-            height_in_frames = 5,
-          },
-        },
-      },
     },
     sound = {
       aggregation = {
@@ -143,40 +109,6 @@ data:extend({
           filename = "__Spaghetorio__/graphics/krastorio/entities/explosions/matter-explosion-4.png",
           width_in_frames = 5,
           height_in_frames = 5,
-        },
-      },
-      hr_version = {
-        width = 628,
-        height = 720,
-        frame_count = 100,
-        priority = "very-low",
-        flags = { "linear-magnification" },
-        shift = util.by_pixel(0.5, -122.5), --shift = util.by_pixel(0.5, -62.5), shifted by 60 due to scaling and centering
-        draw_as_glow = true,
-        animation_speed = 0.5 * 0.75,
-        scale = 1,
-        dice_y = 5,
-        stripes = {
-          {
-            filename = "__Spaghetorio__/graphics/krastorio/entities/explosions/hr-matter-explosion-1.png",
-            width_in_frames = 5,
-            height_in_frames = 5,
-          },
-          {
-            filename = "__Spaghetorio__/graphics/krastorio/entities/explosions/hr-matter-explosion-2.png",
-            width_in_frames = 5,
-            height_in_frames = 5,
-          },
-          {
-            filename = "__Spaghetorio__/graphics/krastorio/entities/explosions/hr-matter-explosion-3.png",
-            width_in_frames = 5,
-            height_in_frames = 5,
-          },
-          {
-            filename = "__Spaghetorio__/graphics/krastorio/entities/explosions/hr-matter-explosion-4.png",
-            width_in_frames = 5,
-            height_in_frames = 5,
-          },
         },
       },
     },

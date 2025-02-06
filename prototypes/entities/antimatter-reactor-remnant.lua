@@ -23,16 +23,6 @@ data:extend({
       frame_count = 1,
       direction_count = 1,
       scale = 1.1,
-      hr_version = {
-        filename = "__Spaghetorio__/graphics/krastorio/entities/remnants/antimatter-reactor/hr-antimatter-reactor-remnant.png",
-        line_length = 1,
-        width = 600,
-        height = 600,
-        frame_count = 1,
-        direction_count = 1,
-        scale = 0.55,
-      },
     }),
   },
 })
-  

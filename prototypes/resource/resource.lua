@@ -136,7 +136,7 @@ local function fluid_resource(resource_parameters, autoplace_parameters)
     stage_counts = {0},
     stages =
     {
-      sheet = util.sprite_load(resource_parameters.stages_filename,
+      sheet = util.sprite_load(resource_parameters.stages_filename:gsub(".png", ""),  -- It is so dissapointing to see that here i have to remove the .png for this to work...
       {
         priority = "extra-high",
         scale = 0.5,
@@ -548,7 +548,7 @@ data:extend({
     {
       name = "mineral-water",
       icon = "__Spaghetorio__/graphics/krastorio/icons/fluids/mineral-water.png",
-      stages_filename = "__Spaghetorio__/graphics/krastorio/resources/mineral-water",  -- It is so dissapointing to see that here i have to remove the .png for this to work...
+      stages_filename = "__Spaghetorio__/graphics/krastorio/resources/mineral-water.png",
       stages_filename_count = 8,
       order = "a",
       map_color = {r=0.0, g=0.1, b=0.6},
@@ -561,7 +561,7 @@ data:extend({
     {
       name = "iodine-brine",
       icon = "__Spaghetorio__/graphics/icons/iodine-brine.png",
-      stages_filename = "__space-age__/graphics/entity/fluorine-vent/fluorine-vent",  -- It is so dissapointing to see that here i have to remove the .png for this to work...
+      stages_filename = "__space-age__/graphics/entity/fluorine-vent/fluorine-vent.png",
       stages_filename_count = 4,
       order = "a",
       map_color = {r=1, g=1, b=0.6},

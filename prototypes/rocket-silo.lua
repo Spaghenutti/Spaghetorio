@@ -8,13 +8,6 @@ blunagium_rocket.rocket_sprite = util.add_shift_offset(util.by_pixel(0, 32*3.5),
   width = 154,
   height = 300,
   shift = util.by_pixel(-4, -28),
-  hr_version = {
-    filename = "__Spaghetorio__/graphics/rocket/hr-blunagium-rocket.png",  -- Wololo
-    width = 310,
-    height = 596,
-    shift = util.by_pixel(-5, -27),
-    scale = 0.5
-  }
 })
 blunagium_rocket.rocket_flame_animation = util.add_shift_offset(util.by_pixel(-2, 257),
 {
@@ -29,19 +22,6 @@ blunagium_rocket.rocket_flame_animation = util.add_shift_offset(util.by_pixel(-2
   animation_speed = 0.5,
   scale = 0.4,
   shift = util.by_pixel(-0.5, -2),
-  hr_version = {
-    filename = "__base__/graphics/entity/rocket-silo/hr-10-jet-flame.png",
-    priority = "medium",
-    tint = {r=0.2, g=0.2, b=1, a=0},
-    blend_mode = "additive",
-    width = 172,
-    height = 256,
-    frame_count = 8,
-    line_length = 8,
-    animation_speed = 0.5,
-    scale = 0.4/2,
-    shift = util.by_pixel(-1, -2)
-  }
 })
 blunagium_rocket.rocket_flame_left_animation = util.add_shift_offset(util.by_pixel(-30, 233),
 {
@@ -56,19 +36,6 @@ blunagium_rocket.rocket_flame_left_animation = util.add_shift_offset(util.by_pix
   animation_speed = 0.5,
   scale = 0.35,
   shift = util.by_pixel(-0.5, -2),
-  hr_version = {
-    filename = "__base__/graphics/entity/rocket-silo/hr-10-jet-flame.png",
-    priority = "medium",
-    tint = {r=0.2, g=0.2, b=1, a=1},
-    blend_mode = "additive",
-    width = 172,
-    height = 256,
-    frame_count = 8,
-    line_length = 8,
-    animation_speed = 0.5,
-    scale = 0.35/2,
-    shift = util.by_pixel(-1, -2)
-  }
 })
 blunagium_rocket.rocket_flame_left_rotation = 0
 blunagium_rocket.rocket_flame_right_animation = util.add_shift_offset(util.by_pixel(25, 235),
@@ -84,19 +51,6 @@ blunagium_rocket.rocket_flame_right_animation = util.add_shift_offset(util.by_pi
   animation_speed = 0.5,
   scale = 0.35,
   shift = util.by_pixel(-0.5, -2),
-  hr_version = {
-    filename = "__base__/graphics/entity/rocket-silo/hr-10-jet-flame.png",
-    priority = "medium",
-    tint = {r=0.2, g=0.2, b=1, a=1},
-    blend_mode = "additive",
-    width = 172,
-    height = 256,
-    frame_count = 8,
-    line_length = 8,
-    animation_speed = 0.5,
-    scale = 0.35/2,
-    shift = util.by_pixel(-1, -2)
-  }
 })
 blunagium_rocket.rocket_flame_right_rotation = 0
 blunagium_rocket.rocket_smoke_top1_animation = util.add_shift_offset(util.by_pixel(20, 220),
@@ -111,18 +65,6 @@ blunagium_rocket.rocket_smoke_top1_animation = util.add_shift_offset(util.by_pix
   animation_speed = 0.5,
   scale = 1.5*1.3,
   shift = util.by_pixel(-2, -2),
-  hr_version = {
-    filename = "__base__/graphics/entity/rocket-silo/hr-12-rocket-smoke.png",
-    priority = "medium",
-    tint = { r = 0.8, g = 0.8, b = 1, a = 0.8 },
-    width = 80,
-    height = 286,
-    frame_count = 24,
-    line_length = 8,
-    animation_speed = 0.5,
-    scale = 1.5/2*1.3,
-    shift = util.by_pixel(-1, -3)
-  }
 })
 blunagium_rocket.rocket_smoke_top2_animation = util.add_shift_offset(util.by_pixel(-22, 240),
 {
@@ -136,18 +78,6 @@ blunagium_rocket.rocket_smoke_top2_animation = util.add_shift_offset(util.by_pix
   animation_speed = 0.5,
   scale = 1.5*1.3,
   shift = util.by_pixel(-2, -2),
-  hr_version = {
-    filename = "__base__/graphics/entity/rocket-silo/hr-12-rocket-smoke.png",
-    priority = "medium",
-    tint = { r = 0.8, g = 0.8, b = 1, a = 0.8 },
-    width = 80,
-    height = 286,
-    frame_count = 24,
-    line_length = 8,
-    animation_speed = 0.5,
-    scale = 1.5/2*1.3,
-    shift = util.by_pixel(-1, -3)
-  }
 })
 blunagium_rocket.rocket_smoke_top3_animation = util.add_shift_offset(util.by_pixel(42, 200),
 {
@@ -161,18 +91,6 @@ blunagium_rocket.rocket_smoke_top3_animation = util.add_shift_offset(util.by_pix
   animation_speed = 0.5,
   scale = 1.5*1.3,
   shift = util.by_pixel(-2, -2),
-  hr_version = {
-    filename = "__base__/graphics/entity/rocket-silo/hr-12-rocket-smoke.png",
-    priority = "medium",
-    tint = { r = 0.8, g = 0.8, b = 1, a = 0.8 },
-    width = 80,
-    height = 286,
-    frame_count = 24,
-    line_length = 8,
-    animation_speed = 0.5,
-    scale = 1.5/2*1.3,
-    shift = util.by_pixel(-1, -3)
-  }
 })
 blunagium_rocket.rocket_smoke_bottom1_animation = util.add_shift_offset(util.by_pixel(-40, 153),
 {
@@ -186,18 +104,6 @@ blunagium_rocket.rocket_smoke_bottom1_animation = util.add_shift_offset(util.by_
   animation_speed = 0.5,
   scale = 1.5*1.3,
   shift = util.by_pixel(-2, -2),
-  hr_version = {
-    filename = "__base__/graphics/entity/rocket-silo/hr-12-rocket-smoke.png",
-    priority = "medium",
-    tint = { r = 0.8, g = 0.8, b = 1, a = 0.7 },
-    width = 80,
-    height = 286,
-    frame_count = 24,
-    line_length = 8,
-    animation_speed = 0.5,
-    scale = 1.5/2*1.3,
-    shift = util.by_pixel(-1, -3)
-  }
 })
 blunagium_rocket.rocket_smoke_bottom2_animation = util.add_shift_offset(util.by_pixel(40, 155),
 {
@@ -211,18 +117,6 @@ blunagium_rocket.rocket_smoke_bottom2_animation = util.add_shift_offset(util.by_
   animation_speed = 0.5,
   scale = 1.5*1.3,
   shift = util.by_pixel(-2, -2),
-  hr_version = {
-    filename = "__base__/graphics/entity/rocket-silo/hr-12-rocket-smoke.png",
-    priority = "medium",
-    tint = { r = 0.8, g = 0.8, b = 1, a = 0.7 },
-    width = 80,
-    height = 286,
-    frame_count = 24,
-    line_length = 8,
-    animation_speed = 0.5,
-    scale = 1.5/2*1.3,
-    shift = util.by_pixel(-1, -3)
-  }
 })
 
 blunagium_rocket_silo = table.deepcopy(data.raw["rocket-silo"]["rocket-silo"])
@@ -238,28 +132,12 @@ blunagium_rocket_silo.base_day_sprite = {
   width = 608,
   height = 596,
   shift = util.by_pixel(2, -2),
-  hr_version =
-  {
-    filename = "__Spaghetorio__/graphics/rocket/blunagium-rocket-silo.png",
-    width = 608,
-    height = 596,
-    shift = util.by_pixel(3, -1),
-    scale = 0.5
-  }
 }
 blunagium_rocket_silo.base_front_sprite = {
   filename = "__Spaghetorio__/graphics/rocket/blunagium-rocket-silo-front.png",
   width = 292,
   height = 132,
   shift = util.by_pixel(-2, 78),
-  hr_version =
-  {
-    filename = "__Spaghetorio__/graphics/rocket/blunagium-rocket-silo-front.png",
-    width = 580,
-    height = 262,
-    shift = util.by_pixel(-1, 78),
-    scale = 0.5
-  }
 }
 
 -- MARK: grobgnum rocket
@@ -271,13 +149,6 @@ grobgnum_rocket.rocket_sprite = util.add_shift_offset(util.by_pixel(0, 32*3.5), 
   width = 154,
   height = 300,
   shift = util.by_pixel(-4, -28),
-  hr_version = {
-    filename = "__Spaghetorio__/graphics/rocket/hr-grobgnum-rocket.png",  -- Wololo
-    width = 310,
-    height = 596,
-    shift = util.by_pixel(-5, -27),
-    scale = 0.5
-  }
 })
 grobgnum_rocket.rocket_flame_animation = util.add_shift_offset(util.by_pixel(-5, 260),
 {
@@ -292,19 +163,6 @@ grobgnum_rocket.rocket_flame_animation = util.add_shift_offset(util.by_pixel(-5,
   animation_speed = 0.5,
   scale = 1.3,
   shift = util.by_pixel(-0.5, -2),
-  hr_version = {
-    filename = "__base__/graphics/entity/rocket-silo/hr-10-jet-flame.png",
-    priority = "medium",
-    tint = {r=0.6, g=0.5, b=1, a=0},
-    blend_mode = "additive",
-    width = 172,
-    height = 256,
-    frame_count = 8,
-    line_length = 8,
-    animation_speed = 0.5,
-    scale = 1.3/2,
-    shift = util.by_pixel(-1, -2)
-  }
 })
 grobgnum_rocket.rocket_flame_left_animation = util.add_shift_offset(util.by_pixel(-5, 260),
 {
@@ -319,19 +177,6 @@ grobgnum_rocket.rocket_flame_left_animation = util.add_shift_offset(util.by_pixe
   animation_speed = 0.5,
   scale = 0.8,
   shift = util.by_pixel(-0.5, -2),
-  hr_version = {
-    filename = "__base__/graphics/entity/rocket-silo/hr-10-jet-flame.png",
-    priority = "medium",
-    tint = {r=0.2, g=1, b=0.1, a=1},
-    blend_mode = "additive",
-    width = 172,
-    height = 256,
-    frame_count = 8,
-    line_length = 8,
-    animation_speed = 0.5,
-    scale = 0.8/2,
-    shift = util.by_pixel(-1, -2)
-  }
 })
 grobgnum_rocket.rocket_flame_left_rotation = 0
 grobgnum_rocket.rocket_flame_right_animation = util.add_shift_offset(util.by_pixel(-5, 260),
@@ -347,19 +192,6 @@ grobgnum_rocket.rocket_flame_right_animation = util.add_shift_offset(util.by_pix
   animation_speed = 0.5,
   scale = 0.35,
   shift = util.by_pixel(-0.5, -2),
-  hr_version = {
-    filename = "__base__/graphics/entity/rocket-silo/hr-10-jet-flame.png",
-    priority = "medium",
-    tint = {r=0.6, g=0.5, b=1, a=1},
-    blend_mode = "additive",
-    width = 172,
-    height = 256,
-    frame_count = 8,
-    line_length = 8,
-    animation_speed = 0.5,
-    scale = 0.35/2,
-    shift = util.by_pixel(-1, -2)
-  }
 })
 grobgnum_rocket.rocket_flame_right_rotation = 0
 grobgnum_rocket.rocket_smoke_top1_animation = util.add_shift_offset(util.by_pixel(-5, 230),
@@ -374,18 +206,6 @@ grobgnum_rocket.rocket_smoke_top1_animation = util.add_shift_offset(util.by_pixe
   animation_speed = 0.5,
   scale = 1.5*1.3,
   shift = util.by_pixel(-2, -2),
-  hr_version = {
-    filename = "__base__/graphics/entity/rocket-silo/hr-12-rocket-smoke.png",
-    priority = "medium",
-    tint = { r = 0.8, g = 0.8, b = 1, a = 0.8 },
-    width = 80,
-    height = 286,
-    frame_count = 24,
-    line_length = 8,
-    animation_speed = 0.5,
-    scale = 1.5/2*1.3,
-    shift = util.by_pixel(-1, -3)
-  }
 })
 grobgnum_rocket.rocket_smoke_top2_animation = util.add_shift_offset(util.by_pixel(-65, 275),
 {
@@ -399,18 +219,6 @@ grobgnum_rocket.rocket_smoke_top2_animation = util.add_shift_offset(util.by_pixe
   animation_speed = 0.5,
   scale = 1.5*1.3,
   shift = util.by_pixel(-2, -2),
-  hr_version = {
-    filename = "__base__/graphics/entity/rocket-silo/hr-12-rocket-smoke.png",
-    priority = "medium",
-    tint = { r = 0.8, g = 0.8, b = 1, a = 0.8 },
-    width = 80,
-    height = 286,
-    frame_count = 24,
-    line_length = 8,
-    animation_speed = 0.5,
-    scale = 1.5/2*1.3,
-    shift = util.by_pixel(-1, -3)
-  }
 })
 grobgnum_rocket.rocket_smoke_top3_animation = util.add_shift_offset(util.by_pixel(53, 280),
 {
@@ -424,18 +232,6 @@ grobgnum_rocket.rocket_smoke_top3_animation = util.add_shift_offset(util.by_pixe
   animation_speed = 0.5,
   scale = 1.5*1.3,
   shift = util.by_pixel(-2, -2),
-  hr_version = {
-    filename = "__base__/graphics/entity/rocket-silo/hr-12-rocket-smoke.png",
-    priority = "medium",
-    tint = { r = 0.8, g = 0.8, b = 1, a = 0.8 },
-    width = 80,
-    height = 286,
-    frame_count = 24,
-    line_length = 8,
-    animation_speed = 0.5,
-    scale = 1.5/2*1.3,
-    shift = util.by_pixel(-1, -3)
-  }
 })
 grobgnum_rocket.rocket_smoke_bottom1_animation = util.add_shift_offset(util.by_pixel(-55, 330),
 {
@@ -449,18 +245,6 @@ grobgnum_rocket.rocket_smoke_bottom1_animation = util.add_shift_offset(util.by_p
   animation_speed = 0.5,
   scale = 1.5*1.3,
   shift = util.by_pixel(-2, -2),
-  hr_version = {
-    filename = "__base__/graphics/entity/rocket-silo/hr-12-rocket-smoke.png",
-    priority = "medium",
-    tint = { r = 0.8, g = 0.8, b = 1, a = 0.7 },
-    width = 80,
-    height = 286,
-    frame_count = 24,
-    line_length = 8,
-    animation_speed = 0.5,
-    scale = 1.5/2*1.3,
-    shift = util.by_pixel(-1, -3)
-  }
 })
 grobgnum_rocket.rocket_smoke_bottom2_animation = util.add_shift_offset(util.by_pixel(45, 330),
 {
@@ -474,18 +258,6 @@ grobgnum_rocket.rocket_smoke_bottom2_animation = util.add_shift_offset(util.by_p
   animation_speed = 0.5,
   scale = 1.5*1.3,
   shift = util.by_pixel(-2, -2),
-  hr_version = {
-    filename = "__base__/graphics/entity/rocket-silo/hr-12-rocket-smoke.png",
-    priority = "medium",
-    tint = { r = 0.8, g = 0.8, b = 1, a = 0.7 },
-    width = 80,
-    height = 286,
-    frame_count = 24,
-    line_length = 8,
-    animation_speed = 0.5,
-    scale = 1.5/2*1.3,
-    shift = util.by_pixel(-1, -3)
-  }
 })
 
 grobgnum_rocket_silo = table.deepcopy(data.raw["rocket-silo"]["rocket-silo"])
@@ -501,28 +273,12 @@ grobgnum_rocket_silo.base_day_sprite = {
   width = 608,
   height = 596,
   shift = util.by_pixel(2, -2),
-  hr_version =
-  {
-    filename = "__Spaghetorio__/graphics/rocket/grobgnum-rocket-silo.png",
-    width = 608,
-    height = 596,
-    shift = util.by_pixel(3, -1),
-    scale = 0.5
-  }
 }
 grobgnum_rocket_silo.base_front_sprite = {
   filename = "__Spaghetorio__/graphics/rocket/grobgnum-rocket-silo-front.png",
   width = 292,
   height = 132,
   shift = util.by_pixel(-2, 78),
-  hr_version =
-  {
-    filename = "__Spaghetorio__/graphics/rocket/grobgnum-rocket-silo-front.png",
-    width = 580,
-    height = 262,
-    shift = util.by_pixel(-1, 78),
-    scale = 0.5
-  }
 }
 
 -- MARK: rukite rocket
@@ -534,13 +290,6 @@ rukite_rocket.rocket_sprite = util.add_shift_offset(util.by_pixel(0, 32*3.5), --
   width = 154,
   height = 300,
   shift = util.by_pixel(-4, -28),
-  hr_version = {
-    filename = "__Spaghetorio__/graphics/rocket/hr-rukite-rocket.png",  -- Wololo
-    width = 310,
-    height = 596,
-    shift = util.by_pixel(-5, -27),
-    scale = 0.5
-  }
 })
 rukite_rocket.rocket_flame_animation = util.add_shift_offset(util.by_pixel(-2, 257),
 {
@@ -555,19 +304,6 @@ rukite_rocket.rocket_flame_animation = util.add_shift_offset(util.by_pixel(-2, 2
   animation_speed = 0.5,
   scale = 0.4,
   shift = util.by_pixel(-0.5, -2),
-  hr_version = {
-    filename = "__base__/graphics/entity/rocket-silo/hr-10-jet-flame.png",
-    priority = "medium",
-    tint = {r=1, g=0.1, b=0.4, a=1},
-    blend_mode = "additive",
-    width = 172,
-    height = 256,
-    frame_count = 8,
-    line_length = 8,
-    animation_speed = 0.5,
-    scale = 0.4/2,
-    shift = util.by_pixel(-1, -2)
-  }
 })
 rukite_rocket.rocket_flame_left_animation = util.add_shift_offset(util.by_pixel(-40, 210),
 {
@@ -582,19 +318,6 @@ rukite_rocket.rocket_flame_left_animation = util.add_shift_offset(util.by_pixel(
   animation_speed = 0.5,
   scale = 0.3,
   shift = util.by_pixel(-0.5, -2),
-  hr_version = {
-    filename = "__base__/graphics/entity/rocket-silo/hr-10-jet-flame.png",
-    priority = "medium",
-    tint = {r=1, g=0.1, b=0.4, a=1},
-    blend_mode = "additive",
-    width = 172,
-    height = 256,
-    frame_count = 8,
-    line_length = 8,
-    animation_speed = 0.5,
-    scale = 0.3/2,
-    shift = util.by_pixel(-1, -2)
-  }
 })
 rukite_rocket.rocket_flame_left_rotation = 0
 rukite_rocket.rocket_flame_right_animation = util.add_shift_offset(util.by_pixel(36, 210),
@@ -610,19 +333,6 @@ rukite_rocket.rocket_flame_right_animation = util.add_shift_offset(util.by_pixel
   animation_speed = 0.5,
   scale = 0.3,
   shift = util.by_pixel(-0.5, -2),
-  hr_version = {
-    filename = "__base__/graphics/entity/rocket-silo/hr-10-jet-flame.png",
-    priority = "medium",
-    tint = {r=1, g=0.1, b=0.4, a=1},
-    blend_mode = "additive",
-    width = 172,
-    height = 256,
-    frame_count = 8,
-    line_length = 8,
-    animation_speed = 0.5,
-    scale = 0.3/2,
-    shift = util.by_pixel(-1, -2)
-  }
 })
 rukite_rocket.rocket_flame_right_rotation = 0
 rukite_rocket.rocket_smoke_top1_animation = util.add_shift_offset(util.by_pixel(-20, 300),
@@ -637,18 +347,6 @@ rukite_rocket.rocket_smoke_top1_animation = util.add_shift_offset(util.by_pixel(
   animation_speed = 0.5,
   scale = 1.5*1.3,
   shift = util.by_pixel(-2, -2),
-  hr_version = {
-    filename = "__base__/graphics/entity/rocket-silo/hr-12-rocket-smoke.png",
-    priority = "medium",
-    tint = { r = 0.8, g = 0.8, b = 1, a = 0.8 },
-    width = 80,
-    height = 286,
-    frame_count = 24,
-    line_length = 8,
-    animation_speed = 0.5,
-    scale = 1.5/2*1.3,
-    shift = util.by_pixel(-1, -3)
-  }
 })
 rukite_rocket.rocket_smoke_top2_animation = util.add_shift_offset(util.by_pixel(20, 300),
 {
@@ -662,18 +360,6 @@ rukite_rocket.rocket_smoke_top2_animation = util.add_shift_offset(util.by_pixel(
   animation_speed = 0.5,
   scale = 1.5*1.3,
   shift = util.by_pixel(-2, -2),
-  hr_version = {
-    filename = "__base__/graphics/entity/rocket-silo/hr-12-rocket-smoke.png",
-    priority = "medium",
-    tint = { r = 0.8, g = 0.8, b = 1, a = 0.8 },
-    width = 80,
-    height = 286,
-    frame_count = 24,
-    line_length = 8,
-    animation_speed = 0.5,
-    scale = 1.5/2*1.3,
-    shift = util.by_pixel(-1, -3)
-  }
 })
 rukite_rocket.rocket_smoke_top3_animation = util.add_shift_offset(util.by_pixel(-28, 195),
 {
@@ -687,18 +373,6 @@ rukite_rocket.rocket_smoke_top3_animation = util.add_shift_offset(util.by_pixel(
   animation_speed = 0.5,
   scale = 1.5*1.3,
   shift = util.by_pixel(-2, -2),
-  hr_version = {
-    filename = "__base__/graphics/entity/rocket-silo/hr-12-rocket-smoke.png",
-    priority = "medium",
-    tint = { r = 0.8, g = 0.8, b = 1, a = 0.8 },
-    width = 80,
-    height = 286,
-    frame_count = 24,
-    line_length = 8,
-    animation_speed = 0.5,
-    scale = 1.5/2*1.3,
-    shift = util.by_pixel(-1, -3)
-  }
 })
 rukite_rocket.rocket_smoke_bottom1_animation = util.add_shift_offset(util.by_pixel(25, 190),
 {
@@ -712,18 +386,6 @@ rukite_rocket.rocket_smoke_bottom1_animation = util.add_shift_offset(util.by_pix
   animation_speed = 0.5,
   scale = 1.5*1.3,
   shift = util.by_pixel(-2, -2),
-  hr_version = {
-    filename = "__base__/graphics/entity/rocket-silo/hr-12-rocket-smoke.png",
-    priority = "medium",
-    tint = { r = 0.8, g = 0.8, b = 1, a = 0.7 },
-    width = 80,
-    height = 286,
-    frame_count = 24,
-    line_length = 8,
-    animation_speed = 0.5,
-    scale = 1.5/2*1.3,
-    shift = util.by_pixel(-1, -3)
-  }
 })
 rukite_rocket.rocket_smoke_bottom2_animation = util.add_shift_offset(util.by_pixel(-22, 197),
 {
@@ -737,18 +399,6 @@ rukite_rocket.rocket_smoke_bottom2_animation = util.add_shift_offset(util.by_pix
   animation_speed = 0.5,
   scale = 1.5*1.3,
   shift = util.by_pixel(-2, -2),
-  hr_version = {
-    filename = "__base__/graphics/entity/rocket-silo/hr-12-rocket-smoke.png",
-    priority = "medium",
-    tint = { r = 0.8, g = 0.8, b = 1, a = 0.7 },
-    width = 80,
-    height = 286,
-    frame_count = 24,
-    line_length = 8,
-    animation_speed = 0.5,
-    scale = 1.5/2*1.3,
-    shift = util.by_pixel(-1, -3)
-  }
 })
 
 rukite_rocket_silo = table.deepcopy(data.raw["rocket-silo"]["rocket-silo"])
@@ -764,28 +414,12 @@ rukite_rocket_silo.base_day_sprite = {
   width = 608,
   height = 596,
   shift = util.by_pixel(2, -2),
-  hr_version =
-  {
-    filename = "__Spaghetorio__/graphics/rocket/rukite-rocket-silo.png",
-    width = 608,
-    height = 596,
-    shift = util.by_pixel(3, -1),
-    scale = 0.5
-  }
 }
 rukite_rocket_silo.base_front_sprite = {
   filename = "__Spaghetorio__/graphics/rocket/rukite-rocket-silo-front.png",
   width = 292,
   height = 132,
   shift = util.by_pixel(-2, 78),
-  hr_version =
-  {
-    filename = "__Spaghetorio__/graphics/rocket/rukite-rocket-silo-front.png",
-    width = 580,
-    height = 262,
-    shift = util.by_pixel(-1, 78),
-    scale = 0.5
-  }
 }
 
 -- MARK: yemnuth rocket
@@ -797,13 +431,6 @@ yemnuth_rocket.rocket_sprite = util.add_shift_offset(util.by_pixel(0, 32*3.5), -
   width = 154,
   height = 300,
   shift = util.by_pixel(-4, -28),
-  hr_version = {
-    filename = "__Spaghetorio__/graphics/rocket/hr-yemnuth-rocket.png",  -- Wololo
-    width = 310,
-    height = 596,
-    shift = util.by_pixel(-5, -27),
-    scale = 0.5
-  }
 })
 yemnuth_rocket.rocket_flame_animation = util.add_shift_offset(util.by_pixel(0, 280),
 {
@@ -818,19 +445,6 @@ yemnuth_rocket.rocket_flame_animation = util.add_shift_offset(util.by_pixel(0, 2
   animation_speed = 0.5,
   scale = 0.8,
   shift = util.by_pixel(-0.5, -2),
-  hr_version = {
-    filename = "__base__/graphics/entity/rocket-silo/hr-10-jet-flame.png",
-    priority = "medium",
-    tint = {r=1, g=1, b=0.2, a=1},
-    blend_mode = "additive",
-    width = 172,
-    height = 256,
-    frame_count = 8,
-    line_length = 8,
-    animation_speed = 0.5,
-    scale = 0.8/2,
-    shift = util.by_pixel(-1, -2)
-  }
 })
 yemnuth_rocket.rocket_flame_left_animation = util.add_shift_offset(util.by_pixel(-55, 205),
 {
@@ -845,19 +459,6 @@ yemnuth_rocket.rocket_flame_left_animation = util.add_shift_offset(util.by_pixel
   animation_speed = 0.5,
   scale = 0.35,
   shift = util.by_pixel(-0.5, -2),
-  hr_version = {
-    filename = "__base__/graphics/entity/rocket-silo/hr-10-jet-flame.png",
-    priority = "medium",
-    tint = {r=1, g=1, b=0.2, a=1},
-    blend_mode = "additive",
-    width = 172,
-    height = 256,
-    frame_count = 8,
-    line_length = 8,
-    animation_speed = 0.5,
-    scale = 0.35/2,
-    shift = util.by_pixel(-1, -2)
-  }
 })
 yemnuth_rocket.rocket_flame_left_rotation = 0
 yemnuth_rocket.rocket_flame_right_animation = util.add_shift_offset(util.by_pixel(55, 205),
@@ -873,19 +474,6 @@ yemnuth_rocket.rocket_flame_right_animation = util.add_shift_offset(util.by_pixe
   animation_speed = 0.5,
   scale = 0.35,
   shift = util.by_pixel(-0.5, -2),
-  hr_version = {
-    filename = "__base__/graphics/entity/rocket-silo/hr-10-jet-flame.png",
-    priority = "medium",
-    tint = {r=1, g=1, b=0.2, a=1},
-    blend_mode = "additive",
-    width = 172,
-    height = 256,
-    frame_count = 8,
-    line_length = 8,
-    animation_speed = 0.5,
-    scale = 0.35/2,
-    shift = util.by_pixel(-1, -2)
-  }
 })
 yemnuth_rocket.rocket_flame_right_rotation = 0
 yemnuth_rocket.rocket_smoke_top1_animation = util.add_shift_offset(util.by_pixel(15, 360),
@@ -899,19 +487,7 @@ yemnuth_rocket.rocket_smoke_top1_animation = util.add_shift_offset(util.by_pixel
   line_length = 8,
   animation_speed = 0.5,
   scale = 1.5*1.3,
-  shift = util.by_pixel(-2, -2),
-  hr_version = {
-    filename = "__base__/graphics/entity/rocket-silo/hr-12-rocket-smoke.png",
-    priority = "medium",
-    tint = { r = 0.8, g = 0.8, b = 1, a = 0.8 },
-    width = 80,
-    height = 286,
-    frame_count = 24,
-    line_length = 8,
-    animation_speed = 0.5,
-    scale = 1.5/2*1.3,
-    shift = util.by_pixel(-1, -3)
-  }
+  shift = util.by_pixel(-2, -2)
 })
 yemnuth_rocket.rocket_smoke_top2_animation = util.add_shift_offset(util.by_pixel(-13, 364),
 {
@@ -925,18 +501,6 @@ yemnuth_rocket.rocket_smoke_top2_animation = util.add_shift_offset(util.by_pixel
   animation_speed = 0.5,
   scale = 1.5*1.3,
   shift = util.by_pixel(-2, -2),
-  hr_version = {
-    filename = "__base__/graphics/entity/rocket-silo/hr-12-rocket-smoke.png",
-    priority = "medium",
-    tint = { r = 0.8, g = 0.8, b = 1, a = 0.8 },
-    width = 80,
-    height = 286,
-    frame_count = 24,
-    line_length = 8,
-    animation_speed = 0.5,
-    scale = 1.5/2*1.3,
-    shift = util.by_pixel(-1, -3)
-  }
 })
 yemnuth_rocket.rocket_smoke_top3_animation = util.add_shift_offset(util.by_pixel(-24, 357),
 {
@@ -950,18 +514,6 @@ yemnuth_rocket.rocket_smoke_top3_animation = util.add_shift_offset(util.by_pixel
   animation_speed = 0.5,
   scale = 1.5*1.3,
   shift = util.by_pixel(-2, -2),
-  hr_version = {
-    filename = "__base__/graphics/entity/rocket-silo/hr-12-rocket-smoke.png",
-    priority = "medium",
-    tint = { r = 0.8, g = 0.8, b = 1, a = 0.8 },
-    width = 80,
-    height = 286,
-    frame_count = 24,
-    line_length = 8,
-    animation_speed = 0.5,
-    scale = 1.5/2*1.3,
-    shift = util.by_pixel(-1, -3)
-  }
 })
 yemnuth_rocket.rocket_smoke_bottom1_animation = util.add_shift_offset(util.by_pixel(40, 270),
 {
@@ -975,18 +527,6 @@ yemnuth_rocket.rocket_smoke_bottom1_animation = util.add_shift_offset(util.by_pi
   animation_speed = 0.5,
   scale = 1.5*1.3,
   shift = util.by_pixel(-2, -2),
-  hr_version = {
-    filename = "__base__/graphics/entity/rocket-silo/hr-12-rocket-smoke.png",
-    priority = "medium",
-    tint = { r = 0.8, g = 0.8, b = 1, a = 0.7 },
-    width = 80,
-    height = 286,
-    frame_count = 24,
-    line_length = 8,
-    animation_speed = 0.5,
-    scale = 1.5/2*1.3,
-    shift = util.by_pixel(-1, -3)
-  }
 })
 yemnuth_rocket.rocket_smoke_bottom2_animation = util.add_shift_offset(util.by_pixel(-40, 270),
 {
@@ -1000,18 +540,6 @@ yemnuth_rocket.rocket_smoke_bottom2_animation = util.add_shift_offset(util.by_pi
   animation_speed = 0.5,
   scale = 1.5*1.3,
   shift = util.by_pixel(-2, -2),
-  hr_version = {
-    filename = "__base__/graphics/entity/rocket-silo/hr-12-rocket-smoke.png",
-    priority = "medium",
-    tint = { r = 0.8, g = 0.8, b = 1, a = 0.7 },
-    width = 80,
-    height = 286,
-    frame_count = 24,
-    line_length = 8,
-    animation_speed = 0.5,
-    scale = 1.5/2*1.3,
-    shift = util.by_pixel(-1, -3)
-  }
 })
 
 yemnuth_rocket_silo = table.deepcopy(data.raw["rocket-silo"]["rocket-silo"])
@@ -1027,28 +555,12 @@ yemnuth_rocket_silo.base_day_sprite = {
   width = 608,
   height = 596,
   shift = util.by_pixel(2, -2),
-  hr_version =
-  {
-    filename = "__Spaghetorio__/graphics/rocket/yemnuth-rocket-silo.png",
-    width = 608,
-    height = 596,
-    shift = util.by_pixel(3, -1),
-    scale = 0.5
-  }
 }
 yemnuth_rocket_silo.base_front_sprite = {
   filename = "__Spaghetorio__/graphics/rocket/yemnuth-rocket-silo-front.png",
   width = 292,
   height = 132,
   shift = util.by_pixel(-2, 78),
-  hr_version =
-  {
-    filename = "__Spaghetorio__/graphics/rocket/yemnuth-rocket-silo-front.png",
-    width = 580,
-    height = 262,
-    shift = util.by_pixel(-1, 78),
-    scale = 0.5
-  }
 }
 
 data:extend({
