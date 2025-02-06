@@ -46,7 +46,7 @@ require("prototypes.buildings.cyclotron")  -- fusion reactor
 require("prototypes.buildings.freezer")
 -- require("prototypes.buildings.geothermal-plant")
 require("prototypes.buildings.gravity-assembler")
--- require("prototypes.buildings.induction-hardening-facility")  -- convector
+require("prototypes.buildings.induction-hardening-facility")  -- convector
 require("prototypes.buildings.lumber-mill")
 -- require("prototypes.buildings.oxydizer")
 -- require("prototypes.buildings.pathogen-lab")

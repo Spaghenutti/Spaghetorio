@@ -5978,7 +5978,7 @@ data:extend({
     icon_mipmaps = 4,
     subgroup = "production-machine",
     order = "d[induction-hardening-facility]",
-    -- place_result = "sp-induction-hardening-facility",
+    place_result = "sp-induction-hardening-facility",
     stack_size = 50,
   },
   -- {
@@ -5990,6 +5990,17 @@ data:extend({
   --   subgroup = "production-machine",
   --   order = "d[research-center]",
   --   -- place_result = "sp-research-center",
+  --   stack_size = 50,
+  -- },
+  -- {
+  --   type = "item",
+  --   name = "sp-photonic-lab",  -- #ForRegEx# - building
+  --   icon = "__Spaghetorio__/graphics/icons/photonic-lab.png",
+  --   icon_size = 64,
+  --   icon_mipmaps = 4,
+  --   subgroup = "production-machine",
+  --   order = "d[photonic-lab]",
+  --   -- place_result = "sp-photonic-lab",
   --   stack_size = 50,
   -- },
   {
