@@ -30,14 +30,14 @@ def generate_locale_value(key: str, object_type: str=None) -> Tuple[str, str]:
     if object_type in ["infinite-technology"]:
         key = "-".join(key.split("-")[:-1])
 
-    if key.startswith("sp-"):
+    if key.startswith("sp-kr-"):
+        value = key[6:].replace("-", " ")
+        value = value[0].capitalize() + value[1:]
+    elif key.startswith("sp-"):
         value = key[3:].replace("-", " ")
         value = value[0].capitalize() + value[1:]
-    elif key.startswith("sp-crushing-"):
-        value = key[9:].replace("-", " ")
-        value = value[0].capitalize() + value[1:]
     else:
-        raise KeyError(f"Key {key} does not start with \"sp-\" or \"sp-crushing-\"")
+        raise KeyError(f"Key {key} does not start with \"sp-\", \"sp-kr-\" or \"sp-crushing-\"")
     
     return (key, value)
 
