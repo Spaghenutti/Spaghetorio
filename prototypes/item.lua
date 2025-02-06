@@ -5934,7 +5934,7 @@ data:extend({
     icon_mipmaps = 4,
     subgroup = "production-machine",
     order = "d[freezer]",
-    -- place_result = "sp-freezer",
+    place_result = "sp-freezer",
     stack_size = 50,
   },
   {

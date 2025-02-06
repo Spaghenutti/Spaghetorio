@@ -80,7 +80,7 @@ fluid_boxes = {
     pipe_covers = pipecoverspictures(),  -- The graphics of alloy forge to not exactly match the position where the pipe covers should be
     always_draw_covers = false,
     volume = 1000,
-    pipe_connections = {{flow_direction="input", direction = defines.direction.south, position = {0, -2}}}
+    pipe_connections = {{flow_direction="input", direction = defines.direction.north, position = {0, -2}}}
   },
   {
     production_type = "output",
@@ -89,7 +89,7 @@ fluid_boxes = {
     pipe_covers = pipecoverspictures(),  -- The graphics of alloy forge to not exactly match the position where the pipe covers should be
     always_draw_covers = false,
     volume = 1000,
-    pipe_connections = {{flow_direction="output", direction = defines.direction.north, position = {2, 0}}}
+    pipe_connections = {{flow_direction="output", direction = defines.direction.east, position = {2, 0}}}
   },
   {
     production_type = "output",
@@ -98,7 +98,7 @@ fluid_boxes = {
     pipe_covers = pipecoverspictures(),  -- The graphics of alloy forge to not exactly match the position where the pipe covers should be
     always_draw_covers = false,
     volume = 1000,
-    pipe_connections = {{ flow_direction="output", direction = defines.direction.north, position = {-2, 0}}}
+    pipe_connections = {{ flow_direction="output", direction = defines.direction.west, position = {-2, 0}}}
   }
 }
 
@@ -128,10 +128,7 @@ data:extend({
     -- circuit_connector = circuit_connector_definitions,
     collision_box = {{-2.2, -2.2}, {2.2, 2.2}},
     selection_box = {{-2.5, -2.5}, {2.5, 2.5}},
-    heating_energy = "1000kW",
     damaged_trigger_effect = hit_effects.entity(),
-    -- drawing_box_vertical_extension = 1.3,
-    -- effect_receiver = {base_effect = {productivity = 0.5}},
     module_slots = 6,
     icon_draw_specification = {scale = 2, shift = {0, 0}},
     icons_positioning =
@@ -139,13 +136,13 @@ data:extend({
       {inventory_index = defines.inventory.assembling_machine_modules, shift = {0, 1.25}}
     },
     allowed_effects = {"consumption", "speed", "productivity", "pollution", "quality"},
-    crafting_categories = {"chemistry", "atom-smashing"},
+    crafting_categories = {"atom-smashing"},
     crafting_speed = 2,
     energy_source =
     {
       type = "electric",
       usage_priority = "secondary-input",
-      emissions_per_minute = {pollution = 4},
+      emissions_per_minute = {pollution = 1},
     },
     energy_usage = "5000kW",
     perceived_performance = {minimum = 0.25, maximum = 20},

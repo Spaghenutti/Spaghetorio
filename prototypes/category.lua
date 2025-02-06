@@ -116,6 +116,14 @@ data:extend({
   },
   {
     type = "recipe-category",
+    name = "freezing"
+  },
+  {
+    type = "recipe-category",
+    name = "thawing"  -- unfreeziing
+  },
+  {
+    type = "recipe-category",
     name = "crushed-smelting"
   },
   {

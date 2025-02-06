@@ -133,10 +133,8 @@ data:extend({
     -- circuit_connector = circuit_connector_definitions,
     collision_box = {{-2.2, -2.2}, {2.2, 2.2}},
     selection_box = {{-2.5, -2.5}, {2.5, 2.5}},
-    heating_energy = "300kW",
     damaged_trigger_effect = hit_effects.entity(),
-    -- drawing_box_vertical_extension = 1.3,
-    -- effect_receiver = {base_effect = {productivity = 0.5}},
+    effect_receiver = {base_effect = {productivity = 0.2}},
     module_slots = 6,
     icon_draw_specification = {scale = 2, shift = {0, 0.5}},
     icons_positioning =

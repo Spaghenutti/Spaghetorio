@@ -150,10 +150,7 @@ data:extend({
     -- circuit_connector = circuit_connector_definitions,
     collision_box = {{-2.7, -2.7}, {2.7, 2.7}},
     selection_box = {{-3, -3}, {3, 3}},
-    heating_energy = "300kW",
     damaged_trigger_effect = hit_effects.entity(),
-    -- drawing_box_vertical_extension = 1.3,
-    -- effect_receiver = {base_effect = {productivity = 0.5}},
     module_slots = 2,
     icon_draw_specification = {scale = 1.5, shift = {0, -0.5}},
     icons_positioning =
@@ -167,7 +164,7 @@ data:extend({
     {
       type = "electric",
       usage_priority = "secondary-input",
-      emissions_per_minute = {pollution = 4}
+      emissions_per_minute = {pollution = 6}
     },
     energy_usage = "100kW",  -- TODO: maybe change breeder reactor generate power
     perceived_performance = {minimum = 0.25, maximum = 20},
