@@ -138,7 +138,7 @@ Technologies which unlock items allready unlocked by base factorio
 hurricane406 graphics
   - Greenhouse -> Already exists from krastorio
   - Disruptor -> For mining alien minerals
-  - Alloy forge
+  + Alloy forge
   - Atom forge -> Breeder reactor
   - Chemical stager
   - Quantum stabilizer
