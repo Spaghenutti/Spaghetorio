@@ -68,7 +68,7 @@ fluid_boxes = {
     production_type = "input",
     pipe_picture = util.empty_sprite(),
     -- pipe_picture_frozen = require("__space-age__.prototypes.entity.foundry-pictures").pipe_picture_frozen,
-    pipe_covers = pipecoverspictures(),  -- The graphics of alloy forge to not exactly match the position where the pipe covers should be
+    pipe_covers = pipecoverspictures(),
     always_draw_covers = false,
     volume = 1000,
     pipe_connections = {{flow_direction="input", direction = defines.direction.south, position = {0, 2}}}
@@ -77,7 +77,7 @@ fluid_boxes = {
     production_type = "input",
     pipe_picture = util.empty_sprite(),
     -- pipe_picture_frozen = require("__space-age__.prototypes.entity.foundry-pictures").pipe_picture_frozen,
-    pipe_covers = pipecoverspictures(),  -- The graphics of alloy forge to not exactly match the position where the pipe covers should be
+    pipe_covers = pipecoverspictures(),
     always_draw_covers = false,
     volume = 1000,
     pipe_connections = {{flow_direction="input", direction = defines.direction.north, position = {0, -2}}}
@@ -86,7 +86,7 @@ fluid_boxes = {
     production_type = "output",
     pipe_picture = util.empty_sprite(),
     -- pipe_picture_frozen = require("__space-age__.prototypes.entity.foundry-pictures").pipe_picture_frozen,
-    pipe_covers = pipecoverspictures(),  -- The graphics of alloy forge to not exactly match the position where the pipe covers should be
+    pipe_covers = pipecoverspictures(),
     always_draw_covers = false,
     volume = 1000,
     pipe_connections = {{flow_direction="output", direction = defines.direction.east, position = {2, 0}}}
@@ -95,7 +95,7 @@ fluid_boxes = {
     production_type = "output",
     pipe_picture = util.empty_sprite(),
     -- pipe_picture_frozen = require("__space-age__.prototypes.entity.foundry-pictures").pipe_picture_frozen,
-    pipe_covers = pipecoverspictures(),  -- The graphics of alloy forge to not exactly match the position where the pipe covers should be
+    pipe_covers = pipecoverspictures(),
     always_draw_covers = false,
     volume = 1000,
     pipe_connections = {{ flow_direction="output", direction = defines.direction.west, position = {-2, 0}}}

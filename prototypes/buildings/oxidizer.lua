@@ -12,16 +12,16 @@ local sounds = require("__base__/prototypes/entity/sounds")
 
 local graphics_frame_count = 60
 local graphics_animation_speed = 0.7
-local graphics_shift = {0, 0}
-local graphics_scale = 0.8
+local graphics_shift = {0, -0.7}
+local graphics_scale = 0.95
 local graphics_set = {
   animation = {
     layers = {
       {
-        filename = "__Spaghetorio__/graphics/buildings/freezer/freezer-animation.png",
         priority = "high",
-        width = 840 / 8,
-        height = 1160 / 8,
+        filename = "__Spaghetorio__/graphics/buildings/oxidizer/oxidizer-animation.png",
+        width = 1280 / 8,
+        height = 1480 / 8,
         shift = graphics_shift,
         scale = graphics_scale,
         frame_count = graphics_frame_count,
@@ -30,9 +30,9 @@ local graphics_set = {
       },
       {
         priority = "high",
-        filename = "__Spaghetorio__/graphics/buildings/freezer/freezer-shadow.png",
-        width = 200,
-        height = 175,
+        filename = "__Spaghetorio__/graphics/buildings/oxidizer/oxidizer-shadow.png",
+        width = 300,
+        height = 200,
         shift = graphics_shift,
         scale = graphics_scale,
         frame_count = 1,
@@ -52,7 +52,7 @@ fluid_boxes = {
     pipe_covers = pipecoverspictures(),
     always_draw_covers = false,
     volume = 1000,
-    pipe_connections = {{flow_direction="input", direction = defines.direction.south, position = {0, 1}}}
+    pipe_connections = {{flow_direction="input", direction = defines.direction.south, position = {-1.5, 1.5}}}
   },
   {
     production_type = "input",
@@ -61,7 +61,25 @@ fluid_boxes = {
     pipe_covers = pipecoverspictures(),
     always_draw_covers = false,
     volume = 1000,
-    pipe_connections = {{flow_direction="input", direction = defines.direction.north, position = {0, -1}}}
+    pipe_connections = {{flow_direction="input", direction = defines.direction.south, position = {0.5, 1.5}}}
+  },
+  {
+    production_type = "input",
+    pipe_picture = util.empty_sprite(),
+    -- pipe_picture_frozen = require("__space-age__.prototypes.entity.foundry-pictures").pipe_picture_frozen,
+    pipe_covers = pipecoverspictures(),
+    always_draw_covers = false,
+    volume = 1000,
+    pipe_connections = {{flow_direction="input", direction = defines.direction.west, position = {-1.5, -1.5}}}
+  },
+  {
+    production_type = "input",
+    pipe_picture = util.empty_sprite(),
+    -- pipe_picture_frozen = require("__space-age__.prototypes.entity.foundry-pictures").pipe_picture_frozen,
+    pipe_covers = pipecoverspictures(),
+    always_draw_covers = false,
+    volume = 1000,
+    pipe_connections = {{flow_direction="input", direction = defines.direction.west, position = {-1.5, 0.5}}}
   },
   {
     production_type = "output",
@@ -70,7 +88,7 @@ fluid_boxes = {
     pipe_covers = pipecoverspictures(),
     always_draw_covers = false,
     volume = 1000,
-    pipe_connections = {{flow_direction="output", direction = defines.direction.east, position = {1, 0}}}
+    pipe_connections = {{flow_direction="output", direction = defines.direction.north, position = {-0.5, -1.5}}}
   },
   {
     production_type = "output",
@@ -79,7 +97,25 @@ fluid_boxes = {
     pipe_covers = pipecoverspictures(),
     always_draw_covers = false,
     volume = 1000,
-    pipe_connections = {{ flow_direction="output", direction = defines.direction.west, position = {-1, 0}}}
+    pipe_connections = {{ flow_direction="output", direction = defines.direction.north, position = {1.5, -1.5}}}
+  },
+  {
+    production_type = "output",
+    pipe_picture = util.empty_sprite(),
+    -- pipe_picture_frozen = require("__space-age__.prototypes.entity.foundry-pictures").pipe_picture_frozen,
+    pipe_covers = pipecoverspictures(),
+    always_draw_covers = false,
+    volume = 1000,
+    pipe_connections = {{flow_direction="output", direction = defines.direction.east, position = {1.5, 1.5}}}
+  },
+  {
+    production_type = "output",
+    pipe_picture = util.empty_sprite(),
+    -- pipe_picture_frozen = require("__space-age__.prototypes.entity.foundry-pictures").pipe_picture_frozen,
+    pipe_covers = pipecoverspictures(),
+    always_draw_covers = false,
+    volume = 1000,
+    pipe_connections = {{ flow_direction="output", direction = defines.direction.east, position = {1.5, -0.5}}}
   }
 }
 
@@ -97,35 +133,35 @@ local working_sound = {
 data:extend({
  {
     type = "assembling-machine",
-    name = "sp-freezer",
-    icon = "__Spaghetorio__/graphics/icons/freezer.png",
+    name = "sp-oxidizer",
+    icon = "__Spaghetorio__/graphics/icons/oxidizer.png",
     flags = {"placeable-neutral", "player-creation"},
-    minable = {mining_time = 0.5, result = "sp-freezer"},
-    fast_replaceable_group = "sp-freezer",
-    max_health = 250,
-    corpse = "assembling-machine-3-remnants",
-    dying_explosion = "assembling-machine-3-explosion",
+    minable = {mining_time = 1, result = "sp-oxidizer"},
+    fast_replaceable_group = "sp-oxidizer",
+    max_health = 750,
+    corpse = "foundry-remnants",
+    dying_explosion = "foundry-explosion",
     -- circuit_wire_max_distance = assembling_machine_circuit_wire_max_distance,  -- assembling_machine_circuit_wire_max_distance = 9
     -- circuit_connector = circuit_connector_definitions,
-    collision_box = {{-1.2, -1.2}, {1.2, 1.2}},
-    selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
+    collision_box = {{-1.7, -1.7}, {1.7, 1.7}},
+    selection_box = {{-2, -2}, {2, 2}},
     damaged_trigger_effect = hit_effects.entity(),
-    module_slots = 6,
-    icon_draw_specification = {scale = 1, shift = {0, 0}},
+    module_slots = 4,
+    icon_draw_specification = {scale = 1, shift = {0, -0.3}},
     icons_positioning =
     {
       {inventory_index = defines.inventory.assembling_machine_modules, shift = {0, 1.25}}
     },
-    allowed_effects = {"consumption", "productivity", "pollution"},
-    crafting_categories = {"chemistry", "freezing", "thawing"},
+    allowed_effects = {"consumption", "speed", "productivity", "pollution", "quality"},
+    crafting_categories = {"alien-tech-manufacturing"},
     crafting_speed = 1,
     energy_source =
     {
       type = "electric",
       usage_priority = "secondary-input",
-      emissions_per_minute = {pollution = 2},
+      emissions_per_minute = {pollution = 2.5},
     },
-    energy_usage = "200kW",
+    energy_usage = "1500kW",
     perceived_performance = {minimum = 0.25, maximum = 20},
     graphics_set = graphics_set,
     open_sound = sounds.metal_large_open,

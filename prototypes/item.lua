@@ -5967,7 +5967,7 @@ data:extend({
     icon_mipmaps = 4,
     subgroup = "production-machine",
     order = "d[oxidizer]",
-    -- place_result = "sp-oxidizer",
+    place_result = "sp-oxidizer",
     stack_size = 50,
   },
   {
