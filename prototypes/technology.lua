@@ -112,7 +112,7 @@ data:extend({
       ingredients = {
         {"automation-science-pack", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -234,7 +234,7 @@ data:extend({
       ingredients = {
         {"automation-science-pack", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -264,7 +264,7 @@ data:extend({
       ingredients = {
         {"automation-science-pack", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -295,7 +295,7 @@ data:extend({
         {"automation-science-pack", 1},
         {"logistic-science-pack", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -323,7 +323,7 @@ data:extend({
         {"automation-science-pack", 1},
         {"logistic-science-pack", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -352,7 +352,7 @@ data:extend({
         {"sp-electronic-science-pack-1", 1},
         {"sp-material-science-pack-1", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -417,7 +417,7 @@ data:extend({
         {"sp-geological-science-pack-1", 1},
         {"sp-material-science-pack-1", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -460,7 +460,7 @@ data:extend({
         {"sp-material-science-pack-1", 1},
         {"sp-geological-science-pack-1", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -489,7 +489,7 @@ data:extend({
         {"sp-material-science-pack-1", 1},
         {"sp-geological-science-pack-1", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -521,7 +521,7 @@ data:extend({
         {"sp-geological-science-pack-2", 1},
         {"sp-electronic-science-pack-2", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -556,7 +556,7 @@ data:extend({
         {"utility-science-pack", 1},
         {"production-science-pack", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -591,7 +591,7 @@ data:extend({
         {"sp-material-science-pack-1", 1},
         {"sp-geological-science-pack-1", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -638,7 +638,7 @@ data:extend({
         {"production-science-pack", 1},
         {"sp-geological-science-pack-1", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -672,7 +672,7 @@ data:extend({
         {"production-science-pack", 1},
         {"sp-material-science-pack-2", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -711,7 +711,7 @@ data:extend({
         {"sp-material-science-pack-2", 1},
         {"production-science-pack", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -730,6 +730,10 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "tungsten-carbide"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-boron-carbide"
       }
     },
     prerequisites = {
@@ -749,7 +753,7 @@ data:extend({
         {"production-science-pack", 1},
         {"utility-science-pack", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -782,7 +786,7 @@ data:extend({
         {"production-science-pack", 1},
         {"utility-science-pack", 1},
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -822,7 +826,7 @@ data:extend({
         {"sp-geological-science-pack-2", 1},
         {"sp-material-science-pack-2", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -871,7 +875,7 @@ data:extend({
         {"sp-chemical-science-pack-2", 1},
         {"sp-geological-science-pack-2", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -918,19 +922,27 @@ data:extend({
         {"sp-geological-science-pack-2", 1},
         {"production-science-pack", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
   {
     -- Finalzed
     type = "technology",
-    name = "sp-nickel-and-cobalt",  -- #ForRegEx# - technology
+    name = "sp-nickel-cobalt-and-arsenic",  -- #ForRegEx# - technology
     icon_size = 256,
     icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/hr-icons/nickel-ingot.png", 256, {-20, 20},
-                                   "__Spaghetorio__/graphics/hr-icons/cobalt-billet.png", 256, {20, -20}),
+                                        "__Spaghetorio__/graphics/hr-icons/cobalt-billet.png", 256, {20, -20}),
     effects =
     {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-crushing-cobalt-ore"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-cobalt-oxide"
+      },
       {
         type = "unlock-recipe",
         recipe = "sp-cobalt-sulfate"
@@ -942,6 +954,18 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "sp-nickel-ingot"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-nickel-cobalt"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-waspaloy"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-arsen-pillet"
       },
       {
         type = "unlock-recipe",
@@ -965,7 +989,219 @@ data:extend({
         {"sp-material-science-pack-1", 1},
         {"sp-geological-science-pack-1", 1}
       },
-      time = 15
+      time = 30
+    },
+    order = "a-h-a"
+  },
+  {
+    -- Finalzed
+    type = "technology",
+    name = "sp-arsen-processing",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/hr-icons/arsenic-sulfide.png", 256, {-20, 20},
+                                        "__Spaghetorio__/graphics/hr-icons/arsenic-iodide.png", 256, {20, -20}),
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-arsenic-iodide"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-arsenic-sulfide"
+      }
+    },
+    prerequisites = {
+      "sp-iodine-processing",
+      "sp-nickel-cobalt-and-arsenic"
+    },
+    unit =
+    {
+      count = 100,
+      ingredients = {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"sp-material-science-pack-1", 1},
+        {"sp-geological-science-pack-1", 1}
+      },
+      time = 30
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-iodine-processing",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghetorio__/graphics/hr-icons/iodine.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-iodine-sludge"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-iodine"
+      }
+    },
+    prerequisites = {
+      "advanced-material-processing",
+      "sp-geological-science-pack-1"
+    },
+    unit =
+    {
+      count = 100,
+      ingredients = {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"sp-material-science-pack-1", 1},
+        {"sp-geological-science-pack-1", 1}
+      },
+      time = 30
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-molybdenum-processing",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/hr-icons/molybdenum-trioxide.png", 256, {-20, 20},
+                                        "__Spaghetorio__/graphics/hr-icons/molybdenum-pillet.png", 256, {20, -20}),
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-molybdenum-trioxide"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-molybdenum-pillet"
+      }
+    },
+    prerequisites = {
+      "advanced-material-processing",
+      "sp-geological-science-pack-1"
+    },
+    unit =
+    {
+      count = 150,
+      ingredients = {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"sp-material-science-pack-1", 1},
+        {"sp-geological-science-pack-1", 1}
+      },
+      time = 30
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-manganese-processing",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/hr-icons/manganese-dioxide.png", 256, nil,
+                                        "__Spaghetorio__/graphics/hr-icons/manganese-ingot.png", 256, nil),
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-manganese-dioxide"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-manganese-ingot"
+      }
+    },
+    prerequisites = {
+      "advanced-material-processing",
+      "sp-geological-science-pack-1"
+    },
+    unit =
+    {
+      count = 150,
+      ingredients = {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"sp-material-science-pack-1", 1},
+        {"sp-geological-science-pack-1", 1}
+      },
+      time = 30
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-vanadium-processing",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icons =  util.icon.combine_three_icons("__Spaghetorio__/graphics/hr-icons/vanadium-pentoxide.png", 256, nil,
+                                           "__Spaghetorio__/graphics/hr-icons/ammonium-metavanadate.png", 256, nil,
+                                           "__Spaghetorio__/graphics/hr-icons/vanadium-plate.png", 256, nil),
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-vanadium-pentoxide"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-vanadium-bearing-solution"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-ammonium-metavanadate"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-vanadium-plate"
+      }
+    },
+    prerequisites = {
+      "advanced-material-processing",
+      "sp-geological-science-pack-1"
+    },
+    unit =
+    {
+      count = 150,
+      ingredients = {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"sp-material-science-pack-1", 1},
+        {"sp-geological-science-pack-1", 1}
+      },
+      time = 30
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-vanadium-processing",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/hr-icons/potassium-chloride.png", 256, {-20, 20},
+                                        "__Spaghetorio__/graphics/hr-icons/potassium-ingot.png", 256, {20, -20}),
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-potassium-chloride"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-potassium-ingot"
+      },
+    },
+    prerequisites = {
+      "sp-magnesium-processing"
+    },
+    unit =
+    {
+      count = 150,
+      ingredients = {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"sp-material-science-pack-1", 1},
+        {"sp-geological-science-pack-1", 1}
+      },
+      time = 30
     },
     order = "a-h-a"
   },
@@ -1011,7 +1247,7 @@ data:extend({
         {"chemical-science-pack", 1},
         {"sp-geological-science-pack-2", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -1046,7 +1282,7 @@ data:extend({
     },
     prerequisites = {
       "logistic-science-pack",
-      "sp-nickel-and-cobalt"
+      "sp-nickel-cobalt-and-arsenic"
     },
     unit =
     {
@@ -1056,7 +1292,7 @@ data:extend({
         {"logistic-science-pack", 1},
         {"sp-material-science-pack-1", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -1095,7 +1331,7 @@ data:extend({
         {"sp-material-science-pack-2", 1},
         {"production-science-pack", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -1122,7 +1358,7 @@ data:extend({
         {"sp-chemical-science-pack-2", 1},
         {"production-science-pack", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -1159,7 +1395,7 @@ data:extend({
         {"sp-geological-science-pack-2", 1},
         {"production-science-pack", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -1196,7 +1432,7 @@ data:extend({
         {"production-science-pack", 1},
         {"utility-science-pack", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -1225,7 +1461,7 @@ data:extend({
         {"sp-chemical-science-pack-2", 1},
         {"production-science-pack", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -1252,7 +1488,7 @@ data:extend({
         {"sp-material-science-pack-1", 1},
         {"sp-geological-science-pack-1", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -1280,7 +1516,7 @@ data:extend({
         {"sp-material-science-pack-1", 1},
         {"chemical-science-pack", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -1312,7 +1548,7 @@ data:extend({
         {"sp-electronic-science-pack-1", 1},
         {"chemical-science-pack", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -1339,7 +1575,7 @@ data:extend({
         {"sp-material-science-pack-2", 1},
         {"production-science-pack", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -1378,7 +1614,7 @@ data:extend({
         {"sp-geological-science-pack-1", 1},
         {"chemical-science-pack", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -1405,7 +1641,7 @@ data:extend({
         {"sp-geological-science-pack-1", 1},
         {"chemical-science-pack", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -1440,7 +1676,7 @@ data:extend({
         {"sp-geological-science-pack-1", 1},
         {"chemical-science-pack", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -1485,7 +1721,7 @@ data:extend({
         {"sp-electronic-science-pack-2", 1},
         {"production-science-pack", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -1494,8 +1730,8 @@ data:extend({
     name = "sp-electronic-components",  -- #ForRegEx# - technology
     icon_size = 256,
     icons =  util.icon.combine_three_icons("__Spaghetorio__/graphics/hr-icons/coil.png", 256, nil,
-                                     "__Spaghetorio__/graphics/hr-icons/transistor.png", 256, nil,
-                                     "__Spaghetorio__/graphics/hr-icons/diode.png", 256, nil),
+                                           "__Spaghetorio__/graphics/hr-icons/transistor.png", 256, nil,
+                                           "__Spaghetorio__/graphics/hr-icons/diode.png", 256, nil),
     effects =
     {
       {
@@ -1532,7 +1768,7 @@ data:extend({
         {"sp-material-science-pack-1", 1},
         {"sp-electronic-science-pack-1", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -1568,7 +1804,7 @@ data:extend({
         {"sp-chemical-science-pack-2", 1},
         {"production-science-pack", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -1600,7 +1836,7 @@ data:extend({
         {"utility-science-pack", 1},
         {"sp-computer-science-pack-2", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -1636,7 +1872,7 @@ data:extend({
         {"sp-electronic-science-pack-2", 1},
         {"production-science-pack", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -1672,7 +1908,7 @@ data:extend({
         {"sp-computer-science-pack-2", 1},
         {"production-science-pack", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -1710,7 +1946,7 @@ data:extend({
         {"production-science-pack", 1},
         {"utility-science-pack", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -1738,7 +1974,7 @@ data:extend({
         {"chemical-science-pack", 1},
         {"sp-material-science-pack-1", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -1772,7 +2008,7 @@ data:extend({
         {"sp-material-science-pack-1", 1},
         {"logistic-science-pack", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -1805,7 +2041,7 @@ data:extend({
         {"production-science-pack", 1},
         {"utility-science-pack", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -1837,7 +2073,7 @@ data:extend({
         {"sp-electronic-science-pack-2", 1},
         {"utility-science-pack", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -1861,7 +2097,7 @@ data:extend({
         {"automation-science-pack", 1},
         {"logistic-science-pack", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -1889,7 +2125,7 @@ data:extend({
         {"logistic-science-pack", 1},
         {"sp-material-science-pack-1", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -1922,7 +2158,7 @@ data:extend({
         {"utility-science-pack", 1},
         {"production-science-pack", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -1954,7 +2190,7 @@ data:extend({
         {"production-science-pack", 1},
         {"utility-science-pack", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -1993,7 +2229,7 @@ data:extend({
         {"sp-material-science-pack-1", 1},
         {"sp-geological-science-pack-1", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -2020,7 +2256,7 @@ data:extend({
         {"sp-material-science-pack-2", 1},
         {"sp-geological-science-pack-2", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -2068,7 +2304,7 @@ data:extend({
         {"production-science-pack", 1},
         {"utility-science-pack", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -2113,7 +2349,7 @@ data:extend({
         {"production-science-pack", 1},
         {"utility-science-pack", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -2144,7 +2380,7 @@ data:extend({
         {"sp-geological-science-pack-2", 1},
         {"production-science-pack", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -2176,7 +2412,7 @@ data:extend({
         {"production-science-pack", 1},
         {"utility-science-pack", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -2214,7 +2450,7 @@ data:extend({
         {"utility-science-pack", 1},
         {"sp-nuclear-science-pack-2", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -2251,7 +2487,7 @@ data:extend({
         {"utility-science-pack", 1},
         {"sp-nuclear-science-pack-2", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -2287,7 +2523,7 @@ data:extend({
         {"utility-science-pack", 1},
         {"sp-nuclear-science-pack-2", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -2322,7 +2558,7 @@ data:extend({
         {"utility-science-pack", 1},
         {"sp-nuclear-science-pack-2", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -2353,9 +2589,219 @@ data:extend({
         {"sp-material-science-pack-2", 1},
         {"sp-geological-science-pack-1", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-enriched-ores",
+    icon = "__Spaghetorio__/graphics/krastorio/technologies/enriched-ores.png",
+    icon_size = 256,
+    icon_mipmaps = 4,
+    effects = {
+      -- iron
+      {
+        type = "unlock-recipe",
+        recipe = "sp-enriched-iron",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-enriched-iron-from-crushed-resource",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-iron-plate-from-enriched-iron",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-iron-beam-from-enriched-iron",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-dirty-water-filtration-iron",
+      },
+      -- copper
+      {
+        type = "unlock-recipe",
+        recipe = "sp-enriched-copper",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-enriched-copper-from-crushed-resource",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-copper-plate-from-enriched-copper",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-dirty-water-filtration-copper",
+      },
+      -- aluminum
+      {
+        type = "unlock-recipe",
+        recipe = "sp-enriched-aluminum",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-enriched-aluminum-from-crushed-resource",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-alumina-from-enriched-aluminum",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-dirty-water-filtration-aluminum",
+      },
+      -- chromite
+      {
+        type = "unlock-recipe",
+        recipe = "sp-enriched-chromite",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-enriched-chromite-from-crushed-resource",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-chromium-plate-from-enriched-chromite",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-dirty-water-filtration-chromite",
+      },
+      -- magnesium
+      {
+        type = "unlock-recipe",
+        recipe = "sp-enriched-magnesium",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-enriched-magnesium-from-crushed-resource",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-magnesium-slab-from-enriched-magnesium",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-dirty-water-filtration-magnesium",
+      },
+      -- nickel
+      {
+        type = "unlock-recipe",
+        recipe = "sp-enriched-nickel",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-enriched-nickel-from-crushed-resource",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-nickel-ingot-from-enriched-nickel",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-dirty-water-filtration-nickel",
+      },
+      -- lead
+      {
+        type = "unlock-recipe",
+        recipe = "sp-lead-slab",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-enriched-tinstone",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-enriched-tinstone-from-crushed-resource",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-tin-ingot-from-enriched-tinstone",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-dirty-water-filtration-tinstone",
+      },
+      -- titanium
+      {
+        type = "unlock-recipe",
+        recipe = "sp-enriched-titanium",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-enriched-titanium-from-crushed-resource",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-titanium-chloride-from-enriched-titanium",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-dirty-water-filtration-titanium",
+      },
+      -- tungsten
+      {
+        type = "unlock-recipe",
+        recipe = "sp-enriched-tungsten",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-enriched-tungsten-from-crushed-resource",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-ammonium-paratungstate-from-enriched-tungsten",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-dirty-water-filtration-tungsten",
+      },
+      -- zinc
+      {
+        type = "unlock-recipe",
+        recipe = "sp-enriched-zinc",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-enriched-zinc-from-crushed-resource",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-zinc-plate-from-enriched-zinc",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-dirty-water-filtration-zinc",
+      },
+      -- rare metals
+      {
+        type = "unlock-recipe",
+        recipe = "sp-enriched-rare-metals",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-enriched-rare-metal-processing",
+      },
+      -- {
+      --   type = "unlock-recipe",
+      --   recipe = "enriched-copper-plate",
+      -- },
+    },
+    prerequisites = {"utility-science-pack"},
+    unit = {
+      count = 1000,
+      ingredients = {
+        {"utility-science-pack", 1},
+        -- {"kr-rare-metals", 1},
+        -- {"sp-bleach", 1},
+      },
+      time = 30,
+    },
   },
   -- {
   --   type = "technology",
@@ -2385,7 +2831,7 @@ data:extend({
   --       {"production-science-pack", 1},
   --       {"utility-science-pack", 1}
   --     },
-  --     time = 15
+  --     time = 30
   --   },
   --   order = "a-h-a"
   -- },
@@ -2399,7 +2845,19 @@ data:extend({
     {
       {
         type = "unlock-recipe",
+        recipe = "sp-antimony-oxide"
+      },
+      {
+        type = "unlock-recipe",
         recipe = "sp-antimony-pillet"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-antimony-trichloride"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-antimony-triiodide"
       },
     },
     prerequisites = {
@@ -2419,7 +2877,122 @@ data:extend({
         {"production-science-pack", 1},
         {"utility-science-pack", 1}
       },
-      time = 15
+      time = 30
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-barium-processing",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghetorio__/graphics/hr-icons/barium-billet.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-barium-sulfamate"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-barium-sulfide"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-barium-billet"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-drilling-fluid"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-barium-carbonate"
+      },
+    },
+    prerequisites = {
+      "sp-geological-science-pack-2"
+    },
+    unit =
+    {
+      count = 500,
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"production-science-pack", 1}
+      },
+      time = 30
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-mercury-processing",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghetorio__/graphics/hr-icons/mercury.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-mercury"
+      },
+    },
+    prerequisites = {
+      "sp-geological-science-pack-2"
+    },
+    unit =
+    {
+      count = 150,
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"production-science-pack", 1}
+      },
+      time = 30
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-boron-processing",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/hr-icons/sodium-borate.png", 256, nil,
+                                        "__Spaghetorio__/graphics/hr-icons/boron-pillet.png", 256, nil),
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-sodium-borate"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-boron-pillet"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-diborane"
+      },
+    },
+    prerequisites = {
+      "sp-geological-science-pack-2"
+    },
+    unit =
+    {
+      count = 150,
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"production-science-pack", 1}
+      },
+      time = 30
     },
     order = "a-h-a"
   },
@@ -2455,7 +3028,7 @@ data:extend({
         {"sp-geological-science-pack-2", 1},
         {"production-science-pack", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -2518,7 +3091,7 @@ data:extend({
         {"sp-electronic-science-pack-2", 1},
         {"production-science-pack", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -2547,7 +3120,7 @@ data:extend({
         {"sp-electronic-science-pack-1", 1},
         {"sp-material-science-pack-1", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -2586,7 +3159,7 @@ data:extend({
         {"sp-material-science-pack-1", 1},
         {"sp-geological-science-pack-1", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -2614,7 +3187,7 @@ data:extend({
         {"production-science-pack", 1},
         {"utility-science-pack", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -2642,7 +3215,7 @@ data:extend({
         {"production-science-pack", 1},
         {"utility-science-pack", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -2678,7 +3251,7 @@ data:extend({
         {"sp-material-science-pack-2", 1},
         {"production-science-pack", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -2710,7 +3283,7 @@ data:extend({
         {"sp-material-science-pack-2", 1},
         {"production-science-pack", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -2751,7 +3324,7 @@ data:extend({
         {"production-science-pack", 1},
         {"utility-science-pack", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -2798,7 +3371,7 @@ data:extend({
         {"sp-computer-science-pack-2", 1},
         {"sp-nuclear-science-pack-2", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -2857,7 +3430,7 @@ data:extend({
         {"sp-computer-science-pack-2", 1},
         {"sp-nuclear-science-pack-2", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -2900,7 +3473,7 @@ data:extend({
         {"sp-computer-science-pack-2", 1},
         {"sp-nuclear-science-pack-2", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -2947,7 +3520,7 @@ data:extend({
         {"sp-computer-science-pack-2", 1},
         {"sp-nuclear-science-pack-2", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -2987,7 +3560,7 @@ data:extend({
         {"sp-geological-science-pack-2", 1},
         {"production-science-pack", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -3026,7 +3599,7 @@ data:extend({
         {"sp-production-science-pack-3", 1},
         {"utility-science-pack", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -3063,7 +3636,7 @@ data:extend({
         {"sp-production-science-pack-3", 1},
         {"utility-science-pack", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -3098,7 +3671,7 @@ data:extend({
         {"production-science-pack", 1},
         {"utility-science-pack", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -3135,7 +3708,7 @@ data:extend({
         {"utility-science-pack", 1},
         {"space-science-pack", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -3183,7 +3756,7 @@ data:extend({
         {"space-science-pack", 1},
         {"sp-utility-science-pack-3", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -3219,7 +3792,7 @@ data:extend({
         {"space-science-pack", 1},
         {"utility-science-pack", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -3263,7 +3836,7 @@ data:extend({
         {"space-science-pack", 1},
         {"sp-utility-science-pack-3", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -3319,7 +3892,7 @@ data:extend({
         {"space-science-pack", 1},
         {"sp-utility-science-pack-3", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -3371,7 +3944,7 @@ data:extend({
         {"space-science-pack", 1},
         {"sp-utility-science-pack-3", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -3405,7 +3978,7 @@ data:extend({
         {"sp-electronic-science-pack-2", 1},
         {"utility-science-pack", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -3436,7 +4009,7 @@ data:extend({
         {"sp-chemical-science-pack-2", 1},
         {"production-science-pack", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -3471,7 +4044,7 @@ data:extend({
         {"sp-material-science-pack-2", 1},
         {"production-science-pack", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -3510,7 +4083,7 @@ data:extend({
         {"space-science-pack", 1},
         {"utility-science-pack", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -3539,7 +4112,7 @@ data:extend({
         {"sp-electronic-science-pack-1", 1},
         {"sp-material-science-pack-1", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -3573,7 +4146,7 @@ data:extend({
         {"sp-material-science-pack-1", 1},
         {"production-science-pack", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -3600,7 +4173,7 @@ data:extend({
         {"sp-material-science-pack-1", 1},
         {"production-science-pack", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -3628,7 +4201,7 @@ data:extend({
         {"sp-material-science-pack-2", 1},
         {"production-science-pack", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -3662,7 +4235,7 @@ data:extend({
         {"sp-electronic-science-pack-2", 1},
         {"utility-science-pack", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -3698,7 +4271,7 @@ data:extend({
         {"sp-computer-science-pack-2", 1},
         {"production-science-pack", 1},
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -3726,7 +4299,7 @@ data:extend({
         {"sp-material-science-pack-1", 1},
         {"sp-electronic-science-pack-1", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -3767,7 +4340,7 @@ data:extend({
         {"space-science-pack", 1},
         {"utility-science-pack", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -3805,7 +4378,7 @@ data:extend({
         {"sp-geological-science-pack-2", 1},
         {"production-science-pack", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -3839,7 +4412,7 @@ data:extend({
         {"sp-geological-science-pack-2", 1},
         {"production-science-pack", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -3874,7 +4447,7 @@ data:extend({
         {"sp-geological-science-pack-1", 1},
         {"chemical-science-pack", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -3911,7 +4484,7 @@ data:extend({
         {"sp-material-science-pack-1", 1},
         {"sp-geological-science-pack-1", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -3935,7 +4508,7 @@ data:extend({
         {"automation-science-pack", 1},
         {"logistic-science-pack", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -3970,7 +4543,7 @@ data:extend({
         {"utility-science-pack", 1},
         {"sp-computer-science-pack-2", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -4012,7 +4585,7 @@ data:extend({
         {"utility-science-pack", 1},
         {"sp-computer-science-pack-2", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -4055,7 +4628,7 @@ data:extend({
         {"space-science-pack", 1},
         {"utility-science-pack", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -4092,7 +4665,7 @@ data:extend({
         {"space-science-pack", 1}
         -- Krastorio: {"sp-matter-science-pack", 1},
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -4129,7 +4702,7 @@ data:extend({
         {"space-science-pack", 1}
         -- Krastorio: {"sp-matter-science-pack", 1},
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -4167,7 +4740,7 @@ data:extend({
         {"space-science-pack", 1}
         -- Krastorio: {"sp-matter-science-pack", 1},
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -4204,7 +4777,7 @@ data:extend({
         {"space-science-pack", 1},
         {"utility-science-pack", 1},
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -4245,7 +4818,7 @@ data:extend({
         -- {"sp-advanced-science-pack", 1},
         -- {"sp-singularity-science-pack", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -4287,7 +4860,7 @@ data:extend({
       ingredients = {
         {"automation-science-pack", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -4339,7 +4912,7 @@ data:extend({
         -- Krastorio: {"sp-matter-science-pack", 1},
         -- Krastorio: {"sp-advanced-science-pack", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -4385,7 +4958,7 @@ data:extend({
         -- Krastorio: {"sp-matter-science-pack", 1},
         -- Krastorio: {"sp-advanced-science-pack", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -4442,7 +5015,7 @@ data:extend({
         -- Krastorio: {"sp-matter-science-pack", 1},
         -- Krastorio: {"sp-advanced-science-pack", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -4492,7 +5065,7 @@ data:extend({
         -- Krastorio: {"sp-matter-science-pack", 1},
         -- Krastorio: {"sp-advanced-science-pack", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -4534,7 +5107,7 @@ data:extend({
         -- Krastorio: {"sp-matter-science-pack", 1},
         -- Krastorio: {"sp-advanced-science-pack", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -4595,7 +5168,7 @@ data:extend({
         -- Krastorio: {"sp-matter-science-pack", 1},
         -- Krastorio: {"sp-advanced-science-pack", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -4646,7 +5219,7 @@ data:extend({
         -- Krastorio: {"sp-matter-science-pack", 1},
         -- Krastorio: {"sp-advanced-science-pack", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -4689,7 +5262,7 @@ data:extend({
         -- Krastorio: {"sp-matter-science-pack", 1},
         -- Krastorio: {"sp-advanced-science-pack", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -4745,7 +5318,7 @@ data:extend({
         -- Krastorio: {"sp-matter-science-pack", 1},
         -- Krastorio: {"sp-advanced-science-pack", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -4798,7 +5371,7 @@ data:extend({
         -- {"sp-matter-science-pack", 1},
         -- {"sp-advanced-science-pack", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -4848,7 +5421,7 @@ data:extend({
         -- {"sp-matter-science-pack", 1},
         -- {"sp-advanced-science-pack", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -4899,7 +5472,7 @@ data:extend({
         -- {"sp-matter-science-pack", 1},
         -- {"sp-advanced-science-pack", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -4943,7 +5516,7 @@ data:extend({
         -- Krastorio: {"sp-matter-science-pack", 1},
         -- Krastorio: {"sp-advanced-science-pack", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -5003,7 +5576,7 @@ data:extend({
         -- Krastorio: {"sp-matter-science-pack", 1},
         -- Krastorio: {"sp-advanced-science-pack", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -5051,7 +5624,7 @@ data:extend({
         -- Krastorio: {"sp-advanced-science-pack", 1},
         -- Krastorio: {"sp-singularity-science-pack", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -5101,7 +5674,7 @@ data:extend({
         -- Krastorio: {"sp-matter-science-pack", 1},
         -- Krastorio: {"sp-advanced-science-pack", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -5148,7 +5721,7 @@ data:extend({
         -- Krastorio: {"sp-advanced-science-pack", 1},
         -- Krastorio: {"sp-singularity-science-pack", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -5191,7 +5764,7 @@ data:extend({
         -- Krastorio: {"sp-advanced-science-pack", 1},
         -- Krastorio: {"sp-singularity-science-pack", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -5235,7 +5808,7 @@ data:extend({
         -- Krastorio: {"sp-advanced-science-pack", 1},
         -- Krastorio: {"sp-singularity-science-pack", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -5286,7 +5859,7 @@ data:extend({
         -- Krastorio: {"sp-advanced-science-pack", 1},
         -- Krastorio: {"sp-singularity-science-pack", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -5333,7 +5906,7 @@ data:extend({
         -- Krastorio: {"sp-advanced-science-pack", 1},
         -- Krastorio: {"sp-singularity-science-pack", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -5393,7 +5966,7 @@ data:extend({
         {"sp-utility-science-pack-3", 1},
         {"sp-space-science-pack-3", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -5444,7 +6017,7 @@ data:extend({
         -- Krastorio: {"sp-advanced-science-pack", 1},
         -- Krastorio: {"space-science-pack", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -5492,7 +6065,7 @@ data:extend({
         -- Krastorio: {"sp-matter-science-pack", 1},
         -- Krastorio: {"sp-advanced-science-pack", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -5586,7 +6159,89 @@ data:extend({
         -- Krastorio: {"sp-matter-science-pack", 1},
         -- Krastorio: {"sp-advanced-science-pack", 1}
       },
-      time = 15
+      time = 30
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-enriched-resource-from-acromatter",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icons = 
+    {
+      {icon = "__Spaghetorio__/graphics/arrows/acroproduct-recipes-arrow-256x256.png", icon_size = 256, scale = 2},
+      {icon = "__Spaghetorio__/graphics/hr-icons/acromatter.png", icon_size = 256}
+    },
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-enriched-aluminum-from-acromatter"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-enriched-chromite-from-acromatter"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-enriched-titanium-from-acromatter"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-enriched-magnesium-from-acromatter"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-enriched-nickel-from-acromatter"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-enriched-tinstone-from-acromatter"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-enriched-tungsten-from-acromatter"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-enriched-zinc-from-acromatter"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-enriched-copper-from-acromatter"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-enriched-iron-from-acromatter"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-enriched-rare-metals-from-acromatter"
+      }
+    },
+    prerequisites = {
+      "sp-acroproduct"
+    },
+    unit =
+    {
+      count = 1000,
+      ingredients = {
+        {"sp-automation-science-pack-3", 1},
+        {"sp-logistic-science-pack-3", 1},
+        {"sp-chemical-science-pack-3", 1},
+        {"sp-electronic-science-pack-3", 1},
+        {"sp-geological-science-pack-3", 1},
+        {"sp-material-science-pack-3", 1},
+        {"sp-computer-science-pack-3", 1},
+        {"sp-production-science-pack-3", 1},
+        {"sp-nuclear-science-pack-3", 1},
+        {"sp-space-science-pack-3", 1},
+        {"sp-utility-science-pack-3", 1},
+        -- {"space-science-pack", 1},
+        -- {"matter-tech-card", 1},
+        -- {"advanced-tech-card", 1}
+      },
+      time = 30
     },
     order = "a-h-a"
   },
@@ -5700,7 +6355,7 @@ data:extend({
         -- Krastorio: {"sp-matter-science-pack", 1},
         -- Krastorio: {"sp-advanced-science-pack", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -6137,7 +6792,7 @@ data:extend({
         {"automation-science-pack", 1},
         {"logistic-science-pack", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -6166,7 +6821,7 @@ data:extend({
         {"sp-material-science-pack-1", 1},
         {"sp-electronic-science-pack-1", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -6191,7 +6846,7 @@ data:extend({
         {"automation-science-pack", 1},
         {"logistic-science-pack", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -6223,7 +6878,7 @@ data:extend({
         {"sp-geological-science-pack-1", 1},
         {"sp-material-science-pack-1", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -6254,7 +6909,7 @@ data:extend({
         {"sp-geological-science-pack-1", 1},
         {"sp-material-science-pack-1", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -6285,7 +6940,7 @@ data:extend({
         {"sp-geological-science-pack-1", 1},
         {"sp-material-science-pack-1", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -6316,7 +6971,7 @@ data:extend({
         {"sp-geological-science-pack-1", 1},
         {"sp-material-science-pack-1", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -6348,7 +7003,7 @@ data:extend({
         {"sp-material-science-pack-2", 1},
         {"production-science-pack", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -6378,7 +7033,7 @@ data:extend({
         {"sp-geological-science-pack-1", 1},
         {"sp-material-science-pack-1", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -6409,7 +7064,7 @@ data:extend({
         {"sp-material-science-pack-1", 1},
         {"production-science-pack", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -6439,7 +7094,7 @@ data:extend({
         {"production-science-pack", 1},
         {"sp-material-science-pack-2", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -6471,7 +7126,7 @@ data:extend({
         {"sp-material-science-pack-2", 1},
         {"utility-science-pack", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -6504,7 +7159,7 @@ data:extend({
         {"space-science-pack", 1},
         {"sp-material-science-pack-2", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -6535,7 +7190,7 @@ data:extend({
         {"space-science-pack", 1},
         {"sp-material-science-pack-2", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -6567,7 +7222,7 @@ data:extend({
         {"space-science-pack", 1},
         {"sp-material-science-pack-2", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -6598,7 +7253,7 @@ data:extend({
         {"space-science-pack", 1},
         {"sp-material-science-pack-2", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -6629,7 +7284,7 @@ data:extend({
         {"space-science-pack", 1},
         {"sp-material-science-pack-2", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -6660,7 +7315,7 @@ data:extend({
         {"space-science-pack", 1},
         {"sp-material-science-pack-2", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -6692,7 +7347,7 @@ data:extend({
         {"space-science-pack", 1},
         {"sp-material-science-pack-2", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -6724,7 +7379,7 @@ data:extend({
         {"space-science-pack", 1},
         {"sp-material-science-pack-2", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -6764,7 +7419,7 @@ data:extend({
         {"sp-matter-science-pack", 1},
         {"sp-utility-science-pack-3", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -6796,7 +7451,7 @@ data:extend({
         {"production-science-pack", 1},
         {"utility-science-pack", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -6831,7 +7486,7 @@ data:extend({
         {"sp-computer-science-pack-3", 1},
         {"utility-science-pack", 1},
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -6866,7 +7521,7 @@ data:extend({
         {"sp-computer-science-pack-3", 1},
         {"utility-science-pack", 1},
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },
@@ -6906,7 +7561,7 @@ data:extend({
         -- Krastorio: {"sp-advanced-science-pack", 1},
         -- Krastorio: {"sp-singularity-science-pack", 1}
       },
-      time = 15
+      time = 30
     },
     order = "a-h-a"
   },

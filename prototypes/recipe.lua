@@ -571,7 +571,7 @@ data:extend({
       {type = "item", name = "sp-crushed-iron-ore", amount = 4}
     },
     results = {
-      {type = "item", name = "steel-plate", amount = 1}
+      {type = "item", name = "sp-iron-beam", amount = 4}
     },
     order = "beam-[iron-beam]"
   },
@@ -1314,6 +1314,59 @@ data:extend({
   ------------------------------------------------------------------------------
   {
     type = "recipe",
+    name = "sp-enriched-copper",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/enriched-copper/enriched-copper.png",
+    icon_size = 64,
+    mip_maps = 4,
+    category = "enriching-raw-resource",
+    subgroup = "enriched-resource-recipe",
+    enabled = false,
+    energy_required = 3,
+    ingredients = {
+      {type = "item", name = "copper-ore", amount = 12},
+      {type = "fluid", name = "sulfuric-acid", amount = 3},
+      {type = "fluid", name = "water", amount = 50}
+    },
+    results = {
+      {type = "item", name = "sp-enriched-copper", amount = 7},
+      {type = "item", name = "sp-enriched-iron", probability = 0.1, amount = 1},
+      {type = "fluid", name = "sp-dirty-water-with-copper", amount = 50}
+    },
+    crafting_machine_tint = {
+      primary = {r = 1.000, g = 0.5, b = 0.5, a = 1.000},
+      secondary = {r = 0.8, g = 0.3, b = 0.3, a = 1.000},
+      tertiary = {r = 0.6, g = 0.0, b = 0.0, a = 1.000},
+      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-enriched-iron",  -- #ForRegEx# - recipe
+    icon  = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/enriched-iron/enriched-iron.png",
+    icon_size = 64,
+    mip_maps = 4,
+    category = "enriching-raw-resource",
+    subgroup = "enriched-resource-recipe",
+    enabled = false,
+    energy_required = 2,
+    ingredients = {
+      {type = "item", name = "iron-ore", amount = 12},
+      {type = "fluid", name = "sp-chlorine", amount = 2},
+      {type = "fluid", name = "water", amount = 50}
+    },
+    results = {
+      {type = "item", name = "sp-enriched-aluminum", amount = 8},
+      {type = "fluid", name = "sp-dirty-water-with-iron", amount = 50}
+    },
+    crafting_machine_tint = {
+      primary = {r = 1.000, g = 0.5, b = 0.5, a = 1.000},
+      secondary = {r = 0.8, g = 0.3, b = 0.3, a = 1.000},
+      tertiary = {r = 0.6, g = 0.0, b = 0.0, a = 1.000},
+      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
+    }
+  },
+  {
+    type = "recipe",
     name = "sp-enriched-aluminum",  -- #ForRegEx# - recipe
     icon = "__Spaghetorio__/graphics/icons/enriched-aluminum-1.png",
     icon_size = 64,
@@ -1821,6 +1874,57 @@ data:extend({
   ------------------------------------------------------------------------------
   {
     type = "recipe",
+    name = "sp-iron-plate-from-enriched-iron",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__base__/graphics/icons/iron-plate.png", 64,
+                                         "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/enriched-iron/enriched-iron.png", 64),
+    category = "smelting-enriched-resource",
+    subgroup = "raw-material",
+    enabled = false,
+    energy_required = 3,
+    hide_from_player_crafting = true,
+    ingredients = {
+      {type = "item", name = "sp-enriched-iron", amount = 1}
+    },
+    results = {
+      {type = "item", name = "iron-plate", amount = 4}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-iron-beam-from-enriched-iron",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__base__/graphics/icons/steel-plate.png", 64,
+                                         "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/enriched-iron/enriched-iron.png", 64),
+    category = "smelting-enriched-resource",
+    subgroup = "raw-material",
+    enabled = false,
+    energy_required = 6,
+    hide_from_player_crafting = true,
+    ingredients = {
+      {type = "item", name = "sp-enriched-iron", amount = 2}
+    },
+    results = {
+      {type = "item", name = "sp-iron-beam", amount = 3}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-copper-plate-from-enriched-copper",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__base__/graphics/icons/copper-plate.png", 64,
+                                         "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/enriched-copper/enriched-copper.png", 64),
+    category = "smelting-enriched-resource",
+    subgroup = "raw-material",
+    enabled = false,
+    energy_required = 3,
+    hide_from_player_crafting = true,
+    ingredients = {
+      {type = "item", name = "sp-enriched-copper", amount = 1}
+    },
+    results = {
+      {type = "item", name = "copper-plate", amount = 4}
+    }
+  },
+  {
+    type = "recipe",
     name = "sp-alumina-from-enriched-aluminum",  -- #ForRegEx# - recipe
     icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/alumina.png", 64,
                                          "__Spaghetorio__/graphics/icons/enriched-aluminum-1.png", 64),
@@ -1886,7 +1990,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-tin-ingot-from-enriched-tin",  -- #ForRegEx# - recipe
+    name = "sp-tin-ingot-from-enriched-tinstone",  -- #ForRegEx# - recipe
     icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/tin-ingot.png", 64,
                                          "__Spaghetorio__/graphics/icons/enriched-tinstone-1.png", 64),
     category = "smelting-enriched-resource",
@@ -1918,7 +2022,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-tungsten-ingot-from-enriched-tungsten",  -- #ForRegEx# - recipe
+    name = "sp-ammonium-paratungstate-from-enriched-tungsten",  -- #ForRegEx# - recipe
     icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/ammonium-paratungstate.png", 64,
                                          "__Spaghetorio__/graphics/icons/enriched-tungsten-1.png", 64),
     category = "smelting-enriched-resource",
@@ -1988,6 +2092,63 @@ data:extend({
   ------------------------------------------------------------------------------
   {
     type = "recipe",
+    name = "sp-dirty-water-filtration-iron",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/icons/dirty-water-with-iron.png",
+    icon_size = 64,
+    mip_maps = 4,
+    category = "sp-kr-fluid-filtration",
+    subgroup = "dirty-fluid-filtration",
+    enabled = false,
+    hide_from_player_crafting = true,
+    energy_required = 3,
+    ingredients = {
+      {type = "fluid", name = "sp-dirty-water-with-iron", amount = 50},
+      {type = "item", name = "sp-sodium-molybdate", amount = 2}
+    },
+    results = {
+      {type = "item", name = "iron-ore", probability = 0.5, amount = 2},
+      {type = "item", name = "sp-cobalt-ore", probability = 0.1, amount = 1},
+      {type = "item", name = "sp-manganese-ore", probability = 0.04, amount = 1},
+      {type = "fluid", name = "water", amount = 50}
+    },
+    crafting_machine_tint = {
+      primary = {r = 0.000, g = 0.000, b = 0.500, a = 1.000},
+      secondary = {r = 0.0, g = 0.0, b = 0.3, a = 1.000},
+      tertiary = {r = 0.0, g = 0.0, b = 0.2, a = 1.000},
+      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
+    },
+  },
+  {
+    type = "recipe",
+    name = "sp-dirty-water-filtration-copper",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/icons/dirty-water-with-iron.png",
+    icon_size = 64,
+    mip_maps = 4,
+    category = "sp-kr-fluid-filtration",
+    subgroup = "dirty-fluid-filtration",
+    enabled = false,
+    hide_from_player_crafting = true,
+    energy_required = 3,
+    ingredients = {
+      {type = "fluid", name = "sp-dirty-water-with-copper", amount = 50},
+      {type = "fluid", name = "sp-bleach", amount = 3},
+      {type = "item", name = "sp-sodium-molybdate", amount = 1}
+    },
+    results = {
+      {type = "item", name = "copper-ore", probability = 0.5, amount = 2},
+      {type = "item", name = "sp-silver", probability = 0.05, amount = 1},
+      {type = "item", name = "sp-gold", probability = 0.04, amount = 1},
+      {type = "fluid", name = "water", amount = 50}
+    },
+    crafting_machine_tint = {
+      primary = {r = 0.000, g = 0.000, b = 0.500, a = 1.000},
+      secondary = {r = 0.0, g = 0.0, b = 0.3, a = 1.000},
+      tertiary = {r = 0.0, g = 0.0, b = 0.2, a = 1.000},
+      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
+    },
+  },
+  {
+    type = "recipe",
     name = "sp-dirty-water-filtration-aluminum",  -- #ForRegEx# - recipe
     icon = "__Spaghetorio__/graphics/icons/dirty-water-with-aluminum.png",
     icon_size = 64,
@@ -2003,8 +2164,8 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-aluminum-ore", probability = 0.5, amount = 2},
-      {type = "item", name = "sp-silver", probability = 0.05, amount = 1},
-      {type = "item", name = "sp-gold", probability = 0.04, amount = 1},
+      {type = "item", name = "sp-boron-ore", probability = 0.02, amount = 1},
+      {type = "item", name = "sp-silicon", probability = 0.1, amount = 1},
       {type = "fluid", name = "water", amount = 50}
     },
     crafting_machine_tint = {
@@ -2027,7 +2188,8 @@ data:extend({
     energy_required = 4,
     ingredients = {
       {type = "fluid", name = "sp-dirty-water-with-chromite", amount = 50},
-      {type = "fluid", name = "sp-bleach", amount = 5}
+      {type = "fluid", name = "sp-bleach", amount = 5},
+      {type = "item", name = "sp-sodium-molybdate", amount = 1}
     },
     results = {
       {type = "item", name = "sp-chromite", probability = 0.5, amount = 3},
@@ -2083,7 +2245,8 @@ data:extend({
     energy_required = 3,
     ingredients = {
       {type = "fluid", name = "sp-dirty-water-with-nickel", amount = 50},
-      {type = "fluid", name = "sp-bleach", amount = 4}
+      {type = "fluid", name = "sp-bleach", amount = 4},
+      {type = "item", name = "sp-sodium-molybdate", amount = 1}
     },
     results = {
       {type = "item", name = "sp-nickel-ore", probability = 0.5, amount = 2},
@@ -2140,6 +2303,7 @@ data:extend({
     ingredients = {
       {type = "fluid", name = "sp-dirty-water-with-titanium", amount = 50},
       {type = "fluid", name = "sp-bleach", amount = 4},
+      {type = "item", name = "sp-sodium-molybdate", amount = 1}
     },
     results = {
       {type = "item", name = "sp-titanium-ore", probability = 0.5, amount = 2},
@@ -12170,7 +12334,7 @@ data:extend({
       secondary = {r = 0.8, g = 0.3, b = 0.3, a = 1.000},
       tertiary = {r = 0.6, g = 0.0, b = 0.0, a = 1.000},
       quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
-    }
+    },
   },
   {
     type = "recipe",

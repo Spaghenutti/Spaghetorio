@@ -2,80 +2,80 @@
 Factorio Space age
   - Add some new ores (note down how they are supposed to be processed)
     + barium-ore
-      + barium-ore + sulfuric-acid -> barium-sulfamate (chemistry)
-      + barium-sulfamate + carbon -> barium-sulfide (smelting)
-      + barium-sulfide -> barium-billet (smelting)
-      + barium-sulfide + oxygen -> drilling-fluid (fluid-filtration)
-      + barium-sulfide + carbon + oxygen -> barium-carbonate + sulfur (barium-carbonate used in glass and ceramics)
+      +t barium-ore + sulfuric-acid -> barium-sulfamate (chemistry)
+      +t barium-sulfamate + carbon -> barium-sulfide (smelting)
+      +t barium-sulfide -> barium-billet (smelting)
+      +t barium-sulfide + oxygen -> drilling-fluid (fluid-filtration)
+      +t barium-sulfide + carbon + oxygen -> barium-carbonate + sulfur (barium-carbonate used in glass and ceramics)
       + barium-billet + titanium-ingot -> barium-titanate (for electronic components like capacitors)
       - barium-ore from acrocrystal
     + mercury-ore
-      + mercury-ore -> mercury + sulfur + stone
+      +t mercury-ore -> mercury + sulfur + stone
       + used in relay
       - used as liquid metal coolant in breeder reactor
       - used in catalyst
     + stibnite
-      + stibnite -> antimony-oxide (smelting)
-      + antimony-oxide + carbon -> antimony-pillet (smelting)
-      + antimony-pillet + chlorine -> antimony-trichloride (used for organic synthesis)
-      + antimony-pillet + iodine -> antimony-triiodide (thin film for semiconductor)
+      +t stibnite -> antimony-oxide (smelting)
+      +t antimony-oxide + carbon -> antimony-pillet (smelting)
+      +t antimony-pillet + chlorine -> antimony-trichloride (used for organic synthesis)
+      +t antimony-pillet + iodine -> antimony-triiodide (thin film for semiconductor)
       + copper + antimony-pillet -> copper-antimony (for bearings, solar cells and electronic layers)
       + add uses to antimony
       - stibnite from acrocrystal
     + boron-ore (kernite)
-      + boron-ore + phosphoric-acid -> sodium-borate (chemistry)
-      + sodium-borate + chlorine -> boron-pillet + salt (chemistry)
-      + sodium-borate + water -> diborane (B2H6) (rocket fuel and used to produce high purity boron)
-      + boron-pillet + carbon -> boron-carbide (B4C) (abrasive materials, armor plating, and neutron radiation control)
+      +t boron-ore + phosphoric-acid -> sodium-borate (chemistry)
+      +t sodium-borate + chlorine -> boron-pillet + salt (chemistry)
+      +t sodium-borate + water -> diborane (B2H6) (rocket fuel and used to produce high purity boron)
+      +t boron-pillet + carbon -> boron-carbide (B4C) (abrasive materials, armor plating, and neutron radiation control)
       + boron-pillet + phosphorus -> boron-phosphide (BP) (High temperature semiconductor)
       + boron-pillet + silicon -> boron-silicade (B6Si) (High temperature semiconductor)
       - boron-ore from acrocrystal
     + cobalt-ore
-      + cobalt-ore -> crushed-cobalt-ore + arsenic-trioxide (crushing)
-      + cobalt-ore -> cobalt-oxide (smelting)
-      + cobalt-oxide + sulfuric-acid -> cobalt-sulfate (chemistry)
-      + cobalt-sulfate -> cobalt-billet
-      + 30% nickel + 70% cobalt -> nickel-cobalt (corrosion resistant)
-      + 60% nickel + 20% chromium + 20% cobalt -> waspaloy (used in Aerospace and gas turbine)
+      +t cobalt-ore -> crushed-cobalt-ore + arsenic-trioxide (crushing)
+      +t cobalt-ore -> cobalt-oxide (smelting)
+      +t cobalt-oxide + sulfuric-acid -> cobalt-sulfate (chemistry)
+      +t cobalt-sulfate -> cobalt-billet
+      +t 30% nickel + 70% cobalt -> nickel-cobalt (corrosion resistant)
+      +t 60% nickel + 20% chromium + 20% cobalt -> waspaloy (used in Aerospace and gas turbine)
       + 60% cobalt + 30% Chromium + 6% tungsten + 2% manganese + 2% molybdenum = satellite 6 alloy (used in cutting tools and wear resistant applications)
       + 40% cobalt, 20% chromium, 15% nickel, 15% iron, 8% molybdenum, 2% manganese = elgiloy (for springs and mdeical devices)
       + Nickel (18%), Cobalt (8-12%), Molybdenum (3-5%) rest iron -> maraging-steel (used for Aerospace, tooling)
       + Nickel (29%), Cobalt (17%), Iron (balance) -> kovar (used for Electronics, glass-to-metal seals)
-      + arsenic-trioxide + hydrogen -> arsen-pillet
-      + arsen-pillet + sulfur -> arsenic-sulfide (As2S3) (Used as a semiconductor material)
-      + arsen-pillet + iodine -> arsenic-iodide (AsI3) (Used in the synthesis of organic arsenic compounds and as a reagent in chemical analysis)
+      +t arsenic-trioxide + hydrogen -> arsen-pillet
+      +t arsen-pillet + sulfur -> arsenic-sulfide (As2S3) (Used as a semiconductor material)
+      +t arsen-pillet + iodine -> arsenic-iodide (AsI3) (Used in the synthesis of organic arsenic compounds and as a reagent in chemical analysis)
       - cobalt-ore from acrocrystal
     + molybdenum-ore
-      + molybdenum-ore -> molybdenum-trioxide (smelting)
-      + molybdenum-trioxide -> molybdenum-pillet (smelting)
+      +t molybdenum-ore -> molybdenum-trioxide (smelting)
+      +t molybdenum-trioxide -> molybdenum-pillet (smelting)
       + lead + molybdenum-pillet + oxygen -> lead-molybdate (PbMoO4) (for radiation measurement)
       + sodium + molybdenum-pillet + oxygen -> sodium-molybdate (Na2MoO4) (for water treatment)
       - molybdenum-ore from acrocrystal
     + manganese-ore
-      + manganese-ore -> manganese-dioxide (smelting)
-      + manganese-dioxide -> manganese-ingot (electrolysis)
+      +t manganese-ore -> manganese-dioxide (smelting)
+      +t manganese-dioxide -> manganese-ingot (electrolysis)
       + manganese-ingot + chlorine -> manganese-chloride (MnCl2) (for battery cells)
       - check aluminum alloys that already exist in spaghetorio mod that might use manganese
       - manganese-ore from acrocrystal
     + iodine-brine
-      + iodine-brine + chlorine -> iodine-sludge
-      + iodine-sludge -> idonine
+      +t iodine-brine + chlorine -> iodine-sludge
+      +t iodine-sludge -> idonine
     + lithium
       + lithium-brine + water -> lithium-oxide
       + lithium-oxide + hydrogen-chloride -> lithium-chloride + water
       + lithium-chloride + sodium-hydroxide -> lithium
     + vanadium
-      + vanadium-ore -> vanadium-pentoxide: used as a catalyst in the production of sulfuric acid and in the manufacturing of ceramics and glass.
-      + sodium-carbonate + vanadium-pentoxide + water -> vanadium-bearing-solution
-      + vanadium-bearing-solution -> ammonium-metavanadate (NH4VO3): Used in the preparation of other vanadium compounds and as a catalyst in organic synthesis.
-      + ammonium-metavanadate + sodium-hydroxide -> vanadium-plate
+      +t vanadium-ore -> vanadium-pentoxide: used as a catalyst in the production of sulfuric acid and in the manufacturing of ceramics and glass.
+      +t sodium-carbonate + vanadium-pentoxide + water -> vanadium-bearing-solution
+      +t vanadium-bearing-solution -> ammonium-metavanadate (NH4VO3): Used in the preparation of other vanadium compounds and as a catalyst in organic synthesis.
+      +t ammonium-metavanadate + sodium-hydroxide -> vanadium-plate
       + vanadium-plate + sulfuric-acid = vanadyl-sulfate (VOSO4): Used in dietary supplements and as a catalyst in chemical reactions
       + titanium-aluminum-vanadium (Ti-6Al-4V): used in aerospace
       + vanadium-aluminum (V-Al): used in aerospace
       + vanadium-steel: used in high-speed machinery
     + potassium
-      + potassium-ore (sylvite (KCl) and carnallite (KMgCl3·6H2O)) + magnesium-chloride -> potassium-chloride (Used in fertilizers, as a salt substitute in food, and in medical treatments for potassium deficiency.)
-      + potassium-chloride -> potassium-ingot
+      +t potassium-ore (sylvite (KCl) and carnallite (KMgCl3·6H2O)) + magnesium-chloride -> potassium-chloride (Used in fertilizers, as a salt substitute in food, and in medical treatments for potassium deficiency.)
+      +t potassium-chloride -> potassium-ingot
       + potassium-ingot + manganese-ingot + 100 water -> potassium-permanganate-solution (KMnO4): Used as a disinfectant, water treatment chemical, and in organic synthesis.
       + potassium-ingot + chromium-plate + 75 water -> potassium-dichromate-solution (K2Cr2O7): Used in tanning leather, as a corrosion inhibitor, and in the production of pigments.
       + ammonia + carbon -> hydrogen-cyanide

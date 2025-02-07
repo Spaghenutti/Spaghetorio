@@ -686,7 +686,7 @@ data:extend({
       {size = 64, filename = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/enriched-rare-metals/enriched-rare-metals-2.png", scale = 0.5, mipmap_count = 4},
     },
     subgroup = "enriched-resource",
-    order = "[enriched-rare-metals]",
+    order = "z-[enriched-rare-metals]",
     stack_size = 200
   },
   {
@@ -1610,16 +1610,6 @@ data:extend({
     scale = 0.5,
     subgroup = "raw-material",
     order = "ingot-billet-[tantalum-billet]",
-    stack_size = 100
-  },
-  {
-    type = "item",
-    name = "sp-cement",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/icons/cement.png",
-    icon_size = 64,
-    scale = 0.5,
-    subgroup = "raw-material",
-    order = "[cement]",
     stack_size = 100
   },
   {
@@ -3679,6 +3669,16 @@ data:extend({
     scale = 0.5,
     subgroup = "chemical-product",
     order = "[rubber]",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "sp-cement",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/cement.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "chemical-product",
+    order = "[cement]",
     stack_size = 100
   },
   {
@@ -5824,7 +5824,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/alloy-forge.png",
     icon_size = 64,
     icon_mipmaps = 4,
-    subgroup = "smelting-machine",
+    subgroup = "smelting-machine",  -- #ForRegEx# - building
     order = "c[electric-furnace]-f[alloy-forge]",
     place_result = "sp-alloy-forge",
     stack_size = 50,
@@ -5835,14 +5835,14 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/arc-furnace.png",
     icon_size = 64,
     icon_mipmaps = 4,
-    subgroup = "smelting-machine",
+    subgroup = "smelting-machine",  -- #ForRegEx# - building
     order = "c[electric-furnace]-f[arc-furnace]",
     place_result = "sp-arc-furnace",
     stack_size = 50,
   },
   {
     type = "item",
-    name = "sp-kr-advanced-furnace",
+    name = "sp-kr-advanced-furnace",  -- #ForRegEx# - building
     icon = "__Spaghetorio__/graphics/krastorio/icons/entities/advanced-furnace.png",
     icon_size = 128,
     icon_mipmaps = 4,
@@ -5986,7 +5986,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-kr-advanced-assembling-machine",
+    name = "sp-kr-advanced-assembling-machine",  -- #ForRegEx# - building
     icon = "__Spaghetorio__/graphics/krastorio/icons/entities/advanced-assembling-machine.png",
     icon_size = 64,
     icon_mipmaps = 4,
@@ -5997,7 +5997,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-kr-advanced-chemical-plant",
+    name = "sp-kr-advanced-chemical-plant",  -- #ForRegEx# - building
     icon = "__Spaghetorio__/graphics/krastorio/icons/entities/advanced-chemical-plant.png",
     icon_size = 64,
     icon_mipmaps = 4,
@@ -6008,7 +6008,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-kr-bio-lab",
+    name = "sp-kr-bio-lab",  -- #ForRegEx# - building
     icon = "__Spaghetorio__/graphics/krastorio/icons/entities/bio-lab.png",
     icon_size = 64,
     icon_mipmaps = 4,
@@ -6019,7 +6019,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-kr-greenhouse",
+    name = "sp-kr-greenhouse",  -- #ForRegEx# - building
     icon = "__Spaghetorio__/graphics/krastorio/icons/entities/greenhouse.png",
     icon_size = 64,
     icon_mipmaps = 4,
@@ -6030,7 +6030,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-kr-research-server",
+    name = "sp-kr-research-server",  -- #ForRegEx# - building
     icon = "__Spaghetorio__/graphics/krastorio/icons/entities/research-server.png",
     icon_size = 64,
     icon_mipmaps = 4,
@@ -6041,7 +6041,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-kr-quantum-computer",
+    name = "sp-kr-quantum-computer",  -- #ForRegEx# - building
     icon = "__Spaghetorio__/graphics/krastorio/icons/entities/quantum-computer.png",
     icon_size = 64,
     icon_mipmaps = 4,
@@ -6052,7 +6052,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-kr-crusher",
+    name = "sp-kr-crusher",  -- #ForRegEx# - building
     icon = "__Spaghetorio__/graphics/krastorio/icons/entities/crusher.png",
     icon_size = 64,
     icon_mipmaps = 4,
@@ -6063,7 +6063,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-kr-fuel-refinery",
+    name = "sp-kr-fuel-refinery",  -- #ForRegEx# - building
     icon = "__Spaghetorio__/graphics/krastorio/icons/entities/fuel-refinery.png",
     icon_size = 64,
     icon_mipmaps = 4,
@@ -6074,7 +6074,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-kr-electrolysis-plant",
+    name = "sp-kr-electrolysis-plant",  -- #ForRegEx# - building
     icon = "__Spaghetorio__/graphics/krastorio/icons/entities/electrolysis-plant.png",
     icon_size = 64,
     icon_mipmaps = 4,
@@ -6085,7 +6085,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-kr-filtration-plant",
+    name = "sp-kr-filtration-plant",  -- #ForRegEx# - building
     icon = "__Spaghetorio__/graphics/krastorio/icons/entities/filtration-plant.png",
     icon_size = 64,
     icon_mipmaps = 4,
@@ -6096,7 +6096,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-kr-atmospheric-condenser",
+    name = "sp-kr-atmospheric-condenser",  -- #ForRegEx# - building
     icon = "__Spaghetorio__/graphics/krastorio/icons/entities/atmospheric-condenser.png",
     icon_size = 64,
     icon_mipmaps = 4,
@@ -6107,7 +6107,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-kr-fluid-burner",
+    name = "sp-kr-fluid-burner",  -- #ForRegEx# - building
     icon = "__Spaghetorio__/graphics/krastorio/icons/entities/fluid-burner.png",
     icon_size = 64,
     icon_mipmaps = 4,
@@ -6118,7 +6118,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-kr-matter-plant",
+    name = "sp-kr-matter-plant",  -- #ForRegEx# - building
     icon = "__Spaghetorio__/graphics/krastorio/icons/entities/matter-plant.png",
     icon_size = 128,
     icon_mipmaps = 4,
@@ -6129,7 +6129,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-kr-matter-assembler",
+    name = "sp-kr-matter-assembler",  -- #ForRegEx# - building
     icon = "__Spaghetorio__/graphics/krastorio/icons/entities/matter-assembler.png",
     icon_size = 128,
     icon_mipmaps = 4,
@@ -6140,7 +6140,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-kr-stellar-sinkhole-forge",
+    name = "sp-kr-stellar-sinkhole-forge",  -- #ForRegEx# - building
     icon = "__Spaghetorio__/graphics/krastorio/icons/entities/intergalactic-transceiver.png",
     icon_size = 64,
     icon_mipmaps = 4,
@@ -6151,7 +6151,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-kr-stabilizer-charging-station",
+    name = "sp-kr-stabilizer-charging-station",  -- #ForRegEx# - building
     icon = "__Spaghetorio__/graphics/krastorio/icons/entities/stabilizer-charging-station.png",
     icon_size = 128,
     icon_mipmaps = 4,
@@ -6163,7 +6163,7 @@ data:extend({
   -- -- Storage
   -- {
   --   type = "item",
-  --   name = "sp-kr-shelter",
+  --   name = "sp-kr-shelter",  -- #ForRegEx# - building
   --   icon = "__Spaghetorio__/graphics/krastorio/icons/entities/shelter.png",
   --   icon_size = 64,
   --   icon_mipmaps = 4,
@@ -6174,7 +6174,7 @@ data:extend({
   -- },
   -- {
   --   type = "item",
-  --   name = "sp-kr-fluid-storage-1",
+  --   name = "sp-kr-fluid-storage-1",  -- #ForRegEx# - building
   --   icon = "__Spaghetorio__/graphics/krastorio/icons/entities/fluid-storages/fluid-storage-1.png",
   --   stack_size = 50,
   --   icon_size = 64,
@@ -6185,7 +6185,7 @@ data:extend({
   -- },
   -- {
   --   type = "item",
-  --   name = "sp-kr-fluid-storage-2",
+  --   name = "sp-kr-fluid-storage-2",  -- #ForRegEx# - building
   --   icon = "__Spaghetorio__/graphics/krastorio/icons/entities/fluid-storages/fluid-storage-2.png",
   --   stack_size = 50,
   --   icon_size = 64,
@@ -6197,7 +6197,7 @@ data:extend({
   -- -- Extractioin machine
   -- {
   --   type = "item",
-  --   name = "sp-kr-mineral-water-pumpjack",
+  --   name = "sp-kr-mineral-water-pumpjack",  -- #ForRegEx# - building
   --   icon = "__Spaghetorio__/graphics/krastorio/icons/entities/mineral-water-pumpjack.png",
   --   icon_size = 64,
   --   icon_mipmaps = 4,
@@ -6209,7 +6209,7 @@ data:extend({
   -- Extraction machine
   {
     type = "item",
-    name = "sp-kr-quarry-drill",
+    name = "sp-kr-quarry-drill",  -- #ForRegEx# - building
     icon = "__Spaghetorio__/graphics/krastorio/icons/entities/quarry-drill.png",
     icon_size = 64,
     icon_mipmaps = 4,
@@ -6220,7 +6220,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-core-extractor",
+    name = "sp-core-extractor",  -- #ForRegEx# - building
     icon = "__Spaghetorio__/graphics/icons/core-extractor.png",
     icon_size = 64,
     icon_mipmaps = 4,
@@ -6232,7 +6232,7 @@ data:extend({
   -- Laboratories
   {
     type = "item",
-    name = "sp-biusart-lab",
+    name = "sp-biusart-lab",  -- #ForRegEx# - building
     icon = "__Spaghetorio__/graphics/krastorio/icons/entities/biusart-lab.png",
     icon_size = 64,
     icon_mipmaps = 4,
@@ -6243,7 +6243,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-kr-singularity-lab",
+    name = "sp-kr-singularity-lab",  -- #ForRegEx# - building
     icon = "__Spaghetorio__/graphics/krastorio/icons/entities/singularity-lab.png",
     icon_size = 64,
     icon_mipmaps = 4,
@@ -6255,7 +6255,7 @@ data:extend({
   -- Energy production
   {
     type = "item",
-    name = "sp-kr-wind-turbine",
+    name = "sp-kr-wind-turbine",  -- #ForRegEx# - building
     icon = "__Spaghetorio__/graphics/krastorio/icons/entities/wind-turbine.png",
     icon_size = 64,
     icon_mipmaps = 4,
@@ -6266,7 +6266,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-kr-gas-power-station",
+    name = "sp-kr-gas-power-station",  -- #ForRegEx# - building
     icon = "__Spaghetorio__/graphics/krastorio/icons/entities/gas-power-station.png",
     icon_size = 64,
     icon_mipmaps = 4,
@@ -6277,7 +6277,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-kr-particle-accelerator",
+    name = "sp-kr-particle-accelerator",  -- #ForRegEx# - building
     icon = "__Spaghetorio__/graphics/krastorio/icons/entities/fusion-reactor.png",
     icon_size = 64,
     icon_mipmaps = 4,
@@ -6288,7 +6288,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-kr-antimatter-reactor",
+    name = "sp-kr-antimatter-reactor",  -- #ForRegEx# - building
     icon = "__Spaghetorio__/graphics/krastorio/icons/entities/antimatter-reactor.png",
     icon_size = 128,
     icon_mipmaps = 4,
@@ -6299,7 +6299,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-kr-energy-storage",
+    name = "sp-kr-energy-storage",  -- #ForRegEx# - building
     icon = "__Spaghetorio__/graphics/krastorio/icons/entities/energy-storage.png",
     icon_size = 64,
     icon_mipmaps = 4,
@@ -6310,7 +6310,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-kr-advanced-solar-panel",
+    name = "sp-kr-advanced-solar-panel",  -- #ForRegEx# - building
     icon = "__Spaghetorio__/graphics/krastorio/icons/entities/advanced-solar-panel.png",
     icon_size = 64,
     icon_mipmaps = 4,
@@ -6322,7 +6322,7 @@ data:extend({
   -- logistic network
   {
     type = "item",
-    name = "sp-kr-small-roboport",
+    name = "sp-kr-small-roboport",  -- #ForRegEx# - building
     icon = "__Spaghetorio__/graphics/krastorio/icons/entities/small-roboport.png",
     icon_size = 64,
     icon_mipmaps = 4,
@@ -6333,7 +6333,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-kr-large-roboport",
+    name = "sp-kr-large-roboport",  -- #ForRegEx# - building
     icon = "__Spaghetorio__/graphics/krastorio/icons/entities/large-roboport.png",
     icon_size = 64,
     icon_mipmaps = 4,
@@ -6345,7 +6345,7 @@ data:extend({
   -- Module
   {
     type = "item",
-    name = "sp-kr-singularity-beacon",
+    name = "sp-kr-singularity-beacon",  -- #ForRegEx# - building
     icon = "__Spaghetorio__/graphics/krastorio/icons/entities/singularity-beacon.png",
     icon_size = 64,
     icon_mipmaps = 4,
@@ -6357,7 +6357,7 @@ data:extend({
   -- -- teleporter
   -- {
   --   type = "item",
-  --   name = "sp-kr-planetary-teleporter",
+  --   name = "sp-kr-planetary-teleporter",  -- #ForRegEx# - building
   --   icon = "__Spaghetorio__/graphics/krastorio/icons/entities/planetary-teleporter.png",
   --   icon_size = 64,
   --   icon_mipmaps = 4,
@@ -6369,7 +6369,7 @@ data:extend({
   -- MARK: Tramsport belt
   {
     type = "item",
-    name = "sp-kr-loader",
+    name = "sp-kr-loader",  -- #ForRegEx# - building
     icon = "__Spaghetorio__/graphics/krastorio/icons/entities/loaders/kr-loader.png",
     icon_size = 64,
     icon_mipmaps = 4,
@@ -6380,7 +6380,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-kr-fast-loader",
+    name = "sp-kr-fast-loader",  -- #ForRegEx# - building
     icon = "__Spaghetorio__/graphics/krastorio/icons/entities/loaders/kr-fast-loader.png",
     icon_size = 64,
     icon_mipmaps = 4,
@@ -6391,7 +6391,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-kr-express-loader",
+    name = "sp-kr-express-loader",  -- #ForRegEx# - building
     icon = "__Spaghetorio__/graphics/krastorio/icons/entities/loaders/kr-express-loader.png",
     icon_size = 64,
     icon_mipmaps = 4,
@@ -6402,7 +6402,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-kr-turbo-loader",
+    name = "sp-kr-turbo-loader",  -- #ForRegEx# - building
     icon = "__Spaghetorio__/graphics/krastorio/icons/entities/loaders/kr-advanced-loader.png",
     icon_size = 64,
     icon_mipmaps = 4,
@@ -6413,7 +6413,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-kr-superior-loader",
+    name = "sp-kr-superior-loader",  -- #ForRegEx# - building
     icon = "__Spaghetorio__/graphics/krastorio/icons/entities/loaders/kr-superior-loader.png",
     icon_size = 64,
     icon_mipmaps = 4,
@@ -6424,7 +6424,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-kr-superior-splitter",
+    name = "sp-kr-superior-splitter",  -- #ForRegEx# - building
     localised_description = { "entity-description.splitter" },
     icon = "__Spaghetorio__/graphics/krastorio/icons/entities/transport-belts/superior-transport-belt/superior-splitter.png",
     icon_size = 64,
@@ -6436,7 +6436,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-kr-superior-transport-belt",
+    name = "sp-kr-superior-transport-belt",  -- #ForRegEx# - building
     icon = "__Spaghetorio__/graphics/krastorio/icons/entities/transport-belts/superior-transport-belt/superior-transport-belt.png",
     icon_size = 64,
     icon_mipmaps = 4,
@@ -6447,7 +6447,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-kr-superior-underground-belt",
+    name = "sp-kr-superior-underground-belt",  -- #ForRegEx# - building
     icon = "__Spaghetorio__/graphics/krastorio/icons/entities/transport-belts/superior-transport-belt/superior-underground-belt.png",
     icon_size = 64,
     icon_mipmaps = 4,
@@ -6459,7 +6459,7 @@ data:extend({
   -- MARK: inserters
   {
     type = "item",
-    name = "sp-kr-superior-inserter",
+    name = "sp-kr-superior-inserter",  -- #ForRegEx# - building
     icon = "__Spaghetorio__/graphics/krastorio/icons/entities/inserters/superior-inserter.png",
     icon_size = 64,
     icon_mipmaps = 4,
@@ -6470,7 +6470,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-kr-superior-long-inserter",
+    name = "sp-kr-superior-long-inserter",  -- #ForRegEx# - building
     icon = "__Spaghetorio__/graphics/krastorio/icons/entities/inserters/superior-long-inserter.png",
     icon_size = 64,
     icon_mipmaps = 4,

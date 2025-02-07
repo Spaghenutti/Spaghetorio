@@ -1,4 +1,11 @@
 local util = require("data-util")
+local remove_prototypes = require("remove-prototypes")
+
+--------------------------------------------------------------------------------
+-- MARK: Delete recipes
+--------------------------------------------------------------------------------
+remove_prototypes.remove_one_prototype("recipe", "simple-coal-liquefaction")
+remove_prototypes.remove_one_prototype("recipe", "acid-neutralisation")
 
 --------------------------------------------------------------------------------
 -- Recipe changes for space age factorio items
@@ -76,6 +83,17 @@ util.recipe.change_recipe_ingredients("wood-processing",
 data.raw.recipe["wood-processing"].results = {
   {type = "item", name = "wood", amount = 10},
 }
+
+--------------------------------------------------------------------------------
+-- MARK: Combat
+--------------------------------------------------------------------------------
+util.recipe.change_recipe_ingredients("toolbelt-equipment",
+  {
+    {type = "item", name = "advanced-circuit", amount = 3},
+    {type = "item", name = "sp-fabric", amount = 2},
+    {type = "item", name = "carbon-fiber", amount = 5}
+  },
+  5)
 
 --------------------------------------------------------------------------------
 -- MARK: buildings
