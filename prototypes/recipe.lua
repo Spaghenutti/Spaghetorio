@@ -3744,6 +3744,24 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "sp-imersite-powder",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/imersite-powder/imersite-powder.png",
+    icon_size = 64,
+    mip_maps = 4,
+    category = "crushing",
+    subgroup = "processed-resource",
+    enabled = false,
+    energy_required = 3,
+    ingredients = {
+      {type = "item", name = "sp-raw-imersite", amount = 3},
+    },
+    results = {
+      {type = "item", name = "sp-imersite-powder", amount = 2},
+      {type = "item", name = "sp-sand", amount = 3}
+    }
+  },
+  {
+    type = "recipe",
     name = "sp-nuclear-waste-processing",  -- #ForRegEx# - recipe
     icon = "__Spaghetorio__/graphics/icons/nuclear-waste.png",
     icon_size = 64,
@@ -6973,6 +6991,186 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-lumber-mill", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-core-extractor",  -- #ForRegEx# - recipe
+    icon_size = 64,
+    mip_maps = 4,
+    category = "crafting",
+    enabled = false,
+    energy_required = 69,
+    ingredients = {
+      {type = "item", name = "iron-plate", amount = 69},
+    },
+    results = {
+      {type = "item", name = "sp-core-extractor", amount = 69}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-alloy-forge",  -- #ForRegEx# - recipe
+    icon_size = 64,
+    mip_maps = 4,
+    category = "crafting",
+    enabled = false,
+    energy_required = 69,
+    ingredients = {
+      {type = "item", name = "iron-plate", amount = 69},
+    },
+    results = {
+      {type = "item", name = "sp-alloy-forge", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-arc-furnace",  -- #ForRegEx# - recipe
+    icon_size = 64,
+    mip_maps = 4,
+    category = "crafting",
+    enabled = false,
+    energy_required = 69,
+    ingredients = {
+      {type = "item", name = "iron-plate", amount = 69},
+    },
+    results = {
+      {type = "item", name = "sp-arc-furnace", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-breeder-reactor",  -- #ForRegEx# - recipe
+    icon_size = 64,
+    mip_maps = 4,
+    category = "crafting",
+    enabled = false,
+    energy_required = 69,
+    ingredients = {
+      {type = "item", name = "iron-plate", amount = 69},
+    },
+    results = {
+      {type = "item", name = "sp-breeder-reactor", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-chemical-stager",  -- #ForRegEx# - recipe
+    icon_size = 64,
+    mip_maps = 4,
+    category = "crafting",
+    enabled = false,
+    energy_required = 69,
+    ingredients = {
+      {type = "item", name = "iron-plate", amount = 69},
+    },
+    results = {
+      {type = "item", name = "sp-chemical-stager", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-cyclotron",  -- #ForRegEx# - recipe
+    icon_size = 64,
+    mip_maps = 4,
+    category = "crafting",
+    enabled = false,
+    energy_required = 69,
+    ingredients = {
+      {type = "item", name = "iron-plate", amount = 69},
+    },
+    results = {
+      {type = "item", name = "sp-cyclotron", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-freezer",  -- #ForRegEx# - recipe
+    icon_size = 64,
+    mip_maps = 4,
+    category = "crafting",
+    enabled = false,
+    energy_required = 69,
+    ingredients = {
+      {type = "item", name = "iron-plate", amount = 69},
+    },
+    results = {
+      {type = "item", name = "sp-freezer", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-gravity-assembler",  -- #ForRegEx# - recipe
+    icon_size = 64,
+    mip_maps = 4,
+    category = "crafting",
+    enabled = false,
+    energy_required = 69,
+    ingredients = {
+      {type = "item", name = "iron-plate", amount = 69},
+    },
+    results = {
+      {type = "item", name = "sp-gravity-assembler", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-induction-hardening-facility",  -- #ForRegEx# - recipe
+    icon_size = 64,
+    mip_maps = 4,
+    category = "crafting",
+    enabled = false,
+    energy_required = 69,
+    ingredients = {
+      {type = "item", name = "iron-plate", amount = 69},
+    },
+    results = {
+      {type = "item", name = "sp-induction-hardening-facility", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-oxidizer",  -- #ForRegEx# - recipe
+    icon_size = 64,
+    mip_maps = 4,
+    category = "crafting",
+    enabled = false,
+    energy_required = 69,
+    ingredients = {
+      {type = "item", name = "iron-plate", amount = 69},
+    },
+    results = {
+      {type = "item", name = "sp-oxidizer", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-pathogen-lab",  -- #ForRegEx# - recipe
+    icon_size = 64,
+    mip_maps = 4,
+    category = "crafting",
+    enabled = false,
+    energy_required = 69,
+    ingredients = {
+      {type = "item", name = "iron-plate", amount = 69},
+    },
+    results = {
+      {type = "item", name = "sp-pathogen-lab", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-quantum-stabilizer",  -- #ForRegEx# - recipe
+    icon_size = 64,
+    mip_maps = 4,
+    category = "crafting",
+    enabled = false,
+    energy_required = 69,
+    ingredients = {
+      {type = "item", name = "iron-plate", amount = 69},
+    },
+    results = {
+      {type = "item", name = "sp-quantum-stabilizer", amount = 1}
     }
   },
   {
@@ -11971,6 +12169,22 @@ data:extend({
       {type = "item", name = "sp-cobalt-sulfate", probability = 0.2, amount = 1},
       {type = "item", name = "iron-ore", probability = 0.5, amount = 1},
       {type = "item", name = "sp-sand", probability = 0.3, amount = 1}
+    }
+  },
+  -- MARK: Fix Krastorio recipes
+  {
+    type = "recipe",
+    name = "sp-imersite-crystal",  -- #ForRegEx# - recipe
+    category = "chemistry",
+    enabled = false,
+    energy_required = 20,
+    ingredients = {
+      {type = "item", name = "sp-imersite-powder", amount = 6},
+      {type = "fluid", name = "sp-nitric-acid", amount = 10},
+      {type = "fluid", name = "sulfuric-acid", amount = 6}
+    },
+    results = {
+      {type = "item", name = "sp-imersite-crystal", amount = 1}
     }
   },
 })

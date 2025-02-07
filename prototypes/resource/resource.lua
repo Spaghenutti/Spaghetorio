@@ -575,7 +575,7 @@ data:extend({
   core_resource(
     {
       name = "core-rift",
-      icon = "__Spaghetorio__/graphics/icons/core-rift.png",
+      icon = "__Spaghetorio__/graphics/icons/core-fragment-2.png",
       stages_filename = "__Spaghetorio__/graphics/resource/core-rift.png",
       mining_time = 1,
       mining_result = "sp-core-fragment",

@@ -87,8 +87,7 @@ require("prototypes.item-groups")
 require("prototypes.recipe")
 -- require("prototypes.rocket-silo")
 require("prototypes.technology")
-
-require("prototypes.krastorio-technologies")
+-- require("prototypes.krastorio-technologies")
 
 -- MARK: Compatibility
 -- EverythingOnNauvis

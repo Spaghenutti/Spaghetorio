@@ -168,7 +168,7 @@ data:extend({
   },
   {
     type = "technology",
-    name = "sp-kr-automation-core",
+    name = "sp-kr-automation-core",  -- #ForRegEx# - technology
     mod = "Krastorio2",
     icon = "__Spaghetorio__/graphics/krastorio/technologies/automation-core.png",
     icon_size = 256,
@@ -190,40 +190,6 @@ data:extend({
       },
       time = 20,
     },
-  },
-  {
-    type = "technology",
-    name = "sp-crusher",  -- #ForRegEx# - technology
-    icon_size = 256,
-    icon = "__Spaghetorio__/graphics/technology/crusher-horizontal.png",
-    effects =
-    {
-      {
-        type = "unlock-recipe",
-        recipe = "crusher"
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-sand"
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-crushing-coal",
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-crushing-coke",
-      },
-    },
-    prerequisites = {
-      "automation"
-    },
-    research_trigger = {
-      type = "craft-item",
-      item = "assembling-machine-1",
-      count = 1
-    },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -792,7 +758,7 @@ data:extend({
     name = "sp-advanced-ceramics",  -- #ForRegEx# - technology
     icon_size = 256,
     icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/hr-icons/titanium-carbide.png", 256, nil,
-                                   "__Spaghetorio__/graphics/hr-icons/tungsten-carbide.png", 256, nil),
+                                        "__Spaghetorio__/graphics/hr-icons/tungsten-carbide.png", 256, nil),
     effects =
     {
       {
@@ -2368,7 +2334,7 @@ data:extend({
     name = "sp-advanced-nuclear-waste-processing",  -- #ForRegEx# - technology
     icon_size = 256,
     icons = util.icon.overlay_small_icon_for_technology("__Spaghetorio__/graphics/hr-icons/nuclear-waste.png", 256,
-                                                   "__Spaghetorio__/graphics/hr-icons/plutonium-239-1.png", 256),
+                                                        "__Spaghetorio__/graphics/hr-icons/plutonium-239-1.png", 256),
     effects =
     {
       {
@@ -2500,7 +2466,7 @@ data:extend({
     name = "sp-tellurium-processing",  -- #ForRegEx# - technology
     icon_size = 256,
     icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/hr-icons/tellurium-hydroxide.png", 256, nil,
-                                   "__Spaghetorio__/graphics/hr-icons/tellurium-1.png", 256, nil),
+                                        "__Spaghetorio__/graphics/hr-icons/tellurium-1.png", 256, nil),
     effects =
     {
       {
@@ -2530,6 +2496,36 @@ data:extend({
       time = 15
     },
     order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-silicon-processing",  -- #ForRegEx# - technology
+    icon = "__Spaghetorio__/graphics/krastorio/technologies/silicon-processing.png",
+    icon_size = 256,
+    icon_mipmaps = 4,
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-silicon",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-quartz",
+      },
+    },
+    prerequisites = {
+      "sp-kr-fluids-chemistry",
+      "automation-2"
+    },
+    order = "c-a",
+    unit = {
+      count = 125,
+      ingredients = {
+        { "automation-science-pack", 1 },
+        { "logistic-science-pack", 1 },
+      },
+      time = 30,
+    },
   },
   {
     type = "technology",
@@ -2761,7 +2757,7 @@ data:extend({
     name = "sp-crystal-growing",  -- #ForRegEx# - technology
     icon_size = 256,
     icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/hr-icons/quasicrystal.png", 256, nil,
-                                   "__Spaghetorio__/graphics/hr-icons/monocrystal.png", 256, nil),
+                                        "__Spaghetorio__/graphics/hr-icons/monocrystal.png", 256, nil),
     effects =
     {
       {
@@ -2821,7 +2817,8 @@ data:extend({
       "sp-material-science-pack-3",
       "sp-chemical-science-pack-3",
       "sp-production-science-pack-3",
-      "sp-geological-science-pack-3"
+      "sp-geological-science-pack-3",
+      "sp-kr-quarry-minerals-extraction"
     },
     unit =
     {
@@ -2879,7 +2876,8 @@ data:extend({
       "sp-material-science-pack-3",
       "sp-chemical-science-pack-3",
       "sp-production-science-pack-3",
-      "sp-geological-science-pack-3"
+      "sp-geological-science-pack-3",
+      "sp-kr-quarry-minerals-extraction"
     },
     unit =
     {
@@ -2921,7 +2919,8 @@ data:extend({
       "sp-material-science-pack-3",
       "sp-chemical-science-pack-3",
       "sp-production-science-pack-3",
-      "sp-geological-science-pack-3"
+      "sp-geological-science-pack-3",
+      "sp-kr-quarry-minerals-extraction"
     },
     unit =
     {
@@ -2967,7 +2966,8 @@ data:extend({
       "sp-material-science-pack-3",
       "sp-chemical-science-pack-3",
       "sp-production-science-pack-3",
-      "sp-geological-science-pack-3"
+      "sp-geological-science-pack-3",
+      "sp-kr-quarry-minerals-extraction"
     },
     unit =
     {
@@ -3034,7 +3034,7 @@ data:extend({
     name = "sp-quantum-tech",  -- #ForRegEx# - technology
     icon_size = 256,
     icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/hr-icons/quantum-crystal.png", 256, nil,
-                                   "__Spaghetorio__/graphics/hr-icons/quantum-foam.png", 256, nil),
+                                        "__Spaghetorio__/graphics/hr-icons/quantum-foam.png", 256, nil),
     effects =
     {
       {
@@ -4459,7 +4459,8 @@ data:extend({
       }
     },
     prerequisites = {
-      "sp-space-science-pack-3"
+      "sp-space-science-pack-3",
+      "sp-kr-automation"
     },
     unit =
     {
@@ -4508,7 +4509,8 @@ data:extend({
       }
     },
     prerequisites = {
-      "sp-space-science-pack-3"
+      "sp-space-science-pack-3",
+      "sp-kr-automation"
     },
     unit =
     {
@@ -4549,7 +4551,8 @@ data:extend({
       }
     },
     prerequisites = {
-      "sp-space-science-pack-3"
+      "sp-space-science-pack-3",
+      "sp-kr-automation"
     },
     unit =
     {
@@ -4943,7 +4946,7 @@ data:extend({
     name = "sp-alien-crystal-refinment",  -- #ForRegEx# - technology
     icon_size = 256,
     icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/hr-icons/blunagium-imersite-slab.png", 256, nil,
-                                   "__Spaghetorio__/graphics/hr-icons/radiant-glass.png", 256, nil),
+                                        "__Spaghetorio__/graphics/hr-icons/radiant-glass.png", 256, nil),
     effects =
     {
       {
@@ -5381,9 +5384,9 @@ data:extend({
     name = "sp-basic-acrosphere-conversion",  -- #ForRegEx# - technology
     icon_size = 256,
     icons = util.icon.combine_four_icons("__Spaghetorio__/graphics/hr-icons/blunagium-acrosphere-1.png", 256, nil,
-                                    "__Spaghetorio__/graphics/hr-icons/grobgnum-acrosphere-1.png", 256, nil,
-                                    "__Spaghetorio__/graphics/hr-icons/rukite-acrosphere-1.png", 256, nil,
-                                    "__Spaghetorio__/graphics/hr-icons/yemnuth-acrosphere-1.png", 256, nil),
+                                         "__Spaghetorio__/graphics/hr-icons/grobgnum-acrosphere-1.png", 256, nil,
+                                         "__Spaghetorio__/graphics/hr-icons/rukite-acrosphere-1.png", 256, nil,
+                                         "__Spaghetorio__/graphics/hr-icons/yemnuth-acrosphere-1.png", 256, nil),
     effects =
     {
       {
@@ -5488,8 +5491,8 @@ data:extend({
     name = "sp-acroproduct",  -- #ForRegEx# - technology
     icon_size = 256,
     icons =  util.icon.combine_three_icons("__Spaghetorio__/graphics/hr-icons/acrocrystal.png", 256, nil,
-                                     "__Spaghetorio__/graphics/hr-icons/acromatter.png", 256, nil,
-                                     "__Spaghetorio__/graphics/hr-icons/acrovoid.png", 256, nil),
+                                           "__Spaghetorio__/graphics/hr-icons/acromatter.png", 256, nil,
+                                           "__Spaghetorio__/graphics/hr-icons/acrovoid.png", 256, nil),
     effects =
     {
       {
@@ -5742,9 +5745,300 @@ data:extend({
   ------------------------------------------------------------------------------
   -- MARK: Buildings
   ------------------------------------------------------------------------------
+  
   {
     type = "technology",
-    name = "sp-kr-research-server",
+    name = "sp-crusher",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghetorio__/graphics/technology/crusher-horizontal.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "crusher"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-sand"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-crushing-coal",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-crushing-coke",
+      },
+    },
+    prerequisites = {
+      "automation"
+    },
+    research_trigger = {
+      type = "craft-item",
+      item = "assembling-machine-1",
+      count = 1
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-kr-greenhouse",  -- #ForRegEx# - technology
+    icon = "__Spaghetorio__/graphics/krastorio/technologies/greenhouse.png",
+    icon_size = 256,
+    icon_mipmaps = 4,
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-kr-greenhouse",
+      },
+    },
+    prerequisites = {
+        "fluid-handling",
+        "landfill"
+    },
+    unit = {
+      count = 20,
+      ingredients = {
+        {"automation-science-pack", 1},
+      },
+      time = 30,
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-kr-wind-turbine",  -- #ForRegEx# - technology
+    icon = "__Spaghetorio__/graphics/krastorio/icons/entities/wind-turbine.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-kr-wind-turbine",
+      },
+    },
+    prerequisites = {
+        "sp-steel-machining"
+    },
+    unit = {
+      count = 20,
+      ingredients = {
+        {"automation-science-pack", 1},
+      },
+      time = 30,
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-kr-fluids-chemistry",  -- #ForRegEx# - technology
+    icon = "__Spaghetorio__/graphics/krastorio/technologies/fluids-chemistry.png",
+    icon_size = 256,
+    icon_mipmaps = 4,
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-kr-filtration-plant",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-kr-electrolysis-plant",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "chemical-plant",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-kr-water-electrolysis",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-wood-fuel",
+      },
+    },
+    prerequisites = {
+      "logistic-science-pack",
+    },
+    unit = {
+      count = 50,
+      ingredients = {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1}
+      },
+      time = 30,
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-kr-fluid-excess-handling",  -- #ForRegEx# - technology
+    icon = "__Spaghetorio__/graphics/krastorio/technologies/fluid-burner.png",
+    icon_size = 256,
+    icon_mipmaps = 4,
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-kr-fluid-burner",
+      },
+    },
+    prerequisites = {
+      "sp-kr-fluids-chemistry",
+      "electronics",
+      "fluid-handling"
+    },
+    unit = {
+      count = 150,
+      ingredients = {
+        { "automation-science-pack", 1 },
+        { "logistic-science-pack", 1 },
+      },
+      time = 45,
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-kr-atmosphere-condensation",  -- #ForRegEx# - technology
+    icon = "__Spaghetorio__/graphics/krastorio/technologies/atmospheric-condenser.png",
+    icon_size = 256,
+    icon_mipmaps = 4,
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-kr-atmospheric-condenser",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-hydrogen",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-oxygen",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-nitrogen",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-water-from-atmosphere",
+      },
+    },
+    prerequisites = {
+      "sp-geological-science-pack-1",
+      "sp-plate-heat-exchanger"
+    },
+    unit = {
+      count = 175,
+      ingredients = {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"sp-material-science-pack-1", 1},
+        {"sp-electronic-science-pack-1", 1},
+        {"sp-geological-science-pack-1", 1}
+      },
+      time = 45,
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-kr-particle-accelerator",  -- #ForRegEx# - technology
+    icon = "__Spaghetorio__/graphics/krastorio/technologies/fusion-energy.png",
+    icon_size = 256,
+    icon_mipmaps = 4,
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-kr-particle-accelerator",
+      },
+      -- {
+      --   type = "unlock-recipe",
+      --   recipe = "sp-kr-advanced-steam-turbine",
+      -- },
+      -- {
+      --   type = "unlock-recipe",
+      --   recipe = krastorio.recipes.changed_names["heavy-water"] or "heavy-water",
+      -- },
+      -- {
+      --   type = "unlock-recipe",
+      --   recipe = krastorio.recipes.changed_names["tritium"] or "tritium",
+      -- },
+      -- {
+      --   type = "unlock-recipe",
+      --   recipe = krastorio.recipes.changed_names["empty-dt-fuel"] or "empty-dt-fuel",
+      -- },
+      -- {
+      --   type = "unlock-recipe",
+      --   recipe = krastorio.recipes.changed_names["dt-fuel"] or "dt-fuel",
+      -- },
+    },
+    prerequisites = {
+      "processing-unit",
+      -- "sp-kr-lithium-processing",
+      "nuclear-power",
+      "utility-science-pack",
+      "low-density-structure",
+      "kovarex-enrichment-process",
+      -- "sp-superconductor",
+      "sp-crystal-growing",
+      "sp-neodymium-magnet",
+      "sp-nuclear-science-pack-3"
+    },
+    unit = {
+      count = 1500,
+      ingredients = {
+        {"sp-automation-science-pack-3", 1},
+        {"sp-logistic-science-pack-3", 1},
+        {"sp-chemical-science-pack-3", 1},
+        {"sp-electronic-science-pack-3", 1},
+        {"sp-geological-science-pack-3", 1},
+        {"space-science-pack", 1},
+        {"sp-material-science-pack-3", 1},
+        {"sp-nuclear-science-pack-3", 1},
+        {"sp-computer-science-pack-3", 1},
+        {"utility-science-pack", 1},
+      },
+      time = 60,
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-kr-fuel",  -- #ForRegEx# - technology
+    icon = "__Spaghetorio__/graphics/krastorio/technologies/fuel-refinery.png",
+    icon_size = 256,
+    icon_mipmaps = 4,
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-kr-fuel-refinery",
+      },
+      -- {
+      --   type = "unlock-recipe",
+      --   recipe = krastorio.recipes.changed_names["fuel-1"] or "fuel-1",
+      -- },
+      -- {
+      --   type = "unlock-recipe",
+      --   recipe = krastorio.recipes.changed_names["fuel-2"] or "fuel-2",
+      -- },
+    },
+    prerequisites = {
+      "oil-processing",
+      "sp-pressure-fluid"
+    },
+    unit = {
+      count = 125,
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-electronic-science-pack-1", 1},
+        {"sp-geological-science-pack-1", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"production-science-pack", 1}
+      },
+      time = 45,
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-kr-research-server",  -- #ForRegEx# - technology
     icon = "__Spaghetorio__/graphics/krastorio/technologies/research-server.png",
     icon_size = 256,
     icon_mipmaps = 4,
@@ -5773,6 +6067,88 @@ data:extend({
         {"production-science-pack", 1}
       },
       time = 30,
+    },
+  },
+  {
+      type = "technology",
+      name = "sp-kr-quarry-minerals-extraction",
+      icon = "__Spaghetorio__/graphics/krastorio/technologies/quarry-drill.png",
+      icon_size = 256,
+      icon_mipmaps = 4,
+      effects = {
+        {
+          type = "unlock-recipe",
+          recipe = "sp-kr-quarry-drill",
+        },
+        {
+          type = "unlock-recipe",
+          recipe = "sp-imersite-powder",
+        },
+        {
+          type = "unlock-recipe",
+          recipe = "sp-imersite-crystal",
+        },
+      },
+      prerequisites = {
+        "big-mining-drill",
+        "sp-automation-science-pack-3",
+        "sp-geological-science-pack-3"
+      },
+      order = "g-e-d",
+      unit = {
+        count = 350,
+        ingredients = {
+          {"sp-automation-science-pack-3", 1},
+          {"sp-logistic-science-pack-2", 1},
+          {"sp-material-science-pack-2", 1},
+          {"sp-chemical-science-pack-2", 1},
+          {"sp-geological-science-pack-3", 1},
+          {"production-science-pack", 1},
+          {"sp-electronic-science-pack-2", 1},
+          {"utility-science-pack", 1},
+          {"sp-computer-science-pack-2", 1}
+        },
+        time = 60,
+      },
+    },
+    {
+    type = "technology",
+    name = "sp-kr-automation",
+    icon = "__Spaghetorio__/graphics/krastorio/technologies/advanced-assembling-machine.png",
+    icon_size = 256,
+    icon_mipmaps = 4,
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-kr-advanced-assembling-machine",
+      },
+    },
+    prerequisites = {
+      "automation-3",
+      -- "sp-kr-imersium-processing",
+      -- "sp-kr-energy-control-unit",
+      -- "sp-kr-advanced-tech-card",
+      -- "sp-kr-enriched-ores",
+      -- "kr-advanced-furnace"
+    },
+    unit = {
+      count = 500,
+      ingredients = {
+        {"sp-automation-science-pack-3", 1},
+        {"sp-logistic-science-pack-3", 1},
+        {"sp-chemical-science-pack-3", 1},
+        {"sp-electronic-science-pack-3", 1},
+        {"sp-geological-science-pack-3", 1},
+        {"sp-material-science-pack-3", 1},
+        {"sp-computer-science-pack-3", 1},
+        {"sp-production-science-pack-3", 1},
+        {"sp-nuclear-science-pack-3", 1},
+        {"sp-space-science-pack-3", 1},
+        {"sp-utility-science-pack-3", 1},
+        -- {"matter-tech-card", 1},
+        -- {"advanced-tech-card", 1}
+      },
+      time = 45,
     },
   },
   ------------------------------------------------------------------------------
@@ -5817,7 +6193,7 @@ data:extend({
       },
     },
     prerequisites = {
-      "sp-kr-silicon-processing",
+      "sp-silicon-processing",
     },
     unit =
     {
