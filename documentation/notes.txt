@@ -1,4 +1,8 @@
 
+calcium
+fluorine
+fluorspar
+
 T0 buildings
   - 
 

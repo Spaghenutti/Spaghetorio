@@ -575,10 +575,6 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "sp-landfill-from-cement"
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-landfill-from-flourspar"
       }
     },
     prerequisites = {
@@ -594,40 +590,6 @@ data:extend({
         {"chemical-science-pack", 1},
         {"sp-material-science-pack-1", 1},
         {"sp-geological-science-pack-1", 1}
-      },
-      time = 15
-    },
-    order = "a-h-a"
-  },
-  {
-    -- Finalized
-    type = "technology",
-    name = "sp-calcium-and-fluorine",  -- #ForRegEx# - technology
-    icon_size = 256,
-    icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/hr-icons/fluorine.png", 256, nil,
-                                   "__Spaghetorio__/graphics/hr-icons/calcium.png", 256, nil),
-    effects =
-    {
-      {
-        type = "unlock-recipe",
-        recipe = "sp-calcium-and-fluorine"
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-glass-from-calcium"
-      },
-    },
-    prerequisites = {"sp-chemical-science-pack-2"},
-    unit =
-    {
-      count = 100,
-      ingredients = {
-        {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"sp-material-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1},
-        {"sp-geological-science-pack-2", 1},
-        {"production-science-pack", 1}
       },
       time = 15
     },
@@ -898,7 +860,7 @@ data:extend({
         recipe = "sp-capacitor-from-tantalum"
       }
     },
-    prerequisites = {"sp-calcium-and-fluorine"},
+    prerequisites = {"sp-chemical-science-pack-2"},
     unit =
     {
       count = 750,
@@ -5645,7 +5607,7 @@ data:extend({
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-calcium-from-acrovoid"
+        recipe = "sp-calcite-from-acrovoid"
       },
       {
         type = "unlock-recipe",

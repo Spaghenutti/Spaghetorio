@@ -919,16 +919,6 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-calcium",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/icons/calcium.png",
-    icon_size = 64,
-    scale = 0.5,
-    subgroup = "processed-resource",
-    order = "[calcium]",
-    stack_size = 200
-  },
-  {
-    type = "item",
     name = "sp-sodium",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/sodium.png",
     icon_size = 64,
@@ -1095,26 +1085,6 @@ data:extend({
     scale = 0.5,
     subgroup = "processed-resource",
     order = "[niobium-powder]",
-    stack_size = 200
-  },
-  {
-    type = "item",
-    name = "sp-fluorspar",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/icons/fluorspar.png",
-    icon_size = 64,
-    scale = 0.5,
-    subgroup = "processed-resource",
-    order = "[fluorspar]",
-    stack_size = 200
-  },
-  {
-    type = "item",
-    name = "sp-fluorine",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/icons/fluorine.png",
-    icon_size = 64,
-    scale = 0.5,
-    subgroup = "processed-resource",
-    order = "[fluorine]",
     stack_size = 200
   },
   {

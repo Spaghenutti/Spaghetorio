@@ -13,7 +13,6 @@ local util = require("data-util")
 --    - "sp-laser"
 
 --    - "sp-antimony-pillet"
---    - "sp-calcium"
 --    - "sp-liquid-sodium"
 --    - "sp-stibnite"
 --    - "sp-tellurium"
@@ -27,7 +26,6 @@ local util = require("data-util")
 --    - "sp-iridium"
 --    - "sp-lanthanum"
 --    - "sp-gold"
---    - "sp-fluorspar"
 --    - "sp-cobalt-billet"
 --    - "sp-chromium-plate"
 --    - "sp-lead-slab"
@@ -124,7 +122,7 @@ data:extend({
     energy_required = 2.4,
     ingredients = {
       {type = "item", name = "sp-sand", amount = 3},
-      {type = "item", name = "sp-calcium", amount = 1}
+      {type = "item", name = "calcite", amount = 1}
     },
     results = {
       {type = "item", name = "sp-glass", amount = 1}
@@ -455,7 +453,7 @@ data:extend({
     energy_required = 15,
     ingredients = {
       {type = "item", name = "sp-sand", amount = 14},
-      {type = "item", name = "sp-calcium", amount = 4}
+      {type = "item", name = "calcite", amount = 4}
     },
     results = {
       {type = "item", name = "sp-glass", amount = 10}
@@ -2238,31 +2236,6 @@ data:extend({
   ------------------------------------------------------------------------------
   {
     type = "recipe",
-    name = "sp-calcium-and-fluorine",  -- #ForRegEx# - recipe
-    icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/icons/fluorine.png", 64, nil,
-                                        "__Spaghetorio__/graphics/icons/calcium.png", 64, nil),
-    icon_size = 64,
-    mip_maps = 4,
-    category = "chemistry",
-    subgroup = "processed-resource",
-    enabled = false,
-    energy_required = 2,
-    ingredients = {
-      {type = "item", name = "sp-fluorspar", amount = 1},
-    },
-    results = {
-      {type = "item", name = "sp-fluorine", amount = 2},
-      {type = "item", name = "sp-calcium", amount = 2}
-    },
-    crafting_machine_tint = {
-      primary = {r = 1.000, g = 0.900, b = 1.900, a = 1.000},
-      secondary = {r = 0.771, g = 0.7, b = 0.7, a = 1.000},
-      tertiary = {r = 0.768, g = 0.5, b = 0.5, a = 1.000},
-      quaternary = {r = 0.2, g = 0.000, b = 0.000, a = 1.000},
-    }
-  },
-  {
-    type = "recipe",
     name = "sp-liquid-sodium",
     category = "chemistry",
     subgroup = "fluid-recipes",
@@ -2842,7 +2815,7 @@ data:extend({
       {type = "item", name = "sp-zircon", amount = 10},
       {type = "item", name = "sp-magnesium-chloride", amount = 5},
       {type = "item", name = "sp-sodium-carbonate", amount = 8},
-      {type = "item", name = "sp-calcium", amount = 12}
+      {type = "item", name = "calcite", amount = 12}
     },
     results = {
       {type = "item", name = "sp-geological-science-pack-3", amount = 5}
@@ -6733,7 +6706,6 @@ data:extend({
   --     {type = "item", name = "sp-cybernetics", amount = 40},
   --     {type = "item", name = "superconductor", amount = 60},
   --     {type = "item", name = "sp-chromium-plate", amount = 200},
-  --     {type = "item", name = "sp-fluorspar", amount = 300},
   --     {type = "fluid", name = "sp-grobgnum-hydroxide", amount = 400},
   --   },
   --   results = {
@@ -10028,7 +10000,7 @@ data:extend({
       {type = "item", name = "calcite", amount = 12},
       {type = "item", name = "sp-acrocrystal", probability=0.99, amount = 1},
       {type = "item", name = "stone", probability=0.2, amount = 1},
-      {type = "item", name = "sp-calcium", probability=0.5, amount = 1},
+      {type = "item", name = "calcite", probability=0.5, amount = 1},
       {type = "item", name = "sp-sand",  amount = 2}
     }
   },
@@ -10084,7 +10056,7 @@ data:extend({
     results = {
       {type = "item", name = "sp-magnesium-ore", amount = 11},
       {type = "item", name = "sp-acrocrystal", probability=0.99, amount = 1},
-      {type = "item", name = "sp-calcium", probability=0.25, amount = 1},
+      {type = "item", name = "calcite", probability=0.25, amount = 1},
       {type = "item", name = "sp-sodium", probability=0.20, amount = 1},
       {type = "item", name = "lithium", probability=0.06, amount = 1}
     }
@@ -10331,8 +10303,8 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-calcium-from-acrovoid",  -- #ForRegEx# - recipe
-    icons = util.icon.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/calcium.png",
+    name = "sp-calcite-from-acrovoid",  -- #ForRegEx# - recipe
+    icons = util.icon.create_acroproduct_conversion_icon("__space-age__/graphics/icons/calcite.png",
                                                          "__Spaghetorio__/graphics/icons/acrovoid.png"),
     icon_size = 64,
     mip_maps = 4,
@@ -10347,12 +10319,12 @@ data:extend({
     },
     allow_decomposition = false,
     ingredients = {
-      {type = "item", name = "sp-calcium", amount = 9},
+      {type = "item", name = "calcite", amount = 9},
       {type = "item", name = "sp-acrovoid", amount = 1}
     },
     results = {
       {type = "item", name = "sp-acrovoid", probability=0.99, amount = 1},
-      {type = "item", name = "sp-calcium", amount = 10},
+      {type = "item", name = "calcite", amount = 10},
       {type = "item", name = "sp-sodium", probability=0.2, amount = 1},
       {type = "item", name = "sp-titanium-ore", probability=0.1, amount = 1},
       {type = "item", name = "lithium", probability=0.05, amount = 1},
@@ -10477,7 +10449,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-fluorine-from-acrovoid",  -- #ForRegEx# - recipe
-    icons = util.icon.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/fluorine.png",
+    icons = util.icon.create_acroproduct_conversion_icon("__space-age__/graphics/icons/fluid/fluorine.png",
                                                          "__Spaghetorio__/graphics/icons/acrovoid.png"),
     icon_size = 64,
     mip_maps = 4,
@@ -10492,12 +10464,12 @@ data:extend({
     },
     allow_decomposition = false,
     ingredients = {
-      {type = "item", name = "sp-fluorine", amount = 7},
+      {type = "fluid", name = "fluorine", amount = 30},
       {type = "item", name = "sp-acrovoid", amount = 1}
     },
     results = {
       {type = "item", name = "sp-acrovoid", probability=0.99, amount = 1},
-      {type = "item", name = "sp-fluorine", amount = 8},
+      {type = "fluid", name = "fluorine", amount = 35},
       {type = "item", name = "sulfur", probability=0.15, amount = 1},
       {type = "fluid", name = "sp-chlorine", amount = 10},
       {type = "fluid", name = "sp-oxygen", amount = 1},
@@ -10797,7 +10769,7 @@ data:extend({
     results = {
       {type = "item", name = "sp-acrovoid", probability=0.99, amount = 1},
       {type = "item", name = "sp-sodium", amount = 8},
-      {type = "item", name = "sp-calcium", probability=0.07, amount = 1},
+      {type = "item", name = "calcite", probability=0.07, amount = 1},
       {type = "item", name = "lithium", probability=0.25, amount = 1},
       {type = "fluid", name = "sp-hydrogen", amount = 10},
     }
@@ -10887,8 +10859,8 @@ data:extend({
       {type = "item", name = "sulfur", amount = 8},
       {type = "item", name = "sp-tellurium", probability=0.05, amount = 1},
       {type = "item", name = "sp-phosphorus", probability=0.2, amount = 1},
-      {type = "item", name = "sp-fluorine", probability=0.16, amount = 1},
       {type = "item", name = "sp-silicon", probability=0.15, amount = 1},
+      {type = "fluid", name = "fluorine", amount = 1},
       {type = "fluid", name = "sp-oxygen", amount = 15}
     }
   },
@@ -11005,7 +10977,7 @@ data:extend({
     results = {
       {type = "item", name = "sp-enriched-magnesium", amount = 11},
       {type = "item", name = "sp-acromatter", probability=0.99, amount = 1},
-      {type = "item", name = "sp-calcium", probability=0.25, amount = 2},
+      {type = "item", name = "calcite", probability=0.25, amount = 2},
       {type = "item", name = "sp-sodium", probability=0.20, amount = 2},
       {type = "item", name = "lithium", probability=0.05, amount = 2}
     }
@@ -11285,24 +11257,6 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-landfill-from-flourspar",  -- #ForRegEx# - recipe
-    icons = util.icon.overlay_small_icon("__base__/graphics/icons/landfill.png", 64,
-                                         "__Spaghetorio__/graphics/icons/fluorspar.png", 64),
-    energy_required = 1,
-    enabled = false,
-    category = "crafting",
-    hide_from_player_crafting = true,
-    ingredients =
-    {
-      {type = "item", name = "stone", amount = 18},
-      {type = "item", name = "sp-fluorspar", amount = 4}
-    },
-    results = {
-      {type = "item", name = "landfill", amount = 2}
-    }
-  },
-  {
-    type = "recipe",
     name = "sp-insulated-wire-from-aluminum",  -- #ForRegEx# - recipe
     icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/insulated-wire.png", 64,
                                          "__Spaghetorio__/graphics/icons/aluminum-cable.png", 64),
@@ -11421,7 +11375,7 @@ data:extend({
     energy_required = 5,
     ingredients = {
       {type = "item", name = "sp-sand", amount = 8},
-      {type = "item", name = "sp-fluorine", amount = 1},
+      {type = "fluid", name = "fluorine", amount = 5},
       {type = "fluid", name = "water", amount = 50}
     },
     results = {
@@ -11675,7 +11629,7 @@ data:extend({
     ingredients = {
       {type = "item", name = "sp-silica", amount = 2},
       {type = "fluid", name = "sp-oxygen", amount = 40},
-      {type = "item", name = "sp-calcium", amount = 1},
+      {type = "item", name = "calcite", amount = 1},
     },
     results = {
       {type = "item", name = "sp-lens", amount = 2}
