@@ -631,6 +631,23 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "sp-crushed-cobalt-smelting",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/cobalt-oxide.png", 64,
+                                         "__Spaghetorio__/graphics/icons/crushed-cobalt-ore-4.png", 64),
+    category = "crushed-smelting",
+    subgroup = "processed-resource",
+    enabled = false,
+    energy_required = 10,
+    hide_from_player_crafting = true,
+    ingredients = {
+      {type = "item", name = "sp-crushed-cobalt-ore", amount = 8},
+    },
+    results = {
+      {type = "item", name = "sp-cobalt-oxide", amount = 12}
+    }
+  },
+  {
+    type = "recipe",
     name = "sp-crushed-magnesium-smelting",  -- #ForRegEx# - recipe
     icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/magnesium-chloride.png", 64,
                                          "__Spaghetorio__/graphics/icons/crushed-magnesium-ore-1.png", 64),
@@ -4990,7 +5007,6 @@ data:extend({
       {type = "item", name = "sp-train-boige", amount = 1}
     }
   },
-  
   {
     type = "recipe",
     name = "sp-control-unit",  -- #ForRegEx# - recipe
@@ -5504,7 +5520,8 @@ data:extend({
     energy_required = 1.6,
     ingredients = {
       {type = "fluid", name = "sp-aqueous-tantalum", amount = 10},
-      {type = "item", name = "sp-silica", amount = 1}
+      {type = "item", name = "sp-silica", amount = 1},
+      {type = "item", name = "sp-barium-carbonate", amount = 1}
     },
     results = {
       {type = "item", name = "sp-infrared-filter", amount = 1}
@@ -11756,6 +11773,7 @@ data:extend({
       {type = "item", name = "sp-silicon", amount = 1},
       {type = "item", name = "sp-aluminum-sheet", amount = 1},
       {type = "item", name = "sp-silver", amount = 1},
+      {type = "item", name = "sp-barium-carbonate", amount = 1},
       {type = "fluid", name = "sp-helium", amount = 10}
     },
     results = {
@@ -12152,26 +12170,75 @@ data:extend({
     },
     order = "[liquid]-[liquid-nitrogen]"
   },
+  -- MARK: Fix Krastorio recipes
   {
     type = "recipe",
-    name = "sp-cobalt-sulfate",  -- #ForRegEx# - recipe
-    icon = "__Spaghetorio__/graphics/icons/cobalt-sulfate.png",
+    name = "sp-raw-rare-metal-processing",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/dummy/dummy-item-default.png",
     icon_size = 64,
     scale = 0.25,
-    category = "smelting",
+    category = "crushing",
     subgroup = "processed-resource",
     enabled = false,
-    energy_required = 0.4,
+    energy_required = 1,
     ingredients = {
-      {type = "item", name = "sp-nickel-ore", amount = 1}
+      {type = "fluid", name = "sp-mineral-water", amount = 5},
+      {type = "fluid", name = "sp-sodium-hydroxide", amount = 10},
+      {type = "item", name = "sp-raw-rare-metals", amount = 1}
     },
     results = {
-      {type = "item", name = "sp-cobalt-sulfate", probability = 0.2, amount = 1},
-      {type = "item", name = "iron-ore", probability = 0.5, amount = 1},
-      {type = "item", name = "sp-sand", probability = 0.3, amount = 1}
+      {type = "item", name = "sp-yttrium", probability = 0.06, amount = 1},
+      {type = "item", name = "sp-lanthanum", probability = 0.09, amount = 1},
+      {type = "item", name = "sp-cerium", probability = 0.15, amount = 1},
+      {type = "item", name = "sp-neodymium", probability = 0.08, amount = 1},
+      {type = "item", name = "sp-sand", probability = 0.62, amount = 1}
     }
   },
-  -- MARK: Fix Krastorio recipes
+  {
+    type = "recipe",
+    name = "sp-enriched-rare-metals",  -- #ForRegEx# - recipe
+    icon_size = 64,
+    mip_maps = 4,
+    category = "sp-kr-fluid-filtration",
+    enabled = false,
+    energy_required = 5,
+    hide_from_player_crafting = true,
+    ingredients = {
+      {type = "item", name = "sp-raw-rare-metals", amount = 8},
+      {type = "fluid", name = "sp-nitric-acid", amount = 15},
+      {type = "fluid", name = "ammonia", amount = 20}
+    },
+    results = {
+      {type = "item", name = "sp-enriched-rare-metals", amount = 7},
+    },
+    crafting_machine_tint = {
+      primary = {r = 1.000, g = 0.5, b = 0.5, a = 1.000},
+      secondary = {r = 0.8, g = 0.3, b = 0.3, a = 1.000},
+      tertiary = {r = 0.6, g = 0.0, b = 0.0, a = 1.000},
+      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-enriched-rare-metal-processing",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/dummy/dummy-item-default.png",
+    icon_size = 64,
+    scale = 0.25,
+    category = "chemistry",
+    subgroup = "processed-resource",
+    enabled = false,
+    energy_required = 4,
+    ingredients = {
+      {type = "fluid", name = "sp-sodium-hydroxide", amount = 15},
+      {type = "item", name = "sp-enriched-rare-metals", amount = 3}
+    },
+    results = {
+      {type = "item", name = "sp-yttrium", probability = 0.15, amount = 1},
+      {type = "item", name = "sp-lanthanum", probability = 0.3, amount = 1},
+      {type = "item", name = "sp-cerium", probability = 0.4, amount = 1},
+      {type = "item", name = "sp-neodymium", probability = 0.25, amount = 1}
+    }
+  },
   {
     type = "recipe",
     name = "sp-imersite-crystal",  -- #ForRegEx# - recipe

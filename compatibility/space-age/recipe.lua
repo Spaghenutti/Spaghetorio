@@ -1,42 +1,22 @@
+local util = require("data-util")
+
+--------------------------------------------------------------------------------
+-- Recipe changes for space age factorio items
+-- MARK: Items
+--------------------------------------------------------------------------------
+
+data.raw.recipe["tungsten-carbide"].category = "smelting"
+util.recipe.change_recipe_ingredients("tungsten-carbide",
+  {
+    {type = "item", name = "sp-tungsten-powder", amount = 4},
+    {type = "item", name = "carbon", amount = 3}
+  },
+  6)
+data.raw.recipe["tungsten-carbide"].results = {
+  {type = "item", name = "tungsten-carbide", amount = 3}
+}
 
 data:extend({
-  {
-    type = "recipe",
-    name = "tungsten-carbide",  -- #ForRegEx# - recipe
-    category = "smelting",
-    enabled = false,
-    energy_required = 20,
-    ingredients = {
-      {type = "item", name = "sp-tungsten-powder", amount = 4},
-      {type = "item", name = "carbon", amount = 3}
-    },
-    results = {
-      {type = "item", name = "tungsten-carbide", amount = 3}
-    }
-  },
-  {
-    type = "recipe",
-    name = "fluoroketone-cold",  -- #ForRegEx# - recipe
-    category = "chemistry",
-    subgroup = "fluid-recipes",
-    enabled = false,
-    energy_required = 3.2,
-    ingredients = {
-      {type = "item", name = "sp-fluorine", amount = 1},
-      {type = "item", name = "carbon", amount = 1},
-      {type = "fluid", name = "water", amount = 50}
-    },
-    results = {
-      {type = "fluid", name = "fluoroketone-cold", amount = 50}
-    },
-    crafting_machine_tint = {
-      primary = {r = 0.500, g = 0.500, b = 1.000, a = 1.000},
-      secondary = {r = 0.500, g = 0.500, b = 1.000, a = 1.000},
-      tertiary = {r = 0.200, g = 0.200, b = 1.000, a = 1.000},
-      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
-    },
-    order = "[liquid]-[aqueous-niobium-and-tantalum]"
-  },
   {
     type = "recipe",
     name = "electrolyte",  -- #ForRegEx# - recipe
@@ -61,7 +41,7 @@ data:extend({
   {
     type = "recipe",
     name = "superconductor",  -- #ForRegEx# - recipe
-    category = "crafting-with-fluid",
+    category = "electronics-with-fluid",
     enabled = false,
     energy_required = 5,
     ingredients = {
@@ -71,6 +51,22 @@ data:extend({
     },
     results = {
       {type = "item", name = "superconductor", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "supercapacitor",  -- #ForRegEx# - recipe
+    category = "electronics-with-fluid",
+    enabled = false,
+    energy_required = 8,
+    ingredients = {
+      {type = "item", name = "sp-barium-titanate", amount = 1},
+      {type = "item", name = "superconductor", amount = 2},
+      {type = "item", name = "holmium-plate", amount = 1},
+      {type = "fluid", name = "electrolyte", amount = 10}
+    },
+    results = {
+      {type = "item", name = "supercapacitor", amount = 1}
     }
   },
   {
@@ -134,6 +130,29 @@ data:extend({
       secondary = {r = 1.000, g = 0.500, b = 0.000, a = 1.000}, -- #ff7f00ff
     }
   },
+  -- {
+  --   type = "recipe",
+  --   name = "bioflux",
+  --   icon = "__space-age__/graphics/icons/bioflux.png",
+  --   category = "organic",
+  --   subgroup = "agriculture-products",
+  --   order = "a[organic-products]-g[bioflux]",
+  --   auto_recycle = false,
+  --   enabled = false,
+  --   allow_productivity = true,
+  --   energy_required = 6,
+  --   ingredients =
+  --   {
+  --     {type = "item", name = "yumako-mash", amount = 15},
+  --     {type = "item", name = "jelly", amount = 12}
+  --   },
+  --   results = {{type="item", name="bioflux", amount=4}},
+  --   crafting_machine_tint =
+  --   {
+  --     primary = {r = 0.3, g = 0.9, b = 0.8, a = 1.000},
+  --     secondary = {r = 0.8, g = 0.5, b = 0.3, a = 1.000},
+  --   }
+  -- },
   -- MARK: buildings
   {
     type = "recipe",
