@@ -7,3 +7,6 @@ table.insert(data.raw.technology["agriculture"].prerequisites, "chemical-science
 --   {"sp-geological-science-pack-2", 1},
 --   {"chemical-science-pack", 1}
 -- }
+
+table.insert(data.raw.technology["lithium-processing"].effects, {type = "unlock-recipe", recipe = "sp-lithium-oxide"})
+table.insert(data.raw.technology["lithium-processing"].effects, {type = "unlock-recipe", recipe = "sp-lithium-chloride"})

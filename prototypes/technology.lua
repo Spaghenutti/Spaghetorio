@@ -6362,7 +6362,6 @@ data:extend({
   ------------------------------------------------------------------------------
   -- MARK: Buildings
   ------------------------------------------------------------------------------
-  
   {
     type = "technology",
     name = "sp-crusher",  -- #ForRegEx# - technology
@@ -6504,8 +6503,8 @@ data:extend({
     unit = {
       count = 150,
       ingredients = {
-        { "automation-science-pack", 1 },
-        { "logistic-science-pack", 1 },
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
       },
       time = 45,
     },
@@ -6554,6 +6553,304 @@ data:extend({
       time = 45,
     },
   },
+  {
+    type = "technology",
+    name = "sp-alloy-forge",  -- #ForRegEx# - technology
+    icon = "__Spaghetorio__/graphics/hr-icons/alloy-forge.png",
+    icon_size = 256,
+    icon_mipmaps = 4,
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-alloy-forge",
+      },
+    },
+    prerequisites = {
+      "sp-plate-heat-exchanger"
+    },
+    unit = {
+      count = 200,
+      ingredients = {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"sp-material-science-pack-1", 1},
+        {"sp-electronic-science-pack-1", 1},
+        {"sp-geological-science-pack-1", 1}
+      },
+      time = 45,
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-breeder-reactor",  -- #ForRegEx# - technology
+    icon = "__Spaghetorio__/graphics/hr-icons/breeder-reactor.png",
+    icon_size = 256,
+    icon_mipmaps = 4,
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-breeder-reactor",
+      },
+    },
+    prerequisites = {
+      "sp-plate-heat-exchanger"
+    },
+    unit = {
+      count = 200,
+      ingredients = {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"sp-material-science-pack-1", 1},
+        {"sp-electronic-science-pack-1", 1},
+        {"sp-geological-science-pack-1", 1}
+      },
+      time = 45,
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-chemical-stager",  -- #ForRegEx# - technology
+    icon = "__Spaghetorio__/graphics/hr-icons/chemical-stager.png",
+    icon_size = 256,
+    icon_mipmaps = 4,
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-chemical-stager",
+      },
+    },
+    prerequisites = {
+      "sp-plate-heat-exchanger"
+    },
+    unit = {
+      count = 200,
+      ingredients = {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"sp-material-science-pack-1", 1},
+        {"sp-electronic-science-pack-1", 1},
+        {"sp-geological-science-pack-1", 1}
+      },
+      time = 45,
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-quantum-stabilizer",  -- #ForRegEx# - technology
+    icon = "__Spaghetorio__/graphics/hr-icons/quantum-stabilizer.png",
+    icon_size = 256,
+    icon_mipmaps = 4,
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-quantum-stabilizer",
+      },
+    },
+    prerequisites = {
+      "sp-plate-heat-exchanger"
+    },
+    unit = {
+      count = 200,
+      ingredients = {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"sp-material-science-pack-1", 1},
+        {"sp-electronic-science-pack-1", 1},
+        {"sp-geological-science-pack-1", 1}
+      },
+      time = 45,
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-pathogen-lab",  -- #ForRegEx# - technology
+    icon = "__Spaghetorio__/graphics/hr-icons/pathogen-lab.png",
+    icon_size = 256,
+    icon_mipmaps = 4,
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-pathogen-lab",
+      },
+    },
+    prerequisites = {
+      "sp-plate-heat-exchanger"
+    },
+    unit = {
+      count = 200,
+      ingredients = {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"sp-material-science-pack-1", 1},
+        {"sp-electronic-science-pack-1", 1},
+        {"sp-geological-science-pack-1", 1}
+      },
+      time = 45,
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-cyclotron",  -- #ForRegEx# - technology
+    icon = "__Spaghetorio__/graphics/hr-icons/cyclotron.png",
+    icon_size = 256,
+    icon_mipmaps = 4,
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-cyclotron",
+      },
+    },
+    prerequisites = {
+      "sp-plate-heat-exchanger"
+    },
+    unit = {
+      count = 200,
+      ingredients = {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"sp-material-science-pack-1", 1},
+        {"sp-electronic-science-pack-1", 1},
+        {"sp-geological-science-pack-1", 1}
+      },
+      time = 45,
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-freezer",  -- #ForRegEx# - technology
+    icon = "__Spaghetorio__/graphics/hr-icons/freezer.png",
+    icon_size = 256,
+    icon_mipmaps = 4,
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-freezer",
+      },
+    },
+    prerequisites = {
+      "sp-plate-heat-exchanger"
+    },
+    unit = {
+      count = 200,
+      ingredients = {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"sp-material-science-pack-1", 1},
+        {"sp-electronic-science-pack-1", 1},
+        {"sp-geological-science-pack-1", 1}
+      },
+      time = 45,
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-gravity-assembler",  -- #ForRegEx# - technology
+    icon = "__Spaghetorio__/graphics/hr-icons/gravity-assembler.png",
+    icon_size = 256,
+    icon_mipmaps = 4,
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-gravity-assembler",
+      },
+    },
+    prerequisites = {
+      "sp-plate-heat-exchanger"
+    },
+    unit = {
+      count = 200,
+      ingredients = {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"sp-material-science-pack-1", 1},
+        {"sp-electronic-science-pack-1", 1},
+        {"sp-geological-science-pack-1", 1}
+      },
+      time = 45,
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-core-extractor",  -- #ForRegEx# - technology
+    icon = "__Spaghetorio__/graphics/hr-icons/core-extractor.png",
+    icon_size = 256,
+    icon_mipmaps = 4,
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-core-extractor",
+      },
+    },
+    prerequisites = {
+      "sp-plate-heat-exchanger"
+    },
+    unit = {
+      count = 200,
+      ingredients = {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"sp-material-science-pack-1", 1},
+        {"sp-electronic-science-pack-1", 1},
+        {"sp-geological-science-pack-1", 1}
+      },
+      time = 45,
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-oxidizer",  -- #ForRegEx# - technology
+    icon = "__Spaghetorio__/graphics/hr-icons/oxidizer.png",
+    icon_size = 256,
+    icon_mipmaps = 4,
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-oxidizer",
+      },
+    },
+    prerequisites = {
+      "sp-plate-heat-exchanger"
+    },
+    unit = {
+      count = 200,
+      ingredients = {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"sp-material-science-pack-1", 1},
+        {"sp-electronic-science-pack-1", 1},
+        {"sp-geological-science-pack-1", 1}
+      },
+      time = 45,
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-induction-hardening-facility",  -- #ForRegEx# - technology
+    icon = "__Spaghetorio__/graphics/hr-icons/induction-hardening-facility.png",
+    icon_size = 256,
+    icon_mipmaps = 4,
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-induction-hardening-facility",
+      },
+    },
+    prerequisites = {
+      "sp-plate-heat-exchanger"
+    },
+    unit = {
+      count = 200,
+      ingredients = {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"sp-material-science-pack-1", 1},
+        {"sp-electronic-science-pack-1", 1},
+        {"sp-geological-science-pack-1", 1}
+      },
+      time = 45,
+    },
+  },
+
   {
     type = "technology",
     name = "sp-kr-particle-accelerator",  -- #ForRegEx# - technology
