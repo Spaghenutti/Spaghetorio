@@ -136,6 +136,10 @@ data:extend({
   },
   {
     type = "recipe-category",
+    name = "high-temperature-smelting"
+  },
+  {
+    type = "recipe-category",
     name = "crushed-smelting"
   },
   {

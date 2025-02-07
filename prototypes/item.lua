@@ -5867,7 +5867,7 @@ data:extend({
     icon_mipmaps = 4,
     subgroup = "smelting-machine",
     order = "c[electric-furnace]-f[arc-furnace]",
-    -- place_result = "sp-arc-furnace",
+    place_result = "sp-arc-furnace",
     stack_size = 50,
   },
   {
