@@ -4005,13 +4005,13 @@ data:extend({
   {
     type = "recipe",
     name = "sp-seed-processing",  -- #ForRegEx# - recipe
-    icon = "__base__/graphics/icons/tree-08.png",
+    icon = "__space-age__/graphics/icons/tree-seed.png",
     category = "sp-kr-growing",
     subgroup = "processed-resource",
     order = "b[nauvis-agriculture]-a[seed-processing]",
-    enabled = true,
+    enabled = false,
     allow_productivity = true,
-    energy_required = 90,
+    energy_required = 30,
     ingredients = {
       {type = "item", name = "tree-seed", amount = 1},
       {type = "fluid", name = "water", amount = 100}

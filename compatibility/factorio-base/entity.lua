@@ -58,6 +58,8 @@ data.raw.item["copper-cable"].stack_size = 400
 data.raw.item["chemical-plant"].stack_size = 50
 data.raw.item["tree-seed"].stack_size = 1000
 
+data.raw.item["steam-engine"].stack_size = 50
+
 -- MARK: change recipe subgroups
 data.raw.recipe["nuclear-fuel-reprocessing"].subgroup = "radioactive-resource"
 data.raw.recipe["uranium-processing"].subgroup = "radioactive-resource"

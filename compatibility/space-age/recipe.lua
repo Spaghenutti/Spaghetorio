@@ -74,12 +74,13 @@ util.recipe.change_recipe_ingredients("carbon-fiber",
   4)
 
 data.raw.recipe["wood-processing"].category = "sp-kr-growing"
+data.raw.recipe["wood-processing"].subgroup = "processed-resource"
 util.recipe.change_recipe_ingredients("wood-processing",
   {
     {type = "item", name = "tree-seed", amount = 1},
     {type = "fluid", name = "water", amount = 100}
   },
-  60)
+  20)
 data.raw.recipe["wood-processing"].results = {
   {type = "item", name = "wood", amount = 10},
 }
