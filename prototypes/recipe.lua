@@ -260,8 +260,8 @@ data:extend({
       {type = "item", name = "sp-tinstone", amount = 3},
     },
     results = {
-      {type = "item", name = "sp-tin-ingot", probability = 0.75, amount = 2},
-      {type = "item", name = "sp-lead-slab", probability = 0.25, amount = 2}
+      {type = "item", name = "sp-tin-ingot", probability = 0.7, amount = 2},
+      {type = "item", name = "sp-lead-slab", probability = 0.3, amount = 2}
     }
   },
   {

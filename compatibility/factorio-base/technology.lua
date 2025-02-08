@@ -440,8 +440,10 @@ data.raw.technology["electric-energy-distribution-2"].effects = {
     recipe = "big-electric-pole",
   }
 }
-table.insert(data.raw.technology["electric-energy-distribution-2"].prerequisites, "sp-relay")
-table.insert(data.raw.technology["electric-energy-distribution-2"].prerequisites, "sp-transformer")
+data.raw.technology["electric-energy-distribution-2"].prerequisites = {
+  "concrete",
+  "electric-energy-distribution-1"
+}
 data.raw.technology["electric-energy-distribution-2"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},
   {"sp-logistic-science-pack-2", 1},

@@ -274,7 +274,7 @@ data:extend({
   -- MARK: Basic resource
   basic_resource(
     {
-      name = "aluminum-ore",
+      name = "aluminum-ore",  -- #ForRegEx# - resource
       icon = "__Spaghetorio__/graphics/icons/aluminum-ore-1.png",
       stages_filename = "__Spaghetorio__/graphics/resource/aluminum-ore-patches.png",
       order = "g",
@@ -289,8 +289,8 @@ data:extend({
   ),
   basic_resource(
     {
-      name = "barium-ore",
-      icon = "__Spaghetorio__/graphics/icons/barium-ore-1.png",
+      name = "barium-ore",  -- #ForRegEx# - resource
+      icon = "__Spaghetorio__/graphics/icons/barium-ore-3.png",
       stages_filename = "__Spaghetorio__/graphics/resource/barium-ore-patches.png",
       order = "a",
       mining_time = 2,
@@ -304,7 +304,7 @@ data:extend({
   ),
   basic_resource(
     {
-      name = "boron-ore",
+      name = "boron-ore",  -- #ForRegEx# - resource
       icon = "__Spaghetorio__/graphics/icons/boron-ore-1.png",
       stages_filename = "__Spaghetorio__/graphics/resource/boron-ore-patches.png",
       stages_size = 128,
@@ -321,7 +321,7 @@ data:extend({
   ),
   basic_resource(
     {
-      name = "chromite",
+      name = "chromite",  -- #ForRegEx# - resource
       icon = "__Spaghetorio__/graphics/icons/chromite-1.png",
       stages_filename = "__Spaghetorio__/graphics/resource/chromite-patches.png",
       order = "f",
@@ -336,7 +336,7 @@ data:extend({
   ),
   basic_resource(
     {
-      name = "cobalt-ore",
+      name = "cobalt-ore",  -- #ForRegEx# - resource
       icon = "__Spaghetorio__/graphics/icons/cobalt-ore-1.png",
       stages_filename = "__Spaghetorio__/graphics/resource/cobalt-ore-patches.png",
       order = "d",
@@ -351,7 +351,7 @@ data:extend({
   ),
   basic_resource(
     {
-      name = "magnesium-ore",
+      name = "magnesium-ore",  -- #ForRegEx# - resource
       icon = "__Spaghetorio__/graphics/icons/magnesium-ore-1.png",
       stages_filename = "__Spaghetorio__/graphics/resource/magnesium-ore-patches.png",
       order = "d",
@@ -366,7 +366,7 @@ data:extend({
   ),
   basic_resource(
     {
-      name = "manganese-ore",
+      name = "manganese-ore",  -- #ForRegEx# - resource
       icon = "__Spaghetorio__/graphics/icons/manganese-ore-1.png",
       stages_filename = "__Spaghetorio__/graphics/resource/manganese-ore-patches.png",
       stages_size = 128,
@@ -383,7 +383,7 @@ data:extend({
   ),
   basic_resource(
     {
-      name = "mercury-ore",
+      name = "mercury-ore",  -- #ForRegEx# - resource
       icon = "__Spaghetorio__/graphics/icons/mercury-ore-1.png",
       stages_filename = "__Spaghetorio__/graphics/resource/mercury-ore-patches.png",
       order = "m",
@@ -398,7 +398,7 @@ data:extend({
   ),
   basic_resource(
     {
-      name = "molybdenum-ore",
+      name = "molybdenum-ore",  -- #ForRegEx# - resource
       icon = "__Spaghetorio__/graphics/icons/molybdenum-ore-1.png",
       stages_filename = "__Spaghetorio__/graphics/resource/molybdenum-ore-patches.png",
       stages_size = 128,
@@ -415,7 +415,7 @@ data:extend({
   ),
   basic_resource(
     {
-      name = "nickel-ore",
+      name = "nickel-ore",  -- #ForRegEx# - resource
       icon = "__Spaghetorio__/graphics/icons/nickel-ore-1.png",
       stages_filename = "__Spaghetorio__/graphics/resource/nickel-ore-patches.png",
       order = "b",
@@ -430,7 +430,7 @@ data:extend({
   ),
   basic_resource(
     {
-      name = "potassium-ore",
+      name = "potassium-ore",  -- #ForRegEx# - resource
       icon = "__Spaghetorio__/graphics/icons/potassium-ore-1.png",
       stages_filename = "__Spaghetorio__/graphics/resource/potassium-ore-patches.png",
       stages_size = 128,
@@ -447,7 +447,7 @@ data:extend({
   ),
   basic_resource(
     {
-      name = "stibnite",
+      name = "stibnite",  -- #ForRegEx# - resource
       icon = "__Spaghetorio__/graphics/icons/stibnite-1.png",
       stages_filename = "__Spaghetorio__/graphics/resource/stibnite-patches.png",
       stages_size = 128,
@@ -464,7 +464,7 @@ data:extend({
   ),
   basic_resource(
     {
-      name = "tinstone",
+      name = "tinstone",  -- #ForRegEx# - resource
       icon = "__Spaghetorio__/graphics/icons/tinstone-1.png",
       stages_filename = "__Spaghetorio__/graphics/resource/tinstone-patches.png",
       order = "d",
@@ -482,7 +482,7 @@ data:extend({
   ),
   basic_resource(
     {
-      name = "titanium-ore",
+      name = "titanium-ore",  -- #ForRegEx# - resource
       icon = "__Spaghetorio__/graphics/icons/titanium-ore-1.png",
       stages_filename = "__Spaghetorio__/graphics/resource/titanium-ore-patches.png",
       order = "m",
@@ -497,7 +497,7 @@ data:extend({
   ),
   basic_resource(
     {
-      name = "vanadium-ore",
+      name = "vanadium-ore",  -- #ForRegEx# - resource
       icon = "__Spaghetorio__/graphics/icons/vanadium-ore-1.png",
       stages_filename = "__Spaghetorio__/graphics/resource/vanadium-ore-patches.png",
       stages_size = 128,
@@ -514,7 +514,7 @@ data:extend({
   ),
   basic_resource(
     {
-      name = "zinc-ore",
+      name = "zinc-ore",  -- #ForRegEx# - resource
       icon = "__Spaghetorio__/graphics/icons/zinc-ore-1.png",
       stages_filename = "__Spaghetorio__/graphics/resource/zinc-ore-patches.png",
       order = "h",
@@ -529,7 +529,7 @@ data:extend({
   ),
   basic_resource(
     {
-      name = "zirconium-ore",
+      name = "zirconium-ore",  -- #ForRegEx# - resource
       icon = "__Spaghetorio__/graphics/icons/zirconium-ore-1.png",
       stages_filename = "__Spaghetorio__/graphics/resource/zirconium-ore-patches.png",
       order = "h",
@@ -546,7 +546,7 @@ data:extend({
   -- MARK: Fluid resource
   fluid_resource(
     {
-      name = "mineral-water",
+      name = "mineral-water",  -- #ForRegEx# - resource
       icon = "__Spaghetorio__/graphics/krastorio/icons/fluids/mineral-water.png",
       stages_filename = "__Spaghetorio__/graphics/krastorio/resources/mineral-water.png",
       stages_filename_count = 8,
@@ -559,7 +559,7 @@ data:extend({
   ),
   fluid_resource(
     {
-      name = "iodine-brine",
+      name = "iodine-brine",  -- #ForRegEx# - resource
       icon = "__Spaghetorio__/graphics/icons/iodine-brine.png",
       stages_filename = "__space-age__/graphics/entity/fluorine-vent/fluorine-vent.png",
       stages_filename_count = 4,
@@ -574,7 +574,7 @@ data:extend({
   -- MARK: core resource
   core_resource(
     {
-      name = "core-rift",
+      name = "core-rift",  -- #ForRegEx# - resource
       icon = "__Spaghetorio__/graphics/icons/core-fragment-2.png",
       stages_filename = "__Spaghetorio__/graphics/resource/core-rift.png",
       mining_time = 1,
@@ -587,7 +587,7 @@ data:extend({
   -- MARK: Quarry resource
   quarry_resource(
     {
-      name = "blunagium",
+      name = "blunagium",  -- #ForRegEx# - resource
       icon = "__Spaghetorio__/graphics/icons/blunagium.png",
       stages_filename = "__Spaghetorio__/graphics/alien-resource/blunagium-mine.png",
       mining_time = 1,
@@ -597,7 +597,7 @@ data:extend({
   ),
   quarry_resource(
     {
-      name = "grobgnum",
+      name = "grobgnum",  -- #ForRegEx# - resource
       icon = "__Spaghetorio__/graphics/icons/grobgnum.png",
       stages_filename = "__Spaghetorio__/graphics/alien-resource/grobgnum-mine.png",
       mining_time = 1,
@@ -607,7 +607,7 @@ data:extend({
   ),
   quarry_resource(
     {
-      name = "imersite",
+      name = "imersite",  -- #ForRegEx# - resource
       icon = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/raw-imersite/raw-imersite.png",
       stages_filename = "__Spaghetorio__/graphics/krastorio/resources/imersite/imersite-rift.png",
       stages_width = 250,
@@ -621,7 +621,7 @@ data:extend({
   ),
   quarry_resource(
     {
-      name = "rukite",
+      name = "rukite",  -- #ForRegEx# - resource
       icon = "__Spaghetorio__/graphics/icons/rukite.png",
       stages_filename = "__Spaghetorio__/graphics/alien-resource/rukite-mine.png",
       mining_time = 1,
@@ -631,7 +631,7 @@ data:extend({
   ),
   quarry_resource(
     {
-      name = "yemnuth",
+      name = "yemnuth",  -- #ForRegEx# - resource
       icon = "__Spaghetorio__/graphics/icons/yemnuth.png",
       stages_filename = "__Spaghetorio__/graphics/alien-resource/yemnuth-mine.png",
       mining_time = 1,

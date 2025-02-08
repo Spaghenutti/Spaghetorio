@@ -39,7 +39,7 @@ data:extend({
   {
     type = "item",
     name = "sp-barium-ore",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/icons/barium-ore-1.png",
+    icon = "__Spaghetorio__/graphics/icons/barium-ore-3.png",
     icon_size = 64,
     icon_mipmaps = 4,
     pictures = {
