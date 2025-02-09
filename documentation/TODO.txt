@@ -83,6 +83,10 @@ Factorio Space age
       + hydrogen-cyanide + potassium-hydroxade -> potassium-cyanide (KCN): Used in gold mining, electroplating, and as a reagent in chemical synthesis.
 
     + core-rift
+    - ceramics:
+      - silicon nitride (Si3N4) for heavy ball bearing
+      - zirconium dioxide (ZrO2)
+
 
   - Add Krastorio matter conversion recipes
   + Add mineral water
@@ -119,12 +123,19 @@ Factorio Space age
   - ores
     + limestone as barium ore (baryt)
     + tungsten ore as mercury ore (cinnabar)
-      - fix icons for tungsten ore crushing and enriching
     - spodumene as cobalt ore (in cobalt ore traces of arsen are found)
     - Add Cobalt
     + Add stibnite as ore
       - add crushed recipe
       - add enriched recipe
+  - icons to fix
+    - crushing coke
+    - crushing coal
+    - crushing cobalt ore
+    - tungsten ore crushing and enriching
+    - raw rare metal processing
+    - enriched rare metal processing
+    - fix icons for groups base-recources, base-materials, intermediate-products
 
 
 Krastorio cleanup

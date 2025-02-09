@@ -765,7 +765,7 @@ util.recipe.change_recipe_ingredients("cliff-explosives",
     {type = "item", name = "carbon", amount = 1},
     {type = "item", name = "sulfur", amount = 1},
     {type = "item", name = "iron-plate", amount = 1},
-    {type="fluid", name="sp-sodium-hydroxide", amount=10}
+    {type = "fluid", name = "sp-sodium-hydroxide", amount = 10}
   },
   3)
 

@@ -361,7 +361,6 @@ data.raw.technology["steel-processing"].unit = {
 }
 
 table.insert(data.raw.technology["oil-gathering"].prerequisites, "sp-stainless-steel-processing")
-table.insert(data.raw.technology["oil-gathering"].prerequisites, "sp-geological-science-pack-1")
 data.raw.technology["oil-processing"].unit = {
   count = 50,
   ingredients = {

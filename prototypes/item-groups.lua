@@ -2,12 +2,12 @@ local util = require("data-util")
 
 data:extend({
   ------------------------------------------------------------------------------
-  -- MARK: base-products
-  -- New group base-products in first place
+  -- MARK: resources
+  -- New group resources in first place
   ------------------------------------------------------------------------------
   {
     type = "item-group",
-    name = "base-resources",
+    name = "resources",
     order = "a",
     icons =  util.icon.combine_three_icons("__base__/graphics/icons/iron-ore.png", 64, nil,
                                            "__Spaghetorio__/graphics/icons/core-fragment-2.png", 64, nil,
@@ -17,88 +17,87 @@ data:extend({
   {
     type = "item-subgroup",
     name = "raw-resource",
-    group = "base-resources",
+    group = "resources",
     order = "a"
   },
   {
     type = "item-subgroup",
     name = "casting-raw-resource",
-    group = "base-resources",
+    group = "resources",
     order = "a-b-casting"
   },
   {
     type = "item-subgroup",
     name = "enriched-resource-from-acrocrystal",
-    group = "base-resources",
+    group = "resources",
     order = "a-z-acrocrystal"
   },
   {
     type = "item-subgroup",
     name = "crushed-resource",
-    group = "base-resources",
+    group = "resources",
     order = "b"
   },
   {
     type = "item-subgroup",
     name = "crushed-resource-recipe",
-    group = "base-resources",
+    group = "resources",
     order = "b-recipe"
   },
   {
     type = "item-subgroup",
     name = "enriched-resource",
-    group = "base-resources",
+    group = "resources",
     order = "c"
   },
   {
     type = "item-subgroup",
     name = "enriched-resource-recipe",  -- Corresponds to category "enriching-raw-resource"
-    group = "base-resources",
+    group = "resources",
     order = "c-b"
   },
   {
     type = "item-subgroup",
     name = "enriched-crushed-resource-recipe",  -- Corresponds to category "enriching-crushed-resource"
-    group = "base-resources",
+    group = "resources",
     order = "c-c"
   },
   {
     type = "item-subgroup",
     name = "raw-resource-from-acromatter",
-    group = "base-resources",
+    group = "resources",
     order = "c-z-acromatter"
   },
   {
     type = "item-subgroup",
     name = "processed-resource",
-    group = "base-resources",
+    group = "resources",
     order = "d"
   },
   {
     type = "item-subgroup",
     name = "processed-resource-from-acrovoid",
-    group = "base-resources",
+    group = "resources",
     order = "d-z-acrovoid"
   },
   {
     type = "item-subgroup",
     name = "radioactive-resource",
-    group = "base-resources",
+    group = "resources",
     order = "e"
   },
   {
     type = "item-subgroup",
     name = "alien-processed-resource",
-    group = "base-resources",
+    group = "resources",
     order = "f"
   },
   ------------------------------------------------------------------------------
-  -- MARK: base-materials
-  -- New group base-products in first place
+  -- MARK: materials
   ------------------------------------------------------------------------------
   {
     type = "item-group",
-    name = "base-materials",
+    name = "materials",
     order = "b",
     icons =  util.icon.combine_three_icons("__base__/graphics/icons/iron-plate.png", 64, nil,
                                            "__Spaghetorio__/graphics/icons/lead-molybdate.png", 64, nil,
@@ -108,48 +107,48 @@ data:extend({
   {
     type = "item-subgroup",
     name = "raw-material",
-    group = "base-materials",
+    group = "materials",
     order = "e"
   },
   {
     type = "item-subgroup",
     name = "casting-raw-material",
-    group = "base-materials",
+    group = "materials",
     order = "e-b-casting"
   },
   {
     type = "item-subgroup",
     name = "alloy",
-    group = "base-materials",
+    group = "materials",
     order = "f"
   },
   {
     type = "item-subgroup",
     name = "chemical-product",
-    group = "base-materials",
+    group = "materials",
     order = "g"
   },
   {
     type = "item-subgroup",
     name = "advanced-raw-material",
-    group = "base-materials",
+    group = "materials",
     order = "h"
   },
   {
     type = "item-subgroup",
     name = "alien-compound",
-    group = "base-materials",
+    group = "materials",
     order = "j"
   },
   {
     type = "item-subgroup",
     name = "sp-acroproduct",
-    group = "base-materials",
+    group = "materials",
     order = "k"
   },
   ------------------------------------------------------------------------------
   -- MARK: intermediate-products
-  -- Set intermediate-products to second place
+  -- Set intermediate-products to third place
   ------------------------------------------------------------------------------
   {
     type = "item-group",
@@ -304,7 +303,7 @@ data:extend({
   {
     type = "item-subgroup",
     name = "sp-crushing-acrosphere-corrupted",
-    group = "base-resources",
+    group = "resources",
     order = "i-crushing"
   },
   ------------------------------------------------------------------------------

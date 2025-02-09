@@ -1309,6 +1309,22 @@ data:extend({
       {type = "item", name = "sp-vanadium-steel", amount = 10}
     }
   },
+  {
+    type = "recipe",
+    name = "sp-tungsten-steel",  -- #ForRegEx# - recipe
+    category = "intermediate-smelting",
+    enabled = false,
+    energy_required = 25,
+    ingredients = {
+      {type = "item", name = "steel-plate", amount = 9},
+      {type = "item", name = "tungsten-plate", amount = 3},
+      {type = "item", name = "sp-vanadium-plate", amount = 1},
+      {type = "item", name = "sp-molybdenum-pillet", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-vanadium-steel", amount = 10}
+    }
+  },
   ------------------------------------------------------------------------------
   -- MARK: enriching-raw-resource
   ------------------------------------------------------------------------------
@@ -3092,6 +3108,26 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "sp-vanadyl-sulfate",  -- #ForRegEx# - recipe
+    category = "chemistry",
+    enabled = false,
+    energy_required = 2,
+    ingredients = {
+      {type = "item", name = "sp-vanadium-plate", amount = 1},
+      {type = "fluid", name = "sulfuric-acid", amount = 5},
+    },
+    results = {
+      {type = "item", name = "sp-vanadyl-sulfate", amount = 1}
+    },
+    -- crafting_machine_tint = {
+    --   primary = {r = 0.2, g = 0.1, b = 0.1, a = 1.000},
+    --   secondary = {r = 0.2, g = 0.0, b = 0.1, a = 1.000},
+    --   tertiary = {r = 0.2, g = 0.1, b = 0.0, a = 1.000},
+    --   quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000}
+    -- }
+  },
+  {
+    type = "recipe",
     name = "sp-wood-fuel",  -- #ForRegEx# - recipe
     category = "chemistry",
     enabled = false,
@@ -3102,6 +3138,48 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-wood-fuel", amount = 1}
+    },
+    -- crafting_machine_tint = {
+    --   primary = {r = 0.2, g = 0.1, b = 0.1, a = 1.000},
+    --   secondary = {r = 0.2, g = 0.0, b = 0.1, a = 1.000},
+    --   tertiary = {r = 0.2, g = 0.1, b = 0.0, a = 1.000},
+    --   quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000}
+    -- }
+  },
+  {
+    type = "recipe",
+    name = "sp-wood-fuel-from-arsenic-trioxide",  -- #ForRegEx# - recipe
+    category = "chemistry",
+    enabled = false,
+    energy_required = 1.5,
+    ingredients = {
+      {type = "item", name = "sp-arsenic-trioxide", amount = 1},
+      {type = "item", name = "sp-wood-chips", amount = 1},
+      {type = "item", name = "sp-coke", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-wood-fuel", amount = 1}
+    },
+    -- crafting_machine_tint = {
+    --   primary = {r = 0.2, g = 0.1, b = 0.1, a = 1.000},
+    --   secondary = {r = 0.2, g = 0.0, b = 0.1, a = 1.000},
+    --   tertiary = {r = 0.2, g = 0.1, b = 0.0, a = 1.000},
+    --   quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000}
+    -- }
+  },
+  {
+    type = "recipe",
+    name = "sp-silica",  -- #ForRegEx# - recipe
+    category = "chemistry",
+    enabled = false,
+    energy_required = 2,
+    ingredients = {
+      {type = "item", name = "sp-quartz", amount = 1},
+      {type = "fluid", name = "sp-sodium-hydroxide", amount = 3},
+
+    },
+    results = {
+      {type = "item", name = "sp-silica", amount = 1},
     },
     -- crafting_machine_tint = {
     --   primary = {r = 0.2, g = 0.1, b = 0.1, a = 1.000},
@@ -3422,6 +3500,27 @@ data:extend({
       tertiary = {r = 0.768, g = 0.665, b = 0.762, a = 1.000},
       quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
     }
+  },
+  {
+    type = "recipe",
+    name = "sp-calcium-carbonate",  -- #ForRegEx# - recipe
+    category = "sp-kr-fluid-filtration",
+    enabled = false,
+    energy_required = 1.5,
+    ingredients = {
+      {type = "item", name = "sp-sand", amount = 3},
+      {type = "fluid", name = "sp-phosphoric-acid", amount = 5},
+      {type = "fluid", name = "water", amount = 10}
+    },
+    results = {
+      {type = "item", name = "sp-calcium-carbonate", amount = 1}
+    },
+    -- crafting_machine_tint = {
+    --   primary = {r = 0.2, g = 0.1, b = 0.1, a = 1.000},
+    --   secondary = {r = 0.2, g = 0.0, b = 0.1, a = 1.000},
+    --   tertiary = {r = 0.2, g = 0.1, b = 0.0, a = 1.000},
+    --   quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000}
+    -- }
   },
   {
     type = "recipe",
@@ -5216,6 +5315,24 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "sp-big-electric-engine-unit",  -- #ForRegEx# - recipe
+    category = "crafting",
+    enabled = false,
+    energy_required = 3.6,
+    ingredients = {
+      {type = "item", name = "copper-cable", amount = 6},
+      {type = "item", name = "sp-magnet", amount = 6},
+      {type = "item", name = "sp-ball-bearing", amount = 4},
+      {type = "item", name = "sp-stainless-steel-gear-wheel", amount = 5},
+      {type = "item", name = "sp-aluminum-brass", amount = 2},
+      {type = "item", name = "sp-vanadium-steel", amount = 3},
+    },
+    results = {
+      {type = "item", name = "sp-big-electric-engine-unit", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
     name = "sp-compressor",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
@@ -5858,8 +5975,10 @@ data:extend({
       {type = "item", name = "sp-blank-tech-card", amount = 5},
       {type = "item", name = "wood", amount = 5},
       {type = "item", name = "sp-sand", amount = 10},
-      {type = "item", name = "sp-quartz", amount = 5},
-      {type = "fluid", name = "water", amount = 50},
+      {type = "item", name = "sp-nickel-ore", amount = 5},
+      {type = "item", name = "sp-aluminum-ore", amount = 5},
+      {type = "item", name = "sp-tinstone", amount = 5},
+      {type = "fluid", name = "crude-oil", amount = 5},
     },
     results = {
       {type = "item", name = "sp-geological-science-pack-1", amount = 5}
@@ -11896,24 +12015,6 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-laser", amount = 1}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-silica",  -- #ForRegEx# - recipe
-    icon = "__Spaghetorio__/graphics/icons/silica.png",
-    icon_size = 64,
-    mip_maps = 4,
-    category = "smelting",
-    subgroup = "processed-resource",
-    enabled = false,
-    energy_required = 3.2,
-    ingredients = {
-      {type = "item", name = "sp-quartz", amount = 1},
-    },
-    results = {
-      {type = "item", name = "sp-silica", amount = 1},
-      {type = "item", name = "sp-sand", amount = 1},
     }
   },
   {

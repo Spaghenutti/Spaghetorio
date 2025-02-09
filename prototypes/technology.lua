@@ -570,6 +570,10 @@ data:extend({
     {
       {
         type = "unlock-recipe",
+        recipe = "sp-calcium-carbonate"
+      },
+      {
+        type = "unlock-recipe",
         recipe = "sp-cement"
       },
       {
@@ -578,8 +582,7 @@ data:extend({
       }
     },
     prerequisites = {
-      "chemical-science-pack",
-      "sp-geological-science-pack-1"
+      "sp-phosphorus-processing"
     },
     unit =
     {
@@ -883,7 +886,7 @@ data:extend({
     type = "technology",
     name = "sp-tungsten-processing",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghetorio__/graphics/hr-icons/tungsten-powder.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/tungsten-plate.png",
     effects =
     {
       {
@@ -929,7 +932,7 @@ data:extend({
   {
     -- Finalzed
     type = "technology",
-    name = "sp-nickel-cobalt-and-arsenic",  -- #ForRegEx# - technology
+    name = "sp-nickel-and-cobalt",  -- #ForRegEx# - technology
     icon_size = 256,
     icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/hr-icons/nickel-ingot.png", 256, {-20, 20},
                                         "__Spaghetorio__/graphics/hr-icons/cobalt-billet.png", 256, {20, -20}),
@@ -938,6 +941,14 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "sp-crushing-cobalt-ore"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-crushed-cobalt-smelting"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-wood-fuel-from-arsenic-trioxide"
       },
       {
         type = "unlock-recipe",
@@ -957,18 +968,6 @@ data:extend({
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-nickel-cobalt"
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-waspaloy"
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-arsen-pillet"
-      },
-      {
-        type = "unlock-recipe",
         recipe = "sp-crushed-nickel-smelting"
       },
       {
@@ -978,7 +977,7 @@ data:extend({
     },
     prerequisites = {
       "advanced-material-processing",
-      "sp-geological-science-pack-1"
+      -- "sp-geological-science-pack-1"
     },
     unit =
     {
@@ -998,10 +997,13 @@ data:extend({
     type = "technology",
     name = "sp-arsen-processing",  -- #ForRegEx# - technology
     icon_size = 256,
-    icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/hr-icons/arsenic-sulfide.png", 256, {-20, 20},
-                                        "__Spaghetorio__/graphics/hr-icons/arsenic-iodide.png", 256, {20, -20}),
+    icon = "__Spaghetorio__/graphics/hr-icons/arsen-pillet.png",
     effects =
     {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-arsen-pillet"
+      },
       {
         type = "unlock-recipe",
         recipe = "sp-arsenic-iodide"
@@ -1013,7 +1015,7 @@ data:extend({
     },
     prerequisites = {
       "sp-iodine-processing",
-      "sp-nickel-cobalt-and-arsenic"
+      "sp-nickel-and-cobalt"
     },
     unit =
     {
@@ -1174,7 +1176,7 @@ data:extend({
   },
   {
     type = "technology",
-    name = "sp-vanadium-processing",  -- #ForRegEx# - technology
+    name = "sp-potassium-processing",  -- #ForRegEx# - technology
     icon_size = 256,
     icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/hr-icons/potassium-chloride.png", 256, {-20, 20},
                                         "__Spaghetorio__/graphics/hr-icons/potassium-ingot.png", 256, {20, -20}),
@@ -1282,7 +1284,7 @@ data:extend({
     },
     prerequisites = {
       "logistic-science-pack",
-      "sp-nickel-cobalt-and-arsenic"
+      "sp-nickel-and-cobalt"
     },
     unit =
     {
@@ -1301,7 +1303,7 @@ data:extend({
     name = "sp-aluminum-alloys",  -- #ForRegEx# - technology
     icon_size = 256,
     icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/hr-icons/duralumin.png", 256, nil,
-                                   "__Spaghetorio__/graphics/hr-icons/aluminum-brass.png", 256, nil),
+                                        "__Spaghetorio__/graphics/hr-icons/aluminum-brass.png", 256, nil),
     effects =
     {
       {
@@ -1311,6 +1313,46 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "sp-aluminum-brass"
+      },
+    },
+    prerequisites = {
+      "sp-zirconium-processing",
+      "sp-magnesium-processing",
+      "sp-zinc-processing",
+      "advanced-material-processing-2"
+    },
+    unit =
+    {
+      count = 500,
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
+        {"production-science-pack", 1}
+      },
+      time = 30
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-nickel-cobalt-alloys",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/hr-icons/nickel-cobalt.png", 256, nil,
+                                        "__Spaghetorio__/graphics/hr-icons/waspaloy.png", 256, nil),
+    effects =
+    {
+
+      {
+        type = "unlock-recipe",
+        recipe = "sp-nickel-cobalt"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-waspaloy"
       },
     },
     prerequisites = {
@@ -1615,6 +1657,54 @@ data:extend({
         {"chemical-science-pack", 1}
       },
       time = 30
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    -- This tech does not exist in krastorio
+    name = "sp-rare-metals",  -- #ForRegEx# - technology
+    icon_size = 64, -- TODO: Fix icon
+    icon = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/rare-metals/rare-metals-2.png",
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-raw-rare-metal-processing"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-rare-metals-alloy-from-yttrium"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-rare-metals-alloy-from-lanthanum"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-rare-metals-alloy-from-cerium"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-rare-metals-alloy-from-neodymium"
+      }
+    },
+    prerequisites = {
+      "sp-geological-science-pack-2",
+    },
+    unit =
+    {
+      count = 750,
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"production-science-pack", 1},
+        {"utility-science-pack", 1}
+      },
+      time = 15
     },
     order = "a-h-a"
   },
@@ -2096,34 +2186,6 @@ data:extend({
       ingredients = {
         {"automation-science-pack", 1},
         {"logistic-science-pack", 1}
-      },
-      time = 30
-    },
-    order = "a-h-a"
-  },
-  {
-    type = "technology",
-    name = "sp-plate-heat-exchanger",  -- #ForRegEx# - technology
-    icon_size = 256,
-    icon = "__Spaghetorio__/graphics/hr-icons/plate-heat-exchanger.png",
-    effects =
-    {
-      {
-        type = "unlock-recipe",
-        recipe = "sp-plate-heat-exchanger"
-      },
-    },
-    prerequisites = {
-      "sp-heatsink",
-      "sp-material-science-pack-1"
-    },
-    unit =
-    {
-      count = 100,
-      ingredients = {
-        {"automation-science-pack", 1},
-        {"logistic-science-pack", 1},
-        {"sp-material-science-pack-1", 1}
       },
       time = 30
     },
@@ -2709,10 +2771,6 @@ data:extend({
       -- lead
       {
         type = "unlock-recipe",
-        recipe = "sp-lead-slab",
-      },
-      {
-        type = "unlock-recipe",
         recipe = "sp-enriched-tinstone",
       },
       {
@@ -3034,6 +3092,37 @@ data:extend({
   },
   {
     type = "technology",
+    name = "sp-urea",  -- #ForRegEx# - technology
+    icon = "__Spaghetorio__/graphics/hr-icons/urea.png",
+    icon_size = 256,
+    icon_mipmaps = 4,
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-urea",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-wood-from-urea",
+      },
+    },
+    prerequisites = {
+      "sp-sodium-hydroxide"
+    },
+    order = "c-a",
+    unit = {
+      count = 125,
+      ingredients = {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"sp-material-science-pack-1", 1},
+        {"sp-electronic-science-pack-1", 1},
+      },
+      time = 30,
+    },
+  },
+  {
+    type = "technology",
     name = "sp-silicon-processing",  -- #ForRegEx# - technology
     icon = "__Spaghetorio__/graphics/krastorio/technologies/silicon-processing.png",
     icon_size = 256,
@@ -3053,8 +3142,7 @@ data:extend({
       },
     },
     prerequisites = {
-      "sp-kr-fluids-chemistry",
-      "automation-2"
+      "sp-sodium-hydroxide"
     },
     order = "c-a",
     unit = {
@@ -6001,6 +6089,22 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "sp-upgrade-yemnuth-acrosphere"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-crushing-corrupted-acrosphere-1"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-crushing-corrupted-acrosphere-2"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-crushing-corrupted-acrosphere-3"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-crushing-corrupted-acrosphere-4"
       }
     },
     prerequisites = {"sp-basic-acrosphere-conversion"},
@@ -6536,6 +6640,10 @@ data:extend({
       },
       {
         type = "unlock-recipe",
+        recipe = "sp-plate-heat-exchanger"
+      },
+      {
+        type = "unlock-recipe",
         recipe = "sp-hydrogen",
       },
       {
@@ -6552,8 +6660,7 @@ data:extend({
       },
     },
     prerequisites = {
-      "sp-geological-science-pack-1",
-      "sp-plate-heat-exchanger"
+      "sp-geological-science-pack-1"
     },
     unit = {
       count = 175,
@@ -7076,7 +7183,7 @@ data:extend({
       },
     },
     prerequisites = {
-      "sp-silicon-processing",
+      "oil-processing",
     },
     unit =
     {
@@ -8484,4 +8591,119 @@ data:extend({
     upgrade = true,
     order = "c-m-d"
   },
+  ------------------------------------------------------------------------------
+  --- MARK: Recipes without technology
+  ------------------------------------------------------------------------------
+  {
+    type = "technology",
+    name = "sp-recipes-without-technology",  -- #ForRegEx# - technology
+    icon = "__Spaghetorio__/graphics/dummy/dummy-technology-default.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-barium-titanate",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-copper-antimony",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-boron-phosphide",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-boron-silicade",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-chromium-cobalt",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-elgiloy",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-maraging-steel",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-kovar",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-lead-molybdate",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-sodium-molybdate",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-manganese-chloride",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-vanadyl-sulfate",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-titanium-aluminum-vanadium",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-vanadium-aluminum",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-vanadium-steel",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-potassium-permanganate-solution",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-potassium-dichromate-solution",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-hydrogen-cyanide",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-potassium-hydroxade",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-potassium-cyanide",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-tungsten-steel",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-big-electric-engine-unit",
+      },
+      -- {
+      --   type = "unlock-recipe",
+      --   recipe = "sp-xxxxxxxxxxxxx",
+      -- },
+    },
+    prerequisites = {
+      "automation-science-pack"
+    },
+    order = "c-a",
+    unit = {
+      count = 100,
+      ingredients = {
+        {"automation-science-pack", 1},
+      },
+      time = 30,
+    },
+  }
 })

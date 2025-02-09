@@ -1956,6 +1956,16 @@ data:extend({
   },
   {
     type = "item",
+    name = "sp-tungsten-steel",  -- #ForRegEx# - item
+    icon = "__space-age__/graphics/icons/tungsten-plate.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "alloy",
+    order = "[vanadium-steel]",
+    stack_size = 100
+  },
+  {
+    type = "item",
     name = "sp-rare-metals-alloy",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/rare-metals/rare-metals.png",
     icon_size = 64,
@@ -3415,6 +3425,16 @@ data:extend({
     scale = 0.5,
     subgroup = "intermediate-product",
     order = "electric-[compressor]",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "sp-big-electric-engine-unit",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/big-electric-engine.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "intermediate-product",
+    order = "electric-[big-electric-engine-unit]",
     stack_size = 100
   },
   {
