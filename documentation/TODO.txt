@@ -82,6 +82,9 @@ Factorio Space age
       + potassium-chloride + water -> potassium-hydroxade (electrolysis)
       + hydrogen-cyanide + potassium-hydroxade -> potassium-cyanide (KCN): Used in gold mining, electroplating, and as a reagent in chemical synthesis.
 
+    - Remove spage age technologies
+      - carbon fiber
+
     + core-rift
     - ceramics:
       - silicon nitride (Si3N4) for heavy ball bearing

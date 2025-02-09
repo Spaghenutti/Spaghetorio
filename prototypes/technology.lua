@@ -723,16 +723,12 @@ data:extend({
     name = "sp-advanced-ceramics",  -- #ForRegEx# - technology
     icon_size = 256,
     icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/hr-icons/titanium-carbide.png", 256, nil,
-                                        "__Spaghetorio__/graphics/hr-icons/tungsten-carbide.png", 256, nil),
+                                        "__Spaghetorio__/graphics/hr-icons/boron-carbide.png", 256, nil),
     effects =
     {
       {
         type = "unlock-recipe",
         recipe = "sp-titanium-carbide"
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "tungsten-carbide"
       },
       {
         type = "unlock-recipe",
@@ -4195,7 +4191,8 @@ data:extend({
     },
     prerequisites = {
       "sp-electronic-components",
-      "sp-aluminum-treatment"
+      "sp-aluminum-treatment",
+      "sp-mercury-processing"
     },
     unit =
     {
@@ -5486,10 +5483,6 @@ data:extend({
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-charged-slab"
-      },
-      {
-        type = "unlock-recipe",
         recipe = "sp-extreme-heat-source"
       }
     },
@@ -6043,7 +6036,8 @@ data:extend({
       "sp-blunagium-explorer",
       "sp-grobgnum-explorer",
       "sp-rukite-explorer",
-      "sp-yemnuth-explorer"
+      "sp-yemnuth-explorer",
+      "sp-kr-matter-processing"
     },
     unit =
     {
@@ -6348,7 +6342,7 @@ data:extend({
         {"sp-space-science-pack-3", 1},
         {"sp-utility-science-pack-3", 1},
         -- {"space-science-pack", 1},
-        -- {"matter-tech-card", 1},
+        -- {"sp-matter-science-pack", 1},
         -- {"advanced-tech-card", 1}
       },
       time = 30
@@ -6929,6 +6923,72 @@ data:extend({
   },
   {
     type = "technology",
+    name = "sp-kr-gas-power-station",  -- #ForRegEx# - technology
+    icon = "__Spaghetorio__/graphics/krastorio/technologies/gas-power-station.png",
+    icon_size = 256,
+    icon_mipmaps = 4,
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-kr-gas-power-station",
+      },
+    },
+    prerequisites = {
+      "sp-dynamo",
+      "sp-geological-science-pack-2"
+    },
+    unit = {
+      count = 200,
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-material-science-pack-1", 1},
+        {"chemical-science-pack", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"production-science-pack", 1}
+      },
+      time = 45,
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-kr-advanced-solar-panel",  -- #ForRegEx# - technology
+    icon = "__Spaghetorio__/graphics/krastorio/technologies/advanced-solar-panel.png",
+    icon_size = 256,
+    icon_mipmaps = 4,
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-kr-advanced-solar-panel",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-kr-energy-storage",
+      },
+    },
+    prerequisites = {
+      "sp-advanced-processing-unit",
+      "sp-production-science-pack-3"
+    },
+    unit = {
+      count = 250,
+      ingredients = {
+        {"sp-automation-science-pack-3", 1},
+        {"sp-logistic-science-pack-3", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-electronic-science-pack-3", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-computer-science-pack-2", 1},
+        {"sp-production-science-pack-3", 1},
+        {"utility-science-pack", 1}
+      },
+      time = 30,
+    },
+  },
+  {
+    type = "technology",
     name = "sp-kr-particle-accelerator",  -- #ForRegEx# - technology
     icon = "__Spaghetorio__/graphics/krastorio/technologies/fusion-energy.png",
     icon_size = 256,
@@ -7102,6 +7162,57 @@ data:extend({
       },
     },
     {
+      type = "technology",
+      name = "sp-kr-advanced-furnace",  -- #ForRegEx# - technology
+      icon = "__Spaghetorio__/graphics/krastorio/technologies/advanced-furnace.png",
+      icon_size = 256,
+      icon_mipmaps = 4,
+      effects = {
+        {
+          type = "unlock-recipe",
+          recipe = "sp-kr-advanced-furnace",
+        },
+        {
+          type = "unlock-recipe",
+          recipe = "sp-blunagium-plate",
+        },
+        {
+          type = "unlock-recipe",
+          recipe = "sp-grobgnum-plate",
+        },
+        {
+          type = "unlock-recipe",
+          recipe = "sp-rukite-plate",
+        },
+        {
+          type = "unlock-recipe",
+          recipe = "sp-yemnuth-plate",
+        },
+      },
+      prerequisites = {
+        "sp-kr-quarry-minerals-extraction"
+      },
+      unit = {
+        count = 250,
+        ingredients = {
+          {"sp-automation-science-pack-3", 1},
+          {"sp-logistic-science-pack-3", 1},
+          {"sp-chemical-science-pack-3", 1},
+          {"sp-electronic-science-pack-3", 1},
+          {"sp-geological-science-pack-3", 1},
+          {"sp-material-science-pack-3", 1},
+          {"sp-computer-science-pack-3", 1},
+          {"sp-production-science-pack-3", 1},
+          {"sp-nuclear-science-pack-3", 1},
+          {"sp-space-science-pack-3", 1},
+          {"sp-utility-science-pack-3", 1},
+          {"sp-matter-science-pack", 1},
+          {"sp-advanced-science-pack", 1}
+        },
+        time = 45,
+      },
+    },
+    {
     type = "technology",
     name = "sp-kr-automation",
     icon = "__Spaghetorio__/graphics/krastorio/technologies/advanced-assembling-machine.png",
@@ -7119,7 +7230,7 @@ data:extend({
       -- "sp-kr-energy-control-unit",
       -- "sp-kr-advanced-tech-card",
       -- "sp-kr-enriched-ores",
-      -- "kr-advanced-furnace"
+      "sp-kr-advanced-furnace"
     },
     unit = {
       count = 500,
@@ -7135,10 +7246,107 @@ data:extend({
         {"sp-nuclear-science-pack-3", 1},
         {"sp-space-science-pack-3", 1},
         {"sp-utility-science-pack-3", 1},
-        -- {"matter-tech-card", 1},
+        -- {"sp-matter-science-pack", 1},
         -- {"advanced-tech-card", 1}
       },
       time = 45,
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-kr-matter-processing",
+    icon = "__Spaghetorio__/graphics/krastorio/technologies/matter-processing.png",
+    icon_size = 256,
+    icon_mipmaps = 4,
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-kr-matter-plant",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-kr-matter-assembler",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-kr-stabilizer-charging-station",
+      },
+      -- TODO: Add recipes
+      -- {
+      --   type = "unlock-recipe",
+      --   recipe = "sp-matter-stabilizer",
+      -- },
+      -- {
+      --   type = "unlock-recipe",
+      --   recipe = "sp-charge-stabilizer",
+      -- },
+    },
+    prerequisites = {
+      "automation-3",
+    },
+    unit = {
+      count = 500,
+      ingredients = {
+        {"sp-automation-science-pack-3", 1},
+        {"sp-logistic-science-pack-3", 1},
+        {"sp-chemical-science-pack-3", 1},
+        {"sp-electronic-science-pack-3", 1},
+        {"sp-geological-science-pack-3", 1},
+        {"sp-material-science-pack-3", 1},
+        {"sp-computer-science-pack-3", 1},
+        {"sp-production-science-pack-3", 1},
+        {"sp-nuclear-science-pack-3", 1},
+        {"sp-space-science-pack-3", 1},
+        {"sp-utility-science-pack-3", 1},
+        {"sp-matter-science-pack", 1}
+      },
+      time = 45,
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-kr-antimatter-reactor",
+    icon = "__Spaghetorio__/graphics/krastorio/technologies/antimatter-reactor.png",
+    icon_size = 256,
+    icon_mipmaps = 4,
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-kr-antimatter-reactor",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-empty-antimatter-fuel-cell",
+      },
+      {
+        type = "unlock-recipe",
+        recipe =  "sp-charged-antimatter-fuel-cell",
+      },
+    },
+    prerequisites = {
+      "sp-uniformity-science-pack",
+    },
+    unit = {
+      count = 2000,
+      ingredients = {
+        {"sp-automation-science-pack-3", 1},
+        {"sp-logistic-science-pack-3", 1},
+        {"sp-chemical-science-pack-3", 1},
+        {"sp-electronic-science-pack-3", 1},
+        {"sp-geological-science-pack-3", 1},
+        {"sp-material-science-pack-3", 1},
+        {"sp-computer-science-pack-3", 1},
+        {"sp-production-science-pack-3", 1},
+        {"sp-nuclear-science-pack-3", 1},
+        {"sp-space-science-pack-3", 1},
+        {"sp-utility-science-pack-3", 1},
+        {"space-science-pack", 1},
+        {"sp-matter-science-pack", 1},
+        {"sp-advanced-science-pack", 1},
+        {"sp-singularity-science-pack", 1},
+        {"sp-uniformity-science-pack", 1}
+      },
+      time = 60,
     },
   },
   ------------------------------------------------------------------------------
@@ -8689,6 +8897,35 @@ data:extend({
         type = "unlock-recipe",
         recipe = "sp-big-electric-engine-unit",
       },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-glass-from-calcite",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-imersium-plate",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-imersium-beam",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-lithium-sulfur-battery",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-ai-core",
+      },
+      -- TODO: add recipe chain for
+      -- {
+      --   type = "unlock-recipe",
+      --   recipe = "sp-biomass",
+      -- },
+      -- {
+      --   type = "unlock-recipe",
+      --   recipe = "sp-imersium-gear-wheel",
+      -- },
       -- {
       --   type = "unlock-recipe",
       --   recipe = "sp-xxxxxxxxxxxxx",

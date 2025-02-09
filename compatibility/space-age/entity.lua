@@ -6,6 +6,7 @@ data.raw.item["holmium-ore"].subgroup = "raw-resource"
 data.raw.item["scrap"].subgroup = "raw-resource"
 data.raw.item["tungsten-ore"].subgroup = "raw-resource"
 
+data.raw.item["carbon"].subgroup = "processed-resource"
 data.raw.item["lithium"].subgroup = "processed-resource"
 
 -- group material

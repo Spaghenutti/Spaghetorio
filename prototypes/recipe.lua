@@ -116,20 +116,6 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-glass-from-calcium",  -- #ForRegEx# - recipe
-    category = "smelting",
-    enabled = false,
-    energy_required = 2.4,
-    ingredients = {
-      {type = "item", name = "sp-sand", amount = 3},
-      {type = "item", name = "calcite", amount = 1}
-    },
-    results = {
-      {type = "item", name = "sp-glass", amount = 1}
-    }
-  },
-  {
-    type = "recipe",
     name = "sp-silicon",  -- #ForRegEx# - recipe
     category = "smelting",
     enabled = false,
@@ -444,7 +430,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-glass-from-calcium",  -- #ForRegEx# - recipe
+    name = "sp-glass-from-calcite",  -- #ForRegEx# - recipe
     icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/krastorio/icons/items/glass.png", 64,
                                          "__Spaghetorio__/graphics/icons/calcium.png", 64),
     category = "smelting",
@@ -1322,7 +1308,7 @@ data:extend({
       {type = "item", name = "sp-molybdenum-pillet", amount = 1},
     },
     results = {
-      {type = "item", name = "sp-vanadium-steel", amount = 10}
+      {type = "item", name = "sp-tungsten-steel", amount = 10}
     }
   },
   ------------------------------------------------------------------------------
@@ -6860,6 +6846,58 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "sp-ai-core",  -- #ForRegEx# - recipe
+    category = "crafting-with-fluid",
+    enabled = false,
+    energy_required = 16,
+    ingredients = {
+      {type = "item", name = "sp-glass-fiber", amount = 6},
+      {type = "item", name = "sp-TiNb", amount = 2},
+      {type = "item", name = "supercapacitor", amount = 2},
+      {type = "item", name = "sp-processor", amount = 20},
+      {type = "item", name = "sp-quantum-data-plane", amount = 1},
+      {type = "item", name = "sp-circuit-board", amount = 5},
+      {type = "item", name = "sp-imersite-crystal", amount = 1},
+      {type = "fluid", name = "sp-aqueous-niobium", amount = 30},
+    },
+    results = {
+      {type = "item", name = "sp-ai-core", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-empty-antimatter-fuel-cell",  -- #ForRegEx# - recipe
+    category = "crafting",
+    enabled = false,
+    energy_required = 16,
+    ingredients = {
+      {type = "item", name = "sp-matter-stabilizer", amount = 1},
+      {type = "item", name = "sp-sideral-seal", amount = 1},
+      {type = "item", name = "sp-lossless-power-connector", amount = 1},
+      {type = "item", name = "sp-dark-energy-harvester", amount = 1},
+      {type = "item", name = "sp-quantum-capacitor", amount = 12},
+    },
+    results = {
+      {type = "item", name = "sp-empty-antimatter-fuel-cell", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-charged-antimatter-fuel-cell",  -- #ForRegEx# - recipe
+    category = "chemistry",
+    enabled = false,
+    energy_required = 120,
+    ingredients = {
+      {type = "item", name = "sp-empty-antimatter-fuel-cell", amount = 6},
+      {type = "fluid", name = "sp-matter", amount = 1000},
+      {type = "fluid", name = "sp-antimatter", amount = 1000},
+    },
+    results = {
+      {type = "item", name = "sp-charged-antimatter-fuel-cell", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
     name = "sp-ion-thruster",  -- #ForRegEx# - recipe
     category = "crafting-with-fluid",
     enabled = false,
@@ -7522,7 +7560,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-kr-advanced-solar-panel",
+    name = "sp-kr-advanced-solar-panel",  -- #ForRegEx# - recipe
     icon_size = 64,
     mip_maps = 4,
     category = "crafting-with-fluid",
@@ -7541,7 +7579,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-kr-antimatter-reactor",
+    name = "sp-kr-antimatter-reactor",  -- #ForRegEx# - recipe
     icon_size = 64,
     mip_maps = 4,
     category = "crafting",
@@ -7570,7 +7608,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-kr-atmospheric-condenser",
+    name = "sp-kr-atmospheric-condenser",  -- #ForRegEx# - recipe
     icon_size = 64,
     mip_maps = 4,
     category = "crafting",
@@ -7591,7 +7629,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-kr-bio-lab",
+    name = "sp-kr-bio-lab",  -- #ForRegEx# - recipe
     icon_size = 64,
     mip_maps = 4,
     category = "crafting",
@@ -7610,7 +7648,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-kr-greenhouse",
+    name = "sp-kr-greenhouse",  -- #ForRegEx# - recipe
     icon_size = 64,
     mip_maps = 4,
     category = "crafting",
@@ -7631,7 +7669,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-biusart-lab",
+    name = "sp-biusart-lab",  -- #ForRegEx# - recipe
     icon_size = 64,
     mip_maps = 4,
     category = "crafting",
@@ -7651,7 +7689,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-kr-crusher",
+    name = "sp-kr-crusher",  -- #ForRegEx# - recipe
     icon_size = 64,
     mip_maps = 4,
     category = "crafting",
@@ -7671,7 +7709,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-kr-electrolysis-plant",
+    name = "sp-kr-electrolysis-plant",  -- #ForRegEx# - recipe
     icon_size = 64,
     mip_maps = 4,
     category = "crafting",
@@ -7691,7 +7729,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-kr-energy-storage",
+    name = "sp-kr-energy-storage",  -- #ForRegEx# - recipe
     icon_size = 64,
     mip_maps = 4,
     category = "crafting",
@@ -7711,7 +7749,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-kr-filtration-plant",
+    name = "sp-kr-filtration-plant",  -- #ForRegEx# - recipe
     icon_size = 64,
     mip_maps = 4,
     category = "crafting",
@@ -7732,7 +7770,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-kr-fluid-burner",
+    name = "sp-kr-fluid-burner",  -- #ForRegEx# - recipe
     icon_size = 64,
     mip_maps = 4,
     category = "crafting",
@@ -7751,7 +7789,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-kr-fuel-refinery",
+    name = "sp-kr-fuel-refinery",  -- #ForRegEx# - recipe
     icon_size = 64,
     mip_maps = 4,
     category = "crafting",
@@ -7772,7 +7810,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-kr-particle-accelerator",
+    name = "sp-kr-particle-accelerator",  -- #ForRegEx# - recipe
     icon_size = 64,
     mip_maps = 4,
     category = "crafting",
@@ -7800,7 +7838,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-kr-gas-power-station",
+    name = "sp-kr-gas-power-station",  -- #ForRegEx# - recipe
     icon_size = 64,
     mip_maps = 4,
     category = "crafting",
@@ -7820,7 +7858,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-kr-large-roboport",
+    name = "sp-kr-large-roboport",  -- #ForRegEx# - recipe
     icon_size = 64,
     mip_maps = 4,
     category = "crafting",
@@ -7844,7 +7882,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-kr-small-roboport",
+    name = "sp-kr-small-roboport",  -- #ForRegEx# - recipe
     icon_size = 64,
     mip_maps = 4,
     category = "crafting",
@@ -7865,7 +7903,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-kr-matter-assembler",
+    name = "sp-kr-matter-assembler",  -- #ForRegEx# - recipe
     icon_size = 64,
     mip_maps = 4,
     category = "crafting",
@@ -7888,7 +7926,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-kr-matter-assembler",
+    name = "sp-kr-matter-assembler",  -- #ForRegEx# - recipe
     icon_size = 64,
     mip_maps = 4,
     category = "crafting",
@@ -7911,7 +7949,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-kr-quantum-computer",
+    name = "sp-kr-quantum-computer",  -- #ForRegEx# - recipe
     icon_size = 64,
     mip_maps = 4,
     category = "crafting",
@@ -7935,7 +7973,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-kr-research-server",
+    name = "sp-kr-research-server",  -- #ForRegEx# - recipe
     icon_size = 64,
     mip_maps = 4,
     category = "crafting",
@@ -7960,7 +7998,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-kr-stellar-sinkhole-forge",
+    name = "sp-kr-stellar-sinkhole-forge",  -- #ForRegEx# - recipe
     icon_size = 64,
     mip_maps = 4,
     category = "crafting",
@@ -7975,7 +8013,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-kr-quarry-drill",
+    name = "sp-kr-quarry-drill",  -- #ForRegEx# - recipe
     icon_size = 64,
     mip_maps = 4,
     category = "crafting",
@@ -7998,7 +8036,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-kr-singularity-beacon",
+    name = "sp-kr-singularity-beacon",  -- #ForRegEx# - recipe
     icon_size = 64,
     mip_maps = 4,
     category = "crafting",
@@ -8017,7 +8055,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-kr-singularity-lab",
+    name = "sp-kr-singularity-lab",  -- #ForRegEx# - recipe
     icon_size = 64,
     mip_maps = 4,
     category = "crafting",
@@ -8041,7 +8079,53 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-kr-stabilizer-charging-station",
+    name = "sp-kr-matter-plant",  -- #ForRegEx# - recipe
+    icon_size = 64,
+    mip_maps = 4,
+    category = "crafting",
+    energy_required = 90,
+    enabled = false,
+    ingredients = {
+      {type = "item", name = "sp-energy-control-unit", amount = 20},
+      {type = "item", name = "sp-imersium-beam", amount = 80},
+      {type = "item", name = "sp-niobium-steel", amount = 50},
+      {type = "item", name = "sp-rare-metals-alloy", amount = 40},
+      {type = "item", name = "sp-ai-core", amount = 40},
+      {type = "item", name = "sp-turbopump", amount = 60},
+      {type = "item", name = "sp-pressure-tube", amount = 20},
+      {type = "item", name = "sp-plasma-core", amount = 1},
+      -- {type = "item", name = "kr-black-reinforced-plate", amount = 80},
+    },
+    results = {
+      {type = "item", name = "sp-kr-matter-plant", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-kr-matter-assembler",  -- #ForRegEx# - recipe
+    icon_size = 64,
+    mip_maps = 4,
+    category = "crafting",
+    energy_required = 90,
+    enabled = false,
+    ingredients = {
+      {type = "item", name = "sp-energy-control-unit", amount = 40},
+      {type = "item", name = "sp-imersium-plate", amount = 40},
+      {type = "item", name = "sp-nitenol", amount = 40},
+      {type = "item", name = "sp-TiNb", amount = 120},
+      {type = "item", name = "sp-ai-core", amount = 24},
+      {type = "item", name = "sp-micro-machine", amount = 10},
+      {type = "item", name = "sp-carbon-nanotubes", amount = 150},
+      {type = "item", name = "sp-vortex-core", amount = 1},
+      -- {type = "item", name = "kr-black-reinforced-plate", amount = 160},
+    },
+    results = {
+      {type = "item", name = "sp-kr-matter-assembler", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-kr-stabilizer-charging-station",  -- #ForRegEx# - recipe
     icon_size = 64,
     mip_maps = 4,
     category = "crafting",
@@ -8061,24 +8145,24 @@ data:extend({
       {type = "item", name = "sp-kr-stabilizer-charging-station", amount = 1}
     }
   },
-  {
-    type = "recipe",
-    name = "sp-kr-stabilizer-charging-station",
-    icon_size = 64,
-    mip_maps = 4,
-    category = "crafting",
-    energy_required = 8,
-    enabled = false,
-    ingredients = {
-      {type = "item", name = "iron-plate", amount = 12},
-      {type = "item", name = "stone-brick", amount = 4},
-      {type = "item", name = "sp-bolts", amount = 4},
-      {type = "item", name = "electric-engine-unit", amount = 1}
-    },
-    results = {
-      {type = "item", name = "sp-kr-stabilizer-charging-station", amount = 1}
-    }
-  },
+  -- {
+  --   type = "recipe",
+  --   name = "sp-kr-stabilizer-charging-station",  -- #ForRegEx# - recipe
+  --   icon_size = 64,
+  --   mip_maps = 4,
+  --   category = "crafting",
+  --   energy_required = 8,
+  --   enabled = false,
+  --   ingredients = {
+  --     {type = "item", name = "iron-plate", amount = 12},
+  --     {type = "item", name = "stone-brick", amount = 4},
+  --     {type = "item", name = "sp-bolts", amount = 4},
+  --     {type = "item", name = "electric-engine-unit", amount = 1}
+  --   },
+  --   results = {
+  --     {type = "item", name = "sp-kr-stabilizer-charging-station", amount = 1}
+  --   }
+  -- },
 --   -- MARK: Krastorio Buildings
 -- util.recipe.change_recipe_ingredients("kr-mineral-water-pumpjack",
 -- {
@@ -8114,7 +8198,7 @@ data:extend({
   ------------------------------------------------------------------------------
   {
     type = "recipe",
-    name = "sp-kr-superior-inserter",
+    name = "sp-kr-superior-inserter",  -- #ForRegEx# - recipe
     icon_size = 64,
     mip_maps = 4,
     category = "crafting",
@@ -8135,7 +8219,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-kr-superior-long-inserter",
+    name = "sp-kr-superior-long-inserter",  -- #ForRegEx# - recipe
     icon_size = 64,
     mip_maps = 4,
     category = "crafting",
@@ -8159,7 +8243,7 @@ data:extend({
   ------------------------------------------------------------------------------
   {
     type = "recipe",
-    name = "sp-kr-loader",
+    name = "sp-kr-loader",  -- #ForRegEx# - recipe
     icon_size = 64,
     mip_maps = 4,
     category = "crafting",
@@ -8178,7 +8262,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-kr-fast-loader",
+    name = "sp-kr-fast-loader",  -- #ForRegEx# - recipe
     icon_size = 64,
     mip_maps = 4,
     category = "crafting",
@@ -8198,7 +8282,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-kr-express-loader",
+    name = "sp-kr-express-loader",  -- #ForRegEx# - recipe
     icon_size = 64,
     mip_maps = 4,
     category = "crafting",
@@ -8217,7 +8301,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-kr-turbo-loader",
+    name = "sp-kr-turbo-loader",  -- #ForRegEx# - recipe
     icon_size = 64,
     mip_maps = 4,
     category = "crafting",
@@ -8236,7 +8320,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-kr-superior-transport-belt",
+    name = "sp-kr-superior-transport-belt",  -- #ForRegEx# - recipe
     icon_size = 64,
     mip_maps = 4,
     category = "crafting",
@@ -8256,7 +8340,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-kr-superior-underground-belt",
+    name = "sp-kr-superior-underground-belt",  -- #ForRegEx# - recipe
     icon_size = 64,
     mip_maps = 4,
     category = "crafting",
@@ -8274,7 +8358,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-kr-superior-splitter",
+    name = "sp-kr-superior-splitter",  -- #ForRegEx# - recipe
     icon_size = 64,
     mip_maps = 4,
     category = "crafting",
@@ -8292,7 +8376,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-kr-superior-loader",
+    name = "sp-kr-superior-loader",  -- #ForRegEx# - recipe
     icon_size = 64,
     mip_maps = 4,
     category = "crafting",
@@ -8402,6 +8486,43 @@ data:extend({
       {type = "item", name = "sp-grobgnum-plate", amount = 6}
     },
     order = "a-plate-[grobgnum-plate]",
+  },
+  {
+    type = "recipe",
+    name = "sp-imersium-plate",  -- #ForRegEx# - recipe
+    icon_size = 64,
+    mip_maps = 4,
+    category = "sp-kr-advanced-smelting",
+    enabled = false,
+    energy_required = 30,
+    ingredients = {
+      {type = "item", name = "sp-imersite-powder", amount = 10},
+      {type = "item", name = "sp-rare-metals-alloy", amount = 3},
+      {type = "item", name = "sp-vanadium-plate", amount = 2},
+      {type = "item", name = "holmium-plate", amount = 2}
+    },
+    results = {
+      {type = "item", name = "sp-imersium-plate", amount = 4}
+    },
+    order = "a-plate-[blunagium-plate]",
+  },
+  {
+    type = "recipe",
+    name = "sp-imersium-beam",  -- #ForRegEx# - recipe
+    icon_size = 64,
+    mip_maps = 4,
+    category = "sp-kr-advanced-smelting",
+    enabled = false,
+    energy_required = 30,
+    ingredients = {
+      {type = "item", name = "sp-imersium-plate", amount = 8},
+      {type = "item", name = "sp-zirconia", amount = 1},
+      {type = "item", name = "sp-boron-pillet", amount = 2},
+    },
+    results = {
+      {type = "item", name = "sp-imersium-beam", amount = 4}
+    },
+    order = "a-plate-[blunagium-plate]",
   },
   {
     type = "recipe",
@@ -11941,6 +12062,7 @@ data:extend({
     category = "intermediate-smelting",
     subgroup = "advanced-raw-material",
     enabled = false,
+    allow_productivity = false,
     energy_required = 8,
     ingredients = {
       {type = "item", name = "sp-silicon", amount = 1},

@@ -949,6 +949,16 @@ data:extend({
   },
   {
     type = "item",
+    name = "sp-zirconia",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/zirconia.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "processed-resource",
+    order = "[zirconia]",
+    stack_size = 100
+  },
+  {
+    type = "item",
     name = "sp-titanium-chloride",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/titanium-chloride.png",
     icon_size = 64,
@@ -1530,16 +1540,6 @@ data:extend({
     scale = 0.5,
     subgroup = "raw-material",
     order = "rod-[zirconium-rod]",
-    stack_size = 100
-  },
-  {
-    type = "item",
-    name = "sp-zirconia",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/icons/zirconia.png",
-    icon_size = 64,
-    scale = 0.5,
-    subgroup = "raw-material",
-    order = "[zirconia]",
     stack_size = 100
   },
   {
