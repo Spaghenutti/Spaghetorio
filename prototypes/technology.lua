@@ -1842,8 +1842,8 @@ data:extend({
       },
     },
     prerequisites = {
-      "sp-phosphorus-processing",
-      "sp-electronic-science-pack-1"},
+      "sp-phosphorus-processing"
+    },
     unit =
     {
       count = 100,
@@ -4190,16 +4190,17 @@ data:extend({
       },
     },
     prerequisites = {
-      "sp-electronic-components",
+      "sp-electronic-science-pack-1",
       "sp-aluminum-treatment",
       "sp-mercury-processing"
     },
     unit =
     {
-      count = 100,
+      count = 50,
       ingredients = {
         {"automation-science-pack", 1},
         {"logistic-science-pack", 1},
+        {"chemical-science-pack", 1},
         {"sp-electronic-science-pack-1", 1},
         {"sp-material-science-pack-1", 1}
       },
@@ -6662,7 +6663,6 @@ data:extend({
         {"automation-science-pack", 1},
         {"logistic-science-pack", 1},
         {"sp-material-science-pack-1", 1},
-        {"sp-electronic-science-pack-1", 1},
         {"sp-geological-science-pack-1", 1}
       },
       time = 45,
@@ -7388,13 +7388,15 @@ data:extend({
         recipe = "sp-electronic-science-pack-1"
       },
     },
-    prerequisites = {"logistic-science-pack"},
+    prerequisites = {"sp-electronic-components"},
     unit =
     {
       count = 100,
       ingredients = {
         {"automation-science-pack", 1},
-        {"logistic-science-pack", 1}
+        {"logistic-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"sp-material-science-pack-1", 1}
       },
       time = 30
     },
@@ -7422,8 +7424,7 @@ data:extend({
       ingredients = {
         {"automation-science-pack", 1},
         {"logistic-science-pack", 1},
-        {"sp-material-science-pack-1", 1},
-        {"sp-electronic-science-pack-1", 1}
+        {"sp-material-science-pack-1", 1}
       },
       time = 30
     },

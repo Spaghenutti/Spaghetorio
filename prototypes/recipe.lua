@@ -5579,9 +5579,10 @@ data:extend({
     ingredients =
     {
       {type = "item", name = "sp-blank-tech-card", amount = 5},
-      {type = "item", name = "copper-cable", amount = 5},
-      {type = "item", name = "electronic-circuit", amount = 5},
-      {type = "item", name = "sp-solder", amount = 10}
+      {type = "item", name = "sp-resistor", amount = 10},
+      {type = "item", name = "sp-capacitor", amount = 5},
+      {type = "item", name = "sp-diode", amount = 5},
+      {type = "item", name = "electronic-circuit", amount = 5}
     },
     results = {
       {type = "item", name = "sp-electronic-science-pack-1", amount = 5}

@@ -100,7 +100,7 @@ data.raw.technology["circuit-network"].prerequisites = {
   "sp-aluminum-processing",
   "sp-aluminum-treatment",
   "sp-vinyl-chloride",
-  "sp-electronic-components",
+  "sp-electronic-science-pack-1",
   "sp-magnet"
 }
 data.raw.technology["circuit-network"].unit.ingredients = {
@@ -466,7 +466,7 @@ data.raw.technology["explosives"].unit.ingredients = {
   {"chemical-science-pack", 1}
 }
 
-table.insert(data.raw.technology["advanced-circuit"].prerequisites, "sp-electronic-components")
+table.insert(data.raw.technology["advanced-circuit"].prerequisites, "sp-electronic-science-pack-1")
 table.insert(data.raw.technology["advanced-circuit"].effects, {type = "unlock-recipe", recipe = "sp-basic-circuit-board"})
 data.raw.technology["advanced-circuit"].unit.ingredients = {
   {"automation-science-pack", 1},
@@ -771,7 +771,7 @@ data.raw.technology["rocket-silo"].unit.ingredients = {
   {"utility-science-pack", 1}
 }
 
-data.raw.technology["modules"].prerequisites = {"sp-electronic-components"}
+data.raw.technology["modules"].prerequisites = {"sp-electronic-science-pack-1"}
 data.raw.technology["modules"].unit.ingredients = {
   {"automation-science-pack", 1},
   {"logistic-science-pack", 1},
