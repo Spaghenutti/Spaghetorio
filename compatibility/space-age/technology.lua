@@ -8,5 +8,8 @@ table.insert(data.raw.technology["agriculture"].prerequisites, "chemical-science
 --   {"chemical-science-pack", 1}
 -- }
 
+
+table.insert(data.raw.technology["big-mining-drill"].effects, {type = "unlock-recipe", recipe = "sp-drillhead"})
+
 table.insert(data.raw.technology["lithium-processing"].effects, {type = "unlock-recipe", recipe = "sp-lithium-oxide"})
 table.insert(data.raw.technology["lithium-processing"].effects, {type = "unlock-recipe", recipe = "sp-lithium-chloride"})

@@ -2,12 +2,12 @@
 data:extend({
   {
     type = "furnace",
-    name = "sp-kr-crusher",
+    name = "sp-kr-big-crusher",
     icon_size = 64,
     icon_mipmaps = 4,
     icon = "__Spaghetorio__/graphics/krastorio/icons/entities/crusher.png",
     flags = { "placeable-neutral", "placeable-player", "player-creation" },
-    minable = { hardness = 1, mining_time = 1, result = "sp-kr-crusher" },
+    minable = { hardness = 1, mining_time = 1, result = "sp-kr-big-crusher" },
     max_health = 750,
     corpse = "sp-kr-big-random-pipes-remnant",
     dying_explosion = "big-explosion",
@@ -18,7 +18,7 @@ data:extend({
     },
     collision_box = { { -3.25, -3.25 }, { 3.25, 3.25 } },
     selection_box = { { -3.5, -3.5 }, { 3.5, 3.5 } },
-    fast_replaceable_group = "sp-kr-crusher",
+    fast_replaceable_group = "sp-kr-big-crusher",
     graphics_set = {
       animation = {
         layers = {

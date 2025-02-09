@@ -6693,6 +6693,29 @@ data:extend({
   },
   {
     type = "technology",
+    name = "sp-arc-furnace",  -- #ForRegEx# - technology
+    icon = "__Spaghetorio__/graphics/hr-icons/arc-furnace.png",
+    icon_size = 256,
+    icon_mipmaps = 4,
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-arc-furnace",
+      },
+    },
+    prerequisites = {
+      "sp-material-science-pack-2"
+    },
+    unit = {
+      count = 150,
+      ingredients = {
+        {"automation-science-pack", 1}
+      },
+      time = 30,
+    },
+  },
+  {
+    type = "technology",
     name = "sp-breeder-reactor",  -- #ForRegEx# - technology
     icon = "__Spaghetorio__/graphics/hr-icons/breeder-reactor.png",
     icon_size = 256,

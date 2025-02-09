@@ -3482,6 +3482,16 @@ data:extend({
   },
   {
     type = "item",
+    name = "sp-drillhead",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/drillhead.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "advanced-intermediate-product",
+    order = "[drillhead]",
+    stack_size = 50
+  },
+  {
+    type = "item",
     name = "sp-turbine-blade",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/turbine-blade.png",
     icon_size = 64,
@@ -6072,13 +6082,13 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-kr-crusher",  -- #ForRegEx# - building
+    name = "sp-kr-big-crusher",  -- #ForRegEx# - building
     icon = "__Spaghetorio__/graphics/krastorio/icons/entities/crusher.png",
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "production-machine",
     order = "d-h1[crusher]",
-    place_result = "sp-kr-crusher",
+    place_result = "sp-kr-big-crusher",
     stack_size = 50,
   },
   {

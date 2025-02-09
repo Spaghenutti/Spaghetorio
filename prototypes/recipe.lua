@@ -6047,6 +6047,26 @@ data:extend({
   ------------------------------------------------------------------------------
   {
     type = "recipe",
+    name = "sp-drillhead",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/icons/turbine-blade.png",
+    icon_size = 64,
+    mip_maps = 4,
+    category = "advanced-crafting",
+    enabled = false,
+    energy_required = 6,
+    ingredients = {
+      {type = "item", name = "sp-heavy-gearbox", amount = 1},
+      {type = "item", name = "sp-vanadium-steel", amount = 10},
+      {type = "item", name = "sp-elgiloy", amount = 2},
+      {type = "item", name = "sp-boron-carbide", amount = 2},
+      {type = "fluid", name = "sp-potassium-dichromate-solution", amount = 10},
+    },
+    results = {
+      {type = "item", name = "sp-drillhead", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
     name = "sp-turbine-blade-from-stainless-steel",  -- #ForRegEx# - recipe
     icon = "__Spaghetorio__/graphics/icons/turbine-blade.png",
     icon_size = 64,
@@ -7689,7 +7709,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-kr-crusher",  -- #ForRegEx# - recipe
+    name = "sp-kr-big-crusher",  -- #ForRegEx# - recipe
     icon_size = 64,
     mip_maps = 4,
     category = "crafting",
@@ -7704,7 +7724,7 @@ data:extend({
       {type = "item", name = "stone-brick", amount = 16}
     },
     results = {
-      {type = "item", name = "sp-kr-crusher", amount = 1}
+      {type = "item", name = "sp-kr-big-crusher", amount = 1}
     }
   },
   {
@@ -8021,6 +8041,7 @@ data:extend({
     enabled = false,
     ingredients = {
       {type = "item", name = "sp-diamond", amount = 40},
+      {type = "item", name = "sp-drillhead", amount = 4},
       {type = "item", name = "sp-control-unit", amount = 20},
       {type = "item", name = "sp-niobium-steel", amount = 50},
       {type = "item", name = "electric-engine-unit", amount = 20},
