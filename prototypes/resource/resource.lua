@@ -66,7 +66,7 @@ local function basic_resource(resource_parameters, autoplace_parameters)
       random_spot_size_maximum = 4,
       candidate_spot_count = autoplace_parameters.candidate_spot_count or 22,
     },
-    stage_counts = {15000, 9500, 5500, 2900, 1300, 400, 150, 80},
+    stage_counts = {250000, 150000, 100000, 70000, 50000, 35000, 20000, 10000},
     stages =
     {
       sheet =
@@ -386,10 +386,10 @@ data:extend({
       name = "mercury-ore",  -- #ForRegEx# - resource
       icon = "__Spaghetorio__/graphics/icons/mercury-ore-1.png",
       stages_filename = "__Spaghetorio__/graphics/resource/mercury-ore-patches.png",
-      order = "m",
+      order = "q",
       mining_time = 5,
-      map_color = {r=0.35, g=0.15, b=0},
-      mining_visualisation_tint = {r=0.35, g=0.15, b=0, a=1.0},
+      map_color = {r=0.35, g=0.15, b=0.05},
+      mining_visualisation_tint = {r=0.35, g=0.15, b=0.05, a=1.0},
     },
     {
       base_density = 1.5,

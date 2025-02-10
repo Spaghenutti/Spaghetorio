@@ -92,6 +92,7 @@ require("prototypes.technology")
 -- MARK: Compatibility
 -- EverythingOnNauvis
 require("compatibility.EverythingOnNauvis.order")
+require("compatibility.EverythingOnNauvis.resource")
 
 -- factorio-base
 require("compatibility.factorio-base.character")
@@ -107,4 +108,5 @@ require("compatibility.factorio-base.technology")
 require("compatibility.space-age.entity")
 require("compatibility.space-age.order")
 require("compatibility.space-age.recipe")
+require("compatibility.space-age.resource")
 require("compatibility.space-age.technology")

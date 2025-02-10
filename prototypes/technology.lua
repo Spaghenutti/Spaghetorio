@@ -381,6 +381,22 @@ data:extend({
       },
       {
         type = "unlock-recipe",
+        recipe = "sp-crushing-nickel-ore"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-crushing-cobalt-ore"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-crushing-chromite"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-crushed-chromite-smelting"
+      },
+      {
+        type = "unlock-recipe",
         recipe = "sp-crushed-iron-smelting"
       },
       {
@@ -402,6 +418,18 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "sp-lead-slab"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-crushed-nickel-smelting"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-crushed-cobalt-smelting"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-wood-fuel-from-arsenic-trioxide"
       },
     },
     prerequisites = {
@@ -830,7 +858,6 @@ data:extend({
     order = "a-h-a"
   },
   {
-    -- Finalzed
     type = "technology",
     name = "sp-niobium-and-tantalum",  -- #ForRegEx# - technology
     icon_size = 256,
@@ -926,26 +953,12 @@ data:extend({
     order = "a-h-a"
   },
   {
-    -- Finalzed
     type = "technology",
-    name = "sp-nickel-and-cobalt",  -- #ForRegEx# - technology
+    name = "sp-cobalt-processing",  -- #ForRegEx# - technology
     icon_size = 256,
-    icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/hr-icons/nickel-ingot.png", 256, {-20, 20},
-                                        "__Spaghetorio__/graphics/hr-icons/cobalt-billet.png", 256, {20, -20}),
+    icon = "__Spaghetorio__/graphics/hr-icons/cobalt-billet.png",
     effects =
     {
-      {
-        type = "unlock-recipe",
-        recipe = "sp-crushing-cobalt-ore"
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-crushed-cobalt-smelting"
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-wood-fuel-from-arsenic-trioxide"
-      },
       {
         type = "unlock-recipe",
         recipe = "sp-cobalt-oxide"
@@ -958,22 +971,9 @@ data:extend({
         type = "unlock-recipe",
         recipe = "sp-cobalt-billet"
       },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-nickel-ingot"
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-crushed-nickel-smelting"
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-crushing-nickel-ore"
-      },
     },
     prerequisites = {
-      "advanced-material-processing",
-      -- "sp-geological-science-pack-1"
+      "chemical-science-pack",
     },
     unit =
     {
@@ -982,14 +982,14 @@ data:extend({
         {"automation-science-pack", 1},
         {"logistic-science-pack", 1},
         {"sp-material-science-pack-1", 1},
-        {"sp-geological-science-pack-1", 1}
+        {"sp-geological-science-pack-1", 1},
+        {"chemical-science-pack", 1}
       },
       time = 30
     },
     order = "a-h-a"
   },
   {
-    -- Finalzed
     type = "technology",
     name = "sp-arsen-processing",  -- #ForRegEx# - technology
     icon_size = 256,
@@ -1011,7 +1011,7 @@ data:extend({
     },
     prerequisites = {
       "sp-iodine-processing",
-      "sp-nickel-and-cobalt"
+      "sp-cobalt-processing"
     },
     unit =
     {
@@ -1259,28 +1259,23 @@ data:extend({
     {
       {
         type = "unlock-recipe",
+        recipe = "sp-chromium-plate"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-nickel-ingot"
+      },
+      {
+        type = "unlock-recipe",
         recipe = "sp-stainless-steel"
       },
       {
         type = "unlock-recipe",
         recipe = "sp-stainless-steel-gear-wheel"
       },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-chromium-plate"
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-crushed-chromite-smelting"
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-crushing-chromite"
-      }
     },
     prerequisites = {
-      "logistic-science-pack",
-      "sp-nickel-and-cobalt"
+      "advanced-material-processing"
     },
     unit =
     {

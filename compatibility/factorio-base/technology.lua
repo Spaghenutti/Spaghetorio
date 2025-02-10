@@ -118,8 +118,7 @@ data.raw.technology["oil-processing"].unit = {
   ingredients = {
     {"automation-science-pack", 1},
     {"logistic-science-pack", 1},
-    {"sp-material-science-pack-1", 1},
-    {"sp-geological-science-pack-1", 1}
+    {"sp-material-science-pack-1", 1}
   },
   time = 30
 }
@@ -361,12 +360,11 @@ data.raw.technology["steel-processing"].unit = {
 }
 
 table.insert(data.raw.technology["oil-gathering"].prerequisites, "sp-stainless-steel-processing")
-data.raw.technology["oil-processing"].unit = {
+data.raw.technology["oil-gathering"].unit = {
   count = 50,
   ingredients = {
     {"automation-science-pack", 1},
     {"logistic-science-pack", 1},
-    {"sp-geological-science-pack-1", 1},
     {"sp-material-science-pack-1", 1}
   },
   time = 30
