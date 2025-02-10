@@ -1248,11 +1248,11 @@ data:extend({
 --     effects = {
 --       {
 --         type = "unlock-recipe",
---         recipe = "sp-kr-fluid-storage-1",
+--         recipe = "sp-medium-storage-tank",
 --       },
 --       {
 --         type = "unlock-recipe",
---         recipe = "sp-kr-fluid-storage-2",
+--         recipe = "sp-large-storage-tank",
 --       },
 --     },
 --     prerequisites = { "sp-kr-steel-fluid-handling" },

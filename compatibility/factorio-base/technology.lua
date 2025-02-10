@@ -360,6 +360,7 @@ data.raw.technology["steel-processing"].unit = {
 }
 
 table.insert(data.raw.technology["oil-gathering"].prerequisites, "sp-stainless-steel-processing")
+table.insert(data.raw.technology["oil-gathering"].effects, {type = "unlock-recipe", recipe = "sp-flange"})
 data.raw.technology["oil-gathering"].unit = {
   count = 50,
   ingredients = {
@@ -370,14 +371,13 @@ data.raw.technology["oil-gathering"].unit = {
   time = 30
 }
 
-table.insert(data.raw.technology["oil-processing"].effects, {type = "unlock-recipe", recipe = "sp-flange"})
 data.raw.technology["oil-processing"].research_trigger = nil
+-- TODO: remove chemical plant; write function for remove effect
 data.raw.technology["oil-processing"].unit = {
   count = 100,
   ingredients = {
     {"automation-science-pack", 1},
     {"logistic-science-pack", 1},
-    {"sp-geological-science-pack-1", 1},
     {"sp-material-science-pack-1", 1}
   },
   time = 30

@@ -4500,12 +4500,12 @@ data:extend({
     name = "sp-stainless-steel-gear-wheel",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
-    energy_required = 4,
+    energy_required = 1,
     ingredients = {
-      {type = "item", name = "sp-stainless-steel", amount = 2}
+      {type = "item", name = "sp-stainless-steel", amount = 1}
     },
     results = {
-      {type = "item", name = "sp-stainless-steel-gear-wheel", amount = 2}
+      {type = "item", name = "sp-stainless-steel-gear-wheel", amount = 1}
     }
   },
   {
@@ -8165,6 +8165,44 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-kr-stabilizer-charging-station", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-medium-storage-tank",  -- #ForRegEx# - recipe
+    icon_size = 64,
+    mip_maps = 4,
+    category = "crafting",
+    energy_required = 6,
+    enabled = false,
+    ingredients = {
+      {type = "item", name = "sp-bolts", amount = 8},
+      {type = "item", name = "sp-stainless-steel", amount = 10},
+      {type = "item", name = "sp-brass", amount = 4},
+      {type = "item", name = "sp-valve", amount = 4},
+      {type = "item", name = "sp-flange", amount = 4}
+    },
+    results = {
+      {type = "item", name = "sp-medium-storage-tank", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-large-storage-tank",  -- #ForRegEx# - recipe
+    icon_size = 64,
+    mip_maps = 4,
+    category = "crafting",
+    energy_required = 20,
+    enabled = false,
+    ingredients = {
+      {type = "item", name = "sp-bolts", amount = 30},
+      {type = "item", name = "sp-stainless-steel", amount = 40},
+      {type = "item", name = "sp-brass", amount = 16},
+      {type = "item", name = "sp-valve", amount = 12},
+      {type = "item", name = "sp-flange", amount = 12}
+    },
+    results = {
+      {type = "item", name = "sp-large-storage-tank", amount = 1}
     }
   },
   -- {

@@ -6941,6 +6941,35 @@ data:extend({
   },
   {
     type = "technology",
+    name = "sp-bigger-fluid-tanks",
+    icon = "__Spaghetorio__/graphics/krastorio/technologies/steel-fluid-tanks.png",
+    icon_size = 256,
+    icon_mipmaps = 4,
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-medium-storage-tank",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-large-storage-tank",
+      },
+    },
+    prerequisites = {"sp-brass"},
+    unit = {
+      count = 100,
+      ingredients = {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"sp-material-science-pack-1", 1},
+        {"sp-geological-science-pack-1", 1}
+      },
+      time = 30,
+    },
+  },
+  {
+    type = "technology",
     name = "sp-kr-gas-power-station",  -- #ForRegEx# - technology
     icon = "__Spaghetorio__/graphics/krastorio/technologies/gas-power-station.png",
     icon_size = 256,

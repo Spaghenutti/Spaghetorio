@@ -1407,7 +1407,7 @@ util.recipe.change_recipe_ingredients("assembling-machine-3",
 -- AAI {type = "item", name = "engine-unit", amount = 5}
 util.recipe.change_recipe_ingredients("pumpjack",
   {
-    {type = "item", name = "sp-steel-beam", amount = 24},
+    {type = "item", name = "sp-stainless-steel", amount = 24},
     {type = "item", name = "pipe", amount = 20},
     {type = "item", name = "stone-brick", amount = 12},
     {type = "item", name = "sp-valve", amount = 8},

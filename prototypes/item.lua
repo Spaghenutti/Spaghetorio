@@ -6204,25 +6204,25 @@ data:extend({
   -- },
   -- {
   --   type = "item",
-  --   name = "sp-kr-fluid-storage-1",  -- #ForRegEx# - building
+  --   name = "sp-medium-storage-tank",  -- #ForRegEx# - building
   --   icon = "__Spaghetorio__/graphics/krastorio/icons/entities/fluid-storages/fluid-storage-1.png",
   --   stack_size = 50,
   --   icon_size = 64,
   --   icon_mipmaps = 4,
   --   subgroup = "storage",
   --   order = "b[fluid]-bb2[storage-tank-2]",
-  --   place_result = "sp-kr-fluid-storage-1",
+  --   place_result = "sp-medium-storage-tank",
   -- },
   -- {
   --   type = "item",
-  --   name = "sp-kr-fluid-storage-2",  -- #ForRegEx# - building
+  --   name = "sp-large-storage-tank",  -- #ForRegEx# - building
   --   icon = "__Spaghetorio__/graphics/krastorio/icons/entities/fluid-storages/fluid-storage-2.png",
   --   stack_size = 50,
   --   icon_size = 64,
   --   icon_mipmaps = 4,
   --   subgroup = "storage",
   --   order = "b[fluid]-c[storage-tank-3]",
-  --   place_result = "sp-kr-fluid-storage-2",
+  --   place_result = "sp-large-storage-tank",
   -- },
   -- -- Extractioin machine
   -- {
@@ -6396,6 +6396,29 @@ data:extend({
   --   place_result = "sp-kr-planetary-teleporter",
   --   stack_size = 50,
   -- },
+  -- MARK: Fluid storage tanks
+  {
+    type = "item",
+    name = "sp-medium-storage-tank",
+    icon = "__Spaghetorio__/graphics/krastorio/icons/entities/fluid-storages/fluid-storage-1.png",
+    stack_size = 50,
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "storage",
+    order = "b[fluid]-bb2[storage-tank-2]",
+    place_result = "sp-medium-storage-tank",
+  },
+  {
+    type = "item",
+    name = "sp-large-storage-tank",
+    icon = "__Spaghetorio__/graphics/krastorio/icons/entities/fluid-storages/fluid-storage-2.png",
+    stack_size = 50,
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "storage",
+    order = "b[fluid]-c[storage-tank-3]",
+    place_result = "sp-large-storage-tank",
+  },
   -- MARK: Tramsport belt
   {
     type = "item",
