@@ -112,3 +112,9 @@ require("compatibility.space-age.order")
 require("compatibility.space-age.recipe")
 require("compatibility.space-age.resource")
 require("compatibility.space-age.technology")
+
+-- aai-containers
+if mods["aai-containers"] then
+  require("compatibility.aai-containers.recipe")
+  require("compatibility.aai-containers.technology")
+end
