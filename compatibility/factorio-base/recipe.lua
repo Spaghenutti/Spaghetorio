@@ -334,6 +334,20 @@ util.recipe.change_recipe_ingredients("flying-robot-frame",
     {type = "item", name = "sp-composites", amount = 2}
   },
   3)
+--------------------------------------------------------------------------------
+-- MARK: Fluids
+--------------------------------------------------------------------------------
+util.recipe.change_recipe_ingredients("sulfuric-acid",
+  {
+    {type = "item", name = "sulfur", amount = 4},
+    {type = "item", name = "iron-plate", amount = 1},
+    {type = "fluid", name = "sp-oxygen", amount = 20},
+    {type = "fluid", name = "water", amount = 80}
+  },
+  8)
+data.raw.recipe["sulfuric-acid"].results = {
+  {type = "fluid", name = "sulfuric-acid", amount = 40}
+}
 
 --------------------------------------------------------------------------------
 -- MARK: Logistics

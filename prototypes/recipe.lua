@@ -3135,6 +3135,8 @@ data:extend({
   {
     type = "recipe",
     name = "sp-wood-fuel-from-arsenic-trioxide",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/wood-fuel.png", 64,
+                                         "__Spaghetorio__/graphics/icons/arsenic-trioxide.png", 64),
     category = "chemistry",
     enabled = false,
     energy_required = 1.5,
@@ -5954,7 +5956,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-geological-science-pack-1",  -- #ForRegEx# - recipe
-    category = "crafting-with-fluid",
+    category = "sp-kr-fluid-filtration",
     enabled = false,
     energy_required = 24,
     ingredients =
