@@ -1650,8 +1650,57 @@ data.raw.recipe["logistic-science-pack"].results = {
     {type = "item", name = "logistic-science-pack", amount = 5}
   }
 
-data.raw.recipe["automation-science-pack"].results = {
-    {type = "item", name = "automation-science-pack", amount = 5}
+data.raw.recipe["chemical-science-pack"].category = "chemistry"
+util.recipe.change_recipe_ingredients("chemical-science-pack",
+  {
+    {type = "item", name = "carbon", amount = 5},
+    {type = "item", name = "plastic-bar", amount = 5},
+    {type = "fluid", name = "sulfuric-acid", amount = 30},
+    {type = "fluid", name = "sp-chlorine", amount = 20},
+    {type = "item", name = "sp-blank-tech-card", amount = 5}
+  },
+  20)
+data.raw.recipe["chemical-science-pack"].results = {
+    {type = "item", name = "chemical-science-pack", amount = 5}
+  }
+
+util.recipe.change_recipe_ingredients("military-science-pack",
+  {
+    {type = "item", name = "shotgun", amount = 1},
+    {type = "item", name = "firearm-magazine", amount = 1},
+    {type = "item", name = "stone-wall", amount = 5},
+    {type = "item", name = "grenade", amount = 3},
+    {type = "item", name = "sp-blank-tech-card", amount = 5}
+  },
+  20)
+data.raw.recipe["military-science-pack"].results = {
+    {type = "item", name = "military-science-pack", amount = 5}
+  }
+
+util.recipe.change_recipe_ingredients("production-science-pack",
+  {
+    {type = "item", name = "sp-filter", amount = 5},
+    {type = "item", name = "sp-actuator", amount = 5},
+    {type = "item", name = "pump", amount = 2},
+    {type = "item", name = "sp-relay", amount = 5},
+    {type = "item", name = "sp-blank-tech-card", amount = 5}
+  },
+  20)
+data.raw.recipe["production-science-pack"].results = {
+    {type = "item", name = "production-science-pack", amount = 5}
+  }
+
+util.recipe.change_recipe_ingredients("utility-science-pack",
+  {
+    -- {type = "item", name = "electric-furnace", amount = 1},
+    -- {type = "item", name = "kr-electric-mining-drill-mk2", amount = 1},
+    -- {type = "item", name = "assembling-machine-2", amount = 1},
+    -- {type = "item", name = "kr-research-server", amount = 1},
+    {type = "item", name = "sp-blank-tech-card", amount = 5}
+  },
+  20)
+data.raw.recipe["utility-science-pack"].results = {
+    {type = "item", name = "utility-science-pack", amount = 5}
   }
 
 util.recipe.change_recipe_ingredients("space-science-pack",

@@ -85,16 +85,7 @@ data.raw.technology["bulk-inserter"].unit.ingredients = {
   {"utility-science-pack", 1}
 }
 
-data.raw.technology["chemical-science-pack"].prerequisites = {
-  "plastics",
-  "sulfur-processing"
-}
-data.raw.technology["chemical-science-pack"].unit.ingredients = {
-  {"automation-science-pack", 1},
-  {"logistic-science-pack", 1},
-  {"sp-material-science-pack-1", 1},
-  {"sp-geological-science-pack-1", 1}
-}
+
 
 data.raw.technology["circuit-network"].prerequisites = {
   "sp-aluminum-processing",
@@ -130,6 +121,7 @@ data.raw.technology["plastics"].unit.ingredients = {
   {"sp-geological-science-pack-1", 1}
 }
 
+table.insert(data.raw.technology["sulfur-processing"].prerequisites, "sp-geological-science-pack-1")
 data.raw.technology["sulfur-processing"].unit.ingredients = {
   {"automation-science-pack", 1},
   {"logistic-science-pack", 1},
@@ -386,7 +378,6 @@ data.raw.technology["oil-processing"].unit = {
 data.raw.technology["plastics"].unit.ingredients = {
   {"automation-science-pack", 1},
   {"logistic-science-pack", 1},
-  {"sp-geological-science-pack-1", 1},
   {"sp-material-science-pack-1", 1}
 }
 
@@ -2090,6 +2081,16 @@ data.raw.technology["production-science-pack"].unit.ingredients = {
 }
 
 data.raw.technology["chemical-science-pack"].icon = "__Spaghetorio__/graphics/krastorio/technologies/chemical-tech-card.png"
+data.raw.technology["chemical-science-pack"].prerequisites = {
+  "plastics",
+  "sulfur-processing"
+}
+data.raw.technology["chemical-science-pack"].unit.ingredients = {
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"sp-material-science-pack-1", 1},
+  {"sp-geological-science-pack-1", 1}
+}
 
 data.raw.technology["utility-science-pack"].icon = "__Spaghetorio__/graphics/hr-icons/utility-science-pack-2.png"
 data.raw.technology["utility-science-pack"].prerequisites = {
