@@ -218,7 +218,6 @@ data.raw.technology["railway"].unit.ingredients = {
   -- basic-tech-card are also present, not checked why that is...
   {"automation-science-pack", 1},
   {"logistic-science-pack", 1},
-  {"sp-electronic-science-pack-1", 1},
   {"sp-material-science-pack-1", 1},
   {"sp-geological-science-pack-1", 1}
 }

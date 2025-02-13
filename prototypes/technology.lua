@@ -385,10 +385,6 @@ data:extend({
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-crushing-cobalt-ore"
-      },
-      {
-        type = "unlock-recipe",
         recipe = "sp-crushing-chromite"
       },
       {
@@ -422,14 +418,6 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "sp-crushed-nickel-smelting"
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-crushed-cobalt-smelting"
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-wood-fuel-from-arsenic-trioxide"
       },
     },
     prerequisites = {
@@ -971,6 +959,18 @@ data:extend({
         type = "unlock-recipe",
         recipe = "sp-cobalt-billet"
       },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-crushing-cobalt-ore"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-crushed-cobalt-smelting"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-wood-fuel-from-arsenic-trioxide"
+      },
     },
     prerequisites = {
       "chemical-science-pack",
@@ -1043,8 +1043,7 @@ data:extend({
       }
     },
     prerequisites = {
-      "advanced-material-processing",
-      "sp-geological-science-pack-1"
+      "production-science-pack"
     },
     unit =
     {
@@ -1077,8 +1076,7 @@ data:extend({
       }
     },
     prerequisites = {
-      "advanced-material-processing",
-      "sp-geological-science-pack-1"
+      "production-science-pack"
     },
     unit =
     {
@@ -1111,8 +1109,7 @@ data:extend({
       }
     },
     prerequisites = {
-      "advanced-material-processing",
-      "sp-geological-science-pack-1"
+      "production-science-pack"
     },
     unit =
     {
@@ -1154,8 +1151,7 @@ data:extend({
       }
     },
     prerequisites = {
-      "advanced-material-processing",
-      "sp-geological-science-pack-1"
+      "production-science-pack"
     },
     unit =
     {
@@ -1482,7 +1478,7 @@ data:extend({
       },
     },
     prerequisites = {
-      "oil-processing"
+      "production-science-pack"
     },
     unit =
     {
@@ -1510,7 +1506,7 @@ data:extend({
         recipe = "sp-filter"
       }
     },
-    prerequisites = {"chemical-science-pack"},
+    prerequisites = {"sp-brass"},
     unit =
     {
       count = 100,

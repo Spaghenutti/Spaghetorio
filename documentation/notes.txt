@@ -1,10 +1,18 @@
 
-calcium
-fluorine
-fluorspar
+Order of processing ores:
+  - iron
+  - copper
+  - stone
+  - coal
+  - tinstone
+  - aluminum
+  - nickel
+  - oil
 
-T0 buildings
-  - 
+  - zinc (chlorine)
+  - cobalt (sulfamate)
+  - iodine
+  - calcite (sulfuric acid)
 
 Krastorio rare-metal items:
   - "raw-rare-metals"

@@ -4937,11 +4937,12 @@ data:extend({
     enabled = false,
     energy_required = 3.2,
     ingredients = {
-      {type = "item", name = "plastic-bar", amount = 2},
-      {type = "item", name = "sp-stainless-steel", amount = 1}
+      {type = "item", name = "plastic-bar", amount = 5},
+      {type = "item", name = "sp-stainless-steel", amount = 2},
+      {type = "item", name = "sp-brass", amount = 1}
     },
     results = {
-      {type = "item", name = "sp-filter", amount = 1}
+      {type = "item", name = "sp-filter", amount = 2}
     }
   },
   {
