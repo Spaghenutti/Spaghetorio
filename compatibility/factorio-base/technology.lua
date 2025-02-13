@@ -521,21 +521,6 @@ data.raw.technology["fast-inserter"].unit.ingredients = {
   {"chemical-science-pack", 1}
 }
 
-data.raw.technology["stack-inserter"].prerequisites = {
-  "sp-advanced-gearbox",
-  "sp-control-unit"
-}
-data.raw.technology["stack-inserter"].unit.ingredients = {
-  {"sp-automation-science-pack-2", 1},
-  {"sp-logistic-science-pack-2", 1},
-  {"sp-chemical-science-pack-2", 1},
-  {"sp-material-science-pack-2", 1},
-  {"production-science-pack", 1},
-  {"sp-geological-science-pack-2", 1},
-  {"sp-electronic-science-pack-2", 1},
-  {"utility-science-pack", 1}
-}
-
 data.raw.technology["laser"].effects = {
   {
     type = "unlock-recipe",
