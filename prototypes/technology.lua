@@ -7392,6 +7392,43 @@ data:extend({
       time = 60,
     },
   },
+  {
+    type = "technology",
+    name = "sp-kr-superior-inserters",
+    icon = "__Spaghetorio__/graphics/krastorio/technologies/superior-inserters.png",
+    icon_size = 256,
+    icon_mipmaps = 4,
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-kr-superior-inserter",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-kr-superior-long-inserter",
+      }
+    },
+    prerequisites = {"sp-frictionless-joint"},
+    unit = {
+      count = 500,
+      ingredients = {
+        {"sp-automation-science-pack-3", 1},
+        {"sp-logistic-science-pack-3", 1},
+        {"sp-chemical-science-pack-3", 1},
+        {"sp-electronic-science-pack-3", 1},
+        {"sp-geological-science-pack-3", 1},
+        {"sp-material-science-pack-3", 1},
+        {"sp-computer-science-pack-3", 1},
+        {"sp-production-science-pack-3", 1},
+        {"sp-nuclear-science-pack-3", 1},
+        {"sp-space-science-pack-3", 1},
+        {"sp-utility-science-pack-3", 1},
+        {"sp-matter-science-pack", 1},
+        {"sp-advanced-science-pack", 1}
+      },
+      time = 45,
+    },
+  },
   ------------------------------------------------------------------------------
   -- MARK: Science packs
   ------------------------------------------------------------------------------
@@ -8196,7 +8233,8 @@ data:extend({
   {
     type = "technology",
     name = "sp-worker-robots-storage-4",  -- #ForRegEx# - infinite-technology
-    icon_size = 256, icon_mipmaps = 4,
+    icon_size = 256,
+    icon_mipmaps = 4,
     icons =
     {
       {
@@ -8250,7 +8288,8 @@ data:extend({
   {
     type = "technology",
     name = "sp-worker-robots-storage-6",  -- #ForRegEx# - infinite-technology
-    icon_size = 256, icon_mipmaps = 4,
+    icon_size = 256,
+    icon_mipmaps = 4,
     icons =
     {
       {
@@ -8305,7 +8344,8 @@ data:extend({
   {
     type = "technology",
     name = "sp-toolbelt-2",  -- #ForRegEx# - infinite-technology
-    icon_size = 256, icon_mipmaps = 4,
+    icon_size = 256,
+    icon_mipmaps = 4,
     icons =
     {
       {
@@ -8350,7 +8390,8 @@ data:extend({
   {
     type = "technology",
     name = "sp-toolbelt-3",  -- #ForRegEx# - infinite-technology
-    icon_size = 256, icon_mipmaps = 4,
+    icon_size = 256,
+    icon_mipmaps = 4,
     icons =
     {
       {
@@ -8394,7 +8435,8 @@ data:extend({
   {
     type = "technology",
     name = "sp-toolbelt-4",  -- #ForRegEx# - infinite-technology
-    icon_size = 256, icon_mipmaps = 4,
+    icon_size = 256,
+    icon_mipmaps = 4,
     icons =
     {
       {
@@ -8438,7 +8480,8 @@ data:extend({
   {
     type = "technology",
     name = "sp-toolbelt-5",  -- #ForRegEx# - infinite-technology
-    icon_size = 256, icon_mipmaps = 4,
+    icon_size = 256,
+    icon_mipmaps = 4,
     icons =
     {
       {
@@ -8483,7 +8526,8 @@ data:extend({
   {
     type = "technology",
     name = "sp-toolbelt-6",  -- #ForRegEx# - infinite-technology
-    icon_size = 256, icon_mipmaps = 4,
+    icon_size = 256,
+    icon_mipmaps = 4,
     icons =
     {
       {
@@ -8527,7 +8571,8 @@ data:extend({
   {
     type = "technology",
     name = "sp-toolbelt-7",  -- #ForRegEx# - infinite-technology
-    icon_size = 256, icon_mipmaps = 4,
+    icon_size = 256,
+    icon_mipmaps = 4,
     icons =
     {
       {
@@ -8620,7 +8665,8 @@ data:extend({
   {
     type = "technology",
     name = "sp-inserter-capacity-bonus-8",  -- #ForRegEx# - infinite-technology
-    icon_size = 256, icon_mipmaps = 4,
+    icon_size = 256,
+    icon_mipmaps = 4,
     icons =
     {
       {
@@ -8677,7 +8723,8 @@ data:extend({
   {
     type = "technology",
     name = "sp-inserter-capacity-bonus-11",  -- #ForRegEx# - infinite-technology
-    icon_size = 256, icon_mipmaps = 4,
+    icon_size = 256,
+    icon_mipmaps = 4,
     icons =
     {
       {
@@ -8736,7 +8783,8 @@ data:extend({
   {
     type = "technology",
     name = "sp-braking-force-8",  -- #ForRegEx# - infinite-technology
-    icon_size = 256, icon_mipmaps = 4,
+    icon_size = 256,
+    icon_mipmaps = 4,
     icons =
     {
       {
@@ -8791,7 +8839,8 @@ data:extend({
   {
     type = "technology",
     name = "sp-research-speed-7",  -- #ForRegEx# - infinite-technology
-    icon_size = 256, icon_mipmaps = 4,
+    icon_size = 256,
+    icon_mipmaps = 4,
     icons =
     {
       {
@@ -8842,6 +8891,89 @@ data:extend({
     max_level = "infinite",
     upgrade = true,
     order = "c-m-d"
+  },
+  {
+    type = "technology",
+    name = "transport-belt-capacity-3",
+    localised_description = {"technology-description.belt-capacity"},
+    icons = core_util.technology_icon_constant_stack_size("__space-age__/graphics/technology/transport-belt-capacity.png"),
+    effects =
+    {
+      {
+        type = "belt-stack-size-bonus",
+        modifier = 1
+      },
+      {
+        type = "inserter-stack-size-bonus",
+        modifier = 2
+      }
+    },
+    prerequisites = {"sp-kr-superior-inserters"},
+    unit =
+    {
+      count = 10000,
+      ingredients =
+      {
+        {"sp-automation-science-pack-3", 1},
+        {"sp-logistic-science-pack-3", 1},
+        {"sp-chemical-science-pack-3", 1},
+        {"sp-electronic-science-pack-3", 1},
+        {"sp-geological-science-pack-3", 1},
+        {"sp-material-science-pack-3", 1},
+        {"sp-computer-science-pack-3", 1},
+        {"sp-production-science-pack-3", 1},
+        {"sp-nuclear-science-pack-3", 1},
+        {"sp-space-science-pack-3", 1},
+        {"sp-utility-science-pack-3", 1},
+        {"sp-matter-science-pack", 1},
+        {"sp-advanced-science-pack", 1}
+      },
+      time = 60
+    },
+    upgrade = true
+  },
+  {
+    type = "technology",
+    name = "transport-belt-capacity-4",
+    localised_description = {"technology-description.belt-capacity"},
+    icons = core_util.technology_icon_constant_stack_size("__space-age__/graphics/technology/transport-belt-capacity.png"),
+    effects =
+    {
+      {
+        type = "belt-stack-size-bonus",
+        modifier = 1
+      },
+      {
+        type = "inserter-stack-size-bonus",
+        modifier = 2
+      }
+    },
+    prerequisites = {
+      "transport-belt-capacity-3",
+      "sp-inserter-capacity-bonus-11"
+    },
+    unit =
+    {
+      count = 40000,
+      ingredients =
+      {
+        {"sp-automation-science-pack-3", 1},
+        {"sp-logistic-science-pack-3", 1},
+        {"sp-chemical-science-pack-3", 1},
+        {"sp-electronic-science-pack-3", 1},
+        {"sp-geological-science-pack-3", 1},
+        {"sp-material-science-pack-3", 1},
+        {"sp-computer-science-pack-3", 1},
+        {"sp-production-science-pack-3", 1},
+        {"sp-nuclear-science-pack-3", 1},
+        {"sp-space-science-pack-3", 1},
+        {"sp-utility-science-pack-3", 1},
+        {"space-science-pack", 1},
+        {"sp-uniformity-science-pack", 1},
+      },
+      time = 60
+    },
+    upgrade = true
   },
   ------------------------------------------------------------------------------
   --- MARK: Recipes without technology

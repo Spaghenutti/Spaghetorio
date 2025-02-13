@@ -90,6 +90,7 @@ require("prototypes.recipe")
 -- require("prototypes.rocket-silo")
 require("prototypes.technology")
 -- require("prototypes.krastorio-technologies")
+require("prototypes.utility-constants")
 
 -- MARK: Compatibility
 -- EverythingOnNauvis

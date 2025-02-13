@@ -17,7 +17,8 @@ data:extend({
     grab_less_to_match_belt_stack = true,
     wait_for_full_hand = true,
     enter_drop_mode_if_held_stack_spoiled = true,
-    max_belt_stack_size = 6,
+    -- Stacks are not drawn over 4 items on belt
+    max_belt_stack_size = 6,  -- This only works if data.raw["utility-constants"].default.max_belt_stack_size and inserter_hand_stack_max_sprites are set to same value in utility-constants.lua
     minable = { mining_time = 0.1, result = "sp-kr-superior-inserter" },
     max_health = 200,
     corpse = "sp-kr-superior-inserter-remnants",
@@ -112,7 +113,8 @@ data:extend({
     grab_less_to_match_belt_stack = true,
     wait_for_full_hand = true,
     enter_drop_mode_if_held_stack_spoiled = true,
-    max_belt_stack_size = 6,
+    -- Stacks are not drawn over 4 items on belt
+    max_belt_stack_size = 6,  -- This only works if data.raw["utility-constants"].default.max_belt_stack_size and inserter_hand_stack_max_sprites are set to same value in utility-constants.lua
     minable = { mining_time = 0.1, result = "sp-kr-superior-long-inserter" },
     max_health = 200,
     corpse = "sp-kr-superior-inserter-remnants",
