@@ -349,7 +349,6 @@ data:extend({
         {"automation-science-pack", 1},
         {"logistic-science-pack", 1},
         {"chemical-science-pack", 1},
-        {"sp-electronic-science-pack-1", 1},
         {"sp-material-science-pack-1", 1}
       },
       time = 30
@@ -973,7 +972,7 @@ data:extend({
       },
     },
     prerequisites = {
-      "chemical-science-pack",
+      "sp-phosphorus-processing",
     },
     unit =
     {
@@ -1831,13 +1830,17 @@ data:extend({
         type = "unlock-recipe",
         recipe = "sp-transistor"
       },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-vacuum-tube"
+      },
     },
     prerequisites = {
-      "sp-phosphorus-processing"
+      "sp-silicon-processing"
     },
     unit =
     {
-      count = 100,
+      count = 200,
       ingredients = {
         {"automation-science-pack", 1},
         {"logistic-science-pack", 1},
@@ -3102,8 +3105,9 @@ data:extend({
       ingredients = {
         {"automation-science-pack", 1},
         {"logistic-science-pack", 1},
+        {"chemical-science-pack", 1},
         {"sp-material-science-pack-1", 1},
-        {"sp-electronic-science-pack-1", 1},
+        {"sp-geological-science-pack-1", 1},
       },
       time = 30,
     },
@@ -3129,7 +3133,7 @@ data:extend({
       },
     },
     prerequisites = {
-      "sp-sodium-hydroxide"
+      "sp-sodium-hydroxide",
     },
     order = "c-a",
     unit = {
@@ -3137,8 +3141,9 @@ data:extend({
       ingredients = {
         {"automation-science-pack", 1},
         {"logistic-science-pack", 1},
+        {"chemical-science-pack", 1},
         {"sp-material-science-pack-1", 1},
-        {"sp-electronic-science-pack-1", 1},
+        {"sp-geological-science-pack-1", 1},
       },
       time = 30,
     },
@@ -3198,7 +3203,6 @@ data:extend({
         {"automation-science-pack", 1},
         {"logistic-science-pack", 1},
         {"chemical-science-pack", 1},
-        {"sp-electronic-science-pack-1", 1},
         {"sp-material-science-pack-1", 1}
       },
       time = 30
@@ -3236,7 +3240,6 @@ data:extend({
         {"automation-science-pack", 1},
         {"logistic-science-pack", 1},
         {"chemical-science-pack", 1},
-        {"sp-electronic-science-pack-1", 1},
         {"sp-material-science-pack-1", 1},
         {"sp-geological-science-pack-1", 1}
       },
@@ -4371,7 +4374,8 @@ data:extend({
       },
     },
     prerequisites = {
-      "advanced-circuit"
+      "advanced-circuit",
+      "lubricant"
     },
     unit =
     {
@@ -4555,7 +4559,10 @@ data:extend({
         recipe = "sp-insulated-wire-from-aluminum"
       },
     },
-    prerequisites = {"sp-rubber"},
+    prerequisites = {
+      "sp-rubber",
+      "sp-electronic-science-pack-1"
+    },
     unit =
     {
       count = 100,
@@ -4564,8 +4571,7 @@ data:extend({
         {"logistic-science-pack", 1},
         {"chemical-science-pack", 1},
         {"sp-electronic-science-pack-1", 1},
-        {"sp-material-science-pack-1", 1},
-        {"sp-geological-science-pack-1", 1}
+        {"sp-material-science-pack-1", 1}
       },
       time = 30
     },
@@ -7445,7 +7451,9 @@ data:extend({
         recipe = "sp-electronic-science-pack-1"
       },
     },
-    prerequisites = {"sp-electronic-components"},
+    prerequisites = {
+      "sp-electronic-components"
+    },
     unit =
     {
       count = 100,
@@ -8368,7 +8376,7 @@ data:extend({
     },
     prerequisites = {
       "chemical-science-pack",
-      "sp-geological-science-pack-1"
+      "sp-electronic-science-pack-1"
     },
     unit =
     {

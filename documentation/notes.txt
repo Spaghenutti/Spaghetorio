@@ -14,6 +14,9 @@ Order of processing ores:
   - iodine
   - calcite (sulfuric acid)
 
+  - barium
+
+
 Krastorio rare-metal items:
   - "raw-rare-metals"
   - "enriched-rare-metals"

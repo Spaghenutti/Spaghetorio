@@ -3496,9 +3496,9 @@ data:extend({
     enabled = false,
     energy_required = 1.5,
     ingredients = {
-      {type = "item", name = "sp-sand", amount = 3},
-      {type = "fluid", name = "sp-phosphoric-acid", amount = 5},
-      {type = "fluid", name = "water", amount = 10}
+      {type = "item", name = "calcite", amount = 1},
+      {type = "fluid", name = "sp-phosphoric-acid", amount = 3},
+      {type = "fluid", name = "water", amount = 5}
     },
     results = {
       {type = "item", name = "sp-calcium-carbonate", amount = 1}
@@ -12042,12 +12042,12 @@ data:extend({
   {
     type = "recipe",
     name = "sp-sodium-and-chlorine",  -- #ForRegEx# - recipe
-    -- Update icons here, search: "-- Add acion changes here"
+    -- Update icons here, search: "-- Add aicon changes here"
     icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/icons/sodium.png", 64, nil,
                                         "__Spaghetorio__/graphics/krastorio/icons/fluids/chlorine.png", 64, nil),
     icon_size = 256,
     scale = 0.25,
-    category = "chemistry",
+    category = "sp-kr-electrolysis",
     subgroup = "processed-resource",
     enabled = false,
     energy_required = 5,
@@ -12377,7 +12377,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-sodium-hydroxide-from-salt",  -- #ForRegEx# - recipe
-    -- Update icons here, search: "-- Add acion changes here"
+    -- Update icons here, search: "-- Add aicon changes here"
     icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/icons/sodium-hydroxide.png", 64, nil,
                                         "__Spaghetorio__/graphics/krastorio/icons/fluids/chlorine.png", 64, nil),
     icon_size = 64,

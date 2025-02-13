@@ -41,6 +41,13 @@ end
 
 --------------------------------------------------------------------------------
 
+Researcb spaghetorio early tech tree
+
+/c local start_technologies = {"sp-copper-extruding", "sp-iron-extruding", "sp-tin-processing", "automation", "automation-science-pack", "electric-engine", "electronics", "gun-turret", "steam-power", "sp-crusher", "sp-glass", "sp-iron-machining", "steel-axe"}
+for i, start_technology in pairs(start_technologies) do for name, technology in pairs(game.player.force.technologies) do if (name == start_technology) then technology.researched=true end end end
+
+--------------------------------------------------------------------------------
+
 Take screenshot:
 
 /screenshot

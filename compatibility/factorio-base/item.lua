@@ -1,3 +1,9 @@
+
+local util = require("data-util")
+
+
+util.icon.change_fluid_icon("petroleum-gas", "__Spaghetorio__/graphics/icons/petroleum-gas.png", 64, nil)
+
 -- MARK: Science pack
 data.raw.tool["automation-science-pack"].icon = "__Spaghetorio__/graphics/krastorio/icons/cards/automation-tech-card.png"
 data.raw.tool["automation-science-pack"].pictures = {

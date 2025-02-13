@@ -155,6 +155,7 @@ util.recipe.change_recipe_ingredients("steel-plate",
 
 util.recipe.change_recipe_ingredients("battery",
   {
+    {type = "item", name = "sp-cobalt-billet", amount = 1},
     {type = "item", name = "iron-plate", amount = 1},
     {type = "item", name = "sp-salt", amount = 2},
     {type = "item", name = "sp-insulated-wire", amount = 2},
@@ -347,6 +348,16 @@ util.recipe.change_recipe_ingredients("sulfuric-acid",
   8)
 data.raw.recipe["sulfuric-acid"].results = {
   {type = "fluid", name = "sulfuric-acid", amount = 40}
+}
+
+util.recipe.change_recipe_ingredients("lubricant",
+  {
+    {type = "item", name = "sp-sodium", amount = 1},
+    {type = "fluid", name = "heavy-oil", amount = 100},
+  },
+  10)
+data.raw.recipe["lubricant"].results = {
+  {type = "fluid", name = "lubricant", amount = 100}
 }
 
 --------------------------------------------------------------------------------
@@ -763,6 +774,17 @@ util.recipe.change_recipe_ingredients("programmable-speaker",
     {type = "item", name = "sp-aluminum-frame", amount = 2}
   },
   2)
+
+util.recipe.change_recipe_ingredients("display-panel",
+  {
+    {type = "item", name = "sp-insulated-wire", amount = 5},
+    {type = "item", name = "electronic-circuit", amount = 2},
+    {type = "item", name = "sp-solder", amount = 2},
+    {type = "item", name = "sp-vacuum-tube", amount = 8},
+    {type = "item", name = "sp-glass", amount = 2},
+    {type = "item", name = "sp-anodized-aluminum", amount = 3}
+  },
+  5)
 
 data.raw.recipe["explosives"].category = "crafting-with-fluid"
 util.recipe.change_recipe_ingredients("explosives",

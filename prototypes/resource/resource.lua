@@ -113,7 +113,8 @@ local function fluid_resource(resource_parameters, autoplace_parameters)
           name = resource_parameters.mining_result or "sp-" .. resource_parameters.name,
           amount_min = 10,
           amount_max = 10,
-          probability = 1
+          probability = 1,
+          required_fluid = resource_parameters.required_fluid
         }
       }
     },
@@ -343,6 +344,7 @@ data:extend({
       mining_time = 3.5,
       map_color = {r=0.5, g=1, b=0.6},
       mining_visualisation_tint = {r=0.5, g=1, b=0.6, a=1.0},
+      required_fluid = "sp-sulfamate"
     },
     {
       base_density = 3.5,
@@ -521,6 +523,7 @@ data:extend({
       mining_time = 1,
       map_color = {r=0, g=0.25, b=1},
       mining_visualisation_tint = {r=0, g=0.25, b=1, a=1.0},
+      required_fluid = "sp-chlorine"
     },
     {
       base_density = 2.5,

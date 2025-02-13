@@ -85,6 +85,26 @@ data.raw.recipe["wood-processing"].results = {
   {type = "item", name = "wood", amount = 10},
 }
 
+util.recipe.change_recipe_ingredients("selector-combinator",
+  {
+    {type = "item", name = "sp-insulated-wire", amount = 10},
+    {type = "item", name = "advanced-circuit", amount = 10},
+    {type = "item", name = "sp-solder", amount = 2},
+    {type = "item", name = "sp-vacuum-tube", amount = 8},
+    {type = "item", name = "sp-anodized-aluminum", amount = 3}
+  },
+  5)
+
+util.recipe.change_recipe_ingredients("quality-module",
+  {
+    {type = "item", name = "sp-vacuum-tube", amount = 5},
+    {type = "item", name = "electronic-circuit", amount = 6},
+    {type = "item", name = "sp-solder", amount = 2},
+    {type = "item", name = "sp-insulated-wire", amount = 2},
+    {type = "item", name = "plastic-bar", amount = 1}
+  },
+  15)
+
 --------------------------------------------------------------------------------
 -- MARK: Combat
 --------------------------------------------------------------------------------

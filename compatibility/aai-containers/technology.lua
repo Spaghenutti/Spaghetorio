@@ -1,5 +1,11 @@
 
 data.raw.technology["aai-strongbox-base"].prerequisites = {"sp-stainless-steel-processing"}
+data.raw.technology["aai-strongbox-base"].unit.ingredients = {
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"sp-material-science-pack-1", 1}
+}
+
 data.raw.technology["aai-strongbox-storage"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},
   {"sp-logistic-science-pack-2", 1},
