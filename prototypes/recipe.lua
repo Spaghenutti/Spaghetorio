@@ -1,100 +1,9 @@
 local util = require("data-util")
 
 -- TODO:
---  - add many uses to:
---    - "sp-rubber"
---    - "sp-urea"
---    - "sp-composites"
-
 --  - add uses to:
---    - "sp-methyl-tert-butyl-ether" (fluid)
---    - "sp-sulfamate" (fluid) (already used for mining)
---    - "sp-perchloric-acid" (fluid) (already used for mining)
---    - "sp-laser"
-
---    - "sp-antimony-pillet"
---    - "sp-liquid-sodium"
---    - "sp-stibnite"
---    - "sp-tellurium"
---    - "sp-zircon"
---    - "sp-platinum"
---    - "sp-palladium"
---    - "tungsten-plate"
---    - "sp-niobium-powder"
---    - "sp-niobium-billet"
---    - "sp-lithium-oxide"
---    - "sp-iridium"
---    - "sp-lanthanum"
---    - "sp-gold"
---    - "sp-cobalt-billet"
---    - "sp-chromium-plate"
---    - "sp-lead-slab"
---    - "sp-tantalum-billet"
---    - "sp-zinc-plate"
---    - "sp-zirconia"
---    - "sp-zirconium-rod"
---    - "stone-tablet" (only k2)
-
---    - "sp-brass"
---    - "sp-duralumin"
---    - "sp-niobium-steel"
---    - "sp-niobium-tin"
---    - "sp-carbon-nanotubes"
---    - "sp-graphene"
---    - "sp-diamond"
---    - "sp-titanium-carbide"
---    - "sp-ceramics"
-
---    - "sp-filter"
---    - "sp-glass-fiber"
---    - "sp-heat-resistant-tile"
---    - "sp-heavy-ball-bearing"
---    - "sp-kevlar"
---    - "sp-magnet"
---    - "sp-neodymium-magnet"
---    - "sp-spring"
---    - "sp-antenna-chip"
---    - "sp-capacitor"
---    - "sp-diode"
---    - "sp-cmos" (use optical sensor instead)
---    - "sp-coil"
---    - "sp-electrode"
---    - "sp-infrared-filter"
---    - "sp-integrated-circuit"
---    - "sp-lens"
---    - "sp-mirror"
---    - "sp-processor"
---    - "sp-silver-solder"
---    - "sp-solder"
---    - "sp-resistor"
---    - "sp-transistor"
---    - "sp-actuator"
---    - "sp-catalyst"
---    - "sp-electromagnet"
---    - "sp-gyro"
---    - "sp-heating-filament"
---    - "sp-heatsink"
---    - "sp-high-pressure-tank"
---    - "sp-plate-heat-exchanger"
---    - "sp-transformer"
---    - "sp-steel-wheel"
---    - "sp-cryostat"
---    - "sp-quantum-data-plane"
---    - "sp-spark-plug"
---    - "superconductor"
---    - "sp-deuterium" (fluid)
---    - "sp-ethylene" (fluid)
---    - "sp-ethylene-dichloride" (fluid)
---    - "sp-sodium-hydroxide" (fluid)
---    - "sp-propane" (fluid)
---    - "sp-propylene" (fluid)
---    - "sp-benzene" (fluid)
---    - "sp-styrene" (fluid)
---    - "sp-vinyl-chloride" (fluid)
---    - "sp-relay"
---    - "sp-insulation-sheet"
---    - "sp-train-boige"
---    - "sp-cybernetics"
+--    - cobalt-sulfate
+--    - calcium-carbonate
 
 
 data:extend({
@@ -3473,14 +3382,14 @@ data:extend({
     type = "recipe",
     name = "sp-salt",
     category = "sp-kr-fluid-filtration",
-    energy_required = 10,
+    energy_required = 90,
     enabled = false,
     ingredients = {
-      {type = "fluid", name = "water", amount = 50},
+      {type = "fluid", name = "water", amount = 5000},
       {type = "item", name = "sp-filter", amount = 1},
     },
     results = {
-      {type = "item", name = "sp-salt", amount = 1}
+      {type = "item", name = "sp-salt", amount = 100}
     },
     crafting_machine_tint = {
       primary = {r = 1.000, g = 1.000, b = 1.000, a = 1.000},
@@ -3494,7 +3403,7 @@ data:extend({
     name = "sp-calcium-carbonate",  -- #ForRegEx# - recipe
     category = "sp-kr-fluid-filtration",
     enabled = false,
-    energy_required = 1.5,
+    energy_required = 0.5,
     ingredients = {
       {type = "item", name = "calcite", amount = 1},
       {type = "fluid", name = "sp-phosphoric-acid", amount = 3},
@@ -3509,6 +3418,22 @@ data:extend({
     --   tertiary = {r = 0.2, g = 0.1, b = 0.0, a = 1.000},
     --   quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000}
     -- }
+  },
+  {
+    type = "recipe",
+    name = "sp-cement",  -- #ForRegEx# - recipe
+    category = "sp-kr-fluid-filtration",
+    enabled = false,
+    energy_required = 2,
+    ingredients = {
+      {type = "item", name = "sp-calcium-carbonate", amount = 3},
+      {type = "item", name = "sp-alumina", amount = 1},
+      {type = "item", name = "sp-sand", amount = 10},
+      {type = "fluid", name = "water", amount = 100}
+    },
+    results = {
+      {type = "item", name = "sp-cement", amount = 3}
+    }
   },
   {
     type = "recipe",
@@ -4015,13 +3940,13 @@ data:extend({
       {type = "item", name = "sp-nuclear-waste", amount = 1},
     },
     results = {
-      {type = "item", name = "sp-plutonium-239", probability=0.005, amount = 1},
-      {type = "item", name = "uranium-238", probability=0.015, amount = 1},
-      {type = "item", name = "carbon", probability=0.08, amount = 1},
-      {type = "item", name = "tungsten-ore", probability=0.06, amount = 1},
-      {type = "item", name = "sp-zirconium-ore", probability=0.10, amount = 1},
-      {type = "item", name = "sp-cerium", probability=0.06, amount = 1},
-      {type = "item", name = "sp-titanium-ore", probability=0.3, amount = 1}
+      {type = "item", name = "sp-plutonium-239", probability = 0.005, amount = 1},
+      {type = "item", name = "uranium-238", probability = 0.015, amount = 1},
+      {type = "item", name = "carbon", probability = 0.08, amount = 1},
+      {type = "item", name = "tungsten-ore", probability = 0.06, amount = 1},
+      {type = "item", name = "sp-zirconium-ore", probability = 0.10, amount = 1},
+      {type = "item", name = "sp-cerium", probability = 0.06, amount = 1},
+      {type = "item", name = "sp-titanium-ore", probability = 0.3, amount = 1}
     },
     order = "z[nuclear]-3-[nuclear-waste-processing]"
   },
@@ -4224,11 +4149,11 @@ data:extend({
     enabled = false,
     energy_required = 4,
     ingredients = {
-      {type = "item", name = "sp-zinc-sulfate", amount = 1}
+      {type = "item", name = "sp-zinc-sulfate", amount = 3}
     },
     results = {
-      {type = "item", name = "sp-zinc-plate", amount = 1},
-      {type = "item", name = "sulfur", probability=0.05, amount = 1}
+      {type = "item", name = "sp-zinc-plate", amount = 2},
+      {type = "item", name = "sulfur", probability = 0.1, amount = 1}
     },
     order = "a-plate-[zinc-plate]"
   },
@@ -5830,22 +5755,6 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-fabric", amount = 1}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-cement",  -- #ForRegEx# - recipe
-    category = "crafting-with-fluid",
-    enabled = false,
-    energy_required = 2,
-    ingredients = {
-      {type = "item", name = "sp-calcium-carbonate", amount = 5},
-      {type = "item", name = "sp-alumina", amount = 1},
-      {type = "item", name = "iron-ore", amount = 2},
-      {type = "fluid", name = "water", amount = 100}
-    },
-    results = {
-      {type = "item", name = "sp-cement", amount = 3}
     }
   },
   {
@@ -10288,9 +10197,9 @@ data:extend({
     },
     results = {
       {type = "item", name = "iron-ore", amount = 11},
-      {type = "item", name = "sp-acrocrystal", probability=0.99, amount = 1},
-      {type = "item", name = "sp-chromite", probability=0.2, amount = 1},
-      {type = "item", name = "sp-nickel-ore", probability=0.15, amount = 1}
+      {type = "item", name = "sp-acrocrystal", probability = 0.99, amount = 1},
+      {type = "item", name = "sp-chromite", probability = 0.2, amount = 1},
+      {type = "item", name = "sp-nickel-ore", probability = 0.15, amount = 1}
       -- could create sp-cobalt item
     }
   },
@@ -10317,11 +10226,11 @@ data:extend({
     },
     results = {
       {type = "item", name = "copper-ore", amount = 11},
-      {type = "item", name = "sp-acrocrystal", probability=0.99, amount = 1},
-      {type = "item", name = "sp-zinc-ore", probability=0.15, amount = 1},
-      {type = "item", name = "sp-nickel-ore", probability=0.15, amount = 1},
-      {type = "item", name = "sp-silver", probability=0.05, amount = 1},
-      {type = "item", name = "sp-gold", probability=0.03, amount = 1},
+      {type = "item", name = "sp-acrocrystal", probability = 0.99, amount = 1},
+      {type = "item", name = "sp-zinc-ore", probability = 0.15, amount = 1},
+      {type = "item", name = "sp-nickel-ore", probability = 0.15, amount = 1},
+      {type = "item", name = "sp-silver", probability = 0.05, amount = 1},
+      {type = "item", name = "sp-gold", probability = 0.03, amount = 1},
       -- could create sp-cobalt item
     }
   },
@@ -10348,11 +10257,11 @@ data:extend({
     },
     results = {
       {type = "item", name = "stone", amount = 12},
-      {type = "item", name = "sp-acrocrystal", probability=0.98, amount = 1},
-      {type = "item", name = "iron-ore", probability=0.15, amount = 1},
-      {type = "item", name = "sp-zirconium-ore", probability=0.05, amount = 1},
-      {type = "item", name = "calcite", probability=0.5, amount = 1},
-      {type = "item", name = "sp-silicon", probability=0.3, amount = 1},
+      {type = "item", name = "sp-acrocrystal", probability = 0.98, amount = 1},
+      {type = "item", name = "iron-ore", probability = 0.15, amount = 1},
+      {type = "item", name = "sp-zirconium-ore", probability = 0.05, amount = 1},
+      {type = "item", name = "calcite", probability = 0.5, amount = 1},
+      {type = "item", name = "sp-silicon", probability = 0.3, amount = 1},
       {type = "item", name = "sp-sand", amount = 3},
     }
   },
@@ -10379,10 +10288,10 @@ data:extend({
     },
     results = {
       {type = "item", name = "coal", amount = 12},
-      {type = "item", name = "sp-acrocrystal", probability=0.98, amount = 1},
-      {type = "item", name = "stone", probability=0.15, amount = 1},
-      {type = "item", name = "iron-ore", probability=0.1, amount = 1},
-      {type = "item", name = "carbon", probability=0.1, amount = 1}
+      {type = "item", name = "sp-acrocrystal", probability = 0.98, amount = 1},
+      {type = "item", name = "stone", probability = 0.15, amount = 1},
+      {type = "item", name = "iron-ore", probability = 0.1, amount = 1},
+      {type = "item", name = "carbon", probability = 0.1, amount = 1}
     }
   },
   {
@@ -10408,10 +10317,10 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-aluminum-ore", amount = 14},
-      {type = "item", name = "sp-acrocrystal", probability=0.99, amount = 1},
-      {type = "item", name = "sp-phosphorus", probability=0.1, amount = 1},
-      {type = "item", name = "carbon", probability=0.05, amount = 1},
-      {type = "item", name = "sp-silicon", probability=0.2, amount = 1}
+      {type = "item", name = "sp-acrocrystal", probability = 0.99, amount = 1},
+      {type = "item", name = "sp-phosphorus", probability = 0.1, amount = 1},
+      {type = "item", name = "carbon", probability = 0.05, amount = 1},
+      {type = "item", name = "sp-silicon", probability = 0.2, amount = 1}
     }
   },
   {
@@ -10437,9 +10346,9 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-chromite", amount = 7},
-      {type = "item", name = "sp-acrocrystal", probability=0.995, amount = 1},
-      {type = "item", name = "iron-ore", probability=0.1, amount = 1},
-      {type = "item", name = "tungsten-ore", probability=0.15, amount = 1}
+      {type = "item", name = "sp-acrocrystal", probability = 0.995, amount = 1},
+      {type = "item", name = "iron-ore", probability = 0.1, amount = 1},
+      {type = "item", name = "tungsten-ore", probability = 0.15, amount = 1}
     }
   },
   {
@@ -10465,9 +10374,9 @@ data:extend({
     },
     results = {
       {type = "item", name = "calcite", amount = 12},
-      {type = "item", name = "sp-acrocrystal", probability=0.99, amount = 1},
-      {type = "item", name = "stone", probability=0.2, amount = 1},
-      {type = "item", name = "calcite", probability=0.5, amount = 1},
+      {type = "item", name = "sp-acrocrystal", probability = 0.99, amount = 1},
+      {type = "item", name = "stone", probability = 0.2, amount = 1},
+      {type = "item", name = "calcite", probability = 0.5, amount = 1},
       {type = "item", name = "sp-sand",  amount = 2}
     }
   },
@@ -10494,9 +10403,9 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-titanium-ore", amount = 11},
-      {type = "item", name = "sp-acrocrystal", probability=0.99, amount = 1},
-      {type = "item", name = "sp-chromite", probability=0.15, amount = 1},
-      {type = "item", name = "sp-zircon", probability=0.25, amount = 1}
+      {type = "item", name = "sp-acrocrystal", probability = 0.99, amount = 1},
+      {type = "item", name = "sp-chromite", probability = 0.15, amount = 1},
+      {type = "item", name = "sp-zircon", probability = 0.25, amount = 1}
     }
   },
   {
@@ -10522,10 +10431,10 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-magnesium-ore", amount = 11},
-      {type = "item", name = "sp-acrocrystal", probability=0.99, amount = 1},
-      {type = "item", name = "calcite", probability=0.25, amount = 1},
-      {type = "item", name = "sp-sodium", probability=0.20, amount = 1},
-      {type = "item", name = "lithium", probability=0.06, amount = 1}
+      {type = "item", name = "sp-acrocrystal", probability = 0.99, amount = 1},
+      {type = "item", name = "calcite", probability = 0.25, amount = 1},
+      {type = "item", name = "sp-sodium", probability = 0.20, amount = 1},
+      {type = "item", name = "lithium", probability = 0.06, amount = 1}
     }
   },
   {
@@ -10551,11 +10460,11 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-nickel-ore", amount = 10},
-      {type = "item", name = "sp-acrocrystal", probability=0.98, amount = 1},
-      {type = "item", name = "iron-ore", probability=0.3, amount = 1},
-      {type = "item", name = "copper-ore", probability=0.5, amount = 1},
-      {type = "item", name = "sp-palladium", probability=0.05, amount = 1},
-      {type = "item", name = "sp-platinum", probability=0.02, amount = 1}
+      {type = "item", name = "sp-acrocrystal", probability = 0.98, amount = 1},
+      {type = "item", name = "iron-ore", probability = 0.3, amount = 1},
+      {type = "item", name = "copper-ore", probability = 0.5, amount = 1},
+      {type = "item", name = "sp-palladium", probability = 0.05, amount = 1},
+      {type = "item", name = "sp-platinum", probability = 0.02, amount = 1}
     }
   },
   {
@@ -10581,11 +10490,11 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-tinstone", amount = 7},
-      {type = "item", name = "sp-acrocrystal", probability=0.99, amount = 1},
-      {type = "item", name = "sp-leadstone", probability=0.5, amount = 1},
-      {type = "item", name = "sp-antimony-pillet", probability=0.12, amount = 1},
-      {type = "item", name = "sp-tellurium", probability=0.02, amount = 1},
-      {type = "item", name = "sp-silicon", probability=0.15, amount = 1}
+      {type = "item", name = "sp-acrocrystal", probability = 0.99, amount = 1},
+      {type = "item", name = "sp-leadstone", probability = 0.5, amount = 1},
+      {type = "item", name = "sp-antimony-pillet", probability = 0.12, amount = 1},
+      {type = "item", name = "sp-tellurium", probability = 0.02, amount = 1},
+      {type = "item", name = "sp-silicon", probability = 0.15, amount = 1}
     }
   },
   {
@@ -10611,8 +10520,8 @@ data:extend({
     },
     results = {
       {type = "item", name = "tungsten-ore", amount = 9},
-      {type = "item", name = "sp-acrocrystal", probability=0.98, amount = 1},
-      {type = "item", name = "sp-chromite", probability=0.1, amount = 1}
+      {type = "item", name = "sp-acrocrystal", probability = 0.98, amount = 1},
+      {type = "item", name = "sp-chromite", probability = 0.1, amount = 1}
     }
   },
   {
@@ -10638,9 +10547,9 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-zinc-ore", amount = 9},
-      {type = "item", name = "sp-acrocrystal", probability=0.98, amount = 1},
-      {type = "item", name = "copper-ore", probability=0.2, amount = 1},
-      {type = "item", name = "sp-nickel-ore", probability=0.1, amount = 1}
+      {type = "item", name = "sp-acrocrystal", probability = 0.98, amount = 1},
+      {type = "item", name = "copper-ore", probability = 0.2, amount = 1},
+      {type = "item", name = "sp-nickel-ore", probability = 0.1, amount = 1}
     }
   },
   {
@@ -10667,11 +10576,11 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-zirconium-ore", amount = 10},
-      {type = "item", name = "sp-acrocrystal", probability=0.99, amount = 1},
-      {type = "item", name = "sp-titanium-ore", probability=0.5, amount = 1},
-      {type = "item", name = "sp-silicon", probability=0.15, amount = 1},
-      {type = "fluid", name = "sp-aqueous-niobium", probability=0.1, amount = 1},
-      {type = "fluid", name = "sp-aqueous-tantalum", probability=0.05, amount = 1}
+      {type = "item", name = "sp-acrocrystal", probability = 0.99, amount = 1},
+      {type = "item", name = "sp-titanium-ore", probability = 0.5, amount = 1},
+      {type = "item", name = "sp-silicon", probability = 0.15, amount = 1},
+      {type = "fluid", name = "sp-aqueous-niobium", probability = 0.1, amount = 1},
+      {type = "fluid", name = "sp-aqueous-tantalum", probability = 0.05, amount = 1}
     }
   },
   ------------------------------------------------------------------------------
@@ -10700,10 +10609,10 @@ data:extend({
       {type = "item", name = "sp-acrovoid", amount = 1}
     },
     results = {
-      {type = "item", name = "sp-acrovoid", probability=0.99, amount = 1},
+      {type = "item", name = "sp-acrovoid", probability = 0.99, amount = 1},
       {type = "item", name = "sp-coke", amount = 7},
-      {type = "item", name = "carbon", probability=0.5, amount = 1},
-      {type = "item", name = "sulfur", probability=0.1, amount = 1},
+      {type = "item", name = "carbon", probability = 0.5, amount = 1},
+      {type = "item", name = "sulfur", probability = 0.1, amount = 1},
       {type = "fluid", name = "sp-hydrogen", amount = 4},
       {type = "fluid", name = "sp-oxygen", amount = 12}
     },
@@ -10731,12 +10640,12 @@ data:extend({
       {type = "item", name = "sp-acrovoid", amount = 1}
     },
     results = {
-      {type = "item", name = "sp-acrovoid", probability=0.98, amount = 1},
+      {type = "item", name = "sp-acrovoid", probability = 0.98, amount = 1},
       {type = "item", name = "sp-silicon", amount = 6},
-      {type = "item", name = "carbon", probability=0.3, amount = 1},
-      {type = "item", name = "sp-phosphorus", probability=0.2, amount = 1},
-      {type = "item", name = "sp-aluminum-ore", probability=0.2, amount = 1},
-      {type = "item", name = "sp-tinstone", probability=0.08, amount = 1},
+      {type = "item", name = "carbon", probability = 0.3, amount = 1},
+      {type = "item", name = "sp-phosphorus", probability = 0.2, amount = 1},
+      {type = "item", name = "sp-aluminum-ore", probability = 0.2, amount = 1},
+      {type = "item", name = "sp-tinstone", probability = 0.08, amount = 1},
     },
     allow_quality = false
   },
@@ -10762,10 +10671,10 @@ data:extend({
       {type = "item", name = "sp-acrovoid", amount = 1}
     },
     results = {
-      {type = "item", name = "sp-acrovoid", probability=0.99, amount = 1},
-      {type = "item", name = "uranium-238", probability=0.95, amount = 10},
-      {type = "item", name = "uranium-235", probability=0.05, amount = 1},
-      {type = "item", name = "sp-plutonium-239", probability=0.01, amount = 1},
+      {type = "item", name = "sp-acrovoid", probability = 0.99, amount = 1},
+      {type = "item", name = "uranium-238", probability = 0.95, amount = 10},
+      {type = "item", name = "uranium-235", probability = 0.05, amount = 1},
+      {type = "item", name = "sp-plutonium-239", probability = 0.01, amount = 1},
     }
   },
   {
@@ -10790,11 +10699,11 @@ data:extend({
       {type = "item", name = "sp-acrovoid", amount = 1}
     },
     results = {
-      {type = "item", name = "sp-acrovoid", probability=0.99, amount = 1},
+      {type = "item", name = "sp-acrovoid", probability = 0.99, amount = 1},
       {type = "item", name = "calcite", amount = 10},
-      {type = "item", name = "sp-sodium", probability=0.2, amount = 1},
-      {type = "item", name = "sp-titanium-ore", probability=0.1, amount = 1},
-      {type = "item", name = "lithium", probability=0.05, amount = 1},
+      {type = "item", name = "sp-sodium", probability = 0.2, amount = 1},
+      {type = "item", name = "sp-titanium-ore", probability = 0.1, amount = 1},
+      {type = "item", name = "lithium", probability = 0.05, amount = 1},
     }
   },
   {
@@ -10819,11 +10728,11 @@ data:extend({
       {type = "item", name = "sp-acrovoid", amount = 1}
     },
     results = {
-      {type = "item", name = "sp-acrovoid", probability=0.99, amount = 1},
+      {type = "item", name = "sp-acrovoid", probability = 0.99, amount = 1},
       {type = "item", name = "sp-cerium", amount = 10},
-      {type = "item", name = "sp-yttrium", probability=0.05, amount = 1},
-      {type = "item", name = "sp-lanthanum", probability=0.1, amount = 1},
-      {type = "item", name = "sp-neodymium", probability=0.1, amount = 1}
+      {type = "item", name = "sp-yttrium", probability = 0.05, amount = 1},
+      {type = "item", name = "sp-lanthanum", probability = 0.1, amount = 1},
+      {type = "item", name = "sp-neodymium", probability = 0.1, amount = 1}
     }
   },
   {
@@ -10848,11 +10757,11 @@ data:extend({
       {type = "item", name = "sp-acrovoid", amount = 1}
     },
     results = {
-      {type = "item", name = "sp-acrovoid", probability=0.99, amount = 1},
+      {type = "item", name = "sp-acrovoid", probability = 0.99, amount = 1},
       {type = "item", name = "sp-yttrium", amount = 10},
-      {type = "item", name = "sp-cerium", probability=0.2, amount = 1},
-      {type = "item", name = "sp-lanthanum", probability=0.2, amount = 1},
-      {type = "item", name = "sp-neodymium", probability=0.1, amount = 1}
+      {type = "item", name = "sp-cerium", probability = 0.2, amount = 1},
+      {type = "item", name = "sp-lanthanum", probability = 0.2, amount = 1},
+      {type = "item", name = "sp-neodymium", probability = 0.1, amount = 1}
     }
   },
   {
@@ -10877,11 +10786,11 @@ data:extend({
       {type = "item", name = "sp-acrovoid", amount = 1}
     },
     results = {
-      {type = "item", name = "sp-acrovoid", probability=0.99, amount = 1},
+      {type = "item", name = "sp-acrovoid", probability = 0.99, amount = 1},
       {type = "item", name = "sp-lanthanum", amount = 10},
-      {type = "item", name = "sp-cerium", probability=0.2, amount = 1},
-      {type = "item", name = "sp-yttrium", probability=0.1, amount = 1},
-      {type = "item", name = "sp-neodymium", probability=0.08, amount = 1}
+      {type = "item", name = "sp-cerium", probability = 0.2, amount = 1},
+      {type = "item", name = "sp-yttrium", probability = 0.1, amount = 1},
+      {type = "item", name = "sp-neodymium", probability = 0.08, amount = 1}
     }
   },
   {
@@ -10906,11 +10815,11 @@ data:extend({
       {type = "item", name = "sp-acrovoid", amount = 1}
     },
     results = {
-      {type = "item", name = "sp-acrovoid", probability=0.99, amount = 1},
+      {type = "item", name = "sp-acrovoid", probability = 0.99, amount = 1},
       {type = "item", name = "sp-neodymium", amount = 16},
-      {type = "item", name = "sp-cerium", probability=0.2, amount = 1},
-      {type = "item", name = "sp-yttrium", probability=0.15, amount = 1},
-      {type = "item", name = "sp-lanthanum", probability=0.07, amount = 1}
+      {type = "item", name = "sp-cerium", probability = 0.2, amount = 1},
+      {type = "item", name = "sp-yttrium", probability = 0.15, amount = 1},
+      {type = "item", name = "sp-lanthanum", probability = 0.07, amount = 1}
     }
   },
   {
@@ -10935,9 +10844,9 @@ data:extend({
       {type = "item", name = "sp-acrovoid", amount = 1}
     },
     results = {
-      {type = "item", name = "sp-acrovoid", probability=0.99, amount = 1},
+      {type = "item", name = "sp-acrovoid", probability = 0.99, amount = 1},
       {type = "fluid", name = "fluorine", amount = 35},
-      {type = "item", name = "sulfur", probability=0.15, amount = 1},
+      {type = "item", name = "sulfur", probability = 0.15, amount = 1},
       {type = "fluid", name = "sp-chlorine", amount = 10},
       {type = "fluid", name = "sp-oxygen", amount = 1},
     }
@@ -10964,12 +10873,12 @@ data:extend({
       {type = "item", name = "sp-acrovoid", amount = 1}
     },
     results = {
-      {type = "item", name = "sp-acrovoid", probability=0.98, amount = 1},
+      {type = "item", name = "sp-acrovoid", probability = 0.98, amount = 1},
       {type = "item", name = "sp-gold", amount = 8},
-      {type = "item", name = "sp-silver", probability=0.15, amount = 1},
-      {type = "item", name = "copper-ore", probability=0.1, amount = 1},
-      {type = "item", name = "sp-platinum", probability=0.03, amount = 1},
-      {type = "item", name = "sp-iridium", probability=0.01, amount = 1},
+      {type = "item", name = "sp-silver", probability = 0.15, amount = 1},
+      {type = "item", name = "copper-ore", probability = 0.1, amount = 1},
+      {type = "item", name = "sp-platinum", probability = 0.03, amount = 1},
+      {type = "item", name = "sp-iridium", probability = 0.01, amount = 1},
     }
   },
   {
@@ -10994,11 +10903,11 @@ data:extend({
       {type = "item", name = "sp-acrovoid", amount = 1}
     },
     results = {
-      {type = "item", name = "sp-acrovoid", probability=0.99, amount = 1},
+      {type = "item", name = "sp-acrovoid", probability = 0.99, amount = 1},
       {type = "item", name = "carbon", amount = 5},
-      {type = "item", name = "sp-tinstone", probability=0.15, amount = 1},
-      {type = "item", name = "sp-leadstone", probability=0.1, amount = 1},
-      {type = "item", name = "sp-silicon", probability=0.2, amount = 1},
+      {type = "item", name = "sp-tinstone", probability = 0.15, amount = 1},
+      {type = "item", name = "sp-leadstone", probability = 0.1, amount = 1},
+      {type = "item", name = "sp-silicon", probability = 0.2, amount = 1},
       {type = "fluid", name = "sp-chlorine", amount = 10},
       {type = "fluid", name = "sp-oxygen", amount = 3},
     }
@@ -11025,11 +10934,11 @@ data:extend({
       {type = "item", name = "sp-acrovoid", amount = 1}
     },
     results = {
-      {type = "item", name = "sp-acrovoid", probability=0.97, amount = 1},
+      {type = "item", name = "sp-acrovoid", probability = 0.97, amount = 1},
       {type = "item", name = "sp-iridium", amount = 3},
-      {type = "item", name = "sp-platinum", probability=0.15, amount = 1},
-      {type = "item", name = "sp-gold", probability=0.08, amount = 1},
-      {type = "item", name = "sp-silicon", probability=0.2, amount = 1},
+      {type = "item", name = "sp-platinum", probability = 0.15, amount = 1},
+      {type = "item", name = "sp-gold", probability = 0.08, amount = 1},
+      {type = "item", name = "sp-silicon", probability = 0.2, amount = 1},
       {type = "fluid", name = "sp-chlorine", amount = 10},
       {type = "fluid", name = "sp-oxygen", amount = 2},
     }
@@ -11057,11 +10966,11 @@ data:extend({
       {type = "item", name = "sp-acrovoid", amount = 1}
     },
     results = {
-      {type = "item", name = "sp-acrovoid", probability=0.99, amount = 1},
+      {type = "item", name = "sp-acrovoid", probability = 0.99, amount = 1},
       {type = "item", name = "sp-leadstone", amount = 10},
-      {type = "item", name = "sp-tinstone", probability=0.4, amount = 1},
-      {type = "item", name = "carbon", probability=0.2, amount = 1},
-      {type = "item", name = "sp-silicon", probability=0.12, amount = 1},
+      {type = "item", name = "sp-tinstone", probability = 0.4, amount = 1},
+      {type = "item", name = "carbon", probability = 0.2, amount = 1},
+      {type = "item", name = "sp-silicon", probability = 0.12, amount = 1},
     }
   },
   {
@@ -11086,11 +10995,11 @@ data:extend({
       {type = "item", name = "sp-acrovoid", amount = 1}
     },
     results = {
-      {type = "item", name = "sp-acrovoid", probability=0.98, amount = 1},
+      {type = "item", name = "sp-acrovoid", probability = 0.98, amount = 1},
       {type = "item", name = "sp-palladium", amount = 5},
-      {type = "item", name = "sp-silver", probability=0.4, amount = 1},
-      {type = "item", name = "sp-platinum", probability=0.12, amount = 1},
-      {type = "item", name = "sp-nickel-ore", probability=0.12, amount = 1},
+      {type = "item", name = "sp-silver", probability = 0.4, amount = 1},
+      {type = "item", name = "sp-platinum", probability = 0.12, amount = 1},
+      {type = "item", name = "sp-nickel-ore", probability = 0.12, amount = 1},
     }
   },
   {
@@ -11115,12 +11024,12 @@ data:extend({
       {type = "item", name = "sp-acrovoid", amount = 1}
     },
     results = {
-      {type = "item", name = "sp-acrovoid", probability=0.99, amount = 1},
+      {type = "item", name = "sp-acrovoid", probability = 0.99, amount = 1},
       {type = "item", name = "sp-phosphorus", amount = 8},
-      {type = "item", name = "sp-antimony-pillet", probability=0.24, amount = 1},
-      {type = "item", name = "sulfur", probability=0.12, amount = 1},
-      {type = "item", name = "sp-aluminum-ore", probability=0.08, amount = 1},
-      {type = "item", name = "sp-silicon", probability=0.02, amount = 1},
+      {type = "item", name = "sp-antimony-pillet", probability = 0.24, amount = 1},
+      {type = "item", name = "sulfur", probability = 0.12, amount = 1},
+      {type = "item", name = "sp-aluminum-ore", probability = 0.08, amount = 1},
+      {type = "item", name = "sp-silicon", probability = 0.02, amount = 1},
       {type = "fluid", name = "sp-nitrogen", amount = 10},
     }
   },
@@ -11146,12 +11055,12 @@ data:extend({
       {type = "item", name = "sp-acrovoid", amount = 1}
     },
     results = {
-      {type = "item", name = "sp-acrovoid", probability=0.985, amount = 1},
+      {type = "item", name = "sp-acrovoid", probability = 0.985, amount = 1},
       {type = "item", name = "sp-platinum", amount = 8},
-      {type = "item", name = "sp-iridium", probability=0.12, amount = 1},
-      {type = "item", name = "sp-gold", probability=0.16, amount = 1},
-      {type = "item", name = "sp-palladium", probability=0.1, amount = 1},
-      {type = "item", name = "sp-nickel-ore", probability=0.08, amount = 1}
+      {type = "item", name = "sp-iridium", probability = 0.12, amount = 1},
+      {type = "item", name = "sp-gold", probability = 0.16, amount = 1},
+      {type = "item", name = "sp-palladium", probability = 0.1, amount = 1},
+      {type = "item", name = "sp-nickel-ore", probability = 0.08, amount = 1}
     }
   },
   {
@@ -11176,11 +11085,11 @@ data:extend({
       {type = "item", name = "sp-acrovoid", amount = 1}
     },
     results = {
-      {type = "item", name = "sp-acrovoid", probability=0.98, amount = 1},
-      {type = "item", name = "sp-plutonium-239", probability=0.8, amount = 8},
-      {type = "item", name = "sp-plutonium-240", probability=0.2, amount = 8},
-      {type = "item", name = "uranium-235", probability=0.12, amount = 1},
-      {type = "item", name = "uranium-238", probability=0.1, amount = 1}
+      {type = "item", name = "sp-acrovoid", probability = 0.98, amount = 1},
+      {type = "item", name = "sp-plutonium-239", probability = 0.8, amount = 8},
+      {type = "item", name = "sp-plutonium-240", probability = 0.2, amount = 8},
+      {type = "item", name = "uranium-235", probability = 0.12, amount = 1},
+      {type = "item", name = "uranium-238", probability = 0.1, amount = 1}
     }
   },
   {
@@ -11205,11 +11114,11 @@ data:extend({
       {type = "item", name = "sp-acrovoid", amount = 1}
     },
     results = {
-      {type = "item", name = "sp-acrovoid", probability=0.98, amount = 1},
+      {type = "item", name = "sp-acrovoid", probability = 0.98, amount = 1},
       {type = "item", name = "sp-silver", amount = 8},
-      {type = "item", name = "sp-gold", probability=0.2, amount = 1},
-      {type = "item", name = "copper-ore", probability=0.12, amount = 1},
-      {type = "item", name = "sp-palladium", probability=0.1, amount = 1}
+      {type = "item", name = "sp-gold", probability = 0.2, amount = 1},
+      {type = "item", name = "copper-ore", probability = 0.12, amount = 1},
+      {type = "item", name = "sp-palladium", probability = 0.1, amount = 1}
     }
   },
   {
@@ -11234,10 +11143,10 @@ data:extend({
       {type = "item", name = "sp-acrovoid", amount = 1}
     },
     results = {
-      {type = "item", name = "sp-acrovoid", probability=0.99, amount = 1},
+      {type = "item", name = "sp-acrovoid", probability = 0.99, amount = 1},
       {type = "item", name = "sp-sodium", amount = 8},
-      {type = "item", name = "calcite", probability=0.07, amount = 1},
-      {type = "item", name = "lithium", probability=0.25, amount = 1},
+      {type = "item", name = "calcite", probability = 0.07, amount = 1},
+      {type = "item", name = "lithium", probability = 0.25, amount = 1},
       {type = "fluid", name = "sp-hydrogen", amount = 10},
     }
   },
@@ -11263,11 +11172,11 @@ data:extend({
       {type = "item", name = "sp-acrovoid", amount = 1}
     },
     results = {
-      {type = "item", name = "sp-acrovoid", probability=0.99, amount = 1},
+      {type = "item", name = "sp-acrovoid", probability = 0.99, amount = 1},
       {type = "item", name = "sp-tellurium", amount = 11},
-      {type = "item", name = "sulfur", probability=0.25, amount = 2},
-      {type = "item", name = "sp-antimony-pillet", probability=0.12, amount = 1},
-      {type = "fluid", name = "sp-xenon", probability=0.02, amount = 1},
+      {type = "item", name = "sulfur", probability = 0.25, amount = 2},
+      {type = "item", name = "sp-antimony-pillet", probability = 0.12, amount = 1},
+      {type = "fluid", name = "sp-xenon", probability = 0.02, amount = 1},
       {type = "fluid", name = "sp-oxygen", amount = 8},
     }
   },
@@ -11293,11 +11202,11 @@ data:extend({
       {type = "item", name = "sp-acrovoid", amount = 1}
     },
     results = {
-      {type = "item", name = "sp-acrovoid", probability=0.99, amount = 1},
+      {type = "item", name = "sp-acrovoid", probability = 0.99, amount = 1},
       {type = "item", name = "sp-zircon", amount = 7},
-      {type = "item", name = "sp-titanium-ore", probability=0.2, amount = 2},
-      {type = "item", name = "sp-niobium-powder", probability=0.2, amount = 1},
-      {type = "item", name = "sp-yttrium", probability=0.02, amount = 1}
+      {type = "item", name = "sp-titanium-ore", probability = 0.2, amount = 2},
+      {type = "item", name = "sp-niobium-powder", probability = 0.2, amount = 1},
+      {type = "item", name = "sp-yttrium", probability = 0.02, amount = 1}
     }
   },
   {
@@ -11322,11 +11231,11 @@ data:extend({
       {type = "item", name = "sp-acrovoid", amount = 1}
     },
     results = {
-      {type = "item", name = "sp-acrovoid", probability=0.99, amount = 1},
+      {type = "item", name = "sp-acrovoid", probability = 0.99, amount = 1},
       {type = "item", name = "sulfur", amount = 8},
-      {type = "item", name = "sp-tellurium", probability=0.05, amount = 1},
-      {type = "item", name = "sp-phosphorus", probability=0.2, amount = 1},
-      {type = "item", name = "sp-silicon", probability=0.15, amount = 1},
+      {type = "item", name = "sp-tellurium", probability = 0.05, amount = 1},
+      {type = "item", name = "sp-phosphorus", probability = 0.2, amount = 1},
+      {type = "item", name = "sp-silicon", probability = 0.15, amount = 1},
       {type = "fluid", name = "fluorine", amount = 1},
       {type = "fluid", name = "sp-oxygen", amount = 15}
     }
@@ -11358,10 +11267,10 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-enriched-aluminum", amount = 14},
-      {type = "item", name = "sp-acromatter", probability=0.99, amount = 1},
-      {type = "item", name = "sp-phosphorus", probability=0.1, amount = 2},
-      {type = "item", name = "carbon", probability=0.05, amount = 2},
-      {type = "item", name = "sp-silicon", probability=0.2, amount = 2}
+      {type = "item", name = "sp-acromatter", probability = 0.99, amount = 1},
+      {type = "item", name = "sp-phosphorus", probability = 0.1, amount = 2},
+      {type = "item", name = "carbon", probability = 0.05, amount = 2},
+      {type = "item", name = "sp-silicon", probability = 0.2, amount = 2}
     }
   },
   {
@@ -11387,9 +11296,9 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-enriched-chromite", amount = 7},
-      {type = "item", name = "sp-acromatter", probability=0.99, amount = 1},
-      {type = "item", name = "iron-ore", probability=0.1, amount = 2},
-      {type = "item", name = "tungsten-ore", probability=0.15, amount = 2}
+      {type = "item", name = "sp-acromatter", probability = 0.99, amount = 1},
+      {type = "item", name = "iron-ore", probability = 0.1, amount = 2},
+      {type = "item", name = "tungsten-ore", probability = 0.15, amount = 2}
     }
   },
   {
@@ -11415,9 +11324,9 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-enriched-titanium", amount = 11},
-      {type = "item", name = "sp-acromatter", probability=0.99, amount = 1},
-      {type = "item", name = "sp-chromite", probability=0.15, amount = 2},
-      {type = "item", name = "sp-zircon", probability=0.25, amount = 2}
+      {type = "item", name = "sp-acromatter", probability = 0.99, amount = 1},
+      {type = "item", name = "sp-chromite", probability = 0.15, amount = 2},
+      {type = "item", name = "sp-zircon", probability = 0.25, amount = 2}
     }
   },
   {
@@ -11443,10 +11352,10 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-enriched-magnesium", amount = 11},
-      {type = "item", name = "sp-acromatter", probability=0.99, amount = 1},
-      {type = "item", name = "calcite", probability=0.25, amount = 2},
-      {type = "item", name = "sp-sodium", probability=0.20, amount = 2},
-      {type = "item", name = "lithium", probability=0.05, amount = 2}
+      {type = "item", name = "sp-acromatter", probability = 0.99, amount = 1},
+      {type = "item", name = "calcite", probability = 0.25, amount = 2},
+      {type = "item", name = "sp-sodium", probability = 0.20, amount = 2},
+      {type = "item", name = "lithium", probability = 0.05, amount = 2}
     }
   },
   {
@@ -11472,11 +11381,11 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-enriched-nickel", amount = 10},
-      {type = "item", name = "sp-acromatter", probability=0.98, amount = 1},
-      {type = "item", name = "iron-ore", probability=0.3, amount = 2},
-      {type = "item", name = "copper-ore", probability=0.5, amount = 2},
-      {type = "item", name = "sp-palladium", probability=0.05, amount = 2},
-      {type = "item", name = "sp-platinum", probability=0.02, amount = 2}
+      {type = "item", name = "sp-acromatter", probability = 0.98, amount = 1},
+      {type = "item", name = "iron-ore", probability = 0.3, amount = 2},
+      {type = "item", name = "copper-ore", probability = 0.5, amount = 2},
+      {type = "item", name = "sp-palladium", probability = 0.05, amount = 2},
+      {type = "item", name = "sp-platinum", probability = 0.02, amount = 2}
     }
   },
   {
@@ -11502,11 +11411,11 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-enriched-tinstone", amount = 7},
-      {type = "item", name = "sp-acromatter", probability=0.99, amount = 1},
-      {type = "item", name = "sp-leadstone", probability=0.5, amount = 2},
-      {type = "item", name = "sp-antimony-pillet", probability=0.12, amount = 2},
-      {type = "item", name = "sp-tellurium", probability=0.02, amount = 2},
-      {type = "item", name = "sp-silicon", probability=0.15, amount = 2}
+      {type = "item", name = "sp-acromatter", probability = 0.99, amount = 1},
+      {type = "item", name = "sp-leadstone", probability = 0.5, amount = 2},
+      {type = "item", name = "sp-antimony-pillet", probability = 0.12, amount = 2},
+      {type = "item", name = "sp-tellurium", probability = 0.02, amount = 2},
+      {type = "item", name = "sp-silicon", probability = 0.15, amount = 2}
     }
   },
   {
@@ -11532,8 +11441,8 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-enriched-tungsten", amount = 9},
-      {type = "item", name = "sp-acromatter", probability=0.98, amount = 1},
-      {type = "item", name = "sp-chromite", probability=0.1, amount = 2}
+      {type = "item", name = "sp-acromatter", probability = 0.98, amount = 1},
+      {type = "item", name = "sp-chromite", probability = 0.1, amount = 2}
     }
   },
   {
@@ -11559,9 +11468,9 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-enriched-zinc", amount = 9},
-      {type = "item", name = "sp-acromatter", probability=0.98, amount = 1},
-      {type = "item", name = "copper-ore", probability=0.2, amount = 2},
-      {type = "item", name = "sp-nickel-ore", probability=0.1, amount = 2}
+      {type = "item", name = "sp-acromatter", probability = 0.98, amount = 1},
+      {type = "item", name = "copper-ore", probability = 0.2, amount = 2},
+      {type = "item", name = "sp-nickel-ore", probability = 0.1, amount = 2}
     }
   },
   {
@@ -11587,9 +11496,9 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-enriched-iron", amount = 11},
-      {type = "item", name = "sp-acromatter", probability=0.99, amount = 1},
-      {type = "item", name = "sp-chromite", probability=0.2, amount = 2},
-      {type = "item", name = "sp-nickel-ore", probability=0.15, amount = 2}
+      {type = "item", name = "sp-acromatter", probability = 0.99, amount = 1},
+      {type = "item", name = "sp-chromite", probability = 0.2, amount = 2},
+      {type = "item", name = "sp-nickel-ore", probability = 0.15, amount = 2}
       -- could create sp-cobalt item
     }
   },
@@ -11616,11 +11525,11 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-enriched-copper", amount = 11},
-      {type = "item", name = "sp-acromatter", probability=0.99, amount = 1},
-      {type = "item", name = "sp-zinc-ore", probability=0.15, amount = 2},
-      {type = "item", name = "sp-nickel-ore", probability=0.15, amount = 2},
-      {type = "item", name = "sp-silver", probability=0.05, amount = 2},
-      {type = "item", name = "sp-gold", probability=0.03, amount = 2}
+      {type = "item", name = "sp-acromatter", probability = 0.99, amount = 1},
+      {type = "item", name = "sp-zinc-ore", probability = 0.15, amount = 2},
+      {type = "item", name = "sp-nickel-ore", probability = 0.15, amount = 2},
+      {type = "item", name = "sp-silver", probability = 0.05, amount = 2},
+      {type = "item", name = "sp-gold", probability = 0.03, amount = 2}
       -- could create sp-cobalt item
     }
   },
@@ -11647,11 +11556,11 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-enriched-rare-metals", amount = 10},
-      {type = "item", name = "sp-acromatter", probability=0.99, amount = 1},
-      {type = "item", name = "sp-yttrium", probability=0.03, amount = 2},
-      {type = "item", name = "sp-lanthanum", probability=0.02, amount = 2},
-      {type = "item", name = "sp-cerium", probability=0.01, amount = 2},
-      {type = "item", name = "sp-neodymium", probability=0.02, amount = 2}
+      {type = "item", name = "sp-acromatter", probability = 0.99, amount = 1},
+      {type = "item", name = "sp-yttrium", probability = 0.03, amount = 2},
+      {type = "item", name = "sp-lanthanum", probability = 0.02, amount = 2},
+      {type = "item", name = "sp-cerium", probability = 0.01, amount = 2},
+      {type = "item", name = "sp-neodymium", probability = 0.02, amount = 2}
       -- I guess add here many more byproducts
     }
   },
@@ -11697,8 +11606,8 @@ data:extend({
     hide_from_player_crafting = true,
     ingredients =
     {
-      {type = "item", name = "stone", amount = 10},
-      {type = "item", name = "iron-ore", amount = 6}
+      {type = "item", name = "stone", amount = 25},
+      {type = "item", name = "iron-ore", amount = 15}
     },
     results = {
       {type = "item", name = "landfill", amount = 1}
@@ -11715,11 +11624,11 @@ data:extend({
     hide_from_player_crafting = true,
     ingredients =
     {
-      {type = "item", name = "stone", amount = 8},
-      {type = "item", name = "sp-cement", amount = 4}
+      {type = "item", name = "stone", amount = 20},
+      {type = "item", name = "sp-cement", amount = 5}
     },
     results = {
-      {type = "item", name = "landfill", amount = 2}
+      {type = "item", name = "landfill", amount = 1}
     }
   },
   {
@@ -12050,7 +11959,7 @@ data:extend({
     category = "sp-kr-electrolysis",
     subgroup = "processed-resource",
     enabled = false,
-    energy_required = 5,
+    energy_required = 2,
     ingredients = {
       {type = "item", name = "sp-salt", amount = 2},
     },
