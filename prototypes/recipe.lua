@@ -4177,10 +4177,10 @@ data:extend({
     name = "sp-anodized-aluminum",  -- #ForRegEx# - recipe
     category = "sp-kr-electrolysis",
     enabled = false,
-    energy_required = 8,
+    energy_required = 1,
     ingredients = {
       {type = "item", name = "sp-aluminum-sheet", amount = 1},
-      {type = "fluid", name = "water", amount = 50},
+      {type = "fluid", name = "water", amount = 20},
       {type = "fluid", name = "sulfuric-acid", amount = 5},
     },
     results = {

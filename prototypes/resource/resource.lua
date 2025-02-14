@@ -44,6 +44,7 @@ local function basic_resource(resource_parameters, autoplace_parameters)
       mining_particle = "sp-" .. resource_parameters.name .. "-particle",
       mining_time = resource_parameters.mining_time,
       result = resource_parameters.mining_result or "sp-" .. resource_parameters.name,
+      required_fluid = resource_parameters.required_fluid
     },
     category = resource_parameters.category,
     subgroup = resource_parameters.subgroup,
@@ -113,8 +114,7 @@ local function fluid_resource(resource_parameters, autoplace_parameters)
           name = resource_parameters.mining_result or "sp-" .. resource_parameters.name,
           amount_min = 10,
           amount_max = 10,
-          probability = 1,
-          required_fluid = resource_parameters.required_fluid
+          probability = 1
         }
       }
     },

@@ -590,7 +590,7 @@ util.recipe.change_recipe_ingredients("train-stop",
   {
     {type = "item", name = "sp-steel-beam", amount = 10},
     {type = "item", name = "electronic-circuit", amount = 4},
-    {type = "item", name = "sp-wooden-board", amount = 16},
+    {type = "item", name = "sp-wooden-pole", amount = 16},
     {type = "item", name = "sp-bolts", amount = 12},
     {type = "item", name = "sp-spring", amount = 4},
     {type = "item", name = "copper-cable", amount = 4}
@@ -1695,7 +1695,7 @@ util.recipe.change_recipe_ingredients("chemical-science-pack",
     {type = "fluid", name = "sp-chlorine", amount = 20},
     {type = "item", name = "sp-blank-tech-card", amount = 5}
   },
-  20)
+  40)
 data.raw.recipe["chemical-science-pack"].results = {
     {type = "item", name = "chemical-science-pack", amount = 5}
   }
@@ -1721,7 +1721,7 @@ util.recipe.change_recipe_ingredients("production-science-pack",
     {type = "item", name = "sp-relay", amount = 5},
     {type = "item", name = "sp-blank-tech-card", amount = 5}
   },
-  20)
+  32)
 data.raw.recipe["production-science-pack"].results = {
     {type = "item", name = "production-science-pack", amount = 5}
   }
@@ -1734,7 +1734,7 @@ util.recipe.change_recipe_ingredients("utility-science-pack",
     -- {type = "item", name = "kr-research-server", amount = 1},
     {type = "item", name = "sp-blank-tech-card", amount = 5}
   },
-  20)
+  32)
 data.raw.recipe["utility-science-pack"].results = {
     {type = "item", name = "utility-science-pack", amount = 5}
   }
@@ -1749,7 +1749,7 @@ util.recipe.change_recipe_ingredients("space-science-pack",
     {type = "item", name = "sp-lens", amount = 5},
     {type = "item", name = "sp-laser", amount = 5},
   },
-  24)
+  48)
 data.raw.recipe["space-science-pack"].results = {
     {type = "item", name = "space-science-pack", amount = 5}
   }
