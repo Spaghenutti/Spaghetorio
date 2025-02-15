@@ -2311,6 +2311,28 @@ data:extend({
   ------------------------------------------------------------------------------
   {
     type = "recipe",
+    name = "sp-hydrogen-chloride",
+    category = "chemistry",
+    subgroup = "fluid-recipes",
+    energy_required = 1,
+    enabled = false,
+    ingredients = {
+      {type = "fluid", name = "sp-hydrogen", amount = 30},
+      {type = "fluid", name = "sp-chlorine", amount = 20},
+    },
+    results = {
+      {type = "fluid", name = "sp-hydrogen-chloride", amount = 15}
+    },
+    -- crafting_machine_tint = {
+    --   primary = {r = 1.000, g = 1.000, b = 0.0, a = 1.000},
+    --   secondary = {r = 0.771, g = 0.771, b = 0.0, a = 1.000},
+    --   tertiary = {r = 0.768, g = 0.665, b = 0.0, a = 1.000},
+    --   quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
+    -- },
+    order = "[liquid]-[liquid-sodium]"
+  },
+  {
+    type = "recipe",
     name = "sp-liquid-sodium",
     category = "chemistry",
     subgroup = "fluid-recipes",
@@ -2390,30 +2412,6 @@ data:extend({
       secondary = {r = 0.3, g = 0.3, b = 0.3, a = 1.000},
       tertiary = {r = 0.2, g = 0.2, b = 0.2, a = 1.000},
       quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-quartz",  -- #ForRegEx# - recipe
-    -- icon = "__Spaghetorio__/graphics/icons/quartz.png",
-    icon_size = 64,
-    scale = 0.25,
-    category = "chemistry",
-    subgroup = "raw-resource",
-    enabled = false,
-    energy_required = 3.2,
-    ingredients = {
-      {type = "item", name = "sp-sand", amount = 2},
-      {type = "fluid", name = "water", amount = 30}
-    },
-    results = {
-      {type = "item", name = "sp-quartz", amount = 2}
-    },
-    crafting_machine_tint = {
-      primary = {r = 1.000, g = 1.000, b = 1.000, a = 1.000},
-      secondary = {r = 0.8, g = 0.8, b = 0.8, a = 1.000},
-      tertiary = {r = 0.7, g = 0.7, b = 0.7, a = 1.000},
-      quaternary = {r = 0.3, g = 0.3, b = 0.3, a = 1.000},
     }
   },
   {
@@ -2711,15 +2709,15 @@ data:extend({
     name = "sp-rubber",  -- #ForRegEx# - recipe
     category = "chemistry",
     enabled = false,
-    energy_required = 3.2,
+    energy_required = 30,
     ingredients = {
-      {type = "item", name = "sulfur", amount = 3},
+      {type = "item", name = "sulfur", amount = 20},
       {type = "item", name = "sp-filter", amount = 1},
-      {type = "fluid", name = "sp-styrene", amount = 50},
-      {type = "fluid", name = "sp-phosphoric-acid", amount = 10},
+      {type = "fluid", name = "sp-styrene", amount = 350},
+      {type = "fluid", name = "sp-phosphoric-acid", amount = 80},
     },
     results = {
-      {type = "item", name = "sp-rubber", amount = 2}
+      {type = "item", name = "sp-rubber", amount = 15}
     },
     crafting_machine_tint = {
       primary = {r = 0.3, g = 0.3, b = 0.3, a = 1.000},
@@ -3304,6 +3302,29 @@ data:extend({
       {type = "fluid", name = "sp-hydrogen-cyanide", amount = 3}
     }
   },
+  {
+    type = "recipe",
+    name = "sp-nitric-acid",
+    category = "chemical-staging",
+    subgroup = "fluid-recipes",
+    energy_required = 5,
+    enabled = false,
+    ingredients = {
+      {type = "fluid", name = "ammonia", amount = 50},
+      {type = "fluid", name = "sp-mineral-water", amount = 25},
+      {type = "fluid", name = "sp-oxygen", amount = 25},
+    },
+    results = {
+      {type = "fluid", name = "sp-nitric-acid", amount = 50}
+    },
+    crafting_machine_tint = {
+      primary = {r = 0.800, g = 0.000, b = 0.100, a = 0.200},
+      secondary = {r = 0.500, g = 0.100, b = 0.300, a = 0.357},
+      tertiary = {r = 0.430, g = 0.000, b = 0.450, a = 0.200},
+      quaternary = {r = 0.800, g = 0.000, b = 0.100, a = 0.900},
+    },
+    order = "[liquid]-[liquid-sodium]"
+  },
   ------------------------------------------------------------------------------
   -- MARK: sp-kr-fuel-refinery
   ------------------------------------------------------------------------------
@@ -3326,6 +3347,25 @@ data:extend({
     --   tertiary = {r = 0.2, g = 0.1, b = 0.0, a = 1.000},
     --   quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000}
     -- }
+  },
+  {
+    type = "recipe",
+    name = "sp-biomethanol",  -- #ForRegEx# - recipe
+    category = "sp-kr-fuel-refinery",
+    enabled = false,
+    energy_required = 10,
+    ingredients = {
+      {type = "item", name = "sp-wood-chips", amount = 20},
+      {type = "fluid", name = "sp-oxygen", amount = 60},
+      {type = "fluid", name = "steam", amount = 120},
+    },
+    results = {
+      {type = "fluid", name = "sp-biomethanol", amount = 60},
+    },
+    crafting_machine_tint = {
+      primary = {r = 0.25, g = 0.53, b = 0.15, a = 0.750},
+      secondary = {r = 0.27, g = 0.53, b = 0.12, a = 0.900},
+    }
   },
   ------------------------------------------------------------------------------
   -- MARK: induction-hardening
@@ -3397,6 +3437,30 @@ data:extend({
       tertiary = {r = 0.768, g = 0.665, b = 0.762, a = 1.000},
       quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
     }
+  },
+  {
+    type = "recipe",
+    name = "sp-quartz",  -- #ForRegEx# - recipe
+    -- icon = "__Spaghetorio__/graphics/icons/quartz.png",
+    icon_size = 64,
+    scale = 0.25,
+    category = "sp-kr-fluid-filtration",
+    subgroup = "processed-resource",
+    enabled = false,
+    energy_required = 1,
+    ingredients = {
+      {type = "item", name = "sp-sand", amount = 2},
+      {type = "fluid", name = "water", amount = 30}
+    },
+    results = {
+      {type = "item", name = "sp-quartz", amount = 2}
+    },
+    -- crafting_machine_tint = {
+    --   primary = {r = 1.000, g = 1.000, b = 1.000, a = 1.000},
+    --   secondary = {r = 0.8, g = 0.8, b = 0.8, a = 1.000},
+    --   tertiary = {r = 0.7, g = 0.7, b = 0.7, a = 1.000},
+    --   quaternary = {r = 0.3, g = 0.3, b = 0.3, a = 1.000},
+    -- }
   },
   {
     type = "recipe",
@@ -4165,13 +4229,13 @@ data:extend({
     category = "chemistry",
     subgroup = "fluid-recipes",
     enabled = false,
-    energy_required = 50,
+    energy_required = 30,
     ingredients = {
       {type = "fluid", name = "sp-liquid-sodium", amount = 35},
       {type = "fluid", name = "water", amount = 100},
     },
     results = {
-      {type = "fluid", name = "sp-sodium-hydroxide", amount = 20},
+      {type = "fluid", name = "sp-sodium-hydroxide", amount = 60},
     },
     crafting_machine_tint = {
       primary = {r = 0.6, g = 0.0, b = 0.6, a = 1.000},
@@ -12294,7 +12358,7 @@ data:extend({
     category = "chemistry",
     subgroup = "fluid-recipes",
     enabled = false,
-    energy_required = 10,
+    energy_required = 30,
     hide_from_player_crafting = true,
     ingredients = {
       {type = "item", name = "sp-salt", amount = 20},
@@ -12319,7 +12383,7 @@ data:extend({
     category = "chemistry",
     subgroup = "fluid-recipes",
     enabled = false,
-    energy_required = 80,
+    energy_required = 60,
     hide_from_player_crafting = true,
     ingredients = {
       {type = "item", name = "sp-sodium", amount = 5},
@@ -12327,7 +12391,7 @@ data:extend({
       {type = "fluid", name = "sp-oxygen", amount = 100}
     },
     results = {
-      {type = "fluid", name = "sp-sodium-hydroxide", amount = 20},
+      {type = "fluid", name = "sp-sodium-hydroxide", amount = 60},
     },
     crafting_machine_tint = {
       primary = {r = 0.6, g = 0.4, b = 0.6, a = 1.000},
@@ -12450,7 +12514,7 @@ data:extend({
     name = "sp-vacuum-tube",  -- #ForRegEx# - recipe
     category = "crafting-with-fluid",
     enabled = false,
-    energy_required = 5.2,
+    energy_required = 3,
     ingredients = {
       {type = "item", name = "sp-glass", amount = 3},
       {type = "item", name = "copper-cable", amount = 2},

@@ -6579,6 +6579,10 @@ data:extend({
       },
       {
         type = "unlock-recipe",
+        recipe = "sp-hydrogen-chloride",
+      },
+      {
+        type = "unlock-recipe",
         recipe = "sp-wood-fuel",
       },
     },
@@ -8248,11 +8252,14 @@ data:extend({
     {
       {
         icon = "__base__/graphics/technology/worker-robots-storage.png",
-        icon_size = 256, icon_mipmaps = 4
+        icon_size = 256,
+        scale = 2,
+        icon_mipmaps = 4
       },
       {
         icon = "__core__/graphics/icons/technology/constants/constant-capacity.png",
         icon_size = 128,
+        scale = 2,
         icon_mipmaps = 3,
         shift = {100, 100}
       }
@@ -8303,11 +8310,14 @@ data:extend({
     {
       {
         icon = "__base__/graphics/technology/worker-robots-storage.png",
-        icon_size = 256, icon_mipmaps = 4
+        icon_size = 256,
+        scale = 2,
+        icon_mipmaps = 4
       },
       {
         icon = "__core__/graphics/icons/technology/constants/constant-capacity.png",
         icon_size = 128,
+        scale = 2,
         icon_mipmaps = 3,
         shift = {100, 100}
       }
@@ -8359,11 +8369,14 @@ data:extend({
     {
       {
         icon = "__base__/graphics/technology/toolbelt.png",
-        icon_size = 256, icon_mipmaps = 4
+        icon_size = 256,
+        scale = 2,
+        icon_mipmaps = 4
       },
       {
         icon = "__core__/graphics/icons/technology/constants/constant-capacity.png",
         icon_size = 128,
+        scale = 2,
         icon_mipmaps = 3,
         shift = {100, 100}
       }
@@ -8405,11 +8418,14 @@ data:extend({
     {
       {
         icon = "__base__/graphics/technology/toolbelt.png",
-        icon_size = 256, icon_mipmaps = 4
+        icon_size = 256,
+        scale = 2,
+        icon_mipmaps = 4
       },
       {
         icon = "__core__/graphics/icons/technology/constants/constant-capacity.png",
         icon_size = 128,
+        scale = 2,
         icon_mipmaps = 3,
         shift = {100, 100}
       }
@@ -8450,11 +8466,14 @@ data:extend({
     {
       {
         icon = "__base__/graphics/technology/toolbelt.png",
-        icon_size = 256, icon_mipmaps = 4
+        icon_size = 256,
+        scale = 2,
+        icon_mipmaps = 4
       },
       {
         icon = "__core__/graphics/icons/technology/constants/constant-capacity.png",
         icon_size = 128,
+        scale = 2,
         icon_mipmaps = 3,
         shift = {100, 100}
       }
@@ -8495,11 +8514,14 @@ data:extend({
     {
       {
         icon = "__base__/graphics/technology/toolbelt.png",
-        icon_size = 256, icon_mipmaps = 4
+        icon_size = 256,
+        scale = 2,
+        icon_mipmaps = 4
       },
       {
         icon = "__core__/graphics/icons/technology/constants/constant-capacity.png",
         icon_size = 128,
+        scale = 2,
         icon_mipmaps = 3,
         shift = {100, 100}
       }
@@ -8541,11 +8563,14 @@ data:extend({
     {
       {
         icon = "__base__/graphics/technology/toolbelt.png",
-        icon_size = 256, icon_mipmaps = 4
+        icon_size = 256,
+        scale = 2,
+        icon_mipmaps = 4
       },
       {
         icon = "__core__/graphics/icons/technology/constants/constant-capacity.png",
         icon_size = 128,
+        scale = 2,
         icon_mipmaps = 3,
         shift = {100, 100}
       }
@@ -8586,11 +8611,14 @@ data:extend({
     {
       {
         icon = "__base__/graphics/technology/toolbelt.png",
-        icon_size = 256, icon_mipmaps = 4
+        icon_size = 256,
+        scale = 2,
+        icon_mipmaps = 4
       },
       {
         icon = "__core__/graphics/icons/technology/constants/constant-capacity.png",
         icon_size = 128,
+        scale = 2,
         icon_mipmaps = 3,
         shift = {100, 100}
       }
@@ -8680,11 +8708,14 @@ data:extend({
     {
       {
         icon = "__base__/graphics/technology/inserter-capacity.png",
-        icon_size = 256, icon_mipmaps = 4
+        icon_size = 256,
+        scale = 2,
+        icon_mipmaps = 4
       },
       {
         icon = "__core__/graphics/icons/technology/constants/constant-capacity.png",
         icon_size = 128,
+        scale = 2,
         icon_mipmaps = 3,
         shift = {100, 100}
       }
@@ -8738,11 +8769,14 @@ data:extend({
     {
       {
         icon = "__base__/graphics/technology/inserter-capacity.png",
-        icon_size = 256, icon_mipmaps = 4
+        icon_size = 256,
+        scale = 2,
+        icon_mipmaps = 4
       },
       {
         icon = "__core__/graphics/icons/technology/constants/constant-capacity.png",
         icon_size = 128,
+        scale = 2,
         icon_mipmaps = 3,
         shift = {100, 100}
       }
@@ -8798,11 +8832,14 @@ data:extend({
     {
       {
         icon = "__base__/graphics/technology/braking-force.png",
-        icon_size = 256, icon_mipmaps = 4
+        icon_size = 256,
+        scale = 2,
+        icon_mipmaps = 4
       },
       {
         icon = "__core__/graphics/icons/technology/constants/constant-speed.png",
         icon_size = 128,
+        scale = 2,
         icon_mipmaps = 3,
         shift = {100, 100}
       }
@@ -8854,11 +8891,14 @@ data:extend({
     {
       {
         icon = "__base__/graphics/technology/research-speed.png",
-        icon_size = 256, icon_mipmaps = 4
+        icon_size = 256,
+        scale = 2,
+        icon_mipmaps = 4
       },
       {
         icon = "__core__/graphics/icons/technology/constants/constant-speed.png",
         icon_size = 128,
+        scale = 2,
         icon_mipmaps = 3,
         shift = {100, 100}
       }
@@ -9101,6 +9141,18 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "sp-ai-core",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-biomethanol",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-nitric-acid",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-heavy-water",
       },
       -- TODO: add recipe chain for
       -- {

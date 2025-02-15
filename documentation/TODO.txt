@@ -105,8 +105,8 @@ Factorio Space age
     - separate base-products group into base-prwdoducts and base-materials
     - update subgroups
     - update orders
-  - fix resolution of potassium-ore, vanadium-ore and manganese-ore patches sprites
-  - Add remaining hurricane buildings
+  + fix resolution of potassium-ore, vanadium-ore and manganese-ore patches sprites
+  + Add remaining hurricane buildings
   + remove catalyst items, recipes and technologies
   - remove all factorio alternative recipe chains for processing liquids on different planets
   - Add weight to every item
@@ -119,15 +119,15 @@ Factorio Space age
     + tungsten
     + limestone - calcite
     + superconductor - superconductor
-  - Update recepies for
-    - lithium processing
-    - tungsten processing
+  + Update recepies for
+    + lithium processing
+    + tungsten processing
     + remove everything regarding limestone
   - ores
     + limestone as barium ore (baryt)
     + tungsten ore as mercury ore (cinnabar)
-    - spodumene as cobalt ore (in cobalt ore traces of arsen are found)
-    - Add Cobalt
+    + spodumene as cobalt ore (in cobalt ore traces of arsen are found)
+    + Add Cobalt
     + Add stibnite as ore
       - add crushed recipe
       - add enriched recipe
@@ -139,6 +139,7 @@ Factorio Space age
     - raw rare metal processing
     - enriched rare metal processing
     - fix icons for groups base-recources, base-materials, intermediate-products
+  - Add back HD graphics in separate spaghetorio assets mod
 
 
 Krastorio cleanup
