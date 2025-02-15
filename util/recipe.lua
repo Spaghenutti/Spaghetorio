@@ -1,6 +1,7 @@
 -- Contains functions for editing recipes
 local remove_prototypes = require("remove-prototypes")
 local item_util = require("util.item")
+local icon_util = require("util.icon")
 
 local data_util = {}
 
@@ -105,7 +106,7 @@ function data_util.generate_fluid_burning_recipe(fluid_name)
     type = "recipe",
     name = "sp-kr-burn-" .. fluid.name,
     -- TODO: add localised_name
-    icon = fluid.icon,
+    icons = icon_util.create_void_recipe_icon(fluid),
     category = "sp-kr-fluid-burning",
     subgroup = "sp-void",
     energy_required = 1,
