@@ -5334,6 +5334,34 @@ data:extend({
   },
   {
     type = "tool",
+    name = "sp-metallurgical-science-pack-2",  -- #ForRegEx# - tool
+    localised_description = {"item-description.science-pack"},
+    icon = "__Spaghetorio__/graphics/icons/metallurgical-science-pack-2.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "intermediate-science",
+    order = "g[metallurgical-science-pack]",
+    stack_size = 200,
+    durability = 1,
+    durability_description_key = "description.science-pack-remaining-amount-key",
+    durability_description_value = "description.science-pack-remaining-amount-value"
+  },
+  {
+    type = "tool",
+    name = "sp-electromagnetic-science-pack-2",  -- #ForRegEx# - tool
+    localised_description = {"item-description.science-pack"},
+    icon = "__Spaghetorio__/graphics/icons/electromagnetic-science-pack-2.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "intermediate-science",
+    order = "g[electromagnetic-science-pack]",
+    stack_size = 200,
+    durability = 1,
+    durability_description_key = "description.science-pack-remaining-amount-key",
+    durability_description_value = "description.science-pack-remaining-amount-value"
+  },
+  {
+    type = "tool",
     name = "sp-computer-science-pack-2",  -- #ForRegEx# - tool
     localised_description = {"item-description.science-pack"},
     icon = "__Spaghetorio__/graphics/icons/computer-science-pack-2.png",
@@ -5456,6 +5484,62 @@ data:extend({
     icon_mipmaps = 4,
     subgroup = "advanced-science",
     order = "g[material-science-pack]",
+    stack_size = 200,
+    durability = 1,
+    durability_description_key = "description.science-pack-remaining-amount-key",
+    durability_description_value = "description.science-pack-remaining-amount-value"
+  },
+  {
+    type = "tool",
+    name = "sp-metallurgical-science-pack-3",  -- #ForRegEx# - tool
+    localised_description = {"item-description.science-pack"},
+    icon = "__Spaghetorio__/graphics/icons/metallurgical-science-pack-3.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "advanced-science",
+    order = "g[metallurgical-science-pack]",
+    stack_size = 200,
+    durability = 1,
+    durability_description_key = "description.science-pack-remaining-amount-key",
+    durability_description_value = "description.science-pack-remaining-amount-value"
+  },
+  {
+    type = "tool",
+    name = "sp-electromagnetic-science-pack-3",  -- #ForRegEx# - tool
+    localised_description = {"item-description.science-pack"},
+    icon = "__Spaghetorio__/graphics/icons/electromagnetic-science-pack-3.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "advanced-science",
+    order = "g[electromagnetic-science-pack]",
+    stack_size = 200,
+    durability = 1,
+    durability_description_key = "description.science-pack-remaining-amount-key",
+    durability_description_value = "description.science-pack-remaining-amount-value"
+  },
+  {
+    type = "tool",
+    name = "sp-biological-science-pack-3",  -- #ForRegEx# - tool
+    localised_description = {"item-description.science-pack"},
+    icon = "__Spaghetorio__/graphics/icons/biological-science-pack-3.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "advanced-science",
+    order = "g[biological-science-pack]",
+    stack_size = 200,
+    durability = 1,
+    durability_description_key = "description.science-pack-remaining-amount-key",
+    durability_description_value = "description.science-pack-remaining-amount-value"
+  },
+  {
+    type = "tool",
+    name = "sp-cryogenic-science-pack-3",  -- #ForRegEx# - tool
+    localised_description = {"item-description.science-pack"},
+    icon = "__Spaghetorio__/graphics/icons/cryogenic-science-pack-3.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "advanced-science",
+    order = "g[cryogenic-science-pack]",
     stack_size = 200,
     durability = 1,
     durability_description_key = "description.science-pack-remaining-amount-key",

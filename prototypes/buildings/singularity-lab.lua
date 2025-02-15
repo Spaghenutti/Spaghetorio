@@ -109,8 +109,7 @@ data:extend({
       },
     },
     researching_speed = 1,
-    inputs =
-    {
+    inputs = {
       "automation-science-pack",
       "logistic-science-pack",
       "military-science-pack",
@@ -126,6 +125,8 @@ data:extend({
       "sp-electronic-science-pack-2",
       "sp-geological-science-pack-2",
       "sp-material-science-pack-2",
+      "sp-metallurgical-science-pack-2",
+      "sp-electromagnetic-science-pack-2",
       "sp-computer-science-pack-2",
       "sp-nuclear-science-pack-2",
       "production-science-pack",
@@ -138,6 +139,10 @@ data:extend({
       "sp-electronic-science-pack-3",
       "sp-geological-science-pack-3",
       "sp-material-science-pack-3",
+      "sp-metallurgical-science-pack-3",
+      "sp-electromagnetic-science-pack-3",
+      "sp-biological-science-pack-3",
+      "sp-cryogenic-science-pack-3",
       "sp-computer-science-pack-3",
       "sp-production-science-pack-3",
       "sp-nuclear-science-pack-3",
@@ -148,7 +153,13 @@ data:extend({
       "space-science-pack",  -- Optimization tech card
       "sp-advanced-science-pack",
       "sp-singularity-science-pack",
-      "sp-uniformity-science-pack"
+      "sp-uniformity-science-pack",
+
+      "agricultural-science-pack",
+      "electromagnetic-science-pack",
+      "metallurgic-science-pack",
+      "cryogenic-science-pack",
+      "promethium-science-pack",
     },
     vehicle_impact_sound = sounds.generic_impact,
     working_sound = {
