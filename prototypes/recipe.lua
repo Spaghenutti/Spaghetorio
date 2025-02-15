@@ -2598,15 +2598,15 @@ data:extend({
     category = "chemistry",
     subgroup = "fluid-recipes",
     enabled = false,
-    energy_required = 16,
+    energy_required = 32,
     hide_from_player_crafting = true,
     ingredients = {
-      {type = "fluid", name = "petroleum-gas", amount = 100},
+      {type = "fluid", name = "petroleum-gas", amount = 200},
       {type = "item", name = "sp-filter", amount = 1},
-      {type = "item", name = "coal", amount = 10},
+      {type = "item", name = "coal", amount = 20},
     },
     results = {
-      {type = "fluid", name = "sp-benzene", amount = 50}
+      {type = "fluid", name = "sp-benzene", amount = 100}
     },
     crafting_machine_tint = {
       primary = {r = 0.6, g = 0.6, b = 0.6, a = 1.000},

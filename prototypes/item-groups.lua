@@ -371,7 +371,16 @@ data:extend({
     name = "alien",
     group = "fluids",
     order = "f"
-  }
+  },
+  ------------------------------------------------------------------------------
+  -- MARK: other
+  ------------------------------------------------------------------------------
+  {
+    type = "item-subgroup",
+    name = "sp-void",
+    group = "other",
+    order = "zzz",
+  },
 })
 
 data.raw["item-subgroup"]["fill-barrel"].group = "fluids"

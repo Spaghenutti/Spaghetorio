@@ -6532,4 +6532,18 @@ data:extend({
     place_result = "sp-kr-superior-long-inserter",
     stack_size = 50,
   },
+  ------------------------------------------------------------------------------
+  -- MARK: Other
+  ------------------------------------------------------------------------------
+  {
+    type = "item",
+    name = "sp-void",
+    icon = "__Spaghetorio__/graphics/icons/void.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "inserter",
+    order = "zzz[kr-void]",
+    hidden = true,
+    stack_size = 1,
+  },
 })

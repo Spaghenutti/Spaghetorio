@@ -50,7 +50,7 @@ data:extend({
   {
     -- Crushing, used by crusher
     type = "recipe-category",
-    name = "sp-kr-fuel-burning",
+    name = "sp-kr-fluid-burning",
   },
   {
     -- Electrolysis, used by electrolysis plant
