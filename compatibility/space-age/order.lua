@@ -10,3 +10,9 @@ data.raw["autoplace-control"]["sulfuric_acid_geyser"].order = "c[sulfuric-acid-g
 data.raw.item["holmium-plate"].order = "a-plate-[holmium-plate]"
 data.raw.item["lithium-plate"].order = "a-plate-[lithium-plate]"
 data.raw.item["tungsten-plate"].order = "a-plate-[tungsten-plate]"
+
+-- MARK: science packs
+data.raw.tool["metallurgic-science-pack"].order = "h[metallurgic-science-pack]"
+data.raw.tool["electromagnetic-science-pack"].order = "i[electromagnetic-science-pack]"
+data.raw.tool["agricultural-science-pack"].order = "j[agricultural-science-pack]"
+data.raw.tool["cryogenic-science-pack"].order = "k[cryogenic-science-pack]"

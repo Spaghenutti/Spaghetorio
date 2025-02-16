@@ -296,15 +296,27 @@ data:extend({
   },
   {
     type = "item-subgroup",
-    name = "sp-acrosphere-corrupted",
+    name = "sp-basic-acrosphere-conversion",
     group = "science-products",
     order = "i"
   },
   {
     type = "item-subgroup",
+    name = "sp-advanced-acrosphere-conversion",
+    group = "science-products",
+    order = "j"
+  },
+  {
+    type = "item-subgroup",
+    name = "sp-acrosphere-corrupted",
+    group = "science-products",
+    order = "k"
+  },
+  {
+    type = "item-subgroup",
     name = "sp-crushing-acrosphere-corrupted",
     group = "resources",
-    order = "i-crushing"
+    order = "l-crushing"
   },
   ------------------------------------------------------------------------------
   -- MARK: combat

@@ -1,4 +1,12 @@
 
+-- MARK: icon changes
+data.raw.item["tungsten-plate"].icon = "__Spaghetorio__/graphics/icons/tungsten-plate.png"
+
+data.raw.tool["metallurgic-science-pack"].icon = "__Spaghetorio__/graphics/icons/metallurgic-science-pack-1.png"
+data.raw.tool["electromagnetic-science-pack"].icon = "__Spaghetorio__/graphics/icons/electromagnetic-science-pack-1.png"
+data.raw.tool["agricultural-science-pack"].icon = "__Spaghetorio__/graphics/icons/biological-science-pack-2.png"
+data.raw.tool["cryogenic-science-pack"].icon = "__Spaghetorio__/graphics/icons/cryogenic-science-pack-2.png"
+
 -- MARK: Change item subgroups
 -- group resource
 data.raw.item["calcite"].subgroup = "raw-resource"
@@ -27,8 +35,18 @@ data.raw.item["quantum-processor"].subgroup = "advanced-intermediate-product"
 -- group production
 data.raw.item["crusher"].subgroup = "production-machine"
 
+-- group science
+data.raw.tool["metallurgic-science-pack"].subgroup = "basic-science"
+data.raw.tool["electromagnetic-science-pack"].subgroup = "basic-science"
+data.raw.tool["agricultural-science-pack"].subgroup = "intermediate-science"
+data.raw.tool["cryogenic-science-pack"].subgroup = "intermediate-science"
+data.raw.tool["promethium-science-pack"].subgroup = "futuristic-science"
+
 -- MARK: Change fuel values
 data.raw.item["carbon"].fuel_value = "4MJ"
 
 -- MARK: stack size
 data.raw.item["crusher"].stack_size = 50
+
+-- MARK: localized name
+data.raw.tool["agricultural-science-pack"].localized_name = {"custom-localization.biological-science-pack"}

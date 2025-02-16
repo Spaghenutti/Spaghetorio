@@ -2,7 +2,6 @@ local util = require("data-util")
 
 -- MARK: Change icons
 data.raw.item["steel-plate"].icon = "__Spaghetorio__/graphics/krastorio/icons/items/steel-plate.png"
-data.raw.item["tungsten-plate"].icon = "__Spaghetorio__/graphics/icons/tungsten-plate.png"
 
 -- MARK: Change item subgroups
 data.raw.item["sulfur"].subgroup = "processed-resource"

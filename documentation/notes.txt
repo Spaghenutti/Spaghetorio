@@ -17,6 +17,25 @@ Order of processing ores:
   - barium
 
 
+science pack order
+  - a[automation-science-pack]
+  - b[logistic-science-pack]
+  - c[military-science-pack]
+  - d[chemical-science-pack]
+  - e[electronic-science-pack]
+  - f[geological-science-pack]
+  - g[material-science-pack]
+  - h[metallurgic-science-pack]
+  - i[electromagnetic-science-pack]
+  - j[agricultural-science-pack]
+  - k[cryogenic-science-pack]
+  - l[production-science-pack]
+  - m[computer-science-pack]
+  - n[nuclear-science-pack]
+  - o[space-science-pack]
+  - p[utility-science-pack]
+
+
 Krastorio rare-metal items:
   - "raw-rare-metals"
   - "enriched-rare-metals"

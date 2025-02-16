@@ -44,8 +44,9 @@ data.raw.item["uranium-235"].order = "z-nuclear-2-[uranium-235]"
 data.raw.item["uranium-238"].order = "z-nuclear-1-[uranium-238]"
 
 -- Change order of science items
-data.raw.tool["production-science-pack"].order = "k[production-science-pack]"
-data.raw.tool["utility-science-pack"].order = "l[utility-science-pack]"
+data.raw.tool["production-science-pack"].order = "l[production-science-pack]"
+data.raw.tool["space-science-pack"].order = "o[space-science-pack]"
+data.raw.tool["utility-science-pack"].order = "p[utility-science-pack]"
 
 -- Change order of autoplace control
 data.raw["autoplace-control"]["iron-ore"].order = "b[iron-ore]"
