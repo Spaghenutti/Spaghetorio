@@ -388,6 +388,10 @@ data:extend({
       },
       {
         type = "unlock-recipe",
+        recipe = "sp-crushing-magnesium-ore"
+      },
+      {
+        type = "unlock-recipe",
         recipe = "sp-crushed-chromite-smelting"
       },
       {
@@ -417,6 +421,10 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "sp-crushed-nickel-smelting"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-crushed-magnesium-smelting"
       },
     },
     prerequisites = {
@@ -716,18 +724,17 @@ data:extend({
     },
     prerequisites = {
       "sp-zirconium-processing",
-      "production-science-pack"
+      "sp-silicon-processing"
     },
     unit =
     {
       count = 300,
       ingredients = {
-        {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
         {"chemical-science-pack", 1},
-        {"sp-geological-science-pack-2", 1},
-        {"sp-material-science-pack-2", 1},
-        {"production-science-pack", 1}
+        {"sp-material-science-pack-1", 1},
+        {"sp-geological-science-pack-1", 1}
       },
       time = 30
     },
@@ -826,19 +833,18 @@ data:extend({
       }
     },
     prerequisites = {
-      "sp-material-science-pack-2",
-      "sp-geological-science-pack-2"
+      "sp-basic-crushing-smelting",
+      "sp-perchloric-acid"
     },
     unit =
     {
       count = 200,
       ingredients = {
-        {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"sp-electronic-science-pack-1", 1},
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
         {"chemical-science-pack", 1},
-        {"sp-geological-science-pack-2", 1},
-        {"sp-material-science-pack-2", 1}
+        {"sp-geological-science-pack-1", 1},
+        {"sp-material-science-pack-1", 1}
       },
       time = 30
     },
@@ -922,18 +928,18 @@ data:extend({
     },
     prerequisites = {
       "sp-sodium-processing",
-      "sp-perchloric-acid"
+      "sp-perchloric-acid",
+      "sp-basic-crushing-smelting"
     },
     unit =
     {
       count = 300,
       ingredients = {
-        {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"sp-material-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1},
-        {"sp-geological-science-pack-2", 1},
-        {"production-science-pack", 1}
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"sp-material-science-pack-1", 1},
+        {"sp-geological-science-pack-1", 1}
       },
       time = 30
     },
@@ -973,6 +979,7 @@ data:extend({
     },
     prerequisites = {
       "sp-phosphorus-processing",
+      "sp-basic-crushing-smelting"
     },
     unit =
     {
@@ -1268,6 +1275,10 @@ data:extend({
         type = "unlock-recipe",
         recipe = "sp-stainless-steel-gear-wheel"
       },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-nickel-chromium"
+      },
     },
     prerequisites = {
       "advanced-material-processing"
@@ -1405,6 +1416,10 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "sp-TiNb"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-nimonic"
       },
     },
     prerequisites = {
@@ -1621,26 +1636,15 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "sp-magnesium-slab"
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-crushing-magnesium-ore"
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-crushed-magnesium-smelting"
-      },
+      }
     },
-    prerequisites = {"sp-material-science-pack-2"},
+    prerequisites = {"sp-kr-fluids-chemistry"},
     unit =
     {
       count = 200,
       ingredients = {
         {"sp-automation-science-pack-2", 1},
         {"logistic-science-pack", 1},
-        {"sp-material-science-pack-2", 1},
-        {"sp-geological-science-pack-1", 1},
-        {"chemical-science-pack", 1}
       },
       time = 30
     },
@@ -2073,19 +2077,26 @@ data:extend({
         type = "unlock-recipe",
         recipe = "sp-electromagnet"
       },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-ferrite"
+      },
     },
     prerequisites = {
       "sp-electronic-science-pack-1",
-      "sp-material-science-pack-1"
+      "sp-material-science-pack-1",
+      "sp-magnesium-processing",
+      "advanced-material-processing-2"
     },
     unit =
     {
-      count = 50,
+      count = 150,
       ingredients = {
         {"automation-science-pack", 1},
-        {"sp-electronic-science-pack-1", 1},
+        {"logistic-science-pack", 1},
+        {"chemical-science-pack", 1},
         {"sp-material-science-pack-1", 1},
-        {"logistic-science-pack", 1}
+        {"sp-electronic-science-pack-1", 1}
       },
       time = 30
     },
@@ -2296,16 +2307,17 @@ data:extend({
         recipe = "sp-perchloric-acid"
       }
     },
-    prerequisites = {"sp-chemical-science-pack-2"},
+    prerequisites = {
+      "chemical-science-pack"
+    },
     unit =
     {
       count = 200,
       ingredients = {
-        {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1},
-        {"sp-material-science-pack-2", 1},
-        {"sp-geological-science-pack-2", 1}
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"sp-material-science-pack-1", 1}
       },
       time = 30
     },

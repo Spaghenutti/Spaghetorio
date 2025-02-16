@@ -6,6 +6,7 @@ local remove_prototypes = require("remove-prototypes")
 --------------------------------------------------------------------------------
 remove_prototypes.remove_one_prototype("recipe", "simple-coal-liquefaction")
 remove_prototypes.remove_one_prototype("recipe", "acid-neutralisation")
+remove_prototypes.remove_one_prototype("recipe", "coal-synthesis")
 
 --------------------------------------------------------------------------------
 -- Recipe changes for space age factorio items

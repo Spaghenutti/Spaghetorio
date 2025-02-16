@@ -432,6 +432,34 @@ data:extend({
       {type = "item", name = "sp-potassium-ingot", amount = 3}
     }
   },
+  {
+    type = "recipe",
+    name = "sp-nickel-chromium",  -- #ForRegEx# - recipe
+    category = "smelting",
+    enabled = false,
+    energy_required = 6,
+    ingredients = {
+      {type = "item", name = "sp-nickel-ingot", amount = 4},
+      {type = "item", name = "sp-chromium-plate", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-nickel-chromium", amount = 5}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-crucible",  -- #ForRegEx# - recipe
+    category = "smelting",
+    enabled = false,
+    energy_required = 4,
+    ingredients = {
+      {type = "item", name = "sp-sand", amount = 2},
+      {type = "item", name = "carbon", amount = 2}
+    },
+    results = {
+      {type = "item", name = "sp-crucible", amount = 1}
+    }
+  },
   ------------------------------------------------------------------------------
   -- MARK: crushed-smelting
   ------------------------------------------------------------------------------
@@ -753,6 +781,21 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "sp-nimonic",  -- #ForRegEx# - recipe
+    category = "intermediate-smelting",
+    enabled = false,
+    energy_required = 16,
+    ingredients = {
+      {type = "item", name = "sp-titanium-plate", amount = 3},
+      {type = "item", name = "sp-chromium-plate", amount = 2},
+      {type = "item", name = "sp-nickel-ingot", amount = 5}
+    },
+    results = {
+      {type = "item", name = "sp-nimonic", amount = 10}
+    }
+  },
+  {
+    type = "recipe",
     name = "sp-nitenol",  -- #ForRegEx# - recipe
     category = "intermediate-smelting",
     enabled = false,
@@ -777,6 +820,20 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-niobium-steel", amount = 20}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-zircaloy",  -- #ForRegEx# - recipe
+    category = "intermediate-smelting",
+    enabled = false,
+    energy_required = 30,
+    ingredients = {
+      {type = "item", name = "sp-zirconium-rod", amount = 20},
+      {type = "item", name = "sp-tin-ingot", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-zircaloy", amount = 20}
     }
   },
   {
@@ -1218,6 +1275,35 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-tungsten-steel", amount = 10}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-ferrite",  -- #ForRegEx# - recipe
+    category = "intermediate-smelting",
+    enabled = false,
+    energy_required = 8,
+    ingredients = {
+      {type = "item", name = "iron-plate", amount = 5},
+      {type = "item", name = "sp-magnesium-slab", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-ferrite", amount = 4}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-heat-resistant-tile",  -- #ForRegEx# - recipe
+    category = "intermediate-smelting",
+    enabled = false,
+    energy_required = 5.2,
+    ingredients = {
+      {type = "item", name = "sp-zirconia", amount = 2},
+      {type = "item", name = "sp-silica", amount = 1},
+      {type = "item", name = "carbon", amount = 3}
+    },
+    results = {
+      {type = "item", name = "sp-heat-resistant-tile", amount = 1}
     }
   },
   ------------------------------------------------------------------------------
@@ -3592,7 +3678,7 @@ data:extend({
     results = {
       {type = "fluid", name = "water", amount = 30 },
     },
-    subgroup = "raw-material",
+    subgroup = "fluid-recipes",
     order = "a[atmosphere-condensation]-a0[water]",
   },
   {
@@ -4181,6 +4267,25 @@ data:extend({
       tertiary = {r = 0.768, g = 0.665, b = 0.762, a = 1.000},
       quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
     }
+  },
+  {
+    type = "recipe",
+    name = "sp-magnesium-slab",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/icons/magnesium-slab.png",
+    icon_size = 64,
+    scale = 0.25,
+    category = "sp-kr-electrolysis",
+    subgroup = "raw-material",
+    enabled = false,
+    energy_required = 2,
+    ingredients = {
+      {type = "item", name = "sp-magnesium-chloride", amount = 2}
+    },
+    results = {
+      {type = "item", name = "sp-magnesium-slab", amount = 2},
+      {type = "fluid", name = "sp-chlorine", amount = 10}
+    },
+    order = "ingot-[magnesium-slab]"
   },
   {
     type = "recipe",
@@ -4821,31 +4926,15 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-heat-resistant-tile",  -- #ForRegEx# - recipe
-    category = "crafting",
-    enabled = false,
-    energy_required = 5.2,
-    ingredients = {
-      {type = "item", name = "sp-zirconia", amount = 2},
-      {type = "item", name = "sp-silica", amount = 1},
-      {type = "item", name = "carbon", amount = 3}
-    },
-    results = {
-      {type = "item", name = "sp-heat-resistant-tile", amount = 1}
-    }
-  },
-  {
-    type = "recipe",
     name = "sp-magnet",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
-    energy_required = 3.6,
+    energy_required = 2,
     ingredients = {
-      {type = "item", name = "iron-plate", amount = 3},
-      {type = "item", name = "iron-ore", amount = 1}
+      {type = "item", name = "sp-ferrite", amount = 1},
     },
     results = {
-      {type = "item", name = "sp-magnet", amount = 2}
+      {type = "item", name = "sp-magnet", amount = 1}
     }
   },
   {
@@ -5164,7 +5253,7 @@ data:extend({
     enabled = false,
     energy_required = 5,
     ingredients = {
-      {type = "item", name = "tungsten-plate", amount = 3},
+      {type = "item", name = "sp-nickel-chromium", amount = 3},
       {type = "item", name = "sp-machined-parts", amount = 2},
       {type = "item", name = "sp-ceramics", amount = 1},
       {type = "item", name = "carbon", amount = 3}

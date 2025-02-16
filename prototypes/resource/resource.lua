@@ -360,6 +360,7 @@ data:extend({
       mining_time = 1.25,
       map_color = {r=0.75, g=0.75, b=0.75},
       mining_visualisation_tint = {r=0.75, g=0.75, b=0.75, a=1.0},
+      required_fluid = "sp-hydrogen-chloride"
     },
     {
       base_density = 3,
@@ -539,6 +540,7 @@ data:extend({
       mining_time = 1.5,
       map_color = {r=0.8, g=0.65, b=0},
       mining_visualisation_tint = {r=0.8, g=0.65, b=0, a=1.0},
+      required_fluid = "sp-perchloric-acid"
     },
     {
       base_density = 2.25,

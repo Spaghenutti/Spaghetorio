@@ -247,16 +247,15 @@ data.raw.technology["automated-rail-transportation"].unit.ingredients = {
 table.insert(data.raw.technology["advanced-material-processing"].prerequisites, "sp-material-science-pack-1")
 table.insert(data.raw.technology["advanced-material-processing"].unit.ingredients, {"sp-material-science-pack-1", 1})
 
-table.insert(data.raw.technology["advanced-material-processing-2"].prerequisites, "sp-tungsten-processing")
 table.insert(data.raw.technology["advanced-material-processing-2"].prerequisites, "sp-basic-ceramics")
 table.insert(data.raw.technology["advanced-material-processing-2"].effects, {type = "unlock-recipe", recipe = "sp-heating-filament"})
+table.insert(data.raw.technology["advanced-material-processing-2"].effects, {type = "unlock-recipe", recipe = "sp-crucible"})
 data.raw.technology["advanced-material-processing-2"].unit.ingredients = {
-  {"sp-automation-science-pack-2", 1},
-  {"sp-logistic-science-pack-2", 1},
-  {"sp-material-science-pack-2", 1},
-  {"sp-chemical-science-pack-2", 1},
-  {"sp-geological-science-pack-2", 1},
-  {"production-science-pack", 1}
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"chemical-science-pack", 1},
+  {"sp-material-science-pack-1", 1},
+  {"sp-geological-science-pack-1", 1}
 }
 
 table.insert(data.raw.technology["fluid-handling"].effects, {type = "unlock-recipe", recipe = "sp-valve"})
@@ -292,6 +291,7 @@ data.raw.technology["kovarex-enrichment-process"].unit.ingredients = {
   {"sp-nuclear-science-pack-2", 1}
 }
 
+table.insert(data.raw.technology["nuclear-power"].effects, {type = "unlock-recipe", recipe = "sp-zircaloy"})
 table.insert(data.raw.technology["nuclear-power"].effects, {type = "unlock-recipe", recipe = "sp-reactor-core"})
 table.insert(data.raw.technology["nuclear-power"].effects, {type = "unlock-recipe", recipe = "sp-control-rod"})
 table.insert(data.raw.technology["nuclear-power"].prerequisites, "sp-turbine-parts")

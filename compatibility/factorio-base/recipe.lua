@@ -1370,8 +1370,10 @@ util.recipe.change_recipe_ingredients("electric-furnace",
     {type = "item", name = "sp-heating-filament", amount = 10},
     {type = "item", name = "sp-electromagnet", amount = 20},
     {type = "item", name = "stone-brick", amount = 30},
-    {type = "item", name = "steel-plate", amount = 20},
-    {type = "item", name = "electric-engine-unit", amount = 8}
+    {type = "item", name = "sp-stainless-steel", amount = 20},
+    {type = "item", name = "sp-nickel-chromium", amount = 20},
+    {type = "item", name = "electric-engine-unit", amount = 8},
+    {type = "item", name = "sp-crucible", amount = 2}
   },
   16)
 

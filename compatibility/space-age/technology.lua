@@ -30,6 +30,7 @@ data.raw.technology["stack-inserter"].unit.ingredients = {
   {"utility-science-pack", 1}
 }
 
+table.insert(data.raw.technology["advanced-combinators"].prerequisites, "advanced-circuit")
 data.raw.technology["advanced-combinators"].unit.ingredients = {
   {"automation-science-pack", 1},
   {"logistic-science-pack", 1},

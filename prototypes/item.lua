@@ -1765,6 +1765,16 @@ data:extend({
   },
   {
     type = "item",
+    name = "sp-ferrite",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/ferrite.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "alloy",
+    order = "[ferrite]",
+    stack_size = 100
+  },
+  {
+    type = "item",
     name = "sp-duralumin",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/duralumin.png",
     icon_size = 64,
@@ -1781,6 +1791,36 @@ data:extend({
     scale = 0.5,
     subgroup = "alloy",
     order = "[aluminum-brass]",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "sp-nickel-chromium",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/nickel-chromium.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "alloy",
+    order = "[nickel-chromium]",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "sp-nimonic",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/nimonic.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "alloy",
+    order = "[nimonic]",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "sp-zircaloy",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/zircaloy.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "alloy",
+    order = "[zircaloy]",
     stack_size = 100
   },
   {
@@ -2921,7 +2961,8 @@ data:extend({
     subgroup = "mechanical-component",
     order = "cable-[glass-fiber]",
     stack_size = 100
-  },  {
+  },
+  {
     type = "item",
     name = "sp-kevlar",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/kevlar.png",
@@ -2929,6 +2970,16 @@ data:extend({
     scale = 0.5,
     subgroup = "mechanical-component",
     order = "other-z-[kevlar]",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "sp-crucible",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/crucible.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "mechanical-component",
+    order = "ceramic-[crucible]",
     stack_size = 100
   },
   {

@@ -378,28 +378,34 @@ Items:
       - 63% Nickel, 30% copper, 2% Manganese, 1% Iron, 4% Titanium
       - Marine engineering
       - Chemical processing
-    - Waspalloy
+    + Waspalloy
       - 60% nickel, 20% chromium, 20% cobalt
       - Aerospace
       - Gas turbine
-    - Satellite 6 alloy
+    + Satellite 6 alloy
       - 60% cobalt, 30% Chromium, 6% tungsten, 2% manganese, 2% molybden
       - cutting tools
       - wear resistant applications
-    - Elgiloy:
+    + Elgiloy:
       - 40% cobalt, 20% chromium, 15% nickel, 15% iron, 8% molybden, 2% manganese
       - springs
       - medical devices
-    - Maraging Steel: 
+    + Maraging Steel: 
       - Nickel (18%), Cobalt (8-12%), Molybdenum (3-5%) rest iron
       - Aerospace, tooling.
-    - Kovar:
+    + Kovar:
       - Nickel (29%), Cobalt (17%), Iron (balance) 
       - Electronics
       - glass-to-metal seals.
-    - Zircaloy: 
+    + Zircaloy: 
       - Zirconium (98%), Tin (1.5%) 
       - Nuclear reactors.
+    + Nickel chromium:
+      - Nickel 80%, Chromium 20%
+      - High temperature
+    + Nimonic:
+      - Nickel 50%, chromium 20%, Titanium 30%
+      - high temperature, low creep
   
   - Exotic alloys:
     - Alnico: Aluminum (8%), Nickel (14%), Cobalt (24%), Iron (balance) - Magnets, sensors.
