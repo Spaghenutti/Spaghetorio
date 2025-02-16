@@ -56,14 +56,14 @@ util.recipe.change_recipe_ingredients("tungsten-plate",
   10)
 -- util.recipe.change_recipe_ingredients("sulfur",
 --   {
---     {type="fluid", name="water", amount=60},
---     {type="fluid", name="petroleum-gas", amount=60}
+--     {type = "fluid", name = "water", amount = 60},
+--     {type = "fluid", name = "petroleum-gas", amount = 60}
 --   },
 --   2)
 
 -- data.raw.recipe["sulfur"].results = {
 --   {type = "item", name = "sulfur", amount = 4},
---   {type="fluid", name="sp-dirty-water-with-sulfur", amount=60}
+--   {type = "fluid", name = "sp-dirty-water-with-sulfur", amount = 60}
 -- }
 -- data.raw.recipe["sulfur"].icon = "__base__/graphics/icons/sulfur.png"
 -- data.raw.recipe["sulfur"].icon_size = 64
@@ -159,7 +159,7 @@ util.recipe.change_recipe_ingredients("battery",
     {type = "item", name = "iron-plate", amount = 1},
     {type = "item", name = "sp-salt", amount = 2},
     {type = "item", name = "sp-insulated-wire", amount = 2},
-    {type="fluid", name="sulfuric-acid", amount=20}
+    {type = "fluid", name = "sulfuric-acid", amount = 20}
   },
   nil)
 
@@ -175,7 +175,7 @@ util.recipe.change_recipe_ingredients("concrete",
   {
     {type = "item", name = "sp-cement", amount = 10},
     {type = "item", name = "sp-sand", amount = 5},
-    {type="fluid", name="water", amount=100}
+    {type = "fluid", name = "water", amount = 100}
   },
   6)
 
@@ -185,7 +185,7 @@ util.recipe.change_recipe_ingredients("refined-concrete",
     {type = "item", name = "iron-stick", amount = 4},
     {type = "item", name = "sp-alumina", amount = 2},
     {type = "item", name = "sp-sand", amount = 6},
-    {type="fluid", name="water", amount=150}
+    {type = "fluid", name = "water", amount = 150}
   },
   8)
 
@@ -791,7 +791,7 @@ util.recipe.change_recipe_ingredients("explosives",
   {
     {type = "item", name = "carbon", amount = 3},
     {type = "item", name = "iron-plate", amount = 1},
-    {type="fluid", name="sp-sulfamate", amount=10}
+    {type = "fluid", name = "sp-sulfamate", amount = 10}
   },
   3)
 
@@ -950,7 +950,7 @@ util.recipe.change_recipe_ingredients("land-mine",
     {type = "item", name = "sp-machined-parts", amount = 12},
     {type = "item", name = "sp-bolts", amount = 4},
     {type = "item", name = "electronic-circuit", amount = 4},
-    {type="fluid", name="sp-sulfamate", amount=40}
+    {type = "fluid", name = "sp-sulfamate", amount = 40}
   },
   8)
 

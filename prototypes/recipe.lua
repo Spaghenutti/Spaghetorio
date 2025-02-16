@@ -1293,6 +1293,78 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "sp-ferrite-with-nickel",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/ferrite.png", 64,
+                                         "__Spaghetorio__/graphics/icons/nickel-ingot.png", 64),
+    hide_from_player_crafting = true,
+    subgroup = "alloy",
+    category = "intermediate-smelting",
+    enabled = false,
+    energy_required = 8,
+    ingredients = {
+      {type = "item", name = "iron-plate", amount = 5},
+      {type = "item", name = "sp-nickel-ingot", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-ferrite", amount = 4}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-ferrite-with-zinc",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/ferrite.png", 64,
+                                         "__Spaghetorio__/graphics/icons/zinc-plate.png", 64),
+    hide_from_player_crafting = true,
+    subgroup = "alloy",
+    category = "intermediate-smelting",
+    enabled = false,
+    energy_required = 8,
+    ingredients = {
+      {type = "item", name = "iron-plate", amount = 5},
+      {type = "item", name = "sp-zinc-plate", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-ferrite", amount = 4}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-ferrite-with-cobalt",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/ferrite.png", 64,
+                                         "__Spaghetorio__/graphics/icons/cobalt-billet.png", 64),
+    hide_from_player_crafting = true,
+    subgroup = "alloy",
+    category = "intermediate-smelting",
+    enabled = false,
+    energy_required = 6,
+    ingredients = {
+      {type = "item", name = "iron-plate", amount = 5},
+      {type = "item", name = "sp-cobalt-billet", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-ferrite", amount = 4}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-ferrite-with-copper",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/ferrite.png", 64,
+                                         "__base__/graphics/icons/copper-plate.png", 64),
+    hide_from_player_crafting = true,
+    subgroup = "alloy",
+    category = "intermediate-smelting",
+    enabled = false,
+    energy_required = 10,
+    ingredients = {
+      {type = "item", name = "iron-plate", amount = 5},
+      {type = "item", name = "copper-plate", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-ferrite", amount = 4}
+    }
+  },
+  {
+    type = "recipe",
     name = "sp-heat-resistant-tile",  -- #ForRegEx# - recipe
     category = "intermediate-smelting",
     enabled = false,
@@ -3257,7 +3329,7 @@ data:extend({
     energy_required = 3,
     ingredients = {
       {type = "item", name = "sp-potassium-ore", amount = 2},
-      {type = "item", name = "sp-magnesium-chloride", amount = 2},
+      {type = "fluid", name = "sp-perchloric-acid", amount = 5},
     },
     results = {
       {type = "item", name = "sp-potassium-chloride", amount = 1}
@@ -3317,7 +3389,7 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "chemical-staging",
-    subgroup = "fluid-recipes",
+    subgroup = "processed-resource",
     enabled = false,
     energy_required = 1,
     ingredients = {
@@ -9964,7 +10036,7 @@ data:extend({
       {type = "item", name = "sp-quark-gluon-plasma-container", amount = 8},
     },
     results = {
-      {type = "item", name = "sp-sideral-compute-core", amount = 1}
+      {type = "item", name = "sp-dark-matter-mining-satellite", amount = 1}
     }
   },
   {

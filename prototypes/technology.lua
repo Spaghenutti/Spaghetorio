@@ -929,7 +929,8 @@ data:extend({
     prerequisites = {
       "sp-sodium-processing",
       "sp-perchloric-acid",
-      "sp-basic-crushing-smelting"
+      "sp-basic-crushing-smelting",
+      "metallurgic-science-pack"
     },
     unit =
     {
@@ -939,7 +940,8 @@ data:extend({
         {"logistic-science-pack", 1},
         {"chemical-science-pack", 1},
         {"sp-material-science-pack-1", 1},
-        {"sp-geological-science-pack-1", 1}
+        {"sp-geological-science-pack-1", 1},
+        {"metallurgic-science-pack", 1}
       },
       time = 30
     },
@@ -1190,16 +1192,18 @@ data:extend({
       },
     },
     prerequisites = {
-      "sp-magnesium-processing"
+      "sp-perchloric-acid",
+      "sp-chemical-science-pack-2"
     },
     unit =
     {
       count = 150,
       ingredients = {
-        {"automation-science-pack", 1},
-        {"logistic-science-pack", 1},
-        {"sp-material-science-pack-1", 1},
-        {"sp-geological-science-pack-1", 1}
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1}
       },
       time = 30
     },
@@ -1313,10 +1317,7 @@ data:extend({
       },
     },
     prerequisites = {
-      "sp-zirconium-processing",
-      "sp-magnesium-processing",
-      "sp-zinc-processing",
-      "advanced-material-processing-2"
+      "sp-alloy-forge"
     },
     unit =
     {
@@ -1353,10 +1354,7 @@ data:extend({
       },
     },
     prerequisites = {
-      "sp-zirconium-processing",
-      "sp-magnesium-processing",
-      "sp-zinc-processing",
-      "advanced-material-processing-2"
+      "sp-alloy-forge"
     },
     unit =
     {
@@ -1386,7 +1384,9 @@ data:extend({
         recipe = "sp-inconel"
       },
     },
-    prerequisites = {"advanced-material-processing-2"},
+    prerequisites = {
+      "sp-alloy-forge"
+    },
     unit =
     {
       count = 500,
@@ -2080,6 +2080,22 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "sp-ferrite"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-ferrite-with-nickel"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-ferrite-with-zinc"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-ferrite-with-cobalt"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-ferrite-with-copper"
       },
     },
     prerequisites = {
@@ -6695,12 +6711,19 @@ data:extend({
       },
     },
     prerequisites = {
-      "sp-material-science-pack-2"
+      "advanced-material-processing-2",
+      "metallurgic-science-pack"
     },
     unit = {
       count = 200,
       ingredients = {
-        {"automation-science-pack", 1}
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"sp-material-science-pack-1", 1},
+        {"sp-geological-science-pack-1", 1},
+        {"sp-electronic-science-pack-1", 1},
+        {"metallurgic-science-pack", 1},
       },
       time = 45,
     },
@@ -7556,14 +7579,16 @@ data:extend({
     },
     unit =
     {
-      count = 200,
+      count = 250,
       ingredients = {
         {"automation-science-pack", 1},
         {"logistic-science-pack", 1},
         {"chemical-science-pack", 1},
         {"sp-electronic-science-pack-1", 1},
         {"sp-geological-science-pack-1", 1},
-        {"sp-material-science-pack-1", 1}
+        {"sp-material-science-pack-1", 1},
+        {"metallurgic-science-pack", 1},
+        {"electromagnetic-science-pack", 1}
       },
       time = 30
     },

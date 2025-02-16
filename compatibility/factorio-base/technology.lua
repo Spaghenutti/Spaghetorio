@@ -140,10 +140,9 @@ data.raw.technology["battery"].prerequisites = {
   "sp-vinyl-chloride",
   "sp-salt",
   "sp-cobalt-processing",
-  "production-science-pack"
 }
 data.raw.technology["battery"].unit.ingredients = {
-  {"sp-automation-science-pack-2", 1},
+  {"automation-science-pack", 1},
   {"logistic-science-pack", 1},
   {"production-science-pack", 1},
   {"chemical-science-pack", 1},

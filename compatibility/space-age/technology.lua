@@ -47,3 +47,48 @@ data.raw.technology["quality-module"].unit.ingredients = {
   {"sp-electronic-science-pack-1", 1},
   {"chemical-science-pack", 1}
 }
+
+data.raw.technology["cryogenic-plant"].prerequisites = {
+  "heating-tower"
+}
+
+data.raw.technology["metallurgic-science-pack"].icon = "__Spaghetorio__/graphics/hr-icons/metallurgic-science-pack-1.png"
+data.raw.technology["metallurgic-science-pack"].prerequisites = {
+  "sp-magnet"
+}
+data.raw.technology["metallurgic-science-pack"].research_trigger = nil
+data.raw.technology["metallurgic-science-pack"].unit = {
+  count = 250,
+  ingredients = {
+    {"automation-science-pack", 1},
+    {"logistic-science-pack", 1},
+    {"sp-material-science-pack-1", 1},
+    {"sp-electronic-science-pack-1", 1},
+    {"sp-geological-science-pack-1", 1},
+    {"chemical-science-pack", 1}
+  },
+  time = 30
+}
+
+data.raw.technology["electromagnetic-science-pack"].icon = "__Spaghetorio__/graphics/hr-icons/electromagnetic-science-pack-1.png"
+data.raw.technology["electromagnetic-science-pack"].prerequisites = {
+  "sp-magnet",
+  "battery"
+}
+data.raw.technology["electromagnetic-science-pack"].research_trigger = nil
+data.raw.technology["electromagnetic-science-pack"].unit = {
+  count = 250,
+  ingredients = {
+    {"automation-science-pack", 1},
+    {"logistic-science-pack", 1},
+    {"sp-material-science-pack-1", 1},
+    {"sp-electronic-science-pack-1", 1},
+    {"sp-geological-science-pack-1", 1},
+    {"chemical-science-pack", 1}
+  },
+  time = 30
+}
+
+data.raw.technology["agricultural-science-pack"].icon = "__Spaghetorio__/graphics/hr-icons/biological-science-pack-2.png"
+
+data.raw.technology["cryogenic-science-pack"].icon = "__Spaghetorio__/graphics/hr-icons/cryogenic-science-pack-2.png"

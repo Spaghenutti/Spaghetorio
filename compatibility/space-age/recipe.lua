@@ -109,6 +109,7 @@ util.recipe.change_recipe_ingredients("quality-module",
 --------------------------------------------------------------------------------
 -- MARK: Combat
 --------------------------------------------------------------------------------
+
 util.recipe.change_recipe_ingredients("toolbelt-equipment",
   {
     {type = "item", name = "advanced-circuit", amount = 3},
@@ -130,3 +131,35 @@ util.recipe.change_recipe_ingredients("crusher",
     {type = "item", name = "electric-engine-unit", amount = 4}
   },
   10)
+
+--------------------------------------------------------------------------------
+-- MARK: science pack
+--------------------------------------------------------------------------------
+
+data.raw.recipe["metallurgic-science-pack"].category = "intermediate-smelting"
+util.recipe.change_recipe_ingredients("metallurgic-science-pack",
+  {
+    {type = "item", name = "sp-blank-tech-card", amount = 5},
+    {type = "item", name = "sp-brass", amount = 5},
+    {type = "item", name = "sp-ferrite", amount = 5},
+    {type = "item", name = "sp-nickel-chromium", amount = 5}
+  },
+  40)
+data.raw.recipe["metallurgic-science-pack"].results = {
+  {type = "item", name = "metallurgic-science-pack", amount = 5}
+}
+
+data.raw.recipe["electromagnetic-science-pack"].category = "crafting"
+util.recipe.change_recipe_ingredients("electromagnetic-science-pack",
+  {
+    {type = "item", name = "sp-blank-tech-card", amount = 5},
+    {type = "item", name = "battery", amount = 5},
+    {type = "item", name = "sp-electromagnet", amount = 5},
+    {type = "item", name = "sp-automation-core", amount = 5},
+    {type = "item", name = "sp-vacuum-tube", amount = 5},
+    {type = "item", name = "sp-transistor", amount = 5}
+  },
+  20)
+data.raw.recipe["electromagnetic-science-pack"].results = {
+  {type = "item", name = "electromagnetic-science-pack", amount = 5}
+}
