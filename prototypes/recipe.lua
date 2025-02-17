@@ -3339,12 +3339,53 @@ data:extend({
     enabled = false,
     energy_required = 6,
     ingredients = {
-      {type = "item", name = "sp-potassium-hydroxade", amount = 3},
+      {type = "item", name = "sp-potassium-hydroxide", amount = 3},
       {type = "fluid", name = "sp-hydrogen-cyanide", amount = 4},
     },
     results = {
       {type = "item", name = "sp-potassium-cyanide", amount = 3}
     }
+  },
+  {
+    type = "recipe",
+    name = "sp-ammonium-hydroxide-solution",  -- #ForRegEx# - recipe
+    category = "advanced-chemistry",
+    enabled = false,
+    energy_required = 10,
+    ingredients = {
+      {type = "fluid", name = "water", amount = 50},
+      {type = "fluid", name = "sp-benzene", amount = 50},
+      {type = "fluid", name = "ammonia", amount = 50},
+    },
+    results = {
+      {type = "fluid", name = "sp-ammonium-hydroxide-solution", amount = 50}
+    },
+    -- crafting_machine_tint = {
+    --   primary = {r = 0.3, g = 0.3, b = 0.3, a = 1.000},
+    --   secondary = {r = 0.1, g = 0.1, b = 0.1, a = 1.000},
+    --   tertiary = {r = 0.0, g = 0.0, b = 0.0, a = 1.000},
+    --   quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
+    -- }
+  },
+  {
+    type = "recipe",
+    name = "sp-potassium-hydroxide-solution",  -- #ForRegEx# - recipe
+    category = "advanced-chemistry",
+    enabled = false,
+    energy_required = 10,
+    ingredients = {
+      {type = "item", name = "sp-potassium-hydroxide", amount = 5},
+      {type = "fluid", name = "sp-glycerin", amount = 50},
+    },
+    results = {
+      {type = "fluid", name = "sp-potassium-hydroxide-solution", amount = 50}
+    },
+    -- crafting_machine_tint = {
+    --   primary = {r = 0.3, g = 0.3, b = 0.3, a = 1.000},
+    --   secondary = {r = 0.1, g = 0.1, b = 0.1, a = 1.000},
+    --   tertiary = {r = 0.0, g = 0.0, b = 0.0, a = 1.000},
+    --   quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
+    -- }
   },
   ------------------------------------------------------------------------------
   -- MARK: chemical-staging
@@ -3479,6 +3520,121 @@ data:extend({
       quaternary = {r = 0.800, g = 0.000, b = 0.100, a = 0.900},
     },
     order = "[liquid]-[liquid-sodium]"
+  },
+  {
+    type = "recipe",
+    name = "sp-hypochlorus-acid",  -- #ForRegEx# - recipe
+    category = "chemical-staging",
+    enabled = false,
+    energy_required = 1,
+    ingredients = {
+      {type = "fluid", name = "water", amount = 10},
+      {type = "fluid", name = "sp-chlorine", amount = 10},
+    },
+    results = {
+      {type = "fluid", name = "sp-hypochlorus-acid", amount = 10}
+    },
+    -- crafting_machine_tint = {
+    --   primary = {r = 0.3, g = 0.3, b = 0.3, a = 1.000},
+    --   secondary = {r = 0.1, g = 0.1, b = 0.1, a = 1.000},
+    --   tertiary = {r = 0.0, g = 0.0, b = 0.0, a = 1.000},
+    --   quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
+    -- }
+  },
+  {
+    type = "recipe",
+    name = "sp-allyl-chloride",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/icons/allyl-chloride.png",
+    icon_size = 64,
+    mip_maps = 4,
+    category = "chemical-staging",
+    subgroup = "chemical",
+    enabled = false,
+    energy_required = 1,
+    ingredients = {
+      {type = "fluid", name = "sp-chlorine", amount = 10},
+      {type = "fluid", name = "sp-propylene", amount = 10},
+    },
+    results = {
+      {type = "fluid", name = "sp-allyl-chloride", amount = 10},
+      {type = "fluid", name = "sp-hydrogen-chloride", amount = 2}
+    },
+    -- crafting_machine_tint = {
+    --   primary = {r = 0.3, g = 0.3, b = 0.3, a = 1.000},
+    --   secondary = {r = 0.1, g = 0.1, b = 0.1, a = 1.000},
+    --   tertiary = {r = 0.0, g = 0.0, b = 0.0, a = 1.000},
+    --   quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
+    -- }
+  },
+  {
+    type = "recipe",
+    name = "sp-epichlorohydrin",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/icons/epichlorohydrin.png",
+    icon_size = 64,
+    mip_maps = 4,
+    category = "chemical-staging",
+    subgroup = "chemical",
+    enabled = false,
+    energy_required = 1.5,
+    ingredients = {
+      {type = "fluid", name = "sp-hypochlorus-acid", amount = 8},
+      {type = "fluid", name = "sp-allyl-chloride", amount = 8},
+    },
+    results = {
+      {type = "fluid", name = "sp-epichlorohydrin", amount = 8},
+      {type = "fluid", name = "sp-hydrogen-chloride", amount = 2}
+    },
+    -- crafting_machine_tint = {
+    --   primary = {r = 0.3, g = 0.3, b = 0.3, a = 1.000},
+    --   secondary = {r = 0.1, g = 0.1, b = 0.1, a = 1.000},
+    --   tertiary = {r = 0.0, g = 0.0, b = 0.0, a = 1.000},
+    --   quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
+    -- }
+  },
+  {
+    type = "recipe",
+    name = "sp-glycerin",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/icons/glycerin.png",
+    icon_size = 64,
+    mip_maps = 4,
+    category = "chemical-staging",
+    subgroup = "chemical",
+    enabled = false,
+    energy_required = 1,
+    ingredients = {
+      {type = "fluid", name = "water", amount = 10},
+      {type = "fluid", name = "sp-allyl-chloride", amount = 6}
+    },
+    results = {
+      {type = "fluid", name = "sp-glycerin", amount = 6},
+      {type = "fluid", name = "sp-hydrogen-chloride", amount = 2}
+    },
+    -- crafting_machine_tint = {
+    --   primary = {r = 0.3, g = 0.3, b = 0.3, a = 1.000},
+    --   secondary = {r = 0.1, g = 0.1, b = 0.1, a = 1.000},
+    --   tertiary = {r = 0.0, g = 0.0, b = 0.0, a = 1.000},
+    --   quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
+    -- }
+  },
+  {
+    type = "recipe",
+    name = "sp-calcium-hydroxide-solution",  -- #ForRegEx# - recipe
+    category = "chemical-staging",
+    enabled = false,
+    energy_required = 1,
+    ingredients = {
+      {type = "fluid", name = "calcite", amount = 1},
+      {type = "fluid", name = "sp-glycerin", amount = 10},
+    },
+    results = {
+      {type = "fluid", name = "sp-calcium-hydroxide-solution", amount = 10}
+    },
+    -- crafting_machine_tint = {
+    --   primary = {r = 0.3, g = 0.3, b = 0.3, a = 1.000},
+    --   secondary = {r = 0.1, g = 0.1, b = 0.1, a = 1.000},
+    --   tertiary = {r = 0.0, g = 0.0, b = 0.0, a = 1.000},
+    --   quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
+    -- }
   },
   ------------------------------------------------------------------------------
   -- MARK: sp-kr-fuel-refinery
@@ -3667,6 +3823,27 @@ data:extend({
     },
     results = {
       {type = "fluid", name = "sp-drilling-fluid", amount = 50}
+    },
+    -- crafting_machine_tint = {
+    --   primary = {r = 0.3, g = 0.3, b = 0.3, a = 1.000},
+    --   secondary = {r = 0.1, g = 0.1, b = 0.1, a = 1.000},
+    --   tertiary = {r = 0.0, g = 0.0, b = 0.0, a = 1.000},
+    --   quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
+    -- }
+  },
+  {
+    type = "recipe",
+    name = "sp-calcium-hydroxide-solution",  -- #ForRegEx# - recipe
+    category = "sp-kr-fluid-filtration",
+    enabled = false,
+    energy_required = 6,
+    ingredients = {
+      {type = "item", name = "sp-barium-sulfide", amount = 3},
+      {type = "fluid", name = "sp-oxygen", amount = 5},
+      {type = "fluid", name = "water", amount = 50},
+    },
+    results = {
+      {type = "fluid", name = "sp-calcium-hydroxide-solution", amount = 50}
     },
     -- crafting_machine_tint = {
     --   primary = {r = 0.3, g = 0.3, b = 0.3, a = 1.000},
@@ -4522,16 +4699,17 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-potassium-hydroxade",  -- #ForRegEx# - recipe
+    name = "sp-potassium-hydroxide",  -- #ForRegEx# - recipe
     category = "sp-kr-electrolysis",
     enabled = false,
     energy_required = 4,
     ingredients = {
       {type = "item", name = "sp-potassium-chloride", amount = 1},
+      {type = "fluid", name = "sp-calcium-hydroxide-solution", amount = 5},
       {type = "fluid", name = "water", amount = 5}
     },
     results = {
-      {type = "item", name = "sp-potassium-hydroxade", amount = 1}
+      {type = "item", name = "sp-potassium-hydroxide", amount = 1}
     }
   },
   ------------------------------------------------------------------------------
@@ -7563,7 +7741,7 @@ data:extend({
     ingredients = {
       {type = "item", name = "sp-crucible", amount = 2},
       {type = "item", name = "sp-heating-filament", amount = 2},
-      {type = "item", name = "tungsten-plate", amount = 10},
+      {type = "item", name = "sp-nickel-chromium", amount = 16},
       {type = "item", name = "sp-stainless-steel", amount = 40},
       {type = "item", name = "concrete", amount = 24},
       {type = "item", name = "sp-automation-core", amount = 10},

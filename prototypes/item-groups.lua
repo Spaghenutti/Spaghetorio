@@ -350,39 +350,45 @@ data:extend({
   },
   {
     type = "item-subgroup",
-    name = "dirty-fluid",
+    name = "solution",
     group = "fluids",
     order = "b"
   },
   {
     type = "item-subgroup",
-    name = "dirty-fluid-filtration",  -- Corresponds to category "sp-kr-fluid-filtration"
-    group = "fluids",
-    order = "b-b"
-  },
-  {
-    type = "item-subgroup",
-    name = "oil",
+    name = "dirty-fluid",
     group = "fluids",
     order = "c"
   },
   {
     type = "item-subgroup",
-    name = "chemical",
+    name = "dirty-fluid-filtration",  -- Corresponds to category "sp-kr-fluid-filtration"
+    group = "fluids",
+    order = "c-b"
+  },
+  {
+    type = "item-subgroup",
+    name = "oil",
     group = "fluids",
     order = "d"
   },
   {
     type = "item-subgroup",
-    name = "gas",
+    name = "chemical",
     group = "fluids",
     order = "e"
   },
   {
     type = "item-subgroup",
-    name = "alien",
+    name = "gas",
     group = "fluids",
     order = "f"
+  },
+  {
+    type = "item-subgroup",
+    name = "alien",
+    group = "fluids",
+    order = "g"
   },
   ------------------------------------------------------------------------------
   -- MARK: other

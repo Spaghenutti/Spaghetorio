@@ -79,8 +79,8 @@ Factorio Space age
       + potassium-ingot + manganese-ingot + 100 water -> potassium-permanganate-solution (KMnO4): Used as a disinfectant, water treatment chemical, and in organic synthesis.
       + potassium-ingot + chromium-plate + 75 water -> potassium-dichromate-solution (K2Cr2O7): Used in tanning leather, as a corrosion inhibitor, and in the production of pigments.
       + ammonia + carbon -> hydrogen-cyanide
-      + potassium-chloride + water -> potassium-hydroxade (electrolysis)
-      + hydrogen-cyanide + potassium-hydroxade -> potassium-cyanide (KCN): Used in gold mining, electroplating, and as a reagent in chemical synthesis.
+      + potassium-chloride + water -> potassium-hydroxide (electrolysis)
+      + hydrogen-cyanide + potassium-hydroxide -> potassium-cyanide (KCN): Used in gold mining, electroplating, and as a reagent in chemical synthesis.
 
     - Remove spage age technologies
       - carbon fiber

@@ -1159,16 +1159,53 @@ data:extend({
       }
     },
     prerequisites = {
-      "production-science-pack"
+      "metallurgic-science-pack"
     },
     unit =
     {
-      count = 150,
+      count = 250,
       ingredients = {
         {"automation-science-pack", 1},
         {"logistic-science-pack", 1},
         {"sp-material-science-pack-1", 1},
-        {"sp-geological-science-pack-1", 1}
+        {"sp-geological-science-pack-1", 1},
+        {"chemical-science-pack", 1},
+        {"metallurgic-science-pack", 1}
+      },
+      time = 30
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-vanadium-alloys",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/hr-icons/vanadium-aluminum.png", 256, {-20, 20},
+                                        "__Spaghetorio__/graphics/hr-icons/vanadium-steel.png", 256, {20, -20}),
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-vanadium-aluminum"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-vanadium-steel"
+      },
+    },
+    prerequisites = {
+      "sp-vanadium-processing",
+    },
+    unit =
+    {
+      count = 300,
+      ingredients = {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"sp-material-science-pack-1", 1},
+        {"sp-geological-science-pack-1", 1},
+        {"chemical-science-pack", 1},
+        {"metallurgic-science-pack", 1}
       },
       time = 30
     },
@@ -2325,6 +2362,46 @@ data:extend({
     },
     prerequisites = {
       "chemical-science-pack"
+    },
+    unit =
+    {
+      count = 200,
+      ingredients = {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"sp-material-science-pack-1", 1}
+      },
+      time = 30
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
+    name = "sp-glycerin",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghetorio__/graphics/hr-icons/glycerin.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-hypochlorus-acid"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-allyl-chloride"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-epichlorohydrin"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-glycerin"
+      }
+    },
+    prerequisites = {
+      "sp-chemical-science-pack-2"
     },
     unit =
     {
@@ -6856,8 +6933,8 @@ data:extend({
       },
     },
     prerequisites = {
-      "sp-tungsten-processing",
-      "electromagnetic-science-pack"
+      "electromagnetic-science-pack",
+      "sp-vanadium-alloys"
     },
     unit = {
       count = 200,
@@ -9177,7 +9254,7 @@ data:extend({
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-potassium-hydroxade",
+        recipe = "sp-potassium-hydroxide",
       },
       {
         type = "unlock-recipe",
@@ -9222,6 +9299,18 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "sp-heavy-water",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-calcium-hydroxide-solution",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-ammonium-hydroxide-solution",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-potassium-hydroxide-solution",
       },
       -- TODO: add recipe chain for
       -- {

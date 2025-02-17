@@ -3864,12 +3864,12 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-potassium-hydroxade",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/icons/potassium-hydroxade.png",
+    name = "sp-potassium-hydroxide",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/potassium-hydroxide.png",
     icon_size = 64,
     scale = 0.5,
     subgroup = "chemical-product",
-    order = "[potassium-hydroxade]",
+    order = "[potassium-hydroxide]",
     stack_size = 200
   },
   {

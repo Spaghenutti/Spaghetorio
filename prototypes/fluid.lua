@@ -119,6 +119,9 @@ data:extend({
     order = "[mercury]",
     stack_size = 200
   },
+  ------------------------------------------------------------------------------
+  -- MARK: solution
+  ------------------------------------------------------------------------------
   {
     type = "fluid",
     name = "sp-vanadium-bearing-solution",  -- #ForRegEx# - fluid
@@ -128,7 +131,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/vanadium-bearing-solution.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "aqueous-fluid",
+    subgroup = "solution",
     order = "[vanadium-bearing-solution]",
     stack_size = 200
   },
@@ -141,7 +144,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/potassium-permanganate-solution.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "aqueous-fluid",
+    subgroup = "solution",
     order = "[potassium-permanganate-solution]",
     stack_size = 200
   },
@@ -154,8 +157,60 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/potassium-dichromate-solution.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "aqueous-fluid",
+    subgroup = "solution",
     order = "[potassium-dichromate-solution]",
+    stack_size = 200
+  },
+  {
+    type = "fluid",
+    name = "sp-potassium-hydroxide-solution",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    base_color = {r=1.0, g=0.4, b=0.0},
+    flow_color = {r=1.0, g=0.4, b=0.0},
+    icon = "__Spaghetorio__/graphics/icons/potassium-hydroxide-solution.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "solution",
+    order = "[potassium-hydroxide-solution]",
+    stack_size = 200
+  },
+  {
+    type = "fluid",
+    name = "sp-potassium-hydroxide-solution",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    base_color = {r=1.0, g=0.4, b=0.0},
+    flow_color = {r=1.0, g=0.4, b=0.0},
+    icon = "__Spaghetorio__/graphics/icons/potassium-hydroxide-solution.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "solution",
+    order = "[potassium-hydroxide-solution]",
+    stack_size = 200
+  },
+  {
+    type = "fluid",
+    name = "sp-calcium-hydroxide-solution",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    base_color = {r=1.0, g=0.4, b=0.0},
+    flow_color = {r=1.0, g=0.4, b=0.0},
+    icon = "__Spaghetorio__/graphics/icons/calcium-hydroxide-solution.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "solution",
+    order = "[calcium-hydroxide-solution]",
+    stack_size = 200
+  },
+  {
+    type = "fluid",
+    name = "sp-ammonium-hydroxide-solution",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    base_color = {r=1.0, g=0.4, b=0.0},
+    flow_color = {r=1.0, g=0.4, b=0.0},
+    icon = "__Spaghetorio__/graphics/icons/ammonium-hydroxide-solution.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "solution",
+    order = "[ammonium-hydroxide-solution]",
     stack_size = 200
   },
   ------------------------------------------------------------------------------
@@ -660,6 +715,58 @@ data:extend({
     icon_mipmaps = 4,
     subgroup = "chemical",
     order = "a[fluid]-f[hydrogen-cyanide]"
+  },
+  {
+    type = "fluid",
+    name = "sp-hypochlorus-acid",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    base_color = {r=0.0, g=0.0, b=0.55},
+    flow_color = {r=0.0, g=0.0, b=0.55},
+    icon = "__Spaghetorio__/graphics/icons/hypochlorus-acid.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "chemical",
+    order = "a[fluid]-f[hypochlorus-acid]"
+  },
+  {
+    type = "fluid",
+    name = "sp-allyl-chloride",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    base_color = {r=0.0, g=0.0, b=0.55},
+    flow_color = {r=0.0, g=0.0, b=0.55},
+    icon = "__Spaghetorio__/graphics/icons/allyl-chloride.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "chemical",
+    order = "a[fluid]-f[allyl-chloride]"
+  },
+  {
+    type = "fluid",
+    name = "sp-epichlorohydrin",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    base_color = {r=0.0, g=0.0, b=0.55},
+    flow_color = {r=0.0, g=0.0, b=0.55},
+    icon = "__Spaghetorio__/graphics/icons/epichlorohydrin.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "chemical",
+    order = "a[fluid]-f[epichlorohydrin]"
+  },
+  {
+    type = "fluid",
+    name = "sp-glycerin",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    base_color = {r=0.0, g=0.0, b=0.55},
+    flow_color = {r=0.0, g=0.0, b=0.55},
+    icon = "__Spaghetorio__/graphics/icons/glycerin.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "chemical",
+    order = "a[fluid]-f[glycerin]"
   },
   ------------------------------------------------------------------------------
   -- MARK: alien
