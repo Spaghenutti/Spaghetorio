@@ -640,7 +640,6 @@ util.recipe.change_recipe_ingredients("cargo-wagon",
   },
   20)
 
--- Kratorio: {type = "item", name = "sp-steel-beam", amount = 8}
 util.recipe.change_recipe_ingredients("fluid-wagon",
   {
     {type = "item", name = "sp-spring", amount = 4},
@@ -652,7 +651,6 @@ util.recipe.change_recipe_ingredients("fluid-wagon",
   },
   20)
 
--- Kratorio: {type = "item", name = "automation-core", amount = 8}
 util.recipe.change_recipe_ingredients("artillery-wagon",
   {
     {type = "item", name = "sp-spring", amount = 20},

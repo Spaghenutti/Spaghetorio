@@ -44,6 +44,7 @@ local function basic_resource(resource_parameters, autoplace_parameters)
       mining_particle = "sp-" .. resource_parameters.name .. "-particle",
       mining_time = resource_parameters.mining_time,
       result = resource_parameters.mining_result or "sp-" .. resource_parameters.name,
+      fluid_amount = resource_parameters.fluid_amount,
       required_fluid = resource_parameters.required_fluid
     },
     category = resource_parameters.category,
@@ -344,6 +345,7 @@ data:extend({
       mining_time = 3.5,
       map_color = {r=0.5, g=1, b=0.6},
       mining_visualisation_tint = {r=0.5, g=1, b=0.6, a=1.0},
+      fluid_amount = 2,
       required_fluid = "sp-chlorine"
     },
     {
@@ -360,6 +362,7 @@ data:extend({
       mining_time = 1.25,
       map_color = {r=0.75, g=0.75, b=0.75},
       mining_visualisation_tint = {r=0.75, g=0.75, b=0.75, a=1.0},
+      fluid_amount = 5,
       required_fluid = "sp-hydrogen-chloride"
     },
     {
@@ -524,6 +527,7 @@ data:extend({
       mining_time = 1,
       map_color = {r=0, g=0.25, b=1},
       mining_visualisation_tint = {r=0, g=0.25, b=1, a=1.0},
+      fluid_amount = 5,
       required_fluid = "sp-sulfamate"
     },
     {
@@ -540,6 +544,7 @@ data:extend({
       mining_time = 1.5,
       map_color = {r=0.8, g=0.65, b=0},
       mining_visualisation_tint = {r=0.8, g=0.65, b=0, a=1.0},
+      fluid_amount = 4,
       required_fluid = "sp-perchloric-acid"
     },
     {

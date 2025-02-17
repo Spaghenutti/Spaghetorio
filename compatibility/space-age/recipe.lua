@@ -154,8 +154,9 @@ util.recipe.change_recipe_ingredients("electromagnetic-science-pack",
   {
     {type = "item", name = "sp-blank-tech-card", amount = 5},
     {type = "item", name = "battery", amount = 5},
+    {type = "item", name = "sp-servo-motor", amount = 1},
+    {type = "item", name = "sp-actuator", amount = 1},
     {type = "item", name = "sp-electromagnet", amount = 5},
-    {type = "item", name = "sp-automation-core", amount = 5},
     {type = "item", name = "sp-vacuum-tube", amount = 5},
     {type = "item", name = "sp-transistor", amount = 5}
   },

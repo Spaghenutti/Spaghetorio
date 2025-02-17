@@ -464,21 +464,19 @@ data.raw.technology["processing-unit"].unit.ingredients = {
   {"production-science-pack", 1}
 }
 
-table.insert(data.raw.technology["advanced-oil-processing"].prerequisites, "sp-electronic-science-pack-1")
 data.raw.technology["advanced-oil-processing"].unit.ingredients = {
   {"automation-science-pack", 1},
   {"logistic-science-pack", 1},
   {"sp-material-science-pack-1", 1},
-  {"sp-electronic-science-pack-1", 1},
   {"sp-geological-science-pack-1", 1},
   {"chemical-science-pack", 1}
 }
 
+table.insert(data.raw.technology["lubricant"].prerequisites, "sp-sodium-processing")
 data.raw.technology["lubricant"].unit.ingredients = {
   {"automation-science-pack", 1},
   {"logistic-science-pack", 1},
   {"sp-material-science-pack-1", 1},
-  {"sp-electronic-science-pack-1", 1},
   {"sp-geological-science-pack-1", 1},
   {"chemical-science-pack", 1}
 }

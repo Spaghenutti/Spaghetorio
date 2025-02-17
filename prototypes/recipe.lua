@@ -2594,6 +2594,20 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "sp-zircon",  -- #ForRegEx# - recipe
+    category = "chemistry",
+    enabled = false,
+    energy_required = 8,
+    ingredients = {
+      {type = "item", name = "sp-zirconium-ore", amount = 4},
+      {type = "fluid", name = "sulfuric-acid", amount = 10},
+    },
+    results = {
+      {type = "item", name = "sp-zircon", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
     name = "sp-lithium-sulfur-battery",  -- #ForRegEx# - recipe
     category = "chemistry",
     enabled = false,
@@ -2755,7 +2769,6 @@ data:extend({
     subgroup = "fluid-recipes",
     enabled = false,
     energy_required = 32,
-    hide_from_player_crafting = true,
     ingredients = {
       {type = "fluid", name = "petroleum-gas", amount = 200},
       {type = "item", name = "sp-filter", amount = 1},
@@ -2778,7 +2791,6 @@ data:extend({
     subgroup = "fluid-recipes",
     enabled = false,
     energy_required = 12,
-    hide_from_player_crafting = true,
     ingredients = {
       {type = "fluid", name = "sp-benzene", amount = 30},
       {type = "fluid", name = "water", amount = 5},
@@ -2845,7 +2857,7 @@ data:extend({
     category = "chemistry",
     subgroup = "fluid-recipes",
     enabled = false,
-    energy_required = 20,
+    energy_required = 5,
     ingredients = {
       -- {type = "item", name = "sp-catalyst", amount = 1},
       {type = "fluid", name = "sp-mineral-water", amount = 50},
@@ -4637,19 +4649,6 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-zircon",  -- #ForRegEx# - recipe
-    category = "crafting",
-    enabled = false,
-    energy_required = 10,
-    ingredients = {
-      {type = "item", name = "sp-zirconium-ore", amount = 12},
-    },
-    results = {
-      {type = "item", name = "sp-zircon", amount = 1}
-    }
-  },
-  {
-    type = "recipe",
     name = "sp-blank-tech-card",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
@@ -5127,11 +5126,11 @@ data:extend({
     name = "sp-electromagnet",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
-    energy_required = 1.6,
+    energy_required = 2,
     ingredients = {
       {type = "item", name = "sp-machined-parts", amount = 2},
-      {type = "item", name = "iron-stick", amount = 1},
-      {type = "item", name = "copper-cable", amount = 3}
+      {type = "item", name = "sp-ferrite", amount = 1},
+      {type = "item", name = "copper-cable", amount = 2}
     },
     results = {
       {type = "item", name = "sp-electromagnet", amount = 1}
@@ -5549,7 +5548,6 @@ data:extend({
     ingredients =
     {
       {type = "item", name = "automation-science-pack", amount = 20},
-      {type = "item", name = "engine-unit", amount = 2},
       {type = "item", name = "sp-ball-bearing", amount = 5},
       {type = "item", name = "small-lamp", amount = 5},
       {type = "item", name = "sp-magnet", amount = 10},
@@ -5568,10 +5566,6 @@ data:extend({
     ingredients =
     {
       {type = "item", name = "logistic-science-pack", amount = 20},
-      {type = "item", name = "electric-engine-unit", amount = 5},
-      {type = "item", name = "engine-unit", amount = 2},
-      {type = "item", name = "sp-automation-core", amount = 10},
-      {type = "item", name = "sp-electromagnet", amount = 8},
       {type = "item", name = "sp-servo-motor", amount = 8},
     },
     results = {
@@ -12567,8 +12561,7 @@ data:extend({
     category = "chemistry",
     subgroup = "fluid-recipes",
     enabled = false,
-    energy_required = 15,
-    hide_from_player_crafting = true,
+    energy_required = 4,
     ingredients = {
       {type = "fluid", name = "sp-styrene", amount = 20},
       {type = "fluid", name = "sp-chlorine", amount = 30}

@@ -72,8 +72,9 @@ data.raw.technology["metallurgic-science-pack"].unit = {
 
 data.raw.technology["electromagnetic-science-pack"].icon = "__Spaghetorio__/graphics/hr-icons/electromagnetic-science-pack-1.png"
 data.raw.technology["electromagnetic-science-pack"].prerequisites = {
-  "sp-magnet",
-  "battery"
+  "battery",
+  "sp-servo-motor",
+  "sp-actuator"
 }
 data.raw.technology["electromagnetic-science-pack"].research_trigger = nil
 data.raw.technology["electromagnetic-science-pack"].unit = {

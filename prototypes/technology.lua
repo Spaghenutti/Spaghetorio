@@ -1643,7 +1643,7 @@ data:extend({
     {
       count = 200,
       ingredients = {
-        {"sp-automation-science-pack-2", 1},
+        {"automation-science-pack", 1},
         {"logistic-science-pack", 1},
       },
       time = 30
@@ -7574,8 +7574,9 @@ data:extend({
     },
     prerequisites = {
       "sp-ball-bearing",
-      "sp-magnet",
-      "lamp"
+      "lamp",
+      "metallurgic-science-pack",
+      "electromagnetic-science-pack"
     },
     unit =
     {
