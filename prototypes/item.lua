@@ -6085,6 +6085,17 @@ data:extend({
   },
   {
     type = "item",
+    name = "sp-manufacturer",  -- #ForRegEx# - building
+    icon = "__Spaghetorio__/graphics/icons/manufacturer.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "production-machine",
+    order = "d[manufacturer]",
+    place_result = "sp-manufacturer",
+    stack_size = 50,
+  },
+  {
+    type = "item",
     name = "sp-cyclotron",  -- #ForRegEx# - building
     icon = "__Spaghetorio__/graphics/icons/cyclotron.png",
     icon_size = 64,

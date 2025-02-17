@@ -1363,21 +1363,6 @@ data:extend({
       {type = "item", name = "sp-ferrite", amount = 4}
     }
   },
-  {
-    type = "recipe",
-    name = "sp-heat-resistant-tile",  -- #ForRegEx# - recipe
-    category = "intermediate-smelting",
-    enabled = false,
-    energy_required = 5.2,
-    ingredients = {
-      {type = "item", name = "sp-zirconia", amount = 2},
-      {type = "item", name = "sp-silica", amount = 1},
-      {type = "item", name = "carbon", amount = 3}
-    },
-    results = {
-      {type = "item", name = "sp-heat-resistant-tile", amount = 1}
-    }
-  },
   ------------------------------------------------------------------------------
   -- MARK: enriching-raw-resource
   ------------------------------------------------------------------------------
@@ -4606,19 +4591,6 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-titanium-frame",  -- #ForRegEx# - recipe
-    category = "crafting",
-    enabled = false,
-    energy_required = 2.4,
-    ingredients = {
-      {type = "item", name = "sp-titanium-plate", amount = 2},
-    },
-    results = {
-      {type = "item", name = "sp-titanium-frame", amount = 3}
-    }
-  },
-  {
-    type = "recipe",
     name = "sp-titanium-carbide",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
@@ -4843,36 +4815,6 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-silver-solder",  -- #ForRegEx# - recipe
-    category = "crafting",
-    enabled = false,
-    energy_required = 4,
-    ingredients = {
-      {type = "item", name = "sp-silver", amount = 1},
-      {type = "item", name = "sp-tin-ingot", amount = 8}
-    },
-    results = {
-      {type = "item", name = "sp-silver-solder", amount = 10}
-    }
-  },
-
-  {
-    type = "recipe",
-    name = "sp-glass-fiber",  -- #ForRegEx# - recipe
-    category = "crafting",
-    enabled = false,
-    energy_required = 8,
-    ingredients = {
-      {type = "item", name = "sp-silica", amount = 4},
-      {type = "item", name = "sp-aluminum-sheet", amount = 2},
-      {type = "item", name = "sp-sodium", amount = 1}
-    },
-    results = {
-      {type = "item", name = "sp-glass-fiber", amount = 5}
-    }
-  },
-  {
-    type = "recipe",
     name = "sp-basic-circuit-board",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
@@ -5047,22 +4989,6 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-ceramics", amount = 1}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-ceramic-matrix-composites",  -- #ForRegEx# - recipe
-    category = "crafting",
-    enabled = false,
-    energy_required = 12,
-    ingredients = {
-      {type = "item", name = "tungsten-carbide", amount = 1},
-      {type = "item", name = "sp-TiNb", amount = 2},
-      {type = "item", name = "sp-graphene", amount = 3},
-      {type = "item", name = "sp-high-purity-silicon", amount = 1}
-    },
-    results = {
-      {type = "item", name = "sp-ceramic-matrix-composites", amount = 1}
     }
   },
   {
@@ -6492,6 +6418,97 @@ data:extend({
     }
   },
   ------------------------------------------------------------------------------
+  -- MARK: Manufacturing
+  ------------------------------------------------------------------------------
+  {
+    type = "recipe",
+    name = "sp-composites",  -- #ForRegEx# - recipe
+    category = "manufacturing",
+    enabled = false,
+    energy_required = 4,
+    ingredients = {
+      {type = "item", name = "carbon", amount = 3},
+      {type = "item", name = "sp-sodium-carbonate", amount = 2},
+      {type = "item", name = "sulfur", amount = 2},
+    },
+    results = {
+      {type = "item", name = "sp-composites", amount = 2}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-heat-resistant-tile",  -- #ForRegEx# - recipe
+    category = "manufacturing",
+    enabled = false,
+    energy_required = 5.2,
+    ingredients = {
+      {type = "item", name = "sp-zirconia", amount = 2},
+      {type = "item", name = "sp-silica", amount = 1},
+      {type = "item", name = "carbon", amount = 3}
+    },
+    results = {
+      {type = "item", name = "sp-heat-resistant-tile", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-titanium-frame",  -- #ForRegEx# - recipe
+    category = "manufacturing",
+    enabled = false,
+    energy_required = 2.4,
+    ingredients = {
+      {type = "item", name = "sp-titanium-plate", amount = 2},
+    },
+    results = {
+      {type = "item", name = "sp-titanium-frame", amount = 3}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-ceramic-matrix-composites",  -- #ForRegEx# - recipe
+    category = "manufacturing",
+    enabled = false,
+    energy_required = 12,
+    ingredients = {
+      {type = "item", name = "tungsten-carbide", amount = 1},
+      {type = "item", name = "sp-TiNb", amount = 2},
+      {type = "item", name = "sp-graphene", amount = 3},
+      {type = "item", name = "sp-high-purity-silicon", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-ceramic-matrix-composites", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-silver-solder",  -- #ForRegEx# - recipe
+    category = "manufacturing",
+    enabled = false,
+    energy_required = 4,
+    ingredients = {
+      {type = "item", name = "sp-silver", amount = 1},
+      {type = "item", name = "sp-tin-ingot", amount = 8}
+    },
+    results = {
+      {type = "item", name = "sp-silver-solder", amount = 10}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-glass-fiber",  -- #ForRegEx# - recipe
+    category = "manufacturing",
+    enabled = false,
+    energy_required = 8,
+    ingredients = {
+      {type = "item", name = "sp-silica", amount = 4},
+      {type = "item", name = "sp-aluminum-sheet", amount = 2},
+      {type = "item", name = "sp-sodium", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-glass-fiber", amount = 5}
+    }
+  },
+  ------------------------------------------------------------------------------
   -- MARK: Sort Category
   ------------------------------------------------------------------------------
   {
@@ -7477,9 +7494,14 @@ data:extend({
     mip_maps = 4,
     category = "crafting",
     enabled = false,
-    energy_required = 69,
+    energy_required = 90,
     ingredients = {
-      {type = "item", name = "iron-plate", amount = 69},
+      {type = "item", name = "sp-nickel-chromium", amount = 60},
+      {type = "item", name = "sp-stainless-steel", amount = 80},
+      {type = "item", name = "sp-crucible", amount = 20},
+      {type = "item", name = "sp-heating-filament", amount = 24},
+      {type = "item", name = "engine-unit", amount = 12},
+      {type = "item", name = "refined-concrete", amount = 100}
     },
     results = {
       {type = "item", name = "sp-alloy-forge", amount = 1}
@@ -7528,6 +7550,31 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-chemical-stager", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-manufacturer",  -- #ForRegEx# - recipe
+    icon_size = 64,
+    mip_maps = 4,
+    category = "crafting",
+    enabled = false,
+    energy_required = 30,
+    ingredients = {
+      {type = "item", name = "sp-crucible", amount = 2},
+      {type = "item", name = "sp-heating-filament", amount = 2},
+      {type = "item", name = "tungsten-plate", amount = 10},
+      {type = "item", name = "sp-stainless-steel", amount = 40},
+      {type = "item", name = "concrete", amount = 24},
+      {type = "item", name = "sp-automation-core", amount = 10},
+      {type = "item", name = "electric-engine-unit", amount = 6},
+      {type = "item", name = "sp-heatsink", amount = 12},
+      {type = "item", name = "sp-actuator", amount = 16},
+      {type = "item", name = "sp-machined-parts", amount = 40},
+      {type = "item", name = "sp-bolts", amount = 60}
+    },
+    results = {
+      {type = "item", name = "sp-manufacturer", amount = 1}
     }
   },
   {
@@ -12228,20 +12275,6 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-lens", amount = 2}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-composites",  -- #ForRegEx# - recipe
-    category = "crafting-with-fluid",
-    enabled = false,
-    energy_required = 3.2,
-    ingredients = {
-      {type = "item", name = "carbon", amount = 3},
-      {type = "fluid", name = "sp-oxygen", amount = 25},
-    },
-    results = {
-      {type = "item", name = "sp-composites", amount = 2}
     }
   },
   {

@@ -163,6 +163,7 @@ util.recipe.change_recipe_ingredients("battery",
   },
   nil)
 
+data.raw.recipe["low-density-structure"].category = "manufacturing"
 util.recipe.change_recipe_ingredients("low-density-structure",
   {
     {type = "item", name = "sp-titanium-frame", amount = 1},

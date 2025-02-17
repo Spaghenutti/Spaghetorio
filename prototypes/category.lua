@@ -128,6 +128,10 @@ data:extend({
   },
   {
     type = "recipe-category",
+    name = "manufacturing"
+  },
+  {
+    type = "recipe-category",
     name = "pathogen-growing"
   },
   {

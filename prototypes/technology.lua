@@ -6845,6 +6845,37 @@ data:extend({
   },
   {
     type = "technology",
+    name = "sp-manufacturer",  -- #ForRegEx# - technology
+    icon = "__Spaghetorio__/graphics/hr-icons/manufacturer.png",
+    icon_size = 256,
+    icon_mipmaps = 4,
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-manufacturer",
+      },
+    },
+    prerequisites = {
+      "sp-tungsten-processing",
+      "electromagnetic-science-pack"
+    },
+    unit = {
+      count = 200,
+      ingredients = {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"sp-electronic-science-pack-1", 1},
+        {"sp-geological-science-pack-1", 1},
+        {"sp-material-science-pack-1", 1},
+        {"metallurgic-science-pack", 1},
+        {"electromagnetic-science-pack", 1}
+      },
+      time = 45,
+    },
+  },
+  {
+    type = "technology",
     name = "sp-cyclotron",  -- #ForRegEx# - technology
     icon = "__Spaghetorio__/graphics/hr-icons/cyclotron.png",
     icon_size = 256,
