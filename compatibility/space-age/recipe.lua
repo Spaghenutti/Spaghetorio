@@ -13,6 +13,8 @@ remove_prototypes.remove_one_prototype("recipe", "coal-synthesis")
 -- MARK: Items
 --------------------------------------------------------------------------------
 
+data.raw.recipe["coal-liquefaction"].category = "chemical-staging"
+
 data.raw.recipe["tungsten-carbide"].category = "induction-hardening"
 util.recipe.change_recipe_ingredients("tungsten-carbide",
   {
@@ -105,6 +107,26 @@ util.recipe.change_recipe_ingredients("quality-module",
     {type = "item", name = "plastic-bar", amount = 1}
   },
   15)
+
+data.raw.recipe["quality-module-2"].category = "manufacturing"
+util.recipe.change_recipe_ingredients("quality-module-2",
+  {
+    {type = "item", name = "advanced-circuit", amount = 69},
+    -- {type = "item", name = "sp-capacitor", amount = 3},
+    -- {type = "item", name = "sp-light-emitting-diode", amount = 6},
+    -- {type = "item", name = "sp-integrated-circuit", amount = 1}
+  },
+  20)
+
+util.recipe.change_recipe_ingredients("quality-module-3",
+  {
+    {type = "item", name = "sp-advanced-processing-unit", amount = 69},
+    -- {type = "item", name = "sp-circuit-board", amount = 1},
+    -- {type = "item", name = "sp-processor", amount = 1},
+    -- {type = "item", name = "sp-optical-sensor", amount = 1},
+    -- {type = "item", name = "sp-memory-chip", amount = 4}
+  },
+  45)
 
 --------------------------------------------------------------------------------
 -- MARK: Combat

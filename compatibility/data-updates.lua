@@ -21,6 +21,6 @@ for key, value in pairs(data.raw.furnace) do
 end
 
 -- Overwrite technology change by Everything on nauvis
-table.insert(data.raw.technology["agriculture"].prerequisites, "chemical-science-pack")
+table.insert(data.raw.technology["agriculture"].prerequisites, "sp-automation-science-pack-2")
 data.raw.technology["heating-tower"].prerequisites = {"lithium-processing"}
 data.raw.technology["lithium-processing"].prerequisites = {"metallurgic-science-pack"}

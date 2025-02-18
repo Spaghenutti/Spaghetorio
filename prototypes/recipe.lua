@@ -5645,6 +5645,24 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "sp-electronic-science-pack-1",  -- #ForRegEx# - recipe
+    category = "crafting",
+    enabled = false,
+    energy_required = 24,
+    ingredients =
+    {
+      {type = "item", name = "sp-blank-tech-card", amount = 5},
+      {type = "item", name = "sp-resistor", amount = 10},
+      {type = "item", name = "sp-capacitor", amount = 5},
+      {type = "item", name = "sp-diode", amount = 5},
+      {type = "item", name = "electronic-circuit", amount = 5}
+    },
+    results = {
+      {type = "item", name = "sp-electronic-science-pack-1", amount = 5}
+    }
+  },
+  {
+    type = "recipe",
     name = "sp-automation-science-pack-2",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
@@ -5709,6 +5727,34 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-electronic-science-pack-2", amount = 5}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-metallurgic-science-pack-2",  -- #ForRegEx# - recipe
+    category = "crafting",
+    enabled = false,
+    energy_required = 40,
+    ingredients =
+    {
+      {type = "item", name = "metallurgic-science-pack", amount = 20}
+    },
+    results = {
+      {type = "item", name = "sp-metallurgic-science-pack-2", amount = 5}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-electromagnetic-science-pack-2",  -- #ForRegEx# - recipe
+    category = "crafting",
+    enabled = false,
+    energy_required = 40,
+    ingredients =
+    {
+      {type = "item", name = "electromagnetic-science-pack", amount = 20}
+    },
+    results = {
+      {type = "item", name = "sp-electromagnetic-science-pack-2", amount = 5}
     }
   },
   {
@@ -5823,20 +5869,30 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-electronic-science-pack-1",  -- #ForRegEx# - recipe
+    name = "sp-metallurgic-science-pack-3",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
-    energy_required = 24,
+    energy_required = 69,
     ingredients =
     {
-      {type = "item", name = "sp-blank-tech-card", amount = 5},
-      {type = "item", name = "sp-resistor", amount = 10},
-      {type = "item", name = "sp-capacitor", amount = 5},
-      {type = "item", name = "sp-diode", amount = 5},
-      {type = "item", name = "electronic-circuit", amount = 5}
+      {type = "item", name = "sp-metallurgic-science-pack-2", amount = 10},
     },
     results = {
-      {type = "item", name = "sp-electronic-science-pack-1", amount = 5}
+      {type = "item", name = "sp-metallurgic-science-pack-2", amount = 10},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-electromagnetic-science-pack-3",  -- #ForRegEx# - recipe
+    category = "crafting",
+    enabled = false,
+    energy_required = 69,
+    ingredients =
+    {
+      {type = "item", name = "sp-electromagnetic-science-pack-2", amount = 10},
+    },
+    results = {
+      {type = "item", name = "sp-electromagnetic-science-pack-3", amount = 5}
     }
   },
   {
@@ -7742,7 +7798,7 @@ data:extend({
       {type = "item", name = "sp-crucible", amount = 2},
       {type = "item", name = "sp-heating-filament", amount = 2},
       {type = "item", name = "sp-nickel-chromium", amount = 16},
-      {type = "item", name = "sp-stainless-steel", amount = 40},
+      {type = "item", name = "sp-vanadium-steel", amount = 40},
       {type = "item", name = "concrete", amount = 24},
       {type = "item", name = "sp-automation-core", amount = 10},
       {type = "item", name = "electric-engine-unit", amount = 6},
