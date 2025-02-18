@@ -5878,7 +5878,7 @@ data:extend({
       {type = "item", name = "sp-metallurgic-science-pack-2", amount = 10},
     },
     results = {
-      {type = "item", name = "sp-metallurgic-science-pack-2", amount = 10},
+      {type = "item", name = "sp-metallurgic-science-pack-3", amount = 10},
     }
   },
   {
