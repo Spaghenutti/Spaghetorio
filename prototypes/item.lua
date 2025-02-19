@@ -2954,6 +2954,16 @@ data:extend({
   },
   {
     type = "item",
+    name = "sp-seal",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/seal.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "mechanical-component",
+    order = "other-z-[seal]",
+    stack_size = 100
+  },
+  {
+    type = "item",
     name = "sp-glass-fiber",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/glass-fiber.png",
     icon_size = 64,
@@ -3207,6 +3217,16 @@ data:extend({
   },
   {
     type = "item",
+    name = "sp-piezoelectric-sensor",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/piezoelectric-sensor.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "electronic-optical-component",
+    order = "semiconductor-c[piezoelectric-sensor]",
+    stack_size = 100
+  },
+  {
+    type = "item",
     name = "sp-laser",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/laser.png",
     icon_size = 64,
@@ -3320,6 +3340,16 @@ data:extend({
   },
   {
     type = "item",
+    name = "sp-gearshaft",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/gearshaft.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "intermediate-product",
+    order = "gearbox-[gearshaft]",
+    stack_size = 50
+  },
+  {
+    type = "item",
     name = "sp-automation-core",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/krastorio/icons/items/automation-core.png",
     icon_size = 64,
@@ -3345,7 +3375,17 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "intermediate-product",
-    order = "electric-[electromagnet]",
+    order = "electricmagnetic-coil-[electromagnet]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "sp-high-power-solenoid",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/high-power-solenoid.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "intermediate-product",
+    order = "electricmagnetic-coil-[high-power-solenoid]",
     stack_size = 50
   },
   {
@@ -3385,7 +3425,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "intermediate-product",
-    order = "electric-[dynamo]",
+    order = "electricmagnetic-[dynamo]",
     stack_size = 50
   },
   {
@@ -3429,13 +3469,23 @@ data:extend({
     stack_size = 50
   },
   {
-    type = "item", 
+    type = "item",
     name = "sp-transformer",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/transformer.png",
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "intermediate-product",
     order = "electric-[transformer]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "sp-magnetic-coupling",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/magnetic-coupling.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "intermediate-product",
+    order = "electricmagnetic-[magnetic-coupling]",
     stack_size = 50
   },
   {
@@ -3450,12 +3500,42 @@ data:extend({
   },
   {
     type = "item",
+    name = "sp-plasmacutter",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/plasmacutter.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "intermediate-product",
+    order = "electric-[plasmacutter]",
+    stack_size = 50
+  },
+  {
+    type = "item",
     name = "sp-heatsink",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/heatsink.png",
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "intermediate-product",
     order = "heat-[heatsink]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "sp-precipitator",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/precipitator.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "intermediate-product",
+    order = "heat-[precipitator]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "sp-condenser-coil",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/condenser-coil.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "intermediate-product",
+    order = "heat-[condenser-coil]",
     stack_size = 50
   },
   {
@@ -3475,8 +3555,8 @@ data:extend({
     icon_size = 64,
     scale = 0.5,
     subgroup = "intermediate-product",
-    order = "electric-[compressor]",
-    stack_size = 100
+    order = "electricmagnetic-[compressor]",
+    stack_size = 50
   },
   {
     type = "item",
@@ -3485,8 +3565,8 @@ data:extend({
     icon_size = 64,
     scale = 0.5,
     subgroup = "intermediate-product",
-    order = "electric-[big-electric-engine-unit]",
-    stack_size = 100
+    order = "electricmagnetic-[big-electric-engine-unit]",
+    stack_size = 50
   },
   {
     type = "item",
@@ -3495,7 +3575,7 @@ data:extend({
     icon_size = 64,
     scale = 0.5,
     subgroup = "intermediate-product",
-    order = "electric-[servo-motor]",
+    order = "electricmagnetic-[servo-motor]",
     stack_size = 100
   },
   {
@@ -3505,8 +3585,78 @@ data:extend({
     icon_size = 64,
     scale = 0.5,
     subgroup = "intermediate-product",
-    order = "electric-[micro-machine]",
+    order = "electricmagnetic-[micro-machine]",
     stack_size = 100
+  },
+  {
+    type = "item",
+    name = "sp-high-pressure-fan",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/high-pressure-fan.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "intermediate-product",
+    order = "electric-[high-pressure-fan]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "sp-electromagnetic-brake",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/electromagnetic-brake.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "intermediate-product",
+    order = "electricmagnetic-[electromagnetic-brake]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "sp-vacuum-pump",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/vacuum-pump.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "intermediate-product",
+    order = "electricmagnetic-[vacuum-pump]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "sp-catalytic-converter",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/catalytic-converter.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "intermediate-product",
+    order = "combustion-[catalytic-converter]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "sp-turbocharger",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/turbocharger.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "intermediate-product",
+    order = "combustion-[turbocharger]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "sp-pressure-valve",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/pressure-valve.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "intermediate-product",
+    order = "other-[pressure-valve]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "sp-vibration-dampener",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/vibration-dampener.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "intermediate-product",
+    order = "other-[vibration-dampener]",
+    stack_size = 50
   },
   ------------------------------------------------------------------------------
   -- MARK: advanced-intermediate-product
@@ -3680,6 +3830,16 @@ data:extend({
     subgroup = "advanced-intermediate-product",
     order = "[reactor-core]",
     stack_size = 5
+  },
+  {
+    type = "item",
+    name = "sp-variable-frequenzy-drive",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/variable-frequenzy-drive.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "advanced-intermediate-product",
+    order = "control-unit-[variable-frequenzy-drive]",
+    stack_size = 100
   },
   {
     type = "item",
@@ -5924,11 +6084,23 @@ data:extend({
   ------------------------------------------------------------------------------
   {
     type = "item",
-    name = "sp-personal-roboport-mk3-equipment",  -- #Missing regex#
+    name = "sp-portable-generator",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/krastorio/equipments/universal/portable-generator.png",
+    icon_size = 128,
+    icon_mipmaps = 4,
+    place_as_equipment_result = "sp-portable-generator",
+    subgroup = "equipment",
+    order = "a2[energy-source]-[portable-generator]",
+    default_request_amount = 1,
+    stack_size = 20
+  },
+  {
+    type = "item",
+    name = "sp-personal-roboport-mk3-equipment",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/equipment/personal-roboport-mk3-equipment.png",
     icon_size = 64,
     icon_mipmaps = 4,
-    placed_as_equipment_result = "sp-personal-roboport-mk3-equipment",
+    place_as_equipment_result = "sp-personal-roboport-mk3-equipment",
     subgroup = "equipment",
     order = "e[robotics]-c[personal-roboport-mk3-equipment]",
     default_request_amount = 1,
@@ -5936,11 +6108,11 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-personal-roboport-mk4-equipment",  -- #Missing regex#
+    name = "sp-personal-roboport-mk4-equipment",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/equipment/personal-roboport-mk4-equipment.png",
     icon_size = 64,
     icon_mipmaps = 4,
-    placed_as_equipment_result = "sp-personal-roboport-mk4-equipment",
+    place_as_equipment_result = "sp-personal-roboport-mk4-equipment",
     subgroup = "equipment",
     order = "e[robotics]-d[personal-roboport-mk4-equipment]",
     default_request_amount = 1,

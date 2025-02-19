@@ -28,5 +28,44 @@ personal_roboport_mk4_equipment.energy_source.input_flow_limit = "20000kW"
 
 data:extend({
   personal_roboport_mk3_equipment,
-  personal_roboport_mk4_equipment
+  personal_roboport_mk4_equipment,
+
+  {
+    type = "generator-equipment",
+    name = "sp-portable-generator",
+    sprite = {
+      filename = "__Spaghetorio__/graphics/krastorio/equipments/universal/portable-generator.png",
+      width = 256,
+      height = 256,
+      priority = "medium",
+    },
+    shape = {
+      width = 2,
+      height = 2,
+      type = "full",
+    },
+    -- TODO: add functionality for burning input
+    -- burner = {
+    --   fuel_categories = {"chemical", "vehicle-fuel"},
+    --   effectivity = 2,
+    --   fuel_inventory_size = 2,
+    --   burnt_inventory_size = 1,
+    --   smoke = {
+    --     {
+    --       name = "smoke",
+    --       deviation = {-0.25, -0.25},
+    --       frequency = 1,
+    --       position = {0, 0.5},
+    --       height = 1.25,
+    --       starting_frame_deviation = 60,
+    --     },
+    --   },
+    -- },
+    energy_source = {
+      type = "electric",
+      usage_priority = "primary-output",
+    },
+    power = "250kW",
+    categories = {"armor"},
+  },
 })

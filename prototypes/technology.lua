@@ -1355,7 +1355,8 @@ data:extend({
       },
     },
     prerequisites = {
-      "sp-alloy-forge"
+      "sp-alloy-forge",
+      "sp-material-science-pack-2"
     },
     unit =
     {
@@ -5002,6 +5003,83 @@ data:extend({
   },
   {
     type = "technology",
+    name = "kr-portable-generator",
+    icons = {
+      {
+        icon = "__Spaghetorio__/graphics/krastorio/technologies/portable-generator.png",
+        icon_size = 256,
+        icon_mipmaps = 4,
+      },
+      {
+        icon = "__core__/graphics/icons/technology/constants/constant-equipment.png",
+        icon_size = 128,
+        scale = 0.5,
+        shift = {50, 50}
+      },
+    },
+    icon_size = 256,
+    icon_mipmaps = 4,
+    upgrade = false,
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-portable-generator",
+      },
+    },
+    prerequisites = {
+      "battery-equipment",
+    },
+    unit = {
+      count = 100,
+      ingredients = {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"sp-material-science-pack-1", 1},
+        {"sp-electronic-science-pack-1", 1},
+        {"chemical-science-pack", 1}
+      },
+      time = 60,
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-personal-roboport-mk3-equipment",  -- #ForRegEx# - technology
+    icon_size = 128,
+    icon = "__Spaghetorio__/graphics/equipment/hr-personal-roboport-mk3-equipment.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-personal-roboport-mk3-equipment"
+      }
+    },
+    prerequisites = {
+      "sp-advanced-processing-unit",
+      "sp-neodymium-magnet"
+    },
+    unit =
+    {
+      count = 500,
+      ingredients = {
+        {"sp-automation-science-pack-3", 1},
+        {"sp-logistic-science-pack-3", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-electronic-science-pack-3", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"sp-material-science-pack-3", 1},
+        {"sp-computer-science-pack-2", 1},
+        {"sp-military-science-pack-3", 1},
+        {"production-science-pack", 1},
+        {"sp-nuclear-science-pack-2", 1},
+        {"space-science-pack", 1},
+        {"utility-science-pack", 1},
+      },
+      time = 30
+    },
+    order = "a-h-a"
+  },
+  {
+    type = "technology",
     name = "sp-personal-roboport-mk3-equipment",  -- #ForRegEx# - technology
     icon_size = 128,
     icon = "__Spaghetorio__/graphics/equipment/hr-personal-roboport-mk3-equipment.png",
@@ -6853,7 +6931,7 @@ data:extend({
       "metallurgic-science-pack"
     },
     unit = {
-      count = 200,
+      count = 500,
       ingredients = {
         {"automation-science-pack", 1},
         {"logistic-science-pack", 1},
@@ -7101,7 +7179,8 @@ data:extend({
       },
     },
     prerequisites = {
-      "sp-material-science-pack-2"
+      "sp-material-science-pack-2",
+      "big-mining-drill"
     },
     unit = {
       count = 200,
@@ -9469,6 +9548,70 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "sp-heavy-water",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-vibration-dampener",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-pressure-valve",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-vacuum-pump",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-precipitator",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-plasmacutter",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-magnetic-coupling",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-high-power-solenoid",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-gearshaft",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-condenser-coil",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-variable-frequenzy-drive",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-seal",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-piezoelectric-sensor",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-electromagnetic-brake",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-catalytic-converter",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-turbocharger",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-high-pressure-fan",
       },
       -- TODO: add recipe chain for
       -- {

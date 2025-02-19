@@ -1708,8 +1708,8 @@ data.raw.recipe["chemical-science-pack"].results = {
 util.recipe.change_recipe_ingredients("military-science-pack",
   {
     {type = "item", name = "shotgun", amount = 1},
-    {type = "item", name = "firearm-magazine", amount = 1},
-    {type = "item", name = "stone-wall", amount = 5},
+    {type = "item", name = "firearm-magazine", amount = 10},
+    {type = "item", name = "stone-wall", amount = 3},
     {type = "item", name = "grenade", amount = 3},
     {type = "item", name = "sp-blank-tech-card", amount = 5}
   },

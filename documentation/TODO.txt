@@ -459,9 +459,28 @@ Items:
     - EuNi4.5Co0.5: Europium (20%), Nickel (75%), Cobalt (5%) - Hydrogen storage.
     - GdNi4.5Co0.5: Gadolinium (20%), Nickel (75%), Cobalt (5%) - Hydrogen storage.
 
+  - magnetic coupling
+  - vacuum pump (contains seals and steel)
+  - pressure sensor (from aluminum, copper and silicon)
+  - gearshaft (created in induction hardening facility)
+  - magnetic lifter
+  - condenser coil (Condenses vapor into liquid, essential in cooling or refrigeration systems)
+  - electromagnetic brake
+  - turbo charger
+  - roller chain
+  - vibration dampener
+  - catalytic converter
+  - high pressure fan
+  - variable frequenzy drive (adjusts motor speed based on demand, improving efficiency)
+  - thermal regulator
+  - destiller
+  - high power solenoid
+  - plasma cutter
+  - electrostatic precipitator
+  - piezoelectric sensor
   - Seal
   - Bearing
-  - Seeds (for trees)
+  + Seeds (for trees)
   - Antimatter trains
   - Antimatter cube
   - Quantized matter
@@ -469,14 +488,13 @@ Items:
   - Coolant with different temperatures (coolant does not have a real purpose right now, see Idea coolant)
   - Vacuum chamber
   - x-ray tube (sterilization or something)
-  - Crucible
+  + Crucible
   - For semiconductors:
     - Tantalum nitride
     - Silicon nitride
     - Wafer
   - Nuclear products:
     - Isotopes of some elements. (Create recipes which take in one isotope and have 50% chance during their halflife to convert to another element)
-  - Alloy science pack t2 and t3
   - More T4 tech cards
 
 Recipes:

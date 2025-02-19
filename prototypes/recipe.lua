@@ -2883,6 +2883,25 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "sp-seal",  -- #ForRegEx# - recipe
+    category = "chemistry",
+    enabled = false,
+    energy_required = 1,
+    ingredients = {
+      {type = "item", name = "sp-rubber", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-seal", amount = 2}
+    },
+    crafting_machine_tint = {
+      primary = {r = 0.35, g = 0.35, b = 0.35, a = 1.000},
+      secondary = {r = 0.2, g = 0.2, b = 0.2, a = 1.000},
+      tertiary = {r = 0.1, g = 0.1, b = 0.1, a = 1.000},
+      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
+    }
+  },
+  {
+    type = "recipe",
     name = "sp-barium-sulfamate",  -- #ForRegEx# - recipe
     category = "chemistry",
     enabled = false,
@@ -3724,6 +3743,20 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-lead-molybdate", amount = 3}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-gearshaft",  -- #ForRegEx# - recipe
+    category = "induction-hardening",
+    enabled = false,
+    energy_required = 3,
+    ingredients = {
+      {type = "item", name = "sp-stainless-steel-gear-wheel", amount = 4},
+      {type = "item", name = "sp-maraging-steel", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-gearshaft", amount = 1}
     }
   },
   ------------------------------------------------------------------------------
@@ -5487,6 +5520,22 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "sp-variable-frequenzy-drive",  -- #ForRegEx# - recipe
+    category = "crafting",
+    enabled = false,
+    energy_required = 3,
+    ingredients = {
+      {type = "item", name = "sp-insulated-wire", amount = 3},
+      {type = "item", name = "advanced-circuit", amount = 2},
+      {type = "item", name = "sp-vacuum-tube", amount = 6},
+      {type = "item", name = "sp-integrated-circuit", amount = 4},
+    },
+    results = {
+      {type = "item", name = "sp-variable-frequenzy-drive", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
     name = "sp-control-unit",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
@@ -5538,6 +5587,54 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "sp-vibration-dampener",  -- #ForRegEx# - recipe
+    category = "crafting",
+    enabled = false,
+    energy_required = 1.5,
+    ingredients = {
+      {type = "item", name = "sp-rubber", amount = 1},
+      {type = "item", name = "sp-spring", amount = 1},
+      {type = "item", name = "sp-brass", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-vibration-dampener", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-pressure-valve",  -- #ForRegEx# - recipe
+    category = "crafting",
+    enabled = false,
+    energy_required = 1.5,
+    ingredients = {
+      {type = "item", name = "sp-valve", amount = 1},
+      {type = "item", name = "sp-stainless-steel-gear-wheel", amount = 2},
+      {type = "item", name = "sp-stainless-steel", amount = 1},
+      {type = "item", name = "sp-seal", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-pressure-valve", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-high-power-solenoid",  -- #ForRegEx# - recipe
+    category = "crafting",
+    enabled = false,
+    energy_required = 1.5,
+    ingredients = {
+      {type = "item", name = "copper-cable", amount = 4},
+      {type = "item", name = "sp-ferrite", amount = 1},
+      {type = "item", name = "sp-composites", amount = 1},
+      {type = "item", name = "sp-seal", amount = 1},
+      {type = "item", name = "sp-stainless-steel", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-high-power-solenoid", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
     name = "sp-dynamo",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
@@ -5563,7 +5660,7 @@ data:extend({
     energy_required = 3.6,
     ingredients = {
       {type = "item", name = "copper-cable", amount = 6},
-      {type = "item", name = "sp-magnet", amount = 6},
+      {type = "item", name = "sp-magnetic-coupling", amount = 1},
       {type = "item", name = "sp-ball-bearing", amount = 4},
       {type = "item", name = "sp-stainless-steel-gear-wheel", amount = 5},
       {type = "item", name = "sp-aluminum-brass", amount = 2},
@@ -6174,6 +6271,23 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "sp-piezoelectric-sensor",  -- #ForRegEx# - recipe
+    category = "manufacturing",
+    enabled = false,
+    energy_required = 6,
+    ingredients = {
+      {type = "item", name = "sp-barium-titanate", amount = 5},
+      {type = "item", name = "sp-quartz", amount = 5},
+      {type = "item", name = "plastic-bar", amount = 2},
+      {type = "fluid", name = "sp-vinyl-chloride", amount = 30},
+      {type = "item", name = "sp-silver", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-piezoelectric-sensor", amount = 5}
+    }
+  },
+  {
+    type = "recipe",
     name = "sp-cryostat",  -- #ForRegEx# - recipe
     category = "crafting-with-fluid",
     enabled = false,
@@ -6337,26 +6451,6 @@ data:extend({
   ------------------------------------------------------------------------------
   -- MARK: advanced-crafting
   ------------------------------------------------------------------------------
-  {
-    type = "recipe",
-    name = "sp-drillhead",  -- #ForRegEx# - recipe
-    icon = "__Spaghetorio__/graphics/icons/turbine-blade.png",
-    icon_size = 64,
-    mip_maps = 4,
-    category = "advanced-crafting",
-    enabled = false,
-    energy_required = 6,
-    ingredients = {
-      {type = "item", name = "sp-heavy-gearbox", amount = 1},
-      {type = "item", name = "sp-vanadium-steel", amount = 10},
-      {type = "item", name = "sp-elgiloy", amount = 2},
-      {type = "item", name = "sp-boron-carbide", amount = 2},
-      {type = "fluid", name = "sp-potassium-dichromate-solution", amount = 10},
-    },
-    results = {
-      {type = "item", name = "sp-drillhead", amount = 1}
-    }
-  },
   {
     type = "recipe",
     name = "sp-turbine-blade-from-stainless-steel",  -- #ForRegEx# - recipe
@@ -6740,6 +6834,166 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-glass-fiber", amount = 5}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-vacuum-pump",  -- #ForRegEx# - recipe
+    category = "manufacturing",
+    enabled = false,
+    energy_required = 2,
+    ingredients = {
+      {type = "item", name = "sp-big-electric-engine-unit", amount = 1},
+      {type = "item", name = "sp-seal", amount = 4},
+      {type = "item", name = "sp-brass", amount = 1},
+      {type = "item", name = "sp-waspaloy", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-vacuum-pump", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-precipitator",  -- #ForRegEx# - recipe
+    category = "manufacturing",
+    enabled = false,
+    energy_required = 3,
+    ingredients = {
+      {type = "item", name = "sp-filter", amount = 6},
+      {type = "item", name = "sp-stainless-steel", amount = 5},
+      {type = "item", name = "sp-nickel-cobalt", amount = 2},
+    },
+    results = {
+      {type = "item", name = "sp-precipitator", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-plasmacutter",  -- #ForRegEx# - recipe
+    category = "manufacturing",
+    enabled = false,
+    energy_required = 2,
+    ingredients = {
+      {type = "item", name = "copper-cable", amount = 2},
+      {type = "item", name = "tungsten-plate", amount = 1},
+      {type = "item", name = "sp-boron-carbide", amount = 1},
+      {type = "item", name = "sp-nimonic", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-plasmacutter", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-magnetic-coupling",  -- #ForRegEx# - recipe
+    category = "manufacturing",
+    enabled = false,
+    energy_required = 1,
+    ingredients = {
+      {type = "item", name = "sp-magnet", amount = 4},
+      {type = "item", name = "sp-duralumin", amount = 1},
+      {type = "item", name = "sp-vanadium-aluminum", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-magnetic-coupling", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-condenser-coil",  -- #ForRegEx# - recipe
+    category = "manufacturing",
+    enabled = false,
+    energy_required = 1,
+    ingredients = {
+      {type = "item", name = "sp-copper-antimony", amount = 4},
+      {type = "item", name = "sp-brass", amount = 1},
+      {type = "item", name = "sp-stainless-steel", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-condenser-coil", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-electromagnetic-brake",  -- #ForRegEx# - recipe
+    category = "manufacturing",
+    enabled = false,
+    energy_required = 2,
+    ingredients = {
+      {type = "item", name = "sp-electromagnet", amount = 4},
+      {type = "item", name = "sp-boron-carbide", amount = 1},
+      {type = "item", name = "sp-titanium-carbide", amount = 1},
+      {type = "item", name = "sp-nickel-cobalt", amount = 1},
+      {type = "item", name = "sp-aluminum-brass", amount = 1},
+      {type = "item", name = "sp-titanium-aluminum-vanadium", amount = 3},
+    },
+    results = {
+      {type = "item", name = "sp-electromagnetic-brake", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-catalytic-converter",  -- #ForRegEx# - recipe
+    category = "manufacturing",
+    enabled = false,
+    energy_required = 1.5,
+    ingredients = {
+      {type = "item", name = "sp-stainless-steel", amount = 2},
+      {type = "item", name = "sp-nickel-cobalt", amount = 1},
+      {type = "item", name = "sp-palladium", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-catalytic-converter", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-turbocharger",  -- #ForRegEx# - recipe
+    category = "manufacturing",
+    enabled = false,
+    energy_required = 1.5,
+    ingredients = {
+      {type = "item", name = "sp-stainless-steel", amount = 3},
+      {type = "item", name = "sp-nickel-cobalt", amount = 2},
+      {type = "item", name = "sp-seal", amount = 2},
+      {type = "item", name = "sp-ball-bearing", amount = 2},
+    },
+    results = {
+      {type = "item", name = "sp-turbocharger", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-high-pressure-fan",  -- #ForRegEx# - recipe
+    category = "manufacturing",
+    enabled = false,
+    energy_required = 4,
+    ingredients = {
+      {type = "item", name = "sp-electromagnetic-brake", amount = 2},
+      {type = "item", name = "sp-high-power-solenoid", amount = 2},
+      {type = "item", name = "sp-turbine-blade", amount = 12},
+      {type = "item", name = "sp-titanium-aluminum-vanadium", amount = 2},
+      {type = "item", name = "sp-control-unit", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-high-pressure-fan", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-drillhead",  -- #ForRegEx# - recipe
+    category = "advanced-crafting",
+    enabled = false,
+    energy_required = 6,
+    ingredients = {
+      {type = "item", name = "sp-heavy-gearbox", amount = 1},
+      {type = "item", name = "sp-vanadium-steel", amount = 10},
+      {type = "item", name = "sp-elgiloy", amount = 2},
+      {type = "item", name = "sp-boron-carbide", amount = 2},
+      {type = "fluid", name = "sp-potassium-dichromate-solution", amount = 10},
+    },
+    results = {
+      {type = "item", name = "sp-drillhead", amount = 1}
     }
   },
   ------------------------------------------------------------------------------
@@ -8867,6 +9121,27 @@ data:extend({
   ------------------------------------------------------------------------------
   -- MARK: Equipment
   ------------------------------------------------------------------------------
+  {
+    type = "recipe",
+    name = "sp-portable-generator",  -- #ForRegEx# - recipe
+    icon_size = 64,
+    mip_maps = 4,
+    category = "crafting",
+    enabled = false,
+    energy_required = 20,
+    ingredients = {
+      {type = "item", name = "engine-unit", amount = 2},
+      {type = "item", name = "sp-turbocharger", amount = 2},
+      {type = "item", name = "sp-vibration-dampener", amount = 2},
+      {type = "item", name = "sp-gearbox", amount = 1},
+      {type = "item", name = "electric-engine-unit", amount = 1},
+      {type = "item", name = "sp-aluminum-frame", amount = 4},
+      {type = "item", name = "sp-bolts", amount = 8}
+    },
+    results = {
+      {type = "item", name = "sp-portable-generator", amount = 1}
+    }
+  },
   {
     type = "recipe",
     name = "sp-personal-roboport-mk3-equipment",  -- #ForRegEx# - recipe
