@@ -4880,7 +4880,7 @@ data:extend({
   },
   {
     type = "technology",
-    name = "kr-portable-generator",
+    name = "sp-kr-portable-generator",  -- #ForRegEx# - technology
     icons = {
       {
         icon = "__Spaghetorio__/graphics/krastorio/technologies/portable-generator.png",
@@ -4911,7 +4911,7 @@ data:extend({
       "battery-equipment",
     },
     unit = {
-      count = 100,
+      count = 50,
       ingredients = {
         {"automation-science-pack", 1},
         {"logistic-science-pack", 1},
@@ -7684,7 +7684,8 @@ data:extend({
     },
     prerequisites = {
       "lamp",
-      "sp-manufacturer"
+      "sp-manufacturer",
+      "sp-kr-portable-generator"
     },
     unit =
     {

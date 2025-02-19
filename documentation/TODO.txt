@@ -1,6 +1,7 @@
 
 TODO before alpha release:
   - Add separate graphics mod for building graphics
+  + clean up locale
   + fix crafting categories for buildings
   + balance pass of:
     + generator equipment power

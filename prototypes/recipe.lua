@@ -6936,9 +6936,9 @@ data:extend({
     ingredients =
     {
       {type = "item", name = "automation-science-pack", amount = 20},
-      {type = "item", name = "sp-ball-bearing", amount = 5},
       {type = "item", name = "sp-plate-heat-exchanger", amount = 5},
       {type = "item", name = "sp-vibration-dampener", amount = 5},
+      {type = "item", name = "sp-turbocharger", amount = 5},
       {type = "item", name = "small-lamp", amount = 5},
     },
     results = {
