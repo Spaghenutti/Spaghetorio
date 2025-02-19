@@ -927,21 +927,13 @@ data:extend({
       },
     },
     prerequisites = {
-      "sp-sodium-processing",
-      "sp-perchloric-acid",
-      "sp-basic-crushing-smelting",
-      "metallurgic-science-pack"
+      "sp-metallurgic-science-pack-2"
     },
     unit =
     {
       count = 300,
       ingredients = {
         {"automation-science-pack", 1},
-        {"logistic-science-pack", 1},
-        {"chemical-science-pack", 1},
-        {"sp-material-science-pack-1", 1},
-        {"sp-geological-science-pack-1", 1},
-        {"metallurgic-science-pack", 1}
       },
       time = 30
     },
@@ -1084,16 +1076,19 @@ data:extend({
       }
     },
     prerequisites = {
-      "production-science-pack"
+      "sp-alkaline-solutions"
     },
     unit =
     {
       count = 150,
       ingredients = {
-        {"automation-science-pack", 1},
+        {"sp-automation-science-pack-2", 1},
         {"logistic-science-pack", 1},
         {"sp-material-science-pack-1", 1},
-        {"sp-geological-science-pack-1", 1}
+        {"sp-electronic-science-pack-1", 1},
+        {"sp-geological-science-pack-1", 1},
+        {"chemical-science-pack", 1},
+        {"metallurgic-science-pack", 1}
       },
       time = 30
     },
@@ -1230,18 +1225,20 @@ data:extend({
       },
     },
     prerequisites = {
-      "sp-perchloric-acid",
-      "sp-chemical-science-pack-2"
+      "sp-chemical-stager"
     },
     unit =
     {
       count = 150,
       ingredients = {
         {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"sp-material-science-pack-2", 1},
-        {"sp-geological-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1}
+        {"logistic-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"sp-material-science-pack-1", 1},
+        {"sp-geological-science-pack-1", 1},
+        {"sp-electronic-science-pack-1", 1},
+        {"metallurgic-science-pack", 1},
+        {"electromagnetic-science-pack", 1}
       },
       time = 30
     },
@@ -1395,14 +1392,13 @@ data:extend({
       },
     },
     prerequisites = {
-      "sp-alloy-forge",
-      "sp-automation-science-pack-2"
+      "sp-alloy-forge"
     },
     unit =
     {
       count = 200,
       ingredients = {
-        {"sp-automation-science-pack-2", 1},
+        {"automation-science-pack", 1},
         {"logistic-science-pack", 1},
         {"sp-material-science-pack-1", 1},
         {"sp-electronic-science-pack-1", 1},
@@ -1437,8 +1433,7 @@ data:extend({
       },
     },
     prerequisites = {
-      "sp-alloy-forge",
-      "sp-automation-science-pack-2"
+      "sp-molybdenum-processing"
     },
     unit =
     {
@@ -2176,7 +2171,9 @@ data:extend({
     type = "technology",
     name = "sp-alkaline-solutions",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghetorio__/graphics/hr-icons/magnet.png",
+    icons = util.icon.combine_three_icons("__Spaghetorio__/graphics/hr-icons/calcium-hydroxide-solution.png", 256, nil,
+                                          "__Spaghetorio__/graphics/hr-icons/ammonium-hydroxide-solution.png", 256, nil,
+                                          "__Spaghetorio__/graphics/hr-icons/potassium-hydroxide-solution.png", 256, nil),
     effects =
     {
       {
@@ -2193,7 +2190,9 @@ data:extend({
       }
     },
     prerequisites = {
-      "sp-glycerin"
+      "sp-glycerin",
+      "sp-barium-processing",
+      "sp-potassium-processing",
     },
     unit =
     {
@@ -2371,7 +2370,7 @@ data:extend({
     name = "sp-phosphorus-processing",  -- #ForRegEx# - technology
     icon_size = 256,
     icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/hr-icons/phosphoric-acid.png", 256, nil,
-                                   "__Spaghetorio__/graphics/hr-icons/phosphorus.png", 256, nil),
+                                        "__Spaghetorio__/graphics/hr-icons/phosphorus.png", 256, nil),
     effects =
     {
       {
@@ -3124,18 +3123,20 @@ data:extend({
       },
     },
     prerequisites = {
-      "sp-geological-science-pack-2"
+      "sp-chemical-stager"
     },
     unit =
     {
-      count = 500,
+      count = 300,
       ingredients = {
         {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1},
-        {"sp-material-science-pack-2", 1},
-        {"sp-geological-science-pack-2", 1},
-        {"production-science-pack", 1}
+        {"logistic-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"sp-material-science-pack-1", 1},
+        {"sp-geological-science-pack-1", 1},
+        {"sp-electronic-science-pack-1", 1},
+        {"metallurgic-science-pack", 1},
+        {"electromagnetic-science-pack", 1}
       },
       time = 30
     },
@@ -3385,6 +3386,10 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "sp-rubber"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-seal",
       },
       {
         type = "unlock-recipe",
@@ -4464,6 +4469,10 @@ data:extend({
     icon = "__Spaghetorio__/graphics/hr-icons/heavy-gearbox.png",
     effects =
     {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-gearshaft",
+      },
       {
         type = "unlock-recipe",
         recipe = "sp-heavy-gearbox"
@@ -7001,12 +7010,29 @@ data:extend({
         type = "unlock-recipe",
         recipe = "sp-chemical-stager",
       },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-condenser-coil",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-precipitator",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-pressure-valve",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-vibration-dampener",
+      },
     },
     prerequisites = {
-      "sp-automation-science-pack-2"
+      "sp-automation-science-pack-2",
+      "sp-nickel-alloys"
     },
     unit = {
-      count = 200,
+      count = 500,
       ingredients = {
         {"sp-automation-science-pack-2", 1},
         {"logistic-science-pack", 1},
@@ -7828,10 +7854,8 @@ data:extend({
       },
     },
     prerequisites = {
-      "sp-ball-bearing",
       "lamp",
-      "metallurgic-science-pack",
-      "electromagnetic-science-pack"
+      "sp-manufacturer"
     },
     unit =
     {
@@ -7894,7 +7918,7 @@ data:extend({
       },
     },
     prerequisites = {
-      "sp-automation-science-pack-2"
+      "sp-logistic-science-pack-2"
     },
     unit =
     {
@@ -9551,19 +9575,7 @@ data:extend({
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-vibration-dampener",
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-pressure-valve",
-      },
-      {
-        type = "unlock-recipe",
         recipe = "sp-vacuum-pump",
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-precipitator",
       },
       {
         type = "unlock-recipe",
@@ -9579,19 +9591,7 @@ data:extend({
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-gearshaft",
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-condenser-coil",
-      },
-      {
-        type = "unlock-recipe",
         recipe = "sp-variable-frequenzy-drive",
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-seal",
       },
       {
         type = "unlock-recipe",
@@ -9632,9 +9632,9 @@ data:extend({
     },
     order = "c-a",
     unit = {
-      count = 100,
+      count = 69420,
       ingredients = {
-        {"automation-science-pack", 1},
+        {"sp-uniformity-science-pack", 1},
       },
       time = 30,
     },

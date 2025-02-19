@@ -5760,24 +5760,6 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-automation-science-pack-2",  -- #ForRegEx# - recipe
-    category = "crafting",
-    enabled = false,
-    energy_required = 24,
-    ingredients =
-    {
-      {type = "item", name = "automation-science-pack", amount = 20},
-      {type = "item", name = "sp-ball-bearing", amount = 5},
-      {type = "item", name = "small-lamp", amount = 5},
-      {type = "item", name = "sp-magnet", amount = 10},
-      {type = "item", name = "sp-valve", amount = 10}
-    },
-    results = {
-      {type = "item", name = "sp-automation-science-pack-2", amount = 5}
-    }
-  },
-  {
-    type = "recipe",
     name = "sp-logistic-science-pack-2",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
@@ -6238,14 +6220,15 @@ data:extend({
     name = "sp-heavy-gearbox",  -- #ForRegEx# - recipe
     category = "crafting-with-fluid",
     enabled = false,
-    energy_required = 4,
+    energy_required = 5,
     ingredients = {
-      {type = "item", name = "sp-machined-parts", amount = 8},
-      {type = "fluid", name = "lubricant", amount = 20},
+      {type = "item", name = "sp-machined-parts", amount = 3},
+      {type = "fluid", name = "lubricant", amount = 50},
       {type = "item", name = "sp-bolts", amount = 4},
       {type = "item", name = "sp-heavy-ball-bearing", amount = 3},
       {type = "item", name = "sp-stainless-steel", amount = 2},
-      {type = "item", name = "sp-stainless-steel-gear-wheel", amount = 10}
+      {type = "item", name = "sp-stainless-steel-gear-wheel", amount = 10},
+      {type = "item", name = "sp-gearshaft", amount = 1},
     },
     results = {
       {type = "item", name = "sp-heavy-gearbox", amount = 1}
@@ -6256,14 +6239,14 @@ data:extend({
     name = "sp-differential",  -- #ForRegEx# - recipe
     category = "crafting-with-fluid",
     enabled = false,
-    energy_required = 6,
+    energy_required = 3,
     ingredients = {
       {type = "item", name = "sp-gearbox", amount = 2},
-      {type = "fluid", name = "lubricant", amount = 50},
-      {type = "item", name = "sp-machined-parts", amount = 3},
+      {type = "fluid", name = "lubricant", amount = 20},
+      {type = "item", name = "sp-machined-parts", amount = 8},
       {type = "item", name = "sp-bolts", amount = 4},
       {type = "item", name = "sp-ball-bearing", amount = 3},
-      {type = "item", name = "sp-stainless-steel-gear-wheel", amount = 12}
+      {type = "item", name = "sp-stainless-steel-gear-wheel", amount = 6}
     },
     results = {
       {type = "item", name = "sp-differential", amount = 1}
@@ -6272,7 +6255,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-piezoelectric-sensor",  -- #ForRegEx# - recipe
-    category = "manufacturing",
+    category = "crafting-with-fluid",
     enabled = false,
     energy_required = 6,
     ingredients = {
@@ -6905,7 +6888,7 @@ data:extend({
     enabled = false,
     energy_required = 1,
     ingredients = {
-      {type = "item", name = "sp-copper-antimony", amount = 4},
+      {type = "item", name = "copper-cable", amount = 4},
       {type = "item", name = "sp-brass", amount = 1},
       {type = "item", name = "sp-stainless-steel", amount = 1},
     },
@@ -6982,7 +6965,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-drillhead",  -- #ForRegEx# - recipe
-    category = "advanced-crafting",
+    category = "manufacturing",
     enabled = false,
     energy_required = 6,
     ingredients = {
@@ -6994,6 +6977,24 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-drillhead", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-automation-science-pack-2",  -- #ForRegEx# - recipe
+    category = "manufacturing",
+    enabled = false,
+    energy_required = 24,
+    ingredients =
+    {
+      {type = "item", name = "automation-science-pack", amount = 20},
+      {type = "item", name = "sp-ball-bearing", amount = 5},
+      {type = "item", name = "small-lamp", amount = 5},
+      {type = "item", name = "sp-magnet", amount = 10},
+      {type = "item", name = "sp-valve", amount = 10}
+    },
+    results = {
+      {type = "item", name = "sp-automation-science-pack-2", amount = 5}
     }
   },
   ------------------------------------------------------------------------------
@@ -8032,9 +8033,19 @@ data:extend({
     mip_maps = 4,
     category = "crafting",
     enabled = false,
-    energy_required = 69,
+    energy_required = 60,
     ingredients = {
-      {type = "item", name = "iron-plate", amount = 69},
+      {type = "item", name = "sp-glass", amount = 12},
+      {type = "item", name = "sp-brass", amount = 20},
+      {type = "item", name = "sp-vanadium-steel", amount = 50},
+      {type = "item", name = "sp-insulation-sheet", amount = 10},
+      {type = "item", name = "electric-engine-unit", amount = 12},
+      {type = "item", name = "sp-condenser-coil", amount = 4},
+      {type = "item", name = "sp-precipitator", amount = 3},
+      {type = "item", name = "sp-pressure-valve", amount = 12},
+      {type = "item", name = "sp-vibration-dampener", amount = 12},
+      {type = "item", name = "sp-flange", amount = 6},
+      {type = "item", name = "refined-concrete", amount = 40},
     },
     results = {
       {type = "item", name = "sp-chemical-stager", amount = 1}

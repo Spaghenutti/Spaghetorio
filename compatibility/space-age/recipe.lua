@@ -59,7 +59,7 @@ data.raw.recipe["lithium"].category = "advanced-chemistry"
 util.recipe.change_recipe_ingredients("lithium",
   {
     {type = "item", name = "sp-lithium-chloride", amount = 2},
-    {type = "fluid", name = "sp-sodium-hydroxide", amount = 5}
+    {type = "fluid", name = "sp-ammonium-hydroxide-solution", amount = 5}
   },
   8)
 data.raw.recipe["lithium"].results = {
