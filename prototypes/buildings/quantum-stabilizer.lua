@@ -114,7 +114,7 @@ data:extend({
       {inventory_index = defines.inventory.assembling_machine_modules, shift = {0, 1.25}}
     },
     allowed_effects = {"consumption", "productivity", "pollution", "quality"},
-    crafting_categories = {"crafting", "quantum-assembling"},
+    crafting_categories = {"quantum-assembling"},
     crafting_speed = 1,
     energy_source =
     {

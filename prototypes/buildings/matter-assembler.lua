@@ -132,7 +132,10 @@ data:extend({
         },
       },
     },
-    crafting_categories = { "sp-kr-matter-deconversion", "sp-kr-matter-items" },
+    crafting_categories = {
+      "sp-kr-matter-deconversion",
+      "sp-kr-matter-items"
+    },
     vehicle_impact_sound = sounds.generic_impact,
     working_sound = {
       sound = {

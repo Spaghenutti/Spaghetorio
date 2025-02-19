@@ -170,7 +170,6 @@ data:extend({
       "crafting",
       "advanced-crafting",
       "crafting-with-fluid",
-      "sp-kr-smelting-crafting",
     },
     vehicle_impact_sound = sounds.generic_impact,
     working_sound = {

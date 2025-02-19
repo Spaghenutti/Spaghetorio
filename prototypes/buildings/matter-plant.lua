@@ -116,7 +116,7 @@ data:extend({
         },
       },
     },
-    crafting_categories = { "sp-kr-matter-conversion" },
+    crafting_categories = {"sp-kr-matter-conversion"},
     vehicle_impact_sound = sounds.generic_impact,
     working_sound = {
       sound = { filename = "__Spaghetorio__/sounds/buildings/matter-plant.ogg" },

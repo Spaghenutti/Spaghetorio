@@ -78,11 +78,6 @@ data:extend({
     name = "sp-kr-advanced-smelting",
   },
   {
-    -- Crafting category for building that are furnace and assemblers at the same time
-    type = "recipe-category",
-    name = "sp-kr-smelting-crafting",
-  },
-  {
     -- From items to matter
     type = "recipe-category",
     name = "sp-kr-matter-conversion",
@@ -101,6 +96,10 @@ data:extend({
   {
     type = "recipe-category",
     name = "sp-kr-research-data",
+  },
+  {
+    type = "recipe-category",
+    name = "quantum-computing",
   },
   {
     type = "recipe-category",
@@ -172,6 +171,10 @@ data:extend({
   },
   {
     type = "recipe-category",
+    name = "oxidizing"
+  },
+  {
+    type = "recipe-category",
     name = "alien-tech-manufacturing"
   },
   {
@@ -181,6 +184,10 @@ data:extend({
   {
     type = "recipe-category",
     name = "intermediate-smelting"
+  },
+  {
+    type = "recipe-category",
+    name = "alloy-smelting"
   },
   {
     type = "recipe-category",

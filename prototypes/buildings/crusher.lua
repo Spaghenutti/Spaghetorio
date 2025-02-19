@@ -45,7 +45,10 @@ data:extend({
         },
       },
     },
-    crafting_categories = { "sp-kr-crushing", "sp-kr-void-crushing" },
+    crafting_categories = {
+      "sp-kr-crushing",
+      "sp-kr-void-crushing"
+    },
     vehicle_impact_sound = { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
     working_sound = {
       sound = {

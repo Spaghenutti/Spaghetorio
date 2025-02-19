@@ -105,7 +105,7 @@ data:extend({
         },
       },
     },
-    crafting_categories = { "sp-kr-electrolysis" },
+    crafting_categories = {"sp-kr-electrolysis"},
     vehicle_impact_sound = { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
     working_sound = {
       sound = {

@@ -133,7 +133,7 @@ data:extend({
     },
     energy_usage = "250kW",
     ingredient_count = 4,
-    crafting_categories = { "sp-kr-fuel-refinery" },
+    crafting_categories = {"sp-kr-fuel-refinery"},
     fluid_boxes = {
       -- Inputs
       {

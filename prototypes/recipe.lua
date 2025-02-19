@@ -852,85 +852,6 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-rare-metals-alloy-from-yttrium",  -- #ForRegEx# - recipe
-    icon = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/rare-metals/rare-metals.png",
-    icon_size = 64,
-    mip_maps = 4,
-    category = "intermediate-smelting",
-    enabled = false,
-    energy_required = 16,
-    -- hide_from_player_crafting = true,  -- The player should be able to see at least one of those recipes
-    ingredients = {
-      {type = "item", name = "sp-yttrium", amount = 1},
-      {type = "item", name = "iron-plate", amount = 3},
-      {type = "item", name = "sp-chromium-plate", amount = 10}
-    },
-    results = {
-      {type = "item", name = "sp-rare-metals-alloy", amount = 6}
-    },
-    order = "ingot-[rare-metals-1]"
-  },
-  {
-    type = "recipe",
-    name = "sp-rare-metals-alloy-from-lanthanum",  -- #ForRegEx# - recipe
-    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/krastorio/icons/items-with-variations/rare-metals/rare-metals.png", 64,
-                                         "__Spaghetorio__/graphics/icons/lanthanum.png", 64),
-    category = "intermediate-smelting",
-    enabled = false,
-    energy_required = 20,
-    hide_from_player_crafting = true,
-    ingredients = {
-      {type = "item", name = "sp-lanthanum", amount = 1},
-      {type = "item", name = "copper-plate", amount = 3},
-      {type = "item", name = "sp-zinc-plate", amount = 8}
-    },
-    results = {
-      {type = "item", name = "sp-rare-metals-alloy", amount = 5}
-    },
-    order = "ingot-[rare-metals-alloy-from-lanthanum]"
-  },
-  {
-    type = "recipe",
-    name = "sp-rare-metals-alloy-from-cerium",  -- #ForRegEx# - recipe
-    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/krastorio/icons/items-with-variations/rare-metals/rare-metals.png", 64,
-                                         "__Spaghetorio__/graphics/icons/cerium.png", 64),
-    category = "intermediate-smelting",
-    enabled = false,
-    energy_required = 30,
-    hide_from_player_crafting = true,
-    ingredients = {
-      {type = "item", name = "sp-cerium", amount = 2},
-      {type = "item", name = "sp-tantalum-billet", amount = 3},
-      {type = "item", name = "sp-titanium-ingot", amount = 5},
-      {type = "item", name = "sp-aluminum-sheet", amount = 14}
-    },
-    results = {
-      {type = "item", name = "sp-rare-metals-alloy", amount = 10}
-    },
-    order = "ingot-[rare-metals-alloy-from-cerium]"
-  },
-  {
-    type = "recipe",
-    name = "sp-rare-metals-alloy-from-neodymium",  -- #ForRegEx# - recipe
-    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/krastorio/icons/items-with-variations/rare-metals/rare-metals.png", 64,
-                                         "__Spaghetorio__/graphics/icons/neodymium.png", 64),
-    category = "intermediate-smelting",
-    enabled = false,
-    energy_required = 24,
-    hide_from_player_crafting = true,
-    ingredients = {
-      {type = "item", name = "sp-neodymium", amount = 1},
-      {type = "item", name = "copper-plate", amount = 10},
-      {type = "item", name = "sp-lead-slab", amount = 3},
-      {type = "item", name = "sp-niobium-billet", amount = 2},
-    },
-    results = {
-      {type = "item", name = "sp-rare-metals-alloy", amount = 6}
-    },
-    order = "ingot-[rare-metals-alloy-from-neodymium]"
-  },
-  {
-    type = "recipe",
     name = "sp-silver-palladium",  -- #ForRegEx# - recipe
     icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/icons/silver.png", 64, nil,
                                         "__Spaghetorio__/graphics/icons/palladium.png", 64, nil),
@@ -1361,6 +1282,19 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-ferrite", amount = 4}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-vanadium-plate",  -- #ForRegEx# - recipe
+    category = "intermediate-smelting",
+    enabled = false,
+    energy_required = 10,
+    ingredients = {
+      {type = "item", name = "sp-ammonium-metavanadate", amount = 3},
+    },
+    results = {
+      {type = "item", name = "sp-vanadium-plate", amount = 2}
     }
   },
   ------------------------------------------------------------------------------
@@ -2107,22 +2041,90 @@ data:extend({
     }
   },
   ------------------------------------------------------------------------------
-  -- MARK: metallurgy
+  -- MARK: alloy-smelting
   ------------------------------------------------------------------------------
   {
     type = "recipe",
-    name = "sp-vanadium-plate",  -- #ForRegEx# - recipe
-    category = "metallurgy",
+    name = "sp-rare-metals-alloy-from-yttrium",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/rare-metals/rare-metals.png",
+    icon_size = 64,
+    mip_maps = 4,
+    category = "intermediate-smelting",
     enabled = false,
-    energy_required = 10,
+    energy_required = 16,
+    -- hide_from_player_crafting = true,  -- The player should be able to see at least one of those recipes
     ingredients = {
-      {type = "item", name = "sp-ammonium-metavanadate", amount = 2},
-      {type = "fluid", name = "sp-sodium-hydroxide", amount = 4}
+      {type = "item", name = "sp-yttrium", amount = 1},
+      {type = "item", name = "iron-plate", amount = 3},
+      {type = "item", name = "sp-chromium-plate", amount = 10}
     },
     results = {
-      {type = "item", name = "sp-vanadium-plate", amount = 1}
-    }
+      {type = "item", name = "sp-rare-metals-alloy", amount = 6}
+    },
+    order = "ingot-[rare-metals-1]"
   },
+  {
+    type = "recipe",
+    name = "sp-rare-metals-alloy-from-lanthanum",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/krastorio/icons/items-with-variations/rare-metals/rare-metals.png", 64,
+                                         "__Spaghetorio__/graphics/icons/lanthanum.png", 64),
+    category = "intermediate-smelting",
+    enabled = false,
+    energy_required = 20,
+    hide_from_player_crafting = true,
+    ingredients = {
+      {type = "item", name = "sp-lanthanum", amount = 1},
+      {type = "item", name = "copper-plate", amount = 3},
+      {type = "item", name = "sp-zinc-plate", amount = 8}
+    },
+    results = {
+      {type = "item", name = "sp-rare-metals-alloy", amount = 5}
+    },
+    order = "ingot-[rare-metals-alloy-from-lanthanum]"
+  },
+  {
+    type = "recipe",
+    name = "sp-rare-metals-alloy-from-cerium",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/krastorio/icons/items-with-variations/rare-metals/rare-metals.png", 64,
+                                         "__Spaghetorio__/graphics/icons/cerium.png", 64),
+    category = "intermediate-smelting",
+    enabled = false,
+    energy_required = 30,
+    hide_from_player_crafting = true,
+    ingredients = {
+      {type = "item", name = "sp-cerium", amount = 2},
+      {type = "item", name = "sp-tantalum-billet", amount = 3},
+      {type = "item", name = "sp-titanium-ingot", amount = 5},
+      {type = "item", name = "sp-aluminum-sheet", amount = 14}
+    },
+    results = {
+      {type = "item", name = "sp-rare-metals-alloy", amount = 10}
+    },
+    order = "ingot-[rare-metals-alloy-from-cerium]"
+  },
+  {
+    type = "recipe",
+    name = "sp-rare-metals-alloy-from-neodymium",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/krastorio/icons/items-with-variations/rare-metals/rare-metals.png", 64,
+                                         "__Spaghetorio__/graphics/icons/neodymium.png", 64),
+    category = "intermediate-smelting",
+    enabled = false,
+    energy_required = 24,
+    hide_from_player_crafting = true,
+    ingredients = {
+      {type = "item", name = "sp-neodymium", amount = 1},
+      {type = "item", name = "copper-plate", amount = 10},
+      {type = "item", name = "sp-lead-slab", amount = 3},
+      {type = "item", name = "sp-niobium-billet", amount = 2},
+    },
+    results = {
+      {type = "item", name = "sp-rare-metals-alloy", amount = 6}
+    },
+    order = "ingot-[rare-metals-alloy-from-neodymium]"
+  },
+  ------------------------------------------------------------------------------
+  -- MARK: metallurgy
+  ------------------------------------------------------------------------------
   {
     type = "recipe",
     name = "sp-boron-pillet",  -- #ForRegEx# - recipe

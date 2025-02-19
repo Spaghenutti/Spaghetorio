@@ -153,7 +153,7 @@ data:extend({
       {inventory_index = defines.inventory.assembling_machine_modules, shift = {0, 1.25}}
     },
     allowed_effects = {"consumption", "speed", "productivity", "pollution", "quality"},
-    crafting_categories = {"alien-tech-manufacturing"},
+    crafting_categories = {"oxidizing"},
     crafting_speed = 1,
     energy_source =
     {

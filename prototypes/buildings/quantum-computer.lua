@@ -138,7 +138,10 @@ data:extend({
         },
       },
     },
-    crafting_categories = { "sp-kr-research-data"},
+    crafting_categories = {
+      "sp-kr-research-data",
+      "quantum-computing"
+    },
     crafting_speed = 3,
     energy_source = {
       type = "electric",

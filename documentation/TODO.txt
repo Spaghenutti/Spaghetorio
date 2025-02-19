@@ -1,11 +1,11 @@
 
 TODO before alpha release:
   - Add separate graphics mod for building graphics
-  - fix crafting categories for buildings
-  - balance pass of:
+  + fix crafting categories for buildings
+  + balance pass of:
     + generator equipment power
-    - crushing recipes
-    - enriched recipes
+    + crushing recipes
+    + enriched recipes
   - Add defect mech armor at start of game
     - make setting
 

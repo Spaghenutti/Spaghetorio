@@ -117,7 +117,7 @@ data:extend({
       {inventory_index = defines.inventory.assembling_machine_modules, shift = {0, 1.25}}
     },
     allowed_effects = {"consumption", "productivity", "pollution"},
-    crafting_categories = {"chemistry", "freezing", "thawing"},
+    crafting_categories = {"freezing", "thawing"},
     crafting_speed = 1,
     energy_source =
     {

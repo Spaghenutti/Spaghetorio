@@ -102,7 +102,7 @@ data:extend({
         },
       },
     },
-    crafting_categories = { "chemistry" },
+    crafting_categories = {"chemistry", "advanced-chemistry"},
     vehicle_impact_sound = sounds.generic_impact,
     working_sound = {
       sound = { filename = "__Spaghetorio__/sounds/buildings/advanced-chemical-plant.ogg", volume = 0.5 },
