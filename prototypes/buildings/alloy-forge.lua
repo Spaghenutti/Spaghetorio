@@ -161,8 +161,6 @@ data:extend({
     allowed_effects = {"consumption", "speed", "productivity", "pollution", "quality"},
     crafting_categories = {
       "metallurgy",
-      "pressing",
-      "crafting-with-fluid-or-metallurgy",
       "metallurgy-or-assembling",
       "alloy-smelting"
     },

@@ -5240,6 +5240,22 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "sp-turbocharger",  -- #ForRegEx# - recipe
+    category = "crafting",
+    enabled = false,
+    energy_required = 2,
+    ingredients = {
+      {type = "item", name = "sp-stainless-steel", amount = 3},
+      {type = "item", name = "sp-brass", amount = 1},
+      {type = "item", name = "sp-seal", amount = 2},
+      {type = "item", name = "sp-ball-bearing", amount = 2},
+    },
+    results = {
+      {type = "item", name = "sp-turbocharger", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
     name = "sp-micro-machine",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
@@ -6879,22 +6895,6 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-turbocharger",  -- #ForRegEx# - recipe
-    category = "manufacturing",
-    enabled = false,
-    energy_required = 1.5,
-    ingredients = {
-      {type = "item", name = "sp-stainless-steel", amount = 3},
-      {type = "item", name = "sp-nickel-cobalt", amount = 2},
-      {type = "item", name = "sp-seal", amount = 2},
-      {type = "item", name = "sp-ball-bearing", amount = 2},
-    },
-    results = {
-      {type = "item", name = "sp-turbocharger", amount = 1}
-    }
-  },
-  {
-    type = "recipe",
     name = "sp-high-pressure-fan",  -- #ForRegEx# - recipe
     category = "manufacturing",
     enabled = false,
@@ -6938,7 +6938,7 @@ data:extend({
       {type = "item", name = "automation-science-pack", amount = 20},
       {type = "item", name = "sp-ball-bearing", amount = 5},
       {type = "item", name = "sp-plate-heat-exchanger", amount = 5},
-      {type = "item", name = "advanced-circuit", amount = 5},
+      {type = "item", name = "sp-vibration-dampener", amount = 5},
       {type = "item", name = "small-lamp", amount = 5},
     },
     results = {

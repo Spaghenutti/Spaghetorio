@@ -249,8 +249,6 @@ data:extend({
       "smelting-enriched-resource",
       "high-temperature-smelting",
       "metallurgy",
-      "pressing",
-      "crafting-with-fluid-or-metallurgy",
       "metallurgy-or-assembling",
       "sp-kr-advanced-smelting"
     },

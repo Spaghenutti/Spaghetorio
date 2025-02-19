@@ -3301,6 +3301,10 @@ data:extend({
       },
       {
         type = "unlock-recipe",
+        recipe = "sp-vibration-dampener",
+      },
+      {
+        type = "unlock-recipe",
         recipe = "sp-styrene"
       },
       {
@@ -4897,6 +4901,10 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "sp-portable-generator",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-turbocharger",
       },
     },
     prerequisites = {
@@ -6853,10 +6861,6 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "sp-pressure-valve",
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-vibration-dampener",
       },
     },
     prerequisites = {
@@ -9392,10 +9396,6 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "sp-catalytic-converter",
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-turbocharger",
       },
       {
         type = "unlock-recipe",
