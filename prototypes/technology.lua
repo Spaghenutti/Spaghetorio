@@ -23,7 +23,6 @@ data:extend({
       item = "iron-plate",
       count = 2
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -46,7 +45,6 @@ data:extend({
       item = "copper-plate",
       count = 5
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -85,7 +83,6 @@ data:extend({
       item = "iron-stick",
       count = 2
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -114,7 +111,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -139,7 +135,6 @@ data:extend({
       type = "mine-entity",
       entity = "sp-tinstone"
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -164,7 +159,6 @@ data:extend({
       type = "mine-entity",
       entity = "sp-tinstone"
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -211,7 +205,6 @@ data:extend({
       item = "sp-sand",
       count = 10
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -236,7 +229,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -266,7 +258,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -297,7 +288,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -325,7 +315,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -353,7 +342,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -442,15 +430,13 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
-    -- Finalized
     type = "technology",
     name = "sp-zinc-processing",  -- #ForRegEx# - technology
     icon_size = 256,
     icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/hr-icons/zinc-sulfate-1.png", 256, nil,
-                                   "__Spaghetorio__/graphics/hr-icons/zinc-plate.png", 256, nil),
+                                        "__Spaghetorio__/graphics/hr-icons/zinc-plate.png", 256, nil),
     effects =
     {
       {
@@ -485,7 +471,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -514,7 +499,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -546,7 +530,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -581,10 +564,8 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
-    -- Finalized
     type = "technology",
     name = "sp-cement",  -- #ForRegEx# - technology
     icon_size = 256,
@@ -619,10 +600,8 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
-    -- Finalized
     type = "technology",
     name = "sp-titanium-processing",  -- #ForRegEx# - technology
     icon_size = 256,
@@ -666,7 +645,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -700,7 +678,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -738,7 +715,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -776,7 +752,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -809,10 +784,8 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
-    -- Finalized
     type = "technology",
     name = "sp-zirconium-processing",  -- #ForRegEx# - technology
     icon_size = 256,
@@ -848,7 +821,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -896,7 +868,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -937,7 +908,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -987,7 +957,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -1024,7 +993,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -1056,7 +1024,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -1092,7 +1059,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -1125,7 +1091,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -1169,7 +1134,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -1205,7 +1169,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -1242,7 +1205,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -1288,7 +1250,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -1332,7 +1293,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -1369,7 +1329,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -1408,7 +1367,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -1449,7 +1407,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -1490,10 +1447,9 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
-    -- Finalized: Check if it can be unlocked with material science 2
+    -- Check if it can be unlocked with material science 2
     type = "technology",
     name = "sp-niobium-alloys",  -- #ForRegEx# - technology
     icon_size = 256,
@@ -1527,7 +1483,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -1556,7 +1511,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -1583,7 +1537,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -1611,7 +1564,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -1643,7 +1595,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -1670,7 +1621,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -1698,7 +1648,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -1746,7 +1695,6 @@ data:extend({
       },
       time = 15
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -1773,7 +1721,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -1808,7 +1755,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -1853,7 +1799,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -1903,7 +1848,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -1939,7 +1883,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -1971,7 +1914,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -2007,7 +1949,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -2043,7 +1984,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -2081,7 +2021,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -2109,7 +2048,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -2165,7 +2103,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -2209,7 +2146,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -2242,7 +2178,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -2274,7 +2209,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -2298,7 +2232,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -2331,7 +2264,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -2363,7 +2295,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -2402,7 +2333,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -2430,7 +2360,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -2474,7 +2403,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -2522,7 +2450,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -2567,7 +2494,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -2599,7 +2525,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -2631,7 +2556,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -2669,7 +2593,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -2706,7 +2629,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -2742,7 +2664,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -2777,10 +2698,8 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
-    -- Finalized
     type = "technology",
     name = "sp-titanium-nitride",  -- #ForRegEx# - technology
     icon_size = 256,
@@ -2808,7 +2727,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -3046,7 +2964,6 @@ data:extend({
   --     },
   --     time = 30
   --   },
-  --   order = "a-h-a"
   -- },
   {
     type = "technology",
@@ -3092,7 +3009,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -3140,7 +3056,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -3170,7 +3085,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -3209,7 +3123,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -3245,7 +3158,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -3266,7 +3178,6 @@ data:extend({
     prerequisites = {
       "sp-sodium-hydroxide"
     },
-    order = "c-a",
     unit = {
       count = 125,
       ingredients = {
@@ -3302,7 +3213,6 @@ data:extend({
     prerequisites = {
       "sp-sodium-hydroxide",
     },
-    order = "c-a",
     unit = {
       count = 125,
       ingredients = {
@@ -3346,7 +3256,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -3374,7 +3283,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -3416,7 +3324,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -3444,7 +3351,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -3472,7 +3378,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -3508,7 +3413,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
     {
     type = "technology",
@@ -3540,7 +3444,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -3581,7 +3484,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -3628,7 +3530,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -3687,7 +3588,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -3730,7 +3630,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -3777,7 +3676,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -3817,7 +3715,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -3856,7 +3753,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -3893,7 +3789,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -3928,7 +3823,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -3965,7 +3859,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -4013,7 +3906,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -4049,7 +3941,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -4093,7 +3984,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -4149,7 +4039,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -4201,7 +4090,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -4235,7 +4123,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -4266,7 +4153,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -4301,7 +4187,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -4340,7 +4225,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -4371,7 +4255,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -4405,7 +4288,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -4432,7 +4314,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -4460,7 +4341,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -4498,7 +4378,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -4534,7 +4413,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -4563,7 +4441,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -4604,7 +4481,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -4643,7 +4519,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -4678,7 +4553,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -4713,10 +4587,8 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
-    -- Finalized
     type = "technology",
     name = "sp-vinyl-chloride",  -- #ForRegEx# - technology
     icon_size = 256,
@@ -4752,7 +4624,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -4776,7 +4647,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -4811,7 +4681,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -4853,7 +4722,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -4896,7 +4764,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -4933,7 +4800,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -4970,7 +4836,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -5008,7 +4873,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -5085,7 +4949,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -5122,7 +4985,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -5163,7 +5025,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   ------------------------------------------------------------------------------
   -- MARK: Military
@@ -5205,7 +5066,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   ------------------------------------------------------------------------------
   -- MARK: alien compounds
@@ -5257,7 +5117,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -5303,7 +5162,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   ------------------------------------------------------------------------------
   -- MARK: intermediate alien products
@@ -5360,7 +5218,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -5410,7 +5267,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -5452,7 +5308,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -5513,7 +5368,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -5564,7 +5418,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -5607,7 +5460,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -5663,7 +5515,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   ------------------------------------------------------------------------------
   -- MARK: advanced alien products
@@ -5716,7 +5567,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -5762,7 +5612,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -5813,7 +5662,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -5857,7 +5705,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -5917,7 +5764,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -5965,7 +5811,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -6015,7 +5860,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -6062,7 +5906,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -6105,7 +5948,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -6149,7 +5991,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -6200,7 +6041,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -6247,7 +6087,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   ------------------------------------------------------------------------------
   -- Acrosphere conversion recipes
@@ -6308,7 +6147,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -6375,7 +6213,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -6423,7 +6260,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -6517,7 +6353,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -6599,7 +6434,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -6713,7 +6547,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   ------------------------------------------------------------------------------
   -- MARK: Buildings
@@ -6750,7 +6583,6 @@ data:extend({
       item = "assembling-machine-1",
       count = 1
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -7514,7 +7346,6 @@ data:extend({
         "sp-automation-science-pack-3",
         "sp-geological-science-pack-3"
       },
-      order = "g-e-d",
       unit = {
         count = 350,
         ingredients = {
@@ -7760,7 +7591,6 @@ data:extend({
   -- MARK: Science packs
   ------------------------------------------------------------------------------
   {
-    -- Finalized
     type = "technology",
     name = "sp-electronic-science-pack-1",  -- #ForRegEx# - technology
     icon_size = 256,
@@ -7786,10 +7616,8 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
-    -- Finalized
     type = "technology",
     name = "sp-geological-science-pack-1",  -- #ForRegEx# - technology
     icon_size = 64,
@@ -7814,10 +7642,8 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
-    -- Finalized
     type = "technology",
     name = "sp-material-science-pack-1",  -- #ForRegEx# - technology
     icon_size = 256,
@@ -7839,7 +7665,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -7872,7 +7697,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -7903,7 +7727,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -7934,7 +7757,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -7950,7 +7772,7 @@ data:extend({
     },
     prerequisites = {
       "sp-logistic-science-pack-2",
-      "battery"
+      "sp-chemical-stager"
     },
     unit =
     {
@@ -7965,7 +7787,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -7997,7 +7818,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -8027,7 +7847,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -8058,7 +7877,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -8088,7 +7906,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -8118,7 +7935,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -8148,7 +7964,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -8180,7 +7995,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -8213,7 +8027,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -8244,7 +8057,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -8276,7 +8088,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -8307,7 +8118,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -8338,7 +8148,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -8369,7 +8178,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -8401,7 +8209,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -8433,7 +8240,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -8464,7 +8270,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -8495,7 +8300,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -8535,7 +8339,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -8567,7 +8370,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -8602,7 +8404,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -8637,7 +8438,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   {
     type = "technology",
@@ -8677,7 +8477,6 @@ data:extend({
       },
       time = 30
     },
-    order = "a-h-a"
   },
   ------------------------------------------------------------------------------
   --- MARK: Infinite technologies
@@ -8738,7 +8537,6 @@ data:extend({
     },
     max_level = 5,
     upgrade = true,
-    order = "c-k-g-c"
   },
   {
     type = "technology",
@@ -8797,7 +8595,6 @@ data:extend({
     },
     max_level = "infinite",
     upgrade = true,
-    order = "c-k-g-c"
   },
   {
     type = "technology",
@@ -8846,7 +8643,6 @@ data:extend({
       time = 60
     },
     upgrade = true,
-    order = "c-k-g-c"
   },
   {
     type = "technology",
@@ -8894,7 +8690,6 @@ data:extend({
       time = 60
     },
     upgrade = true,
-    order = "c-k-g-c"
   },
   {
     type = "technology",
@@ -8942,7 +8737,6 @@ data:extend({
       time = 60
     },
     upgrade = true,
-    order = "c-k-g-c"
   },
   {
     type = "technology",
@@ -8991,7 +8785,6 @@ data:extend({
       time = 60
     },
     upgrade = true,
-    order = "c-k-g-c"
   },
   {
     type = "technology",
@@ -9039,7 +8832,6 @@ data:extend({
       time = 60
     },
     upgrade = true,
-    order = "c-k-g-c"
   },
   {
     type = "technology",
@@ -9098,7 +8890,6 @@ data:extend({
     },
     max_level = "infinite",
     upgrade = true,
-    order = "c-k-g-c"
   },
   {
     type = "technology",
@@ -9197,7 +8988,6 @@ data:extend({
     },
     max_level = 10,
     upgrade = true,
-    order = "c-k-g-c"
   },
   {
     type = "technology",
@@ -9260,7 +9050,6 @@ data:extend({
     },
     max_level = "infinite",
     upgrade = true,
-    order = "c-k-g-c"
   },
   {
     type = "technology",
@@ -9319,7 +9108,6 @@ data:extend({
     },
     max_level = "infinite",
     upgrade = true,
-    order = "b-f-g"
   },
   {
     type = "technology",
@@ -9628,9 +9416,8 @@ data:extend({
       -- },
     },
     prerequisites = {
-      "automation-science-pack"
+      "sp-automation-science-pack-2"
     },
-    order = "c-a",
     unit = {
       count = 69420,
       ingredients = {

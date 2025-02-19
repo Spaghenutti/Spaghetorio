@@ -1,4 +1,21 @@
 
+TODO before alpha release:
+  - Add separate graphics mod for building graphics
+  - fix crafting categories for buildings
+  - balance pass of:
+    + generator equipment power
+    - crushing recipes
+    - enriched recipes
+  - Add defect mech armor at start of game
+    - make setting
+
+TODO after alpha release:
+  - organize icons:
+    + fix group icons
+    - move fluid icons to fluid group
+
+--------------------------------------------------------------------------------
+
 Factorio Space age
   - Add some new ores (note down how they are supposed to be processed)
     + barium-ore

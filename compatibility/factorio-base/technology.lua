@@ -2058,7 +2058,7 @@ data.raw.technology["military-science-pack"].effects = {
 
 data.raw.technology["production-science-pack"].icon = "__Spaghetorio__/graphics/krastorio/technologies/production-tech-card.png"
 data.raw.technology["production-science-pack"].prerequisites = {
-  "sp-actuator",
+  "sp-chemical-stager",
   "sp-automation-science-pack-2"
 }
 data.raw.technology["production-science-pack"].unit.ingredients = {

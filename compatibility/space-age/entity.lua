@@ -48,5 +48,8 @@ data.raw.item["carbon"].fuel_value = "4MJ"
 -- MARK: stack size
 data.raw.item["crusher"].stack_size = 50
 
+-- MARK: Equipment changes
+data.raw["generator-equipment"]["fusion-reactor-equipment"].power = "20MW"
+
 -- MARK: localized name
 data.raw.tool["agricultural-science-pack"].localized_name = {"custom-localization.biological-science-pack"}
