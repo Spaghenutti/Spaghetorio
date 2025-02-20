@@ -14,8 +14,11 @@ TODO after alpha release:
   - organize icons:
     + fix group icons
     - move fluid icons to fluid group
+    + fix crushing icons
+    - fix enriching ore icons
+    - fix enriching crushed ore icons
+    + fix rare metal processing icons
   - Add black reinforced concrete
-  - Add remaining 
 
 --------------------------------------------------------------------------------
 

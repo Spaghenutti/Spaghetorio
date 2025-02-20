@@ -4168,9 +4168,8 @@ data:extend({
   {
     type = "recipe",
     name = "sp-crushing-cobalt-ore",  -- #ForRegEx# - recipe
-    icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/icons/crushed-cobalt-ore-4.png", 64, nil,
-                                        "__Spaghetorio__/graphics/icons/arsenic-trioxide.png", 64, nil),
-    icon_size = 64,
+    icon = "__Spaghetorio__/graphics/crushing/crushing-cobalt-ore.png",
+    icon_size = 256,
     mip_maps = 4,
     category = "crushing",
     subgroup = "crushed-resource-recipe",
@@ -13207,7 +13206,11 @@ data:extend({
   {
     type = "recipe",
     name = "sp-raw-rare-metal-processing",  -- #ForRegEx# - recipe
-    icon = "__Spaghetorio__/graphics/dummy/dummy-item-default.png",
+    icons = util.icon.combine_five_icons("__Spaghetorio__/graphics/krastorio/icons/items-with-variations/sand/sand.png", 64, nil,
+                                         "__Spaghetorio__/graphics/icons/yttrium.png", 64, nil,
+                                         "__Spaghetorio__/graphics/icons/lanthanum.png", 64, nil,
+                                         "__Spaghetorio__/graphics/icons/cerium.png", 64, nil,
+                                         "__Spaghetorio__/graphics/icons/neodymium.png", 64, nil),
     icon_size = 64,
     scale = 0.25,
     category = "crushing",
@@ -13254,7 +13257,10 @@ data:extend({
   {
     type = "recipe",
     name = "sp-enriched-rare-metal-processing",  -- #ForRegEx# - recipe
-    icon = "__Spaghetorio__/graphics/dummy/dummy-item-default.png",
+    icons = util.icon.combine_four_icons("__Spaghetorio__/graphics/icons/yttrium.png", 64, nil,
+                                         "__Spaghetorio__/graphics/icons/lanthanum.png", 64, nil,
+                                         "__Spaghetorio__/graphics/icons/cerium.png", 64, nil,
+                                         "__Spaghetorio__/graphics/icons/neodymium.png", 64, nil),
     icon_size = 64,
     scale = 0.25,
     category = "chemistry",
