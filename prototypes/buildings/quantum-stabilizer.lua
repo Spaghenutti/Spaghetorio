@@ -13,25 +13,27 @@ local sounds = require("__base__/prototypes/entity/sounds")
 local graphics_frame_count = 100
 local graphics_animation_speed = 0.7
 local graphics_shift = {0, 0}
+local graphics_scale = 0.5
 local graphics_set = {
   animation = {
     layers = {
       {
         priority = "high",
-        width = 1640 / 8,
-        height = 1640 / 8,
+        width = 3280 / 8,
+        height = 3280 / 8,
         shift = graphics_shift,
+        scale = graphics_scale,
         frame_count = graphics_frame_count,
         animation_speed = graphics_animation_speed,
         stripes =
         {
           {
-            filename = "__Spaghetorio__/graphics/buildings/quantum-stabilizer/quantum-stabilizer-animation-1.png",
+            filename = "__SpaghetorioGraphics1__/graphics/buildings/quantum-stabilizer/quantum-stabilizer-hr-animation-1.png",
             width_in_frames = 8,
             height_in_frames = 8,
           },
           {
-            filename = "__Spaghetorio__/graphics/buildings/quantum-stabilizer/quantum-stabilizer-animation-2.png",
+            filename = "__SpaghetorioGraphics1__/graphics/buildings/quantum-stabilizer/quantum-stabilizer-hr-animation-2.png",
             width_in_frames = 8,
             height_in_frames = 5,
           },
@@ -39,10 +41,11 @@ local graphics_set = {
       },
       {
         priority = "high",
-        filename = "__Spaghetorio__/graphics/buildings/quantum-stabilizer/quantum-stabilizer-shadow.png",
-        width = 450,
-        height = 210,
+        filename = "__SpaghetorioGraphics1__/graphics/buildings/quantum-stabilizer/quantum-stabilizer-hr-shadow.png",
+        width = 900,
+        height = 420,
         shift = graphics_shift,
+        scale = graphics_scale,
         frame_count = 1,
         repeat_count = graphics_frame_count,
         draw_as_shadow = true,
@@ -55,9 +58,10 @@ local graphics_set = {
       fadeout = true,
       animation = {
         priority = "high",
-        width = 1640 / 8,
-        height = 1640 / 8,
+        width = 3280 / 8,
+        height = 3280 / 8,
         shift = graphics_shift,
+        scale = graphics_scale,
         frame_count = graphics_frame_count,
         draw_as_glow = true,
         animation_speed = graphics_animation_speed,
@@ -65,12 +69,12 @@ local graphics_set = {
         stripes =
         {
           {
-            filename = "__Spaghetorio__/graphics/buildings/quantum-stabilizer/quantum-stabilizer-emission-1.png",
+            filename = "__SpaghetorioGraphics1__/graphics/buildings/quantum-stabilizer/quantum-stabilizer-hr-emission-1.png",
             width_in_frames = 8,
             height_in_frames = 8,
           },
           {
-            filename = "__Spaghetorio__/graphics/buildings/quantum-stabilizer/quantum-stabilizer-emission-2.png",
+            filename = "__SpaghetorioGraphics1__/graphics/buildings/quantum-stabilizer/quantum-stabilizer-hr-emission-2.png",
             width_in_frames = 8,
             height_in_frames = 5,
           },

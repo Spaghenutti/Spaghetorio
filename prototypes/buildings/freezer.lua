@@ -12,16 +12,16 @@ local sounds = require("__base__/prototypes/entity/sounds")
 
 local graphics_frame_count = 60
 local graphics_animation_speed = 0.7
-local graphics_shift = {0, 0}
-local graphics_scale = 0.8
+local graphics_shift = {0, -0.5}
+local graphics_scale = 0.5
 local graphics_set = {
   animation = {
     layers = {
       {
-        filename = "__Spaghetorio__/graphics/buildings/freezer/freezer-animation.png",
+        filename = "__SpaghetorioGraphics1__/graphics/buildings/scrubber/scrubber-hr-animation-1.png",
         priority = "high",
-        width = 840 / 8,
-        height = 1160 / 8,
+        width = 1680 / 8,
+        height = 2320 / 8,
         shift = graphics_shift,
         scale = graphics_scale,
         frame_count = graphics_frame_count,
@@ -30,9 +30,9 @@ local graphics_set = {
       },
       {
         priority = "high",
-        filename = "__Spaghetorio__/graphics/buildings/freezer/freezer-shadow.png",
-        width = 200,
-        height = 175,
+        filename = "__SpaghetorioGraphics1__/graphics/buildings/scrubber/scrubber-hr-shadow.png",
+        width = 400,
+        height = 350,
         shift = graphics_shift,
         scale = graphics_scale,
         frame_count = 1,

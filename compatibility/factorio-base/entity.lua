@@ -58,6 +58,10 @@ data.raw.item["copper-cable"].stack_size = 400
 data.raw.item["chemical-plant"].stack_size = 50
 data.raw.item["tree-seed"].stack_size = 1000
 
+data.raw["item-with-entity-data"]["locomotive"].stack_size = 50
+data.raw["item-with-entity-data"]["cargo-wagon"].stack_size = 50
+data.raw["item-with-entity-data"]["fluid-wagon"].stack_size = 50
+
 data.raw.item["steam-engine"].stack_size = 50
 data.raw.item["pumpjack"].stack_size = 50
 data.raw.item["oil-refinery"].stack_size = 50

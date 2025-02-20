@@ -13,14 +13,14 @@ local sounds = require("__base__/prototypes/entity/sounds")
 local graphics_frame_count = 100
 local graphics_animation_speed = 0.5
 local graphics_shift = {0, 0}
-local graphics_scale = 0.8
+local graphics_scale = 0.4
 local graphics_set = {
   animation = {
     layers = {
       {
         priority = "high",
-        width = 1280 / 8,
-        height = 1280 / 8,
+        width = 2560 / 8,
+        height = 2560 / 8,
         shift = graphics_shift,
         scale = graphics_scale,
         frame_count = graphics_frame_count,
@@ -28,12 +28,12 @@ local graphics_set = {
         stripes =
         {
           {
-            filename = "__Spaghetorio__/graphics/buildings/gravity-assembler/gravity-assembler-animation-1.png",
+            filename = "__SpaghetorioGraphics1__/graphics/buildings/gravity-assembler/gravity-assembler-hr-animation-1.png",
             width_in_frames = 8,
             height_in_frames = 8,
           },
           {
-            filename = "__Spaghetorio__/graphics/buildings/gravity-assembler/gravity-assembler-animation-2.png",
+            filename = "__SpaghetorioGraphics1__/graphics/buildings/gravity-assembler/gravity-assembler-hr-animation-2.png",
             width_in_frames = 8,
             height_in_frames = 5,
           },
@@ -41,9 +41,9 @@ local graphics_set = {
       },
       {
         priority = "high",
-        filename = "__Spaghetorio__/graphics/buildings/gravity-assembler/gravity-assembler-shadow.png",
-        width = 260,
-        height = 250,
+        filename = "__SpaghetorioGraphics1__/graphics/buildings/gravity-assembler/gravity-assembler-hr-shadow.png",
+        width = 520,
+        height = 500,
         shift = graphics_shift,
         scale = graphics_scale,
         frame_count = 1,
@@ -59,8 +59,8 @@ local graphics_set = {
       effect = "flicker",
       animation = {
         priority = "high",
-        width = 1280 / 8,
-        height = 1280 / 8,
+        width = 2560 / 8,
+        height = 2560 / 8,
         shift = graphics_shift,
         scale = graphics_scale,
         frame_count = graphics_frame_count,
@@ -70,12 +70,12 @@ local graphics_set = {
         stripes =
         {
           {
-            filename = "__Spaghetorio__/graphics/buildings/gravity-assembler/gravity-assembler-emission-1.png",
+            filename = "__SpaghetorioGraphics1__/graphics/buildings/gravity-assembler/gravity-assembler-hr-emission-1.png",
             width_in_frames = 8,
             height_in_frames = 8,
           },
           {
-            filename = "__Spaghetorio__/graphics/buildings/gravity-assembler/gravity-assembler-emission-2.png",
+            filename = "__SpaghetorioGraphics1__/graphics/buildings/gravity-assembler/gravity-assembler-hr-emission-2.png",
             width_in_frames = 8,
             height_in_frames = 5,
           },

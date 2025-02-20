@@ -1,6 +1,51 @@
 
 local hit_effects = require("__base__/prototypes/entity/hit-effects")
 
+local graphics_frame_count = 80
+local graphics_animation_speed = 0.7
+local graphics_shift = {0.05, -0.3}
+local graphics_scale = 0.45 * 4 / 7
+local graphics_set = {
+  animation = {
+    layers = {
+      {
+        priority = "high",
+        width = 4200 / 8,
+        height = 4456 / 8,
+        shift = graphics_shift,
+        scale = graphics_scale,
+        frame_count = graphics_frame_count,
+        animation_speed = graphics_animation_speed,
+        stripes =
+        {
+          {
+            filename = "__SpaghetorioGraphics1__/graphics/buildings/lumber-mill/lumber-mill-hr-animation-1.png",
+            width_in_frames = 8,
+            height_in_frames = 8,
+          },
+          {
+            filename = "__SpaghetorioGraphics1__/graphics/buildings/lumber-mill/lumber-mill-hr-animation-2.png",
+            width_in_frames = 8,
+            height_in_frames = 2,
+          },
+        },
+      },
+      {
+        priority = "high",
+        filename = "__SpaghetorioGraphics1__/graphics/buildings/lumber-mill/lumber-mill-hr-shadow.png",
+        width = 800,
+        height = 700,
+        shift = graphics_shift,
+        scale = graphics_scale,
+        frame_count = 1,
+        repeat_count = graphics_frame_count,
+        draw_as_shadow = true,
+        animation_speed = graphics_animation_speed,
+      },
+    },
+  },
+}
+
 data:extend({
   {
     type = "assembling-machine",
@@ -18,33 +63,7 @@ data:extend({
     selection_box = {{-2, -2}, {2, 2}},
     fast_replaceable_group = "sp-lumber-mill",
     allowed_effects = {"consumption", "speed", "productivity", "pollution"},
-    graphics_set = {
-      animation = {
-        layers = {
-          {
-            filename = "__Spaghetorio__/graphics/buildings/lumber-mill/lumber-mill-animation.png",
-            priority = "extra-high",
-            width = 230,
-            height = 250,
-            scale = 4 / 7,
-            frame_count = 80,
-            line_length = 8,
-            animation_speed = 0.75,
-            shift = util.by_pixel(0, 0),
-          },
-          {
-            filename = "__Spaghetorio__/graphics/buildings/lumber-mill/lumber-mill-hr-shadow.png",
-            width = 700,
-            height = 700,
-            scale = 0.5 * 4 / 7,
-            frame_count = 1,
-            repeat_count = 80,
-            draw_as_shadow = true,
-            shift = util.by_pixel(0, 0)
-          }
-        }
-      }
-    },
+    graphics_set = graphics_set,
     crafting_categories = {"sawing"},
     crafting_speed = 1,
     -- scale_entity_info_icon = true,

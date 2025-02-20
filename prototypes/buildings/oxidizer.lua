@@ -12,16 +12,16 @@ local sounds = require("__base__/prototypes/entity/sounds")
 
 local graphics_frame_count = 60
 local graphics_animation_speed = 0.7
-local graphics_shift = {0, -0.7}
-local graphics_scale = 0.95
+local graphics_shift = {0, -0.5}
+local graphics_scale = 0.5
 local graphics_set = {
   animation = {
     layers = {
       {
         priority = "high",
-        filename = "__Spaghetorio__/graphics/buildings/oxidizer/oxidizer-animation.png",
-        width = 1280 / 8,
-        height = 1480 / 8,
+        filename = "__SpaghetorioGraphics1__/graphics/buildings/oxidizer/oxidizer-hr-animation.png",
+        width = 2560 / 8,
+        height = 2960 / 8,
         shift = graphics_shift,
         scale = graphics_scale,
         frame_count = graphics_frame_count,
@@ -30,9 +30,9 @@ local graphics_set = {
       },
       {
         priority = "high",
-        filename = "__Spaghetorio__/graphics/buildings/oxidizer/oxidizer-shadow.png",
-        width = 300,
-        height = 200,
+        filename = "__SpaghetorioGraphics1__/graphics/buildings/oxidizer/oxidizer-hr-shadow.png",
+        width = 600,
+        height = 400,
         shift = graphics_shift,
         scale = graphics_scale,
         frame_count = 1,

@@ -1,6 +1,79 @@
 local hit_effects = require("__base__/prototypes/entity/hit-effects")
 local sounds = require("__base__/prototypes/entity/sounds")
 
+local graphics_frame_count = 120
+local graphics_animation_speed = 0.4
+local graphics_shift = {0, -0}
+local graphics_scale = 0.5
+local graphics_set = {
+  animation = {
+    layers = {
+      {
+        priority = "high",
+        width = 5632 / 8,
+        height = 5632 / 8,
+        shift = graphics_shift,
+        scale = graphics_scale,
+        frame_count = graphics_frame_count,
+        animation_speed = graphics_animation_speed,
+        stripes =
+        {
+          {
+            filename = "__SpaghetorioGraphics1__/graphics/buildings/core-extractor/core-extractor-hr-animation-1.png",
+            width_in_frames = 8,
+            height_in_frames = 8,
+          },
+          {
+            filename = "__SpaghetorioGraphics1__/graphics/buildings/core-extractor/core-extractor-hr-animation-2.png",
+            width_in_frames = 8,
+            height_in_frames = 7,
+          },
+        },
+      },
+      {
+        priority = "high",
+        filename = "__SpaghetorioGraphics1__/graphics/buildings/core-extractor/core-extractor-hr-shadow.png",
+        width = 1400,
+        height = 1400,
+        shift = graphics_shift,
+        scale = graphics_scale,
+        frame_count = 1,
+        repeat_count = graphics_frame_count,
+        draw_as_shadow = true,
+        animation_speed = graphics_animation_speed,
+      },
+    },
+  },
+  working_visualisations = {
+    {
+      fadeout = true,
+      animation = {
+        priority = "high",
+        width = 5632 / 8,
+        height = 5632 / 8,
+        shift = graphics_shift,
+        scale = graphics_scale,
+        frame_count = graphics_frame_count,
+        draw_as_glow = true,
+        animation_speed = graphics_animation_speed,
+        blend_mode = "additive",
+        stripes =
+        {
+          {
+            filename = "__SpaghetorioGraphics1__/graphics/buildings/core-extractor/core-extractor-hr-emission-1.png",
+            width_in_frames = 8,
+            height_in_frames = 8,
+          },
+          {
+            filename = "__SpaghetorioGraphics1__/graphics/buildings/core-extractor/core-extractor-hr-emission-2.png",
+            width_in_frames = 8,
+            height_in_frames = 7,
+          },
+        },
+      },
+    },
+  },
+}
 
 circuit_connector_definitions["sp-core-extractor"] = circuit_connector_definitions.create_vector(universal_connector_template, {
   { variation = 0, main_offset = util.by_pixel(5, -118), shadow_offset = util.by_pixel(7, -118), show_shadow = true },
@@ -70,73 +143,7 @@ data:extend({
       width = 12,
       height = 12,
     },
-    graphics_set = {
-      animation = {
-        layers = {
-          {
-            priority = "high",
-            -- filename = "__Spaghetorio__/graphics/buildings/core-extractor/core-extractor-animation.png",
-            width = 352,
-            height = 352,
-            frame_count = 120,
-            -- line_length = 8,
-            animation_speed = 0.4,
-            stripes =
-            {
-              {
-                filename = "__Spaghetorio__/graphics/buildings/core-extractor/core-extractor-animation-1.png",
-                width_in_frames = 8,
-                height_in_frames = 8,
-              },
-              {
-                filename = "__Spaghetorio__/graphics/buildings/core-extractor/core-extractor-animation-2.png",
-                width_in_frames = 8,
-                height_in_frames = 7,
-              },
-            },
-          },
-          {
-            priority = "high",
-            filename = "__Spaghetorio__/graphics/buildings/core-extractor/core-extractor-shadow.png",
-            width = 700,
-            height = 700,
-            frame_count = 1,
-            repeat_count = 120,
-            draw_as_shadow = true,
-            animation_speed = 0.4,
-          },
-        },
-      },
-      working_visualisations = {
-        {
-          fadeout = true,
-          animation = {
-            priority = "high",
-            -- filename = "__Spaghetorio__/graphics/buildings/core-extractor/core-extractor-emission.png",
-            width = 352,
-            height = 352,
-            frame_count = 120,
-            -- line_length = 8,
-            draw_as_light = true,
-            animation_speed = 0.4,
-            blend_mode = "additive",
-            stripes =
-            {
-              {
-                filename = "__Spaghetorio__/graphics/buildings/core-extractor/core-extractor-emission-1.png",
-                width_in_frames = 8,
-                height_in_frames = 8,
-              },
-              {
-                filename = "__Spaghetorio__/graphics/buildings/core-extractor/core-extractor-emission-2.png",
-                width_in_frames = 8,
-                height_in_frames = 7,
-              },
-            },
-          },
-        }
-      },
-    },
+    graphics_set = graphics_set,
     vehicle_impact_sound = sounds.generic_impact,
     working_sound = {
       sound = {

@@ -13,25 +13,27 @@ local sounds = require("__base__/prototypes/entity/sounds")
 local graphics_frame_count = 80
 local graphics_animation_speed = 0.7
 local graphics_shift = {0, -0.5}
+local graphics_scale = 0.5
 local graphics_set = {
   animation = {
     layers = {
       {
         priority = "high",
-        width = 1600 / 8,
-        height = 1920 / 8,
+        width = 3200 / 8,
+        height = 3840 / 8,
         shift = graphics_shift,
+        scale = graphics_scale,
         frame_count = graphics_frame_count,
         animation_speed = graphics_animation_speed,
         stripes =
         {
           {
-            filename = "__Spaghetorio__/graphics/buildings/breeder-reactor/breeder-reactor-animation-1.png",
+            filename = "__SpaghetorioGraphics1__/graphics/buildings/atom-forge/atom-forge-hr-animation-1.png",
             width_in_frames = 8,
             height_in_frames = 8,
           },
           {
-            filename = "__Spaghetorio__/graphics/buildings/breeder-reactor/breeder-reactor-animation-2.png",
+            filename = "__SpaghetorioGraphics1__/graphics/buildings/atom-forge/atom-forge-hr-animation-2.png",
             width_in_frames = 8,
             height_in_frames = 2,
           },
@@ -39,10 +41,11 @@ local graphics_set = {
       },
       {
         priority = "high",
-        filename = "__Spaghetorio__/graphics/buildings/breeder-reactor/breeder-reactor-shadow.png",
-        width = 450,
-        height = 250,
+        filename = "__SpaghetorioGraphics1__/graphics/buildings/atom-forge/atom-forge-hr-shadow.png",
+        width = 900,
+        height = 500,
         shift = graphics_shift,
+        scale = graphics_scale,
         frame_count = 1,
         repeat_count = graphics_frame_count,
         draw_as_shadow = true,
@@ -55,9 +58,10 @@ local graphics_set = {
       fadeout = true,
       animation = {
         priority = "high",
-        width = 1600 / 8,
-        height = 1920 / 8,
+        width = 3200 / 8,
+        height = 3840 / 8,
         shift = graphics_shift,
+        scale = graphics_scale,
         frame_count = graphics_frame_count,
         draw_as_glow = true,
         animation_speed = graphics_animation_speed,
@@ -65,12 +69,12 @@ local graphics_set = {
         stripes =
         {
           {
-            filename = "__Spaghetorio__/graphics/buildings/breeder-reactor/breeder-reactor-emission-1.png",
+            filename = "__SpaghetorioGraphics1__/graphics/buildings/atom-forge/atom-forge-hr-emission-1.png",
             width_in_frames = 8,
             height_in_frames = 8,
           },
           {
-            filename = "__Spaghetorio__/graphics/buildings/breeder-reactor/breeder-reactor-emission-2.png",
+            filename = "__SpaghetorioGraphics1__/graphics/buildings/atom-forge/atom-forge-hr-emission-2.png",
             width_in_frames = 8,
             height_in_frames = 2,
           },
