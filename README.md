@@ -6,9 +6,10 @@ Inspired by [brevven](https://mods.factorio.com/user/brevven).
 
 ## Features
 
-- 25 new ores / resources like **chromite**, **core-rift**, **iodine-brine** and **blunagium**
+- 25 new resources like **chromite**, **core-rift**, **iodine-brine** and **blunagium**
 - over 550 new items like **inconel**, **copper tube**, **gear box**, **processor** and of course **dark energy harvester**
 - over 50 new fluids like **aqueous niobium**, **helium 3**, **glycerin** and **chronomatter**
+- over 40 new buildings like **alloy forge**, **induction hardening facility** and **electrolysis plant**
 - over 650 new recipes including different paths of processing resources and intermediate products
 - 30 new science packs split into 3 different tiers
 - over 200 new techonolgies
@@ -21,7 +22,7 @@ Inspired by [brevven](https://mods.factorio.com/user/brevven).
 
 ## Current state of the mod
 
-This mod is in early alpha. In my current playthrough I can get to the second tier of science packs. The mod contains 3 tiers of science pack:
+This mod is in early alpha. In my current playthrough I can finish the first tier of science packs (about 150h taking it casually). The mod contains 3 tiers of science pack:
 - <img src="graphics/hr-icons/electronic-science-pack-1.png" alt="drawing" width="20"/> Basic science pack (9 variations like **electronic**, **material** and **geological** science)
 - <img src="graphics/hr-icons/computer-science-pack-2.png" alt="drawing" width="20"/> Intermediate science pack (16 variations like **computer** and **nuclear** science)
 - <img src="graphics/hr-icons/uniformity-science-pack.png" alt="drawing" width="20"/> Advanced science pack (16 variations like **matter** and **uniformity** science)
@@ -29,6 +30,8 @@ This mod is in early alpha. In my current playthrough I can get to the second ti
 For the recipes unlocked during first tier there are no plans to change anything (except mabe change some ratios). All recipes comming after allready exist, but might not be reachable through tech tree.
 
 I am currently cleaning up the second science tier in tech tree which is the longest and most complex phase in the development. I want to publish my mod now, because I need some help and gather feedback to tune in the balance.
+
+If you have some cool ideas you can give me feedback in the discussions section.
 
 ## Future plans
 
