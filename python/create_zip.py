@@ -92,7 +92,8 @@ def create_zip() -> None:
     """
     for mod_name in MOD_ZIPS:
         mod_directory = fr"{PARENT_WORKING_DIRECTORY}\{mod_name}"
-        zip_path = fr"{TARGET_PATH}\{mod_name}_{get_version_from_info_json(fr"{mod_directory}\info.json")}.zip"
+        info_json_path = fr"{mod_directory}\info.json"
+        zip_path = fr"{TARGET_PATH}\{mod_name}_{get_version_from_info_json(info_json_path)}.zip"
         with zipfile.ZipFile(zip_path, "w") as z:
             # Add all files except the ones listed in PATHS_TO_SKIP
             for root, dirs, files in os.walk(mod_directory):
@@ -103,23 +104,21 @@ def create_zip() -> None:
             
             # Add graphics
             for used_image_path in get_used_image_paths():
-                relative_path = os.path.join(root, used_image_path).replace(f"{mod_directory}\\", "")
-        
-                # Add image file
-                if os.path.exists(relative_path):
-                    z.write(used_image_path, fr"{mod_name}\{relative_path}")
+                if "alloy-forge" in used_image_path:
+                    print(used_image_path)
+                if f"\\{mod_name}\\" in used_image_path:
+                    relative_path = os.path.join(root, used_image_path).replace(f"{mod_directory}\\", "")
+            
+                    # Add image file
+                    if os.path.exists(used_image_path):
+                        z.write(used_image_path, fr"{mod_name}\{relative_path}")
 
-                    # Some images also have a lua script required to show correct animation
-                    image_lua_relative_path = relative_path.replace(".png", ".lua")
-                    if os.path.exists(image_lua_relative_path):
-                        z.write(used_image_path.replace(".png", ".lua"), fr"{mod_name}\{image_lua_relative_path}")
+                        # Some images also have a lua script required to show correct animation
+                        image_lua_relative_path = relative_path.replace(".png", ".lua")
+                        if os.path.exists(image_lua_relative_path):
+                            z.write(used_image_path.replace(".png", ".lua"), fr"{mod_name}\{image_lua_relative_path}")
 
 
 if __name__ == "__main__":
     create_zip()
     # [print(path) for path in get_used_image_paths()]
-    # for path in get_used_image_paths():
-    #     if "SpaghetorioGraphics1" in path:
-    #         print(path)
-
-    # print(os.path.dirname(os.getcwd()))

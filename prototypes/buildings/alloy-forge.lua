@@ -28,12 +28,12 @@ local graphics_set = {
         stripes =
         {
           {
-            filename = "__SpaghetorioGraphics1__/buildings/alloy-forge/alloy-forge-hr-animation-1.png",
+            filename = "__SpaghetorioGraphics1__/graphics/buildings/alloy-forge/alloy-forge-hr-animation-1.png",
             width_in_frames = 8,
             height_in_frames = 8,
           },
           {
-            filename = "__SpaghetorioGraphics1__/buildings/alloy-forge/alloy-forge-hr-animation-2.png",
+            filename = "__SpaghetorioGraphics1__/graphics/buildings/alloy-forge/alloy-forge-hr-animation-2.png",
             width_in_frames = 8,
             height_in_frames = 7,
           },
@@ -41,7 +41,7 @@ local graphics_set = {
       },
       {
         priority = "high",
-        filename = "__SpaghetorioGraphics1__/buildings/alloy-forge/alloy-forge-hr-shadow.png",
+        filename = "__SpaghetorioGraphics1__/graphics/buildings/alloy-forge/alloy-forge-hr-shadow.png",
         width = 900,
         height = 800,
         shift = graphics_shift,
@@ -70,12 +70,12 @@ local graphics_set = {
         stripes =
         {
           {
-            filename = "__SpaghetorioGraphics1__/buildings/alloy-forge/alloy-forge-hr-emission-1.png",
+            filename = "__SpaghetorioGraphics1__/graphics/buildings/alloy-forge/alloy-forge-hr-emission-1.png",
             width_in_frames = 8,
             height_in_frames = 8,
           },
           {
-            filename = "__SpaghetorioGraphics1__/buildings/alloy-forge/alloy-forge-hr-emission-2.png",
+            filename = "__SpaghetorioGraphics1__/graphics/buildings/alloy-forge/alloy-forge-hr-emission-2.png",
             width_in_frames = 8,
             height_in_frames = 7,
           },
