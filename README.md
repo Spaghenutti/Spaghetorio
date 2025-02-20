@@ -23,9 +23,12 @@ Inspired by [brevven](https://mods.factorio.com/user/brevven).
 ## Current state of the mod
 
 This mod is in early alpha. In my current playthrough I can finish the first tier of science packs (about 150h taking it casually). The mod contains 3 tiers of science pack:
-- <img src="graphics/hr-icons/electronic-science-pack-1.png" alt="drawing" width="20"/> Basic science pack (9 variations like **electronic**, **material** and **geological** science)
-- <img src="graphics/hr-icons/computer-science-pack-2.png" alt="drawing" width="20"/> Intermediate science pack (16 variations like **computer** and **nuclear** science)
-- <img src="graphics/hr-icons/uniformity-science-pack.png" alt="drawing" width="20"/> Advanced science pack (16 variations like **matter** and **uniformity** science)
+
+![](images/science-packs.png)
+
+- Basic science pack (9 variations like **electronic**, **material** and **geological** science)
+- Intermediate science pack (16 variations like **computer** and **nuclear** science)
+- Advanced science pack (16 variations like **matter** and **uniformity** science)
 
 For the recipes unlocked during first tier there are no plans to change anything (except mabe change some ratios). All recipes comming after allready exist, but might not be reachable through tech tree.
 
