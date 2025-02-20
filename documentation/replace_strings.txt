@@ -94,6 +94,13 @@ kr_fluids_icons_path .. "
 
 --------------------------------------------------------------------------------
 
+For hurricane buildings:
+__Spaghetorio__/graphics/buildings/
+__SpaghetorioGraphics1__/buildings/
+
+
+--------------------------------------------------------------------------------
+
 
 "sp-graphite"
 "carbon"
