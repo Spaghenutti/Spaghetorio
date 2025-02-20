@@ -37,6 +37,7 @@ data:extend({
     name = "remove-prototypes-prototype-list",
     setting_type = "startup",
     admin = true,
+    hidden = true,
     default_value = "",
     allow_blank = true
   },
