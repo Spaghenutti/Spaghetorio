@@ -1,6 +1,6 @@
 # Spaghetorio
 
-Adds many new ores and items to craft.
+Adds lots of new ores, items, buildings and technologies.
 
 Inspired by [brevven](https://mods.factorio.com/user/brevven).
 
