@@ -61,6 +61,7 @@ data.raw.item["tree-seed"].stack_size = 1000
 data.raw.item["steam-engine"].stack_size = 50
 data.raw.item["pumpjack"].stack_size = 50
 data.raw.item["oil-refinery"].stack_size = 50
+data.raw.item["train-stop"].stack_size = 50
 
 -- MARK: change recipe subgroups
 data.raw.recipe["nuclear-fuel-reprocessing"].subgroup = "radioactive-resource"

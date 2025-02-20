@@ -503,7 +503,7 @@ data:extend({
   {
     type = "technology",
     -- extends base technology to 3rd tier
-    name = "electric-energy-distribution-3",  -- #ForRegEx# - technology
+    name = "sp-electric-energy-distribution-3",  -- #ForRegEx# - technology
     icon_size = 256,
     icon = "__base__/graphics/technology/electric-energy-distribution-2.png",
     effects =
@@ -1119,7 +1119,7 @@ data:extend({
       }
     },
     prerequisites = {
-      "metallurgic-science-pack"
+      "sp-alloy-forge"
     },
     unit =
     {

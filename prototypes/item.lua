@@ -6157,25 +6157,25 @@ data:extend({
   -- Smelting machine
   {
     type = "item",
-    name = "sp-alloy-forge",
+    name = "sp-alloy-forge",  -- #ForRegEx# - building
     icon = "__Spaghetorio__/graphics/icons/alloy-forge.png",
     icon_size = 64,
     icon_mipmaps = 4,
-    subgroup = "smelting-machine",  -- #ForRegEx# - building
+    subgroup = "smelting-machine",
     order = "c[electric-furnace]-f[alloy-forge]",
     place_result = "sp-alloy-forge",
-    stack_size = 50,
+    stack_size = 20,
   },
   {
     type = "item",
-    name = "sp-arc-furnace",
+    name = "sp-arc-furnace",  -- #ForRegEx# - building
     icon = "__Spaghetorio__/graphics/icons/arc-furnace.png",
     icon_size = 64,
     icon_mipmaps = 4,
-    subgroup = "smelting-machine",  -- #ForRegEx# - building
+    subgroup = "smelting-machine",
     order = "c[electric-furnace]-f[arc-furnace]",
     place_result = "sp-arc-furnace",
-    stack_size = 50,
+    stack_size = 20,
   },
   {
     type = "item",
@@ -6186,7 +6186,7 @@ data:extend({
     subgroup = "smelting-machine",
     order = "c[electric-furnace]-f[advanced-furnace]",
     place_result = "sp-kr-advanced-furnace",
-    stack_size = 50,
+    stack_size = 20,
   },
   -- Production machines
   {
@@ -6198,7 +6198,7 @@ data:extend({
     subgroup = "production-machine",
     order = "d[breeder-reactor]",
     place_result = "sp-breeder-reactor",
-    stack_size = 50,
+    stack_size = 20,
   },
   {
     type = "item",
@@ -6209,7 +6209,7 @@ data:extend({
     subgroup = "production-machine",
     order = "d[quantum-stabilizer]",
     place_result = "sp-quantum-stabilizer",
-    stack_size = 50,
+    stack_size = 20,
   },
   {
     type = "item",
@@ -6220,7 +6220,7 @@ data:extend({
     subgroup = "production-machine",
     order = "d[pathogen-lab]",
     place_result = "sp-pathogen-lab",
-    stack_size = 50,
+    stack_size = 20,
   },
   {
     type = "item",
@@ -6231,7 +6231,7 @@ data:extend({
     subgroup = "production-machine",
     order = "d[chemical-stager]",
     place_result = "sp-chemical-stager",
-    stack_size = 50,
+    stack_size = 20,
   },
   {
     type = "item",
@@ -6253,7 +6253,7 @@ data:extend({
     subgroup = "production-machine",
     order = "d[gravity-assembler]",
     place_result = "sp-gravity-assembler",
-    stack_size = 50,
+    stack_size = 20,
   },
   {
     type = "item",
@@ -6275,7 +6275,7 @@ data:extend({
     subgroup = "production-machine",
     order = "d[cyclotron]",
     place_result = "sp-cyclotron",
-    stack_size = 50,
+    stack_size = 20,
   },
   {
     type = "item",
@@ -6286,7 +6286,7 @@ data:extend({
     subgroup = "production-machine",
     order = "d[oxidizer]",
     place_result = "sp-oxidizer",
-    stack_size = 50,
+    stack_size = 20,
   },
   {
     type = "item",
@@ -6297,7 +6297,7 @@ data:extend({
     subgroup = "production-machine",
     order = "d[induction-hardening-facility]",
     place_result = "sp-induction-hardening-facility",
-    stack_size = 50,
+    stack_size = 20,
   },
   -- {
   --   type = "item",
@@ -6396,7 +6396,7 @@ data:extend({
     subgroup = "production-machine",
     order = "f3[research-servers]-b1[quantum-computer]",
     place_result = "sp-kr-quantum-computer",
-    stack_size = 50,
+    stack_size = 20,
   },
   {
     type = "item",
@@ -6407,7 +6407,7 @@ data:extend({
     subgroup = "production-machine",
     order = "d-h1[crusher]",
     place_result = "sp-kr-big-crusher",
-    stack_size = 50,
+    stack_size = 20,
   },
   {
     type = "item",
@@ -6484,7 +6484,7 @@ data:extend({
     subgroup = "production-machine",
     order = "i[matter]-b[matter-assembler]",
     place_result = "sp-kr-matter-assembler",
-    stack_size = 25,
+    stack_size = 20,
   },
   {
     type = "item",
@@ -6495,7 +6495,7 @@ data:extend({
     subgroup = "production-machine",
     order = "i[matter]-z[stellar-sinkhole-forge]",
     place_result = "sp-kr-stellar-sinkhole-forge",
-    stack_size = 25,
+    stack_size = 10,
   },
   {
     type = "item",
@@ -6564,7 +6564,7 @@ data:extend({
     subgroup = "extraction-machine",
     order = "a[items]-e[quarry-drill]",
     place_result = "sp-kr-quarry-drill",
-    stack_size = 50,
+    stack_size = 20,
   },
   {
     type = "item",
@@ -6575,7 +6575,7 @@ data:extend({
     subgroup = "extraction-machine",
     order = "a[items]-e[core-extractor]",
     place_result = "sp-core-extractor",
-    stack_size = 50,
+    stack_size = 10,
   },  
   -- Laboratories
   {
@@ -6598,7 +6598,7 @@ data:extend({
     subgroup = "production-machine",
     order = "g[lab]-g3[kr-singularity-lab]",
     place_result = "sp-kr-singularity-lab",
-    stack_size = 25,
+    stack_size = 20,
   },
   -- Energy production
   {
@@ -6618,7 +6618,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/krastorio/icons/entities/gas-power-station.png",
     icon_size = 64,
     icon_mipmaps = 4,
-    stack_size = 10,
+    stack_size = 50,
     subgroup = "energy",
     order = "c[solar-panel]-b[gas-power-station]",
     place_result = "sp-kr-gas-power-station",

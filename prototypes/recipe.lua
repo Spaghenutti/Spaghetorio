@@ -1284,19 +1284,6 @@ data:extend({
       {type = "item", name = "sp-ferrite", amount = 4}
     }
   },
-  {
-    type = "recipe",
-    name = "sp-vanadium-plate",  -- #ForRegEx# - recipe
-    category = "intermediate-smelting",
-    enabled = false,
-    energy_required = 10,
-    ingredients = {
-      {type = "item", name = "sp-ammonium-metavanadate", amount = 3},
-    },
-    results = {
-      {type = "item", name = "sp-vanadium-plate", amount = 2}
-    }
-  },
   ------------------------------------------------------------------------------
   -- MARK: enriching-raw-resource
   ------------------------------------------------------------------------------
@@ -2141,6 +2128,20 @@ data:extend({
     results = {
       {type = "item", name = "sp-boron-pillet", amount = 3},
       {type = "item", name = "sp-salt", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-vanadium-plate",  -- #ForRegEx# - recipe
+    category = "metallurgy",
+    enabled = false,
+    energy_required = 10,
+    ingredients = {
+      {type = "item", name = "sp-ammonium-metavanadate", amount = 3},
+      {type = "fluid", name = "sp-sodium-hydroxide", amount = 5},
+    },
+    results = {
+      {type = "item", name = "sp-vanadium-plate", amount = 2}
     }
   },
   ------------------------------------------------------------------------------
@@ -5243,7 +5244,7 @@ data:extend({
     name = "sp-turbocharger",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
-    energy_required = 2,
+    energy_required = 3,
     ingredients = {
       {type = "item", name = "sp-stainless-steel", amount = 3},
       {type = "item", name = "sp-brass", amount = 1},
