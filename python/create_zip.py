@@ -104,8 +104,6 @@ def create_zip() -> None:
             
             # Add graphics
             for used_image_path in get_used_image_paths():
-                if "alloy-forge" in used_image_path:
-                    print(used_image_path)
                 if f"\\{mod_name}\\" in used_image_path:
                     relative_path = os.path.join(root, used_image_path).replace(f"{mod_directory}\\", "")
             
