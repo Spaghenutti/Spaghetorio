@@ -356,7 +356,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-raw-imersite",
+    name = "sp-raw-imersite",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/raw-imersite/raw-imersite.png",
     icon_size = 64,
     icon_mipmaps = 4,
@@ -1369,7 +1369,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-imersite-powder",
+    name = "sp-imersite-powder",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/imersite-powder/imersite-powder.png",
     icon_size = 64,
     icon_mipmaps = 4,
@@ -2337,7 +2337,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-imersite-crystal",
+    name = "sp-imersite-crystal",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/imersite-crystal/imersite-crystal.png",
     icon_size = 64,
     icon_mipmaps = 4,
@@ -2516,7 +2516,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-imersium-plate",
+    name = "sp-imersium-plate",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/krastorio/icons/items/imersium-plate.png",
     icon_size = 64,
     icon_mipmaps = 4,
@@ -2574,7 +2574,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-imersium-beam",
+    name = "sp-imersium-beam",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/krastorio/icons/items/imersium-beam.png",
     icon_size = 64,
     icon_mipmaps = 4,
@@ -4275,7 +4275,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-imersium-gear-wheel",
+    name = "sp-imersium-gear-wheel",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/krastorio/icons/items/imersium-gear-wheel.png",
     icon_size = 64,
     icon_mipmaps = 4,
