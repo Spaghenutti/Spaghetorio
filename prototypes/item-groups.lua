@@ -2,96 +2,157 @@ local util = require("data-util")
 
 data:extend({
   ------------------------------------------------------------------------------
-  -- MARK: base-products
-  -- New group base-products in first place
+  -- MARK: resources
+  -- New group resources in first place
   ------------------------------------------------------------------------------
   {
     type = "item-group",
-    name = "base-products",
+    name = "resources",
     order = "a",
-    icons =  util.icon.combine_three_icons("__base__/graphics/icons/coal.png", 64, nil, "__base__/graphics/icons/copper-plate.png", 64, nil, "__Spaghetorio__/graphics/icons/zircon.png", 64, nil),
+    icon =  "__Spaghetorio__/graphics/icons/zircon.png",
     icon_size = 64,
   },
-  -- move raw-resources to new item group base-products
   {
     type = "item-subgroup",
     name = "raw-resource",
-    group = "base-products",
+    group = "resources",
     order = "a"
   },
   {
     type = "item-subgroup",
+    name = "casting-raw-resource",
+    group = "resources",
+    order = "a-b-casting"
+  },
+  {
+    type = "item-subgroup",
+    name = "enriched-resource-from-acrocrystal",
+    group = "resources",
+    order = "a-z-acrocrystal"
+  },
+  {
+    type = "item-subgroup",
     name = "crushed-resource",
-    group = "base-products",
+    group = "resources",
     order = "b"
   },
   {
     type = "item-subgroup",
+    name = "crushed-resource-recipe",
+    group = "resources",
+    order = "b-recipe"
+  },
+  {
+    type = "item-subgroup",
     name = "enriched-resource",
-    group = "base-products",
+    group = "resources",
     order = "c"
   },
   {
     type = "item-subgroup",
-    name = "processed-resource",
-    group = "base-products",
-    order = "d"
+    name = "enriched-resource-recipe",  -- Corresponds to category "enriching-raw-resource"
+    group = "resources",
+    order = "c-b"
   },
-  -- move raw-resources to new item group base-products
   {
     type = "item-subgroup",
-    name = "raw-material",
-    group = "base-products",
+    name = "enriched-crushed-resource-recipe",  -- Corresponds to category "enriching-crushed-resource"
+    group = "resources",
+    order = "c-c"
+  },
+  {
+    type = "item-subgroup",
+    name = "raw-resource-from-acromatter",
+    group = "resources",
+    order = "c-z-acromatter"
+  },
+  {
+    type = "item-subgroup",
+    name = "processed-resource",
+    group = "resources",
+    order = "d"
+  },
+  {
+    type = "item-subgroup",
+    name = "processed-resource-from-acrovoid",
+    group = "resources",
+    order = "d-z-acrovoid"
+  },
+  {
+    type = "item-subgroup",
+    name = "radioactive-resource",
+    group = "resources",
     order = "e"
   },
   {
     type = "item-subgroup",
-    name = "chemical-product",
-    group = "base-products",
+    name = "alien-processed-resource",
+    group = "resources",
     order = "f"
+  },
+  ------------------------------------------------------------------------------
+  -- MARK: materials
+  ------------------------------------------------------------------------------
+  {
+    type = "item-group",
+    name = "materials",
+    order = "b",
+    icon = "__space-age__/graphics/technology/tungsten-steel.png",
+    icon_size = 256,
+  },
+  {
+    type = "item-subgroup",
+    name = "raw-material",
+    group = "materials",
+    order = "e"
+  },
+  {
+    type = "item-subgroup",
+    name = "casting-raw-material",
+    group = "materials",
+    order = "e-b-casting"
   },
   {
     type = "item-subgroup",
     name = "alloy",
-    group = "base-products",
+    group = "materials",
+    order = "f"
+  },
+  {
+    type = "item-subgroup",
+    name = "chemical-product",
+    group = "materials",
     order = "g"
   },
   {
     type = "item-subgroup",
     name = "advanced-raw-material",
-    group = "base-products",
+    group = "materials",
     order = "h"
   },
   {
     type = "item-subgroup",
-    name = "alien-material",
-    group = "base-products",
-    order = "i"
-  },
-  {
-    type = "item-subgroup",
     name = "alien-compound",
-    group = "base-products",
+    group = "materials",
     order = "j"
   },
   {
     type = "item-subgroup",
     name = "sp-acroproduct",
-    group = "base-products",
+    group = "materials",
     order = "k"
   },
   ------------------------------------------------------------------------------
   -- MARK: intermediate-products
-  -- Set intermediate-products to second place
+  -- Set intermediate-products to third place
   ------------------------------------------------------------------------------
   {
     type = "item-group",
     name = "intermediate-products",
-    order = "b",
+    order = "c",
     order_in_recipe = "0",
-    icon = "__base__/graphics/item-group/intermediate-products.png",
-    icon_size = 128,
-    icon_mipmaps = 2
+    icon = "__Spaghetorio__/graphics/icons/heavy-gearbox.png",
+    icon_size = 64,
   },
   -- mechanical-component are used where a force is applied
   {
@@ -99,6 +160,12 @@ data:extend({
     name = "mechanical-component",
     group = "intermediate-products",
     order = "d"
+  },
+  {
+    type = "item-subgroup",
+    name = "casting-mechanical-component",
+    group = "intermediate-products",
+    order = "d-b"
   },
   -- electronic-optical-component are used where no force is applied
   {
@@ -193,12 +260,6 @@ data:extend({
   },
   {
     type = "item-subgroup",
-    name = "fundamental-science",
-    group = "science-products",
-    order = "c"
-  },
-  {
-    type = "item-subgroup",
     name = "basic-science",
     group = "science-products",
     order = "d"
@@ -229,9 +290,27 @@ data:extend({
   },
   {
     type = "item-subgroup",
-    name = "sp-acrosphere-corrupted",
+    name = "sp-basic-acrosphere-conversion",
     group = "science-products",
     order = "i"
+  },
+  {
+    type = "item-subgroup",
+    name = "sp-advanced-acrosphere-conversion",
+    group = "science-products",
+    order = "j"
+  },
+  {
+    type = "item-subgroup",
+    name = "sp-acrosphere-corrupted",
+    group = "science-products",
+    order = "k"
+  },
+  {
+    type = "item-subgroup",
+    name = "sp-crushing-acrosphere-corrupted",
+    group = "resources",
+    order = "l-crushing"
   },
   ------------------------------------------------------------------------------
   -- MARK: combat
@@ -251,7 +330,7 @@ data:extend({
   ------------------------------------------------------------------------------
   {
     type = "item-group",
-    name = "fluid",
+    name = "fluids",
     order = "g",
     icon = "__base__/graphics/item-group/fluids.png",
     icon_size = 128,
@@ -260,40 +339,61 @@ data:extend({
   {
     type = "item-subgroup",
     name = "aqueous-fluid",
-    group = "fluid",
+    group = "fluids",
     order = "a"
   },
   {
     type = "item-subgroup",
-    name = "dirty-fluid",
-    group = "fluid",
+    name = "solution",
+    group = "fluids",
     order = "b"
   },
   {
     type = "item-subgroup",
-    name = "oil",
-    group = "fluid",
+    name = "dirty-fluid",
+    group = "fluids",
     order = "c"
   },
   {
     type = "item-subgroup",
-    name = "chemical",
-    group = "fluid",
+    name = "dirty-fluid-filtration",  -- Corresponds to category "sp-kr-fluid-filtration"
+    group = "fluids",
+    order = "c-b"
+  },
+  {
+    type = "item-subgroup",
+    name = "oil",
+    group = "fluids",
     order = "d"
   },
   {
     type = "item-subgroup",
-    name = "gas",
-    group = "fluid",
+    name = "chemical",
+    group = "fluids",
     order = "e"
   },
   {
     type = "item-subgroup",
-    name = "alien",
-    group = "fluid",
+    name = "gas",
+    group = "fluids",
     order = "f"
-  }
+  },
+  {
+    type = "item-subgroup",
+    name = "alien",
+    group = "fluids",
+    order = "g"
+  },
+  ------------------------------------------------------------------------------
+  -- MARK: other
+  ------------------------------------------------------------------------------
+  {
+    type = "item-subgroup",
+    name = "sp-void",
+    group = "other",
+    order = "zzz",
+  },
 })
 
-data.raw["item-subgroup"]["fill-barrel"].group = "fluid"
-data.raw["item-subgroup"]["empty-barrel"].group = "fluid"
+data.raw["item-subgroup"]["fill-barrel"].group = "fluids"
+data.raw["item-subgroup"]["empty-barrel"].group = "fluids"

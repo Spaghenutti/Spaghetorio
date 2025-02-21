@@ -1,30 +1,24 @@
 -- Contains functions for editing recipes
 local remove_prototypes = require("remove-prototypes")
+local item_util = require("util.item")
+local icon_util = require("util.icon")
 
 local data_util = {}
 
-function data_util.change_recipe_ingredients(name, normal_ingredients, expensive_ingredients, normal_energy, expensive_energy)
-  data.raw.recipe[name].ingredients = normal_ingredients
-  if not (normal_energy == nil) then
-    data.raw.recipe[name].energy_required = normal_energy
-  end
+function data_util.change_recipe_ingredients(name, ingredients, energy_required)
+  -- local updated_ingredients = {}
+  -- for _, ingredient in pairs(ingredients) do
+  --   if ingredient.type == nil then
+  --     table.insert(updated_ingredients, item_util.extend_dictionary(ingredient))
+  --   end
+  -- end
 
-  if data.raw.recipe[name].normal then
-    data.raw.recipe[name].normal.ingredients = normal_ingredients
-    if not (normal_energy == nil) then
-      data.raw.recipe[name].normal.energy_required = normal_energy
-    end
-  end
-
-  if data.raw.recipe[name].expensive then
-    data.raw.recipe[name].expensive.ingredients = expensive_ingredients
-    if not (expensive_energy == nil) then
-      data.raw.recipe[name].expensive.energy_required = expensive_energy
-    end
+  data.raw.recipe[name].ingredients = ingredients
+  if not (energy_required == nil) then
+    data.raw.recipe[name].energy_required = energy_required
   end
 end
 
--- FIXME: Not working for normal / expensive recipe
 function data_util.remove_ingredient(recipe, ingredient_name)
   local ingredients = data.raw.recipe[recipe].ingredients
   if next(ingredients) ~= nil then
@@ -101,6 +95,52 @@ function data_util.remove_barrel_recipe(fluid_name)
   remove_prototypes.remove_one_prototype("recipe", "fill-"..fluid_name.."-barrel")
   remove_prototypes.remove_one_prototype("recipe", "empty-"..fluid_name.."-barrel")
   -- remove_prototypes.remove_one_prototype("item", fluid_name.."-barrel")  -- dunno why this results in crash
+end
+
+-- Add fluid burning recipe
+function data_util.generate_fluid_burning_recipe(fluid_name)
+  local fluid = data.raw.fluid[fluid_name]
+
+  -- Create burning recipe
+  local recipe = {
+    type = "recipe",
+    name = "sp-kr-burn-" .. fluid.name,
+    -- TODO: add localised_name
+    icons = icon_util.create_void_recipe_icon(fluid),
+    category = "sp-kr-fluid-burning",
+    subgroup = "sp-void",
+    energy_required = 1,
+    enabled = false,
+    hidden = true,
+    hide_from_player_crafting = true,
+    always_show_products = false,
+    show_amount_in_title = false,
+    ingredients = {
+      {type = "fluid", name = fluid.name, amount = 50},
+    },
+    results = {
+      {type = "item", name = "sp-void", amount = 0},
+    },
+    order = fluid.order,
+    crafting_machine_tint = {
+      primary = fluid.base_color,
+      secondary = {r = fluid.base_color.r, g = fluid.base_color.g, b = fluid.base_color.b, a = 0.25},
+      tertiary = {r = fluid.base_color.r, g = fluid.base_color.g, b = fluid.base_color.b, a = 0.5},
+      quaternary = {r = fluid.base_color.r, g = fluid.base_color.g, b = fluid.base_color.b, a = 0.75},
+    },
+  }
+
+  data:extend({recipe})
+
+  -- Extend technology
+  table.insert(data.raw.technology["sp-kr-fluid-excess-handling"].effects, {type = "unlock-recipe", recipe = recipe.name})
+end
+
+-- Add all fluid burning recipes
+function data_util.generate_fluid_burning_recipes()
+  for _, fluid in pairs(data.raw.fluid) do
+    data_util.generate_fluid_burning_recipe(fluid.name)
+  end
 end
 
 return data_util

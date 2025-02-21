@@ -1,30 +1,42 @@
 
--- Remove when updating file is done
-require("prototypes.recipe-changes")
+local util = require("data-util")
 
--- MARK: AAI and Krastorio 2
-require("compatibility.aai-and-krastorio-new-recipe")
-require("compatibility.aai-and-krastorio-recipe-changes")
-require("compatibility.aai-and-krastorio-category-fixes")
-require("compatibility.aai-and-krastorio-subgroup-fixes")
-require("compatibility.aai-and-krastorio-order-fixes")
-require("compatibility.aai-and-krastorio-technology")
-require("compatibility.aai-and-krastorio-technology-changes")
+util.recipe.generate_fluid_burning_recipes()
 
-require("compatibility.krastorio-building")
-require("compatibility.krastorio-equipment")
-require("compatibility.krastorio-realistic-weapons")
-require("compatibility.krastorio-resource")
-require("compatibility.krastorio-stack-sizes")
+-- -- Remove when updating file is done
+-- require("prototypes.recipe-changes")
 
-require("compatibility.krastorio-fixes")
-require("compatibility.aai-industry-fixes")
+-- -- MARK: AAI and Krastorio 2
+-- require("compatibility.aai-and-krastorio-new-recipe")
+-- require("compatibility.aai-and-krastorio-recipe-changes")
+-- require("compatibility.aai-and-krastorio-category-fixes")
+-- require("compatibility.aai-and-krastorio-subgroup-fixes")
+-- require("compatibility.aai-and-krastorio-order-fixes")
+-- require("compatibility.aai-and-krastorio-technology")
+-- require("compatibility.aai-and-krastorio-technology-changes")
 
--- MARK: Other mods
-if mods["LogisticTrainNetwork"] then
-    require("compatibility.logistic-train-network")
-end
+-- require("compatibility.krastorio-building")
+-- require("compatibility.krastorio-equipment")
+-- require("compatibility.krastorio-realistic-weapons")
+-- require("compatibility.krastorio-resource")
+-- require("compatibility.krastorio-stack-sizes")
 
-if mods["jetpack"] then
-    require("compatibility.jetpack")
-end
+-- require("compatibility.krastorio-fixes")
+-- require("compatibility.aai-industry-fixes")
+
+-- -- MARK: Other mods
+-- if mods["LogisticTrainNetwork"] then
+--     require("compatibility.logistic-train-network")
+-- end
+
+-- if mods["jetpack"] then
+--     require("compatibility.jetpack")
+-- end
+
+require("compatibility.EverythingOnNauvis.resource-updates")
+
+require("compatibility.factorio-base.data-updates")
+
+require("compatibility.space-age.data-updates")
+
+require("compatibility.data-updates")

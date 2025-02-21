@@ -1,0 +1,151 @@
+Regex for replacing {"blank-tech-card", 5} to {type = "item", name = "blank-tech-card", amount = 5}
+
+\{"([^"]*)", (\d+)\}
+{type = "item", name = "$1", amount = $2}
+
+
+(\d+)KW"
+$1kW"
+
+
+kr_items_icons_path .. "
+"__Spaghetorio__/graphics/krastorio/icons/items/
+
+
+kr_tiles_path .. "
+"__Spaghetorio__/graphics/krastorio/icons/items/tiles/
+
+
+kr_remnants_path .. "
+"__Spaghetorio__/graphics/krastorio/entities/remnants/
+
+
+base_area = -?\d+,(\n\s+)base_level = -?\d+,\n\s+pipe_connections = \{ \{ type = "(\w+)", position = \{ (-?\d+), (-?\d+) \} \} \},\n\s+secondary_draw_orders = \{ north = (-?\d+) \}
+volume = 1000,$1pipe_connections = {{flow_direction="$2", direction = defines.direction.south, position = {$3, $4}}},$1secondary_draw_orders = {north = $5}
+
+
+\{ type = "([-\w]+)", position = \{ ([-.\d]+), ([-.\d]+) \} \}
+{flow_direction="$1", direction = defines.direction.south, position = {$2, $3}}
+
+
+emissions_per_minute = ([-.\d]+)
+emissions_per_minute = {pollution = $1}
+
+
+kr_entities_path .. "
+"__Spaghetorio__/graphics/krastorio/entities/
+
+
+kr_entities_icons_path .. "
+"__Spaghetorio__/graphics/krastorio/icons/entities/
+
+
+kr_buildings_sounds_path .. "
+"__Spaghetorio__/sounds/buildings/
+
+
+kr_sounds_mod .. "
+"__Spaghetorio__/sounds/
+
+
+off_when_no_fluid_recipe
+fluid_boxes_off_when_no_fluid_recipe
+
+
+kr_pipe_path
+sp_kr_pipe_path
+
+
+kr_explosions_sprites_path .. "
+"__Spaghetorio__/graphics/krastorio/entities/explosions/
+
+
+"__Krastorio2Assets__/
+"__Spaghetorio__/graphics/krastorio/
+
+
+"kr-vc-sp-
+"sp-crushing-
+
+
+"kr-vc-
+"sp-crushing-
+
+
+kr_cards_icons_path .. "
+"__Spaghetorio__/graphics/krastorio/icons/cards/
+
+
+kr_technologies_icons_path .. "
+"__Spaghetorio__/graphics/krastorio/technologies/
+
+
+kr_recipes_icons_path .. "
+"__Spaghetorio__/graphics/krastorio/icons/recipes/
+
+
+kr_items_with_variations_icons_path .. "
+"__Spaghetorio__/graphics/krastorio/icons/items-with-variations/
+
+
+kr_fluids_icons_path .. "
+"__Spaghetorio__/graphics/krastorio/icons/fluids/
+
+
+--------------------------------------------------------------------------------
+
+For hurricane buildings:
+__Spaghetorio__/graphics/buildings/
+__SpaghetorioGraphics1__/graphics/buildings/
+
+
+--------------------------------------------------------------------------------
+
+
+"sp-graphite"
+"carbon"
+
+"enriched-copper"
+"sp-enriched-copper"
+
+"enriched-iron"
+"sp-enriched-iron"
+
+"coke"
+"sp-coke"
+
+"glass"
+"sp-glass"
+
+"sand"
+"sp-sand"
+
+"silicon"
+"sp-silicon"
+
+"quartz"
+"sp-quartz"
+
+"raw-rare-metals"
+"sp-raw-rare-metals"
+
+"enriched-rare-metals"
+"sp-enriched-rare-metals"
+
+"blank-tech-card"
+"sp-blank-tech-card"
+
+"hydrogen"
+"sp-hydrogen"
+
+"oxygen"
+"sp-oxygen"
+
+"chlorine"
+"sp-chlorine"
+
+"nitric-acid"
+"sp-nitric-acid"
+
+"heavy-water"
+"sp-heavy-water"

@@ -1,4 +1,41 @@
 
+Order of processing ores:
+  - iron
+  - copper
+  - stone
+  - coal
+  - tinstone
+  - aluminum
+  - nickel
+  - oil
+
+  - zinc (chlorine)
+  - cobalt (sulfamate)
+  - iodine
+  - calcite (sulfuric acid)
+
+  - barium
+
+
+science pack order
+  - a[automation-science-pack]
+  - b[logistic-science-pack]
+  - c[military-science-pack]
+  - d[chemical-science-pack]
+  - e[electronic-science-pack]
+  - f[geological-science-pack]
+  - g[material-science-pack]
+  - h[metallurgic-science-pack]
+  - i[electromagnetic-science-pack]
+  - j[agricultural-science-pack]
+  - k[cryogenic-science-pack]
+  - l[production-science-pack]
+  - m[computer-science-pack]
+  - n[nuclear-science-pack]
+  - o[space-science-pack]
+  - p[utility-science-pack]
+
+
 Krastorio rare-metal items:
   - "raw-rare-metals"
   - "enriched-rare-metals"
@@ -30,3 +67,32 @@ Krastorio rare-metal recipes:
   - "kr-nuclear-locomotive"
   - "kr-railgun-turret"
   - "kr-rocket-turret"
+
+To create new building:
+  - building.lua and import in data.lua
+  - If creating from scratch:
+    - copy alloy forge
+    - replace alloy-forge with new-building-name
+    - set in graphics_set the resolution
+    - set in graphics_set the light color (at the end of graphics_set)
+    - set in graphics_set the correct frames
+    - set graphics_frame_count
+    - set graphics_animation_speed
+    - set graphics_frame_count
+    - fix pipe cover coordinates
+    - set max_health
+    - set resistances
+    - set collision_box
+    - set selection_box
+    - set module_slots
+  - If copying from krastorio:
+    - remove code for kr_icons_size variable
+    - replace strings with replace_strings.txt
+    - remove hr_version of pictures, animation, icons, ...
+    - rename "kr- to "sp-kr- for the name
+    - change animation = {...} and working_visualisations = {...} to graphics_set = {animation = {...}, working_visualisations = {...}}
+    - change module_specification = {...} to module_slots = x
+    - change off_when_no_fluid_recipe to fluid_boxes_off_when_no_fluid_recipe and move outside of fluid_boxes = {...}
+    - check crafting_categories
+  - item
+  - recipe

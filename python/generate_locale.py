@@ -30,14 +30,14 @@ def generate_locale_value(key: str, object_type: str=None) -> Tuple[str, str]:
     if object_type in ["infinite-technology"]:
         key = "-".join(key.split("-")[:-1])
 
-    if key.startswith("sp-"):
+    if key.startswith("sp-kr-"):
+        value = key[6:].replace("-", " ")
+        value = value[0].capitalize() + value[1:]
+    elif key.startswith("sp-"):
         value = key[3:].replace("-", " ")
         value = value[0].capitalize() + value[1:]
-    elif key.startswith("kr-vc-sp-"):
-        value = key[9:].replace("-", " ")
-        value = value[0].capitalize() + value[1:]
     else:
-        raise KeyError(f"Key {key} does not start with \"sp-\" or \"kr-vc-sp-\"")
+        raise KeyError(f"Key {key} does not start with \"sp-\", \"sp-kr-\" or \"sp-crushing-\"")
     
     return (key, value)
 
@@ -116,11 +116,8 @@ def update_locale() -> None:
     extend_locale(parse_lua(constants.ITEMS_PATH))
     extend_locale(parse_lua(constants.FLUID_PATH))
     extend_locale(parse_lua(constants.RECIPES_PATH))
-    extend_locale(parse_lua(constants.KRASTORIO_NEW_RECIPES_PATH))
-    extend_locale(parse_lua(constants.KRASTORIO_RECIPES_CHANGES_PATH))
     extend_locale(parse_lua(constants.ROCKET_SILO_PATH))
     extend_locale(parse_lua(constants.TECHNOLOGIES_PATH))
-    extend_locale(parse_lua(constants.KRASTORIO_TECHNOLOGIES_PATH)) 
 
 
 if __name__ == "__main__":

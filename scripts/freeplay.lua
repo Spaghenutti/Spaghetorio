@@ -8,13 +8,12 @@ function freeplay.add_starting_items()
 
   local items = remote.call("freeplay", "get_created_items")
 
-  -- Help for creating wooden boards
-  if game.active_mods["Krastorio2"] then
-    items["kr-greenhouse"] = 4
-    items["offshore-pump"] = 1
-    items["pipe-to-ground"] = 10
-    items["pipe"] = 30
-  end
+  -- items["lab"] = 1
+  items["sp-kr-greenhouse"] = 4
+  items["offshore-pump"] = 1
+  items["pipe-to-ground"] = 10
+  items["pipe"] = 30
+
   remote.call("freeplay", "set_created_items", items)
 end
 

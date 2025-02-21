@@ -1,4 +1,198 @@
 
+TODO before alpha release:
+  - Add separate graphics mod for building graphics
+  + clean up locale
+  + fix crafting categories for buildings
+  + balance pass of:
+    + generator equipment power
+    + crushing recipes
+    + enriched recipes
+  - Add defect mech armor at start of game
+    - make setting
+
+TODO after alpha release:
+  - organize icons:
+    + fix group icons
+    - move fluid icons to fluid group
+    + fix crushing icons
+    - fix enriching ore icons
+    - fix enriching crushed ore icons
+    + fix rare metal processing icons
+  - Add black reinforced concrete
+
+--------------------------------------------------------------------------------
+
+Factorio Space age
+  - Add some new ores (note down how they are supposed to be processed)
+    + barium-ore
+      +t barium-ore + sulfuric-acid -> barium-sulfamate (chemistry)
+      +t barium-sulfamate + carbon -> barium-sulfide (smelting)
+      +t barium-sulfide -> barium-billet (smelting)
+      +t barium-sulfide + oxygen -> drilling-fluid (fluid-filtration)
+      +t barium-sulfide + carbon + oxygen -> barium-carbonate + sulfur (barium-carbonate used in glass and ceramics)
+      + barium-billet + titanium-ingot -> barium-titanate (for electronic components like capacitors)
+      - barium-ore from acrocrystal
+    + mercury-ore
+      +t mercury-ore -> mercury + sulfur + stone
+      + used in relay
+      - used as liquid metal coolant in breeder reactor
+      - used in catalyst
+    + stibnite
+      +t stibnite -> antimony-oxide (smelting)
+      +t antimony-oxide + carbon -> antimony-pillet (smelting)
+      +t antimony-pillet + chlorine -> antimony-trichloride (used for organic synthesis)
+      +t antimony-pillet + iodine -> antimony-triiodide (thin film for semiconductor)
+      + copper + antimony-pillet -> copper-antimony (for bearings, solar cells and electronic layers)
+      + add uses to antimony
+      - stibnite from acrocrystal
+    + boron-ore (kernite)
+      +t boron-ore + phosphoric-acid -> sodium-borate (chemistry)
+      +t sodium-borate + chlorine -> boron-pillet + salt (chemistry)
+      +t sodium-borate + water -> diborane (B2H6) (rocket fuel and used to produce high purity boron)
+      +t boron-pillet + carbon -> boron-carbide (B4C) (abrasive materials, armor plating, and neutron radiation control)
+      + boron-pillet + phosphorus -> boron-phosphide (BP) (High temperature semiconductor)
+      + boron-pillet + silicon -> boron-silicade (B6Si) (High temperature semiconductor)
+      - boron-ore from acrocrystal
+    + cobalt-ore
+      +t cobalt-ore -> crushed-cobalt-ore + arsenic-trioxide (crushing)
+      +t cobalt-ore -> cobalt-oxide (smelting)
+      +t cobalt-oxide + sulfuric-acid -> cobalt-sulfate (chemistry)
+      +t cobalt-sulfate -> cobalt-billet
+      +t 30% nickel + 70% cobalt -> nickel-cobalt (corrosion resistant)
+      +t 60% nickel + 20% chromium + 20% cobalt -> waspaloy (used in Aerospace and gas turbine)
+      + 60% cobalt + 30% Chromium + 6% tungsten + 2% manganese + 2% molybdenum = satellite 6 alloy (used in cutting tools and wear resistant applications)
+      + 40% cobalt, 20% chromium, 15% nickel, 15% iron, 8% molybdenum, 2% manganese = elgiloy (for springs and mdeical devices)
+      + Nickel (18%), Cobalt (8-12%), Molybdenum (3-5%) rest iron -> maraging-steel (used for Aerospace, tooling)
+      + Nickel (29%), Cobalt (17%), Iron (balance) -> kovar (used for Electronics, glass-to-metal seals)
+      +t arsenic-trioxide + hydrogen -> arsen-pillet
+      +t arsen-pillet + sulfur -> arsenic-sulfide (As2S3) (Used as a semiconductor material)
+      +t arsen-pillet + iodine -> arsenic-iodide (AsI3) (Used in the synthesis of organic arsenic compounds and as a reagent in chemical analysis)
+      - cobalt-ore from acrocrystal
+    + molybdenum-ore
+      +t molybdenum-ore -> molybdenum-trioxide (smelting)
+      +t molybdenum-trioxide -> molybdenum-pillet (smelting)
+      + lead + molybdenum-pillet + oxygen -> lead-molybdate (PbMoO4) (for radiation measurement)
+      + sodium + molybdenum-pillet + oxygen -> sodium-molybdate (Na2MoO4) (for water treatment)
+      - molybdenum-ore from acrocrystal
+    + manganese-ore
+      +t manganese-ore -> manganese-dioxide (smelting)
+      +t manganese-dioxide -> manganese-ingot (electrolysis)
+      + manganese-ingot + chlorine -> manganese-chloride (MnCl2) (for battery cells)
+      - check aluminum alloys that already exist in spaghetorio mod that might use manganese
+      - manganese-ore from acrocrystal
+    + iodine-brine
+      +t iodine-brine + chlorine -> iodine-sludge
+      +t iodine-sludge -> idonine
+    + lithium
+      +t lithium-brine + water -> lithium-oxide
+      +t lithium-oxide + hydrogen-chloride -> lithium-chloride + water
+      +t lithium-chloride + sodium-hydroxide -> lithium
+    + vanadium
+      +t vanadium-ore -> vanadium-pentoxide: used as a catalyst in the production of sulfuric acid and in the manufacturing of ceramics and glass.
+      +t sodium-carbonate + vanadium-pentoxide + water -> vanadium-bearing-solution
+      +t vanadium-bearing-solution -> ammonium-metavanadate (NH4VO3): Used in the preparation of other vanadium compounds and as a catalyst in organic synthesis.
+      +t ammonium-metavanadate + sodium-hydroxide -> vanadium-plate
+      + vanadium-plate + sulfuric-acid = vanadyl-sulfate (VOSO4): Used in dietary supplements and as a catalyst in chemical reactions
+      + titanium-aluminum-vanadium (Ti-6Al-4V): used in aerospace
+      + vanadium-aluminum (V-Al): used in aerospace
+      + vanadium-steel: used in high-speed machinery
+    + potassium
+      +t potassium-ore (sylvite (KCl) and carnallite (KMgCl3·6H2O)) + magnesium-chloride -> potassium-chloride (Used in fertilizers, as a salt substitute in food, and in medical treatments for potassium deficiency.)
+      +t potassium-chloride -> potassium-ingot
+      + potassium-ingot + manganese-ingot + 100 water -> potassium-permanganate-solution (KMnO4): Used as a disinfectant, water treatment chemical, and in organic synthesis.
+      + potassium-ingot + chromium-plate + 75 water -> potassium-dichromate-solution (K2Cr2O7): Used in tanning leather, as a corrosion inhibitor, and in the production of pigments.
+      + ammonia + carbon -> hydrogen-cyanide
+      + potassium-chloride + water -> potassium-hydroxide (electrolysis)
+      + hydrogen-cyanide + potassium-hydroxide -> potassium-cyanide (KCN): Used in gold mining, electroplating, and as a reagent in chemical synthesis.
+
+    - Remove spage age technologies
+      - carbon fiber
+
+    + core-rift
+    - ceramics:
+      - silicon nitride (Si3N4) for heavy ball bearing
+      - zirconium dioxide (ZrO2)
+
+
+  - Add Krastorio matter conversion recipes
+  + Add mineral water
+  + Add imersite
+  + Add ores for core extractor
+    - ...
+    - add core extractor
+      + building
+      - dummy recipe
+      - dummy technology
+  - Update groups
+    - add new biological group
+    - separate base-products group into base-prwdoducts and base-materials
+    - update subgroups
+    - update orders
+  + fix resolution of potassium-ore, vanadium-ore and manganese-ore patches sprites
+  + Add remaining hurricane buildings
+  + remove catalyst items, recipes and technologies
+  - remove all factorio alternative recipe chains for processing liquids on different planets
+  - Add weight to every item
+  - Space age items - Spaghetorio
+    + ammonia - ammonia
+    + fluoroketone-cold - coolant
+    + electrolyte - electrolyte (solid)
+    + carbon - graphite
+    + tungsten carbide - tungsten carbide
+    + tungsten
+    + limestone - calcite
+    + superconductor - superconductor
+  + Update recepies for
+    + lithium processing
+    + tungsten processing
+    + remove everything regarding limestone
+  - ores
+    + limestone as barium ore (baryt)
+    + tungsten ore as mercury ore (cinnabar)
+    + spodumene as cobalt ore (in cobalt ore traces of arsen are found)
+    + Add Cobalt
+    + Add stibnite as ore
+      - add crushed recipe
+      - add enriched recipe
+  - icons to fix
+    - crushing coke
+    - crushing coal
+    - crushing cobalt ore
+    - tungsten ore crushing and enriching
+    - raw rare metal processing
+    - enriched rare metal processing
+    - fix icons for groups base-recources, base-materials, intermediate-products
+  - Add back HD graphics in separate spaghetorio assets mod
+
+
+Krastorio cleanup
+  + remove not needed explosions
+
+Technologies which unlock items allready unlocked by base factorio
+  - "sp-cooling" (see how this can be somewhat close in tree with "fluoroketone-cold" recipe)
+  - "sp-advanced-ceramics"
+
+
+hurricane406 graphics
+  - Greenhouse -> Already exists from krastorio
+  - Disruptor -> For mining alien minerals
+  + Alloy forge
+  + Atom forge -> Breeder reactor
+  + Chemical stager
+  + Quantum stabilizer
+  - Thermal plant -> Geothermal plant - Can only be built on geothermal vents. Connects to heatpipes.
+  + Pathogen lab (in later update with biological tech branch)
+  + Fusion reactor -> cyclotron
+  + Lumber mill -> Add more wood items
+  + Scrubber -> Solvant extractor / Rotary kiln / freezer
+  + Gravity assembler
+  + Arc furnace -> Connects to heatpipes. Add heatpipes to space age reactor and increase temp to 4000 °C
+  + Core extractor
+  + Oxidizer
+  + Convector -> Induction hardening facility
+  - Research center
+
+
 Buildings: Graphics (https://www.figma.com/proto/8ecwGOzYos13D0JTwV5kO9/Factorio-Buildings?node-id=2585-1158&node-type=frame&t=Tt0H6pFe0h0uH68x-0&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1ui%3D1&hotspot-hints=0&hide-ui=1)
   - Heat treatment convector (Use convector building from hurricane406)
   - particle accelerator / cyclotron (Use fusion reactor building from hurricane406)
@@ -126,6 +320,64 @@ Items:
       - Neutron Source: Actinium-227 is used as a neutron source in scientific research and industrial applications. It helps in neutron radiography and other neutron-based imaging techniques2.
 
 
+    - gallium + indium + thallium
+      - add to crushed aluminum, gallite as output
+      - add to crushed zinc, gallite as output
+      - gallite -> gallium
+      - gallite -> indium (advanced-smelting)
+      - gallite -> thallium (arc-furnace)
+      - gallium + arsen -> gallium-arsenide (LED and solar cells)
+      - gallium + nitrogen -> Gallium-Nitride (GaN): Used in high-power and high-frequency electronic devices, such as transistors and LEDs.
+      - gallium + oxygen -> Gallium-Oxide (Ga2O3): Used in gas sensors and as a transparent conductive oxide in optoelectronic devices.
+      - gallium + chlorine -> Gallium-Trichloride (GaCl3): Used as a catalyst in organic synthesis and in the production of other gallium compounds.
+      - gallium + phosphorus -> Gallium-Phosphide (GaP): Used in optoelectronic devices, such as LEDs and photodetectors.
+      - gallium + indium + tin -> Galinstan: used as a non-toxic alternative to mercury in thermometers and other applications.
+      - Gallium-Aluminum Alloy (Ga-Al): Used in the production of high-strength, lightweight materials for aerospace and automotive applications.
+      - Gallium-Tin Alloy (Ga-Sn): Used in low-melting-point solders and as a heat transfer medium in cooling systems.
+      - Indium Phosphide (InP): Used in high-speed and high-frequency electronics, such as transistors and laser diodes.
+      - Indium Antimonide (InSb): Used in infrared detectors and thermal imaging cameras.
+      - Indium(III) Chloride (InCl3): Used as a catalyst in organic synthesis and in the production of other indium compounds.
+      - Indium-Gallium-Zinc Oxide (IGZO): Used in thin-film transistors for high-resolution displays.
+      - Thallium(I) Bromide (TlBr): Used in infrared optics and as a scintillation detector.
+      - Thallium(I) Iodide (TlI): Used in high-temperature superconductors and in the production of special glasses.
+      - Thallium(III) Oxide (Tl2O3): Used in the production of semiconductors and as a catalyst in chemical reactions.
+      - Thallium-Mercury Alloy (Tl-Hg): Used in low-freezing-point alloys and in the production of special glasses.
+      - Thallium-Lead Alloy (Tl-Pb): Used in the production of antifriction materials and in the manufacturing of special glasses.
+    - germanium
+      - zinc-ore + sulfuric-acid -> germanium-oxide
+      - crushed-zinc-ore + sulfuric-acid -> germanium-oxide
+      - enriched-zinc-ore + sulfuric-acid -> germanium-oxide
+      - germanium-oxide -> germanium-ingot
+      - Germanium Dioxide (GeO2): Used in the production of optical fibers and infrared optics.
+      - Germane (GeH4): Used in the semiconductor industry for the production of high-purity germanium crystals.
+      - Germanium Tetrachloride (GeCl4): Used in the production of optical fibers and as a precursor for other germanium compounds.
+      - Germanium Sulfide (GeS2): Used in the production of infrared optics and as a semiconductor material.
+      - Germanium Nitride (Ge3N4): Used in the production of high-temperature ceramics and as a semiconductor material.
+    - selenium
+      - add to crushed copper, selenium-dioxide as output
+      - add to crushed nickel, selenium-dioxide as output
+      - add to crushed lead, selenium-dioxide as output
+      - selenium-dioxide + Ammonium-Hydroxide + iron -> selenium-pillet
+      - Selenium Dioxide (SeO2): Used as a catalyst in the production of chemicals and in the glass industry to decolorize glass.
+      - Selenium Sulfide (SeS2): Used in anti-dandruff shampoos and as a fungicide.
+      - Selenic Acid (H2SeO4): Used in the production of selenium compounds and as an oxidizing agent in chemical reactions.
+      - Selenous Acid (H2SeO3): Used in the production of selenium compounds and as a reagent in chemical analysis.
+      - Sodium Selenite (Na2SeO3): Used as a dietary supplement and in animal feed to correct selenium deficiencies.
+      - Sodium Selenate (Na2SeO4): Used as a dietary supplement and in the production of glass and ceramics.
+      - Zinc Selenide (ZnSe): Used in infrared optics and as a semiconductor material.
+      - Copper Selenide (Cu2Se): Used in the production of solar cells and as a semiconductor material.
+      - Cadmium Selenide (CdSe): Used in the production of quantum dots and as a semiconductor material.
+      - Selenium Hexafluoride (SeF6): Used as a gaseous dielectric in high-voltage applications.
+    - Add Alkaline solutions like:
+      - Potassium Hydroxide (KOH): Used in the manufacture of biodiesel, as an electrolyte in alkaline batteries, and in soap making.
+      - Calcium Hydroxide (Ca(OH)2): Also known as slaked lime, it is used in water treatment, construction (as lime mortar), and in the food industry.
+      - Ammonium Hydroxide (NH4OH): Commonly known as ammonia solution, it is used in household cleaners, fertilizers, and in the textile industry.
+      - Magnesium Hydroxide (Mg(OH)2): Used as an antacid and laxative, and in wastewater treatment.
+      - Barium Hydroxide (Ba(OH)2): Used in the manufacture of thermoplastics, as a lubricant additive, and in the sugar industry.
+      - Lithium Hydroxide (LiOH): Used in the production of lithium-ion batteries and as a carbon dioxide scrubber in breathing gas purification systems.
+
+
+
   - Alloys:
     - Spring steel
       - (1% carbon, 0.5% magnesium, 0.3% silicon)
@@ -149,28 +401,34 @@ Items:
       - 63% Nickel, 30% copper, 2% Manganese, 1% Iron, 4% Titanium
       - Marine engineering
       - Chemical processing
-    - Waspalloy
+    + Waspalloy
       - 60% nickel, 20% chromium, 20% cobalt
       - Aerospace
       - Gas turbine
-    - Satellite 6 alloy
+    + Satellite 6 alloy
       - 60% cobalt, 30% Chromium, 6% tungsten, 2% manganese, 2% molybden
       - cutting tools
       - wear resistant applications
-    - Elgiloy:
+    + Elgiloy:
       - 40% cobalt, 20% chromium, 15% nickel, 15% iron, 8% molybden, 2% manganese
       - springs
       - medical devices
-    - Maraging Steel: 
+    + Maraging Steel: 
       - Nickel (18%), Cobalt (8-12%), Molybdenum (3-5%) rest iron
       - Aerospace, tooling.
-    - Kovar:
+    + Kovar:
       - Nickel (29%), Cobalt (17%), Iron (balance) 
       - Electronics
       - glass-to-metal seals.
-    - Zircaloy: 
+    + Zircaloy: 
       - Zirconium (98%), Tin (1.5%) 
       - Nuclear reactors.
+    + Nickel chromium:
+      - Nickel 80%, Chromium 20%
+      - High temperature
+    + Nimonic:
+      - Nickel 50%, chromium 20%, Titanium 30%
+      - high temperature, low creep
   
   - Exotic alloys:
     - Alnico: Aluminum (8%), Nickel (14%), Cobalt (24%), Iron (balance) - Magnets, sensors.
@@ -224,9 +482,28 @@ Items:
     - EuNi4.5Co0.5: Europium (20%), Nickel (75%), Cobalt (5%) - Hydrogen storage.
     - GdNi4.5Co0.5: Gadolinium (20%), Nickel (75%), Cobalt (5%) - Hydrogen storage.
 
+  - magnetic coupling
+  - vacuum pump (contains seals and steel)
+  - pressure sensor (from aluminum, copper and silicon)
+  - gearshaft (created in induction hardening facility)
+  - magnetic lifter
+  - condenser coil (Condenses vapor into liquid, essential in cooling or refrigeration systems)
+  - electromagnetic brake
+  - turbo charger
+  - roller chain
+  - vibration dampener
+  - catalytic converter
+  - high pressure fan
+  - variable frequenzy drive (adjusts motor speed based on demand, improving efficiency)
+  - thermal regulator
+  - destiller
+  - high power solenoid
+  - plasma cutter
+  - electrostatic precipitator
+  - piezoelectric sensor
   - Seal
   - Bearing
-  - Seeds (for trees)
+  + Seeds (for trees)
   - Antimatter trains
   - Antimatter cube
   - Quantized matter
@@ -234,14 +511,13 @@ Items:
   - Coolant with different temperatures (coolant does not have a real purpose right now, see Idea coolant)
   - Vacuum chamber
   - x-ray tube (sterilization or something)
-  - Crucible
+  + Crucible
   - For semiconductors:
     - Tantalum nitride
     - Silicon nitride
     - Wafer
   - Nuclear products:
     - Isotopes of some elements. (Create recipes which take in one isotope and have 50% chance during their halflife to convert to another element)
-  - Alloy science pack t2 and t3
   - More T4 tech cards
 
 Recipes:
