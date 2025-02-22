@@ -3576,6 +3576,26 @@ data:extend({
       {type = "item", name = "sp-potassium-chloride", amount = 1}
     }
   },
+  {
+    type = "recipe",
+    name = "sp-material-science-pack-2",  -- #ForRegEx# - recipe
+    category = "chemical-staging",
+    enabled = false,
+    energy_required = 24,
+    ingredients =
+    {
+      {type = "item", name = "sp-material-science-pack-1", amount = 20},
+      {type = "fluid", name = "sp-epichlorohydrin", amount = 10},
+      {type = "fluid", name = "sp-sulfamate", amount = 10},
+      {type = "item", name = "sp-titanium-ingot", amount = 5},
+      {type = "item", name = "sp-barium-carbonate", amount = 5},
+      {type = "item", name = "sp-zirconia", amount = 5},
+      {type = "item", name = "sp-rubber", amount = 5},
+    },
+    results = {
+      {type = "item", name = "sp-material-science-pack-2", amount = 5}
+    }
+  },
   ------------------------------------------------------------------------------
   -- MARK: sp-kr-fuel-refinery
   ------------------------------------------------------------------------------
@@ -5695,7 +5715,9 @@ data:extend({
     ingredients =
     {
       {type = "item", name = "logistic-science-pack", amount = 20},
-      {type = "item", name = "sp-servo-motor", amount = 8},
+      {type = "item", name = "sp-condenser-coil", amount = 8},
+      {type = "item", name = "flying-robot-frame", amount = 5},
+      {type = "item", name = "advanced-circuit", amount = 10},
     },
     results = {
       {type = "item", name = "sp-logistic-science-pack-2", amount = 5}
@@ -6304,26 +6326,6 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-geological-science-pack-2", amount = 5}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-material-science-pack-2",  -- #ForRegEx# - recipe
-    category = "crafting-with-fluid",
-    enabled = false,
-    energy_required = 24,
-    ingredients =
-    {
-      {type = "item", name = "sp-material-science-pack-1", amount = 20},
-      {type = "fluid", name = "sp-vinyl-chloride", amount = 10},
-      {type = "item", name = "sp-titanium-ingot", amount = 4},
-      {type = "item", name = "sp-brass", amount = 8},
-      {type = "item", name = "sp-stainless-steel", amount = 10},
-      {type = "item", name = "sp-zinc-plate", amount = 6},
-      {type = "item", name = "sp-nickel-ingot", amount = 5},
-    },
-    results = {
-      {type = "item", name = "sp-material-science-pack-2", amount = 5}
     }
   },
   {

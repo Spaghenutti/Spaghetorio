@@ -389,7 +389,7 @@ util.recipe.change_recipe_ingredients("express-transport-belt",
   {
     {type = "item", name = "sp-titanium-frame", amount = 2},
     {type = "item", name = "electric-engine-unit", amount = 2},
-    {type = "item", name = "sp-electromagnet", amount = 2},
+    {type = "item", name = "sp-vibration-dampener", amount = 2},
     {type = "item", name = "sp-gearbox", amount = 2},
     {type = "item", name = "advanced-circuit", amount = 1},
     {type = "fluid", name = "lubricant", amount = 25}
