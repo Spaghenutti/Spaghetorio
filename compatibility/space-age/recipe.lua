@@ -72,9 +72,12 @@ util.recipe.change_recipe_ingredients("carbon-fiber",
     {type = "item", name = "plastic-bar", amount = 1},
     {type = "item", name = "carbon", amount = 4},
     {type = "fluid", name = "sp-epoxy", amount = 5},
-    {type = "fluid", name = "sp-nitric-acid", amount = 50}
+    {type = "fluid", name = "sp-hypochlorus-acid", amount = 10}
   },
   4)
+data.raw.recipe["carbon-fiber"].results = {
+  {type = "item", name = "carbon-fiber", amount = 2},
+}
 
 data.raw.recipe["wood-processing"].category = "sp-kr-growing"
 data.raw.recipe["wood-processing"].subgroup = "processed-resource"
@@ -148,6 +151,7 @@ util.recipe.change_recipe_ingredients("turbo-transport-belt",
   {
     {type = "item", name = "processing-unit", amount = 1},
     {type = "item", name = "sp-big-electric-engine-unit", amount = 1},
+    {type = "item", name = "sp-electromagnetic-brake", amount = 2},
     {type = "item", name = "sp-ball-bearing", amount = 2},
     {type = "item", name = "sp-aluminum-brass", amount = 2},
     {type = "item", name = "low-density-structure", amount = 1}

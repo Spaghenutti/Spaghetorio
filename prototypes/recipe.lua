@@ -3527,7 +3527,7 @@ data:extend({
     energy_required = 1,
     ingredients = {
       {type = "fluid", name = "water", amount = 10},
-      {type = "fluid", name = "sp-allyl-chloride", amount = 6}
+      {type = "fluid", name = "sp-epichlorohydrin", amount = 6}
     },
     results = {
       {type = "fluid", name = "sp-glycerin", amount = 6},
@@ -3541,7 +3541,7 @@ data:extend({
     enabled = false,
     energy_required = 1,
     ingredients = {
-      {type = "fluid", name = "calcite", amount = 1},
+      {type = "item", name = "calcite", amount = 1},
       {type = "fluid", name = "sp-glycerin", amount = 10},
     },
     results = {
@@ -3777,27 +3777,6 @@ data:extend({
     },
     results = {
       {type = "fluid", name = "sp-drilling-fluid", amount = 50}
-    },
-    -- crafting_machine_tint = {
-    --   primary = {r = 0.3, g = 0.3, b = 0.3, a = 1.000},
-    --   secondary = {r = 0.1, g = 0.1, b = 0.1, a = 1.000},
-    --   tertiary = {r = 0.0, g = 0.0, b = 0.0, a = 1.000},
-    --   quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
-    -- }
-  },
-  {
-    type = "recipe",
-    name = "sp-calcium-hydroxide-solution",  -- #ForRegEx# - recipe
-    category = "sp-kr-fluid-filtration",
-    enabled = false,
-    energy_required = 6,
-    ingredients = {
-      {type = "item", name = "sp-barium-sulfide", amount = 3},
-      {type = "fluid", name = "sp-oxygen", amount = 5},
-      {type = "fluid", name = "water", amount = 50},
-    },
-    results = {
-      {type = "fluid", name = "sp-calcium-hydroxide-solution", amount = 50}
     },
     -- crafting_machine_tint = {
     --   primary = {r = 0.3, g = 0.3, b = 0.3, a = 1.000},
@@ -8311,6 +8290,7 @@ data:extend({
       {type = "item", name = "sp-stainless-steel", amount = 12},
       {type = "item", name = "refined-concrete", amount = 10},
       {type = "item", name = "sp-anodized-aluminum", amount = 15},
+      {type = "item", name = "sp-servo-motor", amount = 10},
       {type = "item", name = "advanced-circuit", amount = 20},
       {type = "item", name = "sp-actuator", amount = 6}
     },

@@ -660,6 +660,7 @@ data.raw.technology["belt-immunity-equipment"].unit.ingredients = {
 
 data.raw.technology["robotics"].prerequisites = {
   "sp-composites",
+  "sp-titanium-machining",
 }
 data.raw.technology["robotics"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},

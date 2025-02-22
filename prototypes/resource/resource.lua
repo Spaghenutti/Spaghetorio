@@ -298,6 +298,8 @@ data:extend({
       mining_time = 2,
       map_color = {r=1.0, g=1.0, b=0.8},
       mining_visualisation_tint = {r=1.0, g=1.0, b=0.8, a=1.0},
+      fluid_amount = 4,
+      required_fluid = "sp-hydrogen-chloride"
     },
     {
       base_density = 1,
@@ -495,6 +497,8 @@ data:extend({
       mining_time = 2,
       map_color = {r=0.4, g=0.3, b=0.3},
       mining_visualisation_tint = {r=0.6, g=0.45, b=0.45, a=1.0},
+      fluid_amount = 2,
+      required_fluid = "sp-calcium-hydroxide-solution"
     },
     {
       base_density = 4.5,

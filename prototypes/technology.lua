@@ -634,18 +634,20 @@ data:extend({
       },
     },
     prerequisites = {
-      "production-science-pack"
+      "sp-alkaline-solutions"
     },
     unit =
     {
-      count = 300,
+      count = 150,
       ingredients = {
         {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
+        {"logistic-science-pack", 1},
         {"chemical-science-pack", 1},
+        {"sp-electronic-science-pack-1", 1},
         {"sp-material-science-pack-1", 1},
-        {"production-science-pack", 1},
-        {"sp-geological-science-pack-1", 1}
+        {"sp-geological-science-pack-1", 1},
+        {"metallurgic-science-pack", 1},
+        {"electromagnetic-science-pack", 1}
       },
       time = 30
     },
@@ -668,17 +670,20 @@ data:extend({
       },
     },
     prerequisites = {
-      "sp-material-science-pack-2"
+      "sp-titanium-processing"
     },
     unit =
     {
-      count = 500,
+      count = 250,
       ingredients = {
         {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
+        {"logistic-science-pack", 1},
         {"chemical-science-pack", 1},
-        {"production-science-pack", 1},
-        {"sp-material-science-pack-2", 1}
+        {"sp-electronic-science-pack-1", 1},
+        {"sp-material-science-pack-1", 1},
+        {"sp-geological-science-pack-1", 1},
+        {"metallurgic-science-pack", 1},
+        {"electromagnetic-science-pack", 1}
       },
       time = 30
     },
@@ -1047,7 +1052,8 @@ data:extend({
       }
     },
     prerequisites = {
-      "sp-alkaline-solutions"
+      "sp-alkaline-solutions",
+      "sp-material-science-pack-2"
     },
     unit =
     {
@@ -1432,6 +1438,10 @@ data:extend({
         type = "unlock-recipe",
         recipe = "sp-nimonic"
       },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-titanium-aluminum-vanadium",
+      }
     },
     prerequisites = {
       "sp-titanium-machining",
@@ -2128,6 +2138,10 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "sp-potassium-hydroxide-solution",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-potassium-hydroxide",
       }
     },
     prerequisites = {
@@ -3407,17 +3421,19 @@ data:extend({
         recipe = "sp-epoxy"
       }
     },
-    prerequisites = {"sp-chemical-science-pack-2"},
+    prerequisites = {"sp-glycerin"},
     unit =
     {
-      count = 500,
+      count = 200,
       ingredients = {
         {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1},
-        {"sp-electronic-science-pack-2", 1},
-        {"sp-material-science-pack-2", 1},
-        {"production-science-pack", 1}
+        {"logistic-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"sp-electronic-science-pack-1", 1},
+        {"sp-material-science-pack-1", 1},
+        {"sp-geological-science-pack-1", 1},
+        {"metallurgic-science-pack", 1},
+        {"electromagnetic-science-pack", 1}
       },
       time = 30
     },
@@ -4383,6 +4399,76 @@ data:extend({
         {"sp-geological-science-pack-2", 1},
         {"sp-electronic-science-pack-2", 1},
         {"utility-science-pack", 1}
+      },
+      time = 30
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-big-electric-engine-unit",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghetorio__/graphics/hr-icons/big-electric-engine.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-big-electric-engine-unit"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-vacuum-pump"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-electromagnetic-brake"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-magnetic-coupling"
+      }
+    },
+    prerequisites = {
+      "production-science-pack"
+    },
+    unit =
+    {
+      count = 100,
+      ingredients = {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"sp-material-science-pack-1", 1},
+        {"sp-geological-science-pack-1", 1}
+      },
+      time = 30
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-high-pressure-fan",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghetorio__/graphics/hr-icons/high-pressure-fan.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-high-pressure-fan"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-high-power-solenoid"
+      }
+    },
+    prerequisites = {
+      "sp-turbine-parts"
+    },
+    unit =
+    {
+      count = 100,
+      ingredients = {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"sp-material-science-pack-1", 1},
+        {"sp-geological-science-pack-1", 1}
       },
       time = 30
     },
@@ -7685,6 +7771,10 @@ data:extend({
         type = "unlock-recipe",
         recipe = "sp-automation-science-pack-2"
       },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-biusart-lab"
+      },
     },
     prerequisites = {
       "lamp",
@@ -7720,8 +7810,7 @@ data:extend({
       },
     },
     prerequisites = {
-      "sp-automation-science-pack-2",
-      "sp-servo-motor"
+      "sp-titanium-machining"
     },
     unit =
     {
@@ -7731,8 +7820,10 @@ data:extend({
         {"logistic-science-pack", 1},
         {"chemical-science-pack", 1},
         {"sp-electronic-science-pack-1", 1},
+        {"sp-material-science-pack-1", 1},
         {"sp-geological-science-pack-1", 1},
-        {"sp-material-science-pack-1", 1}
+        {"metallurgic-science-pack", 1},
+        {"electromagnetic-science-pack", 1}
       },
       time = 30
     },
@@ -9308,10 +9399,6 @@ data:extend({
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-titanium-aluminum-vanadium",
-      },
-      {
-        type = "unlock-recipe",
         recipe = "sp-potassium-permanganate-solution",
       },
       {
@@ -9324,19 +9411,11 @@ data:extend({
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-potassium-hydroxide",
-      },
-      {
-        type = "unlock-recipe",
         recipe = "sp-potassium-cyanide",
       },
       {
         type = "unlock-recipe",
         recipe = "sp-tungsten-steel",
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-big-electric-engine-unit",
       },
       {
         type = "unlock-recipe",
@@ -9372,19 +9451,7 @@ data:extend({
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-vacuum-pump",
-      },
-      {
-        type = "unlock-recipe",
         recipe = "sp-plasmacutter",
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-magnetic-coupling",
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-high-power-solenoid",
       },
       {
         type = "unlock-recipe",
@@ -9396,15 +9463,7 @@ data:extend({
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-electromagnetic-brake",
-      },
-      {
-        type = "unlock-recipe",
         recipe = "sp-catalytic-converter",
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-high-pressure-fan",
       },
       -- TODO: add recipe chain for
       -- {

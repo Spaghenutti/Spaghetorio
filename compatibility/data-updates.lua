@@ -23,6 +23,24 @@ end
 -- Overwrite technology change by Everything on nauvis
 table.insert(data.raw.technology["agriculture"].prerequisites, "sp-automation-science-pack-2")
 
-data.raw.technology["heating-tower"].prerequisites = {"lithium-processing"}
+data.raw.technology["heating-tower"].effects =
+{
+  {
+    type = "unlock-recipe",
+    recipe = "heating-tower"
+  },
+  {
+    type = "unlock-recipe",
+    recipe = "heat-pipe"
+  },
+  {
+    type = "unlock-recipe",
+    recipe = "heat-exchanger"
+  }
+}
+data.raw.technology["heating-tower"].prerequisites = {
+  "lithium-processing",
+  "sp-titanium-nitride"
+}
 
 data.raw.technology["lithium-processing"].prerequisites = {"metallurgic-science-pack", "sp-alkaline-solutions"}
