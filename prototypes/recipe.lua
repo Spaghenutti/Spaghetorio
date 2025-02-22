@@ -692,166 +692,6 @@ data:extend({
   ------------------------------------------------------------------------------
   {
     type = "recipe",
-    name = "sp-invar",  -- #ForRegEx# - recipe
-    category = "intermediate-smelting",
-    enabled = false,
-    energy_required = 12,
-    ingredients = {
-      {type = "item", name = "iron-plate", amount = 3},
-      {type = "item", name = "sp-nickel-ingot", amount = 2}
-    },
-    results = {
-      {type = "item", name = "sp-invar", amount = 5}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-duralumin",  -- #ForRegEx# - recipe
-    category = "intermediate-smelting",
-    enabled = false,
-    energy_required = 16,
-    ingredients = {
-      {type = "item", name = "sp-aluminum-sheet", amount = 8},
-      {type = "item", name = "copper-plate", amount = 2},
-      {type = "item", name = "sp-zirconium-rod", amount = 1}
-    },
-    results = {
-      {type = "item", name = "sp-duralumin", amount = 10}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-aluminum-brass",  -- #ForRegEx# - recipe
-    category = "intermediate-smelting",
-    enabled = false,
-    energy_required = 16,
-    ingredients = {
-      {type = "item", name = "sp-aluminum-sheet", amount = 7},
-      {type = "item", name = "sp-zinc-plate", amount = 2},
-      {type = "item", name = "sp-magnesium-slab", amount = 1},
-      {type = "item", name = "copper-plate", amount = 1}
-    },
-    results = {
-      {type = "item", name = "sp-aluminum-brass", amount = 12}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-inconel",  -- #ForRegEx# - recipe
-    category = "intermediate-smelting",
-    enabled = false,
-    energy_required = 16,
-    ingredients = {
-      {type = "item", name = "sp-nickel-ingot", amount = 7},
-      {type = "item", name = "sp-chromium-plate", amount = 2},
-      {type = "item", name = "iron-plate", amount = 1}
-    },
-    results = {
-      {type = "item", name = "sp-inconel", amount = 10}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-TiAlSn",  -- #ForRegEx# - recipe
-    category = "intermediate-smelting",
-    enabled = false,
-    energy_required = 14,
-    ingredients = {
-      {type = "item", name = "sp-titanium-plate", amount = 8},
-      {type = "item", name = "sp-aluminum-sheet", amount = 2},
-      {type = "item", name = "sp-tin-ingot", amount = 1}
-    },
-    results = {
-      {type = "item", name = "sp-TiAlSn", amount = 10}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-TiNb",  -- #ForRegEx# - recipe
-    category = "intermediate-smelting",
-    enabled = false,
-    energy_required = 8,
-    ingredients = {
-      {type = "item", name = "sp-titanium-plate", amount = 5},
-      {type = "item", name = "sp-niobium-billet", amount = 4}
-    },
-    results = {
-      {type = "item", name = "sp-TiNb", amount = 5}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-nimonic",  -- #ForRegEx# - recipe
-    category = "intermediate-smelting",
-    enabled = false,
-    energy_required = 16,
-    ingredients = {
-      {type = "item", name = "sp-titanium-plate", amount = 3},
-      {type = "item", name = "sp-chromium-plate", amount = 2},
-      {type = "item", name = "sp-nickel-ingot", amount = 5}
-    },
-    results = {
-      {type = "item", name = "sp-nimonic", amount = 10}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-nitenol",  -- #ForRegEx# - recipe
-    category = "intermediate-smelting",
-    enabled = false,
-    energy_required = 8,
-    ingredients = {
-      {type = "item", name = "sp-titanium-ingot", amount = 3},
-      {type = "item", name = "sp-nickel-ingot", amount = 2}
-    },
-    results = {
-      {type = "item", name = "sp-nitenol", amount = 5}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-niobium-steel",  -- #ForRegEx# - recipe
-    category = "intermediate-smelting",
-    enabled = false,
-    energy_required = 24,
-    ingredients = {
-      {type = "item", name = "steel-plate", amount = 20},
-      {type = "item", name = "sp-niobium-billet", amount = 1}
-    },
-    results = {
-      {type = "item", name = "sp-niobium-steel", amount = 20}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-zircaloy",  -- #ForRegEx# - recipe
-    category = "intermediate-smelting",
-    enabled = false,
-    energy_required = 30,
-    ingredients = {
-      {type = "item", name = "sp-zirconium-rod", amount = 20},
-      {type = "item", name = "sp-tin-ingot", amount = 1}
-    },
-    results = {
-      {type = "item", name = "sp-zircaloy", amount = 20}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-niobium-tin",  -- #ForRegEx# - recipe
-    category = "intermediate-smelting",
-    enabled = false,
-    energy_required = 4,
-    ingredients = {
-      {type = "item", name = "sp-tin-ingot", amount = 1},
-      {type = "item", name = "sp-niobium-billet", amount = 2}
-    },
-    results = {
-      {type = "item", name = "sp-niobium-tin", amount = 2}
-    }
-  },
-  {
-    type = "recipe",
     name = "sp-silver-palladium",  -- #ForRegEx# - recipe
     icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/icons/silver.png", 64, nil,
                                         "__Spaghetorio__/graphics/icons/palladium.png", 64, nil),
@@ -1013,189 +853,6 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-antimony-pillet", amount = 20}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-copper-antimony",  -- #ForRegEx# - recipe
-    category = "intermediate-smelting",
-    enabled = false,
-    energy_required = 8,
-    ingredients = {
-      {type = "item", name = "copper-plate", amount = 4},
-      {type = "item", name = "sp-antimony-pillet", amount = 3},
-    },
-    results = {
-      {type = "item", name = "sp-copper-antimony", amount = 4}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-nickel-cobalt",  -- #ForRegEx# - recipe
-    category = "intermediate-smelting",
-    enabled = false,
-    energy_required = 12,
-    ingredients = {
-      {type = "item", name = "sp-nickel-ingot", amount = 3},
-      {type = "item", name = "sp-cobalt-billet", amount = 7},
-    },
-    results = {
-      {type = "item", name = "sp-nickel-cobalt", amount = 6}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-waspaloy",  -- #ForRegEx# - recipe
-    category = "intermediate-smelting",
-    enabled = false,
-    energy_required = 16,
-    ingredients = {
-      {type = "item", name = "sp-nickel-ingot", amount = 6},
-      {type = "item", name = "sp-chromium-plate", amount = 2},
-      {type = "item", name = "sp-cobalt-billet", amount = 2},
-    },
-    results = {
-      {type = "item", name = "sp-waspaloy", amount = 6}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-waspaloy",  -- #ForRegEx# - recipe
-    category = "intermediate-smelting",
-    enabled = false,
-    energy_required = 16,
-    ingredients = {
-      {type = "item", name = "sp-nickel-ingot", amount = 6},
-      {type = "item", name = "sp-chromium-plate", amount = 2},
-      {type = "item", name = "sp-cobalt-billet", amount = 2},
-    },
-    results = {
-      {type = "item", name = "sp-waspaloy", amount = 6}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-chromium-cobalt",  -- #ForRegEx# - recipe
-    category = "intermediate-smelting",
-    enabled = false,
-    energy_required = 30,
-    ingredients = {
-      {type = "item", name = "sp-cobalt-billet", amount = 12},
-      {type = "item", name = "sp-chromium-plate", amount = 6},
-      {type = "item", name = "tungsten-plate", amount = 2},
-      {type = "item", name = "sp-molybdenum-pillet", amount = 1},
-      {type = "item", name = "sp-manganese-ingot", amount = 1},
-    },
-    results = {
-      {type = "item", name = "sp-chromium-cobalt", amount = 15}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-elgiloy",  -- #ForRegEx# - recipe
-    category = "intermediate-smelting",
-    enabled = false,
-    energy_required = 50,
-    ingredients = {
-      {type = "item", name = "sp-cobalt-billet", amount = 16},
-      {type = "item", name = "sp-chromium-plate", amount = 8},
-      {type = "item", name = "sp-nickel-ingot", amount = 6},
-      {type = "item", name = "iron-plate", amount = 3},
-      {type = "item", name = "sp-molybdenum-pillet", amount = 2},
-      {type = "item", name = "sp-manganese-ingot", amount = 1},
-    },
-    results = {
-      {type = "item", name = "sp-elgiloy", amount = 24}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-maraging-steel",  -- #ForRegEx# - recipe
-    category = "intermediate-smelting",
-    enabled = false,
-    energy_required = 24,
-    ingredients = {
-      {type = "item", name = "iron-plate", amount = 7},
-      {type = "item", name = "sp-nickel-ingot", amount = 4},
-      {type = "item", name = "sp-cobalt-billet", amount = 2},
-      {type = "item", name = "sp-molybdenum-pillet", amount = 1},
-    },
-    results = {
-      {type = "item", name = "sp-maraging-steel", amount = 10}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-kovar",  -- #ForRegEx# - recipe
-    category = "intermediate-smelting",
-    enabled = false,
-    energy_required = 12,
-    ingredients = {
-      {type = "item", name = "iron-plate", amount = 5},
-      {type = "item", name = "sp-nickel-ingot", amount = 4},
-      {type = "item", name = "sp-cobalt-billet", amount = 3},
-    },
-    results = {
-      {type = "item", name = "sp-kovar", amount = 6}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-titanium-aluminum-vanadium",  -- #ForRegEx# - recipe
-    category = "intermediate-smelting",
-    enabled = false,
-    energy_required = 16,
-    ingredients = {
-      {type = "item", name = "sp-titanium-ingot", amount = 1},
-      {type = "item", name = "sp-aluminum-sheet", amount = 10},
-      {type = "item", name = "sp-vanadium-plate", amount = 4},
-    },
-    results = {
-      {type = "item", name = "sp-titanium-aluminum-vanadium", amount = 6}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-vanadium-aluminum",  -- #ForRegEx# - recipe
-    category = "intermediate-smelting",
-    enabled = false,
-    energy_required = 14,
-    ingredients = {
-      {type = "item", name = "sp-aluminum-sheet", amount = 6},
-      {type = "item", name = "sp-vanadium-plate", amount = 5},
-    },
-    results = {
-      {type = "item", name = "sp-vanadium-aluminum", amount = 6}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-vanadium-steel",  -- #ForRegEx# - recipe
-    category = "intermediate-smelting",
-    enabled = false,
-    energy_required = 14,
-    ingredients = {
-      {type = "item", name = "steel-plate", amount = 10},
-      {type = "item", name = "sp-vanadium-plate", amount = 1},
-    },
-    results = {
-      {type = "item", name = "sp-vanadium-steel", amount = 10}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-tungsten-steel",  -- #ForRegEx# - recipe
-    category = "intermediate-smelting",
-    enabled = false,
-    energy_required = 25,
-    ingredients = {
-      {type = "item", name = "steel-plate", amount = 9},
-      {type = "item", name = "tungsten-plate", amount = 3},
-      {type = "item", name = "sp-vanadium-plate", amount = 1},
-      {type = "item", name = "sp-molybdenum-pillet", amount = 1},
-    },
-    results = {
-      {type = "item", name = "sp-tungsten-steel", amount = 10}
     }
   },
   {
@@ -2032,11 +1689,339 @@ data:extend({
   ------------------------------------------------------------------------------
   {
     type = "recipe",
+    name = "sp-invar",  -- #ForRegEx# - recipe
+    category = "alloy-smelting",
+    enabled = false,
+    energy_required = 12,
+    ingredients = {
+      {type = "item", name = "iron-plate", amount = 3},
+      {type = "item", name = "sp-nickel-ingot", amount = 2}
+    },
+    results = {
+      {type = "item", name = "sp-invar", amount = 5}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-duralumin",  -- #ForRegEx# - recipe
+    category = "alloy-smelting",
+    enabled = false,
+    energy_required = 16,
+    ingredients = {
+      {type = "item", name = "sp-aluminum-sheet", amount = 8},
+      {type = "item", name = "copper-plate", amount = 2},
+      {type = "item", name = "sp-zirconium-rod", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-duralumin", amount = 10}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-aluminum-brass",  -- #ForRegEx# - recipe
+    category = "alloy-smelting",
+    enabled = false,
+    energy_required = 16,
+    ingredients = {
+      {type = "item", name = "sp-aluminum-sheet", amount = 7},
+      {type = "item", name = "sp-zinc-plate", amount = 2},
+      {type = "item", name = "sp-magnesium-slab", amount = 1},
+      {type = "item", name = "copper-plate", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-aluminum-brass", amount = 12}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-inconel",  -- #ForRegEx# - recipe
+    category = "alloy-smelting",
+    enabled = false,
+    energy_required = 16,
+    ingredients = {
+      {type = "item", name = "sp-nickel-ingot", amount = 7},
+      {type = "item", name = "sp-chromium-plate", amount = 2},
+      {type = "item", name = "iron-plate", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-inconel", amount = 10}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-TiAlSn",  -- #ForRegEx# - recipe
+    category = "alloy-smelting",
+    enabled = false,
+    energy_required = 14,
+    ingredients = {
+      {type = "item", name = "sp-titanium-plate", amount = 8},
+      {type = "item", name = "sp-aluminum-sheet", amount = 2},
+      {type = "item", name = "sp-tin-ingot", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-TiAlSn", amount = 10}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-TiNb",  -- #ForRegEx# - recipe
+    category = "alloy-smelting",
+    enabled = false,
+    energy_required = 8,
+    ingredients = {
+      {type = "item", name = "sp-titanium-plate", amount = 5},
+      {type = "item", name = "sp-niobium-billet", amount = 4}
+    },
+    results = {
+      {type = "item", name = "sp-TiNb", amount = 5}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-nimonic",  -- #ForRegEx# - recipe
+    category = "alloy-smelting",
+    enabled = false,
+    energy_required = 16,
+    ingredients = {
+      {type = "item", name = "sp-titanium-plate", amount = 3},
+      {type = "item", name = "sp-chromium-plate", amount = 2},
+      {type = "item", name = "sp-nickel-ingot", amount = 5}
+    },
+    results = {
+      {type = "item", name = "sp-nimonic", amount = 10}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-nitenol",  -- #ForRegEx# - recipe
+    category = "alloy-smelting",
+    enabled = false,
+    energy_required = 8,
+    ingredients = {
+      {type = "item", name = "sp-titanium-ingot", amount = 3},
+      {type = "item", name = "sp-nickel-ingot", amount = 2}
+    },
+    results = {
+      {type = "item", name = "sp-nitenol", amount = 5}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-niobium-steel",  -- #ForRegEx# - recipe
+    category = "alloy-smelting",
+    enabled = false,
+    energy_required = 24,
+    ingredients = {
+      {type = "item", name = "steel-plate", amount = 20},
+      {type = "item", name = "sp-niobium-billet", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-niobium-steel", amount = 20}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-zircaloy",  -- #ForRegEx# - recipe
+    category = "alloy-smelting",
+    enabled = false,
+    energy_required = 30,
+    ingredients = {
+      {type = "item", name = "sp-zirconium-rod", amount = 20},
+      {type = "item", name = "sp-tin-ingot", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-zircaloy", amount = 20}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-niobium-tin",  -- #ForRegEx# - recipe
+    category = "alloy-smelting",
+    enabled = false,
+    energy_required = 4,
+    ingredients = {
+      {type = "item", name = "sp-tin-ingot", amount = 1},
+      {type = "item", name = "sp-niobium-billet", amount = 2}
+    },
+    results = {
+      {type = "item", name = "sp-niobium-tin", amount = 2}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-copper-antimony",  -- #ForRegEx# - recipe
+    category = "alloy-smelting",
+    enabled = false,
+    energy_required = 8,
+    ingredients = {
+      {type = "item", name = "copper-plate", amount = 4},
+      {type = "item", name = "sp-antimony-pillet", amount = 3},
+    },
+    results = {
+      {type = "item", name = "sp-copper-antimony", amount = 4}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-nickel-cobalt",  -- #ForRegEx# - recipe
+    category = "alloy-smelting",
+    enabled = false,
+    energy_required = 12,
+    ingredients = {
+      {type = "item", name = "sp-nickel-ingot", amount = 3},
+      {type = "item", name = "sp-cobalt-billet", amount = 7},
+    },
+    results = {
+      {type = "item", name = "sp-nickel-cobalt", amount = 6}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-waspaloy",  -- #ForRegEx# - recipe
+    category = "alloy-smelting",
+    enabled = false,
+    energy_required = 16,
+    ingredients = {
+      {type = "item", name = "sp-nickel-ingot", amount = 6},
+      {type = "item", name = "sp-chromium-plate", amount = 2},
+      {type = "item", name = "sp-cobalt-billet", amount = 2},
+    },
+    results = {
+      {type = "item", name = "sp-waspaloy", amount = 6}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-chromium-cobalt",  -- #ForRegEx# - recipe
+    category = "alloy-smelting",
+    enabled = false,
+    energy_required = 30,
+    ingredients = {
+      {type = "item", name = "sp-cobalt-billet", amount = 12},
+      {type = "item", name = "sp-chromium-plate", amount = 6},
+      {type = "item", name = "tungsten-plate", amount = 2},
+      {type = "item", name = "sp-molybdenum-pillet", amount = 1},
+      {type = "item", name = "sp-manganese-ingot", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-chromium-cobalt", amount = 15}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-elgiloy",  -- #ForRegEx# - recipe
+    category = "alloy-smelting",
+    enabled = false,
+    energy_required = 50,
+    ingredients = {
+      {type = "item", name = "sp-cobalt-billet", amount = 16},
+      {type = "item", name = "sp-chromium-plate", amount = 8},
+      {type = "item", name = "sp-nickel-ingot", amount = 6},
+      {type = "item", name = "iron-plate", amount = 3},
+      {type = "item", name = "sp-molybdenum-pillet", amount = 2},
+      {type = "item", name = "sp-manganese-ingot", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-elgiloy", amount = 24}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-maraging-steel",  -- #ForRegEx# - recipe
+    category = "alloy-smelting",
+    enabled = false,
+    energy_required = 24,
+    ingredients = {
+      {type = "item", name = "iron-plate", amount = 7},
+      {type = "item", name = "sp-nickel-ingot", amount = 4},
+      {type = "item", name = "sp-cobalt-billet", amount = 2},
+      {type = "item", name = "sp-molybdenum-pillet", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-maraging-steel", amount = 10}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-kovar",  -- #ForRegEx# - recipe
+    category = "alloy-smelting",
+    enabled = false,
+    energy_required = 12,
+    ingredients = {
+      {type = "item", name = "iron-plate", amount = 5},
+      {type = "item", name = "sp-nickel-ingot", amount = 4},
+      {type = "item", name = "sp-cobalt-billet", amount = 3},
+    },
+    results = {
+      {type = "item", name = "sp-kovar", amount = 6}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-titanium-aluminum-vanadium",  -- #ForRegEx# - recipe
+    category = "alloy-smelting",
+    enabled = false,
+    energy_required = 16,
+    ingredients = {
+      {type = "item", name = "sp-titanium-ingot", amount = 1},
+      {type = "item", name = "sp-aluminum-sheet", amount = 10},
+      {type = "item", name = "sp-vanadium-plate", amount = 4},
+    },
+    results = {
+      {type = "item", name = "sp-titanium-aluminum-vanadium", amount = 6}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-vanadium-aluminum",  -- #ForRegEx# - recipe
+    category = "alloy-smelting",
+    enabled = false,
+    energy_required = 14,
+    ingredients = {
+      {type = "item", name = "sp-aluminum-sheet", amount = 6},
+      {type = "item", name = "sp-vanadium-plate", amount = 5},
+    },
+    results = {
+      {type = "item", name = "sp-vanadium-aluminum", amount = 6}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-vanadium-steel",  -- #ForRegEx# - recipe
+    category = "alloy-smelting",
+    enabled = false,
+    energy_required = 14,
+    ingredients = {
+      {type = "item", name = "steel-plate", amount = 10},
+      {type = "item", name = "sp-vanadium-plate", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-vanadium-steel", amount = 10}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-tungsten-steel",  -- #ForRegEx# - recipe
+    category = "alloy-smelting",
+    enabled = false,
+    energy_required = 25,
+    ingredients = {
+      {type = "item", name = "steel-plate", amount = 9},
+      {type = "item", name = "tungsten-plate", amount = 3},
+      {type = "item", name = "sp-vanadium-plate", amount = 1},
+      {type = "item", name = "sp-molybdenum-pillet", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-tungsten-steel", amount = 10}
+    }
+  },
+  {
+    type = "recipe",
     name = "sp-rare-metals-alloy-from-yttrium",  -- #ForRegEx# - recipe
     icon = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/rare-metals/rare-metals.png",
     icon_size = 64,
     mip_maps = 4,
-    category = "intermediate-smelting",
+    category = "alloy-smelting",
     enabled = false,
     energy_required = 16,
     -- hide_from_player_crafting = true,  -- The player should be able to see at least one of those recipes
@@ -2055,7 +2040,7 @@ data:extend({
     name = "sp-rare-metals-alloy-from-lanthanum",  -- #ForRegEx# - recipe
     icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/krastorio/icons/items-with-variations/rare-metals/rare-metals.png", 64,
                                          "__Spaghetorio__/graphics/icons/lanthanum.png", 64),
-    category = "intermediate-smelting",
+    category = "alloy-smelting",
     enabled = false,
     energy_required = 20,
     hide_from_player_crafting = true,
@@ -2074,7 +2059,7 @@ data:extend({
     name = "sp-rare-metals-alloy-from-cerium",  -- #ForRegEx# - recipe
     icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/krastorio/icons/items-with-variations/rare-metals/rare-metals.png", 64,
                                          "__Spaghetorio__/graphics/icons/cerium.png", 64),
-    category = "intermediate-smelting",
+    category = "alloy-smelting",
     enabled = false,
     energy_required = 30,
     hide_from_player_crafting = true,
@@ -2094,7 +2079,7 @@ data:extend({
     name = "sp-rare-metals-alloy-from-neodymium",  -- #ForRegEx# - recipe
     icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/krastorio/icons/items-with-variations/rare-metals/rare-metals.png", 64,
                                          "__Spaghetorio__/graphics/icons/neodymium.png", 64),
-    category = "intermediate-smelting",
+    category = "alloy-smelting",
     enabled = false,
     energy_required = 24,
     hide_from_player_crafting = true,
@@ -2457,7 +2442,7 @@ data:extend({
   ------------------------------------------------------------------------------
   {
     type = "recipe",
-    name = "sp-hydrogen-chloride",
+    name = "sp-hydrogen-chloride",  -- #ForRegEx# - recipe
     category = "chemistry",
     subgroup = "fluid-recipes",
     energy_required = 1,
@@ -2479,7 +2464,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-liquid-sodium",
+    name = "sp-liquid-sodium",  -- #ForRegEx# - recipe
     category = "chemistry",
     subgroup = "fluid-recipes",
     energy_required = 1,
@@ -3123,7 +3108,7 @@ data:extend({
     name = "sp-ammonium-metavanadate",  -- #ForRegEx# - recipe
     category = "chemistry",
     enabled = false,
-    energy_required = 10,
+    energy_required = 2,
     ingredients = {
       {type = "fluid", name = "sp-vanadium-bearing-solution", amount = 5}
     },
@@ -3457,7 +3442,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-nitric-acid",
+    name = "sp-nitric-acid",  -- #ForRegEx# - recipe
     category = "chemical-staging",
     subgroup = "fluid-recipes",
     energy_required = 5,
@@ -3700,7 +3685,7 @@ data:extend({
   ------------------------------------------------------------------------------
   {
     type = "recipe",
-    name = "sp-salt",
+    name = "sp-salt",  -- #ForRegEx# - recipe
     category = "sp-kr-fluid-filtration",
     energy_required = 90,
     enabled = false,
@@ -3826,7 +3811,7 @@ data:extend({
   ------------------------------------------------------------------------------
   {
     type = "recipe",
-    name = "sp-hydrogen",
+    name = "sp-hydrogen",  -- #ForRegEx# - recipe
     category = "sp-kr-atmosphere-condensation",
     icon = "__Spaghetorio__/graphics/krastorio/icons/fluids/hydrogen.png",
     icon_size = 64,
@@ -3844,7 +3829,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-oxygen",
+    name = "sp-oxygen",  -- #ForRegEx# - recipe
     category = "sp-kr-atmosphere-condensation",
     icon = "__Spaghetorio__/graphics/krastorio/icons/fluids/oxygen.png",
     icon_size = 64,
@@ -3862,7 +3847,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-nitrogen",
+    name = "sp-nitrogen",  -- #ForRegEx# - recipe
     category = "sp-kr-atmosphere-condensation",
     icon = "__Spaghetorio__/graphics/krastorio/icons/fluids/nitrogen.png",
     icon_size = 64,
@@ -3880,7 +3865,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-water-from-atmosphere",
+    name = "sp-water-from-atmosphere",  -- #ForRegEx# - recipe
     category = "sp-kr-atmosphere-condensation",
     icon = "__Spaghetorio__/graphics/krastorio/icons/fluids/water.png",
     icon_size = 64,
@@ -3965,7 +3950,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-crushing-coal",
+    name = "sp-crushing-coal",  -- #ForRegEx# - recipe
     icon = "__Spaghetorio__/graphics/crushing/crushing-coal.png",
     icon_size = 256,
     category = "crushing",
@@ -3982,7 +3967,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-crushing-coke",
+    name = "sp-crushing-coke",  -- #ForRegEx# - recipe
     icon = "__Spaghetorio__/graphics/crushing/crushing-coke.png",
     icon_size = 256,
     category = "crushing",
@@ -3998,7 +3983,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-crushing-copper-ore",
+    name = "sp-crushing-copper-ore",  -- #ForRegEx# - recipe
     icon = "__Spaghetorio__/graphics/crushing/crushing-copper-ore.png",
     icon_size = 256,
     mip_maps = 4,
@@ -4016,7 +4001,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-crushing-iron-ore",
+    name = "sp-crushing-iron-ore",  -- #ForRegEx# - recipe
     icon = "__Spaghetorio__/graphics/crushing/crushing-iron-ore.png",
     icon_size = 256,
     mip_maps = 4,
@@ -4620,7 +4605,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-kr-water-separation",
+    name = "sp-kr-water-separation",  -- #ForRegEx# - recipe
     category = "sp-kr-electrolysis",
     icon = "__Spaghetorio__/graphics/krastorio/icons/recipes/water-separation.png",
     icon_size = 128,
@@ -4643,7 +4628,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-heavy-water",
+    name = "sp-heavy-water",  -- #ForRegEx# - recipe
     category = "sp-kr-electrolysis",
     energy_required = 120,
     enabled = false,
@@ -7861,7 +7846,7 @@ data:extend({
   ------------------------------------------------------------------------------
   -- {
   --   type = "recipe",
-  --   name = "sp-kr-black-reinforced-plate",
+  --   name = "sp-kr-black-reinforced-plate",  -- #ForRegEx# - recipe
   --   energy_required = 5,
   --   enabled = false,
   --   ingredients = {
@@ -12547,7 +12532,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-landfill-from-sand",
+    name = "sp-landfill-from-sand",  -- #ForRegEx# - recipe
     icons = util.icon.overlay_two_small_icons("__base__/graphics/icons/landfill.png", 64,
                                               "__base__/graphics/icons/stone.png", 64,
                                               "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/sand/sand.png", 64),
@@ -12565,7 +12550,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-stone-brick-from-sand",
+    name = "sp-stone-brick-from-sand",  -- #ForRegEx# - recipe
     icons = util.icon.overlay_small_icon("__base__/graphics/icons/stone-brick.png", 64,
                                          "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/sand/sand.png", 64),
     category = "intermediate-smelting",

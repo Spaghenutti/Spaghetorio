@@ -55,6 +55,8 @@ def get_sections(object_type: str) -> List[str]:
             return ["entity-name"]
         case "fluid":
             return ["fluid-name"]
+        case "item-group":
+            return ["item-group-name"]
         case "item" | "tool":
             return ["item-name"]
         case "recipe":
@@ -113,8 +115,9 @@ def update_locale() -> None:
     they do not exist
     """
     extend_locale(parse_lua(constants.AUTOPLACE_CONTROL_PATH))
-    extend_locale(parse_lua(constants.ITEMS_PATH))
     extend_locale(parse_lua(constants.FLUID_PATH))
+    extend_locale(parse_lua(constants.ITEM_GROUPS_PATH))
+    extend_locale(parse_lua(constants.ITEMS_PATH))
     extend_locale(parse_lua(constants.RECIPES_PATH))
     extend_locale(parse_lua(constants.ROCKET_SILO_PATH))
     extend_locale(parse_lua(constants.TECHNOLOGIES_PATH))

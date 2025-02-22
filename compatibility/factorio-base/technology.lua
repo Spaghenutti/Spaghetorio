@@ -1021,7 +1021,9 @@ data.raw.technology["military-4"].unit.ingredients = {
   {"utility-science-pack", 1}
 }
 
-data.raw.technology["radar"].unit.prerequisites = {"sp-steel-procesing"}
+data.raw.technology["radar"].prerequisites = {
+  "sp-kr-automation-core"
+}
 
 data.raw.technology["gate"].unit.ingredients = {
   {"automation-science-pack", 1},

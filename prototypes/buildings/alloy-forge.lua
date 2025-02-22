@@ -11,7 +11,7 @@ local sounds = require("__base__/prototypes/entity/sounds")
 -- })
 
 local graphics_frame_count = 120
-local graphics_animation_speed = 0.2
+local graphics_animation_speed = 0.06
 local graphics_shift = {0, -0.4}
 local graphics_scale = 0.5
 local graphics_set = {
@@ -170,7 +170,7 @@ data:extend({
       "metallurgy-or-assembling",
       "alloy-smelting"
     },
-    crafting_speed = 3,
+    crafting_speed = 10,
     energy_source =
     {
       type = "electric",

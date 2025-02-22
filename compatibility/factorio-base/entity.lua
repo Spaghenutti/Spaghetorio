@@ -67,6 +67,9 @@ data.raw.item["pumpjack"].stack_size = 50
 data.raw.item["oil-refinery"].stack_size = 50
 data.raw.item["train-stop"].stack_size = 50
 
+-- MARK: change storage capacities
+data.raw["storage-tank"]["storage-tank"].fluid_box.volume = 50000
+
 -- MARK: change recipe subgroups
 data.raw.recipe["nuclear-fuel-reprocessing"].subgroup = "radioactive-resource"
 data.raw.recipe["uranium-processing"].subgroup = "radioactive-resource"
