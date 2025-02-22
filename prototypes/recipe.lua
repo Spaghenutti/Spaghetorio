@@ -4560,7 +4560,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-kr-water-electrolysis",
+    name = "sp-kr-water-electrolysis",  -- #ForRegEx# - recipe
     category = "sp-kr-electrolysis",
     icon = "__Spaghetorio__/graphics/krastorio/icons/recipes/water-electrolysis.png",
     icon_size = 128,
