@@ -3,6 +3,8 @@ Version: 0.3.1
 Date: 2025-02-20
   Bugfixes:
     - Fixed some missing locale
+    - Fixed storage volume of tanks
+    - Radar is now unlocked after automation core
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.0
 Date: 2025-02-20

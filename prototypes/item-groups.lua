@@ -7,7 +7,7 @@ data:extend({
   ------------------------------------------------------------------------------
   {
     type = "item-group",
-    name = "resources",
+    name = "sp-resources",  -- #ForRegEx# - item-group
     order = "a",
     icon =  "__Spaghetorio__/graphics/icons/zircon.png",
     icon_size = 64,
@@ -15,79 +15,79 @@ data:extend({
   {
     type = "item-subgroup",
     name = "raw-resource",
-    group = "resources",
+    group = "sp-resources",
     order = "a"
   },
   {
     type = "item-subgroup",
     name = "casting-raw-resource",
-    group = "resources",
+    group = "sp-resources",
     order = "a-b-casting"
   },
   {
     type = "item-subgroup",
     name = "enriched-resource-from-acrocrystal",
-    group = "resources",
+    group = "sp-resources",
     order = "a-z-acrocrystal"
   },
   {
     type = "item-subgroup",
     name = "crushed-resource",
-    group = "resources",
+    group = "sp-resources",
     order = "b"
   },
   {
     type = "item-subgroup",
     name = "crushed-resource-recipe",
-    group = "resources",
+    group = "sp-resources",
     order = "b-recipe"
   },
   {
     type = "item-subgroup",
     name = "enriched-resource",
-    group = "resources",
+    group = "sp-resources",
     order = "c"
   },
   {
     type = "item-subgroup",
     name = "enriched-resource-recipe",  -- Corresponds to category "enriching-raw-resource"
-    group = "resources",
+    group = "sp-resources",
     order = "c-b"
   },
   {
     type = "item-subgroup",
     name = "enriched-crushed-resource-recipe",  -- Corresponds to category "enriching-crushed-resource"
-    group = "resources",
+    group = "sp-resources",
     order = "c-c"
   },
   {
     type = "item-subgroup",
     name = "raw-resource-from-acromatter",
-    group = "resources",
+    group = "sp-resources",
     order = "c-z-acromatter"
   },
   {
     type = "item-subgroup",
     name = "processed-resource",
-    group = "resources",
+    group = "sp-resources",
     order = "d"
   },
   {
     type = "item-subgroup",
     name = "processed-resource-from-acrovoid",
-    group = "resources",
+    group = "sp-resources",
     order = "d-z-acrovoid"
   },
   {
     type = "item-subgroup",
     name = "radioactive-resource",
-    group = "resources",
+    group = "sp-resources",
     order = "e"
   },
   {
     type = "item-subgroup",
     name = "alien-processed-resource",
-    group = "resources",
+    group = "sp-resources",
     order = "f"
   },
   ------------------------------------------------------------------------------
@@ -95,7 +95,7 @@ data:extend({
   ------------------------------------------------------------------------------
   {
     type = "item-group",
-    name = "materials",
+    name = "sp-materials",  -- #ForRegEx# - item-group
     order = "b",
     icon = "__space-age__/graphics/technology/tungsten-steel.png",
     icon_size = 256,
@@ -103,43 +103,43 @@ data:extend({
   {
     type = "item-subgroup",
     name = "raw-material",
-    group = "materials",
+    group = "sp-materials",
     order = "e"
   },
   {
     type = "item-subgroup",
     name = "casting-raw-material",
-    group = "materials",
+    group = "sp-materials",
     order = "e-b-casting"
   },
   {
     type = "item-subgroup",
     name = "alloy",
-    group = "materials",
+    group = "sp-materials",
     order = "f"
   },
   {
     type = "item-subgroup",
     name = "chemical-product",
-    group = "materials",
+    group = "sp-materials",
     order = "g"
   },
   {
     type = "item-subgroup",
     name = "advanced-raw-material",
-    group = "materials",
+    group = "sp-materials",
     order = "h"
   },
   {
     type = "item-subgroup",
     name = "alien-compound",
-    group = "materials",
+    group = "sp-materials",
     order = "j"
   },
   {
     type = "item-subgroup",
     name = "sp-acroproduct",
-    group = "materials",
+    group = "sp-materials",
     order = "k"
   },
   ------------------------------------------------------------------------------
@@ -240,7 +240,7 @@ data:extend({
   ------------------------------------------------------------------------------
   {
     type = "item-group",
-    name = "science-products",
+    name = "sp-science-products",  -- #ForRegEx# - item-group
     order = "e",
     icon = "__base__/graphics/icons/automation-science-pack.png",
     icon_size = 64,
@@ -249,67 +249,67 @@ data:extend({
   {
     type = "item-subgroup",
     name = "science-pack",  -- vanilla subgroup
-    group = "science-products",
+    group = "sp-science-products",
     order = "a"
   },
   {
     type = "item-subgroup",
     name = "science-item",
-    group = "science-products",
+    group = "sp-science-products",
     order = "b"
   },
   {
     type = "item-subgroup",
     name = "basic-science",
-    group = "science-products",
+    group = "sp-science-products",
     order = "d"
   },
   {
     type = "item-subgroup",
     name = "intermediate-science",
-    group = "science-products",
+    group = "sp-science-products",
     order = "e"
   },
   {
     type = "item-subgroup",
     name = "advanced-science",
-    group = "science-products",
+    group = "sp-science-products",
     order = "f"
   },
   {
     type = "item-subgroup",
     name = "futuristic-science",
-    group = "science-products",
+    group = "sp-science-products",
     order = "g"
   },
   {
     type = "item-subgroup",
     name = "sp-acrosphere",
-    group = "science-products",
+    group = "sp-science-products",
     order = "h"
   },
   {
     type = "item-subgroup",
     name = "sp-basic-acrosphere-conversion",
-    group = "science-products",
+    group = "sp-science-products",
     order = "i"
   },
   {
     type = "item-subgroup",
     name = "sp-advanced-acrosphere-conversion",
-    group = "science-products",
+    group = "sp-science-products",
     order = "j"
   },
   {
     type = "item-subgroup",
     name = "sp-acrosphere-corrupted",
-    group = "science-products",
+    group = "sp-science-products",
     order = "k"
   },
   {
     type = "item-subgroup",
     name = "sp-crushing-acrosphere-corrupted",
-    group = "resources",
+    group = "sp-resources",
     order = "l-crushing"
   },
   ------------------------------------------------------------------------------

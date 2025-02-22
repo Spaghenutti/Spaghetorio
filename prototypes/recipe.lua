@@ -2457,7 +2457,7 @@ data:extend({
   ------------------------------------------------------------------------------
   {
     type = "recipe",
-    name = "sp-hydrogen-chloride",
+    name = "sp-hydrogen-chloride",  -- #ForRegEx# - recipe
     category = "chemistry",
     subgroup = "fluid-recipes",
     energy_required = 1,
@@ -2479,7 +2479,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-liquid-sodium",
+    name = "sp-liquid-sodium",  -- #ForRegEx# - recipe
     category = "chemistry",
     subgroup = "fluid-recipes",
     energy_required = 1,
@@ -3457,7 +3457,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-nitric-acid",
+    name = "sp-nitric-acid",  -- #ForRegEx# - recipe
     category = "chemical-staging",
     subgroup = "fluid-recipes",
     energy_required = 5,
@@ -3700,7 +3700,7 @@ data:extend({
   ------------------------------------------------------------------------------
   {
     type = "recipe",
-    name = "sp-salt",
+    name = "sp-salt",  -- #ForRegEx# - recipe
     category = "sp-kr-fluid-filtration",
     energy_required = 90,
     enabled = false,
@@ -3826,7 +3826,7 @@ data:extend({
   ------------------------------------------------------------------------------
   {
     type = "recipe",
-    name = "sp-hydrogen",
+    name = "sp-hydrogen",  -- #ForRegEx# - recipe
     category = "sp-kr-atmosphere-condensation",
     icon = "__Spaghetorio__/graphics/krastorio/icons/fluids/hydrogen.png",
     icon_size = 64,
@@ -3844,7 +3844,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-oxygen",
+    name = "sp-oxygen",  -- #ForRegEx# - recipe
     category = "sp-kr-atmosphere-condensation",
     icon = "__Spaghetorio__/graphics/krastorio/icons/fluids/oxygen.png",
     icon_size = 64,
@@ -3862,7 +3862,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-nitrogen",
+    name = "sp-nitrogen",  -- #ForRegEx# - recipe
     category = "sp-kr-atmosphere-condensation",
     icon = "__Spaghetorio__/graphics/krastorio/icons/fluids/nitrogen.png",
     icon_size = 64,
@@ -3880,7 +3880,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-water-from-atmosphere",
+    name = "sp-water-from-atmosphere",  -- #ForRegEx# - recipe
     category = "sp-kr-atmosphere-condensation",
     icon = "__Spaghetorio__/graphics/krastorio/icons/fluids/water.png",
     icon_size = 64,
@@ -3965,7 +3965,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-crushing-coal",
+    name = "sp-crushing-coal",  -- #ForRegEx# - recipe
     icon = "__Spaghetorio__/graphics/crushing/crushing-coal.png",
     icon_size = 256,
     category = "crushing",
@@ -3982,7 +3982,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-crushing-coke",
+    name = "sp-crushing-coke",  -- #ForRegEx# - recipe
     icon = "__Spaghetorio__/graphics/crushing/crushing-coke.png",
     icon_size = 256,
     category = "crushing",
@@ -3998,7 +3998,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-crushing-copper-ore",
+    name = "sp-crushing-copper-ore",  -- #ForRegEx# - recipe
     icon = "__Spaghetorio__/graphics/crushing/crushing-copper-ore.png",
     icon_size = 256,
     mip_maps = 4,
@@ -4016,7 +4016,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-crushing-iron-ore",
+    name = "sp-crushing-iron-ore",  -- #ForRegEx# - recipe
     icon = "__Spaghetorio__/graphics/crushing/crushing-iron-ore.png",
     icon_size = 256,
     mip_maps = 4,
@@ -4620,7 +4620,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-kr-water-separation",
+    name = "sp-kr-water-separation",  -- #ForRegEx# - recipe
     category = "sp-kr-electrolysis",
     icon = "__Spaghetorio__/graphics/krastorio/icons/recipes/water-separation.png",
     icon_size = 128,
@@ -4643,7 +4643,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-heavy-water",
+    name = "sp-heavy-water",  -- #ForRegEx# - recipe
     category = "sp-kr-electrolysis",
     energy_required = 120,
     enabled = false,
@@ -7861,7 +7861,7 @@ data:extend({
   ------------------------------------------------------------------------------
   -- {
   --   type = "recipe",
-  --   name = "sp-kr-black-reinforced-plate",
+  --   name = "sp-kr-black-reinforced-plate",  -- #ForRegEx# - recipe
   --   energy_required = 5,
   --   enabled = false,
   --   ingredients = {
@@ -12547,7 +12547,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-landfill-from-sand",
+    name = "sp-landfill-from-sand",  -- #ForRegEx# - recipe
     icons = util.icon.overlay_two_small_icons("__base__/graphics/icons/landfill.png", 64,
                                               "__base__/graphics/icons/stone.png", 64,
                                               "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/sand/sand.png", 64),
@@ -12565,7 +12565,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-stone-brick-from-sand",
+    name = "sp-stone-brick-from-sand",  -- #ForRegEx# - recipe
     icons = util.icon.overlay_small_icon("__base__/graphics/icons/stone-brick.png", 64,
                                          "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/sand/sand.png", 64),
     category = "intermediate-smelting",

@@ -19,7 +19,7 @@ data:extend({
     selection_box = {{-2.5, -2.5}, {2.5, 2.5}},
     fluid_box = {
       base_area = 2000,
-      volume = 1000,
+      volume = 500000,
       pipe_covers = pipecoverspictures(),
       pipe_connections = {
         {direction = defines.direction.west, position = {-2, -1}},
