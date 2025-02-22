@@ -7,6 +7,7 @@ Date: 2025-02-20
     - Radar is now unlocked after automation core
     - Updated some crafting categories
     - Increased crafting speed of some buildings
+    - Burner inserter can now be unlocked in tech tree
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.0
 Date: 2025-02-20

@@ -73,6 +73,10 @@ data:extend({
         type = "unlock-recipe",
         recipe = "iron-chest"
       },
+      {
+        type = "unlock-recipe",
+        recipe = "burner-inserter"
+      },
     },
     prerequisites = {
       "sp-iron-extruding",

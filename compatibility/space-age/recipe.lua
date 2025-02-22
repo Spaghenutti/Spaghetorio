@@ -144,6 +144,38 @@ util.recipe.change_recipe_ingredients("toolbelt-equipment",
 -- MARK: buildings
 --------------------------------------------------------------------------------
 
+util.recipe.change_recipe_ingredients("turbo-transport-belt",
+  {
+    {type = "item", name = "processing-unit", amount = 1},
+    {type = "item", name = "sp-big-electric-engine-unit", amount = 1},
+    {type = "item", name = "sp-ball-bearing", amount = 2},
+    {type = "item", name = "sp-aluminum-brass", amount = 2},
+    {type = "item", name = "low-density-structure", amount = 1}
+  },
+  nil)
+
+util.recipe.change_recipe_ingredients("turbo-underground-belt",
+  {
+    {type = "item", name = "turbo-transport-belt", amount = 16},
+    {type = "item", name = "sp-TiNb", amount = 4},
+    {type = "item", name = "sp-invar", amount = 5},
+    {type = "item", name = "sp-heavy-gearbox", amount = 4},
+    {type = "item", name = "sp-compressor", amount = 2},
+    {type = "item", name = "sp-bolts", amount = 20}
+  },
+  nil)
+
+
+util.recipe.change_recipe_ingredients("turbo-splitter",
+  {
+    {type = "item", name = "turbo-transport-belt", amount = 2},
+    {type = "item", name = "sp-invar", amount = 3},
+    {type = "item", name = "processing-unit", amount = 2},
+    {type = "item", name = "sp-actuator", amount = 4},
+    {type = "item", name = "sp-bolts", amount = 6}
+  },
+  nil)
+
 data.raw.recipe["crusher"].category = "crafting"
 util.recipe.change_recipe_ingredients("crusher",
   {
