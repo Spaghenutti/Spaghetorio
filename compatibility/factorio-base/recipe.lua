@@ -1529,11 +1529,10 @@ util.recipe.change_recipe_ingredients("pump",
 
 util.recipe.change_recipe_ingredients("accumulator",
   {
-    {type = "item", name = "battery", amount = 4},
-    {type = "item", name = "sp-capacitor", amount = 6},
+    {type = "item", name = "battery", amount = 8},
     {type = "item", name = "copper-cable", amount = 10},
     {type = "item", name = "sp-aluminum-frame", amount = 2},
-    {type = "item", name = "sp-transformer", amount = 1},
+    {type = "item", name = "sp-power-supply", amount = 1},
     {type = "item", name = "electronic-circuit", amount = 2}
   },
   6)

@@ -81,7 +81,7 @@ data.raw.technology["gun-turret"].research_trigger =
   count = 15
 }
 
-table.insert(data.raw.technology["bulk-inserter"].prerequisites, "sp-relay")
+table.insert(data.raw.technology["bulk-inserter"].prerequisites, "sp-power-regulation")
 data.raw.technology["bulk-inserter"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},
   {"sp-logistic-science-pack-2", 1},
@@ -583,16 +583,18 @@ data.raw.technology["land-mine"].unit.ingredients = {
 
 -- "accumulator"
 data.raw.technology["electric-energy-accumulators"].prerequisites = {
-  "sp-transformer",
+  "sp-power-regulation",
   "battery"
 }
 data.raw.technology["electric-energy-accumulators"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},
-  {"sp-logistic-science-pack-2", 1},
+  {"logistic-science-pack", 1},
+  {"sp-chemical-science-pack-2", 1},
+  {"sp-electronic-science-pack-1", 1},
   {"sp-material-science-pack-1", 1},
-  {"sp-electronic-science-pack-2", 1},
-  {"chemical-science-pack", 1},
-  {"production-science-pack", 1}
+  {"sp-geological-science-pack-2", 1},
+  {"metallurgic-science-pack", 1},
+  {"electromagnetic-science-pack", 1}
 }
 
 data.raw.technology["battery-equipment"].prerequisites = {
@@ -2068,7 +2070,7 @@ data.raw.technology["military-science-pack"].effects = {
 
 data.raw.technology["production-science-pack"].icon = "__Spaghetorio__/graphics/krastorio/technologies/production-tech-card.png"
 data.raw.technology["production-science-pack"].prerequisites = {
-  "sp-relay"
+  "sp-power-regulation"
 }
 data.raw.technology["production-science-pack"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},

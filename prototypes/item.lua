@@ -3137,6 +3137,26 @@ data:extend({
   },
   {
     type = "item",
+    name = "sp-power-supply",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/power-supply.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "electronic-optical-component",
+    order = "z-[power-supply]",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "sp-amplifier",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/amplifier.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "electronic-optical-component",
+    order = "z-[amplifier]",
+    stack_size = 100
+  },
+  {
+    type = "item",
     name = "sp-empty-circuit-board",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/empty-circuit-board.png",
     icon_size = 64,

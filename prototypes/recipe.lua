@@ -5531,7 +5531,7 @@ data:extend({
     energy_required = 5,
     ingredients = {
       {type = "item", name = "sp-relay", amount = 4},
-      {type = "item", name = "sp-heatsink", amount = 2},
+      {type = "item", name = "sp-heatsink", amount = 1},
       {type = "item", name = "sp-insulation-sheet", amount = 2},
       {type = "item", name = "copper-cable", amount = 10},
       {type = "item", name = "sp-vacuum-tube", amount = 4},
@@ -5539,6 +5539,40 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-transformer", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-power-supply",  -- #ForRegEx# - recipe
+    category = "crafting",
+    enabled = false,
+    energy_required = 2,
+    ingredients = {
+      {type = "item", name = "sp-transformer", amount = 1},
+      {type = "item", name = "sp-coil", amount = 2},
+      {type = "item", name = "sp-capacitor", amount = 6},
+      {type = "item", name = "advanced-circuit", amount = 1},
+      {type = "item", name = "sp-insulated-wire", amount = 2},
+    },
+    results = {
+      {type = "item", name = "sp-power-supply", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-amplifier",  -- #ForRegEx# - recipe
+    category = "crafting",
+    enabled = false,
+    energy_required = 2,
+    ingredients = {
+      {type = "item", name = "sp-power-supply", amount = 1},
+      {type = "item", name = "sp-transistor", amount = 6},
+      {type = "item", name = "sp-resistor", amount = 10},
+      {type = "item", name = "sp-vacuum-tube", amount = 2},
+      {type = "item", name = "advanced-circuit", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-amplifier", amount = 1}
     }
   },
   {

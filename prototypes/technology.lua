@@ -518,8 +518,7 @@ data:extend({
       }
     },
     prerequisites = {
-      "sp-relay",
-      "sp-transformer",
+      "sp-power-regulation",
       "electric-energy-distribution-2"
     },
     unit =
@@ -1465,14 +1464,16 @@ data:extend({
     },
     unit =
     {
-      count = 1000,
+      count = 500,
       ingredients = {
         {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"sp-material-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1},
+        {"logistic-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"sp-material-science-pack-1", 1},
         {"sp-geological-science-pack-2", 1},
-        {"production-science-pack", 1}
+        {"sp-electronic-science-pack-1", 1},
+        {"metallurgic-science-pack", 1},
+        {"electromagnetic-science-pack", 1}
       },
       time = 30
     },
@@ -4294,7 +4295,7 @@ data:extend({
   },
   {
     type = "technology",
-    name = "sp-relay",  -- #ForRegEx# - technology
+    name = "sp-power-regulation",  -- #ForRegEx# - technology
     icon_size = 256,
     icon = "__Spaghetorio__/graphics/hr-icons/relay.png",
     effects =
@@ -4302,6 +4303,18 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "sp-relay"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-transformer"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-power-supply"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-amplifier"
       },
     },
     prerequisites = {
@@ -4311,46 +4324,16 @@ data:extend({
     },
     unit =
     {
-      count = 50,
-      ingredients = {
-        {"automation-science-pack", 1},
-        {"logistic-science-pack", 1},
-        {"chemical-science-pack", 1},
-        {"sp-electronic-science-pack-1", 1},
-        {"sp-material-science-pack-1", 1}
-      },
-      time = 30
-    },
-  },
-  {
-    type = "technology",
-    name = "sp-transformer",  -- #ForRegEx# - technology
-    icon_size = 256,
-    icon = "__Spaghetorio__/graphics/hr-icons/transformer.png",
-    effects =
-    {
-      {
-        type = "unlock-recipe",
-        recipe = "sp-transformer"
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-vacuum-tube"
-      },
-    },
-    prerequisites = {
-      "sp-insulation-sheet",
-      "sp-electronic-science-pack-2"
-    },
-    unit =
-    {
       count = 150,
       ingredients = {
         {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"sp-electronic-science-pack-2", 1},
+        {"logistic-science-pack", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-electronic-science-pack-1", 1},
         {"sp-material-science-pack-1", 1},
-        {"production-science-pack", 1}
+        {"sp-geological-science-pack-2", 1},
+        {"metallurgic-science-pack", 1},
+        {"electromagnetic-science-pack", 1}
       },
       time = 30
     },
@@ -4367,7 +4350,9 @@ data:extend({
         recipe = "sp-dynamo"
       },
     },
-    prerequisites = {"sp-transformer"},
+    prerequisites = {
+      "sp-power-regulation"
+    },
     unit =
     {
       count = 200,

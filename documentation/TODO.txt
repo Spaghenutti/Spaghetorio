@@ -482,26 +482,30 @@ Items:
     - EuNi4.5Co0.5: Europium (20%), Nickel (75%), Cobalt (5%) - Hydrogen storage.
     - GdNi4.5Co0.5: Gadolinium (20%), Nickel (75%), Cobalt (5%) - Hydrogen storage.
 
-  - magnetic coupling
-  - vacuum pump (contains seals and steel)
+  - rectifier
+  - voltage filter
+  - voltage regulator
+  - potentiometer
+  + magnetic coupling
+  + vacuum pump (contains seals and steel)
   - pressure sensor (from aluminum, copper and silicon)
-  - gearshaft (created in induction hardening facility)
+  + gearshaft (created in induction hardening facility)
   - magnetic lifter
-  - condenser coil (Condenses vapor into liquid, essential in cooling or refrigeration systems)
-  - electromagnetic brake
-  - turbo charger
+  + condenser coil (Condenses vapor into liquid, essential in cooling or refrigeration systems)
+  + electromagnetic brake
+  + turbo charger
   - roller chain
-  - vibration dampener
+  + vibration dampener
   - catalytic converter
-  - high pressure fan
-  - variable frequenzy drive (adjusts motor speed based on demand, improving efficiency)
+  + high pressure fan
+  + variable frequenzy drive (adjusts motor speed based on demand, improving efficiency)
   - thermal regulator
   - destiller
-  - high power solenoid
-  - plasma cutter
+  + high power solenoid
+  + plasma cutter
   - electrostatic precipitator
-  - piezoelectric sensor
-  - Seal
+  + piezoelectric sensor
+  + Seal
   - Bearing
   + Seeds (for trees)
   - Antimatter trains
