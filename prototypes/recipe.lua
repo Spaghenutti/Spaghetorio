@@ -2444,7 +2444,6 @@ data:extend({
     type = "recipe",
     name = "sp-hydrogen-chloride",  -- #ForRegEx# - recipe
     category = "chemistry",
-    subgroup = "fluid-recipes",
     energy_required = 1,
     enabled = false,
     ingredients = {
@@ -2466,7 +2465,6 @@ data:extend({
     type = "recipe",
     name = "sp-liquid-sodium",  -- #ForRegEx# - recipe
     category = "chemistry",
-    subgroup = "fluid-recipes",
     energy_required = 1,
     enabled = false,
     ingredients = {
@@ -2621,7 +2619,6 @@ data:extend({
     type = "recipe",
     name = "sp-propane",  -- #ForRegEx# - recipe
     category = "chemistry",
-    subgroup = "fluid-recipes",
     enabled = false,
     energy_required = 12,
     ingredients = {
@@ -2648,7 +2645,7 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "chemistry",
-    subgroup = "fluid-recipes",
+    subgroup = "chemical",
     enabled = false,
     energy_required = 15,
     ingredients = {
@@ -2672,7 +2669,6 @@ data:extend({
     type = "recipe",
     name = "sp-methyl-tert-butyl-ether",  -- #ForRegEx# - recipe
     category = "chemistry",
-    subgroup = "fluid-recipes",
     enabled = false,
     energy_required = 18,
     ingredients = {
@@ -2695,7 +2691,6 @@ data:extend({
     type = "recipe",
     name = "sp-propylene",  -- #ForRegEx# - recipe
     category = "chemistry",
-    subgroup = "fluid-recipes",
     enabled = false,
     energy_required = 20,
     ingredients = {
@@ -2717,7 +2712,6 @@ data:extend({
     type = "recipe",
     name = "sp-sodium-carbonate",  -- #ForRegEx# - recipe
     category = "chemistry",
-    subgroup = "fluid-recipes",
     enabled = false,
     energy_required = 16,
     ingredients = {
@@ -2739,7 +2733,6 @@ data:extend({
     type = "recipe",
     name = "sp-benzene",  -- #ForRegEx# - recipe
     category = "chemistry",
-    subgroup = "fluid-recipes",
     enabled = false,
     energy_required = 32,
     ingredients = {
@@ -2761,7 +2754,6 @@ data:extend({
     type = "recipe",
     name = "sp-styrene",  -- #ForRegEx# - recipe
     category = "chemistry",
-    subgroup = "fluid-recipes",
     enabled = false,
     energy_required = 12,
     ingredients = {
@@ -2783,7 +2775,6 @@ data:extend({
     type = "recipe",
     name = "sp-phosphoric-acid",  -- #ForRegEx# - recipe
     category = "chemistry",
-    subgroup = "fluid-recipes",
     enabled = false,
     energy_required = 8,
     ingredients = {
@@ -2805,7 +2796,6 @@ data:extend({
     type = "recipe",
     name = "sp-sulfamate",  -- #ForRegEx# - recipe
     category = "chemistry",
-    subgroup = "fluid-recipes",
     enabled = false,
     energy_required = 12,
     ingredients = {
@@ -2828,7 +2818,6 @@ data:extend({
     type = "recipe",
     name = "sp-perchloric-acid",  -- #ForRegEx# - recipe
     category = "chemistry",
-    subgroup = "fluid-recipes",
     enabled = false,
     energy_required = 5,
     ingredients = {
@@ -2920,7 +2909,6 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/mercury.png",
     icon_size = 64,
     category = "chemistry",
-    subgroup = "fluid-recipes",
     enabled = false,
     energy_required = 2,
     ingredients = {
@@ -3444,7 +3432,6 @@ data:extend({
     type = "recipe",
     name = "sp-nitric-acid",  -- #ForRegEx# - recipe
     category = "chemical-staging",
-    subgroup = "fluid-recipes",
     energy_required = 5,
     enabled = false,
     ingredients = {
@@ -3877,14 +3864,11 @@ data:extend({
     results = {
       {type = "fluid", name = "water", amount = 30 },
     },
-    subgroup = "fluid-recipes",
-    order = "a[atmosphere-condensation]-a0[water]",
   },
   {
     type = "recipe",
     name = "sp-xenon-from-atmosphere",  -- #ForRegEx# - recipe
     category = "sp-kr-atmosphere-condensation",
-    subgroup = "fluid-recipes",
     enabled = false,
     energy_required = 15,
     ingredients = {},
@@ -3896,7 +3880,6 @@ data:extend({
     type = "recipe",
     name = "sp-helium-from-atmosphere",  -- #ForRegEx# - recipe
     category = "sp-kr-atmosphere-condensation",
-    subgroup = "fluid-recipes",
     enabled = false,
     energy_required = 3,
     hide_from_player_crafting = true,
@@ -4530,7 +4513,6 @@ data:extend({
     icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/sodium-hydroxide.png", 64,
                                          "__Spaghetorio__/graphics/icons/liquid-sodium.png", 64),
     category = "chemistry",
-    subgroup = "fluid-recipes",
     enabled = false,
     energy_required = 30,
     ingredients = {
@@ -4567,7 +4549,6 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "sp-kr-electrolysis",
-    subgroup = "fluid-recipes",
     enabled = false,
     energy_required = 6,
     ingredients = {
@@ -4585,6 +4566,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/krastorio/icons/recipes/water-electrolysis.png",
     icon_size = 128,
     energy_required = 3,
+    subgroup = "chemical",
     enabled = false,
     always_show_made_in = true,
     always_show_products = true,
@@ -4599,7 +4581,6 @@ data:extend({
     crafting_machine_tint = {
       primary = {r = 0.10, g = 0.75, b = 0.10, a = 0.10},
     },
-    subgroup = "fluid-recipes",
     order = "y01[water-electrolysis]",
   },
   {
@@ -4609,6 +4590,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/krastorio/icons/recipes/water-separation.png",
     icon_size = 128,
     energy_required = 3,
+    subgroup = "chemical",
     enabled = false,
     always_show_made_in = true,
     always_show_products = true,
@@ -4622,7 +4604,6 @@ data:extend({
     crafting_machine_tint = {
       primary = {r = 0.75, g = 0.10, b = 0.10, a = 0.10},
     },
-    subgroup = "fluid-recipes",
     order = "y02[water-separation]",
   },
   {
@@ -4637,17 +4618,15 @@ data:extend({
     ingredients = {
       {type = "fluid", name = "water", amount = 500},
     },
+    results = {
+      {type = "fluid", name = "sp-heavy-water", amount = 20 },
+    },
     crafting_machine_tint = {
       primary = {r = 0.405, g = 0.402, b = 1.000, a = 1.000},
       secondary = {r = 0.391, g = 0.720, b = 1.000, a = 0.900},
       tertiary = {r = 1.000, g = 1.000, b = 1.000, a = 0.500},
       quaternary = {r = 1.000, g = 1.000, b = 1.000, a = 0.300},
-    },
-    results = {
-      {type = "fluid", name = "sp-heavy-water", amount = 20 },
-    },
-    subgroup = "fluid-recipes",
-    order = "y06[heavy-water]",
+    }
   },
   {
     type = "recipe",
@@ -6918,30 +6897,6 @@ data:extend({
     type = "recipe",
     name = "sp-chronomatter",  -- #ForRegEx# - recipe
     category = "chemistry",
-    subgroup = "fluid-recipes",
-    enabled = false,
-    energy_required = 6,
-    ingredients = {
-      {type = "item", name = "sp-monocrystal", amount = 1},
-      {type = "item", name = "sp-rukite-powder", amount = 4},
-      {type = "item", name = "sp-antimony-pillet", amount = 4}
-    },
-    results = {
-      {type = "fluid", name = "sp-chronomatter", amount = 1}
-    },
-    crafting_machine_tint = {
-      primary = {r = 1.000, g = 0.000, b = 0.000, a = 1.000},
-      secondary = {r = 0.9, g = 0.0, b = 0.0, a = 1.000},
-      tertiary = {r = 0.8, g = 0.0, b = 0.0, a = 1.000},
-      quaternary = {r = 0.3, g = 0.000, b = 0.000, a = 1.000},
-    },
-    order = "z[alien]-[chronomatter]"
-  },
-  {
-    type = "recipe",
-    name = "sp-chronomatter",  -- #ForRegEx# - recipe
-    category = "chemistry",
-    subgroup = "fluid-recipes",
     enabled = false,
     energy_required = 6,
     ingredients = {
@@ -7208,7 +7163,6 @@ data:extend({
     type = "recipe",
     name = "sp-grobgnum-slurry",  -- #ForRegEx# - recipe
     category = "chemistry",
-    subgroup = "fluid-recipes",
     enabled = false,
     energy_required = 4,
     ingredients = {
@@ -7231,7 +7185,6 @@ data:extend({
     type = "recipe",
     name = "sp-grobgnumylene",  -- #ForRegEx# - recipe
     category = "chemistry",
-    subgroup = "fluid-recipes",
     enabled = false,
     energy_required = 12,
     ingredients = {
@@ -7255,7 +7208,6 @@ data:extend({
     type = "recipe",
     name = "sp-grobgnum-hydroxide",  -- #ForRegEx# - recipe
     category = "chemistry",
-    subgroup = "fluid-recipes",
     enabled = false,
     energy_required = 8,
     ingredients = {
@@ -10520,7 +10472,6 @@ data:extend({
     name = "sp-dark-matter",  -- #ForRegEx# - recipe
     category = "alien-tech-manufacturing",
     enabled = false,
-    subgroup = "fluid-recipes",
     energy_required = 8,
     ingredients = {
       {type = "item", name = "sp-dark-matter-container", amount = 1},
@@ -10534,7 +10485,6 @@ data:extend({
     name = "sp-antimatter",  -- #ForRegEx# - recipe
     category = "alien-tech-manufacturing",
     enabled = false,
-    subgroup = "fluid-recipes",
     energy_required = 12,
     ingredients = {
       {type = "item", name = "sp-evolution-pulse-cell", amount = 10},
@@ -10550,7 +10500,6 @@ data:extend({
     name = "sp-dark-energy",  -- #ForRegEx# - recipe
     category = "alien-tech-manufacturing",
     enabled = false,
-    subgroup = "fluid-recipes",
     energy_required = 0.01,
     ingredients = {
       {type = "fluid", name = "sp-matter", amount = 1},
@@ -12447,7 +12396,6 @@ data:extend({
     icon_size = 256,
     scale = 0.25,
     category = "chemistry",
-    subgroup = "fluid-recipes",
     enabled = false,
     energy_required = 5,
     ingredients = {
@@ -12615,7 +12563,6 @@ data:extend({
     type = "recipe",
     name = "sp-epoxy",  -- #ForRegEx# - recipe
     category = "chemistry",
-    subgroup = "fluid-recipes",
     enabled = false,
     energy_required = 10,
     ingredients = {
@@ -12679,7 +12626,6 @@ data:extend({
     type = "recipe",
     name = "sp-bleach",  -- #ForRegEx# - recipe
     category = "chemistry",
-    subgroup = "fluid-recipes",
     enabled = false,
     energy_required = 4,
     ingredients = {
@@ -12951,7 +12897,6 @@ data:extend({
     type = "recipe",
     name = "sp-ethylene-dichloride",  -- #ForRegEx# - recipe
     category = "chemistry",
-    subgroup = "fluid-recipes",
     enabled = false,
     energy_required = 12,
     hide_from_player_crafting = true,
@@ -12979,7 +12924,6 @@ data:extend({
     icon_size = 64,
     scale = 0.25,
     category = "chemistry",
-    subgroup = "fluid-recipes",
     enabled = false,
     energy_required = 30,
     hide_from_player_crafting = true,
@@ -13000,11 +12944,8 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-sodium-hydroxide-from-sodium",  -- #ForRegEx# - recipe
-    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/sodium-hydroxide.png", 64,
-                                         "__Spaghetorio__/graphics/icons/sodium.png", 64),
+    name = "sp-sodium-hydroxide",  -- #ForRegEx# - recipe
     category = "chemistry",
-    subgroup = "fluid-recipes",
     enabled = false,
     energy_required = 60,
     hide_from_player_crafting = true,
@@ -13027,7 +12968,6 @@ data:extend({
     type = "recipe",
     name = "sp-vinyl-chloride",  -- #ForRegEx# - recipe
     category = "chemistry",
-    subgroup = "fluid-recipes",
     enabled = false,
     energy_required = 4,
     ingredients = {
@@ -13073,7 +13013,6 @@ data:extend({
     type = "recipe",
     name = "sp-helium",  -- #ForRegEx# - recipe
     category = "chemistry",
-    subgroup = "fluid-recipes",
     enabled = false,
     energy_required = 4,
     ingredients = {
@@ -13096,7 +13035,6 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "chemistry",
-    subgroup = "fluid-recipes",
     enabled = false,
     energy_required = 40,
     ingredients = {
@@ -13152,7 +13090,6 @@ data:extend({
     type = "recipe",
     name = "sp-liquid-nitrogen",  -- #ForRegEx# - recipe
     category = "chemistry",
-    subgroup = "fluid-recipes",
     enabled = false,
     energy_required = 1,
     ingredients = {

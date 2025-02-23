@@ -4661,7 +4661,7 @@ data:extend({
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-sodium-hydroxide-from-sodium"
+        recipe = "sp-sodium-hydroxide"
       },
       {
         type = "unlock-recipe",

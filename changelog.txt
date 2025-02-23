@@ -1,6 +1,9 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.1
 Date: 2025-02-20
+  Changes:
+    - Tech tree updates for reaching logistic science pack 2
+    - Moved fluid recipes to fluid recipes group
   Bugfixes:
     - Fixed some missing locale
     - Fixed storage volume of tanks
@@ -8,6 +11,7 @@ Date: 2025-02-20
     - Updated some crafting categories
     - Increased crafting speed of some buildings
     - Burner inserter can now be unlocked in tech tree
+    - Updated sodium hydroxide recipe
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.0
 Date: 2025-02-20
