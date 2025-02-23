@@ -40,7 +40,24 @@ data.raw.technology["heating-tower"].effects =
 }
 data.raw.technology["heating-tower"].prerequisites = {
   "lithium-processing",
-  "sp-titanium-nitride"
+  "sp-titanium-nitride",
+  "sp-heat-resistant-tile"
+}
+data.raw.technology["heating-tower"].research_trigger = nil
+data.raw.technology["heating-tower"].unit =
+{
+  count = 200,
+  ingredients = {
+    {"sp-automation-science-pack-2", 1},
+    {"logistic-science-pack", 1},
+    {"chemical-science-pack", 1},
+    {"sp-electronic-science-pack-1", 1},
+    {"sp-material-science-pack-2", 1},
+    {"sp-geological-science-pack-1", 1},
+    {"metallurgic-science-pack", 1},
+    {"electromagnetic-science-pack", 1}
+  },
+  time = 30
 }
 
 data.raw.technology["lithium-processing"].prerequisites = {"metallurgic-science-pack", "sp-alkaline-solutions"}

@@ -485,16 +485,17 @@ data.raw.technology["lubricant"].unit.ingredients = {
 }
 
 -- "car"
-table.insert(data.raw.technology["automobilism"].prerequisites, "sp-advanced-gearbox")
+table.insert(data.raw.technology["automobilism"].effects, {type = "unlock-recipe", recipe = "sp-differential"})
+data.raw.technology["automobilism"].prerequisites = {
+  "sp-rubber",
+  "sp-steel-wheel"
+}
 data.raw.technology["automobilism"].unit.ingredients = {
-  {"sp-automation-science-pack-2", 1},
-  {"sp-logistic-science-pack-2", 1},
-  {"sp-chemical-science-pack-2", 1},
-  {"sp-material-science-pack-2", 1},
-  {"production-science-pack", 1},
-  {"sp-geological-science-pack-2", 1},
-  {"sp-electronic-science-pack-2", 1},
-  {"utility-science-pack", 1}
+  {"automation-science-pack", 1},
+  {"logistic-science-pack", 1},
+  {"chemical-science-pack", 1},
+  {"sp-material-science-pack-1", 1},
+  {"sp-geological-science-pack-1", 1}
 }
 
 table.insert(data.raw.technology["fast-inserter"].prerequisites, "sp-ball-bearing")

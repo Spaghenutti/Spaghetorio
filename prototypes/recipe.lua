@@ -2527,7 +2527,6 @@ data:extend({
     subgroup = "processed-resource",
     enabled = false,
     energy_required = 5,
-    hide_from_player_crafting = true,
     ingredients = {
       {type = "item", name = "copper-ore", amount = 1},
       {type = "fluid", name = "water", amount = 50}
@@ -2548,7 +2547,6 @@ data:extend({
     subgroup = "processed-resource",
     enabled = false,
     energy_required = 4,
-    hide_from_player_crafting = true,
     ingredients = {
       {type = "item", name = "sp-nickel-ore", amount = 2},
       {type = "fluid", name = "water", amount = 50}
@@ -3049,24 +3047,6 @@ data:extend({
     --   tertiary = {r = 0.0, g = 0.0, b = 0.0, a = 1.000},
     --   quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
     -- }
-  },
-  {
-    type = "recipe",
-    name = "sp-chemical-science-pack-2",  -- #ForRegEx# - recipe
-    category = "chemistry",
-    enabled = false,
-    energy_required = 24,
-    ingredients =
-    {
-      {type = "item", name = "chemical-science-pack", amount = 20},
-      {type = "item", name = "battery", amount = 5},
-      {type = "item", name = "sp-sodium-carbonate", amount = 5},
-      {type = "fluid", name = "sp-sulfamate", amount = 20},
-      {type = "fluid", name = "sp-phosphoric-acid", amount = 20}
-    },
-    results = {
-      {type = "item", name = "sp-chemical-science-pack-2", amount = 5}
-    }
   },
   {
     type = "recipe",
@@ -3667,6 +3647,44 @@ data:extend({
       {type = "item", name = "sp-material-science-pack-2", amount = 5}
     }
   },
+  {
+    type = "recipe",
+    name = "sp-chemical-science-pack-2",  -- #ForRegEx# - recipe
+    category = "chemical-staging",
+    enabled = false,
+    energy_required = 24,
+    ingredients =
+    {
+      {type = "item", name = "chemical-science-pack", amount = 20},
+      {type = "item", name = "sp-titanium-nitride", amount = 5},
+      {type = "item", name = "sp-potassium-hydroxide", amount = 5},
+      {type = "item", name = "sp-heat-resistant-tile", amount = 5},
+      {type = "fluid", name = "sp-epichlorohydrin", amount = 20},
+      {type = "fluid", name = "sp-perchloric-acid", amount = 20}
+    },
+    results = {
+      {type = "item", name = "sp-chemical-science-pack-2", amount = 5}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-helium",  -- #ForRegEx# - recipe
+    category = "chemical-staging",
+    enabled = false,
+    energy_required = 4,
+    ingredients = {
+      {type = "fluid", name = "sp-hydrogen", amount = 2}
+    },
+    results = {
+      {type = "fluid", name = "sp-helium", amount = 10}
+    },
+    crafting_machine_tint = {
+      primary = {r = 1.000, g = 1.000, b = 1.000, a = 1.000},
+      secondary = {r = 0.9, g = 0.9, b = 1.0, a = 1.000},
+      tertiary = {r = 0.7, g = 0.7, b = 0.9, a = 1.000},
+      quaternary = {r = 0.5, g = 0.5, b = 0.8, a = 1.000},
+    }
+  },
   ------------------------------------------------------------------------------
   -- MARK: sp-kr-fuel-refinery
   ------------------------------------------------------------------------------
@@ -3769,6 +3787,21 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-gearshaft", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-heat-resistant-tile",  -- #ForRegEx# - recipe
+    category = "induction-hardening",
+    enabled = false,
+    energy_required = 5.2,
+    ingredients = {
+      {type = "item", name = "sp-zirconia", amount = 2},
+      {type = "item", name = "sp-silica", amount = 1},
+      {type = "item", name = "carbon", amount = 3}
+    },
+    results = {
+      {type = "item", name = "sp-heat-resistant-tile", amount = 1}
     }
   },
   ------------------------------------------------------------------------------
@@ -3883,18 +3916,17 @@ data:extend({
     type = "recipe",
     name = "sp-hydrogen",  -- #ForRegEx# - recipe
     category = "sp-kr-atmosphere-condensation",
+    subgroup = "gas",
     icon = "__Spaghetorio__/graphics/krastorio/icons/fluids/hydrogen.png",
     icon_size = 64,
     energy_required = 20,
     enabled = false,
     always_show_made_in = true,
     always_show_products = true,
-    hide_from_player_crafting = true,
     ingredients = {},
     results = {
       {type = "fluid", name = "sp-hydrogen", amount = 30 },
     },
-    subgroup = "raw-material",
     order = "a[atmosphere-condensation]-a1[hydrogen]",
   },
   {
@@ -3907,12 +3939,10 @@ data:extend({
     enabled = false,
     always_show_made_in = true,
     always_show_products = true,
-    hide_from_player_crafting = true,
     ingredients = {},
     results = {
       {type = "fluid", name = "sp-oxygen", amount = 30 },
     },
-    subgroup = "raw-material",
     order = "a[atmosphere-condensation]-a2[oxygen]",
   },
   {
@@ -3925,12 +3955,10 @@ data:extend({
     enabled = false,
     always_show_made_in = true,
     always_show_products = true,
-    hide_from_player_crafting = true,
     ingredients = {},
     results = {
       {type = "fluid", name = "sp-nitrogen", amount = 30 },
     },
-    subgroup = "raw-material",
     order = "a[atmosphere-condensation]-a3[nitrogen]",
   },
   {
@@ -3943,7 +3971,6 @@ data:extend({
     enabled = false,
     always_show_made_in = true,
     always_show_products = true,
-    hide_from_player_crafting = true,
     ingredients = {},
     results = {
       {type = "fluid", name = "water", amount = 30 },
@@ -3966,7 +3993,6 @@ data:extend({
     category = "sp-kr-atmosphere-condensation",
     enabled = false,
     energy_required = 3,
-    hide_from_player_crafting = true,
     ingredients = {},
     results = {
       {type = "fluid", name = "sp-helium", amount = 1}
@@ -4562,7 +4588,6 @@ data:extend({
     subgroup = "processed-resource",
     enabled = false,
     energy_required = 5,
-    hide_from_player_crafting = true,
     ingredients = {
       {type = "item", name = "sp-titanium-chloride", amount = 3},
       {type = "item", name = "sp-sodium", amount = 2},
@@ -4947,7 +4972,7 @@ data:extend({
     type = "recipe",
     name = "sp-capacitor-from-tantalum",  -- #ForRegEx# - recipe
     icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/capacitor.png", 64,
-                                        "__Spaghetorio__/graphics/icons/tantalum-billet.png", 64),
+                                         "__Spaghetorio__/graphics/icons/tantalum-billet.png", 64),
     category = "crafting",
     enabled = false,
     energy_required = 4,
@@ -5253,7 +5278,24 @@ data:extend({
     results = {
       {type = "item", name = "sp-gearbox", amount = 1}
     }
-  },{
+  },
+  {
+    type = "recipe",
+    name = "sp-differential",  -- #ForRegEx# - recipe
+    category = "crafting",
+    enabled = false,
+    energy_required = 2.5,
+    ingredients = {
+      {type = "item", name = "sp-machined-parts", amount = 8},
+      {type = "item", name = "sp-brass", amount = 2},
+      {type = "item", name = "sp-bronze-rod", amount = 3},
+      {type = "item", name = "sp-stainless-steel-gear-wheel", amount = 6}
+    },
+    results = {
+      {type = "item", name = "sp-differential", amount = 1}
+    }
+  },
+  {
     type = "recipe",
     name = "sp-electromagnet",  -- #ForRegEx# - recipe
     category = "crafting",
@@ -5780,6 +5822,8 @@ data:extend({
       {type = "item", name = "logistic-science-pack", amount = 20},
       {type = "item", name = "sp-condenser-coil", amount = 8},
       {type = "item", name = "flying-robot-frame", amount = 5},
+      {type = "item", name = "sp-differential", amount = 5},
+      {type = "item", name = "sp-train-boige", amount = 2},
       {type = "item", name = "advanced-circuit", amount = 10},
     },
     results = {
@@ -5912,7 +5956,6 @@ data:extend({
     ingredients =
     {
       {type = "item", name = "sp-logistic-science-pack-2", amount = 10},
-      {type = "item", name = "sp-differential", amount = 5},
       {type = "item", name = "sp-heavy-gearbox", amount = 5},
       {type = "item", name = "sp-pressure-tube", amount = 5},
       {type = "item", name = "sp-servo-motor", amount = 10},
@@ -5985,6 +6028,34 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-electromagnetic-science-pack-3", amount = 5}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-biological-science-pack-3",  -- #ForRegEx# - recipe
+    category = "crafting",
+    enabled = false,
+    energy_required = 69,
+    ingredients =
+    {
+      {type = "item", name = "agricultural-science-pack", amount = 10},
+    },
+    results = {
+      {type = "item", name = "sp-biological-science-pack-3", amount = 5}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-cryogenic-science-pack-3",  -- #ForRegEx# - recipe
+    category = "crafting",
+    enabled = false,
+    energy_required = 69,
+    ingredients =
+    {
+      {type = "item", name = "cryogenic-science-pack", amount = 10},
+    },
+    results = {
+      {type = "item", name = "sp-cryogenic-science-pack-3", amount = 5}
     }
   },
   {
@@ -6249,24 +6320,6 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-differential",  -- #ForRegEx# - recipe
-    category = "crafting-with-fluid",
-    enabled = false,
-    energy_required = 3,
-    ingredients = {
-      {type = "item", name = "sp-gearbox", amount = 2},
-      {type = "fluid", name = "lubricant", amount = 20},
-      {type = "item", name = "sp-machined-parts", amount = 8},
-      {type = "item", name = "sp-bolts", amount = 4},
-      {type = "item", name = "sp-ball-bearing", amount = 3},
-      {type = "item", name = "sp-stainless-steel-gear-wheel", amount = 6}
-    },
-    results = {
-      {type = "item", name = "sp-differential", amount = 1}
-    }
-  },
-  {
-    type = "recipe",
     name = "sp-piezoelectric-sensor",  -- #ForRegEx# - recipe
     category = "crafting-with-fluid",
     enabled = false,
@@ -6381,11 +6434,13 @@ data:extend({
     ingredients =
     {
       {type = "item", name = "sp-geological-science-pack-1", amount = 20},
-      {type = "item", name = "sp-zinc-sulfate", amount = 5},
+      {type = "item", name = "sp-titanium-ore", amount = 5},
+      {type = "item", name = "sp-zirconium-ore", amount = 5},
+      {type = "item", name = "sp-crushed-nickel-ore", amount = 5},
+      {type = "item", name = "sp-crushed-chromite", amount = 5},
       {type = "item", name = "sp-leadstone", amount = 2},
-      {type = "item", name = "sulfur", amount = 5},
-      {type = "item", name = "wood", amount = 10},
-      {type = "fluid", name = "crude-oil", amount = 20},
+      {type = "item", name = "sp-barium-sulfamate", amount = 5},
+      {type = "fluid", name = "sp-mineral-water", amount = 20},
     },
     results = {
       {type = "item", name = "sp-geological-science-pack-2", amount = 5}
@@ -6737,21 +6792,6 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-composites", amount = 2}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-heat-resistant-tile",  -- #ForRegEx# - recipe
-    category = "manufacturing",
-    enabled = false,
-    energy_required = 5.2,
-    ingredients = {
-      {type = "item", name = "sp-zirconia", amount = 2},
-      {type = "item", name = "sp-silica", amount = 1},
-      {type = "item", name = "carbon", amount = 3}
-    },
-    results = {
-      {type = "item", name = "sp-heat-resistant-tile", amount = 1}
     }
   },
   {
@@ -8092,6 +8132,7 @@ data:extend({
       {type = "item", name = "sp-duralumin", amount = 40},
       {type = "item", name = "sp-titanium-frame", amount = 20},
       {type = "item", name = "sp-nickel-cobalt", amount = 6},
+      {type = "item", name = "sp-ceramics", amount = 20},
       {type = "item", name = "sp-high-power-solenoid", amount = 12},
       {type = "item", name = "electric-engine-unit", amount = 8},
       {type = "item", name = "sp-heating-filament", amount = 6},
@@ -12490,6 +12531,7 @@ data:extend({
     icon_size = 256,
     scale = 0.25,
     category = "chemistry",
+    subgroup = "aqueous-fluid",
     enabled = false,
     energy_required = 4,
     ingredients = {
@@ -12507,7 +12549,7 @@ data:extend({
       tertiary = {r = 0.0, g = 0.0, b = 0.0, a = 1.000},
       quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
     },
-    order = "[liquid]-[aqueous-niobium-and-tantalum]"
+    order = "a[fluid]-f[aqueous-niobium-and-tantalum]"
   },
   {
     type = "recipe",
@@ -12845,7 +12887,6 @@ data:extend({
     category = "chemistry",
     subgroup = "radioactive-resource",
     enabled = false,
-    hide_from_player_crafting = true,
     energy_required = 60,
     ingredients = {
       {type = "item", name = "sp-used-up-fuel-rod", amount = 5},
@@ -12948,7 +12989,6 @@ data:extend({
     category = "chemistry",
     enabled = false,
     energy_required = 12,
-    hide_from_player_crafting = true,
     ingredients = {
       -- {type = "item", name = "sp-catalyst", amount = 1},
       {type = "fluid", name = "sp-ethylene", amount = 60},
@@ -12997,7 +13037,6 @@ data:extend({
     category = "chemistry",
     enabled = false,
     energy_required = 60,
-    hide_from_player_crafting = true,
     ingredients = {
       {type = "item", name = "sp-sodium", amount = 5},
       {type = "fluid", name = "sp-hydrogen", amount = 100},
@@ -13056,25 +13095,6 @@ data:extend({
       secondary = {r = 0.771, g = 0.771, b = 0.771, a = 1.000},
       tertiary = {r = 0.768, g = 0.665, b = 0.762, a = 1.000},
       quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-helium",  -- #ForRegEx# - recipe
-    category = "chemistry",
-    enabled = false,
-    energy_required = 4,
-    ingredients = {
-      {type = "fluid", name = "sp-hydrogen", amount = 2}
-    },
-    results = {
-      {type = "fluid", name = "sp-helium", amount = 10}
-    },
-    crafting_machine_tint = {
-      primary = {r = 1.000, g = 1.000, b = 1.000, a = 1.000},
-      secondary = {r = 0.9, g = 0.9, b = 1.0, a = 1.000},
-      tertiary = {r = 0.7, g = 0.7, b = 0.9, a = 1.000},
-      quaternary = {r = 0.5, g = 0.5, b = 0.8, a = 1.000},
     }
   },
   {

@@ -120,7 +120,28 @@ data.raw.technology["turbo-transport-belt"].unit.ingredients = {
   {"chemical-science-pack", 1},
   {"production-science-pack", 1},
   {"sp-metallurgic-science-pack-2", 1},
-  {"sp-electromagnetic-science-pack-2", 1},
+  {"sp-electromagnetic-science-pack-2", 1}
+}
+
+data.raw.technology["cryogenic-plant"].prerequisites = {
+  "sp-electromagnetic-science-pack-2",
+  "sp-metallurgic-science-pack-2",
+  "heating-tower"
+}
+data.raw.technology["cryogenic-plant"].research_trigger = nil
+data.raw.technology["cryogenic-plant"].unit = {
+  count = 250,
+  ingredients = {
+    {"sp-automation-science-pack-2", 1},
+    {"sp-logistic-science-pack-2", 1},
+    {"sp-chemical-science-pack-2", 1},
+    {"sp-material-science-pack-2", 1},
+    {"sp-geological-science-pack-2", 1},
+    {"sp-electronic-science-pack-2", 1},
+    {"sp-metallurgic-science-pack-2", 1},
+    {"sp-electromagnetic-science-pack-2", 1}
+  },
+  time = 30
 }
 
 --------------------------------------------------------------------------------

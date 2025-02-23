@@ -416,7 +416,7 @@ data:extend({
       map_color = {r=0.1, g=0.8, b=0.8},
       mining_visualisation_tint = {r=0.1, g=0.8, b=0.8, a=1.0},
       fluid_amount = 5,
-      required_fluid = "sp-calcium-hydroxide-solution"
+      required_fluid = "sp-bleach"
     },
     {
       base_density = 1.2,

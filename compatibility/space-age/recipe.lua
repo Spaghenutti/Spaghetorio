@@ -190,6 +190,21 @@ util.recipe.change_recipe_ingredients("crusher",
   },
   10)
 
+util.recipe.change_recipe_ingredients("heating-tower",
+  {
+    {type = "item", name = "sp-stainless-steel", amount = 16},
+    {type = "item", name = "sp-waspaloy", amount = 20},
+    {type = "item", name = "sp-copper-tube", amount = 40},
+    {type = "item", name = "sp-heat-resistant-tile", amount = 10},
+    {type = "item", name = "heat-pipe", amount = 10},
+    {type = "item", name = "sp-heating-filament", amount = 4},
+    {type = "item", name = "sp-pressure-valve", amount = 12},
+    {type = "item", name = "sp-plate-heat-exchanger", amount = 20},
+    {type = "item", name = "sp-flange", amount = 12},
+    {type = "item", name = "concrete", amount = 20},
+  },
+  50)
+
 --------------------------------------------------------------------------------
 -- MARK: science pack
 --------------------------------------------------------------------------------
