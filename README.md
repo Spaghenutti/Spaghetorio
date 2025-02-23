@@ -30,7 +30,7 @@ This mod is in early alpha. In my current playthrough I can finish the first tie
 - Intermediate science pack (16 variations like **computer** and **nuclear** science)
 - Advanced science pack (16 variations like **matter** and **uniformity** science)
 
-For the recipes unlocked during first tier there are no plans to change anything (except mabe change some ratios). All recipes comming after allready exist, but might not be reachable through tech tree.
+For the recipes unlocked during first tier there are no plans to change anything (except maybe change some ratios). All recipes comming after allready exist, but might not be reachable through tech tree.
 
 I am currently cleaning up the second science tier in tech tree which is the longest and most complex phase in the development. I want to publish my mod now, because I need some help and gather feedback to tune in the balance.
 
@@ -39,7 +39,7 @@ If you have some cool ideas you can give me feedback in the discussions section.
 ## Future plans
 
 - Breeder reactor for acquiring radioactive isotopes.
-- Clyclotron acquiring super heavy elements (and maybe reach the island of stability).
+- Clyclotron for acquiring super heavy elements (and maybe reach the island of stability).
 - Particle accelerator for completing the standard model.
 - Quantum stabilizer to make use for acquired knowledge from particle accelerator.
 - Pathogen lab for an extense biological tech branch.
