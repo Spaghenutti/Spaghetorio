@@ -841,15 +841,19 @@ data:extend({
     {
       {
         type = "unlock-recipe",
-        recipe = "sp-niobium-powder"
-      },
-      {
-        type = "unlock-recipe",
         recipe = "sp-niobium-billet"
       },
       {
         type = "unlock-recipe",
         recipe = "sp-tantalum-billet"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-niobium-powder"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-aqueous-niobium"
       },
       {
         type = "unlock-recipe",
@@ -864,16 +868,21 @@ data:extend({
         recipe = "sp-capacitor-from-tantalum"
       }
     },
-    prerequisites = {"sp-chemical-science-pack-2"},
+    prerequisites = {
+      "sp-geological-science-pack-2"
+    },
     unit =
     {
       count = 750,
       ingredients = {
         {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"sp-material-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1},
-        {"sp-geological-science-pack-2", 1}
+        {"logistic-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"sp-material-science-pack-1", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"sp-electronic-science-pack-1", 1},
+        {"metallurgic-science-pack", 1},
+        {"electromagnetic-science-pack", 1}
       },
       time = 30
     },
@@ -1052,8 +1061,7 @@ data:extend({
       }
     },
     prerequisites = {
-      "sp-alkaline-solutions",
-      "sp-material-science-pack-2"
+      "sp-geological-science-pack-2"
     },
     unit =
     {
@@ -1063,7 +1071,7 @@ data:extend({
         {"logistic-science-pack", 1},
         {"sp-material-science-pack-1", 1},
         {"sp-electronic-science-pack-1", 1},
-        {"sp-geological-science-pack-1", 1},
+        {"sp-geological-science-pack-2", 1},
         {"chemical-science-pack", 1},
         {"metallurgic-science-pack", 1}
       },
@@ -1334,12 +1342,13 @@ data:extend({
       count = 500,
       ingredients = {
         {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"sp-electronic-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1},
-        {"sp-geological-science-pack-2", 1},
-        {"sp-material-science-pack-2", 1},
-        {"production-science-pack", 1}
+        {"logistic-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"sp-electronic-science-pack-1", 1},
+        {"sp-material-science-pack-1", 1},
+        {"sp-geological-science-pack-1", 1},
+        {"metallurgic-science-pack", 1},
+        {"electromagnetic-science-pack", 1}
       },
       time = 30
     },
@@ -1485,19 +1494,20 @@ data:extend({
       },
     },
     prerequisites = {
-      "sp-niobium-and-tantalum",
-      "utility-science-pack"
+      "sp-niobium-and-tantalum"
     },
     unit =
     {
       count = 600,
       ingredients = {
         {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"sp-material-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1},
-        {"production-science-pack", 1},
-        {"utility-science-pack", 1}
+        {"logistic-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"sp-material-science-pack-1", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"sp-electronic-science-pack-1", 1},
+        {"metallurgic-science-pack", 1},
+        {"electromagnetic-science-pack", 1}
       },
       time = 30
     },
@@ -4134,7 +4144,8 @@ data:extend({
     prerequisites = {
       "sp-aluminum-alloys",
       "sp-niobium-alloys",
-      "sp-titanium-nitride"
+      "sp-titanium-nitride",
+      "sp-induction-hardening-facility"
     },
     unit =
     {
@@ -4209,9 +4220,13 @@ data:extend({
       ingredients = {
         {"sp-automation-science-pack-2", 1},
         {"sp-logistic-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1},
+        {"sp-electronic-science-pack-1", 1},
         {"sp-material-science-pack-2", 1},
-        {"production-science-pack", 1}
+        {"chemical-science-pack", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"production-science-pack", 1},
+        {"metallurgic-science-pack", 1},
+        {"electromagnetic-science-pack", 1}
       },
       time = 30
     },
@@ -4457,10 +4472,6 @@ data:extend({
         type = "unlock-recipe",
         recipe = "sp-high-pressure-fan"
       },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-high-power-solenoid"
-      }
     },
     prerequisites = {
       "sp-turbine-parts"
@@ -6897,19 +6908,23 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "sp-arc-furnace",
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-high-power-solenoid"
       }
     },
     prerequisites = {
-      "sp-material-science-pack-2"
+      "sp-electrode"
     },
     unit = {
-      count = 150,
+      count = 350,
       ingredients = {
-        {"automation-science-pack", 1}
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-electronic-science-pack-1", 1},
+        {"sp-material-science-pack-2", 1},
+        {"chemical-science-pack", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"production-science-pack", 1},
+        {"metallurgic-science-pack", 1},
+        {"electromagnetic-science-pack", 1}
       },
       time = 30,
     },
@@ -7163,7 +7178,7 @@ data:extend({
       },
     },
     prerequisites = {
-      "sp-material-science-pack-2"
+      "sp-material-science-pack-3"
     },
     unit = {
       count = 200,
@@ -7184,14 +7199,26 @@ data:extend({
         type = "unlock-recipe",
         recipe = "sp-induction-hardening-facility",
       },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-high-power-solenoid"
+      }
     },
     prerequisites = {
-      "sp-material-science-pack-2"
+      "sp-aluminum-alloys",
+      "sp-titanium-machining",
     },
     unit = {
       count = 200,
       ingredients = {
-        {"automation-science-pack", 1}
+        {"sp-automation-science-pack-2", 1},
+        {"logistic-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"sp-electronic-science-pack-1", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-geological-science-pack-1", 1},
+        {"metallurgic-science-pack", 1},
+        {"electromagnetic-science-pack", 1}
       },
       time = 45,
     },
@@ -7238,7 +7265,7 @@ data:extend({
       },
     },
     prerequisites = {
-      "sp-induction-hardening-facility"
+      "sp-advanced-gearbox"
     },
     unit = {
       count = 150,

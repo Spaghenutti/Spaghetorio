@@ -2088,6 +2088,32 @@ data:extend({
       {type = "item", name = "sp-vanadium-plate", amount = 2}
     }
   },
+  {
+    type = "recipe",
+    name = "sp-niobium-billet",  -- #ForRegEx# - recipe
+    category = "metallurgy",
+    enabled = false,
+    energy_required = 3.6,
+    ingredients = {
+      {type = "fluid", name = "sp-aqueous-niobium", amount = 50}
+    },
+    results = {
+      {type = "item", name = "sp-niobium-billet", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-tantalum-billet",  -- #ForRegEx# - recipe
+    category = "metallurgy",
+    enabled = false,
+    energy_required = 5,
+    ingredients = {
+      {type = "fluid", name = "sp-aqueous-tantalum", amount = 50}
+    },
+    results = {
+      {type = "item", name = "sp-tantalum-billet", amount = 1}
+    }
+  },
   ------------------------------------------------------------------------------
   -- MARK: sp-kr-fluid-filtration
   ------------------------------------------------------------------------------
@@ -2419,7 +2445,27 @@ data:extend({
       tertiary = {r = 0.6, g = 0.0, b = 0.0, a = 1.000},
       quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
     },
-  },  
+  },
+  {
+    type = "recipe",
+    name = "sp-niobium-powder",  -- #ForRegEx# - recipe
+    category = "sp-kr-fluid-filtration",
+    enabled = false,
+    energy_required = 4,
+    ingredients = {
+      {type = "item", name = "sp-sand", amount = 8},
+      {type = "fluid", name = "water", amount = 50}
+    },
+    results = {
+      {type = "item", name = "sp-niobium-powder", amount = 2}
+    },
+    crafting_machine_tint = {
+      primary = {r = 0.2, g = 0.5, b = 0.2, a = 1.000},
+      secondary = {r = 0.0, g = 0.3, b = 0.0, a = 1.000},
+      tertiary = {r = 0.0, g = 0.2, b = 0.0, a = 1.000},
+      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000}
+    }
+  },
   ------------------------------------------------------------------------------
   -- MARK: sp-crushing-washing
   ------------------------------------------------------------------------------
@@ -2556,44 +2602,6 @@ data:extend({
       quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
     },
     order = "[liquid]-[liquid-sodium]"
-  },
-  {
-    type = "recipe",
-    name = "sp-niobium-billet",  -- #ForRegEx# - recipe
-    category = "chemistry",
-    enabled = false,
-    energy_required = 3.6,
-    ingredients = {
-      {type = "fluid", name = "sp-aqueous-niobium", amount = 50}
-    },
-    results = {
-      {type = "item", name = "sp-niobium-billet", amount = 1}
-    },
-    crafting_machine_tint = {
-      primary = {r = 0.500, g = 1.000, b = 0.500, a = 1.000},
-      secondary = {r = 0.0, g = 0.771, b = 0.0, a = 1.000},
-      tertiary = {r = 0.0, g = 0.665, b = 0.0, a = 1.000},
-      quaternary = {r = 0.000, g = 0.2, b = 0.000, a = 1.000},
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-tantalum-billet",  -- #ForRegEx# - recipe
-    category = "chemistry",
-    enabled = false,
-    energy_required = 2.8,
-    ingredients = {
-      {type = "fluid", name = "sp-aqueous-tantalum", amount = 50}
-    },
-    results = {
-      {type = "item", name = "sp-tantalum-billet", amount = 1}
-    },
-    crafting_machine_tint = {
-      primary = {r = 0.700, g = 1.000, b = 0.700, a = 1.000},
-      secondary = {r = 0.30, g = 0.771, b = 0.30, a = 1.000},
-      tertiary = {r = 0.0, g = 0.665, b = 0.0, a = 1.000},
-      quaternary = {r = 0.000, g = 0.2, b = 0.000, a = 1.000},
-    }
   },
   {
     type = "recipe",
@@ -8079,9 +8087,16 @@ data:extend({
     mip_maps = 4,
     category = "crafting",
     enabled = false,
-    energy_required = 69,
+    energy_required = 60,
     ingredients = {
-      {type = "item", name = "iron-plate", amount = 69},
+      {type = "item", name = "sp-duralumin", amount = 40},
+      {type = "item", name = "sp-titanium-frame", amount = 20},
+      {type = "item", name = "sp-nickel-cobalt", amount = 6},
+      {type = "item", name = "sp-high-power-solenoid", amount = 12},
+      {type = "item", name = "electric-engine-unit", amount = 8},
+      {type = "item", name = "sp-heating-filament", amount = 6},
+      {type = "item", name = "advanced-circuit", amount = 10},
+      {type = "item", name = "refined-concrete", amount = 60},
     },
     results = {
       {type = "item", name = "sp-induction-hardening-facility", amount = 1}
@@ -12455,22 +12470,16 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-niobium-powder",  -- #ForRegEx# - recipe
+    name = "sp-aqueous-niobium",  -- #ForRegEx# - recipe
     category = "chemistry",
     enabled = false,
-    energy_required = 4,
+    energy_required = 2,
     ingredients = {
-      {type = "item", name = "sp-sand", amount = 8},
-      {type = "fluid", name = "water", amount = 50}
+      {type = "item", name = "sp-niobium-powder", amount = 2},
+      {type = "fluid", name = "water", amount = 40}
     },
     results = {
-      {type = "item", name = "sp-niobium-powder", amount = 2}
-    },
-    crafting_machine_tint = {
-      primary = {r = 0.2, g = 0.5, b = 0.2, a = 1.000},
-      secondary = {r = 0.0, g = 0.3, b = 0.0, a = 1.000},
-      tertiary = {r = 0.0, g = 0.2, b = 0.0, a = 1.000},
-      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000}
+      {type = "fluid", name = "sp-aqueous-niobium", amount = 40}
     }
   },
   {
@@ -12482,7 +12491,7 @@ data:extend({
     scale = 0.25,
     category = "chemistry",
     enabled = false,
-    energy_required = 5,
+    energy_required = 4,
     ingredients = {
       {type = "item", name = "sp-sand", amount = 8},
       {type = "fluid", name = "fluorine", amount = 5},
