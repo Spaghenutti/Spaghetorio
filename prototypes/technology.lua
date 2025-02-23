@@ -1246,17 +1246,21 @@ data:extend({
     },
     prerequisites = {
       "sp-material-science-pack-2",
-      "sp-geological-science-pack-2"
+      "sp-big-crusher"
     },
     unit =
     {
-      count = 500,
+      count = 200,
       ingredients = {
         {"sp-automation-science-pack-2", 1},
         {"sp-logistic-science-pack-2", 1},
+        {"sp-electronic-science-pack-1", 1},
         {"sp-material-science-pack-2", 1},
         {"chemical-science-pack", 1},
-        {"sp-geological-science-pack-2", 1}
+        {"sp-geological-science-pack-2", 1},
+        {"production-science-pack", 1},
+        {"metallurgic-science-pack", 1},
+        {"electromagnetic-science-pack", 1}
       },
       time = 30
     },
@@ -6894,6 +6898,10 @@ data:extend({
         type = "unlock-recipe",
         recipe = "sp-arc-furnace",
       },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-high-power-solenoid"
+      }
     },
     prerequisites = {
       "sp-material-science-pack-2"
@@ -7215,6 +7223,37 @@ data:extend({
         {"sp-geological-science-pack-1", 1}
       },
       time = 30,
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-big-crusher",  -- #ForRegEx# - technology
+    icon = "__Spaghetorio__/graphics/krastorio/gui/previews/crusher-preview.png",
+    icon_size = 232,
+    icon_mipmaps = 4,
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-kr-big-crusher",
+      },
+    },
+    prerequisites = {
+      "sp-induction-hardening-facility"
+    },
+    unit = {
+      count = 150,
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-electronic-science-pack-1", 1},
+        {"sp-material-science-pack-1", 1},
+        {"chemical-science-pack", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"production-science-pack", 1},
+        {"metallurgic-science-pack", 1},
+        {"electromagnetic-science-pack", 1}
+      },
+      time = 45,
     },
   },
   {

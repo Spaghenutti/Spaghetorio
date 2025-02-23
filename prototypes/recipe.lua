@@ -692,47 +692,6 @@ data:extend({
   ------------------------------------------------------------------------------
   {
     type = "recipe",
-    name = "sp-silver-palladium",  -- #ForRegEx# - recipe
-    icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/icons/silver.png", 64, nil,
-                                        "__Spaghetorio__/graphics/icons/palladium.png", 64, nil),
-    icon_size = 64,
-    mip_maps = 4,
-    category = "intermediate-smelting",
-    subgroup = "processed-resource",
-    enabled = false,
-    energy_required = 5,
-    hide_from_player_crafting = true,
-    ingredients = {
-      {type = "item", name = "copper-ore", amount = 1},
-    },
-    results = {
-      {type = "item", name = "copper-plate", probability = 0.978, amount = 1},
-      {type = "item", name = "sp-silver", probability = 0.017, amount = 1},
-      {type = "item", name = "sp-palladium", probability = 0.005, amount = 1}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-palladium",  -- #ForRegEx# - recipe
-    icon = "__Spaghetorio__/graphics/icons/palladium.png",
-    icon_size = 64,
-    mip_maps = 4,
-    category = "intermediate-smelting",
-    subgroup = "processed-resource",
-    enabled = false,
-    energy_required = 4,
-    hide_from_player_crafting = true,
-    ingredients = {
-      {type = "item", name = "sp-nickel-ore", amount = 2},
-    },
-    results = {
-      {type = "item", name = "sp-nickel-ingot", probability = 0.485, amount = 1},
-      {type = "item", name = "iron-plate", probability = 0.485, amount = 1},
-      {type = "item", name = "sp-palladium", probability = 0.03, amount = 1}
-    }
-  },
-  {
-    type = "recipe",
     name = "sp-monocrystal",  -- #ForRegEx# - recipe
     category = "intermediate-smelting",
     enabled = false,
@@ -2436,6 +2395,123 @@ data:extend({
     --   tertiary = {r = 0.0, g = 0.0, b = 0.2, a = 1.000},
     --   quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
     -- },
+  },
+  {
+    type = "recipe",
+    name = "sp-enriched-rare-metals",  -- #ForRegEx# - recipe
+    icon_size = 64,
+    mip_maps = 4,
+    category = "sp-kr-fluid-filtration",
+    enabled = false,
+    energy_required = 5,
+    hide_from_player_crafting = true,
+    ingredients = {
+      {type = "item", name = "sp-raw-rare-metals", amount = 8},
+      {type = "fluid", name = "sp-nitric-acid", amount = 15},
+      {type = "fluid", name = "ammonia", amount = 20}
+    },
+    results = {
+      {type = "item", name = "sp-enriched-rare-metals", amount = 7},
+    },
+    crafting_machine_tint = {
+      primary = {r = 1.000, g = 0.5, b = 0.5, a = 1.000},
+      secondary = {r = 0.8, g = 0.3, b = 0.3, a = 1.000},
+      tertiary = {r = 0.6, g = 0.0, b = 0.0, a = 1.000},
+      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
+    },
+  },  
+  ------------------------------------------------------------------------------
+  -- MARK: sp-crushing-washing
+  ------------------------------------------------------------------------------
+  {
+    type = "recipe",
+    name = "sp-gold",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/icons/gold.png",
+    icon_size = 64,
+    scale = 0.25,
+    category = "sp-crushing-washing",
+    subgroup = "processed-resource",
+    enabled = false,
+    allow_productivity = false,
+    energy_required = 3,
+    ingredients = {
+      {type = "item", name = "stone", amount = 1},
+      {type = "fluid", name = "water", amount = 40}
+    },
+    results = {
+      {type = "item", name = "sp-sand", probability = 0.98, amount = 3},
+      {type = "item", name = "sp-gold", probability = 0.02, amount = 1}
+    },
+    crafting_machine_tint = {
+      primary = {r = 1.000, g = 1.000, b = 0.000, a = 1.000},
+      secondary = {r = 0.8, g = 0.8, b = 0.0, a = 1.000},
+      tertiary = {r = 0.7, g = 0.7, b = 0.0, a = 1.000},
+      quaternary = {r = 0.6, g = 0.6, b = 0.000, a = 1.000},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-platinum-iridium",  -- #ForRegEx# - recipe
+    icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/icons/platinum.png", 64, nil,
+                                         "__Spaghetorio__/graphics/icons/iridium.png", 64, nil),
+    icon_size = 256,
+    scale = 0.25,
+    category = "sp-crushing-washing",
+    subgroup = "processed-resource",
+    enabled = false,
+    energy_required = 4,
+    ingredients = {
+      {type = "item", name = "iron-ore", amount = 1},
+      {type = "fluid", name = "water", amount = 50}
+    },
+    results = {
+      {type = "item", name = "sp-crushed-iron-ore", probability = 0.9807, amount = 3},
+      {type = "item", name = "sp-platinum", probability = 0.019, amount = 1},
+      {type = "item", name = "sp-iridium", probability = 0.0003, amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-silver-palladium",  -- #ForRegEx# - recipe
+    icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/icons/silver.png", 64, nil,
+                                        "__Spaghetorio__/graphics/icons/palladium.png", 64, nil),
+    icon_size = 64,
+    mip_maps = 4,
+    category = "sp-crushing-washing",
+    subgroup = "processed-resource",
+    enabled = false,
+    energy_required = 5,
+    hide_from_player_crafting = true,
+    ingredients = {
+      {type = "item", name = "copper-ore", amount = 1},
+      {type = "fluid", name = "water", amount = 50}
+    },
+    results = {
+      {type = "item", name = "sp-crushed-copper-ore", probability = 0.978, amount = 1},
+      {type = "item", name = "sp-silver", probability = 0.017, amount = 1},
+      {type = "item", name = "sp-palladium", probability = 0.005, amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-palladium",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/icons/palladium.png",
+    icon_size = 64,
+    mip_maps = 4,
+    category = "sp-crushing-washing",
+    subgroup = "processed-resource",
+    enabled = false,
+    energy_required = 4,
+    hide_from_player_crafting = true,
+    ingredients = {
+      {type = "item", name = "sp-nickel-ore", amount = 2},
+      {type = "fluid", name = "water", amount = 50}
+    },
+    results = {
+      {type = "item", name = "sp-crushed-nickel-ore", probability = 0.785, amount = 1},
+      {type = "item", name = "sp-crushed-iron-ore", probability = 0.285, amount = 1},
+      {type = "item", name = "sp-palladium", probability = 0.03, amount = 1}
+    }
   },
   ------------------------------------------------------------------------------
   -- MARK: chemistry
@@ -7869,9 +7945,16 @@ data:extend({
     mip_maps = 4,
     category = "crafting",
     enabled = false,
-    energy_required = 69,
+    energy_required = 40,
     ingredients = {
-      {type = "item", name = "iron-plate", amount = 69},
+      {type = "item", name = "sp-heat-resistant-tile", amount = 24},
+      {type = "item", name = "sp-stainless-steel", amount = 40},
+      {type = "item", name = "sp-nimonic", amount = 10},
+      {type = "item", name = "sp-high-power-solenoid", amount = 6},
+      {type = "item", name = "sp-electrode", amount = 12},
+      {type = "item", name = "sp-vacuum-pump", amount = 2},
+      {type = "item", name = "sp-plate-heat-exchanger", amount = 10},
+      {type = "item", name = "refined-concrete", amount = 20}
     },
     results = {
       {type = "item", name = "sp-arc-furnace", amount = 1}
@@ -7887,6 +7970,8 @@ data:extend({
     energy_required = 69,
     ingredients = {
       {type = "item", name = "iron-plate", amount = 69},
+      {type = "item", name = "sp-lead-molybdate", amount = 10},
+
     },
     results = {
       {type = "item", name = "sp-breeder-reactor", amount = 1}
@@ -12417,51 +12502,6 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-gold",  -- #ForRegEx# - recipe
-    icon = "__Spaghetorio__/graphics/icons/gold.png",
-    icon_size = 64,
-    scale = 0.25,
-    category = "chemistry",
-    subgroup = "processed-resource",
-    enabled = false,
-    energy_required = 3,
-    ingredients = {
-      {type = "item", name = "stone", amount = 1},
-      {type = "fluid", name = "water", amount = 40}
-    },
-    results = {
-      {type = "item", name = "sp-sand", probability = 0.98, amount = 3},
-      {type = "item", name = "sp-gold", probability = 0.02, amount = 1}
-    },
-    crafting_machine_tint = {
-      primary = {r = 1.000, g = 1.000, b = 0.000, a = 1.000},
-      secondary = {r = 0.8, g = 0.8, b = 0.0, a = 1.000},
-      tertiary = {r = 0.7, g = 0.7, b = 0.0, a = 1.000},
-      quaternary = {r = 0.6, g = 0.6, b = 0.000, a = 1.000},
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-platinum-iridium",  -- #ForRegEx# - recipe
-    icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/icons/platinum.png", 64, nil,
-                                         "__Spaghetorio__/graphics/icons/iridium.png", 64, nil),
-    icon_size = 256,
-    scale = 0.25,
-    category = "crafting",
-    subgroup = "processed-resource",
-    enabled = false,
-    energy_required = 4,
-    ingredients = {
-      {type = "item", name = "stone", amount = 1},
-    },
-    results = {
-      {type = "item", name = "sp-sand", probability = 0.9807, amount = 3},
-      {type = "item", name = "sp-platinum", probability = 0.019, amount = 1},
-      {type = "item", name = "sp-iridium", probability = 0.0003, amount = 1}
-    }
-  },
-  {
-    type = "recipe",
     name = "sp-landfill-from-sand",  -- #ForRegEx# - recipe
     icons = util.icon.overlay_two_small_icons("__base__/graphics/icons/landfill.png", 64,
                                               "__base__/graphics/icons/stone.png", 64,
@@ -13133,30 +13173,6 @@ data:extend({
       {type = "item", name = "sp-neodymium", probability = 0.08, amount = 1},
       {type = "item", name = "sp-sand", probability = 0.62, amount = 1}
     }
-  },
-  {
-    type = "recipe",
-    name = "sp-enriched-rare-metals",  -- #ForRegEx# - recipe
-    icon_size = 64,
-    mip_maps = 4,
-    category = "sp-kr-fluid-filtration",
-    enabled = false,
-    energy_required = 5,
-    hide_from_player_crafting = true,
-    ingredients = {
-      {type = "item", name = "sp-raw-rare-metals", amount = 8},
-      {type = "fluid", name = "sp-nitric-acid", amount = 15},
-      {type = "fluid", name = "ammonia", amount = 20}
-    },
-    results = {
-      {type = "item", name = "sp-enriched-rare-metals", amount = 7},
-    },
-    crafting_machine_tint = {
-      primary = {r = 1.000, g = 0.5, b = 0.5, a = 1.000},
-      secondary = {r = 0.8, g = 0.3, b = 0.3, a = 1.000},
-      tertiary = {r = 0.6, g = 0.0, b = 0.0, a = 1.000},
-      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
-    },
   },
   {
     type = "recipe",
