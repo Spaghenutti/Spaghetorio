@@ -2173,6 +2173,10 @@ data:extend({
     {
       {
         type = "unlock-recipe",
+        recipe = "sp-sodium-carbonate-solution",
+      },
+      {
+        type = "unlock-recipe",
         recipe = "sp-calcium-hydroxide-solution",
       },
       {

@@ -317,6 +317,8 @@ data:extend({
       mining_time = 4,
       map_color = {r=0.1, g=0.1, b=0.2},
       mining_visualisation_tint = {r=0.1, g=0.1, b=0.2, a=1.0},
+      fluid_amount = 4,
+      required_fluid = "sp-sodium-carbonate-solution"
     },
     {
       base_density = 1.2,

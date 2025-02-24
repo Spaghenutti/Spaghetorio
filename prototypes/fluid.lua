@@ -163,6 +163,19 @@ data:extend({
   },
   {
     type = "fluid",
+    name = "sp-sodium-carbonate-solution",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    base_color = {r=1.0, g=0.4, b=0.0},
+    flow_color = {r=1.0, g=0.4, b=0.0},
+    icon = "__Spaghetorio__/graphics/icons/sodium-carbonate-solution.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "solution",
+    order = "[sodium-carbonate-solution]",
+    stack_size = 200
+  },
+  {
+    type = "fluid",
     name = "sp-potassium-hydroxide-solution",  -- #ForRegEx# - fluid
     default_temperature = 25,
     base_color = {r=1.0, g=0.4, b=0.0},

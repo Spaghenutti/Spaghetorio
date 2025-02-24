@@ -2466,6 +2466,20 @@ data:extend({
       quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000}
     }
   },
+  {
+    type = "recipe",
+    name = "sp-sodium-carbonate-solution",  -- #ForRegEx# - recipe
+    category = "sp-kr-fluid-filtration",
+    enabled = false,
+    energy_required = 1,
+    ingredients = {
+      {type = "item", name = "sp-sodium-carbonate", amount = 1},
+      {type = "fluid", name = "water", amount = 10}
+    },
+    results = {
+      {type = "fluid", name = "sp-sodium-carbonate-solution", amount = 10}
+    }
+  },
   ------------------------------------------------------------------------------
   -- MARK: sp-crushing-washing
   ------------------------------------------------------------------------------
