@@ -2476,7 +2476,7 @@ data:extend({
     icon_size = 64,
     scale = 0.25,
     category = "sp-crushing-washing",
-    subgroup = "processed-resource",
+    subgroup = "processed-metal",
     enabled = false,
     allow_productivity = false,
     energy_required = 3,
@@ -2503,7 +2503,7 @@ data:extend({
     icon_size = 256,
     scale = 0.25,
     category = "sp-crushing-washing",
-    subgroup = "processed-resource",
+    subgroup = "processed-metal",
     enabled = false,
     energy_required = 4,
     ingredients = {
@@ -2524,7 +2524,7 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "sp-crushing-washing",
-    subgroup = "processed-resource",
+    subgroup = "processed-metal",
     enabled = false,
     energy_required = 5,
     ingredients = {
@@ -2544,7 +2544,7 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "sp-crushing-washing",
-    subgroup = "processed-resource",
+    subgroup = "processed-metal",
     enabled = false,
     energy_required = 4,
     ingredients = {
@@ -13003,7 +13003,7 @@ data:extend({
     icon_size = 256,
     scale = 0.25,
     category = "sp-kr-electrolysis",
-    subgroup = "processed-resource",
+    subgroup = "processed-metal",
     enabled = false,
     energy_required = 2,
     ingredients = {
@@ -13496,7 +13496,7 @@ data:extend({
     icon_size = 64,
     scale = 0.25,
     category = "crushing",
-    subgroup = "processed-resource",
+    subgroup = "processed-metal",
     enabled = false,
     energy_required = 1,
     ingredients = {
@@ -13522,7 +13522,7 @@ data:extend({
     icon_size = 64,
     scale = 0.25,
     category = "chemistry",
-    subgroup = "processed-resource",
+    subgroup = "processed-metal",
     enabled = false,
     energy_required = 4,
     ingredients = {

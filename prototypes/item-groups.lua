@@ -70,7 +70,19 @@ data:extend({
     type = "item-subgroup",
     name = "processed-resource",
     group = "sp-resources",
-    order = "d"
+    order = "d-a"
+  },
+  {
+    type = "item-subgroup",
+    name = "processed-non-metal",
+    group = "sp-resources",
+    order = "d-b"
+  },
+  {
+    type = "item-subgroup",
+    name = "processed-metal",
+    group = "sp-resources",
+    order = "d-c"
   },
   {
     type = "item-subgroup",

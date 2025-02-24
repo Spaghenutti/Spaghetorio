@@ -14,8 +14,8 @@ data.raw.item["holmium-ore"].subgroup = "raw-resource"
 data.raw.item["scrap"].subgroup = "raw-resource"
 data.raw.item["tungsten-ore"].subgroup = "raw-resource"
 
-data.raw.item["carbon"].subgroup = "processed-resource"
-data.raw.item["lithium"].subgroup = "processed-resource"
+data.raw.item["carbon"].subgroup = "processed-non-metal"
+data.raw.item["lithium"].subgroup = "processed-non-metal"
 
 -- group material
 data.raw.item["tungsten-plate"].subgroup = "raw-material"
