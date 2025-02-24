@@ -3733,6 +3733,27 @@ data:extend({
     },
   },
   ------------------------------------------------------------------------------
+  -- MARK: electronics-with-fluid
+  ------------------------------------------------------------------------------
+  {
+    type = "recipe",
+    name = "sp-lithium-sulfur-battery",  -- #ForRegEx# - recipe
+    category = "electronics-with-fluid",
+    enabled = false,
+    energy_required = 4,
+    ingredients = {
+      {type = "item", name = "lithium", amount = 4},
+      {type = "item", name = "sp-cobalt-billet", amount = 1},
+      {type = "item", name = "sp-aluminum-sheet", amount = 1},
+      {type = "fluid", name = "sulfuric-acid", amount = 10},
+      {type = "item", name = "sp-graphene", amount = 1},
+      {type = "fluid", name = "electrolyte", amount = 8}
+    },
+    results = {
+      {type = "item", name = "sp-lithium-sulfur-battery", amount = 1}
+    },
+  },
+  ------------------------------------------------------------------------------
   -- MARK: sp-kr-fuel-refinery
   ------------------------------------------------------------------------------
   {
@@ -10011,6 +10032,40 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-holo-grip-controller", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-energy-control-unit",  -- #ForRegEx# - recipe
+    category = "alien-tech-manufacturing",
+    enabled = false,
+    energy_required = 16,
+    ingredients = {
+      {type = "item", name = "sp-gamma-radiation-source", amount = 1},
+      {type = "item", name = "sp-imersium-gear-wheel", amount = 6},
+      {type = "item", name = "sp-imersium-plate", amount = 4},
+      {type = "item", name = "superconductor", amount = 3},
+      {type = "item", name = "sp-advanced-processing-unit", amount = 5},
+      {type = "item", name = "sp-ceramic-matrix-composites", amount = 10}
+    },
+    results = {
+      {type = "item", name = "sp-energy-control-unit", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-imersium-gear-wheel",  -- #ForRegEx# - recipe
+    category = "alien-tech-manufacturing",
+    enabled = false,
+    energy_required = 6,
+    ingredients = {
+      {type = "item", name = "sp-imersium-plate", amount = 2},
+      {type = "item", name = "sp-graphene", amount = 1},
+      {type = "item", name = "sp-tungsten-powder", amount = 1},
+      {type = "item", name = "sp-diamond", amount = 2}
+    },
+    results = {
+      {type = "item", name = "sp-imersium-gear-wheel", amount = 2}
     }
   },
   {

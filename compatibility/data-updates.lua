@@ -20,6 +20,12 @@ for key, value in pairs(data.raw.furnace) do
   end
 end
 
+-- TODO: figure out why this does not work. Recipes are in intermediate-products category when in remote / map view
+data.raw["item-subgroup"]["fill-barrel"].group = "fluids"
+data.raw["item-subgroup"]["fill-barrel"].order = "z-e"
+data.raw["item-subgroup"]["empty-barrel"].group = "fluids"
+data.raw["item-subgroup"]["empty-barrel"].order = "z-f"
+
 -- Overwrite technology change by Everything on nauvis
 table.insert(data.raw.technology["agriculture"].prerequisites, "sp-automation-science-pack-2")
 

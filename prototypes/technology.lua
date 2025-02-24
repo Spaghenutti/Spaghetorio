@@ -167,7 +167,6 @@ data:extend({
   {
     type = "technology",
     name = "sp-kr-automation-core",  -- #ForRegEx# - technology
-    mod = "Krastorio2",
     icon = "__Spaghetorio__/graphics/krastorio/technologies/automation-core.png",
     icon_size = 256,
     icon_mipmaps = 4,
@@ -3635,6 +3634,52 @@ data:extend({
   },
   {
     type = "technology",
+    name = "sp-kr-imersium-processing",  -- #ForRegEx# - technology
+    mod = "Krastorio2",
+    icon = "__Spaghetorio__/graphics/krastorio/technologies/imersium-processing.png",
+    icon_size = 256,
+    icon_mipmaps = 4,
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-imersium-plate",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-imersium-beam",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-imersium-gear-wheel",
+      }
+    },
+    prerequisites = {
+      "sp-material-science-pack-3",
+      "sp-chemical-science-pack-3",
+      "sp-production-science-pack-3",
+      "sp-geological-science-pack-3",
+      "sp-kr-quarry-minerals-extraction"
+    },
+    unit = {
+      count = 500,
+      ingredients = {
+        {"sp-automation-science-pack-3", 1},
+        {"sp-logistic-science-pack-3", 1},
+        {"sp-material-science-pack-3", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-geological-science-pack-3", 1},
+        {"sp-chemical-science-pack-3", 1},
+        {"sp-production-science-pack-3", 1},
+        {"utility-science-pack", 1},
+        {"space-science-pack", 1},
+        {"sp-computer-science-pack-2", 1},
+        {"sp-nuclear-science-pack-2", 1}
+      },
+      time = 60,
+    },
+  },
+  {
+    type = "technology",
     name = "sp-rukite-processing",  -- #ForRegEx# - technology
     icon_size = 256,
     icon = "__Spaghetorio__/graphics/hr-icons/rukite-bar.png",
@@ -4428,6 +4473,37 @@ data:extend({
         {"sp-geological-science-pack-2", 1},
         {"metallurgic-science-pack", 1},
         {"electromagnetic-science-pack", 1},
+        {"production-science-pack", 1}
+      },
+      time = 30
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-kr-lithium-sulfur-battery",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghetorio__/graphics/hr-icons/big-electric-engine.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-lithium-sulfur-battery",
+      },
+    },
+    prerequisites = {
+      "sp-propane-products",
+      "electromagnetic-plant"
+    },
+    unit =
+    {
+      count = 150,
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
         {"production-science-pack", 1}
       },
       time = 30
@@ -5255,6 +5331,41 @@ data:extend({
   ------------------------------------------------------------------------------
   -- MARK: intermediate alien products
   ------------------------------------------------------------------------------
+  {
+    type = "technology",
+    name = "sp-kr-energy-control-unit",  -- #ForRegEx# - technology
+    icon = "__Spaghetorio__/graphics/krastorio/technologies/energy-control-unit.png",
+    icon_size = 256,
+    icon_mipmaps = 4,
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-energy-control-unit"
+      },
+    },
+    prerequisites = {
+      "sp-kr-imersium-processing",
+      "sp-flux-capacitor"
+    },
+    unit = {
+      count = 350,
+      ingredients = {
+        {"sp-automation-science-pack-3", 1},
+        {"sp-logistic-science-pack-3", 1},
+        {"sp-chemical-science-pack-3", 1},
+        {"sp-electronic-science-pack-3", 1},
+        {"sp-geological-science-pack-3", 1},
+        {"sp-material-science-pack-3", 1},
+        {"sp-computer-science-pack-3", 1},
+        {"sp-production-science-pack-3", 1},
+        {"sp-nuclear-science-pack-3", 1},
+        {"space-science-pack", 1},
+        {"sp-matter-science-pack", 1},
+        {"utility-science-pack", 1}
+      },
+      time = 30,
+    },
+  },
   {
     type = "technology",
     name = "sp-gravitational-devices",  -- #ForRegEx# - technology
@@ -7336,6 +7447,14 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "sp-kr-advanced-chemical-plant",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-biomethanol",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-nitric-acid",
       }
     },
     prerequisites = {
@@ -7620,7 +7739,7 @@ data:extend({
     icon_size = 256,
     icon_mipmaps = 4,
     prerequisites = {
-      -- "kr-lithium-sulfur-battery",
+      "sp-kr-lithium-sulfur-battery",
       -- "kr-advanced-lab",
       "sp-power-regulation",
       "sp-titanium-alloys",
@@ -7752,7 +7871,7 @@ data:extend({
     },
     prerequisites = {
       "automation-3",
-      -- "sp-kr-imersium-processing",
+      "sp-kr-imersium-processing",
       -- "sp-kr-energy-control-unit",
       -- "sp-kr-advanced-tech-card",
       -- "sp-kr-enriched-ores",
@@ -9861,27 +9980,7 @@ data:extend({
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-imersium-plate",
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-imersium-beam",
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-lithium-sulfur-battery",
-      },
-      {
-        type = "unlock-recipe",
         recipe = "sp-ai-core",
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-biomethanol",
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-nitric-acid",
       },
       {
         type = "unlock-recipe",
