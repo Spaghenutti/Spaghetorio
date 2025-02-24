@@ -858,7 +858,8 @@ data.raw.technology["efficiency-module-3"].unit.ingredients = {
 }
 
 data.raw.technology["rocket-fuel"].prerequisites = {
-  "utility-science-pack"
+  "utility-science-pack",
+  "sp-diborane"
 }
 data.raw.technology["rocket-fuel"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},
@@ -872,7 +873,7 @@ data.raw.technology["rocket-fuel"].unit.ingredients = {
 }
 
 data.raw.technology["uranium-processing"].prerequisites = {
-  "production-science-pack"
+  "tungsten-carbide"
 }
 data.raw.technology["uranium-processing"].research_trigger = nil
 data.raw.technology["uranium-processing"].unit = {

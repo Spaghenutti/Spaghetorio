@@ -3758,6 +3758,25 @@ data:extend({
   ------------------------------------------------------------------------------
   {
     type = "recipe",
+    name = "sp-fuel",  -- #ForRegEx# - recipe
+    category = "sp-kr-fuel-refinery",
+    enabled = false,
+    energy_required = 10,
+    ingredients = {
+      {type = "item", name = "sp-leadstone", amount = 1},
+      {type = "fluid", name = "sp-ethylene", amount = 40},
+      {type = "fluid", name = "light-oil", amount = 120},
+    },
+    results = {
+      {type = "item", name = "sp-fuel", amount = 6},
+    },
+    crafting_machine_tint = {
+      primary = {r = 0.25, g = 0.53, b = 0.15, a = 0.750},
+      secondary = {r = 0.27, g = 0.53, b = 0.12, a = 0.900},
+    }
+  },
+  {
+    type = "recipe",
     name = "sp-diborane",  -- #ForRegEx# - recipe
     category = "sp-kr-fuel-refinery",
     enabled = false,
@@ -3789,6 +3808,25 @@ data:extend({
     },
     results = {
       {type = "fluid", name = "sp-biomethanol", amount = 60},
+    },
+    crafting_machine_tint = {
+      primary = {r = 0.25, g = 0.53, b = 0.15, a = 0.750},
+      secondary = {r = 0.27, g = 0.53, b = 0.12, a = 0.900},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-bio-fuel",  -- #ForRegEx# - recipe
+    category = "sp-kr-fuel-refinery",
+    enabled = false,
+    energy_required = 8,
+    ingredients = {
+      {type = "item", name = "lithium", amount = 1},
+      {type = "item", name = "sp-potassium-cyanide", amount = 1},
+      {type = "fluid", name = "sp-biomethanol", amount = 60},
+    },
+    results = {
+      {type = "item", name = "sp-bio-fuel", amount = 5},
     },
     crafting_machine_tint = {
       primary = {r = 0.25, g = 0.53, b = 0.15, a = 0.750},
@@ -5871,7 +5909,7 @@ data:extend({
     enabled = false,
     energy_required = 3.6,
     ingredients = {
-      {type = "item", name = "copper-cable", amount = 6},
+      {type = "item", name = "copper-cable", amount = 12},
       {type = "item", name = "sp-magnetic-coupling", amount = 1},
       {type = "item", name = "sp-ball-bearing", amount = 4},
       {type = "item", name = "sp-stainless-steel-gear-wheel", amount = 5},
@@ -8750,8 +8788,11 @@ data:extend({
     ingredients = {
       {type = "item", name = "sp-stainless-steel", amount = 20},
       {type = "item", name = "sp-brass", amount = 12},
+      {type = "item", name = "sp-chromium-cobalt", amount = 10},
       {type = "item", name = "refined-concrete", amount = 16},
       {type = "item", name = "sp-pressure-tube", amount = 6},
+      {type = "item", name = "sp-flange", amount = 12},
+      {type = "item", name = "sp-precipitator", amount = 2},
       {type = "item", name = "advanced-circuit", amount = 5},
       {type = "item", name = "sp-plate-heat-exchanger", amount = 6},
       {type = "item", name = "engine-unit", amount = 4}

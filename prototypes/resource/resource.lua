@@ -383,6 +383,8 @@ data:extend({
       mining_time = 2,
       map_color = {r=0.7, g=0.9, b=0.8},
       mining_visualisation_tint = {r=0.7, g=0.9, b=0.8, a=1.0},
+      fluid_amount = 5,
+      required_fluid = "sulfuric-acid"
     },
     {
       base_density = 3.2,

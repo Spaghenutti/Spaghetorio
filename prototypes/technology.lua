@@ -1103,16 +1103,20 @@ data:extend({
       }
     },
     prerequisites = {
-      "production-science-pack"
+      "sp-geological-science-pack-2"
     },
     unit =
     {
-      count = 150,
+      count = 100,
       ingredients = {
-        {"automation-science-pack", 1},
+        {"sp-automation-science-pack-2", 1},
         {"logistic-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"sp-electronic-science-pack-1", 1},
         {"sp-material-science-pack-1", 1},
-        {"sp-geological-science-pack-1", 1}
+        {"sp-geological-science-pack-2", 1},
+        {"metallurgic-science-pack", 1},
+        {"electromagnetic-science-pack", 1}
       },
       time = 30
     },
@@ -1421,7 +1425,8 @@ data:extend({
       },
     },
     prerequisites = {
-      "sp-molybdenum-processing"
+      "sp-molybdenum-processing",
+      "sp-manganese-processing"
     },
     unit =
     {
@@ -3133,13 +3138,42 @@ data:extend({
         type = "unlock-recipe",
         recipe = "sp-boron-pillet"
       },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-diborane"
-      },
     },
     prerequisites = {
       "sp-geological-science-pack-2",
+      "sp-chemical-science-pack-2"
+    },
+    unit =
+    {
+      count = 150,
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-electronic-science-pack-1", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"metallurgic-science-pack", 1},
+        {"electromagnetic-science-pack", 1},
+        {"production-science-pack", 1}
+      },
+      time = 30
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-diborane",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghetorio__/graphics/hr-icons/diborane.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-diborane"
+      }
+    },
+    prerequisites = {
+      "sp-boron-processing",
       "sp-kr-fuel-refinery"
     },
     unit =
@@ -3147,11 +3181,11 @@ data:extend({
       count = 150,
       ingredients = {
         {"sp-automation-science-pack-2", 1},
-        {"logistic-science-pack", 1},
-        {"chemical-science-pack", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
         {"sp-electronic-science-pack-1", 1},
-        {"sp-material-science-pack-1", 1},
-        {"sp-geological-science-pack-1", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
         {"metallurgic-science-pack", 1},
         {"electromagnetic-science-pack", 1},
         {"production-science-pack", 1}
@@ -7455,13 +7489,17 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "sp-nitric-acid",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-vanadyl-sulfate",
       }
     },
     prerequisites = {
       "sp-chemical-science-pack-3"
     },
     unit = {
-      count = 200,
+      count = 1000,
       ingredients = {
         {"automation-science-pack", 1}
       },
@@ -7703,18 +7741,27 @@ data:extend({
         type = "unlock-recipe",
         recipe = "sp-kr-fuel-refinery",
       },
-      -- {
-      --   type = "unlock-recipe",
-      --   recipe = krastorio.recipes.changed_names["fuel-1"] or "fuel-1",
-      -- },
-      -- {
-      --   type = "unlock-recipe",
-      --   recipe = krastorio.recipes.changed_names["fuel-2"] or "fuel-2",
-      -- },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-fuel",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-bio-fuel",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-hydrogen-cyanide",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-potassium-cyanide",
+      }
     },
     prerequisites = {
       "production-science-pack",
-      "sp-pressure-fluid"
+      "sp-pressure-fluid",
+      "sp-cobalt-alloys"
     },
     unit = {
       count = 125,
@@ -9952,23 +9999,11 @@ data:extend({
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-vanadyl-sulfate",
-      },
-      {
-        type = "unlock-recipe",
         recipe = "sp-potassium-permanganate-solution",
       },
       {
         type = "unlock-recipe",
         recipe = "sp-potassium-dichromate-solution",
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-hydrogen-cyanide",
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-potassium-cyanide",
       },
       {
         type = "unlock-recipe",

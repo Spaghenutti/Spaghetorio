@@ -4984,7 +4984,7 @@ data:extend({
     subgroup = "fuel-processing",
     order = "b[chemistry]-b[fuel]",
     fuel_category = "chemical",
-    fuel_value = "12MJ",
+    fuel_value = "20MJ",
     stack_size = 100
   },
   {
@@ -4996,7 +4996,7 @@ data:extend({
     subgroup = "fuel-processing",
     order = "b[chemistry]-b[bio-fuel]",
     fuel_category = "chemical",
-    fuel_value = "12MJ",
+    fuel_value = "20MJ",
     stack_size = 100
   },
   {
@@ -5008,7 +5008,7 @@ data:extend({
     subgroup = "fuel-processing",
     order = "b[chemistry]-c[advanced-fuel]",
     fuel_category = "chemical",
-    fuel_value = "25MJ",
+    fuel_value = "60MJ",
     stack_size = 100
   },
   {
