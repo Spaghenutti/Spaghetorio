@@ -42,6 +42,10 @@ data.raw.tool["agricultural-science-pack"].subgroup = "intermediate-science"
 data.raw.tool["cryogenic-science-pack"].subgroup = "intermediate-science"
 data.raw.tool["promethium-science-pack"].subgroup = "futuristic-science"
 
+-- MARK: change recipe subgroups
+data.raw.recipe["steam-condensation"].subgroup = "fluid"
+data.raw.recipe["ice-melting"].subgroup = "fluid"
+
 -- MARK: Change fuel values
 data.raw.item["carbon"].fuel_value = "4MJ"
 

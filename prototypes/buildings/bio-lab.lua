@@ -83,7 +83,7 @@ data:extend({
         },
       },
     },
-    crafting_categories = { "sp-kr-bioprocessing" },
+    crafting_categories = {"sp-kr-bioprocessing"},
     scale_entity_info_icon = true,
     vehicle_impact_sound = sounds.generic_impact,
     working_sound = bio_lab_working_sound,

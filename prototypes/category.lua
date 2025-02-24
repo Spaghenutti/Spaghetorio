@@ -38,9 +38,8 @@ data:extend({
     name = "sp-kr-bioprocessing",
   },
   {
-    -- Crushing, used by crusher
     type = "recipe-category",
-    name = "sp-kr-crushing",
+    name = "sp-crushing-washing",
   },
   {
     -- Void Crushing, used by crusher

@@ -131,6 +131,7 @@ data:extend({
       "sp-nuclear-science-pack-2",
       "production-science-pack",
       "utility-science-pack",
+      "space-science-pack",
 
       "sp-automation-science-pack-3",
       "sp-logistic-science-pack-3",
@@ -148,9 +149,9 @@ data:extend({
       "sp-nuclear-science-pack-3",
       "sp-utility-science-pack-3",
       "sp-space-science-pack-3",
-      "sp-matter-science-pack",
 
-      "space-science-pack",  -- Optimization tech card
+      "sp-matter-science-pack",
+      "sp-optimization-science-pack",
       "sp-advanced-science-pack",
       "sp-singularity-science-pack",
       "sp-uniformity-science-pack",

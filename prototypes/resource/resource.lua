@@ -298,6 +298,8 @@ data:extend({
       mining_time = 2,
       map_color = {r=1.0, g=1.0, b=0.8},
       mining_visualisation_tint = {r=1.0, g=1.0, b=0.8, a=1.0},
+      fluid_amount = 4,
+      required_fluid = "sp-hydrogen-chloride"
     },
     {
       base_density = 1,
@@ -396,6 +398,8 @@ data:extend({
       mining_time = 5,
       map_color = {r=0.35, g=0.15, b=0.05},
       mining_visualisation_tint = {r=0.35, g=0.15, b=0.05, a=1.0},
+      fluid_amount = 3,
+      required_fluid = "sp-potassium-hydroxide-solution"
     },
     {
       base_density = 1.5,
@@ -413,6 +417,8 @@ data:extend({
       mining_time = 3,
       map_color = {r=0.1, g=0.8, b=0.8},
       mining_visualisation_tint = {r=0.1, g=0.8, b=0.8, a=1.0},
+      fluid_amount = 5,
+      required_fluid = "sp-bleach"
     },
     {
       base_density = 1.2,
@@ -495,6 +501,8 @@ data:extend({
       mining_time = 2,
       map_color = {r=0.4, g=0.3, b=0.3},
       mining_visualisation_tint = {r=0.6, g=0.45, b=0.45, a=1.0},
+      fluid_amount = 2,
+      required_fluid = "sp-calcium-hydroxide-solution"
     },
     {
       base_density = 4.5,

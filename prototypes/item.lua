@@ -3137,6 +3137,26 @@ data:extend({
   },
   {
     type = "item",
+    name = "sp-power-supply",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/power-supply.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "electronic-optical-component",
+    order = "z-[power-supply]",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "sp-amplifier",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/amplifier.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "electronic-optical-component",
+    order = "z-[amplifier]",
+    stack_size = 100
+  },
+  {
+    type = "item",
     name = "sp-empty-circuit-board",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/empty-circuit-board.png",
     icon_size = 64,
@@ -5359,7 +5379,7 @@ data:extend({
   ------------------------------------------------------------------------------
   {
     type = "item",
-    name = "sp-blank-tech-card",
+    name = "sp-blank-tech-card",  -- #ForRegEx# - item
     icon =  "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/blank-tech-card/blank-tech-card-1.png",
     icon_size = 64,
     icon_mipmaps = 4,
@@ -5369,7 +5389,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-biters-research-data",
+    name = "sp-biters-research-data",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/krastorio/icons/cards/biters-research-data.png",
     icon_size = 64,
     icon_mipmaps = 4,
@@ -5379,7 +5399,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-matter-research-data",
+    name = "sp-matter-research-data",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/krastorio/icons/cards/matter-research-data.png",
     icon_size = 64,
     icon_mipmaps = 4,
@@ -5389,7 +5409,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-space-research-data",
+    name = "sp-space-research-data",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/krastorio/icons/cards/space-research-data.png",
     icon_size = 64,
     icon_mipmaps = 4,

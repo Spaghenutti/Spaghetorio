@@ -60,50 +60,88 @@ data.raw.technology["lightning-collector"].prerequisites = {
   "sp-electromagnetic-science-pack-2",
 }
 data.raw.technology["lightning-collector"].unit.ingredients = {
-{"sp-automation-science-pack-2", 1},
-{"sp-logistic-science-pack-2", 1},
-{"sp-chemical-science-pack-2", 1},
-{"sp-material-science-pack-2", 1},
-{"production-science-pack", 1},
-{"sp-geological-science-pack-2", 1},
-{"sp-electronic-science-pack-2", 1},
-{"sp-metallurgic-science-pack-2", 1},
-{"sp-electromagnetic-science-pack-2", 1},
-{"utility-science-pack", 1}
+  {"sp-automation-science-pack-2", 1},
+  {"sp-logistic-science-pack-2", 1},
+  {"sp-chemical-science-pack-2", 1},
+  {"sp-material-science-pack-2", 1},
+  {"production-science-pack", 1},
+  {"sp-geological-science-pack-2", 1},
+  {"sp-electronic-science-pack-2", 1},
+  {"sp-metallurgic-science-pack-2", 1},
+  {"sp-electromagnetic-science-pack-2", 1},
+  {"utility-science-pack", 1}
 }
 
 data.raw.technology["asteroid-reprocessing"].prerequisites = {
   "space-science-pack",
 }
 data.raw.technology["asteroid-reprocessing"].unit.ingredients = {
-{"sp-automation-science-pack-2", 1},
-{"sp-logistic-science-pack-2", 1},
-{"sp-chemical-science-pack-2", 1},
-{"sp-material-science-pack-2", 1},
-{"production-science-pack", 1},
-{"sp-geological-science-pack-2", 1},
-{"sp-electronic-science-pack-2", 1},
-{"sp-metallurgic-science-pack-2", 1},
-{"sp-electromagnetic-science-pack-2", 1},
-{"space-science-pack", 1},
-{"utility-science-pack", 1}
+  {"sp-automation-science-pack-2", 1},
+  {"sp-logistic-science-pack-2", 1},
+  {"sp-chemical-science-pack-2", 1},
+  {"sp-material-science-pack-2", 1},
+  {"production-science-pack", 1},
+  {"sp-geological-science-pack-2", 1},
+  {"sp-electronic-science-pack-2", 1},
+  {"sp-metallurgic-science-pack-2", 1},
+  {"sp-electromagnetic-science-pack-2", 1},
+  {"space-science-pack", 1},
+  {"utility-science-pack", 1}
 }
 
 data.raw.technology["advanced-asteroid-processing"].prerequisites = {
   "asteroid-reprocessing",
 }
 data.raw.technology["advanced-asteroid-processing"].unit.ingredients = {
-{"sp-automation-science-pack-2", 1},
-{"sp-logistic-science-pack-2", 1},
-{"sp-chemical-science-pack-2", 1},
-{"sp-material-science-pack-2", 1},
-{"production-science-pack", 1},
-{"sp-geological-science-pack-2", 1},
-{"sp-electronic-science-pack-2", 1},
-{"sp-metallurgic-science-pack-2", 1},
-{"sp-electromagnetic-science-pack-2", 1},
-{"space-science-pack", 1},
-{"utility-science-pack", 1}
+  {"sp-automation-science-pack-2", 1},
+  {"sp-logistic-science-pack-2", 1},
+  {"sp-chemical-science-pack-2", 1},
+  {"sp-material-science-pack-2", 1},
+  {"production-science-pack", 1},
+  {"sp-geological-science-pack-2", 1},
+  {"sp-electronic-science-pack-2", 1},
+  {"sp-metallurgic-science-pack-2", 1},
+  {"sp-electromagnetic-science-pack-2", 1},
+  {"space-science-pack", 1},
+  {"utility-science-pack", 1}
+}
+
+data.raw.technology["turbo-transport-belt"].prerequisites = {
+  "logistics-3",
+  "sp-electromagnetic-science-pack-2",
+  "sp-metallurgic-science-pack-2"
+}
+data.raw.technology["turbo-transport-belt"].unit.ingredients = {
+  {"sp-automation-science-pack-2", 1},
+  {"sp-logistic-science-pack-2", 1},
+  {"sp-material-science-pack-1", 1},
+  {"sp-geological-science-pack-1", 1},
+  {"sp-electronic-science-pack-1", 1},
+  {"chemical-science-pack", 1},
+  {"production-science-pack", 1},
+  {"sp-metallurgic-science-pack-2", 1},
+  {"sp-electromagnetic-science-pack-2", 1}
+}
+
+data.raw.technology["cryogenic-plant"].prerequisites = {
+  "sp-electromagnetic-science-pack-2",
+  "sp-metallurgic-science-pack-2",
+  "heating-tower"
+}
+data.raw.technology["cryogenic-plant"].research_trigger = nil
+data.raw.technology["cryogenic-plant"].unit = {
+  count = 250,
+  ingredients = {
+    {"sp-automation-science-pack-2", 1},
+    {"sp-logistic-science-pack-2", 1},
+    {"sp-chemical-science-pack-2", 1},
+    {"sp-material-science-pack-2", 1},
+    {"sp-geological-science-pack-2", 1},
+    {"sp-electronic-science-pack-2", 1},
+    {"sp-metallurgic-science-pack-2", 1},
+    {"sp-electromagnetic-science-pack-2", 1}
+  },
+  time = 30
 }
 
 --------------------------------------------------------------------------------

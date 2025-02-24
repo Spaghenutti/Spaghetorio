@@ -1,7 +1,7 @@
 
 data:extend({
   {
-    type = "furnace",
+    type = "assembling-machine",
     name = "sp-kr-big-crusher",
     icon_size = 64,
     icon_mipmaps = 4,
@@ -19,6 +19,31 @@ data:extend({
     collision_box = { { -3.25, -3.25 }, { 3.25, 3.25 } },
     selection_box = { { -3.5, -3.5 }, { 3.5, 3.5 } },
     fast_replaceable_group = "sp-kr-big-crusher",
+    fluid_boxes = {
+      -- Inputs
+      {
+        production_type = "input",
+        pipe_picture = sp_kr_pipe_path,
+        pipe_covers = pipecoverspictures(),
+        volume = 1000,
+        pipe_connections = {
+          {flow_direction="input", direction = defines.direction.west, position = {-3, 0}},
+          {flow_direction="input", direction = defines.direction.north, position = {0, -3}}
+        },
+      },
+      -- Outputs
+      {
+        production_type = "output",
+        pipe_picture = sp_kr_pipe_path,
+        pipe_covers = pipecoverspictures(),
+        volume = 1000,
+        pipe_connections = {
+          {flow_direction="output", direction = defines.direction.east, position = {3, 0}},
+          {flow_direction="output", direction = defines.direction.south, position = {0, 3}}
+        },
+      },
+    },
+    fluid_boxes_off_when_no_fluid_recipe = true,
     graphics_set = {
       animation = {
         layers = {
@@ -46,7 +71,8 @@ data:extend({
       },
     },
     crafting_categories = {
-      "sp-kr-crushing",
+      "crushing",
+      "sp-crushing-washing",
       "sp-kr-void-crushing"
     },
     vehicle_impact_sound = { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },

@@ -73,6 +73,10 @@ data:extend({
         type = "unlock-recipe",
         recipe = "iron-chest"
       },
+      {
+        type = "unlock-recipe",
+        recipe = "burner-inserter"
+      },
     },
     prerequisites = {
       "sp-iron-extruding",
@@ -514,8 +518,7 @@ data:extend({
       }
     },
     prerequisites = {
-      "sp-relay",
-      "sp-transformer",
+      "sp-power-regulation",
       "electric-energy-distribution-2"
     },
     unit =
@@ -523,10 +526,13 @@ data:extend({
       count = 75,
       ingredients = {
         {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"sp-material-science-pack-2", 1},
+        {"logistic-science-pack", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-electronic-science-pack-1", 1},
+        {"sp-material-science-pack-1", 1},
         {"sp-geological-science-pack-2", 1},
-        {"sp-electronic-science-pack-2", 1}
+        {"metallurgic-science-pack", 1},
+        {"electromagnetic-science-pack", 1}
       },
       time = 30
     },
@@ -630,18 +636,20 @@ data:extend({
       },
     },
     prerequisites = {
-      "production-science-pack"
+      "sp-alkaline-solutions"
     },
     unit =
     {
-      count = 300,
+      count = 150,
       ingredients = {
         {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
+        {"logistic-science-pack", 1},
         {"chemical-science-pack", 1},
+        {"sp-electronic-science-pack-1", 1},
         {"sp-material-science-pack-1", 1},
-        {"production-science-pack", 1},
-        {"sp-geological-science-pack-1", 1}
+        {"sp-geological-science-pack-1", 1},
+        {"metallurgic-science-pack", 1},
+        {"electromagnetic-science-pack", 1}
       },
       time = 30
     },
@@ -664,17 +672,20 @@ data:extend({
       },
     },
     prerequisites = {
-      "sp-material-science-pack-2"
+      "sp-titanium-processing"
     },
     unit =
     {
-      count = 500,
+      count = 250,
       ingredients = {
         {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
+        {"logistic-science-pack", 1},
         {"chemical-science-pack", 1},
-        {"production-science-pack", 1},
-        {"sp-material-science-pack-2", 1}
+        {"sp-electronic-science-pack-1", 1},
+        {"sp-material-science-pack-1", 1},
+        {"sp-geological-science-pack-1", 1},
+        {"metallurgic-science-pack", 1},
+        {"electromagnetic-science-pack", 1}
       },
       time = 30
     },
@@ -832,15 +843,19 @@ data:extend({
     {
       {
         type = "unlock-recipe",
-        recipe = "sp-niobium-powder"
-      },
-      {
-        type = "unlock-recipe",
         recipe = "sp-niobium-billet"
       },
       {
         type = "unlock-recipe",
         recipe = "sp-tantalum-billet"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-niobium-powder"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-aqueous-niobium"
       },
       {
         type = "unlock-recipe",
@@ -855,16 +870,21 @@ data:extend({
         recipe = "sp-capacitor-from-tantalum"
       }
     },
-    prerequisites = {"sp-chemical-science-pack-2"},
+    prerequisites = {
+      "sp-geological-science-pack-2"
+    },
     unit =
     {
       count = 750,
       ingredients = {
         {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"sp-material-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1},
-        {"sp-geological-science-pack-2", 1}
+        {"logistic-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"sp-material-science-pack-1", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"sp-electronic-science-pack-1", 1},
+        {"metallurgic-science-pack", 1},
+        {"electromagnetic-science-pack", 1}
       },
       time = 30
     },
@@ -1040,22 +1060,28 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "sp-molybdenum-pillet"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-maraging-steel"
       }
     },
     prerequisites = {
-      "sp-alkaline-solutions"
+      "sp-geological-science-pack-2",
+      "sp-bleach"
     },
     unit =
     {
       count = 150,
       ingredients = {
         {"sp-automation-science-pack-2", 1},
-        {"logistic-science-pack", 1},
-        {"sp-material-science-pack-1", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
         {"sp-electronic-science-pack-1", 1},
-        {"sp-geological-science-pack-1", 1},
-        {"chemical-science-pack", 1},
-        {"metallurgic-science-pack", 1}
+        {"sp-material-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"metallurgic-science-pack", 1},
+        {"electromagnetic-science-pack", 1}
       },
       time = 30
     },
@@ -1236,17 +1262,21 @@ data:extend({
     },
     prerequisites = {
       "sp-material-science-pack-2",
-      "sp-geological-science-pack-2"
+      "sp-big-crusher"
     },
     unit =
     {
-      count = 500,
+      count = 200,
       ingredients = {
         {"sp-automation-science-pack-2", 1},
         {"sp-logistic-science-pack-2", 1},
+        {"sp-electronic-science-pack-1", 1},
         {"sp-material-science-pack-2", 1},
         {"chemical-science-pack", 1},
-        {"sp-geological-science-pack-2", 1}
+        {"sp-geological-science-pack-2", 1},
+        {"production-science-pack", 1},
+        {"metallurgic-science-pack", 1},
+        {"electromagnetic-science-pack", 1}
       },
       time = 30
     },
@@ -1320,12 +1350,13 @@ data:extend({
       count = 500,
       ingredients = {
         {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"sp-electronic-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1},
-        {"sp-geological-science-pack-2", 1},
+        {"logistic-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"sp-electronic-science-pack-1", 1},
         {"sp-material-science-pack-2", 1},
-        {"production-science-pack", 1}
+        {"sp-geological-science-pack-1", 1},
+        {"metallurgic-science-pack", 1},
+        {"electromagnetic-science-pack", 1}
       },
       time = 30
     },
@@ -1395,15 +1426,16 @@ data:extend({
     },
     unit =
     {
-      count = 200,
+      count = 500,
       ingredients = {
         {"sp-automation-science-pack-2", 1},
         {"logistic-science-pack", 1},
-        {"sp-material-science-pack-1", 1},
+        {"sp-chemical-science-pack-2", 1},
         {"sp-electronic-science-pack-1", 1},
-        {"sp-geological-science-pack-1", 1},
-        {"chemical-science-pack", 1},
-        {"metallurgic-science-pack", 1}
+        {"sp-material-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"metallurgic-science-pack", 1},
+        {"electromagnetic-science-pack", 1}
       },
       time = 30
     },
@@ -1428,22 +1460,28 @@ data:extend({
         type = "unlock-recipe",
         recipe = "sp-nimonic"
       },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-titanium-aluminum-vanadium",
+      }
     },
     prerequisites = {
       "sp-titanium-machining",
       "sp-niobium-and-tantalum",
-      "advanced-material-processing-2"
+      "sp-metallurgic-science-pack-2"
     },
     unit =
     {
-      count = 1000,
+      count = 500,
       ingredients = {
         {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"sp-material-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1},
+        {"logistic-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"sp-material-science-pack-1", 1},
         {"sp-geological-science-pack-2", 1},
-        {"production-science-pack", 1}
+        {"sp-electronic-science-pack-1", 1},
+        {"sp-metallurgic-science-pack-2", 1},
+        {"electromagnetic-science-pack", 1}
       },
       time = 30
     },
@@ -1467,19 +1505,20 @@ data:extend({
       },
     },
     prerequisites = {
-      "sp-niobium-and-tantalum",
-      "utility-science-pack"
+      "sp-niobium-and-tantalum"
     },
     unit =
     {
       count = 600,
       ingredients = {
         {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"sp-material-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1},
-        {"production-science-pack", 1},
-        {"utility-science-pack", 1}
+        {"logistic-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"sp-material-science-pack-1", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"sp-electronic-science-pack-1", 1},
+        {"metallurgic-science-pack", 1},
+        {"electromagnetic-science-pack", 1}
       },
       time = 30
     },
@@ -1493,21 +1532,25 @@ data:extend({
     {
       {
         type = "unlock-recipe",
-        recipe = "sp-pressure-tube"
+        recipe = "sp-pressure-valve",
       },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-pressure-tube",
+      }
     },
     prerequisites = {
-      "production-science-pack"
+      "sp-rubber"
     },
     unit =
     {
       count = 100,
       ingredients = {
-        {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"sp-material-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1},
-        {"production-science-pack", 1}
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"sp-material-science-pack-1", 1},
+        {"sp-geological-science-pack-1", 1}
       },
       time = 30
     },
@@ -1611,13 +1654,16 @@ data:extend({
     prerequisites = {"sp-chemical-science-pack-2"},
     unit =
     {
-      count = 250,
+      count = 100,
       ingredients = {
         {"sp-automation-science-pack-2", 1},
         {"sp-logistic-science-pack-2", 1},
         {"sp-chemical-science-pack-2", 1},
+        {"sp-electronic-science-pack-1", 1},
         {"sp-material-science-pack-2", 1},
-        {"production-science-pack", 1}
+        {"sp-geological-science-pack-1", 1},
+        {"metallurgic-science-pack", 1},
+        {"electromagnetic-science-pack", 1}
       },
       time = 30
     },
@@ -1651,7 +1697,6 @@ data:extend({
   },
   {
     type = "technology",
-    -- This tech does not exist in krastorio
     name = "sp-rare-metals",  -- #ForRegEx# - technology
     icon_size = 64, -- TODO: Fix icon
     icon = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/rare-metals/rare-metals-2.png",
@@ -1678,20 +1723,21 @@ data:extend({
       }
     },
     prerequisites = {
-      "sp-geological-science-pack-2",
+      "sp-electronic-science-pack-2",
     },
     unit =
     {
       count = 750,
       ingredients = {
         {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
+        {"logistic-science-pack", 1},
         {"sp-chemical-science-pack-2", 1},
         {"sp-electronic-science-pack-2", 1},
-        {"sp-material-science-pack-2", 1},
+        {"sp-material-science-pack-1", 1},
         {"sp-geological-science-pack-2", 1},
-        {"production-science-pack", 1},
-        {"utility-science-pack", 1}
+        {"metallurgic-science-pack", 1},
+        {"electromagnetic-science-pack", 1},
+        {"production-science-pack", 1}
       },
       time = 15
     },
@@ -2124,6 +2170,10 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "sp-potassium-hydroxide-solution",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-potassium-hydroxide",
       }
     },
     prerequisites = {
@@ -2540,19 +2590,20 @@ data:extend({
     },
     prerequisites = {
       "sp-basic-ceramics",
-      "utility-science-pack"
+      "sp-induction-hardening-facility"
     },
     unit =
     {
-      count = 1000,
+      count = 500,
       ingredients = {
         {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1},
-        {"sp-geological-science-pack-2", 1},
+        {"logistic-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"sp-electronic-science-pack-1", 1},
         {"sp-material-science-pack-2", 1},
-        {"production-science-pack", 1},
-        {"utility-science-pack", 1}
+        {"sp-geological-science-pack-1", 1},
+        {"metallurgic-science-pack", 1},
+        {"electromagnetic-science-pack", 1}
       },
       time = 30
     },
@@ -2720,10 +2771,13 @@ data:extend({
       count = 150,
       ingredients = {
         {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
+        {"logistic-science-pack", 1},
         {"chemical-science-pack", 1},
+        {"sp-electronic-science-pack-1", 1},
         {"sp-material-science-pack-2", 1},
-        {"sp-geological-science-pack-1", 1}
+        {"sp-geological-science-pack-1", 1},
+        {"metallurgic-science-pack", 1},
+        {"electromagnetic-science-pack", 1}
       },
       time = 30
     },
@@ -3077,11 +3131,13 @@ data:extend({
       count = 150,
       ingredients = {
         {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
+        {"logistic-science-pack", 1},
         {"sp-chemical-science-pack-2", 1},
-        {"sp-material-science-pack-2", 1},
+        {"sp-electronic-science-pack-1", 1},
+        {"sp-material-science-pack-1", 1},
         {"sp-geological-science-pack-2", 1},
-        {"production-science-pack", 1}
+        {"metallurgic-science-pack", 1},
+        {"electromagnetic-science-pack", 1}
       },
       time = 30
     },
@@ -3108,17 +3164,21 @@ data:extend({
       },
     },
     prerequisites = {
-      "sp-geological-science-pack-2"
+      "sp-geological-science-pack-2",
+      "sp-kr-fuel-refinery"
     },
     unit =
     {
       count = 150,
       ingredients = {
         {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1},
-        {"sp-material-science-pack-2", 1},
-        {"sp-geological-science-pack-2", 1},
+        {"logistic-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"sp-electronic-science-pack-1", 1},
+        {"sp-material-science-pack-1", 1},
+        {"sp-geological-science-pack-1", 1},
+        {"metallurgic-science-pack", 1},
+        {"electromagnetic-science-pack", 1},
         {"production-science-pack", 1}
       },
       time = 30
@@ -3150,11 +3210,13 @@ data:extend({
       count = 500,
       ingredients = {
         {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
+        {"logistic-science-pack", 1},
         {"sp-chemical-science-pack-2", 1},
-        {"sp-material-science-pack-2", 1},
+        {"sp-electronic-science-pack-1", 1},
+        {"sp-material-science-pack-1", 1},
         {"sp-geological-science-pack-2", 1},
-        {"production-science-pack", 1}
+        {"metallurgic-science-pack", 1},
+        {"electromagnetic-science-pack", 1}
       },
       time = 30
     },
@@ -3403,17 +3465,19 @@ data:extend({
         recipe = "sp-epoxy"
       }
     },
-    prerequisites = {"sp-chemical-science-pack-2"},
+    prerequisites = {"sp-glycerin"},
     unit =
     {
-      count = 500,
+      count = 200,
       ingredients = {
         {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1},
-        {"sp-electronic-science-pack-2", 1},
-        {"sp-material-science-pack-2", 1},
-        {"production-science-pack", 1}
+        {"logistic-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"sp-electronic-science-pack-1", 1},
+        {"sp-material-science-pack-1", 1},
+        {"sp-geological-science-pack-1", 1},
+        {"metallurgic-science-pack", 1},
+        {"electromagnetic-science-pack", 1}
       },
       time = 30
     },
@@ -3711,11 +3775,12 @@ data:extend({
       ingredients = {
         {"sp-automation-science-pack-2", 1},
         {"sp-logistic-science-pack-2", 1},
-        {"sp-material-science-pack-2", 1},
         {"sp-chemical-science-pack-2", 1},
-        {"sp-electronic-science-pack-2", 1},
-        {"sp-geological-science-pack-2", 1},
-        {"production-science-pack", 1}
+        {"sp-electronic-science-pack-1", 1},
+        {"sp-material-science-pack-1", 1},
+        {"sp-geological-science-pack-1", 1},
+        {"metallurgic-science-pack", 1},
+        {"electromagnetic-science-pack", 1}
       },
       time = 30
     },
@@ -4110,20 +4175,21 @@ data:extend({
     prerequisites = {
       "sp-aluminum-alloys",
       "sp-niobium-alloys",
-      "sp-titanium-nitride"
+      "sp-titanium-nitride",
+      "sp-induction-hardening-facility"
     },
     unit =
     {
       count = 150,
       ingredients = {
         {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1},
+        {"logistic-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"sp-electronic-science-pack-1", 1},
         {"sp-material-science-pack-2", 1},
-        {"production-science-pack", 1},
         {"sp-geological-science-pack-2", 1},
-        {"sp-electronic-science-pack-2", 1},
-        {"utility-science-pack", 1}
+        {"metallurgic-science-pack", 1},
+        {"electromagnetic-science-pack", 1}
       },
       time = 30
     },
@@ -4141,19 +4207,20 @@ data:extend({
       },
     },
     prerequisites = {
-      "sp-material-science-pack-2",
-      "sp-chemical-science-pack-2",
-      "sp-composites",
+      "sp-chemical-science-pack-2"
     },
     unit =
     {
-      count = 300,
+      count = 200,
       ingredients = {
         {"sp-automation-science-pack-2", 1},
         {"sp-logistic-science-pack-2", 1},
-        {"sp-material-science-pack-2", 1},
         {"sp-chemical-science-pack-2", 1},
-        {"production-science-pack", 1}
+        {"sp-electronic-science-pack-1", 1},
+        {"sp-material-science-pack-1", 1},
+        {"sp-geological-science-pack-1", 1},
+        {"metallurgic-science-pack", 1},
+        {"electromagnetic-science-pack", 1}
       },
       time = 30
     },
@@ -4185,9 +4252,13 @@ data:extend({
       ingredients = {
         {"sp-automation-science-pack-2", 1},
         {"sp-logistic-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1},
+        {"sp-electronic-science-pack-1", 1},
         {"sp-material-science-pack-2", 1},
-        {"production-science-pack", 1}
+        {"chemical-science-pack", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"production-science-pack", 1},
+        {"metallurgic-science-pack", 1},
+        {"electromagnetic-science-pack", 1}
       },
       time = 30
     },
@@ -4232,7 +4303,7 @@ data:extend({
   },
   {
     type = "technology",
-    name = "sp-relay",  -- #ForRegEx# - technology
+    name = "sp-power-regulation",  -- #ForRegEx# - technology
     icon_size = 256,
     icon = "__Spaghetorio__/graphics/hr-icons/relay.png",
     effects =
@@ -4240,6 +4311,22 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "sp-relay"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-transformer"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-power-supply"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-amplifier"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-dynamo"
       },
     },
     prerequisites = {
@@ -4249,72 +4336,16 @@ data:extend({
     },
     unit =
     {
-      count = 50,
+      count = 250,
       ingredients = {
-        {"automation-science-pack", 1},
+        {"sp-automation-science-pack-2", 1},
         {"logistic-science-pack", 1},
-        {"chemical-science-pack", 1},
+        {"sp-chemical-science-pack-2", 1},
         {"sp-electronic-science-pack-1", 1},
-        {"sp-material-science-pack-1", 1}
-      },
-      time = 30
-    },
-  },
-  {
-    type = "technology",
-    name = "sp-transformer",  -- #ForRegEx# - technology
-    icon_size = 256,
-    icon = "__Spaghetorio__/graphics/hr-icons/transformer.png",
-    effects =
-    {
-      {
-        type = "unlock-recipe",
-        recipe = "sp-transformer"
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-vacuum-tube"
-      },
-    },
-    prerequisites = {
-      "sp-insulation-sheet",
-      "sp-electronic-science-pack-2"
-    },
-    unit =
-    {
-      count = 150,
-      ingredients = {
-        {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"sp-electronic-science-pack-2", 1},
         {"sp-material-science-pack-1", 1},
-        {"production-science-pack", 1}
-      },
-      time = 30
-    },
-  },
-  {
-    type = "technology",
-    name = "sp-dynamo",  -- #ForRegEx# - technology
-    icon_size = 256,
-    icon = "__Spaghetorio__/graphics/hr-icons/dynamo.png",
-    effects =
-    {
-      {
-        type = "unlock-recipe",
-        recipe = "sp-dynamo"
-      },
-    },
-    prerequisites = {"sp-transformer"},
-    unit =
-    {
-      count = 200,
-      ingredients = {
-        {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"sp-electronic-science-pack-2", 1},
-        {"sp-material-science-pack-1", 1},
-        {"production-science-pack", 1}
+        {"sp-geological-science-pack-2", 1},
+        {"metallurgic-science-pack", 1},
+        {"electromagnetic-science-pack", 1}
       },
       time = 30
     },
@@ -4361,12 +4392,11 @@ data:extend({
         type = "unlock-recipe",
         recipe = "sp-heavy-gearbox"
       },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-differential"
-      },
     },
-    prerequisites = {"sp-heavy-ball-bearing"},
+    prerequisites = {
+      "sp-heavy-ball-bearing",
+      "sp-molybdenum-processing"
+    },
     unit =
     {
       count = 250,
@@ -4374,11 +4404,82 @@ data:extend({
         {"sp-automation-science-pack-2", 1},
         {"sp-logistic-science-pack-2", 1},
         {"sp-chemical-science-pack-2", 1},
+        {"sp-electronic-science-pack-1", 1},
         {"sp-material-science-pack-2", 1},
-        {"production-science-pack", 1},
         {"sp-geological-science-pack-2", 1},
-        {"sp-electronic-science-pack-2", 1},
-        {"utility-science-pack", 1}
+        {"metallurgic-science-pack", 1},
+        {"electromagnetic-science-pack", 1}
+      },
+      time = 30
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-big-electric-engine-unit",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghetorio__/graphics/hr-icons/big-electric-engine.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-big-electric-engine-unit"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-vacuum-pump"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-electromagnetic-brake"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-magnetic-coupling"
+      }
+    },
+    prerequisites = {
+      "production-science-pack"
+    },
+    unit =
+    {
+      count = 150,
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"logistic-science-pack", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-electronic-science-pack-1", 1},
+        {"sp-material-science-pack-1", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"metallurgic-science-pack", 1},
+        {"electromagnetic-science-pack", 1},
+        {"production-science-pack", 1}
+      },
+      time = 30
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-high-pressure-fan",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghetorio__/graphics/hr-icons/high-pressure-fan.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-high-pressure-fan"
+      },
+    },
+    prerequisites = {
+      "sp-turbine-parts"
+    },
+    unit =
+    {
+      count = 100,
+      ingredients = {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"sp-material-science-pack-1", 1},
+        {"sp-geological-science-pack-1", 1}
       },
       time = 30
     },
@@ -4516,10 +4617,12 @@ data:extend({
       ingredients = {
         {"sp-automation-science-pack-2", 1},
         {"sp-logistic-science-pack-2", 1},
-        {"sp-material-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1},
-        {"sp-geological-science-pack-2", 1},
-        {"production-science-pack", 1}
+        {"chemical-science-pack", 1},
+        {"sp-electronic-science-pack-1", 1},
+        {"sp-material-science-pack-1", 1},
+        {"sp-geological-science-pack-1", 1},
+        {"metallurgic-science-pack", 1},
+        {"electromagnetic-science-pack", 1}
       },
       time = 30
     },
@@ -4550,10 +4653,12 @@ data:extend({
       ingredients = {
         {"sp-automation-science-pack-2", 1},
         {"sp-logistic-science-pack-2", 1},
-        {"sp-material-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1},
-        {"sp-geological-science-pack-2", 1},
-        {"production-science-pack", 1}
+        {"chemical-science-pack", 1},
+        {"sp-electronic-science-pack-1", 1},
+        {"sp-material-science-pack-1", 1},
+        {"sp-geological-science-pack-1", 1},
+        {"metallurgic-science-pack", 1},
+        {"electromagnetic-science-pack", 1}
       },
       time = 30
     },
@@ -4571,7 +4676,7 @@ data:extend({
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-sodium-hydroxide-from-sodium"
+        recipe = "sp-sodium-hydroxide"
       },
       {
         type = "unlock-recipe",
@@ -6803,15 +6908,23 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "sp-arc-furnace",
-      },
+      }
     },
     prerequisites = {
-      "sp-material-science-pack-2"
+      "sp-electrode"
     },
     unit = {
-      count = 150,
+      count = 350,
       ingredients = {
-        {"automation-science-pack", 1}
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-electronic-science-pack-1", 1},
+        {"sp-material-science-pack-2", 1},
+        {"chemical-science-pack", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"production-science-pack", 1},
+        {"metallurgic-science-pack", 1},
+        {"electromagnetic-science-pack", 1}
       },
       time = 30,
     },
@@ -6857,15 +6970,12 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "sp-precipitator",
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-pressure-valve",
-      },
+      }
     },
     prerequisites = {
       "sp-automation-science-pack-2",
-      "sp-nickel-alloys"
+      "sp-nickel-alloys",
+      "sp-pressure-fluid"
     },
     unit = {
       count = 500,
@@ -6918,7 +7028,7 @@ data:extend({
       },
     },
     prerequisites = {
-      "sp-chemical-science-pack-2"
+      "sp-chemical-science-pack-3"
     },
     unit = {
       count = 200,
@@ -6995,7 +7105,7 @@ data:extend({
       },
     },
     prerequisites = {
-      "sp-chemical-science-pack-2"
+      "agricultural-science-pack"
     },
     unit = {
       count = 200,
@@ -7065,7 +7175,7 @@ data:extend({
       },
     },
     prerequisites = {
-      "sp-material-science-pack-2"
+      "sp-material-science-pack-3"
     },
     unit = {
       count = 200,
@@ -7086,14 +7196,26 @@ data:extend({
         type = "unlock-recipe",
         recipe = "sp-induction-hardening-facility",
       },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-high-power-solenoid"
+      }
     },
     prerequisites = {
-      "sp-material-science-pack-2"
+      "sp-aluminum-alloys",
+      "sp-titanium-machining",
     },
     unit = {
       count = 200,
       ingredients = {
-        {"automation-science-pack", 1}
+        {"sp-automation-science-pack-2", 1},
+        {"logistic-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"sp-electronic-science-pack-1", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-geological-science-pack-1", 1},
+        {"metallurgic-science-pack", 1},
+        {"electromagnetic-science-pack", 1}
       },
       time = 45,
     },
@@ -7129,6 +7251,183 @@ data:extend({
   },
   {
     type = "technology",
+    name = "sp-big-crusher",  -- #ForRegEx# - technology
+    icon = "__Spaghetorio__/graphics/krastorio/gui/previews/crusher-preview.png",
+    icon_size = 232,
+    icon_mipmaps = 4,
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-kr-big-crusher",
+      },
+    },
+    prerequisites = {
+      "sp-big-electric-engine-unit"
+    },
+    unit = {
+      count = 150,
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"logistic-science-pack", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-electronic-science-pack-1", 1},
+        {"sp-material-science-pack-1", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"metallurgic-science-pack", 1},
+        {"electromagnetic-science-pack", 1},
+        {"production-science-pack", 1}
+      },
+      time = 45,
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-kr-bio-processing",  -- #ForRegEx# - technology
+    icon = "__Spaghetorio__/graphics/krastorio/technologies/bio-lab.png",
+    icon_size = 256,
+    icon_mipmaps = 4,
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-kr-bio-lab",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-biomass",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-biters-research-data",
+      },
+    },
+    prerequisites = {
+      "sp-chemical-science-pack-3"
+    },
+    unit = {
+      count = 200,
+      ingredients = {
+        {"automation-science-pack", 1}
+      },
+      time = 45,
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-kr-advanced-chemistry",  -- #ForRegEx# - technology
+    icon = "__Spaghetorio__/graphics/krastorio/technologies/advanced-chemistry.png",
+    icon_size = 256,
+    icon_mipmaps = 4,
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-kr-advanced-chemical-plant",
+      }
+    },
+    prerequisites = {
+      "sp-chemical-science-pack-3"
+    },
+    unit = {
+      count = 200,
+      ingredients = {
+        {"automation-science-pack", 1}
+      },
+      time = 45,
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-kr-quantum-computer",  -- #ForRegEx# - technology
+    icon = "__Spaghetorio__/graphics/krastorio/technologies/quantum-computer.png",
+    icon_size = 256,
+    icon_mipmaps = 4,
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-kr-quantum-computer",
+      }
+    },
+    prerequisites = {
+      "sp-quantum-computing"
+    },
+    unit = {
+      count = 200,
+      ingredients = {
+        {"automation-science-pack", 1}
+      },
+      time = 45,
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-kr-singularity-lab",  -- #ForRegEx# - technology
+    icon = "__Spaghetorio__/graphics/krastorio/technologies/singularity-lab.png",
+    icon_size = 256,
+    icon_mipmaps = 4,
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-kr-singularity-lab",
+      }
+    },
+    prerequisites = {
+      "sp-utility-science-pack-3"
+    },
+    unit = {
+      count = 200,
+      ingredients = {
+        {"automation-science-pack", 1}
+      },
+      time = 45,
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-kr-singularity-beacon",  -- #ForRegEx# - technology
+    icon = "__Spaghetorio__/graphics/krastorio/technologies/singularity-beacon.png",
+    icon_size = 256,
+    icon_mipmaps = 4,
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-kr-singularity-beacon",
+      }
+    },
+    prerequisites = {
+      "sp-utility-science-pack-3"
+    },
+    unit = {
+      count = 200,
+      ingredients = {
+        {"automation-science-pack", 1}
+      },
+      time = 45,
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-kr-stellar-sinkhole-forge",  -- #ForRegEx# - technology
+    icon = "__Spaghetorio__/graphics/krastorio/technologies/intergalactic-transceiver.png",
+    icon_size = 256,
+    icon_mipmaps = 4,
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-kr-stellar-sinkhole-forge",
+      }
+    },
+    prerequisites = {
+      "sp-uniformity-science-pack"
+    },
+    unit = {
+      count = 200,
+      ingredients = {
+        {"automation-science-pack", 1}
+      },
+      time = 45,
+    },
+  },
+  {
+    type = "technology",
     name = "sp-kr-gas-power-station",  -- #ForRegEx# - technology
     icon = "__Spaghetorio__/graphics/krastorio/technologies/gas-power-station.png",
     icon_size = 256,
@@ -7138,21 +7437,26 @@ data:extend({
         type = "unlock-recipe",
         recipe = "sp-kr-gas-power-station",
       },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-catalytic-converter",
+      }
     },
     prerequisites = {
-      "sp-dynamo",
-      "sp-geological-science-pack-2"
+      "sp-noble-metals",
     },
     unit = {
       count = 200,
       ingredients = {
         {"sp-automation-science-pack-2", 1},
         {"sp-logistic-science-pack-2", 1},
-        {"sp-electronic-science-pack-2", 1},
-        {"sp-material-science-pack-1", 1},
+        {"sp-electronic-science-pack-1", 1},
+        {"sp-material-science-pack-2", 1},
         {"chemical-science-pack", 1},
         {"sp-geological-science-pack-2", 1},
-        {"production-science-pack", 1}
+        {"production-science-pack", 1},
+        {"metallurgic-science-pack", 1},
+        {"electromagnetic-science-pack", 1}
       },
       time = 45,
     },
@@ -7256,7 +7560,7 @@ data:extend({
   },
   {
     type = "technology",
-    name = "sp-kr-fuel",  -- #ForRegEx# - technology
+    name = "sp-kr-fuel-refinery",  -- #ForRegEx# - technology
     icon = "__Spaghetorio__/graphics/krastorio/technologies/fuel-refinery.png",
     icon_size = 256,
     icon_mipmaps = 4,
@@ -7275,7 +7579,7 @@ data:extend({
       -- },
     },
     prerequisites = {
-      "oil-processing",
+      "production-science-pack",
       "sp-pressure-fluid"
     },
     unit = {
@@ -7283,10 +7587,12 @@ data:extend({
       ingredients = {
         {"sp-automation-science-pack-2", 1},
         {"sp-logistic-science-pack-2", 1},
-        {"sp-electronic-science-pack-1", 1},
-        {"sp-geological-science-pack-1", 1},
-        {"sp-material-science-pack-2", 1},
         {"sp-chemical-science-pack-2", 1},
+        {"sp-electronic-science-pack-1", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"metallurgic-science-pack", 1},
+        {"electromagnetic-science-pack", 1},
         {"production-science-pack", 1}
       },
       time = 45,
@@ -7301,7 +7607,7 @@ data:extend({
     prerequisites = {
       -- "kr-lithium-sulfur-battery",
       -- "kr-advanced-lab",
-      "sp-dynamo",
+      "sp-power-regulation",
       "sp-titanium-alloys",
       "sp-electrode"
     },
@@ -7327,7 +7633,7 @@ data:extend({
   },
   {
       type = "technology",
-      name = "sp-kr-quarry-minerals-extraction",
+      name = "sp-kr-quarry-minerals-extraction",  -- #ForRegEx# - technology
       icon = "__Spaghetorio__/graphics/krastorio/technologies/quarry-drill.png",
       icon_size = 256,
       icon_mipmaps = 4,
@@ -7419,7 +7725,7 @@ data:extend({
     },
     {
     type = "technology",
-    name = "sp-kr-automation",
+    name = "sp-kr-automation",  -- #ForRegEx# - technology
     icon = "__Spaghetorio__/graphics/krastorio/technologies/advanced-assembling-machine.png",
     icon_size = 256,
     icon_mipmaps = 4,
@@ -7459,7 +7765,7 @@ data:extend({
   },
   {
     type = "technology",
-    name = "sp-kr-matter-processing",
+    name = "sp-kr-matter-processing",  -- #ForRegEx# - technology
     icon = "__Spaghetorio__/graphics/krastorio/technologies/matter-processing.png",
     icon_size = 256,
     icon_mipmaps = 4,
@@ -7510,7 +7816,7 @@ data:extend({
   },
   {
     type = "technology",
-    name = "sp-kr-antimatter-reactor",
+    name = "sp-kr-antimatter-reactor",  -- #ForRegEx# - technology
     icon = "__Spaghetorio__/graphics/krastorio/technologies/antimatter-reactor.png",
     icon_size = 256,
     icon_mipmaps = 4,
@@ -7556,7 +7862,7 @@ data:extend({
   },
   {
     type = "technology",
-    name = "sp-kr-superior-inserters",
+    name = "sp-kr-superior-inserters",  -- #ForRegEx# - technology
     icon = "__Spaghetorio__/graphics/krastorio/technologies/superior-inserters.png",
     icon_size = 256,
     icon_mipmaps = 4,
@@ -7681,6 +7987,10 @@ data:extend({
         type = "unlock-recipe",
         recipe = "sp-automation-science-pack-2"
       },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-biusart-lab"
+      },
     },
     prerequisites = {
       "lamp",
@@ -7716,8 +8026,9 @@ data:extend({
       },
     },
     prerequisites = {
-      "sp-automation-science-pack-2",
-      "sp-servo-motor"
+      "robotics",
+      "automobilism",
+      "railway"
     },
     unit =
     {
@@ -7727,8 +8038,10 @@ data:extend({
         {"logistic-science-pack", 1},
         {"chemical-science-pack", 1},
         {"sp-electronic-science-pack-1", 1},
+        {"sp-material-science-pack-1", 1},
         {"sp-geological-science-pack-1", 1},
-        {"sp-material-science-pack-1", 1}
+        {"metallurgic-science-pack", 1},
+        {"electromagnetic-science-pack", 1}
       },
       time = 30
     },
@@ -7754,11 +8067,12 @@ data:extend({
       ingredients = {
         {"sp-automation-science-pack-2", 1},
         {"sp-logistic-science-pack-2", 1},
-        {"military-science-pack", 1},
         {"chemical-science-pack", 1},
         {"sp-electronic-science-pack-1", 1},
+        {"sp-material-science-pack-1", 1},
         {"sp-geological-science-pack-1", 1},
-        {"sp-material-science-pack-1", 1}
+        {"metallurgic-science-pack", 1},
+        {"electromagnetic-science-pack", 1}
       },
       time = 30
     },
@@ -7777,7 +8091,8 @@ data:extend({
     },
     prerequisites = {
       "sp-logistic-science-pack-2",
-      "sp-chemical-stager"
+      "sp-titanium-nitride",
+      "sp-heat-resistant-tile"
     },
     unit =
     {
@@ -7787,8 +8102,10 @@ data:extend({
         {"sp-logistic-science-pack-2", 1},
         {"chemical-science-pack", 1},
         {"sp-electronic-science-pack-1", 1},
+        {"sp-material-science-pack-2", 1},
         {"sp-geological-science-pack-1", 1},
-        {"sp-material-science-pack-1", 1}
+        {"metallurgic-science-pack", 1},
+        {"electromagnetic-science-pack", 1}
       },
       time = 30
     },
@@ -7837,18 +8154,20 @@ data:extend({
       },
     },
     prerequisites = {
-      "sp-logistic-science-pack-2"
+      "sp-alkaline-solutions"
     },
     unit =
     {
       count = 200,
       ingredients = {
         {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
+        {"logistic-science-pack", 1},
         {"chemical-science-pack", 1},
         {"sp-electronic-science-pack-1", 1},
+        {"sp-material-science-pack-1", 1},
         {"sp-geological-science-pack-1", 1},
-        {"sp-material-science-pack-1", 1}
+        {"metallurgic-science-pack", 1},
+        {"electromagnetic-science-pack", 1}
       },
       time = 30
     },
@@ -7873,12 +8192,13 @@ data:extend({
       count = 300,
       ingredients = {
         {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
+        {"logistic-science-pack", 1},
         {"chemical-science-pack", 1},
         {"sp-electronic-science-pack-1", 1},
-        {"sp-geological-science-pack-1", 1},
         {"sp-material-science-pack-1", 1},
-        {"production-science-pack", 1}
+        {"sp-geological-science-pack-1", 1},
+        {"metallurgic-science-pack", 1},
+        {"electromagnetic-science-pack", 1}
       },
       time = 30
     },
@@ -8308,6 +8628,66 @@ data:extend({
   },
   {
     type = "technology",
+    name = "sp-biological-science-pack-3",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghetorio__/graphics/hr-icons/biological-science-pack-3.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-biological-science-pack-3"
+      },
+    },
+    prerequisites = {
+      "sp-automation-science-pack-3",
+    },
+    unit =
+    {
+      count = 750,
+      ingredients = {
+        {"sp-automation-science-pack-3", 1},
+        {"sp-logistic-science-pack-3", 1},
+        {"sp-chemical-science-pack-2", 1}, 
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"space-science-pack", 1},
+        {"sp-material-science-pack-2", 1}
+      },
+      time = 30
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-cryogenic-science-pack-3",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghetorio__/graphics/hr-icons/cryogenic-science-pack-3.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-cryogenic-science-pack-3"
+      },
+    },
+    prerequisites = {
+      "sp-automation-science-pack-3",
+    },
+    unit =
+    {
+      count = 750,
+      ingredients = {
+        {"sp-automation-science-pack-3", 1},
+        {"sp-logistic-science-pack-3", 1},
+        {"sp-chemical-science-pack-2", 1}, 
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"space-science-pack", 1},
+        {"sp-material-science-pack-2", 1}
+      },
+      time = 30
+    },
+  },
+  {
+    type = "technology",
     name = "sp-space-science-pack-3",  -- #ForRegEx# - technology
     icon_size = 256,
     icon = "__Spaghetorio__/graphics/hr-icons/astronomical-science-pack-3.png",
@@ -8420,7 +8800,7 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "sp-utility-science-pack-3"
-      },
+      }
     },
     prerequisites = {
       "sp-computer-science-pack-3",
@@ -8439,7 +8819,149 @@ data:extend({
         {"sp-material-science-pack-3", 1},
         {"sp-nuclear-science-pack-3", 1},
         {"sp-computer-science-pack-3", 1},
-        {"utility-science-pack", 1},
+        {"utility-science-pack", 1}
+      },
+      time = 30
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-matter-science-pack",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghetorio__/graphics/hr-icons/matter-science-pack-3.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-matter-science-pack"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-matter-research-data"
+      }
+    },
+    prerequisites = {
+      "sp-utility-science-pack-3"
+    },
+    unit =
+    {
+      count = 750,
+      ingredients = {
+        {"sp-automation-science-pack-3", 1},
+        {"sp-logistic-science-pack-3", 1},
+        {"sp-chemical-science-pack-3", 1},
+        {"sp-electronic-science-pack-3", 1},
+        {"sp-geological-science-pack-3", 1},
+        {"space-science-pack", 1},
+        {"sp-material-science-pack-3", 1},
+        {"sp-nuclear-science-pack-3", 1},
+        {"sp-computer-science-pack-3", 1},
+        {"sp-utility-science-pack-3", 1}
+      },
+      time = 30
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-optimization-science-pack",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghetorio__/graphics/krastorio/technologies/optimization-tech-card.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-optimization-science-pack"
+      }
+    },
+    prerequisites = {
+      "sp-matter-science-pack"
+    },
+    unit =
+    {
+      count = 750,
+      ingredients = {
+        {"sp-automation-science-pack-3", 1},
+        {"sp-logistic-science-pack-3", 1},
+        {"sp-chemical-science-pack-3", 1},
+        {"sp-electronic-science-pack-3", 1},
+        {"sp-geological-science-pack-3", 1},
+        {"space-science-pack", 1},
+        {"sp-material-science-pack-3", 1},
+        {"sp-nuclear-science-pack-3", 1},
+        {"sp-computer-science-pack-3", 1},
+        {"sp-utility-science-pack-3", 1},
+        {"sp-matter-science-pack", 1}
+      },
+      time = 30
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-advanced-science-pack",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghetorio__/graphics/krastorio/technologies/advanced-tech-card.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-advanced-science-pack"
+      }
+    },
+    prerequisites = {
+      "sp-optimization-science-pack"
+    },
+    unit =
+    {
+      count = 750,
+      ingredients = {
+        {"sp-automation-science-pack-3", 1},
+        {"sp-logistic-science-pack-3", 1},
+        {"sp-chemical-science-pack-3", 1},
+        {"sp-electronic-science-pack-3", 1},
+        {"sp-geological-science-pack-3", 1},
+        {"space-science-pack", 1},
+        {"sp-material-science-pack-3", 1},
+        {"sp-nuclear-science-pack-3", 1},
+        {"sp-computer-science-pack-3", 1},
+        {"sp-utility-science-pack-3", 1},
+        {"sp-matter-science-pack", 1},
+        {"sp-optimization-science-pack", 1}
+      },
+      time = 30
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-singularity-science-pack",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghetorio__/graphics/krastorio/technologies/singularity-tech-card.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-singularity-science-pack"
+      }
+    },
+    prerequisites = {
+      "sp-advanced-science-pack"
+    },
+    unit =
+    {
+      count = 750,
+      ingredients = {
+        {"sp-automation-science-pack-3", 1},
+        {"sp-logistic-science-pack-3", 1},
+        {"sp-chemical-science-pack-3", 1},
+        {"sp-electronic-science-pack-3", 1},
+        {"sp-geological-science-pack-3", 1},
+        {"space-science-pack", 1},
+        {"sp-material-science-pack-3", 1},
+        {"sp-nuclear-science-pack-3", 1},
+        {"sp-computer-science-pack-3", 1},
+        {"sp-utility-science-pack-3", 1},
+        {"sp-matter-science-pack", 1},
+        {"sp-optimization-science-pack", 1},
+        {"sp-advanced-science-pack", 1}
       },
       time = 30
     },
@@ -9284,10 +9806,6 @@ data:extend({
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-maraging-steel",
-      },
-      {
-        type = "unlock-recipe",
         recipe = "sp-lead-molybdate",
       },
       {
@@ -9304,10 +9822,6 @@ data:extend({
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-titanium-aluminum-vanadium",
-      },
-      {
-        type = "unlock-recipe",
         recipe = "sp-potassium-permanganate-solution",
       },
       {
@@ -9320,19 +9834,11 @@ data:extend({
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-potassium-hydroxide",
-      },
-      {
-        type = "unlock-recipe",
         recipe = "sp-potassium-cyanide",
       },
       {
         type = "unlock-recipe",
         recipe = "sp-tungsten-steel",
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-big-electric-engine-unit",
       },
       {
         type = "unlock-recipe",
@@ -9368,19 +9874,7 @@ data:extend({
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-vacuum-pump",
-      },
-      {
-        type = "unlock-recipe",
         recipe = "sp-plasmacutter",
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-magnetic-coupling",
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-high-power-solenoid",
       },
       {
         type = "unlock-recipe",
@@ -9389,18 +9883,6 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "sp-piezoelectric-sensor",
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-electromagnetic-brake",
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-catalytic-converter",
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-high-pressure-fan",
       },
       -- TODO: add recipe chain for
       -- {

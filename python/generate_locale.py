@@ -27,7 +27,7 @@ def generate_locale_value(key: str, object_type: str=None) -> Tuple[str, str]:
     """
     Generates the locale value given a key and returns both as tuple
     """
-    if object_type in ["infinite-technology"]:
+    if key.split("-")[-1].isnumeric():
         key = "-".join(key.split("-")[:-1])
 
     if key.startswith("sp-kr-"):
@@ -82,7 +82,7 @@ def extend_locale(matches: List[Tuple[str, str]],
         try:
             for pair_index in range(len(ALL_REGEX)):
                 if match[pair_index*2] != "":
-                    key, value = generate_locale_value(match[pair_index*2], match[pair_index*2 + 1])
+                    key, value = generate_locale_value(match[pair_index*2])
                     # Add the keys and values
                     for section in get_sections(match[pair_index*2 + 1]):
                         if not config.has_option(section, key):
