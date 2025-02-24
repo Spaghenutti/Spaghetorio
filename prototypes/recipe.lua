@@ -2991,6 +2991,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/mercury.png",
     icon_size = 64,
     category = "chemistry",
+    subgroup = "aqueous-fluid",
     enabled = false,
     energy_required = 2,
     ingredients = {
@@ -8586,11 +8587,17 @@ data:extend({
     enabled = false,
     ingredients = {
       {type = "item", name = "sp-steel-beam", amount = 20},
+      {type = "item", name = "sp-stainless-steel", amount = 12},
+      {type = "item", name = "sp-nickel-cobalt", amount = 8},
       {type = "item", name = "sp-bolts", amount = 30},
       {type = "item", name = "pipe", amount = 20},
+      {type = "item", name = "sp-flange", amount = 12},
       {type = "item", name = "pump", amount = 8},
       {type = "item", name = "sp-dynamo", amount = 4},
-      {type = "item", name = "sp-valve", amount = 10}
+      {type = "item", name = "engine-unit", amount = 8},
+      {type = "item", name = "sp-catalytic-converter", amount = 4},
+      {type = "item", name = "sp-valve", amount = 10},
+      {type = "item", name = "concrete", amount = 40}
     },
     results = {
       {type = "item", name = "sp-kr-gas-power-station", amount = 1}

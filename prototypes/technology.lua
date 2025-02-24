@@ -526,10 +526,13 @@ data:extend({
       count = 75,
       ingredients = {
         {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"sp-material-science-pack-2", 1},
+        {"logistic-science-pack", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-electronic-science-pack-1", 1},
+        {"sp-material-science-pack-1", 1},
         {"sp-geological-science-pack-2", 1},
-        {"sp-electronic-science-pack-2", 1}
+        {"metallurgic-science-pack", 1},
+        {"electromagnetic-science-pack", 1}
       },
       time = 30
     },
@@ -1075,7 +1078,7 @@ data:extend({
         {"sp-logistic-science-pack-2", 1},
         {"sp-chemical-science-pack-2", 1},
         {"sp-electronic-science-pack-1", 1},
-        {"sp-material-science-pack-1", 1},
+        {"sp-material-science-pack-2", 1},
         {"sp-geological-science-pack-2", 1},
         {"metallurgic-science-pack", 1},
         {"electromagnetic-science-pack", 1}
@@ -1350,7 +1353,7 @@ data:extend({
         {"logistic-science-pack", 1},
         {"chemical-science-pack", 1},
         {"sp-electronic-science-pack-1", 1},
-        {"sp-material-science-pack-1", 1},
+        {"sp-material-science-pack-2", 1},
         {"sp-geological-science-pack-1", 1},
         {"metallurgic-science-pack", 1},
         {"electromagnetic-science-pack", 1}
@@ -1429,7 +1432,7 @@ data:extend({
         {"logistic-science-pack", 1},
         {"sp-chemical-science-pack-2", 1},
         {"sp-electronic-science-pack-1", 1},
-        {"sp-material-science-pack-1", 1},
+        {"sp-material-science-pack-2", 1},
         {"sp-geological-science-pack-2", 1},
         {"metallurgic-science-pack", 1},
         {"electromagnetic-science-pack", 1}
@@ -1657,7 +1660,7 @@ data:extend({
         {"sp-logistic-science-pack-2", 1},
         {"sp-chemical-science-pack-2", 1},
         {"sp-electronic-science-pack-1", 1},
-        {"sp-material-science-pack-1", 1},
+        {"sp-material-science-pack-2", 1},
         {"sp-geological-science-pack-1", 1},
         {"metallurgic-science-pack", 1},
         {"electromagnetic-science-pack", 1}
@@ -1694,7 +1697,6 @@ data:extend({
   },
   {
     type = "technology",
-    -- This tech does not exist in krastorio
     name = "sp-rare-metals",  -- #ForRegEx# - technology
     icon_size = 64, -- TODO: Fix icon
     icon = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/rare-metals/rare-metals-2.png",
@@ -1721,20 +1723,21 @@ data:extend({
       }
     },
     prerequisites = {
-      "sp-geological-science-pack-2",
+      "sp-electronic-science-pack-2",
     },
     unit =
     {
       count = 750,
       ingredients = {
         {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
+        {"logistic-science-pack", 1},
         {"sp-chemical-science-pack-2", 1},
         {"sp-electronic-science-pack-2", 1},
-        {"sp-material-science-pack-2", 1},
+        {"sp-material-science-pack-1", 1},
         {"sp-geological-science-pack-2", 1},
-        {"production-science-pack", 1},
-        {"utility-science-pack", 1}
+        {"metallurgic-science-pack", 1},
+        {"electromagnetic-science-pack", 1},
+        {"production-science-pack", 1}
       },
       time = 15
     },
@@ -2771,7 +2774,7 @@ data:extend({
         {"logistic-science-pack", 1},
         {"chemical-science-pack", 1},
         {"sp-electronic-science-pack-1", 1},
-        {"sp-material-science-pack-1", 1},
+        {"sp-material-science-pack-2", 1},
         {"sp-geological-science-pack-1", 1},
         {"metallurgic-science-pack", 1},
         {"electromagnetic-science-pack", 1}
@@ -4321,6 +4324,10 @@ data:extend({
         type = "unlock-recipe",
         recipe = "sp-amplifier"
       },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-dynamo"
+      },
     },
     prerequisites = {
       "sp-electronic-science-pack-1",
@@ -4329,7 +4336,7 @@ data:extend({
     },
     unit =
     {
-      count = 150,
+      count = 250,
       ingredients = {
         {"sp-automation-science-pack-2", 1},
         {"logistic-science-pack", 1},
@@ -4339,34 +4346,6 @@ data:extend({
         {"sp-geological-science-pack-2", 1},
         {"metallurgic-science-pack", 1},
         {"electromagnetic-science-pack", 1}
-      },
-      time = 30
-    },
-  },
-  {
-    type = "technology",
-    name = "sp-dynamo",  -- #ForRegEx# - technology
-    icon_size = 256,
-    icon = "__Spaghetorio__/graphics/hr-icons/dynamo.png",
-    effects =
-    {
-      {
-        type = "unlock-recipe",
-        recipe = "sp-dynamo"
-      },
-    },
-    prerequisites = {
-      "sp-power-regulation"
-    },
-    unit =
-    {
-      count = 200,
-      ingredients = {
-        {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"sp-electronic-science-pack-2", 1},
-        {"sp-material-science-pack-1", 1},
-        {"production-science-pack", 1}
       },
       time = 30
     },
@@ -4463,12 +4442,17 @@ data:extend({
     },
     unit =
     {
-      count = 100,
+      count = 150,
       ingredients = {
-        {"automation-science-pack", 1},
+        {"sp-automation-science-pack-2", 1},
         {"logistic-science-pack", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-electronic-science-pack-1", 1},
         {"sp-material-science-pack-1", 1},
-        {"sp-geological-science-pack-1", 1}
+        {"sp-geological-science-pack-2", 1},
+        {"metallurgic-science-pack", 1},
+        {"electromagnetic-science-pack", 1},
+        {"production-science-pack", 1}
       },
       time = 30
     },
@@ -7281,19 +7265,20 @@ data:extend({
       },
     },
     prerequisites = {
-      "sp-advanced-gearbox"
+      "production-science-pack"
     },
     unit = {
       count = 150,
       ingredients = {
         {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
+        {"logistic-science-pack", 1},
         {"sp-chemical-science-pack-2", 1},
         {"sp-electronic-science-pack-1", 1},
-        {"sp-material-science-pack-2", 1},
+        {"sp-material-science-pack-1", 1},
         {"sp-geological-science-pack-2", 1},
         {"metallurgic-science-pack", 1},
         {"electromagnetic-science-pack", 1},
+        {"production-science-pack", 1}
       },
       time = 45,
     },
@@ -7309,21 +7294,26 @@ data:extend({
         type = "unlock-recipe",
         recipe = "sp-kr-gas-power-station",
       },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-catalytic-converter",
+      }
     },
     prerequisites = {
-      "sp-dynamo",
-      "sp-geological-science-pack-2"
+      "sp-noble-metals",
     },
     unit = {
       count = 200,
       ingredients = {
         {"sp-automation-science-pack-2", 1},
         {"sp-logistic-science-pack-2", 1},
-        {"sp-electronic-science-pack-2", 1},
-        {"sp-material-science-pack-1", 1},
+        {"sp-electronic-science-pack-1", 1},
+        {"sp-material-science-pack-2", 1},
         {"chemical-science-pack", 1},
         {"sp-geological-science-pack-2", 1},
-        {"production-science-pack", 1}
+        {"production-science-pack", 1},
+        {"metallurgic-science-pack", 1},
+        {"electromagnetic-science-pack", 1}
       },
       time = 45,
     },
@@ -7474,7 +7464,7 @@ data:extend({
     prerequisites = {
       -- "kr-lithium-sulfur-battery",
       -- "kr-advanced-lab",
-      "sp-dynamo",
+      "sp-power-regulation",
       "sp-titanium-alloys",
       "sp-electrode"
     },
@@ -7500,7 +7490,7 @@ data:extend({
   },
   {
       type = "technology",
-      name = "sp-kr-quarry-minerals-extraction",
+      name = "sp-kr-quarry-minerals-extraction",  -- #ForRegEx# - technology
       icon = "__Spaghetorio__/graphics/krastorio/technologies/quarry-drill.png",
       icon_size = 256,
       icon_mipmaps = 4,
@@ -7592,7 +7582,7 @@ data:extend({
     },
     {
     type = "technology",
-    name = "sp-kr-automation",
+    name = "sp-kr-automation",  -- #ForRegEx# - technology
     icon = "__Spaghetorio__/graphics/krastorio/technologies/advanced-assembling-machine.png",
     icon_size = 256,
     icon_mipmaps = 4,
@@ -7632,7 +7622,7 @@ data:extend({
   },
   {
     type = "technology",
-    name = "sp-kr-matter-processing",
+    name = "sp-kr-matter-processing",  -- #ForRegEx# - technology
     icon = "__Spaghetorio__/graphics/krastorio/technologies/matter-processing.png",
     icon_size = 256,
     icon_mipmaps = 4,
@@ -7683,7 +7673,7 @@ data:extend({
   },
   {
     type = "technology",
-    name = "sp-kr-antimatter-reactor",
+    name = "sp-kr-antimatter-reactor",  -- #ForRegEx# - technology
     icon = "__Spaghetorio__/graphics/krastorio/technologies/antimatter-reactor.png",
     icon_size = 256,
     icon_mipmaps = 4,
@@ -7729,7 +7719,7 @@ data:extend({
   },
   {
     type = "technology",
-    name = "sp-kr-superior-inserters",
+    name = "sp-kr-superior-inserters",  -- #ForRegEx# - technology
     icon = "__Spaghetorio__/graphics/krastorio/technologies/superior-inserters.png",
     icon_size = 256,
     icon_mipmaps = 4,
@@ -7969,7 +7959,7 @@ data:extend({
         {"sp-logistic-science-pack-2", 1},
         {"chemical-science-pack", 1},
         {"sp-electronic-science-pack-1", 1},
-        {"sp-material-science-pack-1", 1},
+        {"sp-material-science-pack-2", 1},
         {"sp-geological-science-pack-1", 1},
         {"metallurgic-science-pack", 1},
         {"electromagnetic-science-pack", 1}
@@ -9608,10 +9598,6 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "sp-piezoelectric-sensor",
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-catalytic-converter",
       },
       -- TODO: add recipe chain for
       -- {

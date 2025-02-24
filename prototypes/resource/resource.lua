@@ -398,6 +398,8 @@ data:extend({
       mining_time = 5,
       map_color = {r=0.35, g=0.15, b=0.05},
       mining_visualisation_tint = {r=0.35, g=0.15, b=0.05, a=1.0},
+      fluid_amount = 3,
+      required_fluid = "sp-potassium-hydroxide-solution"
     },
     {
       base_density = 1.5,

@@ -497,13 +497,14 @@ util.recipe.change_recipe_ingredients("stack-inserter",
 
 util.recipe.change_recipe_ingredients("bulk-inserter",
   {
-    {type = "item", name = "sp-heavy-gearbox", amount = 2},
+    {type = "item", name = "sp-heavy-gearbox", amount = 1},
     {type = "item", name = "sp-stainless-steel", amount = 4},
-    {type = "item", name = "sp-servo-motor", amount = 8},
-    {type = "item", name = "sp-bolts", amount = 12},
-    {type = "item", name = "electric-engine-unit", amount = 4},
-    {type = "item", name = "sp-control-unit", amount = 1},
-    {type = "item", name = "sp-heavy-ball-bearing", amount = 4}
+    {type = "item", name = "sp-titanium-frame", amount = 2},
+    {type = "item", name = "sp-actuator", amount = 2},
+    {type = "item", name = "sp-bolts", amount = 8},
+    {type = "item", name = "electric-engine-unit", amount = 2},
+    {type = "item", name = "advanced-circuit", amount = 1},
+    {type = "item", name = "sp-relay", amount = 2}
   },
   4)
 
@@ -527,12 +528,12 @@ util.recipe.change_recipe_ingredients("big-electric-pole",
 
 util.recipe.change_recipe_ingredients("substation",
   {
-    {type = "item", name = "steel-plate", amount = 20},
+    {type = "item", name = "sp-steel-beam", amount = 20},
     {type = "item", name = "sp-bolts", amount = 20},
     {type = "item", name = "advanced-circuit", amount = 2},
     {type = "item", name = "sp-aluminum-cable", amount = 12},
     {type = "item", name = "concrete", amount = 16},
-    {type = "item", name = "sp-transformer", amount = 1},
+    {type = "item", name = "sp-amplifier", amount = 1},
     {type = "item", name = "sp-relay", amount = 4}
   },
   6)
@@ -1687,10 +1688,10 @@ data.raw.recipe["military-science-pack"].results = {
 
 util.recipe.change_recipe_ingredients("production-science-pack",
   {
-    {type = "item", name = "sp-filter", amount = 5},
-    {type = "item", name = "sp-actuator", amount = 5},
-    {type = "item", name = "pump", amount = 2},
-    {type = "item", name = "sp-relay", amount = 5},
+    {type = "item", name = "sp-filter", amount = 10},
+    {type = "item", name = "sp-amplifier", amount = 2},
+    {type = "item", name = "sp-heavy-gearbox", amount = 3},
+    {type = "item", name = "sp-precipitator", amount = 5},
     {type = "item", name = "sp-blank-tech-card", amount = 5}
   },
   32)

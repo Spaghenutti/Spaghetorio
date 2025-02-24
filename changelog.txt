@@ -3,6 +3,7 @@ Version: 0.3.2
 Date: 2025-02-26
   Features:
     - Added power supply and amplifier
+    - Added locale for some late game tech
   Changes:
     - Car is now unlocked earlier
     - Tech tree updates for reaching chemical science pack 2, material science pack 2 and geological science pack 2

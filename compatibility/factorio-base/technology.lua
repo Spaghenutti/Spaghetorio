@@ -82,13 +82,16 @@ data.raw.technology["gun-turret"].research_trigger =
 }
 
 table.insert(data.raw.technology["bulk-inserter"].prerequisites, "sp-power-regulation")
+table.insert(data.raw.technology["bulk-inserter"].prerequisites, "sp-advanced-gearbox")
 data.raw.technology["bulk-inserter"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},
-  {"sp-logistic-science-pack-2", 1},
+  {"logistic-science-pack", 1},
+  {"sp-chemical-science-pack-2", 1},
+  {"sp-electronic-science-pack-1", 1},
   {"sp-material-science-pack-2", 1},
-  {"sp-electronic-science-pack-2", 1},
-  {"production-science-pack", 1},
-  {"utility-science-pack", 1}
+  {"sp-geological-science-pack-2", 1},
+  {"metallurgic-science-pack", 1},
+  {"electromagnetic-science-pack", 1}
 }
 
 
@@ -166,19 +169,6 @@ data.raw.technology["military-science-pack"].effects = {
     type = "unlock-recipe",
     recipe = "military-science-pack"
   }
-}
-
-data.raw.technology["production-science-pack"].prerequisites = {
-  "sp-actuator",
-  "sp-automation-science-pack-2"
-}
-data.raw.technology["production-science-pack"].unit.ingredients = {
-  {"sp-automation-science-pack-2", 1},
-  {"logistic-science-pack", 1},
-  {"sp-material-science-pack-1", 1},
-  {"sp-electronic-science-pack-1", 1},
-  {"sp-geological-science-pack-1", 1},
-  {"chemical-science-pack", 1}
 }
 
 data.raw.technology["utility-science-pack"].prerequisites = {
@@ -882,20 +872,21 @@ data.raw.technology["rocket-fuel"].unit.ingredients = {
 }
 
 data.raw.technology["uranium-processing"].prerequisites = {
-  "sp-advanced-gearbox"
+  "production-science-pack"
 }
 data.raw.technology["uranium-processing"].research_trigger = nil
 data.raw.technology["uranium-processing"].unit = {
   count = 250,
   ingredients = {
     {"sp-automation-science-pack-2", 1},
-    {"sp-logistic-science-pack-2", 1},
-    {"sp-material-science-pack-2", 1},
-    {"sp-electronic-science-pack-2", 1},
-    {"sp-geological-science-pack-2", 1},
+    {"logistic-science-pack", 1},
     {"sp-chemical-science-pack-2", 1},
-    {"production-science-pack", 1},
-    {"utility-science-pack", 1}
+    {"sp-electronic-science-pack-1", 1},
+    {"sp-material-science-pack-1", 1},
+    {"sp-geological-science-pack-2", 1},
+    {"metallurgic-science-pack", 1},
+    {"electromagnetic-science-pack", 1},
+    {"production-science-pack", 1}
   },
   time = 30,
 }
@@ -2070,14 +2061,15 @@ data.raw.technology["military-science-pack"].effects = {
 
 data.raw.technology["production-science-pack"].icon = "__Spaghetorio__/graphics/krastorio/technologies/production-tech-card.png"
 data.raw.technology["production-science-pack"].prerequisites = {
-  "sp-power-regulation"
+  "sp-power-regulation",
+  "sp-advanced-gearbox"
 }
 data.raw.technology["production-science-pack"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},
   {"sp-logistic-science-pack-2", 1},
   {"chemical-science-pack", 1},
   {"sp-electronic-science-pack-1", 1},
-  {"sp-material-science-pack-1", 1},
+  {"sp-material-science-pack-2", 1},
   {"sp-geological-science-pack-2", 1},
   {"metallurgic-science-pack", 1},
   {"electromagnetic-science-pack", 1}
