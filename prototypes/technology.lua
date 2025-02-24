@@ -1468,7 +1468,7 @@ data:extend({
     prerequisites = {
       "sp-titanium-machining",
       "sp-niobium-and-tantalum",
-      "advanced-material-processing-2"
+      "sp-metallurgic-science-pack-2"
     },
     unit =
     {
@@ -1480,7 +1480,7 @@ data:extend({
         {"sp-material-science-pack-1", 1},
         {"sp-geological-science-pack-2", 1},
         {"sp-electronic-science-pack-1", 1},
-        {"metallurgic-science-pack", 1},
+        {"sp-metallurgic-science-pack-2", 1},
         {"electromagnetic-science-pack", 1}
       },
       time = 30
@@ -1532,25 +1532,25 @@ data:extend({
     {
       {
         type = "unlock-recipe",
-        recipe = "sp-pressure-tube"
+        recipe = "sp-pressure-valve",
       },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-pressure-tube",
+      }
     },
     prerequisites = {
-      "production-science-pack"
+      "sp-rubber"
     },
     unit =
     {
       count = 100,
       ingredients = {
-        {"sp-automation-science-pack-2", 1},
+        {"automation-science-pack", 1},
         {"logistic-science-pack", 1},
         {"chemical-science-pack", 1},
-        {"sp-electronic-science-pack-1", 1},
         {"sp-material-science-pack-1", 1},
-        {"sp-geological-science-pack-1", 1},
-        {"metallurgic-science-pack", 1},
-        {"electromagnetic-science-pack", 1},
-        {"production-science-pack", 1}
+        {"sp-geological-science-pack-1", 1}
       },
       time = 30
     },
@@ -3165,7 +3165,7 @@ data:extend({
     },
     prerequisites = {
       "sp-geological-science-pack-2",
-      "sp-kr-fuel"
+      "sp-kr-fuel-refinery"
     },
     unit =
     {
@@ -6970,15 +6970,12 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "sp-precipitator",
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-pressure-valve",
-      },
+      }
     },
     prerequisites = {
       "sp-automation-science-pack-2",
-      "sp-nickel-alloys"
+      "sp-nickel-alloys",
+      "sp-pressure-fluid"
     },
     unit = {
       count = 500,
@@ -7265,7 +7262,7 @@ data:extend({
       },
     },
     prerequisites = {
-      "production-science-pack"
+      "sp-big-electric-engine-unit"
     },
     unit = {
       count = 150,
@@ -7563,7 +7560,7 @@ data:extend({
   },
   {
     type = "technology",
-    name = "sp-kr-fuel",  -- #ForRegEx# - technology
+    name = "sp-kr-fuel-refinery",  -- #ForRegEx# - technology
     icon = "__Spaghetorio__/graphics/krastorio/technologies/fuel-refinery.png",
     icon_size = 256,
     icon_mipmaps = 4,
@@ -7582,18 +7579,18 @@ data:extend({
       -- },
     },
     prerequisites = {
-      "oil-processing",
+      "production-science-pack",
       "sp-pressure-fluid"
     },
     unit = {
       count = 125,
       ingredients = {
         {"sp-automation-science-pack-2", 1},
-        {"logistic-science-pack", 1},
-        {"chemical-science-pack", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
         {"sp-electronic-science-pack-1", 1},
-        {"sp-material-science-pack-1", 1},
-        {"sp-geological-science-pack-1", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
         {"metallurgic-science-pack", 1},
         {"electromagnetic-science-pack", 1},
         {"production-science-pack", 1}

@@ -4888,6 +4888,7 @@ data:extend({
     ingredients = {
       {type = "item", name = "sp-glass", amount = 1},
       {type = "item", name = "sp-stainless-steel", amount = 1},
+      {type = "item", name = "sp-pressure-valve", amount = 1},
       {type = "item", name = "sp-brass", amount = 3},
       {type = "item", name = "sp-flange", amount = 2}
     },
@@ -8163,7 +8164,7 @@ data:extend({
       {type = "item", name = "electric-engine-unit", amount = 12},
       {type = "item", name = "sp-condenser-coil", amount = 4},
       {type = "item", name = "sp-precipitator", amount = 3},
-      {type = "item", name = "sp-pressure-valve", amount = 12},
+      {type = "item", name = "sp-pressure-tube", amount = 12},
       {type = "item", name = "sp-vibration-dampener", amount = 12},
       {type = "item", name = "sp-flange", amount = 6},
       {type = "item", name = "refined-concrete", amount = 40},
