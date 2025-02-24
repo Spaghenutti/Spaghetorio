@@ -728,7 +728,7 @@ data:extend({
   },
   {
     type = "technology",
-    name = "sp-advanced-ceramics",  -- #ForRegEx# - technology
+    name = "sp-intermediate-ceramics",  -- #ForRegEx# - technology
     icon_size = 256,
     icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/hr-icons/titanium-carbide.png", 256, nil,
                                         "__Spaghetorio__/graphics/hr-icons/boron-carbide.png", 256, nil),
@@ -744,21 +744,20 @@ data:extend({
       }
     },
     prerequisites = {
-      "sp-material-science-pack-2",
-      "sp-basic-ceramics",
-      "utility-science-pack"
+      "sp-boron-processing"
     },
     unit =
     {
-      count = 1000,
+      count = 400,
       ingredients = {
         {"sp-automation-science-pack-2", 1},
         {"sp-logistic-science-pack-2", 1},
         {"sp-chemical-science-pack-2", 1},
-        {"sp-geological-science-pack-2", 1},
+        {"sp-electronic-science-pack-1", 1},
         {"sp-material-science-pack-2", 1},
-        {"production-science-pack", 1},
-        {"utility-science-pack", 1}
+        {"sp-geological-science-pack-2", 1},
+        {"metallurgic-science-pack", 1},
+        {"electromagnetic-science-pack", 1}
       },
       time = 30
     },
@@ -776,7 +775,7 @@ data:extend({
       }
     },
     prerequisites = {
-      "sp-advanced-ceramics",
+      "utility-science-pack",
       "sp-carbon-high-tech"
     },
     unit =
@@ -917,13 +916,21 @@ data:extend({
       },
     },
     prerequisites = {
-      "sp-metallurgic-science-pack-2"
+      "big-mining-drill"
     },
     unit =
     {
       count = 300,
       ingredients = {
-        {"automation-science-pack", 1},
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-electronic-science-pack-1", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"metallurgic-science-pack", 1},
+        {"electromagnetic-science-pack", 1},
+        {"production-science-pack", 1}
       },
       time = 30
     },
@@ -998,17 +1005,21 @@ data:extend({
       }
     },
     prerequisites = {
-      "sp-iodine-processing",
-      "sp-cobalt-processing"
+      "sp-iodine-processing"
     },
     unit =
     {
-      count = 100,
+      count = 200,
       ingredients = {
-        {"automation-science-pack", 1},
-        {"logistic-science-pack", 1},
-        {"sp-material-science-pack-1", 1},
-        {"sp-geological-science-pack-1", 1}
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-electronic-science-pack-1", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"metallurgic-science-pack", 1},
+        {"electromagnetic-science-pack", 1},
+        {"production-science-pack", 1}
       },
       time = 30
     },
@@ -1036,10 +1047,15 @@ data:extend({
     {
       count = 100,
       ingredients = {
-        {"automation-science-pack", 1},
-        {"logistic-science-pack", 1},
-        {"sp-material-science-pack-1", 1},
-        {"sp-geological-science-pack-1", 1}
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-electronic-science-pack-1", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"metallurgic-science-pack", 1},
+        {"electromagnetic-science-pack", 1},
+        {"production-science-pack", 1}
       },
       time = 30
     },
@@ -2345,7 +2361,7 @@ data:extend({
     },
     prerequisites = {
       "sp-nickel-alloys",
-      "sp-advanced-ceramics"
+      "utility-science-pack"
     },
     unit =
     {
@@ -2499,7 +2515,7 @@ data:extend({
       },
     },
     prerequisites = {
-      "sp-advanced-ceramics"
+      "utility-science-pack"
     },
     unit =
     {
@@ -3158,8 +3174,7 @@ data:extend({
         {"sp-material-science-pack-2", 1},
         {"sp-geological-science-pack-2", 1},
         {"metallurgic-science-pack", 1},
-        {"electromagnetic-science-pack", 1},
-        {"production-science-pack", 1}
+        {"electromagnetic-science-pack", 1}
       },
       time = 30
     },
@@ -4497,17 +4512,18 @@ data:extend({
       }
     },
     prerequisites = {
-      "production-science-pack"
+      "production-science-pack",
+      "sp-intermediate-ceramics"
     },
     unit =
     {
       count = 150,
       ingredients = {
         {"sp-automation-science-pack-2", 1},
-        {"logistic-science-pack", 1},
+        {"sp-logistic-science-pack-2", 1},
         {"sp-chemical-science-pack-2", 1},
         {"sp-electronic-science-pack-1", 1},
-        {"sp-material-science-pack-1", 1},
+        {"sp-material-science-pack-2", 1},
         {"sp-geological-science-pack-2", 1},
         {"metallurgic-science-pack", 1},
         {"electromagnetic-science-pack", 1},
@@ -6977,6 +6993,10 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "sp-water-from-atmosphere",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "steam-condensation",  -- recipe from space age
       },
     },
     prerequisites = {
@@ -10004,10 +10024,6 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "sp-potassium-permanganate-solution",
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-potassium-dichromate-solution",
       },
       {
         type = "unlock-recipe",

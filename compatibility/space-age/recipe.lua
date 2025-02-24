@@ -205,6 +205,12 @@ util.recipe.change_recipe_ingredients("heating-tower",
   },
   50)
 
+  util.recipe.change_recipe_ingredients("big-mining-drill",
+  {
+    {type = "item", name = "sp-stainless-steel", amount = 69},
+  },
+  50)
+
 --------------------------------------------------------------------------------
 -- MARK: science pack
 --------------------------------------------------------------------------------

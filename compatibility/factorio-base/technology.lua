@@ -1158,7 +1158,7 @@ data.raw.technology["personal-laser-defense-equipment"].unit.ingredients = {
 }
 
 table.insert(data.raw.technology["tank"].prerequisites, "military-4")
-table.insert(data.raw.technology["tank"].prerequisites, "sp-advanced-ceramics")
+table.insert(data.raw.technology["tank"].prerequisites, "utility-science-pack")
 data.raw.technology["tank"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},
   {"sp-logistic-science-pack-2", 1},
@@ -1361,27 +1361,37 @@ data.raw.technology["braking-force-2"].unit.ingredients = {
 data.raw.technology["braking-force-3"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},
   {"sp-logistic-science-pack-2", 1},
-  {"production-science-pack", 1},
-  {"sp-material-science-pack-1", 1},
-  {"sp-electronic-science-pack-1", 1}
+  {"sp-chemical-science-pack-2", 1},
+  {"sp-electronic-science-pack-1", 1},
+  {"sp-material-science-pack-2", 1},
+  {"sp-geological-science-pack-2", 1},
+  {"metallurgic-science-pack", 1},
+  {"electromagnetic-science-pack", 1},
+  {"production-science-pack", 1}
 }
 
 data.raw.technology["braking-force-4"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},
   {"sp-logistic-science-pack-2", 1},
+  {"sp-chemical-science-pack-2", 1},
+  {"sp-electronic-science-pack-1", 1},
+  {"sp-material-science-pack-2", 1},
   {"sp-geological-science-pack-2", 1},
-  {"production-science-pack", 1},
-  {"sp-material-science-pack-1", 1},
-  {"sp-electronic-science-pack-1", 1}
+  {"metallurgic-science-pack", 1},
+  {"electromagnetic-science-pack", 1},
+  {"production-science-pack", 1}
 }
 
 data.raw.technology["braking-force-5"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},
   {"sp-logistic-science-pack-2", 1},
+  {"sp-chemical-science-pack-2", 1},
+  {"sp-electronic-science-pack-1", 1},
+  {"sp-material-science-pack-2", 1},
   {"sp-geological-science-pack-2", 1},
-  {"production-science-pack", 1},
-  {"sp-material-science-pack-1", 1},
-  {"sp-electronic-science-pack-1", 1}
+  {"metallurgic-science-pack", 1},
+  {"electromagnetic-science-pack", 1},
+  {"production-science-pack", 1}
 }
 
 table.insert(data.raw.technology["braking-force-6"].prerequisites, "sp-production-science-pack-3")
@@ -1408,8 +1418,6 @@ data.raw.technology["braking-force-7"].unit.ingredients = {
   {"sp-computer-science-pack-3", 1},
   {"sp-utility-science-pack-3", 1},
 }
-
--- TODO: "braking-force-3" to "braking-force-7"
 
 data.raw.technology["inserter-capacity-bonus-1"].prerequisites = {
   "sp-electronic-science-pack-2"

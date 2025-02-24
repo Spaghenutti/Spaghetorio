@@ -1,6 +1,7 @@
 
 local util = require("data-util")
 
+local remove_prototypes = require("remove-prototypes")
 
 data.raw.furnace["stone-furnace"].result_inventory_size = 2
 
@@ -27,6 +28,28 @@ data.raw["item-subgroup"]["empty-barrel"].group = "fluids"
 data.raw["item-subgroup"]["empty-barrel"].order = "z-f"
 
 -- Overwrite technology change by Everything on nauvis
+remove_prototypes.remove_one_prototype("technology", "calcite-processing")
+
+data.raw.technology["tungsten-carbide"].prerequisites = {
+  "sp-tungsten-processing"
+}
+data.raw.technology["tungsten-carbide"].research_trigger = nil
+data.raw.technology["tungsten-carbide"].unit = {
+  count = 500,
+  ingredients = {
+    {"sp-automation-science-pack-2", 1},
+    {"sp-logistic-science-pack-2", 1},
+    {"sp-chemical-science-pack-2", 1},
+    {"sp-electronic-science-pack-1", 1},
+    {"sp-material-science-pack-2", 1},
+    {"sp-geological-science-pack-2", 1},
+    {"metallurgic-science-pack", 1},
+    {"electromagnetic-science-pack", 1},
+    {"production-science-pack", 1}
+  },
+  time = 30
+}
+
 table.insert(data.raw.technology["agriculture"].prerequisites, "sp-automation-science-pack-2")
 
 data.raw.technology["heating-tower"].effects =

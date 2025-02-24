@@ -1,7 +1,5 @@
 
 -- Update technologies
-table.insert(data.raw.technology["big-mining-drill"].effects, {type = "unlock-recipe", recipe = "sp-drillhead"})
-
 table.insert(data.raw.technology["lithium-processing"].effects, {type = "unlock-recipe", recipe = "sp-lithium-oxide"})
 table.insert(data.raw.technology["lithium-processing"].effects, {type = "unlock-recipe", recipe = "sp-lithium-chloride"})
 data.raw.technology["lithium-processing"].research_trigger = nil
@@ -15,6 +13,27 @@ data.raw.technology["lithium-processing"].unit = {
     {"sp-geological-science-pack-1", 1},
     {"sp-electronic-science-pack-1", 1},
     {"metallurgic-science-pack", 1}
+  },
+  time = 30
+}
+
+data.raw.technology["tungsten-steel"].prerequisites = {
+  "sp-tungsten-processing",
+  "sp-metallurgic-science-pack-2"
+}
+data.raw.technology["tungsten-steel"].research_trigger = nil
+data.raw.technology["tungsten-steel"].unit = {
+  count = 500,
+  ingredients = {
+    {"sp-automation-science-pack-2", 1},
+    {"sp-logistic-science-pack-2", 1},
+    {"sp-chemical-science-pack-2", 1},
+    {"sp-electronic-science-pack-1", 1},
+    {"sp-material-science-pack-2", 1},
+    {"sp-geological-science-pack-2", 1},
+    {"metallurgic-science-pack", 1},
+    {"sp-electromagnetic-science-pack-2", 1},
+    {"production-science-pack", 1}
   },
   time = 30
 }
@@ -133,6 +152,49 @@ data.raw.technology["elevated-rail"].unit.ingredients = {
   {"production-science-pack", 1},
   {"metallurgic-science-pack", 1},
   {"electromagnetic-science-pack", 1}
+}
+
+table.insert(data.raw.technology["big-mining-drill"].effects, {type = "unlock-recipe", recipe = "sp-drillhead"})
+table.insert(data.raw.technology["big-mining-drill"].effects, {type = "unlock-recipe", recipe = "sp-potassium-dichromate-solution"})
+data.raw.technology["big-mining-drill"].prerequisites = {
+  "sp-cobalt-alloys",
+  "sp-big-electric-engine-unit"
+}
+data.raw.technology["big-mining-drill"].research_trigger = nil
+data.raw.technology["big-mining-drill"].unit = {
+  count = 500,
+  ingredients = {
+    {"sp-automation-science-pack-2", 1},
+    {"sp-logistic-science-pack-2", 1},
+    {"sp-chemical-science-pack-2", 1},
+    {"sp-electronic-science-pack-1", 1},
+    {"sp-material-science-pack-2", 1},
+    {"sp-geological-science-pack-2", 1},
+    {"metallurgic-science-pack", 1},
+    {"electromagnetic-science-pack", 1},
+    {"production-science-pack", 1}
+  },
+  time = 30
+}
+
+data.raw.technology["foundry"].prerequisites = {
+  "tungsten-steel",
+}
+data.raw.technology["foundry"].research_trigger = nil
+data.raw.technology["foundry"].unit = {
+  count = 500,
+  ingredients = {
+    {"sp-automation-science-pack-2", 1},
+    {"sp-logistic-science-pack-2", 1},
+    {"sp-chemical-science-pack-2", 1},
+    {"sp-electronic-science-pack-1", 1},
+    {"sp-material-science-pack-2", 1},
+    {"sp-geological-science-pack-2", 1},
+    {"sp-metallurgic-science-pack-2", 1},
+    {"electromagnetic-science-pack", 1},
+    {"production-science-pack", 1}
+  },
+  time = 30
 }
 
 data.raw.technology["cryogenic-plant"].prerequisites = {
