@@ -3382,6 +3382,20 @@ data:extend({
       {type = "fluid", name = "sp-potassium-hydroxide-solution", amount = 50}
     },
   },
+  {
+    type = "recipe",
+    name = "sp-silicon-dioxide",  -- #ForRegEx# - recipe
+    category = "advanced-chemistry",
+    enabled = false,
+    energy_required = 2,
+    ingredients = {
+      {type = "item", name = "sp-sand", amount = 3},
+      {type = "fluid", name = "sp-hydrogen-chloride", amount = 20},
+    },
+    results = {
+      {type = "item", name = "sp-silicon-dioxide", amount = 1}
+    },
+  },
   ------------------------------------------------------------------------------
   -- MARK: chemical-staging
   ------------------------------------------------------------------------------
@@ -3685,6 +3699,38 @@ data:extend({
       tertiary = {r = 0.7, g = 0.7, b = 0.9, a = 1.000},
       quaternary = {r = 0.5, g = 0.5, b = 0.8, a = 1.000},
     }
+  },
+  ------------------------------------------------------------------------------
+  -- MARK: crystallizing
+  ------------------------------------------------------------------------------
+  {
+    type = "recipe",
+    name = "sp-silicon-nitride",  -- #ForRegEx# - recipe
+    category = "crystallizing",
+    enabled = false,
+    energy_required = 2,
+    ingredients = {
+      {type = "item", name = "sp-silicon-dioxide", amount = 1},
+      {type = "item", name = "carbon", amount = 1},
+      {type = "fluid", name = "sp-nitrogen", amount = 10},
+    },
+    results = {
+      {type = "item", name = "sp-silicon-nitride", amount = 1}
+    },
+  },
+  {
+    type = "recipe",
+    name = "sp-titanium-nitride",  -- #ForRegEx# - recipe
+    category = "crystallizing",
+    enabled = false,
+    energy_required = 6,
+    ingredients = {
+      {type = "item", name = "sp-titanium-ingot", amount = 2},
+      {type = "fluid", name = "sp-nitrogen", amount = 40}
+    },
+    results = {
+      {type = "item", name = "sp-titanium-nitride", amount = 2}
+    },
   },
   ------------------------------------------------------------------------------
   -- MARK: sp-kr-fuel-refinery
@@ -5081,6 +5127,25 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "sp-circuit-die",  -- #ForRegEx# - recipe
+    category = "crafting",
+    enabled = false,
+    energy_required = 12,
+    ingredients = {
+      {type = "item", name = "plastic-bar", amount = 1},
+      {type = "item", name = "sp-high-purity-silicon", amount = 4},
+      {type = "item", name = "copper-cable", amount = 2},
+      {type = "item", name = "sp-tellurium", amount = 2},
+      {type = "item", name = "sp-phosphorus", amount = 3},
+      {type = "item", name = "sp-silver-solder", amount = 1},
+      {type = "item", name = "sp-gold", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-integrated-circuit", amount = 5}
+    }
+  },
+  {
+    type = "recipe",
     name = "sp-integrated-circuit",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
@@ -5136,20 +5201,57 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "sp-circuit-die",  -- #ForRegEx# - recipe
+    category = "crafting",
+    enabled = false,
+    energy_required = 20,
+    ingredients = {
+      {type = "item", name = "sp-high-purity-silicon", amount = 4},
+      {type = "item", name = "sp-phosphorus", amount = 2},
+      {type = "item", name = "sp-boron-pillet", amount = 1},
+      {type = "item", name = "sp-silicon-dioxide", amount = 1},
+      {type = "item", name = "copper-plate", amount = 1},
+      {type = "item", name = "sp-aluminum-sheet", amount = 1},
+      {type = "item", name = "sp-tantalum-billet", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-circuit-die", amount = 5}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-memory-die",  -- #ForRegEx# - recipe
+    category = "crafting",
+    enabled = false,
+    energy_required = 16,
+    ingredients = {
+      {type = "item", name = "sp-high-purity-silicon", amount = 3},
+      {type = "item", name = "sp-phosphorus", amount = 2},
+      {type = "item", name = "sp-boron-pillet", amount = 1},
+      {type = "item", name = "sp-titanium-nitride", amount = 1},
+      {type = "item", name = "sp-silicon-nitride", amount = 1},
+      {type = "item", name = "sp-silicon-dioxide", amount = 1},
+      {type = "item", name = "copper-plate", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-memory-die", amount = 4}
+    }
+  },
+  {
+    type = "recipe",
     name = "sp-processor",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
-    energy_required = 6,
+    energy_required = 3,
     ingredients = {
       {type = "item", name = "plastic-bar", amount = 1},
-      {type = "item", name = "sp-high-purity-silicon", amount = 4},
-      {type = "item", name = "sp-phosphorus", amount = 2},
-      {type = "item", name = "sp-titanium-nitride", amount = 1},
+      {type = "item", name = "sp-circuit-die", amount = 1},
+      {type = "item", name = "sp-memory-die", amount = 2},
       {type = "item", name = "sp-palladium", amount = 1},
       {type = "item", name = "sp-silver-solder", amount = 1}
     },
     results = {
-      {type = "item", name = "sp-processor", amount = 2}
+      {type = "item", name = "sp-processor", amount = 1}
     }
   },
   {
@@ -6478,15 +6580,15 @@ data:extend({
     name = "sp-heavy-ball-bearing",  -- #ForRegEx# - recipe
     category = "crafting-with-fluid",
     enabled = false,
-    energy_required = 5,
+    energy_required = 2.5,
     ingredients = {
-      {type = "item", name = "sp-niobium-steel", amount = 5},
-      {type = "item", name = "sp-aluminum-brass", amount = 3},
-      {type = "item", name = "sp-titanium-nitride", amount = 1},
+      {type = "item", name = "sp-niobium-steel", amount = 2},
+      {type = "item", name = "sp-aluminum-brass", amount = 1},
+      {type = "item", name = "sp-silicon-nitride", amount = 2},
       {type = "fluid", name = "lubricant", amount = 20}
     },
     results = {
-      {type = "item", name = "sp-heavy-ball-bearing", amount = 4}
+      {type = "item", name = "sp-heavy-ball-bearing", amount = 1}
     }
   },
   {
@@ -12728,26 +12830,6 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-mirror", amount = 1}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-titanium-nitride",  -- #ForRegEx# - recipe
-    category = "chemistry",
-    enabled = false,
-    energy_required = 6,
-    ingredients = {
-      {type = "item", name = "sp-titanium-ingot", amount = 2},
-      {type = "fluid", name = "sp-nitrogen", amount = 40}
-    },
-    results = {
-      {type = "item", name = "sp-titanium-nitride", amount = 2}
-    },
-    crafting_machine_tint = {
-      primary = {r = 0.5, g = 0.5, b = 0.000, a = 1.000},
-      secondary = {r = 0.2, g = 0.2, b = 0.0, a = 1.000},
-      tertiary = {r = 0.0, g = 0.0, b = 0.0, a = 1.000},
-      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
     }
   },
   {

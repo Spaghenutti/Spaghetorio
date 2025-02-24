@@ -22,8 +22,8 @@ data.raw.item["tungsten-plate"].subgroup = "raw-material"
 data.raw.item["holmium-plate"].subgroup = "raw-material"
 data.raw.item["lithium-plate"].subgroup = "raw-material"
 
+data.raw.item["tungsten-carbide"].subgroup = "ceramic"
 
-data.raw.item["tungsten-carbide"].subgroup = "advanced-raw-material"
 data.raw.item["carbon-fiber"].subgroup = "advanced-raw-material"
 
 -- group intermediates

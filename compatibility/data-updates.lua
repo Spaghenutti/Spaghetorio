@@ -40,7 +40,7 @@ data.raw.technology["heating-tower"].effects =
 }
 data.raw.technology["heating-tower"].prerequisites = {
   "lithium-processing",
-  "sp-titanium-nitride",
+  "sp-crystallizer",
   "sp-heat-resistant-tile"
 }
 data.raw.technology["heating-tower"].research_trigger = nil

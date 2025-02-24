@@ -120,15 +120,21 @@ data:extend({
   },
   {
     type = "item-subgroup",
-    name = "chemical-product",
+    name = "ceramic",
     group = "sp-materials",
     order = "g"
   },
   {
     type = "item-subgroup",
-    name = "advanced-raw-material",
+    name = "chemical-product",
     group = "sp-materials",
     order = "h"
+  },
+  {
+    type = "item-subgroup",
+    name = "advanced-raw-material",
+    group = "sp-materials",
+    order = "i"
   },
   {
     type = "item-subgroup",

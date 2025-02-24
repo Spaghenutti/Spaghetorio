@@ -949,16 +949,6 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-zirconia",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/icons/zirconia.png",
-    icon_size = 64,
-    scale = 0.5,
-    subgroup = "processed-resource",
-    order = "[zirconia]",
-    stack_size = 100
-  },
-  {
-    type = "item",
     name = "sp-titanium-chloride",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/titanium-chloride.png",
     icon_size = 64,
@@ -1365,6 +1355,26 @@ data:extend({
     scale = 0.5,
     subgroup = "processed-resource",
     order = "[potassium-chloride]",
+    stack_size = 200
+  },
+  {
+    type = "item",
+    name = "sp-silicon-dioxide",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/silicon-dioxide.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "processed-resource",
+    order = "[silicon-dioxide]",
+    stack_size = 200
+  },
+  {
+    type = "item",
+    name = "sp-silicon-nitride",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/silicon-nitride.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "processed-resource",
+    order = "[silicon-nitride]",
     stack_size = 200
   },
   {
@@ -2058,108 +2068,12 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-titanium-nitride",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/icons/titanium-nitride-1.png",
-    icon_size = 64,
-    pictures = {
-      {size = 64, filename = "__Spaghetorio__/graphics/icons/titanium-nitride-1.png", scale = 0.5, mipmap_count = 4},
-      {size = 64, filename = "__Spaghetorio__/graphics/icons/titanium-nitride-2.png", scale = 0.5, mipmap_count = 4},
-      {size = 64, filename = "__Spaghetorio__/graphics/icons/titanium-nitride-3.png", scale = 0.5, mipmap_count = 4},
-      {size = 64, filename = "__Spaghetorio__/graphics/icons/titanium-nitride-4.png", scale = 0.5, mipmap_count = 4}
-    },
-    scale = 0.5,
-    subgroup = "advanced-raw-material",
-    order = "ceramic-[titanium-nitride]",
-    stack_size = 100
-  },
-  {
-    type = "item",
-    name = "sp-titanium-carbide",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/icons/titanium-carbide.png",
-    icon_size = 64,
-    scale = 0.5,
-    subgroup = "advanced-raw-material",
-    order = "ceramic-[titanium-carbide]",
-    stack_size = 100
-  },
-  {
-    type = "item",
-    name = "sp-diamond",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/icons/diamond.png",
-    icon_size = 64,
-    scale = 0.5,
-    subgroup = "advanced-raw-material",
-    order = "crystal-[diamond]",
-    stack_size = 100
-  },
-  {
-    type = "item",
-    name = "sp-boron-carbide",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/icons/boron-carbide.png",
-    icon_size = 64,
-    scale = 0.5,
-    subgroup = "advanced-raw-material",
-    order = "carbon-[boron-carbide]",
-    stack_size = 100
-  },
-  {
-    type = "item",
     name = "sp-boron-phosphide",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/boron-phosphide.png",
     icon_size = 64,
     scale = 0.5,
     subgroup = "advanced-raw-material",
     order = "[boron-phosphide]",
-    stack_size = 100
-  },
-  {
-    type = "item",
-    name = "sp-boron-silicade",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/icons/boron-silicade.png",
-    icon_size = 64,
-    scale = 0.5,
-    subgroup = "advanced-raw-material",
-    order = "[boron-silicade]",
-    stack_size = 100
-  },
-  {
-    type = "item",
-    name = "sp-lead-molybdate",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/icons/lead-molybdate.png",
-    icon_size = 64,
-    scale = 0.5,
-    subgroup = "advanced-raw-material",
-    order = "[lead-molybdate]",
-    stack_size = 100
-  },
-  {
-    type = "item",
-    name = "sp-barium-titanate",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/icons/barium-titanate.png",
-    icon_size = 64,
-    scale = 0.5,
-    subgroup = "advanced-raw-material",
-    order = "[barium-titanate]",
-    stack_size = 100
-  },
-  {
-    type = "item",
-    name = "sp-monocrystal",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/icons/monocrystal.png",
-    icon_size = 64,
-    scale = 0.5,
-    subgroup = "advanced-raw-material",
-    order = "crystal-[monocrystal]",
-    stack_size = 100
-  },
-  {
-    type = "item",
-    name = "sp-quasicrystal",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/icons/quasicrystal.png",
-    icon_size = 64,
-    scale = 0.5,
-    subgroup = "advanced-raw-material",
-    order = "crystal-[quasicrystal]",
     stack_size = 100
   },
   ------------------------------------------------------------------------------
@@ -2892,22 +2806,6 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-ceramics",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/icons/ceramics-1.png",
-    icon_size = 64,
-    pictures = {
-      {size = 64, filename = "__Spaghetorio__/graphics/icons/ceramics-1.png", scale = 0.5, mipmap_count = 4},
-      {size = 64, filename = "__Spaghetorio__/graphics/icons/ceramics-2.png", scale = 0.5, mipmap_count = 4},
-      {size = 64, filename = "__Spaghetorio__/graphics/icons/ceramics-3.png", scale = 0.5, mipmap_count = 4},
-      {size = 64, filename = "__Spaghetorio__/graphics/icons/ceramics-4.png", scale = 0.5, mipmap_count = 4}
-    },
-    scale = 0.5,
-    subgroup = "mechanical-component",
-    order = "ceramic-1-[ceramics]",
-    stack_size = 100
-  },
-  {
-    type = "item",
     name = "sp-ceramic-matrix-composites",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/ceramic-matrix-composites-1.png",
     icon_size = 64,
@@ -3183,6 +3081,26 @@ data:extend({
     scale = 0.5,
     subgroup = "electronic-optical-component",
     order = "basic-[vacuum-tube]",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "sp-circuit-die",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/circuit-die.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "electronic-optical-component",
+    order = "semiconductor-a[die]",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "sp-memory-die",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/memory-die.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "electronic-optical-component",
+    order = "semiconductor-a[die]",
     stack_size = 100
   },
   {
@@ -3920,6 +3838,141 @@ data:extend({
     stack_size = 50
   },
   ------------------------------------------------------------------------------
+  -- MARK: ceramic
+  ------------------------------------------------------------------------------
+  {
+    type = "item",
+    name = "sp-ceramics",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/ceramics-1.png",
+    icon_size = 64,
+    pictures = {
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/ceramics-1.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/ceramics-2.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/ceramics-3.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/ceramics-4.png", scale = 0.5, mipmap_count = 4}
+    },
+    scale = 0.5,
+    subgroup = "ceramic",
+    order = "[ceramics]",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "sp-zirconia",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/zirconia.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "ceramic",
+    order = "crystal-[zirconia]",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "sp-diamond",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/diamond.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "ceramic",
+    order = "crystal-[diamond]",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "sp-barium-carbonate",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/barium-carbonate.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "ceramic",
+    order = "[barium-carbonate]",
+    stack_size = 200
+  },
+  {
+    type = "item",
+    name = "sp-barium-titanate",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/barium-titanate.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "ceramic",
+    order = "[barium-titanate]",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "sp-monocrystal",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/monocrystal.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "ceramic",
+    order = "crystal-[monocrystal]",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "sp-quasicrystal",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/quasicrystal.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "ceramic",
+    order = "crystal-[quasicrystal]",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "sp-boron-silicade",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/boron-silicade.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "ceramic",
+    order = "[boron-silicade]",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "sp-lead-molybdate",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/lead-molybdate.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "ceramic",
+    order = "[lead-molybdate]",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "sp-titanium-nitride",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/titanium-nitride-1.png",
+    icon_size = 64,
+    pictures = {
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/titanium-nitride-1.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/titanium-nitride-2.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/titanium-nitride-3.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/titanium-nitride-4.png", scale = 0.5, mipmap_count = 4}
+    },
+    scale = 0.5,
+    subgroup = "ceramic",
+    order = "[titanium-nitride]",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "sp-titanium-carbide",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/titanium-carbide.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "ceramic",
+    order = "[titanium-carbide]",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "sp-boron-carbide",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/boron-carbide.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "ceramic",
+    order = "[boron-carbide]",
+    stack_size = 100
+  },
+  ------------------------------------------------------------------------------
   -- MARK: chemical-product
   ------------------------------------------------------------------------------
   {
@@ -3961,16 +4014,6 @@ data:extend({
     subgroup = "chemical-product",
     order = "[insulation-sheet]",
     stack_size = 100
-  },
-  {
-    type = "item",
-    name = "sp-barium-carbonate",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/icons/barium-carbonate.png",
-    icon_size = 64,
-    scale = 0.5,
-    subgroup = "chemical-product",
-    order = "[barium-carbonate]",
-    stack_size = 200
   },
   {
     type = "item",

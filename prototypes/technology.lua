@@ -2001,7 +2001,7 @@ data:extend({
     name = "sp-semiconductor",  -- #ForRegEx# - technology
     icon_size = 256,
     icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/hr-icons/antenna-chip.png", 256, nil,
-                                   "__Spaghetorio__/graphics/hr-icons/processor.png", 256, nil),
+                                        "__Spaghetorio__/graphics/hr-icons/processor.png", 256, nil),
     effects =
     {
       {
@@ -2011,6 +2011,14 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "sp-processor"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-circuit-die"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-memory-die"
       }
     },
     prerequisites = {
@@ -2746,38 +2754,6 @@ data:extend({
         {"sp-production-science-pack-3", 1},
         {"utility-science-pack", 1},
         {"sp-nuclear-science-pack-2", 1}
-      },
-      time = 30
-    },
-  },
-  {
-    type = "technology",
-    name = "sp-titanium-nitride",  -- #ForRegEx# - technology
-    icon_size = 256,
-    icon = "__Spaghetorio__/graphics/hr-icons/titanium-nitride-1.png",
-    effects =
-    {
-      {
-        type = "unlock-recipe",
-        recipe = "sp-titanium-nitride"
-      },
-    },
-    prerequisites = {
-      "sp-material-science-pack-2",
-      "sp-kr-atmosphere-condensation"
-    },
-    unit =
-    {
-      count = 150,
-      ingredients = {
-        {"sp-automation-science-pack-2", 1},
-        {"logistic-science-pack", 1},
-        {"chemical-science-pack", 1},
-        {"sp-electronic-science-pack-1", 1},
-        {"sp-material-science-pack-2", 1},
-        {"sp-geological-science-pack-1", 1},
-        {"metallurgic-science-pack", 1},
-        {"electromagnetic-science-pack", 1}
       },
       time = 30
     },
@@ -4175,7 +4151,7 @@ data:extend({
     prerequisites = {
       "sp-aluminum-alloys",
       "sp-niobium-alloys",
-      "sp-titanium-nitride",
+      "sp-crystallizer",
       "sp-induction-hardening-facility"
     },
     unit =
@@ -6994,6 +6970,45 @@ data:extend({
   },
   {
     type = "technology",
+    name = "sp-crystallizer",  -- #ForRegEx# - technology
+    icon = "__Spaghetorio__/graphics/hr-icons/titanium-nitride.png",
+    icon_size = 256,
+    icon_mipmaps = 4,
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-titanium-nitride",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-silicon-nitride",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-silicon-dioxide"
+      }
+    },
+    prerequisites = {
+      "sp-material-science-pack-2",
+      "sp-kr-atmosphere-condensation"
+    },
+    unit = {
+      count = 500,
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"logistic-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"sp-electronic-science-pack-1", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-geological-science-pack-1", 1},
+        {"metallurgic-science-pack", 1},
+        {"electromagnetic-science-pack", 1}
+      },
+      time = 45,
+    },
+  },
+  {
+    type = "technology",
     name = "sp-quantum-stabilizer",  -- #ForRegEx# - technology
     icon = "__Spaghetorio__/graphics/hr-icons/quantum-stabilizer.png",
     icon_size = 256,
@@ -8091,7 +8106,7 @@ data:extend({
     },
     prerequisites = {
       "sp-logistic-science-pack-2",
-      "sp-titanium-nitride",
+      "sp-crystallizer",
       "sp-heat-resistant-tile"
     },
     unit =

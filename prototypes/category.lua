@@ -166,6 +166,10 @@ data:extend({
   },
   {
     type = "recipe-category",
+    name = "crystallizing"
+  },
+  {
+    type = "recipe-category",
     name = "induction-hardening"
   },
   {
