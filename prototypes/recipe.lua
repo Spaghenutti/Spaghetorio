@@ -5811,7 +5811,22 @@ data:extend({
     results = {
       {type = "item", name = "sp-gamma-radiation-source", amount = 1}
     }
-  },{
+  },
+  {
+    type = "recipe",
+    name = "sp-biters-research-data",  -- #ForRegEx# - recipe
+    category = "crafting",
+    enabled = false,
+    energy_required = 69,
+    ingredients =
+    {
+      {type = "item", name = "iron-plate", amount = 69}
+    },
+    results = {
+      {type = "item", name = "sp-biters-research-data", amount = 5}
+    }
+  },
+  {
     type = "recipe",
     name = "sp-material-science-pack-1",  -- #ForRegEx# - recipe
     category = "crafting",
@@ -6188,6 +6203,58 @@ data:extend({
       {type = "item", name = "sp-utility-science-pack-3", amount = 40}
     }
   },
+  {
+    type = "recipe",
+    name = "sp-matter-science-pack",  -- #ForRegEx# - recipe
+    category = "crafting",
+    enabled = false,
+    energy_required = 40,
+    ingredients =
+    {
+      {type = "item", name = "sp-blunagium-bar", amount = 5},
+      {type = "item", name = "sp-grobgnum-bar", amount = 5},
+      {type = "item", name = "sp-rukite-bar", amount = 5},
+      {type = "item", name = "sp-yemnuth-shard", amount = 5},
+      {type = "item", name = "sp-imersite-crystal", amount = 5},
+      {type = "item", name = "sp-matter-research-data", amount = 5},
+      {type = "item", name = "sp-blank-tech-card", amount = 5}
+    },
+    results = {
+      {type = "item", name = "sp-matter-science-pack", amount = 5}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-optimization-science-pack",  -- #ForRegEx# - recipe
+    category = "crafting",
+    enabled = false,
+    energy_required = 69,
+    ingredients =
+    {
+      {type = "item", name = "iron-plate", amount = 5}
+    },
+    results = {
+      {type = "item", name = "sp-optimization-science-pack", amount = 40}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-advanced-science-pack",  -- #ForRegEx# - recipe
+    category = "crafting",
+    enabled = false,
+    energy_required = 40,
+    ingredients =
+    {
+      {type = "item", name = "sp-biochip", amount = 5},
+      {type = "item", name = "sp-chronalyte", amount = 5},
+      {type = "item", name = "sp-nanowire", amount = 5},
+      {type = "item", name = "sp-plasma-capsule", amount = 5},
+      {type = "item", name = "sp-blank-tech-card", amount = 5}
+    },
+    results = {
+      {type = "item", name = "sp-advanced-science-pack", amount = 5}
+    }
+  },
   ------------------------------------------------------------------------------
   -- MARK: crafting-with-fluid
   ------------------------------------------------------------------------------
@@ -6512,6 +6579,26 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-chronalyte", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-matter-research-data",  -- #ForRegEx# - recipe
+    category = "crafting-with-fluid",
+    enabled = false,
+    energy_required = 24,
+    ingredients =
+    {
+      {type = "item", name = "sp-rare-metals-alloy", amount = 5},
+      {type = "item", name = "sp-graphene", amount = 5},
+      {type = "item", name = "sp-tritium", amount = 5},
+      {type = "item", name = "sp-stibnite", amount = 5},
+      {type = "item", name = "sp-biomass", amount = 5},
+      {type = "item", name = "sp-neodymium-magnet", amount = 5},
+      {type = "fluid", name = "sp-helium-3", amount = 5}
+    },
+    results = {
+      {type = "item", name = "sp-matter-research-data", amount = 5}
     }
   },
   ------------------------------------------------------------------------------
@@ -13145,6 +13232,7 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "chemistry",
+    subgroup = "gas",
     enabled = false,
     energy_required = 40,
     ingredients = {
@@ -13160,7 +13248,8 @@ data:extend({
       secondary = {r = 0.9, g = 0.9, b = 1.0, a = 1.000},
       tertiary = {r = 0.8, g = 0.8, b = 1.0, a = 1.000},
       quaternary = {r = 0.7, g = 0.7, b = 1.0, a = 1.000},
-    }
+    },
+    order = "a[gas]-g[helium-3-from-helium-and-hydrogen]"
   },
   {
     type = "recipe",
@@ -13281,6 +13370,48 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-imersite-crystal", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-biomass",  -- #ForRegEx# - recipe
+    category = "sp-kr-bioprocessing",
+    enabled = false,
+    energy_required = 20,
+    ingredients = {
+      {type = "item", name = "jelly", amount = 5},
+      {type = "fluid", name = "petroleum-gas", amount = 50},
+      {type = "fluid", name = "sp-allyl-chloride", amount = 25}
+    },
+    results = {
+      {type = "item", name = "sp-biomass", amount = 5}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-singularity-science-pack",  -- #ForRegEx# - recipe
+    category = "sp-kr-matter-items",
+    enabled = false,
+    allow_productivity = false,
+    energy_required = 180,
+    ingredients =
+    {
+      {type = "item", name = "sp-miniaturized-star-core-stabilizer", amount = 1},
+      {type = "item", name = "sp-information-cube", amount = 1},
+      {type = "item", name = "sp-subatomic-condenser", amount = 5},
+      {type = "item", name = "sp-alpha-wave-tray-array", amount = 5},
+      {type = "item", name = "sp-femto-navigator", amount = 200},
+      {type = "fluid", name = "sp-matter", amount = 100},
+      {type = "item", name = "sp-charged-matter-stabilizer", amount = 5},
+      {type = "item", name = "sp-evolution-cell-container", amount = 20},
+      {type = "item", name = "sp-blunagium-acrosphere-2", amount = 1},
+      {type = "item", name = "sp-grobgnum-acrosphere-2", amount = 1},
+      {type = "item", name = "sp-rukite-acrosphere-2", amount = 1},
+      {type = "item", name = "sp-yemnuth-acrosphere-2", amount = 1},
+      {type = "item", name = "sp-blank-tech-card", amount = 40}
+    },
+    results = {
+      {type = "item", name = "sp-singularity-science-pack", amount = 40}
     }
   },
 })

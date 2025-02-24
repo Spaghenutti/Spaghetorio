@@ -180,6 +180,7 @@ data:extend({
       "sp-nuclear-science-pack-2",
       "production-science-pack",
       "utility-science-pack",
+      "space-science-pack",
 
       -- "sp-automation-science-pack-3",
       -- "sp-logistic-science-pack-3",

@@ -44,6 +44,7 @@ data.raw.lab["biolab"].inputs = {
   "sp-nuclear-science-pack-2",
   "production-science-pack",
   "utility-science-pack",
+  "space-science-pack",
 
   "sp-automation-science-pack-3",
   "sp-logistic-science-pack-3",
@@ -62,11 +63,6 @@ data.raw.lab["biolab"].inputs = {
   "sp-utility-science-pack-3",
   "sp-space-science-pack-3",
   "sp-matter-science-pack",
-
-  -- "space-science-pack",  -- Optimization tech card
-  -- "sp-advanced-science-pack",
-  -- "sp-singularity-science-pack",
-  -- "sp-uniformity-science-pack",
 
   "agricultural-science-pack",
   "electromagnetic-science-pack",

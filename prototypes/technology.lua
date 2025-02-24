@@ -7285,6 +7285,152 @@ data:extend({
   },
   {
     type = "technology",
+    name = "sp-kr-bio-processing",  -- #ForRegEx# - technology
+    icon = "__Spaghetorio__/graphics/krastorio/technologies/bio-lab.png",
+    icon_size = 256,
+    icon_mipmaps = 4,
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-kr-bio-lab",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-biomass",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-biters-research-data",
+      },
+    },
+    prerequisites = {
+      "sp-chemical-science-pack-3"
+    },
+    unit = {
+      count = 200,
+      ingredients = {
+        {"automation-science-pack", 1}
+      },
+      time = 45,
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-kr-advanced-chemistry",  -- #ForRegEx# - technology
+    icon = "__Spaghetorio__/graphics/krastorio/technologies/advanced-chemistry.png",
+    icon_size = 256,
+    icon_mipmaps = 4,
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-kr-advanced-chemical-plant",
+      }
+    },
+    prerequisites = {
+      "sp-chemical-science-pack-3"
+    },
+    unit = {
+      count = 200,
+      ingredients = {
+        {"automation-science-pack", 1}
+      },
+      time = 45,
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-kr-quantum-computer",  -- #ForRegEx# - technology
+    icon = "__Spaghetorio__/graphics/krastorio/technologies/quantum-computer.png",
+    icon_size = 256,
+    icon_mipmaps = 4,
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-kr-quantum-computer",
+      }
+    },
+    prerequisites = {
+      "sp-quantum-computing"
+    },
+    unit = {
+      count = 200,
+      ingredients = {
+        {"automation-science-pack", 1}
+      },
+      time = 45,
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-kr-singularity-lab",  -- #ForRegEx# - technology
+    icon = "__Spaghetorio__/graphics/krastorio/technologies/singularity-lab.png",
+    icon_size = 256,
+    icon_mipmaps = 4,
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-kr-singularity-lab",
+      }
+    },
+    prerequisites = {
+      "sp-utility-science-pack-3"
+    },
+    unit = {
+      count = 200,
+      ingredients = {
+        {"automation-science-pack", 1}
+      },
+      time = 45,
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-kr-singularity-beacon",  -- #ForRegEx# - technology
+    icon = "__Spaghetorio__/graphics/krastorio/technologies/singularity-beacon.png",
+    icon_size = 256,
+    icon_mipmaps = 4,
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-kr-singularity-beacon",
+      }
+    },
+    prerequisites = {
+      "sp-utility-science-pack-3"
+    },
+    unit = {
+      count = 200,
+      ingredients = {
+        {"automation-science-pack", 1}
+      },
+      time = 45,
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-kr-stellar-sinkhole-forge",  -- #ForRegEx# - technology
+    icon = "__Spaghetorio__/graphics/krastorio/technologies/intergalactic-transceiver.png",
+    icon_size = 256,
+    icon_mipmaps = 4,
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-kr-stellar-sinkhole-forge",
+      }
+    },
+    prerequisites = {
+      "sp-uniformity-science-pack"
+    },
+    unit = {
+      count = 200,
+      ingredients = {
+        {"automation-science-pack", 1}
+      },
+      time = 45,
+    },
+  },
+  {
+    type = "technology",
     name = "sp-kr-gas-power-station",  -- #ForRegEx# - technology
     icon = "__Spaghetorio__/graphics/krastorio/technologies/gas-power-station.png",
     icon_size = 256,
@@ -8657,7 +8803,7 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "sp-utility-science-pack-3"
-      },
+      }
     },
     prerequisites = {
       "sp-computer-science-pack-3",
@@ -8676,7 +8822,149 @@ data:extend({
         {"sp-material-science-pack-3", 1},
         {"sp-nuclear-science-pack-3", 1},
         {"sp-computer-science-pack-3", 1},
-        {"utility-science-pack", 1},
+        {"utility-science-pack", 1}
+      },
+      time = 30
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-matter-science-pack",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghetorio__/graphics/hr-icons/matter-science-pack-3.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-matter-science-pack"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-matter-research-data"
+      }
+    },
+    prerequisites = {
+      "sp-utility-science-pack-3"
+    },
+    unit =
+    {
+      count = 750,
+      ingredients = {
+        {"sp-automation-science-pack-3", 1},
+        {"sp-logistic-science-pack-3", 1},
+        {"sp-chemical-science-pack-3", 1},
+        {"sp-electronic-science-pack-3", 1},
+        {"sp-geological-science-pack-3", 1},
+        {"space-science-pack", 1},
+        {"sp-material-science-pack-3", 1},
+        {"sp-nuclear-science-pack-3", 1},
+        {"sp-computer-science-pack-3", 1},
+        {"sp-utility-science-pack-3", 1}
+      },
+      time = 30
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-optimization-science-pack",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghetorio__/graphics/krastorio/technologies/optimization-tech-card.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-optimization-science-pack"
+      }
+    },
+    prerequisites = {
+      "sp-matter-science-pack"
+    },
+    unit =
+    {
+      count = 750,
+      ingredients = {
+        {"sp-automation-science-pack-3", 1},
+        {"sp-logistic-science-pack-3", 1},
+        {"sp-chemical-science-pack-3", 1},
+        {"sp-electronic-science-pack-3", 1},
+        {"sp-geological-science-pack-3", 1},
+        {"space-science-pack", 1},
+        {"sp-material-science-pack-3", 1},
+        {"sp-nuclear-science-pack-3", 1},
+        {"sp-computer-science-pack-3", 1},
+        {"sp-utility-science-pack-3", 1},
+        {"sp-matter-science-pack", 1}
+      },
+      time = 30
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-advanced-science-pack",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghetorio__/graphics/krastorio/technologies/advanced-tech-card.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-advanced-science-pack"
+      }
+    },
+    prerequisites = {
+      "sp-optimization-science-pack"
+    },
+    unit =
+    {
+      count = 750,
+      ingredients = {
+        {"sp-automation-science-pack-3", 1},
+        {"sp-logistic-science-pack-3", 1},
+        {"sp-chemical-science-pack-3", 1},
+        {"sp-electronic-science-pack-3", 1},
+        {"sp-geological-science-pack-3", 1},
+        {"space-science-pack", 1},
+        {"sp-material-science-pack-3", 1},
+        {"sp-nuclear-science-pack-3", 1},
+        {"sp-computer-science-pack-3", 1},
+        {"sp-utility-science-pack-3", 1},
+        {"sp-matter-science-pack", 1},
+        {"sp-optimization-science-pack", 1}
+      },
+      time = 30
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-singularity-science-pack",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghetorio__/graphics/krastorio/technologies/singularity-tech-card.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-singularity-science-pack"
+      }
+    },
+    prerequisites = {
+      "sp-advanced-science-pack"
+    },
+    unit =
+    {
+      count = 750,
+      ingredients = {
+        {"sp-automation-science-pack-3", 1},
+        {"sp-logistic-science-pack-3", 1},
+        {"sp-chemical-science-pack-3", 1},
+        {"sp-electronic-science-pack-3", 1},
+        {"sp-geological-science-pack-3", 1},
+        {"space-science-pack", 1},
+        {"sp-material-science-pack-3", 1},
+        {"sp-nuclear-science-pack-3", 1},
+        {"sp-computer-science-pack-3", 1},
+        {"sp-utility-science-pack-3", 1},
+        {"sp-matter-science-pack", 1},
+        {"sp-optimization-science-pack", 1},
+        {"sp-advanced-science-pack", 1}
       },
       time = 30
     },

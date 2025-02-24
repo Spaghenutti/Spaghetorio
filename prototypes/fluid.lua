@@ -360,7 +360,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "gas",
-    order = "a[fluid]-f[nitrogen]"
+    order = "a[gas]-f[nitrogen]"
   },
   {
     type = "fluid",
@@ -373,7 +373,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "gas",
-    order = "a[fluid]-f[hydrogen]"
+    order = "a[gas]-f[hydrogen]"
   },
   {
     type = "fluid",
@@ -386,7 +386,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "gas",
-    order = "a[fluid]-f[oxygen]"
+    order = "a[gas]-f[oxygen]"
   },
   {
     type = "fluid",
@@ -399,7 +399,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "gas",
-    order = "a[fluid]-g[helium]"
+    order = "a[gas]-g[helium]"
   },
   {
     type = "fluid",
@@ -412,7 +412,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "gas",
-    order = "a[fluid]-g[helium-3]"
+    order = "a[gas]-g[helium-3]"
   },
   {
     type = "fluid",
@@ -425,7 +425,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "gas",
-    order = "a[fluid]-g[xenon]"
+    order = "a[gas]-g[xenon]"
   },
   {
     type = "fluid",
@@ -438,7 +438,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "gas",
-    order = "a[fluid]-h[deuterium]"
+    order = "a[gas]-h[deuterium]"
   },
   ------------------------------------------------------------------------------
   -- MARK: chemical

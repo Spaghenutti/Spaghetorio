@@ -6,7 +6,7 @@ Date: 2025-02-26
     - Added locale for some late game tech
   Changes:
     - Car is now unlocked earlier
-    - Tech tree updates for reaching chemical science pack 2, material science pack 2 and geological science pack 2
+    - Tech tree updates for reaching production science pack
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.1
 Date: 2025-02-23

@@ -2067,7 +2067,7 @@ data.raw.technology["production-science-pack"].prerequisites = {
 data.raw.technology["production-science-pack"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},
   {"sp-logistic-science-pack-2", 1},
-  {"chemical-science-pack", 1},
+  {"sp-chemical-science-pack-2", 1},
   {"sp-electronic-science-pack-1", 1},
   {"sp-material-science-pack-2", 1},
   {"sp-geological-science-pack-2", 1},
