@@ -228,33 +228,6 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-ammonium-paratungstate",  -- #ForRegEx# - recipe
-    category = "smelting",
-    enabled = false,
-    energy_required = 8,
-    ingredients = {
-      {type = "item", name = "tungsten-ore", amount = 2}
-    },
-    results = {
-      {type = "item", name = "sp-ammonium-paratungstate", amount = 1}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-tungsten-powder",  -- #ForRegEx# - recipe
-    category = "smelting",
-    enabled = false,
-    energy_required = 6,
-    ingredients = {
-      {type = "item", name = "sp-ammonium-paratungstate", amount = 2},
-      {type = "item", name = "sp-sodium-carbonate", amount = 1}
-    },
-    results = {
-      {type = "item", name = "sp-tungsten-powder", amount = 6}
-    }
-  },
-  {
-    type = "recipe",
     name = "sp-chromium-plate",  -- #ForRegEx# - recipe
     icon = "__Spaghetorio__/graphics/icons/chromium-plate.png",
     icon_size = 64,
@@ -692,61 +665,6 @@ data:extend({
   ------------------------------------------------------------------------------
   {
     type = "recipe",
-    name = "sp-monocrystal",  -- #ForRegEx# - recipe
-    category = "intermediate-smelting",
-    enabled = false,
-    energy_required = 30,
-    ingredients = {
-      {type = "item", name = "sp-titanium-plate", amount = 6},
-      {type = "item", name = "sp-lanthanum", amount = 1},
-      {type = "item", name = "sp-iridium", amount = 1},
-    },
-    results = {
-      {type = "item", name = "sp-monocrystal", amount = 1}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-quasicrystal-1",  -- #ForRegEx# - recipe
-    icon = "__Spaghetorio__/graphics/icons/quasicrystal.png",
-    icon_size = 64,
-    mip_maps = 4,
-    category = "intermediate-smelting",
-    enabled = false,
-    energy_required = 30,
-    ingredients = {
-      {type = "item", name = "copper-plate", amount = 4},
-      {type = "item", name = "iron-plate", amount = 1},
-      {type = "item", name = "sp-aluminum-sheet", amount = 2},
-      {type = "item", name = "sp-chromium-plate", amount = 5}
-    },
-    results = {
-      {type = "item", name = "sp-quasicrystal", amount = 1}
-    },
-    order = "crystal-[quasicrystal-1]"
-  },
-  {
-    type = "recipe",
-    name = "sp-quasicrystal-2",  -- #ForRegEx# - recipe
-    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/quasicrystal.png", 64,
-                                         "__Spaghetorio__/graphics/icons/aluminum-sheet.png", 64),
-    category = "intermediate-smelting",
-    enabled = false,
-    energy_required = 40,
-    hide_from_player_crafting = true,
-    ingredients = {
-      {type = "item", name = "sp-nickel-ingot", amount = 3},
-      {type = "item", name = "sp-aluminum-sheet", amount = 5},
-      {type = "item", name = "sp-palladium", amount = 1},
-      {type = "item", name = "sp-niobium-billet", amount = 1}
-    },
-    results = {
-      {type = "item", name = "sp-quasicrystal", amount = 4}
-    },
-    order = "crystal-[quasicrystal-1]"
-  },
-  {
-    type = "recipe",
     name = "sp-rukite-bar",  -- #ForRegEx# - recipe
     category = "intermediate-smelting",
     enabled = false,
@@ -898,6 +816,33 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-ferrite", amount = 4}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-ammonium-paratungstate",  -- #ForRegEx# - recipe
+    category = "intermediate-smelting",
+    enabled = false,
+    energy_required = 8,
+    ingredients = {
+      {type = "item", name = "tungsten-ore", amount = 2}
+    },
+    results = {
+      {type = "item", name = "sp-ammonium-paratungstate", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-tungsten-powder",  -- #ForRegEx# - recipe
+    category = "intermediate-smelting",
+    enabled = false,
+    energy_required = 6,
+    ingredients = {
+      {type = "item", name = "sp-ammonium-paratungstate", amount = 2},
+      {type = "item", name = "sp-sodium-carbonate", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-tungsten-powder", amount = 6}
     }
   },
   ------------------------------------------------------------------------------
@@ -3745,6 +3690,60 @@ data:extend({
     results = {
       {type = "item", name = "sp-titanium-nitride", amount = 2}
     },
+  },  {
+    type = "recipe",
+    name = "sp-monocrystal",  -- #ForRegEx# - recipe
+    category = "crystallizing",
+    enabled = false,
+    energy_required = 30,
+    ingredients = {
+      {type = "item", name = "sp-titanium-plate", amount = 6},
+      {type = "item", name = "sp-lanthanum", amount = 1},
+      {type = "item", name = "sp-iridium", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-monocrystal", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-quasicrystal-1",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/icons/quasicrystal.png",
+    icon_size = 64,
+    mip_maps = 4,
+    category = "crystallizing",
+    enabled = false,
+    energy_required = 30,
+    ingredients = {
+      {type = "item", name = "copper-plate", amount = 4},
+      {type = "item", name = "iron-plate", amount = 1},
+      {type = "item", name = "sp-aluminum-sheet", amount = 2},
+      {type = "item", name = "sp-chromium-plate", amount = 5}
+    },
+    results = {
+      {type = "item", name = "sp-quasicrystal", amount = 1}
+    },
+    order = "crystal-[quasicrystal-1]"
+  },
+  {
+    type = "recipe",
+    name = "sp-quasicrystal-2",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/quasicrystal.png", 64,
+                                         "__Spaghetorio__/graphics/icons/aluminum-sheet.png", 64),
+    category = "crystallizing",
+    enabled = false,
+    energy_required = 40,
+    hide_from_player_crafting = true,
+    ingredients = {
+      {type = "item", name = "sp-nickel-ingot", amount = 3},
+      {type = "item", name = "sp-aluminum-sheet", amount = 5},
+      {type = "item", name = "sp-palladium", amount = 1},
+      {type = "item", name = "sp-niobium-billet", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-quasicrystal", amount = 4}
+    },
+    order = "crystal-[quasicrystal-1]"
   },
   ------------------------------------------------------------------------------
   -- MARK: electronics-with-fluid
@@ -5200,25 +5199,6 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-circuit-die",  -- #ForRegEx# - recipe
-    category = "crafting",
-    enabled = false,
-    energy_required = 12,
-    ingredients = {
-      {type = "item", name = "plastic-bar", amount = 1},
-      {type = "item", name = "sp-high-purity-silicon", amount = 4},
-      {type = "item", name = "copper-cable", amount = 2},
-      {type = "item", name = "sp-tellurium", amount = 2},
-      {type = "item", name = "sp-phosphorus", amount = 3},
-      {type = "item", name = "sp-silver-solder", amount = 1},
-      {type = "item", name = "sp-gold", amount = 1}
-    },
-    results = {
-      {type = "item", name = "sp-integrated-circuit", amount = 5}
-    }
-  },
-  {
-    type = "recipe",
     name = "sp-integrated-circuit",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
@@ -6631,6 +6611,23 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "sp-drillhead",  -- #ForRegEx# - recipe
+    category = "crafting-with-fluid",
+    enabled = false,
+    energy_required = 6,
+    ingredients = {
+      {type = "item", name = "sp-heavy-gearbox", amount = 1},
+      {type = "item", name = "sp-vanadium-steel", amount = 10},
+      {type = "item", name = "sp-elgiloy", amount = 2},
+      {type = "item", name = "sp-boron-carbide", amount = 2},
+      {type = "fluid", name = "sp-potassium-dichromate-solution", amount = 10},
+    },
+    results = {
+      {type = "item", name = "sp-drillhead", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
     name = "sp-advanced-processing-unit",  -- #ForRegEx# - recipe
     category = "crafting-with-fluid",
     enabled = false,
@@ -7275,23 +7272,6 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-high-pressure-fan", amount = 1}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-drillhead",  -- #ForRegEx# - recipe
-    category = "manufacturing",
-    enabled = false,
-    energy_required = 6,
-    ingredients = {
-      {type = "item", name = "sp-heavy-gearbox", amount = 1},
-      {type = "item", name = "sp-vanadium-steel", amount = 10},
-      {type = "item", name = "sp-elgiloy", amount = 2},
-      {type = "item", name = "sp-boron-carbide", amount = 2},
-      {type = "fluid", name = "sp-potassium-dichromate-solution", amount = 10},
-    },
-    results = {
-      {type = "item", name = "sp-drillhead", amount = 1}
     }
   },
   {
@@ -8697,15 +8677,19 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "crafting",
-    energy_required = 16,
+    energy_required = 60,
     enabled = false,
     ingredients = {
-      {type = "item", name = "sp-iron-beam", amount = 12},
-      {type = "item", name = "iron-gear-wheel", amount = 30},
-      {type = "item", name = "sp-gearbox", amount = 8},
-      {type = "item", name = "sp-bolts", amount = 36},
-      {type = "item", name = "engine-unit", amount = 10},
-      {type = "item", name = "stone-brick", amount = 16}
+      {type = "item", name = "sp-stainless-steel", amount = 80},
+      {type = "item", name = "sp-chromium-cobalt", amount = 10},
+      {type = "item", name = "sp-elgiloy", amount = 24},
+      {type = "item", name = "sp-zirconia", amount = 16},
+      {type = "item", name = "tungsten-carbide", amount = 20},
+      {type = "item", name = "sp-vibration-dampener", amount = 12},
+      {type = "item", name = "sp-big-electric-engine-unit", amount = 4},
+      {type = "item", name = "sp-heavy-gearbox", amount = 8},
+      {type = "item", name = "sp-dynamo", amount = 1},
+      {type = "item", name = "refined-concrete", amount = 80},
     },
     results = {
       {type = "item", name = "sp-kr-big-crusher", amount = 1}

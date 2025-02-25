@@ -169,8 +169,30 @@ util.recipe.change_recipe_ingredients("turbo-underground-belt",
   },
   nil)
 
+util.recipe.change_recipe_ingredients("rail-ramp",
+  {
+    {type = "item", name = "sp-invar", amount = 10},
+    {type = "item", name = "sp-maraging-steel", amount = 8},
+    {type = "item", name = "sp-stainless-steel", amount = 50},
+    {type = "item", name = "sp-bolts", amount = 120},
+    {type = "item", name = "sp-spring", amount = 20},
+    {type = "item", name = "sp-vibration-dampener", amount = 8},
+    {type = "item", name = "refined-concrete", amount = 100}
+  },
+  40)
 
-util.recipe.change_recipe_ingredients("turbo-splitter",
+util.recipe.change_recipe_ingredients("rail-support",
+  {
+    {type = "item", name = "sp-invar", amount = 20},
+    {type = "item", name = "sp-maraging-steel", amount = 8},
+    {type = "item", name = "sp-bolts", amount = 40},
+    {type = "item", name = "sp-spring", amount = 8},
+    {type = "item", name = "sp-vibration-dampener", amount = 4},
+    {type = "item", name = "refined-concrete", amount = 40}
+  },
+  20)
+
+  util.recipe.change_recipe_ingredients("turbo-splitter",
   {
     {type = "item", name = "turbo-transport-belt", amount = 2},
     {type = "item", name = "sp-invar", amount = 3},
@@ -205,11 +227,19 @@ util.recipe.change_recipe_ingredients("heating-tower",
   },
   50)
 
-  util.recipe.change_recipe_ingredients("big-mining-drill",
+data.raw.recipe["big-mining-drill"].category = "crafting"
+util.recipe.change_recipe_ingredients("big-mining-drill",
   {
-    {type = "item", name = "sp-stainless-steel", amount = 69},
+    {type = "item", name = "sp-stainless-steel", amount = 60},
+    {type = "item", name = "sp-chromium-cobalt", amount = 10},
+    {type = "item", name = "sp-kovar", amount = 10},
+    {type = "item", name = "sp-drillhead", amount = 1},
+    {type = "item", name = "sp-vibration-dampener", amount = 8},
+    {type = "item", name = "sp-big-electric-engine-unit", amount = 1},
+    {type = "item", name = "sp-heavy-gearbox", amount = 1},
+    {type = "item", name = "sp-dynamo", amount = 1},
   },
-  50)
+  45)
 
 --------------------------------------------------------------------------------
 -- MARK: science pack

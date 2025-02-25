@@ -15,7 +15,7 @@ data.raw.item["scrap"].subgroup = "raw-resource"
 data.raw.item["tungsten-ore"].subgroup = "raw-resource"
 
 data.raw.item["carbon"].subgroup = "processed-non-metal"
-data.raw.item["lithium"].subgroup = "processed-non-metal"
+data.raw.item["lithium"].subgroup = "processed-metal"
 
 -- group material
 data.raw.item["tungsten-plate"].subgroup = "raw-material"
@@ -43,6 +43,15 @@ data.raw.tool["cryogenic-science-pack"].subgroup = "intermediate-science"
 data.raw.tool["promethium-science-pack"].subgroup = "futuristic-science"
 
 -- MARK: change recipe subgroups
+data.raw.recipe["carbon"].subgroup = "processed-non-metal"
+
+data.raw.recipe["lithium"].subgroup = "processed-metal"
+
+data.raw.recipe["tungsten-carbide"].subgroup = "ceramic"
+
+data.raw.recipe["lithium-plate"].subgroup = "raw-material"
+data.raw.recipe["tungsten-plate"].subgroup = "raw-material"
+
 data.raw.recipe["steam-condensation"].subgroup = "fluid"
 data.raw.recipe["ice-melting"].subgroup = "fluid"
 

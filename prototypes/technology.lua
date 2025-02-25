@@ -1291,7 +1291,7 @@ data:extend({
         {"sp-logistic-science-pack-2", 1},
         {"sp-electronic-science-pack-1", 1},
         {"sp-material-science-pack-2", 1},
-        {"chemical-science-pack", 1},
+        {"sp-chemical-science-pack-2", 1},
         {"sp-geological-science-pack-2", 1},
         {"production-science-pack", 1},
         {"metallurgic-science-pack", 1},
@@ -4536,7 +4536,7 @@ data:extend({
     type = "technology",
     name = "sp-kr-lithium-sulfur-battery",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghetorio__/graphics/hr-icons/big-electric-engine.png",
+    icon = "__Spaghetorio__/graphics/krastorio/technologies/lithium-sulfur-battery.png",
     effects =
     {
       {
@@ -7335,13 +7335,13 @@ data:extend({
       },
     },
     prerequisites = {
-      "sp-material-science-pack-2",
-      "big-mining-drill"
+      "tungsten-carbide",
+      "sp-automation-science-pack-3"
     },
     unit = {
-      count = 200,
+      count = 1000,
       ingredients = {
-        {"automation-science-pack", 1}
+        {"sp-automation-science-pack-3", 1}
       },
       time = 45,
     },
@@ -7436,8 +7436,8 @@ data:extend({
   {
     type = "technology",
     name = "sp-big-crusher",  -- #ForRegEx# - technology
-    icon = "__Spaghetorio__/graphics/krastorio/gui/previews/crusher-preview.png",
-    icon_size = 232,
+    icon = "__Spaghetorio__/graphics/krastorio/technologies/crusher.png",
+    icon_size = 256,
     icon_mipmaps = 4,
     effects = {
       {
@@ -7446,16 +7446,16 @@ data:extend({
       },
     },
     prerequisites = {
-      "sp-big-electric-engine-unit"
+      "tungsten-carbide"
     },
     unit = {
       count = 150,
       ingredients = {
         {"sp-automation-science-pack-2", 1},
-        {"logistic-science-pack", 1},
+        {"sp-logistic-science-pack-2", 1},
         {"sp-chemical-science-pack-2", 1},
         {"sp-electronic-science-pack-1", 1},
-        {"sp-material-science-pack-1", 1},
+        {"sp-material-science-pack-2", 1},
         {"sp-geological-science-pack-2", 1},
         {"metallurgic-science-pack", 1},
         {"electromagnetic-science-pack", 1},
