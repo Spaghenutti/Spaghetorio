@@ -1998,6 +1998,27 @@ data:extend({
     },
     order = "ingot-[rare-metals-alloy-from-neodymium]"
   },
+  {
+    type = "recipe",
+    name = "sp-metallurgic-science-pack-2",  -- #ForRegEx# - recipe
+    category = "alloy-smelting",
+    enabled = false,
+    energy_required = 40,
+    ingredients =
+    {
+      {type = "item", name = "metallurgic-science-pack", amount = 20},
+      {type = "item", name = "sp-aluminum-brass", amount = 5},
+      {type = "item", name = "sp-chromium-cobalt", amount = 5},
+      {type = "item", name = "sp-elgiloy", amount = 5},
+      {type = "item", name = "sp-maraging-steel", amount = 5},
+      {type = "item", name = "sp-niobium-tin", amount = 5},
+      {type = "item", name = "sp-vanadium-aluminum", amount = 5},
+      {type = "item", name = "sp-waspaloy", amount = 5},
+    },
+    results = {
+      {type = "item", name = "sp-metallurgic-science-pack-2", amount = 5}
+    }
+  },
   ------------------------------------------------------------------------------
   -- MARK: metallurgy
   ------------------------------------------------------------------------------
@@ -2926,26 +2947,6 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-barium-titanate",  -- #ForRegEx# - recipe
-    category = "chemistry",
-    enabled = false,
-    energy_required = 3,
-    ingredients = {
-      {type = "item", name = "sp-barium-billet", amount = 1},
-      {type = "item", name = "sp-titanium-ingot", amount = 1},
-    },
-    results = {
-      {type = "item", name = "sp-barium-titanate", amount = 1},
-    },
-    -- crafting_machine_tint = {
-    --   primary = {r = 0.3, g = 0.3, b = 0.3, a = 1.000},
-    --   secondary = {r = 0.1, g = 0.1, b = 0.1, a = 1.000},
-    --   tertiary = {r = 0.0, g = 0.0, b = 0.0, a = 1.000},
-    --   quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
-    -- }
-  },
-  {
-    type = "recipe",
     name = "sp-mercury",  -- #ForRegEx# - recipe
     icon = "__Spaghetorio__/graphics/icons/mercury.png",
     icon_size = 64,
@@ -3690,7 +3691,22 @@ data:extend({
     results = {
       {type = "item", name = "sp-titanium-nitride", amount = 2}
     },
-  },  {
+  },
+  {
+    type = "recipe",
+    name = "sp-barium-titanate",  -- #ForRegEx# - recipe
+    category = "crystallizing",
+    enabled = false,
+    energy_required = 3,
+    ingredients = {
+      {type = "item", name = "sp-barium-billet", amount = 1},
+      {type = "item", name = "sp-titanium-ingot", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-barium-titanate", amount = 1},
+    }
+  },
+  {
     type = "recipe",
     name = "sp-monocrystal",  -- #ForRegEx# - recipe
     category = "crystallizing",
@@ -5205,7 +5221,7 @@ data:extend({
     energy_required = 12,
     ingredients = {
       {type = "item", name = "plastic-bar", amount = 1},
-      {type = "item", name = "sp-high-purity-silicon", amount = 4},
+      {type = "item", name = "sp-silicon", amount = 4},
       {type = "item", name = "copper-cable", amount = 2},
       {type = "item", name = "sp-tellurium", amount = 2},
       {type = "item", name = "sp-phosphorus", amount = 3},
@@ -5224,7 +5240,7 @@ data:extend({
     energy_required = 8,
     ingredients = {
       {type = "item", name = "plastic-bar", amount = 1},
-      {type = "item", name = "sp-high-purity-silicon", amount = 3},
+      {type = "item", name = "sp-silicon", amount = 3},
       {type = "item", name = "copper-cable", amount = 2},
       {type = "item", name = "sp-cerium", amount = 1},
       {type = "item", name = "sp-phosphorus", amount = 2},
@@ -5281,6 +5297,7 @@ data:extend({
       {type = "item", name = "sp-high-purity-silicon", amount = 3},
       {type = "item", name = "sp-phosphorus", amount = 2},
       {type = "item", name = "sp-boron-pillet", amount = 1},
+      {type = "item", name = "sp-arsenic-sulfide", amount = 2},
       {type = "item", name = "sp-titanium-nitride", amount = 1},
       {type = "item", name = "sp-silicon-nitride", amount = 1},
       {type = "item", name = "sp-silicon-dioxide", amount = 1},
@@ -5884,6 +5901,7 @@ data:extend({
     enabled = false,
     energy_required = 6,
     ingredients = {
+      {type = "item", name = "advanced-circuit", amount = 2},
       {type = "item", name = "sp-ball-bearing", amount = 2},
       {type = "item", name = "sp-magnet", amount = 4},
       {type = "item", name = "sp-bolts", amount = 6},
@@ -6030,7 +6048,6 @@ data:extend({
       {type = "item", name = "flying-robot-frame", amount = 5},
       {type = "item", name = "sp-differential", amount = 5},
       {type = "item", name = "sp-train-boige", amount = 2},
-      {type = "item", name = "advanced-circuit", amount = 10},
     },
     results = {
       {type = "item", name = "sp-logistic-science-pack-2", amount = 5}
@@ -6062,27 +6079,13 @@ data:extend({
     ingredients =
     {
       {type = "item", name = "sp-electronic-science-pack-1", amount = 20},
-      {type = "item", name = "advanced-circuit", amount = 5},
-      {type = "item", name = "sp-relay", amount = 5},
-      {type = "item", name = "arithmetic-combinator", amount = 2},
-      {type = "item", name = "decider-combinator", amount = 2}
+      {type = "item", name = "sp-variable-frequenzy-drive", amount = 2},
+      {type = "item", name = "sp-piezoelectric-sensor", amount = 5},
+      {type = "item", name = "sp-high-power-solenoid", amount = 5},
+      {type = "item", name = "sp-amplifier", amount = 1},
     },
     results = {
       {type = "item", name = "sp-electronic-science-pack-2", amount = 5}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-metallurgic-science-pack-2",  -- #ForRegEx# - recipe
-    category = "crafting",
-    enabled = false,
-    energy_required = 40,
-    ingredients =
-    {
-      {type = "item", name = "metallurgic-science-pack", amount = 20}
-    },
-    results = {
-      {type = "item", name = "sp-metallurgic-science-pack-2", amount = 5}
     }
   },
   {
@@ -6093,7 +6096,11 @@ data:extend({
     energy_required = 40,
     ingredients =
     {
-      {type = "item", name = "electromagnetic-science-pack", amount = 20}
+      {type = "item", name = "electromagnetic-science-pack", amount = 20},
+      {type = "item", name = "flying-robot-frame", amount = 3},
+      {type = "item", name = "sp-transformer", amount = 3},
+      {type = "item", name = "sp-big-electric-engine-unit", amount = 2},
+      {type = "item", name = "sp-electromagnetic-brake", amount = 2},
     },
     results = {
       {type = "item", name = "sp-electromagnetic-science-pack-2", amount = 5}
@@ -6108,10 +6115,9 @@ data:extend({
     ingredients =
     {
       {type = "item", name = "sp-blank-tech-card", amount = 5},
-      {type = "item", name = "sp-integrated-circuit", amount = 5},
-      {type = "item", name = "sp-memory-chip", amount = 5},
-      {type = "item", name = "sp-heatsink", amount = 5},
-      {type = "item", name = "sp-vacuum-tube", amount = 5},
+      {type = "item", name = "sp-integrated-circuit", amount = 10},
+      {type = "item", name = "sp-memory-chip", amount = 10},
+      {type = "item", name = "advanced-circuit", amount = 10},
     },
     results = {
       {type = "item", name = "sp-computer-science-pack-2", amount = 5}
@@ -8833,13 +8839,13 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "crafting",
-    energy_required = 24,
+    energy_required = 40,
     enabled = false,
     ingredients = {
-      {type = "item", name = "sp-steel-beam", amount = 20},
-      {type = "item", name = "sp-stainless-steel", amount = 12},
-      {type = "item", name = "sp-nickel-cobalt", amount = 8},
-      {type = "item", name = "sp-bolts", amount = 30},
+      {type = "item", name = "sp-steel-beam", amount = 40},
+      {type = "item", name = "sp-stainless-steel", amount = 32},
+      {type = "item", name = "sp-nickel-cobalt", amount = 12},
+      {type = "item", name = "sp-bolts", amount = 45},
       {type = "item", name = "pipe", amount = 20},
       {type = "item", name = "sp-flange", amount = 12},
       {type = "item", name = "pump", amount = 8},

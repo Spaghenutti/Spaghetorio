@@ -741,6 +741,10 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "sp-boron-carbide"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-barium-titanate",
       }
     },
     prerequisites = {
@@ -1449,7 +1453,7 @@ data:extend({
       count = 500,
       ingredients = {
         {"sp-automation-science-pack-2", 1},
-        {"logistic-science-pack", 1},
+        {"sp-logistic-science-pack-2", 1},
         {"sp-chemical-science-pack-2", 1},
         {"sp-electronic-science-pack-1", 1},
         {"sp-material-science-pack-2", 1},
@@ -1486,8 +1490,6 @@ data:extend({
       }
     },
     prerequisites = {
-      "sp-titanium-machining",
-      "sp-niobium-and-tantalum",
       "sp-metallurgic-science-pack-2"
     },
     unit =
@@ -1495,11 +1497,12 @@ data:extend({
       count = 500,
       ingredients = {
         {"sp-automation-science-pack-2", 1},
-        {"logistic-science-pack", 1},
-        {"chemical-science-pack", 1},
-        {"sp-material-science-pack-1", 1},
-        {"sp-geological-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
         {"sp-electronic-science-pack-1", 1},
+        {"sp-material-science-pack-2", 1},
+        {"chemical-science-pack", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"production-science-pack", 1},
         {"sp-metallurgic-science-pack-2", 1},
         {"electromagnetic-science-pack", 1}
       },
@@ -1930,10 +1933,17 @@ data:extend({
         type = "unlock-recipe",
         recipe = "sp-memory-chip"
       },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-variable-frequenzy-drive",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-piezoelectric-sensor",
+      },
     },
     prerequisites = {
       "sp-silver-products",
-      "sp-high-purity-silicon-processing",
       "sp-tellurium-processing"
     },
     unit =
@@ -1942,10 +1952,13 @@ data:extend({
       ingredients = {
         {"sp-automation-science-pack-2", 1},
         {"sp-logistic-science-pack-2", 1},
+        {"sp-electronic-science-pack-1", 1},
         {"sp-material-science-pack-2", 1},
-        {"sp-electronic-science-pack-2", 1},
         {"sp-chemical-science-pack-2", 1},
-        {"production-science-pack", 1}
+        {"sp-geological-science-pack-2", 1},
+        {"production-science-pack", 1},
+        {"metallurgic-science-pack", 1},
+        {"electromagnetic-science-pack", 1}
       },
       time = 30
     },
@@ -2000,7 +2013,6 @@ data:extend({
     prerequisites = {
       "sp-noble-metals",
       "sp-chemical-science-pack-2",
-      "sp-electronic-science-pack-2"
     },
     unit =
     {
@@ -2008,10 +2020,13 @@ data:extend({
       ingredients = {
         {"sp-automation-science-pack-2", 1},
         {"sp-logistic-science-pack-2", 1},
+        {"sp-electronic-science-pack-1", 1},
         {"sp-material-science-pack-2", 1},
         {"sp-chemical-science-pack-2", 1},
-        {"sp-electronic-science-pack-2", 1},
-        {"production-science-pack", 1}
+        {"sp-geological-science-pack-2", 1},
+        {"production-science-pack", 1},
+        {"metallurgic-science-pack", 1},
+        {"electromagnetic-science-pack", 1}
       },
       time = 30
     },
@@ -2042,7 +2057,9 @@ data:extend({
       }
     },
     prerequisites = {
-      "processing-unit"
+      "processing-unit",
+      "sp-high-purity-silicon-processing",
+      "sp-arsen-processing"
     },
     unit =
     {
@@ -2592,17 +2609,22 @@ data:extend({
     prerequisites = {
       "sp-tungsten-processing",
       "sp-insulation-sheet",
-      "production-science-pack"
+      "production-science-pack",
+      "sp-military-science-pack-2"
     },
     unit =
     {
-      count = 150,
+      count = 400,
       ingredients = {
         {"sp-automation-science-pack-2", 1},
         {"sp-logistic-science-pack-2", 1},
-        {"sp-material-science-pack-2", 1},
         {"sp-chemical-science-pack-2", 1},
+        {"sp-electronic-science-pack-1", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-military-science-pack-2", 1},
         {"sp-geological-science-pack-2", 1},
+        {"metallurgic-science-pack", 1},
+        {"electromagnetic-science-pack", 1},
         {"production-science-pack", 1}
       },
       time = 30
@@ -3329,8 +3351,7 @@ data:extend({
     },
     prerequisites = {
       "sp-electronic-science-pack-2",
-      "sp-chemical-science-pack-2",
-      "sp-geological-science-pack-2"
+      "sp-metallurgic-science-pack-2"
     },
     unit =
     {
@@ -3338,11 +3359,13 @@ data:extend({
       ingredients = {
         {"sp-automation-science-pack-2", 1},
         {"sp-logistic-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
         {"sp-material-science-pack-2", 1},
         {"sp-chemical-science-pack-2", 1},
         {"sp-geological-science-pack-2", 1},
-        {"sp-electronic-science-pack-2", 1},
-        {"production-science-pack", 1}
+        {"production-science-pack", 1},
+        {"sp-metallurgic-science-pack-2", 1},
+        {"electromagnetic-science-pack", 1}
       },
       time = 30
     },
@@ -4328,7 +4351,7 @@ data:extend({
         {"sp-logistic-science-pack-2", 1},
         {"sp-electronic-science-pack-1", 1},
         {"sp-material-science-pack-2", 1},
-        {"chemical-science-pack", 1},
+        {"sp-chemical-science-pack-2", 1},
         {"sp-geological-science-pack-2", 1},
         {"production-science-pack", 1},
         {"metallurgic-science-pack", 1},
@@ -7056,7 +7079,8 @@ data:extend({
       }
     },
     prerequisites = {
-      "sp-electrode"
+      "sp-electrode",
+      "sp-titanium-alloys"
     },
     unit = {
       count = 350,
@@ -7068,7 +7092,7 @@ data:extend({
         {"chemical-science-pack", 1},
         {"sp-geological-science-pack-2", 1},
         {"production-science-pack", 1},
-        {"metallurgic-science-pack", 1},
+        {"sp-metallurgic-science-pack-2", 1},
         {"electromagnetic-science-pack", 1}
       },
       time = 30,
@@ -7648,7 +7672,7 @@ data:extend({
         {"sp-logistic-science-pack-2", 1},
         {"sp-electronic-science-pack-1", 1},
         {"sp-material-science-pack-2", 1},
-        {"chemical-science-pack", 1},
+        {"sp-chemical-science-pack-2", 1},
         {"sp-geological-science-pack-2", 1},
         {"production-science-pack", 1},
         {"metallurgic-science-pack", 1},
@@ -8328,9 +8352,7 @@ data:extend({
       },
     },
     prerequisites = {
-      "sp-logistic-science-pack-2",
-      "sp-material-science-pack-2",
-      "production-science-pack"
+      "sp-integrated-circuit"
     },
     unit =
     {
@@ -8338,10 +8360,13 @@ data:extend({
       ingredients = {
         {"sp-automation-science-pack-2", 1},
         {"sp-logistic-science-pack-2", 1},
-        {"chemical-science-pack", 1},
         {"sp-electronic-science-pack-1", 1},
         {"sp-material-science-pack-2", 1},
-        {"production-science-pack", 1}
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"production-science-pack", 1},
+        {"metallurgic-science-pack", 1},
+        {"electromagnetic-science-pack", 1}
       },
       time = 30
     },
@@ -8421,7 +8446,7 @@ data:extend({
       },
     },
     prerequisites = {
-      "sp-integrated-circuit"
+      "sp-cobalt-alloys",
     },
     unit =
     {
@@ -8430,9 +8455,11 @@ data:extend({
         {"sp-automation-science-pack-2", 1},
         {"sp-logistic-science-pack-2", 1},
         {"sp-chemical-science-pack-2", 1},
-        {"sp-electronic-science-pack-2", 1},
-        {"production-science-pack", 1},
-        {"sp-material-science-pack-2", 1}
+        {"sp-electronic-science-pack-1", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"metallurgic-science-pack", 1},
+        {"electromagnetic-science-pack", 1}
       },
       time = 30
     },
@@ -8450,7 +8477,7 @@ data:extend({
       },
     },
     prerequisites = {
-      "sp-integrated-circuit"
+      "sp-big-electric-engine-unit"
     },
     unit =
     {
@@ -8459,9 +8486,12 @@ data:extend({
         {"sp-automation-science-pack-2", 1},
         {"sp-logistic-science-pack-2", 1},
         {"sp-chemical-science-pack-2", 1},
-        {"sp-electronic-science-pack-2", 1},
-        {"production-science-pack", 1},
-        {"sp-material-science-pack-2", 1}
+        {"sp-electronic-science-pack-1", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"metallurgic-science-pack", 1},
+        {"electromagnetic-science-pack", 1},
+        {"production-science-pack", 1}
       },
       time = 30
     },
@@ -8479,7 +8509,7 @@ data:extend({
       },
     },
     prerequisites = {
-      "sp-integrated-circuit"
+      "sp-electronic-science-pack-2"
     },
     unit =
     {
@@ -8487,10 +8517,13 @@ data:extend({
       ingredients = {
         {"sp-automation-science-pack-2", 1},
         {"sp-logistic-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1},
         {"sp-electronic-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
         {"production-science-pack", 1},
-        {"sp-material-science-pack-2", 1}
+        {"metallurgic-science-pack", 1},
+        {"electromagnetic-science-pack", 1}
       },
       time = 30
     },
@@ -9995,10 +10028,6 @@ data:extend({
     effects = {
       {
         type = "unlock-recipe",
-        recipe = "sp-barium-titanate",
-      },
-      {
-        type = "unlock-recipe",
         recipe = "sp-copper-antimony",
       },
       {
@@ -10044,14 +10073,6 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "sp-plasmacutter",
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-variable-frequenzy-drive",
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-piezoelectric-sensor",
       },
       -- TODO: add recipe chain for
       -- {

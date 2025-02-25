@@ -764,15 +764,19 @@ data.raw.technology["speed-module"].unit.ingredients = {
 }
 
 data.raw.technology["speed-module-2"].prerequisites = {
-  "sp-integrated-circuit"
+  "speed-module",
+  "sp-electronic-science-pack-2"
 }
 data.raw.technology["speed-module-2"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},
   {"sp-logistic-science-pack-2", 1},
-  {"sp-material-science-pack-1", 1},
   {"sp-electronic-science-pack-2", 1},
+  {"sp-material-science-pack-2", 1},
+  {"sp-chemical-science-pack-2", 1},
+  {"sp-geological-science-pack-2", 1},
   {"production-science-pack", 1},
-  {"chemical-science-pack", 1}
+  {"metallurgic-science-pack", 1},
+  {"electromagnetic-science-pack", 1}
 }
 
 data.raw.technology["productivity-module"].unit.ingredients = {
@@ -784,15 +788,19 @@ data.raw.technology["productivity-module"].unit.ingredients = {
 }
 
 data.raw.technology["productivity-module-2"].prerequisites = {
-  "sp-integrated-circuit"
+  "productivity-module",
+  "sp-electronic-science-pack-2"
 }
 data.raw.technology["productivity-module-2"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},
   {"sp-logistic-science-pack-2", 1},
-  {"sp-material-science-pack-1", 1},
   {"sp-electronic-science-pack-2", 1},
+  {"sp-material-science-pack-2", 1},
+  {"sp-chemical-science-pack-2", 1},
+  {"sp-geological-science-pack-2", 1},
   {"production-science-pack", 1},
-  {"chemical-science-pack", 1}
+  {"metallurgic-science-pack", 1},
+  {"electromagnetic-science-pack", 1}
 }
 
 data.raw.technology["efficiency-module"].unit.ingredients = {
@@ -804,15 +812,19 @@ data.raw.technology["efficiency-module"].unit.ingredients = {
 }
 
 data.raw.technology["efficiency-module-2"].prerequisites = {
-  "sp-integrated-circuit"
+  "efficiency-module",
+  "sp-electronic-science-pack-2"
 }
 data.raw.technology["efficiency-module-2"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},
   {"sp-logistic-science-pack-2", 1},
-  {"sp-material-science-pack-1", 1},
   {"sp-electronic-science-pack-2", 1},
+  {"sp-material-science-pack-2", 1},
+  {"sp-chemical-science-pack-2", 1},
+  {"sp-geological-science-pack-2", 1},
   {"production-science-pack", 1},
-  {"chemical-science-pack", 1}
+  {"metallurgic-science-pack", 1},
+  {"electromagnetic-science-pack", 1}
 }
 
 data.raw.technology["speed-module-3"].prerequisites = {
@@ -873,20 +885,22 @@ data.raw.technology["rocket-fuel"].unit.ingredients = {
 }
 
 data.raw.technology["uranium-processing"].prerequisites = {
-  "tungsten-carbide"
+  "sp-electronic-science-pack-2",
+  "sp-metallurgic-science-pack-2",
+  "sp-electromagnetic-science-pack-2"
 }
 data.raw.technology["uranium-processing"].research_trigger = nil
 data.raw.technology["uranium-processing"].unit = {
   count = 250,
   ingredients = {
     {"sp-automation-science-pack-2", 1},
-    {"logistic-science-pack", 1},
+    {"sp-logistic-science-pack-2", 1},
     {"sp-chemical-science-pack-2", 1},
-    {"sp-electronic-science-pack-1", 1},
-    {"sp-material-science-pack-1", 1},
+    {"sp-electronic-science-pack-2", 1},
+    {"sp-material-science-pack-2", 1},
     {"sp-geological-science-pack-2", 1},
-    {"metallurgic-science-pack", 1},
-    {"electromagnetic-science-pack", 1},
+    {"sp-metallurgic-science-pack-2", 1},
+    {"sp-electromagnetic-science-pack-2", 1},
     {"production-science-pack", 1}
   },
   time = 30,
