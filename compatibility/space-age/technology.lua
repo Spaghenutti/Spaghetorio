@@ -128,8 +128,9 @@ data.raw.technology["advanced-asteroid-processing"].unit.ingredients = {
 
 data.raw.technology["turbo-transport-belt"].prerequisites = {
   "logistics-3",
-  "sp-electromagnetic-science-pack-2",
-  "sp-metallurgic-science-pack-2"
+  "processing-unit",
+  "low-density-structure",
+  "sp-compressor"
 }
 data.raw.technology["turbo-transport-belt"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},

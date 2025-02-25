@@ -248,7 +248,8 @@ util.recipe.change_recipe_ingredients("speed-module",
 util.recipe.change_recipe_ingredients("speed-module-2",
   {
     {type = "item", name = "advanced-circuit", amount = 5},
-    {type = "item", name = "sp-servo-motor", amount = 5},
+    {type = "item", name = "sp-servo-motor", amount = 1},
+    {type = "item", name = "sp-piezoelectric-sensor", amount = 1},
     {type = "item", name = "sp-solder", amount = 4},
     {type = "item", name = "sp-coil", amount = 2},
     {type = "item", name = "sp-light-emitting-diode", amount = 6},
@@ -284,6 +285,7 @@ util.recipe.change_recipe_ingredients("productivity-module-2",
   {
     {type = "item", name = "advanced-circuit", amount = 3},
     {type = "item", name = "sp-coil", amount = 3},
+    {type = "item", name = "sp-variable-frequenzy-drive", amount = 1},
     {type = "item", name = "sp-light-emitting-diode", amount = 6},
     {type = "item", name = "sp-integrated-circuit", amount = 2}
   },

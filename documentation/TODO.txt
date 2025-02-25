@@ -114,6 +114,34 @@ Factorio Space age
       - zirconium dioxide (ZrO2)
 
 
+  - photovoltaic cell
+    - Polyvinyl-fluoride PVF
+      1. Ethylene + hydrogen fluoride -> vinyl fluoride (gas)
+      2. vinyl fluoride -> Polyvinyl-fluoride
+    - Ethylene-vinyl-acetate EVA
+      - burn something for carbon dioxide
+      - carbon dioxide + hydrogen -> methane
+      - methane + water -> Carbon monoxide + hydrogen (also called synthgas)
+      - Carbon monoxide + hydrogen -> methanol (biomethanol)
+      - methanol + carbon monoxide -> acetic acid
+      1. Ethylene + Acetic Acid + Oxygen -> Vinyl Acetate + water
+      2. Ethylene + Vinyl Acetate -> Ethylene-vinyl-acetate
+    - Cadmium telluride CdTe
+      - sulfuric acid + zinc ore -> Cadmium + zinc oxide
+      - zinc oxide + water -> zinc plate (electrolysis)
+    - Copper inidium gallium selenide CIGS
+      - Gallium:
+        - alumina + sodium hydroxide -> gallium resin
+        - gallium resin + hydrogen chloride -> gallium chloride (§light grey pile of sand)
+        - gallium chloride -> gallium + chlorine (electrolysis)
+      - inidium (block productivity for all recipes):
+        - zinc sulfate + oxygen + -> zinc oxide + sulfur dioxide
+        - zinc oxide + sulfuric acid -> zinc plate + indium sulfate
+        - indium sulfate + water -> indium (electrolysis)
+        - sulfur dioxide + hydrogen -> sulfuric acid (check that the quantity is lower than used in the reactions above)
+        - sulfur dioxide is also used for preserving food
+    - optical glass from silicon oxide, boron oxide, phosphorus pentoxide or alumina
+
   - Add Krastorio matter conversion recipes
   + Add mineral water
   + Add imersite

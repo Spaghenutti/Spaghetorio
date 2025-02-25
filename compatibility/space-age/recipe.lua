@@ -149,7 +149,6 @@ util.recipe.change_recipe_ingredients("toolbelt-equipment",
 
 util.recipe.change_recipe_ingredients("turbo-transport-belt",
   {
-    {type = "item", name = "processing-unit", amount = 1},
     {type = "item", name = "sp-big-electric-engine-unit", amount = 1},
     {type = "item", name = "sp-electromagnetic-brake", amount = 2},
     {type = "item", name = "sp-ball-bearing", amount = 2},

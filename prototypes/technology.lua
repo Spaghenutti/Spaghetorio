@@ -1848,7 +1848,7 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "sp-infrared-filter"
-      }
+      },
     },
     prerequisites = {
       "sp-sodium-processing",
