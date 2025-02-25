@@ -4,6 +4,7 @@ Date: 2025-02-26
   Features:
     - Added new items
     - Added locale for some late game tech
+    - Added polish locale thanks to S3BA
   Changes:
     - Car is now unlocked earlier
     - Tech tree updates for reaching production science pack
