@@ -845,6 +845,19 @@ data:extend({
       {type = "item", name = "sp-tungsten-powder", amount = 6}
     }
   },
+  {
+    type = "recipe",
+    name = "sp-gallium",  -- #ForRegEx# - recipe
+    category = "intermediate-smelting",
+    enabled = false,
+    energy_required = 3,
+    ingredients = {
+      {type = "item", name = "sp-gallium-chloride", amount = 3},
+    },
+    results = {
+      {type = "item", name = "sp-gallium", amount = 2}
+    }
+  },
   ------------------------------------------------------------------------------
   -- MARK: enriching-raw-resource
   ------------------------------------------------------------------------------
@@ -3233,6 +3246,78 @@ data:extend({
       {type = "fluid", name = "sp-acetic-acid", amount = 5},
     }
   },
+  {
+    type = "recipe",
+    name = "sp-vinyl-acetate",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/icons/vinyl-acetate.png",
+    category = "chemistry",
+    enabled = false,
+    energy_required = 1.5,
+    ingredients = {
+      {type = "fluid", name = "sp-acetic-acid", amount = 5},
+      {type = "fluid", name = "sp-ethylene", amount = 8},
+    },
+    results = {
+      {type = "fluid", name = "sp-vinyl-acetate", amount = 5},
+      {type = "fluid", name = "water", amount = 2},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-ethylene-vinyl-acetate",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/icons/ethylene-vinyl-acetate.png",
+    category = "chemistry",
+    enabled = false,
+    energy_required = 3,
+    ingredients = {
+      {type = "fluid", name = "sp-vinyl-acetate", amount = 2},
+      {type = "fluid", name = "sp-ethylene", amount = 3},
+    },
+    results = {
+      {type = "item", name = "sp-ethylene-vinyl-acetate", amount = 1},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-gallium-chloride",  -- #ForRegEx# - recipe
+    category = "chemistry",
+    enabled = false,
+    energy_required = 3,
+    ingredients = {
+      {type = "fluid", name = "sp-gallium-resin", amount = 5},
+      {type = "fluid", name = "sp-hydrogen-chloride", amount = 8},
+    },
+    results = {
+      {type = "item", name = "sp-gallium-chloride", amount = 1},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-vinyl-fluoride",  -- #ForRegEx# - recipe
+    category = "chemistry",
+    enabled = false,
+    energy_required = 2,
+    ingredients = {
+      {type = "fluid", name = "sp-ethylene", amount = 5},
+      {type = "fluid", name = "sp-hydrogen-fluoride", amount = 5},
+    },
+    results = {
+      {type = "fluid", name = "sp-vinyl-fluoride", amount = 5},
+    },
+  },
+  {
+    type = "recipe",
+    name = "sp-polyvinyl-fluoride",  -- #ForRegEx# - recipe
+    category = "chemistry",
+    enabled = false,
+    energy_required = 6,
+    ingredients = {
+      {type = "fluid", name = "sp-vinyl-fluoride", amount = 10},
+    },
+    results = {
+      {type = "item", name = "sp-polyvinyl-fluoride", amount = 3},
+    },
+  },
   ------------------------------------------------------------------------------
   -- MARK: advanced-chemistry
   ------------------------------------------------------------------------------
@@ -3650,6 +3735,70 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "sp-gallium-resin",  -- #ForRegEx# - recipe
+    category = "chemical-staging",
+    enabled = false,
+    energy_required = 6,
+    ingredients = {
+      {type = "item", name = "sp-alumina", amount = 3},
+      {type = "fluid", name = "sp-sodium-hydroxide", amount = 10},
+    },
+    results = {
+      {type = "fluid", name = "sp-gallium-resin", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-indium-sulfate",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/icons/indium-sulfate.png",
+    category = "chemical-staging",
+    subgroup = "processed-resource",
+    enabled = false,
+    allow_productivity = false,
+    energy_required = 4,
+    ingredients = {
+      {type = "item", name = "sp-zinc-oxide", amount = 4},
+      {type = "fluid", name = "sulfuric-acid", amount = 8},
+    },
+    results = {
+      {type = "item", name = "sp-indium-sulfate", amount = 1},
+      {type = "item", name = "sp-zinc-plate", amount = 1},
+    },
+  },
+  {
+    type = "recipe",
+    name = "sp-sulfuric-acid-from-sulfur-dioxide",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__base__/graphics/icons/fluid/sulfuric-acid.png", 64,
+                                         "__Spaghetorio__/graphics/icons/sulfur-dioxide.png", 64),
+    category = "chemical-staging",
+    subgroup = "chemical",
+    enabled = false,
+    allow_productivity = false,
+    energy_required = 2,
+    ingredients = {
+      {type = "fluid", name = "sp-sulfur-dioxide", amount = 5},
+      {type = "fluid", name = "sp-hydrogen", amount = 20},
+    },
+    results = {
+      {type = "fluid", name = "sulfuric-acid", amount = 5},
+    },
+  },
+  {
+    type = "recipe",
+    name = "sp-hydrogen-fluoride",  -- #ForRegEx# - recipe
+    category = "chemical-staging",
+    enabled = false,
+    energy_required = 3,
+    ingredients = {
+      {type = "fluid", name = "fluorine", amount = 3},
+      {type = "fluid", name = "sp-hydrogen", amount = 5},
+    },
+    results = {
+      {type = "fluid", name = "sp-hydrogen-fluoride", amount = 5},
+    },
+  },
+  {
+    type = "recipe",
     name = "sp-helium",  -- #ForRegEx# - recipe
     category = "chemical-staging",
     enabled = false,
@@ -3810,6 +3959,60 @@ data:extend({
   ------------------------------------------------------------------------------
   -- MARK: incinerating
   ------------------------------------------------------------------------------
+  {
+    type = "recipe",
+    name = "sp-zinc-oxide",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/icons/zinc-oxide.png",
+    category = "incinerating",
+    subgroup = "processed-resource",
+    enabled = false,
+    allow_productivity = false,
+    energy_required = 4,
+    ingredients = {
+      {type = "fluid", name = "sp-sodium-hydroxide", amount = 5},
+      {type = "item", name = "sp-zinc-sulfate", amount = 3},
+    },
+    results = {
+      {type = "item", name = "sp-zinc-oxide", amount = 2},
+      {type = "fluid", name = "sp-sulfur-dioxide", amount = 5},
+    },
+  },
+  {
+    type = "recipe",
+    name = "sp-cadmium",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/icons/cadmium.png",
+    category = "incinerating",
+    subgroup = "processed-metal",
+    enabled = false,
+    energy_required = 4,
+    ingredients = {
+      {type = "fluid", name = "sulfuric-acid", amount = 5},
+      {type = "item", name = "sp-zinc-ore", amount = 5},
+    },
+    results = {
+      {type = "item", name = "sp-cadmium", amount = 1},
+      {type = "item", name = "sp-zinc-oxide", amount = 2}
+    },
+  },
+  {
+    type = "recipe",
+    name = "sp-cadmium-from-crushed-resource",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/cadmium.png", 64,
+                                         "__Spaghetorio__/graphics/icons/crushed-zinc-ore-1.png", 64),
+    category = "incinerating",
+    subgroup = "processed-metal",
+    enabled = false,
+    energy_required = 3,
+    hide_from_player_crafting = true,
+    ingredients = {
+      {type = "fluid", name = "sulfuric-acid", amount = 4},
+      {type = "item", name = "sp-crushed-zinc-ore", amount = 3},
+    },
+    results = {
+      {type = "item", name = "sp-cadmium", amount = 1},
+      {type = "item", name = "sp-zinc-oxide", amount = 2}
+    },
+  },
   {
     type = "recipe",
     name = "sp-incinerate-wood",  -- #ForRegEx# - recipe
@@ -4955,6 +5158,45 @@ data:extend({
     results = {
       {type = "item", name = "sp-zinc-plate", amount = 2},
       {type = "item", name = "sulfur", probability = 0.1, amount = 1}
+    },
+    order = "a-plate-[zinc-plate]"
+  },
+  {
+    type = "recipe",
+    name = "sp-zinc-plate-from-zinc-oxide",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/zinc-plate.png", 64,
+                                         "__Spaghetorio__/graphics/icons/zinc-oxide.png", 64),
+    icon_size = 64,
+    mip_maps = 4,
+    category = "sp-kr-electrolysis",
+    subgroup = "raw-material",
+    enabled = false,
+    energy_required = 3,
+    ingredients = {
+      {type = "item", name = "sp-zinc-oxide", amount = 2}
+    },
+    results = {
+      {type = "item", name = "sp-zinc-plate", amount = 1}
+    },
+    order = "a-plate-[zinc-plate]"
+  },
+  {
+    type = "recipe",
+    name = "sp-indium-ingot",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/icons/zinc-plate.png",
+    icon_size = 64,
+    mip_maps = 4,
+    category = "sp-kr-electrolysis",
+    subgroup = "raw-material",
+    enabled = false,
+    allow_productivity = false,
+    energy_required = 4,
+    ingredients = {
+      {type = "item", name = "sp-indium-sulfate", amount = 3},
+      {type = "fluid", name = "water", amount = 10}
+    },
+    results = {
+      {type = "item", name = "sp-indium-ingot", amount = 1},
     },
     order = "a-plate-[zinc-plate]"
   },

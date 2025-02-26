@@ -108,15 +108,15 @@ data:extend({
   },
   {
     type = "fluid",
-    name = "sp-cadmium-resin",  -- #ForRegEx# - fluid
+    name = "sp-gallium-resin",  -- #ForRegEx# - fluid
     default_temperature = 25,
     base_color = {r=1.0, g=1.0, b=0.6},
     flow_color = {r=1.0, g=1.0, b=0.6},
-    icon = "__Spaghetorio__/graphics/icons/cadmium-resin.png",
+    icon = "__Spaghetorio__/graphics/icons/gallium-resin.png",
     icon_size = 64,
     scale = 0.5,
     subgroup = "aqueous-fluid",
-    order = "[cadmium-resin]",
+    order = "[gallium-resin]",
     stack_size = 200
   },
   {
@@ -861,16 +861,16 @@ data:extend({
   },
   {
     type = "fluid",
-    name = "sp-hydrogen-fluorine",  -- #ForRegEx# - fluid
+    name = "sp-hydrogen-fluoride",  -- #ForRegEx# - fluid
     default_temperature = 25,
     heat_capacity = "0.1kJ",
     base_color = {r=0.0, g=0.0, b=0.55},
     flow_color = {r=0.0, g=0.0, b=0.55},
-    icon = "__Spaghetorio__/graphics/icons/hydrogen-fluorine.png",
+    icon = "__Spaghetorio__/graphics/icons/hydrogen-fluoride.png",
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "chemical",
-    order = "a[fluid]-f[hydrogen-fluorine]"
+    order = "a[fluid]-f[hydrogen-fluoride]"
   },
   {
     type = "fluid",

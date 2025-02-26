@@ -124,7 +124,7 @@ Factorio Space age
       - methane + water -> Carbon monoxide + hydrogen (also called synthgas)
       - Carbon monoxide + hydrogen -> methanol (biomethanol)
       - methanol + carbon monoxide -> acetic acid
-      1. Ethylene + Acetic Acid + Oxygen -> Vinyl Acetate + water
+      1. Ethylene + Acetic Acid -> Vinyl Acetate + water
       2. Ethylene + Vinyl Acetate -> Ethylene-vinyl-acetate
     - Cadmium telluride CdTe
       - sulfuric acid + zinc ore -> Cadmium + zinc oxide
@@ -132,7 +132,7 @@ Factorio Space age
     - Copper inidium gallium selenide CIGS
       - Gallium:
         - alumina + sodium hydroxide -> gallium resin
-        - gallium resin + hydrogen chloride -> gallium chloride (§light grey pile of sand)
+        - gallium resin + hydrogen chloride -> gallium chloride
         - gallium chloride -> gallium + chlorine (electrolysis)
       - inidium (block productivity for all recipes):
         - zinc sulfate + oxygen + -> zinc oxide + sulfur dioxide

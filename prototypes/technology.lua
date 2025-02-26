@@ -3203,6 +3203,128 @@ data:extend({
   },
   {
     type = "technology",
+    name = "sp-cadmium-processing",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghetorio__/graphics/hr-icons/cadmium.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-cadmium"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-cadmium-from-crushed-resource"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-zinc-plate-from-zinc-oxide"
+      },
+    },
+    prerequisites = {
+      "sp-incinerator"
+    },
+    unit =
+    {
+      count = 150,
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-electronic-science-pack-1", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"metallurgic-science-pack", 1},
+        {"electromagnetic-science-pack", 1}
+      },
+      time = 30
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-gallium-processing",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghetorio__/graphics/hr-icons/gallium.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-gallium-resin"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-gallium-chloride"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-gallium"
+      },
+    },
+    prerequisites = {
+      "sp-metallurgic-science-pack-2"
+    },
+    unit =
+    {
+      count = 150,
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-electronic-science-pack-1", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"sp-metallurgic-science-pack-2", 1},
+        {"electromagnetic-science-pack", 1}
+      },
+      time = 30
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-indium-processing",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghetorio__/graphics/hr-icons/indium-ingot.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-zinc-oxide"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-indium-sulfate"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-indium-ingot"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-sulfuric-acid-from-sulfur-dioxide"
+      },
+    },
+    prerequisites = {
+      "sp-metallurgic-science-pack-2",
+      "sp-incinerator"
+    },
+    unit =
+    {
+      count = 350,
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-electronic-science-pack-1", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"sp-metallurgic-science-pack-2", 1},
+        {"electromagnetic-science-pack", 1}
+      },
+      time = 30
+    },
+  },
+  {
+    type = "technology",
     name = "sp-diborane",  -- #ForRegEx# - technology
     icon_size = 256,
     icon = "__Spaghetorio__/graphics/hr-icons/diborane.png",
@@ -4746,7 +4868,7 @@ data:extend({
       ingredients = {
         {"sp-automation-science-pack-2", 1},
         {"sp-logistic-science-pack-2", 1},
-        {"chemical-science-pack", 1},
+        {"sp-chemical-science-pack-2", 1},
         {"sp-electronic-science-pack-1", 1},
         {"sp-material-science-pack-1", 1},
         {"sp-geological-science-pack-1", 1},
@@ -4782,7 +4904,7 @@ data:extend({
       ingredients = {
         {"sp-automation-science-pack-2", 1},
         {"sp-logistic-science-pack-2", 1},
-        {"chemical-science-pack", 1},
+        {"sp-chemical-science-pack-2", 1},
         {"sp-electronic-science-pack-1", 1},
         {"sp-material-science-pack-1", 1},
         {"sp-geological-science-pack-1", 1},
@@ -4790,6 +4912,86 @@ data:extend({
         {"electromagnetic-science-pack", 1}
       },
       time = 30
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-acetic-products",  -- #ForRegEx# - technology
+    icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/hr-icons/vinyl-acetate.png", 256, nil,
+                                        "__Spaghetorio__/graphics/hr-icons/ethylene-vinyl-acetate.png", 256, nil),
+    icon_size = 256,
+    icon_mipmaps = 4,
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-acetic-acid",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-vinyl-acetate",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-ethylene-vinyl-acetate",
+      },
+    },
+    prerequisites = {
+      "sp-incinerator",
+      "sp-ethylene-products"
+    },
+    unit = {
+      count = 200,
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-electronic-science-pack-1", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"production-science-pack", 1},
+        {"metallurgic-science-pack", 1},
+        {"electromagnetic-science-pack", 1}
+      },
+      time = 45,
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-polyvinyl-fluoride",  -- #ForRegEx# - technology
+    icon = "__Spaghetorio__/graphics/hr-icons/polyvinyl-fluoride.png",
+    icon_size = 256,
+    icon_mipmaps = 4,
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-hydrogen-fluoride",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-vinyl-fluoride",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-polyvinyl-fluoride",
+      },
+    },
+    prerequisites = {
+      "sp-ethylene-products",
+      "sp-geological-science-pack-2"
+    },
+    unit = {
+      count = 200,
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-electronic-science-pack-1", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"metallurgic-science-pack", 1},
+        {"electromagnetic-science-pack", 1}
+      },
+      time = 45,
     },
   },
   {
