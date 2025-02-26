@@ -1,6 +1,32 @@
 
+TODO for 0.3.2
+  - Add crystallizer with diamond saw
+  - Update stack sizes
+
+TODO for 0.3.3
+  - Remove "sp-recipes-without-technology"
+  - Fix foundry recipe chain
+    - Add tungsten pipes for passing liquid metals
+    - Add tungsten offshore pump
+    - Add tungsten pump
+    - tungsten steel is made in arc furnace
+  - Update recipe chain for nuclear reactor
+  - Update military science 2 branch of tech tree
+
+TODO for 0.3.4
+  - Update computer science 2 branch of tech tree
+  - Update cryogenic science 2 branch of tech tree
+  - Update utility science 2 branch of tech tree
+  - Add biological / agricultural item group
+
+TODO for 0.3.5
+  - Update space science 2 branch of tech tree
+  - Add back blunagium, grobgnum, rukite and yemnuth rockets (even though they are unlocked later)
+
+--------------------------------------------------------------------------------
+
 TODO before alpha release:
-  - Add separate graphics mod for building graphics
+  + Add separate graphics mod for building graphics
   + clean up locale
   + fix crafting categories for buildings
   + balance pass of:

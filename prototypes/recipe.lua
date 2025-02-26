@@ -1918,36 +1918,6 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-tungsten-steel",  -- #ForRegEx# - recipe
-    category = "alloy-smelting",
-    enabled = false,
-    energy_required = 25,
-    ingredients = {
-      {type = "item", name = "steel-plate", amount = 9},
-      {type = "item", name = "tungsten-plate", amount = 3},
-      {type = "item", name = "sp-vanadium-plate", amount = 1},
-      {type = "item", name = "sp-molybdenum-pillet", amount = 1},
-    },
-    results = {
-      {type = "item", name = "sp-tungsten-steel", amount = 10}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-selenium-pillet",  -- #ForRegEx# - recipe
-    category = "alloy-smelting",
-    enabled = false,
-    energy_required = 3,
-    ingredients = {
-      {type = "item", name = "sp-selenious-acid", amount = 2},
-      {type = "fluid", name = "sp-sulfur-dioxide", amount = 5},
-    },
-    results = {
-      {type = "item", name = "sp-selenium-pillet", amount = 1},
-    }
-  },
-  {
-    type = "recipe",
     name = "sp-rare-metals-alloy-from-yttrium",  -- #ForRegEx# - recipe
     icon = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/rare-metals/rare-metals.png",
     icon_size = 64,
@@ -2025,27 +1995,6 @@ data:extend({
     },
     order = "ingot-[rare-metals-alloy-from-neodymium]"
   },
-  {
-    type = "recipe",
-    name = "sp-metallurgic-science-pack-2",  -- #ForRegEx# - recipe
-    category = "alloy-smelting",
-    enabled = false,
-    energy_required = 40,
-    ingredients =
-    {
-      {type = "item", name = "metallurgic-science-pack", amount = 20},
-      {type = "item", name = "sp-aluminum-brass", amount = 5},
-      {type = "item", name = "sp-chromium-cobalt", amount = 5},
-      {type = "item", name = "sp-elgiloy", amount = 5},
-      {type = "item", name = "sp-maraging-steel", amount = 5},
-      {type = "item", name = "sp-niobium-tin", amount = 5},
-      {type = "item", name = "sp-vanadium-aluminum", amount = 5},
-      {type = "item", name = "sp-waspaloy", amount = 5},
-    },
-    results = {
-      {type = "item", name = "sp-metallurgic-science-pack-2", amount = 5}
-    }
-  },
   ------------------------------------------------------------------------------
   -- MARK: metallurgy
   ------------------------------------------------------------------------------
@@ -2106,6 +2055,60 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-tantalum-billet", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-selenium-pillet",  -- #ForRegEx# - recipe
+    category = "metallurgy",
+    enabled = false,
+    energy_required = 3,
+    ingredients = {
+      {type = "item", name = "sp-selenious-acid", amount = 2},
+      {type = "fluid", name = "sp-sulfur-dioxide", amount = 5},
+    },
+    results = {
+      {type = "item", name = "sp-selenium-pillet", amount = 1},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-metallurgic-science-pack-2",  -- #ForRegEx# - recipe
+    category = "metallurgy",
+    enabled = false,
+    energy_required = 40,
+    ingredients =
+    {
+      {type = "item", name = "metallurgic-science-pack", amount = 20},
+      {type = "item", name = "sp-aluminum-brass", amount = 5},
+      {type = "item", name = "sp-chromium-cobalt", amount = 5},
+      {type = "item", name = "sp-elgiloy", amount = 5},
+      {type = "item", name = "sp-maraging-steel", amount = 5},
+      {type = "item", name = "sp-niobium-tin", amount = 5},
+      {type = "item", name = "sp-vanadium-aluminum", amount = 5},
+      {type = "item", name = "sp-waspaloy", amount = 5},
+    },
+    results = {
+      {type = "item", name = "sp-metallurgic-science-pack-2", amount = 5}
+    }
+  },
+  ------------------------------------------------------------------------------
+  -- MARK: high-temperature-smelting
+  ------------------------------------------------------------------------------
+  {
+    type = "recipe",
+    name = "sp-tungsten-steel",  -- #ForRegEx# - recipe
+    category = "high-temperature-smelting",
+    enabled = false,
+    energy_required = 25,
+    ingredients = {
+      {type = "item", name = "steel-plate", amount = 9},
+      {type = "item", name = "tungsten-plate", amount = 3},
+      {type = "item", name = "sp-vanadium-plate", amount = 1},
+      {type = "item", name = "sp-molybdenum-pillet", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-tungsten-steel", amount = 10}
     }
   },
   ------------------------------------------------------------------------------
@@ -8917,10 +8920,12 @@ data:extend({
     energy_required = 40,
     ingredients = {
       {type = "item", name = "sp-heat-resistant-tile", amount = 24},
+      {type = "item", name = "tungsten-plate", amount = 20},
       {type = "item", name = "sp-stainless-steel", amount = 40},
       {type = "item", name = "sp-nimonic", amount = 10},
       {type = "item", name = "sp-high-power-solenoid", amount = 6},
       {type = "item", name = "sp-electrode", amount = 12},
+      {type = "item", name = "sp-plasmacutter", amount = 4},
       {type = "item", name = "sp-vacuum-pump", amount = 2},
       {type = "item", name = "sp-plate-heat-exchanger", amount = 10},
       {type = "item", name = "refined-concrete", amount = 20}

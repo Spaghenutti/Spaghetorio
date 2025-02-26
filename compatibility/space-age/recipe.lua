@@ -26,6 +26,12 @@ data.raw.recipe["tungsten-carbide"].results = {
   {type = "item", name = "tungsten-carbide", amount = 3}
 }
 
+util.recipe.change_recipe_ingredients("tungsten-plate",
+  {
+    {type = "item", name = "sp-tungsten-powder", amount = 2},
+  },
+  4)
+
 data.raw.recipe["electrolyte"].category = "chemical-staging"
 util.recipe.change_recipe_ingredients("electrolyte",
   {

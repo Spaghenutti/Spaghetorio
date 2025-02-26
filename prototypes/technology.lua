@@ -920,7 +920,7 @@ data:extend({
       },
     },
     prerequisites = {
-      "big-mining-drill"
+      "big-mining-drill",
     },
     unit =
     {
@@ -1853,6 +1853,10 @@ data:extend({
         type = "unlock-recipe",
         recipe = "sp-infrared-filter"
       },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-glass-from-calcite",
+      },
     },
     prerequisites = {
       "sp-sodium-processing",
@@ -2660,7 +2664,7 @@ data:extend({
       },
     },
     prerequisites = {
-      "sp-tungsten-processing",
+      "tungsten-steel",
       "sp-insulation-sheet",
       "production-science-pack",
       "sp-military-science-pack-2"
@@ -3117,6 +3121,10 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "sp-antimony-triiodide"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-copper-antimony",
       },
     },
     prerequisites = {
@@ -4090,8 +4098,7 @@ data:extend({
       },
     },
     prerequisites = {
-      "sp-chemical-science-pack-2",
-      "sp-kr-atmosphere-condensation"
+      "cryogenic-science-pack",
     },
     unit =
     {
@@ -7383,24 +7390,29 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "sp-arc-furnace",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-plasmacutter",
       }
     },
     prerequisites = {
       "sp-electrode",
-      "sp-titanium-alloys"
+      "sp-titanium-alloys",
+      "sp-electromagnetic-science-pack-2"
     },
     unit = {
       count = 350,
       ingredients = {
         {"sp-automation-science-pack-2", 1},
         {"sp-logistic-science-pack-2", 1},
-        {"sp-electronic-science-pack-1", 1},
+        {"sp-electronic-science-pack-2", 1},
         {"sp-material-science-pack-2", 1},
-        {"chemical-science-pack", 1},
+        {"sp-chemical-science-pack-2", 1},
         {"sp-geological-science-pack-2", 1},
         {"production-science-pack", 1},
         {"sp-metallurgic-science-pack-2", 1},
-        {"electromagnetic-science-pack", 1}
+        {"sp-electromagnetic-science-pack-2", 1}
       },
       time = 30,
     },
@@ -8833,7 +8845,8 @@ data:extend({
       },
     },
     prerequisites = {
-      "sp-big-electric-engine-unit"
+      "sp-big-electric-engine-unit",
+      "sp-electronic-science-pack-2"
     },
     unit =
     {
@@ -8842,7 +8855,7 @@ data:extend({
         {"sp-automation-science-pack-2", 1},
         {"sp-logistic-science-pack-2", 1},
         {"sp-chemical-science-pack-2", 1},
-        {"sp-electronic-science-pack-1", 1},
+        {"sp-electronic-science-pack-2", 1},
         {"sp-material-science-pack-2", 1},
         {"sp-geological-science-pack-2", 1},
         {"metallurgic-science-pack", 1},
@@ -10384,10 +10397,6 @@ data:extend({
     effects = {
       {
         type = "unlock-recipe",
-        recipe = "sp-copper-antimony",
-      },
-      {
-        type = "unlock-recipe",
         recipe = "sp-boron-phosphide",
       },
       {
@@ -10412,24 +10421,12 @@ data:extend({
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-tungsten-steel",
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-glass-from-calcite",
-      },
-      {
-        type = "unlock-recipe",
         recipe = "sp-ai-core",
       },
       {
         type = "unlock-recipe",
         recipe = "sp-heavy-water",
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-plasmacutter",
-      },
+      }
       -- TODO: add recipe chain for
       -- {
       --   type = "unlock-recipe",

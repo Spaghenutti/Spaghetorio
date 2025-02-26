@@ -48,12 +48,6 @@ data.raw.recipe["copper-plate"].results = {
     {type = "item", name = "copper-plate", amount = 2}
   }
 
-util.recipe.change_recipe_ingredients("tungsten-plate",
-  {
-    {type = "item", name = "sp-tungsten-powder", amount = 6},
-    {type = "fluid", name = "molten-iron", amount = 10},
-  },
-  10)
 -- util.recipe.change_recipe_ingredients("sulfur",
 --   {
 --     {type = "fluid", name = "water", amount = 60},
