@@ -5,6 +5,23 @@ TODO for 0.3.2
 
 TODO for 0.3.3
   - Remove "sp-recipes-without-technology"
+  - Uses for tellurium
+    - Add thermocouple (uses tellurium)
+    - Add peltier cell (bismuth and tellurium) use in thermonuclear generator
+    - Add graphite impact shell used for explorers
+    - Add laser diode
+    - Add hard drive
+    - Add phase change memory
+  - Uses for bismuth
+		- superconductor
+		- scintillator (gamma ray spectrograph)
+		- to make polonium when bombarded with neutron stream
+  - Uses for thallium
+    - Add scintillation detector contains sodium iodine crystal or cesium iodine
+    - Add photomultiplier tube
+    - xray imaging with thallium 201
+    - thallium used in optics
+    - used in rodent poison
   - Fix foundry recipe chain
     - Add tungsten pipes for passing liquid metals
     - Add tungsten offshore pump
