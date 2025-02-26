@@ -3314,6 +3314,16 @@ data:extend({
     subgroup = "intermediate-product",
     order = "pressure-[pressure-tube]",
     stack_size = 100
+  }, 
+  {
+    type = "item",
+    name = "sp-diamond-saw",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/diamond-saw.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "intermediate-product",
+    order = "[diamond-saw]",
+    stack_size = 100
   },
   {
     type = "item",

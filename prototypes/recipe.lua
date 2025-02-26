@@ -3767,6 +3767,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-burn-wood",  -- #ForRegEx# - recipe
+    icons = util.icon.create_incineration_recipe_icon(data.raw.item["wood"], data.raw.fluid["sp-carbon-dioxide"]),
     category = "incinerating",
     enabled = false,
     energy_required = 1,
