@@ -3265,6 +3265,7 @@ data:extend({
     name = "sp-vinyl-acetate",  -- #ForRegEx# - recipe
     icon = "__Spaghetorio__/graphics/icons/vinyl-acetate.png",
     category = "chemistry",
+    subgroup = "chemical",
     enabled = false,
     energy_required = 1.5,
     ingredients = {
@@ -3453,20 +3454,6 @@ data:extend({
     },
     results = {
       {type = "fluid", name = "sp-potassium-hydroxide-solution", amount = 50}
-    },
-  },
-  {
-    type = "recipe",
-    name = "sp-silicon-dioxide",  -- #ForRegEx# - recipe
-    category = "advanced-chemistry",
-    enabled = false,
-    energy_required = 2,
-    ingredients = {
-      {type = "item", name = "sp-sand", amount = 3},
-      {type = "fluid", name = "sp-hydrogen-chloride", amount = 20},
-    },
-    results = {
-      {type = "item", name = "sp-silicon-dioxide", amount = 1}
     },
   },
   ------------------------------------------------------------------------------
@@ -3735,6 +3722,7 @@ data:extend({
     name = "sp-carbon-monoxide",  -- #ForRegEx# - recipe
     icon = "__Spaghetorio__/graphics/icons/carbon-monoxide.png",
     category = "chemical-staging",
+    subgroup = "gas",
     enabled = false,
     allow_productivity = false,
     energy_required = 2,
@@ -3788,6 +3776,7 @@ data:extend({
     subgroup = "chemical",
     enabled = false,
     allow_productivity = false,
+    hide_from_player_crafting = true,
     energy_required = 2,
     ingredients = {
       {type = "fluid", name = "sp-sulfur-dioxide", amount = 5},
@@ -3879,7 +3868,7 @@ data:extend({
     enabled = false,
     energy_required = 2,
     ingredients = {
-      {type = "item", name = "sp-silicon-dioxide", amount = 1},
+      {type = "item", name = "sp-silica", amount = 1},
       {type = "item", name = "carbon", amount = 1},
       {type = "fluid", name = "sp-nitrogen", amount = 10},
     },
@@ -3920,6 +3909,7 @@ data:extend({
     name = "sp-selenium-dioxide-from-iron-ore",  -- #ForRegEx# - recipe
     icon = "__Spaghetorio__/graphics/icons/selenium-dioxide.png",
     category = "crystallizing",
+    subgroup = "processed-resource",
     enabled = false,
     energy_required = 3,
     ingredients = {
@@ -3937,6 +3927,7 @@ data:extend({
     icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/selenium-dioxide.png", 64,
                                          "__Spaghetorio__/graphics/icons/crushed-iron-ore-1.png", 64),
     category = "crystallizing",
+    subgroup = "processed-resource",
     enabled = false,
     energy_required = 4,
     hide_from_player_crafting = true,
@@ -3955,6 +3946,7 @@ data:extend({
     icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/selenium-dioxide.png", 64,
                                          "__base__/graphics/icons/copper-ore.png", 64),
     category = "crystallizing",
+    subgroup = "processed-resource",
     enabled = false,
     energy_required = 3,
     hide_from_player_crafting = true,
@@ -3973,6 +3965,7 @@ data:extend({
     icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/selenium-dioxide.png", 64,
                                          "__Spaghetorio__/graphics/icons/crushed-copper-ore-1.png", 64),
     category = "crystallizing",
+    subgroup = "processed-resource",
     enabled = false,
     energy_required = 4,
     hide_from_player_crafting = true,
@@ -5350,6 +5343,7 @@ data:extend({
     category = "sp-kr-electrolysis",
     subgroup = "raw-material",
     enabled = false,
+    hide_from_player_crafting = true,
     energy_required = 3,
     ingredients = {
       {type = "item", name = "sp-zinc-oxide", amount = 2}
@@ -5892,7 +5886,6 @@ data:extend({
       {type = "item", name = "sp-high-purity-silicon", amount = 4},
       {type = "item", name = "sp-phosphorus", amount = 2},
       {type = "item", name = "sp-boron-pillet", amount = 1},
-      {type = "item", name = "sp-silicon-dioxide", amount = 1},
       {type = "item", name = "copper-plate", amount = 1},
       {type = "item", name = "sp-aluminum-sheet", amount = 1},
       {type = "item", name = "sp-tantalum-billet", amount = 1},
@@ -5914,7 +5907,6 @@ data:extend({
       {type = "item", name = "sp-arsenic-sulfide", amount = 2},
       {type = "item", name = "sp-titanium-nitride", amount = 1},
       {type = "item", name = "sp-silicon-nitride", amount = 1},
-      {type = "item", name = "sp-silicon-dioxide", amount = 1},
       {type = "item", name = "copper-plate", amount = 1}
     },
     results = {

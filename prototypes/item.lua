@@ -1156,16 +1156,6 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-silicon-dioxide",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/icons/silicon-dioxide.png",
-    icon_size = 64,
-    scale = 0.5,
-    subgroup = "processed-resource",
-    order = "[silicon-dioxide]",
-    stack_size = 200
-  },
-  {
-    type = "item",
     name = "sp-ethylene-vinyl-acetate",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/ethylene-vinyl-acetate.png",
     icon_size = 64,

@@ -7482,10 +7482,6 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "sp-silicon-nitride",
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-silicon-dioxide"
       }
     },
     prerequisites = {
