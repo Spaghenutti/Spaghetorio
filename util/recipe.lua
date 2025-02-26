@@ -97,17 +97,17 @@ function data_util.remove_barrel_recipe(fluid_name)
   -- remove_prototypes.remove_one_prototype("item", fluid_name.."-barrel")  -- dunno why this results in crash
 end
 
--- Add fluid burning recipe
-function data_util.generate_fluid_burning_recipe(fluid_name)
+-- Add fluid venting recipe
+function data_util.generate_fluid_venting_recipe(fluid_name)
   local fluid = data.raw.fluid[fluid_name]
 
-  -- Create burning recipe
+  -- Create venting recipe
   local recipe = {
     type = "recipe",
-    name = "sp-kr-burn-" .. fluid.name,
+    name = "sp-kr-vent-" .. fluid.name,
     -- TODO: add localised_name
     icons = icon_util.create_void_recipe_icon(fluid),
-    category = "sp-kr-fluid-burning",
+    category = "sp-kr-gas-and-fluid-venting",
     subgroup = "sp-void",
     energy_required = 1,
     enabled = false,
@@ -136,10 +136,10 @@ function data_util.generate_fluid_burning_recipe(fluid_name)
   table.insert(data.raw.technology["sp-kr-fluid-excess-handling"].effects, {type = "unlock-recipe", recipe = recipe.name})
 end
 
--- Add all fluid burning recipes
-function data_util.generate_fluid_burning_recipes()
+-- Add all fluid venting recipes
+function data_util.generate_fluid_venting_recipes()
   for _, fluid in pairs(data.raw.fluid) do
-    data_util.generate_fluid_burning_recipe(fluid.name)
+    data_util.generate_fluid_venting_recipe(fluid.name)
   end
 end
 

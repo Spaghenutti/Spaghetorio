@@ -3762,6 +3762,22 @@ data:extend({
     order = "crystal-[quasicrystal-1]"
   },
   ------------------------------------------------------------------------------
+  -- MARK: incinerating
+  ------------------------------------------------------------------------------
+  {
+    type = "recipe",
+    name = "sp-burn-wood",  -- #ForRegEx# - recipe
+    category = "incinerating",
+    enabled = false,
+    energy_required = 1,
+    ingredients = {
+      {type = "item", name = "wood", amount = 1},
+    },
+    results = {
+      {type = "fluid", name = "sp-carbon-dioxide", amount = 1}
+    },
+  },
+  ------------------------------------------------------------------------------
   -- MARK: electronics-with-fluid
   ------------------------------------------------------------------------------
   {
@@ -8835,7 +8851,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-kr-gas-power-station",  -- #ForRegEx# - recipe
+    name = "sp-incinerator",  -- #ForRegEx# - recipe
     icon_size = 64,
     mip_maps = 4,
     category = "crafting",
@@ -8856,7 +8872,7 @@ data:extend({
       {type = "item", name = "concrete", amount = 40}
     },
     results = {
-      {type = "item", name = "sp-kr-gas-power-station", amount = 1}
+      {type = "item", name = "sp-incinerator", amount = 1}
     }
   },
   {

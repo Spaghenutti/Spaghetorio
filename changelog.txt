@@ -7,6 +7,8 @@ Date: 2025-02-26
     - Added polish locale thanks to S3BA
   Changes:
     - Car is now unlocked earlier
+    - Gas power station is now called incinerator and can burn solids and liquids for capturing the resulting gasses / oxides
+    - Fluid burner now vents gases and fluids (before it was called burning)
     - Tech tree updates for reaching production science pack
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.1

@@ -49,7 +49,7 @@ data:extend({
   {
     -- Crushing, used by crusher
     type = "recipe-category",
-    name = "sp-kr-fluid-burning",
+    name = "sp-kr-gas-and-fluid-venting",
   },
   {
     -- Electrolysis, used by electrolysis plant
@@ -167,6 +167,10 @@ data:extend({
   {
     type = "recipe-category",
     name = "crystallizing"
+  },
+  {
+    type = "recipe-category",
+    name = "incinerating"
   },
   {
     type = "recipe-category",

@@ -7648,18 +7648,22 @@ data:extend({
   },
   {
     type = "technology",
-    name = "sp-kr-gas-power-station",  -- #ForRegEx# - technology
+    name = "sp-incinerator",  -- #ForRegEx# - technology
     icon = "__Spaghetorio__/graphics/krastorio/technologies/gas-power-station.png",
     icon_size = 256,
     icon_mipmaps = 4,
     effects = {
       {
         type = "unlock-recipe",
-        recipe = "sp-kr-gas-power-station",
+        recipe = "sp-incinerator",
       },
       {
         type = "unlock-recipe",
         recipe = "sp-catalytic-converter",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-burn-wood",
       }
     },
     prerequisites = {

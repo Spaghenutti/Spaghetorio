@@ -1,7 +1,7 @@
 
 local util = require("data-util")
 
-util.recipe.generate_fluid_burning_recipes()
+util.recipe.generate_fluid_venting_recipes()
 
 -- -- Remove when updating file is done
 -- require("prototypes.recipe-changes")

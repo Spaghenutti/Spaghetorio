@@ -1268,7 +1268,7 @@ data:extend({
 --   },
 --   {
 --     type = "technology",
---     name = "sp-kr-gas-power-station",
+--     name = "sp-incinerator",
 --     
 --     icon = "__Spaghetorio__/graphics/krastorio/technologies/gas-power-station.png",
 --     icon_size = 256,
@@ -1276,7 +1276,7 @@ data:extend({
 --     effects = {
 --       {
 --         type = "unlock-recipe",
---         recipe = "sp-kr-gas-power-station",
+--         recipe = "sp-incinerator",
 --       },
 --     },
 --     prerequisites = { "oil-processing", "engine" },

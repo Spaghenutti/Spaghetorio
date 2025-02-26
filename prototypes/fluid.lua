@@ -103,7 +103,20 @@ data:extend({
     icon_size = 64,
     scale = 0.5,
     subgroup = "aqueous-fluid",
-    order = "[iodine-brine]",
+    order = "[iodine-sludge]",
+    stack_size = 200
+  },
+  {
+    type = "fluid",
+    name = "sp-cadmium-resin",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    base_color = {r=1.0, g=1.0, b=0.6},
+    flow_color = {r=1.0, g=1.0, b=0.6},
+    icon = "__Spaghetorio__/graphics/icons/cadmium-resin.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "aqueous-fluid",
+    order = "[cadmium-resin]",
     stack_size = 200
   },
   {
@@ -403,6 +416,58 @@ data:extend({
   },
   {
     type = "fluid",
+    name = "sp-methane",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    base_color = {r=0.05, g=0.1, b=0.5},
+    flow_color = {r=0.05, g=0.1, b=0.5},
+    icon = "__Spaghetorio__/graphics/icons/methane.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "gas",
+    order = "a[gas]-f[methane]"
+  },
+  {
+    type = "fluid",
+    name = "sp-carbon-monoxide",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    base_color = {r=0.05, g=0.1, b=0.5},
+    flow_color = {r=0.05, g=0.1, b=0.5},
+    icon = "__Spaghetorio__/graphics/icons/carbon-monoxide.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "gas",
+    order = "a[gas]-f[carbon-monoxide]"
+  },
+  {
+    type = "fluid",
+    name = "sp-carbon-dioxide",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    base_color = {r=0.05, g=0.1, b=0.5},
+    flow_color = {r=0.05, g=0.1, b=0.5},
+    icon = "__Spaghetorio__/graphics/icons/carbon-dioxide.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "gas",
+    order = "a[gas]-f[carbon-dioxide]"
+  },
+  {
+    type = "fluid",
+    name = "sp-sulfur-dioxide",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    base_color = {r=0.05, g=0.1, b=0.5},
+    flow_color = {r=0.05, g=0.1, b=0.5},
+    icon = "__Spaghetorio__/graphics/icons/sulfur-dioxide.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "gas",
+    order = "a[gas]-g[sulfur-dioxide]"
+  },
+  {
+    type = "fluid",
     name = "sp-helium",  -- #ForRegEx# - fluid
     default_temperature = 25,
     heat_capacity = "0.1kJ",
@@ -425,7 +490,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "gas",
-    order = "a[gas]-g[helium-3]"
+    order = "a[gas]-x[helium-3]"
   },
   {
     type = "fluid",
@@ -438,7 +503,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "gas",
-    order = "a[gas]-g[xenon]"
+    order = "a[gas]-x[xenon]"
   },
   {
     type = "fluid",
@@ -451,7 +516,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "gas",
-    order = "a[gas]-h[deuterium]"
+    order = "a[gas]-z[deuterium]"
   },
   ------------------------------------------------------------------------------
   -- MARK: chemical
@@ -780,6 +845,58 @@ data:extend({
     icon_mipmaps = 4,
     subgroup = "chemical",
     order = "a[fluid]-f[glycerin]"
+  },
+  {
+    type = "fluid",
+    name = "sp-acetic-acid",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    base_color = {r=0.0, g=0.0, b=0.55},
+    flow_color = {r=0.0, g=0.0, b=0.55},
+    icon = "__Spaghetorio__/graphics/icons/acetic-acid.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "chemical",
+    order = "a[fluid]-f[acetic-acid]"
+  },
+  {
+    type = "fluid",
+    name = "sp-hydrogen-fluorine",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    base_color = {r=0.0, g=0.0, b=0.55},
+    flow_color = {r=0.0, g=0.0, b=0.55},
+    icon = "__Spaghetorio__/graphics/icons/hydrogen-fluorine.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "chemical",
+    order = "a[fluid]-f[hydrogen-fluorine]"
+  },
+  {
+    type = "fluid",
+    name = "sp-vinyl-acetate",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    base_color = {r=0.0, g=0.0, b=0.55},
+    flow_color = {r=0.0, g=0.0, b=0.55},
+    icon = "__Spaghetorio__/graphics/icons/vinyl-acetate.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "chemical",
+    order = "a[fluid]-f[vinyl-acetate]"
+  },
+  {
+    type = "fluid",
+    name = "sp-vinyl-fluoride",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    base_color = {r=0.0, g=0.0, b=0.55},
+    flow_color = {r=0.0, g=0.0, b=0.55},
+    icon = "__Spaghetorio__/graphics/icons/vinyl-fluoride.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "chemical",
+    order = "a[fluid]-f[vinyl-fluoride]"
   },
   ------------------------------------------------------------------------------
   -- MARK: alien

@@ -1166,6 +1166,46 @@ data:extend({
   },
   {
     type = "item",
+    name = "sp-ethylene-vinyl-acetate",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/ethylene-vinyl-acetate.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "processed-resource",
+    order = "[ethylene-vinyl-acetate]",
+    stack_size = 200
+  },
+  {
+    type = "item",
+    name = "sp-gallium-chloride",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/gallium-chloride.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "processed-resource",
+    order = "[gallium-chloride]",
+    stack_size = 200
+  },
+  {
+    type = "item",
+    name = "sp-indium-sulfate",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/indium-sulfate.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "processed-resource",
+    order = "[indium-sulfate]",
+    stack_size = 200
+  },
+  {
+    type = "item",
+    name = "sp-zinc-oxide",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/zinc-oxide.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "processed-resource",
+    order = "[zinc-oxide]",
+    stack_size = 200
+  },
+  {
+    type = "item",
     name = "sp-imersite-powder",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/imersite-powder/imersite-powder.png",
     icon_size = 64,
@@ -1411,6 +1451,26 @@ data:extend({
     },
     subgroup = "processed-metal",
     order = "[tellurium]",
+    stack_size = 200
+  },
+  {
+    type = "item",
+    name = "sp-cadmium",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/cadmium.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "processed-metal",
+    order = "[cadmium]",
+    stack_size = 200
+  },
+  {
+    type = "item",
+    name = "sp-gallium",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/gallium.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "processed-metal",
+    order = "[gallium]",
     stack_size = 200
   },
   ------------------------------------------------------------------------------
@@ -1737,6 +1797,16 @@ data:extend({
     scale = 0.5,
     subgroup = "raw-material",
     order = "pillet-[sp-antimony]",
+    stack_size = 200
+  },
+  {
+    type = "item",
+    name = "sp-indium-ingot",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/indium-ingot.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "raw-material",
+    order = "ingot-a-[indium-ingot]",
     stack_size = 200
   },
   ------------------------------------------------------------------------------
@@ -3214,6 +3284,16 @@ data:extend({
   },
   {
     type = "item",
+    name = "sp-photovoltaic-cell",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/photovoltaic-cell.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "electronic-optical-component",
+    order = "[photovoltaic-cell]",
+    stack_size = 100
+  },
+  {
+    type = "item",
     name = "sp-lithium-sulfur-battery",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/krastorio//icons/items/lithium-sulfur-battery.png",
     icon_size = 64,
@@ -4012,6 +4092,16 @@ data:extend({
     icon_mipmaps = 4,
     subgroup = "chemical-product",
     order = "[urea]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "sp-polyvinyl-fluoride",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/polyvinyl-fluoride.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "chemical-product",
+    order = "[polyvinyl-fluoride]",
     stack_size = 50
   },
   {
@@ -6686,14 +6776,14 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-kr-gas-power-station",  -- #ForRegEx# - building
+    name = "sp-incinerator",  -- #ForRegEx# - building
     icon = "__Spaghetorio__/graphics/krastorio/icons/entities/gas-power-station.png",
     icon_size = 64,
     icon_mipmaps = 4,
     stack_size = 50,
     subgroup = "energy",
     order = "c[solar-panel]-b[gas-power-station]",
-    place_result = "sp-kr-gas-power-station",
+    place_result = "sp-incinerator",
   },
   {
     type = "item",
