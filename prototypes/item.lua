@@ -1206,6 +1206,26 @@ data:extend({
   },
   {
     type = "item",
+    name = "sp-selenious-acid",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/selenious-acid.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "processed-resource",
+    order = "[selenious-acid]",
+    stack_size = 200
+  },
+  {
+    type = "item",
+    name = "sp-selenium-dioxide",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/selenium-dioxide.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "processed-resource",
+    order = "[selenium-dioxide]",
+    stack_size = 200
+  },
+  {
+    type = "item",
     name = "sp-imersite-powder",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/imersite-powder/imersite-powder.png",
     icon_size = 64,
@@ -1777,6 +1797,16 @@ data:extend({
     scale = 0.5,
     subgroup = "raw-material",
     order = "pillet-[molybdenum-pillet]",
+    stack_size = 200
+  },
+  {
+    type = "item",
+    name = "sp-selenium-pillet",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/selenium-pillet.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "raw-material",
+    order = "pillet-[selenium-pillet]",
     stack_size = 200
   },
   {
@@ -2981,6 +3011,15 @@ data:extend({
     subgroup = "electronic-optical-component",
     order = "optics-[mirror]",
     stack_size = 100
+  },  {
+    type = "item",
+    name = "sp-optical-glass",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/optical-glass.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "electronic-optical-component",
+    order = "optics-[optical-glass]",
+    stack_size = 100
   },
   {
     type = "item",
@@ -3963,6 +4002,36 @@ data:extend({
     scale = 0.5,
     subgroup = "ceramic",
     order = "crystal-[diamond]",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "sp-diamond",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/diamond.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "ceramic",
+    order = "crystal-[diamond]",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "sp-cadmium-telluride",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/cadmium-telluride.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "ceramic",
+    order = "crystal-[cadmium-telluride]",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "sp-copper-indium-gallium-selenide",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/copper-indium-gallium-selenium.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "ceramic",
+    order = "crystal-[copper-indium-gallium-selenium]",
     stack_size = 100
   },
   {

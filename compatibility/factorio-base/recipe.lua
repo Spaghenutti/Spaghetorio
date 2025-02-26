@@ -1166,7 +1166,7 @@ util.recipe.change_recipe_ingredients("battery-mk2-equipment",
 
 util.recipe.change_recipe_ingredients("solar-panel-equipment",
   {
-    {type = "item", name = "solar-panel", amount = 1},
+    {type = "item", name = "sp-photovoltaic-cell", amount = 4},
     {type = "item", name = "sp-bolts", amount = 10},
     {type = "item", name = "advanced-circuit", amount = 2},
     {type = "item", name = "sp-aluminum-frame", amount = 2},
@@ -1482,11 +1482,11 @@ util.recipe.change_recipe_ingredients("lab",
 
 util.recipe.change_recipe_ingredients("solar-panel",
   {
-    {type = "item", name = "sp-silicon", amount = 40},
+    {type = "item", name = "sp-photovoltaic-cell", amount = 20},
     {type = "item", name = "sp-aluminum-frame", amount = 5},
+    {type = "item", name = "sp-bolts", amount = 12},
     {type = "item", name = "electronic-circuit", amount = 4},
     {type = "item", name = "copper-cable", amount = 10},
-    {type = "item", name = "sp-phosphorus", amount = 6}
   },
   10)
 

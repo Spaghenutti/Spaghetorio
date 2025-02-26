@@ -1839,6 +1839,10 @@ data:extend({
       },
       {
         type = "unlock-recipe",
+        recipe = "sp-optical-glass"
+      },
+      {
+        type = "unlock-recipe",
         recipe = "sp-lens"
       },
       {
@@ -1861,10 +1865,13 @@ data:extend({
       ingredients = {
         {"sp-automation-science-pack-2", 1},
         {"sp-logistic-science-pack-2", 1},
+        {"sp-electronic-science-pack-1", 1},
         {"sp-material-science-pack-2", 1},
         {"sp-chemical-science-pack-2", 1},
-        {"sp-electronic-science-pack-2", 1},
-        {"production-science-pack", 1}
+        {"sp-geological-science-pack-2", 1},
+        {"production-science-pack", 1},
+        {"metallurgic-science-pack", 1},
+        {"electromagnetic-science-pack", 1}
       },
       time = 30
     },
@@ -2072,6 +2079,52 @@ data:extend({
         {"sp-chemical-science-pack-2", 1},
         {"sp-computer-science-pack-2", 1},
         {"production-science-pack", 1}
+      },
+      time = 30
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-photovoltaics",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghetorio__/graphics/hr-icons/photovoltaic-cell.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-cadmium-telluride"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-copper-indium-gallium-selenide"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-photovoltaic-cell"
+      }
+    },
+    prerequisites = {
+      "sp-cadmium-processing",
+      "sp-indium-processing",
+      "sp-gallium-processing",
+      "sp-selenium-processing",
+      "sp-optics",
+      "sp-acetic-products",
+      "sp-polyvinyl-fluoride"
+    },
+    unit =
+    {
+      count = 600,
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-electronic-science-pack-1", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"production-science-pack", 1},
+        {"sp-metallurgic-science-pack-2", 1},
+        {"electromagnetic-science-pack", 1}
       },
       time = 30
     },
@@ -3301,7 +3354,59 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "sp-sulfuric-acid-from-sulfur-dioxide"
+      }
+    },
+    prerequisites = {
+      "sp-metallurgic-science-pack-2",
+      "sp-incinerator"
+    },
+    unit =
+    {
+      count = 350,
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-electronic-science-pack-1", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"sp-metallurgic-science-pack-2", 1},
+        {"electromagnetic-science-pack", 1}
       },
+      time = 30
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-selenium-processing",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghetorio__/graphics/hr-icons/selenium-pillet.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-selenium-dioxide-from-iron-ore"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-selenium-dioxide-from-crushed-iron"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-selenium-dioxide-from-copper-ore"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-selenium-dioxide-from-crushed-copper"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-selenious-acid"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-selenium-pillet"
+      }
     },
     prerequisites = {
       "sp-metallurgic-science-pack-2",

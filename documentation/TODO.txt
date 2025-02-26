@@ -129,17 +129,21 @@ Factorio Space age
     - Cadmium telluride CdTe
       - sulfuric acid + zinc ore -> Cadmium + zinc oxide
       - zinc oxide + water -> zinc plate (electrolysis)
-    - Copper inidium gallium selenide CIGS
+    - Copper indium gallium selenide CIGS
       - Gallium:
         - alumina + sodium hydroxide -> gallium resin
         - gallium resin + hydrogen chloride -> gallium chloride
         - gallium chloride -> gallium + chlorine (electrolysis)
-      - inidium (block productivity for all recipes):
+      - indium (block productivity for all recipes):
         - zinc sulfate + oxygen + -> zinc oxide + sulfur dioxide
         - zinc oxide + sulfuric acid -> zinc plate + indium sulfate
         - indium sulfate + water -> indium (electrolysis)
         - sulfur dioxide + hydrogen -> sulfuric acid (check that the quantity is lower than used in the reactions above)
         - sulfur dioxide is also used for preserving food
+      - Selenium:
+        - incinerate copper-ore or iron-ore for selenium-oxide
+        - selenium-dioxide + alkaline-solution + -> selenious-acid
+        - selenious-acid + sulfur-dioxide -> selenium-pellet
     - optical glass from silicon oxide, boron oxide, phosphorus pentoxide or alumina
 
   - Add Krastorio matter conversion recipes

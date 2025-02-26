@@ -377,16 +377,19 @@ data.raw.technology["sulfur-processing"].unit.ingredients = {
   {"sp-material-science-pack-1", 1}
 }
 
-table.insert(data.raw.technology["solar-energy"].prerequisites, "sp-phosphorus-processing")
-table.insert(data.raw.technology["solar-energy"].prerequisites, "sp-electronic-science-pack-2")
-table.insert(data.raw.technology["solar-energy"].prerequisites, "sp-chemical-science-pack-2")
+data.raw.technology["solar-energy"].prerequisites = {
+  "sp-photovoltaics"
+}
 data.raw.technology["solar-energy"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},
   {"sp-logistic-science-pack-2", 1},
-  {"sp-electronic-science-pack-2", 1},
+  {"sp-electronic-science-pack-1", 1},
   {"sp-material-science-pack-2", 1},
   {"sp-chemical-science-pack-2", 1},
-  {"production-science-pack", 1}
+  {"sp-geological-science-pack-2", 1},
+  {"production-science-pack", 1},
+  {"sp-metallurgic-science-pack-2", 1},
+  {"electromagnetic-science-pack", 1}
 }
 
 table.insert(data.raw.technology["concrete"].prerequisites, "sp-cement")
@@ -964,13 +967,19 @@ data.raw.technology["power-armor-mk2"].unit.ingredients = {
   {"production-science-pack", 1}
 }
 
+data.raw.technology["solar-panel-equipment"].prerequisites = {
+  "sp-photovoltaics"
+}
 data.raw.technology["solar-panel-equipment"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},
   {"sp-logistic-science-pack-2", 1},
-  {"sp-electronic-science-pack-2", 1},
+  {"sp-electronic-science-pack-1", 1},
   {"sp-material-science-pack-2", 1},
   {"sp-chemical-science-pack-2", 1},
-  {"production-science-pack", 1}
+  {"sp-geological-science-pack-2", 1},
+  {"production-science-pack", 1},
+  {"sp-metallurgic-science-pack-2", 1},
+  {"electromagnetic-science-pack", 1}
 }
 
 -- Why is this a base technology and not krastorio technology? Who knows...

@@ -1934,6 +1934,20 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "sp-selenium-pillet",  -- #ForRegEx# - recipe
+    category = "alloy-smelting",
+    enabled = false,
+    energy_required = 3,
+    ingredients = {
+      {type = "item", name = "sp-selenious-acid", amount = 2},
+      {type = "fluid", name = "sp-sulfur-dioxide", amount = 5},
+    },
+    results = {
+      {type = "item", name = "sp-selenium-pillet", amount = 1},
+    }
+  },
+  {
+    type = "recipe",
     name = "sp-rare-metals-alloy-from-yttrium",  -- #ForRegEx# - recipe
     icon = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/rare-metals/rare-metals.png",
     icon_size = 64,
@@ -3903,6 +3917,155 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "sp-selenium-dioxide-from-iron-ore",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/icons/selenium-dioxide.png",
+    category = "crystallizing",
+    enabled = false,
+    energy_required = 3,
+    ingredients = {
+      {type = "item", name = "iron-ore", amount = 5},
+      {type = "fluid", name = "sulfuric-acid", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-selenium-dioxide", amount = 1},
+      {type = "item", name = "iron-plate", amount = 2},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-selenium-dioxide-from-crushed-iron",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/selenium-dioxide.png", 64,
+                                         "__Spaghetorio__/graphics/icons/crushed-iron-ore-1.png", 64),
+    category = "crystallizing",
+    enabled = false,
+    energy_required = 4,
+    hide_from_player_crafting = true,
+    ingredients = {
+      {type = "item", name = "sp-crushed-iron-ore", amount = 5},
+      {type = "fluid", name = "sulfuric-acid", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-selenium-dioxide", amount = 2},
+      {type = "item", name = "iron-plate", amount = 2},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-selenium-dioxide-from-copper-ore",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/selenium-dioxide.png", 64,
+                                         "__base__/graphics/icons/copper-ore.png", 64),
+    category = "crystallizing",
+    enabled = false,
+    energy_required = 3,
+    hide_from_player_crafting = true,
+    ingredients = {
+      {type = "item", name = "copper-ore", amount = 5},
+      {type = "fluid", name = "sulfuric-acid", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-selenium-dioxide", amount = 1},
+      {type = "item", name = "copper-plate", amount = 2},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-selenium-dioxide-from-crushed-copper",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/selenium-dioxide.png", 64,
+                                         "__Spaghetorio__/graphics/icons/crushed-copper-ore-1.png", 64),
+    category = "crystallizing",
+    enabled = false,
+    energy_required = 4,
+    hide_from_player_crafting = true,
+    ingredients = {
+      {type = "item", name = "sp-crushed-copper-ore", amount = 5},
+      {type = "fluid", name = "sulfuric-acid", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-selenium-dioxide", amount = 2},
+      {type = "item", name = "copper-plate", amount = 2},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-optical-glass",  -- #ForRegEx# - recipe
+    category = "crystallizing",
+    enabled = false,
+    energy_required = 4,
+    ingredients = {
+      {type = "item", name = "sp-silica", amount = 2},
+      {type = "item", name = "calcite", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-optical-glass", amount = 2}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-optical-glass-from-alumina",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/optical-glass.png", 64,
+                                         "__Spaghetorio__/graphics/icons/alumina.png", 64),
+    category = "crystallizing",
+    enabled = false,
+    energy_required = 4,
+    ingredients = {
+      {type = "item", name = "sp-alumina", amount = 3},
+      {type = "item", name = "calcite", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-optical-glass", amount = 2}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-cadmium-telluride",  -- #ForRegEx# - recipe
+    category = "crystallizing",
+    enabled = false,
+    energy_required = 6,
+    ingredients = {
+      {type = "item", name = "sp-tellurium", amount = 1},
+      {type = "item", name = "sp-cadmium", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-cadmium-telluride", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-copper-indium-gallium-selenide",  -- #ForRegEx# - recipe
+    category = "crystallizing",
+    enabled = false,
+    energy_required = 2,
+    ingredients = {
+      {type = "item", name = "copper-plate", amount = 1},
+      {type = "item", name = "sp-indium-ingot", amount = 1},
+      {type = "item", name = "sp-gallium", amount = 2},
+      {type = "item", name = "sp-selenium-pillet", amount = 2},
+    },
+    results = {
+      {type = "item", name = "sp-copper-indium-gallium-selenide", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-high-purity-silicon",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/icons/high-purity-silicon.png",
+    icon_size = 64,
+    scale = 0.25,
+    category = "crystallizing",
+    subgroup = "advanced-raw-material",
+    enabled = false,
+    allow_productivity = false,
+    energy_required = 8,
+    ingredients = {
+      {type = "item", name = "sp-silicon", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-high-purity-silicon", probability = 0.3, amount = 1},
+      {type = "item", name = "sp-silicon", probability = 0.7, amount = 1}
+    }
+  },
+  {
+    type = "recipe",
     name = "sp-monocrystal",  -- #ForRegEx# - recipe
     category = "crystallizing",
     enabled = false,
@@ -4453,6 +4616,22 @@ data:extend({
     --   tertiary = {r = 0.0, g = 0.0, b = 0.0, a = 1.000},
     --   quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
     -- }
+  },
+  {
+    type = "recipe",
+    name = "sp-selenious-acid",  -- #ForRegEx# - recipe
+    category = "sp-kr-fluid-filtration",
+    enabled = false,
+    energy_required = 120,
+    ingredients = {
+      {type = "item", name = "sp-filter", amount = 1},
+      {type = "item", name = "sp-selenium-dioxide", amount = 60},
+      {type = "fluid", name = "sp-potassium-hydroxide-solution", amount = 150},
+      {type = "fluid", name = "water", amount = 500},
+    },
+    results = {
+      {type = "item", name = "sp-selenious-acid", amount = 45}
+    },
   },
   ------------------------------------------------------------------------------
   -- MARK: sp-kr-atmosphere-condensation
@@ -7713,6 +7892,37 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-high-pressure-fan", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-lens",  -- #ForRegEx# - recipe
+    category = "manufacturing",
+    enabled = false,
+    energy_required = 1,
+    ingredients = {
+      {type = "item", name = "sp-optical-glass", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-lens", amount = 3}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-photovoltaic-cell",  -- #ForRegEx# - recipe
+    category = "manufacturing",
+    enabled = false,
+    energy_required = 25,
+    ingredients = {
+      {type = "item", name = "sp-optical-glass", amount = 10},
+      {type = "item", name = "sp-ethylene-vinyl-acetate", amount = 10},
+      {type = "item", name = "sp-polyvinyl-fluoride", amount = 10},
+      {type = "item", name = "copper-cable", amount = 1},
+      {type = "item", name = "sp-cadmium-telluride", amount = 1},
+      {type = "item", name = "sp-copper-indium-gallium-selenide", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-photovoltaic-cell", amount = 10}
     }
   },
   {
@@ -13479,40 +13689,6 @@ data:extend({
       quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
     },
     order = "[liquid]-[bleach]"
-  },
-  {
-    type = "recipe",
-    name = "sp-lens",  -- #ForRegEx# - recipe
-    category = "crafting-with-fluid",
-    enabled = false,
-    energy_required = 4,
-    ingredients = {
-      {type = "item", name = "sp-silica", amount = 2},
-      {type = "fluid", name = "sp-oxygen", amount = 40},
-      {type = "item", name = "calcite", amount = 1},
-    },
-    results = {
-      {type = "item", name = "sp-lens", amount = 2}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-high-purity-silicon",  -- #ForRegEx# - recipe
-    icon = "__Spaghetorio__/graphics/icons/high-purity-silicon.png",
-    icon_size = 64,
-    scale = 0.25,
-    category = "intermediate-smelting",
-    subgroup = "advanced-raw-material",
-    enabled = false,
-    allow_productivity = false,
-    energy_required = 8,
-    ingredients = {
-      {type = "item", name = "sp-silicon", amount = 1},
-    },
-    results = {
-      {type = "item", name = "sp-high-purity-silicon", probability = 0.3, amount = 1},
-      {type = "item", name = "sp-silicon", probability = 0.7, amount = 1}
-    }
   },
   {
     type = "recipe",
