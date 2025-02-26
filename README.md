@@ -49,6 +49,7 @@ If you have some cool ideas you can give me feedback in the discussions section.
 ## Contributors
 
 - [S3BA](https://mods.factorio.com/user/S3BA) for polish translations
+- [Cyfagy](https://mods.factorio.com/user/Cyfagy) for building sounds
 
 ## Special Thanks
 

@@ -63,15 +63,14 @@ local graphics_set = {
   },
 }
 
+
 local working_sound = {
-  sound = {filename = "__base__/sound/accumulator-discharging.ogg", volume = 0.5},
-  idle_sound = {filename = "__base__/sound/accumulator-idle.ogg", volume = 0.3},
-  volume = 0.50,
-  aggregation = {
-    max_count = 2,
-    remove = false,
-    count_already_playing = true,
-  },
+  sound = {
+    {
+      filename = "__Spaghetorio__/sounds/buildings/arc-furnace.ogg",
+      volume = 1.25,
+    }
+  }
 }
 
 data:extend({

@@ -5,6 +5,7 @@ Date: 2025-02-26
     - Added new items
     - Added locale for some late game tech
     - Added polish locale thanks to S3BA
+    - Added arc-furnace sound thanks to Cyfagy
   Changes:
     - Car is now unlocked earlier
     - Gas power station is now called incinerator and can burn solids and liquids for capturing the resulting gasses / oxides
