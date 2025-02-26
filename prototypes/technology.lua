@@ -7532,10 +7532,6 @@ data:extend({
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-biomethanol",
-      },
-      {
-        type = "unlock-recipe",
         recipe = "sp-nitric-acid",
       },
       {
@@ -7663,11 +7659,64 @@ data:extend({
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-burn-wood",
+        recipe = "sp-methane",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-carbon-monoxide",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-biomethanol",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-acetic-acid",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-biomethanol",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-incinerate-wood",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-incinerate-coal",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-incinerate-coke",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-incinerate-carbon",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-incinerate-methane",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-incinerate-ethylene",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-incinerate-petroleum-gas",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-incinerate-light-oil",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-incinerate-heavy-oil",
       }
     },
     prerequisites = {
       "sp-noble-metals",
+      "sp-kr-fuel-refinery",
     },
     unit = {
       count = 200,

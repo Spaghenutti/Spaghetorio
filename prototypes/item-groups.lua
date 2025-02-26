@@ -102,6 +102,12 @@ data:extend({
     group = "sp-resources",
     order = "f"
   },
+  {
+    type = "item-subgroup",
+    name = "incinerate-resource",
+    group = "sp-resources",
+    order = "z"
+  },
   ------------------------------------------------------------------------------
   -- MARK: materials
   ------------------------------------------------------------------------------
@@ -159,6 +165,12 @@ data:extend({
     name = "sp-acroproduct",
     group = "sp-materials",
     order = "k"
+  },
+  {
+    type = "item-subgroup",
+    name = "incinerate-material",
+    group = "sp-materials",
+    order = "z"
   },
   ------------------------------------------------------------------------------
   -- MARK: intermediate-products
@@ -401,6 +413,12 @@ data:extend({
     name = "alien",
     group = "fluids",
     order = "g"
+  },
+  {
+    type = "item-subgroup",
+    name = "incinerate-fluid",
+    group = "fluids",
+    order = "z"
   },
   ------------------------------------------------------------------------------
   -- MARK: other

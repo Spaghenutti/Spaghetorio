@@ -2038,7 +2038,8 @@ data:extend({
     results = {
       {type = "item", name = "sp-boron-pillet", amount = 3},
       {type = "item", name = "sp-salt", amount = 1}
-    }
+    },
+    order = "pillet-[boron-pillet]"
   },
   {
     type = "recipe",
@@ -3207,7 +3208,6 @@ data:extend({
     ingredients = {
       {type = "item", name = "sp-quartz", amount = 1},
       {type = "fluid", name = "sp-sodium-hydroxide", amount = 3},
-
     },
     results = {
       {type = "item", name = "sp-silica", amount = 1},
@@ -3218,6 +3218,20 @@ data:extend({
     --   tertiary = {r = 0.2, g = 0.1, b = 0.0, a = 1.000},
     --   quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000}
     -- }
+  },
+  {
+    type = "recipe",
+    name = "sp-acetic-acid",  -- #ForRegEx# - recipe
+    category = "chemistry",
+    enabled = false,
+    energy_required = 1,
+    ingredients = {
+      {type = "fluid", name = "sp-biomethanol", amount = 5},
+      {type = "fluid", name = "sp-carbon-monoxide", amount = 5},
+    },
+    results = {
+      {type = "fluid", name = "sp-acetic-acid", amount = 5},
+    }
   },
   ------------------------------------------------------------------------------
   -- MARK: advanced-chemistry
@@ -3604,6 +3618,57 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "sp-methane",  -- #ForRegEx# - recipe
+    category = "chemical-staging",
+    enabled = false,
+    allow_productivity = false,
+    energy_required = 2,
+    ingredients = {
+      {type = "fluid", name = "sp-carbon-dioxide", amount = 5},
+      {type = "fluid", name = "sp-hydrogen", amount = 10},
+    },
+    results = {
+      {type = "fluid", name = "sp-methane", amount = 5}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-carbon-monoxide",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/icons/carbon-monoxide.png",
+    category = "chemical-staging",
+    enabled = false,
+    allow_productivity = false,
+    energy_required = 2,
+    ingredients = {
+      {type = "fluid", name = "sp-methane", amount = 5},
+      {type = "fluid", name = "water", amount = 10},
+    },
+    results = {
+      {type = "fluid", name = "sp-carbon-monoxide", amount = 5},
+      {type = "fluid", name = "sp-hydrogen", amount = 10}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-helium",  -- #ForRegEx# - recipe
+    category = "chemical-staging",
+    enabled = false,
+    energy_required = 4,
+    ingredients = {
+      {type = "fluid", name = "sp-hydrogen", amount = 2}
+    },
+    results = {
+      {type = "fluid", name = "sp-helium", amount = 10}
+    },
+    crafting_machine_tint = {
+      primary = {r = 1.000, g = 1.000, b = 1.000, a = 1.000},
+      secondary = {r = 0.9, g = 0.9, b = 1.0, a = 1.000},
+      tertiary = {r = 0.7, g = 0.7, b = 0.9, a = 1.000},
+      quaternary = {r = 0.5, g = 0.5, b = 0.8, a = 1.000},
+    }
+  },
+  {
+    type = "recipe",
     name = "sp-material-science-pack-2",  -- #ForRegEx# - recipe
     category = "chemical-staging",
     enabled = false,
@@ -3639,25 +3704,6 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-chemical-science-pack-2", amount = 5}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-helium",  -- #ForRegEx# - recipe
-    category = "chemical-staging",
-    enabled = false,
-    energy_required = 4,
-    ingredients = {
-      {type = "fluid", name = "sp-hydrogen", amount = 2}
-    },
-    results = {
-      {type = "fluid", name = "sp-helium", amount = 10}
-    },
-    crafting_machine_tint = {
-      primary = {r = 1.000, g = 1.000, b = 1.000, a = 1.000},
-      secondary = {r = 0.9, g = 0.9, b = 1.0, a = 1.000},
-      tertiary = {r = 0.7, g = 0.7, b = 0.9, a = 1.000},
-      quaternary = {r = 0.5, g = 0.5, b = 0.8, a = 1.000},
     }
   },
   ------------------------------------------------------------------------------
@@ -3766,16 +3812,146 @@ data:extend({
   ------------------------------------------------------------------------------
   {
     type = "recipe",
-    name = "sp-burn-wood",  -- #ForRegEx# - recipe
+    name = "sp-incinerate-wood",  -- #ForRegEx# - recipe
     icons = util.icon.create_incineration_recipe_icon(data.raw.item["wood"], data.raw.fluid["sp-carbon-dioxide"]),
     category = "incinerating",
+    subgroup = "incinerate-resource",
     enabled = false,
-    energy_required = 1,
+    energy_required = 2,
+    hide_from_player_crafting = true,
     ingredients = {
       {type = "item", name = "wood", amount = 1},
     },
     results = {
+      {type = "fluid", name = "sp-carbon-dioxide", amount = 2}
+    },
+  },
+  {
+    type = "recipe",
+    name = "sp-incinerate-coal",  -- #ForRegEx# - recipe
+    icons = util.icon.create_incineration_recipe_icon(data.raw.item["coal"], data.raw.fluid["sp-carbon-dioxide"]),
+    category = "incinerating",
+    subgroup = "incinerate-resource",
+    enabled = false,
+    energy_required = 2,
+    hide_from_player_crafting = true,
+    ingredients = {
+      {type = "item", name = "coal", amount = 1},
+    },
+    results = {
+      {type = "fluid", name = "sp-carbon-dioxide", amount = 3}
+    },
+  },
+  {
+    type = "recipe",
+    name = "sp-incinerate-coke",  -- #ForRegEx# - recipe
+    icons = util.icon.create_incineration_recipe_icon(data.raw.item["sp-coke"], data.raw.fluid["sp-carbon-dioxide"]),
+    category = "incinerating",
+    subgroup = "incinerate-resource",
+    enabled = false,
+    energy_required = 1.5,
+    hide_from_player_crafting = true,
+    ingredients = {
+      {type = "item", name = "sp-coke", amount = 1},
+    },
+    results = {
+      {type = "fluid", name = "sp-carbon-dioxide", amount = 4}
+    },
+  },
+  {
+    type = "recipe",
+    name = "sp-incinerate-carbon",  -- #ForRegEx# - recipe
+    icons = util.icon.create_incineration_recipe_icon(data.raw.item["carbon"], data.raw.fluid["sp-carbon-dioxide"]),
+    category = "incinerating",
+    subgroup = "incinerate-resource",
+    enabled = false,
+    energy_required = 1,
+    hide_from_player_crafting = true,
+    ingredients = {
+      {type = "item", name = "carbon", amount = 1},
+    },
+    results = {
+      {type = "fluid", name = "sp-carbon-dioxide", amount = 4}
+    },
+  },
+  {
+    type = "recipe",
+    name = "sp-incinerate-methane",  -- #ForRegEx# - recipe
+    icons = util.icon.create_incineration_recipe_icon(data.raw.fluid["sp-methane"], data.raw.fluid["sp-carbon-dioxide"]),
+    category = "incinerating",
+    subgroup = "incinerate-fluid",
+    enabled = false,
+    energy_required = 0.2,
+    hide_from_player_crafting = true,
+    ingredients = {
+      {type = "fluid", name = "sp-methane", amount = 1},
+    },
+    results = {
       {type = "fluid", name = "sp-carbon-dioxide", amount = 1}
+    },
+  },
+  {
+    type = "recipe",
+    name = "sp-incinerate-ethylene",  -- #ForRegEx# - recipe
+    icons = util.icon.create_incineration_recipe_icon(data.raw.fluid["sp-ethylene"], data.raw.fluid["sp-carbon-dioxide"]),
+    category = "incinerating",
+    subgroup = "incinerate-fluid",
+    enabled = false,
+    energy_required = 0.5,
+    hide_from_player_crafting = true,
+    ingredients = {
+      {type = "fluid", name = "sp-ethylene", amount = 1},
+    },
+    results = {
+      {type = "fluid", name = "sp-carbon-dioxide", amount = 2}
+    },
+  },
+  {
+    type = "recipe",
+    name = "sp-incinerate-petroleum-gas",  -- #ForRegEx# - recipe
+    icons = util.icon.create_incineration_recipe_icon(data.raw.fluid["petroleum-gas"], data.raw.fluid["sp-carbon-dioxide"]),
+    category = "incinerating",
+    subgroup = "incinerate-fluid",
+    enabled = false,
+    energy_required = 0.2,
+    hide_from_player_crafting = true,
+    ingredients = {
+      {type = "fluid", name = "petroleum-gas", amount = 1},
+    },
+    results = {
+      {type = "fluid", name = "sp-carbon-dioxide", amount = 2}
+    },
+  },
+  {
+    type = "recipe",
+    name = "sp-incinerate-light-oil",  -- #ForRegEx# - recipe
+    icons = util.icon.create_incineration_recipe_icon(data.raw.fluid["light-oil"], data.raw.fluid["sp-carbon-monoxide"]),
+    category = "incinerating",
+    subgroup = "incinerate-fluid",
+    enabled = false,
+    energy_required = 0.5,
+    hide_from_player_crafting = true,
+    ingredients = {
+      {type = "fluid", name = "light-oil", amount = 1},
+    },
+    results = {
+      {type = "fluid", name = "sp-carbon-monoxide", amount = 1}
+    },
+  },
+  {
+    type = "recipe",
+    name = "sp-incinerate-heavy-oil",  -- #ForRegEx# - recipe
+    icons = util.icon.create_incineration_recipe_icon(data.raw.fluid["heavy-oil"], data.raw.fluid["sp-carbon-monoxide"]),
+    category = "incinerating",
+    subgroup = "incinerate-fluid",
+    enabled = false,
+    energy_required = 1,
+    hide_from_player_crafting = true,
+    ingredients = {
+      {type = "fluid", name = "heavy-oil", amount = 2},
+    },
+    results = {
+      {type = "fluid", name = "sp-carbon-monoxide", amount = 3}
     },
   },
   ------------------------------------------------------------------------------
@@ -3849,8 +4025,8 @@ data:extend({
     energy_required = 10,
     ingredients = {
       {type = "item", name = "sp-wood-chips", amount = 20},
-      {type = "fluid", name = "sp-oxygen", amount = 60},
-      {type = "fluid", name = "steam", amount = 120},
+      {type = "fluid", name = "sp-carbon-monoxide", amount = 60},
+      {type = "fluid", name = "sp-hydrogen", amount = 120},
     },
     results = {
       {type = "fluid", name = "sp-biomethanol", amount = 60},

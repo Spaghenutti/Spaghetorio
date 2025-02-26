@@ -210,14 +210,13 @@ function data_util.acrosphere_upgrade_recipe_icon(sphere_1, sphere_2, sphere_3, 
 end
 
 function data_util.create_acroproduct_conversion_icon(item_to_convert, acroproduct)
-  arrow_icon = "__Spaghetorio__/graphics/arrows/acroproduct-recipes-arrow-256x256.png"
-
   icons = {
     {icon = "__Spaghetorio__/graphics/hr-icons/background.png", icon_size = 256, scale = 0.5},
-    {icon = arrow_icon, icon_size = 256, scale = 0.7, shift = {15, 15}},
+    {icon = "__Spaghetorio__/graphics/arrows/acroproduct-recipes-arrow-256x256.png", icon_size = 256, scale = 0.7, shift = {15, 15}},
     {icon = item_to_convert, icon_size = 64, scale = 1.15, shift = {18, 11}},
     {icon = acroproduct, icon_size = 64, scale = 0.8, shift = {-42, -42}}
   }
+
   return icons
 end
 
@@ -234,7 +233,7 @@ end
 function data_util.create_incineration_recipe_icon(item_or_fluid_to_incinerate, incinerate_result)
   icons = {
     {icon = "__Spaghetorio__/graphics/hr-icons/background.png", icon_size = 256, scale = 0.25},
-    {icon = "__Spaghetorio__/graphics/arrows/flame-256x256.png", icon_size = 256, scale = 0.22, shift = {-15, 9}},
+    {icon = "__Spaghetorio__/graphics/arrows/flame-256x256.png", icon_size = 256, scale = 0.25, shift = {-15, 9}},
     {icon = item_or_fluid_to_incinerate.icon, icon_size = item_or_fluid_to_incinerate.icon_size, scale = item_or_fluid_to_incinerate.icon_scale, shift = {-15, 22}},
     {icon = incinerate_result.icon, icon_size = incinerate_result.icon_size, scale = incinerate_result.icon_scale, shift = {15, -15}},
     {icon = "__Spaghetorio__/graphics/arrows/incineration-arrow-256x256.png", icon_size = 256, scale = 0.25, shift = {0, 2}}
