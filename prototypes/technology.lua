@@ -541,7 +541,7 @@ data:extend({
     name = "sp-carbon-high-tech",  -- #ForRegEx# - technology
     icon_size = 256,
     icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/hr-icons/carbon-nanotubes.png", 256, nil,
-                                   "__Spaghetorio__/graphics/hr-icons/graphene.png", 256, nil),
+                                        "__Spaghetorio__/graphics/hr-icons/graphene.png", 256, nil),
     effects =
     {
       {
@@ -2004,7 +2004,15 @@ data:extend({
     {
       count = 250,
       ingredients = {
-        {"utility-science-pack", 1},
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"production-science-pack", 1},
+        {"sp-metallurgic-science-pack-2", 1},
+        {"electromagnetic-science-pack", 1}
       },
       time = 30
     },
@@ -3106,37 +3114,41 @@ data:extend({
       time = 30,
     },
   },
-  -- {
-  --   type = "technology",
-  --   name = "sp-superconductor",  -- #ForRegEx# - technology
-  --   icon_size = 256,
-  --   icon = "__Spaghetorio__/graphics/hr-icons/superconductor.png",
-  --   effects =
-  --   {
-  --     {
-  --       type = "unlock-recipe",
-  --       recipe = "sp-superconductor"
-  --     },
-  --   },
-  --   prerequisites = {
-  --     "sp-material-science-pack-3"
-  --   },
-  --   unit =
-  --   {
-  --     count = 500,
-  --     ingredients = {
-  --       {"sp-automation-science-pack-3", 1},
-  --       {"sp-logistic-science-pack-3", 1},
-  --       {"sp-chemical-science-pack-2", 1},
-  --       {"sp-electronic-science-pack-2", 1},
-  --       {"sp-material-science-pack-3", 1},
-  --       {"sp-geological-science-pack-2", 1},
-  --       {"production-science-pack", 1},
-  --       {"utility-science-pack", 1}
-  --     },
-  --     time = 30
-  --   },
-  -- },
+  {
+    type = "technology",
+    name = "sp-superconductor-materials",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghetorio__/graphics/hr-icons/superconductor.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "superconductor"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "supercapacitor"
+      },
+    },
+    prerequisites = {
+      "sp-material-science-pack-3"
+    },
+    unit =
+    {
+      count = 500,
+      ingredients = {
+        {"sp-automation-science-pack-3", 1},
+        {"sp-logistic-science-pack-3", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-material-science-pack-3", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"production-science-pack", 1},
+        {"utility-science-pack", 1}
+      },
+      time = 30
+    },
+  },
   {
     type = "technology",
     name = "sp-antimony-processing",  -- #ForRegEx# - technology
@@ -4917,14 +4929,19 @@ data:extend({
         type = "unlock-recipe",
         recipe = "sp-lithium-sulfur-battery",
       },
+      {
+        type = "unlock-recipe",
+        recipe = "electrolyte",
+      },
     },
     prerequisites = {
       "sp-propane-products",
-      "electromagnetic-plant"
+      "electromagnetic-plant",
+      "sp-carbon-high-tech"
     },
     unit =
     {
-      count = 150,
+      count = 300,
       ingredients = {
         {"sp-automation-science-pack-2", 1},
         {"sp-logistic-science-pack-2", 1},
@@ -4932,7 +4949,9 @@ data:extend({
         {"sp-material-science-pack-2", 1},
         {"sp-chemical-science-pack-2", 1},
         {"sp-geological-science-pack-2", 1},
-        {"production-science-pack", 1}
+        {"production-science-pack", 1},
+        {"sp-metallurgic-science-pack-2", 1},
+        {"electromagnetic-science-pack", 1}
       },
       time = 30
     },
@@ -5274,6 +5293,7 @@ data:extend({
         {"sp-electronic-science-pack-1", 1},
         {"sp-material-science-pack-2", 1},
         {"sp-geological-science-pack-2", 1},
+        {"production-science-pack", 1},
         {"metallurgic-science-pack", 1},
         {"electromagnetic-science-pack", 1}
       },
@@ -7883,6 +7903,7 @@ data:extend({
         {"sp-electronic-science-pack-1", 1},
         {"sp-material-science-pack-2", 1},
         {"sp-geological-science-pack-2", 1},
+        {"production-science-pack", 1},
         {"metallurgic-science-pack", 1},
         {"electromagnetic-science-pack", 1}
       },
@@ -8383,7 +8404,6 @@ data:extend({
     icon_size = 256,
     icon_mipmaps = 4,
     prerequisites = {
-      "sp-kr-lithium-sulfur-battery",
       -- "kr-advanced-lab",
       "sp-power-regulation",
       "sp-titanium-alloys",
@@ -9027,7 +9047,7 @@ data:extend({
     },
     prerequisites = {
       "sp-big-electric-engine-unit",
-      "sp-electronic-science-pack-2"
+      "sp-electronic-science-pack-2",
     },
     unit =
     {

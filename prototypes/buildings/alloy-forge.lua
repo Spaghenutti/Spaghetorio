@@ -166,6 +166,7 @@ data:extend({
     crafting_categories = {
       "smelting",
       "intermediate-smelting",
+      "smelting-with-fluid",
       "metallurgy",
       "metallurgy-or-assembling",
       "alloy-smelting"

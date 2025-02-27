@@ -183,6 +183,35 @@ data.raw.technology["big-mining-drill"].unit = {
   time = 30
 }
 
+data.raw.technology["electromagnetic-plant"].prerequisites = {
+  "sp-electrode",
+  "sp-electronic-science-pack-2",
+  "sp-titanium-alloys",
+  "holmium-processing",
+}
+data.raw.technology["electromagnetic-plant"].effects = {
+  {
+    type = "unlock-recipe",
+    recipe = "electromagnetic-plant"
+  },
+}
+data.raw.technology["electromagnetic-plant"].research_trigger = nil
+data.raw.technology["electromagnetic-plant"].unit = {
+  count = 500,
+  ingredients = {
+    {"sp-automation-science-pack-2", 1},
+    {"sp-logistic-science-pack-2", 1},
+    {"sp-electronic-science-pack-2", 1},
+    {"sp-material-science-pack-2", 1},
+    {"sp-chemical-science-pack-2", 1},
+    {"sp-geological-science-pack-2", 1},
+    {"production-science-pack", 1},
+    {"sp-metallurgic-science-pack-2", 1},
+    {"electromagnetic-science-pack", 1}
+  },
+  time = 30
+}
+
 data.raw.technology["foundry"].prerequisites = {
   "tungsten-steel",
 }

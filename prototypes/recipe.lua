@@ -1995,86 +1995,10 @@ data:extend({
     },
     order = "ingot-[rare-metals-alloy-from-neodymium]"
   },
-  ------------------------------------------------------------------------------
-  -- MARK: metallurgy
-  ------------------------------------------------------------------------------
-  {
-    type = "recipe",
-    name = "sp-boron-pillet",  -- #ForRegEx# - recipe
-    icon = "__Spaghetorio__/graphics/icons/boron-pillet.png",
-    icon_size = 64,
-    category = "metallurgy",
-    subgroup = "raw-material",
-    enabled = false,
-    energy_required = 6,
-    ingredients = {
-      {type = "item", name = "sp-sodium-borate", amount = 4},
-      {type = "fluid", name = "sp-chlorine", amount = 5},
-    },
-    results = {
-      {type = "item", name = "sp-boron-pillet", amount = 3},
-      {type = "item", name = "sp-salt", amount = 1}
-    },
-    order = "pillet-[boron-pillet]"
-  },
-  {
-    type = "recipe",
-    name = "sp-vanadium-plate",  -- #ForRegEx# - recipe
-    category = "metallurgy",
-    enabled = false,
-    energy_required = 10,
-    ingredients = {
-      {type = "item", name = "sp-ammonium-metavanadate", amount = 3},
-      {type = "fluid", name = "sp-sodium-hydroxide", amount = 5},
-    },
-    results = {
-      {type = "item", name = "sp-vanadium-plate", amount = 2}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-niobium-billet",  -- #ForRegEx# - recipe
-    category = "metallurgy",
-    enabled = false,
-    energy_required = 3.6,
-    ingredients = {
-      {type = "fluid", name = "sp-aqueous-niobium", amount = 50}
-    },
-    results = {
-      {type = "item", name = "sp-niobium-billet", amount = 1}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-tantalum-billet",  -- #ForRegEx# - recipe
-    category = "metallurgy",
-    enabled = false,
-    energy_required = 5,
-    ingredients = {
-      {type = "fluid", name = "sp-aqueous-tantalum", amount = 50}
-    },
-    results = {
-      {type = "item", name = "sp-tantalum-billet", amount = 1}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-selenium-pillet",  -- #ForRegEx# - recipe
-    category = "metallurgy",
-    enabled = false,
-    energy_required = 3,
-    ingredients = {
-      {type = "item", name = "sp-selenious-acid", amount = 2},
-      {type = "fluid", name = "sp-sulfur-dioxide", amount = 5},
-    },
-    results = {
-      {type = "item", name = "sp-selenium-pillet", amount = 1},
-    }
-  },
   {
     type = "recipe",
     name = "sp-metallurgic-science-pack-2",  -- #ForRegEx# - recipe
-    category = "metallurgy",
+    category = "alloy-smelting",
     enabled = false,
     energy_required = 40,
     ingredients =
@@ -2092,6 +2016,86 @@ data:extend({
       {type = "item", name = "sp-metallurgic-science-pack-2", amount = 5}
     }
   },
+  ------------------------------------------------------------------------------
+  -- MARK: smelting-with-fluid
+  ------------------------------------------------------------------------------
+  {
+    type = "recipe",
+    name = "sp-boron-pillet",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/icons/boron-pillet.png",
+    icon_size = 64,
+    category = "smelting-with-fluid",
+    subgroup = "raw-material",
+    enabled = false,
+    energy_required = 6,
+    ingredients = {
+      {type = "item", name = "sp-sodium-borate", amount = 4},
+      {type = "fluid", name = "sp-chlorine", amount = 5},
+    },
+    results = {
+      {type = "item", name = "sp-boron-pillet", amount = 3},
+      {type = "item", name = "sp-salt", amount = 1}
+    },
+    order = "pillet-[boron-pillet]"
+  },
+  {
+    type = "recipe",
+    name = "sp-vanadium-plate",  -- #ForRegEx# - recipe
+    category = "smelting-with-fluid",
+    enabled = false,
+    energy_required = 10,
+    ingredients = {
+      {type = "item", name = "sp-ammonium-metavanadate", amount = 3},
+      {type = "fluid", name = "sp-sodium-hydroxide", amount = 5},
+    },
+    results = {
+      {type = "item", name = "sp-vanadium-plate", amount = 2}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-niobium-billet",  -- #ForRegEx# - recipe
+    category = "smelting-with-fluid",
+    enabled = false,
+    energy_required = 3.6,
+    ingredients = {
+      {type = "fluid", name = "sp-aqueous-niobium", amount = 50}
+    },
+    results = {
+      {type = "item", name = "sp-niobium-billet", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-tantalum-billet",  -- #ForRegEx# - recipe
+    category = "smelting-with-fluid",
+    enabled = false,
+    energy_required = 5,
+    ingredients = {
+      {type = "fluid", name = "sp-aqueous-tantalum", amount = 50}
+    },
+    results = {
+      {type = "item", name = "sp-tantalum-billet", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-selenium-pillet",  -- #ForRegEx# - recipe
+    category = "smelting-with-fluid",
+    enabled = false,
+    energy_required = 3,
+    ingredients = {
+      {type = "item", name = "sp-selenious-acid", amount = 2},
+      {type = "fluid", name = "sp-sulfur-dioxide", amount = 5},
+    },
+    results = {
+      {type = "item", name = "sp-selenium-pillet", amount = 1},
+    }
+  },
+  ------------------------------------------------------------------------------
+  -- MARK: metallurgy
+  ------------------------------------------------------------------------------
+
   ------------------------------------------------------------------------------
   -- MARK: high-temperature-smelting
   ------------------------------------------------------------------------------
@@ -3358,6 +3362,7 @@ data:extend({
                                          "__space-age__/graphics/icons/fluid/ammonia.png", 64),
     category = "chemistry",
     enabled = false,
+    hide_from_player_crafting = true,
     energy_required = 10,
     ingredients = {
       {type = "fluid", name = "sp-benzene", amount = 10},
@@ -3493,21 +3498,6 @@ data:extend({
   ------------------------------------------------------------------------------
   -- MARK: chemical-staging
   ------------------------------------------------------------------------------
-  {
-    type = "recipe",
-    name = "sp-boron-phosphide",  -- #ForRegEx# - recipe
-    category = "chemical-staging",
-    enabled = false,
-    energy_required = 10,
-    ingredients =
-    {
-      {type = "item", name = "sp-boron-pillet", amount = 2},
-      {type = "item", name = "sp-phosphorus", amount = 3},
-    },
-    results = {
-      {type = "item", name = "sp-boron-phosphide", amount = 2}
-    }
-  },
   {
     type = "recipe",
     name = "sp-lithium-oxide",  -- #ForRegEx# - recipe
@@ -3927,6 +3917,21 @@ data:extend({
   ------------------------------------------------------------------------------
   -- MARK: crystallizing
   ------------------------------------------------------------------------------
+  {
+    type = "recipe",
+    name = "sp-boron-phosphide",  -- #ForRegEx# - recipe
+    category = "crystallizing",
+    enabled = false,
+    energy_required = 10,
+    ingredients =
+    {
+      {type = "item", name = "sp-boron-pillet", amount = 2},
+      {type = "item", name = "sp-phosphorus", amount = 3},
+    },
+    results = {
+      {type = "item", name = "sp-boron-phosphide", amount = 2}
+    }
+  },
   {
     type = "recipe",
     name = "sp-silicon-nitride",  -- #ForRegEx# - recipe
@@ -6947,7 +6952,7 @@ data:extend({
       {type = "item", name = "flying-robot-frame", amount = 3},
       {type = "item", name = "sp-transformer", amount = 3},
       {type = "item", name = "sp-big-electric-engine-unit", amount = 2},
-      {type = "item", name = "sp-electromagnetic-brake", amount = 2},
+      {type = "item", name = "sp-electromagnetic-brake", amount = 2}
     },
     results = {
       {type = "item", name = "sp-electromagnetic-science-pack-2", amount = 5}
@@ -9315,9 +9320,18 @@ data:extend({
     mip_maps = 4,
     category = "crafting",
     enabled = false,
-    energy_required = 69,
+    energy_required = 50,
     ingredients = {
-      {type = "item", name = "iron-plate", amount = 69},
+      {type = "item", name = "sp-chromium-cobalt", amount = 30},
+      {type = "item", name = "sp-niobium-steel", amount = 30},
+      {type = "item", name = "sp-niobium-tin", amount = 10},
+      {type = "item", name = "sp-glass", amount = 20},
+      {type = "item", name = "advanced-circuit", amount = 10},
+      {type = "item", name = "sp-condenser-coil", amount = 4},
+      {type = "item", name = "sp-high-power-solenoid", amount = 4},
+      {type = "item", name = "sp-flange", amount = 12},
+      {type = "item", name = "sp-pressure-tube", amount = 8},
+      {type = "item", name = "refined-concrete", amount = 50},
     },
     results = {
       {type = "item", name = "sp-oxidizer", amount = 1}

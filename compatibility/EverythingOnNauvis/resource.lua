@@ -3,6 +3,7 @@ local resource_autoplace = require("__core__/lualib/resource-autoplace")
 
 
 data.raw.resource["holmium-ore"].stage_counts = {250000, 150000, 100000, 70000, 50000, 35000, 20000, 10000}
+data.raw.resource["holmium-ore"].minable.required_fluid = "sp-ammonium-hydroxide-solution"
 data.raw.resource["holmium-ore"].autoplace = resource_autoplace.resource_autoplace_settings({
   name = "holmium-ore",
   order = "g",

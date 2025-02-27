@@ -32,6 +32,10 @@ util.recipe.change_recipe_ingredients("tungsten-plate",
   },
   4)
 
+data.raw.recipe["holmium-solution"].category = "sp-crushing-washing"
+
+data.raw.recipe["holmium-plate"].category = "smelting-with-fluid"
+
 data.raw.recipe["electrolyte"].category = "chemical-staging"
 util.recipe.change_recipe_ingredients("electrolyte",
   {
@@ -231,6 +235,22 @@ util.recipe.change_recipe_ingredients("heating-tower",
     {type = "item", name = "concrete", amount = 20},
   },
   50)
+
+util.recipe.change_recipe_ingredients("electromagnetic-plant",
+  {
+    {type = "item", name = "sp-maraging-steel", amount = 40},
+    {type = "item", name = "sp-TiNb", amount = 30},
+    {type = "item", name = "sp-TiAlSn", amount = 20},
+    {type = "item", name = "holmium-plate", amount = 20},
+    {type = "item", name = "sp-electrode", amount = 8},
+    {type = "item", name = "sp-big-electric-engine-unit", amount = 4},
+    {type = "item", name = "sp-actuator", amount = 12},
+    {type = "item", name = "sp-variable-frequenzy-drive", amount = 3},
+    {type = "item", name = "sp-power-supply", amount = 4},
+    {type = "item", name = "sp-piezoelectric-sensor", amount = 16},
+    {type = "item", name = "refined-concrete", amount = 40},
+  },
+  60)
 
 data.raw.recipe["big-mining-drill"].category = "crafting"
 util.recipe.change_recipe_ingredients("big-mining-drill",

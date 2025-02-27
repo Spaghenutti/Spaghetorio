@@ -194,6 +194,10 @@ data:extend({
   },
   {
     type = "recipe-category",
+    name = "smelting-with-fluid"
+  },
+  {
+    type = "recipe-category",
     name = "alloy-smelting"
   },
   {

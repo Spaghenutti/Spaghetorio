@@ -28,6 +28,26 @@ data.raw["item-subgroup"]["empty-barrel"].group = "fluids"
 data.raw["item-subgroup"]["empty-barrel"].order = "z-f"
 
 -- Overwrite technology change by Everything on nauvis
+data.raw.technology["holmium-processing"].prerequisites = {
+  "sp-big-crusher",
+}
+data.raw.technology["holmium-processing"].research_trigger = nil
+data.raw.technology["holmium-processing"].unit = {
+  count = 200,
+  ingredients = {
+    {"sp-automation-science-pack-2", 1},
+    {"sp-logistic-science-pack-2", 1},
+    {"sp-electronic-science-pack-1", 1},
+    {"sp-material-science-pack-2", 1},
+    {"sp-chemical-science-pack-2", 1},
+    {"sp-geological-science-pack-2", 1},
+    {"production-science-pack", 1},
+    {"metallurgic-science-pack", 1},
+    {"electromagnetic-science-pack", 1}
+  },
+  time = 30
+}
+
 remove_prototypes.remove_one_prototype("technology", "calcite-processing")
 
 data.raw.technology["tungsten-carbide"].prerequisites = {
