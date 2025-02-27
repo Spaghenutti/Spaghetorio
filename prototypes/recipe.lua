@@ -3337,6 +3337,36 @@ data:extend({
       {type = "item", name = "sp-polyvinyl-fluoride", amount = 3},
     },
   },
+  {
+    type = "recipe",
+    name = "sp-aniline",  -- #ForRegEx# - recipe
+    category = "chemistry",
+    enabled = false,
+    energy_required = 2,
+    ingredients = {
+      {type = "fluid", name = "sp-benzene", amount = 10},
+      {type = "fluid", name = "ammonia", amount = 5},
+    },
+    results = {
+      {type = "fluid", name = "sp-aniline", amount = 5},
+    },
+  },
+  {
+    type = "recipe",
+    name = "sp-aniline-from-nitrogen",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/aniline.png", 64,
+                                         "__space-age__/graphics/icons/fluid/ammonia.png", 64),
+    category = "chemistry",
+    enabled = false,
+    energy_required = 10,
+    ingredients = {
+      {type = "fluid", name = "sp-benzene", amount = 10},
+      {type = "fluid", name = "sp-nitrogen", amount = 20},
+    },
+    results = {
+      {type = "fluid", name = "sp-aniline", amount = 5},
+    },
+  },
   ------------------------------------------------------------------------------
   -- MARK: advanced-chemistry
   ------------------------------------------------------------------------------
@@ -3806,6 +3836,38 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "sp-ammonium-sulfate",  -- #ForRegEx# - recipe
+    category = "chemical-staging",
+    enabled = false,
+    energy_required = 3,
+    ingredients = {
+      {type = "fluid", name = "ammonia", amount = 3},
+      {type = "fluid", name = "sulfuric-acid", amount = 5},
+    },
+    results = {
+      {type = "item", name = "sp-ammonium-sulfate", amount = 1},
+    },
+  },
+  {
+    type = "recipe",
+    name = "sp-polyaniline",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/icons/polyaniline.png",
+    category = "chemical-staging",
+    subgroup = "chemical-product",
+    enabled = false,
+    energy_required = 3,
+    ingredients = {
+      {type = "item", name = "sp-ammonium-persulfate", amount = 1},
+      {type = "fluid", name = "sp-aniline", amount = 3},
+      {type = "fluid", name = "water", amount = 5},
+    },
+    results = {
+      {type = "item", name = "sp-polyaniline", amount = 1},
+      {type = "fluid", name = "sulfuric-acid", amount = 5},
+    },
+  },
+  {
+    type = "recipe",
     name = "sp-helium",  -- #ForRegEx# - recipe
     category = "chemical-staging",
     enabled = false,
@@ -4116,9 +4178,52 @@ data:extend({
     },
     order = "crystal-[quasicrystal-1]"
   },
+  {
+    type = "recipe",
+    name = "sp-gallium-nitride",  -- #ForRegEx# - recipe
+    category = "crystallizing",
+    enabled = false,
+    energy_required = 8,
+    ingredients = {
+      {type = "item", name = "sp-gallium", amount = 1},
+      {type = "fluid", name = "sp-nitrogen", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-gallium-nitride", amount = 1}
+    }
+  },
   ------------------------------------------------------------------------------
   -- MARK: incinerating
   ------------------------------------------------------------------------------
+  {
+    type = "recipe",
+    name = "sp-beryllium-fluoride",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/icons/beryllium-fluoride.png",
+    category = "incinerating",
+    enabled = false,
+    energy_required = 2,
+    ingredients = {
+      {type = "fluid", name = "fluorine", amount = 5},
+      {type = "item", name = "sp-alumina", amount = 5},
+    },
+    results = {
+      {type = "item", name = "sp-beryllium-fluoride", amount = 1}
+    },
+  },
+  {
+    type = "recipe",
+    name = "sp-beryllium-oxide",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/icons/beryllium-oxide.png",
+    category = "incinerating",
+    enabled = false,
+    energy_required = 5,
+    ingredients = {
+      {type = "item", name = "sp-beryllium-fluoride", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-beryllium-oxide", amount = 1}
+    },
+  },
   {
     type = "recipe",
     name = "sp-zinc-oxide",  -- #ForRegEx# - recipe
@@ -4316,6 +4421,51 @@ data:extend({
     results = {
       {type = "fluid", name = "sp-carbon-monoxide", amount = 3}
     },
+  },
+  ------------------------------------------------------------------------------
+  -- MARK: oxidizing
+  ------------------------------------------------------------------------------
+  {
+    type = "recipe",
+    name = "sp-ammonium-persulfate",  -- #ForRegEx# - recipe
+    category = "oxidizing",
+    enabled = false,
+    energy_required = 5,
+    ingredients = {
+      {type = "item", name = "sp-ammonium-sulfate", amount = 1},
+      {type = "fluid", name = "sp-peroxymonosulfuric-acid", amount = 5},
+    },
+    results = {
+      {type = "item", name = "sp-ammonium-persulfate", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-hydrogen-peroxide",  -- #ForRegEx# - recipe
+    category = "oxidizing",
+    enabled = false,
+    energy_required = 10,
+    ingredients = {
+      {type = "fluid", name = "water", amount = 5},
+      {type = "fluid", name = "sp-oxygen", amount = 5}
+    },
+    results = {
+      {type = "fluid", name = "sp-hydrogen-peroxide", amount = 5}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-peroxymonosulfuric-acid",  -- #ForRegEx# - recipe
+    category = "oxidizing",
+    enabled = false,
+    energy_required = 8,
+    ingredients = {
+      {type = "fluid", name = "sulfuric-acid", amount = 5},
+      {type = "fluid", name = "sp-hydrogen-peroxide", amount = 5}
+    },
+    results = {
+      {type = "fluid", name = "sp-peroxymonosulfuric-acid", amount = 2}
+    }
   },
   ------------------------------------------------------------------------------
   -- MARK: electronics-with-fluid
@@ -5530,6 +5680,37 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-potassium-hydroxide", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-beryllium",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/icons/beryllium.png",
+    category = "sp-kr-electrolysis",
+    enabled = false,
+    energy_required = 3,
+    ingredients = {
+      {type = "item", name = "sp-beryllium-fluoride", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-beryllium", amount = 1},
+      {type = "fluid", name = "fluorine", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-beryllium-from-beryllium-oxide",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/beryllium.png", 64,
+                                         "__Spaghetorio__/graphics/icons/beryllium-oxide.png", 64),
+    category = "sp-kr-electrolysis",
+    enabled = false,
+    energy_required = 5,
+    ingredients = {
+      {type = "item", name = "sp-beryllium-oxide", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-beryllium", amount = 1},
+      {type = "fluid", name = "sp-oxygen", amount = 1}
     }
   },
   ------------------------------------------------------------------------------

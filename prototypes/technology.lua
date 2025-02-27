@@ -2280,6 +2280,10 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "sp-potassium-hydroxide",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "ammoniacal-solution-separation",
       }
     },
     prerequisites = {
@@ -3224,6 +3228,49 @@ data:extend({
       },
       time = 30
     },
+  },  {
+    type = "technology",
+    name = "sp-beryllium-processing",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghetorio__/graphics/hr-icons/beryllium.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-beryllium-fluoride"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-beryllium-oxide"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-beryllium"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-beryllium-from-beryllium-oxide"
+      },
+    },
+    prerequisites = {
+      "sp-incinerator"
+    },
+    unit =
+    {
+      count = 250,
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-electronic-science-pack-1", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"production-science-pack", 1},
+        {"metallurgic-science-pack", 1},
+        {"electromagnetic-science-pack", 1}
+      },
+      time = 30
+    },
   },
   {
     type = "technology",
@@ -3245,6 +3292,41 @@ data:extend({
     prerequisites = {
       "sp-geological-science-pack-2",
       "sp-chemical-science-pack-2"
+    },
+    unit =
+    {
+      count = 150,
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-electronic-science-pack-1", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"metallurgic-science-pack", 1},
+        {"electromagnetic-science-pack", 1}
+      },
+      time = 30
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-boron-crystalls",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghetorio__/graphics/hr-icons/boron-silicade.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-boron-phosphide",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-boron-silicade",
+      },
+    },
+    prerequisites = {
+      "sp-boron-processing"
     },
     unit =
     {
@@ -5104,6 +5186,63 @@ data:extend({
         {"electromagnetic-science-pack", 1}
       },
       time = 45,
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-polyaniline",  -- #ForRegEx# - technology
+    icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/hr-icons/aniline.png", 256, nil,
+                                        "__Spaghetorio__/graphics/hr-icons/polyaniline.png", 256, nil),
+    icon_size = 256,
+    icon_mipmaps = 4,
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-aniline",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-aniline-from-nitrogen",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-polyaniline",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-ammonium-sulfate",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-ammonium-persulfate",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-hydrogen-peroxide",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-peroxymonosulfuric-acid",
+      },
+    },
+    prerequisites = {
+      "sp-oxidizer",
+      "sp-chemical-science-pack-2",
+      "sp-geological-science-pack-2"
+    },
+    unit = {
+      count = 250,
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-electronic-science-pack-1", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"metallurgic-science-pack", 1},
+        {"electromagnetic-science-pack", 1}
+      },
+      time = 30,
     },
   },
   {
@@ -7698,14 +7837,21 @@ data:extend({
       },
     },
     prerequisites = {
-      "sp-material-science-pack-3"
+      "sp-kr-fuel-refinery"
     },
     unit = {
       count = 200,
       ingredients = {
-        {"automation-science-pack", 1}
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-electronic-science-pack-1", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"metallurgic-science-pack", 1},
+        {"electromagnetic-science-pack", 1}
       },
-      time = 45,
+      time = 30,
     },
   },
   {
@@ -10395,14 +10541,6 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     effects = {
-      {
-        type = "unlock-recipe",
-        recipe = "sp-boron-phosphide",
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-boron-silicade",
-      },
       {
         type = "unlock-recipe",
         recipe = "sp-lead-molybdate",
