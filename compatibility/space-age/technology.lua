@@ -144,6 +144,7 @@ data.raw.technology["turbo-transport-belt"].unit.ingredients = {
   {"sp-electromagnetic-science-pack-2", 1}
 }
 
+table.insert(data.raw.technology["elevated-rail"].prerequisites, "sp-invar")
 data.raw.technology["elevated-rail"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},
   {"sp-logistic-science-pack-2", 1},

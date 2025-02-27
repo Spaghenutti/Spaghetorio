@@ -3814,21 +3814,19 @@ data:extend({
       },
     },
     prerequisites = {
-      "sp-metallurgic-science-pack-2"
+      "sp-alloy-forge"
     },
     unit =
     {
       count = 500,
       ingredients = {
-        {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"sp-material-science-pack-1", 1},
+        {"sp-geological-science-pack-1", 1},
         {"sp-electronic-science-pack-1", 1},
-        {"sp-material-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1},
-        {"sp-geological-science-pack-2", 1},
-        {"production-science-pack", 1},
-        {"sp-metallurgic-science-pack-2", 1},
-        {"electromagnetic-science-pack", 1}
+        {"metallurgic-science-pack", 1},
       },
       time = 30
     },
