@@ -1976,6 +1976,41 @@ data:extend({
   },
   {
     type = "technology",
+    name = "sp-heat-resistant-electronics",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghetorio__/graphics/hr-icons/heat-resistant-electronics.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-heat-resistant-electronics"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-insulated-metal-substrate"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-gallium-nitride"
+      }
+    },
+    prerequisites = {
+      "sp-polyaniline",
+      "sp-boron-crystalls",
+      "sp-beryllium-processing",
+      "electromagnetic-plant"
+    },
+    unit =
+    {
+      count = 250,
+      ingredients = {
+        {"utility-science-pack", 1},
+      },
+      time = 30
+    },
+  },
+  {
+    type = "technology",
     name = "sp-advanced-processing-unit",  -- #ForRegEx# - technology
     icon_size = 256,
     icon = "__Spaghetorio__/graphics/hr-icons/advanced-processing-unit.png",
@@ -7538,7 +7573,7 @@ data:extend({
     prerequisites = {
       "sp-electrode",
       "sp-titanium-alloys",
-      "sp-electromagnetic-science-pack-2"
+      "sp-heat-resistant-electronics"
     },
     unit = {
       count = 350,

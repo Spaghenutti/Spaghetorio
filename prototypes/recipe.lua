@@ -4468,8 +4468,45 @@ data:extend({
     }
   },
   ------------------------------------------------------------------------------
+  -- MARK: electronics
+  ------------------------------------------------------------------------------
+  {
+    type = "recipe",
+    name = "sp-heat-resistant-electronics",  -- #ForRegEx# - recipe
+    category = "electronics",
+    enabled = false,
+    energy_required = 6,
+    ingredients = {
+      {type = "item", name = "sp-insulated-metal-substrate", amount = 1},
+      {type = "item", name = "sp-gallium-nitride", amount = 1},
+      {type = "item", name = "sp-boron-phosphide", amount = 1},
+      {type = "item", name = "sp-boron-silicade", amount = 1},
+      {type = "item", name = "sp-polyaniline", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-heat-resistant-electronics", amount = 1}
+    },
+  },
+  ------------------------------------------------------------------------------
   -- MARK: electronics-with-fluid
   ------------------------------------------------------------------------------
+  {
+    type = "recipe",
+    name = "sp-insulated-metal-substrate",  -- #ForRegEx# - recipe
+    category = "electronics-with-fluid",
+    enabled = false,
+    energy_required = 3,
+    ingredients = {
+      {type = "item", name = "copper-plate", amount = 1},
+      {type = "item", name = "sp-aluminum-sheet", amount = 1},
+      {type = "item", name = "sp-beryllium-oxide", amount = 1},
+      {type = "item", name = "sp-glass", amount = 1},
+      {type = "fluid", name = "sp-epoxy", amount = 4}
+    },
+    results = {
+      {type = "item", name = "sp-insulated-metal-substrate", amount = 1}
+    },
+  },
   {
     type = "recipe",
     name = "sp-lithium-sulfur-battery",  -- #ForRegEx# - recipe
@@ -4480,8 +4517,8 @@ data:extend({
       {type = "item", name = "lithium", amount = 4},
       {type = "item", name = "sp-cobalt-billet", amount = 1},
       {type = "item", name = "sp-aluminum-sheet", amount = 1},
-      {type = "fluid", name = "sulfuric-acid", amount = 10},
       {type = "item", name = "sp-graphene", amount = 1},
+      {type = "fluid", name = "sulfuric-acid", amount = 10},
       {type = "fluid", name = "electrolyte", amount = 8}
     },
     results = {
@@ -9129,6 +9166,7 @@ data:extend({
       {type = "item", name = "sp-plasmacutter", amount = 4},
       {type = "item", name = "sp-vacuum-pump", amount = 2},
       {type = "item", name = "sp-plate-heat-exchanger", amount = 10},
+      {type = "item", name = "sp-heat-resistant-electronics", amount = 3},
       {type = "item", name = "refined-concrete", amount = 20}
     },
     results = {
