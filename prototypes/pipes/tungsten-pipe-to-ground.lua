@@ -6,7 +6,7 @@ data:extend({
   {
     type = "pipe-to-ground",
     name = "sp-tungsten-pipe-to-ground",
-    icon = "__base__/graphics/icons/pipe-to-ground.png",
+    icon = "__base__/graphics/icons/pipe-to-ground.png",  -- #SKIP IMAGE#
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.1, result = "sp-tungsten-pipe-to-ground"},
     max_health = 150,
@@ -53,7 +53,7 @@ data:extend({
     {
       north =
       {
-        filename = "__Spaghetorio__/graphics/krastorio/entities/steel-pipe-to-ground/hr-steel-pipe-to-ground-up.png",
+        filename = "__Spaghetorio__/graphics/krastorio/entities/steel-pipe-to-ground/hr-steel-pipe-to-ground-up.png",  -- #SKIP IMAGE#
         priority = "extra-high",
         width = 128,
         height = 128,
@@ -61,7 +61,7 @@ data:extend({
       },
       south =
       {
-        filename = "__Spaghetorio__/graphics/krastorio/entities/steel-pipe-to-ground/hr-steel-pipe-to-ground-down.png",
+        filename = "__Spaghetorio__/graphics/krastorio/entities/steel-pipe-to-ground/hr-steel-pipe-to-ground-down.png",  -- #SKIP IMAGE#
         priority = "extra-high",
         width = 128,
         height = 128,
@@ -69,7 +69,7 @@ data:extend({
       },
       west =
       {
-        filename = "__Spaghetorio__/graphics/krastorio/entities/steel-pipe-to-ground/hr-steel-pipe-to-ground-left.png",
+        filename = "__Spaghetorio__/graphics/krastorio/entities/steel-pipe-to-ground/hr-steel-pipe-to-ground-left.png",  -- #SKIP IMAGE#
         priority = "extra-high",
         width = 128,
         height = 128,
@@ -77,7 +77,7 @@ data:extend({
       },
       east =
       {
-        filename = "__Spaghetorio__/graphics/krastorio/entities/steel-pipe-to-ground/hr-steel-pipe-to-ground-right.png",
+        filename = "__Spaghetorio__/graphics/krastorio/entities/steel-pipe-to-ground/hr-steel-pipe-to-ground-right.png",  -- #SKIP IMAGE#
         priority = "extra-high",
         width = 128,
         height = 128,
@@ -88,7 +88,7 @@ data:extend({
     {
       north =
       {
-        filename = "__base__/graphics/entity/pipe-to-ground/visualization.png",
+        filename = "__base__/graphics/entity/pipe-to-ground/visualization.png",  -- #SKIP IMAGE#
         priority = "extra-high",
         x = 64,
         size = 64,
@@ -97,7 +97,7 @@ data:extend({
       },
       south =
       {
-        filename = "__base__/graphics/entity/pipe-to-ground/visualization.png",
+        filename = "__base__/graphics/entity/pipe-to-ground/visualization.png",  -- #SKIP IMAGE#
         priority = "extra-high",
         x = 192,
         size = 64,
@@ -106,7 +106,7 @@ data:extend({
       },
       west =
       {
-        filename = "__base__/graphics/entity/pipe-to-ground/visualization.png",
+        filename = "__base__/graphics/entity/pipe-to-ground/visualization.png",  -- #SKIP IMAGE#
         priority = "extra-high",
         x = 256,
         size = 64,
@@ -115,7 +115,7 @@ data:extend({
       },
       east =
       {
-        filename = "__base__/graphics/entity/pipe-to-ground/visualization.png",
+        filename = "__base__/graphics/entity/pipe-to-ground/visualization.png",  -- #SKIP IMAGE#
         priority = "extra-high",
         x = 128,
         size = 64,
@@ -127,7 +127,7 @@ data:extend({
     {
       north =
       {
-        filename = "__base__/graphics/entity/pipe-to-ground/disabled-visualization.png",
+        filename = "__base__/graphics/entity/pipe-to-ground/disabled-visualization.png",  -- #SKIP IMAGE#
         priority = "extra-high",
         x = 64,
         size = 64,
@@ -136,7 +136,7 @@ data:extend({
       },
       south =
       {
-        filename = "__base__/graphics/entity/pipe-to-ground/disabled-visualization.png",
+        filename = "__base__/graphics/entity/pipe-to-ground/disabled-visualization.png",  -- #SKIP IMAGE#
         priority = "extra-high",
         x = 192,
         size = 64,
@@ -145,7 +145,7 @@ data:extend({
       },
       west =
       {
-        filename = "__base__/graphics/entity/pipe-to-ground/disabled-visualization.png",
+        filename = "__base__/graphics/entity/pipe-to-ground/disabled-visualization.png",  -- #SKIP IMAGE#
         priority = "extra-high",
         x = 256,
         size = 64,
@@ -154,7 +154,7 @@ data:extend({
       },
       east =
       {
-        filename = "__base__/graphics/entity/pipe-to-ground/disabled-visualization.png",
+        filename = "__base__/graphics/entity/pipe-to-ground/disabled-visualization.png",  -- #SKIP IMAGE#
         priority = "extra-high",
         x = 128,
         size = 64,

@@ -1734,7 +1734,6 @@ data.raw.recipe["space-science-pack"].results = {
   }
 
 -- Remove barrel recipes
-util.recipe.remove_barrel_recipe("sp-liquid-nitrogen")
 util.recipe.remove_barrel_recipe("heavy-water")
 util.recipe.remove_barrel_recipe("sp-deuterium")
 

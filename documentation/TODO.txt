@@ -8,7 +8,7 @@ TODO for 0.3.3
   - Remove "sp-recipes-without-technology"
   - Uses for tellurium
     - Add thermocouple (uses tellurium)
-    - Add peltier cell (bismuth and tellurium) use in thermonuclear generator
+    - Add peltier cell (bismuth and tellurium) use in thermonuclear generator and ryogenic plant
     - Add graphite impact shell used for explorers
     - Add laser diode
     - Add hard drive
@@ -60,6 +60,9 @@ TODO for 0.3.4
   - Update cryogenic science 2 branch of tech tree
   - Update utility science 2 branch of tech tree
   - Add biological / agricultural item group
+  - update mining productivity tech
+  - Fix / add casting recipes
+  - Fix productivity tehnologies (see steel plate productivity)
 
 TODO for 0.3.5
   - Update space science 2 branch of tech tree
@@ -269,7 +272,7 @@ Krastorio cleanup
   + remove not needed explosions
 
 Technologies which unlock items allready unlocked by base factorio
-  - "sp-cooling" (see how this can be somewhat close in tree with "fluoroketone-cold" recipe)
+  + "sp-cooling" (see how this can be somewhat close in tree with "fluoroketone-cold" recipe)
   - "sp-advanced-ceramics"
 
 

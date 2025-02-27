@@ -8,6 +8,22 @@ remove_prototypes.remove_one_prototype("recipe", "simple-coal-liquefaction")
 remove_prototypes.remove_one_prototype("recipe", "acid-neutralisation")
 remove_prototypes.remove_one_prototype("recipe", "coal-synthesis")
 
+-- Delete casting recipes
+-- remove_prototypes.remove_one_prototype("recipe", "molten-iron-from-lava")
+-- remove_prototypes.remove_one_prototype("recipe", "copper-iron-from-lava")
+-- remove_prototypes.remove_one_prototype("recipe", "concrete-from-molten-iron")
+-- remove_prototypes.remove_one_prototype("recipe", "casting-low-density-structure")
+-- remove_prototypes.remove_one_prototype("recipe", "molten-iron")
+-- remove_prototypes.remove_one_prototype("recipe", "molten-copper")
+-- remove_prototypes.remove_one_prototype("recipe", "casting-iron")
+-- remove_prototypes.remove_one_prototype("recipe", "casting-steel")
+-- remove_prototypes.remove_one_prototype("recipe", "casting-copper")
+-- remove_prototypes.remove_one_prototype("recipe", "casting-iron-gear-wheel")
+-- remove_prototypes.remove_one_prototype("recipe", "casting-iron-stick")
+-- remove_prototypes.remove_one_prototype("recipe", "casting-pipe")
+-- remove_prototypes.remove_one_prototype("recipe", "casting-pipe-to-ground")
+-- remove_prototypes.remove_one_prototype("recipe", "casting-copper-cable")
+
 --------------------------------------------------------------------------------
 -- Recipe changes for space age factorio items
 -- MARK: Items
@@ -278,6 +294,21 @@ util.recipe.change_recipe_ingredients("foundry",
     {type = "item", name = "sp-plasmacutter", amount = 6},
     {type = "item", name = "engine-unit", amount = 20},
     {type = "item", name = "sp-heavy-gearbox", amount = 12},
+    {type = "item", name = "refined-concrete", amount = 100},
+  },
+  60)
+
+util.recipe.change_recipe_ingredients("cryogenic-plant",
+  {
+    {type = "item", name = "sp-invar", amount = 20},
+    {type = "item", name = "sp-vanadium-steel", amount = 50},
+    {type = "item", name = "sp-niobium-steel", amount = 30},
+    {type = "item", name = "sp-TiAlSn", amount = 30},
+    {type = "item", name = "sp-glass", amount = 20},
+    {type = "item", name = "advanced-circuit", amount = 5},
+    {type = "item", name = "sp-vacuum-pump", amount = 4},
+    {type = "item", name = "sp-cryostat", amount = 6},
+    {type = "item", name = "sp-compressor", amount = 3},
     {type = "item", name = "refined-concrete", amount = 100},
   },
   60)

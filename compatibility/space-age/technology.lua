@@ -77,10 +77,6 @@ data.raw.technology["quality-module"].unit.ingredients = {
   {"chemical-science-pack", 1}
 }
 
-data.raw.technology["cryogenic-plant"].prerequisites = {
-  "heating-tower"
-}
-
 data.raw.technology["lightning-collector"].prerequisites = {
   "sp-electromagnetic-science-pack-2",
 }
@@ -232,10 +228,12 @@ data.raw.technology["foundry"].unit = {
   time = 30
 }
 
+table.insert(data.raw.technology["cryogenic-plant"].effects, {type = "unlock-recipe", recipe = "sp-cryostat"})
 data.raw.technology["cryogenic-plant"].prerequisites = {
   "sp-electromagnetic-science-pack-2",
   "sp-compressor",
-  "heating-tower"
+  "heating-tower",
+  "sp-invar"
 }
 data.raw.technology["cryogenic-plant"].research_trigger = nil
 data.raw.technology["cryogenic-plant"].unit = {

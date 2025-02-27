@@ -2438,38 +2438,6 @@ data:extend({
   },
   {
     type = "technology",
-    name = "sp-cooling",  -- #ForRegEx# - technology
-    icon_size = 256,
-    icon = "__Spaghetorio__/graphics/hr-icons/coolant.png",
-    effects =
-    {
-      {
-        type = "unlock-recipe",
-        recipe = "sp-liquid-nitrogen"
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-cryostat"
-      },
-    },
-    prerequisites = {"utility-science-pack"},
-    unit =
-    {
-      count = 100,
-      ingredients = {
-        {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"sp-material-science-pack-2", 1},
-        {"sp-electronic-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1},
-        {"utility-science-pack", 1},
-        {"production-science-pack", 1}
-      },
-      time = 30
-    },
-  },
-  {
-    type = "technology",
     name = "sp-spark-plug",  -- #ForRegEx# - technology
     icon_size = 256,
     icon = "__Spaghetorio__/graphics/hr-icons/spark-plug.png",
@@ -3845,17 +3813,22 @@ data:extend({
         recipe = "sp-invar"
       },
     },
-    prerequisites = {"utility-science-pack"},
+    prerequisites = {
+      "sp-metallurgic-science-pack-2"
+    },
     unit =
     {
       count = 500,
       ingredients = {
         {"sp-automation-science-pack-2", 1},
         {"sp-logistic-science-pack-2", 1},
+        {"sp-electronic-science-pack-1", 1},
         {"sp-material-science-pack-2", 1},
         {"sp-chemical-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
         {"production-science-pack", 1},
-        {"utility-science-pack", 1}
+        {"sp-metallurgic-science-pack-2", 1},
+        {"electromagnetic-science-pack", 1}
       },
       time = 30
     },
@@ -3893,37 +3866,6 @@ data:extend({
         {"sp-geological-science-pack-1", 1},
         {"metallurgic-science-pack", 1},
         {"electromagnetic-science-pack", 1}
-      },
-      time = 30
-    },
-  },
-    {
-    type = "technology",
-    name = "sp-high-pressure-tank",  -- #ForRegEx# - technology
-    icon_size = 256,
-    icon = "__Spaghetorio__/graphics/hr-icons/high-pressure-tank.png",
-    effects =
-    {
-      {
-        type = "unlock-recipe",
-        recipe = "sp-high-pressure-tank"
-      }
-    },
-    prerequisites = {
-      "sp-kevlar",
-      "sp-aluminum-alloys",
-      "sp-titanium-alloys"
-    },
-    unit =
-    {
-      count = 200,
-      ingredients = {
-        {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1},
-        {"sp-electronic-science-pack-2", 1},
-        {"sp-material-science-pack-2", 1},
-        {"production-science-pack", 1}
       },
       time = 30
     },
@@ -4821,18 +4763,28 @@ data:extend({
         type = "unlock-recipe",
         recipe = "sp-compressor"
       },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-high-pressure-tank"
+      },
     },
-    prerequisites = {"sp-high-pressure-tank"},
+    prerequisites = {
+      "sp-kevlar",
+      "sp-titanium-alloys"
+    },
     unit =
     {
       count = 200,
       ingredients = {
         {"sp-automation-science-pack-2", 1},
         {"sp-logistic-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1},
-        {"sp-electronic-science-pack-2", 1},
+        {"sp-electronic-science-pack-1", 1},
         {"sp-material-science-pack-2", 1},
-        {"production-science-pack", 1}
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"production-science-pack", 1},
+        {"sp-metallurgic-science-pack-2", 1},
+        {"electromagnetic-science-pack", 1}
       },
       time = 30
     },

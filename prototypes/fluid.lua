@@ -588,19 +588,6 @@ data:extend({
   },
   {
     type = "fluid",
-    name = "sp-liquid-nitrogen",  -- #ForRegEx# - fluid
-    default_temperature = 25,
-    heat_capacity = "0.1kJ",
-    base_color = {r=0.0, g=0.05, b=0.2},
-    flow_color = {r=0.0, g=0.05, b=0.2},
-    icon = "__Spaghetorio__/graphics/icons/liquid-nitrogen.png",
-    icon_size = 64,
-    icon_mipmaps = 4,
-    subgroup = "chemical",
-    order = "a[fluid]-f[liquid-nitrogen]"
-  },
-  {
-    type = "fluid",
     name = "sp-epoxy",  -- #ForRegEx# - fluid
     default_temperature = 25,
     heat_capacity = "0.1kJ",

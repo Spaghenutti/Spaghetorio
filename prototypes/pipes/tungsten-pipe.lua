@@ -7,7 +7,7 @@ local hit_effects = require("__base__/prototypes/entity/hit-effects")
 local function make_visualization(i)
   return
   {
-    filename = "__base__/graphics/entity/pipe/visualization.png",
+    filename = "__base__/graphics/entity/pipe/visualization.png",  -- #SKIP IMAGE#
     priority = "extra-high",
     x = i * 64,
     size = 64,
@@ -21,7 +21,7 @@ end
 local function make_disabled_visualization(i)
   return
   {
-    filename = "__base__/graphics/entity/pipe/disabled-visualization.png",
+    filename = "__base__/graphics/entity/pipe/disabled-visualization.png",  -- #SKIP IMAGE#
     priority = "extra-high",
     x = i * 64,
     size = 64,
@@ -36,7 +36,7 @@ pipepictures = function()
   {
     straight_vertical_single =
     {
-      filename = "__Spaghetorio__/graphics/krastorio/entities/steel-pipe/hr-steel-pipe-straight-vertical-single.png",
+      filename = "__Spaghetorio__/graphics/krastorio/entities/steel-pipe/hr-steel-pipe-straight-vertical-single.png",  -- #SKIP IMAGE#
       priority = "extra-high",
       width = 160,
       height = 160,
@@ -44,7 +44,7 @@ pipepictures = function()
     },
     straight_vertical =
     {
-      filename = "__Spaghetorio__/graphics/krastorio/entities/steel-pipe/hr-steel-pipe-straight-vertical.png",
+      filename = "__Spaghetorio__/graphics/krastorio/entities/steel-pipe/hr-steel-pipe-straight-vertical.png",  -- #SKIP IMAGE#
       priority = "extra-high",
       width = 128,
       height = 128,
@@ -52,7 +52,7 @@ pipepictures = function()
     },
     straight_vertical_window =
     {
-      filename = "__Spaghetorio__/graphics/krastorio/entities/steel-pipe/hr-steel-pipe-straight-vertical-window.png",
+      filename = "__Spaghetorio__/graphics/krastorio/entities/steel-pipe/hr-steel-pipe-straight-vertical-window.png",  -- #SKIP IMAGE#
       priority = "extra-high",
       width = 128,
       height = 128,
@@ -60,7 +60,7 @@ pipepictures = function()
     },
     straight_horizontal_window =
     {
-      filename = "__Spaghetorio__/graphics/krastorio/entities/steel-pipe/hr-steel-pipe-straight-horizontal-window.png",
+      filename = "__Spaghetorio__/graphics/krastorio/entities/steel-pipe/hr-steel-pipe-straight-horizontal-window.png",  -- #SKIP IMAGE#
       priority = "extra-high",
       width = 128,
       height = 128,
@@ -68,7 +68,7 @@ pipepictures = function()
     },
     straight_horizontal =
     {
-      filename = "__Spaghetorio__/graphics/krastorio/entities/steel-pipe/hr-steel-pipe-straight-horizontal.png",
+      filename = "__Spaghetorio__/graphics/krastorio/entities/steel-pipe/hr-steel-pipe-straight-horizontal.png",  -- #SKIP IMAGE#
       priority = "extra-high",
       width = 128,
       height = 128,
@@ -76,7 +76,7 @@ pipepictures = function()
     },
     corner_up_right =
     {
-      filename = "__Spaghetorio__/graphics/krastorio/entities/steel-pipe/hr-steel-pipe-corner-up-right.png",
+      filename = "__Spaghetorio__/graphics/krastorio/entities/steel-pipe/hr-steel-pipe-corner-up-right.png",  -- #SKIP IMAGE#
       priority = "extra-high",
       width = 128,
       height = 128,
@@ -84,7 +84,7 @@ pipepictures = function()
     },
     corner_up_left =
     {
-      filename = "__Spaghetorio__/graphics/krastorio/entities/steel-pipe/hr-steel-pipe-corner-up-left.png",
+      filename = "__Spaghetorio__/graphics/krastorio/entities/steel-pipe/hr-steel-pipe-corner-up-left.png",  -- #SKIP IMAGE#
       priority = "extra-high",
       width = 128,
       height = 128,
@@ -92,7 +92,7 @@ pipepictures = function()
     },
     corner_down_right =
     {
-      filename = "__Spaghetorio__/graphics/krastorio/entities/steel-pipe/hr-steel-pipe-corner-down-right.png",
+      filename = "__Spaghetorio__/graphics/krastorio/entities/steel-pipe/hr-steel-pipe-corner-down-right.png",  -- #SKIP IMAGE#
       priority = "extra-high",
       width = 128,
       height = 128,
@@ -100,7 +100,7 @@ pipepictures = function()
     },
     corner_down_left =
     {
-      filename = "__Spaghetorio__/graphics/krastorio/entities/steel-pipe/hr-steel-pipe-corner-down-left.png",
+      filename = "__Spaghetorio__/graphics/krastorio/entities/steel-pipe/hr-steel-pipe-corner-down-left.png",  -- #SKIP IMAGE#
       priority = "extra-high",
       width = 128,
       height = 128,
@@ -108,7 +108,7 @@ pipepictures = function()
     },
     t_up =
     {
-      filename = "__Spaghetorio__/graphics/krastorio/entities/steel-pipe/hr-steel-pipe-t-up.png",
+      filename = "__Spaghetorio__/graphics/krastorio/entities/steel-pipe/hr-steel-pipe-t-up.png",  -- #SKIP IMAGE#
       priority = "extra-high",
       width = 128,
       height = 128,
@@ -116,7 +116,7 @@ pipepictures = function()
     },
     t_down =
     {
-      filename = "__Spaghetorio__/graphics/krastorio/entities/steel-pipe/hr-steel-pipe-t-down.png",
+      filename = "__Spaghetorio__/graphics/krastorio/entities/steel-pipe/hr-steel-pipe-t-down.png",  -- #SKIP IMAGE#
       priority = "extra-high",
       width = 128,
       height = 128,
@@ -124,7 +124,7 @@ pipepictures = function()
     },
     t_right =
     {
-      filename = "__Spaghetorio__/graphics/krastorio/entities/steel-pipe/hr-steel-pipe-t-right.png",
+      filename = "__Spaghetorio__/graphics/krastorio/entities/steel-pipe/hr-steel-pipe-t-right.png",  -- #SKIP IMAGE#
       priority = "extra-high",
       width = 128,
       height = 128,
@@ -132,7 +132,7 @@ pipepictures = function()
     },
     t_left =
     {
-      filename = "__Spaghetorio__/graphics/krastorio/entities/steel-pipe/hr-steel-pipe-t-left.png",
+      filename = "__Spaghetorio__/graphics/krastorio/entities/steel-pipe/hr-steel-pipe-t-left.png",  -- #SKIP IMAGE#
       priority = "extra-high",
       width = 128,
       height = 128,
@@ -140,7 +140,7 @@ pipepictures = function()
     },
     cross =
     {
-      filename = "__Spaghetorio__/graphics/krastorio/entities/steel-pipe/hr-steel-pipe-cross.png",
+      filename = "__Spaghetorio__/graphics/krastorio/entities/steel-pipe/hr-steel-pipe-cross.png",  -- #SKIP IMAGE#
       priority = "extra-high",
       width = 128,
       height = 128,
@@ -148,7 +148,7 @@ pipepictures = function()
     },
     ending_up =
     {
-      filename = "__Spaghetorio__/graphics/krastorio/entities/steel-pipe/hr-steel-pipe-ending-up.png",
+      filename = "__Spaghetorio__/graphics/krastorio/entities/steel-pipe/hr-steel-pipe-ending-up.png",  -- #SKIP IMAGE#
       priority = "extra-high",
       width = 128,
       height = 128,
@@ -156,7 +156,7 @@ pipepictures = function()
     },
     ending_down =
     {
-      filename = "__Spaghetorio__/graphics/krastorio/entities/steel-pipe/hr-steel-pipe-ending-down.png",
+      filename = "__Spaghetorio__/graphics/krastorio/entities/steel-pipe/hr-steel-pipe-ending-down.png",  -- #SKIP IMAGE#
       priority = "extra-high",
       width = 128,
       height = 128,
@@ -164,7 +164,7 @@ pipepictures = function()
     },
     ending_right =
     {
-      filename = "__Spaghetorio__/graphics/krastorio/entities/steel-pipe/hr-steel-pipe-ending-right.png",
+      filename = "__Spaghetorio__/graphics/krastorio/entities/steel-pipe/hr-steel-pipe-ending-right.png",  -- #SKIP IMAGE#
       priority = "extra-high",
       width = 128,
       height = 128,
@@ -172,7 +172,7 @@ pipepictures = function()
     },
     ending_left =
     {
-      filename = "__Spaghetorio__/graphics/krastorio/entities/steel-pipe/hr-steel-pipe-ending-left.png",
+      filename = "__Spaghetorio__/graphics/krastorio/entities/steel-pipe/hr-steel-pipe-ending-left.png",  -- #SKIP IMAGE#
       priority = "extra-high",
       width = 128,
       height = 128,
@@ -216,7 +216,7 @@ pipepictures = function()
     ending_left_disabled_visualization = make_disabled_visualization(8),
     horizontal_window_background =
     {
-      filename = "__Spaghetorio__/graphics/krastorio/entities/steel-pipe/hr-steel-pipe-horizontal-window-background.png",
+      filename = "__Spaghetorio__/graphics/krastorio/entities/steel-pipe/hr-steel-pipe-horizontal-window-background.png",  -- #SKIP IMAGE#
       priority = "extra-high",
       width = 128,
       height = 128,
@@ -224,7 +224,7 @@ pipepictures = function()
     },
     vertical_window_background =
     {
-      filename = "__Spaghetorio__/graphics/krastorio/entities/steel-pipe/hr-steel-pipe-vertical-window-background.png",
+      filename = "__Spaghetorio__/graphics/krastorio/entities/steel-pipe/hr-steel-pipe-vertical-window-background.png",  -- #SKIP IMAGE#
       priority = "extra-high",
       width = 128,
       height = 128,
@@ -232,7 +232,7 @@ pipepictures = function()
     },
     fluid_background =
     {
-      filename = "__base__/graphics/entity/pipe/fluid-background.png",
+      filename = "__base__/graphics/entity/pipe/fluid-background.png",  -- #SKIP IMAGE#
       priority = "extra-high",
       width = 64,
       height = 40,
@@ -240,28 +240,28 @@ pipepictures = function()
     },
     low_temperature_flow =
     {
-      filename = "__base__/graphics/entity/pipe/fluid-flow-low-temperature.png",
+      filename = "__base__/graphics/entity/pipe/fluid-flow-low-temperature.png",  -- #SKIP IMAGE#
       priority = "extra-high",
       width = 160,
       height = 18
     },
     middle_temperature_flow =
     {
-      filename = "__base__/graphics/entity/pipe/fluid-flow-medium-temperature.png",
+      filename = "__base__/graphics/entity/pipe/fluid-flow-medium-temperature.png",  -- #SKIP IMAGE#
       priority = "extra-high",
       width = 160,
       height = 18
     },
     high_temperature_flow =
     {
-      filename = "__base__/graphics/entity/pipe/fluid-flow-high-temperature.png",
+      filename = "__base__/graphics/entity/pipe/fluid-flow-high-temperature.png",  -- #SKIP IMAGE#
       priority = "extra-high",
       width = 160,
       height = 18
     },
     gas_flow =
     {
-      filename = "__base__/graphics/entity/pipe/steam.png",
+      filename = "__base__/graphics/entity/pipe/steam.png",  -- #SKIP IMAGE#
       priority = "extra-high",
       line_length = 10,
       width = 48,
@@ -276,7 +276,7 @@ data:extend({
   {
     type = "pipe",
     name = "sp-tungsten-pipe",
-    icon = "__base__/graphics/icons/pipe.png",
+    icon = "__base__/graphics/icons/pipe.png",  -- #SKIP IMAGE#
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.1, result = "sp-tungsten-pipe"},
     max_health = 100,

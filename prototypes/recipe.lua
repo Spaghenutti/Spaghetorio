@@ -1609,13 +1609,14 @@ data:extend({
     name = "sp-invar",  -- #ForRegEx# - recipe
     category = "alloy-smelting",
     enabled = false,
-    energy_required = 12,
+    energy_required = 20,
     ingredients = {
-      {type = "item", name = "iron-plate", amount = 3},
-      {type = "item", name = "sp-nickel-ingot", amount = 2}
+      {type = "item", name = "iron-plate", amount = 6},
+      {type = "item", name = "sp-nickel-ingot", amount = 4},
+      {type = "item", name = "sp-magnesium-slab", amount = 1}
     },
     results = {
-      {type = "item", name = "sp-invar", amount = 5}
+      {type = "item", name = "sp-invar", amount = 8}
     }
   },
   {
@@ -5729,6 +5730,7 @@ data:extend({
     name = "sp-beryllium",  -- #ForRegEx# - recipe
     icon = "__Spaghetorio__/graphics/icons/beryllium.png",
     category = "sp-kr-electrolysis",
+    subgroup = "processed-metal",
     enabled = false,
     energy_required = 3,
     ingredients = {
@@ -5745,6 +5747,7 @@ data:extend({
     icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/beryllium.png", 64,
                                          "__Spaghetorio__/graphics/icons/beryllium-oxide.png", 64),
     category = "sp-kr-electrolysis",
+    subgroup = "processed-metal",
     enabled = false,
     energy_required = 5,
     ingredients = {
@@ -6456,7 +6459,8 @@ data:extend({
     ingredients = {
       {type = "item", name = "sp-aluminum-brass", amount = 2},
       {type = "item", name = "sp-TiNb", amount = 1},
-      {type = "item", name = "sp-kevlar", amount = 6}
+      {type = "item", name = "sp-kevlar", amount = 5},
+      {type = "item", name = "carbon-fiber", amount = 5}
     },
     results = {
       {type = "item", name = "sp-high-pressure-tank", amount = 1}
@@ -6771,7 +6775,7 @@ data:extend({
     name = "sp-big-electric-engine-unit",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
-    energy_required = 3.6,
+    energy_required = 5,
     ingredients = {
       {type = "item", name = "copper-cable", amount = 12},
       {type = "item", name = "sp-magnetic-coupling", amount = 1},
@@ -6789,12 +6793,12 @@ data:extend({
     name = "sp-compressor",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
-    energy_required = 3.6,
+    energy_required = 4,
     ingredients = {
       {type = "item", name = "pump", amount = 1},
-      {type = "item", name = "sp-ball-bearing", amount = 4},
       {type = "item", name = "sp-bolts", amount = 2},
-      {type = "item", name = "sp-high-pressure-tank", amount = 2},
+      {type = "item", name = "sp-rubber", amount = 3},
+      {type = "item", name = "sp-high-pressure-tank", amount = 1},
       {type = "item", name = "sp-machined-parts", amount = 6},
     },
     results = {
@@ -7460,8 +7464,7 @@ data:extend({
     ingredients = {
       {type = "item", name = "sp-machined-parts", amount = 5},
       {type = "item", name = "sp-titanium-frame", amount = 1},
-      {type = "item", name = "sp-ceramics", amount = 3},
-      {type = "fluid", name = "sp-liquid-nitrogen", amount = 40}
+      {type = "item", name = "sp-ceramics", amount = 3}
     },
     results = {
       {type = "item", name = "sp-cryostat", amount = 1}
@@ -8777,8 +8780,7 @@ data:extend({
   --     {type = "item", name = "sp-blunagium-bar", amount = 100},
   --     {type = "item", name = "sp-blunagium-foam", amount = 100},
   --     {type = "item", name = "sp-micro-machine", amount = 40},
-  --     {type = "item", name = "superconductor", amount = 60},
-  --     {type = "fluid", name = "sp-liquid-nitrogen", amount = 400},
+  --     {type = "item", name = "superconductor", amount = 60}
   --   },
   --   results = {
   --     {type = "item", name = "sp-blunagium-rocket-silo", amount = 1}
@@ -14328,26 +14330,6 @@ data:extend({
     results = {
       {type = "item", name = "sp-vacuum-tube", amount = 2}
     }
-  },
-  {
-    type = "recipe",
-    name = "sp-liquid-nitrogen",  -- #ForRegEx# - recipe
-    category = "chemistry",
-    enabled = false,
-    energy_required = 1,
-    ingredients = {
-      {type = "fluid", name = "sp-nitrogen", amount = 5}
-    },
-    results = {
-      {type = "fluid", name = "sp-liquid-nitrogen", amount = 5}
-    },
-    crafting_machine_tint = {
-      primary = {r = 1.000, g = 1.000, b = 1.000, a = 1.000},
-      secondary = {r = 0.0, g = 0.3, b = 0.8, a = 1.000},
-      tertiary = {r = 0.0, g = 0.0, b = 0.5, a = 1.000},
-      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
-    },
-    order = "[liquid]-[liquid-nitrogen]"
   },
   -- MARK: Fix Krastorio recipes
   {
