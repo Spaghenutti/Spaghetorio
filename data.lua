@@ -95,6 +95,7 @@ require("prototypes.utility-constants")
 
 -- MARK: Compatibility
 -- EverythingOnNauvis
+require("compatibility.EverythingOnNauvis.entity")
 require("compatibility.EverythingOnNauvis.order")
 require("compatibility.EverythingOnNauvis.resource")
 

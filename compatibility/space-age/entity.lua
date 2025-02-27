@@ -59,6 +59,17 @@ data.raw.recipe["ice-melting"].subgroup = "fluid"
 data.raw.item["carbon"].fuel_value = "4MJ"
 
 -- MARK: stack size
+data.raw.item["calcite"].stack_size = 200
+data.raw.item["tungsten-ore"].stack_size = 200
+
+data.raw.item["carbon"].stack_size = 100
+
+data.raw.item["tree-seed"].stack_size = 1000
+
+data.raw.item["agricultural-science-pack"].stack_size = 50
+data.raw.item["cryogenic-science-pack"].stack_size = 50
+data.raw.item["promethium-science-pack"].stack_size = 50
+
 data.raw.item["crusher"].stack_size = 50
 
 -- MARK: Equipment changes

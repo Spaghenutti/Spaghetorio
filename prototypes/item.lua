@@ -834,7 +834,7 @@ data:extend({
     },
     subgroup = "processed-resource",
     order = "[zinc-sulfate]",
-    stack_size = 200
+    stack_size = 100
   },
   {
     type = "item",
@@ -844,7 +844,7 @@ data:extend({
     icon_mipmaps = 4,
     subgroup = "processed-resource",
     order = "[salt]",
-    stack_size = 200
+    stack_size = 100
   },
   {
     type = "item",
@@ -860,7 +860,7 @@ data:extend({
     },
     subgroup = "processed-resource",
     order = "[leadstone]",
-    stack_size = 200
+    stack_size = 100
   },
   {
     type = "item",
@@ -870,7 +870,7 @@ data:extend({
     icon_mipmaps = 4,
     subgroup = "processed-resource",
     order = "[zircon]",
-    stack_size = 200
+    stack_size = 100
   },
   {
     type = "item",
@@ -880,7 +880,7 @@ data:extend({
     icon_mipmaps = 4,
     subgroup = "processed-resource",
     order = "[cobalt-sulfate]",
-    stack_size = 200
+    stack_size = 100
   },
   {
     type = "item",
@@ -905,7 +905,7 @@ data:extend({
     },
     subgroup = "processed-resource",
     order = "[sand]",
-    stack_size = 100
+    stack_size = 200
   },
   {
     type = "item",
@@ -915,7 +915,7 @@ data:extend({
     scale = 0.5,
     subgroup = "processed-resource",
     order = "[calcium-carbonate]",
-    stack_size = 200
+    stack_size = 100
   },
   {
     type = "item",
@@ -925,7 +925,7 @@ data:extend({
     scale = 0.5,
     subgroup = "processed-resource",
     order = "[magnesium-chloride]",
-    stack_size = 200
+    stack_size = 100
   },
   {
     type = "item",
@@ -935,7 +935,7 @@ data:extend({
     scale = 0.5,
     subgroup = "processed-resource",
     order = "silicon-[silica]",
-    stack_size = 200
+    stack_size = 100
   },
   {
     type = "item",
@@ -945,7 +945,7 @@ data:extend({
     scale = 0.5,
     subgroup = "processed-resource",
     order = "[titanium-chloride]",
-    stack_size = 200
+    stack_size = 100
   },
   {
     type = "item",
@@ -965,7 +965,7 @@ data:extend({
     scale = 0.5,
     subgroup = "processed-resource",
     order = "[ammonium-paratungstate]",
-    stack_size = 200
+    stack_size = 100
   },
   {
     type = "item",
@@ -985,7 +985,7 @@ data:extend({
     scale = 0.5,
     subgroup = "processed-resource",
     order = "[lithium-oxide]",
-    stack_size = 200
+    stack_size = 50
   },
   {
     type = "item",
@@ -999,7 +999,7 @@ data:extend({
     },
     subgroup = "processed-resource",
     order = "[lithium-chloride]",
-    stack_size = 200
+    stack_size = 50
   },
   {
     type = "item",
@@ -1009,7 +1009,7 @@ data:extend({
     icon_mipmaps = 4,
     subgroup = "processed-resource",
     order = "[tellurium-hydroxide]",
-    stack_size = 200
+    stack_size = 50
   },
   {
     type = "item",
@@ -1019,7 +1019,7 @@ data:extend({
     scale = 0.5,
     subgroup = "processed-resource",
     order = "[barium-sulfamate]",
-    stack_size = 200
+    stack_size = 50
   },
   {
     type = "item",
@@ -1029,7 +1029,7 @@ data:extend({
     scale = 0.5,
     subgroup = "processed-resource",
     order = "[barium-sulfide]",
-    stack_size = 200
+    stack_size = 50
   },
   {
     type = "item",
@@ -1039,7 +1039,7 @@ data:extend({
     scale = 0.5,
     subgroup = "processed-resource",
     order = "[antimony-oxide]",
-    stack_size = 200
+    stack_size = 50
   },
   {
     type = "item",
@@ -1049,7 +1049,7 @@ data:extend({
     scale = 0.5,
     subgroup = "processed-resource",
     order = "[sodium-borate]",
-    stack_size = 200
+    stack_size = 50
   },
   {
     type = "item",
@@ -1059,7 +1059,7 @@ data:extend({
     scale = 0.5,
     subgroup = "processed-resource",
     order = "[cobalt-oxide]",
-    stack_size = 200
+    stack_size = 50
   },
   {
     type = "item",
@@ -1069,7 +1069,7 @@ data:extend({
     scale = 0.5,
     subgroup = "processed-resource",
     order = "[arsenic-trioxide]",
-    stack_size = 200
+    stack_size = 50
   },
   {
     type = "item",
@@ -1079,7 +1079,7 @@ data:extend({
     scale = 0.5,
     subgroup = "processed-resource",
     order = "[molybdenum-trioxide]",
-    stack_size = 200
+    stack_size = 50
   },
   {
     type = "item",
@@ -1089,7 +1089,7 @@ data:extend({
     scale = 0.5,
     subgroup = "processed-resource",
     order = "[manganese-dioxide]",
-    stack_size = 200
+    stack_size = 100
   },
   {
     type = "item",
@@ -1106,7 +1106,7 @@ data:extend({
     fuel_category = "chemical",
     fuel_value = "6MJ",
     order = "[coke]",
-    stack_size = 100
+    stack_size = 200
   },
   {
     type = "item",
@@ -1122,7 +1122,7 @@ data:extend({
     },
     subgroup = "processed-resource",
     order = "silicon-[quartz]",
-    stack_size = 100
+    stack_size = 200
   },
   {
     type = "item",
@@ -1132,7 +1132,7 @@ data:extend({
     scale = 0.5,
     subgroup = "processed-resource",
     order = "[vanadium-pentoxide]",
-    stack_size = 200
+    stack_size = 50
   },
   {
     type = "item",
@@ -1142,7 +1142,7 @@ data:extend({
     scale = 0.5,
     subgroup = "processed-resource",
     order = "[ammonium-metavanadate]",
-    stack_size = 200
+    stack_size = 50
   },
   {
     type = "item",
@@ -1152,7 +1152,7 @@ data:extend({
     scale = 0.5,
     subgroup = "processed-resource",
     order = "[potassium-chloride]",
-    stack_size = 200
+    stack_size = 100
   },
   {
     type = "item",
@@ -1162,7 +1162,7 @@ data:extend({
     scale = 0.5,
     subgroup = "processed-resource",
     order = "[ethylene-vinyl-acetate]",
-    stack_size = 200
+    stack_size = 100
   },
   {
     type = "item",
@@ -1172,7 +1172,7 @@ data:extend({
     scale = 0.5,
     subgroup = "processed-resource",
     order = "[gallium-chloride]",
-    stack_size = 200
+    stack_size = 50
   },
   {
     type = "item",
@@ -1182,7 +1182,7 @@ data:extend({
     scale = 0.5,
     subgroup = "processed-resource",
     order = "[indium-sulfate]",
-    stack_size = 200
+    stack_size = 50
   },
   {
     type = "item",
@@ -1192,7 +1192,7 @@ data:extend({
     scale = 0.5,
     subgroup = "processed-resource",
     order = "[zinc-oxide]",
-    stack_size = 200
+    stack_size = 100
   },
   {
     type = "item",
@@ -1202,7 +1202,7 @@ data:extend({
     scale = 0.5,
     subgroup = "processed-resource",
     order = "[selenious-acid]",
-    stack_size = 200
+    stack_size = 50
   },
   {
     type = "item",
@@ -1212,7 +1212,7 @@ data:extend({
     scale = 0.5,
     subgroup = "processed-resource",
     order = "[selenium-dioxide]",
-    stack_size = 200
+    stack_size = 50
   },
   {
     type = "item",
@@ -1284,7 +1284,7 @@ data:extend({
     },
     subgroup = "processed-resource",
     order = "z-alien[imersite-powder]",
-    stack_size = 200,
+    stack_size = 100,
   },
   ------------------------------------------------------------------------------
   -- MARK: processed-non-metal
@@ -1312,7 +1312,7 @@ data:extend({
     scale = 0.5,
     subgroup = "processed-non-metal",
     order = "[iodine]",
-    stack_size = 200
+    stack_size = 100
   },
   {
     type = "item",
@@ -1322,7 +1322,7 @@ data:extend({
     scale = 0.5,
     subgroup = "processed-non-metal",
     order = "[phosphorus]",
-    stack_size = 200
+    stack_size = 100
   },
   ------------------------------------------------------------------------------
   -- MARK: processed-metal
@@ -1335,7 +1335,7 @@ data:extend({
     scale = 0.5,
     subgroup = "processed-metal",
     order = "[sodium]",
-    stack_size = 200
+    stack_size = 100
   },
   {
     type = "item",
@@ -1435,7 +1435,7 @@ data:extend({
     scale = 0.5,
     subgroup = "processed-metal",
     order = "[neodymium]",
-    stack_size = 200
+    stack_size = 100
   },
   {
     type = "item",
@@ -1445,7 +1445,7 @@ data:extend({
     scale = 0.5,
     subgroup = "processed-metal",
     order = "[niobium-powder]",
-    stack_size = 200
+    stack_size = 100
   },
   {
     type = "item",
@@ -1461,7 +1461,7 @@ data:extend({
     },
     subgroup = "processed-metal",
     order = "[tellurium]",
-    stack_size = 200
+    stack_size = 100
   },
   {
     type = "item",
@@ -1471,7 +1471,7 @@ data:extend({
     scale = 0.5,
     subgroup = "processed-metal",
     order = "[cadmium]",
-    stack_size = 200
+    stack_size = 100
   },
   {
     type = "item",
@@ -1481,7 +1481,7 @@ data:extend({
     scale = 0.5,
     subgroup = "processed-metal",
     order = "[gallium]",
-    stack_size = 200
+    stack_size = 100
   },
   ------------------------------------------------------------------------------
   -- MARK: radioactive-resource
@@ -1500,7 +1500,7 @@ data:extend({
     },
     subgroup = "radioactive-resource",
     order = "z-nuclear-3-[plutonium-239]",
-    stack_size = 50
+    stack_size = 20
   },
   {
     type = "item",
@@ -1516,7 +1516,7 @@ data:extend({
     },
     subgroup = "radioactive-resource",
     order = "z-nuclear-3-[plutonium-240]",
-    stack_size = 50
+    stack_size = 20
   },
   ------------------------------------------------------------------------------
   -- MARK: raw-material
@@ -1669,7 +1669,7 @@ data:extend({
     scale = 0.5,
     subgroup = "raw-material",
     order = "ingot-billet-[cobalt-billet]",
-    stack_size = 200
+    stack_size = 100
   },
   {
     type = "item",
@@ -1767,7 +1767,7 @@ data:extend({
     scale = 0.5,
     subgroup = "raw-material",
     order = "pillet-[boron-pillet]",
-    stack_size = 200
+    stack_size = 100
   },
   {
     type = "item",
@@ -1777,7 +1777,7 @@ data:extend({
     scale = 0.5,
     subgroup = "raw-material",
     order = "pillet-[arsen-pillet]",
-    stack_size = 200
+    stack_size = 100
   },
   {
     type = "item",
@@ -1787,7 +1787,7 @@ data:extend({
     scale = 0.5,
     subgroup = "raw-material",
     order = "pillet-[molybdenum-pillet]",
-    stack_size = 200
+    stack_size = 100
   },
   {
     type = "item",
@@ -1797,7 +1797,7 @@ data:extend({
     scale = 0.5,
     subgroup = "raw-material",
     order = "pillet-[selenium-pillet]",
-    stack_size = 200
+    stack_size = 100
   },
   {
     type = "item",
@@ -1807,7 +1807,7 @@ data:extend({
     scale = 0.5,
     subgroup = "raw-material",
     order = "ingot-a-[manganese-ingot]",
-    stack_size = 200
+    stack_size = 100
   },
   {
     type = "item",
@@ -1817,7 +1817,7 @@ data:extend({
     scale = 0.5,
     subgroup = "raw-material",
     order = "pillet-[sp-antimony]",
-    stack_size = 200
+    stack_size = 100
   },
   {
     type = "item",
@@ -1827,7 +1827,7 @@ data:extend({
     scale = 0.5,
     subgroup = "raw-material",
     order = "ingot-a-[indium-ingot]",
-    stack_size = 200
+    stack_size = 100
   },
   ------------------------------------------------------------------------------
   -- MARK: alloy --
@@ -2133,7 +2133,7 @@ data:extend({
     scale = 0.5,
     subgroup = "advanced-raw-material",
     order = "carbon-[carbon-nanotubes]",
-    stack_size = 100
+    stack_size = 50
   },
   {
     type = "item",
@@ -2143,7 +2143,7 @@ data:extend({
     scale = 0.5,
     subgroup = "advanced-raw-material",
     order = "carbon-[graphene]",
-    stack_size = 100
+    stack_size = 50
   },
   {
     type = "item",
@@ -2163,7 +2163,7 @@ data:extend({
     scale = 0.5,
     subgroup = "advanced-raw-material",
     order = "[boron-phosphide]",
-    stack_size = 100
+    stack_size = 50
   },
   ------------------------------------------------------------------------------
   -- MARK: alien-material
@@ -2651,7 +2651,7 @@ data:extend({
     scale = 0.5,
     subgroup = "alien-compound",
     order = "ingot-[charged-slab]",
-    stack_size = 100
+    stack_size = 50
   },
   {
     type = "item",
@@ -2661,7 +2661,7 @@ data:extend({
     scale = 0.5,
     subgroup = "alien-compound",
     order = "ingot-[hot-stone]",
-    stack_size = 100
+    stack_size = 50
   },
   {
     type = "item",
@@ -2778,7 +2778,7 @@ data:extend({
     scale = 0.5,
     subgroup = "mechanical-component",
     order = "other-1-[spring]",
-    stack_size = 200
+    stack_size = 400
   },
   {
     type = "item",
@@ -2823,7 +2823,7 @@ data:extend({
     },
     subgroup = "mechanical-component",
     order = "other-[bolts]",
-    stack_size = 200
+    stack_size = 400
   },
   {
     type = "item",
@@ -2871,7 +2871,7 @@ data:extend({
     scale = 0.5,
     subgroup = "mechanical-component",
     order = "frame-4-[micro-frame]",
-    stack_size = 100
+    stack_size = 50
   },
   {
     type = "item",
@@ -2891,7 +2891,7 @@ data:extend({
     scale = 0.5,
     subgroup = "mechanical-component",
     order = "z-magnet-[neodymium-magnet]",
-    stack_size = 100
+    stack_size = 50
   },
   {
     type = "item",
@@ -2917,7 +2917,7 @@ data:extend({
     icon_mipmaps = 4,
     subgroup = "mechanical-component",
     order = "ceramic-[composites]",
-    stack_size = 50
+    stack_size = 100
   },
   {
     type = "item",
@@ -2947,7 +2947,7 @@ data:extend({
     scale = 0.5,
     subgroup = "mechanical-component",
     order = "other-z-[seal]",
-    stack_size = 100
+    stack_size = 200
   },
   {
     type = "item",
@@ -2987,6 +2987,36 @@ data:extend({
     icon_mipmaps = 4,
     subgroup = "mechanical-component",
     order = "ceramic-[heat-resistant-tile]",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "sp-solder",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/solder.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "mechanical-component",
+    order = "cable-[solder]",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "sp-silver-solder",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/silver-solder.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "mechanical-component",
+    order = "cable-[silver-solder]",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "sp-insulated-wire",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/insulated-wire.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "mechanical-component",
+    order = "cable-[insulated-wire]",
     stack_size = 100
   },
   ------------------------------------------------------------------------------
@@ -3033,43 +3063,13 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-solder",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/icons/solder.png",
-    icon_size = 64,
-    scale = 0.5,
-    subgroup = "mechanical-component",
-    order = "cable-[solder]",
-    stack_size = 100
-  },
-  {
-    type = "item",
-    name = "sp-silver-solder",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/icons/silver-solder.png",
-    icon_size = 64,
-    scale = 0.5,
-    subgroup = "mechanical-component",
-    order = "cable-[silver-solder]",
-    stack_size = 100
-  },
-  {
-    type = "item",
-    name = "sp-insulated-wire",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/icons/insulated-wire.png",
-    icon_size = 64,
-    scale = 0.5,
-    subgroup = "mechanical-component",
-    order = "cable-[insulated-wire]",
-    stack_size = 100
-  },
-  {
-    type = "item",
     name = "sp-resistor",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/resistor.png",
     icon_size = 64,
     scale = 0.5,
     subgroup = "electronic-optical-component",
     order = "basic-[sp-resistor]",
-    stack_size = 100
+    stack_size = 200
   },
   {
     type = "item",
@@ -3079,7 +3079,7 @@ data:extend({
     scale = 0.5,
     subgroup = "electronic-optical-component",
     order = "basic-[capacitor]",
-    stack_size = 100
+    stack_size = 200
   },
   {
     type = "item",
@@ -3089,7 +3089,7 @@ data:extend({
     scale = 0.5,
     subgroup = "electronic-optical-component",
     order = "basic-[diode]",
-    stack_size = 100
+    stack_size = 200
   },
   {
     type = "item",
@@ -3099,7 +3099,7 @@ data:extend({
     scale = 0.5,
     subgroup = "electronic-optical-component",
     order = "basic-[transistor]",
-    stack_size = 100
+    stack_size = 200
   },
   {
     type = "item",
@@ -3109,7 +3109,7 @@ data:extend({
     scale = 0.5,
     subgroup = "electronic-optical-component",
     order = "basic-[light-emitting-diode]",
-    stack_size = 100
+    stack_size = 200
   },
   {
     type = "item",
@@ -3119,7 +3119,7 @@ data:extend({
     scale = 0.5,
     subgroup = "electronic-optical-component",
     order = "basic-[coil]",
-    stack_size = 100
+    stack_size = 200
   },
   {
     type = "item",
@@ -3229,7 +3229,7 @@ data:extend({
     scale = 0.5,
     subgroup = "electronic-optical-component",
     order = "semiconductor-b[antenna-chip]",
-    stack_size = 100
+    stack_size = 50
   },
   {
     type = "item",
@@ -3239,7 +3239,7 @@ data:extend({
     scale = 0.5,
     subgroup = "electronic-optical-component",
     order = "semiconductor-b[processor]",
-    stack_size = 100
+    stack_size = 50
   },
   {
     type = "item",
@@ -3249,7 +3249,7 @@ data:extend({
     scale = 0.5,
     subgroup = "electronic-optical-component",
     order = "semiconductor-b[cmos]",
-    stack_size = 100
+    stack_size = 50
   },
   {
     type = "item",
@@ -3259,7 +3259,7 @@ data:extend({
     scale = 0.5,
     subgroup = "electronic-optical-component",
     order = "semiconductor-c[piezoelectric-sensor]",
-    stack_size = 100
+    stack_size = 50
   },
   {
     type = "item",
@@ -3279,7 +3279,7 @@ data:extend({
     scale = 0.5,
     subgroup = "electronic-optical-component",
     order = "z-[electrode]",
-    stack_size = 100
+    stack_size = 50
   },
   {
     type = "item",
@@ -3289,7 +3289,7 @@ data:extend({
     scale = 0.5,
     subgroup = "electronic-optical-component",
     order = "optics-z[sensor]",
-    stack_size = 100
+    stack_size = 50
   },
   {
     type = "item",
@@ -3299,7 +3299,7 @@ data:extend({
     scale = 0.5,
     subgroup = "electronic-optical-component",
     order = "f-aa[basic-circuit-board]",
-    stack_size = 100
+    stack_size = 200
   },
   {
     type = "item",
@@ -3309,7 +3309,7 @@ data:extend({
     scale = 0.5,
     subgroup = "electronic-optical-component",
     order = "gz[advanced-processing-unit]",
-    stack_size = 100
+    stack_size = 50
   },
   {
     type = "item",
@@ -3329,7 +3329,7 @@ data:extend({
     scale = 0.5,
     subgroup = "electronic-optical-component",
     order = "gz[lithium-sulfur-battery]",
-    stack_size = 100
+    stack_size = 50
   },
   ------------------------------------------------------------------------------
   -- MARK: intermediate-products
@@ -3352,7 +3352,7 @@ data:extend({
     scale = 0.5,
     subgroup = "intermediate-product",
     order = "[diamond-saw]",
-    stack_size = 100
+    stack_size = 50
   },
   {
     type = "item",
@@ -3372,7 +3372,7 @@ data:extend({
     scale = 0.5,
     subgroup = "intermediate-product",
     order = "bearing-[heavy-bearing]",
-    stack_size = 100
+    stack_size = 50
   },
   {
     type = "item",
@@ -3382,7 +3382,7 @@ data:extend({
     icon_mipmaps = 4,
     subgroup = "intermediate-product",
     order = "gearbox-[gearbox]",
-    stack_size = 50
+    stack_size = 500
   },
   {
     type = "item",
@@ -3432,7 +3432,7 @@ data:extend({
     icon_mipmaps = 4,
     subgroup = "intermediate-product",
     order = "electricmagnetic-coil-[electromagnet]",
-    stack_size = 50
+    stack_size = 100
   },
   {
     type = "item",
@@ -3632,7 +3632,7 @@ data:extend({
     scale = 0.5,
     subgroup = "intermediate-product",
     order = "electricmagnetic-[servo-motor]",
-    stack_size = 100
+    stack_size = 50
   },
   {
     type = "item",
@@ -3642,7 +3642,7 @@ data:extend({
     scale = 0.5,
     subgroup = "intermediate-product",
     order = "electricmagnetic-[micro-machine]",
-    stack_size = 100
+    stack_size = 50
   },
   {
     type = "item",
@@ -3745,7 +3745,7 @@ data:extend({
     scale = 0.5,
     subgroup = "advanced-intermediate-product",
     order = "[drillhead]",
-    stack_size = 50
+    stack_size = 20
   },
   {
     type = "item",
@@ -3765,7 +3765,7 @@ data:extend({
     icon_mipmaps = 4,
     subgroup = "advanced-intermediate-product",
     order = "[turbine-rotor]",
-    stack_size = 50
+    stack_size = 20
   },
   {
     type = "item",
@@ -3775,7 +3775,7 @@ data:extend({
     icon_mipmaps = 4,
     subgroup = "advanced-intermediate-product",
     order = "[turbine-stator]",
-    stack_size = 50
+    stack_size = 20
   },
   {
     type = "item",
@@ -3785,7 +3785,7 @@ data:extend({
     icon_mipmaps = 4,
     subgroup = "advanced-intermediate-product",
     order = "[turbopump]",
-    stack_size = 50
+    stack_size = 20
   },
   {
     type = "item",
@@ -3795,7 +3795,7 @@ data:extend({
     icon_mipmaps = 4,
     subgroup = "advanced-intermediate-product",
     order = "[nozzle]",
-    stack_size = 50
+    stack_size = 20
   },
   {
     type = "item",
@@ -3815,7 +3815,7 @@ data:extend({
     icon_mipmaps = 4,
     subgroup = "advanced-intermediate-product",
     order = "[combustion-chamber]",
-    stack_size = 50
+    stack_size = 20
   },
   {
     type = "item",
@@ -3825,7 +3825,7 @@ data:extend({
     icon_mipmaps = 4,
     subgroup = "advanced-intermediate-product",
     order = "[rocket-engine]",
-    stack_size = 50
+    stack_size = 20
   },
   {
     type = "item",
@@ -3845,7 +3845,7 @@ data:extend({
     icon_mipmaps = 4,
     subgroup = "advanced-intermediate-product",
     order = "[ion-thruster]",
-    stack_size = 50
+    stack_size = 20
   },
   {
     type = "item",
@@ -3895,7 +3895,7 @@ data:extend({
     scale = 0.5,
     subgroup = "advanced-intermediate-product",
     order = "control-unit-[variable-frequenzy-drive]",
-    stack_size = 100
+    stack_size = 50
   },
   {
     type = "item",
@@ -3992,17 +3992,7 @@ data:extend({
     scale = 0.5,
     subgroup = "ceramic",
     order = "crystal-[diamond]",
-    stack_size = 100
-  },
-  {
-    type = "item",
-    name = "sp-diamond",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/icons/diamond.png",
-    icon_size = 64,
-    scale = 0.5,
-    subgroup = "ceramic",
-    order = "crystal-[diamond]",
-    stack_size = 100
+    stack_size = 50
   },
   {
     type = "item",
@@ -4012,7 +4002,7 @@ data:extend({
     scale = 0.5,
     subgroup = "ceramic",
     order = "crystal-[cadmium-telluride]",
-    stack_size = 100
+    stack_size = 50
   },
   {
     type = "item",
@@ -4022,7 +4012,7 @@ data:extend({
     scale = 0.5,
     subgroup = "ceramic",
     order = "crystal-[copper-indium-gallium-selenium]",
-    stack_size = 100
+    stack_size = 50
   },
   {
     type = "item",
@@ -4032,7 +4022,7 @@ data:extend({
     scale = 0.5,
     subgroup = "ceramic",
     order = "[barium-carbonate]",
-    stack_size = 200
+    stack_size = 50
   },
   {
     type = "item",
@@ -4042,7 +4032,7 @@ data:extend({
     scale = 0.5,
     subgroup = "ceramic",
     order = "[barium-titanate]",
-    stack_size = 100
+    stack_size = 50
   },
   {
     type = "item",
@@ -4052,7 +4042,7 @@ data:extend({
     scale = 0.5,
     subgroup = "ceramic",
     order = "crystal-[monocrystal]",
-    stack_size = 100
+    stack_size = 50
   },
   {
     type = "item",
@@ -4062,7 +4052,7 @@ data:extend({
     scale = 0.5,
     subgroup = "ceramic",
     order = "crystal-[quasicrystal]",
-    stack_size = 100
+    stack_size = 50
   },
   {
     type = "item",
@@ -4072,7 +4062,7 @@ data:extend({
     scale = 0.5,
     subgroup = "ceramic",
     order = "[boron-silicade]",
-    stack_size = 100
+    stack_size = 50
   },
   {
     type = "item",
@@ -4082,7 +4072,7 @@ data:extend({
     scale = 0.5,
     subgroup = "ceramic",
     order = "[lead-molybdate]",
-    stack_size = 100
+    stack_size = 50
   },
   {
     type = "item",
@@ -4098,7 +4088,7 @@ data:extend({
     scale = 0.5,
     subgroup = "ceramic",
     order = "[titanium-nitride]",
-    stack_size = 100
+    stack_size = 50
   },
   {
     type = "item",
@@ -4108,7 +4098,7 @@ data:extend({
     scale = 0.5,
     subgroup = "ceramic",
     order = "[titanium-carbide]",
-    stack_size = 100
+    stack_size = 50
   },
   {
     type = "item",
@@ -4118,7 +4108,7 @@ data:extend({
     scale = 0.5,
     subgroup = "ceramic",
     order = "[silicon-nitride]",
-    stack_size = 200
+    stack_size = 50
   },
   {
     type = "item",
@@ -4128,7 +4118,7 @@ data:extend({
     scale = 0.5,
     subgroup = "ceramic",
     order = "[boron-carbide]",
-    stack_size = 100
+    stack_size = 50
   },
   ------------------------------------------------------------------------------
   -- MARK: chemical-product
@@ -4171,7 +4161,7 @@ data:extend({
     icon_mipmaps = 4,
     subgroup = "chemical-product",
     order = "[polyvinyl-fluoride]",
-    stack_size = 50
+    stack_size = 100
   },
   {
     type = "item",
@@ -4191,7 +4181,7 @@ data:extend({
     scale = 0.5,
     subgroup = "chemical-product",
     order = "[antimony-trichloride]",
-    stack_size = 200
+    stack_size = 100
   },
   {
     type = "item",
@@ -4201,7 +4191,7 @@ data:extend({
     scale = 0.5,
     subgroup = "chemical-product",
     order = "[antimony-triiodide]",
-    stack_size = 200
+    stack_size = 100
   },
   {
     type = "item",
@@ -4211,7 +4201,7 @@ data:extend({
     scale = 0.5,
     subgroup = "chemical-product",
     order = "[arsenic-sulfide]",
-    stack_size = 200
+    stack_size = 100
   },
   {
     type = "item",
@@ -4221,7 +4211,7 @@ data:extend({
     scale = 0.5,
     subgroup = "chemical-product",
     order = "[arsenic-iodide]",
-    stack_size = 200
+    stack_size = 100
   },
   {
     type = "item",
@@ -4251,7 +4241,7 @@ data:extend({
     scale = 0.5,
     subgroup = "chemical-product",
     order = "[vanadyl-sulfate]",
-    stack_size = 200
+    stack_size = 100
   },
   {
     type = "item",
@@ -4261,7 +4251,7 @@ data:extend({
     scale = 0.5,
     subgroup = "chemical-product",
     order = "[potassium-hydroxide]",
-    stack_size = 200
+    stack_size = 100
   },
   {
     type = "item",
@@ -4271,7 +4261,7 @@ data:extend({
     scale = 0.5,
     subgroup = "chemical-product",
     order = "[potassium-cyanide]",
-    stack_size = 200
+    stack_size = 100
   },
   ------------------------------------------------------------------------------
   -- MARK: alien-product
@@ -4326,7 +4316,7 @@ data:extend({
     scale = 0.5,
     subgroup = "alien-product",
     order = "r-[flux-capacitor]",
-    stack_size = 10
+    stack_size = 20
   },
   {
     type = "item",
@@ -4346,7 +4336,7 @@ data:extend({
     scale = 0.5,
     subgroup = "alien-product",
     order = "y-[plasma-core]",
-    stack_size = 10
+    stack_size = 20
   },
   {
     type = "item",
@@ -4360,7 +4350,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-matter-stabilizer",
+    name = "sp-matter-stabilizer",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/krastorio/icons/items/matter-stabilizer.png",
     icon_size = 64,
     icon_mipmaps = 4,
@@ -4370,7 +4360,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-charged-matter-stabilizer",
+    name = "sp-charged-matter-stabilizer",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/krastorio/icons/items/charged-matter-stabilizer.png",
     icon_size = 64,
     icon_mipmaps = 4,
@@ -4398,17 +4388,17 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-matter-cube",
+    name = "sp-matter-cube",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/krastorio/icons/items/matter-cube.png",
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "alien-product",
     order = "z-4-[matter-cube]",
-    stack_size = 200,
+    stack_size = 100,
   },
   {
     type = "item",
-    name = "sp-energy-control-unit",
+    name = "sp-energy-control-unit",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/krastorio/icons/items/energy-control-unit.png",
     icon_size = 64,
     icon_mipmaps = 4,
@@ -4432,7 +4422,7 @@ data:extend({
     },
     subgroup = "alien-product",
     order = "z-3-[energy-control-unit]",
-    stack_size = 100,
+    stack_size = 50,
   },
   {
     type = "item",
@@ -4462,7 +4452,7 @@ data:extend({
     scale = 0.5,
     subgroup = "alien-product",
     order = "g-[biochip]",
-    stack_size = 100
+    stack_size = 50
   },
   {
     type = "item",
@@ -4543,7 +4533,7 @@ data:extend({
     scale = 0.5,
     subgroup = "intermediate-alien-product",
     order = "blunagium-3-[gravitational-wave-bridge]",
-    stack_size = 100
+    stack_size = 50
   },
   {
     type = "item",
@@ -4553,7 +4543,7 @@ data:extend({
     scale = 0.5,
     subgroup = "intermediate-alien-product",
     order = "blunagium-2-[gravitational-wave-interferometer]",
-    stack_size = 200
+    stack_size = 50
   },
   {
     type = "item",
@@ -4563,7 +4553,7 @@ data:extend({
     scale = 0.5,
     subgroup = "intermediate-alien-product",
     order = "blunagium-2-[gravitational-wave-splitter]",
-    stack_size = 100
+    stack_size = 50
   },
   {
     type = "item",
@@ -4573,7 +4563,7 @@ data:extend({
     scale = 0.5,
     subgroup = "intermediate-alien-product",
     order = "blunagium-2-[blunagium-solenoid]",
-    stack_size = 100
+    stack_size = 50
   },
   {
     type = "item",
@@ -4583,7 +4573,7 @@ data:extend({
     scale = 0.5,
     subgroup = "intermediate-alien-product",
     order = "blunagium-1-[boson-blossom]",
-    stack_size = 100
+    stack_size = 50
   },
   {
     type = "item",
@@ -4593,7 +4583,7 @@ data:extend({
     scale = 0.5,
     subgroup = "intermediate-alien-product",
     order = "grobgnum-2-[grobgnum-optics]",
-    stack_size = 100
+    stack_size = 50
   },
   {
     type = "item",
@@ -4603,7 +4593,7 @@ data:extend({
     scale = 0.5,
     subgroup = "intermediate-alien-product",
     order = "grobgnum-1-[bio-capacitor]",
-    stack_size = 100
+    stack_size = 50
   },
   {
     type = "item",
@@ -4613,7 +4603,7 @@ data:extend({
     scale = 0.5,
     subgroup = "intermediate-alien-product",
     order = "grobgnum-1-[neuropulse-module]",
-    stack_size = 100
+    stack_size = 50
   },
   {
     type = "item",
@@ -4623,7 +4613,7 @@ data:extend({
     scale = 0.5,
     subgroup = "intermediate-alien-product",
     order = "grobgnum-1-[neural-fusion-card]",
-    stack_size = 100
+    stack_size = 50
   },
   {
     type = "item",
@@ -4633,7 +4623,7 @@ data:extend({
     scale = 0.5,
     subgroup = "intermediate-alien-product",
     order = "grobgnum-1-[synaptic-core-chip]",
-    stack_size = 100
+    stack_size = 50
   },
   {
     type = "item",
@@ -4643,7 +4633,7 @@ data:extend({
     scale = 0.5,
     subgroup = "intermediate-alien-product",
     order = "imersite-2-[alpha-wave-tray-array]",
-    stack_size = 50
+    stack_size = 20
   },
   {
     type = "item",
@@ -4653,7 +4643,7 @@ data:extend({
     scale = 0.5,
     subgroup = "intermediate-alien-product",
     order = "imersite-1-[radiation-channeler]",
-    stack_size = 100
+    stack_size = 50
   },
   {
     type = "item",
@@ -4663,7 +4653,7 @@ data:extend({
     scale = 0.5,
     subgroup = "intermediate-alien-product",
     order = "imersite-2-[ultra-violet-processor]",
-    stack_size = 100
+    stack_size = 50
   },
   {
     type = "item",
@@ -4683,7 +4673,7 @@ data:extend({
     scale = 0.5,
     subgroup = "intermediate-alien-product",
     order = "rukite-1-[graphene-chip]",
-    stack_size = 100
+    stack_size = 50
   },
   {
     type = "item",
@@ -4693,7 +4683,7 @@ data:extend({
     scale = 0.5,
     subgroup = "intermediate-alien-product",
     order = "rukite-1-[holo-grip-controller]",
-    stack_size = 100
+    stack_size = 50
   },
   {
     type = "item",
@@ -4703,7 +4693,7 @@ data:extend({
     scale = 0.5,
     subgroup = "intermediate-alien-product",
     order = "yemnuth-2-[neutrino-stream-source]",
-    stack_size = 2000
+    stack_size = 1000
   },
   {
     type = "item",
@@ -4713,7 +4703,7 @@ data:extend({
     scale = 0.5,
     subgroup = "intermediate-alien-product",
     order = "yemnuth-1-[collapsed-orbitals]",
-    stack_size = 2000
+    stack_size = 1000
   },
   {
     type = "item",
@@ -4723,7 +4713,7 @@ data:extend({
     scale = 0.5,
     subgroup = "intermediate-alien-product",
     order = "yemnuth-1-[entangled-leptons]",
-    stack_size = 2000
+    stack_size = 1000
   },
   {
     type = "item",
@@ -4733,7 +4723,7 @@ data:extend({
     scale = 0.5,
     subgroup = "intermediate-alien-product",
     order = "yemnuth-1-[gluon-orb]",
-    stack_size = 2000
+    stack_size = 1000
   },
   {
     type = "item",
@@ -4743,7 +4733,7 @@ data:extend({
     scale = 0.5,
     subgroup = "intermediate-alien-product",
     order = "yemnuth-3-[quantum-tube]",
-    stack_size = 100
+    stack_size = 50
   },
   {
     type = "item",
@@ -4753,7 +4743,7 @@ data:extend({
     scale = 0.5,
     subgroup = "intermediate-alien-product",
     order = "yemnuth-2-[orbital-cell]",
-    stack_size = 100
+    stack_size = 50
   },
   {
     type = "item",
@@ -4763,7 +4753,7 @@ data:extend({
     scale = 0.5,
     subgroup = "intermediate-alien-product",
     order = "yemnuth-1-[quark-sphere]",
-    stack_size = 2000
+    stack_size = 1000
   },
   {
     type = "item",
@@ -4773,7 +4763,7 @@ data:extend({
     scale = 0.5,
     subgroup = "intermediate-alien-product",
     order = "yemnuth-3-[femto-navigator]",
-    stack_size = 2000
+    stack_size = 1000
   },
   {
     type = "item",
@@ -4793,7 +4783,7 @@ data:extend({
     scale = 0.5,
     subgroup = "intermediate-alien-product",
     order = "yemnuth-3-[quantized-compute-unit]",
-    stack_size = 100
+    stack_size = 50
   },
   {
     type = "item",
@@ -4803,7 +4793,7 @@ data:extend({
     scale = 0.5,
     subgroup = "intermediate-alien-product",
     order = "yemnuth-3-[quantized-orbital-flower]",
-    stack_size = 100
+    stack_size = 50
   },
   {
     type = "item",
@@ -4813,7 +4803,7 @@ data:extend({
     scale = 0.5,
     subgroup = "intermediate-alien-product",
     order = "yemnuth-1-[trapped-quantum-energy]",
-    stack_size = 2000
+    stack_size = 1000
   },
   {
     type = "item",
@@ -4823,7 +4813,7 @@ data:extend({
     scale = 0.5,
     subgroup = "intermediate-alien-product",
     order = "z-bearing-[frictionless-bearing]",
-    stack_size = 100
+    stack_size = 50
   },
   {
     type = "item",
@@ -4833,7 +4823,7 @@ data:extend({
     scale = 0.5,
     subgroup = "intermediate-alien-product",
     order = "z-bearing-[frictionless-joint]",
-    stack_size = 100
+    stack_size = 50
   },
   ------------------------------------------------------------------------------
   -- MARK: advanced-alien-product
@@ -4896,7 +4886,7 @@ data:extend({
     scale = 0.5,
     subgroup = "advanced-alien-product",
     order = "quantum-[quantum-capacitor]",
-    stack_size = 1000
+    stack_size = 400
   },
   {
     type = "item",
@@ -4906,7 +4896,7 @@ data:extend({
     scale = 0.5,
     subgroup = "advanced-alien-product",
     order = "quantum-[proton-neutron-frame]",
-    stack_size = 200
+    stack_size = 100
   },
   {
     type = "item",
@@ -4916,7 +4906,7 @@ data:extend({
     scale = 0.5,
     subgroup = "advanced-alien-product",
     order = "quantum-[proton-neutron-superconductor]",
-    stack_size = 100
+    stack_size = 50
   },
   {
     type = "item",
@@ -4926,7 +4916,7 @@ data:extend({
     scale = 0.5,
     subgroup = "advanced-alien-product",
     order = "quantum-[quantized-protons]",
-    stack_size = 2000
+    stack_size = 1000
   },
   {
     type = "item",
@@ -4936,7 +4926,7 @@ data:extend({
     scale = 0.5,
     subgroup = "advanced-alien-product",
     order = "star-[lossless-power-connector]",
-    stack_size = 100
+    stack_size = 50
   },
   {
     type = "item",
@@ -4966,7 +4956,7 @@ data:extend({
     scale = 0.5,
     subgroup = "advanced-alien-product",
     order = "z-1-other-[neutrino-charger]",
-    stack_size = 100
+    stack_size = 50
   },
   {
     type = "item",
@@ -5006,7 +4996,7 @@ data:extend({
     scale = 0.5,
     subgroup = "advanced-alien-product",
     order = "plasma-[quark-gluon-probe]",
-    stack_size = 2000
+    stack_size = 1000
   },
   {
     type = "item",
@@ -5016,7 +5006,7 @@ data:extend({
     scale = 0.5,
     subgroup = "advanced-alien-product",
     order = "star-[sideral-seal]",
-    stack_size = 100
+    stack_size = 50
   },
   {
     type = "item",
@@ -5036,7 +5026,7 @@ data:extend({
     scale = 0.5,
     subgroup = "advanced-alien-product",
     order = "bio-[evolution-pulse-cell]",
-    stack_size = 2000
+    stack_size = 1000
   },
   {
     type = "item",
@@ -5066,7 +5056,7 @@ data:extend({
     scale = 0.5,
     subgroup = "advanced-alien-product",
     order = "quantum-computing-[quantum-switch]",
-    stack_size = 100
+    stack_size = 50
   },
   {
     type = "item",
@@ -5261,7 +5251,7 @@ data:extend({
     },
     subgroup = "fuel-processing",
     order = "s[tritium]",
-    stack_size = 100,
+    stack_size = 10,
   },
   {
     type = "item",
@@ -5626,7 +5616,7 @@ data:extend({
     icon_mipmaps = 4,
     subgroup = "science-item",
     order = "a03[space-research-data]",
-    stack_size = 1000,
+    stack_size = 200,
   },
   ------------------------------------------------------------------------------
   -- MARK: basic-science
@@ -5685,7 +5675,7 @@ data:extend({
     icon_mipmaps = 4,
     subgroup = "intermediate-science",
     order = "a[automation-science-pack]",
-    stack_size = 200,
+    stack_size = 50,
     durability = 1,
     durability_description_key = "description.science-pack-remaining-amount-key",
     durability_description_value = "description.science-pack-remaining-amount-value"
@@ -5699,7 +5689,7 @@ data:extend({
     icon_mipmaps = 4,
     subgroup = "intermediate-science",
     order = "b[logistic-science-pack]",
-    stack_size = 200,
+    stack_size = 50,
     durability = 1,
     durability_description_key = "description.science-pack-remaining-amount-key",
     durability_description_value = "description.science-pack-remaining-amount-value"
@@ -5713,7 +5703,7 @@ data:extend({
     icon_mipmaps = 4,
     subgroup = "intermediate-science",
     order = "c[military-science-pack]",
-    stack_size = 200,
+    stack_size = 50,
     durability = 1,
     durability_description_key = "description.science-pack-remaining-amount-key",
     durability_description_value = "description.science-pack-remaining-amount-value"
@@ -5727,7 +5717,7 @@ data:extend({
     icon_mipmaps = 4,
     subgroup = "intermediate-science",
     order = "d[chemical-science-pack]",
-    stack_size = 200,
+    stack_size = 50,
     durability = 1,
     durability_description_key = "description.science-pack-remaining-amount-key",
     durability_description_value = "description.science-pack-remaining-amount-value"
@@ -5741,7 +5731,7 @@ data:extend({
     icon_mipmaps = 4,
     subgroup = "intermediate-science",
     order = "e[electronic-science-pack]",
-    stack_size = 200,
+    stack_size = 50,
     durability = 1,
     durability_description_key = "description.science-pack-remaining-amount-key",
     durability_description_value = "description.science-pack-remaining-amount-value"
@@ -5755,7 +5745,7 @@ data:extend({
     icon_mipmaps = 4,
     subgroup = "intermediate-science",
     order = "f[geological-science-pack]",
-    stack_size = 200,
+    stack_size = 50,
     durability = 1,
     durability_description_key = "description.science-pack-remaining-amount-key",
     durability_description_value = "description.science-pack-remaining-amount-value"
@@ -5769,7 +5759,7 @@ data:extend({
     icon_mipmaps = 4,
     subgroup = "intermediate-science",
     order = "g[material-science-pack]",
-    stack_size = 200,
+    stack_size = 50,
     durability = 1,
     durability_description_key = "description.science-pack-remaining-amount-key",
     durability_description_value = "description.science-pack-remaining-amount-value"
@@ -5783,7 +5773,7 @@ data:extend({
     icon_mipmaps = 4,
     subgroup = "intermediate-science",
     order = "g[metallurgic-science-pack]",
-    stack_size = 200,
+    stack_size = 50,
     durability = 1,
     durability_description_key = "description.science-pack-remaining-amount-key",
     durability_description_value = "description.science-pack-remaining-amount-value"
@@ -5797,7 +5787,7 @@ data:extend({
     icon_mipmaps = 4,
     subgroup = "intermediate-science",
     order = "i[electromagnetic-science-pack]",
-    stack_size = 200,
+    stack_size = 50,
     durability = 1,
     durability_description_key = "description.science-pack-remaining-amount-key",
     durability_description_value = "description.science-pack-remaining-amount-value"
@@ -5811,7 +5801,7 @@ data:extend({
     icon_mipmaps = 4,
     subgroup = "intermediate-science",
     order = "m[computer-science-pack]",
-    stack_size = 200,
+    stack_size = 50,
     durability = 1,
     durability_description_key = "description.science-pack-remaining-amount-key",
     durability_description_value = "description.science-pack-remaining-amount-value"
@@ -5825,7 +5815,7 @@ data:extend({
     icon_mipmaps = 4,
     subgroup = "intermediate-science",
     order = "n[nuclear-science-pack]",
-    stack_size = 200,
+    stack_size = 50,
     durability = 1,
     durability_description_key = "description.science-pack-remaining-amount-key",
     durability_description_value = "description.science-pack-remaining-amount-value"
@@ -5842,7 +5832,7 @@ data:extend({
     icon_mipmaps = 4,
     subgroup = "advanced-science",
     order = "a[automation-science-pack]",
-    stack_size = 200,
+    stack_size = 50,
     durability = 1,
     durability_description_key = "description.science-pack-remaining-amount-key",
     durability_description_value = "description.science-pack-remaining-amount-value"
@@ -5856,7 +5846,7 @@ data:extend({
     icon_mipmaps = 4,
     subgroup = "advanced-science",
     order = "b[logistic-science-pack]",
-    stack_size = 200,
+    stack_size = 50,
     durability = 1,
     durability_description_key = "description.science-pack-remaining-amount-key",
     durability_description_value = "description.science-pack-remaining-amount-value"
@@ -5870,7 +5860,7 @@ data:extend({
     icon_mipmaps = 4,
     subgroup = "advanced-science",
     order = "c[military-science-pack]",
-    stack_size = 200,
+    stack_size = 50,
     durability = 1,
     durability_description_key = "description.science-pack-remaining-amount-key",
     durability_description_value = "description.science-pack-remaining-amount-value"
@@ -5884,7 +5874,7 @@ data:extend({
     icon_mipmaps = 4,
     subgroup = "advanced-science",
     order = "d[chemical-science-pack]",
-    stack_size = 200,
+    stack_size = 50,
     durability = 1,
     durability_description_key = "description.science-pack-remaining-amount-key",
     durability_description_value = "description.science-pack-remaining-amount-value"
@@ -5898,7 +5888,7 @@ data:extend({
     icon_mipmaps = 4,
     subgroup = "advanced-science",
     order = "e[electronic-science-pack]",
-    stack_size = 200,
+    stack_size = 50,
     durability = 1,
     durability_description_key = "description.science-pack-remaining-amount-key",
     durability_description_value = "description.science-pack-remaining-amount-value"
@@ -5912,7 +5902,7 @@ data:extend({
     icon_mipmaps = 4,
     subgroup = "advanced-science",
     order = "f[geological-science-pack]",
-    stack_size = 200,
+    stack_size = 50,
     durability = 1,
     durability_description_key = "description.science-pack-remaining-amount-key",
     durability_description_value = "description.science-pack-remaining-amount-value"
@@ -5926,7 +5916,7 @@ data:extend({
     icon_mipmaps = 4,
     subgroup = "advanced-science",
     order = "g[material-science-pack]",
-    stack_size = 200,
+    stack_size = 50,
     durability = 1,
     durability_description_key = "description.science-pack-remaining-amount-key",
     durability_description_value = "description.science-pack-remaining-amount-value"
@@ -5940,7 +5930,7 @@ data:extend({
     icon_mipmaps = 4,
     subgroup = "advanced-science",
     order = "h[metallurgic-science-pack]",
-    stack_size = 200,
+    stack_size = 50,
     durability = 1,
     durability_description_key = "description.science-pack-remaining-amount-key",
     durability_description_value = "description.science-pack-remaining-amount-value"
@@ -5954,7 +5944,7 @@ data:extend({
     icon_mipmaps = 4,
     subgroup = "advanced-science",
     order = "i[electromagnetic-science-pack]",
-    stack_size = 200,
+    stack_size = 50,
     durability = 1,
     durability_description_key = "description.science-pack-remaining-amount-key",
     durability_description_value = "description.science-pack-remaining-amount-value"
@@ -5968,7 +5958,7 @@ data:extend({
     icon_mipmaps = 4,
     subgroup = "advanced-science",
     order = "j[biological-science-pack]",
-    stack_size = 200,
+    stack_size = 50,
     durability = 1,
     durability_description_key = "description.science-pack-remaining-amount-key",
     durability_description_value = "description.science-pack-remaining-amount-value"
@@ -5982,7 +5972,7 @@ data:extend({
     icon_mipmaps = 4,
     subgroup = "advanced-science",
     order = "k[cryogenic-science-pack]",
-    stack_size = 200,
+    stack_size = 50,
     durability = 1,
     durability_description_key = "description.science-pack-remaining-amount-key",
     durability_description_value = "description.science-pack-remaining-amount-value"
@@ -5996,7 +5986,7 @@ data:extend({
     icon_mipmaps = 4,
     subgroup = "advanced-science",
     order = "l[production-science-pack]",
-    stack_size = 200,
+    stack_size = 50,
     durability = 1,
     durability_description_key = "description.science-pack-remaining-amount-key",
     durability_description_value = "description.science-pack-remaining-amount-value"
@@ -6010,7 +6000,7 @@ data:extend({
     icon_mipmaps = 4,
     subgroup = "advanced-science",
     order = "m[computer-science-pack]",
-    stack_size = 200,
+    stack_size = 50,
     durability = 1,
     durability_description_key = "description.science-pack-remaining-amount-key",
     durability_description_value = "description.science-pack-remaining-amount-value"
@@ -6024,7 +6014,7 @@ data:extend({
     icon_mipmaps = 4,
     subgroup = "advanced-science",
     order = "n[nuclear-science-pack]",
-    stack_size = 200,
+    stack_size = 50,
     durability = 1,
     durability_description_key = "description.science-pack-remaining-amount-key",
     durability_description_value = "description.science-pack-remaining-amount-value"
@@ -6038,7 +6028,7 @@ data:extend({
     icon_mipmaps = 4,
     subgroup = "advanced-science",
     order = "o[astronomical-science-pack]",
-    stack_size = 200,
+    stack_size = 50,
     durability = 1,
     durability_description_key = "description.science-pack-remaining-amount-key",
     durability_description_value = "description.science-pack-remaining-amount-value"
@@ -6052,7 +6042,7 @@ data:extend({
     icon_mipmaps = 4,
     subgroup = "advanced-science",
     order = "p[utility-science-pack]",
-    stack_size = 200,
+    stack_size = 50,
     durability = 1,
     durability_description_key = "description.science-pack-remaining-amount-key",
     durability_description_value = "description.science-pack-remaining-amount-value"
@@ -6069,7 +6059,7 @@ data:extend({
     icon_mipmaps = 4,
     subgroup = "futuristic-science",
     order = "a[matter-tech-card]",
-    stack_size = 200,
+    stack_size = 50,
     durability = 1,
     durability_description_key = "description.science-pack-remaining-amount-key",
     durability_description_value = "description.science-pack-remaining-amount-value"
@@ -6079,7 +6069,7 @@ data:extend({
     name = "sp-optimization-science-pack",  -- #ForRegEx# - tool
     localised_description = { "item-description.science-pack" },
     icon = "__Spaghetorio__/graphics/krastorio/icons/cards/optimization-tech-card.png",
-    stack_size = 200,
+    stack_size = 50,
     icon_size = 64,
     icon_mipmaps = 4,
     pictures = {
@@ -6111,7 +6101,7 @@ data:extend({
     name = "sp-advanced-science-pack",  -- #ForRegEx# - tool
     localised_description = { "item-description.science-pack" },
     icon = "__Spaghetorio__/graphics/krastorio/icons/cards/advanced-tech-card.png",
-    stack_size = 200,
+    stack_size = 50,
     icon_size = 64,
     icon_mipmaps = 4,
     pictures = {
@@ -6143,7 +6133,7 @@ data:extend({
     name = "sp-singularity-science-pack",  -- #ForRegEx# - tool
     localised_description = { "item-description.science-pack" },
     icon = "__Spaghetorio__/graphics/krastorio/icons/cards/singularity-tech-card.png",
-    stack_size = 200,
+    stack_size = 50,
     icon_size = 64,
     icon_mipmaps = 4,
     pictures = {
@@ -6179,7 +6169,7 @@ data:extend({
     icon_mipmaps = 4,
     subgroup = "futuristic-science",
     order = "e[uniformity-science-pack]",
-    stack_size = 200,
+    stack_size = 50,
     durability = 1,
     durability_description_key = "description.science-pack-remaining-amount-key",
     durability_description_value = "description.science-pack-remaining-amount-value"

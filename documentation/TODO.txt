@@ -1,7 +1,7 @@
 
 TODO for 0.3.2
   - Add crystallizer with diamond saw
-  - Update stack sizes
+  + Update stack sizes
 
 TODO for 0.3.3
   - Remove "sp-recipes-without-technology"

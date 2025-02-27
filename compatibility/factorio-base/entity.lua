@@ -54,9 +54,18 @@ data.raw.tool["utility-science-pack"].subgroup = "intermediate-science"
 data.raw.tool["space-science-pack"].subgroup = "advanced-science"
 
 -- MARK: change stack sizes
+data.raw.item["coal"].stack_size = 200
+data.raw.item["stone"].stack_size = 200
+data.raw.item["iron-ore"].stack_size = 200
+data.raw.item["copper-ore"].stack_size = 200
+data.raw.item["uranium-ore"].stack_size = 200
+
+data.raw.item["uranium-235"].stack_size = 50
+
 data.raw.item["copper-cable"].stack_size = 400
-data.raw.item["chemical-plant"].stack_size = 50
-data.raw.item["tree-seed"].stack_size = 1000
+
+data.raw.item["production-science-pack"].stack_size = 50
+data.raw.item["utility-science-pack"].stack_size = 50
 
 data.raw["item-with-entity-data"]["locomotive"].stack_size = 50
 data.raw["item-with-entity-data"]["cargo-wagon"].stack_size = 50
@@ -64,6 +73,7 @@ data.raw["item-with-entity-data"]["fluid-wagon"].stack_size = 50
 
 data.raw.item["steam-engine"].stack_size = 50
 data.raw.item["pumpjack"].stack_size = 50
+data.raw.item["chemical-plant"].stack_size = 50
 data.raw.item["oil-refinery"].stack_size = 50
 data.raw.item["train-stop"].stack_size = 50
 
