@@ -873,6 +873,7 @@ data.raw.technology["efficiency-module-3"].unit.ingredients = {
   {"sp-computer-science-pack-2", 1}
 }
 
+table.insert(data.raw.technology["rocket-fuel"].effects, {type = "unlock-recipe", recipe = "sp-rocket-fuel-from-hydrogen-peroxide"})
 data.raw.technology["rocket-fuel"].prerequisites = {
   "utility-science-pack",
   "sp-diborane"

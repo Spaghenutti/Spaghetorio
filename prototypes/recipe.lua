@@ -4418,6 +4418,25 @@ data:extend({
       secondary = {r = 0.27, g = 0.53, b = 0.12, a = 0.900},
     }
   },
+  {
+    type = "recipe",
+    name = "sp-rocket-fuel-from-hydrogen-peroxide",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__base__/graphics/icons/rocket-fuel.png", 64,
+                                         "__Spaghetorio__/graphics/icons/hydrogen-peroxide.png", 64),
+    category = "sp-kr-fuel-refinery",
+    enabled = false,
+    energy_required = 2,
+    ingredients = {
+      {type = "fluid", name = "sp-hydrogen-peroxide", amount = 5},
+    },
+    results = {
+      {type = "item", name = "rocket-fuel", amount = 1},
+    },
+    crafting_machine_tint = {
+      primary = {r = 0.25, g = 0.53, b = 0.15, a = 0.750},
+      secondary = {r = 0.27, g = 0.53, b = 0.12, a = 0.900},
+    }
+  },
   ------------------------------------------------------------------------------
   -- MARK: induction-hardening
   ------------------------------------------------------------------------------

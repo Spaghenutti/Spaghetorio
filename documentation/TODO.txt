@@ -38,11 +38,13 @@ TODO for 0.3.3
       - boron-silicade B6Si
       - polyaniline C₆H₅N PANI (conductive polymer)
         - Aniline C₆H₅NH₂
+          - benzene + ammonia -> Aniline + hydrogen
         - Ammonium persulfate (NH₄)₂S₂O₈
-        - emeraldine salt (C₆H₄NH₃)ₙClₙ
+          - ammonia + 2 sulfuric acid -> ammonium sulfate (NH₄)₂S₂O₄
+          - hydrogen peroxide H2O2 + sulfuric acid H2SO4 -> peroxymonosulfuric acid H2SO5 + water
+          - peroxymonosulfuric acid H2SO5 + ammonium sulfate (NH₄)₂S₂O₄ -> Ammonium persulfate (NH₄)₂S₂O₈
         - sulfuric acid H₂SO₄
-        - C₆H₅NH₂ + (NH₄)₂S₂O₈ + HCl -> (C₆H₄NH₃)ₙClₙ + H₂SO₄
-        - (C₆H₄NH₃)ₙClₙ + water -> C₆H₅N + HCl
+        - C₆H₅NH₂ + (NH₄)₂S₂O₈ + water -> C₆H₅N + H₂SO₄
 
     - Add tungsten pipes for passing liquid metals, (can go under lava lakes)
     - Add tungsten offshore pump

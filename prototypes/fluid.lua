@@ -898,6 +898,45 @@ data:extend({
     subgroup = "chemical",
     order = "a[fluid]-f[vinyl-fluoride]"
   },
+  {
+    type = "fluid",
+    name = "sp-hydrogen-peroxide",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    base_color = {r=0.0, g=0.0, b=0.55},
+    flow_color = {r=0.0, g=0.0, b=0.55},
+    icon = "__Spaghetorio__/graphics/icons/hydrogen-peroxide.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "chemical",
+    order = "a[fluid]-f[hydrogen-peroxide]"
+  },
+  {
+    type = "fluid",
+    name = "sp-peroxymonosulfuric-acid",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    base_color = {r=0.0, g=0.0, b=0.55},
+    flow_color = {r=0.0, g=0.0, b=0.55},
+    icon = "__Spaghetorio__/graphics/icons/peroxymonosulfuric-acid.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "chemical",
+    order = "a[fluid]-f[peroxymonosulfuric-acid]"
+  },
+  {
+    type = "fluid",
+    name = "sp-aniline",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    base_color = {r=0.0, g=0.0, b=0.55},
+    flow_color = {r=0.0, g=0.0, b=0.55},
+    icon = "__Spaghetorio__/graphics/icons/aniline.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "chemical",
+    order = "a[fluid]-f[aniline]"
+  },
   ------------------------------------------------------------------------------
   -- MARK: alien
   ------------------------------------------------------------------------------

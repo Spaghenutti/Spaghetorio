@@ -1216,6 +1216,26 @@ data:extend({
   },
   {
     type = "item",
+    name = "sp-beryllium-fluoride",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/beryllium-fluoride.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "processed-resource",
+    order = "[beryllium-fluoride]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "sp-beryllium-oxide",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/beryllium-oxide.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "processed-resource",
+    order = "[beryllium-oxide]",
+    stack_size = 50
+  },
+  {
+    type = "item",
     name = "sp-imersite-powder",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/imersite-powder/imersite-powder.png",
     icon_size = 64,
@@ -1328,6 +1348,15 @@ data:extend({
   -- MARK: processed-metal
   ------------------------------------------------------------------------------
   {
+    type = "item",
+    name = "sp-beryllium",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/beryllium.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "processed-metal",
+    order = "[beryllium]",
+    stack_size = 100
+  },  {
     type = "item",
     name = "sp-sodium",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/sodium.png",
@@ -3153,26 +3182,6 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-empty-circuit-board",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/icons/empty-circuit-board.png",
-    icon_size = 64,
-    scale = 0.5,
-    subgroup = "electronic-optical-component",
-    order = "g-aa[empty-circuit-board]",
-    stack_size = 100
-  },
-  {
-    type = "item",
-    name = "sp-circuit-board",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/icons/circuit-board.png",
-    icon_size = 64,
-    scale = 0.5,
-    subgroup = "electronic-optical-component",
-    order = "g-ab[circuit-board]",
-    stack_size = 100
-  },
-  {
-    type = "item",
     name = "sp-vacuum-tube",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/vacuum-tube.png",
     icon_size = 64,
@@ -3303,12 +3312,52 @@ data:extend({
   },
   {
     type = "item",
+    name = "sp-insulated-metal-substrate",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/insulated-metal-substrate.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "electronic-optical-component",
+    order = "g-aa[insulated-metal-substrate]",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "sp-heat-resistant-electronics",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/heat-resistant-electronics.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "electronic-optical-component",
+    order = "g-ab[heat-resistant-electronics]",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "sp-empty-circuit-board",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/empty-circuit-board.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "electronic-optical-component",
+    order = "h-aa[empty-circuit-board]",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "sp-circuit-board",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/circuit-board.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "electronic-optical-component",
+    order = "h-ab[circuit-board]",
+    stack_size = 100
+  },
+  {
+    type = "item",
     name = "sp-advanced-processing-unit",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/advanced-processing-unit.png",
     icon_size = 64,
     scale = 0.5,
     subgroup = "electronic-optical-component",
-    order = "gz[advanced-processing-unit]",
+    order = "hz[advanced-processing-unit]",
     stack_size = 50
   },
   {
@@ -3328,7 +3377,7 @@ data:extend({
     icon_size = 64,
     scale = 0.5,
     subgroup = "electronic-optical-component",
-    order = "gz[lithium-sulfur-battery]",
+    order = "[lithium-sulfur-battery]",
     stack_size = 50
   },
   ------------------------------------------------------------------------------
@@ -3996,6 +4045,16 @@ data:extend({
   },
   {
     type = "item",
+    name = "sp-gallium-nitride",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/gallium-nitride.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "ceramic",
+    order = "crystal-[gallium-nitride]",
+    stack_size = 50
+  },
+  {
+    type = "item",
     name = "sp-cadmium-telluride",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/cadmium-telluride.png",
     icon_size = 64,
@@ -4261,6 +4320,36 @@ data:extend({
     scale = 0.5,
     subgroup = "chemical-product",
     order = "[potassium-cyanide]",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "sp-ammonium-sulfate",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/ammonium-sulfate.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "chemical-product",
+    order = "[ammonium-sulfate]",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "sp-ammonium-persulfate",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/ammonium-persulfate.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "chemical-product",
+    order = "[ammonium-persulfate]",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "sp-polyaniline",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/polyaniline.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "chemical-product",
+    order = "[polyaniline]",
     stack_size = 100
   },
   ------------------------------------------------------------------------------

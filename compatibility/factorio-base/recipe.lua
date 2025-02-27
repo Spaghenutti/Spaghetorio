@@ -166,6 +166,13 @@ util.recipe.change_recipe_ingredients("low-density-structure",
   },
   16)
 
+ data.raw.recipe["rocket-fuel"].category = "sp-kr-fuel-refinery"
+util.recipe.change_recipe_ingredients("rocket-fuel",
+  {
+    {type = "fluid", name = "sp-diborane", amount = 3}
+  },
+  4)
+
 util.recipe.change_recipe_ingredients("concrete",
   {
     {type = "item", name = "sp-cement", amount = 10},
