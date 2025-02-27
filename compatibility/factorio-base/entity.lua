@@ -64,8 +64,8 @@ data.raw.item["uranium-235"].stack_size = 50
 
 data.raw.item["copper-cable"].stack_size = 400
 
-data.raw.item["production-science-pack"].stack_size = 50
-data.raw.item["utility-science-pack"].stack_size = 50
+data.raw.tool["production-science-pack"].stack_size = 50
+data.raw.tool["utility-science-pack"].stack_size = 50
 
 data.raw["item-with-entity-data"]["locomotive"].stack_size = 50
 data.raw["item-with-entity-data"]["cargo-wagon"].stack_size = 50

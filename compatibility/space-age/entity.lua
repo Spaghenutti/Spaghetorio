@@ -66,9 +66,9 @@ data.raw.item["carbon"].stack_size = 100
 
 data.raw.item["tree-seed"].stack_size = 1000
 
-data.raw.item["agricultural-science-pack"].stack_size = 50
-data.raw.item["cryogenic-science-pack"].stack_size = 50
-data.raw.item["promethium-science-pack"].stack_size = 50
+data.raw.tool["agricultural-science-pack"].stack_size = 50
+data.raw.tool["cryogenic-science-pack"].stack_size = 50
+data.raw.tool["promethium-science-pack"].stack_size = 50
 
 data.raw.item["crusher"].stack_size = 50
 
