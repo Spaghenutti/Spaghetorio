@@ -246,6 +246,21 @@ util.recipe.change_recipe_ingredients("big-mining-drill",
   },
   45)
 
+util.recipe.change_recipe_ingredients("foundry",
+  {
+    {type = "item", name = "sp-tungsten-steel", amount = 60},
+    {type = "item", name = "sp-niobium-steel", amount = 40},
+    {type = "item", name = "sp-maraging-steel", amount = 30},
+    {type = "item", name = "sp-elgiloy", amount = 20},
+    {type = "item", name = "sp-crucible", amount = 10},
+    {type = "item", name = "sp-heating-filament", amount = 16},
+    {type = "item", name = "sp-plasmacutter", amount = 6},
+    {type = "item", name = "engine-unit", amount = 20},
+    {type = "item", name = "sp-heavy-gearbox", amount = 12},
+    {type = "item", name = "refined-concrete", amount = 100},
+  },
+  60)
+
 --------------------------------------------------------------------------------
 -- MARK: science pack
 --------------------------------------------------------------------------------

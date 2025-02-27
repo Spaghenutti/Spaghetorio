@@ -3213,6 +3213,7 @@ data:extend({
                                          "__Spaghetorio__/graphics/icons/arsenic-trioxide.png", 64),
     category = "chemistry",
     enabled = false,
+    hide_from_player_crafting = true,
     energy_required = 1.5,
     ingredients = {
       {type = "item", name = "sp-arsenic-trioxide", amount = 1},

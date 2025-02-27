@@ -192,13 +192,13 @@ data.raw.technology["foundry"].unit = {
   ingredients = {
     {"sp-automation-science-pack-2", 1},
     {"sp-logistic-science-pack-2", 1},
-    {"sp-chemical-science-pack-2", 1},
-    {"sp-electronic-science-pack-1", 1},
+    {"sp-electronic-science-pack-2", 1},
     {"sp-material-science-pack-2", 1},
+    {"sp-chemical-science-pack-2", 1},
     {"sp-geological-science-pack-2", 1},
+    {"production-science-pack", 1},
     {"sp-metallurgic-science-pack-2", 1},
-    {"electromagnetic-science-pack", 1},
-    {"production-science-pack", 1}
+    {"sp-electromagnetic-science-pack-2", 1}
   },
   time = 30
 }
