@@ -23,10 +23,12 @@ TODO for 0.3.3
     - thallium used in optics
     - used in rodent poison
   - Fix foundry recipe chain
-    - Add tungsten pipes for passing liquid metals
+    - Add tungsten pipes for passing liquid metals, (can go under lava lakes)
     - Add tungsten offshore pump
-    - Add tungsten pump
+    - Add tungsten pump (not done due to pipe conexions being complex with trains)
     - tungsten steel is made in arc furnace
+    - Make compatibility with informatron and explain difference from tungsten pipe to normal pipe
+    - Note: fluid boxes can only be filtered to contain one type. Since normal pipes pass any fluid, adding pipes makes no sense. https://lua-api.factorio.com/latest/types/FluidBox.html
   - Update recipe chain for nuclear reactor
   - Update military science 2 branch of tech tree
 

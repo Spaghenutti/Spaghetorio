@@ -75,6 +75,11 @@ require("prototypes.transport-belts.superior-transport-belt.superior-transport-b
 require("prototypes.transport-belts.superior-transport-belt.superior-underground-belt")
 require("prototypes.transport-belts.loaders")
 
+-- Pipes
+-- TODO: add pipes once content can be filtered
+-- require("prototypes.pipes.tungsten-pipe-to-ground")
+-- require("prototypes.pipes.tungsten-pipe")
+
 -- Resource
 require("prototypes.resource.autoplace-control")
 require("prototypes.resource.particle")

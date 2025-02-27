@@ -7071,6 +7071,30 @@ data:extend({
     place_result = "sp-kr-superior-long-inserter",
     stack_size = 50,
   },
+  -- MARK: pipes
+  -- TODO: add pipes once content can be filtered
+  -- {
+  --   type = "item",
+  --   name = "sp-tungsten-pipe",  -- #ForRegEx# - building
+  --   icon = "__Spaghetorio__/graphics/krastorio/icons/entities/steel-pipe.png",
+  --   icon_size = 64,
+  --   icon_mipmaps = 4,
+  --   subgroup = "energy-pipe-distribution",
+  --   order = "z-[tungsten-pipe]",
+  --   place_result = "sp-tungsten-pipe",
+  --   stack_size = 50,
+  -- },
+  -- {
+  --   type = "item",
+  --   name = "sp-tungsten-pipe-to-ground",  -- #ForRegEx# - building
+  --   icon = "__Spaghetorio__/graphics/krastorio/icons/entities/steel-pipe-to-ground.png",
+  --   icon_size = 64,
+  --   icon_mipmaps = 4,
+  --   subgroup = "energy-pipe-distribution",
+  --   order = "z-[tungsten-pipe-to-ground]",
+  --   place_result = "sp-tungsten-pipe-to-ground",
+  --   stack_size = 50,
+  -- },
   ------------------------------------------------------------------------------
   -- MARK: Other
   ------------------------------------------------------------------------------

@@ -73,6 +73,7 @@ data.raw["item-with-entity-data"]["fluid-wagon"].stack_size = 50
 
 data.raw.item["steam-engine"].stack_size = 50
 data.raw.item["pumpjack"].stack_size = 50
+data.raw.item["offshore-pump"].stack_size = 50
 data.raw.item["chemical-plant"].stack_size = 50
 data.raw.item["oil-refinery"].stack_size = 50
 data.raw.item["train-stop"].stack_size = 50
