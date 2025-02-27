@@ -248,6 +248,7 @@ util.recipe.change_recipe_ingredients("electromagnetic-plant",
     {type = "item", name = "sp-variable-frequenzy-drive", amount = 3},
     {type = "item", name = "sp-power-supply", amount = 4},
     {type = "item", name = "sp-piezoelectric-sensor", amount = 16},
+    {type = "item", name = "sp-heatsink", amount = 10},
     {type = "item", name = "refined-concrete", amount = 40},
   },
   60)

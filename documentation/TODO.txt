@@ -2,6 +2,7 @@
 TODO for 0.3.2
   - Add crystallizer with diamond saw
   + Update stack sizes
+  - fix locale for core rift
 
 TODO for 0.3.3
   - Remove "sp-recipes-without-technology"
@@ -22,36 +23,35 @@ TODO for 0.3.3
     - xray imaging with thallium 201
     - thallium used in optics
     - used in rodent poison
-  - Fix foundry recipe chain
-    - Add heat resistant electronics to arc furnace and foundry 
-      - Insulated metal substrate (this is made in electromagnetic plant?)
-        - copper and aluminum core
-        - epoxy
-        - beryllium oxide
-          - alumina + flourine -> beryllium-fluoride
-          - beryllium-fluoride -> beryllium-oxide (incinerating)
-          - beryllium-fluoride -> beryllium (electrolysis)
-          - beryllium-oxide -> beryllium (electrolysis)
-        - glass ceramics
-      - gallium nitride or aluminum nitride
-      - boron-phosphide BP
-      - boron-silicade B6Si
-      - polyaniline C₆H₅N PANI (conductive polymer)
-        - Aniline C₆H₅NH₂
-          - benzene + ammonia -> Aniline + hydrogen
-        - Ammonium persulfate (NH₄)₂S₂O₈
-          - ammonia + 2 sulfuric acid -> ammonium sulfate (NH₄)₂S₂O₄
-          - hydrogen peroxide H2O2 + sulfuric acid H2SO4 -> peroxymonosulfuric acid H2SO5 + water
-          - peroxymonosulfuric acid H2SO5 + ammonium sulfate (NH₄)₂S₂O₄ -> Ammonium persulfate (NH₄)₂S₂O₈
-        - sulfuric acid H₂SO₄
-        - C₆H₅NH₂ + (NH₄)₂S₂O₈ + water -> C₆H₅N + H₂SO₄
-
-    - Add tungsten pipes for passing liquid metals, (can go under lava lakes)
-    - Add tungsten offshore pump
-    - Add tungsten pump (not done due to pipe conexions being complex with trains)
-    - tungsten steel is made in arc furnace
-    - Make compatibility with informatron and explain difference from tungsten pipe to normal pipe
-    - Note: fluid boxes can only be filtered to contain one type. Since normal pipes pass any fluid, adding pipes makes no sense. https://lua-api.factorio.com/latest/types/FluidBox.html
+  + Fix foundry recipe chain
+    + Add heat resistant electronics to arc furnace and foundry 
+      + Insulated metal substrate (this is made in electromagnetic plant?)
+        + copper and aluminum core
+        + epoxy
+        + beryllium oxide
+          + alumina + flourine -> beryllium-fluoride
+          + beryllium-fluoride -> beryllium-oxide (incinerating)
+          + beryllium-fluoride -> beryllium (electrolysis)
+          + beryllium-oxide -> beryllium (electrolysis)
+        + glass ceramics
+      + gallium nitride or aluminum nitride
+      + boron-phosphide BP
+      + boron-silicade B6Si
+      + polyaniline C₆H₅N PANI (conductive polymer)
+        + Aniline C₆H₅NH₂
+          + benzene + ammonia -> Aniline + hydrogen
+        + Ammonium persulfate (NH₄)₂S₂O₈
+          + ammonia + 2 sulfuric acid -> ammonium sulfate (NH₄)₂S₂O₄
+          + hydrogen peroxide H2O2 + sulfuric acid H2SO4 -> peroxymonosulfuric acid H2SO5 + water
+          + peroxymonosulfuric acid H2SO5 + ammonium sulfate (NH₄)₂S₂O₄ -> Ammonium persulfate (NH₄)₂S₂O₈
+        + sulfuric acid H₂SO₄
+        + C₆H₅NH₂ + (NH₄)₂S₂O₈ + water -> C₆H₅N + H₂SO₄
+    ? Add tungsten pipes for passing liquid metals, (can go under lava lakes)
+    ? Add tungsten offshore pump
+    ? Add tungsten pump (not done due to pipe conexions being complex with trains)
+    ? tungsten steel is made in arc furnace
+    ? Make compatibility with informatron and explain difference from tungsten pipe to normal pipe
+    ? Note: fluid boxes can only be filtered to contain one type. Since normal pipes pass any fluid, adding pipes makes no sense. https://lua-api.factorio.com/latest/types/FluidBox.html
   - Update recipe chain for nuclear reactor
   - Update military science 2 branch of tech tree
 

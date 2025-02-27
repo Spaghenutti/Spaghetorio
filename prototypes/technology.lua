@@ -5918,6 +5918,41 @@ data:extend({
   ------------------------------------------------------------------------------
   {
     type = "technology",
+    name = "sp-kr-ai-core",  -- #ForRegEx# - technology
+    icon = "__Spaghetorio__/graphics/krastorio/technologies/ai-core.png",
+    icon_size = 256,
+    icon_mipmaps = 4,
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-ai-core"
+      },
+    },
+    prerequisites = {
+      "sp-kr-imersium-processing",
+      "sp-flux-capacitor"
+    },
+    unit = {
+      count = 350,
+      ingredients = {
+        {"sp-automation-science-pack-3", 1},
+        {"sp-logistic-science-pack-3", 1},
+        {"sp-chemical-science-pack-3", 1},
+        {"sp-electronic-science-pack-3", 1},
+        {"sp-geological-science-pack-3", 1},
+        {"sp-material-science-pack-3", 1},
+        {"sp-computer-science-pack-3", 1},
+        {"sp-production-science-pack-3", 1},
+        {"sp-nuclear-science-pack-3", 1},
+        {"space-science-pack", 1},
+        {"sp-matter-science-pack", 1},
+        {"utility-science-pack", 1}
+      },
+      time = 30,
+    },
+  },
+  {
+    type = "technology",
     name = "sp-kr-energy-control-unit",  -- #ForRegEx# - technology
     icon = "__Spaghetorio__/graphics/krastorio/technologies/energy-control-unit.png",
     icon_size = 256,
@@ -8298,6 +8333,10 @@ data:extend({
         type = "unlock-recipe",
         recipe = "sp-kr-particle-accelerator",
       },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-heavy-water",
+      },
       -- {
       --   type = "unlock-recipe",
       --   recipe = "sp-kr-advanced-steam-turbine",
@@ -10608,18 +10647,6 @@ data:extend({
         type = "unlock-recipe",
         recipe = "sp-manganese-chloride",
       },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-potassium-permanganate-solution",
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-ai-core",
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-heavy-water",
-      }
       -- TODO: add recipe chain for
       -- {
       --   type = "unlock-recipe",

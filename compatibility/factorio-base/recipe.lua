@@ -1445,15 +1445,18 @@ util.recipe.change_recipe_ingredients("oil-refinery",
 
 util.recipe.change_recipe_ingredients("centrifuge",
   {
-    {type = "item", name = "concrete", amount = 20},
-    {type = "item", name = "electric-engine-unit", amount = 12},
+    {type = "item", name = "refined-concrete", amount = 20},
+    {type = "item", name = "sp-big-electric-engine-unit", amount = 3},
     {type = "item", name = "sp-bolts", amount = 20},
     {type = "item", name = "sp-heavy-gearbox", amount = 6},
     {type = "item", name = "sp-stainless-steel", amount = 20},
     {type = "item", name = "sp-invar", amount = 10},
     {type = "item", name = "sp-duralumin", amount = 12},
     {type = "item", name = "tungsten-carbide", amount = 6},
-    {type = "item", name = "sp-heavy-ball-bearing", amount = 2}
+    {type = "item", name = "sp-heat-resistant-electronics", amount = 4},
+    {type = "item", name = "sp-power-supply", amount = 4},
+    {type = "item", name = "sp-variable-frequenzy-drive", amount = 3},
+    {type = "item", name = "sp-heavy-ball-bearing", amount = 2},
   },
   20)
 

@@ -890,8 +890,7 @@ data.raw.technology["rocket-fuel"].unit.ingredients = {
 }
 
 data.raw.technology["uranium-processing"].prerequisites = {
-  "sp-electronic-science-pack-2",
-  "sp-metallurgic-science-pack-2",
+  "sp-heat-resistant-electronics",
   "sp-electromagnetic-science-pack-2"
 }
 data.raw.technology["uranium-processing"].research_trigger = nil

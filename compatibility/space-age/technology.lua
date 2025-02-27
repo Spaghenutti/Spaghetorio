@@ -234,7 +234,7 @@ data.raw.technology["foundry"].unit = {
 
 data.raw.technology["cryogenic-plant"].prerequisites = {
   "sp-electromagnetic-science-pack-2",
-  "sp-metallurgic-science-pack-2",
+  "sp-compressor",
   "heating-tower"
 }
 data.raw.technology["cryogenic-plant"].research_trigger = nil
@@ -371,5 +371,6 @@ data.raw.technology["electromagnetic-science-pack"].unit = {
 }
 
 data.raw.technology["agricultural-science-pack"].icon = "__Spaghetorio__/graphics/hr-icons/biological-science-pack-2.png"
+table.insert(data.raw.technology["lithium-processing"].effects, {type = "unlock-recipe", recipe = "sp-potassium-permanganate-solution"})
 
 data.raw.technology["cryogenic-science-pack"].icon = "__Spaghetorio__/graphics/hr-icons/cryogenic-science-pack-2.png"
