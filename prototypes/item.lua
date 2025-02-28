@@ -3417,7 +3417,7 @@ data:extend({
     icon_size = 64,
     scale = 0.5,
     subgroup = "electronic-optical-component",
-    order = "[photovoltaic-cell]",
+    order = "optics-z[photovoltaic-cell]",
     stack_size = 100
   },
   {
@@ -3427,7 +3427,7 @@ data:extend({
     icon_size = 64,
     scale = 0.5,
     subgroup = "electronic-optical-component",
-    order = "[lithium-sulfur-battery]",
+    order = "battery-[lithium-sulfur-battery]",
     stack_size = 50
   },
   ------------------------------------------------------------------------------

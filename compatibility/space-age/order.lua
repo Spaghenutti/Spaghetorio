@@ -11,6 +11,9 @@ data.raw.item["holmium-plate"].order = "a-plate-[holmium-plate]"
 data.raw.item["lithium-plate"].order = "a-plate-[lithium-plate]"
 data.raw.item["tungsten-plate"].order = "a-plate-[tungsten-plate]"
 
+-- MARK: intermediate products
+data.raw.item["supercapacitor"].order = "basic-z-[supercapacitor]"
+
 -- MARK: science packs
 data.raw.tool["metallurgic-science-pack"].order = "h[metallurgic-science-pack]"
 data.raw.tool["electromagnetic-science-pack"].order = "i[electromagnetic-science-pack]"

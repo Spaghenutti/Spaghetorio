@@ -6,26 +6,16 @@ TODO for 0.3.2
 TODO for 0.3.3
   - Remove "sp-recipes-without-technology"
   - Uses for tellurium
-    - Add thermocouple (uses tellurium)
-      - bismuth telluride (or antimony telluride, but antimony is unlocked later in tech tree)
-      - insulated wire
-      - solder
-      - nickel
-      - chromium
-      - aluminum
-    - Add peltier cell (bismuth and tellurium) use in thermonuclear generator and cryogenic plant
-      - insulated wire
-      - bismuth telluride
-      - solder
-      - heatsink
+    + Add thermocouple (uses tellurium)
+    + Add peltier cell (bismuth and tellurium) use in thermonuclear generator and cryogenic plant
     - Add graphite impact shell used for explorers
     - Add laser diode
     - Add hard drive
     - Add phase change memory
-  - Uses for bismuth
-      - refined from tin and lead
-      - sodium carbonate solution + lead = lead ingot + bismuth
-      - ammonium hydroxide solution + crushed tin = tin ingot + bismuth
+  + Uses for bismuth
+      + refined from tin and lead
+      + sodium carbonate solution + lead = lead ingot + bismuth
+      + ammonium hydroxide solution + crushed tin = tin ingot + bismuth
 		- superconductor
 		- scintillator (gamma ray spectrograph - used in photonic lab)
 		- to make polonium when bombarded with neutron stream

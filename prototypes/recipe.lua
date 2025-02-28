@@ -4240,6 +4240,7 @@ data:extend({
     category = "crystallizing-with-fluid",
     subgroup = "processed-metal",
     enabled = false,
+    hide_from_player_crafting = true,
     energy_required = 10,
     ingredients = {
       {type = "item", name = "sp-tinstone", amount = 10},
@@ -5856,6 +5857,7 @@ data:extend({
     category = "sp-kr-electrolysis",
     subgroup = "processed-metal",
     enabled = false,
+    hide_from_player_crafting = true,
     energy_required = 5,
     ingredients = {
       {type = "item", name = "sp-beryllium-oxide", amount = 1},
@@ -9979,6 +9981,8 @@ data:extend({
       {type = "item", name = "sp-stainless-steel", amount = 8},
       {type = "item", name = "sp-glass", amount = 10},
       {type = "item", name = "sp-electrode", amount = 2},
+      {type = "item", name = "sp-thermocouple", amount = 4},
+      {type = "item", name = "sp-variable-frequenzy-drive", amount = 1},
       -- {type = "item", name = "kr-black-reinforced-plate", amount = 16}
     },
     results = {

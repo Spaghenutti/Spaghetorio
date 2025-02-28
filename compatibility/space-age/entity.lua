@@ -27,8 +27,9 @@ data.raw.item["tungsten-carbide"].subgroup = "ceramic"
 data.raw.item["carbon-fiber"].subgroup = "advanced-raw-material"
 
 -- group intermediates
-data.raw.item["superconductor"].subgroup = "electronic-optical-component"
 data.raw.item["supercapacitor"].subgroup = "electronic-optical-component"
+
+data.raw.item["superconductor"].subgroup = "advanced-intermediate-product"
 
 data.raw.item["quantum-processor"].subgroup = "advanced-intermediate-product"
 

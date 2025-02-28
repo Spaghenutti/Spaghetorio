@@ -8501,10 +8501,10 @@ data:extend({
     icon_size = 256,
     icon_mipmaps = 4,
     prerequisites = {
-      -- "kr-advanced-lab",
       "sp-power-regulation",
       "sp-titanium-alloys",
-      "sp-electrode"
+      "sp-electrode",
+      "sp-thermoelectric-conversion"
     },
     effects = {
       {

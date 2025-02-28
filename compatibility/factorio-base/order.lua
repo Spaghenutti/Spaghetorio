@@ -39,6 +39,12 @@ data.raw.item["low-density-structure"].order = "ceramic-[low-density-structure]"
 
 data.raw.item["explosives"].order = "a-a"
 
+data.raw.item["electronic-circuit"].order = "e-[electronic-circuit]"
+data.raw.item["advanced-circuit"].order = "f-ab[advanced-circuit]"
+data.raw.item["processing-unit"].order = "h-ac[rocessing-unit]"
+
+data.raw.item["battery"].order = "battery-[battery]"
+
 -- data.raw.item["satellite"].order = "m-1-[satellite]"
 data.raw.item["uranium-235"].order = "z-nuclear-2-[uranium-235]"
 data.raw.item["uranium-238"].order = "z-nuclear-1-[uranium-238]"
