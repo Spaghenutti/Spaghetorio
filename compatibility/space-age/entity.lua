@@ -85,9 +85,9 @@ data.raw.item["crusher"].stack_size = 50
 data.raw["generator-equipment"]["fusion-reactor-equipment"].power = "20MW"
 
 -- MARK: item-subgroup changes
-data.raw["item-subgroup"]["agriculture-processes"].group = "biology"
-data.raw["item-subgroup"]["agriculture-products"].group = "biology"
-data.raw["item-subgroup"]["nauvis-agriculture"].group = "biology"
+data.raw["item-subgroup"]["agriculture-processes"].group = "sp-biology"
+data.raw["item-subgroup"]["agriculture-products"].group = "sp-biology"
+data.raw["item-subgroup"]["nauvis-agriculture"].group = "sp-biology"
 
 -- MARK: localized name
 data.raw.tool["agricultural-science-pack"].localized_name = {"custom-localization.biological-science-pack"}

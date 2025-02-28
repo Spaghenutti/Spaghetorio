@@ -309,6 +309,8 @@ util.recipe.change_recipe_ingredients("cryogenic-plant",
     {type = "item", name = "sp-vacuum-pump", amount = 4},
     {type = "item", name = "sp-cryostat", amount = 6},
     {type = "item", name = "sp-compressor", amount = 3},
+    {type = "item", name = "sp-thermocouple", amount = 10},
+    {type = "item", name = "sp-peltier-cell", amount = 6},
     {type = "item", name = "refined-concrete", amount = 100},
   },
   60)

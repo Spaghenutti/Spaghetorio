@@ -7,7 +7,17 @@ TODO for 0.3.3
   - Remove "sp-recipes-without-technology"
   - Uses for tellurium
     - Add thermocouple (uses tellurium)
-    - Add peltier cell (bismuth and tellurium) use in thermonuclear generator and ryogenic plant
+      - bismuth telluride (or antimony telluride, but antimony is unlocked later in tech tree)
+      - insulated wire
+      - solder
+      - nickel
+      - chromium
+      - aluminum
+    - Add peltier cell (bismuth and tellurium) use in thermonuclear generator and cryogenic plant
+      - insulated wire
+      - bismuth telluride
+      - solder
+      - heatsink
     - Add graphite impact shell used for explorers
     - Add laser diode
     - Add hard drive

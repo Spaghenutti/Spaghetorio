@@ -1469,7 +1469,7 @@ data:extend({
     name = "sp-titanium-alloys",  -- #ForRegEx# - technology
     icon_size = 256,
     icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/hr-icons/TiAlSn.png", 256, nil,
-                                   "__Spaghetorio__/graphics/hr-icons/TiNb.png", 256, nil),
+                                        "__Spaghetorio__/graphics/hr-icons/TiNb.png", 256, nil),
     effects =
     {
       {
@@ -1495,6 +1495,40 @@ data:extend({
     unit =
     {
       count = 500,
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-electronic-science-pack-1", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"production-science-pack", 1},
+        {"sp-metallurgic-science-pack-2", 1},
+        {"electromagnetic-science-pack", 1}
+      },
+      time = 30
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-bismuth-telluride",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghetorio__/graphics/hr-icons/bismuth-telluride.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-bismuth-telluride"
+      },
+    },
+    prerequisites = {
+      "sp-metallurgic-science-pack-2",
+      "sp-tellurium-processing",
+      "sp-bismuth-processing"
+    },
+    unit =
+    {
+      count = 150,
       ingredients = {
         {"sp-automation-science-pack-2", 1},
         {"sp-logistic-science-pack-2", 1},
@@ -1998,6 +2032,44 @@ data:extend({
       "sp-polyaniline",
       "sp-boron-crystalls",
       "sp-beryllium-processing",
+      "electromagnetic-plant"
+    },
+    unit =
+    {
+      count = 250,
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"production-science-pack", 1},
+        {"sp-metallurgic-science-pack-2", 1},
+        {"electromagnetic-science-pack", 1}
+      },
+      time = 30
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-thermoelectric-conversion",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/hr-icons/peltier-cell.png", 256, nil,
+                                        "__Spaghetorio__/graphics/hr-icons/thermocouple.png", 256, nil),
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-peltier-cell"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-thermocouple"
+      },
+    },
+    prerequisites = {
+      "sp-bismuth-telluride",
       "electromagnetic-plant"
     },
     unit =
@@ -3243,7 +3315,43 @@ data:extend({
       },
       time = 30
     },
-  },  {
+  },
+  {
+    type = "technology",
+    name = "sp-bismuth-processing",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghetorio__/graphics/hr-icons/bismuth.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-bismuth"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-bismuth-from-crushed-tinstone"
+      },
+    },
+    prerequisites = {
+      "sp-geological-science-pack-2"
+    },
+    unit =
+    {
+      count = 150,
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"logistic-science-pack", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-electronic-science-pack-1", 1},
+        {"sp-material-science-pack-1", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"metallurgic-science-pack", 1},
+        {"electromagnetic-science-pack", 1}
+      },
+      time = 30
+    },
+  },
+  {
     type = "technology",
     name = "sp-beryllium-processing",  -- #ForRegEx# - technology
     icon_size = 256,
@@ -9035,8 +9143,7 @@ data:extend({
       },
     },
     prerequisites = {
-      "sp-big-electric-engine-unit",
-      "sp-electronic-science-pack-2",
+      "electromagnetic-plant"
     },
     unit =
     {

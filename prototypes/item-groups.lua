@@ -426,7 +426,7 @@ data:extend({
   ------------------------------------------------------------------------------
   {
     type = "item-group",
-    name = "biology",  -- #ForRegEx# - item-group
+    name = "sp-biology",  -- #ForRegEx# - item-group
     order = "h",
     -- There is no icon_scale or something value i can pass to scale image...??
     icon = "__Spaghetorio__/graphics/item-groups/fish-breeding.png",
@@ -435,7 +435,7 @@ data:extend({
   {
     type = "item-subgroup",
     name = "basic-agriculture",
-    group = "biology",
+    group = "sp-biology",
     order = "a"
   },
   ------------------------------------------------------------------------------

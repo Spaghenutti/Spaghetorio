@@ -234,7 +234,8 @@ data.raw.technology["cryogenic-plant"].prerequisites = {
   "sp-electromagnetic-science-pack-2",
   "sp-compressor",
   "heating-tower",
-  "sp-invar"
+  "sp-invar",
+  "sp-thermoelectric-conversion"
 }
 data.raw.technology["cryogenic-plant"].research_trigger = nil
 data.raw.technology["cryogenic-plant"].unit = {

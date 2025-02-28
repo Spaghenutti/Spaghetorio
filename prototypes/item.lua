@@ -1478,6 +1478,16 @@ data:extend({
   },
   {
     type = "item",
+    name = "sp-bismuth",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/bismuth.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "processed-metal",
+    order = "[bismuth]",
+    stack_size = 100
+  },
+  {
+    type = "item",
     name = "sp-tellurium",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/tellurium-1.png",
     icon_size = 64,
@@ -2192,6 +2202,26 @@ data:extend({
     scale = 0.5,
     subgroup = "advanced-raw-material",
     order = "[boron-phosphide]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "sp-lead-molybdate",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/lead-molybdate.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "advanced-raw-material",
+    order = "[lead-molybdate]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "sp-bismuth-telluride",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/bismuth-telluride.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "advanced-raw-material",
+    order = "[bismuth-telluride]",
     stack_size = 50
   },
   ------------------------------------------------------------------------------
@@ -3272,6 +3302,26 @@ data:extend({
   },
   {
     type = "item",
+    name = "sp-thermocouple",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/thermocouple.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "electronic-optical-component",
+    order = "semiconductor-d[thermocouple]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "sp-peltier-cell",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/peltier-cell.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "electronic-optical-component",
+    order = "semiconductor-d[peltier-cell]",
+    stack_size = 50
+  },
+  {
+    type = "item",
     name = "sp-laser",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/laser.png",
     icon_size = 64,
@@ -4121,16 +4171,6 @@ data:extend({
     scale = 0.5,
     subgroup = "ceramic",
     order = "[boron-silicade]",
-    stack_size = 50
-  },
-  {
-    type = "item",
-    name = "sp-lead-molybdate",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/icons/lead-molybdate.png",
-    icon_size = 64,
-    scale = 0.5,
-    subgroup = "ceramic",
-    order = "[lead-molybdate]",
     stack_size = 50
   },
   {

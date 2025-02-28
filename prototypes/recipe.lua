@@ -4028,6 +4028,20 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "sp-bismuth-telluride",  -- #ForRegEx# - recipe
+    category = "crystallizing",
+    enabled = false,
+    energy_required = 15,
+    ingredients = {
+      {type = "item", name = "sp-bismuth", amount = 3},
+      {type = "item", name = "sp-tellurium", amount = 2},
+    },
+    results = {
+      {type = "item", name = "sp-bismuth-telluride", amount = 3}
+    }
+  },
+  {
+    type = "recipe",
     name = "sp-monocrystal",  -- #ForRegEx# - recipe
     category = "crystallizing",
     enabled = false,
@@ -4200,6 +4214,41 @@ data:extend({
     results = {
       {type = "item", name = "sp-gallium-nitride", amount = 1}
     }
+  },
+  {
+    type = "recipe",
+    name = "sp-bismuth",  -- #ForRegEx# - recipe
+    icon  = "__Spaghetorio__/graphics/icons/bismuth.png",
+    category = "crystallizing-with-fluid",
+    subgroup = "processed-metal",
+    enabled = false,
+    energy_required = 5,
+    ingredients = {
+      {type = "item", name = "sp-leadstone", amount = 3},
+      {type = "fluid", name = "sp-sodium-carbonate-solution", amount = 5},
+    },
+    results = {
+      {type = "item", name = "sp-bismuth", amount = 1},
+      {type = "item", name = "sp-lead-slab", amount = 1}
+    },
+  },
+  {
+    type = "recipe",
+    name = "sp-bismuth-from-crushed-tinstone",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/bismuth.png", 64,
+                                         "__Spaghetorio__/graphics/icons/crushed-tinstone-1.png", 64),
+    category = "crystallizing-with-fluid",
+    subgroup = "processed-metal",
+    enabled = false,
+    energy_required = 10,
+    ingredients = {
+      {type = "item", name = "sp-tinstone", amount = 10},
+      {type = "fluid", name = "sp-ammonium-hydroxide-solution", amount = 10},
+    },
+    results = {
+      {type = "item", name = "sp-bismuth", amount = 1},
+      {type = "item", name = "sp-tin-ingot", amount = 3},
+    },
   },
   ------------------------------------------------------------------------------
   -- MARK: incinerating
@@ -4495,6 +4544,61 @@ data:extend({
     results = {
       {type = "item", name = "sp-heat-resistant-electronics", amount = 1}
     },
+  },
+  {
+    type = "recipe",
+    name = "sp-thermocouple",  -- #ForRegEx# - recipe
+    category = "electronics",
+    enabled = false,
+    energy_required = 15,
+    ingredients = {
+      {type = "item", name = "sp-bismuth-telluride", amount = 5},
+      {type = "item", name = "sp-insulated-wire", amount = 10},
+      {type = "item", name = "sp-solder", amount = 5},
+      {type = "item", name = "sp-nickel-ingot", amount = 3},
+      {type = "item", name = "sp-chromium-plate", amount = 1},
+      {type = "item", name = "sp-aluminum-sheet", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-thermocouple", amount = 5}
+    },
+  },
+  {
+    type = "recipe",
+    name = "sp-peltier-cell",  -- #ForRegEx# - recipe
+    category = "electronics",
+    enabled = false,
+    energy_required = 4,
+    ingredients = {
+      {type = "item", name = "sp-bismuth-telluride", amount = 1},
+      {type = "item", name = "sp-insulated-wire", amount = 2},
+      {type = "item", name = "sp-solder", amount = 1},
+      {type = "item", name = "sp-aluminum-sheet", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-peltier-cell", amount = 5}
+    },
+  },
+  ------------------------------------------------------------------------------
+  -- MARK: electromagnetics
+  ------------------------------------------------------------------------------
+  {
+    type = "recipe",
+    name = "sp-electromagnetic-science-pack-2",  -- #ForRegEx# - recipe
+    category = "electromagnetics",
+    enabled = false,
+    energy_required = 40,
+    ingredients =
+    {
+      {type = "item", name = "electromagnetic-science-pack", amount = 20},
+      {type = "item", name = "flying-robot-frame", amount = 3},
+      {type = "item", name = "sp-transformer", amount = 3},
+      {type = "item", name = "sp-big-electric-engine-unit", amount = 2},
+      {type = "item", name = "sp-electromagnetic-brake", amount = 2}
+    },
+    results = {
+      {type = "item", name = "sp-electromagnetic-science-pack-2", amount = 5}
+    }
   },
   ------------------------------------------------------------------------------
   -- MARK: electronics-with-fluid
@@ -6945,24 +7049,6 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-electronic-science-pack-2", amount = 5}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-electromagnetic-science-pack-2",  -- #ForRegEx# - recipe
-    category = "crafting",
-    enabled = false,
-    energy_required = 40,
-    ingredients =
-    {
-      {type = "item", name = "electromagnetic-science-pack", amount = 20},
-      {type = "item", name = "flying-robot-frame", amount = 3},
-      {type = "item", name = "sp-transformer", amount = 3},
-      {type = "item", name = "sp-big-electric-engine-unit", amount = 2},
-      {type = "item", name = "sp-electromagnetic-brake", amount = 2}
-    },
-    results = {
-      {type = "item", name = "sp-electromagnetic-science-pack-2", amount = 5}
     }
   },
   {
