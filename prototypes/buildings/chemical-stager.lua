@@ -145,7 +145,7 @@ data:extend({
     crafting_categories = {
       "chemistry",
       "chemical-staging",
-      "crystallizing" -- TODO: remove this once crystallizer is added
+      "crystallizing-with-fluid" -- TODO: remove this once crystallizer is added
     },
     crafting_speed = 2,
     energy_source =

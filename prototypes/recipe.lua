@@ -3935,35 +3935,6 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-silicon-nitride",  -- #ForRegEx# - recipe
-    category = "crystallizing",
-    enabled = false,
-    energy_required = 2,
-    ingredients = {
-      {type = "item", name = "sp-silica", amount = 1},
-      {type = "item", name = "carbon", amount = 1},
-      {type = "fluid", name = "sp-nitrogen", amount = 10},
-    },
-    results = {
-      {type = "item", name = "sp-silicon-nitride", amount = 1}
-    },
-  },
-  {
-    type = "recipe",
-    name = "sp-titanium-nitride",  -- #ForRegEx# - recipe
-    category = "crystallizing",
-    enabled = false,
-    energy_required = 6,
-    ingredients = {
-      {type = "item", name = "sp-titanium-ingot", amount = 2},
-      {type = "fluid", name = "sp-nitrogen", amount = 40}
-    },
-    results = {
-      {type = "item", name = "sp-titanium-nitride", amount = 2}
-    },
-  },
-  {
-    type = "recipe",
     name = "sp-barium-titanate",  -- #ForRegEx# - recipe
     category = "crystallizing",
     enabled = false,
@@ -3974,80 +3945,6 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-barium-titanate", amount = 1},
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-selenium-dioxide-from-iron-ore",  -- #ForRegEx# - recipe
-    icon = "__Spaghetorio__/graphics/icons/selenium-dioxide.png",
-    category = "crystallizing",
-    subgroup = "processed-resource",
-    enabled = false,
-    energy_required = 3,
-    ingredients = {
-      {type = "item", name = "iron-ore", amount = 5},
-      {type = "fluid", name = "sulfuric-acid", amount = 1},
-    },
-    results = {
-      {type = "item", name = "sp-selenium-dioxide", amount = 1},
-      {type = "item", name = "iron-plate", amount = 2},
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-selenium-dioxide-from-crushed-iron",  -- #ForRegEx# - recipe
-    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/selenium-dioxide.png", 64,
-                                         "__Spaghetorio__/graphics/icons/crushed-iron-ore-1.png", 64),
-    category = "crystallizing",
-    subgroup = "processed-resource",
-    enabled = false,
-    energy_required = 4,
-    hide_from_player_crafting = true,
-    ingredients = {
-      {type = "item", name = "sp-crushed-iron-ore", amount = 5},
-      {type = "fluid", name = "sulfuric-acid", amount = 1},
-    },
-    results = {
-      {type = "item", name = "sp-selenium-dioxide", amount = 2},
-      {type = "item", name = "iron-plate", amount = 2},
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-selenium-dioxide-from-copper-ore",  -- #ForRegEx# - recipe
-    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/selenium-dioxide.png", 64,
-                                         "__base__/graphics/icons/copper-ore.png", 64),
-    category = "crystallizing",
-    subgroup = "processed-resource",
-    enabled = false,
-    energy_required = 3,
-    hide_from_player_crafting = true,
-    ingredients = {
-      {type = "item", name = "copper-ore", amount = 5},
-      {type = "fluid", name = "sulfuric-acid", amount = 1},
-    },
-    results = {
-      {type = "item", name = "sp-selenium-dioxide", amount = 1},
-      {type = "item", name = "copper-plate", amount = 2},
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-selenium-dioxide-from-crushed-copper",  -- #ForRegEx# - recipe
-    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/selenium-dioxide.png", 64,
-                                         "__Spaghetorio__/graphics/icons/crushed-copper-ore-1.png", 64),
-    category = "crystallizing",
-    subgroup = "processed-resource",
-    enabled = false,
-    energy_required = 4,
-    hide_from_player_crafting = true,
-    ingredients = {
-      {type = "item", name = "sp-crushed-copper-ore", amount = 5},
-      {type = "fluid", name = "sulfuric-acid", amount = 1},
-    },
-    results = {
-      {type = "item", name = "sp-selenium-dioxide", amount = 2},
-      {type = "item", name = "copper-plate", amount = 2},
     }
   },
   {
@@ -4184,10 +4081,116 @@ data:extend({
     },
     order = "crystal-[quasicrystal-1]"
   },
+  ------------------------------------------------------------------------------
+  -- MARK: crystallizing-with-fluid
+  ------------------------------------------------------------------------------
+  {
+    type = "recipe",
+    name = "sp-silicon-nitride",  -- #ForRegEx# - recipe
+    category = "crystallizing-with-fluid",
+    enabled = false,
+    energy_required = 2,
+    ingredients = {
+      {type = "item", name = "sp-silica", amount = 1},
+      {type = "item", name = "carbon", amount = 1},
+      {type = "fluid", name = "sp-nitrogen", amount = 10},
+    },
+    results = {
+      {type = "item", name = "sp-silicon-nitride", amount = 1}
+    },
+  },
+  {
+    type = "recipe",
+    name = "sp-titanium-nitride",  -- #ForRegEx# - recipe
+    category = "crystallizing-with-fluid",
+    enabled = false,
+    energy_required = 6,
+    ingredients = {
+      {type = "item", name = "sp-titanium-ingot", amount = 2},
+      {type = "fluid", name = "sp-nitrogen", amount = 40}
+    },
+    results = {
+      {type = "item", name = "sp-titanium-nitride", amount = 2}
+    },
+  },
+  {
+    type = "recipe",
+    name = "sp-selenium-dioxide-from-iron-ore",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/icons/selenium-dioxide.png",
+    category = "crystallizing-with-fluid",
+    subgroup = "processed-resource",
+    enabled = false,
+    energy_required = 3,
+    ingredients = {
+      {type = "item", name = "iron-ore", amount = 5},
+      {type = "fluid", name = "sulfuric-acid", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-selenium-dioxide", amount = 1},
+      {type = "item", name = "iron-plate", amount = 2},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-selenium-dioxide-from-crushed-iron",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/selenium-dioxide.png", 64,
+                                         "__Spaghetorio__/graphics/icons/crushed-iron-ore-1.png", 64),
+    category = "crystallizing-with-fluid",
+    subgroup = "processed-resource",
+    enabled = false,
+    energy_required = 4,
+    hide_from_player_crafting = true,
+    ingredients = {
+      {type = "item", name = "sp-crushed-iron-ore", amount = 5},
+      {type = "fluid", name = "sulfuric-acid", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-selenium-dioxide", amount = 2},
+      {type = "item", name = "iron-plate", amount = 2},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-selenium-dioxide-from-copper-ore",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/selenium-dioxide.png", 64,
+                                         "__base__/graphics/icons/copper-ore.png", 64),
+    category = "crystallizing-with-fluid",
+    subgroup = "processed-resource",
+    enabled = false,
+    energy_required = 3,
+    hide_from_player_crafting = true,
+    ingredients = {
+      {type = "item", name = "copper-ore", amount = 5},
+      {type = "fluid", name = "sulfuric-acid", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-selenium-dioxide", amount = 1},
+      {type = "item", name = "copper-plate", amount = 2},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-selenium-dioxide-from-crushed-copper",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/selenium-dioxide.png", 64,
+                                         "__Spaghetorio__/graphics/icons/crushed-copper-ore-1.png", 64),
+    category = "crystallizing-with-fluid",
+    subgroup = "processed-resource",
+    enabled = false,
+    energy_required = 4,
+    hide_from_player_crafting = true,
+    ingredients = {
+      {type = "item", name = "sp-crushed-copper-ore", amount = 5},
+      {type = "fluid", name = "sulfuric-acid", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-selenium-dioxide", amount = 2},
+      {type = "item", name = "copper-plate", amount = 2},
+    }
+  },
   {
     type = "recipe",
     name = "sp-gallium-nitride",  -- #ForRegEx# - recipe
-    category = "crystallizing",
+    category = "crystallizing-with-fluid",
     enabled = false,
     energy_required = 8,
     ingredients = {
@@ -5375,7 +5378,7 @@ data:extend({
     icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/krastorio/icons/recipes/wood-plus.png", 64,
                                          "__Spaghetorio__/graphics/icons/urea.png", 64),
     category = "sp-kr-growing",
-    subgroup = "processed-resource",
+    subgroup = "basic-agriculture",
     enabled = false,
     energy_required = 75,
     hide_from_player_crafting = true,
@@ -5393,7 +5396,7 @@ data:extend({
     name = "sp-seed-processing",  -- #ForRegEx# - recipe
     icon = "__space-age__/graphics/icons/tree-seed.png",
     category = "sp-kr-growing",
-    subgroup = "processed-resource",
+    subgroup = "basic-agriculture",
     order = "b[nauvis-agriculture]-a[seed-processing]",
     enabled = false,
     allow_productivity = true,

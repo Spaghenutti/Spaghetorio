@@ -170,6 +170,10 @@ data:extend({
   },
   {
     type = "recipe-category",
+    name = "crystallizing-with-fluid"
+  },
+  {
+    type = "recipe-category",
     name = "incinerating"
   },
   {

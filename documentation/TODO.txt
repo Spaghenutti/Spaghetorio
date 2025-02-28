@@ -23,6 +23,9 @@ TODO for 0.3.3
     - xray imaging with thallium 201
     - thallium used in optics
     - used in rodent poison
+  - clean up code for buildings
+  - organize icons in factorio pedia and crafting window
+  - integrate order.lua in entity.lua
   + Fix foundry recipe chain
     + Add heat resistant electronics to arc furnace and foundry 
       + Insulated metal substrate (this is made in electromagnetic plant?)
@@ -59,7 +62,7 @@ TODO for 0.3.4
   - Update computer science 2 branch of tech tree
   - Update cryogenic science 2 branch of tech tree
   - Update utility science 2 branch of tech tree
-  - Add biological / agricultural item group
+  + Add biological / agricultural item group
   - update mining productivity tech
   - Fix / add casting recipes
   - Fix productivity tehnologies (see steel plate productivity)
@@ -67,6 +70,10 @@ TODO for 0.3.4
 TODO for 0.3.5
   - Update space science 2 branch of tech tree
   - Add back blunagium, grobgnum, rukite and yemnuth rockets (even though they are unlocked later)
+
+TODO for 0.3.6
+  - add matter conversion recipes
+  - create funictions to automate generation of acro conversion recipes
 
 --------------------------------------------------------------------------------
 

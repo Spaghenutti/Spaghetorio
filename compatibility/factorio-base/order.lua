@@ -55,3 +55,11 @@ data.raw["autoplace-control"]["stone"].order = "b[stone]"
 data.raw["autoplace-control"]["coal"].order = "b[coal]"
 data.raw["autoplace-control"]["uranium-ore"].order = "b[uranium-ore]"
 data.raw["autoplace-control"]["crude-oil"].order = "c[crude-oil]"
+
+-- Change order of item group
+data.raw["item-group"]["signals"].order = "z-1"
+data.raw["item-group"]["enemies"].order = "z-2"
+data.raw["item-group"]["tiles"].order = "z-3"
+data.raw["item-group"]["environment"].order = "z-4"
+data.raw["item-group"]["effects"].order = "z-5"
+data.raw["item-group"]["other"].order = "z-6"  -- in game its called unsorted

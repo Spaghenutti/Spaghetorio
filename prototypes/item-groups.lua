@@ -356,7 +356,7 @@ data:extend({
   },
   ------------------------------------------------------------------------------
   -- MARK: fluid
-  -- Set combat to seventh place
+  -- Set fluid to seventh place
   ------------------------------------------------------------------------------
   {
     type = "item-group",
@@ -419,6 +419,24 @@ data:extend({
     name = "incinerate-fluid",
     group = "fluids",
     order = "z"
+  },
+  ------------------------------------------------------------------------------
+  -- MARK: biology
+  -- Set biology to seventh place
+  ------------------------------------------------------------------------------
+  {
+    type = "item-group",
+    name = "biology",  -- #ForRegEx# - item-group
+    order = "h",
+    -- There is no icon_scale or something value i can pass to scale image...??
+    icon = "__Spaghetorio__/graphics/item-groups/fish-breeding.png",
+    icon_size = 76,
+  },
+  {
+    type = "item-subgroup",
+    name = "basic-agriculture",
+    group = "biology",
+    order = "a"
   },
   ------------------------------------------------------------------------------
   -- MARK: other
