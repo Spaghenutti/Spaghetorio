@@ -303,7 +303,7 @@ data.raw.technology["nuclear-power"].unit.ingredients = {
 
 table.insert(data.raw.technology["automation-2"].prerequisites, "sp-heatsink")
 table.insert(data.raw.technology["automation-2"].prerequisites, "sp-material-science-pack-1")
-table.insert(data.raw.technology["automation-2"].prerequisites, "sp-electronic-science-pack-1")
+table.insert(data.raw.technology["automation-2"].prerequisites, "advanced-circuit")
 data.raw.technology["automation-2"].unit.ingredients = {
   {"automation-science-pack", 1},
   {"logistic-science-pack", 1},

@@ -2578,6 +2578,72 @@ data:extend({
   ------------------------------------------------------------------------------
   {
     type = "recipe",
+    name = "sp-resistor",  -- #ForRegEx# - recipe
+    category = "chemistry",
+    enabled = false,
+    energy_required = 2,
+    ingredients = {
+      {type = "item", name = "carbon", amount = 1},
+      {type = "fluid", name = "sp-phosphoric-acid", amount = 12},
+      {type = "item", name = "copper-cable", amount = 2},
+      {type = "item", name = "sp-nickel-ingot", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-resistor", amount = 4}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-capacitor-from-aluminum",  -- #ForRegEx# - recipe
+    category = "chemistry",
+    enabled = false,
+    energy_required = 3.2,
+    ingredients = {
+      {type = "item", name = "copper-cable", amount = 1},
+      {type = "fluid", name = "sp-phosphoric-acid", amount = 10},
+      {type = "item", name = "sp-aluminum-sheet", amount = 2},
+      {type = "item", name = "plastic-bar", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-capacitor", amount = 3}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-transistor",  -- #ForRegEx# - recipe
+    category = "chemistry",
+    enabled = false,
+    energy_required = 2.8,
+    ingredients = {
+      {type = "item", name = "sp-silicon", amount = 2},
+      {type = "item", name = "copper-cable", amount = 1},
+      {type = "item", name = "sp-phosphorus", amount = 1},
+      {type = "fluid", name = "sp-phosphoric-acid", amount = 8},
+      {type = "item", name = "plastic-bar", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-transistor", amount = 3}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-vacuum-tube",  -- #ForRegEx# - recipe
+    category = "chemistry",
+    enabled = false,
+    energy_required = 3,
+    ingredients = {
+      {type = "item", name = "sp-glass", amount = 3},
+      {type = "item", name = "copper-cable", amount = 2},
+      {type = "item", name = "carbon", amount = 1},
+      {type = "item", name = "sp-cobalt-billet", amount = 1},
+      {type = "fluid", name = "sp-hydrogen", amount = 5}
+    },
+    results = {
+      {type = "item", name = "sp-vacuum-tube", amount = 2}
+    }
+  },
+  {
+    type = "recipe",
     name = "sp-hydrogen-chloride",  -- #ForRegEx# - recipe
     category = "chemistry",
     energy_required = 1,
@@ -7367,38 +7433,6 @@ data:extend({
   ------------------------------------------------------------------------------
   -- MARK: crafting-with-fluid
   ------------------------------------------------------------------------------
-  {
-    type = "recipe",
-    name = "sp-resistor",  -- #ForRegEx# - recipe
-    category = "crafting-with-fluid",
-    enabled = false,
-    energy_required = 2,
-    ingredients = {
-      {type = "item", name = "carbon", amount = 1},
-      {type = "fluid", name = "sp-phosphoric-acid", amount = 12},
-      {type = "item", name = "copper-cable", amount = 2},
-      {type = "item", name = "sp-nickel-ingot", amount = 1}
-    },
-    results = {
-      {type = "item", name = "sp-resistor", amount = 4}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-capacitor-from-aluminum",  -- #ForRegEx# - recipe
-    category = "crafting-with-fluid",
-    enabled = false,
-    energy_required = 3.2,
-    ingredients = {
-      {type = "item", name = "copper-cable", amount = 1},
-      {type = "fluid", name = "sp-phosphoric-acid", amount = 10},
-      {type = "item", name = "sp-aluminum-sheet", amount = 2},
-      {type = "item", name = "plastic-bar", amount = 1},
-    },
-    results = {
-      {type = "item", name = "sp-capacitor", amount = 3}
-    }
-  },
   {
     type = "recipe",
     name = "sp-capacitor-from-niobium",  -- #ForRegEx# - recipe
@@ -14053,23 +14087,6 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-transistor",  -- #ForRegEx# - recipe
-    category = "crafting-with-fluid",
-    enabled = false,
-    energy_required = 2.8,
-    ingredients = {
-      {type = "item", name = "sp-silicon", amount = 2},
-      {type = "item", name = "copper-cable", amount = 1},
-      {type = "item", name = "sp-phosphorus", amount = 1},
-      {type = "fluid", name = "sp-phosphoric-acid", amount = 8},
-      {type = "item", name = "plastic-bar", amount = 1}
-    },
-    results = {
-      {type = "item", name = "sp-transistor", amount = 3}
-    }
-  },
-  {
-    type = "recipe",
     name = "sp-light-emitting-diode",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
@@ -14405,23 +14422,6 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-gravitonium", amount = 1}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-vacuum-tube",  -- #ForRegEx# - recipe
-    category = "crafting-with-fluid",
-    enabled = false,
-    energy_required = 3,
-    ingredients = {
-      {type = "item", name = "sp-glass", amount = 3},
-      {type = "item", name = "copper-cable", amount = 2},
-      {type = "item", name = "carbon", amount = 1},
-      {type = "item", name = "sp-cobalt-billet", amount = 1},
-      {type = "fluid", name = "sp-hydrogen", amount = 5}
-    },
-    results = {
-      {type = "item", name = "sp-vacuum-tube", amount = 2}
     }
   },
   -- MARK: Fix Krastorio recipes

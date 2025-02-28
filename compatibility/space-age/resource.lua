@@ -3,6 +3,7 @@ local resource_autoplace = require("__core__/lualib/resource-autoplace")
 
 data.raw.resource["calcite"].stage_counts = {250000, 150000, 100000, 70000, 50000, 35000, 20000, 10000}
 data.raw.resource["calcite"].category = nil  -- Undo category change from hard solid from EverythingOnNauvis
+data.raw.resource["calcite"].minable.fluid_amount = 5
 data.raw.resource["calcite"].minable.required_fluid = "sulfuric-acid"
 data.raw.resource["calcite"].autoplace = resource_autoplace.resource_autoplace_settings({
   name = "calcite",
@@ -19,6 +20,7 @@ data.raw.resource["calcite"].autoplace = resource_autoplace.resource_autoplace_s
 })
 
 data.raw.resource["tungsten-ore"].stage_counts = {250000, 150000, 100000, 70000, 50000, 35000, 20000, 10000}
+data.raw.resource["tungsten-ore"].minable.fluid_amount = 8
 data.raw.resource["tungsten-ore"].minable.required_fluid = "sp-perchloric-acid"
 data.raw.resource["tungsten-ore"].autoplace = resource_autoplace.resource_autoplace_settings({
   name = "tungsten_ore",

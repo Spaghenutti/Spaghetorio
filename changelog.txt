@@ -1,6 +1,16 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.3.3
+Date: 2025-03-28
+  Changes:
+    - assembling machine 1 now requires electronic circuits
+    - assembling machine 2 now requires advanced circuits
+    - electrical components are now made in chemical plant
+  Bugfixes:
+    - Some ores now require an amount of fluid to be mined (before it was 0)
+    - automation 2 technology is now reachable
+---------------------------------------------------------------------------------------------------
 Version: 0.3.2
-Date: 2025-02-26
+Date: 2025-02-28
   Notes:
     - Tech tree up to metallurgic (tier 2), electromagnetic (tier 2) and cryogenic packs is updated but i have not finished my playthrough. Please give me some feedback in the discussions section if you encounter any issues.
   Features:
