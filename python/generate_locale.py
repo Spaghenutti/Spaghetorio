@@ -61,6 +61,8 @@ def get_sections(object_type: str) -> List[str]:
             return ["item-name"]
         case "recipe":
             return ["recipe-name"]
+        case "resource":
+            return ["resource-name"]
         case "technology" | "infinite-technology": 
             return ["technology-name"]
         case _:
@@ -119,6 +121,7 @@ def update_locale() -> None:
     extend_locale(parse_lua(constants.ITEM_GROUPS_PATH))
     extend_locale(parse_lua(constants.ITEMS_PATH))
     extend_locale(parse_lua(constants.RECIPES_PATH))
+    # extend_locale(parse_lua(constants.RESOURCES_PATH))  # needs to be done manually since the resources do not start with sp- or sp-kr-
     extend_locale(parse_lua(constants.ROCKET_SILO_PATH))
     extend_locale(parse_lua(constants.TECHNOLOGIES_PATH))
 
