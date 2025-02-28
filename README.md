@@ -22,7 +22,7 @@ Inspired by [brevven](https://mods.factorio.com/user/brevven).
 
 ## Current state of the mod
 
-This mod is in early alpha. In my current playthrough I can finish the first tier of science packs (about 150h taking it casually). The mod contains 3 tiers of science pack:
+This mod is in early alpha. In my current playthrough I can finish the first tier of science packs (about 200h taking it casually). The mod contains 3 tiers of science pack:
 
 ![](images/science-packs.png)
 
@@ -45,6 +45,7 @@ If you have some cool ideas you can give me feedback in the discussions section.
 - Pathogen lab for an extense biological tech branch.
 - Freezer for freezing biological / spoilable items.
 - Support for [text plates](https://mods.factorio.com/mod/textplates?from=search)
+- Support for [LTN](https://mods.factorio.com/mod/LogisticTrainNetwork?from=search)
 
 ## Contributors
 

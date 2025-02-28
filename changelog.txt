@@ -2,7 +2,7 @@
 Version: 0.3.2
 Date: 2025-02-26
   Notes:
-    - Tech tree up to metallurgic and electromagnetic packs is updated but not fully tested. Please give me some feedback in the discussions section if you encounter any issues.
+    - Tech tree up to metallurgic (tier 2), electromagnetic (tier 2) and cryogenic packs is updated but i have not finished my playthrough. Please give me some feedback in the discussions section if you encounter any issues.
   Features:
     - Added new items
     - Added locale for some late game tech

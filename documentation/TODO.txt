@@ -60,13 +60,17 @@ TODO for 0.3.3
     ? Note: fluid boxes can only be filtered to contain one type. Since normal pipes pass any fluid, adding pipes makes no sense. https://lua-api.factorio.com/latest/types/FluidBox.html
   - Update recipe chain for nuclear reactor
   - Update military science 2 branch of tech tree
+  - Updated biological branch tier 1 and 2 of tech tree 
+  - Support text plates mod
+  - Support LTN mod
 
 TODO for 0.3.4
   - Update computer science 2 branch of tech tree
   - Update cryogenic science 2 branch of tech tree
   - Update utility science 2 branch of tech tree
   + Add biological / agricultural item group
-  - update mining productivity tech
+  - Update mining productivity tech
+  - Change lightning collectors to power poles
   - Fix / add casting recipes
   - Fix productivity tehnologies (see steel plate productivity)
 
@@ -75,8 +79,8 @@ TODO for 0.3.5
   - Add back blunagium, grobgnum, rukite and yemnuth rockets (even though they are unlocked later)
 
 TODO for 0.3.6
-  - add matter conversion recipes
-  - create funictions to automate generation of acro conversion recipes
+  - Add matter conversion recipes
+  - Create funictions to automate generation of acro conversion recipes
 
 --------------------------------------------------------------------------------
 
