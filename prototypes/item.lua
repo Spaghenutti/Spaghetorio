@@ -905,7 +905,7 @@ data:extend({
     },
     subgroup = "processed-resource",
     order = "[sand]",
-    stack_size = 200
+    stack_size = 1000
   },
   {
     type = "item",

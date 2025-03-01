@@ -7,7 +7,7 @@ Inspired by [brevven](https://mods.factorio.com/user/brevven).
 ## Features
 
 - 25 new resources like **chromite**, **core-fragment**, **iodine-brine** and **blunagium**
-- over 550 new items like **inconel**, **copper tube**, **gear box**, **processor** and of course **dark energy harvester**
+- over 550 new items like **electromagnet**, **gear box**, **inconel** and of course **dark energy harvester**
 - over 70 new fluids like **aqueous niobium**, **helium 3**, **glycerin** and **chronomatter**
 - over 40 new buildings like **alloy forge**, **induction hardening facility** and **electrolysis plant**
 - over 750 new recipes including different production chains for processing resources and intermediate products

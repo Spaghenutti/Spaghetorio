@@ -67,12 +67,15 @@ data:extend({
     crafting_categories = {"sawing"},
     crafting_speed = 1,
     -- scale_entity_info_icon = true,
-    vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
+    vehicle_impact_sound = {
+      filename = "__base__/sound/car-metal-impact.ogg",
+      volume = 0.65
+    },
     working_sound = {
-      sound = { filename = "__base__/sound/assembling-machine-t1-1.ogg", volume = 0.5 },
-      audible_distance_modifier = 0.5,
-      fade_in_ticks = 4,
-      fade_out_ticks = 20
+      sound = {
+        filename = "__Spaghetorio__/sounds/buildings/lumber-mill.ogg",
+        volume = 1
+      },
     },
     return_ingredients_on_change = true,
     energy_source = {
