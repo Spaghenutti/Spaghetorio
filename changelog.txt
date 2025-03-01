@@ -3,6 +3,8 @@ Version: 0.3.4
 Date: 2025-04-07
   Features:
     - Added new lumber mill sound thanks to Cyfagy
+  Changes:
+    - crushing tinstone will yield more leadstone. leadstone yields more lead slabs.
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.3
 Date: 2025-03-28

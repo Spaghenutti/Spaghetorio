@@ -84,6 +84,7 @@ function createKrastorioLoader(data)
     fast_replaceable_group = "loader",
     next_upgrade = upgrade,
     speed = speed,
+    icon_draw_specification = {scale = 0.5},
     -- for space exploration compatibility
     se_allow_in_space = data.se_allow_in_space,
 

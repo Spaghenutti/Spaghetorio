@@ -3,7 +3,8 @@ TODO for 0.3.2
   + Update stack sizes
   + fix locale for core rift
 
-TODO for 0.3.3
+TODO for 0.3.4
+  - Add inserter being able to put item in any side of belt
   - Remove "sp-recipes-without-technology"
   - Uses for tellurium
     + Add thermocouple (uses tellurium)
@@ -64,7 +65,7 @@ TODO for 0.3.3
   - Support text plates mod
   - Support LTN mod
 
-TODO for 0.3.4
+TODO for 0.3.5
   - Update computer science 2 branch of tech tree
   - Update cryogenic science 2 branch of tech tree
   - Update utility science 2 branch of tech tree
@@ -74,11 +75,11 @@ TODO for 0.3.4
   - Fix / add casting recipes
   - Fix productivity tehnologies (see steel plate productivity)
 
-TODO for 0.3.5
+TODO for 0.3.6
   - Update space science 2 branch of tech tree
   - Add back blunagium, grobgnum, rukite and yemnuth rockets (even though they are unlocked later)
 
-TODO for 0.3.6
+TODO for 0.3.7
   - Add matter conversion recipes
   - Create funictions to automate generation of acro conversion recipes
 

@@ -152,7 +152,7 @@ data:extend({
     energy_required = 4,
     hide_from_player_crafting = true,
     ingredients = {
-      {type = "item", name = "sp-tinstone", amount = 3},
+      {type = "item", name = "sp-tinstone", amount = 2},
     },
     results = {
       {type = "item", name = "sp-tin-ingot", probability = 0.7, amount = 2},
@@ -164,7 +164,7 @@ data:extend({
     name = "sp-lead-slab",  -- #ForRegEx# - recipe
     category = "smelting",
     enabled = false,
-    energy_required = 2,
+    energy_required = 1,
     ingredients = {
       {type = "item", name = "sp-leadstone", amount = 1},
     },
@@ -572,7 +572,7 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-nickel-ingot", amount = 8},
-      {type = "item", name = "iron-plate", amount = 5}
+      {type = "item", name = "iron-plate", amount = 2}
     }
   },
   {
@@ -5264,14 +5264,14 @@ data:extend({
     category = "crushing",
     subgroup = "crushed-resource-recipe",
     enabled = false,
-    energy_required = 1,
+    energy_required = 2,
     ingredients = {
       {type = "item", name = "sp-tinstone", amount = 3},
     },
     results = {
       {type = "item", name = "sp-sand", amount = 1},
-      {type = "item", name = "sp-crushed-tinstone", probability = 0.75, amount = 3},
-      {type = "item", name = "sp-leadstone", probability = 0.75, amount = 1}
+      {type = "item", name = "sp-crushed-tinstone", probability = 0.75, amount = 6},
+      {type = "item", name = "sp-leadstone", probability = 0.75, amount = 3}
     }
   },
   {
