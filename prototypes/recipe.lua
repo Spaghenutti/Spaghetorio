@@ -660,24 +660,26 @@ data:extend({
       {type = "item", name = "sp-zirconium-rod", amount = 12}
     }
   },
+  {
+    type = "recipe",
+    name = "sp-crushed-molybdenum-smelting",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/molybdenum-trioxide.png", 64,
+                                         "__Spaghetorio__/graphics/icons/crushed-molybdenum-ore-1.png", 64),
+    category = "crushed-smelting",
+    subgroup = "raw-material",
+    enabled = false,
+    energy_required = 14,
+    hide_from_player_crafting = true,
+    ingredients = {
+      {type = "item", name = "sp-crushed-molybdenum-ore", amount = 7}
+    },
+    results = {
+      {type = "item", name = "sp-molybdenum-trioxide", amount = 6}
+    }
+  },
   ------------------------------------------------------------------------------
   -- MARK: intermediate-smelting
   ------------------------------------------------------------------------------
-  {
-    type = "recipe",
-    name = "sp-rukite-bar",  -- #ForRegEx# - recipe
-    category = "intermediate-smelting",
-    enabled = false,
-    energy_required = 3.6,
-    ingredients = {
-      {type = "item", name = "sp-tungsten-powder", amount = 1},
-      {type = "item", name = "carbon", amount = 1},
-      {type = "item", name = "sp-rukite-powder", amount = 4}
-    },
-    results = {
-      {type = "item", name = "sp-rukite-bar", amount = 1}
-    }
-  },
   {
     type = "recipe",
     name = "sp-barium-sulfide",  -- #ForRegEx# - recipe
@@ -856,6 +858,49 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-gallium", amount = 2}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-zirconium-rod-from-sodium-zirconate",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/zirconium-rod.png", 64,
+                                         "__Spaghetorio__/graphics/icons/sodium-zirconate.png", 64),
+    category = "intermediate-smelting",
+    enabled = false,
+    energy_required = 3,
+    ingredients = {
+      {type = "item", name = "sp-sodium-zirconate", amount = 6},
+    },
+    results = {
+      {type = "item", name = "sp-zirconium-rod", amount = 4}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-hafnium",  -- #ForRegEx# - recipe
+    category = "intermediate-smelting",
+    enabled = false,
+    energy_required = 5,
+    ingredients = {
+      {type = "item", name = "sp-sodium-hafnate", amount = 3},
+    },
+    results = {
+      {type = "item", name = "sp-hafnium", amount = 3}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-rukite-bar",  -- #ForRegEx# - recipe
+    category = "intermediate-smelting",
+    enabled = false,
+    energy_required = 3.6,
+    ingredients = {
+      {type = "item", name = "sp-tungsten-powder", amount = 1},
+      {type = "item", name = "carbon", amount = 1},
+      {type = "item", name = "sp-rukite-powder", amount = 4}
+    },
+    results = {
+      {type = "item", name = "sp-rukite-bar", amount = 1}
     }
   },
   ------------------------------------------------------------------------------
@@ -1667,6 +1712,20 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "sp-nickel-rhenium",  -- #ForRegEx# - recipe
+    category = "alloy-smelting",
+    enabled = false,
+    energy_required = 40,
+    ingredients = {
+      {type = "item", name = "sp-nickel-ingot", amount = 9},
+      {type = "item", name = "sp-rhenium", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-nickel-rhenium", amount = 10}
+    }
+  },
+  {
+    type = "recipe",
     name = "sp-TiAlSn",  -- #ForRegEx# - recipe
     category = "alloy-smelting",
     enabled = false,
@@ -1749,6 +1808,21 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-zircaloy", amount = 20}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-silver-indium-cadmium",  -- #ForRegEx# - recipe
+    category = "alloy-smelting",
+    enabled = false,
+    energy_required = 30,
+    ingredients = {
+      {type = "item", name = "sp-silver", amount = 1},
+      {type = "item", name = "sp-indium-ingot", amount = 2},
+      {type = "item", name = "sp-cadmium", amount = 2}
+    },
+    results = {
+      {type = "item", name = "sp-silver-indium-cadmium", amount = 5}
     }
   },
   {
@@ -2091,6 +2165,20 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-selenium-pillet", amount = 1},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-rhenium",  -- #ForRegEx# - recipe
+    category = "smelting-with-fluid",
+    enabled = false,
+    energy_required = 2,
+    ingredients = {
+      {type = "fluid", name = "sp-ammonium-perrhenate-solution", amount = 3},
+      {type = "fluid", name = "sp-benzyltrimethylammonium-chloride", amount = 2},
+    },
+    results = {
+      {type = "item", name = "sp-rhenium", amount = 1},
     }
   },
   ------------------------------------------------------------------------------
@@ -3439,6 +3527,69 @@ data:extend({
       {type = "fluid", name = "sp-aniline", amount = 5},
     },
   },
+  {
+    type = "recipe",
+    name = "sp-hydrogen-iodide",  -- #ForRegEx# - recipe
+    category = "chemistry",
+    enabled = false,
+    energy_required = 4,
+    ingredients = {
+      {type = "fluid", name = "sp-hydrogen", amount = 8},
+      {type = "item", name = "sp-iodine", amount = 1},
+    },
+    results = {
+      {type = "fluid", name = "sp-hydrogen-iodide", amount = 5},
+    },
+  },
+  {
+    type = "recipe",
+    name = "sp-iodethene",  -- #ForRegEx# - recipe
+    category = "chemistry",
+    enabled = false,
+    energy_required = 3,
+    ingredients = {
+      {type = "fluid", name = "sp-hydrogen-iodide", amount = 5},
+      {type = "fluid", name = "sp-ethylene", amount = 5},
+    },
+    results = {
+      {type = "fluid", name = "sp-iodethene", amount = 5},
+    },
+  },
+  {
+    type = "recipe",
+    name = "sp-ammonium-perrhenate-solution",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/icons/ammonium-perrhenate-solution.png",
+    category = "chemistry",
+    subgroup = "solution",
+    enabled = false,
+    energy_required = 2,
+    ingredients = {
+      {type = "item", name = "sp-crushed-molybdenum-ore", amount = 3},
+      {type = "fluid", name = "ammoniacal-solution", amount = 5},
+    },
+    results = {
+      {type = "fluid", name = "sp-ammonium-perrhenate-solution", amount = 3},
+      {type = "item", name = "sp-molybdenum-trioxide", amount = 2},
+    },
+  },
+  {
+    type = "recipe",
+    name = "sp-sodium-zirconate-and-hafnate",  -- #ForRegEx# - recipe
+    icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/icons/sodium-zirconate.png", 64, nil,
+                                        "__Spaghetorio__/graphics/icons/sodium-hafnate.png", 64, nil),
+    category = "chemistry",
+    subgroup = "processed-resource",
+    enabled = false,
+    energy_required = 3,
+    ingredients = {
+      {type = "item", name = "sp-crushed-zirconium-ore", amount = 3},
+      {type = "fluid", name = "sp-sodium-hydroxide", amount = 5},
+    },
+    results = {
+      {type = "item", name = "sp-sodium-zirconate", amount = 3},
+      {type = "item", name = "sp-sodium-hafnate", amount = 1},
+    },
+  },
   ------------------------------------------------------------------------------
   -- MARK: advanced-chemistry
   ------------------------------------------------------------------------------
@@ -3532,21 +3683,6 @@ data:extend({
     results = {
       {type = "item", name = "sp-potassium-cyanide", amount = 3}
     }
-  },
-  {
-    type = "recipe",
-    name = "sp-ammonium-hydroxide-solution",  -- #ForRegEx# - recipe
-    category = "advanced-chemistry",
-    enabled = false,
-    energy_required = 10,
-    ingredients = {
-      {type = "fluid", name = "water", amount = 50},
-      {type = "fluid", name = "sp-benzene", amount = 50},
-      {type = "fluid", name = "ammonia", amount = 50},
-    },
-    results = {
-      {type = "fluid", name = "sp-ammonium-hydroxide-solution", amount = 50}
-    },
   },
   {
     type = "recipe",
@@ -3921,6 +4057,88 @@ data:extend({
     results = {
       {type = "item", name = "sp-polyaniline", amount = 1},
       {type = "fluid", name = "sulfuric-acid", amount = 5},
+    },
+  },
+  {
+    type = "recipe",
+    name = "sp-trialkylamine",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/icons/trialkylamine.png",
+    category = "chemical-staging",
+    subgroup = "chemical",
+    enabled = false,
+    energy_required = 4,
+    ingredients = {
+      {type = "fluid", name = "ammonia", amount = 5},
+      {type = "fluid", name = "sp-iodethene", amount = 15},
+    },
+    results = {
+      {type = "fluid", name = "sp-trialkylamine", amount = 5},
+      {type = "fluid", name = "sp-hydrogen-iodide", amount = 1},
+    },
+  },
+  {
+    type = "recipe",
+    name = "sp-methyl-chloride",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/icons/methyl-chloride.png",
+    category = "chemical-staging",
+    subgroup = "chemical",
+    enabled = false,
+    energy_required = 2,
+    ingredients = {
+      {type = "fluid", name = "sp-biomethanol", amount = 5},
+      {type = "fluid", name = "sp-hydrogen-chloride", amount = 5},
+    },
+    results = {
+      {type = "fluid", name = "sp-methyl-chloride", amount = 5},
+      {type = "fluid", name = "water", amount = 2},
+    },
+  },
+  {
+    type = "recipe",
+    name = "sp-toluene",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/icons/toluene.png",
+    category = "chemical-staging",
+    subgroup = "chemical",
+    enabled = false,
+    energy_required = 5,
+    ingredients = {
+      {type = "fluid", name = "sp-benzene", amount = 4},
+      {type = "fluid", name = "sp-methyl-chloride", amount = 4},
+    },
+    results = {
+      {type = "fluid", name = "sp-toluene", amount = 4},
+      {type = "fluid", name = "sp-hydrogen-chloride", amount = 4},
+    },
+  },
+  {
+    type = "recipe",
+    name = "sp-benzyl-chloride",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/icons/benzyl-chloride.png",
+    category = "chemical-staging",
+    subgroup = "chemical",
+    enabled = false,
+    energy_required = 5,
+    ingredients = {
+      {type = "fluid", name = "sp-toluene", amount = 3},
+      {type = "fluid", name = "sp-chlorine", amount = 3},
+    },
+    results = {
+      {type = "fluid", name = "sp-benzyl-chloride", amount = 3},
+      {type = "fluid", name = "sp-hydrogen-chloride", amount = 3},
+    },
+  },
+  {
+    type = "recipe",
+    name = "sp-benzyltrimethylammonium-chloride",  -- #ForRegEx# - recipe
+    category = "chemical-staging",
+    enabled = false,
+    energy_required = 2,
+    ingredients = {
+      {type = "fluid", name = "sp-trialkylamine", amount = 5},
+      {type = "fluid", name = "sp-benzyl-chloride", amount = 5},
+    },
+    results = {
+      {type = "fluid", name = "sp-benzyltrimethylammonium-chloride", amount = 5},
     },
   },
   {
@@ -4310,7 +4528,7 @@ data:extend({
     energy_required = 10,
     ingredients = {
       {type = "item", name = "sp-tinstone", amount = 10},
-      {type = "fluid", name = "sp-ammonium-hydroxide-solution", amount = 10},
+      {type = "fluid", name = "ammoniacal-solution", amount = 10},
     },
     results = {
       {type = "item", name = "sp-bismuth", amount = 1},
@@ -5365,6 +5583,26 @@ data:extend({
     results = {
       {type = "item", name = "sp-crushed-cobalt-ore", probability = 0.9, amount = 3},
       {type = "item", name = "sp-arsenic-trioxide", probability = 0.1, amount = 2}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-crushing-molybdenum-ore",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/crushing/crushing-molybdenum-ore.png",
+    icon_size = 256,
+    mip_maps = 4,
+    category = "crushing",
+    subgroup = "crushed-resource-recipe",
+    enabled = false,
+    energy_required = 4,
+    ingredients = {
+      {type = "item", name = "sp-molybdenum-ore", amount = 5},
+    },
+    results = {
+      {type = "item", name = "sp-sand", amount = 1},
+      {type = "item", name = "sp-crushed-molybdenum-ore", probability = 0.7, amount = 6},
+      {type = "item", name = "sp-crushed-copper-ore", probability = 0.2, amount = 1},
+      {type = "item", name = "sp-leadstone", probability = 0.1, amount = 1}
     }
   },
   {
@@ -7958,10 +8196,14 @@ data:extend({
     name = "sp-control-rod",  -- #ForRegEx# - recipe
     category = "advanced-crafting",
     enabled = false,
-    energy_required = 4.8,
+    energy_required = 5,
     ingredients = {
-      {type = "item", name = "sp-TiAlSn", amount = 3},
-      {type = "item", name = "sp-zirconium-rod", amount = 1}
+      {type = "item", name = "sp-boron-carbide", amount = 1},
+      {type = "item", name = "sp-lead-molybdate", amount = 1},
+      {type = "item", name = "sp-cadmium", amount = 1},
+      {type = "item", name = "sp-hafnium", amount = 1},
+      {type = "item", name = "sp-silver-indium-cadmium", amount = 1},
+      {type = "item", name = "sp-zircaloy", amount = 3}
     },
     results = {
       {type = "item", name = "sp-control-rod", amount = 1}
@@ -7972,13 +8214,12 @@ data:extend({
     name = "sp-empty-fuel-rod",  -- #ForRegEx# - recipe
     category = "advanced-crafting",
     enabled = false,
-    energy_required = 20,
+    energy_required = 8,
     ingredients = {
       {type = "item", name = "carbon", amount = 2},
       {type = "item", name = "tungsten-plate", amount = 1},
-      {type = "item", name = "sp-zirconium-rod", amount = 2},
+      {type = "item", name = "sp-zircaloy", amount = 3},
       {type = "item", name = "sp-cerium", amount = 1},
-      {type = "item", name = "sp-TiNb", amount = 8}
     },
     results = {
       {type = "item", name = "sp-empty-fuel-rod", amount = 1}

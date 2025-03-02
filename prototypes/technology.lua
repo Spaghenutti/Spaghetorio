@@ -1078,6 +1078,14 @@ data:extend({
       },
       {
         type = "unlock-recipe",
+        recipe = "sp-crushing-molybdenum-ore"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-crushed-molybdenum-smelting"
+      },
+      {
+        type = "unlock-recipe",
         recipe = "sp-molybdenum-pillet"
       },
       {
@@ -1100,6 +1108,87 @@ data:extend({
         {"sp-material-science-pack-2", 1},
         {"sp-geological-science-pack-2", 1},
         {"metallurgic-science-pack", 1},
+        {"electromagnetic-science-pack", 1}
+      },
+      time = 30
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-rhenium-processing",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghetorio__/graphics/hr-icons/rhenium.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-ammonium-perrhenate-solution"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-rhenium"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-nickel-rhenium"
+      }
+    },
+    prerequisites = {
+      "sp-benzyltrimethylammonium-chloride",
+      "sp-metallurgic-science-pack-2"
+    },
+    unit =
+    {
+      count = 250,
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-electronic-science-pack-1", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"sp-metallurgic-science-pack-2", 1},
+        {"electromagnetic-science-pack", 1}
+      },
+      time = 30
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-hafnium-processing",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghetorio__/graphics/hr-icons/hafnium.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-sodium-zirconate-and-hafnate"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-zirconium-rod-from-sodium-zirconate"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-hafnium"
+      }
+    },
+    prerequisites = {
+      "sp-zirconium-processing",
+      "sp-sodium-hydroxide",
+      "sp-metallurgic-science-pack-2"
+    },
+    unit =
+    {
+      count = 250,
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-electronic-science-pack-1", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"sp-metallurgic-science-pack-2", 1},
         {"electromagnetic-science-pack", 1}
       },
       time = 30
@@ -2372,7 +2461,7 @@ data:extend({
     name = "sp-alkaline-solutions",  -- #ForRegEx# - technology
     icon_size = 256,
     icons = util.icon.combine_three_icons("__Spaghetorio__/graphics/hr-icons/calcium-hydroxide-solution.png", 256, nil,
-                                          "__Spaghetorio__/graphics/hr-icons/ammonium-hydroxide-solution.png", 256, nil,
+                                          "__Spaghetorio__/graphics/hr-icons/sodium-carbonate-solution.png", 256, nil,
                                           "__Spaghetorio__/graphics/hr-icons/potassium-hydroxide-solution.png", 256, nil),
     effects =
     {
@@ -2386,10 +2475,6 @@ data:extend({
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-ammonium-hydroxide-solution",
-      },
-      {
-        type = "unlock-recipe",
         recipe = "sp-potassium-hydroxide-solution",
       },
       {
@@ -2399,6 +2484,10 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "ammoniacal-solution-separation",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "ice-melting",
       }
     },
     prerequisites = {
@@ -5222,6 +5311,43 @@ data:extend({
   },
   {
     type = "technology",
+    name = "sp-iodine-chemistry",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghetorio__/graphics/hr-icons/iodethene.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-hydrogen-iodide"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-iodethene"
+      }
+    },
+    prerequisites = {
+      "sp-iodine-processing",
+      "sp-ethylene-products"
+    },
+    unit =
+    {
+      count = 150,
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-electronic-science-pack-1", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"metallurgic-science-pack", 1},
+        {"electromagnetic-science-pack", 1},
+        {"production-science-pack", 1}
+      },
+      time = 30
+    },
+  },
+  {
+    type = "technology",
     name = "sp-acetic-products",  -- #ForRegEx# - technology
     icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/hr-icons/vinyl-acetate.png", 256, nil,
                                         "__Spaghetorio__/graphics/hr-icons/ethylene-vinyl-acetate.png", 256, nil),
@@ -5427,6 +5553,54 @@ data:extend({
         {"sp-material-science-pack-1", 1}
       },
       time = 30
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-benzyltrimethylammonium-chloride",  -- #ForRegEx# - technology
+    icon = "__Spaghetorio__/graphics/hr-icons/benzyltrimethylammonium-chloride.png",
+    icon_size = 256,
+    icon_mipmaps = 4,
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-trialkylamine",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-methyl-chloride",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-toluene",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-benzyl-chloride",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-benzyltrimethylammonium-chloride",
+      },
+    },
+    prerequisites = {
+      "sp-iodine-chemistry",
+      "sp-incinerator"
+    },
+    unit = {
+      count = 300,
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-electronic-science-pack-1", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"metallurgic-science-pack", 1},
+        {"electromagnetic-science-pack", 1},
+        {"production-science-pack", 1}
+      },
+      time = 45,
     },
   },
   {

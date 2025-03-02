@@ -248,7 +248,8 @@ data.raw.technology["cryogenic-plant"].unit = {
     {"sp-geological-science-pack-2", 1},
     {"sp-electronic-science-pack-2", 1},
     {"sp-metallurgic-science-pack-2", 1},
-    {"sp-electromagnetic-science-pack-2", 1}
+    {"sp-electromagnetic-science-pack-2", 1},
+    {"production-science-pack", 1}
   },
   time = 30
 }

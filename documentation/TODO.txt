@@ -60,6 +60,26 @@ TODO for 0.3.4
     ? Make compatibility with informatron and explain difference from tungsten pipe to normal pipe
     ? Note: fluid boxes can only be filtered to contain one type. Since normal pipes pass any fluid, adding pipes makes no sense. https://lua-api.factorio.com/latest/types/FluidBox.html
   - Update recipe chain for nuclear reactor
+    - turbine parts
+      + rhenium
+        + crushed molybdenum
+        + ammoniacal solution + crushed molybdenum -> ammonium perrhenate solution (NH4ReO4)
+        + ammonium perrhenate solution (NH4ReO4) + Benzyltrimethylammonium chloride -> rhenium
+        + trialkylamine + benzyl chloride -> Benzyltrimethylammonium chloride
+          + trialkylamine N(C₂H₅)₃:
+            + ethanol + iodine -> iodethane
+            + ammonia NH₃ + iodethane C₂H₅I -> triethylamine + hydrogen-iodide HI
+          + benzyl chloride C₆H₅CH₂Cl:
+            + methanol + Hydrogen chloride -> Methyl chloride CH₃Cl + water
+            + Benzene C₆H₆ + Methyl chloride CH₃Cl -> toluene C₆H₅CH₃ + Hydrogen chloride HCl
+            + toluene C₆H₅CH₃ + Chlorine -> Benzyl chloride C₆H₅CH₂Cl + Hydrogen chloride HCl
+      - nickel-rhenium alloy
+    - reactor core / fuel rods
+      - hafnium
+        - zircon ore + sodium hydroxide -> sodium zirconate + sodium hafnate
+        - sodium zirconate + ammoniacal solution -> zirconium-rod
+        - sodium hafnate + ammoniacal solution -> hafnium
+      + silver-indium-cadmium
   - Update military science 2 branch of tech tree
   - Updated biological branch tier 1 and 2 of tech tree 
   - Support text plates mod

@@ -3,7 +3,9 @@ Version: 0.3.4
 Date: 2025-04-07
   Features:
     - Added new lumber mill sound thanks to Cyfagy
+    - Added hafnium and rheniun recipe chains
   Changes:
+    - removed ammonium-hydroxide-solution. It's kinda the same thing as ammoniacal solution ¯\_(ツ)_/¯
     - crushing tinstone will yield more leadstone. leadstone yields more lead slabs.
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.3

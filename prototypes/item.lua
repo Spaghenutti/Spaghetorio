@@ -563,6 +563,22 @@ data:extend({
   },
   {
     type = "item",
+    name = "sp-crushed-molybdenum-ore",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/crushed-molybdenum-ore-1.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    pictures = {
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-molybdenum-ore-1.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-molybdenum-ore-2.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-molybdenum-ore-3.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-molybdenum-ore-4.png", scale = 0.5, mipmap_count = 4}
+    },
+    subgroup = "crushed-resource",
+    order = "[crushed-molybdenum-ore]",
+    stack_size = 200
+  },
+  {
+    type = "item",
     name = "sp-crushed-tinstone",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/crushed-tinstone-1.png",
     icon_size = 64,
@@ -1093,6 +1109,26 @@ data:extend({
   },
   {
     type = "item",
+    name = "sp-sodium-hafnate",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/sodium-hafnate.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "processed-resource",
+    order = "[sodium-hafnate]",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "sp-sodium-zirconate",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/sodium-zirconate.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "processed-resource",
+    order = "[sodium-zirconate]",
+    stack_size = 100
+  },
+  {
+    type = "item",
     name = "sp-coke",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/coke/coke.png",
     icon_size = 64,
@@ -1520,6 +1556,26 @@ data:extend({
     scale = 0.5,
     subgroup = "processed-metal",
     order = "[gallium]",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "sp-hafnium",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/hafnium.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "processed-metal",
+    order = "[hafnium]",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "sp-rhenium",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/rhenium.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "processed-metal",
+    order = "[rhenium]",
     stack_size = 100
   },
   ------------------------------------------------------------------------------
@@ -2139,8 +2195,28 @@ data:extend({
     icon_size = 64,
     scale = 0.5,
     subgroup = "alloy",
-    order = "[vanadium-steel]",
+    order = "[tungsten-steel]",
     stack_size = 100
+  },
+  {
+    type = "item",
+    name = "sp-nickel-rhenium",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/nickel-rhenium.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "alloy",
+    order = "[nickel-rhenium]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "sp-silver-indium-cadmium",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/silver-indium-cadmium.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "alloy",
+    order = "[silver-indium-cadmium]",
+    stack_size = 50
   },
   {
     type = "item",

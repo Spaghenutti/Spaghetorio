@@ -228,15 +228,15 @@ data:extend({
   },
   {
     type = "fluid",
-    name = "sp-ammonium-hydroxide-solution",  -- #ForRegEx# - fluid
+    name = "sp-ammonium-perrhenate-solution",  -- #ForRegEx# - fluid
     default_temperature = 25,
     base_color = {r=1.0, g=0.4, b=0.0},
     flow_color = {r=1.0, g=0.4, b=0.0},
-    icon = "__Spaghetorio__/graphics/icons/ammonium-hydroxide-solution.png",
+    icon = "__Spaghetorio__/graphics/icons/ammonium-perrhenate-solution.png",
     icon_size = 64,
     scale = 0.5,
     subgroup = "solution",
-    order = "[ammonium-hydroxide-solution]",
+    order = "[ammonium-perrhenate-solution]",
     stack_size = 200
   },
   ------------------------------------------------------------------------------
@@ -923,6 +923,97 @@ data:extend({
     icon_mipmaps = 4,
     subgroup = "chemical",
     order = "a[fluid]-f[aniline]"
+  },
+  {
+    type = "fluid",
+    name = "sp-benzyl-chloride",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    base_color = {r=0.0, g=0.0, b=0.55},
+    flow_color = {r=0.0, g=0.0, b=0.55},
+    icon = "__Spaghetorio__/graphics/icons/benzyl-chloride.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "chemical",
+    order = "a[fluid]-f[benzyl-chloride]"
+  },
+  {
+    type = "fluid",
+    name = "sp-methyl-chloride",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    base_color = {r=0.0, g=0.0, b=0.55},
+    flow_color = {r=0.0, g=0.0, b=0.55},
+    icon = "__Spaghetorio__/graphics/icons/methyl-chloride.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "chemical",
+    order = "a[fluid]-f[methyl-chloride]"
+  },
+  {
+    type = "fluid",
+    name = "sp-benzyltrimethylammonium-chloride",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    base_color = {r=0.0, g=0.0, b=0.55},
+    flow_color = {r=0.0, g=0.0, b=0.55},
+    icon = "__Spaghetorio__/graphics/icons/benzyltrimethylammonium-chloride.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "chemical",
+    order = "a[fluid]-f[benzyltrimethylammonium-chloride]"
+  },
+  {
+    type = "fluid",
+    name = "sp-trialkylamine",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    base_color = {r=0.0, g=0.0, b=0.55},
+    flow_color = {r=0.0, g=0.0, b=0.55},
+    icon = "__Spaghetorio__/graphics/icons/trialkylamine.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "chemical",
+    order = "a[fluid]-f[trialkylamine]"
+  },
+  {
+    type = "fluid",
+    name = "sp-toluene",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    base_color = {r=0.0, g=0.0, b=0.55},
+    flow_color = {r=0.0, g=0.0, b=0.55},
+    icon = "__Spaghetorio__/graphics/icons/toluene.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "chemical",
+    order = "a[fluid]-f[toluene]"
+  },
+  {
+    type = "fluid",
+    name = "sp-hydrogen-iodide",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    base_color = {r=0.0, g=0.0, b=0.55},
+    flow_color = {r=0.0, g=0.0, b=0.55},
+    icon = "__Spaghetorio__/graphics/icons/hydrogen-iodide.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "chemical",
+    order = "a[fluid]-f[hydrogen-iodide]"
+  },
+  {
+    type = "fluid",
+    name = "sp-iodethene",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    base_color = {r=0.0, g=0.0, b=0.55},
+    flow_color = {r=0.0, g=0.0, b=0.55},
+    icon = "__Spaghetorio__/graphics/icons/iodethene.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "chemical",
+    order = "a[fluid]-f[iodethene]"
   },
   ------------------------------------------------------------------------------
   -- MARK: alien
