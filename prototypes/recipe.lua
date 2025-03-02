@@ -3514,7 +3514,7 @@ data:extend({
     type = "recipe",
     name = "sp-aniline-from-nitrogen",  -- #ForRegEx# - recipe
     icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/aniline.png", 64,
-                                         "__space-age__/graphics/icons/fluid/ammonia.png", 64),
+                                         "__Spaghetorio__/graphics/krastorio/icons/fluids/nitrogen.png", 64),
     category = "chemistry",
     enabled = false,
     hide_from_player_crafting = true,
@@ -4306,8 +4306,8 @@ data:extend({
       {type = "item", name = "sp-silicon", amount = 1},
     },
     results = {
-      {type = "item", name = "sp-high-purity-silicon", probability = 0.3, amount = 1},
-      {type = "item", name = "sp-silicon", probability = 0.7, amount = 1}
+      {type = "item", name = "sp-high-purity-silicon", probability = 0.2, amount = 1},
+      {type = "item", name = "sp-silicon", probability = 0.8, amount = 1}
     }
   },
   {
@@ -8048,8 +8048,7 @@ data:extend({
       {type = "item", name = "sp-TiAlSn", amount = 4},
       {type = "item", name = "sp-titanium-carbide", amount = 2},
       {type = "item", name = "sp-titanium-nitride", amount = 1},
-      {type = "item", name = "tungsten-plate", amount = 5},
-      {type = "item", name = "sp-ceramics", amount = 5},
+      {type = "item", name = "sp-nickel-rhenium", amount = 1},
       {type = "item", name = "sp-turbine-blade", amount = 24}
     },
     results = {
@@ -8082,9 +8081,10 @@ data:extend({
     energy_required = 8,
     ingredients = {
       {type = "item", name = "sp-turbine-blade", amount = 10},
-      {type = "item", name = "sp-ceramics", amount = 2},
+      {type = "item", name = "sp-barium-titanate", amount = 2},
       {type = "item", name = "sp-stainless-steel", amount = 3},
       {type = "item", name = "tungsten-carbide", amount = 3},
+      {type = "item", name = "sp-nickel-rhenium", amount = 1},
       {type = "item", name = "sp-bolts", amount = 8}
     },
     results = {

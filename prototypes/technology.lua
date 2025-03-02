@@ -2765,7 +2765,8 @@ data:extend({
       },
     },
     prerequisites = {
-      "utility-science-pack"
+      "utility-science-pack",
+      "sp-rhenium-processing"
     },
     unit =
     {
@@ -8678,7 +8679,9 @@ data:extend({
       "sp-power-regulation",
       "sp-titanium-alloys",
       "sp-electrode",
-      "sp-thermoelectric-conversion"
+      "sp-thermoelectric-conversion",
+      "sp-metallurgic-science-pack-2",
+      "sp-electromagnetic-science-pack-2"
     },
     effects = {
       {
@@ -8695,6 +8698,8 @@ data:extend({
         {"sp-geological-science-pack-2", 1},
         {"sp-electronic-science-pack-2", 1},
         {"sp-chemical-science-pack-2", 1},
+        {"sp-metallurgic-science-pack-2", 1},
+        {"sp-electromagnetic-science-pack-2", 1},
         {"production-science-pack", 1}
       },
       time = 30,

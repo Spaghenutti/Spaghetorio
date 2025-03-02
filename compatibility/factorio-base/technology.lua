@@ -317,6 +317,7 @@ data.raw.technology["nuclear-power"].effects = {
 table.insert(data.raw.technology["nuclear-power"].prerequisites, "heating-tower")
 table.insert(data.raw.technology["nuclear-power"].prerequisites, "sp-turbine-parts")
 table.insert(data.raw.technology["nuclear-power"].prerequisites, "sp-control-unit")
+table.insert(data.raw.technology["nuclear-power"].prerequisites, "sp-hafnium-processing")
 data.raw.technology["nuclear-power"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},
   {"sp-logistic-science-pack-2", 1},
