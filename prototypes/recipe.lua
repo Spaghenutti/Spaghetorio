@@ -4535,6 +4535,21 @@ data:extend({
       {type = "item", name = "sp-tin-ingot", amount = 3},
     },
   },
+  {
+    type = "recipe",
+    name = "sp-infrared-filter",  -- #ForRegEx# - recipe
+    category = "crystallizing-with-fluid",
+    enabled = false,
+    energy_required = 1.6,
+    ingredients = {
+      {type = "fluid", name = "sp-aqueous-tantalum", amount = 10},
+      {type = "item", name = "sp-silica", amount = 1},
+      {type = "item", name = "sp-barium-carbonate", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-infrared-filter", amount = 1}
+    }
+  },
   ------------------------------------------------------------------------------
   -- MARK: incinerating
   ------------------------------------------------------------------------------
@@ -7708,21 +7723,6 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-infrared-filter",  -- #ForRegEx# - recipe
-    category = "crafting-with-fluid",
-    enabled = false,
-    energy_required = 1.6,
-    ingredients = {
-      {type = "fluid", name = "sp-aqueous-tantalum", amount = 10},
-      {type = "item", name = "sp-silica", amount = 1},
-      {type = "item", name = "sp-barium-carbonate", amount = 1}
-    },
-    results = {
-      {type = "item", name = "sp-infrared-filter", amount = 1}
-    }
-  },
-  {
-    type = "recipe",
     name = "sp-relay",  -- #ForRegEx# - recipe
     category = "crafting-with-fluid",
     enabled = false,
@@ -8491,10 +8491,11 @@ data:extend({
     enabled = false,
     energy_required = 4,
     ingredients = {
+      {type = "item", name = "sp-nickel-rhenium", amount = 1},
+      {type = "item", name = "sp-titanium-aluminum-vanadium", amount = 2},
       {type = "item", name = "sp-electromagnetic-brake", amount = 2},
       {type = "item", name = "sp-high-power-solenoid", amount = 2},
       {type = "item", name = "sp-turbine-blade", amount = 12},
-      {type = "item", name = "sp-titanium-aluminum-vanadium", amount = 2},
       {type = "item", name = "sp-control-unit", amount = 1},
     },
     results = {

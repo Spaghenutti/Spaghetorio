@@ -60,7 +60,7 @@ TODO for 0.3.4
     ? Make compatibility with informatron and explain difference from tungsten pipe to normal pipe
     ? Note: fluid boxes can only be filtered to contain one type. Since normal pipes pass any fluid, adding pipes makes no sense. https://lua-api.factorio.com/latest/types/FluidBox.html
   - Update recipe chain for nuclear reactor
-    - turbine parts
+    + turbine parts
       + rhenium
         + crushed molybdenum
         + ammoniacal solution + crushed molybdenum -> ammonium perrhenate solution (NH4ReO4)
@@ -73,13 +73,23 @@ TODO for 0.3.4
             + methanol + Hydrogen chloride -> Methyl chloride CH₃Cl + water
             + Benzene C₆H₆ + Methyl chloride CH₃Cl -> toluene C₆H₅CH₃ + Hydrogen chloride HCl
             + toluene C₆H₅CH₃ + Chlorine -> Benzyl chloride C₆H₅CH₂Cl + Hydrogen chloride HCl
-      - nickel-rhenium alloy
+      + nickel-rhenium alloy
     - reactor core / fuel rods
-      - hafnium
-        - zircon ore + sodium hydroxide -> sodium zirconate + sodium hafnate
-        - sodium zirconate + ammoniacal solution -> zirconium-rod
-        - sodium hafnate + ammoniacal solution -> hafnium
+      + hafnium
+        + zircon ore + sodium hydroxide -> sodium zirconate + sodium hafnate
+        + sodium zirconate + ammoniacal solution -> zirconium-rod
+        + sodium hafnate + ammoniacal solution -> hafnium
       + silver-indium-cadmium
+    - Optical sensor:
+      - cmos
+        - silicon
+        - Si3N4 silicon nitride
+        - silicon dioxide
+        - photodiode made with Mercury Cadmium Telluride (HgCdTe)
+    - infrared sensor:
+      - photodiode made with germanium
+      - infrared LED with Aluminum Gallium Arsenide (AlGaAs)
+      - optical filter zink selenide ZnSe and Sapphire Al2O3
   - Update military science 2 branch of tech tree
   - Updated biological branch tier 1 and 2 of tech tree 
   - Support text plates mod
