@@ -15,6 +15,7 @@ data:extend({
     name = "sp-glass",  -- #ForRegEx# - recipe
     category = "smelting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 3.2,
     ingredients = {
       {type = "item", name = "sp-sand", amount = 4}
@@ -28,6 +29,7 @@ data:extend({
     name = "sp-silicon",  -- #ForRegEx# - recipe
     category = "smelting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 4,
     ingredients = {
       {type = "item", name = "sp-silica", amount = 3},
@@ -41,6 +43,7 @@ data:extend({
     name = "sp-iron-beam",  -- #ForRegEx# - recipe
     category = "smelting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 6.4,
     ingredients = {
       {type = "item", name = "iron-ore", amount = 3}
@@ -54,6 +57,7 @@ data:extend({
     name = "sp-steel-beam",  -- #ForRegEx# - recipe
     category = "smelting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 5,
     ingredients = {
       {type = "item", name = "steel-plate", amount = 3}
@@ -67,6 +71,7 @@ data:extend({
     name = "sp-alumina",  -- #ForRegEx# - recipe
     category = "smelting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 2,
     ingredients = {
       {type = "item", name = "sp-aluminum-ore", amount = 3}
@@ -80,6 +85,7 @@ data:extend({
     name = "sp-magnesium-chloride",  -- #ForRegEx# - recipe
     category = "smelting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 4,
     ingredients = {
       {type = "item", name = "sp-magnesium-ore", amount = 3}
@@ -93,6 +99,7 @@ data:extend({
     name = "sp-titanium-chloride",  -- #ForRegEx# - recipe
     category = "smelting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 3.2,
     ingredients = {
       {type = "item", name = "sp-titanium-ore", amount = 3},
@@ -106,6 +113,7 @@ data:extend({
     name = "sp-titanium-ingot",  -- #ForRegEx# - recipe
     category = "smelting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 3.6,
     ingredients = {
       {type = "item", name = "sp-titanium-sponge", amount = 2},
@@ -119,6 +127,7 @@ data:extend({
     name = "sp-titanium-plate",  -- #ForRegEx# - recipe
     category = "smelting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 4,
     ingredients = {
       {type = "item", name = "sp-titanium-ingot", amount = 2},
@@ -132,6 +141,7 @@ data:extend({
     name = "sp-tin-ingot",  -- #ForRegEx# - recipe
     category = "smelting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 4,
     ingredients = {
       {type = "item", name = "sp-tinstone", amount = 4},
@@ -149,6 +159,7 @@ data:extend({
     category = "smelting",
     subgroup = "raw-material",
     enabled = false,
+    allow_productivity = true,
     energy_required = 4,
     hide_from_player_crafting = true,
     ingredients = {
@@ -164,6 +175,7 @@ data:extend({
     name = "sp-lead-slab",  -- #ForRegEx# - recipe
     category = "smelting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 1,
     ingredients = {
       {type = "item", name = "sp-leadstone", amount = 1},
@@ -177,6 +189,7 @@ data:extend({
     name = "sp-bronze-rod",  -- #ForRegEx# - recipe
     category = "smelting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 4,
     ingredients = {
       {type = "item", name = "sp-tin-ingot", amount = 2},
@@ -191,6 +204,7 @@ data:extend({
     name = "sp-brass",  -- #ForRegEx# - recipe
     category = "smelting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 6,
     ingredients = {
       {type = "item", name = "sp-zinc-plate", amount = 2},
@@ -205,6 +219,7 @@ data:extend({
     name = "sp-zirconium-rod",  -- #ForRegEx# - recipe
     category = "smelting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 4,
     ingredients = {
       {type = "item", name = "sp-zirconium-ore", amount = 2}
@@ -218,6 +233,7 @@ data:extend({
     name = "sp-zinc-sulfate",  -- #ForRegEx# - recipe
     category = "smelting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 3.6,
     ingredients = {
       {type = "item", name = "sp-zinc-ore", amount = 2}
@@ -235,6 +251,7 @@ data:extend({
     category = "smelting",
     subgroup = "raw-material",
     enabled = false,
+    allow_productivity = true,
     energy_required = 3.2,
     ingredients = {
       {type = "item", name = "sp-chromite", amount = 3}
@@ -250,6 +267,7 @@ data:extend({
     name = "sp-cobalt-billet",  -- #ForRegEx# - recipe
     category = "smelting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 3.2,
     ingredients = {
       {type = "item", name = "sp-cobalt-sulfate", amount = 1}
@@ -267,6 +285,7 @@ data:extend({
     category = "smelting",
     subgroup = "raw-material",
     enabled = false,
+    allow_productivity = true,
     energy_required = 3.2,
     ingredients = {
       {type = "item", name = "sp-nickel-ore", amount = 2}
@@ -286,6 +305,7 @@ data:extend({
     category = "smelting",
     subgroup = "processed-resource",
     enabled = false,
+    allow_productivity = true,
     energy_required = 2.4,
     ingredients = {
       {type = "item", name = "sp-stibnite", amount = 1}
@@ -300,6 +320,7 @@ data:extend({
     name = "sp-stainless-steel",  -- #ForRegEx# - recipe
     category = "smelting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 12,
     ingredients = {
       {type = "item", name = "steel-plate", amount = 8},
@@ -317,6 +338,7 @@ data:extend({
                                          "__Spaghetorio__/graphics/icons/calcium.png", 64),
     category = "smelting",
     enabled = false,
+    allow_productivity = true,
     hide_from_player_crafting = true,
     energy_required = 15,
     ingredients = {
@@ -332,6 +354,7 @@ data:extend({
     name = "sp-cobalt-oxide",  -- #ForRegEx# - recipe
     category = "smelting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 12,
     ingredients = {
       {type = "item", name = "sp-cobalt-ore", amount = 10},
@@ -345,6 +368,7 @@ data:extend({
     name = "sp-molybdenum-trioxide",  -- #ForRegEx# - recipe
     category = "smelting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 20,
     ingredients = {
       {type = "item", name = "sp-molybdenum-ore", amount = 8},
@@ -358,6 +382,7 @@ data:extend({
     name = "sp-molybdenum-pillet",  -- #ForRegEx# - recipe
     category = "smelting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 16,
     ingredients = {
       {type = "item", name = "sp-molybdenum-trioxide", amount = 4},
@@ -371,6 +396,7 @@ data:extend({
     name = "sp-manganese-dioxide",  -- #ForRegEx# - recipe
     category = "smelting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 6,
     ingredients = {
       {type = "item", name = "sp-manganese-ore", amount = 5},
@@ -384,6 +410,7 @@ data:extend({
     name = "sp-vanadium-pentoxide",  -- #ForRegEx# - recipe
     category = "smelting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 8,
     ingredients = {
       {type = "item", name = "sp-vanadium-ore", amount = 5},
@@ -397,6 +424,7 @@ data:extend({
     name = "sp-potassium-ingot",  -- #ForRegEx# - recipe
     category = "smelting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 4,
     ingredients = {
       {type = "item", name = "sp-potassium-chloride", amount = 4},
@@ -410,6 +438,7 @@ data:extend({
     name = "sp-nickel-chromium",  -- #ForRegEx# - recipe
     category = "smelting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 6,
     ingredients = {
       {type = "item", name = "sp-nickel-ingot", amount = 4},
@@ -424,6 +453,7 @@ data:extend({
     name = "sp-crucible",  -- #ForRegEx# - recipe
     category = "smelting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 4,
     ingredients = {
       {type = "item", name = "sp-sand", amount = 2},
@@ -444,6 +474,7 @@ data:extend({
     category = "crushed-smelting",
     subgroup = "raw-material",
     enabled = false,
+    allow_productivity = true,
     energy_required = 6,
     hide_from_player_crafting = true,
     ingredients = {
@@ -461,6 +492,7 @@ data:extend({
     category = "crushed-smelting",
     subgroup = "raw-material",
     enabled = false,
+    allow_productivity = true,
     energy_required = 10,
     hide_from_player_crafting = true,
     ingredients = {
@@ -479,6 +511,7 @@ data:extend({
     category = "crushed-smelting",
     subgroup = "raw-material",
     enabled = false,
+    allow_productivity = true,
     energy_required = 6,
     hide_from_player_crafting = true,
     ingredients = {
@@ -496,6 +529,7 @@ data:extend({
     category = "crushed-smelting",
     subgroup = "processed-resource",
     enabled = false,
+    allow_productivity = true,
     energy_required = 12,
     hide_from_player_crafting = true,
     ingredients = {
@@ -513,6 +547,7 @@ data:extend({
     category = "crushed-smelting",
     subgroup = "raw-material",
     enabled = false,
+    allow_productivity = true,
     energy_required = 16,
     hide_from_player_crafting = true,
     ingredients = {
@@ -531,6 +566,7 @@ data:extend({
     category = "crushed-smelting",
     subgroup = "processed-resource",
     enabled = false,
+    allow_productivity = true,
     energy_required = 10,
     hide_from_player_crafting = true,
     ingredients = {
@@ -548,6 +584,7 @@ data:extend({
     category = "crushed-smelting",
     subgroup = "processed-resource",
     enabled = false,
+    allow_productivity = true,
     energy_required = 10,
     hide_from_player_crafting = true,
     ingredients = {
@@ -565,6 +602,7 @@ data:extend({
     category = "crushed-smelting",
     subgroup = "raw-material",
     enabled = false,
+    allow_productivity = true,
     energy_required = 16,
     hide_from_player_crafting = true,
     ingredients = {
@@ -583,6 +621,7 @@ data:extend({
     category = "crushed-smelting",
     subgroup = "raw-material",
     enabled = false,
+    allow_productivity = true,
     energy_required = 10,
     hide_from_player_crafting = true,
     ingredients = {
@@ -600,6 +639,7 @@ data:extend({
     category = "crushed-smelting",
     subgroup = "processed-resource",
     enabled = false,
+    allow_productivity = true,
     energy_required = 12,
     hide_from_player_crafting = true,
     ingredients = {
@@ -617,6 +657,7 @@ data:extend({
     category = "crushed-smelting",
     subgroup = "processed-resource",
     enabled = false,
+    allow_productivity = true,
     energy_required = 12,
     hide_from_player_crafting = true,
     ingredients = {
@@ -634,6 +675,7 @@ data:extend({
     category = "crushed-smelting",
     subgroup = "processed-resource",
     enabled = false,
+    allow_productivity = true,
     energy_required = 20,
     hide_from_player_crafting = true,
     ingredients = {
@@ -651,6 +693,7 @@ data:extend({
     category = "crushed-smelting",
     subgroup = "raw-material",
     enabled = false,
+    allow_productivity = true,
     energy_required = 10,
     hide_from_player_crafting = true,
     ingredients = {
@@ -668,6 +711,7 @@ data:extend({
     category = "crushed-smelting",
     subgroup = "raw-material",
     enabled = false,
+    allow_productivity = true,
     energy_required = 14,
     hide_from_player_crafting = true,
     ingredients = {
@@ -685,6 +729,7 @@ data:extend({
     name = "sp-barium-sulfide",  -- #ForRegEx# - recipe
     category = "intermediate-smelting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 4,
     ingredients = {
       {type = "item", name = "sp-barium-sulfamate", amount = 8},
@@ -699,6 +744,7 @@ data:extend({
     name = "sp-barium-billet",  -- #ForRegEx# - recipe
     category = "intermediate-smelting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 8,
     ingredients = {
       {type = "item", name = "sp-barium-sulfamate", amount = 8},
@@ -712,6 +758,7 @@ data:extend({
     name = "sp-antimony-oxide",  -- #ForRegEx# - recipe
     category = "intermediate-smelting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 6,
     ingredients = {
       {type = "item", name = "sp-stibnite", amount = 8},
@@ -725,6 +772,7 @@ data:extend({
     name = "sp-antimony-pillet",  -- #ForRegEx# - recipe
     category = "intermediate-smelting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 10,
     ingredients = {
       {type = "item", name = "sp-antimony-oxide", amount = 8},
@@ -739,6 +787,7 @@ data:extend({
     name = "sp-ferrite",  -- #ForRegEx# - recipe
     category = "intermediate-smelting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 8,
     ingredients = {
       {type = "item", name = "iron-plate", amount = 5},
@@ -757,6 +806,7 @@ data:extend({
     subgroup = "alloy",
     category = "intermediate-smelting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 8,
     ingredients = {
       {type = "item", name = "iron-plate", amount = 5},
@@ -775,6 +825,7 @@ data:extend({
     subgroup = "alloy",
     category = "intermediate-smelting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 8,
     ingredients = {
       {type = "item", name = "iron-plate", amount = 5},
@@ -793,6 +844,7 @@ data:extend({
     subgroup = "alloy",
     category = "intermediate-smelting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 6,
     ingredients = {
       {type = "item", name = "iron-plate", amount = 5},
@@ -811,6 +863,7 @@ data:extend({
     subgroup = "alloy",
     category = "intermediate-smelting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 10,
     ingredients = {
       {type = "item", name = "iron-plate", amount = 5},
@@ -825,6 +878,7 @@ data:extend({
     name = "sp-ammonium-paratungstate",  -- #ForRegEx# - recipe
     category = "intermediate-smelting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 8,
     ingredients = {
       {type = "item", name = "tungsten-ore", amount = 2}
@@ -838,6 +892,7 @@ data:extend({
     name = "sp-tungsten-powder",  -- #ForRegEx# - recipe
     category = "intermediate-smelting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 6,
     ingredients = {
       {type = "item", name = "sp-ammonium-paratungstate", amount = 2},
@@ -852,6 +907,7 @@ data:extend({
     name = "sp-gallium",  -- #ForRegEx# - recipe
     category = "intermediate-smelting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 3,
     ingredients = {
       {type = "item", name = "sp-gallium-chloride", amount = 3},
@@ -867,6 +923,7 @@ data:extend({
                                          "__Spaghetorio__/graphics/icons/sodium-zirconate.png", 64),
     category = "intermediate-smelting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 3,
     ingredients = {
       {type = "item", name = "sp-sodium-zirconate", amount = 6},
@@ -880,6 +937,7 @@ data:extend({
     name = "sp-hafnium",  -- #ForRegEx# - recipe
     category = "intermediate-smelting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 5,
     ingredients = {
       {type = "item", name = "sp-sodium-hafnate", amount = 3},
@@ -893,6 +951,7 @@ data:extend({
     name = "sp-rukite-bar",  -- #ForRegEx# - recipe
     category = "intermediate-smelting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 3.6,
     ingredients = {
       {type = "item", name = "sp-tungsten-powder", amount = 1},
@@ -915,6 +974,7 @@ data:extend({
     category = "enriching-raw-resource",
     subgroup = "enriched-resource-recipe",
     enabled = false,
+    allow_productivity = true,
     energy_required = 3,
     ingredients = {
       {type = "item", name = "copper-ore", amount = 12},
@@ -942,6 +1002,7 @@ data:extend({
     category = "enriching-raw-resource",
     subgroup = "enriched-resource-recipe",
     enabled = false,
+    allow_productivity = true,
     energy_required = 2,
     ingredients = {
       {type = "item", name = "iron-ore", amount = 12},
@@ -968,6 +1029,7 @@ data:extend({
     category = "enriching-raw-resource",
     subgroup = "enriched-resource-recipe",
     enabled = false,
+    allow_productivity = true,
     energy_required = 2,
     ingredients = {
       {type = "item", name = "sp-aluminum-ore", amount = 10},
@@ -994,6 +1056,7 @@ data:extend({
     category = "enriching-raw-resource",
     subgroup = "enriched-resource-recipe",
     enabled = false,
+    allow_productivity = true,
     energy_required = 2,
     ingredients = {
       {type = "item", name = "sp-chromite", amount = 10},
@@ -1021,6 +1084,7 @@ data:extend({
     category = "enriching-raw-resource",
     subgroup = "enriched-resource-recipe",
     enabled = false,
+    allow_productivity = true,
     energy_required = 2,
     ingredients = {
       {type = "item", name = "sp-magnesium-ore", amount = 10},
@@ -1048,6 +1112,7 @@ data:extend({
     category = "enriching-raw-resource",
     subgroup = "enriched-resource-recipe",
     enabled = false,
+    allow_productivity = true,
     energy_required = 2,
     ingredients = {
       {type = "item", name = "sp-nickel-ore", amount = 8},
@@ -1075,6 +1140,7 @@ data:extend({
     category = "enriching-raw-resource",
     subgroup = "enriched-resource-recipe",
     enabled = false,
+    allow_productivity = true,
     energy_required = 3,
     ingredients = {
       {type = "item", name = "sp-tinstone", amount = 10},
@@ -1102,6 +1168,7 @@ data:extend({
     category = "enriching-raw-resource",
     subgroup = "enriched-resource-recipe",
     enabled = false,
+    allow_productivity = true,
     energy_required = 4,
     ingredients = {
       {type = "item", name = "sp-titanium-ore", amount = 12},
@@ -1129,6 +1196,7 @@ data:extend({
     category = "enriching-raw-resource",
     subgroup = "enriched-resource-recipe",
     enabled = false,
+    allow_productivity = true,
     energy_required = 2,
     ingredients = {
       {type = "item", name = "tungsten-ore", amount = 10},
@@ -1156,6 +1224,7 @@ data:extend({
     category = "enriching-raw-resource",
     subgroup = "enriched-resource-recipe",
     enabled = false,
+    allow_productivity = true,
     energy_required = 3.2,
     ingredients = {
       {type = "item", name = "sp-zinc-ore", amount = 12},
@@ -1186,6 +1255,7 @@ data:extend({
     category = "enriching-crushed-resource",
     subgroup = "enriched-crushed-resource-recipe",
     enabled = false,
+    allow_productivity = true,
     energy_required = 2.5,
     hide_from_player_crafting = true,
     ingredients = {
@@ -1215,6 +1285,7 @@ data:extend({
     category = "enriching-crushed-resource",
     subgroup = "enriched-crushed-resource-recipe",
     enabled = false,
+    allow_productivity = true,
     energy_required = 1.5,
     hide_from_player_crafting = true,
     ingredients = {
@@ -1243,6 +1314,7 @@ data:extend({
     category = "enriching-crushed-resource",
     subgroup = "enriched-crushed-resource-recipe",
     enabled = false,
+    allow_productivity = true,
     energy_required = 1.5,
     hide_from_player_crafting = true,
     ingredients = {
@@ -1271,6 +1343,7 @@ data:extend({
     category = "enriching-crushed-resource",
     subgroup = "enriched-crushed-resource-recipe",
     enabled = false,
+    allow_productivity = true,
     energy_required = 1.5,
     hide_from_player_crafting = true,
     ingredients = {
@@ -1300,6 +1373,7 @@ data:extend({
     category = "enriching-crushed-resource",
     subgroup = "enriched-crushed-resource-recipe",
     enabled = false,
+    allow_productivity = true,
     energy_required = 1.5,
     hide_from_player_crafting = true,
     ingredients = {
@@ -1329,6 +1403,7 @@ data:extend({
     category = "enriching-crushed-resource",
     subgroup = "enriched-crushed-resource-recipe",
     enabled = false,
+    allow_productivity = true,
     energy_required = 1.5,
     hide_from_player_crafting = true,
     ingredients = {
@@ -1358,6 +1433,7 @@ data:extend({
     category = "enriching-crushed-resource",
     subgroup = "enriched-crushed-resource-recipe",
     enabled = false,
+    allow_productivity = true,
     energy_required = 2,
     hide_from_player_crafting = true,
     ingredients = {
@@ -1387,6 +1463,7 @@ data:extend({
     category = "enriching-crushed-resource",
     subgroup = "enriched-crushed-resource-recipe",
     enabled = false,
+    allow_productivity = true,
     energy_required = 3,
     hide_from_player_crafting = true,
     ingredients = {
@@ -1416,6 +1493,7 @@ data:extend({
     category = "enriching-crushed-resource",
     subgroup = "enriched-crushed-resource-recipe",
     enabled = false,
+    allow_productivity = true,
     energy_required = 2,
     hide_from_player_crafting = true,
     ingredients = {
@@ -1445,6 +1523,7 @@ data:extend({
     category = "enriching-crushed-resource",
     subgroup = "enriched-crushed-resource-recipe",
     enabled = false,
+    allow_productivity = true,
     energy_required = 2.5,
     hide_from_player_crafting = true,
     ingredients = {
@@ -1474,6 +1553,7 @@ data:extend({
     category = "smelting-enriched-resource",
     subgroup = "raw-material",
     enabled = false,
+    allow_productivity = true,
     energy_required = 3,
     hide_from_player_crafting = true,
     ingredients = {
@@ -1491,6 +1571,7 @@ data:extend({
     category = "smelting-enriched-resource",
     subgroup = "raw-material",
     enabled = false,
+    allow_productivity = true,
     energy_required = 6,
     hide_from_player_crafting = true,
     ingredients = {
@@ -1508,6 +1589,7 @@ data:extend({
     category = "smelting-enriched-resource",
     subgroup = "raw-material",
     enabled = false,
+    allow_productivity = true,
     energy_required = 3,
     hide_from_player_crafting = true,
     ingredients = {
@@ -1525,6 +1607,7 @@ data:extend({
     category = "smelting-enriched-resource",
     subgroup = "processed-resource",
     enabled = false,
+    allow_productivity = true,
     energy_required = 3,
     hide_from_player_crafting = true,
     ingredients = {
@@ -1541,6 +1624,7 @@ data:extend({
                                          "__Spaghetorio__/graphics/icons/enriched-chromite-1.png", 64),
     category = "smelting-enriched-resource",
     enabled = false,
+    allow_productivity = true,
     energy_required = 5,
     hide_from_player_crafting = true,
     ingredients = {
@@ -1557,6 +1641,7 @@ data:extend({
                                          "__Spaghetorio__/graphics/icons/enriched-magnesium-1.png", 64),
     category = "smelting-enriched-resource",
     enabled = false,
+    allow_productivity = true,
     energy_required = 6,
     hide_from_player_crafting = true,
     ingredients = {
@@ -1573,6 +1658,7 @@ data:extend({
                                          "__Spaghetorio__/graphics/icons/enriched-nickel-1.png", 64),
     category = "smelting-enriched-resource",
     enabled = false,
+    allow_productivity = true,
     energy_required = 5,
     hide_from_player_crafting = true,
     ingredients = {
@@ -1589,6 +1675,7 @@ data:extend({
                                          "__Spaghetorio__/graphics/icons/enriched-tinstone-1.png", 64),
     category = "smelting-enriched-resource",
     enabled = false,
+    allow_productivity = true,
     energy_required = 8,
     hide_from_player_crafting = true,
     ingredients = {
@@ -1605,6 +1692,7 @@ data:extend({
                                          "__Spaghetorio__/graphics/icons/enriched-titanium-1.png", 64),
     category = "smelting-enriched-resource",
     enabled = false,
+    allow_productivity = true,
     energy_required = 5,
     hide_from_player_crafting = true,
     ingredients = {
@@ -1621,6 +1709,7 @@ data:extend({
                                          "__Spaghetorio__/graphics/icons/enriched-tungsten-1.png", 64),
     category = "smelting-enriched-resource",
     enabled = false,
+    allow_productivity = true,
     energy_required = 8,
     hide_from_player_crafting = true,
     ingredients = {
@@ -1637,6 +1726,7 @@ data:extend({
                                          "__Spaghetorio__/graphics/icons/enriched-zinc-1.png", 64),
     category = "smelting-enriched-resource",
     enabled = false,
+    allow_productivity = true,
     energy_required = 4,
     hide_from_player_crafting = true,
     ingredients = {
@@ -1654,6 +1744,7 @@ data:extend({
     name = "sp-invar",  -- #ForRegEx# - recipe
     category = "alloy-smelting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 20,
     ingredients = {
       {type = "item", name = "iron-plate", amount = 6},
@@ -1669,6 +1760,7 @@ data:extend({
     name = "sp-duralumin",  -- #ForRegEx# - recipe
     category = "alloy-smelting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 16,
     ingredients = {
       {type = "item", name = "sp-aluminum-sheet", amount = 8},
@@ -1684,6 +1776,7 @@ data:extend({
     name = "sp-aluminum-brass",  -- #ForRegEx# - recipe
     category = "alloy-smelting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 16,
     ingredients = {
       {type = "item", name = "sp-aluminum-sheet", amount = 7},
@@ -1700,6 +1793,7 @@ data:extend({
     name = "sp-inconel",  -- #ForRegEx# - recipe
     category = "alloy-smelting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 16,
     ingredients = {
       {type = "item", name = "sp-nickel-ingot", amount = 7},
@@ -1715,6 +1809,7 @@ data:extend({
     name = "sp-nickel-rhenium",  -- #ForRegEx# - recipe
     category = "alloy-smelting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 40,
     ingredients = {
       {type = "item", name = "sp-nickel-ingot", amount = 9},
@@ -1729,6 +1824,7 @@ data:extend({
     name = "sp-TiAlSn",  -- #ForRegEx# - recipe
     category = "alloy-smelting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 14,
     ingredients = {
       {type = "item", name = "sp-titanium-plate", amount = 8},
@@ -1744,6 +1840,7 @@ data:extend({
     name = "sp-TiNb",  -- #ForRegEx# - recipe
     category = "alloy-smelting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 8,
     ingredients = {
       {type = "item", name = "sp-titanium-plate", amount = 5},
@@ -1758,6 +1855,7 @@ data:extend({
     name = "sp-nimonic",  -- #ForRegEx# - recipe
     category = "alloy-smelting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 16,
     ingredients = {
       {type = "item", name = "sp-titanium-plate", amount = 3},
@@ -1773,6 +1871,7 @@ data:extend({
     name = "sp-nitenol",  -- #ForRegEx# - recipe
     category = "alloy-smelting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 8,
     ingredients = {
       {type = "item", name = "sp-titanium-ingot", amount = 3},
@@ -1787,6 +1886,7 @@ data:extend({
     name = "sp-niobium-steel",  -- #ForRegEx# - recipe
     category = "alloy-smelting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 24,
     ingredients = {
       {type = "item", name = "steel-plate", amount = 20},
@@ -1801,6 +1901,7 @@ data:extend({
     name = "sp-zircaloy",  -- #ForRegEx# - recipe
     category = "alloy-smelting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 30,
     ingredients = {
       {type = "item", name = "sp-zirconium-rod", amount = 20},
@@ -1815,6 +1916,7 @@ data:extend({
     name = "sp-silver-indium-cadmium",  -- #ForRegEx# - recipe
     category = "alloy-smelting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 30,
     ingredients = {
       {type = "item", name = "sp-silver", amount = 1},
@@ -1830,6 +1932,7 @@ data:extend({
     name = "sp-niobium-tin",  -- #ForRegEx# - recipe
     category = "alloy-smelting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 4,
     ingredients = {
       {type = "item", name = "sp-tin-ingot", amount = 1},
@@ -1844,6 +1947,7 @@ data:extend({
     name = "sp-copper-antimony",  -- #ForRegEx# - recipe
     category = "alloy-smelting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 8,
     ingredients = {
       {type = "item", name = "copper-plate", amount = 4},
@@ -1858,6 +1962,7 @@ data:extend({
     name = "sp-nickel-cobalt",  -- #ForRegEx# - recipe
     category = "alloy-smelting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 12,
     ingredients = {
       {type = "item", name = "sp-nickel-ingot", amount = 3},
@@ -1872,6 +1977,7 @@ data:extend({
     name = "sp-waspaloy",  -- #ForRegEx# - recipe
     category = "alloy-smelting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 16,
     ingredients = {
       {type = "item", name = "sp-nickel-ingot", amount = 6},
@@ -1887,6 +1993,7 @@ data:extend({
     name = "sp-chromium-cobalt",  -- #ForRegEx# - recipe
     category = "alloy-smelting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 30,
     ingredients = {
       {type = "item", name = "sp-cobalt-billet", amount = 12},
@@ -1904,6 +2011,7 @@ data:extend({
     name = "sp-elgiloy",  -- #ForRegEx# - recipe
     category = "alloy-smelting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 50,
     ingredients = {
       {type = "item", name = "sp-cobalt-billet", amount = 16},
@@ -1922,6 +2030,7 @@ data:extend({
     name = "sp-maraging-steel",  -- #ForRegEx# - recipe
     category = "alloy-smelting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 24,
     ingredients = {
       {type = "item", name = "iron-plate", amount = 7},
@@ -1938,6 +2047,7 @@ data:extend({
     name = "sp-kovar",  -- #ForRegEx# - recipe
     category = "alloy-smelting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 12,
     ingredients = {
       {type = "item", name = "iron-plate", amount = 5},
@@ -1953,6 +2063,7 @@ data:extend({
     name = "sp-titanium-aluminum-vanadium",  -- #ForRegEx# - recipe
     category = "alloy-smelting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 16,
     ingredients = {
       {type = "item", name = "sp-titanium-ingot", amount = 1},
@@ -1968,6 +2079,7 @@ data:extend({
     name = "sp-vanadium-aluminum",  -- #ForRegEx# - recipe
     category = "alloy-smelting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 14,
     ingredients = {
       {type = "item", name = "sp-aluminum-sheet", amount = 6},
@@ -1982,6 +2094,7 @@ data:extend({
     name = "sp-vanadium-steel",  -- #ForRegEx# - recipe
     category = "alloy-smelting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 14,
     ingredients = {
       {type = "item", name = "steel-plate", amount = 10},
@@ -1999,6 +2112,7 @@ data:extend({
     mip_maps = 4,
     category = "alloy-smelting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 16,
     -- hide_from_player_crafting = true,  -- The player should be able to see at least one of those recipes
     ingredients = {
@@ -2018,6 +2132,7 @@ data:extend({
                                          "__Spaghetorio__/graphics/icons/lanthanum.png", 64),
     category = "alloy-smelting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 20,
     hide_from_player_crafting = true,
     ingredients = {
@@ -2037,6 +2152,7 @@ data:extend({
                                          "__Spaghetorio__/graphics/icons/cerium.png", 64),
     category = "alloy-smelting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 30,
     hide_from_player_crafting = true,
     ingredients = {
@@ -2057,6 +2173,7 @@ data:extend({
                                          "__Spaghetorio__/graphics/icons/neodymium.png", 64),
     category = "alloy-smelting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 24,
     hide_from_player_crafting = true,
     ingredients = {
@@ -2075,6 +2192,7 @@ data:extend({
     name = "sp-metallurgic-science-pack-2",  -- #ForRegEx# - recipe
     category = "alloy-smelting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 40,
     ingredients =
     {
@@ -2102,6 +2220,7 @@ data:extend({
     category = "smelting-with-fluid",
     subgroup = "raw-material",
     enabled = false,
+    allow_productivity = true,
     energy_required = 6,
     ingredients = {
       {type = "item", name = "sp-sodium-borate", amount = 4},
@@ -2118,6 +2237,7 @@ data:extend({
     name = "sp-vanadium-plate",  -- #ForRegEx# - recipe
     category = "smelting-with-fluid",
     enabled = false,
+    allow_productivity = true,
     energy_required = 10,
     ingredients = {
       {type = "item", name = "sp-ammonium-metavanadate", amount = 3},
@@ -2132,6 +2252,7 @@ data:extend({
     name = "sp-niobium-billet",  -- #ForRegEx# - recipe
     category = "smelting-with-fluid",
     enabled = false,
+    allow_productivity = true,
     energy_required = 3.6,
     ingredients = {
       {type = "fluid", name = "sp-aqueous-niobium", amount = 50}
@@ -2145,6 +2266,7 @@ data:extend({
     name = "sp-tantalum-billet",  -- #ForRegEx# - recipe
     category = "smelting-with-fluid",
     enabled = false,
+    allow_productivity = true,
     energy_required = 5,
     ingredients = {
       {type = "fluid", name = "sp-aqueous-tantalum", amount = 50}
@@ -2158,6 +2280,7 @@ data:extend({
     name = "sp-selenium-pillet",  -- #ForRegEx# - recipe
     category = "smelting-with-fluid",
     enabled = false,
+    allow_productivity = true,
     energy_required = 3,
     ingredients = {
       {type = "item", name = "sp-selenious-acid", amount = 2},
@@ -2172,6 +2295,7 @@ data:extend({
     name = "sp-rhenium",  -- #ForRegEx# - recipe
     category = "smelting-with-fluid",
     enabled = false,
+    allow_productivity = true,
     energy_required = 2,
     ingredients = {
       {type = "fluid", name = "sp-ammonium-perrhenate-solution", amount = 3},
@@ -2193,6 +2317,7 @@ data:extend({
     name = "sp-tungsten-steel",  -- #ForRegEx# - recipe
     category = "high-temperature-smelting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 25,
     ingredients = {
       {type = "item", name = "steel-plate", amount = 9},
@@ -2216,6 +2341,7 @@ data:extend({
     category = "sp-kr-fluid-filtration",
     subgroup = "dirty-fluid-filtration",
     enabled = false,
+    allow_productivity = true,
     hide_from_player_crafting = true,
     energy_required = 3,
     ingredients = {
@@ -2244,6 +2370,7 @@ data:extend({
     category = "sp-kr-fluid-filtration",
     subgroup = "dirty-fluid-filtration",
     enabled = false,
+    allow_productivity = true,
     hide_from_player_crafting = true,
     energy_required = 3,
     ingredients = {
@@ -2273,6 +2400,7 @@ data:extend({
     category = "sp-kr-fluid-filtration",
     subgroup = "dirty-fluid-filtration",
     enabled = false,
+    allow_productivity = true,
     hide_from_player_crafting = true,
     energy_required = 3,
     ingredients = {
@@ -2301,6 +2429,7 @@ data:extend({
     category = "sp-kr-fluid-filtration",
     subgroup = "dirty-fluid-filtration",
     enabled = false,
+    allow_productivity = true,
     hide_from_player_crafting = true,
     energy_required = 4,
     ingredients = {
@@ -2330,6 +2459,7 @@ data:extend({
     category = "sp-kr-fluid-filtration",
     subgroup = "dirty-fluid-filtration",
     enabled = false,
+    allow_productivity = true,
     hide_from_player_crafting = true,
     energy_required = 3.6,
     ingredients = {
@@ -2358,6 +2488,7 @@ data:extend({
     category = "sp-kr-fluid-filtration",
     subgroup = "dirty-fluid-filtration",
     enabled = false,
+    allow_productivity = true,
     hide_from_player_crafting = true,
     energy_required = 3,
     ingredients = {
@@ -2387,6 +2518,7 @@ data:extend({
     category = "sp-kr-fluid-filtration",
     subgroup = "dirty-fluid-filtration",
     enabled = false,
+    allow_productivity = true,
     hide_from_player_crafting = true,
     energy_required = 2,
     ingredients = {
@@ -2415,6 +2547,7 @@ data:extend({
     category = "sp-kr-fluid-filtration",
     subgroup = "dirty-fluid-filtration",
     enabled = false,
+    allow_productivity = true,
     hide_from_player_crafting = true,
     energy_required = 4,
     ingredients = {
@@ -2444,6 +2577,7 @@ data:extend({
     category = "sp-kr-fluid-filtration",
     subgroup = "dirty-fluid-filtration",
     enabled = false,
+    allow_productivity = true,
     hide_from_player_crafting = true,
     energy_required = 3,
     ingredients = {
@@ -2473,6 +2607,7 @@ data:extend({
     category = "sp-kr-fluid-filtration",
     subgroup = "dirty-fluid-filtration",
     enabled = false,
+    allow_productivity = true,
     hide_from_player_crafting = true,
     energy_required = 4,
     ingredients = {
@@ -2497,6 +2632,7 @@ data:extend({
     name = "sp-iodine-sludge",  -- #ForRegEx# - recipe
     category = "sp-kr-fluid-filtration",
     enabled = false,
+    allow_productivity = true,
     energy_required = 2,
     ingredients = {
       {type = "fluid", name = "sp-iodine-brine", amount = 20},
@@ -2519,6 +2655,7 @@ data:extend({
     mip_maps = 4,
     category = "sp-kr-fluid-filtration",
     enabled = false,
+    allow_productivity = true,
     energy_required = 5,
     hide_from_player_crafting = true,
     ingredients = {
@@ -2541,6 +2678,7 @@ data:extend({
     name = "sp-niobium-powder",  -- #ForRegEx# - recipe
     category = "sp-kr-fluid-filtration",
     enabled = false,
+    allow_productivity = true,
     energy_required = 4,
     ingredients = {
       {type = "item", name = "sp-sand", amount = 8},
@@ -2561,6 +2699,7 @@ data:extend({
     name = "sp-sodium-carbonate-solution",  -- #ForRegEx# - recipe
     category = "sp-kr-fluid-filtration",
     enabled = false,
+    allow_productivity = true,
     energy_required = 1,
     ingredients = {
       {type = "item", name = "sp-sodium-carbonate", amount = 1},
@@ -2609,6 +2748,7 @@ data:extend({
     category = "sp-crushing-washing",
     subgroup = "processed-metal",
     enabled = false,
+    allow_productivity = true,
     energy_required = 4,
     ingredients = {
       {type = "item", name = "iron-ore", amount = 1},
@@ -2630,6 +2770,7 @@ data:extend({
     category = "sp-crushing-washing",
     subgroup = "processed-metal",
     enabled = false,
+    allow_productivity = true,
     energy_required = 5,
     ingredients = {
       {type = "item", name = "copper-ore", amount = 1},
@@ -2650,6 +2791,7 @@ data:extend({
     category = "sp-crushing-washing",
     subgroup = "processed-metal",
     enabled = false,
+    allow_productivity = true,
     energy_required = 4,
     ingredients = {
       {type = "item", name = "sp-nickel-ore", amount = 2},
@@ -2669,6 +2811,7 @@ data:extend({
     name = "sp-resistor",  -- #ForRegEx# - recipe
     category = "chemistry",
     enabled = false,
+    allow_productivity = true,
     energy_required = 2,
     ingredients = {
       {type = "item", name = "carbon", amount = 1},
@@ -2685,6 +2828,7 @@ data:extend({
     name = "sp-capacitor-from-aluminum",  -- #ForRegEx# - recipe
     category = "chemistry",
     enabled = false,
+    allow_productivity = true,
     energy_required = 3.2,
     ingredients = {
       {type = "item", name = "copper-cable", amount = 1},
@@ -2701,6 +2845,7 @@ data:extend({
     name = "sp-transistor",  -- #ForRegEx# - recipe
     category = "chemistry",
     enabled = false,
+    allow_productivity = true,
     energy_required = 2.8,
     ingredients = {
       {type = "item", name = "sp-silicon", amount = 2},
@@ -2718,6 +2863,7 @@ data:extend({
     name = "sp-vacuum-tube",  -- #ForRegEx# - recipe
     category = "chemistry",
     enabled = false,
+    allow_productivity = true,
     energy_required = 3,
     ingredients = {
       {type = "item", name = "sp-glass", amount = 3},
@@ -2736,6 +2882,7 @@ data:extend({
     category = "chemistry",
     energy_required = 1,
     enabled = false,
+    allow_productivity = true,
     ingredients = {
       {type = "fluid", name = "sp-hydrogen", amount = 30},
       {type = "fluid", name = "sp-chlorine", amount = 20},
@@ -2757,6 +2904,7 @@ data:extend({
     category = "chemistry",
     energy_required = 1,
     enabled = false,
+    allow_productivity = true,
     ingredients = {
       {type = "item", name = "sp-sodium", amount = 2},
     },
@@ -2780,6 +2928,7 @@ data:extend({
     category = "chemistry",
     subgroup = "processed-resource",
     enabled = false,
+    allow_productivity = true,
     energy_required = 4,
     ingredients = {
       {type = "item", name = "sp-tellurium-hydroxide", amount = 1},
@@ -2800,6 +2949,7 @@ data:extend({
     name = "sp-phosphorus",  -- #ForRegEx# - recipe
     category = "chemistry",
     enabled = false,
+    allow_productivity = true,
     energy_required = 2.4,
     ingredients = {
       {type = "item", name = "calcite", amount = 2},
@@ -2820,6 +2970,7 @@ data:extend({
     name = "sp-zircon",  -- #ForRegEx# - recipe
     category = "chemistry",
     enabled = false,
+    allow_productivity = true,
     energy_required = 8,
     ingredients = {
       {type = "item", name = "sp-zirconium-ore", amount = 4},
@@ -2834,6 +2985,7 @@ data:extend({
     name = "sp-lithium-sulfur-battery",  -- #ForRegEx# - recipe
     category = "chemistry",
     enabled = false,
+    allow_productivity = true,
     energy_required = 5,
     ingredients = {
       {type = "item", name = "lithium", amount = 4},
@@ -2852,6 +3004,7 @@ data:extend({
     name = "sp-insulation-sheet",  -- #ForRegEx# - recipe
     category = "chemistry",
     enabled = false,
+    allow_productivity = true,
     energy_required = 2,
     ingredients = {
       {type = "item", name = "plastic-bar", amount = 1},
@@ -2872,6 +3025,7 @@ data:extend({
     name = "sp-propane",  -- #ForRegEx# - recipe
     category = "chemistry",
     enabled = false,
+    allow_productivity = true,
     energy_required = 12,
     ingredients = {
       {type = "fluid", name = "petroleum-gas", amount = 100},
@@ -2899,6 +3053,7 @@ data:extend({
     category = "chemistry",
     subgroup = "chemical",
     enabled = false,
+    allow_productivity = true,
     energy_required = 15,
     ingredients = {
       {type = "fluid", name = "petroleum-gas", amount = 100},
@@ -2922,6 +3077,7 @@ data:extend({
     name = "sp-methyl-tert-butyl-ether",  -- #ForRegEx# - recipe
     category = "chemistry",
     enabled = false,
+    allow_productivity = true,
     energy_required = 18,
     ingredients = {
       -- {type = "item", name = "sp-catalyst", amount = 1},
@@ -2944,6 +3100,7 @@ data:extend({
     name = "sp-propylene",  -- #ForRegEx# - recipe
     category = "chemistry",
     enabled = false,
+    allow_productivity = true,
     energy_required = 20,
     ingredients = {
       {type = "fluid", name = "sp-propane", amount = 100},
@@ -2965,6 +3122,7 @@ data:extend({
     name = "sp-sodium-carbonate",  -- #ForRegEx# - recipe
     category = "chemistry",
     enabled = false,
+    allow_productivity = true,
     energy_required = 16,
     ingredients = {
       {type = "fluid", name = "sp-liquid-sodium", amount = 60},
@@ -2986,6 +3144,7 @@ data:extend({
     name = "sp-benzene",  -- #ForRegEx# - recipe
     category = "chemistry",
     enabled = false,
+    allow_productivity = true,
     energy_required = 32,
     ingredients = {
       {type = "fluid", name = "petroleum-gas", amount = 200},
@@ -3007,6 +3166,7 @@ data:extend({
     name = "sp-styrene",  -- #ForRegEx# - recipe
     category = "chemistry",
     enabled = false,
+    allow_productivity = true,
     energy_required = 12,
     ingredients = {
       {type = "fluid", name = "sp-benzene", amount = 30},
@@ -3028,6 +3188,7 @@ data:extend({
     name = "sp-phosphoric-acid",  -- #ForRegEx# - recipe
     category = "chemistry",
     enabled = false,
+    allow_productivity = true,
     energy_required = 8,
     ingredients = {
       {type = "item", name = "sp-phosphorus", amount = 5},
@@ -3049,6 +3210,7 @@ data:extend({
     name = "sp-sulfamate",  -- #ForRegEx# - recipe
     category = "chemistry",
     enabled = false,
+    allow_productivity = true,
     energy_required = 12,
     ingredients = {
       {type = "item", name = "sulfur", amount = 3},
@@ -3071,6 +3233,7 @@ data:extend({
     name = "sp-perchloric-acid",  -- #ForRegEx# - recipe
     category = "chemistry",
     enabled = false,
+    allow_productivity = true,
     energy_required = 5,
     ingredients = {
       -- {type = "item", name = "sp-catalyst", amount = 1},
@@ -3093,6 +3256,7 @@ data:extend({
     name = "sp-rubber",  -- #ForRegEx# - recipe
     category = "chemistry",
     enabled = false,
+    allow_productivity = true,
     energy_required = 30,
     ingredients = {
       {type = "item", name = "sulfur", amount = 20},
@@ -3118,6 +3282,7 @@ data:extend({
     category = "chemistry",
     subgroup = "chemical-product",
     enabled = false,
+    allow_productivity = true,
     energy_required = 6,
     ingredients = {
       {type = "item", name = "sp-barium-sulfide", amount = 3},
@@ -3143,6 +3308,7 @@ data:extend({
     category = "chemistry",
     subgroup = "aqueous-fluid",
     enabled = false,
+    allow_productivity = true,
     energy_required = 2,
     ingredients = {
       {type = "item", name = "sp-mercury-ore", amount = 3},
@@ -3164,6 +3330,7 @@ data:extend({
     name = "sp-antimony-trichloride",  -- #ForRegEx# - recipe
     category = "chemistry",
     enabled = false,
+    allow_productivity = true,
     energy_required = 8,
     ingredients = {
       {type = "item", name = "sp-antimony-pillet", amount = 1},
@@ -3184,6 +3351,7 @@ data:extend({
     name = "sp-antimony-triiodide",  -- #ForRegEx# - recipe
     category = "chemistry",
     enabled = false,
+    allow_productivity = true,
     energy_required = 8,
     ingredients = {
       {type = "item", name = "sp-antimony-pillet", amount = 1},
@@ -3204,6 +3372,7 @@ data:extend({
     name = "sp-geological-science-pack-3",  -- #ForRegEx# - recipe
     category = "chemistry",
     enabled = false,
+    allow_productivity = true,
     energy_required = 24,
     ingredients =
     {
@@ -3231,6 +3400,7 @@ data:extend({
     name = "sp-iodine",  -- #ForRegEx# - recipe
     category = "chemistry",
     enabled = false,
+    allow_productivity = true,
     energy_required = 2,
     ingredients = {
       {type = "fluid", name = "sp-iodine-sludge", amount = 10},
@@ -3250,6 +3420,7 @@ data:extend({
     name = "sp-sodium-borate",  -- #ForRegEx# - recipe
     category = "chemistry",
     enabled = false,
+    allow_productivity = true,
     energy_required = 5,
     ingredients = {
       {type = "item", name = "sp-boron-ore", amount = 10},
@@ -3270,6 +3441,7 @@ data:extend({
     name = "sp-cobalt-sulfate",  -- #ForRegEx# - recipe
     category = "chemistry",
     enabled = false,
+    allow_productivity = true,
     energy_required = 4,
     ingredients = {
       {type = "item", name = "sp-cobalt-oxide", amount = 6},
@@ -3290,6 +3462,7 @@ data:extend({
     name = "sp-vanadium-bearing-solution",  -- #ForRegEx# - recipe
     category = "chemistry",
     enabled = false,
+    allow_productivity = true,
     energy_required = 8,
     ingredients = {
       {type = "item", name = "sp-sodium-carbonate", amount = 6},
@@ -3311,6 +3484,7 @@ data:extend({
     name = "sp-ammonium-metavanadate",  -- #ForRegEx# - recipe
     category = "chemistry",
     enabled = false,
+    allow_productivity = true,
     energy_required = 2,
     ingredients = {
       {type = "fluid", name = "sp-vanadium-bearing-solution", amount = 5}
@@ -3330,6 +3504,7 @@ data:extend({
     name = "sp-vanadyl-sulfate",  -- #ForRegEx# - recipe
     category = "chemistry",
     enabled = false,
+    allow_productivity = true,
     energy_required = 2,
     ingredients = {
       {type = "item", name = "sp-vanadium-plate", amount = 1},
@@ -3350,6 +3525,7 @@ data:extend({
     name = "sp-wood-fuel",  -- #ForRegEx# - recipe
     category = "chemistry",
     enabled = false,
+    allow_productivity = true,
     energy_required = 2,
     ingredients = {
       {type = "item", name = "sp-wood-chips", amount = 5},
@@ -3372,6 +3548,7 @@ data:extend({
                                          "__Spaghetorio__/graphics/icons/arsenic-trioxide.png", 64),
     category = "chemistry",
     enabled = false,
+    allow_productivity = true,
     hide_from_player_crafting = true,
     energy_required = 1.5,
     ingredients = {
@@ -3394,6 +3571,7 @@ data:extend({
     name = "sp-silica",  -- #ForRegEx# - recipe
     category = "chemistry",
     enabled = false,
+    allow_productivity = true,
     energy_required = 2,
     ingredients = {
       {type = "item", name = "sp-quartz", amount = 1},
@@ -3414,6 +3592,7 @@ data:extend({
     name = "sp-acetic-acid",  -- #ForRegEx# - recipe
     category = "chemistry",
     enabled = false,
+    allow_productivity = true,
     energy_required = 1,
     ingredients = {
       {type = "fluid", name = "sp-biomethanol", amount = 5},
@@ -3430,6 +3609,7 @@ data:extend({
     category = "chemistry",
     subgroup = "chemical",
     enabled = false,
+    allow_productivity = true,
     energy_required = 1.5,
     ingredients = {
       {type = "fluid", name = "sp-acetic-acid", amount = 5},
@@ -3446,6 +3626,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/ethylene-vinyl-acetate.png",
     category = "chemistry",
     enabled = false,
+    allow_productivity = true,
     energy_required = 3,
     ingredients = {
       {type = "fluid", name = "sp-vinyl-acetate", amount = 2},
@@ -3460,6 +3641,7 @@ data:extend({
     name = "sp-gallium-chloride",  -- #ForRegEx# - recipe
     category = "chemistry",
     enabled = false,
+    allow_productivity = true,
     energy_required = 3,
     ingredients = {
       {type = "fluid", name = "sp-gallium-resin", amount = 5},
@@ -3474,6 +3656,7 @@ data:extend({
     name = "sp-vinyl-fluoride",  -- #ForRegEx# - recipe
     category = "chemistry",
     enabled = false,
+    allow_productivity = true,
     energy_required = 2,
     ingredients = {
       {type = "fluid", name = "sp-ethylene", amount = 5},
@@ -3488,6 +3671,7 @@ data:extend({
     name = "sp-polyvinyl-fluoride",  -- #ForRegEx# - recipe
     category = "chemistry",
     enabled = false,
+    allow_productivity = true,
     energy_required = 6,
     ingredients = {
       {type = "fluid", name = "sp-vinyl-fluoride", amount = 10},
@@ -3501,6 +3685,7 @@ data:extend({
     name = "sp-aniline",  -- #ForRegEx# - recipe
     category = "chemistry",
     enabled = false,
+    allow_productivity = true,
     energy_required = 2,
     ingredients = {
       {type = "fluid", name = "sp-benzene", amount = 10},
@@ -3517,6 +3702,7 @@ data:extend({
                                          "__Spaghetorio__/graphics/krastorio/icons/fluids/nitrogen.png", 64),
     category = "chemistry",
     enabled = false,
+    allow_productivity = true,
     hide_from_player_crafting = true,
     energy_required = 10,
     ingredients = {
@@ -3532,6 +3718,7 @@ data:extend({
     name = "sp-hydrogen-iodide",  -- #ForRegEx# - recipe
     category = "chemistry",
     enabled = false,
+    allow_productivity = true,
     energy_required = 4,
     ingredients = {
       {type = "fluid", name = "sp-hydrogen", amount = 8},
@@ -3546,6 +3733,7 @@ data:extend({
     name = "sp-iodethene",  -- #ForRegEx# - recipe
     category = "chemistry",
     enabled = false,
+    allow_productivity = true,
     energy_required = 3,
     ingredients = {
       {type = "fluid", name = "sp-hydrogen-iodide", amount = 5},
@@ -3562,6 +3750,7 @@ data:extend({
     category = "chemistry",
     subgroup = "solution",
     enabled = false,
+    allow_productivity = true,
     energy_required = 2,
     ingredients = {
       {type = "item", name = "sp-crushed-molybdenum-ore", amount = 3},
@@ -3580,6 +3769,7 @@ data:extend({
     category = "chemistry",
     subgroup = "processed-resource",
     enabled = false,
+    allow_productivity = true,
     energy_required = 3,
     ingredients = {
       {type = "item", name = "sp-crushed-zirconium-ore", amount = 3},
@@ -3598,6 +3788,7 @@ data:extend({
     name = "sp-chemical-science-pack-3",  -- #ForRegEx# - recipe
     category = "advanced-chemistry",
     enabled = false,
+    allow_productivity = true,
     energy_required = 24,
     ingredients =
     {
@@ -3619,6 +3810,7 @@ data:extend({
     name = "sp-arsen-pillet",  -- #ForRegEx# - recipe
     category = "advanced-chemistry",
     enabled = false,
+    allow_productivity = true,
     energy_required = 20,
     ingredients = {
       {type = "item", name = "sp-arsenic-trioxide", amount = 5},
@@ -3633,6 +3825,7 @@ data:extend({
     name = "sp-arsenic-sulfide",  -- #ForRegEx# - recipe
     category = "advanced-chemistry",
     enabled = false,
+    allow_productivity = true,
     energy_required = 4,
     ingredients = {
       {type = "item", name = "sp-arsen-pillet", amount = 2},
@@ -3647,6 +3840,7 @@ data:extend({
     name = "sp-arsenic-iodide",  -- #ForRegEx# - recipe
     category = "advanced-chemistry",
     enabled = false,
+    allow_productivity = true,
     energy_required = 8,
     ingredients = {
       {type = "item", name = "sp-arsen-pillet", amount = 2},
@@ -3661,6 +3855,7 @@ data:extend({
     name = "sp-manganese-chloride",  -- #ForRegEx# - recipe
     category = "advanced-chemistry",
     enabled = false,
+    allow_productivity = true,
     energy_required = 2,
     ingredients = {
       {type = "item", name = "sp-manganese-ingot", amount = 2},
@@ -3675,6 +3870,7 @@ data:extend({
     name = "sp-potassium-cyanide",  -- #ForRegEx# - recipe
     category = "advanced-chemistry",
     enabled = false,
+    allow_productivity = true,
     energy_required = 6,
     ingredients = {
       {type = "item", name = "sp-potassium-hydroxide", amount = 3},
@@ -3689,6 +3885,7 @@ data:extend({
     name = "sp-potassium-hydroxide-solution",  -- #ForRegEx# - recipe
     category = "advanced-chemistry",
     enabled = false,
+    allow_productivity = true,
     energy_required = 10,
     ingredients = {
       {type = "item", name = "sp-potassium-hydroxide", amount = 5},
@@ -3706,6 +3903,7 @@ data:extend({
     name = "sp-lithium-oxide",  -- #ForRegEx# - recipe
     category = "chemical-staging",
     enabled = false,
+    allow_productivity = true,
     energy_required = 4,
     ingredients = {
       {type = "fluid", name = "lithium-brine", amount = 2},
@@ -3725,6 +3923,7 @@ data:extend({
     category = "chemical-staging",
     subgroup = "processed-resource",
     enabled = false,
+    allow_productivity = true,
     energy_required = 1,
     ingredients = {
       {type = "item", name = "sp-lithium-oxide", amount = 4},
@@ -3740,6 +3939,7 @@ data:extend({
     name = "sp-sodium-molybdate",  -- #ForRegEx# - recipe
     category = "chemical-staging",
     enabled = false,
+    allow_productivity = true,
     energy_required = 5,
     ingredients = {
       {type = "item", name = "sp-molybdenum-pillet", amount = 1},
@@ -3755,6 +3955,7 @@ data:extend({
     name = "sp-potassium-permanganate-solution",  -- #ForRegEx# - recipe
     category = "chemical-staging",
     enabled = false,
+    allow_productivity = true,
     energy_required = 6,
     ingredients = {
       {type = "item", name = "sp-potassium-ingot", amount = 1},
@@ -3770,6 +3971,7 @@ data:extend({
     name = "sp-potassium-dichromate-solution",  -- #ForRegEx# - recipe
     category = "chemical-staging",
     enabled = false,
+    allow_productivity = true,
     energy_required = 4,
     ingredients = {
       {type = "item", name = "sp-potassium-ingot", amount = 1},
@@ -3785,6 +3987,7 @@ data:extend({
     name = "sp-hydrogen-cyanide",  -- #ForRegEx# - recipe
     category = "chemical-staging",
     enabled = false,
+    allow_productivity = true,
     energy_required = 1,
     ingredients = {
       {type = "item", name = "carbon", amount = 2},
@@ -3800,6 +4003,7 @@ data:extend({
     category = "chemical-staging",
     energy_required = 5,
     enabled = false,
+    allow_productivity = true,
     ingredients = {
       {type = "fluid", name = "ammonia", amount = 50},
       {type = "fluid", name = "sp-mineral-water", amount = 25},
@@ -3821,6 +4025,7 @@ data:extend({
     name = "sp-hypochlorus-acid",  -- #ForRegEx# - recipe
     category = "chemical-staging",
     enabled = false,
+    allow_productivity = true,
     energy_required = 1,
     ingredients = {
       {type = "fluid", name = "water", amount = 10},
@@ -3839,6 +4044,7 @@ data:extend({
     category = "chemical-staging",
     subgroup = "chemical",
     enabled = false,
+    allow_productivity = true,
     energy_required = 1,
     ingredients = {
       {type = "fluid", name = "sp-chlorine", amount = 10},
@@ -3858,6 +4064,7 @@ data:extend({
     category = "chemical-staging",
     subgroup = "chemical",
     enabled = false,
+    allow_productivity = true,
     energy_required = 1.5,
     ingredients = {
       {type = "fluid", name = "sp-hypochlorus-acid", amount = 8},
@@ -3877,6 +4084,7 @@ data:extend({
     category = "chemical-staging",
     subgroup = "chemical",
     enabled = false,
+    allow_productivity = true,
     energy_required = 1,
     ingredients = {
       {type = "fluid", name = "water", amount = 10},
@@ -3892,6 +4100,7 @@ data:extend({
     name = "sp-calcium-hydroxide-solution",  -- #ForRegEx# - recipe
     category = "chemical-staging",
     enabled = false,
+    allow_productivity = true,
     energy_required = 1,
     ingredients = {
       {type = "item", name = "calcite", amount = 1},
@@ -3906,6 +4115,7 @@ data:extend({
     name = "sp-barium-sulfamate",  -- #ForRegEx# - recipe
     category = "chemical-staging",
     enabled = false,
+    allow_productivity = true,
     energy_required = 4,
     ingredients = {
       {type = "item", name = "sp-barium-ore", amount = 3},
@@ -3920,6 +4130,7 @@ data:extend({
     name = "sp-potassium-chloride",  -- #ForRegEx# - recipe
     category = "chemical-staging",
     enabled = false,
+    allow_productivity = true,
     energy_required = 3,
     ingredients = {
       {type = "item", name = "sp-potassium-ore", amount = 2},
@@ -3967,6 +4178,7 @@ data:extend({
     name = "sp-gallium-resin",  -- #ForRegEx# - recipe
     category = "chemical-staging",
     enabled = false,
+    allow_productivity = true,
     energy_required = 6,
     ingredients = {
       {type = "item", name = "sp-alumina", amount = 3},
@@ -4018,6 +4230,7 @@ data:extend({
     name = "sp-hydrogen-fluoride",  -- #ForRegEx# - recipe
     category = "chemical-staging",
     enabled = false,
+    allow_productivity = true,
     energy_required = 3,
     ingredients = {
       {type = "fluid", name = "fluorine", amount = 3},
@@ -4032,6 +4245,7 @@ data:extend({
     name = "sp-ammonium-sulfate",  -- #ForRegEx# - recipe
     category = "chemical-staging",
     enabled = false,
+    allow_productivity = true,
     energy_required = 3,
     ingredients = {
       {type = "fluid", name = "ammonia", amount = 3},
@@ -4048,6 +4262,7 @@ data:extend({
     category = "chemical-staging",
     subgroup = "chemical-product",
     enabled = false,
+    allow_productivity = true,
     energy_required = 3,
     ingredients = {
       {type = "item", name = "sp-ammonium-persulfate", amount = 1},
@@ -4066,6 +4281,7 @@ data:extend({
     category = "chemical-staging",
     subgroup = "chemical",
     enabled = false,
+    allow_productivity = true,
     energy_required = 4,
     ingredients = {
       {type = "fluid", name = "ammonia", amount = 5},
@@ -4083,6 +4299,7 @@ data:extend({
     category = "chemical-staging",
     subgroup = "chemical",
     enabled = false,
+    allow_productivity = true,
     energy_required = 2,
     ingredients = {
       {type = "fluid", name = "sp-biomethanol", amount = 5},
@@ -4100,6 +4317,7 @@ data:extend({
     category = "chemical-staging",
     subgroup = "chemical",
     enabled = false,
+    allow_productivity = true,
     energy_required = 5,
     ingredients = {
       {type = "fluid", name = "sp-benzene", amount = 4},
@@ -4117,6 +4335,7 @@ data:extend({
     category = "chemical-staging",
     subgroup = "chemical",
     enabled = false,
+    allow_productivity = true,
     energy_required = 5,
     ingredients = {
       {type = "fluid", name = "sp-toluene", amount = 3},
@@ -4132,6 +4351,7 @@ data:extend({
     name = "sp-benzyltrimethylammonium-chloride",  -- #ForRegEx# - recipe
     category = "chemical-staging",
     enabled = false,
+    allow_productivity = true,
     energy_required = 2,
     ingredients = {
       {type = "fluid", name = "sp-trialkylamine", amount = 5},
@@ -4146,6 +4366,7 @@ data:extend({
     name = "sp-helium",  -- #ForRegEx# - recipe
     category = "chemical-staging",
     enabled = false,
+    allow_productivity = true,
     energy_required = 4,
     ingredients = {
       {type = "fluid", name = "sp-hydrogen", amount = 2}
@@ -4165,6 +4386,7 @@ data:extend({
     name = "sp-material-science-pack-2",  -- #ForRegEx# - recipe
     category = "chemical-staging",
     enabled = false,
+    allow_productivity = true,
     energy_required = 24,
     ingredients =
     {
@@ -4185,6 +4407,7 @@ data:extend({
     name = "sp-chemical-science-pack-2",  -- #ForRegEx# - recipe
     category = "chemical-staging",
     enabled = false,
+    allow_productivity = true,
     energy_required = 24,
     ingredients =
     {
@@ -4207,6 +4430,7 @@ data:extend({
     name = "sp-boron-phosphide",  -- #ForRegEx# - recipe
     category = "crystallizing",
     enabled = false,
+    allow_productivity = true,
     energy_required = 10,
     ingredients =
     {
@@ -4222,6 +4446,7 @@ data:extend({
     name = "sp-barium-titanate",  -- #ForRegEx# - recipe
     category = "crystallizing",
     enabled = false,
+    allow_productivity = true,
     energy_required = 3,
     ingredients = {
       {type = "item", name = "sp-barium-billet", amount = 1},
@@ -4236,6 +4461,7 @@ data:extend({
     name = "sp-optical-glass",  -- #ForRegEx# - recipe
     category = "crystallizing",
     enabled = false,
+    allow_productivity = true,
     energy_required = 4,
     ingredients = {
       {type = "item", name = "sp-silica", amount = 2},
@@ -4252,6 +4478,7 @@ data:extend({
                                          "__Spaghetorio__/graphics/icons/alumina.png", 64),
     category = "crystallizing",
     enabled = false,
+    allow_productivity = true,
     energy_required = 4,
     ingredients = {
       {type = "item", name = "sp-alumina", amount = 3},
@@ -4266,6 +4493,7 @@ data:extend({
     name = "sp-cadmium-telluride",  -- #ForRegEx# - recipe
     category = "crystallizing",
     enabled = false,
+    allow_productivity = true,
     energy_required = 6,
     ingredients = {
       {type = "item", name = "sp-tellurium", amount = 1},
@@ -4280,6 +4508,7 @@ data:extend({
     name = "sp-copper-indium-gallium-selenide",  -- #ForRegEx# - recipe
     category = "crystallizing",
     enabled = false,
+    allow_productivity = true,
     energy_required = 2,
     ingredients = {
       {type = "item", name = "copper-plate", amount = 1},
@@ -4315,6 +4544,7 @@ data:extend({
     name = "sp-bismuth-telluride",  -- #ForRegEx# - recipe
     category = "crystallizing",
     enabled = false,
+    allow_productivity = true,
     energy_required = 15,
     ingredients = {
       {type = "item", name = "sp-bismuth", amount = 3},
@@ -4329,6 +4559,7 @@ data:extend({
     name = "sp-monocrystal",  -- #ForRegEx# - recipe
     category = "crystallizing",
     enabled = false,
+    allow_productivity = true,
     energy_required = 30,
     ingredients = {
       {type = "item", name = "sp-titanium-plate", amount = 6},
@@ -4347,6 +4578,7 @@ data:extend({
     mip_maps = 4,
     category = "crystallizing",
     enabled = false,
+    allow_productivity = true,
     energy_required = 30,
     ingredients = {
       {type = "item", name = "copper-plate", amount = 4},
@@ -4366,6 +4598,7 @@ data:extend({
                                          "__Spaghetorio__/graphics/icons/aluminum-sheet.png", 64),
     category = "crystallizing",
     enabled = false,
+    allow_productivity = true,
     energy_required = 40,
     hide_from_player_crafting = true,
     ingredients = {
@@ -4387,6 +4620,7 @@ data:extend({
     name = "sp-silicon-nitride",  -- #ForRegEx# - recipe
     category = "crystallizing-with-fluid",
     enabled = false,
+    allow_productivity = true,
     energy_required = 2,
     ingredients = {
       {type = "item", name = "sp-silica", amount = 1},
@@ -4402,6 +4636,7 @@ data:extend({
     name = "sp-titanium-nitride",  -- #ForRegEx# - recipe
     category = "crystallizing-with-fluid",
     enabled = false,
+    allow_productivity = true,
     energy_required = 6,
     ingredients = {
       {type = "item", name = "sp-titanium-ingot", amount = 2},
@@ -4418,6 +4653,7 @@ data:extend({
     category = "crystallizing-with-fluid",
     subgroup = "processed-resource",
     enabled = false,
+    allow_productivity = true,
     energy_required = 3,
     ingredients = {
       {type = "item", name = "iron-ore", amount = 5},
@@ -4436,6 +4672,7 @@ data:extend({
     category = "crystallizing-with-fluid",
     subgroup = "processed-resource",
     enabled = false,
+    allow_productivity = true,
     energy_required = 4,
     hide_from_player_crafting = true,
     ingredients = {
@@ -4455,6 +4692,7 @@ data:extend({
     category = "crystallizing-with-fluid",
     subgroup = "processed-resource",
     enabled = false,
+    allow_productivity = true,
     energy_required = 3,
     hide_from_player_crafting = true,
     ingredients = {
@@ -4474,6 +4712,7 @@ data:extend({
     category = "crystallizing-with-fluid",
     subgroup = "processed-resource",
     enabled = false,
+    allow_productivity = true,
     energy_required = 4,
     hide_from_player_crafting = true,
     ingredients = {
@@ -4490,6 +4729,7 @@ data:extend({
     name = "sp-gallium-nitride",  -- #ForRegEx# - recipe
     category = "crystallizing-with-fluid",
     enabled = false,
+    allow_productivity = true,
     energy_required = 8,
     ingredients = {
       {type = "item", name = "sp-gallium", amount = 1},
@@ -4506,6 +4746,7 @@ data:extend({
     category = "crystallizing-with-fluid",
     subgroup = "processed-metal",
     enabled = false,
+    allow_productivity = true,
     energy_required = 5,
     ingredients = {
       {type = "item", name = "sp-leadstone", amount = 3},
@@ -4524,6 +4765,7 @@ data:extend({
     category = "crystallizing-with-fluid",
     subgroup = "processed-metal",
     enabled = false,
+    allow_productivity = true,
     hide_from_player_crafting = true,
     energy_required = 10,
     ingredients = {
@@ -4540,6 +4782,7 @@ data:extend({
     name = "sp-infrared-filter",  -- #ForRegEx# - recipe
     category = "crystallizing-with-fluid",
     enabled = false,
+    allow_productivity = true,
     energy_required = 1.6,
     ingredients = {
       {type = "fluid", name = "sp-aqueous-tantalum", amount = 10},
@@ -4559,6 +4802,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/beryllium-fluoride.png",
     category = "incinerating",
     enabled = false,
+    allow_productivity = true,
     energy_required = 2,
     ingredients = {
       {type = "fluid", name = "fluorine", amount = 5},
@@ -4574,6 +4818,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/beryllium-oxide.png",
     category = "incinerating",
     enabled = false,
+    allow_productivity = true,
     energy_required = 5,
     ingredients = {
       {type = "item", name = "sp-beryllium-fluoride", amount = 1},
@@ -4607,6 +4852,7 @@ data:extend({
     category = "incinerating",
     subgroup = "processed-metal",
     enabled = false,
+    allow_productivity = true,
     energy_required = 4,
     ingredients = {
       {type = "fluid", name = "sulfuric-acid", amount = 5},
@@ -4625,6 +4871,7 @@ data:extend({
     category = "incinerating",
     subgroup = "processed-metal",
     enabled = false,
+    allow_productivity = true,
     energy_required = 3,
     hide_from_player_crafting = true,
     ingredients = {
@@ -4643,6 +4890,7 @@ data:extend({
     category = "incinerating",
     subgroup = "incinerate-resource",
     enabled = false,
+    allow_productivity = true,
     energy_required = 2,
     hide_from_player_crafting = true,
     ingredients = {
@@ -4659,6 +4907,7 @@ data:extend({
     category = "incinerating",
     subgroup = "incinerate-resource",
     enabled = false,
+    allow_productivity = true,
     energy_required = 2,
     hide_from_player_crafting = true,
     ingredients = {
@@ -4675,6 +4924,7 @@ data:extend({
     category = "incinerating",
     subgroup = "incinerate-resource",
     enabled = false,
+    allow_productivity = true,
     energy_required = 1.5,
     hide_from_player_crafting = true,
     ingredients = {
@@ -4691,6 +4941,7 @@ data:extend({
     category = "incinerating",
     subgroup = "incinerate-resource",
     enabled = false,
+    allow_productivity = true,
     energy_required = 1,
     hide_from_player_crafting = true,
     ingredients = {
@@ -4707,6 +4958,7 @@ data:extend({
     category = "incinerating",
     subgroup = "incinerate-fluid",
     enabled = false,
+    allow_productivity = true,
     energy_required = 0.2,
     hide_from_player_crafting = true,
     ingredients = {
@@ -4723,6 +4975,7 @@ data:extend({
     category = "incinerating",
     subgroup = "incinerate-fluid",
     enabled = false,
+    allow_productivity = true,
     energy_required = 0.5,
     hide_from_player_crafting = true,
     ingredients = {
@@ -4739,6 +4992,7 @@ data:extend({
     category = "incinerating",
     subgroup = "incinerate-fluid",
     enabled = false,
+    allow_productivity = true,
     energy_required = 0.2,
     hide_from_player_crafting = true,
     ingredients = {
@@ -4755,6 +5009,7 @@ data:extend({
     category = "incinerating",
     subgroup = "incinerate-fluid",
     enabled = false,
+    allow_productivity = true,
     energy_required = 0.5,
     hide_from_player_crafting = true,
     ingredients = {
@@ -4771,6 +5026,7 @@ data:extend({
     category = "incinerating",
     subgroup = "incinerate-fluid",
     enabled = false,
+    allow_productivity = true,
     energy_required = 1,
     hide_from_player_crafting = true,
     ingredients = {
@@ -4788,6 +5044,7 @@ data:extend({
     name = "sp-ammonium-persulfate",  -- #ForRegEx# - recipe
     category = "oxidizing",
     enabled = false,
+    allow_productivity = true,
     energy_required = 5,
     ingredients = {
       {type = "item", name = "sp-ammonium-sulfate", amount = 1},
@@ -4802,6 +5059,7 @@ data:extend({
     name = "sp-hydrogen-peroxide",  -- #ForRegEx# - recipe
     category = "oxidizing",
     enabled = false,
+    allow_productivity = true,
     energy_required = 10,
     ingredients = {
       {type = "fluid", name = "water", amount = 5},
@@ -4816,6 +5074,7 @@ data:extend({
     name = "sp-peroxymonosulfuric-acid",  -- #ForRegEx# - recipe
     category = "oxidizing",
     enabled = false,
+    allow_productivity = true,
     energy_required = 8,
     ingredients = {
       {type = "fluid", name = "sulfuric-acid", amount = 5},
@@ -4833,6 +5092,7 @@ data:extend({
     name = "sp-heat-resistant-electronics",  -- #ForRegEx# - recipe
     category = "electronics",
     enabled = false,
+    allow_productivity = true,
     energy_required = 6,
     ingredients = {
       {type = "item", name = "sp-insulated-metal-substrate", amount = 1},
@@ -4850,6 +5110,7 @@ data:extend({
     name = "sp-thermocouple",  -- #ForRegEx# - recipe
     category = "electronics",
     enabled = false,
+    allow_productivity = true,
     energy_required = 15,
     ingredients = {
       {type = "item", name = "sp-bismuth-telluride", amount = 5},
@@ -4868,6 +5129,7 @@ data:extend({
     name = "sp-peltier-cell",  -- #ForRegEx# - recipe
     category = "electronics",
     enabled = false,
+    allow_productivity = true,
     energy_required = 4,
     ingredients = {
       {type = "item", name = "sp-bismuth-telluride", amount = 1},
@@ -4887,6 +5149,7 @@ data:extend({
     name = "sp-electromagnetic-science-pack-2",  -- #ForRegEx# - recipe
     category = "electromagnetics",
     enabled = false,
+    allow_productivity = true,
     energy_required = 40,
     ingredients =
     {
@@ -4908,6 +5171,7 @@ data:extend({
     name = "sp-insulated-metal-substrate",  -- #ForRegEx# - recipe
     category = "electronics-with-fluid",
     enabled = false,
+    allow_productivity = true,
     energy_required = 3,
     ingredients = {
       {type = "item", name = "copper-plate", amount = 1},
@@ -4925,6 +5189,7 @@ data:extend({
     name = "sp-lithium-sulfur-battery",  -- #ForRegEx# - recipe
     category = "electronics-with-fluid",
     enabled = false,
+    allow_productivity = true,
     energy_required = 4,
     ingredients = {
       {type = "item", name = "lithium", amount = 4},
@@ -4946,6 +5211,7 @@ data:extend({
     name = "sp-fuel",  -- #ForRegEx# - recipe
     category = "sp-kr-fuel-refinery",
     enabled = false,
+    allow_productivity = true,
     energy_required = 10,
     ingredients = {
       {type = "item", name = "sp-leadstone", amount = 1},
@@ -4965,6 +5231,7 @@ data:extend({
     name = "sp-diborane",  -- #ForRegEx# - recipe
     category = "sp-kr-fuel-refinery",
     enabled = false,
+    allow_productivity = true,
     energy_required = 5,
     ingredients = {
       {type = "item", name = "sp-sodium-borate", amount = 1},
@@ -4985,6 +5252,7 @@ data:extend({
     name = "sp-biomethanol",  -- #ForRegEx# - recipe
     category = "sp-kr-fuel-refinery",
     enabled = false,
+    allow_productivity = true,
     energy_required = 10,
     ingredients = {
       {type = "item", name = "sp-wood-chips", amount = 20},
@@ -5004,6 +5272,7 @@ data:extend({
     name = "sp-bio-fuel",  -- #ForRegEx# - recipe
     category = "sp-kr-fuel-refinery",
     enabled = false,
+    allow_productivity = true,
     energy_required = 8,
     ingredients = {
       {type = "item", name = "lithium", amount = 1},
@@ -5025,6 +5294,7 @@ data:extend({
                                          "__Spaghetorio__/graphics/icons/hydrogen-peroxide.png", 64),
     category = "sp-kr-fuel-refinery",
     enabled = false,
+    allow_productivity = true,
     energy_required = 2,
     ingredients = {
       {type = "fluid", name = "sp-hydrogen-peroxide", amount = 5},
@@ -5045,6 +5315,7 @@ data:extend({
     name = "sp-boron-carbide",  -- #ForRegEx# - recipe
     category = "induction-hardening",
     enabled = false,
+    allow_productivity = true,
     energy_required = 20,
     ingredients =
     {
@@ -5060,6 +5331,7 @@ data:extend({
     name = "sp-boron-silicade",  -- #ForRegEx# - recipe
     category = "induction-hardening",
     enabled = false,
+    allow_productivity = true,
     energy_required = 12,
     ingredients =
     {
@@ -5075,6 +5347,7 @@ data:extend({
     name = "sp-lead-molybdate",  -- #ForRegEx# - recipe
     category = "induction-hardening",
     enabled = false,
+    allow_productivity = true,
     energy_required = 15,
     ingredients = {
       {type = "item", name = "sp-molybdenum-pillet", amount = 3},
@@ -5090,6 +5363,7 @@ data:extend({
     name = "sp-gearshaft",  -- #ForRegEx# - recipe
     category = "induction-hardening",
     enabled = false,
+    allow_productivity = true,
     energy_required = 3,
     ingredients = {
       {type = "item", name = "sp-stainless-steel-gear-wheel", amount = 4},
@@ -5104,6 +5378,7 @@ data:extend({
     name = "sp-heat-resistant-tile",  -- #ForRegEx# - recipe
     category = "induction-hardening",
     enabled = false,
+    allow_productivity = true,
     energy_required = 5.2,
     ingredients = {
       {type = "item", name = "sp-zirconia", amount = 2},
@@ -5119,6 +5394,7 @@ data:extend({
     name = "sp-titanium-carbide",  -- #ForRegEx# - recipe
     category = "induction-hardening",
     enabled = false,
+    allow_productivity = true,
     energy_required = 2.4,
     ingredients = {
       {type = "item", name = "sp-titanium-ingot", amount = 1},
@@ -5137,6 +5413,7 @@ data:extend({
     category = "sp-kr-fluid-filtration",
     energy_required = 90,
     enabled = false,
+    allow_productivity = true,
     ingredients = {
       {type = "fluid", name = "water", amount = 5000},
       {type = "item", name = "sp-filter", amount = 1},
@@ -5160,6 +5437,7 @@ data:extend({
     category = "sp-kr-fluid-filtration",
     subgroup = "processed-resource",
     enabled = false,
+    allow_productivity = true,
     energy_required = 1,
     ingredients = {
       {type = "item", name = "sp-sand", amount = 2},
@@ -5180,6 +5458,7 @@ data:extend({
     name = "sp-calcium-carbonate",  -- #ForRegEx# - recipe
     category = "sp-kr-fluid-filtration",
     enabled = false,
+    allow_productivity = true,
     energy_required = 0.5,
     ingredients = {
       {type = "item", name = "calcite", amount = 1},
@@ -5201,6 +5480,7 @@ data:extend({
     name = "sp-cement",  -- #ForRegEx# - recipe
     category = "sp-kr-fluid-filtration",
     enabled = false,
+    allow_productivity = true,
     energy_required = 2,
     ingredients = {
       {type = "item", name = "sp-calcium-carbonate", amount = 3},
@@ -5217,6 +5497,7 @@ data:extend({
     name = "sp-drilling-fluid",  -- #ForRegEx# - recipe
     category = "sp-kr-fluid-filtration",
     enabled = false,
+    allow_productivity = true,
     energy_required = 6,
     ingredients = {
       {type = "item", name = "sp-barium-sulfide", amount = 3},
@@ -5238,6 +5519,7 @@ data:extend({
     name = "sp-selenious-acid",  -- #ForRegEx# - recipe
     category = "sp-kr-fluid-filtration",
     enabled = false,
+    allow_productivity = true,
     energy_required = 120,
     ingredients = {
       {type = "item", name = "sp-filter", amount = 1},
@@ -5261,6 +5543,7 @@ data:extend({
     icon_size = 64,
     energy_required = 20,
     enabled = false,
+    allow_productivity = true,
     always_show_made_in = true,
     always_show_products = true,
     ingredients = {},
@@ -5277,6 +5560,7 @@ data:extend({
     icon_size = 64,
     energy_required = 5,
     enabled = false,
+    allow_productivity = true,
     always_show_made_in = true,
     always_show_products = true,
     ingredients = {},
@@ -5293,6 +5577,7 @@ data:extend({
     icon_size = 64,
     energy_required = 30,
     enabled = false,
+    allow_productivity = true,
     always_show_made_in = true,
     always_show_products = true,
     ingredients = {},
@@ -5309,6 +5594,7 @@ data:extend({
     icon_size = 64,
     energy_required = 10,
     enabled = false,
+    allow_productivity = true,
     always_show_made_in = true,
     always_show_products = true,
     ingredients = {},
@@ -5321,6 +5607,7 @@ data:extend({
     name = "sp-xenon-from-atmosphere",  -- #ForRegEx# - recipe
     category = "sp-kr-atmosphere-condensation",
     enabled = false,
+    allow_productivity = true,
     energy_required = 15,
     ingredients = {},
     results = {
@@ -5332,6 +5619,7 @@ data:extend({
     name = "sp-helium-from-atmosphere",  -- #ForRegEx# - recipe
     category = "sp-kr-atmosphere-condensation",
     enabled = false,
+    allow_productivity = true,
     energy_required = 3,
     ingredients = {},
     results = {
@@ -5350,6 +5638,7 @@ data:extend({
     category = "crushing",
     subgroup = "crushed-resource-recipe",
     enabled = false,
+    allow_productivity = true,
     energy_required = 2,
     ingredients = {
       {type = "item", name = "sp-aluminum-ore", amount = 3},
@@ -5369,6 +5658,7 @@ data:extend({
     category = "crushing",
     subgroup = "crushed-resource-recipe",
     enabled = false,
+    allow_productivity = true,
     energy_required = 1.5,
     ingredients = {
       {type = "item", name = "sp-chromite", amount = 3},
@@ -5388,6 +5678,7 @@ data:extend({
     category = "crushing",
     subgroup = "crushed-resource-recipe",
     enabled = false,
+    allow_productivity = true,
     energy_required = 2,
     ingredients = {
       {type = "item", name = "coal", amount = 3}
@@ -5405,6 +5696,7 @@ data:extend({
     category = "crushing",
     subgroup = "crushed-resource-recipe",
     enabled = false,
+    allow_productivity = true,
     energy_required = 1.5,
     ingredients = {
       {type = "item", name = "sp-coke", amount = 2}
@@ -5422,6 +5714,7 @@ data:extend({
     category = "crushing",
     subgroup = "crushed-resource-recipe",
     enabled = false,
+    allow_productivity = true,
     energy_required = 1,
     ingredients = {
       {type = "item", name = "copper-ore", amount = 6},
@@ -5440,6 +5733,7 @@ data:extend({
     category = "crushing",
     subgroup = "crushed-resource-recipe",
     enabled = false,
+    allow_productivity = true,
     energy_required = 1,
     ingredients = {
       {type = "item", name = "iron-ore", amount = 6},
@@ -5458,6 +5752,7 @@ data:extend({
     category = "crushing",
     subgroup = "crushed-resource-recipe",
     enabled = false,
+    allow_productivity = true,
     energy_required = 2,
     ingredients = {
       {type = "item", name = "sp-magnesium-ore", amount = 4},
@@ -5477,6 +5772,7 @@ data:extend({
     category = "crushing",
     subgroup = "crushed-resource-recipe",
     enabled = false,
+    allow_productivity = true,
     energy_required = 1.5,
     ingredients = {
       {type = "item", name = "sp-nickel-ore", amount = 3},
@@ -5497,6 +5793,7 @@ data:extend({
     category = "crushing",
     subgroup = "crushed-resource-recipe",
     enabled = false,
+    allow_productivity = true,
     energy_required = 2,
     ingredients = {
       {type = "item", name = "sp-tinstone", amount = 3},
@@ -5516,6 +5813,7 @@ data:extend({
     category = "crushing",
     subgroup = "crushed-resource-recipe",
     enabled = false,
+    allow_productivity = true,
     energy_required = 3,
     ingredients = {
       {type = "item", name = "sp-titanium-ore", amount = 3},
@@ -5534,6 +5832,7 @@ data:extend({
     category = "crushing",
     subgroup = "crushed-resource-recipe",
     enabled = false,
+    allow_productivity = true,
     energy_required = 2.5,
     ingredients = {
       {type = "item", name = "tungsten-ore", amount = 3},
@@ -5553,6 +5852,7 @@ data:extend({
     category = "crushing",
     subgroup = "crushed-resource-recipe",
     enabled = false,
+    allow_productivity = true,
     energy_required = 1,
     ingredients = {
       {type = "item", name = "sp-zinc-ore", amount = 3},
@@ -5573,6 +5873,7 @@ data:extend({
     category = "crushing",
     subgroup = "crushed-resource-recipe",
     enabled = false,
+    allow_productivity = true,
     energy_required = 2,
     ingredients = {
       {type = "item", name = "sp-zirconium-ore", amount = 2},
@@ -5591,6 +5892,7 @@ data:extend({
     category = "crushing",
     subgroup = "crushed-resource-recipe",
     enabled = false,
+    allow_productivity = true,
     energy_required = 2,
     ingredients = {
       {type = "item", name = "sp-cobalt-ore", amount = 3},
@@ -5609,6 +5911,7 @@ data:extend({
     category = "crushing",
     subgroup = "crushed-resource-recipe",
     enabled = false,
+    allow_productivity = true,
     energy_required = 4,
     ingredients = {
       {type = "item", name = "sp-molybdenum-ore", amount = 5},
@@ -5629,6 +5932,7 @@ data:extend({
     category = "crushing",
     subgroup = "sp-crushing-acrosphere-corrupted",
     enabled = false,
+    allow_productivity = true,
     energy_required = 8,
     hide_from_player_crafting = true,
     ingredients = {
@@ -5648,6 +5952,7 @@ data:extend({
     category = "crushing",
     subgroup = "sp-crushing-acrosphere-corrupted",
     enabled = false,
+    allow_productivity = true,
     energy_required = 8,
     hide_from_player_crafting = true,
     ingredients = {
@@ -5667,6 +5972,7 @@ data:extend({
     category = "crushing",
     subgroup = "sp-crushing-acrosphere-corrupted",
     enabled = false,
+    allow_productivity = true,
     energy_required = 8,
     hide_from_player_crafting = true,
     ingredients = {
@@ -5686,6 +5992,7 @@ data:extend({
     category = "crushing",
     subgroup = "sp-crushing-acrosphere-corrupted",
     enabled = false,
+    allow_productivity = true,
     energy_required = 8,
     hide_from_player_crafting = true,
     ingredients = {
@@ -5701,6 +6008,7 @@ data:extend({
     name = "sp-sand",  -- #ForRegEx# - recipe
     category = "crushing",
     enabled = false,
+    allow_productivity = true,
     energy_required = 2,
     ingredients = {
       {type = "item", name = "stone", amount = 1},
@@ -5718,6 +6026,7 @@ data:extend({
     category = "crushing",
     subgroup = "processed-resource",
     enabled = false,
+    allow_productivity = true,
     energy_required = 3,
     ingredients = {
       {type = "item", name = "sp-raw-imersite", amount = 3},
@@ -5736,6 +6045,7 @@ data:extend({
     category = "crushing",
     subgroup = "radioactive-resource",
     enabled = false,
+    allow_productivity = true,
     energy_required = 20,
     ingredients = {
       {type = "item", name = "sp-nuclear-waste", amount = 1},
@@ -5785,6 +6095,7 @@ data:extend({
     name = "sp-wood-chips",  -- #ForRegEx# - recipe
     category = "sawing",
     enabled = false,
+    allow_productivity = true,
     energy_required = 1.5,
     ingredients = {
       {type = "item", name = "wood", amount = 1}
@@ -5804,6 +6115,7 @@ data:extend({
     category = "sp-kr-growing",
     subgroup = "basic-agriculture",
     enabled = false,
+    allow_productivity = true,
     energy_required = 75,
     hide_from_player_crafting = true,
     ingredients = {
@@ -5823,6 +6135,7 @@ data:extend({
     subgroup = "basic-agriculture",
     order = "b[nauvis-agriculture]-a[seed-processing]",
     enabled = false,
+    allow_productivity = true,
     allow_productivity = true,
     energy_required = 30,
     ingredients = {
@@ -5849,6 +6162,7 @@ data:extend({
     name = "sp-evolution-cell-container",  -- #ForRegEx# - recipe
     category = "sp-kr-bioprocessing",
     enabled = false,
+    allow_productivity = true,
     energy_required = 16,
     ingredients = {
       {type = "item", name = "sp-evolution-pulse-cell", amount = 4},
@@ -5866,6 +6180,7 @@ data:extend({
     name = "sp-evolution-pulse-cell",  -- #ForRegEx# - recipe
     category = "sp-kr-bioprocessing",
     enabled = false,
+    allow_productivity = true,
     energy_required = 120,
     ingredients = {
       {type = "item", name = "sp-vitality-prism", amount = 1},
@@ -5890,6 +6205,7 @@ data:extend({
     name = "sp-aluminum-sheet",  -- #ForRegEx# - recipe
     category = "sp-kr-electrolysis",
     enabled = false,
+    allow_productivity = true,
     energy_required = 3,
     ingredients = {
       {type = "item", name = "sp-alumina", amount = 3}
@@ -5903,6 +6219,7 @@ data:extend({
     name = "sp-anodized-aluminum",  -- #ForRegEx# - recipe
     category = "sp-kr-electrolysis",
     enabled = false,
+    allow_productivity = true,
     energy_required = 1,
     ingredients = {
       {type = "item", name = "sp-aluminum-sheet", amount = 1},
@@ -5928,6 +6245,7 @@ data:extend({
     category = "sp-kr-electrolysis",
     subgroup = "raw-material",
     enabled = false,
+    allow_productivity = true,
     energy_required = 2,
     ingredients = {
       {type = "item", name = "sp-magnesium-chloride", amount = 2}
@@ -5947,6 +6265,7 @@ data:extend({
     category = "sp-kr-electrolysis",
     subgroup = "processed-resource",
     enabled = false,
+    allow_productivity = true,
     energy_required = 5,
     ingredients = {
       {type = "item", name = "sp-titanium-chloride", amount = 3},
@@ -5966,6 +6285,7 @@ data:extend({
     category = "sp-kr-electrolysis",
     subgroup = "raw-material",
     enabled = false,
+    allow_productivity = true,
     energy_required = 4,
     ingredients = {
       {type = "item", name = "sp-zinc-sulfate", amount = 3}
@@ -5986,6 +6306,7 @@ data:extend({
     category = "sp-kr-electrolysis",
     subgroup = "raw-material",
     enabled = false,
+    allow_productivity = true,
     hide_from_player_crafting = true,
     energy_required = 3,
     ingredients = {
@@ -6023,6 +6344,7 @@ data:extend({
                                          "__Spaghetorio__/graphics/icons/liquid-sodium.png", 64),
     category = "chemistry",
     enabled = false,
+    allow_productivity = true,
     energy_required = 30,
     ingredients = {
       {type = "fluid", name = "sp-liquid-sodium", amount = 35},
@@ -6043,6 +6365,7 @@ data:extend({
     name = "sp-manganese-ingot",  -- #ForRegEx# - recipe
     category = "sp-kr-electrolysis",
     enabled = false,
+    allow_productivity = true,
     energy_required = 4,
     ingredients = {
       {type = "item", name = "sp-manganese-dioxide", amount = 5}
@@ -6059,6 +6382,7 @@ data:extend({
     mip_maps = 4,
     category = "sp-kr-electrolysis",
     enabled = false,
+    allow_productivity = true,
     energy_required = 6,
     ingredients = {
       {type = "fluid", name = "sp-heavy-water", amount = 50},
@@ -6077,6 +6401,7 @@ data:extend({
     energy_required = 3,
     subgroup = "chemical",
     enabled = false,
+    allow_productivity = true,
     always_show_made_in = true,
     always_show_products = true,
     ingredients = {
@@ -6101,6 +6426,7 @@ data:extend({
     energy_required = 3,
     subgroup = "chemical",
     enabled = false,
+    allow_productivity = true,
     always_show_made_in = true,
     always_show_products = true,
     ingredients = {
@@ -6121,6 +6447,7 @@ data:extend({
     category = "sp-kr-electrolysis",
     energy_required = 120,
     enabled = false,
+    allow_productivity = true,
     always_show_made_in = true,
     always_show_products = true,
     allow_productivity = true,
@@ -6142,6 +6469,7 @@ data:extend({
     name = "sp-potassium-hydroxide",  -- #ForRegEx# - recipe
     category = "sp-kr-electrolysis",
     enabled = false,
+    allow_productivity = true,
     energy_required = 4,
     ingredients = {
       {type = "item", name = "sp-potassium-chloride", amount = 1},
@@ -6159,6 +6487,7 @@ data:extend({
     category = "sp-kr-electrolysis",
     subgroup = "processed-metal",
     enabled = false,
+    allow_productivity = true,
     energy_required = 3,
     ingredients = {
       {type = "item", name = "sp-beryllium-fluoride", amount = 1},
@@ -6176,6 +6505,7 @@ data:extend({
     category = "sp-kr-electrolysis",
     subgroup = "processed-metal",
     enabled = false,
+    allow_productivity = true,
     hide_from_player_crafting = true,
     energy_required = 5,
     ingredients = {
@@ -6194,6 +6524,7 @@ data:extend({
     name = "sp-aluminum-frame",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 2,
     ingredients = {
       {type = "item", name = "sp-aluminum-sheet", amount = 2}
@@ -6207,6 +6538,7 @@ data:extend({
     name = "sp-aluminum-cable",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 1.2,
     ingredients = {
       {type = "item", name = "sp-aluminum-sheet", amount = 1}
@@ -6220,6 +6552,7 @@ data:extend({
     name = "sp-carbon-nanotubes",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 10,
     ingredients = {
       {type = "item", name = "carbon", amount = 1}
@@ -6233,6 +6566,7 @@ data:extend({
     name = "sp-graphene",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 8,
     ingredients = {
       {type = "item", name = "carbon", amount = 1}
@@ -6246,6 +6580,7 @@ data:extend({
     name = "sp-micro-frame",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 12,
     ingredients = {
       {type = "item", name = "sp-titanium-plate", amount = 2},
@@ -6262,6 +6597,7 @@ data:extend({
     name = "sp-blank-tech-card",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 2,
     ingredients = {
       {type = "item", name = "copper-cable", amount = 2},
@@ -6277,6 +6613,7 @@ data:extend({
     name = "sp-stainless-steel-gear-wheel",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 1,
     ingredients = {
       {type = "item", name = "sp-stainless-steel", amount = 1}
@@ -6290,6 +6627,7 @@ data:extend({
     name = "sp-copper-tube",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 0.4,
     ingredients = {
       {type = "item", name = "copper-plate", amount = 1}
@@ -6303,6 +6641,7 @@ data:extend({
     name = "sp-pressure-tube",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 3.2,
     ingredients = {
       {type = "item", name = "sp-glass", amount = 1},
@@ -6320,6 +6659,7 @@ data:extend({
     name = "sp-spring",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 0.8,
     ingredients = {
       {type = "item", name = "iron-stick", amount = 1}
@@ -6333,6 +6673,7 @@ data:extend({
     name = "sp-connecting-rod",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 1,
     ingredients = {
       {type = "item", name = "steel-plate", amount = 1},
@@ -6348,6 +6689,7 @@ data:extend({
     icon_size = 64,
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 1.2,
     ingredients = {
       {type = "item", name = "iron-stick", amount = 1}
@@ -6362,6 +6704,7 @@ data:extend({
     icon_size = 64,
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 1.5,
     ingredients = {
       {type = "item", name = "iron-plate", amount = 1}
@@ -6376,6 +6719,7 @@ data:extend({
     icon_size = 64,
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 10,
     ingredients = {
       {type = "item", name = "steel-plate", amount = 8},
@@ -6396,6 +6740,7 @@ data:extend({
                                          "__Spaghetorio__/graphics/icons/tantalum-billet.png", 64),
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 4,
     hide_from_player_crafting = true,
     ingredients = {
@@ -6413,6 +6758,7 @@ data:extend({
     name = "sp-coil",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 2,
     ingredients = {
       {type = "item", name = "copper-cable", amount = 3},
@@ -6428,6 +6774,7 @@ data:extend({
     name = "sp-automation-core",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 1.5,
     ingredients = {
       {type = "item", name = "sp-steel-gear-wheel", amount = 3},
@@ -6443,6 +6790,7 @@ data:extend({
     name = "sp-solder",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 5,
     ingredients = {
       {type = "item", name = "sp-lead-slab", amount = 2},
@@ -6457,6 +6805,7 @@ data:extend({
     name = "sp-seal",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 1,
     ingredients = {
       {type = "item", name = "sp-rubber", amount = 1},
@@ -6470,6 +6819,7 @@ data:extend({
     name = "sp-basic-circuit-board",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 2.4,
     ingredients = {
       {type = "item", name = "copper-cable", amount = 3},
@@ -6485,6 +6835,7 @@ data:extend({
     name = "sp-circuit-board",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 3.6,
     ingredients = {
       {type = "item", name = "sp-empty-circuit-board", amount = 1},
@@ -6503,6 +6854,7 @@ data:extend({
     name = "sp-integrated-circuit",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 12,
     ingredients = {
       {type = "item", name = "plastic-bar", amount = 1},
@@ -6522,6 +6874,7 @@ data:extend({
     name = "sp-memory-chip",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 8,
     ingredients = {
       {type = "item", name = "plastic-bar", amount = 1},
@@ -6540,6 +6893,7 @@ data:extend({
     name = "sp-antenna-chip",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 4.4,
     ingredients = {
       {type = "item", name = "plastic-bar", amount = 1},
@@ -6558,6 +6912,7 @@ data:extend({
     name = "sp-circuit-die",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 20,
     ingredients = {
       {type = "item", name = "sp-high-purity-silicon", amount = 4},
@@ -6576,6 +6931,7 @@ data:extend({
     name = "sp-memory-die",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 16,
     ingredients = {
       {type = "item", name = "sp-high-purity-silicon", amount = 3},
@@ -6595,6 +6951,7 @@ data:extend({
     name = "sp-processor",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 3,
     ingredients = {
       {type = "item", name = "plastic-bar", amount = 1},
@@ -6612,6 +6969,7 @@ data:extend({
     name = "sp-cmos",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 6,
     ingredients = {
       {type = "item", name = "plastic-bar", amount = 1},
@@ -6630,6 +6988,7 @@ data:extend({
     name = "sp-magnet",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 2,
     ingredients = {
       {type = "item", name = "sp-ferrite", amount = 1},
@@ -6643,6 +7002,7 @@ data:extend({
     name = "sp-neodymium-magnet",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 5,
     ingredients = {
       {type = "item", name = "iron-plate", amount = 7},
@@ -6657,6 +7017,7 @@ data:extend({
     name = "sp-diamond",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 8,
     ingredients = {
       {type = "item", name = "carbon", amount = 12}
@@ -6670,6 +7031,7 @@ data:extend({
     name = "sp-ceramics",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 3.6,
     ingredients = {
       {type = "item", name = "sp-zirconia", amount = 3},
@@ -6684,6 +7046,7 @@ data:extend({
     name = "sp-flange",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 2.4,
     ingredients = {
       {type = "item", name = "sp-bolts", amount = 2},
@@ -6698,6 +7061,7 @@ data:extend({
     name = "sp-filter",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 3.2,
     ingredients = {
       {type = "item", name = "plastic-bar", amount = 5},
@@ -6714,6 +7078,7 @@ data:extend({
     energy_required = 1.5,
     enabled = false,
     allow_productivity = true,
+    allow_productivity = true,
     ingredients = {
       {type = "item", name = "steel-plate", amount = 1},
     },
@@ -6726,6 +7091,7 @@ data:extend({
     name = "sp-gearbox",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 1,
     ingredients = {
       {type = "item", name = "iron-plate", amount = 1},
@@ -6741,6 +7107,7 @@ data:extend({
     name = "sp-differential",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 2.5,
     ingredients = {
       {type = "item", name = "sp-machined-parts", amount = 8},
@@ -6757,6 +7124,7 @@ data:extend({
     name = "sp-electromagnet",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 2,
     ingredients = {
       {type = "item", name = "sp-machined-parts", amount = 2},
@@ -6772,6 +7140,7 @@ data:extend({
     name = "sp-servo-motor",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 2,
     ingredients = {
       {type = "item", name = "plastic-bar", amount = 1},
@@ -6789,6 +7158,7 @@ data:extend({
     name = "sp-turbocharger",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 3,
     ingredients = {
       {type = "item", name = "sp-stainless-steel", amount = 3},
@@ -6805,6 +7175,7 @@ data:extend({
     name = "sp-micro-machine",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 6,
     ingredients = {
       {type = "item", name = "sp-micro-frame", amount = 3},
@@ -6823,6 +7194,7 @@ data:extend({
     name = "sp-plate-heat-exchanger",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 2,
     ingredients = {
       {type = "item", name = "sp-bolts", amount = 1},
@@ -6838,6 +7210,7 @@ data:extend({
     name = "sp-spark-plug",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 3,
     ingredients = {
       {type = "item", name = "sp-inconel", amount = 2},
@@ -6853,6 +7226,7 @@ data:extend({
     name = "sp-valve",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 1,
     ingredients = {
       {type = "item", name = "sp-bronze-rod", amount = 2},
@@ -6868,6 +7242,7 @@ data:extend({
     name = "sp-gyro",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 2,
     ingredients = {
       {type = "item", name = "sp-magnet", amount = 2},
@@ -6883,6 +7258,7 @@ data:extend({
     name = "sp-high-pressure-tank",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 4,
     ingredients = {
       {type = "item", name = "sp-aluminum-brass", amount = 2},
@@ -6899,6 +7275,7 @@ data:extend({
     name = "sp-heatsink",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 2,
     ingredients = {
       {type = "item", name = "sp-copper-tube", amount = 2},
@@ -6916,6 +7293,7 @@ data:extend({
                                          "__Spaghetorio__/graphics/icons/silver.png", 64),
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     hide_from_player_crafting = true,
     energy_required = 3.2,
     ingredients = {
@@ -6934,6 +7312,7 @@ data:extend({
     mip_maps = 4,
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 14,
     ingredients = {
       {type = "item", name = "copper-cable", amount = 6},
@@ -6952,6 +7331,7 @@ data:extend({
                                          "__Spaghetorio__/graphics/icons/platinum.png", 64),
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 8,
     hide_from_player_crafting = true,
     ingredients = {
@@ -6970,6 +7350,7 @@ data:extend({
     name = "sp-heating-filament",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 5,
     ingredients = {
       {type = "item", name = "sp-nickel-chromium", amount = 3},
@@ -6986,6 +7367,7 @@ data:extend({
     name = "sp-transformer",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 5,
     ingredients = {
       {type = "item", name = "sp-relay", amount = 4},
@@ -7004,6 +7386,7 @@ data:extend({
     name = "sp-power-supply",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 2,
     ingredients = {
       {type = "item", name = "sp-transformer", amount = 1},
@@ -7021,6 +7404,7 @@ data:extend({
     name = "sp-amplifier",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 2,
     ingredients = {
       {type = "item", name = "sp-power-supply", amount = 1},
@@ -7038,6 +7422,7 @@ data:extend({
     name = "sp-steel-wheel",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 3,
     ingredients = {
       {type = "item", name = "steel-plate", amount = 3},
@@ -7051,6 +7436,7 @@ data:extend({
     name = "sp-train-boige",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 3,
     ingredients = {
       {type = "item", name = "sp-steel-wheel", amount = 4},
@@ -7068,6 +7454,7 @@ data:extend({
     name = "sp-variable-frequenzy-drive",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 3,
     ingredients = {
       {type = "item", name = "sp-insulated-wire", amount = 3},
@@ -7084,6 +7471,7 @@ data:extend({
     name = "sp-control-unit",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 5,
     ingredients = {
       {type = "item", name = "sp-glass-fiber", amount = 1},
@@ -7100,6 +7488,7 @@ data:extend({
     name = "sp-rocket-control-unit",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 5,
     ingredients = {
       {type = "item", name = "processing-unit", amount = 4},
@@ -7118,6 +7507,7 @@ data:extend({
     name = "sp-optical-sensor",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 4,
     ingredients = {
       {type = "item", name = "plastic-bar", amount = 2},
@@ -7135,6 +7525,7 @@ data:extend({
     name = "sp-vibration-dampener",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 1.5,
     ingredients = {
       {type = "item", name = "sp-rubber", amount = 1},
@@ -7150,6 +7541,7 @@ data:extend({
     name = "sp-pressure-valve",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 1.5,
     ingredients = {
       {type = "item", name = "sp-valve", amount = 1},
@@ -7166,6 +7558,7 @@ data:extend({
     name = "sp-high-power-solenoid",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 1.5,
     ingredients = {
       {type = "item", name = "copper-cable", amount = 4},
@@ -7183,6 +7576,7 @@ data:extend({
     name = "sp-dynamo",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 6,
     ingredients = {
       {type = "item", name = "advanced-circuit", amount = 2},
@@ -7203,6 +7597,7 @@ data:extend({
     name = "sp-big-electric-engine-unit",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 5,
     ingredients = {
       {type = "item", name = "copper-cable", amount = 12},
@@ -7221,6 +7616,7 @@ data:extend({
     name = "sp-compressor",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 4,
     ingredients = {
       {type = "item", name = "pump", amount = 1},
@@ -7242,6 +7638,7 @@ data:extend({
     category = "crafting",
     subgroup = "alien-processed-resource",
     enabled = false,
+    allow_productivity = true,
     energy_required = 3.6,
     ingredients = {
       {type = "item", name = "sp-rukite", amount = 2}
@@ -7259,6 +7656,7 @@ data:extend({
     name = "sp-gamma-radiation-source",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 6,
     ingredients = {
       {type = "item", name = "sp-iridium", amount = 1},
@@ -7275,6 +7673,7 @@ data:extend({
     name = "sp-biters-research-data",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 69,
     ingredients =
     {
@@ -7289,6 +7688,7 @@ data:extend({
     name = "sp-material-science-pack-1",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 24,
     ingredients =
     {
@@ -7306,6 +7706,7 @@ data:extend({
     name = "sp-electronic-science-pack-1",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 24,
     ingredients =
     {
@@ -7324,6 +7725,7 @@ data:extend({
     name = "sp-logistic-science-pack-2",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 24,
     ingredients =
     {
@@ -7342,6 +7744,7 @@ data:extend({
     name = "sp-military-science-pack-2",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 24,
     ingredients =
     {
@@ -7359,6 +7762,7 @@ data:extend({
     name = "sp-electronic-science-pack-2",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 24,
     ingredients =
     {
@@ -7377,6 +7781,7 @@ data:extend({
     name = "sp-computer-science-pack-2",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 24,
     ingredients =
     {
@@ -7394,6 +7799,7 @@ data:extend({
     name = "sp-nuclear-science-pack-2",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 240,
     ingredients =
     {
@@ -7411,6 +7817,7 @@ data:extend({
     name = "sp-automation-science-pack-3",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 24,
     ingredients =
     {
@@ -7430,6 +7837,7 @@ data:extend({
     name = "sp-logistic-science-pack-3",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 24,
     ingredients =
     {
@@ -7449,6 +7857,7 @@ data:extend({
     name = "sp-military-science-pack-3",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 24,
     ingredients =
     {
@@ -7468,6 +7877,7 @@ data:extend({
     name = "sp-electronic-science-pack-3",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 24,
     ingredients =
     {
@@ -7485,6 +7895,7 @@ data:extend({
     name = "sp-metallurgic-science-pack-3",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 69,
     ingredients =
     {
@@ -7499,6 +7910,7 @@ data:extend({
     name = "sp-electromagnetic-science-pack-3",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 69,
     ingredients =
     {
@@ -7513,6 +7925,7 @@ data:extend({
     name = "sp-biological-science-pack-3",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 69,
     ingredients =
     {
@@ -7527,6 +7940,7 @@ data:extend({
     name = "sp-cryogenic-science-pack-3",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 69,
     ingredients =
     {
@@ -7541,6 +7955,7 @@ data:extend({
     name = "sp-material-science-pack-3",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 24,
     ingredients =
     {
@@ -7561,6 +7976,7 @@ data:extend({
     name = "sp-space-science-pack-3",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 144,
     ingredients =
     {
@@ -7580,6 +7996,7 @@ data:extend({
     name = "sp-nuclear-science-pack-3",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 48,
     ingredients =
     {
@@ -7597,6 +8014,7 @@ data:extend({
     name = "sp-production-science-pack-3",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 24,
     ingredients =
     {
@@ -7615,6 +8033,7 @@ data:extend({
     name = "sp-utility-science-pack-3",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 192,
     ingredients =
     {
@@ -7636,6 +8055,7 @@ data:extend({
     name = "sp-matter-science-pack",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 40,
     ingredients =
     {
@@ -7656,6 +8076,7 @@ data:extend({
     name = "sp-optimization-science-pack",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 69,
     ingredients =
     {
@@ -7670,6 +8091,7 @@ data:extend({
     name = "sp-advanced-science-pack",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 40,
     ingredients =
     {
@@ -7693,6 +8115,7 @@ data:extend({
                                          "__Spaghetorio__/graphics/icons/niobium-billet.png", 64),
     category = "crafting-with-fluid",
     enabled = false,
+    allow_productivity = true,
     energy_required = 3.2,
     hide_from_player_crafting = true,
     ingredients = {
@@ -7710,6 +8133,7 @@ data:extend({
     name = "sp-ball-bearing",  -- #ForRegEx# - recipe
     category = "crafting-with-fluid",
     enabled = false,
+    allow_productivity = true,
     energy_required = 6,
     ingredients = {
       {type = "item", name = "sp-stainless-steel", amount = 3},
@@ -7726,6 +8150,7 @@ data:extend({
     name = "sp-relay",  -- #ForRegEx# - recipe
     category = "crafting-with-fluid",
     enabled = false,
+    allow_productivity = true,
     energy_required = 1.6,
     ingredients = {
       {type = "item", name = "sp-anodized-aluminum", amount = 1},
@@ -7743,6 +8168,7 @@ data:extend({
     name = "sp-insulated-wire",  -- #ForRegEx# - recipe
     category = "crafting-with-fluid",
     enabled = false,
+    allow_productivity = true,
     energy_required = 0.5,
     ingredients = {
       {type = "fluid", name = "sp-vinyl-chloride", amount = 4},
@@ -7757,6 +8183,7 @@ data:extend({
     name = "sp-empty-circuit-board",  -- #ForRegEx# - recipe
     category = "crafting-with-fluid",
     enabled = false,
+    allow_productivity = true,
     energy_required = 3.6,
     ingredients = {
       {type = "fluid", name = "sp-epoxy", amount = 10},
@@ -7773,6 +8200,7 @@ data:extend({
     name = "sp-fabric",  -- #ForRegEx# - recipe
     category = "crafting-with-fluid",
     enabled = false,
+    allow_productivity = true,
     energy_required = 2.4,
     ingredients = {
       {type = "item", name = "plastic-bar", amount = 2},
@@ -7787,6 +8215,7 @@ data:extend({
     name = "sp-heavy-gearbox",  -- #ForRegEx# - recipe
     category = "crafting-with-fluid",
     enabled = false,
+    allow_productivity = true,
     energy_required = 5,
     ingredients = {
       {type = "item", name = "sp-machined-parts", amount = 3},
@@ -7806,6 +8235,7 @@ data:extend({
     name = "sp-piezoelectric-sensor",  -- #ForRegEx# - recipe
     category = "crafting-with-fluid",
     enabled = false,
+    allow_productivity = true,
     energy_required = 6,
     ingredients = {
       {type = "item", name = "sp-barium-titanate", amount = 5},
@@ -7823,6 +8253,7 @@ data:extend({
     name = "sp-cryostat",  -- #ForRegEx# - recipe
     category = "crafting-with-fluid",
     enabled = false,
+    allow_productivity = true,
     energy_required = 5,
     ingredients = {
       {type = "item", name = "sp-machined-parts", amount = 5},
@@ -7838,6 +8269,7 @@ data:extend({
     name = "sp-drillhead",  -- #ForRegEx# - recipe
     category = "crafting-with-fluid",
     enabled = false,
+    allow_productivity = true,
     energy_required = 6,
     ingredients = {
       {type = "item", name = "sp-heavy-gearbox", amount = 1},
@@ -7855,6 +8287,7 @@ data:extend({
     name = "sp-advanced-processing-unit",  -- #ForRegEx# - recipe
     category = "crafting-with-fluid",
     enabled = false,
+    allow_productivity = true,
     energy_required = 8,
     ingredients = {
       {type = "item", name = "sp-circuit-board", amount = 1},
@@ -7874,6 +8307,7 @@ data:extend({
     name = "sp-heavy-ball-bearing",  -- #ForRegEx# - recipe
     category = "crafting-with-fluid",
     enabled = false,
+    allow_productivity = true,
     energy_required = 2.5,
     ingredients = {
       {type = "item", name = "sp-niobium-steel", amount = 2},
@@ -7890,6 +8324,7 @@ data:extend({
     name = "sp-actuator",  -- #ForRegEx# - recipe
     category = "crafting-with-fluid",
     enabled = false,
+    allow_productivity = true,
     energy_required = 5,
     ingredients = {
       {type = "item", name = "electric-engine-unit", amount = 1},
@@ -7909,6 +8344,7 @@ data:extend({
     name = "sp-geological-science-pack-1",  -- #ForRegEx# - recipe
     category = "sp-kr-fluid-filtration",
     enabled = false,
+    allow_productivity = true,
     energy_required = 24,
     ingredients =
     {
@@ -7929,6 +8365,7 @@ data:extend({
     name = "sp-geological-science-pack-2",  -- #ForRegEx# - recipe
     category = "crafting-with-fluid",
     enabled = false,
+    allow_productivity = true,
     energy_required = 24,
     ingredients =
     {
@@ -7950,6 +8387,7 @@ data:extend({
     name = "sp-computer-science-pack-3",  -- #ForRegEx# - recipe
     category = "crafting-with-fluid",
     enabled = false,
+    allow_productivity = true,
     energy_required = 24,
     ingredients =
     {
@@ -7968,6 +8406,7 @@ data:extend({
     name = "sp-chronalyte",  -- #ForRegEx# - recipe
     category = "crafting-with-fluid",
     enabled = false,
+    allow_productivity = true,
     energy_required = 10,
     ingredients = {
       {type = "fluid", name = "sp-chronomatter", amount = 1},
@@ -7983,6 +8422,7 @@ data:extend({
     name = "sp-matter-research-data",  -- #ForRegEx# - recipe
     category = "crafting-with-fluid",
     enabled = false,
+    allow_productivity = true,
     energy_required = 24,
     ingredients =
     {
@@ -8009,6 +8449,7 @@ data:extend({
     mip_maps = 4,
     category = "advanced-crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 6,
     ingredients = {
       {type = "item", name = "sp-stainless-steel", amount = 5},
@@ -8027,6 +8468,7 @@ data:extend({
                                          "__Spaghetorio__/graphics/icons/TiAlSn.png", 64),
     category = "advanced-crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 8,
     hide_from_player_crafting = true,
     ingredients = {
@@ -8043,6 +8485,7 @@ data:extend({
     name = "sp-turbine-rotor",  -- #ForRegEx# - recipe
     category = "advanced-crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 30,
     ingredients = {
       {type = "item", name = "sp-TiAlSn", amount = 4},
@@ -8060,6 +8503,7 @@ data:extend({
     name = "sp-turbine-stator",  -- #ForRegEx# - recipe
     category = "advanced-crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 26,
     ingredients = {
       {type = "item", name = "sp-TiAlSn", amount = 4},
@@ -8078,6 +8522,7 @@ data:extend({
     name = "sp-turbopump",  -- #ForRegEx# - recipe
     category = "advanced-crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 8,
     ingredients = {
       {type = "item", name = "sp-turbine-blade", amount = 10},
@@ -8096,6 +8541,7 @@ data:extend({
     name = "sp-nozzle",  -- #ForRegEx# - recipe
     category = "advanced-crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 12,
     ingredients = {
       {type = "item", name = "copper-plate", amount = 2},
@@ -8113,6 +8559,7 @@ data:extend({
     name = "sp-fuel-injector",  -- #ForRegEx# - recipe
     category = "advanced-crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 3,
     ingredients = {
       {type = "item", name = "tungsten-carbide", amount = 1},
@@ -8127,6 +8574,7 @@ data:extend({
     name = "sp-cybernetics",  -- #ForRegEx# - recipe
     category = "advanced-crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 8,
     ingredients = {
       {type = "item", name = "sp-titanium-frame", amount = 2},
@@ -8145,6 +8593,7 @@ data:extend({
     name = "sp-combustion-chamber",  -- #ForRegEx# - recipe
     category = "advanced-crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 24,
     ingredients = {
       {type = "item", name = "sp-fuel-injector", amount = 20},
@@ -8162,6 +8611,7 @@ data:extend({
     name = "sp-rocket-engine",  -- #ForRegEx# - recipe
     category = "advanced-crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 4,
     ingredients = {
       {type = "item", name = "sp-turbopump", amount = 2},
@@ -8178,6 +8628,7 @@ data:extend({
     name = "sp-solid-rocket-motor",  -- #ForRegEx# - recipe
     category = "advanced-crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 4,
     ingredients = {
       {type = "item", name = "sp-titanium-frame", amount = 5},
@@ -8196,6 +8647,7 @@ data:extend({
     name = "sp-control-rod",  -- #ForRegEx# - recipe
     category = "advanced-crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 5,
     ingredients = {
       {type = "item", name = "sp-boron-carbide", amount = 1},
@@ -8214,6 +8666,7 @@ data:extend({
     name = "sp-empty-fuel-rod",  -- #ForRegEx# - recipe
     category = "advanced-crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 8,
     ingredients = {
       {type = "item", name = "carbon", amount = 2},
@@ -8233,6 +8686,7 @@ data:extend({
     mip_maps = 4,
     category = "advanced-crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 5.2,
     ingredients = {
       {type = "item", name = "sp-plutonium-239", amount = 4},
@@ -8249,6 +8703,7 @@ data:extend({
                                          "__Spaghetorio__/graphics/icons/plutonium-240-1.png", 64),
     category = "advanced-crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 6,
     hide_from_player_crafting = true,
     ingredients = {
@@ -8265,6 +8720,7 @@ data:extend({
     name = "sp-reactor-core",  -- #ForRegEx# - recipe
     category = "advanced-crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 30,
     ingredients = {
       {type = "item", name = "sp-control-rod", amount = 50},
@@ -8285,6 +8741,7 @@ data:extend({
     name = "sp-quantum-data-plane",  -- #ForRegEx# - recipe
     category = "advanced-crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 30,
     ingredients = {
       {type = "item", name = "sp-cubit", amount = 1000},
@@ -8306,6 +8763,7 @@ data:extend({
     name = "sp-composites",  -- #ForRegEx# - recipe
     category = "manufacturing",
     enabled = false,
+    allow_productivity = true,
     energy_required = 4,
     ingredients = {
       {type = "item", name = "carbon", amount = 3},
@@ -8321,6 +8779,7 @@ data:extend({
     name = "sp-titanium-frame",  -- #ForRegEx# - recipe
     category = "manufacturing",
     enabled = false,
+    allow_productivity = true,
     energy_required = 2.4,
     ingredients = {
       {type = "item", name = "sp-titanium-plate", amount = 2},
@@ -8334,6 +8793,7 @@ data:extend({
     name = "sp-ceramic-matrix-composites",  -- #ForRegEx# - recipe
     category = "manufacturing",
     enabled = false,
+    allow_productivity = true,
     energy_required = 12,
     ingredients = {
       {type = "item", name = "tungsten-carbide", amount = 1},
@@ -8350,6 +8810,7 @@ data:extend({
     name = "sp-silver-solder",  -- #ForRegEx# - recipe
     category = "manufacturing",
     enabled = false,
+    allow_productivity = true,
     energy_required = 4,
     ingredients = {
       {type = "item", name = "sp-silver", amount = 1},
@@ -8364,6 +8825,7 @@ data:extend({
     name = "sp-glass-fiber",  -- #ForRegEx# - recipe
     category = "manufacturing",
     enabled = false,
+    allow_productivity = true,
     energy_required = 8,
     ingredients = {
       {type = "item", name = "sp-silica", amount = 4},
@@ -8379,6 +8841,7 @@ data:extend({
     name = "sp-vacuum-pump",  -- #ForRegEx# - recipe
     category = "manufacturing",
     enabled = false,
+    allow_productivity = true,
     energy_required = 2,
     ingredients = {
       {type = "item", name = "sp-big-electric-engine-unit", amount = 1},
@@ -8395,6 +8858,7 @@ data:extend({
     name = "sp-precipitator",  -- #ForRegEx# - recipe
     category = "manufacturing",
     enabled = false,
+    allow_productivity = true,
     energy_required = 3,
     ingredients = {
       {type = "item", name = "sp-filter", amount = 6},
@@ -8410,6 +8874,7 @@ data:extend({
     name = "sp-plasmacutter",  -- #ForRegEx# - recipe
     category = "manufacturing",
     enabled = false,
+    allow_productivity = true,
     energy_required = 2,
     ingredients = {
       {type = "item", name = "copper-cable", amount = 2},
@@ -8426,6 +8891,7 @@ data:extend({
     name = "sp-magnetic-coupling",  -- #ForRegEx# - recipe
     category = "manufacturing",
     enabled = false,
+    allow_productivity = true,
     energy_required = 1,
     ingredients = {
       {type = "item", name = "sp-magnet", amount = 4},
@@ -8441,6 +8907,7 @@ data:extend({
     name = "sp-condenser-coil",  -- #ForRegEx# - recipe
     category = "manufacturing",
     enabled = false,
+    allow_productivity = true,
     energy_required = 1,
     ingredients = {
       {type = "item", name = "copper-cable", amount = 4},
@@ -8456,6 +8923,7 @@ data:extend({
     name = "sp-electromagnetic-brake",  -- #ForRegEx# - recipe
     category = "manufacturing",
     enabled = false,
+    allow_productivity = true,
     energy_required = 2,
     ingredients = {
       {type = "item", name = "sp-electromagnet", amount = 4},
@@ -8474,6 +8942,7 @@ data:extend({
     name = "sp-catalytic-converter",  -- #ForRegEx# - recipe
     category = "manufacturing",
     enabled = false,
+    allow_productivity = true,
     energy_required = 1.5,
     ingredients = {
       {type = "item", name = "sp-stainless-steel", amount = 2},
@@ -8489,6 +8958,7 @@ data:extend({
     name = "sp-high-pressure-fan",  -- #ForRegEx# - recipe
     category = "manufacturing",
     enabled = false,
+    allow_productivity = true,
     energy_required = 4,
     ingredients = {
       {type = "item", name = "sp-nickel-rhenium", amount = 1},
@@ -8507,6 +8977,7 @@ data:extend({
     name = "sp-lens",  -- #ForRegEx# - recipe
     category = "manufacturing",
     enabled = false,
+    allow_productivity = true,
     energy_required = 1,
     ingredients = {
       {type = "item", name = "sp-optical-glass", amount = 1},
@@ -8520,6 +8991,7 @@ data:extend({
     name = "sp-photovoltaic-cell",  -- #ForRegEx# - recipe
     category = "manufacturing",
     enabled = false,
+    allow_productivity = true,
     energy_required = 25,
     ingredients = {
       {type = "item", name = "sp-optical-glass", amount = 10},
@@ -8538,6 +9010,7 @@ data:extend({
     name = "sp-automation-science-pack-2",  -- #ForRegEx# - recipe
     category = "manufacturing",
     enabled = false,
+    allow_productivity = true,
     energy_required = 24,
     ingredients =
     {
@@ -8559,6 +9032,7 @@ data:extend({
     name = "sp-chronomatter",  -- #ForRegEx# - recipe
     category = "chemistry",
     enabled = false,
+    allow_productivity = true,
     energy_required = 6,
     ingredients = {
       {type = "item", name = "sp-monocrystal", amount = 1},
@@ -8585,6 +9059,7 @@ data:extend({
     category = "crafting",
     subgroup = "alien-processed-resource",
     enabled = false,
+    allow_productivity = true,
     energy_required = 4,
     ingredients = {
       {type = "item", name = "sp-yemnuth", amount = 4}
@@ -8608,6 +9083,7 @@ data:extend({
     mip_maps = 4,
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 20,
     ingredients = {
       {type = "item", name = "sp-yemnuth-shard", amount = 10},
@@ -8627,6 +9103,7 @@ data:extend({
                                               "__Spaghetorio__/graphics/icons/lanthanum.png", 64),
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 30,
     hide_from_player_crafting = true,
     ingredients = {
@@ -8644,6 +9121,7 @@ data:extend({
     name = "sp-plasma-crystal",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 14,
     ingredients = {
       {type = "item", name = "sp-yemnuth-pearls", amount = 20},
@@ -8660,6 +9138,7 @@ data:extend({
     name = "sp-plasma-capsule",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 4,
     ingredients = {
       {type = "item", name = "sp-plasma-crystal", amount = 1},
@@ -8676,6 +9155,7 @@ data:extend({
     name = "sp-plasma-core",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 4,
     ingredients = {
       {type = "item", name = "sp-heat-resistant-tile", amount = 10},
@@ -8698,6 +9178,7 @@ data:extend({
     category = "crafting",
     subgroup = "alien-processed-resource",
     enabled = false,
+    allow_productivity = true,
     energy_required = 4,
     ingredients = {
       {type = "item", name = "sp-blunagium", amount = 5},
@@ -8714,6 +9195,7 @@ data:extend({
     name = "sp-blunagium-foam",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 4,
     ingredients = {
       {type = "item", name = "sp-blunagium-basalt", amount = 3},
@@ -8729,6 +9211,7 @@ data:extend({
     name = "sp-blunagium-bar",  -- #ForRegEx# - recipe
     category = "intermediate-smelting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 6,
     ingredients = {
       {type = "item", name = "sp-blunagium-stone", amount = 8},
@@ -8744,6 +9227,7 @@ data:extend({
     name = "sp-quantum-foam",  -- #ForRegEx# - recipe
     category = "crafting-with-fluid",
     enabled = false,
+    allow_productivity = true,
     energy_required = 6,
     ingredients = {
       {type = "item", name = "sp-blunagium-bar", amount = 2},
@@ -8761,6 +9245,7 @@ data:extend({
     name = "sp-quantum-crystal",  -- #ForRegEx# - recipe
     category = "crafting-with-fluid",
     enabled = false,
+    allow_productivity = true,
     energy_required = 6,
     ingredients = {
       {type = "item", name = "sp-blunagium-foam", amount = 2},
@@ -8777,6 +9262,7 @@ data:extend({
     name = "sp-fermium-condensate",  -- #ForRegEx# - recipe
     category = "crafting-with-fluid",
     enabled = false,
+    allow_productivity = true,
     energy_required = 20,
     ingredients = {
       {type = "item", name = "sp-blunagium-foam", amount = 2},
@@ -8793,6 +9279,7 @@ data:extend({
     name = "sp-nanowire",  -- #ForRegEx# - recipe
     category = "crafting-with-fluid",
     enabled = false,
+    allow_productivity = true,
     energy_required = 8,
     ingredients = {
       {type = "item", name = "sp-blunagium-foam", amount = 2},
@@ -8808,6 +9295,7 @@ data:extend({
     name = "sp-vortex-core",  -- #ForRegEx# - recipe
     category = "crafting-with-fluid",
     enabled = false,
+    allow_productivity = true,
     energy_required = 20,
     ingredients = {
       {type = "item", name = "sp-blunagium-foam", amount = 40},
@@ -8825,6 +9313,7 @@ data:extend({
     name = "sp-grobgnum-slurry",  -- #ForRegEx# - recipe
     category = "chemistry",
     enabled = false,
+    allow_productivity = true,
     energy_required = 4,
     ingredients = {
       {type = "item", name = "sp-grobgnum", amount = 6},
@@ -8847,6 +9336,7 @@ data:extend({
     name = "sp-grobgnumylene",  -- #ForRegEx# - recipe
     category = "chemistry",
     enabled = false,
+    allow_productivity = true,
     energy_required = 12,
     ingredients = {
       -- {type = "item", name = "sp-catalyst", amount = 2},
@@ -8870,6 +9360,7 @@ data:extend({
     name = "sp-grobgnum-hydroxide",  -- #ForRegEx# - recipe
     category = "chemistry",
     enabled = false,
+    allow_productivity = true,
     energy_required = 8,
     ingredients = {
       {type = "item", name = "sp-filter", amount = 1},
@@ -8897,6 +9388,7 @@ data:extend({
     category = "crafting-with-fluid",
     subgroup = "alien-processed-resource",
     enabled = false,
+    allow_productivity = true,
     energy_required = 8,
     ingredients = {
       {type = "fluid", name ="sp-grobgnum-slurry", amount = 50}
@@ -8915,6 +9407,7 @@ data:extend({
     name = "sp-grobgnum-cube",  -- #ForRegEx# - recipe
     category = "chemistry",
     enabled = false,
+    allow_productivity = true,
     energy_required = 16,
     ingredients = {
       {type = "item", name = "sp-lithium-oxide", amount = 3},
@@ -8937,6 +9430,7 @@ data:extend({
     name = "sp-grobgnum-bar",  -- #ForRegEx# - recipe
     category = "chemistry",
     enabled = false,
+    allow_productivity = true,
     energy_required = 6,
     ingredients = {
       {type = "item", name = "sp-titanium-chloride", amount = 1},
@@ -8959,6 +9453,7 @@ data:extend({
     name = "sp-biochip",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 6,
     ingredients = {
       {type = "item", name = "sp-glass-fiber", amount = 1},
@@ -8976,6 +9471,7 @@ data:extend({
     name = "sp-nanoflex",  -- #ForRegEx# - recipe
     category = "crafting-with-fluid",
     enabled = false,
+    allow_productivity = true,
     energy_required = 8,
     ingredients = {
       {type = "item", name = "sp-carbon-nanotubes", amount = 10},
@@ -8992,6 +9488,7 @@ data:extend({
     name = "sp-bioreactor",  -- #ForRegEx# - recipe
     category = "chemistry",
     enabled = false,
+    allow_productivity = true,
     energy_required = 8,
     ingredients = {
       {type = "item", name = "sp-turbopump", amount = 6},
@@ -9017,6 +9514,7 @@ data:extend({
     name = "sp-nanobot",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 120,
     ingredients = {
       {type = "item", name = "sp-nanoflex", amount = 20},
@@ -9034,6 +9532,7 @@ data:extend({
     name = "sp-ai-core",  -- #ForRegEx# - recipe
     category = "crafting-with-fluid",
     enabled = false,
+    allow_productivity = true,
     energy_required = 16,
     ingredients = {
       {type = "item", name = "sp-glass-fiber", amount = 6},
@@ -9054,6 +9553,7 @@ data:extend({
     name = "sp-empty-antimatter-fuel-cell",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 16,
     ingredients = {
       {type = "item", name = "sp-matter-stabilizer", amount = 1},
@@ -9071,6 +9571,7 @@ data:extend({
     name = "sp-charged-antimatter-fuel-cell",  -- #ForRegEx# - recipe
     category = "chemistry",
     enabled = false,
+    allow_productivity = true,
     energy_required = 120,
     ingredients = {
       {type = "item", name = "sp-empty-antimatter-fuel-cell", amount = 6},
@@ -9086,6 +9587,7 @@ data:extend({
     name = "sp-ion-thruster",  -- #ForRegEx# - recipe
     category = "crafting-with-fluid",
     enabled = false,
+    allow_productivity = true,
     energy_required = 20,
     ingredients = {
       {type = "item", name = "sp-yttrium", amount = 1},
@@ -9105,6 +9607,7 @@ data:extend({
     name = "sp-flux-capacitor",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 30,
     ingredients = {
       {type = "item", name = "sp-chronalyte", amount = 20},
@@ -9123,6 +9626,7 @@ data:extend({
     name = "sp-blunagium-explorer",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 60,
     ingredients = {
       {type = "item", name = "sp-quantum-data-plane", amount = 6},
@@ -9141,6 +9645,7 @@ data:extend({
   --   name = "sp-blunagium-rocket-silo",  -- #ForRegEx# - recipe
   --   category = "crafting-with-fluid",
   --   enabled = false,
+    allow_productivity = true,
   --   energy_required = 300,
   --   ingredients = {
   --     {type = "item", name = "rocket-silo", amount = 1},
@@ -9158,6 +9663,7 @@ data:extend({
     name = "sp-blunagium-rocket",  -- #ForRegEx# - recipe
     category = "blunagium-rocket-building",
     enabled = false,
+    allow_productivity = true,
     hide_from_player_crafting = true,
     hidden = true,
     energy_required = 60,
@@ -9186,6 +9692,7 @@ data:extend({
     name = "sp-grobgnum-explorer",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 60,
     ingredients = {
       {type = "item", name = "sp-biochip", amount = 20},
@@ -9203,6 +9710,7 @@ data:extend({
   --   name = "sp-grobgnum-rocket-silo",  -- #ForRegEx# - recipe
   --   category = "crafting-with-fluid",
   --   enabled = false,
+    allow_productivity = true,
   --   energy_required = 240,
   --   ingredients = {
   --     {type = "item", name = "rocket-silo", amount = 1},
@@ -9222,6 +9730,7 @@ data:extend({
     name = "sp-grobgnum-rocket",  -- #ForRegEx# - recipe
     category = "grobgnum-rocket-building",
     enabled = false,
+    allow_productivity = true,
     hide_from_player_crafting = true,
     hidden = true,
     energy_required = 60,
@@ -9249,6 +9758,7 @@ data:extend({
     name = "sp-rukite-explorer",  -- #ForRegEx# - recipe
     category = "crafting-with-fluid",
     enabled = false,
+    allow_productivity = true,
     energy_required = 360,
     ingredients = {
       {type = "item", name = "sp-advanced-processing-unit", amount = 10},
@@ -9267,6 +9777,7 @@ data:extend({
   --   name = "sp-rukite-rocket-silo",  -- #ForRegEx# - recipe
   --   category = "crafting",
   --   enabled = false,
+    allow_productivity = true,
   --   energy_required = 60,
   --   ingredients = {
   --     {type = "item", name = "rocket-silo", amount = 1},
@@ -9287,6 +9798,7 @@ data:extend({
     name = "sp-rukite-rocket",  -- #ForRegEx# - recipe
     category = "rukite-rocket-building",
     enabled = false,
+    allow_productivity = true,
     hide_from_player_crafting = true,
     hidden = true,
     energy_required = 60,
@@ -9313,6 +9825,7 @@ data:extend({
     name = "sp-yemnuth-explorer",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 420,
     ingredients = {
       {type = "item", name = "sp-advanced-processing-unit", amount = 12},
@@ -9331,6 +9844,7 @@ data:extend({
   --   name = "sp-yemnuth-rocket-silo",  -- #ForRegEx# - recipe
   --   category = "crafting",
   --   enabled = false,
+    allow_productivity = true,
   --   energy_required = 60,
   --   ingredients = {
   --     {type = "item", name = "rocket-silo", amount = 1},
@@ -9350,6 +9864,7 @@ data:extend({
     name = "sp-yemnuth-rocket",  -- #ForRegEx# - recipe
     category = "yemnuth-rocket-building",
     enabled = false,
+    allow_productivity = true,
     hide_from_player_crafting = true,
     hidden = true,
     energy_required = 60,
@@ -9377,6 +9892,7 @@ data:extend({
     mip_maps = 4,
     category = "alien-tech-manufacturing",
     enabled = false,
+    allow_productivity = true,
     energy_required = 40,
     ingredients = {
       {type = "item", name = "sp-blunagium-solenoid", amount = 3},
@@ -9397,6 +9913,7 @@ data:extend({
     mip_maps = 4,
     category = "alien-tech-manufacturing",
     enabled = false,
+    allow_productivity = true,
     energy_required = 40,
     ingredients = {
       {type = "item", name = "sp-bio-capacitor", amount = 1},
@@ -9419,6 +9936,7 @@ data:extend({
     mip_maps = 4,
     category = "alien-tech-manufacturing",
     enabled = false,
+    allow_productivity = true,
     energy_required = 40,
     ingredients = {
       {type = "item", name = "sp-holo-grip-controller", amount = 2},
@@ -9442,6 +9960,7 @@ data:extend({
   --   name = "sp-kr-black-reinforced-plate",  -- #ForRegEx# - recipe
   --   energy_required = 5,
   --   enabled = false,
+    allow_productivity = true,
   --   ingredients = {
   --     {type = "item", name = "refined-concrete", amount = 20},
   --     {type = "item", name = "sp-zircon", amount = 2},
@@ -9455,6 +9974,7 @@ data:extend({
   --   name = "sp-kr-white-reinforced-plate",
   --   energy_required = 5,
   --   enabled = false,
+    allow_productivity = true,
   --   ingredients = {
   --     {type = "item", name = "refined-concrete", amount = 20},
   --     {type = "item", name = "sp-zircon", amount = 2},
@@ -9473,6 +9993,7 @@ data:extend({
     mip_maps = 4,
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 20,
     ingredients = {
       {type = "item", name = "engine-unit", amount = 6},
@@ -9494,6 +10015,7 @@ data:extend({
     mip_maps = 4,
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 69,
     ingredients = {
       {type = "item", name = "iron-plate", amount = 69},
@@ -9509,6 +10031,7 @@ data:extend({
     mip_maps = 4,
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 90,
     ingredients = {
       {type = "item", name = "sp-nickel-chromium", amount = 60},
@@ -9529,6 +10052,7 @@ data:extend({
     mip_maps = 4,
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 40,
     ingredients = {
       {type = "item", name = "sp-heat-resistant-tile", amount = 24},
@@ -9554,6 +10078,7 @@ data:extend({
     mip_maps = 4,
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 69,
     ingredients = {
       {type = "item", name = "iron-plate", amount = 69},
@@ -9571,6 +10096,7 @@ data:extend({
     mip_maps = 4,
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 60,
     ingredients = {
       {type = "item", name = "sp-glass", amount = 12},
@@ -9596,6 +10122,7 @@ data:extend({
     mip_maps = 4,
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 30,
     ingredients = {
       {type = "item", name = "sp-crucible", amount = 2},
@@ -9621,6 +10148,7 @@ data:extend({
     mip_maps = 4,
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 69,
     ingredients = {
       {type = "item", name = "iron-plate", amount = 69},
@@ -9636,6 +10164,7 @@ data:extend({
     mip_maps = 4,
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 69,
     ingredients = {
       {type = "item", name = "iron-plate", amount = 69},
@@ -9651,6 +10180,7 @@ data:extend({
     mip_maps = 4,
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 69,
     ingredients = {
       {type = "item", name = "iron-plate", amount = 69},
@@ -9666,6 +10196,7 @@ data:extend({
     mip_maps = 4,
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 60,
     ingredients = {
       {type = "item", name = "sp-duralumin", amount = 40},
@@ -9689,6 +10220,7 @@ data:extend({
     mip_maps = 4,
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 50,
     ingredients = {
       {type = "item", name = "sp-chromium-cobalt", amount = 30},
@@ -9713,6 +10245,7 @@ data:extend({
     mip_maps = 4,
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 69,
     ingredients = {
       {type = "item", name = "iron-plate", amount = 69},
@@ -9728,6 +10261,7 @@ data:extend({
     mip_maps = 4,
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 69,
     ingredients = {
       {type = "item", name = "iron-plate", amount = 69},
@@ -9743,6 +10277,7 @@ data:extend({
     mip_maps = 4,
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 90,
     ingredients = {
       {type = "item", name = "sp-blunagium-plate", amount = 32},
@@ -9769,6 +10304,7 @@ data:extend({
     mip_maps = 4,
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 45,
     ingredients = {
       {type = "item", name = "sp-TiAlSn", amount = 20},
@@ -9793,6 +10329,7 @@ data:extend({
     mip_maps = 4,
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 90,
     ingredients = {
       {type = "item", name = "tungsten-plate", amount = 40},
@@ -9819,6 +10356,7 @@ data:extend({
     category = "crafting-with-fluid",
     energy_required = 12,
     enabled = false,
+    allow_productivity = true,
     ingredients = {
       {type = "fluid", name = "sp-nitric-acid", amount = 25},
       {type = "item", name = "sp-imersite-crystal", amount = 10},
@@ -9838,6 +10376,7 @@ data:extend({
     category = "crafting",
     energy_required = 600,
     enabled = false,
+    allow_productivity = true,
     ingredients = {
       {type = "item", name = "sp-proton-neutron-superconductor", amount = 300},
       {type = "item", name = "sp-extreme-heat-source", amount = 12},
@@ -9867,6 +10406,7 @@ data:extend({
     category = "crafting",
     energy_required = 20,
     enabled = false,
+    allow_productivity = true,
     ingredients = {
       {type = "item", name = "sp-stainless-steel", amount = 30},
       {type = "item", name = "electronic-circuit", amount = 12},
@@ -9888,6 +10428,7 @@ data:extend({
     category = "crafting",
     energy_required = 30,
     enabled = false,
+    allow_productivity = true,
     ingredients = {
       {type = "item", name = "sp-pressure-tube", amount = 20},
       {type = "item", name = "sp-stainless-steel", amount = 30},
@@ -9907,6 +10448,7 @@ data:extend({
     category = "crafting",
     energy_required = 20,
     enabled = false,
+    allow_productivity = true,
     ingredients = {
       {type = "item", name = "sp-steel-beam", amount = 24},
       {type = "item", name = "sp-bolts", amount = 48},
@@ -9928,6 +10470,7 @@ data:extend({
     category = "crafting",
     energy_required = 30,
     enabled = false,
+    allow_productivity = true,
     ingredients = {
       {type = "item", name = "sp-glass", amount = 20},
       {type = "item", name = "sp-stainless-steel", amount = 12},
@@ -9949,6 +10492,7 @@ data:extend({
     category = "crafting",
     energy_required = 60,
     enabled = false,
+    allow_productivity = true,
     ingredients = {
       {type = "item", name = "sp-stainless-steel", amount = 80},
       {type = "item", name = "sp-chromium-cobalt", amount = 10},
@@ -9973,6 +10517,7 @@ data:extend({
     category = "crafting",
     energy_required = 20,
     enabled = false,
+    allow_productivity = true,
     ingredients = {
       {type = "item", name = "sp-steel-beam", amount = 36},
       {type = "item", name = "sp-bolts", amount = 80},
@@ -9993,6 +10538,7 @@ data:extend({
     category = "crafting",
     energy_required = 30,
     enabled = false,
+    allow_productivity = true,
     ingredients = {
       {type = "item", name = "processing-unit", amount = 10},
       {type = "item", name = "sp-energy-control-unit", amount = 30},
@@ -10013,6 +10559,7 @@ data:extend({
     category = "crafting",
     energy_required = 30,
     enabled = false,
+    allow_productivity = true,
     ingredients = {
       {type = "item", name = "sp-steel-beam", amount = 48},
       {type = "item", name = "sp-copper-tube", amount = 50},
@@ -10034,6 +10581,7 @@ data:extend({
     category = "crafting",
     energy_required = 10,
     enabled = false,
+    allow_productivity = true,
     ingredients = {
       {type = "item", name = "sp-steel-beam", amount = 16},
       {type = "item", name = "sp-copper-tube", amount = 30},
@@ -10053,6 +10601,7 @@ data:extend({
     category = "crafting",
     energy_required = 10,
     enabled = false,
+    allow_productivity = true,
     ingredients = {
       {type = "item", name = "sp-stainless-steel", amount = 20},
       {type = "item", name = "sp-brass", amount = 12},
@@ -10077,6 +10626,7 @@ data:extend({
     category = "crafting",
     energy_required = 750,
     enabled = false,
+    allow_productivity = true,
     ingredients = {
       {type = "item", name = "concrete", amount = 1000},
       {type = "item", name = "sp-stainless-steel", amount = 1000},
@@ -10105,6 +10655,7 @@ data:extend({
     category = "crafting",
     energy_required = 40,
     enabled = false,
+    allow_productivity = true,
     ingredients = {
       {type = "item", name = "sp-steel-beam", amount = 40},
       {type = "item", name = "sp-stainless-steel", amount = 32},
@@ -10131,6 +10682,7 @@ data:extend({
     category = "crafting",
     energy_required = 120,
     enabled = false,
+    allow_productivity = true,
     ingredients = {
         {type = "item", name = "sp-stainless-steel", amount = 30},
         {type = "item", name = "sp-yemnuth-plate", amount = 40},
@@ -10155,6 +10707,7 @@ data:extend({
     category = "crafting",
     energy_required = 45,
     enabled = false,
+    allow_productivity = true,
     ingredients = {
       {type = "item", name = "sp-yemnuth-plate", amount = 16},
       {type = "item", name = "sp-imersium-beam", amount = 12},
@@ -10176,6 +10729,7 @@ data:extend({
     category = "crafting",
     energy_required = 60,
     enabled = false,
+    allow_productivity = true,
     ingredients = {
       {type = "item", name = "sp-energy-control-unit", amount = 40},
       {type = "item", name = "sp-imersium-plate", amount = 40},
@@ -10199,6 +10753,7 @@ data:extend({
     category = "crafting",
     energy_required = 90,
     enabled = false,
+    allow_productivity = true,
     ingredients = {
       {type = "item", name = "sp-energy-control-unit", amount = 20},
       {type = "item", name = "sp-imersium-beam", amount = 80},
@@ -10222,6 +10777,7 @@ data:extend({
     category = "crafting",
     energy_required = 90,
     enabled = false,
+    allow_productivity = true,
     ingredients = {
       {type = "item", name = "sp-quantum-data-plane", amount = 10},
       {type = "item", name = "sp-turbopump", amount = 2},
@@ -10246,6 +10802,7 @@ data:extend({
     category = "crafting",
     energy_required = 50,
     enabled = false,
+    allow_productivity = true,
     ingredients = {
       {type = "item", name = "sp-lithium-sulfur-battery", amount = 10},
       {type = "item", name = "sp-glass-fiber", amount = 20},
@@ -10273,6 +10830,7 @@ data:extend({
     category = "crafting",
     energy_required = 900,
     enabled = false,
+    allow_productivity = true,
     ingredients = {
       {type = "item", name = "iron-plate", amount = 69},
     },
@@ -10288,6 +10846,7 @@ data:extend({
     category = "crafting",
     energy_required = 60,
     enabled = false,
+    allow_productivity = true,
     ingredients = {
       {type = "item", name = "sp-diamond", amount = 40},
       {type = "item", name = "sp-drillhead", amount = 4},
@@ -10312,6 +10871,7 @@ data:extend({
     category = "crafting",
     energy_required = 45,
     enabled = false,
+    allow_productivity = true,
     ingredients = {
       {type = "item", name = "sp-antimatter-engine", amount = 1},
       {type = "item", name = "sp-sideral-compute-core", amount = 1},
@@ -10331,6 +10891,7 @@ data:extend({
     category = "crafting",
     energy_required = 60,
     enabled = false,
+    allow_productivity = true,
     ingredients = {
       {type = "item", name = "sp-niobium-steel", amount = 100},
       {type = "item", name = "sp-rare-metals-alloy", amount = 40},
@@ -10355,6 +10916,7 @@ data:extend({
     category = "crafting",
     energy_required = 90,
     enabled = false,
+    allow_productivity = true,
     ingredients = {
       {type = "item", name = "sp-energy-control-unit", amount = 20},
       {type = "item", name = "sp-imersium-beam", amount = 80},
@@ -10378,6 +10940,7 @@ data:extend({
     category = "crafting",
     energy_required = 90,
     enabled = false,
+    allow_productivity = true,
     ingredients = {
       {type = "item", name = "sp-energy-control-unit", amount = 40},
       {type = "item", name = "sp-imersium-plate", amount = 40},
@@ -10401,6 +10964,7 @@ data:extend({
     category = "crafting",
     energy_required = 40,
     enabled = false,
+    allow_productivity = true,
     ingredients = {
       {type = "item", name = "sp-energy-control-unit", amount = 16},
       {type = "item", name = "sp-imersium-plate", amount = 20},
@@ -10423,6 +10987,7 @@ data:extend({
     category = "crafting",
     energy_required = 6,
     enabled = false,
+    allow_productivity = true,
     ingredients = {
       {type = "item", name = "sp-bolts", amount = 8},
       {type = "item", name = "sp-stainless-steel", amount = 10},
@@ -10442,6 +11007,7 @@ data:extend({
     category = "crafting",
     energy_required = 20,
     enabled = false,
+    allow_productivity = true,
     ingredients = {
       {type = "item", name = "sp-bolts", amount = 30},
       {type = "item", name = "sp-stainless-steel", amount = 40},
@@ -10461,6 +11027,7 @@ data:extend({
   --   category = "crafting",
   --   energy_required = 8,
   --   enabled = false,
+    allow_productivity = true,
   --   ingredients = {
   --     {type = "item", name = "iron-plate", amount = 12},
   --     {type = "item", name = "stone-brick", amount = 4},
@@ -10512,6 +11079,7 @@ data:extend({
     category = "crafting",
     energy_required = 6,
     enabled = false,
+    allow_productivity = true,
     ingredients = {
       {type = "item", name = "sp-imersium-plate", amount = 3},
       {type = "item", name = "sp-blunagium-plate", amount = 2},
@@ -10533,6 +11101,7 @@ data:extend({
     category = "crafting",
     energy_required = 10,
     enabled = false,
+    allow_productivity = true,
     ingredients = {
       {type = "item", name = "sp-imersium-plate", amount = 3},
       {type = "item", name = "sp-rukite-plate", amount = 4},
@@ -10557,6 +11126,7 @@ data:extend({
     category = "crafting",
     energy_required = 2,
     enabled = false,
+    allow_productivity = true,
     ingredients = {
       {type = "item", name = "electric-engine-unit", amount = 1},
       {type = "item", name = "sp-machined-parts", amount = 2},
@@ -10576,6 +11146,7 @@ data:extend({
     category = "crafting",
     energy_required = 2,
     enabled = false,
+    allow_productivity = true,
     ingredients = {
     {type = "item", name = "sp-aluminum-frame", amount = 2},
     {type = "item", name = "engine-unit", amount = 2},
@@ -10596,6 +11167,7 @@ data:extend({
     category = "crafting",
     energy_required = 2,
     enabled = false,
+    allow_productivity = true,
     ingredients = {
       {type = "item", name = "sp-titanium-frame", amount = 2},
       {type = "item", name = "sp-actuator", amount = 4},
@@ -10615,6 +11187,7 @@ data:extend({
     category = "crafting",
     energy_required = 2,
     enabled = false,
+    allow_productivity = true,
     ingredients = {
       {type = "item", name = "turbo-transport-belt", amount = 1},
       {type = "item", name = "sp-TiNb", amount = 4},
@@ -10634,6 +11207,7 @@ data:extend({
     category = "crafting",
     energy_required = 2,
     enabled = false,
+    allow_productivity = true,
     ingredients = {
       {type = "item", name = "sp-advanced-processing-unit", amount = 1},
       {type = "item", name = "sp-blunagium-plate", amount = 2},
@@ -10654,6 +11228,7 @@ data:extend({
     category = "crafting",
     energy_required = 2,
     enabled = false,
+    allow_productivity = true,
     ingredients = {
       {type = "item", name = "sp-kr-superior-transport-belt", amount = 24},
       {type = "item", name = "sp-imersium-beam", amount = 20},
@@ -10672,6 +11247,7 @@ data:extend({
     category = "crafting",
     energy_required = 2,
     enabled = false,
+    allow_productivity = true,
     ingredients = {
       {type = "item", name = "sp-kr-superior-transport-belt", amount = 2},
       {type = "item", name = "sp-imersium-beam", amount = 4},
@@ -10690,6 +11266,7 @@ data:extend({
     category = "crafting",
     energy_required = 2,
     enabled = false,
+    allow_productivity = true,
     ingredients = {
       {type = "item", name = "sp-kr-superior-transport-belt", amount = 1},
       {type = "item", name = "superconductor", amount = 6},
@@ -10710,6 +11287,7 @@ data:extend({
     mip_maps = 4,
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 20,
     ingredients = {
       {type = "item", name = "engine-unit", amount = 2},
@@ -10731,6 +11309,7 @@ data:extend({
     mip_maps = 4,
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 30,
     ingredients = {
       {type = "item", name = "sp-advanced-processing-unit", amount = 20},
@@ -10753,6 +11332,7 @@ data:extend({
     mip_maps = 4,
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 45,
     ingredients = {
       {type = "item", name = "sp-blunagium-rukite-compound", amount = 10},
@@ -10780,6 +11360,7 @@ data:extend({
     mip_maps = 4,
     category = "sp-kr-advanced-smelting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 50,
     ingredients = {
       {type = "item", name = "sp-blunagium-bar", amount = 16},
@@ -10801,6 +11382,7 @@ data:extend({
     mip_maps = 4,
     category = "sp-kr-advanced-smelting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 60,
     ingredients = {
       {type = "item", name = "sp-grobgnum-bar", amount = 16},
@@ -10823,6 +11405,7 @@ data:extend({
     mip_maps = 4,
     category = "sp-kr-advanced-smelting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 30,
     ingredients = {
       {type = "item", name = "sp-imersite-powder", amount = 10},
@@ -10842,6 +11425,7 @@ data:extend({
     mip_maps = 4,
     category = "sp-kr-advanced-smelting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 30,
     ingredients = {
       {type = "item", name = "sp-imersium-plate", amount = 8},
@@ -10860,6 +11444,7 @@ data:extend({
     mip_maps = 4,
     category = "sp-kr-advanced-smelting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 48,
     ingredients = {
       {type = "item", name = "sp-blunagium-bar", amount = 14},
@@ -10881,6 +11466,7 @@ data:extend({
     mip_maps = 4,
     category = "sp-kr-advanced-smelting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 40,
     ingredients = {
       {type = "item", name = "sp-yemnuth-pearls", amount = 8},
@@ -10901,6 +11487,7 @@ data:extend({
     mip_maps = 4,
     category = "sp-kr-advanced-smelting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 60,
     ingredients = {
       {type = "item", name = "sp-rukite-plate", amount = 8},
@@ -10920,6 +11507,7 @@ data:extend({
     mip_maps = 4,
     category = "sp-kr-advanced-smelting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 50,
     ingredients = {
       {type = "item", name = "sp-blunagium-plate", amount = 8},
@@ -10939,6 +11527,7 @@ data:extend({
     mip_maps = 4,
     category = "sp-kr-advanced-smelting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 32,
     ingredients = {
       {type = "item", name = "sp-grobgnum-plate", amount = 3},
@@ -10959,6 +11548,7 @@ data:extend({
     mip_maps = 4,
     category = "sp-kr-advanced-smelting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 45,
     ingredients = {
       {type = "item", name = "sp-imersite-powder", amount = 6},
@@ -10978,6 +11568,7 @@ data:extend({
     mip_maps = 4,
     category = "sp-kr-advanced-smelting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 60,
     ingredients = {
       {type = "item", name = "sp-rukite-bar", amount = 2},
@@ -10997,6 +11588,7 @@ data:extend({
     mip_maps = 4,
     category = "sp-kr-advanced-smelting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 80,
     ingredients = {
       {type = "item", name = "sp-blunagium-plate", amount = 8},
@@ -11016,6 +11608,7 @@ data:extend({
     mip_maps = 4,
     category = "sp-kr-advanced-smelting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 20,
     ingredients = {
       {type = "item", name = "sp-blunagium-basalt", amount = 1},
@@ -11035,6 +11628,7 @@ data:extend({
     mip_maps = 4,
     category = "sp-kr-advanced-smelting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 40,
     ingredients = {
       {type = "item", name = "sp-blunagium-plate", amount = 1},
@@ -11053,6 +11647,7 @@ data:extend({
     mip_maps = 4,
     category = "sp-kr-advanced-smelting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 50,
     ingredients = {
       {type = "item", name = "sp-imersite-crystal", amount = 2},
@@ -11069,6 +11664,7 @@ data:extend({
     name = "sp-vitality-prism",  -- #ForRegEx# - recipe
     category = "sp-kr-advanced-smelting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 75,
     ingredients = {
       {type = "item", name = "sp-grobgnum-shard", amount = 8},
@@ -11091,6 +11687,7 @@ data:extend({
     name = "sp-blunagium-solenoid",  -- #ForRegEx# - recipe
     category = "alien-tech-manufacturing",
     enabled = false,
+    allow_productivity = true,
     energy_required = 20,
     ingredients = {
       {type = "item", name = "sp-boson-blossom", amount = 4},
@@ -11106,6 +11703,7 @@ data:extend({
     name = "sp-boson-blossom",  -- #ForRegEx# - recipe
     category = "alien-tech-manufacturing",
     enabled = false,
+    allow_productivity = true,
     energy_required = 60,
     ingredients = {
       {type = "item", name = "sp-plutonium-240", amount = 1},
@@ -11122,6 +11720,7 @@ data:extend({
     name = "sp-gravitational-wave-bridge",  -- #ForRegEx# - recipe
     category = "alien-tech-manufacturing",
     enabled = false,
+    allow_productivity = true,
     energy_required = 30,
     ingredients = {
       {type = "item", name = "sp-gravitational-wave-interferometer", amount = 3},
@@ -11139,6 +11738,7 @@ data:extend({
     name = "sp-gravitational-wave-interferometer",  -- #ForRegEx# - recipe
     category = "alien-tech-manufacturing",
     enabled = false,
+    allow_productivity = true,
     energy_required = 30,
     ingredients = {
       {type = "item", name = "sp-nanoflex", amount = 1},
@@ -11155,6 +11755,7 @@ data:extend({
     name = "sp-gravitational-wave-splitter",  -- #ForRegEx# - recipe
     category = "alien-tech-manufacturing",
     enabled = false,
+    allow_productivity = true,
     energy_required = 30,
     ingredients = {
       {type = "item", name = "sp-glass-fiber", amount = 2},
@@ -11172,6 +11773,7 @@ data:extend({
     name = "sp-bio-capacitor",  -- #ForRegEx# - recipe
     category = "alien-tech-manufacturing",
     enabled = false,
+    allow_productivity = true,
     energy_required = 24,
     ingredients = {
       {type = "item", name = "sp-advanced-processing-unit", amount = 2},
@@ -11193,6 +11795,7 @@ data:extend({
     name = "sp-neural-fusion-card",  -- #ForRegEx# - recipe
     category = "alien-tech-manufacturing",
     enabled = false,
+    allow_productivity = true,
     energy_required = 30,
     ingredients = {
       {type = "item", name = "sp-advanced-processing-unit", amount = 2},
@@ -11214,6 +11817,7 @@ data:extend({
     name = "sp-neuropulse-module",  -- #ForRegEx# - recipe
     category = "alien-tech-manufacturing",
     enabled = false,
+    allow_productivity = true,
     energy_required = 36,
     ingredients = {
       {type = "item", name = "sp-quantum-foam", amount = 1},
@@ -11234,6 +11838,7 @@ data:extend({
     name = "sp-synaptic-core-chip",  -- #ForRegEx# - recipe
     category = "alien-tech-manufacturing",
     enabled = false,
+    allow_productivity = true,
     energy_required = 40,
     ingredients = {
       {type = "item", name = "sp-quantum-foam", amount = 1},
@@ -11255,6 +11860,7 @@ data:extend({
     name = "sp-alpha-wave-tray-array",  -- #ForRegEx# - recipe
     category = "alien-tech-manufacturing",
     enabled = false,
+    allow_productivity = true,
     energy_required = 30,
     ingredients = {
       {type = "item", name = "sp-radiation-channeler", amount = 8},
@@ -11278,6 +11884,7 @@ data:extend({
     name = "sp-radiation-channeler",  -- #ForRegEx# - recipe
     category = "alien-tech-manufacturing",
     enabled = false,
+    allow_productivity = true,
     energy_required = 24,
     ingredients = {
       {type = "item", name = "sp-lead-slab", amount = 1},
@@ -11295,6 +11902,7 @@ data:extend({
     name = "sp-ultra-violet-processor",  -- #ForRegEx# - recipe
     category = "alien-tech-manufacturing",
     enabled = false,
+    allow_productivity = true,
     energy_required = 8,
     ingredients = {
       {type = "item", name = "sp-phosphorus", amount = 10},
@@ -11313,6 +11921,7 @@ data:extend({
     name = "sp-graphene-chip",  -- #ForRegEx# - recipe
     category = "alien-tech-manufacturing",
     enabled = false,
+    allow_productivity = true,
     energy_required = 10,
     ingredients = {
       {type = "item", name = "sp-graphene", amount = 10},
@@ -11331,6 +11940,7 @@ data:extend({
     name = "sp-holo-grip-controller",  -- #ForRegEx# - recipe
     category = "alien-tech-manufacturing",
     enabled = false,
+    allow_productivity = true,
     energy_required = 15,
     ingredients = {
       {type = "item", name = "sp-micro-frame", amount = 4},
@@ -11350,6 +11960,7 @@ data:extend({
     name = "sp-energy-control-unit",  -- #ForRegEx# - recipe
     category = "alien-tech-manufacturing",
     enabled = false,
+    allow_productivity = true,
     energy_required = 16,
     ingredients = {
       {type = "item", name = "sp-gamma-radiation-source", amount = 1},
@@ -11368,6 +11979,7 @@ data:extend({
     name = "sp-imersium-gear-wheel",  -- #ForRegEx# - recipe
     category = "alien-tech-manufacturing",
     enabled = false,
+    allow_productivity = true,
     energy_required = 6,
     ingredients = {
       {type = "item", name = "sp-imersium-plate", amount = 2},
@@ -11384,6 +11996,7 @@ data:extend({
     name = "sp-rukite-gear-wheel",  -- #ForRegEx# - recipe
     category = "alien-tech-manufacturing",
     enabled = false,
+    allow_productivity = true,
     energy_required = 24,
     ingredients = {
       {type = "item", name = "sp-rukite-plate", amount = 4},
@@ -11400,6 +12013,7 @@ data:extend({
     name = "sp-rukite-gearbox",  -- #ForRegEx# - recipe
     category = "alien-tech-manufacturing",
     enabled = false,
+    allow_productivity = true,
     energy_required = 10,
     ingredients = {
       {type = "item", name = "sp-rukite-gear-wheel", amount = 10},
@@ -11416,6 +12030,7 @@ data:extend({
     name = "sp-collapsed-orbitals",  -- #ForRegEx# - recipe
     category = "matter-condensing",
     enabled = false,
+    allow_productivity = true,
     energy_required = 10,
     ingredients = {
       {type = "item", name = "sp-yemnuth-pearls", amount = 5},
@@ -11431,6 +12046,7 @@ data:extend({
     name = "sp-entangled-leptons",  -- #ForRegEx# - recipe
     category = "matter-condensing",
     enabled = false,
+    allow_productivity = true,
     energy_required = 20,
     ingredients = {
       {type = "item", name = "sp-yemnuth-pearls", amount = 7},
@@ -11446,6 +12062,7 @@ data:extend({
     name = "sp-gluon-orb",  -- #ForRegEx# - recipe
     category = "matter-condensing",
     enabled = false,
+    allow_productivity = true,
     energy_required = 16,
     ingredients = {
       {type = "item", name = "sp-yemnuth-pearls", amount = 6},
@@ -11463,6 +12080,7 @@ data:extend({
     name = "sp-neutrino-stream-source",  -- #ForRegEx# - recipe
     category = "matter-condensing",
     enabled = false,
+    allow_productivity = true,
     energy_required = 60,
     ingredients = {
       {type = "item", name = "sp-collapsed-orbitals", amount = 24},
@@ -11479,6 +12097,7 @@ data:extend({
     name = "sp-quantized-orbital-flower",  -- #ForRegEx# - recipe
     category = "matter-condensing",
     enabled = false,
+    allow_productivity = true,
     energy_required = 80,
     ingredients = {
       {type = "item", name = "sp-collapsed-orbitals", amount = 100},
@@ -11497,6 +12116,7 @@ data:extend({
     name = "sp-quark-sphere",  -- #ForRegEx# - recipe
     category = "matter-condensing",
     enabled = false,
+    allow_productivity = true,
     energy_required = 40,
     ingredients = {
       {type = "item", name = "sp-yemnuth-pearls", amount = 8},
@@ -11513,6 +12133,7 @@ data:extend({
     name = "sp-trapped-quantum-energy",  -- #ForRegEx# - recipe
     category = "matter-condensing",
     enabled = false,
+    allow_productivity = true,
     energy_required = 45,
     ingredients = {
       {type = "item", name = "sp-plasma-crystal", amount = 1},
@@ -11528,6 +12149,7 @@ data:extend({
     name = "sp-femto-navigator",  -- #ForRegEx# - recipe
     category = "sp-kr-matter-items",
     enabled = false,
+    allow_productivity = true,
     energy_required = 5,
     ingredients = {
       {type = "item", name = "sp-nanobot", amount = 10},
@@ -11545,6 +12167,7 @@ data:extend({
     name = "sp-orbital-cell",  -- #ForRegEx# - recipe
     category = "sp-kr-matter-items",
     enabled = false,
+    allow_productivity = true,
     energy_required = 2,
     ingredients = {
       {type = "item", name = "sp-collapsed-orbitals", amount = 10},
@@ -11561,6 +12184,7 @@ data:extend({
     name = "sp-quantized-compute-unit",  -- #ForRegEx# - recipe
     category = "sp-kr-matter-items",
     enabled = false,
+    allow_productivity = true,
     energy_required = 8,
     ingredients = {
       {type = "item", name = "sp-neutrino-stream-source", amount = 1},
@@ -11578,6 +12202,7 @@ data:extend({
     name = "sp-quantum-tube",  -- #ForRegEx# - recipe
     category = "sp-kr-matter-items",
     enabled = false,
+    allow_productivity = true,
     energy_required = 12,
     ingredients = {
       {type = "item", name = "sp-neutrino-stream-source", amount = 1},
@@ -11596,6 +12221,7 @@ data:extend({
     name = "sp-frictionless-bearing",  -- #ForRegEx# - recipe
     category = "alien-tech-manufacturing",
     enabled = false,
+    allow_productivity = true,
     energy_required = 36,
     ingredients = {
       {type = "item", name = "sp-rukite-powder", amount = 2},
@@ -11612,6 +12238,7 @@ data:extend({
     name = "sp-frictionless-joint",  -- #ForRegEx# - recipe
     category = "alien-tech-manufacturing",
     enabled = false,
+    allow_productivity = true,
     energy_required = 6,
     ingredients = {
       {type = "item", name = "sp-frictionless-bearing", amount = 4},
@@ -11630,6 +12257,7 @@ data:extend({
     name = "sp-quantum-relativity-compute-unit",  -- #ForRegEx# - recipe
     category = "alien-tech-manufacturing",
     enabled = false,
+    allow_productivity = true,
     energy_required = 18,
     ingredients = {
       {type = "item", name = "sp-quantized-compute-unit", amount = 8},
@@ -11648,6 +12276,7 @@ data:extend({
     name = "sp-quantum-stream-supply",  -- #ForRegEx# - recipe
     category = "alien-tech-manufacturing",
     enabled = false,
+    allow_productivity = true,
     energy_required = 16,
     ingredients = {
       {type = "item", name = "sp-orbital-cell", amount = 1},
@@ -11666,6 +12295,7 @@ data:extend({
     name = "sp-quantum-switch",  -- #ForRegEx# - recipe
     category = "alien-tech-manufacturing",
     enabled = false,
+    allow_productivity = true,
     energy_required = 10,
     ingredients = {
       {type = "item", name = "sp-chronalyte", amount = 1},
@@ -11683,6 +12313,7 @@ data:extend({
     name = "sp-subatomic-condenser",  -- #ForRegEx# - recipe
     category = "alien-tech-manufacturing",
     enabled = false,
+    allow_productivity = true,
     energy_required = 4,
     ingredients = {
       {type = "item", name = "sp-quantum-switch", amount = 8},
@@ -11699,6 +12330,7 @@ data:extend({
     name = "sp-ultra-durable-ceramics",  -- #ForRegEx# - recipe
     category = "sp-kr-advanced-smelting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 60,
     ingredients = {
       {type = "item", name = "sp-yemnuth-plate", amount = 6},
@@ -11715,6 +12347,7 @@ data:extend({
     name = "sp-hot-stone",  -- #ForRegEx# - recipe
     category = "sp-kr-advanced-smelting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 15,
     ingredients = {
       {type = "item", name = "sp-blunagium-yemnuth-beam", amount = 4},
@@ -11730,6 +12363,7 @@ data:extend({
     name = "sp-charged-slab",  -- #ForRegEx# - recipe
     category = "alien-tech-manufacturing",
     enabled = false,
+    allow_productivity = true,
     energy_required = 100,
     ingredients = {
       {type = "item", name = "sp-hot-stone", amount = 1},
@@ -11744,6 +12378,7 @@ data:extend({
     name =  "sp-extreme-heat-source",  -- #ForRegEx# - recipe
     category = "alien-tech-manufacturing",
     enabled = false,
+    allow_productivity = true,
     energy_required = 20,
     ingredients = {
       {type = "item", name = "sp-charged-slab", amount = 6},
@@ -11761,6 +12396,7 @@ data:extend({
     name = "sp-grobgnum-optics",  -- #ForRegEx# - recipe
     category = "alien-tech-manufacturing",
     enabled = false,
+    allow_productivity = true,
     energy_required = 24,
     ingredients = {
       {type = "item", name = "sp-grobgnum-droplet", amount = 1},
@@ -11777,6 +12413,7 @@ data:extend({
     name = "sp-proton-neutron-frame",  -- #ForRegEx# - recipe
     category = "alien-tech-manufacturing",
     enabled = false,
+    allow_productivity = true,
     energy_required = 24,
     ingredients = {
       {type = "item", name = "sp-gamma-radiation-source", amount = 1},
@@ -11793,6 +12430,7 @@ data:extend({
     name = "sp-proton-neutron-superconductor",  -- #ForRegEx# - recipe
     category = "alien-tech-manufacturing",
     enabled = false,
+    allow_productivity = true,
     energy_required = 450,
     ingredients = {
       {type = "item", name = "sp-proton-neutron-frame", amount = 240},
@@ -11808,6 +12446,7 @@ data:extend({
     name = "sp-quantized-protons",  -- #ForRegEx# - recipe
     category = "sp-kr-matter-items",
     enabled = false,
+    allow_productivity = true,
     energy_required = 30,
     ingredients = {
       {type = "item", name = "sp-proton-neutron-frame", amount = 24},
@@ -11824,6 +12463,7 @@ data:extend({
     name = "sp-quantum-capacitor",  -- #ForRegEx# - recipe
     category = "sp-kr-matter-items",
     enabled = false,
+    allow_productivity = true,
     energy_required = 50,
     ingredients = {
       {type = "item", name = "sp-quantized-protons", amount = 16},
@@ -11841,6 +12481,7 @@ data:extend({
     name = "sp-extreme-data-transfer-controller",  -- #ForRegEx# - recipe
     category = "alien-tech-manufacturing",
     enabled = false,
+    allow_productivity = true,
     energy_required = 20,
     ingredients = {
       {type = "item", name = "sp-chronalyte", amount = 3},
@@ -11859,6 +12500,7 @@ data:extend({
     name = "sp-information-cube",  -- #ForRegEx# - recipe
     category = "alien-tech-manufacturing",
     enabled = false,
+    allow_productivity = true,
     energy_required = 150,
     ingredients = {
       {type = "item", name = "sp-extreme-data-transfer-controller", amount = 4},
@@ -11881,6 +12523,7 @@ data:extend({
     name = "sp-universal-storage-drive",  -- #ForRegEx# - recipe
     category = "alien-tech-manufacturing",
     enabled = false,
+    allow_productivity = true,
     energy_required = 40,
     ingredients = {
       {type = "item", name = "sp-imersite-rukite-beam", amount = 1},
@@ -11899,6 +12542,7 @@ data:extend({
     name = "sp-lossless-power-connector",  -- #ForRegEx# - recipe
     category = "alien-tech-manufacturing",
     enabled = false,
+    allow_productivity = true,
     energy_required = 6,
     ingredients = {
       {type = "item", name = "sp-radiant-glass", amount = 1},
@@ -11916,6 +12560,7 @@ data:extend({
     name = "sp-miniaturized-star-core-stabilizer",  -- #ForRegEx# - recipe
     category = "alien-tech-manufacturing",
     enabled = false,
+    allow_productivity = true,
     energy_required = 120,
     ingredients = {
       {type = "item", name = "sp-blunagium-imersite-slab", amount = 8},
@@ -11937,6 +12582,7 @@ data:extend({
     name = "sp-miniaturized-stellar-bridge",  -- #ForRegEx# - recipe
     category = "alien-tech-manufacturing",
     enabled = false,
+    allow_productivity = true,
     energy_required = 24,
     ingredients = {
       {type = "item", name = "sp-blunagium-imersite-slab", amount = 1},
@@ -11954,6 +12600,7 @@ data:extend({
     name = "sp-neutrino-charger",  -- #ForRegEx# - recipe
     category = "alien-tech-manufacturing",
     enabled = false,
+    allow_productivity = true,
     energy_required = 24,
     ingredients = {
       {type = "item", name = "sp-gravitational-wave-interferometer", amount = 6},
@@ -11970,6 +12617,7 @@ data:extend({
     name = "sp-sideral-seal",  -- #ForRegEx# - recipe
     category = "alien-tech-manufacturing",
     enabled = false,
+    allow_productivity = true,
     energy_required = 16,
     ingredients = {
       {type = "item", name = "sp-blunagium-imersite-slab", amount = 1},
@@ -11987,6 +12635,7 @@ data:extend({
     name = "sp-energy-channeler",  -- #ForRegEx# - recipe
     category = "alien-tech-manufacturing",
     enabled = false,
+    allow_productivity = true,
     energy_required = 8,
     ingredients = {
       {type = "item", name = "sp-blunagium-yemnuth-compound", amount = 2},
@@ -12005,6 +12654,7 @@ data:extend({
     name = "sp-antimatter-engine",  -- #ForRegEx# - recipe
     category = "alien-tech-manufacturing",
     enabled = false,
+    allow_productivity = true,
     energy_required = 100,
     ingredients = {
       {type = "item", name = "sp-proton-neutron-superconductor", amount = 6},
@@ -12027,6 +12677,7 @@ data:extend({
     name = "sp-dark-energy-harvester",  -- #ForRegEx# - recipe
     category = "alien-tech-manufacturing",
     enabled = false,
+    allow_productivity = true,
     energy_required = 75,
     ingredients = {
       {type = "item", name = "sp-quark-gluon-probe", amount = 30},
@@ -12045,6 +12696,7 @@ data:extend({
     name = "sp-dark-matter-field-generator",  -- #ForRegEx# - recipe
     category = "alien-tech-manufacturing",
     enabled = false,
+    allow_productivity = true,
     energy_required = 150,
     ingredients = {
       {type = "item", name = "sp-miniaturized-stellar-bridge", amount = 1},
@@ -12061,6 +12713,7 @@ data:extend({
     name = "sp-hadron-beam-charger",  -- #ForRegEx# - recipe
     category = "alien-tech-manufacturing",
     enabled = false,
+    allow_productivity = true,
     energy_required = 60,
     ingredients = {
       {type = "item", name = "sp-energy-channeler", amount = 1},
@@ -12079,6 +12732,7 @@ data:extend({
     name = "sp-interdimensional-prism-chamber",  -- #ForRegEx# - recipe
     category = "alien-tech-manufacturing",
     enabled = false,
+    allow_productivity = true,
     energy_required = 100,
     ingredients = {
       {type = "item", name = "sp-blunagium-imersite-slab", amount = 1},
@@ -12097,6 +12751,7 @@ data:extend({
     name = "sp-omni-pulse-generator",  -- #ForRegEx# - recipe
     category = "alien-tech-manufacturing",
     enabled = false,
+    allow_productivity = true,
     energy_required = 80,
     ingredients = {
       {type = "item", name = "sp-interdimensional-prism-chamber", amount = 1},
@@ -12114,6 +12769,7 @@ data:extend({
     name = "sp-quark-gluon-plasma-container",  -- #ForRegEx# - recipe
     category = "alien-tech-manufacturing",
     enabled = false,
+    allow_productivity = true,
     energy_required = 12,
     ingredients = {
       {type = "item", name = "sp-radiant-glass", amount = 3},
@@ -12131,6 +12787,7 @@ data:extend({
     name = "sp-quark-gluon-probe",  -- #ForRegEx# - recipe
     category = "alien-tech-manufacturing",
     enabled = false,
+    allow_productivity = true,
     energy_required = 120,
     ingredients = {
       {type = "item", name = "sp-femto-navigator", amount = 80},
@@ -12149,6 +12806,7 @@ data:extend({
     name = "sp-relativity-condenser",  -- #ForRegEx# - recipe
     category = "alien-tech-manufacturing",
     enabled = false,
+    allow_productivity = true,
     energy_required = 100,
     ingredients = {
       {type = "item", name = "sp-subatomic-condenser", amount = 4},
@@ -12167,6 +12825,7 @@ data:extend({
     name = "sp-sideral-compute-core",  -- #ForRegEx# - recipe
     category = "alien-tech-manufacturing",
     enabled = false,
+    allow_productivity = true,
     energy_required = 180,
     ingredients = {
       {type = "item", name = "sp-information-cube", amount = 1},
@@ -12190,6 +12849,7 @@ data:extend({
     name = "sp-dark-matter-mining-satellite",  -- #ForRegEx# - recipe
     category = "alien-tech-manufacturing",
     enabled = false,
+    allow_productivity = true,
     energy_required = 40,
     ingredients = {
       {type = "item", name = "sp-aluminum-brass", amount = 6},
@@ -12210,6 +12870,7 @@ data:extend({
     name = "sp-dark-matter",  -- #ForRegEx# - recipe
     category = "alien-tech-manufacturing",
     enabled = false,
+    allow_productivity = true,
     energy_required = 8,
     ingredients = {
       {type = "item", name = "sp-dark-matter-container", amount = 1},
@@ -12223,6 +12884,7 @@ data:extend({
     name = "sp-antimatter",  -- #ForRegEx# - recipe
     category = "alien-tech-manufacturing",
     enabled = false,
+    allow_productivity = true,
     energy_required = 12,
     ingredients = {
       {type = "item", name = "sp-evolution-pulse-cell", amount = 10},
@@ -12238,6 +12900,7 @@ data:extend({
     name = "sp-dark-energy",  -- #ForRegEx# - recipe
     category = "alien-tech-manufacturing",
     enabled = false,
+    allow_productivity = true,
     energy_required = 0.01,
     ingredients = {
       {type = "fluid", name = "sp-matter", amount = 1},
@@ -12264,6 +12927,7 @@ data:extend({
     category = "acrosphere-conversion",
     subgroup = "sp-basic-acrosphere-conversion",
     enabled = false,
+    allow_productivity = true,
     energy_required = 2,
     allowed_effects = {"consumption", "speed", "pollution"},
     ingredients = {
@@ -12288,6 +12952,7 @@ data:extend({
     category = "acrosphere-conversion",
     subgroup = "sp-basic-acrosphere-conversion",
     enabled = false,
+    allow_productivity = true,
     energy_required = 2,
     allowed_effects = {"consumption", "speed", "pollution"},
     ingredients = {
@@ -12312,6 +12977,7 @@ data:extend({
     category = "acrosphere-conversion",
     subgroup = "sp-basic-acrosphere-conversion",
     enabled = false,
+    allow_productivity = true,
     energy_required = 2,
     allowed_effects = {"consumption", "speed", "pollution"},
     ingredients = {
@@ -12336,6 +13002,7 @@ data:extend({
     category = "acrosphere-conversion",
     subgroup = "sp-basic-acrosphere-conversion",
     enabled = false,
+    allow_productivity = true,
     energy_required = 2,
     allowed_effects = {"consumption", "speed", "pollution"},
     ingredients = {
@@ -12360,6 +13027,7 @@ data:extend({
     category = "acrosphere-conversion",
     subgroup = "sp-basic-acrosphere-conversion",
     enabled = false,
+    allow_productivity = true,
     energy_required = 2,
     allowed_effects = {"consumption", "speed", "pollution"},
     ingredients = {
@@ -12386,6 +13054,7 @@ data:extend({
     category = "acrosphere-conversion",
     subgroup = "sp-advanced-acrosphere-conversion",
     enabled = false,
+    allow_productivity = true,
     energy_required = 3,
     allowed_effects = {"consumption", "speed", "pollution"},
     ingredients = {
@@ -12414,6 +13083,7 @@ data:extend({
     category = "acrosphere-conversion",
     subgroup = "sp-advanced-acrosphere-conversion",
     enabled = false,
+    allow_productivity = true,
     energy_required = 3,
     allowed_effects = {"consumption", "speed", "pollution"},
     ingredients = {
@@ -12442,6 +13112,7 @@ data:extend({
     category = "acrosphere-conversion",
     subgroup = "sp-advanced-acrosphere-conversion",
     enabled = false,
+    allow_productivity = true,
     energy_required = 3,
     allowed_effects = {"consumption", "speed", "pollution"},
     ingredients = {
@@ -12470,6 +13141,7 @@ data:extend({
     category = "acrosphere-conversion",
     subgroup = "sp-advanced-acrosphere-conversion",
     enabled = false,
+    allow_productivity = true,
     energy_required = 3,
     allowed_effects = {"consumption", "speed", "pollution"},
     ingredients = {
@@ -12492,6 +13164,7 @@ data:extend({
     category = "acrosphere-conversion",
     subgroup = "sp-acroproduct",
     enabled = false,
+    allow_productivity = true,
     energy_required = 4,
     allowed_effects = {"consumption", "speed", "pollution"},
     ingredients = {
@@ -12517,6 +13190,7 @@ data:extend({
     category = "acrosphere-conversion",
     subgroup = "sp-acroproduct",
     enabled = false,
+    allow_productivity = true,
     energy_required = 4,
     allowed_effects = {"consumption", "speed", "pollution"},
     ingredients = {
@@ -12542,6 +13216,7 @@ data:extend({
     category = "acrosphere-conversion",
     subgroup = "sp-acroproduct",
     enabled = false,
+    allow_productivity = true,
     energy_required = 4,
     allowed_effects = {"consumption", "speed", "pollution"},
     ingredients = {
@@ -12572,6 +13247,7 @@ data:extend({
     category = "acroproduct-conversion-with-acrocrystal",
     subgroup = "enriched-resource-from-acrocrystal",
     enabled = false,
+    allow_productivity = true,
     energy_required = 8,
     allowed_effects = {
       "consumption",
@@ -12601,6 +13277,7 @@ data:extend({
     category = "acroproduct-conversion-with-acrocrystal",
     subgroup = "enriched-resource-from-acrocrystal",
     enabled = false,
+    allow_productivity = true,
     energy_required = 8,
     allowed_effects = {
       "consumption",
@@ -12632,6 +13309,7 @@ data:extend({
     category = "acroproduct-conversion-with-acrocrystal",
     subgroup = "enriched-resource-from-acrocrystal",
     enabled = false,
+    allow_productivity = true,
     energy_required = 6,
     allowed_effects = {
       "consumption",
@@ -12663,6 +13341,7 @@ data:extend({
     category = "acroproduct-conversion-with-acrocrystal",
     subgroup = "enriched-resource-from-acrocrystal",
     enabled = false,
+    allow_productivity = true,
     energy_required = 6,
     allowed_effects = {
       "consumption",
@@ -12692,6 +13371,7 @@ data:extend({
     category = "acroproduct-conversion-with-acrocrystal",
     subgroup = "enriched-resource-from-acrocrystal",
     enabled = false,
+    allow_productivity = true,
     energy_required = 9,
     allowed_effects = {
       "consumption",
@@ -12721,6 +13401,7 @@ data:extend({
     category = "acroproduct-conversion-with-acrocrystal",
     subgroup = "enriched-resource-from-acrocrystal",
     enabled = false,
+    allow_productivity = true,
     energy_required = 8,
     allowed_effects = {
       "consumption",
@@ -12749,6 +13430,7 @@ data:extend({
     category = "acroproduct-conversion-with-acrocrystal",
     subgroup = "enriched-resource-from-acrocrystal",
     enabled = false,
+    allow_productivity = true,
     energy_required = 6,
     allowed_effects = {
       "consumption",
@@ -12778,6 +13460,7 @@ data:extend({
     category = "acroproduct-conversion-with-acrocrystal",
     subgroup = "enriched-resource-from-acrocrystal",
     enabled = false,
+    allow_productivity = true,
     energy_required = 10,
     allowed_effects = {
       "consumption",
@@ -12806,6 +13489,7 @@ data:extend({
     category = "acroproduct-conversion-with-acrocrystal",
     subgroup = "enriched-resource-from-acrocrystal",
     enabled = false,
+    allow_productivity = true,
     energy_required = 8,
     allowed_effects = {
       "consumption",
@@ -12835,6 +13519,7 @@ data:extend({
     category = "acroproduct-conversion-with-acrocrystal",
     subgroup = "enriched-resource-from-acrocrystal",
     enabled = false,
+    allow_productivity = true,
     energy_required = 12,
     allowed_effects = {
       "consumption",
@@ -12865,6 +13550,7 @@ data:extend({
     category = "acroproduct-conversion-with-acrocrystal",
     subgroup = "enriched-resource-from-acrocrystal",
     enabled = false,
+    allow_productivity = true,
     energy_required = 6,
     allowed_effects = {
       "consumption",
@@ -12895,6 +13581,7 @@ data:extend({
     category = "acroproduct-conversion-with-acrocrystal",
     subgroup = "enriched-resource-from-acrocrystal",
     enabled = false,
+    allow_productivity = true,
     energy_required = 12,
     allowed_effects = {
       "consumption",
@@ -12922,6 +13609,7 @@ data:extend({
     category = "acroproduct-conversion-with-acrocrystal",
     subgroup = "enriched-resource-from-acrocrystal",
     enabled = false,
+    allow_productivity = true,
     energy_required = 7,
     allowed_effects = {
       "consumption",
@@ -12950,6 +13638,7 @@ data:extend({
     category = "acroproduct-conversion-with-acrocrystal",
     subgroup = "enriched-resource-from-acrocrystal",
     enabled = false,
+    allow_productivity = true,
     energy_required = 8,
     allowed_effects = {
       "consumption",
@@ -12991,6 +13680,7 @@ data:extend({
     category = "acroproduct-conversion-with-acrovoid",
     subgroup = "processed-resource-from-acrovoid",
     enabled = false,
+    allow_productivity = true,
     energy_required = 6,
     ingredients = {
       {type = "item", name = "sp-coke", amount = 6},
@@ -13016,6 +13706,7 @@ data:extend({
     category = "acroproduct-conversion-with-acrovoid",
     subgroup = "processed-resource-from-acrovoid",
     enabled = false,
+    allow_productivity = true,
     energy_required = 12,
     allowed_effects = {
       "consumption",
@@ -13047,6 +13738,7 @@ data:extend({
     category = "acroproduct-conversion-with-acrovoid",
     subgroup = "processed-resource-from-acrovoid",
     enabled = false,
+    allow_productivity = true,
     energy_required = 20,
     allowed_effects = {
       "consumption",
@@ -13075,6 +13767,7 @@ data:extend({
     category = "acroproduct-conversion-with-acrovoid",
     subgroup = "processed-resource-from-acrovoid",
     enabled = false,
+    allow_productivity = true,
     energy_required = 6,
     allowed_effects = {
       "consumption",
@@ -13104,6 +13797,7 @@ data:extend({
     category = "acroproduct-conversion-with-acrovoid",
     subgroup = "processed-resource-from-acrovoid",
     enabled = false,
+    allow_productivity = true,
     energy_required = 20,
     allowed_effects = {
       "consumption",
@@ -13133,6 +13827,7 @@ data:extend({
     category = "acroproduct-conversion-with-acrovoid",
     subgroup = "processed-resource-from-acrovoid",
     enabled = false,
+    allow_productivity = true,
     energy_required = 22,
     allowed_effects = {
       "consumption",
@@ -13162,6 +13857,7 @@ data:extend({
     category = "acroproduct-conversion-with-acrovoid",
     subgroup = "processed-resource-from-acrovoid",
     enabled = false,
+    allow_productivity = true,
     energy_required = 18,
     allowed_effects = {
       "consumption",
@@ -13191,6 +13887,7 @@ data:extend({
     category = "acroproduct-conversion-with-acrovoid",
     subgroup = "processed-resource-from-acrovoid",
     enabled = false,
+    allow_productivity = true,
     energy_required = 16,
     allowed_effects = {
       "consumption",
@@ -13220,6 +13917,7 @@ data:extend({
     category = "acroproduct-conversion-with-acrovoid",
     subgroup = "processed-resource-from-acrovoid",
     enabled = false,
+    allow_productivity = true,
     energy_required = 8,
     allowed_effects = {
       "consumption",
@@ -13249,6 +13947,7 @@ data:extend({
     category = "acroproduct-conversion-with-acrovoid",
     subgroup = "processed-resource-from-acrovoid",
     enabled = false,
+    allow_productivity = true,
     energy_required = 15,
     allowed_effects = {
       "consumption",
@@ -13279,6 +13978,7 @@ data:extend({
     category = "acroproduct-conversion-with-acrovoid",
     subgroup = "processed-resource-from-acrovoid",
     enabled = false,
+    allow_productivity = true,
     energy_required = 8,
     allowed_effects = {
       "consumption",
@@ -13310,6 +14010,7 @@ data:extend({
     category = "acroproduct-conversion-with-acrovoid",
     subgroup = "processed-resource-from-acrovoid",
     enabled = false,
+    allow_productivity = true,
     energy_required = 30,
     allowed_effects = {
       "consumption",
@@ -13342,6 +14043,7 @@ data:extend({
     category = "acroproduct-conversion-with-acrovoid",
     subgroup = "processed-resource-from-acrovoid",
     enabled = false,
+    allow_productivity = true,
     energy_required = 12,
     allowed_effects = {
       "consumption",
@@ -13371,6 +14073,7 @@ data:extend({
     category = "acroproduct-conversion-with-acrovoid",
     subgroup = "processed-resource-from-acrovoid",
     enabled = false,
+    allow_productivity = true,
     energy_required = 24,
     allowed_effects = {
       "consumption",
@@ -13400,6 +14103,7 @@ data:extend({
     category = "acroproduct-conversion-with-acrovoid",
     subgroup = "processed-resource-from-acrovoid",
     enabled = false,
+    allow_productivity = true,
     energy_required = 7,
     allowed_effects = {
       "consumption",
@@ -13431,6 +14135,7 @@ data:extend({
     category = "acroproduct-conversion-with-acrovoid",
     subgroup = "processed-resource-from-acrovoid",
     enabled = false,
+    allow_productivity = true,
     energy_required = 25,
     allowed_effects = {
       "consumption",
@@ -13461,6 +14166,7 @@ data:extend({
     category = "acroproduct-conversion-with-acrovoid",
     subgroup = "processed-resource-from-acrovoid",
     enabled = false,
+    allow_productivity = true,
     energy_required = 18,
     allowed_effects = {
       "consumption",
@@ -13490,6 +14196,7 @@ data:extend({
     category = "acroproduct-conversion-with-acrovoid",
     subgroup = "processed-resource-from-acrovoid",
     enabled = false,
+    allow_productivity = true,
     energy_required = 15,
     allowed_effects = {
       "consumption",
@@ -13519,6 +14226,7 @@ data:extend({
     category = "acroproduct-conversion-with-acrovoid",
     subgroup = "processed-resource-from-acrovoid",
     enabled = false,
+    allow_productivity = true,
     energy_required = 10,
     allowed_effects = {
       "consumption",
@@ -13548,6 +14256,7 @@ data:extend({
     category = "acroproduct-conversion-with-acrovoid",
     subgroup = "processed-resource-from-acrovoid",
     enabled = false,
+    allow_productivity = true,
     energy_required = 12,
     allowed_effects = {
       "consumption",
@@ -13578,6 +14287,7 @@ data:extend({
     category = "acroproduct-conversion-with-acrovoid",
     subgroup = "processed-resource-from-acrovoid",
     enabled = false,
+    allow_productivity = true,
     energy_required = 5,
     allowed_effects = {
       "consumption",
@@ -13607,6 +14317,7 @@ data:extend({
     category = "acroproduct-conversion-with-acrovoid",
     subgroup = "processed-resource-from-acrovoid",
     enabled = false,
+    allow_productivity = true,
     energy_required = 8,
     allowed_effects = {
       "consumption",
@@ -13642,6 +14353,7 @@ data:extend({
     category = "acroproduct-conversion-with-acromatter",
     subgroup = "raw-resource-from-acromatter",
     enabled = false,
+    allow_productivity = true,
     energy_required = 9,
     allowed_effects = {
       "consumption",
@@ -13671,6 +14383,7 @@ data:extend({
     category = "acroproduct-conversion-with-acromatter",
     subgroup = "raw-resource-from-acromatter",
     enabled = false,
+    allow_productivity = true,
     energy_required = 8,
     allowed_effects = {
       "consumption",
@@ -13705,6 +14418,7 @@ data:extend({
     },
     allow_decomposition = false,
     enabled = false,
+    allow_productivity = true,
     energy_required = 10,
     ingredients = {
       {type = "item", name = "sp-enriched-titanium", amount = 10},
@@ -13727,6 +14441,7 @@ data:extend({
     category = "acroproduct-conversion-with-acromatter",
     subgroup = "raw-resource-from-acromatter",
     enabled = false,
+    allow_productivity = true,
     energy_required = 8,
     allowed_effects = {
       "consumption",
@@ -13756,6 +14471,7 @@ data:extend({
     category = "acroproduct-conversion-with-acromatter",
     subgroup = "raw-resource-from-acromatter",
     enabled = false,
+    allow_productivity = true,
     energy_required = 12,
     allowed_effects = {
       "consumption",
@@ -13786,6 +14502,7 @@ data:extend({
     category = "acroproduct-conversion-with-acromatter",
     subgroup = "raw-resource-from-acromatter",
     enabled = false,
+    allow_productivity = true,
     energy_required = 6,
     allowed_effects = {
       "consumption",
@@ -13816,6 +14533,7 @@ data:extend({
     category = "acroproduct-conversion-with-acromatter",
     subgroup = "raw-resource-from-acromatter",
     enabled = false,
+    allow_productivity = true,
     energy_required = 12,
     allowed_effects = {
       "consumption",
@@ -13843,6 +14561,7 @@ data:extend({
     category = "acroproduct-conversion-with-acromatter",
     subgroup = "raw-resource-from-acromatter",
     enabled = false,
+    allow_productivity = true,
     energy_required = 7,
     allowed_effects = {
       "consumption",
@@ -13871,6 +14590,7 @@ data:extend({
     category = "acroproduct-conversion-with-acromatter",
     subgroup = "raw-resource-from-acromatter",
     enabled = false,
+    allow_productivity = true,
     energy_required = 8,
     allowed_effects = {
       "consumption",
@@ -13900,6 +14620,7 @@ data:extend({
     category = "acroproduct-conversion-with-acromatter",
     subgroup = "raw-resource-from-acromatter",
     enabled = false,
+    allow_productivity = true,
     energy_required = 8,
     allowed_effects = {
       "consumption",
@@ -13931,6 +14652,7 @@ data:extend({
     category = "acroproduct-conversion-with-acromatter",
     subgroup = "raw-resource-from-acromatter",
     enabled = false,
+    allow_productivity = true,
     energy_required = 15,
     allowed_effects = {
       "consumption",
@@ -13964,6 +14686,7 @@ data:extend({
     name = "sp-uniformity-science-pack",  -- #ForRegEx# - recipe
     category = "sp-kr-matter-items",
     enabled = false,
+    allow_productivity = true,
     energy_required = 192,
     ingredients =
     {
@@ -13990,6 +14713,7 @@ data:extend({
                                               "__base__/graphics/icons/iron-ore.png", 64),
     energy_required = 0.5,
     enabled = false,
+    allow_productivity = true,
     category = "crafting",
     hide_from_player_crafting = true,
     ingredients =
@@ -14008,6 +14732,7 @@ data:extend({
                                          "__Spaghetorio__/graphics/icons/cement.png", 64),
     energy_required = 1,
     enabled = false,
+    allow_productivity = true,
     category = "crafting",
     hide_from_player_crafting = true,
     ingredients =
@@ -14026,6 +14751,7 @@ data:extend({
                                          "__Spaghetorio__/graphics/icons/aluminum-cable.png", 64),
     category = "crafting-with-fluid",
     enabled = false,
+    allow_productivity = true,
     energy_required = 1,
     hide_from_player_crafting = true,
     ingredients = {
@@ -14043,6 +14769,7 @@ data:extend({
                                          "__Spaghetorio__/graphics/icons/lead-slab.png", 64),
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 1,
     hide_from_player_crafting = true,
     ingredients = {
@@ -14060,6 +14787,7 @@ data:extend({
                                          "__Spaghetorio__/graphics/icons/lead-slab.png", 64),
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 4,
     hide_from_player_crafting = true,
     ingredients = {
@@ -14083,6 +14811,7 @@ data:extend({
     name = "sp-sodium-carbonate",  -- #ForRegEx# - recipe
     category = "smelting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 4,
     ingredients = {
       {type = "item", name = "sp-sodium", amount = 2},
@@ -14097,6 +14826,7 @@ data:extend({
     name = "sp-zirconia",  -- #ForRegEx# - recipe
     category = "smelting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 3.2,
     ingredients = {
       {type = "item", name = "sp-zirconium-ore", amount = 1},
@@ -14111,6 +14841,7 @@ data:extend({
     name = "sp-aqueous-niobium",  -- #ForRegEx# - recipe
     category = "chemistry",
     enabled = false,
+    allow_productivity = true,
     energy_required = 2,
     ingredients = {
       {type = "item", name = "sp-niobium-powder", amount = 2},
@@ -14130,6 +14861,7 @@ data:extend({
     category = "chemistry",
     subgroup = "aqueous-fluid",
     enabled = false,
+    allow_productivity = true,
     energy_required = 4,
     ingredients = {
       {type = "item", name = "sp-sand", amount = 8},
@@ -14156,6 +14888,7 @@ data:extend({
                                               "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/sand/sand.png", 64),
     energy_required = 1,
     enabled = false,
+    allow_productivity = true,
     category = "crafting",
     ingredients =
     {
@@ -14174,6 +14907,7 @@ data:extend({
     category = "intermediate-smelting",
     energy_required = 2,
     enabled = false,
+    allow_productivity = true,
     hide_from_player_crafting = true,
     ingredients =
     {
@@ -14188,6 +14922,7 @@ data:extend({
     name = "sp-mirror",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 2.8,
     ingredients = {
       {type = "item", name = "sp-glass", amount = 2},
@@ -14203,6 +14938,7 @@ data:extend({
     name = "sp-kevlar",  -- #ForRegEx# - recipe
     category = "crafting-with-fluid",
     enabled = false,
+    allow_productivity = true,
     energy_required = 4.8,
     ingredients = {
       {type = "item", name = "carbon-fiber", amount = 3},
@@ -14217,6 +14953,7 @@ data:extend({
     name = "sp-uranium-fuel-rod",  -- #ForRegEx# - recipe
     category = "crafting-with-fluid",
     enabled = false,
+    allow_productivity = true,
     energy_required = 4,
     ingredients = {
       {type = "item", name = "uranium-235", amount = 2},
@@ -14232,6 +14969,7 @@ data:extend({
     name = "sp-epoxy",  -- #ForRegEx# - recipe
     category = "chemistry",
     enabled = false,
+    allow_productivity = true,
     energy_required = 10,
     ingredients = {
       {type = "item", name = "carbon", amount = 3},
@@ -14254,6 +14992,7 @@ data:extend({
     name = "sp-cubit",  -- #ForRegEx# - recipe
     category = "crafting-with-fluid",
     enabled = false,
+    allow_productivity = true,
     energy_required = 0.8,
     ingredients = {
       {type = "item", name = "sp-monocrystal", amount = 1},
@@ -14275,6 +15014,7 @@ data:extend({
     category = "sp-kr-electrolysis",
     subgroup = "processed-metal",
     enabled = false,
+    allow_productivity = true,
     energy_required = 2,
     ingredients = {
       {type = "item", name = "sp-salt", amount = 2},
@@ -14295,6 +15035,7 @@ data:extend({
     name = "sp-bleach",  -- #ForRegEx# - recipe
     category = "chemistry",
     enabled = false,
+    allow_productivity = true,
     energy_required = 4,
     ingredients = {
       {type = "fluid", name = "sp-oxygen", amount = 100},
@@ -14316,6 +15057,7 @@ data:extend({
     name = "sp-diode",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 2,
     ingredients = {
       {type = "item", name = "sp-silicon", amount = 1},
@@ -14332,6 +15074,7 @@ data:extend({
     name = "sp-light-emitting-diode",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
+    allow_productivity = true,
     energy_required = 2.8,
     ingredients = {
       {type = "item", name = "copper-cable", amount = 1},
@@ -14348,6 +15091,7 @@ data:extend({
     name = "sp-laser",  -- #ForRegEx# - recipe
     category = "crafting-with-fluid",
     enabled = false,
+    allow_productivity = true,
     energy_required = 4,
     ingredients = {
       {type = "item", name = "plastic-bar", amount = 1},
@@ -14370,6 +15114,7 @@ data:extend({
     category = "atom-breeding",
     subgroup = "radioactive-resource",
     enabled = false,
+    allow_productivity = true,
     energy_required = 3.2,
     ingredients = {
       {type = "item", name = "lithium", amount = 1},
@@ -14391,6 +15136,7 @@ data:extend({
     category = "atom-breeding",
     subgroup = "radioactive-resource",
     enabled = false,
+    allow_productivity = true,
     energy_required = 4,
     ingredients = {
       {type = "item", name = "lithium", amount = 1},
@@ -14413,6 +15159,7 @@ data:extend({
     category = "chemistry",
     subgroup = "radioactive-resource",
     enabled = false,
+    allow_productivity = true,
     energy_required = 60,
     ingredients = {
       {type = "item", name = "sp-used-up-fuel-rod", amount = 5},
@@ -14442,6 +15189,7 @@ data:extend({
     category = "chemistry",
     subgroup = "radioactive-resource",
     enabled = false,
+    allow_productivity = true,
     energy_required = 80,
     hide_from_player_crafting = true,
     ingredients = {
@@ -14473,6 +15221,7 @@ data:extend({
     category = "chemistry",
     subgroup = "raw-material",
     enabled = false,
+    allow_productivity = true,
     energy_required = 4,
     ingredients = {
       {type = "item", name = "sp-magnesium-chloride", amount = 2}
@@ -14494,6 +15243,7 @@ data:extend({
     name = "sp-urea",  -- #ForRegEx# - recipe
     category = "chemistry",
     enabled = false,
+    allow_productivity = true,
     energy_required = 3.2,
     ingredients = {
       {type = "item", name = "sulfur", amount = 1},
@@ -14514,6 +15264,7 @@ data:extend({
     name = "sp-ethylene-dichloride",  -- #ForRegEx# - recipe
     category = "chemistry",
     enabled = false,
+    allow_productivity = true,
     energy_required = 12,
     ingredients = {
       -- {type = "item", name = "sp-catalyst", amount = 1},
@@ -14540,6 +15291,7 @@ data:extend({
     scale = 0.25,
     category = "chemistry",
     enabled = false,
+    allow_productivity = true,
     energy_required = 30,
     hide_from_player_crafting = true,
     ingredients = {
@@ -14562,6 +15314,7 @@ data:extend({
     name = "sp-sodium-hydroxide",  -- #ForRegEx# - recipe
     category = "chemistry",
     enabled = false,
+    allow_productivity = true,
     energy_required = 60,
     ingredients = {
       {type = "item", name = "sp-sodium", amount = 5},
@@ -14583,6 +15336,7 @@ data:extend({
     name = "sp-vinyl-chloride",  -- #ForRegEx# - recipe
     category = "chemistry",
     enabled = false,
+    allow_productivity = true,
     energy_required = 4,
     ingredients = {
       {type = "fluid", name = "sp-styrene", amount = 20},
@@ -14607,6 +15361,7 @@ data:extend({
     category = "chemistry",
     subgroup = "processed-resource",
     enabled = false,
+    allow_productivity = true,
     energy_required = 3,
     ingredients = {
       {type = "item", name = "stone", amount = 1},
@@ -14632,6 +15387,7 @@ data:extend({
     category = "chemistry",
     subgroup = "gas",
     enabled = false,
+    allow_productivity = true,
     energy_required = 40,
     ingredients = {
       {type = "fluid", name = "sp-helium", amount = 10},
@@ -14654,6 +15410,7 @@ data:extend({
     name = "sp-gravitonium",  -- #ForRegEx# - recipe
     category = "crafting-with-fluid",
     enabled = false,
+    allow_productivity = true,
     energy_required = 20,
     ingredients = {
       {type = "item", name = "sp-yemnuth-pearls", amount = 5},
@@ -14680,6 +15437,7 @@ data:extend({
     category = "crushing",
     subgroup = "processed-metal",
     enabled = false,
+    allow_productivity = true,
     energy_required = 1,
     ingredients = {
       {type = "fluid", name = "sp-mineral-water", amount = 5},
@@ -14706,6 +15464,7 @@ data:extend({
     category = "chemistry",
     subgroup = "processed-metal",
     enabled = false,
+    allow_productivity = true,
     energy_required = 4,
     ingredients = {
       {type = "fluid", name = "sp-sodium-hydroxide", amount = 15},
@@ -14723,6 +15482,7 @@ data:extend({
     name = "sp-imersite-crystal",  -- #ForRegEx# - recipe
     category = "chemistry",
     enabled = false,
+    allow_productivity = true,
     energy_required = 20,
     ingredients = {
       {type = "item", name = "sp-imersite-powder", amount = 6},
@@ -14738,6 +15498,7 @@ data:extend({
     name = "sp-biomass",  -- #ForRegEx# - recipe
     category = "sp-kr-bioprocessing",
     enabled = false,
+    allow_productivity = true,
     energy_required = 20,
     ingredients = {
       {type = "item", name = "jelly", amount = 5},
