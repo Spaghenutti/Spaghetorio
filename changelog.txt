@@ -7,6 +7,9 @@ Date: 2025-04-07
   Changes:
     - removed ammonium-hydroxide-solution. It's kinda the same thing as ammoniacal solution ¯\_(ツ)_/¯
     - crushing tinstone will yield more leadstone. leadstone yields more lead slabs.
+  Bugfixes:
+    - Productivity modules can now be used with most recipes
+    - Propane products are unlocked now after chemical stager. This solves some technology tree cycles.
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.3
 Date: 2025-03-28

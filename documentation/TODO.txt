@@ -4,6 +4,7 @@ TODO for 0.3.2
   + fix locale for core rift
 
 TODO for 0.3.4
+  - Add filter to many recipes
   - Add inserter being able to put item in any side of belt
   - Remove "sp-recipes-without-technology"
   - Uses for tellurium
@@ -85,10 +86,12 @@ TODO for 0.3.4
         - silicon
         - Si3N4 silicon nitride
         - silicon dioxide
-        - photodiode made with Mercury Cadmium Telluride (HgCdTe)
+        - photodiode made with mercury-cadmium-telluride (HgCdTe)
     - infrared sensor:
       - photodiode made with germanium
-      - infrared LED with Aluminum Gallium Arsenide (AlGaAs)
+        - glass
+        - copper
+      - infrared LED with aluminum-gallium-arsenide (AlGaAs)
       - optical filter zink selenide ZnSe and Sapphire Al2O3
   - Update military science 2 branch of tech tree
   - Updated biological branch tier 1 and 2 of tech tree 
