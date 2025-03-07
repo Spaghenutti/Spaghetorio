@@ -1,6 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.3.5
+Date: 2025-03-14
+  Features:
+    - Updated recipe chains for sensors
+---------------------------------------------------------------------------------------------------
 Version: 0.3.4
-Date: 2025-04-07
+Date: 2025-03-07
   Features:
     - Added new lumber mill sound thanks to Cyfagy
     - Added hafnium and rheniun recipe chains

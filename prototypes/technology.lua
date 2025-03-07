@@ -1978,11 +1978,16 @@ data:extend({
       },
       {
         type = "unlock-recipe",
+        recipe = "sp-zinc-selenide"
+      },
+      {
+        type = "unlock-recipe",
         recipe = "sp-glass-from-calcite",
       },
     },
     prerequisites = {
       "sp-sodium-processing",
+      "sp-selenium-processing",
       "sp-niobium-and-tantalum",
       "sp-electronic-science-pack-2",
     },
@@ -2553,6 +2558,10 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "sp-diamond"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-sapphire"
       },
     },
     prerequisites = {
@@ -5135,7 +5144,7 @@ data:extend({
     type = "technology",
     name = "sp-optical-sensor",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghetorio__/graphics/hr-icons/cmos.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/optical-sensor.png",
     effects =
     {
       {
@@ -5146,9 +5155,26 @@ data:extend({
         type = "unlock-recipe",
         recipe = "sp-optical-sensor"
       },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-photodiode"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-infrared-light-emitting-diode"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-aluminum-gallium-arsenide"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-mercury-cadmium-telluride"
+      },
     },
     prerequisites = {
       "sp-optics",
+      "sp-diamond",
       "sp-computer-science-pack-2"
     },
     unit =

@@ -4556,6 +4556,37 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "sp-zinc-selenide",  -- #ForRegEx# - recipe
+    category = "crystallizing",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 20,
+    ingredients = {
+      {type = "item", name = "sp-zinc-plate", amount = 1},
+      -- {type = "item", name = "sp-selenium", amount = 2},
+    },
+    results = {
+      {type = "item", name = "sp-zinc-selenide", amount = 3}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-aluminum-gallium-arsenide",  -- #ForRegEx# - recipe
+    category = "crystallizing",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 8,
+    ingredients = {
+      {type = "item", name = "sp-aluminum-sheet", amount = 1},
+      {type = "item", name = "sp-gallium", amount = 2},
+      {type = "item", name = "sp-arsen-pillet", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-aluminum-gallium-arsenide", amount = 2}
+    }
+  },
+  {
+    type = "recipe",
     name = "sp-monocrystal",  -- #ForRegEx# - recipe
     category = "crystallizing",
     enabled = false,
@@ -4791,6 +4822,22 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-infrared-filter", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-mercury-cadmium-telluride",  -- #ForRegEx# - recipe
+    category = "crystallizing-with-fluid",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 3,
+    ingredients = {
+      {type = "fluid", name = "sp-mercury", amount = 2},
+      {type = "item", name = "sp-cadmium", amount = 1},
+      {type = "item", name = "sp-tellurium", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-mercury-cadmium-telluride", amount = 1}
     }
   },
   ------------------------------------------------------------------------------
@@ -5404,6 +5451,40 @@ data:extend({
       {type = "item", name = "sp-titanium-carbide", amount = 2}
     }
   },
+  {
+    type = "recipe",
+    name = "sp-diamond",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/icons/diamond.png",
+    category = "induction-hardening",
+    subgroup = "ceramic",
+    enabled = false,
+    allow_productivity = false,
+    energy_required = 8,
+    ingredients = {
+      {type = "item", name = "carbon", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-diamond", probability = 0.05, amount = 1},
+      {type = "item", name = "sp-alumina", probability = 0.95, amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-sapphire",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/icons/sapphire.png",
+    category = "induction-hardening",
+    subgroup = "ceramic",
+    enabled = false,
+    allow_productivity = false,
+    energy_required = 6,
+    ingredients = {
+      {type = "item", name = "sp-alumina", amount = 2}
+    },
+    results = {
+      {type = "item", name = "sp-sapphire", probability = 0.1, amount = 1},
+      {type = "item", name = "sp-alumina", probability = 0.9, amount = 1}
+    }
+  },
   ------------------------------------------------------------------------------
   -- MARK: sp-kr-fluid-filtration
   ------------------------------------------------------------------------------
@@ -5431,7 +5512,6 @@ data:extend({
   {
     type = "recipe",
     name = "sp-quartz",  -- #ForRegEx# - recipe
-    -- icon = "__Spaghetorio__/graphics/icons/quartz.png",
     icon_size = 64,
     scale = 0.25,
     category = "sp-kr-fluid-filtration",
@@ -7014,20 +7094,6 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-diamond",  -- #ForRegEx# - recipe
-    category = "crafting",
-    enabled = false,
-    allow_productivity = true,
-    energy_required = 8,
-    ingredients = {
-      {type = "item", name = "carbon", amount = 12}
-    },
-    results = {
-      {type = "item", name = "sp-diamond", amount = 1}
-    }
-  },
-  {
-    type = "recipe",
     name = "sp-ceramics",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
@@ -7510,14 +7576,31 @@ data:extend({
     allow_productivity = true,
     energy_required = 4,
     ingredients = {
-      {type = "item", name = "plastic-bar", amount = 2},
-      {type = "item", name = "sp-lens", amount = 5},
+      {type = "item", name = "plastic-bar", amount = 1},
+      {type = "item", name = "advanced-circuit", amount = 1},
+      {type = "item", name = "sp-lens", amount = 3},
       {type = "item", name = "sp-cmos", amount = 1},
-      {type = "item", name = "sp-mirror", amount = 2},
+      {type = "item", name = "sp-mirror", amount = 1},
       {type = "item", name = "sp-infrared-filter", amount = 1},
     },
     results = {
       {type = "item", name = "sp-optical-sensor", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-infrared-sensor",  -- #ForRegEx# - recipe
+    category = "crafting",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 4,
+    ingredients = {
+      {type = "item", name = "plastic-bar", amount = 2},
+      {type = "item", name = "sp-lens", amount = 5},
+      {type = "item", name = "sp-infrared-filter", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-infrared-sensor", amount = 1}
     }
   },
   {
@@ -15075,15 +15158,52 @@ data:extend({
     category = "crafting",
     enabled = false,
     allow_productivity = true,
-    energy_required = 2.8,
+    energy_required = 5,
     ingredients = {
-      {type = "item", name = "copper-cable", amount = 1},
+      {type = "item", name = "copper-cable", amount = 2},
+      {type = "item", name = "sp-glass", amount = 1},
       {type = "item", name = "sp-silicon", amount = 2},
       {type = "item", name = "sp-phosphorus", amount = 1},
-      {type = "item", name = "sp-lanthanum", amount = 1}
+      {type = "item", name = "sp-gallium-nitride", amount = 2}
     },
     results = {
-      {type = "item", name = "sp-light-emitting-diode", amount = 3}
+      {type = "item", name = "sp-light-emitting-diode", amount = 6}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-infrared-light-emitting-diode",  -- #ForRegEx# - recipe
+    category = "crafting",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 6,
+    ingredients = {
+      {type = "item", name = "copper-cable", amount = 2},
+      {type = "item", name = "sp-glass", amount = 1},
+      {type = "item", name = "sp-silicon", amount = 3},
+      {type = "item", name = "sp-aluminum-gallium-arsenide", amount = 2},
+      {type = "item", name = "sp-sapphire", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-light-emitting-diode", amount = 8}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-photodiode",  -- #ForRegEx# - recipe
+    category = "crafting",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 4,
+    ingredients = {
+      {type = "item", name = "copper-cable", amount = 2},
+      {type = "item", name = "sp-aluminum-sheet", amount = 1},
+      {type = "item", name = "sp-polyvinyl-fluoride", amount = 1},
+      {type = "item", name = "sp-silicon", amount = 2},
+      {type = "item", name = "sp-mercury-cadmium-telluride", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-light-emitting-diode", amount = 4}
     }
   },
   {

@@ -1362,6 +1362,16 @@ data:extend({
   },
   {
     type = "item",
+    name = "sp-germanium",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/germanium.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "processed-non-metal",
+    order = "[germanium]",
+    stack_size = 100
+  },
+  {
+    type = "item",
     name = "sp-iodine",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/iodine.png",
     icon_size = 64,
@@ -2292,12 +2302,52 @@ data:extend({
   },
   {
     type = "item",
+    name = "sp-cadmium-telluride",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/cadmium-telluride.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "advanced-raw-material",
+    order = "crystal-[cadmium-telluride]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "sp-copper-indium-gallium-selenide",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/copper-indium-gallium-selenium.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "advanced-raw-material",
+    order = "crystal-[copper-indium-gallium-selenium]",
+    stack_size = 50
+  },
+  {
+    type = "item",
     name = "sp-bismuth-telluride",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/bismuth-telluride.png",
     icon_size = 64,
     scale = 0.5,
     subgroup = "advanced-raw-material",
     order = "[bismuth-telluride]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "sp-aluminum-gallium-arsenide",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/aluminum-gallium-arsenide.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "advanced-raw-material",
+    order = "[aluminum-gallium-arsenide]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "sp-mercury-cadmium-telluride",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/mercury-cadmium-telluride.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "advanced-raw-material",
+    order = "[mercury-cadmium-telluride]",
     stack_size = 50
   },
   ------------------------------------------------------------------------------
@@ -3248,6 +3298,26 @@ data:extend({
   },
   {
     type = "item",
+    name = "sp-infrared-light-emitting-diode",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/light-emitting-diode.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "electronic-optical-component",
+    order = "basic-[light-emitting-diode]",
+    stack_size = 200
+  },
+  {
+    type = "item",
+    name = "sp-photodiode",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/photodiode.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "electronic-optical-component",
+    order = "basic-[photodiode]",
+    stack_size = 200
+  },
+  {
+    type = "item",
     name = "sp-coil",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/coil.png",
     icon_size = 64,
@@ -3419,11 +3489,21 @@ data:extend({
   {
     type = "item",
     name = "sp-optical-sensor",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/icons/sensor.png",
+    icon = "__Spaghetorio__/graphics/icons/optical-sensor.png",
     icon_size = 64,
     scale = 0.5,
     subgroup = "electronic-optical-component",
-    order = "optics-z[sensor]",
+    order = "optics-z[optical-sensor]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "sp-infrared-sensor",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/infrared-sensor.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "electronic-optical-component",
+    order = "optics-z[infrared-sensor]",
     stack_size = 50
   },
   {
@@ -4171,32 +4251,32 @@ data:extend({
   },
   {
     type = "item",
+    name = "sp-sapphire",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/sapphire.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "ceramic",
+    order = "crystal-[sapphire]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "sp-zinc-selenide",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/zinc-selenide.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "ceramic",
+    order = "crystal-[zinc-selenide]",
+    stack_size = 50
+  },
+  {
+    type = "item",
     name = "sp-gallium-nitride",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/gallium-nitride.png",
     icon_size = 64,
     scale = 0.5,
     subgroup = "ceramic",
     order = "crystal-[gallium-nitride]",
-    stack_size = 50
-  },
-  {
-    type = "item",
-    name = "sp-cadmium-telluride",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/icons/cadmium-telluride.png",
-    icon_size = 64,
-    scale = 0.5,
-    subgroup = "ceramic",
-    order = "crystal-[cadmium-telluride]",
-    stack_size = 50
-  },
-  {
-    type = "item",
-    name = "sp-copper-indium-gallium-selenide",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/icons/copper-indium-gallium-selenium.png",
-    icon_size = 64,
-    scale = 0.5,
-    subgroup = "ceramic",
-    order = "crystal-[copper-indium-gallium-selenium]",
     stack_size = 50
   },
   {

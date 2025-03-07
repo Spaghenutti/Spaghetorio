@@ -1015,6 +1015,19 @@ data:extend({
     subgroup = "chemical",
     order = "a[fluid]-f[iodethene]"
   },
+  {
+    type = "fluid",
+    name = "sp-germanium-tetrachloride",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    base_color = {r=0.0, g=0.0, b=0.55},
+    flow_color = {r=0.0, g=0.0, b=0.55},
+    icon = "__Spaghetorio__/graphics/icons/germanium-tetrachloride.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "chemical",
+    order = "a[fluid]-f[germanium-tetrachloride]"
+  },
   ------------------------------------------------------------------------------
   -- MARK: alien
   ------------------------------------------------------------------------------

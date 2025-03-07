@@ -88,17 +88,17 @@ TODO for 0.3.4
         - silicon dioxide
         - photodiode made with mercury-cadmium-telluride (HgCdTe)
     - infrared sensor:
-      - photodiode made with germanium
-        - glass
-        - copper
-      - infrared LED with aluminum-gallium-arsenide (AlGaAs)
-      - optical filter zink selenide ZnSe and Sapphire Al2O3
+      + photodiode made with germanium
+        + glass
+        + copper
+      + infrared LED with aluminum-gallium-arsenide (AlGaAs)
+      + optical filter zink selenide ZnSe and Sapphire Al2O3
   - Update military science 2 branch of tech tree
   - Updated biological branch tier 1 and 2 of tech tree 
   - Support text plates mod
   - Support LTN mod
 
-TODO for 0.3.5
+TODO for 0.3.6
   - Update computer science 2 branch of tech tree
   - Update cryogenic science 2 branch of tech tree
   - Update utility science 2 branch of tech tree
@@ -108,11 +108,11 @@ TODO for 0.3.5
   - Fix / add casting recipes
   - Fix productivity tehnologies (see steel plate productivity)
 
-TODO for 0.3.6
+TODO for 0.3.7
   - Update space science 2 branch of tech tree
   - Add back blunagium, grobgnum, rukite and yemnuth rockets (even though they are unlocked later)
 
-TODO for 0.3.7
+TODO for 0.3.8
   - Add matter conversion recipes
   - Create funictions to automate generation of acro conversion recipes
 
