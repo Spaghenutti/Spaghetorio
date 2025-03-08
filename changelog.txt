@@ -5,7 +5,7 @@ Date: 2025-03-14
     - Added germanium recipe chain
     - Updated recipe chains for sensors
   Bugfixes:
-    - Potassium hydroxide solution does not require advanced chemical plant to be made
+    - Potassium hydroxide solution does not require advanced chemical plant to be made.
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.4
 Date: 2025-03-07

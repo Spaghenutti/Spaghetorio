@@ -94,6 +94,7 @@ TODO for 0.3.4
       + infrared LED with aluminum-gallium-arsenide (AlGaAs)
       + optical filter zink selenide ZnSe and Sapphire Al2O3
   - Update military science 2 branch of tech tree
+  - Unlock freezer in biological tree and before cryogenic plant
   - Updated biological branch tier 1 and 2 of tech tree 
   - Support text plates mod
   - Support LTN mod

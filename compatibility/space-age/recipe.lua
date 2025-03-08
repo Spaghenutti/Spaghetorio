@@ -29,8 +29,6 @@ remove_prototypes.remove_one_prototype("recipe", "coal-synthesis")
 -- MARK: Items
 --------------------------------------------------------------------------------
 
-data.raw.recipe["coal-liquefaction"].category = "chemical-staging"
-
 data.raw.recipe["tungsten-carbide"].category = "induction-hardening"
 util.recipe.change_recipe_ingredients("tungsten-carbide",
   {

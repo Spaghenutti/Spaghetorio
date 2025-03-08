@@ -372,6 +372,7 @@ data.raw.technology["electromagnetic-science-pack"].unit = {
 }
 
 data.raw.technology["agricultural-science-pack"].icon = "__Spaghetorio__/graphics/hr-icons/biological-science-pack-2.png"
-table.insert(data.raw.technology["lithium-processing"].effects, {type = "unlock-recipe", recipe = "sp-potassium-permanganate-solution"})
+table.insert(data.raw.technology["agricultural-science-pack"].prerequisites, "sp-potassium-processing")
+table.insert(data.raw.technology["agricultural-science-pack"].effects, {type = "unlock-recipe", recipe = "sp-potassium-permanganate-solution"})
 
 data.raw.technology["cryogenic-science-pack"].icon = "__Spaghetorio__/graphics/hr-icons/cryogenic-science-pack-2.png"

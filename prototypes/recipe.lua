@@ -6458,6 +6458,7 @@ data:extend({
     category = "chemistry",
     enabled = false,
     allow_productivity = true,
+    hide_from_player_crafting = true,
     energy_required = 30,
     ingredients = {
       {type = "fluid", name = "sp-liquid-sodium", amount = 35},
