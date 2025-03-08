@@ -1907,7 +1907,7 @@ data:extend({
       }
     },
     prerequisites = {
-      "sp-electronic-science-pack-2",
+      "sp-material-science-pack-3",
     },
     unit =
     {
@@ -1917,7 +1917,7 @@ data:extend({
         {"logistic-science-pack", 1},
         {"sp-chemical-science-pack-2", 1},
         {"sp-electronic-science-pack-2", 1},
-        {"sp-material-science-pack-1", 1},
+        {"sp-material-science-pack-3", 1},
         {"sp-geological-science-pack-2", 1},
         {"metallurgic-science-pack", 1},
         {"electromagnetic-science-pack", 1},
@@ -5189,7 +5189,6 @@ data:extend({
       "sp-optics",
       "sp-diamond",
       "sp-germanium-processing",
-      "sp-computer-science-pack-2"
     },
     unit =
     {
@@ -5685,8 +5684,7 @@ data:extend({
     },
     prerequisites = {
       "utility-science-pack",
-      "processing-unit",
-      "sp-optical-sensor"
+      "processing-unit"
     },
     unit =
     {
@@ -7905,7 +7903,8 @@ data:extend({
     prerequisites = {
       "sp-electrode",
       "sp-titanium-alloys",
-      "sp-heat-resistant-electronics"
+      "sp-heat-resistant-electronics",
+      "sp-electromagnetic-science-pack-2"
     },
     unit = {
       count = 350,
@@ -9511,7 +9510,7 @@ data:extend({
       },
     },
     prerequisites = {
-      "sp-electronic-science-pack-2"
+      "sp-control-unit"
     },
     unit =
     {
@@ -11055,7 +11054,7 @@ data:extend({
       -- },
     },
     prerequisites = {
-      "sp-automation-science-pack-2"
+      "utility-science-pack"
     },
     unit = {
       count = 69420,

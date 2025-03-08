@@ -336,9 +336,7 @@ data.raw.technology["automation-2"].unit.ingredients = {
   {"sp-material-science-pack-1", 1}
 }
 
-table.insert(data.raw.technology["automation-3"].prerequisites, "sp-advanced-gearbox")
-table.insert(data.raw.technology["automation-3"].prerequisites, "sp-optical-sensor")
-table.insert(data.raw.technology["automation-3"].prerequisites, "sp-servo-motor")
+data.raw.technology["automation-3"].prerequisites = {"processing-unit"}
 data.raw.technology["automation-3"].unit.ingredients = {
   {"sp-logistic-science-pack-2", 1},
   {"sp-material-science-pack-2", 1},
@@ -471,7 +469,7 @@ data.raw.technology["advanced-circuit"].unit.ingredients = {
 
 data.raw.technology["processing-unit"].prerequisites = {
   "sp-composites",
-  "sp-computer-science-pack-2"
+  "sp-optical-sensor"
 }
 table.insert(data.raw.technology["processing-unit"].effects, {type = "unlock-recipe", recipe = "sp-empty-circuit-board"})
 table.insert(data.raw.technology["processing-unit"].effects, {type = "unlock-recipe", recipe = "sp-circuit-board"})
@@ -2169,11 +2167,13 @@ data.raw.technology["utility-science-pack"].prerequisites = {
 data.raw.technology["utility-science-pack"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},
   {"sp-logistic-science-pack-2", 1},
-  {"sp-chemical-science-pack-2", 1},
   {"sp-material-science-pack-2", 1},
-  {"production-science-pack", 1},
   {"sp-geological-science-pack-2", 1},
-  {"sp-electronic-science-pack-2", 1}
+  {"sp-electronic-science-pack-2", 1},
+  {"sp-chemical-science-pack-2", 1},
+  {"sp-metallurgic-science-pack-2", 1},
+  {"sp-electromagnetic-science-pack-2", 1},
+  {"production-science-pack", 1}
 }
 
 data.raw.technology["space-science-pack"].icon = "__Spaghetorio__/graphics/krastorio/technologies/matter-tech-card.png"

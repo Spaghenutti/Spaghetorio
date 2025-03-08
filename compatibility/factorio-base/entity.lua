@@ -119,7 +119,7 @@ data.raw.tool["military-science-pack"].subgroup = "basic-science"
 data.raw.tool["chemical-science-pack"].subgroup = "basic-science"
 data.raw.tool["production-science-pack"].subgroup = "intermediate-science"
 data.raw.tool["utility-science-pack"].subgroup = "intermediate-science"
-data.raw.tool["space-science-pack"].subgroup = "advanced-science"
+data.raw.tool["space-science-pack"].subgroup = "intermediate-science"
 
 -- MARK: change stack sizes
 data.raw.item["coal"].stack_size = 200

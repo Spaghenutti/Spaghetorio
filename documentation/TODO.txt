@@ -3,32 +3,10 @@ TODO for 0.3.2
   + Update stack sizes
   + fix locale for core rift
 
-TODO for 0.3.4
+TODO for 0.3.4 - 0.3.6
   - Add filter to many recipes
   - Remove "sp-recipes-without-technology"
-  - Uses for tellurium
-    + Add thermocouple (uses tellurium)
-    + Add peltier cell (bismuth and tellurium) use in thermonuclear generator and cryogenic plant
-    - Add graphite impact shell used for explorers
-    - Add laser diode
-    - Add hard drive
-    - Add phase change memory
-  + Uses for bismuth
-      + refined from tin and lead
-      + sodium carbonate solution + lead = lead ingot + bismuth
-      + ammonium hydroxide solution + crushed tin = tin ingot + bismuth
-		- superconductor
-		- scintillator (gamma ray spectrograph - used in photonic lab)
-		- to make polonium when bombarded with neutron stream
-  - Uses for thallium
-    - Add scintillation detector contains sodium iodine crystal or cesium iodine
-    - Add photomultiplier tube
-    - xray imaging with thallium 201
-    - thallium used in optics
-    - used in rodent poison
-  - Add crystallizer with diamond saw
-  - clean up code for buildings
-  - organize icons in factorio pedia and crafting window
+  + organize icons in factorio pedia and crafting window
   + integrate order.lua in entity.lua
   + Fix foundry recipe chain
     + Add heat resistant electronics to arc furnace and foundry 
@@ -80,43 +58,74 @@ TODO for 0.3.4
         + sodium zirconate + ammoniacal solution -> zirconium-rod
         + sodium hafnate + ammoniacal solution -> hafnium
       + silver-indium-cadmium
-    - Optical sensor:
-      - cmos
-        - silicon
-        - Si3N4 silicon nitride
-        - silicon dioxide
-        - photodiode made with mercury-cadmium-telluride (HgCdTe)
-    - infrared sensor:
+    + Optical sensor:
+      + cmos
+        + silicon
+        + Si3N4 silicon nitride
+        + silicon dioxide
+        + photodiode made with mercury-cadmium-telluride (HgCdTe)
+    + infrared sensor:
       + photodiode made with germanium
         + glass
         + copper
       + infrared LED with aluminum-gallium-arsenide (AlGaAs)
       + optical filter zink selenide ZnSe and Sapphire Al2O3
+
+TODO for 0.3.7
+  - Update mining productivity tech
+  - Add crystallizer with diamond saw
+  - clean up code for buildings
+
+TODO for 0.3.8
   - Update military science 2 branch of tech tree
   - Unlock freezer in biological tree and before cryogenic plant
   - Updated biological branch tier 1 and 2 of tech tree 
-  - Support text plates mod
-  - Support LTN mod
 
-TODO for 0.3.6
+TODO for 0.3.9
   - Add Tetraethylene glycol dimethyl CH₃O-(CH₂CH₂O)₄-CH₃
     - synthesized by reacting tetraethylene glycol with a methylating agent, such as dimethyl sulfate or methyl iodide
   - Update computer science 2 branch of tech tree
+      - Uses for tellurium
+        + Add thermocouple (uses tellurium)
+        + Add peltier cell (bismuth and tellurium) use in thermonuclear generator and cryogenic plant
+        - Add graphite impact shell used for explorers
+        - Add laser diode
+        - Add hard drive
+        - Add phase change memory
   - Update cryogenic science 2 branch of tech tree
   - Update utility science 2 branch of tech tree
   + Add biological / agricultural item group
-  - Update mining productivity tech
+
+TODO for 0.3.10
   - Change lightning collectors to power poles
   - Fix / add casting recipes
   - Fix productivity tehnologies (see steel plate productivity)
 
-TODO for 0.3.7
+TODO for 0.3.11
+  - Add recipe chains for core mining
+  + Uses for bismuth
+    + refined from tin and lead
+    + sodium carbonate solution + lead = lead ingot + bismuth
+    + ammonium hydroxide solution + crushed tin = tin ingot + bismuth
+    - superconductor
+    - scintillator (gamma ray spectrograph - used in photonic lab)
+    - to make polonium when bombarded with neutron stream
+  - Uses for thallium
+    - Add scintillation detector contains sodium iodine crystal or cesium iodine
+    - Add photomultiplier tube
+    - xray imaging with thallium 201
+    - thallium used in optics
+    - used in rodent poison
+
+TODO for 0.3.12
   - Update space science 2 branch of tech tree
   - Add back blunagium, grobgnum, rukite and yemnuth rockets (even though they are unlocked later)
 
-TODO for 0.3.8
+TODO for 0.3.xx
+  - Support text plates mod
+  - Support LTN mod
   - Add matter conversion recipes
-  - Create funictions to automate generation of acro conversion recipes
+  - Create functions to automate generation of acro conversion recipes
 
 --------------------------------------------------------------------------------
 
