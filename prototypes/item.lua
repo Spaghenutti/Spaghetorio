@@ -3299,7 +3299,7 @@ data:extend({
   {
     type = "item",
     name = "sp-infrared-light-emitting-diode",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/icons/light-emitting-diode.png",
+    icon = "__Spaghetorio__/graphics/icons/infrared-light-emitting-diode.png",
     icon_size = 64,
     scale = 0.5,
     subgroup = "electronic-optical-component",

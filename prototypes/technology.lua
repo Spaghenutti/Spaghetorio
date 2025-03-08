@@ -1349,10 +1349,10 @@ data:extend({
     name = "sp-noble-metals",  -- #ForRegEx# - technology
     icon_size = 256,
     icons = util.icon.combine_five_icons("__Spaghetorio__/graphics/hr-icons/silver.png", 256, nil,
-                                    "__Spaghetorio__/graphics/hr-icons/palladium.png", 256, nil,
-                                    "__Spaghetorio__/graphics/hr-icons/gold.png", 256, nil,
-                                    "__Spaghetorio__/graphics/hr-icons/iridium.png", 256, nil,
-                                    "__Spaghetorio__/graphics/hr-icons/platinum.png", 256, nil),
+                                         "__Spaghetorio__/graphics/hr-icons/palladium.png", 256, nil,
+                                         "__Spaghetorio__/graphics/hr-icons/gold.png", 256, nil,
+                                         "__Spaghetorio__/graphics/hr-icons/iridium.png", 256, nil,
+                                         "__Spaghetorio__/graphics/hr-icons/platinum.png", 256, nil),
     effects =
     {
       {
@@ -1378,7 +1378,43 @@ data:extend({
     },
     unit =
     {
-      count = 200,
+      count = 500,
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-electronic-science-pack-1", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"production-science-pack", 1},
+        {"metallurgic-science-pack", 1},
+        {"electromagnetic-science-pack", 1}
+      },
+      time = 30
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-germanium-processing",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghetorio__/graphics/hr-icons/germanium.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-germanium-tetrachloride"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-germanium"
+      },
+    },
+    prerequisites = {
+      "sp-big-crusher"
+    },
+    unit =
+    {
+      count = 100,
       ingredients = {
         {"sp-automation-science-pack-2", 1},
         {"sp-logistic-science-pack-2", 1},
@@ -5149,11 +5185,15 @@ data:extend({
     {
       {
         type = "unlock-recipe",
-        recipe = "sp-cmos"
+        recipe = "sp-optical-sensor"
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-optical-sensor"
+        recipe = "sp-infrared-sensor"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-cmos"
       },
       {
         type = "unlock-recipe",
@@ -5175,19 +5215,24 @@ data:extend({
     prerequisites = {
       "sp-optics",
       "sp-diamond",
+      "sp-germanium-processing",
       "sp-computer-science-pack-2"
     },
     unit =
     {
-      count = 200,
+      count = 250,
       ingredients = {
         {"sp-automation-science-pack-2", 1},
         {"sp-logistic-science-pack-2", 1},
-        {"sp-material-science-pack-2", 1},
         {"sp-electronic-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
         {"sp-chemical-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
         {"sp-computer-science-pack-2", 1},
         {"production-science-pack", 1},
+        {"utility-science-pack", 1},
+        {"metallurgic-science-pack", 1},
+        {"electromagnetic-science-pack", 1}
       },
       time = 30
     },

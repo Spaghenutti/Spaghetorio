@@ -99,6 +99,8 @@ TODO for 0.3.4
   - Support LTN mod
 
 TODO for 0.3.6
+  - Add Tetraethylene glycol dimethyl CH₃O-(CH₂CH₂O)₄-CH₃
+    - synthesized by reacting tetraethylene glycol with a methylating agent, such as dimethyl sulfate or methyl iodide
   - Update computer science 2 branch of tech tree
   - Update cryogenic science 2 branch of tech tree
   - Update utility science 2 branch of tech tree

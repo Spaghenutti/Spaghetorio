@@ -2305,6 +2305,24 @@ data:extend({
       {type = "item", name = "sp-rhenium", amount = 1},
     }
   },
+  {
+    type = "recipe",
+    name = "sp-germanium",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/icons/germanium.png",
+    category = "smelting-with-fluid",
+    subgroup = "processed-non-metal",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 2,
+    ingredients = {
+      {type = "fluid", name = "sp-germanium-tetrachloride", amount = 12},
+      {type = "fluid", name = "sp-hydrogen", amount = 12},
+    },
+    results = {
+      {type = "item", name = "sp-germanium", amount = 1},
+      {type = "fluid", name = "sp-hydrogen-chloride", amount = 1},
+    }
+  },
   ------------------------------------------------------------------------------
   -- MARK: metallurgy
   ------------------------------------------------------------------------------
@@ -2801,6 +2819,21 @@ data:extend({
       {type = "item", name = "sp-crushed-nickel-ore", probability = 0.785, amount = 1},
       {type = "item", name = "sp-crushed-iron-ore", probability = 0.285, amount = 1},
       {type = "item", name = "sp-palladium", probability = 0.03, amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-germanium-tetrachloride",  -- #ForRegEx# - recipe
+    category = "sp-crushing-washing",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 1.2,
+    ingredients = {
+      {type = "item", name = "coal", amount = 1},
+      {type = "fluid", name = "sp-hydrogen-chloride", amount = 12},
+    },
+    results = {
+      {type = "fluid", name = "sp-germanium-tetrachloride", amount = 3}
     }
   },
   ------------------------------------------------------------------------------
@@ -3780,6 +3813,21 @@ data:extend({
       {type = "item", name = "sp-sodium-hafnate", amount = 1},
     },
   },
+  {
+    type = "recipe",
+    name = "sp-potassium-hydroxide-solution",  -- #ForRegEx# - recipe
+    category = "chemistry",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 10,
+    ingredients = {
+      {type = "item", name = "sp-potassium-hydroxide", amount = 5},
+      {type = "fluid", name = "ammonia", amount = 20},
+    },
+    results = {
+      {type = "fluid", name = "sp-potassium-hydroxide-solution", amount = 50}
+    },
+  },
   ------------------------------------------------------------------------------
   -- MARK: advanced-chemistry
   ------------------------------------------------------------------------------
@@ -3879,21 +3927,6 @@ data:extend({
     results = {
       {type = "item", name = "sp-potassium-cyanide", amount = 3}
     }
-  },
-  {
-    type = "recipe",
-    name = "sp-potassium-hydroxide-solution",  -- #ForRegEx# - recipe
-    category = "advanced-chemistry",
-    enabled = false,
-    allow_productivity = true,
-    energy_required = 10,
-    ingredients = {
-      {type = "item", name = "sp-potassium-hydroxide", amount = 5},
-      {type = "fluid", name = "sp-glycerin", amount = 50},
-    },
-    results = {
-      {type = "fluid", name = "sp-potassium-hydroxide-solution", amount = 50}
-    },
   },
   ------------------------------------------------------------------------------
   -- MARK: chemical-staging
@@ -4563,7 +4596,7 @@ data:extend({
     energy_required = 20,
     ingredients = {
       {type = "item", name = "sp-zinc-plate", amount = 1},
-      -- {type = "item", name = "sp-selenium", amount = 2},
+      {type = "item", name = "sp-selenium-pillet", amount = 3},
     },
     results = {
       {type = "item", name = "sp-zinc-selenide", amount = 3}
@@ -7593,14 +7626,16 @@ data:extend({
     category = "crafting",
     enabled = false,
     allow_productivity = true,
-    energy_required = 4,
+    energy_required = 16,
     ingredients = {
-      {type = "item", name = "plastic-bar", amount = 2},
-      {type = "item", name = "sp-lens", amount = 5},
-      {type = "item", name = "sp-infrared-filter", amount = 1},
+      {type = "item", name = "plastic-bar", amount = 8},
+      {type = "item", name = "sp-zinc-selenide", amount = 12},
+      {type = "item", name = "sp-sapphire", amount = 1},
+      {type = "item", name = "sp-photodiode", amount = 4},
+      {type = "item", name = "sp-infrared-light-emitting-diode", amount = 4},
     },
     results = {
-      {type = "item", name = "sp-infrared-sensor", amount = 1}
+      {type = "item", name = "sp-infrared-sensor", amount = 4}
     }
   },
   {
@@ -15185,7 +15220,7 @@ data:extend({
       {type = "item", name = "sp-sapphire", amount = 1}
     },
     results = {
-      {type = "item", name = "sp-light-emitting-diode", amount = 8}
+      {type = "item", name = "sp-infrared-light-emitting-diode", amount = 8}
     }
   },
   {
@@ -15199,11 +15234,11 @@ data:extend({
       {type = "item", name = "copper-cable", amount = 2},
       {type = "item", name = "sp-aluminum-sheet", amount = 1},
       {type = "item", name = "sp-polyvinyl-fluoride", amount = 1},
-      {type = "item", name = "sp-silicon", amount = 2},
+      {type = "item", name = "sp-germanium", amount = 2},
       {type = "item", name = "sp-mercury-cadmium-telluride", amount = 1},
     },
     results = {
-      {type = "item", name = "sp-light-emitting-diode", amount = 4}
+      {type = "item", name = "sp-photodiode", amount = 4}
     }
   },
   {
