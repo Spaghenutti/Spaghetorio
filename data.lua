@@ -101,22 +101,18 @@ require("prototypes.utility-constants")
 -- MARK: Compatibility
 -- EverythingOnNauvis
 require("compatibility.EverythingOnNauvis.entity")
-require("compatibility.EverythingOnNauvis.order")
 require("compatibility.EverythingOnNauvis.resource")
 
 -- factorio-base
 require("compatibility.factorio-base.character")
-require("compatibility.factorio-base.entity")
 require("compatibility.factorio-base.inventory-settings")
 require("compatibility.factorio-base.item")
-require("compatibility.factorio-base.order")
 require("compatibility.factorio-base.recipe")
 require("compatibility.factorio-base.resource")
 require("compatibility.factorio-base.technology")
 
 -- space-age
 require("compatibility.space-age.entity")
-require("compatibility.space-age.order")
 require("compatibility.space-age.recipe")
 require("compatibility.space-age.resource")
 require("compatibility.space-age.technology")

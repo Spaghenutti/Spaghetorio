@@ -5,7 +5,6 @@ TODO for 0.3.2
 
 TODO for 0.3.4
   - Add filter to many recipes
-  - Add inserter being able to put item in any side of belt
   - Remove "sp-recipes-without-technology"
   - Uses for tellurium
     + Add thermocouple (uses tellurium)
@@ -30,7 +29,7 @@ TODO for 0.3.4
   - Add crystallizer with diamond saw
   - clean up code for buildings
   - organize icons in factorio pedia and crafting window
-  - integrate order.lua in entity.lua
+  + integrate order.lua in entity.lua
   + Fix foundry recipe chain
     + Add heat resistant electronics to arc furnace and foundry 
       + Insulated metal substrate (this is made in electromagnetic plant?)

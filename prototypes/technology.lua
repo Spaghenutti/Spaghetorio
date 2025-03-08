@@ -1148,6 +1148,7 @@ data:extend({
         {"sp-material-science-pack-2", 1},
         {"sp-geological-science-pack-2", 1},
         {"sp-metallurgic-science-pack-2", 1},
+        {"production-science-pack", 1},
         {"electromagnetic-science-pack", 1}
       },
       time = 30
@@ -1615,7 +1616,8 @@ data:extend({
       }
     },
     prerequisites = {
-      "sp-metallurgic-science-pack-2"
+      "sp-metallurgic-science-pack-2",
+      "production-science-pack"
     },
     unit =
     {
@@ -1998,6 +2000,10 @@ data:extend({
       },
       {
         type = "unlock-recipe",
+        recipe = "sp-mirror-from-silver"
+      },
+      {
+        type = "unlock-recipe",
         recipe = "sp-optical-glass"
       },
       {
@@ -2116,9 +2122,13 @@ data:extend({
         type = "unlock-recipe",
         recipe = "sp-piezoelectric-sensor",
       },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-silver-solder"
+      },
     },
     prerequisites = {
-      "sp-silver-products",
+      "sp-noble-metals",
       "sp-tellurium-processing"
     },
     unit =
@@ -2246,43 +2256,6 @@ data:extend({
         {"production-science-pack", 1},
         {"utility-science-pack", 1},
         {"sp-computer-science-pack-2", 1}
-      },
-      time = 30
-    },
-  },
-  {
-    type = "technology",
-    name = "sp-silver-products",  -- #ForRegEx# - technology
-    icon_size = 256,
-    icon = "__Spaghetorio__/graphics/hr-icons/silver-solder.png",
-    effects =
-    {
-      {
-        type = "unlock-recipe",
-        recipe = "sp-silver-solder"
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-mirror-from-silver"
-      },
-    },
-    prerequisites = {
-      "sp-noble-metals",
-      "sp-chemical-science-pack-2",
-    },
-    unit =
-    {
-      count = 300,
-      ingredients = {
-        {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"sp-electronic-science-pack-1", 1},
-        {"sp-material-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1},
-        {"sp-geological-science-pack-2", 1},
-        {"production-science-pack", 1},
-        {"metallurgic-science-pack", 1},
-        {"electromagnetic-science-pack", 1}
       },
       time = 30
     },
@@ -8289,6 +8262,10 @@ data:extend({
         type = "unlock-recipe",
         recipe = "sp-oxidizer",
       },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-sulfur-dioxide",
+      }
     },
     prerequisites = {
       "sp-kr-fuel-refinery"
@@ -8672,6 +8649,14 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "sp-incinerate-heavy-oil",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-incinerate-sulfuric-acid",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-incinerate-sulfur",
       }
     },
     prerequisites = {
@@ -9506,7 +9491,7 @@ data:extend({
         {"sp-electronic-science-pack-2", 1},
         {"sp-material-science-pack-2", 1},
         {"sp-geological-science-pack-2", 1},
-        {"metallurgic-science-pack", 1},
+        {"sp-metallurgic-science-pack-2", 1},
         {"electromagnetic-science-pack", 1},
         {"production-science-pack", 1}
       },

@@ -5145,6 +5145,42 @@ data:extend({
       {type = "fluid", name = "sp-carbon-monoxide", amount = 3}
     },
   },
+  {
+    type = "recipe",
+    name = "sp-incinerate-sulfuric-acid",  -- #ForRegEx# - recipe
+    icons = util.icon.create_incineration_recipe_icon(data.raw.fluid["sulfuric-acid"], data.raw.fluid["sp-sulfur-dioxide"]),
+    category = "incinerating",
+    subgroup = "incinerate-fluid",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 2,
+    hide_from_player_crafting = true,
+    ingredients = {
+      {type = "fluid", name = "sulfuric-acid", amount = 15},
+    },
+    results = {
+      {type = "fluid", name = "sp-sulfur-dioxide", amount = 2},
+      {type = "fluid", name = "water", amount = 5}
+    },
+  },
+  {
+    type = "recipe",
+    name = "sp-incinerate-sulfur",  -- #ForRegEx# - recipe
+    icons = util.icon.create_incineration_recipe_icon(data.raw.item["sulfur"], data.raw.fluid["sp-sulfur-dioxide"]),
+    category = "incinerating",
+    subgroup = "incinerate-resource",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 2,
+    hide_from_player_crafting = true,
+    ingredients = {
+      {type = "item", name = "sulfur", amount = 1},
+      {type = "fluid", name = "sp-oxygen", amount = 10},
+    },
+    results = {
+      {type = "fluid", name = "sp-sulfur-dioxide", amount = 1},
+    },
+  },
   ------------------------------------------------------------------------------
   -- MARK: oxidizing
   ------------------------------------------------------------------------------
@@ -5192,6 +5228,21 @@ data:extend({
     results = {
       {type = "fluid", name = "sp-peroxymonosulfuric-acid", amount = 2}
     }
+  },
+  {
+    type = "recipe",
+    name = "sp-sulfur-dioxide",  -- #ForRegEx# - recipe
+    category = "oxidizing",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 10,
+    ingredients = {
+      {type = "item", name = "sulfur", amount = 1},
+      {type = "fluid", name = "sp-oxygen", amount = 5},
+    },
+    results = {
+      {type = "fluid", name = "sp-sulfur-dioxide", amount = 5},
+    },
   },
   ------------------------------------------------------------------------------
   -- MARK: electronics
@@ -6462,11 +6513,9 @@ data:extend({
   {
     type = "recipe",
     name = "sp-indium-ingot",  -- #ForRegEx# - recipe
-    icon = "__Spaghetorio__/graphics/icons/zinc-plate.png",
     icon_size = 64,
     mip_maps = 4,
     category = "sp-kr-electrolysis",
-    subgroup = "raw-material",
     enabled = false,
     allow_productivity = false,
     energy_required = 4,
