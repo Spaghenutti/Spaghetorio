@@ -537,7 +537,7 @@ util.recipe.change_recipe_ingredients("substation",
     {type = "item", name = "sp-aluminum-cable", amount = 12},
     {type = "item", name = "concrete", amount = 16},
     {type = "item", name = "sp-amplifier", amount = 1},
-    {type = "item", name = "sp-relay", amount = 4}
+    {type = "item", name = "sp-transformer", amount = 3}
   },
   6)
 

@@ -2836,6 +2836,32 @@ data:extend({
       {type = "fluid", name = "sp-germanium-tetrachloride", amount = 3}
     }
   },
+  {
+    type = "recipe",
+    name = "sp-tellurium-hydroxide",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/icons/tellurium-hydroxide.png",
+    icon_size = 64,
+    mip_maps = 4,
+    category = "sp-crushing-washing",
+    subgroup = "processed-resource",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 3,
+    ingredients = {
+      {type = "item", name = "stone", amount = 1},
+      {type = "fluid", name = "sp-bleach", amount = 5},
+    },
+    results = {
+      {type = "item", name = "sp-sand", probability = 0.92, amount = 3},
+      {type = "item", name = "sp-tellurium-hydroxide", probability = 0.08, amount = 1}
+    },
+    crafting_machine_tint = {
+      primary = {r = 1.000, g = 1.000, b = 1.000, a = 1.000},
+      secondary = {r = 0.771, g = 0.771, b = 0.771, a = 1.000},
+      tertiary = {r = 0.768, g = 0.665, b = 0.762, a = 1.000},
+      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
+    }
+  },
   ------------------------------------------------------------------------------
   -- MARK: chemistry
   ------------------------------------------------------------------------------
@@ -3075,35 +3101,6 @@ data:extend({
       quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
     },
     order = "molecule-[propane]"
-  },
-  {
-    type = "recipe",
-    name = "sp-ethylene-and-propene",  -- #ForRegEx# - recipe
-    icons = util.icon.combine_two_icons("__base__/graphics/icons/fluid/petroleum-gas.png", 64, nil,
-                                        "__Spaghetorio__/graphics/icons/propane.png", 64, nil),
-    icon_size = 64,
-    mip_maps = 4,
-    category = "chemistry",
-    subgroup = "chemical",
-    enabled = false,
-    allow_productivity = true,
-    energy_required = 15,
-    ingredients = {
-      {type = "fluid", name = "petroleum-gas", amount = 100},
-      {type = "item", name = "sp-filter", amount = 2},
-      -- {type = "item", name = "sp-catalyst", amount = 1}
-    },
-    results = {
-      {type = "fluid", name = "sp-ethylene", amount = 40},
-      {type = "fluid", name = "sp-propane", amount = 50},
-    },
-    crafting_machine_tint = {
-      primary = {r = 0.8, g = 0.8, b = 0.8, a = 1.000},
-      secondary = {r = 0.2, g = 0.2, b = 0.2, a = 1.000},
-      tertiary = {r = 0.1, g = 0.1, b = 0.1, a = 1.000},
-      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
-    },
-    order = "molecule-[ethylene-and-propene]"
   },
   {
     type = "recipe",
@@ -4448,12 +4445,44 @@ data:extend({
       {type = "item", name = "sp-titanium-nitride", amount = 5},
       {type = "item", name = "sp-potassium-hydroxide", amount = 5},
       {type = "item", name = "sp-heat-resistant-tile", amount = 5},
-      {type = "fluid", name = "sp-epichlorohydrin", amount = 20},
+      {type = "fluid", name = "sp-glycerin", amount = 20},
       {type = "fluid", name = "sp-perchloric-acid", amount = 20}
     },
     results = {
       {type = "item", name = "sp-chemical-science-pack-2", amount = 5}
     }
+  },
+  ------------------------------------------------------------------------------
+  -- MARK: oil-processing
+  ------------------------------------------------------------------------------
+  {
+    type = "recipe",
+    name = "sp-ethylene-and-propene",  -- #ForRegEx# - recipe
+    icons = util.icon.combine_two_icons("__base__/graphics/icons/fluid/petroleum-gas.png", 64, nil,
+                                        "__Spaghetorio__/graphics/icons/propane.png", 64, nil),
+    icon_size = 64,
+    mip_maps = 4,
+    category = "oil-processing",
+    subgroup = "chemical",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 15,
+    ingredients = {
+      {type = "fluid", name = "petroleum-gas", amount = 90},
+      {type = "item", name = "sp-filter", amount = 2},
+      -- {type = "item", name = "sp-catalyst", amount = 1}
+    },
+    results = {
+      {type = "fluid", name = "sp-ethylene", amount = 60},
+      {type = "fluid", name = "sp-propane", amount = 30},
+    },
+    crafting_machine_tint = {
+      primary = {r = 0.8, g = 0.8, b = 0.8, a = 1.000},
+      secondary = {r = 0.2, g = 0.2, b = 0.2, a = 1.000},
+      tertiary = {r = 0.1, g = 0.1, b = 0.1, a = 1.000},
+      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
+    },
+    order = "molecule-[ethylene-and-propene]"
   },
   ------------------------------------------------------------------------------
   -- MARK: crystallizing
@@ -15505,32 +15534,6 @@ data:extend({
       primary = {r = 0.3, g = 0.7, b = 0.3, a = 1.000},
       secondary = {r = 0.2, g = 0.6, b = 0.2, a = 1.000},
       tertiary = {r = 0.1, g = 0.3, b = 0.1, a = 1.000},
-      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-tellurium-hydroxide",  -- #ForRegEx# - recipe
-    icon = "__Spaghetorio__/graphics/icons/tellurium-hydroxide.png",
-    icon_size = 64,
-    mip_maps = 4,
-    category = "chemistry",
-    subgroup = "processed-resource",
-    enabled = false,
-    allow_productivity = true,
-    energy_required = 3,
-    ingredients = {
-      {type = "item", name = "stone", amount = 1},
-      {type = "fluid", name = "sp-bleach", amount = 5},
-    },
-    results = {
-      {type = "item", name = "sp-sand", probability = 0.92, amount = 3},
-      {type = "item", name = "sp-tellurium-hydroxide", probability = 0.08, amount = 1}
-    },
-    crafting_machine_tint = {
-      primary = {r = 1.000, g = 1.000, b = 1.000, a = 1.000},
-      secondary = {r = 0.771, g = 0.771, b = 0.771, a = 1.000},
-      tertiary = {r = 0.768, g = 0.665, b = 0.762, a = 1.000},
       quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
     }
   },
