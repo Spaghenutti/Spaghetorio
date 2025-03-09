@@ -176,8 +176,8 @@ Alloys
 	+r aluminum-brass - aluminum 7000 Series (strong alloy)
   - antimonial-lead (5% antimony 95% lead) for lead batteries
   +r inconel
-  +r TiAlSn (92.5-5-2.5) Grade 6 - for turbines and chemical stuff
-  +r TiNb (55-45) Grade 36 - for composites
+  +r titanium-aluminum-tin (92.5-5-2.5) Grade 6 - for turbines and chemical stuff
+  +r titanium-niobium (55-45) Grade 36 - for composites
   +r niobium-steel, cheap and strong
   +r niobium-tin, for superconducting wire -> strong magnets with helium
 

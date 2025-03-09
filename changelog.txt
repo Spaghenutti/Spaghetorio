@@ -1,6 +1,13 @@
 ---------------------------------------------------------------------------------------------------
-Version: 0.3.6
+Version: 0.3.7
 Date: 2025-03-14
+  Features:
+    - Added crystallizer
+  Changes:
+    - Updated names for some alloys
+---------------------------------------------------------------------------------------------------
+Version: 0.3.6
+Date: 2025-03-09
   Features:
     - Added crystallizer
   Changes:

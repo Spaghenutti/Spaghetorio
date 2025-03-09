@@ -2039,22 +2039,22 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-TiAlSn",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/icons/TiAlSn.png",
+    name = "sp-titanium-aluminum-tin",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/titanium-aluminum-tin.png",
     icon_size = 64,
     scale = 0.5,
     subgroup = "alloy",
-    order = "[TiAlSn]",
+    order = "[titanium-aluminum-tin]",
     stack_size = 100
   },
   {
     type = "item",
-    name = "sp-TiNb",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/icons/TiNb.png",
+    name = "sp-titanium-niobium",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/titanium-niobium.png",
     icon_size = 64,
     scale = 0.5,
     subgroup = "alloy",
-    order = "[TiNb]",
+    order = "[titanium-niobium]",
     stack_size = 100
   },
   {
@@ -2064,7 +2064,7 @@ data:extend({
     icon_size = 64,
     scale = 0.5,
     subgroup = "alloy",
-    order = "[TiNb]",
+    order = "[titanium-niobium]",
     stack_size = 100
   },
   {

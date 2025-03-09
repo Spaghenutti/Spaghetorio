@@ -1598,17 +1598,17 @@ data:extend({
     type = "technology",
     name = "sp-titanium-alloys",  -- #ForRegEx# - technology
     icon_size = 256,
-    icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/hr-icons/TiAlSn.png", 256, nil,
-                                        "__Spaghetorio__/graphics/hr-icons/TiNb.png", 256, nil),
+    icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/hr-icons/titanium-aluminum-tin.png", 256, nil,
+                                        "__Spaghetorio__/graphics/hr-icons/titanium-niobium.png", 256, nil),
     effects =
     {
       {
         type = "unlock-recipe",
-        recipe = "sp-TiAlSn"
+        recipe = "sp-titanium-aluminum-tin"
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-TiNb"
+        recipe = "sp-titanium-niobium"
       },
       {
         type = "unlock-recipe",
@@ -2758,7 +2758,7 @@ data:extend({
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-turbine-blade-from-TiAlSn"
+        recipe = "sp-turbine-blade-from-titanium-aluminum-tin"
       },
     },
     prerequisites = {

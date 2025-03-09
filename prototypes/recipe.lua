@@ -1821,7 +1821,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-TiAlSn",  -- #ForRegEx# - recipe
+    name = "sp-titanium-aluminum-tin",  -- #ForRegEx# - recipe
     category = "alloy-smelting",
     enabled = false,
     allow_productivity = true,
@@ -1832,12 +1832,12 @@ data:extend({
       {type = "item", name = "sp-tin-ingot", amount = 1}
     },
     results = {
-      {type = "item", name = "sp-TiAlSn", amount = 10}
+      {type = "item", name = "sp-titanium-aluminum-tin", amount = 10}
     }
   },
   {
     type = "recipe",
-    name = "sp-TiNb",  -- #ForRegEx# - recipe
+    name = "sp-titanium-niobium",  -- #ForRegEx# - recipe
     category = "alloy-smelting",
     enabled = false,
     allow_productivity = true,
@@ -1847,7 +1847,7 @@ data:extend({
       {type = "item", name = "sp-niobium-billet", amount = 4}
     },
     results = {
-      {type = "item", name = "sp-TiNb", amount = 5}
+      {type = "item", name = "sp-titanium-niobium", amount = 5}
     }
   },
   {
@@ -7440,7 +7440,7 @@ data:extend({
     energy_required = 4,
     ingredients = {
       {type = "item", name = "sp-aluminum-brass", amount = 2},
-      {type = "item", name = "sp-TiNb", amount = 1},
+      {type = "item", name = "sp-titanium-niobium", amount = 1},
       {type = "item", name = "sp-kevlar", amount = 5},
       {type = "item", name = "carbon-fiber", amount = 5}
     },
@@ -8660,16 +8660,16 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-turbine-blade-from-TiAlSn",  -- #ForRegEx# - recipe
+    name = "sp-turbine-blade-from-titanium-aluminum-tin",  -- #ForRegEx# - recipe
     icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/turbine-blade.png", 64,
-                                         "__Spaghetorio__/graphics/icons/TiAlSn.png", 64),
+                                         "__Spaghetorio__/graphics/icons/titanium-aluminum-tin.png", 64),
     category = "advanced-crafting",
     enabled = false,
     allow_productivity = true,
     energy_required = 8,
     hide_from_player_crafting = true,
     ingredients = {
-      {type = "item", name = "sp-TiAlSn", amount = 6},
+      {type = "item", name = "sp-titanium-aluminum-tin", amount = 6},
       {type = "item", name = "sp-cobalt-billet", amount = 1},
       {type = "item", name = "sp-tantalum-billet", amount = 2}
     },
@@ -8685,7 +8685,7 @@ data:extend({
     allow_productivity = true,
     energy_required = 30,
     ingredients = {
-      {type = "item", name = "sp-TiAlSn", amount = 4},
+      {type = "item", name = "sp-titanium-aluminum-tin", amount = 4},
       {type = "item", name = "sp-titanium-carbide", amount = 2},
       {type = "item", name = "sp-titanium-nitride", amount = 1},
       {type = "item", name = "sp-nickel-rhenium", amount = 1},
@@ -8703,7 +8703,7 @@ data:extend({
     allow_productivity = true,
     energy_required = 26,
     ingredients = {
-      {type = "item", name = "sp-TiAlSn", amount = 4},
+      {type = "item", name = "sp-titanium-aluminum-tin", amount = 4},
       {type = "item", name = "sp-titanium-nitride", amount = 2},
       {type = "item", name = "sp-titanium-frame", amount = 20},
       {type = "item", name = "sp-machined-parts", amount = 6},
@@ -8742,7 +8742,7 @@ data:extend({
     energy_required = 12,
     ingredients = {
       {type = "item", name = "copper-plate", amount = 2},
-      {type = "item", name = "sp-TiAlSn", amount = 2},
+      {type = "item", name = "sp-titanium-aluminum-tin", amount = 2},
       {type = "item", name = "tungsten-plate", amount = 6},
       {type = "item", name = "tungsten-carbide", amount = 2},
       {type = "item", name = "sp-bolts", amount = 4}
@@ -8994,7 +8994,7 @@ data:extend({
     energy_required = 12,
     ingredients = {
       {type = "item", name = "tungsten-carbide", amount = 1},
-      {type = "item", name = "sp-TiNb", amount = 2},
+      {type = "item", name = "sp-titanium-niobium", amount = 2},
       {type = "item", name = "sp-graphene", amount = 3},
       {type = "item", name = "sp-high-purity-silicon", amount = 1}
     },
@@ -9733,7 +9733,7 @@ data:extend({
     energy_required = 16,
     ingredients = {
       {type = "item", name = "sp-glass-fiber", amount = 6},
-      {type = "item", name = "sp-TiNb", amount = 2},
+      {type = "item", name = "sp-titanium-niobium", amount = 2},
       {type = "item", name = "supercapacitor", amount = 2},
       {type = "item", name = "sp-processor", amount = 20},
       {type = "item", name = "sp-quantum-data-plane", amount = 1},
@@ -9809,7 +9809,7 @@ data:extend({
     ingredients = {
       {type = "item", name = "sp-chronalyte", amount = 20},
       {type = "item", name = "sp-gamma-radiation-source", amount = 10},
-      {type = "item", name = "sp-TiAlSn", amount = 8},
+      {type = "item", name = "sp-titanium-aluminum-tin", amount = 8},
       {type = "item", name = "sp-electrode", amount = 3},
       {type = "item", name = "sp-neodymium-magnet", amount = 20},
       {type = "item", name = "sp-heat-resistant-tile", amount = 12}
@@ -9895,7 +9895,7 @@ data:extend({
       {type = "item", name = "sp-biochip", amount = 20},
       {type = "item", name = "sp-duralumin", amount = 25},
       {type = "item", name = "sp-grobgnum-droplet", amount = 100},
-      {type = "item", name = "sp-TiNb", amount = 20},
+      {type = "item", name = "sp-titanium-niobium", amount = 20},
       {type = "item", name = "sp-bioreactor", amount = 1}
     },
     results = {
@@ -9937,7 +9937,7 @@ data:extend({
       {type = "item", name = "sp-optical-sensor", amount = 120},
       {type = "item", name = "sp-heat-resistant-tile", amount = 300},
       {type = "item", name = "sp-inconel", amount = 200},
-      {type = "item", name = "sp-TiAlSn", amount = 350},
+      {type = "item", name = "sp-titanium-aluminum-tin", amount = 350},
       {type = "item", name = "rocket-fuel", amount = 750},
       {type = "item", name = "sp-rocket-engine", amount = 20},
       {type = "item", name = "sp-solid-rocket-motor", amount = 48},
@@ -10050,7 +10050,7 @@ data:extend({
   --     {type = "item", name = "sp-yemnuth-pearls", amount = 80},
   --     {type = "item", name = "sp-yemnuth-shard", amount = 120},
   --     {type = "item", name = "sp-aluminum-brass", amount = 100},
-  --     {type = "item", name = "sp-TiAlSn", amount = 60}
+  --     {type = "item", name = "sp-titanium-aluminum-tin", amount = 60}
   --   },
   --   results = {
   --     {type = "item", name = "sp-yemnuth-rocket-silo", amount = 1}
@@ -10527,7 +10527,7 @@ data:extend({
     allow_productivity = true,
     energy_required = 45,
     ingredients = {
-      {type = "item", name = "sp-TiAlSn", amount = 20},
+      {type = "item", name = "sp-titanium-aluminum-tin", amount = 20},
       {type = "item", name = "sp-stainless-steel", amount = 40},
       {type = "item", name = "sp-glass", amount = 60},
       {type = "item", name = "processing-unit", amount = 32},
@@ -10954,7 +10954,7 @@ data:extend({
       {type = "item", name = "sp-energy-control-unit", amount = 40},
       {type = "item", name = "sp-imersium-plate", amount = 40},
       {type = "item", name = "sp-nitenol", amount = 40},
-      {type = "item", name = "sp-TiNb", amount = 120},
+      {type = "item", name = "sp-titanium-niobium", amount = 120},
       {type = "item", name = "sp-ai-core", amount = 24},
       {type = "item", name = "sp-micro-machine", amount = 10},
       {type = "item", name = "sp-carbon-nanotubes", amount = 150},
@@ -11030,7 +11030,7 @@ data:extend({
       {type = "item", name = "advanced-circuit", amount = 20},
       {type = "item", name = "electric-engine-unit", amount = 4},
       {type = "item", name = "sp-composites", amount = 4},
-      {type = "item", name = "sp-TiAlSn", amount = 20},
+      {type = "item", name = "sp-titanium-aluminum-tin", amount = 20},
       {type = "item", name = "sp-stainless-steel", amount = 8},
       {type = "item", name = "sp-glass", amount = 10},
       {type = "item", name = "sp-electrode", amount = 2},
@@ -11165,7 +11165,7 @@ data:extend({
       {type = "item", name = "sp-energy-control-unit", amount = 40},
       {type = "item", name = "sp-imersium-plate", amount = 40},
       {type = "item", name = "sp-nitenol", amount = 40},
-      {type = "item", name = "sp-TiNb", amount = 120},
+      {type = "item", name = "sp-titanium-niobium", amount = 120},
       {type = "item", name = "sp-ai-core", amount = 24},
       {type = "item", name = "sp-micro-machine", amount = 10},
       {type = "item", name = "sp-carbon-nanotubes", amount = 150},
@@ -11410,7 +11410,7 @@ data:extend({
     allow_productivity = true,
     ingredients = {
       {type = "item", name = "turbo-transport-belt", amount = 1},
-      {type = "item", name = "sp-TiNb", amount = 4},
+      {type = "item", name = "sp-titanium-niobium", amount = 4},
       {type = "item", name = "processing-unit", amount = 2},
       {type = "item", name = "sp-compressor", amount = 2},
       {type = "item", name = "sp-bolts", amount = 4}
@@ -12092,7 +12092,7 @@ data:extend({
       {type = "item", name = "sp-imersite-crystal", amount = 2},
       {type = "item", name = "sp-imersium-plate", amount = 1},
       {type = "item", name = "sp-energy-control-unit", amount = 1},
-      {type = "item", name = "sp-TiNb", amount = 1},
+      {type = "item", name = "sp-titanium-niobium", amount = 1},
       {type = "item", name = "sp-niobium-steel", amount = 1},
     },
     results = {
@@ -12238,7 +12238,7 @@ data:extend({
     ingredients = {
       {type = "item", name = "sp-rukite-gear-wheel", amount = 10},
       {type = "item", name = "sp-imersium-gear-wheel", amount = 4},
-      {type = "item", name = "sp-TiNb", amount = 2},
+      {type = "item", name = "sp-titanium-niobium", amount = 2},
       {type = "item", name = "tungsten-carbide", amount = 3}
     },
     results = {
