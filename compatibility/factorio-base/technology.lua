@@ -560,13 +560,16 @@ data.raw.technology["low-density-structure"].unit.ingredients = {
 }
 
 data.raw.technology["effect-transmission"].prerequisites = {"utility-science-pack"}
+data.raw.technology["effect-transmission"].unit.count = 250
 data.raw.technology["effect-transmission"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},
   {"sp-logistic-science-pack-2", 1},
-  {"sp-chemical-science-pack-2", 1},
   {"sp-material-science-pack-2", 1},
-  {"sp-electronic-science-pack-2", 1},
   {"sp-geological-science-pack-2", 1},
+  {"sp-electronic-science-pack-2", 1},
+  {"sp-chemical-science-pack-2", 1},
+  {"sp-metallurgic-science-pack-2", 1},
+  {"sp-electromagnetic-science-pack-2", 1},
   {"production-science-pack", 1},
   {"utility-science-pack", 1}
 }
@@ -915,9 +918,11 @@ data.raw.technology["rocket-fuel"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},
   {"sp-logistic-science-pack-2", 1},
   {"sp-material-science-pack-2", 1},
-  {"sp-electronic-science-pack-2", 1},
   {"sp-geological-science-pack-2", 1},
+  {"sp-electronic-science-pack-2", 1},
   {"sp-chemical-science-pack-2", 1},
+  {"sp-metallurgic-science-pack-2", 1},
+  {"sp-electromagnetic-science-pack-2", 1},
   {"production-science-pack", 1},
   {"utility-science-pack", 1}
 }

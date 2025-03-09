@@ -157,7 +157,7 @@ data:extend({
     selection_box = {{-2, -2}, {2, 2}},
     damaged_trigger_effect = hit_effects.entity(),
     module_slots = 2,
-    icon_draw_specification = {scale = 2.5, shift = {0, -0.5}},
+    icon_draw_specification = {scale = 1.5, shift = {0, 0}},
     icons_positioning =
     {
       {inventory_index = defines.inventory.assembling_machine_modules, shift = {0, 1.25}}

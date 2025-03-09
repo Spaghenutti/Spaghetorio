@@ -2738,11 +2738,11 @@ data:extend({
     {
       {
         type = "unlock-recipe",
-        recipe = "sp-turbine-blade-from-stainless-steel"
+        recipe = "steam-turbine"
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-turbine-blade-from-TiAlSn"
+        recipe = "sp-turbopump"
       },
       {
         type = "unlock-recipe",
@@ -2754,7 +2754,11 @@ data:extend({
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-turbopump"
+        recipe = "sp-turbine-blade-from-stainless-steel"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-turbine-blade-from-TiAlSn"
       },
     },
     prerequisites = {
@@ -3070,7 +3074,7 @@ data:extend({
   },
   {
     type = "technology",
-    name = "sp-enriched-ores",
+    name = "sp-enriched-ores",  -- #ForRegEx# - technology
     icon = "__Spaghetorio__/graphics/krastorio/technologies/enriched-ores.png",
     icon_size = 256,
     icon_mipmaps = 4,
@@ -3267,9 +3271,16 @@ data:extend({
     unit = {
       count = 1000,
       ingredients = {
-        {"utility-science-pack", 1},
-        -- {"kr-rare-metals", 1},
-        -- {"sp-bleach", 1},
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-metallurgic-science-pack-2", 1},
+        {"sp-electromagnetic-science-pack-2", 1},
+        {"production-science-pack", 1},
+        {"utility-science-pack", 1}
       },
       time = 30,
     },
@@ -10833,7 +10844,8 @@ data:extend({
       }
     },
     prerequisites = {
-      "sp-toolbelt-6"
+      "sp-toolbelt-6",
+      "sp-utility-science-pack-3"
     },
     unit =
     {
@@ -10851,11 +10863,7 @@ data:extend({
         {"sp-nuclear-science-pack-3", 1},
         {"sp-space-science-pack-3", 1},
         {"sp-utility-science-pack-3", 1},
-        {"space-science-pack", 1},
-        {"sp-uniformity-science-pack", 1},
-        -- Krastorio: {"sp-matter-science-pack", 1},
-        -- Krastorio: {"sp-advanced-science-pack", 1},
-        -- Krastorio: {"sp-singularity-science-pack", 1}
+        {"space-science-pack", 1}
       },
       time = 60
     },
