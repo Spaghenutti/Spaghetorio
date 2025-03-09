@@ -563,9 +563,13 @@ data:extend({
         {"sp-automation-science-pack-2", 1},
         {"sp-logistic-science-pack-2", 1},
         {"sp-material-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
         {"sp-chemical-science-pack-2", 1},
-        {"utility-science-pack", 1},
-        {"production-science-pack", 1}
+        {"sp-metallurgic-science-pack-2", 1},
+        {"sp-electromagnetic-science-pack-2", 1},
+        {"production-science-pack", 1},
+        {"utility-science-pack", 1}
       },
       time = 30
     },
@@ -2582,11 +2586,13 @@ data:extend({
       ingredients = {
         {"sp-automation-science-pack-2", 1},
         {"sp-logistic-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1},
         {"sp-material-science-pack-2", 1},
-        {"production-science-pack", 1},
         {"sp-geological-science-pack-2", 1},
         {"sp-electronic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-metallurgic-science-pack-2", 1},
+        {"sp-electromagnetic-science-pack-2", 1},
+        {"production-science-pack", 1},
         {"utility-science-pack", 1}
       },
       time = 30
@@ -2611,37 +2617,6 @@ data:extend({
       ingredients = {
         {"automation-science-pack", 1},
         {"logistic-science-pack", 1}
-      },
-      time = 30
-    },
-  },
-  {
-    type = "technology",
-    name = "sp-spark-plug",  -- #ForRegEx# - technology
-    icon_size = 256,
-    icon = "__Spaghetorio__/graphics/hr-icons/spark-plug.png",
-    effects =
-    {
-      {
-        type = "unlock-recipe",
-        recipe = "sp-spark-plug"
-      },
-    },
-    prerequisites = {
-      "sp-nickel-alloys",
-      "utility-science-pack"
-    },
-    unit =
-    {
-      count = 200,
-      ingredients = {
-        {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"sp-material-science-pack-2", 1},
-        {"sp-electronic-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1},
-        {"production-science-pack", 1},
-        {"utility-science-pack", 1}
       },
       time = 30
     },
@@ -2793,9 +2768,44 @@ data:extend({
         {"sp-automation-science-pack-2", 1},
         {"sp-logistic-science-pack-2", 1},
         {"sp-material-science-pack-2", 1},
-        {"sp-electronic-science-pack-2", 1},
         {"sp-geological-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
         {"sp-chemical-science-pack-2", 1},
+        {"sp-metallurgic-science-pack-2", 1},
+        {"sp-electromagnetic-science-pack-2", 1},
+        {"production-science-pack", 1},
+        {"utility-science-pack", 1}
+      },
+      time = 30
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-spark-plug",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghetorio__/graphics/hr-icons/spark-plug.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-spark-plug"
+      },
+    },
+    prerequisites = {
+      "utility-science-pack"
+    },
+    unit =
+    {
+      count = 100,
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-metallurgic-science-pack-2", 1},
+        {"sp-electromagnetic-science-pack-2", 1},
         {"production-science-pack", 1},
         {"utility-science-pack", 1}
       },
@@ -2832,14 +2842,16 @@ data:extend({
     },
     unit =
     {
-      count = 500,
+      count = 1000,
       ingredients = {
         {"sp-automation-science-pack-2", 1},
         {"sp-logistic-science-pack-2", 1},
         {"sp-material-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
         {"sp-electronic-science-pack-2", 1},
         {"sp-chemical-science-pack-2", 1},
-        {"sp-computer-science-pack-2", 1},
+        {"sp-metallurgic-science-pack-2", 1},
+        {"sp-electromagnetic-science-pack-2", 1},
         {"production-science-pack", 1},
         {"utility-science-pack", 1}
       },
@@ -8196,7 +8208,7 @@ data:extend({
       },
     },
     prerequisites = {
-      "utility-science-pack"
+      "space-science-pack"
     },
     unit = {
       count = 600,

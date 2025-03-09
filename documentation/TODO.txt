@@ -122,6 +122,7 @@ TODO for 0.3.12
   - Add back blunagium, grobgnum, rukite and yemnuth rockets (even though they are unlocked later)
 
 TODO for 0.3.xx
+  - Update all other productivity technologies (see steel plate productivity)
   - Support text plates mod
   - Support LTN mod
   - Add matter conversion recipes
