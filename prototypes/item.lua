@@ -6685,6 +6685,17 @@ data:extend({
   },
   {
     type = "item",
+    name = "sp-crystallizer",  -- #ForRegEx# - building
+    icon = "__Spaghetorio__/graphics/icons/crystallizer.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "smelting-machine",
+    order = "c[electric-furnace]-f[crystallizer]",
+    place_result = "sp-crystallizer",
+    stack_size = 20,
+  },
+  {
+    type = "item",
     name = "sp-kr-advanced-furnace",  -- #ForRegEx# - building
     icon = "__Spaghetorio__/graphics/krastorio/icons/entities/advanced-furnace.png",
     icon_size = 128,

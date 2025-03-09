@@ -8012,10 +8012,14 @@ data:extend({
   {
     type = "technology",
     name = "sp-crystallizer",  -- #ForRegEx# - technology
-    icon = "__Spaghetorio__/graphics/hr-icons/titanium-nitride.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/crystallizer.png",
     icon_size = 256,
     icon_mipmaps = 4,
     effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-crystallizer",
+      },
       {
         type = "unlock-recipe",
         recipe = "sp-titanium-nitride",

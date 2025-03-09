@@ -2,6 +2,12 @@
 Version: 0.3.6
 Date: 2025-03-14
   Features:
+    - Added crystallizer
+  Changes:
+    - Updated tech tree
+    - Ferrite among other metals unlocked in mid to late game can now not be smelted in stone or steel furnace
+  Bugfixes:
+    - electric furnace does not require electro magnets
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.5
 Date: 2025-03-08

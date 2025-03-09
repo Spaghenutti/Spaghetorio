@@ -10270,6 +10270,29 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "sp-crystallizer",  -- #ForRegEx# - recipe
+    icon_size = 64,
+    mip_maps = 4,
+    category = "crafting",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 40,
+    ingredients = {
+      {type = "item", name = "sp-stainless-steel", amount = 40},
+      {type = "item", name = "sp-vanadium-steel", amount = 30},
+      {type = "item", name = "sp-nickel-cobalt", amount = 30},
+      {type = "item", name = "sp-ceramics", amount = 30},
+      {type = "item", name = "sp-crucible", amount = 20},
+      {type = "item", name = "sp-heating-filament", amount = 6},
+      {type = "item", name = "electric-engine-unit", amount = 4},
+      {type = "item", name = "refined-concrete", amount = 40}
+    },
+    results = {
+      {type = "item", name = "sp-crystallizer", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
     name = "sp-breeder-reactor",  -- #ForRegEx# - recipe
     icon_size = 64,
     mip_maps = 4,

@@ -10,31 +10,42 @@ local sounds = require("__base__/prototypes/entity/sounds")
 --   {variation = 7, main_offset = util.by_pixel(-27, 53), shadow_offset = util.by_pixel(-18, 55), show_shadow = false}
 -- })
 
-local graphics_frame_count = 60
-local graphics_animation_speed = 0.4
-local graphics_shift = {0, 0}
-local graphics_scale = 0.4
+local graphics_frame_count = 80
+local graphics_animation_speed = 0.7
+local graphics_shift = {0, -0.5}
+local graphics_scale = 0.5
 local graphics_set = {
   animation = {
     layers = {
       {
-        filename = "__SpaghetorioGraphics1__/graphics/buildings/chemical-stager/chemical-stager-hr-animation-1.png",
         priority = "high",
-        width = 3200 / 8,
-        height = 3200 / 8,
+        width = 2160 / 8,
+        height = 2480 / 8,
         shift = graphics_shift,
         scale = graphics_scale,
         frame_count = graphics_frame_count,
-        line_length = 8,
         animation_speed = graphics_animation_speed,
+        stripes =
+        {
+          {
+            filename = "__SpaghetorioGraphics1__/graphics/buildings/glass-furnace/glass-furnace-hr-animation-1.png",
+            width_in_frames = 8,
+            height_in_frames = 8,
+          },
+          {
+            filename = "__SpaghetorioGraphics1__/graphics/buildings/glass-furnace/glass-furnace-hr-animation-2.png",
+            width_in_frames = 8,
+            height_in_frames = 2,
+          },
+        },
       },
       {
         priority = "high",
-        filename = "__SpaghetorioGraphics1__/graphics/buildings/chemical-stager/chemical-stager-hr-shadow.png",
-        width = 800,
-        height = 600,
+        filename = "__SpaghetorioGraphics1__/graphics/buildings/glass-furnace/glass-furnace-hr-shadow.png",
+        width = 1200,
+        height = 700,
         shift = graphics_shift,
-        scale = graphics_scale,
+        scale = graphics_scale * 0.5,
         frame_count = 1,
         repeat_count = graphics_frame_count,
         draw_as_shadow = true,
@@ -48,16 +59,27 @@ local graphics_set = {
       effect = "flicker",
       animation = {
         priority = "high",
-        filename = "__SpaghetorioGraphics1__/graphics/buildings/chemical-stager/chemical-stager-hr-emission-1.png",
-        width = 3200 / 8,
-        height = 3200 / 8,
+        width = 2160 / 8,
+        height = 2400 / 8, -- Note the image is actually 2480 pixels high in Spaghetorio Graphics 1 0.0.1
         shift = graphics_shift,
         scale = graphics_scale,
         frame_count = graphics_frame_count,
-        line_length = 8,
         draw_as_glow = true,
         animation_speed = graphics_animation_speed,
         blend_mode = "additive",
+        stripes =
+        {
+          {
+            filename = "__SpaghetorioGraphics1__/graphics/buildings/glass-furnace/glass-furnace-hr-emission-1.png",
+            width_in_frames = 8,
+            height_in_frames = 8,
+          },
+          {
+            filename = "__SpaghetorioGraphics1__/graphics/buildings/glass-furnace/glass-furnace-hr-emission-2.png",
+            width_in_frames = 8,
+            height_in_frames = 2,
+          },
+        },
       },
     },
   },
@@ -71,7 +93,7 @@ fluid_boxes = {
     pipe_covers = pipecoverspictures(),
     always_draw_covers = false,
     volume = 1000,
-    pipe_connections = {{flow_direction="input", direction = defines.direction.south, position = {-1, 2}}}
+    pipe_connections = {{flow_direction="input", direction = defines.direction.west, position = {-1.5, 0.5}}}
   },
   {
     production_type = "input",
@@ -80,7 +102,7 @@ fluid_boxes = {
     pipe_covers = pipecoverspictures(),
     always_draw_covers = false,
     volume = 1000,
-    pipe_connections = {{flow_direction="input", direction = defines.direction.south, position = {1, 2}}}
+    pipe_connections = {{flow_direction="input", direction = defines.direction.south, position = {0.5, 1.5}}}
   },
   {
     production_type = "output",
@@ -89,7 +111,7 @@ fluid_boxes = {
     pipe_covers = pipecoverspictures(),
     always_draw_covers = false,
     volume = 1000,
-    pipe_connections = {{flow_direction="output", direction = defines.direction.north, position = {-1, -2}}}
+    pipe_connections = {{flow_direction="output", direction = defines.direction.north, position = {-0.5, -1.5}}}
   },
   {
     production_type = "output",
@@ -98,12 +120,12 @@ fluid_boxes = {
     pipe_covers = pipecoverspictures(),
     always_draw_covers = false,
     volume = 1000,
-    pipe_connections = {{ flow_direction="output", direction = defines.direction.north, position = {1, -2}}}
+    pipe_connections = {{ flow_direction="output", direction = defines.direction.east, position = {1.5, -0.5}}}
   }
 }
 
 local working_sound = {
-  sound = sound_variations("__base__/sound/chemical-plant", 3, 0.5), -- {filename = "__Spaghetorio__/sounds/buildings/chemical-plant.ogg", volume = 0.5},
+  sound = {filename = "__Spaghetorio__/sounds/buildings/advanced-furnace.ogg", volume = 0.5},
   idle_sound = {filename = "__base__/sound/idle1.ogg", volume = 0.3},
   volume = 0.50,
   aggregation = {
@@ -116,44 +138,44 @@ local working_sound = {
 data:extend({
  {
     type = "assembling-machine",
-    name = "sp-chemical-stager",
-    icon = "__Spaghetorio__/graphics/icons/chemical-stager.png",
+    name = "sp-crystallizer",
+    icon = "__Spaghetorio__/graphics/icons/crystallizer.png",
     flags = {"placeable-neutral", "player-creation"},
-    minable = {mining_time = 0.5, result = "sp-chemical-stager"},
-    fast_replaceable_group = "sp-chemical-stager",
-    max_health = 750,
+    minable = {mining_time = 2, result = "sp-crystallizer"},
+    fast_replaceable_group = "sp-crystallizer",
+    max_health = 2500,
     resistances = {
-        {type = "physical", percent = 50},
-        {type = "fire", percent = 50},
-        {type = "impact", percent = 50},
+        {type = "physical", percent = 60},
+        {type = "fire", percent = 80},
+        {type = "impact", percent = 0},
       },
     corpse = "foundry-remnants",
     dying_explosion = "foundry-explosion",
     -- circuit_wire_max_distance = assembling_machine_circuit_wire_max_distance,  -- assembling_machine_circuit_wire_max_distance = 9
     -- circuit_connector = circuit_connector_definitions,
-    collision_box = {{-2.2, -2.2}, {2.2, 2.2}},
-    selection_box = {{-2.5, -2.5}, {2.5, 2.5}},
+    collision_box = {{-1.7, -1.7}, {1.7, 1.7}},
+    selection_box = {{-2, -2}, {2, 2}},
     damaged_trigger_effect = hit_effects.entity(),
-    effect_receiver = {base_effect = {productivity = 0.2}},
-    module_slots = 6,
-    icon_draw_specification = {scale = 1.5, shift = {0, 0.5}},
+    module_slots = 2,
+    icon_draw_specification = {scale = 2.5, shift = {0, -0.5}},
     icons_positioning =
     {
       {inventory_index = defines.inventory.assembling_machine_modules, shift = {0, 1.25}}
     },
     allowed_effects = {"consumption", "speed", "productivity", "pollution", "quality"},
     crafting_categories = {
-      "chemistry",
-      "chemical-staging"
+      "smelting",
+      "crystallizing",
+      "crystallizing-with-fluid" -- TODO: remove this once crystallizer is added
     },
-    crafting_speed = 2,
+    crafting_speed = 1,
     energy_source =
     {
       type = "electric",
       usage_priority = "secondary-input",
       emissions_per_minute = {pollution = 4},
     },
-    energy_usage = "500kW",
+    energy_usage = "400kW",
     perceived_performance = {minimum = 0.25, maximum = 20},
     graphics_set = graphics_set,
     open_sound = sounds.metal_large_open,

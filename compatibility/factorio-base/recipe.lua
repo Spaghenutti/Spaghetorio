@@ -1343,7 +1343,6 @@ util.recipe.change_recipe_ingredients("steel-furnace",
 util.recipe.change_recipe_ingredients("electric-furnace",
   {
     {type = "item", name = "sp-heating-filament", amount = 10},
-    {type = "item", name = "sp-electromagnet", amount = 20},
     {type = "item", name = "stone-brick", amount = 30},
     {type = "item", name = "sp-stainless-steel", amount = 20},
     {type = "item", name = "sp-nickel-chromium", amount = 20},
@@ -1709,15 +1708,15 @@ data.raw.recipe["production-science-pack"].results = {
 
 util.recipe.change_recipe_ingredients("utility-science-pack",
   {
-    -- {type = "item", name = "electric-furnace", amount = 1},
-    -- {type = "item", name = "kr-electric-mining-drill-mk2", amount = 1},
-    -- {type = "item", name = "assembling-machine-2", amount = 1},
-    -- {type = "item", name = "kr-research-server", amount = 1},
-    {type = "item", name = "sp-blank-tech-card", amount = 5}
+    {type = "item", name = "big-mining-drill", amount = 1},
+    {type = "item", name = "electromagnetic-plant", amount = 1},
+    {type = "item", name = "sp-manufacturer", amount = 1},
+    {type = "item", name = "sp-chemical-stager", amount = 1},
+    {type = "item", name = "sp-blank-tech-card", amount = 20}
   },
-  32)
+  120)
 data.raw.recipe["utility-science-pack"].results = {
-    {type = "item", name = "utility-science-pack", amount = 5}
+    {type = "item", name = "utility-science-pack", amount = 20}
   }
 
 util.recipe.change_recipe_ingredients("space-science-pack",
