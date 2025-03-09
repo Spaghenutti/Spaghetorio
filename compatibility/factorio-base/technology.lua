@@ -3,6 +3,7 @@ local remove_prototypes = require("remove-prototypes")
 
 -- Remove unneded technologies
 remove_prototypes.remove_one_prototype("technology", "uranium-mining")
+remove_prototypes.remove_one_prototype("technology", "nuclear-fuel-reprocessing")
 
 -- Update technologies
 data.raw.technology["electronics"].effects = {
@@ -548,8 +549,12 @@ data.raw.technology["low-density-structure"].prerequisites = {"utility-science-p
 data.raw.technology["low-density-structure"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},
   {"sp-logistic-science-pack-2", 1},
-  {"sp-chemical-science-pack-2", 1},
   {"sp-material-science-pack-2", 1},
+  {"sp-geological-science-pack-2", 1},
+  {"sp-electronic-science-pack-2", 1},
+  {"sp-chemical-science-pack-2", 1},
+  {"sp-metallurgic-science-pack-2", 1},
+  {"sp-electromagnetic-science-pack-2", 1},
   {"production-science-pack", 1},
   {"utility-science-pack", 1}
 }
@@ -1996,6 +2001,7 @@ data.raw.technology["stronger-explosives-1"].unit.ingredients = {
   {"military-science-pack", 1}
 }
 
+table.insert(data.raw.technology["stronger-explosives-4"].prerequisites, "sp-military-science-pack-2")
 data.raw.technology["stronger-explosives-4"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},
   {"sp-logistic-science-pack-2", 1},
@@ -2004,6 +2010,8 @@ data.raw.technology["stronger-explosives-4"].unit.ingredients = {
   {"production-science-pack", 1},
   {"sp-geological-science-pack-2", 1},
   {"sp-electronic-science-pack-2", 1},
+  {"sp-metallurgic-science-pack-2", 1},
+  {"sp-electromagnetic-science-pack-2", 1},
   {"sp-military-science-pack-2", 1},
   {"utility-science-pack", 1}
 }
@@ -2016,6 +2024,8 @@ data.raw.technology["stronger-explosives-5"].unit.ingredients = {
   {"production-science-pack", 1},
   {"sp-geological-science-pack-2", 1},
   {"sp-electronic-science-pack-2", 1},
+  {"sp-metallurgic-science-pack-2", 1},
+  {"sp-electromagnetic-science-pack-2", 1},
   {"sp-military-science-pack-2", 1},
   {"utility-science-pack", 1}
 }

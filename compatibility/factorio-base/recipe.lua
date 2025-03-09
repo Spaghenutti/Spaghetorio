@@ -637,6 +637,7 @@ util.recipe.change_recipe_ingredients("artillery-wagon",
     {type = "item", name = "artillery-turret", amount = 1},
     {type = "item", name = "engine-unit", amount = 8},
     {type = "item", name = "sp-heavy-ball-bearing", amount = 2},
+    {type = "item", name = "sp-spark-plug", amount = 1},
     {type = "item", name = "sp-heavy-gearbox", amount = 6}
   },
   60)
@@ -974,7 +975,6 @@ data.raw.recipe["artillery-shell"].category = "crafting-with-fluid"
 util.recipe.change_recipe_ingredients("artillery-shell",
   {
     {type = "item", name = "tungsten-carbide", amount = 10},
-    {type = "item", name = "sp-spark-plug", amount = 1},
     {type = "item", name = "sp-stainless-steel", amount = 3},
     {type = "item", name = "sp-tungsten-powder", amount = 5},
     {type = "item", name = "sp-invar", amount = 2},
@@ -1636,6 +1636,7 @@ util.recipe.change_recipe_ingredients("artillery-turret",
     {type = "item", name = "processing-unit", amount = 5},
     {type = "item", name = "sp-optical-sensor", amount = 2},
     {type = "item", name = "radar", amount = 1},
+    {type = "item", name = "sp-spark-plug", amount = 1},
     {type = "fluid", name = "lubricant", amount = 100}
   },
   40)
