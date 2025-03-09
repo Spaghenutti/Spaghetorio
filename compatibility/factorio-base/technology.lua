@@ -693,25 +693,26 @@ data.raw.technology["robotics"].unit.ingredients = {
   {"electromagnetic-science-pack", 1}
 }
 
-table.insert(data.raw.technology["construction-robotics"].prerequisites, "sp-nickel-alloys")
+table.insert(data.raw.technology["construction-robotics"].prerequisites, "sp-power-regulation")
 data.raw.technology["construction-robotics"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},
   {"logistic-science-pack", 1},
   {"chemical-science-pack", 1},
   {"sp-electronic-science-pack-1", 1},
   {"sp-material-science-pack-1", 1},
-  {"sp-geological-science-pack-1", 1},
+  {"sp-geological-science-pack-2", 1},
   {"metallurgic-science-pack", 1},
   {"electromagnetic-science-pack", 1}
 }
 
+table.insert(data.raw.technology["logistic-robotics"].prerequisites, "sp-power-regulation")
 data.raw.technology["logistic-robotics"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},
   {"logistic-science-pack", 1},
   {"chemical-science-pack", 1},
   {"sp-electronic-science-pack-1", 1},
   {"sp-material-science-pack-1", 1},
-  {"sp-geological-science-pack-1", 1},
+  {"sp-geological-science-pack-2", 1},
   {"metallurgic-science-pack", 1},
   {"electromagnetic-science-pack", 1}
 }
@@ -1394,6 +1395,7 @@ data.raw.technology["mining-productivity-3"].unit.ingredients = {
   {"sp-electronic-science-pack-1", 1},
   {"chemical-science-pack", 1}
 }
+data.raw.technology["mining-productivity-3"].max_level = 9
 
 data.raw.technology["braking-force-1"].prerequisites = {
   "railway",

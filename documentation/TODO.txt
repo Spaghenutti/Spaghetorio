@@ -72,7 +72,7 @@ TODO for 0.3.4 - 0.3.6
       + optical filter zink selenide ZnSe and Sapphire Al2O3
 
 TODO for 0.3.7
-  - Update mining productivity tech
+  + Update mining productivity tech
   - Add crystallizer with diamond saw
   - clean up code for buildings
 

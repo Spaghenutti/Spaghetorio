@@ -10249,6 +10249,181 @@ data:extend({
   ------------------------------------------------------------------------------
   {
     type = "technology",
+    name = "sp-mining-productivity-10",  -- #ForRegEx# - infinite-technology
+    icons = core_util.technology_icon_constant_productivity("__base__/graphics/technology/mining-productivity.png"),
+    effects =
+    {
+      {
+        type = "mining-drill-productivity-bonus",
+        modifier = 0.1
+      }
+    },
+    prerequisites = {
+      "sp-geological-science-pack-2",
+      "mining-productivity-3"
+    },
+    unit =
+    {
+      count_formula = "500*(L - 9)",
+      ingredients =
+      {
+        {"sp-automation-science-pack-2", 1},
+        {"logistic-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"sp-electronic-science-pack-1", 1},
+        {"sp-material-science-pack-1", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"metallurgic-science-pack", 1},
+        {"electromagnetic-science-pack", 1}
+      },
+      time = 60
+    },
+    max_level = 24,
+    upgrade = true
+  },
+  {
+    type = "technology",
+    name = "sp-mining-productivity-25",  -- #ForRegEx# - infinite-technology
+    icons = core_util.technology_icon_constant_productivity("__base__/graphics/technology/mining-productivity.png"),
+    effects =
+    {
+      {
+        type = "mining-drill-productivity-bonus",
+        modifier = 0.1
+      }
+    },
+    prerequisites = {
+      "utility-science-pack",
+      "sp-mining-productivity-10"
+    },
+    unit =
+    {
+      count_formula = "750*(L - 24)",
+      ingredients =
+      {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-metallurgic-science-pack-2", 1},
+        {"sp-electromagnetic-science-pack-2", 1},
+        {"production-science-pack", 1},
+        {"utility-science-pack", 1}
+      },
+      time = 60
+    },
+    max_level = 49,
+    upgrade = true
+  },
+  {
+    type = "technology",
+    name = "sp-mining-productivity-50",  -- #ForRegEx# - infinite-technology
+    icons = core_util.technology_icon_constant_productivity("__base__/graphics/technology/mining-productivity.png"),
+    effects =
+    {
+      {
+        type = "mining-drill-productivity-bonus",
+        modifier = 0.1
+      }
+    },
+    prerequisites = {
+      "sp-geological-science-pack-3",
+      "sp-mining-productivity-25"
+    },
+    unit =
+    {
+      count_formula = "1000*(L - 49)",
+      ingredients =
+      {
+        {"sp-automation-science-pack-3", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-geological-science-pack-3", 1},
+        {"space-science-pack", 1},
+        {"sp-material-science-pack-2", 1}
+      },
+      time = 60
+    },
+    max_level = 74,
+    upgrade = true
+  },
+  {
+    type = "technology",
+    name = "sp-mining-productivity-75",  -- #ForRegEx# - infinite-technology
+    icons = core_util.technology_icon_constant_productivity("__base__/graphics/technology/mining-productivity.png"),
+    effects =
+    {
+      {
+        type = "mining-drill-productivity-bonus",
+        modifier = 0.1
+      }
+    },
+    prerequisites = {
+      "sp-geological-science-pack-3",
+      "sp-mining-productivity-50"
+    },
+    unit =
+    {
+      count_formula = "1000*(L - 74)",
+      ingredients =
+      {
+        {"sp-automation-science-pack-3", 1},
+        {"sp-logistic-science-pack-3", 1},
+        {"sp-chemical-science-pack-3", 1},
+        {"sp-electronic-science-pack-3", 1},
+        {"sp-geological-science-pack-3", 1},
+        {"space-science-pack", 1},
+        {"sp-material-science-pack-3", 1},
+        {"sp-nuclear-science-pack-3", 1},
+        {"sp-computer-science-pack-3", 1},
+        {"sp-utility-science-pack-3", 1}
+      },
+      time = 60
+    },
+    max_level = 99,
+    upgrade = true
+  },
+  {
+    type = "technology",
+    name = "sp-mining-productivity-100",  -- #ForRegEx# - infinite-technology
+    icons = core_util.technology_icon_constant_productivity("__base__/graphics/technology/mining-productivity.png"),
+    effects =
+    {
+      {
+        type = "mining-drill-productivity-bonus",
+        modifier = 0.1
+      }
+    },
+    prerequisites = {
+      "promethium-science-pack",
+      "sp-mining-productivity-75"
+    },
+    unit =
+    {
+      count_formula = "1000*(L - 74)",
+      ingredients =
+      {
+        {"sp-automation-science-pack-3", 1},
+        {"sp-logistic-science-pack-3", 1},
+        {"sp-chemical-science-pack-3", 1},
+        {"sp-electronic-science-pack-3", 1},
+        {"sp-geological-science-pack-3", 1},
+        {"space-science-pack", 1},
+        {"sp-material-science-pack-3", 1},
+        {"sp-nuclear-science-pack-3", 1},
+        {"sp-computer-science-pack-3", 1},
+        {"sp-utility-science-pack-3", 1}
+      },
+      time = 60
+    },
+    max_level = "infinite",
+    upgrade = true
+  },
+  {
+    type = "technology",
     name = "sp-worker-robots-storage-4",  -- #ForRegEx# - infinite-technology
     icon_size = 256,
     icon_mipmaps = 4,
