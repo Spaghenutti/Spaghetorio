@@ -166,6 +166,8 @@ data:extend({
     crafting_categories = {
       "smelting",
       "intermediate-smelting",
+      "crushed-smelting",
+      "smelting-enriched-resource",
       "smelting-with-fluid",
       "metallurgy",
       "metallurgy-or-assembling",

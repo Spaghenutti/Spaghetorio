@@ -129,7 +129,9 @@ data:extend({
       usage_priority = "secondary-input",
       emissions_per_minute = {pollution = 5},
     },
-    crafting_categories = {"sp-kr-fluid-filtration"},
+    crafting_categories = {
+      "sp-kr-fluid-filtration",
+    },
     scale_entity_info_icon = true,
     energy_usage = "500kW",
     ingredient_count = 6,

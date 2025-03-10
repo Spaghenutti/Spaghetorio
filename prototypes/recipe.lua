@@ -968,7 +968,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-enriched-copper",  -- #ForRegEx# - recipe
-    icon = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/enriched-copper/enriched-copper.png",
+    icons = util.icon.create_enriching_recipe_icon(data.raw.item["copper-ore"], data.raw.item["sp-enriched-copper"]),
     icon_size = 64,
     mip_maps = 4,
     category = "enriching-raw-resource",
@@ -996,7 +996,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-enriched-iron",  -- #ForRegEx# - recipe
-    icon  = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/enriched-iron/enriched-iron.png",
+    icons = util.icon.create_enriching_recipe_icon(data.raw.item["iron-ore"], data.raw.item["sp-enriched-iron"]),
     icon_size = 64,
     mip_maps = 4,
     category = "enriching-raw-resource",
@@ -1023,7 +1023,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-enriched-aluminum",  -- #ForRegEx# - recipe
-    icon = "__Spaghetorio__/graphics/icons/enriched-aluminum-1.png",
+    icons = util.icon.create_enriching_recipe_icon(data.raw.item["sp-aluminum-ore"], data.raw.item["sp-enriched-aluminum"]),
     icon_size = 64,
     mip_maps = 4,
     category = "enriching-raw-resource",
@@ -1050,7 +1050,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-enriched-chromite",  -- #ForRegEx# - recipe
-    icon = "__Spaghetorio__/graphics/icons/enriched-chromite-1.png",
+    icons = util.icon.create_enriching_recipe_icon(data.raw.item["sp-chromite"], data.raw.item["sp-enriched-chromite"]),
     icon_size = 64,
     mip_maps = 4,
     category = "enriching-raw-resource",
@@ -1078,7 +1078,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-enriched-magnesium",  -- #ForRegEx# - recipe
-    icon = "__Spaghetorio__/graphics/icons/enriched-magnesium-1.png",
+    icons = util.icon.create_enriching_recipe_icon(data.raw.item["sp-magnesium-ore"], data.raw.item["sp-enriched-magnesium"]),
     icon_size = 64,
     mip_maps = 4,
     category = "enriching-raw-resource",
@@ -1106,7 +1106,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-enriched-nickel",  -- #ForRegEx# - recipe
-    icon = "__Spaghetorio__/graphics/icons/enriched-nickel-1.png",
+    icons = util.icon.create_enriching_recipe_icon(data.raw.item["sp-nickel-ore"], data.raw.item["sp-enriched-nickel"]),
     icon_size = 64,
     mip_maps = 4,
     category = "enriching-raw-resource",
@@ -1134,7 +1134,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-enriched-tinstone",  -- #ForRegEx# - recipe
-    icon = "__Spaghetorio__/graphics/icons/enriched-tinstone-1.png",
+    icons = util.icon.create_enriching_recipe_icon(data.raw.item["sp-tinstone"], data.raw.item["sp-enriched-tinstone"]),
     icon_size = 64,
     mip_maps = 4,
     category = "enriching-raw-resource",
@@ -1162,7 +1162,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-enriched-titanium",  -- #ForRegEx# - recipe
-    icon = "__Spaghetorio__/graphics/icons/enriched-titanium-1.png",
+    icons = util.icon.create_enriching_recipe_icon(data.raw.item["sp-titanium-ore"], data.raw.item["sp-enriched-titanium"]),
     icon_size = 64,
     mip_maps = 4,
     category = "enriching-raw-resource",
@@ -1190,7 +1190,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-enriched-tungsten",  -- #ForRegEx# - recipe
-    icon = "__Spaghetorio__/graphics/icons/enriched-tungsten-1.png",
+    icons = util.icon.create_enriching_recipe_icon(data.raw.item["tungsten-ore"], data.raw.item["sp-enriched-tungsten"]),
     icon_size = 64,
     mip_maps = 4,
     category = "enriching-raw-resource",
@@ -1218,7 +1218,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-enriched-zinc",  -- #ForRegEx# - recipe
-    icon = "__Spaghetorio__/graphics/icons/enriched-zinc-1.png",
+    icons = util.icon.create_enriching_recipe_icon(data.raw.item["sp-zinc-ore"], data.raw.item["sp-enriched-zinc"]),
     icon_size = 64,
     mip_maps = 4,
     category = "enriching-raw-resource",
@@ -1248,8 +1248,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-enriched-copper-from-crushed-resource",  -- #ForRegEx# - recipe
-    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/krastorio/icons/items-with-variations/enriched-copper/enriched-copper.png", 64,
-                                         "__Spaghetorio__/graphics/icons/crushed-copper-ore-1.png", 64),
+    icons = util.icon.create_enriching_recipe_icon(data.raw.item["sp-crushed-copper-ore"], data.raw.item["sp-enriched-copper"]),
     icon_size = 64,
     mip_maps = 4,
     category = "enriching-crushed-resource",
@@ -1278,8 +1277,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-enriched-iron-from-crushed-resource",  -- #ForRegEx# - recipe
-    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/krastorio/icons/items-with-variations/enriched-iron/enriched-iron.png", 64,
-                                         "__Spaghetorio__/graphics/icons/crushed-iron-ore-1.png", 64),
+    icons = util.icon.create_enriching_recipe_icon(data.raw.item["sp-crushed-iron-ore"], data.raw.item["sp-enriched-iron"]),
     icon_size = 64,
     mip_maps = 4,
     category = "enriching-crushed-resource",
@@ -1307,8 +1305,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-enriched-aluminum-from-crushed-resource",  -- #ForRegEx# - recipe
-    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/enriched-aluminum-1.png", 64,
-                                         "__Spaghetorio__/graphics/icons/crushed-aluminum-ore-1.png", 64),
+    icons = util.icon.create_enriching_recipe_icon(data.raw.item["sp-crushed-aluminum-ore"], data.raw.item["sp-enriched-aluminum"]),
     icon_size = 64,
     mip_maps = 4,
     category = "enriching-crushed-resource",
@@ -1336,8 +1333,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-enriched-chromite-from-crushed-resource",  -- #ForRegEx# - recipe
-    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/enriched-chromite-1.png", 64,
-                                         "__Spaghetorio__/graphics/icons/crushed-chromite-1.png", 64),
+    icons = util.icon.create_enriching_recipe_icon(data.raw.item["sp-crushed-chromite"], data.raw.item["sp-enriched-chromite"]),
     icon_size = 64,
     mip_maps = 4,
     category = "enriching-crushed-resource",
@@ -1366,8 +1362,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-enriched-magnesium-from-crushed-resource",  -- #ForRegEx# - recipe
-    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/enriched-magnesium-1.png", 64,
-                                         "__Spaghetorio__/graphics/icons/crushed-magnesium-ore-1.png", 64),
+    icons = util.icon.create_enriching_recipe_icon(data.raw.item["sp-crushed-magnesium-ore"], data.raw.item["sp-enriched-magnesium"]),
     icon_size = 64,
     mip_maps = 4,
     category = "enriching-crushed-resource",
@@ -1396,8 +1391,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-enriched-nickel-from-crushed-resource",  -- #ForRegEx# - recipe
-    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/enriched-nickel-1.png", 64,
-                                         "__Spaghetorio__/graphics/icons/crushed-nickel-ore-1.png", 64),
+    icons = util.icon.create_enriching_recipe_icon(data.raw.item["sp-crushed-nickel-ore"], data.raw.item["sp-enriched-nickel"]),
     icon_size = 64,
     mip_maps = 4,
     category = "enriching-crushed-resource",
@@ -1426,8 +1420,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-enriched-tinstone-from-crushed-resource",  -- #ForRegEx# - recipe  
-    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/enriched-tinstone-1.png", 64,
-                                         "__Spaghetorio__/graphics/icons/crushed-tinstone-1.png", 64),
+    icons = util.icon.create_enriching_recipe_icon(data.raw.item["sp-crushed-tinstone"], data.raw.item["sp-enriched-tinstone"]),
     icon_size = 64,
     mip_maps = 4,
     category = "enriching-crushed-resource",
@@ -1456,8 +1449,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-enriched-titanium-from-crushed-resource",  -- #ForRegEx# - recipe
-    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/enriched-titanium-1.png", 64,
-                                         "__Spaghetorio__/graphics/icons/crushed-titanium-ore-1.png", 64),
+    icons = util.icon.create_enriching_recipe_icon(data.raw.item["sp-crushed-titanium-ore"], data.raw.item["sp-enriched-titanium"]),
     icon_size = 64,
     mip_maps = 4,
     category = "enriching-crushed-resource",
@@ -1486,8 +1478,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-enriched-tungsten-from-crushed-resource",  -- #ForRegEx# - recipe
-    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/enriched-tungsten-1.png", 64,
-                                         "__Spaghetorio__/graphics/icons/crushed-tungsten-ore-1.png", 64),
+    icons = util.icon.create_enriching_recipe_icon(data.raw.item["sp-crushed-tungsten-ore"], data.raw.item["sp-enriched-tungsten"]),
     icon_size = 64,
     mip_maps = 4,
     category = "enriching-crushed-resource",
@@ -1516,8 +1507,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-enriched-zinc-from-crushed-resource",  -- #ForRegEx# - recipe
-    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/enriched-zinc-1.png", 64,
-                                         "__Spaghetorio__/graphics/icons/crushed-zinc-ore-1.png", 64),
+    icons = util.icon.create_enriching_recipe_icon(data.raw.item["sp-crushed-zinc-ore"], data.raw.item["sp-enriched-zinc"]),
     icon_size = 64,
     mip_maps = 4,
     category = "enriching-crushed-resource",

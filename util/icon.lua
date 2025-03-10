@@ -242,4 +242,15 @@ function data_util.create_incineration_recipe_icon(item_or_fluid_to_incinerate, 
   return icons
 end
 
+function data_util.create_enriching_recipe_icon(resource, enriched_resource)
+  icons = {
+    {icon = "__Spaghetorio__/graphics/hr-icons/background.png", icon_size = 256, scale = 0.5},
+    {icon = resource.icon, icon_size = resource.icon_size, scale = 1, shift = {-30, -30}},
+    {icon = enriched_resource.icon, icon_size = enriched_resource.icon_size, scale = 1.5, shift = {20, 20}},
+    {icon = "__Spaghetorio__/graphics/arrows/enriching-arrow-256x256.png", icon_size = 256, scale = 0.5},
+  }
+
+  return icons
+end
+
 return data_util

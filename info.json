@@ -10,7 +10,7 @@
     "dependencies": ["base >= 2.0.28",
                      "space-age >= 2.0.28",
                      "SpaghetorioGraphics1 = 0.0.2",
-                     "EverythingOnNauvis = 0.1.4",
+                     "EverythingOnNauvis = 0.1.5",
                      "? aai-containers >= 0.3.1",
                      "! Custom-Production-UI-Fixed >= 0.5.22"]
 }

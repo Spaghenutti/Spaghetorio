@@ -248,6 +248,7 @@ data:extend({
 
 table.insert(data.raw["furnace"]["steel-furnace"].crafting_categories, "crushed-smelting")
 table.insert(data.raw["furnace"]["electric-furnace"].crafting_categories, "crushed-smelting")
+table.insert(data.raw["furnace"]["electric-furnace"].crafting_categories, "smelting-enriched-resource")
 table.insert(data.raw["furnace"]["electric-furnace"].crafting_categories, "intermediate-smelting")
 
 table.insert(data.raw["assembling-machine"]["centrifuge"].crafting_categories, "high-energy-physics")
