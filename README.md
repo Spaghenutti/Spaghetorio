@@ -11,12 +11,19 @@ Your factory will never be the same... because it’s going to need therapy. Enj
 ## Features
 
 - 25 new resources like **chromite**, **iodine-brine**, **core-fragment** and **blunagium**
+![](https://raw.githubusercontent.com/Spaghenutti/Spaghetorio/refs/heads/main/images/resource.png)
 - over 550 new items like **springs**, **gear box**, **integrated circuit**, **flux capacitor** and of course **dark energy harvester**
+![](https://raw.githubusercontent.com/Spaghenutti/Spaghetorio/refs/heads/main/images/metals.png)
+![](https://raw.githubusercontent.com/Spaghenutti/Spaghetorio/refs/heads/main/images/alloys.png)
+![](https://raw.githubusercontent.com/Spaghenutti/Spaghetorio/refs/heads/main/images/intermediates.png)
+![](https://raw.githubusercontent.com/Spaghenutti/Spaghetorio/refs/heads/main/images/alien.png)
 - over 70 new fluids like **aqueous niobium**, **helium 3**, **glycerin** and **chronomatter**
+![](https://raw.githubusercontent.com/Spaghenutti/Spaghetorio/refs/heads/main/images/fluids.png)
 - over 40 new buildings like **alloy forge**, **induction hardening facility** and **electrolysis plant**
+![](https://raw.githubusercontent.com/Spaghenutti/Spaghetorio/refs/heads/main/images/buildings.png)
+- 30 new science packs                                    
+![](https://raw.githubusercontent.com/Spaghenutti/Spaghetorio/refs/heads/main/images/science-packs-tier-3.png)
 - over 750 new recipes including different production chains for processing resources and intermediate products
-- 30 new science packs split into 3 different tiers
-![](https://raw.githubusercontent.com/Spaghenutti/Spaghetorio/refs/heads/main/images/science-packs.png)
 - over 250 new techonolgies
 
 ## Current state of the mod
@@ -44,6 +51,11 @@ If you have some cool ideas you can give me feedback in the discussions section.
 - Support for [text plates](https://mods.factorio.com/mod/textplates?from=search)
 - Support for [LTN](https://mods.factorio.com/mod/LogisticTrainNetwork?from=search)
 
+## Reviews
+
+- [eotinb](https://mods.factorio.com/user/eotinb) -- [I can't stop playing.](https://mods.factorio.com/mod/Spaghetorio/discussion/67c88c6555a86e9a3e4572d1)
+- [Eri_](https://mods.factorio.com/user/Eri_) -- [I am by no means far in, but wow. [...] I love it.](https://mods.factorio.com/mod/Spaghetorio/discussion/67ce63d441f6766d0347c63e)
+
 ## Contributors
 
 - [S3BA](https://mods.factorio.com/user/S3BA) for polish translations
@@ -53,3 +65,4 @@ If you have some cool ideas you can give me feedback in the discussions section.
 
 - [Hurricane046](https://mods.factorio.com/user/Hurricane046) for his awesome [graphics](https://www.figma.com/proto/y1IQG08ZG2jIeJ5sTyF4MP/Factorio-Buildings?node-id=14934-304&node-type=frame&t=tk88gXWNIga60zMr-0&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=2585%3A1158&hotspot-hints=0&hide-ui=1)
 - [raiguard](https://mods.factorio.com/user/raiguard) for [Krastorio 2](https://mods.factorio.com/mod/Krastorio2) and letting me use some of his awesome graphics
+- [eotinb](https://mods.factorio.com/user/eotinb) for suggestions and bug reporting
