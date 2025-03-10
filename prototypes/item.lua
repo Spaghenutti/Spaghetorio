@@ -4553,7 +4553,7 @@ data:extend({
   ------------------------------------------------------------------------------
   {
     type = "item",
-    name = "sp-biomass",
+    name = "sp-biomass",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/biomass/biomass.png",
     icon_size = 64,
     icon_mipmaps = 4,
@@ -6856,7 +6856,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "production-machine",
-    order = "c2[advanced-assembling-machine]",
+    order = "c[assembling-machine-4]",
     place_result = "sp-kr-advanced-assembling-machine",
     stack_size = 50,
   },

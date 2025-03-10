@@ -3267,7 +3267,7 @@ data:extend({
       --   recipe = "enriched-copper-plate",
       -- },
     },
-    prerequisites = {"utility-science-pack"},
+    prerequisites = {"sp-kr-advanced-chemistry"},
     unit = {
       count = 1000,
       ingredients = {
@@ -8464,14 +8464,10 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "sp-nitric-acid",
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-vanadyl-sulfate",
       }
     },
     prerequisites = {
-      "sp-chemical-science-pack-3"
+      "utility-science-pack"
     },
     unit = {
       count = 1000,
@@ -8484,7 +8480,8 @@ data:extend({
         {"sp-chemical-science-pack-2", 1},
         {"sp-metallurgic-science-pack-2", 1},
         {"sp-electromagnetic-science-pack-2", 1},
-        {"production-science-pack", 1}
+        {"production-science-pack", 1},
+        {"utility-science-pack", 1}
       },
       time = 45,
     },
