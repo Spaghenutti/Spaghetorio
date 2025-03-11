@@ -1462,14 +1462,16 @@ util.recipe.change_recipe_ingredients("centrifuge",
 
 util.recipe.change_recipe_ingredients("beacon",
   {
+    {type = "item", name = "sp-nimonic", amount = 12},
+    {type = "item", name = "sp-vanadium-aluminum", amount = 8},
     {type = "item", name = "sp-heatsink", amount = 20},
-    {type = "item", name = "sp-stainless-steel", amount = 12},
-    {type = "item", name = "advanced-circuit", amount = 4},
-    {type = "item", name = "concrete", amount = 16},
+    {type = "item", name = "sp-heat-resistant-electronics", amount = 4},
+    {type = "item", name = "sp-variable-frequenzy-drive", amount = 4},
     {type = "item", name = "sp-dynamo", amount = 3},
     {type = "item", name = "sp-bolts", amount = 40},
     {type = "item", name = "sp-insulated-wire", amount = 20},
-    {type = "item", name = "sp-transformer", amount = 2}
+    {type = "item", name = "sp-transformer", amount = 2},
+    {type = "item", name = "concrete", amount = 16}
   },
   30)
 
@@ -1579,7 +1581,7 @@ util.recipe.change_recipe_ingredients("heat-exchanger",
 
 util.recipe.change_recipe_ingredients("steam-turbine",
   {
-    {type = "item", name = "electric-engine-unit", amount = 4},
+    {type = "item", name = "sp-big-electric-engine-unit", amount = 1},
     {type = "item", name = "sp-pressure-tube", amount = 12},
     {type = "item", name = "sp-turbine-rotor", amount = 1},
     {type = "item", name = "sp-turbine-stator", amount = 1},

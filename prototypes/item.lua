@@ -3598,7 +3598,7 @@ data:extend({
     subgroup = "intermediate-product",
     order = "pressure-[pressure-tube]",
     stack_size = 100
-  }, 
+  },
   {
     type = "item",
     name = "sp-diamond-saw",  -- #ForRegEx# - item

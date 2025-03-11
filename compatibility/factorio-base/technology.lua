@@ -469,8 +469,7 @@ data.raw.technology["advanced-circuit"].unit.ingredients = {
 }
 
 data.raw.technology["processing-unit"].prerequisites = {
-  "sp-composites",
-  "sp-optical-sensor"
+  "utility-science-pack"
 }
 table.insert(data.raw.technology["processing-unit"].effects, {type = "unlock-recipe", recipe = "sp-empty-circuit-board"})
 table.insert(data.raw.technology["processing-unit"].effects, {type = "unlock-recipe", recipe = "sp-circuit-board"})
@@ -479,10 +478,13 @@ data.raw.technology["processing-unit"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},
   {"sp-logistic-science-pack-2", 1},
   {"sp-material-science-pack-2", 1},
+  {"sp-geological-science-pack-2", 1},
   {"sp-electronic-science-pack-2", 1},
   {"sp-chemical-science-pack-2", 1},
-  {"sp-computer-science-pack-2", 1},
-  {"production-science-pack", 1}
+  {"sp-metallurgic-science-pack-2", 1},
+  {"sp-electromagnetic-science-pack-2", 1},
+  {"production-science-pack", 1},
+  {"utility-science-pack", 1}
 }
 
 data.raw.technology["advanced-oil-processing"].unit.ingredients = {
@@ -759,9 +761,11 @@ data.raw.technology["personal-roboport-mk2-equipment"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},
   {"sp-logistic-science-pack-2", 1},
   {"sp-material-science-pack-2", 1},
+  {"sp-geological-science-pack-2", 1},
   {"sp-electronic-science-pack-2", 1},
   {"sp-chemical-science-pack-2", 1},
-  {"sp-computer-science-pack-2", 1},
+  {"sp-metallurgic-science-pack-2", 1},
+  {"sp-electromagnetic-science-pack-2", 1},
   {"production-science-pack", 1},
   {"utility-science-pack", 1}
 }

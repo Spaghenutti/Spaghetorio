@@ -1256,7 +1256,6 @@ data:extend({
     enabled = false,
     allow_productivity = true,
     energy_required = 2.5,
-    hide_from_player_crafting = true,
     ingredients = {
       {type = "item", name = "sp-crushed-copper-ore", amount = 8},
       {type = "fluid", name = "sulfuric-acid", amount = 3},
@@ -1285,7 +1284,6 @@ data:extend({
     enabled = false,
     allow_productivity = true,
     energy_required = 1.5,
-    hide_from_player_crafting = true,
     ingredients = {
       {type = "item", name = "sp-crushed-iron-ore", amount = 8},
       {type = "fluid", name = "sp-chlorine", amount = 2},
@@ -1313,7 +1311,6 @@ data:extend({
     enabled = false,
     allow_productivity = true,
     energy_required = 1.5,
-    hide_from_player_crafting = true,
     ingredients = {
       {type = "item", name = "sp-crushed-aluminum-ore", amount = 8},
       {type = "fluid", name = "sp-chlorine", amount = 2},
@@ -1341,7 +1338,6 @@ data:extend({
     enabled = false,
     allow_productivity = true,
     energy_required = 1.5,
-    hide_from_player_crafting = true,
     ingredients = {
       {type = "item", name = "sp-crushed-chromite", amount = 8},
       {type = "fluid", name = "sulfuric-acid", amount = 4},
@@ -1370,7 +1366,6 @@ data:extend({
     enabled = false,
     allow_productivity = true,
     energy_required = 1.5,
-    hide_from_player_crafting = true,
     ingredients = {
       {type = "item", name = "sp-crushed-magnesium-ore", amount = 8},
       {type = "fluid", name = "sp-liquid-sodium", amount = 1},
@@ -1399,7 +1394,6 @@ data:extend({
     enabled = false,
     allow_productivity = true,
     energy_required = 1.5,
-    hide_from_player_crafting = true,
     ingredients = {
       {type = "item", name = "sp-crushed-nickel-ore", amount = 7},
       {type = "fluid", name = "sulfuric-acid", amount = 2},
@@ -1428,7 +1422,6 @@ data:extend({
     enabled = false,
     allow_productivity = true,
     energy_required = 2,
-    hide_from_player_crafting = true,
     ingredients = {
       {type = "item", name = "sp-crushed-tinstone", amount = 5},
       {type = "fluid", name = "sp-nitric-acid", amount = 1},
@@ -1457,7 +1450,6 @@ data:extend({
     enabled = false,
     allow_productivity = true,
     energy_required = 3,
-    hide_from_player_crafting = true,
     ingredients = {
       {type = "item", name = "sp-crushed-titanium-ore", amount = 12},
       {type = "fluid", name = "ammonia", amount = 3},
@@ -1486,7 +1478,6 @@ data:extend({
     enabled = false,
     allow_productivity = true,
     energy_required = 2,
-    hide_from_player_crafting = true,
     ingredients = {
       {type = "item", name = "sp-crushed-tungsten-ore", amount = 8},
       {type = "fluid", name = "sp-nitric-acid", amount = 4},
@@ -1515,7 +1506,6 @@ data:extend({
     enabled = false,
     allow_productivity = true,
     energy_required = 2.5,
-    hide_from_player_crafting = true,
     ingredients = {
       {type = "item", name = "sp-crushed-zinc-ore", amount = 10},
       {type = "item", name = "sp-sodium-carbonate", amount = 3},
@@ -9195,6 +9185,21 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "sp-diamond-saw",  -- #ForRegEx# - recipe
+    category = "manufacturing",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 2,
+    ingredients = {
+      {type = "item", name = "sp-diamond", amount = 1},
+      {type = "item", name = "sp-maraging-steel", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-diamond-saw", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
     name = "sp-automation-science-pack-2",  -- #ForRegEx# - recipe
     category = "manufacturing",
     enabled = false,
@@ -10274,6 +10279,7 @@ data:extend({
       {type = "item", name = "sp-nickel-cobalt", amount = 30},
       {type = "item", name = "sp-ceramics", amount = 30},
       {type = "item", name = "sp-crucible", amount = 20},
+      {type = "item", name = "sp-diamond-saw", amount = 4},
       {type = "item", name = "sp-heating-filament", amount = 6},
       {type = "item", name = "electric-engine-unit", amount = 4},
       {type = "item", name = "refined-concrete", amount = 40}
@@ -10516,13 +10522,17 @@ data:extend({
     category = "crafting",
     enabled = false,
     allow_productivity = true,
-    energy_required = 45,
+    energy_required = 80,
     ingredients = {
+      {type = "item", name = "sp-niobium-steel", amount = 40},
       {type = "item", name = "sp-titanium-aluminum-tin", amount = 20},
-      {type = "item", name = "sp-stainless-steel", amount = 40},
+      {type = "item", name = "sp-chromium-cobalt", amount = 20},
       {type = "item", name = "sp-glass", amount = 60},
       {type = "item", name = "processing-unit", amount = 32},
+      {type = "item", name = "sp-infrared-sensor", amount = 32},
       {type = "item", name = "sp-compressor", amount = 8},
+      {type = "item", name = "sp-condenser-coil", amount = 20},
+      {type = "item", name = "sp-high-pressure-fan", amount = 8},
       {type = "item", name = "sp-filter", amount = 60},
       {type = "item", name = "sp-pressure-tube", amount = 40},
       {type = "item", name = "sp-copper-tube", amount = 100},
