@@ -45,7 +45,8 @@ data.raw.technology["tungsten-steel"].unit = {
 
 data.raw.technology["stack-inserter"].prerequisites = {
     "sp-advanced-gearbox",
-    "sp-control-unit"
+    "sp-control-unit",
+    "inserter-capacity-bonus-2"
   }
 data.raw.technology["stack-inserter"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},

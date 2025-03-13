@@ -1116,7 +1116,7 @@ util.recipe.change_recipe_ingredients("night-vision-equipment",
 util.recipe.change_recipe_ingredients("belt-immunity-equipment",
   {
     {type = "item", name = "processing-unit", amount = 2},
-    {type = "item", name = "sp-stainless-steel-gear-wheel", amount = 20},
+    {type = "item", name = "sp-vibration-dampener", amount = 2},
     {type = "item", name = "electric-engine-unit", amount = 2},
     {type = "item", name = "sp-bolts", amount = 12},
     {type = "item", name = "sp-titanium-frame", amount = 3},
