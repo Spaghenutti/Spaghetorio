@@ -43,7 +43,6 @@ data.raw.technology["tungsten-steel"].unit = {
   time = 30
 }
 
-table.insert(data.raw.technology["stack-inserter"].effects, {type = "unlock-recipe", recipe = "sp-lithium-chloride"})
 data.raw.technology["stack-inserter"].prerequisites = {
     "sp-advanced-gearbox",
     "sp-control-unit"
@@ -51,12 +50,30 @@ data.raw.technology["stack-inserter"].prerequisites = {
 data.raw.technology["stack-inserter"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},
   {"sp-logistic-science-pack-2", 1},
-  {"sp-chemical-science-pack-2", 1},
   {"sp-material-science-pack-2", 1},
-  {"production-science-pack", 1},
   {"sp-geological-science-pack-2", 1},
   {"sp-electronic-science-pack-2", 1},
+  {"sp-chemical-science-pack-2", 1},
+  {"sp-metallurgic-science-pack-2", 1},
+  {"sp-electromagnetic-science-pack-2", 1},
+  {"production-science-pack", 1},
   {"utility-science-pack", 1}
+}
+
+data.raw.technology["mech-armor"].prerequisites = {
+  "sp-logistic-science-pack-3"
+}
+data.raw.technology["mech-armor"].unit.ingredients = {
+{"sp-automation-science-pack-3", 1},
+{"sp-logistic-science-pack-3", 1},
+{"sp-material-science-pack-2", 1},
+{"sp-geological-science-pack-2", 1},
+{"sp-electronic-science-pack-2", 1},
+{"sp-chemical-science-pack-2", 1},
+{"sp-metallurgic-science-pack-2", 1},
+{"sp-electromagnetic-science-pack-2", 1},
+{"production-science-pack", 1},
+{"utility-science-pack", 1}
 }
 
 table.insert(data.raw.technology["advanced-combinators"].prerequisites, "advanced-circuit")
@@ -127,21 +144,25 @@ data.raw.technology["advanced-asteroid-processing"].unit.ingredients = {
   {"utility-science-pack", 1}
 }
 
+table.insert(data.raw.technology["turbo-transport-belt"].effects, {type = "unlock-recipe", recipe = "sp-kr-turbo-loader"})
 data.raw.technology["turbo-transport-belt"].prerequisites = {
   "logistics-3",
   "processing-unit",
   "low-density-structure",
-  "sp-compressor"
+  "sp-compressor",
+  "utility-science-pack"
 }
 data.raw.technology["turbo-transport-belt"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},
   {"sp-logistic-science-pack-2", 1},
-  {"sp-material-science-pack-1", 1},
-  {"sp-geological-science-pack-1", 1},
-  {"sp-electronic-science-pack-1", 1},
-  {"chemical-science-pack", 1},
+  {"sp-material-science-pack-2", 1},
+  {"sp-geological-science-pack-2", 1},
+  {"sp-electronic-science-pack-2", 1},
+  {"sp-chemical-science-pack-2", 1},
   {"sp-metallurgic-science-pack-2", 1},
-  {"sp-electromagnetic-science-pack-2", 1}
+  {"sp-electromagnetic-science-pack-2", 1},
+  {"production-science-pack", 1},
+  {"utility-science-pack", 1}
 }
 
 table.insert(data.raw.technology["elevated-rail"].prerequisites, "sp-invar")
@@ -253,6 +274,8 @@ data.raw.technology["cryogenic-plant"].unit = {
   },
   time = 30
 }
+
+
 
 data.raw.technology["steel-plate-productivity"].prerequisites = {
   "sp-metallurgic-science-pack-2",

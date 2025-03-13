@@ -82,7 +82,7 @@ TODO for 0.3.7
     - boron
     - aluminum
     - polyvinyl-fluoride
-  - voltage-regulator
+  - voltage-controller
     - epoxy
     - ceramics
     - silicon
@@ -94,6 +94,7 @@ TODO for 0.3.7
       - mosfet
       - diode
       - capacitor
+      - coil
       - epoxy
       - aluminum
   - for high purity silicon

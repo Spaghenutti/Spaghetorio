@@ -112,8 +112,10 @@ data.raw.recipe["processing-unit"].category = "crafting"
 util.recipe.change_recipe_ingredients("processing-unit",
   {
     {type = "item", name = "sp-circuit-board", amount = 1},
-    {type = "item", name = "sp-integrated-circuit", amount = 6},
-    {type = "item", name = "sp-memory-chip", amount = 6}
+    {type = "item", name = "sp-integrated-circuit", amount = 2},
+    {type = "item", name = "sp-memory-chip", amount = 2},
+    {type = "item", name = "sp-mosfet", amount = 3},
+    {type = "item", name = "sp-voltage-controller", amount = 2}
   },
   1.6)
 
@@ -488,13 +490,13 @@ util.recipe.change_recipe_ingredients("fast-inserter",
 
 util.recipe.change_recipe_ingredients("stack-inserter",
   {
-    {type = "item", name = "sp-heavy-gearbox", amount = 2},
-    {type = "item", name = "sp-stainless-steel", amount = 4},
-    {type = "item", name = "sp-servo-motor", amount = 6},
+    {type = "item", name = "sp-heavy-gearbox", amount = 1},
+    {type = "item", name = "sp-stainless-steel", amount = 3},
+    {type = "item", name = "sp-servo-motor", amount = 4},
     {type = "item", name = "sp-bolts", amount = 12},
     {type = "item", name = "electric-engine-unit", amount = 2},
-    {type = "item", name = "advanced-circuit", amount = 2},
-    {type = "item", name = "sp-heavy-ball-bearing", amount = 4}
+    {type = "item", name = "sp-control-unit", amount = 1},
+    {type = "item", name = "sp-heavy-ball-bearing", amount = 2}
   },
   3)
 
@@ -1104,7 +1106,7 @@ util.recipe.change_recipe_ingredients("night-vision-equipment",
     {type = "item", name = "processing-unit", amount = 1},
     {type = "item", name = "sp-composites", amount = 2},
     {type = "item", name = "plastic-bar", amount = 2},
-    {type = "item", name = "sp-optical-sensor", amount = 2},
+    {type = "item", name = "sp-infrared-sensor", amount = 2},
     {type = "item", name = "sp-lens", amount = 6},
     {type = "item", name = "sp-laser", amount = 1},
     {type = "item", name = "sp-rubber", amount = 1}
@@ -1404,16 +1406,17 @@ util.recipe.change_recipe_ingredients("assembling-machine-2",
 util.recipe.change_recipe_ingredients("assembling-machine-3",
   {
     {type = "item", name = "processing-unit", amount = 12},
-    {type = "item", name = "electric-engine-unit", amount = 8},
+    {type = "item", name = "sp-control-unit", amount = 4},
+    {type = "item", name = "sp-big-electric-engine-unit", amount = 4},
     {type = "item", name = "sp-servo-motor", amount = 20},
-    {type = "item", name = "concrete", amount = 32},
+    {type = "item", name = "concrete", amount = 16},
     {type = "item", name = "steel-plate", amount = 25},
-    {type = "item", name = "sp-bolts", amount = 40},
+    {type = "item", name = "sp-bolts", amount = 32},
     {type = "item", name = "sp-heavy-gearbox", amount = 6},
     {type = "item", name = "sp-optical-sensor", amount = 10},
     {type = "item", name = "sp-titanium-frame", amount = 20}
   },
-  20)
+  16)
 
 -- AAI {type = "item", name = "engine-unit", amount = 5}
 util.recipe.change_recipe_ingredients("pumpjack",

@@ -30,6 +30,7 @@ data.raw["item-subgroup"]["empty-barrel"].order = "z-f"
 -- Overwrite technology change by Everything on nauvis
 data.raw.technology["holmium-processing"].prerequisites = {
   "sp-big-crusher",
+  "sp-metallurgic-science-pack-2"
 }
 data.raw.technology["holmium-processing"].research_trigger = nil
 data.raw.technology["holmium-processing"].unit = {
@@ -42,7 +43,7 @@ data.raw.technology["holmium-processing"].unit = {
     {"sp-chemical-science-pack-2", 1},
     {"sp-geological-science-pack-2", 1},
     {"production-science-pack", 1},
-    {"metallurgic-science-pack", 1},
+    {"sp-metallurgic-science-pack-2", 1},
     {"electromagnetic-science-pack", 1}
   },
   time = 30

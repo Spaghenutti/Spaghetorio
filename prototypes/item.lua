@@ -2277,7 +2277,27 @@ data:extend({
     icon_size = 64,
     scale = 0.5,
     subgroup = "advanced-raw-material",
-    order = "crystal-[high-purity-silicon]",
+    order = "crystal-silicon-[high-purity-silicon]",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "sp-n-type-polysilicon",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/n-type-polysilicon.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "advanced-raw-material",
+    order = "crystal-silicon-[n-type-polysilicon]",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "sp-p-type-polysilicon",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/p-type-polysilicon.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "advanced-raw-material",
+    order = "crystal-silicon-[p-type-polysilicon]",
     stack_size = 100
   },
   {
@@ -3388,6 +3408,26 @@ data:extend({
   },
   {
     type = "item",
+    name = "sp-mosfet",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/mosfet.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "electronic-optical-component",
+    order = "semiconductor-a[mosfet]",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "sp-voltage-controller",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/voltage-controller.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "electronic-optical-component",
+    order = "semiconductor-a[voltage-controller]",
+    stack_size = 100
+  },
+  {
+    type = "item",
     name = "sp-integrated-circuit",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/integrated-circuit.png",
     icon_size = 64,
@@ -3404,6 +3444,16 @@ data:extend({
     scale = 0.5,
     subgroup = "electronic-optical-component",
     order = "semiconductor-a[memory-chip]",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "sp-voltage-regulator-module",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/voltage-regulator-module.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "electronic-optical-component",
+    order = "semiconductor-b[voltage-regulator-module]",
     stack_size = 100
   },
   {
