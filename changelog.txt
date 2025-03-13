@@ -2,7 +2,6 @@
 Version: 0.3.7
 Date: 2025-03-14
   Features:
-    - Added crystallizer
     - Added more items like mosfet, VRM, and doped silicon
   Changes:
     - Updated names for some alloys
