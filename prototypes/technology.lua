@@ -796,8 +796,10 @@ data:extend({
         {"sp-geological-science-pack-2", 1},
         {"sp-electronic-science-pack-2", 1},
         {"sp-chemical-science-pack-2", 1},
+        {"sp-metallurgic-science-pack-2", 1},
+        {"sp-electromagnetic-science-pack-2", 1},
         {"production-science-pack", 1},
-        {"utility-science-pack", 1},
+        {"utility-science-pack", 1}
       },
       time = 30
     },
@@ -5138,13 +5140,14 @@ data:extend({
       ingredients = {
         {"sp-automation-science-pack-2", 1},
         {"sp-logistic-science-pack-2", 1},
-        {"sp-electronic-science-pack-2", 1},
         {"sp-material-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1},
         {"sp-geological-science-pack-2", 1},
-        {"production-science-pack", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
         {"sp-metallurgic-science-pack-2", 1},
-        {"electromagnetic-science-pack", 1}
+        {"sp-electromagnetic-science-pack-2", 1},
+        {"production-science-pack", 1},
+        {"utility-science-pack", 1}
       },
       time = 30
     },
@@ -5162,7 +5165,8 @@ data:extend({
       },
     },
     prerequisites = {
-      "sp-turbine-parts"
+      "sp-turbine-parts",
+      "sp-control-unit"
     },
     unit =
     {
@@ -5714,7 +5718,8 @@ data:extend({
     },
     prerequisites = {
       "utility-science-pack",
-      "sp-optical-sensor"
+      "sp-optical-sensor",
+      "processing-unit"
     },
     unit =
     {
@@ -9803,13 +9808,16 @@ data:extend({
     {
       count = 500,
       ingredients = {
-        {"sp-automation-science-pack-3", 1},
+        {"sp-automation-science-pack-2", 1},
         {"sp-logistic-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1},
-        {"sp-electronic-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
         {"sp-geological-science-pack-2", 1},
-        {"space-science-pack", 1},
-        {"sp-material-science-pack-2", 1}
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-metallurgic-science-pack-2", 1},
+        {"sp-electromagnetic-science-pack-2", 1},
+        {"production-science-pack", 1},
+        {"utility-science-pack", 1}
       },
       time = 30
     },

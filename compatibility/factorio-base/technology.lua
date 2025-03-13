@@ -561,7 +561,7 @@ data.raw.technology["low-density-structure"].unit.ingredients = {
   {"utility-science-pack", 1}
 }
 
-data.raw.technology["effect-transmission"].prerequisites = {"utility-science-pack"}
+data.raw.technology["effect-transmission"].prerequisites = {"sp-high-pressure-fan"}
 data.raw.technology["effect-transmission"].unit.count = 250
 data.raw.technology["effect-transmission"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},
@@ -757,6 +757,8 @@ data.raw.technology["personal-roboport-equipment"].unit.ingredients = {
 }
 
 table.insert(data.raw.technology["personal-roboport-mk2-equipment"].prerequisites, "sp-electrode")
+table.insert(data.raw.technology["personal-roboport-mk2-equipment"].prerequisites, "sp-control-unit")
+table.insert(data.raw.technology["personal-roboport-mk2-equipment"].prerequisites, "sp-kr-lithium-sulfur-battery")
 data.raw.technology["personal-roboport-mk2-equipment"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},
   {"sp-logistic-science-pack-2", 1},

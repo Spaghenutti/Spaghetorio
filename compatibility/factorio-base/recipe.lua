@@ -1234,13 +1234,11 @@ util.recipe.change_recipe_ingredients("personal-roboport-equipment",
 
 util.recipe.change_recipe_ingredients("personal-roboport-mk2-equipment",
   {
-    {type = "item", name = "sp-circuit-board", amount = 5},
-    {type = "item", name = "sp-processor", amount = 5},
+    {type = "item", name = "sp-variable-frequenzy-drive", amount = 5},
+    {type = "item", name = "sp-control-unit", amount = 2},
     {type = "item", name = "sp-titanium-frame", amount = 12},
     {type = "item", name = "sp-bolts", amount = 10},
-    {type = "item", name = "battery", amount = 40},
-    {type = "item", name = "sp-capacitor", amount = 10},
-    {type = "item", name = "sp-electrode", amount = 8}
+    {type = "item", name = "sp-lithium-sulfur-battery", amount = 40},
   },
   20)
 
@@ -1467,6 +1465,7 @@ util.recipe.change_recipe_ingredients("beacon",
     {type = "item", name = "sp-heatsink", amount = 20},
     {type = "item", name = "sp-heat-resistant-electronics", amount = 4},
     {type = "item", name = "sp-variable-frequenzy-drive", amount = 4},
+    {type = "item", name = "sp-high-pressure-fan", amount = 1},
     {type = "item", name = "sp-dynamo", amount = 3},
     {type = "item", name = "sp-bolts", amount = 40},
     {type = "item", name = "sp-insulated-wire", amount = 20},
