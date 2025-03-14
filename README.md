@@ -55,6 +55,7 @@ If you have some cool ideas you can give me feedback in the discussions section.
 
 - [eotinb](https://mods.factorio.com/user/eotinb) -- [I can't stop playing.](https://mods.factorio.com/mod/Spaghetorio/discussion/67c88c6555a86e9a3e4572d1)
 - [Eri_](https://mods.factorio.com/user/Eri_) -- [I am by no means far in, but wow. [...] I love it.](https://mods.factorio.com/mod/Spaghetorio/discussion/67ce63d441f6766d0347c63e)
+- [muaddib912](https://mods.factorio.com/user/muaddib912) -- [Just built my first 11 recipe building.... it broke my brain lol](https://mods.factorio.com/mod/Spaghetorio/discussion/67ce28697871a8f5b9286370)
 
 ## Contributors
 
