@@ -5314,7 +5314,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-basic-circuit-board",  -- #ForRegEx# - recipe
-    category = "crafting",
+    category = "electronics",
     enabled = false,
     allow_productivity = true,
     energy_required = 2.4,
@@ -5330,16 +5330,15 @@ data:extend({
   {
     type = "recipe",
     name = "sp-circuit-board",  -- #ForRegEx# - recipe
-    category = "crafting",
+    category = "electronics",
     enabled = false,
     allow_productivity = true,
     energy_required = 3.6,
     ingredients = {
       {type = "item", name = "sp-empty-circuit-board", amount = 1},
-      {type = "item", name = "sp-vacuum-tube", amount = 2},
-      {type = "item", name = "sp-resistor", amount = 4},
-      {type = "item", name = "sp-capacitor", amount = 3},
-      {type = "item", name = "sp-light-emitting-diode", amount = 5},
+      {type = "item", name = "sp-resistor", amount = 3},
+      {type = "item", name = "sp-multi-layer-ceramic-capacitor", amount = 8},
+      {type = "item", name = "sp-light-emitting-diode", amount = 4},
       {type = "item", name = "sp-transistor", amount = 2}
     },
     results = {
@@ -5349,7 +5348,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-mosfet",  -- #ForRegEx# - recipe
-    category = "crafting",
+    category = "electronics",
     enabled = false,
     allow_productivity = true,
     energy_required = 9,
@@ -5369,7 +5368,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-integrated-circuit",  -- #ForRegEx# - recipe
-    category = "crafting",
+    category = "electronics",
     enabled = false,
     allow_productivity = true,
     energy_required = 12,
@@ -5389,7 +5388,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-memory-chip",  -- #ForRegEx# - recipe
-    category = "crafting",
+    category = "electronics",
     enabled = false,
     allow_productivity = true,
     energy_required = 8,
@@ -5408,7 +5407,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-antenna-chip",  -- #ForRegEx# - recipe
-    category = "crafting",
+    category = "electronics",
     enabled = false,
     allow_productivity = true,
     energy_required = 4.4,
@@ -5427,7 +5426,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-circuit-die",  -- #ForRegEx# - recipe
-    category = "crafting",
+    category = "electronics",
     enabled = false,
     allow_productivity = true,
     energy_required = 20,
@@ -5447,7 +5446,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-memory-die",  -- #ForRegEx# - recipe
-    category = "crafting",
+    category = "electronics",
     enabled = false,
     allow_productivity = true,
     energy_required = 16,
@@ -5468,7 +5467,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-processor",  -- #ForRegEx# - recipe
-    category = "crafting",
+    category = "electronics",
     enabled = false,
     allow_productivity = true,
     energy_required = 3,
@@ -5486,7 +5485,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-cmos",  -- #ForRegEx# - recipe
-    category = "crafting",
+    category = "electronics",
     enabled = false,
     allow_productivity = true,
     energy_required = 6,
@@ -5501,6 +5500,95 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-cmos", amount = 2}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-diode",  -- #ForRegEx# - recipe
+    category = "electronics",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 2,
+    ingredients = {
+      {type = "item", name = "sp-silicon", amount = 1},
+      {type = "item", name = "copper-cable", amount = 1},
+      {type = "item", name = "sp-phosphorus", amount = 2},
+      {type = "item", name = "plastic-bar", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-diode", amount = 3}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-multi-layer-ceramic-capacitor",  -- #ForRegEx# - recipe
+    category = "electronics",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 10,
+    ingredients = {
+      {type = "item", name = "sp-barium-titanate", amount = 3},
+      {type = "item", name = "sp-nickel-ingot", amount = 1},
+      {type = "item", name = "sp-silver-solder", amount = 1},
+      {type = "item", name = "sp-glass-fiber", amount = 1},
+      {type = "item", name = "sp-palladium", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-multi-layer-ceramic-capacitor", amount = 10}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-light-emitting-diode",  -- #ForRegEx# - recipe
+    category = "electronics",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 5,
+    ingredients = {
+      {type = "item", name = "copper-cable", amount = 2},
+      {type = "item", name = "sp-glass", amount = 1},
+      {type = "item", name = "sp-silicon", amount = 2},
+      {type = "item", name = "sp-phosphorus", amount = 1},
+      {type = "item", name = "sp-gallium-nitride", amount = 2}
+    },
+    results = {
+      {type = "item", name = "sp-light-emitting-diode", amount = 6}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-infrared-light-emitting-diode",  -- #ForRegEx# - recipe
+    category = "electronics",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 6,
+    ingredients = {
+      {type = "item", name = "copper-cable", amount = 2},
+      {type = "item", name = "sp-glass", amount = 1},
+      {type = "item", name = "sp-silicon", amount = 3},
+      {type = "item", name = "sp-aluminum-gallium-arsenide", amount = 2},
+      {type = "item", name = "sp-sapphire", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-infrared-light-emitting-diode", amount = 8}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-photodiode",  -- #ForRegEx# - recipe
+    category = "electronics",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 4,
+    ingredients = {
+      {type = "item", name = "copper-cable", amount = 2},
+      {type = "item", name = "sp-aluminum-sheet", amount = 1},
+      {type = "item", name = "sp-polyvinyl-fluoride", amount = 1},
+      {type = "item", name = "sp-germanium", amount = 2},
+      {type = "item", name = "sp-mercury-cadmium-telluride", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-photodiode", amount = 4}
     }
   },
   ------------------------------------------------------------------------------
@@ -5581,6 +5669,25 @@ data:extend({
     results = {
       {type = "item", name = "sp-lithium-sulfur-battery", amount = 1}
     },
+  },
+  {
+    type = "recipe",
+    name = "sp-laser",  -- #ForRegEx# - recipe
+    category = "electronics-with-fluid",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 4,
+    ingredients = {
+      {type = "item", name = "plastic-bar", amount = 1},
+      {type = "item", name = "sp-silicon", amount = 1},
+      {type = "item", name = "sp-aluminum-sheet", amount = 1},
+      {type = "item", name = "sp-silver", amount = 1},
+      {type = "item", name = "sp-barium-carbonate", amount = 1},
+      {type = "fluid", name = "sp-helium", amount = 10}
+    },
+    results = {
+      {type = "item", name = "sp-laser", amount = 1}
+    }
   },
   ------------------------------------------------------------------------------
   -- MARK: electromagnetics
@@ -15370,96 +15477,6 @@ data:extend({
       quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
     },
     order = "[liquid]-[bleach]"
-  },
-  {
-    type = "recipe",
-    name = "sp-diode",  -- #ForRegEx# - recipe
-    category = "crafting",
-    enabled = false,
-    allow_productivity = true,
-    energy_required = 2,
-    ingredients = {
-      {type = "item", name = "sp-silicon", amount = 1},
-      {type = "item", name = "copper-cable", amount = 1},
-      {type = "item", name = "sp-phosphorus", amount = 2},
-      {type = "item", name = "plastic-bar", amount = 1}
-    },
-    results = {
-      {type = "item", name = "sp-diode", amount = 3}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-light-emitting-diode",  -- #ForRegEx# - recipe
-    category = "crafting",
-    enabled = false,
-    allow_productivity = true,
-    energy_required = 5,
-    ingredients = {
-      {type = "item", name = "copper-cable", amount = 2},
-      {type = "item", name = "sp-glass", amount = 1},
-      {type = "item", name = "sp-silicon", amount = 2},
-      {type = "item", name = "sp-phosphorus", amount = 1},
-      {type = "item", name = "sp-gallium-nitride", amount = 2}
-    },
-    results = {
-      {type = "item", name = "sp-light-emitting-diode", amount = 6}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-infrared-light-emitting-diode",  -- #ForRegEx# - recipe
-    category = "crafting",
-    enabled = false,
-    allow_productivity = true,
-    energy_required = 6,
-    ingredients = {
-      {type = "item", name = "copper-cable", amount = 2},
-      {type = "item", name = "sp-glass", amount = 1},
-      {type = "item", name = "sp-silicon", amount = 3},
-      {type = "item", name = "sp-aluminum-gallium-arsenide", amount = 2},
-      {type = "item", name = "sp-sapphire", amount = 1}
-    },
-    results = {
-      {type = "item", name = "sp-infrared-light-emitting-diode", amount = 8}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-photodiode",  -- #ForRegEx# - recipe
-    category = "crafting",
-    enabled = false,
-    allow_productivity = true,
-    energy_required = 4,
-    ingredients = {
-      {type = "item", name = "copper-cable", amount = 2},
-      {type = "item", name = "sp-aluminum-sheet", amount = 1},
-      {type = "item", name = "sp-polyvinyl-fluoride", amount = 1},
-      {type = "item", name = "sp-germanium", amount = 2},
-      {type = "item", name = "sp-mercury-cadmium-telluride", amount = 1},
-    },
-    results = {
-      {type = "item", name = "sp-photodiode", amount = 4}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-laser",  -- #ForRegEx# - recipe
-    category = "crafting-with-fluid",
-    enabled = false,
-    allow_productivity = true,
-    energy_required = 4,
-    ingredients = {
-      {type = "item", name = "plastic-bar", amount = 1},
-      {type = "item", name = "sp-silicon", amount = 1},
-      {type = "item", name = "sp-aluminum-sheet", amount = 1},
-      {type = "item", name = "sp-silver", amount = 1},
-      {type = "item", name = "sp-barium-carbonate", amount = 1},
-      {type = "fluid", name = "sp-helium", amount = 10}
-    },
-    results = {
-      {type = "item", name = "sp-laser", amount = 1}
-    }
   },
   {
     type = "recipe",

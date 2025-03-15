@@ -2032,7 +2032,7 @@ data:extend({
     name = "sp-optics",  -- #ForRegEx# - technology
     icon_size = 256,
     mip_maps = 4,
-    icon = "__base__/graphics/technology/lamp.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/lens.png",
     effects =
     {
       {
@@ -2076,7 +2076,7 @@ data:extend({
     },
     unit =
     {
-      count = 500,
+      count = 300,
       ingredients = {
         {"sp-automation-science-pack-2", 1},
         {"sp-logistic-science-pack-2", 1},

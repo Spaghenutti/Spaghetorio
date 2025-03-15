@@ -471,11 +471,13 @@ data.raw.technology["advanced-circuit"].unit.ingredients = {
 }
 
 data.raw.technology["processing-unit"].prerequisites = {
-  "utility-science-pack"
+  "utility-science-pack",
+  "sp-optics"
 }
 table.insert(data.raw.technology["processing-unit"].effects, {type = "unlock-recipe", recipe = "sp-empty-circuit-board"})
 table.insert(data.raw.technology["processing-unit"].effects, {type = "unlock-recipe", recipe = "sp-circuit-board"})
 table.insert(data.raw.technology["processing-unit"].effects, {type = "unlock-recipe", recipe = "sp-light-emitting-diode"})
+table.insert(data.raw.technology["processing-unit"].effects, {type = "unlock-recipe", recipe = "sp-multi-layer-ceramic-capacitor"})
 data.raw.technology["processing-unit"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},
   {"sp-logistic-science-pack-2", 1},

@@ -3308,6 +3308,16 @@ data:extend({
   },
   {
     type = "item",
+    name = "sp-multi-layer-ceramic-capacitor",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/multi-layer-ceramic-capacitor.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "electronic-optical-component",
+    order = "basic-[multi-layer-ceramic-capacitor]",
+    stack_size = 200
+  },
+  {
+    type = "item",
     name = "sp-light-emitting-diode",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/light-emitting-diode.png",
     icon_size = 64,
