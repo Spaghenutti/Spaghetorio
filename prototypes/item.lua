@@ -1395,6 +1395,16 @@ data:extend({
   ------------------------------------------------------------------------------
   {
     type = "item",
+    name = "sp-aluminum-powder",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/aluminum-powder.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "processed-metal",
+    order = "[aluminum-powder]",
+    stack_size = 200
+  },
+  {
+    type = "item",
     name = "sp-beryllium",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/beryllium.png",
     icon_size = 64,
@@ -1402,7 +1412,8 @@ data:extend({
     subgroup = "processed-metal",
     order = "[beryllium]",
     stack_size = 100
-  },  {
+  },
+  {
     type = "item",
     name = "sp-sodium",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/sodium.png",

@@ -6542,6 +6542,20 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "sp-aluminum-powder",  -- #ForRegEx# - recipe
+    category = "crushing",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 2,
+    ingredients = {
+      {type = "item", name = "sp-aluminum-sheet", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-aluminum-powder", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
     name = "sp-imersite-powder",  -- #ForRegEx# - recipe
     icon = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/imersite-powder/imersite-powder.png",
     icon_size = 64,
@@ -8670,9 +8684,11 @@ data:extend({
       {type = "item", name = "sp-titanium-frame", amount = 5},
       {type = "item", name = "sp-machined-parts", amount = 8},
       {type = "item", name = "sp-phosphorus", amount = 1},
+      {type = "item", name = "carbon-fiber", amount = 6},
       {type = "item", name = "tungsten-plate", amount = 2},
       {type = "item", name = "sp-insulation-sheet", amount = 2},
-      {type = "item", name = "solid-fuel", amount = 10}
+      {type = "item", name = "sp-ammonium-persulfate", amount = 10},
+      {type = "item", name = "sp-aluminum-powder", amount = 10},
     },
     results = {
       {type = "item", name = "sp-solid-rocket-motor", amount = 1}

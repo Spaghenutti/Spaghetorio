@@ -879,11 +879,12 @@ util.recipe.change_recipe_ingredients("piercing-shotgun-shell",
 
 util.recipe.change_recipe_ingredients("rocket-launcher",
   {
-    {type = "item", name = "sp-stainless-steel", amount = 4},
-    {type = "item", name = "sp-brass", amount = 1},
-    {type = "item", name = "sp-machined-parts", amount = 10},
-    {type = "item", name = "carbon", amount = 2},
-    {type = "item", name = "sp-bolts", amount = 4}
+    {type = "item", name = "sp-maraging-steel", amount = 6},
+    {type = "item", name = "sp-niobium-steel", amount = 1},
+    {type = "item", name = "sp-brass", amount = 2},
+    {type = "item", name = "sp-rubber", amount = 2},
+    {type = "item", name = "sp-bolts", amount = 4},
+    {type = "item", name = "sp-spring", amount = 4}
   },
   10)
 
@@ -900,7 +901,8 @@ util.recipe.change_recipe_ingredients("flamethrower",
 
 util.recipe.change_recipe_ingredients("flamethrower-ammo",
   {
-    {type = "item", name = "sp-lead-slab", amount = 3},
+    {type = "item", name = "sp-lead-slab", amount = 1},
+    {type = "item", name = "sp-nickel-cobalt", amount = 2},
     {type = "item", name = "sp-flange", amount = 1},
     {type = "fluid", name = "crude-oil", amount = 100}
   },
@@ -913,6 +915,17 @@ util.recipe.change_recipe_ingredients("grenade",
     {type = "item", name = "carbon", amount = 4}
   },
   5)
+
+util.recipe.change_recipe_ingredients("cluster-grenade",
+  {
+    {type = "item", name = "sp-vanadium-steel", amount = 3},
+    {type = "item", name = "sp-tungsten-powder", amount = 6},
+    {type = "item", name = "sp-ammonium-persulfate", amount = 8},
+    {type = "item", name = "sp-spring", amount = 2},
+    {type = "item", name = "explosives", amount = 5},
+    {type = "item", name = "grenade", amount = 7}
+  },
+  8)
 
 data.raw.recipe["poison-capsule"].category = "crafting-with-fluid"
 util.recipe.change_recipe_ingredients("poison-capsule",
@@ -951,23 +964,22 @@ util.recipe.change_recipe_ingredients("land-mine",
 
 util.recipe.change_recipe_ingredients("rocket",
   {
-    {type = "item", name = "advanced-circuit", amount = 1},
+    {type = "item", name = "sp-control-unit", amount = 1},
+    {type = "item", name = "sp-infrared-sensor", amount = 1},
     {type = "item", name = "sp-solid-rocket-motor", amount = 1},
-    {type = "item", name = "sp-aluminum-sheet", amount = 1},
     {type = "item", name = "explosives", amount = 1}
   },
   4)
 
 util.recipe.change_recipe_ingredients("explosive-rocket",
   {
-    {type = "item", name = "advanced-circuit", amount = 2},
-    {type = "item", name = "sp-insulated-wire", amount = 3},
-    {type = "item", name = "sp-solid-rocket-motor", amount = 1},
-    {type = "item", name = "sp-aluminum-sheet", amount = 1},
+    {type = "item", name = "rocket", amount = 1},
+    {type = "item", name = "sp-niobium-powder", amount = 1},
+    {type = "item", name = "sp-aluminum-powder", amount = 5},
+    {type = "item", name = "sp-ammonium-persulfate", amount = 5},
     {type = "item", name = "explosives", amount = 5},
-    {type = "item", name = "sp-ammonium-paratungstate", amount = 1}
   },
-  8)
+  6)
 
 util.recipe.change_recipe_ingredients("cannon-shell",
   {
@@ -1035,7 +1047,6 @@ util.recipe.change_recipe_ingredients("defender-capsule",
     {type = "item", name = "flying-robot-frame", amount = 1},
     {type = "item", name = "electric-engine-unit", amount = 1},
     {type = "item", name = "submachine-gun", amount = 1},
-    {type = "item", name = "sp-laser", amount = 2},
     {type = "item", name = "advanced-circuit", amount = 5},
     {type = "item", name = "battery", amount = 4},
     {type = "item", name = "sp-inconel", amount = 2}
@@ -1146,11 +1157,14 @@ util.recipe.change_recipe_ingredients("belt-immunity-equipment",
 util.recipe.change_recipe_ingredients("energy-shield-equipment",
   {
     {type = "item", name = "advanced-circuit", amount = 5},
-    {type = "item", name = "sp-aluminum-frame", amount = 5},
-    {type = "item", name = "steel-plate", amount = 2},
-    {type = "item", name = "copper-cable", amount = 10}
+    {type = "item", name = "sp-titanium-frame", amount = 2},
+    {type = "item", name = "sp-elgiloy", amount = 5},
+    {type = "item", name = "sp-bolts", amount = 12},
+    {type = "item", name = "sp-electrode", amount = 2},
+    {type = "item", name = "sp-insulation-sheet", amount = 4},
+    {type = "item", name = "sp-insulated-wire", amount = 10}
   },
-  10)
+  12)
 
 util.recipe.change_recipe_ingredients("energy-shield-mk2-equipment",
   {
@@ -1670,9 +1684,11 @@ util.recipe.change_recipe_ingredients("laser-turret",
 util.recipe.change_recipe_ingredients("flamethrower-turret",
   {
     {type = "item", name = "steel-plate", amount = 30},
-    {type = "item", name = "sp-inconel", amount = 4},
-    {type = "item", name = "sp-bolts", amount = 30},
-    {type = "item", name = "sp-pressure-tube", amount = 10},
+    {type = "item", name = "sp-lead-slab", amount = 12},
+    {type = "item", name = "sp-nickel-cobalt", amount = 8},
+    {type = "item", name = "sp-bolts", amount = 24},
+    {type = "item", name = "sp-pressure-tube", amount = 6},
+    {type = "item", name = "sp-valve", amount = 6},
     {type = "item", name = "sp-flange", amount = 6},
     {type = "item", name = "engine-unit", amount = 5},
     {type = "item", name = "pump", amount = 2}
