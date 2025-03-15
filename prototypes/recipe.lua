@@ -8111,9 +8111,12 @@ data:extend({
     ingredients =
     {
       {type = "item", name = "military-science-pack", amount = 20},
+      {type = "item", name = "piercing-rounds-magazine", amount = 20},
+      {type = "item", name = "shotgun-shell", amount = 20},
+      {type = "item", name = "slowdown-capsule", amount = 5},
+      {type = "item", name = "poison-capsule", amount = 5},
       {type = "item", name = "combat-shotgun", amount = 2},
-      {type = "item", name = "modular-armor", amount = 2},
-      {type = "item", name = "gun-turret", amount = 1}
+      {type = "item", name = "modular-armor", amount = 1}
     },
     results = {
       {type = "item", name = "sp-military-science-pack-2", amount = 5}
@@ -8757,6 +8760,7 @@ data:extend({
     energy_required = 30,
     ingredients = {
       {type = "item", name = "sp-control-rod", amount = 50},
+      {type = "item", name = "sp-actuator", amount = 50},
       {type = "item", name = "sp-pressure-tube", amount = 10},
       {type = "item", name = "sp-plate-heat-exchanger", amount = 4},
       {type = "item", name = "sp-valve", amount = 16},
@@ -10489,11 +10493,28 @@ data:extend({
     category = "crafting",
     enabled = false,
     allow_productivity = true,
-    energy_required = 69,
+    energy_required = 240,
     ingredients = {
-      {type = "item", name = "iron-plate", amount = 69},
-      {type = "item", name = "sp-lead-molybdate", amount = 10},
-
+      {type = "item", name = "refined-concrete", amount = 240},
+      {type = "item", name = "sp-maraging-steel", amount = 100},
+      {type = "item", name = "sp-niobium-steel", amount = 80},
+      {type = "item", name = "sp-tungsten-steel", amount = 50},
+      {type = "item", name = "sp-reactor-core", amount = 1},
+      {type = "item", name = "pump", amount = 10},
+      {type = "item", name = "sp-peltier-cell", amount = 40},
+      {type = "item", name = "sp-thermocouple", amount = 60},
+      {type = "item", name = "sp-copper-tube", amount = 300},
+      {type = "item", name = "sp-condenser-coil", amount = 40},
+      {type = "item", name = "sp-cryostat", amount = 10},
+      {type = "item", name = "heat-pipe", amount = 50},
+      {type = "item", name = "sp-pressure-valve", amount = 50},
+      {type = "item", name = "sp-plate-heat-exchanger", amount = 80},
+      {type = "item", name = "sp-heatsink", amount = 120},
+      {type = "item", name = "sp-control-unit", amount = 100},
+      {type = "item", name = "sp-heavy-ball-bearing", amount = 20},
+      {type = "item", name = "sp-high-pressure-tank", amount = 40},
+      {type = "item", name = "sp-big-electric-engine-unit", amount = 20},
+      {type = "item", name = "sp-bolts", amount = 1000}
     },
     results = {
       {type = "item", name = "sp-breeder-reactor", amount = 1}

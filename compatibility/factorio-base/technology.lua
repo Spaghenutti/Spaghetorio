@@ -708,7 +708,8 @@ data.raw.technology["belt-immunity-equipment"].unit.ingredients = {
 }
 
 data.raw.technology["fission-reactor-equipment"].prerequisites = {
-  "sp-nuclear-science-pack-2"
+  "sp-nuclear-science-pack-2",
+  "sp-kr-lithium-sulfur-battery"
 }
 data.raw.technology["fission-reactor-equipment"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},

@@ -3,11 +3,12 @@ Version: 0.3.8
 Date: 2025-03-22
   Features:
     - Added more items
-  Bugfixes:
+  Changes:
     - Updated recipe chain for recycler
     - Updated recipe chain for nuclear reactor
     - Updated locale
     - Updated graphics of buildings
+    - Changed military items
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.7
 Date: 2025-03-14

@@ -8006,7 +8006,8 @@ data:extend({
     },
     prerequisites = {
       "sp-nuclear-science-pack-2",
-      "sp-nuclear-waste-processing"
+      "sp-nuclear-waste-processing",
+      "cryogenic-plant"
     },
     unit = {
       count = 1000,
@@ -9105,6 +9106,7 @@ data:extend({
     },
     prerequisites = {
       "automation-3",
+      "sp-utility-science-pack-3"
     },
     unit = {
       count = 500,
@@ -9370,7 +9372,8 @@ data:extend({
       },
     },
     prerequisites = {
-      "sp-logistic-science-pack-2"
+      "sp-logistic-science-pack-2",
+      "modular-armor"
     },
     unit =
     {

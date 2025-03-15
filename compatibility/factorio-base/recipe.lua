@@ -858,11 +858,15 @@ data.raw.recipe["uranium-rounds-magazine"].results = {
 
 util.recipe.change_recipe_ingredients("shotgun-shell",
   {
-    {type = "item", name = "iron-stick", amount = 1},
-    {type = "item", name = "copper-plate", amount = 1},
-    {type = "item", name = "carbon", amount = 1}
+    {type = "item", name = "iron-stick", amount = 5},
+    {type = "item", name = "copper-plate", amount = 5},
+    {type = "item", name = "carbon", amount = 10},
+    {type = "item", name = "sp-lead-slab", amount = 1}
   },
-  2)
+  24)
+data.raw.recipe["shotgun-shell"].results = {
+    {type = "item", name = "shotgun-shell", amount = 10}
+  }
 
 util.recipe.change_recipe_ingredients("piercing-shotgun-shell",
   {
@@ -914,10 +918,23 @@ data.raw.recipe["poison-capsule"].category = "crafting-with-fluid"
 util.recipe.change_recipe_ingredients("poison-capsule",
   {
     {type = "item", name = "electronic-circuit", amount = 1},
-    {type = "item", name = "iron-plate", amount = 2},
-    {type = "item", name = "sp-chromium-plate", amount = 1},
+    {type = "item", name = "sp-stainless-steel", amount = 2},
+    {type = "item", name = "sp-spring", amount = 1},
+    {type = "item", name = "plastic-bar", amount = 1},
     {type = "item", name = "sp-glass", amount = 1},
     {type = "fluid", name = "sp-sulfamate", amount = 10}
+  },
+  6)
+
+data.raw.recipe["slowdown-capsule"].category = "crafting-with-fluid"
+util.recipe.change_recipe_ingredients("slowdown-capsule",
+  {
+    {type = "item", name = "sp-stainless-steel", amount = 2},
+    {type = "item", name = "sp-spring", amount = 1},
+    {type = "item", name = "sp-valve", amount = 1},
+    {type = "item", name = "sp-glass", amount = 1},
+    {type = "item", name = "sulfur", amount = 2},
+    {type = "fluid", name = "crude-oil", amount = 15}
   },
   8)
 
@@ -1176,6 +1193,27 @@ util.recipe.change_recipe_ingredients("solar-panel-equipment",
     {type = "item", name = "sp-insulated-wire", amount = 4}
   },
   10)
+
+util.recipe.change_recipe_ingredients("fission-reactor-equipment",
+  {
+    {type = "item", name = "sp-zircaloy", amount = 40},
+    {type = "item", name = "sp-titanium-aluminum-tin", amount = 20},
+    {type = "item", name = "sp-tungsten-steel", amount = 12},
+    {type = "item", name = "sp-uranium-fuel-rod", amount = 4},
+    {type = "item", name = "sp-control-rod", amount = 6},
+    {type = "item", name = "sp-actuator", amount = 6},
+    {type = "item", name = "sp-lithium-sulfur-battery", amount = 20},
+    {type = "item", name = "sp-power-supply", amount = 5},
+    {type = "item", name = "sp-variable-frequenzy-drive", amount = 4},
+    {type = "item", name = "sp-peltier-cell", amount = 6},
+    {type = "item", name = "sp-condenser-coil", amount = 1},
+    {type = "item", name = "sp-pressure-valve", amount = 10},
+    {type = "item", name = "sp-plate-heat-exchanger", amount = 4},
+    {type = "item", name = "sp-control-unit", amount = 4},
+    {type = "item", name = "sp-compressor", amount = 1},
+    {type = "item", name = "sp-fabric", amount = 4}
+  },
+  360)
 
 util.recipe.change_recipe_ingredients("fusion-reactor-equipment",
   {
