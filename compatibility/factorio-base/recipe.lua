@@ -633,7 +633,7 @@ util.recipe.change_recipe_ingredients("fluid-wagon",
 util.recipe.change_recipe_ingredients("artillery-wagon",
   {
     {type = "item", name = "sp-spring", amount = 20},
-    {type = "item", name = "steel-plate", amount = 40},
+    {type = "item", name = "sp-stainless-steel", amount = 40},
     {type = "item", name = "sp-bolts", amount = 100},
     {type = "item", name = "sp-train-boige", amount = 4},
     {type = "item", name = "artillery-turret", amount = 1},
@@ -662,10 +662,10 @@ util.recipe.change_recipe_ingredients("tank",
   {
     {type = "item", name = "sp-heavy-ball-bearing", amount = 20},
     {type = "item", name = "engine-unit", amount = 12},
-    {type = "item", name = "sp-stainless-steel", amount = 40},
-    {type = "item", name = "sp-steel-wheel", amount = 16},
+    {type = "item", name = "sp-niobium-steel", amount = 40},
+    {type = "item", name = "sp-maraging-steel", amount = 16},
     {type = "item", name = "sp-bolts", amount = 120},
-    {type = "item", name = "advanced-circuit", amount = 10},
+    {type = "item", name = "sp-control-unit", amount = 10},
     {type = "item", name = "sp-titanium-plate", amount = 16},
     {type = "item", name = "sp-heavy-gearbox", amount = 8},
     {type = "item", name = "sp-differential", amount = 4}
@@ -983,9 +983,9 @@ util.recipe.change_recipe_ingredients("explosive-rocket",
 
 util.recipe.change_recipe_ingredients("cannon-shell",
   {
-    {type = "item", name = "tungsten-plate", amount = 1},
+    {type = "item", name = "sp-tungsten-steel", amount = 1},
     {type = "item", name = "tungsten-carbide", amount = 1},
-    {type = "item", name = "steel-plate", amount = 2},
+    {type = "item", name = "sp-niobium-steel", amount = 2},
     {type = "item", name = "sp-tungsten-powder", amount = 1}
   },
   8)
@@ -993,11 +993,11 @@ util.recipe.change_recipe_ingredients("cannon-shell",
 data.raw.recipe["explosive-cannon-shell"].category = "crafting-with-fluid"
 util.recipe.change_recipe_ingredients("explosive-cannon-shell",
   {
-    {type = "item", name = "tungsten-plate", amount = 1},
+    {type = "item", name = "sp-tungsten-steel", amount = 1},
     {type = "item", name = "tungsten-carbide", amount = 1},
-    {type = "item", name = "steel-plate", amount = 2},
+    {type = "item", name = "sp-niobium-steel", amount = 2},
     {type = "item", name = "sp-tungsten-powder", amount = 2},
-    {type = "item", name = "sp-vacuum-tube", amount = 1},
+    {type = "item", name = "explosives", amount = 1},
     {type = "fluid", name = "sp-sodium-hydroxide", amount = 10}
   },
   10)
@@ -1698,7 +1698,7 @@ util.recipe.change_recipe_ingredients("flamethrower-turret",
 data.raw.recipe["artillery-turret"].category = "crafting-with-fluid"
 util.recipe.change_recipe_ingredients("artillery-turret",
   {
-    {type = "item", name = "sp-stainless-steel", amount = 80},
+    {type = "item", name = "sp-maraging-steel", amount = 80},
     {type = "item", name = "sp-aluminum-brass", amount = 20},
     {type = "item", name = "concrete", amount = 60},
     {type = "item", name = "sp-bolts", amount = 200},

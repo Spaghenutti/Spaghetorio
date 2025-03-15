@@ -3312,7 +3312,7 @@ data:extend({
   },
   {
     type = "technology",
-    name = "sp-superconductor-materials",  -- #ForRegEx# - technology
+    name = "sp-superconducting-materials",  -- #ForRegEx# - technology
     icon_size = 256,
     icon = "__Spaghetorio__/graphics/hr-icons/superconductor.png",
     effects =
@@ -11090,6 +11090,71 @@ data:extend({
     },
     max_level = "infinite",
     upgrade = true,
+  },
+  {
+    type = "technology",
+    name = "sp-transport-belt-capacity-3",  -- #ForRegEx# - infinite-technology
+    localised_description = {"technology-description.belt-capacity"},
+    icons = core_util.technology_icon_constant_stack_size("__space-age__/graphics/technology/transport-belt-capacity.png"),
+    effects =
+    {
+      {
+        type = "belt-stack-size-bonus",
+        modifier = 1
+      },
+    },
+    prerequisites = {
+      "transport-belt-capacity-2",
+      "sp-production-science-pack-3",
+    },
+    unit =
+    {
+      count = 3000,
+      ingredients =
+      {
+        {"sp-automation-science-pack-3", 1},
+        {"sp-logistic-science-pack-3", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-production-science-pack-3", 1},
+        {"utility-science-pack", 1}
+      },
+      time = 60
+    },
+    upgrade = true
+  },
+  {
+    type = "technology",
+    name = "sp-transport-belt-capacity-4",  -- #ForRegEx# - infinite-technology
+    localised_description = {"technology-description.belt-capacity"},
+    icons = core_util.technology_icon_constant_stack_size("__space-age__/graphics/technology/transport-belt-capacity.png"),
+    effects =
+    {
+      {
+        type = "belt-stack-size-bonus",
+        modifier = 1
+      },
+    },
+    prerequisites = {
+      "sp-transport-belt-capacity-3",
+    },
+    unit =
+    {
+      count = 6000,
+      ingredients =
+      {
+        {"sp-automation-science-pack-3", 1},
+        {"sp-logistic-science-pack-3", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-production-science-pack-3", 1},
+        {"utility-science-pack", 1}
+      },
+      time = 60
+    },
+    upgrade = true
   },
   {
     type = "technology",

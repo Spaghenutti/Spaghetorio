@@ -276,7 +276,18 @@ data.raw.technology["cryogenic-plant"].unit = {
   time = 30
 }
 
-
+table.insert(data.raw.technology["tesla-weapons"].prerequisites, "sp-superconducting-materials")
+data.raw.technology["tesla-weapons"].unit.ingredients = {
+  {"sp-automation-science-pack-2", 1},
+  {"sp-logistic-science-pack-2", 1},
+  {"sp-chemical-science-pack-2", 1},
+  {"sp-electronic-science-pack-1", 1},
+  {"sp-material-science-pack-2", 1},
+  {"sp-geological-science-pack-2", 1},
+  {"production-science-pack", 1},
+  {"metallurgic-science-pack", 1},
+  {"electromagnetic-science-pack", 1}
+}
 
 data.raw.technology["steel-plate-productivity"].prerequisites = {
   "sp-metallurgic-science-pack-2",
@@ -351,6 +362,32 @@ data.raw.technology["processing-unit-productivity"].unit.ingredients = {
   {"sp-computer-science-pack-3", 1},
   {"space-science-pack", 1},
   {"utility-science-pack", 1},
+}
+
+data.raw.technology["transport-belt-capacity-1"].unit.ingredients = {
+  {"sp-automation-science-pack-2", 1},
+  {"sp-logistic-science-pack-2", 1},
+  {"sp-material-science-pack-2", 1},
+  {"sp-geological-science-pack-2", 1},
+  {"sp-electronic-science-pack-2", 1},
+  {"sp-chemical-science-pack-2", 1},
+  {"sp-metallurgic-science-pack-2", 1},
+  {"sp-electromagnetic-science-pack-2", 1},
+  {"production-science-pack", 1},
+  {"utility-science-pack", 1}
+}
+
+data.raw.technology["transport-belt-capacity-2"].unit.ingredients = {
+  {"sp-automation-science-pack-2", 1},
+  {"sp-logistic-science-pack-2", 1},
+  {"sp-material-science-pack-2", 1},
+  {"sp-geological-science-pack-2", 1},
+  {"sp-electronic-science-pack-2", 1},
+  {"sp-chemical-science-pack-2", 1},
+  {"sp-metallurgic-science-pack-2", 1},
+  {"sp-electromagnetic-science-pack-2", 1},
+  {"production-science-pack", 1},
+  {"utility-science-pack", 1}
 }
 
 --------------------------------------------------------------------------------

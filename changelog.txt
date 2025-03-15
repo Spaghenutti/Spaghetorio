@@ -8,7 +8,8 @@ Date: 2025-03-22
     - Updated recipe chain for nuclear reactor
     - Updated locale
     - Updated graphics of buildings
-    - Changed military items
+    - Changed tier 1 military items recipes
+    - Updated tier 2 military tech tree
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.7
 Date: 2025-03-14
