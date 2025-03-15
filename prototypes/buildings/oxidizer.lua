@@ -19,9 +19,9 @@ local graphics_set = {
     layers = {
       {
         priority = "high",
-        filename = "__SpaghetorioGraphics1__/graphics/buildings/oxidizer/oxidizer-hr-animation.png",
-        width = 2560 / 8,
-        height = 2960 / 8,
+        filename = "__SpaghetorioGraphics1__/graphics/buildings/oxidizer/sprites/oxidizer-hr-animation-1.png",
+        width = 2240 / 8,
+        height = 2560 / 8,
         shift = graphics_shift,
         scale = graphics_scale,
         frame_count = graphics_frame_count,
@@ -30,7 +30,7 @@ local graphics_set = {
       },
       {
         priority = "high",
-        filename = "__SpaghetorioGraphics1__/graphics/buildings/oxidizer/oxidizer-hr-shadow.png",
+        filename = "__SpaghetorioGraphics1__/graphics/buildings/oxidizer/sprites/oxidizer-hr-shadow.png",
         width = 600,
         height = 400,
         shift = graphics_shift,
@@ -39,6 +39,24 @@ local graphics_set = {
         repeat_count = graphics_frame_count,
         draw_as_shadow = true,
         animation_speed = graphics_animation_speed,
+      },
+    },
+  },
+  working_visualisations = {
+    {
+      fadeout = true,
+      effect = "flicker",
+      animation = {
+        filename = "__SpaghetorioGraphics1__/graphics/buildings/oxidizer/sprites/oxidizer-hr-emission-1.png",
+        width = 2240 / 8,
+        height = 2560 / 8,
+        shift = graphics_shift,
+        scale = graphics_scale,
+        frame_count = graphics_frame_count,
+        line_length = 8,
+        draw_as_glow = true,
+        animation_speed = graphics_animation_speed,
+        blend_mode = "additive",
       },
     },
   },
@@ -52,7 +70,7 @@ fluid_boxes = {
     pipe_covers = pipecoverspictures(),
     always_draw_covers = false,
     volume = 1000,
-    pipe_connections = {{flow_direction="input", direction = defines.direction.south, position = {-1.5, 1.5}}}
+    pipe_connections = {{flow_direction="input", direction = defines.direction.west, position = {-1.5, 0.5}}}
   },
   {
     production_type = "input",
@@ -64,24 +82,6 @@ fluid_boxes = {
     pipe_connections = {{flow_direction="input", direction = defines.direction.south, position = {0.5, 1.5}}}
   },
   {
-    production_type = "input",
-    pipe_picture = util.empty_sprite(),
-    -- pipe_picture_frozen = require("__space-age__.prototypes.entity.foundry-pictures").pipe_picture_frozen,
-    pipe_covers = pipecoverspictures(),
-    always_draw_covers = false,
-    volume = 1000,
-    pipe_connections = {{flow_direction="input", direction = defines.direction.west, position = {-1.5, -1.5}}}
-  },
-  {
-    production_type = "input",
-    pipe_picture = util.empty_sprite(),
-    -- pipe_picture_frozen = require("__space-age__.prototypes.entity.foundry-pictures").pipe_picture_frozen,
-    pipe_covers = pipecoverspictures(),
-    always_draw_covers = false,
-    volume = 1000,
-    pipe_connections = {{flow_direction="input", direction = defines.direction.west, position = {-1.5, 0.5}}}
-  },
-  {
     production_type = "output",
     pipe_picture = util.empty_sprite(),
     -- pipe_picture_frozen = require("__space-age__.prototypes.entity.foundry-pictures").pipe_picture_frozen,
@@ -89,24 +89,6 @@ fluid_boxes = {
     always_draw_covers = false,
     volume = 1000,
     pipe_connections = {{flow_direction="output", direction = defines.direction.north, position = {-0.5, -1.5}}}
-  },
-  {
-    production_type = "output",
-    pipe_picture = util.empty_sprite(),
-    -- pipe_picture_frozen = require("__space-age__.prototypes.entity.foundry-pictures").pipe_picture_frozen,
-    pipe_covers = pipecoverspictures(),
-    always_draw_covers = false,
-    volume = 1000,
-    pipe_connections = {{ flow_direction="output", direction = defines.direction.north, position = {1.5, -1.5}}}
-  },
-  {
-    production_type = "output",
-    pipe_picture = util.empty_sprite(),
-    -- pipe_picture_frozen = require("__space-age__.prototypes.entity.foundry-pictures").pipe_picture_frozen,
-    pipe_covers = pipecoverspictures(),
-    always_draw_covers = false,
-    volume = 1000,
-    pipe_connections = {{flow_direction="output", direction = defines.direction.east, position = {1.5, 1.5}}}
   },
   {
     production_type = "output",

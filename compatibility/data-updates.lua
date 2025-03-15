@@ -4,6 +4,7 @@ local util = require("data-util")
 local remove_prototypes = require("remove-prototypes")
 
 data.raw.furnace["stone-furnace"].result_inventory_size = 2
+data.raw.furnace["recycler"].result_inventory_size = 30
 
 -- Source: https://youtu.be/tsDa_Qz3LF0?si=4sG11dFGr8eALM_H&t=1300
 
@@ -129,5 +130,5 @@ data.raw.technology["recycling"].unit = {
     {"electromagnetic-science-pack", 1},
     {"production-science-pack", 1}
   },
-  time = 5
+  time = 30
 }

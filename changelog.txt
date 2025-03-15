@@ -5,7 +5,9 @@ Date: 2025-03-22
     - Added more items
   Bugfixes:
     - Updated recipe chain for recycler
+    - Updated recipe chain for nuclear reactor
     - Updated locale
+    - Updated graphics of buildings
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.7
 Date: 2025-03-14

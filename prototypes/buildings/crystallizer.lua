@@ -28,12 +28,12 @@ local graphics_set = {
         stripes =
         {
           {
-            filename = "__SpaghetorioGraphics1__/graphics/buildings/glass-furnace/glass-furnace-hr-animation-1.png",
+            filename = "__SpaghetorioGraphics1__/graphics/buildings/glass-furnace/sprites/glass-furnace-hr-animation-1.png",
             width_in_frames = 8,
             height_in_frames = 8,
           },
           {
-            filename = "__SpaghetorioGraphics1__/graphics/buildings/glass-furnace/glass-furnace-hr-animation-2.png",
+            filename = "__SpaghetorioGraphics1__/graphics/buildings/glass-furnace/sprites/glass-furnace-hr-animation-2.png",
             width_in_frames = 8,
             height_in_frames = 2,
           },
@@ -41,11 +41,11 @@ local graphics_set = {
       },
       {
         priority = "high",
-        filename = "__SpaghetorioGraphics1__/graphics/buildings/glass-furnace/glass-furnace-hr-shadow.png",
-        width = 1200,
-        height = 700,
+        filename = "__SpaghetorioGraphics1__/graphics/buildings/glass-furnace/sprites/glass-furnace-hr-shadow.png",
+        width = 500,
+        height = 350,
         shift = graphics_shift,
-        scale = graphics_scale * 0.5,
+        scale = graphics_scale,
         frame_count = 1,
         repeat_count = graphics_frame_count,
         draw_as_shadow = true,
@@ -60,7 +60,7 @@ local graphics_set = {
       animation = {
         priority = "high",
         width = 2160 / 8,
-        height = 2400 / 8, -- Note the image is actually 2480 pixels high in Spaghetorio Graphics 1 0.0.1
+        height = 2480 / 8,
         shift = graphics_shift,
         scale = graphics_scale,
         frame_count = graphics_frame_count,
@@ -70,12 +70,12 @@ local graphics_set = {
         stripes =
         {
           {
-            filename = "__SpaghetorioGraphics1__/graphics/buildings/glass-furnace/glass-furnace-hr-emission-1.png",
+            filename = "__SpaghetorioGraphics1__/graphics/buildings/glass-furnace/sprites/glass-furnace-hr-emission-1.png",
             width_in_frames = 8,
             height_in_frames = 8,
           },
           {
-            filename = "__SpaghetorioGraphics1__/graphics/buildings/glass-furnace/glass-furnace-hr-emission-2.png",
+            filename = "__SpaghetorioGraphics1__/graphics/buildings/glass-furnace/sprites/glass-furnace-hr-emission-2.png",
             width_in_frames = 8,
             height_in_frames = 2,
           },

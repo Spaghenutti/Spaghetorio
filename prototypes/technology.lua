@@ -3038,7 +3038,7 @@ data:extend({
       },
     },
     prerequisites = {
-      "nuclear-power"
+      "sp-nuclear-science-pack-2"
     },
     unit =
     {
@@ -3047,8 +3047,11 @@ data:extend({
         {"sp-automation-science-pack-2", 1},
         {"sp-logistic-science-pack-2", 1},
         {"sp-material-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1},
         {"sp-geological-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-metallurgic-science-pack-2", 1},
+        {"sp-electromagnetic-science-pack-2", 1},
         {"production-science-pack", 1},
         {"utility-science-pack", 1},
         {"sp-nuclear-science-pack-2", 1}
@@ -8002,7 +8005,8 @@ data:extend({
       },
     },
     prerequisites = {
-      "sp-nuclear-science-pack-2"
+      "sp-nuclear-science-pack-2",
+      "sp-nuclear-waste-processing"
     },
     unit = {
       count = 1000,
@@ -8015,7 +8019,9 @@ data:extend({
         {"sp-chemical-science-pack-2", 1},
         {"sp-metallurgic-science-pack-2", 1},
         {"sp-electromagnetic-science-pack-2", 1},
-        {"production-science-pack", 1}
+        {"production-science-pack", 1},
+        {"utility-science-pack", 1},
+        {"sp-nuclear-science-pack-2", 1}
       },
       time = 45,
     },

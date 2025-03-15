@@ -28,12 +28,12 @@ local graphics_set = {
         stripes =
         {
           {
-            filename = "__SpaghetorioGraphics1__/graphics/buildings/manufacturer/manufacturer-hr-animation-1.png",
+            filename = "__SpaghetorioGraphics1__/graphics/buildings/manufacturer/sprites/manufacturer-hr-animation-1.png",
             width_in_frames = 8,
             height_in_frames = 8,
           },
           {
-            filename = "__SpaghetorioGraphics1__/graphics/buildings/manufacturer/manufacturer-hr-animation-2.png",
+            filename = "__SpaghetorioGraphics1__/graphics/buildings/manufacturer/sprites/manufacturer-hr-animation-2.png",
             width_in_frames = 8,
             height_in_frames = 8,
           },
@@ -41,7 +41,7 @@ local graphics_set = {
       },
       {
         priority = "high",
-        filename = "__SpaghetorioGraphics1__/graphics/buildings/manufacturer/manufacturer-hr-shadow.png",
+        filename = "__SpaghetorioGraphics1__/graphics/buildings/manufacturer/sprites/manufacturer-hr-shadow.png",
         width = 1200,
         height = 700,
         shift = graphics_shift,
@@ -70,12 +70,12 @@ local graphics_set = {
         stripes =
         {
           {
-            filename = "__SpaghetorioGraphics1__/graphics/buildings/manufacturer/manufacturer-hr-emission-1.png",
+            filename = "__SpaghetorioGraphics1__/graphics/buildings/manufacturer/sprites/manufacturer-hr-emission-1.png",
             width_in_frames = 8,
             height_in_frames = 8,
           },
           {
-            filename = "__SpaghetorioGraphics1__/graphics/buildings/manufacturer/manufacturer-hr-emission-2.png",
+            filename = "__SpaghetorioGraphics1__/graphics/buildings/manufacturer/sprites/manufacturer-hr-emission-2.png",
             width_in_frames = 8,
             height_in_frames = 8,
           },

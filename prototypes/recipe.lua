@@ -6577,10 +6577,10 @@ data:extend({
       {type = "item", name = "sp-plutonium-239", probability = 0.005, amount = 1},
       {type = "item", name = "uranium-238", probability = 0.015, amount = 1},
       {type = "item", name = "carbon", probability = 0.08, amount = 1},
-      {type = "item", name = "tungsten-ore", probability = 0.06, amount = 1},
-      {type = "item", name = "sp-zirconium-ore", probability = 0.10, amount = 1},
+      {type = "item", name = "sp-tungsten-powder", probability = 0.06, amount = 1},
+      {type = "item", name = "sp-zircon", probability = 0.10, amount = 1},
       {type = "item", name = "sp-cerium", probability = 0.06, amount = 1},
-      {type = "item", name = "sp-titanium-ore", probability = 0.3, amount = 1}
+      {type = "item", name = "sp-titanium-sponge", probability = 0.3, amount = 1},
     },
     order = "z[nuclear]-3-[nuclear-waste-processing]"
   },
@@ -9110,10 +9110,11 @@ data:extend({
       {type = "item", name = "sp-blank-tech-card", amount = 50},
       {type = "item", name = "uranium-238", amount = 400},
       {type = "item", name = "uranium-235", amount = 1},
-      {type = "item", name = "sp-empty-fuel-rod", amount = 50},
+      {type = "item", name = "sp-empty-fuel-rod", amount = 100},
+      {type = "item", name = "sp-control-rod", amount = 50},
     },
     results = {
-      {type = "item", name = "sp-nuclear-science-pack-2", amount = 5}
+      {type = "item", name = "sp-nuclear-science-pack-2", amount = 50}
     }
   },
   {

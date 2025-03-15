@@ -28,12 +28,12 @@ local graphics_set = {
         stripes =
         {
           {
-            filename = "__SpaghetorioGraphics1__/graphics/buildings/atom-forge/atom-forge-hr-animation-1.png",
+            filename = "__SpaghetorioGraphics1__/graphics/buildings/atom-forge/sprites/atom-forge-hr-animation-1.png",
             width_in_frames = 8,
             height_in_frames = 8,
           },
           {
-            filename = "__SpaghetorioGraphics1__/graphics/buildings/atom-forge/atom-forge-hr-animation-2.png",
+            filename = "__SpaghetorioGraphics1__/graphics/buildings/atom-forge/sprites/atom-forge-hr-animation-2.png",
             width_in_frames = 8,
             height_in_frames = 2,
           },
@@ -41,7 +41,7 @@ local graphics_set = {
       },
       {
         priority = "high",
-        filename = "__SpaghetorioGraphics1__/graphics/buildings/atom-forge/atom-forge-hr-shadow.png",
+        filename = "__SpaghetorioGraphics1__/graphics/buildings/atom-forge/sprites/atom-forge-hr-shadow.png",
         width = 900,
         height = 500,
         shift = graphics_shift,
@@ -69,12 +69,39 @@ local graphics_set = {
         stripes =
         {
           {
-            filename = "__SpaghetorioGraphics1__/graphics/buildings/atom-forge/atom-forge-hr-emission-1.png",
+            filename = "__SpaghetorioGraphics1__/graphics/buildings/atom-forge/sprites/atom-forge-hr-emission1-1.png",
             width_in_frames = 8,
             height_in_frames = 8,
           },
           {
-            filename = "__SpaghetorioGraphics1__/graphics/buildings/atom-forge/atom-forge-hr-emission-2.png",
+            filename = "__SpaghetorioGraphics1__/graphics/buildings/atom-forge/sprites/atom-forge-hr-emission1-2.png",
+            width_in_frames = 8,
+            height_in_frames = 2,
+          },
+        },
+      },
+    },
+    {
+      fadeout = true,
+      animation = {
+        priority = "high",
+        width = 3200 / 8,
+        height = 3840 / 8,
+        shift = graphics_shift,
+        scale = graphics_scale,
+        frame_count = graphics_frame_count,
+        draw_as_glow = true,
+        animation_speed = graphics_animation_speed,
+        blend_mode = "additive",
+        stripes =
+        {
+          {
+            filename = "__SpaghetorioGraphics1__/graphics/buildings/atom-forge/sprites/atom-forge-hr-emission2-1.png",
+            width_in_frames = 8,
+            height_in_frames = 8,
+          },
+          {
+            filename = "__SpaghetorioGraphics1__/graphics/buildings/atom-forge/sprites/atom-forge-hr-emission2-2.png",
             width_in_frames = 8,
             height_in_frames = 2,
           },
