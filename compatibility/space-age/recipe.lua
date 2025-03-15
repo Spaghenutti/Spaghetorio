@@ -267,6 +267,23 @@ util.recipe.change_recipe_ingredients("electromagnetic-plant",
   },
   60)
 
+util.recipe.change_recipe_ingredients("recycler",
+  {
+    {type = "item", name = "sp-stainless-steel", amount = 40},
+    {type = "item", name = "sp-maraging-steel", amount = 20},
+    {type = "item", name = "sp-elgiloy", amount = 24},
+    {type = "item", name = "sp-diamond-saw", amount = 2},
+    {type = "item", name = "tungsten-carbide", amount = 12},
+    {type = "item", name = "sp-titanium-carbide", amount = 10},
+    {type = "item", name = "sp-vibration-dampener", amount = 8},
+    {type = "item", name = "sp-big-electric-engine-unit", amount = 4},
+    {type = "item", name = "sp-heavy-gearbox", amount = 8},
+    {type = "item", name = "sp-precipitator", amount = 1},
+    {type = "item", name = "sp-catalytic-converter", amount = 1},
+    {type = "item", name = "refined-concrete", amount = 40},
+  },
+  40)
+
 data.raw.recipe["big-mining-drill"].category = "crafting"
 util.recipe.change_recipe_ingredients("big-mining-drill",
   {

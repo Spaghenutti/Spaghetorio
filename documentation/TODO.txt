@@ -74,43 +74,14 @@ TODO for 0.3.4 - 0.3.6
 TODO for 0.3.7
   + Update mining productivity tech
   + Add crystallizer with diamond saw
-  - Mosfet
-    - gallium-nitride
-    - silicon-dioxide
-    - silicon
-    - phosphorus
-    - boron
-    - aluminum
-    - polyvinyl-fluoride
-  - voltage-controller
-    - epoxy
-    - ceramics
-    - silicon
-    - aluminum
-    - copper
-    - polyvinyl-fluoride
-  - for advanced processing unit
-    - voltage-regulator-module
-      - mosfet
-      - diode
-      - capacitor
-      - coil
-      - epoxy
-      - aluminum
-  - for high purity silicon
-    - p-type-polysilicon
-      - boron
-      - silicon
-    - n-type-polysilicon
-      - phosphorus
-      - silicon
-  - clean up code for buildings
 
 TODO for 0.3.8
+  - clean up code for buildings
+  - Update recycler recipe chain
+  - Update nuclear science pack recipe chain
   - Update military science 2 branch of tech tree
   - Unlock freezer in biological tree and before cryogenic plant
-  - Updated biological branch tier 1 and 2 of tech tree 
-
+  - Updated biological branch tier 1 and 2 of tech tree
 
 TODO for 0.3.9
   - Add Tetraethylene glycol dimethyl CH₃O-(CH₂CH₂O)₄-CH₃

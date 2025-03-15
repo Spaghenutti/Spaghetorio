@@ -1408,6 +1408,7 @@ util.recipe.change_recipe_ingredients("assembling-machine-3",
     {type = "item", name = "processing-unit", amount = 12},
     {type = "item", name = "sp-control-unit", amount = 4},
     {type = "item", name = "sp-big-electric-engine-unit", amount = 4},
+    {type = "item", name = "sp-diamond-saw", amount = 2},
     {type = "item", name = "sp-servo-motor", amount = 20},
     {type = "item", name = "concrete", amount = 16},
     {type = "item", name = "steel-plate", amount = 25},
@@ -1551,17 +1552,28 @@ util.recipe.change_recipe_ingredients("accumulator",
 util.recipe.change_recipe_ingredients("nuclear-reactor",
   {
     {type = "item", name = "refined-concrete", amount = 500},
+    {type = "item", name = "sp-maraging-steel", amount = 300},
+    {type = "item", name = "sp-niobium-steel", amount = 200},
+    {type = "item", name = "sp-titanium-aluminum-tin", amount = 160},
+    {type = "item", name = "sp-tungsten-steel", amount = 50},
     {type = "item", name = "sp-reactor-core", amount = 1},
+    {type = "item", name = "pump", amount = 10},
+    {type = "item", name = "accumulator", amount = 20},
+    {type = "item", name = "sp-power-supply", amount = 20},
+    {type = "item", name = "sp-variable-frequenzy-drive", amount = 50},
+    {type = "item", name = "sp-infrared-sensor", amount = 30},
+    {type = "item", name = "sp-thermocouple", amount = 60},
+    {type = "item", name = "sp-copper-tube", amount = 500},
+    {type = "item", name = "sp-condenser-coil", amount = 6},
+    {type = "item", name = "sp-pressure-valve", amount = 50},
     {type = "item", name = "sp-plate-heat-exchanger", amount = 40},
     {type = "item", name = "sp-control-unit", amount = 100},
-    {type = "item", name = "sp-niobium-steel", amount = 300},
-    {type = "item", name = "sp-titanium-aluminum-tin", amount = 200},
     {type = "item", name = "sp-heavy-ball-bearing", amount = 20},
     {type = "item", name = "sp-high-pressure-tank", amount = 40},
-    {type = "item", name = "electric-engine-unit", amount = 10},
+    {type = "item", name = "sp-big-electric-engine-unit", amount = 20},
     {type = "item", name = "sp-bolts", amount = 1000}
   },
-  500)
+  360)
 
 util.recipe.change_recipe_ingredients("heat-pipe",
   {
@@ -1710,6 +1722,7 @@ data.raw.recipe["production-science-pack"].results = {
     {type = "item", name = "production-science-pack", amount = 5}
   }
 
+data.raw.recipe["utility-science-pack"].category = "sp-kr-research-data"
 util.recipe.change_recipe_ingredients("utility-science-pack",
   {
     {type = "item", name = "big-mining-drill", amount = 1},

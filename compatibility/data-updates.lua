@@ -111,3 +111,23 @@ data.raw.technology["heating-tower"].unit =
 }
 
 data.raw.technology["lithium-processing"].prerequisites = {"metallurgic-science-pack", "sp-alkaline-solutions"}
+
+data.raw.technology["recycling"].prerequisites = {
+  "tungsten-carbide"
+}
+data.raw.technology["recycling"].research_trigger = nil
+data.raw.technology["recycling"].unit = {
+  count = 200,
+  ingredients = {
+    {"sp-automation-science-pack-2", 1},
+    {"sp-logistic-science-pack-2", 1},
+    {"sp-chemical-science-pack-2", 1},
+    {"sp-electronic-science-pack-1", 1},
+    {"sp-material-science-pack-2", 1},
+    {"sp-geological-science-pack-2", 1},
+    {"metallurgic-science-pack", 1},
+    {"electromagnetic-science-pack", 1},
+    {"production-science-pack", 1}
+  },
+  time = 5
+}

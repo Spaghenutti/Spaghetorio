@@ -310,8 +310,13 @@ data.raw.technology["nuclear-power"].effects = {
   {
     type = "unlock-recipe",
     recipe = "sp-silver-indium-cadmium"
+  },
+  {
+    type = "unlock-recipe",
+    recipe = "sp-lead-molybdate"
   }
 }
+table.insert(data.raw.technology["nuclear-power"].prerequisites, "electric-energy-accumulators")
 table.insert(data.raw.technology["nuclear-power"].prerequisites, "heating-tower")
 table.insert(data.raw.technology["nuclear-power"].prerequisites, "sp-turbine-parts")
 table.insert(data.raw.technology["nuclear-power"].prerequisites, "sp-control-unit")
@@ -320,11 +325,13 @@ data.raw.technology["nuclear-power"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},
   {"sp-logistic-science-pack-2", 1},
   {"sp-material-science-pack-2", 1},
-  {"sp-electronic-science-pack-2", 1},
   {"sp-geological-science-pack-2", 1},
+  {"sp-electronic-science-pack-2", 1},
   {"sp-chemical-science-pack-2", 1},
+  {"sp-metallurgic-science-pack-2", 1},
+  {"sp-electromagnetic-science-pack-2", 1},
   {"production-science-pack", 1},
-  {"utility-science-pack", 1},
+  {"utility-science-pack", 1}
 }
 
 table.insert(data.raw.technology["automation-2"].prerequisites, "sp-heatsink")
@@ -405,7 +412,8 @@ data.raw.technology["sulfur-processing"].unit.ingredients = {
 }
 
 data.raw.technology["solar-energy"].prerequisites = {
-  "sp-photovoltaics"
+  "sp-photovoltaics",
+  "electric-energy-accumulators"
 }
 data.raw.technology["solar-energy"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},

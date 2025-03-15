@@ -3280,10 +3280,11 @@ data:extend({
         type = "unlock-recipe",
         recipe = "sp-enriched-rare-metal-processing",
       },
-      -- {
-      --   type = "unlock-recipe",
-      --   recipe = "enriched-copper-plate",
-      -- },
+      -- other
+      {
+        type = "unlock-recipe",
+        recipe = "sp-sodium-molybdate",
+      },
     },
     prerequisites = {"sp-kr-advanced-chemistry"},
     unit = {
@@ -5154,6 +5155,10 @@ data:extend({
         type = "unlock-recipe",
         recipe = "electrolyte",
       },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-manganese-chloride",
+      }
     },
     prerequisites = {
       "sp-propane-products",
@@ -9580,21 +9585,23 @@ data:extend({
       },
     },
     prerequisites = {
-      "processing-unit"
+      "processing-unit",
+      "sp-heat-resistant-electronics"
     },
     unit =
     {
-      count = 250,
+      count = 500,
       ingredients = {
         {"sp-automation-science-pack-2", 1},
         {"sp-logistic-science-pack-2", 1},
-        {"sp-electronic-science-pack-2", 1},
         {"sp-material-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1},
         {"sp-geological-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-metallurgic-science-pack-2", 1},
+        {"sp-electromagnetic-science-pack-2", 1},
         {"production-science-pack", 1},
-        {"metallurgic-science-pack", 1},
-        {"electromagnetic-science-pack", 1}
+        {"utility-science-pack", 1}
       },
       time = 30
     },
@@ -11272,51 +11279,4 @@ data:extend({
     },
     upgrade = true
   },
-  ------------------------------------------------------------------------------
-  --- MARK: Recipes without technology
-  ------------------------------------------------------------------------------
-  {
-    type = "technology",
-    name = "sp-recipes-without-technology",  -- #ForRegEx# - technology
-    icon = "__Spaghetorio__/graphics/dummy/dummy-technology-default.png",
-    icon_size = 64,
-    icon_mipmaps = 4,
-    effects = {
-      {
-        type = "unlock-recipe",
-        recipe = "sp-lead-molybdate",
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-sodium-molybdate",
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-manganese-chloride",
-      },
-      -- TODO: add recipe chain for
-      -- {
-      --   type = "unlock-recipe",
-      --   recipe = "sp-biomass",
-      -- },
-      -- {
-      --   type = "unlock-recipe",
-      --   recipe = "sp-imersium-gear-wheel",
-      -- },
-      -- {
-      --   type = "unlock-recipe",
-      --   recipe = "sp-xxxxxxxxxxxxx",
-      -- },
-    },
-    prerequisites = {
-      "utility-science-pack"
-    },
-    unit = {
-      count = 69420,
-      ingredients = {
-        {"sp-uniformity-science-pack", 1},
-      },
-      time = 30,
-    },
-  }
 })

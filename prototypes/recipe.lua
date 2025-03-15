@@ -3021,25 +3021,6 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-lithium-sulfur-battery",  -- #ForRegEx# - recipe
-    category = "chemistry",
-    enabled = false,
-    allow_productivity = true,
-    energy_required = 5,
-    ingredients = {
-      {type = "item", name = "lithium", amount = 4},
-      {type = "item", name = "sp-cobalt-billet", amount = 1},
-      {type = "item", name = "sp-aluminum-sheet", amount = 1},
-      {type = "item", name = "carbon", amount = 1},
-      {type = "fluid", name = "sulfuric-acid", amount = 10},
-      {type = "fluid", name = "electrolyte", amount = 4}
-    },
-    results = {
-      {type = "item", name = "sp-lithium-sulfur-battery", amount = 1}
-    }
-  },
-  {
-    type = "recipe",
     name = "sp-insulation-sheet",  -- #ForRegEx# - recipe
     category = "chemistry",
     enabled = false,
@@ -5654,21 +5635,22 @@ data:extend({
   {
     type = "recipe",
     name = "sp-lithium-sulfur-battery",  -- #ForRegEx# - recipe
-    category = "electronics-with-fluid",
+    category = "chemistry",
     enabled = false,
     allow_productivity = true,
-    energy_required = 4,
+    energy_required = 8,
     ingredients = {
-      {type = "item", name = "lithium", amount = 4},
-      {type = "item", name = "sp-cobalt-billet", amount = 1},
-      {type = "item", name = "sp-aluminum-sheet", amount = 1},
-      {type = "item", name = "sp-graphene", amount = 1},
-      {type = "fluid", name = "sulfuric-acid", amount = 10},
+      {type = "item", name = "lithium", amount = 8},
+      {type = "item", name = "sp-cobalt-billet", amount = 2},
+      {type = "item", name = "sp-aluminum-sheet", amount = 2},
+      {type = "item", name = "sp-manganese-chloride", amount = 1},
+      {type = "item", name = "sp-graphene", amount = 4},
+      {type = "fluid", name = "sulfuric-acid", amount = 20},
       {type = "fluid", name = "electrolyte", amount = 8}
     },
     results = {
-      {type = "item", name = "sp-lithium-sulfur-battery", amount = 1}
-    },
+      {type = "item", name = "sp-lithium-sulfur-battery", amount = 2}
+    }
   },
   {
     type = "recipe",
@@ -8156,338 +8138,6 @@ data:extend({
       {type = "item", name = "sp-electronic-science-pack-2", amount = 5}
     }
   },
-  {
-    type = "recipe",
-    name = "sp-computer-science-pack-2",  -- #ForRegEx# - recipe
-    category = "crafting",
-    enabled = false,
-    allow_productivity = true,
-    energy_required = 24,
-    ingredients =
-    {
-      {type = "item", name = "sp-blank-tech-card", amount = 5},
-      {type = "item", name = "sp-integrated-circuit", amount = 5},
-      {type = "item", name = "sp-memory-chip", amount = 5},
-      {type = "item", name = "sp-mosfet", amount = 5},
-      {type = "item", name = "sp-voltage-controller", amount = 5},
-      {type = "item", name = "advanced-circuit", amount = 10},
-      {type = "item", name = "processing-unit", amount = 5},
-    },
-    results = {
-      {type = "item", name = "sp-computer-science-pack-2", amount = 5}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-nuclear-science-pack-2",  -- #ForRegEx# - recipe
-    category = "crafting",
-    enabled = false,
-    allow_productivity = true,
-    energy_required = 240,
-    ingredients =
-    {
-      {type = "item", name = "sp-blank-tech-card", amount = 50},
-      {type = "item", name = "uranium-238", amount = 400},
-      {type = "item", name = "uranium-235", amount = 1},
-      {type = "item", name = "sp-empty-fuel-rod", amount = 50},
-    },
-    results = {
-      {type = "item", name = "sp-nuclear-science-pack-2", amount = 5}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-automation-science-pack-3",  -- #ForRegEx# - recipe
-    category = "crafting",
-    enabled = false,
-    allow_productivity = true,
-    energy_required = 24,
-    ingredients =
-    {
-      {type = "item", name = "sp-automation-science-pack-2", amount = 10},
-      {type = "item", name = "sp-electrode", amount = 10},
-      {type = "item", name = "sp-high-pressure-tank", amount = 5},
-      {type = "item", name = "sp-transformer", amount = 5},
-      {type = "item", name = "sp-plate-heat-exchanger", amount = 5},
-      {type = "item", name = "flying-robot-frame", amount = 5}
-    },
-    results = {
-      {type = "item", name = "sp-automation-science-pack-3", amount = 5}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-logistic-science-pack-3",  -- #ForRegEx# - recipe
-    category = "crafting",
-    enabled = false,
-    allow_productivity = true,
-    energy_required = 24,
-    ingredients =
-    {
-      {type = "item", name = "sp-logistic-science-pack-2", amount = 10},
-      {type = "item", name = "sp-heavy-gearbox", amount = 5},
-      {type = "item", name = "sp-pressure-tube", amount = 5},
-      {type = "item", name = "sp-servo-motor", amount = 10},
-      {type = "item", name = "processing-unit", amount = 10},
-      {type = "item", name = "sp-insulated-wire", amount = 20},
-    },
-    results = {
-      {type = "item", name = "sp-logistic-science-pack-3", amount = 5}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-military-science-pack-3",  -- #ForRegEx# - recipe
-    category = "crafting",
-    enabled = false,
-    allow_productivity = true,
-    energy_required = 24,
-    ingredients =
-    {
-      {type = "item", name = "sp-military-science-pack-2", amount = 10},
-      {type = "item", name = "cannon-shell", amount = 20},
-      {type = "item", name = "destroyer-capsule", amount = 3},
-      {type = "item", name = "rocket", amount = 3},
-      {type = "item", name = "artillery-shell", amount = 3},
-      {type = "item", name = "energy-shield-mk2-equipment", amount = 3}
-    },
-    results = {
-      {type = "item", name = "sp-military-science-pack-3", amount = 5}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-electronic-science-pack-3",  -- #ForRegEx# - recipe
-    category = "crafting",
-    enabled = false,
-    allow_productivity = true,
-    energy_required = 24,
-    ingredients =
-    {
-      {type = "item", name = "sp-electronic-science-pack-2", amount = 10},
-      {type = "item", name = "sp-antenna-chip", amount = 8},
-      {type = "item", name = "sp-cmos", amount = 8},
-      {type = "item", name = "sp-processor", amount = 16}
-    },
-    results = {
-      {type = "item", name = "sp-electronic-science-pack-3", amount = 5}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-metallurgic-science-pack-3",  -- #ForRegEx# - recipe
-    category = "crafting",
-    enabled = false,
-    allow_productivity = true,
-    energy_required = 69,
-    ingredients =
-    {
-      {type = "item", name = "sp-metallurgic-science-pack-2", amount = 10},
-    },
-    results = {
-      {type = "item", name = "sp-metallurgic-science-pack-3", amount = 10},
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-electromagnetic-science-pack-3",  -- #ForRegEx# - recipe
-    category = "crafting",
-    enabled = false,
-    allow_productivity = true,
-    energy_required = 69,
-    ingredients =
-    {
-      {type = "item", name = "sp-electromagnetic-science-pack-2", amount = 10},
-    },
-    results = {
-      {type = "item", name = "sp-electromagnetic-science-pack-3", amount = 5}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-biological-science-pack-3",  -- #ForRegEx# - recipe
-    category = "crafting",
-    enabled = false,
-    allow_productivity = true,
-    energy_required = 69,
-    ingredients =
-    {
-      {type = "item", name = "agricultural-science-pack", amount = 10},
-    },
-    results = {
-      {type = "item", name = "sp-biological-science-pack-3", amount = 5}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-cryogenic-science-pack-3",  -- #ForRegEx# - recipe
-    category = "crafting",
-    enabled = false,
-    allow_productivity = true,
-    energy_required = 69,
-    ingredients =
-    {
-      {type = "item", name = "cryogenic-science-pack", amount = 10},
-    },
-    results = {
-      {type = "item", name = "sp-cryogenic-science-pack-3", amount = 5}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-material-science-pack-3",  -- #ForRegEx# - recipe
-    category = "crafting",
-    enabled = false,
-    allow_productivity = true,
-    energy_required = 24,
-    ingredients =
-    {
-      {type = "item", name = "sp-material-science-pack-2", amount = 10},
-      {type = "item", name = "sp-diamond", amount = 6},
-      {type = "item", name = "tungsten-carbide", amount = 4},
-      {type = "item", name = "sp-nitenol", amount = 5},
-      {type = "item", name = "sp-inconel", amount = 5},
-      {type = "item", name = "sp-niobium-tin", amount = 4},
-      {type = "item", name = "sp-ceramic-matrix-composites", amount = 8}
-    },
-    results = {
-      {type = "item", name = "sp-material-science-pack-3", amount = 5}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-space-science-pack-3",  -- #ForRegEx# - recipe
-    category = "crafting",
-    enabled = false,
-    allow_productivity = true,
-    energy_required = 144,
-    ingredients =
-    {
-      {type = "item", name = "space-science-pack", amount = 120},
-      -- {type = "item", name = "satellite", amount = 5}, removed by space age
-      {type = "item", name = "sp-blunagium-explorer", amount = 1},
-      {type = "item", name = "sp-grobgnum-explorer", amount = 1},
-      {type = "item", name = "sp-rukite-explorer", amount = 1},
-      {type = "item", name = "sp-yemnuth-explorer", amount = 1}
-    },
-    results = {
-      {type = "item", name = "sp-space-science-pack-3", amount = 30}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-nuclear-science-pack-3",  -- #ForRegEx# - recipe
-    category = "crafting",
-    enabled = false,
-    allow_productivity = true,
-    energy_required = 48,
-    ingredients =
-    {
-      {type = "item", name = "sp-nuclear-science-pack-2", amount = 20},
-      {type = "item", name = "sp-reactor-core", amount = 1},
-      {type = "item", name = "sp-plutonium-fuel-rod", amount = 10},
-      {type = "item", name = "sp-uranium-fuel-rod", amount = 10}
-    },
-    results = {
-      {type = "item", name = "sp-nuclear-science-pack-3", amount = 10}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-production-science-pack-3",  -- #ForRegEx# - recipe
-    category = "crafting",
-    enabled = false,
-    allow_productivity = true,
-    energy_required = 24,
-    ingredients =
-    {
-      {type = "item", name = "production-science-pack", amount = 10},
-      {type = "item", name = "sp-compressor", amount = 5},
-      {type = "item", name = "sp-dynamo", amount = 5},
-      {type = "item", name = "sp-cryostat", amount = 5},
-      {type = "item", name = "sp-turbopump", amount = 5}
-    },
-    results = {
-      {type = "item", name = "sp-production-science-pack-3", amount = 5}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-utility-science-pack-3",  -- #ForRegEx# - recipe
-    category = "crafting",
-    enabled = false,
-    allow_productivity = true,
-    energy_required = 192,
-    ingredients =
-    {
-      -- Krastorio {type = "item", name = "utility-science-pack", amount = 40},
-      {type = "item", name = "fusion-reactor", amount = 8},
-      {type = "item", name = "sp-kr-quantum-computer", amount = 1},
-      {type = "item", name = "sp-kr-bio-lab", amount = 2},
-      {type = "item", name = "sp-kr-fuel-refinery", amount = 2},
-      {type = "item", name = "sp-kr-quarry-drill", amount = 1},
-      {type = "item", name = "assembling-machine-3", amount = 4},
-      {type = "item", name = "beacon", amount = 4}
-    },
-    results = {
-      {type = "item", name = "sp-utility-science-pack-3", amount = 40}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-matter-science-pack",  -- #ForRegEx# - recipe
-    category = "crafting",
-    enabled = false,
-    allow_productivity = true,
-    energy_required = 40,
-    ingredients =
-    {
-      {type = "item", name = "sp-blunagium-bar", amount = 5},
-      {type = "item", name = "sp-grobgnum-bar", amount = 5},
-      {type = "item", name = "sp-rukite-bar", amount = 5},
-      {type = "item", name = "sp-yemnuth-shard", amount = 5},
-      {type = "item", name = "sp-imersite-crystal", amount = 5},
-      {type = "item", name = "sp-matter-research-data", amount = 5},
-      {type = "item", name = "sp-blank-tech-card", amount = 5}
-    },
-    results = {
-      {type = "item", name = "sp-matter-science-pack", amount = 5}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-optimization-science-pack",  -- #ForRegEx# - recipe
-    category = "crafting",
-    enabled = false,
-    allow_productivity = true,
-    energy_required = 69,
-    ingredients =
-    {
-      {type = "item", name = "iron-plate", amount = 5}
-    },
-    results = {
-      {type = "item", name = "sp-optimization-science-pack", amount = 40}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-advanced-science-pack",  -- #ForRegEx# - recipe
-    category = "crafting",
-    enabled = false,
-    allow_productivity = true,
-    energy_required = 40,
-    ingredients =
-    {
-      {type = "item", name = "sp-biochip", amount = 5},
-      {type = "item", name = "sp-chronalyte", amount = 5},
-      {type = "item", name = "sp-nanowire", amount = 5},
-      {type = "item", name = "sp-plasma-capsule", amount = 5},
-      {type = "item", name = "sp-blank-tech-card", amount = 5}
-    },
-    results = {
-      {type = "item", name = "sp-advanced-science-pack", amount = 5}
-    }
-  },
   ------------------------------------------------------------------------------
   -- MARK: crafting-with-fluid
   ------------------------------------------------------------------------------
@@ -9420,6 +9070,343 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-automation-science-pack-2", amount = 5}
+    }
+  },
+  ------------------------------------------------------------------------------
+  -- MARK: research-data
+  ------------------------------------------------------------------------------
+  ---
+  {
+    type = "recipe",
+    name = "sp-computer-science-pack-2",  -- #ForRegEx# - recipe
+    category = "sp-kr-research-data",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 30,
+    ingredients =
+    {
+      {type = "item", name = "sp-blank-tech-card", amount = 5},
+      {type = "item", name = "advanced-circuit", amount = 10},
+      {type = "item", name = "processing-unit", amount = 5},
+      {type = "item", name = "sp-heat-resistant-electronics", amount = 5},
+      {type = "item", name = "sp-integrated-circuit", amount = 5},
+      {type = "item", name = "sp-memory-chip", amount = 5},
+      {type = "item", name = "sp-mosfet", amount = 5},
+      {type = "item", name = "sp-voltage-controller", amount = 5},
+    },
+    results = {
+      {type = "item", name = "sp-computer-science-pack-2", amount = 5}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-nuclear-science-pack-2",  -- #ForRegEx# - recipe
+    category = "sp-kr-research-data",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 240,
+    ingredients =
+    {
+      {type = "item", name = "sp-blank-tech-card", amount = 50},
+      {type = "item", name = "uranium-238", amount = 400},
+      {type = "item", name = "uranium-235", amount = 1},
+      {type = "item", name = "sp-empty-fuel-rod", amount = 50},
+    },
+    results = {
+      {type = "item", name = "sp-nuclear-science-pack-2", amount = 5}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-automation-science-pack-3",  -- #ForRegEx# - recipe
+    category = "sp-kr-research-data",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 24,
+    ingredients =
+    {
+      {type = "item", name = "sp-automation-science-pack-2", amount = 10},
+      {type = "item", name = "sp-electrode", amount = 10},
+      {type = "item", name = "sp-high-pressure-tank", amount = 5},
+      {type = "item", name = "sp-transformer", amount = 5},
+      {type = "item", name = "sp-plate-heat-exchanger", amount = 5},
+      {type = "item", name = "flying-robot-frame", amount = 5}
+    },
+    results = {
+      {type = "item", name = "sp-automation-science-pack-3", amount = 5}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-logistic-science-pack-3",  -- #ForRegEx# - recipe
+    category = "sp-kr-research-data",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 24,
+    ingredients =
+    {
+      {type = "item", name = "sp-logistic-science-pack-2", amount = 10},
+      {type = "item", name = "sp-heavy-gearbox", amount = 5},
+      {type = "item", name = "sp-pressure-tube", amount = 5},
+      {type = "item", name = "sp-servo-motor", amount = 10},
+      {type = "item", name = "processing-unit", amount = 10},
+      {type = "item", name = "sp-insulated-wire", amount = 20},
+    },
+    results = {
+      {type = "item", name = "sp-logistic-science-pack-3", amount = 5}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-military-science-pack-3",  -- #ForRegEx# - recipe
+    category = "sp-kr-research-data",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 24,
+    ingredients =
+    {
+      {type = "item", name = "sp-military-science-pack-2", amount = 10},
+      {type = "item", name = "cannon-shell", amount = 20},
+      {type = "item", name = "destroyer-capsule", amount = 3},
+      {type = "item", name = "rocket", amount = 3},
+      {type = "item", name = "artillery-shell", amount = 3},
+      {type = "item", name = "energy-shield-mk2-equipment", amount = 3}
+    },
+    results = {
+      {type = "item", name = "sp-military-science-pack-3", amount = 5}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-electronic-science-pack-3",  -- #ForRegEx# - recipe
+    category = "sp-kr-research-data",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 24,
+    ingredients =
+    {
+      {type = "item", name = "sp-electronic-science-pack-2", amount = 10},
+      {type = "item", name = "sp-antenna-chip", amount = 8},
+      {type = "item", name = "sp-cmos", amount = 8},
+      {type = "item", name = "sp-processor", amount = 16}
+    },
+    results = {
+      {type = "item", name = "sp-electronic-science-pack-3", amount = 5}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-metallurgic-science-pack-3",  -- #ForRegEx# - recipe
+    category = "sp-kr-research-data",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 69,
+    ingredients =
+    {
+      {type = "item", name = "sp-metallurgic-science-pack-2", amount = 10},
+    },
+    results = {
+      {type = "item", name = "sp-metallurgic-science-pack-3", amount = 10},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-electromagnetic-science-pack-3",  -- #ForRegEx# - recipe
+    category = "sp-kr-research-data",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 69,
+    ingredients =
+    {
+      {type = "item", name = "sp-electromagnetic-science-pack-2", amount = 10},
+    },
+    results = {
+      {type = "item", name = "sp-electromagnetic-science-pack-3", amount = 5}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-biological-science-pack-3",  -- #ForRegEx# - recipe
+    category = "sp-kr-research-data",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 69,
+    ingredients =
+    {
+      {type = "item", name = "agricultural-science-pack", amount = 10},
+    },
+    results = {
+      {type = "item", name = "sp-biological-science-pack-3", amount = 5}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-cryogenic-science-pack-3",  -- #ForRegEx# - recipe
+    category = "sp-kr-research-data",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 69,
+    ingredients =
+    {
+      {type = "item", name = "cryogenic-science-pack", amount = 10},
+    },
+    results = {
+      {type = "item", name = "sp-cryogenic-science-pack-3", amount = 5}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-material-science-pack-3",  -- #ForRegEx# - recipe
+    category = "sp-kr-research-data",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 24,
+    ingredients =
+    {
+      {type = "item", name = "sp-material-science-pack-2", amount = 10},
+      {type = "item", name = "sp-diamond", amount = 6},
+      {type = "item", name = "tungsten-carbide", amount = 4},
+      {type = "item", name = "sp-nitenol", amount = 5},
+      {type = "item", name = "sp-inconel", amount = 5},
+      {type = "item", name = "sp-niobium-tin", amount = 4},
+      {type = "item", name = "sp-ceramic-matrix-composites", amount = 8}
+    },
+    results = {
+      {type = "item", name = "sp-material-science-pack-3", amount = 5}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-space-science-pack-3",  -- #ForRegEx# - recipe
+    category = "sp-kr-research-data",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 144,
+    ingredients =
+    {
+      {type = "item", name = "space-science-pack", amount = 120},
+      -- {type = "item", name = "satellite", amount = 5}, removed by space age
+      {type = "item", name = "sp-blunagium-explorer", amount = 1},
+      {type = "item", name = "sp-grobgnum-explorer", amount = 1},
+      {type = "item", name = "sp-rukite-explorer", amount = 1},
+      {type = "item", name = "sp-yemnuth-explorer", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-space-science-pack-3", amount = 30}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-nuclear-science-pack-3",  -- #ForRegEx# - recipe
+    category = "sp-kr-research-data",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 48,
+    ingredients =
+    {
+      {type = "item", name = "sp-nuclear-science-pack-2", amount = 20},
+      {type = "item", name = "sp-reactor-core", amount = 1},
+      {type = "item", name = "sp-plutonium-fuel-rod", amount = 10},
+      {type = "item", name = "sp-uranium-fuel-rod", amount = 10}
+    },
+    results = {
+      {type = "item", name = "sp-nuclear-science-pack-3", amount = 10}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-production-science-pack-3",  -- #ForRegEx# - recipe
+    category = "sp-kr-research-data",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 24,
+    ingredients =
+    {
+      {type = "item", name = "production-science-pack", amount = 10},
+      {type = "item", name = "sp-compressor", amount = 5},
+      {type = "item", name = "sp-dynamo", amount = 5},
+      {type = "item", name = "sp-cryostat", amount = 5},
+      {type = "item", name = "sp-turbopump", amount = 5}
+    },
+    results = {
+      {type = "item", name = "sp-production-science-pack-3", amount = 5}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-utility-science-pack-3",  -- #ForRegEx# - recipe
+    category = "sp-kr-research-data",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 192,
+    ingredients =
+    {
+      -- Krastorio {type = "item", name = "utility-science-pack", amount = 40},
+      {type = "item", name = "fusion-reactor", amount = 8},
+      {type = "item", name = "sp-kr-quantum-computer", amount = 1},
+      {type = "item", name = "sp-kr-bio-lab", amount = 2},
+      {type = "item", name = "sp-kr-fuel-refinery", amount = 2},
+      {type = "item", name = "sp-kr-quarry-drill", amount = 1},
+      {type = "item", name = "assembling-machine-3", amount = 4},
+      {type = "item", name = "beacon", amount = 4}
+    },
+    results = {
+      {type = "item", name = "sp-utility-science-pack-3", amount = 40}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-matter-science-pack",  -- #ForRegEx# - recipe
+    category = "sp-kr-research-data",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 40,
+    ingredients =
+    {
+      {type = "item", name = "sp-blunagium-bar", amount = 5},
+      {type = "item", name = "sp-grobgnum-bar", amount = 5},
+      {type = "item", name = "sp-rukite-bar", amount = 5},
+      {type = "item", name = "sp-yemnuth-shard", amount = 5},
+      {type = "item", name = "sp-imersite-crystal", amount = 5},
+      {type = "item", name = "sp-matter-research-data", amount = 5},
+      {type = "item", name = "sp-blank-tech-card", amount = 5}
+    },
+    results = {
+      {type = "item", name = "sp-matter-science-pack", amount = 5}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-optimization-science-pack",  -- #ForRegEx# - recipe
+    category = "sp-kr-research-data",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 69,
+    ingredients =
+    {
+      {type = "item", name = "iron-plate", amount = 5}
+    },
+    results = {
+      {type = "item", name = "sp-optimization-science-pack", amount = 40}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-advanced-science-pack",  -- #ForRegEx# - recipe
+    category = "sp-kr-research-data",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 40,
+    ingredients =
+    {
+      {type = "item", name = "sp-biochip", amount = 5},
+      {type = "item", name = "sp-chronalyte", amount = 5},
+      {type = "item", name = "sp-nanowire", amount = 5},
+      {type = "item", name = "sp-plasma-capsule", amount = 5},
+      {type = "item", name = "sp-blank-tech-card", amount = 5}
+    },
+    results = {
+      {type = "item", name = "sp-advanced-science-pack", amount = 5}
     }
   },
   ------------------------------------------------------------------------------
