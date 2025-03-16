@@ -12469,6 +12469,7 @@ data:extend({
     ingredients = {
       {type = "item", name = "sp-rukite-gear-wheel", amount = 10},
       {type = "item", name = "sp-imersium-gear-wheel", amount = 4},
+      {type = "item", name = "sp-ceramic-matrix-composites", amount = 5},
       {type = "item", name = "sp-titanium-niobium", amount = 2},
       {type = "item", name = "tungsten-carbide", amount = 3}
     },

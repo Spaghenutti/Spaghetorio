@@ -344,7 +344,10 @@ data.raw.technology["automation-2"].unit.ingredients = {
   {"sp-material-science-pack-1", 1}
 }
 
-data.raw.technology["automation-3"].prerequisites = {"sp-control-unit"}
+data.raw.technology["automation-3"].prerequisites = {
+  "sp-control-unit",
+  "sp-ceramic-matrix-composites"
+}
 data.raw.technology["automation-3"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},
   {"sp-logistic-science-pack-2", 1},
@@ -1033,7 +1036,8 @@ data.raw.technology["power-armor"].unit.ingredients = {
 
 data.raw.technology["power-armor-mk2"].prerequisites = {
   "sp-compressor",
-  "processing-unit"
+  "processing-unit",
+  "sp-ceramic-matrix-composites"
 }
 data.raw.technology["power-armor-mk2"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},
