@@ -784,7 +784,8 @@ data:extend({
     },
     prerequisites = {
       "utility-science-pack",
-      "sp-carbon-high-tech"
+      "sp-carbon-high-tech",
+      "sp-high-purity-silicon-processing"
     },
     unit =
     {
