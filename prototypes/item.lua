@@ -4620,6 +4620,111 @@ data:extend({
     stack_size = 100
   },
   ------------------------------------------------------------------------------
+  -- MARK: agriculture-processes
+  ------------------------------------------------------------------------------
+  {
+    type = "item",
+    name = "sp-potato",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/potato-1.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    pictures = {
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/potato-1.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/potato-2.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/potato-3.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/potato-4.png", scale = 0.5, mipmap_count = 4}
+    },
+    subgroup = "agriculture-processes",
+    order = "[potato]",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "sp-fungi",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/fungi-1.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    pictures = {
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/fungi-1.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/fungi-2.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/fungi-3.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/fungi-4.png", scale = 0.5, mipmap_count = 4}
+    },
+    subgroup = "agriculture-processes",
+    order = "[fungi]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "sp-leaf",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/leaf-1.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    pictures = {
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/leaf-1.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/leaf-2.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/leaf-3.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/leaf-4.png", scale = 0.5, mipmap_count = 4}
+    },
+    subgroup = "agriculture-processes",
+    order = "[leaf]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "sp-wheat",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/wheat-1.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    pictures = {
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/wheat-1.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/wheat-2.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/wheat-3.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/wheat-4.png", scale = 0.5, mipmap_count = 4}
+    },
+    subgroup = "agriculture-processes",
+    order = "[wheat]",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "sp-animal-fat",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/animal-fat.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "agriculture-processes",
+    order = "y-[animal-fat]",
+    stack_size = 50
+  },
+  ------------------------------------------------------------------------------
+  -- MARK: agriculture-products
+  ------------------------------------------------------------------------------
+  {
+    type = "item",
+    name = "sp-protozoa",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/protozoa-1.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    pictures = {
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/protozoa-1.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/protozoa-2.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/protozoa-3.png", scale = 0.5, mipmap_count = 4}
+    },
+    subgroup = "agriculture-products",
+    order = "[protozoa]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "sp-polysaccharide",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/polysaccharide.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "alien-product",
+    order = "y-[polysaccharide]",
+    stack_size = 50
+  },
+  ------------------------------------------------------------------------------
   -- MARK: alien-product
   ------------------------------------------------------------------------------
   {

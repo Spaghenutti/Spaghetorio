@@ -373,6 +373,35 @@ data:extend({
     order = "a[fluid]-f[dirty-water-with-zinc]"
   },
   ------------------------------------------------------------------------------
+  -- MARK: fluid
+  ------------------------------------------------------------------------------
+  {
+    type = "fluid",
+    name = "sp-fatty-acids",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    base_color = {r=0.05, g=0.1, b=0.5},
+    flow_color = {r=0.05, g=0.1, b=0.5},
+    icon = "__Spaghetorio__/graphics/icons/fatty-acids.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "fluid",
+    order = "a[fluid]-c[biological]-a[fatty-acids]"
+  },
+  {
+    type = "fluid",
+    name = "sp-biocrude-oil",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    base_color = {r=0.05, g=0.1, b=0.5},
+    flow_color = {r=0.05, g=0.1, b=0.5},
+    icon = "__Spaghetorio__/graphics/icons/biocrude-oil.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "fluid",
+    order = "a[fluid]-c[biological]-a[biocrude-oil]"
+  },
+  ------------------------------------------------------------------------------
   -- MARK: gas
   ------------------------------------------------------------------------------
   {
@@ -465,6 +494,19 @@ data:extend({
     icon_mipmaps = 4,
     subgroup = "gas",
     order = "a[gas]-g[sulfur-dioxide]"
+  },
+  {
+    type = "fluid",
+    name = "sp-hydrogen-sulfide",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    base_color = {r=0.05, g=0.1, b=0.5},
+    flow_color = {r=0.05, g=0.1, b=0.5},
+    icon = "__Spaghetorio__/graphics/icons/hydrogen-sulfide.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "gas",
+    order = "a[gas]-g[hydrogen-sulfide]"
   },
   {
     type = "fluid",
@@ -572,6 +614,32 @@ data:extend({
     icon_mipmaps = 4,
     subgroup = "chemical",
     order = "a[fluid]-f[sulfamate]"
+  },
+  {
+    type = "fluid",
+    name = "sp-dimethyl-sulfoxide",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    base_color = {r=0.05, g=0.1, b=0.5},
+    flow_color = {r=0.05, g=0.1, b=0.5},
+    icon = "__Spaghetorio__/graphics/icons/dimethyl-sulfoxide.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "chemical",
+    order = "a[fluid]-f[dimethyl-sulfoxide]"
+  },
+  {
+    type = "fluid",
+    name = "sp-dimethyl-sulfide",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    base_color = {r=0.05, g=0.1, b=0.5},
+    flow_color = {r=0.05, g=0.1, b=0.5},
+    icon = "__Spaghetorio__/graphics/icons/dimethyl-sulfide.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "chemical",
+    order = "a[fluid]-f[dimethyl-sulfide]"
   },
   {
     type = "fluid",

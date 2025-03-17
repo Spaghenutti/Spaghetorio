@@ -77,11 +77,35 @@ TODO for 0.3.7
 
 TODO for 0.3.8
   - clean up code for buildings
-  - Update recycler recipe chain
+  + Update recycler recipe chain
   - Update nuclear science pack recipe chain
-  - Update military science 2 branch of tech tree
+  + Update military science 2 branch of tech tree
   - Unlock freezer in biological tree and before cryogenic plant
   - Updated biological branch tier 1 and 2 of tech tree
+    - bio-fuel
+      - sugar
+        - crops
+      - fatty acids
+        - animal fat
+          - fish
+        - biomethanol
+          - potato or spoilage
+    - lubricant
+      - biocrude-oil
+        - biomass or spoilage
+    - epoxy
+      - biocrude-oil
+    - bio-pesticides
+      - protozoa
+        - spoilage
+      - fungi
+        - spoilage
+      - polysacharides
+        - leaves
+          - trees
+        - dimethyl-sulfoxide
+        
+
 
 TODO for 0.3.9
   - Add Tetraethylene glycol dimethyl CH₃O-(CH₂CH₂O)₄-CH₃
