@@ -51,3 +51,20 @@ for i, start_technology in pairs(start_technologies) do for name, technology in 
 Take screenshot:
 
 /screenshot
+
+--------------------------------------------------------------------------------
+
+murder all enemies
+
+/c game.forces["enemy"].kill_all_units()
+
+--------------------------------------------------------------------------------
+
+murder all enemies permanently
+
+/c local surface=game.player.surface
+for key, entity in pairs(surface.find_entities_filtered({force="enemy"})) do
+	entity.destroy()
+end
+
+--------------------------------------------------------------------------------

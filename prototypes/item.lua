@@ -4622,22 +4622,22 @@ data:extend({
   ------------------------------------------------------------------------------
   -- MARK: agriculture-processes
   ------------------------------------------------------------------------------
-  {
-    type = "item",
-    name = "sp-potato",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/icons/potato-1.png",
-    icon_size = 64,
-    icon_mipmaps = 4,
-    pictures = {
-      {size = 64, filename = "__Spaghetorio__/graphics/icons/potato-1.png", scale = 0.5, mipmap_count = 4},
-      {size = 64, filename = "__Spaghetorio__/graphics/icons/potato-2.png", scale = 0.5, mipmap_count = 4},
-      {size = 64, filename = "__Spaghetorio__/graphics/icons/potato-3.png", scale = 0.5, mipmap_count = 4},
-      {size = 64, filename = "__Spaghetorio__/graphics/icons/potato-4.png", scale = 0.5, mipmap_count = 4}
-    },
-    subgroup = "agriculture-processes",
-    order = "[potato]",
-    stack_size = 100
-  },
+  -- {
+  --   type = "item",
+  --   name = "sp-potato",  -- #ForRegEx# - item
+  --   icon = "__Spaghetorio__/graphics/icons/potato-1.png",
+  --   icon_size = 64,
+  --   icon_mipmaps = 4,
+  --   pictures = {
+  --     {size = 64, filename = "__Spaghetorio__/graphics/icons/potato-1.png", scale = 0.5, mipmap_count = 4},
+  --     {size = 64, filename = "__Spaghetorio__/graphics/icons/potato-2.png", scale = 0.5, mipmap_count = 4},
+  --     {size = 64, filename = "__Spaghetorio__/graphics/icons/potato-3.png", scale = 0.5, mipmap_count = 4},
+  --     {size = 64, filename = "__Spaghetorio__/graphics/icons/potato-4.png", scale = 0.5, mipmap_count = 4}
+  --   },
+  --   subgroup = "agriculture-processes",
+  --   order = "[potato]",
+  --   stack_size = 100
+  -- },
   {
     type = "item",
     name = "sp-fungi",  -- #ForRegEx# - item
@@ -4670,22 +4670,22 @@ data:extend({
     order = "[leaf]",
     stack_size = 50
   },
-  {
-    type = "item",
-    name = "sp-wheat",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/icons/wheat-1.png",
-    icon_size = 64,
-    icon_mipmaps = 4,
-    pictures = {
-      {size = 64, filename = "__Spaghetorio__/graphics/icons/wheat-1.png", scale = 0.5, mipmap_count = 4},
-      {size = 64, filename = "__Spaghetorio__/graphics/icons/wheat-2.png", scale = 0.5, mipmap_count = 4},
-      {size = 64, filename = "__Spaghetorio__/graphics/icons/wheat-3.png", scale = 0.5, mipmap_count = 4},
-      {size = 64, filename = "__Spaghetorio__/graphics/icons/wheat-4.png", scale = 0.5, mipmap_count = 4}
-    },
-    subgroup = "agriculture-processes",
-    order = "[wheat]",
-    stack_size = 100
-  },
+  -- {
+  --   type = "item",
+  --   name = "sp-wheat",  -- #ForRegEx# - item
+  --   icon = "__Spaghetorio__/graphics/icons/wheat-1.png",
+  --   icon_size = 64,
+  --   icon_mipmaps = 4,
+  --   pictures = {
+  --     {size = 64, filename = "__Spaghetorio__/graphics/icons/wheat-1.png", scale = 0.5, mipmap_count = 4},
+  --     {size = 64, filename = "__Spaghetorio__/graphics/icons/wheat-2.png", scale = 0.5, mipmap_count = 4},
+  --     {size = 64, filename = "__Spaghetorio__/graphics/icons/wheat-3.png", scale = 0.5, mipmap_count = 4},
+  --     {size = 64, filename = "__Spaghetorio__/graphics/icons/wheat-4.png", scale = 0.5, mipmap_count = 4}
+  --   },
+  --   subgroup = "agriculture-processes",
+  --   order = "[wheat]",
+  --   stack_size = 100
+  -- },
   {
     type = "item",
     name = "sp-animal-fat",  -- #ForRegEx# - item
