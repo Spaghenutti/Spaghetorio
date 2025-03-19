@@ -9067,7 +9067,7 @@ data:extend({
     energy_required = 2,
     ingredients = {
       {type = "item", name = "sp-diamond", amount = 1},
-      {type = "item", name = "sp-maraging-steel", amount = 1},
+      {type = "item", name = "sp-vanadium-steel", amount = 2},
     },
     results = {
       {type = "item", name = "sp-diamond-saw", amount = 1}

@@ -10,6 +10,8 @@ Date: 2025-03-22
     - Updated graphics of buildings
     - Changed tier 1 military items recipes
     - Updated tier 2 military tech tree
+  Bugfixes:
+    - Fixed cyclic dependancy in tech tree for craftgin diamond saw
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.7
 Date: 2025-03-14
