@@ -30,7 +30,7 @@ data:extend({
   {
     -- Growing, used by greenhouse
     type = "recipe-category",
-    name = "sp-kr-growing",
+    name = "wood-farming",
   },
   {
     -- Bioprocessing, used by bio-lab

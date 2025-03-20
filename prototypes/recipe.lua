@@ -6649,7 +6649,7 @@ data:extend({
     name = "sp-wood-from-urea",  -- #ForRegEx# - recipe
     icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/krastorio/icons/recipes/wood-plus.png", 64,
                                          "__Spaghetorio__/graphics/icons/urea.png", 64),
-    category = "sp-kr-growing",
+    category = "wood-farming",
     subgroup = "basic-agriculture",
     enabled = false,
     allow_productivity = true,
@@ -6668,7 +6668,7 @@ data:extend({
     type = "recipe",
     name = "sp-seed-processing",  -- #ForRegEx# - recipe
     icon = "__space-age__/graphics/icons/tree-seed.png",
-    category = "sp-kr-growing",
+    category = "wood-farming",
     subgroup = "basic-agriculture",
     order = "b[nauvis-agriculture]-a[seed-processing]",
     enabled = false,
@@ -10893,7 +10893,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-kr-greenhouse",  -- #ForRegEx# - recipe
+    name = "sp-kr-woodfarm",  -- #ForRegEx# - recipe
     icon_size = 64,
     mip_maps = 4,
     category = "crafting",
@@ -10910,7 +10910,7 @@ data:extend({
       {type = "item", name = "sp-valve", amount = 8}
     },
     results = {
-      {type = "item", name = "sp-kr-greenhouse", amount = 1}
+      {type = "item", name = "sp-kr-woodfarm", amount = 1}
     }
   },
   {

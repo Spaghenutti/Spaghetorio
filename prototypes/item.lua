@@ -7060,13 +7060,13 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-kr-greenhouse",  -- #ForRegEx# - building
+    name = "sp-kr-woodfarm",  -- #ForRegEx# - building
     icon = "__Spaghetorio__/graphics/krastorio/icons/entities/greenhouse.png",
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "production-machine",
     order = "d-g1[greenhouse]",
-    place_result = "sp-kr-greenhouse",
+    place_result = "sp-kr-woodfarm",
     stack_size = 50,
   },
   {

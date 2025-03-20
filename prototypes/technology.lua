@@ -7755,14 +7755,14 @@ data:extend({
   },
   {
     type = "technology",
-    name = "sp-kr-greenhouse",  -- #ForRegEx# - technology
+    name = "sp-kr-woodfarm",  -- #ForRegEx# - technology
     icon = "__Spaghetorio__/graphics/krastorio/technologies/greenhouse.png",
     icon_size = 256,
     icon_mipmaps = 4,
     effects = {
       {
         type = "unlock-recipe",
-        recipe = "sp-kr-greenhouse",
+        recipe = "sp-kr-woodfarm",
       },
       {
         type = "unlock-recipe",

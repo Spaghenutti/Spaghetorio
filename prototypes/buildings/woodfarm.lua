@@ -15,12 +15,12 @@ local greenhouse_working_sound = {
 data:extend({
   {
     type = "assembling-machine",
-    name = "sp-kr-greenhouse",
+    name = "sp-kr-woodfarm",
     icon_size = 64,
     icon_mipmaps = 4,
     icon = "__Spaghetorio__/graphics/krastorio/icons/entities/greenhouse.png",
     flags = { "placeable-neutral", "placeable-player", "player-creation" },
-    minable = { hardness = 1, mining_time = 1, result = "sp-kr-greenhouse" },
+    minable = { hardness = 1, mining_time = 1, result = "sp-kr-woodfarm" },
     max_health = 500,
     corpse = "sp-kr-big-random-pipes-remnant",
     dying_explosion = "big-explosion",
@@ -45,7 +45,7 @@ data:extend({
     fluid_boxes_off_when_no_fluid_recipe = false,
     collision_box = { { -3.25, -3.25 }, { 3.25, 3.25 } },
     selection_box = { { -3.5, -3.5 }, { 3.5, 3.5 } },
-    fast_replaceable_group = "sp-kr-greenhouse",
+    fast_replaceable_group = "sp-kr-woodfarm",
     module_slots = 3,
     allowed_effects = { "consumption", "speed", "productivity", "pollution" },
     graphics_set = {
@@ -97,7 +97,7 @@ data:extend({
         },
       },
     },
-    crafting_categories = {"sp-kr-growing"},
+    crafting_categories = {"wood-farming"},
     vehicle_impact_sound = { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
     working_sound = greenhouse_working_sound,
     crafting_speed = 1,

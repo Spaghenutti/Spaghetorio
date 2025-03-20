@@ -103,7 +103,7 @@ data.raw.recipe["carbon-fiber"].results = {
   {type = "item", name = "carbon-fiber", amount = 2},
 }
 
-data.raw.recipe["wood-processing"].category = "sp-kr-growing"
+data.raw.recipe["wood-processing"].category = "wood-farming"
 data.raw.recipe["wood-processing"].subgroup = "basic-agriculture"
 util.recipe.change_recipe_ingredients("wood-processing",
   {

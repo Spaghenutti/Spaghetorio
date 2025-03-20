@@ -9,7 +9,7 @@ function freeplay.add_starting_items()
   local items = remote.call("freeplay", "get_created_items")
 
   -- items["lab"] = 1
-  items["sp-kr-greenhouse"] = 4
+  items["sp-kr-woodfarm"] = 4
   items["offshore-pump"] = 1
   items["pipe-to-ground"] = 10
   items["pipe"] = 30

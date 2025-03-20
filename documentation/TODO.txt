@@ -76,11 +76,13 @@ TODO for 0.3.7
   + Add crystallizer with diamond saw
 
 TODO for 0.3.8
-  - clean up code for buildings
   + Update recycler recipe chain
-  - Update nuclear science pack recipe chain
   + Update military science 2 branch of tech tree
-  - Unlock freezer in biological tree and before cryogenic plant
+
+TODO for 0.3.9
+  - Add Tetraethylene glycol dimethyl CH₃O-(CH₂CH₂O)₄-CH₃
+    - synthesized by reacting tetraethylene glycol with a methylating agent, such as dimethyl sulfate or methyl iodide
+    - Unlock freezer in biological tree and before cryogenic plant
   - Updated biological branch tier 1 and 2 of tech tree
     - bio-fuel
       - sugar
@@ -104,12 +106,11 @@ TODO for 0.3.8
         - leaves
           - trees
         - dimethyl-sulfoxide
-        
 
+TODO for 0.3.10
+  - Update nuclear science pack recipe chain
 
-TODO for 0.3.9
-  - Add Tetraethylene glycol dimethyl CH₃O-(CH₂CH₂O)₄-CH₃
-    - synthesized by reacting tetraethylene glycol with a methylating agent, such as dimethyl sulfate or methyl iodide
+TODO for 0.3.11
   - Update computer science 2 branch of tech tree
       - Uses for tellurium
         + Add thermocouple (uses tellurium)
@@ -122,12 +123,12 @@ TODO for 0.3.9
   - Update utility science 2 branch of tech tree
   + Add biological / agricultural item group
 
-TODO for 0.3.10
+TODO for 0.3.12
   - Change lightning collectors to power poles
   - Fix / add casting recipes
   - Fix productivity tehnologies (see steel plate productivity)
 
-TODO for 0.3.11
+TODO for 0.3.13
   - Add recipe chains for core mining
   + Uses for bismuth
     + refined from tin and lead
@@ -143,17 +144,19 @@ TODO for 0.3.11
     - thallium used in optics
     - used in rodent poison
 
-TODO for 0.3.12
+TODO for 0.3.14
   - Update space science 2 branch of tech tree
   - Add back blunagium, grobgnum, rukite and yemnuth rockets (even though they are unlocked later)
 
 TODO for 0.3.xx
+  - clean up code for buildings
   - Fix crafting categories for some recipes (like manufacturing)
   - Update all other productivity technologies (see steel plate productivity)
   - Support text plates mod
   - Support LTN mod
   - Add matter conversion recipes
   - Create functions to automate generation of acro conversion recipes
+  - Add black reinforced concrete
 
 --------------------------------------------------------------------------------
 
@@ -169,14 +172,13 @@ TODO before alpha release:
     - make setting
 
 TODO after alpha release:
-  - organize icons:
+  + organize icons:
     + fix group icons
-    - move fluid icons to fluid group
+    + move fluid icons to fluid group
     + fix crushing icons
-    - fix enriching ore icons
-    - fix enriching crushed ore icons
+    + fix enriching ore icons
+    + fix enriching crushed ore icons
     + fix rare metal processing icons
-  - Add black reinforced concrete
 
 --------------------------------------------------------------------------------
 
@@ -364,7 +366,7 @@ Technologies which unlock items allready unlocked by base factorio
 
 
 hurricane406 graphics
-  - Greenhouse -> Already exists from krastorio
+  - Woodfarm -> Already exists from krastorio
   - Disruptor -> For mining alien minerals
   + Alloy forge
   + Atom forge -> Breeder reactor
@@ -773,7 +775,7 @@ Other:
   - Add glow to alien items
   + Fix stack sizes (for version 0.2.0)
   + Fix resource spawning (for version 0.2.0)
-  + Add greenhouse on spawning with some pumps and pipes (for version 0.2.0)
+  + Add woodfarm on spawning with some pumps and pipes (for version 0.2.0)
   + More realistic weapons setting changes also the actual weapons that exist. Support this krastorio setting properly.
 
 Low prio:
