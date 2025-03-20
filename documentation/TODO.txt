@@ -84,9 +84,12 @@ TODO for 0.3.9
     - synthesized by reacting tetraethylene glycol with a methylating agent, such as dimethyl sulfate or methyl iodide
     - Unlock freezer in biological tree and before cryogenic plant
   - Updated biological branch tier 1 and 2 of tech tree
+    - greenhouse
+      - sprinkler
     - bio-fuel
       - sugar
         - crops
+          - landfill
       - fatty acids
         - animal fat
           - fish
@@ -95,6 +98,7 @@ TODO for 0.3.9
     - lubricant
       - biocrude-oil
         - biomass or spoilage
+        - algue
     - epoxy
       - biocrude-oil
     - bio-pesticides

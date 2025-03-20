@@ -103,6 +103,7 @@ data.raw.recipe["carbon-fiber"].results = {
   {type = "item", name = "carbon-fiber", amount = 2},
 }
 
+data.raw.recipe["wood-processing"].icon = "__base__/graphics/icons/wood.png"
 data.raw.recipe["wood-processing"].category = "wood-farming"
 data.raw.recipe["wood-processing"].subgroup = "basic-agriculture"
 util.recipe.change_recipe_ingredients("wood-processing",
@@ -361,4 +362,16 @@ util.recipe.change_recipe_ingredients("electromagnetic-science-pack",
   20)
 data.raw.recipe["electromagnetic-science-pack"].results = {
   {type = "item", name = "electromagnetic-science-pack", amount = 5}
+}
+
+util.recipe.change_recipe_ingredients("agricultural-science-pack",
+  {
+    {type = "item", name = "sp-blank-tech-card", amount = 5},
+    {type = "item", name = "sp-urea", amount = 5},
+    {type = "item", name = "bioflux", amount = 5},
+    {type = "item", name = "pentapod-egg", amount = 5}
+  },
+  24)
+data.raw.recipe["agricultural-science-pack"].results = {
+  {type = "item", name = "agricultural-science-pack", amount = 5}
 }

@@ -4,8 +4,10 @@ Date: 2025-03-28
   Features:
     - New biological / agricultural tech tree
   Changes:
+    - Updated woodfarming icon
     - Greenhouse renamed to woodfarm - WARNING: All instances of greenhouses on your map are gone now!
     - Woodfarm building has the same recipe as greenhouse, so if you had greenhouses automated you will have to select now woodfarm.
+    - Woodfarm must me now researched again
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.8
 Date: 2025-03-21

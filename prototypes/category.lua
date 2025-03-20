@@ -28,9 +28,14 @@ data:extend({
     name = "sp-kr-nuclear-fusion",
   },
   {
-    -- Growing, used by greenhouse
+    -- Growing, used by woodfarm
     type = "recipe-category",
     name = "wood-farming",
+  },
+  {
+    -- Growing, used by greenhouse
+    type = "recipe-category",
+    name = "farming",
   },
   {
     -- Bioprocessing, used by bio-lab

@@ -3496,9 +3496,9 @@ data:extend({
     category = "chemistry",
     enabled = false,
     allow_productivity = true,
-    energy_required = 2,
+    energy_required = 1,
     ingredients = {
-      {type = "item", name = "sp-vanadium-plate", amount = 1},
+      {type = "fluid", name = "sp-vanadium-bearing-solution", amount = 5},
       {type = "fluid", name = "sulfuric-acid", amount = 5},
     },
     results = {
@@ -6672,7 +6672,6 @@ data:extend({
     subgroup = "basic-agriculture",
     order = "b[nauvis-agriculture]-a[seed-processing]",
     enabled = false,
-    allow_productivity = true,
     allow_productivity = true,
     energy_required = 30,
     ingredients = {

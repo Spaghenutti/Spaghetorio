@@ -3883,7 +3883,8 @@ data:extend({
       },
     },
     prerequisites = {
-      "sp-sodium-hydroxide"
+      "sp-sodium-hydroxide",
+      "sp-kr-woodfarm"
     },
     unit = {
       count = 125,
@@ -7781,6 +7782,40 @@ data:extend({
       count = 20,
       ingredients = {
         {"automation-science-pack", 1},
+      },
+      time = 30,
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-greenhouse",  -- #ForRegEx# - technology
+    icon = "__Spaghetorio__/graphics/hr-icons/greenhouse.png",
+    icon_size = 256,
+    icon_mipmaps = 4,
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-vanadyl-sulfate",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-potassium-permanganate-solution",
+      }
+    },
+    prerequisites = {
+      "sp-potassium-processing"
+    },
+    unit = {
+      count = 100,
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"logistic-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"sp-material-science-pack-1", 1},
+        {"sp-geological-science-pack-1", 1},
+        {"sp-electronic-science-pack-1", 1},
+        {"metallurgic-science-pack", 1},
+        {"electromagnetic-science-pack", 1}
       },
       time = 30,
     },
