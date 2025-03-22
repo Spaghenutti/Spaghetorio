@@ -230,7 +230,7 @@ data:extend({
     drawing_box = { { -6, -6.5 }, { 6, 4.5 } },
     graphics_set = {
       animation = intergalactic_transceiver_animation,
-      working_visualisations = activated_intergalactic_transceiver_animation,
+      working_visualisations = { activated_intergalactic_transceiver_animation },
     },
     picture = intergalactic_transceiver_picture,
     crafting_categories = {"black-hole-forging"},

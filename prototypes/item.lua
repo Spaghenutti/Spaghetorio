@@ -7077,7 +7077,7 @@ data:extend({
     icon_mipmaps = 4,
     subgroup = "production-machine",
     order = "d-g1[greenhouse]",
-    place_result = "sp-kr-greenhouse",
+    place_result = "sp-greenhouse",
     stack_size = 50,
   },
   {

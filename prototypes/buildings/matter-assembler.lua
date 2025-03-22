@@ -124,11 +124,13 @@ data:extend({
             },
           },
         },
-        light = {
-          intensity = 0.80,
-          size = 6,
-          shift = { 0, -0.15 },
-          color = { r = 0.35, g = 0.5, b = 1 },
+        {
+          light = {
+            intensity = 0.80,
+            size = 6,
+            shift = { 0, -0.15 },
+            color = { r = 0.35, g = 0.5, b = 1 },
+          }
         },
       },
     },
