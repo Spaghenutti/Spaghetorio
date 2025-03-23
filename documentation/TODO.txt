@@ -86,6 +86,7 @@ TODO for 0.3.9
   - Updated biological branch tier 1 and 2 of tech tree
     - greenhouse
       - sprinkler
+      - ventilator
     - bio-fuel
       - sugar
         - crops

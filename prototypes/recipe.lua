@@ -1290,7 +1290,7 @@ data:extend({
       {type = "fluid", name = "water", amount = 50}
     },
     results = {
-      {type = "item", name = "sp-enriched-aluminum", amount = 8},
+      {type = "item", name = "sp-enriched-iron", amount = 8},
       {type = "fluid", name = "sp-dirty-water-with-iron", amount = 50}
     },
     crafting_machine_tint = {

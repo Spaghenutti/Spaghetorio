@@ -8,6 +8,13 @@ Date: 2025-03-28
     - Greenhouse renamed to woodfarm - WARNING: All instances of greenhouses on your map are gone now!
     - Woodfarm building has the same recipe as greenhouse, so if you had greenhouses automated you will have to select now woodfarm.
     - Woodfarm must me now researched again
+  Bugfixes:
+    - enriching crushed iron ore now correctly produces enriched iron
+---------------------------------------------------------------------------------------------------
+Version: 0.3.8b
+Date: 2025-03-22
+  Bugfixes:
+    - Fixed compatibility with factorio 2.0.42
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.8
 Date: 2025-03-21
