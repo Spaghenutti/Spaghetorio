@@ -2772,12 +2772,12 @@ data:extend({
     energy_required = 5,
     ingredients = {
       {type = "item", name = "copper-ore", amount = 1},
-      {type = "fluid", name = "water", amount = 50}
+      {type = "fluid", name = "water", amount = 20}
     },
     results = {
-      {type = "item", name = "sp-crushed-copper-ore", probability = 0.978, amount = 1},
-      {type = "item", name = "sp-silver", probability = 0.017, amount = 1},
-      {type = "item", name = "sp-palladium", probability = 0.005, amount = 1}
+      {type = "item", name = "sp-crushed-copper-ore", probability = 0.94, amount = 1},
+      {type = "item", name = "sp-silver", probability = 0.05, amount = 1},
+      {type = "item", name = "sp-palladium", probability = 0.01, amount = 1}
     }
   },
   {
@@ -2792,12 +2792,13 @@ data:extend({
     allow_productivity = true,
     energy_required = 4,
     ingredients = {
-      {type = "item", name = "sp-nickel-ore", amount = 2},
-      {type = "fluid", name = "water", amount = 50}
+      {type = "item", name = "sp-nickel-ore", amount = 1},
+      {type = "fluid", name = "water", amount = 20},
+      {type = "fluid", name = "sp-sodium-hydroxide", amount = 1}
     },
     results = {
-      {type = "item", name = "sp-crushed-nickel-ore", probability = 0.785, amount = 1},
-      {type = "item", name = "sp-crushed-iron-ore", probability = 0.285, amount = 1},
+      {type = "item", name = "sp-crushed-nickel-ore", probability = 0.6, amount = 1},
+      {type = "item", name = "sp-crushed-iron-ore", probability = 0.37, amount = 1},
       {type = "item", name = "sp-palladium", probability = 0.03, amount = 1}
     }
   },

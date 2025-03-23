@@ -12,7 +12,7 @@ Your factory will never be the same... because it’s going to need therapy. Enj
 
 - 25 new resources like **chromite**, **iodine-brine**, **core-fragment** and **blunagium**
 ![](https://raw.githubusercontent.com/Spaghenutti/Spaghetorio/refs/heads/main/images/resource.png)
-- over 550 new items like **springs**, **gear box**, **integrated circuit**, **flux capacitor** and of course **dark energy harvester**
+- over 550 new items like **ceramics**, **gear box**, **integrated circuit**, **inconel** and of course **flux capacitor**
 ![](https://raw.githubusercontent.com/Spaghenutti/Spaghetorio/refs/heads/main/images/metals.png)
 ![](https://raw.githubusercontent.com/Spaghenutti/Spaghetorio/refs/heads/main/images/alloys.png)
 ![](https://raw.githubusercontent.com/Spaghenutti/Spaghetorio/refs/heads/main/images/intermediates.png)
