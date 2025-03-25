@@ -3982,6 +3982,26 @@ data:extend({
   },
   {
     type = "item",
+    name = "sp-ventilator",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/ventilator.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "mechanical-component",
+    order = "electric-[ventilator]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "sp-sprinkler",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/sprinkler.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "mechanical-component",
+    order = "electric-[sprinkler]",
+    stack_size = 50
+  },
+  {
+    type = "item",
     name = "sp-electromagnetic-brake",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/electromagnetic-brake.png",
     icon_size = 64,
