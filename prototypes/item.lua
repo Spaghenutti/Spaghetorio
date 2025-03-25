@@ -3986,7 +3986,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/ventilator.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "mechanical-component",
+    subgroup = "intermediate-product",
     order = "electric-[ventilator]",
     stack_size = 50
   },
@@ -3996,7 +3996,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/sprinkler.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "mechanical-component",
+    subgroup = "intermediate-product",
     order = "electric-[sprinkler]",
     stack_size = 50
   },
