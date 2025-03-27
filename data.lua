@@ -93,6 +93,7 @@ require("prototypes.fluid")
 -- require("prototypes.map-gen-presets") maybe activate this thing after first playthrough
 require("prototypes.item")
 require("prototypes.item-groups")
+require("prototypes.plant")
 -- require("prototypes.noise-layer")
 require("prototypes.recipe")
 -- require("prototypes.rocket-silo")

@@ -1,4 +1,5 @@
 
+
 data:extend({
   ------------------------------------------------------------------------------
   -- MARK: base-products
@@ -4642,6 +4643,30 @@ data:extend({
   ------------------------------------------------------------------------------
   -- MARK: agriculture-processes
   ------------------------------------------------------------------------------
+  {
+    type = "item",
+    name = "algae",  -- #ForRegEx# - item
+        icon = "__space-age__/graphics/decorative/green-lettuce-lichen-water/green-lettuce-lichen-6x6-01.png",
+    icon_size = 282,
+    scale = 0.23,
+    subgroup = "agriculture-processes",
+    order = "a[seeds]-a[algae-spore]",
+    stack_size = 50,
+    -- plant_result = "algae",
+    place_result = "algae",
+  },
+  {
+    type = "item",
+    name = "algae-spore",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/algae-spore.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "agriculture-processes",
+    order = "a[seeds]-a[algae-spore]",
+    stack_size = 50,
+    plant_result = "algae",
+    place_result = "algae",
+  },
   {
     type = "item",
     name = "sp-potato",  -- #ForRegEx# - item
