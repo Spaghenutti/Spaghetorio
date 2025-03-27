@@ -8,6 +8,7 @@ Date: 2025-03-28
     - Greenhouse renamed to woodfarm - WARNING: All instances of greenhouses on your map are gone now!
     - Woodfarm building has the same recipe as greenhouse, so if you had greenhouses automated you will have to select now woodfarm.
     - Woodfarm must me now researched again
+    - Renamed gyro to gyroscope
   Bugfixes:
     - enriching crushed iron ore now correctly produces enriched iron
 ---------------------------------------------------------------------------------------------------

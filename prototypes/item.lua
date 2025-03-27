@@ -3792,12 +3792,12 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-gyro",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/icons/gyro.png",
+    name = "sp-gyroscope",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/gyroscope.png",
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "intermediate-product",
-    order = "other-[gyro]",
+    order = "other-[gyroscope]",
     stack_size = 50
   },
   {

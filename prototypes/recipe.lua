@@ -7593,7 +7593,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-gyro",  -- #ForRegEx# - recipe
+    name = "sp-gyroscope",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     allow_productivity = true,
@@ -7604,7 +7604,7 @@ data:extend({
       {type = "item", name = "copper-cable", amount = 1}
     },
     results = {
-      {type = "item", name = "sp-gyro", amount = 1}
+      {type = "item", name = "sp-gyroscope", amount = 1}
     }
   },
   {

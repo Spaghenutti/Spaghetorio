@@ -1338,7 +1338,7 @@ util.recipe.change_recipe_ingredients("rocket-part",
     {type = "item", name = "sp-rocket-engine", amount = 30},
     {type = "item", name = "sp-solid-rocket-motor", amount = 24},
     {type = "item", name = "sp-insulated-wire", amount = 160},
-    {type = "item", name = "sp-gyro", amount = 1}
+    {type = "item", name = "sp-gyroscope", amount = 1}
   },
   80)
 
@@ -1798,7 +1798,7 @@ util.recipe.change_recipe_ingredients("space-science-pack",
   {
     {type = "item", name = "sp-blank-tech-card", amount = 5},
     {type = "item", name = "sp-space-research-data", amount = 5},
-    {type = "item", name = "sp-gyro", amount = 5},
+    {type = "item", name = "sp-gyroscope", amount = 5},
     {type = "item", name = "sp-glass-fiber", amount = 10},
     {type = "item", name = "sp-mirror", amount = 5},
     {type = "item", name = "sp-lens", amount = 5},
