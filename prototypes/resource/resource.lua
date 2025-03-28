@@ -779,6 +779,8 @@ data.raw.planet["nauvis"].map_gen_settings.autoplace_settings.entity.settings["s
 data.raw.planet["nauvis"].map_gen_settings.autoplace_settings.entity.settings["sp-iodine-brine"] = {}
 data.raw.planet["nauvis"].map_gen_settings.autoplace_settings.entity.settings["sp-mineral-water"] = {}
 
+data.raw.planet["nauvis"].map_gen_settings.autoplace_settings.entity.settings["sp-algae"] = {}
+
 data.raw.planet["nauvis"].map_gen_settings.autoplace_settings.entity.settings["sp-core-rift"] = {}
 
 data.raw.planet["nauvis"].map_gen_settings.autoplace_settings.entity.settings["sp-blunagium"] = {}

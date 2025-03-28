@@ -7,7 +7,7 @@ local sounds = require("__base__.prototypes.entity.sounds")
 data:extend({
   {
     type = "plant",
-    name = "algae",  -- #ForRegEx# - item
+    name = "sp-algae",  -- #ForRegEx# - item
     icon = "__space-age__/graphics/decorative/green-lettuce-lichen-water/green-lettuce-lichen-6x6-01.png",
     icon_size = 282,
     scale = 0.5,
@@ -22,7 +22,7 @@ data:extend({
     minable =
     {
       mining_time = 0.5,
-      results = {{type = "item", name = "algae", amount = 1}},
+      results = {{type = "item", name = "sp-algae", amount = 1}},
       mining_trigger =
       {
         {
@@ -43,25 +43,20 @@ data:extend({
         }
       }
     },
-    mined_sound = {
-      {filename = "__space-age__/sound/mining/mined-yumako-tree-1.ogg", volume = 0.3},
-      {filename = "__space-age__/sound/mining/mined-yumako-tree-2.ogg", volume = 0.3},
-      {filename = "__space-age__/sound/mining/mined-yumako-tree-3.ogg", volume = 0.3},
-      {filename = "__space-age__/sound/mining/mined-yumako-tree-4.ogg", volume = 0.3},
-      {filename = "__space-age__/sound/mining/mined-yumako-tree-5.ogg", volume = 0.3},
-      {filename = "__space-age__/sound/mining/mined-yumako-tree-6.ogg", volume = 0.3},
-    },
+    mining_sound = sound_variations("__space-age__/sound/mining/axe-mining-yumako-tree", 5, 0.6),
+    mined_sound = sound_variations("__space-age__/sound/mining/mined-yumako-tree", 6, 0.3),
     growth_ticks = 3 * 3600,
     harvest_emissions = { spores = 5 },
     emissions_per_second = { pollution = -0.002 },
     collision_box = {{-0.8, -0.8}, {0.8, 0.8}},
-    --collision_mask = {layers={player=true, ground_tile=true, train=true}},
     selection_box = {{-1, -1}, {1, 1}},
     impact_category = "tree",
     autoplace = {
-      control = "gleba_plants",
+      control = "sp-algae",
       order = "a[tree]-b[forest]-a",
-      probability_expression = "min(0.2, 0.3 * (1 - gleba_plants_noise) * control:gleba_plants:size)",
+      -- probability_expression = "tree_01",
+      -- richness_expression = "clamp(random_penalty_at(6, 1), 0, 1)",
+      probability_expression = "updated_water",
       richness_expression = "random_penalty_at(3, 1)",
       tile_restriction = {
         "water",

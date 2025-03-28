@@ -4645,27 +4645,25 @@ data:extend({
   ------------------------------------------------------------------------------
   {
     type = "item",
-    name = "algae",  -- #ForRegEx# - item
-        icon = "__space-age__/graphics/decorative/green-lettuce-lichen-water/green-lettuce-lichen-6x6-01.png",
+    name = "sp-algae",  -- #ForRegEx# - item
+    icon = "__space-age__/graphics/decorative/green-lettuce-lichen-water/green-lettuce-lichen-6x6-01.png",
     icon_size = 282,
-    scale = 0.23,
+    scale = 0.01,
     subgroup = "agriculture-processes",
-    order = "a[seeds]-a[algae-spore]",
+    order = "a[seeds]-a[algae]",
     stack_size = 50,
-    -- plant_result = "algae",
-    place_result = "algae",
   },
   {
     type = "item",
-    name = "algae-spore",  -- #ForRegEx# - item
+    name = "sp-algae-spore",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/algae-spore.png",
     icon_size = 64,
     scale = 0.5,
     subgroup = "agriculture-processes",
     order = "a[seeds]-a[algae-spore]",
     stack_size = 50,
-    plant_result = "algae",
-    place_result = "algae",
+    plant_result = "sp-algae",
+    place_result = "sp-algae",
   },
   {
     type = "item",
@@ -4765,7 +4763,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/polysaccharide.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "alien-product",
+    subgroup = "agriculture-products",
     order = "y-[polysaccharide]",
     stack_size = 50
   },
@@ -5733,7 +5731,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-tritium",
+    name = "sp-tritium",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/krastorio/icons/items/tritium.png",
     icon_size = 64,
     icon_mipmaps = 4,
@@ -5761,7 +5759,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-charged-antimatter-fuel-cell",
+    name = "sp-charged-antimatter-fuel-cell",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/krastorio/icons/items/charged-antimatter-fuel-cell.png",
     icon_size = 64,
     icon_mipmaps = 4,
@@ -5792,7 +5790,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-empty-antimatter-fuel-cell",
+    name = "sp-empty-antimatter-fuel-cell",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/krastorio/icons/items/empty-antimatter-fuel-cell.png",
     icon_size = 64,
     icon_mipmaps = 4,
@@ -5802,7 +5800,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-empty-dt-fuel",
+    name = "sp-empty-dt-fuel",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/krastorio/icons/items/empty-dt-fuel.png",
     icon_size = 64,
     icon_mipmaps = 4,
@@ -5812,7 +5810,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-dt-fuel",
+    name = "sp-dt-fuel",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/krastorio/icons/items/dt-fuel.png",
     icon_size = 64,
     icon_mipmaps = 4,
@@ -5846,7 +5844,7 @@ data:extend({
   -- MARK: logistics
   ------------------------------------------------------------------------------
 
-    ------------------------------------------------------------------------------
+  ------------------------------------------------------------------------------
   -- MARK: Group prdoction
   -- MARK: module
   ------------------------------------------------------------------------------
