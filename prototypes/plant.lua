@@ -38,7 +38,7 @@ data:extend({
     minable =
     {
       mining_time = 0.5,
-      results = {{type = "item", name = "sp-algae", amount = 1}},
+      results = {{type = "item", name = "sp-algae", amount = 5}},
       mining_trigger =
       {
         {
@@ -69,14 +69,17 @@ data:extend({
     collision_mask = {layers={ground_tile=true, train=true, is_object=true, is_lower_object=true}},
     impact_category = "tree",
     autoplace = {
-      -- control = "sp-algae",
+      control = "sp-algae",
       order = "a[tree]-b[forest]-a",
-      -- probability_expression = "tree_01",
-      -- richness_expression = "clamp(random_penalty_at(6, 1), 0, 1)",
-      -- probability_expression = "updated_water",
-      random_probability = 1/48,
-      probability_expression = "random_penalty_at(30, 30)",
-      -- richness_expression = "random_penalty_at(30, 30)",
+      probability_expression = "0.2 * var('control:sp-algae:size')\z
+                                + multioctave_noise{x = x,\z
+                                                    y = y,\z
+                                                    persistence = 0.65,\z
+                                                    seed0 = map_seed,\z
+                                                    seed1 = 1,\z
+                                                    octaves = 3,\z
+                                                    input_scale = 1/25 * var('control:sp-algae:frequency'),\z
+                                                    output_scale = 0.8}",
       tile_restriction = {
         "water",
         "water-shallow",
