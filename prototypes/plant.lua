@@ -4,6 +4,27 @@
 local sounds = require("__base__.prototypes.entity.sounds")
 
 
+local function decorative_pictures(data, scale)
+  local file_path = data.file_path
+  local count = data.count or 1
+  local tint_as_overlay = data.tint_as_overlay or false
+  local tint = data.tint or {1,1,1,1}
+  local pictures = {}
+  for i = 1, count do
+    table.insert(pictures,
+      util.sprite_load(file_path .. '-' .. string.format("%02i", i),
+        {
+          tint = tint,
+          tint_as_overlay = tint_as_overlay,
+          scale = scale
+        }
+      )
+    )
+  end
+  return pictures
+end
+
+
 data:extend({
   {
     type = "plant",
@@ -11,12 +32,7 @@ data:extend({
     icon = "__space-age__/graphics/decorative/green-lettuce-lichen-water/green-lettuce-lichen-6x6-01.png",
     icon_size = 282,
     scale = 0.5,
-    pictures = {
-      {size = 282, filename = "__space-age__/graphics/decorative/green-lettuce-lichen-water/green-lettuce-lichen-6x6-01.png", scale = 0.5},
-      {size = 282, filename = "__space-age__/graphics/decorative/green-lettuce-lichen-water/green-lettuce-lichen-6x6-02.png", scale = 0.5},
-      {size = 282, filename = "__space-age__/graphics/decorative/green-lettuce-lichen-water/green-lettuce-lichen-6x6-03.png", scale = 0.5},
-      {size = 282, filename = "__space-age__/graphics/decorative/green-lettuce-lichen-water/green-lettuce-lichen-6x6-04.png", scale = 0.5}
-    },
+    pictures = decorative_pictures({count = 12, file_path = "__space-age__/graphics/decorative/green-lettuce-lichen-water/green-lettuce-lichen-6x6"}, 0.3),
     subgroup = "trees",
     flags = {"placeable-neutral", "placeable-off-grid", "breaths-air"},
     minable =
@@ -48,27 +64,24 @@ data:extend({
     growth_ticks = 3 * 3600,
     harvest_emissions = { spores = 5 },
     emissions_per_second = { pollution = -0.002 },
-    collision_box = {{-0.8, -0.8}, {0.8, 0.8}},
-    selection_box = {{-1, -1}, {1, 1}},
+    collision_box = {{-1.3, -1.3}, {1.3, 1.3}},
+    selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
+    collision_mask = {layers={ground_tile=true, train=true, is_object=true, is_lower_object=true}},
     impact_category = "tree",
     autoplace = {
-      control = "sp-algae",
+      -- control = "sp-algae",
       order = "a[tree]-b[forest]-a",
       -- probability_expression = "tree_01",
       -- richness_expression = "clamp(random_penalty_at(6, 1), 0, 1)",
-      probability_expression = "updated_water",
-      richness_expression = "random_penalty_at(3, 1)",
+      -- probability_expression = "updated_water",
+      random_probability = 1/48,
+      probability_expression = "random_penalty_at(30, 30)",
+      -- richness_expression = "random_penalty_at(30, 30)",
       tile_restriction = {
         "water",
         "water-shallow",
         "water-green",
-        "water-mud",
-        "wetland-green-slime",
-        "wetland-light-dead-skin",
-        "wetland-dead-skin",
-        "wetland-pink-tentacle",
-        "wetland-red-tentacle",
-        "wetland-blue-slime",
+        "water-mud"
       }
     },
     -- variations = gleba_tree_variations("yumako-tree", 8, 4, 1.3),

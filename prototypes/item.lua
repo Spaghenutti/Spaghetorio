@@ -4647,7 +4647,7 @@ data:extend({
     type = "item",
     name = "sp-algae",  -- #ForRegEx# - item
     icon = "__space-age__/graphics/decorative/green-lettuce-lichen-water/green-lettuce-lichen-6x6-01.png",
-    icon_size = 282,
+    icon_size = 370,
     scale = 0.01,
     subgroup = "agriculture-processes",
     order = "a[seeds]-a[algae]",
