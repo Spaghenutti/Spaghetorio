@@ -1,3 +1,12 @@
+
+## Current state of the mod
+
+This mod is in early alpha. In my current playthrough I can finish the first tier of science packs (about 200h taking it casually). For the recipes unlocked during first tier there are no plans to change anything (except maybe change some ratios). All recipes comming after allready exist, but might not be reachable through tech tree.
+
+I am currently cleaning up the second science tier in tech tree which is the longest and most complex phase in the development. I want to publish my mod now, because I need some help and gather feedback to tune in the balance.
+
+If you have some cool ideas you can give me feedback in the discussions section.
+
 # Spaghetorio
 
 Introducing the **Spaghetorio** mod for Factorio, where your factory is no longer a place of efficiency but a labyrinth of madness!
@@ -25,14 +34,6 @@ Your factory will never be the same... because it’s going to need therapy. Enj
 ![](https://raw.githubusercontent.com/Spaghenutti/Spaghetorio/refs/heads/main/images/science-packs-tier-3.png)
 - over 800 new recipes including different production chains for processing resources and intermediate products
 - over 270 new techonolgies
-
-## Current state of the mod
-
-This mod is in early alpha. In my current playthrough I can finish the first tier of science packs (about 200h taking it casually). For the recipes unlocked during first tier there are no plans to change anything (except maybe change some ratios). All recipes comming after allready exist, but might not be reachable through tech tree.
-
-I am currently cleaning up the second science tier in tech tree which is the longest and most complex phase in the development. I want to publish my mod now, because I need some help and gather feedback to tune in the balance.
-
-If you have some cool ideas you can give me feedback in the discussions section.
 
 ## Compatibility
 

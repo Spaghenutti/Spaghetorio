@@ -4646,9 +4646,15 @@ data:extend({
   {
     type = "item",
     name = "sp-algae",  -- #ForRegEx# - item
-    icon = "__space-age__/graphics/decorative/green-lettuce-lichen-water/green-lettuce-lichen-6x6-01.png",
-    icon_size = 370,
-    scale = 0.01,
+    icon = "__Spaghetorio__/graphics/icons/algae-1.png",
+    icon_size = 64,
+    pictures = {
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/algae-1.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/algae-2.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/algae-3.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/algae-4.png", scale = 0.5, mipmap_count = 4}
+    },
+    scale = 0.5,
     subgroup = "agriculture-processes",
     order = "a[seeds]-a[algae]",
     stack_size = 50,
@@ -4656,6 +4662,7 @@ data:extend({
   {
     type = "item",
     name = "sp-algae-spore",  -- #ForRegEx# - item
+    localised_name = {"item-name.sp-algae-spore"},
     icon = "__Spaghetorio__/graphics/icons/algae-spore.png",
     icon_size = 64,
     scale = 0.5,
