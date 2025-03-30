@@ -9365,7 +9365,7 @@ data:extend({
       -- Krastorio {type = "item", name = "utility-science-pack", amount = 40},
       {type = "item", name = "fusion-reactor", amount = 8},
       {type = "item", name = "sp-kr-quantum-computer", amount = 1},
-      {type = "item", name = "sp-kr-bio-lab", amount = 2},
+      {type = "item", name = "sp-kr-genetics-facility", amount = 2},
       {type = "item", name = "sp-kr-fuel-refinery", amount = 2},
       {type = "item", name = "sp-kr-quarry-drill", amount = 1},
       {type = "item", name = "assembling-machine-3", amount = 4},
@@ -10873,7 +10873,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-kr-bio-lab",  -- #ForRegEx# - recipe
+    name = "sp-kr-genetics-facility",  -- #ForRegEx# - recipe
     icon_size = 64,
     mip_maps = 4,
     category = "crafting",
@@ -10888,7 +10888,7 @@ data:extend({
       {type = "item", name = "sp-filter", amount = 12}
     },
     results = {
-      {type = "item", name = "sp-kr-bio-lab", amount = 1}
+      {type = "item", name = "sp-kr-genetics-facility", amount = 1}
     }
   },
   {

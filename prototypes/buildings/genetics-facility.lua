@@ -15,12 +15,12 @@ local bio_lab_working_sound = {
 data:extend({
   {
     type = "assembling-machine",
-    name = "sp-kr-bio-lab",
+    name = "sp-kr-genetics-facility",
     icon_size = 64,
     icon_mipmaps = 4,
     icon = "__Spaghetorio__/graphics/krastorio/icons/entities/bio-lab.png",
     flags = { "placeable-neutral", "placeable-player", "player-creation" },
-    minable = { hardness = 1, mining_time = 1, result = "sp-kr-bio-lab" },
+    minable = { hardness = 1, mining_time = 1, result = "sp-kr-genetics-facility" },
     max_health = 500,
     corpse = "sp-kr-big-random-pipes-remnant",
     dying_explosion = "big-explosion",

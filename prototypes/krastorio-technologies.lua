@@ -343,7 +343,7 @@ data:extend({
 --     effects = {
 --       {
 --         type = "unlock-recipe",
---         recipe = "sp-kr-bio-lab",
+--         recipe = "sp-kr-genetics-facility",
 --       },
 --       {
 --         type = "unlock-recipe",

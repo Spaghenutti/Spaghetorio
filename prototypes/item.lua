@@ -7099,13 +7099,13 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-kr-bio-lab",  -- #ForRegEx# - building
+    name = "sp-kr-genetics-facility",  -- #ForRegEx# - building
     icon = "__Spaghetorio__/graphics/krastorio/icons/entities/bio-lab.png",
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "production-machine",
     order = "d-g2[bio-lab]",
-    place_result = "sp-kr-bio-lab",
+    place_result = "sp-kr-genetics-facility",
     stack_size = 50,
   },
   {
