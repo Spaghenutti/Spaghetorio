@@ -139,6 +139,10 @@ data:extend({
   },
   {
     type = "recipe-category",
+    name = "herbarium"
+  },
+  {
+    type = "recipe-category",
     name = "quantum-assembling"
   },
   {

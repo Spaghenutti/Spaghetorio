@@ -8,6 +8,7 @@ Date: 2025-04-04
     - Updated woodfarming icon
     - Renamed krastorio bio lab to genetics facility
     - Renamed gyro to gyroscope
+    - Pressure tube now also requires seal
   Bugfixes:
     - enriching crushed iron ore now correctly produces enriched iron
 ---------------------------------------------------------------------------------------------------

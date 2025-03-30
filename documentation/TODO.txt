@@ -80,9 +80,11 @@ TODO for 0.3.8
   + Update military science 2 branch of tech tree
 
 TODO for 0.3.9
-  - rename hurrican greenhouse to herbarium
-  - rename wood-farm back to greenhouse
-  - rename krastorio bio-lab to genetics-facility
+  + rename hurrican greenhouse to herbarium
+  + rename wood-farm back to greenhouse
+  + rename krastorio bio-lab to genetics-facility
+  - Fix herbarium technology icon
+  - Fix category names such that they all start with sp-
   - Add Tetraethylene glycol dimethyl CH₃O-(CH₂CH₂O)₄-CH₃
     - synthesized by reacting tetraethylene glycol with a methylating agent, such as dimethyl sulfate or methyl iodide
     - Unlock freezer in biological tree and before cryogenic plant
@@ -92,7 +94,7 @@ TODO for 0.3.9
       - ventilator
     - bio-fuel
       - sugar
-        - crops
+        - wheat
           - landfill
       - fatty acids
         - animal fat

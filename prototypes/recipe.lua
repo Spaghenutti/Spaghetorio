@@ -6643,7 +6643,7 @@ data:extend({
     }
   },
   ------------------------------------------------------------------------------
-  -- MARK: sp-kr-growing
+  -- MARK: basic-agriculture
   ------------------------------------------------------------------------------
   {
     type = "recipe",
@@ -6689,6 +6689,41 @@ data:extend({
     {
       primary = {r = 0.442, g = 0.205, b = 0.090, a = 1.000}, -- #703416ff
       secondary = {r = 1.000, g = 0.500, b = 0.000, a = 1.000}, -- #ff7f00ff
+    }
+  },
+  ------------------------------------------------------------------------------
+  -- MARK: herbarium
+  ------------------------------------------------------------------------------
+  {
+    type = "recipe",
+    name = "sp-potato",  -- #ForRegEx# - recipe
+    category = "herbarium",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 60,
+    ingredients = {
+      {type = "item", name = "landfill", amount = 4},
+      {type = "item", name = "sp-urea", amount = 10},
+      {type = "item", name = "sp-vanadyl-sulfate", amount = 10}
+    },
+    results = {
+      {type = "item", name = "sp-potato", amount = 20}
+    }
+  },
+    {
+    type = "recipe",
+    name = "sp-wheat",  -- #ForRegEx# - recipe
+    category = "herbarium",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 60,
+    ingredients = {
+      {type = "item", name = "landfill", amount = 2},
+      {type = "item", name = "sp-urea", amount = 12},
+      {type = "fluid", name = "sp-potassium-permanganate-solution", amount = 20}
+    },
+    results = {
+      {type = "item", name = "sp-wheat", amount = 20}
     }
   },
   ------------------------------------------------------------------------------
@@ -7185,7 +7220,8 @@ data:extend({
       {type = "item", name = "sp-stainless-steel", amount = 1},
       {type = "item", name = "sp-pressure-valve", amount = 1},
       {type = "item", name = "sp-brass", amount = 3},
-      {type = "item", name = "sp-flange", amount = 2}
+      {type = "item", name = "sp-flange", amount = 2},
+      {type = "item", name = "sp-seal", amount = 2}
     },
     results = {
       {type = "item", name = "sp-pressure-tube", amount = 1}
@@ -7609,23 +7645,6 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-high-pressure-tank",  -- #ForRegEx# - recipe
-    category = "crafting",
-    enabled = false,
-    allow_productivity = true,
-    energy_required = 4,
-    ingredients = {
-      {type = "item", name = "sp-aluminum-brass", amount = 2},
-      {type = "item", name = "sp-titanium-niobium", amount = 1},
-      {type = "item", name = "sp-kevlar", amount = 5},
-      {type = "item", name = "carbon-fiber", amount = 5}
-    },
-    results = {
-      {type = "item", name = "sp-high-pressure-tank", amount = 1}
-    }
-  },
-  {
-    type = "recipe",
     name = "sp-heatsink",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
@@ -7638,6 +7657,40 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-heatsink", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-ventilator",  -- #ForRegEx# - recipe
+    category = "crafting",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 2,
+    ingredients = {
+      {type = "item", name = "electric-engine-unit", amount = 1},
+      {type = "item", name = "sp-ball-bearing", amount = 1},
+      {type = "item", name = "sp-aluminum-sheet", amount = 2},
+      {type = "item", name = "sp-aluminum-frame", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-ventilator", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-sprinkler",  -- #ForRegEx# - recipe
+    category = "crafting",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 2,
+    ingredients = {
+      {type = "item", name = "sp-stainless-steel", amount = 1},
+      {type = "item", name = "sp-rubber", amount = 1},
+      {type = "item", name = "sp-spring", amount = 2},
+      {type = "item", name = "sp-valve", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-sprinkler", amount = 1}
     }
   },
   {
@@ -9071,6 +9124,23 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-diamond-saw", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-high-pressure-tank",  -- #ForRegEx# - recipe
+    category = "manufacturing",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 4,
+    ingredients = {
+      {type = "item", name = "sp-aluminum-brass", amount = 2},
+      {type = "item", name = "sp-titanium-niobium", amount = 1},
+      {type = "item", name = "sp-kevlar", amount = 5},
+      {type = "item", name = "carbon-fiber", amount = 5}
+    },
+    results = {
+      {type = "item", name = "sp-high-pressure-tank", amount = 1}
     }
   },
   {
@@ -10911,6 +10981,32 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-kr-greenhouse", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-herbarium",  -- #ForRegEx# - recipe
+    icon_size = 64,
+    mip_maps = 4,
+    category = "crafting",
+    energy_required = 30,
+    enabled = false,
+    allow_productivity = true,
+    ingredients = {
+      {type = "item", name = "sp-stainless-steel", amount = 30},
+      {type = "item", name = "sp-bolts", amount = 20},
+      {type = "item", name = "sp-glass", amount = 40},
+      {type = "item", name = "stone-brick", amount = 20},
+      {type = "item", name = "landfill", amount = 30},
+      {type = "item", name = "small-lamp", amount = 10},
+      {type = "item", name = "pump", amount = 8},
+      {type = "item", name = "sp-valve", amount = 4},
+      {type = "item", name = "sp-pressure-tube", amount = 12},
+      {type = "item", name = "sp-ventilator", amount = 6},
+      {type = "item", name = "sp-sprinkler", amount = 12},
+    },
+    results = {
+      {type = "item", name = "sp-herbarium", amount = 1}
     }
   },
   {
