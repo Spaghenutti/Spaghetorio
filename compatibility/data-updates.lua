@@ -51,6 +51,8 @@ data.raw.technology["holmium-processing"].unit = {
 }
 
 remove_prototypes.remove_one_prototype("technology", "calcite-processing")
+remove_prototypes.remove_one_prototype("technology", "yumako")
+remove_prototypes.remove_one_prototype("technology", "jellynut")
 
 data.raw.technology["tungsten-carbide"].prerequisites = {
   "sp-tungsten-processing"
@@ -72,6 +74,25 @@ data.raw.technology["tungsten-carbide"].unit = {
   time = 30
 }
 
+data.raw.technology["agriculture"].effects =
+{
+  {
+    type = "unlock-recipe",
+    recipe = "agricultural-tower"
+  },
+  {
+    type = "unlock-recipe",
+    recipe = "sp-potato",
+  },
+  {
+    type = "unlock-recipe",
+    recipe = "sp-wheat",
+  },
+  {
+    type = "unlock-recipe",
+    recipe = "nutrients-from-spoilage"
+  }
+}
 table.insert(data.raw.technology["agriculture"].prerequisites, "sp-herbarium")
 data.raw.technology["agriculture"].research_trigger = nil
 data.raw.technology["agriculture"].unit = {

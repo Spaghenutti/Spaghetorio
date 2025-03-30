@@ -4746,6 +4746,16 @@ data:extend({
     order = "y-[animal-fat]",
     stack_size = 50
   },
+  {
+    type = "item",
+    name = "sp-sugar",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/sugar.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "agriculture-processes",
+    order = "y-[sugar]",
+    stack_size = 50
+  },
   ------------------------------------------------------------------------------
   -- MARK: agriculture-products
   ------------------------------------------------------------------------------

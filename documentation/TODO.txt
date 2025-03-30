@@ -84,28 +84,33 @@ TODO for 0.3.9
   + rename wood-farm back to greenhouse
   + rename krastorio bio-lab to genetics-facility
   - Fix herbarium technology icon
+  - Add energy values for potato, wheat and stuff
+  - Unlock freezer in biological tree and before cryogenic plant
   - Add Tetraethylene glycol dimethyl CH₃O-(CH₂CH₂O)₄-CH₃
     - synthesized by reacting tetraethylene glycol with a methylating agent, such as dimethyl sulfate or methyl iodide
-    - Unlock freezer in biological tree and before cryogenic plant
+    
   - Updated biological branch tier 1 and 2 of tech tree
-    - herbarium
-      - sprinkler
-      - ventilator
+    + herbarium
+      + sprinkler
+      + ventilator
     - bio-fuel
-      - sugar
-        - wheat
-          - landfill
+      + sugar
+        + wheat
       - fatty acids
-        - animal fat
-          - fish
-        - biomethanol
-          - potato or spoilage
-    - lubricant
-      - biocrude-oil
-        - biomass or spoilage
-        - algue
-    - epoxy
-      - biocrude-oil
+        - glycol
+          - potato
+          - spoilage
+          - dimethyl sulfate or methyl iodide
+        + animal fat
+          + fish
+        + biomethanol
+          + potato
+    + lubricant
+      + biocrude-oil
+        + spoilage
+        + algue
+    + epoxy
+      + biocrude-oil
     - bio-pesticides
       - protozoa
         - spoilage
@@ -117,13 +122,18 @@ TODO for 0.3.9
         - dimethyl-sulfoxide
 
 TODO for 0.3.10
+  - Add recipe biomass + algue = biocrude-oil
   - Fix category names such that they all start with sp-
   - Add water landfill
 
 TODO for 0.3.11
-  - Update nuclear science pack recipe chain
+  - Change incinerator back to gas-power-station
+  - Use thermal plant from hurricane as incinerator
 
 TODO for 0.3.12
+  - Update nuclear science pack recipe chain
+
+TODO for 0.3.13
   - Update computer science 2 branch of tech tree
       - Uses for tellurium
         + Add thermocouple (uses tellurium)
@@ -136,12 +146,12 @@ TODO for 0.3.12
   - Update utility science 2 branch of tech tree
   + Add biological / agricultural item group
 
-TODO for 0.3.13
+TODO for 0.3.14
   - Change lightning collectors to power poles
   - Fix / add casting recipes
   - Fix productivity tehnologies (see steel plate productivity)
 
-TODO for 0.3.14
+TODO for 0.3.15
   - Add recipe chains for core mining
   + Uses for bismuth
     + refined from tin and lead
@@ -157,7 +167,7 @@ TODO for 0.3.14
     - thallium used in optics
     - used in rodent poison
 
-TODO for 0.3.15
+TODO for 0.3.16
   - Update space science 2 branch of tech tree
   - Add back blunagium, grobgnum, rukite and yemnuth rockets (even though they are unlocked later)
 

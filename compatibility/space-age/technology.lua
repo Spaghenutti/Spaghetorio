@@ -276,6 +276,51 @@ data.raw.technology["cryogenic-plant"].unit = {
   time = 30
 }
 
+table.insert(data.raw.technology["biochamber"].effects, {type = "unlock-recipe", recipe = "sp-sugar"})
+table.insert(data.raw.technology["biochamber"].effects, {type = "unlock-recipe", recipe = "sp-animal-fat"})
+table.insert(data.raw.technology["biochamber"].effects, {type = "unlock-recipe", recipe = "sp-fatty-acids"})
+table.insert(data.raw.technology["biochamber"].effects, {type = "unlock-recipe", recipe = "yumako-processing"})
+table.insert(data.raw.technology["biochamber"].effects, {type = "unlock-recipe", recipe = "copper-bacteria"})
+table.insert(data.raw.technology["biochamber"].effects, {type = "unlock-recipe", recipe = "jellynut-processing"})
+table.insert(data.raw.technology["biochamber"].effects, {type = "unlock-recipe", recipe = "iron-bacteria"})
+data.raw.technology["biochamber"].prerequisites = {
+  "agriculture",
+}
+data.raw.technology["biochamber"].research_trigger = nil
+data.raw.technology["biochamber"].unit = {
+  count = 200,
+  ingredients = {
+    {"sp-automation-science-pack-2", 1},
+    {"logistic-science-pack", 1},
+    {"chemical-science-pack", 1},
+    {"sp-material-science-pack-1", 1},
+    {"sp-geological-science-pack-1", 1},
+    {"sp-electronic-science-pack-1", 1},
+    {"metallurgic-science-pack", 1},
+    {"electromagnetic-science-pack", 1}
+  },
+  time = 30
+}
+
+data.raw.technology["artificial-soil"].prerequisites = {
+  "biochamber",
+}
+data.raw.technology["artificial-soil"].research_trigger = nil
+data.raw.technology["artificial-soil"].unit = {
+  count = 200,
+  ingredients = {
+    {"sp-automation-science-pack-2", 1},
+    {"logistic-science-pack", 1},
+    {"chemical-science-pack", 1},
+    {"sp-material-science-pack-1", 1},
+    {"sp-geological-science-pack-1", 1},
+    {"sp-electronic-science-pack-1", 1},
+    {"metallurgic-science-pack", 1},
+    {"electromagnetic-science-pack", 1}
+  },
+  time = 30
+}
+
 table.insert(data.raw.technology["tesla-weapons"].prerequisites, "sp-superconducting-materials")
 data.raw.technology["tesla-weapons"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},

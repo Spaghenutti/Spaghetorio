@@ -3900,42 +3900,6 @@ data:extend({
   },
   {
     type = "technology",
-    name = "sp-agricultural-processes",  -- #ForRegEx# - technology
-    icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/hr-icons/potato-1.png", 256, {20, -20},
-                                        "__Spaghetorio__/graphics/hr-icons/wheat-1.png", 256, {-20, 20}),
-    icon_size = 256,
-    icon_mipmaps = 4,
-    effects = {
-      {
-        type = "unlock-recipe",
-        recipe = "sp-potato",
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-wheat",
-      },
-    },
-    prerequisites = {
-      "sp-urea",
-      "sp-herbarium"
-    },
-    unit = {
-      count = 100,
-      ingredients = {
-        {"sp-automation-science-pack-2", 1},
-        {"logistic-science-pack", 1},
-        {"chemical-science-pack", 1},
-        {"sp-material-science-pack-1", 1},
-        {"sp-geological-science-pack-1", 1},
-        {"sp-electronic-science-pack-1", 1},
-        {"metallurgic-science-pack", 1},
-        {"electromagnetic-science-pack", 1}
-      },
-      time = 30,
-    },
-  },
-  {
-    type = "technology",
     name = "sp-silicon-processing",  -- #ForRegEx# - technology
     icon = "__Spaghetorio__/graphics/krastorio/technologies/silicon-processing.png",
     icon_size = 256,
@@ -4163,9 +4127,20 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "sp-epoxy"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-biocrude-oil"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-lubricant-from-biocrude-oil"
       }
     },
-    prerequisites = {"sp-glycerin"},
+    prerequisites = {
+      "sp-glycerin",
+      "agriculture"
+    },
     unit =
     {
       count = 200,
@@ -5521,7 +5496,7 @@ data:extend({
       },
     },
     prerequisites = {
-      "sp-incinerator",
+      "sp-kr-fuel-refinery",
       "sp-ethylene-products"
     },
     unit = {
@@ -8777,14 +8752,6 @@ data:extend({
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-biomethanol",
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-acetic-acid",
-      },
-      {
-        type = "unlock-recipe",
         recipe = "sp-incinerate-wood",
       },
       {
@@ -8974,10 +8941,19 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "sp-potassium-cyanide",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-biomethanol",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-biomethanol-from-wood",
       }
     },
     prerequisites = {
-      "sp-incinerator"
+      "sp-incinerator",
+      "biochamber"
     },
     unit = {
       count = 125,

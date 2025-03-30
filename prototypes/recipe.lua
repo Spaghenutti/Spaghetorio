@@ -4446,6 +4446,85 @@ data:extend({
     },
     order = "molecule-[ethylene-and-propene]"
   },
+  {
+    type = "recipe",
+    name = "sp-biocrude-oil",  -- #ForRegEx# - recipe
+    category = "oil-processing",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 4,
+    ingredients = {
+      {type = "item", name = "spoilage", amount = 5},
+      {type = "item", name = "sp-nickel-ingot", amount = 1}
+    },
+    results = {
+      {type = "fluid", name = "sp-biocrude-oil", amount = 5}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-lubricant-from-biocrude-oil",  -- #ForRegEx# - recipe
+    icons = util.icon.combine_two_icons("__base__/graphics/icons/fluid/lubricant.png", 64, nil,
+                                        "__Spaghetorio__/graphics/icons/biocrude-oil.png", 64, nil),
+    category = "oil-processing",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 12,
+    ingredients = {
+      {type = "fluid", name = "sp-biocrude-oil", amount = 120},
+      {type = "fluid", name = "sp-fatty-acids", amount = 30},
+      {type = "item", name = "lithium", amount = 1}
+    },
+    results = {
+      {type = "fluid", name = "lubricant", amount = 150}
+    }
+  },
+  ------------------------------------------------------------------------------
+  -- MARK: organic
+  ------------------------------------------------------------------------------
+  {
+    type = "recipe",
+    name = "sp-sugar",  -- #ForRegEx# - recipe
+    category = "organic",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 2,
+    ingredients = {
+      {type = "item", name = "sp-wheat", amount = 2}
+    },
+    results = {
+      {type = "item", name = "sp-sugar", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-animal-fat",  -- #ForRegEx# - recipe
+    category = "organic",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 1,
+    ingredients = {
+      {type = "item", name = "raw-fish", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-animal-fat", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-fatty-acids",  -- #ForRegEx# - recipe
+    category = "organic",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 1,
+    ingredients = {
+      {type = "item", name = "sp-animal-fat", amount = 1},
+      {type = "fluid", name = "water", amount = 5}
+    },
+    results = {
+      {type = "fluid", name = "sp-fatty-acids", amount = 1}
+    }
+  },
   ------------------------------------------------------------------------------
   -- MARK: crystallizing
   ------------------------------------------------------------------------------
@@ -5744,9 +5823,32 @@ data:extend({
     category = "sp-kr-fuel-refinery",
     enabled = false,
     allow_productivity = true,
-    energy_required = 10,
+    energy_required = 12,
     ingredients = {
-      {type = "item", name = "sp-wood-chips", amount = 20},
+      {type = "item", name = "sp-potato", amount = 6},
+      {type = "item", name = "carbon", amount = 1},
+      {type = "fluid", name = "sp-hydrogen", amount = 120},
+    },
+    results = {
+      {type = "fluid", name = "sp-biomethanol", amount = 60},
+    },
+    crafting_machine_tint = {
+      primary = {r = 0.25, g = 0.53, b = 0.15, a = 0.750},
+      secondary = {r = 0.27, g = 0.53, b = 0.12, a = 0.900},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-biomethanol-from-wood",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/krastorio/icons/fluids/biomethanol.png", 64,
+                                         "__base__/graphics/icons/wood.png", 64),
+    category = "sp-kr-fuel-refinery",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 15,
+    ingredients = {
+      {type = "item", name = "sp-wood-chips", amount = 100},
+      {type = "item", name = "spoilage", amount = 20},
       {type = "fluid", name = "sp-carbon-monoxide", amount = 60},
       {type = "fluid", name = "sp-hydrogen", amount = 120},
     },
@@ -6704,14 +6806,14 @@ data:extend({
     ingredients = {
       {type = "item", name = "landfill", amount = 4},
       {type = "item", name = "sp-urea", amount = 10},
-      {type = "item", name = "sp-vanadyl-sulfate", amount = 10},
+      {type = "item", name = "sp-vanadyl-sulfate", amount = 5},
       {type = "fluid", name = "water", amount = 75}
     },
     results = {
       {type = "item", name = "sp-potato", amount = 20}
     }
   },
-    {
+  {
     type = "recipe",
     name = "sp-wheat",  -- #ForRegEx# - recipe
     category = "herbarium",
@@ -6721,7 +6823,7 @@ data:extend({
     ingredients = {
       {type = "item", name = "landfill", amount = 2},
       {type = "item", name = "sp-urea", amount = 12},
-      {type = "fluid", name = "sp-potassium-permanganate-solution", amount = 20},
+      {type = "fluid", name = "sp-potassium-permanganate-solution", amount = 10},
       {type = "fluid", name = "water", amount = 60}
     },
     results = {
@@ -7409,13 +7511,14 @@ data:extend({
     category = "crafting",
     enabled = false,
     allow_productivity = true,
-    energy_required = 5,
+    energy_required = 24,
     ingredients = {
-      {type = "item", name = "iron-plate", amount = 7},
-      {type = "item", name = "sp-neodymium", amount = 1}
+      {type = "item", name = "iron-plate", amount = 14},
+      {type = "item", name = "sp-neodymium", amount = 2},
+      {type = "item", name = "sp-boron-pillet", amount = 1}
     },
     results = {
-      {type = "item", name = "sp-neodymium-magnet", amount = 2}
+      {type = "item", name = "sp-neodymium-magnet", amount = 10}
     }
   },
   {
@@ -15523,8 +15626,8 @@ data:extend({
     energy_required = 10,
     ingredients = {
       {type = "item", name = "carbon", amount = 3},
-      {type = "fluid", name = "sp-oxygen", amount = 35},
-      {type = "fluid", name = "sp-hydrogen", amount = 15},
+      {type = "fluid", name = "sp-oxygen", amount = 10},
+      {type = "fluid", name = "sp-biocrude-oil", amount = 20},
     },
     results = {
       {type = "fluid", name = "sp-epoxy", amount = 20}
