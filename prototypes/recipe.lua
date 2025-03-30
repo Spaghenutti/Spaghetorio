@@ -6704,7 +6704,8 @@ data:extend({
     ingredients = {
       {type = "item", name = "landfill", amount = 4},
       {type = "item", name = "sp-urea", amount = 10},
-      {type = "item", name = "sp-vanadyl-sulfate", amount = 10}
+      {type = "item", name = "sp-vanadyl-sulfate", amount = 10},
+      {type = "fluid", name = "water", amount = 75}
     },
     results = {
       {type = "item", name = "sp-potato", amount = 20}
@@ -6716,14 +6717,15 @@ data:extend({
     category = "herbarium",
     enabled = false,
     allow_productivity = true,
-    energy_required = 60,
+    energy_required = 30,
     ingredients = {
       {type = "item", name = "landfill", amount = 2},
       {type = "item", name = "sp-urea", amount = 12},
-      {type = "fluid", name = "sp-potassium-permanganate-solution", amount = 20}
+      {type = "fluid", name = "sp-potassium-permanganate-solution", amount = 20},
+      {type = "fluid", name = "water", amount = 60}
     },
     results = {
-      {type = "item", name = "sp-wheat", amount = 20}
+      {type = "item", name = "sp-wheat", amount = 15}
     }
   },
   ------------------------------------------------------------------------------
