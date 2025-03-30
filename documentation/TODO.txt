@@ -80,11 +80,14 @@ TODO for 0.3.8
   + Update military science 2 branch of tech tree
 
 TODO for 0.3.9
+  - rename hurrican greenhouse to herbarium
+  - rename wood-farm back to greenhouse
+  - rename krastorio bio-lab to genetics-facility
   - Add Tetraethylene glycol dimethyl CH₃O-(CH₂CH₂O)₄-CH₃
     - synthesized by reacting tetraethylene glycol with a methylating agent, such as dimethyl sulfate or methyl iodide
     - Unlock freezer in biological tree and before cryogenic plant
   - Updated biological branch tier 1 and 2 of tech tree
-    - greenhouse
+    - herbarium
       - sprinkler
       - ventilator
     - bio-fuel
@@ -162,6 +165,7 @@ TODO for 0.3.xx
   - Add matter conversion recipes
   - Create functions to automate generation of acro conversion recipes
   - Add black reinforced concrete
+  - In map generation ores can be ticked to not spawn on map. Only allow this behavior for sulfuric acid geyser
 
 --------------------------------------------------------------------------------
 

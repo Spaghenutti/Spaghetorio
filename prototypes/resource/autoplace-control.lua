@@ -159,7 +159,7 @@ data:extend({
     name = "sp-algae",  -- #ForRegEx# - autoplace-control
     localised_name = {"", "[entity=sp-algae] ", {"autoplace-control-name.sp-algae"}},
     richness = false,
-    order = "c1[algae]",
+    order = "y-[algae]",
     category = "resource"
   },
   -- MARK: Core resource

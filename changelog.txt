@@ -3,11 +3,10 @@ Version: 0.3.9
 Date: 2025-04-04
   Features:
     - New biological / agricultural tech tree
+    - Added herbarium
   Changes:
     - Updated woodfarming icon
-    - Greenhouse renamed to woodfarm - WARNING: All instances of greenhouses on your map are gone now!
-    - Woodfarm building has the same recipe as greenhouse, so if you had greenhouses automated you will have to select now woodfarm.
-    - Woodfarm must me now researched again
+    - Renamed krastorio bio lab to genetics facility
     - Renamed gyro to gyroscope
   Bugfixes:
     - enriching crushed iron ore now correctly produces enriched iron

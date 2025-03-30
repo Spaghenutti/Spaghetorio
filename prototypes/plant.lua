@@ -29,6 +29,7 @@ data:extend({
   {
     type = "plant",
     name = "sp-algae",  -- #ForRegEx# - item
+    localised_name = {"item-name.sp-algae"},
     icon = "__space-age__/graphics/decorative/green-lettuce-lichen-water/green-lettuce-lichen-6x6-01.png",
     icon_size = 282,
     scale = 0.5,
@@ -38,7 +39,7 @@ data:extend({
     minable =
     {
       mining_time = 0.5,
-      results = {{type = "item", name = "sp-algae", amount = 5}},
+      results = {{type = "item", name = "sp-algae", amount_min = 2, amount_max = 8}},
       mining_trigger =
       {
         {
@@ -61,7 +62,7 @@ data:extend({
     },
     mining_sound = sound_variations("__space-age__/sound/mining/axe-mining-yumako-tree", 5, 0.6),
     mined_sound = sound_variations("__space-age__/sound/mining/mined-yumako-tree", 6, 0.3),
-    growth_ticks = 3 * 3600,
+    growth_ticks = 2 * 3600,
     harvest_emissions = { spores = 5 },
     emissions_per_second = { pollution = -0.002 },
     collision_box = {{-1.3, -1.3}, {1.3, 1.3}},
