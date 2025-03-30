@@ -7788,7 +7788,7 @@ data:extend({
   },
   {
     type = "technology",
-    name = "sp-greenhouse",  -- #ForRegEx# - technology
+    name = "sp-herbarium",  -- #ForRegEx# - technology
     icon = "__Spaghetorio__/graphics/hr-icons/greenhouse.png",
     icon_size = 256,
     icon_mipmaps = 4,

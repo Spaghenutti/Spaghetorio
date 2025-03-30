@@ -72,7 +72,7 @@ data.raw.technology["tungsten-carbide"].unit = {
   time = 30
 }
 
-table.insert(data.raw.technology["agriculture"].prerequisites, "sp-greenhouse")
+table.insert(data.raw.technology["agriculture"].prerequisites, "sp-herbarium")
 data.raw.technology["agriculture"].research_trigger = nil
 data.raw.technology["agriculture"].unit = {
   count = 200,

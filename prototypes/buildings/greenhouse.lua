@@ -100,11 +100,11 @@ local working_sound = {
 data:extend({
  {
     type = "assembling-machine",
-    name = "sp-greenhouse",
+    name = "sp-herbarium",
     icon = "__Spaghetorio__/graphics/icons/greenhouse.png",
     flags = {"placeable-neutral", "player-creation"},
-    minable = {mining_time = 2, result = "sp-greenhouse"},
-    fast_replaceable_group = "sp-greenhouse",
+    minable = {mining_time = 2, result = "sp-herbarium"},
+    fast_replaceable_group = "sp-herbarium",
     max_health = 500,
     corpse = "foundry-remnants",
     dying_explosion = "foundry-explosion",

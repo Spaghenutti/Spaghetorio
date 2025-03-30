@@ -7121,13 +7121,13 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-greenhouse",  -- #ForRegEx# - building
+    name = "sp-herbarium",  -- #ForRegEx# - building
     icon = "__Spaghetorio__/graphics/icons/greenhouse.png",
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "production-machine",
     order = "d-g1[greenhouse]",
-    place_result = "sp-greenhouse",
+    place_result = "sp-herbarium",
     stack_size = 50,
   },
   {
