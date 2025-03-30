@@ -10893,7 +10893,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-kr-woodfarm",  -- #ForRegEx# - recipe
+    name = "sp-kr-greenhouse",  -- #ForRegEx# - recipe
     icon_size = 64,
     mip_maps = 4,
     category = "crafting",
@@ -10910,7 +10910,7 @@ data:extend({
       {type = "item", name = "sp-valve", amount = 8}
     },
     results = {
-      {type = "item", name = "sp-kr-woodfarm", amount = 1}
+      {type = "item", name = "sp-kr-greenhouse", amount = 1}
     }
   },
   {

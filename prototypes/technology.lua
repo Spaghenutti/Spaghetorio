@@ -3884,7 +3884,7 @@ data:extend({
     },
     prerequisites = {
       "sp-sodium-hydroxide",
-      "sp-kr-woodfarm"
+      "sp-kr-greenhouse"
     },
     unit = {
       count = 125,
@@ -7756,14 +7756,14 @@ data:extend({
   },
   {
     type = "technology",
-    name = "sp-kr-woodfarm",  -- #ForRegEx# - technology
+    name = "sp-kr-greenhouse",  -- #ForRegEx# - technology
     icon = "__Spaghetorio__/graphics/krastorio/technologies/greenhouse.png",
     icon_size = 256,
     icon_mipmaps = 4,
     effects = {
       {
         type = "unlock-recipe",
-        recipe = "sp-kr-woodfarm",
+        recipe = "sp-kr-greenhouse",
       },
       {
         type = "unlock-recipe",

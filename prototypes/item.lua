@@ -7104,19 +7104,19 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "production-machine",
-    order = "d-g2[bio-lab]",
+    order = "d-g2[genetics-facility]",
     place_result = "sp-kr-genetics-facility",
     stack_size = 50,
   },
   {
     type = "item",
-    name = "sp-kr-woodfarm",  -- #ForRegEx# - building
+    name = "sp-kr-greenhouse",  -- #ForRegEx# - building
     icon = "__Spaghetorio__/graphics/krastorio/icons/entities/greenhouse.png",
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "production-machine",
-    order = "d-g1[woodfarm]",
-    place_result = "sp-kr-woodfarm",
+    order = "d-g1[greenhouse]",
+    place_result = "sp-kr-greenhouse",
     stack_size = 50,
   },
   {
@@ -7126,7 +7126,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "production-machine",
-    order = "d-g1[greenhouse]",
+    order = "d-g1[herbarium]",
     place_result = "sp-herbarium",
     stack_size = 50,
   },

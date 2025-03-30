@@ -1,14 +1,14 @@
 data:extend({
   {
     type = "technology",
-    name = "sp-kr-woodfarm",
+    name = "sp-kr-greenhouse",
     icon = "__Spaghetorio__/graphics/krastorio/technologies/greenhouse.png",
     icon_size = 256,
     icon_mipmaps = 4,
     effects = {
       {
         type = "unlock-recipe",
-        recipe = "sp-kr-woodfarm",
+        recipe = "sp-kr-greenhouse",
       },
     },
     prerequisites = {
@@ -362,7 +362,7 @@ data:extend({
 --         recipe = "sp-kr-grow-wood-plus",
 --       },
 --     },
---     prerequisites = { "sp-kr-woodfarm", "sp-kr-advanced-chemistry", "electronics" },
+--     prerequisites = { "sp-kr-greenhouse", "sp-kr-advanced-chemistry", "electronics" },
 --     unit = {
 --       count = 150,
 --       ingredients = {
@@ -1051,7 +1051,7 @@ data:extend({
 --     icon_size = 256,
 --     icon_mipmaps = 4,
 --     effects = {}, -- This is populated during data-updates by prototypes/others/greenhouse.lua
---     prerequisites = { "sp-kr-woodfarm" },
+--     prerequisites = { "sp-kr-greenhouse" },
 --     unit = {
 --       count = 30,
 --       ingredients = {

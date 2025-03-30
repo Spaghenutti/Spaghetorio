@@ -1,91 +1,7 @@
 
 local hit_effects = require("__base__/prototypes/entity/hit-effects")
-local sounds = require("__base__/prototypes/entity/sounds")
 
--- circuit_connector_definitions = circuit_connector_definitions.create_vector(universal_connector_template,
--- {
---   {variation = 7, main_offset = util.by_pixel(-27, 53), shadow_offset = util.by_pixel(-18, 55), show_shadow = false},
---   {variation = 7, main_offset = util.by_pixel(-27, 53), shadow_offset = util.by_pixel(-18, 55), show_shadow = false},
---   {variation = 7, main_offset = util.by_pixel(-27, 53), shadow_offset = util.by_pixel(-18, 55), show_shadow = false},
---   {variation = 7, main_offset = util.by_pixel(-27, 53), shadow_offset = util.by_pixel(-18, 55), show_shadow = false}
--- })
-
-local graphics_frame_count = 128
-local graphics_animation_speed = 0.7
-local graphics_shift = {0, 0}
-local graphics_scale = 1
-local graphics_set = {
-  animation = {
-    layers = {
-      {
-        priority = "high",
-        width = 2720 / 8,
-        height = 2840 / 8,
-        shift = graphics_shift,
-        scale = graphics_scale,
-        frame_count = graphics_frame_count,
-        animation_speed = graphics_animation_speed,
-        stripes =
-        {
-          {
-            filename = "__SpaghetorioGraphics1__/graphics/buildings/greenhouse/sprites/greenhouse-hr-animation-1.png",
-            width_in_frames = 8,
-            height_in_frames = 8,
-          },
-          {
-            filename = "__SpaghetorioGraphics1__/graphics/buildings/greenhouse/sprites/greenhouse-hr-animation-2.png",
-            width_in_frames = 8,
-            height_in_frames = 8,
-          },
-        },
-      },
-      {
-        priority = "high",
-        filename = "__SpaghetorioGraphics1__/graphics/buildings/greenhouse/sprites/greenhouse-hr-shadow.png",
-        width = 700,
-        height = 500,
-        shift = graphics_shift,
-        scale = graphics_scale,
-        frame_count = 1,
-        repeat_count = graphics_frame_count,
-        draw_as_shadow = true,
-        animation_speed = graphics_animation_speed,
-      },
-    },
-  },
-  working_visualisations = {
-    {
-      fadeout = true,
-      effect = "flicker",
-      animation = {
-        priority = "high",
-        width = 2720 / 8,
-        height = 2840 / 8,
-        shift = graphics_shift,
-        scale = graphics_scale,
-        frame_count = graphics_frame_count,
-        draw_as_glow = true,
-        animation_speed = graphics_animation_speed,
-        blend_mode = "additive",
-        stripes =
-        {
-          {
-            filename = "__SpaghetorioGraphics1__/graphics/buildings/greenhouse/sprites/greenhouse-hr-emission-1.png",
-            width_in_frames = 8,
-            height_in_frames = 8,
-          },
-          {
-            filename = "__SpaghetorioGraphics1__/graphics/buildings/greenhouse/sprites/greenhouse-hr-emission-2.png",
-            width_in_frames = 8,
-            height_in_frames = 8,
-          },
-        },
-      },
-    },
-  },
-}
-
-local working_sound = {
+local greenhouse_working_sound = {
   filename = "__Spaghetorio__/sounds/buildings/greenhouse.ogg",
   volume = 0.75,
   idle_sound = { filename = "__base__/sound/idle1.ogg" },
@@ -96,44 +12,102 @@ local working_sound = {
   },
 }
 
-
 data:extend({
- {
+  {
     type = "assembling-machine",
-    name = "sp-herbarium",
-    icon = "__Spaghetorio__/graphics/icons/greenhouse.png",
-    flags = {"placeable-neutral", "player-creation"},
-    minable = {mining_time = 2, result = "sp-herbarium"},
-    fast_replaceable_group = "sp-herbarium",
+    name = "sp-kr-greenhouse",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    icon = "__Spaghetorio__/graphics/krastorio/icons/entities/greenhouse.png",
+    flags = { "placeable-neutral", "placeable-player", "player-creation" },
+    minable = { hardness = 1, mining_time = 1, result = "sp-kr-greenhouse" },
     max_health = 500,
-    corpse = "foundry-remnants",
-    dying_explosion = "foundry-explosion",
-    -- circuit_wire_max_distance = assembling_machine_circuit_wire_max_distance,  -- assembling_machine_circuit_wire_max_distance = 9
-    -- circuit_connector = circuit_connector_definitions,
-    collision_box = {{-1.7, -1.7}, {1.7, 1.7}},
-    selection_box = {{-2, -2}, {2, 2}},
+    corpse = "sp-kr-big-random-pipes-remnant",
+    dying_explosion = "big-explosion",
     damaged_trigger_effect = hit_effects.entity(),
-    module_slots = 4,
-    icon_draw_specification = {scale = 1, shift = {0, -0.3}},
-    icons_positioning =
     {
-      {inventory_index = defines.inventory.assembling_machine_modules, shift = {0, 1.25}}
+      { type = "impact", percent = 50 },
     },
-    allowed_effects = {"consumption", "speed", "productivity", "pollution", "quality"},
-    crafting_categories = {"farming"},
-    crafting_speed = 1.5,
-    energy_source =
-    {
+    fluid_boxes = {
+      {
+        production_type = "input",
+        pipe_picture = sp_kr_pipe_path,
+        pipe_covers = pipecoverspictures(),
+        volume = 1000,
+        pipe_connections = {
+          {flow_direction="input-output", direction = defines.direction.north, position = {0, -3}},
+          {flow_direction="input-output", direction = defines.direction.west, position = {-3, 0}},
+          {flow_direction="input-output", direction = defines.direction.east, position = {3, 0}},
+          {flow_direction="input-output", direction = defines.direction.south, position = {0, 3}},
+        },
+      },
+    },
+    fluid_boxes_off_when_no_fluid_recipe = false,
+    collision_box = { { -3.25, -3.25 }, { 3.25, 3.25 } },
+    selection_box = { { -3.5, -3.5 }, { 3.5, 3.5 } },
+    fast_replaceable_group = "sp-kr-greenhouse",
+    module_slots = 3,
+    allowed_effects = { "consumption", "speed", "productivity", "pollution" },
+    graphics_set = {
+      animation = {
+        layers = {
+          {
+            filename = "__Spaghetorio__/graphics/krastorio/entities/greenhouse/greenhouse.png",
+            priority = "high",
+            scale = scale,
+            width = 256,
+            height = 256,
+            frame_count = 1,
+          },
+          {
+            filename = "__Spaghetorio__/graphics/krastorio/entities/greenhouse/greenhouse-sh.png",
+            priority = "high",
+            scale = scale,
+            width = 256,
+            height = 256,
+            shift = { 0.32, 0 },
+            frame_count = 1,
+            draw_as_shadow = true,
+          },
+        },
+      },
+    },
+    working_visualisations = {
+      {
+        draw_as_light = true,
+        animation = {
+          filename = "__Spaghetorio__/graphics/krastorio/entities/greenhouse/greenhouse-light.png",
+          scale = scale,
+          width = 256,
+          height = 256,
+          frame_count = 1,
+          repeat_count = 10,
+          animation_speed = 0.35,
+        },
+      },
+      {
+        animation = {
+          filename = "__Spaghetorio__/graphics/krastorio/entities/greenhouse/greenhouse-working.png",
+          scale = scale,
+          width = 256,
+          height = 256,
+          frame_count = 10,
+          line_length = 5,
+          animation_speed = 0.35,
+        },
+      },
+    },
+    crafting_categories = {"wood-farming"},
+    vehicle_impact_sound = { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
+    working_sound = greenhouse_working_sound,
+    crafting_speed = 1,
+    return_ingredients_on_change = true,
+    energy_source = {
       type = "electric",
       usage_priority = "secondary-input",
-      emissions_per_minute = {pollution = 1.5},
+      emissions_per_minute = {pollution = -5},
     },
-    energy_usage = "600kW",
-    perceived_performance = {minimum = 0.25, maximum = 20},
-    graphics_set = graphics_set,
-    open_sound = sounds.metal_large_open,
-    close_sound = sounds.metal_large_close,
-    working_sound = working_sound,
-    fluid_boxes_off_when_no_fluid_recipe = true,
-  }
+    energy_usage = "144.8kW",
+    ingredient_count = 4,
+  },
 })
