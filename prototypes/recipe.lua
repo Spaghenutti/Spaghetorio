@@ -3787,6 +3787,36 @@ data:extend({
       {type = "fluid", name = "sp-potassium-hydroxide-solution", amount = 50}
     },
   },
+  {
+    type = "recipe",
+    name = "sp-hydrogen-sulfide",  -- #ForRegEx# - recipe
+    category = "chemistry",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 2,
+    ingredients = {
+      {type = "item", name = "sulfur", amount = 1},
+      {type = "fluid", name = "sp-hydrogen", amount = 10},
+    },
+    results = {
+      {type = "fluid", name = "sp-hydrogen-sulfide", amount = 5}
+    },
+  },
+  {
+    type = "recipe",
+    name = "sp-dimethyl-sulfide",  -- #ForRegEx# - recipe
+    category = "chemistry",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 1,
+    ingredients = {
+      {type = "fluid", name = "sp-biomethanol", amount = 5},
+      {type = "fluid", name = "sp-hydrogen-sulfide", amount = 5}
+    },
+    results = {
+      {type = "fluid", name = "sp-dimethyl-sulfide", amount = 5}
+    },
+  },
   ------------------------------------------------------------------------------
   -- MARK: advanced-chemistry
   ------------------------------------------------------------------------------
@@ -4523,6 +4553,22 @@ data:extend({
     },
     results = {
       {type = "fluid", name = "sp-fatty-acids", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-glycol",  -- #ForRegEx# - recipe
+    category = "organic",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 2.5,
+    ingredients = {
+      {type = "item", name = "sp-potato", amount = 1},
+      {type = "item", name = "spoilage", amount = 1},
+      {type = "fluid", name = "sp-dimethyl-sulfoxide", amount = 5}
+    },
+    results = {
+      {type = "fluid", name = "sp-glycol", amount = 5}
     }
   },
   ------------------------------------------------------------------------------
@@ -5315,6 +5361,21 @@ data:extend({
       {type = "fluid", name = "sp-sulfur-dioxide", amount = 5},
     },
   },
+  {
+    type = "recipe",
+    name = "sp-dimethyl-sulfoxide",  -- #ForRegEx# - recipe
+    category = "oxidizing",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 3,
+    ingredients = {
+      {type = "fluid", name = "sp-dimethyl-sulfide", amount = 5},
+      {type = "fluid", name = "sp-oxygen", amount = 5}
+    },
+    results = {
+      {type = "fluid", name = "sp-dimethyl-sulfoxide", amount = 5}
+    },
+  },
   ------------------------------------------------------------------------------
   -- MARK: electronics
   ------------------------------------------------------------------------------
@@ -5869,6 +5930,7 @@ data:extend({
     energy_required = 8,
     ingredients = {
       {type = "item", name = "lithium", amount = 1},
+      {type = "item", name = "sp-sugar", amount = 3},
       {type = "item", name = "sp-potassium-cyanide", amount = 1},
       {type = "fluid", name = "sp-biomethanol", amount = 60},
     },

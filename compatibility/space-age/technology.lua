@@ -1,4 +1,9 @@
 
+local remove_prototypes = require("remove-prototypes")
+
+remove_prototypes.remove_one_prototype("technology", "yumako")
+remove_prototypes.remove_one_prototype("technology", "jellynut")
+
 -- Update technologies
 table.insert(data.raw.technology["lithium-processing"].effects, {type = "unlock-recipe", recipe = "sp-lithium-oxide"})
 table.insert(data.raw.technology["lithium-processing"].effects, {type = "unlock-recipe", recipe = "sp-lithium-chloride"})
@@ -276,13 +281,29 @@ data.raw.technology["cryogenic-plant"].unit = {
   time = 30
 }
 
-table.insert(data.raw.technology["biochamber"].effects, {type = "unlock-recipe", recipe = "sp-sugar"})
-table.insert(data.raw.technology["biochamber"].effects, {type = "unlock-recipe", recipe = "sp-animal-fat"})
-table.insert(data.raw.technology["biochamber"].effects, {type = "unlock-recipe", recipe = "sp-fatty-acids"})
-table.insert(data.raw.technology["biochamber"].effects, {type = "unlock-recipe", recipe = "yumako-processing"})
-table.insert(data.raw.technology["biochamber"].effects, {type = "unlock-recipe", recipe = "copper-bacteria"})
-table.insert(data.raw.technology["biochamber"].effects, {type = "unlock-recipe", recipe = "jellynut-processing"})
-table.insert(data.raw.technology["biochamber"].effects, {type = "unlock-recipe", recipe = "iron-bacteria"})
+data.raw.technology["biochamber"].effects =
+{
+  {
+    type = "unlock-recipe",
+    recipe = "biochamber"
+  },
+  {
+    type = "unlock-recipe",
+    recipe = "yumako-processing"
+  },
+  {
+    type = "unlock-recipe",
+    recipe = "jellynut-processing"
+  },
+  {
+    type = "unlock-recipe",
+    recipe = "nutrients-from-spoilage"
+  },
+  {
+    type = "unlock-recipe",
+    recipe = "nutrients-from-yumako-mash"
+  },
+}
 data.raw.technology["biochamber"].prerequisites = {
   "agriculture",
 }
@@ -293,7 +314,7 @@ data.raw.technology["biochamber"].unit = {
     {"sp-automation-science-pack-2", 1},
     {"logistic-science-pack", 1},
     {"chemical-science-pack", 1},
-    {"sp-material-science-pack-1", 1},
+    {"sp-material-science-pack-2", 1},
     {"sp-geological-science-pack-1", 1},
     {"sp-electronic-science-pack-1", 1},
     {"metallurgic-science-pack", 1},
@@ -317,6 +338,28 @@ data.raw.technology["artificial-soil"].unit = {
     {"sp-electronic-science-pack-1", 1},
     {"metallurgic-science-pack", 1},
     {"electromagnetic-science-pack", 1}
+  },
+  time = 30
+}
+
+table.insert(data.raw.technology["bacteria-cultivation"].effects, {type = "unlock-recipe", recipe = "copper-bacteria"})
+table.insert(data.raw.technology["bacteria-cultivation"].effects, {type = "unlock-recipe", recipe = "iron-bacteria"})
+data.raw.technology["bacteria-cultivation"].prerequisites = {
+  "agricultural-science-pack",
+}
+data.raw.technology["bacteria-cultivation"].research_trigger = nil
+data.raw.technology["bacteria-cultivation"].unit = {
+  count = 500,
+  ingredients = {
+    {"sp-automation-science-pack-2", 1},
+    {"logistic-science-pack", 1},
+    {"chemical-science-pack", 1},
+    {"sp-material-science-pack-2", 1},
+    {"sp-geological-science-pack-1", 1},
+    {"sp-electronic-science-pack-1", 1},
+    {"metallurgic-science-pack", 1},
+    {"electromagnetic-science-pack", 1},
+    {"agricultural-science-pack", 1}
   },
   time = 30
 }
@@ -478,7 +521,7 @@ data.raw.technology["electromagnetic-science-pack"].unit = {
 }
 
 data.raw.technology["agricultural-science-pack"].icon = "__Spaghetorio__/graphics/hr-icons/biological-science-pack-2.png"
-table.insert(data.raw.technology["agricultural-science-pack"].prerequisites, "sp-urea")
+data.raw.technology["agricultural-science-pack"].prerequisites = { "bioflux" }
 table.insert(data.raw.technology["agricultural-science-pack"].effects, {type = "unlock-recipe", recipe = "sp-vanadyl-sulfate"})
 
 data.raw.technology["cryogenic-science-pack"].icon = "__Spaghetorio__/graphics/hr-icons/cryogenic-science-pack-2.png"

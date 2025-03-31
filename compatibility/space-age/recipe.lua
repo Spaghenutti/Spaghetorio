@@ -314,6 +314,38 @@ util.recipe.change_recipe_ingredients("foundry",
   },
   60)
 
+util.recipe.change_recipe_ingredients("agricultural-tower",
+  {
+    {type = "item", name = "sp-vanadium-steel", amount = 50},
+    {type = "item", name = "sp-aluminum-brass", amount = 12},
+    {type = "item", name = "sp-nickel-cobalt", amount = 8},
+    {type = "item", name = "sp-glass", amount = 20},
+    {type = "item", name = "sp-aluminum-frame", amount = 24},
+    {type = "item", name = "sp-gearbox", amount = 12},
+    {type = "item", name = "sp-automation-core", amount = 8},
+    {type = "item", name = "electric-engine-unit", amount = 8},
+    {type = "item", name = "sp-bolts", amount = 30},
+    {type = "item", name = "sp-compressor", amount = 3},
+  },
+  40)
+
+util.recipe.change_recipe_ingredients("biochamber",
+  {
+    {type = "item", name = "sp-stainless-steel", amount = 30},
+    {type = "item", name = "sp-vanadium-aluminum", amount = 16},
+    {type = "item", name = "sp-zirconium-rod", amount = 12},
+    {type = "item", name = "sp-glass", amount = 12},
+    {type = "item", name = "sp-aluminum-frame", amount = 16},
+    {type = "item", name = "advanced-circuit", amount = 5},
+    {type = "item", name = "sp-vacuum-pump", amount = 4},
+    {type = "item", name = "sp-cryostat", amount = 6},
+    {type = "item", name = "sp-compressor", amount = 3},
+    {type = "item", name = "sp-thermocouple", amount = 10},
+    {type = "item", name = "sp-peltier-cell", amount = 6},
+    {type = "item", name = "refined-concrete", amount = 100},
+  },
+  40)
+
 util.recipe.change_recipe_ingredients("cryogenic-plant",
   {
     {type = "item", name = "sp-invar", amount = 20},

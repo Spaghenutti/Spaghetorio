@@ -88,6 +88,7 @@ TODO for 0.3.9
   - Unlock freezer in biological tree and before cryogenic plant
   - Add Tetraethylene glycol dimethyl CH₃O-(CH₂CH₂O)₄-CH₃
     - synthesized by reacting tetraethylene glycol with a methylating agent, such as dimethyl sulfate or methyl iodide
+  - add more uses for dimethyl-sulfide, dimethyl-sulfoxide and hydrogen-sulfide
     
   - Updated biological branch tier 1 and 2 of tech tree
     + herbarium
@@ -96,11 +97,11 @@ TODO for 0.3.9
     - bio-fuel
       + sugar
         + wheat
-      - fatty acids
-        - glycol
-          - potato
-          - spoilage
-          - dimethyl sulfate or methyl iodide
+      + fatty acids
+        + glycol
+          + potato
+          + spoilage
+          + dimethyl sulfate or methyl iodide
         + animal fat
           + fish
         + biomethanol
@@ -121,10 +122,13 @@ TODO for 0.3.9
           - trees
         - dimethyl-sulfoxide
 
+  - Add technology for pentapod eggs
+
 TODO for 0.3.10
   - Add recipe biomass + algue = biocrude-oil
   - Fix category names such that they all start with sp-
   - Add water landfill
+  - move remove-prototypes.lua into util
 
 TODO for 0.3.11
   - Change incinerator back to gas-power-station

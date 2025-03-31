@@ -377,19 +377,6 @@ data:extend({
   ------------------------------------------------------------------------------
   {
     type = "fluid",
-    name = "sp-fatty-acids",  -- #ForRegEx# - fluid
-    default_temperature = 25,
-    heat_capacity = "0.1kJ",
-    base_color = {r=0.05, g=0.1, b=0.5},
-    flow_color = {r=0.05, g=0.1, b=0.5},
-    icon = "__Spaghetorio__/graphics/icons/fatty-acids.png",
-    icon_size = 64,
-    icon_mipmaps = 4,
-    subgroup = "fluid",
-    order = "a[fluid]-c[biological]-a[fatty-acids]"
-  },
-  {
-    type = "fluid",
     name = "sp-biocrude-oil",  -- #ForRegEx# - fluid
     default_temperature = 25,
     heat_capacity = "0.1kJ",
@@ -1095,6 +1082,32 @@ data:extend({
     icon_mipmaps = 4,
     subgroup = "chemical",
     order = "a[fluid]-f[germanium-tetrachloride]"
+  },
+  {
+    type = "fluid",
+    name = "sp-glycol",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    base_color = {r=0.05, g=0.1, b=0.5},
+    flow_color = {r=0.05, g=0.1, b=0.5},
+    icon = "__Spaghetorio__/graphics/icons/glycol.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "chemical",
+    order = "a[fluid]-f[glycol]"
+  },
+  {
+    type = "fluid",
+    name = "sp-fatty-acids",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    base_color = {r=0.05, g=0.1, b=0.5},
+    flow_color = {r=0.05, g=0.1, b=0.5},
+    icon = "__Spaghetorio__/graphics/icons/fatty-acids.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "chemical",
+    order = "a[fluid]-f[fatty-acids]"
   },
   ------------------------------------------------------------------------------
   -- MARK: alien

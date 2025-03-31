@@ -1896,6 +1896,85 @@ data:extend({
   },
   {
     type = "technology",
+    name = "sp-dimethyl-sulfoxide",  -- #ForRegEx# - technology
+    icon = "__Spaghetorio__/graphics/hr-icons/dimethyl-sulfoxide.png",
+    icon_size = 256,
+    icon_mipmaps = 4,
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-dimethyl-sulfoxide",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-dimethyl-sulfide",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-hydrogen-sulfide",
+      }
+    },
+    prerequisites = {
+      "sp-kr-fuel-refinery",
+      "sp-oxidizer"
+    },
+    unit = {
+      count = 100,
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-electronic-science-pack-1", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"production-science-pack", 1},
+        {"metallurgic-science-pack", 1},
+        {"electromagnetic-science-pack", 1}
+      },
+      time = 45,
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-fatty-acids",  -- #ForRegEx# - technology
+    icon = "__Spaghetorio__/graphics/hr-icons/fatty-acids.png",
+    icon_size = 256,
+    icon_mipmaps = 4,
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-fatty-acids",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-animal-fat",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-glycol",
+      }
+    },
+    prerequisites = {
+      "sp-dimethyl-sulfoxide"
+    },
+    unit = {
+      count = 100,
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-electronic-science-pack-1", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"production-science-pack", 1},
+        {"metallurgic-science-pack", 1},
+        {"electromagnetic-science-pack", 1}
+      },
+      time = 45,
+    },
+  },
+  {
+    type = "technology",
     name = "sp-magnesium-processing",  -- #ForRegEx# - technology
     icon_size = 256,
     icon = "__Spaghetorio__/graphics/hr-icons/magnesium-slab.png",
@@ -7818,6 +7897,14 @@ data:extend({
       },
       {
         type = "unlock-recipe",
+        recipe = "sp-potato",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-wheat",
+      },
+      {
+        type = "unlock-recipe",
         recipe = "sp-vanadyl-sulfate",
       },
       {
@@ -8752,6 +8839,10 @@ data:extend({
       },
       {
         type = "unlock-recipe",
+        recipe = "burnt-spoilage",
+      },
+      {
+        type = "unlock-recipe",
         recipe = "sp-incinerate-wood",
       },
       {
@@ -8933,6 +9024,10 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "sp-bio-fuel",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-sugar",
       },
       {
         type = "unlock-recipe",
