@@ -1952,7 +1952,11 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "sp-glycol",
-      }
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-bio-fuel",
+      },
     },
     prerequisites = {
       "sp-dimethyl-sulfoxide"
@@ -9020,14 +9024,6 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "sp-fuel",
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-bio-fuel",
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-sugar",
       },
       {
         type = "unlock-recipe",

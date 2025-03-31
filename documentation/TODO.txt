@@ -94,7 +94,7 @@ TODO for 0.3.9
     + herbarium
       + sprinkler
       + ventilator
-    - bio-fuel
+    + bio-fuel
       + sugar
         + wheat
       + fatty acids

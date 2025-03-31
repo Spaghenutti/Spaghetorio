@@ -4565,7 +4565,7 @@ data:extend({
     ingredients = {
       {type = "item", name = "sp-potato", amount = 1},
       {type = "item", name = "spoilage", amount = 1},
-      {type = "fluid", name = "sp-dimethyl-sulfoxide", amount = 5}
+      {type = "fluid", name = "sp-dimethyl-sulfide", amount = 5}
     },
     results = {
       {type = "fluid", name = "sp-glycol", amount = 5}
@@ -5930,9 +5930,9 @@ data:extend({
     energy_required = 8,
     ingredients = {
       {type = "item", name = "lithium", amount = 1},
-      {type = "item", name = "sp-sugar", amount = 3},
+      {type = "item", name = "carbon", amount = 12},
       {type = "item", name = "sp-potassium-cyanide", amount = 1},
-      {type = "fluid", name = "sp-biomethanol", amount = 60},
+      {type = "fluid", name = "sp-fatty-acids", amount = 20},
     },
     results = {
       {type = "item", name = "sp-bio-fuel", amount = 5},

@@ -303,6 +303,10 @@ data.raw.technology["biochamber"].effects =
     type = "unlock-recipe",
     recipe = "nutrients-from-yumako-mash"
   },
+  {
+    type = "unlock-recipe",
+    recipe = "sp-sugar",
+  },
 }
 data.raw.technology["biochamber"].prerequisites = {
   "agriculture",
