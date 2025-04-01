@@ -147,6 +147,14 @@ data.raw.recipe["wood-processing"].results = {
   {type = "item", name = "wood", amount = 10},
 }
 
+util.recipe.change_recipe_ingredients("bioflux",
+  {
+    {type = "item", name = "yumako-mash", amount = 15},
+    {type = "item", name = "jelly", amount = 12},
+    {type = "fluid", name = "sp-fatty-acids", amount = 20}
+  },
+  6)
+
 util.recipe.change_recipe_ingredients("selector-combinator",
   {
     {type = "item", name = "sp-insulated-wire", amount = 10},

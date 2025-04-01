@@ -3,6 +3,8 @@ local remove_prototypes = require("remove-prototypes")
 
 remove_prototypes.remove_one_prototype("technology", "yumako")
 remove_prototypes.remove_one_prototype("technology", "jellynut")
+remove_prototypes.remove_one_prototype("technology", "carbon-fiber")
+remove_prototypes.remove_one_prototype("technology", "tree-seeding")
 
 -- Update technologies
 table.insert(data.raw.technology["lithium-processing"].effects, {type = "unlock-recipe", recipe = "sp-lithium-oxide"})
@@ -345,6 +347,44 @@ data.raw.technology["artificial-soil"].unit = {
   },
   time = 30
 }
+data.raw.technology["bioflux"].prerequisites = {
+  "sp-fatty-acids",
+}
+data.raw.technology["bioflux"].research_trigger = nil
+data.raw.technology["bioflux"].unit = {
+  count = 250,
+  ingredients = {
+    {"sp-automation-science-pack-2", 1},
+    {"logistic-science-pack", 1},
+    {"chemical-science-pack", 1},
+    {"sp-material-science-pack-1", 1},
+    {"sp-geological-science-pack-1", 1},
+    {"sp-electronic-science-pack-1", 1},
+    {"metallurgic-science-pack", 1},
+    {"electromagnetic-science-pack", 1}
+  },
+  time = 30
+}
+
+data.raw.technology["bioflux-processing"].prerequisites = {
+  "agricultural-science-pack",
+}
+data.raw.technology["bioflux-processing"].research_trigger = nil
+data.raw.technology["bioflux-processing"].unit = {
+  count = 250,
+  ingredients = {
+    {"sp-automation-science-pack-2", 1},
+    {"logistic-science-pack", 1},
+    {"chemical-science-pack", 1},
+    {"sp-material-science-pack-1", 1},
+    {"sp-geological-science-pack-1", 1},
+    {"sp-electronic-science-pack-1", 1},
+    {"metallurgic-science-pack", 1},
+    {"electromagnetic-science-pack", 1},
+    {"agricultural-science-pack", 1}
+  },
+  time = 30
+}
 
 table.insert(data.raw.technology["bacteria-cultivation"].effects, {type = "unlock-recipe", recipe = "copper-bacteria"})
 table.insert(data.raw.technology["bacteria-cultivation"].effects, {type = "unlock-recipe", recipe = "iron-bacteria"})
@@ -482,6 +522,32 @@ data.raw.technology["transport-belt-capacity-2"].unit.ingredients = {
   {"utility-science-pack", 1}
 }
 
+data.raw.technology["fish-breeding"].prerequisites = {
+  "biochamber"
+}
+data.raw.technology["fish-breeding"].unit.ingredients = {
+  {"sp-automation-science-pack-2", 1},
+  {"logistic-science-pack", 1},
+  {"chemical-science-pack", 1},
+  {"sp-material-science-pack-2", 1},
+  {"sp-geological-science-pack-1", 1},
+  {"sp-electronic-science-pack-1", 1},
+  {"metallurgic-science-pack", 1},
+  {"electromagnetic-science-pack", 1}
+}
+
+data.raw.technology["toolbelt-equipment"].unit.ingredients = {
+  {"sp-automation-science-pack-2", 1},
+  {"sp-logistic-science-pack-2", 1},
+  {"chemical-science-pack", 1},
+  {"sp-electronic-science-pack-1", 1},
+  {"sp-material-science-pack-1", 1},
+  {"sp-military-science-pack-2", 1},
+  {"sp-geological-science-pack-1", 1},
+  {"metallurgic-science-pack", 1},
+  {"electromagnetic-science-pack", 1}
+}
+
 --------------------------------------------------------------------------------
 -- MARK: Science pack
 --------------------------------------------------------------------------------
@@ -525,11 +591,24 @@ data.raw.technology["electromagnetic-science-pack"].unit = {
 }
 
 data.raw.technology["agricultural-science-pack"].icon = "__Spaghetorio__/graphics/hr-icons/biological-science-pack-2.png"
-data.raw.technology["agricultural-science-pack"].prerequisites = { 
+data.raw.technology["agricultural-science-pack"].prerequisites = {
   "bioflux",
   "sp-bio-pesticide",
   "sp-fatty-acids"
  }
-table.insert(data.raw.technology["agricultural-science-pack"].effects, {type = "unlock-recipe", recipe = "sp-vanadyl-sulfate"})
-
+data.raw.technology["agricultural-science-pack"].research_trigger = nil
+data.raw.technology["agricultural-science-pack"].unit = {
+  count = 250,
+  ingredients = {
+    {"sp-automation-science-pack-2", 1},
+    {"logistic-science-pack", 1},
+    {"chemical-science-pack", 1},
+    {"sp-material-science-pack-1", 1},
+    {"sp-geological-science-pack-1", 1},
+    {"sp-electronic-science-pack-1", 1},
+    {"metallurgic-science-pack", 1},
+    {"electromagnetic-science-pack", 1}
+  },
+  time = 30
+}
 data.raw.technology["cryogenic-science-pack"].icon = "__Spaghetorio__/graphics/hr-icons/cryogenic-science-pack-2.png"

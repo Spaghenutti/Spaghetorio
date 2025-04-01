@@ -83,15 +83,13 @@ TODO for 0.3.9
   + rename hurrican greenhouse to herbarium
   + rename wood-farm back to greenhouse
   + rename krastorio bio-lab to genetics-facility
-  - Fix herbarium technology icon
   - Add energy values for potato, wheat and stuff
-  - Unlock freezer in biological tree and before cryogenic plant
-  - Add Tetraethylene glycol dimethyl CH₃O-(CH₂CH₂O)₄-CH₃
-    - synthesized by reacting tetraethylene glycol with a methylating agent, such as dimethyl sulfate or methyl iodide
-  - add more uses for dimethyl-sulfide, dimethyl-sulfoxide and hydrogen-sulfide
-  - add spoling to items
+  + Unlock freezer in biological tree and before cryogenic plant
+  - Add more uses for dimethyl-sulfide, dimethyl-sulfoxide and hydrogen-sulfide
+  - Add spoling to items
+  - Add uses to bioflux
     
-  - Updated biological branch tier 1 and 2 of tech tree
+  + Updated biological branch tier 1 and 2 of tech tree
     + herbarium
       + sprinkler
       + ventilator
@@ -113,20 +111,25 @@ TODO for 0.3.9
         + algue
     + epoxy
       + biocrude-oil
-    - bio-pesticide
-      - protozoa
-        - spoilage
-      - fungi
-        - spoilage
-      - polysacharides
-        - leaves
-          - trees
-        - dimethyl-sulfoxide
+    + bio-pesticide
+      + protozoa
+        + spoilage
+      + fungi
+        + spoilage
+      + polysacharides
+        + leaves
+          + trees
+        + dimethyl-sulfoxide
 
   - Add technology for pentapod eggs
 
 TODO for 0.3.10
+  - Fix herbarium technology icon
+  - Add freezing recipes
   - Add setting for spoiling for spaghetorio items
+    - remove biochamber item, recipe and technology
+    - remove all freezing recipes
+  - Add setting for disabling required nutrients for biochamber
   - Add recipe biomass + algue = biocrude-oil
   - Fix category names such that they all start with sp-
   - Add water landfill

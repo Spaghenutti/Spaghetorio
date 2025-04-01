@@ -1957,9 +1957,14 @@ data:extend({
         type = "unlock-recipe",
         recipe = "sp-bio-fuel",
       },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-lubricant-from-biocrude-oil"
+      }
     },
     prerequisites = {
-      "sp-dimethyl-sulfoxide"
+      "sp-dimethyl-sulfoxide",
+      "fish-breeding"
     },
     unit = {
       count = 100,
@@ -2024,6 +2029,51 @@ data:extend({
         {"production-science-pack", 1},
         {"metallurgic-science-pack", 1},
         {"electromagnetic-science-pack", 1}
+      },
+      time = 45,
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-improved-agriculture",  -- #ForRegEx# - technology
+    icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/hr-icons/potato-1.png", 256, {-20, 20},
+                                        "__Spaghetorio__/graphics/hr-icons/wheat-1.png", 256, {20, -20}),
+    icon_size = 256,
+    icon_mipmaps = 4,
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-improved-potato-growing",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-improved-wheat-growing",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-improved-fungi-growing",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-improved-tree-growing",
+      }
+    },
+    prerequisites = {
+      "agricultural-science-pack"
+    },
+    unit = {
+      count = 150,
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-electronic-science-pack-1", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"production-science-pack", 1},
+        {"metallurgic-science-pack", 1},
+        {"electromagnetic-science-pack", 1},
+        {"agricultural-science-pack", 1}
       },
       time = 45,
     },
@@ -4266,10 +4316,6 @@ data:extend({
         type = "unlock-recipe",
         recipe = "sp-biocrude-oil"
       },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-lubricant-from-biocrude-oil"
-      }
     },
     prerequisites = {
       "sp-glycerin",
@@ -8453,20 +8499,19 @@ data:extend({
       },
     },
     prerequisites = {
-      "agricultural-science-pack"
+      "biochamber"
     },
     unit = {
       count = 500,
       ingredients = {
         {"sp-automation-science-pack-2", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"sp-material-science-pack-2", 1},
-        {"sp-geological-science-pack-2", 1},
-        {"sp-electronic-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1},
-        {"sp-metallurgic-science-pack-2", 1},
-        {"sp-electromagnetic-science-pack-2", 1},
-        {"production-science-pack", 1}
+        {"logistic-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"sp-material-science-pack-1", 1},
+        {"sp-geological-science-pack-1", 1},
+        {"sp-electronic-science-pack-1", 1},
+        {"metallurgic-science-pack", 1},
+        {"electromagnetic-science-pack", 1}
       },
       time = 45,
     },

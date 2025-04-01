@@ -28,6 +28,12 @@ data.raw["item-subgroup"]["fill-barrel"].order = "z-e"
 data.raw["item-subgroup"]["empty-barrel"].group = "fluids"
 data.raw["item-subgroup"]["empty-barrel"].order = "z-f"
 
+-- remove_prototypes.remove_one_prototype("recipe", "bioplastics")
+-- remove_prototypes.remove_one_prototype("recipe", "rocket-fuel-from-jelly")
+-- remove_prototypes.remove_one_prototype("recipe", "biosulfur")
+-- remove_prototypes.remove_one_prototype("recipe", "biolubricant")
+
+-- remove_prototypes.remove_one_prototype("technology", "bioflux-processing")
 
 data.raw.technology["agriculture"].effects =
 {

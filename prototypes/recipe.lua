@@ -4484,7 +4484,8 @@ data:extend({
     allow_productivity = true,
     energy_required = 4,
     ingredients = {
-      {type = "item", name = "spoilage", amount = 5},
+      {type = "item", name = "spoilage", amount = 2},
+      -- {type = "item", name = "jelly", amount = 5},
       {type = "item", name = "sp-nickel-ingot", amount = 1}
     },
     results = {
@@ -4580,7 +4581,9 @@ data:extend({
     allow_productivity = true,
     energy_required = 2,
     ingredients = {
-      {type = "item", name = "spoilage", amount = 2}
+      {type = "item", name = "spoilage", amount = 2},
+      {type = "item", name = "jelly", amount = 1},
+      {type = "item", name = "sp-sugar", amount = 1}
     },
     results = {
       {type = "item", name = "sp-protozoa", amount = 1}
@@ -4594,7 +4597,8 @@ data:extend({
     allow_productivity = true,
     energy_required = 2.5,
     ingredients = {
-      {type = "item", name = "sp-leaf", amount = 5}
+      {type = "item", name = "sp-leaf", amount = 5},
+      {type = "item", name = "yumako-mash", amount = 1}
     },
     results = {
       {type = "item", name = "sp-polysaccharide", amount = 1}
@@ -6950,6 +6954,34 @@ data:extend({
       secondary = {r = 1.000, g = 0.500, b = 0.000, a = 1.000}, -- #ff7f00ff
     }
   },
+  {
+    type = "recipe",
+    name = "sp-improved-tree-growing",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__base__/graphics/icons/tree-01.png", 64,
+                                         "__Spaghetorio__/graphics/icons/bio-pesticide.png", 64),
+    category = "wood-farming",
+    subgroup = "basic-agriculture",
+    order = "b[nauvis-agriculture]-a[tree-growing]",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 30,
+    ingredients = {
+      {type = "item", name = "tree-seed", amount = 4},
+      {type = "item", name = "sp-bio-pesticide", amount = 1},
+      {type = "fluid", name = "water", amount = 100}
+    },
+    results =
+    {
+      {type = "item", name = "sp-tree", amount = 20},
+      {type = "item", name = "tree-seed", amount = 5},
+    },
+    auto_recycle = false,
+    crafting_machine_tint =
+    {
+      primary = {r = 0.442, g = 0.205, b = 0.090, a = 1.000}, -- #703416ff
+      secondary = {r = 1.000, g = 0.500, b = 0.000, a = 1.000}, -- #ff7f00ff
+    }
+  },
   ------------------------------------------------------------------------------
   -- MARK: herbarium
   ------------------------------------------------------------------------------
@@ -6972,6 +7004,25 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "sp-improved-potato-growing",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/potato-1.png", 64,
+                                         "__Spaghetorio__/graphics/icons/bio-pesticide.png", 64),
+    category = "herbarium",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 45,
+    ingredients = {
+      {type = "item", name = "sp-potato", amount = 1},
+      {type = "item", name = "sp-bio-pesticide", amount = 1},
+      {type = "item", name = "nutrients", amount = 5},
+      {type = "fluid", name = "water", amount = 60},
+    },
+    results = {
+      {type = "item", name = "sp-potato", amount = 45}
+    }
+  },
+  {
+    type = "recipe",
     name = "sp-wheat",  -- #ForRegEx# - recipe
     category = "herbarium",
     enabled = false,
@@ -6989,6 +7040,24 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "sp-improved-wheat-growing",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/wheat-1.png", 64,
+                                         "__Spaghetorio__/graphics/icons/bio-pesticide.png", 64),
+    category = "herbarium",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 30,
+    ingredients = {
+      {type = "item", name = "sp-wheat", amount = 1},
+      {type = "item", name = "sp-bio-pesticide", amount = 2},
+      {type = "fluid", name = "water", amount = 60},
+    },
+    results = {
+      {type = "item", name = "sp-wheat", amount = 20}
+    }
+  },
+  {
+    type = "recipe",
     name = "sp-fungi",  -- #ForRegEx# - recipe
     category = "herbarium",
     enabled = false,
@@ -6996,9 +7065,30 @@ data:extend({
     energy_required = 6,
     ingredients = {
       {type = "item", name = "spoilage", amount = 3},
+      {type = "item", name = "nutrients", amount = 1},
+      {type = "fluid", name = "water", amount = 20}
     },
     results = {
       {type = "item", name = "sp-fungi", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-improved-fungi-growing",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/fungi-1.png", 64,
+                                         "__space-age__/graphics/icons/nutrients.png", 64),
+    category = "herbarium",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 5,
+    ingredients = {
+      {type = "item", name = "sp-fungi", amount = 1},
+      {type = "item", name = "nutrients", amount = 2},
+      {type = "item", name = "bioflux", amount = 1},
+      {type = "fluid", name = "water", amount = 20},
+    },
+    results = {
+      {type = "item", name = "sp-fungi", amount = 4}
     }
   },
   ------------------------------------------------------------------------------

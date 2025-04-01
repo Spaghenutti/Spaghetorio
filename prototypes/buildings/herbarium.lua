@@ -13,7 +13,7 @@ local sounds = require("__base__/prototypes/entity/sounds")
 local graphics_frame_count = 128
 local graphics_animation_speed = 0.7
 local graphics_shift = {0, 0}
-local graphics_scale = 1
+local graphics_scale = 0.5
 local graphics_set = {
   animation = {
     layers = {
@@ -85,6 +85,27 @@ local graphics_set = {
   },
 }
 
+fluid_boxes = {
+  {
+    production_type = "input",
+    pipe_picture = util.empty_sprite(),
+    -- pipe_picture_frozen = require("__space-age__.prototypes.entity.foundry-pictures").pipe_picture_frozen,
+    pipe_covers = pipecoverspictures(),
+    always_draw_covers = false,
+    volume = 1000,
+    pipe_connections = {{flow_direction="input", direction = defines.direction.west, position = {-2, 1}}}
+  },
+  {
+    production_type = "input",
+    pipe_picture = util.empty_sprite(),
+    -- pipe_picture_frozen = require("__space-age__.prototypes.entity.foundry-pictures").pipe_picture_frozen,
+    pipe_covers = pipecoverspictures(),
+    always_draw_covers = false,
+    volume = 1000,
+    pipe_connections = {{flow_direction="input", direction = defines.direction.west, position = {-2, -1}}}
+  },
+}
+
 local working_sound = {
   filename = "__Spaghetorio__/sounds/buildings/greenhouse.ogg",
   volume = 0.75,
@@ -110,8 +131,8 @@ data:extend({
     dying_explosion = "foundry-explosion",
     -- circuit_wire_max_distance = assembling_machine_circuit_wire_max_distance,  -- assembling_machine_circuit_wire_max_distance = 9
     -- circuit_connector = circuit_connector_definitions,
-    collision_box = {{-1.7, -1.7}, {1.7, 1.7}},
-    selection_box = {{-2, -2}, {2, 2}},
+    collision_box = {{-2.2, -2.2}, {2.2, 2.2}},
+    selection_box = {{-2.5, -2.5}, {2.5, 2.5}},
     damaged_trigger_effect = hit_effects.entity(),
     module_slots = 4,
     icon_draw_specification = {scale = 1, shift = {0, -0.3}},
@@ -120,7 +141,7 @@ data:extend({
       {inventory_index = defines.inventory.assembling_machine_modules, shift = {0, 1.25}}
     },
     allowed_effects = {"consumption", "speed", "productivity", "pollution", "quality"},
-    crafting_categories = {"farming"},
+    crafting_categories = {"herbarium"},
     crafting_speed = 1.5,
     energy_source =
     {
@@ -134,6 +155,7 @@ data:extend({
     open_sound = sounds.metal_large_open,
     close_sound = sounds.metal_large_close,
     working_sound = working_sound,
+    fluid_boxes = fluid_boxes,
     fluid_boxes_off_when_no_fluid_recipe = true,
   }
 })
