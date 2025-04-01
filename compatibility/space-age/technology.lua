@@ -525,7 +525,11 @@ data.raw.technology["electromagnetic-science-pack"].unit = {
 }
 
 data.raw.technology["agricultural-science-pack"].icon = "__Spaghetorio__/graphics/hr-icons/biological-science-pack-2.png"
-data.raw.technology["agricultural-science-pack"].prerequisites = { "bioflux" }
+data.raw.technology["agricultural-science-pack"].prerequisites = { 
+  "bioflux",
+  "sp-bio-pesticide",
+  "sp-fatty-acids"
+ }
 table.insert(data.raw.technology["agricultural-science-pack"].effects, {type = "unlock-recipe", recipe = "sp-vanadyl-sulfate"})
 
 data.raw.technology["cryogenic-science-pack"].icon = "__Spaghetorio__/graphics/hr-icons/cryogenic-science-pack-2.png"

@@ -11,6 +11,8 @@ Date: 2025-04-04
     - Pressure tube now also requires seal
   Bugfixes:
     - enriching crushed iron ore now correctly produces enriched iron
+    - carbon fiber can be now produced in chemical plant
+    - lead molybdate can be now produced in induction hardening facility
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.8b
 Date: 2025-03-22

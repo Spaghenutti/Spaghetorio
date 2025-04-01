@@ -65,28 +65,6 @@ data.raw.tool["agricultural-science-pack"].subgroup = "intermediate-science"
 data.raw.tool["cryogenic-science-pack"].subgroup = "intermediate-science"
 data.raw.tool["promethium-science-pack"].subgroup = "futuristic-science"
 
--- MARK: change recipe subgroups
-data.raw.recipe["carbon"].subgroup = "processed-non-metal"
-
-data.raw.recipe["lithium"].subgroup = "processed-metal"
-
-data.raw.recipe["lithium-plate"].subgroup = "raw-material"
-data.raw.recipe["tungsten-plate"].subgroup = "raw-material"
-data.raw.recipe["holmium-plate"].subgroup = "raw-material"
-
-data.raw.recipe["molten-copper"].subgroup = "casting-raw-material"
-data.raw.recipe["molten-iron"].subgroup = "casting-raw-material"
-
-data.raw.recipe["tungsten-carbide"].subgroup = "ceramic"
-
-data.raw.recipe["carbon-fiber"].subgroup = "advanced-raw-material"
-
-data.raw.recipe["steam-condensation"].subgroup = "fluid"
-data.raw.recipe["ice-melting"].subgroup = "fluid"
-
-data.raw.recipe["holmium-solution"].subgroup = "solution"
-data.raw.recipe["ammoniacal-solution-separation"].subgroup = "solution"
-
 -- MARK: Change fuel values
 data.raw.item["carbon"].fuel_value = "4MJ"
 

@@ -15,6 +15,20 @@ util.recipe.disable_recipe("iron-gear-wheel")
 util.recipe.disable_recipe("engine-unit")
 util.recipe.disable_recipe("burner-inserter")
 
+-- MARK: change recipe subgroups
+data.raw.recipe["lubricant"].subgroup = "fluid"
+data.raw.recipe["advanced-oil-processing"].subgroup = "fluid"
+data.raw.recipe["basic-oil-processing"].subgroup = "fluid"
+data.raw.recipe["heavy-oil-cracking"].subgroup = "fluid"
+data.raw.recipe["light-oil-cracking"].subgroup = "fluid"
+data.raw.recipe["coal-liquefaction"].subgroup = "fluid"
+
+data.raw.recipe["sulfuric-acid"].subgroup = "chemical"
+
+data.raw.recipe["nuclear-fuel-reprocessing"].subgroup = "radioactive-resource"
+data.raw.recipe["uranium-processing"].subgroup = "radioactive-resource"
+data.raw.recipe["kovarex-enrichment-process"].subgroup = "radioactive-resource"
+
 --------------------------------------------------------------------------------
 -- Recipe changes for base factorio items
 -- MARK: Items

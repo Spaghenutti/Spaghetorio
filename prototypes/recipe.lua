@@ -4546,13 +4546,14 @@ data:extend({
     category = "organic",
     enabled = false,
     allow_productivity = true,
-    energy_required = 1,
+    energy_required = 1.5,
     ingredients = {
       {type = "item", name = "sp-animal-fat", amount = 1},
-      {type = "fluid", name = "water", amount = 5}
+      {type = "fluid", name = "sp-glycol", amount = 3},
+      {type = "fluid", name = "sp-biomethanol", amount = 2}
     },
     results = {
-      {type = "fluid", name = "sp-fatty-acids", amount = 1}
+      {type = "fluid", name = "sp-fatty-acids", amount = 5}
     }
   },
   {
@@ -4569,6 +4570,50 @@ data:extend({
     },
     results = {
       {type = "fluid", name = "sp-glycol", amount = 5}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-protozoa",  -- #ForRegEx# - recipe
+    category = "organic",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 2,
+    ingredients = {
+      {type = "item", name = "spoilage", amount = 2}
+    },
+    results = {
+      {type = "item", name = "sp-protozoa", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-polysaccharide",  -- #ForRegEx# - recipe
+    category = "organic",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 2.5,
+    ingredients = {
+      {type = "item", name = "sp-leaf", amount = 5}
+    },
+    results = {
+      {type = "item", name = "sp-polysaccharide", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-bio-pesticide",  -- #ForRegEx# - recipe
+    category = "organic",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 1.5,
+    ingredients = {
+      {type = "item", name = "sp-protozoa", amount = 2},
+      {type = "item", name = "sp-polysaccharide", amount = 1},
+      {type = "item", name = "sp-fungi", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-bio-pesticide", amount = 1}
     }
   },
   ------------------------------------------------------------------------------
@@ -6007,7 +6052,6 @@ data:extend({
     ingredients = {
       {type = "item", name = "sp-molybdenum-pillet", amount = 3},
       {type = "item", name = "sp-lead-slab", amount = 1},
-      {type = "fluid", name = "sp-oxygen", amount = 10}
     },
     results = {
       {type = "item", name = "sp-lead-molybdate", amount = 3}
@@ -6806,6 +6850,31 @@ data:extend({
       {type = "item", name = "sp-wood-chips", amount = 20}
     }
   },
+  {
+    type = "recipe",
+    name = "sp-leaf",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/icons/leaf-1.png",
+    category = "wood-farming",
+    subgroup = "basic-agriculture",
+    order = "b[nauvis-agriculture]-a[leaf]",
+    enabled = false,
+    allow_productivity = false,
+    energy_required = 1,
+    ingredients = {
+      {type = "item", name = "sp-tree", amount = 1},
+    },
+    results =
+    {
+      {type = "item", name = "sp-leaf", amount = 5},
+      {type = "item", name = "wood", amount = 1},
+    },
+    auto_recycle = false,
+    crafting_machine_tint =
+    {
+      primary = {r = 0.442, g = 0.205, b = 0.090, a = 1.000}, -- #703416ff
+      secondary = {r = 1.000, g = 0.500, b = 0.000, a = 1.000}, -- #ff7f00ff
+    }
+  },
   ------------------------------------------------------------------------------
   -- MARK: basic-agriculture
   ------------------------------------------------------------------------------
@@ -6855,6 +6924,32 @@ data:extend({
       secondary = {r = 1.000, g = 0.500, b = 0.000, a = 1.000}, -- #ff7f00ff
     }
   },
+  {
+    type = "recipe",
+    name = "sp-tree-growing",  -- #ForRegEx# - recipe
+    icon = "__base__/graphics/icons/tree-01.png",
+    category = "wood-farming",
+    subgroup = "basic-agriculture",
+    order = "b[nauvis-agriculture]-a[tree-growing]",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 30,
+    ingredients = {
+      {type = "item", name = "tree-seed", amount = 1},
+      {type = "fluid", name = "water", amount = 100}
+    },
+    results =
+    {
+      {type = "item", name = "sp-tree", amount = 5},
+      {type = "item", name = "tree-seed", amount = 5},
+    },
+    auto_recycle = false,
+    crafting_machine_tint =
+    {
+      primary = {r = 0.442, g = 0.205, b = 0.090, a = 1.000}, -- #703416ff
+      secondary = {r = 1.000, g = 0.500, b = 0.000, a = 1.000}, -- #ff7f00ff
+    }
+  },
   ------------------------------------------------------------------------------
   -- MARK: herbarium
   ------------------------------------------------------------------------------
@@ -6890,6 +6985,20 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-wheat", amount = 15}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-fungi",  -- #ForRegEx# - recipe
+    category = "herbarium",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 6,
+    ingredients = {
+      {type = "item", name = "spoilage", amount = 3},
+    },
+    results = {
+      {type = "item", name = "sp-fungi", amount = 1}
     }
   },
   ------------------------------------------------------------------------------

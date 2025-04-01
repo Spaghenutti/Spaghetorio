@@ -149,20 +149,6 @@ data.raw.item["train-stop"].stack_size = 50
 -- MARK: change storage capacities
 data.raw["storage-tank"]["storage-tank"].fluid_box.volume = 50000
 
--- MARK: change recipe subgroups
-data.raw.recipe["lubricant"].subgroup = "fluid"
-data.raw.recipe["advanced-oil-processing"].subgroup = "fluid"
-data.raw.recipe["basic-oil-processing"].subgroup = "fluid"
-data.raw.recipe["heavy-oil-cracking"].subgroup = "fluid"
-data.raw.recipe["light-oil-cracking"].subgroup = "fluid"
-data.raw.recipe["coal-liquefaction"].subgroup = "fluid"
-
-data.raw.recipe["sulfuric-acid"].subgroup = "chemical"
-
-data.raw.recipe["nuclear-fuel-reprocessing"].subgroup = "radioactive-resource"
-data.raw.recipe["uranium-processing"].subgroup = "radioactive-resource"
-data.raw.recipe["kovarex-enrichment-process"].subgroup = "radioactive-resource"
-
 -- MARK: Changes to rocket silo
 data.raw["rocket-silo"]["rocket-silo"].rocket_parts_required = 1
 

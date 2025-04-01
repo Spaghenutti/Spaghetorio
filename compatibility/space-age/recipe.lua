@@ -25,6 +25,37 @@ remove_prototypes.remove_one_prototype("recipe", "coal-synthesis")
 -- remove_prototypes.remove_one_prototype("recipe", "casting-copper-cable")
 
 --------------------------------------------------------------------------------
+-- MARK: change recipe subgroups
+--------------------------------------------------------------------------------
+
+data.raw.recipe["carbon"].subgroup = "processed-non-metal"
+
+data.raw.recipe["lithium"].subgroup = "processed-metal"
+
+data.raw.recipe["lithium-plate"].subgroup = "raw-material"
+data.raw.recipe["tungsten-plate"].subgroup = "raw-material"
+data.raw.recipe["holmium-plate"].subgroup = "raw-material"
+
+data.raw.recipe["molten-copper"].subgroup = "casting-raw-material"
+data.raw.recipe["molten-iron"].subgroup = "casting-raw-material"
+
+data.raw.recipe["tungsten-carbide"].subgroup = "ceramic"
+
+data.raw.recipe["carbon-fiber"].subgroup = "advanced-raw-material"
+
+data.raw.recipe["steam-condensation"].subgroup = "fluid"
+data.raw.recipe["ice-melting"].subgroup = "fluid"
+
+data.raw.recipe["holmium-solution"].subgroup = "solution"
+data.raw.recipe["ammoniacal-solution-separation"].subgroup = "solution"
+
+--------------------------------------------------------------------------------
+-- MARK: change recipe categories
+--------------------------------------------------------------------------------
+
+data.raw.recipe["burnt-spoilage"].category = "incinerating"
+
+--------------------------------------------------------------------------------
 -- Recipe changes for space age factorio items
 -- MARK: Items
 --------------------------------------------------------------------------------
@@ -90,7 +121,7 @@ data.raw.recipe["lithium"].results = {
   {type = "item", name = "lithium", amount = 2}
 }
 
-data.raw.recipe["carbon-fiber"].category = "induction-hardening"
+data.raw.recipe["carbon-fiber"].category = "chemistry"
 util.recipe.change_recipe_ingredients("carbon-fiber",
   {
     {type = "item", name = "plastic-bar", amount = 1},
@@ -321,28 +352,29 @@ util.recipe.change_recipe_ingredients("agricultural-tower",
     {type = "item", name = "sp-nickel-cobalt", amount = 8},
     {type = "item", name = "sp-glass", amount = 20},
     {type = "item", name = "sp-aluminum-frame", amount = 24},
+    {type = "item", name = "advanced-circuit", amount = 10},
     {type = "item", name = "sp-gearbox", amount = 12},
     {type = "item", name = "sp-automation-core", amount = 8},
     {type = "item", name = "electric-engine-unit", amount = 8},
     {type = "item", name = "sp-bolts", amount = 30},
     {type = "item", name = "sp-compressor", amount = 3},
+    {type = "item", name = "refined-concrete", amount = 40},
   },
-  40)
+  45)
 
 util.recipe.change_recipe_ingredients("biochamber",
   {
     {type = "item", name = "sp-stainless-steel", amount = 30},
     {type = "item", name = "sp-vanadium-aluminum", amount = 16},
     {type = "item", name = "sp-zirconium-rod", amount = 12},
-    {type = "item", name = "sp-glass", amount = 12},
-    {type = "item", name = "sp-aluminum-frame", amount = 16},
-    {type = "item", name = "advanced-circuit", amount = 5},
-    {type = "item", name = "sp-vacuum-pump", amount = 4},
-    {type = "item", name = "sp-cryostat", amount = 6},
-    {type = "item", name = "sp-compressor", amount = 3},
-    {type = "item", name = "sp-thermocouple", amount = 10},
-    {type = "item", name = "sp-peltier-cell", amount = 6},
-    {type = "item", name = "refined-concrete", amount = 100},
+    {type = "item", name = "sp-glass", amount = 20},
+    {type = "item", name = "sp-titanium-frame", amount = 16},
+    {type = "item", name = "sp-plate-heat-exchanger", amount = 8},
+    {type = "item", name = "sp-pressure-tube", amount = 4},
+    {type = "item", name = "sp-ventilator", amount = 4},
+    {type = "item", name = "sp-precipitator", amount = 1},
+    {type = "item", name = "advanced-circuit", amount = 6},
+    {type = "item", name = "refined-concrete", amount = 20},
   },
   40)
 

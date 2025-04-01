@@ -4641,6 +4641,25 @@ data:extend({
     stack_size = 100
   },
   ------------------------------------------------------------------------------
+  -- MARK: basic-agriculture
+  ------------------------------------------------------------------------------
+  {
+    type = "item",
+    name = "sp-tree",  -- #ForRegEx# - item
+    icon = "__base__/graphics/icons/tree-01.png",
+    icon_size = 64,
+    pictures = {
+      {size = 64, filename = "__base__/graphics/icons/tree-01.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__base__/graphics/icons/tree-02.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__base__/graphics/icons/tree-03.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__base__/graphics/icons/tree-04.png", scale = 0.5, mipmap_count = 4}
+    },
+    scale = 0.5,
+    subgroup = "basic-agriculture",
+    order = "[tree]",
+    stack_size = 50,
+  },
+  ------------------------------------------------------------------------------
   -- MARK: agriculture-processes
   ------------------------------------------------------------------------------
   {

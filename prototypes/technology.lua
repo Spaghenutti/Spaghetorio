@@ -1979,6 +1979,57 @@ data:extend({
   },
   {
     type = "technology",
+    name = "sp-bio-pesticide",  -- #ForRegEx# - technology
+    icon = "__Spaghetorio__/graphics/hr-icons/bio-pesticide.png",
+    icon_size = 256,
+    icon_mipmaps = 4,
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-bio-pesticide",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-protozoa",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-polysaccharide",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-tree-growing",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-leaf",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-fungi",
+      },
+    },
+    prerequisites = {
+      "biochamber"
+    },
+    unit = {
+      count = 100,
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-electronic-science-pack-1", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"production-science-pack", 1},
+        {"metallurgic-science-pack", 1},
+        {"electromagnetic-science-pack", 1}
+      },
+      time = 45,
+    },
+  },
+  {
+    type = "technology",
     name = "sp-magnesium-processing",  -- #ForRegEx# - technology
     icon_size = 256,
     icon = "__Spaghetorio__/graphics/hr-icons/magnesium-slab.png",

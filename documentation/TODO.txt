@@ -89,6 +89,7 @@ TODO for 0.3.9
   - Add Tetraethylene glycol dimethyl CH₃O-(CH₂CH₂O)₄-CH₃
     - synthesized by reacting tetraethylene glycol with a methylating agent, such as dimethyl sulfate or methyl iodide
   - add more uses for dimethyl-sulfide, dimethyl-sulfoxide and hydrogen-sulfide
+  - add spoling to items
     
   - Updated biological branch tier 1 and 2 of tech tree
     + herbarium
@@ -112,7 +113,7 @@ TODO for 0.3.9
         + algue
     + epoxy
       + biocrude-oil
-    - bio-pesticides
+    - bio-pesticide
       - protozoa
         - spoilage
       - fungi
@@ -125,6 +126,7 @@ TODO for 0.3.9
   - Add technology for pentapod eggs
 
 TODO for 0.3.10
+  - Add setting for spoiling for spaghetorio items
   - Add recipe biomass + algue = biocrude-oil
   - Fix category names such that they all start with sp-
   - Add water landfill
