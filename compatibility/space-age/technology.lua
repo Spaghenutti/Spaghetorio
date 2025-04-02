@@ -536,6 +536,22 @@ data.raw.technology["fish-breeding"].unit.ingredients = {
   {"electromagnetic-science-pack", 1}
 }
 
+table.insert(data.raw.technology["captivity"].effects, {type = "unlock-recipe", recipe = "pentapod-egg"})
+data.raw.technology["captivity"].prerequisites = {
+  "bacteria-cultivation"
+}
+data.raw.technology["captivity"].unit.ingredients = {
+  {"sp-automation-science-pack-2", 1},
+  {"logistic-science-pack", 1},
+  {"chemical-science-pack", 1},
+  {"sp-material-science-pack-2", 1},
+  {"sp-geological-science-pack-1", 1},
+  {"sp-electronic-science-pack-1", 1},
+  {"metallurgic-science-pack", 1},
+  {"electromagnetic-science-pack", 1},
+  {"agricultural-science-pack", 1}
+}
+
 data.raw.technology["toolbelt-equipment"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},
   {"sp-logistic-science-pack-2", 1},

@@ -83,10 +83,10 @@ TODO for 0.3.9
   + rename hurrican greenhouse to herbarium
   + rename wood-farm back to greenhouse
   + rename krastorio bio-lab to genetics-facility
-  - Add energy values for potato, wheat and stuff
+  + Add energy values for potato, wheat and stuff
   + Unlock freezer in biological tree and before cryogenic plant
   - Add more uses for dimethyl-sulfide, dimethyl-sulfoxide and hydrogen-sulfide
-  - Add spoling to items
+  + Add spoling to items
   - Add uses to bioflux
     
   + Updated biological branch tier 1 and 2 of tech tree
@@ -124,16 +124,19 @@ TODO for 0.3.9
   - Add technology for pentapod eggs
 
 TODO for 0.3.10
+  - Fix energy values of items
   - Fix herbarium technology icon
   - Add freezing recipes
   - Add setting for spoiling for spaghetorio items
-    - remove biochamber item, recipe and technology
-    - remove all freezing recipes
+    - Remove biochamber item, recipe and technology
+    - Remove all freezing recipes
   - Add setting for disabling required nutrients for biochamber
   - Add recipe biomass + algue = biocrude-oil
   - Fix category names such that they all start with sp-
+  - Categories and subgroups need locale (hover over generator building over the fuel slot)
   - Add water landfill
-  - move remove-prototypes.lua into util
+  - Move remove-prototypes.lua into util
+  - Rebalance damage values for munitions
 
 TODO for 0.3.11
   - Change incinerator back to gas-power-station

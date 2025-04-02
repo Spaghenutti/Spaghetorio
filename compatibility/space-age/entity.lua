@@ -30,6 +30,8 @@ data.raw.tool["agricultural-science-pack"].order = "j[agricultural-science-pack]
 data.raw.tool["cryogenic-science-pack"].order = "k[cryogenic-science-pack]"
 
 -- MARK: Change item subgroups
+data.raw.item["tree-seed"].subgroup = "basic-agriculture"
+
 -- group resource
 data.raw.item["calcite"].subgroup = "raw-resource"
 data.raw.item["holmium-ore"].subgroup = "raw-resource"

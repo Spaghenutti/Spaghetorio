@@ -62,6 +62,7 @@ Your factory will never be the same... because it’s going to need therapy. Enj
 ## Contributors
 
 - [S3BA](https://mods.factorio.com/user/S3BA) for polish translations
+- [rlcyyg1108](https://github.com/rlcyyg1108) for chinese translations
 - [Cyfagy](https://mods.factorio.com/user/Cyfagy) for building sounds
 
 ## Special Thanks

@@ -1687,6 +1687,17 @@ util.recipe.change_recipe_ingredients("offshore-pump",
 --------------------------------------------------------------------------------
 -- MARK: Military
 --------------------------------------------------------------------------------
+util.recipe.change_recipe_ingredients("gun-turret",
+  {
+    {type = "item", name = "iron-plate", amount = 10},
+    {type = "item", name = "sp-machined-parts", amount = 8},
+    {type = "item", name = "sp-bolts", amount = 12},
+    {type = "item", name = "sp-spring", amount = 4},
+    {type = "item", name = "electric-engine-unit", amount = 1},
+    {type = "item", name = "stone-brick", amount = 8},
+  },
+  6)
+
 util.recipe.change_recipe_ingredients("laser-turret",
   {
     {type = "item", name = "steel-plate", amount = 20},

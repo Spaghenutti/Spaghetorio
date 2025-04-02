@@ -201,9 +201,9 @@ util.recipe.change_recipe_ingredients("quality-module-3",
 
 util.recipe.change_recipe_ingredients("toolbelt-equipment",
   {
-    {type = "item", name = "advanced-circuit", amount = 3},
-    {type = "item", name = "sp-fabric", amount = 2},
-    {type = "item", name = "carbon-fiber", amount = 5}
+    {type = "item", name = "plastic-bar", amount = 3},
+    {type = "item", name = "sp-fabric", amount = 5},
+    {type = "item", name = "sp-insulation-sheet", amount = 2}
   },
   5)
 

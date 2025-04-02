@@ -4482,14 +4482,13 @@ data:extend({
     category = "oil-processing",
     enabled = false,
     allow_productivity = true,
-    energy_required = 4,
+    energy_required = 6,
     ingredients = {
-      {type = "item", name = "spoilage", amount = 2},
-      -- {type = "item", name = "jelly", amount = 5},
-      {type = "item", name = "sp-nickel-ingot", amount = 1}
+      {type = "item", name = "spoilage", amount = 1},
+      {type = "item", name = "sp-algae", amount = 3}
     },
     results = {
-      {type = "fluid", name = "sp-biocrude-oil", amount = 5}
+      {type = "fluid", name = "sp-biocrude-oil", amount = 10}
     }
   },
   {
@@ -6859,7 +6858,6 @@ data:extend({
     name = "sp-leaf",  -- #ForRegEx# - recipe
     icon = "__Spaghetorio__/graphics/icons/leaf-1.png",
     category = "wood-farming",
-    subgroup = "basic-agriculture",
     order = "b[nauvis-agriculture]-a[leaf]",
     enabled = false,
     allow_productivity = false,
@@ -11717,7 +11715,8 @@ data:extend({
     enabled = false,
     allow_productivity = true,
     ingredients = {
-      {type = "item", name = "sp-lithium-sulfur-battery", amount = 10},
+      {type = "item", name = "sp-servo-motor", amount = 10},
+      {type = "item", name = "sp-automation-core", amount = 8},
       {type = "item", name = "sp-glass-fiber", amount = 20},
       {type = "item", name = "sp-dynamo", amount = 2},
       {type = "item", name = "advanced-circuit", amount = 20},
