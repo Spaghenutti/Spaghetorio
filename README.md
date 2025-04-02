@@ -11,7 +11,7 @@ If you have some cool ideas you can give me feedback in the discussions section.
 
 Introducing the **Spaghetorio** mod for Factorio, where your factory is no longer a place of efficiency but a labyrinth of madness!
 
-Say goodbye to simple crafting trees and hello to a world where even the most basic item requires an epic saga of assembly steps. Want to build a express conveyor belt? You'll first need extract copper and zinc for making brass to combine it with rubber to build some dampeners, fallowed by crafting overcomplicated gearboxes and then you are machining the titanium frames while you are wondering if its rather worth to built the entire factory just with inserters. 
+Say goodbye to simple crafting trees and hello to a world where even the most basic item requires an epic saga of assembly steps. Want to build a express conveyor belt? You'll first need extract copper and zinc for making brass to combine it with rubber to build some dampeners, followed by crafting overcomplicated gearboxes and then you are machining the titanium frames while you are wondering if its rather worth to built the entire factory just with inserters. 
 
 Warning: This mod may lead to sudden outbursts of laughter (probably not), tears of despair (hopefully not), and the realization that you’ve spent three hours just trying to build a coil. Perfect for fans of over-engineering, unnecessary complexity, and anyone who thinks regular Factorio is too straightforward.
 
