@@ -846,6 +846,10 @@ util.recipe.change_recipe_ingredients("combat-shotgun",
   },
   6)
 
+data.raw.recipe["firearm-magazine"].results = {
+  {type = "item", name = "firearm-magazine", amount = 4}
+}
+
 util.recipe.change_recipe_ingredients("piercing-rounds-magazine",
   {
     {type = "item", name = "steel-plate", amount = 1},
@@ -854,6 +858,9 @@ util.recipe.change_recipe_ingredients("piercing-rounds-magazine",
     {type = "item", name = "carbon", amount = 1}
   },
   1.5)
+data.raw.recipe["piercing-rounds-magazine"].results = {
+  {type = "item", name = "piercing-rounds-magazine", amount = 4}
+}
 
 util.recipe.change_recipe_ingredients("uranium-rounds-magazine",
   {
