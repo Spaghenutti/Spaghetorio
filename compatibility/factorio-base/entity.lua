@@ -147,9 +147,9 @@ data.raw.item["oil-refinery"].stack_size = 50
 data.raw.item["train-stop"].stack_size = 50
 
 -- MARK: Energy production changes
-data.raw["accumulator"]["accumulator"].energy_sourc.buffer_capacity = "30MJ"
-data.raw["accumulator"]["accumulator"].energy_sourc.output_flow_limit = "3500kW"
-data.raw["accumulator"]["accumulator"].energy_sourc.output_flow_limit = "3500kW"
+data.raw["accumulator"]["accumulator"].energy_source.buffer_capacity = "30MJ"
+data.raw["accumulator"]["accumulator"].energy_source.output_flow_limit = "3500kW"
+data.raw["accumulator"]["accumulator"].energy_source.output_flow_limit = "3500kW"
 data.raw["solar-panel"]["solar-panel"].production = "1MW"
 
 -- MARK: change storage capacities
