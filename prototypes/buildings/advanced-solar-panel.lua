@@ -61,6 +61,6 @@ data:extend({
       },
     },
     vehicle_impact_sound = sounds.generic_impact,
-    production = "2500kW",
+    production = "25MW",
   },
 })
