@@ -8539,7 +8539,8 @@ data:extend({
     },
     prerequisites = {
       "biochamber",
-      "sp-compressor"
+      "sp-compressor",
+      "agricultural-science-pack"
     },
     unit = {
       count = 200,
@@ -8552,7 +8553,8 @@ data:extend({
         {"sp-geological-science-pack-2", 1},
         {"production-science-pack", 1},
         {"sp-metallurgic-science-pack-2", 1},
-        {"electromagnetic-science-pack", 1}
+        {"electromagnetic-science-pack", 1},
+        {"agricultural-science-pack", 1}
       },
       time = 45,
     },
