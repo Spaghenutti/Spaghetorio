@@ -4597,6 +4597,7 @@ data:extend({
     energy_required = 2.5,
     ingredients = {
       {type = "item", name = "sp-leaf", amount = 5},
+      {type = "fluid", name = "sp-dimethyl-sulfoxide", amount = 4},
       {type = "item", name = "yumako-mash", amount = 1}
     },
     results = {

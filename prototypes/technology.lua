@@ -1,6 +1,45 @@
 local util = require("data-util")
 local core_util = require("__core__.lualib.util")
 
+
+function util.technology_icon_constant_damage(technology_icon)
+  local icons =
+  {
+    {
+      icon = technology_icon,
+      icon_size = 256,
+    },
+    {
+      icon = "__core__/graphics/icons/technology/constants/constant-damage.png",
+      icon_size = 128,
+      scale = 0.5,
+      shift = {50, 50},
+      floating = true
+    }
+  }
+  return icons
+end
+
+
+function util.technology_icon_constant_speed(technology_icon)
+  local icons =
+  {
+    {
+      icon = technology_icon,
+      icon_size = 256,
+    },
+    {
+      icon = "__core__/graphics/icons/technology/constants/constant-speed.png",
+      icon_size = 128,
+      scale = 0.5,
+      shift = {50, 50},
+      floating = true
+    }
+  }
+  return icons
+end
+
+
 data:extend({
   {
     type = "technology",
@@ -11523,7 +11562,7 @@ data:extend({
   },
   {
     type = "technology",
-    name = "transport-belt-capacity-3",
+    name = "sp-transport-belt-capacity-3",  -- #ForRegEx# - infinite-technology
     localised_description = {"technology-description.belt-capacity"},
     icons = core_util.technology_icon_constant_stack_size("__space-age__/graphics/technology/transport-belt-capacity.png"),
     effects =
@@ -11563,7 +11602,7 @@ data:extend({
   },
   {
     type = "technology",
-    name = "transport-belt-capacity-4",
+    name = "sp-transport-belt-capacity-4",  -- #ForRegEx# - infinite-technology
     localised_description = {"technology-description.belt-capacity"},
     icons = core_util.technology_icon_constant_stack_size("__space-age__/graphics/technology/transport-belt-capacity.png"),
     effects =
@@ -11578,7 +11617,7 @@ data:extend({
       }
     },
     prerequisites = {
-      "transport-belt-capacity-3",
+      "sp-transport-belt-capacity-3",
       "sp-inserter-capacity-bonus-11"
     },
     unit =
@@ -11602,6 +11641,616 @@ data:extend({
       },
       time = 60
     },
+    upgrade = true
+  },
+  {
+    type = "technology",
+    name = "sp-physical-projectile-damage-1",  -- #ForRegEx# - infinite-technology
+    icons = util.technology_icon_constant_damage("__base__/graphics/technology/physical-projectile-damage-1.png"),
+    effects =
+    {
+      {
+        type = "ammo-damage",
+        ammo_category = "bullet",
+        modifier = 0.1
+      },
+      {
+        type = "turret-attack",
+        turret_id = "gun-turret",
+        modifier = 0.1
+      },
+      {
+        type = "ammo-damage",
+        ammo_category = "shotgun-shell",
+        modifier = 0.1
+      }
+    },
+    prerequisites = {"military"},
+    unit =
+    {
+      count_formula = "L*10",
+      ingredients =
+      {
+        {"automation-science-pack", 1}
+      },
+      time = 30
+    },
+    max_level = 2,
+  },
+  {
+    type = "technology",
+    name = "sp-physical-projectile-damage-3",  -- #ForRegEx# - infinite-technology
+    icons = util.technology_icon_constant_damage("__base__/graphics/technology/physical-projectile-damage-1.png"),
+    effects =
+    {
+      {
+        type = "ammo-damage",
+        ammo_category = "bullet",
+        modifier = 0.1
+      },
+      {
+        type = "turret-attack",
+        turret_id = "gun-turret",
+        modifier = 0.1
+      },
+      {
+        type = "ammo-damage",
+        ammo_category = "shotgun-shell",
+        modifier = 0.1
+      }
+    },
+    prerequisites = {
+      "sp-physical-projectile-damage-1",
+      "logistic-science-pack"
+    },
+    unit =
+    {
+      count_formula = "L*15",
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1}
+      },
+      time = 30
+    },
+    max_level = 4,
+    upgrade = true,
+  },
+  {
+    type = "technology",
+    name = "sp-physical-projectile-damage-5",  -- #ForRegEx# - infinite-technology
+    icons = util.technology_icon_constant_damage("__base__/graphics/technology/physical-projectile-damage-1.png"),
+    effects =
+    {
+      {
+        type = "ammo-damage",
+        ammo_category = "bullet",
+        modifier = 0.2
+      },
+      {
+        type = "turret-attack",
+        turret_id = "gun-turret",
+        modifier = 0.2
+      },
+      {
+        type = "ammo-damage",
+        ammo_category = "shotgun-shell",
+        modifier = 0.2
+      }
+    },
+    prerequisites = {
+      "sp-physical-projectile-damage-3",
+      "military-science-pack"
+    },
+    unit =
+    {
+      count_formula = "(L-4)*20",
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"military-science-pack", 1}
+      },
+      time = 60
+    },
+    max_level = 8,
+    upgrade = true
+  },
+  {
+    type = "technology",
+    name = "sp-physical-projectile-damage-9",  -- #ForRegEx# - infinite-technology
+    icons = util.technology_icon_constant_damage("__base__/graphics/technology/physical-projectile-damage-1.png"),
+    effects =
+    {
+      {
+        type = "ammo-damage",
+        ammo_category = "bullet",
+        modifier = 0.2
+      },
+      {
+        type = "turret-attack",
+        turret_id = "gun-turret",
+        modifier = 0.2
+      },
+      {
+        type = "ammo-damage",
+        ammo_category = "shotgun-shell",
+        modifier = 0.2
+      }
+    },
+    prerequisites = {
+      "sp-physical-projectile-damage-5",
+      "chemical-science-pack"
+    },
+    unit =
+    {
+      count_formula = "(L-8)*50",
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"military-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"sp-material-science-pack-1", 1}
+      },
+      time = 60
+    },
+    max_level = 12,
+    upgrade = true
+  },
+  {
+    type = "technology",
+    name = "sp-physical-projectile-damage-13",  -- #ForRegEx# - infinite-technology
+    icons = util.technology_icon_constant_damage("__base__/graphics/technology/physical-projectile-damage-2.png"),
+    effects =
+    {
+      {
+        type = "ammo-damage",
+        ammo_category = "bullet",
+        modifier = 0.2
+      },
+      {
+        type = "turret-attack",
+        turret_id = "gun-turret",
+        modifier = 0.2
+      },
+      {
+        type = "ammo-damage",
+        ammo_category = "shotgun-shell",
+        modifier = 0.2
+      },
+      {
+        type = "ammo-damage",
+        ammo_category = "cannon-shell",
+        modifier = 0.9
+      }
+    },
+    prerequisites = {
+      "sp-physical-projectile-damage-9",
+      "metallurgic-science-pack"
+    },
+    unit =
+    {
+      count_formula = "(L-12)*100",
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"military-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"sp-material-science-pack-1", 1},
+        {"sp-geological-science-pack-1", 1},
+        {"sp-electronic-science-pack-1", 1},
+        {"metallurgic-science-pack", 1}
+      },
+      time = 60
+    },
+    max_level = 20,
+    upgrade = true
+  },
+  {
+    type = "technology",
+    name = "sp-physical-projectile-damage-21",  -- #ForRegEx# - infinite-technology
+    icons = util.technology_icon_constant_damage("__base__/graphics/technology/physical-projectile-damage-2.png"),
+    effects =
+    {
+      {
+        type = "ammo-damage",
+        ammo_category = "bullet",
+        modifier = 0.4
+      },
+      {
+        type = "turret-attack",
+        turret_id = "gun-turret",
+        modifier = 0.4
+      },
+      {
+        type = "ammo-damage",
+        ammo_category = "shotgun-shell",
+        modifier = 0.4
+      },
+      {
+        type = "ammo-damage",
+        ammo_category = "cannon-shell",
+        modifier = 1.3
+      }
+    },
+    prerequisites = {
+      "sp-physical-projectile-damage-13",
+      "sp-military-science-pack-2",
+      "sp-electromagnetic-science-pack-2"
+    },
+    unit =
+    {
+      count_formula = "(L-20)*250",
+      ingredients =
+      {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-military-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"sp-metallurgic-science-pack-2", 1},
+        {"sp-electromagnetic-science-pack-2", 1},
+        {"production-science-pack", 1}
+      },
+      time = 60
+    },
+    max_level = 30,
+    upgrade = true
+  },
+  {
+    type = "technology",
+    name = "sp-physical-projectile-damage-31",  -- #ForRegEx# - infinite-technology
+    icons = util.technology_icon_constant_damage("__base__/graphics/technology/physical-projectile-damage-2.png"),
+    effects =
+    {
+      {
+        type = "ammo-damage",
+        ammo_category = "bullet",
+        modifier = 0.4
+      },
+      {
+        type = "turret-attack",
+        turret_id = "gun-turret",
+        modifier = 0.7
+      },
+      {
+        type = "ammo-damage",
+        ammo_category = "shotgun-shell",
+        modifier = 0.4
+      },
+      {
+        type = "ammo-damage",
+        ammo_category = "cannon-shell",
+        modifier = 1
+      }
+    },
+    prerequisites = {
+      "sp-physical-projectile-damage-21",
+      "sp-military-science-pack-3"
+    },
+    unit =
+    {
+      count_formula = "(L-30)*500",
+      ingredients =
+      {
+        {"sp-automation-science-pack-3", 1},
+        {"sp-logistic-science-pack-3", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-military-science-pack-3", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"sp-metallurgic-science-pack-2", 1},
+        {"sp-electromagnetic-science-pack-2", 1},
+        {"production-science-pack", 1}
+      },
+      time = 60
+    },
+    max_level = "infinite",
+    upgrade = true
+  },
+  {
+    type = "technology",
+    name = "sp-weapon-shooting-speed-1",  -- #ForRegEx# - infinite-technology
+    icons = util.technology_icon_constant_speed("__base__/graphics/technology/weapon-shooting-speed-1.png"),
+    effects =
+    {
+      {
+        type = "gun-speed",
+        ammo_category = "bullet",
+        modifier = 0.1
+      },
+      {
+        type = "gun-speed",
+        ammo_category = "shotgun-shell",
+        modifier = 0.1
+      }
+    },
+    prerequisites = {"military"},
+    unit =
+    {
+      count_formula = "L*10",
+      ingredients =
+      {
+        {"automation-science-pack", 1}
+      },
+      time = 30
+    },
+    max_level = 2,
+  },
+  {
+    type = "technology",
+    name = "sp-weapon-shooting-speed-3",  -- #ForRegEx# - infinite-technology
+    icons = util.technology_icon_constant_speed("__base__/graphics/technology/weapon-shooting-speed-1.png"),
+    effects =
+    {
+      {
+        type = "gun-speed",
+        ammo_category = "bullet",
+        modifier = 0.2
+      },
+      {
+        type = "gun-speed",
+        ammo_category = "shotgun-shell",
+        modifier = 0.2
+      }
+    },
+    prerequisites = {
+      "sp-weapon-shooting-speed-1",
+      "logistic-science-pack"
+    },
+    unit =
+    {
+      count_formula = "L*15",
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1}
+      },
+      time = 30
+    },
+    max_level = 4,
+    upgrade = true,
+  },
+  {
+    type = "technology",
+    name = "sp-weapon-shooting-speed-5",  -- #ForRegEx# - infinite-technology
+    icons = util.technology_icon_constant_speed("__base__/graphics/technology/weapon-shooting-speed-2.png"),
+    effects =
+    {
+      {
+        type = "gun-speed",
+        ammo_category = "bullet",
+        modifier = 0.2
+      },
+      {
+        type = "gun-speed",
+        ammo_category = "shotgun-shell",
+        modifier = 0.2
+      },
+      {
+        type = "gun-speed",
+        ammo_category = "rocket",
+        modifier = 0.5
+      }
+    },
+    prerequisites = {
+      "sp-weapon-shooting-speed-3",
+      "military-science-pack"
+    },
+    unit =
+    {
+      count_formula = "(L-4)*20",
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"military-science-pack", 1}
+      },
+      time = 60
+    },
+    max_level = 8,
+    upgrade = true
+  },
+  {
+    type = "technology",
+    name = "sp-weapon-shooting-speed-9",  -- #ForRegEx# - infinite-technology
+    icons = util.technology_icon_constant_speed("__base__/graphics/technology/weapon-shooting-speed-2.png"),
+    effects =
+    {
+      {
+        type = "gun-speed",
+        ammo_category = "bullet",
+        modifier = 0.3
+      },
+      {
+        type = "gun-speed",
+        ammo_category = "shotgun-shell",
+        modifier = 0.3
+      },
+      {
+        type = "gun-speed",
+        ammo_category = "rocket",
+        modifier = 0.7
+      }
+    },
+    prerequisites = {
+      "sp-weapon-shooting-speed-5",
+      "chemical-science-pack"
+    },
+    unit =
+    {
+      count_formula = "(L-8)*50",
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"military-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"sp-material-science-pack-1", 1}
+      },
+      time = 60
+    },
+    max_level = 12,
+    upgrade = true
+  },
+  {
+    type = "technology",
+    name = "sp-weapon-shooting-speed-13",  -- #ForRegEx# - infinite-technology
+    icons = util.technology_icon_constant_speed("__base__/graphics/technology/weapon-shooting-speed-3.png"),
+    effects =
+    {
+      {
+        type = "gun-speed",
+        ammo_category = "bullet",
+        modifier = 0.3
+      },
+      {
+        type = "gun-speed",
+        ammo_category = "shotgun-shell",
+        modifier = 0.4
+      },
+      {
+        type = "gun-speed",
+        ammo_category = "cannon-shell",
+        modifier = 0.8
+      },
+      {
+        type = "gun-speed",
+        ammo_category = "rocket",
+        modifier = 0.9
+      }
+    },
+    prerequisites = {
+      "sp-weapon-shooting-speed-9",
+      "metallurgic-science-pack"
+    },
+    unit =
+    {
+      count_formula = "(L-12)*100",
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"military-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"sp-material-science-pack-1", 1},
+        {"sp-geological-science-pack-1", 1},
+        {"sp-electronic-science-pack-1", 1},
+        {"metallurgic-science-pack", 1}
+      },
+      time = 60
+    },
+    max_level = 20,
+    upgrade = true
+  },
+  {
+    type = "technology",
+    name = "sp-weapon-shooting-speed-21",  -- #ForRegEx# - infinite-technology
+    icons = util.technology_icon_constant_speed("__base__/graphics/technology/weapon-shooting-speed-3.png"),
+    effects =
+    {
+      {
+        type = "gun-speed",
+        ammo_category = "bullet",
+        modifier = 0.4
+      },
+      {
+        type = "gun-speed",
+        ammo_category = "shotgun-shell",
+        modifier = 0.4
+      },
+      {
+        type = "gun-speed",
+        ammo_category = "cannon-shell",
+        modifier = 1.5
+      },
+      {
+        type = "gun-speed",
+        ammo_category = "rocket",
+        modifier = 1.3
+      }
+    },
+    prerequisites = {
+      "sp-weapon-shooting-speed-13",
+      "sp-military-science-pack-2",
+      "sp-electromagnetic-science-pack-2"
+    },
+    unit =
+    {
+      count_formula = "(L-20)*250",
+      ingredients =
+      {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-military-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"sp-metallurgic-science-pack-2", 1},
+        {"sp-electromagnetic-science-pack-2", 1},
+        {"production-science-pack", 1}
+      },
+      time = 60
+    },
+    max_level = 30,
+    upgrade = true
+  },
+    {
+    type = "technology",
+    name = "sp-weapon-shooting-speed-31",  -- #ForRegEx# - infinite-technology
+    icons = util.technology_icon_constant_speed("__base__/graphics/technology/weapon-shooting-speed-3.png"),
+    effects =
+    {
+      {
+        type = "gun-speed",
+        ammo_category = "bullet",
+        modifier = 0.4
+      },
+      {
+        type = "gun-speed",
+        ammo_category = "shotgun-shell",
+        modifier = 0.4
+      },
+      {
+        type = "gun-speed",
+        ammo_category = "cannon-shell",
+        modifier = 1.5
+      },
+      {
+        type = "gun-speed",
+        ammo_category = "rocket",
+        modifier = 1.3
+      }
+    },
+    prerequisites = {
+      "sp-weapon-shooting-speed-21",
+      "sp-military-science-pack-3"
+    },
+    unit =
+    {
+      count_formula = "(L-30)*500",
+      ingredients =
+      {
+        {"sp-automation-science-pack-3", 1},
+        {"sp-logistic-science-pack-3", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-military-science-pack-3", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"sp-metallurgic-science-pack-2", 1},
+        {"sp-electromagnetic-science-pack-2", 1},
+        {"production-science-pack", 1}
+      },
+      time = 60
+    },
+    max_level = "infinite",
     upgrade = true
   },
 })

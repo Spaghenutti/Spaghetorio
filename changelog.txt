@@ -12,7 +12,9 @@ Date: 2025-04-04
     - Pressure tube now also requires seal
     - Updated gun turret recipe
   Balancing:
-    - magazines and shotgun shells do now much more damage
+    - Magazines and shotgun shells do now much more damage
+    - Weapon damage and shooting speed technologies have many more tiers and provide stronger bonuses
+    - I intend to add more military balancing in the future (for now firearms are op compared to anything else)
   Bugfixes:
     - Enriching crushed iron ore now correctly produces enriched iron
     - Carbon fiber can be now produced in chemical plant
