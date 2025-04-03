@@ -5892,7 +5892,7 @@ data:extend({
     order = "nuclear[plutonium-fuel-rod]",
     fuel_category = "nuclear",
     burnt_result = "sp-used-up-fuel-rod",
-    fuel_value = "900GJ",
+    fuel_value = "400GJ",
     stack_size = 50
   },
   {
@@ -5968,7 +5968,7 @@ data:extend({
       },
     },
     fuel_category = "sp-kr-antimatter-fuel",
-    fuel_value = "5000GJ",
+    fuel_value = "10000GJ",
     burnt_result = "sp-empty-antimatter-fuel-cell",
     subgroup = "fuel-processing",
     order = "antimatter-z[charged-antimatter-fuel-cell]",
@@ -6019,7 +6019,7 @@ data:extend({
       },
     },
     fuel_category = "fusion",
-    fuel_value = "400GJ",
+    fuel_value = "2000GJ",
     burnt_result = "sp-empty-dt-fuel",
     subgroup = "fuel-processing",
     order = "fusion-[dt-fuel]",
