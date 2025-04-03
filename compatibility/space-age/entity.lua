@@ -68,7 +68,7 @@ data.raw.tool["cryogenic-science-pack"].subgroup = "intermediate-science"
 data.raw.tool["promethium-science-pack"].subgroup = "futuristic-science"
 
 -- MARK: Change fuel values
-data.raw.item["carbon"].fuel_value = "4MJ"
+data.raw.item["carbon"].fuel_value = "20MJ"
 
 -- MARK: stack size
 data.raw.item["calcite"].stack_size = 200

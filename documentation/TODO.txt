@@ -142,6 +142,7 @@ TODO for 0.3.10
 TODO for 0.3.11
   - Change incinerator back to gas-power-station
   - Use thermal plant from hurricane as incinerator
+  - Add krastorio turbine as water turbine
 
 TODO for 0.3.12
   - Update nuclear science pack recipe chain

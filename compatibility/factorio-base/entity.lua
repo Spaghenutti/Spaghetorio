@@ -146,6 +146,9 @@ data.raw.item["chemical-plant"].stack_size = 50
 data.raw.item["oil-refinery"].stack_size = 50
 data.raw.item["train-stop"].stack_size = 50
 
+-- MARK: Energy production changes
+data.raw["solar-panel"]["solar-panel"].production = "1MW"
+
 -- MARK: change storage capacities
 data.raw["storage-tank"]["storage-tank"].fluid_box.volume = 50000
 

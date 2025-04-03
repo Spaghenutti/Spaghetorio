@@ -1143,7 +1143,7 @@ data:extend({
     },
     subgroup = "processed-resource",
     fuel_category = "chemical",
-    fuel_value = "6MJ",
+    fuel_value = "30MJ",
     order = "[coke]",
     stack_size = 200
   },
@@ -1824,7 +1824,7 @@ data:extend({
     },
     subgroup = "raw-material",
     order = "a-plate-1-[wooden-board]",
-    fuel_value = "0.2MJ",
+    fuel_value = "1MJ",
     fuel_category = "chemical",
     stack_size = 100
   },
@@ -1842,7 +1842,7 @@ data:extend({
     },
     subgroup = "raw-material",
     order = "wood-[wooden-pole]",
-    fuel_value = "1MJ",
+    fuel_value = "5MJ",
     fuel_category = "chemical",
     stack_size = 100
   },
@@ -1854,7 +1854,7 @@ data:extend({
     scale = 0.5,
     subgroup = "raw-material",
     order = "wood-[wood-chips]",
-    fuel_value = "0.1MJ",
+    fuel_value = "0.5MJ",
     fuel_category = "chemical",
     stack_size = 100
   },
@@ -4969,7 +4969,7 @@ data:extend({
       {size = 64, filename = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/biomass/biomass-3.png", scale = 0.5, mipmap_count = 4},
     },
     fuel_category = "chemical",
-    fuel_value = "2MJ",
+    fuel_value = "15MJ",
     fuel_emissions_multiplier = 0.8,
     fuel_acceleration_multiplier = 0.8,
     fuel_top_speed_multiplier = 0.8,
@@ -5820,7 +5820,7 @@ data:extend({
     subgroup = "fuel-processing",
     order = "b[chemistry]-b[wood-fuel]",
     fuel_category = "chemical",
-    fuel_value = "8MJ",
+    fuel_value = "50MJ",
     stack_size = 100
   },
   {
@@ -5832,7 +5832,7 @@ data:extend({
     subgroup = "fuel-processing",
     order = "b[chemistry]-b[fuel]",
     fuel_category = "chemical",
-    fuel_value = "20MJ",
+    fuel_value = "120MJ",
     stack_size = 100
   },
   {
@@ -5844,7 +5844,7 @@ data:extend({
     subgroup = "fuel-processing",
     order = "b[chemistry]-b[bio-fuel]",
     fuel_category = "chemical",
-    fuel_value = "20MJ",
+    fuel_value = "200MJ",
     stack_size = 100
   },
   {
@@ -5856,7 +5856,7 @@ data:extend({
     subgroup = "fuel-processing",
     order = "b[chemistry]-c[advanced-fuel]",
     fuel_category = "chemical",
-    fuel_value = "60MJ",
+    fuel_value = "500MJ",
     stack_size = 100
   },
   {
@@ -5879,7 +5879,7 @@ data:extend({
     order = "nuclear[uranium-fuel-rod]",
     fuel_category = "nuclear",
     burnt_result = "sp-used-up-fuel-rod",
-    fuel_value = "50GJ",
+    fuel_value = "150GJ",
     stack_size = 50
   },
   {
@@ -5892,7 +5892,7 @@ data:extend({
     order = "nuclear[plutonium-fuel-rod]",
     fuel_category = "nuclear",
     burnt_result = "sp-used-up-fuel-rod",
-    fuel_value = "300GJ",
+    fuel_value = "900GJ",
     stack_size = 50
   },
   {
@@ -5968,7 +5968,7 @@ data:extend({
       },
     },
     fuel_category = "sp-kr-antimatter-fuel",
-    fuel_value = "300GJ",
+    fuel_value = "5000GJ",
     burnt_result = "sp-empty-antimatter-fuel-cell",
     subgroup = "fuel-processing",
     order = "antimatter-z[charged-antimatter-fuel-cell]",
@@ -6019,7 +6019,7 @@ data:extend({
       },
     },
     fuel_category = "fusion",
-    fuel_value = "40GJ",
+    fuel_value = "400GJ",
     burnt_result = "sp-empty-dt-fuel",
     subgroup = "fuel-processing",
     order = "fusion-[dt-fuel]",

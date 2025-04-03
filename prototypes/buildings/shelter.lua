@@ -76,7 +76,7 @@ data:extend({
       render_no_power_icon = false,
       render_no_network_icon = false,
     },
-    energy_production = "120kW",
+    energy_production = "1200kW",
   },
   -- Shelter
   {

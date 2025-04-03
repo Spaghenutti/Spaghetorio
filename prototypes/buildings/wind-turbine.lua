@@ -71,7 +71,7 @@ data:extend({
       orientation_to_variation = false,
     },
 
-    energy_production = "20kW",
+    energy_production = "200kW",
     -- energy_usage = "0kW",
     animation = {
       layers = {
