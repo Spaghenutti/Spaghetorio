@@ -121,7 +121,7 @@ TODO for 0.3.9
           + trees
         + dimethyl-sulfoxide
 
-  - Add technology for pentapod eggs
+  + Add technology for pentapod eggs
 
 TODO for 0.3.10
   - Fix energy values of items
@@ -163,7 +163,7 @@ TODO for 0.3.13
 TODO for 0.3.14
   - Change lightning collectors to power poles
   - Fix / add casting recipes
-  - Fix productivity tehnologies (see steel plate productivity)
+  - Fix productivity technologies (see steel plate productivity)
 
 TODO for 0.3.15
   - Add recipe chains for core mining

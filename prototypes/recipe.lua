@@ -11047,9 +11047,19 @@ data:extend({
     category = "crafting",
     enabled = false,
     allow_productivity = true,
-    energy_required = 69,
+    energy_required = 40,
     ingredients = {
-      {type = "item", name = "iron-plate", amount = 69},
+      {type = "item", name = "sp-maraging-steel", amount = 30},
+      {type = "item", name = "sp-elgiloy", amount = 8},
+      {type = "item", name = "sp-duralumin", amount = 20},
+      {type = "item", name = "sp-insulation-sheet", amount = 12},
+      {type = "item", name = "sp-bolts", amount = 40},
+      {type = "item", name = "advanced-circuit", amount = 6},
+      {type = "item", name = "sp-compressor", amount = 1},
+      {type = "item", name = "sp-plate-heat-exchanger", amount = 8},
+      {type = "item", name = "sp-pressure-valve", amount = 4},
+      {type = "item", name = "electric-engine-unit", amount = 4},
+      {type = "item", name = "refined-concrete", amount = 16},
     },
     results = {
       {type = "item", name = "sp-freezer", amount = 1}
