@@ -14,6 +14,7 @@ Date: 2025-04-04
   Balancing:
     - Increased fuel values by 5
     - Increased energy production by 5 or more of all power generation buildings
+    - Inserters require less energy
     - Magazines and shotgun shells do now much more damage
     - Weapon damage and shooting speed technologies have many more tiers and provide stronger bonuses
     - I intend to add more military balancing in the future (for now firearms are op compared to anything else)

@@ -146,6 +146,22 @@ data.raw.item["chemical-plant"].stack_size = 50
 data.raw.item["oil-refinery"].stack_size = 50
 data.raw.item["train-stop"].stack_size = 50
 
+-- MARK: Inserter changes
+data.raw["inserter"]["burner-inserter"].energy_per_movement = "10kJ"
+data.raw["inserter"]["burner-inserter"].energy_per_rotation = "10kJ"
+data.raw["inserter"]["inserter"].energy_per_movement = "1kJ"
+data.raw["inserter"]["inserter"].energy_per_rotation = "1kJ"
+data.raw["inserter"]["inserter"].energy_source.drain = "0.1kJ"
+data.raw["inserter"]["long-handed-inserter"].energy_per_movement = "1.5kJ"
+data.raw["inserter"]["long-handed-inserter"].energy_per_rotation = "1.5kJ"
+data.raw["inserter"]["long-handed-inserter"].energy_source.drain = "0.1kJ"
+data.raw["inserter"]["fast-inserter"].energy_per_movement = "2kJ"
+data.raw["inserter"]["fast-inserter"].energy_per_rotation = "2kJ"
+data.raw["inserter"]["fast-inserter"].energy_source.drain = "0.1kJ"
+data.raw["inserter"]["bulk-inserter"].energy_per_movement = "6kJ"
+data.raw["inserter"]["bulk-inserter"].energy_per_rotation = "6kJ"
+data.raw["inserter"]["bulk-inserter"].energy_source.drain = "0.1kJ"
+
 -- MARK: Energy production changes
 data.raw["accumulator"]["accumulator"].energy_source.buffer_capacity = "30MJ"
 data.raw["accumulator"]["accumulator"].energy_source.output_flow_limit = "3500kW"

@@ -84,6 +84,11 @@ data.raw.tool["promethium-science-pack"].stack_size = 50
 
 data.raw.item["crusher"].stack_size = 50
 
+-- MARK: Inserter changes
+data.raw["inserter"]["stack-inserter"].energy_per_movement = "15kJ"
+data.raw["inserter"]["stack-inserter"].energy_per_rotation = "15kJ"
+data.raw["inserter"]["stack-inserter"].energy_source.drain = "0.1kJ"
+
 -- MARK: Equipment changes
 data.raw["generator-equipment"]["fusion-reactor-equipment"].power = "20MW"
 
