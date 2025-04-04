@@ -4657,7 +4657,7 @@ data:extend({
       {size = 64, filename = "__base__/graphics/icons/tree-04.png", scale = 0.5, mipmap_count = 4}
     },
     scale = 0.5,
-    subgroup = "basic-agriculture",
+    subgroup = "sp-basic-agriculture",
     order = "[tree]",
     stack_size = 50,
   },
@@ -4676,7 +4676,7 @@ data:extend({
     weight = 0.1 * kg,
     spoil_ticks = 12 * minute,
     spoil_result = "spoilage",
-    subgroup = "basic-agriculture",
+    subgroup = "sp-basic-agriculture",
     order = "[leaf]",
     stack_size = 50
   },

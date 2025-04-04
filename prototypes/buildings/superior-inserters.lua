@@ -129,8 +129,8 @@ data:extend({
     selection_box = { { -0.4, -0.35 }, { 0.4, 0.45 } },
     pickup_position = { 0, -2 },
     insert_position = { 0, 2.2 },
-    energy_per_movement = "13kJ",
-    energy_per_rotation = "13kJ",
+    energy_per_movement = "50kJ",
+    energy_per_rotation = "50kJ",
     energy_source = {
       type = "electric",
       usage_priority = "secondary-input",

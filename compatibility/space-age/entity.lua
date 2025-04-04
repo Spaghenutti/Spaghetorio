@@ -30,7 +30,7 @@ data.raw.tool["agricultural-science-pack"].order = "j[agricultural-science-pack]
 data.raw.tool["cryogenic-science-pack"].order = "k[cryogenic-science-pack]"
 
 -- MARK: Change item subgroups
-data.raw.item["tree-seed"].subgroup = "basic-agriculture"
+data.raw.item["tree-seed"].subgroup = "sp-basic-agriculture"
 
 -- group resource
 data.raw.item["calcite"].subgroup = "raw-resource"
@@ -98,4 +98,4 @@ data.raw["item-subgroup"]["agriculture-products"].group = "sp-biology"
 data.raw["item-subgroup"]["nauvis-agriculture"].group = "sp-biology"
 
 -- MARK: localized name
-data.raw.tool["agricultural-science-pack"].localized_name = {"custom-localization.biological-science-pack"}
+data.raw.tool["agricultural-science-pack"].localised_name = {"custom-localization.biological-science-pack"}

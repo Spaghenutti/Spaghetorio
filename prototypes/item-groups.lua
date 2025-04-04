@@ -434,9 +434,15 @@ data:extend({
   },
   {
     type = "item-subgroup",
-    name = "basic-agriculture",
+    name = "sp-basic-agriculture",
     group = "sp-biology",
     order = "a"
+  },
+  {
+    type = "item-subgroup",
+    name = "sp-frozen",
+    group = "sp-biology",
+    order = "z"
   },
   ------------------------------------------------------------------------------
   -- MARK: other

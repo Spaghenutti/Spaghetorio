@@ -1,7 +1,8 @@
 
 local util = require("data-util")
 
-util.recipe.generate_fluid_venting_recipes()
+util.item.add_frozen_items()
+util.recipe.add_fluid_venting_recipes()
 
 -- -- Remove when updating file is done
 -- require("prototypes.recipe-changes")

@@ -12,4 +12,14 @@ function data_util.table_contains(table, value_to_search)
   return false
 end
 
+function data_util.value_in_array(value, array)
+  for _, entry in ipairs(array) do
+    if value == entry then
+      return true
+    end
+  end
+
+  return false
+end
+
 return data_util

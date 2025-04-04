@@ -1,6 +1,6 @@
 {
     "name": "Spaghetorio",
-    "version": "0.3.9",
+    "version": "0.3.10",
     "title": "Spaghetorio",
     "description": "Adds lots of new ores, items, buildings and technologies",
     "author": "Spaghetti",
@@ -9,7 +9,7 @@
     "space_travel_required": true,
     "dependencies": ["base >= 2.0.42",
                      "space-age >= 2.0.42",
-                     "SpaghetorioGraphics1 = 0.0.3",
+                     "SpaghetorioGraphics1 = 0.0.4",
                      "EverythingOnNauvis = 0.1.6",
                      "? aai-containers >= 0.3.1",
                      "! Custom-Production-UI-Fixed >= 0.5.22"]

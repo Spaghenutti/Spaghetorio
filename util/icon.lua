@@ -253,4 +253,14 @@ function data_util.create_enriching_recipe_icon(resource, enriched_resource)
   return icons
 end
 
+function data_util.create_frozen_item_icon(item)
+  icons = {
+    {icon = "__Spaghetorio__/graphics/overlay/ice.png", icon_size = 64, scale = 0.5},
+    {icon = item.icon, icon_size = item.icon_size, scale = 0.4},
+    {icon = "__Spaghetorio__/graphics/overlay/ice-overlay.png", icon_size = 64, scale = 0.5},
+  }
+
+  return icons
+end
+
 return data_util
