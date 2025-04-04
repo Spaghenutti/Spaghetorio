@@ -279,7 +279,7 @@ data.raw.tool["production-science-pack"].pictures = {
 data.raw.tool["utility-science-pack"].icon = "__Spaghetorio__/graphics/icons/utility-science-pack-2.png"
 
 data.raw.tool["space-science-pack"].icon = "__Spaghetorio__/graphics/krastorio/icons/cards/matter-tech-card.png"
-data.raw.tool["space-science-pack"].subgroup = "intermediate-science"
+data.raw.tool["space-science-pack"].subgroup = "sp-intermediate-science"
 data.raw.tool["space-science-pack"].pictures = {
   layers = {
     {

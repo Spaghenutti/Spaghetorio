@@ -46,8 +46,8 @@ data.raw.recipe["carbon-fiber"].subgroup = "advanced-raw-material"
 data.raw.recipe["steam-condensation"].subgroup = "fluid"
 data.raw.recipe["ice-melting"].subgroup = "fluid"
 
-data.raw.recipe["holmium-solution"].subgroup = "solution"
-data.raw.recipe["ammoniacal-solution-separation"].subgroup = "solution"
+data.raw.recipe["holmium-solution"].subgroup = "sp-solution"
+data.raw.recipe["ammoniacal-solution-separation"].subgroup = "sp-solution"
 
 --------------------------------------------------------------------------------
 -- MARK: change recipe categories

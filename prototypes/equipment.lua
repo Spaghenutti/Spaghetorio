@@ -46,7 +46,7 @@ data:extend({
     },
     -- TODO: add functionality for burning input
     -- burner = {
-    --   fuel_categories = {"chemical", "vehicle-fuel"},
+    --   fuel_categories = {"sp-chemical", "vehicle-fuel"},
     --   effectivity = 2,
     --   fuel_inventory_size = 2,
     --   burnt_inventory_size = 1,

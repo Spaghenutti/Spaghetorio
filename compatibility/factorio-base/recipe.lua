@@ -2,11 +2,11 @@
 local util = require("data-util")
 
 -- Change subgroups
-data.raw.recipe["solid-fuel-from-light-oil"].subgroup = "fuel-processing"
+data.raw.recipe["solid-fuel-from-light-oil"].subgroup = "sp-fuel-processing"
 data.raw.recipe["solid-fuel-from-light-oil"].hide_from_player_crafting = true
-data.raw.recipe["solid-fuel-from-heavy-oil"].subgroup = "fuel-processing"
+data.raw.recipe["solid-fuel-from-heavy-oil"].subgroup = "sp-fuel-processing"
 data.raw.recipe["solid-fuel-from-heavy-oil"].hide_from_player_crafting = true
-data.raw.recipe["solid-fuel-from-petroleum-gas"].subgroup = "fuel-processing"
+data.raw.recipe["solid-fuel-from-petroleum-gas"].subgroup = "sp-fuel-processing"
 
 -- Lock items for game start
 util.recipe.disable_recipe("iron-stick")
@@ -23,7 +23,7 @@ data.raw.recipe["heavy-oil-cracking"].subgroup = "fluid"
 data.raw.recipe["light-oil-cracking"].subgroup = "fluid"
 data.raw.recipe["coal-liquefaction"].subgroup = "fluid"
 
-data.raw.recipe["sulfuric-acid"].subgroup = "chemical"
+data.raw.recipe["sulfuric-acid"].subgroup = "sp-chemical"
 
 data.raw.recipe["nuclear-fuel-reprocessing"].subgroup = "radioactive-resource"
 data.raw.recipe["uranium-processing"].subgroup = "radioactive-resource"

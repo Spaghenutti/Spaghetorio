@@ -51,21 +51,21 @@ data.raw.item["tungsten-carbide"].subgroup = "ceramic"
 data.raw.item["carbon-fiber"].subgroup = "advanced-raw-material"
 
 -- group intermediates
-data.raw.item["supercapacitor"].subgroup = "electronic-optical-component"
+data.raw.item["supercapacitor"].subgroup = "sp-electronic-optical-component"
 
-data.raw.item["superconductor"].subgroup = "advanced-intermediate-product"
+data.raw.item["superconductor"].subgroup = "sp-advanced-intermediate-product"
 
-data.raw.item["quantum-processor"].subgroup = "advanced-intermediate-product"
+data.raw.item["quantum-processor"].subgroup = "sp-advanced-intermediate-product"
 
 -- group production
 data.raw.item["crusher"].subgroup = "production-machine"
 
 -- group science
-data.raw.tool["metallurgic-science-pack"].subgroup = "basic-science"
-data.raw.tool["electromagnetic-science-pack"].subgroup = "basic-science"
-data.raw.tool["agricultural-science-pack"].subgroup = "intermediate-science"
-data.raw.tool["cryogenic-science-pack"].subgroup = "intermediate-science"
-data.raw.tool["promethium-science-pack"].subgroup = "futuristic-science"
+data.raw.tool["metallurgic-science-pack"].subgroup = "sp-basic-science"
+data.raw.tool["electromagnetic-science-pack"].subgroup = "sp-basic-science"
+data.raw.tool["agricultural-science-pack"].subgroup = "sp-intermediate-science"
+data.raw.tool["cryogenic-science-pack"].subgroup = "sp-intermediate-science"
+data.raw.tool["promethium-science-pack"].subgroup = "sp-futuristic-science"
 
 -- MARK: Change fuel values
 data.raw.item["carbon"].fuel_value = "20MJ"

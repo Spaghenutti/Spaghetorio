@@ -10,13 +10,13 @@ data.raw.recipe["casting-steel"].subgroup = "casting-raw-material"
 data.raw.recipe["casting-copper"].subgroup = "casting-raw-material"
 
 -- group intermediates
-data.raw.recipe["casting-iron-gear-wheel"].subgroup = "casting-mechanical-component"
-data.raw.recipe["casting-iron-stick"].subgroup = "casting-mechanical-component"
-data.raw.recipe["casting-copper-cable"].subgroup = "casting-mechanical-component"
-data.raw.recipe["casting-low-density-structure"].subgroup = "casting-mechanical-component"
-data.raw.recipe["casting-pipe"].subgroup = "casting-mechanical-component"
-data.raw.recipe["casting-pipe-to-ground"].subgroup = "casting-mechanical-component"
-data.raw.recipe["concrete-from-molten-iron"].subgroup = "casting-mechanical-component"
+data.raw.recipe["casting-iron-gear-wheel"].subgroup = "sp-casting-mechanical-component"
+data.raw.recipe["casting-iron-stick"].subgroup = "sp-casting-mechanical-component"
+data.raw.recipe["casting-copper-cable"].subgroup = "sp-casting-mechanical-component"
+data.raw.recipe["casting-low-density-structure"].subgroup = "sp-casting-mechanical-component"
+data.raw.recipe["casting-pipe"].subgroup = "sp-casting-mechanical-component"
+data.raw.recipe["casting-pipe-to-ground"].subgroup = "sp-casting-mechanical-component"
+data.raw.recipe["concrete-from-molten-iron"].subgroup = "sp-casting-mechanical-component"
 
 -- MARK: Fix order... agane...
 data.raw["autoplace-control"]["sulfuric_acid_geyser"].order = "c[sulfuric-acid-geyser]"

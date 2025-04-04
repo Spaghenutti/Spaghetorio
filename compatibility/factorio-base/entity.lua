@@ -81,45 +81,45 @@ data.raw.item["low-density-structure"].subgroup = "advanced-raw-material"
 
 data.raw.item["plastic-bar"].subgroup = "chemical-product"
 
-data.raw.item["copper-cable"].subgroup = "mechanical-component"
-data.raw.item["iron-stick"].subgroup = "mechanical-component"
-data.raw.item["iron-gear-wheel"].subgroup = "mechanical-component"
-data.raw.item["low-density-structure"].subgroup = "mechanical-component"
+data.raw.item["copper-cable"].subgroup = "sp-mechanical-component"
+data.raw.item["iron-stick"].subgroup = "sp-mechanical-component"
+data.raw.item["iron-gear-wheel"].subgroup = "sp-mechanical-component"
+data.raw.item["low-density-structure"].subgroup = "sp-mechanical-component"
 
-data.raw.item["electronic-circuit"].subgroup = "electronic-optical-component"
-data.raw.item["advanced-circuit"].subgroup = "electronic-optical-component"
-data.raw.item["processing-unit"].subgroup = "electronic-optical-component"  -- idea: use this as processor and change icon
-data.raw.item["battery"].subgroup = "electronic-optical-component"
+data.raw.item["electronic-circuit"].subgroup = "sp-electronic-optical-component"
+data.raw.item["advanced-circuit"].subgroup = "sp-electronic-optical-component"
+data.raw.item["processing-unit"].subgroup = "sp-electronic-optical-component"  -- idea: use this as processor and change icon
+data.raw.item["battery"].subgroup = "sp-electronic-optical-component"
 
-data.raw.item["solid-fuel"].subgroup = "fuel-processing"
-data.raw.item["rocket-fuel"].subgroup = "fuel-processing"
-data.raw.item["nuclear-fuel"].subgroup = "fuel-processing"
-data.raw.item["uranium-fuel-cell"].subgroup = "fuel-processing"
-data.raw.item["depleted-uranium-fuel-cell"].subgroup = "fuel-processing"
+data.raw.item["solid-fuel"].subgroup = "sp-fuel-processing"
+data.raw.item["rocket-fuel"].subgroup = "sp-fuel-processing"
+data.raw.item["nuclear-fuel"].subgroup = "sp-fuel-processing"
+data.raw.item["uranium-fuel-cell"].subgroup = "sp-fuel-processing"
+data.raw.item["depleted-uranium-fuel-cell"].subgroup = "sp-fuel-processing"
 
 data.raw.item["explosives"].subgroup = "ammo"
 
 -- MARK: Change fluid subgroups
-data.raw.fluid["water"].subgroup = "aqueous-fluid"
+data.raw.fluid["water"].subgroup = "sp-aqueous-fluid"
 
-data.raw.fluid["crude-oil"].subgroup = "oil"
-data.raw.fluid["petroleum-gas"].subgroup = "oil"
-data.raw.fluid["heavy-oil"].subgroup = "oil"
-data.raw.fluid["light-oil"].subgroup = "oil"
-data.raw.fluid["lubricant"].subgroup = "oil"
+data.raw.fluid["crude-oil"].subgroup = "sp-oil"
+data.raw.fluid["petroleum-gas"].subgroup = "sp-oil"
+data.raw.fluid["heavy-oil"].subgroup = "sp-oil"
+data.raw.fluid["light-oil"].subgroup = "sp-oil"
+data.raw.fluid["lubricant"].subgroup = "sp-oil"
 
-data.raw.fluid["sulfuric-acid"].subgroup = "chemical"
+data.raw.fluid["sulfuric-acid"].subgroup = "sp-chemical"
 
-data.raw.fluid["steam"].subgroup = "gas"
+data.raw.fluid["steam"].subgroup = "sp-gas"
 
 -- MARK: Assing subgroup to science items
-data.raw.tool["automation-science-pack"].subgroup = "basic-science"
-data.raw.tool["logistic-science-pack"].subgroup = "basic-science"
-data.raw.tool["military-science-pack"].subgroup = "basic-science"
-data.raw.tool["chemical-science-pack"].subgroup = "basic-science"
-data.raw.tool["production-science-pack"].subgroup = "intermediate-science"
-data.raw.tool["utility-science-pack"].subgroup = "intermediate-science"
-data.raw.tool["space-science-pack"].subgroup = "intermediate-science"
+data.raw.tool["automation-science-pack"].subgroup = "sp-basic-science"
+data.raw.tool["logistic-science-pack"].subgroup = "sp-basic-science"
+data.raw.tool["military-science-pack"].subgroup = "sp-basic-science"
+data.raw.tool["chemical-science-pack"].subgroup = "sp-basic-science"
+data.raw.tool["production-science-pack"].subgroup = "sp-intermediate-science"
+data.raw.tool["utility-science-pack"].subgroup = "sp-intermediate-science"
+data.raw.tool["space-science-pack"].subgroup = "sp-intermediate-science"
 
 -- MARK: change stack sizes
 data.raw.item["coal"].stack_size = 200
