@@ -1,4 +1,7 @@
+
 -- Contains functions items
+local space_age_item_sounds = require("__space-age__.prototypes.item_sounds")
+local item_tints = require("__base__.prototypes.item-tints")
 
 local helper = require("helper")
 local icon_util = require("icon")
@@ -23,18 +26,27 @@ end
 -- Create frozen items
 function item_util.create_frozen_item(item)
   frozen_item = table.deepcopy(item)
-  frozen_item.name = string.gsub(item.name, "sp%-", "sp-frozen-")
+  frozen_item.frozen_from = item
+  frozen_item.name = "sp-frozen-" .. string.gsub(item.name, "sp%-", "")
   frozen_item.subgroup = "sp-frozen"
   -- frozen_item.localised_name = {"prefix.sp-frozen", {"item-name." .. item.name}}
   -- frozen_item.localised_name = {"prefix.sp-frozen" .. item.localised_name}
   -- frozen_item.localised_name = item.localised_name
-  -- localised_name = {"prefix.sp-frozen ", {item.localised_name}}
+  -- frozen_item.localised_name = {"prefix.sp-frozen ", item.localised_name}
 
   frozen_item.icon = nil
   frozen_item.icons = icon_util.create_frozen_item_icon(item)
 
+  frozen_item.inventory_move_sound = space_age_item_sounds.ice_inventory_move
+  frozen_item.pick_sound = space_age_item_sounds.ice_inventory_pickup
+  frozen_item.drop_sound = space_age_item_sounds.ice_inventory_move
+  frozen_item.random_tint_color = item_tints.ice_blue
+
   frozen_item.spoil_ticks = nil
   frozen_item.spoil_result = nil
+
+  frozen_item.capsule_action = nil
+  frozen_item.type = "item"
 
   data:extend({frozen_item})
 end
@@ -42,6 +54,14 @@ end
 -- Add frozen items
 function item_util.add_frozen_items()
   for _, item in pairs(data.raw.item) do
+    if helper.value_in_array(item.subgroup, spolable_item_subgroups) then
+      if item.spoil_result then
+        frozen_item = item_util.create_frozen_item(item)
+      end
+    end
+  end
+
+  for _, item in pairs(data.raw.capsule) do
     if helper.value_in_array(item.subgroup, spolable_item_subgroups) then
       if item.spoil_result then
         frozen_item = item_util.create_frozen_item(item)

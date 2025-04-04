@@ -442,7 +442,7 @@ util.recipe.change_recipe_ingredients("agricultural-science-pack",
     {type = "item", name = "sp-blank-tech-card", amount = 5},
     {type = "item", name = "sp-urea", amount = 5},
     {type = "item", name = "bioflux", amount = 5},
-    {type = "item", name = "pentapod-egg", amount = 5}
+    {type = "item", name = "sp-bio-pesticide", amount = 5}
   },
   24)
 data.raw.recipe["agricultural-science-pack"].results = {

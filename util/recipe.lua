@@ -1,6 +1,5 @@
 -- Contains functions for editing recipes
 local remove_prototypes = require("remove-prototypes")
-local item_util = require("util.item")
 local icon_util = require("util.icon")
 
 local data_util = {}
@@ -143,43 +142,57 @@ function data_util.add_fluid_venting_recipes()
   end
 end
 
--- -- Create freezing recipes
--- function data_util.create_fluid_venting_recipe(fluid_name)
---   local fluid = data.raw.fluid[fluid_name]
+function data_util.create_freezing_recipe(item)
+  freezing_recipe = {
+    type = "recipe",
+    name = "sp-freezing" .. item.name,  -- #ForRegEx# - recipe
+    icons = icon_util.create_freezing_recipe_icon(item.frozen_from),
+    category = "freezing",
+    subgroup = "sp-freezing",
+    enabled = false,
+    allow_productivity = false,
+    hide_from_player_crafting = true,
+    energy_required = 5,
+    ingredients = {
+      {type = "item", name = item.name, amount = 1}
+    },
+    results = {
+      {type = "item", name = item.frozen_from.name, amount = 1}
+    }
+  }
 
---   -- Create venting recipe
---   local recipe = {
---     type = "recipe",
---     name = "sp-kr-vent-" .. fluid.name,
---     -- TODO: add localised_name
---     icons = icon_util.create_void_recipe_icon(fluid),
---     category = "sp-kr-gas-and-fluid-venting",
---     subgroup = "sp-void",
---     energy_required = 1,
---     enabled = false,
---     hidden = true,
---     hide_from_player_crafting = true,
---     always_show_products = false,
---     show_amount_in_title = false,
---     ingredients = {
---       {type = "fluid", name = fluid.name, amount = 50},
---     },
---     results = {
---       {type = "item", name = "sp-void", amount = 0},
---     },
---     order = fluid.order,
---     crafting_machine_tint = {
---       primary = fluid.base_color,
---       secondary = {r = fluid.base_color.r, g = fluid.base_color.g, b = fluid.base_color.b, a = 0.25},
---       tertiary = {r = fluid.base_color.r, g = fluid.base_color.g, b = fluid.base_color.b, a = 0.5},
---       quaternary = {r = fluid.base_color.r, g = fluid.base_color.g, b = fluid.base_color.b, a = 0.75},
---     },
---   }
+  thawing_recipe = {
+    type = "recipe",
+    name = "sp-thawing" .. item.name,  -- #ForRegEx# - recipe
+    icons = icon_util.create_thawing_recipe_icon(item.frozen_from),
+    category = "thawing",
+    subgroup = "sp-thawing",
+    enabled = false,
+    allow_productivity = false,
+    hide_from_player_crafting = true,
+    energy_required = 5,
+    ingredients = {
+      {type = "item", name = item.frozen_from.name, amount = 1}
+    },
+    results = {
+      {type = "item", name = item.name, amount = 1, percent_spoiled = 0.5}
+    }
+  }
 
---   data:extend({recipe})
+  data:extend({freezing_recipe})
+  data:extend({thawing_recipe})
 
---   -- Extend technology
---   table.insert(data.raw.technology["sp-kr-fluid-excess-handling"].effects, {type = "unlock-recipe", recipe = recipe.name})
--- end
+  table.insert(data.raw.technology["sp-freezer"].effects, {type = "unlock-recipe", recipe = freezing_recipe.name})
+  table.insert(data.raw.technology["sp-freezer"].effects, {type = "unlock-recipe", recipe = thawing_recipe.name})
+end
+
+-- Add all fluid venting recipes
+function data_util.add_freezing_and_thawing_recipes()
+  for _, item in pairs(data.raw.item) do
+    if item.subgroup == "sp-frozen" then
+      data_util.create_freezing_recipe(item)
+    end
+  end
+end
 
 return data_util

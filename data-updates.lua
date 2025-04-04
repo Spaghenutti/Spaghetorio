@@ -3,6 +3,7 @@ local util = require("data-util")
 
 util.item.add_frozen_items()
 util.recipe.add_fluid_venting_recipes()
+util.recipe.add_freezing_and_thawing_recipes()
 
 -- -- Remove when updating file is done
 -- require("prototypes.recipe-changes")

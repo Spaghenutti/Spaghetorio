@@ -263,4 +263,24 @@ function data_util.create_frozen_item_icon(item)
   return icons
 end
 
+function data_util.create_freezing_recipe_icon(item)
+  icons = {
+    {icon = item.icon, icon_size = item.icon_size, scale = 1.5, shift = {-20, -20}},
+    {icon = "__Spaghetorio__/graphics/overlay/ice.png", icon_size = 64, scale = 1.5, shift = {20, 20}},
+    {icon = "__Spaghetorio__/graphics/arrows/freezing-arrow-256x256.png", icon_size = 256, scale = 0.4},
+  }
+
+  return icons
+end
+
+function data_util.create_thawing_recipe_icon(item)
+  icons = {
+    {icon = "__Spaghetorio__/graphics/overlay/ice.png", icon_size = 64, scale = 1.5, shift = {-20, -20}},
+    {icon = item.icon, icon_size = item.icon_size, scale = 1.5, shift = {20, 20}},
+    {icon = "__Spaghetorio__/graphics/arrows/thawing-arrow-256x256.png", icon_size = 256, scale = 0.4},
+  }
+
+  return icons
+end
+
 return data_util

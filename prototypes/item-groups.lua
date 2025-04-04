@@ -442,7 +442,19 @@ data:extend({
     type = "item-subgroup",
     name = "sp-frozen",
     group = "sp-biology",
-    order = "z"
+    order = "z1"
+  },
+  {
+    type = "item-subgroup",
+    name = "sp-freezing",
+    group = "sp-biology",
+    order = "z2"
+  },
+  {
+    type = "item-subgroup",
+    name = "sp-thawing",
+    group = "sp-biology",
+    order = "z3"
   },
   ------------------------------------------------------------------------------
   -- MARK: other
