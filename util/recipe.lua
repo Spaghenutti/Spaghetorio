@@ -154,10 +154,12 @@ function data_util.create_freezing_recipe(item)
     hide_from_player_crafting = true,
     energy_required = 5,
     ingredients = {
-      {type = "item", name = item.name, amount = 1}
+      {type = "item", name = item.name, amount = 1},
+      {type = "fluid", name = "sp-cold-coolant", amount = 1}
     },
     results = {
-      {type = "item", name = item.frozen_from.name, amount = 1}
+      {type = "item", name = item.frozen_from.name, amount = 1},
+      {type = "fluid", name = "sp-warm-coolant", probaility = 0.9, amount = 1}
     }
   }
 

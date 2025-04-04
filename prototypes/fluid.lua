@@ -77,8 +77,7 @@ data:extend({
     icon_size = 64,
     scale = 0.5,
     subgroup = "aqueous-fluid",
-    order = "[drilling-fluid]",
-    stack_size = 200
+    order = "[drilling-fluid]"
   },
   {
     type = "fluid",
@@ -90,8 +89,7 @@ data:extend({
     icon_size = 64,
     scale = 0.5,
     subgroup = "aqueous-fluid",
-    order = "[iodine-brine]",
-    stack_size = 200
+    order = "[iodine-brine]"
   },
   {
     type = "fluid",
@@ -104,7 +102,6 @@ data:extend({
     scale = 0.5,
     subgroup = "aqueous-fluid",
     order = "[iodine-sludge]",
-    stack_size = 200
   },
   {
     type = "fluid",
@@ -117,7 +114,6 @@ data:extend({
     scale = 0.5,
     subgroup = "aqueous-fluid",
     order = "[gallium-resin]",
-    stack_size = 200
   },
   {
     type = "fluid",
@@ -130,7 +126,33 @@ data:extend({
     scale = 0.5,
     subgroup = "aqueous-fluid",
     order = "[mercury]",
-    stack_size = 200
+  },
+  {
+    type = "fluid",
+    name = "sp-cold-coolant",  -- #ForRegEx# - fluid
+    base_color = {r=0.9, g=0.9, b=0.9},
+    flow_color = {r=0.9, g=1.0, b=0.9},
+    icon = "__Spaghetorio__/graphics/icons/cold-coolant.png",
+    icon_size = 64,
+    scale = 0.5,
+    default_temperature = -20,
+    max_temperature = 25,
+    heat_capacity = "1kJ",
+    subgroup = "aqueous-fluid",
+    order = "[cold-coolant]",
+  },
+  {
+    type = "fluid",
+    name = "sp-warm-coolant",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    base_color = {r=0.9, g=0.9, b=0.9},
+    flow_color = {r=0.9, g=1.0, b=0.9},
+    icon = "__Spaghetorio__/graphics/icons/warm-coolant.png",
+    icon_size = 64,
+    scale = 0.5,
+    heat_capacity = "1kJ",
+    subgroup = "aqueous-fluid",
+    order = "[warm-coolant]",
   },
   ------------------------------------------------------------------------------
   -- MARK: solution
@@ -146,7 +168,6 @@ data:extend({
     scale = 0.5,
     subgroup = "solution",
     order = "[vanadium-bearing-solution]",
-    stack_size = 200
   },
   {
     type = "fluid",
@@ -159,7 +180,6 @@ data:extend({
     scale = 0.5,
     subgroup = "solution",
     order = "[potassium-permanganate-solution]",
-    stack_size = 200
   },
   {
     type = "fluid",
@@ -172,7 +192,6 @@ data:extend({
     scale = 0.5,
     subgroup = "solution",
     order = "[potassium-dichromate-solution]",
-    stack_size = 200
   },
   {
     type = "fluid",
@@ -185,7 +204,6 @@ data:extend({
     scale = 0.5,
     subgroup = "solution",
     order = "[sodium-carbonate-solution]",
-    stack_size = 200
   },
   {
     type = "fluid",
@@ -198,7 +216,6 @@ data:extend({
     scale = 0.5,
     subgroup = "solution",
     order = "[potassium-hydroxide-solution]",
-    stack_size = 200
   },
   {
     type = "fluid",
@@ -211,7 +228,6 @@ data:extend({
     scale = 0.5,
     subgroup = "solution",
     order = "[potassium-hydroxide-solution]",
-    stack_size = 200
   },
   {
     type = "fluid",
@@ -224,7 +240,6 @@ data:extend({
     scale = 0.5,
     subgroup = "solution",
     order = "[calcium-hydroxide-solution]",
-    stack_size = 200
   },
   {
     type = "fluid",
@@ -237,7 +252,6 @@ data:extend({
     scale = 0.5,
     subgroup = "solution",
     order = "[ammonium-perrhenate-solution]",
-    stack_size = 200
   },
   ------------------------------------------------------------------------------
   -- MARK: dirty-fluid
@@ -388,6 +402,7 @@ data:extend({
     subgroup = "fluid",
     order = "a[fluid]-c[biological]-a[biocrude-oil]"
   },
+
   ------------------------------------------------------------------------------
   -- MARK: gas
   ------------------------------------------------------------------------------

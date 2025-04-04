@@ -3817,6 +3817,22 @@ data:extend({
       {type = "fluid", name = "sp-dimethyl-sulfide", amount = 5}
     },
   },
+  {
+    type = "recipe",
+    name = "sp-cold-coolant",  -- #ForRegEx# - recipe
+    category = "chemistry",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 2,
+    ingredients = {
+      {type = "fluid", name = "fluorine", amount = 5},
+      {type = "fluid", name = "sp-chlorine", amount = 5},
+      {type = "item", name = "carbon", amount = 1}
+    },
+    results = {
+      {type = "fluid", name = "sp-cold-coolant", amount = 5}
+    },
+  },
   ------------------------------------------------------------------------------
   -- MARK: advanced-chemistry
   ------------------------------------------------------------------------------
@@ -4619,6 +4635,28 @@ data:extend({
     results = {
       {type = "item", name = "sp-bio-pesticide", amount = 1}
     }
+  },
+  ------------------------------------------------------------------------------
+  -- MARK: freezing
+  ------------------------------------------------------------------------------
+  {
+    type = "recipe",
+    name = "sp-cooling-coolant",  -- #ForRegEx# - recipe
+    icons = {
+      {icon = "__Spaghetorio__/graphics/icons/warm-coolant.png", icon_size = 64, scale = 1.5, shift = {-20, -20}},
+      {icon = "__Spaghetorio__/graphics/icons/cold-coolant.png", icon_size = 64, scale = 1.5, shift = {20, 20}},
+      {icon = "__Spaghetorio__/graphics/arrows/freezing-arrow-256x256.png", icon_size = 256, scale = 0.4},
+    },
+    category = "freezing",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 5,
+    ingredients = {
+      {type = "fluid", name = "sp-warm-coolant", amount = 5}
+    },
+    results = {
+      {type = "fluid", name = "sp-cold-coolant", amount = 5}
+    },
   },
   ------------------------------------------------------------------------------
   -- MARK: crystallizing

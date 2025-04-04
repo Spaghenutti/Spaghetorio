@@ -8536,6 +8536,14 @@ data:extend({
         type = "unlock-recipe",
         recipe = "sp-freezer",
       },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-cold-coolant",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-cooling-coolant",
+      }
     },
     prerequisites = {
       "biochamber",
