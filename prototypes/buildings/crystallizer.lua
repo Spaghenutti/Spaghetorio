@@ -165,8 +165,8 @@ data:extend({
     allowed_effects = {"consumption", "speed", "productivity", "pollution", "quality"},
     crafting_categories = {
       "smelting",
-      "crystallizing",
-      "crystallizing-with-fluid" -- TODO: remove this once crystallizer is added
+      "sp-crystallizing",
+      "sp-crystallizing-with-fluid" -- TODO: remove this once crystallizer is added
     },
     crafting_speed = 1,
     energy_source =

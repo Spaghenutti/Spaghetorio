@@ -53,14 +53,14 @@ data.raw.recipe["ammoniacal-solution-separation"].subgroup = "solution"
 -- MARK: change recipe categories
 --------------------------------------------------------------------------------
 
-data.raw.recipe["burnt-spoilage"].category = "incinerating"
+data.raw.recipe["burnt-spoilage"].category = "sp-incinerating"
 
 --------------------------------------------------------------------------------
 -- Recipe changes for space age factorio items
 -- MARK: Items
 --------------------------------------------------------------------------------
 
-data.raw.recipe["tungsten-carbide"].category = "induction-hardening"
+data.raw.recipe["tungsten-carbide"].category = "sp-induction-hardening"
 util.recipe.change_recipe_ingredients("tungsten-carbide",
   {
     {type = "item", name = "sp-tungsten-powder", amount = 4},
@@ -79,9 +79,9 @@ util.recipe.change_recipe_ingredients("tungsten-plate",
 
 data.raw.recipe["holmium-solution"].category = "sp-crushing-washing"
 
-data.raw.recipe["holmium-plate"].category = "smelting-with-fluid"
+data.raw.recipe["holmium-plate"].category = "sp-smelting-with-fluid"
 
-data.raw.recipe["electrolyte"].category = "chemical-staging"
+data.raw.recipe["electrolyte"].category = "sp-chemical-staging"
 util.recipe.change_recipe_ingredients("electrolyte",
   {
     {type = "item", name = "lithium", amount = 2},
@@ -110,7 +110,7 @@ util.recipe.change_recipe_ingredients("supercapacitor",
   },
   5)
 
-data.raw.recipe["lithium"].category = "advanced-chemistry"
+data.raw.recipe["lithium"].category = "sp-advanced-chemistry"
 util.recipe.change_recipe_ingredients("lithium",
   {
     {type = "item", name = "sp-lithium-chloride", amount = 2},
@@ -423,7 +423,7 @@ util.recipe.change_recipe_ingredients("cryogenic-plant",
 -- MARK: science pack
 --------------------------------------------------------------------------------
 
-data.raw.recipe["metallurgic-science-pack"].category = "intermediate-smelting"
+data.raw.recipe["metallurgic-science-pack"].category = "sp-intermediate-smelting"
 util.recipe.change_recipe_ingredients("metallurgic-science-pack",
   {
     {type = "item", name = "sp-blank-tech-card", amount = 5},

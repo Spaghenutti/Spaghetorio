@@ -50,13 +50,13 @@ data:extend({
   },
   {
     type = "item-subgroup",
-    name = "enriched-resource-recipe",  -- Corresponds to category "enriching-raw-resource"
+    name = "enriched-resource-recipe",  -- Corresponds to category "sp-enriching-raw-resource"
     group = "sp-resources",
     order = "c-b"
   },
   {
     type = "item-subgroup",
-    name = "enriched-crushed-resource-recipe",  -- Corresponds to category "enriching-crushed-resource"
+    name = "enriched-crushed-resource-recipe",  -- Corresponds to category "sp-enriching-crushed-resource"
     group = "sp-resources",
     order = "c-c"
   },

@@ -15,7 +15,7 @@ for key, value in pairs(data.raw.furnace) do
     local furnace = table.deepcopy(value)
     -- Except stone-furnace
     furnace.type = "assembling-machine"
-    -- table.insert(furnace.crafting_categories, "intermediate-smelting")
+    -- table.insert(furnace.crafting_categories, "sp-intermediate-smelting")
 
     data.raw.furnace[key] = nil
     data:extend({furnace})

@@ -244,9 +244,9 @@ data:extend({
     },
     crafting_categories = {
       "smelting",
-      "intermediate-smelting",
-      "crushed-smelting",
-      "smelting-enriched-resource",
+      "sp-intermediate-smelting",
+      "sp-crushed-smelting",
+      "sp-smelting-enriched-resource",
       "sp-high-temperature-smelting",
       "metallurgy",
       "metallurgy-or-assembling",

@@ -104,9 +104,9 @@ data:extend({
     },
     crafting_categories = {
       "chemistry",
-      "advanced-chemistry",
-      "enriching-raw-resource",
-      "enriching-crushed-resource"
+      "sp-advanced-chemistry",
+      "sp-enriching-raw-resource",
+      "sp-enriching-crushed-resource"
     },
     vehicle_impact_sound = sounds.generic_impact,
     working_sound = {

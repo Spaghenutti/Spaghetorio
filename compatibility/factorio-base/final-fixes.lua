@@ -84,14 +84,14 @@ data.raw.technology["utility-science-pack"].unit.ingredients = {
 }
 
 -- block decomposition of certain recipe categories
-util.recipe.block_decomposition_for_recipe_category("acroproduct-conversion-with-acrocrystal")
-util.recipe.block_decomposition_for_recipe_category("acroproduct-conversion-with-acromatter")
-util.recipe.block_decomposition_for_recipe_category("acroproduct-conversion-with-acrovoid")
+util.recipe.block_decomposition_for_recipe_category("sp-acroproduct-conversion-with-acrocrystal")
+util.recipe.block_decomposition_for_recipe_category("sp-acroproduct-conversion-with-acromatter")
+util.recipe.block_decomposition_for_recipe_category("sp-acroproduct-conversion-with-acrovoid")
 
 -- hide recipes from player
-util.recipe.hide_recipe_from_player_category("acroproduct-conversion-with-acrocrystal")
-util.recipe.hide_recipe_from_player_category("acroproduct-conversion-with-acromatter")
-util.recipe.hide_recipe_from_player_category("acroproduct-conversion-with-acrovoid")
+util.recipe.hide_recipe_from_player_category("sp-acroproduct-conversion-with-acrocrystal")
+util.recipe.hide_recipe_from_player_category("sp-acroproduct-conversion-with-acromatter")
+util.recipe.hide_recipe_from_player_category("sp-acroproduct-conversion-with-acrovoid")
 
 data.raw.recipe["electronic-circuit"].hide_from_player_crafting = true  -- Does not work, I think the recipe is changed to "sp-wooden-board" in Krastorio
 util.recipe.change_recipe_ingredients("electronic-circuit",

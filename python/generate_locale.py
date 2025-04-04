@@ -55,14 +55,20 @@ def get_sections(object_type: str) -> List[str]:
             return ["entity-name"]
         case "fluid":
             return ["fluid-name"]
+        case "fuel-category":
+            return ["fuel-category-name"]
         case "item-group":
             return ["item-group-name"]
         case "item" | "tool":
             return ["item-name"]
         case "recipe":
             return ["recipe-name"]
+        case "recipe-category":
+            return ["recipe-category-name"]
         case "resource":
             return ["resource-name"]
+        case "resource-category":
+            return ["resource-category-name"]
         case "technology" | "infinite-technology": 
             return ["technology-name"]
         case _:
@@ -88,6 +94,7 @@ def extend_locale(matches: List[Tuple[str, str]],
                     # Add the keys and values
                     for section in get_sections(match[pair_index*2 + 1]):
                         if not config.has_option(section, key):
+                            print(section, key, value)
                             config.set(section, key, value)
         except KeyError as k:
             print(f"Skipping locale generation. {k}") 
@@ -117,6 +124,7 @@ def update_locale() -> None:
     they do not exist
     """
     extend_locale(parse_lua(constants.AUTOPLACE_CONTROL_PATH))
+    extend_locale(parse_lua(constants.CATEGORY_PATH))
     extend_locale(parse_lua(constants.FLUID_PATH))
     extend_locale(parse_lua(constants.ITEM_GROUPS_PATH))
     extend_locale(parse_lua(constants.ITEMS_PATH))

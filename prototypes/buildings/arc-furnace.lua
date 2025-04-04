@@ -103,9 +103,9 @@ data:extend({
     allowed_effects = {"consumption", "speed", "productivity", "pollution", "quality"},
     crafting_categories = {
       "smelting",
-      "intermediate-smelting",
-      "crushed-smelting",
-      "smelting-enriched-resource",
+      "sp-intermediate-smelting",
+      "sp-crushed-smelting",
+      "sp-smelting-enriched-resource",
       "sp-high-temperature-smelting"
     },
     crafting_speed = 1,

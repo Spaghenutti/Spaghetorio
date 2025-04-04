@@ -144,9 +144,9 @@ data:extend({
     allowed_effects = {"consumption", "speed", "productivity", "pollution", "quality"},
     crafting_categories = {
       "chemistry",
-      "chemical-staging",
-      "enriching-raw-resource",
-      "enriching-crushed-resource"
+      "sp-chemical-staging",
+      "sp-enriching-raw-resource",
+      "sp-enriching-crushed-resource"
     },
     crafting_speed = 2,
     energy_source =

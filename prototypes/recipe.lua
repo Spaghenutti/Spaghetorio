@@ -471,7 +471,7 @@ data:extend({
     name = "sp-crushed-iron-smelting",  -- #ForRegEx# - recipe
     icons = util.icon.overlay_small_icon("__base__/graphics/icons/iron-plate.png", 64,
                                          "__Spaghetorio__/graphics/icons/crushed-iron-ore-1.png", 64),
-    category = "crushed-smelting",
+    category = "sp-crushed-smelting",
     subgroup = "raw-material",
     enabled = false,
     allow_productivity = true,
@@ -489,7 +489,7 @@ data:extend({
     name = "sp-crushed-iron-smelting-into-beam",  -- #ForRegEx# - recipe
     icons = util.icon.overlay_small_icon("__base__/graphics/icons/steel-plate.png", 64,
                                          "__Spaghetorio__/graphics/icons/crushed-iron-ore-1.png", 64),
-    category = "crushed-smelting",
+    category = "sp-crushed-smelting",
     subgroup = "raw-material",
     enabled = false,
     allow_productivity = true,
@@ -508,7 +508,7 @@ data:extend({
     name = "sp-crushed-copper-smelting",  -- #ForRegEx# - recipe
     icons = util.icon.overlay_small_icon("__base__/graphics/icons/copper-plate.png", 64,
                                          "__Spaghetorio__/graphics/icons/crushed-copper-ore-1.png", 64),
-    category = "crushed-smelting",
+    category = "sp-crushed-smelting",
     subgroup = "raw-material",
     enabled = false,
     allow_productivity = true,
@@ -526,7 +526,7 @@ data:extend({
     name = "sp-crushed-aluminum-smelting",  -- #ForRegEx# - recipe
     icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/alumina.png", 64,
                                          "__Spaghetorio__/graphics/icons/crushed-aluminum-ore-1.png", 64),
-    category = "crushed-smelting",
+    category = "sp-crushed-smelting",
     subgroup = "processed-resource",
     enabled = false,
     allow_productivity = true,
@@ -544,7 +544,7 @@ data:extend({
     name = "sp-crushed-chromite-smelting",  -- #ForRegEx# - recipe
     icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/chromium-plate.png", 64,
                                          "__Spaghetorio__/graphics/icons/crushed-chromite-1.png", 64),
-    category = "crushed-smelting",
+    category = "sp-crushed-smelting",
     subgroup = "raw-material",
     enabled = false,
     allow_productivity = true,
@@ -563,7 +563,7 @@ data:extend({
     name = "sp-crushed-cobalt-smelting",  -- #ForRegEx# - recipe
     icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/cobalt-oxide.png", 64,
                                          "__Spaghetorio__/graphics/icons/crushed-cobalt-ore-4.png", 64),
-    category = "crushed-smelting",
+    category = "sp-crushed-smelting",
     subgroup = "processed-resource",
     enabled = false,
     allow_productivity = true,
@@ -581,7 +581,7 @@ data:extend({
     name = "sp-crushed-magnesium-smelting",  -- #ForRegEx# - recipe
     icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/magnesium-chloride.png", 64,
                                          "__Spaghetorio__/graphics/icons/crushed-magnesium-ore-1.png", 64),
-    category = "crushed-smelting",
+    category = "sp-crushed-smelting",
     subgroup = "processed-resource",
     enabled = false,
     allow_productivity = true,
@@ -599,7 +599,7 @@ data:extend({
     name = "sp-crushed-nickel-smelting",  -- #ForRegEx# - recipe
     icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/nickel-ingot.png", 64,
                                          "__Spaghetorio__/graphics/icons/crushed-nickel-ore-1.png", 64),
-    category = "crushed-smelting",
+    category = "sp-crushed-smelting",
     subgroup = "raw-material",
     enabled = false,
     allow_productivity = true,
@@ -618,7 +618,7 @@ data:extend({
     name = "sp-crushed-tinstone-smelting",  -- #ForRegEx# - recipe
     icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/tin-ingot.png", 64,
                                          "__Spaghetorio__/graphics/icons/crushed-tinstone-1.png", 64),
-    category = "crushed-smelting",
+    category = "sp-crushed-smelting",
     subgroup = "raw-material",
     enabled = false,
     allow_productivity = true,
@@ -636,7 +636,7 @@ data:extend({
     name = "sp-crushed-titanium-smelting",  -- #ForRegEx# - recipe
     icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/titanium-chloride.png", 64,
                                          "__Spaghetorio__/graphics/icons/crushed-titanium-ore-1.png", 64),
-    category = "crushed-smelting",
+    category = "sp-crushed-smelting",
     subgroup = "processed-resource",
     enabled = false,
     allow_productivity = true,
@@ -654,7 +654,7 @@ data:extend({
     name = "sp-crushed-tungsten-smelting",  -- #ForRegEx# - recipe
     icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/ammonium-paratungstate.png", 64,
                                          "__Spaghetorio__/graphics/icons/crushed-tungsten-ore-1.png", 64),
-    category = "crushed-smelting",
+    category = "sp-crushed-smelting",
     subgroup = "processed-resource",
     enabled = false,
     allow_productivity = true,
@@ -672,7 +672,7 @@ data:extend({
     name = "sp-crushed-zinc-smelting",  -- #ForRegEx# - recipe
     icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/zinc-sulfate-1.png", 64,
                                          "__Spaghetorio__/graphics/icons/crushed-zinc-ore-1.png", 64),
-    category = "crushed-smelting",
+    category = "sp-crushed-smelting",
     subgroup = "processed-resource",
     enabled = false,
     allow_productivity = true,
@@ -690,7 +690,7 @@ data:extend({
     name = "sp-crushed-zirconium-smelting",  -- #ForRegEx# - recipe
     icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/zirconium-rod.png", 64,
                                          "__Spaghetorio__/graphics/icons/crushed-zirconium-ore-1.png", 64),
-    category = "crushed-smelting",
+    category = "sp-crushed-smelting",
     subgroup = "raw-material",
     enabled = false,
     allow_productivity = true,
@@ -708,7 +708,7 @@ data:extend({
     name = "sp-crushed-molybdenum-smelting",  -- #ForRegEx# - recipe
     icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/molybdenum-trioxide.png", 64,
                                          "__Spaghetorio__/graphics/icons/crushed-molybdenum-ore-1.png", 64),
-    category = "crushed-smelting",
+    category = "sp-crushed-smelting",
     subgroup = "raw-material",
     enabled = false,
     allow_productivity = true,
@@ -727,7 +727,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-barium-sulfide",  -- #ForRegEx# - recipe
-    category = "intermediate-smelting",
+    category = "sp-intermediate-smelting",
     enabled = false,
     allow_productivity = true,
     energy_required = 4,
@@ -742,7 +742,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-barium-billet",  -- #ForRegEx# - recipe
-    category = "intermediate-smelting",
+    category = "sp-intermediate-smelting",
     enabled = false,
     allow_productivity = true,
     energy_required = 8,
@@ -756,7 +756,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-antimony-oxide",  -- #ForRegEx# - recipe
-    category = "intermediate-smelting",
+    category = "sp-intermediate-smelting",
     enabled = false,
     allow_productivity = true,
     energy_required = 6,
@@ -770,7 +770,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-antimony-pillet",  -- #ForRegEx# - recipe
-    category = "intermediate-smelting",
+    category = "sp-intermediate-smelting",
     enabled = false,
     allow_productivity = true,
     energy_required = 10,
@@ -785,7 +785,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-ferrite",  -- #ForRegEx# - recipe
-    category = "intermediate-smelting",
+    category = "sp-intermediate-smelting",
     enabled = false,
     allow_productivity = true,
     energy_required = 8,
@@ -804,7 +804,7 @@ data:extend({
                                          "__Spaghetorio__/graphics/icons/nickel-ingot.png", 64),
     hide_from_player_crafting = true,
     subgroup = "alloy",
-    category = "intermediate-smelting",
+    category = "sp-intermediate-smelting",
     enabled = false,
     allow_productivity = true,
     energy_required = 8,
@@ -823,7 +823,7 @@ data:extend({
                                          "__Spaghetorio__/graphics/icons/zinc-plate.png", 64),
     hide_from_player_crafting = true,
     subgroup = "alloy",
-    category = "intermediate-smelting",
+    category = "sp-intermediate-smelting",
     enabled = false,
     allow_productivity = true,
     energy_required = 8,
@@ -842,7 +842,7 @@ data:extend({
                                          "__Spaghetorio__/graphics/icons/cobalt-billet.png", 64),
     hide_from_player_crafting = true,
     subgroup = "alloy",
-    category = "intermediate-smelting",
+    category = "sp-intermediate-smelting",
     enabled = false,
     allow_productivity = true,
     energy_required = 6,
@@ -861,7 +861,7 @@ data:extend({
                                          "__base__/graphics/icons/copper-plate.png", 64),
     hide_from_player_crafting = true,
     subgroup = "alloy",
-    category = "intermediate-smelting",
+    category = "sp-intermediate-smelting",
     enabled = false,
     allow_productivity = true,
     energy_required = 10,
@@ -876,7 +876,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-ammonium-paratungstate",  -- #ForRegEx# - recipe
-    category = "intermediate-smelting",
+    category = "sp-intermediate-smelting",
     enabled = false,
     allow_productivity = true,
     energy_required = 8,
@@ -890,7 +890,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-tungsten-powder",  -- #ForRegEx# - recipe
-    category = "intermediate-smelting",
+    category = "sp-intermediate-smelting",
     enabled = false,
     allow_productivity = true,
     energy_required = 6,
@@ -905,7 +905,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-gallium",  -- #ForRegEx# - recipe
-    category = "intermediate-smelting",
+    category = "sp-intermediate-smelting",
     enabled = false,
     allow_productivity = true,
     energy_required = 3,
@@ -921,7 +921,7 @@ data:extend({
     name = "sp-zirconium-rod-from-sodium-zirconate",  -- #ForRegEx# - recipe
     icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/zirconium-rod.png", 64,
                                          "__Spaghetorio__/graphics/icons/sodium-zirconate.png", 64),
-    category = "intermediate-smelting",
+    category = "sp-intermediate-smelting",
     enabled = false,
     allow_productivity = true,
     energy_required = 3,
@@ -935,7 +935,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-hafnium",  -- #ForRegEx# - recipe
-    category = "intermediate-smelting",
+    category = "sp-intermediate-smelting",
     enabled = false,
     allow_productivity = true,
     energy_required = 5,
@@ -949,7 +949,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-rukite-bar",  -- #ForRegEx# - recipe
-    category = "intermediate-smelting",
+    category = "sp-intermediate-smelting",
     enabled = false,
     allow_productivity = true,
     energy_required = 3.6,
@@ -971,7 +971,7 @@ data:extend({
     icons = util.icon.create_enriching_recipe_icon(data.raw.item["copper-ore"], data.raw.item["sp-enriched-copper"]),
     icon_size = 64,
     mip_maps = 4,
-    category = "enriching-raw-resource",
+    category = "sp-enriching-raw-resource",
     subgroup = "enriched-resource-recipe",
     enabled = false,
     allow_productivity = true,
@@ -999,7 +999,7 @@ data:extend({
     icons = util.icon.create_enriching_recipe_icon(data.raw.item["iron-ore"], data.raw.item["sp-enriched-iron"]),
     icon_size = 64,
     mip_maps = 4,
-    category = "enriching-raw-resource",
+    category = "sp-enriching-raw-resource",
     subgroup = "enriched-resource-recipe",
     enabled = false,
     allow_productivity = true,
@@ -1026,7 +1026,7 @@ data:extend({
     icons = util.icon.create_enriching_recipe_icon(data.raw.item["sp-aluminum-ore"], data.raw.item["sp-enriched-aluminum"]),
     icon_size = 64,
     mip_maps = 4,
-    category = "enriching-raw-resource",
+    category = "sp-enriching-raw-resource",
     subgroup = "enriched-resource-recipe",
     enabled = false,
     allow_productivity = true,
@@ -1053,7 +1053,7 @@ data:extend({
     icons = util.icon.create_enriching_recipe_icon(data.raw.item["sp-chromite"], data.raw.item["sp-enriched-chromite"]),
     icon_size = 64,
     mip_maps = 4,
-    category = "enriching-raw-resource",
+    category = "sp-enriching-raw-resource",
     subgroup = "enriched-resource-recipe",
     enabled = false,
     allow_productivity = true,
@@ -1081,7 +1081,7 @@ data:extend({
     icons = util.icon.create_enriching_recipe_icon(data.raw.item["sp-magnesium-ore"], data.raw.item["sp-enriched-magnesium"]),
     icon_size = 64,
     mip_maps = 4,
-    category = "enriching-raw-resource",
+    category = "sp-enriching-raw-resource",
     subgroup = "enriched-resource-recipe",
     enabled = false,
     allow_productivity = true,
@@ -1109,7 +1109,7 @@ data:extend({
     icons = util.icon.create_enriching_recipe_icon(data.raw.item["sp-nickel-ore"], data.raw.item["sp-enriched-nickel"]),
     icon_size = 64,
     mip_maps = 4,
-    category = "enriching-raw-resource",
+    category = "sp-enriching-raw-resource",
     subgroup = "enriched-resource-recipe",
     enabled = false,
     allow_productivity = true,
@@ -1137,7 +1137,7 @@ data:extend({
     icons = util.icon.create_enriching_recipe_icon(data.raw.item["sp-tinstone"], data.raw.item["sp-enriched-tinstone"]),
     icon_size = 64,
     mip_maps = 4,
-    category = "enriching-raw-resource",
+    category = "sp-enriching-raw-resource",
     subgroup = "enriched-resource-recipe",
     enabled = false,
     allow_productivity = true,
@@ -1165,7 +1165,7 @@ data:extend({
     icons = util.icon.create_enriching_recipe_icon(data.raw.item["sp-titanium-ore"], data.raw.item["sp-enriched-titanium"]),
     icon_size = 64,
     mip_maps = 4,
-    category = "enriching-raw-resource",
+    category = "sp-enriching-raw-resource",
     subgroup = "enriched-resource-recipe",
     enabled = false,
     allow_productivity = true,
@@ -1193,7 +1193,7 @@ data:extend({
     icons = util.icon.create_enriching_recipe_icon(data.raw.item["tungsten-ore"], data.raw.item["sp-enriched-tungsten"]),
     icon_size = 64,
     mip_maps = 4,
-    category = "enriching-raw-resource",
+    category = "sp-enriching-raw-resource",
     subgroup = "enriched-resource-recipe",
     enabled = false,
     allow_productivity = true,
@@ -1221,7 +1221,7 @@ data:extend({
     icons = util.icon.create_enriching_recipe_icon(data.raw.item["sp-zinc-ore"], data.raw.item["sp-enriched-zinc"]),
     icon_size = 64,
     mip_maps = 4,
-    category = "enriching-raw-resource",
+    category = "sp-enriching-raw-resource",
     subgroup = "enriched-resource-recipe",
     enabled = false,
     allow_productivity = true,
@@ -1251,7 +1251,7 @@ data:extend({
     icons = util.icon.create_enriching_recipe_icon(data.raw.item["sp-crushed-copper-ore"], data.raw.item["sp-enriched-copper"]),
     icon_size = 64,
     mip_maps = 4,
-    category = "enriching-crushed-resource",
+    category = "sp-enriching-crushed-resource",
     subgroup = "enriched-crushed-resource-recipe",
     enabled = false,
     allow_productivity = true,
@@ -1279,7 +1279,7 @@ data:extend({
     icons = util.icon.create_enriching_recipe_icon(data.raw.item["sp-crushed-iron-ore"], data.raw.item["sp-enriched-iron"]),
     icon_size = 64,
     mip_maps = 4,
-    category = "enriching-crushed-resource",
+    category = "sp-enriching-crushed-resource",
     subgroup = "enriched-crushed-resource-recipe",
     enabled = false,
     allow_productivity = true,
@@ -1306,7 +1306,7 @@ data:extend({
     icons = util.icon.create_enriching_recipe_icon(data.raw.item["sp-crushed-aluminum-ore"], data.raw.item["sp-enriched-aluminum"]),
     icon_size = 64,
     mip_maps = 4,
-    category = "enriching-crushed-resource",
+    category = "sp-enriching-crushed-resource",
     subgroup = "enriched-crushed-resource-recipe",
     enabled = false,
     allow_productivity = true,
@@ -1333,7 +1333,7 @@ data:extend({
     icons = util.icon.create_enriching_recipe_icon(data.raw.item["sp-crushed-chromite"], data.raw.item["sp-enriched-chromite"]),
     icon_size = 64,
     mip_maps = 4,
-    category = "enriching-crushed-resource",
+    category = "sp-enriching-crushed-resource",
     subgroup = "enriched-crushed-resource-recipe",
     enabled = false,
     allow_productivity = true,
@@ -1361,7 +1361,7 @@ data:extend({
     icons = util.icon.create_enriching_recipe_icon(data.raw.item["sp-crushed-magnesium-ore"], data.raw.item["sp-enriched-magnesium"]),
     icon_size = 64,
     mip_maps = 4,
-    category = "enriching-crushed-resource",
+    category = "sp-enriching-crushed-resource",
     subgroup = "enriched-crushed-resource-recipe",
     enabled = false,
     allow_productivity = true,
@@ -1389,7 +1389,7 @@ data:extend({
     icons = util.icon.create_enriching_recipe_icon(data.raw.item["sp-crushed-nickel-ore"], data.raw.item["sp-enriched-nickel"]),
     icon_size = 64,
     mip_maps = 4,
-    category = "enriching-crushed-resource",
+    category = "sp-enriching-crushed-resource",
     subgroup = "enriched-crushed-resource-recipe",
     enabled = false,
     allow_productivity = true,
@@ -1417,7 +1417,7 @@ data:extend({
     icons = util.icon.create_enriching_recipe_icon(data.raw.item["sp-crushed-tinstone"], data.raw.item["sp-enriched-tinstone"]),
     icon_size = 64,
     mip_maps = 4,
-    category = "enriching-crushed-resource",
+    category = "sp-enriching-crushed-resource",
     subgroup = "enriched-crushed-resource-recipe",
     enabled = false,
     allow_productivity = true,
@@ -1445,7 +1445,7 @@ data:extend({
     icons = util.icon.create_enriching_recipe_icon(data.raw.item["sp-crushed-titanium-ore"], data.raw.item["sp-enriched-titanium"]),
     icon_size = 64,
     mip_maps = 4,
-    category = "enriching-crushed-resource",
+    category = "sp-enriching-crushed-resource",
     subgroup = "enriched-crushed-resource-recipe",
     enabled = false,
     allow_productivity = true,
@@ -1473,7 +1473,7 @@ data:extend({
     icons = util.icon.create_enriching_recipe_icon(data.raw.item["sp-crushed-tungsten-ore"], data.raw.item["sp-enriched-tungsten"]),
     icon_size = 64,
     mip_maps = 4,
-    category = "enriching-crushed-resource",
+    category = "sp-enriching-crushed-resource",
     subgroup = "enriched-crushed-resource-recipe",
     enabled = false,
     allow_productivity = true,
@@ -1501,7 +1501,7 @@ data:extend({
     icons = util.icon.create_enriching_recipe_icon(data.raw.item["sp-crushed-zinc-ore"], data.raw.item["sp-enriched-zinc"]),
     icon_size = 64,
     mip_maps = 4,
-    category = "enriching-crushed-resource",
+    category = "sp-enriching-crushed-resource",
     subgroup = "enriched-crushed-resource-recipe",
     enabled = false,
     allow_productivity = true,
@@ -1530,7 +1530,7 @@ data:extend({
     name = "sp-iron-plate-from-enriched-iron",  -- #ForRegEx# - recipe
     icons = util.icon.overlay_small_icon("__base__/graphics/icons/iron-plate.png", 64,
                                          "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/enriched-iron/enriched-iron.png", 64),
-    category = "smelting-enriched-resource",
+    category = "sp-smelting-enriched-resource",
     subgroup = "raw-material",
     enabled = false,
     allow_productivity = true,
@@ -1548,7 +1548,7 @@ data:extend({
     name = "sp-iron-beam-from-enriched-iron",  -- #ForRegEx# - recipe
     icons = util.icon.overlay_small_icon("__base__/graphics/icons/steel-plate.png", 64,
                                          "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/enriched-iron/enriched-iron.png", 64),
-    category = "smelting-enriched-resource",
+    category = "sp-smelting-enriched-resource",
     subgroup = "raw-material",
     enabled = false,
     allow_productivity = true,
@@ -1566,7 +1566,7 @@ data:extend({
     name = "sp-copper-plate-from-enriched-copper",  -- #ForRegEx# - recipe
     icons = util.icon.overlay_small_icon("__base__/graphics/icons/copper-plate.png", 64,
                                          "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/enriched-copper/enriched-copper.png", 64),
-    category = "smelting-enriched-resource",
+    category = "sp-smelting-enriched-resource",
     subgroup = "raw-material",
     enabled = false,
     allow_productivity = true,
@@ -1584,7 +1584,7 @@ data:extend({
     name = "sp-alumina-from-enriched-aluminum",  -- #ForRegEx# - recipe
     icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/alumina.png", 64,
                                          "__Spaghetorio__/graphics/icons/enriched-aluminum-1.png", 64),
-    category = "smelting-enriched-resource",
+    category = "sp-smelting-enriched-resource",
     subgroup = "processed-resource",
     enabled = false,
     allow_productivity = true,
@@ -1602,7 +1602,7 @@ data:extend({
     name = "sp-chromium-plate-from-enriched-chromite",  -- #ForRegEx# - recipe
     icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/chromium-plate.png", 64,
                                          "__Spaghetorio__/graphics/icons/enriched-chromite-1.png", 64),
-    category = "smelting-enriched-resource",
+    category = "sp-smelting-enriched-resource",
     enabled = false,
     allow_productivity = true,
     energy_required = 5,
@@ -1619,7 +1619,7 @@ data:extend({
     name = "sp-magnesium-slab-from-enriched-magnesium",  -- #ForRegEx# - recipe
     icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/magnesium-slab.png", 64,
                                          "__Spaghetorio__/graphics/icons/enriched-magnesium-1.png", 64),
-    category = "smelting-enriched-resource",
+    category = "sp-smelting-enriched-resource",
     enabled = false,
     allow_productivity = true,
     energy_required = 6,
@@ -1636,7 +1636,7 @@ data:extend({
     name = "sp-nickel-ingot-from-enriched-nickel",  -- #ForRegEx# - recipe
     icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/nickel-ingot.png", 64,
                                          "__Spaghetorio__/graphics/icons/enriched-nickel-1.png", 64),
-    category = "smelting-enriched-resource",
+    category = "sp-smelting-enriched-resource",
     enabled = false,
     allow_productivity = true,
     energy_required = 5,
@@ -1653,7 +1653,7 @@ data:extend({
     name = "sp-tin-ingot-from-enriched-tinstone",  -- #ForRegEx# - recipe
     icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/tin-ingot.png", 64,
                                          "__Spaghetorio__/graphics/icons/enriched-tinstone-1.png", 64),
-    category = "smelting-enriched-resource",
+    category = "sp-smelting-enriched-resource",
     enabled = false,
     allow_productivity = true,
     energy_required = 8,
@@ -1670,7 +1670,7 @@ data:extend({
     name = "sp-titanium-chloride-from-enriched-titanium",  -- #ForRegEx# - recipe
     icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/titanium-chloride.png", 64,
                                          "__Spaghetorio__/graphics/icons/enriched-titanium-1.png", 64),
-    category = "smelting-enriched-resource",
+    category = "sp-smelting-enriched-resource",
     enabled = false,
     allow_productivity = true,
     energy_required = 5,
@@ -1687,7 +1687,7 @@ data:extend({
     name = "sp-ammonium-paratungstate-from-enriched-tungsten",  -- #ForRegEx# - recipe
     icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/ammonium-paratungstate.png", 64,
                                          "__Spaghetorio__/graphics/icons/enriched-tungsten-1.png", 64),
-    category = "smelting-enriched-resource",
+    category = "sp-smelting-enriched-resource",
     enabled = false,
     allow_productivity = true,
     energy_required = 8,
@@ -1704,7 +1704,7 @@ data:extend({
     name = "sp-zinc-plate-from-enriched-zinc",  -- #ForRegEx# - recipe
     icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/zinc-plate.png", 64,
                                          "__Spaghetorio__/graphics/icons/enriched-zinc-1.png", 64),
-    category = "smelting-enriched-resource",
+    category = "sp-smelting-enriched-resource",
     enabled = false,
     allow_productivity = true,
     energy_required = 4,
@@ -1722,7 +1722,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-invar",  -- #ForRegEx# - recipe
-    category = "alloy-smelting",
+    category = "sp-alloy-smelting",
     enabled = false,
     allow_productivity = true,
     energy_required = 20,
@@ -1738,7 +1738,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-duralumin",  -- #ForRegEx# - recipe
-    category = "alloy-smelting",
+    category = "sp-alloy-smelting",
     enabled = false,
     allow_productivity = true,
     energy_required = 16,
@@ -1754,7 +1754,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-aluminum-brass",  -- #ForRegEx# - recipe
-    category = "alloy-smelting",
+    category = "sp-alloy-smelting",
     enabled = false,
     allow_productivity = true,
     energy_required = 16,
@@ -1771,7 +1771,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-inconel",  -- #ForRegEx# - recipe
-    category = "alloy-smelting",
+    category = "sp-alloy-smelting",
     enabled = false,
     allow_productivity = true,
     energy_required = 16,
@@ -1787,7 +1787,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-nickel-rhenium",  -- #ForRegEx# - recipe
-    category = "alloy-smelting",
+    category = "sp-alloy-smelting",
     enabled = false,
     allow_productivity = true,
     energy_required = 40,
@@ -1802,7 +1802,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-titanium-aluminum-tin",  -- #ForRegEx# - recipe
-    category = "alloy-smelting",
+    category = "sp-alloy-smelting",
     enabled = false,
     allow_productivity = true,
     energy_required = 14,
@@ -1818,7 +1818,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-titanium-niobium",  -- #ForRegEx# - recipe
-    category = "alloy-smelting",
+    category = "sp-alloy-smelting",
     enabled = false,
     allow_productivity = true,
     energy_required = 8,
@@ -1833,7 +1833,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-nimonic",  -- #ForRegEx# - recipe
-    category = "alloy-smelting",
+    category = "sp-alloy-smelting",
     enabled = false,
     allow_productivity = true,
     energy_required = 16,
@@ -1849,7 +1849,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-nitenol",  -- #ForRegEx# - recipe
-    category = "alloy-smelting",
+    category = "sp-alloy-smelting",
     enabled = false,
     allow_productivity = true,
     energy_required = 8,
@@ -1864,7 +1864,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-niobium-steel",  -- #ForRegEx# - recipe
-    category = "alloy-smelting",
+    category = "sp-alloy-smelting",
     enabled = false,
     allow_productivity = true,
     energy_required = 24,
@@ -1879,7 +1879,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-zircaloy",  -- #ForRegEx# - recipe
-    category = "alloy-smelting",
+    category = "sp-alloy-smelting",
     enabled = false,
     allow_productivity = true,
     energy_required = 30,
@@ -1894,7 +1894,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-silver-indium-cadmium",  -- #ForRegEx# - recipe
-    category = "alloy-smelting",
+    category = "sp-alloy-smelting",
     enabled = false,
     allow_productivity = true,
     energy_required = 30,
@@ -1910,7 +1910,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-niobium-tin",  -- #ForRegEx# - recipe
-    category = "alloy-smelting",
+    category = "sp-alloy-smelting",
     enabled = false,
     allow_productivity = true,
     energy_required = 4,
@@ -1925,7 +1925,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-copper-antimony",  -- #ForRegEx# - recipe
-    category = "alloy-smelting",
+    category = "sp-alloy-smelting",
     enabled = false,
     allow_productivity = true,
     energy_required = 8,
@@ -1940,7 +1940,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-nickel-cobalt",  -- #ForRegEx# - recipe
-    category = "alloy-smelting",
+    category = "sp-alloy-smelting",
     enabled = false,
     allow_productivity = true,
     energy_required = 12,
@@ -1955,7 +1955,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-waspaloy",  -- #ForRegEx# - recipe
-    category = "alloy-smelting",
+    category = "sp-alloy-smelting",
     enabled = false,
     allow_productivity = true,
     energy_required = 16,
@@ -1971,7 +1971,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-chromium-cobalt",  -- #ForRegEx# - recipe
-    category = "alloy-smelting",
+    category = "sp-alloy-smelting",
     enabled = false,
     allow_productivity = true,
     energy_required = 30,
@@ -1989,7 +1989,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-elgiloy",  -- #ForRegEx# - recipe
-    category = "alloy-smelting",
+    category = "sp-alloy-smelting",
     enabled = false,
     allow_productivity = true,
     energy_required = 50,
@@ -2008,7 +2008,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-maraging-steel",  -- #ForRegEx# - recipe
-    category = "alloy-smelting",
+    category = "sp-alloy-smelting",
     enabled = false,
     allow_productivity = true,
     energy_required = 24,
@@ -2025,7 +2025,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-kovar",  -- #ForRegEx# - recipe
-    category = "alloy-smelting",
+    category = "sp-alloy-smelting",
     enabled = false,
     allow_productivity = true,
     energy_required = 12,
@@ -2041,7 +2041,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-titanium-aluminum-vanadium",  -- #ForRegEx# - recipe
-    category = "alloy-smelting",
+    category = "sp-alloy-smelting",
     enabled = false,
     allow_productivity = true,
     energy_required = 16,
@@ -2057,7 +2057,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-vanadium-aluminum",  -- #ForRegEx# - recipe
-    category = "alloy-smelting",
+    category = "sp-alloy-smelting",
     enabled = false,
     allow_productivity = true,
     energy_required = 14,
@@ -2072,7 +2072,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-vanadium-steel",  -- #ForRegEx# - recipe
-    category = "alloy-smelting",
+    category = "sp-alloy-smelting",
     enabled = false,
     allow_productivity = true,
     energy_required = 14,
@@ -2090,7 +2090,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/rare-metals/rare-metals.png",
     icon_size = 64,
     mip_maps = 4,
-    category = "alloy-smelting",
+    category = "sp-alloy-smelting",
     enabled = false,
     allow_productivity = true,
     energy_required = 16,
@@ -2110,7 +2110,7 @@ data:extend({
     name = "sp-rare-metals-alloy-from-lanthanum",  -- #ForRegEx# - recipe
     icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/krastorio/icons/items-with-variations/rare-metals/rare-metals.png", 64,
                                          "__Spaghetorio__/graphics/icons/lanthanum.png", 64),
-    category = "alloy-smelting",
+    category = "sp-alloy-smelting",
     enabled = false,
     allow_productivity = true,
     energy_required = 20,
@@ -2130,7 +2130,7 @@ data:extend({
     name = "sp-rare-metals-alloy-from-cerium",  -- #ForRegEx# - recipe
     icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/krastorio/icons/items-with-variations/rare-metals/rare-metals.png", 64,
                                          "__Spaghetorio__/graphics/icons/cerium.png", 64),
-    category = "alloy-smelting",
+    category = "sp-alloy-smelting",
     enabled = false,
     allow_productivity = true,
     energy_required = 30,
@@ -2151,7 +2151,7 @@ data:extend({
     name = "sp-rare-metals-alloy-from-neodymium",  -- #ForRegEx# - recipe
     icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/krastorio/icons/items-with-variations/rare-metals/rare-metals.png", 64,
                                          "__Spaghetorio__/graphics/icons/neodymium.png", 64),
-    category = "alloy-smelting",
+    category = "sp-alloy-smelting",
     enabled = false,
     allow_productivity = true,
     energy_required = 24,
@@ -2170,7 +2170,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-metallurgic-science-pack-2",  -- #ForRegEx# - recipe
-    category = "alloy-smelting",
+    category = "sp-alloy-smelting",
     enabled = false,
     allow_productivity = true,
     energy_required = 40,
@@ -2197,7 +2197,7 @@ data:extend({
     name = "sp-boron-pillet",  -- #ForRegEx# - recipe
     icon = "__Spaghetorio__/graphics/icons/boron-pillet.png",
     icon_size = 64,
-    category = "smelting-with-fluid",
+    category = "sp-smelting-with-fluid",
     subgroup = "raw-material",
     enabled = false,
     allow_productivity = true,
@@ -2215,7 +2215,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-vanadium-plate",  -- #ForRegEx# - recipe
-    category = "smelting-with-fluid",
+    category = "sp-smelting-with-fluid",
     enabled = false,
     allow_productivity = true,
     energy_required = 10,
@@ -2230,7 +2230,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-niobium-billet",  -- #ForRegEx# - recipe
-    category = "smelting-with-fluid",
+    category = "sp-smelting-with-fluid",
     enabled = false,
     allow_productivity = true,
     energy_required = 3.6,
@@ -2244,7 +2244,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-tantalum-billet",  -- #ForRegEx# - recipe
-    category = "smelting-with-fluid",
+    category = "sp-smelting-with-fluid",
     enabled = false,
     allow_productivity = true,
     energy_required = 5,
@@ -2258,7 +2258,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-selenium-pillet",  -- #ForRegEx# - recipe
-    category = "smelting-with-fluid",
+    category = "sp-smelting-with-fluid",
     enabled = false,
     allow_productivity = true,
     energy_required = 3,
@@ -2273,7 +2273,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-rhenium",  -- #ForRegEx# - recipe
-    category = "smelting-with-fluid",
+    category = "sp-smelting-with-fluid",
     enabled = false,
     allow_productivity = true,
     energy_required = 2,
@@ -2289,7 +2289,7 @@ data:extend({
     type = "recipe",
     name = "sp-germanium",  -- #ForRegEx# - recipe
     icon = "__Spaghetorio__/graphics/icons/germanium.png",
-    category = "smelting-with-fluid",
+    category = "sp-smelting-with-fluid",
     subgroup = "processed-non-metal",
     enabled = false,
     allow_productivity = true,
@@ -3839,7 +3839,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-chemical-science-pack-3",  -- #ForRegEx# - recipe
-    category = "advanced-chemistry",
+    category = "sp-advanced-chemistry",
     enabled = false,
     allow_productivity = true,
     energy_required = 24,
@@ -3861,7 +3861,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-arsen-pillet",  -- #ForRegEx# - recipe
-    category = "advanced-chemistry",
+    category = "sp-advanced-chemistry",
     enabled = false,
     allow_productivity = true,
     energy_required = 20,
@@ -3876,7 +3876,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-arsenic-sulfide",  -- #ForRegEx# - recipe
-    category = "advanced-chemistry",
+    category = "sp-advanced-chemistry",
     enabled = false,
     allow_productivity = true,
     energy_required = 4,
@@ -3891,7 +3891,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-arsenic-iodide",  -- #ForRegEx# - recipe
-    category = "advanced-chemistry",
+    category = "sp-advanced-chemistry",
     enabled = false,
     allow_productivity = true,
     energy_required = 8,
@@ -3906,7 +3906,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-manganese-chloride",  -- #ForRegEx# - recipe
-    category = "advanced-chemistry",
+    category = "sp-advanced-chemistry",
     enabled = false,
     allow_productivity = true,
     energy_required = 2,
@@ -3921,7 +3921,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-potassium-cyanide",  -- #ForRegEx# - recipe
-    category = "advanced-chemistry",
+    category = "sp-advanced-chemistry",
     enabled = false,
     allow_productivity = true,
     energy_required = 6,
@@ -3939,7 +3939,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-lithium-oxide",  -- #ForRegEx# - recipe
-    category = "chemical-staging",
+    category = "sp-chemical-staging",
     enabled = false,
     allow_productivity = true,
     energy_required = 4,
@@ -3958,7 +3958,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/lithium-chloride/lithium-chloride.png",
     icon_size = 64,
     mip_maps = 4,
-    category = "chemical-staging",
+    category = "sp-chemical-staging",
     subgroup = "processed-resource",
     enabled = false,
     allow_productivity = true,
@@ -3975,7 +3975,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-sodium-molybdate",  -- #ForRegEx# - recipe
-    category = "chemical-staging",
+    category = "sp-chemical-staging",
     enabled = false,
     allow_productivity = true,
     energy_required = 5,
@@ -3991,7 +3991,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-potassium-permanganate-solution",  -- #ForRegEx# - recipe
-    category = "chemical-staging",
+    category = "sp-chemical-staging",
     enabled = false,
     allow_productivity = true,
     energy_required = 6,
@@ -4007,7 +4007,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-potassium-dichromate-solution",  -- #ForRegEx# - recipe
-    category = "chemical-staging",
+    category = "sp-chemical-staging",
     enabled = false,
     allow_productivity = true,
     energy_required = 4,
@@ -4023,7 +4023,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-hydrogen-cyanide",  -- #ForRegEx# - recipe
-    category = "chemical-staging",
+    category = "sp-chemical-staging",
     enabled = false,
     allow_productivity = true,
     energy_required = 1,
@@ -4038,7 +4038,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-nitric-acid",  -- #ForRegEx# - recipe
-    category = "chemical-staging",
+    category = "sp-chemical-staging",
     energy_required = 5,
     enabled = false,
     allow_productivity = true,
@@ -4061,7 +4061,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-hypochlorus-acid",  -- #ForRegEx# - recipe
-    category = "chemical-staging",
+    category = "sp-chemical-staging",
     enabled = false,
     allow_productivity = true,
     energy_required = 1,
@@ -4079,7 +4079,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/allyl-chloride.png",
     icon_size = 64,
     mip_maps = 4,
-    category = "chemical-staging",
+    category = "sp-chemical-staging",
     subgroup = "chemical",
     enabled = false,
     allow_productivity = true,
@@ -4099,7 +4099,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/epichlorohydrin.png",
     icon_size = 64,
     mip_maps = 4,
-    category = "chemical-staging",
+    category = "sp-chemical-staging",
     subgroup = "chemical",
     enabled = false,
     allow_productivity = true,
@@ -4119,7 +4119,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/glycerin.png",
     icon_size = 64,
     mip_maps = 4,
-    category = "chemical-staging",
+    category = "sp-chemical-staging",
     subgroup = "chemical",
     enabled = false,
     allow_productivity = true,
@@ -4136,7 +4136,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-calcium-hydroxide-solution",  -- #ForRegEx# - recipe
-    category = "chemical-staging",
+    category = "sp-chemical-staging",
     enabled = false,
     allow_productivity = true,
     energy_required = 1,
@@ -4151,7 +4151,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-barium-sulfamate",  -- #ForRegEx# - recipe
-    category = "chemical-staging",
+    category = "sp-chemical-staging",
     enabled = false,
     allow_productivity = true,
     energy_required = 4,
@@ -4166,7 +4166,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-potassium-chloride",  -- #ForRegEx# - recipe
-    category = "chemical-staging",
+    category = "sp-chemical-staging",
     enabled = false,
     allow_productivity = true,
     energy_required = 3,
@@ -4181,7 +4181,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-methane",  -- #ForRegEx# - recipe
-    category = "chemical-staging",
+    category = "sp-chemical-staging",
     enabled = false,
     allow_productivity = false,
     energy_required = 2,
@@ -4197,7 +4197,7 @@ data:extend({
     type = "recipe",
     name = "sp-carbon-monoxide",  -- #ForRegEx# - recipe
     icon = "__Spaghetorio__/graphics/icons/carbon-monoxide.png",
-    category = "chemical-staging",
+    category = "sp-chemical-staging",
     subgroup = "gas",
     enabled = false,
     allow_productivity = false,
@@ -4214,7 +4214,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-gallium-resin",  -- #ForRegEx# - recipe
-    category = "chemical-staging",
+    category = "sp-chemical-staging",
     enabled = false,
     allow_productivity = true,
     energy_required = 6,
@@ -4230,7 +4230,7 @@ data:extend({
     type = "recipe",
     name = "sp-indium-sulfate",  -- #ForRegEx# - recipe
     icon = "__Spaghetorio__/graphics/icons/indium-sulfate.png",
-    category = "chemical-staging",
+    category = "sp-chemical-staging",
     subgroup = "processed-resource",
     enabled = false,
     allow_productivity = false,
@@ -4249,7 +4249,7 @@ data:extend({
     name = "sp-sulfuric-acid-from-sulfur-dioxide",  -- #ForRegEx# - recipe
     icons = util.icon.overlay_small_icon("__base__/graphics/icons/fluid/sulfuric-acid.png", 64,
                                          "__Spaghetorio__/graphics/icons/sulfur-dioxide.png", 64),
-    category = "chemical-staging",
+    category = "sp-chemical-staging",
     subgroup = "chemical",
     enabled = false,
     allow_productivity = false,
@@ -4266,7 +4266,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-hydrogen-fluoride",  -- #ForRegEx# - recipe
-    category = "chemical-staging",
+    category = "sp-chemical-staging",
     enabled = false,
     allow_productivity = true,
     energy_required = 3,
@@ -4281,7 +4281,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-ammonium-sulfate",  -- #ForRegEx# - recipe
-    category = "chemical-staging",
+    category = "sp-chemical-staging",
     enabled = false,
     allow_productivity = true,
     energy_required = 3,
@@ -4297,7 +4297,7 @@ data:extend({
     type = "recipe",
     name = "sp-polyaniline",  -- #ForRegEx# - recipe
     icon = "__Spaghetorio__/graphics/icons/polyaniline.png",
-    category = "chemical-staging",
+    category = "sp-chemical-staging",
     subgroup = "chemical-product",
     enabled = false,
     allow_productivity = true,
@@ -4316,7 +4316,7 @@ data:extend({
     type = "recipe",
     name = "sp-trialkylamine",  -- #ForRegEx# - recipe
     icon = "__Spaghetorio__/graphics/icons/trialkylamine.png",
-    category = "chemical-staging",
+    category = "sp-chemical-staging",
     subgroup = "chemical",
     enabled = false,
     allow_productivity = true,
@@ -4334,7 +4334,7 @@ data:extend({
     type = "recipe",
     name = "sp-methyl-chloride",  -- #ForRegEx# - recipe
     icon = "__Spaghetorio__/graphics/icons/methyl-chloride.png",
-    category = "chemical-staging",
+    category = "sp-chemical-staging",
     subgroup = "chemical",
     enabled = false,
     allow_productivity = true,
@@ -4352,7 +4352,7 @@ data:extend({
     type = "recipe",
     name = "sp-toluene",  -- #ForRegEx# - recipe
     icon = "__Spaghetorio__/graphics/icons/toluene.png",
-    category = "chemical-staging",
+    category = "sp-chemical-staging",
     subgroup = "chemical",
     enabled = false,
     allow_productivity = true,
@@ -4370,7 +4370,7 @@ data:extend({
     type = "recipe",
     name = "sp-benzyl-chloride",  -- #ForRegEx# - recipe
     icon = "__Spaghetorio__/graphics/icons/benzyl-chloride.png",
-    category = "chemical-staging",
+    category = "sp-chemical-staging",
     subgroup = "chemical",
     enabled = false,
     allow_productivity = true,
@@ -4387,7 +4387,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-benzyltrimethylammonium-chloride",  -- #ForRegEx# - recipe
-    category = "chemical-staging",
+    category = "sp-chemical-staging",
     enabled = false,
     allow_productivity = true,
     energy_required = 2,
@@ -4402,7 +4402,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-helium",  -- #ForRegEx# - recipe
-    category = "chemical-staging",
+    category = "sp-chemical-staging",
     enabled = false,
     allow_productivity = true,
     energy_required = 4,
@@ -4422,7 +4422,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-material-science-pack-2",  -- #ForRegEx# - recipe
-    category = "chemical-staging",
+    category = "sp-chemical-staging",
     enabled = false,
     allow_productivity = true,
     energy_required = 24,
@@ -4443,7 +4443,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-chemical-science-pack-2",  -- #ForRegEx# - recipe
-    category = "chemical-staging",
+    category = "sp-chemical-staging",
     enabled = false,
     allow_productivity = true,
     energy_required = 24,
@@ -4664,7 +4664,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-boron-phosphide",  -- #ForRegEx# - recipe
-    category = "crystallizing",
+    category = "sp-crystallizing",
     enabled = false,
     allow_productivity = true,
     energy_required = 10,
@@ -4680,7 +4680,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-barium-titanate",  -- #ForRegEx# - recipe
-    category = "crystallizing",
+    category = "sp-crystallizing",
     enabled = false,
     allow_productivity = true,
     energy_required = 3,
@@ -4695,7 +4695,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-optical-glass",  -- #ForRegEx# - recipe
-    category = "crystallizing",
+    category = "sp-crystallizing",
     enabled = false,
     allow_productivity = true,
     energy_required = 4,
@@ -4712,7 +4712,7 @@ data:extend({
     name = "sp-optical-glass-from-alumina",  -- #ForRegEx# - recipe
     icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/optical-glass.png", 64,
                                          "__Spaghetorio__/graphics/icons/alumina.png", 64),
-    category = "crystallizing",
+    category = "sp-crystallizing",
     enabled = false,
     allow_productivity = true,
     energy_required = 4,
@@ -4727,7 +4727,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-cadmium-telluride",  -- #ForRegEx# - recipe
-    category = "crystallizing",
+    category = "sp-crystallizing",
     enabled = false,
     allow_productivity = true,
     energy_required = 6,
@@ -4742,7 +4742,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-copper-indium-gallium-selenide",  -- #ForRegEx# - recipe
-    category = "crystallizing",
+    category = "sp-crystallizing",
     enabled = false,
     allow_productivity = true,
     energy_required = 2,
@@ -4762,7 +4762,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/high-purity-silicon.png",
     icon_size = 64,
     scale = 0.25,
-    category = "crystallizing",
+    category = "sp-crystallizing",
     subgroup = "advanced-raw-material",
     enabled = false,
     allow_productivity = false,
@@ -4778,7 +4778,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-p-type-polysilicon",  -- #ForRegEx# - recipe
-    category = "crystallizing",
+    category = "sp-crystallizing",
     enabled = false,
     allow_productivity = true,
     energy_required = 15,
@@ -4793,7 +4793,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-n-type-polysilicon",  -- #ForRegEx# - recipe
-    category = "crystallizing",
+    category = "sp-crystallizing",
     enabled = false,
     allow_productivity = true,
     energy_required = 15,
@@ -4808,7 +4808,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-bismuth-telluride",  -- #ForRegEx# - recipe
-    category = "crystallizing",
+    category = "sp-crystallizing",
     enabled = false,
     allow_productivity = true,
     energy_required = 15,
@@ -4823,7 +4823,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-zinc-selenide",  -- #ForRegEx# - recipe
-    category = "crystallizing",
+    category = "sp-crystallizing",
     enabled = false,
     allow_productivity = true,
     energy_required = 20,
@@ -4838,7 +4838,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-aluminum-gallium-arsenide",  -- #ForRegEx# - recipe
-    category = "crystallizing",
+    category = "sp-crystallizing",
     enabled = false,
     allow_productivity = true,
     energy_required = 8,
@@ -4854,7 +4854,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-monocrystal",  -- #ForRegEx# - recipe
-    category = "crystallizing",
+    category = "sp-crystallizing",
     enabled = false,
     allow_productivity = true,
     energy_required = 30,
@@ -4873,7 +4873,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/quasicrystal.png",
     icon_size = 64,
     mip_maps = 4,
-    category = "crystallizing",
+    category = "sp-crystallizing",
     enabled = false,
     allow_productivity = true,
     energy_required = 30,
@@ -4893,7 +4893,7 @@ data:extend({
     name = "sp-quasicrystal-2",  -- #ForRegEx# - recipe
     icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/quasicrystal.png", 64,
                                          "__Spaghetorio__/graphics/icons/aluminum-sheet.png", 64),
-    category = "crystallizing",
+    category = "sp-crystallizing",
     enabled = false,
     allow_productivity = true,
     energy_required = 40,
@@ -4915,7 +4915,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-silicon-nitride",  -- #ForRegEx# - recipe
-    category = "crystallizing-with-fluid",
+    category = "sp-crystallizing-with-fluid",
     enabled = false,
     allow_productivity = true,
     energy_required = 2,
@@ -4931,7 +4931,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-titanium-nitride",  -- #ForRegEx# - recipe
-    category = "crystallizing-with-fluid",
+    category = "sp-crystallizing-with-fluid",
     enabled = false,
     allow_productivity = true,
     energy_required = 6,
@@ -4947,7 +4947,7 @@ data:extend({
     type = "recipe",
     name = "sp-selenium-dioxide-from-iron-ore",  -- #ForRegEx# - recipe
     icon = "__Spaghetorio__/graphics/icons/selenium-dioxide.png",
-    category = "crystallizing-with-fluid",
+    category = "sp-crystallizing-with-fluid",
     subgroup = "processed-resource",
     enabled = false,
     allow_productivity = true,
@@ -4966,7 +4966,7 @@ data:extend({
     name = "sp-selenium-dioxide-from-crushed-iron",  -- #ForRegEx# - recipe
     icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/selenium-dioxide.png", 64,
                                          "__Spaghetorio__/graphics/icons/crushed-iron-ore-1.png", 64),
-    category = "crystallizing-with-fluid",
+    category = "sp-crystallizing-with-fluid",
     subgroup = "processed-resource",
     enabled = false,
     allow_productivity = true,
@@ -4986,7 +4986,7 @@ data:extend({
     name = "sp-selenium-dioxide-from-copper-ore",  -- #ForRegEx# - recipe
     icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/selenium-dioxide.png", 64,
                                          "__base__/graphics/icons/copper-ore.png", 64),
-    category = "crystallizing-with-fluid",
+    category = "sp-crystallizing-with-fluid",
     subgroup = "processed-resource",
     enabled = false,
     allow_productivity = true,
@@ -5006,7 +5006,7 @@ data:extend({
     name = "sp-selenium-dioxide-from-crushed-copper",  -- #ForRegEx# - recipe
     icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/selenium-dioxide.png", 64,
                                          "__Spaghetorio__/graphics/icons/crushed-copper-ore-1.png", 64),
-    category = "crystallizing-with-fluid",
+    category = "sp-crystallizing-with-fluid",
     subgroup = "processed-resource",
     enabled = false,
     allow_productivity = true,
@@ -5024,7 +5024,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-gallium-nitride",  -- #ForRegEx# - recipe
-    category = "crystallizing-with-fluid",
+    category = "sp-crystallizing-with-fluid",
     enabled = false,
     allow_productivity = true,
     energy_required = 8,
@@ -5040,7 +5040,7 @@ data:extend({
     type = "recipe",
     name = "sp-bismuth",  -- #ForRegEx# - recipe
     icon  = "__Spaghetorio__/graphics/icons/bismuth.png",
-    category = "crystallizing-with-fluid",
+    category = "sp-crystallizing-with-fluid",
     subgroup = "processed-metal",
     enabled = false,
     allow_productivity = true,
@@ -5059,7 +5059,7 @@ data:extend({
     name = "sp-bismuth-from-crushed-tinstone",  -- #ForRegEx# - recipe
     icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/bismuth.png", 64,
                                          "__Spaghetorio__/graphics/icons/crushed-tinstone-1.png", 64),
-    category = "crystallizing-with-fluid",
+    category = "sp-crystallizing-with-fluid",
     subgroup = "processed-metal",
     enabled = false,
     allow_productivity = true,
@@ -5077,7 +5077,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-infrared-filter",  -- #ForRegEx# - recipe
-    category = "crystallizing-with-fluid",
+    category = "sp-crystallizing-with-fluid",
     enabled = false,
     allow_productivity = true,
     energy_required = 1.6,
@@ -5093,7 +5093,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-mercury-cadmium-telluride",  -- #ForRegEx# - recipe
-    category = "crystallizing-with-fluid",
+    category = "sp-crystallizing-with-fluid",
     enabled = false,
     allow_productivity = true,
     energy_required = 3,
@@ -5113,7 +5113,7 @@ data:extend({
     type = "recipe",
     name = "sp-beryllium-fluoride",  -- #ForRegEx# - recipe
     icon = "__Spaghetorio__/graphics/icons/beryllium-fluoride.png",
-    category = "incinerating",
+    category = "sp-incinerating",
     enabled = false,
     allow_productivity = true,
     energy_required = 2,
@@ -5129,7 +5129,7 @@ data:extend({
     type = "recipe",
     name = "sp-beryllium-oxide",  -- #ForRegEx# - recipe
     icon = "__Spaghetorio__/graphics/icons/beryllium-oxide.png",
-    category = "incinerating",
+    category = "sp-incinerating",
     enabled = false,
     allow_productivity = true,
     energy_required = 5,
@@ -5144,7 +5144,7 @@ data:extend({
     type = "recipe",
     name = "sp-zinc-oxide",  -- #ForRegEx# - recipe
     icon = "__Spaghetorio__/graphics/icons/zinc-oxide.png",
-    category = "incinerating",
+    category = "sp-incinerating",
     subgroup = "processed-resource",
     enabled = false,
     allow_productivity = false,
@@ -5162,7 +5162,7 @@ data:extend({
     type = "recipe",
     name = "sp-cadmium",  -- #ForRegEx# - recipe
     icon = "__Spaghetorio__/graphics/icons/cadmium.png",
-    category = "incinerating",
+    category = "sp-incinerating",
     subgroup = "processed-metal",
     enabled = false,
     allow_productivity = true,
@@ -5181,7 +5181,7 @@ data:extend({
     name = "sp-cadmium-from-crushed-resource",  -- #ForRegEx# - recipe
     icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/cadmium.png", 64,
                                          "__Spaghetorio__/graphics/icons/crushed-zinc-ore-1.png", 64),
-    category = "incinerating",
+    category = "sp-incinerating",
     subgroup = "processed-metal",
     enabled = false,
     allow_productivity = true,
@@ -5200,7 +5200,7 @@ data:extend({
     type = "recipe",
     name = "sp-incinerate-wood",  -- #ForRegEx# - recipe
     icons = util.icon.create_incineration_recipe_icon(data.raw.item["wood"], data.raw.fluid["sp-carbon-dioxide"]),
-    category = "incinerating",
+    category = "sp-incinerating",
     subgroup = "incinerate-resource",
     enabled = false,
     allow_productivity = true,
@@ -5217,7 +5217,7 @@ data:extend({
     type = "recipe",
     name = "sp-incinerate-coal",  -- #ForRegEx# - recipe
     icons = util.icon.create_incineration_recipe_icon(data.raw.item["coal"], data.raw.fluid["sp-carbon-dioxide"]),
-    category = "incinerating",
+    category = "sp-incinerating",
     subgroup = "incinerate-resource",
     enabled = false,
     allow_productivity = true,
@@ -5234,7 +5234,7 @@ data:extend({
     type = "recipe",
     name = "sp-incinerate-coke",  -- #ForRegEx# - recipe
     icons = util.icon.create_incineration_recipe_icon(data.raw.item["sp-coke"], data.raw.fluid["sp-carbon-dioxide"]),
-    category = "incinerating",
+    category = "sp-incinerating",
     subgroup = "incinerate-resource",
     enabled = false,
     allow_productivity = true,
@@ -5251,7 +5251,7 @@ data:extend({
     type = "recipe",
     name = "sp-incinerate-carbon",  -- #ForRegEx# - recipe
     icons = util.icon.create_incineration_recipe_icon(data.raw.item["carbon"], data.raw.fluid["sp-carbon-dioxide"]),
-    category = "incinerating",
+    category = "sp-incinerating",
     subgroup = "incinerate-resource",
     enabled = false,
     allow_productivity = true,
@@ -5268,7 +5268,7 @@ data:extend({
     type = "recipe",
     name = "sp-incinerate-methane",  -- #ForRegEx# - recipe
     icons = util.icon.create_incineration_recipe_icon(data.raw.fluid["sp-methane"], data.raw.fluid["sp-carbon-dioxide"]),
-    category = "incinerating",
+    category = "sp-incinerating",
     subgroup = "incinerate-fluid",
     enabled = false,
     allow_productivity = true,
@@ -5285,7 +5285,7 @@ data:extend({
     type = "recipe",
     name = "sp-incinerate-ethylene",  -- #ForRegEx# - recipe
     icons = util.icon.create_incineration_recipe_icon(data.raw.fluid["sp-ethylene"], data.raw.fluid["sp-carbon-dioxide"]),
-    category = "incinerating",
+    category = "sp-incinerating",
     subgroup = "incinerate-fluid",
     enabled = false,
     allow_productivity = true,
@@ -5302,7 +5302,7 @@ data:extend({
     type = "recipe",
     name = "sp-incinerate-petroleum-gas",  -- #ForRegEx# - recipe
     icons = util.icon.create_incineration_recipe_icon(data.raw.fluid["petroleum-gas"], data.raw.fluid["sp-carbon-dioxide"]),
-    category = "incinerating",
+    category = "sp-incinerating",
     subgroup = "incinerate-fluid",
     enabled = false,
     allow_productivity = true,
@@ -5319,7 +5319,7 @@ data:extend({
     type = "recipe",
     name = "sp-incinerate-light-oil",  -- #ForRegEx# - recipe
     icons = util.icon.create_incineration_recipe_icon(data.raw.fluid["light-oil"], data.raw.fluid["sp-carbon-monoxide"]),
-    category = "incinerating",
+    category = "sp-incinerating",
     subgroup = "incinerate-fluid",
     enabled = false,
     allow_productivity = true,
@@ -5336,7 +5336,7 @@ data:extend({
     type = "recipe",
     name = "sp-incinerate-heavy-oil",  -- #ForRegEx# - recipe
     icons = util.icon.create_incineration_recipe_icon(data.raw.fluid["heavy-oil"], data.raw.fluid["sp-carbon-monoxide"]),
-    category = "incinerating",
+    category = "sp-incinerating",
     subgroup = "incinerate-fluid",
     enabled = false,
     allow_productivity = true,
@@ -5353,7 +5353,7 @@ data:extend({
     type = "recipe",
     name = "sp-incinerate-sulfuric-acid",  -- #ForRegEx# - recipe
     icons = util.icon.create_incineration_recipe_icon(data.raw.fluid["sulfuric-acid"], data.raw.fluid["sp-sulfur-dioxide"]),
-    category = "incinerating",
+    category = "sp-incinerating",
     subgroup = "incinerate-fluid",
     enabled = false,
     allow_productivity = true,
@@ -5371,7 +5371,7 @@ data:extend({
     type = "recipe",
     name = "sp-incinerate-sulfur",  -- #ForRegEx# - recipe
     icons = util.icon.create_incineration_recipe_icon(data.raw.item["sulfur"], data.raw.fluid["sp-sulfur-dioxide"]),
-    category = "incinerating",
+    category = "sp-incinerating",
     subgroup = "incinerate-resource",
     enabled = false,
     allow_productivity = true,
@@ -5391,7 +5391,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-ammonium-persulfate",  -- #ForRegEx# - recipe
-    category = "oxidizing",
+    category = "sp-oxidizing",
     enabled = false,
     allow_productivity = true,
     energy_required = 5,
@@ -5406,7 +5406,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-hydrogen-peroxide",  -- #ForRegEx# - recipe
-    category = "oxidizing",
+    category = "sp-oxidizing",
     enabled = false,
     allow_productivity = true,
     energy_required = 10,
@@ -5421,7 +5421,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-peroxymonosulfuric-acid",  -- #ForRegEx# - recipe
-    category = "oxidizing",
+    category = "sp-oxidizing",
     enabled = false,
     allow_productivity = true,
     energy_required = 8,
@@ -5436,7 +5436,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-sulfur-dioxide",  -- #ForRegEx# - recipe
-    category = "oxidizing",
+    category = "sp-oxidizing",
     enabled = false,
     allow_productivity = true,
     energy_required = 10,
@@ -5451,7 +5451,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-dimethyl-sulfoxide",  -- #ForRegEx# - recipe
-    category = "oxidizing",
+    category = "sp-oxidizing",
     enabled = false,
     allow_productivity = true,
     energy_required = 3,
@@ -6055,7 +6055,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-boron-carbide",  -- #ForRegEx# - recipe
-    category = "induction-hardening",
+    category = "sp-induction-hardening",
     enabled = false,
     allow_productivity = true,
     energy_required = 20,
@@ -6071,7 +6071,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-boron-silicade",  -- #ForRegEx# - recipe
-    category = "induction-hardening",
+    category = "sp-induction-hardening",
     enabled = false,
     allow_productivity = true,
     energy_required = 12,
@@ -6087,7 +6087,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-lead-molybdate",  -- #ForRegEx# - recipe
-    category = "induction-hardening",
+    category = "sp-induction-hardening",
     enabled = false,
     allow_productivity = true,
     energy_required = 15,
@@ -6102,7 +6102,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-gearshaft",  -- #ForRegEx# - recipe
-    category = "induction-hardening",
+    category = "sp-induction-hardening",
     enabled = false,
     allow_productivity = true,
     energy_required = 3,
@@ -6117,7 +6117,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-heat-resistant-tile",  -- #ForRegEx# - recipe
-    category = "induction-hardening",
+    category = "sp-induction-hardening",
     enabled = false,
     allow_productivity = true,
     energy_required = 5.2,
@@ -6133,7 +6133,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-titanium-carbide",  -- #ForRegEx# - recipe
-    category = "induction-hardening",
+    category = "sp-induction-hardening",
     enabled = false,
     allow_productivity = true,
     energy_required = 2.4,
@@ -6149,7 +6149,7 @@ data:extend({
     type = "recipe",
     name = "sp-diamond",  -- #ForRegEx# - recipe
     icon = "__Spaghetorio__/graphics/icons/diamond.png",
-    category = "induction-hardening",
+    category = "sp-induction-hardening",
     subgroup = "ceramic",
     enabled = false,
     allow_productivity = false,
@@ -6166,7 +6166,7 @@ data:extend({
     type = "recipe",
     name = "sp-sapphire",  -- #ForRegEx# - recipe
     icon = "__Spaghetorio__/graphics/icons/sapphire.png",
-    category = "induction-hardening",
+    category = "sp-induction-hardening",
     subgroup = "ceramic",
     enabled = false,
     allow_productivity = false,
@@ -10089,7 +10089,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-blunagium-bar",  -- #ForRegEx# - recipe
-    category = "intermediate-smelting",
+    category = "sp-intermediate-smelting",
     enabled = false,
     allow_productivity = true,
     energy_required = 6,
@@ -10541,7 +10541,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-blunagium-rocket",  -- #ForRegEx# - recipe
-    category = "blunagium-rocket-building",
+    category = "sp-blunagium-rocket-building",
     enabled = false,
     allow_productivity = true,
     hide_from_player_crafting = true,
@@ -10608,7 +10608,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-grobgnum-rocket",  -- #ForRegEx# - recipe
-    category = "grobgnum-rocket-building",
+    category = "sp-grobgnum-rocket-building",
     enabled = false,
     allow_productivity = true,
     hide_from_player_crafting = true,
@@ -10676,7 +10676,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-rukite-rocket",  -- #ForRegEx# - recipe
-    category = "rukite-rocket-building",
+    category = "sp-rukite-rocket-building",
     enabled = false,
     allow_productivity = true,
     hide_from_player_crafting = true,
@@ -10742,7 +10742,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-yemnuth-rocket",  -- #ForRegEx# - recipe
-    category = "yemnuth-rocket-building",
+    category = "sp-yemnuth-rocket-building",
     enabled = false,
     allow_productivity = true,
     hide_from_player_crafting = true,
@@ -10770,7 +10770,7 @@ data:extend({
     name = "sp-speed-module-4",  -- #ForRegEx# - recipe
     icon_size = 64,
     mip_maps = 4,
-    category = "alien-tech-manufacturing",
+    category = "sp-alien-tech-manufacturing",
     enabled = false,
     allow_productivity = true,
     energy_required = 40,
@@ -10791,7 +10791,7 @@ data:extend({
     name = "sp-efficiency-module-4",  -- #ForRegEx# - recipe
     icon_size = 64,
     mip_maps = 4,
-    category = "alien-tech-manufacturing",
+    category = "sp-alien-tech-manufacturing",
     enabled = false,
     allow_productivity = true,
     energy_required = 40,
@@ -10814,7 +10814,7 @@ data:extend({
     name = "sp-productivity-module-4",  -- #ForRegEx# - recipe
     icon_size = 64,
     mip_maps = 4,
-    category = "alien-tech-manufacturing",
+    category = "sp-alien-tech-manufacturing",
     enabled = false,
     allow_productivity = true,
     energy_required = 40,
@@ -12647,7 +12647,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-blunagium-solenoid",  -- #ForRegEx# - recipe
-    category = "alien-tech-manufacturing",
+    category = "sp-alien-tech-manufacturing",
     enabled = false,
     allow_productivity = true,
     energy_required = 20,
@@ -12663,7 +12663,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-boson-blossom",  -- #ForRegEx# - recipe
-    category = "alien-tech-manufacturing",
+    category = "sp-alien-tech-manufacturing",
     enabled = false,
     allow_productivity = true,
     energy_required = 60,
@@ -12680,7 +12680,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-gravitational-wave-bridge",  -- #ForRegEx# - recipe
-    category = "alien-tech-manufacturing",
+    category = "sp-alien-tech-manufacturing",
     enabled = false,
     allow_productivity = true,
     energy_required = 30,
@@ -12698,7 +12698,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-gravitational-wave-interferometer",  -- #ForRegEx# - recipe
-    category = "alien-tech-manufacturing",
+    category = "sp-alien-tech-manufacturing",
     enabled = false,
     allow_productivity = true,
     energy_required = 30,
@@ -12715,7 +12715,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-gravitational-wave-splitter",  -- #ForRegEx# - recipe
-    category = "alien-tech-manufacturing",
+    category = "sp-alien-tech-manufacturing",
     enabled = false,
     allow_productivity = true,
     energy_required = 30,
@@ -12733,7 +12733,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-bio-capacitor",  -- #ForRegEx# - recipe
-    category = "alien-tech-manufacturing",
+    category = "sp-alien-tech-manufacturing",
     enabled = false,
     allow_productivity = true,
     energy_required = 24,
@@ -12755,7 +12755,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-neural-fusion-card",  -- #ForRegEx# - recipe
-    category = "alien-tech-manufacturing",
+    category = "sp-alien-tech-manufacturing",
     enabled = false,
     allow_productivity = true,
     energy_required = 30,
@@ -12777,7 +12777,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-neuropulse-module",  -- #ForRegEx# - recipe
-    category = "alien-tech-manufacturing",
+    category = "sp-alien-tech-manufacturing",
     enabled = false,
     allow_productivity = true,
     energy_required = 36,
@@ -12798,7 +12798,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-synaptic-core-chip",  -- #ForRegEx# - recipe
-    category = "alien-tech-manufacturing",
+    category = "sp-alien-tech-manufacturing",
     enabled = false,
     allow_productivity = true,
     energy_required = 40,
@@ -12820,7 +12820,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-alpha-wave-tray-array",  -- #ForRegEx# - recipe
-    category = "alien-tech-manufacturing",
+    category = "sp-alien-tech-manufacturing",
     enabled = false,
     allow_productivity = true,
     energy_required = 30,
@@ -12844,7 +12844,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-radiation-channeler",  -- #ForRegEx# - recipe
-    category = "alien-tech-manufacturing",
+    category = "sp-alien-tech-manufacturing",
     enabled = false,
     allow_productivity = true,
     energy_required = 24,
@@ -12862,7 +12862,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-ultra-violet-processor",  -- #ForRegEx# - recipe
-    category = "alien-tech-manufacturing",
+    category = "sp-alien-tech-manufacturing",
     enabled = false,
     allow_productivity = true,
     energy_required = 8,
@@ -12881,7 +12881,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-graphene-chip",  -- #ForRegEx# - recipe
-    category = "alien-tech-manufacturing",
+    category = "sp-alien-tech-manufacturing",
     enabled = false,
     allow_productivity = true,
     energy_required = 10,
@@ -12900,7 +12900,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-holo-grip-controller",  -- #ForRegEx# - recipe
-    category = "alien-tech-manufacturing",
+    category = "sp-alien-tech-manufacturing",
     enabled = false,
     allow_productivity = true,
     energy_required = 15,
@@ -12920,7 +12920,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-energy-control-unit",  -- #ForRegEx# - recipe
-    category = "alien-tech-manufacturing",
+    category = "sp-alien-tech-manufacturing",
     enabled = false,
     allow_productivity = true,
     energy_required = 16,
@@ -12939,7 +12939,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-imersium-gear-wheel",  -- #ForRegEx# - recipe
-    category = "alien-tech-manufacturing",
+    category = "sp-alien-tech-manufacturing",
     enabled = false,
     allow_productivity = true,
     energy_required = 6,
@@ -12956,7 +12956,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-rukite-gear-wheel",  -- #ForRegEx# - recipe
-    category = "alien-tech-manufacturing",
+    category = "sp-alien-tech-manufacturing",
     enabled = false,
     allow_productivity = true,
     energy_required = 24,
@@ -12973,7 +12973,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-rukite-gearbox",  -- #ForRegEx# - recipe
-    category = "alien-tech-manufacturing",
+    category = "sp-alien-tech-manufacturing",
     enabled = false,
     allow_productivity = true,
     energy_required = 10,
@@ -12991,7 +12991,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-collapsed-orbitals",  -- #ForRegEx# - recipe
-    category = "matter-condensing",
+    category = "sp-matter-condensing",
     enabled = false,
     allow_productivity = true,
     energy_required = 10,
@@ -13007,7 +13007,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-entangled-leptons",  -- #ForRegEx# - recipe
-    category = "matter-condensing",
+    category = "sp-matter-condensing",
     enabled = false,
     allow_productivity = true,
     energy_required = 20,
@@ -13023,7 +13023,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-gluon-orb",  -- #ForRegEx# - recipe
-    category = "matter-condensing",
+    category = "sp-matter-condensing",
     enabled = false,
     allow_productivity = true,
     energy_required = 16,
@@ -13041,7 +13041,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-neutrino-stream-source",  -- #ForRegEx# - recipe
-    category = "matter-condensing",
+    category = "sp-matter-condensing",
     enabled = false,
     allow_productivity = true,
     energy_required = 60,
@@ -13058,7 +13058,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-quantized-orbital-flower",  -- #ForRegEx# - recipe
-    category = "matter-condensing",
+    category = "sp-matter-condensing",
     enabled = false,
     allow_productivity = true,
     energy_required = 80,
@@ -13077,7 +13077,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-quark-sphere",  -- #ForRegEx# - recipe
-    category = "matter-condensing",
+    category = "sp-matter-condensing",
     enabled = false,
     allow_productivity = true,
     energy_required = 40,
@@ -13094,7 +13094,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-trapped-quantum-energy",  -- #ForRegEx# - recipe
-    category = "matter-condensing",
+    category = "sp-matter-condensing",
     enabled = false,
     allow_productivity = true,
     energy_required = 45,
@@ -13182,7 +13182,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-frictionless-bearing",  -- #ForRegEx# - recipe
-    category = "alien-tech-manufacturing",
+    category = "sp-alien-tech-manufacturing",
     enabled = false,
     allow_productivity = true,
     energy_required = 36,
@@ -13199,7 +13199,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-frictionless-joint",  -- #ForRegEx# - recipe
-    category = "alien-tech-manufacturing",
+    category = "sp-alien-tech-manufacturing",
     enabled = false,
     allow_productivity = true,
     energy_required = 6,
@@ -13218,7 +13218,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-quantum-relativity-compute-unit",  -- #ForRegEx# - recipe
-    category = "alien-tech-manufacturing",
+    category = "sp-alien-tech-manufacturing",
     enabled = false,
     allow_productivity = true,
     energy_required = 18,
@@ -13237,7 +13237,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-quantum-stream-supply",  -- #ForRegEx# - recipe
-    category = "alien-tech-manufacturing",
+    category = "sp-alien-tech-manufacturing",
     enabled = false,
     allow_productivity = true,
     energy_required = 16,
@@ -13256,7 +13256,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-quantum-switch",  -- #ForRegEx# - recipe
-    category = "alien-tech-manufacturing",
+    category = "sp-alien-tech-manufacturing",
     enabled = false,
     allow_productivity = true,
     energy_required = 10,
@@ -13274,7 +13274,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-subatomic-condenser",  -- #ForRegEx# - recipe
-    category = "alien-tech-manufacturing",
+    category = "sp-alien-tech-manufacturing",
     enabled = false,
     allow_productivity = true,
     energy_required = 4,
@@ -13324,7 +13324,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-charged-slab",  -- #ForRegEx# - recipe
-    category = "alien-tech-manufacturing",
+    category = "sp-alien-tech-manufacturing",
     enabled = false,
     allow_productivity = true,
     energy_required = 100,
@@ -13339,7 +13339,7 @@ data:extend({
   {
     type = "recipe",
     name =  "sp-extreme-heat-source",  -- #ForRegEx# - recipe
-    category = "alien-tech-manufacturing",
+    category = "sp-alien-tech-manufacturing",
     enabled = false,
     allow_productivity = true,
     energy_required = 20,
@@ -13357,7 +13357,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-grobgnum-optics",  -- #ForRegEx# - recipe
-    category = "alien-tech-manufacturing",
+    category = "sp-alien-tech-manufacturing",
     enabled = false,
     allow_productivity = true,
     energy_required = 24,
@@ -13374,7 +13374,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-proton-neutron-frame",  -- #ForRegEx# - recipe
-    category = "alien-tech-manufacturing",
+    category = "sp-alien-tech-manufacturing",
     enabled = false,
     allow_productivity = true,
     energy_required = 24,
@@ -13391,7 +13391,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-proton-neutron-superconductor",  -- #ForRegEx# - recipe
-    category = "alien-tech-manufacturing",
+    category = "sp-alien-tech-manufacturing",
     enabled = false,
     allow_productivity = true,
     energy_required = 450,
@@ -13442,7 +13442,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-extreme-data-transfer-controller",  -- #ForRegEx# - recipe
-    category = "alien-tech-manufacturing",
+    category = "sp-alien-tech-manufacturing",
     enabled = false,
     allow_productivity = true,
     energy_required = 20,
@@ -13461,7 +13461,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-information-cube",  -- #ForRegEx# - recipe
-    category = "alien-tech-manufacturing",
+    category = "sp-alien-tech-manufacturing",
     enabled = false,
     allow_productivity = true,
     energy_required = 150,
@@ -13484,7 +13484,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-universal-storage-drive",  -- #ForRegEx# - recipe
-    category = "alien-tech-manufacturing",
+    category = "sp-alien-tech-manufacturing",
     enabled = false,
     allow_productivity = true,
     energy_required = 40,
@@ -13503,7 +13503,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-lossless-power-connector",  -- #ForRegEx# - recipe
-    category = "alien-tech-manufacturing",
+    category = "sp-alien-tech-manufacturing",
     enabled = false,
     allow_productivity = true,
     energy_required = 6,
@@ -13521,7 +13521,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-miniaturized-star-core-stabilizer",  -- #ForRegEx# - recipe
-    category = "alien-tech-manufacturing",
+    category = "sp-alien-tech-manufacturing",
     enabled = false,
     allow_productivity = true,
     energy_required = 120,
@@ -13543,7 +13543,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-miniaturized-stellar-bridge",  -- #ForRegEx# - recipe
-    category = "alien-tech-manufacturing",
+    category = "sp-alien-tech-manufacturing",
     enabled = false,
     allow_productivity = true,
     energy_required = 24,
@@ -13561,7 +13561,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-neutrino-charger",  -- #ForRegEx# - recipe
-    category = "alien-tech-manufacturing",
+    category = "sp-alien-tech-manufacturing",
     enabled = false,
     allow_productivity = true,
     energy_required = 24,
@@ -13578,7 +13578,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-sideral-seal",  -- #ForRegEx# - recipe
-    category = "alien-tech-manufacturing",
+    category = "sp-alien-tech-manufacturing",
     enabled = false,
     allow_productivity = true,
     energy_required = 16,
@@ -13596,7 +13596,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-energy-channeler",  -- #ForRegEx# - recipe
-    category = "alien-tech-manufacturing",
+    category = "sp-alien-tech-manufacturing",
     enabled = false,
     allow_productivity = true,
     energy_required = 8,
@@ -13615,7 +13615,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-antimatter-engine",  -- #ForRegEx# - recipe
-    category = "alien-tech-manufacturing",
+    category = "sp-alien-tech-manufacturing",
     enabled = false,
     allow_productivity = true,
     energy_required = 100,
@@ -13638,7 +13638,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-dark-energy-harvester",  -- #ForRegEx# - recipe
-    category = "alien-tech-manufacturing",
+    category = "sp-alien-tech-manufacturing",
     enabled = false,
     allow_productivity = true,
     energy_required = 75,
@@ -13657,7 +13657,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-dark-matter-field-generator",  -- #ForRegEx# - recipe
-    category = "alien-tech-manufacturing",
+    category = "sp-alien-tech-manufacturing",
     enabled = false,
     allow_productivity = true,
     energy_required = 150,
@@ -13674,7 +13674,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-hadron-beam-charger",  -- #ForRegEx# - recipe
-    category = "alien-tech-manufacturing",
+    category = "sp-alien-tech-manufacturing",
     enabled = false,
     allow_productivity = true,
     energy_required = 60,
@@ -13693,7 +13693,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-interdimensional-prism-chamber",  -- #ForRegEx# - recipe
-    category = "alien-tech-manufacturing",
+    category = "sp-alien-tech-manufacturing",
     enabled = false,
     allow_productivity = true,
     energy_required = 100,
@@ -13712,7 +13712,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-omni-pulse-generator",  -- #ForRegEx# - recipe
-    category = "alien-tech-manufacturing",
+    category = "sp-alien-tech-manufacturing",
     enabled = false,
     allow_productivity = true,
     energy_required = 80,
@@ -13730,7 +13730,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-quark-gluon-plasma-container",  -- #ForRegEx# - recipe
-    category = "alien-tech-manufacturing",
+    category = "sp-alien-tech-manufacturing",
     enabled = false,
     allow_productivity = true,
     energy_required = 12,
@@ -13748,7 +13748,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-quark-gluon-probe",  -- #ForRegEx# - recipe
-    category = "alien-tech-manufacturing",
+    category = "sp-alien-tech-manufacturing",
     enabled = false,
     allow_productivity = true,
     energy_required = 120,
@@ -13767,7 +13767,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-relativity-condenser",  -- #ForRegEx# - recipe
-    category = "alien-tech-manufacturing",
+    category = "sp-alien-tech-manufacturing",
     enabled = false,
     allow_productivity = true,
     energy_required = 100,
@@ -13786,7 +13786,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-sideral-compute-core",  -- #ForRegEx# - recipe
-    category = "alien-tech-manufacturing",
+    category = "sp-alien-tech-manufacturing",
     enabled = false,
     allow_productivity = true,
     energy_required = 180,
@@ -13810,7 +13810,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-dark-matter-mining-satellite",  -- #ForRegEx# - recipe
-    category = "alien-tech-manufacturing",
+    category = "sp-alien-tech-manufacturing",
     enabled = false,
     allow_productivity = true,
     energy_required = 40,
@@ -13831,7 +13831,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-dark-matter",  -- #ForRegEx# - recipe
-    category = "alien-tech-manufacturing",
+    category = "sp-alien-tech-manufacturing",
     enabled = false,
     allow_productivity = true,
     energy_required = 8,
@@ -13845,7 +13845,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-antimatter",  -- #ForRegEx# - recipe
-    category = "alien-tech-manufacturing",
+    category = "sp-alien-tech-manufacturing",
     enabled = false,
     allow_productivity = true,
     energy_required = 12,
@@ -13861,7 +13861,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-dark-energy",  -- #ForRegEx# - recipe
-    category = "alien-tech-manufacturing",
+    category = "sp-alien-tech-manufacturing",
     enabled = false,
     allow_productivity = true,
     energy_required = 0.01,
@@ -13887,7 +13887,7 @@ data:extend({
                                                           "green"),
     icon_size = 64,
     mip_maps = 4,
-    category = "acrosphere-conversion",
+    category = "sp-acrosphere-conversion",
     subgroup = "sp-basic-acrosphere-conversion",
     enabled = false,
     allow_productivity = true,
@@ -13912,7 +13912,7 @@ data:extend({
                                                           "green"),
     icon_size = 64,
     mip_maps = 4,
-    category = "acrosphere-conversion",
+    category = "sp-acrosphere-conversion",
     subgroup = "sp-basic-acrosphere-conversion",
     enabled = false,
     allow_productivity = true,
@@ -13937,7 +13937,7 @@ data:extend({
                                                          "green"),
     icon_size = 64,
     mip_maps = 4,
-    category = "acrosphere-conversion",
+    category = "sp-acrosphere-conversion",
     subgroup = "sp-basic-acrosphere-conversion",
     enabled = false,
     allow_productivity = true,
@@ -13962,7 +13962,7 @@ data:extend({
                                                           "green"),
     icon_size = 64,
     mip_maps = 4,
-    category = "acrosphere-conversion",
+    category = "sp-acrosphere-conversion",
     subgroup = "sp-basic-acrosphere-conversion",
     enabled = false,
     allow_productivity = true,
@@ -13987,7 +13987,7 @@ data:extend({
                                                           "green"),
     icon_size = 64,
     mip_maps = 4,
-    category = "acrosphere-conversion",
+    category = "sp-acrosphere-conversion",
     subgroup = "sp-basic-acrosphere-conversion",
     enabled = false,
     allow_productivity = true,
@@ -14014,7 +14014,7 @@ data:extend({
                                                      "red"),
     icon_size = 64,
     mip_maps = 4,
-    category = "acrosphere-conversion",
+    category = "sp-acrosphere-conversion",
     subgroup = "sp-advanced-acrosphere-conversion",
     enabled = false,
     allow_productivity = true,
@@ -14043,7 +14043,7 @@ data:extend({
                                                      "red"),
     icon_size = 64,
     mip_maps = 4,
-    category = "acrosphere-conversion",
+    category = "sp-acrosphere-conversion",
     subgroup = "sp-advanced-acrosphere-conversion",
     enabled = false,
     allow_productivity = true,
@@ -14072,7 +14072,7 @@ data:extend({
                                                      "red"),
     icon_size = 64,
     mip_maps = 4,
-    category = "acrosphere-conversion",
+    category = "sp-acrosphere-conversion",
     subgroup = "sp-advanced-acrosphere-conversion",
     enabled = false,
     allow_productivity = true,
@@ -14101,7 +14101,7 @@ data:extend({
                                                      "red"),
     icon_size = 64,
     mip_maps = 4,
-    category = "acrosphere-conversion",
+    category = "sp-acrosphere-conversion",
     subgroup = "sp-advanced-acrosphere-conversion",
     enabled = false,
     allow_productivity = true,
@@ -14124,7 +14124,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/acrocrystal.png",
     icon_size = 64,
     mip_maps = 4,
-    category = "acrosphere-conversion",
+    category = "sp-acrosphere-conversion",
     subgroup = "sp-acroproduct",
     enabled = false,
     allow_productivity = true,
@@ -14150,7 +14150,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/acromatter.png",
     icon_size = 64,
     mip_maps = 4,
-    category = "acrosphere-conversion",
+    category = "sp-acrosphere-conversion",
     subgroup = "sp-acroproduct",
     enabled = false,
     allow_productivity = true,
@@ -14176,7 +14176,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/acrovoid.png",
     icon_size = 64,
     mip_maps = 4,
-    category = "acrosphere-conversion",
+    category = "sp-acrosphere-conversion",
     subgroup = "sp-acroproduct",
     enabled = false,
     allow_productivity = true,
@@ -14207,7 +14207,7 @@ data:extend({
                                                          "__Spaghetorio__/graphics/icons/acrocrystal.png"),
     icon_size = 64,
     mip_maps = 4,
-    category = "acroproduct-conversion-with-acrocrystal",
+    category = "sp-acroproduct-conversion-with-acrocrystal",
     subgroup = "enriched-resource-from-acrocrystal",
     enabled = false,
     allow_productivity = true,
@@ -14237,7 +14237,7 @@ data:extend({
                                                          "__Spaghetorio__/graphics/icons/acrocrystal.png"),
     icon_size = 64,
     mip_maps = 4,
-    category = "acroproduct-conversion-with-acrocrystal",
+    category = "sp-acroproduct-conversion-with-acrocrystal",
     subgroup = "enriched-resource-from-acrocrystal",
     enabled = false,
     allow_productivity = true,
@@ -14269,7 +14269,7 @@ data:extend({
                                                          "__Spaghetorio__/graphics/icons/acrocrystal.png"),
     icon_size = 64,
     mip_maps = 4,
-    category = "acroproduct-conversion-with-acrocrystal",
+    category = "sp-acroproduct-conversion-with-acrocrystal",
     subgroup = "enriched-resource-from-acrocrystal",
     enabled = false,
     allow_productivity = true,
@@ -14301,7 +14301,7 @@ data:extend({
                                                          "__Spaghetorio__/graphics/icons/acrocrystal.png"),
     icon_size = 64,
     mip_maps = 4,
-    category = "acroproduct-conversion-with-acrocrystal",
+    category = "sp-acroproduct-conversion-with-acrocrystal",
     subgroup = "enriched-resource-from-acrocrystal",
     enabled = false,
     allow_productivity = true,
@@ -14331,7 +14331,7 @@ data:extend({
                                                          "__Spaghetorio__/graphics/icons/acrocrystal.png"),
     icon_size = 64,
     mip_maps = 4,
-    category = "acroproduct-conversion-with-acrocrystal",
+    category = "sp-acroproduct-conversion-with-acrocrystal",
     subgroup = "enriched-resource-from-acrocrystal",
     enabled = false,
     allow_productivity = true,
@@ -14361,7 +14361,7 @@ data:extend({
                                                          "__Spaghetorio__/graphics/icons/acrocrystal.png"),
     icon_size = 64,
     mip_maps = 4,
-    category = "acroproduct-conversion-with-acrocrystal",
+    category = "sp-acroproduct-conversion-with-acrocrystal",
     subgroup = "enriched-resource-from-acrocrystal",
     enabled = false,
     allow_productivity = true,
@@ -14390,7 +14390,7 @@ data:extend({
                                                          "__Spaghetorio__/graphics/icons/acrocrystal.png"),
     icon_size = 64,
     mip_maps = 4,
-    category = "acroproduct-conversion-with-acrocrystal",
+    category = "sp-acroproduct-conversion-with-acrocrystal",
     subgroup = "enriched-resource-from-acrocrystal",
     enabled = false,
     allow_productivity = true,
@@ -14420,7 +14420,7 @@ data:extend({
                                                          "__Spaghetorio__/graphics/icons/acrocrystal.png"),
     icon_size = 64,
     mip_maps = 4,
-    category = "acroproduct-conversion-with-acrocrystal",
+    category = "sp-acroproduct-conversion-with-acrocrystal",
     subgroup = "enriched-resource-from-acrocrystal",
     enabled = false,
     allow_productivity = true,
@@ -14449,7 +14449,7 @@ data:extend({
                                                          "__Spaghetorio__/graphics/icons/acrocrystal.png"),
     icon_size = 64,
     mip_maps = 4,
-    category = "acroproduct-conversion-with-acrocrystal",
+    category = "sp-acroproduct-conversion-with-acrocrystal",
     subgroup = "enriched-resource-from-acrocrystal",
     enabled = false,
     allow_productivity = true,
@@ -14479,7 +14479,7 @@ data:extend({
                                                          "__Spaghetorio__/graphics/icons/acrocrystal.png"),
     icon_size = 64,
     mip_maps = 4,
-    category = "acroproduct-conversion-with-acrocrystal",
+    category = "sp-acroproduct-conversion-with-acrocrystal",
     subgroup = "enriched-resource-from-acrocrystal",
     enabled = false,
     allow_productivity = true,
@@ -14510,7 +14510,7 @@ data:extend({
                                                          "__Spaghetorio__/graphics/icons/acrocrystal.png"),
     icon_size = 64,
     mip_maps = 4,
-    category = "acroproduct-conversion-with-acrocrystal",
+    category = "sp-acroproduct-conversion-with-acrocrystal",
     subgroup = "enriched-resource-from-acrocrystal",
     enabled = false,
     allow_productivity = true,
@@ -14541,7 +14541,7 @@ data:extend({
                                                          "__Spaghetorio__/graphics/icons/acrocrystal.png"),
     icon_size = 64,
     mip_maps = 4,
-    category = "acroproduct-conversion-with-acrocrystal",
+    category = "sp-acroproduct-conversion-with-acrocrystal",
     subgroup = "enriched-resource-from-acrocrystal",
     enabled = false,
     allow_productivity = true,
@@ -14569,7 +14569,7 @@ data:extend({
                                                          "__Spaghetorio__/graphics/icons/acrocrystal.png"),
     icon_size = 64,
     mip_maps = 4,
-    category = "acroproduct-conversion-with-acrocrystal",
+    category = "sp-acroproduct-conversion-with-acrocrystal",
     subgroup = "enriched-resource-from-acrocrystal",
     enabled = false,
     allow_productivity = true,
@@ -14598,7 +14598,7 @@ data:extend({
                                                          "__Spaghetorio__/graphics/icons/acrocrystal.png"),
     icon_size = 64,
     mip_maps = 4,
-    category = "acroproduct-conversion-with-acrocrystal",
+    category = "sp-acroproduct-conversion-with-acrocrystal",
     subgroup = "enriched-resource-from-acrocrystal",
     enabled = false,
     allow_productivity = true,
@@ -14640,7 +14640,7 @@ data:extend({
       "pollution"
     },
     allow_decomposition = false,
-    category = "acroproduct-conversion-with-acrovoid",
+    category = "sp-acroproduct-conversion-with-acrovoid",
     subgroup = "processed-resource-from-acrovoid",
     enabled = false,
     allow_productivity = true,
@@ -14666,7 +14666,7 @@ data:extend({
                                                          "__Spaghetorio__/graphics/icons/acrovoid.png"),
     icon_size = 64,
     mip_maps = 4,
-    category = "acroproduct-conversion-with-acrovoid",
+    category = "sp-acroproduct-conversion-with-acrovoid",
     subgroup = "processed-resource-from-acrovoid",
     enabled = false,
     allow_productivity = true,
@@ -14698,7 +14698,7 @@ data:extend({
                                                          "__Spaghetorio__/graphics/icons/acrovoid.png"),
     icon_size = 64,
     mip_maps = 4,
-    category = "acroproduct-conversion-with-acrovoid",
+    category = "sp-acroproduct-conversion-with-acrovoid",
     subgroup = "processed-resource-from-acrovoid",
     enabled = false,
     allow_productivity = true,
@@ -14727,7 +14727,7 @@ data:extend({
                                                          "__Spaghetorio__/graphics/icons/acrovoid.png"),
     icon_size = 64,
     mip_maps = 4,
-    category = "acroproduct-conversion-with-acrovoid",
+    category = "sp-acroproduct-conversion-with-acrovoid",
     subgroup = "processed-resource-from-acrovoid",
     enabled = false,
     allow_productivity = true,
@@ -14757,7 +14757,7 @@ data:extend({
                                                          "__Spaghetorio__/graphics/icons/acrovoid.png"),
     icon_size = 64,
     mip_maps = 4,
-    category = "acroproduct-conversion-with-acrovoid",
+    category = "sp-acroproduct-conversion-with-acrovoid",
     subgroup = "processed-resource-from-acrovoid",
     enabled = false,
     allow_productivity = true,
@@ -14787,7 +14787,7 @@ data:extend({
                                                          "__Spaghetorio__/graphics/icons/acrovoid.png"),
     icon_size = 64,
     mip_maps = 4,
-    category = "acroproduct-conversion-with-acrovoid",
+    category = "sp-acroproduct-conversion-with-acrovoid",
     subgroup = "processed-resource-from-acrovoid",
     enabled = false,
     allow_productivity = true,
@@ -14817,7 +14817,7 @@ data:extend({
                                                          "__Spaghetorio__/graphics/icons/acrovoid.png"),
     icon_size = 64,
     mip_maps = 4,
-    category = "acroproduct-conversion-with-acrovoid",
+    category = "sp-acroproduct-conversion-with-acrovoid",
     subgroup = "processed-resource-from-acrovoid",
     enabled = false,
     allow_productivity = true,
@@ -14847,7 +14847,7 @@ data:extend({
                                                          "__Spaghetorio__/graphics/icons/acrovoid.png"),
     icon_size = 64,
     mip_maps = 4,
-    category = "acroproduct-conversion-with-acrovoid",
+    category = "sp-acroproduct-conversion-with-acrovoid",
     subgroup = "processed-resource-from-acrovoid",
     enabled = false,
     allow_productivity = true,
@@ -14877,7 +14877,7 @@ data:extend({
                                                          "__Spaghetorio__/graphics/icons/acrovoid.png"),
     icon_size = 64,
     mip_maps = 4,
-    category = "acroproduct-conversion-with-acrovoid",
+    category = "sp-acroproduct-conversion-with-acrovoid",
     subgroup = "processed-resource-from-acrovoid",
     enabled = false,
     allow_productivity = true,
@@ -14907,7 +14907,7 @@ data:extend({
                                                          "__Spaghetorio__/graphics/icons/acrovoid.png"),
     icon_size = 64,
     mip_maps = 4,
-    category = "acroproduct-conversion-with-acrovoid",
+    category = "sp-acroproduct-conversion-with-acrovoid",
     subgroup = "processed-resource-from-acrovoid",
     enabled = false,
     allow_productivity = true,
@@ -14938,7 +14938,7 @@ data:extend({
                                                          "__Spaghetorio__/graphics/icons/acrovoid.png"),
     icon_size = 64,
     mip_maps = 4,
-    category = "acroproduct-conversion-with-acrovoid",
+    category = "sp-acroproduct-conversion-with-acrovoid",
     subgroup = "processed-resource-from-acrovoid",
     enabled = false,
     allow_productivity = true,
@@ -14970,7 +14970,7 @@ data:extend({
                                                          "__Spaghetorio__/graphics/icons/acrovoid.png"),
     icon_size = 64,
     mip_maps = 4,
-    category = "acroproduct-conversion-with-acrovoid",
+    category = "sp-acroproduct-conversion-with-acrovoid",
     subgroup = "processed-resource-from-acrovoid",
     enabled = false,
     allow_productivity = true,
@@ -15003,7 +15003,7 @@ data:extend({
                                                          "__Spaghetorio__/graphics/icons/acrovoid.png"),
     icon_size = 64,
     mip_maps = 4,
-    category = "acroproduct-conversion-with-acrovoid",
+    category = "sp-acroproduct-conversion-with-acrovoid",
     subgroup = "processed-resource-from-acrovoid",
     enabled = false,
     allow_productivity = true,
@@ -15033,7 +15033,7 @@ data:extend({
                                                          "__Spaghetorio__/graphics/icons/acrovoid.png"),
     icon_size = 64,
     mip_maps = 4,
-    category = "acroproduct-conversion-with-acrovoid",
+    category = "sp-acroproduct-conversion-with-acrovoid",
     subgroup = "processed-resource-from-acrovoid",
     enabled = false,
     allow_productivity = true,
@@ -15063,7 +15063,7 @@ data:extend({
                                                          "__Spaghetorio__/graphics/icons/acrovoid.png"),
     icon_size = 64,
     mip_maps = 4,
-    category = "acroproduct-conversion-with-acrovoid",
+    category = "sp-acroproduct-conversion-with-acrovoid",
     subgroup = "processed-resource-from-acrovoid",
     enabled = false,
     allow_productivity = true,
@@ -15095,7 +15095,7 @@ data:extend({
                                                          "__Spaghetorio__/graphics/icons/acrovoid.png"),
     icon_size = 64,
     mip_maps = 4,
-    category = "acroproduct-conversion-with-acrovoid",
+    category = "sp-acroproduct-conversion-with-acrovoid",
     subgroup = "processed-resource-from-acrovoid",
     enabled = false,
     allow_productivity = true,
@@ -15126,7 +15126,7 @@ data:extend({
                                                          "__Spaghetorio__/graphics/icons/acrovoid.png"),
     icon_size = 64,
     mip_maps = 4,
-    category = "acroproduct-conversion-with-acrovoid",
+    category = "sp-acroproduct-conversion-with-acrovoid",
     subgroup = "processed-resource-from-acrovoid",
     enabled = false,
     allow_productivity = true,
@@ -15156,7 +15156,7 @@ data:extend({
                                                          "__Spaghetorio__/graphics/icons/acrovoid.png"),
     icon_size = 64,
     mip_maps = 4,
-    category = "acroproduct-conversion-with-acrovoid",
+    category = "sp-acroproduct-conversion-with-acrovoid",
     subgroup = "processed-resource-from-acrovoid",
     enabled = false,
     allow_productivity = true,
@@ -15186,7 +15186,7 @@ data:extend({
                                                          "__Spaghetorio__/graphics/icons/acrovoid.png"),
     icon_size = 64,
     mip_maps = 4,
-    category = "acroproduct-conversion-with-acrovoid",
+    category = "sp-acroproduct-conversion-with-acrovoid",
     subgroup = "processed-resource-from-acrovoid",
     enabled = false,
     allow_productivity = true,
@@ -15216,7 +15216,7 @@ data:extend({
                                                          "__Spaghetorio__/graphics/icons/acrovoid.png"),
     icon_size = 64,
     mip_maps = 4,
-    category = "acroproduct-conversion-with-acrovoid",
+    category = "sp-acroproduct-conversion-with-acrovoid",
     subgroup = "processed-resource-from-acrovoid",
     enabled = false,
     allow_productivity = true,
@@ -15247,7 +15247,7 @@ data:extend({
                                                          "__Spaghetorio__/graphics/icons/acrovoid.png"),
     icon_size = 64,
     mip_maps = 4,
-    category = "acroproduct-conversion-with-acrovoid",
+    category = "sp-acroproduct-conversion-with-acrovoid",
     subgroup = "processed-resource-from-acrovoid",
     enabled = false,
     allow_productivity = true,
@@ -15277,7 +15277,7 @@ data:extend({
                                                          "__Spaghetorio__/graphics/icons/acrovoid.png"),
     icon_size = 64,
     mip_maps = 4,
-    category = "acroproduct-conversion-with-acrovoid",
+    category = "sp-acroproduct-conversion-with-acrovoid",
     subgroup = "processed-resource-from-acrovoid",
     enabled = false,
     allow_productivity = true,
@@ -15313,7 +15313,7 @@ data:extend({
                                                          "__Spaghetorio__/graphics/icons/acromatter.png"),
     icon_size = 64,
     mip_maps = 4,
-    category = "acroproduct-conversion-with-acromatter",
+    category = "sp-acroproduct-conversion-with-acromatter",
     subgroup = "raw-resource-from-acromatter",
     enabled = false,
     allow_productivity = true,
@@ -15343,7 +15343,7 @@ data:extend({
                                                          "__Spaghetorio__/graphics/icons/acromatter.png"),
     icon_size = 64,
     mip_maps = 4,
-    category = "acroproduct-conversion-with-acromatter",
+    category = "sp-acroproduct-conversion-with-acromatter",
     subgroup = "raw-resource-from-acromatter",
     enabled = false,
     allow_productivity = true,
@@ -15372,7 +15372,7 @@ data:extend({
                                                          "__Spaghetorio__/graphics/icons/acromatter.png"),
     icon_size = 64,
     mip_maps = 4,
-    category = "acroproduct-conversion-with-acromatter",
+    category = "sp-acroproduct-conversion-with-acromatter",
     subgroup = "raw-resource-from-acromatter",
     allowed_effects = {
       "consumption",
@@ -15401,7 +15401,7 @@ data:extend({
                                                          "__Spaghetorio__/graphics/icons/acromatter.png"),
     icon_size = 64,
     mip_maps = 4,
-    category = "acroproduct-conversion-with-acromatter",
+    category = "sp-acroproduct-conversion-with-acromatter",
     subgroup = "raw-resource-from-acromatter",
     enabled = false,
     allow_productivity = true,
@@ -15431,7 +15431,7 @@ data:extend({
                                                          "__Spaghetorio__/graphics/icons/acromatter.png"),
     icon_size = 64,
     mip_maps = 4,
-    category = "acroproduct-conversion-with-acromatter",
+    category = "sp-acroproduct-conversion-with-acromatter",
     subgroup = "raw-resource-from-acromatter",
     enabled = false,
     allow_productivity = true,
@@ -15462,7 +15462,7 @@ data:extend({
                                                          "__Spaghetorio__/graphics/icons/acromatter.png"),
     icon_size = 64,
     mip_maps = 4,
-    category = "acroproduct-conversion-with-acromatter",
+    category = "sp-acroproduct-conversion-with-acromatter",
     subgroup = "raw-resource-from-acromatter",
     enabled = false,
     allow_productivity = true,
@@ -15493,7 +15493,7 @@ data:extend({
                                                          "__Spaghetorio__/graphics/icons/acromatter.png"),
     icon_size = 64,
     mip_maps = 4,
-    category = "acroproduct-conversion-with-acromatter",
+    category = "sp-acroproduct-conversion-with-acromatter",
     subgroup = "raw-resource-from-acromatter",
     enabled = false,
     allow_productivity = true,
@@ -15521,7 +15521,7 @@ data:extend({
                                                          "__Spaghetorio__/graphics/icons/acromatter.png"),
     icon_size = 64,
     mip_maps = 4,
-    category = "acroproduct-conversion-with-acromatter",
+    category = "sp-acroproduct-conversion-with-acromatter",
     subgroup = "raw-resource-from-acromatter",
     enabled = false,
     allow_productivity = true,
@@ -15550,7 +15550,7 @@ data:extend({
                                                          "__Spaghetorio__/graphics/icons/acromatter.png"),
     icon_size = 64,
     mip_maps = 4,
-    category = "acroproduct-conversion-with-acromatter",
+    category = "sp-acroproduct-conversion-with-acromatter",
     subgroup = "raw-resource-from-acromatter",
     enabled = false,
     allow_productivity = true,
@@ -15580,7 +15580,7 @@ data:extend({
                                                          "__Spaghetorio__/graphics/icons/acromatter.png"),
     icon_size = 64,
     mip_maps = 4,
-    category = "acroproduct-conversion-with-acromatter",
+    category = "sp-acroproduct-conversion-with-acromatter",
     subgroup = "raw-resource-from-acromatter",
     enabled = false,
     allow_productivity = true,
@@ -15612,7 +15612,7 @@ data:extend({
                                                          "__Spaghetorio__/graphics/icons/acromatter.png"),
     icon_size = 64,
     mip_maps = 4,
-    category = "acroproduct-conversion-with-acromatter",
+    category = "sp-acroproduct-conversion-with-acromatter",
     subgroup = "raw-resource-from-acromatter",
     enabled = false,
     allow_productivity = true,
@@ -15867,7 +15867,7 @@ data:extend({
     name = "sp-stone-brick-from-sand",  -- #ForRegEx# - recipe
     icons = util.icon.overlay_small_icon("__base__/graphics/icons/stone-brick.png", 64,
                                          "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/sand/sand.png", 64),
-    category = "intermediate-smelting",
+    category = "sp-intermediate-smelting",
     energy_required = 2,
     enabled = false,
     allow_productivity = true,

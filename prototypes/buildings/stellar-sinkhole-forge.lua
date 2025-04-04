@@ -233,7 +233,7 @@ data:extend({
       working_visualisations = { activated_intergalactic_transceiver_animation },
     },
     picture = intergalactic_transceiver_picture,
-    crafting_categories = {"black-hole-forging"},
+    crafting_categories = {"sp-black-hole-forging"},
     crafting_speed = 3,
     energy_source = {
       type = "electric",

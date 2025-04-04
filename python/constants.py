@@ -16,6 +16,7 @@ LOCALE_FILE_NAME = "mod_locale.cfg"
 LOCALE_ENGLISH_PATH = fr"{LOCALE_PATH}\en\{LOCALE_FILE_NAME}"
 
 AUTOPLACE_CONTROL_PATH = fr"{PROTOTYPES_PATH}\resource\autoplace-control.lua"
+CATEGORY_PATH = fr"{PROTOTYPES_PATH}\category.lua"
 ITEM_GROUPS_PATH = fr"{PROTOTYPES_PATH}\item-groups.lua"
 FLUID_PATH = fr"{PROTOTYPES_PATH}\fluid.lua"
 ITEMS_PATH = fr"{PROTOTYPES_PATH}\item.lua"

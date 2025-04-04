@@ -117,7 +117,7 @@ data:extend({
     },
     allowed_effects = {"consumption", "speed", "productivity", "pollution", "quality"},
     crafting_categories = {
-      "incinerating"
+      "sp-incinerating"
     },
     crafting_speed = 1,
     energy_source =
