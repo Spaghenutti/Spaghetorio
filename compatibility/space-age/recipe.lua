@@ -28,20 +28,20 @@ remove_prototypes.remove_one_prototype("recipe", "coal-synthesis")
 -- MARK: change recipe subgroups
 --------------------------------------------------------------------------------
 
-data.raw.recipe["carbon"].subgroup = "processed-non-metal"
+data.raw.recipe["carbon"].subgroup = "sp-processed-non-metal"
 
-data.raw.recipe["lithium"].subgroup = "processed-metal"
+data.raw.recipe["lithium"].subgroup = "sp-processed-metal"
 
-data.raw.recipe["lithium-plate"].subgroup = "raw-material"
-data.raw.recipe["tungsten-plate"].subgroup = "raw-material"
-data.raw.recipe["holmium-plate"].subgroup = "raw-material"
+data.raw.recipe["lithium-plate"].subgroup = "sp-raw-material"
+data.raw.recipe["tungsten-plate"].subgroup = "sp-raw-material"
+data.raw.recipe["holmium-plate"].subgroup = "sp-raw-material"
 
-data.raw.recipe["molten-copper"].subgroup = "casting-raw-material"
-data.raw.recipe["molten-iron"].subgroup = "casting-raw-material"
+data.raw.recipe["molten-copper"].subgroup = "sp-casting-raw-material"
+data.raw.recipe["molten-iron"].subgroup = "sp-casting-raw-material"
 
-data.raw.recipe["tungsten-carbide"].subgroup = "ceramic"
+data.raw.recipe["tungsten-carbide"].subgroup = "sp-ceramic-material"
 
-data.raw.recipe["carbon-fiber"].subgroup = "advanced-raw-material"
+data.raw.recipe["carbon-fiber"].subgroup = "sp-advanced-raw-material"
 
 data.raw.recipe["steam-condensation"].subgroup = "fluid"
 data.raw.recipe["ice-melting"].subgroup = "fluid"

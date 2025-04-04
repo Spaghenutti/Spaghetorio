@@ -14,97 +14,97 @@ data:extend({
   },
   {
     type = "item-subgroup",
-    name = "raw-resource",  -- #ForRegEx# - item-subgroup
+    name = "sp-raw-resource",  -- #ForRegEx# - item-subgroup
     group = "sp-resources",
     order = "a"
   },
   {
     type = "item-subgroup",
-    name = "casting-raw-resource",  -- #ForRegEx# - item-subgroup
+    name = "sp-casting-raw-resource",  -- #ForRegEx# - item-subgroup
     group = "sp-resources",
     order = "a-b-casting"
   },
   {
     type = "item-subgroup",
-    name = "enriched-resource-from-acrocrystal",  -- #ForRegEx# - item-subgroup
+    name = "sp-enriched-resource-from-acrocrystal",  -- #ForRegEx# - item-subgroup
     group = "sp-resources",
     order = "a-z-acrocrystal"
   },
   {
     type = "item-subgroup",
-    name = "crushed-resource",  -- #ForRegEx# - item-subgroup
+    name = "sp-crushed-resource",  -- #ForRegEx# - item-subgroup
     group = "sp-resources",
     order = "b"
   },
   {
     type = "item-subgroup",
-    name = "crushed-resource-recipe",  -- #ForRegEx# - item-subgroup
+    name = "sp-crushed-resource-recipe",  -- #ForRegEx# - item-subgroup
     group = "sp-resources",
     order = "b-recipe"
   },
   {
     type = "item-subgroup",
-    name = "enriched-resource",  -- #ForRegEx# - item-subgroup
+    name = "sp-enriched-resource",  -- #ForRegEx# - item-subgroup
     group = "sp-resources",
     order = "c"
   },
   {
     type = "item-subgroup",
-    name = "enriched-resource-recipe",  -- #ForRegEx# - item-subgroup
+    name = "sp-enriched-resource-recipe",  -- #ForRegEx# - item-subgroup
     group = "sp-resources",
     order = "c-b"
   },
   {
     type = "item-subgroup",
-    name = "enriched-crushed-resource-recipe",  -- #ForRegEx# - item-subgroup
+    name = "sp-enriched-crushed-resource-recipe",  -- #ForRegEx# - item-subgroup
     group = "sp-resources",
     order = "c-c"
   },
   {
     type = "item-subgroup",
-    name = "raw-resource-from-acromatter",  -- #ForRegEx# - item-subgroup
+    name = "sp-raw-resource-from-acromatter",  -- #ForRegEx# - item-subgroup
     group = "sp-resources",
     order = "c-z-acromatter"
   },
   {
     type = "item-subgroup",
-    name = "processed-resource",  -- #ForRegEx# - item-subgroup
+    name = "sp-processed-resource",  -- #ForRegEx# - item-subgroup
     group = "sp-resources",
     order = "d-a"
   },
   {
     type = "item-subgroup",
-    name = "processed-non-metal",  -- #ForRegEx# - item-subgroup
+    name = "sp-processed-non-metal",  -- #ForRegEx# - item-subgroup
     group = "sp-resources",
     order = "d-b"
   },
   {
     type = "item-subgroup",
-    name = "processed-metal",  -- #ForRegEx# - item-subgroup
+    name = "sp-processed-metal",  -- #ForRegEx# - item-subgroup
     group = "sp-resources",
     order = "d-c"
   },
   {
     type = "item-subgroup",
-    name = "processed-resource-from-acrovoid",  -- #ForRegEx# - item-subgroup
+    name = "sp-processed-resource-from-acrovoid",  -- #ForRegEx# - item-subgroup
     group = "sp-resources",
     order = "d-z-acrovoid"
   },
   {
     type = "item-subgroup",
-    name = "radioactive-resource",  -- #ForRegEx# - item-subgroup
+    name = "sp-radioactive-resource",  -- #ForRegEx# - item-subgroup
     group = "sp-resources",
     order = "e"
   },
   {
     type = "item-subgroup",
-    name = "alien-processed-resource",  -- #ForRegEx# - item-subgroup
+    name = "sp-alien-processed-resource",  -- #ForRegEx# - item-subgroup
     group = "sp-resources",
     order = "f"
   },
   {
     type = "item-subgroup",
-    name = "incinerate-resource",  -- #ForRegEx# - item-subgroup
+    name = "sp-incinerate-resource",  -- #ForRegEx# - item-subgroup
     group = "sp-resources",
     order = "z"
   },
@@ -120,43 +120,43 @@ data:extend({
   },
   {
     type = "item-subgroup",
-    name = "raw-material",  -- #ForRegEx# - item-subgroup
+    name = "sp-raw-material",  -- #ForRegEx# - item-subgroup
     group = "sp-materials",
     order = "e"
   },
   {
     type = "item-subgroup",
-    name = "casting-raw-material",  -- #ForRegEx# - item-subgroup
+    name = "sp-casting-raw-material",  -- #ForRegEx# - item-subgroup
     group = "sp-materials",
     order = "e-b-casting"
   },
   {
     type = "item-subgroup",
-    name = "alloy",  -- #ForRegEx# - item-subgroup
+    name = "sp-alloy",  -- #ForRegEx# - item-subgroup
     group = "sp-materials",
     order = "f"
   },
   {
     type = "item-subgroup",
-    name = "ceramic",  -- #ForRegEx# - item-subgroup
+    name = "sp-ceramic-material",  -- #ForRegEx# - item-subgroup
     group = "sp-materials",
     order = "g"
   },
   {
     type = "item-subgroup",
-    name = "chemical-product",  -- #ForRegEx# - item-subgroup
+    name = "sp-chemical-product",  -- #ForRegEx# - item-subgroup
     group = "sp-materials",
     order = "h"
   },
   {
     type = "item-subgroup",
-    name = "advanced-raw-material",
+    name = "sp-advanced-raw-material",
     group = "sp-materials",  -- #ForRegEx# - item-subgroup
     order = "i"
   },
   {
     type = "item-subgroup",
-    name = "alien-compound",  -- #ForRegEx# - item-subgroup
+    name = "sp-alien-compound",  -- #ForRegEx# - item-subgroup
     group = "sp-materials",
     order = "j"
   },
@@ -168,7 +168,7 @@ data:extend({
   },
   {
     type = "item-subgroup",
-    name = "incinerate-material",  -- #ForRegEx# - item-subgroup
+    name = "sp-incinerate-material",  -- #ForRegEx# - item-subgroup
     group = "sp-materials",
     order = "z"
   },

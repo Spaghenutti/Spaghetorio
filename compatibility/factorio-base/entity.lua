@@ -72,14 +72,25 @@ data.raw.recipe["steel-plate"].order = "a-plate-[steel-plate]"
 data.raw.recipe["iron-stick"].order = "frame-1-[iron-stick]"
 
 -- MARK: Change item subgroups
-data.raw.item["sulfur"].subgroup = "processed-non-metal"
+data.raw.item["wood"].subgroup = "sp-raw-resource"
+data.raw.item["coal"].subgroup = "sp-raw-resource"
+data.raw.item["stone"].subgroup = "sp-raw-resource"
+data.raw.item["iron-ore"].subgroup = "sp-raw-resource"
+data.raw.item["copper-ore"].subgroup = "sp-raw-resource"
+data.raw.item["uranium-ore"].subgroup = "sp-raw-resource"
 
-data.raw.item["uranium-238"].subgroup = "radioactive-resource"
-data.raw.item["uranium-235"].subgroup = "radioactive-resource"
+data.raw.item["copper-plate"].subgroup = "sp-raw-material"
+data.raw.item["iron-plate"].subgroup = "sp-raw-material"
+data.raw.item["steel-plate"].subgroup = "sp-raw-material"
 
-data.raw.item["low-density-structure"].subgroup = "advanced-raw-material"
+data.raw.item["sulfur"].subgroup = "sp-processed-non-metal"
 
-data.raw.item["plastic-bar"].subgroup = "chemical-product"
+data.raw.item["uranium-238"].subgroup = "sp-radioactive-resource"
+data.raw.item["uranium-235"].subgroup = "sp-radioactive-resource"
+
+data.raw.item["low-density-structure"].subgroup = "sp-advanced-raw-material"
+
+data.raw.item["plastic-bar"].subgroup = "sp-chemical-product"
 
 data.raw.item["copper-cable"].subgroup = "sp-mechanical-component"
 data.raw.item["iron-stick"].subgroup = "sp-mechanical-component"
@@ -98,6 +109,8 @@ data.raw.item["uranium-fuel-cell"].subgroup = "sp-fuel-processing"
 data.raw.item["depleted-uranium-fuel-cell"].subgroup = "sp-fuel-processing"
 
 data.raw.item["explosives"].subgroup = "ammo"
+
+data.raw.capsule["raw-fish"].subgroup = "nauvis-agriculture"
 
 -- MARK: Change fluid subgroups
 data.raw.fluid["water"].subgroup = "sp-aqueous-fluid"

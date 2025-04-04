@@ -19,7 +19,7 @@ data:extend({
       {size = 64, filename = "__Spaghetorio__/graphics/icons/aluminum-ore-3.png", scale = 0.5, mipmap_count = 4},
       {size = 64, filename = "__Spaghetorio__/graphics/icons/aluminum-ore-4.png", scale = 0.5, mipmap_count = 4}
     },
-    subgroup = "raw-resource",
+    subgroup = "sp-raw-resource",
     order = "[aluminum-ore]",
     stack_size = 200
   },
@@ -35,7 +35,7 @@ data:extend({
       {size = 64, filename = "__Spaghetorio__/graphics/icons/chromite-3.png", scale = 0.5, mipmap_count = 4},
       {size = 64, filename = "__Spaghetorio__/graphics/icons/chromite-4.png", scale = 0.5, mipmap_count = 4}
     },
-    subgroup = "raw-resource",
+    subgroup = "sp-raw-resource",
     order = "[chromite]",
     stack_size = 200
   },
@@ -51,7 +51,7 @@ data:extend({
       {size = 64, filename = "__Spaghetorio__/graphics/icons/barium-ore-3.png", scale = 0.5, mipmap_count = 4},
       {size = 64, filename = "__Spaghetorio__/graphics/icons/barium-ore-4.png", scale = 0.5, mipmap_count = 4}
     },
-    subgroup = "raw-resource",
+    subgroup = "sp-raw-resource",
     order = "[barium-ore]",
     stack_size = 200
   },
@@ -67,7 +67,7 @@ data:extend({
       {size = 64, filename = "__Spaghetorio__/graphics/icons/titanium-ore-3.png", scale = 0.5, mipmap_count = 4},
       {size = 64, filename = "__Spaghetorio__/graphics/icons/titanium-ore-4.png", scale = 0.5, mipmap_count = 4}
     },
-    subgroup = "raw-resource",
+    subgroup = "sp-raw-resource",
     order = "[titanium-ore]",
     stack_size = 200
   },
@@ -83,7 +83,7 @@ data:extend({
       {size = 64, filename = "__Spaghetorio__/graphics/icons/magnesium-ore-3.png", scale = 0.5, mipmap_count = 4},
       {size = 64, filename = "__Spaghetorio__/graphics/icons/magnesium-ore-4.png", scale = 0.5, mipmap_count = 4}
     },
-    subgroup = "raw-resource",
+    subgroup = "sp-raw-resource",
     order = "[magnesium-ore]",
     stack_size = 200
   },
@@ -99,7 +99,7 @@ data:extend({
       {size = 64, filename = "__Spaghetorio__/graphics/icons/tinstone-3.png", scale = 0.5, mipmap_count = 4},
       {size = 64, filename = "__Spaghetorio__/graphics/icons/tinstone-4.png", scale = 0.5, mipmap_count = 4}
     },
-    subgroup = "raw-resource",
+    subgroup = "sp-raw-resource",
     order = "[tinstone]",
     stack_size = 200
   },
@@ -115,7 +115,7 @@ data:extend({
       {size = 64, filename = "__Spaghetorio__/graphics/icons/zirconium-ore-3.png", scale = 0.5, mipmap_count = 4},
       {size = 64, filename = "__Spaghetorio__/graphics/icons/zirconium-ore-4.png", scale = 0.5, mipmap_count = 4}
     },
-    subgroup = "raw-resource",
+    subgroup = "sp-raw-resource",
     order = "[zirconium-ore]",
     stack_size = 200
   },
@@ -131,7 +131,7 @@ data:extend({
       {size = 64, filename = "__Spaghetorio__/graphics/icons/nickel-ore-3.png", scale = 0.5, mipmap_count = 4},
       {size = 64, filename = "__Spaghetorio__/graphics/icons/nickel-ore-4.png", scale = 0.5, mipmap_count = 4}
     },
-    subgroup = "raw-resource",
+    subgroup = "sp-raw-resource",
     order = "[nickel-ore]",
     stack_size = 200
   },
@@ -147,7 +147,7 @@ data:extend({
       {size = 64, filename = "__Spaghetorio__/graphics/icons/mercury-ore-3.png", scale = 0.5, mipmap_count = 4},
       {size = 64, filename = "__Spaghetorio__/graphics/icons/mercury-ore-4.png", scale = 0.5, mipmap_count = 4}
     },
-    subgroup = "raw-resource",
+    subgroup = "sp-raw-resource",
     order = "[mercury-ore]",
     stack_size = 200
   },
@@ -163,7 +163,7 @@ data:extend({
       {size = 64, filename = "__Spaghetorio__/graphics/icons/zinc-ore-3.png", scale = 0.5, mipmap_count = 4},
       {size = 64, filename = "__Spaghetorio__/graphics/icons/zinc-ore-4.png", scale = 0.5, mipmap_count = 4}
     },
-    subgroup = "raw-resource",
+    subgroup = "sp-raw-resource",
     order = "[zinc-ore]",
     stack_size = 200
   },
@@ -179,7 +179,7 @@ data:extend({
       {size = 64, filename = "__Spaghetorio__/graphics/icons/cobalt-ore-3.png", scale = 0.5, mipmap_count = 4},
       {size = 64, filename = "__Spaghetorio__/graphics/icons/cobalt-ore-4.png", scale = 0.5, mipmap_count = 4}
     },
-    subgroup = "raw-resource",
+    subgroup = "sp-raw-resource",
     order = "[cobalt-ore]",
     stack_size = 200
   },
@@ -195,7 +195,7 @@ data:extend({
       {size = 64, filename = "__Spaghetorio__/graphics/icons/stibnite-3.png", scale = 0.5, mipmap_count = 4},
       {size = 64, filename = "__Spaghetorio__/graphics/icons/stibnite-4.png", scale = 0.5, mipmap_count = 4}
     },
-    subgroup = "raw-resource",
+    subgroup = "sp-raw-resource",
     order = "[stibnite]",
     stack_size = 200
   },
@@ -211,7 +211,7 @@ data:extend({
       {size = 64, filename = "__Spaghetorio__/graphics/icons/boron-ore-3.png", scale = 0.5, mipmap_count = 4},
       {size = 64, filename = "__Spaghetorio__/graphics/icons/boron-ore-4.png", scale = 0.5, mipmap_count = 4}
     },
-    subgroup = "raw-resource",
+    subgroup = "sp-raw-resource",
     order = "[boron-ore]",
     stack_size = 200
   },
@@ -227,7 +227,7 @@ data:extend({
       {size = 64, filename = "__Spaghetorio__/graphics/icons/manganese-ore-3.png", scale = 0.5, mipmap_count = 4},
       {size = 64, filename = "__Spaghetorio__/graphics/icons/manganese-ore-4.png", scale = 0.5, mipmap_count = 4}
     },
-    subgroup = "raw-resource",
+    subgroup = "sp-raw-resource",
     order = "[manganese-ore]",
     stack_size = 200
   },
@@ -243,7 +243,7 @@ data:extend({
       {size = 64, filename = "__Spaghetorio__/graphics/icons/molybdenum-ore-3.png", scale = 0.5, mipmap_count = 4},
       {size = 64, filename = "__Spaghetorio__/graphics/icons/molybdenum-ore-4.png", scale = 0.5, mipmap_count = 4}
     },
-    subgroup = "raw-resource",
+    subgroup = "sp-raw-resource",
     order = "[molybdenum-ore]",
     stack_size = 200
   },
@@ -259,7 +259,7 @@ data:extend({
       {size = 64, filename = "__Spaghetorio__/graphics/icons/potassium-ore-3.png", scale = 0.5, mipmap_count = 4},
       {size = 64, filename = "__Spaghetorio__/graphics/icons/potassium-ore-4.png", scale = 0.5, mipmap_count = 4}
     },
-    subgroup = "raw-resource",
+    subgroup = "sp-raw-resource",
     order = "[potassium-ore]",
     stack_size = 200
   },
@@ -275,7 +275,7 @@ data:extend({
       {size = 64, filename = "__Spaghetorio__/graphics/icons/vanadium-ore-3.png", scale = 0.5, mipmap_count = 4},
       {size = 64, filename = "__Spaghetorio__/graphics/icons/vanadium-ore-4.png", scale = 0.5, mipmap_count = 4}
     },
-    subgroup = "raw-resource",
+    subgroup = "sp-raw-resource",
     order = "[vanadium-ore]",
     stack_size = 200
   },
@@ -291,7 +291,7 @@ data:extend({
       {size = 64, filename = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/raw-rare-metals/raw-rare-metals-2.png", scale = 0.5, mipmap_count = 4},
       {size = 64, filename = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/raw-rare-metals/raw-rare-metals-3.png", scale = 0.5, mipmap_count = 4}
     },
-    subgroup = "raw-resource",
+    subgroup = "sp-raw-resource",
     order = "[raw-rare-metals]",
     stack_size = 200
   },
@@ -313,7 +313,7 @@ data:extend({
       {size = 64, filename = "__Spaghetorio__/graphics/icons/core-fragment-9.png", scale = 0.5, mipmap_count = 4},
       {size = 64, filename = "__Spaghetorio__/graphics/icons/core-fragment-10.png", scale = 0.5, mipmap_count = 4}
     },
-    subgroup = "raw-resource",
+    subgroup = "sp-raw-resource",
     order = "[raw-rare-metals]",
     stack_size = 200
   },
@@ -323,7 +323,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/rukite.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "raw-resource",
+    subgroup = "sp-raw-resource",
     order = "z-alien[rukite]",
     stack_size = 100
   },
@@ -333,7 +333,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/yemnuth.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "raw-resource",
+    subgroup = "sp-raw-resource",
     order = "z-alien[yemnuth]",
     stack_size = 100
   },
@@ -343,7 +343,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/blunagium.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "raw-resource",
+    subgroup = "sp-raw-resource",
     order = "z-alien[blunagium]",
     stack_size = 100
   },
@@ -353,7 +353,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/grobgnum.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "raw-resource",
+    subgroup = "sp-raw-resource",
     order = "z-alien[grobgnum]",
     stack_size = 100
   },
@@ -445,7 +445,7 @@ data:extend({
         },
       },
     },
-    subgroup = "raw-resource",
+    subgroup = "sp-raw-resource",
     order = "z-alien[raw-imersite]",
     stack_size = 100,
   },
@@ -464,7 +464,7 @@ data:extend({
       {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-copper-ore-3.png", scale = 0.5, mipmap_count = 4},
       {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-copper-ore-4.png", scale = 0.5, mipmap_count = 4}
     },
-    subgroup = "crushed-resource",
+    subgroup = "sp-crushed-resource",
     order = "[crushed-copper-ore]",
     stack_size = 200
   },
@@ -480,7 +480,7 @@ data:extend({
       {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-iron-ore-3.png", scale = 0.5, mipmap_count = 4},
       {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-iron-ore-4.png", scale = 0.5, mipmap_count = 4}
     },
-    subgroup = "crushed-resource",
+    subgroup = "sp-crushed-resource",
     order = "[crushed-iron-ore]",
     stack_size = 200
   },
@@ -496,7 +496,7 @@ data:extend({
       {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-aluminum-ore-3.png", scale = 0.5, mipmap_count = 4},
       {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-aluminum-ore-4.png", scale = 0.5, mipmap_count = 4}
     },
-    subgroup = "crushed-resource",
+    subgroup = "sp-crushed-resource",
     order = "[crushed-aluminum-ore]",
     stack_size = 200
   },
@@ -512,7 +512,7 @@ data:extend({
       {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-chromite-3.png", scale = 0.5, mipmap_count = 4},
       {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-chromite-4.png", scale = 0.5, mipmap_count = 4}
     },
-    subgroup = "crushed-resource",
+    subgroup = "sp-crushed-resource",
     order = "[crushed-chromite]",
     stack_size = 200
   },
@@ -528,7 +528,7 @@ data:extend({
       {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-cobalt-ore-3.png", scale = 0.5, mipmap_count = 4},
       {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-cobalt-ore-4.png", scale = 0.5, mipmap_count = 4}
     },
-    subgroup = "crushed-resource",
+    subgroup = "sp-crushed-resource",
     order = "[crushed-cobalt-ore]",
     stack_size = 200
   },
@@ -544,7 +544,7 @@ data:extend({
       {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-titanium-ore-3.png", scale = 0.5, mipmap_count = 4},
       {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-titanium-ore-4.png", scale = 0.5, mipmap_count = 4}
     },
-    subgroup = "crushed-resource",
+    subgroup = "sp-crushed-resource",
     order = "[crushed-titanium-ore]",
     stack_size = 200
   },
@@ -560,7 +560,7 @@ data:extend({
       {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-magnesium-ore-3.png", scale = 0.5, mipmap_count = 4},
       {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-magnesium-ore-4.png", scale = 0.5, mipmap_count = 4}
     },
-    subgroup = "crushed-resource",
+    subgroup = "sp-crushed-resource",
     order = "[crushed-magnesium-ore]",
     stack_size = 200
   },
@@ -576,7 +576,7 @@ data:extend({
       {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-molybdenum-ore-3.png", scale = 0.5, mipmap_count = 4},
       {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-molybdenum-ore-4.png", scale = 0.5, mipmap_count = 4}
     },
-    subgroup = "crushed-resource",
+    subgroup = "sp-crushed-resource",
     order = "[crushed-molybdenum-ore]",
     stack_size = 200
   },
@@ -592,7 +592,7 @@ data:extend({
       {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-tinstone-3.png", scale = 0.5, mipmap_count = 4},
       {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-tinstone-4.png", scale = 0.5, mipmap_count = 4}
     },
-    subgroup = "crushed-resource",
+    subgroup = "sp-crushed-resource",
     order = "[crushed-tinstone]",
     stack_size = 200
   },
@@ -608,7 +608,7 @@ data:extend({
       {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-zirconium-ore-3.png", scale = 0.5, mipmap_count = 4},
       {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-zirconium-ore-4.png", scale = 0.5, mipmap_count = 4}
     },
-    subgroup = "crushed-resource",
+    subgroup = "sp-crushed-resource",
     order = "[crushed-zirconium-ore]",
     stack_size = 200
   },
@@ -624,7 +624,7 @@ data:extend({
       {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-nickel-ore-3.png", scale = 0.5, mipmap_count = 4},
       {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-nickel-ore-4.png", scale = 0.5, mipmap_count = 4}
     },
-    subgroup = "crushed-resource",
+    subgroup = "sp-crushed-resource",
     order = "[crushed-nickel-ore]",
     stack_size = 200
   },
@@ -640,7 +640,7 @@ data:extend({
       {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-tungsten-ore-3.png", scale = 0.5, mipmap_count = 4},
       {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-tungsten-ore-4.png", scale = 0.5, mipmap_count = 4}
     },
-    subgroup = "crushed-resource",
+    subgroup = "sp-crushed-resource",
     order = "[crushed-tungsten-ore]",
     stack_size = 200
   },
@@ -656,7 +656,7 @@ data:extend({
       {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-zinc-ore-3.png", scale = 0.5, mipmap_count = 4},
       {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-zinc-ore-4.png", scale = 0.5, mipmap_count = 4}
     },
-    subgroup = "crushed-resource",
+    subgroup = "sp-crushed-resource",
     order = "[crushed-zinc-ore]",
     stack_size = 200
   },
@@ -674,7 +674,7 @@ data:extend({
       {size = 64, filename = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/enriched-iron/enriched-iron-1.png", scale = 0.5, mipmap_count = 4},
       {size = 64, filename = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/enriched-iron/enriched-iron-2.png", scale = 0.5, mipmap_count = 4},
     },
-    subgroup = "enriched-resource",
+    subgroup = "sp-enriched-resource",
     order = "[enriched-iron]",
     stack_size = 200
   },
@@ -689,7 +689,7 @@ data:extend({
       {size = 64, filename = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/enriched-copper/enriched-copper-1.png", scale = 0.5, mipmap_count = 4},
       {size = 64, filename = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/enriched-copper/enriched-copper-2.png", scale = 0.5, mipmap_count = 4},
     },
-    subgroup = "enriched-resource",
+    subgroup = "sp-enriched-resource",
     order = "[enriched-copper]",
     stack_size = 200
   },
@@ -704,7 +704,7 @@ data:extend({
       {size = 64, filename = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/enriched-rare-metals/enriched-rare-metals-1.png", scale = 0.5, mipmap_count = 4},
       {size = 64, filename = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/enriched-rare-metals/enriched-rare-metals-2.png", scale = 0.5, mipmap_count = 4},
     },
-    subgroup = "enriched-resource",
+    subgroup = "sp-enriched-resource",
     order = "z-[enriched-rare-metals]",
     stack_size = 200
   },
@@ -720,7 +720,7 @@ data:extend({
       {size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-aluminum-3.png", scale = 0.5, mipmap_count = 4},
       {size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-aluminum-4.png", scale = 0.5, mipmap_count = 4}
     },
-    subgroup = "enriched-resource",
+    subgroup = "sp-enriched-resource",
     order = "[enriched-aluminum]",
     stack_size = 200
   },
@@ -736,7 +736,7 @@ data:extend({
       {size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-tungsten-3.png", scale = 0.5, mipmap_count = 4},
       {size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-tungsten-4.png", scale = 0.5, mipmap_count = 4}
     },
-    subgroup = "enriched-resource",
+    subgroup = "sp-enriched-resource",
     order = "[enriched-tungsten]",
     stack_size = 200
   },
@@ -752,7 +752,7 @@ data:extend({
       {size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-titanium-3.png", scale = 0.5, mipmap_count = 4},
       {size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-titanium-4.png", scale = 0.5, mipmap_count = 4}
     },
-    subgroup = "enriched-resource",
+    subgroup = "sp-enriched-resource",
     order = "[enriched-titanium]",
     stack_size = 200
   },
@@ -768,7 +768,7 @@ data:extend({
       {size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-chromite-3.png", scale = 0.5, mipmap_count = 4},
       {size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-chromite-4.png", scale = 0.5, mipmap_count = 4}
     },
-    subgroup = "enriched-resource",
+    subgroup = "sp-enriched-resource",
     order = "[enriched-chromite]",
     stack_size = 200
   },
@@ -784,7 +784,7 @@ data:extend({
       {size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-magnesium-3.png", scale = 0.5, mipmap_count = 4},
       {size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-magnesium-4.png", scale = 0.5, mipmap_count = 4}
     },
-    subgroup = "enriched-resource",
+    subgroup = "sp-enriched-resource",
     order = "[enriched-magnesium]",
     stack_size = 200
   },
@@ -800,7 +800,7 @@ data:extend({
       {size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-nickel-3.png", scale = 0.5, mipmap_count = 4},
       {size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-nickel-4.png", scale = 0.5, mipmap_count = 4}
     },
-    subgroup = "enriched-resource",
+    subgroup = "sp-enriched-resource",
     order = "[enriched-nickel]",
     stack_size = 200
   },
@@ -816,7 +816,7 @@ data:extend({
       {size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-zinc-3.png", scale = 0.5, mipmap_count = 4},
       {size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-zinc-4.png", scale = 0.5, mipmap_count = 4}
     },
-    subgroup = "enriched-resource",
+    subgroup = "sp-enriched-resource",
     order = "[enriched-zinc]",
     stack_size = 200
   },
@@ -832,7 +832,7 @@ data:extend({
       {size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-tinstone-3.png", scale = 0.5, mipmap_count = 4},
       {size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-tinstone-4.png", scale = 0.5, mipmap_count = 4}
     },
-    subgroup = "enriched-resource",
+    subgroup = "sp-enriched-resource",
     order = "[enriched-tinstone]",
     stack_size = 200
   },
@@ -851,7 +851,7 @@ data:extend({
       {size = 64, filename = "__Spaghetorio__/graphics/icons/zinc-sulfate-3.png", scale = 0.5, mipmap_count = 4},
       {size = 64, filename = "__Spaghetorio__/graphics/icons/zinc-sulfate-4.png", scale = 0.5, mipmap_count = 4}
     },
-    subgroup = "processed-resource",
+    subgroup = "sp-processed-resource",
     order = "[zinc-sulfate]",
     stack_size = 100
   },
@@ -861,7 +861,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/salt.png",
     icon_size = 64,
     icon_mipmaps = 4,
-    subgroup = "processed-resource",
+    subgroup = "sp-processed-resource",
     order = "[salt]",
     stack_size = 100
   },
@@ -877,7 +877,7 @@ data:extend({
       {size = 64, filename = "__Spaghetorio__/graphics/icons/leadstone-3.png", scale = 0.5, mipmap_count = 4},
       {size = 64, filename = "__Spaghetorio__/graphics/icons/leadstone-4.png", scale = 0.5, mipmap_count = 4}
     },
-    subgroup = "processed-resource",
+    subgroup = "sp-processed-resource",
     order = "[leadstone]",
     stack_size = 100
   },
@@ -887,7 +887,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/zircon.png",
     icon_size = 64,
     icon_mipmaps = 4,
-    subgroup = "processed-resource",
+    subgroup = "sp-processed-resource",
     order = "[zircon]",
     stack_size = 100
   },
@@ -897,7 +897,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/cobalt-sulfate.png",
     icon_size = 64,
     icon_mipmaps = 4,
-    subgroup = "processed-resource",
+    subgroup = "sp-processed-resource",
     order = "[cobalt-sulfate]",
     stack_size = 100
   },
@@ -907,7 +907,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/alumina.png",
     icon_size = 64,
     icon_mipmaps = 4,
-    subgroup = "processed-resource",
+    subgroup = "sp-processed-resource",
     order = "[alumina]",
     stack_size = 200
   },
@@ -922,7 +922,7 @@ data:extend({
       {size = 64, filename = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/sand/sand-1.png", scale = 0.5, mipmap_count = 4},
       {size = 64, filename = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/sand/sand-2.png", scale = 0.5, mipmap_count = 4}
     },
-    subgroup = "processed-resource",
+    subgroup = "sp-processed-resource",
     order = "[sand]",
     stack_size = 1000
   },
@@ -932,7 +932,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/calcium-carbonate.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "processed-resource",
+    subgroup = "sp-processed-resource",
     order = "[calcium-carbonate]",
     stack_size = 100
   },
@@ -942,7 +942,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/magnesium-chloride.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "processed-resource",
+    subgroup = "sp-processed-resource",
     order = "[magnesium-chloride]",
     stack_size = 100
   },
@@ -952,7 +952,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/silica.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "processed-resource",
+    subgroup = "sp-processed-resource",
     order = "silicon-[silica]",
     stack_size = 100
   },
@@ -962,7 +962,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/titanium-chloride.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "processed-resource",
+    subgroup = "sp-processed-resource",
     order = "[titanium-chloride]",
     stack_size = 100
   },
@@ -972,7 +972,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/titanium-sponge.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "processed-resource",
+    subgroup = "sp-processed-resource",
     order = "[titanium-sponge]",
     stack_size = 200
   },
@@ -982,7 +982,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/ammonium-paratungstate.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "processed-resource",
+    subgroup = "sp-processed-resource",
     order = "[ammonium-paratungstate]",
     stack_size = 100
   },
@@ -992,7 +992,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/sodium-carbonate.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "processed-resource",
+    subgroup = "sp-processed-resource",
     order = "[sodium-carbonate]",
     stack_size = 200
   },
@@ -1002,7 +1002,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/lithium-oxide.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "processed-resource",
+    subgroup = "sp-processed-resource",
     order = "[lithium-oxide]",
     stack_size = 50
   },
@@ -1016,7 +1016,7 @@ data:extend({
       {size = 64, filename = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/lithium-chloride/lithium-chloride.png", scale = 0.5, mipmap_count = 4},
       {size = 64, filename = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/lithium-chloride/lithium-chloride-1.png", scale = 0.5, mipmap_count = 4}
     },
-    subgroup = "processed-resource",
+    subgroup = "sp-processed-resource",
     order = "[lithium-chloride]",
     stack_size = 50
   },
@@ -1026,7 +1026,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/tellurium-hydroxide.png",
     icon_size = 64,
     icon_mipmaps = 4,
-    subgroup = "processed-resource",
+    subgroup = "sp-processed-resource",
     order = "[tellurium-hydroxide]",
     stack_size = 50
   },
@@ -1036,7 +1036,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/barium-sulfamate.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "processed-resource",
+    subgroup = "sp-processed-resource",
     order = "[barium-sulfamate]",
     stack_size = 50
   },
@@ -1046,7 +1046,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/barium-sulfide.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "processed-resource",
+    subgroup = "sp-processed-resource",
     order = "[barium-sulfide]",
     stack_size = 50
   },
@@ -1056,7 +1056,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/antimony-oxide.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "processed-resource",
+    subgroup = "sp-processed-resource",
     order = "[antimony-oxide]",
     stack_size = 50
   },
@@ -1066,7 +1066,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/sodium-borate.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "processed-resource",
+    subgroup = "sp-processed-resource",
     order = "[sodium-borate]",
     stack_size = 50
   },
@@ -1076,7 +1076,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/cobalt-oxide.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "processed-resource",
+    subgroup = "sp-processed-resource",
     order = "[cobalt-oxide]",
     stack_size = 50
   },
@@ -1086,7 +1086,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/arsenic-trioxide.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "processed-resource",
+    subgroup = "sp-processed-resource",
     order = "[arsenic-trioxide]",
     stack_size = 50
   },
@@ -1096,7 +1096,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/molybdenum-trioxide.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "processed-resource",
+    subgroup = "sp-processed-resource",
     order = "[molybdenum-trioxide]",
     stack_size = 50
   },
@@ -1106,7 +1106,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/manganese-dioxide.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "processed-resource",
+    subgroup = "sp-processed-resource",
     order = "[manganese-dioxide]",
     stack_size = 100
   },
@@ -1116,7 +1116,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/sodium-hafnate.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "processed-resource",
+    subgroup = "sp-processed-resource",
     order = "[sodium-hafnate]",
     stack_size = 100
   },
@@ -1126,7 +1126,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/sodium-zirconate.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "processed-resource",
+    subgroup = "sp-processed-resource",
     order = "[sodium-zirconate]",
     stack_size = 100
   },
@@ -1141,7 +1141,7 @@ data:extend({
       {size = 64, filename = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/coke/coke-1.png", scale = 0.5, mipmap_count = 4},
       {size = 64, filename = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/coke/coke-2.png", scale = 0.5, mipmap_count = 4}
     },
-    subgroup = "processed-resource",
+    subgroup = "sp-processed-resource",
     fuel_category = "chemical",
     fuel_value = "30MJ",
     order = "[coke]",
@@ -1159,7 +1159,7 @@ data:extend({
       {size = 64, filename = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/quartz/quartz-2.png", scale = 0.5, mipmap_count = 4},
       {size = 64, filename = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/quartz/quartz-3.png", scale = 0.5, mipmap_count = 4}
     },
-    subgroup = "processed-resource",
+    subgroup = "sp-processed-resource",
     order = "silicon-[quartz]",
     stack_size = 200
   },
@@ -1169,7 +1169,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/vanadium-pentoxide.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "processed-resource",
+    subgroup = "sp-processed-resource",
     order = "[vanadium-pentoxide]",
     stack_size = 50
   },
@@ -1179,7 +1179,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/ammonium-metavanadate.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "processed-resource",
+    subgroup = "sp-processed-resource",
     order = "[ammonium-metavanadate]",
     stack_size = 50
   },
@@ -1189,7 +1189,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/potassium-chloride.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "processed-resource",
+    subgroup = "sp-processed-resource",
     order = "[potassium-chloride]",
     stack_size = 100
   },
@@ -1199,7 +1199,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/ethylene-vinyl-acetate.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "processed-resource",
+    subgroup = "sp-processed-resource",
     order = "[ethylene-vinyl-acetate]",
     stack_size = 100
   },
@@ -1209,7 +1209,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/gallium-chloride.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "processed-resource",
+    subgroup = "sp-processed-resource",
     order = "[gallium-chloride]",
     stack_size = 50
   },
@@ -1219,7 +1219,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/indium-sulfate.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "processed-resource",
+    subgroup = "sp-processed-resource",
     order = "[indium-sulfate]",
     stack_size = 50
   },
@@ -1229,7 +1229,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/zinc-oxide.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "processed-resource",
+    subgroup = "sp-processed-resource",
     order = "[zinc-oxide]",
     stack_size = 100
   },
@@ -1239,7 +1239,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/selenious-acid.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "processed-resource",
+    subgroup = "sp-processed-resource",
     order = "[selenious-acid]",
     stack_size = 50
   },
@@ -1249,7 +1249,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/selenium-dioxide.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "processed-resource",
+    subgroup = "sp-processed-resource",
     order = "[selenium-dioxide]",
     stack_size = 50
   },
@@ -1259,7 +1259,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/beryllium-fluoride.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "processed-resource",
+    subgroup = "sp-processed-resource",
     order = "[beryllium-fluoride]",
     stack_size = 50
   },
@@ -1269,7 +1269,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/beryllium-oxide.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "processed-resource",
+    subgroup = "sp-processed-resource",
     order = "[beryllium-oxide]",
     stack_size = 50
   },
@@ -1341,7 +1341,7 @@ data:extend({
         },
       },
     },
-    subgroup = "processed-resource",
+    subgroup = "sp-processed-resource",
     order = "z-alien[imersite-powder]",
     stack_size = 100,
   },
@@ -1359,7 +1359,7 @@ data:extend({
       {size = 64, filename = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/silicon/silicon-1.png", scale = 0.5, mipmap_count = 4},
       {size = 64, filename = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/silicon/silicon-2.png", scale = 0.5, mipmap_count = 4}
     },
-    subgroup = "processed-non-metal",
+    subgroup = "sp-processed-non-metal",
     order = "[silicon]",
     stack_size = 100
   },
@@ -1369,7 +1369,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/germanium.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "processed-non-metal",
+    subgroup = "sp-processed-non-metal",
     order = "[germanium]",
     stack_size = 100
   },
@@ -1379,7 +1379,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/iodine.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "processed-non-metal",
+    subgroup = "sp-processed-non-metal",
     order = "[iodine]",
     stack_size = 100
   },
@@ -1389,7 +1389,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/phosphorus.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "processed-non-metal",
+    subgroup = "sp-processed-non-metal",
     order = "[phosphorus]",
     stack_size = 100
   },
@@ -1402,7 +1402,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/aluminum-powder.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "processed-metal",
+    subgroup = "sp-processed-metal",
     order = "[aluminum-powder]",
     stack_size = 200
   },
@@ -1412,7 +1412,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/beryllium.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "processed-metal",
+    subgroup = "sp-processed-metal",
     order = "[beryllium]",
     stack_size = 100
   },
@@ -1422,7 +1422,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/sodium.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "processed-metal",
+    subgroup = "sp-processed-metal",
     order = "[sodium]",
     stack_size = 100
   },
@@ -1432,7 +1432,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/tungsten-powder.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "processed-metal",
+    subgroup = "sp-processed-metal",
     order = "[tungsten-powder]",
     stack_size = 200
   },
@@ -1442,7 +1442,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/gold.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "processed-metal",
+    subgroup = "sp-processed-metal",
     order = "[gold]",
     stack_size = 50
   },
@@ -1452,7 +1452,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/silver.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "processed-metal",
+    subgroup = "sp-processed-metal",
     order = "[silver]",
     stack_size = 50
   },
@@ -1462,7 +1462,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/platinum.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "processed-metal",
+    subgroup = "sp-processed-metal",
     order = "[platinum]",
     stack_size = 50
   },
@@ -1472,7 +1472,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/palladium.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "processed-metal",
+    subgroup = "sp-processed-metal",
     order = "[palladium]",
     stack_size = 50
   },
@@ -1482,7 +1482,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/iridium.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "processed-metal",
+    subgroup = "sp-processed-metal",
     order = "[iridium]",
     stack_size = 50
   },
@@ -1492,7 +1492,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/yttrium.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "processed-metal",
+    subgroup = "sp-processed-metal",
     order = "[yttrium]",
     stack_size = 50
   },
@@ -1502,7 +1502,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/lanthanum.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "processed-metal",
+    subgroup = "sp-processed-metal",
     order = "[lanthanum]",
     stack_size = 50
   },
@@ -1512,7 +1512,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/cerium.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "processed-metal",
+    subgroup = "sp-processed-metal",
     order = "[cerium]",
     stack_size = 50
   },
@@ -1522,7 +1522,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/neodymium.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "processed-metal",
+    subgroup = "sp-processed-metal",
     order = "[neodymium]",
     stack_size = 100
   },
@@ -1532,7 +1532,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/niobium-powder.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "processed-metal",
+    subgroup = "sp-processed-metal",
     order = "[niobium-powder]",
     stack_size = 100
   },
@@ -1542,7 +1542,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/bismuth.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "processed-metal",
+    subgroup = "sp-processed-metal",
     order = "[bismuth]",
     stack_size = 100
   },
@@ -1558,7 +1558,7 @@ data:extend({
       {size = 64, filename = "__Spaghetorio__/graphics/icons/tellurium-3.png", scale = 0.5, mipmap_count = 4},
       {size = 64, filename = "__Spaghetorio__/graphics/icons/tellurium-4.png", scale = 0.5, mipmap_count = 4}
     },
-    subgroup = "processed-metal",
+    subgroup = "sp-processed-metal",
     order = "[tellurium]",
     stack_size = 100
   },
@@ -1568,7 +1568,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/cadmium.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "processed-metal",
+    subgroup = "sp-processed-metal",
     order = "[cadmium]",
     stack_size = 100
   },
@@ -1578,7 +1578,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/gallium.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "processed-metal",
+    subgroup = "sp-processed-metal",
     order = "[gallium]",
     stack_size = 100
   },
@@ -1588,7 +1588,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/hafnium.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "processed-metal",
+    subgroup = "sp-processed-metal",
     order = "[hafnium]",
     stack_size = 100
   },
@@ -1598,7 +1598,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/rhenium.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "processed-metal",
+    subgroup = "sp-processed-metal",
     order = "[rhenium]",
     stack_size = 100
   },
@@ -1617,7 +1617,7 @@ data:extend({
       {size = 64, filename = "__Spaghetorio__/graphics/icons/plutonium-239-3.png", scale = 0.5, mipmap_count = 4},
       {size = 64, filename = "__Spaghetorio__/graphics/icons/plutonium-239-4.png", scale = 0.5, mipmap_count = 4}
     },
-    subgroup = "radioactive-resource",
+    subgroup = "sp-radioactive-resource",
     order = "z-nuclear-3-[plutonium-239]",
     stack_size = 20
   },
@@ -1633,7 +1633,7 @@ data:extend({
       {size = 64, filename = "__Spaghetorio__/graphics/icons/plutonium-240-3.png", scale = 0.5, mipmap_count = 4},
       {size = 64, filename = "__Spaghetorio__/graphics/icons/plutonium-240-4.png", scale = 0.5, mipmap_count = 4}
     },
-    subgroup = "radioactive-resource",
+    subgroup = "sp-radioactive-resource",
     order = "z-nuclear-3-[plutonium-240]",
     stack_size = 20
   },
@@ -1646,7 +1646,7 @@ data:extend({
     icon = "__base__/graphics/icons/steel-plate.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "raw-material",
+    subgroup = "sp-raw-material",
     order = "beam-[iron-beam]",
     stack_size = 100
   },
@@ -1656,7 +1656,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/krastorio/icons/items/steel-beam.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "raw-material",
+    subgroup = "sp-raw-material",
     order = "beam-[steel-beam]",
     stack_size = 100
   },
@@ -1666,7 +1666,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/aluminum-sheet.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "raw-material",
+    subgroup = "sp-raw-material",
     order = "a-plate-[aluminum-sheet]",
     stack_size = 100
   },
@@ -1676,7 +1676,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/chromium-plate.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "raw-material",
+    subgroup = "sp-raw-material",
     order = "a-plate-[chromium-plate]",
     stack_size = 100
   },
@@ -1686,7 +1686,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/nickel-ingot.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "raw-material",
+    subgroup = "sp-raw-material",
     order = "ingot-a-[nickel-ingot]",
     stack_size = 100
   },
@@ -1696,7 +1696,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/titanium-ingot.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "raw-material",
+    subgroup = "sp-raw-material",
     order = "ingot-a-[titanium-ingot]",
     stack_size = 100
   },
@@ -1706,7 +1706,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/titanium-plate.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "raw-material",
+    subgroup = "sp-raw-material",
     order = "a-plate-[titanium-plate]",
     stack_size = 100
   },
@@ -1716,7 +1716,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/tin-ingot.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "raw-material",
+    subgroup = "sp-raw-material",
     order = "ingot-a-[tin-ingot]",
     stack_size = 100
   },
@@ -1726,7 +1726,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/potassium-ingot.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "raw-material",
+    subgroup = "sp-raw-material",
     order = "ingot-a-[potassium-ingot]",
     stack_size = 100
   },
@@ -1736,7 +1736,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/zirconium-rod.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "raw-material",
+    subgroup = "sp-raw-material",
     order = "rod-[zirconium-rod]",
     stack_size = 100
   },
@@ -1746,7 +1746,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/zinc-plate.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "raw-material",
+    subgroup = "sp-raw-material",
     order = "a-plate-[zinc-plate]",
     stack_size = 100
   },
@@ -1756,7 +1756,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/vanadium-plate.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "raw-material",
+    subgroup = "sp-raw-material",
     order = "a-plate-[vanadium-plate]",
     stack_size = 100
   },
@@ -1766,7 +1766,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/magnesium-slab.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "raw-material",
+    subgroup = "sp-raw-material",
     order = "ingot-slab-[magnesium-slab]",
     stack_size = 100
   },
@@ -1776,7 +1776,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/lead-slab.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "raw-material",
+    subgroup = "sp-raw-material",
     order = "ingot-slab-[lead-slab]",
     stack_size = 100
   },
@@ -1786,7 +1786,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/cobalt-billet.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "raw-material",
+    subgroup = "sp-raw-material",
     order = "ingot-billet-[cobalt-billet]",
     stack_size = 100
   },
@@ -1796,7 +1796,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/niobium-billet.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "raw-material",
+    subgroup = "sp-raw-material",
     order = "ingot-billet-[niobium-billet]",
     stack_size = 100
   },
@@ -1806,7 +1806,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/tantalum-billet.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "raw-material",
+    subgroup = "sp-raw-material",
     order = "ingot-billet-[tantalum-billet]",
     stack_size = 100
   },
@@ -1822,7 +1822,7 @@ data:extend({
       {size = 64, filename = "__Spaghetorio__/graphics/icons/wooden-board-3.png", scale = 0.5, mipmap_count = 4},
       {size = 64, filename = "__Spaghetorio__/graphics/icons/wooden-board-4.png", scale = 0.5, mipmap_count = 4}
     },
-    subgroup = "raw-material",
+    subgroup = "sp-raw-material",
     order = "a-plate-1-[wooden-board]",
     fuel_value = "1MJ",
     fuel_category = "chemical",
@@ -1840,7 +1840,7 @@ data:extend({
       {size = 64, filename = "__Spaghetorio__/graphics/icons/wooden-pole-3.png", scale = 0.5, mipmap_count = 4},
       {size = 64, filename = "__Spaghetorio__/graphics/icons/wooden-pole-4.png", scale = 0.5, mipmap_count = 4}
     },
-    subgroup = "raw-material",
+    subgroup = "sp-raw-material",
     order = "wood-[wooden-pole]",
     fuel_value = "5MJ",
     fuel_category = "chemical",
@@ -1852,7 +1852,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/wood-chips.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "raw-material",
+    subgroup = "sp-raw-material",
     order = "wood-[wood-chips]",
     fuel_value = "0.5MJ",
     fuel_category = "chemical",
@@ -1864,7 +1864,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/krastorio/icons/items/glass.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "raw-material",
+    subgroup = "sp-raw-material",
     order = "a-plate-1-[glass]",
     stack_size = 100
   },
@@ -1874,7 +1874,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/barium-billet.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "raw-material",
+    subgroup = "sp-raw-material",
     order = "ingot-billet-[barium-billet]",
     stack_size = 100
   },
@@ -1884,7 +1884,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/boron-pillet.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "raw-material",
+    subgroup = "sp-raw-material",
     order = "pillet-[boron-pillet]",
     stack_size = 100
   },
@@ -1894,7 +1894,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/arsen-pillet.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "raw-material",
+    subgroup = "sp-raw-material",
     order = "pillet-[arsen-pillet]",
     stack_size = 100
   },
@@ -1904,7 +1904,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/molybdenum-pillet.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "raw-material",
+    subgroup = "sp-raw-material",
     order = "pillet-[molybdenum-pillet]",
     stack_size = 100
   },
@@ -1914,7 +1914,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/selenium-pillet.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "raw-material",
+    subgroup = "sp-raw-material",
     order = "pillet-[selenium-pillet]",
     stack_size = 100
   },
@@ -1924,7 +1924,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/manganese-ingot.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "raw-material",
+    subgroup = "sp-raw-material",
     order = "ingot-a-[manganese-ingot]",
     stack_size = 100
   },
@@ -1934,7 +1934,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/antimony-pillet.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "raw-material",
+    subgroup = "sp-raw-material",
     order = "pillet-[sp-antimony]",
     stack_size = 100
   },
@@ -1944,7 +1944,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/indium-ingot.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "raw-material",
+    subgroup = "sp-raw-material",
     order = "ingot-a-[indium-ingot]",
     stack_size = 100
   },
@@ -1957,7 +1957,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/bronze-rod.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "alloy",
+    subgroup = "sp-alloy",
     order = "rod-[bronze-rod]",
     stack_size = 100
   },
@@ -1967,7 +1967,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/brass.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "alloy",
+    subgroup = "sp-alloy",
     order = "[brass]",
     stack_size = 100
   },
@@ -1977,7 +1977,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/stainless-steel.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "alloy",
+    subgroup = "sp-alloy",
     order = "[stainless-steel]",
     stack_size = 100
   },
@@ -1987,7 +1987,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/ferrite.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "alloy",
+    subgroup = "sp-alloy",
     order = "[ferrite]",
     stack_size = 100
   },
@@ -1997,7 +1997,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/duralumin.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "alloy",
+    subgroup = "sp-alloy",
     order = "[duralumin]",
     stack_size = 100
   },
@@ -2007,7 +2007,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/aluminum-brass.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "alloy",
+    subgroup = "sp-alloy",
     order = "[aluminum-brass]",
     stack_size = 100
   },
@@ -2017,7 +2017,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/nickel-chromium.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "alloy",
+    subgroup = "sp-alloy",
     order = "[nickel-chromium]",
     stack_size = 100
   },
@@ -2027,7 +2027,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/nimonic.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "alloy",
+    subgroup = "sp-alloy",
     order = "[nimonic]",
     stack_size = 100
   },
@@ -2037,7 +2037,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/zircaloy.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "alloy",
+    subgroup = "sp-alloy",
     order = "[zircaloy]",
     stack_size = 100
   },
@@ -2047,7 +2047,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/inconel.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "alloy",
+    subgroup = "sp-alloy",
     order = "[inconel]",
     stack_size = 100
   },
@@ -2057,7 +2057,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/titanium-aluminum-tin.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "alloy",
+    subgroup = "sp-alloy",
     order = "[titanium-aluminum-tin]",
     stack_size = 100
   },
@@ -2067,7 +2067,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/titanium-niobium.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "alloy",
+    subgroup = "sp-alloy",
     order = "[titanium-niobium]",
     stack_size = 100
   },
@@ -2077,7 +2077,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/nitenol.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "alloy",
+    subgroup = "sp-alloy",
     order = "[titanium-niobium]",
     stack_size = 100
   },
@@ -2087,7 +2087,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/invar.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "alloy",
+    subgroup = "sp-alloy",
     order = "[invar]",
     stack_size = 100
   },
@@ -2097,7 +2097,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/niobium-steel.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "alloy",
+    subgroup = "sp-alloy",
     order = "[niobium-steel]",
     stack_size = 100
   },
@@ -2107,7 +2107,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/niobium-tin.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "alloy",
+    subgroup = "sp-alloy",
     order = "[niobium-tin]",
     stack_size = 100
   },
@@ -2117,7 +2117,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/copper-antimony.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "alloy",
+    subgroup = "sp-alloy",
     order = "[copper-antimony]",
     stack_size = 100
   },
@@ -2127,7 +2127,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/nickel-cobalt.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "alloy",
+    subgroup = "sp-alloy",
     order = "[nickel-cobalt]",
     stack_size = 100
   },
@@ -2137,7 +2137,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/waspaloy.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "alloy",
+    subgroup = "sp-alloy",
     order = "[waspaloy]",
     stack_size = 100
   },
@@ -2148,7 +2148,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/chromium-cobalt.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "alloy",
+    subgroup = "sp-alloy",
     order = "[chromium-cobalt]",
     stack_size = 100
   },
@@ -2158,7 +2158,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/elgiloy.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "alloy",
+    subgroup = "sp-alloy",
     order = "[elgiloy]",
     stack_size = 100
   },
@@ -2168,7 +2168,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/maraging-steel.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "alloy",
+    subgroup = "sp-alloy",
     order = "[maraging-steel]",
     stack_size = 100
   },
@@ -2178,7 +2178,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/kovar.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "alloy",
+    subgroup = "sp-alloy",
     order = "[kovar]",
     stack_size = 100
   },
@@ -2188,7 +2188,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/titanium-aluminum-vanadium.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "alloy",
+    subgroup = "sp-alloy",
     order = "[titanium-aluminum-vanadium]",
     stack_size = 100
   },
@@ -2198,7 +2198,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/vanadium-aluminum.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "alloy",
+    subgroup = "sp-alloy",
     order = "[vanadium-aluminum]",
     stack_size = 100
   },
@@ -2208,7 +2208,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/vanadium-steel.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "alloy",
+    subgroup = "sp-alloy",
     order = "[vanadium-steel]",
     stack_size = 100
   },
@@ -2218,7 +2218,7 @@ data:extend({
     icon = "__space-age__/graphics/icons/tungsten-plate.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "alloy",
+    subgroup = "sp-alloy",
     order = "[tungsten-steel]",
     stack_size = 100
   },
@@ -2228,7 +2228,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/nickel-rhenium.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "alloy",
+    subgroup = "sp-alloy",
     order = "[nickel-rhenium]",
     stack_size = 50
   },
@@ -2238,7 +2238,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/silver-indium-cadmium.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "alloy",
+    subgroup = "sp-alloy",
     order = "[silver-indium-cadmium]",
     stack_size = 50
   },
@@ -2257,7 +2257,7 @@ data:extend({
       {size = 64, filename = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/rare-metals/rare-metals-5.png", scale = 0.5, mipmap_count = 4},
       {size = 64, filename = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/rare-metals/rare-metals-6.png", scale = 0.5, mipmap_count = 4}
     },
-    subgroup = "alloy",
+    subgroup = "sp-alloy",
     order = "[rare-metal-alloy]",
     stack_size = 100
   },
@@ -2270,7 +2270,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/carbon-nanotubes.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "advanced-raw-material",
+    subgroup = "sp-advanced-raw-material",
     order = "carbon-[carbon-nanotubes]",
     stack_size = 50
   },
@@ -2280,7 +2280,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/graphene.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "advanced-raw-material",
+    subgroup = "sp-advanced-raw-material",
     order = "carbon-[graphene]",
     stack_size = 50
   },
@@ -2290,7 +2290,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/high-purity-silicon.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "advanced-raw-material",
+    subgroup = "sp-advanced-raw-material",
     order = "crystal-silicon-[high-purity-silicon]",
     stack_size = 100
   },
@@ -2300,7 +2300,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/n-type-polysilicon.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "advanced-raw-material",
+    subgroup = "sp-advanced-raw-material",
     order = "crystal-silicon-[n-type-polysilicon]",
     stack_size = 100
   },
@@ -2310,7 +2310,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/p-type-polysilicon.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "advanced-raw-material",
+    subgroup = "sp-advanced-raw-material",
     order = "crystal-silicon-[p-type-polysilicon]",
     stack_size = 100
   },
@@ -2320,7 +2320,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/boron-phosphide.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "advanced-raw-material",
+    subgroup = "sp-advanced-raw-material",
     order = "[boron-phosphide]",
     stack_size = 50
   },
@@ -2330,7 +2330,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/lead-molybdate.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "advanced-raw-material",
+    subgroup = "sp-advanced-raw-material",
     order = "[lead-molybdate]",
     stack_size = 50
   },
@@ -2340,7 +2340,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/cadmium-telluride.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "advanced-raw-material",
+    subgroup = "sp-advanced-raw-material",
     order = "crystal-[cadmium-telluride]",
     stack_size = 50
   },
@@ -2350,7 +2350,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/copper-indium-gallium-selenium.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "advanced-raw-material",
+    subgroup = "sp-advanced-raw-material",
     order = "crystal-[copper-indium-gallium-selenium]",
     stack_size = 50
   },
@@ -2360,7 +2360,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/bismuth-telluride.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "advanced-raw-material",
+    subgroup = "sp-advanced-raw-material",
     order = "[bismuth-telluride]",
     stack_size = 50
   },
@@ -2370,7 +2370,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/aluminum-gallium-arsenide.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "advanced-raw-material",
+    subgroup = "sp-advanced-raw-material",
     order = "[aluminum-gallium-arsenide]",
     stack_size = 50
   },
@@ -2380,7 +2380,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/mercury-cadmium-telluride.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "advanced-raw-material",
+    subgroup = "sp-advanced-raw-material",
     order = "[mercury-cadmium-telluride]",
     stack_size = 50
   },
@@ -2393,7 +2393,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/rukite-powder.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "alien-processed-resource",
+    subgroup = "sp-alien-processed-resource",
     order = "rukite-[rukite-powder]",
     stack_size = 100
   },
@@ -2403,7 +2403,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/rukite-bar.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "alien-processed-resource",
+    subgroup = "sp-alien-processed-resource",
     order = "rukite-[rukite-bar]",
     stack_size = 100
   },
@@ -2413,7 +2413,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/yemnuth-shard.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "alien-processed-resource",
+    subgroup = "sp-alien-processed-resource",
     order = "yemnuth-[yemnuth-shard]",
     stack_size = 100
   },
@@ -2423,7 +2423,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/yemnuth-pearls.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "alien-processed-resource",
+    subgroup = "sp-alien-processed-resource",
     order = "yemnuth-[yemnuth-pearl]",
     stack_size = 100
   },
@@ -2433,7 +2433,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/plasma-crystal.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "alien-processed-resource",
+    subgroup = "sp-alien-processed-resource",
     order = "yemnuth-[plasma-crystal]",
     stack_size = 100
   },
@@ -2443,7 +2443,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/gravitonium.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "alien-processed-resource",
+    subgroup = "sp-alien-processed-resource",
     order = "yemnuth-z-[gravitonium]",
     stack_size = 100
   },
@@ -2453,7 +2453,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/blunagium-foam.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "alien-processed-resource",
+    subgroup = "sp-alien-processed-resource",
     order = "blunagium-[blunagium-foam]",
     stack_size = 100
   },
@@ -2463,7 +2463,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/blunagium-stone.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "alien-processed-resource",
+    subgroup = "sp-alien-processed-resource",
     order = "blunagium-[blunagium-stone]",
     stack_size = 100
   },
@@ -2473,7 +2473,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/blunagium-basalt.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "alien-processed-resource",
+    subgroup = "sp-alien-processed-resource",
     order = "blunagium-[blunagium-basalt]",
     stack_size = 100
   },
@@ -2483,7 +2483,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/blunagium-bar.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "alien-processed-resource",
+    subgroup = "sp-alien-processed-resource",
     order = "blunagium-[blunagium-bar]",
     stack_size = 100
   },
@@ -2493,7 +2493,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/quantum-foam.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "alien-processed-resource",
+    subgroup = "sp-alien-processed-resource",
     order = "blunagium-[quantum-foam]",
     stack_size = 100
   },
@@ -2503,7 +2503,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/quantum-crystal.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "alien-processed-resource",
+    subgroup = "sp-alien-processed-resource",
     order = "blunagium-[quantum-crystal]",
     stack_size = 100
   },
@@ -2513,7 +2513,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/fermium-condensate.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "alien-processed-resource",
+    subgroup = "sp-alien-processed-resource",
     order = "blunagium-[fermium-condensate]",
     stack_size = 100
   },
@@ -2523,7 +2523,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/grobgnum-cube.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "alien-processed-resource",
+    subgroup = "sp-alien-processed-resource",
     order = "grobgnum-[grobgnum-cube]",
     stack_size = 100
   },
@@ -2533,7 +2533,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/grobgnum-shard.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "alien-processed-resource",
+    subgroup = "sp-alien-processed-resource",
     order = "grobgnum-[grobgnum-shard]",
     stack_size = 100
   },
@@ -2543,7 +2543,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/grobgnum-droplet.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "alien-processed-resource",
+    subgroup = "sp-alien-processed-resource",
     order = "grobgnum-[grobgnum-droplet]",
     stack_size = 100
   },
@@ -2553,7 +2553,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/grobgnum-bar.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "alien-processed-resource",
+    subgroup = "sp-alien-processed-resource",
     order = "grobgnum-[grobgnum-bar]",
     stack_size = 100
   },
@@ -2665,7 +2665,7 @@ data:extend({
         },
       },
     },
-    subgroup = "alien-processed-resource",
+    subgroup = "sp-alien-processed-resource",
     order = "imersite-[imersite-crystal]",
     stack_size = 50,
   },
@@ -2684,7 +2684,7 @@ data:extend({
       {size = 64, filename = "__Spaghetorio__/graphics/icons/blunagium-plate-3.png", scale = 0.5, mipmap_count = 4},
       {size = 64, filename = "__Spaghetorio__/graphics/icons/blunagium-plate-4.png", scale = 0.5, mipmap_count = 4}
     },
-    subgroup = "alien-compound",
+    subgroup = "sp-alien-compound",
     order = "a-plate-[blunagium-plate]",
     stack_size = 100
   },
@@ -2700,7 +2700,7 @@ data:extend({
       {size = 64, filename = "__Spaghetorio__/graphics/icons/grobgnum-plate-3.png", scale = 0.5, mipmap_count = 4},
       {size = 64, filename = "__Spaghetorio__/graphics/icons/grobgnum-plate-4.png", scale = 0.5, mipmap_count = 4}
     },
-    subgroup = "alien-compound",
+    subgroup = "sp-alien-compound",
     order = "a-plate-[grobgnum-plate]",
     stack_size = 100
   },
@@ -2716,7 +2716,7 @@ data:extend({
       {size = 64, filename = "__Spaghetorio__/graphics/icons/rukite-plate-3.png", scale = 0.5, mipmap_count = 4},
       {size = 64, filename = "__Spaghetorio__/graphics/icons/rukite-plate-4.png", scale = 0.5, mipmap_count = 4}
     },
-    subgroup = "alien-compound",
+    subgroup = "sp-alien-compound",
     order = "a-plate-[rukite-plate]",
     stack_size = 100
   },
@@ -2732,7 +2732,7 @@ data:extend({
       {size = 64, filename = "__Spaghetorio__/graphics/icons/yemnuth-plate-3.png", scale = 0.5, mipmap_count = 4},
       {size = 64, filename = "__Spaghetorio__/graphics/icons/yemnuth-plate-4.png", scale = 0.5, mipmap_count = 4}
     },
-    subgroup = "alien-compound",
+    subgroup = "sp-alien-compound",
     order = "a-plate-[yemnuth-plate]",
     stack_size = 100
   },
@@ -2760,7 +2760,7 @@ data:extend({
         },
       },
     },
-    subgroup = "alien-compound",
+    subgroup = "sp-alien-compound",
     order = "a-plate-[imersium-plate]",
     stack_size = 100,
   },
@@ -2770,7 +2770,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/blunagium-rukite-compound.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "alien-compound",
+    subgroup = "sp-alien-compound",
     order = "compound-[blunagium-rukite-compound]",
     stack_size = 100
   },
@@ -2780,7 +2780,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/blunagium-yemnuth-compound.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "alien-compound",
+    subgroup = "sp-alien-compound",
     order = "compound-[blunagium-yemnuth-compound]",
     stack_size = 100
   },
@@ -2790,7 +2790,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/grobgnum-rukite-beam.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "alien-compound",
+    subgroup = "sp-alien-compound",
     order = "beam-[grobgnum-rukite-beam]",
     stack_size = 100
   },
@@ -2818,7 +2818,7 @@ data:extend({
         },
       },
     },
-    subgroup = "alien-compound",
+    subgroup = "sp-alien-compound",
     order = "beam-[imersium-beam]",
     stack_size = 100,
   },
@@ -2828,7 +2828,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/grobgnum-rukite-compound.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "alien-compound",
+    subgroup = "sp-alien-compound",
     order = "compound-[grobgnum-rukite-compound]",
     stack_size = 100
   },
@@ -2838,7 +2838,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/ultra-durable-ceramics.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "alien-compound",
+    subgroup = "sp-alien-compound",
     order = "ceramics-[ultra-durable-ceramics]",
     stack_size = 100
   },
@@ -2848,7 +2848,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/blunagium-imersite-slab.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "alien-compound",
+    subgroup = "sp-alien-compound",
     order = "ceramics-[blunagium-imersite-slab]",
     stack_size = 100
   },
@@ -2858,7 +2858,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/blunagium-yemnuth-beam.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "alien-compound",
+    subgroup = "sp-alien-compound",
     order = "beam-[blunagium-yemnuth-beam]",
     stack_size = 100
   },
@@ -2868,7 +2868,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/charged-slab.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "alien-compound",
+    subgroup = "sp-alien-compound",
     order = "ingot-[charged-slab]",
     stack_size = 50
   },
@@ -2878,7 +2878,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/hot-stone.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "alien-compound",
+    subgroup = "sp-alien-compound",
     order = "ingot-[hot-stone]",
     stack_size = 50
   },
@@ -2888,7 +2888,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/imersite-rukite-beam.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "alien-compound",
+    subgroup = "sp-alien-compound",
     order = "beam-[imersite-rukite-beam]",
     stack_size = 100
   },
@@ -2898,7 +2898,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/radiant-glass.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "alien-compound",
+    subgroup = "sp-alien-compound",
     order = "ceramics-[radiant-glass]",
     stack_size = 100
   },
@@ -2908,7 +2908,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/vitality-prism.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "alien-compound",
+    subgroup = "sp-alien-compound",
     order = "ceramics-[vitality-prism]",
     stack_size = 100
   },
@@ -4319,7 +4319,7 @@ data:extend({
       {size = 64, filename = "__Spaghetorio__/graphics/icons/ceramics-4.png", scale = 0.5, mipmap_count = 4}
     },
     scale = 0.5,
-    subgroup = "ceramic",
+    subgroup = "sp-ceramic-material",
     order = "[ceramics]",
     stack_size = 100
   },
@@ -4329,7 +4329,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/zirconia.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "ceramic",
+    subgroup = "sp-ceramic-material",
     order = "crystal-[zirconia]",
     stack_size = 100
   },
@@ -4339,7 +4339,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/diamond.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "ceramic",
+    subgroup = "sp-ceramic-material",
     order = "crystal-[diamond]",
     stack_size = 50
   },
@@ -4349,7 +4349,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/sapphire.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "ceramic",
+    subgroup = "sp-ceramic-material",
     order = "crystal-[sapphire]",
     stack_size = 50
   },
@@ -4359,7 +4359,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/zinc-selenide.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "ceramic",
+    subgroup = "sp-ceramic-material",
     order = "crystal-[zinc-selenide]",
     stack_size = 50
   },
@@ -4369,7 +4369,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/gallium-nitride.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "ceramic",
+    subgroup = "sp-ceramic-material",
     order = "crystal-[gallium-nitride]",
     stack_size = 50
   },
@@ -4379,7 +4379,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/barium-carbonate.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "ceramic",
+    subgroup = "sp-ceramic-material",
     order = "[barium-carbonate]",
     stack_size = 50
   },
@@ -4389,7 +4389,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/barium-titanate.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "ceramic",
+    subgroup = "sp-ceramic-material",
     order = "[barium-titanate]",
     stack_size = 50
   },
@@ -4399,7 +4399,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/monocrystal.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "ceramic",
+    subgroup = "sp-ceramic-material",
     order = "crystal-[monocrystal]",
     stack_size = 50
   },
@@ -4409,7 +4409,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/quasicrystal.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "ceramic",
+    subgroup = "sp-ceramic-material",
     order = "crystal-[quasicrystal]",
     stack_size = 50
   },
@@ -4419,7 +4419,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/boron-silicade.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "ceramic",
+    subgroup = "sp-ceramic-material",
     order = "[boron-silicade]",
     stack_size = 50
   },
@@ -4435,7 +4435,7 @@ data:extend({
       {size = 64, filename = "__Spaghetorio__/graphics/icons/titanium-nitride-4.png", scale = 0.5, mipmap_count = 4}
     },
     scale = 0.5,
-    subgroup = "ceramic",
+    subgroup = "sp-ceramic-material",
     order = "[titanium-nitride]",
     stack_size = 50
   },
@@ -4445,7 +4445,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/titanium-carbide.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "ceramic",
+    subgroup = "sp-ceramic-material",
     order = "[titanium-carbide]",
     stack_size = 50
   },
@@ -4455,7 +4455,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/silicon-nitride.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "ceramic",
+    subgroup = "sp-ceramic-material",
     order = "[silicon-nitride]",
     stack_size = 50
   },
@@ -4465,7 +4465,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/boron-carbide.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "ceramic",
+    subgroup = "sp-ceramic-material",
     order = "[boron-carbide]",
     stack_size = 50
   },
@@ -4478,7 +4478,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/rubber.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "chemical-product",
+    subgroup = "sp-chemical-product",
     order = "[rubber]",
     stack_size = 100
   },
@@ -4488,7 +4488,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/cement.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "chemical-product",
+    subgroup = "sp-chemical-product",
     order = "[cement]",
     stack_size = 100
   },
@@ -4498,7 +4498,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/urea.png",
     icon_size = 64,
     icon_mipmaps = 4,
-    subgroup = "chemical-product",
+    subgroup = "sp-chemical-product",
     order = "[urea]",
     stack_size = 50
   },
@@ -4508,7 +4508,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/polyvinyl-fluoride.png",
     icon_size = 64,
     icon_mipmaps = 4,
-    subgroup = "chemical-product",
+    subgroup = "sp-chemical-product",
     order = "[polyvinyl-fluoride]",
     stack_size = 100
   },
@@ -4518,7 +4518,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/insulation-sheet.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "chemical-product",
+    subgroup = "sp-chemical-product",
     order = "[insulation-sheet]",
     stack_size = 100
   },
@@ -4528,7 +4528,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/antimony-trichloride.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "chemical-product",
+    subgroup = "sp-chemical-product",
     order = "[antimony-trichloride]",
     stack_size = 100
   },
@@ -4538,7 +4538,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/antimony-triiodide.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "chemical-product",
+    subgroup = "sp-chemical-product",
     order = "[antimony-triiodide]",
     stack_size = 100
   },
@@ -4548,7 +4548,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/arsenic-sulfide.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "chemical-product",
+    subgroup = "sp-chemical-product",
     order = "[arsenic-sulfide]",
     stack_size = 100
   },
@@ -4558,7 +4558,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/arsenic-iodide.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "chemical-product",
+    subgroup = "sp-chemical-product",
     order = "[arsenic-iodide]",
     stack_size = 100
   },
@@ -4568,7 +4568,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/sodium-molybdate.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "chemical-product",
+    subgroup = "sp-chemical-product",
     order = "[sodium-molybdate]",
     stack_size = 100
   },
@@ -4578,7 +4578,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/manganese-chloride.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "chemical-product",
+    subgroup = "sp-chemical-product",
     order = "[manganese-chloride]",
     stack_size = 100
   },
@@ -4588,7 +4588,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/vanadyl-sulfate.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "chemical-product",
+    subgroup = "sp-chemical-product",
     order = "[vanadyl-sulfate]",
     stack_size = 100
   },
@@ -4598,7 +4598,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/potassium-hydroxide.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "chemical-product",
+    subgroup = "sp-chemical-product",
     order = "[potassium-hydroxide]",
     stack_size = 100
   },
@@ -4608,7 +4608,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/potassium-cyanide.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "chemical-product",
+    subgroup = "sp-chemical-product",
     order = "[potassium-cyanide]",
     stack_size = 100
   },
@@ -4618,7 +4618,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/ammonium-sulfate.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "chemical-product",
+    subgroup = "sp-chemical-product",
     order = "[ammonium-sulfate]",
     stack_size = 100
   },
@@ -4628,7 +4628,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/ammonium-persulfate.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "chemical-product",
+    subgroup = "sp-chemical-product",
     order = "[ammonium-persulfate]",
     stack_size = 100
   },
@@ -4638,7 +4638,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/polyaniline.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "chemical-product",
+    subgroup = "sp-chemical-product",
     order = "[polyaniline]",
     stack_size = 100
   },

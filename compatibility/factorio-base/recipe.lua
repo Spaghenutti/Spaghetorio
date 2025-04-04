@@ -25,9 +25,9 @@ data.raw.recipe["coal-liquefaction"].subgroup = "fluid"
 
 data.raw.recipe["sulfuric-acid"].subgroup = "sp-chemical"
 
-data.raw.recipe["nuclear-fuel-reprocessing"].subgroup = "radioactive-resource"
-data.raw.recipe["uranium-processing"].subgroup = "radioactive-resource"
-data.raw.recipe["kovarex-enrichment-process"].subgroup = "radioactive-resource"
+data.raw.recipe["nuclear-fuel-reprocessing"].subgroup = "sp-radioactive-resource"
+data.raw.recipe["uranium-processing"].subgroup = "sp-radioactive-resource"
+data.raw.recipe["kovarex-enrichment-process"].subgroup = "sp-radioactive-resource"
 
 --------------------------------------------------------------------------------
 -- Recipe changes for base factorio items
@@ -75,7 +75,7 @@ data.raw.recipe["copper-plate"].results = {
 -- }
 -- data.raw.recipe["sulfur"].icon = "__base__/graphics/icons/sulfur.png"
 -- data.raw.recipe["sulfur"].icon_size = 64
--- data.raw.recipe["sulfur"].subgroup = "processed-resource"
+-- data.raw.recipe["sulfur"].subgroup = "sp-processed-resource"
 
 data.raw.recipe["wooden-chest"].enabled = true
 util.recipe.change_recipe_ingredients("wooden-chest",

@@ -1,13 +1,13 @@
 
 -- MARK: Change recipe subgroups -- some lua scripts require to keep the subgroup of recipe
 -- group resource
-data.raw.recipe["molten-iron-from-lava"].subgroup = "casting-raw-resource"
-data.raw.recipe["molten-copper-from-lava"].subgroup = "casting-raw-resource"
+data.raw.recipe["molten-iron-from-lava"].subgroup = "sp-casting-raw-resource"
+data.raw.recipe["molten-copper-from-lava"].subgroup = "sp-casting-raw-resource"
 
 -- group material
-data.raw.recipe["casting-iron"].subgroup = "casting-raw-material"
-data.raw.recipe["casting-steel"].subgroup = "casting-raw-material"
-data.raw.recipe["casting-copper"].subgroup = "casting-raw-material"
+data.raw.recipe["casting-iron"].subgroup = "sp-casting-raw-material"
+data.raw.recipe["casting-steel"].subgroup = "sp-casting-raw-material"
+data.raw.recipe["casting-copper"].subgroup = "sp-casting-raw-material"
 
 -- group intermediates
 data.raw.recipe["casting-iron-gear-wheel"].subgroup = "sp-casting-mechanical-component"

@@ -33,22 +33,23 @@ data.raw.tool["cryogenic-science-pack"].order = "k[cryogenic-science-pack]"
 data.raw.item["tree-seed"].subgroup = "sp-basic-agriculture"
 
 -- group resource
-data.raw.item["calcite"].subgroup = "raw-resource"
-data.raw.item["holmium-ore"].subgroup = "raw-resource"
-data.raw.item["scrap"].subgroup = "raw-resource"
-data.raw.item["tungsten-ore"].subgroup = "raw-resource"
+data.raw.item["calcite"].subgroup = "sp-raw-resource"
+data.raw.item["holmium-ore"].subgroup = "sp-raw-resource"
+data.raw.item["scrap"].subgroup = "sp-raw-resource"
+data.raw.item["tungsten-ore"].subgroup = "sp-raw-resource"
+data.raw.item["ice"].subgroup = "sp-raw-resource"
 
-data.raw.item["carbon"].subgroup = "processed-non-metal"
-data.raw.item["lithium"].subgroup = "processed-metal"
+data.raw.item["carbon"].subgroup = "sp-processed-non-metal"
+data.raw.item["lithium"].subgroup = "sp-processed-metal"
 
 -- group material
-data.raw.item["tungsten-plate"].subgroup = "raw-material"
-data.raw.item["holmium-plate"].subgroup = "raw-material"
-data.raw.item["lithium-plate"].subgroup = "raw-material"
+data.raw.item["tungsten-plate"].subgroup = "sp-raw-material"
+data.raw.item["holmium-plate"].subgroup = "sp-raw-material"
+data.raw.item["lithium-plate"].subgroup = "sp-raw-material"
 
-data.raw.item["tungsten-carbide"].subgroup = "ceramic"
+data.raw.item["tungsten-carbide"].subgroup = "sp-ceramic-material"
 
-data.raw.item["carbon-fiber"].subgroup = "advanced-raw-material"
+data.raw.item["carbon-fiber"].subgroup = "sp-advanced-raw-material"
 
 -- group intermediates
 data.raw.item["supercapacitor"].subgroup = "sp-electronic-optical-component"
