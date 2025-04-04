@@ -264,7 +264,9 @@ data.raw.technology["cryogenic-plant"].prerequisites = {
   "sp-compressor",
   "heating-tower",
   "sp-invar",
-  "sp-thermoelectric-conversion"
+  "sp-thermoelectric-conversion",
+  "utility-science-pack",
+  "sp-freezer"
 }
 data.raw.technology["cryogenic-plant"].research_trigger = nil
 data.raw.technology["cryogenic-plant"].unit = {
@@ -272,13 +274,15 @@ data.raw.technology["cryogenic-plant"].unit = {
   ingredients = {
     {"sp-automation-science-pack-2", 1},
     {"sp-logistic-science-pack-2", 1},
-    {"sp-chemical-science-pack-2", 1},
     {"sp-material-science-pack-2", 1},
     {"sp-geological-science-pack-2", 1},
     {"sp-electronic-science-pack-2", 1},
+    {"sp-chemical-science-pack-2", 1},
     {"sp-metallurgic-science-pack-2", 1},
     {"sp-electromagnetic-science-pack-2", 1},
-    {"production-science-pack", 1}
+    {"production-science-pack", 1},
+    {"utility-science-pack", 1},
+    {"agricultural-science-pack", 1}
   },
   time = 30
 }
@@ -475,6 +479,21 @@ data.raw.technology["epic-quality"].unit.ingredients = {
   {"production-science-pack", 1},
   {"utility-science-pack", 1},
   {"agricultural-science-pack", 1}
+}
+
+table.insert(data.raw.technology["rocket-turret"].prerequisites, "processing-unit")
+data.raw.technology["rocket-turret"].unit.ingredients = {
+  {"sp-automation-science-pack-2", 1},
+  {"sp-logistic-science-pack-2", 1},
+  {"sp-electronic-science-pack-2", 1},
+  {"sp-material-science-pack-2", 1},
+  {"sp-chemical-science-pack-2", 1},
+  {"sp-geological-science-pack-2", 1},
+  {"sp-metallurgic-science-pack-2", 1},
+  {"sp-electromagnetic-science-pack-2", 1},
+  {"sp-military-science-pack-2", 1},
+  {"production-science-pack", 1},
+  {"utility-science-pack", 1}
 }
 
 --------------------------------------------------------------------------------

@@ -6897,6 +6897,7 @@ data:extend({
     name = "sp-leaf",  -- #ForRegEx# - recipe
     icon = "__Spaghetorio__/graphics/icons/leaf-1.png",
     category = "wood-farming",
+    subgroup = "sp-basic-agriculture",
     order = "b[nauvis-agriculture]-a[leaf]",
     enabled = false,
     allow_productivity = false,

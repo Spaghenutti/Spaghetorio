@@ -208,6 +208,21 @@ util.recipe.change_recipe_ingredients("toolbelt-equipment",
   },
   5)
 
+util.recipe.change_recipe_ingredients("rocket-turret",
+  {
+    {type = "item", name = "sp-stainless-steel", amount = 24},
+    {type = "item", name = "sp-nimonic", amount = 16},
+    {type = "item", name = "sp-kovar", amount = 12},
+    {type = "item", name = "sp-nickel-rhenium", amount = 8},
+    {type = "item", name = "sp-aluminum-brass", amount = 8},
+    {type = "item", name = "sp-heavy-gearbox", amount = 2},
+    {type = "item", name = "sp-big-electric-engine-unit", amount = 2},
+    {type = "item", name = "sp-electromagnetic-brake", amount = 4},
+    {type = "item", name = "processing-unit", amount = 10},
+    {type = "item", name = "refined-concrete", amount = 30}
+  },
+  75)
+
 --------------------------------------------------------------------------------
 -- MARK: buildings
 --------------------------------------------------------------------------------
