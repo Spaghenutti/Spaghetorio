@@ -30,12 +30,12 @@ data:extend({
   {
     -- Growing, used by woodfarm
     type = "recipe-category",
-    name = "wood-farming",  -- #ForRegEx# - recipe-category
+    name = "sp-wood-farming",  -- #ForRegEx# - recipe-category
   },
   {
     -- Growing, used by greenhouse
     type = "recipe-category",
-    name = "farming",  -- #ForRegEx# - recipe-category
+    name = "sp-farming",  -- #ForRegEx# - recipe-category
   },
   {
     -- Bioprocessing, used by bio-lab
@@ -54,7 +54,7 @@ data:extend({
   {
     -- Crushing, used by crusher
     type = "recipe-category",
-    name = "sp-kr-gas-and-fluid-venting",  -- #ForRegEx# - category
+    name = "sp-kr-gas-and-fluid-venting",  -- #ForRegEx# - recipe-category
   },
   {
     -- Electrolysis, used by electrolysis plant

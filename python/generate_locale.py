@@ -59,6 +59,8 @@ def get_sections(object_type: str) -> List[str]:
             return ["fuel-category-name"]
         case "item-group":
             return ["item-group-name"]
+        case "item-subgroup":
+            return ["item-subgroup-name"]
         case "item" | "tool":
             return ["item-name"]
         case "recipe":
@@ -94,7 +96,6 @@ def extend_locale(matches: List[Tuple[str, str]],
                     # Add the keys and values
                     for section in get_sections(match[pair_index*2 + 1]):
                         if not config.has_option(section, key):
-                            print(section, key, value)
                             config.set(section, key, value)
         except KeyError as k:
             print(f"Skipping locale generation. {k}") 

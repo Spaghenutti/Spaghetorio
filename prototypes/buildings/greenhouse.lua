@@ -97,7 +97,7 @@ data:extend({
         },
       },
     },
-    crafting_categories = {"wood-farming"},
+    crafting_categories = {"sp-wood-farming"},
     vehicle_impact_sound = { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
     working_sound = greenhouse_working_sound,
     crafting_speed = 1,

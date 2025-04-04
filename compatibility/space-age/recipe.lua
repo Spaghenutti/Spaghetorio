@@ -135,7 +135,7 @@ data.raw.recipe["carbon-fiber"].results = {
 }
 
 data.raw.recipe["wood-processing"].icon = "__base__/graphics/icons/wood.png"
-data.raw.recipe["wood-processing"].category = "wood-farming"
+data.raw.recipe["wood-processing"].category = "sp-wood-farming"
 data.raw.recipe["wood-processing"].subgroup = "sp-basic-agriculture"
 util.recipe.change_recipe_ingredients("wood-processing",
   {

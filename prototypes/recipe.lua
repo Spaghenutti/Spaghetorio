@@ -6896,7 +6896,7 @@ data:extend({
     type = "recipe",
     name = "sp-leaf",  -- #ForRegEx# - recipe
     icon = "__Spaghetorio__/graphics/icons/leaf-1.png",
-    category = "wood-farming",
+    category = "sp-wood-farming",
     subgroup = "sp-basic-agriculture",
     order = "b[nauvis-agriculture]-a[leaf]",
     enabled = false,
@@ -6925,7 +6925,7 @@ data:extend({
     name = "sp-wood-from-urea",  -- #ForRegEx# - recipe
     icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/krastorio/icons/recipes/wood-plus.png", 64,
                                          "__Spaghetorio__/graphics/icons/urea.png", 64),
-    category = "wood-farming",
+    category = "sp-wood-farming",
     subgroup = "sp-basic-agriculture",
     enabled = false,
     allow_productivity = true,
@@ -6944,7 +6944,7 @@ data:extend({
     type = "recipe",
     name = "sp-seed-processing",  -- #ForRegEx# - recipe
     icon = "__space-age__/graphics/icons/tree-seed.png",
-    category = "wood-farming",
+    category = "sp-wood-farming",
     subgroup = "sp-basic-agriculture",
     order = "b[nauvis-agriculture]-a[seed-processing]",
     enabled = false,
@@ -6970,7 +6970,7 @@ data:extend({
     type = "recipe",
     name = "sp-tree-growing",  -- #ForRegEx# - recipe
     icon = "__base__/graphics/icons/tree-01.png",
-    category = "wood-farming",
+    category = "sp-wood-farming",
     subgroup = "sp-basic-agriculture",
     order = "b[nauvis-agriculture]-a[tree-growing]",
     enabled = false,
@@ -6997,7 +6997,7 @@ data:extend({
     name = "sp-improved-tree-growing",  -- #ForRegEx# - recipe
     icons = util.icon.overlay_small_icon("__base__/graphics/icons/tree-01.png", 64,
                                          "__Spaghetorio__/graphics/icons/bio-pesticide.png", 64),
-    category = "wood-farming",
+    category = "sp-wood-farming",
     subgroup = "sp-basic-agriculture",
     order = "b[nauvis-agriculture]-a[tree-growing]",
     enabled = false,
