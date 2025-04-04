@@ -247,7 +247,7 @@ data:extend({
       "intermediate-smelting",
       "crushed-smelting",
       "smelting-enriched-resource",
-      "high-temperature-smelting",
+      "sp-high-temperature-smelting",
       "metallurgy",
       "metallurgy-or-assembling",
       "sp-kr-advanced-smelting"

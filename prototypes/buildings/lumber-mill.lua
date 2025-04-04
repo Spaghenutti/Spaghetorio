@@ -64,7 +64,7 @@ data:extend({
     fast_replaceable_group = "sp-lumber-mill",
     allowed_effects = {"consumption", "speed", "productivity", "pollution"},
     graphics_set = graphics_set,
-    crafting_categories = {"sawing"},
+    crafting_categories = {"sp-sawing"},
     crafting_speed = 1,
     -- scale_entity_info_icon = true,
     vehicle_impact_sound = {

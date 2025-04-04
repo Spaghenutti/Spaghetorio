@@ -173,7 +173,7 @@ util.recipe.change_recipe_ingredients("battery",
   },
   nil)
 
-data.raw.recipe["low-density-structure"].category = "manufacturing"
+data.raw.recipe["low-density-structure"].category = "sp-manufacturing"
 util.recipe.change_recipe_ingredients("low-density-structure",
   {
     {type = "item", name = "sp-titanium-frame", amount = 1},
@@ -274,7 +274,7 @@ util.recipe.change_recipe_ingredients("speed-module-2",
   },
   20)
 
-data.raw.recipe["speed-module-2"].category = "manufacturing"
+data.raw.recipe["speed-module-2"].category = "sp-manufacturing"
 util.recipe.change_recipe_ingredients("speed-module-3",
   {
     {type = "item", name = "sp-integrated-circuit", amount = 5},
@@ -297,7 +297,7 @@ util.recipe.change_recipe_ingredients("productivity-module",
   },
   15)
 
- data.raw.recipe["productivity-module-2"].category = "manufacturing"
+ data.raw.recipe["productivity-module-2"].category = "sp-manufacturing"
 util.recipe.change_recipe_ingredients("productivity-module-2",
   {
     {type = "item", name = "advanced-circuit", amount = 3},
@@ -329,7 +329,7 @@ util.recipe.change_recipe_ingredients("efficiency-module",
   },
   15)
 
-data.raw.recipe["efficiency-module-2"].category = "manufacturing"
+data.raw.recipe["efficiency-module-2"].category = "sp-manufacturing"
 util.recipe.change_recipe_ingredients("efficiency-module-2",
   {
     {type = "item", name = "advanced-circuit", amount = 6},
@@ -349,7 +349,7 @@ util.recipe.change_recipe_ingredients("efficiency-module-3",
   },
   45)
 
-data.raw.recipe["flying-robot-frame"].category = "manufacturing"
+data.raw.recipe["flying-robot-frame"].category = "sp-manufacturing"
 util.recipe.change_recipe_ingredients("flying-robot-frame",
   {
     {type = "item", name = "sp-ball-bearing", amount = 1},

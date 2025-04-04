@@ -175,7 +175,7 @@ data:extend({
     allowed_effects = {"consumption", "speed", "productivity", "pollution", "quality"},
     crafting_categories = {
       "chemistry",
-      "pathogen-growing"
+      "sp-pathogen-growing"
     },
     crafting_speed = 1,
     energy_source =

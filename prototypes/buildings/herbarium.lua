@@ -141,7 +141,7 @@ data:extend({
       {inventory_index = defines.inventory.assembling_machine_modules, shift = {0, 1.25}}
     },
     allowed_effects = {"consumption", "speed", "productivity", "pollution", "quality"},
-    crafting_categories = {"herbarium"},
+    crafting_categories = {"sp-herbs-growing"},
     crafting_speed = 1.5,
     energy_source =
     {

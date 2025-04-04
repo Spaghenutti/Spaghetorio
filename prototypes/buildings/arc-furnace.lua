@@ -106,7 +106,7 @@ data:extend({
       "intermediate-smelting",
       "crushed-smelting",
       "smelting-enriched-resource",
-      "high-temperature-smelting"
+      "sp-high-temperature-smelting"
     },
     crafting_speed = 1,
     energy_source =

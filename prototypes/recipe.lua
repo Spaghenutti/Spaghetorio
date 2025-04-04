@@ -2313,7 +2313,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-tungsten-steel",  -- #ForRegEx# - recipe
-    category = "high-temperature-smelting",
+    category = "sp-high-temperature-smelting",
     enabled = false,
     allow_productivity = true,
     energy_required = 25,
@@ -4647,7 +4647,7 @@ data:extend({
       {icon = "__Spaghetorio__/graphics/icons/cold-coolant.png", icon_size = 64, scale = 1.5, shift = {20, 20}},
       {icon = "__Spaghetorio__/graphics/arrows/freezing-arrow-256x256.png", icon_size = 256, scale = 0.4},
     },
-    category = "freezing",
+    category = "sp-freezing",
     enabled = false,
     allow_productivity = true,
     energy_required = 5,
@@ -6855,7 +6855,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-wooden-board",  -- #ForRegEx# - recipe
-    category = "sawing",
+    category = "sp-sawing",
     enabled = true,
     energy_required = 2,
     ingredients = {
@@ -6868,7 +6868,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-wooden-pole",  -- #ForRegEx# - recipe
-    category = "sawing",
+    category = "sp-sawing",
     enabled = true,
     energy_required = 0.1,
     ingredients = {
@@ -6881,7 +6881,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-wood-chips",  -- #ForRegEx# - recipe
-    category = "sawing",
+    category = "sp-sawing",
     enabled = false,
     allow_productivity = true,
     energy_required = 1.5,
@@ -7026,7 +7026,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-potato",  -- #ForRegEx# - recipe
-    category = "herbarium",
+    category = "sp-herbs-growing",
     enabled = false,
     allow_productivity = true,
     energy_required = 60,
@@ -7045,7 +7045,7 @@ data:extend({
     name = "sp-improved-potato-growing",  -- #ForRegEx# - recipe
     icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/potato-1.png", 64,
                                          "__Spaghetorio__/graphics/icons/bio-pesticide.png", 64),
-    category = "herbarium",
+    category = "sp-herbs-growing",
     enabled = false,
     allow_productivity = true,
     energy_required = 45,
@@ -7062,7 +7062,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-wheat",  -- #ForRegEx# - recipe
-    category = "herbarium",
+    category = "sp-herbs-growing",
     enabled = false,
     allow_productivity = true,
     energy_required = 30,
@@ -7081,7 +7081,7 @@ data:extend({
     name = "sp-improved-wheat-growing",  -- #ForRegEx# - recipe
     icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/wheat-1.png", 64,
                                          "__Spaghetorio__/graphics/icons/bio-pesticide.png", 64),
-    category = "herbarium",
+    category = "sp-herbs-growing",
     enabled = false,
     allow_productivity = true,
     energy_required = 30,
@@ -7097,7 +7097,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-fungi",  -- #ForRegEx# - recipe
-    category = "herbarium",
+    category = "sp-herbs-growing",
     enabled = false,
     allow_productivity = true,
     energy_required = 6,
@@ -7115,7 +7115,7 @@ data:extend({
     name = "sp-improved-fungi-growing",  -- #ForRegEx# - recipe
     icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/fungi-1.png", 64,
                                          "__space-age__/graphics/icons/nutrients.png", 64),
-    category = "herbarium",
+    category = "sp-herbs-growing",
     enabled = false,
     allow_productivity = true,
     energy_required = 5,
@@ -9271,7 +9271,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-composites",  -- #ForRegEx# - recipe
-    category = "manufacturing",
+    category = "sp-manufacturing",
     enabled = false,
     allow_productivity = true,
     energy_required = 4,
@@ -9287,7 +9287,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-titanium-frame",  -- #ForRegEx# - recipe
-    category = "manufacturing",
+    category = "sp-manufacturing",
     enabled = false,
     allow_productivity = true,
     energy_required = 2.4,
@@ -9301,7 +9301,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-ceramic-matrix-composites",  -- #ForRegEx# - recipe
-    category = "manufacturing",
+    category = "sp-manufacturing",
     enabled = false,
     allow_productivity = true,
     energy_required = 12,
@@ -9318,7 +9318,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-silver-solder",  -- #ForRegEx# - recipe
-    category = "manufacturing",
+    category = "sp-manufacturing",
     enabled = false,
     allow_productivity = true,
     energy_required = 4,
@@ -9333,7 +9333,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-glass-fiber",  -- #ForRegEx# - recipe
-    category = "manufacturing",
+    category = "sp-manufacturing",
     enabled = false,
     allow_productivity = true,
     energy_required = 8,
@@ -9349,7 +9349,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-vacuum-pump",  -- #ForRegEx# - recipe
-    category = "manufacturing",
+    category = "sp-manufacturing",
     enabled = false,
     allow_productivity = true,
     energy_required = 2,
@@ -9366,7 +9366,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-precipitator",  -- #ForRegEx# - recipe
-    category = "manufacturing",
+    category = "sp-manufacturing",
     enabled = false,
     allow_productivity = true,
     energy_required = 3,
@@ -9382,7 +9382,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-plasmacutter",  -- #ForRegEx# - recipe
-    category = "manufacturing",
+    category = "sp-manufacturing",
     enabled = false,
     allow_productivity = true,
     energy_required = 2,
@@ -9399,7 +9399,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-magnetic-coupling",  -- #ForRegEx# - recipe
-    category = "manufacturing",
+    category = "sp-manufacturing",
     enabled = false,
     allow_productivity = true,
     energy_required = 1,
@@ -9415,7 +9415,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-condenser-coil",  -- #ForRegEx# - recipe
-    category = "manufacturing",
+    category = "sp-manufacturing",
     enabled = false,
     allow_productivity = true,
     energy_required = 1,
@@ -9431,7 +9431,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-electromagnetic-brake",  -- #ForRegEx# - recipe
-    category = "manufacturing",
+    category = "sp-manufacturing",
     enabled = false,
     allow_productivity = true,
     energy_required = 2,
@@ -9450,7 +9450,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-catalytic-converter",  -- #ForRegEx# - recipe
-    category = "manufacturing",
+    category = "sp-manufacturing",
     enabled = false,
     allow_productivity = true,
     energy_required = 1.5,
@@ -9466,7 +9466,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-high-pressure-fan",  -- #ForRegEx# - recipe
-    category = "manufacturing",
+    category = "sp-manufacturing",
     enabled = false,
     allow_productivity = true,
     energy_required = 4,
@@ -9485,7 +9485,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-lens",  -- #ForRegEx# - recipe
-    category = "manufacturing",
+    category = "sp-manufacturing",
     enabled = false,
     allow_productivity = true,
     energy_required = 1,
@@ -9499,7 +9499,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-photovoltaic-cell",  -- #ForRegEx# - recipe
-    category = "manufacturing",
+    category = "sp-manufacturing",
     enabled = false,
     allow_productivity = true,
     energy_required = 25,
@@ -9518,7 +9518,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-diamond-saw",  -- #ForRegEx# - recipe
-    category = "manufacturing",
+    category = "sp-manufacturing",
     enabled = false,
     allow_productivity = true,
     energy_required = 2,
@@ -9533,7 +9533,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-high-pressure-tank",  -- #ForRegEx# - recipe
-    category = "manufacturing",
+    category = "sp-manufacturing",
     enabled = false,
     allow_productivity = true,
     energy_required = 4,
@@ -9550,7 +9550,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-automation-science-pack-2",  -- #ForRegEx# - recipe
-    category = "manufacturing",
+    category = "sp-manufacturing",
     enabled = false,
     allow_productivity = true,
     energy_required = 24,
@@ -16021,7 +16021,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/plutonium-239-1.png",
     icon_size = 64,
     scale = 0.25,
-    category = "atom-breeding",
+    category = "sp-atom-breeding",
     subgroup = "radioactive-resource",
     enabled = false,
     allow_productivity = true,
@@ -16043,7 +16043,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/plutonium-240-1.png",
     icon_size = 64,
     scale = 0.25,
-    category = "atom-breeding",
+    category = "sp-atom-breeding",
     subgroup = "radioactive-resource",
     enabled = false,
     allow_productivity = true,

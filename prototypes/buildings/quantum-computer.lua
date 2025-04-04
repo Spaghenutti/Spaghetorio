@@ -140,7 +140,7 @@ data:extend({
     },
     crafting_categories = {
       "sp-kr-research-data",
-      "quantum-computing"
+      "sp-quantum-computing"
     },
     crafting_speed = 3,
     energy_source = {

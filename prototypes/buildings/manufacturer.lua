@@ -117,7 +117,7 @@ data:extend({
     allowed_effects = {"consumption", "speed", "productivity", "pollution", "quality"},
     crafting_categories = {
       "crafting",
-      "manufacturing"
+      "sp-manufacturing"
     },
     crafting_speed = 1.5,
     energy_source =

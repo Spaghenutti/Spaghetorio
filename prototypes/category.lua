@@ -103,51 +103,51 @@ data:extend({
   },
   {
     type = "recipe-category",
-    name = "quantum-computing",
+    name = "sp-quantum-computing",
   },
   {
     type = "recipe-category",
-    name = "sawing"
+    name = "sp-sawing"
   },
   {
     type = "recipe-category",
-    name = "atom-breeding"
+    name = "sp-atom-breeding"
   },
   {
     type = "recipe-category",
-    name = "atom-smashing"
+    name = "sp-atom-smashing"
   },
   {
     type = "recipe-category",
-    name = "freezing"
+    name = "sp-freezing"
   },
   {
     type = "recipe-category",
-    name = "thawing"  -- unfreeziing
+    name = "sp-thawing"  -- unfreeziing
   },
   {
     type = "recipe-category",
-    name = "gravity-assembling"
+    name = "sp-gravity-assembling"
   },
   {
     type = "recipe-category",
-    name = "manufacturing"
+    name = "sp-manufacturing"
   },
   {
     type = "recipe-category",
-    name = "pathogen-growing"
+    name = "sp-pathogen-growing"
   },
   {
     type = "recipe-category",
-    name = "herbarium"
+    name = "sp-herbs-growing"
   },
   {
     type = "recipe-category",
-    name = "quantum-assembling"
+    name = "sp-quantum-assembling"
   },
   {
     type = "recipe-category",
-    name = "high-temperature-smelting"
+    name = "sp-high-temperature-smelting"
   },
   {
     type = "recipe-category",
