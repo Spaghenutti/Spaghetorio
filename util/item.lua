@@ -33,6 +33,7 @@ function item_util.create_frozen_item(item)
   -- frozen_item.localised_name = {"prefix.sp-frozen" .. item.localised_name}
   -- frozen_item.localised_name = item.localised_name
   -- frozen_item.localised_name = {"prefix.sp-frozen ", item.localised_name}
+  frozen_item.localised_name = {"prefix.sp-frozen ", item.localised_name or {"item-name." .. item.name}}
 
   frozen_item.icon = nil
   frozen_item.icons = icon_util.create_frozen_item_icon(item)

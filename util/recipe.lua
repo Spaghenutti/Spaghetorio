@@ -145,7 +145,7 @@ end
 function data_util.create_freezing_recipe(item)
   freezing_recipe = {
     type = "recipe",
-    name = "sp-freezing" .. item.name,  -- #ForRegEx# - recipe
+    name = "sp-freezing-" .. item.name,  -- #ForRegEx# - recipe
     icons = icon_util.create_freezing_recipe_icon(item.frozen_from),
     category = "sp-freezing",
     subgroup = "sp-freezing",
@@ -165,7 +165,7 @@ function data_util.create_freezing_recipe(item)
 
   thawing_recipe = {
     type = "recipe",
-    name = "sp-thawing" .. item.name,  -- #ForRegEx# - recipe
+    name = "sp-thawing-" .. item.name,  -- #ForRegEx# - recipe
     icons = icon_util.create_thawing_recipe_icon(item.frozen_from),
     category = "sp-thawing",
     subgroup = "sp-thawing",

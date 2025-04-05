@@ -3,6 +3,7 @@ Version: 0.3.10
 Date: 2025-04-11
   Features:
     - Added freezing and thawing recipes
+    - Added locale for subgroups and categories
   Bugfixes:
     - Fixed agricultural science pack recipe
 ---------------------------------------------------------------------------------------------------

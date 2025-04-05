@@ -31,6 +31,18 @@ data:extend({
     default_value = 16,
     order = "ac"
   },
+
+  {
+    type = "bool-setting",
+    name = "sp-spoiled-items",
+    localised_name = {"mod-setting-name.sp-spoiled-items"},
+    localised_description = {"mod-setting-description.sp-spoiled-items"},
+    setting_type = "startup",
+    default_value = true,
+    order = "ba"
+  },
+
+  -- MARK: Hidden settings
   -- Needed for removing prototypes -- Source: https://github.com/sparr/factorio-mod-remove-prototypes/blob/master/settings.lua
   {
     type = "string-setting",

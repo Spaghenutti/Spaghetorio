@@ -124,21 +124,22 @@ TODO for 0.3.9
   + Add technology for pentapod eggs
 
 TODO for 0.3.10
-  - Fix agricultural science pack recipe
+  + Fix agricultural science pack recipe
   + Fix energy values of items
   - Fix herbarium technology icon
   + Add freezer recipe
   + Add freezing recipes
+  - Add recipe for making spoilage
   - Add setting for spoiling for spaghetorio items
     - Remove biochamber item, recipe and technology
     - Remove all freezing recipes
   - Add setting for disabling required nutrients for biochamber
   - Add recipe biomass + algue = biocrude-oil
-  - Fix category names such that they all start with sp-
-  - Categories and subgroups need locale (hover over generator building over the fuel slot)
+  + Fix category names such that they all start with sp-
+  + Categories and subgroups need locale (hover over generator building over the fuel slot)
   - Add water landfill
   - Move remove-prototypes.lua into util
-  - Rebalance damage values for munitions
+  - Rebalance damage values for remaining munitions
 
 TODO for 0.3.11
   - Change incinerator back to gas-power-station
