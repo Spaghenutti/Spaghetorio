@@ -283,4 +283,13 @@ function data_util.create_thawing_recipe_icon(item)
   return icons
 end
 
+function data_util.create_nutrient_icon(item)
+  icons = {
+    {icon = item.icon, icon_size = item.icon_size, scale = 0.5, shift = {-6, -6}},
+    {icon = "__space-age__/graphics/icons/nutrients.png", icon_size = 64, scale = 0.5, shift = {6, 6}},
+  }
+
+  return icons
+end
+
 return data_util

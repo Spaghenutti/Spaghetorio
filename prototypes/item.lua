@@ -1,5 +1,6 @@
 
 local sounds = require("__base__.prototypes.entity.sounds")
+local space_age_item_sounds = require("__space-age__.prototypes.item_sounds")
 
 
 data:extend({
@@ -4694,6 +4695,11 @@ data:extend({
       {size = 64, filename = "__Spaghetorio__/graphics/icons/algae-3.png", scale = 0.5, mipmap_count = 4},
       {size = 64, filename = "__Spaghetorio__/graphics/icons/algae-4.png", scale = 0.5, mipmap_count = 4}
     },
+    inventory_move_sound = space_age_item_sounds.agriculture_inventory_move,
+    pick_sound = space_age_item_sounds.agriculture_inventory_pickup,
+    drop_sound = space_age_item_sounds.agriculture_inventory_move,
+    fuel_category = "nutrients",
+    fuel_value = "0.5MJ",
     scale = 0.5,
     weight = 1 * kg,
     spoil_ticks = 20 * minute,
@@ -4730,6 +4736,11 @@ data:extend({
       {size = 64, filename = "__Spaghetorio__/graphics/icons/potato-3.png", scale = 0.5, mipmap_count = 4},
       {size = 64, filename = "__Spaghetorio__/graphics/icons/potato-4.png", scale = 0.5, mipmap_count = 4}
     },
+    inventory_move_sound = space_age_item_sounds.agriculture_inventory_move,
+    pick_sound = space_age_item_sounds.agriculture_inventory_pickup,
+    drop_sound = space_age_item_sounds.agriculture_inventory_move,
+    fuel_category = "nutrients",
+    fuel_value = "2.5MJ",
     subgroup = "agriculture-processes",
     capsule_action =
     {
@@ -4785,6 +4796,11 @@ data:extend({
       {size = 64, filename = "__Spaghetorio__/graphics/icons/fungi-3.png", scale = 0.5, mipmap_count = 4},
       {size = 64, filename = "__Spaghetorio__/graphics/icons/fungi-4.png", scale = 0.5, mipmap_count = 4}
     },
+    inventory_move_sound = space_age_item_sounds.agriculture_inventory_move,
+    pick_sound = space_age_item_sounds.agriculture_inventory_pickup,
+    drop_sound = space_age_item_sounds.agriculture_inventory_move,
+    fuel_category = "nutrients",
+    fuel_value = "1MJ",
     weight = 0.25 * kg,
     spoil_ticks = 15 * minute,
     spoil_result = "spoilage",
@@ -4840,6 +4856,11 @@ data:extend({
       {size = 64, filename = "__Spaghetorio__/graphics/icons/wheat-3.png", scale = 0.5, mipmap_count = 4},
       {size = 64, filename = "__Spaghetorio__/graphics/icons/wheat-4.png", scale = 0.5, mipmap_count = 4}
     },
+    inventory_move_sound = space_age_item_sounds.agriculture_inventory_move,
+    pick_sound = space_age_item_sounds.agriculture_inventory_pickup,
+    drop_sound = space_age_item_sounds.agriculture_inventory_move,
+    fuel_category = "nutrients",
+    fuel_value = "2MJ",
     capsule_action =
     {
       type = "use-on-self",

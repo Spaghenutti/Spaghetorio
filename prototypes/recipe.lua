@@ -4636,6 +4636,72 @@ data:extend({
       {type = "item", name = "sp-bio-pesticide", amount = 1}
     }
   },
+  {
+    type = "recipe",
+    name = "sp-nutrients-from-fungi",  -- #ForRegEx# - recipe
+    icons = util.icon.create_nutrient_icon(data.raw.capsule["sp-fungi"]),
+    category = "organic",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 2,
+    ingredients = {
+      {type = "item", name = "sp-fungi", amount = 3},
+      {type = "item", name = "sp-sugar", amount = 1}
+    },
+    results = {
+      {type = "item", name = "nutrients", amount = 2}
+    },
+    order = "c[nutrients]-d[nutrients-from-fungi]",
+  },
+  {
+    type = "recipe",
+    name = "sp-nutrients-from-wheat",  -- #ForRegEx# - recipe
+    icons = util.icon.create_nutrient_icon(data.raw.capsule["sp-wheat"]),
+    category = "organic",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 2.5,
+    ingredients = {
+      {type = "item", name = "sp-wheat", amount = 2}
+    },
+    results = {
+      {type = "item", name = "nutrients", amount = 3}
+    },
+    order = "c[nutrients]-d[nutrients-from-wheat]",
+  },
+  {
+    type = "recipe",
+    name = "sp-nutrients-from-potato",  -- #ForRegEx# - recipe
+    icons = util.icon.create_nutrient_icon(data.raw.capsule["sp-potato"]),
+    category = "organic",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 3,
+    ingredients = {
+      {type = "item", name = "sp-potato", amount = 3}
+    },
+    results = {
+      {type = "item", name = "nutrients", amount = 5}
+    },
+    order = "c[nutrients]-d[nutrients-from-potato]",
+  },
+  {
+    type = "recipe",
+    name = "sp-nutrients-from-algae",  -- #ForRegEx# - recipe
+    icons = util.icon.create_nutrient_icon(data.raw.item["sp-algae"]),
+    category = "organic",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 2,
+    ingredients = {
+      {type = "item", name = "sp-algae", amount = 1},
+      {type = "item", name = "sp-sugar", amount = 1}
+    },
+    results = {
+      {type = "item", name = "nutrients", amount = 1}
+    },
+    order = "c[nutrients]-d[nutrients-from-algae]",
+  },
   ------------------------------------------------------------------------------
   -- MARK: freezing
   ------------------------------------------------------------------------------

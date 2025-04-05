@@ -311,6 +311,18 @@ data.raw.technology["biochamber"].effects =
   },
   {
     type = "unlock-recipe",
+    recipe = "sp-nutrients-from-wheat",
+  },
+  {
+    type = "unlock-recipe",
+    recipe = "sp-nutrients-from-potato",
+  },
+  {
+    type = "unlock-recipe",
+    recipe = "sp-nutrients-from-algae",
+  },
+  {
+    type = "unlock-recipe",
     recipe = "sp-sugar",
   },
 }

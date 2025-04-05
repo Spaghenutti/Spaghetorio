@@ -126,13 +126,12 @@ TODO for 0.3.9
 TODO for 0.3.10
   + Fix agricultural science pack recipe
   + Fix energy values of items
+  - Herbarium also needs nutrients
+  + Add recipes for nutrients
   - Fix herbarium technology icon
   + Add freezer recipe
   + Add freezing recipes
   - Add recipe for making spoilage
-  - Add setting for spoiling for spaghetorio items
-    - Remove biochamber item, recipe and technology
-    - Remove all freezing recipes
   - Add setting for disabling required nutrients for biochamber
   - Add recipe biomass + algue = biocrude-oil
   + Fix category names such that they all start with sp-
@@ -197,6 +196,10 @@ TODO for 0.3.xx
   - Create functions to automate generation of acro conversion recipes
   - Add black reinforced concrete
   - In map generation ores can be ticked to not spawn on map. Only allow this behavior for sulfuric acid geyser
+  - Add setting for spoiling for spaghetorio items
+    - Remove biochamber item, recipe and technology
+    + Remove all freezing recipes
+    - Remove all recipes for creating nutrients
 
 --------------------------------------------------------------------------------
 

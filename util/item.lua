@@ -9,7 +9,8 @@ local icon_util = require("icon")
 local spolable_item_subgroups = {
   "sp-basic-agriculture",
   "agriculture-processes",
-  "agriculture-products"
+  "agriculture-products",
+  "nauvis-agriculture"
 }
 
 local item_util = {}
@@ -66,6 +67,25 @@ function item_util.add_frozen_items()
     if helper.value_in_array(item.subgroup, spolable_item_subgroups) then
       if item.spoil_result then
         frozen_item = item_util.create_frozen_item(item)
+      end
+    end
+  end
+end
+
+-- remove spoiling from agricultural items
+function item_util.remove_spoiling_from_agricultural_items()
+  for _, item in pairs(data.raw.item) do
+    if helper.value_in_array(item.subgroup, spolable_item_subgroups) then
+      item.spoil_result = nil
+      item.spoil_ticks = nil
+    end
+  end
+
+  for _, item in pairs(data.raw.capsule) do
+    if helper.value_in_array(item.subgroup, spolable_item_subgroups) then
+      if item.spoil_result then
+        item.spoil_result = nil
+        item.spoil_ticks = nil
       end
     end
   end

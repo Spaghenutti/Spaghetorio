@@ -31,7 +31,6 @@ data:extend({
     default_value = 16,
     order = "ac"
   },
-
   {
     type = "bool-setting",
     name = "sp-spoiled-items",

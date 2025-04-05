@@ -8,6 +8,8 @@ if settings.startup["sp-spoiled-items"].value then
   util.item.add_frozen_items()
   util.recipe.add_freezing_and_thawing_recipes()
 else
+  util.item.remove_spoiling_from_agricultural_items()
+
 --   Note: no clue why i cant do this stuff here (some recipes work others not. I guess it has something to do when i change the code while switching the "sp-spoiled-items" in game)
 --   remove_prototypes.remove_one_prototype("technology", "sp-freezer")
 

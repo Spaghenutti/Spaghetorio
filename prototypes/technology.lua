@@ -2052,6 +2052,10 @@ data:extend({
         type = "unlock-recipe",
         recipe = "sp-fungi",
       },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-nutrients-from-fungi",
+      },
     },
     prerequisites = {
       "biochamber"
