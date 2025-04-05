@@ -323,6 +323,10 @@ data.raw.technology["biochamber"].effects =
   },
   {
     type = "unlock-recipe",
+    recipe = "sp-algae-spore",
+  },
+  {
+    type = "unlock-recipe",
     recipe = "sp-sugar",
   },
 }

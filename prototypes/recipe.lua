@@ -4530,6 +4530,20 @@ data:extend({
   ------------------------------------------------------------------------------
   {
     type = "recipe",
+    name = "sp-algae-spore",  -- #ForRegEx# - recipe
+    category = "organic",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 1,
+    ingredients = {
+      {type = "item", name = "sp-algae", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-algae-spore", amount = 5}
+    }
+  },  
+  {
+    type = "recipe",
     name = "sp-sugar",  -- #ForRegEx# - recipe
     category = "organic",
     enabled = false,
@@ -8829,9 +8843,12 @@ data:extend({
     allow_productivity = true,
     energy_required = 5,
     ingredients = {
-      {type = "item", name = "sp-machined-parts", amount = 5},
-      {type = "item", name = "sp-titanium-frame", amount = 1},
-      {type = "item", name = "sp-ceramics", amount = 3}
+      {type = "item", name = "sp-machined-parts", amount = 4},
+      {type = "item", name = "sp-duralumin", amount = 1},
+      {type = "item", name = "copper-plate", amount = 1},
+      {type = "item", name = "sp-titanium-niobium", amount = 2},
+      {type = "item", name = "carbon-fiber", amount = 2},
+      {type = "item", name = "sp-insulation-sheet", amount = 1}
     },
     results = {
       {type = "item", name = "sp-cryostat", amount = 1}

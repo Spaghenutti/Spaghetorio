@@ -5,6 +5,7 @@ Date: 2025-04-11
     - Added freezing and thawing recipes
     - Added locale for subgroups and categories
   Bugfixes:
+    - Fixed algae-spore recipe
     - Fixed agricultural science pack recipe
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.9

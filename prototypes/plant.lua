@@ -30,8 +30,8 @@ data:extend({
     type = "plant",
     name = "sp-algae",  -- #ForRegEx# - item
     localised_name = {"item-name.sp-algae"},
-    icon = "__space-age__/graphics/decorative/green-lettuce-lichen-water/green-lettuce-lichen-6x6-01.png",
-    icon_size = 282,
+    icon = "__Spaghetorio__/graphics/icons/algae-1.png",
+    icon_size = 64,
     scale = 0.5,
     pictures = decorative_pictures({count = 12, file_path = "__space-age__/graphics/decorative/green-lettuce-lichen-water/green-lettuce-lichen-6x6"}, 0.3),
     subgroup = "trees",
