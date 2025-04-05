@@ -145,11 +145,14 @@ data:extend({
     crafting_speed = 1.5,
     energy_source =
     {
-      type = "electric",
-      usage_priority = "secondary-input",
-      emissions_per_minute = {pollution = 1.5},
+      type = "burner",
+      fuel_categories = {"nutrients"},
+      effectivity = 1,
+      burner_usage = "nutrients",
+      fuel_inventory_size = 1,
+      emissions_per_minute = { pollution = -1.5 },
     },
-    energy_usage = "600kW",
+    energy_usage = "150kW",
     perceived_performance = {minimum = 0.25, maximum = 20},
     graphics_set = graphics_set,
     open_sound = sounds.metal_large_open,
