@@ -1,15 +1,15 @@
 {
     "name": "Spaghetorio",
-    "version": "0.3.11",
+    "version": "0.3.9.1",
     "title": "Spaghetorio",
-    "description": "Adds lots of new ores, items, buildings and technologies. Yes believe me...",
+    "description": "Adds lots of new ores, items, buildings and technologies",
     "author": "Spaghetti",
     "contact": "https://github.com/Spaghenutti/Spaghetorio/issues",
     "factorio_version": "2.0",
     "space_travel_required": true,
     "dependencies": ["base >= 2.0.42",
                      "space-age >= 2.0.42",
-                     "SpaghetorioGraphics1 = 0.0.5",
+                     "SpaghetorioGraphics1 = 0.0.4",
                      "EverythingOnNauvis = 0.1.6",
                      "? aai-containers >= 0.3.1",
                      "! Custom-Production-UI-Fixed >= 0.5.22"]
