@@ -457,7 +457,8 @@ data.raw.technology["fish-breeding"].unit.ingredients = {
 
 table.insert(data.raw.technology["captivity"].effects, {type = "unlock-recipe", recipe = "pentapod-egg"})
 data.raw.technology["captivity"].prerequisites = {
-  "bacteria-cultivation"
+  "bacteria-cultivation",
+  "sp-biological-science-pack-3"
 }
 data.raw.technology["captivity"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},

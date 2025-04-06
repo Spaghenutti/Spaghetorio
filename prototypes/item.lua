@@ -7242,6 +7242,17 @@ data:extend({
     place_result = "sp-induction-hardening-facility",
     stack_size = 20,
   },
+  {
+    type = "item",
+    name = "sp-incinerator",  -- #ForRegEx# - building
+    icon = "__Spaghetorio__/graphics/krastorio/icons/entities/gas-power-station.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    stack_size = 50,
+    subgroup = "production-machine",
+    order = "c[solar-panel]-b[gas-power-station]",
+    place_result = "sp-incinerator",
+  },
   -- {
   --   type = "item",
   --   name = "sp-research-center",  -- #ForRegEx# - building
@@ -7474,28 +7485,6 @@ data:extend({
   --   place_result = "sp-kr-shelter-container",
   --   stack_size = 1,
   -- },
-  -- {
-  --   type = "item",
-  --   name = "sp-medium-storage-tank",  -- #ForRegEx# - building
-  --   icon = "__Spaghetorio__/graphics/krastorio/icons/entities/fluid-storages/fluid-storage-1.png",
-  --   stack_size = 50,
-  --   icon_size = 64,
-  --   icon_mipmaps = 4,
-  --   subgroup = "storage",
-  --   order = "b[fluid]-bb2[storage-tank-2]",
-  --   place_result = "sp-medium-storage-tank",
-  -- },
-  -- {
-  --   type = "item",
-  --   name = "sp-large-storage-tank",  -- #ForRegEx# - building
-  --   icon = "__Spaghetorio__/graphics/krastorio/icons/entities/fluid-storages/fluid-storage-2.png",
-  --   stack_size = 50,
-  --   icon_size = 64,
-  --   icon_mipmaps = 4,
-  --   subgroup = "storage",
-  --   order = "b[fluid]-c[storage-tank-3]",
-  --   place_result = "sp-large-storage-tank",
-  -- },
   -- -- Extractioin machine
   -- {
   --   type = "item",
@@ -7568,14 +7557,14 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-incinerator",  -- #ForRegEx# - building
-    icon = "__Spaghetorio__/graphics/krastorio/icons/entities/gas-power-station.png",
+    name = "sp-gas-power-station",  -- #ForRegEx# - building
+    icon = "__Spaghetorio__/graphics/icons/thermal-plant.png",
     icon_size = 64,
     icon_mipmaps = 4,
-    stack_size = 50,
     subgroup = "energy",
-    order = "c[solar-panel]-b[gas-power-station]",
-    place_result = "sp-incinerator",
+    order = "d[gas-power-station]",
+    place_result = "sp-gas-power-station",
+    stack_size = 20,
   },
   {
     type = "item",

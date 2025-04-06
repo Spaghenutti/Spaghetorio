@@ -1163,6 +1163,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/grobgnum-slurry.png",
     icon_size = 64,
     icon_mipmaps = 4,
+    auto_barrel = false,
     subgroup = "sp-alien",
     order = "a[fluid]-f[grobgnum-slurry]"
   },
@@ -1176,6 +1177,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/grobgnumylene.png",
     icon_size = 64,
     icon_mipmaps = 4,
+    auto_barrel = false,
     subgroup = "sp-alien",
     order = "a[fluid]-f[grobgnumylene]"
   },
@@ -1189,6 +1191,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/grobgnum-hydroxide.png",
     icon_size = 64,
     icon_mipmaps = 4,
+    auto_barrel = false,
     subgroup = "sp-alien",
     order = "a[fluid]-f[grobgnum-hydroxide]"
   },
@@ -1202,6 +1205,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/chronomatter.png",
     icon_size = 64,
     icon_mipmaps = 4,
+    auto_barrel = false,
     subgroup = "sp-alien",
     order = "a[fluid]-f[chronomatter]"
   },
@@ -1215,6 +1219,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/krastorio/icons/fluids/matter.png",
     icon_size = 64,
     icon_mipmaps = 4,
+    auto_barrel = false,
     subgroup = "sp-alien",
     order = "a[fluid]-y1[antimatter]"
   },
@@ -1228,6 +1233,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/antimatter.png",
     icon_size = 64,
     icon_mipmaps = 4,
+    auto_barrel = false,
     subgroup = "sp-alien",
     order = "a[fluid]-y2[antimatter]"
   },
@@ -1241,6 +1247,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/dark-matter.png",
     icon_size = 64,
     icon_mipmaps = 4,
+    auto_barrel = false,
     subgroup = "sp-alien",
     order = "a[fluid]-z1[dark-matter]"
   },
@@ -1254,6 +1261,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/dark-energy.png",
     icon_size = 64,
     icon_mipmaps = 4,
+    auto_barrel = false,
     subgroup = "sp-alien",
     order = "a[fluid]-z2[dark-energy]"
   },
