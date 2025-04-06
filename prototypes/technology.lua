@@ -8821,6 +8821,14 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "sp-nitric-acid",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-nitric-oxide",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-nitrogen-dioxide",
       }
     },
     prerequisites = {

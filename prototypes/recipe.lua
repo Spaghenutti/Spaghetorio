@@ -3933,6 +3933,29 @@ data:extend({
       {type = "item", name = "sp-potassium-cyanide", amount = 3}
     }
   },
+  {
+    type = "recipe",
+    name = "sp-nitric-acid",  -- #ForRegEx# - recipe
+    category = "sp-advanced-chemistry",
+    energy_required = 5,
+    enabled = false,
+    allow_productivity = true,
+    ingredients = {
+      {type = "fluid", name = "sp-nitrogen-dioxide", amount = 50},
+      {type = "fluid", name = "water", amount = 25},
+      {type = "fluid", name = "sp-oxygen", amount = 5},
+    },
+    results = {
+      {type = "fluid", name = "sp-nitric-acid", amount = 50}
+    },
+    crafting_machine_tint = {
+      primary = {r = 0.800, g = 0.000, b = 0.100, a = 0.200},
+      secondary = {r = 0.500, g = 0.100, b = 0.300, a = 0.357},
+      tertiary = {r = 0.430, g = 0.000, b = 0.450, a = 0.200},
+      quaternary = {r = 0.800, g = 0.000, b = 0.100, a = 0.900},
+    },
+    order = "[liquid]-[liquid-sodium]"
+  },
   ------------------------------------------------------------------------------
   -- MARK: chemical-staging
   ------------------------------------------------------------------------------
@@ -4034,29 +4057,6 @@ data:extend({
     results = {
       {type = "fluid", name = "sp-hydrogen-cyanide", amount = 3}
     }
-  },
-  {
-    type = "recipe",
-    name = "sp-nitric-acid",  -- #ForRegEx# - recipe
-    category = "sp-chemical-staging",
-    energy_required = 5,
-    enabled = false,
-    allow_productivity = true,
-    ingredients = {
-      {type = "fluid", name = "ammonia", amount = 50},
-      {type = "fluid", name = "sp-mineral-water", amount = 25},
-      {type = "fluid", name = "sp-oxygen", amount = 25},
-    },
-    results = {
-      {type = "fluid", name = "sp-nitric-acid", amount = 50}
-    },
-    crafting_machine_tint = {
-      primary = {r = 0.800, g = 0.000, b = 0.100, a = 0.200},
-      secondary = {r = 0.500, g = 0.100, b = 0.300, a = 0.357},
-      tertiary = {r = 0.430, g = 0.000, b = 0.450, a = 0.200},
-      quaternary = {r = 0.800, g = 0.000, b = 0.100, a = 0.900},
-    },
-    order = "[liquid]-[liquid-sodium]"
   },
   {
     type = "recipe",
@@ -5541,6 +5541,36 @@ data:extend({
     },
     results = {
       {type = "fluid", name = "sp-dimethyl-sulfoxide", amount = 5}
+    },
+  },
+  {
+    type = "recipe",
+    name = "sp-nitric-oxide",  -- #ForRegEx# - recipe
+    category = "sp-oxidizing",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 8,
+    ingredients = {
+      {type = "fluid", name = "ammonia", amount = 4},
+      {type = "fluid", name = "sp-oxygen", amount = 5}
+    },
+    results = {
+      {type = "fluid", name = "sp-nitric-oxide", amount = 4}
+    },
+  },
+  {
+    type = "recipe",
+    name = "sp-nitrogen-dioxide",  -- #ForRegEx# - recipe
+    category = "sp-oxidizing",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 1,
+    ingredients = {
+      {type = "fluid", name = "sp-nitric-oxide", amount = 4},
+      {type = "fluid", name = "sp-oxygen", amount = 8}
+    },
+    results = {
+      {type = "fluid", name = "sp-nitrogen-dioxide", amount = 5}
     },
   },
   ------------------------------------------------------------------------------

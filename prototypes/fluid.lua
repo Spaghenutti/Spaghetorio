@@ -512,6 +512,32 @@ data:extend({
   },
   {
     type = "fluid",
+    name = "sp-nitric-oxide",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    base_color = {r=0.05, g=0.1, b=0.5},
+    flow_color = {r=0.05, g=0.1, b=0.5},
+    icon = "__Spaghetorio__/graphics/icons/nitric-oxide.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-gas",
+    order = "a[gas]-g[nitric-oxide]"
+  },
+  {
+    type = "fluid",
+    name = "sp-nitrogen-dioxide",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    base_color = {r=0.05, g=0.1, b=0.5},
+    flow_color = {r=0.05, g=0.1, b=0.5},
+    icon = "__Spaghetorio__/graphics/icons/nitrogen-dioxide.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-gas",
+    order = "a[gas]-g[nitrogen-dioxide]"
+  },
+  {
+    type = "fluid",
     name = "sp-helium",  -- #ForRegEx# - fluid
     default_temperature = 25,
     heat_capacity = "0.1kJ",

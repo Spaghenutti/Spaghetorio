@@ -6,9 +6,11 @@ Date: 2025-04-11
     - Added locale for subgroups and categories
   Changes:
     - Herbarium requires nutrients just like biochamber
+    - Updated natric acid recipe chain
   Bugfixes:
     - Fixed algae-spore recipe
     - Fixed agricultural science pack recipe
+    - Nitric acid can now be crafted in the advanced chemical plant
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.9
 Date: 2025-04-04

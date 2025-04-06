@@ -126,7 +126,7 @@ TODO for 0.3.9
 TODO for 0.3.10
   + Fix agricultural science pack recipe
   + Fix energy values of items
-  - Herbarium also needs nutrients
+  + Herbarium also needs nutrients
   + Add recipes for nutrients
   - Fix herbarium technology icon
   + Add freezer recipe
