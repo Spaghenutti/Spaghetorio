@@ -30,11 +30,7 @@ function item_util.create_frozen_item(item)
   frozen_item.frozen_from = item
   frozen_item.name = "sp-frozen-" .. string.gsub(item.name, "sp%-", "")
   frozen_item.subgroup = "sp-frozen"
-  -- frozen_item.localised_name = {"prefix.sp-frozen", {"item-name." .. item.name}}
-  -- frozen_item.localised_name = {"prefix.sp-frozen" .. item.localised_name}
-  -- frozen_item.localised_name = item.localised_name
-  -- frozen_item.localised_name = {"prefix.sp-frozen ", item.localised_name}
-  frozen_item.localised_name = {"prefix.sp-frozen ", item.localised_name or {"item-name." .. item.name}}
+  frozen_item.localised_name = {"", {"prefix-name.sp-frozen"}, " ", {"item-name." .. item.name}}
 
   frozen_item.icon = nil
   frozen_item.icons = icon_util.create_frozen_item_icon(item)

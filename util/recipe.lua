@@ -145,7 +145,8 @@ end
 function data_util.create_freezing_recipe(item)
   freezing_recipe = {
     type = "recipe",
-    name = "sp-freezing-" .. item.name,  -- #ForRegEx# - recipe
+    name = "sp-freeze-" .. string.gsub(item.frozen_from.name, "sp%-", ""),  -- #ForRegEx# - recipe
+    localised_name = {"", {"prefix-name.sp-freeze"}, " ", {"item-name." .. item.frozen_from.name}},
     icons = icon_util.create_freezing_recipe_icon(item.frozen_from),
     category = "sp-freezing",
     subgroup = "sp-freezing",
@@ -154,18 +155,19 @@ function data_util.create_freezing_recipe(item)
     hide_from_player_crafting = true,
     energy_required = 5,
     ingredients = {
-      {type = "item", name = item.name, amount = 1},
+      {type = "item", name = item.frozen_from.name, amount = 1},
       {type = "fluid", name = "sp-cold-coolant", amount = 1}
     },
     results = {
-      {type = "item", name = item.frozen_from.name, amount = 1},
+      {type = "item", name = item.name, amount = 1},
       {type = "fluid", name = "sp-warm-coolant", probaility = 0.9, amount = 1}
     }
   }
 
   thawing_recipe = {
     type = "recipe",
-    name = "sp-thawing-" .. item.name,  -- #ForRegEx# - recipe
+    name = "sp-thaw-" .. string.gsub(item.name, "sp%-", ""),  -- #ForRegEx# - recipe
+    localised_name = {"", {"prefix-name.sp-thaw"}, " ", item.localised_name},  -- frozen items have no locale key
     icons = icon_util.create_thawing_recipe_icon(item.frozen_from),
     category = "sp-thawing",
     subgroup = "sp-thawing",
@@ -174,10 +176,10 @@ function data_util.create_freezing_recipe(item)
     hide_from_player_crafting = true,
     energy_required = 5,
     ingredients = {
-      {type = "item", name = item.frozen_from.name, amount = 1}
+      {type = "item", name = item.name, amount = 1}
     },
     results = {
-      {type = "item", name = item.name, amount = 1, percent_spoiled = 0.5}
+      {type = "item", name = item.frozen_from.name, amount = 1, percent_spoiled = 0.5}
     }
   }
 
