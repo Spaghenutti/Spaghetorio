@@ -132,11 +132,10 @@ TODO for 0.3.10
   + Add freezer recipe
   + Add freezing recipes
   + Add recipe for making spoilage
-  - Add recipe biomass + algue = biocrude-oil
+  + Add recipe biomass + algue = biocrude-oil
   + Fix category names such that they all start with sp-
   + Categories and subgroups need locale (hover over generator building over the fuel slot)
-  - Move remove-prototypes.lua into util
-  - Rebalance damage values for remaining munitions
+  + Move remove-prototypes.lua into util
 
 TODO for 0.3.11
   - Change incinerator back to gas-power-station
@@ -200,6 +199,7 @@ TODO for 0.3.xx
     - Remove all recipes for creating nutrients
   - Add water landfill
   - Add setting for disabling required nutrients for biochamber
+  - Rebalance damage values for remaining munitions
 
 --------------------------------------------------------------------------------
 

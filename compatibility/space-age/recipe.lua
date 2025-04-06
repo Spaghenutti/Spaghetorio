@@ -1,5 +1,5 @@
 local util = require("data-util")
-local remove_prototypes = require("remove-prototypes")
+local remove_prototypes = require("util.remove-prototypes")
 
 --------------------------------------------------------------------------------
 -- MARK: Delete recipes

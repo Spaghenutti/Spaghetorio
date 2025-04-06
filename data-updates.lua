@@ -1,6 +1,6 @@
 
 local util = require("data-util")
--- local remove_prototypes = require("remove-prototypes")
+-- local remove_prototypes = require("util.remove-prototypes")
 
 util.recipe.add_fluid_venting_recipes()
 

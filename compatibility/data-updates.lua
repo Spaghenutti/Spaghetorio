@@ -1,7 +1,7 @@
 
 local util = require("data-util")
 
-local remove_prototypes = require("remove-prototypes")
+local remove_prototypes = require("util.remove-prototypes")
 
 data.raw.furnace["stone-furnace"].result_inventory_size = 2
 data.raw.furnace["recycler"].result_inventory_size = 30

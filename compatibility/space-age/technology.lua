@@ -1,5 +1,5 @@
 
-local remove_prototypes = require("remove-prototypes")
+local remove_prototypes = require("util.remove-prototypes")
 
 remove_prototypes.remove_one_prototype("technology", "yumako")
 remove_prototypes.remove_one_prototype("technology", "jellynut")

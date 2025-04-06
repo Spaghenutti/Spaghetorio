@@ -1,5 +1,5 @@
 -- Contains functions for editing recipes
-local remove_prototypes = require("remove-prototypes")
+local remove_prototypes = require("util.remove-prototypes")
 local icon_util = require("util.icon")
 
 local data_util = {}
