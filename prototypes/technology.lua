@@ -2078,6 +2078,47 @@ data:extend({
   },
   {
     type = "technology",
+    name = "sp-spoiling",  -- #ForRegEx# - technology
+    icon = "__space-age__/graphics/icons/spoilage.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-spoil-tree",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-spoil-wood",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-spoil-wood-chips",
+      }
+    },
+    prerequisites = {
+      "agricultural-science-pack",
+      "sp-oxidizer"
+    },
+    unit = {
+      count = 100,
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-electronic-science-pack-1", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"production-science-pack", 1},
+        {"metallurgic-science-pack", 1},
+        {"electromagnetic-science-pack", 1},
+        {"agricultural-science-pack", 1},
+      },
+      time = 45,
+    },
+  },
+  {
+    type = "technology",
     name = "sp-improved-agriculture",  -- #ForRegEx# - technology
     icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/hr-icons/potato-1.png", 256, {-20, 20},
                                         "__Spaghetorio__/graphics/hr-icons/wheat-1.png", 256, {20, -20}),

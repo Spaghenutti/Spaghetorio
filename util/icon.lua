@@ -283,6 +283,16 @@ function data_util.create_thawing_recipe_icon(item)
   return icons
 end
 
+function data_util.create_spoiling_recipe_icon(item)
+  icons = {
+    {icon = item.icon, icon_size = item.icon_size, scale = 1.5, shift = {-20, -20}},
+    {icon = "__space-age__/graphics/icons/spoilage.png", icon_size = 64, scale = 1.5, shift = {20, 20}},
+    {icon = "__Spaghetorio__/graphics/arrows/crushing-arrow-256x256.png", icon_size = 256, scale = 0.4},
+  }
+
+  return icons
+end
+
 function data_util.create_nutrient_icon(item)
   icons = {
     {icon = item.icon, icon_size = item.icon_size, scale = 0.5, shift = {-6, -6}},

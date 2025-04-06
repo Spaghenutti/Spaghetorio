@@ -195,6 +195,10 @@ data:extend({
   },
   {
     type = "recipe-category",
+    name = "sp-spoiling",  -- #ForRegEx# - recipe-category
+  },
+  {
+    type = "recipe-category",
     name = "sp-alien-tech-manufacturing",  -- #ForRegEx# - recipe-category
   },
   {

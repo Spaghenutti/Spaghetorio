@@ -3,6 +3,7 @@ Version: 0.3.10
 Date: 2025-04-11
   Features:
     - Added freezing and thawing recipes
+    - Added recipes for creating spoilage
     - Added locale for subgroups and categories
   Changes:
     - Herbarium requires nutrients just like biochamber
