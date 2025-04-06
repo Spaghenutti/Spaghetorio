@@ -221,20 +221,13 @@ function data_util.create_acroproduct_conversion_icon(item_to_convert, acroprodu
 end
 
 function data_util.create_void_recipe_icon(item_or_fluid)
-  if (item_or_fluid.icon ~= nil) then
   icons = {
     {icon = "__Spaghetorio__/graphics/hr-icons/background.png", icon_size = 256, scale = 0.25},
     {icon = item_or_fluid.icon, icon_size = 64, scale = 0.6},
     {icon = "__Spaghetorio__/graphics/arrows/void-recipe-overlay-256x256.png", icon_size = 256, scale = 0.25}
-    }
+  }
 
   return icons
-  else icons = {
-    {icon = "__Spaghetorio__/graphics/hr-icons/background.png", icon_size = 256, scale = 0.25},
-    {icon = "base/graphics/icons/fluid/water.png", icon_size = 64, scale = 0.6},
-    {icon = "__Spaghetorio__/graphics/arrows/void-recipe-overlay-256x256.png", icon_size = 256, scale = 0.25}
-    }
-  end
 end
 
 function data_util.create_incineration_recipe_icon(item_or_fluid_to_incinerate, incinerate_result)
@@ -255,6 +248,55 @@ function data_util.create_enriching_recipe_icon(resource, enriched_resource)
     {icon = resource.icon, icon_size = resource.icon_size, scale = 1, shift = {-30, -30}},
     {icon = enriched_resource.icon, icon_size = enriched_resource.icon_size, scale = 1.5, shift = {20, 20}},
     {icon = "__Spaghetorio__/graphics/arrows/enriching-arrow-256x256.png", icon_size = 256, scale = 0.5},
+  }
+
+  return icons
+end
+
+function data_util.create_frozen_item_icon(item)
+  icons = {
+    {icon = "__Spaghetorio__/graphics/overlay/ice.png", icon_size = 64, scale = 0.5},
+    {icon = item.icon, icon_size = item.icon_size, scale = 0.4},
+    {icon = "__Spaghetorio__/graphics/overlay/ice-overlay.png", icon_size = 64, scale = 0.5},
+  }
+
+  return icons
+end
+
+function data_util.create_freezing_recipe_icon(item)
+  icons = {
+    {icon = item.icon, icon_size = item.icon_size, scale = 1.5, shift = {-20, -20}},
+    {icon = "__Spaghetorio__/graphics/overlay/ice.png", icon_size = 64, scale = 1.5, shift = {20, 20}},
+    {icon = "__Spaghetorio__/graphics/arrows/freezing-arrow-256x256.png", icon_size = 256, scale = 0.4},
+  }
+
+  return icons
+end
+
+function data_util.create_thawing_recipe_icon(item)
+  icons = {
+    {icon = "__Spaghetorio__/graphics/overlay/ice.png", icon_size = 64, scale = 1.5, shift = {-20, -20}},
+    {icon = item.icon, icon_size = item.icon_size, scale = 1.5, shift = {20, 20}},
+    {icon = "__Spaghetorio__/graphics/arrows/thawing-arrow-256x256.png", icon_size = 256, scale = 0.4},
+  }
+
+  return icons
+end
+
+function data_util.create_spoiling_recipe_icon(item)
+  icons = {
+    {icon = item.icon, icon_size = item.icon_size, scale = 1.5, shift = {-20, -20}},
+    {icon = "__space-age__/graphics/icons/spoilage.png", icon_size = 64, scale = 1.5, shift = {20, 20}},
+    {icon = "__Spaghetorio__/graphics/arrows/crushing-arrow-256x256.png", icon_size = 256, scale = 0.4},
+  }
+
+  return icons
+end
+
+function data_util.create_nutrient_icon(item)
+  icons = {
+    {icon = item.icon, icon_size = item.icon_size, scale = 0.5, shift = {-6, -6}},
+    {icon = "__space-age__/graphics/icons/nutrients.png", icon_size = 64, scale = 0.5, shift = {6, 6}},
   }
 
   return icons
