@@ -92,7 +92,7 @@ fluid_box =
     {flow_direction="input-output", direction = defines.direction.north, position = {-1, -2}},
     {flow_direction="input-output", direction = defines.direction.north, position = {1, -2}}
   },
-  production_type = "input",
+  production_type = "input-output",
   minimum_temperature = 0
 }
 
@@ -150,9 +150,11 @@ data:extend({
     },
     allowed_effects = {"consumption", "speed", "productivity", "pollution", "quality"},
     crafting_speed = 1,
+    burns_fluid = true,
     energy_source = {
       type = "electric",
       usage_priority = "secondary-output",
+      -- emissions_per_minute = 20,
     },
     max_power_output = "8MW",
     perceived_performance = {minimum = 0.25, maximum = 20},

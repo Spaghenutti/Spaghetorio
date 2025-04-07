@@ -394,6 +394,7 @@ data:extend({
     name = "sp-biocrude-oil",  -- #ForRegEx# - fluid
     default_temperature = 25,
     heat_capacity = "0.1kJ",
+    fuel_value = "300kJ",
     base_color = {r=0.05, g=0.1, b=0.5},
     flow_color = {r=0.05, g=0.1, b=0.5},
     icon = "__Spaghetorio__/graphics/icons/biocrude-oil.png",
@@ -424,6 +425,7 @@ data:extend({
     name = "sp-hydrogen",  -- #ForRegEx# - fluid
     default_temperature = 25,
     heat_capacity = "0.1kJ",
+    fuel_value = "10kJ",
     base_color = {r=0.05, g=0.1, b=0.5},
     flow_color = {r=0.05, g=0.1, b=0.5},
     icon = "__Spaghetorio__/graphics/krastorio/icons/fluids/hydrogen.png",
@@ -437,6 +439,7 @@ data:extend({
     name = "sp-oxygen",  -- #ForRegEx# - fluid
     default_temperature = 25,
     heat_capacity = "0.1kJ",
+    fuel_value = "100kJ",
     base_color = {r=0.05, g=0.1, b=0.5},
     flow_color = {r=0.05, g=0.1, b=0.5},
     icon = "__Spaghetorio__/graphics/krastorio/icons/fluids/oxygen.png",
@@ -450,6 +453,7 @@ data:extend({
     name = "sp-methane",  -- #ForRegEx# - fluid
     default_temperature = 25,
     heat_capacity = "0.1kJ",
+    fuel_value = "200kJ",
     base_color = {r=0.05, g=0.1, b=0.5},
     flow_color = {r=0.05, g=0.1, b=0.5},
     icon = "__Spaghetorio__/graphics/icons/methane.png",
@@ -463,6 +467,7 @@ data:extend({
     name = "sp-carbon-monoxide",  -- #ForRegEx# - fluid
     default_temperature = 25,
     heat_capacity = "0.1kJ",
+    fuel_value = "30kJ",
     base_color = {r=0.05, g=0.1, b=0.5},
     flow_color = {r=0.05, g=0.1, b=0.5},
     icon = "__Spaghetorio__/graphics/icons/carbon-monoxide.png",
@@ -489,6 +494,7 @@ data:extend({
     name = "sp-sulfur-dioxide",  -- #ForRegEx# - fluid
     default_temperature = 25,
     heat_capacity = "0.1kJ",
+    fuel_value = "50kJ",
     base_color = {r=0.05, g=0.1, b=0.5},
     flow_color = {r=0.05, g=0.1, b=0.5},
     icon = "__Spaghetorio__/graphics/icons/sulfur-dioxide.png",
@@ -502,6 +508,7 @@ data:extend({
     name = "sp-hydrogen-sulfide",  -- #ForRegEx# - fluid
     default_temperature = 25,
     heat_capacity = "0.1kJ",
+    fuel_value = "70kJ",
     base_color = {r=0.05, g=0.1, b=0.5},
     flow_color = {r=0.05, g=0.1, b=0.5},
     icon = "__Spaghetorio__/graphics/icons/hydrogen-sulfide.png",
@@ -515,6 +522,7 @@ data:extend({
     name = "sp-nitric-oxide",  -- #ForRegEx# - fluid
     default_temperature = 25,
     heat_capacity = "0.1kJ",
+    fuel_value = "90kJ",
     base_color = {r=0.05, g=0.1, b=0.5},
     flow_color = {r=0.05, g=0.1, b=0.5},
     icon = "__Spaghetorio__/graphics/icons/nitric-oxide.png",
@@ -528,6 +536,7 @@ data:extend({
     name = "sp-nitrogen-dioxide",  -- #ForRegEx# - fluid
     default_temperature = 25,
     heat_capacity = "0.1kJ",
+    fuel_value = "160kJ",
     base_color = {r=0.05, g=0.1, b=0.5},
     flow_color = {r=0.05, g=0.1, b=0.5},
     icon = "__Spaghetorio__/graphics/icons/nitrogen-dioxide.png",
@@ -635,6 +644,7 @@ data:extend({
     name = "sp-sulfamate",  -- #ForRegEx# - fluid
     default_temperature = 25,
     heat_capacity = "0.1kJ",
+    fuel_value = "50kJ",
     base_color = {r=1.0, g=0.6, b=0.4},
     flow_color = {r=1.0, g=0.6, b=0.4},
     icon = "__Spaghetorio__/graphics/icons/sulfamate.png",
@@ -830,6 +840,7 @@ data:extend({
     name = "sp-biomethanol",  -- #ForRegEx# - fluid
     default_temperature = 25,
     heat_capacity = "0.1kJ",
+    fuel_value = "90kJ",
     base_color = {r=0.15, g=0.0, b=0.0},
     flow_color = {r=0.15, g=0.0, b=0.0},
     icon = "__Spaghetorio__/graphics/krastorio/icons/fluids/biomethanol.png",
@@ -856,6 +867,7 @@ data:extend({
     name = "sp-diborane",  -- #ForRegEx# - fluid
     default_temperature = 25,
     heat_capacity = "0.1kJ",
+    fuel_value = "500kJ",
     base_color = {r=0.15, g=0.1, b=0.1},
     flow_color = {r=0.15, g=0.1, b=0.1},
     icon = "__Spaghetorio__/graphics/icons/diborane.png",
@@ -921,6 +933,7 @@ data:extend({
     name = "sp-glycerin",  -- #ForRegEx# - fluid
     default_temperature = 25,
     heat_capacity = "0.1kJ",
+    fuel_value = "250kJ",
     base_color = {r=0.0, g=0.0, b=0.55},
     flow_color = {r=0.0, g=0.0, b=0.55},
     icon = "__Spaghetorio__/graphics/icons/glycerin.png",
@@ -934,6 +947,7 @@ data:extend({
     name = "sp-acetic-acid",  -- #ForRegEx# - fluid
     default_temperature = 25,
     heat_capacity = "0.1kJ",
+    fuel_value = "120kJ",
     base_color = {r=0.0, g=0.0, b=0.55},
     flow_color = {r=0.0, g=0.0, b=0.55},
     icon = "__Spaghetorio__/graphics/icons/acetic-acid.png",
@@ -986,6 +1000,7 @@ data:extend({
     name = "sp-hydrogen-peroxide",  -- #ForRegEx# - fluid
     default_temperature = 25,
     heat_capacity = "0.1kJ",
+    fuel_value = "450kJ",
     base_color = {r=0.0, g=0.0, b=0.55},
     flow_color = {r=0.0, g=0.0, b=0.55},
     icon = "__Spaghetorio__/graphics/icons/hydrogen-peroxide.png",
