@@ -125,6 +125,12 @@ data.raw.fluid["sulfuric-acid"].subgroup = "sp-chemical"
 
 data.raw.fluid["steam"].subgroup = "sp-gas"
 
+-- MARK: fluel values for fluids
+data.raw.fluid["crude-oil"].fuel_value = "40kJ"
+data.raw.fluid["petroleum-gas"].fuel_value = "70kJ"
+data.raw.fluid["heavy-oil"].fuel_value = "30kJ"
+data.raw.fluid["light-oil"].fuel_value = "50kJ"
+
 -- MARK: Assing subgroup to science items
 data.raw.tool["automation-science-pack"].subgroup = "sp-basic-science"
 data.raw.tool["logistic-science-pack"].subgroup = "sp-basic-science"

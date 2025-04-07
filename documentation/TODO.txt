@@ -139,11 +139,16 @@ TODO for 0.3.10
 
 TODO for 0.3.11
   + Add to gas-power-station
-  - Add krastorio turbine as water turbine
-  - Test with default_temperature and max_temperature appropriate values
 
 TODO for 0.3.12
   - Update nuclear science pack recipe chain
+    - Uranium 235 decay chain
+    - Uranium 238 decay chain
+    - Plutonium 240 decay chain (for reactor)
+    - Plutonium 239 decay chain (for weapons)
+    - MOX
+    - Thorium 232 (for reactor) decays into Uranium 233 which is used in weapons
+      - Molten salt reactors use thorium and produce much less waste
 
 TODO for 0.3.13
   - Update computer science 2 branch of tech tree
@@ -203,6 +208,7 @@ TODO for 0.3.xx
   - set auto_barrel = false on all fluids which are not supposed to put into barrels
     - put gasses into pressure tanks
     - put alien fluids into some fancy shmanzy tanks
+  - Add krastorio turbine as water turbine
 
 --------------------------------------------------------------------------------
 
