@@ -4,14 +4,16 @@
 
 local terrain = require("__EverythingOnNauvis__.map-generation.terrain")
 
-function generate_default_name(name)
-  return "default_" .. string.gsub(name, "-", "_")
+function generate_eon_name(name)
+  -- eon for everything on nauvis
+  return "eon_" .. string.gsub(name, "-", "_")
 end
 
-function noise_expression(name, type)
+-- Returns new noise expression with name "name" to "eon_name"
+function duplicate_noise_expression(name, type)
   local expression = {
   type = "noise-expression",
-  name = generate_default_name(name),
+  name = generate_eon_name(name),
     expression = data.raw[type][name].autoplace.probability_expression
   }
   if data.raw[type][name].autoplace.local_expressions then
@@ -21,34 +23,34 @@ function noise_expression(name, type)
 end
 
 data.extend({
-  noise_expression("sp-aluminum-ore", "resource"),
-  noise_expression("sp-barium-ore", "resource"),
-  noise_expression("sp-boron-ore", "resource"),
-  noise_expression("sp-chromite", "resource"),
-  noise_expression("sp-cobalt-ore", "resource"),
-  noise_expression("sp-magnesium-ore", "resource"),
-  noise_expression("sp-manganese-ore", "resource"),
-  noise_expression("sp-mercury-ore", "resource"),
-  noise_expression("sp-molybdenum-ore", "resource"),
-  noise_expression("sp-nickel-ore", "resource"),
-  noise_expression("sp-potassium-ore", "resource"),
-  noise_expression("sp-stibnite", "resource"),
-  noise_expression("sp-tinstone", "resource"),
-  noise_expression("sp-titanium-ore", "resource"),
-  noise_expression("sp-vanadium-ore", "resource"),
-  noise_expression("sp-zinc-ore", "resource"),
-  noise_expression("sp-zirconium-ore", "resource"),
+  duplicate_noise_expression("sp-aluminum-ore", "resource"),
+  duplicate_noise_expression("sp-barium-ore", "resource"),
+  duplicate_noise_expression("sp-boron-ore", "resource"),
+  duplicate_noise_expression("sp-chromite", "resource"),
+  duplicate_noise_expression("sp-cobalt-ore", "resource"),
+  duplicate_noise_expression("sp-magnesium-ore", "resource"),
+  duplicate_noise_expression("sp-manganese-ore", "resource"),
+  duplicate_noise_expression("sp-mercury-ore", "resource"),
+  duplicate_noise_expression("sp-molybdenum-ore", "resource"),
+  duplicate_noise_expression("sp-nickel-ore", "resource"),
+  duplicate_noise_expression("sp-potassium-ore", "resource"),
+  duplicate_noise_expression("sp-stibnite", "resource"),
+  duplicate_noise_expression("sp-tinstone", "resource"),
+  duplicate_noise_expression("sp-titanium-ore", "resource"),
+  duplicate_noise_expression("sp-vanadium-ore", "resource"),
+  duplicate_noise_expression("sp-zinc-ore", "resource"),
+  duplicate_noise_expression("sp-zirconium-ore", "resource"),
 
-  noise_expression("sp-iodine-brine", "resource"),
-  noise_expression("sp-mineral-water", "resource"),
+  duplicate_noise_expression("sp-iodine-brine", "resource"),
+  duplicate_noise_expression("sp-mineral-water", "resource"),
 
-  noise_expression("sp-core-rift", "resource"),
+  duplicate_noise_expression("sp-core-rift", "resource"),
 
-  noise_expression("sp-blunagium", "resource"),
-  noise_expression("sp-grobgnum", "resource"),
-  noise_expression("sp-imersite", "resource"),
-  noise_expression("sp-rukite", "resource"),
-  noise_expression("sp-yemnuth", "resource"),
+  duplicate_noise_expression("sp-blunagium", "resource"),
+  duplicate_noise_expression("sp-grobgnum", "resource"),
+  duplicate_noise_expression("sp-imersite", "resource"),
+  duplicate_noise_expression("sp-rukite", "resource"),
+  duplicate_noise_expression("sp-yemnuth", "resource"),
 })
 
 
