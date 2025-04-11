@@ -221,12 +221,18 @@ function data_util.create_acroproduct_conversion_icon(item_to_convert, acroprodu
 end
 
 function data_util.create_void_recipe_icon(item_or_fluid)
-  icons = {
-    {icon = "__Spaghetorio__/graphics/hr-icons/background.png", icon_size = 256, scale = 0.25},
-    {icon = item_or_fluid.icon, icon_size = 64, scale = 0.6},
-    {icon = "__Spaghetorio__/graphics/arrows/void-recipe-overlay-256x256.png", icon_size = 256, scale = 0.25}
-  }
-
+  if (item_or_fluid.icon ~= nil) then
+    icons = {
+      {icon = "__Spaghetorio__/graphics/hr-icons/background.png", icon_size = 256, scale = 0.25},
+      {icon = item_or_fluid.icon, icon_size = 64, scale = 0.6},
+      {icon = "__Spaghetorio__/graphics/arrows/void-recipe-overlay-256x256.png", icon_size = 256, scale = 0.25}
+      }
+    else icons = {
+      {icon = "__Spaghetorio__/graphics/hr-icons/background.png", icon_size = 256, scale = 0.25},
+      {icon = "__base__/graphics/icons/fluid/water.png", icon_size = 64, scale = 0.6},
+      {icon = "__Spaghetorio__/graphics/arrows/void-recipe-overlay-256x256.png", icon_size = 256, scale = 0.25}
+      }
+    end
   return icons
 end
 
