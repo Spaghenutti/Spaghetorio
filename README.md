@@ -63,7 +63,9 @@ Your factory will never be the same... because it’s going to need therapy. Enj
 
 - [S3BA](https://mods.factorio.com/user/S3BA) for polish translations
 - [rlcyyg1108](https://github.com/rlcyyg1108) for chinese translations
+- [Snow Note](https://github.com/Snownote2) for japanese translations
 - [Cyfagy](https://mods.factorio.com/user/Cyfagy) for building sounds
+- [Andromeda](https://github.com/TehDrpStr) for compatibility with other mods
 
 ## Special Thanks
 

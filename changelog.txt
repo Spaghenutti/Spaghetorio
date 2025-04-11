@@ -3,8 +3,11 @@ Version: 0.3.11
 Date: 2025-04-18
   Features:
     - Added gas power station
+    - Added japanese localization thanks to Snow Note
   Changes:
     - Updated some building icons
+  Compatibility:
+    - Fix for generating icons for venting fluids when using multiple mods thanks to Andromeda
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.10
 Date: 2025-04-11
