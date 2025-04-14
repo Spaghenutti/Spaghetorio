@@ -8,6 +8,9 @@ Date: 2025-04-18
     - Updated some building icons
   Compatibility:
     - Fix for generating icons for venting fluids when using multiple mods thanks to Andromeda
+  Bugfixes:
+    - Fix that frozen items can be used as nutrients for biochamber and greenhouse
+    - Fixed recipes that have more than 2 fluid inputs or outputs for the big crusher (eg palladium recipe)
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.10
 Date: 2025-04-11

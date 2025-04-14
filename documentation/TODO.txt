@@ -140,8 +140,11 @@ TODO for 0.3.10
 TODO for 0.3.11
   + Add to gas-power-station
   - Fix that frozen items can be used as nutrients for biochamber and greenhouse
-  - Report here https://github.com/Spaghenutti/Spaghetorio/pull/9 that i copy code but not merge pull request due to som changes in icons.lua
-  - Accept PR of japanese locale
+  - Fix icon sizes on greenhouse and large crusher
+  + Report here https://github.com/Spaghenutti/Spaghetorio/pull/9 that i copy code but not merge pull request due to som changes in icons.lua
+  + Accept PR of japanese locale
+  - Mask ores depending on tiles
+  - Fix iodine brine spawning on start location (seed: 2806285432)
 
 TODO for 0.3.12
   - Update nuclear science pack recipe chain

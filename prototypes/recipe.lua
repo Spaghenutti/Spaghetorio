@@ -4723,9 +4723,9 @@ data:extend({
     type = "recipe",
     name = "sp-cooling-coolant",  -- #ForRegEx# - recipe
     icons = {
-      {icon = "__Spaghetorio__/graphics/icons/warm-coolant.png", icon_size = 64, scale = 1.5, shift = {-20, -20}},
-      {icon = "__Spaghetorio__/graphics/icons/cold-coolant.png", icon_size = 64, scale = 1.5, shift = {20, 20}},
-      {icon = "__Spaghetorio__/graphics/arrows/freezing-arrow-256x256.png", icon_size = 256, scale = 0.4},
+      {icon = "__Spaghetorio__/graphics/icons/warm-coolant.png", icon_size = 64, scale = 0.6, shift = {-12, -12}},
+      {icon = "__Spaghetorio__/graphics/icons/cold-coolant.png", icon_size = 64, scale = 0.6, shift = {8, 8}},
+      {icon = "__Spaghetorio__/graphics/arrows/freezing-arrow-64x64.png", icon_size = 64, scale = 1},
     },
     category = "sp-freezing",
     enabled = false,

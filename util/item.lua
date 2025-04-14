@@ -40,6 +40,9 @@ function item_util.create_frozen_item(item)
   frozen_item.drop_sound = space_age_item_sounds.ice_inventory_move
   frozen_item.random_tint_color = item_tints.ice_blue
 
+  frozen_item.fuel_category = nil
+  frozen_item.fuel_value = nil
+
   frozen_item.spoil_ticks = nil
   frozen_item.spoil_result = nil
 
