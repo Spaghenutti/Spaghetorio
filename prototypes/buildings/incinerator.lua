@@ -48,7 +48,15 @@ local fluid_boxes = {
     pipe_covers = pipecoverspictures(),
     volume = 1000,
     pipe_connections = {
-      {flow_direction = "input", direction = defines.direction.north, position = {0, -2}},
+      {flow_direction = "input", direction = defines.direction.north, position = {0, -2}}
+    },
+  },
+  {
+    production_type = "input",
+    pipe_picture = sp_kr_pipe_path,
+    pipe_covers = pipecoverspictures(),
+    volume = 1000,
+    pipe_connections = {
       {flow_direction = "input", direction = defines.direction.west, position = {-2, 0}}
     },
   },
@@ -59,7 +67,15 @@ local fluid_boxes = {
     pipe_covers = pipecoverspictures(),
     volume = 1000,
     pipe_connections = {
-      {flow_direction = "output", direction = defines.direction.east, position = {2, 0}},
+      {flow_direction = "output", direction = defines.direction.east, position = {2, 0}}
+    },
+  },
+  {
+    production_type = "output",
+    pipe_picture = sp_kr_pipe_path,
+    pipe_covers = pipecoverspictures(),
+    volume = 1000,
+    pipe_connections = {
       {flow_direction = "output", direction = defines.direction.south, position = {0, 2}}
     },
   },

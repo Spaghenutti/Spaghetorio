@@ -27,7 +27,18 @@ data:extend({
         pipe_picture = sp_kr_pipe_path,
         pipe_covers = pipecoverspictures(),
         volume = 1000,
-        pipe_connections = {{flow_direction="input", direction = defines.direction.north, position = {0, -3}}},
+        pipe_connections = {
+          {flow_direction="input", direction = defines.direction.north, position = {0, -3}}
+        },
+      },
+      {
+        production_type = "input",
+        pipe_picture = sp_kr_pipe_path,
+        pipe_covers = pipecoverspictures(),
+        volume = 1000,
+        pipe_connections = {
+          {flow_direction="input", direction = defines.direction.north, position = {-3, 0}}
+        },
       },
       -- Outputs
       {
@@ -36,8 +47,15 @@ data:extend({
         pipe_covers = pipecoverspictures(),
         volume = 1000,
         pipe_connections = {
-          {flow_direction="output", direction = defines.direction.west, position = {-3, 0}},
           {flow_direction="output", direction = defines.direction.east, position = {3, 0}},
+        },
+      },
+      {
+        production_type = "output",
+        pipe_picture = sp_kr_pipe_path,
+        pipe_covers = pipecoverspictures(),
+        volume = 1000,
+        pipe_connections = {
           {flow_direction="output", direction = defines.direction.south, position = {0, 3}}
         },
       },
