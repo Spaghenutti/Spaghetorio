@@ -143,8 +143,10 @@ TODO for 0.3.11
   - Fix icon sizes on greenhouse and large crusher
   + Report here https://github.com/Spaghenutti/Spaghetorio/pull/9 that i copy code but not merge pull request due to som changes in icons.lua
   + Accept PR of japanese locale
+  - Fix sulfur dioxide recipe
   - Mask ores depending on tiles
   - Fix iodine brine spawning on start location (seed: 2806285432)
+  - Funghi are found in gleba region (do something similar for other plants)
 
 TODO for 0.3.12
   - Update nuclear science pack recipe chain
