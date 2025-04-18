@@ -2257,6 +2257,21 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "sp-arsen-pillet",  -- #ForRegEx# - recipe
+    category = "sp-smelting-with-fluid",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 20,
+    ingredients = {
+      {type = "item", name = "sp-arsenic-trioxide", amount = 5},
+      {type = "fluid", name = "sp-hydrogen", amount = 20},
+    },
+    results = {
+      {type = "item", name = "sp-arsen-pillet", amount = 3}
+    }
+  },
+  {
+    type = "recipe",
     name = "sp-selenium-pillet",  -- #ForRegEx# - recipe
     category = "sp-smelting-with-fluid",
     enabled = false,
@@ -3860,51 +3875,6 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-arsen-pillet",  -- #ForRegEx# - recipe
-    category = "sp-advanced-chemistry",
-    enabled = false,
-    allow_productivity = true,
-    energy_required = 20,
-    ingredients = {
-      {type = "item", name = "sp-arsenic-trioxide", amount = 5},
-      {type = "fluid", name = "sp-hydrogen", amount = 20},
-    },
-    results = {
-      {type = "item", name = "sp-arsen-pillet", amount = 3}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-arsenic-sulfide",  -- #ForRegEx# - recipe
-    category = "sp-advanced-chemistry",
-    enabled = false,
-    allow_productivity = true,
-    energy_required = 4,
-    ingredients = {
-      {type = "item", name = "sp-arsen-pillet", amount = 2},
-      {type = "item", name = "sulfur", amount = 2},
-    },
-    results = {
-      {type = "item", name = "sp-arsenic-sulfide", amount = 3}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-arsenic-iodide",  -- #ForRegEx# - recipe
-    category = "sp-advanced-chemistry",
-    enabled = false,
-    allow_productivity = true,
-    energy_required = 8,
-    ingredients = {
-      {type = "item", name = "sp-arsen-pillet", amount = 2},
-      {type = "item", name = "sp-iodine", amount = 3},
-    },
-    results = {
-      {type = "item", name = "sp-arsenic-iodide", amount = 3}
-    }
-  },
-  {
-    type = "recipe",
     name = "sp-manganese-chloride",  -- #ForRegEx# - recipe
     category = "sp-advanced-chemistry",
     enabled = false,
@@ -4458,6 +4428,36 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-chemical-science-pack-2", amount = 5}
+    }
+  },
+    {
+    type = "recipe",
+    name = "sp-arsenic-sulfide",  -- #ForRegEx# - recipe
+    category = "sp-chemical-staging",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 4,
+    ingredients = {
+      {type = "item", name = "sp-arsen-pillet", amount = 2},
+      {type = "item", name = "sulfur", amount = 2},
+    },
+    results = {
+      {type = "item", name = "sp-arsenic-sulfide", amount = 3}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-arsenic-iodide",  -- #ForRegEx# - recipe
+    category = "sp-chemical-staging",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 8,
+    ingredients = {
+      {type = "item", name = "sp-arsen-pillet", amount = 2},
+      {type = "item", name = "sp-iodine", amount = 3},
+    },
+    results = {
+      {type = "item", name = "sp-arsenic-iodide", amount = 3}
     }
   },
   ------------------------------------------------------------------------------

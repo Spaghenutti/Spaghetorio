@@ -5539,6 +5539,7 @@ data:extend({
     prerequisites = {
       "sp-optics",
       "sp-germanium-processing",
+      "sp-arsen-processing",
     },
     unit =
     {
