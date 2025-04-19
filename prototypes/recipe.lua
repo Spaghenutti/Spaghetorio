@@ -2858,6 +2858,34 @@ data:extend({
       quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
     }
   },
+  {
+    type = "recipe",
+    name = "sp-nuclear-waste-processing",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/icons/nuclear-waste.png",
+    icon_size = 64,
+    mip_maps = 4,
+    category = "sp-crushing-washing",
+    subgroup = "sp-radioactive-resource",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 20,
+    ingredients = {
+      {type = "item", name = "sp-nuclear-waste", amount = 1},
+      {type = "fluid", name = "sp-nitric-acid", amount = 5},
+    },
+    results = {
+      {type = "item", name = "sp-plutonium-239", probability = 0.005, amount = 1},
+      {type = "item", name = "uranium-238", probability = 0.015, amount = 1},
+      {type = "item", name = "sp-thorium-232", probability = 0.1, amount = 1},
+      {type = "item", name = "carbon", probability = 0.08, amount = 1},
+      {type = "item", name = "sp-tungsten-powder", probability = 0.06, amount = 1},
+      {type = "item", name = "sp-zircon", probability = 0.10, amount = 1},
+      {type = "item", name = "sp-cerium", probability = 0.06, amount = 1},
+      {type = "item", name = "sp-titanium-sponge", probability = 0.3, amount = 1},
+      {type = "fluid", name = "sp-deuterium", amount = 10}
+    },
+    order = "z[nuclear]-3-[nuclear-waste-processing]"
+  },
   ------------------------------------------------------------------------------
   -- MARK: chemistry
   ------------------------------------------------------------------------------
@@ -6994,31 +7022,6 @@ data:extend({
       {type = "item", name = "sp-sand", amount = 3}
     }
   },
-  {
-    type = "recipe",
-    name = "sp-nuclear-waste-processing",  -- #ForRegEx# - recipe
-    icon = "__Spaghetorio__/graphics/icons/nuclear-waste.png",
-    icon_size = 64,
-    mip_maps = 4,
-    category = "crushing",
-    subgroup = "sp-radioactive-resource",
-    enabled = false,
-    allow_productivity = true,
-    energy_required = 20,
-    ingredients = {
-      {type = "item", name = "sp-nuclear-waste", amount = 1},
-    },
-    results = {
-      {type = "item", name = "sp-plutonium-239", probability = 0.005, amount = 1},
-      {type = "item", name = "uranium-238", probability = 0.015, amount = 1},
-      {type = "item", name = "carbon", probability = 0.08, amount = 1},
-      {type = "item", name = "sp-tungsten-powder", probability = 0.06, amount = 1},
-      {type = "item", name = "sp-zircon", probability = 0.10, amount = 1},
-      {type = "item", name = "sp-cerium", probability = 0.06, amount = 1},
-      {type = "item", name = "sp-titanium-sponge", probability = 0.3, amount = 1},
-    },
-    order = "z[nuclear]-3-[nuclear-waste-processing]"
-  },
   ------------------------------------------------------------------------------
   -- MARK: sawing
   ------------------------------------------------------------------------------
@@ -9382,7 +9385,7 @@ data:extend({
     type = "recipe",
     name = "sp-plutonium-240-fuel-rod",  -- #ForRegEx# - recipe
     icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/plutonium-fuel-rod.png", 64,
-                                         "__Spaghetorio__/graphics/icons/plutonium-240-1.png", 64),
+                                         "__Spaghetorio__/graphics/icons/plutonium-240.png", 64),
     category = "advanced-crafting",
     enabled = false,
     allow_productivity = true,
@@ -15295,7 +15298,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-plutonium-from-acrovoid",  -- #ForRegEx# - recipe
-    icons = util.icon.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/plutonium-239-1.png",
+    icons = util.icon.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/plutonium-239.png",
                                                          "__Spaghetorio__/graphics/icons/acrovoid.png"),
     icon_size = 64,
     mip_maps = 4,
@@ -16191,7 +16194,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-plutonium-239-processing",  -- #ForRegEx# - recipe
-    icon = "__Spaghetorio__/graphics/icons/plutonium-239-1.png",
+    icon = "__Spaghetorio__/graphics/icons/plutonium-239.png",
     icon_size = 64,
     scale = 0.25,
     category = "sp-atom-breeding",
@@ -16213,7 +16216,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-plutonium-240-processing",  -- #ForRegEx# - recipe
-    icon = "__Spaghetorio__/graphics/icons/plutonium-240-1.png",
+    icon = "__Spaghetorio__/graphics/icons/plutonium-240.png",
     icon_size = 64,
     scale = 0.25,
     category = "sp-atom-breeding",
@@ -16239,7 +16242,7 @@ data:extend({
                                         "__Spaghetorio__/graphics/icons/nuclear-waste.png", 64, nil),
     icon_size = 64,
     mip_maps = 4,
-    category = "chemistry",
+    category = "sp-advanced-chemistry",
     subgroup = "sp-radioactive-resource",
     enabled = false,
     allow_productivity = true,
@@ -16249,10 +16252,8 @@ data:extend({
       {type = "fluid", name = "sulfuric-acid", amount = 40}
     },
     results = {
-      {type = "item", name = "uranium-238", amount = 3},
       {type = "item", name = "sp-empty-fuel-rod", amount = 2},
-      {type = "item", name = "sp-nuclear-waste", amount = 1},
-      {type = "fluid", name = "sp-deuterium", amount = 10}
+      {type = "item", name = "sp-nuclear-waste", amount = 1}
     },
     crafting_machine_tint = {
       primary = {r = 0.4, g = 1.000, b = 0.4, a = 1.000},
@@ -16266,26 +16267,38 @@ data:extend({
     type = "recipe",
     name = "sp-advanced-nuclear-waste-processing",  -- #ForRegEx# - recipe
     icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/nuclear-waste.png", 64, 
-                                         "__Spaghetorio__/graphics/icons/plutonium-239-1.png", 64),
+                                         "__Spaghetorio__/graphics/icons/plutonium-239.png", 64),
     icon_size = 256,
     scale = 0.25,
-    category = "chemistry",
+    category = "sp-advanced-chemistry",
     subgroup = "sp-radioactive-resource",
     enabled = false,
     allow_productivity = true,
     energy_required = 80,
     hide_from_player_crafting = true,
     ingredients = {
-      {type = "item", name = "sp-nuclear-waste", amount = 6},
-      {type = "fluid", name = "sp-chlorine", amount = 60}
+      {type = "item", name = "sp-nuclear-waste", amount = 1},
+      {type = "fluid", name = "sp-peroxymonosulfuric-acid", amount = 12},
+      {type = "fluid", name = "sp-dimethyl-sulfide", amount = 8},
+      {type = "fluid", name = "sp-biocrude-oil", amount = 5}
     },
     results = {
+      {type = "item", name = "sp-plutonium-239", probability = 0.6, amount = 1},
+      {type = "item", name = "sp-neptunium-236", probability = 0.12, amount = 1},
+      {type = "item", name = "sp-neptunium-233", probability = 0.05, amount = 1},
       {type = "item", name = "uranium-238", probability = 0.37, amount = 2},
       {type = "item", name = "uranium-235", probability = 0.03, amount = 1},
-      {type = "item", name = "sp-plutonium-239", probability = 0.6, amount = 1},
-      {type = "item", name = "carbon", probability = 0.2, amount = 1},
-      {type = "item", name = "lithium", probability = 0.2, amount = 1},
-      {type = "fluid", name = "sp-deuterium", amount = 10}
+      {type = "item", name = "sp-uranium-233", probability = 0.04, amount = 1},
+      {type = "item", name = "sp-protactinium-236", probability = 0.12, amount = 1},
+      {type = "item", name = "sp-protactinium-232", probability = 0.06, amount = 1},
+      {type = "item", name = "sp-actinium-232", probability = 0.075, amount = 1},
+      {type = "item", name = "sp-actinium-225", probability = 0.005, amount = 1},
+      {type = "item", name = "carbon", probability = 0.12, amount = 1},
+      {type = "item", name = "sp-tungsten-powder", probability = 0.1, amount = 1},
+      {type = "item", name = "sp-zircon", probability = 0.12, amount = 1},
+      {type = "item", name = "sp-cerium", probability = 0.1, amount = 1},
+      {type = "item", name = "sp-titanium-sponge", probability = 0.4, amount = 1},
+      {type = "fluid", name = "sp-deuterium", amount = 16}
     },
     crafting_machine_tint = {
       primary = {r = 0.4, g = 1.000, b = 0.8, a = 1.000},

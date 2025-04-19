@@ -145,11 +145,12 @@ TODO for 0.3.11
 TODO for 0.3.12
   + Fix sulfur dioxide recipe
   - Update nuclear science pack recipe chain
-    - Plutonium 240 decay chain (for reactor)
-    - Plutonium 239 decay chain (for weapons)
+    + Plutonium 240 decay chain (for reactor)
+    + Plutonium 239 decay chain (for weapons)
     - MOX = 7% PO2 + 93% UO2
-    - Thorium 232 (for reactor) decays into Uranium 233 which is used in weapons
-      - Molten salt reactors use thorium and produce much less waste
+    - Uranium 233 = Thorium 232 + Uranium 235
+    - Uranium 233 = Thorium 232 + Plutonium 239
+    - Kovarex enrichment shall be done in breeder reactor
 
 TODO for 0.3.13
   - Update computer science 2 branch of tech tree

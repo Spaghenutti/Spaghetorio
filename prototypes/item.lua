@@ -1835,7 +1835,7 @@ data:extend({
     scale = 0.5,
     pictures =  util.icon.create_radioactive_pictures("uranium-229", {r = 0.2, g = 0.5, b = 0.2, a = 0.2}),
     spoil_ticks = 90 * second,
-    spoil_result = "sp-thorium-232",
+    spoil_result = "sp-thorium-225",
     subgroup = "sp-radioactive-resource",
     order = "z-nuclear-i-[uranium-229]",
     stack_size = 20

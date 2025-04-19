@@ -3224,7 +3224,7 @@ data:extend({
     type = "technology",
     name = "sp-plutonium-processing",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghetorio__/graphics/hr-icons/plutonium-240-1.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/plutonium-240.png",
     effects =
     {
       {
@@ -3310,7 +3310,8 @@ data:extend({
       },
     },
     prerequisites = {
-      "sp-nuclear-science-pack-2"
+      "sp-nuclear-science-pack-2",
+      "sp-kr-advanced-chemistry"
     },
     unit =
     {
@@ -3336,7 +3337,7 @@ data:extend({
     name = "sp-advanced-nuclear-waste-processing",  -- #ForRegEx# - technology
     icon_size = 256,
     icons = util.icon.overlay_small_icon_for_technology("__Spaghetorio__/graphics/hr-icons/nuclear-waste.png", 256,
-                                                        "__Spaghetorio__/graphics/hr-icons/plutonium-239-1.png", 256),
+                                                        "__Spaghetorio__/graphics/hr-icons/plutonium-239.png", 256),
     effects =
     {
       {
