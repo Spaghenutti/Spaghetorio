@@ -316,13 +316,13 @@ function data_util.create_radioactive_pictures(isotope, tint)
         {
           filename = "__Spaghetorio__/graphics/icons/" .. isotope .. ".png",
           size = 64,
-          scale = 0.4,
+          scale = 0.5,
           mipmap_count = 4,
         },
         {
           filename = "__Spaghetorio__/graphics/glow/" .. element .. "-glow.png",
           size = 64,
-          scale = 0.4,
+          scale = 0.5,
           mipmap_count = 4,
           draw_as_light = true,
           flags = { "light" },

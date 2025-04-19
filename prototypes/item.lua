@@ -1614,7 +1614,9 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/bismuth-213.png",
     icon_size = 64,
     scale = 0.5,
-    pictures =  util.icon.create_radioactive_pictures("bismuth-213", {r = 0.5, g = 0.5, b = 0.5, a = 0.5}),
+    pictures =  util.icon.create_radioactive_pictures("bismuth-213", {r = 0.7, g = 0.7, b = 0.7, a = 0.7}),
+    spoil_ticks = 20 * second,
+    spoil_result = "sp-polonium-213",
     subgroup = "sp-radioactive-resource",
     order = "z-nuclear-a-[bismuth-213]",
     stack_size = 20
@@ -1625,7 +1627,9 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/polonium-213.png",
     icon_size = 64,
     scale = 0.5,
-    pictures =  util.icon.create_radioactive_pictures("polonium-213", {r = 0.5, g = 0.5, b = 0.5, a = 0.5}),
+    pictures =  util.icon.create_radioactive_pictures("polonium-213", {r = 0.7, g = 0.7, b = 0.7, a = 0.7}),
+    spoil_ticks = 2 * second,
+    spoil_result = "sp-leadstone",
     subgroup = "sp-radioactive-resource",
     order = "z-nuclear-b-[polonium-213]",
     stack_size = 20
@@ -1637,6 +1641,8 @@ data:extend({
     icon_size = 64,
     scale = 0.5,
     pictures =  util.icon.create_radioactive_pictures("astatine-213", {r = 0.5, g = 0.5, b = 0.5, a = 0.5}),
+    spoil_ticks = 1 * second,
+    spoil_result = "sp-bismuth",
     subgroup = "sp-radioactive-resource",
     order = "z-nuclear-c-[astatine-213]",
     stack_size = 20
@@ -1648,6 +1654,8 @@ data:extend({
     icon_size = 64,
     scale = 0.5,
     pictures =  util.icon.create_radioactive_pictures("astatine-217", nil),
+    spoil_ticks = 6 * second,
+    spoil_result = "sp-bismuth-213",
     subgroup = "sp-radioactive-resource",
     order = "z-nuclear-c-[astatine-217]",
     stack_size = 20
@@ -1659,6 +1667,8 @@ data:extend({
     icon_size = 64,
     scale = 0.5,
     pictures =  util.icon.create_radioactive_pictures("francium-217", {r = 0.5, g = 0.5, b = 0.5, a = 0.5}),
+    spoil_ticks = 1.5 * second,
+    spoil_result = "sp-astatine-213",
     subgroup = "sp-radioactive-resource",
     order = "z-nuclear-d-[francium-217]",
     stack_size = 20
@@ -1670,6 +1680,8 @@ data:extend({
     icon_size = 64,
     scale = 0.5,
     pictures =  util.icon.create_radioactive_pictures("francium-221", nil),
+    spoil_ticks = 30 * second,
+    spoil_result = "sp-astatine-217",
     subgroup = "sp-radioactive-resource",
     order = "z-nuclear-d-[francium-221]",
     stack_size = 20
@@ -1681,6 +1693,8 @@ data:extend({
     icon_size = 64,
     scale = 0.5,
     pictures =  util.icon.create_radioactive_pictures("radium-221", {r = 0.5, g = 0.5, b = 0.5, a = 0.5}),
+    spoil_ticks = 12 * second,
+    spoil_result = "sp-actinium-221",
     subgroup = "sp-radioactive-resource",
     order = "z-nuclear-e-[radium-221]",
     stack_size = 20
@@ -1692,6 +1706,8 @@ data:extend({
     icon_size = 64,
     scale = 0.5,
     pictures =  util.icon.create_radioactive_pictures("radium-225", nil),
+    spoil_ticks = 175 * second,
+    spoil_result = "sp-actinium-225",
     subgroup = "sp-radioactive-resource",
     order = "z-nuclear-e-[radium-225]",
     stack_size = 20
@@ -1703,6 +1719,8 @@ data:extend({
     icon_size = 64,
     scale = 0.5,
     pictures =  util.icon.create_radioactive_pictures("actinium-221", {r = 0.2, g = 0.2, b = 0.2, a = 0.2}),
+    spoil_ticks = 2 * second,
+    spoil_result = "sp-francium-217",
     subgroup = "sp-radioactive-resource",
     order = "z-nuclear-f-[actinium-221]",
     stack_size = 20
@@ -1714,6 +1732,8 @@ data:extend({
     icon_size = 64,
     scale = 0.5,
     pictures =  util.icon.create_radioactive_pictures("actinium-225", {r = 0.5, g = 0.5, b = 0.5, a = 0.5}),
+    spoil_ticks = 24 * second,
+    spoil_result = "sp-francium-221",
     subgroup = "sp-radioactive-resource",
     order = "z-nuclear-f-[actinium-225]",
     stack_size = 20
@@ -1725,6 +1745,8 @@ data:extend({
     icon_size = 64,
     scale = 0.5,
     pictures =  util.icon.create_radioactive_pictures("actinium-232", nil),
+    spoil_ticks = 320 * second,
+    spoil_result = "sp-thorium-232",
     subgroup = "sp-radioactive-resource",
     order = "z-nuclear-f-[actinium-232]",
     stack_size = 20
@@ -1736,6 +1758,8 @@ data:extend({
     icon_size = 64,
     scale = 0.5,
     pictures =  util.icon.create_radioactive_pictures("thorium-225", {r = 0.2, g = 0.2, b = 0.2, a = 0.2}),
+    spoil_ticks = 16 * second,
+    spoil_result = "sp-radium-221",
     subgroup = "sp-radioactive-resource",
     order = "z-nuclear-g-[thorium-225]",
     stack_size = 20
@@ -1747,6 +1771,8 @@ data:extend({
     icon_size = 64,
     scale = 0.5,
     pictures =  util.icon.create_radioactive_pictures("thorium-229", {r = 0.5, g = 0.5, b = 0.5, a = 0.5}),
+    spoil_ticks = 3000 * second,
+    spoil_result = "sp-radium-225",
     subgroup = "sp-radioactive-resource",
     order = "z-nuclear-g-[thorium-229]",
     stack_size = 20
@@ -1769,6 +1795,8 @@ data:extend({
     icon_size = 64,
     scale = 0.5,
     pictures =  util.icon.create_radioactive_pictures("protactinium-229", {r = 0.2, g = 0.2, b = 0.2, a = 0.2}),
+    spoil_ticks = 240 * second,
+    spoil_result = "sp-uranium-229",
     subgroup = "sp-radioactive-resource",
     order = "z-nuclear-h-[protactinium-229]",
     stack_size = 20
@@ -1780,6 +1808,8 @@ data:extend({
     icon_size = 64,
     scale = 0.5,
     pictures =  util.icon.create_radioactive_pictures("protactinium-232", {r = 0.5, g = 0.5, b = 0.5, a = 0.5}),
+    spoil_ticks = 200 * second,
+    spoil_result = "sp-thorium-232",
     subgroup = "sp-radioactive-resource",
     order = "z-nuclear-h-[protactinium-232]",
     stack_size = 20
@@ -1791,6 +1821,8 @@ data:extend({
     icon_size = 64,
     scale = 0.5,
     pictures =  util.icon.create_radioactive_pictures("protactinium-236", nil),
+    spoil_ticks = 18 * second,
+    spoil_result = "sp-uranium-236",
     subgroup = "sp-radioactive-resource",
     order = "z-nuclear-h-[protactinium-236]",
     stack_size = 20
@@ -1802,6 +1834,8 @@ data:extend({
     icon_size = 64,
     scale = 0.5,
     pictures =  util.icon.create_radioactive_pictures("uranium-229", {r = 0.2, g = 0.5, b = 0.2, a = 0.2}),
+    spoil_ticks = 90 * second,
+    spoil_result = "sp-thorium-232",
     subgroup = "sp-radioactive-resource",
     order = "z-nuclear-i-[uranium-229]",
     stack_size = 20
@@ -1813,6 +1847,8 @@ data:extend({
     icon_size = 64,
     scale = 0.5,
     pictures =  util.icon.create_radioactive_pictures("uranium-233", {r = 0.3, g = 0.8, b = 0.3, a = 0.3}),
+    spoil_ticks = 3 * hour,
+    spoil_result = "sp-thorium-229",
     subgroup = "sp-radioactive-resource",
     order = "z-nuclear-i-[uranium-233]",
     stack_size = 20
@@ -1824,6 +1860,8 @@ data:extend({
     icon_size = 64,
     scale = 0.5,
     pictures =  util.icon.create_radioactive_pictures("uranium-236", {r = 0.5, g = 1, b = 0.5, a = 0.5}),
+    spoil_ticks = 12 * hour,
+    spoil_result = "sp-thorium-232",
     subgroup = "sp-radioactive-resource",
     order = "z-nuclear-i-[uranium-236]",
     stack_size = 20
@@ -1835,6 +1873,8 @@ data:extend({
     icon_size = 64,
     scale = 0.5,
     pictures =  util.icon.create_radioactive_pictures("neptunium-233", {r = 0.5, g = 0.5, b = 0.5, a = 0.5}),
+    spoil_ticks = 20 * second,
+    spoil_result = "sp-protactinium-229",
     subgroup = "sp-radioactive-resource",
     order = "z-nuclear-j-[neptunium-233]",
     stack_size = 20
@@ -1846,6 +1886,8 @@ data:extend({
     icon_size = 64,
     scale = 0.5,
     pictures =  util.icon.create_radioactive_pictures("neptunium-236", nil),
+    spoil_ticks = 2.5 * hour,
+    spoil_result = "sp-uranium-236",
     subgroup = "sp-radioactive-resource",
     order = "z-nuclear-j-[neptunium-236]",
     stack_size = 20
@@ -1857,6 +1899,8 @@ data:extend({
     icon_size = 64,
     scale = 0.5,
     pictures =  util.icon.create_radioactive_pictures("plutonium-239", {r = 0.5, g = 0.5, b = 0.5, a = 0.5}),
+    spoil_ticks = 2 * hour,
+    spoil_result = "uranium-235",
     subgroup = "sp-radioactive-resource",
     order = "z-nuclear-k-[plutonium-239]",
     stack_size = 20
@@ -1868,6 +1912,8 @@ data:extend({
     icon_size = 64,
     scale = 0.5,
     pictures =  util.icon.create_radioactive_pictures("plutonium-240", nil),
+    spoil_ticks = 1 * hour,
+    spoil_result = "sp-uranium-236",
     subgroup = "sp-radioactive-resource",
     order = "z-nuclear-k-[plutonium-240]",
     stack_size = 20
