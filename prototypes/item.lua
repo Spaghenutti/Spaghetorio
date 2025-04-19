@@ -1614,9 +1614,207 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/bismuth-213.png",
     icon_size = 64,
     scale = 0.5,
-    pictures =  util.icon.create_radioactive_pictures("bismuth-213", nil),
+    pictures =  util.icon.create_radioactive_pictures("bismuth-213", {r = 0.5, g = 0.5, b = 0.5, a = 0.5}),
     subgroup = "sp-radioactive-resource",
-    order = "z-nuclear-[bismuth-213]",
+    order = "z-nuclear-a-[bismuth-213]",
+    stack_size = 20
+  },
+  {
+    type = "item",
+    name = "sp-polonium-213",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/polonium-213.png",
+    icon_size = 64,
+    scale = 0.5,
+    pictures =  util.icon.create_radioactive_pictures("polonium-213", {r = 0.5, g = 0.5, b = 0.5, a = 0.5}),
+    subgroup = "sp-radioactive-resource",
+    order = "z-nuclear-b-[polonium-213]",
+    stack_size = 20
+  },
+  {
+    type = "item",
+    name = "sp-astatine-213",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/astatine-213.png",
+    icon_size = 64,
+    scale = 0.5,
+    pictures =  util.icon.create_radioactive_pictures("astatine-213", {r = 0.5, g = 0.5, b = 0.5, a = 0.5}),
+    subgroup = "sp-radioactive-resource",
+    order = "z-nuclear-c-[astatine-213]",
+    stack_size = 20
+  },
+  {
+    type = "item",
+    name = "sp-astatine-217",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/astatine-217.png",
+    icon_size = 64,
+    scale = 0.5,
+    pictures =  util.icon.create_radioactive_pictures("astatine-217", nil),
+    subgroup = "sp-radioactive-resource",
+    order = "z-nuclear-c-[astatine-217]",
+    stack_size = 20
+  },
+  {
+    type = "item",
+    name = "sp-francium-217",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/francium-217.png",
+    icon_size = 64,
+    scale = 0.5,
+    pictures =  util.icon.create_radioactive_pictures("francium-217", {r = 0.5, g = 0.5, b = 0.5, a = 0.5}),
+    subgroup = "sp-radioactive-resource",
+    order = "z-nuclear-d-[francium-217]",
+    stack_size = 20
+  },
+  {
+    type = "item",
+    name = "sp-francium-221",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/francium-221.png",
+    icon_size = 64,
+    scale = 0.5,
+    pictures =  util.icon.create_radioactive_pictures("francium-221", nil),
+    subgroup = "sp-radioactive-resource",
+    order = "z-nuclear-d-[francium-221]",
+    stack_size = 20
+  },
+  {
+    type = "item",
+    name = "sp-radium-221",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/radium-221.png",
+    icon_size = 64,
+    scale = 0.5,
+    pictures =  util.icon.create_radioactive_pictures("radium-221", {r = 0.5, g = 0.5, b = 0.5, a = 0.5}),
+    subgroup = "sp-radioactive-resource",
+    order = "z-nuclear-e-[radium-221]",
+    stack_size = 20
+  },
+  {
+    type = "item",
+    name = "sp-radium-225",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/radium-225.png",
+    icon_size = 64,
+    scale = 0.5,
+    pictures =  util.icon.create_radioactive_pictures("radium-225", nil),
+    subgroup = "sp-radioactive-resource",
+    order = "z-nuclear-e-[radium-225]",
+    stack_size = 20
+  },
+  {
+    type = "item",
+    name = "sp-actinium-221",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/actinium-221.png",
+    icon_size = 64,
+    scale = 0.5,
+    pictures =  util.icon.create_radioactive_pictures("actinium-221", {r = 0.2, g = 0.2, b = 0.2, a = 0.2}),
+    subgroup = "sp-radioactive-resource",
+    order = "z-nuclear-f-[actinium-221]",
+    stack_size = 20
+  },
+  {
+    type = "item",
+    name = "sp-actinium-225",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/actinium-225.png",
+    icon_size = 64,
+    scale = 0.5,
+    pictures =  util.icon.create_radioactive_pictures("actinium-225", {r = 0.5, g = 0.5, b = 0.5, a = 0.5}),
+    subgroup = "sp-radioactive-resource",
+    order = "z-nuclear-f-[actinium-225]",
+    stack_size = 20
+  },
+  {
+    type = "item",
+    name = "sp-actinium-232",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/actinium-232.png",
+    icon_size = 64,
+    scale = 0.5,
+    pictures =  util.icon.create_radioactive_pictures("actinium-232", nil),
+    subgroup = "sp-radioactive-resource",
+    order = "z-nuclear-f-[actinium-232]",
+    stack_size = 20
+  },
+  {
+    type = "item",
+    name = "sp-thorium-225",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/thorium-225.png",
+    icon_size = 64,
+    scale = 0.5,
+    pictures =  util.icon.create_radioactive_pictures("thorium-225", {r = 0.2, g = 0.2, b = 0.2, a = 0.2}),
+    subgroup = "sp-radioactive-resource",
+    order = "z-nuclear-g-[thorium-225]",
+    stack_size = 20
+  },
+  {
+    type = "item",
+    name = "sp-thorium-229",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/thorium-229.png",
+    icon_size = 64,
+    scale = 0.5,
+    pictures =  util.icon.create_radioactive_pictures("thorium-229", {r = 0.5, g = 0.5, b = 0.5, a = 0.5}),
+    subgroup = "sp-radioactive-resource",
+    order = "z-nuclear-g-[thorium-229]",
+    stack_size = 20
+  },
+  {
+    type = "item",
+    name = "sp-thorium-232",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/thorium-232.png",
+    icon_size = 64,
+    scale = 0.5,
+    pictures =  util.icon.create_radioactive_pictures("thorium-232", nil),
+    subgroup = "sp-radioactive-resource",
+    order = "z-nuclear-g-[thorium-232]",
+    stack_size = 20
+  },
+  {
+    type = "item",
+    name = "sp-protactinium-229",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/protactinium-229.png",
+    icon_size = 64,
+    scale = 0.5,
+    pictures =  util.icon.create_radioactive_pictures("protactinium-229", {r = 0.2, g = 0.2, b = 0.2, a = 0.2}),
+    subgroup = "sp-radioactive-resource",
+    order = "z-nuclear-h-[protactinium-229]",
+    stack_size = 20
+  },
+  {
+    type = "item",
+    name = "sp-protactinium-232",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/protactinium-232.png",
+    icon_size = 64,
+    scale = 0.5,
+    pictures =  util.icon.create_radioactive_pictures("protactinium-232", {r = 0.5, g = 0.5, b = 0.5, a = 0.5}),
+    subgroup = "sp-radioactive-resource",
+    order = "z-nuclear-h-[protactinium-232]",
+    stack_size = 20
+  },
+  {
+    type = "item",
+    name = "sp-protactinium-236",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/protactinium-236.png",
+    icon_size = 64,
+    scale = 0.5,
+    pictures =  util.icon.create_radioactive_pictures("protactinium-236", nil),
+    subgroup = "sp-radioactive-resource",
+    order = "z-nuclear-h-[protactinium-236]",
+    stack_size = 20
+  },
+  {
+    type = "item",
+    name = "sp-neptunium-233",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/neptunium-233.png",
+    icon_size = 64,
+    scale = 0.5,
+    pictures =  util.icon.create_radioactive_pictures("neptunium-233", {r = 0.5, g = 0.5, b = 0.5, a = 0.5}),
+    subgroup = "sp-radioactive-resource",
+    order = "z-nuclear-j-[neptunium-233]",
+    stack_size = 20
+  },
+  {
+    type = "item",
+    name = "sp-neptunium-236",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/neptunium-236.png",
+    icon_size = 64,
+    scale = 0.5,
+    pictures =  util.icon.create_radioactive_pictures("neptunium-236", nil),
+    subgroup = "sp-radioactive-resource",
+    order = "z-nuclear-j-[neptunium-236]",
     stack_size = 20
   },
   {
@@ -1627,7 +1825,7 @@ data:extend({
     scale = 0.5,
     pictures =  util.icon.create_radioactive_pictures("plutonium-239", {r = 0.5, g = 0.5, b = 0.5, a = 0.5}),
     subgroup = "sp-radioactive-resource",
-    order = "z-nuclear-3-[plutonium-239]",
+    order = "z-nuclear-k-[plutonium-239]",
     stack_size = 20
   },
   {
@@ -1638,7 +1836,7 @@ data:extend({
     scale = 0.5,
     pictures =  util.icon.create_radioactive_pictures("plutonium-240", nil),
     subgroup = "sp-radioactive-resource",
-    order = "z-nuclear-3-[plutonium-240]",
+    order = "z-nuclear-k-[plutonium-240]",
     stack_size = 20
   },
   ------------------------------------------------------------------------------
