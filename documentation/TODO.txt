@@ -85,9 +85,7 @@ TODO for 0.3.9
   + rename krastorio bio-lab to genetics-facility
   + Add energy values for potato, wheat and stuff
   + Unlock freezer in biological tree and before cryogenic plant
-  - Add more uses for dimethyl-sulfide, dimethyl-sulfoxide and hydrogen-sulfide
   + Add spoling to items
-  - Add uses to bioflux
     
   + Updated biological branch tier 1 and 2 of tech tree
     + herbarium
@@ -144,15 +142,12 @@ TODO for 0.3.11
   + Report here https://github.com/Spaghenutti/Spaghetorio/pull/9 that i copy code but not merge pull request due to som changes in icons.lua
   + Accept PR of japanese locale
 
-
 TODO for 0.3.12
-  - Fix sulfur dioxide recipe
+  + Fix sulfur dioxide recipe
   - Update nuclear science pack recipe chain
-    - Uranium 235 decay chain
-    - Uranium 238 decay chain
     - Plutonium 240 decay chain (for reactor)
     - Plutonium 239 decay chain (for weapons)
-    - MOX
+    - MOX = 7% PO2 + 93% UO2
     - Thorium 232 (for reactor) decays into Uranium 233 which is used in weapons
       - Molten salt reactors use thorium and produce much less waste
 
@@ -191,6 +186,12 @@ TODO for 0.3.15
     - used in rodent poison
 
 TODO for 0.3.16
+  - Make yellow sprites from grass and use it as wheat
+  - Make fungi decoratives to trees
+  - Use more gleba trees as resources for some stuff. Make this available after reaching space.
+  - Add different fertile grounds for gleba plants
+
+TODO for 0.3.17
   - Update space science 2 branch of tech tree
   - Add back blunagium, grobgnum, rukite and yemnuth rockets (even though they are unlocked later)
 
@@ -220,6 +221,12 @@ TODO for 0.3.xx
     - put alien fluids into some fancy shmanzy tanks
   - Add krastorio turbine as water turbine
   - Add to resource autoplace tile_restriction for some tiles such that ores can only spawn on those tiles (see plant "sp-algae")
+  - Add more uses for dimethyl-sulfide, dimethyl-sulfoxide and hydrogen-sulfide
+  - Add uses to bioflux
+  - Increase fuel values of biological fluids / items
+  - Split fuel into categories
+  - Add nuclear and antimatter locomotive
+  - 
 
 --------------------------------------------------------------------------------
 

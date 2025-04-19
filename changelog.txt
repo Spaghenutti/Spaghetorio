@@ -1,5 +1,13 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.11
+Date: 2025-04-25
+  Features:
+
+  Bugfixes:
+    - Fixed sulfur dioxide recipe
+    - Fixed some buildings with different fluid inputs
+---------------------------------------------------------------------------------------------------
+Version: 0.3.11
 Date: 2025-04-18
   Features:
     - Added gas power station
