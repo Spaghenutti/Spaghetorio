@@ -1608,16 +1608,42 @@ data:extend({
   ------------------------------------------------------------------------------
   {
     type = "item",
-    name = "sp-plutonium-239",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/icons/plutonium-239-1.png",
+    name = "sp-bismuth-213",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/bismuth-213.png",
     icon_size = 64,
     scale = 0.5,
-    pictures = {
-      {size = 64, filename = "__Spaghetorio__/graphics/icons/plutonium-239-1.png", scale = 0.5, mipmap_count = 4},
-      {size = 64, filename = "__Spaghetorio__/graphics/icons/plutonium-239-2.png", scale = 0.5, mipmap_count = 4},
-      {size = 64, filename = "__Spaghetorio__/graphics/icons/plutonium-239-3.png", scale = 0.5, mipmap_count = 4},
-      {size = 64, filename = "__Spaghetorio__/graphics/icons/plutonium-239-4.png", scale = 0.5, mipmap_count = 4}
+      pictures = {
+      {
+        layers = {
+          {
+            filename = "__Spaghetorio__/graphics/icons/bismuth-213.png",
+            size = 64,
+            scale = 0.5,
+            mipmap_count = 4,
+          },
+          {
+            filename = "__Spaghetorio__/graphics/glow/bismuth-glow.png",
+            size = 64,
+            scale = 0.5,
+            mipmap_count = 4,
+            draw_as_light = true,
+            flags = { "light" },
+            blend_mode = "additive",
+            -- tint = { r = 1, g = 1, b = 1, a = 1 },
+          },
+        },
+      },
     },
+    subgroup = "sp-radioactive-resource",
+    order = "z-nuclear-[bismuth-213]",
+    stack_size = 20
+  },
+  {
+    type = "item",
+    name = "sp-plutonium-239",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/plutonium-239.png",
+    icon_size = 64,
+    scale = 0.5,
     subgroup = "sp-radioactive-resource",
     order = "z-nuclear-3-[plutonium-239]",
     stack_size = 20

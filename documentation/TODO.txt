@@ -153,13 +153,13 @@ TODO for 0.3.12
 
 TODO for 0.3.13
   - Update computer science 2 branch of tech tree
-      - Uses for tellurium
-        + Add thermocouple (uses tellurium)
-        + Add peltier cell (bismuth and tellurium) use in thermonuclear generator and cryogenic plant
-        - Add graphite impact shell used for explorers
-        - Add laser diode
-        - Add hard drive
-        - Add phase change memory
+    - Uses for tellurium
+      + Add thermocouple (uses tellurium)
+      + Add peltier cell (bismuth and tellurium) use in thermonuclear generator and cryogenic plant
+      - Add graphite impact shell used for explorers
+      - Add laser diode
+      - Add hard drive
+      - Add phase change memory
   - Update cryogenic science 2 branch of tech tree
   - Update utility science 2 branch of tech tree
   + Add biological / agricultural item group
