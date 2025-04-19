@@ -1797,6 +1797,39 @@ data:extend({
   },
   {
     type = "item",
+    name = "sp-uranium-229",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/uranium-229.png",
+    icon_size = 64,
+    scale = 0.5,
+    pictures =  util.icon.create_radioactive_pictures("uranium-229", {r = 0.2, g = 0.5, b = 0.2, a = 0.2}),
+    subgroup = "sp-radioactive-resource",
+    order = "z-nuclear-i-[uranium-229]",
+    stack_size = 20
+  },
+  {
+    type = "item",
+    name = "sp-uranium-233",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/uranium-233.png",
+    icon_size = 64,
+    scale = 0.5,
+    pictures =  util.icon.create_radioactive_pictures("uranium-233", {r = 0.3, g = 0.8, b = 0.3, a = 0.3}),
+    subgroup = "sp-radioactive-resource",
+    order = "z-nuclear-i-[uranium-233]",
+    stack_size = 20
+  },
+  {
+    type = "item",
+    name = "sp-uranium-236",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/uranium-236.png",
+    icon_size = 64,
+    scale = 0.5,
+    pictures =  util.icon.create_radioactive_pictures("uranium-236", {r = 0.5, g = 1, b = 0.5, a = 0.5}),
+    subgroup = "sp-radioactive-resource",
+    order = "z-nuclear-i-[uranium-236]",
+    stack_size = 20
+  },
+  {
+    type = "item",
     name = "sp-neptunium-233",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/neptunium-233.png",
     icon_size = 64,
