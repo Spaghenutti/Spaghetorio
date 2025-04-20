@@ -3235,6 +3235,10 @@ data:extend({
         type = "unlock-recipe",
         recipe = "sp-uranium-233-processing"
       },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-uranium-233-with-plutonium-processing"
+      },
     },
     prerequisites = {
       "sp-breeder-reactor"

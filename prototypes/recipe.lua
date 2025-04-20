@@ -9834,7 +9834,30 @@ data:extend({
       {type = "item", name = "sp-uranium-233", amount = 1},
       {type = "item", name = "uranium-238", amount = 1}
     },
-    order = "z[nuclear]-1-[uranium-233]"
+    order = "z[nuclear]-1a-[uranium-233]"
+  },
+  {
+    type = "recipe",
+    name = "sp-uranium-233-with-plutonium-processing",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/uranium-233.png", 64,
+                                         "__Spaghetorio__/graphics/icons/plutonium-239.png", 64),
+    icon_size = 64,
+    scale = 0.25,
+    category = "sp-atom-breeding",
+    subgroup = "sp-radioactive-resource",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 2,
+    ingredients = {
+      {type = "item", name = "sp-thorium-232", amount = 1},
+      {type = "item", name = "sp-plutonium-239", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-uranium-233", amount = 1},
+      {type = "item", name = "sp-neptunium-236", probability = 0.92, amount = 1},
+      {type = "item", name = "sp-protactinium-236", probability = 0.08, amount = 1},
+    },
+    order = "z[nuclear]-1b-[uranium-233]"
   },
   {
     type = "recipe",

@@ -359,6 +359,24 @@ util.recipe.change_recipe_ingredients("flying-robot-frame",
     {type = "item", name = "sp-composites", amount = 2}
   },
   3)
+
+data.raw.recipe["kovarex-enrichment-process"].category = "sp-atom-breeding"
+util.recipe.change_recipe_ingredients("kovarex-enrichment-process",
+  {
+    {type = "item", name = "uranium-235", amount = 40},
+    {type = "item", name = "uranium-238", amount = 5},
+  },
+  60)
+data.raw.recipe["kovarex-enrichment-process"].results = {
+  {type = "item", name = "uranium-235", amount = 41},
+  {type = "item", name = "uranium-238", amount = 2},
+  {type = "item", name = "sp-uranium-236", probability = 0.5, amount = 1},
+  {type = "item", name = "sp-thorium-232", probability = 0.1, amount = 1},
+  {type = "item", name = "sp-neptunium-236", probability = 0.3, amount = 1},
+  {type = "item", name = "sp-actinium-232", probability = 0.08, amount = 1},
+  {type = "item", name = "sp-protactinium-232", probability = 0.02, amount = 1},
+}
+
 --------------------------------------------------------------------------------
 -- MARK: Fluids
 --------------------------------------------------------------------------------

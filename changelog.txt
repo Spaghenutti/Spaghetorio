@@ -4,6 +4,8 @@ Date: 2025-04-25
   Features:
     - Added many nuclear isotopes with decay chains (spoiling :3)
     - Added thorium fuel and MOX fuel
+  Changes:
+    - Changed covarex enrichment
   Bugfixes:
     - Fixed sulfur dioxide recipe
     - Fixed some buildings with different fluid inputs
