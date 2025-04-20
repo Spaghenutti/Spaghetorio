@@ -151,9 +151,13 @@ TODO for 0.3.12
     + Uranium 233 = Thorium 232 + Uranium 235
     + Uranium 233 = Thorium 232 + Plutonium 239
     + Kovarex enrichment shall be done in breeder reactor
-    - Fix uranium recipe icons using the arrow from nuclear fuel processing
+    + Remove nuclear fuel reprocessing
+    + Fix uranium recipe icons using the arrow from nuclear fuel processing
 
 TODO for 0.3.13
+  - Update cryogenic science 2 branch of tech tree
+
+TODO for 0.3.14
   - Update computer science 2 branch of tech tree
     - Uses for tellurium
       + Add thermocouple (uses tellurium)
@@ -162,16 +166,15 @@ TODO for 0.3.13
       - Add laser diode
       - Add hard drive
       - Add phase change memory
-  - Update cryogenic science 2 branch of tech tree
   - Update utility science 2 branch of tech tree
   + Add biological / agricultural item group
 
-TODO for 0.3.14
+TODO for 0.3.15
   - Change lightning collectors to power poles
   - Fix / add casting recipes
   - Fix productivity technologies (see steel plate productivity)
 
-TODO for 0.3.15
+TODO for 0.3.16
   - Add recipe chains for core mining
   + Uses for bismuth
     + refined from tin and lead
@@ -187,13 +190,13 @@ TODO for 0.3.15
     - thallium used in optics
     - used in rodent poison
 
-TODO for 0.3.16
+TODO for 0.3.17
   - Make yellow sprites from grass and use it as wheat
   - Make fungi decoratives to trees
   - Use more gleba trees as resources for some stuff. Make this available after reaching space.
   - Add different fertile grounds for gleba plants
 
-TODO for 0.3.17
+TODO for 0.3.18
   - Update space science 2 branch of tech tree
   - Add back blunagium, grobgnum, rukite and yemnuth rockets (even though they are unlocked later)
 

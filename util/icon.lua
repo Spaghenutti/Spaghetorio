@@ -273,7 +273,7 @@ function data_util.create_freezing_recipe_icon(item)
   icons = {
     {icon = item.icon, icon_size = item.icon_size, scale = 0.7, shift = {-12, -12}},
     {icon = "__Spaghetorio__/graphics/overlay/ice.png", icon_size = 64, scale = 0.7, shift = {8, 8}},
-    {icon = "__Spaghetorio__/graphics/arrows/freezing-arrow-64x64.png", icon_size = 64, scale = 1},
+    {icon = "__Spaghetorio__/graphics/arrows/blue-recipe-arrow-64x64.png", icon_size = 64, scale = 1},
   }
 
   return icons
@@ -283,7 +283,17 @@ function data_util.create_thawing_recipe_icon(item)
   icons = {
     {icon = "__Spaghetorio__/graphics/overlay/ice.png", icon_size = 64, scale = 0.7, shift = {-12, -12}},
     {icon = item.icon, icon_size = item.icon_size, scale = 0.7, shift = {8, 8}},
-    {icon = "__Spaghetorio__/graphics/arrows/thawing-arrow-64x64.png", icon_size = 64, scale = 1},
+    {icon = "__Spaghetorio__/graphics/arrows/red-recipe-arrow-64x64.png", icon_size = 64, scale = 1},
+  }
+
+  return icons
+end
+
+function data_util.create_nuclear_recipe_icon(input_item, output_item)
+  icons = {
+    {icon = input_item.icon, icon_size = input_item.icon_size, scale = 0.7, shift = {-12, -12}},
+    {icon = output_item.icon, icon_size = output_item.icon_size, scale = 0.7, shift = {12, 12}},
+    {icon = "__Spaghetorio__/graphics/arrows/orange-recipe-arrow-64x64.png", icon_size = 64, scale = 1},
   }
 
   return icons
@@ -293,7 +303,7 @@ function data_util.create_spoiling_recipe_icon(item)
   icons = {
     {icon = item.icon, icon_size = item.icon_size, scale = 0.7, shift = {-12, -12}},
     {icon = "__space-age__/graphics/icons/spoilage.png", icon_size = 64, scale = 0.7, shift = {8, 8}},
-    {icon = "__Spaghetorio__/graphics/arrows/crushing-arrow-64x64.png", icon_size = 64, scale = 1},
+    {icon = "__Spaghetorio__/graphics/arrows/grey-recipe-arrow-64x64.png", icon_size = 64, scale = 1},
   }
 
   return icons

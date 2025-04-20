@@ -1,5 +1,10 @@
 
 local util = require("data-util")
+local remove_prototypes = require("util.remove-prototypes")
+
+
+-- Remove unneded technologies
+remove_prototypes.remove_one_prototype("recipe", "nuclear-fuel-reprocessing")
 
 -- Change subgroups
 data.raw.recipe["solid-fuel-from-light-oil"].subgroup = "sp-fuel-processing"
@@ -25,7 +30,6 @@ data.raw.recipe["coal-liquefaction"].subgroup = "fluid"
 
 data.raw.recipe["sulfuric-acid"].subgroup = "sp-chemical"
 
-data.raw.recipe["nuclear-fuel-reprocessing"].subgroup = "sp-radioactive-resource"
 data.raw.recipe["uranium-processing"].subgroup = "sp-radioactive-resource"
 data.raw.recipe["kovarex-enrichment-process"].subgroup = "sp-radioactive-resource"
 

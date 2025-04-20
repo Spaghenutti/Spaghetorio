@@ -2861,7 +2861,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-nuclear-waste-processing",  -- #ForRegEx# - recipe
-    icon = "__Spaghetorio__/graphics/icons/nuclear-waste.png",
+    icons = util.icon.create_nuclear_recipe_icon(data.raw.item["sp-nuclear-waste"], data.raw.item["uranium-238"]),
     icon_size = 64,
     mip_maps = 4,
     category = "sp-crushing-washing",
@@ -9816,7 +9816,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-uranium-233-processing",  -- #ForRegEx# - recipe
-    icon = "__Spaghetorio__/graphics/icons/uranium-233.png",
+    icons = util.icon.create_nuclear_recipe_icon(data.raw.item["sp-thorium-232"], data.raw.item["sp-uranium-233"]),
     icon_size = 64,
     scale = 0.25,
     category = "sp-atom-breeding",
@@ -9839,8 +9839,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-uranium-233-with-plutonium-processing",  -- #ForRegEx# - recipe
-    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/uranium-233.png", 64,
-                                         "__Spaghetorio__/graphics/icons/plutonium-239.png", 64),
+    icons = util.icon.create_nuclear_recipe_icon(data.raw.item["sp-plutonium-239"], data.raw.item["sp-uranium-233"]),
     icon_size = 64,
     scale = 0.25,
     category = "sp-atom-breeding",
@@ -9862,7 +9861,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-plutonium-239-processing",  -- #ForRegEx# - recipe
-    icon = "__Spaghetorio__/graphics/icons/plutonium-239.png",
+    icons = util.icon.create_nuclear_recipe_icon(data.raw.item["uranium-238"], data.raw.item["sp-plutonium-239"]),
     icon_size = 64,
     scale = 0.25,
     category = "sp-atom-breeding",
@@ -9884,7 +9883,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-plutonium-240-processing",  -- #ForRegEx# - recipe
-    icon = "__Spaghetorio__/graphics/icons/plutonium-240.png",
+    icons = util.icon.create_nuclear_recipe_icon(data.raw.item["sp-plutonium-239"], data.raw.item["sp-plutonium-240"]),
     icon_size = 64,
     scale = 0.25,
     category = "sp-atom-breeding",
@@ -16355,8 +16354,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-used-up-fuel-rod-reprocessing",  -- #ForRegEx# - recipe
-    icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/icons/used-up-fuel-rod.png", 64, nil,
-                                        "__Spaghetorio__/graphics/icons/nuclear-waste.png", 64, nil),
+    icons = util.icon.create_nuclear_recipe_icon(data.raw.item["sp-used-up-fuel-rod"], data.raw.item["sp-nuclear-waste"]),
     icon_size = 64,
     mip_maps = 4,
     category = "sp-advanced-chemistry",
@@ -16383,8 +16381,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-advanced-nuclear-waste-processing",  -- #ForRegEx# - recipe
-    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/nuclear-waste.png", 64, 
-                                         "__Spaghetorio__/graphics/icons/plutonium-239.png", 64),
+    icons = util.icon.create_nuclear_recipe_icon(data.raw.item["sp-nuclear-waste"], data.raw.item["sp-plutonium-239"]),
     icon_size = 256,
     scale = 0.25,
     category = "sp-advanced-chemistry",

@@ -6,6 +6,7 @@ Date: 2025-04-25
     - Added thorium fuel and MOX fuel
   Changes:
     - Changed covarex enrichment
+    - Better visibility for arrows in some recipe icons
   Bugfixes:
     - Fixed sulfur dioxide recipe
     - Fixed some buildings with different fluid inputs
