@@ -135,7 +135,10 @@ data:extend({
       idle_sound = { filename = "__base__/sound/idle1.ogg" },
       apparent_volume = 1.5,
     },
-    crafting_categories = {"sp-kr-research-data"},
+    crafting_categories = {
+      "sp-kr-research-data",
+      "sp-radioactive-decay-research"
+    },
     crafting_speed = 1,
     energy_source = {
       type = "electric",

@@ -103,6 +103,10 @@ data:extend({
   },
   {
     type = "recipe-category",
+    name = "sp-radioactive-decay-research",  -- #ForRegEx# - recipe-category
+  },
+  {
+    type = "recipe-category",
     name = "sp-quantum-computing",  -- #ForRegEx# - recipe-category
   },
   {

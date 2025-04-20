@@ -1979,7 +1979,6 @@ data:extend({
     order = "b-nuclear-a-[uranium-oxide]",
     stack_size = 20
   },
-
   {
     type = "item",
     name = "sp-plutonium-oxide",  -- #ForRegEx# - item

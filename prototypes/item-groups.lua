@@ -290,6 +290,12 @@ data:extend({
   },
   {
     type = "item-subgroup",
+    name = "sp-research",  -- #ForRegEx# - item-subgroup
+    group = "sp-science-products",
+    order = "b1"
+  },
+  {
+    type = "item-subgroup",
     name = "sp-basic-science",  -- #ForRegEx# - item-subgroup
     group = "sp-science-products",
     order = "d"
