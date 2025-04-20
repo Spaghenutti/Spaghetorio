@@ -308,18 +308,18 @@ function data_util.create_nutrient_icon(item)
   return icons
 end
 
-function data_util.picture_with_glow(item_file_name, glow_file_name, tint)
+function data_util.picture_with_glow(image, glow, tint)
     pictures = {
     {
       layers = {
         {
-          filename = "__Spaghetorio__/graphics/icons/" .. item_file_name .. ".png",
+          filename = image,
           size = 64,
           scale = 0.5,
           mipmap_count = 4,
         },
         {
-          filename = "__Spaghetorio__/graphics/glow/" .. glow_file_name .. ".png",
+          filename = glow,
           size = 64,
           scale = 0.5,
           mipmap_count = 4,
@@ -333,11 +333,6 @@ function data_util.picture_with_glow(item_file_name, glow_file_name, tint)
   }
 
   return pictures
-end
-
-function data_util.create_radioactive_pictures(isotope, tint)
-  glow = string.match(isotope, "^[^%-]+") .. "-glow"
-  return data_util.picture_with_glow(isotope, glow, tint)
 end
 
 return data_util
