@@ -6700,12 +6700,52 @@ data:extend({
   },
   {
     type = "item",
+    name = "sp-empty-research-data-card",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/empty-research-data-card.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-science-item",
+    order = "a01[empty-research-data-card]",
+    stack_size = 200,
+  },
+  {
+    type = "item",
     name = "sp-biters-research-data",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/krastorio/icons/cards/biters-research-data.png",
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "sp-science-item",
-    order = "a01[biters-research-data]",
+    order = "a03[biters-research-data]",
+    stack_size = 200,
+  },
+  {
+    type = "item",
+    name = "sp-alpha-decay-research-data",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/alpha-decay-research-data.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-science-item",
+    order = "a02[alpha-decay-research-data]",
+    stack_size = 200,
+  },
+  {
+    type = "item",
+    name = "sp-beta-minus-decay-research-data",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/beta-minus-decay-research-data.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-science-item",
+    order = "a02[beta-minus-decay-research-data]",
+    stack_size = 200,
+  },
+  {
+    type = "item",
+    name = "sp-beta-plus-decay-research-data",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/beta-plus-decay-research-data.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-science-item",
+    order = "a02[beta-plus-decay-research-data]",
     stack_size = 200,
   },
   {
@@ -6715,7 +6755,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "sp-science-item",
-    order = "a02[matter-research-data]",
+    order = "a06[matter-research-data]",
     stack_size = 200,
   },
   {
@@ -6725,7 +6765,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "sp-science-item",
-    order = "a03[space-research-data]",
+    order = "a05[space-research-data]",
     stack_size = 200,
   },
   ------------------------------------------------------------------------------
