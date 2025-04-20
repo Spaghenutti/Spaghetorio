@@ -5601,6 +5601,36 @@ data:extend({
       {type = "fluid", name = "sp-nitrogen-dioxide", amount = 5}
     },
   },
+  {
+    type = "recipe",
+    name = "sp-uranium-oxide",  -- #ForRegEx# - recipe
+    category = "sp-oxidizing",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 8,
+    ingredients = {
+      {type = "item", name = "uranium-238", amount = 1},
+      {type = "fluid", name = "sp-oxygen", amount = 20}
+    },
+    results = {
+      {type = "item", name = "sp-uranium-oxide", amount = 1}
+    },
+  },
+  {
+    type = "recipe",
+    name = "sp-plutonium-oxide",  -- #ForRegEx# - recipe
+    category = "sp-oxidizing",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 5,
+    ingredients = {
+      {type = "item", name = "sp-plutonium-239", amount = 1},
+      {type = "fluid", name = "sp-oxygen", amount = 16}
+    },
+    results = {
+      {type = "item", name = "sp-plutonium-oxide", amount = 1}
+    },
+  },
   ------------------------------------------------------------------------------
   -- MARK: electronics
   ------------------------------------------------------------------------------
@@ -9365,6 +9395,44 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "sp-thorium-fuel-rod",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/icons/plutonium-fuel-rod.png",
+    icon_size = 64,
+    mip_maps = 4,
+    category = "advanced-crafting",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 4,
+    ingredients = {
+      {type = "item", name = "sp-thorium-232", amount = 1},
+      {type = "item", name = "sp-uranium-233", amount = 4},
+      {type = "item", name = "sp-empty-fuel-rod", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-thorium-fuel-rod", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-mox-fuel-rod",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/icons/plutonium-fuel-rod.png",
+    icon_size = 64,
+    mip_maps = 4,
+    category = "advanced-crafting",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 18,
+    ingredients = {
+      {type = "item", name = "sp-plutonium-oxide", amount = 1},
+      {type = "item", name = "sp-uranium-oxide", amount = 14},
+      {type = "item", name = "sp-empty-fuel-rod", amount = 3}
+    },
+    results = {
+      {type = "item", name = "sp-mox-fuel-rod", amount = 3}
+    }
+  },
+  {
+    type = "recipe",
     name = "sp-plutonium-239-fuel-rod",  -- #ForRegEx# - recipe
     icon = "__Spaghetorio__/graphics/icons/plutonium-fuel-rod.png",
     icon_size = 64,
@@ -9743,9 +9811,78 @@ data:extend({
     }
   },
   ------------------------------------------------------------------------------
+  -- MARK: atom-breeding
+  ------------------------------------------------------------------------------
+  {
+    type = "recipe",
+    name = "sp-uranium-233-processing",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/icons/uranium-233.png",
+    icon_size = 64,
+    scale = 0.25,
+    category = "sp-atom-breeding",
+    subgroup = "sp-radioactive-resource",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 8,
+    ingredients = {
+      {type = "fluid", name = "sp-deuterium", amount = 10},
+      {type = "item", name = "sp-thorium-232", amount = 5},
+      {type = "item", name = "uranium-238", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-thorium-232", amount = 4},
+      {type = "item", name = "sp-uranium-233", amount = 1},
+      {type = "item", name = "uranium-238", amount = 1}
+    },
+    order = "z[nuclear]-1-[uranium-233]"
+  },
+  {
+    type = "recipe",
+    name = "sp-plutonium-239-processing",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/icons/plutonium-239.png",
+    icon_size = 64,
+    scale = 0.25,
+    category = "sp-atom-breeding",
+    subgroup = "sp-radioactive-resource",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 3.2,
+    ingredients = {
+      {type = "item", name = "lithium", amount = 1},
+      {type = "item", name = "uranium-238", amount = 1}
+    },
+    results = {
+      {type = "item", name = "uranium-238", probability = 0.84, amount = 1},
+      {type = "item", name = "sp-plutonium-239", probability = 0.15, amount = 1},
+      {type = "item", name = "sp-plutonium-240", probability = 0.01, amount = 1}
+    },
+    order = "z[nuclear]-2-[plutonium-239]"
+  },
+  {
+    type = "recipe",
+    name = "sp-plutonium-240-processing",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/icons/plutonium-240.png",
+    icon_size = 64,
+    scale = 0.25,
+    category = "sp-atom-breeding",
+    subgroup = "sp-radioactive-resource",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 4,
+    ingredients = {
+      {type = "item", name = "lithium", amount = 1},
+      {type = "item", name = "sp-plutonium-239", amount = 1}
+    },
+    results = {
+      {type = "item", name = "uranium-238", probability = 0.2, amount = 1},
+      {type = "item", name = "sp-plutonium-239", probability = 0.72, amount = 1},
+      {type = "item", name = "sp-plutonium-240", probability = 0.08, amount = 1}
+    },
+    order = "z[nuclear]-2-[plutonium-240]"
+  },
+  ------------------------------------------------------------------------------
   -- MARK: research-data
   ------------------------------------------------------------------------------
-  ---
   {
     type = "recipe",
     name = "sp-computer-science-pack-2",  -- #ForRegEx# - recipe
@@ -16191,50 +16328,6 @@ data:extend({
       quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
     },
     order = "[liquid]-[bleach]"
-  },
-  {
-    type = "recipe",
-    name = "sp-plutonium-239-processing",  -- #ForRegEx# - recipe
-    icon = "__Spaghetorio__/graphics/icons/plutonium-239.png",
-    icon_size = 64,
-    scale = 0.25,
-    category = "sp-atom-breeding",
-    subgroup = "sp-radioactive-resource",
-    enabled = false,
-    allow_productivity = true,
-    energy_required = 3.2,
-    ingredients = {
-      {type = "item", name = "lithium", amount = 1},
-      {type = "item", name = "uranium-238", amount = 1}
-    },
-    results = {
-      {type = "item", name = "uranium-238", probability = 0.84, amount = 1},
-      {type = "item", name = "sp-plutonium-239", probability = 0.15, amount = 1},
-      {type = "item", name = "sp-plutonium-240", probability = 0.01, amount = 1}
-    },
-    order = "z[nuclear]-2-[plutonium-239]"
-  },
-  {
-    type = "recipe",
-    name = "sp-plutonium-240-processing",  -- #ForRegEx# - recipe
-    icon = "__Spaghetorio__/graphics/icons/plutonium-240.png",
-    icon_size = 64,
-    scale = 0.25,
-    category = "sp-atom-breeding",
-    subgroup = "sp-radioactive-resource",
-    enabled = false,
-    allow_productivity = true,
-    energy_required = 4,
-    ingredients = {
-      {type = "item", name = "lithium", amount = 1},
-      {type = "item", name = "sp-plutonium-239", amount = 1}
-    },
-    results = {
-      {type = "item", name = "uranium-238", probability = 0.2, amount = 1},
-      {type = "item", name = "sp-plutonium-239", probability = 0.72, amount = 1},
-      {type = "item", name = "sp-plutonium-240", probability = 0.08, amount = 1}
-    },
-    order = "z[nuclear]-2-[plutonium-240]"
   },
   {
     type = "recipe",

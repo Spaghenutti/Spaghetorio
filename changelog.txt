@@ -1,8 +1,9 @@
 ---------------------------------------------------------------------------------------------------
-Version: 0.3.11
+Version: 0.3.12
 Date: 2025-04-25
   Features:
-
+    - Added many nuclear isotopes with decay chains (spoiling :3)
+    - Added thorium fuel and MOX fuel
   Bugfixes:
     - Fixed sulfur dioxide recipe
     - Fixed some buildings with different fluid inputs

@@ -3222,6 +3222,87 @@ data:extend({
   },
   {
     type = "technology",
+    name = "sp-thorium-fuel-rod",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghetorio__/graphics/hr-icons/thorium-fuel-rod.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-thorium-fuel-rod"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-uranium-233-processing"
+      },
+    },
+    prerequisites = {
+      "sp-breeder-reactor"
+    },
+    unit =
+    {
+      count = 200,
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-metallurgic-science-pack-2", 1},
+        {"sp-electromagnetic-science-pack-2", 1},
+        {"production-science-pack", 1},
+        {"utility-science-pack", 1},
+        {"sp-nuclear-science-pack-2", 1}
+      },
+      time = 60
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-mox-fuel-rod",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/hr-icons/uranium-oxide.png", 256, nil,
+                                        "__Spaghetorio__/graphics/hr-icons/plutonium-oxide.png", 256, nil),
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-mox-fuel-rod"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-uranium-oxide"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-plutonium-oxide"
+      },
+    },
+    prerequisites = {
+      "sp-thorium-fuel-rod"
+    },
+    unit =
+    {
+      count = 600,
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-metallurgic-science-pack-2", 1},
+        {"sp-electromagnetic-science-pack-2", 1},
+        {"production-science-pack", 1},
+        {"utility-science-pack", 1},
+        {"sp-nuclear-science-pack-2", 1}
+      },
+      time = 60
+    },
+  },
+  {
+    type = "technology",
     name = "sp-plutonium-processing",  -- #ForRegEx# - technology
     icon_size = 256,
     icon = "__Spaghetorio__/graphics/hr-icons/plutonium-240.png",
@@ -3238,6 +3319,7 @@ data:extend({
     },
     prerequisites = {
       "kovarex-enrichment-process",
+      "sp-nuclear-waste-processing",
       "sp-production-science-pack-3"
     },
     unit =
@@ -3254,7 +3336,7 @@ data:extend({
         {"utility-science-pack", 1},
         {"sp-nuclear-science-pack-2", 1}
       },
-      time = 30
+      time = 60
     },
   },
   {
@@ -3274,7 +3356,8 @@ data:extend({
       },
     },
     prerequisites = {
-      "sp-plutonium-processing"
+      "sp-plutonium-processing",
+      "sp-mox-fuel-rod"
     },
     unit =
     {
@@ -3290,7 +3373,7 @@ data:extend({
         {"utility-science-pack", 1},
         {"sp-nuclear-science-pack-2", 1}
       },
-      time = 30
+      time = 60
     },
   },
   {
@@ -3329,7 +3412,7 @@ data:extend({
         {"utility-science-pack", 1},
         {"sp-nuclear-science-pack-2", 1}
       },
-      time = 30
+      time = 60
     },
   },
   {
@@ -3365,7 +3448,7 @@ data:extend({
         {"sp-nuclear-science-pack-2", 1},
         {"agricultural-science-pack", 1}
       },
-      time = 30
+      time = 60
     },
   },
   {
@@ -10476,7 +10559,7 @@ data:extend({
         {"sp-computer-science-pack-3", 1},
         {"utility-science-pack", 1},
       },
-      time = 30
+      time = 60
     },
   },
   {
