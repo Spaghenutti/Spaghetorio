@@ -16096,6 +16096,7 @@ data:extend({
     energy_required = 4,
     ingredients = {
       {type = "item", name = "uranium-235", amount = 2},
+      {type = "item", name = "uranium-238", amount = 6},
       {type = "item", name = "sp-empty-fuel-rod", amount = 1},
       {type = "fluid", name = "sp-nitrogen", amount = 100}
     },

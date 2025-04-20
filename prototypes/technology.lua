@@ -3347,7 +3347,8 @@ data:extend({
     },
     prerequisites = {
       "sp-nuclear-waste-processing",
-      "sp-plutonium-fuel-rod"
+      "sp-plutonium-fuel-rod",
+      "agricultural-science-pack"
     },
     unit =
     {
@@ -3361,7 +3362,8 @@ data:extend({
         {"sp-chemical-science-pack-2", 1},
         {"sp-production-science-pack-3", 1},
         {"utility-science-pack", 1},
-        {"sp-nuclear-science-pack-2", 1}
+        {"sp-nuclear-science-pack-2", 1},
+        {"agricultural-science-pack", 1}
       },
       time = 30
     },

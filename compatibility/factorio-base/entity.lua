@@ -24,8 +24,8 @@ data.raw.item["processing-unit"].order = "h-ac[rocessing-unit]"
 data.raw.item["battery"].order = "battery-[battery]"
 
 -- data.raw.item["satellite"].order = "m-1-[satellite]"
-data.raw.item["uranium-235"].order = "z-nuclear-i-[uranium-235]"
-data.raw.item["uranium-238"].order = "z-nuclear-i-[uranium-238]"
+data.raw.item["uranium-235"].order = "a-nuclear-i-[uranium-235]"
+data.raw.item["uranium-238"].order = "a-nuclear-i-[uranium-238]"
 
 -- Change order of science items
 data.raw.tool["production-science-pack"].order = "l[production-science-pack]"

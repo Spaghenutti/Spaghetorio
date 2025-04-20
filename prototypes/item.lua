@@ -1618,7 +1618,7 @@ data:extend({
     spoil_ticks = 20 * second,
     spoil_result = "sp-polonium-213",
     subgroup = "sp-radioactive-resource",
-    order = "z-nuclear-a-[bismuth-213]",
+    order = "a-nuclear-a-[bismuth-213]",
     stack_size = 20
   },
   {
@@ -1631,7 +1631,7 @@ data:extend({
     spoil_ticks = 2 * second,
     spoil_result = "sp-leadstone",
     subgroup = "sp-radioactive-resource",
-    order = "z-nuclear-b-[polonium-213]",
+    order = "a-nuclear-b-[polonium-213]",
     stack_size = 20
   },
   {
@@ -1644,7 +1644,7 @@ data:extend({
     spoil_ticks = 1 * second,
     spoil_result = "sp-bismuth",
     subgroup = "sp-radioactive-resource",
-    order = "z-nuclear-c-[astatine-213]",
+    order = "a-nuclear-c-[astatine-213]",
     stack_size = 20
   },
   {
@@ -1657,7 +1657,7 @@ data:extend({
     spoil_ticks = 6 * second,
     spoil_result = "sp-bismuth-213",
     subgroup = "sp-radioactive-resource",
-    order = "z-nuclear-c-[astatine-217]",
+    order = "a-nuclear-c-[astatine-217]",
     stack_size = 20
   },
   {
@@ -1670,7 +1670,7 @@ data:extend({
     spoil_ticks = 1.5 * second,
     spoil_result = "sp-astatine-213",
     subgroup = "sp-radioactive-resource",
-    order = "z-nuclear-d-[francium-217]",
+    order = "a-nuclear-d-[francium-217]",
     stack_size = 20
   },
   {
@@ -1683,7 +1683,7 @@ data:extend({
     spoil_ticks = 30 * second,
     spoil_result = "sp-astatine-217",
     subgroup = "sp-radioactive-resource",
-    order = "z-nuclear-d-[francium-221]",
+    order = "a-nuclear-d-[francium-221]",
     stack_size = 20
   },
   {
@@ -1696,7 +1696,7 @@ data:extend({
     spoil_ticks = 12 * second,
     spoil_result = "sp-actinium-221",
     subgroup = "sp-radioactive-resource",
-    order = "z-nuclear-e-[radium-221]",
+    order = "a-nuclear-e-[radium-221]",
     stack_size = 20
   },
   {
@@ -1709,7 +1709,7 @@ data:extend({
     spoil_ticks = 175 * second,
     spoil_result = "sp-actinium-225",
     subgroup = "sp-radioactive-resource",
-    order = "z-nuclear-e-[radium-225]",
+    order = "a-nuclear-e-[radium-225]",
     stack_size = 20
   },
   {
@@ -1722,7 +1722,7 @@ data:extend({
     spoil_ticks = 2 * second,
     spoil_result = "sp-francium-217",
     subgroup = "sp-radioactive-resource",
-    order = "z-nuclear-f-[actinium-221]",
+    order = "a-nuclear-f-[actinium-221]",
     stack_size = 20
   },
   {
@@ -1735,7 +1735,7 @@ data:extend({
     spoil_ticks = 24 * second,
     spoil_result = "sp-francium-221",
     subgroup = "sp-radioactive-resource",
-    order = "z-nuclear-f-[actinium-225]",
+    order = "a-nuclear-f-[actinium-225]",
     stack_size = 20
   },
   {
@@ -1748,7 +1748,7 @@ data:extend({
     spoil_ticks = 320 * second,
     spoil_result = "sp-thorium-232",
     subgroup = "sp-radioactive-resource",
-    order = "z-nuclear-f-[actinium-232]",
+    order = "a-nuclear-f-[actinium-232]",
     stack_size = 20
   },
   {
@@ -1761,7 +1761,7 @@ data:extend({
     spoil_ticks = 16 * second,
     spoil_result = "sp-radium-221",
     subgroup = "sp-radioactive-resource",
-    order = "z-nuclear-g-[thorium-225]",
+    order = "a-nuclear-g-[thorium-225]",
     stack_size = 20
   },
   {
@@ -1774,7 +1774,7 @@ data:extend({
     spoil_ticks = 3000 * second,
     spoil_result = "sp-radium-225",
     subgroup = "sp-radioactive-resource",
-    order = "z-nuclear-g-[thorium-229]",
+    order = "a-nuclear-g-[thorium-229]",
     stack_size = 20
   },
   {
@@ -1785,7 +1785,7 @@ data:extend({
     scale = 0.5,
     pictures =  util.icon.create_radioactive_pictures("thorium-232", nil),
     subgroup = "sp-radioactive-resource",
-    order = "z-nuclear-g-[thorium-232]",
+    order = "a-nuclear-g-[thorium-232]",
     stack_size = 20
   },
   {
@@ -1798,7 +1798,7 @@ data:extend({
     spoil_ticks = 240 * second,
     spoil_result = "sp-uranium-229",
     subgroup = "sp-radioactive-resource",
-    order = "z-nuclear-h-[protactinium-229]",
+    order = "a-nuclear-h-[protactinium-229]",
     stack_size = 20
   },
   {
@@ -1811,7 +1811,7 @@ data:extend({
     spoil_ticks = 200 * second,
     spoil_result = "sp-thorium-232",
     subgroup = "sp-radioactive-resource",
-    order = "z-nuclear-h-[protactinium-232]",
+    order = "a-nuclear-h-[protactinium-232]",
     stack_size = 20
   },
   {
@@ -1824,7 +1824,7 @@ data:extend({
     spoil_ticks = 18 * second,
     spoil_result = "sp-uranium-236",
     subgroup = "sp-radioactive-resource",
-    order = "z-nuclear-h-[protactinium-236]",
+    order = "a-nuclear-h-[protactinium-236]",
     stack_size = 20
   },
   {
@@ -1837,7 +1837,7 @@ data:extend({
     spoil_ticks = 90 * second,
     spoil_result = "sp-thorium-225",
     subgroup = "sp-radioactive-resource",
-    order = "z-nuclear-i-[uranium-229]",
+    order = "a-nuclear-i-[uranium-229]",
     stack_size = 20
   },
   {
@@ -1850,7 +1850,7 @@ data:extend({
     spoil_ticks = 3 * hour,
     spoil_result = "sp-thorium-229",
     subgroup = "sp-radioactive-resource",
-    order = "z-nuclear-i-[uranium-233]",
+    order = "a-nuclear-i-[uranium-233]",
     stack_size = 20
   },
   {
@@ -1863,7 +1863,7 @@ data:extend({
     spoil_ticks = 12 * hour,
     spoil_result = "sp-thorium-232",
     subgroup = "sp-radioactive-resource",
-    order = "z-nuclear-i-[uranium-236]",
+    order = "a-nuclear-i-[uranium-236]",
     stack_size = 20
   },
   {
@@ -1876,7 +1876,7 @@ data:extend({
     spoil_ticks = 20 * second,
     spoil_result = "sp-protactinium-229",
     subgroup = "sp-radioactive-resource",
-    order = "z-nuclear-j-[neptunium-233]",
+    order = "a-nuclear-j-[neptunium-233]",
     stack_size = 20
   },
   {
@@ -1889,7 +1889,7 @@ data:extend({
     spoil_ticks = 2.5 * hour,
     spoil_result = "sp-uranium-236",
     subgroup = "sp-radioactive-resource",
-    order = "z-nuclear-j-[neptunium-236]",
+    order = "a-nuclear-j-[neptunium-236]",
     stack_size = 20
   },
   {
@@ -1902,7 +1902,7 @@ data:extend({
     spoil_ticks = 2 * hour,
     spoil_result = "uranium-235",
     subgroup = "sp-radioactive-resource",
-    order = "z-nuclear-k-[plutonium-239]",
+    order = "a-nuclear-k-[plutonium-239]",
     stack_size = 20
   },
   {
@@ -1915,7 +1915,31 @@ data:extend({
     spoil_ticks = 1 * hour,
     spoil_result = "sp-uranium-236",
     subgroup = "sp-radioactive-resource",
-    order = "z-nuclear-k-[plutonium-240]",
+    order = "a-nuclear-k-[plutonium-240]",
+    stack_size = 20
+  },
+  {
+    type = "item",
+    name = "sp-uranium-oxide",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/uranium-oxide.png",
+    icon_size = 64,
+    scale = 0.5,
+    pictures =  util.icon.create_radioactive_pictures("uranium-oxide", {r = 1, g = 0.5, b = 0.5, a = 1}),
+    subgroup = "sp-radioactive-resource",
+    order = "b-nuclear-a-[uranium-oxide]",
+    stack_size = 20
+  },
+  {
+    type = "item",
+    name = "sp-plutonium-oxide",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/plutonium-oxide.png",
+    icon_size = 64,
+    scale = 0.5,
+    pictures =  util.icon.create_radioactive_pictures("plutonium-oxide", {r = 1, g = 0.5, b = 0.5, a = 1}),
+    spoil_ticks = 2 * hour,
+    spoil_result = "sp-uranium-oxide",
+    subgroup = "sp-radioactive-resource",
+    order = "b-nuclear-b-[plutonium-oxide]",
     stack_size = 20
   },
   ------------------------------------------------------------------------------
@@ -6163,7 +6187,7 @@ data:extend({
   {
     type = "item",
     name = "sp-empty-fuel-rod",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/icons/empty-fuel-rod.png",
+    icon = "__Spaghetorio__/graphics/icons/fuel-rod.png",
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "sp-fuel-processing",
@@ -6172,16 +6196,47 @@ data:extend({
   },
   {
     type = "item",
+    name = "sp-thorium-fuel-rod",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/thorium-fuel-rod.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    pictures =  util.icon.picture_with_glow("thorium-fuel-rod", "fuel-rod-glow", nil),
+    subgroup = "sp-fuel-processing",
+    order = "nuclear-b[thorium-fuel-rod]",
+    fuel_category = "nuclear",
+    burnt_result = "sp-used-up-fuel-rod",
+    fuel_value = "90GJ",
+    stack_size = 20
+  },
+  {
+    type = "item",
     name = "sp-uranium-fuel-rod",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/uranium-fuel-rod.png",
     icon_size = 64,
     icon_mipmaps = 4,
+    pictures =  util.icon.picture_with_glow("uranium-fuel-rod", "fuel-rod-glow", nil),
     subgroup = "sp-fuel-processing",
-    order = "nuclear[uranium-fuel-rod]",
+    order = "nuclear-c[uranium-fuel-rod]",
     fuel_category = "nuclear",
     burnt_result = "sp-used-up-fuel-rod",
     fuel_value = "150GJ",
-    stack_size = 50
+    stack_size = 20
+  },
+  {
+    type = "item",
+    name = "sp-mox-fuel-rod",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/mox-fuel-rod.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    pictures =  util.icon.picture_with_glow("mox-fuel-rod", "fuel-rod-glow", nil),
+    subgroup = "sp-fuel-processing",
+    spoil_ticks = 12 * hour,
+    spoil_result = "sp-uranium-fuel-rod",
+    order = "nuclear-d[mox-fuel-rod]",
+    fuel_category = "nuclear",
+    burnt_result = "sp-used-up-fuel-rod",
+    fuel_value = "250GJ",
+    stack_size = 20
   },
   {
     type = "item",
@@ -6189,12 +6244,15 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/plutonium-fuel-rod.png",
     icon_size = 64,
     icon_mipmaps = 4,
+    pictures =  util.icon.picture_with_glow("plutonium-fuel-rod", "fuel-rod-glow", nil),
     subgroup = "sp-fuel-processing",
-    order = "nuclear[plutonium-fuel-rod]",
+    order = "nuclear-e[plutonium-fuel-rod]",
+    spoil_ticks = 2 * hour,
+    spoil_result = "sp-mox-fuel-rod",
     fuel_category = "nuclear",
     burnt_result = "sp-used-up-fuel-rod",
     fuel_value = "400GJ",
-    stack_size = 50
+    stack_size = 20
   },
   {
     type = "item",
