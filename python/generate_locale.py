@@ -10,6 +10,37 @@ NAME_REGEX = r"name = \"([^\"]*)\",  -- #ForRegEx# - ([A-Za-z-]+)"
 UPDATE_NAME_REGEX = r".name = \"([^\"]*)\"  -- #ForRegEx# - ([A-Za-z-]+)"
 ALL_REGEX = [NAME_REGEX, UPDATE_NAME_REGEX]
 
+MANUAL_TRANSLATIONS = {
+    # radioactive isotopes
+    "sp-bismuth-213": "Bismuth-213",
+    "sp-polonium-213": "Polonium-213",
+    "sp-astatine-213": "Astatine-213",
+    "sp-astatine-217": "Astatine-217",
+    "sp-francium-217": "Francium-217",
+    "sp-francium-221": "Francium-221",
+    "sp-radium-221": "Radium-221",
+    "sp-radium-225": "Radium-225",
+    "sp-actinium-221": "Actinium-221",
+    "sp-actinium-225": "Actinium-225",
+    "sp-actinium-232": "Actinium-232",
+    "sp-thorium-225": "Thorium-225",
+    "sp-thorium-229": "Thorium-229",
+    "sp-thorium-232": "Thorium-232",
+    "sp-protactinium-229": "Protactinium-229",
+    "sp-protactinium-232": "Protactinium-232",
+    "sp-protactinium-236": "Protactinium-236",
+    "sp-uranium-229": "Uranium-229",
+    "sp-uranium-233": "Uranium-233",
+    "sp-uranium-236": "Uranium-236",
+    "sp-neptunium-233": "Neptunium-233",
+    "sp-neptunium-236": "Neptunium-236",
+    "sp-plutonium-239": "Plutonium-239",
+    "sp-plutonium-240": "Plutonium-240",
+
+    # other
+    "sp-mox-fuel-rod": "MOX fuel rod",
+}
+
 
 def parse_lua(lua_path: str) -> List[Tuple[str, str]]:
     """
@@ -27,6 +58,9 @@ def generate_locale_value(key: str, object_type: str=None) -> Tuple[str, str]:
     """
     Generates the locale value given a key and returns both as tuple
     """
+    if key in MANUAL_TRANSLATIONS:
+        return (key, MANUAL_TRANSLATIONS[key])
+
     if key.split("-")[-1].isnumeric():
         key = "-".join(key.split("-")[:-1])
 
