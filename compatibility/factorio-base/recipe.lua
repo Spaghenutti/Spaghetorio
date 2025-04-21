@@ -669,7 +669,8 @@ util.recipe.change_recipe_ingredients("fluid-wagon",
 util.recipe.change_recipe_ingredients("artillery-wagon",
   {
     {type = "item", name = "sp-spring", amount = 20},
-    {type = "item", name = "sp-stainless-steel", amount = 40},
+    {type = "item", name = "sp-stainless-steel", amount = 20},
+    {type = "item", name = "sp-maraging-steel", amount = 40},
     {type = "item", name = "sp-bolts", amount = 100},
     {type = "item", name = "sp-train-boige", amount = 4},
     {type = "item", name = "artillery-turret", amount = 1},
@@ -1369,19 +1370,17 @@ util.recipe.change_recipe_ingredients("rocket-silo",
 
 util.recipe.change_recipe_ingredients("rocket-part",
   {
-    {type = "item", name = "sp-rocket-control-unit", amount = 80},
+    {type = "item", name = "sp-rocket-control-unit", amount = 12},
     {type = "item", name = "sp-heat-resistant-tile", amount = 100},
-    {type = "item", name = "sp-titanium-niobium", amount = 120},
-    {type = "item", name = "sp-inconel", amount = 200},
-    {type = "item", name = "sp-duralumin", amount = 500},
-    {type = "item", name = "low-density-structure", amount = 400},
+    {type = "item", name = "sp-titanium-niobium", amount = 40},
+    {type = "item", name = "sp-duralumin", amount = 60},
+    {type = "item", name = "low-density-structure", amount = 120},
     {type = "item", name = "rocket-fuel", amount = 500},
     {type = "item", name = "sp-cryostat", amount = 10},
-    {type = "item", name = "sp-high-pressure-tank", amount = 30},
-    {type = "item", name = "sp-rocket-engine", amount = 30},
-    {type = "item", name = "sp-solid-rocket-motor", amount = 24},
-    {type = "item", name = "sp-insulated-wire", amount = 160},
-    {type = "item", name = "sp-gyroscope", amount = 1}
+    {type = "item", name = "sp-high-pressure-tank", amount = 16},
+    {type = "item", name = "sp-rocket-engine", amount = 4},
+    {type = "item", name = "sp-solid-rocket-motor", amount = 2},
+    {type = "item", name = "sp-gyroscope", amount = 3}
   },
   80)
 
@@ -1757,6 +1756,7 @@ data.raw.recipe["artillery-turret"].category = "crafting-with-fluid"
 util.recipe.change_recipe_ingredients("artillery-turret",
   {
     {type = "item", name = "sp-maraging-steel", amount = 80},
+    {type = "item", name = "sp-tungsten-steel", amount = 30},
     {type = "item", name = "sp-aluminum-brass", amount = 20},
     {type = "item", name = "concrete", amount = 60},
     {type = "item", name = "sp-bolts", amount = 200},

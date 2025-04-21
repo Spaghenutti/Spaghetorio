@@ -153,7 +153,7 @@ TODO for 0.3.12
     + Kovarex enrichment shall be done in breeder reactor
     + Remove nuclear fuel reprocessing
     + Fix uranium recipe icons using the arrow from nuclear fuel processing
-    - Add recipes and technologies for radioactive decay data cards
+    + Add recipes and technologies for radioactive decay data cards
 
 TODO for 0.3.13
   - Update cryogenic science 2 branch of tech tree

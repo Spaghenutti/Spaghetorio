@@ -2247,32 +2247,46 @@ data.raw.technology["stronger-explosives-6"].unit.ingredients = {
 --   {"utility-science-pack", 1}
 -- }
 
-data.raw.technology["artillery-shell-range-1"].prerequisites = {
-  "sp-logistic-science-pack-3",
-  "sp-material-science-pack-3",
-  "sp-military-science-pack-3",
+data.raw.technology["artillery-shell-damage-1"].prerequisites = {
   "artillery"
 }
-data.raw.technology["artillery-shell-range-1"].unit.ingredients = {
-  {"sp-automation-science-pack-3", 1},
-  {"sp-logistic-science-pack-3", 1},
+data.raw.technology["artillery-shell-damage-1"].unit.ingredients = {
+  {"sp-automation-science-pack-2", 1},
+  {"sp-logistic-science-pack-2", 1},
   {"sp-chemical-science-pack-2", 1},
-  {"sp-electronic-science-pack-2", 1},
-  {"sp-geological-science-pack-2", 1},
-  {"sp-material-science-pack-3", 1},
-  {"sp-computer-science-pack-2", 1},
-  {"sp-military-science-pack-3", 1},
+  {"sp-material-science-pack-2", 1},
   {"production-science-pack", 1},
-  {"sp-nuclear-science-pack-2", 1},
-  {"space-science-pack", 1},
-  {"utility-science-pack", 1},
+  {"sp-geological-science-pack-2", 1},
+  {"sp-electronic-science-pack-2", 1},
+  {"sp-metallurgic-science-pack-2", 1},
+  {"sp-electromagnetic-science-pack-2", 1},
+  {"sp-military-science-pack-2", 1},
+  {"sp-computer-science-pack-2", 1},
+  {"utility-science-pack", 1}
+}
+
+data.raw.technology["artillery-shell-range-1"].prerequisites = {
+  "artillery",
+  "sp-production-science-pack-3"
+}
+data.raw.technology["artillery-shell-range-1"].unit.ingredients = {
+  {"sp-automation-science-pack-2", 1},
+  {"sp-logistic-science-pack-2", 1},
+  {"sp-chemical-science-pack-2", 1},
+  {"sp-material-science-pack-2", 1},
+  {"production-science-pack", 1},
+  {"sp-geological-science-pack-2", 1},
+  {"sp-electronic-science-pack-2", 1},
+  {"sp-metallurgic-science-pack-2", 1},
+  {"sp-electromagnetic-science-pack-2", 1},
+  {"sp-military-science-pack-2", 1},
+  {"sp-computer-science-pack-2", 1},
+  {"utility-science-pack", 1}
 }
 
 data.raw.technology["artillery-shell-speed-1"].prerequisites = {
-  "sp-logistic-science-pack-3",
-  "sp-material-science-pack-3",
-  "sp-military-science-pack-3",
-  "artillery"
+  "artillery",
+  "sp-production-science-pack-3"
 }
 data.raw.technology["artillery-shell-speed-1"].unit.ingredients = {
   {"sp-automation-science-pack-3", 1},
