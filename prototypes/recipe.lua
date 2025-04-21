@@ -6387,7 +6387,7 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-diamond", probability = 0.05, amount = 1},
-      {type = "item", name = "sp-alumina", probability = 0.95, amount = 1}
+      {type = "item", name = "carbon", probability = 0.95, amount = 1}
     }
   },
   {
