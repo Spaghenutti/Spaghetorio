@@ -10543,6 +10543,97 @@ data:extend({
         type = "unlock-recipe",
         recipe = "sp-nuclear-science-pack-3"
       },
+      -- alpha decay
+      {
+        type = "unlock-recipe",
+        recipe = "sp-alpha-decay-research-data-from-polonium-213"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-alpha-decay-research-data-from-astatine-213"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-alpha-decay-research-data-from-astatine-217"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-alpha-decay-research-data-from-francium-217"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-alpha-decay-research-data-from-francium-221"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-alpha-decay-research-data-from-actinium-221"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-alpha-decay-research-data-from-actinium-225"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-alpha-decay-research-data-from-thorium-225"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-alpha-decay-research-data-from-thorium-229"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-alpha-decay-research-data-from-uranium-229"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-alpha-decay-research-data-from-uranium-233"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-alpha-decay-research-data-from-uranium-236"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-alpha-decay-research-data-from-neptunium-233"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-alpha-decay-research-data-from-plutonium-239"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-alpha-decay-research-data-from-plutonium-240"
+      },
+      -- beta plus decay
+      {
+        type = "unlock-recipe",
+        recipe = "sp-beta-plus-decay-research-data-from-protactinium-232"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-beta-plus-decay-research-data-from-neptunium-236"
+      },
+      -- beta minus decay
+      {
+        type = "unlock-recipe",
+        recipe = "sp-beta-minus-decay-research-data-from-bismuth-213"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-beta-minus-decay-research-data-from-radium-221"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-beta-minus-decay-research-data-from-actinium-232"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-beta-minus-decay-research-data-from-protactinium-229"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-beta-minus-decay-research-data-from-protactinium-236"
+      },
     },
     prerequisites = {
       "sp-computer-science-pack-3",

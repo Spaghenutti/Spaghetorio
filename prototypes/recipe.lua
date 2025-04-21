@@ -9908,6 +9908,153 @@ data:extend({
   -- MARK: alpha decay
   {
     type = "recipe",
+    name = "sp-alpha-decay-research-data-from-polonium-213",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/alpha-decay-research-data.png", 64,
+                                         "__Spaghetorio__/graphics/icons/polonium-213.png", 64),
+    category = "sp-radioactive-decay-research",
+    subgroup = "sp-research",
+    enabled = false,
+    allow_productivity = false,
+    energy_required = 2 * 3 / 4,
+    ingredients =
+    {
+      {type = "item", name = "sp-polonium-213", amount = 1},
+      {type = "item", name = "sp-empty-research-data-card", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-leadstone", amount = 1},
+      {type = "item", name = "sp-alpha-decay-research-data", amount = 1}
+    },
+    order = "a-nuclear-c-[polonium-213]",
+  },
+  {
+    type = "recipe",
+    name = "sp-alpha-decay-research-data-from-astatine-213",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/alpha-decay-research-data.png", 64,
+                                         "__Spaghetorio__/graphics/icons/astatine-213.png", 64),
+    category = "sp-radioactive-decay-research",
+    subgroup = "sp-research",
+    enabled = false,
+    allow_productivity = false,
+    energy_required = 1 * 3 / 4,
+    ingredients =
+    {
+      {type = "item", name = "sp-astatine-213", amount = 1},
+      {type = "item", name = "sp-empty-research-data-card", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-bismuth", amount = 1},
+      {type = "item", name = "sp-alpha-decay-research-data", amount = 1}
+    },
+    order = "a-nuclear-c-[astatine-213]",
+  },
+  {
+    type = "recipe",
+    name = "sp-alpha-decay-research-data-from-astatine-217",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/alpha-decay-research-data.png", 64,
+                                         "__Spaghetorio__/graphics/icons/astatine-217.png", 64),
+    category = "sp-radioactive-decay-research",
+    subgroup = "sp-research",
+    enabled = false,
+    allow_productivity = false,
+    energy_required = 6 * 3 / 4,
+    ingredients =
+    {
+      {type = "item", name = "sp-astatine-217", amount = 1},
+      {type = "item", name = "sp-empty-research-data-card", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-bismuth-213", amount = 1},
+      {type = "item", name = "sp-alpha-decay-research-data", amount = 1}
+    },
+    order = "a-nuclear-c-[astatine-217]",
+  },
+  {
+    type = "recipe",
+    name = "sp-alpha-decay-research-data-from-francium-217",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/alpha-decay-research-data.png", 64,
+                                         "__Spaghetorio__/graphics/icons/francium-217.png", 64),
+    category = "sp-radioactive-decay-research",
+    subgroup = "sp-research",
+    enabled = false,
+    allow_productivity = false,
+    energy_required = 1.5 * 3 / 4,
+    ingredients =
+    {
+      {type = "item", name = "sp-francium-217", amount = 1},
+      {type = "item", name = "sp-empty-research-data-card", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-astatine-213", amount = 1},
+      {type = "item", name = "sp-alpha-decay-research-data", amount = 1}
+    },
+    order = "a-nuclear-d-[francium-217]",
+  },
+  {
+    type = "recipe",
+    name = "sp-alpha-decay-research-data-from-francium-221",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/alpha-decay-research-data.png", 64,
+                                         "__Spaghetorio__/graphics/icons/francium-221.png", 64),
+    category = "sp-radioactive-decay-research",
+    subgroup = "sp-research",
+    enabled = false,
+    allow_productivity = false,
+    energy_required = 30 * 3 / 4,
+    ingredients =
+    {
+      {type = "item", name = "sp-francium-221", amount = 1},
+      {type = "item", name = "sp-empty-research-data-card", amount = 2},
+    },
+    results = {
+      {type = "item", name = "sp-astatine-217", amount = 1},
+      {type = "item", name = "sp-alpha-decay-research-data", amount = 2}
+    },
+    order = "a-nuclear-d-[francium-221]",
+  },
+  {
+    type = "recipe",
+    name = "sp-alpha-decay-research-data-from-actinium-221",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/alpha-decay-research-data.png", 64,
+                                         "__Spaghetorio__/graphics/icons/actinium-221.png", 64),
+    category = "sp-radioactive-decay-research",
+    subgroup = "sp-research",
+    enabled = false,
+    allow_productivity = false,
+    energy_required = 2 * 3 / 4,
+    ingredients =
+    {
+      {type = "item", name = "sp-actinium-221", amount = 1},
+      {type = "item", name = "sp-empty-research-data-card", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-francium-217", amount = 1},
+      {type = "item", name = "sp-alpha-decay-research-data", amount = 1}
+    },
+    order = "a-nuclear-f-[actinium-221]",
+  },
+  {
+    type = "recipe",
+    name = "sp-alpha-decay-research-data-from-actinium-225",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/alpha-decay-research-data.png", 64,
+                                         "__Spaghetorio__/graphics/icons/actinium-225.png", 64),
+    category = "sp-radioactive-decay-research",
+    subgroup = "sp-research",
+    enabled = false,
+    allow_productivity = false,
+    energy_required = 24 * 3 / 4,
+    ingredients =
+    {
+      {type = "item", name = "sp-actinium-225", amount = 1},
+      {type = "item", name = "sp-empty-research-data-card", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-francium-221", amount = 1},
+      {type = "item", name = "sp-alpha-decay-research-data", amount = 1}
+    },
+    order = "a-nuclear-f-[actinium-225]",
+  },
+  {
+    type = "recipe",
     name = "sp-alpha-decay-research-data-from-thorium-225",  -- #ForRegEx# - recipe
     icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/alpha-decay-research-data.png", 64,
                                          "__Spaghetorio__/graphics/icons/thorium-225.png", 64),
@@ -10118,6 +10265,69 @@ data:extend({
     order = "a-nuclear-j-[neptunium-236]",
   },
   -- MARK: beta- decay
+  {
+    type = "recipe",
+    name = "sp-beta-minus-decay-research-data-from-bismuth-213",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/beta-minus-decay-research-data.png", 64,
+                                         "__Spaghetorio__/graphics/icons/bismuth-213.png", 64),
+    category = "sp-radioactive-decay-research",
+    subgroup = "sp-research",
+    enabled = false,
+    allow_productivity = false,
+    energy_required = 20 * 3 / 4,
+    ingredients =
+    {
+      {type = "item", name = "sp-bismuth-213", amount = 1},
+      {type = "item", name = "sp-empty-research-data-card", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-polonium-213", amount = 1},
+      {type = "item", name = "sp-beta-minus-decay-research-data", amount = 1}
+    },
+    order = "a-nuclear-a-[bismuth-213]",
+  },
+  {
+    type = "recipe",
+    name = "sp-beta-minus-decay-research-data-from-radium-221",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/beta-minus-decay-research-data.png", 64,
+                                         "__Spaghetorio__/graphics/icons/radium-221.png", 64),
+    category = "sp-radioactive-decay-research",
+    subgroup = "sp-research",
+    enabled = false,
+    allow_productivity = false,
+    energy_required = 12 * 3 / 4,
+    ingredients =
+    {
+      {type = "item", name = "sp-radium-221", amount = 1},
+      {type = "item", name = "sp-empty-research-data-card", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-actinium-221", amount = 1},
+      {type = "item", name = "sp-beta-minus-decay-research-data", amount = 1}
+    },
+    order = "a-nuclear-e-[radium-221]",
+  },
+  {
+    type = "recipe",
+    name = "sp-beta-minus-decay-research-data-from-actinium-232",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/beta-minus-decay-research-data.png", 64,
+                                         "__Spaghetorio__/graphics/icons/actinium-232.png", 64),
+    category = "sp-radioactive-decay-research",
+    subgroup = "sp-research",
+    enabled = false,
+    allow_productivity = false,
+    energy_required = 320 * 3 / 4,
+    ingredients =
+    {
+      {type = "item", name = "sp-actinium-232", amount = 1},
+      {type = "item", name = "sp-empty-research-data-card", amount = 3},
+    },
+    results = {
+      {type = "item", name = "sp-thorium-232", amount = 1},
+      {type = "item", name = "sp-beta-minus-decay-research-data", amount = 3}
+    },
+    order = "a-nuclear-f-[actinium-232]",
+  },
   {
     type = "recipe",
     name = "sp-beta-minus-decay-research-data-from-protactinium-229",  -- #ForRegEx# - recipe
@@ -10389,16 +10599,17 @@ data:extend({
     category = "sp-kr-research-data",
     enabled = false,
     allow_productivity = true,
-    energy_required = 48,
+    energy_required = 96,
     ingredients =
     {
-      {type = "item", name = "sp-nuclear-science-pack-2", amount = 20},
+      {type = "item", name = "sp-nuclear-science-pack-2", amount = 40},
       {type = "item", name = "sp-reactor-core", amount = 1},
-      {type = "item", name = "sp-plutonium-fuel-rod", amount = 10},
-      {type = "item", name = "sp-uranium-fuel-rod", amount = 10}
+      {type = "item", name = "sp-alpha-decay-research-data", amount = 60},
+      {type = "item", name = "sp-beta-plus-decay-research-data", amount = 10},
+      {type = "item", name = "sp-beta-minus-decay-research-data", amount = 20}
     },
     results = {
-      {type = "item", name = "sp-nuclear-science-pack-3", amount = 10}
+      {type = "item", name = "sp-nuclear-science-pack-3", amount = 20}
     }
   },
   {
