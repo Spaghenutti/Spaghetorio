@@ -148,22 +148,6 @@ def get_sections(object_type: str) -> List[str]:
             raise KeyError(f"Lua type {object_type} not matching known locale section.")
 
 
-def fix_unicode_encoding(locale_path: str) -> None:
-    """
-    Because a cunt has written the ConfigParser i have to replace greek letters manually
-    """
-    with open(locale_path, "r", encoding="utf-8") as file:
-        filedata = file.read()
-    
-    filedata = filedata.replace(ALPHA, "α")
-    filedata = filedata.replace(ALPHA_2, "α")
-    filedata = filedata.replace(BETA, "β")
-    filedata = filedata.replace(BETA_2, "β")
-
-    with open(locale_path, "w", encoding="utf-8") as file:
-        file.write(filedata)
-
-
 def extend_locale(matches: List[Tuple[str, str]],
                   locale_path: str = constants.LOCALE_ENGLISH_PATH) -> None:
     """
@@ -172,7 +156,7 @@ def extend_locale(matches: List[Tuple[str, str]],
     # Read the configuration file
     config = configparser.ConfigParser()
     config.optionxform = str
-    config.read(locale_path)
+    config.read(locale_path, encoding="utf-8-sig")
 
     # Generate new key values from lua file
     for match in matches:
@@ -205,7 +189,7 @@ def extend_locale(matches: List[Tuple[str, str]],
     with open(locale_path, "w", encoding="utf-8") as configfile:
         sorted_config.write(configfile, space_around_delimiters=False)
 
-    fix_unicode_encoding(locale_path)
+    # fix_unicode_encoding(locale_path)
 
 def update_locale() -> None:
     """
