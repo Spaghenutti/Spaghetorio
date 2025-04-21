@@ -2694,6 +2694,10 @@ data:extend({
         type = "unlock-recipe",
         recipe = "sp-quantum-data-plane"
       },
+      {
+        type = "unlock-recipe",
+        recipe = "quantum-processor"
+      },
     },
     prerequisites = {
       "sp-chemical-science-pack-3",
@@ -3257,6 +3261,7 @@ data:extend({
         {"sp-electromagnetic-science-pack-2", 1},
         {"production-science-pack", 1},
         {"utility-science-pack", 1},
+        {"cryogenic-science-pack", 1},
         {"sp-nuclear-science-pack-2", 1}
       },
       time = 60
@@ -3300,6 +3305,7 @@ data:extend({
         {"sp-electromagnetic-science-pack-2", 1},
         {"production-science-pack", 1},
         {"utility-science-pack", 1},
+        {"cryogenic-science-pack", 1},
         {"sp-nuclear-science-pack-2", 1}
       },
       time = 60
@@ -3333,11 +3339,14 @@ data:extend({
         {"sp-automation-science-pack-3", 1},
         {"sp-logistic-science-pack-2", 1},
         {"sp-material-science-pack-2", 1},
-        {"sp-electronic-science-pack-2", 1},
         {"sp-geological-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
         {"sp-chemical-science-pack-2", 1},
+        {"sp-metallurgic-science-pack-2", 1},
+        {"sp-electromagnetic-science-pack-2", 1},
         {"sp-production-science-pack-3", 1},
         {"utility-science-pack", 1},
+        {"cryogenic-science-pack", 1},
         {"sp-nuclear-science-pack-2", 1}
       },
       time = 60
@@ -3444,13 +3453,15 @@ data:extend({
         {"sp-automation-science-pack-3", 1},
         {"sp-logistic-science-pack-2", 1},
         {"sp-material-science-pack-2", 1},
-        {"sp-electronic-science-pack-2", 1},
         {"sp-geological-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
         {"sp-chemical-science-pack-2", 1},
+        {"sp-metallurgic-science-pack-2", 1},
+        {"sp-electromagnetic-science-pack-2", 1},
         {"sp-production-science-pack-3", 1},
         {"utility-science-pack", 1},
-        {"sp-nuclear-science-pack-2", 1},
-        {"agricultural-science-pack", 1}
+        {"cryogenic-science-pack", 1},
+        {"sp-nuclear-science-pack-2", 1}
       },
       time = 60
     },
@@ -4416,7 +4427,9 @@ data:extend({
         recipe = "sp-nitenol"
       },
     },
-    prerequisites = {"utility-science-pack"},
+    prerequisites = {
+      "sp-metallurgic-science-pack-3"
+    },
     unit =
     {
       count = 600,
@@ -4818,12 +4831,16 @@ data:extend({
       ingredients = {
         {"sp-automation-science-pack-2", 1},
         {"sp-logistic-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
         {"sp-chemical-science-pack-2", 1},
-        {"sp-electronic-science-pack-1", 1},
-        {"sp-material-science-pack-1", 1},
-        {"sp-geological-science-pack-1", 1},
-        {"metallurgic-science-pack", 1},
-        {"electromagnetic-science-pack", 1}
+        {"sp-metallurgic-science-pack-2", 1},
+        {"sp-electromagnetic-science-pack-2", 1},
+        {"production-science-pack", 1},
+        {"utility-science-pack", 1},
+        {"cryogenic-science-pack", 1},
+        {"agricultural-science-pack", 1}
       },
       time = 30
     },
@@ -8429,11 +8446,19 @@ data:extend({
         type = "unlock-recipe",
         recipe = "sp-breeder-reactor",
       },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-heavy-water",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-deuterium",
+      },
     },
     prerequisites = {
       "sp-nuclear-science-pack-2",
       "sp-nuclear-waste-processing",
-      "cryogenic-plant"
+      "cryogenic-science-pack"
     },
     unit = {
       count = 1000,
@@ -8448,6 +8473,7 @@ data:extend({
         {"sp-electromagnetic-science-pack-2", 1},
         {"production-science-pack", 1},
         {"utility-science-pack", 1},
+        {"cryogenic-science-pack", 1},
         {"sp-nuclear-science-pack-2", 1}
       },
       time = 45,
@@ -9250,10 +9276,6 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "sp-kr-particle-accelerator",
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-heavy-water",
       },
       -- {
       --   type = "unlock-recipe",

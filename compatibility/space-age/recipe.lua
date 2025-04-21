@@ -165,6 +165,16 @@ util.recipe.change_recipe_ingredients("selector-combinator",
   },
   5)
 
+util.recipe.change_recipe_ingredients("foundation",
+  {
+    {type = "item", name = "sp-tungsten-steel", amount = 1},
+    {type = "item", name = "lithium-plate", amount = 1},
+    {type = "item", name = "carbon-fiber", amount = 2},
+    {type = "item", name = "sp-cement", amount = 5},
+    {type = "fluid", name = "fluoroketone-cold", amount = 16},
+  },
+  6)
+
 util.recipe.change_recipe_ingredients("quality-module",
   {
     {type = "item", name = "sp-vacuum-tube", amount = 5},

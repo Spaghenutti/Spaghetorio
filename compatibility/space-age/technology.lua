@@ -6,6 +6,8 @@ remove_prototypes.remove_one_prototype("technology", "jellynut")
 remove_prototypes.remove_one_prototype("technology", "carbon-fiber")
 remove_prototypes.remove_one_prototype("technology", "tree-seeding")
 
+remove_prototypes.remove_one_prototype("technology", "quantum-processor")
+
 -- Update technologies
 table.insert(data.raw.technology["lithium-processing"].effects, {type = "unlock-recipe", recipe = "sp-lithium-oxide"})
 table.insert(data.raw.technology["lithium-processing"].effects, {type = "unlock-recipe", recipe = "sp-lithium-chloride"})
@@ -428,6 +430,8 @@ data.raw.technology["bacteria-cultivation"].unit = {
   time = 30
 }
 
+table.insert(data.raw.technology["fusion-reactor"].prerequisites, "sp-nuclear-science-pack-3")
+
 table.insert(data.raw.technology["tesla-weapons"].prerequisites, "sp-superconducting-materials")
 data.raw.technology["tesla-weapons"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},
@@ -498,6 +502,38 @@ data.raw.technology["epic-quality"].unit.ingredients = {
   {"agricultural-science-pack", 1}
 }
 
+data.raw.technology["legendary-quality"].unit.ingredients = {
+  {"sp-automation-science-pack-2", 1},
+  {"sp-logistic-science-pack-2", 1},
+  {"sp-material-science-pack-2", 1},
+  {"sp-geological-science-pack-2", 1},
+  {"sp-electronic-science-pack-2", 1},
+  {"sp-chemical-science-pack-2", 1},
+  {"sp-metallurgic-science-pack-2", 1},
+  {"sp-electromagnetic-science-pack-2", 1},
+  {"production-science-pack", 1},
+  {"utility-science-pack", 1},
+  {"cryogenic-science-pack", 1},
+  {"agricultural-science-pack", 1}
+}
+
+data.raw.technology["foundation"].unit.count_formula = nil  -- I will pretend that this is a bug...
+data.raw.technology["foundation"].unit.count = 200
+data.raw.technology["foundation"].unit.ingredients = {
+  {"sp-automation-science-pack-2", 1},
+  {"sp-logistic-science-pack-2", 1},
+  {"sp-material-science-pack-2", 1},
+  {"sp-geological-science-pack-2", 1},
+  {"sp-electronic-science-pack-2", 1},
+  {"sp-chemical-science-pack-2", 1},
+  {"sp-metallurgic-science-pack-2", 1},
+  {"sp-electromagnetic-science-pack-2", 1},
+  {"production-science-pack", 1},
+  {"utility-science-pack", 1},
+  {"cryogenic-science-pack", 1},
+  {"agricultural-science-pack", 1}
+}
+
 table.insert(data.raw.technology["rocket-turret"].prerequisites, "processing-unit")
 data.raw.technology["rocket-turret"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},
@@ -512,6 +548,8 @@ data.raw.technology["rocket-turret"].unit.ingredients = {
   {"production-science-pack", 1},
   {"utility-science-pack", 1}
 }
+
+table.insert(data.raw.technology["railgun"].prerequisites, "sp-military-science-pack-3")
 
 --------------------------------------------------------------------------------
 -- MARK: Infinite technologies
@@ -619,7 +657,6 @@ data.raw.technology["scrap-recycling-productivity"].unit.ingredients = {
   {"utility-science-pack", 1},
 }
 
-
 data.raw.technology["processing-unit-productivity"].prerequisites = {
   "sp-computer-science-pack-3",
 }
@@ -638,6 +675,26 @@ data.raw.technology["processing-unit-productivity"].unit.ingredients = {
   {"sp-computer-science-pack-3", 1},
   {"space-science-pack", 1},
   {"utility-science-pack", 1},
+}
+
+data.raw.technology["processing-unit-productivity"].prerequisites = {
+  "space-science-pack",
+}
+data.raw.technology["rocket-part-productivity"].unit.ingredients = {
+  {"sp-automation-science-pack-2", 1},
+  {"sp-logistic-science-pack-2", 1},
+  {"sp-material-science-pack-2", 1},
+  {"sp-geological-science-pack-2", 1},
+  {"sp-electronic-science-pack-2", 1},
+  {"sp-chemical-science-pack-2", 1},
+  {"sp-metallurgic-science-pack-2", 1},
+  {"sp-electromagnetic-science-pack-2", 1},
+  {"sp-computer-science-pack-2", 1},
+  {"production-science-pack", 1},
+  {"utility-science-pack", 1},
+  {"cryogenic-science-pack", 1},
+  {"agricultural-science-pack", 1},
+  {"space-science-pack", 1}
 }
 
 data.raw.technology["transport-belt-capacity-1"].unit.ingredients = {

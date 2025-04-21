@@ -4770,7 +4770,7 @@ data:extend({
     type = "recipe",
     name = "sp-water-freezing",  -- #ForRegEx# - recipe
     category = "sp-freezing",
-    subgroup = "fluid-recipes",
+    subgroup = "fluid",
     enabled = false,
     allow_productivity = false,
     allow_decomposition = false,
@@ -4781,6 +4781,31 @@ data:extend({
     },
     results = {
       {type = "item", name = "ice", amount = 1}
+    }
+  },
+  ------------------------------------------------------------------------------
+  -- MARK: cryogenics
+  ------------------------------------------------------------------------------
+  {
+    type = "recipe",
+    name = "sp-heavy-water",  -- #ForRegEx# - recipe
+    category = "cryogenics",
+    energy_required = 120,
+    enabled = false,
+    allow_productivity = true,
+    always_show_made_in = true,
+    always_show_products = true,
+    ingredients = {
+      {type = "fluid", name = "water", amount = 500},
+    },
+    results = {
+      {type = "fluid", name = "sp-heavy-water", amount = 20},
+    },
+    crafting_machine_tint = {
+      primary = {r = 0.405, g = 0.402, b = 1.000, a = 1.000},
+      secondary = {r = 0.391, g = 0.720, b = 1.000, a = 0.900},
+      tertiary = {r = 1.000, g = 1.000, b = 1.000, a = 0.500},
+      quaternary = {r = 1.000, g = 1.000, b = 1.000, a = 0.300},
     }
   },
   ------------------------------------------------------------------------------
@@ -7635,29 +7660,6 @@ data:extend({
       primary = {r = 0.75, g = 0.10, b = 0.10, a = 0.10},
     },
     order = "y02[water-separation]",
-  },
-  {
-    type = "recipe",
-    name = "sp-heavy-water",  -- #ForRegEx# - recipe
-    category = "sp-kr-electrolysis",
-    energy_required = 120,
-    enabled = false,
-    allow_productivity = true,
-    always_show_made_in = true,
-    always_show_products = true,
-    allow_productivity = true,
-    ingredients = {
-      {type = "fluid", name = "water", amount = 500},
-    },
-    results = {
-      {type = "fluid", name = "sp-heavy-water", amount = 20 },
-    },
-    crafting_machine_tint = {
-      primary = {r = 0.405, g = 0.402, b = 1.000, a = 1.000},
-      secondary = {r = 0.391, g = 0.720, b = 1.000, a = 0.900},
-      tertiary = {r = 1.000, g = 1.000, b = 1.000, a = 0.500},
-      quaternary = {r = 1.000, g = 1.000, b = 1.000, a = 0.300},
-    }
   },
   {
     type = "recipe",
