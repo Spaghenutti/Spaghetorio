@@ -144,7 +144,7 @@ TODO for 0.3.11
 
 TODO for 0.3.12
   + Fix sulfur dioxide recipe
-  - Update nuclear science pack recipe chain
+  + Update nuclear science pack recipe chain
     + Plutonium 240 decay chain (for reactor)
     + Plutonium 239 decay chain (for weapons)
     + MOX = 7% PO2 + 93% UO2
@@ -156,7 +156,7 @@ TODO for 0.3.12
     + Add recipes and technologies for radioactive decay data cards
 
 TODO for 0.3.13
-  - Update cryogenic science 2 branch of tech tree
+  + Update cryogenic science 2 branch of tech tree
 
 TODO for 0.3.14
   - Add recipe for empty data card
@@ -168,12 +168,46 @@ TODO for 0.3.14
       - Add laser diode
       - Add hard drive
       - Add phase change memory
-  - Update utility science 2 branch of tech tree
+  + Update utility science 2 branch of tech tree
   + Add biological / agricultural item group
 
 TODO for 0.3.15
   - Change lightning collectors to power poles
-  - Fix / add casting recipes
+  - DO THIS FIRST!!! -- Fix casting recipes
+  - Add casting recipes
+    - Aluminum
+      - melt from alumina
+      - casting into frames
+      - casting into sheets
+      - casting into cable
+    - tin
+      - melt from tinstone
+      - casting into tin ingot
+    - lead
+      - melt from tinstone
+      - melt from leadstone
+      - casting into lead ingot
+    - zinc
+      - melt from zinc oxide with sulfuric acid with bad ratio
+      - casting into zinc plate
+    - magnesium
+      - melt from magnesium ore with sulfuric acid with bad ratio
+      - casting into magnesium slab
+    - nickel
+      - melt from nickel ore (also add as output molten iron)
+      - casting into nickel ingot
+    - indium
+      - melt from lava
+      - melt from indium sulfate
+      - casting into nickel ingot
+    - gallium
+      - melt from lava
+      - melt from gallium chloride
+      - casting into nickel ingot
+    - potassium
+      - melt from lava
+  - Create some alloys with foundry?
+    - bronze
   - Fix productivity technologies (see steel plate productivity)
 
 TODO for 0.3.16

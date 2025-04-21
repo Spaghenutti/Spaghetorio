@@ -849,14 +849,14 @@ data.raw.technology["personal-roboport-mk2-equipment"].unit.ingredients = {
   {"utility-science-pack", 1}
 }
 
--- table.insert(data.raw.technology["rocket-silo"].effects, {type = "unlock-recipe", recipe = "satellite"})
 table.insert(data.raw.technology["rocket-silo"].effects, {type = "unlock-recipe", recipe = "sp-gyroscope"})
 data.raw.technology["rocket-silo"].prerequisites = {
   "sp-rocket-control-unit",
   "rocket-fuel",
   "sp-advanced-gearbox",
   "sp-rocket-engine",
-  "sp-spark-plug"
+  "sp-spark-plug",
+  "low-density-structure"
 }
 data.raw.technology["rocket-silo"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},
