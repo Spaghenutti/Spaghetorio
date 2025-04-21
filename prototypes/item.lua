@@ -6685,7 +6685,7 @@ data:extend({
   },
   ------------------------------------------------------------------------------
   -- MARK: Group science --
-  -- MARK: science-item
+  -- MARK: blank-science-item
   ------------------------------------------------------------------------------
   {
     type = "item",
@@ -6693,7 +6693,7 @@ data:extend({
     icon =  "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/blank-tech-card/blank-tech-card-1.png",
     icon_size = 64,
     icon_mipmaps = 4,
-    subgroup = "sp-science-item",
+    subgroup = "sp-blank-science-item",
     order = "a00[blank-tech-card]",
     stack_size = 200,
   },
@@ -6703,10 +6703,13 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/empty-research-data-card.png",
     icon_size = 64,
     icon_mipmaps = 4,
-    subgroup = "sp-science-item",
+    subgroup = "sp-blank-science-item",
     order = "a01[empty-research-data-card]",
     stack_size = 200,
   },
+  ------------------------------------------------------------------------------
+  -- MARK: science-item
+  ------------------------------------------------------------------------------
   {
     type = "item",
     name = "sp-biters-research-data",  -- #ForRegEx# - item

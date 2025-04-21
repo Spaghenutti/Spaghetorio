@@ -284,15 +284,33 @@ data:extend({
   },
   {
     type = "item-subgroup",
-    name = "sp-science-item",  -- #ForRegEx# - item-subgroup
+    name = "sp-blank-science-item",  -- #ForRegEx# - item-subgroup
     group = "sp-science-products",
-    order = "b"
+    order = "b-0"
   },
   {
     type = "item-subgroup",
-    name = "sp-research",  -- #ForRegEx# - item-subgroup
+    name = "sp-science-item",  -- #ForRegEx# - item-subgroup
     group = "sp-science-products",
-    order = "b1"
+    order = "b-1"
+  },
+  {
+    type = "item-subgroup",
+    name = "sp-alpha-decay-research",  -- #ForRegEx# - item-subgroup
+    group = "sp-science-products",
+    order = "b-nuclear1"
+  },
+  {
+    type = "item-subgroup",
+    name = "sp-beta-plus-decay-research",  -- #ForRegEx# - item-subgroup
+    group = "sp-science-products",
+    order = "b-nuclear2"
+  },
+  {
+    type = "item-subgroup",
+    name = "sp-beta-minus-decay-research",  -- #ForRegEx# - item-subgroup
+    group = "sp-science-products",
+    order = "b-nuclear3"
   },
   {
     type = "item-subgroup",
