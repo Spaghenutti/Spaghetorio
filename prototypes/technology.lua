@@ -3116,7 +3116,7 @@ data:extend({
     {
       {
         type = "unlock-recipe",
-        recipe = "sp-nozzle"
+        recipe = "sp-rocket-nozzle"
       },
       {
         type = "unlock-recipe",
@@ -3134,7 +3134,8 @@ data:extend({
     prerequisites = {
       "sp-turbine-parts",
       "sp-spark-plug",
-      "sp-antimony-processing"
+      "sp-antimony-processing",
+      "sp-ceramic-matrix-composites"
     },
     unit =
     {

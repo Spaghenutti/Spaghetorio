@@ -8240,6 +8240,8 @@ data:extend({
     energy_required = 2,
     ingredients = {
       {type = "item", name = "sp-magnet", amount = 2},
+      {type = "item", name = "sp-titanium-frame", amount = 2},
+      {type = "item", name = "sp-stainless-steel-gear-wheel", amount = 4},
       {type = "item", name = "sp-silica", amount = 1},
       {type = "item", name = "copper-cable", amount = 1}
     },
@@ -9248,40 +9250,6 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-nozzle",  -- #ForRegEx# - recipe
-    category = "advanced-crafting",
-    enabled = false,
-    allow_productivity = true,
-    energy_required = 12,
-    ingredients = {
-      {type = "item", name = "copper-plate", amount = 2},
-      {type = "item", name = "sp-titanium-aluminum-tin", amount = 2},
-      {type = "item", name = "tungsten-plate", amount = 6},
-      {type = "item", name = "tungsten-carbide", amount = 2},
-      {type = "item", name = "sp-bolts", amount = 4}
-    },
-    results = {
-      {type = "item", name = "sp-nozzle", amount = 1}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-fuel-injector",  -- #ForRegEx# - recipe
-    category = "advanced-crafting",
-    enabled = false,
-    allow_productivity = true,
-    energy_required = 3,
-    ingredients = {
-      {type = "item", name = "tungsten-carbide", amount = 1},
-      {type = "item", name = "sp-copper-antimony", amount = 2},
-      {type = "item", name = "sp-inconel", amount = 1}
-    },
-    results = {
-      {type = "item", name = "sp-fuel-injector", amount = 1}
-    }
-  },
-  {
-    type = "recipe",
     name = "sp-cybernetics",  -- #ForRegEx# - recipe
     category = "advanced-crafting",
     enabled = false,
@@ -9301,34 +9269,16 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-combustion-chamber",  -- #ForRegEx# - recipe
-    category = "advanced-crafting",
-    enabled = false,
-    allow_productivity = true,
-    energy_required = 24,
-    ingredients = {
-      {type = "item", name = "sp-fuel-injector", amount = 20},
-      {type = "item", name = "tungsten-plate", amount = 2},
-      {type = "item", name = "sp-inconel", amount = 3},
-      {type = "item", name = "sp-bolts", amount = 4},
-      {type = "item", name = "sp-spark-plug", amount = 1},
-    },
-    results = {
-      {type = "item", name = "sp-combustion-chamber", amount = 1}
-    }
-  },
-  {
-    type = "recipe",
     name = "sp-rocket-engine",  -- #ForRegEx# - recipe
     category = "advanced-crafting",
     enabled = false,
     allow_productivity = true,
-    energy_required = 4,
+    energy_required = 8,
     ingredients = {
       {type = "item", name = "sp-turbopump", amount = 2},
-      {type = "item", name = "sp-nozzle", amount = 1},
+      {type = "item", name = "sp-rocket-nozzle", amount = 3},
       {type = "item", name = "sp-combustion-chamber", amount = 1},
-      {type = "item", name = "sp-bolts", amount = 6}
+      {type = "item", name = "sp-bolts", amount = 16}
     },
     results = {
       {type = "item", name = "sp-rocket-engine", amount = 1}
@@ -9803,6 +9753,58 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-automation-science-pack-2", amount = 5}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-combustion-chamber",  -- #ForRegEx# - recipe
+    category = "sp-manufacturing",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 24,
+    ingredients = {
+      {type = "item", name = "sp-fuel-injector", amount = 20},
+      {type = "item", name = "sp-tungsten-steel", amount = 2},
+      {type = "item", name = "sp-inconel", amount = 8},
+      {type = "item", name = "sp-ceramic-matrix-composites", amount = 10},
+      {type = "item", name = "sp-spark-plug", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-combustion-chamber", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-rocket-nozzle",  -- #ForRegEx# - recipe
+    category = "sp-manufacturing",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 12,
+    ingredients = {
+      {type = "item", name = "sp-copper-antimony", amount = 3},
+      {type = "item", name = "sp-titanium-aluminum-tin", amount = 1},
+      {type = "item", name = "sp-inconel", amount = 8},
+      {type = "item", name = "tungsten-plate", amount = 1},
+      {type = "item", name = "tungsten-carbide", amount = 2}
+    },
+    results = {
+      {type = "item", name = "sp-rocket-nozzle", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-fuel-injector",  -- #ForRegEx# - recipe
+    category = "sp-manufacturing",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 3,
+    ingredients = {
+      {type = "item", name = "tungsten-carbide", amount = 1},
+      {type = "item", name = "sp-copper-antimony", amount = 2},
+      {type = "item", name = "sp-inconel", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-fuel-injector", amount = 1}
     }
   },
   ------------------------------------------------------------------------------

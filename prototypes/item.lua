@@ -4495,7 +4495,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-nozzle",  -- #ForRegEx# - item
+    name = "sp-rocket-nozzle",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/nozzle.png",
     icon_size = 64,
     icon_mipmaps = 4,
