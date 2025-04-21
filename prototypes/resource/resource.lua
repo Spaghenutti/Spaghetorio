@@ -476,6 +476,8 @@ data:extend({
       mining_time = 1,
       map_color = {r=0.4, g=0.85, b=0.8},
       mining_visualisation_tint = {r=0.4, g=0.85, b=0.8, a=1.0},
+      fluid_amount = 8,
+      required_fluid = "sp-sodium-hydroxide"
     },
     {
       base_density = 1,

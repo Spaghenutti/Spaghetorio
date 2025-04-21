@@ -3133,7 +3133,8 @@ data:extend({
     },
     prerequisites = {
       "sp-turbine-parts",
-      "sp-spark-plug"
+      "sp-spark-plug",
+      "sp-antimony-processing"
     },
     unit =
     {
@@ -3148,7 +3149,9 @@ data:extend({
         {"sp-metallurgic-science-pack-2", 1},
         {"sp-electromagnetic-science-pack-2", 1},
         {"production-science-pack", 1},
-        {"utility-science-pack", 1}
+        {"utility-science-pack", 1},
+        {"cryogenic-science-pack", 1},
+        {"agricultural-science-pack", 1}
       },
       time = 30
     },
@@ -3745,21 +3748,24 @@ data:extend({
       },
     },
     prerequisites = {
-      "sp-material-science-pack-3",
-      "sp-chemical-science-pack-3"
+      "cryogenic-science-pack"
     },
     unit =
     {
-      count = 150,
+      count = 250,
       ingredients = {
-        {"sp-automation-science-pack-3", 1},
-        {"sp-logistic-science-pack-3", 1},
-        {"sp-chemical-science-pack-3", 1},
-        {"sp-electronic-science-pack-2", 1},
-        {"sp-material-science-pack-3", 1},
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
         {"sp-geological-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-metallurgic-science-pack-2", 1},
+        {"sp-electromagnetic-science-pack-2", 1},
         {"production-science-pack", 1},
-        {"utility-science-pack", 1}
+        {"utility-science-pack", 1},
+        {"cryogenic-science-pack", 1},
+        {"agricultural-science-pack", 1}
       },
       time = 30
     },

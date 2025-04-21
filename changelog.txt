@@ -6,6 +6,7 @@ Date: 2025-05-02
   Changes:
     - Changed recipes for recipes in cryogenic tech branch
     - Breeder reactor now requires fluoroketone for creating isotopes
+    - Antimony processing revamped and it is now unlocked after cryogenic science pack
   Bugfixes:
     - Icons of nuclear fuel rods were not shown correctly
 ---------------------------------------------------------------------------------------------------

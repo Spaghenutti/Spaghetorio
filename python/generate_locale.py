@@ -9,10 +9,6 @@ import constants
 
 NAME_REGEX = r"name = \"([^\"]*)\",  -- #ForRegEx# - ([A-Za-z-]+)"
 UPDATE_NAME_REGEX = r".name = \"([^\"]*)\"  -- #ForRegEx# - ([A-Za-z-]+)"
-ALPHA = r"ÃŽÂ±"
-ALPHA_2 = r"Î±"  # No clue why, but sometimes ÃŽÂ± gets replaced to α and then to Î±. So i also change Î± back to α
-BETA = r"ÃŽÂ²"
-BETA_2 = r"Î²"  # No clue why, but sometimes ÃŽÂ² gets replaced to β and then to Î². So i also change Î² back to β
 ALL_REGEX = [NAME_REGEX, UPDATE_NAME_REGEX]
 
 MANUAL_TRANSLATIONS = {

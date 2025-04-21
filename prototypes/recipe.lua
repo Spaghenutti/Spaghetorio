@@ -298,25 +298,6 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-antimony-pillet",  -- #ForRegEx# - recipe
-    icon = "__Spaghetorio__/graphics/icons/antimony-pillet.png",
-    icon_size = 64,
-    mip_maps = 4,
-    category = "smelting",
-    subgroup = "sp-processed-resource",
-    enabled = false,
-    allow_productivity = true,
-    energy_required = 2.4,
-    ingredients = {
-      {type = "item", name = "sp-stibnite", amount = 1}
-    },
-    results = {
-      {type = "item", name = "sp-antimony-pillet", amount = 1},
-      {type = "item", name = "sulfur", amount = 1}
-    }
-  },
-  {
-    type = "recipe",
     name = "sp-stainless-steel",  -- #ForRegEx# - recipe
     category = "smelting",
     enabled = false,
@@ -770,16 +751,19 @@ data:extend({
   {
     type = "recipe",
     name = "sp-antimony-pillet",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/icons/antimony-pillet.png",
     category = "sp-intermediate-smelting",
     enabled = false,
     allow_productivity = true,
-    energy_required = 10,
+    energy_required = 24,
     ingredients = {
       {type = "item", name = "sp-antimony-oxide", amount = 8},
       {type = "item", name = "carbon", amount = 1},
+      {type = "item", name = "sp-cobalt-billet", amount = 3},
     },
     results = {
-      {type = "item", name = "sp-antimony-pillet", amount = 20}
+      {type = "item", name = "sp-antimony-pillet", amount = 20},
+      {type = "item", name = "sp-cobalt-oxide", amount = 1},
     }
   },
   {
@@ -3383,27 +3367,6 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-antimony-triiodide",  -- #ForRegEx# - recipe
-    category = "chemistry",
-    enabled = false,
-    allow_productivity = true,
-    energy_required = 8,
-    ingredients = {
-      {type = "item", name = "sp-antimony-pillet", amount = 1},
-      {type = "item", name = "sp-iodine", amount = 20},
-    },
-    results = {
-      {type = "item", name = "sp-antimony-triiodide", amount = 3},
-    },
-    -- crafting_machine_tint = {
-    --   primary = {r = 0.3, g = 0.3, b = 0.3, a = 1.000},
-    --   secondary = {r = 0.1, g = 0.1, b = 0.1, a = 1.000},
-    --   tertiary = {r = 0.0, g = 0.0, b = 0.0, a = 1.000},
-    --   quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
-    -- }
-  },
-  {
-    type = "recipe",
     name = "sp-geological-science-pack-3",  -- #ForRegEx# - recipe
     category = "chemistry",
     enabled = false,
@@ -4807,6 +4770,21 @@ data:extend({
       tertiary = {r = 1.000, g = 1.000, b = 1.000, a = 0.500},
       quaternary = {r = 1.000, g = 1.000, b = 1.000, a = 0.300},
     }
+  },
+  {
+    type = "recipe",
+    name = "sp-antimony-triiodide",  -- #ForRegEx# - recipe
+    category = "cryogenics",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 8,
+    ingredients = {
+      {type = "item", name = "sp-antimony-pillet", amount = 1},
+      {type = "item", name = "sp-iodine", amount = 20},
+    },
+    results = {
+      {type = "item", name = "sp-antimony-triiodide", amount = 3},
+    },
   },
   ------------------------------------------------------------------------------
   -- MARK: crystallizing
@@ -9295,6 +9273,7 @@ data:extend({
     energy_required = 3,
     ingredients = {
       {type = "item", name = "tungsten-carbide", amount = 1},
+      {type = "item", name = "sp-copper-antimony", amount = 2},
       {type = "item", name = "sp-inconel", amount = 1}
     },
     results = {
