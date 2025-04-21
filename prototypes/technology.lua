@@ -2626,9 +2626,9 @@ data:extend({
         {"sp-chemical-science-pack-2", 1},
         {"sp-metallurgic-science-pack-2", 1},
         {"sp-electromagnetic-science-pack-2", 1},
-        {"sp-computer-science-pack-2", 1},
         {"production-science-pack", 1},
-        {"utility-science-pack", 1}
+        {"utility-science-pack", 1},
+        {"sp-computer-science-pack-2", 1}
       },
       time = 30
     },

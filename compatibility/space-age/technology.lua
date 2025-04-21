@@ -677,7 +677,7 @@ data.raw.technology["processing-unit-productivity"].unit.ingredients = {
   {"utility-science-pack", 1},
 }
 
-data.raw.technology["processing-unit-productivity"].prerequisites = {
+data.raw.technology["rocket-part-productivity"].prerequisites = {
   "space-science-pack",
 }
 data.raw.technology["rocket-part-productivity"].unit.ingredients = {

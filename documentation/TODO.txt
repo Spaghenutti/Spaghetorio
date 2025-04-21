@@ -203,6 +203,7 @@ TODO for 0.3.18
   - Add back blunagium, grobgnum, rukite and yemnuth rockets (even though they are unlocked later)
 
 TODO for 0.3.xx
+  - Add cool items with data and computer technology for computer science 3 or maybe 4? :3
   - Mask ores depending on tiles
   - Fix iodine brine spawning on start location (seed: 2806285432)
   - Funghi are found in gleba region (do something similar for other plants)
