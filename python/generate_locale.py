@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 
 import configparser
 import re
@@ -8,6 +9,10 @@ import constants
 
 NAME_REGEX = r"name = \"([^\"]*)\",  -- #ForRegEx# - ([A-Za-z-]+)"
 UPDATE_NAME_REGEX = r".name = \"([^\"]*)\"  -- #ForRegEx# - ([A-Za-z-]+)"
+ALPHA = r"ÃŽÂ±"
+ALPHA_2 = r"Î±"  # No clue why, but sometimes ÃŽÂ± gets replaced to α and then to Î±. So i also change Î± back to α
+BETA = r"ÃŽÂ²"
+BETA_2 = r"Î²"  # No clue why, but sometimes ÃŽÂ² gets replaced to β and then to Î². So i also change Î² back to β
 ALL_REGEX = [NAME_REGEX, UPDATE_NAME_REGEX]
 
 MANUAL_TRANSLATIONS = {
@@ -37,6 +42,38 @@ MANUAL_TRANSLATIONS = {
     "sp-plutonium-239": "Plutonium-239",
     "sp-plutonium-240": "Plutonium-240",
 
+    # radioactive decay locale
+    "sp-alpha-decay-research-data-from-polonium-213": "α decay research data from polonium-213",
+    "sp-alpha-decay-research-data-from-astatine-213": "α decay research data from astatine-213",
+    "sp-alpha-decay-research-data-from-astatine-217": "α decay research data from astatine-217",
+    "sp-alpha-decay-research-data-from-francium-217": "α decay research data from francium-217",
+    "sp-alpha-decay-research-data-from-francium-221": "α decay research data from francium-221",
+    "sp-alpha-decay-research-data-from-actinium-221": "α decay research data from actinium-221",
+    "sp-alpha-decay-research-data-from-actinium-225": "α decay research data from actinium-225",
+    "sp-alpha-decay-research-data-from-thorium-225": "α decay research data from thorium-225",
+    "sp-alpha-decay-research-data-from-thorium-229": "α decay research data from thorium-229",
+    "sp-alpha-decay-research-data-from-uranium-229": "α decay research data from uranium-229",
+    "sp-alpha-decay-research-data-from-uranium-233": "α decay research data from uranium-233",
+    "sp-alpha-decay-research-data-from-uranium-236": "α decay research data from uranium-236",
+    "sp-alpha-decay-research-data-from-neptunium-233": "α decay research data from neptunium-233",
+    "sp-alpha-decay-research-data-from-plutonium-239": "α decay research data from plutonium-239",
+    "sp-alpha-decay-research-data-from-plutonium-240": "α decay research data from plutonium-240",
+    "sp-beta-plus-decay-research-data-from-protactinium-232": "β+ decay research data from protactinium-240",
+    "sp-beta-plus-decay-research-data-from-neptunium-236": "β+ decay research data from neptunium-236",
+    "sp-beta-minus-decay-research-data-from-bismuth-213": "β- decay research data from bismuth-213",
+    "sp-beta-minus-decay-research-data-from-radium-221": "β- decay research data from radium-221",
+    "sp-beta-minus-decay-research-data-from-actinium-232": "β- decay research data from actinium-232",
+    "sp-beta-minus-decay-research-data-from-protactinium-229": "β- decay research data from protactinium-229",
+    "sp-beta-minus-decay-research-data-from-protactinium-236": "β- decay research data from protactinium-236",
+
+    "sp-alpha-decay-research": "α decay research",
+    "sp-beta-plus-decay-research": "β+ decay research",
+    "sp-beta-minus-decay-research": "β- decay research",
+
+    "sp-alpha-decay-research-data": "α decay research data",
+    "sp-beta-plus-decay-research-data": "β+ decay research data",
+    "sp-beta-minus-decay-research-data": "β- decay research data",
+
     # other
     "sp-mox-fuel-rod": "MOX fuel rod",
 }
@@ -48,7 +85,7 @@ def parse_lua(lua_path: str) -> List[Tuple[str, str]]:
 
     @return List with found matches
     """
-    with open(lua_path) as f:
+    with open(lua_path, "r", encoding="utf-8") as f:
         matches = re.findall("|".join(ALL_REGEX), f.read())
 
     return matches
@@ -111,6 +148,22 @@ def get_sections(object_type: str) -> List[str]:
             raise KeyError(f"Lua type {object_type} not matching known locale section.")
 
 
+def fix_unicode_encoding(locale_path: str) -> None:
+    """
+    Because a cunt has written the ConfigParser i have to replace greek letters manually
+    """
+    with open(locale_path, "r", encoding="utf-8") as file:
+        filedata = file.read()
+    
+    filedata = filedata.replace(ALPHA, "α")
+    filedata = filedata.replace(ALPHA_2, "α")
+    filedata = filedata.replace(BETA, "β")
+    filedata = filedata.replace(BETA_2, "β")
+
+    with open(locale_path, "w", encoding="utf-8") as file:
+        file.write(filedata)
+
+
 def extend_locale(matches: List[Tuple[str, str]],
                   locale_path: str = constants.LOCALE_ENGLISH_PATH) -> None:
     """
@@ -149,9 +202,10 @@ def extend_locale(matches: List[Tuple[str, str]],
             sorted_config.set(section, key, value)
 
     # Write the sorted configuration back to a file
-    with open(locale_path, 'w') as configfile:
+    with open(locale_path, "w", encoding="utf-8") as configfile:
         sorted_config.write(configfile, space_around_delimiters=False)
 
+    fix_unicode_encoding(locale_path)
 
 def update_locale() -> None:
     """
