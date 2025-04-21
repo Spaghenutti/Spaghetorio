@@ -463,3 +463,17 @@ util.recipe.change_recipe_ingredients("agricultural-science-pack",
 data.raw.recipe["agricultural-science-pack"].results = {
   {type = "item", name = "agricultural-science-pack", amount = 5}
 }
+
+util.recipe.change_recipe_ingredients("cryogenic-science-pack",
+  {
+    {type = "item", name = "sp-blank-tech-card", amount = 5},
+    {type = "item", name = "ice", amount = 20},
+    {type = "item", name = "heat-pipe", amount = 2},
+    {type = "item", name = "sp-cryostat", amount = 2},
+    {type = "fluid", name = "sp-cold-coolant", amount = 50},
+    {type = "fluid", name = "fluoroketone-cold", amount = 30}
+  },
+  36)
+data.raw.recipe["cryogenic-science-pack"].results = {
+  {type = "item", name = "cryogenic-science-pack", amount = 5}
+}

@@ -8674,6 +8674,10 @@ data:extend({
       },
       {
         type = "unlock-recipe",
+        recipe = "sp-water-freezing",
+      },
+      {
+        type = "unlock-recipe",
         recipe = "sp-cold-coolant",
       },
       {

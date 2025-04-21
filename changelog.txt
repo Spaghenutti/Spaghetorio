@@ -1,4 +1,14 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.3.13
+Date: 2025-05-02
+  Features:
+    - Added water freezing recipe
+  Changes:
+    - Changed recipes for recipes in cryogenic tech branch
+    - Breeder reactor now requires fluoroketone for creating isotopes
+  Bugfixes:
+    - Icons of nuclear fuel rods were not shown correctly
+---------------------------------------------------------------------------------------------------
 Version: 0.3.12
 Date: 2025-04-25
   Features:

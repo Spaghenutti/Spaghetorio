@@ -233,7 +233,7 @@ TODO for 0.3.xx
   - Increase fuel values of biological fluids / items
   - Split fuel into categories
   - Add nuclear and antimatter locomotive
-  - 
+  - set allow_decomposition = false for many many recipes
 
 --------------------------------------------------------------------------------
 

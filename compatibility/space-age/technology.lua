@@ -729,4 +729,23 @@ data.raw.technology["agricultural-science-pack"].unit = {
   },
   time = 30
 }
+
 data.raw.technology["cryogenic-science-pack"].icon = "__Spaghetorio__/graphics/hr-icons/cryogenic-science-pack-2.png"
+data.raw.technology["cryogenic-science-pack"].research_trigger = nil
+data.raw.technology["cryogenic-science-pack"].unit = {
+  count = 400,
+  ingredients = {
+    {"sp-automation-science-pack-2", 1},
+    {"sp-logistic-science-pack-2", 1},
+    {"sp-material-science-pack-2", 1},
+    {"sp-geological-science-pack-2", 1},
+    {"sp-electronic-science-pack-2", 1},
+    {"sp-chemical-science-pack-2", 1},
+    {"sp-metallurgic-science-pack-2", 1},
+    {"sp-electromagnetic-science-pack-2", 1},
+    {"production-science-pack", 1},
+    {"utility-science-pack", 1},
+    {"agricultural-science-pack", 1}
+  },
+  time = 30
+}
