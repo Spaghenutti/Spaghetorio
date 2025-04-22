@@ -2601,6 +2601,26 @@ data:extend({
   },
   {
     type = "item",
+    name = "sp-germanium-antimony-tellurium",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/germanium-antimony-tellurium.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "sp-alloy",
+    order = "[germanium-antimony-tellurium]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "sp-holmium-cobalt-iron",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/holmium-cobalt-iron.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "sp-alloy",
+    order = "[holmium-cobalt-iron]",
+    stack_size = 50
+  },
+  {
+    type = "item",
     name = "sp-rare-metals-alloy",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/rare-metals/rare-metals.png",
     icon_size = 64,
@@ -3709,6 +3729,16 @@ data:extend({
   },
   {
     type = "item",
+    name = "sp-laser-diode",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/laser-diode.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "sp-electronic-optical-component",
+    order = "basic-[laser-diode]",
+    stack_size = 200
+  },
+  {
+    type = "item",
     name = "sp-photodiode",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/photodiode.png",
     icon_size = 64,
@@ -3865,6 +3895,26 @@ data:extend({
     scale = 0.5,
     subgroup = "sp-electronic-optical-component",
     order = "semiconductor-b[cmos]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "sp-hard-drive",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/hard-drive.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "sp-electronic-optical-component",
+    order = "semiconductor-b[hard-drive]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "sp-phase-change-memory",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/phase-change-memory.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "sp-electronic-optical-component",
+    order = "semiconductor-b[phase-change-memory]",
     stack_size = 50
   },
   {
@@ -4748,6 +4798,26 @@ data:extend({
     scale = 0.5,
     subgroup = "sp-ceramic-material",
     order = "[barium-titanate]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "sp-titanium-telluride",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/titanium-telluride.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "sp-ceramic-material",
+    order = "[titanium-telluride]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "sp-indium-phosphide",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/indium-phosphide.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "sp-ceramic-material",
+    order = "[indium-phosphide]",
     stack_size = 50
   },
   {
