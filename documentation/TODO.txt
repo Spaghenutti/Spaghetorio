@@ -159,7 +159,8 @@ TODO for 0.3.13
   + Update cryogenic science 2 branch of tech tree
 
 TODO for 0.3.14
-  + Add recipe for empty data card
+  + Add recipe for empty research data card
+  - Add uses for empty research data card
   + Update computer science 2 branch of tech tree
     + Uses for tellurium
       + Add thermocouple (uses tellurium)

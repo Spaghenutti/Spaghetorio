@@ -753,6 +753,7 @@ data:extend({
     name = "sp-antimony-pillet",  -- #ForRegEx# - recipe
     icon = "__Spaghetorio__/graphics/icons/antimony-pillet.png",
     category = "sp-intermediate-smelting",
+    subgroup = "sp-raw-material",
     enabled = false,
     allow_productivity = true,
     energy_required = 24,
