@@ -159,17 +159,21 @@ TODO for 0.3.13
   + Update cryogenic science 2 branch of tech tree
 
 TODO for 0.3.14
-  - Add recipe for empty data card
-  - Update computer science 2 branch of tech tree
-    - Uses for tellurium
+  + Add recipe for empty data card
+  + Update computer science 2 branch of tech tree
+    + Uses for tellurium
       + Add thermocouple (uses tellurium)
       + Add peltier cell (bismuth and tellurium) use in thermonuclear generator and cryogenic plant
-      - Add graphite impact shell used for explorers
-      - Add laser diode
-      - Add hard drive
-      - Add phase change memory
+      + Add graphite impact shell used for explorers
+      + Add laser diode
+      + Add hard drive
+      + Add phase change memory
   + Update utility science 2 branch of tech tree
   + Add biological / agricultural item group
+  - verify recipes that could use:
+    - gold
+    - silver-solder
+    - optic-fiber
 
 TODO for 0.3.15
   - Add starter patches for resources requires for rail

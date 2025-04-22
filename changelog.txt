@@ -2,7 +2,9 @@
 Version: 0.3.14
 Date: 2025-05-09
   Features:
-    - Added new items after unlocking computer science pack
+    - Added new items, recipes and technologies after unlocking computer science pack
+  Changes:
+    - Renamed glass fiber to optic fiber (you will have to select again from crafting menu on machine "optic fiber")
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.13
 Date: 2025-05-02

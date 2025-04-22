@@ -2322,7 +2322,7 @@ data:extend({
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-glass-fiber"
+        recipe = "sp-optic-fiber"
       },
       {
         type = "unlock-recipe",
@@ -2628,6 +2628,76 @@ data:extend({
         {"sp-electromagnetic-science-pack-2", 1},
         {"production-science-pack", 1},
         {"utility-science-pack", 1},
+        {"sp-computer-science-pack-2", 1}
+      },
+      time = 30
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-advanced-storage",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghetorio__/graphics/hr-icons/hard-drive.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-empty-research-data-card"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-hard-drive"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-phase-change-memory"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-laser-diode"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-germanium-antimony-tellurium"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-holmium-cobalt-iron"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-indium-phosphide"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-titanium-telluride"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-silicon-dioxide"
+      }
+    },
+    prerequisites = {
+      "sp-computer-science-pack-2",
+      "sp-antimony-processing",
+      "sp-indium-processing",
+      "sp-germanium-processing"
+    },
+    unit =
+    {
+      count = 750,
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-metallurgic-science-pack-2", 1},
+        {"sp-electromagnetic-science-pack-2", 1},
+        {"production-science-pack", 1},
+        {"utility-science-pack", 1},
+        {"cryogenic-science-pack", 1},
         {"sp-computer-science-pack-2", 1}
       },
       time = 30
@@ -4940,13 +5010,12 @@ data:extend({
     },
     prerequisites = {
       "processing-unit",
-      -- "space-science-pack",
       "sp-semiconductor",
-      "sp-optics"
+      "sp-advanced-storage"
     },
     unit =
     {
-      count = 250,
+      count = 300,
       ingredients = {
         {"sp-automation-science-pack-2", 1},
         {"sp-logistic-science-pack-2", 1},
@@ -4957,7 +5026,9 @@ data:extend({
         {"sp-metallurgic-science-pack-2", 1},
         {"sp-electromagnetic-science-pack-2", 1},
         {"production-science-pack", 1},
-        {"utility-science-pack", 1}
+        {"utility-science-pack", 1},
+        {"cryogenic-science-pack", 1},
+        {"sp-computer-science-pack-2", 1}
       },
       time = 30
     },

@@ -2070,6 +2070,38 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "sp-germanium-antimony-tellurium",  -- #ForRegEx# - recipe
+    category = "sp-alloy-smelting",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 20,
+    ingredients = {
+      {type = "item", name = "sp-germanium", amount = 2},
+      {type = "item", name = "sp-antimony-pillet", amount = 2},
+      {type = "item", name = "sp-tellurium", amount = 5},
+    },
+    results = {
+      {type = "item", name = "sp-germanium-antimony-tellurium", amount = 9}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-holmium-cobalt-iron",  -- #ForRegEx# - recipe
+    category = "sp-alloy-smelting",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 30,
+    ingredients = {
+      {type = "item", name = "holmium-plate", amount = 5},
+      {type = "item", name = "sp-cobalt-billet", amount = 4},
+      {type = "item", name = "iron-plate", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-holmium-cobalt-iron", amount = 10}
+    }
+  },
+  {
+    type = "recipe",
     name = "sp-rare-metals-alloy-from-yttrium",  -- #ForRegEx# - recipe
     icon = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/rare-metals/rare-metals.png",
     icon_size = 64,
@@ -4981,6 +5013,36 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "sp-titanium-telluride",  -- #ForRegEx# - recipe
+    category = "sp-crystallizing",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 20,
+    ingredients = {
+      {type = "item", name = "sp-titanium-ingot", amount = 1},
+      {type = "item", name = "sp-tellurium", amount = 4}
+    },
+    results = {
+      {type = "item", name = "sp-titanium-telluride", amount = 3}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-indium-phosphide",  -- #ForRegEx# - recipe
+    category = "sp-crystallizing",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 8,
+    ingredients = {
+      {type = "item", name = "sp-indium-ingot", amount = 1},
+      {type = "item", name = "sp-phosphorus", amount = 2}
+    },
+    results = {
+      {type = "item", name = "sp-indium-phosphide", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
     name = "sp-monocrystal",  -- #ForRegEx# - recipe
     category = "sp-crystallizing",
     enabled = false,
@@ -5623,6 +5685,21 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "sp-silicon-dioxide",  -- #ForRegEx# - recipe
+    category = "sp-oxidizing",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 20,
+    ingredients = {
+      {type = "item", name = "sp-silicon", amount = 4},
+      {type = "fluid", name = "sp-oxygen", amount = 8}
+    },
+    results = {
+      {type = "item", name = "sp-silicon-dioxide", amount = 4}
+    },
+  },
+  {
+    type = "recipe",
     name = "sp-uranium-oxide",  -- #ForRegEx# - recipe
     category = "sp-oxidizing",
     enabled = false,
@@ -5941,6 +6018,46 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "sp-hard-drive",  -- #ForRegEx# - recipe
+    category = "electronics",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 6,
+    ingredients = {
+      {type = "item", name = "sp-aluminum-frame", amount = 1},
+      {type = "item", name = "sp-silicon-nitride", amount = 1},
+      {type = "item", name = "sp-magnet", amount = 2},
+      {type = "item", name = "sp-holmium-cobalt-iron", amount = 4},
+      {type = "item", name = "sp-voltage-controller", amount = 2},
+      {type = "item", name = "sp-graphene", amount = 1},
+      {type = "item", name = "sp-laser-diode", amount = 1},
+      {type = "item", name = "sp-titanium-telluride", amount = 3}
+    },
+    results = {
+      {type = "item", name = "sp-hard-drive", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-phase-change-memory",  -- #ForRegEx# - recipe
+    category = "electronics",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 10,
+    ingredients = {
+      {type = "item", name = "sp-vanadium-pentoxide", amount = 1},
+      {type = "item", name = "sp-silicon-nitride", amount = 1},
+      {type = "item", name = "sp-silicon-dioxide", amount = 2},
+      {type = "item", name = "sp-titanium-telluride", amount = 4},
+      {type = "item", name = "sp-germanium-antimony-tellurium", amount = 2},
+      {type = "item", name = "sp-graphene", amount = 4},
+    },
+    results = {
+      {type = "item", name = "sp-phase-change-memory", amount = 4}
+    }
+  },
+  {
+    type = "recipe",
     name = "sp-cmos",  -- #ForRegEx# - recipe
     category = "electronics",
     enabled = false,
@@ -5987,7 +6104,7 @@ data:extend({
       {type = "item", name = "sp-barium-titanate", amount = 3},
       {type = "item", name = "sp-nickel-ingot", amount = 1},
       {type = "item", name = "sp-silver-solder", amount = 1},
-      {type = "item", name = "sp-glass-fiber", amount = 1},
+      {type = "item", name = "sp-optic-fiber", amount = 1},
       {type = "item", name = "sp-palladium", amount = 1}
     },
     results = {
@@ -6028,6 +6145,24 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-infrared-light-emitting-diode", amount = 8}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-laser-diode",  -- #ForRegEx# - recipe
+    category = "electronics",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 5,
+    ingredients = {
+      {type = "item", name = "sp-gold", amount = 1},
+      {type = "item", name = "sp-aluminum-sheet", amount = 1},
+      {type = "item", name = "sp-silicon", amount = 3},
+      {type = "item", name = "sp-indium-phosphide", amount = 2},
+      {type = "item", name = "sp-tellurium", amount = 2}
+    },
+    results = {
+      {type = "item", name = "sp-laser-diode", amount = 6}
     }
   },
   {
@@ -8173,7 +8308,7 @@ data:extend({
     energy_required = 6,
     ingredients = {
       {type = "item", name = "sp-micro-frame", amount = 3},
-      {type = "item", name = "sp-glass-fiber", amount = 2},
+      {type = "item", name = "sp-optic-fiber", amount = 2},
       {type = "item", name = "sp-optical-sensor", amount = 1},
       {type = "item", name = "sp-servo-motor", amount = 2},
       {type = "item", name = "sp-neodymium-magnet", amount = 2},
@@ -8489,7 +8624,7 @@ data:extend({
     allow_productivity = true,
     energy_required = 5,
     ingredients = {
-      {type = "item", name = "sp-glass-fiber", amount = 1},
+      {type = "item", name = "sp-optic-fiber", amount = 1},
       {type = "item", name = "processing-unit", amount = 2},
       {type = "item", name = "sp-optical-sensor", amount = 1},
       {type = "item", name = "sp-relay", amount = 4},
@@ -8508,11 +8643,12 @@ data:extend({
     energy_required = 5,
     ingredients = {
       {type = "item", name = "processing-unit", amount = 4},
+      {type = "item", name = "sp-phase-change-memory", amount = 2},
       {type = "item", name = "sp-processor", amount = 3},
       {type = "item", name = "sp-voltage-regulator-module", amount = 6},
       {type = "item", name = "sp-anodized-aluminum", amount = 2},
       {type = "item", name = "sp-antenna-chip", amount = 1},
-      {type = "item", name = "sp-glass-fiber", amount = 4},
+      {type = "item", name = "sp-optic-fiber", amount = 4},
       {type = "item", name = "sp-insulated-wire", amount = 4},
     },
     results = {
@@ -8898,7 +9034,7 @@ data:extend({
     ingredients = {
       {type = "fluid", name = "sp-epoxy", amount = 10},
       {type = "item", name = "copper-cable", amount = 2},
-      {type = "item", name = "sp-glass-fiber", amount = 3},
+      {type = "item", name = "sp-optic-fiber", amount = 3},
       {type = "item", name = "sp-silver-solder", amount = 1}
     },
     results = {
@@ -9446,7 +9582,7 @@ data:extend({
     ingredients = {
       {type = "item", name = "sp-cubit", amount = 1000},
       {type = "item", name = "sp-vacuum-tube", amount = 16},
-      {type = "item", name = "sp-glass-fiber", amount = 20},
+      {type = "item", name = "sp-optic-fiber", amount = 20},
       {type = "item", name = "sp-aluminum-frame", amount = 1},
       {type = "item", name = "sp-machined-parts", amount = 6},
       {type = "item", name = "sp-gold", amount = 3}
@@ -9507,6 +9643,22 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "sp-graphite-impact-shell",  -- #ForRegEx# - recipe
+    category = "sp-manufacturing",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 12,
+    ingredients = {
+      {type = "item", name = "carbon-fiber", amount = 4},
+      {type = "item", name = "sp-copper-antimony", amount = 1},
+      {type = "item", name = "sp-tellurium", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-graphite-impact-shell", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
     name = "sp-silver-solder",  -- #ForRegEx# - recipe
     category = "sp-manufacturing",
     enabled = false,
@@ -9522,7 +9674,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-glass-fiber",  -- #ForRegEx# - recipe
+    name = "sp-optic-fiber",  -- #ForRegEx# - recipe
     category = "sp-manufacturing",
     enabled = false,
     allow_productivity = true,
@@ -9533,7 +9685,7 @@ data:extend({
       {type = "item", name = "sp-sodium", amount = 1}
     },
     results = {
-      {type = "item", name = "sp-glass-fiber", amount = 5}
+      {type = "item", name = "sp-optic-fiber", amount = 5}
     }
   },
   {
@@ -9739,25 +9891,6 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-automation-science-pack-2",  -- #ForRegEx# - recipe
-    category = "sp-manufacturing",
-    enabled = false,
-    allow_productivity = true,
-    energy_required = 24,
-    ingredients =
-    {
-      {type = "item", name = "automation-science-pack", amount = 20},
-      {type = "item", name = "sp-plate-heat-exchanger", amount = 5},
-      {type = "item", name = "sp-vibration-dampener", amount = 5},
-      {type = "item", name = "sp-turbocharger", amount = 5},
-      {type = "item", name = "small-lamp", amount = 5},
-    },
-    results = {
-      {type = "item", name = "sp-automation-science-pack-2", amount = 5}
-    }
-  },
-  {
-    type = "recipe",
     name = "sp-combustion-chamber",  -- #ForRegEx# - recipe
     category = "sp-manufacturing",
     enabled = false,
@@ -9806,6 +9939,43 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-fuel-injector", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-empty-research-data-card",  -- #ForRegEx# - recipe
+    category = "sp-manufacturing",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 3,
+    ingredients = {
+      {type = "item", name = "sp-anodized-aluminum", amount = 1},
+      {type = "item", name = "sp-optic-fiber", amount = 2},
+      {type = "item", name = "sp-integrated-circuit", amount = 2},
+      {type = "item", name = "sp-light-emitting-diode", amount = 4},
+      {type = "item", name = "sp-hard-drive", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-empty-research-data-card", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-automation-science-pack-2",  -- #ForRegEx# - recipe
+    category = "sp-manufacturing",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 24,
+    ingredients =
+    {
+      {type = "item", name = "automation-science-pack", amount = 20},
+      {type = "item", name = "sp-plate-heat-exchanger", amount = 5},
+      {type = "item", name = "sp-vibration-dampener", amount = 5},
+      {type = "item", name = "sp-turbocharger", amount = 5},
+      {type = "item", name = "small-lamp", amount = 5},
+    },
+    results = {
+      {type = "item", name = "sp-automation-science-pack-2", amount = 5}
     }
   },
   ------------------------------------------------------------------------------
@@ -11150,7 +11320,7 @@ data:extend({
     allow_productivity = true,
     energy_required = 6,
     ingredients = {
-      {type = "item", name = "sp-glass-fiber", amount = 1},
+      {type = "item", name = "sp-optic-fiber", amount = 1},
       {type = "item", name = "sp-iridium", amount = 1},
       {type = "item", name = "sp-grobgnum-shard", amount = 3},
       {type = "item", name = "sp-platinum", amount = 2},
@@ -11229,7 +11399,7 @@ data:extend({
     allow_productivity = true,
     energy_required = 16,
     ingredients = {
-      {type = "item", name = "sp-glass-fiber", amount = 6},
+      {type = "item", name = "sp-optic-fiber", amount = 6},
       {type = "item", name = "sp-titanium-niobium", amount = 2},
       {type = "item", name = "supercapacitor", amount = 2},
       {type = "item", name = "sp-processor", amount = 20},
@@ -11438,7 +11608,7 @@ data:extend({
       {type = "item", name = "rocket-fuel", amount = 750},
       {type = "item", name = "sp-rocket-engine", amount = 20},
       {type = "item", name = "sp-solid-rocket-motor", amount = 48},
-      {type = "item", name = "sp-glass-fiber", amount = 250},
+      {type = "item", name = "sp-optic-fiber", amount = 250},
       {type = "item", name = "sp-bioreactor", amount = 1},
       {type = "item", name = "sp-grobgnum-shard", amount = 80},
       {type = "item", name = "sp-grobgnum-droplet", amount = 100}
@@ -11507,7 +11677,7 @@ data:extend({
       {type = "item", name = "rocket-fuel", amount = 750},
       {type = "item", name = "sp-rocket-engine", amount = 8},
       {type = "item", name = "sp-solid-rocket-motor", amount = 24},
-      {type = "item", name = "sp-glass-fiber", amount = 100},
+      {type = "item", name = "sp-optic-fiber", amount = 100},
       {type = "item", name = "sp-rukite-powder", amount = 300}
     },
     results = {
@@ -12410,7 +12580,7 @@ data:extend({
       {type = "item", name = "sp-heat-resistant-tile", amount = 200},
       {type = "item", name = "sp-control-unit", amount = 100},
       {type = "item", name = "sp-advanced-processing-unit", amount = 50},
-      {type = "item", name = "sp-glass-fiber", amount = 100},
+      {type = "item", name = "sp-optic-fiber", amount = 100},
       {type = "item", name = "sp-plate-heat-exchanger", amount = 60},
       {type = "item", name = "sp-cryostat", amount = 40},
       {type = "item", name = "sp-neodymium-magnet", amount = 200},
@@ -12560,7 +12730,7 @@ data:extend({
       {type = "item", name = "sp-control-unit", amount = 20},
       {type = "item", name = "sp-ai-core", amount = 16},
       {type = "item", name = "superconductor", amount = 8},
-      {type = "item", name = "sp-glass-fiber", amount = 250},
+      {type = "item", name = "sp-optic-fiber", amount = 250},
       {type = "item", name = "sp-cryostat", amount = 20},
       {type = "item", name = "sp-plate-heat-exchanger", amount = 32},
       -- {type = "item", name = "kr-black-reinforced-plate", amount = 120}
@@ -12581,7 +12751,7 @@ data:extend({
     ingredients = {
       {type = "item", name = "sp-servo-motor", amount = 10},
       {type = "item", name = "sp-automation-core", amount = 8},
-      {type = "item", name = "sp-glass-fiber", amount = 20},
+      {type = "item", name = "sp-optic-fiber", amount = 20},
       {type = "item", name = "sp-dynamo", amount = 2},
       {type = "item", name = "advanced-circuit", amount = 20},
       {type = "item", name = "electric-engine-unit", amount = 4},
@@ -12675,7 +12845,7 @@ data:extend({
       {type = "item", name = "sp-control-unit", amount = 20},
       {type = "item", name = "sp-ai-core", amount = 50},
       {type = "item", name = "sp-micro-machine", amount = 50},
-      {type = "item", name = "sp-glass-fiber", amount = 500},
+      {type = "item", name = "sp-optic-fiber", amount = 500},
       {type = "item", name = "sp-cryostat", amount = 20},
       {type = "item", name = "sp-fermium-condensate", amount = 10},
       -- {type = "item", name = "kr-black-reinforced-plate", amount = 120}
@@ -12859,7 +13029,7 @@ data:extend({
     ingredients = {
       {type = "item", name = "sp-imersium-plate", amount = 3},
       {type = "item", name = "sp-blunagium-plate", amount = 2},
-      {type = "item", name = "sp-glass-fiber", amount = 3},
+      {type = "item", name = "sp-optic-fiber", amount = 3},
       {type = "item", name = "sp-frictionless-joint", amount = 3},
       {type = "item", name = "sp-advanced-processing-unit", amount = 4},
       {type = "item", name = "sp-micro-machine", amount = 4},
@@ -12881,7 +13051,7 @@ data:extend({
     ingredients = {
       {type = "item", name = "sp-imersium-plate", amount = 3},
       {type = "item", name = "sp-rukite-plate", amount = 4},
-      {type = "item", name = "sp-glass-fiber", amount = 3},
+      {type = "item", name = "sp-optic-fiber", amount = 3},
       {type = "item", name = "sp-frictionless-joint", amount = 4},
       {type = "item", name = "sp-advanced-processing-unit", amount = 4},
       {type = "item", name = "sp-micro-machine", amount = 6},
@@ -12990,7 +13160,7 @@ data:extend({
       {type = "item", name = "sp-imersium-gear-wheel", amount = 3},
       {type = "item", name = "electric-engine-unit", amount = 1},
       {type = "item", name = "sp-nanobot", amount = 6},
-      {type = "item", name = "sp-glass-fiber", amount = 2}
+      {type = "item", name = "sp-optic-fiber", amount = 2}
     },
     results = {
       {type = "item", name = "sp-kr-superior-transport-belt", amount = 1}
@@ -13534,7 +13704,7 @@ data:extend({
     allow_productivity = true,
     energy_required = 30,
     ingredients = {
-      {type = "item", name = "sp-glass-fiber", amount = 2},
+      {type = "item", name = "sp-optic-fiber", amount = 2},
       {type = "item", name = "sp-diamond", amount = 4},
       {type = "item", name = "copper-plate", amount = 1},
       {type = "item", name = "sp-blunagium-plate", amount = 2},
@@ -13599,7 +13769,7 @@ data:extend({
       {type = "item", name = "sp-quantum-foam", amount = 1},
       {type = "item", name = "sp-grobgnum-shard", amount = 2},
       {type = "item", name = "sp-grobgnum-plate", amount = 2},
-      {type = "item", name = "sp-glass-fiber", amount = 1},
+      {type = "item", name = "sp-optic-fiber", amount = 1},
       {type = "item", name = "sp-antimony-pillet", amount = 1},
       {type = "fluid", name = "sp-grobgnumylene", amount = 5},
       {type = "item", name = "sp-biomass", amount = 2},
@@ -13621,7 +13791,7 @@ data:extend({
       {type = "item", name = "sp-fermium-condensate", amount = 2},
       {type = "item", name = "sp-grobgnum-shard", amount = 2},
       {type = "item", name = "sp-grobgnum-plate", amount = 1},
-      {type = "item", name = "sp-glass-fiber", amount = 1},
+      {type = "item", name = "sp-optic-fiber", amount = 1},
       {type = "item", name = "sp-antimony-pillet", amount = 2},
       {type = "fluid", name = "sp-grobgnum-hydroxide", amount = 8},
       {type = "item", name = "sp-biomass", amount = 3},

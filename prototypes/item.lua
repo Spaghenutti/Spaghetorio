@@ -3517,6 +3517,16 @@ data:extend({
   },
   {
     type = "item",
+    name = "sp-graphite-impact-shell",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/graphite-impact-shell.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-mechanical-component",
+    order = "ceramic-[graphite-impact-shell]",
+    stack_size = 50
+  },
+  {
+    type = "item",
     name = "sp-flange",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/flange.png",
     icon_size = 64,
@@ -3547,12 +3557,12 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-glass-fiber",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/icons/glass-fiber.png",
+    name = "sp-optic-fiber",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/optic-fiber.png",
     icon_size = 64,
     scale = 0.5,
     subgroup = "sp-mechanical-component",
-    order = "cable-[glass-fiber]",
+    order = "cable-[optic-fiber]",
     stack_size = 100
   },
   {
@@ -4884,6 +4894,16 @@ data:extend({
     scale = 0.5,
     subgroup = "sp-ceramic-material",
     order = "[silicon-nitride]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "sp-silicon-dioxide",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/silicon-dioxide.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "sp-ceramic-material",
+    order = "[silicon-dioxide]",
     stack_size = 50
   },
   {
