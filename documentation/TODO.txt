@@ -172,6 +172,7 @@ TODO for 0.3.14
   + Add biological / agricultural item group
 
 TODO for 0.3.15
+  - Add starter patches for resources requires for rail
   - Change lightning collectors to power poles
   - DO THIS FIRST!!! -- Fix casting recipes
   - Add casting recipes
