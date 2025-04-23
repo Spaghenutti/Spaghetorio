@@ -159,7 +159,6 @@ TODO for 0.3.13
   + Update cryogenic science 2 branch of tech tree
 
 TODO for 0.3.14
-  - Verify agriculture recipe chain is realisitc to do
   + Add recipe for empty research data card
   - Add uses for empty research data card
   + Update computer science 2 branch of tech tree
@@ -176,6 +175,7 @@ TODO for 0.3.14
     - gold
     - silver-solder
     - optic-fiber
+    - phase-change-memory
 
 TODO for 0.3.15
   - Add starter patches for resources requires for rail

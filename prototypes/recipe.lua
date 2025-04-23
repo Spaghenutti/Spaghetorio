@@ -5945,17 +5945,18 @@ data:extend({
     category = "electronics",
     enabled = false,
     allow_productivity = true,
-    energy_required = 4.4,
+    energy_required = 9,
     ingredients = {
+      {type = "item", name = "sp-gold", amount = 1},
       {type = "item", name = "plastic-bar", amount = 1},
-      {type = "item", name = "sp-high-purity-silicon", amount = 2},
-      {type = "item", name = "copper-cable", amount = 1},
-      {type = "item", name = "sp-titanium-nitride", amount = 1},
+      {type = "item", name = "sp-high-purity-silicon", amount = 4},
+      {type = "item", name = "copper-cable", amount = 2},
+      {type = "item", name = "sp-titanium-nitride", amount = 2},
       {type = "item", name = "sp-platinum", amount = 1},
-      {type = "item", name = "sp-silver-solder", amount = 1}
+      {type = "item", name = "sp-silver-solder", amount = 2}
     },
     results = {
-      {type = "item", name = "sp-antenna-chip", amount = 2}
+      {type = "item", name = "sp-antenna-chip", amount = 4}
     }
   },
   {
@@ -6005,16 +6006,18 @@ data:extend({
     category = "electronics",
     enabled = false,
     allow_productivity = true,
-    energy_required = 3,
+    energy_required = 8,
     ingredients = {
       {type = "item", name = "plastic-bar", amount = 1},
-      {type = "item", name = "sp-circuit-die", amount = 1},
-      {type = "item", name = "sp-memory-die", amount = 2},
-      {type = "item", name = "sp-palladium", amount = 1},
-      {type = "item", name = "sp-silver-solder", amount = 1}
+      {type = "item", name = "sp-multi-layer-ceramic-capacitor", amount = 12},
+      {type = "item", name = "sp-circuit-die", amount = 3},
+      {type = "item", name = "sp-memory-die", amount = 6},
+      {type = "item", name = "sp-palladium", amount = 2},
+      {type = "item", name = "sp-gold", amount = 1},
+      {type = "item", name = "sp-silver-solder", amount = 3}
     },
     results = {
-      {type = "item", name = "sp-processor", amount = 1}
+      {type = "item", name = "sp-processor", amount = 2}
     }
   },
   {
@@ -6046,6 +6049,7 @@ data:extend({
     allow_productivity = true,
     energy_required = 10,
     ingredients = {
+      {type = "item", name = "sp-gold", amount = 1},
       {type = "item", name = "sp-vanadium-pentoxide", amount = 1},
       {type = "item", name = "sp-silicon-nitride", amount = 1},
       {type = "item", name = "sp-silicon-dioxide", amount = 2},
@@ -6212,13 +6216,14 @@ data:extend({
     category = "electronics-with-fluid",
     enabled = false,
     allow_productivity = true,
-    energy_required = 5,
+    energy_required = 6,
     ingredients = {
       {type = "item", name = "sp-aluminum-sheet", amount = 1},
       {type = "item", name = "sp-mosfet", amount = 4},
       {type = "item", name = "sp-diode", amount = 4},
       {type = "item", name = "sp-capacitor", amount = 2},
       {type = "item", name = "sp-coil", amount = 2},
+      {type = "item", name = "sp-gold", amount = 1},
       {type = "item", name = "sp-polyvinyl-fluoride", amount = 2},
       {type = "fluid", name = "sp-epoxy", amount = 10}
     },

@@ -106,6 +106,7 @@ util.recipe.change_recipe_ingredients("supercapacitor",
     {type = "item", name = "superconductor", amount = 2},
     {type = "item", name = "holmium-plate", amount = 1},
     {type = "item", name = "sp-silver-solder", amount = 1},
+    {type = "item", name = "sp-gold", amount = 1},
     {type = "fluid", name = "electrolyte", amount = 10}
   },
   5)
