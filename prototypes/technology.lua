@@ -2698,6 +2698,7 @@ data:extend({
         {"production-science-pack", 1},
         {"utility-science-pack", 1},
         {"cryogenic-science-pack", 1},
+        {"agricultural-science-pack", 1},
         {"sp-computer-science-pack-2", 1}
       },
       time = 30
@@ -5028,6 +5029,7 @@ data:extend({
         {"production-science-pack", 1},
         {"utility-science-pack", 1},
         {"cryogenic-science-pack", 1},
+        {"agricultural-science-pack", 1},
         {"sp-computer-science-pack-2", 1}
       },
       time = 30

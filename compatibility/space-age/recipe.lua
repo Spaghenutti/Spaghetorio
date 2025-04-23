@@ -100,6 +100,19 @@ util.recipe.change_recipe_ingredients("superconductor",
   },
   5)
 
+util.recipe.change_recipe_ingredients("quantum-processor",
+  {
+    {type = "item", name = "sp-quantum-data-plane", amount = 1},
+    {type = "item", name = "holmium-plate", amount = 1},
+    {type = "item", name = "sp-phase-change-memory", amount = 2},
+    {type = "item", name = "sp-optic-fiber", amount = 1},
+    {type = "item", name = "sp-silver-indium-cadmium", amount = 1},
+    {type = "item", name = "sp-copper-indium-gallium-selenide", amount = 1},
+    {type = "item", name = "superconductor", amount = 1},
+    {type = "fluid", name = "fluoroketone-cold", amount = 10}
+  },
+  20)
+
 util.recipe.change_recipe_ingredients("supercapacitor",
   {
     {type = "item", name = "sp-barium-titanate", amount = 1},
