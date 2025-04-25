@@ -14,9 +14,15 @@ data:extend({
   },
   {
     type = "item-subgroup",
+    name = "sp-vulcanic-rock",  -- #ForRegEx# - item-subgroup
+    group = "sp-resources",
+    order = "a1"
+  },
+  {
+    type = "item-subgroup",
     name = "sp-raw-resource",  -- #ForRegEx# - item-subgroup
     group = "sp-resources",
-    order = "a"
+    order = "a2"
   },
   {
     type = "item-subgroup",

@@ -2,20 +2,21 @@
 Version: 0.3.14
 Date: 2025-05-09
   Features:
-    - Added new items, recipes and technologies after unlocking computer science pack
-  Changes:
-    - Modified some recipes for some electronics related intermediates
-    - Renamed glass fiber to optic fiber (you will have to select again from crafting menu on machine "optic fiber")
+    - Added vulcanic rocks
+    - Added new casting recipes
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.13
 Date: 2025-05-02
   Features:
     - Added water freezing recipe
+    - Added new items, recipes and technologies after unlocking computer science pack
   Changes:
     - Changed recipes for recipes in cryogenic tech branch
     - Breeder reactor now requires fluoroketone for creating isotopes
     - Antimony processing revamped and it is now unlocked after cryogenic science pack
     - Updated some recipes related to rocket engine
+    - Modified some recipes for some electronics related intermediates
+    - Renamed glass fiber to optic fiber (you will have to select again from crafting menu on machine "optic fiber")
   Bugfixes:
     - Icons of nuclear fuel rods were not shown correctly
 ---------------------------------------------------------------------------------------------------
