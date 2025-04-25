@@ -160,7 +160,6 @@ TODO for 0.3.13
 
 TODO for 0.3.14
   + Add recipe for empty research data card
-  - Add uses for empty research data card
   + Update computer science 2 branch of tech tree
     + Uses for tellurium
       + Add thermocouple (uses tellurium)
@@ -171,11 +170,11 @@ TODO for 0.3.14
       + Add phase change memory
   + Update utility science 2 branch of tech tree
   + Add biological / agricultural item group
-  - verify recipes that could use:
-    - gold
-    - silver-solder
-    - optic-fiber
-    - phase-change-memory
+  + verify recipes that could use:
+    + gold
+    + silver-solder
+    + optic-fiber
+    + phase-change-memory
 
 TODO for 0.3.15
   - Add starter patches for resources requires for rail
@@ -222,7 +221,6 @@ TODO for 0.3.15
       - melt from lava
   - Create some alloys with foundry?
     - bronze
-  - Fix productivity technologies (see steel plate productivity)
 
 TODO for 0.3.16
   - Add recipe chains for core mining
@@ -251,6 +249,7 @@ TODO for 0.3.18
   - Add back blunagium, grobgnum, rukite and yemnuth rockets (even though they are unlocked later)
 
 TODO for 0.3.xx
+  - Add uses for empty research data card
   - Add cool items with data and computer technology for computer science 3 or maybe 4? :3
   - Mask ores depending on tiles
   - Fix iodine brine spawning on start location (seed: 2806285432)
@@ -283,6 +282,7 @@ TODO for 0.3.xx
   - Split fuel into categories
   - Add nuclear and antimatter locomotive
   - set allow_decomposition = false for many many recipes
+  - Fix productivity technologies (see steel plate productivity)
 
 --------------------------------------------------------------------------------
 
