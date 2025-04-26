@@ -346,6 +346,22 @@ function data_util.picture_with_glow(image, glow, tint)
 end
 
 
+function data_util.create_casting_icon(molten_metal_icon, byproduct_icons)
+
+  local icons = {}
+
+  -- Add the molten metal icon
+  table.insert(icons, {icon = molten_metal_icon, icon_size = 64, scale = 1, shift = {-8, 20}})
+
+  -- Loop through byproduct_icons and add each one to the icons table
+  for i, byproduct_icon in ipairs(byproduct_icons) do
+    table.insert(icons, {icon = byproduct_icon, icon_size = 64, scale = 0.8, shift = {16 - i * 20, -8}})
+  end
+
+  return icons
+end
+
+
 function data_util.create_melting_from_lava_icon(molten_metal_icon, byproduct_icon)
   icons = {
     {icon = "__space-age__/graphics/icons/fluid/lava.png", icon_size = 64, scale = 0.7, shift = {-4, 0}},

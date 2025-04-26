@@ -2356,7 +2356,8 @@ data:extend({
       {type = "item", name = "sp-scoria", probability = 0.4, amount = 5},
       {type = "item", name = "sp-gallium-chloride", probability = 0.5, amount = 1},
       {type = "fluid", name = "sp-molten-gallium", amount = 20},
-    }
+    },
+    order = "z-from-lava-[gallium]"
   },
   {
     type = "recipe",
@@ -2376,7 +2377,8 @@ data:extend({
       {type = "item", name = "sp-basalt", probability = 0.8, amount = 3},
       {type = "item", name = "sp-indium-sulfate", probability = 0.2, amount = 1},
       {type = "fluid", name = "sp-molten-indium", amount = 30},
-    }
+    },
+    order = "z-from-lava-[indium]"
   },
   {
     type = "recipe",
@@ -2395,7 +2397,8 @@ data:extend({
     results = {
       {type = "item", name = "sp-andesite", probability = 0.5, amount = 8},
       {type = "fluid", name = "sp-molten-lead", amount = 80},
-    }
+    },
+    order = "z-from-lava-[lead]"
   },
   {
     type = "recipe",
@@ -2415,7 +2418,8 @@ data:extend({
       {type = "item", name = "sp-rhyolite", amount = 2},
       {type = "item", name = "sp-magnesium-chloride", amount = 1},
       {type = "fluid", name = "sp-molten-magnesium", amount = 200},
-    }
+    },
+    order = "z-from-lava-[magnesium]"
   },
   {
     type = "recipe",
@@ -2434,7 +2438,8 @@ data:extend({
     results = {
       {type = "item", name = "sp-pumice", probability = 0.5, amount = 5},
       {type = "fluid", name = "sp-molten-nickel", amount = 180},
-    }
+    },
+    order = "z-from-lava-[nickel]"
   },
   {
     type = "recipe",
@@ -2453,7 +2458,8 @@ data:extend({
     results = {
       {type = "item", name = "sp-andesite", probability = 0.5, amount = 5},
       {type = "fluid", name = "sp-molten-tin", amount = 300},
-    }
+    },
+    order = "z-from-lava-[tin]"
   },
   {
     type = "recipe",
@@ -2474,7 +2480,28 @@ data:extend({
       {type = "item", name = "sp-zinc-sulfate", probability = 0.5, amount = 1},
       {type = "item", name = "sp-zinc-oxide", amount = 2},
       {type = "fluid", name = "sp-molten-zinc", amount = 100},
-    }
+    },
+    order = "z-from-lava-[zinc]"
+  },
+  {
+    type = "recipe",
+    name = "sp-aluminum-sheet-from-molten",  -- #ForRegEx# - recipe
+    icons = util.icon.create_casting_icon("__Spaghetorio__/graphics/icons/aluminum-sheet.png",
+                                          {"__Spaghetorio__/graphics/icons/molten-aluminum.png",
+                                        "__Spaghetorio__/graphics/icons/molten-lead.png",
+                                      "__Spaghetorio__/graphics/icons/molten-tin.png"}),
+    category = "metallurgy",
+    subgroup = "sp-raw-material",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 10,
+    ingredients = {
+      {type = "fluid", name = "sp-molten-aluminum", amount = 300},
+    },
+    results = {
+      {type = "item", name = "sp-aluminum-sheet", amount = 20}
+    },
+    order = "z-from-molten-[aluminum]"
   },
   ------------------------------------------------------------------------------
   -- MARK: high-temperature-smelting
