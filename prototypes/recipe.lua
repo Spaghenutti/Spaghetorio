@@ -2338,7 +2338,144 @@ data:extend({
   ------------------------------------------------------------------------------
   -- MARK: metallurgy
   ------------------------------------------------------------------------------
-
+  {
+    type = "recipe",
+    name = "sp-molten-gallium-from-lava",  -- #ForRegEx# - recipe
+    icons = util.icon.create_melting_from_lava_icon("__Spaghetorio__/graphics/icons/molten-gallium-only-metal.png",
+                                                    "__Spaghetorio__/graphics/icons/scoria-1.png"),
+    category = "metallurgy",
+    subgroup = "sp-casting-raw-resource",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 30,
+    ingredients = {
+      {type = "fluid", name = "lava", amount = 300},
+      {type = "fluid", name = "sp-hydrogen-chloride", amount = 20},
+    },
+    results = {
+      {type = "item", name = "sp-scoria", probability = 0.4, amount = 5},
+      {type = "item", name = "sp-gallium-chloride", probability = 0.5, amount = 1},
+      {type = "fluid", name = "sp-molten-gallium", amount = 20},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-molten-indium-from-lava",  -- #ForRegEx# - recipe
+    icons = util.icon.create_melting_from_lava_icon("__Spaghetorio__/graphics/icons/molten-indium-only-metal.png",
+                                                    "__Spaghetorio__/graphics/icons/basalt-1.png"),
+    category = "metallurgy",
+    subgroup = "sp-casting-raw-resource",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 24,
+    ingredients = {
+      {type = "fluid", name = "lava", amount = 300},
+      {type = "fluid", name = "sp-hydrogen-sulfide", amount = 16},
+    },
+    results = {
+      {type = "item", name = "sp-basalt", probability = 0.8, amount = 3},
+      {type = "item", name = "sp-indium-sulfate", probability = 0.2, amount = 1},
+      {type = "fluid", name = "sp-molten-indium", amount = 30},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-molten-lead-from-lava",  -- #ForRegEx# - recipe
+    icons = util.icon.create_melting_from_lava_icon("__Spaghetorio__/graphics/icons/molten-lead-only-metal.png",
+                                                    "__Spaghetorio__/graphics/icons/andesite-1.png"),
+    category = "metallurgy",
+    subgroup = "sp-casting-raw-resource",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 12,
+    ingredients = {
+      {type = "fluid", name = "lava", amount = 500},
+      {type = "fluid", name = "sp-chlorine", amount = 40},
+    },
+    results = {
+      {type = "item", name = "sp-andesite", probability = 0.5, amount = 8},
+      {type = "fluid", name = "sp-molten-lead", amount = 80},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-molten-magnesium-from-lava",  -- #ForRegEx# - recipe
+    icons = util.icon.create_melting_from_lava_icon("__Spaghetorio__/graphics/icons/molten-magnesium-only-metal.png",
+                                                    "__Spaghetorio__/graphics/icons/rhyolite-1.png"),
+    category = "metallurgy",
+    subgroup = "sp-casting-raw-resource",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 8,
+    ingredients = {
+      {type = "fluid", name = "lava", amount = 500},
+      {type = "fluid", name = "sp-chlorine", amount = 16},
+    },
+    results = {
+      {type = "item", name = "sp-rhyolite", amount = 2},
+      {type = "item", name = "sp-magnesium-chloride", amount = 1},
+      {type = "fluid", name = "sp-molten-magnesium", amount = 200},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-molten-nickel-from-lava",  -- #ForRegEx# - recipe
+    icons = util.icon.create_melting_from_lava_icon("__Spaghetorio__/graphics/icons/molten-nickel-only-metal.png",
+                                                    "__Spaghetorio__/graphics/icons/pumice-1.png"),
+    category = "metallurgy",
+    subgroup = "sp-casting-raw-resource",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 16,
+    ingredients = {
+      {type = "fluid", name = "lava", amount = 500},
+      {type = "fluid", name = "sp-nitrogen", amount = 10},
+    },
+    results = {
+      {type = "item", name = "sp-pumice", probability = 0.5, amount = 5},
+      {type = "fluid", name = "sp-molten-nickel", amount = 180},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-molten-tin-from-lava",  -- #ForRegEx# - recipe
+    icons = util.icon.create_melting_from_lava_icon("__Spaghetorio__/graphics/icons/molten-tin-only-metal.png",
+                                                    "__Spaghetorio__/graphics/icons/andesite-1.png"),
+    category = "metallurgy",
+    subgroup = "sp-casting-raw-resource",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 12,
+    ingredients = {
+      {type = "fluid", name = "lava", amount = 500},
+      {type = "fluid", name = "sp-chlorine", amount = 20},
+    },
+    results = {
+      {type = "item", name = "sp-andesite", probability = 0.5, amount = 5},
+      {type = "fluid", name = "sp-molten-tin", amount = 300},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-molten-zinc-from-lava",  -- #ForRegEx# - recipe
+    icons = util.icon.create_melting_from_lava_icon("__Spaghetorio__/graphics/icons/molten-zinc-only-metal.png",
+                                                    "__Spaghetorio__/graphics/icons/obsidian-1.png"),
+    category = "metallurgy",
+    subgroup = "sp-casting-raw-resource",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 20,
+    ingredients = {
+      {type = "fluid", name = "lava", amount = 500},
+      {type = "item", name = "calcite", amount = 2},
+    },
+    results = {
+      {type = "item", name = "sp-obsidian", probability = 0.7, amount = 3},
+      {type = "item", name = "sp-zinc-sulfate", probability = 0.5, amount = 1},
+      {type = "item", name = "sp-zinc-oxide", amount = 2},
+      {type = "fluid", name = "sp-molten-zinc", amount = 100},
+    }
+  },
   ------------------------------------------------------------------------------
   -- MARK: high-temperature-smelting
   ------------------------------------------------------------------------------

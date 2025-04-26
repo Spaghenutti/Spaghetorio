@@ -195,27 +195,32 @@ TODO for 0.3.15
       - casting into sheets
       - casting into cable
     - tin
+      + melt from lava
       - melt from tinstone
       - casting into tin ingot
     - lead
+      + melt from lava
       - melt from tinstone
       - melt from leadstone
       - casting into lead ingot
     - zinc
+      + melt from lava
       - melt from zinc oxide with sulfuric acid with bad ratio
       - casting into zinc plate
     - magnesium
+      + melt from lava
       - melt from magnesium ore with sulfuric acid with bad ratio
       - casting into magnesium slab
     - nickel
+      + melt from lava
       - melt from nickel ore (also add as output molten iron)
       - casting into nickel ingot
     - indium
-      - melt from lava
+      + melt from lava
       - melt from indium sulfate
       - casting into nickel ingot
     - gallium
-      - melt from lava
+      + melt from lava
       - melt from gallium chloride
       - casting into nickel ingot
     - potassium

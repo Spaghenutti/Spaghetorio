@@ -3,7 +3,10 @@ Version: 0.3.14
 Date: 2025-05-09
   Features:
     - Added vulcanic rocks
+    - Added new melting recipes from lava
     - Added new casting recipes
+  Changes:
+    - Updated existing melting and casting recipes
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.13
 Date: 2025-05-02
