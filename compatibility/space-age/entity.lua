@@ -42,6 +42,9 @@ data.raw.item["ice"].subgroup = "sp-raw-resource"
 data.raw.item["carbon"].subgroup = "sp-processed-non-metal"
 data.raw.item["lithium"].subgroup = "sp-processed-metal"
 
+data.raw.fluid["molten-copper"].subgroup = "sp-molten-metal"
+data.raw.fluid["molten-iron"].subgroup = "sp-molten-metal"
+
 -- group material
 data.raw.item["tungsten-plate"].subgroup = "sp-raw-material"
 data.raw.item["holmium-plate"].subgroup = "sp-raw-material"

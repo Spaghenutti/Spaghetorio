@@ -20,21 +20,15 @@ data:extend({
   },
   {
     type = "item-subgroup",
+    name = "sp-casting-raw-resource",  -- #ForRegEx# - item-subgroup
+    group = "sp-resources",
+    order = "a1-casting"
+  },
+  {
+    type = "item-subgroup",
     name = "sp-raw-resource",  -- #ForRegEx# - item-subgroup
     group = "sp-resources",
     order = "a2"
-  },
-  {
-    type = "item-subgroup",
-    name = "sp-casting-raw-resource",  -- #ForRegEx# - item-subgroup
-    group = "sp-resources",
-    order = "a-b-casting"
-  },
-  {
-    type = "item-subgroup",
-    name = "sp-enriched-resource-from-acrocrystal",  -- #ForRegEx# - item-subgroup
-    group = "sp-resources",
-    order = "a-z-acrocrystal"
   },
   {
     type = "item-subgroup",
@@ -68,12 +62,6 @@ data:extend({
   },
   {
     type = "item-subgroup",
-    name = "sp-raw-resource-from-acromatter",  -- #ForRegEx# - item-subgroup
-    group = "sp-resources",
-    order = "c-z-acromatter"
-  },
-  {
-    type = "item-subgroup",
     name = "sp-processed-resource",  -- #ForRegEx# - item-subgroup
     group = "sp-resources",
     order = "d-a"
@@ -92,12 +80,6 @@ data:extend({
   },
   {
     type = "item-subgroup",
-    name = "sp-processed-resource-from-acrovoid",  -- #ForRegEx# - item-subgroup
-    group = "sp-resources",
-    order = "d-z-acrovoid"
-  },
-  {
-    type = "item-subgroup",
     name = "sp-radioactive-resource",  -- #ForRegEx# - item-subgroup
     group = "sp-resources",
     order = "e"
@@ -107,6 +89,24 @@ data:extend({
     name = "sp-alien-processed-resource",  -- #ForRegEx# - item-subgroup
     group = "sp-resources",
     order = "f"
+  },
+  {
+    type = "item-subgroup",
+    name = "sp-enriched-resource-from-acrocrystal",  -- #ForRegEx# - item-subgroup
+    group = "sp-resources",
+    order = "g1-z-acrocrystal"
+  },
+  {
+    type = "item-subgroup",
+    name = "sp-raw-resource-from-acromatter",  -- #ForRegEx# - item-subgroup
+    group = "sp-resources",
+    order = "g2-z-acromatter"
+  },
+  {
+    type = "item-subgroup",
+    name = "sp-processed-resource-from-acrovoid",  -- #ForRegEx# - item-subgroup
+    group = "sp-resources",
+    order = "g3-z-acrovoid"
   },
   {
     type = "item-subgroup",
@@ -398,21 +398,27 @@ data:extend({
   },
   {
     type = "item-subgroup",
-    name = "sp-aqueous-fluid",  -- #ForRegEx# - item-subgroup
+    name = "sp-molten-metal",  -- #ForRegEx# - item-subgroup
     group = "fluids",
     order = "a"
   },
   {
     type = "item-subgroup",
-    name = "sp-solution",  -- #ForRegEx# - item-subgroup
+    name = "sp-aqueous-fluid",  -- #ForRegEx# - item-subgroup
     group = "fluids",
     order = "b"
   },
   {
     type = "item-subgroup",
-    name = "sp-dirty-fluid",  -- #ForRegEx# - item-subgroup
+    name = "sp-solution",  -- #ForRegEx# - item-subgroup
     group = "fluids",
     order = "c"
+  },
+  {
+    type = "item-subgroup",
+    name = "sp-dirty-fluid",  -- #ForRegEx# - item-subgroup
+    group = "fluids",
+    order = "d"
   },
   {
     type = "item-subgroup",
@@ -424,25 +430,25 @@ data:extend({
     type = "item-subgroup",
     name = "sp-oil",  -- #ForRegEx# - item-subgroup
     group = "fluids",
-    order = "d"
+    order = "e"
   },
   {
     type = "item-subgroup",
     name = "sp-chemical",  -- #ForRegEx# - item-subgroup
     group = "fluids",
-    order = "e"
+    order = "f"
   },
   {
     type = "item-subgroup",
     name = "sp-gas",  -- #ForRegEx# - item-subgroup
     group = "fluids",
-    order = "f"
+    order = "g"
   },
   {
     type = "item-subgroup",
     name = "sp-alien",  -- #ForRegEx# - item-subgroup
     group = "fluids",
-    order = "g"
+    order = "h"
   },
   {
     type = "item-subgroup",

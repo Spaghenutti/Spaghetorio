@@ -177,16 +177,17 @@ TODO for 0.3.14
     + phase-change-memory
 
 TODO for 0.3.15
+  - Make it such agricultural science does not spoil
   - Add starter patches for resources requires for rail
   - Change lightning collectors to power poles
   - DO THIS FIRST!!! -- Fix casting recipes
   - For some casting recipes from lava add as byproduct lava rocks like:
-    - Andesite: Si, Al, Fe, Mg, Ca, Na, K
-    - Basalt: Si, Al, Fe, Mg, Ca, Na
-    - Obsidian: Si, Al, Fe, Mg
-    - Pumice: Si, Al, K, Na, Fe, Mg
-    - Rhyolite: Si, Al, K, Na
-    - Scoria: Si, Al, Fe, Mg, Ca
+    + Andesite: Si, Al, Fe, Mg, Ca, Na, K
+    + Basalt: Si, Al, Fe, Mg, Ca, Na
+    + Obsidian: Si, Al, Fe, Mg
+    + Pumice: Si, Al, K, Na, Fe, Mg
+    + Rhyolite: Si, Al, K, Na
+    + Scoria: Si, Al, Fe, Mg, Ca
   - Add casting recipes
     - Aluminum
       - melt from alumina
