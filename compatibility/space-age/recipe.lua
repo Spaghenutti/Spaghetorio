@@ -9,8 +9,8 @@ remove_prototypes.remove_one_prototype("recipe", "acid-neutralisation")
 remove_prototypes.remove_one_prototype("recipe", "coal-synthesis")
 
 -- Delete casting recipes
-data.raw.recipe["casting-low-density-structure"].hidden = true  --  can not be deleted
-data.raw.recipe["casting-low-density-structure"].hidden = true  --  can not be deleted
+data.raw.recipe["concrete-from-molten-iron"].hidden = true  --  can not be deleted
+data.raw.recipe["casting-low-density-structure"].hidden = true  --  can not be deleted - I guess because of the productivity research
 data.raw.recipe["casting-pipe-to-ground"].hidden = true  --  can not be deleted
 
 --------------------------------------------------------------------------------

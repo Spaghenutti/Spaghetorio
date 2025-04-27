@@ -1420,6 +1420,7 @@ data.raw.technology["spidertron"].unit.ingredients = {
   {"utility-science-pack", 1},
 }
 
+table.insert(data.raw.technology["atomic-bomb"].prerequisites, "sp-advanced-processing-unit")
 data.raw.technology["atomic-bomb"].unit.ingredients = {
   {"sp-automation-science-pack-3", 1},
   {"sp-logistic-science-pack-3", 1},

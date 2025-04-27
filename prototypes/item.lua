@@ -3793,7 +3793,7 @@ data:extend({
     icon_size = 64,
     scale = 0.5,
     subgroup = "sp-electronic-optical-component",
-    order = "basic-[diode]",
+    order = "basic-diode-[diode]",
     stack_size = 200
   },
   {
@@ -3823,7 +3823,7 @@ data:extend({
     icon_size = 64,
     scale = 0.5,
     subgroup = "sp-electronic-optical-component",
-    order = "basic-[light-emitting-diode]",
+    order = "basic-diode-[light-emitting-diode]",
     stack_size = 200
   },
   {
@@ -3843,7 +3843,7 @@ data:extend({
     icon_size = 64,
     scale = 0.5,
     subgroup = "sp-electronic-optical-component",
-    order = "basic-[laser-diode]",
+    order = "basic-diode-[laser-diode]",
     stack_size = 200
   },
   {
@@ -3853,7 +3853,7 @@ data:extend({
     icon_size = 64,
     scale = 0.5,
     subgroup = "sp-electronic-optical-component",
-    order = "basic-[photodiode]",
+    order = "basic-diode-[photodiode]",
     stack_size = 200
   },
   {

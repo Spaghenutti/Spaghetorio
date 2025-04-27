@@ -2758,6 +2758,74 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "sp-molten-iron-from-crushed-iron",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__space-age__/graphics/icons/fluid/molten-iron.png", 64,
+                                         "__Spaghetorio__/graphics/icons/crushed-iron-ore-1.png", 64),
+    category = "metallurgy",
+    subgroup = "sp-molten-metal",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 30,
+    ingredients = {
+      {type = "item", name = "sp-enriched-iron", amount = 80},
+    },
+    results = {
+      {type = "fluid", name = "molten-iron", amount = 500},
+    },
+  },
+  {
+    type = "recipe",
+    name = "sp-molten-iron-from-enriched-iron",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__space-age__/graphics/icons/fluid/molten-iron.png", 64,
+                                         "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/enriched-iron/enriched-iron.png", 64),
+    category = "metallurgy",
+    subgroup = "sp-molten-metal",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 20,
+    ingredients = {
+      {type = "item", name = "sp-enriched-iron", amount = 60},
+    },
+    results = {
+      {type = "fluid", name = "molten-iron", amount = 500},
+    },
+  },
+  {
+    type = "recipe",
+    name = "sp-molten-copper-from-crushed-copper",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__space-age__/graphics/icons/fluid/molten-copper.png", 64,
+                                         "__Spaghetorio__/graphics/icons/crushed-copper-ore-1.png", 64),
+    category = "metallurgy",
+    subgroup = "sp-molten-metal",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 30,
+    ingredients = {
+      {type = "item", name = "sp-enriched-copper", amount = 80},
+    },
+    results = {
+      {type = "fluid", name = "molten-copper", amount = 500},
+    },
+  },
+  {
+    type = "recipe",
+    name = "sp-molten-copper-from-enriched-copper",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__space-age__/graphics/icons/fluid/molten-copper.png", 64,
+                                         "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/enriched-copper/enriched-copper.png", 64),
+    category = "metallurgy",
+    subgroup = "sp-molten-metal",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 20,
+    ingredients = {
+      {type = "item", name = "sp-enriched-copper", amount = 60},
+    },
+    results = {
+      {type = "fluid", name = "molten-copper", amount = 500},
+    },
+  },
+  {
+    type = "recipe",
     name = "sp-casting-aluminum-sheet",  -- #ForRegEx# - recipe
     icons = util.icon.create_casting_icon("__Spaghetorio__/graphics/icons/aluminum-sheet.png",
                                           {"__Spaghetorio__/graphics/icons/molten-tin.png"}),
@@ -2935,6 +3003,26 @@ data:extend({
       {type = "item", name = "sp-gallium", amount = 50}
     },
     order = "z-from-molten-[gallium]"
+  },
+  {
+    type = "recipe",
+    name = "sp-casting-pipe-with-lead",  -- #ForRegEx# - recipe
+    icons = util.icon.create_casting_icon("__base__/graphics/icons/pipe.png",
+                                          {"__Spaghetorio__/graphics/icons/molten-indium.png",
+                                           "__space-age__/graphics/icons/fluid/molten-iron.png"}),
+    category = "metallurgy",
+    subgroup = "sp-casting-mechanical-component",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 0.8,
+    ingredients = {
+      {type = "fluid", name = "molten-iron", amount = 8},
+      {type = "fluid", name = "sp-molten-lead", amount = 2},
+    },
+    results = {
+      {type = "item", name = "pipe", amount = 1}
+    },
+    order = "b[casting]-f[casting-pipe]2",
   },
   ------------------------------------------------------------------------------
   -- MARK: high-temperature-smelting

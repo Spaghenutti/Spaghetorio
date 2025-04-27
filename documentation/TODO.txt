@@ -177,25 +177,30 @@ TODO for 0.3.13
 TODO for 0.3.14
   + Move kovarex enrichment before space science
   + Make it such agricultural science does not spoil
-  - Fix casting recipes
+  + Fix casting recipes
     + casting iron (update existing recipe)
     + casting copper (update existing recipe)
     + casting steel - change to steel plate (update existing recipe)
     + casting iron gear wheel
     + casting iron stick
     + casting pipe
-    - casting pipe with lead
+    + casting pipe with lead
     + casting copper cable
     + remove low density structure recipe
     + remove concrete recipe
     + remove pipe to ground recipe
   - Add casting recipes
     - Add recipes for existing factorio stuff
-      - molten iron from crushed
-      - molten iron from enriched
-      - molten copper from crushed
-      - molten copper from enriched
+      + molten iron from crushed
+      + molten iron from enriched
+      + molten copper from crushed
+      + molten copper from enriched
+      - casting iron beam
+      - casting iron beam from crushed
+      - casting iron beam from enriched
       - casting steel beam
+      - casting steel beam from crushed
+      - casting steel beam from enriched
     - Aluminum
       + melt from alumina
       + casting into frames
