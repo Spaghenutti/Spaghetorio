@@ -9,20 +9,9 @@ remove_prototypes.remove_one_prototype("recipe", "acid-neutralisation")
 remove_prototypes.remove_one_prototype("recipe", "coal-synthesis")
 
 -- Delete casting recipes
--- remove_prototypes.remove_one_prototype("recipe", "molten-iron-from-lava")
--- remove_prototypes.remove_one_prototype("recipe", "copper-iron-from-lava")
--- remove_prototypes.remove_one_prototype("recipe", "concrete-from-molten-iron")
--- remove_prototypes.remove_one_prototype("recipe", "casting-low-density-structure")
--- remove_prototypes.remove_one_prototype("recipe", "molten-iron")
--- remove_prototypes.remove_one_prototype("recipe", "molten-copper")
--- remove_prototypes.remove_one_prototype("recipe", "casting-iron")
--- remove_prototypes.remove_one_prototype("recipe", "casting-steel")
--- remove_prototypes.remove_one_prototype("recipe", "casting-copper")
--- remove_prototypes.remove_one_prototype("recipe", "casting-iron-gear-wheel")
--- remove_prototypes.remove_one_prototype("recipe", "casting-iron-stick")
--- remove_prototypes.remove_one_prototype("recipe", "casting-pipe")
--- remove_prototypes.remove_one_prototype("recipe", "casting-pipe-to-ground")
--- remove_prototypes.remove_one_prototype("recipe", "casting-copper-cable")
+data.raw.recipe["casting-low-density-structure"].hidden = true  --  can not be deleted
+data.raw.recipe["casting-low-density-structure"].hidden = true  --  can not be deleted
+data.raw.recipe["casting-pipe-to-ground"].hidden = true  --  can not be deleted
 
 --------------------------------------------------------------------------------
 -- MARK: change recipe subgroups
@@ -218,6 +207,65 @@ util.recipe.change_recipe_ingredients("quality-module-3",
     -- {type = "item", name = "sp-memory-chip", amount = 4}
   },
   45)
+
+--------------------------------------------------------------------------------
+-- MARK: Casting
+--------------------------------------------------------------------------------
+
+data.raw.recipe["casting-iron"].icon = nil
+data.raw.recipe["casting-iron"].icons = util.icon.create_casting_icon("__base__/graphics/icons/iron-plate.png",
+                                                                      {"__space-age__/graphics/icons/fluid/molten-iron.png"})
+
+data.raw.recipe["casting-copper"].icon = nil
+data.raw.recipe["casting-copper"].icons = util.icon.create_casting_icon("__base__/graphics/icons/copper-plate.png",
+                                                                        {"__space-age__/graphics/icons/fluid/molten-copper.png"})
+
+data.raw.recipe["casting-steel"].icon = nil
+data.raw.recipe["casting-steel"].icons = util.icon.create_casting_icon("__Spaghetorio__/graphics/krastorio/icons/items/steel-plate.png",
+                                                                       {"__space-age__/graphics/icons/fluid/molten-iron.png"})
+util.recipe.change_recipe_ingredients("casting-steel",
+  {
+    {type = "fluid", name = "molten-iron", amount = 50},
+    {type = "item", name = "carbon", amount = 1},
+  },
+  5)
+data.raw.recipe["casting-steel"].results = {
+  {type = "item", name = "steel-plate", amount = 4}
+}
+
+data.raw.recipe["casting-iron-gear-wheel"].icon = nil
+data.raw.recipe["casting-iron-gear-wheel"].icons = util.icon.create_casting_icon("__base__/graphics/icons/iron-gear-wheel.png",
+                                                                                 {"__space-age__/graphics/icons/fluid/molten-iron.png"})
+util.recipe.change_recipe_ingredients("casting-steel",
+  {
+    {type = "fluid", name = "molten-iron", amount = 20},
+  },
+  2)
+data.raw.recipe["casting-iron-gear-wheel"].results = {
+  {type = "item", name = "iron-gear-wheel", amount = 3}
+}
+
+data.raw.recipe["casting-iron-stick"].icon = nil
+data.raw.recipe["casting-iron-stick"].icons = util.icon.create_casting_icon("__base__/graphics/icons/iron-stick.png",
+                                                                            {"__space-age__/graphics/icons/fluid/molten-iron.png"})
+
+data.raw.recipe["casting-pipe"].icon = nil
+data.raw.recipe["casting-pipe"].icons = util.icon.create_casting_icon("__base__/graphics/icons/pipe.png",
+                                                                      {"__space-age__/graphics/icons/fluid/molten-iron.png"})
+util.recipe.change_recipe_ingredients("casting-steel",
+  {
+    {type = "fluid", name = "molten-iron", amount = 20},
+  },
+  1)
+
+data.raw.recipe["casting-copper-cable"].icon = nil
+data.raw.recipe["casting-copper-cable"].icons = util.icon.create_casting_icon("__base__/graphics/icons/copper-cable.png",
+                                                                              {"__space-age__/graphics/icons/fluid/molten-iron.png"})
+util.recipe.change_recipe_ingredients("casting-copper-cable",
+  {
+    {type = "fluid", name = "molten-iron", amount = 10},
+  },
+  0.4)
 
 --------------------------------------------------------------------------------
 -- MARK: Combat
