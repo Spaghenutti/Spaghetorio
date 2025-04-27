@@ -243,6 +243,34 @@ data.raw.technology["electromagnetic-plant"].unit = {
 data.raw.technology["foundry"].prerequisites = {
   "tungsten-steel",
 }
+table.insert(data.raw.technology["foundry"].effects, {type = "unlock-recipe", recipe = "sp-molten-lead-from-lava"})
+table.insert(data.raw.technology["foundry"].effects, {type = "unlock-recipe", recipe = "sp-molten-magnesium-from-lava"})
+table.insert(data.raw.technology["foundry"].effects, {type = "unlock-recipe", recipe = "sp-molten-nickel-from-lava"})
+table.insert(data.raw.technology["foundry"].effects, {type = "unlock-recipe", recipe = "sp-molten-tin-from-lava"})
+table.insert(data.raw.technology["foundry"].effects, {type = "unlock-recipe", recipe = "sp-molten-zinc-from-lava"})
+table.insert(data.raw.technology["foundry"].effects, {type = "unlock-recipe", recipe = "sp-molten-aluminum"})
+table.insert(data.raw.technology["foundry"].effects, {type = "unlock-recipe", recipe = "sp-molten-tin"})
+table.insert(data.raw.technology["foundry"].effects, {type = "unlock-recipe", recipe = "sp-molten-tin-from-crushed-tinstone"})
+table.insert(data.raw.technology["foundry"].effects, {type = "unlock-recipe", recipe = "sp-molten-tin-and-lead"})
+table.insert(data.raw.technology["foundry"].effects, {type = "unlock-recipe", recipe = "sp-molten-lead"})
+table.insert(data.raw.technology["foundry"].effects, {type = "unlock-recipe", recipe = "sp-molten-zinc"})
+table.insert(data.raw.technology["foundry"].effects, {type = "unlock-recipe", recipe = "sp-molten-zinc-from-oxide"})
+table.insert(data.raw.technology["foundry"].effects, {type = "unlock-recipe", recipe = "sp-molten-magnesium"})
+table.insert(data.raw.technology["foundry"].effects, {type = "unlock-recipe", recipe = "sp-molten-nickel"})
+table.insert(data.raw.technology["foundry"].effects, {type = "unlock-recipe", recipe = "sp-molten-nickel-from-crushed-nickel"})
+table.insert(data.raw.technology["foundry"].effects, {type = "unlock-recipe", recipe = "sp-molten-iron-from-crushed-iron"})
+table.insert(data.raw.technology["foundry"].effects, {type = "unlock-recipe", recipe = "sp-molten-copper-from-crushed-copper"})
+table.insert(data.raw.technology["foundry"].effects, {type = "unlock-recipe", recipe = "sp-casting-aluminum-sheet"})
+table.insert(data.raw.technology["foundry"].effects, {type = "unlock-recipe", recipe = "sp-casting-aluminum-cable"})
+table.insert(data.raw.technology["foundry"].effects, {type = "unlock-recipe", recipe = "sp-casting-aluminum-frame"})
+table.insert(data.raw.technology["foundry"].effects, {type = "unlock-recipe", recipe = "sp-casting-tin-ingot"})
+table.insert(data.raw.technology["foundry"].effects, {type = "unlock-recipe", recipe = "sp-casting-lead-slab"})
+table.insert(data.raw.technology["foundry"].effects, {type = "unlock-recipe", recipe = "sp-casting-zinc-plate"})
+table.insert(data.raw.technology["foundry"].effects, {type = "unlock-recipe", recipe = "sp-casting-magnesium-slab"})
+table.insert(data.raw.technology["foundry"].effects, {type = "unlock-recipe", recipe = "sp-casting-nickel-ingot"})
+table.insert(data.raw.technology["foundry"].effects, {type = "unlock-recipe", recipe = "sp-casting-iron-beam"})
+table.insert(data.raw.technology["foundry"].effects, {type = "unlock-recipe", recipe = "sp-casting-steel-beam"})
+table.insert(data.raw.technology["foundry"].effects, {type = "unlock-recipe", recipe = "sp-casting-pipe-with-lead"})
 data.raw.technology["foundry"].research_trigger = nil
 data.raw.technology["foundry"].unit = {
   count = 500,
@@ -517,6 +545,7 @@ data.raw.technology["legendary-quality"].unit.ingredients = {
   {"agricultural-science-pack", 1}
 }
 
+table.insert(data.raw.technology["foundation"].prerequisites, "foundry")
 data.raw.technology["foundation"].unit.count_formula = nil  -- I will pretend that this is a bug...
 data.raw.technology["foundation"].unit.count = 200
 data.raw.technology["foundation"].unit.ingredients = {

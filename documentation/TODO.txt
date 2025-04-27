@@ -192,15 +192,11 @@ TODO for 0.3.14
   - Add casting recipes
     - Add recipes for existing factorio stuff
       + molten iron from crushed
-      + molten iron from enriched
+      + molten iron from enriched -- (unlock in enriched-resources)
       + molten copper from crushed
-      + molten copper from enriched
-      - casting iron beam
-      - casting iron beam from crushed
-      - casting iron beam from enriched
-      - casting steel beam
-      - casting steel beam from crushed
-      - casting steel beam from enriched
+      + molten copper from enriched -- (unlock in enriched-resources)
+      + casting iron beam
+      + casting steel beam
     - Aluminum
       + melt from alumina
       + casting into frames
@@ -210,7 +206,7 @@ TODO for 0.3.14
       + melt from lava
       + melt from tinstone
       + melt from crushed tinstone
-      + melt from enriched tinstone
+      + melt from enriched tinstone -- (unlock in enriched-resources)
       + casting into tin ingot
     - lead
       + melt from lava
@@ -224,13 +220,13 @@ TODO for 0.3.14
     - magnesium
       + melt from lava
       + melt from magnesium ore with sulfuric acid with bad ratio
-      + melt from enriched magnesium ore with sulfuric acid with bad ratio
+      + melt from enriched magnesium ore with sulfuric acid with bad ratio  -- (unlock in enriched-resources)
       + casting into magnesium slab
     - nickel
       + melt from lava
       + melt from nickel ore (also add as output molten iron)
       + melt from crushed nickel ore (also add as output molten iron)
-      + melt from enriched nickel ore
+      + melt from enriched nickel ore -- (unlock in enriched-resources)
       + casting into nickel ingot
     - indium
       + melt from lava
@@ -243,6 +239,8 @@ TODO for 0.3.14
 
 TODO for 0.3.15
   - Add starter patches for resources requires for rail
+  - Make it such different metals come from different types of lava: lava and hot-lava
+    - The recipes shall be unlocked in advanced casting
   - Change lightning collectors to power poles
     - For some casting recipes from lava add as byproduct lava rocks like:
     + Andesite: Si, Al, Fe, Mg, Ca, Na, K

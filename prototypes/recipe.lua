@@ -3006,6 +3006,43 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "sp-casting-iron-beam",  -- #ForRegEx# - recipe
+    icons = util.icon.create_casting_icon("__base__/graphics/icons/steel-plate.png",
+                                          {"__space-age__/graphics/icons/fluid/molten-iron.png"}),
+    category = "metallurgy",
+    subgroup = "sp-casting-raw-material",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 6,
+    ingredients = {
+      {type = "fluid", name = "molten-iron", amount = 50},
+    },
+    results = {
+      {type = "item", name = "sp-iron-beam", amount = 2}
+    },
+    order = "b[casting]-a2[casting-iron-beam]",
+  },
+  {
+    type = "recipe",
+    name = "sp-casting-steel-beam",  -- #ForRegEx# - recipe
+    icons = util.icon.create_casting_icon("__Spaghetorio__/graphics/krastorio/icons/items/steel-beam.png",
+                                          {"__space-age__/graphics/icons/fluid/molten-iron.png"}),
+    category = "metallurgy",
+    subgroup = "sp-casting-raw-material",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 16,
+    ingredients = {
+      {type = "fluid", name = "molten-iron", amount = 120},
+      {type = "item", name = "carbon", amount = 3},
+    },
+    results = {
+      {type = "item", name = "sp-steel-beam", amount = 6}
+    },
+    order = "b[casting]-c2[casting-steel-beam]",
+  },
+  {
+    type = "recipe",
     name = "sp-casting-pipe-with-lead",  -- #ForRegEx# - recipe
     icons = util.icon.create_casting_icon("__base__/graphics/icons/pipe.png",
                                           {"__Spaghetorio__/graphics/icons/molten-indium.png",

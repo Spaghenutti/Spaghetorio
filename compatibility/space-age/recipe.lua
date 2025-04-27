@@ -236,7 +236,7 @@ data.raw.recipe["casting-steel"].results = {
 data.raw.recipe["casting-iron-gear-wheel"].icon = nil
 data.raw.recipe["casting-iron-gear-wheel"].icons = util.icon.create_casting_icon("__base__/graphics/icons/iron-gear-wheel.png",
                                                                                  {"__space-age__/graphics/icons/fluid/molten-iron.png"})
-util.recipe.change_recipe_ingredients("casting-steel",
+util.recipe.change_recipe_ingredients("casting-iron-gear-wheel",
   {
     {type = "fluid", name = "molten-iron", amount = 20},
   },
