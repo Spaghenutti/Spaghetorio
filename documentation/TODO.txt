@@ -196,25 +196,29 @@ TODO for 0.3.15
       + casting into cable
     - tin
       + melt from lava
-      - melt from tinstone
+      + melt from tinstone
+      + melt from crushed tinstone
+      + melt from enriched tinstone
       + casting into tin ingot
-      + casting into tin and lead ingot
     - lead
       + melt from lava
-      - melt from tinstone
-      - melt from leadstone
+      + melt from tinstone
+      + melt from leadstone
       + casting into lead ingot
     - zinc
       + melt from lava
-      - melt from zinc oxide with sulfuric acid with bad ratio
+      + melt from zinc oxide with sulfuric acid with bad ratio
       + casting into zinc plate
     - magnesium
       + melt from lava
-      - melt from magnesium ore with sulfuric acid with bad ratio
+      + melt from magnesium ore with sulfuric acid with bad ratio
+      + melt from enriched magnesium ore with sulfuric acid with bad ratio
       + casting into magnesium slab
     - nickel
       + melt from lava
       - melt from nickel ore (also add as output molten iron)
+      - melt from crushed nickel ore
+      - melt from enriched nickel ore
       + casting into nickel ingot
     - indium
       + melt from lava

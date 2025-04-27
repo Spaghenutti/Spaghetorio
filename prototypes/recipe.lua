@@ -2485,6 +2485,189 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "sp-molten-aluminum",  -- #ForRegEx# - recipe
+    category = "metallurgy",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 20,
+    ingredients = {
+      {type = "item", name = "sp-alumina", amount = 30},
+    },
+    results = {
+      {type = "fluid", name = "sp-molten-aluminum", amount = 200}
+    },
+  },
+  {
+    type = "recipe",
+    name = "sp-molten-tin",  -- #ForRegEx# - recipe
+    category = "metallurgy",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 8,
+    ingredients = {
+      {type = "item", name = "sp-tinstone", amount = 20},
+    },
+    results = {
+      {type = "fluid", name = "sp-molten-tin", amount = 100}
+    },
+  },
+  {
+    type = "recipe",
+    name = "sp-molten-tin-from-crushed-tinstone",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/molten-tin.png", 64,
+                                         "__Spaghetorio__/graphics/icons/crushed-tinstone-1.png", 64),
+    category = "metallurgy",
+    subgroup = "sp-molten-metal",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 4,
+    ingredients = {
+      {type = "item", name = "sp-crushed-tinstone", amount = 10},
+    },
+    results = {
+      {type = "fluid", name = "sp-molten-tin", amount = 120}
+    },
+  },
+  {
+    type = "recipe",
+    name = "sp-molten-tin-from-enriched-tinstone",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/molten-tin.png", 64,
+                                         "__Spaghetorio__/graphics/icons/enriched-tinstone-1.png", 64),
+    category = "metallurgy",
+    subgroup = "sp-molten-metal",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 2.5,
+    ingredients = {
+      {type = "item", name = "sp-enriched-tinstone", amount = 10},
+    },
+    results = {
+      {type = "fluid", name = "sp-molten-tin", amount = 130}
+    },
+  },
+  {
+    type = "recipe",
+    name = "sp-molten-tin-and-lead",  -- #ForRegEx# - recipe
+    -- Update icons here, search: "-- Add aicon changes here"
+    icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/icons/molten-tin.png", 64, nil,
+                                        "__Spaghetorio__/graphics/icons/molten-lead.png", 64, nil),
+    category = "metallurgy",
+    subgroup = "sp-molten-metal",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 12,
+    ingredients = {
+      {type = "item", name = "sp-tinstone", amount = 30},
+    },
+    results = {
+      {type = "fluid", name = "sp-molten-tin", amount = 140},
+      {type = "fluid", name = "sp-molten-lead", amount = 60}
+    },
+  },
+  {
+    type = "recipe",
+    name = "sp-molten-lead",  -- #ForRegEx# - recipe
+    category = "metallurgy",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 6,
+    ingredients = {
+      {type = "item", name = "sp-leadstone", amount = 10},
+    },
+    results = {
+      {type = "fluid", name = "sp-molten-lead", amount = 100}
+    },
+  },
+  {
+    type = "recipe",
+    name = "sp-molten-zinc",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/icons/molten-zinc.png",
+    category = "metallurgy",
+    subgroup = "sp-molten-metal",
+    enabled = false,
+    allow_productivity = false,
+    energy_required = 10,
+    ingredients = {
+      {type = "item", name = "sp-zinc-sulfate", amount = 10},
+    },
+    results = {
+      {type = "item", name = "sp-zinc-sulfate", amount = 8},
+      {type = "fluid", name = "sp-sulfur-dioxide", amount = 1},
+      {type = "fluid", name = "sp-molten-zinc", amount = 16}
+    },
+  },
+  {
+    type = "recipe",
+    name = "sp-molten-zinc-from-oxide",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/molten-zinc.png", 64,
+                                         "__Spaghetorio__/graphics/icons/zinc-oxide.png", 64),
+    category = "metallurgy",
+    subgroup = "sp-molten-metal",
+    enabled = false,
+    allow_productivity = false,
+    energy_required = 12,
+    ingredients = {
+      {type = "item", name = "sp-zinc-oxide", amount = 20},
+    },
+    results = {
+      {type = "item", name = "sp-zinc-oxide", amount = 18},
+      {type = "fluid", name = "sp-molten-zinc", amount = 10}
+    },
+  },
+  {
+    type = "recipe",
+    name = "sp-molten-zinc-from-enriched-zinc",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/molten-zinc.png", 64,
+                                         "__Spaghetorio__/graphics/icons/enriched-zinc-1.png", 64),
+    category = "metallurgy",
+    subgroup = "sp-molten-metal",
+    enabled = false,
+    allow_productivity = false,
+    energy_required = 16,
+    ingredients = {
+      {type = "item", name = "sp-enriched-zinc", amount = 10},
+    },
+    results = {
+      {type = "fluid", name = "sp-molten-zinc", amount = 200}
+    },
+  },
+  {
+    type = "recipe",
+    name = "sp-molten-magnesium",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/icons/molten-magnesium.png",
+    category = "metallurgy",
+    subgroup = "sp-molten-metal",
+    enabled = false,
+    allow_productivity = false,
+    energy_required = 20,
+    ingredients = {
+      {type = "item", name = "sp-magnesium-chloride", amount = 10},
+    },
+    results = {
+      {type = "item", name = "sp-magnesium-chloride", amount = 2},
+      {type = "fluid", name = "sp-chlorine", amount = 40},
+      {type = "fluid", name = "sp-molten-magnesium", amount = 100}
+    },
+  },
+  {
+    type = "recipe",
+    name = "sp-molten-magnesium-from-enriched-magnesium",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/molten-zinc.png", 64,
+                                         "__Spaghetorio__/graphics/icons/enriched-zinc-1.png", 64),
+    category = "metallurgy",
+    subgroup = "sp-molten-metal",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 15,
+    ingredients = {
+      {type = "item", name = "sp-enriched-magnesium", amount = 15},
+    },
+    results = {
+      {type = "fluid", name = "sp-molten-magnesium", amount = 250}
+    },
+  },
+  {
+    type = "recipe",
     name = "sp-aluminum-sheet-from-molten",  -- #ForRegEx# - recipe
     icons = util.icon.create_casting_icon("__Spaghetorio__/graphics/icons/aluminum-sheet.png",
                                           {"__Spaghetorio__/graphics/icons/molten-tin.png"}),
@@ -2492,12 +2675,12 @@ data:extend({
     subgroup = "sp-raw-material",
     enabled = false,
     allow_productivity = true,
-    energy_required = 10,
+    energy_required = 16,
     ingredients = {
       {type = "fluid", name = "sp-molten-aluminum", amount = 300},
     },
     results = {
-      {type = "item", name = "sp-aluminum-sheet", amount = 20}
+      {type = "item", name = "sp-aluminum-sheet", amount = 30}
     },
     order = "z-from-molten-[aluminum]"
   },
@@ -2552,25 +2735,6 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-tin-ingot", amount = 40}
-    },
-    order = "z-from-molten-[tin]"
-  },
-  {
-    type = "recipe",
-    name = "sp-tin-and-lead-from-molten",  -- #ForRegEx# - recipe
-    icons = util.icon.create_casting_icon("__Spaghetorio__/graphics/icons/tin-and-lead.png",
-                                          {"__Spaghetorio__/graphics/icons/molten-tin.png"}),
-    category = "metallurgy",
-    subgroup = "sp-raw-material",
-    enabled = false,
-    allow_productivity = true,
-    energy_required = 16,
-    ingredients = {
-      {type = "fluid", name = "sp-molten-tin", amount = 200},
-    },
-    results = {
-      {type = "item", name = "sp-tin-ingot", amount = 14},
-      {type = "item", name = "sp-lead-slab", amount = 6}
     },
     order = "z-from-molten-[tin]"
   },
