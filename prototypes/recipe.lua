@@ -2492,9 +2492,10 @@ data:extend({
     energy_required = 20,
     ingredients = {
       {type = "item", name = "sp-alumina", amount = 30},
+      {type = "item", name = "sp-lithium-chloride", amount = 1},
     },
     results = {
-      {type = "fluid", name = "sp-molten-aluminum", amount = 200}
+      {type = "fluid", name = "sp-molten-aluminum", amount = 240}
     },
   },
   {
@@ -2506,9 +2507,10 @@ data:extend({
     energy_required = 8,
     ingredients = {
       {type = "item", name = "sp-tinstone", amount = 20},
+      {type = "fluid", name = "sp-carbon-monoxide", amount = 2},
     },
     results = {
-      {type = "fluid", name = "sp-molten-tin", amount = 100}
+      {type = "fluid", name = "sp-molten-tin", amount = 120}
     },
   },
   {
@@ -2679,9 +2681,10 @@ data:extend({
     energy_required = 40,
     ingredients = {
       {type = "item", name = "sp-nickel-ore", amount = 20},
+      {type = "fluid", name = "ammonia", amount = 2},
     },
     results = {
-      {type = "fluid", name = "sp-molten-nickel", amount = 100},
+      {type = "fluid", name = "sp-molten-nickel", amount = 150},
       {type = "fluid", name = "molten-iron", amount = 70}
     },
   },
@@ -2747,18 +2750,19 @@ data:extend({
     energy_required = 20,
     ingredients = {
       {type = "item", name = "sp-gallium-chloride", amount = 30},
+      {type = "fluid", name = "sp-nitrogen-dioxide", amount = 5},
     },
     results = {
-      {type = "fluid", name = "sp-molten-gallium", amount = 200}
+      {type = "fluid", name = "sp-molten-gallium", amount = 250}
     },
   },
   {
     type = "recipe",
-    name = "sp-aluminum-sheet-from-molten",  -- #ForRegEx# - recipe
+    name = "sp-casting-aluminum-sheet",  -- #ForRegEx# - recipe
     icons = util.icon.create_casting_icon("__Spaghetorio__/graphics/icons/aluminum-sheet.png",
                                           {"__Spaghetorio__/graphics/icons/molten-tin.png"}),
     category = "metallurgy",
-    subgroup = "sp-raw-material",
+    subgroup = "sp-casting-raw-material",
     enabled = false,
     allow_productivity = true,
     energy_required = 16,
@@ -2772,11 +2776,11 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-aluminum-cable-from-molten",  -- #ForRegEx# - recipe
+    name = "sp-casting-aluminum-cable",  -- #ForRegEx# - recipe
     icons = util.icon.create_casting_icon("__Spaghetorio__/graphics/icons/aluminum-cable.png",
                                           {"__Spaghetorio__/graphics/icons/molten-aluminum.png"}),
     category = "metallurgy",
-    subgroup = "sp-mechanical-component",
+    subgroup = "sp-casting-mechanical-component",
     enabled = false,
     allow_productivity = true,
     energy_required = 15,
@@ -2790,11 +2794,11 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-aluminum-frame-from-molten",  -- #ForRegEx# - recipe
+    name = "sp-casting-aluminum-frame",  -- #ForRegEx# - recipe
     icons = util.icon.create_casting_icon("__Spaghetorio__/graphics/icons/aluminum-frame.png",
                                           {"__Spaghetorio__/graphics/icons/molten-aluminum.png"}),
     category = "metallurgy",
-    subgroup = "sp-mechanical-component",
+    subgroup = "sp-casting-mechanical-component",
     enabled = false,
     allow_productivity = true,
     energy_required = 25,
@@ -2808,11 +2812,11 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-tin-ingot-from-molten",  -- #ForRegEx# - recipe
+    name = "sp-casting-tin-ingot",  -- #ForRegEx# - recipe
     icons = util.icon.create_casting_icon("__Spaghetorio__/graphics/icons/tin-ingot.png",
                                           {"__Spaghetorio__/graphics/icons/molten-tin.png"}),
     category = "metallurgy",
-    subgroup = "sp-raw-material",
+    subgroup = "sp-casting-raw-material",
     enabled = false,
     allow_productivity = true,
     energy_required = 20,
@@ -2826,11 +2830,11 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-lead-slab-from-molten",  -- #ForRegEx# - recipe
+    name = "sp-casting-lead-slab",  -- #ForRegEx# - recipe
     icons = util.icon.create_casting_icon("__Spaghetorio__/graphics/icons/lead-slab.png",
                                           {"__Spaghetorio__/graphics/icons/molten-lead.png"}),
     category = "metallurgy",
-    subgroup = "sp-raw-material",
+    subgroup = "sp-casting-raw-material",
     enabled = false,
     allow_productivity = true,
     energy_required = 6,
@@ -2844,11 +2848,11 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-zinc-plate-from-molten",  -- #ForRegEx# - recipe
+    name = "sp-casting-zinc-plate",  -- #ForRegEx# - recipe
     icons = util.icon.create_casting_icon("__Spaghetorio__/graphics/icons/zinc-plate.png",
                                           {"__Spaghetorio__/graphics/icons/molten-zinc.png"}),
     category = "metallurgy",
-    subgroup = "sp-raw-material",
+    subgroup = "sp-casting-raw-material",
     enabled = false,
     allow_productivity = true,
     energy_required = 20,
@@ -2862,11 +2866,11 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-magnesium-slab-from-molten",  -- #ForRegEx# - recipe
+    name = "sp-casting-magnesium-slab",  -- #ForRegEx# - recipe
     icons = util.icon.create_casting_icon("__Spaghetorio__/graphics/icons/magnesium-slab.png",
                                           {"__Spaghetorio__/graphics/icons/molten-magnesium.png"}),
     category = "metallurgy",
-    subgroup = "sp-raw-material",
+    subgroup = "sp-casting-raw-material",
     enabled = false,
     allow_productivity = true,
     energy_required = 24,
@@ -2880,11 +2884,11 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-nickel-ingot-from-molten",  -- #ForRegEx# - recipe
+    name = "sp-casting-nickel-ingot",  -- #ForRegEx# - recipe
     icons = util.icon.create_casting_icon("__Spaghetorio__/graphics/icons/nickel-ingot.png",
                                           {"__Spaghetorio__/graphics/icons/molten-nickel.png"}),
     category = "metallurgy",
-    subgroup = "sp-raw-material",
+    subgroup = "sp-casting-raw-material",
     enabled = false,
     allow_productivity = true,
     energy_required = 16,
@@ -2898,11 +2902,11 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-indium-ingot-from-molten",  -- #ForRegEx# - recipe
+    name = "sp-casting-indium-ingot",  -- #ForRegEx# - recipe
     icons = util.icon.create_casting_icon("__Spaghetorio__/graphics/icons/indium-ingot.png",
                                           {"__Spaghetorio__/graphics/icons/molten-indium.png"}),
     category = "metallurgy",
-    subgroup = "sp-raw-material",
+    subgroup = "sp-casting-raw-material",
     enabled = false,
     allow_productivity = true,
     energy_required = 12,
@@ -2916,7 +2920,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-gallium-ingot-from-molten",  -- #ForRegEx# - recipe
+    name = "sp-casting-gallium",  -- #ForRegEx# - recipe
     icons = util.icon.create_casting_icon("__Spaghetorio__/graphics/icons/gallium.png",
                                           {"__Spaghetorio__/graphics/icons/molten-indium.png"}),
     category = "metallurgy",

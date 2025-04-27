@@ -157,8 +157,6 @@ TODO for 0.3.12
 
 TODO for 0.3.13
   + Update cryogenic science 2 branch of tech tree
-
-TODO for 0.3.14
   + Add recipe for empty research data card
   + Update computer science 2 branch of tech tree
     + Uses for tellurium
@@ -176,27 +174,31 @@ TODO for 0.3.14
     + optic-fiber
     + phase-change-memory
 
-TODO for 0.3.15
-  - Move kovarex enrichment before space science
-  - Make it such agricultural science does not spoil
-  - Add starter patches for resources requires for rail
-  - Change lightning collectors to power poles
-  - DO THIS FIRST!!! -- Fix casting recipes
-  - For some casting recipes from lava add as byproduct lava rocks like:
-    + Andesite: Si, Al, Fe, Mg, Ca, Na, K
-    + Basalt: Si, Al, Fe, Mg, Ca, Na
-    + Obsidian: Si, Al, Fe, Mg
-    + Pumice: Si, Al, K, Na, Fe, Mg
-    + Rhyolite: Si, Al, K, Na
-    + Scoria: Si, Al, Fe, Mg, Ca
+TODO for 0.3.14
+  + Move kovarex enrichment before space science
+  + Make it such agricultural science does not spoil
+  - Fix casting recipes
+      - casting iron (update existing recipe)
+      - casting copper (update existing recipe)
+      - casting steel - change to steel plate (update existing recipe)
+      - casting iron gear
+      - casting iron stick
+      - casting pipe
+      - casting pipe with lead
+      - casting pipe to ground
+      - casting pipe to ground with lead
+      - casting copper cable
+      - remove low density structure recipe
+      - remove concrete recipe
   - Add casting recipes
-    - Add melting recipes for existing factorio stuff
+    - Add recipes for existing factorio stuff
       - molten iron from crushed
       - molten iron from enriched
       - molten copper from crushed
       - molten copper from enriched
+      - casting steel beam
     - Aluminum
-      - melt from alumina
+      + melt from alumina
       + casting into frames
       + casting into sheets
       + casting into cable
@@ -234,10 +236,37 @@ TODO for 0.3.15
       + melt from lava
       + melt from gallium chloride
       + casting into gallium ingot
+
+TODO for 0.3.15
+  - Add starter patches for resources requires for rail
+  - Change lightning collectors to power poles
+    - For some casting recipes from lava add as byproduct lava rocks like:
+    + Andesite: Si, Al, Fe, Mg, Ca, Na, K
+    + Basalt: Si, Al, Fe, Mg, Ca, Na
+    + Obsidian: Si, Al, Fe, Mg
+    + Pumice: Si, Al, K, Na, Fe, Mg
+    + Rhyolite: Si, Al, K, Na
+    + Scoria: Si, Al, Fe, Mg, Ca
+  - Add casting recipes
     - potassium
       - melt from lava
-  - Create some alloys with foundry?
+  - Additional casting recipes
     - bronze
+    - kovar
+    - invar
+    - inconel
+    - duralumin
+    - brass
+    - aluminum brass
+    - stainless steel
+    - glass (in crystallizer?)
+    - copper tube
+    - steel gear wheel
+    - stainless steel gear wheel
+    - flange
+    - connecting rod
+    - solder
+    - silver solder
 
 TODO for 0.3.16
   - Add recipe chains for core mining
