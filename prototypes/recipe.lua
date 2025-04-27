@@ -2487,9 +2487,7 @@ data:extend({
     type = "recipe",
     name = "sp-aluminum-sheet-from-molten",  -- #ForRegEx# - recipe
     icons = util.icon.create_casting_icon("__Spaghetorio__/graphics/icons/aluminum-sheet.png",
-                                          {"__Spaghetorio__/graphics/icons/molten-aluminum.png",
-                                        "__Spaghetorio__/graphics/icons/molten-lead.png",
-                                      "__Spaghetorio__/graphics/icons/molten-tin.png"}),
+                                          {"__Spaghetorio__/graphics/icons/molten-tin.png"}),
     category = "metallurgy",
     subgroup = "sp-raw-material",
     enabled = false,
@@ -2502,6 +2500,187 @@ data:extend({
       {type = "item", name = "sp-aluminum-sheet", amount = 20}
     },
     order = "z-from-molten-[aluminum]"
+  },
+  {
+    type = "recipe",
+    name = "sp-aluminum-cable-from-molten",  -- #ForRegEx# - recipe
+    icons = util.icon.create_casting_icon("__Spaghetorio__/graphics/icons/aluminum-cable.png",
+                                          {"__Spaghetorio__/graphics/icons/molten-aluminum.png"}),
+    category = "metallurgy",
+    subgroup = "sp-mechanical-component",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 15,
+    ingredients = {
+      {type = "fluid", name = "sp-molten-aluminum", amount = 240},
+    },
+    results = {
+      {type = "item", name = "sp-aluminum-cable", amount = 40}
+    },
+    order = "z-from-molten-[aluminum]"
+  },
+  {
+    type = "recipe",
+    name = "sp-aluminum-frame-from-molten",  -- #ForRegEx# - recipe
+    icons = util.icon.create_casting_icon("__Spaghetorio__/graphics/icons/aluminum-frame.png",
+                                          {"__Spaghetorio__/graphics/icons/molten-aluminum.png"}),
+    category = "metallurgy",
+    subgroup = "sp-mechanical-component",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 25,
+    ingredients = {
+      {type = "fluid", name = "sp-molten-aluminum", amount = 200},
+    },
+    results = {
+      {type = "item", name = "sp-aluminum-frame", amount = 20}
+    },
+    order = "z-from-molten-[aluminum]"
+  },
+  {
+    type = "recipe",
+    name = "sp-tin-ingot-from-molten",  -- #ForRegEx# - recipe
+    icons = util.icon.create_casting_icon("__Spaghetorio__/graphics/icons/tin-ingot.png",
+                                          {"__Spaghetorio__/graphics/icons/molten-tin.png"}),
+    category = "metallurgy",
+    subgroup = "sp-raw-material",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 20,
+    ingredients = {
+      {type = "fluid", name = "sp-molten-tin", amount = 400},
+    },
+    results = {
+      {type = "item", name = "sp-tin-ingot", amount = 40}
+    },
+    order = "z-from-molten-[tin]"
+  },
+  {
+    type = "recipe",
+    name = "sp-tin-and-lead-from-molten",  -- #ForRegEx# - recipe
+    icons = util.icon.create_casting_icon("__Spaghetorio__/graphics/icons/tin-and-lead.png",
+                                          {"__Spaghetorio__/graphics/icons/molten-tin.png"}),
+    category = "metallurgy",
+    subgroup = "sp-raw-material",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 16,
+    ingredients = {
+      {type = "fluid", name = "sp-molten-tin", amount = 200},
+    },
+    results = {
+      {type = "item", name = "sp-tin-ingot", amount = 14},
+      {type = "item", name = "sp-lead-slab", amount = 6}
+    },
+    order = "z-from-molten-[tin]"
+  },
+  {
+    type = "recipe",
+    name = "sp-lead-slab-from-molten",  -- #ForRegEx# - recipe
+    icons = util.icon.create_casting_icon("__Spaghetorio__/graphics/icons/lead-slab.png",
+                                          {"__Spaghetorio__/graphics/icons/molten-lead.png"}),
+    category = "metallurgy",
+    subgroup = "sp-raw-material",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 6,
+    ingredients = {
+      {type = "fluid", name = "sp-molten-lead", amount = 100},
+    },
+    results = {
+      {type = "item", name = "sp-lead-slab", amount = 10}
+    },
+    order = "z-from-molten-[lead]"
+  },
+  {
+    type = "recipe",
+    name = "sp-zinc-plate-from-molten",  -- #ForRegEx# - recipe
+    icons = util.icon.create_casting_icon("__Spaghetorio__/graphics/icons/zinc-plate.png",
+                                          {"__Spaghetorio__/graphics/icons/molten-zinc.png"}),
+    category = "metallurgy",
+    subgroup = "sp-raw-material",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 20,
+    ingredients = {
+      {type = "fluid", name = "sp-molten-zinc", amount = 300},
+    },
+    results = {
+      {type = "item", name = "sp-zinc-plate", amount = 30}
+    },
+    order = "z-from-molten-[zinc]"
+  },
+  {
+    type = "recipe",
+    name = "sp-magnesium-slab-from-molten",  -- #ForRegEx# - recipe
+    icons = util.icon.create_casting_icon("__Spaghetorio__/graphics/icons/magnesium-slab.png",
+                                          {"__Spaghetorio__/graphics/icons/molten-magnesium.png"}),
+    category = "metallurgy",
+    subgroup = "sp-raw-material",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 24,
+    ingredients = {
+      {type = "fluid", name = "sp-molten-magnesium", amount = 200},
+    },
+    results = {
+      {type = "item", name = "sp-magnesium-slab", amount = 20}
+    },
+    order = "z-from-molten-[magnesium]"
+  },
+  {
+    type = "recipe",
+    name = "sp-nickel-ingot-from-molten",  -- #ForRegEx# - recipe
+    icons = util.icon.create_casting_icon("__Spaghetorio__/graphics/icons/nickel-ingot.png",
+                                          {"__Spaghetorio__/graphics/icons/molten-nickel.png"}),
+    category = "metallurgy",
+    subgroup = "sp-raw-material",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 16,
+    ingredients = {
+      {type = "fluid", name = "sp-molten-nickel", amount = 200},
+    },
+    results = {
+      {type = "item", name = "sp-nickel-ingot", amount = 20}
+    },
+    order = "z-from-molten-[nickel]"
+  },
+  {
+    type = "recipe",
+    name = "sp-indium-ingot-from-molten",  -- #ForRegEx# - recipe
+    icons = util.icon.create_casting_icon("__Spaghetorio__/graphics/icons/indium-ingot.png",
+                                          {"__Spaghetorio__/graphics/icons/molten-indium.png"}),
+    category = "metallurgy",
+    subgroup = "sp-raw-material",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 12,
+    ingredients = {
+      {type = "fluid", name = "sp-molten-indium", amount = 200},
+    },
+    results = {
+      {type = "item", name = "sp-indium-ingot", amount = 20}
+    },
+    order = "z-from-molten-[indium]"
+  },
+  {
+    type = "recipe",
+    name = "sp-gallium-ingot-from-molten",  -- #ForRegEx# - recipe
+    icons = util.icon.create_casting_icon("__Spaghetorio__/graphics/icons/gallium.png",
+                                          {"__Spaghetorio__/graphics/icons/molten-indium.png"}),
+    category = "metallurgy",
+    subgroup = "sp-processed-metal",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 10,
+    ingredients = {
+      {type = "fluid", name = "sp-molten-gallium", amount = 200},
+    },
+    results = {
+      {type = "item", name = "sp-gallium", amount = 50}
+    },
+    order = "z-from-molten-[gallium]"
   },
   ------------------------------------------------------------------------------
   -- MARK: high-temperature-smelting
