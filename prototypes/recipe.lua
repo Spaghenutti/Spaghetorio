@@ -2668,6 +2668,92 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "sp-molten-nickel",  -- #ForRegEx# - recipe
+    -- Update icons here, search: "-- Add aicon changes here"
+    icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/icons/molten-nickel.png", 64, nil,
+                                        "__space-age__/graphics/icons/fluid/molten-iron.png", 64, nil),
+    category = "metallurgy",
+    subgroup = "sp-molten-metal",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 40,
+    ingredients = {
+      {type = "item", name = "sp-nickel-ore", amount = 20},
+    },
+    results = {
+      {type = "fluid", name = "sp-molten-nickel", amount = 100},
+      {type = "fluid", name = "molten-iron", amount = 70}
+    },
+  },
+  {
+    type = "recipe",
+    name = "sp-molten-nickel-from-crushed-nickel",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/molten-nickel.png", 64,
+                                         "__Spaghetorio__/graphics/icons/crushed-nickel-ore-1.png", 64),
+    category = "metallurgy",
+    subgroup = "sp-molten-metal",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 12,
+    ingredients = {
+      {type = "item", name = "sp-crushed-nickel-ore", amount = 20},
+    },
+    results = {
+      {type = "fluid", name = "sp-molten-nickel", amount = 160},
+      {type = "fluid", name = "molten-iron", amount = 30}
+    },
+  },
+  {
+    type = "recipe",
+    name = "sp-molten-nickel-from-enriched-nickel",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/molten-nickel.png", 64,
+                                         "__Spaghetorio__/graphics/icons/enriched-nickel-1.png", 64),
+    category = "metallurgy",
+    subgroup = "sp-molten-metal",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 20,
+    ingredients = {
+      {type = "item", name = "sp-enriched-nickel", amount = 10},
+    },
+    results = {
+      {type = "fluid", name = "sp-molten-nickel", amount = 200},
+    },
+  },
+  {
+    type = "recipe",
+    name = "sp-molten-indium",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/icons/molten-indium.png",
+    category = "metallurgy",
+    subgroup = "sp-molten-metal",
+    enabled = false,
+    allow_productivity = false,
+    energy_required = 24,
+    ingredients = {
+      {type = "item", name = "sp-indium-sulfate", amount = 30},
+    },
+    results = {
+      {type = "item", name = "sp-indium-sulfate", amount = 20},
+      {type = "item", name = "sulfur", probability = 0.5, amount = 1},
+      {type = "fluid", name = "sp-molten-indium", amount = 34}
+    },
+  },
+  {
+    type = "recipe",
+    name = "sp-molten-gallium",  -- #ForRegEx# - recipe
+    category = "metallurgy",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 20,
+    ingredients = {
+      {type = "item", name = "sp-gallium-chloride", amount = 30},
+    },
+    results = {
+      {type = "fluid", name = "sp-molten-gallium", amount = 200}
+    },
+  },
+  {
+    type = "recipe",
     name = "sp-aluminum-sheet-from-molten",  -- #ForRegEx# - recipe
     icons = util.icon.create_casting_icon("__Spaghetorio__/graphics/icons/aluminum-sheet.png",
                                           {"__Spaghetorio__/graphics/icons/molten-tin.png"}),

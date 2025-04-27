@@ -177,6 +177,7 @@ TODO for 0.3.14
     + phase-change-memory
 
 TODO for 0.3.15
+  - Move kovarex enrichment before space science
   - Make it such agricultural science does not spoil
   - Add starter patches for resources requires for rail
   - Change lightning collectors to power poles
@@ -189,6 +190,11 @@ TODO for 0.3.15
     + Rhyolite: Si, Al, K, Na
     + Scoria: Si, Al, Fe, Mg, Ca
   - Add casting recipes
+    - Add melting recipes for existing factorio stuff
+      - molten iron from crushed
+      - molten iron from enriched
+      - molten copper from crushed
+      - molten copper from enriched
     - Aluminum
       - melt from alumina
       + casting into frames
@@ -216,17 +222,17 @@ TODO for 0.3.15
       + casting into magnesium slab
     - nickel
       + melt from lava
-      - melt from nickel ore (also add as output molten iron)
-      - melt from crushed nickel ore
-      - melt from enriched nickel ore
+      + melt from nickel ore (also add as output molten iron)
+      + melt from crushed nickel ore (also add as output molten iron)
+      + melt from enriched nickel ore
       + casting into nickel ingot
     - indium
       + melt from lava
-      - melt from indium sulfate
+      + melt from indium sulfate
       + casting into indium ingot
     - gallium
       + melt from lava
-      - melt from gallium chloride
+      + melt from gallium chloride
       + casting into gallium ingot
     - potassium
       - melt from lava

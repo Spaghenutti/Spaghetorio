@@ -101,5 +101,9 @@ data.raw["item-subgroup"]["agriculture-processes"].group = "sp-biology"
 data.raw["item-subgroup"]["agriculture-products"].group = "sp-biology"
 data.raw["item-subgroup"]["nauvis-agriculture"].group = "sp-biology"
 
+-- Spoiling
+data.raw.tool["agricultural-science-pack"].spoil_ticks = nil
+data.raw.tool["agricultural-science-pack"].spoil_result = nil
+
 -- MARK: localized name
 data.raw.tool["agricultural-science-pack"].localised_name = {"custom-localization.biological-science-pack"}

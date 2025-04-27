@@ -7,6 +7,8 @@ Date: 2025-05-09
     - Added new casting recipes
   Changes:
     - Updated existing melting and casting recipes
+    - Kovarex enrichment does not need space science to be unlocked
+    - Agricultural science does not spoil any more. Noice
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.13
 Date: 2025-05-02
