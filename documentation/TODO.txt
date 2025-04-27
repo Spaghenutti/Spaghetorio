@@ -189,58 +189,58 @@ TODO for 0.3.14
     + remove low density structure recipe
     + remove concrete recipe
     + remove pipe to ground recipe
-  - Add casting recipes
-    - Add recipes for existing factorio stuff
+  + Add casting recipes
+    + Add recipes for existing factorio stuff
       + molten iron from crushed
       + molten iron from enriched -- (unlock in enriched-resources)
       + molten copper from crushed
       + molten copper from enriched -- (unlock in enriched-resources)
       + casting iron beam
       + casting steel beam
-    - Aluminum
+    + Aluminum
       + melt from alumina
       + casting into frames
       + casting into sheets
       + casting into cable
-    - tin
+    + tin
       + melt from lava
       + melt from tinstone
       + melt from crushed tinstone
       + melt from enriched tinstone -- (unlock in enriched-resources)
       + casting into tin ingot
-    - lead
+    + lead
       + melt from lava
       + melt from tinstone
       + melt from leadstone
       + casting into lead ingot
-    - zinc
+    + zinc
       + melt from lava
       + melt from zinc oxide with sulfuric acid with bad ratio
       + casting into zinc plate
-    - magnesium
+    + magnesium
       + melt from lava
       + melt from magnesium ore with sulfuric acid with bad ratio
       + melt from enriched magnesium ore with sulfuric acid with bad ratio  -- (unlock in enriched-resources)
       + casting into magnesium slab
-    - nickel
+    + nickel
       + melt from lava
       + melt from nickel ore (also add as output molten iron)
       + melt from crushed nickel ore (also add as output molten iron)
       + melt from enriched nickel ore -- (unlock in enriched-resources)
       + casting into nickel ingot
-    - indium
+    + indium
       + melt from lava
       + melt from indium sulfate
       + casting into indium ingot
-    - gallium
+    + gallium
       + melt from lava
       + melt from gallium chloride
       + casting into gallium ingot
 
 TODO for 0.3.15
-  - Add starter patches for resources requires for rail
   - Make it such different metals come from different types of lava: lava and hot-lava
     - The recipes shall be unlocked in advanced casting
+    - Consider certain vulcanic rocks only to come from lava or hot-lava
   - Change lightning collectors to power poles
     - For some casting recipes from lava add as byproduct lava rocks like:
     + Andesite: Si, Al, Fe, Mg, Ca, Na, K

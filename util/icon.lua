@@ -364,9 +364,9 @@ end
 
 function data_util.create_melting_from_lava_icon(molten_metal_icon, byproduct_icon)
   icons = {
-    {icon = "__space-age__/graphics/icons/fluid/lava.png", icon_size = 64, scale = 0.7, shift = {-4, 0}},
-    {icon = molten_metal_icon, icon_size = 64, scale = 1, shift = {-6, 8}},
-    {icon = byproduct_icon, icon_size = 64, scale = 0.4, shift = {12, 20}},
+    {icon = "__space-age__/graphics/icons/fluid/lava.png", icon_size = 64, scale = 0.35, shift = {-2, 0}},
+    {icon = molten_metal_icon, icon_size = 64, scale = 0.5, shift = {-3, 4}},
+    {icon = byproduct_icon, icon_size = 64, scale = 0.2, shift = {6, 10}},
   }
 
   return icons
