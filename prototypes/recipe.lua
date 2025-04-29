@@ -9354,6 +9354,7 @@ data:extend({
     ingredients = {
       {type = "item", name = "sp-optic-fiber", amount = 1},
       {type = "item", name = "processing-unit", amount = 2},
+      {type = "item", name = "sp-voltage-regulator-module", amount = 4},
       {type = "item", name = "sp-optical-sensor", amount = 1},
       {type = "item", name = "sp-relay", amount = 4},
       {type = "item", name = "sp-light-emitting-diode", amount = 10},
@@ -9371,12 +9372,11 @@ data:extend({
     energy_required = 5,
     ingredients = {
       {type = "item", name = "processing-unit", amount = 4},
-      {type = "item", name = "sp-phase-change-memory", amount = 2},
-      {type = "item", name = "sp-processor", amount = 3},
+      {type = "item", name = "advanced-circuit", amount = 8},
+      {type = "item", name = "sp-variable-frequenzy-drive", amount = 1},
       {type = "item", name = "sp-voltage-regulator-module", amount = 6},
       {type = "item", name = "sp-anodized-aluminum", amount = 2},
-      {type = "item", name = "sp-antenna-chip", amount = 1},
-      {type = "item", name = "sp-optic-fiber", amount = 4},
+      {type = "item", name = "sp-optic-fiber", amount = 2},
       {type = "item", name = "sp-insulated-wire", amount = 4},
     },
     results = {

@@ -67,7 +67,8 @@ data.raw.technology["stack-inserter"].unit.ingredients = {
   {"sp-metallurgic-science-pack-2", 1},
   {"sp-electromagnetic-science-pack-2", 1},
   {"production-science-pack", 1},
-  {"utility-science-pack", 1}
+  {"utility-science-pack", 1},
+  {"sp-computer-science-pack-2", 1}
 }
 
 data.raw.technology["mech-armor"].prerequisites = {
@@ -736,7 +737,8 @@ data.raw.technology["transport-belt-capacity-1"].unit.ingredients = {
   {"sp-metallurgic-science-pack-2", 1},
   {"sp-electromagnetic-science-pack-2", 1},
   {"production-science-pack", 1},
-  {"utility-science-pack", 1}
+  {"utility-science-pack", 1},
+  {"sp-computer-science-pack-2", 1}
 }
 
 data.raw.technology["transport-belt-capacity-2"].unit.ingredients = {
@@ -749,7 +751,8 @@ data.raw.technology["transport-belt-capacity-2"].unit.ingredients = {
   {"sp-metallurgic-science-pack-2", 1},
   {"sp-electromagnetic-science-pack-2", 1},
   {"production-science-pack", 1},
-  {"utility-science-pack", 1}
+  {"utility-science-pack", 1},
+  {"sp-computer-science-pack-2", 1}
 }
 
 --------------------------------------------------------------------------------

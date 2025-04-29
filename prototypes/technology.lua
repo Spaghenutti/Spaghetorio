@@ -2582,6 +2582,40 @@ data:extend({
   },
   {
     type = "technology",
+    name = "sp-voltage-regulator-module",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghetorio__/graphics/hr-icons/voltage-regulator-module.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-voltage-regulator-module"
+      }
+    },
+    prerequisites = {
+      "sp-computer-science-pack-2"
+    },
+    unit =
+    {
+      count = 200,
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-metallurgic-science-pack-2", 1},
+        {"sp-electromagnetic-science-pack-2", 1},
+        {"production-science-pack", 1},
+        {"utility-science-pack", 1},
+        {"sp-computer-science-pack-2", 1}
+      },
+      time = 30
+    },
+  },
+  {
+    type = "technology",
     name = "sp-semiconductor",  -- #ForRegEx# - technology
     icon_size = 256,
     icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/hr-icons/antenna-chip.png", 256, nil,
@@ -2612,7 +2646,8 @@ data:extend({
     prerequisites = {
       "sp-computer-science-pack-2",
       "sp-high-purity-silicon-processing",
-      "sp-arsen-processing"
+      "sp-arsen-processing",
+      "sp-rare-metals"
     },
     unit =
     {
@@ -2681,7 +2716,8 @@ data:extend({
       "sp-computer-science-pack-2",
       "sp-antimony-processing",
       "sp-indium-processing",
-      "sp-germanium-processing"
+      "sp-germanium-processing",
+      "sp-rare-metals"
     },
     unit =
     {
@@ -3337,7 +3373,8 @@ data:extend({
         {"production-science-pack", 1},
         {"utility-science-pack", 1},
         {"cryogenic-science-pack", 1},
-        {"sp-nuclear-science-pack-2", 1}
+        {"sp-nuclear-science-pack-2", 1},
+         {"sp-computer-science-pack-2", 1}
       },
       time = 60
     },
@@ -3381,7 +3418,8 @@ data:extend({
         {"production-science-pack", 1},
         {"utility-science-pack", 1},
         {"cryogenic-science-pack", 1},
-        {"sp-nuclear-science-pack-2", 1}
+        {"sp-nuclear-science-pack-2", 1},
+         {"sp-computer-science-pack-2", 1}
       },
       time = 60
     },
@@ -3422,7 +3460,8 @@ data:extend({
         {"sp-production-science-pack-3", 1},
         {"utility-science-pack", 1},
         {"cryogenic-science-pack", 1},
-        {"sp-nuclear-science-pack-2", 1}
+        {"sp-nuclear-science-pack-2", 1},
+        {"sp-computer-science-pack-2", 1}
       },
       time = 60
     },
@@ -3498,7 +3537,8 @@ data:extend({
         {"sp-electromagnetic-science-pack-2", 1},
         {"production-science-pack", 1},
         {"utility-science-pack", 1},
-        {"sp-nuclear-science-pack-2", 1}
+        {"sp-nuclear-science-pack-2", 1},
+        {"sp-computer-science-pack-2", 1}
       },
       time = 60
     },
@@ -3762,7 +3802,9 @@ data:extend({
         recipe = "sp-sodium-molybdate",
       },
     },
-    prerequisites = {"sp-kr-advanced-chemistry"},
+    prerequisites = {
+      "sp-kr-advanced-chemistry"
+    },
     unit = {
       count = 1000,
       ingredients = {
@@ -3775,7 +3817,8 @@ data:extend({
         {"sp-metallurgic-science-pack-2", 1},
         {"sp-electromagnetic-science-pack-2", 1},
         {"production-science-pack", 1},
-        {"utility-science-pack", 1}
+        {"utility-science-pack", 1},
+        {"sp-computer-science-pack-2", 1}
       },
       time = 30,
     },
@@ -5091,9 +5134,7 @@ data:extend({
       }
     },
     prerequisites = {
-      "processing-unit",
-      "sp-semiconductor",
-      "sp-advanced-storage"
+      "sp-voltage-regulator-module"
     },
     unit =
     {
@@ -5109,8 +5150,6 @@ data:extend({
         {"sp-electromagnetic-science-pack-2", 1},
         {"production-science-pack", 1},
         {"utility-science-pack", 1},
-        {"cryogenic-science-pack", 1},
-        {"agricultural-science-pack", 1},
         {"sp-computer-science-pack-2", 1}
       },
       time = 30
@@ -5763,7 +5802,8 @@ data:extend({
         {"sp-metallurgic-science-pack-2", 1},
         {"sp-electromagnetic-science-pack-2", 1},
         {"production-science-pack", 1},
-        {"utility-science-pack", 1}
+        {"utility-science-pack", 1},
+        {"sp-computer-science-pack-2", 1}
       },
       time = 30
     },
@@ -6300,9 +6340,8 @@ data:extend({
       },
     },
     prerequisites = {
-      "utility-science-pack",
       "sp-optical-sensor",
-      "processing-unit"
+      "sp-voltage-regulator-module"
     },
     unit =
     {
@@ -6317,7 +6356,8 @@ data:extend({
         {"sp-metallurgic-science-pack-2", 1},
         {"sp-electromagnetic-science-pack-2", 1},
         {"production-science-pack", 1},
-        {"utility-science-pack", 1}
+        {"utility-science-pack", 1},
+        {"sp-computer-science-pack-2", 1}
       },
       time = 30
     },
@@ -8635,7 +8675,8 @@ data:extend({
         {"production-science-pack", 1},
         {"utility-science-pack", 1},
         {"cryogenic-science-pack", 1},
-        {"sp-nuclear-science-pack-2", 1}
+        {"sp-nuclear-science-pack-2", 1},
+         {"sp-computer-science-pack-2", 1}
       },
       time = 45,
     },
@@ -9171,7 +9212,8 @@ data:extend({
         {"sp-metallurgic-science-pack-2", 1},
         {"sp-electromagnetic-science-pack-2", 1},
         {"production-science-pack", 1},
-        {"utility-science-pack", 1}
+        {"utility-science-pack", 1},
+        {"sp-computer-science-pack-2", 1}
       },
       time = 45,
     },

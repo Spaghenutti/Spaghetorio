@@ -295,7 +295,8 @@ data.raw.technology["kovarex-enrichment-process"].unit.ingredients = {
   {"sp-metallurgic-science-pack-2", 1},
   {"sp-electromagnetic-science-pack-2", 1},
   {"production-science-pack", 1},
-  {"utility-science-pack", 1}
+  {"utility-science-pack", 1},
+  {"sp-computer-science-pack-2", 1}
 }
 
 data.raw.technology["nuclear-power"].effects = {
@@ -347,7 +348,8 @@ data.raw.technology["nuclear-power"].unit.ingredients = {
   {"sp-metallurgic-science-pack-2", 1},
   {"sp-electromagnetic-science-pack-2", 1},
   {"production-science-pack", 1},
-  {"utility-science-pack", 1}
+  {"utility-science-pack", 1},
+  {"sp-computer-science-pack-2", 1}
 }
 
 table.insert(data.raw.technology["automation-2"].prerequisites, "sp-heatsink")
@@ -374,7 +376,8 @@ data.raw.technology["automation-3"].unit.ingredients = {
   {"sp-metallurgic-science-pack-2", 1},
   {"sp-electromagnetic-science-pack-2", 1},
   {"production-science-pack", 1},
-  {"utility-science-pack", 1}
+  {"utility-science-pack", 1},
+  {"sp-computer-science-pack-2", 1}
 }
 
 data.raw.technology["landfill"].prerequisites = {"automation-science-pack"}
@@ -604,7 +607,8 @@ data.raw.technology["effect-transmission"].unit.ingredients = {
   {"sp-metallurgic-science-pack-2", 1},
   {"sp-electromagnetic-science-pack-2", 1},
   {"production-science-pack", 1},
-  {"utility-science-pack", 1}
+  {"utility-science-pack", 1},
+  {"sp-computer-science-pack-2", 1}
 }
 
 data.raw.technology["explosives"].prerequisites = {
@@ -761,7 +765,8 @@ data.raw.technology["fission-reactor-equipment"].unit.ingredients = {
   {"sp-electromagnetic-science-pack-2", 1},
   {"production-science-pack", 1},
   {"utility-science-pack", 1},
-  {"sp-nuclear-science-pack-2", 1}
+  {"sp-nuclear-science-pack-2", 1},
+  {"sp-computer-science-pack-2", 1}
 }
 
 data.raw.technology["robotics"].prerequisites = {
@@ -1365,7 +1370,8 @@ data.raw.technology["tank"].unit.ingredients = {
   {"sp-metallurgic-science-pack-2", 1},
   {"sp-electromagnetic-science-pack-2", 1},
   {"sp-military-science-pack-2", 1},
-  {"utility-science-pack", 1}
+  {"utility-science-pack", 1},
+  {"sp-computer-science-pack-2", 1}
 }
 
 table.insert(data.raw.technology["artillery"].effects, {type = "unlock-recipe", recipe = "sp-graphite-impact-shell"})
@@ -1402,7 +1408,8 @@ data.raw.technology["uranium-ammo"].unit.ingredients = {
   {"sp-electromagnetic-science-pack-2", 1},
   {"sp-military-science-pack-2", 1},
   {"sp-nuclear-science-pack-2", 1},
-  {"utility-science-pack", 1}
+  {"utility-science-pack", 1},
+  {"sp-computer-science-pack-2", 1}
 }
 
 table.insert(data.raw.technology["spidertron"].prerequisites, "sp-computer-science-pack-3")
@@ -1683,7 +1690,8 @@ data.raw.technology["inserter-capacity-bonus-3"].unit.ingredients = {
   {"sp-metallurgic-science-pack-2", 1},
   {"sp-electromagnetic-science-pack-2", 1},
   {"production-science-pack", 1},
-  {"utility-science-pack", 1}
+  {"utility-science-pack", 1},
+  {"sp-computer-science-pack-2", 1}
 }
 data.raw.technology["inserter-capacity-bonus-3"].effects = {
   {
@@ -1707,7 +1715,8 @@ data.raw.technology["inserter-capacity-bonus-4"].unit.ingredients = {
   {"sp-metallurgic-science-pack-2", 1},
   {"sp-electromagnetic-science-pack-2", 1},
   {"production-science-pack", 1},
-  {"utility-science-pack", 1}
+  {"utility-science-pack", 1},
+  {"sp-computer-science-pack-2", 1}
 }
 data.raw.technology["inserter-capacity-bonus-4"].effects = {
   {
