@@ -10,6 +10,7 @@ Date: 2025-05-09
     - Removed low density structure, concrete and pipe to ground casting recipes
     - Kovarex enrichment does not need space science to be unlocked
     - Agricultural science does not spoil any more. Noice
+    - Updated Japanese locale thanks to Snow note
   Bugfixes:
     - Reverted some parts of the computers science branch. This technologies will be unlocked in a later stage of the game
 ---------------------------------------------------------------------------------------------------
