@@ -105,5 +105,8 @@ data.raw["item-subgroup"]["nauvis-agriculture"].group = "sp-biology"
 data.raw.tool["agricultural-science-pack"].spoil_ticks = nil
 data.raw.tool["agricultural-science-pack"].spoil_result = nil
 
+-- lava tiles
+data.raw.tile["lava"].fluid = "sp-ultramafic-lava"
+
 -- MARK: localized name
 data.raw.tool["agricultural-science-pack"].localised_name = {"custom-localization.biological-science-pack"}

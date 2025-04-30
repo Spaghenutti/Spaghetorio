@@ -2,6 +2,7 @@
 Version: 0.3.14
 Date: 2025-05-09
   Features:
+    - Added ultramafic lava. This recource is accquired in the center of vulcanoes and provides rare minerals.
     - Added vulcanic rocks
     - Added new melting recipes from lava
     - Added new casting recipes

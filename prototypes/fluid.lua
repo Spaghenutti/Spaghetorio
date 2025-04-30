@@ -510,7 +510,20 @@ data:extend({
     subgroup = "fluid",
     order = "a[fluid]-c[biological]-a[biocrude-oil]"
   },
-
+  {
+    type = "fluid",
+    name = "sp-ultramafic-lava",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    fuel_value = "300kJ",
+    base_color = {r=0.05, g=0.1, b=0.5},
+    flow_color = {r=0.05, g=0.1, b=0.5},
+    icon = "__Spaghetorio__/graphics/icons/ultramafic-lava.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "fluid",
+   order = "b[new-fluid]-b[vulcanus]-a[ultramafic-lava]",
+  },
   ------------------------------------------------------------------------------
   -- MARK: gas
   ------------------------------------------------------------------------------
