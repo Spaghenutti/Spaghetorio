@@ -100,7 +100,6 @@ data:extend({
     },
 
     energy_usage = "0.25MW",
-    ingredient_count = 1,
     module_slots = 2,
     allowed_effects = { "consumption", "speed", "productivity", "pollution" },
     open_sound = sounds.machine_open,

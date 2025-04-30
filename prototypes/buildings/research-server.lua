@@ -161,8 +161,7 @@ data:extend({
     },
 
     energy_usage = "250kW",
-    ingredient_count = 6,
-     module_slots = 2,
+    module_slots = 3,
     allowed_effects = { "consumption", "speed", "productivity", "pollution" },
     open_sound = { filename = "__Spaghetorio__/sounds/buildings/open.ogg", volume = 1 },
     close_sound = { filename = "__Spaghetorio__/sounds/buildings/close.ogg", volume = 1 },

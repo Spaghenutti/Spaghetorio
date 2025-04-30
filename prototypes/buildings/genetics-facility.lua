@@ -119,6 +119,5 @@ data:extend({
       emissions_per_minute = {pollution = 10},
     },
     energy_usage = "144.8kW",
-    ingredient_count = 4,
   },
 })

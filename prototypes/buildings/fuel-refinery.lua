@@ -132,7 +132,6 @@ data:extend({
       emissions_per_minute = {pollution = 10},
     },
     energy_usage = "250kW",
-    ingredient_count = 4,
     crafting_categories = {"sp-kr-fuel-refinery"},
     fluid_boxes = {
       -- Inputs

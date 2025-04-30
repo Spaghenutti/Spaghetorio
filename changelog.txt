@@ -13,6 +13,7 @@ Date: 2025-05-09
     - Updated Japanese locale thanks to Snow note
   Bugfixes:
     - Reverted some parts of the computers science branch. This technologies will be unlocked in a later stage of the game
+    - Fixed that computer science can only be made in quantum computer
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.13
 Date: 2025-05-02

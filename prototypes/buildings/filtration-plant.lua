@@ -134,7 +134,6 @@ data:extend({
     },
     scale_entity_info_icon = true,
     energy_usage = "500kW",
-    ingredient_count = 6,
     module_slots = 2,
     allowed_effects = { "consumption", "speed", "productivity", "pollution" },
     open_sound = sounds.machine_open,

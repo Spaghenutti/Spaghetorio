@@ -3589,12 +3589,6 @@ data:extend({
     results = {
       {type = "item", name = "sp-sand", probability = 0.92, amount = 3},
       {type = "item", name = "sp-tellurium-hydroxide", probability = 0.08, amount = 1}
-    },
-    crafting_machine_tint = {
-      primary = {r = 1.000, g = 1.000, b = 1.000, a = 1.000},
-      secondary = {r = 0.771, g = 0.771, b = 0.771, a = 1.000},
-      tertiary = {r = 0.768, g = 0.665, b = 0.762, a = 1.000},
-      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
     }
   },
   {
@@ -3624,6 +3618,136 @@ data:extend({
       {type = "fluid", name = "sp-deuterium", amount = 10}
     },
     order = "z[nuclear]-3-[nuclear-waste-processing]"
+  },
+  {
+    type = "recipe",
+    name = "sp-crushing-andesite",  -- #ForRegEx# - recipe
+    icons = util.icon.create_crushing_recipe_icon(data.raw.item["sp-andesite"], data.raw.item["sp-sodium"]),
+    icon_size = 64,
+    mip_maps = 4,
+    category = "sp-crushing-washing",
+    subgroup = "sp-vulcanic-rock",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 4,
+    ingredients = {
+      {type = "item", name = "sp-andesite", amount = 1},
+      {type = "fluid", name = "ammoniacal-solution", amount = 5},
+      {type = "fluid", name = "sp-bleach", amount = 3}
+    },
+    results = {
+      {type = "item", name = "sp-silica", probability = 0.6, amount = 3},
+      {type = "item", name = "sp-alumina", probability = 0.2, amount = 3},
+      {type = "item", name = "sp-sodium", probability = 0.2, amount = 3},
+    },
+  },
+  {
+    type = "recipe",
+    name = "sp-crushing-basalt",  -- #ForRegEx# - recipe
+    icons = util.icon.create_crushing_recipe_icon(data.raw.item["sp-basalt"], data.raw.item["sp-crushed-iron-ore"]),
+    icon_size = 64,
+    mip_maps = 4,
+    category = "sp-crushing-washing",
+    subgroup = "sp-vulcanic-rock",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 5,
+    ingredients = {
+      {type = "item", name = "sp-basalt", amount = 1},
+      {type = "fluid", name = "sp-calcium-hydroxide-solution", amount = 5},
+      {type = "fluid", name = "sp-bleach", amount = 3}
+    },
+    results = {
+      {type = "item", name = "sp-silica", probability = 0.5, amount = 3},
+      {type = "item", name = "sp-alumina", probability = 0.15, amount = 3},
+      {type = "item", name = "sp-crushed-iron-ore", probability = 0.35, amount = 3},
+    },
+  },
+  {
+    type = "recipe",
+    name = "sp-crushing-obsidian",  -- #ForRegEx# - recipe
+    icons = util.icon.create_crushing_recipe_icon(data.raw.item["sp-obsidian"], data.raw.item["sp-potassium-chloride"]),
+    icon_size = 64,
+    mip_maps = 4,
+    category = "sp-crushing-washing",
+    subgroup = "sp-vulcanic-rock",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 5,
+    ingredients = {
+      {type = "item", name = "sp-obsidian", amount = 1},
+      {type = "fluid", name = "sp-sodium-hydroxide", amount = 5},
+      {type = "fluid", name = "sp-bleach", amount = 2}
+    },
+    results = {
+      {type = "item", name = "sp-silica", probability = 0.75, amount = 3},
+      {type = "item", name = "sp-alumina", probability = 0.15, amount = 3},
+      {type = "item", name = "sp-potassium-chloride", probability = 0.1, amount = 3},
+    },
+  },
+  {
+    type = "recipe",
+    name = "sp-crushing-pumice",  -- #ForRegEx# - recipe
+    icons = util.icon.create_crushing_recipe_icon(data.raw.item["sp-pumice"], data.raw.item["sp-magnesium-chloride"]),
+    icon_size = 64,
+    mip_maps = 4,
+    category = "sp-crushing-washing",
+    subgroup = "sp-vulcanic-rock",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 6,
+    ingredients = {
+      {type = "item", name = "sp-pumice", amount = 1},
+      {type = "fluid", name = "sp-sodium-hydroxide", amount = 5},
+      {type = "fluid", name = "water", amount = 20}
+    },
+    results = {
+      {type = "item", name = "sp-silica", probability = 0.70, amount = 3},
+      {type = "item", name = "sp-alumina", probability = 0.15, amount = 3},
+      {type = "item", name = "sp-magnesium-chloride", probability = 0.15, amount = 3},
+    },
+  },
+  {
+    type = "recipe",
+    name = "sp-crushing-rhyolite",  -- #ForRegEx# - recipe
+    icons = util.icon.create_crushing_recipe_icon(data.raw.item["sp-rhyolite"], data.raw.item["sp-titanium-chloride"]),
+    icon_size = 64,
+    mip_maps = 4,
+    category = "sp-crushing-washing",
+    subgroup = "sp-vulcanic-rock",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 8,
+    ingredients = {
+      {type = "item", name = "sp-rhyolite", amount = 1},
+      {type = "fluid", name = "sp-calcium-hydroxide-solution", amount = 8}
+    },
+    results = {
+      {type = "item", name = "sp-silica", probability = 0.80, amount = 3},
+      {type = "item", name = "sp-alumina", probability = 0.10, amount = 3},
+      {type = "item", name = "sp-titanium-chloride", probability = 0.10, amount = 3},
+    },
+  },
+  {
+    type = "recipe",
+    name = "sp-crushing-scoria",  -- #ForRegEx# - recipe
+    icons = util.icon.create_crushing_recipe_icon(data.raw.item["sp-scoria"], data.raw.item["sp-titanium-chloride"]),
+    icon_size = 64,
+    mip_maps = 4,
+    category = "sp-crushing-washing",
+    subgroup = "sp-vulcanic-rock",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 6,
+    ingredients = {
+      {type = "item", name = "sp-scoria", amount = 1},
+      {type = "fluid", name = "ammoniacal-solution", amount = 8}
+    },
+    results = {
+      {type = "item", name = "sp-silica", probability = 0.50, amount = 3},
+      {type = "item", name = "sp-alumina", probability = 0.20, amount = 3},
+      {type = "item", name = "calcite", probability = 0.30, amount = 3},
+    },
   },
   ------------------------------------------------------------------------------
   -- MARK: chemistry
@@ -6758,7 +6882,7 @@ data:extend({
     ingredients = {
       {type = "item", name = "sp-gold", amount = 1},
       {type = "item", name = "sp-vanadium-pentoxide", amount = 1},
-      {type = "item", name = "sp-silicon-nitride", amount = 1},
+      {type = "item", name = "sp-silicon-nitride", amount = 1}, 
       {type = "item", name = "sp-silica", amount = 2},
       {type = "item", name = "sp-titanium-telluride", amount = 4},
       {type = "item", name = "sp-germanium-antimony-tellurium", amount = 2},

@@ -130,7 +130,6 @@ data:extend({
       emissions_per_minute = {pollution = 20},
     },
     energy_usage = "24.19MW",
-    ingredient_count = 6,
     module_slots = 4,
     allowed_effects = { "consumption", "speed", "pollution" },
     open_sound = { filename = "__Spaghetorio__/sounds/buildings/open.ogg", volume = 1 },
