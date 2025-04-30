@@ -248,12 +248,23 @@ function data_util.create_incineration_recipe_icon(item_or_fluid_to_incinerate, 
   return icons
 end
 
-function data_util.create_crushing_recipe_icon(resource, crushed_resource)
-  icons = {
-    {icon = resource.icon, icon_size = resource.icon_size, scale = 0.7, shift = {-12, -12}},
-    {icon = crushed_resource.icon, icon_size = crushed_resource.icon_size, scale = 0.7, shift = {8, 8}},
-    {icon = "__Spaghetorio__/graphics/arrows/black-recipe-arrow-64x64.png", icon_size = 64, scale = 1},
-  }
+function data_util.create_crushing_recipe_icon(resource, crushed_resources)
+  local num_of_crushed_resources = #crushed_resources
+
+  if num_of_crushed_resources == 1 then
+    icons = {
+      {icon = resource.icon, icon_size = resource.icon_size, scale = 0.7, shift = {-12, -12}},
+      {icon = crushed_resources[1].icon, icon_size = crushed_resources[1].icon_size, scale = 0.7, shift = {12, 12}},
+      {icon = "__Spaghetorio__/graphics/arrows/black-recipe-arrow-64x64.png", icon_size = 64, scale = 0.9},
+    }
+  elseif num_of_crushed_resources == 2 then
+    icons = {
+      {icon = resource.icon, icon_size = resource.icon_size, scale = 0.4, shift = {-12, -12}},
+      {icon = crushed_resources[1].icon, icon_size = crushed_resources[1].icon_size, scale = 0.4, shift = {14, 0}},
+      {icon = crushed_resources[2].icon, icon_size = crushed_resources[2].icon_size, scale = 0.4, shift = {0, 14}},
+      {icon = "__Spaghetorio__/graphics/arrows/black-recipe-arrow-64x64.png", icon_size = 64, scale = 0.7},
+    }
+  end
 
   return icons
 end
@@ -262,7 +273,7 @@ function data_util.create_enriching_recipe_icon(resource, enriched_resource)
   icons = {
     {icon = resource.icon, icon_size = resource.icon_size, scale = 0.7, shift = {-12, -12}},
     {icon = enriched_resource.icon, icon_size = enriched_resource.icon_size, scale = 0.7, shift = {8, 8}},
-    {icon = "__Spaghetorio__/graphics/arrows/green-recipe-arrow-64x64.png", icon_size = 64, scale = 1},
+    {icon = "__Spaghetorio__/graphics/arrows/green-recipe-arrow-64x64.png", icon_size = 64, scale = 0.9},
   }
 
   return icons
@@ -282,7 +293,7 @@ function data_util.create_freezing_recipe_icon(item)
   icons = {
     {icon = item.icon, icon_size = item.icon_size, scale = 0.7, shift = {-12, -12}},
     {icon = "__Spaghetorio__/graphics/overlay/ice.png", icon_size = 64, scale = 0.7, shift = {8, 8}},
-    {icon = "__Spaghetorio__/graphics/arrows/blue-recipe-arrow-64x64.png", icon_size = 64, scale = 1},
+    {icon = "__Spaghetorio__/graphics/arrows/blue-recipe-arrow-64x64.png", icon_size = 64, scale = 0.9},
   }
 
   return icons
@@ -292,7 +303,7 @@ function data_util.create_thawing_recipe_icon(item)
   icons = {
     {icon = "__Spaghetorio__/graphics/overlay/ice.png", icon_size = 64, scale = 0.7, shift = {-12, -12}},
     {icon = item.icon, icon_size = item.icon_size, scale = 0.7, shift = {8, 8}},
-    {icon = "__Spaghetorio__/graphics/arrows/red-recipe-arrow-64x64.png", icon_size = 64, scale = 1},
+    {icon = "__Spaghetorio__/graphics/arrows/red-recipe-arrow-64x64.png", icon_size = 64, scale = 0.9},
   }
 
   return icons
@@ -302,7 +313,7 @@ function data_util.create_nuclear_recipe_icon(input_item, output_item)
   icons = {
     {icon = input_item.icon, icon_size = input_item.icon_size, scale = 0.7, shift = {-12, -12}},
     {icon = output_item.icon, icon_size = output_item.icon_size, scale = 0.7, shift = {12, 12}},
-    {icon = "__Spaghetorio__/graphics/arrows/cyan-recipe-arrow-64x64.png", icon_size = 64, scale = 1},
+    {icon = "__Spaghetorio__/graphics/arrows/cyan-recipe-arrow-64x64.png", icon_size = 64, scale = 0.9},
   }
 
   return icons
@@ -312,7 +323,7 @@ function data_util.create_spoiling_recipe_icon(item)
   icons = {
     {icon = item.icon, icon_size = item.icon_size, scale = 0.7, shift = {-12, -12}},
     {icon = "__space-age__/graphics/icons/spoilage.png", icon_size = 64, scale = 0.7, shift = {8, 8}},
-    {icon = "__Spaghetorio__/graphics/arrows/grey-recipe-arrow-64x64.png", icon_size = 64, scale = 1},
+    {icon = "__Spaghetorio__/graphics/arrows/grey-recipe-arrow-64x64.png", icon_size = 64, scale = 0.9},
   }
 
   return icons
@@ -371,9 +382,9 @@ function data_util.create_casting_icon(molten_metal_icon, byproduct_icons)
 end
 
 
-function data_util.create_melting_from_lava_icon(molten_metal_icon, byproduct_icon)
+function data_util.create_melting_from_lava_icon(lava_icon, molten_metal_icon, byproduct_icon)
   icons = {
-    {icon = "__space-age__/graphics/icons/fluid/lava.png", icon_size = 64, scale = 0.35, shift = {-2, 0}},
+    {icon = lava_icon, icon_size = 64, scale = 0.35, shift = {-2, 0}},
     {icon = molten_metal_icon, icon_size = 64, scale = 0.5, shift = {-3, 4}},
     {icon = byproduct_icon, icon_size = 64, scale = 0.2, shift = {6, 10}},
   }

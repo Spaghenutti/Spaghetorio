@@ -2341,19 +2341,20 @@ data:extend({
   {
     type = "recipe",
     name = "sp-molten-gallium-from-lava",  -- #ForRegEx# - recipe
-    icons = util.icon.create_melting_from_lava_icon("__Spaghetorio__/graphics/icons/molten-gallium-only-metal.png",
+    icons = util.icon.create_melting_from_lava_icon("__Spaghetorio__/graphics/icons/ultramafic-lava.png",
+                                                    "__Spaghetorio__/graphics/icons/molten-gallium-only-metal.png",
                                                     "__Spaghetorio__/graphics/icons/scoria-1.png"),
     category = "metallurgy",
     subgroup = "sp-casting-raw-resource",
     enabled = false,
     allow_productivity = true,
-    energy_required = 30,
+    energy_required = 10,
     ingredients = {
-      {type = "fluid", name = "lava", amount = 300},
+      {type = "fluid", name = "sp-ultramafic-lava", amount = 100},
       {type = "fluid", name = "sp-hydrogen-chloride", amount = 20},
     },
     results = {
-      {type = "item", name = "sp-scoria", probability = 0.4, amount = 5},
+      {type = "item", name = "sp-scoria", probability = 0.5, amount = 3},
       {type = "item", name = "sp-gallium-chloride", probability = 0.5, amount = 1},
       {type = "fluid", name = "sp-molten-gallium", amount = 20},
     },
@@ -2362,15 +2363,16 @@ data:extend({
   {
     type = "recipe",
     name = "sp-molten-indium-from-lava",  -- #ForRegEx# - recipe
-    icons = util.icon.create_melting_from_lava_icon("__Spaghetorio__/graphics/icons/molten-indium-only-metal.png",
+    icons = util.icon.create_melting_from_lava_icon("__Spaghetorio__/graphics/icons/ultramafic-lava.png",
+                                                    "__Spaghetorio__/graphics/icons/molten-indium-only-metal.png",
                                                     "__Spaghetorio__/graphics/icons/basalt-1.png"),
     category = "metallurgy",
     subgroup = "sp-casting-raw-resource",
     enabled = false,
     allow_productivity = true,
-    energy_required = 24,
+    energy_required = 12,
     ingredients = {
-      {type = "fluid", name = "lava", amount = 300},
+      {type = "fluid", name = "lava", amount = 100},
       {type = "fluid", name = "sp-hydrogen-sulfide", amount = 16},
     },
     results = {
@@ -2383,7 +2385,8 @@ data:extend({
   {
     type = "recipe",
     name = "sp-molten-lead-from-lava",  -- #ForRegEx# - recipe
-    icons = util.icon.create_melting_from_lava_icon("__Spaghetorio__/graphics/icons/molten-lead-only-metal.png",
+    icons = util.icon.create_melting_from_lava_icon("__space-age__/graphics/icons/fluid/lava.png",
+                                                    "__Spaghetorio__/graphics/icons/molten-lead-only-metal.png",
                                                     "__Spaghetorio__/graphics/icons/andesite-1.png"),
     category = "metallurgy",
     subgroup = "sp-casting-raw-resource",
@@ -2403,7 +2406,8 @@ data:extend({
   {
     type = "recipe",
     name = "sp-molten-magnesium-from-lava",  -- #ForRegEx# - recipe
-    icons = util.icon.create_melting_from_lava_icon("__Spaghetorio__/graphics/icons/molten-magnesium-only-metal.png",
+    icons = util.icon.create_melting_from_lava_icon("__space-age__/graphics/icons/fluid/lava.png",
+                                                    "__Spaghetorio__/graphics/icons/molten-magnesium-only-metal.png",
                                                     "__Spaghetorio__/graphics/icons/rhyolite-1.png"),
     category = "metallurgy",
     subgroup = "sp-casting-raw-resource",
@@ -2424,7 +2428,8 @@ data:extend({
   {
     type = "recipe",
     name = "sp-molten-nickel-from-lava",  -- #ForRegEx# - recipe
-    icons = util.icon.create_melting_from_lava_icon("__Spaghetorio__/graphics/icons/molten-nickel-only-metal.png",
+    icons = util.icon.create_melting_from_lava_icon("__space-age__/graphics/icons/fluid/lava.png",
+                                                    "__Spaghetorio__/graphics/icons/molten-nickel-only-metal.png",
                                                     "__Spaghetorio__/graphics/icons/pumice-1.png"),
     category = "metallurgy",
     subgroup = "sp-casting-raw-resource",
@@ -2444,7 +2449,8 @@ data:extend({
   {
     type = "recipe",
     name = "sp-molten-tin-from-lava",  -- #ForRegEx# - recipe
-    icons = util.icon.create_melting_from_lava_icon("__Spaghetorio__/graphics/icons/molten-tin-only-metal.png",
+    icons = util.icon.create_melting_from_lava_icon("__space-age__/graphics/icons/fluid/lava.png",
+                                                    "__Spaghetorio__/graphics/icons/molten-tin-only-metal.png",
                                                     "__Spaghetorio__/graphics/icons/andesite-1.png"),
     category = "metallurgy",
     subgroup = "sp-casting-raw-resource",
@@ -2464,7 +2470,8 @@ data:extend({
   {
     type = "recipe",
     name = "sp-molten-zinc-from-lava",  -- #ForRegEx# - recipe
-    icons = util.icon.create_melting_from_lava_icon("__Spaghetorio__/graphics/icons/molten-zinc-only-metal.png",
+    icons = util.icon.create_melting_from_lava_icon("__space-age__/graphics/icons/fluid/lava.png",
+                                                    "__Spaghetorio__/graphics/icons/molten-zinc-only-metal.png",
                                                     "__Spaghetorio__/graphics/icons/obsidian-1.png"),
     category = "metallurgy",
     subgroup = "sp-casting-raw-resource",
@@ -3622,7 +3629,9 @@ data:extend({
   {
     type = "recipe",
     name = "sp-crushing-andesite",  -- #ForRegEx# - recipe
-    icons = util.icon.create_crushing_recipe_icon(data.raw.item["sp-andesite"], data.raw.item["sp-sodium"]),
+    icons = util.icon.create_crushing_recipe_icon(data.raw.item["sp-andesite"],
+                                                  {data.raw.item["sp-sodium"],
+                                                   data.raw.item["sp-silver"]}),
     icon_size = 64,
     mip_maps = 4,
     category = "sp-crushing-washing",
@@ -3636,6 +3645,7 @@ data:extend({
       {type = "fluid", name = "sp-bleach", amount = 3}
     },
     results = {
+      {type = "item", name = "sp-silver", amount = 1},
       {type = "item", name = "sp-silica", probability = 0.6, amount = 3},
       {type = "item", name = "sp-alumina", probability = 0.2, amount = 3},
       {type = "item", name = "sp-sodium", probability = 0.2, amount = 3},
@@ -3644,7 +3654,9 @@ data:extend({
   {
     type = "recipe",
     name = "sp-crushing-basalt",  -- #ForRegEx# - recipe
-    icons = util.icon.create_crushing_recipe_icon(data.raw.item["sp-basalt"], data.raw.item["sp-crushed-iron-ore"]),
+    icons = util.icon.create_crushing_recipe_icon(data.raw.item["sp-basalt"],
+                                                  {data.raw.item["sp-crushed-iron-ore"],
+                                                   data.raw.item["sp-iridium"]}),
     icon_size = 64,
     mip_maps = 4,
     category = "sp-crushing-washing",
@@ -3658,6 +3670,7 @@ data:extend({
       {type = "fluid", name = "sp-bleach", amount = 3}
     },
     results = {
+      {type = "item", name = "sp-iridium", amount = 1},
       {type = "item", name = "sp-silica", probability = 0.5, amount = 3},
       {type = "item", name = "sp-alumina", probability = 0.15, amount = 3},
       {type = "item", name = "sp-crushed-iron-ore", probability = 0.35, amount = 3},
@@ -3666,7 +3679,9 @@ data:extend({
   {
     type = "recipe",
     name = "sp-crushing-obsidian",  -- #ForRegEx# - recipe
-    icons = util.icon.create_crushing_recipe_icon(data.raw.item["sp-obsidian"], data.raw.item["sp-potassium-chloride"]),
+    icons = util.icon.create_crushing_recipe_icon(data.raw.item["sp-obsidian"],
+                                                  {data.raw.item["sp-potassium-chloride"],
+                                                   data.raw.item["sp-platinum"]}),
     icon_size = 64,
     mip_maps = 4,
     category = "sp-crushing-washing",
@@ -3675,6 +3690,7 @@ data:extend({
     allow_productivity = true,
     energy_required = 5,
     ingredients = {
+      {type = "item", name = "sp-platinum", amount = 1},
       {type = "item", name = "sp-obsidian", amount = 1},
       {type = "fluid", name = "sp-sodium-hydroxide", amount = 5},
       {type = "fluid", name = "sp-bleach", amount = 2}
@@ -3688,7 +3704,8 @@ data:extend({
   {
     type = "recipe",
     name = "sp-crushing-pumice",  -- #ForRegEx# - recipe
-    icons = util.icon.create_crushing_recipe_icon(data.raw.item["sp-pumice"], data.raw.item["sp-magnesium-chloride"]),
+    icons = util.icon.create_crushing_recipe_icon(data.raw.item["sp-pumice"],
+                                                  {data.raw.item["sp-magnesium-chloride"]}),
     icon_size = 64,
     mip_maps = 4,
     category = "sp-crushing-washing",
@@ -3710,7 +3727,8 @@ data:extend({
   {
     type = "recipe",
     name = "sp-crushing-rhyolite",  -- #ForRegEx# - recipe
-    icons = util.icon.create_crushing_recipe_icon(data.raw.item["sp-rhyolite"], data.raw.item["sp-titanium-chloride"]),
+    icons = util.icon.create_crushing_recipe_icon(data.raw.item["sp-rhyolite"],
+                                                  {data.raw.item["sp-titanium-chloride"]}),
     icon_size = 64,
     mip_maps = 4,
     category = "sp-crushing-washing",
@@ -3731,7 +3749,9 @@ data:extend({
   {
     type = "recipe",
     name = "sp-crushing-scoria",  -- #ForRegEx# - recipe
-    icons = util.icon.create_crushing_recipe_icon(data.raw.item["sp-scoria"], data.raw.item["sp-titanium-chloride"]),
+    icons = util.icon.create_crushing_recipe_icon(data.raw.item["sp-scoria"],
+                                                  {data.raw.item["sp-titanium-chloride"],
+                                                   data.raw.item["sp-palladium"]}),
     icon_size = 64,
     mip_maps = 4,
     category = "sp-crushing-washing",
@@ -3744,6 +3764,7 @@ data:extend({
       {type = "fluid", name = "ammoniacal-solution", amount = 8}
     },
     results = {
+      {type = "item", name = "sp-palladium", amount = 1},
       {type = "item", name = "sp-silica", probability = 0.50, amount = 3},
       {type = "item", name = "sp-alumina", probability = 0.20, amount = 3},
       {type = "item", name = "calcite", probability = 0.30, amount = 3},
@@ -5945,6 +5966,46 @@ data:extend({
       {type = "item", name = "sp-quasicrystal", amount = 4}
     },
     order = "crystal-[quasicrystal-1]"
+  },
+  {
+    type = "recipe",
+    name = "sp-crystallize-lava",  -- #ForRegEx# - recipe
+    icons = util.icon.combine_four_icons("__Spaghetorio__/graphics/icons/andesite-1.png", 64, nil,
+                                         "__Spaghetorio__/graphics/icons/rhyolite-1.png", 64, nil,
+                                         "__Spaghetorio__/graphics/icons/pumice-1.png", 64, nil,
+                                         "__Spaghetorio__/graphics/icons/obsidian-1.png", 64, nil),
+    category = "sp-crystallizing",
+    subgroup = "sp-vulcanic-rock",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 8,
+    ingredients = {
+      {type = "fluid", name = "lava", amount = 50},
+    },
+    results = {
+      {type = "item", name = "sp-andesite", probability = 0.5, amount = 4},
+      {type = "item", name = "sp-rhyolite", probability = 0.2, amount = 10},
+      {type = "item", name = "sp-pumice", probability = 0.1, amount = 20},
+      {type = "item", name = "sp-obsidian", probability = 0.3, amount = 7}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-crystallize-ultramafic-lava",  -- #ForRegEx# - recipe
+    icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/icons/basalt-1.png", 64, nil,
+                                        "__Spaghetorio__/graphics/icons/scoria-1.png", 64, nil),
+    category = "sp-crystallizing",
+    subgroup = "sp-vulcanic-rock",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 15,
+    ingredients = {
+      {type = "fluid", name = "sp-ultramafic-lava", amount = 75},
+    },
+    results = {
+      {type = "item", name = "sp-basalt", probability = 0.6, amount = 3},
+      {type = "item", name = "sp-scoria", probability = 0.4, amount = 5},
+    }
   },
   ------------------------------------------------------------------------------
   -- MARK: crystallizing-with-fluid

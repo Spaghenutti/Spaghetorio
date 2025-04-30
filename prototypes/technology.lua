@@ -2214,9 +2214,18 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "sp-rare-metals-alloy-from-neodymium"
-      }
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-enriched-rare-metals",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-enriched-rare-metal-processing",
+      },
     },
     prerequisites = {
+      "sp-enriched-ores",
       "sp-material-science-pack-3",
     },
     unit =
@@ -3758,15 +3767,6 @@ data:extend({
         type = "unlock-recipe",
         recipe = "sp-dirty-water-filtration-zinc",
       },
-      -- rare metals
-      {
-        type = "unlock-recipe",
-        recipe = "sp-enriched-rare-metals",
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-enriched-rare-metal-processing",
-      },
       -- casting
       {
         type = "unlock-recipe",
@@ -3817,6 +3817,102 @@ data:extend({
         {"sp-computer-science-pack-2", 1}
       },
       time = 30,
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-vulcanic-rock-processing",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icons = util.icon.combine_four_icons("__Spaghetorio__/graphics/hr-icons/andesite-1.png", 256, nil,
+                                         "__Spaghetorio__/graphics/hr-icons/rhyolite-1.png", 256, nil,
+                                         "__Spaghetorio__/graphics/hr-icons/pumice-1.png", 256, nil,
+                                         "__Spaghetorio__/graphics/hr-icons/obsidian-1.png", 256, nil),
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-crystallize-lava"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-crushing-andesite"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-crushing-rhyolite"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-crushing-pumice"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-crushing-obsidian"
+      }
+    },
+    prerequisites = {
+      "foundry"
+    },
+    unit =
+    {
+      count = 200,
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"production-science-pack", 1},
+        {"sp-metallurgic-science-pack-2", 1},
+        {"sp-electromagnetic-science-pack-2", 1}
+      },
+      time = 30
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-advanced-vulcanic-rock-processing",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/hr-icons/basalt-1.png", 256, nil,
+                                        "__Spaghetorio__/graphics/hr-icons/scoria-1.png", 256, nil),
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-crystallize-ultramafic-lava"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-crushing-basalt"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-crushing-scoria"
+      }
+    },
+    prerequisites = {
+      "sp-vulcanic-rock-processing",
+      "sp-advanced-casting"
+    },
+    unit =
+    {
+      count = 500,
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-metallurgic-science-pack-2", 1},
+        {"sp-electromagnetic-science-pack-2", 1},
+        {"production-science-pack", 1},
+        {"utility-science-pack", 1},
+        {"cryogenic-science-pack", 1},
+        {"agricultural-science-pack", 1}
+      },
+      time = 30
     },
   },
   {
