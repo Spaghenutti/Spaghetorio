@@ -238,6 +238,7 @@ TODO for 0.3.14
       + casting into gallium ingot
 
 TODO for 0.3.15
+  - Use silica insted of silicon dioxide
   - Make it such different metals come from different types of lava: lava and hot-lava
     - The recipes shall be unlocked in advanced casting
     - Consider certain vulcanic rocks only to come from lava or hot-lava
