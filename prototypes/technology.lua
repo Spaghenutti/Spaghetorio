@@ -2707,10 +2707,6 @@ data:extend({
         type = "unlock-recipe",
         recipe = "sp-titanium-telluride"
       },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-silicon-dioxide"
-      }
     },
     prerequisites = {
       "sp-computer-science-pack-2",

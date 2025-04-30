@@ -4997,16 +4997,6 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-silicon-dioxide",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/icons/silicon-dioxide.png",
-    icon_size = 64,
-    scale = 0.5,
-    subgroup = "sp-ceramic-material",
-    order = "[silicon-dioxide]",
-    stack_size = 50
-  },
-  {
-    type = "item",
     name = "sp-boron-carbide",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/boron-carbide.png",
     icon_size = 64,

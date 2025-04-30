@@ -6408,21 +6408,6 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-silicon-dioxide",  -- #ForRegEx# - recipe
-    category = "sp-oxidizing",
-    enabled = false,
-    allow_productivity = true,
-    energy_required = 20,
-    ingredients = {
-      {type = "item", name = "sp-silicon", amount = 4},
-      {type = "fluid", name = "sp-oxygen", amount = 8}
-    },
-    results = {
-      {type = "item", name = "sp-silicon-dioxide", amount = 4}
-    },
-  },
-  {
-    type = "recipe",
     name = "sp-uranium-oxide",  -- #ForRegEx# - recipe
     category = "sp-oxidizing",
     enabled = false,
@@ -6774,7 +6759,7 @@ data:extend({
       {type = "item", name = "sp-gold", amount = 1},
       {type = "item", name = "sp-vanadium-pentoxide", amount = 1},
       {type = "item", name = "sp-silicon-nitride", amount = 1},
-      {type = "item", name = "sp-silicon-dioxide", amount = 2},
+      {type = "item", name = "sp-silica", amount = 2},
       {type = "item", name = "sp-titanium-telluride", amount = 4},
       {type = "item", name = "sp-germanium-antimony-tellurium", amount = 2},
       {type = "item", name = "sp-graphene", amount = 4},

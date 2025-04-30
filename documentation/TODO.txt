@@ -4,7 +4,6 @@ TODO for 0.3.2
   + fix locale for core rift
 
 TODO for 0.3.4 - 0.3.6
-  - Add filter to many recipes
   + Remove "sp-recipes-without-technology"
   + organize icons in factorio pedia and crafting window
   + integrate order.lua in entity.lua
@@ -238,12 +237,12 @@ TODO for 0.3.14
       + casting into gallium ingot
 
 TODO for 0.3.15
-  - Use silica insted of silicon dioxide
+  + Use silica insted of silicon dioxide
   - Make it such different metals come from different types of lava: lava and hot-lava
     - The recipes shall be unlocked in advanced casting
     - Consider certain vulcanic rocks only to come from lava or hot-lava
   - Change lightning collectors to power poles
-    - For some casting recipes from lava add as byproduct lava rocks like:
+    + For some casting recipes from lava add as byproduct lava rocks like:
     + Andesite: 60% Si, 20% Al, 6% Fe, 3% Mg, 6% Ca, 3% Na, 2% K - Rb, Ba, U, Th, Nb, La, Eu
     + Basalt: 50% Si, 15% Al, 12% Fe, 7% Mg, 10% Ca, 4% Na, 2% Ti - La, Nd, Y, Hf
     + Obsidian: 75% Si, 18% Al, 1% Fe, 1% Mg, 5% K - Zr, U, Th, La, Nd, Y, Hf
@@ -298,6 +297,7 @@ TODO for 0.3.18
   - Add back blunagium, grobgnum, rukite and yemnuth rockets (even though they are unlocked later)
 
 TODO for 0.3.xx
+  - Add filter to many recipes
   - Add uses for empty research data card
   - Add cool items with data and computer technology for computer science 3 or maybe 4? :3
   - Mask ores depending on tiles
