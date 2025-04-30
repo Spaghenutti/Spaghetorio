@@ -176,6 +176,15 @@ TODO for 0.3.13
 TODO for 0.3.14
   + Move kovarex enrichment before space science
   + Make it such agricultural science does not spoil
+  + Use silica insted of silicon dioxide
+  + Make it such different metals come from different types of lava: lava and hot-lava
+  + For some casting recipes from lava add as byproduct lava rocks like:
+    + Andesite: 60% Si, 20% Al, 20% Na
+    + Basalt: 50% Si, 15% Al, 35% Fe
+    + Obsidian: 75% Si, 15% Al, 10% K
+    + Pumice: 70% Si, 15% Al, 15% Mg
+    + Rhyolite: 80% Si, 10% Al, 10% Ti
+    + Scoria: 50% Si, 20% Al, 30% Ca
   + Fix casting recipes
     + casting iron (update existing recipe)
     + casting copper (update existing recipe)
@@ -237,29 +246,6 @@ TODO for 0.3.14
       + casting into gallium ingot
 
 TODO for 0.3.15
-  + Use silica insted of silicon dioxide
-  - Make it such different metals come from different types of lava: lava and hot-lava
-    - The recipes shall be unlocked in advanced casting
-    - Consider certain vulcanic rocks only to come from lava or hot-lava
-  - Change lightning collectors to power poles
-  - For some casting recipes from lava add as byproduct lava rocks like:
-    + Andesite: 60% Si, 20% Al, 6% Fe, 3% Mg, 6% Ca, 3% Na, 2% K - Rb, Ba, U, Th, Nb, La, Eu
-      - 60% Si, 20% Al, 20% Na
-    + Basalt: 50% Si, 15% Al, 12% Fe, 7% Mg, 10% Ca, 4% Na, 2% Ti - La, Nd, Y, Hf
-      - 50% Si, 15% Al, 35% Fe
-    + Obsidian: 75% Si, 18% Al, 1% Fe, 1% Mg, 5% K - Zr, U, Th, La, Nd, Y, Hf
-      - 75% Si, 15% Al, 10% K
-    + Pumice: 70% Si, 15% Al, 5% K, 5% Na, 3% Fe, 2% Mg - La, Ce, Nd, B, Li, V
-      - 70% Si, 15% Al, 15% Mg
-    + Rhyolite: 80% Si, 10% Al, 8% K, 2% Na - Y, Nd, Ce, Dy, Nb, Rb, Th, U
-      - 80% Si, 10% Al, 10% Ti
-    + Scoria: 50% Si, 20% Al, 15% Fe, 6% Mg, 9% Ca - La, Ce, Nd
-      - 50% Si, 20% Al, 30% Ca
-    - processing the the vulcanic rocks use:
-      - calcium-hydroxide-solution
-      - ammoniacal-solution
-      - sodium-hydroxide
-      - bleach
   - Add casting recipes
     - potassium
       - melt from lava
@@ -273,15 +259,16 @@ TODO for 0.3.15
     - aluminum brass
     - stainless steel
     - glass (in crystallizer?)
-    - copper tube
-    - steel gear wheel
-    - stainless steel gear wheel
-    - flange
+    + copper tube
+    + steel gear wheel
+    + stainless steel gear wheel
+    + flange
     - connecting rod
     - solder
     - silver solder
 
 TODO for 0.3.16
+  - Change lightning collectors to power poles
   - Add recipe chains for core mining
   + Uses for bismuth
     + refined from tin and lead

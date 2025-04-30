@@ -3068,6 +3068,87 @@ data:extend({
     },
     order = "b[casting]-f[casting-pipe]2",
   },
+  {
+    type = "recipe",
+    name = "sp-casting-copper-tube",  -- #ForRegEx# - recipe
+    icons = util.icon.create_casting_icon("__Spaghetorio__/graphics/icons/copper-tube.png",
+                                          {"__space-age__/graphics/icons/fluid/molten-copper.png"}),
+    category = "metallurgy",
+    subgroup = "sp-casting-mechanical-component",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 0.4,
+    ingredients = {
+      {type = "fluid", name = "molten-copper", amount = 10},
+    },
+    results = {
+      {type = "item", name = "sp-copper-tube", amount = 1}
+    },
+    order = "b[casting]-h[casting-copper-tube]",
+  },
+  {
+    type = "recipe",
+    name = "sp-casting-steel-gear-wheel",  -- #ForRegEx# - recipe
+    icons = util.icon.create_casting_icon("__Spaghetorio__/graphics/krastorio/icons/items/steel-gear-wheel.png",
+                                          {"__space-age__/graphics/icons/fluid/molten-iron.png"}),
+    category = "metallurgy",
+    subgroup = "sp-casting-mechanical-component",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 4,
+    ingredients = {
+      {type = "fluid", name = "molten-iron", amount = 50},
+      {type = "item", name = "carbon", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-steel-gear-wheel", amount = 8}
+    },
+    order = "b[casting]-d3[casting-steel-gear-wheel]",
+  },
+  {
+    type = "recipe",
+    name = "sp-casting-stainless-steel-gear-wheel",  -- #ForRegEx# - recipe
+    icons = util.icon.create_casting_icon("__Spaghetorio__/graphics/icons/stainless-steel-gear-wheel.png",
+                                          {"__space-age__/graphics/icons/fluid/molten-iron.png",
+                                           "__Spaghetorio__/graphics/icons/molten-nickel.png"}),
+    category = "metallurgy",
+    subgroup = "sp-casting-mechanical-component",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 4,
+    ingredients = {
+      {type = "fluid", name = "molten-iron", amount = 80},
+      {type = "fluid", name = "sp-molten-nickel", amount = 10},
+      {type = "item", name = "sp-chromium-plate", amount = 1},
+      {type = "item", name = "carbon", amount = 2},
+    },
+    results = {
+      {type = "item", name = "sp-steel-gear-wheel", amount = 4}
+    },
+    order = "b[casting]-d4[casting-stainless-steel-gear-wheel]",
+  },
+  {
+    type = "recipe",
+    name = "sp-casting-flange",  -- #ForRegEx# - recipe
+    icons = util.icon.create_casting_icon("__Spaghetorio__/graphics/icons/flange.png",
+                                          {"__space-age__/graphics/icons/fluid/molten-iron.png",
+                                           "__Spaghetorio__/graphics/icons/molten-nickel.png"}),
+    category = "metallurgy",
+    subgroup = "sp-casting-mechanical-component",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 6,
+    ingredients = {
+      {type = "fluid", name = "molten-iron", amount = 80},
+      {type = "fluid", name = "sp-molten-nickel", amount = 10},
+      {type = "item", name = "sp-chromium-plate", amount = 1},
+      {type = "item", name = "carbon", amount = 2},
+    },
+    results = {
+      {type = "item", name = "sp-flange", amount = 4}
+    },
+    order = "b[casting]-d5[casting-flange]",
+  },
   ------------------------------------------------------------------------------
   -- MARK: high-temperature-smelting
   ------------------------------------------------------------------------------

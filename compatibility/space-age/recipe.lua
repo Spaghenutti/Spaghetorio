@@ -263,7 +263,7 @@ data.raw.recipe["casting-copper-cable"].icons = util.icon.create_casting_icon("_
                                                                               {"__space-age__/graphics/icons/fluid/molten-iron.png"})
 util.recipe.change_recipe_ingredients("casting-copper-cable",
   {
-    {type = "fluid", name = "molten-iron", amount = 10},
+    {type = "fluid", name = "molten-copper", amount = 10},
   },
   0.4)
 
