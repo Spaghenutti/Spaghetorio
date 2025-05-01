@@ -3048,6 +3048,7 @@ data:extend({
     },
     order = "b[casting]-c2[casting-steel-beam]",
   },
+  -- Casting intermadiates
   {
     type = "recipe",
     name = "sp-casting-pipe-with-lead",  -- #ForRegEx# - recipe
@@ -3210,6 +3211,156 @@ data:extend({
       {type = "item", name = "sp-solder", amount = 10}
     },
     order = "cable-[silver-solder]",
+  },
+  -- Casting alloys
+  {
+    type = "recipe",
+    name = "sp-casting-bronze",  -- #ForRegEx# - recipe
+    icons = util.icon.create_casting_icon("__Spaghetorio__/graphics/icons/bronze-rod.png",
+                                          {"__space-age__/graphics/icons/fluid/molten-copper.png",
+                                           "__Spaghetorio__/graphics/icons/molten-tin.png"}),
+    category = "metallurgy",
+    subgroup = "sp-casting-alloy",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 6,
+    ingredients = {
+      {type = "fluid", name = "molten-copper", amount = 30},
+      {type = "fluid", name = "sp-molten-tin", amount = 20}
+    },
+    results = {
+      {type = "item", name = "sp-bronze-rod", amount = 4}
+    },
+    order = "[bronze-rod]",
+  },
+  {
+    type = "recipe",
+    name = "sp-casting-kovar",  -- #ForRegEx# - recipe
+    icons = util.icon.create_casting_icon("__Spaghetorio__/graphics/icons/kovar.png",
+                                          {"__space-age__/graphics/icons/fluid/molten-iron.png",
+                                           "__Spaghetorio__/graphics/icons/molten-nickel.png"}),
+    category = "metallurgy",
+    subgroup = "sp-casting-alloy",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 10,
+    ingredients = {
+      {type = "fluid", name = "molten-iron", amount = 50},
+      {type = "fluid", name = "sp-molten-nickel", amount = 40},
+      {type = "item", name = "sp-cobalt-billet", amount = 3}
+    },
+    results = {
+      {type = "item", name = "sp-kovar", amount = 6}
+    },
+    order = "[kovar]",
+  },
+  {
+    type = "recipe",
+    name = "sp-casting-invar",  -- #ForRegEx# - recipe
+    icons = util.icon.create_casting_icon("__Spaghetorio__/graphics/icons/invar.png",
+                                          {"__space-age__/graphics/icons/fluid/molten-iron.png",
+                                           "__Spaghetorio__/graphics/icons/molten-nickel.png",
+                                           "__Spaghetorio__/graphics/icons/molten-magnesium.png"}),
+    category = "metallurgy",
+    subgroup = "sp-casting-alloy",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 15,
+    ingredients = {
+      {type = "fluid", name = "molten-iron", amount = 60},
+      {type = "fluid", name = "sp-molten-nickel", amount = 40},
+      {type = "fluid", name = "sp-molten-magnesium", amount = 10},
+    },
+    results = {
+      {type = "item", name = "sp-invar", amount = 8}
+    },
+    order = "[invar]",
+  },
+  {
+    type = "recipe",
+    name = "sp-casting-inconel",  -- #ForRegEx# - recipe
+    icons = util.icon.create_casting_icon("__Spaghetorio__/graphics/icons/inconel.png",
+                                          {"__space-age__/graphics/icons/fluid/molten-iron.png",
+                                           "__Spaghetorio__/graphics/icons/molten-nickel.png"}),
+    category = "metallurgy",
+    subgroup = "sp-casting-alloy",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 14,
+    ingredients = {
+      {type = "fluid", name = "molten-iron", amount = 10},
+      {type = "fluid", name = "sp-molten-nickel", amount = 70},
+      {type = "item", name = "sp-chromium-plate", amount = 2}
+    },
+    results = {
+      {type = "item", name = "sp-inconel", amount = 10}
+    },
+    order = "[inconel]",
+  },
+  {
+    type = "recipe",
+    name = "sp-casting-duralumin",  -- #ForRegEx# - recipe
+    icons = util.icon.create_casting_icon("__Spaghetorio__/graphics/icons/duralumin.png",
+                                          {"__space-age__/graphics/icons/fluid/molten-copper.png",
+                                           "__Spaghetorio__/graphics/icons/molten-aluminum.png"}),
+    category = "metallurgy",
+    subgroup = "sp-casting-alloy",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 12,
+    ingredients = {
+      {type = "fluid", name = "molten-copper", amount = 20},
+      {type = "fluid", name = "sp-molten-aluminum", amount = 80},
+      {type = "item", name = "sp-zirconium-rod", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-duralumin", amount = 10}
+    },
+    order = "[duralumin]",
+  },
+  {
+    type = "recipe",
+    name = "sp-casting-brass",  -- #ForRegEx# - recipe
+    icons = util.icon.create_casting_icon("__Spaghetorio__/graphics/icons/brass.png",
+                                          {"__space-age__/graphics/icons/fluid/molten-copper.png",
+                                           "__Spaghetorio__/graphics/icons/molten-zinc.png"}),
+    category = "metallurgy",
+    subgroup = "sp-casting-alloy",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 5,
+    ingredients = {
+      {type = "fluid", name = "molten-copper", amount = 30},
+      {type = "fluid", name = "sp-molten-zinc", amount = 20},
+    },
+    results = {
+      {type = "item", name = "sp-brass", amount = 5}
+    },
+    order = "[brass]",
+  },
+  {
+    type = "recipe",
+    name = "sp-casting-aluminum-brass",  -- #ForRegEx# - recipe
+    icons = util.icon.create_casting_icon("__Spaghetorio__/graphics/icons/aluminum-brass.png",
+                                          {"__Spaghetorio__/graphics/icons/molten-aluminum.png",
+                                           "__Spaghetorio__/graphics/icons/molten-zinc.png",
+                                           "__space-age__/graphics/icons/fluid/molten-copper.png",
+                                           "__Spaghetorio__/graphics/icons/molten-magnesium.png"}),
+    category = "metallurgy",
+    subgroup = "sp-casting-alloy",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 15,
+    ingredients = {
+      {type = "fluid", name = "sp-molten-aluminum", amount = 70},
+      {type = "fluid", name = "molten-copper", amount = 10},
+      {type = "fluid", name = "sp-molten-zinc", amount = 20},
+      {type = "fluid", name = "sp-molten-magnesium", amount = 10},
+    },
+    results = {
+      {type = "item", name = "sp-aluminum-brass", amount = 12}
+    },
+    order = "[aluminum-brass]",
   },
   ------------------------------------------------------------------------------
   -- MARK: high-temperature-smelting

@@ -3821,6 +3821,104 @@ data:extend({
   },
   {
     type = "technology",
+    name = "sp-basic-alloy-casting",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icons = util.icon.create_casting_icon("__Spaghetorio__/graphics/icons/bronze-rod.png",
+                                          {"__space-age__/graphics/icons/fluid/molten-copper.png",
+                                           "__Spaghetorio__/graphics/icons/molten-tin.png"}),
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-casting-bronze"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-casting-brass"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-casting-connecting-rod"
+      }
+    },
+    prerequisites = {
+      "foundry"
+    },
+    unit =
+    {
+      count = 200,
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"production-science-pack", 1},
+        {"sp-metallurgic-science-pack-2", 1},
+        {"sp-electromagnetic-science-pack-2", 1}
+      },
+      time = 30
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-intermediate-alloy-casting",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icons = util.icon.create_casting_icon("__Spaghetorio__/graphics/icons/aluminum-brass.png",
+                                          {"__Spaghetorio__/graphics/icons/molten-aluminum.png",
+                                           "__Spaghetorio__/graphics/icons/molten-zinc.png",
+                                           "__space-age__/graphics/icons/fluid/molten-copper.png",
+                                           "__Spaghetorio__/graphics/icons/molten-magnesium.png"}),
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-casting-kovar"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-casting-invar"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-casting-inconel"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-casting-duralumin"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-casting-aluminum-brass"
+      }
+    },
+    prerequisites = {
+      "sp-basic-alloy-casting",
+      "sp-advanced-casting"
+    },
+    unit =
+    {
+      count = 1000,
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-metallurgic-science-pack-2", 1},
+        {"sp-electromagnetic-science-pack-2", 1},
+        {"production-science-pack", 1},
+        {"utility-science-pack", 1},
+        {"cryogenic-science-pack", 1},
+        {"agricultural-science-pack", 1}
+      },
+      time = 30
+    },
+  },
+  {
+    type = "technology",
     name = "sp-vulcanic-rock-processing",  -- #ForRegEx# - technology
     icon_size = 256,
     icons = util.icon.combine_four_icons("__Spaghetorio__/graphics/hr-icons/andesite-1.png", 256, nil,

@@ -366,16 +366,16 @@ function data_util.picture_with_glow(image, glow, tint)
 end
 
 
-function data_util.create_casting_icon(molten_metal_icon, byproduct_icons)
-  local num_of_byproducts = #byproduct_icons
+function data_util.create_casting_icon(molten_metal_icon, molten_metal_icons)
+  local num_of_byproducts = #molten_metal_icons
   local icons = {}
 
   -- Add the molten metal icon
-  table.insert(icons, {icon = molten_metal_icon, icon_size = 64, scale = 0.5, shift = {-3, 9 + num_of_byproducts * 4}})
+  table.insert(icons, {icon = molten_metal_icon, icon_size = 64, scale = 0.3, shift = {-2, 5 + num_of_byproducts * 2}})
 
-  -- Loop through byproduct_icons and add each one to the icons table
-  for i, byproduct_icon in ipairs(byproduct_icons) do
-    table.insert(icons, {icon = byproduct_icon, icon_size = 64, scale = 0.4, shift = {12 - num_of_byproducts * 10 + i * 10, -3}})
+  -- Loop through molten_metal_icons and add each one to the icons table
+  for i, byproduct_icon in ipairs(molten_metal_icons) do
+    table.insert(icons, {icon = byproduct_icon, icon_size = 64, scale = 0.25, shift = {8 - num_of_byproducts * 6 + i * 6, -2}})
   end
 
   return icons

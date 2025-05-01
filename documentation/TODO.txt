@@ -250,15 +250,14 @@ TODO for 0.3.15
     - potassium
       - melt from lava
   - Additional casting recipes
-    - bronze
-    - kovar
-    - invar
-    - inconel
-    - duralumin
-    - brass
-    - aluminum brass
-    - stainless steel
-    - glass (in crystallizer?)
+    + bronze
+    + kovar
+    + invar
+    + inconel
+    + duralumin
+    + brass
+    + aluminum brass
+    + stainless steel
     + copper tube
     + steel gear wheel
     + stainless steel gear wheel

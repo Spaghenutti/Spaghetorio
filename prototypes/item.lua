@@ -2414,7 +2414,7 @@ data:extend({
     icon_size = 64,
     scale = 0.5,
     subgroup = "sp-alloy",
-    order = "rod-[bronze-rod]",
+    order = "[bronze-rod]",
     stack_size = 100
   },
   {

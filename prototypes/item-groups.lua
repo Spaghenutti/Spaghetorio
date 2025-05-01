@@ -140,7 +140,13 @@ data:extend({
     type = "item-subgroup",
     name = "sp-alloy",  -- #ForRegEx# - item-subgroup
     group = "sp-materials",
-    order = "f"
+    order = "f1"
+  },
+  {
+    type = "item-subgroup",
+    name = "sp-casting-alloy",  -- #ForRegEx# - item-subgroup
+    group = "sp-materials",
+    order = "f2"
   },
   {
     type = "item-subgroup",
