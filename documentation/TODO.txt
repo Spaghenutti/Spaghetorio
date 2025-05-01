@@ -244,12 +244,7 @@ TODO for 0.3.14
       + melt from lava
       + melt from gallium chloride
       + casting into gallium ingot
-
-TODO for 0.3.15
-  - Add casting recipes
-    - potassium
-      - melt from lava
-  - Additional casting recipes
+  + Additional casting recipes
     + bronze
     + kovar
     + invar
@@ -266,8 +261,20 @@ TODO for 0.3.15
     + solder
     + silver solder
 
+TODO for 0.3.15
+  - Make yellow sprites from grass and use it as wheat
+  - Make fungi decoratives to trees
+  - Use more gleba trees as resources for some stuff. Make this available after reaching space.
+  - Add different fertile grounds for gleba plants
+
 TODO for 0.3.16
-  - Change lightning collectors to power poles
+  - Update space science 2 branch of tech tree
+  - Add back blunagium, grobgnum, rukite and yemnuth rockets (even though they are unlocked later)
+
+TODO for 0.3.17
+  - Update automation science 3
+  - Update logistic science 3
+  - Update geological science 3
   - Add recipe chains for core mining
   + Uses for bismuth
     + refined from tin and lead
@@ -283,17 +290,10 @@ TODO for 0.3.16
     - thallium used in optics
     - used in rodent poison
 
-TODO for 0.3.17
-  - Make yellow sprites from grass and use it as wheat
-  - Make fungi decoratives to trees
-  - Use more gleba trees as resources for some stuff. Make this available after reaching space.
-  - Add different fertile grounds for gleba plants
-
-TODO for 0.3.18
-  - Update space science 2 branch of tech tree
-  - Add back blunagium, grobgnum, rukite and yemnuth rockets (even though they are unlocked later)
-
 TODO for 0.3.xx
+  - Add casting recipes
+    - potassium
+      - melt from lava
   - Add filter to many recipes
   - Add uses for empty research data card
   - Add cool items with data and computer technology for computer science 3 or maybe 4? :3
@@ -329,6 +329,7 @@ TODO for 0.3.xx
   - Add nuclear and antimatter locomotive
   - set allow_decomposition = false for many many recipes
   - Fix productivity technologies (see steel plate productivity)
+  - Change lightning collectors to power poles
 
 --------------------------------------------------------------------------------
 
