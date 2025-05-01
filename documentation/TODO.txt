@@ -262,6 +262,7 @@ TODO for 0.3.14
     + silver solder
 
 TODO for 0.3.15
+  - Add shallow water fill
   - Make yellow sprites from grass and use it as wheat
   - Make fungi decoratives to trees
   - Use more gleba trees as resources for some stuff. Make this available after reaching space.

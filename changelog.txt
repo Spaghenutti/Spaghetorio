@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.3.15
+Date: 2025-05-16
+  Changes:
+    - Wheat and fungi are now accquired from actual plants on nauvis.
+    - Wheat and fungi are can be cultivated just like othar plants.
+---------------------------------------------------------------------------------------------------
 Version: 0.3.14
 Date: 2025-05-09
   Features:
