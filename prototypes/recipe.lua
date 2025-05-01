@@ -2865,7 +2865,7 @@ data:extend({
     results = {
       {type = "item", name = "sp-aluminum-cable", amount = 40}
     },
-    order = "z-from-molten-[aluminum]"
+    order = "cable-[aluminum]"
   },
   {
     type = "recipe",
@@ -2883,7 +2883,7 @@ data:extend({
     results = {
       {type = "item", name = "sp-aluminum-frame", amount = 20}
     },
-    order = "z-from-molten-[aluminum]"
+    order = "frame-3-[aluminum-frame]"
   },
   {
     type = "recipe",
@@ -3066,7 +3066,7 @@ data:extend({
     results = {
       {type = "item", name = "pipe", amount = 1}
     },
-    order = "b[casting]-f[casting-pipe]2",
+    order = "other-[casting-pipe]",
   },
   {
     type = "recipe",
@@ -3084,7 +3084,7 @@ data:extend({
     results = {
       {type = "item", name = "sp-copper-tube", amount = 1}
     },
-    order = "b[casting]-h[casting-copper-tube]",
+    order = "frame-1-[copper-tube]",
   },
   {
     type = "recipe",
@@ -3103,7 +3103,7 @@ data:extend({
     results = {
       {type = "item", name = "sp-steel-gear-wheel", amount = 8}
     },
-    order = "b[casting]-d3[casting-steel-gear-wheel]",
+    order = "gear-s1-[steel-gear-wheel]",
   },
   {
     type = "recipe",
@@ -3125,7 +3125,7 @@ data:extend({
     results = {
       {type = "item", name = "sp-steel-gear-wheel", amount = 4}
     },
-    order = "b[casting]-d4[casting-stainless-steel-gear-wheel]",
+    order = "gear-s2-[stainless-steel-gear-wheel]",
   },
   {
     type = "recipe",
@@ -3147,7 +3147,7 @@ data:extend({
     results = {
       {type = "item", name = "sp-flange", amount = 4}
     },
-    order = "b[casting]-d5[casting-flange]",
+    order = "other-[casting-flange]",
   },
   {
     type = "recipe",
@@ -3170,7 +3170,46 @@ data:extend({
     results = {
       {type = "item", name = "sp-connecting-rod", amount = 8}
     },
-    order = "b[casting]-i1[connecting-rod]",
+    order = "other-[connecting-rod]",
+  },
+  {
+    type = "recipe",
+    name = "sp-casting-solder",  -- #ForRegEx# - recipe
+    icons = util.icon.create_casting_icon("__Spaghetorio__/graphics/icons/solder.png",
+                                          {"__Spaghetorio__/graphics/icons/molten-tin.png",
+                                           "__Spaghetorio__/graphics/icons/molten-lead.png"}),
+    category = "metallurgy",
+    subgroup = "sp-casting-mechanical-component",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 4,
+    ingredients = {
+      {type = "fluid", name = "sp-molten-tin", amount = 50},
+      {type = "fluid", name = "sp-molten-lead", amount = 20}
+    },
+    results = {
+      {type = "item", name = "sp-solder", amount = 10}
+    },
+    order = "cable-[solder]",
+  },
+  {
+    type = "recipe",
+    name = "sp-casting-silver-solder",  -- #ForRegEx# - recipe
+    icons = util.icon.create_casting_icon("__Spaghetorio__/graphics/icons/silver-solder.png",
+                                          {"__Spaghetorio__/graphics/icons/molten-tin.png"}),
+    category = "metallurgy",
+    subgroup = "sp-casting-mechanical-component",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 4,
+    ingredients = {
+      {type = "fluid", name = "sp-molten-tin", amount = 80},
+      {type = "item", name = "sp-silver", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-solder", amount = 10}
+    },
+    order = "cable-[silver-solder]",
   },
   ------------------------------------------------------------------------------
   -- MARK: high-temperature-smelting

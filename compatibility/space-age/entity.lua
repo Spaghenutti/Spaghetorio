@@ -29,6 +29,12 @@ data.raw.tool["electromagnetic-science-pack"].order = "i[electromagnetic-science
 data.raw.tool["agricultural-science-pack"].order = "j[agricultural-science-pack]"
 data.raw.tool["cryogenic-science-pack"].order = "k[cryogenic-science-pack]"
 
+-- recipes
+data.raw.recipe["casting-iron-gear-wheel"].order = "gear-s0-[steel-gear-wheel]"
+data.raw.recipe["casting-iron-stick"].order = "frame-[iron-stick]"
+data.raw.recipe["casting-copper-cable"].order = "cable-[copper-cable]"
+data.raw.recipe["casting-pipe"].order = "other-[pipe]"
+
 -- MARK: Change item subgroups
 data.raw.item["tree-seed"].subgroup = "sp-basic-agriculture"
 

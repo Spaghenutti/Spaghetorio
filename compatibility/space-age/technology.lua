@@ -262,8 +262,6 @@ table.insert(data.raw.technology["foundry"].effects, {type = "unlock-recipe", re
 table.insert(data.raw.technology["foundry"].effects, {type = "unlock-recipe", recipe = "sp-molten-iron-from-crushed-iron"})
 table.insert(data.raw.technology["foundry"].effects, {type = "unlock-recipe", recipe = "sp-molten-copper-from-crushed-copper"})
 table.insert(data.raw.technology["foundry"].effects, {type = "unlock-recipe", recipe = "sp-casting-aluminum-sheet"})
-table.insert(data.raw.technology["foundry"].effects, {type = "unlock-recipe", recipe = "sp-casting-aluminum-cable"})
-table.insert(data.raw.technology["foundry"].effects, {type = "unlock-recipe", recipe = "sp-casting-aluminum-frame"})
 table.insert(data.raw.technology["foundry"].effects, {type = "unlock-recipe", recipe = "sp-casting-tin-ingot"})
 table.insert(data.raw.technology["foundry"].effects, {type = "unlock-recipe", recipe = "sp-casting-lead-slab"})
 table.insert(data.raw.technology["foundry"].effects, {type = "unlock-recipe", recipe = "sp-casting-zinc-plate"})
@@ -272,6 +270,15 @@ table.insert(data.raw.technology["foundry"].effects, {type = "unlock-recipe", re
 table.insert(data.raw.technology["foundry"].effects, {type = "unlock-recipe", recipe = "sp-casting-iron-beam"})
 table.insert(data.raw.technology["foundry"].effects, {type = "unlock-recipe", recipe = "sp-casting-steel-beam"})
 table.insert(data.raw.technology["foundry"].effects, {type = "unlock-recipe", recipe = "sp-casting-pipe-with-lead"})
+table.insert(data.raw.technology["foundry"].effects, {type = "unlock-recipe", recipe = "sp-casting-aluminum-cable"})
+table.insert(data.raw.technology["foundry"].effects, {type = "unlock-recipe", recipe = "sp-casting-aluminum-frame"})
+table.insert(data.raw.technology["foundry"].effects, {type = "unlock-recipe", recipe = "sp-casting-copper-tube"})
+table.insert(data.raw.technology["foundry"].effects, {type = "unlock-recipe", recipe = "sp-casting-steel-gear-wheel"})
+table.insert(data.raw.technology["foundry"].effects, {type = "unlock-recipe", recipe = "sp-casting-stainless-steel-gear-wheel"})
+table.insert(data.raw.technology["foundry"].effects, {type = "unlock-recipe", recipe = "sp-casting-flange"})
+table.insert(data.raw.technology["foundry"].effects, {type = "unlock-recipe", recipe = "sp-casting-connecting-rod"})
+table.insert(data.raw.technology["foundry"].effects, {type = "unlock-recipe", recipe = "sp-casting-solder"})
+table.insert(data.raw.technology["foundry"].effects, {type = "unlock-recipe", recipe = "sp-casting-silver-solder"})
 data.raw.technology["foundry"].research_trigger = nil
 data.raw.technology["foundry"].unit = {
   count = 500,

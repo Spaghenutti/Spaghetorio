@@ -10,7 +10,7 @@ data.raw.item["iron-plate"].order = "a-plate-[iron]"
 
 data.raw.item["copper-cable"].order = "cable-[copper-cable]"
 
-data.raw.item["iron-gear-wheel"].order = "gear-[iron-gear-wheel]"
+data.raw.item["iron-gear-wheel"].order = "gear-s0-[iron-gear-wheel]"
 data.raw.item["iron-stick"].order = "frame-[iron-stick]"
 
 data.raw.item["low-density-structure"].order = "ceramic-[low-density-structure]"  -- I know its not supposed to be ceramics, but its my mod so i do whatever i want.
