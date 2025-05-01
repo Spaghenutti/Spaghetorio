@@ -3149,6 +3149,29 @@ data:extend({
     },
     order = "b[casting]-d5[casting-flange]",
   },
+  {
+    type = "recipe",
+    name = "sp-casting-connecting-rod",  -- #ForRegEx# - recipe
+    icons = util.icon.create_casting_icon("__Spaghetorio__/graphics/icons/connecting-rod.png",
+                                          {"__space-age__/graphics/icons/fluid/molten-iron.png",
+                                           "__space-age__/graphics/icons/fluid/molten-copper.png",
+                                           "__Spaghetorio__/graphics/icons/molten-tin.png"}),
+    category = "metallurgy",
+    subgroup = "sp-casting-mechanical-component",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 5,
+    ingredients = {
+      {type = "fluid", name = "molten-iron", amount = 80},
+      {type = "fluid", name = "molten-copper", amount = 10},
+      {type = "fluid", name = "sp-molten-tin", amount = 10},
+      {type = "item", name = "carbon", amount = 2},
+    },
+    results = {
+      {type = "item", name = "sp-connecting-rod", amount = 8}
+    },
+    order = "b[casting]-i1[connecting-rod]",
+  },
   ------------------------------------------------------------------------------
   -- MARK: high-temperature-smelting
   ------------------------------------------------------------------------------
@@ -8964,9 +8987,9 @@ data:extend({
     category = "crafting",
     enabled = false,
     allow_productivity = true,
-    energy_required = 1,
+    energy_required = 1.5,
     ingredients = {
-      {type = "item", name = "steel-plate", amount = 1},
+      {type = "item", name = "steel-plate", amount = 2},
       {type = "item", name = "sp-bronze-rod", amount = 1}
     },
     results = {

@@ -263,7 +263,7 @@ TODO for 0.3.15
     + steel gear wheel
     + stainless steel gear wheel
     + flange
-    - connecting rod
+    + connecting rod
     - solder
     - silver solder
 

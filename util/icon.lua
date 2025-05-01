@@ -371,7 +371,7 @@ function data_util.create_casting_icon(molten_metal_icon, byproduct_icons)
   local icons = {}
 
   -- Add the molten metal icon
-  table.insert(icons, {icon = molten_metal_icon, icon_size = 64, scale = 0.5, shift = {-3, 9}})
+  table.insert(icons, {icon = molten_metal_icon, icon_size = 64, scale = 0.5, shift = {-3, 9 + num_of_byproducts * 4}})
 
   -- Loop through byproduct_icons and add each one to the icons table
   for i, byproduct_icon in ipairs(byproduct_icons) do

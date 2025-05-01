@@ -116,6 +116,7 @@ require("compatibility.factorio-base.resource")
 require("compatibility.factorio-base.technology")
 
 -- space-age
+require("compatibility.space-age.building")
 require("compatibility.space-age.entity")
 require("compatibility.space-age.recipe")
 require("compatibility.space-age.resource")
