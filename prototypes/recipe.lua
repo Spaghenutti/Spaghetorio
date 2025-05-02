@@ -1,10 +1,5 @@
 local util = require("data-util")
 
--- TODO:
---  - add uses to:
---    - cobalt-sulfate
---    - calcium-carbonate
-
 
 data:extend({
   ------------------------------------------------------------------------------

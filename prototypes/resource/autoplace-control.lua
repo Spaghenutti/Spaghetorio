@@ -162,6 +162,14 @@ data:extend({
     order = "y-[algae]",
     category = "resource"
   },
+  {
+    type = "autoplace-control",
+    name = "sp-wheat",  -- #ForRegEx# - autoplace-control
+    localised_name = {"", "[entity=sp-wheat] ", {"autoplace-control-name.sp-wheat"}},
+    richness = false,
+    order = "y-[wheat]",
+    category = "resource"
+  },
   -- MARK: Core resource
   {
     type = "autoplace-control",
@@ -236,6 +244,7 @@ data.raw.planet["nauvis"].map_gen_settings.autoplace_controls["sp-iodine-brine"]
 data.raw.planet["nauvis"].map_gen_settings.autoplace_controls["sp-mineral-water"] = {}
 
 data.raw.planet["nauvis"].map_gen_settings.autoplace_controls["sp-algae"] = {}
+data.raw.planet["nauvis"].map_gen_settings.autoplace_controls["sp-wheat"] = {}
 
 data.raw.planet["nauvis"].map_gen_settings.autoplace_controls["sp-core-rift"] = {}
 
