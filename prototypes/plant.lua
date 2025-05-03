@@ -152,14 +152,14 @@ data:extend({
     mined_sound = sound_variations("__space-age__/sound/mining/mined-yumako-tree", 6, 0.3),
     growth_ticks = 1.5 * 3600,
     emissions_per_second = { pollution = -0.0005 },
-    collision_box = nil, -- {{0, 0}, {0, 0}}, -- {{-1.3, -1.3}, {1.3, 1.3}},
-    selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
-    collision_mask = {layers={ground_tile=true, train=true, is_object=true, is_lower_object=true}},
+    collision_box = {{-0.5, -0.5}, {0.5, 0.5}},
+    selection_box = {{-1.2, -1.2}, {1.2, 1.2}},
+    collision_mask = {layers={water_tile=true}},
     impact_category = "tree",
     autoplace = {
       control = "sp-wheat",
       order = "a[tree]-b[wheat]-a",
-      probability_expression = "0.2 * var('control:sp-wheat:size')\z
+      probability_expression = "0.2 * var('control:sp-wheat:size') - 1.3\z
                                 + multioctave_noise{x = x,\z
                                                     y = y,\z
                                                     persistence = 0.65,\z
@@ -169,6 +169,10 @@ data:extend({
                                                     input_scale = 1/25 * var('control:sp-wheat:frequency'),\z
                                                     output_scale = 0.8}",
       tile_restriction = {
+        "grass-1",
+        "grass-2",
+        "grass-3",
+        "grass-4",
         "dry-dirt",
         "dirt-1",
         "dirt-2",
@@ -177,19 +181,11 @@ data:extend({
         "dirt-5",
         "dirt-6",
         "dirt-7",
-        "sand-1",
-        "sand-2",
-        "sand-3",
-        "red-desert-0",
-        "red-desert-1",
-        "red-desert-2",
-        "red-desert-3",
-        "nuclear-ground",
       }
     },
     agricultural_tower_tint = {
-      primary = {r = 0.2, g = 0.4, b = 0.2, a = 1.000},
-      secondary = {r = 0.25, g = 0.5, b = 0.25, a = 1.000},
+      primary = {r = 0.6, g = 0.7, b = 0.2, a = 1.000},
+      secondary = {r = 0.8, g = 0.8, b = 0.25, a = 1.000},
     },
     ambient_sounds =
     {
@@ -211,7 +207,7 @@ data:extend({
       entity_to_sound_ratio = 0.2,
       average_pause_seconds = 8
     },
-    map_color = {200, 200, 0},
+    map_color = {0.7, 0.7, 0, 0.4},
     order = "a[tree]-c[gleba]-a[seedable]-a[wheat]",
     stack_size = 50,
   },

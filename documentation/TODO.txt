@@ -332,6 +332,7 @@ TODO for 0.3.xx
   - set allow_decomposition = false for many many recipes
   - Fix productivity technologies (see steel plate productivity)
   - Change lightning collectors to power poles
+  - Unlock legendary quality much later in tech tree
 
 --------------------------------------------------------------------------------
 
