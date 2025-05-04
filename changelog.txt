@@ -2,8 +2,12 @@
 Version: 0.3.15
 Date: 2025-05-16
   Changes:
-    - Wheat and fungi are now accquired from actual plants on nauvis.
-    - Wheat and fungi are can be cultivated just like othar plants.
+    - Fungi renamed to honeycomb fungus
+    - Wheat is now accquired from wheat plants on nauvis growing on dry and grass tiles on nauvis terrain
+    - Honeycomb fungus is no accquired from honeycomb fungus plant growing on gleba terrain
+    - Wheat and honeycomb fungus can be cultivated just like othar plants
+  Bugfixes:
+    - Fixed enriching iron recipe
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.14
 Date: 2025-05-09
@@ -139,7 +143,7 @@ Date: 2025-03-09
     - Updated tech tree
     - Ferrite among other metals unlocked in mid to late game can now not be smelted in stone or steel furnace
   Bugfixes:
-    - electric furnace does not require electro magnets
+    - Electric furnace does not require electro magnets
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.5
 Date: 2025-03-08
@@ -164,12 +168,12 @@ Date: 2025-03-07
 Version: 0.3.3
 Date: 2025-03-28
   Changes:
-    - assembling machine 1 now requires electronic circuits
-    - assembling machine 2 now requires advanced circuits
-    - electrical components are now made in chemical plant
+    - Assembling machine 1 now requires electronic circuits
+    - Assembling machine 2 now requires advanced circuits
+    - Electrical components are now made in chemical plant
   Bugfixes:
     - Some ores now require an amount of fluid to be mined (before it was 0)
-    - automation 2 technology is now reachable
+    - Automation 2 technology is now reachable
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.2
 Date: 2025-02-28
@@ -257,7 +261,7 @@ Date: 2024-10-15
   Bugfixes:
     - Unlock unlimited ingredient count for krastorio buildings
     - Locale fixes
-    - personal roboports mk3 and mk4 are now in crafting category
+    - Personal roboports mk3 and mk4 are now in crafting category
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.8
 Date: 2024-10-10
@@ -307,8 +311,8 @@ Date: 2024-09-29
 Version: 0.1.3
 Date: 2024-09-28
   Bugfixes:
-    - blocked decomposition for recipes with multiple outputs. The total raw calculation in recipes resulted in "Too complex" error.
-    - light emitting diode is now researched with advanced electronics 2
+    - Blocked decomposition for recipes with multiple outputs. The total raw calculation in recipes resulted in "Too complex" error.
+    - Light emitting diode is now researched with advanced electronics 2
     - Reduced size of mod from 250 MB to 50 MB
     - Fixed contact link
 ---------------------------------------------------------------------------------------------------
@@ -317,7 +321,7 @@ Date: 2024-09-28
   Features:
     - Created new recipe category for 3 fluids
   Bugfixes:
-    - military tech cards has now the krastorio 2 recipe (recipes in military tech branch still need to be updated)
+    - Military tech cards has now the krastorio 2 recipe (recipes in military tech branch still need to be updated)
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.1
 Date: 2024-09-27

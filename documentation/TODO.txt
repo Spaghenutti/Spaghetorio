@@ -264,8 +264,10 @@ TODO for 0.3.14
 TODO for 0.3.15
   - User greenhouse as agricultural tower
   - Add shallow water fill
-  - Make yellow sprites from grass and use it as wheat
+  + Make yellow sprites from grass and use it as wheat
   - Make fungi decoratives to trees
+    - Add fungi spores
+    - Udate fungi recipes
   - Use more gleba trees as resources for some stuff. Make this available after reaching space.
   - Add different fertile grounds for gleba plants
 

@@ -170,6 +170,14 @@ data:extend({
     order = "y-[wheat]",
     category = "resource"
   },
+  {
+    type = "autoplace-control",
+    name = "sp-honeycomb-fungus",  -- #ForRegEx# - autoplace-control
+    localised_name = {"", "[entity=sp-honeycomb-fungus] ", {"autoplace-control-name.sp-honeycomb-fungus"}},
+    richness = false,
+    order = "y-[honeycomb-fungus]",
+    category = "resource"
+  },
   -- MARK: Core resource
   {
     type = "autoplace-control",
@@ -245,6 +253,7 @@ data.raw.planet["nauvis"].map_gen_settings.autoplace_controls["sp-mineral-water"
 
 data.raw.planet["nauvis"].map_gen_settings.autoplace_controls["sp-algae"] = {}
 data.raw.planet["nauvis"].map_gen_settings.autoplace_controls["sp-wheat"] = {}
+data.raw.planet["nauvis"].map_gen_settings.autoplace_controls["sp-honeycomb-fungus"] = {}
 
 data.raw.planet["nauvis"].map_gen_settings.autoplace_controls["sp-core-rift"] = {}
 

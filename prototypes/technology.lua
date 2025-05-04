@@ -2050,11 +2050,11 @@ data:extend({
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-fungi",
+        recipe = "sp-honeycomb-fungus",
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-nutrients-from-fungi",
+        recipe = "sp-nutrients-from-honeycomb-fungus",
       },
     },
     prerequisites = {
@@ -2135,7 +2135,7 @@ data:extend({
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-improved-fungi-growing",
+        recipe = "sp-improved-honeycomb-fungus-growing",
       },
       {
         type = "unlock-recipe",

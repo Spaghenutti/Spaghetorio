@@ -1,7 +1,6 @@
 
-local data_util = require("data-util") -- util is used in util.sprite_load
 local sounds = require("__base__.prototypes.entity.sounds")
-
+local remove_prototypes = require("util.remove-prototypes")
 
 local function decorative_pictures(data, scale)
   local file_path = data.file_path
@@ -22,6 +21,11 @@ local function decorative_pictures(data, scale)
   end
   return pictures
 end
+
+
+remove_prototypes.remove_one_prototype("optimized-decorative", "honeycomb-fungus")
+remove_prototypes.remove_one_prototype("optimized-decorative", "honeycomb-fungus-1x1")
+remove_prototypes.remove_one_prototype("optimized-decorative", "honeycomb-fungus-decayed")
 
 
 data:extend({
@@ -111,15 +115,15 @@ data:extend({
       average_pause_seconds = 8
     },
     map_color = {30, 80, 30},
-    order = "a[tree]-c[gleba]-a[seedable]-a[algae]",
+    order = "[algae]",
     stack_size = 50,
   },
-    {
+  {
     type = "plant",
     name = "sp-wheat",  -- #ForRegEx# - item
     localised_name = {"item-name.sp-wheat"},
-    icon = "__Spaghetorio__/graphics/decorative/wheat-01.png",
-    icon_size = 256,
+    icon = "__Spaghetorio__/graphics/icons/wheat-1.png",
+    icon_size = 64,
     scale = 0.5,
     pictures = decorative_pictures({count = 3, file_path = "__Spaghetorio__/graphics/decorative/wheat"}, 0.3),
     subgroup = "trees",
@@ -159,7 +163,7 @@ data:extend({
     autoplace = {
       control = "sp-wheat",
       order = "a[tree]-b[wheat]-a",
-      probability_expression = "0.2 * var('control:sp-wheat:size') - 1.3\z
+      probability_expression = "0.06 * var('control:sp-wheat:size') - 1.3\z
                                 + multioctave_noise{x = x,\z
                                                     y = y,\z
                                                     persistence = 0.65,\z
@@ -207,8 +211,123 @@ data:extend({
       entity_to_sound_ratio = 0.2,
       average_pause_seconds = 8
     },
-    map_color = {0.7, 0.7, 0, 0.4},
-    order = "a[tree]-c[gleba]-a[seedable]-a[wheat]",
+    map_color = {0.9, 0.8, 0.5, 0.4},
+    order = "[wheat]",
+    stack_size = 50,
+  },
+  {
+    type = "plant",
+    name = "sp-honeycomb-fungus",  -- #ForRegEx# - item
+    localised_name = {"item-name.sp-honeycomb-fungus"},
+    icon = "__Spaghetorio__/graphics/icons/honeycomb-fungus-1.png",
+    icon_size = 64,
+    scale = 0.5,
+    pictures = decorative_pictures({count = 12, file_path = "__space-age__/graphics/decorative/honeycomb-fungus/honeycomb-fungus"}, 0.3),
+    subgroup = "trees",
+    flags = {"placeable-neutral", "placeable-off-grid", "breaths-air"},
+    minable =
+    {
+      mining_time = 0.5,
+      results = {{type = "item", name = "sp-honeycomb-fungus", amount = 1}},
+      mining_trigger =
+      {
+        {
+          type = "direct",
+          action_delivery =
+          {
+            {
+              type = "instant",
+              target_effects = {
+                {
+                  type = "play-sound",
+                  sound = sounds.tree_leaves,
+                  damage_type_filters = "fire"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    mining_sound = sound_variations("__space-age__/sound/mining/axe-mining-yumako-tree", 5, 0.6),
+    mined_sound = sound_variations("__space-age__/sound/mining/mined-yumako-tree", 6, 0.3),
+    growth_ticks = 0.2 * 3600,
+    emissions_per_second = { pollution = -0.0005 },
+    collision_box = {{-0.4, -0.4}, {0.4, 0.4}},
+    selection_box = {{-0.6, -0.6}, {0.6, 0.6}},
+    collision_mask = {layers={water_tile=true, train=true, is_object=true, is_lower_object=true}},
+    impact_category = "tree",
+    autoplace = {
+      control = "sp-honeycomb-fungus",
+      order = "a[tree]-b[honeycomb-fungus]-a",
+      probability_expression = "grpi(0.7) + 0.06 * var('control:sp-honeycomb-fungus:size') - 1.3\z
+                                + multioctave_noise{x = x,\z
+                                                    y = y,\z
+                                                    persistence = 0.65,\z
+                                                    seed0 = map_seed,\z
+                                                    seed1 = 3,\z
+                                                    octaves = 4,\z
+                                                    input_scale = 1/25 * var('control:sp-honeycomb-fungus:frequency'),\z
+                                                    output_scale = 0.8}",
+      tile_restriction = {
+        "lowland-olive-blubber",
+        "lowland-olive-blubber-2",
+        "lowland-olive-blubber-3",
+        "lowland-brown-blubber",
+        "lowland-pale-green",
+        "lowland-cream-cauliflower",
+        "lowland-cream-cauliflower-2",
+        "lowland-dead-skin",
+        "lowland-dead-skin-2",
+        "lowland-cream-red",
+        "lowland-red-vein",
+        "lowland-red-vein-2",
+        "lowland-red-vein-3",
+        "lowland-red-vein-4",
+        "lowland-red-vein-dead",
+        "lowland-red-infection",
+        "midland-turquoise-bark",
+        "midland-turquoise-bark-2",
+        "midland-cracked-lichen",
+        "midland-cracked-lichen-dull",
+        "midland-cracked-lichen-dark",
+        "midland-yellow-crust",
+        "midland-yellow-crust-2",
+        "midland-yellow-crust-3",
+        "midland-yellow-crust-4",
+        "highland-dark-rock",
+        "highland-dark-rock-2",
+        "highland-yellow-rock",
+        "pit-rock",
+      }
+    },
+    agricultural_tower_tint = {
+      primary = {r = 0.5, g = 0.5, b = 0.2, a = 1.000},
+      secondary = {r = 0.7, g = 0.7, b = 0.25, a = 1.000},
+    },
+    ambient_sounds =
+    {
+      sound =
+      {
+        variations = {
+          {filename = "__space-age__/sound/mining/spoilage-1.ogg", volume = 0.3},
+          {filename = "__space-age__/sound/mining/spoilage-2.ogg", volume = 0.3},
+          {filename = "__space-age__/sound/mining/spoilage-3.ogg", volume = 0.3}
+        },
+        advanced_volume_control =
+        {
+          fades = {fade_in = {curve_type = "cosine", from = {control = 0.5, volume_percentage = 0.0}, to = {1.5, 100.0}}}
+        }
+      },
+      radius = 7.5,
+      min_entity_count = 2,
+      max_entity_count = 10,
+      entity_to_sound_ratio = 0.2,
+      average_pause_seconds = 8
+    },
+    map_color = {0.7, 0.9, 0, 0.7},
+    -- map_color = {1, 1, 1, 1},
+    order = "[honeycomb-fungus]",
     stack_size = 50,
   },
 })

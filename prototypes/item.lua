@@ -5321,15 +5321,15 @@ data:extend({
   },
   {
     type = "capsule",
-    name = "sp-fungi",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/icons/fungi-1.png",
+    name = "sp-honeycomb-fungus",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/honeycomb-fungus-1.png",
     icon_size = 64,
     icon_mipmaps = 4,
     pictures = {
-      {size = 64, filename = "__Spaghetorio__/graphics/icons/fungi-1.png", scale = 0.5, mipmap_count = 4},
-      {size = 64, filename = "__Spaghetorio__/graphics/icons/fungi-2.png", scale = 0.5, mipmap_count = 4},
-      {size = 64, filename = "__Spaghetorio__/graphics/icons/fungi-3.png", scale = 0.5, mipmap_count = 4},
-      {size = 64, filename = "__Spaghetorio__/graphics/icons/fungi-4.png", scale = 0.5, mipmap_count = 4}
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/honeycomb-fungus-1.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/honeycomb-fungus-2.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/honeycomb-fungus-3.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/honeycomb-fungus-4.png", scale = 0.5, mipmap_count = 4}
     },
     inventory_move_sound = space_age_item_sounds.agriculture_inventory_move,
     pick_sound = space_age_item_sounds.agriculture_inventory_pickup,
@@ -5376,7 +5376,7 @@ data:extend({
       }
     },
     subgroup = "agriculture-processes",
-    order = "[fungi]",
+    order = "[honeycomb-fungus]",
     stack_size = 50
   },
   {
@@ -5435,6 +5435,8 @@ data:extend({
     weight = 0.5 * kg,
     spoil_ticks = 45 * minute,
     spoil_result = "spoilage",
+    plant_result = "sp-wheat",
+    place_result = "sp-wheat",
     subgroup = "agriculture-processes",
     order = "[wheat]",
     stack_size = 100

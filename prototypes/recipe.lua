@@ -990,7 +990,7 @@ data:extend({
       {type = "fluid", name = "water", amount = 50}
     },
     results = {
-      {type = "item", name = "sp-enriched-aluminum", amount = 8},
+      {type = "item", name = "sp-enriched-iron", amount = 8},
       {type = "fluid", name = "sp-dirty-water-with-iron", amount = 50}
     },
     crafting_machine_tint = {
@@ -5824,7 +5824,7 @@ data:extend({
     ingredients = {
       {type = "item", name = "sp-protozoa", amount = 2},
       {type = "item", name = "sp-polysaccharide", amount = 1},
-      {type = "item", name = "sp-fungi", amount = 1}
+      {type = "item", name = "sp-honeycomb-fungus", amount = 1}
     },
     results = {
       {type = "item", name = "sp-bio-pesticide", amount = 1}
@@ -5832,20 +5832,20 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-nutrients-from-fungi",  -- #ForRegEx# - recipe
-    icons = util.icon.create_nutrient_icon(data.raw.capsule["sp-fungi"]),
+    name = "sp-nutrients-from-honeycomb-fungus",  -- #ForRegEx# - recipe
+    icons = util.icon.create_nutrient_icon(data.raw.capsule["sp-honeycomb-fungus"]),
     category = "organic",
     enabled = false,
     allow_productivity = true,
     energy_required = 2,
     ingredients = {
-      {type = "item", name = "sp-fungi", amount = 3},
+      {type = "item", name = "sp-honeycomb-fungus", amount = 3},
       {type = "item", name = "sp-sugar", amount = 1}
     },
     results = {
       {type = "item", name = "nutrients", amount = 2}
     },
-    order = "c[nutrients]-d[nutrients-from-fungi]",
+    order = "c[nutrients]-d[nutrients-from-honeycomb-fungus]",
   },
   {
     type = "recipe",
@@ -8641,7 +8641,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-fungi",  -- #ForRegEx# - recipe
+    name = "sp-honeycomb-fungus",  -- #ForRegEx# - recipe
     category = "sp-herbs-growing",
     enabled = false,
     allow_productivity = true,
@@ -8652,26 +8652,26 @@ data:extend({
       {type = "fluid", name = "water", amount = 20}
     },
     results = {
-      {type = "item", name = "sp-fungi", amount = 1}
+      {type = "item", name = "sp-honeycomb-fungus", amount = 1}
     }
   },
   {
     type = "recipe",
-    name = "sp-improved-fungi-growing",  -- #ForRegEx# - recipe
-    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/fungi-1.png", 64,
+    name = "sp-improved-honeycomb-fungus-growing",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/honeycomb-fungus-1.png", 64,
                                          "__space-age__/graphics/icons/nutrients.png", 64),
     category = "sp-herbs-growing",
     enabled = false,
     allow_productivity = true,
     energy_required = 5,
     ingredients = {
-      {type = "item", name = "sp-fungi", amount = 1},
+      {type = "item", name = "sp-honeycomb-fungus", amount = 1},
       {type = "item", name = "nutrients", amount = 2},
       {type = "item", name = "bioflux", amount = 1},
       {type = "fluid", name = "water", amount = 20},
     },
     results = {
-      {type = "item", name = "sp-fungi", amount = 4}
+      {type = "item", name = "sp-honeycomb-fungus", amount = 4}
     }
   },
   ------------------------------------------------------------------------------
