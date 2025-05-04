@@ -251,7 +251,7 @@ data:extend({
     },
     mining_sound = sound_variations("__space-age__/sound/mining/axe-mining-yumako-tree", 5, 0.6),
     mined_sound = sound_variations("__space-age__/sound/mining/mined-yumako-tree", 6, 0.3),
-    growth_ticks = 0.2 * 3600,
+    growth_ticks = 3 * 3600,
     emissions_per_second = { pollution = -0.0005 },
     collision_box = {{-0.4, -0.4}, {0.4, 0.4}},
     selection_box = {{-0.6, -0.6}, {0.6, 0.6}},
@@ -326,7 +326,6 @@ data:extend({
       average_pause_seconds = 8
     },
     map_color = {0.7, 0.9, 0, 0.7},
-    -- map_color = {1, 1, 1, 1},
     order = "[honeycomb-fungus]",
     stack_size = 50,
   },

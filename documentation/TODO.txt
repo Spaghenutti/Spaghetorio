@@ -111,7 +111,7 @@ TODO for 0.3.9
     + bio-pesticide
       + protozoa
         + spoilage
-      + fungi
+      + fungus
         + spoilage
       + polysacharides
         + leaves
@@ -265,10 +265,10 @@ TODO for 0.3.15
   - User greenhouse as agricultural tower
   - Add shallow water fill
   + Make yellow sprites from grass and use it as wheat
-  - Make fungi decoratives to trees
-    - Add fungi spores
-    - Udate fungi recipes
-  - Use more gleba trees as resources for some stuff. Make this available after reaching space.
+  + Make fungus decoratives to trees
+    + Add fungus spores
+    - Add recipe for fungus spores
+    + Udate fungus recipes
   - Add different fertile grounds for gleba plants
 
 TODO for 0.3.16
@@ -335,6 +335,7 @@ TODO for 0.3.xx
   - Fix productivity technologies (see steel plate productivity)
   - Change lightning collectors to power poles
   - Unlock legendary quality much later in tech tree
+  - Use more gleba trees as resources for some stuff. Make this available after reaching space.
 
 --------------------------------------------------------------------------------
 
@@ -729,7 +730,7 @@ Items:
       - add to crushed lead, selenium-dioxide as output
       - selenium-dioxide + Ammonium-Hydroxide + iron -> selenium-pillet
       - Selenium Dioxide (SeO2): Used as a catalyst in the production of chemicals and in the glass industry to decolorize glass.
-      - Selenium Sulfide (SeS2): Used in anti-dandruff shampoos and as a fungicide.
+      - Selenium Sulfide (SeS2): Used in anti-dandruff shampoos and as a funguscide.
       - Selenic Acid (H2SeO4): Used in the production of selenium compounds and as an oxidizing agent in chemical reactions.
       - Selenous Acid (H2SeO3): Used in the production of selenium compounds and as a reagent in chemical analysis.
       - Sodium Selenite (Na2SeO3): Used as a dietary supplement and in animal feed to correct selenium deficiencies.

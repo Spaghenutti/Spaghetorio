@@ -5319,6 +5319,23 @@ data:extend({
     order = "[potato]",
     stack_size = 100
   },
+
+  {
+    type = "item",
+    name = "sp-fungus-spore",  -- #ForRegEx# - item
+    localised_name = {"item-name.sp-fungus-spore"},
+    icon = "__Spaghetorio__/graphics/icons/fungus-spore.png",
+    icon_size = 64,
+    scale = 0.5,
+    weight = 0.1 * kg,
+    spoil_ticks = 30 * minute,
+    spoil_result = "spoilage",
+    subgroup = "agriculture-processes",
+    order = "a[seeds]-a[fungus-spore]",
+    stack_size = 50,
+    plant_result = "sp-honeycomb-fungus",
+    place_result = "sp-honeycomb-fungus",
+  },
   {
     type = "capsule",
     name = "sp-honeycomb-fungus",  -- #ForRegEx# - item
