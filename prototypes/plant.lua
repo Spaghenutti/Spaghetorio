@@ -163,7 +163,7 @@ data:extend({
     autoplace = {
       control = "sp-wheat",
       order = "a[tree]-b[wheat]-a",
-      probability_expression = "0.06 * var('control:sp-wheat:size') - 1.3\z
+      probability_expression = "0.06 * var('control:sp-wheat:size') - 1.2\z
                                 + multioctave_noise{x = x,\z
                                                     y = y,\z
                                                     persistence = 0.65,\z
@@ -260,7 +260,7 @@ data:extend({
     autoplace = {
       control = "sp-honeycomb-fungus",
       order = "a[tree]-b[honeycomb-fungus]-a",
-      probability_expression = "grpi(0.7) + 0.06 * var('control:sp-honeycomb-fungus:size') - 1.3\z
+      probability_expression = "grpi(0.7) + 0.06 * var('control:sp-honeycomb-fungus:size') - 1\z
                                 + multioctave_noise{x = x,\z
                                                     y = y,\z
                                                     persistence = 0.65,\z

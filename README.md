@@ -43,12 +43,10 @@ Your factory will never be the same... because it’s going to need therapy. Enj
 
 ## Future plans
 
-- Breeder reactor for acquiring radioactive isotopes.
 - Clyclotron for acquiring super heavy elements (and maybe reach the island of stability).
 - Particle accelerator for completing the standard model.
 - Quantum stabilizer to make use for acquired knowledge from particle accelerator.
 - Pathogen lab for an extense biological tech branch.
-- Freezer for freezing biological / spoilable items.
 - Support for [text plates](https://mods.factorio.com/mod/textplates?from=search)
 - Support for [LTN](https://mods.factorio.com/mod/LogisticTrainNetwork?from=search)
 
