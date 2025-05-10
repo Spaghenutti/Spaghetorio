@@ -1,7 +1,7 @@
 
 local util = require("data-util")
 
-local sounds = require("__base__.prototypes.entity.sounds")
+local item_sounds = require("__base__.prototypes.entity.sounds")
 local space_age_item_sounds = require("__space-age__.prototypes.item_sounds")
 
 
@@ -5305,7 +5305,7 @@ data:extend({
                 },
                 {
                   type = "play-sound",
-                  sound = sounds.eat_fish
+                  sound = item_sounds.eat_fish
                 }
               }
             }
@@ -5384,7 +5384,7 @@ data:extend({
                 },
                 {
                   type = "play-sound",
-                  sound = sounds.eat_fish
+                  sound = item_sounds.eat_fish
                 }
               }
             }
@@ -5441,7 +5441,7 @@ data:extend({
                 },
                 {
                   type = "play-sound",
-                  sound = sounds.eat_fish
+                  sound = item_sounds.eat_fish
                 }
               }
             }
@@ -7690,11 +7690,47 @@ data:extend({
     stack_size = 20
   },
   ------------------------------------------------------------------------------
-  -- MARK: Terrain
+  -- MARK: Tile
   ------------------------------------------------------------------------------
+  {
+    type = "item",
+    name = "sp-coast-water",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/coast-water.png",
+    subgroup = "terrain",
+    order = "z[coast-water]",
+    inventory_move_sound = item_sounds.landfill_inventory_move,
+    pick_sound = item_sounds.landfill_inventory_pickup,
+    drop_sound = item_sounds.landfill_inventory_move,
+    stack_size = 100,
+    place_as_tile =
+    {
+      result = "sp-coast-water",
+      condition_size = 1,
+      condition = {layers={ground_tile=true}},
+      tile_condition = {"deepwater", "deepwater-green"}
+    }
+  },
+  {
+    type = "item",
+    name = "sp-artificial-gleba-soil",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/artificial-gleba-soil.png",
+    subgroup = "terrain",
+    order = "c[landfill]-c[artificial-gleba-soil]",
+    inventory_move_sound = item_sounds.landfill_inventory_move,
+    pick_sound = item_sounds.landfill_inventory_pickup,
+    drop_sound = item_sounds.landfill_inventory_move,
+    stack_size = 100,
+    place_as_tile =
+    {
+      result = "sp-coast-water",
+      condition_size = 1,
+      condition = {layers={ground_tile=true}},
+      -- tile_condition = {"deepwater", "deepwater-green"}
+    }
+  },
   -- {
   --   type = "item",
-  --   name = "sp-kr-black-reinforced-plate",
+  --   name = "sp-kr-black-reinforced-plate",  -- #ForRegEx# - item
   --   icon = "__Spaghetorio__/graphics/krastorio/icons/items/black-reinforced-plate.png",
   --   icon_size = 64,
   --   icon_mipmaps = 4,
@@ -7709,7 +7745,7 @@ data:extend({
   -- },
   -- {
   --   type = "item",
-  --   name = "sp-kr-white-reinforced-plate",
+  --   name = "sp-kr-white-reinforced-plate",  -- #ForRegEx# - item
   --   icon = "__Spaghetorio__/graphics/krastorio/icons/items/white-reinforced-plate.png",
   --   icon_size = 64,
   --   icon_mipmaps = 4,

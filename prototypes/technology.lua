@@ -2050,7 +2050,7 @@ data:extend({
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-honeycomb-fungus",
+        recipe = "sp-fungus-spore",
       },
       {
         type = "unlock-recipe",

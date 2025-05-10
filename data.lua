@@ -95,11 +95,10 @@ require("prototypes.fluid")
 require("prototypes.item")
 require("prototypes.item-groups")
 require("prototypes.plant")
--- require("prototypes.noise-layer")
 require("prototypes.recipe")
 -- require("prototypes.rocket-silo")
 require("prototypes.technology")
--- require("prototypes.krastorio-technologies")
+require("prototypes.tile")
 require("prototypes.utility-constants")
 
 -- MARK: Compatibility

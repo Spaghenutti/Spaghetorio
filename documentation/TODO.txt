@@ -263,20 +263,39 @@ TODO for 0.3.14
 
 TODO for 0.3.15
   - Add uses for copper and iron bacteria
-  - User greenhouse as agricultural tower
-  - Add shallow water fill
+  + Add coast water fill
+    - Add recipe containing algae and potassium chloride
+    - Unlock recipe with agriculture tech
+    + Add description to coast water
   + Make yellow sprites from grass and use it as wheat
+    + update recipe for wheat
   + Make fungus decoratives to trees
     + Add fungus spores
-    - Add recipe for fungus spores
+    + Add recipe for fungus spores
     + Udate fungus recipes
+    + remove recipe for fungus
+    - Add tile for growing fungus - artificial-gleba-soil
+      - Add it to fungus tile conditions
   - Add different fertile grounds for gleba plants
+    - use spoilage as ingredients
+    - update recipes for existing grounds
+  - Get random seeds from nauvis vegetation
+  - delete noise-layer.lua
 
 TODO for 0.3.16
+  - Reorder icons
+  - clean up code for buildings
+  - Add filter to many recipes
+  - Fix iodine brine spawning on start location (seed: 2806285432)
+  - Unlock legendary quality much later in tech tree
+  - remove overgrown or artificial space age soils
+  - See: https://mods.factorio.com/mod/Spaghetorio/discussion/681e53fffcfe2cc9f6594733
+
+TODO for 0.3.17
   - Update space science 2 branch of tech tree
   - Add back blunagium, grobgnum, rukite and yemnuth rockets (even though they are unlocked later)
 
-TODO for 0.3.17
+TODO for 0.3.18
   - Update automation science 3
   - Update logistic science 3
   - Update geological science 3
@@ -299,13 +318,10 @@ TODO for 0.3.xx
   - Add casting recipes
     - potassium
       - melt from lava
-  - Add filter to many recipes
   - Add uses for empty research data card
   - Add cool items with data and computer technology for computer science 3 or maybe 4? :3
   - Mask ores depending on tiles
-  - Fix iodine brine spawning on start location (seed: 2806285432)
   - Funghi are found in gleba region (do something similar for other plants)
-  - clean up code for buildings
   - Fix crafting categories for some recipes (like manufacturing)
   - Update all other productivity technologies (see steel plate productivity)
   - Support text plates mod
@@ -333,10 +349,9 @@ TODO for 0.3.xx
   - Split fuel into categories
   - Add nuclear and antimatter locomotive
   - set allow_decomposition = false for many many recipes
-  - Fix productivity technologies (see steel plate productivity)
   - Change lightning collectors to power poles
-  - Unlock legendary quality much later in tech tree
   - Use more gleba trees as resources for some stuff. Make this available after reaching space.
+  - Bacteria can be used in grobgnum recipes and for proteins
 
 --------------------------------------------------------------------------------
 

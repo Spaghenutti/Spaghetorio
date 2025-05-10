@@ -87,7 +87,9 @@ data:extend({
         "water",
         "water-shallow",
         "water-green",
-        "water-mud"
+        "water-mud",
+        "sp-coast-water",
+        "sp-coast-water-green"
       }
     },
     agricultural_tower_tint = {

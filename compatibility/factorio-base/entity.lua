@@ -16,6 +16,7 @@ data.raw.item["iron-stick"].order = "frame-[iron-stick]"
 data.raw.item["low-density-structure"].order = "ceramic-[low-density-structure]"  -- I know its not supposed to be ceramics, but its my mod so i do whatever i want.
 
 data.raw.item["explosives"].order = "a-a"
+data.raw.capsule["cliff-explosives"].order = "a-b"
 
 data.raw.item["electronic-circuit"].order = "e-[electronic-circuit]"
 data.raw.item["advanced-circuit"].order = "f-ab[advanced-circuit]"
@@ -109,6 +110,7 @@ data.raw.item["uranium-fuel-cell"].subgroup = "sp-fuel-processing"
 data.raw.item["depleted-uranium-fuel-cell"].subgroup = "sp-fuel-processing"
 
 data.raw.item["explosives"].subgroup = "ammo"
+data.raw.capsule["cliff-explosives"].subgroup = "ammo"
 
 data.raw.capsule["raw-fish"].subgroup = "nauvis-agriculture"
 

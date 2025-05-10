@@ -140,6 +140,8 @@ def get_sections(object_type: str) -> List[str]:
             return ["resource-category-name"]
         case "technology" | "infinite-technology": 
             return ["technology-name"]
+        case "tile":
+            return ["tile-name"]
         case _:
             raise KeyError(f"Lua type {object_type} not matching known locale section.")
 
@@ -202,6 +204,7 @@ def update_locale() -> None:
     # extend_locale(parse_lua(constants.RESOURCES_PATH))  # needs to be done manually since the resources do not start with sp- or sp-kr-
     extend_locale(parse_lua(constants.ROCKET_SILO_PATH))
     extend_locale(parse_lua(constants.TECHNOLOGIES_PATH))
+    extend_locale(parse_lua(constants.TILE_PATH))
 
 
 if __name__ == "__main__":

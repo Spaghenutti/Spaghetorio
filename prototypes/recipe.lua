@@ -5716,12 +5716,29 @@ data:extend({
     allow_productivity = true,
     energy_required = 1,
     ingredients = {
-      {type = "item", name = "sp-algae", amount = 1}
+      {type = "item", name = "sp-algae", amount = 1},
+      {type = "fluid", name = "water", amount = 10}
     },
     results = {
       {type = "item", name = "sp-algae-spore", amount = 5}
     }
-  },  
+  },
+  {
+    type = "recipe",
+    name = "sp-fungus-spore",  -- #ForRegEx# - recipe
+    category = "organic",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 2,
+    ingredients = {
+      {type = "item", name = "sp-honeycomb-fungus", amount = 1},
+      {type = "item", name = "sp-filter", amount = 1},
+      {type = "fluid", name = "water", amount = 20}
+    },
+    results = {
+      {type = "item", name = "sp-fungus-spore", probability = 0.1, amount = 40}
+    }
+  },
   {
     type = "recipe",
     name = "sp-sugar",  -- #ForRegEx# - recipe
@@ -8612,6 +8629,7 @@ data:extend({
     allow_productivity = true,
     energy_required = 30,
     ingredients = {
+      {type = "item", name = "sp-wheat", amount = 3},
       {type = "item", name = "landfill", amount = 2},
       {type = "item", name = "sp-urea", amount = 12},
       {type = "fluid", name = "sp-potassium-permanganate-solution", amount = 10},
@@ -8637,22 +8655,6 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-wheat", amount = 20}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-honeycomb-fungus",  -- #ForRegEx# - recipe
-    category = "sp-herbs-growing",
-    enabled = false,
-    allow_productivity = true,
-    energy_required = 6,
-    ingredients = {
-      {type = "item", name = "spoilage", amount = 3},
-      {type = "item", name = "nutrients", amount = 1},
-      {type = "fluid", name = "water", amount = 20}
-    },
-    results = {
-      {type = "item", name = "sp-honeycomb-fungus", amount = 1}
     }
   },
   {

@@ -44,5 +44,5 @@ if __name__ == "__main__":
     resize_images(constants.HR_ICONS_PATH, constants.HR_ICONS_FOLDER, constants.ICONS_FOLDER)
     create_mipmaps(constants.ICONS_PATH, 4)
     
-    resize_images(constants.HR_GLOW_PATH, constants.HR_GLOW_FOLDER, constants.GLOW_FOLDER)
+    resize_images(constants.HR_GLOW_PATH, constants.HR_GLOW_FOLDER, constawatnts.GLOW_FOLDER)
     create_mipmaps(constants.GLOW_PATH, 4)
