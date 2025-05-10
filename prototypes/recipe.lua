@@ -5913,6 +5913,44 @@ data:extend({
     },
     order = "c[nutrients]-d[nutrients-from-algae]",
   },
+  {
+    type = "recipe",
+    name = "sp-coast-water",  -- #ForRegEx# - recipe
+    category = "organic",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 5,
+    ingredients = {
+      {type = "item", name = "landfill", amount = 1},
+      {type = "item", name = "sp-salt", amount = 1},
+      {type = "item", name = "sp-algae", amount = 5},
+      {type = "item", name = "sp-potassium-chloride", amount = 3},
+      {type = "fluid", name = "sp-nitrogen-dioxide", amount = 5}
+    },
+    results = {
+      {type = "item", name = "sp-coast-water", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-artificial-gleba-soil",  -- #ForRegEx# - recipe
+    category = "organic",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 5,
+    ingredients = {
+      {type = "item", name = "landfill", amount = 1},
+      {type = "item", name = "spoilage", amount = 10},
+      {type = "item", name = "sp-ammonium-metavanadate", amount = 4},
+      {type = "item", name = "sp-vanadyl-sulfate", amount = 5},
+      {type = "item", name = "sp-protozoa", amount = 10},
+      {type = "item", name = "sp-polysaccharide", amount = 15},
+      {type = "fluid", name = "sp-nitric-oxide", amount = 30}
+    },
+    results = {
+      {type = "item", name = "sp-artificial-gleba-soil", amount = 5}
+    }
+  },
   ------------------------------------------------------------------------------
   -- MARK: freezing
   ------------------------------------------------------------------------------

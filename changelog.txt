@@ -3,6 +3,7 @@ Version: 0.3.15
 Date: 2025-05-16
   Features:
     - Added coast water for having big algae farms. Can only be placed on deepwater.
+    - Added artificial gleba tile
   Changes:
     - Fungi renamed to honeycomb fungus
     - Wheat is now accquired from wheat plants on nauvis growing on dry and grass tiles on nauvis terrain

@@ -114,5 +114,9 @@ data.raw.tool["agricultural-science-pack"].spoil_result = nil
 -- lava tiles
 data.raw.tile["lava"].fluid = "sp-ultramafic-lava"
 
+-- tile conditions
+table.insert(data.raw.item["overgrowth-yumako-soil"].place_as_tile.tile_condition, "sp-artificial-gleba-soil")
+table.insert(data.raw.item["overgrowth-jellynut-soil"].place_as_tile.tile_condition, "sp-artificial-gleba-soil")
+
 -- MARK: localized name
 data.raw.tool["agricultural-science-pack"].localised_name = {"custom-localization.biological-science-pack"}

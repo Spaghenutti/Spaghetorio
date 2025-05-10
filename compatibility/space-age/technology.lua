@@ -404,6 +404,9 @@ data.raw.technology["artificial-soil"].unit = {
   },
   time = 30
 }
+
+table.insert(data.raw.technology["overgrowth-soil"].effects, {type = "unlock-recipe", recipe = "sp-artificial-gleba-soil"})
+
 data.raw.technology["bioflux"].prerequisites = {
   "sp-fatty-acids",
 }

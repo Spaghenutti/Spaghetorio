@@ -264,8 +264,8 @@ TODO for 0.3.14
 TODO for 0.3.15
   - Add uses for copper and iron bacteria
   + Add coast water fill
-    - Add recipe containing algae and potassium chloride
-    - Unlock recipe with agriculture tech
+    + Add recipe containing algae and potassium chloride
+    + Unlock recipe with agriculture tech
     + Add description to coast water
   + Make yellow sprites from grass and use it as wheat
     + update recipe for wheat
@@ -274,8 +274,9 @@ TODO for 0.3.15
     + Add recipe for fungus spores
     + Udate fungus recipes
     + remove recipe for fungus
-    - Add tile for growing fungus - artificial-gleba-soil
+    + Add tile for growing fungus - artificial-gleba-soil
       - Add it to fungus tile conditions
+      - Add that yumako and jellynut soils can be placed on artificial-gleba-soil
   - Add different fertile grounds for gleba plants
     - use spoilage as ingredients
     - update recipes for existing grounds
@@ -283,12 +284,12 @@ TODO for 0.3.15
   - delete noise-layer.lua
 
 TODO for 0.3.16
+  - Fix casting icons
   - Reorder icons
   - clean up code for buildings
   - Add filter to many recipes
   - Fix iodine brine spawning on start location (seed: 2806285432)
   - Unlock legendary quality much later in tech tree
-  - remove overgrown or artificial space age soils
   - See: https://mods.factorio.com/mod/Spaghetorio/discussion/681e53fffcfe2cc9f6594733
 
 TODO for 0.3.17

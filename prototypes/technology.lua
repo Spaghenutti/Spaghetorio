@@ -9410,6 +9410,41 @@ data:extend({
   },
   {
     type = "technology",
+    name = "sp-coast-water",  -- #ForRegEx# - technology
+    icon = "__Spaghetorio__/graphics/hr-icons/coast-water.png",
+    icon_size = 256,
+    icon_mipmaps = 4,
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-coast-water",
+      }
+    },
+    prerequisites = {
+      "sp-kr-advanced-chemistry",
+      "agricultural-science-pack"
+    },
+    unit = {
+      count = 100,
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-metallurgic-science-pack-2", 1},
+        {"sp-electromagnetic-science-pack-2", 1},
+        {"production-science-pack", 1},
+        {"utility-science-pack", 1},
+        {"sp-computer-science-pack-2", 1},
+        {"agricultural-science-pack", 1}
+      },
+      time = 30,
+    },
+  },
+  {
+    type = "technology",
     name = "sp-kr-quantum-computer",  -- #ForRegEx# - technology
     icon = "__Spaghetorio__/graphics/krastorio/technologies/quantum-computer.png",
     icon_size = 256,
