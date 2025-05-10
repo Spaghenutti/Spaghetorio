@@ -128,6 +128,10 @@ data:extend({
     icon_size = 64,
     scale = 0.5,
     pictures = decorative_pictures({count = 3, file_path = "__Spaghetorio__/graphics/decorative/wheat"}, 0.3),
+    -- Manually specify images for create_zip.py
+    -- "__Spaghetorio__/graphics/decorative/wheat-01.png"
+    -- "__Spaghetorio__/graphics/decorative/wheat-02.png"
+    -- "__Spaghetorio__/graphics/decorative/wheat-03.png"
     subgroup = "trees",
     flags = {"placeable-neutral", "placeable-off-grid", "breaths-air"},
     minable =
