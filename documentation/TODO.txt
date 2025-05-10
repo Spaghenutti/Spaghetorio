@@ -262,7 +262,7 @@ TODO for 0.3.14
     + silver solder
 
 TODO for 0.3.15
-  - Add uses for copper and iron bacteria
+  + Add uses for copper and iron bacteria
   + Add coast water fill
     + Add recipe containing algae and potassium chloride
     + Unlock recipe with agriculture tech
@@ -275,13 +275,13 @@ TODO for 0.3.15
     + Udate fungus recipes
     + remove recipe for fungus
     + Add tile for growing fungus - artificial-gleba-soil
-      - Add it to fungus tile conditions
-      - Add that yumako and jellynut soils can be placed on artificial-gleba-soil
+      + Add it to fungus tile conditions
   - Add different fertile grounds for gleba plants
     - use spoilage as ingredients
     - update recipes for existing grounds
   - Get random seeds from nauvis vegetation
-  - delete noise-layer.lua
+  + delete noise-layer.lua
+  - Fix bug where yumako and jellynut soils can not be placed on artificial-gleba-soil
 
 TODO for 0.3.16
   - Fix casting icons

@@ -5940,6 +5940,8 @@ data:extend({
     energy_required = 5,
     ingredients = {
       {type = "item", name = "landfill", amount = 1},
+      {type = "item", name = "copper-bacteria", amount = 4},
+      {type = "item", name = "iron-bacteria", amount = 6},
       {type = "item", name = "spoilage", amount = 10},
       {type = "item", name = "sp-ammonium-metavanadate", amount = 4},
       {type = "item", name = "sp-vanadyl-sulfate", amount = 5},

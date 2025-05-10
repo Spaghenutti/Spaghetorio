@@ -272,6 +272,8 @@ data:extend({
                                                     input_scale = 1/25 * var('control:sp-honeycomb-fungus:frequency'),\z
                                                     output_scale = 0.8}",
       tile_restriction = {
+        "sp-artificial-gleba-soil",
+        -- gleba tiles
         "lowland-olive-blubber",
         "lowland-olive-blubber-2",
         "lowland-olive-blubber-3",
