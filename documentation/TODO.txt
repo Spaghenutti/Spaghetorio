@@ -276,12 +276,8 @@ TODO for 0.3.15
     + remove recipe for fungus
     + Add tile for growing fungus - artificial-gleba-soil
       + Add it to fungus tile conditions
-  - Add different fertile grounds for gleba plants
-    - use spoilage as ingredients
-    - update recipes for existing grounds
-  - Get random seeds from nauvis vegetation
   + delete noise-layer.lua
-  - Fix bug where yumako and jellynut soils can not be placed on artificial-gleba-soil
+  + Fix bug where yumako and jellynut soils can not be placed on artificial-gleba-soil
 
 TODO for 0.3.16
   - Fix casting icons
@@ -353,6 +349,10 @@ TODO for 0.3.xx
   - Change lightning collectors to power poles
   - Use more gleba trees as resources for some stuff. Make this available after reaching space.
   - Bacteria can be used in grobgnum recipes and for proteins
+  - Get random seeds from nauvis vegetation
+  - Add different fertile grounds for gleba plants
+    - use spoilage as ingredients
+    - update recipes for existing grounds
 
 --------------------------------------------------------------------------------
 
