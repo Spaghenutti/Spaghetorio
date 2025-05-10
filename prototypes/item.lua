@@ -7780,36 +7780,32 @@ data:extend({
       }
     }
   },
-  -- {
-  --   type = "item",
-  --   name = "sp-kr-black-reinforced-plate",  -- #ForRegEx# - item
-  --   icon = "__Spaghetorio__/graphics/krastorio/icons/items/black-reinforced-plate.png",
-  --   icon_size = 64,
-  --   icon_mipmaps = 4,
-  --   subgroup = "terrain",
-  --   order = "z[black-reinforced-plate]-a1[black-reinforced-plate]",
-  --   place_as_tile = {
-  --     result = "sp-kr-black-reinforced-plate",
-  --     condition_size = 1,
-  --     condition = {layers={water_tile=true}}
-  --   },
-  --   stack_size = 200,
-  -- },
-  -- {
-  --   type = "item",
-  --   name = "sp-kr-white-reinforced-plate",  -- #ForRegEx# - item
-  --   icon = "__Spaghetorio__/graphics/krastorio/icons/items/white-reinforced-plate.png",
-  --   icon_size = 64,
-  --   icon_mipmaps = 4,
-  --   subgroup = "terrain",
-  --   order = "z[white-reinforced-plate]-a2[white-reinforced-plate]",
-  --   place_as_tile = {
-  --     result = "sp-kr-white-reinforced-plate",
-  --     condition_size = 1,
-  --     condition = {layers={water_tile=true}}
-  --   },
-  --   stack_size = 200,
-  -- },
+  {
+    type = "item",
+    name = "sp-kr-black-reinforced-plate",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/krastorio/icons/items/black-reinforced-plate.png",
+    subgroup = "terrain",
+    order = "y[black-reinforced-plate]-a1[black-reinforced-plate]",
+    stack_size = 200,
+    place_as_tile = {
+      result = "sp-kr-black-reinforced-plate",
+      condition_size = 1,
+      condition = {layers = {water_tile = true}},
+    }
+  },
+  {
+    type = "item",
+    name = "sp-kr-white-reinforced-plate",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/krastorio/icons/items/white-reinforced-plate.png",
+    subgroup = "terrain",
+    order = "y[white-reinforced-plate]-a2[white-reinforced-plate]",
+    stack_size = 200,
+    place_as_tile = {
+      result = "sp-kr-white-reinforced-plate",
+      condition_size = 1,
+      condition = {layers = {water_tile = true}},
+    }
+  },
   ------------------------------------------------------------------------------
   -- MARK: Buildings
   ------------------------------------------------------------------------------
