@@ -10,6 +10,7 @@ Date: 2025-05-16
     - Honeycomb fungus is no accquired from honeycomb fungus plant growing on gleba terrain
     - Wheat and honeycomb fungus can be cultivated just like othar plants
     - Recipe changes for accquiring spores
+    - Updated some agriculture related icons
   Bugfixes:
     - Fixed enriching iron recipe
 ---------------------------------------------------------------------------------------------------
