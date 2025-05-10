@@ -278,6 +278,9 @@ TODO for 0.3.15
       + Add it to fungus tile conditions
   + delete noise-layer.lua
   + Fix bug where yumako and jellynut soils can not be placed on artificial-gleba-soil
+  + Add reinforced plates
+    + recipe
+    + technology
 
 TODO for 0.3.16
   - Fix casting icons

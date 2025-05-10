@@ -11172,6 +11172,42 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "sp-kr-black-reinforced-plate",  -- #ForRegEx# - recipe
+    category = "sp-manufacturing",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 3,
+    ingredients = {
+      {type = "item", name = "sp-cement", amount = 20},
+      {type = "item", name = "sp-tungsten-steel", amount = 2},
+      {type = "item", name = "sp-niobium-steel", amount = 1},
+      {type = "item", name = "sp-titanium-carbide", amount = 4},
+      {type = "item", name = "sp-carbon-nanotubes", amount = 8}
+    },
+    results = {
+      {type = "item", name = "sp-kr-black-reinforced-plate", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-kr-white-reinforced-plate",  -- #ForRegEx# - recipe
+    category = "sp-manufacturing",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 3,
+    ingredients = {
+      {type = "item", name = "sp-cement", amount = 20},
+      {type = "item", name = "sp-tungsten-steel", amount = 2},
+      {type = "item", name = "sp-niobium-steel", amount = 1},
+      {type = "item", name = "sp-zirconia", amount = 6},
+      {type = "item", name = "sp-carbon-nanotubes", amount = 8}
+    },
+    results = {
+      {type = "item", name = "sp-kr-white-reinforced-plate", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
     name = "sp-empty-research-data-card",  -- #ForRegEx# - recipe
     category = "sp-manufacturing",
     enabled = false,

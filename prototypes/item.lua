@@ -7715,7 +7715,7 @@ data:extend({
     name = "sp-artificial-gleba-soil",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/artificial-gleba-soil.png",
     subgroup = "terrain",
-    order = "c[landfill]-c[artificial-gleba-soil]",
+    order = "c[landfill]-f[artificial-gleba-soil]",
     inventory_move_sound = item_sounds.landfill_inventory_move,
     pick_sound = item_sounds.landfill_inventory_pickup,
     drop_sound = item_sounds.landfill_inventory_move,
