@@ -7,10 +7,10 @@
     "contact": "https://github.com/Spaghenutti/Spaghetorio/issues",
     "factorio_version": "2.0",
     "space_travel_required": true,
-    "dependencies": ["base >= 2.0.42",
-                     "space-age >= 2.0.42",
+    "dependencies": ["base >= 2.0.47",
+                     "space-age >= 2.0.47",
                      "SpaghetorioGraphics1 = 0.0.5",
-                     "EverythingOnNauvis >= 0.1.7",
+                     "EverythingOnNauvis >= 0.1.8",
                      "? aai-containers >= 0.3.1",
                      "! Custom-Production-UI-Fixed >= 0.5.22"]
 }
