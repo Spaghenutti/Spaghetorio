@@ -357,6 +357,18 @@ TODO for 0.3.xx
     - use spoilage as ingredients
     - update recipes for existing grounds
 
+TODO for 0.4.1
+  - Updates for cryogenic science
+    - Core mining resource for extracting
+      - Hydrocarbonic ice that can be processed into
+        - methane
+        - propane
+        - benzene
+    - Quarry resource for hypothermium - A liquid that freezes anything it touches.
+    - Quarry resource for Ignisium – A plasma-infused crystal pulsing with fire.
+  - Space resource
+    - Aetherium – A rare essence that bends space and time.
+
 --------------------------------------------------------------------------------
 
 TODO before alpha release:
