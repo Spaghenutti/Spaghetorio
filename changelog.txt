@@ -14,6 +14,7 @@ Date: 2025-05-16
     - Updated some agriculture related icons
   Bugfixes:
     - Fixed enriching iron recipe
+    - Fixed biological science pack locale
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.14
 Date: 2025-05-09

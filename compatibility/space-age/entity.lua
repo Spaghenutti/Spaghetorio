@@ -214,4 +214,5 @@ table.insert(data.raw.item["overgrowth-jellynut-soil"].place_as_tile.tile_condit
 table.insert(data.raw.item["overgrowth-jellynut-soil"].place_as_tile.tile_condition, "pit-rock")
 
 -- MARK: localized name
-data.raw.tool["agricultural-science-pack"].localised_name = {"custom-localization.biological-science-pack"}
+data.raw.tool["agricultural-science-pack"].localised_name = {"custom-localization.biological-science-pack-2"}
+data.raw.technology["agricultural-science-pack"].localised_name = {"custom-localization.biological-science-pack-2"}
