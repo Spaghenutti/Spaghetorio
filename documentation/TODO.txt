@@ -283,6 +283,9 @@ TODO for 0.3.15
     + technology
 
 TODO for 0.3.16
+  - Add casting recipes
+    - potassium
+    - cerium
   - Fix casting icons
   - Reorder icons
   - clean up code for buildings
@@ -315,9 +318,6 @@ TODO for 0.3.18
     - used in rodent poison
 
 TODO for 0.3.xx
-  - Add casting recipes
-    - potassium
-      - melt from lava
   - Add uses for empty research data card
   - Add cool items with data and computer technology for computer science 3 or maybe 4? :3
   - Mask ores depending on tiles
