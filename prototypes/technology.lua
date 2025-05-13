@@ -2170,6 +2170,10 @@ data:extend({
     effects =
     {
       {
+        type = "mining-with-fluid",
+        modifier = true
+      },
+      {
         type = "unlock-recipe",
         recipe = "sp-magnesium-chloride"
       },
