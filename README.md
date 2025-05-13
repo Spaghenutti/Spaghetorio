@@ -69,5 +69,5 @@ Your factory will never be the same... because it’s going to need therapy. Enj
 
 - [Hurricane046](https://mods.factorio.com/user/Hurricane046) for his awesome [graphics](https://www.figma.com/proto/y1IQG08ZG2jIeJ5sTyF4MP/Factorio-Buildings?node-id=14934-304&node-type=frame&t=tk88gXWNIga60zMr-0&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=2585%3A1158&hotspot-hints=0&hide-ui=1)
 - [raiguard](https://mods.factorio.com/user/raiguard) for [Krastorio 2](https://mods.factorio.com/mod/Krastorio2) and letting me use some of his awesome graphics
-- [eotinb](https://mods.factorio.com/user/eotinb) and [javi55573](https://mods.factorio.com/user/javi55573) for suggestions and bug reporting
+- [eotinb](https://mods.factorio.com/user/eotinb), [javi55573](https://mods.factorio.com/user/javi55573) and sdQwo for suggestions and bug reporting
 - [SafTheLamb](https://mods.factorio.com/user/SafTheLamb) for assisting with code
