@@ -288,6 +288,7 @@ TODO for 0.3.16
     - cerium
     - fix molten zinc in a foundry creates more zinc sulfate than it consumes
     - fix recipes for making molten copper and iron out of crushed versions of those ores actually require enriched ores. (They also have molten from enriched versions).
+    - fix silver solder recipe results in normal solder
   - Fix casting icons
   - Reorder icons
   - clean up code for buildings
