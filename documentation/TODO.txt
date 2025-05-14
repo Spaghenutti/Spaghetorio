@@ -298,6 +298,7 @@ TODO for 0.3.16
   - See: https://mods.factorio.com/mod/Spaghetorio/discussion/681e53fffcfe2cc9f6594733
 
 TODO for 0.3.17
+  - Add teflon
   - Update space science 2 branch of tech tree
   - Add back blunagium, grobgnum, rukite and yemnuth rockets (even though they are unlocked later)
 
