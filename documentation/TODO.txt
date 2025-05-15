@@ -361,6 +361,10 @@ TODO for 0.3.xx
     - use spoilage as ingredients
     - update recipes for existing grounds
 
+Is it possible to adjust the order of science packs in the lab? Right now the unlock order doesn’t match how they’re sorted in the lab, which feels a bit off.
+
+not sure this is a bug, so i'll put it here -- there does not appear to be a way to pick which ore to mine for patches that overlap. for ores that do not require mining fluid, it's no big deal, you just filter the ores. but if both overlapping ores require fluid, you appear to only be able to mine one and i'm not sure how the game decides which one. i hoped that the drill would mine the ore based on the fluid you provided, but that did not work. ores are plentiful and rich enough that it's not really a big deal, but it would be nice to be able to pick in these circumstances.
+
 TODO for 0.4.1
   - Updates for cryogenic science
     - Core mining resource for extracting
