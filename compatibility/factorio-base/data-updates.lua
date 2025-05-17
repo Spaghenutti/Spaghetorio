@@ -4,9 +4,9 @@ data.raw.lab["lab"].inputs = {
   "logistic-science-pack",
   "military-science-pack",
   "chemical-science-pack",
-  "sp-electronic-science-pack-1",
   "sp-geological-science-pack-1",
   "sp-material-science-pack-1",
+  "sp-electronic-science-pack-1",
 
   -- "sp-automation-science-pack-2",
   -- "sp-logistic-science-pack-2",

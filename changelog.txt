@@ -7,6 +7,7 @@ Date: 2025-05-23
     - Fixed molten recipes from crushed iron ore and crushed copper ore
     - Fixed technology requirements for bio pesticide
     - Fixed name from train boige to train bogie (you will have to select again the recipe of the assembling machine)
+    - Fixed order of icons of first tier of science packs in lab reflectig better the order of progression
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.15
 Date: 2025-05-16
