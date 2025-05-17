@@ -5,6 +5,7 @@ Date: 2025-05-23
     - Fixed zinc casting recipes produced more zinc oxide and zinc sulfate than they produce
     - Fixed indium casting recipes produced more indium sulfate than they produce
     - Fixed molten recipes from crushed iron ore and crushed copper ore
+    - Fixed technology requirements for bio pesticide
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.15
 Date: 2025-05-16
