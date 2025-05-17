@@ -2595,9 +2595,9 @@ data:extend({
       {type = "item", name = "sp-zinc-sulfate", amount = 10},
     },
     results = {
-      {type = "item", name = "sp-zinc-sulfate", amount = 8},
-      {type = "fluid", name = "sp-sulfur-dioxide", amount = 1},
-      {type = "fluid", name = "sp-molten-zinc", amount = 16}
+      {type = "item", name = "sp-zinc-sulfate", amount = 5},
+      {type = "fluid", name = "sp-sulfur-dioxide", amount = 5},
+      {type = "fluid", name = "sp-molten-zinc", amount = 20}
     },
   },
   {
@@ -2614,8 +2614,8 @@ data:extend({
       {type = "item", name = "sp-zinc-oxide", amount = 20},
     },
     results = {
-      {type = "item", name = "sp-zinc-oxide", amount = 18},
-      {type = "fluid", name = "sp-molten-zinc", amount = 10}
+      {type = "item", name = "sp-zinc-oxide", amount = 13},
+      {type = "fluid", name = "sp-molten-zinc", amount = 20}
     },
   },
   {
@@ -2738,9 +2738,9 @@ data:extend({
       {type = "item", name = "sp-indium-sulfate", amount = 30},
     },
     results = {
-      {type = "item", name = "sp-indium-sulfate", amount = 20},
+      {type = "item", name = "sp-indium-sulfate", amount = 14},
       {type = "item", name = "sulfur", probability = 0.5, amount = 1},
-      {type = "fluid", name = "sp-molten-indium", amount = 34}
+      {type = "fluid", name = "sp-molten-indium", amount = 30}
     },
   },
   {
@@ -2769,7 +2769,7 @@ data:extend({
     allow_productivity = true,
     energy_required = 30,
     ingredients = {
-      {type = "item", name = "sp-enriched-iron", amount = 80},
+      {type = "item", name = "sp-crushed-iron-ore", amount = 80},
     },
     results = {
       {type = "fluid", name = "molten-iron", amount = 500},
@@ -2803,7 +2803,7 @@ data:extend({
     allow_productivity = true,
     energy_required = 30,
     ingredients = {
-      {type = "item", name = "sp-enriched-copper", amount = 80},
+      {type = "item", name = "sp-crushed-copper-ore", amount = 80},
     },
     results = {
       {type = "fluid", name = "molten-copper", amount = 500},
@@ -3203,7 +3203,7 @@ data:extend({
       {type = "item", name = "sp-silver", amount = 1}
     },
     results = {
-      {type = "item", name = "sp-solder", amount = 10}
+      {type = "item", name = "sp-silver-solder", amount = 10}
     },
     order = "cable-[silver-solder]",
   },
