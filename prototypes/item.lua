@@ -4361,12 +4361,12 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-train-boige",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/icons/train-boige.png",
+    name = "sp-train-bogie",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/train-bogie.png",
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "sp-intermediate-product",
-    order = "train-[train-boige]",
+    order = "train-[train-bogie]",
     stack_size = 50
   },
   {

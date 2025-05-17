@@ -9810,7 +9810,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-train-boige",  -- #ForRegEx# - recipe
+    name = "sp-train-bogie",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     allow_productivity = true,
@@ -9823,7 +9823,7 @@ data:extend({
       {type = "item", name = "sp-machined-parts", amount = 8}
     },
     results = {
-      {type = "item", name = "sp-train-boige", amount = 1}
+      {type = "item", name = "sp-train-bogie", amount = 1}
     }
   },
   {
@@ -10134,7 +10134,7 @@ data:extend({
       {type = "item", name = "sp-condenser-coil", amount = 8},
       {type = "item", name = "flying-robot-frame", amount = 5},
       {type = "item", name = "sp-differential", amount = 5},
-      {type = "item", name = "sp-train-boige", amount = 2},
+      {type = "item", name = "sp-train-bogie", amount = 2},
     },
     results = {
       {type = "item", name = "sp-logistic-science-pack-2", amount = 5}

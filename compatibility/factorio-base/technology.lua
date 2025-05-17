@@ -223,7 +223,7 @@ data.raw.technology["logistics-3"].unit.ingredients = {
 
 table.insert(data.raw.technology["railway"].prerequisites, "sp-steel-wheel")
 table.insert(data.raw.technology["railway"].prerequisites, "sp-geological-science-pack-1")
-table.insert(data.raw.technology["railway"].effects, {type = "unlock-recipe", recipe = "sp-train-boige"})
+table.insert(data.raw.technology["railway"].effects, {type = "unlock-recipe", recipe = "sp-train-bogie"})
 data.raw.technology["railway"].unit.ingredients = {
   -- basic-tech-card are also present, not checked why that is...
   {"automation-science-pack", 1},

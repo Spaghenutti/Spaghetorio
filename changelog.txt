@@ -6,6 +6,7 @@ Date: 2025-05-23
     - Fixed indium casting recipes produced more indium sulfate than they produce
     - Fixed molten recipes from crushed iron ore and crushed copper ore
     - Fixed technology requirements for bio pesticide
+    - Fixed name from train boige to train bogie (you will have to select again the recipe of the assembling machine)
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.15
 Date: 2025-05-16

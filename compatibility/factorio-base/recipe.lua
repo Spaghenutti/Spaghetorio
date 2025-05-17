@@ -641,7 +641,7 @@ util.recipe.change_recipe_ingredients("locomotive",
     {type = "item", name = "steel-plate", amount = 40},
     {type = "item", name = "sp-bolts", amount = 60},
     {type = "item", name = "sp-copper-tube", amount = 40},
-    {type = "item", name = "sp-train-boige", amount = 4}
+    {type = "item", name = "sp-train-bogie", amount = 4}
   },
   30)
 
@@ -651,7 +651,7 @@ util.recipe.change_recipe_ingredients("cargo-wagon",
     {type = "item", name = "sp-machined-parts", amount = 12},
     {type = "item", name = "steel-plate", amount = 32},
     {type = "item", name = "sp-bolts", amount = 40},
-    {type = "item", name = "sp-train-boige", amount = 4}
+    {type = "item", name = "sp-train-bogie", amount = 4}
   },
   20)
 
@@ -662,7 +662,7 @@ util.recipe.change_recipe_ingredients("fluid-wagon",
     {type = "item", name = "sp-valve", amount = 6},
     {type = "item", name = "steel-plate", amount = 12},
     {type = "item", name = "sp-bolts", amount = 30},
-    {type = "item", name = "sp-train-boige", amount = 4}
+    {type = "item", name = "sp-train-bogie", amount = 4}
   },
   20)
 
@@ -672,7 +672,7 @@ util.recipe.change_recipe_ingredients("artillery-wagon",
     {type = "item", name = "sp-stainless-steel", amount = 20},
     {type = "item", name = "sp-maraging-steel", amount = 40},
     {type = "item", name = "sp-bolts", amount = 100},
-    {type = "item", name = "sp-train-boige", amount = 4},
+    {type = "item", name = "sp-train-bogie", amount = 4},
     {type = "item", name = "artillery-turret", amount = 1},
     {type = "item", name = "engine-unit", amount = 8},
     {type = "item", name = "sp-heavy-ball-bearing", amount = 2},
