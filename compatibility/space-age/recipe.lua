@@ -454,7 +454,6 @@ util.recipe.change_recipe_ingredients("agricultural-tower",
     {type = "item", name = "sp-automation-core", amount = 8},
     {type = "item", name = "electric-engine-unit", amount = 8},
     {type = "item", name = "sp-bolts", amount = 30},
-    {type = "item", name = "sp-compressor", amount = 3},
     {type = "item", name = "refined-concrete", amount = 40},
   },
   45)

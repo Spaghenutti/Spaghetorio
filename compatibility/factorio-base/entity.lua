@@ -182,6 +182,7 @@ data.raw["inserter"]["fast-inserter"].energy_source.drain = "0.1kJ"
 data.raw["inserter"]["bulk-inserter"].energy_per_movement = "6kJ"
 data.raw["inserter"]["bulk-inserter"].energy_per_rotation = "6kJ"
 data.raw["inserter"]["bulk-inserter"].energy_source.drain = "0.1kJ"
+data.raw["inserter"]["bulk-inserter"].stack_size_bonus = 7
 
 -- MARK: Energy production changes
 data.raw["accumulator"]["accumulator"].energy_source.buffer_capacity = "30MJ"

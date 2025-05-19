@@ -42,6 +42,7 @@ data.raw.technology["agriculture"].effects =
     recipe = "agricultural-tower"
   }
 }
+-- table.insert(data.raw.technology["agriculture"].prerequisites, "sp-compressor")
 table.insert(data.raw.technology["agriculture"].prerequisites, "sp-herbarium")
 table.insert(data.raw.technology["agriculture"].prerequisites, "sp-aluminum-alloys")
 data.raw.technology["agriculture"].research_trigger = nil

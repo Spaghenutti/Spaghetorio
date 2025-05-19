@@ -98,6 +98,7 @@ data.raw.item["crusher"].stack_size = 50
 data.raw["inserter"]["stack-inserter"].energy_per_movement = "15kJ"
 data.raw["inserter"]["stack-inserter"].energy_per_rotation = "15kJ"
 data.raw["inserter"]["stack-inserter"].energy_source.drain = "0.1kJ"
+data.raw["inserter"]["stack-inserter"].stack_size_bonus = 7
 
 -- MARK: Equipment changes
 data.raw["generator-equipment"]["fusion-reactor-equipment"].power = "20MW"

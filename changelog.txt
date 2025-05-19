@@ -1,6 +1,10 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.16
 Date: 2025-05-23
+  Changes:
+    - Updated ja locale thanks to snow note
+    - Increased stack size of stack inserters
+    - Agricultural tower does not require compressor to be built
   Bugfixes:
     - Fixed zinc casting recipes produced more zinc oxide and zinc sulfate than they produce
     - Fixed indium casting recipes produced more indium sulfate than they produce
@@ -8,6 +12,8 @@ Date: 2025-05-23
     - Fixed technology requirements for bio pesticide
     - Fixed name from train boige to train bogie (you will have to select again the recipe of the assembling machine)
     - Fixed order of icons of first tier of science packs in lab reflectig better the order of progression
+    - Fixed that fast inserter could carry higher stack size than bulk inserter
+    - Fixed chromium cobalt recipe
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.15
 Date: 2025-05-16

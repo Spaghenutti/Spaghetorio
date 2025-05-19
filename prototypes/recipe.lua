@@ -1958,7 +1958,6 @@ data:extend({
     ingredients = {
       {type = "item", name = "sp-cobalt-billet", amount = 12},
       {type = "item", name = "sp-chromium-plate", amount = 6},
-      {type = "item", name = "tungsten-plate", amount = 2},
       {type = "item", name = "sp-molybdenum-pillet", amount = 1},
       {type = "item", name = "sp-manganese-ingot", amount = 1},
     },
