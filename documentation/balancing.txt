@@ -1,4 +1,4 @@
 
 
-0.3.14
-- Reduce number of spores from algae
+0.3.16
++ Reduce number of spores from algae

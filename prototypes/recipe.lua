@@ -5719,7 +5719,7 @@ data:extend({
       {type = "fluid", name = "water", amount = 10}
     },
     results = {
-      {type = "item", name = "sp-algae-spore", amount = 5}
+      {type = "item", name = "sp-algae-spore", probability = 0.25, amount = 5}
     }
   },
   {
