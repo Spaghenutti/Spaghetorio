@@ -199,3 +199,11 @@ data.raw["rocket-silo"]["rocket-silo"].rocket_parts_required = 1
 -- MARK: Equipment changes
 data.raw["solar-panel-equipment"]["solar-panel-equipment"].power = "100kW"
 data.raw["generator-equipment"]["fusion-reactor-equipment"].power = "5MW"
+
+-- MARK: item-subgroup
+data.raw["item-subgroup"]["barrel"].group = "fluids"
+data.raw["item-subgroup"]["barrel"].order = "z-e"
+data.raw["item-subgroup"]["fill-barrel"].group = "fluids"
+data.raw["item-subgroup"]["fill-barrel"].order = "z-f"
+data.raw["item-subgroup"]["empty-barrel"].group = "fluids"
+data.raw["item-subgroup"]["empty-barrel"].order = "z-g"

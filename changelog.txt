@@ -8,6 +8,7 @@ Date: 2025-05-23
     - Reduced crafting speed of alloy forge
     - Removed basic smelting, intermadiate smelting, melting and casting recipes from alloy forge
     - Reduced number of spores from algae
+    - Liquids in barrels are shown now in fluids group
   Bugfixes:
     - Fixed zinc casting recipes produced more zinc oxide and zinc sulfate than they produce
     - Fixed indium casting recipes produced more indium sulfate than they produce

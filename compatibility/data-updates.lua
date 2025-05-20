@@ -22,12 +22,6 @@ for key, value in pairs(data.raw.furnace) do
   end
 end
 
--- TODO: figure out why this does not work. Recipes are in intermediate-products category when in remote / map view
-data.raw["item-subgroup"]["fill-barrel"].group = "fluids"
-data.raw["item-subgroup"]["fill-barrel"].order = "z-e"
-data.raw["item-subgroup"]["empty-barrel"].group = "fluids"
-data.raw["item-subgroup"]["empty-barrel"].order = "z-f"
-
 -- remove_prototypes.remove_one_prototype("recipe", "bioplastics")
 -- remove_prototypes.remove_one_prototype("recipe", "rocket-fuel-from-jelly")
 -- remove_prototypes.remove_one_prototype("recipe", "biosulfur")
