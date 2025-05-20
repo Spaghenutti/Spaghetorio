@@ -18,6 +18,7 @@ Date: 2025-05-23
     - Fixed that fast inserter could carry higher stack size than bulk inserter
     - Fixed chromium cobalt recipe
     - Fixed biusart lab graphics (before it was low res)
+    - Fixed changelog visibility in game
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.15
 Date: 2025-05-16
@@ -135,11 +136,6 @@ Date: 2025-04-04
     - Lead molybdate can be now produced in induction hardening facility
     - Fixed recipe for research server due to cyclic dependency in tech tree
 ---------------------------------------------------------------------------------------------------
-Version: 0.3.8b
-Date: 2025-03-22
-  Bugfixes:
-    - Fixed compatibility with factorio 2.0.42
----------------------------------------------------------------------------------------------------
 Version: 0.3.8
 Date: 2025-03-21
   Features:
@@ -153,6 +149,7 @@ Date: 2025-03-21
     - Updated tier 2 military tech tree
   Bugfixes:
     - Fixed cyclic dependency in tech tree for craftgin diamond saw
+    - Fixed compatibility with factorio 2.0.42
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.7
 Date: 2025-03-14

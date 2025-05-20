@@ -1,0 +1,200 @@
+Items:
+  - Elements:
+    - K potassium
+      - Chemical Reactions: Potassium compounds act as catalysts in various chemical reactions. For example, potassium permanganate (KMnO₄) is used as an oxidizing agent in chemical synthesis3.
+      - Metal Processing: Potassium cyanide (KCN) is used in electroplating and gold mining to dissolve precious metals
+      - Depending on the production process, potassium chloride, potassium and magnesium sulphate anhydrous can be used as auxiliary materials in the production of titanium dioxide. The excellent quality of these auxiliary materials has positive effects on particle size and brightness.
+      - Glass manufacturing
+    - Rb Rubidium
+      - ion engines for space vehicles
+      - working fluid in vapor turbines
+      - getter in vacuum tubes
+      - gas discharge lamps
+      - electronics
+    - Cs Caesium
+      - drilling fluid
+      - catalyst
+      - atomic clock
+      - Industrial Gauges: Caesium-137 is also used in industrial gauges to measure the thickness of materials and in hydrology to measure the flow of water1.
+      - Electric Power and Electronics: Caesium is used in photoelectric cells and other electronic devices due to its ability to convert light into electrical signals
+    - Fr Francium
+      - no use - 22 min of halflife
+
+    - Be Beryllium
+      - Aerospace and Defense: Beryllium is used in aerospace components and defense systems. Its high strength-to-weight ratio and thermal stability make it ideal for use in aircraft, satellites, and missile systems.
+      - Electronics and Telecommunications: Beryllium is used in the manufacture of electronic connectors, switches, and other components. Beryllium-copper alloys are particularly valued for their electrical conductivity and durability.
+      - Nuclear Applications: Beryllium is used as a reflector and moderator in nuclear reactors. Its ability to reflect neutrons makes it valuable in controlling nuclear reactions.
+      - Oil and Gas: Beryllium is used in drilling equipment and other components in the oil and gas industry because of its strength and resistance to corrosion.
+    - Sr Strontium
+      - Pyrotechnics: Strontium compounds, particularly strontium nitrate (Sr(NO₃)₂) and strontium carbonate (SrCO₃), are used to produce red colors in fireworks and signal flares.
+      - Glass and Ceramics: strontium carbonate (SrCO₃) is used in the production of glass and ceramics. Strontium carbonate is often added to glass to improve its durability and to ceramics to enhance their properties.
+      - Electronics: Strontium titanate (SrTiO₃) is used in the production of certain types of electronic components, such as capacitors and semiconductors2
+      - Metallurgy: Strontium is used in the production of certain alloys to improve their strength and durability. It is also used in the refining of zinc and in the production of aluminum alloys.
+      - Paints and Pigments: Strontium chromate (SrCrO₄) is used as a corrosion inhibitor in paints and coatings.
+      - Strontium Chloride (SrCl₂): Employed in the refining of zinc and in the production of certain types of glass.
+    - Ba Barium
+      - Oil and Gas Drilling: Barium sulfate (BaSO₄), also known as barite, is used as a weighting agent in drilling fluids. It helps to stabilize the borehole and control pressure during drilling operations1.
+      - Glass and Ceramics: Barium compounds, such as barium carbonate (BaCO₃), are used in the production of glass and ceramics. They help to reduce porosity and enhance the quality of the final products3.
+      - Rubber and Plastics: Barium is used as a filler and extender in the production of rubber and plastics. It improves the physical properties and durability of these materials3.
+      - Electronics: Barium titanate (BaTiO₃) is used in the production of capacitors and other electronic components due to its excellent dielectric properties4.
+    - Ra Radium
+      - radioactive
+      - Radon Production: Radium is used in the production of radon gas, which is utilized in various scientific and industrial applications1.
+
+    - Sc Scandium
+      - Aerospace and Aviation: Scandium is used in aluminum-scandium alloys, which are valued for their high strength, low weight, and resistance to corrosion. These alloys are used in aircraft components and other high-performance applications1.
+      - Solid Oxide Fuel Cells (SOFCs): Scandium is used in the production of SOFCs, which are a type of fuel cell that operates at high temperatures and is used for efficient energy conversion3.
+      - Lighting: Scandium is used in metal halide lamps, which are known for their high-intensity light output and are used in stadiums, studios, and other large venues2.
+      - Electronics: Scandium oxide (Sc₂O₃) is used in the production of high-performance ceramics and electronic components due to its excellent thermal and electrical properties4.
+      - Catalysts: Scandium triflate (Sc(OTf)₃) is used as a catalyst in organic chemistry, particularly in reactions that require high selectivity and efficiency5.
+
+    - Hf Hafnium
+      - Nuclear Reactors: Hafnium is used in control rods for nuclear reactors because of its excellent neutron-absorbing capabilities12.
+      - Aerospace: Hafnium is used in high-temperature alloys for aerospace applications. These alloys are used in jet engines and rocket nozzles due to their ability to withstand extreme temperatures13.
+      - Semiconductors: Hafnium oxide (HfO₂) is used in the semiconductor industry to manufacture high-k dielectrics, which are essential for modern microprocessors and other electronic devices23.
+      - Ceramics and Superalloys: Hafnium is used in the production of superalloys and ceramics, which are used in various high-stress environments, including turbine blades and other components that require high strength and resistance to heat14.
+      - Vacuum Tubes: Hafnium is used as a getter in vacuum tubes to remove residual gases, improving the efficiency and lifespan of the tubes1.
+      - Medical Equipment: Hafnium is used in some medical equipment due to its biocompatibility and stability3.
+    
+    - V Vanadium
+      - Steel Manufacturing: The primary use of vanadium is in the production of high-strength steel alloys. Adding vanadium improves the strength, toughness, and wear resistance of steel, making it ideal for construction, automotive, and tool manufacturing12.
+      - Energy Storage: Vanadium is used in vanadium redox flow batteries (VRFBs), which are a type of rechargeable battery. These batteries are known for their long cycle life and are used for large-scale energy storage applications, such as grid energy storage23.
+      - Catalysts: Vanadium compounds are used as catalysts in the chemical industry. For example, vanadium pentoxide (V₂O₅) is used in the production of sulfuric acid and in the catalytic cracking of petroleum products3.
+      - Aerospace: Vanadium alloys are used in the aerospace industry due to their high strength-to-weight ratio and resistance to heat and corrosion. These alloys are used in jet engines, airframes, and other critical components2.
+      - Pigments and Glass: Vanadium compounds are used to produce pigments for ceramics and glass. Vanadium oxide is used to create colors in glass and ceramics, and it also helps improve the durability and quality of these materials4.
+      - Anti-Corrosion Coatings: Vanadium is used in anti-corrosion treatments for steel and other metals. These coatings help protect against rust and degradation, extending the lifespan of metal structures5.
+    
+    - Molybdenum
+      - Steel Alloys: Molybdenum is widely used as an alloying agent in steel to improve strength, hardness, and resistance to wear and corrosion. It is essential in the production of high-strength low-alloy (HSLA) steels and stainless steels1.
+      - Aerospace and Defense: Molybdenum alloys are used in the aerospace and defense industries for components that require high strength and stability at elevated temperatures, such as jet engines and missile parts2.
+      - Electronics: Molybdenum is used in the production of electronic devices and components, including thin films, sputtering targets, and semiconductors, due to its excellent electrical conductivity and thermal stability2.
+      - Lighting: Molybdenum is used in the manufacturing of filaments and other components in lighting applications, including incandescent and halogen lamps2.
+      - Medical Equipment: Molybdenum is used in medical imaging equipment, such as X-ray tubes, due to its ability to withstand high temperatures and its radiographic properties2.
+      - Catalysts: Molybdenum compounds, such as molybdenum disulfide (MoS₂), are used as catalysts in the petroleum industry for hydrodesulfurization and other chemical processes3.
+      - Glass and Ceramics: Molybdenum electrodes are used in the glass melting industry due to their high melting point and resistance to corrosion by molten glass3.
+      - High-Temperature Furnaces: Molybdenum is used in the construction of high-temperature furnaces and associated equipment due to its ability to maintain strength and stability at high temperatures2.
+
+    - Mn Manganese
+      - Steel Production: The primary use of manganese is in steelmaking. It acts as a deoxidizer and alloying element, improving the strength, toughness, and wear resistance of steel. Manganese is essential in the production of high-strength low-alloy (HSLA) steels and stainless steels12.
+      - Batteries: Manganese dioxide (MnO₂) is used in the production of batteries, particularly alkaline and zinc-carbon batteries. It acts as a depolarizer, improving the efficiency and lifespan of the batteries34.
+      - Aluminum Alloys: Manganese is used in aluminum alloys to improve corrosion resistance and mechanical properties. These alloys are used in beverage cans, automotive parts, and construction materials4.
+      - Chemical Industry: Manganese compounds, such as potassium permanganate (KMnO₄), are used as oxidizing agents in various chemical processes, including water treatment and organic synthesis52.
+      - Glass and Ceramics: Manganese is used in the production of glass and ceramics to remove color impurities and improve the quality of the final products2.
+      - Fertilizers and Animal Feed: Manganese is an essential micronutrient for plants and animals. It is added to fertilizers and animal feed to promote healthy growth and development4.
+      - Pigments and Coatings: Manganese compounds are used as pigments in paints, varnishes, and coatings, providing color and enhancing durability4.
+
+    - Tc Technicium
+      - radioactive
+      - Corrosion-Resistant Coatings: Technetium is used in creating corrosion-resistant coatings for metals. Its affinity for iron and other metals makes it useful in forming alloys that are resistant to corrosion, especially in harsh environments like those encountered in aerospace applications1.
+    - Re Rhenium
+      - Aerospace Industry: Rhenium is used in high-temperature superalloys for jet engines and gas turbines. These alloys can withstand extreme temperatures and pressures, making them ideal for aerospace applications1.
+      - Catalysts: Rhenium is used in catalysts for the petroleum refining industry. It helps in the production of high-octane gasoline and other valuable products by improving the efficiency of catalytic processes1.
+      - Thermocouples: Rhenium is used in the production of thermocouples, which are devices that measure temperature in high-temperature environments. Rhenium-based thermocouples are essential in industries such as nuclear, chemical, and automotive1.
+      - Electrical Contacts: Due to its excellent electrical conductivity and resistance to wear, rhenium is used in electrical contacts and filaments1.
+
+    - Ru Ruthenium
+      - Catalysis: Ruthenium is widely used as a catalyst in chemical reactions, particularly in the hydrogenation of organic compounds and the synthesis of ammonia12. Its catalytic properties make it valuable in the chemical industry.
+      - Electronics: It is used in the manufacture of wear-resistant electrical contacts and thick-film resistors34. Ruthenium’s excellent electrical conductivity and durability enhance the performance and longevity of electronic components.
+      - Data Storage: In the electronics industry, ruthenium is utilized in the production of hard drives and semiconductor chips2. It helps improve the efficiency and reliability of these devices.
+      - Alloys: Ruthenium is often alloyed with platinum and palladium to enhance their hardness and resistance to corrosion3. These alloys are used in various high-stress applications, including in the aerospace and automotive industries.
+      - Photomasks: A newer application of ruthenium is as a capping layer for extreme ultraviolet (EUV) photomasks, which are essential in advanced semiconductor manufacturing3.
+    - Os Osmium
+      - Alloys: Osmium is used to produce very hard alloys, often combined with platinum or iridium. These alloys are utilized in applications requiring extreme durability and hardness, such as fountain pen tips, instrument pivots, and needles12.
+      - Electrical Contacts: Due to its excellent conductivity and resistance to wear, osmium is used in electrical contacts and filaments3.
+      - Catalysis: Osmium compounds, particularly osmium tetroxide, are used as catalysts in chemical reactions, including organic synthesis and the production of certain pharmaceuticals12.
+      - Industrial-Grade Sealants and Lubricants: Osmium is also used in the creation of industrial-grade sealants and lubricants, enhancing their performance under high-stress conditions3.
+    
+    - Rh Rhodium
+      - Catalytic Converters: Rhodium is primarily used in catalytic converters for automobiles. It helps reduce harmful emissions by converting toxic gases like nitrogen oxides into less harmful substances12.
+      - Plating: Rhodium is used for electroplating jewelry and other decorative items. Its high reflectivity and resistance to tarnish enhance the appearance and durability of these items3.
+      - Electronics: Rhodium is used in the electronics industry for its excellent electrical conductivity and resistance to corrosion. It is often used in electrical contacts and connectors12.
+      - Glass Manufacturing: Rhodium is used in the production of glass, particularly in the manufacture of fiberglass and optical glass. It helps improve the quality and durability of the glass1.
+      - Chemical Industry: Rhodium is used as a catalyst in various chemical reactions, including the production of acetic acid and hydrogenation processes3.
+
+    - Ac Actinium
+      - Neutron Source: Actinium-227 is used as a neutron source in scientific research and industrial applications. It helps in neutron radiography and other neutron-based imaging techniques2.
+
+
+    - gallium + indium + thallium
+      - add to crushed aluminum, gallite as output
+      - add to crushed zinc, gallite as output
+      - gallite -> gallium
+      - gallite -> indium (advanced-smelting)
+      - gallite -> thallium (arc-furnace)
+      - gallium + arsen -> gallium-arsenide (LED and solar cells)
+      - gallium + nitrogen -> Gallium-Nitride (GaN): Used in high-power and high-frequency electronic devices, such as transistors and LEDs.
+      - gallium + oxygen -> Gallium-Oxide (Ga2O3): Used in gas sensors and as a transparent conductive oxide in optoelectronic devices.
+      - gallium + chlorine -> Gallium-Trichloride (GaCl3): Used as a catalyst in organic synthesis and in the production of other gallium compounds.
+      - gallium + phosphorus -> Gallium-Phosphide (GaP): Used in optoelectronic devices, such as LEDs and photodetectors.
+      - gallium + indium + tin -> Galinstan: used as a non-toxic alternative to mercury in thermometers and other applications.
+      - Gallium-Aluminum Alloy (Ga-Al): Used in the production of high-strength, lightweight materials for aerospace and automotive applications.
+      - Gallium-Tin Alloy (Ga-Sn): Used in low-melting-point solders and as a heat transfer medium in cooling systems.
+      - Indium Phosphide (InP): Used in high-speed and high-frequency electronics, such as transistors and laser diodes.
+      - Indium Antimonide (InSb): Used in infrared detectors and thermal imaging cameras.
+      - Indium(III) Chloride (InCl3): Used as a catalyst in organic synthesis and in the production of other indium compounds.
+      - Indium-Gallium-Zinc Oxide (IGZO): Used in thin-film transistors for high-resolution displays.
+      - Thallium(I) Bromide (TlBr): Used in infrared optics and as a scintillation detector.
+      - Thallium(I) Iodide (TlI): Used in high-temperature superconductors and in the production of special glasses.
+      - Thallium(III) Oxide (Tl2O3): Used in the production of semiconductors and as a catalyst in chemical reactions.
+      - Thallium-Mercury Alloy (Tl-Hg): Used in low-freezing-point alloys and in the production of special glasses.
+      - Thallium-Lead Alloy (Tl-Pb): Used in the production of antifriction materials and in the manufacturing of special glasses.
+    - germanium
+      - zinc-ore + sulfuric-acid -> germanium-oxide
+      - crushed-zinc-ore + sulfuric-acid -> germanium-oxide
+      - enriched-zinc-ore + sulfuric-acid -> germanium-oxide
+      - germanium-oxide -> germanium-ingot
+      - Germanium Dioxide (GeO2): Used in the production of optical fibers and infrared optics.
+      - Germane (GeH4): Used in the semiconductor industry for the production of high-purity germanium crystals.
+      - Germanium Tetrachloride (GeCl4): Used in the production of optical fibers and as a precursor for other germanium compounds.
+      - Germanium Sulfide (GeS2): Used in the production of infrared optics and as a semiconductor material.
+      - Germanium Nitride (Ge3N4): Used in the production of high-temperature ceramics and as a semiconductor material.
+    - selenium
+      - add to crushed copper, selenium-dioxide as output
+      - add to crushed nickel, selenium-dioxide as output
+      - add to crushed lead, selenium-dioxide as output
+      - selenium-dioxide + Ammonium-Hydroxide + iron -> selenium-pillet
+      - Selenium Dioxide (SeO2): Used as a catalyst in the production of chemicals and in the glass industry to decolorize glass.
+      - Selenium Sulfide (SeS2): Used in anti-dandruff shampoos and as a funguscide.
+      - Selenic Acid (H2SeO4): Used in the production of selenium compounds and as an oxidizing agent in chemical reactions.
+      - Selenous Acid (H2SeO3): Used in the production of selenium compounds and as a reagent in chemical analysis.
+      - Sodium Selenite (Na2SeO3): Used as a dietary supplement and in animal feed to correct selenium deficiencies.
+      - Sodium Selenate (Na2SeO4): Used as a dietary supplement and in the production of glass and ceramics.
+      - Zinc Selenide (ZnSe): Used in infrared optics and as a semiconductor material.
+      - Copper Selenide (Cu2Se): Used in the production of solar cells and as a semiconductor material.
+      - Cadmium Selenide (CdSe): Used in the production of quantum dots and as a semiconductor material.
+      - Selenium Hexafluoride (SeF6): Used as a gaseous dielectric in high-voltage applications.
+    - Add Alkaline solutions like:
+      - Potassium Hydroxide (KOH): Used in the manufacture of biodiesel, as an electrolyte in alkaline batteries, and in soap making.
+      - Calcium Hydroxide (Ca(OH)2): Also known as slaked lime, it is used in water treatment, construction (as lime mortar), and in the food industry.
+      - Ammonium Hydroxide (NH4OH): Commonly known as ammonia solution, it is used in household cleaners, fertilizers, and in the textile industry.
+      - Magnesium Hydroxide (Mg(OH)2): Used as an antacid and laxative, and in wastewater treatment.
+      - Barium Hydroxide (Ba(OH)2): Used in the manufacture of thermoplastics, as a lubricant additive, and in the sugar industry.
+      - Lithium Hydroxide (LiOH): Used in the production of lithium-ion batteries and as a carbon dioxide scrubber in breathing gas purification systems.
+
+
+  - Alloys:
+    - Spring steel
+    - Hastealloy
+    - Monel
+
+  - Exotic alloys:
+    - Alnico: Aluminum (8%), Nickel (14%), Cobalt (24%), Iron (balance) - Magnets, sensors.
+    - Samarium-Cobalt (SmCo): Samarium (35%), Cobalt (65%) - Permanent magnets, aerospace.
+    - Neodymium-Iron-Boron (NdFeB): Neodymium (29-32%), Iron (64-68%), Boron (1%) - High-strength magnets, electronics.
+    - Mischmetal: Cerium (50%), Lanthanum (25%), Neodymium (18%), Praseodymium (5%) - Lighter flints, steel additives.
+    - Terfenol-D: Terbium (0.3%), Dysprosium (0.7%), Iron (balance) - Actuators, sensors.
+    - Gd5Si2Ge2: Gadolinium (62%), Silicon (19%), Germanium (19%) - Magnetic refrigeration.
+    - LaNi5: Lanthanum (20%), Nickel (80%) - Hydrogen storage, batteries.
+    - CeO2-ZrO2: Cerium (50%), Zirconium (50%) - Catalysts, fuel cells.
+    - YAG (Yttrium Aluminum Garnet): Yttrium (34%), Aluminum (66%) - Lasers, optics.
+    - YBCO (Yttrium Barium Copper Oxide): Yttrium (13%), Barium (34%), Copper (53%) - Superconductors.
+    - Praseodymium-Nickel (PrNi5): Praseodymium (20%), Nickel (80%) - Hydrogen storage.
+    - CeMg12: Cerium (8%), Magnesium (92%) - Hydrogen storage.
+    - LaNi4.7Al0.3: Lanthanum (20%), Nickel (75%), Aluminum (5%) - Hydrogen storage.
+    - Nd2Fe14B: Neodymium (29-32%), Iron (64-68%), Boron (1%) - Permanent magnets.
+    - Sm2Co17: Samarium (11%), Cobalt (89%) - High-temperature magnets.
+    - Gd5(Si2Ge2): Gadolinium (62%), Silicon (19%), Germanium (19%) - Magnetic refrigeration.
+    - TbDyFe: Terbium (33%), Dysprosium (33%), Iron (34%) - Magnetostrictive materials.
+    - DyFe2: Dysprosium (33%), Iron (67%) - Magnetostrictive materials.  - or use any other lanthanide
+    - LaNi4.5Mn0.5: Lanthanum (20%), Nickel (75%), Manganese (5%) - Hydrogen storage. - or use any other lanthanide
+    - LaNi4.5Co0.5: Lanthanum (20%), Nickel (75%), Cobalt (5%) - Hydrogen storage. - or use any other lanthanide

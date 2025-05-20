@@ -1,0 +1,1117 @@
+
+TODO for 0.3.2
+  + Update stack sizes
+  + fix locale for core rift
+
+TODO for 0.3.4 - 0.3.6
+  + Remove "sp-recipes-without-technology"
+  + organize icons in factorio pedia and crafting window
+  + integrate order.lua in entity.lua
+  + Fix foundry recipe chain
+    + Add heat resistant electronics to arc furnace and foundry 
+      + Insulated metal substrate (this is made in electromagnetic plant?)
+        + copper and aluminum core
+        + epoxy
+        + beryllium oxide
+          + alumina + flourine -> beryllium-fluoride
+          + beryllium-fluoride -> beryllium-oxide (incinerating)
+          + beryllium-fluoride -> beryllium (electrolysis)
+          + beryllium-oxide -> beryllium (electrolysis)
+        + glass ceramics
+      + gallium nitride or aluminum nitride
+      + boron-phosphide BP
+      + boron-silicade B6Si
+      + polyaniline C₆H₅N PANI (conductive polymer)
+        + Aniline C₆H₅NH₂
+          + benzene + ammonia -> Aniline + hydrogen
+        + Ammonium persulfate (NH₄)₂S₂O₈
+          + ammonia + 2 sulfuric acid -> ammonium sulfate (NH₄)₂S₂O₄
+          + hydrogen peroxide H2O2 + sulfuric acid H2SO4 -> peroxymonosulfuric acid H2SO5 + water
+          + peroxymonosulfuric acid H2SO5 + ammonium sulfate (NH₄)₂S₂O₄ -> Ammonium persulfate (NH₄)₂S₂O₈
+        + sulfuric acid H₂SO₄
+        + C₆H₅NH₂ + (NH₄)₂S₂O₈ + water -> C₆H₅N + H₂SO₄
+    ? Add tungsten pipes for passing liquid metals, (can go under lava lakes)
+    ? Add tungsten offshore pump
+    ? Add tungsten pump (not done due to pipe conexions being complex with trains)
+    ? tungsten steel is made in arc furnace
+    ? Make compatibility with informatron and explain difference from tungsten pipe to normal pipe
+    ? Note: fluid boxes can only be filtered to contain one type. Since normal pipes pass any fluid, adding pipes makes no sense. https://lua-api.factorio.com/latest/types/FluidBox.html
+  + Update recipe chain for nuclear reactor
+    + turbine parts
+      + rhenium
+        + crushed molybdenum
+        + ammoniacal solution + crushed molybdenum -> ammonium perrhenate solution (NH4ReO4)
+        + ammonium perrhenate solution (NH4ReO4) + Benzyltrimethylammonium chloride -> rhenium
+        + trialkylamine + benzyl chloride -> Benzyltrimethylammonium chloride
+          + trialkylamine N(C₂H₅)₃:
+            + ethanol + iodine -> iodethane
+            + ammonia NH₃ + iodethane C₂H₅I -> triethylamine + hydrogen-iodide HI
+          + benzyl chloride C₆H₅CH₂Cl:
+            + methanol + Hydrogen chloride -> Methyl chloride CH₃Cl + water
+            + Benzene C₆H₆ + Methyl chloride CH₃Cl -> toluene C₆H₅CH₃ + Hydrogen chloride HCl
+            + toluene C₆H₅CH₃ + Chlorine -> Benzyl chloride C₆H₅CH₂Cl + Hydrogen chloride HCl
+      + nickel-rhenium alloy
+    + reactor core / fuel rods
+      + hafnium
+        + zircon ore + sodium hydroxide -> sodium zirconate + sodium hafnate
+        + sodium zirconate + ammoniacal solution -> zirconium-rod
+        + sodium hafnate + ammoniacal solution -> hafnium
+      + silver-indium-cadmium
+    + Optical sensor:
+      + cmos
+        + silicon
+        + Si3N4 silicon nitride
+        + silicon dioxide
+        + photodiode made with mercury-cadmium-telluride (HgCdTe)
+    + infrared sensor:
+      + photodiode made with germanium
+        + glass
+        + copper
+      + infrared LED with aluminum-gallium-arsenide (AlGaAs)
+      + optical filter zink selenide ZnSe and Sapphire Al2O3
+
+TODO for 0.3.7
+  + Update mining productivity tech
+  + Add crystallizer with diamond saw
+
+TODO for 0.3.8
+  + Update recycler recipe chain
+  + Update military science 2 branch of tech tree
+
+TODO for 0.3.9
+  + rename hurrican greenhouse to herbarium
+  + rename wood-farm back to greenhouse
+  + rename krastorio bio-lab to genetics-facility
+  + Add energy values for potato, wheat and stuff
+  + Unlock freezer in biological tree and before cryogenic plant
+  + Add spoling to items
+    
+  + Updated biological branch tier 1 and 2 of tech tree
+    + herbarium
+      + sprinkler
+      + ventilator
+    + bio-fuel
+      + sugar
+        + wheat
+      + fatty acids
+        + glycol
+          + potato
+          + spoilage
+          + dimethyl sulfate or methyl iodide
+        + animal fat
+          + fish
+        + biomethanol
+          + potato
+    + lubricant
+      + biocrude-oil
+        + spoilage
+        + algue
+    + epoxy
+      + biocrude-oil
+    + bio-pesticide
+      + protozoa
+        + spoilage
+      + fungus
+        + spoilage
+      + polysacharides
+        + leaves
+          + trees
+        + dimethyl-sulfoxide
+
+  + Add technology for pentapod eggs
+
+TODO for 0.3.10
+  + Fix agricultural science pack recipe
+  + Fix energy values of items
+  + Herbarium also needs nutrients
+  + Add recipes for nutrients
+  + Fix herbarium technology icon
+  + Add freezer recipe
+  + Add freezing recipes
+  + Add recipe for making spoilage
+  + Add recipe biomass + algue = biocrude-oil
+  + Fix category names such that they all start with sp-
+  + Categories and subgroups need locale (hover over generator building over the fuel slot)
+  + Move remove-prototypes.lua into util
+
+TODO for 0.3.11
+  + Add to gas-power-station
+  + Fix that frozen items can be used as nutrients for biochamber and greenhouse
+  + Fix icon sizes on greenhouse and large crusher
+  + Report here https://github.com/Spaghenutti/Spaghetorio/pull/9 that i copy code but not merge pull request due to som changes in icons.lua
+  + Accept PR of japanese locale
+
+TODO for 0.3.12
+  + Fix sulfur dioxide recipe
+  + Update nuclear science pack recipe chain
+    + Plutonium 240 decay chain (for reactor)
+    + Plutonium 239 decay chain (for weapons)
+    + MOX = 7% PO2 + 93% UO2
+    + Uranium 233 = Thorium 232 + Uranium 235
+    + Uranium 233 = Thorium 232 + Plutonium 239
+    + Kovarex enrichment shall be done in breeder reactor
+    + Remove nuclear fuel reprocessing
+    + Fix uranium recipe icons using the arrow from nuclear fuel processing
+    + Add recipes and technologies for radioactive decay data cards
+
+TODO for 0.3.13
+  + Update cryogenic science 2 branch of tech tree
+  + Add recipe for empty research data card
+  + Update computer science 2 branch of tech tree
+    + Uses for tellurium
+      + Add thermocouple (uses tellurium)
+      + Add peltier cell (bismuth and tellurium) use in thermonuclear generator and cryogenic plant
+      + Add graphite impact shell used for explorers
+      + Add laser diode
+      + Add hard drive
+      + Add phase change memory
+  + Update utility science 2 branch of tech tree
+  + Add biological / agricultural item group
+  + verify recipes that could use:
+    + gold
+    + silver-solder
+    + optic-fiber
+    + phase-change-memory
+
+TODO for 0.3.14
+  + Move kovarex enrichment before space science
+  + Make it such agricultural science does not spoil
+  + Use silica insted of silicon dioxide
+  + Make it such different metals come from different types of lava: lava and hot-lava
+  + For some casting recipes from lava add as byproduct lava rocks like:
+    + Andesite: 60% Si, 20% Al, 20% Na
+    + Basalt: 50% Si, 15% Al, 35% Fe
+    + Obsidian: 75% Si, 15% Al, 10% K
+    + Pumice: 70% Si, 15% Al, 15% Mg
+    + Rhyolite: 80% Si, 10% Al, 10% Ti
+    + Scoria: 50% Si, 20% Al, 30% Ca
+  + Fix casting recipes
+    + casting iron (update existing recipe)
+    + casting copper (update existing recipe)
+    + casting steel - change to steel plate (update existing recipe)
+    + casting iron gear wheel
+    + casting iron stick
+    + casting pipe
+    + casting pipe with lead
+    + casting copper cable
+    + remove low density structure recipe
+    + remove concrete recipe
+    + remove pipe to ground recipe
+  + Add casting recipes
+    + Add recipes for existing factorio stuff
+      + molten iron from crushed
+      + molten iron from enriched -- (unlock in enriched-resources)
+      + molten copper from crushed
+      + molten copper from enriched -- (unlock in enriched-resources)
+      + casting iron beam
+      + casting steel beam
+    + Aluminum
+      + melt from alumina
+      + casting into frames
+      + casting into sheets
+      + casting into cable
+    + tin
+      + melt from lava
+      + melt from tinstone
+      + melt from crushed tinstone
+      + melt from enriched tinstone -- (unlock in enriched-resources)
+      + casting into tin ingot
+    + lead
+      + melt from lava
+      + melt from tinstone
+      + melt from leadstone
+      + casting into lead ingot
+    + zinc
+      + melt from lava
+      + melt from zinc oxide with sulfuric acid with bad ratio
+      + casting into zinc plate
+    + magnesium
+      + melt from lava
+      + melt from magnesium ore with sulfuric acid with bad ratio
+      + melt from enriched magnesium ore with sulfuric acid with bad ratio  -- (unlock in enriched-resources)
+      + casting into magnesium slab
+    + nickel
+      + melt from lava
+      + melt from nickel ore (also add as output molten iron)
+      + melt from crushed nickel ore (also add as output molten iron)
+      + melt from enriched nickel ore -- (unlock in enriched-resources)
+      + casting into nickel ingot
+    + indium
+      + melt from lava
+      + melt from indium sulfate
+      + casting into indium ingot
+    + gallium
+      + melt from lava
+      + melt from gallium chloride
+      + casting into gallium ingot
+  + Additional casting recipes
+    + bronze
+    + kovar
+    + invar
+    + inconel
+    + duralumin
+    + brass
+    + aluminum brass
+    + stainless steel
+    + copper tube
+    + steel gear wheel
+    + stainless steel gear wheel
+    + flange
+    + connecting rod
+    + solder
+    + silver solder
+
+TODO for 0.3.15
+  + Add uses for copper and iron bacteria
+  + Add coast water fill
+    + Add recipe containing algae and potassium chloride
+    + Unlock recipe with agriculture tech
+    + Add description to coast water
+  + Make yellow sprites from grass and use it as wheat
+    + update recipe for wheat
+  + Make fungus decoratives to trees
+    + Add fungus spores
+    + Add recipe for fungus spores
+    + Udate fungus recipes
+    + remove recipe for fungus
+    + Add tile for growing fungus - artificial-gleba-soil
+      + Add it to fungus tile conditions
+  + delete noise-layer.lua
+  + Fix bug where yumako and jellynut soils can not be placed on artificial-gleba-soil
+  + Add reinforced plates
+    + recipe
+    + technology
+
+TODO for 0.3.16
+  - Add casting recipes
+    - potassium
+    - cerium
+    + fix molten zinc in a foundry creates more zinc sulfate than it consumes
+    + fix recipes for making molten copper and iron out of crushed versions of those ores actually require enriched ores. (They also have molten from enriched versions).
+    + fix silver solder recipe results in normal solder
+  - Fix casting icons
+  - Reorder icons
+  + Adjust order of science pack icons in lab
+  - Clean up code for buildings
+  - Add filter to many recipes
+  - Fix iodine brine spawning on start location (seed: 2806285432)
+  - Unlock legendary quality much later in tech tree
+  - See: https://mods.factorio.com/mod/Spaghetorio/discussion/681e53fffcfe2cc9f6594733
+
+TODO for 0.3.17
+  - Add teflon
+  - Update space science 2 branch of tech tree
+  - Add back blunagium, grobgnum, rukite and yemnuth rockets (even though they are unlocked later)
+
+TODO for 0.3.18
+  - Update automation science 3
+  - Update logistic science 3
+  - Update geological science 3
+  - Add recipe chains for core mining
+  + Uses for bismuth
+    + refined from tin and lead
+    + sodium carbonate solution + lead = lead ingot + bismuth
+    + ammonium hydroxide solution + crushed tin = tin ingot + bismuth
+    - superconductor
+    - scintillator (gamma ray spectrograph - used in photonic lab)
+    - to make polonium when bombarded with neutron stream
+  - Uses for thallium
+    - Add scintillation detector contains sodium iodine crystal or cesium iodine
+    - Add photomultiplier tube
+    - xray imaging with thallium 201
+    - thallium used in optics
+    - used in rodent poison
+
+TODO for 0.3.xx
+  - Add uses for empty research data card
+  - Add cool items with data and computer technology for computer science 3 or maybe 4? :3
+  - Mask ores depending on tiles
+  - Funghi are found in gleba region (do something similar for other plants)
+  - Fix crafting categories for some recipes (like manufacturing)
+  - Update all other productivity technologies (see steel plate productivity)
+  - Support text plates mod
+  - Support LTN mod
+  - Add support for milestones mod
+  - Add matter conversion recipes
+  - Create functions to automate generation of acro conversion recipes
+  - Add black reinforced concrete
+  - In map generation ores can be ticked to not spawn on map. Only allow this behavior for sulfuric acid geyser
+  - Add setting for spoiling for spaghetorio items
+    - Remove biochamber item, recipe and technology
+    + Remove all freezing recipes
+    - Remove all recipes for creating nutrients
+  - Add water landfill
+  - Add setting for disabling required nutrients for biochamber
+  - Rebalance damage values for remaining munitions
+  - set auto_barrel = false on all fluids which are not supposed to put into barrels
+    - put gasses into pressure tanks
+    - put alien fluids into some fancy shmanzy tanks
+  - Add krastorio turbine as water turbine
+  - Add to resource autoplace tile_restriction for some tiles such that ores can only spawn on those tiles (see plant "sp-algae")
+  - Add more uses for dimethyl-sulfide, dimethyl-sulfoxide and hydrogen-sulfide
+  - Add uses to bioflux
+  - Increase fuel values of biological fluids / items
+  - Split fuel into categories
+  - Add nuclear and antimatter locomotive
+  - set allow_decomposition = false for many many recipes
+  - Change lightning collectors to power poles
+  - Use more gleba trees as resources for some stuff. Make this available after reaching space.
+  - Bacteria can be used in grobgnum recipes and for proteins
+  - Get random seeds from nauvis vegetation
+  - Add different fertile grounds for gleba plants
+    - use spoilage as ingredients
+    - update recipes for existing grounds
+  - If patches that require liquid to be mined are next to each other the game decides randomly which ore can be mined.
+
+TODO for 0.4.1
+  - Updates for cryogenic science
+    - Core mining resource for extracting
+      - Hydrocarbonic ice that can be processed into
+        - methane
+        - propane
+        - benzene
+    - Quarry resource for hypothermium - A liquid that freezes anything it touches.
+    - Quarry resource for Ignisium – A plasma-infused crystal pulsing with fire.
+  - Space resource
+    - Aetherium – A rare essence that bends space and time.
+
+--------------------------------------------------------------------------------
+
+TODO before alpha release:
+  + Add separate graphics mod for building graphics
+  + clean up locale
+  + fix crafting categories for buildings
+  + balance pass of:
+    + generator equipment power
+    + crushing recipes
+    + enriched recipes
+  - Add defect mech armor at start of game
+    - make setting
+
+TODO after alpha release:
+  + organize icons:
+    + fix group icons
+    + move fluid icons to fluid group
+    + fix crushing icons
+    + fix enriching ore icons
+    + fix enriching crushed ore icons
+    + fix rare metal processing icons
+
+--------------------------------------------------------------------------------
+
+Factorio Space age
+  - Add some new ores (note down how they are supposed to be processed)
+    + barium-ore
+      +t barium-ore + sulfuric-acid -> barium-sulfamate (chemistry)
+      +t barium-sulfamate + carbon -> barium-sulfide (smelting)
+      +t barium-sulfide -> barium-billet (smelting)
+      +t barium-sulfide + oxygen -> drilling-fluid (fluid-filtration)
+      +t barium-sulfide + carbon + oxygen -> barium-carbonate + sulfur (barium-carbonate used in glass and ceramics)
+      + barium-billet + titanium-ingot -> barium-titanate (for electronic components like capacitors)
+      - barium-ore from acrocrystal
+    + mercury-ore
+      +t mercury-ore -> mercury + sulfur + stone
+      + used in relay
+      - used as liquid metal coolant in breeder reactor
+      - used in catalyst
+    + stibnite
+      +t stibnite -> antimony-oxide (smelting)
+      +t antimony-oxide + carbon -> antimony-pillet (smelting)
+      +t antimony-pillet + chlorine -> antimony-trichloride (used for organic synthesis)
+      +t antimony-pillet + iodine -> antimony-triiodide (thin film for semiconductor)
+      + copper + antimony-pillet -> copper-antimony (for bearings, solar cells and electronic layers)
+      + add uses to antimony
+      - stibnite from acrocrystal
+    + boron-ore (kernite)
+      +t boron-ore + phosphoric-acid -> sodium-borate (chemistry)
+      +t sodium-borate + chlorine -> boron-pillet + salt (chemistry)
+      +t sodium-borate + water -> diborane (B2H6) (rocket fuel and used to produce high purity boron)
+      +t boron-pillet + carbon -> boron-carbide (B4C) (abrasive materials, armor plating, and neutron radiation control)
+      + boron-pillet + phosphorus -> boron-phosphide (BP) (High temperature semiconductor)
+      + boron-pillet + silicon -> boron-silicade (B6Si) (High temperature semiconductor)
+      - boron-ore from acrocrystal
+    + cobalt-ore
+      +t cobalt-ore -> crushed-cobalt-ore + arsenic-trioxide (crushing)
+      +t cobalt-ore -> cobalt-oxide (smelting)
+      +t cobalt-oxide + sulfuric-acid -> cobalt-sulfate (chemistry)
+      +t cobalt-sulfate -> cobalt-billet
+      +t 30% nickel + 70% cobalt -> nickel-cobalt (corrosion resistant)
+      +t 60% nickel + 20% chromium + 20% cobalt -> waspaloy (used in Aerospace and gas turbine)
+      + 60% cobalt + 30% Chromium + 6% tungsten + 2% manganese + 2% molybdenum = satellite 6 alloy (used in cutting tools and wear resistant applications)
+      + 40% cobalt, 20% chromium, 15% nickel, 15% iron, 8% molybdenum, 2% manganese = elgiloy (for springs and mdeical devices)
+      + Nickel (18%), Cobalt (8-12%), Molybdenum (3-5%) rest iron -> maraging-steel (used for Aerospace, tooling)
+      + Nickel (29%), Cobalt (17%), Iron (balance) -> kovar (used for Electronics, glass-to-metal seals)
+      +t arsenic-trioxide + hydrogen -> arsen-pillet
+      +t arsen-pillet + sulfur -> arsenic-sulfide (As2S3) (Used as a semiconductor material)
+      +t arsen-pillet + iodine -> arsenic-iodide (AsI3) (Used in the synthesis of organic arsenic compounds and as a reagent in chemical analysis)
+      - cobalt-ore from acrocrystal
+    + molybdenum-ore
+      +t molybdenum-ore -> molybdenum-trioxide (smelting)
+      +t molybdenum-trioxide -> molybdenum-pillet (smelting)
+      + lead + molybdenum-pillet + oxygen -> lead-molybdate (PbMoO4) (for radiation measurement)
+      + sodium + molybdenum-pillet + oxygen -> sodium-molybdate (Na2MoO4) (for water treatment)
+      - molybdenum-ore from acrocrystal
+    + manganese-ore
+      +t manganese-ore -> manganese-dioxide (smelting)
+      +t manganese-dioxide -> manganese-ingot (electrolysis)
+      + manganese-ingot + chlorine -> manganese-chloride (MnCl2) (for battery cells)
+      - check aluminum alloys that already exist in spaghetorio mod that might use manganese
+      - manganese-ore from acrocrystal
+    + iodine-brine
+      +t iodine-brine + chlorine -> iodine-sludge
+      +t iodine-sludge -> idonine
+    + lithium
+      +t lithium-brine + water -> lithium-oxide
+      +t lithium-oxide + hydrogen-chloride -> lithium-chloride + water
+      +t lithium-chloride + sodium-hydroxide -> lithium
+    + vanadium
+      +t vanadium-ore -> vanadium-pentoxide: used as a catalyst in the production of sulfuric acid and in the manufacturing of ceramics and glass.
+      +t sodium-carbonate + vanadium-pentoxide + water -> vanadium-bearing-solution
+      +t vanadium-bearing-solution -> ammonium-metavanadate (NH4VO3): Used in the preparation of other vanadium compounds and as a catalyst in organic synthesis.
+      +t ammonium-metavanadate + sodium-hydroxide -> vanadium-plate
+      + vanadium-plate + sulfuric-acid = vanadyl-sulfate (VOSO4): Used in dietary supplements and as a catalyst in chemical reactions
+      + titanium-aluminum-vanadium (Ti-6Al-4V): used in aerospace
+      + vanadium-aluminum (V-Al): used in aerospace
+      + vanadium-steel: used in high-speed machinery
+    + potassium
+      +t potassium-ore (sylvite (KCl) and carnallite (KMgCl3·6H2O)) + magnesium-chloride -> potassium-chloride (Used in fertilizers, as a salt substitute in food, and in medical treatments for potassium deficiency.)
+      +t potassium-chloride -> potassium-ingot
+      + potassium-ingot + manganese-ingot + 100 water -> potassium-permanganate-solution (KMnO4): Used as a disinfectant, water treatment chemical, and in organic synthesis.
+      + potassium-ingot + chromium-plate + 75 water -> potassium-dichromate-solution (K2Cr2O7): Used in tanning leather, as a corrosion inhibitor, and in the production of pigments.
+      + ammonia + carbon -> hydrogen-cyanide
+      + potassium-chloride + water -> potassium-hydroxide (electrolysis)
+      + hydrogen-cyanide + potassium-hydroxide -> potassium-cyanide (KCN): Used in gold mining, electroplating, and as a reagent in chemical synthesis.
+
+    - Remove spage age technologies
+      - carbon fiber
+
+    + core-rift
+    - ceramics:
+      - silicon nitride (Si3N4) for heavy ball bearing
+      - zirconium dioxide (ZrO2)
+
+
+  - photovoltaic cell
+    - Polyvinyl-fluoride PVF
+      1. Ethylene + hydrogen fluoride -> vinyl fluoride (gas)
+      2. vinyl fluoride -> Polyvinyl-fluoride
+    - Ethylene-vinyl-acetate EVA
+      - burn something for carbon dioxide
+      - carbon dioxide + hydrogen -> methane
+      - methane + water -> Carbon monoxide + hydrogen (also called synthgas)
+      - Carbon monoxide + hydrogen -> methanol (biomethanol)
+      - methanol + carbon monoxide -> acetic acid
+      1. Ethylene + Acetic Acid -> Vinyl Acetate + water
+      2. Ethylene + Vinyl Acetate -> Ethylene-vinyl-acetate
+    - Cadmium telluride CdTe
+      - sulfuric acid + zinc ore -> Cadmium + zinc oxide
+      - zinc oxide + water -> zinc plate (electrolysis)
+    - Copper indium gallium selenide CIGS
+      - Gallium:
+        - alumina + sodium hydroxide -> gallium resin
+        - gallium resin + hydrogen chloride -> gallium chloride
+        - gallium chloride -> gallium + chlorine (electrolysis)
+      - indium (block productivity for all recipes):
+        - zinc sulfate + oxygen + -> zinc oxide + sulfur dioxide
+        - zinc oxide + sulfuric acid -> zinc plate + indium sulfate
+        - indium sulfate + water -> indium (electrolysis)
+        - sulfur dioxide + hydrogen -> sulfuric acid (check that the quantity is lower than used in the reactions above)
+        - sulfur dioxide is also used for preserving food
+      - Selenium:
+        - incinerate copper-ore or iron-ore for selenium-oxide
+        - selenium-dioxide + alkaline-solution + -> selenious-acid
+        - selenious-acid + sulfur-dioxide -> selenium-pellet
+    - optical glass from silicon oxide, boron oxide, phosphorus pentoxide or alumina
+
+  - Add Krastorio matter conversion recipes
+  + Add mineral water
+  + Add imersite
+  + Add ores for core extractor
+    - ...
+    - add core extractor
+      + building
+      - dummy recipe
+      - dummy technology
+  - Update groups
+    - add new biological group
+    - separate base-products group into base-prwdoducts and base-materials
+    - update subgroups
+    - update orders
+  + fix resolution of potassium-ore, vanadium-ore and manganese-ore patches sprites
+  + Add remaining hurricane buildings
+  + remove catalyst items, recipes and technologies
+  - remove all factorio alternative recipe chains for processing liquids on different planets
+  - Add weight to every item
+  - Space age items - Spaghetorio
+    + ammonia - ammonia
+    + fluoroketone-cold - coolant
+    + electrolyte - electrolyte (solid)
+    + carbon - graphite
+    + tungsten carbide - tungsten carbide
+    + tungsten
+    + limestone - calcite
+    + superconductor - superconductor
+  + Update recepies for
+    + lithium processing
+    + tungsten processing
+    + remove everything regarding limestone
+  - ores
+    + limestone as barium ore (baryt)
+    + tungsten ore as mercury ore (cinnabar)
+    + spodumene as cobalt ore (in cobalt ore traces of arsen are found)
+    + Add Cobalt
+    + Add stibnite as ore
+      - add crushed recipe
+      - add enriched recipe
+  - icons to fix
+    - crushing coke
+    - crushing coal
+    - crushing cobalt ore
+    - tungsten ore crushing and enriching
+    - raw rare metal processing
+    - enriched rare metal processing
+    - fix icons for groups base-recources, base-materials, intermediate-products
+  - Add back HD graphics in separate spaghetorio assets mod
+
+
+Krastorio cleanup
+  + remove not needed explosions
+
+Technologies which unlock items allready unlocked by base factorio
+  + "sp-cooling" (see how this can be somewhat close in tree with "fluoroketone-cold" recipe)
+  - "sp-advanced-ceramics"
+
+
+hurricane406 graphics
+  - Woodfarm -> Already exists from krastorio
+  - Disruptor -> For mining alien minerals
+  + Alloy forge
+  + Atom forge -> Breeder reactor
+  + Chemical stager
+  + Quantum stabilizer
+  - Thermal plant -> Geothermal plant - Can only be built on geothermal vents. Connects to heatpipes.
+  + Pathogen lab (in later update with biological tech branch)
+  + Fusion reactor -> cyclotron
+  + Lumber mill -> Add more wood items
+  + Scrubber -> Solvant extractor / Rotary kiln / freezer
+  + Gravity assembler
+  + Arc furnace -> Connects to heatpipes. Add heatpipes to space age reactor and increase temp to 4000 °C
+  + Core extractor
+  + Oxidizer
+  + Convector -> Induction hardening facility
+  - Research center
+
+
+Buildings: Graphics (https://www.figma.com/proto/8ecwGOzYos13D0JTwV5kO9/Factorio-Buildings?node-id=2585-1158&node-type=frame&t=Tt0H6pFe0h0uH68x-0&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1ui%3D1&hotspot-hints=0&hide-ui=1)
+  - Heat treatment convector (Use convector building from hurricane406)
+  - particle accelerator / cyclotron (Use fusion reactor building from hurricane406)
+  - Acroshpere converter or blunagium extractor (Use oxidizer building from hurricane406)
+  - core miner (Use core extractor building from hurricane406) (for version 0.2.0)
+    - Core mining should have different ressources to mine from. Every resource returns a combination of ores / metals.
+  + Lumber mill (Use Lumber mill from hurricane406)
+  - Low gravity assembling machine (Use Low gravity assembling machine from hurricane406)
+  - Electrolysis plant for factorio space age (Use Arc furnace from hurricane406) - I think the building uses heatpipes
+
+Items:
+  - Elements:
+    - K potassium
+      - Chemical Reactions: Potassium compounds act as catalysts in various chemical reactions. For example, potassium permanganate (KMnO₄) is used as an oxidizing agent in chemical synthesis3.
+      - Metal Processing: Potassium cyanide (KCN) is used in electroplating and gold mining to dissolve precious metals
+      - Depending on the production process, potassium chloride, potassium and magnesium sulphate anhydrous can be used as auxiliary materials in the production of titanium dioxide. The excellent quality of these auxiliary materials has positive effects on particle size and brightness.
+      - Glass manufacturing
+    - Rb Rubidium
+      - ion engines for space vehicles
+      - working fluid in vapor turbines
+      - getter in vacuum tubes
+      - gas discharge lamps
+      - electronics
+    - Cs Caesium
+      - drilling fluid
+      - catalyst
+      - atomic clock
+      - Industrial Gauges: Caesium-137 is also used in industrial gauges to measure the thickness of materials and in hydrology to measure the flow of water1.
+      - Electric Power and Electronics: Caesium is used in photoelectric cells and other electronic devices due to its ability to convert light into electrical signals
+    - Fr Francium
+      - no use - 22 min of halflife
+
+    - Be Beryllium
+      - Aerospace and Defense: Beryllium is used in aerospace components and defense systems. Its high strength-to-weight ratio and thermal stability make it ideal for use in aircraft, satellites, and missile systems.
+      - Electronics and Telecommunications: Beryllium is used in the manufacture of electronic connectors, switches, and other components. Beryllium-copper alloys are particularly valued for their electrical conductivity and durability.
+      - Nuclear Applications: Beryllium is used as a reflector and moderator in nuclear reactors. Its ability to reflect neutrons makes it valuable in controlling nuclear reactions.
+      - Oil and Gas: Beryllium is used in drilling equipment and other components in the oil and gas industry because of its strength and resistance to corrosion.
+    - Sr Strontium
+      - Pyrotechnics: Strontium compounds, particularly strontium nitrate (Sr(NO₃)₂) and strontium carbonate (SrCO₃), are used to produce red colors in fireworks and signal flares.
+      - Glass and Ceramics: strontium carbonate (SrCO₃) is used in the production of glass and ceramics. Strontium carbonate is often added to glass to improve its durability and to ceramics to enhance their properties.
+      - Electronics: Strontium titanate (SrTiO₃) is used in the production of certain types of electronic components, such as capacitors and semiconductors2
+      - Metallurgy: Strontium is used in the production of certain alloys to improve their strength and durability. It is also used in the refining of zinc and in the production of aluminum alloys.
+      - Paints and Pigments: Strontium chromate (SrCrO₄) is used as a corrosion inhibitor in paints and coatings.
+      - Strontium Chloride (SrCl₂): Employed in the refining of zinc and in the production of certain types of glass.
+    - Ba Barium
+      - Oil and Gas Drilling: Barium sulfate (BaSO₄), also known as barite, is used as a weighting agent in drilling fluids. It helps to stabilize the borehole and control pressure during drilling operations1.
+      - Glass and Ceramics: Barium compounds, such as barium carbonate (BaCO₃), are used in the production of glass and ceramics. They help to reduce porosity and enhance the quality of the final products3.
+      - Rubber and Plastics: Barium is used as a filler and extender in the production of rubber and plastics. It improves the physical properties and durability of these materials3.
+      - Electronics: Barium titanate (BaTiO₃) is used in the production of capacitors and other electronic components due to its excellent dielectric properties4.
+    - Ra Radium
+      - radioactive
+      - Radon Production: Radium is used in the production of radon gas, which is utilized in various scientific and industrial applications1.
+
+    - Sc Scandium
+      - Aerospace and Aviation: Scandium is used in aluminum-scandium alloys, which are valued for their high strength, low weight, and resistance to corrosion. These alloys are used in aircraft components and other high-performance applications1.
+      - Solid Oxide Fuel Cells (SOFCs): Scandium is used in the production of SOFCs, which are a type of fuel cell that operates at high temperatures and is used for efficient energy conversion3.
+      - Lighting: Scandium is used in metal halide lamps, which are known for their high-intensity light output and are used in stadiums, studios, and other large venues2.
+      - Electronics: Scandium oxide (Sc₂O₃) is used in the production of high-performance ceramics and electronic components due to its excellent thermal and electrical properties4.
+      - Catalysts: Scandium triflate (Sc(OTf)₃) is used as a catalyst in organic chemistry, particularly in reactions that require high selectivity and efficiency5.
+
+    - Hf Hafnium
+      - Nuclear Reactors: Hafnium is used in control rods for nuclear reactors because of its excellent neutron-absorbing capabilities12.
+      - Aerospace: Hafnium is used in high-temperature alloys for aerospace applications. These alloys are used in jet engines and rocket nozzles due to their ability to withstand extreme temperatures13.
+      - Semiconductors: Hafnium oxide (HfO₂) is used in the semiconductor industry to manufacture high-k dielectrics, which are essential for modern microprocessors and other electronic devices23.
+      - Ceramics and Superalloys: Hafnium is used in the production of superalloys and ceramics, which are used in various high-stress environments, including turbine blades and other components that require high strength and resistance to heat14.
+      - Vacuum Tubes: Hafnium is used as a getter in vacuum tubes to remove residual gases, improving the efficiency and lifespan of the tubes1.
+      - Medical Equipment: Hafnium is used in some medical equipment due to its biocompatibility and stability3.
+    
+    - V Vanadium
+      - Steel Manufacturing: The primary use of vanadium is in the production of high-strength steel alloys. Adding vanadium improves the strength, toughness, and wear resistance of steel, making it ideal for construction, automotive, and tool manufacturing12.
+      - Energy Storage: Vanadium is used in vanadium redox flow batteries (VRFBs), which are a type of rechargeable battery. These batteries are known for their long cycle life and are used for large-scale energy storage applications, such as grid energy storage23.
+      - Catalysts: Vanadium compounds are used as catalysts in the chemical industry. For example, vanadium pentoxide (V₂O₅) is used in the production of sulfuric acid and in the catalytic cracking of petroleum products3.
+      - Aerospace: Vanadium alloys are used in the aerospace industry due to their high strength-to-weight ratio and resistance to heat and corrosion. These alloys are used in jet engines, airframes, and other critical components2.
+      - Pigments and Glass: Vanadium compounds are used to produce pigments for ceramics and glass. Vanadium oxide is used to create colors in glass and ceramics, and it also helps improve the durability and quality of these materials4.
+      - Anti-Corrosion Coatings: Vanadium is used in anti-corrosion treatments for steel and other metals. These coatings help protect against rust and degradation, extending the lifespan of metal structures5.
+    
+    - Molybdenum
+      - Steel Alloys: Molybdenum is widely used as an alloying agent in steel to improve strength, hardness, and resistance to wear and corrosion. It is essential in the production of high-strength low-alloy (HSLA) steels and stainless steels1.
+      - Aerospace and Defense: Molybdenum alloys are used in the aerospace and defense industries for components that require high strength and stability at elevated temperatures, such as jet engines and missile parts2.
+      - Electronics: Molybdenum is used in the production of electronic devices and components, including thin films, sputtering targets, and semiconductors, due to its excellent electrical conductivity and thermal stability2.
+      - Lighting: Molybdenum is used in the manufacturing of filaments and other components in lighting applications, including incandescent and halogen lamps2.
+      - Medical Equipment: Molybdenum is used in medical imaging equipment, such as X-ray tubes, due to its ability to withstand high temperatures and its radiographic properties2.
+      - Catalysts: Molybdenum compounds, such as molybdenum disulfide (MoS₂), are used as catalysts in the petroleum industry for hydrodesulfurization and other chemical processes3.
+      - Glass and Ceramics: Molybdenum electrodes are used in the glass melting industry due to their high melting point and resistance to corrosion by molten glass3.
+      - High-Temperature Furnaces: Molybdenum is used in the construction of high-temperature furnaces and associated equipment due to its ability to maintain strength and stability at high temperatures2.
+
+    - Mn Manganese
+      - Steel Production: The primary use of manganese is in steelmaking. It acts as a deoxidizer and alloying element, improving the strength, toughness, and wear resistance of steel. Manganese is essential in the production of high-strength low-alloy (HSLA) steels and stainless steels12.
+      - Batteries: Manganese dioxide (MnO₂) is used in the production of batteries, particularly alkaline and zinc-carbon batteries. It acts as a depolarizer, improving the efficiency and lifespan of the batteries34.
+      - Aluminum Alloys: Manganese is used in aluminum alloys to improve corrosion resistance and mechanical properties. These alloys are used in beverage cans, automotive parts, and construction materials4.
+      - Chemical Industry: Manganese compounds, such as potassium permanganate (KMnO₄), are used as oxidizing agents in various chemical processes, including water treatment and organic synthesis52.
+      - Glass and Ceramics: Manganese is used in the production of glass and ceramics to remove color impurities and improve the quality of the final products2.
+      - Fertilizers and Animal Feed: Manganese is an essential micronutrient for plants and animals. It is added to fertilizers and animal feed to promote healthy growth and development4.
+      - Pigments and Coatings: Manganese compounds are used as pigments in paints, varnishes, and coatings, providing color and enhancing durability4.
+
+    - Tc Technicium
+      - radioactive
+      - Corrosion-Resistant Coatings: Technetium is used in creating corrosion-resistant coatings for metals. Its affinity for iron and other metals makes it useful in forming alloys that are resistant to corrosion, especially in harsh environments like those encountered in aerospace applications1.
+    - Re Rhenium
+      - Aerospace Industry: Rhenium is used in high-temperature superalloys for jet engines and gas turbines. These alloys can withstand extreme temperatures and pressures, making them ideal for aerospace applications1.
+      - Catalysts: Rhenium is used in catalysts for the petroleum refining industry. It helps in the production of high-octane gasoline and other valuable products by improving the efficiency of catalytic processes1.
+      - Thermocouples: Rhenium is used in the production of thermocouples, which are devices that measure temperature in high-temperature environments. Rhenium-based thermocouples are essential in industries such as nuclear, chemical, and automotive1.
+      - Electrical Contacts: Due to its excellent electrical conductivity and resistance to wear, rhenium is used in electrical contacts and filaments1.
+
+    - Ru Ruthenium
+      - Catalysis: Ruthenium is widely used as a catalyst in chemical reactions, particularly in the hydrogenation of organic compounds and the synthesis of ammonia12. Its catalytic properties make it valuable in the chemical industry.
+      - Electronics: It is used in the manufacture of wear-resistant electrical contacts and thick-film resistors34. Ruthenium’s excellent electrical conductivity and durability enhance the performance and longevity of electronic components.
+      - Data Storage: In the electronics industry, ruthenium is utilized in the production of hard drives and semiconductor chips2. It helps improve the efficiency and reliability of these devices.
+      - Alloys: Ruthenium is often alloyed with platinum and palladium to enhance their hardness and resistance to corrosion3. These alloys are used in various high-stress applications, including in the aerospace and automotive industries.
+      - Photomasks: A newer application of ruthenium is as a capping layer for extreme ultraviolet (EUV) photomasks, which are essential in advanced semiconductor manufacturing3.
+    - Os Osmium
+      - Alloys: Osmium is used to produce very hard alloys, often combined with platinum or iridium. These alloys are utilized in applications requiring extreme durability and hardness, such as fountain pen tips, instrument pivots, and needles12.
+      - Electrical Contacts: Due to its excellent conductivity and resistance to wear, osmium is used in electrical contacts and filaments3.
+      - Catalysis: Osmium compounds, particularly osmium tetroxide, are used as catalysts in chemical reactions, including organic synthesis and the production of certain pharmaceuticals12.
+      - Industrial-Grade Sealants and Lubricants: Osmium is also used in the creation of industrial-grade sealants and lubricants, enhancing their performance under high-stress conditions3.
+    
+    - Rh Rhodium
+      - Catalytic Converters: Rhodium is primarily used in catalytic converters for automobiles. It helps reduce harmful emissions by converting toxic gases like nitrogen oxides into less harmful substances12.
+      - Plating: Rhodium is used for electroplating jewelry and other decorative items. Its high reflectivity and resistance to tarnish enhance the appearance and durability of these items3.
+      - Electronics: Rhodium is used in the electronics industry for its excellent electrical conductivity and resistance to corrosion. It is often used in electrical contacts and connectors12.
+      - Glass Manufacturing: Rhodium is used in the production of glass, particularly in the manufacture of fiberglass and optical glass. It helps improve the quality and durability of the glass1.
+      - Chemical Industry: Rhodium is used as a catalyst in various chemical reactions, including the production of acetic acid and hydrogenation processes3.
+
+    - Ac Actinium
+      - Neutron Source: Actinium-227 is used as a neutron source in scientific research and industrial applications. It helps in neutron radiography and other neutron-based imaging techniques2.
+
+
+    - gallium + indium + thallium
+      - add to crushed aluminum, gallite as output
+      - add to crushed zinc, gallite as output
+      - gallite -> gallium
+      - gallite -> indium (advanced-smelting)
+      - gallite -> thallium (arc-furnace)
+      - gallium + arsen -> gallium-arsenide (LED and solar cells)
+      - gallium + nitrogen -> Gallium-Nitride (GaN): Used in high-power and high-frequency electronic devices, such as transistors and LEDs.
+      - gallium + oxygen -> Gallium-Oxide (Ga2O3): Used in gas sensors and as a transparent conductive oxide in optoelectronic devices.
+      - gallium + chlorine -> Gallium-Trichloride (GaCl3): Used as a catalyst in organic synthesis and in the production of other gallium compounds.
+      - gallium + phosphorus -> Gallium-Phosphide (GaP): Used in optoelectronic devices, such as LEDs and photodetectors.
+      - gallium + indium + tin -> Galinstan: used as a non-toxic alternative to mercury in thermometers and other applications.
+      - Gallium-Aluminum Alloy (Ga-Al): Used in the production of high-strength, lightweight materials for aerospace and automotive applications.
+      - Gallium-Tin Alloy (Ga-Sn): Used in low-melting-point solders and as a heat transfer medium in cooling systems.
+      - Indium Phosphide (InP): Used in high-speed and high-frequency electronics, such as transistors and laser diodes.
+      - Indium Antimonide (InSb): Used in infrared detectors and thermal imaging cameras.
+      - Indium(III) Chloride (InCl3): Used as a catalyst in organic synthesis and in the production of other indium compounds.
+      - Indium-Gallium-Zinc Oxide (IGZO): Used in thin-film transistors for high-resolution displays.
+      - Thallium(I) Bromide (TlBr): Used in infrared optics and as a scintillation detector.
+      - Thallium(I) Iodide (TlI): Used in high-temperature superconductors and in the production of special glasses.
+      - Thallium(III) Oxide (Tl2O3): Used in the production of semiconductors and as a catalyst in chemical reactions.
+      - Thallium-Mercury Alloy (Tl-Hg): Used in low-freezing-point alloys and in the production of special glasses.
+      - Thallium-Lead Alloy (Tl-Pb): Used in the production of antifriction materials and in the manufacturing of special glasses.
+    - germanium
+      - zinc-ore + sulfuric-acid -> germanium-oxide
+      - crushed-zinc-ore + sulfuric-acid -> germanium-oxide
+      - enriched-zinc-ore + sulfuric-acid -> germanium-oxide
+      - germanium-oxide -> germanium-ingot
+      - Germanium Dioxide (GeO2): Used in the production of optical fibers and infrared optics.
+      - Germane (GeH4): Used in the semiconductor industry for the production of high-purity germanium crystals.
+      - Germanium Tetrachloride (GeCl4): Used in the production of optical fibers and as a precursor for other germanium compounds.
+      - Germanium Sulfide (GeS2): Used in the production of infrared optics and as a semiconductor material.
+      - Germanium Nitride (Ge3N4): Used in the production of high-temperature ceramics and as a semiconductor material.
+    - selenium
+      - add to crushed copper, selenium-dioxide as output
+      - add to crushed nickel, selenium-dioxide as output
+      - add to crushed lead, selenium-dioxide as output
+      - selenium-dioxide + Ammonium-Hydroxide + iron -> selenium-pillet
+      - Selenium Dioxide (SeO2): Used as a catalyst in the production of chemicals and in the glass industry to decolorize glass.
+      - Selenium Sulfide (SeS2): Used in anti-dandruff shampoos and as a funguscide.
+      - Selenic Acid (H2SeO4): Used in the production of selenium compounds and as an oxidizing agent in chemical reactions.
+      - Selenous Acid (H2SeO3): Used in the production of selenium compounds and as a reagent in chemical analysis.
+      - Sodium Selenite (Na2SeO3): Used as a dietary supplement and in animal feed to correct selenium deficiencies.
+      - Sodium Selenate (Na2SeO4): Used as a dietary supplement and in the production of glass and ceramics.
+      - Zinc Selenide (ZnSe): Used in infrared optics and as a semiconductor material.
+      - Copper Selenide (Cu2Se): Used in the production of solar cells and as a semiconductor material.
+      - Cadmium Selenide (CdSe): Used in the production of quantum dots and as a semiconductor material.
+      - Selenium Hexafluoride (SeF6): Used as a gaseous dielectric in high-voltage applications.
+    - Add Alkaline solutions like:
+      - Potassium Hydroxide (KOH): Used in the manufacture of biodiesel, as an electrolyte in alkaline batteries, and in soap making.
+      - Calcium Hydroxide (Ca(OH)2): Also known as slaked lime, it is used in water treatment, construction (as lime mortar), and in the food industry.
+      - Ammonium Hydroxide (NH4OH): Commonly known as ammonia solution, it is used in household cleaners, fertilizers, and in the textile industry.
+      - Magnesium Hydroxide (Mg(OH)2): Used as an antacid and laxative, and in wastewater treatment.
+      - Barium Hydroxide (Ba(OH)2): Used in the manufacture of thermoplastics, as a lubricant additive, and in the sugar industry.
+      - Lithium Hydroxide (LiOH): Used in the production of lithium-ion batteries and as a carbon dioxide scrubber in breathing gas purification systems.
+
+
+
+  - Alloys:
+    - Spring steel
+      - (1% carbon, 0.5% magnesium, 0.3% silicon)
+      - (1% carbon, 1% magnesium, 0.9% chrome)
+      - (1% carbon, 16% magnesium, 18% chrome, 7% nickel)
+      - Used for ball bearings
+      - springs
+      - assembling / manufacturing machines
+      - inserters / inserter parts
+      - Aquired by hardening
+    - Nickel-Cobalt: 
+      - 30% nickel, 70% cobalt
+      - A good example is the nickel-cobalt alloy, MP35N, which consists of nickel and cobalt and is ideally suited to marine and subsea applications due to its resistance to hydrogen sulphide, salt water and mineral acids, which can have a highly corrosive effect on most metals. Monel is a nickel-based alloy that incorporates copper and iron. It is corrosion resistant and acid resistant, so is suitable for marine applications as well as applications involving acids and other highly corrosive substances.
+    + Nickel-Titanium (nitenol)
+      + Superelasticity (springs)
+    - Hastealloy
+      - 57% Nickel, 27% Molybdenum, 16% chromium
+      - Chemical processing
+      - pollution control
+    - Monel
+      - 63% Nickel, 30% copper, 2% Manganese, 1% Iron, 4% Titanium
+      - Marine engineering
+      - Chemical processing
+    + Waspalloy
+      - 60% nickel, 20% chromium, 20% cobalt
+      - Aerospace
+      - Gas turbine
+    + Satellite 6 alloy
+      - 60% cobalt, 30% Chromium, 6% tungsten, 2% manganese, 2% molybden
+      - cutting tools
+      - wear resistant applications
+    + Elgiloy:
+      - 40% cobalt, 20% chromium, 15% nickel, 15% iron, 8% molybden, 2% manganese
+      - springs
+      - medical devices
+    + Maraging Steel: 
+      - Nickel (18%), Cobalt (8-12%), Molybdenum (3-5%) rest iron
+      - Aerospace, tooling.
+    + Kovar:
+      - Nickel (29%), Cobalt (17%), Iron (balance) 
+      - Electronics
+      - glass-to-metal seals.
+    + Zircaloy: 
+      - Zirconium (98%), Tin (1.5%) 
+      - Nuclear reactors.
+    + Nickel chromium:
+      - Nickel 80%, Chromium 20%
+      - High temperature
+    + Nimonic:
+      - Nickel 50%, chromium 20%, Titanium 30%
+      - high temperature, low creep
+  
+  - Exotic alloys:
+    - Alnico: Aluminum (8%), Nickel (14%), Cobalt (24%), Iron (balance) - Magnets, sensors.
+    - Samarium-Cobalt (SmCo): Samarium (35%), Cobalt (65%) - Permanent magnets, aerospace.
+    - Neodymium-Iron-Boron (NdFeB): Neodymium (29-32%), Iron (64-68%), Boron (1%) - High-strength magnets, electronics.
+    - Mischmetal: Cerium (50%), Lanthanum (25%), Neodymium (18%), Praseodymium (5%) - Lighter flints, steel additives.
+    - Terfenol-D: Terbium (0.3%), Dysprosium (0.7%), Iron (balance) - Actuators, sensors.
+    - Gd5Si2Ge2: Gadolinium (62%), Silicon (19%), Germanium (19%) - Magnetic refrigeration.
+    - LaNi5: Lanthanum (20%), Nickel (80%) - Hydrogen storage, batteries.
+    - CeO2-ZrO2: Cerium (50%), Zirconium (50%) - Catalysts, fuel cells.
+    - YAG (Yttrium Aluminum Garnet): Yttrium (34%), Aluminum (66%) - Lasers, optics.
+    - YBCO (Yttrium Barium Copper Oxide): Yttrium (13%), Barium (34%), Copper (53%) - Superconductors.
+    - Praseodymium-Nickel (PrNi5): Praseodymium (20%), Nickel (80%) - Hydrogen storage.
+    - CeMg12: Cerium (8%), Magnesium (92%) - Hydrogen storage.
+    - LaNi4.7Al0.3: Lanthanum (20%), Nickel (75%), Aluminum (5%) - Hydrogen storage.
+    - Nd2Fe14B: Neodymium (29-32%), Iron (64-68%), Boron (1%) - Permanent magnets.
+    - Sm2Co17: Samarium (11%), Cobalt (89%) - High-temperature magnets.
+    - DyFe2: Dysprosium (33%), Iron (67%) - Magnetostrictive materials.
+    - TbFe2: Terbium (33%), Iron (67%) - Magnetostrictive materials.
+    - GdFe2: Gadolinium (33%), Iron (67%) - Magnetostrictive materials.
+    - HoFe2: Holmium (33%), Iron (67%) - Magnetostrictive materials.
+    - ErFe2: Erbium (33%), Iron (67%) - Magnetostrictive materials.
+    - TmFe2: Thulium (33%), Iron (67%) - Magnetostrictive materials.
+    - YFe2: Yttrium (33%), Iron (67%) - Magnetostrictive materials.
+    - CeFe2: Cerium (33%), Iron (67%) - Magnetostrictive materials.
+    - LaFe2: Lanthanum (33%), Iron (67%) - Magnetostrictive materials.
+    - PrFe2: Praseodymium (33%), Iron (67%) - Magnetostrictive materials.
+    - NdFe2: Neodymium (33%), Iron (67%) - Magnetostrictive materials.
+    - SmFe2: Samarium (33%), Iron (67%) - Magnetostrictive materials.
+    - EuFe2: Europium (33%), Iron (67%) - Magnetostrictive materials.
+    - Gd5(Si2Ge2): Gadolinium (62%), Silicon (19%), Germanium (19%) - Magnetic refrigeration.
+    - TbDyFe: Terbium (33%), Dysprosium (33%), Iron (34%) - Magnetostrictive materials.
+    - LaNi4.5Mn0.5: Lanthanum (20%), Nickel (75%), Manganese (5%) - Hydrogen storage.
+    - CeNi5: Cerium (20%), Nickel (80%) - Hydrogen storage.
+    - PrNi5: Praseodymium (20%), Nickel (80%) - Hydrogen storage.
+    - NdNi5: Neodymium (20%), Nickel (80%) - Hydrogen storage.
+    - SmNi5: Samarium (20%), Nickel (80%) - Hydrogen storage.
+    - EuNi5: Europium (20%), Nickel (80%) - Hydrogen storage.
+    - GdNi5: Gadolinium (20%), Nickel (80%) - Hydrogen storage.
+    - TbNi5: Terbium (20%), Nickel (80%) - Hydrogen storage.
+    - DyNi5: Dysprosium (20%), Nickel (80%) - Hydrogen storage.
+    - HoNi5: Holmium (20%), Nickel (80%) - Hydrogen storage.
+    - ErNi5: Erbium (20%), Nickel (80%) - Hydrogen storage.
+    - TmNi5: Thulium (20%), Nickel (80%) - Hydrogen storage.
+    - YNi5: Yttrium (20%), Nickel (80%) - Hydrogen storage.
+    - LaNi4.5Co0.5: Lanthanum (20%), Nickel (75%), Cobalt (5%) - Hydrogen storage.
+    - CeNi4.5Co0.5: Cerium (20%), Nickel (75%), Cobalt (5%) - Hydrogen storage.
+    - PrNi4.5Co0.5: Praseodymium (20%), Nickel (75%), Cobalt (5%) - Hydrogen storage.
+    - NdNi4.5Co0.5: Neodymium (20%), Nickel (75%), Cobalt (5%) - Hydrogen storage.
+    - SmNi4.5Co0.5: Samarium (20%), Nickel (75%), Cobalt (5%) - Hydrogen storage.
+    - EuNi4.5Co0.5: Europium (20%), Nickel (75%), Cobalt (5%) - Hydrogen storage.
+    - GdNi4.5Co0.5: Gadolinium (20%), Nickel (75%), Cobalt (5%) - Hydrogen storage.
+
+  - rectifier
+  - voltage filter
+  - voltage regulator
+  - potentiometer
+  + magnetic coupling
+  + vacuum pump (contains seals and steel)
+  - pressure sensor (from aluminum, copper and silicon)
+  + gearshaft (created in induction hardening facility)
+  - magnetic lifter
+  + condenser coil (Condenses vapor into liquid, essential in cooling or refrigeration systems)
+  + electromagnetic brake
+  + turbo charger
+  - roller chain
+  + vibration dampener
+  - catalytic converter
+  + high pressure fan
+  + variable frequenzy drive (adjusts motor speed based on demand, improving efficiency)
+  - thermal regulator
+  - destiller
+  + high power solenoid
+  + plasma cutter
+  - electrostatic precipitator
+  + piezoelectric sensor
+  + Seal
+  - Bearing
+  + Seeds (for trees)
+  - Antimatter trains
+  - Antimatter cube
+  - Quantized matter
+  - Polarized matter
+  - Coolant with different temperatures (coolant does not have a real purpose right now, see Idea coolant)
+  - Vacuum chamber
+  - x-ray tube (sterilization or something)
+  + Crucible
+  - For semiconductors:
+    - Tantalum nitride
+    - Silicon nitride
+    - Wafer
+  - Nuclear products:
+    - Isotopes of some elements. (Create recipes which take in one isotope and have 50% chance during their halflife to convert to another element)
+  - More T4 tech cards
+
+Recipes:
+  + Disable productivity for acro-conversion recipes
+  + Add multiple recipes for blank tech cards
+  + break down space research data into circuits / minerals
+  - Add recipes for fluids via acromatter
+  - Dirty water can be evaporated
+  - Add more complex recipe change for semiconductors
+  - Add alternative recipes for existing things that use lead (like pipes, valves...)
+  - Add smelt crafting recipes for advanced assembling machine (see "kr-automation")
+  + Remove some barrel recipes like helium-3, grobgnum-liquids and matter recipes (Or add other containers that are not normal barrels)
+  - Add recycling recipes for items that clog up production chain (break unused things down to trash and use trash for low grade recipes)
+  - Add special barrel for alien liquids
+  - Add special barrel for cold liquids like liquid nitrogen
+  - Add special barrel for radioactive liquids
+  - Not sure why enriched zirconium ore is missing
+
+Resources:
+  - Obsidian (for core miner - volcanic rock that contains silica, aluminum and potassium) (for version 0.2.0)
+
+Technologies:
+  - Add Infinite technologies:
+    + tool belt
+    - inserter speed
+    + inserter capacity
+    + braking force
+    - train speed
+    + research speed
+    - pole range
+    - pole coverage
+
+Ideas:
+  + Change fluid inputs and outputs for kr-matter-plant and kr-matter-assembler
+  + Configure stack sizes in settings
+  - Burn useless things for energy
+  - Add multiple liquit inputs / outputs for assembling machines. Coolant might be here interesting to use.
+  - Inserters can be affected by modules
+  - Krastorio has 3 icons for blank tech cards, edit its colors and use it for different things.
+  - Create multiple resurce patches for grobgnum (for version 0.4.0 or higher)
+  - Only higher tier miners can mine high tier resources (for version 0.3.0 or higher)
+  - Add scripting to acrospheres (for version 0.4.0 or higher)
+
+Other:
+  + Fix complex recipes not showing up in some machines
+  - Support text plates mod
+  - Fix energy values of fluids (see heat_capacity)
+  + Fix barrel tints
+  + Fix smoke tints for chemical plant
+  + Krastorio: add radioactivity
+  - Asteroid mining
+  - Add glow to tech cards
+  + Update icons with isometric perspective:
+    + Alloys
+    + Plates
+    + Ingots
+    + Mirror
+    + Infra red filter
+  - Add glow to alien items
+  + Fix stack sizes (for version 0.2.0)
+  + Fix resource spawning (for version 0.2.0)
+  + Add woodfarm on spawning with some pumps and pipes (for version 0.2.0)
+  + More realistic weapons setting changes also the actual weapons that exist. Support this krastorio setting properly.
+
+Low prio:
+  - Reorder in lua code recipes, items for simpler searching
+  - Add new files for changing subgroup (just like order-fixes.lua)
+  - Create function to generate acroproduct-conversion recipes
+  - Create file for acroproduct-conversion recipes
+  - For items and fluids add to icon chemical formula and add picture without chemical formula (such that when item is on conveyor belt text does not show up). Also try to add this feature for barrels.
+
+------------------------------------------------------------------------------------------------------------------------
+-- DEPRECATED TODO
+------------------------------------------------------------------------------------------------------------------------
+
+TODO:
+  + Add all the technology cards
+    + 4 Levels:
+      1. Basic science: flask icon
+      2. Intermediate science: card 1 icon
+      3. Advanced science: card 2 icon
+      4. Futuristic science: card 3 icon
+  + Add Acrospheres
+  + Add Acrospheres recipes
+  + Add Acrosphere product recipes
+    + recipes for acrocrystal, acromatter and acrovoid
+    + Add recipes for raw-resource via acrocrystal
+    + Add recipes for enriched-resource and some processed-resource via acrovoid
+    + Add recipes for enriched-resource via acromatter
+    - Add recipes for fluids via acromatter
+  + Remove Acrospheres crushing recipes
+  + Add icons to acroproduct-conversion recipes
+  + Add techonolgies for acrospheres
+  + Set enabled property of acrosphere recipes to false
+  + Add missing results for acrocrystal recipes
+  + Add missing results for acrovoid recipes
+  + Add missing results for acromatter recipes
+  + Put petroleum gas icon on ethylene. Create new icon for petroleum gas.
+  + Updated recipes using gears with gearbox, heavy-gearbox and differential
+  - Updated recipes for electronic components to have common intermediates
+  - do TODO in recipes: "add uses to"
+  + Add rockets depending on the explorer
+  + Change labs in which tech cards are used
+  + Change Factorio recipes
+  + Change Krastorio recipes
+  + Change AAI recipes
+  ? Replace rare-metals with yttrium, lanthanum, cerium, neodymium
+  + Fix technology unlocking and add recipes for tech cards
+  + Add nuclear science pack 2 and 3
+  - Add cyclotron
+  - Add particle accelerator
+  - Add core mining
+  + Replace dummy icons
+  - Fix barrel tints of fluids
+  - Add radiocativity to radioactive items
+  + Fix such that only blunagium explorer can be launched from blunagium rocket silo (also do this for grobgnum, rukite and yemnuth)
+  + Create better recipes for blunagium, grobgnum, rukite and yemnuth rocket silos
+  + Add colors to blunagium, grobgnum, rukite and yemnuth rocket silos
+  + Fix engine exhaust and shadow for rockets
+  + Add recipes for converting matter into resources
+  + Add recipes for converting acrospheres into rare and noble metals (Check eliminated crushing recipes)
+  - Add smelt crafting recipes for advanced assembling machine (see "kr-automation")
+  - Disable productivity for acro-conversion recipes
+  - Asteroid mining
+  - Add uses for lead
+  - Add multiple recipes for blank tech card
+
+
+Low prio
+  - Create function to generate acroproduct-conversion recipes
+  - Create file for acroproduct-conversion recipes
+  - Add cobalt. Ctrl+F "-- add cobalt to items"
+  - Add glow to tech cards
+  - Add infinite technologies
+  - Add recycling recipes (break unused things down to trash and use trash for low grade recipes)
+  - Fix smoke tints of chemical recipes
+  - Fix sorting of items in lua. "Mark: buildings" does not exist as category
+  ? Fix all icons where petroleum gas shows up
+  + Move science-pack changes to diffirent file than aai-and-krastorio-final-fixes.lua
+  - Add normal and expensive recipes
+  - Add duct tape, lol
+  - Why cant I align the 3rd and 4th tier of tech cards... why.....????
+  - Why have some recipes not have a dropshadow???? See sp-tin-and-lead icon on furnace
+  + Add subgroups to fluids
+  + Add ceramic matrix components
+  + Add compressor
+  - Add seal
+  - Add bearing
+  - Add more than 3 recipes to catalysts
+  + Fix vinyl chloride icon
+  + Replace ore icons with factorio base icons
+  + Add crushing for ores before smelting. Use icons used for ores by midjourney
+  + Add different types of dirty water
+  - Dirty water can be filtered or evaporated. Add corresponding recipes for filtering and evaporating.
+  + Add crushing recipes
+  + Add products of limestone, like fluorspar and the others in the correct proportions to concrete
+  - Add kevlar to pressure tanks
+  - Add crushed rare metals
+  - Add smelting for crushed ores
+  - Add seeds for tree -> Use actual trees to get wood and the seeds
+  - Add complex process for crushing and refining uranium ore
+  - Separate ores with centrifuges
+  - Do something interesting with coal liquifaction
+  - Unlock much earlier filter inserter
+  - Add dark matter, quantized matter, polarized matter, dark energy as fluids
+  - disable handcrafting for all alien items
+  + Add personal roboports MK3 and MK4
+  + Add uses to deuterium
+  - Add uses antimatter (icon already exists)
+  - Change gravitonium to fluid
+  - Add dark matter and dark energy as fluid
+  - infinite technologies "Follower robot count", "Artillery shell range", "Artillery shell shooting speed" should get a new higher tier with uniformity science pack
+
+
+Future changes
+  - Move incopatibel recipes outside of "not mods["Krastorio2"] then" statement and update them with correct values inside the statement
+  - Support text plates mod
+  + Support jetpack mod
+  + Support LTN mod
+  - remove some barrel recipes like, helium-3 or grobgnum-liquids
+
+
+Notes:
+  -
