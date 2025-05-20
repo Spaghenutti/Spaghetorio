@@ -14,6 +14,7 @@ Date: 2025-05-23
     - Fixed order of icons of first tier of science packs in lab reflectig better the order of progression
     - Fixed that fast inserter could carry higher stack size than bulk inserter
     - Fixed chromium cobalt recipe
+    - Fixed biusart lab graphics (before it was low res)
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.15
 Date: 2025-05-16
