@@ -19,6 +19,7 @@ Date: 2025-05-23
     - Fixed chromium cobalt recipe
     - Fixed biusart lab graphics (before it was low res)
     - Fixed changelog visibility in game
+    - Fixed material science pack 2 not being required as input cost fore some sciences that came after it
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.15
 Date: 2025-05-16
