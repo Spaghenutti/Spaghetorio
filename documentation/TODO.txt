@@ -292,7 +292,7 @@ TODO for 0.3.16
   - Fix casting icons
   - Reorder icons
   + Adjust order of science pack icons in lab
-  - clean up code for buildings
+  - Clean up code for buildings
   - Add filter to many recipes
   - Fix iodine brine spawning on start location (seed: 2806285432)
   - Unlock legendary quality much later in tech tree

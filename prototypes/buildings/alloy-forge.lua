@@ -164,16 +164,16 @@ data:extend({
     },
     allowed_effects = {"consumption", "speed", "productivity", "pollution", "quality"},
     crafting_categories = {
-      "smelting",
-      "sp-intermediate-smelting",
-      "sp-crushed-smelting",
-      "sp-smelting-enriched-resource",
+      -- "smelting",
+      -- "sp-intermediate-smelting",
+      -- "sp-crushed-smelting",
+      -- "sp-smelting-enriched-resource",
       "sp-smelting-with-fluid",
-      "metallurgy",
-      "metallurgy-or-assembling",
+      -- "metallurgy",
+      -- "metallurgy-or-assembling",
       "sp-alloy-smelting"
     },
-    crafting_speed = 10,
+    crafting_speed = 6,
     energy_source =
     {
       type = "electric",
