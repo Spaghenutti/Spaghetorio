@@ -2465,7 +2465,8 @@ data:extend({
     prerequisites = {
       "sp-noble-metals",
       "sp-tellurium-processing",
-      "sp-gallium-processing"
+      "sp-gallium-processing",
+      "sp-polyvinyl-fluoride"
     },
     unit =
     {
@@ -2634,10 +2635,6 @@ data:extend({
                                         "__Spaghetorio__/graphics/hr-icons/processor.png", 256, nil),
     effects =
     {
-      {
-        type = "unlock-recipe",
-        recipe = "sp-voltage-regulator-module"
-      },
       {
         type = "unlock-recipe",
         recipe = "sp-antenna-chip"

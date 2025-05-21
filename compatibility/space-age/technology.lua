@@ -15,13 +15,14 @@ data.raw.technology["lithium-processing"].research_trigger = nil
 data.raw.technology["lithium-processing"].unit = {
   count = 250,
   ingredients = {
-    {"automation-science-pack", 1},
+    {"sp-automation-science-pack-2", 1},
     {"logistic-science-pack", 1},
     {"chemical-science-pack", 1},
     {"sp-material-science-pack-1", 1},
     {"sp-geological-science-pack-1", 1},
     {"sp-electronic-science-pack-1", 1},
-    {"metallurgic-science-pack", 1}
+    {"metallurgic-science-pack", 1},
+    {"electromagnetic-science-pack", 1}
   },
   time = 30
 }

@@ -1,4 +1,0 @@
-
-
-0.3.16
-+ Reduce number of spores from algae
