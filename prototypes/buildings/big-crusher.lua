@@ -126,9 +126,8 @@ data:extend({
 
     energy_usage = "225kW",
     module_slots = 4,
-      icon_draw_specification = {scale = 2.5, shift = {0, 0.0}},
-    icons_positioning =
-    {
+    icon_draw_specification = {scale = 2.5, shift = {0, 0.0}},
+    icons_positioning = {
       {inventory_index = defines.inventory.assembling_machine_modules, shift = {0, 1.25}}
     },
     allowed_effects = { "consumption", "speed", "productivity", "pollution" },

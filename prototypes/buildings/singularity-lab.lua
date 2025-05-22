@@ -162,6 +162,10 @@ data:extend({
       "cryogenic-science-pack",
       "promethium-science-pack",
     },
+    icons_positioning = {
+      {inventory_index = defines.inventory.lab_modules, shift = {0, 1.6}},
+      {inventory_index = defines.inventory.lab_input, shift = {0, -0.8}, max_icons_per_row = 12, separation_multiplier = 1/1.1}
+    },
     vehicle_impact_sound = sounds.generic_impact,
     working_sound = {
       sound = {

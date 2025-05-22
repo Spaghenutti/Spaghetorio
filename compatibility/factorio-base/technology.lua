@@ -213,12 +213,13 @@ data.raw.technology["logistics-3"].prerequisites = {
 }
 data.raw.technology["logistics-3"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},
-  {"sp-logistic-science-pack-2", 1},
+  {"logistic-science-pack", 1},
+  {"chemical-science-pack", 1},
+  {"sp-electronic-science-pack-1", 1},
   {"sp-material-science-pack-1", 1},
   {"sp-geological-science-pack-1", 1},
-  {"sp-electronic-science-pack-1", 1},
-  {"chemical-science-pack", 1},
-  {"production-science-pack", 1}
+  {"metallurgic-science-pack", 1},
+  {"electromagnetic-science-pack", 1}
 }
 
 table.insert(data.raw.technology["railway"].prerequisites, "sp-steel-wheel")
