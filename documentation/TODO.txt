@@ -20,6 +20,7 @@ TODO for 0.3.17
   - Unlock legendary quality much later in tech tree
 
 TODO for 0.3.18
+  - Use xenon for breeder reactor?
   - Add teflon
   - Update space science 2 branch of tech tree
   - Add back blunagium, grobgnum, rukite and yemnuth rockets (even though they are unlocked later)

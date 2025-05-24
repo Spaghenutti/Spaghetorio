@@ -35,10 +35,13 @@ data.raw.technology["aai-strongbox-logistic"].unit.ingredients = {
 table.insert(data.raw.technology["aai-storehouse-base"].prerequisites, "sp-titanium-machining")
 data.raw.technology["aai-storehouse-base"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},
-  {"sp-logistic-science-pack-2", 1},
+  {"logistic-science-pack", 1},
   {"chemical-science-pack", 1},
-  {"production-science-pack", 1},
-  {"sp-material-science-pack-2", 1}
+  {"sp-electronic-science-pack-1", 1},
+  {"sp-material-science-pack-1", 1},
+  {"sp-geological-science-pack-1", 1},
+  {"metallurgic-science-pack", 1},
+  {"electromagnetic-science-pack", 1}
 }
 
 data.raw.technology["aai-storehouse-storage"].unit.ingredients = {
@@ -68,10 +71,13 @@ data.raw.technology["aai-storehouse-logistic"].unit.ingredients = {
 
 data.raw.technology["aai-warehouse-base"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},
-  {"sp-logistic-science-pack-2", 1},
+  {"logistic-science-pack", 1},
   {"chemical-science-pack", 1},
-  {"production-science-pack", 1},
-  {"sp-material-science-pack-2", 1}
+  {"sp-electronic-science-pack-1", 1},
+  {"sp-material-science-pack-1", 1},
+  {"sp-geological-science-pack-1", 1},
+  {"metallurgic-science-pack", 1},
+  {"electromagnetic-science-pack", 1}
 }
 
 data.raw.technology["aai-warehouse-storage"].unit.ingredients = {
