@@ -2,44 +2,6 @@ local util = require("data-util")
 local core_util = require("__core__.lualib.util")
 
 
-function util.technology_icon_constant_damage(technology_icon)
-  local icons =
-  {
-    {
-      icon = technology_icon,
-      icon_size = 256,
-    },
-    {
-      icon = "__core__/graphics/icons/technology/constants/constant-damage.png",
-      icon_size = 128,
-      scale = 0.5,
-      shift = {50, 50},
-      floating = true
-    }
-  }
-  return icons
-end
-
-
-function util.technology_icon_constant_speed(technology_icon)
-  local icons =
-  {
-    {
-      icon = technology_icon,
-      icon_size = 256,
-    },
-    {
-      icon = "__core__/graphics/icons/technology/constants/constant-speed.png",
-      icon_size = 128,
-      scale = 0.5,
-      shift = {50, 50},
-      floating = true
-    }
-  }
-  return icons
-end
-
-
 data:extend({
   {
     type = "technology",
@@ -6747,19 +6709,7 @@ data:extend({
   {
     type = "technology",
     name = "sp-kr-portable-generator",  -- #ForRegEx# - technology
-    icons = {
-      {
-        icon = "__Spaghetorio__/graphics/krastorio/technologies/portable-generator.png",
-        icon_size = 256,
-        icon_mipmaps = 4,
-      },
-      {
-        icon = "__core__/graphics/icons/technology/constants/constant-equipment.png",
-        icon_size = 128,
-        scale = 0.5,
-        shift = {50, 50}
-      },
-    },
+    icons = core_util.technology_icon_constant_equipment("__Spaghetorio__/graphics/krastorio/technologies/portable-generator.png"),
     icon_size = 256,
     icon_mipmaps = 4,
     upgrade = false,
@@ -12001,22 +11951,7 @@ data:extend({
     name = "sp-inserter-capacity-bonus-8",  -- #ForRegEx# - infinite-technology
     icon_size = 256,
     icon_mipmaps = 4,
-    icons =
-    {
-      {
-        icon = "__base__/graphics/technology/inserter-capacity.png",
-        icon_size = 256,
-        scale = 2,
-        icon_mipmaps = 4
-      },
-      {
-        icon = "__core__/graphics/icons/technology/constants/constant-capacity.png",
-        icon_size = 128,
-        scale = 2,
-        icon_mipmaps = 3,
-        shift = {100, 100}
-      }
-    },
+    icons = core_util.technology_icon_constant_stack_size("__base__/graphics/technology/inserter-capacity.png"),
     effects =
     {
       {
@@ -12061,22 +11996,7 @@ data:extend({
     name = "sp-inserter-capacity-bonus-11",  -- #ForRegEx# - infinite-technology
     icon_size = 256,
     icon_mipmaps = 4,
-    icons =
-    {
-      {
-        icon = "__base__/graphics/technology/inserter-capacity.png",
-        icon_size = 256,
-        scale = 2,
-        icon_mipmaps = 4
-      },
-      {
-        icon = "__core__/graphics/icons/technology/constants/constant-capacity.png",
-        icon_size = 128,
-        scale = 2,
-        icon_mipmaps = 3,
-        shift = {100, 100}
-      }
-    },
+    icons = core_util.technology_icon_constant_stack_size("__base__/graphics/technology/inserter-capacity.png"),
     effects =
     {
       {
@@ -12386,7 +12306,7 @@ data:extend({
   {
     type = "technology",
     name = "sp-physical-projectile-damage-1",  -- #ForRegEx# - infinite-technology
-    icons = util.technology_icon_constant_damage("__base__/graphics/technology/physical-projectile-damage-1.png"),
+    icons = core_util.technology_icon_constant_damage("__base__/graphics/technology/physical-projectile-damage-1.png"),
     effects =
     {
       {
@@ -12420,7 +12340,7 @@ data:extend({
   {
     type = "technology",
     name = "sp-physical-projectile-damage-3",  -- #ForRegEx# - infinite-technology
-    icons = util.technology_icon_constant_damage("__base__/graphics/technology/physical-projectile-damage-1.png"),
+    icons = core_util.technology_icon_constant_damage("__base__/graphics/technology/physical-projectile-damage-1.png"),
     effects =
     {
       {
@@ -12459,7 +12379,7 @@ data:extend({
   {
     type = "technology",
     name = "sp-physical-projectile-damage-5",  -- #ForRegEx# - infinite-technology
-    icons = util.technology_icon_constant_damage("__base__/graphics/technology/physical-projectile-damage-1.png"),
+    icons = core_util.technology_icon_constant_damage("__base__/graphics/technology/physical-projectile-damage-1.png"),
     effects =
     {
       {
@@ -12499,7 +12419,7 @@ data:extend({
   {
     type = "technology",
     name = "sp-physical-projectile-damage-9",  -- #ForRegEx# - infinite-technology
-    icons = util.technology_icon_constant_damage("__base__/graphics/technology/physical-projectile-damage-1.png"),
+    icons = core_util.technology_icon_constant_damage("__base__/graphics/technology/physical-projectile-damage-1.png"),
     effects =
     {
       {
@@ -12541,7 +12461,7 @@ data:extend({
   {
     type = "technology",
     name = "sp-physical-projectile-damage-13",  -- #ForRegEx# - infinite-technology
-    icons = util.technology_icon_constant_damage("__base__/graphics/technology/physical-projectile-damage-2.png"),
+    icons = core_util.technology_icon_constant_damage("__base__/graphics/technology/physical-projectile-damage-2.png"),
     effects =
     {
       {
@@ -12591,7 +12511,7 @@ data:extend({
   {
     type = "technology",
     name = "sp-physical-projectile-damage-21",  -- #ForRegEx# - infinite-technology
-    icons = util.technology_icon_constant_damage("__base__/graphics/technology/physical-projectile-damage-2.png"),
+    icons = core_util.technology_icon_constant_damage("__base__/graphics/technology/physical-projectile-damage-2.png"),
     effects =
     {
       {
@@ -12644,7 +12564,7 @@ data:extend({
   {
     type = "technology",
     name = "sp-physical-projectile-damage-31",  -- #ForRegEx# - infinite-technology
-    icons = util.technology_icon_constant_damage("__base__/graphics/technology/physical-projectile-damage-2.png"),
+    icons = core_util.technology_icon_constant_damage("__base__/graphics/technology/physical-projectile-damage-2.png"),
     effects =
     {
       {
@@ -12696,7 +12616,7 @@ data:extend({
   {
     type = "technology",
     name = "sp-weapon-shooting-speed-1",  -- #ForRegEx# - infinite-technology
-    icons = util.technology_icon_constant_speed("__base__/graphics/technology/weapon-shooting-speed-1.png"),
+    icons = core_util.technology_icon_constant_speed("__base__/graphics/technology/weapon-shooting-speed-1.png"),
     effects =
     {
       {
@@ -12725,7 +12645,7 @@ data:extend({
   {
     type = "technology",
     name = "sp-weapon-shooting-speed-3",  -- #ForRegEx# - infinite-technology
-    icons = util.technology_icon_constant_speed("__base__/graphics/technology/weapon-shooting-speed-1.png"),
+    icons = core_util.technology_icon_constant_speed("__base__/graphics/technology/weapon-shooting-speed-1.png"),
     effects =
     {
       {
@@ -12759,7 +12679,7 @@ data:extend({
   {
     type = "technology",
     name = "sp-weapon-shooting-speed-5",  -- #ForRegEx# - infinite-technology
-    icons = util.technology_icon_constant_speed("__base__/graphics/technology/weapon-shooting-speed-2.png"),
+    icons = core_util.technology_icon_constant_speed("__base__/graphics/technology/weapon-shooting-speed-2.png"),
     effects =
     {
       {
@@ -12799,7 +12719,7 @@ data:extend({
   {
     type = "technology",
     name = "sp-weapon-shooting-speed-9",  -- #ForRegEx# - infinite-technology
-    icons = util.technology_icon_constant_speed("__base__/graphics/technology/weapon-shooting-speed-2.png"),
+    icons = core_util.technology_icon_constant_speed("__base__/graphics/technology/weapon-shooting-speed-2.png"),
     effects =
     {
       {
@@ -12841,7 +12761,7 @@ data:extend({
   {
     type = "technology",
     name = "sp-weapon-shooting-speed-13",  -- #ForRegEx# - infinite-technology
-    icons = util.technology_icon_constant_speed("__base__/graphics/technology/weapon-shooting-speed-3.png"),
+    icons = core_util.technology_icon_constant_speed("__base__/graphics/technology/weapon-shooting-speed-3.png"),
     effects =
     {
       {
@@ -12891,7 +12811,7 @@ data:extend({
   {
     type = "technology",
     name = "sp-weapon-shooting-speed-21",  -- #ForRegEx# - infinite-technology
-    icons = util.technology_icon_constant_speed("__base__/graphics/technology/weapon-shooting-speed-3.png"),
+    icons = core_util.technology_icon_constant_speed("__base__/graphics/technology/weapon-shooting-speed-3.png"),
     effects =
     {
       {
@@ -12944,7 +12864,7 @@ data:extend({
     {
     type = "technology",
     name = "sp-weapon-shooting-speed-31",  -- #ForRegEx# - infinite-technology
-    icons = util.technology_icon_constant_speed("__base__/graphics/technology/weapon-shooting-speed-3.png"),
+    icons = core_util.technology_icon_constant_speed("__base__/graphics/technology/weapon-shooting-speed-3.png"),
     effects =
     {
       {

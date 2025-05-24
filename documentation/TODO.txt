@@ -19,7 +19,7 @@ TODO for 0.3.17
   - Fix iodine brine spawning on start location (seed: 2806285432)
   - Unlock legendary quality much later in tech tree
   - Rename science packs to basic, intermediate and advanced
-  - Fix AAI storhouse science ingredients
+  + Fix AAI storhouse science ingredients
 
 TODO for 0.3.18
   - Use xenon for breeder reactor?
@@ -145,7 +145,6 @@ Features:
   - Krastorio has 3 icons for blank tech cards, edit its colors and use it for different things.
   - Create multiple resurce patches for grobgnum (for version 0.4.0 or higher)
   - For items and fluids add to icon chemical formula and add picture without chemical formula (such that when item is on conveyor belt text does not show up). Also try to add this feature for barrels.
-
 
 Scripting:
   - Acrospheres (for version 0.4.0 or higher)
