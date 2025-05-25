@@ -1189,12 +1189,11 @@ util.recipe.change_recipe_ingredients("night-vision-equipment",
 
 util.recipe.change_recipe_ingredients("belt-immunity-equipment",
   {
-    {type = "item", name = "processing-unit", amount = 2},
+    {type = "item", name = "advanced-circuit", amount = 2},
     {type = "item", name = "sp-vibration-dampener", amount = 2},
     {type = "item", name = "electric-engine-unit", amount = 2},
     {type = "item", name = "sp-bolts", amount = 12},
     {type = "item", name = "sp-titanium-frame", amount = 3},
-    {type = "item", name = "sp-composites", amount = 2},
     {type = "item", name = "sp-ball-bearing", amount = 6},
     {type = "item", name = "sp-rubber", amount = 2}
   },

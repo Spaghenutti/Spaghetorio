@@ -1,9 +1,13 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.17
 Date: 2025-05-30
+  Changes:
+    - Some changes in tech tree
   Bugfixes:
     - Fixed some technology requirements for AAI Containers
     - Fixed some technology icons
+  Balancing:
+    - Belt immunity equipment is now unlocked earlier
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.16
 Date: 2025-05-23

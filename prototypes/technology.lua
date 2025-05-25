@@ -11498,22 +11498,7 @@ data:extend({
     name = "sp-worker-robots-storage-4",  -- #ForRegEx# - infinite-technology
     icon_size = 256,
     icon_mipmaps = 4,
-    icons =
-    {
-      {
-        icon = "__base__/graphics/technology/worker-robots-storage.png",
-        icon_size = 256,
-        scale = 2,
-        icon_mipmaps = 4
-      },
-      {
-        icon = "__core__/graphics/icons/technology/constants/constant-capacity.png",
-        icon_size = 128,
-        scale = 2,
-        icon_mipmaps = 3,
-        shift = {100, 100}
-      }
-    },
+    icons = core_util.technology_icon_constant_stack_size("__base__/graphics/technology/worker-robots-storage.png"),
     effects =
     {
       {
@@ -11555,22 +11540,7 @@ data:extend({
     name = "sp-worker-robots-storage-6",  -- #ForRegEx# - infinite-technology
     icon_size = 256,
     icon_mipmaps = 4,
-    icons =
-    {
-      {
-        icon = "__base__/graphics/technology/worker-robots-storage.png",
-        icon_size = 256,
-        scale = 2,
-        icon_mipmaps = 4
-      },
-      {
-        icon = "__core__/graphics/icons/technology/constants/constant-capacity.png",
-        icon_size = 128,
-        scale = 2,
-        icon_mipmaps = 3,
-        shift = {100, 100}
-      }
-    },
+    icons = core_util.technology_icon_constant_stack_size("__base__/graphics/technology/worker-robots-storage.png"),
     effects =
     {
       {
@@ -11613,22 +11583,7 @@ data:extend({
     name = "sp-toolbelt-2",  -- #ForRegEx# - infinite-technology
     icon_size = 256,
     icon_mipmaps = 4,
-    icons =
-    {
-      {
-        icon = "__base__/graphics/technology/toolbelt.png",
-        icon_size = 256,
-        scale = 2,
-        icon_mipmaps = 4
-      },
-      {
-        icon = "__core__/graphics/icons/technology/constants/constant-capacity.png",
-        icon_size = 128,
-        scale = 2,
-        icon_mipmaps = 3,
-        shift = {100, 100}
-      }
-    },
+    icons = core_util.technology_icon_constant_stack_size("__base__/graphics/technology/toolbelt.png"),
     effects =
     {
       {
@@ -11661,22 +11616,7 @@ data:extend({
     name = "sp-toolbelt-3",  -- #ForRegEx# - infinite-technology
     icon_size = 256,
     icon_mipmaps = 4,
-    icons =
-    {
-      {
-        icon = "__base__/graphics/technology/toolbelt.png",
-        icon_size = 256,
-        scale = 2,
-        icon_mipmaps = 4
-      },
-      {
-        icon = "__core__/graphics/icons/technology/constants/constant-capacity.png",
-        icon_size = 128,
-        scale = 2,
-        icon_mipmaps = 3,
-        shift = {100, 100}
-      }
-    },
+    icons = core_util.technology_icon_constant_stack_size("__base__/graphics/technology/toolbelt.png"),
     effects =
     {
       {
@@ -11708,22 +11648,7 @@ data:extend({
     name = "sp-toolbelt-4",  -- #ForRegEx# - infinite-technology
     icon_size = 256,
     icon_mipmaps = 4,
-    icons =
-    {
-      {
-        icon = "__base__/graphics/technology/toolbelt.png",
-        icon_size = 256,
-        scale = 2,
-        icon_mipmaps = 4
-      },
-      {
-        icon = "__core__/graphics/icons/technology/constants/constant-capacity.png",
-        icon_size = 128,
-        scale = 2,
-        icon_mipmaps = 3,
-        shift = {100, 100}
-      }
-    },
+    icons = core_util.technology_icon_constant_stack_size("__base__/graphics/technology/toolbelt.png"),
     effects =
     {
       {
@@ -11755,22 +11680,7 @@ data:extend({
     name = "sp-toolbelt-5",  -- #ForRegEx# - infinite-technology
     icon_size = 256,
     icon_mipmaps = 4,
-    icons =
-    {
-      {
-        icon = "__base__/graphics/technology/toolbelt.png",
-        icon_size = 256,
-        scale = 2,
-        icon_mipmaps = 4
-      },
-      {
-        icon = "__core__/graphics/icons/technology/constants/constant-capacity.png",
-        icon_size = 128,
-        scale = 2,
-        icon_mipmaps = 3,
-        shift = {100, 100}
-      }
-    },
+    icons = core_util.technology_icon_constant_stack_size("__base__/graphics/technology/toolbelt.png"),
     effects =
     {
       {
@@ -11807,22 +11717,7 @@ data:extend({
     name = "sp-toolbelt-6",  -- #ForRegEx# - infinite-technology
     icon_size = 256,
     icon_mipmaps = 4,
-    icons =
-    {
-      {
-        icon = "__base__/graphics/technology/toolbelt.png",
-        icon_size = 256,
-        scale = 2,
-        icon_mipmaps = 4
-      },
-      {
-        icon = "__core__/graphics/icons/technology/constants/constant-capacity.png",
-        icon_size = 128,
-        scale = 2,
-        icon_mipmaps = 3,
-        shift = {100, 100}
-      }
-    },
+    icons = core_util.technology_icon_constant_stack_size("__base__/graphics/technology/toolbelt.png"),
     effects =
     {
       {
@@ -11858,22 +11753,7 @@ data:extend({
     name = "sp-toolbelt-7",  -- #ForRegEx# - infinite-technology
     icon_size = 256,
     icon_mipmaps = 4,
-    icons =
-    {
-      {
-        icon = "__base__/graphics/technology/toolbelt.png",
-        icon_size = 256,
-        scale = 2,
-        icon_mipmaps = 4
-      },
-      {
-        icon = "__core__/graphics/icons/technology/constants/constant-capacity.png",
-        icon_size = 128,
-        scale = 2,
-        icon_mipmaps = 3,
-        shift = {100, 100}
-      }
-    },
+    icons = core_util.technology_icon_constant_stack_size("__base__/graphics/technology/toolbelt.png"),
     effects =
     {
       {
@@ -12108,22 +11988,7 @@ data:extend({
     name = "sp-braking-force-8",  -- #ForRegEx# - infinite-technology
     icon_size = 256,
     icon_mipmaps = 4,
-    icons =
-    {
-      {
-        icon = "__base__/graphics/technology/braking-force.png",
-        icon_size = 256,
-        scale = 2,
-        icon_mipmaps = 4
-      },
-      {
-        icon = "__core__/graphics/icons/technology/constants/constant-speed.png",
-        icon_size = 128,
-        scale = 2,
-        icon_mipmaps = 3,
-        shift = {100, 100}
-      }
-    },
+    icons = core_util.technology_icon_constant_speed("__base__/graphics/technology/braking-force.png"),
     effects =
     {
       {
@@ -12166,22 +12031,7 @@ data:extend({
     name = "sp-research-speed-7",  -- #ForRegEx# - infinite-technology
     icon_size = 256,
     icon_mipmaps = 4,
-    icons =
-    {
-      {
-        icon = "__base__/graphics/technology/research-speed.png",
-        icon_size = 256,
-        scale = 2,
-        icon_mipmaps = 4
-      },
-      {
-        icon = "__core__/graphics/icons/technology/constants/constant-speed.png",
-        icon_size = 128,
-        scale = 2,
-        icon_mipmaps = 3,
-        shift = {100, 100}
-      }
-    },
+    icons = core_util.technology_icon_constant_speed("__base__/graphics/technology/research-speed.png"),
     effects =
     {
       {

@@ -736,19 +736,17 @@ data.raw.technology["night-vision-equipment"].unit.ingredients = {
 }
 
 data.raw.technology["belt-immunity-equipment"].prerequisites = {
-  "processing-unit"
+  "sp-titanium-machining"
 }
 data.raw.technology["belt-immunity-equipment"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},
-  {"sp-logistic-science-pack-2", 1},
-  {"sp-material-science-pack-2", 1},
-  {"sp-geological-science-pack-2", 1},
-  {"sp-electronic-science-pack-2", 1},
-  {"sp-chemical-science-pack-2", 1},
-  {"sp-metallurgic-science-pack-2", 1},
-  {"sp-electromagnetic-science-pack-2", 1},
-  {"production-science-pack", 1},
-  {"utility-science-pack", 1}
+  {"logistic-science-pack", 1},
+  {"chemical-science-pack", 1},
+  {"sp-electronic-science-pack-1", 1},
+  {"sp-material-science-pack-1", 1},
+  {"sp-geological-science-pack-1", 1},
+  {"metallurgic-science-pack", 1},
+  {"electromagnetic-science-pack", 1}
 }
 
 data.raw.technology["fission-reactor-equipment"].prerequisites = {
