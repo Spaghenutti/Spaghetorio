@@ -7,17 +7,17 @@ TODO for 0.3.16
   + Changelog visibility in game: https://mods.factorio.com/mod/Spaghetorio/discussion/681e53fffcfe2cc9f6594733
 
 TODO for 0.3.17
-  - Add casting recipes
-    - potassium
-  - Crushing and Enriching
-    - stibnite
-    - holmium -> to get more cerium
-  - Fix casting icons
+  + Add casting recipes
+    + potassium
+  + Cerium technology
+    + Crushing and Enriching
+      + stibnite
+      + holmium -> to get more cerium     
+      + Changed some holmium related recipes
   - Reorder icons
   - Clean up code for buildings
   - Add filter to many recipes
   - Fix iodine brine spawning on start location (seed: 2806285432)
-  - Unlock legendary quality much later in tech tree
   + Fix AAI storhouse science ingredients
 
 TODO for 0.3.18
@@ -27,6 +27,7 @@ TODO for 0.3.18
   - Add back blunagium, grobgnum, rukite and yemnuth rockets (even though they are unlocked later)
 
 TODO for 0.3.19
+  - Unlock legendary quality much later in tech tree
   - Update automation science 3
   - Update logistic science 3
   - Update geological science 3
@@ -44,6 +45,12 @@ TODO for 0.3.19
     - xray imaging with thallium 201
     - thallium used in optics
     - used in rodent poison
+
+TODO for 0.3.20
+  - Add 2-3 more rare metals to rare metals technology
+  - Add all 3-4 rare metals from asteroids
+  - Add more rare metals comming from lava
+  - Fix casting icons
 
 TODO for 0.4.1
   - Updates for cryogenic science

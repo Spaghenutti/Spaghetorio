@@ -745,6 +745,36 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "sp-antimony-oxide-from-crushed-stibnite",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/antimony-oxide.png", 64,
+                                         "__Spaghetorio__/graphics/icons/crushed-stibnite-1.png", 64),
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 4,
+    ingredients = {
+      {type = "item", name = "sp-crushed-stibnite", amount = 4},
+    },
+    results = {
+      {type = "item", name = "sp-antimony-oxide", amount = 4}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-antimony-oxide-from-enriched-stibnite",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/antimony-oxide.png", 64,
+                                         "__Spaghetorio__/graphics/icons/enriched-stibnite-1.png", 64),
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 3.6,
+    ingredients = {
+      {type = "item", name = "sp-enriched-stibnite", amount = 3},
+    },
+    results = {
+      {type = "item", name = "sp-antimony-oxide", amount = 4}
+    }
+  },
+  {
+    type = "recipe",
     name = "sp-antimony-pillet",  -- #ForRegEx# - recipe
     icon = "__Spaghetorio__/graphics/icons/antimony-pillet.png",
     category = "sp-intermediate-smelting",
@@ -1222,6 +1252,61 @@ data:extend({
       quaternary = {r = 0.1, g = 0.1, b = 0.1, a = 1.000},
     }
   },
+  {
+    type = "recipe",
+    name = "sp-enriched-holmium",  -- #ForRegEx# - recipe
+    icons = util.icon.create_enriching_recipe_icon(data.raw.item["holmium-ore"], data.raw.item["sp-enriched-holmium"]),
+    icon_size = 64,
+    mip_maps = 4,
+    category = "sp-enriching-raw-resource",
+    subgroup = "sp-enriched-resource-recipe",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 1,
+    ingredients = {
+      {type = "item", name = "holmium-ore", amount = 2},
+      {type = "fluid", name = "sp-dimethyl-sulfoxide", amount = 5},
+      {type = "fluid", name = "water", amount = 60}
+    },
+    results = {
+      {type = "item", name = "sp-enriched-holmium", amount = 3},
+      {type = "fluid", name = "sp-dirty-water-with-holmium", probaility = 0.75, amount = 60}
+    },
+    crafting_machine_tint = {
+      primary = {r = 0.8, g = 0.7, b = 0.8, a = 1.000},
+      secondary = {r = 0.5, g = 0.3, b = 0.4, a = 1.000},
+      tertiary = {r = 0.2, g = 0.2, b = 0.2, a = 1.000},
+      quaternary = {r = 0.1, g = 0.1, b = 0.1, a = 1.000},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-enriched-stibnite",  -- #ForRegEx# - recipe
+    icons = util.icon.create_enriching_recipe_icon(data.raw.item["sp-stibnite"], data.raw.item["sp-enriched-stibnite"]),
+    icon_size = 64,
+    mip_maps = 4,
+    category = "sp-enriching-raw-resource",
+    subgroup = "sp-enriched-resource-recipe",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 2,
+    ingredients = {
+      {type = "item", name = "sp-stibnite", amount = 4},
+      {type = "fluid", name = "sp-dimethyl-sulfoxide", amount = 3},
+      {type = "fluid", name = "sp-hypochlorus-acid", amount = 5},
+      {type = "fluid", name = "water", amount = 50}
+    },
+    results = {
+      {type = "item", name = "sp-enriched-stibnite", amount = 4},
+      {type = "fluid", name = "sp-dirty-water-with-antimony", amount = 50}
+    },
+    crafting_machine_tint = {
+      primary = {r = 0.8, g = 0.7, b = 0.8, a = 1.000},
+      secondary = {r = 0.5, g = 0.3, b = 0.4, a = 1.000},
+      tertiary = {r = 0.2, g = 0.2, b = 0.2, a = 1.000},
+      quaternary = {r = 0.1, g = 0.1, b = 0.1, a = 1.000},
+    }
+  },
   ------------------------------------------------------------------------------
   -- MARK: enriching-crushed-resource
   ------------------------------------------------------------------------------
@@ -1324,7 +1409,7 @@ data:extend({
       {type = "fluid", name = "water", amount = 30}
     },
     results = {
-      {type = "item", name = "iron-ore", amount = 4},
+      {type = "item", name = "sp-crushed-iron-ore", amount = 4},
       {type = "item", name = "sp-enriched-chromite", amount = 8},
       {type = "fluid", name = "sp-dirty-water-with-chromite", amount = 30}
     },
@@ -1380,7 +1465,7 @@ data:extend({
       {type = "fluid", name = "water", amount = 20}
     },
     results = {
-      {type = "item", name = "iron-ore", amount = 6},
+      {type = "item", name = "sp-crushed-iron-ore", amount = 6},
       {type = "item", name = "sp-enriched-nickel", amount = 7},
       {type = "fluid", name = "sp-dirty-water-with-nickel", amount = 20}
     },
@@ -1437,7 +1522,7 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-enriched-titanium", amount = 9},
-      {type = "item", name = "sp-zirconium-ore", amount = 1},
+      {type = "item", name = "sp-crushed-zirconium-ore", amount = 1},
       {type = "fluid", name = "sp-dirty-water-with-titanium", amount = 50}
     },
     crafting_machine_tint = {
@@ -1465,7 +1550,7 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-enriched-tungsten", amount = 6},
-      {type = "item", name = "sp-chromite", probability = 0.7, amount = 1},
+      {type = "item", name = "sp-crushed-chromite", probability = 0.7, amount = 1},
       {type = "fluid", name = "sp-dirty-water-with-tungsten", amount = 35}
     },
     crafting_machine_tint = {
@@ -1494,6 +1579,61 @@ data:extend({
     results = {
       {type = "item", name = "sp-enriched-zinc", amount = 8},
       {type = "fluid", name = "sp-dirty-water-with-zinc", amount = 40}
+    },
+    crafting_machine_tint = {
+      primary = {r = 0.8, g = 0.7, b = 0.8, a = 1.000},
+      secondary = {r = 0.5, g = 0.3, b = 0.4, a = 1.000},
+      tertiary = {r = 0.2, g = 0.2, b = 0.2, a = 1.000},
+      quaternary = {r = 0.1, g = 0.1, b = 0.1, a = 1.000},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-enriched-holmium-from-crushed-resource",  -- #ForRegEx# - recipe
+    icons = util.icon.create_enriching_recipe_icon(data.raw.item["sp-crushed-holmium-ore"], data.raw.item["sp-enriched-holmium"]),
+    icon_size = 64,
+    mip_maps = 4,
+    category = "sp-enriching-crushed-resource",
+    subgroup = "sp-enriched-crushed-resource-recipe",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 1,
+    ingredients = {
+      {type = "item", name = "sp-crushed-holmium-ore", amount = 2},
+      {type = "fluid", name = "sp-dimethyl-sulfoxide", amount = 3},
+      {type = "fluid", name = "water", amount = 40}
+    },
+    results = {
+      {type = "item", name = "sp-enriched-holmium", amount = 3},
+      {type = "fluid", name = "sp-dirty-water-with-holmium", probaility = 0.75, amount = 40}
+    },
+    crafting_machine_tint = {
+      primary = {r = 0.8, g = 0.7, b = 0.8, a = 1.000},
+      secondary = {r = 0.5, g = 0.3, b = 0.4, a = 1.000},
+      tertiary = {r = 0.2, g = 0.2, b = 0.2, a = 1.000},
+      quaternary = {r = 0.1, g = 0.1, b = 0.1, a = 1.000},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-enriched-stibnite-from-crushed-resource",  -- #ForRegEx# - recipe
+    icons = util.icon.create_enriching_recipe_icon(data.raw.item["sp-crushed-stibnite"], data.raw.item["sp-enriched-stibnite"]),
+    icon_size = 64,
+    mip_maps = 4,
+    category = "sp-enriching-crushed-resource",
+    subgroup = "sp-enriched-crushed-resource-recipe",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 2,
+    ingredients = {
+      {type = "item", name = "sp-crushed-stibnite", amount = 3},
+      {type = "fluid", name = "sp-dimethyl-sulfoxide", amount = 1},
+      {type = "fluid", name = "sp-hypochlorus-acid", amount = 3},
+      {type = "fluid", name = "water", amount = 40}
+    },
+    results = {
+      {type = "item", name = "sp-enriched-stibnite", amount = 4},
+      {type = "fluid", name = "sp-dirty-water-with-antimony", amount = 40}
     },
     crafting_machine_tint = {
       primary = {r = 0.8, g = 0.7, b = 0.8, a = 1.000},
@@ -2442,6 +2582,27 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "sp-molten-potassium-from-lava",  -- #ForRegEx# - recipe
+    icons = util.icon.create_melting_from_lava_icon("__space-age__/graphics/icons/fluid/lava.png",
+                                                    "__Spaghetorio__/graphics/icons/molten-potassium-only-metal.png",
+                                                    "__Spaghetorio__/graphics/icons/obsidian-1.png"),
+    category = "metallurgy",
+    subgroup = "sp-casting-raw-resource",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 20,
+    ingredients = {
+      {type = "fluid", name = "lava", amount = 500},
+      {type = "fluid", name = "sp-chlorine", amount = 20},
+    },
+    results = {
+      {type = "item", name = "sp-obsidian", probability = 0.5, amount = 3},
+      {type = "fluid", name = "sp-molten-potassium", amount = 200},
+    },
+    order = "z-from-lava-[potassium]"
+  },
+  {
+    type = "recipe",
     name = "sp-molten-tin-from-lava",  -- #ForRegEx# - recipe
     icons = util.icon.create_melting_from_lava_icon("__space-age__/graphics/icons/fluid/lava.png",
                                                     "__Spaghetorio__/graphics/icons/molten-tin-only-metal.png",
@@ -3002,6 +3163,24 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-gallium", amount = 50}
+    },
+    order = "z-from-molten-[gallium]"
+  },
+  {
+    type = "recipe",
+    name = "sp-casting-potassium-ingot",  -- #ForRegEx# - recipe
+    icons = util.icon.create_casting_icon("__Spaghetorio__/graphics/icons/potassium-ingot.png",
+                                          {"__Spaghetorio__/graphics/icons/molten-potassium.png"}),
+    category = "metallurgy",
+    subgroup = "sp-processed-metal",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 1.5,
+    ingredients = {
+      {type = "fluid", name = "sp-molten-potassium", amount = 25},
+    },
+    results = {
+      {type = "item", name = "sp-potassium-ingot", amount = 1}
     },
     order = "z-from-molten-[gallium]"
   },
@@ -3676,6 +3855,62 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "sp-dirty-water-filtration-holmium",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/icons/dirty-water-with-holmium.png",
+    icon_size = 64,
+    mip_maps = 4,
+    category = "sp-kr-fluid-filtration",
+    subgroup = "sp-dirty-fluid-filtration",
+    enabled = false,
+    allow_productivity = true,
+    hide_from_player_crafting = true,
+    energy_required = 6,
+    ingredients = {
+      {type = "fluid", name = "sp-dirty-water-with-holmium", amount = 60},
+      {type = "fluid", name = "sp-bleach", amount = 8}
+    },
+    results = {
+      {type = "item", name = "holmium-ore", probability = 0.5, amount = 1},
+      {type = "item", name = "sp-cerium", probability = 0.5, amount = 3},
+      {type = "fluid", name = "water", amount = 60}
+    },
+    crafting_machine_tint = {
+      primary = {r = 0.000, g = 0.000, b = 0.500, a = 1.000},
+      secondary = {r = 0.0, g = 0.0, b = 0.3, a = 1.000},
+      tertiary = {r = 0.0, g = 0.0, b = 0.2, a = 1.000},
+      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
+    },
+  },
+  {
+    type = "recipe",
+    name = "sp-dirty-water-filtration-antimony",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/icons/dirty-water-with-antimony.png",
+    icon_size = 64,
+    mip_maps = 4,
+    category = "sp-kr-fluid-filtration",
+    subgroup = "sp-dirty-fluid-filtration",
+    enabled = false,
+    allow_productivity = true,
+    hide_from_player_crafting = true,
+    energy_required = 5,
+    ingredients = {
+      {type = "fluid", name = "sp-dirty-water-with-antimony", amount = 50},
+      {type = "fluid", name = "sp-bleach", amount = 5}
+    },
+    results = {
+      {type = "item", name = "sp-stibnite", amount = 1},
+      {type = "item", name = "sp-cerium", amount = 1},
+      {type = "fluid", name = "water", amount = 50}
+    },
+    crafting_machine_tint = {
+      primary = {r = 0.000, g = 0.000, b = 0.500, a = 1.000},
+      secondary = {r = 0.0, g = 0.0, b = 0.3, a = 1.000},
+      tertiary = {r = 0.0, g = 0.0, b = 0.2, a = 1.000},
+      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
+    },
+  },
+  {
+    type = "recipe",
     name = "sp-iodine-sludge",  -- #ForRegEx# - recipe
     category = "sp-kr-fluid-filtration",
     enabled = false,
@@ -3884,6 +4119,48 @@ data:extend({
     results = {
       {type = "item", name = "sp-sand", probability = 0.92, amount = 3},
       {type = "item", name = "sp-tellurium-hydroxide", probability = 0.08, amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-holmium-solution-from-crushed-holmium",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__space-age__/graphics/icons/fluid/holmium-solution.png", 64,
+                                         "__Spaghetorio__/graphics/icons/crushed-holmium-ore-1.png", 64),
+    icon_size = 64,
+    mip_maps = 4,
+    category = "sp-crushing-washing",
+    subgroup = "sp-solution",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 12,
+    ingredients = {
+      {type = "item", name = "sp-crushed-holmium-ore", amount = 2},
+      {type = "item", name = "sp-sand", amount = 3},
+      {type = "fluid", name = "water", amount = 12},
+    },
+    results = {
+      {type = "fluid", name = "holmium-solution", amount = 125}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-holmium-solution-from-enriched-holmium",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__space-age__/graphics/icons/fluid/holmium-solution.png", 64,
+                                         "__Spaghetorio__/graphics/icons/enriched-holmium-1.png", 64),
+    icon_size = 64,
+    mip_maps = 4,
+    category = "sp-crushing-washing",
+    subgroup = "sp-solution",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 20,
+    ingredients = {
+      {type = "item", name = "sp-enriched-holmium", amount = 3},
+      {type = "item", name = "sp-sand", amount = 4},
+      {type = "fluid", name = "water", amount = 20},
+    },
+    results = {
+      {type = "fluid", name = "holmium-solution", amount = 200}
     }
   },
   {
@@ -8086,7 +8363,8 @@ data:extend({
     results = {
       {type = "item", name = "carbon", probability = 0.5, amount = 1},
       {type = "item", name = "sp-coke", probability = 0.5, amount = 4}
-    }
+    },
+    order = "z-crushing-coal"
   },
   {
     type = "recipe",
@@ -8103,7 +8381,8 @@ data:extend({
     },
     results = {
       {type = "item", name = "carbon",  amount = 3}
-    }
+    },
+    order = "z-crushing-coke"
   },
   {
     type = "recipe",
@@ -8448,6 +8727,49 @@ data:extend({
     results = {
       {type = "item", name = "sp-imersite-powder", amount = 2},
       {type = "item", name = "sp-sand", amount = 3}
+    }
+  },
+  ------------------------------------------------------------------------------
+  -- MARK: sp-heavy-crushing
+  ------------------------------------------------------------------------------
+  {
+    type = "recipe",
+    name = "sp-crushing-holmium-ore",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/crushing/crushing-holmium-ore.png",
+    icon_size = 256,
+    mip_maps = 4,
+    category = "sp-heavy-crushing",
+    subgroup = "sp-crushed-resource-recipe",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 6,
+    ingredients = {
+      {type = "item", name = "holmium-ore", amount = 3},
+    },
+    results = {
+      {type = "item", name = "sp-sand", amount = 1},
+      {type = "item", name = "sp-crushed-holmium-ore", amount = 3},
+      {type = "item", name = "sp-cerium", amount = 1}
+    }
+  }, 
+  {
+    type = "recipe",
+    name = "sp-crushing-stibnite",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/crushing/crushing-holmium-ore.png",
+    icon_size = 256,
+    mip_maps = 4,
+    category = "sp-heavy-crushing",
+    subgroup = "sp-crushed-resource-recipe",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 8,
+    ingredients = {
+      {type = "item", name = "sp-stibnite", amount = 5},
+    },
+    results = {
+      {type = "item", name = "sp-sand", amount = 2},
+      {type = "item", name = "sp-crushed-stibnite", amount = 5},
+      {type = "item", name = "sp-cerium", probability = 0.75, amount = 1}
     }
   },
   ------------------------------------------------------------------------------

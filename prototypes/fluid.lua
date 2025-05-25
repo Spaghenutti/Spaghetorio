@@ -82,6 +82,19 @@ data:extend({
   },
   {
     type = "fluid",
+    name = "sp-molten-potassium",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    base_color = {r=0.4, g=0.1, b=0.0},
+    flow_color = {r=0.4, g=0.1, b=0.0},
+    icon = "__Spaghetorio__/graphics/icons/molten-potassium.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-molten-metal",
+    order = "a[fluid]-f[molten-potassium]"
+  },
+  {
+    type = "fluid",
     name = "sp-molten-tin",  -- #ForRegEx# - fluid
     default_temperature = 25,
     heat_capacity = "0.1kJ",
@@ -492,6 +505,32 @@ data:extend({
     icon_mipmaps = 4,
     subgroup = "sp-dirty-fluid",
     order = "a[fluid]-f[dirty-water-with-zinc]"
+  },
+  {
+    type = "fluid",
+    name = "sp-dirty-water-with-holmium",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    base_color = {r=0.15, g=0.15, b=0.5},
+    flow_color = {r=0.15, g=0.15, b=0.5},
+    icon = "__Spaghetorio__/graphics/icons/dirty-water-with-holmium.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-dirty-fluid",
+    order = "a[fluid]-f[dirty-water-with-holmium]"
+  },
+  {
+    type = "fluid",
+    name = "sp-dirty-water-with-antimony",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    base_color = {r=0.15, g=0.15, b=0.5},
+    flow_color = {r=0.15, g=0.15, b=0.5},
+    icon = "__Spaghetorio__/graphics/icons/dirty-water-with-antimony.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-dirty-fluid",
+    order = "a[fluid]-f[dirty-water-with-antimony]"
   },
   ------------------------------------------------------------------------------
   -- MARK: fluid

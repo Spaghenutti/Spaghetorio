@@ -1390,6 +1390,51 @@ data:extend({
   },
   {
     type = "technology",
+    name = "sp-cerium-processing",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghetorio__/graphics/hr-icons/cerium.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-crushing-stibnite"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-crushing-holmium-ore"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-holmium-solution-from-crushed-holmium"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-antimony-oxide-from-crushed-stibnite"
+      }
+    },
+    prerequisites = {
+      "sp-material-science-pack-2",
+      "sp-big-crusher"
+    },
+    unit =
+    {
+      count = 350,
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-electronic-science-pack-1", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"production-science-pack", 1},
+        {"metallurgic-science-pack", 1},
+        {"electromagnetic-science-pack", 1}
+      },
+      time = 30
+    },
+  },
+  {
+    type = "technology",
     name = "sp-noble-metals",  -- #ForRegEx# - technology
     icon_size = 256,
     icons = util.icon.combine_five_icons("__Spaghetorio__/graphics/hr-icons/silver.png", 256, nil,
@@ -2426,6 +2471,7 @@ data:extend({
     },
     prerequisites = {
       "sp-noble-metals",
+      "sp-cerium-processing",
       "sp-tellurium-processing",
       "sp-gallium-processing",
       "sp-polyvinyl-fluoride"
@@ -3729,6 +3775,41 @@ data:extend({
         type = "unlock-recipe",
         recipe = "sp-dirty-water-filtration-zinc",
       },
+      -- holmium
+      {
+        type = "unlock-recipe",
+        recipe = "sp-enriched-holmium"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-enriched-holmium-from-crushed-resource"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-holmium-solution-from-enriched-holmium"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-dirty-water-filtration-holmium"
+      },
+      -- stibnite
+      {
+        type = "unlock-recipe",
+        recipe = "sp-enriched-stibnite"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-enriched-stibnite-from-crushed-resource"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-antimony-oxide-from-enriched-stibnite"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-dirty-water-filtration-antimony"
+      },
+
       -- casting
       {
         type = "unlock-recipe",

@@ -88,6 +88,7 @@ data:extend({
     },
     crafting_categories = {
       "crushing",
+      "sp-heavy-crushing",
       "sp-crushing-washing",
       "sp-kr-void-crushing"
     },

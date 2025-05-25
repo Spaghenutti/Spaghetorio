@@ -762,6 +762,38 @@ data:extend({
     order = "[crushed-zinc-ore]",
     stack_size = 200
   },
+  {
+    type = "item",
+    name = "sp-crushed-holmium-ore",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/crushed-holmium-ore-1.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    pictures = {
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-holmium-ore-1.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-holmium-ore-2.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-holmium-ore-3.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-holmium-ore-4.png", scale = 0.5, mipmap_count = 4}
+    },
+    subgroup = "sp-crushed-resource",
+    order = "[crushed-holmium-ore]",
+    stack_size = 200
+  },
+  {
+    type = "item",
+    name = "sp-crushed-stibnite",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/crushed-stibnite-1.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    pictures = {
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-stibnite-1.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-stibnite-2.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-stibnite-3.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-stibnite-4.png", scale = 0.5, mipmap_count = 4}
+    },
+    subgroup = "sp-crushed-resource",
+    order = "[crushed-stibnite]",
+    stack_size = 200
+  },
   ------------------------------------------------------------------------------
   -- MARK: enriched-resource
   ------------------------------------------------------------------------------
@@ -936,6 +968,38 @@ data:extend({
     },
     subgroup = "sp-enriched-resource",
     order = "[enriched-tinstone]",
+    stack_size = 200
+  },
+  {
+    type = "item",
+    name = "sp-enriched-holmium",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/enriched-holmium-1.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    pictures = {
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-holmium-1.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-holmium-2.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-holmium-3.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-holmium-4.png", scale = 0.5, mipmap_count = 4}
+    },
+    subgroup = "sp-enriched-resource",
+    order = "[enriched-holmium]",
+    stack_size = 200
+  },
+  {
+    type = "item",
+    name = "sp-enriched-stibnite",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/enriched-stibnite-1.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    pictures = {
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-stibnite-1.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-stibnite-2.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-stibnite-3.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-stibnite-4.png", scale = 0.5, mipmap_count = 4}
+    },
+    subgroup = "sp-enriched-resource",
+    order = "[enriched-stibnite]",
     stack_size = 200
   },
   ------------------------------------------------------------------------------

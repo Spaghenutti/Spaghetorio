@@ -114,7 +114,7 @@ util.recipe.change_recipe_ingredients("supercapacitor",
   },
   5)
 
-data.raw.recipe["lithium"].category = "sp-advanced-chemistry"
+data.raw.recipe["lithium"].category = "sp-chemical-staging"
 util.recipe.change_recipe_ingredients("lithium",
   {
     {type = "item", name = "sp-lithium-chloride", amount = 2},

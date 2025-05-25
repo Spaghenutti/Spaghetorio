@@ -44,6 +44,10 @@ data:extend({
   },
   {
     type = "recipe-category",
+    name = "sp-heavy-crushing",  -- #ForRegEx# - recipe-category
+  },
+  {
+    type = "recipe-category",
     name = "sp-crushing-washing",  -- #ForRegEx# - recipe-category
   },
   {

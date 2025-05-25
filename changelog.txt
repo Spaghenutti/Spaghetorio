@@ -1,8 +1,14 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.17
 Date: 2025-05-30
+  Features:
+    - Added potassium casting
+    - Added crushed and enriched stibnite
+    - Added crushed and enriched holmium
   Changes:
+    - Changed some holmium related recipes
     - Some changes in tech tree
+    - Some recipes when enriching from crushed recoures yielded a small amount of an other ore. Now that ore is always in its crushed form.
   Bugfixes:
     - Fixed some technology requirements for AAI Containers
     - Fixed some technology icons
