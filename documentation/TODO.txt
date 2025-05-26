@@ -13,9 +13,8 @@ TODO for 0.3.17
     + Crushing and Enriching
       + stibnite
       + holmium -> to get more cerium     
-  - Changed some holmium related recipes
+  + Changed some holmium related recipes
   - Clean up code for buildings
-  - Add filter to many recipes
   + Fix AAI storhouse science ingredients
 
 TODO for 0.3.18

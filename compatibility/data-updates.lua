@@ -117,7 +117,7 @@ data.raw.technology["recycling"].unit = {
 
 -- MARK: Overwrite technology change by Everything on nauvis
 data.raw.technology["holmium-processing"].prerequisites = {
-  "sp-big-crusher",
+  "sp-oxidizer",
   "sp-metallurgic-science-pack-2"
 }
 data.raw.technology["holmium-processing"].research_trigger = nil
@@ -126,9 +126,9 @@ data.raw.technology["holmium-processing"].unit = {
   ingredients = {
     {"sp-automation-science-pack-2", 1},
     {"sp-logistic-science-pack-2", 1},
+    {"sp-chemical-science-pack-2", 1},
     {"sp-electronic-science-pack-1", 1},
     {"sp-material-science-pack-2", 1},
-    {"sp-chemical-science-pack-2", 1},
     {"sp-geological-science-pack-2", 1},
     {"production-science-pack", 1},
     {"sp-metallurgic-science-pack-2", 1},

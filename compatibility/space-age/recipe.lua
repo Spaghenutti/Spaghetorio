@@ -269,6 +269,20 @@ util.recipe.change_recipe_ingredients("casting-copper-cable",
   0.4)
 
 --------------------------------------------------------------------------------
+-- MARK: Oxidizing
+--------------------------------------------------------------------------------
+
+data.raw.recipe["casting-copper-cable"].category = "sp-oxidizing"
+util.recipe.change_recipe_ingredients("holmium-solution",
+  {
+    {type = "item", name = "holmium-ore", amount = 5},
+    {type = "item", name = "calcite", amount = 1},
+    {type = "fluid", name = "sp-aqueous-niobium", amount = 100},
+    {type = "fluid", name = "sp-oxygen", amount = 10},
+  },
+  10)
+
+--------------------------------------------------------------------------------
 -- MARK: Combat
 --------------------------------------------------------------------------------
 

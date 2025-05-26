@@ -4126,48 +4126,6 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-holmium-solution-from-crushed-holmium",  -- #ForRegEx# - recipe
-    icons = util.icon.overlay_small_icon("__space-age__/graphics/icons/fluid/holmium-solution.png", 64,
-                                         "__Spaghetorio__/graphics/icons/crushed-holmium-ore-1.png", 64),
-    icon_size = 64,
-    mip_maps = 4,
-    category = "sp-crushing-washing",
-    subgroup = "sp-solution",
-    enabled = false,
-    allow_productivity = true,
-    energy_required = 12,
-    ingredients = {
-      {type = "item", name = "sp-crushed-holmium-ore", amount = 2},
-      {type = "item", name = "sp-sand", amount = 3},
-      {type = "fluid", name = "water", amount = 12},
-    },
-    results = {
-      {type = "fluid", name = "holmium-solution", amount = 125}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-holmium-solution-from-enriched-holmium",  -- #ForRegEx# - recipe
-    icons = util.icon.overlay_small_icon("__space-age__/graphics/icons/fluid/holmium-solution.png", 64,
-                                         "__Spaghetorio__/graphics/icons/enriched-holmium-1.png", 64),
-    icon_size = 64,
-    mip_maps = 4,
-    category = "sp-crushing-washing",
-    subgroup = "sp-solution",
-    enabled = false,
-    allow_productivity = true,
-    energy_required = 20,
-    ingredients = {
-      {type = "item", name = "sp-enriched-holmium", amount = 3},
-      {type = "item", name = "sp-sand", amount = 4},
-      {type = "fluid", name = "water", amount = 20},
-    },
-    results = {
-      {type = "fluid", name = "holmium-solution", amount = 200}
-    }
-  },
-  {
-    type = "recipe",
     name = "sp-nuclear-waste-processing",  -- #ForRegEx# - recipe
     icons = util.icon.create_nuclear_recipe_icon(data.raw.item["sp-nuclear-waste"], data.raw.item["uranium-238"]),
     icon_size = 64,
@@ -7245,6 +7203,50 @@ data:extend({
     results = {
       {type = "item", name = "sp-plutonium-oxide", amount = 1}
     },
+  },
+  {
+    type = "recipe",
+    name = "sp-holmium-solution-from-crushed-holmium",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__space-age__/graphics/icons/fluid/holmium-solution.png", 64,
+                                         "__Spaghetorio__/graphics/icons/crushed-holmium-ore-1.png", 64),
+    icon_size = 64,
+    mip_maps = 4,
+    category = "sp-oxidizing",
+    subgroup = "sp-solution",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 12,
+    ingredients = {
+      {type = "item", name = "sp-crushed-holmium-ore", amount = 5},
+      {type = "item", name = "calcite", amount = 1},
+      {type = "fluid", name = "sp-aqueous-niobium", amount = 125},
+      {type = "fluid", name = "sp-oxygen", amount = 12},
+    },
+    results = {
+      {type = "fluid", name = "holmium-solution", amount = 125}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-holmium-solution-from-enriched-holmium",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__space-age__/graphics/icons/fluid/holmium-solution.png", 64,
+                                         "__Spaghetorio__/graphics/icons/enriched-holmium-1.png", 64),
+    icon_size = 64,
+    mip_maps = 4,
+    category = "sp-oxidizing",
+    subgroup = "sp-solution",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 20,
+    ingredients = {
+      {type = "item", name = "sp-enriched-holmium", amount = 8},
+      {type = "item", name = "calcite", amount = 1},
+      {type = "fluid", name = "sp-aqueous-niobium", amount = 200},
+      {type = "fluid", name = "sp-oxygen", amount = 20},
+    },
+    results = {
+      {type = "fluid", name = "holmium-solution", amount = 200}
+    }
   },
   ------------------------------------------------------------------------------
   -- MARK: electronics

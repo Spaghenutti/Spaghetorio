@@ -6,6 +6,7 @@ Date: 2025-05-30
     - Added crushed and enriched stibnite
     - Added crushed and enriched holmium
   Changes:
+    - Changed holmium processing recipes
     - Smelting many metals is now not possible any more in crystallizer
     - Changed order of some icons
     - Some changes in tech tree
