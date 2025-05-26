@@ -272,7 +272,7 @@ util.recipe.change_recipe_ingredients("casting-copper-cable",
 -- MARK: Oxidizing
 --------------------------------------------------------------------------------
 
-data.raw.recipe["casting-copper-cable"].category = "sp-oxidizing"
+data.raw.recipe["holmium-solution"].category = "sp-oxidizing"
 util.recipe.change_recipe_ingredients("holmium-solution",
   {
     {type = "item", name = "holmium-ore", amount = 5},
