@@ -29,6 +29,9 @@ data.raw.tool["electromagnetic-science-pack"].order = "i[electromagnetic-science
 data.raw.tool["agricultural-science-pack"].order = "j[agricultural-science-pack]"
 data.raw.tool["cryogenic-science-pack"].order = "k[cryogenic-science-pack]"
 
+-- fluids
+data.raw.fluid["lava"].order = "aa-[lava]"
+
 -- recipes
 data.raw.recipe["casting-iron-gear-wheel"].order = "gear-s0-[steel-gear-wheel]"
 data.raw.recipe["casting-iron-stick"].order = "frame-[iron-stick]"
@@ -48,8 +51,32 @@ data.raw.item["ice"].subgroup = "sp-raw-resource"
 data.raw.item["carbon"].subgroup = "sp-processed-non-metal"
 data.raw.item["lithium"].subgroup = "sp-processed-metal"
 
-data.raw.fluid["molten-copper"].subgroup = "sp-molten-metal"
-data.raw.fluid["molten-iron"].subgroup = "sp-molten-metal"
+data.raw.fluid["lava"].subgroup = "sp-liquid-metal"
+data.raw.fluid["molten-copper"].subgroup = "sp-liquid-metal"
+data.raw.fluid["molten-iron"].subgroup = "sp-liquid-metal"
+
+data.raw.fluid["ammoniacal-solution"].subgroup = "sp-solution"
+data.raw.fluid["holmium-solution"].subgroup = "sp-solution"
+
+data.raw.fluid["thruster-fuel"].subgroup = "sp-aqueous-fluid"
+data.raw.fluid["thruster-oxidizer"].subgroup = "sp-aqueous-fluid"
+data.raw.fluid["electrolyte"].subgroup = "sp-aqueous-fluid"
+data.raw.fluid["fluoroketone-hot"].subgroup = "sp-aqueous-fluid"
+data.raw.fluid["fluoroketone-cold"].subgroup = "sp-aqueous-fluid"
+data.raw.fluid["lithium-brine"].subgroup = "sp-aqueous-fluid"
+
+data.raw.recipe["advanced-oil-processing"].subgroup = "sp-oil"
+data.raw.recipe["basic-oil-processing"].subgroup = "sp-oil"
+data.raw.recipe["heavy-oil-cracking"].subgroup = "sp-oil"
+data.raw.recipe["light-oil-cracking"].subgroup = "sp-oil"
+data.raw.recipe["coal-liquefaction"].subgroup = "sp-oil"
+
+data.raw.fluid["ammonia"].subgroup = "sp-inorganic-chemical"
+
+data.raw.fluid["fluorine"].subgroup = "sp-gas"
+data.raw.fluid["steam"].subgroup = "sp-gas"
+
+data.raw.fluid["fusion-plasma"].subgroup = "sp-advanced-fluid"
 
 -- group material
 data.raw.item["tungsten-plate"].subgroup = "sp-raw-material"

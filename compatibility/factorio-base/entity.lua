@@ -123,7 +123,7 @@ data.raw.fluid["heavy-oil"].subgroup = "sp-oil"
 data.raw.fluid["light-oil"].subgroup = "sp-oil"
 data.raw.fluid["lubricant"].subgroup = "sp-oil"
 
-data.raw.fluid["sulfuric-acid"].subgroup = "sp-chemical"
+data.raw.fluid["sulfuric-acid"].subgroup = "sp-inorganic-chemical"
 
 data.raw.fluid["steam"].subgroup = "sp-gas"
 

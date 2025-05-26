@@ -1,7 +1,33 @@
 data:extend({
   ------------------------------------------------------------------------------
-  -- MARK: molten-metal
+  -- MARK: liquid-metal
   ------------------------------------------------------------------------------
+  {
+    type = "fluid",
+    name = "sp-ultramafic-lava",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    fuel_value = "300kJ",
+    base_color = {r=0.05, g=0.1, b=0.5},
+    flow_color = {r=0.05, g=0.1, b=0.5},
+    icon = "__Spaghetorio__/graphics/icons/ultramafic-lava.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-liquid-metal",
+   order = "aa-[ultramafic-lava]",
+  },
+  {
+    type = "fluid",
+    name = "sp-mercury",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    base_color = {r=0.9, g=0.9, b=0.9},
+    flow_color = {r=0.9, g=0.9, b=0.9},
+    icon = "__Spaghetorio__/graphics/icons/mercury.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "sp-liquid-metal",
+    order = "b-[mercury]",
+  },
   {
     type = "fluid",
     name = "sp-molten-aluminum",  -- #ForRegEx# - fluid
@@ -12,8 +38,8 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/molten-aluminum.png",
     icon_size = 64,
     icon_mipmaps = 4,
-    subgroup = "sp-molten-metal",
-    order = "a[fluid]-f[molten-aluminum]"
+    subgroup = "sp-liquid-metal",
+    order = "[molten-aluminum]"
   },
   {
     type = "fluid",
@@ -25,8 +51,8 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/molten-gallium.png",
     icon_size = 64,
     icon_mipmaps = 4,
-    subgroup = "sp-molten-metal",
-    order = "a[fluid]-f[molten-gallium]"
+    subgroup = "sp-liquid-metal",
+    order = "[molten-gallium]"
   },
   {
     type = "fluid",
@@ -38,8 +64,8 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/molten-indium.png",
     icon_size = 64,
     icon_mipmaps = 4,
-    subgroup = "sp-molten-metal",
-    order = "a[fluid]-f[molten-indium]"
+    subgroup = "sp-liquid-metal",
+    order = "[molten-indium]"
   },
   {
     type = "fluid",
@@ -51,8 +77,8 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/molten-lead.png",
     icon_size = 64,
     icon_mipmaps = 4,
-    subgroup = "sp-molten-metal",
-    order = "a[fluid]-f[molten-lead]"
+    subgroup = "sp-liquid-metal",
+    order = "[molten-lead]"
   },
   {
     type = "fluid",
@@ -64,8 +90,8 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/molten-magnesium.png",
     icon_size = 64,
     icon_mipmaps = 4,
-    subgroup = "sp-molten-metal",
-    order = "a[fluid]-f[molten-magnesium]"
+    subgroup = "sp-liquid-metal",
+    order = "[molten-magnesium]"
   },
   {
     type = "fluid",
@@ -77,8 +103,8 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/molten-nickel.png",
     icon_size = 64,
     icon_mipmaps = 4,
-    subgroup = "sp-molten-metal",
-    order = "a[fluid]-f[molten-nickel]"
+    subgroup = "sp-liquid-metal",
+    order = "[molten-nickel]"
   },
   {
     type = "fluid",
@@ -90,8 +116,8 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/molten-potassium.png",
     icon_size = 64,
     icon_mipmaps = 4,
-    subgroup = "sp-molten-metal",
-    order = "a[fluid]-f[molten-potassium]"
+    subgroup = "sp-liquid-metal",
+    order = "[molten-potassium]"
   },
   {
     type = "fluid",
@@ -103,8 +129,8 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/molten-tin.png",
     icon_size = 64,
     icon_mipmaps = 4,
-    subgroup = "sp-molten-metal",
-    order = "a[fluid]-f[molten-tin]"
+    subgroup = "sp-liquid-metal",
+    order = "[molten-tin]"
   },
   {
     type = "fluid",
@@ -116,8 +142,8 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/molten-zinc.png",
     icon_size = 64,
     icon_mipmaps = 4,
-    subgroup = "sp-molten-metal",
-    order = "a[fluid]-f[molten-zinc]"
+    subgroup = "sp-liquid-metal",
+    order = "[molten-zinc]"
   },
   ------------------------------------------------------------------------------
   -- MARK: aqueous-fluid
@@ -234,18 +260,6 @@ data:extend({
     scale = 0.5,
     subgroup = "sp-aqueous-fluid",
     order = "[gallium-resin]",
-  },
-  {
-    type = "fluid",
-    name = "sp-mercury",  -- #ForRegEx# - fluid
-    default_temperature = 25,
-    base_color = {r=0.9, g=0.9, b=0.9},
-    flow_color = {r=0.9, g=1.0, b=0.9},
-    icon = "__Spaghetorio__/graphics/icons/mercury.png",
-    icon_size = 64,
-    scale = 0.5,
-    subgroup = "sp-aqueous-fluid",
-    order = "[mercury]",
   },
   {
     type = "fluid",
@@ -533,7 +547,7 @@ data:extend({
     order = "a[fluid]-f[dirty-water-with-antimony]"
   },
   ------------------------------------------------------------------------------
-  -- MARK: fluid
+  -- MARK: oil
   ------------------------------------------------------------------------------
   {
     type = "fluid",
@@ -546,22 +560,8 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/biocrude-oil.png",
     icon_size = 64,
     icon_mipmaps = 4,
-    subgroup = "fluid",
+    subgroup = "sp-oil",
     order = "a[fluid]-c[biological]-a[biocrude-oil]"
-  },
-  {
-    type = "fluid",
-    name = "sp-ultramafic-lava",  -- #ForRegEx# - fluid
-    default_temperature = 25,
-    heat_capacity = "0.1kJ",
-    fuel_value = "300kJ",
-    base_color = {r=0.05, g=0.1, b=0.5},
-    flow_color = {r=0.05, g=0.1, b=0.5},
-    icon = "__Spaghetorio__/graphics/icons/ultramafic-lava.png",
-    icon_size = 64,
-    icon_mipmaps = 4,
-    subgroup = "fluid",
-   order = "b[new-fluid]-b[vulcanus]-a[ultramafic-lava]",
   },
   ------------------------------------------------------------------------------
   -- MARK: gas
@@ -769,7 +769,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/krastorio/icons/fluids/chlorine.png",
     icon_size = 64,
     icon_mipmaps = 4,
-    subgroup = "sp-chemical",
+    subgroup = "sp-inorganic-chemical",
     order = "a[fluid]-f[chlorine]"
   },
   {
@@ -782,7 +782,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/krastorio/icons/fluids/nitric-acid.png",
     icon_size = 64,
     icon_mipmaps = 4,
-    subgroup = "sp-chemical",
+    subgroup = "sp-inorganic-chemical",
     order = "a[fluid]-f[nitric-acid]"
   },
   {
@@ -795,7 +795,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/phosphoric-acid.png",
     icon_size = 64,
     icon_mipmaps = 4,
-    subgroup = "sp-chemical",
+    subgroup = "sp-inorganic-chemical",
     order = "a[fluid]-f[phosphoric-acid]"
   },
   {
@@ -809,7 +809,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/sulfamate.png",
     icon_size = 64,
     icon_mipmaps = 4,
-    subgroup = "sp-chemical",
+    subgroup = "sp-inorganic-chemical",
     order = "a[fluid]-f[sulfamate]"
   },
   {
@@ -822,7 +822,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/dimethyl-sulfoxide.png",
     icon_size = 64,
     icon_mipmaps = 4,
-    subgroup = "sp-chemical",
+    subgroup = "sp-inorganic-chemical",
     order = "a[fluid]-f[dimethyl-sulfoxide]"
   },
   {
@@ -835,7 +835,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/dimethyl-sulfide.png",
     icon_size = 64,
     icon_mipmaps = 4,
-    subgroup = "sp-chemical",
+    subgroup = "sp-inorganic-chemical",
     order = "a[fluid]-f[dimethyl-sulfide]"
   },
   {
@@ -848,7 +848,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/perchloric-acid.png",
     icon_size = 64,
     icon_mipmaps = 4,
-    subgroup = "sp-chemical",
+    subgroup = "sp-inorganic-chemical",
     order = "a[fluid]-f[perchloric-acid]"
   },
   {
@@ -861,7 +861,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/epoxy.png",
     icon_size = 64,
     icon_mipmaps = 4,
-    subgroup = "sp-chemical",
+    subgroup = "sp-inorganic-chemical",
     order = "a[fluid]-f[epoxy]"
   },
   {
@@ -874,7 +874,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/bleach.png",
     icon_size = 64,
     icon_mipmaps = 4,
-    subgroup = "sp-chemical",
+    subgroup = "sp-inorganic-chemical",
     order = "a[fluid]-f[bleach]"
   },
   {
@@ -887,7 +887,7 @@ data:extend({
     icon = "__base__/graphics/icons/fluid/petroleum-gas.png",
     icon_size = 64,
     icon_mipmaps = 4,
-    subgroup = "sp-chemical",
+    subgroup = "sp-inorganic-chemical",
     order = "a[fluid]-f[ethylene]"
   },
   {
@@ -900,7 +900,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/ethylene-dichloride.png",
     icon_size = 64,
     icon_mipmaps = 4,
-    subgroup = "sp-chemical",
+    subgroup = "sp-inorganic-chemical",
     order = "a[fluid]-f[ethylene-dichloride]"
   },
   {
@@ -913,7 +913,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/sodium-hydroxide.png",
     icon_size = 64,
     icon_mipmaps = 4,
-    subgroup = "sp-chemical",
+    subgroup = "sp-inorganic-chemical",
     order = "a[fluid]-f[sodium-hydroxide]"
   },
   {
@@ -926,7 +926,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/propane.png",
     icon_size = 64,
     icon_mipmaps = 4,
-    subgroup = "sp-chemical",
+    subgroup = "sp-inorganic-chemical",
     order = "a[fluid]-f[propene]"
   },
   {
@@ -939,7 +939,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/propylene.png",
     icon_size = 64,
     icon_mipmaps = 4,
-    subgroup = "sp-chemical",
+    subgroup = "sp-inorganic-chemical",
     order = "a[fluid]-f[propylene]"
   },
   {
@@ -952,7 +952,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/benzene.png",
     icon_size = 64,
     icon_mipmaps = 4,
-    subgroup = "sp-chemical",
+    subgroup = "sp-inorganic-chemical",
     order = "a[fluid]-f[benzene]"
   },
   {
@@ -965,7 +965,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/styrene.png",
     icon_size = 64,
     icon_mipmaps = 4,
-    subgroup = "sp-chemical",
+    subgroup = "sp-inorganic-chemical",
     order = "a[fluid]-f[styrene]"
   },
   {
@@ -978,7 +978,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/vinyl-chloride.png",
     icon_size = 64,
     icon_mipmaps = 4,
-    subgroup = "sp-chemical",
+    subgroup = "sp-inorganic-chemical",
     order = "a[fluid]-f[vinyl-chloride]"
   },
   {
@@ -991,7 +991,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/methyl-tert-butyl-ether.png",
     icon_size = 64,
     icon_mipmaps = 4,
-    subgroup = "sp-chemical",
+    subgroup = "sp-inorganic-chemical",
     order = "a[fluid]-f[vinyl-chloride]"
   },
   {
@@ -1005,7 +1005,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/krastorio/icons/fluids/biomethanol.png",
     icon_size = 64,
     icon_mipmaps = 4,
-    subgroup = "sp-chemical",
+    subgroup = "sp-inorganic-chemical",
     order = "a[fluid]-f[biomethanol]"
   },
   {
@@ -1018,7 +1018,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/krastorio/icons/fluids/hydrogen-chloride.png",
     icon_size = 64,
     icon_mipmaps = 4,
-    subgroup = "sp-chemical",
+    subgroup = "sp-inorganic-chemical",
     order = "a[fluid]-f[hydrogen-chloride]"
   },
   {
@@ -1032,7 +1032,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/diborane.png",
     icon_size = 64,
     icon_mipmaps = 4,
-    subgroup = "sp-chemical",
+    subgroup = "sp-inorganic-chemical",
     order = "a[fluid]-f[diborane]"
   },
   {
@@ -1045,7 +1045,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/hydrogen-cyanide.png",
     icon_size = 64,
     icon_mipmaps = 4,
-    subgroup = "sp-chemical",
+    subgroup = "sp-inorganic-chemical",
     order = "a[fluid]-f[hydrogen-cyanide]"
   },
   {
@@ -1058,7 +1058,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/hypochlorus-acid.png",
     icon_size = 64,
     icon_mipmaps = 4,
-    subgroup = "sp-chemical",
+    subgroup = "sp-inorganic-chemical",
     order = "a[fluid]-f[hypochlorus-acid]"
   },
   {
@@ -1071,7 +1071,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/allyl-chloride.png",
     icon_size = 64,
     icon_mipmaps = 4,
-    subgroup = "sp-chemical",
+    subgroup = "sp-inorganic-chemical",
     order = "a[fluid]-f[allyl-chloride]"
   },
   {
@@ -1084,7 +1084,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/epichlorohydrin.png",
     icon_size = 64,
     icon_mipmaps = 4,
-    subgroup = "sp-chemical",
+    subgroup = "sp-inorganic-chemical",
     order = "a[fluid]-f[epichlorohydrin]"
   },
   {
@@ -1098,7 +1098,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/glycerin.png",
     icon_size = 64,
     icon_mipmaps = 4,
-    subgroup = "sp-chemical",
+    subgroup = "sp-inorganic-chemical",
     order = "a[fluid]-f[glycerin]"
   },
   {
@@ -1112,7 +1112,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/acetic-acid.png",
     icon_size = 64,
     icon_mipmaps = 4,
-    subgroup = "sp-chemical",
+    subgroup = "sp-inorganic-chemical",
     order = "a[fluid]-f[acetic-acid]"
   },
   {
@@ -1125,7 +1125,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/hydrogen-fluoride.png",
     icon_size = 64,
     icon_mipmaps = 4,
-    subgroup = "sp-chemical",
+    subgroup = "sp-inorganic-chemical",
     order = "a[fluid]-f[hydrogen-fluoride]"
   },
   {
@@ -1138,7 +1138,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/vinyl-acetate.png",
     icon_size = 64,
     icon_mipmaps = 4,
-    subgroup = "sp-chemical",
+    subgroup = "sp-inorganic-chemical",
     order = "a[fluid]-f[vinyl-acetate]"
   },
   {
@@ -1151,7 +1151,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/vinyl-fluoride.png",
     icon_size = 64,
     icon_mipmaps = 4,
-    subgroup = "sp-chemical",
+    subgroup = "sp-inorganic-chemical",
     order = "a[fluid]-f[vinyl-fluoride]"
   },
   {
@@ -1165,7 +1165,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/hydrogen-peroxide.png",
     icon_size = 64,
     icon_mipmaps = 4,
-    subgroup = "sp-chemical",
+    subgroup = "sp-inorganic-chemical",
     order = "a[fluid]-f[hydrogen-peroxide]"
   },
   {
@@ -1178,7 +1178,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/peroxymonosulfuric-acid.png",
     icon_size = 64,
     icon_mipmaps = 4,
-    subgroup = "sp-chemical",
+    subgroup = "sp-inorganic-chemical",
     order = "a[fluid]-f[peroxymonosulfuric-acid]"
   },
   {
@@ -1191,7 +1191,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/aniline.png",
     icon_size = 64,
     icon_mipmaps = 4,
-    subgroup = "sp-chemical",
+    subgroup = "sp-inorganic-chemical",
     order = "a[fluid]-f[aniline]"
   },
   {
@@ -1204,7 +1204,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/benzyl-chloride.png",
     icon_size = 64,
     icon_mipmaps = 4,
-    subgroup = "sp-chemical",
+    subgroup = "sp-inorganic-chemical",
     order = "a[fluid]-f[benzyl-chloride]"
   },
   {
@@ -1217,7 +1217,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/methyl-chloride.png",
     icon_size = 64,
     icon_mipmaps = 4,
-    subgroup = "sp-chemical",
+    subgroup = "sp-inorganic-chemical",
     order = "a[fluid]-f[methyl-chloride]"
   },
   {
@@ -1230,7 +1230,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/benzyltrimethylammonium-chloride.png",
     icon_size = 64,
     icon_mipmaps = 4,
-    subgroup = "sp-chemical",
+    subgroup = "sp-inorganic-chemical",
     order = "a[fluid]-f[benzyltrimethylammonium-chloride]"
   },
   {
@@ -1243,7 +1243,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/trialkylamine.png",
     icon_size = 64,
     icon_mipmaps = 4,
-    subgroup = "sp-chemical",
+    subgroup = "sp-inorganic-chemical",
     order = "a[fluid]-f[trialkylamine]"
   },
   {
@@ -1256,7 +1256,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/toluene.png",
     icon_size = 64,
     icon_mipmaps = 4,
-    subgroup = "sp-chemical",
+    subgroup = "sp-inorganic-chemical",
     order = "a[fluid]-f[toluene]"
   },
   {
@@ -1269,7 +1269,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/hydrogen-iodide.png",
     icon_size = 64,
     icon_mipmaps = 4,
-    subgroup = "sp-chemical",
+    subgroup = "sp-inorganic-chemical",
     order = "a[fluid]-f[hydrogen-iodide]"
   },
   {
@@ -1282,7 +1282,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/iodethene.png",
     icon_size = 64,
     icon_mipmaps = 4,
-    subgroup = "sp-chemical",
+    subgroup = "sp-inorganic-chemical",
     order = "a[fluid]-f[iodethene]"
   },
   {
@@ -1295,7 +1295,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/germanium-tetrachloride.png",
     icon_size = 64,
     icon_mipmaps = 4,
-    subgroup = "sp-chemical",
+    subgroup = "sp-inorganic-chemical",
     order = "a[fluid]-f[germanium-tetrachloride]"
   },
   {
@@ -1308,7 +1308,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/glycol.png",
     icon_size = 64,
     icon_mipmaps = 4,
-    subgroup = "sp-chemical",
+    subgroup = "sp-inorganic-chemical",
     order = "a[fluid]-f[glycol]"
   },
   {
@@ -1321,7 +1321,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/fatty-acids.png",
     icon_size = 64,
     icon_mipmaps = 4,
-    subgroup = "sp-chemical",
+    subgroup = "sp-inorganic-chemical",
     order = "a[fluid]-f[fatty-acids]"
   },
   ------------------------------------------------------------------------------

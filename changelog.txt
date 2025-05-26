@@ -6,7 +6,7 @@ Date: 2025-05-30
     - Added crushed and enriched stibnite
     - Added crushed and enriched holmium
   Changes:
-    - Changed some holmium related recipes
+    - Changed order of some icons
     - Some changes in tech tree
     - Some recipes when enriching from crushed recoures yielded a small amount of an other ore. Now that ore is always in its crushed form.
   Bugfixes:

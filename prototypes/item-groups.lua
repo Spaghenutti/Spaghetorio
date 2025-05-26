@@ -404,45 +404,45 @@ data:extend({
   },
   {
     type = "item-subgroup",
-    name = "sp-molten-metal",  -- #ForRegEx# - item-subgroup
+    name = "sp-liquid-metal",  -- #ForRegEx# - item-subgroup
     group = "fluids",
     order = "a"
   },
   {
     type = "item-subgroup",
-    name = "sp-aqueous-fluid",  -- #ForRegEx# - item-subgroup
+    name = "sp-solution",  -- #ForRegEx# - item-subgroup
     group = "fluids",
     order = "b"
   },
   {
     type = "item-subgroup",
-    name = "sp-solution",  -- #ForRegEx# - item-subgroup
+    name = "sp-aqueous-fluid",  -- #ForRegEx# - item-subgroup
     group = "fluids",
     order = "c"
   },
   {
     type = "item-subgroup",
-    name = "sp-dirty-fluid",  -- #ForRegEx# - item-subgroup
+    name = "sp-oil",  -- #ForRegEx# - item-subgroup
     group = "fluids",
     order = "d"
   },
   {
     type = "item-subgroup",
-    name = "sp-dirty-fluid-filtration",  -- #ForRegEx# - item-subgroup
-    group = "fluids",
-    order = "c-b"
-  },
-  {
-    type = "item-subgroup",
-    name = "sp-oil",  -- #ForRegEx# - item-subgroup
+    name = "sp-acid",  -- #ForRegEx# - item-subgroup
     group = "fluids",
     order = "e"
   },
   {
     type = "item-subgroup",
-    name = "sp-chemical",  -- #ForRegEx# - item-subgroup
+    name = "sp-inorganic-chemical",  -- #ForRegEx# - item-subgroup
     group = "fluids",
     order = "f"
+  },
+  {
+    type = "item-subgroup",
+    name = "sp-organic-chemical",  -- #ForRegEx# - item-subgroup
+    group = "fluids",
+    order = "g"
   },
   {
     type = "item-subgroup",
@@ -452,9 +452,27 @@ data:extend({
   },
   {
     type = "item-subgroup",
-    name = "sp-alien",  -- #ForRegEx# - item-subgroup
+    name = "sp-advanced-fluid",  -- #ForRegEx# - item-subgroup
     group = "fluids",
     order = "h"
+  },
+  {
+    type = "item-subgroup",
+    name = "sp-alien",  -- #ForRegEx# - item-subgroup
+    group = "fluids",
+    order = "i"
+  },
+  {
+    type = "item-subgroup",
+    name = "sp-dirty-fluid",  -- #ForRegEx# - item-subgroup
+    group = "fluids",
+    order = "y-a"
+  },
+  {
+    type = "item-subgroup",
+    name = "sp-dirty-fluid-filtration",  -- #ForRegEx# - item-subgroup
+    group = "fluids",
+    order = "y-b"
   },
   {
     type = "item-subgroup",

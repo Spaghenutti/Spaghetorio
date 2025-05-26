@@ -13,11 +13,9 @@ TODO for 0.3.17
     + Crushing and Enriching
       + stibnite
       + holmium -> to get more cerium     
-      + Changed some holmium related recipes
-  - Reorder icons
+  - Changed some holmium related recipes
   - Clean up code for buildings
   - Add filter to many recipes
-  - Fix iodine brine spawning on start location (seed: 2806285432)
   + Fix AAI storhouse science ingredients
 
 TODO for 0.3.18
@@ -177,8 +175,10 @@ Bugs:
   - Fix icon sizes when looking on minimap
   - Add glow to tech cards
   - Add glow to alien items
+  - Fix iodine brine spawning on start location (seed: 2806285432)
 
 Low prio:
+  - Reorder icons
   - Reorder in lua code recipes, items for simpler searching
   - Add new files for changing subgroup (just like order-fixes.lua)
   - Set allow_decomposition = false for many many recipes

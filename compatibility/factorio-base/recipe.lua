@@ -21,14 +21,14 @@ util.recipe.disable_recipe("engine-unit")
 util.recipe.disable_recipe("burner-inserter")
 
 -- MARK: change recipe subgroups
-data.raw.recipe["lubricant"].subgroup = "fluid"
-data.raw.recipe["advanced-oil-processing"].subgroup = "fluid"
-data.raw.recipe["basic-oil-processing"].subgroup = "fluid"
-data.raw.recipe["heavy-oil-cracking"].subgroup = "fluid"
-data.raw.recipe["light-oil-cracking"].subgroup = "fluid"
-data.raw.recipe["coal-liquefaction"].subgroup = "fluid"
+data.raw.recipe["lubricant"].subgroup = "sp-oil"
+data.raw.recipe["advanced-oil-processing"].subgroup = "sp-oil"
+data.raw.recipe["basic-oil-processing"].subgroup = "sp-oil"
+data.raw.recipe["heavy-oil-cracking"].subgroup = "sp-oil"
+data.raw.recipe["light-oil-cracking"].subgroup = "sp-oil"
+data.raw.recipe["coal-liquefaction"].subgroup = "sp-oil"
 
-data.raw.recipe["sulfuric-acid"].subgroup = "sp-chemical"
+data.raw.recipe["sulfuric-acid"].subgroup = "sp-inorganic-chemical"
 
 data.raw.recipe["uranium-processing"].subgroup = "sp-radioactive-resource"
 data.raw.recipe["kovarex-enrichment-process"].subgroup = "sp-radioactive-resource"
