@@ -156,7 +156,7 @@ data:extend({
     collision_box = {{-1.7, -1.7}, {1.7, 1.7}},
     selection_box = {{-2, -2}, {2, 2}},
     damaged_trigger_effect = hit_effects.entity(),
-    module_slots = 2,
+    module_slots = 3,
     icon_draw_specification = {scale = 1.5, shift = {0, 0}},
     icons_positioning =
     {
@@ -164,18 +164,18 @@ data:extend({
     },
     allowed_effects = {"consumption", "speed", "productivity", "pollution", "quality"},
     crafting_categories = {
-      "smelting",
+      "sp-smelting-crystallizing",
       "sp-crystallizing",
       "sp-crystallizing-with-fluid" -- TODO: remove this once crystallizer is added
     },
-    crafting_speed = 1,
+    crafting_speed = 2.5,
     energy_source =
     {
       type = "electric",
       usage_priority = "secondary-input",
       emissions_per_minute = {pollution = 4},
     },
-    energy_usage = "400kW",
+    energy_usage = "300kW",
     perceived_performance = {minimum = 0.25, maximum = 20},
     graphics_set = graphics_set,
     open_sound = sounds.metal_large_open,

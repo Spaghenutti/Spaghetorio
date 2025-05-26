@@ -182,6 +182,11 @@ data:extend({
     name = "sp-chemical-staging",  -- #ForRegEx# - recipe-category
   },
   {
+    -- Recipes that can be put into smelters and crystallizer like glass
+    type = "recipe-category",
+    name = "sp-smelting-crystallizing",  -- #ForRegEx# - recipe-category
+  },
+  {
     type = "recipe-category",
     name = "sp-crystallizing",  -- #ForRegEx# - recipe-category
   },
@@ -267,7 +272,13 @@ data:extend({
   }
 })
 
+-- MARK: Building changes
+table.insert(data.raw["furnace"]["stone-furnace"].crafting_categories, "sp-smelting-crystallizing")
+
+table.insert(data.raw["furnace"]["steel-furnace"].crafting_categories, "sp-smelting-crystallizing")
 table.insert(data.raw["furnace"]["steel-furnace"].crafting_categories, "sp-crushed-smelting")
+
+table.insert(data.raw["furnace"]["electric-furnace"].crafting_categories, "sp-smelting-crystallizing")
 table.insert(data.raw["furnace"]["electric-furnace"].crafting_categories, "sp-crushed-smelting")
 table.insert(data.raw["furnace"]["electric-furnace"].crafting_categories, "sp-smelting-enriched-resource")
 table.insert(data.raw["furnace"]["electric-furnace"].crafting_categories, "sp-intermediate-smelting")

@@ -104,6 +104,7 @@ data:extend({
     crafting_categories = {
       "smelting",
       "sp-intermediate-smelting",
+      "sp-smelting-crystallizing",
       "sp-crushed-smelting",
       "sp-smelting-enriched-resource",
       "sp-high-temperature-smelting"

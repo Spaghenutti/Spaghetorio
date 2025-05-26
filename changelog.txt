@@ -6,6 +6,7 @@ Date: 2025-05-30
     - Added crushed and enriched stibnite
     - Added crushed and enriched holmium
   Changes:
+    - Smelting many metals is now not possible any more in crystallizer
     - Changed order of some icons
     - Some changes in tech tree
     - Some recipes when enriching from crushed recoures yielded a small amount of an other ore. Now that ore is always in its crushed form.
@@ -14,6 +15,7 @@ Date: 2025-05-30
     - Fixed some technology icons
   Balancing:
     - Belt immunity equipment is now unlocked earlier
+    - Rebalanced crystallizer
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.16
 Date: 2025-05-23

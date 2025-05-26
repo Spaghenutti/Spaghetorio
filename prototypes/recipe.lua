@@ -7,20 +7,6 @@ data:extend({
   ------------------------------------------------------------------------------
   {
     type = "recipe",
-    name = "sp-glass",  -- #ForRegEx# - recipe
-    category = "smelting",
-    enabled = false,
-    allow_productivity = true,
-    energy_required = 3.2,
-    ingredients = {
-      {type = "item", name = "sp-sand", amount = 4}
-    },
-    results = {
-      {type = "item", name = "sp-glass", amount = 1}
-    }
-  },
-  {
-    type = "recipe",
     name = "sp-silicon",  -- #ForRegEx# - recipe
     category = "smelting",
     enabled = false,
@@ -309,24 +295,6 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-glass-from-calcite",  -- #ForRegEx# - recipe
-    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/krastorio/icons/items/glass.png", 64,
-                                         "__Spaghetorio__/graphics/icons/calcium.png", 64),
-    category = "smelting",
-    enabled = false,
-    allow_productivity = true,
-    hide_from_player_crafting = true,
-    energy_required = 15,
-    ingredients = {
-      {type = "item", name = "sp-sand", amount = 14},
-      {type = "item", name = "calcite", amount = 4}
-    },
-    results = {
-      {type = "item", name = "sp-glass", amount = 10}
-    }
-  },
-  {
-    type = "recipe",
     name = "sp-cobalt-oxide",  -- #ForRegEx# - recipe
     category = "smelting",
     enabled = false,
@@ -437,6 +405,41 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-crucible", amount = 1}
+    }
+  },
+  ------------------------------------------------------------------------------
+  -- MARK: smelting-crystallizing
+  ------------------------------------------------------------------------------
+  {
+    type = "recipe",
+    name = "sp-glass",  -- #ForRegEx# - recipe
+    category = "sp-smelting-crystallizing",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 3.2,
+    ingredients = {
+      {type = "item", name = "sp-sand", amount = 4}
+    },
+    results = {
+      {type = "item", name = "sp-glass", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-glass-from-calcite",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/krastorio/icons/items/glass.png", 64,
+                                         "__Spaghetorio__/graphics/icons/calcium.png", 64),
+    category = "sp-smelting-crystallizing",
+    enabled = false,
+    allow_productivity = true,
+    hide_from_player_crafting = true,
+    energy_required = 15,
+    ingredients = {
+      {type = "item", name = "sp-sand", amount = 14},
+      {type = "item", name = "calcite", amount = 4}
+    },
+    results = {
+      {type = "item", name = "sp-glass", amount = 10}
     }
   },
   ------------------------------------------------------------------------------
