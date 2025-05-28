@@ -4,7 +4,7 @@ local sounds = require("__base__/prototypes/entity/sounds")
 data:extend({
   {
     type = "burner-generator",
-    name = "sp-kr-antimatter-reactor",
+    name = "sp-kr-antimatter-reactor",  -- #ForRegEx# - building
     icon = "__Spaghetorio__/graphics/krastorio/icons/entities/antimatter-reactor.png",
     icon_size = 128,
     icon_mipmaps = 4,

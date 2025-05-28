@@ -7,7 +7,7 @@ data:extend({
   -- MARK: Superior inserter
   {
     type = "inserter",
-    name = "sp-kr-superior-inserter",
+    name = "sp-kr-superior-inserter",  -- #ForRegEx# - building
     icon = "__Spaghetorio__/graphics/krastorio/icons/entities/inserters/superior-inserter.png",
     icon_size = 64,
     icon_mipmaps = 4,

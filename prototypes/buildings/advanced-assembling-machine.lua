@@ -39,7 +39,7 @@ end
 data:extend({
   {
     type = "assembling-machine",
-    name = "sp-kr-advanced-assembling-machine",
+    name = "sp-kr-advanced-assembling-machine",  -- #ForRegEx# - building
     icon = "__Spaghetorio__/graphics/krastorio/icons/entities/advanced-assembling-machine.png",
     icon_size = 64,
     flags = { "placeable-neutral", "placeable-player", "player-creation" },

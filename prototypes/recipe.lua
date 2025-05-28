@@ -3543,11 +3543,25 @@ data:extend({
   ------------------------------------------------------------------------------
   {
     type = "recipe",
+    name = "sp-improved-tungsten-plate-smelting",  -- #ForRegEx# - recipe
+    category = "sp-high-temperature-smelting",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 6,
+    ingredients = {
+      {type = "item", name = "sp-tungsten-powder", amount = 2},
+    },
+    results = {
+      {type = "item", name = "tungsten-plate", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
     name = "sp-tungsten-steel",  -- #ForRegEx# - recipe
     category = "sp-high-temperature-smelting",
     enabled = false,
     allow_productivity = true,
-    energy_required = 25,
+    energy_required = 60,
     ingredients = {
       {type = "item", name = "steel-plate", amount = 9},
       {type = "item", name = "tungsten-plate", amount = 3},
@@ -14576,7 +14590,7 @@ data:extend({
   --   }
   -- },
 --   -- MARK: Krastorio Buildings
--- util.recipe.change_recipe_ingredients("kr-mineral-water-pumpjack",
+-- util.recipe.change_recipe_ingredients("sp-kr-mineral-water-pumpjack",
 -- {
 --   {type = "item", name = "sp-stainless-steel", amount = 16},
 --   {type = "item", name = "sp-bronze-rod", amount = 12},

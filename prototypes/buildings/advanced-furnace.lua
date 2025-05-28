@@ -80,7 +80,7 @@ local advanced_furnace_sound = {
 data:extend({
   {
     type = "assembling-machine",
-    name = "sp-kr-advanced-furnace",
+    name = "sp-kr-advanced-furnace",  -- #ForRegEx# - building
     icon = "__Spaghetorio__/graphics/krastorio/icons/entities/advanced-furnace.png",
     icon_size = 128,
     icon_mipmaps = 4,

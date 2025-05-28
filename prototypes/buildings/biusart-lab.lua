@@ -1,7 +1,7 @@
 data:extend({
   {
     type = "lab",
-    name = "sp-biusart-lab",
+    name = "sp-biusart-lab",  -- #ForRegEx# - building
     icon = "__Spaghetorio__/graphics/krastorio/icons/entities/biusart-lab.png",
     icon_size = 64,
     icon_mipmaps = 4,

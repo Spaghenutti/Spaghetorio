@@ -122,6 +122,7 @@ Technologies:
 Buildings:
   - Add krastorio turbine as water turbine
   - Change lightning collectors to power poles
+  - Add wire connections to buildings
 
 Map generation:
   - Get random seeds from nauvis vegetation

@@ -138,7 +138,7 @@ local working_sound = {
 data:extend({
  {
     type = "assembling-machine",
-    name = "sp-alloy-forge",
+    name = "sp-alloy-forge",  -- #ForRegEx# - building
     icon = "__Spaghetorio__/graphics/icons/alloy-forge.png",
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 2, result = "sp-alloy-forge"},

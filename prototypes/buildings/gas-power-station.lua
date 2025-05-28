@@ -123,7 +123,7 @@ local working_sound = {
 data:extend({
  {
     type = "generator",
-    name = "sp-gas-power-station",
+    name = "sp-gas-power-station",  -- #ForRegEx# - building
     icon = "__Spaghetorio__/graphics/icons/thermal-plant.png",
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 1, result = "sp-gas-power-station"},

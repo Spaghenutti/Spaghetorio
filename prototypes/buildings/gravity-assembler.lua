@@ -95,7 +95,7 @@ local working_sound = {
 data:extend({
  {
     type = "assembling-machine",
-    name = "sp-gravity-assembler",
+    name = "sp-gravity-assembler",  -- #ForRegEx# - building
     icon = "__Spaghetorio__/graphics/icons/gravity-assembler.png",
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 2, result = "sp-gravity-assembler"},

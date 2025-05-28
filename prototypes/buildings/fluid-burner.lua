@@ -3,7 +3,7 @@ local sounds = require("__base__/prototypes/entity/sounds")
 data:extend({
   {
     type = "furnace",
-    name = "sp-kr-fluid-burner",
+    name = "sp-kr-fluid-burner",  -- #ForRegEx# - building
     icon = "__Spaghetorio__/graphics/krastorio/icons/entities/fluid-burner.png",
     icon_size = 64,
     icon_mipmaps = 4,

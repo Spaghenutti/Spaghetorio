@@ -5,7 +5,7 @@ local sounds = require("__base__/prototypes/entity/sounds")
 data:extend({
   {
     type = "assembling-machine",
-    name = "sp-kr-matter-plant",
+    name = "sp-kr-matter-plant",  -- #ForRegEx# - building
     icon = "__Spaghetorio__/graphics/krastorio/icons/entities/matter-plant.png",
     icon_size = 128,
     icon_mipmaps = 4,

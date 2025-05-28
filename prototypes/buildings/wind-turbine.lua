@@ -21,7 +21,7 @@ local wind_turbine_persistent_sound = {
 data:extend({
   {
     type = "electric-energy-interface",
-    name = "sp-kr-wind-turbine",
+    name = "sp-kr-wind-turbine",  -- #ForRegEx# - building
     icon = "__Spaghetorio__/graphics/krastorio/icons/entities/wind-turbine.png",
     icon_size = 64,
     icon_mipmaps = 4,

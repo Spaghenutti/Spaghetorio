@@ -76,7 +76,7 @@ local working_sound = {
 data:extend({
  {
     type = "assembling-machine",
-    name = "sp-arc-furnace",
+    name = "sp-arc-furnace",  -- #ForRegEx# - building
     icon = "__Spaghetorio__/graphics/icons/arc-furnace.png",
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "sp-arc-furnace"},
@@ -102,11 +102,6 @@ data:extend({
     },
     allowed_effects = {"consumption", "speed", "productivity", "pollution", "quality"},
     crafting_categories = {
-      "smelting",
-      "sp-intermediate-smelting",
-      "sp-smelting-crystallizing",
-      "sp-crushed-smelting",
-      "sp-smelting-enriched-resource",
       "sp-high-temperature-smelting"
     },
     crafting_speed = 1,

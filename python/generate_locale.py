@@ -2,6 +2,7 @@
 
 import configparser
 import re
+import os
 
 from typing import List, Tuple
 import constants
@@ -194,17 +195,14 @@ def update_locale() -> None:
     Parses all lua files and add the locale keys and values into locale file if
     they do not exist
     """
-    extend_locale(parse_lua(constants.AUTOPLACE_CONTROL_PATH))
-    extend_locale(parse_lua(constants.CATEGORY_PATH))
-    extend_locale(parse_lua(constants.FLUID_PATH))
-    extend_locale(parse_lua(constants.ITEM_GROUPS_PATH))
-    extend_locale(parse_lua(constants.ITEMS_PATH))
-    extend_locale(parse_lua(constants.PLANTS_PATH))
-    extend_locale(parse_lua(constants.RECIPES_PATH))
-    # extend_locale(parse_lua(constants.RESOURCES_PATH))  # needs to be done manually since the resources do not start with sp- or sp-kr-
-    extend_locale(parse_lua(constants.ROCKET_SILO_PATH))
-    extend_locale(parse_lua(constants.TECHNOLOGIES_PATH))
-    extend_locale(parse_lua(constants.TILE_PATH))
+    spaghetorio_path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+    for root, dirs, files in os.walk(spaghetorio_path):
+        for file in files:
+            absolute_path = os.path.join(root, file)
+            # skip resource.lua since it contains names without sp- prefix
+            if absolute_path.endswith(".lua") and (not absolute_path.endswith("Spaghetorio\\prototypes\\resource\\resource.lua")):
+                extend_locale(parse_lua(absolute_path))
 
 
 if __name__ == "__main__":

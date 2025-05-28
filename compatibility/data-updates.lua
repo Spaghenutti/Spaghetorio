@@ -22,13 +22,6 @@ for key, value in pairs(data.raw.furnace) do
   end
 end
 
--- remove_prototypes.remove_one_prototype("recipe", "bioplastics")
--- remove_prototypes.remove_one_prototype("recipe", "rocket-fuel-from-jelly")
--- remove_prototypes.remove_one_prototype("recipe", "biosulfur")
--- remove_prototypes.remove_one_prototype("recipe", "biolubricant")
-
--- remove_prototypes.remove_one_prototype("technology", "bioflux-processing")
-
 data.raw.technology["agriculture"].effects =
 {
   {
@@ -36,7 +29,6 @@ data.raw.technology["agriculture"].effects =
     recipe = "agricultural-tower"
   }
 }
--- table.insert(data.raw.technology["agriculture"].prerequisites, "sp-compressor")
 table.insert(data.raw.technology["agriculture"].prerequisites, "sp-herbarium")
 table.insert(data.raw.technology["agriculture"].prerequisites, "sp-aluminum-alloys")
 data.raw.technology["agriculture"].research_trigger = nil

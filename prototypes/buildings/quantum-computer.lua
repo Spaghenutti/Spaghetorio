@@ -37,7 +37,7 @@ end
 data:extend({
   {
     type = "assembling-machine",
-    name = "sp-kr-quantum-computer",
+    name = "sp-kr-quantum-computer",  -- #ForRegEx# - building
     icon = "__Spaghetorio__/graphics/krastorio/icons/entities/quantum-computer.png",
     icon_size = 64,
     icon_mipmaps = 4,

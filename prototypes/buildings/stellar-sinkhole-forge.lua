@@ -209,7 +209,7 @@ end
 data:extend({
   {
     type = "assembling-machine",
-    name = "sp-kr-stellar-sinkhole-forge",
+    name = "sp-kr-stellar-sinkhole-forge",  -- #ForRegEx# - building
     icon = "__Spaghetorio__/graphics/krastorio/icons/entities/intergalactic-transceiver.png",
     icon_size = 64,
     icon_mipmaps = 4,

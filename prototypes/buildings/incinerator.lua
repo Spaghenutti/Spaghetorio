@@ -108,7 +108,8 @@ local working_sound = {
 data:extend({
   {
     type = "assembling-machine",
-    name = "sp-incinerator",    icon = "__Spaghetorio__/graphics/krastorio/icons/entities/gas-power-station.png",
+    name = "sp-incinerator",  -- #ForRegEx# - building
+    icon = "__Spaghetorio__/graphics/krastorio/icons/entities/gas-power-station.png",
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 1, result = "sp-incinerator"},
     fast_replaceable_group = "sp-incinerator",

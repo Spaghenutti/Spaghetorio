@@ -15,7 +15,7 @@ local bio_lab_working_sound = {
 data:extend({
   {
     type = "assembling-machine",
-    name = "sp-kr-genetics-facility",
+    name = "sp-kr-genetics-facility",  -- #ForRegEx# - building
     icon_size = 64,
     icon_mipmaps = 4,
     icon = "__Spaghetorio__/graphics/krastorio/icons/entities/bio-lab.png",

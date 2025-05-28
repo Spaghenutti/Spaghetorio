@@ -22,7 +22,7 @@ circuit_connector_definitions["sp-kr-quarry-drill"] = circuit_connector_definiti
 data:extend({
   {
     type = "mining-drill",
-    name = "sp-kr-quarry-drill",
+    name = "sp-kr-quarry-drill",  -- #ForRegEx# - building
     icon = "__Spaghetorio__/graphics/krastorio/icons/entities/quarry-drill.png",
     icon_size = 64,
     icon_mipmaps = 4,

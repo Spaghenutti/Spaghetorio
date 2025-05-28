@@ -116,7 +116,7 @@ local working_sound = {
 data:extend({
  {
     type = "assembling-machine",
-    name = "sp-chemical-stager",
+    name = "sp-chemical-stager",  -- #ForRegEx# - building
     icon = "__Spaghetorio__/graphics/icons/chemical-stager.png",
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "sp-chemical-stager"},

@@ -61,11 +61,21 @@ data.raw.recipe["tungsten-carbide"].results = {
   {type = "item", name = "tungsten-carbide", amount = 3}
 }
 
+-- For locale parser
+-- name = "sp-tungsten-plate",  -- #ForRegEx# - recipe
+data.raw.recipe["tungsten-plate"].icon = data.raw.item["tungsten-plate"].icon
+data.raw.recipe["tungsten-plate"].category = "sp-tungsten-plate-smelting"
+data.raw.recipe["tungsten-plate"].allow_productivity = false
+data.raw.recipe["tungsten-plate"].localised_name = {"recipe-name.sp-tungsten-plate"}
 util.recipe.change_recipe_ingredients("tungsten-plate",
   {
-    {type = "item", name = "sp-tungsten-powder", amount = 2},
+    {type = "item", name = "sp-tungsten-powder", amount = 5},
   },
-  4)
+  10)
+data.raw.recipe["tungsten-plate"].results = {
+  {type = "item", name = "tungsten-plate", probability = 0.8, amount = 1},
+  {type = "item", name = "sp-tungsten-powder", probability = 0.8, amount = 2}
+}
 
 data.raw.recipe["holmium-solution"].category = "sp-crushing-washing"
 

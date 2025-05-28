@@ -8833,6 +8833,10 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "sp-plasmacutter",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-improved-tungsten-plate-smelting",
       }
     },
     prerequisites = {

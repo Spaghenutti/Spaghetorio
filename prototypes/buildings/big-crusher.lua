@@ -2,7 +2,7 @@
 data:extend({
   {
     type = "assembling-machine",
-    name = "sp-kr-big-crusher",
+    name = "sp-kr-big-crusher",  -- #ForRegEx# - building
     icon_size = 64,
     icon_mipmaps = 4,
     icon = "__Spaghetorio__/graphics/krastorio/icons/entities/crusher.png",

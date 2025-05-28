@@ -96,7 +96,7 @@ local working_sound = {
 
 data:extend({
  {
-    type = "assembling-machine",
+    type = "assembling-machine",  -- #ForRegEx# - building
     name = "sp-freezer",
     icon = "__Spaghetorio__/graphics/icons/freezer.png",
     flags = {"placeable-neutral", "player-creation"},

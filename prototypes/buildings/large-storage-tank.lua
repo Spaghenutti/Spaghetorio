@@ -2,7 +2,7 @@
 data:extend({
   {
     type = "storage-tank",
-    name = "sp-large-storage-tank",
+    name = "sp-large-storage-tank",  -- #ForRegEx# - building
     icon = "__Spaghetorio__/graphics/krastorio/icons/entities/fluid-storages/fluid-storage-2.png",
     icon_size = 64,
     icon_mipmaps = 4,

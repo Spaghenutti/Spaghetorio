@@ -116,7 +116,7 @@ local working_sound = {
 data:extend({
  {
     type = "assembling-machine",
-    name = "sp-cyclotron",
+    name = "sp-cyclotron",  -- #ForRegEx# - building
     icon = "__Spaghetorio__/graphics/icons/cyclotron.png",
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "sp-cyclotron"},

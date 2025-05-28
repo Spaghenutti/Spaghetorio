@@ -95,7 +95,7 @@ circuit_connector_definitions["sp-core-extractor"] = circuit_connector_definitio
 data:extend({
   {
     type = "mining-drill",
-    name = "sp-core-extractor",
+    name = "sp-core-extractor",  -- #ForRegEx# - building
     icon = "__Spaghetorio__/graphics/icons/core-extractor.png",
     icon_size = 64,
     icon_mipmaps = 4,

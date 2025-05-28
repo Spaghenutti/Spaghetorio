@@ -138,7 +138,7 @@ local working_sound = {
 data:extend({
  {
     type = "assembling-machine",
-    name = "sp-crystallizer",
+    name = "sp-crystallizer",  -- #ForRegEx# - building
     icon = "__Spaghetorio__/graphics/icons/crystallizer.png",
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 2, result = "sp-crystallizer"},

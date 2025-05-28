@@ -152,7 +152,7 @@ local working_sound = {
 data:extend({
  {
     type = "assembling-machine",
-    name = "sp-pathogen-lab",
+    name = "sp-pathogen-lab",  -- #ForRegEx# - building
     icon = "__Spaghetorio__/graphics/icons/pathogen-lab.png",
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "sp-pathogen-lab"},

@@ -10,7 +10,7 @@ local empty_sprite = {
 data:extend({
   {
     type = "roboport",
-    name = "sp-kr-small-roboport",
+    name = "sp-kr-small-roboport",  -- #ForRegEx# - building
     icon = "__Spaghetorio__/graphics/krastorio/icons/entities/small-roboport.png",
     icon_size = 64,
     icon_mipmaps = 4,

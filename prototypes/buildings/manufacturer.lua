@@ -95,7 +95,7 @@ local working_sound = {
 data:extend({
  {
     type = "assembling-machine",
-    name = "sp-manufacturer",
+    name = "sp-manufacturer",  -- #ForRegEx# - building
     icon = "__Spaghetorio__/graphics/icons/manufacturer.png",
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 1.5, result = "sp-manufacturer"},

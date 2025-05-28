@@ -98,7 +98,7 @@ local working_sound = {
 data:extend({
  {
     type = "assembling-machine",
-    name = "sp-induction-hardening-facility",
+    name = "sp-induction-hardening-facility",  -- #ForRegEx# - building
     icon = "__Spaghetorio__/graphics/icons/induction-hardening-facility.png",
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 1.5, result = "sp-induction-hardening-facility"},

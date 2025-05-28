@@ -115,7 +115,7 @@ local working_sound = {
 data:extend({
  {
     type = "assembling-machine",
-    name = "sp-oxidizer",
+    name = "sp-oxidizer",  -- #ForRegEx# - building
     icon = "__Spaghetorio__/graphics/icons/oxidizer.png",
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 1, result = "sp-oxidizer"},

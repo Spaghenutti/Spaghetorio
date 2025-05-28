@@ -155,6 +155,10 @@ data:extend({
   },
   {
     type = "recipe-category",
+    name = "sp-tungsten-plate-smelting",  -- #ForRegEx# - recipe-category
+  },
+  {
+    type = "recipe-category",
     name = "sp-high-temperature-smelting",  -- #ForRegEx# - recipe-category
   },
   {
@@ -282,5 +286,6 @@ table.insert(data.raw["furnace"]["electric-furnace"].crafting_categories, "sp-sm
 table.insert(data.raw["furnace"]["electric-furnace"].crafting_categories, "sp-crushed-smelting")
 table.insert(data.raw["furnace"]["electric-furnace"].crafting_categories, "sp-smelting-enriched-resource")
 table.insert(data.raw["furnace"]["electric-furnace"].crafting_categories, "sp-intermediate-smelting")
+table.insert(data.raw["furnace"]["electric-furnace"].crafting_categories, "sp-tungsten-plate-smelting")
 
 table.insert(data.raw["assembling-machine"]["centrifuge"].crafting_categories, "sp-high-energy-physics")

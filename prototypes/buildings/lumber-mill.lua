@@ -49,7 +49,7 @@ local graphics_set = {
 data:extend({
   {
     type = "assembling-machine",
-    name = "sp-lumber-mill",  -- #ForRegEx# - entity-name
+    name = "sp-lumber-mill",  -- #ForRegEx# - building
     icon = "__Spaghetorio__/graphics/icons/lumber-mill.png",
     icon_size = 64,
     icon_mipmaps = 4,

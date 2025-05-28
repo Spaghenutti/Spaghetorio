@@ -6,7 +6,7 @@ local sounds = require("__base__/prototypes/entity/sounds")
 data:extend({
   {
     type = "beacon",
-    name = "sp-kr-singularity-beacon",
+    name = "sp-kr-singularity-beacon",  -- #ForRegEx# - building
     icon = "__Spaghetorio__/graphics/krastorio/icons/entities/singularity-beacon.png",
     icon_size = 64,
     icon_mipmaps = 4,

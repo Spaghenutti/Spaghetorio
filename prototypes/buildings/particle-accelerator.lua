@@ -1,7 +1,7 @@
 data:extend({
   {
     type = "assembling-machine", --type = "furnace",
-    name = "sp-kr-particle-accelerator",
+    name = "sp-kr-particle-accelerator",  -- #ForRegEx# - building
     icon = "__Spaghetorio__/graphics/krastorio/icons/entities/fusion-reactor.png",
     icon_size = 64,
     icon_mipmaps = 4,

@@ -37,7 +37,7 @@ end
 data:extend({
   {
     type = "assembling-machine",
-    name = "sp-kr-research-server",
+    name = "sp-kr-research-server",  -- #ForRegEx# - building
     icon = "__Spaghetorio__/graphics/krastorio/icons/entities/research-server.png",
     icon_size = 64,
     icon_mipmaps = 4,

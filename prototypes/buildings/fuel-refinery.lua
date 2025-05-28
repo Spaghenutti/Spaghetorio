@@ -3,7 +3,7 @@ local sounds = require("__base__/prototypes/entity/sounds")
 data:extend({
   {
     type = "assembling-machine",
-    name = "sp-kr-fuel-refinery",
+    name = "sp-kr-fuel-refinery",  -- #ForRegEx# - building
     icon = "__Spaghetorio__/graphics/krastorio/icons/entities/fuel-refinery.png",
     icon_size = 64,
     icon_mipmaps = 4,
@@ -143,7 +143,6 @@ data:extend({
           {flow_direction="input", direction = defines.direction.north, position = {-1, -1}}
         },
       },
-      
       {
         production_type = "input",
         pipe_covers = pipecoverspictures(),

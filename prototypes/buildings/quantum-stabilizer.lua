@@ -98,7 +98,7 @@ local working_sound = {
 data:extend({
  {
     type = "assembling-machine",
-    name = "sp-quantum-stabilizer",
+    name = "sp-quantum-stabilizer",  -- #ForRegEx# - building
     icon = "__Spaghetorio__/graphics/icons/quantum-stabilizer.png",
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 1.5, result = "sp-quantum-stabilizer"},

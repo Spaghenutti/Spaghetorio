@@ -1,12 +1,12 @@
 data:extend({
   {
     type = "mining-drill",
-    name = "kr-mineral-water-pumpjack",
+    name = "sp-kr-mineral-water-pumpjack",  -- #ForRegEx# - building
     icon = "__Spaghetorio__/graphics/krastorio/icons/entities/mineral-water-pumpjack.png",
     icon_size = 64,
     icon_mipmaps = 4,
     flags = { "placeable-neutral", "player-creation" },
-    minable = { mining_time = 0.5, result = "kr-mineral-water-pumpjack" },
+    minable = { mining_time = 0.5, result = "sp-kr-mineral-water-pumpjack" },
     resource_categories = { "basic-fluid" },
     max_health = 200,
     dying_explosion = "medium-explosion",

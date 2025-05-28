@@ -121,7 +121,7 @@ local working_sound = {
 data:extend({
  {
     type = "assembling-machine",
-    name = "sp-herbarium",
+    name = "sp-herbarium",  -- #ForRegEx# - building
     icon = "__Spaghetorio__/graphics/icons/greenhouse.png",
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 2, result = "sp-herbarium"},
