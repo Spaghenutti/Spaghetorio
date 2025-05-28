@@ -15,6 +15,7 @@ TODO for 0.3.17
       + holmium -> to get more cerium     
   + Changed some holmium related recipes
   - Clean up code for buildings
+  - Check all recipes that should be done in arc-furnace
   + Fix AAI storhouse science ingredients
 
 TODO for 0.3.18

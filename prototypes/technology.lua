@@ -6043,6 +6043,38 @@ data:extend({
   },
   {
     type = "technology",
+    name = "sp-light-emitting-diode",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghetorio__/graphics/hr-icons/light-emitting-diode.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-light-emitting-diode"
+      },
+    },
+    prerequisites = {
+      "sp-electronic-science-pack-2"
+    },
+    unit =
+    {
+      count = 100,
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"production-science-pack", 1},
+        {"sp-metallurgic-science-pack-2", 1},
+        {"electromagnetic-science-pack", 1}
+      },
+      time = 30
+    },
+  },
+  {
+    type = "technology",
     name = "sp-optical-sensor",  -- #ForRegEx# - technology
     icon_size = 256,
     icon = "__Spaghetorio__/graphics/hr-icons/optical-sensor.png",

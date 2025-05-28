@@ -503,11 +503,11 @@ data.raw.technology["advanced-circuit"].unit.ingredients = {
 
 data.raw.technology["processing-unit"].prerequisites = {
   "utility-science-pack",
-  "sp-optics"
+  "sp-optics",
+  "sp-light-emitting-diode",
 }
 table.insert(data.raw.technology["processing-unit"].effects, {type = "unlock-recipe", recipe = "sp-empty-circuit-board"})
 table.insert(data.raw.technology["processing-unit"].effects, {type = "unlock-recipe", recipe = "sp-circuit-board"})
-table.insert(data.raw.technology["processing-unit"].effects, {type = "unlock-recipe", recipe = "sp-light-emitting-diode"})
 table.insert(data.raw.technology["processing-unit"].effects, {type = "unlock-recipe", recipe = "sp-multi-layer-ceramic-capacitor"})
 data.raw.technology["processing-unit"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},
@@ -898,7 +898,7 @@ data.raw.technology["speed-module"].unit.ingredients = {
 
 data.raw.technology["speed-module-2"].prerequisites = {
   "speed-module",
-  "sp-electronic-science-pack-2"
+  "sp-light-emitting-diode"
 }
 data.raw.technology["speed-module-2"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},
@@ -922,7 +922,7 @@ data.raw.technology["productivity-module"].unit.ingredients = {
 
 data.raw.technology["productivity-module-2"].prerequisites = {
   "productivity-module",
-  "sp-electronic-science-pack-2"
+  "sp-light-emitting-diode"
 }
 data.raw.technology["productivity-module-2"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},
@@ -946,7 +946,7 @@ data.raw.technology["efficiency-module"].unit.ingredients = {
 
 data.raw.technology["efficiency-module-2"].prerequisites = {
   "efficiency-module",
-  "sp-electronic-science-pack-2"
+  "sp-light-emitting-diode"
 }
 data.raw.technology["efficiency-module-2"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},

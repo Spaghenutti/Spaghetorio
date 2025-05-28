@@ -17,6 +17,8 @@ Date: 2025-05-30
     - Fixed some technology requirements for AAI Containers
     - Fixed some technology icons
     - Fixed tungsten plate and tungsten steel smelting recipe chains
+    - Fixed recipe casting stainless steel gear wheel
+    - Fixed requirement of light emitting diode for tier 2 modules
   Balancing:
     - Belt immunity equipment is now unlocked earlier
     - Rebalanced crystallizer

@@ -3300,7 +3300,7 @@ data:extend({
       {type = "item", name = "carbon", amount = 2},
     },
     results = {
-      {type = "item", name = "sp-steel-gear-wheel", amount = 4}
+      {type = "item", name = "sp-stainless-steel-gear-wheel", amount = 4}
     },
     order = "gear-s2-[stainless-steel-gear-wheel]",
   },
