@@ -143,6 +143,10 @@ data:extend({
   },
   {
     type = "recipe-category",
+    name = "sp-manufacturing-electronics",  -- #ForRegEx# - recipe-category
+  },
+  {
+    type = "recipe-category",
     name = "sp-pathogen-growing",  -- #ForRegEx# - recipe-category
   },
   {
@@ -275,17 +279,3 @@ data:extend({
     name = "sp-yemnuth-rocket-building",  -- #ForRegEx# - recipe-category
   }
 })
-
--- MARK: Building changes
-table.insert(data.raw["furnace"]["stone-furnace"].crafting_categories, "sp-smelting-crystallizing")
-
-table.insert(data.raw["furnace"]["steel-furnace"].crafting_categories, "sp-smelting-crystallizing")
-table.insert(data.raw["furnace"]["steel-furnace"].crafting_categories, "sp-crushed-smelting")
-
-table.insert(data.raw["furnace"]["electric-furnace"].crafting_categories, "sp-smelting-crystallizing")
-table.insert(data.raw["furnace"]["electric-furnace"].crafting_categories, "sp-crushed-smelting")
-table.insert(data.raw["furnace"]["electric-furnace"].crafting_categories, "sp-smelting-enriched-resource")
-table.insert(data.raw["furnace"]["electric-furnace"].crafting_categories, "sp-intermediate-smelting")
-table.insert(data.raw["furnace"]["electric-furnace"].crafting_categories, "sp-tungsten-plate-smelting")
-
-table.insert(data.raw["assembling-machine"]["centrifuge"].crafting_categories, "sp-high-energy-physics")

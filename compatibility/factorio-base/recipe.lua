@@ -266,6 +266,7 @@ util.recipe.change_recipe_ingredients("speed-module",
   },
   15)
 
+data.raw.recipe["speed-module-2"].category = "sp-manufacturing-electronics"
 util.recipe.change_recipe_ingredients("speed-module-2",
   {
     {type = "item", name = "advanced-circuit", amount = 5},
@@ -278,7 +279,7 @@ util.recipe.change_recipe_ingredients("speed-module-2",
   },
   20)
 
-data.raw.recipe["speed-module-2"].category = "sp-manufacturing"
+data.raw.recipe["speed-module-3"].category = "sp-manufacturing-electronics"
 util.recipe.change_recipe_ingredients("speed-module-3",
   {
     {type = "item", name = "sp-integrated-circuit", amount = 5},
@@ -301,7 +302,7 @@ util.recipe.change_recipe_ingredients("productivity-module",
   },
   15)
 
- data.raw.recipe["productivity-module-2"].category = "sp-manufacturing"
+ data.raw.recipe["productivity-module-2"].category = "sp-manufacturing-electronics"
 util.recipe.change_recipe_ingredients("productivity-module-2",
   {
     {type = "item", name = "advanced-circuit", amount = 3},
@@ -312,6 +313,7 @@ util.recipe.change_recipe_ingredients("productivity-module-2",
   },
   20)
 
+data.raw.recipe["productivity-module-3"].category = "sp-manufacturing-electronics"
 util.recipe.change_recipe_ingredients("productivity-module-3",
   {
     {type = "item", name = "sp-advanced-processing-unit", amount = 3},
@@ -333,7 +335,7 @@ util.recipe.change_recipe_ingredients("efficiency-module",
   },
   15)
 
-data.raw.recipe["efficiency-module-2"].category = "sp-manufacturing"
+data.raw.recipe["efficiency-module-2"].category = "sp-manufacturing-electronics"
 util.recipe.change_recipe_ingredients("efficiency-module-2",
   {
     {type = "item", name = "advanced-circuit", amount = 6},
@@ -343,6 +345,7 @@ util.recipe.change_recipe_ingredients("efficiency-module-2",
   },
   20)
 
+data.raw.recipe["efficiency-module-3"].category = "sp-manufacturing-electronics"
 util.recipe.change_recipe_ingredients("efficiency-module-3",
   {
     {type = "item", name = "sp-advanced-processing-unit", amount = 6},

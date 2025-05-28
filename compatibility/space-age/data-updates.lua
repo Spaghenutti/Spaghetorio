@@ -18,6 +18,9 @@ data.raw.recipe["casting-pipe"].subgroup = "sp-casting-mechanical-component"
 -- MARK: Fix order... agane...
 data.raw["autoplace-control"]["sulfuric_acid_geyser"].order = "c[sulfuric-acid-geyser]"
 
+-- MARK: Building changes
+table.insert(data.raw["assembling-machine"]["electromagnetic-plant"].crafting_categories, "sp-manufacturing-electronics")
+
 
 data.raw.lab["biolab"].inputs = {
   "automation-science-pack",

@@ -19,6 +19,7 @@ Date: 2025-05-30
     - Fixed tungsten plate and tungsten steel smelting recipe chains
     - Fixed recipe casting stainless steel gear wheel
     - Fixed requirement of light emitting diode for tier 2 modules
+    - Fixed assembling machines required for crafting tier 2 and tier 3 modules
   Balancing:
     - Belt immunity equipment is now unlocked earlier
     - Rebalanced crystallizer

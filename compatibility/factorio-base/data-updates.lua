@@ -1,4 +1,19 @@
 
+-- MARK: Building changes
+table.insert(data.raw["furnace"]["stone-furnace"].crafting_categories, "sp-smelting-crystallizing")
+
+table.insert(data.raw["furnace"]["steel-furnace"].crafting_categories, "sp-smelting-crystallizing")
+table.insert(data.raw["furnace"]["steel-furnace"].crafting_categories, "sp-crushed-smelting")
+
+table.insert(data.raw["furnace"]["electric-furnace"].crafting_categories, "sp-smelting-crystallizing")
+table.insert(data.raw["furnace"]["electric-furnace"].crafting_categories, "sp-crushed-smelting")
+table.insert(data.raw["furnace"]["electric-furnace"].crafting_categories, "sp-smelting-enriched-resource")
+table.insert(data.raw["furnace"]["electric-furnace"].crafting_categories, "sp-intermediate-smelting")
+table.insert(data.raw["furnace"]["electric-furnace"].crafting_categories, "sp-tungsten-plate-smelting")
+
+table.insert(data.raw["assembling-machine"]["centrifuge"].crafting_categories, "sp-high-energy-physics")
+
+
 data.raw.lab["lab"].inputs = {
   "automation-science-pack",
   "logistic-science-pack",
