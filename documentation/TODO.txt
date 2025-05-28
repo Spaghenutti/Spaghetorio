@@ -14,11 +14,12 @@ TODO for 0.3.17
       + stibnite
       + holmium -> to get more cerium     
   + Changed some holmium related recipes
-  - Clean up code for buildings
   - Check all recipes that should be done in arc-furnace
+  - Fix icons in environemt category for iodin-brine and mineral-water
   + Fix AAI storhouse science ingredients
 
 TODO for 0.3.18
+  - Clean up code for buildings
   - Use xenon for breeder reactor?
   - Add teflon
   - Update space science 2 branch of tech tree
@@ -176,7 +177,10 @@ Bugs:
   - Fix icon sizes when looking on minimap
   - Add glow to tech cards
   - Add glow to alien items
-  - Fix iodine brine spawning on start location (seed: 2806285432)
+  - Fix iodine brine spawning on start location (seed: 2806285432), search in factorio __space-age__: initialize_patch_set("crude-oil", false, "aquilo")
+  - Fix "In the station name icon selection, there’s no mineral water under the fluid group—only the one in the environment group. They look the same but are treated as different items, which messes up train pathfinding to the right station. —Feedback from a Chinese player, passed along."
+    - Reported from sdQwo in discord bugreport channel 27.05.25 2:24PM
+    - See bug1.png in images folder
 
 Low prio:
   - Reorder icons
