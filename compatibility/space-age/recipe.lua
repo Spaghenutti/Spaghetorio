@@ -222,6 +222,7 @@ util.recipe.change_recipe_ingredients("space-platform-starter-pack",
     {type = "item", name = "sp-variable-frequenzy-drive", amount = 3},
     {type = "item", name = "radar", amount = 1},
     {type = "item", name = "sp-gyroscope", amount = 6},
+    {type = "item", name = "sp-teflon", amount = 20},
   },
   120)
 
@@ -241,6 +242,9 @@ util.recipe.change_recipe_ingredients("cargo-landing-pad",
     {type = "item", name = "sp-antenna-chip", amount = 20},
     {type = "item", name = "sp-variable-frequenzy-drive", amount = 10},
     {type = "item", name = "radar", amount = 10},
+    {type = "item", name = "sp-high-pressure-fan", amount = 6},
+    {type = "item", name = "sp-actuator", amount = 20},
+    {type = "item", name = "sp-teflon", amount = 20},
   },
   90)
 
@@ -249,8 +253,9 @@ util.recipe.change_recipe_ingredients("cargo-bay",
   {
     {type = "item", name = "sp-elgiloy", amount = 30},
     {type = "item", name = "sp-niobium-steel", amount = 20},
-    {type = "item", name = "sp-aluminum-brass", amount = 10},
-    {type = "item", name = "sp-titanium-frame", amount = 20},
+    {type = "item", name = "sp-aluminum-brass", amount = 12},
+    {type = "item", name = "sp-titanium-frame", amount = 16},
+    {type = "item", name = "sp-teflon", amount = 8},
   },
   20)
 

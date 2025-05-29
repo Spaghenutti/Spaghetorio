@@ -9492,6 +9492,69 @@ data:extend({
   },
   {
     type = "technology",
+    name = "sp-teflon",  -- #ForRegEx# - technology
+    icon = "__Spaghetorio__/graphics/hr-icons/teflon.png",
+    icon_size = 256,
+    icon_mipmaps = 4,
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-teflon",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-tetrafluoroethylene",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-perfluorooctanoic-acid",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-chloroform",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-octane",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-perfluorooctane",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-heptadecafluoro-1-iodooctane",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-chlorodifluoromethane",
+      },
+    },
+    prerequisites = {
+      "sp-kr-advanced-chemistry",
+      "cryogenic-science-pack"
+    },
+    unit = {
+      count = 400,
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-metallurgic-science-pack-2", 1},
+        {"sp-electromagnetic-science-pack-2", 1},
+        {"production-science-pack", 1},
+        {"utility-science-pack", 1},
+        {"sp-computer-science-pack-2", 1},
+        {"cryogenic-science-pack", 1},
+      },
+      time = 45,
+    },
+  },
+  {
+    type = "technology",
     name = "sp-coast-water",  -- #ForRegEx# - technology
     icon = "__Spaghetorio__/graphics/hr-icons/coast-water.png",
     icon_size = 256,

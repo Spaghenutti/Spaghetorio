@@ -446,6 +446,12 @@ data:extend({
   },
   {
     type = "item-subgroup",
+    name = "sp-complex-organic-chemical",  -- #ForRegEx# - item-subgroup
+    group = "fluids",
+    order = "f3"
+  },
+  {
+    type = "item-subgroup",
     name = "sp-gas",  -- #ForRegEx# - item-subgroup
     group = "fluids",
     order = "g"

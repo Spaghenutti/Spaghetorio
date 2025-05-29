@@ -13,6 +13,9 @@ UPDATE_NAME_REGEX = r".name = \"([^\"]*)\"  -- #ForRegEx# - ([A-Za-z-]+)"
 ALL_REGEX = [NAME_REGEX, UPDATE_NAME_REGEX]
 
 MANUAL_TRANSLATIONS = {
+    # chemicals
+    "sp-heptadecafluoro-1-iodooctane": "Heptadecafluoro-1-iodooctane",  # Why is it not showing the "-" in game... WHYYYYYY???
+
     # radioactive isotopes
     "sp-bismuth-213": "Bismuth-213",
     "sp-polonium-213": "Polonium-213",

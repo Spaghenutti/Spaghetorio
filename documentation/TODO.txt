@@ -18,18 +18,18 @@ TODO for 0.3.17
 
 TODO for 0.3.18
   - Use xenon for breeder reactor?
-  - Add teflon
-    - water + lots of tetrafluoroethylene + perfluorooctanoic-acid = teflon
-    - chlorodifluoromethane = tetrafluoroethylene + clorine
-    - chloroform + hydrogen fluoride = chlorodifluoromethane + hydrogen chloride
-    - ethanol + 3 chlorine + calcite = chloroform + bleach
-    - Heptadecafluoro-1-iodooctane + CO2 + water = perfluorooctanoic-acid + iodine
-    - Perfluorooctane + iodine = Heptadecafluoro-1-iodooctane
-    - Octane + hydrogen fluoride = Perfluorooctane + Hydrogen
-    - 4 ethylene + H = octane
-  - Reach space :D
-  - Make rocket parts in manufacturer
-  - To launch rocket use rocket parts + fuel
+  + Add teflon
+    + water + lots of tetrafluoroethylene + perfluorooctanoic-acid = teflon
+    + chlorodifluoromethane = tetrafluoroethylene + clorine
+    + chloroform + hydrogen fluoride = chlorodifluoromethane + hydrogen chloride
+    + ethanol + 3 chlorine + calcite = chloroform + bleach
+    + Heptadecafluoro-1-iodooctane + CO2 + water = perfluorooctanoic-acid + iodine
+    + Perfluorooctane + iodine = Heptadecafluoro-1-iodooctane
+    + Octane + hydrogen fluoride = Perfluorooctane + Hydrogen
+    + 4 ethylene + H = octane
+  + Reach space :D
+  + Make rocket parts in manufacturer
+  + To launch rocket use rocket parts + fuel
   - Finish reorganizing fluid icons
   - Fix recipes for crushing existing asteroids
     - metallic

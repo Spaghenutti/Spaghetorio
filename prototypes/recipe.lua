@@ -4482,7 +4482,6 @@ data:extend({
     allow_productivity = true,
     energy_required = 18,
     ingredients = {
-      -- {type = "item", name = "sp-catalyst", amount = 1},
       {type = "fluid", name = "sp-styrene", amount = 20},
       {type = "fluid", name = "sp-propane", amount = 50}
     },
@@ -4506,7 +4505,6 @@ data:extend({
     energy_required = 20,
     ingredients = {
       {type = "fluid", name = "sp-propane", amount = 100},
-      -- {type = "item", name = "sp-catalyst", amount = 1},
     },
     results = {
       {type = "fluid", name = "sp-propylene", amount = 100},
@@ -4638,7 +4636,6 @@ data:extend({
     allow_productivity = true,
     energy_required = 5,
     ingredients = {
-      -- {type = "item", name = "sp-catalyst", amount = 1},
       {type = "fluid", name = "sp-mineral-water", amount = 50},
       {type = "fluid", name = "sp-hydrogen-chloride", amount = 20}
     },
@@ -4988,7 +4985,7 @@ data:extend({
     name = "sp-vinyl-acetate",  -- #ForRegEx# - recipe
     icon = "__Spaghetorio__/graphics/icons/vinyl-acetate.png",
     category = "chemistry",
-    subgroup = "sp-inorganic-chemical",
+    subgroup = "sp-organic-chemical",
     enabled = false,
     allow_productivity = true,
     energy_required = 1.5,
@@ -5227,28 +5224,6 @@ data:extend({
   ------------------------------------------------------------------------------
   {
     type = "recipe",
-    name = "sp-chemical-science-pack-3",  -- #ForRegEx# - recipe
-    category = "sp-advanced-chemistry",
-    enabled = false,
-    allow_productivity = true,
-    energy_required = 24,
-    ingredients =
-    {
-      {type = "item", name = "sp-chemical-science-pack-2", amount = 10},
-      -- {type = "item", name = "sp-catalyst", amount = 10},
-      {type = "item", name = "sp-composites", amount = 5},
-      {type = "item", name = "sp-carbon-nanotubes", amount = 10},
-      {type = "item", name = "sp-lithium-chloride", amount = 5},
-      {type = "fluid", name = "electrolyte", amount = 5},
-      {type = "fluid", name = "sp-methyl-tert-butyl-ether", amount = 20},
-      {type = "fluid", name = "sp-perchloric-acid", amount = 30},
-    },
-    results = {
-      {type = "item", name = "sp-chemical-science-pack-3", amount = 5}
-    }
-  },
-  {
-    type = "recipe",
     name = "sp-manganese-chloride",  -- #ForRegEx# - recipe
     category = "sp-advanced-chemistry",
     enabled = false,
@@ -5299,6 +5274,103 @@ data:extend({
       quaternary = {r = 0.800, g = 0.000, b = 0.100, a = 0.900},
     },
     order = "[liquid]-[liquid-sodium]"
+  },
+  {
+    type = "recipe",
+    name = "sp-perfluorooctanoic-acid",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/icons/perfluorooctanoic-acid.png",
+    icon_size = 64,
+    mip_maps = 4,
+    category = "sp-advanced-chemistry",
+    subgroup = "sp-organic-chemical",
+    energy_required = 10,
+    enabled = false,
+    allow_productivity = true,
+    ingredients = {
+      {type = "fluid", name = "sp-heptadecafluoro-1-iodooctane", amount = 5},
+      {type = "fluid", name = "sp-carbon-dioxide", amount = 20},
+      {type = "fluid", name = "water", amount = 10},
+    },
+    results = {
+      {type = "fluid", name = "sp-perfluorooctanoic-acid", amount = 5},
+      {type = "item", name = "sp-iodine", probability = 0.05, amount = 1}
+    },
+    crafting_machine_tint = {
+      primary = {r = 0.800, g = 0.000, b = 0.100, a = 0.200},
+      secondary = {r = 0.500, g = 0.100, b = 0.300, a = 0.357},
+      tertiary = {r = 0.430, g = 0.000, b = 0.450, a = 0.200},
+      quaternary = {r = 0.800, g = 0.000, b = 0.100, a = 0.900},
+    },
+  },
+  {
+    type = "recipe",
+    name = "sp-chloroform",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/icons/chloroform.png",
+    icon_size = 64,
+    mip_maps = 4,
+    category = "sp-advanced-chemistry",
+    subgroup = "sp-organic-chemical",
+    energy_required = 20,
+    enabled = false,
+    allow_productivity = true,
+    ingredients = {
+      {type = "fluid", name = "sp-biomethanol", amount = 30},
+      {type = "fluid", name = "sp-chlorine", amount = 90},
+      {type = "item", name = "calcite", amount = 1},
+    },
+    results = {
+      {type = "fluid", name = "sp-chloroform", amount = 40},
+      {type = "fluid", name = "sp-bleach", amount = 3}
+    },
+    crafting_machine_tint = {
+      primary = {r = 0.800, g = 0.000, b = 0.100, a = 0.200},
+      secondary = {r = 0.500, g = 0.100, b = 0.300, a = 0.357},
+      tertiary = {r = 0.430, g = 0.000, b = 0.450, a = 0.200},
+      quaternary = {r = 0.800, g = 0.000, b = 0.100, a = 0.900},
+    },
+  },
+  {
+    type = "recipe",
+    name = "sp-teflon",  -- #ForRegEx# - recipe
+    category = "sp-advanced-chemistry",
+    energy_required = 5,
+    enabled = false,
+    allow_productivity = true,
+    ingredients = {
+      {type = "fluid", name = "sp-tetrafluoroethylene", amount = 20},
+      {type = "fluid", name = "sp-perfluorooctanoic-acid", amount = 4},
+      {type = "fluid", name = "water", amount = 100},
+    },
+    results = {
+      {type = "item", name = "sp-teflon", amount = 1}
+    },
+    crafting_machine_tint = {
+      primary = {r = 0.800, g = 0.000, b = 0.100, a = 0.200},
+      secondary = {r = 0.500, g = 0.100, b = 0.300, a = 0.357},
+      tertiary = {r = 0.430, g = 0.000, b = 0.450, a = 0.200},
+      quaternary = {r = 0.800, g = 0.000, b = 0.100, a = 0.900},
+    },
+  },
+  {
+    type = "recipe",
+    name = "sp-chemical-science-pack-3",  -- #ForRegEx# - recipe
+    category = "sp-advanced-chemistry",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 24,
+    ingredients =
+    {
+      {type = "item", name = "sp-chemical-science-pack-2", amount = 10},
+      {type = "item", name = "sp-composites", amount = 5},
+      {type = "item", name = "sp-carbon-nanotubes", amount = 10},
+      {type = "item", name = "sp-lithium-chloride", amount = 5},
+      {type = "fluid", name = "electrolyte", amount = 5},
+      {type = "fluid", name = "sp-methyl-tert-butyl-ether", amount = 20},
+      {type = "fluid", name = "sp-perchloric-acid", amount = 30},
+    },
+    results = {
+      {type = "item", name = "sp-chemical-science-pack-3", amount = 5}
+    }
   },
   ------------------------------------------------------------------------------
   -- MARK: chemical-staging
@@ -5424,7 +5496,7 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "sp-chemical-staging",
-    subgroup = "sp-inorganic-chemical",
+    subgroup = "sp-organic-chemical",
     enabled = false,
     allow_productivity = true,
     energy_required = 1,
@@ -5444,7 +5516,7 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "sp-chemical-staging",
-    subgroup = "sp-inorganic-chemical",
+    subgroup = "sp-organic-chemical",
     enabled = false,
     allow_productivity = true,
     energy_required = 1.5,
@@ -5464,7 +5536,7 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "sp-chemical-staging",
-    subgroup = "sp-inorganic-chemical",
+    subgroup = "sp-organic-chemical",
     enabled = false,
     allow_productivity = true,
     energy_required = 1,
@@ -5661,7 +5733,7 @@ data:extend({
     name = "sp-trialkylamine",  -- #ForRegEx# - recipe
     icon = "__Spaghetorio__/graphics/icons/trialkylamine.png",
     category = "sp-chemical-staging",
-    subgroup = "sp-inorganic-chemical",
+    subgroup = "sp-organic-chemical",
     enabled = false,
     allow_productivity = true,
     energy_required = 4,
@@ -5679,7 +5751,7 @@ data:extend({
     name = "sp-methyl-chloride",  -- #ForRegEx# - recipe
     icon = "__Spaghetorio__/graphics/icons/methyl-chloride.png",
     category = "sp-chemical-staging",
-    subgroup = "sp-inorganic-chemical",
+    subgroup = "sp-organic-chemical",
     enabled = false,
     allow_productivity = true,
     energy_required = 2,
@@ -5697,7 +5769,7 @@ data:extend({
     name = "sp-toluene",  -- #ForRegEx# - recipe
     icon = "__Spaghetorio__/graphics/icons/toluene.png",
     category = "sp-chemical-staging",
-    subgroup = "sp-inorganic-chemical",
+    subgroup = "sp-organic-chemical",
     enabled = false,
     allow_productivity = true,
     energy_required = 5,
@@ -5715,7 +5787,7 @@ data:extend({
     name = "sp-benzyl-chloride",  -- #ForRegEx# - recipe
     icon = "__Spaghetorio__/graphics/icons/benzyl-chloride.png",
     category = "sp-chemical-staging",
-    subgroup = "sp-inorganic-chemical",
+    subgroup = "sp-organic-chemical",
     enabled = false,
     allow_productivity = true,
     energy_required = 5,
@@ -5741,6 +5813,76 @@ data:extend({
     },
     results = {
       {type = "fluid", name = "sp-benzyltrimethylammonium-chloride", amount = 5},
+    },
+  },
+  {
+    type = "recipe",
+    name = "sp-octane",  -- #ForRegEx# - recipe
+    category = "sp-chemical-staging",
+    energy_required = 8,
+    enabled = false,
+    allow_productivity = true,
+    ingredients = {
+      {type = "fluid", name = "sp-ethylene", amount = 20},
+      {type = "fluid", name = "sp-hydrogen", amount = 5},
+    },
+    results = {
+      {type = "fluid", name = "sp-octane", amount = 5}
+    },
+  },
+  {
+    type = "recipe",
+    name = "sp-perfluorooctane",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/icons/perfluorooctane.png",
+    icon_size = 64,
+    mip_maps = 4,
+    category = "sp-chemical-staging",
+    subgroup = "sp-organic-chemical",
+    energy_required = 15,
+    enabled = false,
+    allow_productivity = true,
+    ingredients = {
+      {type = "fluid", name = "sp-octane", amount = 20},
+      {type = "fluid", name = "sp-hydrogen-fluoride", amount = 100},
+    },
+    results = {
+      {type = "fluid", name = "sp-perfluorooctane", amount = 20},
+      {type = "fluid", name = "sp-hydrogen", amount = 1}
+    },
+  },
+  {
+    type = "recipe",
+    name = "sp-heptadecafluoro-1-iodooctane",  -- #ForRegEx# - recipe
+    category = "sp-chemical-staging",
+    energy_required = 30,
+    enabled = false,
+    allow_productivity = true,
+    ingredients = {
+      {type = "fluid", name = "sp-perfluorooctane", amount = 5},
+      {type = "item", name = "sp-iodine", amount = 1},
+    },
+    results = {
+      {type = "fluid", name = "sp-heptadecafluoro-1-iodooctane", amount = 5}
+    },
+  },
+  {
+    type = "recipe",
+    name = "sp-chlorodifluoromethane",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/icons/chlorodifluoromethane.png",
+    icon_size = 64,
+    mip_maps = 4,
+    category = "sp-chemical-staging",
+    subgroup = "sp-organic-chemical",
+    energy_required = 10,
+    enabled = false,
+    allow_productivity = true,
+    ingredients = {
+      {type = "fluid", name = "sp-chloroform", amount = 10},
+      {type = "fluid", name = "sp-hydrogen-fluoride", amount = 20},
+    },
+    results = {
+      {type = "fluid", name = "sp-chlorodifluoromethane", amount = 10},
+      {type = "fluid", name = "sp-hydrogen-chloride", amount = 5}
     },
   },
   {
@@ -5845,14 +5987,13 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "oil-processing",
-    subgroup = "sp-inorganic-chemical",
+    subgroup = "sp-organic-chemical",
     enabled = false,
     allow_productivity = true,
     energy_required = 15,
     ingredients = {
       {type = "fluid", name = "petroleum-gas", amount = 90},
       {type = "item", name = "sp-filter", amount = 2},
-      -- {type = "item", name = "sp-catalyst", amount = 1}
     },
     results = {
       {type = "fluid", name = "sp-ethylene", amount = 60},
@@ -6224,6 +6365,31 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-antimony-triiodide", amount = 3},
+    },
+  },
+  {
+    type = "recipe",
+    name = "sp-tetrafluoroethylene",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/icons/tetrafluoroethylene.png",
+    icon_size = 64,
+    mip_maps = 4,
+    category = "cryogenics",
+    subgroup = "sp-organic-chemical",
+    energy_required = 30,
+    enabled = false,
+    allow_productivity = true,
+    ingredients = {
+      {type = "fluid", name = "sp-chlorodifluoromethane", amount = 20},
+    },
+    results = {
+      {type = "fluid", name = "sp-tetrafluoroethylene", amount = 10},
+      {type = "fluid", name = "sp-chlorine", amount = 5}
+    },
+    crafting_machine_tint = {
+      primary = {r = 0.800, g = 0.000, b = 0.100, a = 0.200},
+      secondary = {r = 0.500, g = 0.100, b = 0.300, a = 0.357},
+      tertiary = {r = 0.430, g = 0.000, b = 0.450, a = 0.200},
+      quaternary = {r = 0.800, g = 0.000, b = 0.100, a = 0.900},
     },
   },
   ------------------------------------------------------------------------------
@@ -12751,7 +12917,6 @@ data:extend({
     allow_productivity = true,
     energy_required = 12,
     ingredients = {
-      -- {type = "item", name = "sp-catalyst", amount = 2},
       {type = "item", name = "carbon", amount = 6},
       {type = "fluid", name = "sp-styrene", amount = 10},
       {type = "fluid", name = "sp-grobgnum-slurry", amount = 50}
@@ -18689,7 +18854,6 @@ data:extend({
     allow_productivity = true,
     energy_required = 12,
     ingredients = {
-      -- {type = "item", name = "sp-catalyst", amount = 1},
       {type = "fluid", name = "sp-ethylene", amount = 60},
       {type = "fluid", name = "sp-chlorine", amount = 60}
     },

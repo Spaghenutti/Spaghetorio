@@ -853,7 +853,8 @@ data.raw.technology["rocket-silo"].prerequisites = {
   "low-density-structure",
   "sp-photovoltaics",
   "sp-antenna-chip",
-  "sp-kr-lithium-sulfur-battery"
+  "sp-kr-lithium-sulfur-battery",
+  "sp-teflon"
 }
 data.raw.technology["rocket-silo"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},

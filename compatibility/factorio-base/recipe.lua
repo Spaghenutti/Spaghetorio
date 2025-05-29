@@ -393,8 +393,9 @@ util.recipe.change_recipe_ingredients("rocket-part",
     {type = "item", name = "sp-titanium-niobium", amount = 4},
     {type = "item", name = "sp-nickel-cobalt", amount = 2},
     {type = "item", name = "sp-gyroscope", amount = 1},
-    {type = "item", name = "rocket-control-unit", amount = 2},
-    {type = "item", name = "sp-composites", amount = 2}
+    {type = "item", name = "sp-rocket-control-unit", amount = 2},
+    {type = "item", name = "sp-composites", amount = 2},
+    {type = "item", name = "sp-teflon", amount = 2},
   },
   12)
 
@@ -1381,25 +1382,10 @@ util.recipe.change_recipe_ingredients("rocket-silo",
     {type = "item", name = "sp-control-unit", amount = 80},
     {type = "item", name = "sp-rocket-control-unit", amount = 100},
     {type = "item", name = "electric-engine-unit", amount = 20},
-    {type = "item", name = "sp-heat-resistant-tile", amount = 200}
+    {type = "item", name = "sp-heat-resistant-tile", amount = 200},
+
   },
   300)
-
-util.recipe.change_recipe_ingredients("rocket-part",
-  {
-    {type = "item", name = "sp-rocket-control-unit", amount = 12},
-    {type = "item", name = "sp-heat-resistant-tile", amount = 100},
-    {type = "item", name = "sp-titanium-niobium", amount = 40},
-    {type = "item", name = "sp-duralumin", amount = 60},
-    {type = "item", name = "low-density-structure", amount = 120},
-    {type = "item", name = "rocket-fuel", amount = 500},
-    {type = "item", name = "sp-cryostat", amount = 10},
-    {type = "item", name = "sp-high-pressure-tank", amount = 16},
-    {type = "item", name = "sp-rocket-engine", amount = 4},
-    {type = "item", name = "sp-solid-rocket-motor", amount = 2},
-    {type = "item", name = "sp-gyroscope", amount = 3}
-  },
-  80)
 
 util.recipe.change_recipe_ingredients("spidertron",
   {
