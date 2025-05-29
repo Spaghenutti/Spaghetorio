@@ -2509,7 +2509,7 @@ data:extend({
     allow_productivity = true,
     energy_required = 12,
     ingredients = {
-      {type = "fluid", name = "lava", amount = 100},
+      {type = "fluid", name = "sp-ultramafic-lava", amount = 100},
       {type = "fluid", name = "sp-hydrogen-sulfide", amount = 16},
     },
     results = {

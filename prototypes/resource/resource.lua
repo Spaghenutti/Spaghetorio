@@ -594,7 +594,7 @@ data:extend({
       stages_filename = "__Spaghetorio__/graphics/fluid-resource/iodine-vent.png",
       stages_filename_count = 4,
       order = "a",
-      map_color = {r=0.8, g=0.4, b=1.0},
+      map_color = {r=0.4, g=1.0, b=1.0},
     },
     {
       base_spots_per_km2 = 0.08,
