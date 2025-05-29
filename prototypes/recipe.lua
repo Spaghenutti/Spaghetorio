@@ -13072,12 +13072,29 @@ data:extend({
   -- },
   {
     type = "recipe",
+    name = "sp-rocket",  -- #ForRegEx# - recipe
+    category = "rocket-building",
+    enabled = false,
+    allow_productivity = true,
+    hide_from_player_crafting = true,
+    energy_required = 30,
+    ingredients = {
+      {type = "item", name = "rocket-part", amount = 10},
+      {type = "item", name = "sp-solid-rocket-motor", amount = 6},
+      {type = "item", name = "sp-rocket-engine", amount = 3},
+      {type = "item", name = "rocket-fuel", amount = 500}
+    },
+    results = {
+      {type = "item", name = "sp-rocket", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
     name = "sp-blunagium-rocket",  -- #ForRegEx# - recipe
     category = "sp-blunagium-rocket-building",
     enabled = false,
     allow_productivity = true,
     hide_from_player_crafting = true,
-    hidden = true,
     energy_required = 60,
     ingredients = {
       {type = "item", name = "sp-rocket-control-unit", amount = 80},
@@ -13144,7 +13161,6 @@ data:extend({
     enabled = false,
     allow_productivity = true,
     hide_from_player_crafting = true,
-    hidden = true,
     energy_required = 60,
     ingredients = {
       {type = "item", name = "sp-rocket-control-unit", amount = 40},
@@ -13212,7 +13228,6 @@ data:extend({
     enabled = false,
     allow_productivity = true,
     hide_from_player_crafting = true,
-    hidden = true,
     energy_required = 60,
     ingredients = {
       {type = "item", name = "sp-rocket-control-unit", amount = 40},
@@ -13278,7 +13293,6 @@ data:extend({
     enabled = false,
     allow_productivity = true,
     hide_from_player_crafting = true,
-    hidden = true,
     energy_required = 60,
     ingredients = {
       {type = "item", name = "sp-dt-fuel", amount = 5},
@@ -18532,13 +18546,14 @@ data:extend({
     category = "chemistry",
     enabled = false,
     allow_productivity = true,
-    energy_required = 4,
+    energy_required = 5,
     ingredients = {
+      {type = "item", name = "calcite", amount = 5},
       {type = "fluid", name = "sp-oxygen", amount = 100},
       {type = "fluid", name = "sp-chlorine", amount = 50}
     },
     results = {
-      {type = "fluid", name = "sp-bleach", amount = 20}
+      {type = "fluid", name = "sp-bleach", amount = 25}
     },
     crafting_machine_tint = {
       primary = {r = 0.4, g = 0.4, b = 0.5, a = 1.000},

@@ -1,10 +1,14 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.18
 Date: 2025-06-06
+  Features:
+    - Rockets are built now in silo, rocket parts are built in manufacturer
+    - Added teflon recipe chain
   Changes:
     - Changes in space science branch of tech tree
     - Changed location of high purity silicon in tech tree
     - Removed ferrite with copper, zinc and nickel recipes
+    - Changed bleach recipe
   Bugfixes:
     - Fixed crystallizer animation speed
 ---------------------------------------------------------------------------------------------------

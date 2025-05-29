@@ -841,7 +841,8 @@ data.raw.technology["personal-roboport-mk2-equipment"].unit.ingredients = {
   {"utility-science-pack", 1}
 }
 
-table.insert(data.raw.technology["rocket-silo"].effects, {type = "unlock-recipe", recipe = "sp-gyroscope"})
+table.insert(data.raw.technology["rocket-silo"].effects, 2, {type = "unlock-recipe", recipe = "sp-rocket"})  -- insert at 2nd position
+table.insert(data.raw.technology["rocket-silo"].effects, 4, {type = "unlock-recipe", recipe = "sp-gyroscope"})  -- insert at 4th position
 data.raw.technology["rocket-silo"].prerequisites = {
   "sp-rocket-control-unit",
   "rocket-fuel",

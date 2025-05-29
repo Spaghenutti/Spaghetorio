@@ -436,13 +436,13 @@ data:extend({
     type = "item-subgroup",
     name = "sp-inorganic-chemical",  -- #ForRegEx# - item-subgroup
     group = "fluids",
-    order = "f"
+    order = "f1"
   },
   {
     type = "item-subgroup",
     name = "sp-organic-chemical",  -- #ForRegEx# - item-subgroup
     group = "fluids",
-    order = "g"
+    order = "f2"
   },
   {
     type = "item-subgroup",

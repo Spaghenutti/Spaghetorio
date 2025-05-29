@@ -757,7 +757,7 @@ data:extend({
     order = "a[gas]-z[deuterium]"
   },
   ------------------------------------------------------------------------------
-  -- MARK: chemical
+  -- MARK: inorganic-chemical
   ------------------------------------------------------------------------------
   {
     type = "fluid",
@@ -1063,60 +1063,6 @@ data:extend({
   },
   {
     type = "fluid",
-    name = "sp-allyl-chloride",  -- #ForRegEx# - fluid
-    default_temperature = 25,
-    heat_capacity = "0.1kJ",
-    base_color = {r=0.0, g=0.0, b=0.55},
-    flow_color = {r=0.0, g=0.0, b=0.55},
-    icon = "__Spaghetorio__/graphics/icons/allyl-chloride.png",
-    icon_size = 64,
-    icon_mipmaps = 4,
-    subgroup = "sp-inorganic-chemical",
-    order = "a[fluid]-f[allyl-chloride]"
-  },
-  {
-    type = "fluid",
-    name = "sp-epichlorohydrin",  -- #ForRegEx# - fluid
-    default_temperature = 25,
-    heat_capacity = "0.1kJ",
-    base_color = {r=0.0, g=0.0, b=0.55},
-    flow_color = {r=0.0, g=0.0, b=0.55},
-    icon = "__Spaghetorio__/graphics/icons/epichlorohydrin.png",
-    icon_size = 64,
-    icon_mipmaps = 4,
-    subgroup = "sp-inorganic-chemical",
-    order = "a[fluid]-f[epichlorohydrin]"
-  },
-  {
-    type = "fluid",
-    name = "sp-glycerin",  -- #ForRegEx# - fluid
-    default_temperature = 25,
-    heat_capacity = "0.1kJ",
-    fuel_value = "250kJ",
-    base_color = {r=0.0, g=0.0, b=0.55},
-    flow_color = {r=0.0, g=0.0, b=0.55},
-    icon = "__Spaghetorio__/graphics/icons/glycerin.png",
-    icon_size = 64,
-    icon_mipmaps = 4,
-    subgroup = "sp-inorganic-chemical",
-    order = "a[fluid]-f[glycerin]"
-  },
-  {
-    type = "fluid",
-    name = "sp-acetic-acid",  -- #ForRegEx# - fluid
-    default_temperature = 25,
-    heat_capacity = "0.1kJ",
-    fuel_value = "120kJ",
-    base_color = {r=0.0, g=0.0, b=0.55},
-    flow_color = {r=0.0, g=0.0, b=0.55},
-    icon = "__Spaghetorio__/graphics/icons/acetic-acid.png",
-    icon_size = 64,
-    icon_mipmaps = 4,
-    subgroup = "sp-inorganic-chemical",
-    order = "a[fluid]-f[acetic-acid]"
-  },
-  {
-    type = "fluid",
     name = "sp-hydrogen-fluoride",  -- #ForRegEx# - fluid
     default_temperature = 25,
     heat_capacity = "0.1kJ",
@@ -1298,18 +1244,139 @@ data:extend({
     subgroup = "sp-inorganic-chemical",
     order = "a[fluid]-f[germanium-tetrachloride]"
   },
+  ------------------------------------------------------------------------------
+  -- MARK: organic-chemical
+  ------------------------------------------------------------------------------
   {
     type = "fluid",
-    name = "sp-glycol",  -- #ForRegEx# - fluid
+    name = "sp-octane",  -- #ForRegEx# - fluid
     default_temperature = 25,
     heat_capacity = "0.1kJ",
     base_color = {r=0.05, g=0.1, b=0.5},
     flow_color = {r=0.05, g=0.1, b=0.5},
-    icon = "__Spaghetorio__/graphics/icons/glycol.png",
+    icon = "__Spaghetorio__/graphics/icons/octane.png",
     icon_size = 64,
     icon_mipmaps = 4,
-    subgroup = "sp-inorganic-chemical",
-    order = "a[fluid]-f[glycol]"
+    subgroup = "sp-organic-chemical",
+    order = "a[carbon]-f[octane]"
+  },
+  {
+    type = "fluid",
+    name = "sp-epichlorohydrin",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    base_color = {r=0.0, g=0.0, b=0.55},
+    flow_color = {r=0.0, g=0.0, b=0.55},
+    icon = "__Spaghetorio__/graphics/icons/epichlorohydrin.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-organic-chemical",
+    order = "a[chlorine]-f[epichlorohydrin]"
+  },
+  {
+    type = "fluid",
+    name = "sp-allyl-chloride",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    base_color = {r=0.0, g=0.0, b=0.55},
+    flow_color = {r=0.0, g=0.0, b=0.55},
+    icon = "__Spaghetorio__/graphics/icons/allyl-chloride.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-organic-chemical",
+    order = "a[chlorine]-f[allyl-chloride]"
+  },
+  {
+    type = "fluid",
+    name = "sp-acetic-acid",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    fuel_value = "120kJ",
+    base_color = {r=0.0, g=0.0, b=0.55},
+    flow_color = {r=0.0, g=0.0, b=0.55},
+    icon = "__Spaghetorio__/graphics/icons/acetic-acid.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-organic-chemical",
+    order = "a[fluid]-f[acetic-acid]"
+  },
+  {
+    type = "fluid",
+    name = "sp-chlorodifluoromethane",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    base_color = {r=0.05, g=0.1, b=0.5},
+    flow_color = {r=0.05, g=0.1, b=0.5},
+    icon = "__Spaghetorio__/graphics/icons/chlorodifluoromethane.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-organic-chemical",
+    order = "a[fluorine]-f[chlorodifluoromethane]"
+  },
+  {
+    type = "fluid",
+    name = "sp-chloroform",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    base_color = {r=0.05, g=0.1, b=0.5},
+    flow_color = {r=0.05, g=0.1, b=0.5},
+    icon = "__Spaghetorio__/graphics/icons/chloroform.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-organic-chemical",
+    order = "a[fluorine]-f[chloroform]"
+  },
+  {
+    type = "fluid",
+    name = "sp-heptadecafluoro-1-iodooctane",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    base_color = {r=0.05, g=0.1, b=0.5},
+    flow_color = {r=0.05, g=0.1, b=0.5},
+    icon = "__Spaghetorio__/graphics/icons/heptadecafluoro-1-iodooctane.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-organic-chemical",
+    order = "a[fluorine]-f[heptadecafluoro-1-iodooctane]"
+  },
+  {
+    type = "fluid",
+    name = "sp-perfluorooctane",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    base_color = {r=0.05, g=0.1, b=0.5},
+    flow_color = {r=0.05, g=0.1, b=0.5},
+    icon = "__Spaghetorio__/graphics/icons/perfluorooctane.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-organic-chemical",
+    order = "a[fluorine]-f[perfluorooctane]"
+  },
+  {
+    type = "fluid",
+    name = "sp-perfluorooctanoic-acid",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    base_color = {r=0.05, g=0.1, b=0.5},
+    flow_color = {r=0.05, g=0.1, b=0.5},
+    icon = "__Spaghetorio__/graphics/icons/perfluorooctanoic-acid.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-organic-chemical",
+    order = "a[fluorine]-f[perfluorooctanoic-acid]"
+  },
+  {
+    type = "fluid",
+    name = "sp-tetrafluoroethylene",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    base_color = {r=0.05, g=0.1, b=0.5},
+    flow_color = {r=0.05, g=0.1, b=0.5},
+    icon = "__Spaghetorio__/graphics/icons/tetrafluoroethylene.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-organic-chemical",
+    order = "a[fluorine]-f[tetrafluoroethylene]"
   },
   {
     type = "fluid",
@@ -1321,8 +1388,35 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/fatty-acids.png",
     icon_size = 64,
     icon_mipmaps = 4,
-    subgroup = "sp-inorganic-chemical",
-    order = "a[fluid]-f[fatty-acids]"
+    subgroup = "sp-organic-chemical",
+    order = "a[oxygen]-f[fatty-acids]"
+  },
+  {
+    type = "fluid",
+    name = "sp-glycol",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    base_color = {r=0.05, g=0.1, b=0.5},
+    flow_color = {r=0.05, g=0.1, b=0.5},
+    icon = "__Spaghetorio__/graphics/icons/glycol.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-organic-chemical",
+    order = "a[oxygen]-f[glycol]"
+  },
+  {
+    type = "fluid",
+    name = "sp-glycerin",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    fuel_value = "250kJ",
+    base_color = {r=0.0, g=0.0, b=0.55},
+    flow_color = {r=0.0, g=0.0, b=0.55},
+    icon = "__Spaghetorio__/graphics/icons/glycerin.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-organic-chemical",
+    order = "a[oxygen]-f[glycerin]"
   },
   ------------------------------------------------------------------------------
   -- MARK: alien

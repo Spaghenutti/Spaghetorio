@@ -384,6 +384,20 @@ data.raw.recipe["kovarex-enrichment-process"].results = {
   {type = "item", name = "sp-protactinium-232", probability = 0.02, amount = 1},
 }
 
+data.raw.recipe["rocket-part"].category = "sp-manufacturing"
+util.recipe.change_recipe_ingredients("rocket-part",
+  {
+    {type = "item", name = "sp-heat-resistant-tile", amount = 8},
+    {type = "item", name = "low-density-structure", amount = 12},
+    {type = "item", name = "sp-duralumin", amount = 6},
+    {type = "item", name = "sp-titanium-niobium", amount = 4},
+    {type = "item", name = "sp-nickel-cobalt", amount = 2},
+    {type = "item", name = "sp-gyroscope", amount = 1},
+    {type = "item", name = "rocket-control-unit", amount = 2},
+    {type = "item", name = "sp-composites", amount = 2}
+  },
+  12)
+
 --------------------------------------------------------------------------------
 -- MARK: Fluids
 --------------------------------------------------------------------------------

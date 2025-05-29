@@ -194,6 +194,7 @@ data.raw["solar-panel"]["solar-panel"].production = "1MW"
 data.raw["storage-tank"]["storage-tank"].fluid_box.volume = 50000
 
 -- MARK: Changes to rocket silo
+data.raw["rocket-silo"]["rocket-silo"].fixed_recipe = "sp-rocket"
 data.raw["rocket-silo"]["rocket-silo"].rocket_parts_required = 1
 
 -- MARK: Equipment changes

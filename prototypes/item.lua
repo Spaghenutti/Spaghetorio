@@ -5114,6 +5114,16 @@ data:extend({
   },
   {
     type = "item",
+    name = "sp-teflon",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/teflon.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-chemical-product",
+    order = "[teflon]",
+    stack_size = 50
+  },
+  {
+    type = "item",
     name = "sp-insulation-sheet",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/insulation-sheet.png",
     icon_size = 64,
@@ -6850,6 +6860,16 @@ data:extend({
   },
   {
     type = "item",
+    name = "sp-rocket",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/rocket.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "space-related",
+    order = "a[rocket]",
+    stack_size = 1
+  },
+  {
+    type = "item",
     name = "sp-blunagium-rocket",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/blunagium-rocket.png",
     icon_size = 64,
@@ -7850,7 +7870,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/krastorio/icons/items/black-reinforced-plate.png",
     subgroup = "terrain",
     order = "y[black-reinforced-plate]-a1[black-reinforced-plate]",
-    stack_size = 200,
+    stack_size = 100,
     place_as_tile = {
       result = "sp-kr-black-reinforced-plate",
       condition_size = 1,
@@ -7863,7 +7883,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/krastorio/icons/items/white-reinforced-plate.png",
     subgroup = "terrain",
     order = "y[white-reinforced-plate]-a2[white-reinforced-plate]",
-    stack_size = 200,
+    stack_size = 100,
     place_as_tile = {
       result = "sp-kr-white-reinforced-plate",
       condition_size = 1,
@@ -8609,11 +8629,11 @@ data:extend({
   ------------------------------------------------------------------------------
   {
     type = "item",
-    name = "sp-void",
+    name = "sp-void",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/void.png",
     icon_size = 64,
     icon_mipmaps = 4,
-    subgroup = "inserter",
+    subgroup = "other",
     order = "zzz[kr-void]",
     hidden = true,
     stack_size = 1,
