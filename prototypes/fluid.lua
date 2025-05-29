@@ -229,8 +229,8 @@ data:extend({
     type = "fluid",
     name = "sp-iodine-brine",  -- #ForRegEx# - fluid
     default_temperature = 25,
-    base_color = {r=0.9, g=0.9, b=0.5},
-    flow_color = {r=0.9, g=0.9, b=0.5},
+    base_color = {r=0.8, g=0.4, b=1.0},
+    flow_color = {r=0.8, g=0.4, b=1.0},
     icon = "__Spaghetorio__/graphics/icons/iodine-brine.png",
     icon_size = 64,
     scale = 0.5,
@@ -241,8 +241,8 @@ data:extend({
     type = "fluid",
     name = "sp-iodine-sludge",  -- #ForRegEx# - fluid
     default_temperature = 25,
-    base_color = {r=1.0, g=1.0, b=0.6},
-    flow_color = {r=1.0, g=1.0, b=0.6},
+    base_color = {r=0.85, g=0.6, b=1.0},
+    flow_color = {r=0.85, g=0.6, b=1.0},
     icon = "__Spaghetorio__/graphics/icons/iodine-sludge.png",
     icon_size = 64,
     scale = 0.5,

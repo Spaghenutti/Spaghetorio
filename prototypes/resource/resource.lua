@@ -577,7 +577,7 @@ data:extend({
   fluid_resource(
     {
       name = "mineral-water",  -- #ForRegEx# - resource
-      icon = "__Spaghetorio__/graphics/krastorio/icons/fluids/mineral-water.png",
+      icon = "__Spaghetorio__/graphics/icons/mineral-water-resource.png",
       stages_filename = "__Spaghetorio__/graphics/krastorio/resources/mineral-water.png",
       stages_filename_count = 8,
       order = "a",
@@ -590,11 +590,11 @@ data:extend({
   fluid_resource(
     {
       name = "iodine-brine",  -- #ForRegEx# - resource
-      icon = "__Spaghetorio__/graphics/icons/iodine-brine.png",
-      stages_filename = "__space-age__/graphics/entity/fluorine-vent/fluorine-vent.png",
+      icon = "__Spaghetorio__/graphics/icons/iodine-brine-resource.png",
+      stages_filename = "__Spaghetorio__/graphics/fluid-resource/iodine-vent.png",
       stages_filename_count = 4,
       order = "a",
-      map_color = {r=1, g=1, b=0.6},
+      map_color = {r=0.8, g=0.4, b=1.0},
     },
     {
       base_spots_per_km2 = 0.08,

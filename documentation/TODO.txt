@@ -178,9 +178,6 @@ Bugs:
   - Add glow to tech cards
   - Add glow to alien items
   - Fix iodine brine spawning on start location (seed: 2806285432), search in factorio __space-age__: initialize_patch_set("crude-oil", false, "aquilo")
-  - Fix "In the station name icon selection, there’s no mineral water under the fluid group—only the one in the environment group. They look the same but are treated as different items, which messes up train pathfinding to the right station. —Feedback from a Chinese player, passed along."
-    - Reported from sdQwo in discord bugreport channel 27.05.25 2:24PM
-    - See bug1.png in images folder
 
 Low prio:
   - Reorder icons
