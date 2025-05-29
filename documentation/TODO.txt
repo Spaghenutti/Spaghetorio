@@ -14,15 +14,29 @@ TODO for 0.3.17
       + stibnite
       + holmium -> to get more cerium     
   + Changed some holmium related recipes
-  - Check all recipes that should be done in arc-furnace
   + Fix AAI storhouse science ingredients
 
 TODO for 0.3.18
-  - Clean up code for buildings
   - Use xenon for breeder reactor?
   - Add teflon
+  - Reach space :D
+
+TODO for 0.3.19
+  - Ion Chromatography
+    - Add all elements as items
+    - Add all chemicals
+      - itemes
+      - recipes
+      - technologies
+  - Check all recipes that should be done in arc-furnace
+    - Osmium (Not added yet)
+    - Iridium (Required before arcfurnace)
+    - Tungsten
+    - Rhenium
+    - Hafnium
+    - Ruthenium (Not added yet)
+    - Rhodium (Not added yet)
   - Update space science 2 branch of tech tree
-  - Add back blunagium, grobgnum, rukite and yemnuth rockets (even though they are unlocked later)
 
 TODO for 0.3.19
   - Unlock legendary quality much later in tech tree
@@ -50,6 +64,9 @@ TODO for 0.3.20
   - Add more rare metals comming from lava
   - Fix casting icons
 
+TODO for space branch
+  - Add back blunagium, grobgnum, rukite and yemnuth rockets (even though they are unlocked later)
+
 TODO for 0.4.1
   - Updates for cryogenic science
     - Core mining resource for extracting
@@ -59,16 +76,17 @@ TODO for 0.4.1
         - benzene
     - Quarry resource for hypothermium - A liquid that freezes anything it touches.
     - Quarry resource for Ignisium – A plasma-infused crystal pulsing with fire.
-  - Space resource
-    - Aetherium – A rare essence that bends space and time.
   
 TODO for 0.4.2
-  - Add more uses for dimethyl-sulfide, dimethyl-sulfoxide and hydrogen-sulfide
   - Use more gleba trees as resources for some stuff. Make this available after reaching space.
   - Add uses to bioflux
   - Add different fertile grounds for gleba plants
     - use spoilage as ingredients
     - update recipes for existing grounds
+
+TODO for 0.4.3
+  - Space resource
+    - Aetherium – A rare essence that bends space and time.
 
 Items:
   - Intermediates
@@ -124,6 +142,7 @@ Buildings:
   - Add krastorio turbine as water turbine
   - Change lightning collectors to power poles
   - Add wire connections to buildings
+  - Clean up code for buildings
 
 Map generation:
   - Get random seeds from nauvis vegetation

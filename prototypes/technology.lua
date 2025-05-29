@@ -1178,7 +1178,8 @@ data:extend({
     },
     prerequisites = {
       "sp-benzyltrimethylammonium-chloride",
-      "sp-metallurgic-science-pack-2"
+      "sp-metallurgic-science-pack-2",
+      "sp-arc-furnace"
     },
     unit =
     {
@@ -1186,13 +1187,13 @@ data:extend({
       ingredients = {
         {"sp-automation-science-pack-2", 1},
         {"sp-logistic-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1},
-        {"sp-electronic-science-pack-1", 1},
+        {"sp-electronic-science-pack-2", 1},
         {"sp-material-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
         {"sp-geological-science-pack-2", 1},
-        {"sp-metallurgic-science-pack-2", 1},
         {"production-science-pack", 1},
-        {"electromagnetic-science-pack", 1}
+        {"sp-metallurgic-science-pack-2", 1},
+        {"sp-electromagnetic-science-pack-2", 1}
       },
       time = 30
     },
@@ -1220,7 +1221,8 @@ data:extend({
     prerequisites = {
       "sp-zirconium-processing",
       "sp-sodium-hydroxide",
-      "sp-metallurgic-science-pack-2"
+      "sp-metallurgic-science-pack-2",
+      "sp-arc-furnace"
     },
     unit =
     {
@@ -1228,12 +1230,13 @@ data:extend({
       ingredients = {
         {"sp-automation-science-pack-2", 1},
         {"sp-logistic-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1},
-        {"sp-electronic-science-pack-1", 1},
+        {"sp-electronic-science-pack-2", 1},
         {"sp-material-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
         {"sp-geological-science-pack-2", 1},
+        {"production-science-pack", 1},
         {"sp-metallurgic-science-pack-2", 1},
-        {"electromagnetic-science-pack", 1}
+        {"sp-electromagnetic-science-pack-2", 1}
       },
       time = 30
     },

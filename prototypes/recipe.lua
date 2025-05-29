@@ -947,20 +947,6 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-hafnium",  -- #ForRegEx# - recipe
-    category = "sp-intermediate-smelting",
-    enabled = false,
-    allow_productivity = true,
-    energy_required = 5,
-    ingredients = {
-      {type = "item", name = "sp-sodium-hafnate", amount = 3},
-    },
-    results = {
-      {type = "item", name = "sp-hafnium", amount = 3}
-    }
-  },
-  {
-    type = "recipe",
     name = "sp-rukite-bar",  -- #ForRegEx# - recipe
     category = "sp-intermediate-smelting",
     enabled = false,
@@ -1905,21 +1891,6 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-inconel", amount = 10}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-nickel-rhenium",  -- #ForRegEx# - recipe
-    category = "sp-alloy-smelting",
-    enabled = false,
-    allow_productivity = true,
-    energy_required = 40,
-    ingredients = {
-      {type = "item", name = "sp-nickel-ingot", amount = 9},
-      {type = "item", name = "sp-rhenium", amount = 1},
-    },
-    results = {
-      {type = "item", name = "sp-nickel-rhenium", amount = 10}
     }
   },
   {
@@ -3570,6 +3541,35 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-tungsten-steel", amount = 10}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-nickel-rhenium",  -- #ForRegEx# - recipe
+    category = "sp-high-temperature-smelting",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 40,
+    ingredients = {
+      {type = "item", name = "sp-nickel-ingot", amount = 9},
+      {type = "item", name = "sp-rhenium", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-nickel-rhenium", amount = 10}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-hafnium",  -- #ForRegEx# - recipe
+    category = "sp-high-temperature-smelting",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 5,
+    ingredients = {
+      {type = "item", name = "sp-sodium-hafnate", amount = 3},
+    },
+    results = {
+      {type = "item", name = "sp-hafnium", amount = 3}
     }
   },
   ------------------------------------------------------------------------------

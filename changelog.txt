@@ -12,6 +12,7 @@ Date: 2025-05-30
     - Some changes in tech tree
     - Some recipes when enriching from crushed recoures yielded a small amount of an other ore. Now that ore is always in its crushed form.
     - Renamed mineral water pumpjack prototype (All of your mineral pumpjacks will be deleted when updating)
+    - Hafnium and Rhenium alloys are processed in arcfurnace
   Bugfixes:
     - Fixed some technology requirements for AAI Containers
     - Fixed some technology icons
