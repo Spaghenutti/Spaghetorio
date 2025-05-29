@@ -254,6 +254,23 @@ util.recipe.change_recipe_ingredients("cargo-bay",
   },
   20)
 
+data.raw.recipe["asteroid-collector"].category = "sp-manufacturing"
+util.recipe.change_recipe_ingredients("asteroid-collector",
+  {
+    {type = "item", name = "sp-niobium-steel", amount = 30},
+    {type = "item", name = "sp-nickel-cobalt", amount = 20},
+    {type = "item", name = "sp-kovar", amount = 12},
+    {type = "item", name = "sp-automation-core", amount = 6},
+    {type = "item", name = "sp-dynamo", amount = 1},
+    {type = "item", name = "sp-infrared-sensor", amount = 12},
+    {type = "item", name = "processing-unit", amount = 15},
+    {type = "item", name = "sp-big-electric-engine-unit", amount = 1},
+    {type = "item", name = "sp-electromagnetic-brake", amount = 4},
+    {type = "item", name = "sp-graphite-impact-shell", amount = 2},
+    {type = "item", name = "sp-boron-carbide", amount = 2},
+  },
+  60)
+
 util.recipe.change_recipe_ingredients("quality-module",
   {
     {type = "item", name = "sp-vacuum-tube", amount = 5},

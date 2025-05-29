@@ -1364,7 +1364,6 @@ data.raw.technology["tank"].unit.ingredients = {
   {"sp-computer-science-pack-2", 1}
 }
 
-table.insert(data.raw.technology["artillery"].effects, {type = "unlock-recipe", recipe = "sp-graphite-impact-shell"})
 table.insert(data.raw.technology["artillery"].prerequisites, "sp-spark-plug")
 table.insert(data.raw.technology["artillery"].prerequisites, "sp-semiconductor")
 data.raw.technology["artillery"].unit.ingredients = {

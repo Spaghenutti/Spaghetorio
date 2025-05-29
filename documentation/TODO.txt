@@ -20,6 +20,10 @@ TODO for 0.3.18
   - Use xenon for breeder reactor?
   - Add teflon
   - Reach space :D
+  - Fix recipes for crushing existing asteroids
+    - metallic
+    - carbonic
+    - oxide
 
 TODO for 0.3.19
   - Ion Chromatography

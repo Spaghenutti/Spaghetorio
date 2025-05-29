@@ -613,6 +613,10 @@ data.raw.technology["space-platform"].effects = {
   {
     type = "unlock-recipe",
     recipe = "oxide-asteroid-crushing"
+  },
+  {
+    type = "unlock-recipe",
+    recipe = "sp-graphite-impact-shell"
   }
 }
 data.raw.technology["space-platform"].research_trigger = nil
