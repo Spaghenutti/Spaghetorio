@@ -593,6 +593,49 @@ data.raw.technology["rocket-turret"].unit.ingredients = {
 
 table.insert(data.raw.technology["railgun"].prerequisites, "sp-military-science-pack-3")
 
+data.raw.technology["space-platform"].effects = {
+  {
+    type = "unlock-recipe",
+    recipe = "asteroid-collector"
+  },
+  {
+    type = "unlock-recipe",
+    recipe = "cargo-bay"
+  },
+  {
+    type = "unlock-recipe",
+    recipe = "metallic-asteroid-crushing"
+  },
+  {
+    type = "unlock-recipe",
+    recipe = "carbonic-asteroid-crushing"
+  },
+  {
+    type = "unlock-recipe",
+    recipe = "oxide-asteroid-crushing"
+  }
+}
+data.raw.technology["space-platform"].research_trigger = nil
+data.raw.technology["space-platform"].unit = {
+  count = 500,
+  ingredients = {
+    {"sp-automation-science-pack-2", 1},
+    {"sp-logistic-science-pack-2", 1},
+    {"sp-material-science-pack-2", 1},
+    {"sp-geological-science-pack-2", 1},
+    {"sp-electronic-science-pack-2", 1},
+    {"sp-chemical-science-pack-2", 1},
+    {"sp-metallurgic-science-pack-2", 1},
+    {"sp-electromagnetic-science-pack-2", 1},
+    {"production-science-pack", 1},
+    {"utility-science-pack", 1},
+    {"cryogenic-science-pack", 1},
+    {"agricultural-science-pack", 1},
+    {"sp-computer-science-pack-2", 1}
+  },
+  time = 30
+}
+
 --------------------------------------------------------------------------------
 -- MARK: Infinite technologies
 --------------------------------------------------------------------------------
@@ -849,4 +892,25 @@ data.raw.technology["cryogenic-science-pack"].unit = {
     {"agricultural-science-pack", 1}
   },
   time = 30
+}
+
+data.raw.technology["space-science-pack"].research_trigger = nil
+data.raw.technology["space-science-pack"].unit = {
+  count = 750,
+  ingredients = {
+    {"sp-automation-science-pack-2", 1},
+    {"sp-logistic-science-pack-2", 1},
+    {"sp-material-science-pack-2", 1},
+    {"sp-geological-science-pack-2", 1},
+    {"sp-electronic-science-pack-2", 1},
+    {"sp-chemical-science-pack-2", 1},
+    {"sp-metallurgic-science-pack-2", 1},
+    {"sp-electromagnetic-science-pack-2", 1},
+    {"production-science-pack", 1},
+    {"utility-science-pack", 1},
+    {"cryogenic-science-pack", 1},
+    {"agricultural-science-pack", 1},
+    {"sp-computer-science-pack-2", 1}
+  },
+  time = 45
 }

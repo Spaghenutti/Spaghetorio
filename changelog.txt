@@ -2,8 +2,9 @@
 Version: 0.3.18
 Date: 2025-06-06
   Changes:
+    - Changes in space science branch of tech tree
     - Changed location of high purity silicon in tech tree
-    - Changed recipes for cargo landing pad, space platform and space foundation
+    - Removed ferrite with copper, zinc and nickel recipes
   Bugfixes:
     - Fixed crystallizer animation speed
 ---------------------------------------------------------------------------------------------------

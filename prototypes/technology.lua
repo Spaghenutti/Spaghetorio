@@ -2918,20 +2918,8 @@ data:extend({
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-ferrite-with-nickel"
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-ferrite-with-zinc"
-      },
-      {
-        type = "unlock-recipe",
         recipe = "sp-ferrite-with-cobalt"
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-ferrite-with-copper"
-      },
+      }
     },
     prerequisites = {
       "sp-electronic-science-pack-1",
