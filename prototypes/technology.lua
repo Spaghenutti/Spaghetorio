@@ -784,9 +784,7 @@ data:extend({
       }
     },
     prerequisites = {
-      "utility-science-pack",
       "sp-carbon-high-tech",
-      "sp-high-purity-silicon-processing"
     },
     unit =
     {
@@ -2640,16 +2638,45 @@ data:extend({
   },
   {
     type = "technology",
-    name = "sp-semiconductor",  -- #ForRegEx# - technology
+    name = "sp-antenna-chip",  -- #ForRegEx# - technology
     icon_size = 256,
-    icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/hr-icons/antenna-chip.png", 256, nil,
-                                        "__Spaghetorio__/graphics/hr-icons/processor.png", 256, nil),
+    icon = "__Spaghetorio__/graphics/hr-icons/antenna-chip.png",
     effects =
     {
       {
         type = "unlock-recipe",
         recipe = "sp-antenna-chip"
+      }
+    },
+    prerequisites = {
+      "sp-computer-science-pack-2"
+    },
+    unit =
+    {
+      count = 250,
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-metallurgic-science-pack-2", 1},
+        {"sp-electromagnetic-science-pack-2", 1},
+        {"production-science-pack", 1},
+        {"utility-science-pack", 1},
+        {"sp-computer-science-pack-2", 1}
       },
+      time = 30
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-semiconductor",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghetorio__/graphics/hr-icons/processor.png",
+    effects =
+    {
       {
         type = "unlock-recipe",
         recipe = "sp-processor"
@@ -4761,22 +4788,19 @@ data:extend({
       },
     },
     prerequisites = {
-      "sp-electronic-science-pack-2",
-      "sp-metallurgic-science-pack-2"
+      "sp-chemical-science-pack-3",
     },
     unit =
     {
       count = 1000,
       ingredients = {
-        {"sp-automation-science-pack-2", 1},
+        {"sp-automation-science-pack-3", 1},
         {"sp-logistic-science-pack-2", 1},
-        {"sp-electronic-science-pack-2", 1},
-        {"sp-material-science-pack-2", 1},
         {"sp-chemical-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
         {"sp-geological-science-pack-2", 1},
-        {"production-science-pack", 1},
-        {"sp-metallurgic-science-pack-2", 1},
-        {"electromagnetic-science-pack", 1}
+        {"space-science-pack", 1},
+        {"sp-material-science-pack-2", 1}
       },
       time = 30
     },

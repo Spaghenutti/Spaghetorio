@@ -185,19 +185,6 @@ data.raw.technology["military-science-pack"].effects = {
   }
 }
 
-data.raw.technology["utility-science-pack"].prerequisites = {
-  "kr-research-server"
-}
-data.raw.technology["utility-science-pack"].unit.ingredients = {
-  {"sp-automation-science-pack-2", 1},
-  {"sp-logistic-science-pack-2", 1},
-  {"sp-chemical-science-pack-2", 1},
-  {"sp-material-science-pack-2", 1},
-  {"production-science-pack", 1},
-  {"sp-geological-science-pack-2", 1},
-  {"sp-electronic-science-pack-2", 1}
-}
-
 table.insert(data.raw.technology["logistics"].effects, {type = "unlock-recipe", recipe = "sp-kr-loader"})
 table.insert(data.raw.technology["logistics"].prerequisites, "sp-kr-automation-core")
 
@@ -861,7 +848,11 @@ data.raw.technology["rocket-silo"].prerequisites = {
   "sp-advanced-gearbox",
   "sp-rocket-engine",
   "sp-spark-plug",
-  "low-density-structure"
+  "sp-control-unit",
+  "low-density-structure",
+  "sp-photovoltaics",
+  "sp-antenna-chip",
+  "sp-kr-lithium-sulfur-battery"
 }
 data.raw.technology["rocket-silo"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},

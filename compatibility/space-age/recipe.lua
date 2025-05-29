@@ -189,6 +189,60 @@ util.recipe.change_recipe_ingredients("foundation",
   },
   6)
 
+data.raw.recipe["space-platform-foundation"].category = "sp-manufacturing"
+util.recipe.change_recipe_ingredients("space-platform-foundation",
+  {
+    {type = "item", name = "low-density-structure", amount = 10},
+    {type = "item", name = "sp-nimonic", amount = 6},
+    {type = "item", name = "sp-titanium-aluminum-tin", amount = 20},
+    {type = "item", name = "sp-invar", amount = 12},
+    {type = "item", name = "sp-optic-fiber", amount = 10},
+  },
+  12)
+
+data.raw.recipe["space-platform-starter-pack"].category = "sp-manufacturing"
+util.recipe.change_recipe_ingredients("space-platform-starter-pack",
+  {
+    {type = "item", name = "sp-elgiloy", amount = 80},
+    {type = "item", name = "low-density-structure", amount = 60},
+    {type = "item", name = "sp-aluminum-brass", amount = 16},
+    {type = "item", name = "space-platform-foundation", amount = 20},
+    {type = "item", name = "sp-control-unit", amount = 20},
+    {type = "item", name = "display-panel", amount = 6},
+    {type = "item", name = "sp-vacuum-pump", amount = 10},
+    {type = "item", name = "sp-pressure-valve", amount = 20},
+    {type = "item", name = "sp-photovoltaic-cell", amount = 100},
+    {type = "item", name = "sp-optic-fiber", amount = 20},
+    {type = "item", name = "sp-optical-sensor", amount = 8},
+    {type = "item", name = "sp-peltier-cell", amount = 30},
+    {type = "item", name = "sp-power-supply", amount = 10},
+    {type = "item", name = "sp-servo-motor", amount = 20},
+    {type = "item", name = "sp-lithium-sulfur-battery", amount = 50},
+    {type = "item", name = "sp-antenna-chip", amount = 8},
+    {type = "item", name = "sp-variable-frequenzy-drive", amount = 3},
+    {type = "item", name = "radar", amount = 1},
+  },
+  120)
+
+data.raw.recipe["cargo-landing-pad"].category = "sp-manufacturing"
+util.recipe.change_recipe_ingredients("cargo-landing-pad",
+  {
+    {type = "item", name = "sp-maraging-steel", amount = 60},
+    {type = "item", name = "sp-duralumin", amount = 45},
+    {type = "item", name = "sp-waspaloy", amount = 30},
+    {type = "item", name = "refined-concrete", amount = 40},
+    {type = "item", name = "sp-glass", amount = 20},
+    {type = "item", name = "sp-control-unit", amount = 40},
+    {type = "item", name = "display-panel", amount = 10},
+    {type = "item", name = "sp-optical-sensor", amount = 10},
+    {type = "item", name = "sp-power-supply", amount = 10},
+    {type = "item", name = "sp-optic-fiber", amount = 40},
+    {type = "item", name = "sp-antenna-chip", amount = 20},
+    {type = "item", name = "sp-variable-frequenzy-drive", amount = 10},
+    {type = "item", name = "radar", amount = 10},
+  },
+  90)
+
 util.recipe.change_recipe_ingredients("quality-module",
   {
     {type = "item", name = "sp-vacuum-tube", amount = 5},
@@ -279,7 +333,7 @@ util.recipe.change_recipe_ingredients("casting-copper-cable",
   0.4)
 
 --------------------------------------------------------------------------------
--- MARK: Oxidizing
+-- MARK: Fluids
 --------------------------------------------------------------------------------
 
 data.raw.recipe["holmium-solution"].category = "sp-oxidizing"

@@ -1,4 +1,12 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.3.18
+Date: 2025-06-06
+  Changes:
+    - Changed location of high purity silicon in tech tree
+    - Changed recipes for cargo landing pad, space platform and space foundation
+  Bugfixes:
+    - Fixed crystallizer animation speed
+---------------------------------------------------------------------------------------------------
 Version: 0.3.17
 Date: 2025-05-30
   Features:

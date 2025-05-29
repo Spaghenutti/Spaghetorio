@@ -11,7 +11,7 @@ local sounds = require("__base__/prototypes/entity/sounds")
 -- })
 
 local graphics_frame_count = 80
-local graphics_animation_speed = 0.7
+local graphics_animation_speed = 0.25
 local graphics_shift = {0, -0.5}
 local graphics_scale = 0.5
 local graphics_set = {

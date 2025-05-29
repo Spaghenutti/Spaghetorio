@@ -3,85 +3,72 @@
 
 local util = require("data-util")
 
-data.raw.technology["oil-processing"].unit.ingredients = {
-  {type = "item", name = "automation-science-pack", amount = 1},
-  {type = "item", name = "logistic-science-pack", amount = 1},
-  {type = "item", name = "sp-material-science-pack-1", amount = 1},
-  {type = "item", name = "sp-geological-science-pack-1", amount = 1}
-}
+-- data.raw.technology["oil-processing"].unit.ingredients = {
+--   {type = "item", name = "automation-science-pack", amount = 1},
+--   {type = "item", name = "logistic-science-pack", amount = 1},
+--   {type = "item", name = "sp-material-science-pack-1", amount = 1},
+--   {type = "item", name = "sp-geological-science-pack-1", amount = 1}
+-- }
 
-data.raw.technology["plastics"].unit.ingredients = {
-  {type = "item", name = "automation-science-pack", amount = 1},
-  {type = "item", name = "logistic-science-pack", amount = 1},
-  {type = "item", name = "sp-material-science-pack-1", amount = 1},
-  {type = "item", name = "sp-geological-science-pack-1", amount = 1}
-}
+-- data.raw.technology["plastics"].unit.ingredients = {
+--   {type = "item", name = "automation-science-pack", amount = 1},
+--   {type = "item", name = "logistic-science-pack", amount = 1},
+--   {type = "item", name = "sp-material-science-pack-1", amount = 1},
+--   {type = "item", name = "sp-geological-science-pack-1", amount = 1}
+-- }
 
-data.raw.technology["sulfur-processing"].unit.ingredients = {
-  {type = "item", name = "automation-science-pack", amount = 1},
-  {type = "item", name = "logistic-science-pack", amount = 1},
-  {type = "item", name = "sp-material-science-pack-1", amount = 1},
-  {type = "item", name = "sp-geological-science-pack-1", amount = 1}
-}
+-- data.raw.technology["sulfur-processing"].unit.ingredients = {
+--   {type = "item", name = "automation-science-pack", amount = 1},
+--   {type = "item", name = "logistic-science-pack", amount = 1},
+--   {type = "item", name = "sp-material-science-pack-1", amount = 1},
+--   {type = "item", name = "sp-geological-science-pack-1", amount = 1}
+-- }
 
-data.raw.technology["battery"].prerequisites = {
-  "sp-vinyl-chloride",
-  "sp-salt",
-  "production-science-pack"
-}
-data.raw.technology["battery"].unit.ingredients = {
-  {type = "item", name = "sp-automation-science-pack-2", amount = 1},
-  {type = "item", name = "logistic-science-pack", amount = 1},
-  {type = "item", name = "production-science-pack", amount = 1},
-  {type = "item", name = "chemical-science-pack", amount = 1},
-  {type = "item", name = "sp-material-science-pack-1", amount = 1},
-  {type = "item", name = "sp-electronic-science-pack-1", amount = 1}
-}
+-- data.raw.technology["battery"].prerequisites = {
+--   "sp-vinyl-chloride",
+--   "sp-salt",
+--   "production-science-pack"
+-- }
+-- data.raw.technology["battery"].unit.ingredients = {
+--   {type = "item", name = "sp-automation-science-pack-2", amount = 1},
+--   {type = "item", name = "logistic-science-pack", amount = 1},
+--   {type = "item", name = "production-science-pack", amount = 1},
+--   {type = "item", name = "chemical-science-pack", amount = 1},
+--   {type = "item", name = "sp-material-science-pack-1", amount = 1},
+--   {type = "item", name = "sp-electronic-science-pack-1", amount = 1}
+-- }
 
-table.insert(data.raw.technology["logistic-science-pack"].prerequisites, "engine")
+-- table.insert(data.raw.technology["logistic-science-pack"].prerequisites, "engine")
 
-data.raw.technology["military-science-pack"].prerequisites = {
-  "sp-intermediate-military",
-  "gun-turret",
-  "stone-wall",
-  "logistic-science-pack"
-}
-data.raw.technology["military-science-pack"].unit.ingredients = {
-  {type = "item", name = "automation-science-pack", amount = 1},
-  {type = "item", name = "logistic-science-pack", amount = 1}
-}
-data.raw.technology["military-science-pack"].effects = {
-  {
-    type = "unlock-recipe",
-    recipe = "military-science-pack"
-  }
-}
+-- data.raw.technology["military-science-pack"].prerequisites = {
+--   "sp-intermediate-military",
+--   "gun-turret",
+--   "stone-wall",
+--   "logistic-science-pack"
+-- }
+-- data.raw.technology["military-science-pack"].unit.ingredients = {
+--   {type = "item", name = "automation-science-pack", amount = 1},
+--   {type = "item", name = "logistic-science-pack", amount = 1}
+-- }
+-- data.raw.technology["military-science-pack"].effects = {
+--   {
+--     type = "unlock-recipe",
+--     recipe = "military-science-pack"
+--   }
+-- }
 
-data.raw.technology["production-science-pack"].prerequisites = {
-  "sp-actuator",
-  "sp-automation-science-pack-2"
-}
-data.raw.technology["production-science-pack"].unit.ingredients = {
-  {type = "item", name = "sp-automation-science-pack-2", amount = 1},
-  {type = "item", name = "logistic-science-pack", amount = 1},
-  {type = "item", name = "sp-material-science-pack-1", amount = 1},
-  {type = "item", name = "sp-electronic-science-pack-1", amount = 1},
-  {type = "item", name = "sp-geological-science-pack-1", amount = 1},
-  {type = "item", name = "chemical-science-pack", amount = 1}
-}
-
-data.raw.technology["utility-science-pack"].prerequisites = {
-  "kr-research-server"
-}
-data.raw.technology["utility-science-pack"].unit.ingredients = {
-  {type = "item", name = "sp-automation-science-pack-2", amount = 1},
-  {type = "item", name = "sp-logistic-science-pack-2", amount = 1},
-  {type = "item", name = "sp-chemical-science-pack-2", amount = 1},
-  {type = "item", name = "sp-material-science-pack-2", amount = 1},
-  {type = "item", name = "production-science-pack", amount = 1},
-  {type = "item", name = "sp-geological-science-pack-2", amount = 1},
-  {type = "item", name = "sp-electronic-science-pack-2", amount = 1}
-}
+-- data.raw.technology["production-science-pack"].prerequisites = {
+--   "sp-actuator",
+--   "sp-automation-science-pack-2"
+-- }
+-- data.raw.technology["production-science-pack"].unit.ingredients = {
+--   {type = "item", name = "sp-automation-science-pack-2", amount = 1},
+--   {type = "item", name = "logistic-science-pack", amount = 1},
+--   {type = "item", name = "sp-material-science-pack-1", amount = 1},
+--   {type = "item", name = "sp-electronic-science-pack-1", amount = 1},
+--   {type = "item", name = "sp-geological-science-pack-1", amount = 1},
+--   {type = "item", name = "chemical-science-pack", amount = 1}
+-- }
 
 -- block decomposition of certain recipe categories
 util.recipe.block_decomposition_for_recipe_category("sp-acroproduct-conversion-with-acrocrystal")

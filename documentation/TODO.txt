@@ -38,7 +38,7 @@ TODO for 0.3.19
     - Rhodium (Not added yet)
   - Update space science 2 branch of tech tree
 
-TODO for 0.3.19
+TODO for 0.3.20
   - Unlock legendary quality much later in tech tree
   - Update automation science 3
   - Update logistic science 3
@@ -58,13 +58,18 @@ TODO for 0.3.19
     - thallium used in optics
     - used in rodent poison
 
-TODO for 0.3.20
+TODO for 0.3.21
   - Add 2-3 more rare metals to rare metals technology
   - Add all 3-4 rare metals from asteroids
   - Add more rare metals comming from lava
   - Fix casting icons
 
 TODO for space branch
+  - Add asteroids
+  - Add asteroid connections
+  - Add technologies for unlocking
+  - Add multiple landing pads
+  - Add bad fuel recipe for space travel
   - Add back blunagium, grobgnum, rukite and yemnuth rockets (even though they are unlocked later)
 
 TODO for 0.4.1

@@ -7482,7 +7482,7 @@ data:extend({
     ingredients = {
       {type = "item", name = "sp-gold", amount = 1},
       {type = "item", name = "plastic-bar", amount = 1},
-      {type = "item", name = "sp-high-purity-silicon", amount = 4},
+      {type = "item", name = "sp-silicon", amount = 4},
       {type = "item", name = "copper-cable", amount = 2},
       {type = "item", name = "sp-titanium-nitride", amount = 2},
       {type = "item", name = "sp-platinum", amount = 1},
@@ -11204,7 +11204,7 @@ data:extend({
       {type = "item", name = "tungsten-carbide", amount = 1},
       {type = "item", name = "sp-titanium-niobium", amount = 2},
       {type = "item", name = "sp-graphene", amount = 3},
-      {type = "item", name = "sp-high-purity-silicon", amount = 1}
+      {type = "item", name = "sp-silicon", amount = 1}
     },
     results = {
       {type = "item", name = "sp-ceramic-matrix-composites", amount = 1}
