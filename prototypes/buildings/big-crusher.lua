@@ -71,7 +71,7 @@ data:extend({
             height = 256,
             frame_count = 30,
             line_length = 6,
-            animation_speed = 0.75,
+            animation_speed = 0.25,
           },
           {
             filename = "__Spaghetorio__/graphics/krastorio/entities/crusher/crusher-shadow.png",
@@ -101,7 +101,7 @@ data:extend({
       idle_sound = { filename = "__base__/sound/idle1.ogg" },
       apparent_volume = 1.5,
     },
-    crafting_speed = 1,
+    crafting_speed = 3,
     source_inventory_size = 1,
     result_inventory_size = 3,
     return_ingredients_on_change = true,
@@ -125,8 +125,8 @@ data:extend({
       orientation_to_variation = false,
     },
 
-    energy_usage = "225kW",
-    module_slots = 4,
+    energy_usage = "2250kW",
+    module_slots = 3,
     icon_draw_specification = {scale = 2.5, shift = {0, 0.0}},
     icons_positioning = {
       {inventory_index = defines.inventory.assembling_machine_modules, shift = {0, 1.25}}

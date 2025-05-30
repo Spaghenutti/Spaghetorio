@@ -1130,6 +1130,19 @@ data:extend({
   },
   {
     type = "fluid",
+    name = "sp-chloroform",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    base_color = {r=0.05, g=0.1, b=0.5},
+    flow_color = {r=0.05, g=0.1, b=0.5},
+    icon = "__Spaghetorio__/graphics/icons/chloroform.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-organic-chemical",
+    order = "a[chlorine]-f[chloroform]"
+  },
+  {
+    type = "fluid",
     name = "sp-vinyl-fluoride",  -- #ForRegEx# - fluid
     default_temperature = 25,
     heat_capacity = "0.1kJ",
@@ -1153,19 +1166,6 @@ data:extend({
     icon_mipmaps = 4,
     subgroup = "sp-organic-chemical",
     order = "a[fluorine]-f[chlorodifluoromethane]"
-  },
-  {
-    type = "fluid",
-    name = "sp-chloroform",  -- #ForRegEx# - fluid
-    default_temperature = 25,
-    heat_capacity = "0.1kJ",
-    base_color = {r=0.05, g=0.1, b=0.5},
-    flow_color = {r=0.05, g=0.1, b=0.5},
-    icon = "__Spaghetorio__/graphics/icons/chloroform.png",
-    icon_size = 64,
-    icon_mipmaps = 4,
-    subgroup = "sp-organic-chemical",
-    order = "a[fluorine]-f[chloroform]"
   },
   {
     type = "fluid",

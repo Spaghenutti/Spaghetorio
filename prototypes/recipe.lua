@@ -3964,7 +3964,7 @@ data:extend({
     subgroup = "sp-processed-metal",
     enabled = false,
     allow_productivity = false,
-    energy_required = 3,
+    energy_required = 10,
     ingredients = {
       {type = "item", name = "stone", amount = 1},
       {type = "fluid", name = "water", amount = 40}
@@ -3991,7 +3991,7 @@ data:extend({
     subgroup = "sp-processed-metal",
     enabled = false,
     allow_productivity = true,
-    energy_required = 4,
+    energy_required = 12,
     ingredients = {
       {type = "item", name = "iron-ore", amount = 1},
       {type = "fluid", name = "water", amount = 50}
@@ -4013,7 +4013,7 @@ data:extend({
     subgroup = "sp-processed-metal",
     enabled = false,
     allow_productivity = true,
-    energy_required = 5,
+    energy_required = 16,
     ingredients = {
       {type = "item", name = "copper-ore", amount = 1},
       {type = "fluid", name = "water", amount = 20}
@@ -4029,7 +4029,7 @@ data:extend({
     name = "sp-palladium",  -- #ForRegEx# - recipe
     icon = "__Spaghetorio__/graphics/icons/palladium.png",
     icon_size = 64,
-    mip_maps = 4,
+    mip_maps = 12,
     category = "sp-crushing-washing",
     subgroup = "sp-processed-metal",
     enabled = false,
@@ -4052,7 +4052,7 @@ data:extend({
     category = "sp-crushing-washing",
     enabled = false,
     allow_productivity = true,
-    energy_required = 1.2,
+    energy_required = 5,
     ingredients = {
       {type = "item", name = "coal", amount = 1},
       {type = "fluid", name = "sp-hydrogen-chloride", amount = 12},
@@ -4066,7 +4066,7 @@ data:extend({
     name = "sp-tellurium-hydroxide",  -- #ForRegEx# - recipe
     icon = "__Spaghetorio__/graphics/icons/tellurium-hydroxide.png",
     icon_size = 64,
-    mip_maps = 4,
+    mip_maps = 15,
     category = "sp-crushing-washing",
     subgroup = "sp-processed-resource",
     enabled = false,
@@ -4086,7 +4086,7 @@ data:extend({
     name = "sp-nuclear-waste-processing",  -- #ForRegEx# - recipe
     icons = util.icon.create_nuclear_recipe_icon(data.raw.item["sp-nuclear-waste"], data.raw.item["uranium-238"]),
     icon_size = 64,
-    mip_maps = 4,
+    mip_maps = 30,
     category = "sp-crushing-washing",
     subgroup = "sp-radioactive-resource",
     enabled = false,
@@ -4116,7 +4116,7 @@ data:extend({
                                                   {data.raw.item["sp-sodium"],
                                                    data.raw.item["sp-silver"]}),
     icon_size = 64,
-    mip_maps = 4,
+    mip_maps = 20,
     category = "sp-crushing-washing",
     subgroup = "sp-vulcanic-rock",
     enabled = false,
@@ -4141,7 +4141,7 @@ data:extend({
                                                   {data.raw.item["sp-crushed-iron-ore"],
                                                    data.raw.item["sp-iridium"]}),
     icon_size = 64,
-    mip_maps = 4,
+    mip_maps = 20,
     category = "sp-crushing-washing",
     subgroup = "sp-vulcanic-rock",
     enabled = false,
@@ -4166,7 +4166,7 @@ data:extend({
                                                   {data.raw.item["sp-potassium-chloride"],
                                                    data.raw.item["sp-platinum"]}),
     icon_size = 64,
-    mip_maps = 4,
+    mip_maps = 24,
     category = "sp-crushing-washing",
     subgroup = "sp-vulcanic-rock",
     enabled = false,
@@ -4190,7 +4190,7 @@ data:extend({
     icons = util.icon.create_crushing_recipe_icon(data.raw.item["sp-pumice"],
                                                   {data.raw.item["sp-magnesium-chloride"]}),
     icon_size = 64,
-    mip_maps = 4,
+    mip_maps = 24,
     category = "sp-crushing-washing",
     subgroup = "sp-vulcanic-rock",
     enabled = false,
@@ -4213,7 +4213,7 @@ data:extend({
     icons = util.icon.create_crushing_recipe_icon(data.raw.item["sp-rhyolite"],
                                                   {data.raw.item["sp-titanium-chloride"]}),
     icon_size = 64,
-    mip_maps = 4,
+    mip_maps = 30,
     category = "sp-crushing-washing",
     subgroup = "sp-vulcanic-rock",
     enabled = false,
@@ -4236,7 +4236,7 @@ data:extend({
                                                   {data.raw.item["sp-titanium-chloride"],
                                                    data.raw.item["sp-palladium"]}),
     icon_size = 64,
-    mip_maps = 4,
+    mip_maps = 24,
     category = "sp-crushing-washing",
     subgroup = "sp-vulcanic-rock",
     enabled = false,
@@ -8870,7 +8870,7 @@ data:extend({
     subgroup = "sp-crushed-resource-recipe",
     enabled = false,
     allow_productivity = true,
-    energy_required = 6,
+    energy_required = 18,
     ingredients = {
       {type = "item", name = "holmium-ore", amount = 3},
     },
@@ -8885,7 +8885,7 @@ data:extend({
     name = "sp-crushing-stibnite",  -- #ForRegEx# - recipe
     icon = "__Spaghetorio__/graphics/crushing/crushing-holmium-ore.png",
     icon_size = 256,
-    mip_maps = 4,
+    mip_maps = 15,
     category = "sp-heavy-crushing",
     subgroup = "sp-crushed-resource-recipe",
     enabled = false,

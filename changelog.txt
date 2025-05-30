@@ -9,6 +9,8 @@ Date: 2025-06-06
     - Changed location of high purity silicon in tech tree
     - Removed ferrite with copper, zinc and nickel recipes
     - Changed bleach recipe
+  Balancing:
+    - Increased power consumption and speed of big crusher and educed module slots from 4 to 3
   Bugfixes:
     - Fixed crystallizer animation speed
 ---------------------------------------------------------------------------------------------------
@@ -26,6 +28,9 @@ Date: 2025-05-30
     - Some recipes when enriching from crushed recoures yielded a small amount of an other ore. Now that ore is always in its crushed form.
     - Renamed mineral water pumpjack prototype (All of your mineral pumpjacks will be deleted when updating)
     - Hafnium and Rhenium alloys are processed in arcfurnace
+  Balancing:
+    - Belt immunity equipment is now unlocked earlier
+    - Rebalanced crystallizer
   Bugfixes:
     - Fixed some technology requirements for AAI Containers
     - Fixed some technology icons
@@ -35,9 +40,6 @@ Date: 2025-05-30
     - Fixed assembling machines required for crafting tier 2 and tier 3 modules
     - Fixed mineral water and iodine brine fluids icons were not showing up selecting them as train stop names
     - Fixed molten indium from lava recipe
-  Balancing:
-    - Belt immunity equipment is now unlocked earlier
-    - Rebalanced crystallizer
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.16
 Date: 2025-05-23
