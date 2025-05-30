@@ -17,6 +17,7 @@ TODO for 0.3.17
   + Fix AAI storhouse science ingredients
 
 TODO for 0.3.18
+  - Add seperator lines in README.md like in description of vacuum-cleaner mod
   - Use xenon for breeder reactor?
   + Add teflon
     + water + lots of tetrafluoroethylene + perfluorooctanoic-acid = teflon
