@@ -9,6 +9,7 @@ Date: 2025-06-06
     - Changed location of high purity silicon in tech tree
     - Removed ferrite with copper, zinc and nickel recipes
     - Changed bleach recipe
+    - Some icon changes
   Balancing:
     - Increased power consumption and speed of big crusher and educed module slots from 4 to 3
   Bugfixes:
