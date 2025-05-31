@@ -4,16 +4,19 @@ Date: 2025-06-06
   Features:
     - Rockets are built now in silo, rocket parts are built in manufacturer
     - Added teflon recipe chain
+    - Added rhodium
   Changes:
     - Changes in space science branch of tech tree
     - Changed location of high purity silicon in tech tree
     - Removed ferrite with copper, zinc and nickel recipes
     - Changed bleach recipe
     - Some icon changes
+    - Biological science pack 2 is now made in greenhouse
   Balancing:
     - Increased power consumption and speed of big crusher and educed module slots from 4 to 3
   Bugfixes:
     - Fixed crystallizer animation speed
+    - Fixed recipe subgroup of biological science pack 2
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.17
 Date: 2025-05-30

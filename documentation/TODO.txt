@@ -33,23 +33,32 @@ TODO for 0.3.18
   + Make rocket parts in manufacturer
   + To launch rocket use rocket parts + fuel
   + Finish reorganizing fluid icons
-  - Add ice subgroup
-  - Fix recipes for crushing existing asteroids
-    - metallic
-      - iron
-      - cobalt
-      - titanium
-      - rhodium
-    - carbonic
-      - carbon
-      - silica
-      - Methane ice
+  + Add ice subgroup
+  - Add cargo pod recipe
+    - gold foil
+    - electrum
+    - docking hatch
+    - rcs thruster
+  + Add cargo pod to rocket recipe
+    - recover cargo pod from landed cargo pod
+  + Fix recipes for crushing existing asteroids
+    + metallic
+      + iron
+      + cobalt
+        + cobalt oxide = cobalt billet + cobalt oxide
+      + titanium
+        + titanium chloride + hydrogen = titanium sponge + hydrogen chloride
+      + rhodium
+        - add recipe chain
+    + carbonic
+      + carbon
+      + Methane ice
         - methane   
-    - oxide
-      - Ice
+    + oxide
+      + Ice
         - water
-        - helium
-        - nitrogen
+      - helium
+      - nitrogen
 
 TODO for 0.3.19
   - Fix leadstone / lead recipe chain

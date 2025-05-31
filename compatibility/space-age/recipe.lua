@@ -180,6 +180,16 @@ util.recipe.change_recipe_ingredients("selector-combinator",
   },
   5)
 
+data.raw.recipe["holmium-solution"].category = "sp-oxidizing"
+util.recipe.change_recipe_ingredients("holmium-solution",
+  {
+    {type = "item", name = "holmium-ore", amount = 5},
+    {type = "item", name = "calcite", amount = 1},
+    {type = "fluid", name = "sp-aqueous-niobium", amount = 100},
+    {type = "fluid", name = "sp-oxygen", amount = 10},
+  },
+  10)
+
 util.recipe.change_recipe_ingredients("foundation",
   {
     {type = "item", name = "sp-tungsten-steel", amount = 1},
@@ -367,18 +377,33 @@ util.recipe.change_recipe_ingredients("casting-copper-cable",
   0.4)
 
 --------------------------------------------------------------------------------
--- MARK: Fluids
+-- MARK: Asteroids
 --------------------------------------------------------------------------------
 
-data.raw.recipe["holmium-solution"].category = "sp-oxidizing"
-util.recipe.change_recipe_ingredients("holmium-solution",
-  {
-    {type = "item", name = "holmium-ore", amount = 5},
-    {type = "item", name = "calcite", amount = 1},
-    {type = "fluid", name = "sp-aqueous-niobium", amount = 100},
-    {type = "fluid", name = "sp-oxygen", amount = 10},
-  },
-  10)
+data.raw.recipe["metallic-asteroid-crushing"].energy_required = 8
+data.raw.recipe["metallic-asteroid-crushing"].results = {
+  {type = "item", name = "iron-ore", amount = 20},
+  {type = "item", name = "sp-titanium-ore", amount = 12},
+  {type = "item", name = "sp-cobalt-ore", amount = 8},
+  {type = "item", name = "sp-rhodium", amount = 1},
+  {type = "item", name = "metallic-asteroid-chunk", probability = 0.2, amount = 1},
+}
+
+data.raw.recipe["carbonic-asteroid-crushing"].energy_required = 6
+data.raw.recipe["carbonic-asteroid-crushing"].results = {
+  {type = "item", name = "sp-methane-ice", amount = 20},
+  {type = "item", name = "carbon", amount = 10},
+  {type = "item", name = "carbonic-asteroid-chunk", probability = 0.2, amount = 1},
+}
+
+data.raw.recipe["oxide-asteroid-crushing"].category = "sp-crushing-washing" 
+data.raw.recipe["oxide-asteroid-crushing"].energy_required = 6
+data.raw.recipe["oxide-asteroid-crushing"].results = {
+  {type = "item", name = "ice", amount = 20},
+  {type = "fluid", name = "sp-helium", amount = 20},
+  {type = "fluid", name = "sp-nitrogen", amount = 5},
+  {type = "item", name = "oxide-asteroid-chunk", probability = 0.2, amount = 1},
+}
 
 --------------------------------------------------------------------------------
 -- MARK: Combat
@@ -636,6 +661,8 @@ data.raw.recipe["electromagnetic-science-pack"].results = {
   {type = "item", name = "electromagnetic-science-pack", amount = 5}
 }
 
+data.raw.recipe["agricultural-science-pack"].category = "sp-wood-farming"
+data.raw.recipe["agricultural-science-pack"].subgroup = "sp-intermediate-science"
 util.recipe.change_recipe_ingredients("agricultural-science-pack",
   {
     {type = "item", name = "sp-blank-tech-card", amount = 5},

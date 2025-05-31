@@ -617,6 +617,14 @@ data.raw.technology["space-platform"].effects = {
   {
     type = "unlock-recipe",
     recipe = "sp-graphite-impact-shell"
+  },
+  {
+    type = "unlock-recipe",
+    recipe = "sp-titanium-sponge-from-hydrogen"
+  },
+  {
+    type = "unlock-recipe",
+    recipe = "sp-cobalt-billet-from-cobalt-oxide"
   }
 }
 data.raw.technology["space-platform"].research_trigger = nil

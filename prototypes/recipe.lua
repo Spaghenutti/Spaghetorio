@@ -259,6 +259,24 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "sp-cobalt-billet-from-cobalt-oxide",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/cobalt-billet.png", 64,
+                                         "__Spaghetorio__/graphics/icons/cobalt-oxide.png", 64),
+    category = "smelting",
+    subgroup = "sp-raw-material",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 6,
+    ingredients = {
+      {type = "item", name = "sp-cobalt-oxide", amount = 2}
+    },
+    results = {
+      {type = "item", name = "sp-cobalt-billet", amount = 1},
+      {type = "item", name = "sp-cobalt-oxide", probability = 0.3, amount = 1}
+    }
+  },
+  {
+    type = "recipe",
     name = "sp-nickel-ingot",  -- #ForRegEx# - recipe
     icon = "__Spaghetorio__/graphics/icons/nickel-ingot.png",
     icon_size = 64,
@@ -5219,6 +5237,71 @@ data:extend({
       {type = "fluid", name = "sp-cold-coolant", amount = 5}
     },
   },
+  {
+    type = "recipe",
+    name = "sp-lithium-sulfur-battery",  -- #ForRegEx# - recipe
+    category = "chemistry",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 8,
+    ingredients = {
+      {type = "item", name = "lithium", amount = 8},
+      {type = "item", name = "sp-cobalt-billet", amount = 2},
+      {type = "item", name = "sp-aluminum-sheet", amount = 2},
+      {type = "item", name = "sp-manganese-chloride", amount = 1},
+      {type = "item", name = "sp-graphene", amount = 4},
+      {type = "fluid", name = "sulfuric-acid", amount = 20},
+      {type = "fluid", name = "electrolyte", amount = 8}
+    },
+    results = {
+      {type = "item", name = "sp-lithium-sulfur-battery", amount = 2}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-sodium-hydroxide-from-liquid-sodium",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/sodium-hydroxide.png", 64,
+                                         "__Spaghetorio__/graphics/icons/liquid-sodium.png", 64),
+    category = "chemistry",
+    enabled = false,
+    allow_productivity = true,
+    hide_from_player_crafting = true,
+    energy_required = 30,
+    ingredients = {
+      {type = "fluid", name = "sp-liquid-sodium", amount = 35},
+      {type = "fluid", name = "water", amount = 100},
+    },
+    results = {
+      {type = "fluid", name = "sp-sodium-hydroxide", amount = 60},
+    },
+    crafting_machine_tint = {
+      primary = {r = 0.6, g = 0.0, b = 0.6, a = 1.000},
+      secondary = {r = 0.3, g = 0.0, b = 0.3, a = 1.000},
+      tertiary = {r = 0.1, g = 0.0, b = 0.1, a = 1.000},
+      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-titanium-sponge-from-hydrogen",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/titanium-sponge.png", 64,
+                                         "__Spaghetorio__/graphics/krastorio/icons/fluids/hydrogen.png", 64),
+    icon_size = 64,
+    mip_maps = 4,
+    category = "chemistry",
+    subgroup = "sp-processed-resource",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 15,
+    ingredients = {
+      {type = "item", name = "sp-titanium-chloride", amount = 3},
+      {type = "fluid", name = "sp-hydrogen", amount = 10},
+    },
+    results = {
+      {type = "item", name = "sp-titanium-sponge", amount = 2},
+      {type = "fluid", name = "sp-hydrogen-chloride", amount = 10}
+    }
+  },
   ------------------------------------------------------------------------------
   -- MARK: advanced-chemistry
   ------------------------------------------------------------------------------
@@ -5282,7 +5365,7 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "sp-advanced-chemistry",
-    subgroup = "sp-organic-chemical",
+    subgroup = "sp-complex-organic-chemical",
     energy_required = 10,
     enabled = false,
     allow_productivity = true,
@@ -5837,7 +5920,7 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "sp-chemical-staging",
-    subgroup = "sp-organic-chemical",
+    subgroup = "sp-complex-organic-chemical",
     energy_required = 15,
     enabled = false,
     allow_productivity = true,
@@ -7893,26 +7976,6 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-lithium-sulfur-battery",  -- #ForRegEx# - recipe
-    category = "chemistry",
-    enabled = false,
-    allow_productivity = true,
-    energy_required = 8,
-    ingredients = {
-      {type = "item", name = "lithium", amount = 8},
-      {type = "item", name = "sp-cobalt-billet", amount = 2},
-      {type = "item", name = "sp-aluminum-sheet", amount = 2},
-      {type = "item", name = "sp-manganese-chloride", amount = 1},
-      {type = "item", name = "sp-graphene", amount = 4},
-      {type = "fluid", name = "sulfuric-acid", amount = 20},
-      {type = "fluid", name = "electrolyte", amount = 8}
-    },
-    results = {
-      {type = "item", name = "sp-lithium-sulfur-battery", amount = 2}
-    }
-  },
-  {
-    type = "recipe",
     name = "sp-laser",  -- #ForRegEx# - recipe
     category = "electronics-with-fluid",
     enabled = false,
@@ -9345,30 +9408,6 @@ data:extend({
       {type = "item", name = "sp-indium-ingot", amount = 1},
     },
     order = "a-plate-[zinc-plate]"
-  },
-  {
-    type = "recipe",
-    name = "sp-sodium-hydroxide-from-liquid-sodium",  -- #ForRegEx# - recipe
-    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/sodium-hydroxide.png", 64,
-                                         "__Spaghetorio__/graphics/icons/liquid-sodium.png", 64),
-    category = "chemistry",
-    enabled = false,
-    allow_productivity = true,
-    hide_from_player_crafting = true,
-    energy_required = 30,
-    ingredients = {
-      {type = "fluid", name = "sp-liquid-sodium", amount = 35},
-      {type = "fluid", name = "water", amount = 100},
-    },
-    results = {
-      {type = "fluid", name = "sp-sodium-hydroxide", amount = 60},
-    },
-    crafting_machine_tint = {
-      primary = {r = 0.6, g = 0.0, b = 0.6, a = 1.000},
-      secondary = {r = 0.3, g = 0.0, b = 0.3, a = 1.000},
-      tertiary = {r = 0.1, g = 0.0, b = 0.1, a = 1.000},
-      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
-    }
   },
   {
     type = "recipe",
@@ -11621,6 +11660,26 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "sp-cargo-pod",  -- #ForRegEx# - recipe
+    category = "sp-manufacturing",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 3,
+    ingredients = {
+      {type = "item", name = "sp-chromium-cobalt", amount = 12},
+      {type = "item", name = "sp-nickel-cobalt", amount = 8},
+      {type = "item", name = "low-density-structure", amount = 8},
+      {type = "item", name = "sp-gyroscope", amount = 6},
+      {type = "item", name = "sp-infrared-sensor", amount = 4},
+      {type = "item", name = "sp-rocket-control-unit", amount = 2},
+      {type = "item", name = "sp-photovoltaic-cell", amount = 18},
+    },
+    results = {
+      {type = "item", name = "sp-cargo-pod", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
     name = "sp-kr-black-reinforced-plate",  -- #ForRegEx# - recipe
     category = "sp-manufacturing",
     enabled = false,
@@ -13244,6 +13303,7 @@ data:extend({
     hide_from_player_crafting = true,
     energy_required = 30,
     ingredients = {
+      {type = "item", name = "sp-cargo-pod", amount = 1},
       {type = "item", name = "rocket-part", amount = 10},
       {type = "item", name = "sp-solid-rocket-motor", amount = 6},
       {type = "item", name = "sp-rocket-engine", amount = 3},

@@ -1781,6 +1781,16 @@ data:extend({
     order = "[rhenium]",
     stack_size = 100
   },
+  {
+    type = "item",
+    name = "sp-rhodium",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/rhodium.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "sp-processed-metal",
+    order = "[rhodium]",
+    stack_size = 100
+  },
   ------------------------------------------------------------------------------
   -- MARK: radioactive-resource
   ------------------------------------------------------------------------------
@@ -6811,6 +6821,16 @@ data:extend({
   -- MARK: Group production
   -- MARK: space-related
   ------------------------------------------------------------------------------
+  {
+    type = "item",
+    name = "sp-cargo-pod",  -- #ForRegEx# - item
+    icon = "__base__/graphics/icons/cargo-pod.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "space-related",
+    order = "m-2-[blunagium-explorer]",
+    stack_size = 5
+  },
   {
     type = "item",
     name = "sp-blunagium-explorer",  -- #ForRegEx# - item
