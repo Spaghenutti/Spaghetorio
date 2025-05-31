@@ -39,6 +39,7 @@ TODO for 0.3.18
     - oxide
 
 TODO for 0.3.19
+  - Fix leadstone / lead recipe chain
   - Ion Chromatography
     - Add all elements as items
     - Add all chemicals
