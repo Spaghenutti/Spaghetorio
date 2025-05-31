@@ -20,15 +20,21 @@ data:extend({
   },
   {
     type = "item-subgroup",
+    name = "sp-ice",  -- #ForRegEx# - item-subgroup
+    group = "sp-resources",
+    order = "a2"
+  },
+  {
+    type = "item-subgroup",
     name = "sp-casting-raw-resource",  -- #ForRegEx# - item-subgroup
     group = "sp-resources",
-    order = "a1-casting"
+    order = "a2-casting"
   },
   {
     type = "item-subgroup",
     name = "sp-raw-resource",  -- #ForRegEx# - item-subgroup
     group = "sp-resources",
-    order = "a2"
+    order = "a3"
   },
   {
     type = "item-subgroup",

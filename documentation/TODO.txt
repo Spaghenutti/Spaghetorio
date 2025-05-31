@@ -33,10 +33,23 @@ TODO for 0.3.18
   + Make rocket parts in manufacturer
   + To launch rocket use rocket parts + fuel
   + Finish reorganizing fluid icons
+  - Add ice subgroup
   - Fix recipes for crushing existing asteroids
     - metallic
+      - iron
+      - cobalt
+      - titanium
+      - rhodium
     - carbonic
+      - carbon
+      - silica
+      - Methane ice
+        - methane   
     - oxide
+      - Ice
+        - water
+        - helium
+        - nitrogen
 
 TODO for 0.3.19
   - Fix leadstone / lead recipe chain
@@ -83,11 +96,15 @@ TODO for 0.3.21
   - Fix casting icons
 
 TODO for space branch
+  - Thrusters can be only built by megalium alloy which is made from the asteroids around nauvis
   - Add asteroids
   - Add asteroid connections
   - Add technologies for unlocking
   - Add multiple landing pads
   - Add bad fuel recipe for space travel
+    - hydrazine recipe chain
+    - cyanogen recipe chain
+  - Add support for planet visualizer mod
   - Add back blunagium, grobgnum, rukite and yemnuth rockets (even though they are unlocked later)
 
 TODO for 0.4.1

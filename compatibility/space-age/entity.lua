@@ -46,7 +46,8 @@ data.raw.item["calcite"].subgroup = "sp-raw-resource"
 data.raw.item["holmium-ore"].subgroup = "sp-raw-resource"
 data.raw.item["scrap"].subgroup = "sp-raw-resource"
 data.raw.item["tungsten-ore"].subgroup = "sp-raw-resource"
-data.raw.item["ice"].subgroup = "sp-raw-resource"
+
+data.raw.item["ice"].subgroup = "sp-ice"
 
 data.raw.item["carbon"].subgroup = "sp-processed-non-metal"
 data.raw.item["lithium"].subgroup = "sp-processed-metal"

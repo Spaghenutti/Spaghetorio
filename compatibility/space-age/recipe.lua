@@ -34,7 +34,8 @@ data.raw.recipe["tungsten-carbide"].subgroup = "sp-ceramic-material"
 data.raw.recipe["carbon-fiber"].subgroup = "sp-advanced-raw-material"
 
 data.raw.recipe["steam-condensation"].subgroup = "sp-aqueous-fluid"
-data.raw.recipe["ice-melting"].subgroup = "sp-aqueous-fluid"
+
+data.raw.recipe["ice-melting"].subgroup = "sp-ice"
 
 data.raw.recipe["holmium-solution"].subgroup = "sp-solution"
 data.raw.recipe["ammoniacal-solution-separation"].subgroup = "sp-solution"

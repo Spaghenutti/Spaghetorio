@@ -6314,7 +6314,7 @@ data:extend({
     type = "recipe",
     name = "sp-water-freezing",  -- #ForRegEx# - recipe
     category = "sp-freezing",
-    subgroup = "sp-aqueous-fluid",
+    subgroup = "sp-ice",
     enabled = false,
     allow_productivity = false,
     allow_decomposition = false,
