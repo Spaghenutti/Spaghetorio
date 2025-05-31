@@ -17,7 +17,6 @@ TODO for 0.3.17
   + Fix AAI storhouse science ingredients
 
 TODO for 0.3.18
-  - Add seperator lines in README.md like in description of vacuum-cleaner mod
   - Use xenon for breeder reactor?
   + Increase speed and module slots of big crusher
   + Reduce animation speed of big crusher
@@ -33,7 +32,7 @@ TODO for 0.3.18
   + Reach space :D
   + Make rocket parts in manufacturer
   + To launch rocket use rocket parts + fuel
-  - Finish reorganizing fluid icons
+  + Finish reorganizing fluid icons
   - Fix recipes for crushing existing asteroids
     - metallic
     - carbonic

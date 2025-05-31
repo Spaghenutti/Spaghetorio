@@ -7,6 +7,8 @@ I am currently cleaning up the second science tier in tech tree which is the lon
 
 If you have some cool ideas you can give me feedback in the discussions section.
 
+---------------------------------------------------------------------------------------------------
+
 # Spaghetorio
 
 Introducing the **Spaghetorio** mod for Factorio, where your factory is no longer a place of efficiency but a labyrinth of madness!
@@ -49,6 +51,8 @@ Your factory will never be the same... because it’s going to need therapy. Enj
 - Pathogen lab for an extense biological tech branch.
 - Support for [text plates](https://mods.factorio.com/mod/textplates?from=search)
 - Support for [LTN](https://mods.factorio.com/mod/LogisticTrainNetwork?from=search)
+
+---------------------------------------------------------------------------------------------------
 
 ## Reviews
 

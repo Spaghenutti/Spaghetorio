@@ -202,19 +202,6 @@ data:extend({
   },
   {
     type = "fluid",
-    name = "sp-heavy-water",  -- #ForRegEx# - fluid
-    default_temperature = 25,
-    heat_capacity = "0.1kJ",
-    base_color = {r=0.4, g=1.0, b=0.4},
-    flow_color = {r=0.4, g=1.0, b=0.4},
-    icon = "__Spaghetorio__/graphics/krastorio/icons/fluids/heavy-water.png",
-    icon_size = 64,
-    icon_mipmaps = 4,
-    subgroup = "sp-aqueous-fluid",
-    order = "a[fluid]-h[heavy-water]"
-  },
-  {
-    type = "fluid",
     name = "sp-drilling-fluid",  -- #ForRegEx# - fluid
     default_temperature = 25,
     base_color = {r=0.4, g=0.2, b=0.4},
@@ -631,19 +618,6 @@ data:extend({
     subgroup = "sp-gas",
     order = "a[gas]-x[xenon]"
   },
-  {
-    type = "fluid",
-    name = "sp-deuterium",  -- #ForRegEx# - fluid
-    default_temperature = 25,
-    heat_capacity = "0.1kJ",
-    base_color = {r=0.4, g=1.0, b=0.4},
-    flow_color = {r=0.4, g=1.0, b=0.4},
-    icon = "__Spaghetorio__/graphics/icons/deuterium.png",
-    icon_size = 64,
-    icon_mipmaps = 4,
-    subgroup = "sp-gas",
-    order = "a[gas]-z[deuterium]"
-  },
   ------------------------------------------------------------------------------
   -- MARK: inorganic-chemical
   ------------------------------------------------------------------------------
@@ -1013,19 +987,6 @@ data:extend({
   },
   {
     type = "fluid",
-    name = "sp-octane",  -- #ForRegEx# - fluid
-    default_temperature = 25,
-    heat_capacity = "0.1kJ",
-    base_color = {r=0.05, g=0.1, b=0.5},
-    flow_color = {r=0.05, g=0.1, b=0.5},
-    icon = "__Spaghetorio__/graphics/icons/octane.png",
-    icon_size = 64,
-    icon_mipmaps = 4,
-    subgroup = "sp-organic-chemical",
-    order = "a[carbon]-f[octane]"
-  },
-  {
-    type = "fluid",
     name = "sp-toluene",  -- #ForRegEx# - fluid
     default_temperature = 25,
     heat_capacity = "0.1kJ",
@@ -1166,45 +1127,6 @@ data:extend({
     icon_mipmaps = 4,
     subgroup = "sp-organic-chemical",
     order = "a[fluorine]-f[chlorodifluoromethane]"
-  },
-  {
-    type = "fluid",
-    name = "sp-heptadecafluoro-1-iodooctane",  -- #ForRegEx# - fluid
-    default_temperature = 25,
-    heat_capacity = "0.1kJ",
-    base_color = {r=0.05, g=0.1, b=0.5},
-    flow_color = {r=0.05, g=0.1, b=0.5},
-    icon = "__Spaghetorio__/graphics/icons/heptadecafluoro-1-iodooctane.png",
-    icon_size = 64,
-    icon_mipmaps = 4,
-    subgroup = "sp-organic-chemical",
-    order = "a[fluorine]-f[heptadecafluoro-1-iodooctane]"
-  },
-  {
-    type = "fluid",
-    name = "sp-perfluorooctane",  -- #ForRegEx# - fluid
-    default_temperature = 25,
-    heat_capacity = "0.1kJ",
-    base_color = {r=0.05, g=0.1, b=0.5},
-    flow_color = {r=0.05, g=0.1, b=0.5},
-    icon = "__Spaghetorio__/graphics/icons/perfluorooctane.png",
-    icon_size = 64,
-    icon_mipmaps = 4,
-    subgroup = "sp-organic-chemical",
-    order = "a[fluorine]-f[perfluorooctane]"
-  },
-  {
-    type = "fluid",
-    name = "sp-perfluorooctanoic-acid",  -- #ForRegEx# - fluid
-    default_temperature = 25,
-    heat_capacity = "0.1kJ",
-    base_color = {r=0.05, g=0.1, b=0.5},
-    flow_color = {r=0.05, g=0.1, b=0.5},
-    icon = "__Spaghetorio__/graphics/icons/perfluorooctanoic-acid.png",
-    icon_size = 64,
-    icon_mipmaps = 4,
-    subgroup = "sp-organic-chemical",
-    order = "a[fluorine]-f[perfluorooctanoic-acid]"
   },
   {
     type = "fluid",
@@ -1410,6 +1332,19 @@ data:extend({
   ------------------------------------------------------------------------------
   {
     type = "fluid",
+    name = "sp-octane",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    base_color = {r=0.05, g=0.1, b=0.5},
+    flow_color = {r=0.05, g=0.1, b=0.5},
+    icon = "__Spaghetorio__/graphics/icons/octane.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-complex-organic-chemical",
+    order = "a[carbon]-f[octane]"
+  },
+  {
+    type = "fluid",
     name = "sp-fatty-acids",  -- #ForRegEx# - fluid
     default_temperature = 25,
     heat_capacity = "0.1kJ",
@@ -1419,7 +1354,75 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "sp-complex-organic-chemical",
-    order = "[fatty-acids]"
+    order = "a[oxide]-f[fatty-acids]"
+  },
+  {
+    type = "fluid",
+    name = "sp-heptadecafluoro-1-iodooctane",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    base_color = {r=0.05, g=0.1, b=0.5},
+    flow_color = {r=0.05, g=0.1, b=0.5},
+    icon = "__Spaghetorio__/graphics/icons/heptadecafluoro-1-iodooctane.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-complex-organic-chemical",
+    order = "a[fluorine]-f[heptadecafluoro-1-iodooctane]"
+  },
+  {
+    type = "fluid",
+    name = "sp-perfluorooctane",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    base_color = {r=0.05, g=0.1, b=0.5},
+    flow_color = {r=0.05, g=0.1, b=0.5},
+    icon = "__Spaghetorio__/graphics/icons/perfluorooctane.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-complex-organic-chemical",
+    order = "a[fluorine]-f[perfluorooctane]"
+  },
+  {
+    type = "fluid",
+    name = "sp-perfluorooctanoic-acid",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    base_color = {r=0.05, g=0.1, b=0.5},
+    flow_color = {r=0.05, g=0.1, b=0.5},
+    icon = "__Spaghetorio__/graphics/icons/perfluorooctanoic-acid.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-complex-organic-chemical",
+    order = "a[fluorine]-f[perfluorooctanoic-acid]"
+  },
+  ------------------------------------------------------------------------------
+  -- MARK: alien
+  ------------------------------------------------------------------------------
+  {
+    type = "fluid",
+    name = "sp-deuterium",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    base_color = {r=0.4, g=1.0, b=0.4},
+    flow_color = {r=0.4, g=1.0, b=0.4},
+    icon = "__Spaghetorio__/graphics/icons/deuterium.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-advanced-fluid",
+    order = "a[gas]-z[deuterium]"
+  },
+  {
+    type = "fluid",
+    name = "sp-heavy-water",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    base_color = {r=0.4, g=1.0, b=0.4},
+    flow_color = {r=0.4, g=1.0, b=0.4},
+    icon = "__Spaghetorio__/graphics/krastorio/icons/fluids/heavy-water.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-advanced-fluid",
+    order = "a[fluid]-h[heavy-water]"
   },
   ------------------------------------------------------------------------------
   -- MARK: alien

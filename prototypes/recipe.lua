@@ -5614,7 +5614,7 @@ data:extend({
     name = "sp-carbon-monoxide",  -- #ForRegEx# - recipe
     icon = "__Spaghetorio__/graphics/icons/carbon-monoxide.png",
     category = "sp-chemical-staging",
-    subgroup = "sp-gas",
+    subgroup = "sp-organic-chemical",
     enabled = false,
     allow_productivity = false,
     energy_required = 2,
@@ -9391,7 +9391,7 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "sp-kr-electrolysis",
-    subgroup = "sp-gas",
+    subgroup = "sp-advanced-fluid",
     enabled = false,
     allow_productivity = true,
     energy_required = 6,
