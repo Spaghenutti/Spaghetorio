@@ -2827,6 +2827,26 @@ data:extend({
   },
   {
     type = "item",
+    name = "sp-nickel-rhodium",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/nickel-rhodium.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "sp-alloy",
+    order = "[nickel-rhodium]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "sp-platinum-rhodium",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/platinum-rhodium.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "sp-alloy",
+    order = "[platinum-rhodium]",
+    stack_size = 50
+  },
+  {
+    type = "item",
     name = "sp-rare-metals-alloy",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/rare-metals/rare-metals.png",
     icon_size = 64,

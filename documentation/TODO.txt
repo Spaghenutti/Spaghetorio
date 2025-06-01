@@ -45,7 +45,7 @@ TODO for 0.3.18
       + titanium
         + titanium chloride + hydrogen = titanium sponge + hydrogen chloride
       + rhodium
-        - add recipe chain
+        + add recipe chain
     + carbonic
       + carbon
       + Methane ice
@@ -53,8 +53,8 @@ TODO for 0.3.18
     + oxide
       + Ice
         - water
-      - helium
-      - nitrogen
+      + helium
+      + nitrogen
 
 TODO for 0.3.19
   - Fix leadstone / lead recipe chain

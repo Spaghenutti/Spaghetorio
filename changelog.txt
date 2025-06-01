@@ -4,7 +4,7 @@ Date: 2025-06-06
   Features:
     - Rockets are built now in silo, rocket parts are built in manufacturer
     - Added teflon recipe chain
-    - Added rhodium
+    - Added rhodium and its alloys
   Changes:
     - Changes in space science branch of tech tree
     - Landed cargo pods are recovered when picking them up

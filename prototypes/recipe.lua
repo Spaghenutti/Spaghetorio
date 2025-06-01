@@ -3563,6 +3563,36 @@ data:extend({
       {type = "item", name = "sp-hafnium", amount = 3}
     }
   },
+  {
+    type = "recipe",
+    name = "sp-nickel-rhodium",  -- #ForRegEx# - recipe
+    category = "sp-high-temperature-smelting",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 24,
+    ingredients = {
+      {type = "item", name = "sp-nickel-ingot", amount = 4},
+      {type = "item", name = "sp-rhodium", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-nickel-rhenium", amount = 5}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-platinum-rhodium",  -- #ForRegEx# - recipe
+    category = "sp-high-temperature-smelting",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 20,
+    ingredients = {
+      {type = "item", name = "sp-platinum", amount = 2},
+      {type = "item", name = "sp-rhodium", amount = 3},
+    },
+    results = {
+      {type = "item", name = "sp-platinum-rhodium", amount = 4}
+    }
+  },
   ------------------------------------------------------------------------------
   -- MARK: sp-kr-fluid-filtration
   ------------------------------------------------------------------------------
