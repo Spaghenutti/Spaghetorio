@@ -1852,6 +1852,7 @@ data.raw.recipe["utility-science-pack"].results = {
     {type = "item", name = "utility-science-pack", amount = 20}
   }
 
+data.raw.recipe["space-science-pack"].icon = "__Spaghetorio__/graphics/krastorio/icons/cards/matter-tech-card.png"
 util.recipe.change_recipe_ingredients("space-science-pack",
   {
     {type = "item", name = "sp-blank-tech-card", amount = 5},

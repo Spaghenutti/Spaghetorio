@@ -1784,7 +1784,7 @@ data:extend({
     },
     unit =
     {
-      count = 500,
+      count = 200,
       ingredients = {
         {"sp-automation-science-pack-2", 1},
         {"sp-logistic-science-pack-2", 1},

@@ -625,6 +625,10 @@ data.raw.technology["space-platform"].effects = {
   {
     type = "unlock-recipe",
     recipe = "sp-cobalt-billet-from-cobalt-oxide"
+  },
+  {
+    type = "unlock-recipe",
+    recipe = "sp-melting-methane-ice"
   }
 }
 data.raw.technology["space-platform"].research_trigger = nil
@@ -648,6 +652,32 @@ data.raw.technology["space-platform"].unit = {
   time = 30
 }
 
+data.raw.technology["space-platform-thruster"].effects = {
+  {
+    type = "unlock-recipe",
+    recipe = "thruster"
+  },
+  {
+    type = "unlock-recipe",
+    recipe = "thruster-fuel"
+  },
+  {
+    type = "unlock-recipe",
+    recipe = "thruster-oxidizer"
+  },
+  {
+    type = "unlock-recipe",
+    recipe = "sp-cyanogen"
+  },
+  {
+    type = "unlock-recipe",
+    recipe = "sp-hydrazine"
+  },
+  {
+    type = "unlock-recipe",
+    recipe = "sp-kr-water-separation"
+  }
+}
 data.raw.technology["space-platform-thruster"].prerequisites = {
   "sp-rhodium-alloys"
 }
@@ -923,25 +953,4 @@ data.raw.technology["cryogenic-science-pack"].unit = {
     {"agricultural-science-pack", 1}
   },
   time = 30
-}
-
-data.raw.technology["space-science-pack"].research_trigger = nil
-data.raw.technology["space-science-pack"].unit = {
-  count = 750,
-  ingredients = {
-    {"sp-automation-science-pack-2", 1},
-    {"sp-logistic-science-pack-2", 1},
-    {"sp-material-science-pack-2", 1},
-    {"sp-geological-science-pack-2", 1},
-    {"sp-electronic-science-pack-2", 1},
-    {"sp-chemical-science-pack-2", 1},
-    {"sp-metallurgic-science-pack-2", 1},
-    {"sp-electromagnetic-science-pack-2", 1},
-    {"production-science-pack", 1},
-    {"utility-science-pack", 1},
-    {"cryogenic-science-pack", 1},
-    {"agricultural-science-pack", 1},
-    {"sp-computer-science-pack-2", 1}
-  },
-  time = 45
 }

@@ -3575,7 +3575,7 @@ data:extend({
       {type = "item", name = "sp-rhodium", amount = 1},
     },
     results = {
-      {type = "item", name = "sp-nickel-rhenium", amount = 5}
+      {type = "item", name = "sp-nickel-rhodium", amount = 5}
     }
   },
   {
@@ -5362,6 +5362,24 @@ data:extend({
       {type = "fluid", name = "sp-hydrogen-chloride", amount = 10}
     }
   },
+  {
+    type = "recipe",
+    name = "sp-melting-methane-ice",  -- #ForRegEx# - recipe
+    icons = util.icon.melting_recipe_icon(data.raw.item["sp-methane-ice"], data.raw.fluid["sp-methane"]),
+    icon_size = 64,
+    mip_maps = 4,
+    category = "chemistry",
+    subgroup = "sp-ice",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 15,
+    ingredients = {
+      {type = "item", name = "sp-methane-ice", amount = 1},
+    },
+    results = {
+      {type = "fluid", name = "sp-methane", amount = 20},
+    }
+  },
   ------------------------------------------------------------------------------
   -- MARK: advanced-chemistry
   ------------------------------------------------------------------------------
@@ -5493,6 +5511,21 @@ data:extend({
       tertiary = {r = 0.430, g = 0.000, b = 0.450, a = 0.200},
       quaternary = {r = 0.800, g = 0.000, b = 0.100, a = 0.900},
     },
+  },
+  {
+    type = "recipe",
+    name = "sp-hydrazine",  -- #ForRegEx# - recipe
+    category = "sp-advanced-chemistry",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 12,
+    ingredients = {
+      {type = "fluid", name = "sp-hydrogen", amount = 1},
+      {type = "fluid", name = "sp-nitrogen", amount = 10},
+    },
+    results = {
+      {type = "fluid", name = "sp-hydrazine", amount = 4}
+    }
   },
   {
     type = "recipe",
@@ -6117,6 +6150,21 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-arsenic-iodide", amount = 3}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-cyanogen",  -- #ForRegEx# - recipe
+    category = "sp-chemical-staging",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 12,
+    ingredients = {
+      {type = "item", name = "carbon", amount = 1},
+      {type = "fluid", name = "sp-nitrogen", amount = 10},
+    },
+    results = {
+      {type = "fluid", name = "sp-cyanogen", amount = 5}
     }
   },
   ------------------------------------------------------------------------------
@@ -11731,7 +11779,7 @@ data:extend({
       {type = "item", name = "sp-aluminum-brass", amount = 2},
       {type = "item", name = "sp-boron-carbide", amount = 2},
       {type = "item", name = "sp-high-pressure-tank", amount = 1},
-      {type = "item", name = "sp-valve", amount = 3},
+      {type = "item", name = "sp-pressure-valve", amount = 3},
 
     },
     results = {

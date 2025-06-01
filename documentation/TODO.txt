@@ -17,7 +17,6 @@ TODO for 0.3.17
   + Fix AAI storhouse science ingredients
 
 TODO for 0.3.18
-  - Use xenon for breeder reactor?
   + Increase speed and module slots of big crusher
   + Reduce animation speed of big crusher
   + Add teflon
@@ -49,14 +48,17 @@ TODO for 0.3.18
     + carbonic
       + carbon
       + Methane ice
-        - methane   
+        + methane   
     + oxide
       + Ice
-        - water
+        + water
       + helium
       + nitrogen
 
 TODO for 0.3.19
+  - Fix noble gases recipe chain
+  - Get some noble gasses from methane ice
+  - Use xenon for breeder reactor?
   - Fix leadstone / lead recipe chain
   - Add methane and co2 from atmosphere
   - Ion Chromatography

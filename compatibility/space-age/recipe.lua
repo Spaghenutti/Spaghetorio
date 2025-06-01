@@ -287,6 +287,41 @@ util.recipe.change_recipe_ingredients("asteroid-collector",
   },
   60)
 
+data.raw.recipe["thruster"].category = "sp-manufacturing"
+util.recipe.change_recipe_ingredients("thruster",
+  {
+    {type = "item", name = "sp-kovar", amount = 8},
+    {type = "item", name = "sp-platinum-rhodium", amount = 2},
+    {type = "item", name = "sp-nickel-rhodium", amount = 12},
+    {type = "item", name = "sp-rocket-nozzle", amount = 1},
+    {type = "item", name = "sp-combustion-chamber", amount = 1},
+    {type = "item", name = "sp-turbopump", amount = 2},
+    {type = "item", name = "sp-high-pressure-tank", amount = 2},
+    {type = "item", name = "sp-control-unit", amount = 3},
+  },
+  20)
+
+data.raw.recipe["thruster-fuel"].category = "cryogenics"
+util.recipe.change_recipe_ingredients("thruster-fuel",
+  {
+    {type = "fluid", name = "sp-hydrazine", amount = 50},
+    {type = "fluid", name = "sp-cyanogen", amount = 40},
+  },
+  15)
+data.raw.recipe["thruster-fuel"].results = {
+  {type = "fluid", name = "thruster-fuel", amount = 25},
+}
+
+data.raw.recipe["thruster-oxidizer"].category = "cryogenics"
+util.recipe.change_recipe_ingredients("thruster-oxidizer",
+  {
+    {type = "fluid", name = "sp-oxygen", amount = 50},
+  },
+  20)
+data.raw.recipe["thruster-oxidizer"].results = {
+  {type = "fluid", name = "thruster-oxidizer", amount = 25},
+}
+
 util.recipe.change_recipe_ingredients("quality-module",
   {
     {type = "item", name = "sp-vacuum-tube", amount = 5},

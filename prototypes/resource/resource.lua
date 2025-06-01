@@ -444,8 +444,11 @@ data:extend({
       mining_visualisation_tint = {r=0.3, g=0.9, b=0.61, a=1.0},
     },
     {
-      base_density = 3,
-      has_starting_area_placement = false,
+      base_density = 5,
+      base_spots_per_km2 = 0.5,
+      richness_post_multiplier = 2,
+      regular_rq_factor_multiplier = 0.9,
+      has_starting_area_placement = true,
     }
   ),
   basic_resource(

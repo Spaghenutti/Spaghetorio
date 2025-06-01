@@ -309,6 +309,15 @@ function data_util.create_thawing_recipe_icon(item)
   return icons
 end
 
+function data_util.melting_recipe_icon(input_item, output_item)
+  icons = {
+    {icon = output_item.icon, icon_size = output_item.icon_size, scale = 0.6, shift = {0, 12}},
+    {icon = input_item.icon, icon_size = input_item.icon_size, scale = 0.7, shift = {0, -12}},
+  }
+
+  return icons
+end
+
 function data_util.create_nuclear_recipe_icon(input_item, output_item)
   icons = {
     {icon = input_item.icon, icon_size = input_item.icon_size, scale = 0.7, shift = {-12, -12}},
