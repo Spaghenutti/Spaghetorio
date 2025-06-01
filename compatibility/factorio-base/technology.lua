@@ -1124,15 +1124,15 @@ data.raw.technology["fusion-reactor-equipment"].unit.ingredients = {
 }
 
 --------------------------------------------------------------------------------
--- MARK: Krastorio tech
---------------------------------------------------------------------------------
-
-
-
---------------------------------------------------------------------------------
 -- MARK: Military
 --------------------------------------------------------------------------------
 
+data.raw.technology["military"].effects = {
+  {
+    type = "unlock-recipe",
+    recipe = "submachine-gun"
+  },
+}
 data.raw.technology["military"].prerequisites = {
   "sp-iron-machining"
 }

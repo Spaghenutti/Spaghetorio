@@ -17,6 +17,7 @@ Date: 2025-06-06
   Bugfixes:
     - Fixed crystallizer animation speed
     - Fixed recipe subgroup of biological science pack 2
+    - Fixed that shotgun and shutgun ammo was unlocked twice in tech tree
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.17
 Date: 2025-05-30
