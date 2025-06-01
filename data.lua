@@ -88,6 +88,10 @@ require("prototypes.resource.autoplace-control")
 require("prototypes.resource.particle")
 require("prototypes.resource.resource")
 
+require("prototypes.space.asteroid-spawn-definitions")
+require("prototypes.space.asteroid")
+require("prototypes.space.space-connection")
+
 require("prototypes.category")
 require("prototypes.equipment")
 require("prototypes.fluid")
