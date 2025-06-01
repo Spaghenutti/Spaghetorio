@@ -922,6 +922,20 @@ data:extend({
       {type = "item", name = "sp-rukite-bar", amount = 1}
     }
   },
+  {
+    type = "recipe",
+    name = "sp-gold-foil",  -- #ForRegEx# - recipe
+    category = "sp-intermediate-smelting",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 2,
+    ingredients = {
+      {type = "item", name = "sp-gold", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-gold-foil", amount = 1}
+    }
+  },
   ------------------------------------------------------------------------------
   -- MARK: enriching-raw-resource
   ------------------------------------------------------------------------------
@@ -2168,6 +2182,22 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-holmium-cobalt-iron", amount = 10}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-electrum",  -- #ForRegEx# - recipe
+    category = "sp-alloy-smelting",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 48,
+    ingredients = {
+      {type = "item", name = "sp-gold", amount = 6},
+      {type = "item", name = "sp-silver", amount = 5},
+      {type = "item", name = "sp-palladium", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-electrum", amount = 12}
     }
   },
   {
@@ -11660,6 +11690,43 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "sp-reaction-control-system",  -- #ForRegEx# - recipe
+    category = "sp-manufacturing",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 3,
+    ingredients = {
+      {type = "item", name = "sp-electrum", amount = 1},
+      {type = "item", name = "sp-nickel-rhenium", amount = 1},
+      {type = "item", name = "sp-aluminum-brass", amount = 2},
+      {type = "item", name = "sp-boron-carbide", amount = 2},
+      {type = "item", name = "sp-high-pressure-tank", amount = 1},
+      {type = "item", name = "sp-valve", amount = 3},
+
+    },
+    results = {
+      {type = "item", name = "sp-reaction-control-system", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-docking-hatch",  -- #ForRegEx# - recipe
+    category = "sp-manufacturing",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 3,
+    ingredients = {
+      {type = "item", name = "sp-kovar", amount = 5},
+      {type = "item", name = "sp-waspaloy", amount = 2},
+      {type = "item", name = "sp-nickel-cobalt", amount = 2},
+      {type = "item", name = "sp-glass", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-docking-hatch", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
     name = "sp-cargo-pod",  -- #ForRegEx# - recipe
     category = "sp-manufacturing",
     enabled = false,
@@ -11672,6 +11739,9 @@ data:extend({
       {type = "item", name = "sp-gyroscope", amount = 6},
       {type = "item", name = "sp-infrared-sensor", amount = 4},
       {type = "item", name = "sp-rocket-control-unit", amount = 2},
+      {type = "item", name = "sp-reaction-control-system", amount = 6},
+      {type = "item", name = "sp-docking-hatch", amount = 1},
+      {type = "item", name = "sp-gold-foil", amount = 4},
       {type = "item", name = "sp-photovoltaic-cell", amount = 18},
     },
     results = {

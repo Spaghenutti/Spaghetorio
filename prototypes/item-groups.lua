@@ -3,7 +3,6 @@ local util = require("data-util")
 data:extend({
   ------------------------------------------------------------------------------
   -- MARK: resources
-  -- New group resources in first place
   ------------------------------------------------------------------------------
   {
     type = "item-group",
@@ -192,7 +191,6 @@ data:extend({
   },
   ------------------------------------------------------------------------------
   -- MARK: intermediate-products
-  -- Set intermediate-products to third place
   ------------------------------------------------------------------------------
   {
     type = "item-group",
@@ -260,36 +258,103 @@ data:extend({
   },
   ------------------------------------------------------------------------------
   -- MARK: logistics
-  -- Set logistics to third place
   ------------------------------------------------------------------------------
   {
     type = "item-group",
     name = "logistics",
-    order = "c",
+    order = "d",
     icon = "__base__/graphics/item-group/logistics.png",
     icon_size = 128,
     icon_mipmaps = 2
   },
   ------------------------------------------------------------------------------
   -- MARK: production
-  -- Set production to forth place
   ------------------------------------------------------------------------------
   {
     type = "item-group",
     name = "production",
-    order = "d",
+    order = "e",
     icon = "__base__/graphics/item-group/production.png",
     icon_size = 128,
     icon_mipmaps = 2
   },
   ------------------------------------------------------------------------------
+  -- MARK: space
+  ------------------------------------------------------------------------------
+  {
+    type = "item-group",
+    name = "space",
+    order = "f",
+    icon = "__space-age__/graphics/item-group/space.png",
+    icon_size = 128,
+  },
+  {
+    type = "item-subgroup",
+    name = "space-interactors",
+    group = "space",
+    order = "a"
+  },
+  {
+    type = "item-subgroup",
+    name = "space-platform",
+    group = "space",
+    order = "b"
+  },
+  {
+    type = "item-subgroup",
+    name = "space-rocket",
+    group = "space",
+    order = "c"
+  },
+  {
+    type = "item-subgroup",
+    name = "sp-space-intermediates",  -- #ForRegEx# - item-subgroup
+    group = "space",
+    order = "d"
+  },
+  {
+    type = "item-subgroup",
+    name = "space-environment",
+    group = "space",
+    order = "e"
+  },
+  {
+    type = "item-subgroup",
+    name = "space-material",
+    group = "space",
+    order = "f"
+  },
+  {
+    type = "item-subgroup",
+    name = "space-crushing",
+    group = "space",
+    order = "g"
+  },
+  {
+    type = "item-subgroup",
+    name = "space-processing",
+    group = "space",
+    order = "h"
+  },
+  {
+    type = "item-subgroup",
+    name = "planets",
+    group = "space",
+    order = "i"
+  },
+  {
+    type = "item-subgroup",
+    name = "planet-connections",
+    group = "space",
+    order = "j"
+  },
+  ------------------------------------------------------------------------------
   -- MARK: science-products
-  -- New group base-products in fifth place
   ------------------------------------------------------------------------------
   {
     type = "item-group",
     name = "sp-science-products",  -- #ForRegEx# - item-group
-    order = "e",
+    order = "g",
     icon = "__base__/graphics/icons/automation-science-pack.png",
     icon_size = 64,
     icon_mipmaps = 2
@@ -384,26 +449,48 @@ data:extend({
     group = "sp-resources",
     order = "l-crushing"
   },
-  ------------------------------------------------------------------------------
-  -- MARK: combat
-  -- Set combat to sixth place
+    ------------------------------------------------------------------------------
+  -- MARK: biology
   ------------------------------------------------------------------------------
   {
     type = "item-group",
-    name = "combat",
-    order = "f",
-    icon = "__base__/graphics/item-group/military.png",
-    icon_size = 128,
-    icon_mipmaps = 2
+    name = "sp-biology",  -- #ForRegEx# - item-group
+    order = "h",
+    -- There is no icon_scale or something value i can pass to scale image...??
+    icon = "__Spaghetorio__/graphics/item-groups/fish-breeding.png",
+    icon_size = 76,
+  },
+  {
+    type = "item-subgroup",
+    name = "sp-basic-agriculture",  -- #ForRegEx# - item-subgroup
+    group = "sp-biology",
+    order = "a"
+  },
+  {
+    type = "item-subgroup",
+    name = "sp-frozen",  -- #ForRegEx# - item-subgroup
+    group = "sp-biology",
+    order = "z1"
+  },
+  {
+    type = "item-subgroup",
+    name = "sp-freezing",  -- #ForRegEx# - item-subgroup
+    group = "sp-biology",
+    order = "z2"
+  },
+  {
+    type = "item-subgroup",
+    name = "sp-thawing",  -- #ForRegEx# - item-subgroup
+    group = "sp-biology",
+    order = "z3"
   },
   ------------------------------------------------------------------------------
   -- MARK: fluid
-  -- Set fluid to seventh place
   ------------------------------------------------------------------------------
   {
     type = "item-group",
     name = "fluids",
-    order = "g",
+    order = "i",
     icon = "__base__/graphics/item-group/fluids.png",
     icon_size = 128,
     icon_mipmaps = 2
@@ -493,40 +580,15 @@ data:extend({
     order = "z"
   },
   ------------------------------------------------------------------------------
-  -- MARK: biology
-  -- Set biology to seventh place
+  -- MARK: combat
   ------------------------------------------------------------------------------
   {
     type = "item-group",
-    name = "sp-biology",  -- #ForRegEx# - item-group
-    order = "h",
-    -- There is no icon_scale or something value i can pass to scale image...??
-    icon = "__Spaghetorio__/graphics/item-groups/fish-breeding.png",
-    icon_size = 76,
-  },
-  {
-    type = "item-subgroup",
-    name = "sp-basic-agriculture",  -- #ForRegEx# - item-subgroup
-    group = "sp-biology",
-    order = "a"
-  },
-  {
-    type = "item-subgroup",
-    name = "sp-frozen",  -- #ForRegEx# - item-subgroup
-    group = "sp-biology",
-    order = "z1"
-  },
-  {
-    type = "item-subgroup",
-    name = "sp-freezing",  -- #ForRegEx# - item-subgroup
-    group = "sp-biology",
-    order = "z2"
-  },
-  {
-    type = "item-subgroup",
-    name = "sp-thawing",  -- #ForRegEx# - item-subgroup
-    group = "sp-biology",
-    order = "z3"
+    name = "combat",
+    order = "j",
+    icon = "__base__/graphics/item-group/military.png",
+    icon_size = 128,
+    icon_mipmaps = 2
   },
   ------------------------------------------------------------------------------
   -- MARK: other

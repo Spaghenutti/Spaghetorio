@@ -843,7 +843,9 @@ data.raw.technology["personal-roboport-mk2-equipment"].unit.ingredients = {
 
 table.insert(data.raw.technology["rocket-silo"].effects, 2, {type = "unlock-recipe", recipe = "sp-rocket"})  -- insert at 2nd position
 table.insert(data.raw.technology["rocket-silo"].effects, 4, {type = "unlock-recipe", recipe = "sp-cargo-pod"})  -- insert at 4th position
-table.insert(data.raw.technology["rocket-silo"].effects, 5, {type = "unlock-recipe", recipe = "sp-gyroscope"})  -- insert at 5th position
+table.insert(data.raw.technology["rocket-silo"].effects, 5, {type = "unlock-recipe", recipe = "sp-docking-hatch"})  -- insert at 5th position
+table.insert(data.raw.technology["rocket-silo"].effects, 6, {type = "unlock-recipe", recipe = "sp-reaction-control-system"})  -- insert at 6th position
+table.insert(data.raw.technology["rocket-silo"].effects, 7, {type = "unlock-recipe", recipe = "sp-gyroscope"})  -- insert at 7th position
 data.raw.technology["rocket-silo"].prerequisites = {
   "sp-rocket-control-unit",
   "rocket-fuel",
@@ -855,7 +857,8 @@ data.raw.technology["rocket-silo"].prerequisites = {
   "sp-photovoltaics",
   "sp-antenna-chip",
   "sp-kr-lithium-sulfur-battery",
-  "sp-teflon"
+  "sp-teflon",
+  "sp-noble-metals-smelting"
 }
 data.raw.technology["rocket-silo"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},

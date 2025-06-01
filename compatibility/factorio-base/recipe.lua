@@ -385,6 +385,7 @@ data.raw.recipe["kovarex-enrichment-process"].results = {
 }
 
 data.raw.recipe["rocket-part"].category = "sp-manufacturing"
+data.raw.recipe["rocket-part"].subgroup = "sp-space-intermediates"
 util.recipe.change_recipe_ingredients("rocket-part",
   {
     {type = "item", name = "sp-heat-resistant-tile", amount = 8},
@@ -395,6 +396,7 @@ util.recipe.change_recipe_ingredients("rocket-part",
     {type = "item", name = "sp-gyroscope", amount = 1},
     {type = "item", name = "sp-rocket-control-unit", amount = 1},
     {type = "item", name = "sp-teflon", amount = 2},
+    {type = "item", name = "sp-reaction-control-system", amount = 1},
   },
   12)
 

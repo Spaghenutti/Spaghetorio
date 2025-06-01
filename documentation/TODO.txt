@@ -34,13 +34,9 @@ TODO for 0.3.18
   + To launch rocket use rocket parts + fuel
   + Finish reorganizing fluid icons
   + Add ice subgroup
-  - Add cargo pod recipe
-    - gold foil
-    - electrum
-    - docking hatch
-    - rcs thruster
+  + Add cargo pod recipe
   + Add cargo pod to rocket recipe
-    - recover cargo pod from landed cargo pod
+    + recover cargo pod from landed cargo pod
   + Fix recipes for crushing existing asteroids
     + metallic
       + iron
@@ -115,6 +111,10 @@ TODO for space branch
     - cyanogen recipe chain
   - Add support for planet visualizer mod
   - Add back blunagium, grobgnum, rukite and yemnuth rockets (even though they are unlocked later)
+  - Add recipe for space science
+    - blank data card
+    - reaction control system
+    - gyroscope
 
 TODO for 0.4.1
   - Updates for cryogenic science

@@ -148,6 +148,8 @@ data.raw.lab["biolab"].icons_positioning = {
   {inventory_index = defines.inventory.lab_input, shift = {0, -0.9}, max_icons_per_row = 10, separation_multiplier = 1/1.1}
 }
 
+data.raw["temporary-container"]["cargo-pod-container"].minable.result = "sp-cargo-pod"
+
 -- tile conditions
 table.insert(data.raw.item["overgrowth-yumako-soil"].place_as_tile.tile_condition, "sp-artificial-gleba-soil")
 table.insert(data.raw.item["overgrowth-yumako-soil"].place_as_tile.tile_condition, "grass-1")
