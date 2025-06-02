@@ -119,6 +119,7 @@ TODO for space branch
     - blank data card
     - reaction control system
     - gyroscope
+  - See metal and stars mod https://mods.factorio.com/mod/metal-and-stars https://youtu.be/8pGgnDISc78?si=H3ddFWEihf-NK_A1&t=912
 
 TODO for 0.4.1
   - Updates for cryogenic science

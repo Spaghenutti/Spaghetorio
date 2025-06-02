@@ -19,7 +19,8 @@ asteroid_functions.system_edge_ratio     = {3, 5, 2, 0}
 -- MARK: asteroid probabilites
 asteroid_functions.default_chunks_small  = 0.0020
 asteroid_functions.default_chunks_medium = 0.0025
-asteroid_functions.default_chunks_huge   = 0.0005
+asteroid_functions.default_chunks_big    = 0.0015
+asteroid_functions.default_chunks_huge   = 0.0010
 
 asteroid_functions.nauvis_chunks         = 0.0125
 
@@ -45,7 +46,8 @@ asteroid_functions.promethium_medium     = asteroid_functions.default_chunks_med
 
 asteroid_functions.ruthenium_chunks      = asteroid_functions.default_chunks_small
 asteroid_functions.ruthenium_medium      = asteroid_functions.default_chunks_medium
--- asteroid_functions.ruthenium_huge        = asteroid_functions.default_chunks_huge
+asteroid_functions.ruthenium_big         = asteroid_functions.default_chunks_big
+asteroid_functions.ruthenium_huge        = asteroid_functions.default_chunks_huge
 
 asteroid_functions.rhodium_chunks        = asteroid_functions.default_chunks_small
 asteroid_functions.rhodium_medium        = asteroid_functions.default_chunks_medium

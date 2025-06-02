@@ -7,3 +7,5 @@
 
 require("compatibility.factorio-base.entity")
 -- require("compatibility.base-final-fixes")
+
+require("compatibility.data-final-fixes")

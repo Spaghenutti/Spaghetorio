@@ -2368,6 +2368,8 @@ data.raw.technology["utility-science-pack"].unit.ingredients = {
   {"production-science-pack", 1}
 }
 
+table.insert(data.raw.technology["space-science-pack"].effects, 1, {type = "unlock-space-location", space_location = "sp-rhodium-rich-asteroid", use_icon_overlay_constant = true})  -- insert at 1st position
+table.insert(data.raw.technology["space-science-pack"].effects, {type = "unlock-recipe", recipe = "sp-space-research-data"})
 data.raw.technology["space-science-pack"].icon = "__Spaghetorio__/graphics/krastorio/technologies/matter-tech-card.png"
 data.raw.technology["space-science-pack"].prerequisites = {
   "space-platform-thruster"

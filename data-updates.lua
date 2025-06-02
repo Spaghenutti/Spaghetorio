@@ -61,6 +61,7 @@ end
 -- end
 
 require("compatibility.EverythingOnNauvis.resource-updates")
+require("compatibility.EverythingOnNauvis.technology-updates")
 
 require("compatibility.factorio-base.data-updates")
 

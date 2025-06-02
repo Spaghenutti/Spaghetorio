@@ -61,7 +61,7 @@ data:extend({
     from = "sp-dysprosium-rich-asteroid",
     to = "sp-ruthenium-rich-asteroid",
     order = "a",
-    length = 36 * 1000,
+    length = 27 * 1000,
     asteroid_spawn_definitions = asteroid_util_space_age.spawn_definitions(asteroid_util.dysprosium_ruthenium)
   },
   {
@@ -101,7 +101,7 @@ data:extend({
     from = "sp-rhodium-rich-asteroid",
     to = "sp-ruthenium-rich-asteroid",
     order = "a",
-    length = 16 * 1000,
+    length = 19 * 1000,
     asteroid_spawn_definitions = asteroid_util_space_age.spawn_definitions(asteroid_util.rhodium_ruthenium)
   },
   {
@@ -111,7 +111,7 @@ data:extend({
     from = "sp-rhodium-rich-asteroid",
     to = "sp-terbium-rich-asteroid",
     order = "a",
-    length = 22 * 1000,
+    length = 18 * 1000,
     asteroid_spawn_definitions = asteroid_util_space_age.spawn_definitions(asteroid_util.rhodium_terbium)
   },
   {
@@ -121,7 +121,7 @@ data:extend({
     from = "sp-ruthenium-rich-asteroid",
     to = "sp-terbium-rich-asteroid",
     order = "a",
-    length = 20 * 1000,
+    length = 36 * 1000,
     asteroid_spawn_definitions = asteroid_util_space_age.spawn_definitions(asteroid_util.ruthenium_terbium)
   },
   {
@@ -141,7 +141,7 @@ data:extend({
     from = "sp-ytterbium-rich-asteroid",
     to = "sp-osmium-rich-asteroid",
     order = "a",
-    length = 62 * 1000,
+    length = 67 * 1000,
     asteroid_spawn_definitions = asteroid_util_space_age.spawn_definitions(asteroid_util.ytterbium_osmium)
   },
   {
@@ -171,7 +171,7 @@ data:extend({
     from = "sp-iridium-rich-asteroid",
     to = "sp-promethium-rich-asteroid",
     order = "a",
-    length = 27 * 1000,
+    length = 56 * 1000,
     asteroid_spawn_definitions = asteroid_util_space_age.spawn_definitions(asteroid_util.iridium_promethium)
   },
   {
@@ -181,7 +181,7 @@ data:extend({
     from = "sp-iridium-rich-asteroid",
     to = "sp-terbium-rich-asteroid",
     order = "a",
-    length = 27 * 1000,
+    length = 90 * 1000,
     asteroid_spawn_definitions = asteroid_util_space_age.spawn_definitions(asteroid_util.iridium_terbium)
   },
   {
@@ -191,7 +191,7 @@ data:extend({
     from = "sp-osmium-rich-asteroid",
     to = "sp-promethium-rich-asteroid",
     order = "a",
-    length = 88 * 1000,
+    length = 51 * 1000,
     asteroid_spawn_definitions = asteroid_util_space_age.spawn_definitions(asteroid_util.osmium_promethium)
   },
   {
@@ -201,7 +201,7 @@ data:extend({
     from = "sp-krypton-rich-asteroid",
     to = "sp-promethium-rich-asteroid",
     order = "a",
-    length = 88 * 1000,
+    length = 38 * 1000,
     asteroid_spawn_definitions = asteroid_util_space_age.spawn_definitions(asteroid_util.krypton_promethium)
   },
   {
@@ -211,7 +211,7 @@ data:extend({
     from = "sp-krypton-rich-asteroid",
     to = "sp-dysprosium-rich-asteroid",
     order = "a",
-    length = 88 * 1000,
+    length = 54 * 1000,
     asteroid_spawn_definitions = asteroid_util_space_age.spawn_definitions(asteroid_util.krypton_dysprosium)
   },
 })
