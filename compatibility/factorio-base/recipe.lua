@@ -1855,18 +1855,18 @@ data.raw.recipe["utility-science-pack"].results = {
 data.raw.recipe["space-science-pack"].icon = "__Spaghetorio__/graphics/krastorio/icons/cards/matter-tech-card.png"
 util.recipe.change_recipe_ingredients("space-science-pack",
   {
-    {type = "item", name = "sp-blank-tech-card", amount = 5},
-    {type = "item", name = "sp-space-research-data", amount = 5},
+    {type = "item", name = "sp-space-research-data", amount = 10},
     {type = "item", name = "sp-gyroscope", amount = 5},
-    {type = "item", name = "sp-optic-fiber", amount = 10},
-    {type = "item", name = "sp-mirror", amount = 5},
-    {type = "item", name = "sp-lens", amount = 5},
-    {type = "item", name = "sp-laser", amount = 5},
+    {type = "item", name = "sp-rocket-nozzle", amount = 5},
+    {type = "item", name = "sp-solid-rocket-motor", amount = 2},
+    {type = "item", name = "sp-combustion-chamber", amount = 1},
+    {type = "item", name = "sp-reaction-control-system", amount = 5},
+    {type = "item", name = "sp-rocket-control-unit", amount = 10}
   },
-  48)
+  60)
 data.raw.recipe["space-science-pack"].results = {
-    {type = "item", name = "space-science-pack", amount = 5}
-  }
+  {type = "item", name = "space-science-pack", amount = 10}
+}
 
 -- Remove barrel recipes
 util.recipe.remove_barrel_recipe("heavy-water")

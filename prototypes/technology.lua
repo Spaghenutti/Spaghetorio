@@ -10373,6 +10373,324 @@ data:extend({
     },
   },
   ------------------------------------------------------------------------------
+  -- MARK: Space locations
+  ------------------------------------------------------------------------------
+  {
+    type = "technology",
+    name = "sp-dysprosium-rich-asteroid",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghetorio__/graphics/hr-icons/dysprosium-rich-asteroid.png",
+    effects =
+    {
+      {
+        type = "unlock-space-location",
+        space_location = "sp-dysprosium-rich-asteroid",
+        use_icon_overlay_constant = true
+      }
+    },
+    prerequisites = {
+      "space-science-pack"
+    },
+    unit =
+    {
+      count = 1000,
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-metallurgic-science-pack-2", 1},
+        {"sp-electromagnetic-science-pack-2", 1},
+        {"production-science-pack", 1},
+        {"utility-science-pack", 1},
+        {"cryogenic-science-pack", 1},
+        {"agricultural-science-pack", 1},
+        {"sp-computer-science-pack-2", 1},
+        {"space-science-pack", 1}
+      },
+      time = 30
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-ruthenium-rich-asteroid",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghetorio__/graphics/hr-icons/ruthenium-rich-asteroid.png",
+    effects =
+    {
+      {
+        type = "unlock-space-location",
+        space_location = "sp-ruthenium-rich-asteroid",
+        use_icon_overlay_constant = true
+      }
+    },
+    prerequisites = {
+      "space-science-pack"
+    },
+    unit =
+    {
+      count = 1000,
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-metallurgic-science-pack-2", 1},
+        {"sp-electromagnetic-science-pack-2", 1},
+        {"production-science-pack", 1},
+        {"utility-science-pack", 1},
+        {"cryogenic-science-pack", 1},
+        {"agricultural-science-pack", 1},
+        {"sp-computer-science-pack-2", 1},
+        {"space-science-pack", 1}
+      },
+      time = 30
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-terbium-rich-asteroid",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghetorio__/graphics/hr-icons/terbium-rich-asteroid.png",
+    effects =
+    {
+      {
+        type = "unlock-space-location",
+        space_location = "sp-terbium-rich-asteroid",
+        use_icon_overlay_constant = true
+      }
+    },
+    prerequisites = {
+      "space-science-pack"
+    },
+    unit =
+    {
+      count = 1000,
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-metallurgic-science-pack-2", 1},
+        {"sp-electromagnetic-science-pack-2", 1},
+        {"production-science-pack", 1},
+        {"utility-science-pack", 1},
+        {"cryogenic-science-pack", 1},
+        {"agricultural-science-pack", 1},
+        {"sp-computer-science-pack-2", 1},
+        {"space-science-pack", 1}
+      },
+      time = 30
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-ytterbium-rich-asteroid",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghetorio__/graphics/hr-icons/ytterbium-rich-asteroid.png",
+    effects =
+    {
+      {
+        type = "unlock-space-location",
+        space_location = "sp-ytterbium-rich-asteroid",
+        use_icon_overlay_constant = true
+      }
+    },
+    prerequisites = {
+      "space-science-pack"
+    },
+    unit =
+    {
+      count = 1000,
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-metallurgic-science-pack-2", 1},
+        {"sp-electromagnetic-science-pack-2", 1},
+        {"production-science-pack", 1},
+        {"utility-science-pack", 1},
+        {"cryogenic-science-pack", 1},
+        {"agricultural-science-pack", 1},
+        {"sp-computer-science-pack-2", 1},
+        {"space-science-pack", 1}
+      },
+      time = 30
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-iridium-rich-asteroid",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghetorio__/graphics/hr-icons/iridium-rich-asteroid.png",
+    effects =
+    {
+      {
+        type = "unlock-space-location",
+        space_location = "sp-iridium-rich-asteroid",
+        use_icon_overlay_constant = true
+      }
+    },
+    prerequisites = {
+      "sp-dysprosium-rich-asteroid",
+      "sp-ruthenium-rich-asteroid",
+      "sp-terbium-rich-asteroid",
+      "sp-ytterbium-rich-asteroid"
+    },
+    unit =
+    {
+      count = 2000,
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-metallurgic-science-pack-2", 1},
+        {"sp-electromagnetic-science-pack-2", 1},
+        {"production-science-pack", 1},
+        {"utility-science-pack", 1},
+        {"cryogenic-science-pack", 1},
+        {"agricultural-science-pack", 1},
+        {"sp-computer-science-pack-2", 1},
+        {"space-science-pack", 1}
+      },
+      time = 30
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-osmium-rich-asteroid",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghetorio__/graphics/hr-icons/osmium-rich-asteroid.png",
+    effects =
+    {
+      {
+        type = "unlock-space-location",
+        space_location = "sp-osmium-rich-asteroid",
+        use_icon_overlay_constant = true
+      }
+    },
+    prerequisites = {
+      "sp-dysprosium-rich-asteroid",
+      "sp-ruthenium-rich-asteroid",
+      "sp-terbium-rich-asteroid",
+      "sp-ytterbium-rich-asteroid"
+    },
+    unit =
+    {
+      count = 2000,
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-metallurgic-science-pack-2", 1},
+        {"sp-electromagnetic-science-pack-2", 1},
+        {"production-science-pack", 1},
+        {"utility-science-pack", 1},
+        {"cryogenic-science-pack", 1},
+        {"agricultural-science-pack", 1},
+        {"sp-computer-science-pack-2", 1},
+        {"space-science-pack", 1}
+      },
+      time = 30
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-krypton-rich-asteroid",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghetorio__/graphics/hr-icons/krypton-rich-asteroid.png",
+    effects =
+    {
+      {
+        type = "unlock-space-location",
+        space_location = "sp-krypton-rich-asteroid",
+        use_icon_overlay_constant = true
+      }
+    },
+    prerequisites = {
+      "sp-dysprosium-rich-asteroid",
+      "sp-ruthenium-rich-asteroid",
+      "sp-terbium-rich-asteroid",
+      "sp-ytterbium-rich-asteroid"
+    },
+    unit =
+    {
+      count = 2000,
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-metallurgic-science-pack-2", 1},
+        {"sp-electromagnetic-science-pack-2", 1},
+        {"production-science-pack", 1},
+        {"utility-science-pack", 1},
+        {"cryogenic-science-pack", 1},
+        {"agricultural-science-pack", 1},
+        {"sp-computer-science-pack-2", 1},
+        {"space-science-pack", 1}
+      },
+      time = 30
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-promethium-rich-asteroid",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghetorio__/graphics/hr-icons/promethium-rich-asteroid.png",
+    effects =
+    {
+      {
+        type = "unlock-space-location",
+        space_location = "sp-promethium-rich-asteroid",
+        use_icon_overlay_constant = true
+      }
+    },
+    prerequisites = {
+      "sp-krypton-rich-asteroid",
+      "sp-iridium-rich-asteroid",
+      "sp-osmium-rich-asteroid"
+    },
+    unit =
+    {
+      count = 5000,
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-metallurgic-science-pack-2", 1},
+        {"sp-electromagnetic-science-pack-2", 1},
+        {"production-science-pack", 1},
+        {"utility-science-pack", 1},
+        {"cryogenic-science-pack", 1},
+        {"agricultural-science-pack", 1},
+        {"sp-computer-science-pack-2", 1},
+        {"space-science-pack", 1}
+      },
+      time = 30
+    },
+  },
+  ------------------------------------------------------------------------------
   -- MARK: Science packs
   ------------------------------------------------------------------------------
   {

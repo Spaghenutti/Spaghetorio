@@ -11,7 +11,7 @@ data:extend({
     type = "space-location",
     name = "sp-dysprosium-rich-asteroid",  -- #ForRegEx# - space-location
     icon = "__Spaghetorio__/graphics/icons/dysprosium-rich-asteroid.png",
-    order = "f[solar-system-edge]",
+    order = "a-b[dysprosium-rich-asteroid]",
     subgroup = "planets",
     gravity_pull = -10,
     distance = 14,
@@ -25,7 +25,7 @@ data:extend({
     type = "space-location",
     name = "sp-ytterbium-rich-asteroid",  -- #ForRegEx# - space-location
     icon = "__Spaghetorio__/graphics/icons/ytterbium-rich-asteroid.png",
-    order = "f[solar-system-edge]",
+    order = "a-b[ytterbium-rich-asteroid]",
     subgroup = "planets",
     gravity_pull = -10,
     distance = 11,
@@ -39,7 +39,7 @@ data:extend({
     type = "space-location",
     name = "sp-iridium-rich-asteroid",  -- #ForRegEx# - space-location
     icon = "__Spaghetorio__/graphics/icons/iridium-rich-asteroid.png",
-    order = "f[solar-system-edge]",
+    order = "a-b[iridium-rich-asteroid]",
     subgroup = "planets",
     gravity_pull = -10,
     distance = 10,
@@ -53,7 +53,7 @@ data:extend({
     type = "space-location",
     name = "sp-krypton-rich-asteroid",  -- #ForRegEx# - space-location
     icon = "__Spaghetorio__/graphics/icons/krypton-rich-asteroid.png",
-    order = "f[solar-system-edge]",
+    order = "a-b[krypton-rich-asteroid]",
     subgroup = "planets",
     gravity_pull = -10,
     distance = 11,
@@ -67,7 +67,7 @@ data:extend({
     type = "space-location",
     name = "sp-osmium-rich-asteroid",  -- #ForRegEx# - space-location
     icon = "__Spaghetorio__/graphics/icons/osmium-rich-asteroid.png",
-    order = "f[solar-system-edge]",
+    order = "a-b[osmium-rich-asteroid]",
     subgroup = "planets",
     gravity_pull = -10,
     distance = 8,
@@ -81,7 +81,7 @@ data:extend({
     type = "space-location",
     name = "sp-promethium-rich-asteroid",  -- #ForRegEx# - space-location
     icon = "__Spaghetorio__/graphics/icons/promethium-rich-asteroid.png",
-    order = "f[solar-system-edge]",
+    order = "a-b[promethium-rich-asteroid]",
     subgroup = "planets",
     gravity_pull = -10,
     distance = 5,
@@ -95,7 +95,7 @@ data:extend({
     type = "space-location",
     name = "sp-rhodium-rich-asteroid",  -- #ForRegEx# - space-location
     icon = "__Spaghetorio__/graphics/icons/rhodium-rich-asteroid.png",
-    order = "f[solar-system-edge]",
+    order = "a-b[rhodium-rich-asteroid]",
     subgroup = "planets",
     gravity_pull = -10,
     distance = 17,
@@ -109,7 +109,7 @@ data:extend({
     type = "space-location",
     name = "sp-ruthenium-rich-asteroid",  -- #ForRegEx# - space-location
     icon = "__Spaghetorio__/graphics/icons/ruthenium-rich-asteroid.png",
-    order = "f[solar-system-edge]",
+    order = "a-b[ruthenium-rich-asteroid]",
     subgroup = "planets",
     gravity_pull = -10,
     distance = 21,
@@ -123,7 +123,7 @@ data:extend({
     type = "space-location",
     name = "sp-terbium-rich-asteroid",  -- #ForRegEx# - space-location
     icon = "__Spaghetorio__/graphics/icons/terbium-rich-asteroid.png",
-    order = "f[solar-system-edge]",
+    order = "a-b[terbium-rich-asteroid]",
     subgroup = "planets",
     gravity_pull = -10,
     distance = 20,

@@ -11093,6 +11093,24 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "sp-space-research-data",  -- #ForRegEx# - recipe
+    category = "sp-kr-research-data",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 24,
+    ingredients =
+    {
+      {type = "item", name = "sp-empty-research-data-card", amount = 5},
+      {type = "item", name = "sp-nickel-rhenium", amount = 5},
+      {type = "item", name = "sp-nickel-rhodium", amount = 5},
+      {type = "item", name = "sp-platinum-rhodium", amount = 5},
+    },
+    results = {
+      {type = "item", name = "sp-space-research-data", amount = 5}
+    }
+  },
+  {
+    type = "recipe",
     name = "sp-matter-research-data",  -- #ForRegEx# - recipe
     category = "crafting-with-fluid",
     enabled = false,
