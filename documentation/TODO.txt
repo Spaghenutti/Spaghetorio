@@ -80,6 +80,7 @@ TODO for 0.3.19
 TODO for 0.3.20
   - Unlock legendary quality much later in tech tree
   - Update automation science 3
+    - Add nuclear science as requirement
   - Update logistic science 3
   - Update geological science 3
   - Add recipe chains for core mining
