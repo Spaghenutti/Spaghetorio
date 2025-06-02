@@ -142,6 +142,8 @@ def get_sections(object_type: str) -> List[str]:
             return ["resource-name"]
         case "resource-category":
             return ["resource-category-name"]
+        case "space-location":
+            return ["space-location-name"]
         case "technology" | "infinite-technology": 
             return ["technology-name"]
         case "tile":
