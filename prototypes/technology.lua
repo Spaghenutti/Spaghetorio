@@ -9326,12 +9326,16 @@ data:extend({
       },
     },
     prerequisites = {
-      "space-science-pack"
+      "sp-dysprosium-rich-asteroid",
+      "sp-ruthenium-rich-asteroid",
+      "sp-terbium-rich-asteroid",
+      "sp-ytterbium-rich-asteroid",
+      "sp-automation-science-pack-3"
     },
     unit = {
       count = 600,
       ingredients = {
-        {"sp-automation-science-pack-2", 1},
+        {"sp-automation-science-pack-3", 1},
         {"sp-logistic-science-pack-2", 1},
         {"sp-material-science-pack-2", 1},
         {"sp-geological-science-pack-2", 1},
