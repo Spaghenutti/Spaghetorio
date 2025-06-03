@@ -56,6 +56,19 @@ TODO for 0.3.18
       + nitrogen
 
 TODO for 0.3.19
+  + Add asteroids
+  + Add asteroid connections
+    - Update all asteroid spawn probabilites for connections
+  + Add technologies for unlocking
+  - Add multiple landing pads
+  + Add bad fuel recipe for space travel
+    + hydrazine recipe chain
+    + cyanogen recipe chain
+  - Fix asteroid reprocessing
+  + Add recipe for space science
+  - See metal and stars mod https://mods.factorio.com/mod/metal-and-stars https://youtu.be/8pGgnDISc78?si=H3ddFWEihf-NK_A1&t=912
+
+TODO for 0.3.20
   - Fix noble gases recipe chain
   - Get some noble gasses from methane ice
   - Use xenon for breeder reactor?
@@ -77,7 +90,7 @@ TODO for 0.3.19
     - Rhodium (Not added yet)
   - Update space science 2 branch of tech tree
 
-TODO for 0.3.20
+TODO for 0.3.21
   - Unlock legendary quality much later in tech tree
   - Update automation science 3
     - Add nuclear science as requirement
@@ -98,28 +111,11 @@ TODO for 0.3.20
     - thallium used in optics
     - used in rodent poison
 
-TODO for 0.3.21
+TODO for 0.3.22
   - Add 2-3 more rare metals to rare metals technology
   - Add all 3-4 rare metals from asteroids
   - Add more rare metals comming from lava
   - Fix casting icons
-
-TODO for space branch
-  - Thrusters can be only built by megalium alloy which is made from the asteroids around nauvis
-  - Add asteroids
-  - Add asteroid connections
-  - Add technologies for unlocking
-  - Add multiple landing pads
-  - Add bad fuel recipe for space travel
-    - hydrazine recipe chain
-    - cyanogen recipe chain
-  - Add support for planet visualizer mod
-  - Add back blunagium, grobgnum, rukite and yemnuth rockets (even though they are unlocked later)
-  - Add recipe for space science
-    - blank data card
-    - reaction control system
-    - gyroscope
-  - See metal and stars mod https://mods.factorio.com/mod/metal-and-stars https://youtu.be/8pGgnDISc78?si=H3ddFWEihf-NK_A1&t=912
 
 TODO for 0.4.1
   - Updates for cryogenic science
@@ -191,6 +187,12 @@ Technologies:
   - Update all other productivity technologies (see steel plate productivity)
   - Add uses for empty research data card
   - Add cool items with data and computer technology for computer science 3 or maybe 4? :3
+  - Fix / Add infinite technologies
+    - laser-shooting-speed
+    - laser-weapons-damage
+    - electric-weapons-damage
+    - refined-flammables
+    - laser-weapons-damage
 
 Buildings:
   - Add krastorio turbine as water turbine
@@ -223,6 +225,7 @@ Features:
   - Krastorio has 3 icons for blank tech cards, edit its colors and use it for different things.
   - Create multiple resurce patches for grobgnum (for version 0.4.0 or higher)
   - For items and fluids add to icon chemical formula and add picture without chemical formula (such that when item is on conveyor belt text does not show up). Also try to add this feature for barrels.
+  - Add back blunagium, grobgnum, rukite and yemnuth rockets
 
 Scripting:
   - Acrospheres (for version 0.4.0 or higher)
@@ -232,12 +235,13 @@ Locale:
   - Rename science packs to basic, intermediate and advanced
 
 Mods:
-  - Support text plates mod
-  - Support LTN mod
-  - Support for milestones mod
+  - Support text plates
+  - Support LTN
+  - Support milestones
   - Support fluid must flow
   - Support elevated pipes
   - Support valves
+  - Support planet visualizer
 
 Bugs:
   - If patches that require liquid to be mined are next to each other the game decides randomly which ore can be mined.

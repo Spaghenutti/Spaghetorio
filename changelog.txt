@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.3.19
+Date: 2025-06-13
+  Features:
+    - Added asteroids as new space locations for acquiring minerals
+  Changes:
+    - Change laser technology and laser related recipes
+---------------------------------------------------------------------------------------------------
 Version: 0.3.18
 Date: 2025-06-06
   Features:

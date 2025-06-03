@@ -10203,6 +10203,7 @@ data:extend({
       {type = "item", name = "sp-titanium-frame", amount = 2},
       {type = "item", name = "sp-stainless-steel-gear-wheel", amount = 4},
       {type = "item", name = "sp-silica", amount = 1},
+      {type = "item", name = "sp-nickel-rhenium", amount = 1},
       {type = "item", name = "copper-cable", amount = 1}
     },
     results = {
@@ -11838,6 +11839,7 @@ data:extend({
       {type = "item", name = "sp-reaction-control-system", amount = 6},
       {type = "item", name = "sp-docking-hatch", amount = 1},
       {type = "item", name = "sp-gold-leaf", amount = 4},
+      {type = "item", name = "sp-laser", amount = 5},
       {type = "item", name = "sp-photovoltaic-cell", amount = 18},
     },
     results = {

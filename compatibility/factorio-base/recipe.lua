@@ -1111,7 +1111,7 @@ util.recipe.change_recipe_ingredients("defender-capsule",
     {type = "item", name = "flying-robot-frame", amount = 1},
     {type = "item", name = "electric-engine-unit", amount = 1},
     {type = "item", name = "submachine-gun", amount = 1},
-    {type = "item", name = "advanced-circuit", amount = 5},
+    {type = "item", name = "processing-unit", amount = 2},
     {type = "item", name = "battery", amount = 4},
     {type = "item", name = "sp-inconel", amount = 2}
   },
@@ -1123,9 +1123,10 @@ util.recipe.change_recipe_ingredients("distractor-capsule",
     {type = "item", name = "electric-engine-unit", amount = 3},
     {type = "item", name = "combat-shotgun", amount = 3},
     {type = "item", name = "sp-laser", amount = 6},
-    {type = "item", name = "advanced-circuit", amount = 6},
-    {type = "item", name = "battery", amount = 4},
+    {type = "item", name = "processing-unit", amount = 3},
+    {type = "item", name = "sp-lithium-sulfur-battery", amount = 4},
     {type = "item", name = "sp-inconel", amount = 2},
+    {type = "item", name = "sp-gyroscope", amount = 1},
     {type = "item", name = "sp-stainless-steel", amount = 3}
   },
   10)
@@ -1136,8 +1137,9 @@ util.recipe.change_recipe_ingredients("destroyer-capsule",
    {type = "item", name = "electric-engine-unit", amount = 2},
    {type = "item", name = "sp-laser", amount = 10},
    {type = "item", name = "sp-turbine-blade", amount = 12},
-   {type = "item", name = "advanced-circuit", amount = 5},
-   {type = "item", name = "battery", amount = 4},
+   {type = "item", name = "sp-control-unit", amount = 1},
+   {type = "item", name = "sp-lithium-sulfur-battery", amount = 4},
+   {type = "item", name = "sp-gyroscope", amount = 1},
    {type = "item", name = "sp-inconel", amount = 2}
  },
  10)
@@ -1202,7 +1204,7 @@ util.recipe.change_recipe_ingredients("night-vision-equipment",
     {type = "item", name = "sp-infrared-sensor", amount = 2},
     {type = "item", name = "sp-lens", amount = 6},
     {type = "item", name = "sp-laser", amount = 1},
-    {type = "item", name = "sp-rubber", amount = 1}
+    {type = "item", name = "sp-polyvinyl-fluoride", amount = 1}
   },
   10)
 
@@ -1308,17 +1310,20 @@ util.recipe.change_recipe_ingredients("fusion-reactor-equipment",
 
 util.recipe.change_recipe_ingredients("personal-laser-defense-equipment",
   {
-    {type = "item", name = "processing-unit", amount = 8},
-    {type = "item", name = "sp-aluminum-frame", amount = 3},
+    {type = "item", name = "sp-power-supply", amount = 1},
+    {type = "item", name = "processing-unit", amount = 4},
+    {type = "item", name = "sp-titanium-frame", amount = 3},
+    {type = "item", name = "sp-nickel-chromium", amount = 3},
     {type = "item", name = "sp-bolts", amount = 12},
     {type = "item", name = "sp-laser", amount = 5},
     {type = "item", name = "sp-lens", amount = 5}
   },
-  10)
+  15)
 
 util.recipe.change_recipe_ingredients("discharge-defense-equipment",
   {
-    {type = "item", name = "processing-unit", amount = 3},
+    {type = "item", name = "sp-dynamo", amount = 1},
+    {type = "item", name = "sp-control-unit", amount = 3},
     {type = "item", name = "sp-aluminum-frame", amount = 6},
     {type = "item", name = "sp-bolts", amount = 12},
     {type = "item", name = "laser-turret", amount = 2},
@@ -1732,11 +1737,11 @@ util.recipe.change_recipe_ingredients("gun-turret",
 
 util.recipe.change_recipe_ingredients("laser-turret",
   {
-    {type = "item", name = "steel-plate", amount = 20},
+    {type = "item", name = "sp-nickel-chromium", amount = 20},
     {type = "item", name = "sp-bolts", amount = 30},
-    {type = "item", name = "electronic-circuit", amount = 16},
-    {type = "item", name = "sp-coil", amount = 8},
-    {type = "item", name = "sp-capacitor", amount = 12},
+    {type = "item", name = "sp-control-unit", amount = 1},
+    {type = "item", name = "sp-high-power-solenoid", amount = 2},
+    {type = "item", name = "sp-power-supply", amount = 1},
     {type = "item", name = "sp-laser", amount = 10},
     {type = "item", name = "sp-lens", amount = 4}
   },

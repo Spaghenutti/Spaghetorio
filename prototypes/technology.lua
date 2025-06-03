@@ -3325,6 +3325,38 @@ data:extend({
   },
   {
     type = "technology",
+    name = "sp-gyroscope",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghetorio__/graphics/hr-icons/gyroscope.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-gyroscope"
+      },
+    },
+    prerequisites = {
+      "sp-rhenium-processing"
+    },
+    unit =
+    {
+      count = 150,
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"production-science-pack", 1},
+        {"sp-metallurgic-science-pack-2", 1},
+        {"sp-electromagnetic-science-pack-2", 1}
+      },
+      time = 30
+    },
+  },
+  {
+    type = "technology",
     name = "sp-rocket-engine",  -- #ForRegEx# - technology
     icon_size = 256,
     icon = "__Spaghetorio__/graphics/hr-icons/rocket-engine.png",
@@ -5355,7 +5387,7 @@ data:extend({
     },
     unit =
     {
-      count = 750,
+      count = 350,
       ingredients = {
         {"sp-automation-science-pack-2", 1},
         {"sp-logistic-science-pack-2", 1},
@@ -5494,11 +5526,7 @@ data:extend({
       }
     },
     prerequisites = {
-      "sp-noble-gases",
-      "processing-unit",
-      "space-science-pack",
-      "sp-rocket-control-unit",
-      "sp-rocket-engine"
+      "sp-production-science-pack-3"
     },
     unit =
     {
@@ -7169,7 +7197,7 @@ data:extend({
       }
     },
     prerequisites = {
-      "space-science-pack"
+      "sp-production-science-pack-3"
     },
     unit =
     {
@@ -9311,7 +9339,13 @@ data:extend({
         {"sp-chemical-science-pack-2", 1},
         {"sp-metallurgic-science-pack-2", 1},
         {"sp-electromagnetic-science-pack-2", 1},
-        {"production-science-pack", 1}
+        {"production-science-pack", 1},
+        {"utility-science-pack", 1},
+        {"cryogenic-science-pack", 1},
+        {"agricultural-science-pack", 1},
+        {"sp-computer-science-pack-2", 1},
+        {"sp-nuclear-science-pack-2", 1},
+        {"space-science-pack", 1}
       },
       time = 45,
     },
@@ -11142,8 +11176,7 @@ data:extend({
     },
     prerequisites = {
       "space-science-pack",
-      "sp-computer-science-pack-2",
-      "utility-science-pack"
+      "sp-nuclear-science-pack-2"
     },
     unit =
     {
@@ -11151,11 +11184,19 @@ data:extend({
       ingredients = {
         {"sp-automation-science-pack-2", 1},
         {"sp-logistic-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1},
-        {"sp-electronic-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
         {"sp-geological-science-pack-2", 1},
-        {"space-science-pack", 1},
-        {"sp-material-science-pack-2", 1}
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-metallurgic-science-pack-2", 1},
+        {"sp-electromagnetic-science-pack-2", 1},
+        {"production-science-pack", 1},
+        {"utility-science-pack", 1},
+        {"cryogenic-science-pack", 1},
+        {"agricultural-science-pack", 1},
+        {"sp-computer-science-pack-2", 1},
+        {"sp-nuclear-science-pack-2", 1},
+        {"space-science-pack", 1}
       },
       time = 30
     },
@@ -12390,7 +12431,10 @@ data:extend({
         modifier = 25
       }
     },
-    prerequisites = {"follower-robot-count-5"},
+    prerequisites = {
+      "follower-robot-count-5",
+      "sp-space-science-pack-3"
+    },
     unit =
     {
       ingredients =

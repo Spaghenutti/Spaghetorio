@@ -557,16 +557,21 @@ data.raw.technology["laser"].effects = {
 }
 data.raw.technology["laser"].prerequisites = {
   "sp-optics",
-  "sp-noble-gases",
-  "sp-noble-metals"
+  "sp-noble-gases"
 }
 data.raw.technology["laser"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},
   {"sp-logistic-science-pack-2", 1},
   {"sp-material-science-pack-2", 1},
-  {"sp-chemical-science-pack-2", 1},
+  {"sp-geological-science-pack-2", 1},
   {"sp-electronic-science-pack-2", 1},
-  {"production-science-pack", 1}
+  {"sp-chemical-science-pack-2", 1},
+  {"sp-metallurgic-science-pack-2", 1},
+  {"sp-electromagnetic-science-pack-2", 1},
+  {"production-science-pack", 1},
+  {"utility-science-pack", 1},
+  {"cryogenic-science-pack", 1},
+  {"agricultural-science-pack", 1}
 }
 
 data.raw.technology["low-density-structure"].prerequisites = {"utility-science-pack"}
@@ -719,7 +724,9 @@ data.raw.technology["night-vision-equipment"].unit.ingredients = {
   {"sp-metallurgic-science-pack-2", 1},
   {"sp-electromagnetic-science-pack-2", 1},
   {"production-science-pack", 1},
-  {"utility-science-pack", 1}
+  {"utility-science-pack", 1},
+  {"cryogenic-science-pack", 1},
+  {"agricultural-science-pack", 1}
 }
 
 data.raw.technology["belt-immunity-equipment"].prerequisites = {
@@ -858,7 +865,8 @@ data.raw.technology["rocket-silo"].prerequisites = {
   "sp-antenna-chip",
   "sp-kr-lithium-sulfur-battery",
   "sp-teflon",
-  "sp-noble-metals-smelting"
+  "sp-noble-metals-smelting",
+  "laser"
 }
 data.raw.technology["rocket-silo"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},
@@ -1258,9 +1266,15 @@ data.raw.technology["laser-turret"].unit.ingredients = {
   {"sp-logistic-science-pack-2", 1},
   {"sp-material-science-pack-2", 1},
   {"sp-military-science-pack-2", 1},
-  {"sp-chemical-science-pack-2", 1},
+  {"sp-geological-science-pack-2", 1},
   {"sp-electronic-science-pack-2", 1},
-  {"production-science-pack", 1}
+  {"sp-chemical-science-pack-2", 1},
+  {"sp-metallurgic-science-pack-2", 1},
+  {"sp-electromagnetic-science-pack-2", 1},
+  {"production-science-pack", 1},
+  {"utility-science-pack", 1},
+  {"cryogenic-science-pack", 1},
+  {"agricultural-science-pack", 1}
 }
 
 table.insert(data.raw.technology["defender"].prerequisites, "construction-robotics")
@@ -1278,26 +1292,40 @@ data.raw.technology["defender"].unit.ingredients = {
   {"electromagnetic-science-pack", 1}
 }
 
+table.insert(data.raw.technology["defender"].prerequisites, "sp-gyroscope")
+table.insert(data.raw.technology["defender"].prerequisites, "sp-kr-lithium-sulfur-battery")
 data.raw.technology["distractor"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},
   {"sp-logistic-science-pack-2", 1},
-  {"sp-chemical-science-pack-2", 1},
-  {"sp-electronic-science-pack-2", 1},
   {"sp-material-science-pack-2", 1},
   {"sp-military-science-pack-2", 1},
-  {"production-science-pack", 1}
+  {"sp-geological-science-pack-2", 1},
+  {"sp-electronic-science-pack-2", 1},
+  {"sp-chemical-science-pack-2", 1},
+  {"sp-metallurgic-science-pack-2", 1},
+  {"sp-electromagnetic-science-pack-2", 1},
+  {"production-science-pack", 1},
+  {"utility-science-pack", 1},
+  {"cryogenic-science-pack", 1},
+  {"agricultural-science-pack", 1}
 }
 
 table.insert(data.raw.technology["destroyer"].prerequisites, "sp-turbine-parts")
+table.insert(data.raw.technology["destroyer"].prerequisites, "sp-control-unit")
 data.raw.technology["destroyer"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},
   {"sp-logistic-science-pack-2", 1},
-  {"sp-chemical-science-pack-2", 1},
   {"sp-material-science-pack-2", 1},
-  {"production-science-pack", 1},
-  {"sp-electronic-science-pack-2", 1},
   {"sp-military-science-pack-2", 1},
-  {"utility-science-pack", 1}
+  {"sp-geological-science-pack-2", 1},
+  {"sp-electronic-science-pack-2", 1},
+  {"sp-chemical-science-pack-2", 1},
+  {"sp-metallurgic-science-pack-2", 1},
+  {"sp-electromagnetic-science-pack-2", 1},
+  {"production-science-pack", 1},
+  {"utility-science-pack", 1},
+  {"cryogenic-science-pack", 1},
+  {"agricultural-science-pack", 1}
 }
 
 data.raw.technology["discharge-defense-equipment"].unit.ingredients = {
@@ -1305,10 +1333,15 @@ data.raw.technology["discharge-defense-equipment"].unit.ingredients = {
   {"sp-logistic-science-pack-2", 1},
   {"sp-material-science-pack-2", 1},
   {"sp-military-science-pack-2", 1},
-  {"sp-electronic-science-pack-2", 1},
   {"sp-geological-science-pack-2", 1},
+  {"sp-electronic-science-pack-2", 1},
   {"sp-chemical-science-pack-2", 1},
-  {"production-science-pack", 1}
+  {"sp-metallurgic-science-pack-2", 1},
+  {"sp-electromagnetic-science-pack-2", 1},
+  {"production-science-pack", 1},
+  {"utility-science-pack", 1},
+  {"cryogenic-science-pack", 1},
+  {"agricultural-science-pack", 1}
 }
 
 data.raw.technology["energy-shield-equipment"].prerequisites = {
@@ -1347,10 +1380,15 @@ data.raw.technology["personal-laser-defense-equipment"].unit.ingredients = {
   {"sp-logistic-science-pack-2", 1},
   {"sp-material-science-pack-2", 1},
   {"sp-military-science-pack-2", 1},
-  {"sp-electronic-science-pack-2", 1},
   {"sp-geological-science-pack-2", 1},
+  {"sp-electronic-science-pack-2", 1},
   {"sp-chemical-science-pack-2", 1},
-  {"production-science-pack", 1}
+  {"sp-metallurgic-science-pack-2", 1},
+  {"sp-electromagnetic-science-pack-2", 1},
+  {"production-science-pack", 1},
+  {"utility-science-pack", 1},
+  {"cryogenic-science-pack", 1},
+  {"agricultural-science-pack", 1}
 }
 
 table.insert(data.raw.technology["tank"].prerequisites, "military-4")
@@ -2013,24 +2051,34 @@ data.raw.technology["follower-robot-count-3"].unit.ingredients = {
 data.raw.technology["follower-robot-count-4"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},
   {"sp-logistic-science-pack-2", 1},
-  {"sp-chemical-science-pack-2", 1},
-  {"sp-electronic-science-pack-2", 1},
   {"sp-material-science-pack-2", 1},
   {"sp-military-science-pack-2", 1},
-  {"production-science-pack", 1}
+  {"sp-geological-science-pack-2", 1},
+  {"sp-electronic-science-pack-2", 1},
+  {"sp-chemical-science-pack-2", 1},
+  {"sp-metallurgic-science-pack-2", 1},
+  {"sp-electromagnetic-science-pack-2", 1},
+  {"production-science-pack", 1},
+  {"utility-science-pack", 1},
+  {"cryogenic-science-pack", 1},
+  {"agricultural-science-pack", 1}
 }
 
 data.raw.technology["follower-robot-count-5"].max_level = nil
 data.raw.technology["follower-robot-count-5"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},
   {"sp-logistic-science-pack-2", 1},
-  {"sp-chemical-science-pack-2", 1},
   {"sp-material-science-pack-2", 1},
-  {"production-science-pack", 1},
+  {"sp-military-science-pack-2", 1},
   {"sp-geological-science-pack-2", 1},
   {"sp-electronic-science-pack-2", 1},
-  {"sp-military-science-pack-2", 1},
-  {"utility-science-pack", 1}
+  {"sp-chemical-science-pack-2", 1},
+  {"sp-metallurgic-science-pack-2", 1},
+  {"sp-electromagnetic-science-pack-2", 1},
+  {"production-science-pack", 1},
+  {"utility-science-pack", 1},
+  {"cryogenic-science-pack", 1},
+  {"agricultural-science-pack", 1}
 }
 
 data.raw.technology["refined-flammables-1"].unit.ingredients = {
@@ -2100,13 +2148,131 @@ data.raw.technology["refined-flammables-5"].unit.ingredients = {
 data.raw.technology["refined-flammables-6"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},
   {"sp-logistic-science-pack-2", 1},
-  {"sp-chemical-science-pack-2", 1},
   {"sp-material-science-pack-2", 1},
-  {"production-science-pack", 1},
+  {"sp-military-science-pack-2", 1},
   {"sp-geological-science-pack-2", 1},
   {"sp-electronic-science-pack-2", 1},
+  {"sp-chemical-science-pack-2", 1},
+  {"sp-metallurgic-science-pack-2", 1},
+  {"sp-electromagnetic-science-pack-2", 1},
+  {"production-science-pack", 1},
+  {"utility-science-pack", 1},
+  {"cryogenic-science-pack", 1},
+  {"agricultural-science-pack", 1},
+  {"sp-computer-science-pack-2", 1},
+  {"space-science-pack", 1}
+}
+
+data.raw.technology["laser-weapons-damage-1"].unit.ingredients = {
+  {"sp-automation-science-pack-2", 1},
+  {"sp-logistic-science-pack-2", 1},
+  {"sp-material-science-pack-2", 1},
   {"sp-military-science-pack-2", 1},
-  {"utility-science-pack", 1}
+  {"sp-geological-science-pack-2", 1},
+  {"sp-electronic-science-pack-2", 1},
+  {"sp-chemical-science-pack-2", 1},
+  {"sp-metallurgic-science-pack-2", 1},
+  {"sp-electromagnetic-science-pack-2", 1},
+  {"production-science-pack", 1},
+  {"utility-science-pack", 1},
+  {"cryogenic-science-pack", 1},
+  {"agricultural-science-pack", 1}
+}
+
+data.raw.technology["laser-weapons-damage-2"].unit.ingredients = {
+  {"sp-automation-science-pack-2", 1},
+  {"sp-logistic-science-pack-2", 1},
+  {"sp-material-science-pack-2", 1},
+  {"sp-military-science-pack-2", 1},
+  {"sp-geological-science-pack-2", 1},
+  {"sp-electronic-science-pack-2", 1},
+  {"sp-chemical-science-pack-2", 1},
+  {"sp-metallurgic-science-pack-2", 1},
+  {"sp-electromagnetic-science-pack-2", 1},
+  {"production-science-pack", 1},
+  {"utility-science-pack", 1},
+  {"cryogenic-science-pack", 1},
+  {"agricultural-science-pack", 1}
+}
+
+data.raw.technology["laser-weapons-damage-3"].unit.ingredients = {
+  {"sp-automation-science-pack-2", 1},
+  {"sp-logistic-science-pack-2", 1},
+  {"sp-material-science-pack-2", 1},
+  {"sp-military-science-pack-2", 1},
+  {"sp-geological-science-pack-2", 1},
+  {"sp-electronic-science-pack-2", 1},
+  {"sp-chemical-science-pack-2", 1},
+  {"sp-metallurgic-science-pack-2", 1},
+  {"sp-electromagnetic-science-pack-2", 1},
+  {"production-science-pack", 1},
+  {"utility-science-pack", 1},
+  {"cryogenic-science-pack", 1},
+  {"agricultural-science-pack", 1}
+}
+
+data.raw.technology["laser-weapons-damage-4"].unit.ingredients = {
+  {"sp-automation-science-pack-2", 1},
+  {"sp-logistic-science-pack-2", 1},
+  {"sp-material-science-pack-2", 1},
+  {"sp-military-science-pack-2", 1},
+  {"sp-geological-science-pack-2", 1},
+  {"sp-electronic-science-pack-2", 1},
+  {"sp-chemical-science-pack-2", 1},
+  {"sp-metallurgic-science-pack-2", 1},
+  {"sp-electromagnetic-science-pack-2", 1},
+  {"production-science-pack", 1},
+  {"utility-science-pack", 1},
+  {"cryogenic-science-pack", 1},
+  {"agricultural-science-pack", 1}
+}
+
+data.raw.technology["laser-weapons-damage-5"].unit.ingredients = {
+  {"sp-automation-science-pack-2", 1},
+  {"sp-logistic-science-pack-2", 1},
+  {"sp-material-science-pack-2", 1},
+  {"sp-military-science-pack-2", 1},
+  {"sp-geological-science-pack-2", 1},
+  {"sp-electronic-science-pack-2", 1},
+  {"sp-chemical-science-pack-2", 1},
+  {"sp-metallurgic-science-pack-2", 1},
+  {"sp-electromagnetic-science-pack-2", 1},
+  {"production-science-pack", 1},
+  {"utility-science-pack", 1},
+  {"cryogenic-science-pack", 1},
+  {"agricultural-science-pack", 1}
+}
+
+data.raw.technology["laser-weapons-damage-6"].unit.ingredients = {
+  {"sp-automation-science-pack-2", 1},
+  {"sp-logistic-science-pack-2", 1},
+  {"sp-material-science-pack-2", 1},
+  {"sp-military-science-pack-2", 1},
+  {"sp-geological-science-pack-2", 1},
+  {"sp-electronic-science-pack-2", 1},
+  {"sp-chemical-science-pack-2", 1},
+  {"sp-metallurgic-science-pack-2", 1},
+  {"sp-electromagnetic-science-pack-2", 1},
+  {"production-science-pack", 1},
+  {"utility-science-pack", 1},
+  {"cryogenic-science-pack", 1},
+  {"agricultural-science-pack", 1}
+}
+
+data.raw.technology["laser-weapons-damage-7"].unit.ingredients = {
+  {"sp-automation-science-pack-2", 1},
+  {"sp-logistic-science-pack-2", 1},
+  {"sp-material-science-pack-2", 1},
+  {"sp-military-science-pack-2", 1},
+  {"sp-geological-science-pack-2", 1},
+  {"sp-electronic-science-pack-2", 1},
+  {"sp-chemical-science-pack-2", 1},
+  {"sp-metallurgic-science-pack-2", 1},
+  {"sp-electromagnetic-science-pack-2", 1},
+  {"production-science-pack", 1},
+  {"utility-science-pack", 1},
+  {"cryogenic-science-pack", 1},
+  {"agricultural-science-pack", 1}
 }
 
 data.raw.technology["laser-shooting-speed-1"].unit.ingredients = {
@@ -2114,9 +2280,15 @@ data.raw.technology["laser-shooting-speed-1"].unit.ingredients = {
   {"sp-logistic-science-pack-2", 1},
   {"sp-material-science-pack-2", 1},
   {"sp-military-science-pack-2", 1},
-  {"sp-chemical-science-pack-2", 1},
+  {"sp-geological-science-pack-2", 1},
   {"sp-electronic-science-pack-2", 1},
-  {"production-science-pack", 1}
+  {"sp-chemical-science-pack-2", 1},
+  {"sp-metallurgic-science-pack-2", 1},
+  {"sp-electromagnetic-science-pack-2", 1},
+  {"production-science-pack", 1},
+  {"utility-science-pack", 1},
+  {"cryogenic-science-pack", 1},
+  {"agricultural-science-pack", 1}
 }
 
 data.raw.technology["laser-shooting-speed-2"].unit.ingredients = {
@@ -2124,9 +2296,15 @@ data.raw.technology["laser-shooting-speed-2"].unit.ingredients = {
   {"sp-logistic-science-pack-2", 1},
   {"sp-material-science-pack-2", 1},
   {"sp-military-science-pack-2", 1},
-  {"sp-chemical-science-pack-2", 1},
+  {"sp-geological-science-pack-2", 1},
   {"sp-electronic-science-pack-2", 1},
-  {"production-science-pack", 1}
+  {"sp-chemical-science-pack-2", 1},
+  {"sp-metallurgic-science-pack-2", 1},
+  {"sp-electromagnetic-science-pack-2", 1},
+  {"production-science-pack", 1},
+  {"utility-science-pack", 1},
+  {"cryogenic-science-pack", 1},
+  {"agricultural-science-pack", 1}
 }
 
 data.raw.technology["laser-shooting-speed-3"].unit.ingredients = {
@@ -2134,9 +2312,15 @@ data.raw.technology["laser-shooting-speed-3"].unit.ingredients = {
   {"sp-logistic-science-pack-2", 1},
   {"sp-material-science-pack-2", 1},
   {"sp-military-science-pack-2", 1},
-  {"sp-chemical-science-pack-2", 1},
+  {"sp-geological-science-pack-2", 1},
   {"sp-electronic-science-pack-2", 1},
-  {"production-science-pack", 1}
+  {"sp-chemical-science-pack-2", 1},
+  {"sp-metallurgic-science-pack-2", 1},
+  {"sp-electromagnetic-science-pack-2", 1},
+  {"production-science-pack", 1},
+  {"utility-science-pack", 1},
+  {"cryogenic-science-pack", 1},
+  {"agricultural-science-pack", 1}
 }
 
 data.raw.technology["laser-shooting-speed-4"].unit.ingredients = {
@@ -2144,42 +2328,63 @@ data.raw.technology["laser-shooting-speed-4"].unit.ingredients = {
   {"sp-logistic-science-pack-2", 1},
   {"sp-material-science-pack-2", 1},
   {"sp-military-science-pack-2", 1},
-  {"sp-chemical-science-pack-2", 1},
+  {"sp-geological-science-pack-2", 1},
   {"sp-electronic-science-pack-2", 1},
-  {"production-science-pack", 1}
+  {"sp-chemical-science-pack-2", 1},
+  {"sp-metallurgic-science-pack-2", 1},
+  {"sp-electromagnetic-science-pack-2", 1},
+  {"production-science-pack", 1},
+  {"utility-science-pack", 1},
+  {"cryogenic-science-pack", 1},
+  {"agricultural-science-pack", 1}
 }
 
 data.raw.technology["laser-shooting-speed-5"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},
   {"sp-logistic-science-pack-2", 1},
-  {"sp-chemical-science-pack-2", 1},
   {"sp-material-science-pack-2", 1},
-  {"production-science-pack", 1},
+  {"sp-military-science-pack-2", 1},
   {"sp-geological-science-pack-2", 1},
   {"sp-electronic-science-pack-2", 1},
-  {"utility-science-pack", 1}
+  {"sp-chemical-science-pack-2", 1},
+  {"sp-metallurgic-science-pack-2", 1},
+  {"sp-electromagnetic-science-pack-2", 1},
+  {"production-science-pack", 1},
+  {"utility-science-pack", 1},
+  {"cryogenic-science-pack", 1},
+  {"agricultural-science-pack", 1}
 }
 
 data.raw.technology["laser-shooting-speed-6"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},
   {"sp-logistic-science-pack-2", 1},
-  {"sp-chemical-science-pack-2", 1},
   {"sp-material-science-pack-2", 1},
-  {"production-science-pack", 1},
+  {"sp-military-science-pack-2", 1},
   {"sp-geological-science-pack-2", 1},
   {"sp-electronic-science-pack-2", 1},
-  {"utility-science-pack", 1}
+  {"sp-chemical-science-pack-2", 1},
+  {"sp-metallurgic-science-pack-2", 1},
+  {"sp-electromagnetic-science-pack-2", 1},
+  {"production-science-pack", 1},
+  {"utility-science-pack", 1},
+  {"cryogenic-science-pack", 1},
+  {"agricultural-science-pack", 1}
 }
 
 data.raw.technology["laser-shooting-speed-7"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},
   {"sp-logistic-science-pack-2", 1},
-  {"sp-chemical-science-pack-2", 1},
   {"sp-material-science-pack-2", 1},
-  {"production-science-pack", 1},
+  {"sp-military-science-pack-2", 1},
   {"sp-geological-science-pack-2", 1},
   {"sp-electronic-science-pack-2", 1},
-  {"utility-science-pack", 1}
+  {"sp-chemical-science-pack-2", 1},
+  {"sp-metallurgic-science-pack-2", 1},
+  {"sp-electromagnetic-science-pack-2", 1},
+  {"production-science-pack", 1},
+  {"utility-science-pack", 1},
+  {"cryogenic-science-pack", 1},
+  {"agricultural-science-pack", 1}
 }
 
 data.raw.technology["stronger-explosives-1"].unit.ingredients = {
@@ -2206,27 +2411,37 @@ data.raw.technology["stronger-explosives-4"].unit.ingredients = {
 data.raw.technology["stronger-explosives-5"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},
   {"sp-logistic-science-pack-2", 1},
-  {"sp-chemical-science-pack-2", 1},
   {"sp-material-science-pack-2", 1},
-  {"production-science-pack", 1},
+  {"sp-military-science-pack-2", 1},
   {"sp-geological-science-pack-2", 1},
   {"sp-electronic-science-pack-2", 1},
+  {"sp-chemical-science-pack-2", 1},
   {"sp-metallurgic-science-pack-2", 1},
   {"sp-electromagnetic-science-pack-2", 1},
-  {"sp-military-science-pack-2", 1},
-  {"utility-science-pack", 1}
+  {"production-science-pack", 1},
+  {"utility-science-pack", 1},
+  {"cryogenic-science-pack", 1},
+  {"agricultural-science-pack", 1},
+  {"sp-computer-science-pack-2", 1},
+  {"space-science-pack", 1}
 }
 
 data.raw.technology["stronger-explosives-6"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},
   {"sp-logistic-science-pack-2", 1},
-  {"sp-chemical-science-pack-2", 1},
   {"sp-material-science-pack-2", 1},
-  {"production-science-pack", 1},
+  {"sp-military-science-pack-2", 1},
   {"sp-geological-science-pack-2", 1},
   {"sp-electronic-science-pack-2", 1},
-  {"sp-military-science-pack-2", 1},
-  {"utility-science-pack", 1}
+  {"sp-chemical-science-pack-2", 1},
+  {"sp-metallurgic-science-pack-2", 1},
+  {"sp-electromagnetic-science-pack-2", 1},
+  {"production-science-pack", 1},
+  {"utility-science-pack", 1},
+  {"cryogenic-science-pack", 1},
+  {"agricultural-science-pack", 1},
+  {"sp-computer-science-pack-2", 1},
+  {"space-science-pack", 1}
 }
 
 data.raw.technology["artillery-shell-damage-1"].prerequisites = {
