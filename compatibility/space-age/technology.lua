@@ -8,6 +8,8 @@ remove_prototypes.remove_one_prototype("technology", "tree-seeding")
 
 remove_prototypes.remove_one_prototype("technology", "quantum-processor")
 
+remove_prototypes.remove_one_prototype("technology", "physical-projectile-damage-7")
+
 -- Update technologies
 table.insert(data.raw.technology["lithium-processing"].effects, {type = "unlock-recipe", recipe = "sp-lithium-oxide"})
 table.insert(data.raw.technology["lithium-processing"].effects, {type = "unlock-recipe", recipe = "sp-lithium-chloride"})
@@ -104,6 +106,37 @@ data.raw.technology["quality-module"].unit.ingredients = {
   {"sp-material-science-pack-1", 1},
   {"sp-electronic-science-pack-1", 1},
   {"chemical-science-pack", 1}
+}
+
+data.raw.technology["quality-module-2"].prerequisites = {
+  "processing-unit",
+  "sp-optical-sensor"
+}
+data.raw.technology["quality-module-2"].unit.ingredients = {
+  {"sp-automation-science-pack-2", 1},
+  {"sp-logistic-science-pack-2", 1},
+  {"sp-material-science-pack-2", 1},
+  {"sp-geological-science-pack-2", 1},
+  {"sp-electronic-science-pack-2", 1},
+  {"sp-chemical-science-pack-2", 1},
+  {"sp-metallurgic-science-pack-2", 1},
+  {"sp-electromagnetic-science-pack-2", 1},
+  {"production-science-pack", 1},
+  {"utility-science-pack", 1}
+}
+
+data.raw.technology["quality-module-3"].prerequisites = {
+  "sp-advanced-processing-unit"
+}
+data.raw.technology["quality-module-3"].unit.ingredients = {
+  {"sp-automation-science-pack-3", 1},
+  {"sp-logistic-science-pack-3", 1},
+  {"sp-material-science-pack-2", 1},
+  {"sp-electronic-science-pack-3", 1},
+  {"sp-chemical-science-pack-2", 1},
+  {"production-science-pack", 1},
+  {"utility-science-pack", 1},
+  {"sp-computer-science-pack-2", 1}
 }
 
 data.raw.technology["lightning-collector"].prerequisites = {

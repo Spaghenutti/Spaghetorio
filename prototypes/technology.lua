@@ -1488,12 +1488,12 @@ data:extend({
     name = "sp-noble-metals-smelting",  -- #ForRegEx# - technology
     icon_size = 256,
     icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/hr-icons/electrum.png", 256, nil,
-                                        "__Spaghetorio__/graphics/hr-icons/gold-foil.png", 256, nil),
+                                        "__Spaghetorio__/graphics/hr-icons/gold-leaf.png", 256, nil),
     effects =
     {
       {
         type = "unlock-recipe",
-        recipe = "sp-gold-foil"
+        recipe = "sp-gold-leaf"
       },
       {
         type = "unlock-recipe",
@@ -7937,7 +7937,7 @@ data:extend({
       }
     },
     prerequisites = {
-      "space-science-pack"
+      "sp-space-science-pack-3"
     },
     unit =
     {

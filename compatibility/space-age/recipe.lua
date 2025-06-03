@@ -334,13 +334,16 @@ util.recipe.change_recipe_ingredients("quality-module",
 
 data.raw.recipe["quality-module-2"].category = "sp-manufacturing"
 util.recipe.change_recipe_ingredients("quality-module-2",
-  {
-    {type = "item", name = "advanced-circuit", amount = 69},
-    -- {type = "item", name = "sp-capacitor", amount = 3},
-    -- {type = "item", name = "sp-light-emitting-diode", amount = 6},
-    -- {type = "item", name = "sp-integrated-circuit", amount = 1}
-  },
-  20)
+{
+  {type = "item", name = "processing-unit", amount = 5},
+  {type = "item", name = "sp-titanium-frame", amount = 2},
+  {type = "item", name = "sp-servo-motor", amount = 2},
+  {type = "item", name = "sp-light-emitting-diode", amount = 12},
+  {type = "item", name = "sp-piezoelectric-sensor", amount = 1},
+  {type = "item", name = "sp-optical-sensor", amount = 1},
+  {type = "item", name = "sp-infrared-sensor", amount = 1}
+},
+30)
 
 util.recipe.change_recipe_ingredients("quality-module-3",
   {

@@ -2493,12 +2493,12 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-gold-foil",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/icons/gold-foil.png",
+    name = "sp-gold-leaf",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/gold-leaf.png",
     icon_size = 64,
     scale = 0.5,
     subgroup = "sp-raw-material",
-    order = "a-plate-[gold-foil]",
+    order = "a-plate-[gold-leaf]",
     stack_size = 100
   },
   ------------------------------------------------------------------------------

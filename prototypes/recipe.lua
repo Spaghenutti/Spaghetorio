@@ -924,7 +924,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-gold-foil",  -- #ForRegEx# - recipe
+    name = "sp-gold-leaf",  -- #ForRegEx# - recipe
     category = "sp-intermediate-smelting",
     enabled = false,
     allow_productivity = true,
@@ -933,7 +933,7 @@ data:extend({
       {type = "item", name = "sp-gold", amount = 1},
     },
     results = {
-      {type = "item", name = "sp-gold-foil", amount = 1}
+      {type = "item", name = "sp-gold-leaf", amount = 1}
     }
   },
   ------------------------------------------------------------------------------
@@ -11819,7 +11819,7 @@ data:extend({
       {type = "item", name = "sp-rocket-control-unit", amount = 2},
       {type = "item", name = "sp-reaction-control-system", amount = 6},
       {type = "item", name = "sp-docking-hatch", amount = 1},
-      {type = "item", name = "sp-gold-foil", amount = 4},
+      {type = "item", name = "sp-gold-leaf", amount = 4},
       {type = "item", name = "sp-photovoltaic-cell", amount = 18},
     },
     results = {

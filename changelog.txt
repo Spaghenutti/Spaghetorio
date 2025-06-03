@@ -14,6 +14,7 @@ Date: 2025-06-06
     - Some icon changes
     - Biological science pack 2 is now made in greenhouse
     - Nickel ore has now has 1 starting area patch
+    - Quality module 2 is unlocked after processing unit
   Balancing:
     - Increased power consumption and speed of big crusher and educed module slots from 4 to 3
   Bugfixes:
