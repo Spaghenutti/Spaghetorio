@@ -5,6 +5,7 @@ Date: 2025-06-13
     - Added asteroids as new space locations for acquiring minerals
   Changes:
     - Change laser technology and laser related recipes
+    - Rebalanced noble metal recipes
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.18
 Date: 2025-06-06

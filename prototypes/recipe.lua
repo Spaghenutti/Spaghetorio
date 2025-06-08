@@ -4048,8 +4048,8 @@ data:extend({
       {type = "fluid", name = "water", amount = 40}
     },
     results = {
-      {type = "item", name = "sp-sand", probability = 0.98, amount = 3},
-      {type = "item", name = "sp-gold", probability = 0.02, amount = 1}
+      {type = "item", name = "sp-sand", probability = 0.3, amount = 3},
+      {type = "item", name = "sp-gold", probability = 0.08, amount = 1}
     },
     crafting_machine_tint = {
       primary = {r = 1.000, g = 1.000, b = 0.000, a = 1.000},
@@ -4075,9 +4075,9 @@ data:extend({
       {type = "fluid", name = "water", amount = 50}
     },
     results = {
-      {type = "item", name = "sp-crushed-iron-ore", probability = 0.9807, amount = 3},
-      {type = "item", name = "sp-platinum", probability = 0.019, amount = 1},
-      {type = "item", name = "sp-iridium", probability = 0.0003, amount = 1}
+      {type = "item", name = "sp-crushed-iron-ore", probability = 0.4, amount = 3},
+      {type = "item", name = "sp-platinum", probability = 0.03, amount = 1},
+      {type = "item", name = "sp-iridium", probability = 0.01, amount = 1}
     }
   },
   {
@@ -4097,9 +4097,9 @@ data:extend({
       {type = "fluid", name = "water", amount = 20}
     },
     results = {
-      {type = "item", name = "sp-crushed-copper-ore", probability = 0.94, amount = 1},
-      {type = "item", name = "sp-silver", probability = 0.05, amount = 1},
-      {type = "item", name = "sp-palladium", probability = 0.01, amount = 1}
+      {type = "item", name = "sp-crushed-copper-ore", probability = 0.5, amount = 1},
+      {type = "item", name = "sp-silver", probability = 0.1, amount = 1},
+      {type = "item", name = "sp-palladium", probability = 0.03, amount = 1}
     }
   },
   {
@@ -4119,9 +4119,9 @@ data:extend({
       {type = "fluid", name = "sp-sodium-hydroxide", amount = 1}
     },
     results = {
-      {type = "item", name = "sp-crushed-nickel-ore", probability = 0.6, amount = 1},
-      {type = "item", name = "sp-crushed-iron-ore", probability = 0.37, amount = 1},
-      {type = "item", name = "sp-palladium", probability = 0.03, amount = 1}
+      {type = "item", name = "sp-crushed-nickel-ore", probability = 0.3, amount = 1},
+      {type = "item", name = "sp-crushed-iron-ore", probability = 0.2, amount = 1},
+      {type = "item", name = "sp-palladium", probability = 0.07, amount = 1}
     }
   },
   {
