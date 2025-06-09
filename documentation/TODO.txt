@@ -66,7 +66,10 @@ TODO for 0.3.19
     + terbium + (oxide graphics)
     + ytterbium + (carbonic graphics)
   + Add asteroid chunks
-  - Add asteroid 
+  - Add asteroid
+    - Add image paths for generate_zip.py
+    - Fix order of asteroids
+    - Fix factorio simulations
   - Add asteroid graphics for small, medium, big and huge sizes
   + Add asteroid connections
     - Update all asteroid spawn probabilites for connections

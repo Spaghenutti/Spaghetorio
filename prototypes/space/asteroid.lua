@@ -71,76 +71,76 @@ local asteroids_data =
       ambient_light = {0.01, 0.01, 0.01},
     }
   },
-  -- carbonic =
-  -- {
-  --   order = "b",
-  --   mass = shared_mass,
-  --   max_health = shared_health,
-  --   resistances = shared_resistances,
-  --   shading_data =
-  --   {
-  --     normal_strength = 1,
-  --     light_width = 0,
-  --     brightness = 0.9,
-  --     specular_strength = 2.5,
-  --     specular_power = 0.8,
-  --     specular_purity = 0,
-  --     sss_contrast = 1,
-  --     sss_amount = 0,
-  --     lights = {
-  --       { color = {1,1,1}, direction = {0.7,0.6,-1} },
-  --       { color = {0.16,0.14,0.22}, direction = {-1,-1, 1} },
-  --     },
-  --     ambient_light = {0.01, 0.01, 0.01}
-  --   }
-  -- },
-  -- oxide =
-  -- {
-  --   order = "c",
-  --   mass = shared_mass,
-  --   max_health = shared_health,
-  --   resistances = shared_resistances,
-  --   shading_data =
-  --   {
-  --     normal_strength = 1,
-  --     light_width = 0,
-  --     brightness = 0.5,
-  --     specular_strength = 3.5,
-  --     specular_power = 2,
-  --     specular_purity = 0.6,
-  --     sss_contrast = 1,
-  --     sss_amount = 0.25,
-  --     lights = {
-  --       { color = {1,1,1}, direction = {0.7,0.4,-1} },
-  --       { color = {0.05,0.3,0.3}, direction = {-1,-1,0} },
-  --       { color = {0.05,0.2,0.25}, direction = {-0.4,-0.1,-1} },
-  --     },
-  --     ambient_light = {0.01, 0.020, 0.027},
-  --   }
-  -- },
-  -- promethium =
-  -- {
-  --   order = "d",
-  --   mass = {shared_mass[1] * 2, shared_mass[2] * 2, shared_mass[3] * 2, shared_mass[4] * 2, shared_mass[5] * 2},
-  --   max_health = {shared_health[1] * 2, shared_health[2] * 2, shared_health[3] * 2, shared_health[4] * 2, shared_health[5] * 2},
-  --   resistances = shared_resistances,
-  --   shading_data =
-  --   {
-  --     normal_strength = 1.2,
-  --     light_width = 0.3,
-  --     brightness = 0.3,
-  --     specular_strength = 2.5,
-  --     specular_power = 1.5,
-  --     specular_purity = 0.1,
-  --     sss_contrast = 0,
-  --     sss_amount = 0.15,
-  --     lights = {
-  --       { color = {1,1,1}, direction = {0.75,0.22,-1} },
-  --       { color = {0.2,0,0}, direction = {0.5, 0, 0.95} },
-  --     },
-  --     ambient_light = {0.0, 0.0, 0.0},
-  --   }
-  -- },
+  carbonic =
+  {
+    order = "b",
+    mass = shared_mass,
+    max_health = shared_health,
+    resistances = shared_resistances,
+    shading_data =
+    {
+      normal_strength = 1,
+      light_width = 0,
+      brightness = 0.9,
+      specular_strength = 2.5,
+      specular_power = 0.8,
+      specular_purity = 0,
+      sss_contrast = 1,
+      sss_amount = 0,
+      lights = {
+        { color = {1,1,1}, direction = {0.7,0.6,-1} },
+        { color = {0.16,0.14,0.22}, direction = {-1,-1, 1} },
+      },
+      ambient_light = {0.01, 0.01, 0.01}
+    }
+  },
+  oxide =
+  {
+    order = "c",
+    mass = shared_mass,
+    max_health = shared_health,
+    resistances = shared_resistances,
+    shading_data =
+    {
+      normal_strength = 1,
+      light_width = 0,
+      brightness = 0.5,
+      specular_strength = 3.5,
+      specular_power = 2,
+      specular_purity = 0.6,
+      sss_contrast = 1,
+      sss_amount = 0.25,
+      lights = {
+        { color = {1,1,1}, direction = {0.7,0.4,-1} },
+        { color = {0.05,0.3,0.3}, direction = {-1,-1,0} },
+        { color = {0.05,0.2,0.25}, direction = {-0.4,-0.1,-1} },
+      },
+      ambient_light = {0.01, 0.020, 0.027},
+    }
+  },
+  promethium =
+  {
+    order = "d",
+    mass = {shared_mass[1] * 2, shared_mass[2] * 2, shared_mass[3] * 2, shared_mass[4] * 2, shared_mass[5] * 2},
+    max_health = {shared_health[1] * 2, shared_health[2] * 2, shared_health[3] * 2, shared_health[4] * 2, shared_health[5] * 2},
+    resistances = shared_resistances,
+    shading_data =
+    {
+      normal_strength = 1.2,
+      light_width = 0.3,
+      brightness = 0.3,
+      specular_strength = 2.5,
+      specular_power = 1.5,
+      specular_purity = 0.1,
+      sss_contrast = 0,
+      sss_amount = 0.15,
+      lights = {
+        { color = {1,1,1}, direction = {0.75,0.22,-1} },
+        { color = {0.2,0,0}, direction = {0.5, 0, 0.95} },
+      },
+      ambient_light = {0.0, 0.0, 0.0},
+    }
+  },
 }
 
 local collision_radiuses =
@@ -171,12 +171,29 @@ local sizes_resolution = {
 
 local letter = {"a","b","c","d","e"}
 
-local function asteroid_variation(asteroid_name, asteroid_type, suffix, scale, size)
+local asteroid_map = {
+  ["metallic"] = "metallic",
+  ["carbonic"] = "carbonic",
+  ["oxide"] = "oxide",
+  ["promethium"] = "promethium",
+
+  ["dysprosium"] = "metallic",
+  ["iridium"] = "metallic",
+  ["krypton"] = "oxide",
+  ["osmium"] = "carbonic",
+  ["rhodium"] = "promethium",
+  ["ruthenium"] = "promethium",
+  ["terbium"] = "oxide",
+  ["ytterbium"] = "carbonic"
+}
+
+local function asteroid_variation(asteroid_group, asteroid_type, suffix, scale, size)
   return
   {
     color_texture =
     {
-      filename = "__Spaghetorio__/graphics/asteroid/".. asteroid_name .."/"..asteroid_sizes[size].."/".."asteroid-" .. asteroid_type .. "-" .. asteroid_sizes[size] .. "-colour-" .. suffix .. ".png",
+      -- filename = "_Spaghetorio__/graphics/asteroid/dysprosium/chunk/asteroid-metallic-chunk-colour-01.png",
+      filename = "__Spaghetorio__/graphics/asteroid/".. asteroid_group .."/"..asteroid_sizes[size].."/".."asteroid-" .. asteroid_type .. "-" .. asteroid_sizes[size] .. "-colour-" .. suffix .. ".png",
       size =  sizes_resolution[size][1],
       scale = scale
     },
@@ -185,7 +202,7 @@ local function asteroid_variation(asteroid_name, asteroid_type, suffix, scale, s
 
     normal_map =
     {
-      filename = "__Spaghetorio__/graphics/asteroid/".. asteroid_name .."/"..asteroid_sizes[size].."/".."asteroid-" .. asteroid_type .. "-" .. asteroid_sizes[size] .. "-normal-" .. suffix .. ".png",
+      filename = "__space-age__/graphics/entity/asteroid/".. asteroid_map[asteroid_type] .."/"..asteroid_sizes[size].."/".."asteroid-" .. asteroid_map[asteroid_type] .. "-" .. asteroid_sizes[size] .. "-normal-" .. suffix .. ".png",
       premul_alpha = false,
       size = sizes_resolution[size][1],
       scale = scale
@@ -193,7 +210,7 @@ local function asteroid_variation(asteroid_name, asteroid_type, suffix, scale, s
 
     roughness_map =
     {
-      filename = "__Spaghetorio__/graphics/asteroid/".. asteroid_name .."/"..asteroid_sizes[size].."/".."asteroid-" .. asteroid_type .. "-" .. asteroid_sizes[size] .. "-roughness-" .. suffix .. ".png",
+      filename = "__space-age__/graphics/entity/asteroid/".. asteroid_map[asteroid_type] .."/"..asteroid_sizes[size].."/".."asteroid-" .. asteroid_map[asteroid_type] .. "-" .. asteroid_sizes[size] .. "-roughness-" .. suffix .. ".png",
       premul_alpha = false,
       size = sizes_resolution[size][1],
       scale = scale
@@ -208,8 +225,21 @@ local function asteroid_graphics_set(rotation_speed, shading_data, variations)
   return result
 end
 
+-- local function asteroid_item_name (asteroid_size_name, asteroid_group)
+--   if asteroid_size_name == "chunk" then
+--     return "__Spaghetorio__/graphics/icons/small-"..asteroid_group.."-asteroid.png"
+--   end
+--   return "__Spaghetorio__/graphics/icons/"..asteroid_size_name.."-"..asteroid_group.."-asteroid.png"
+-- end
 
-for asteroid_group in pairs(asteroid_groups) do
+local function asteroid_icon_path(asteroid_size_name, asteroid_group)
+  if asteroid_size_name == "chunk" then
+    return "__Spaghetorio__/graphics/icons/small-"..asteroid_group.."-asteroid.png"
+  end
+  return "__Spaghetorio__/graphics/icons/"..asteroid_size_name.."-"..asteroid_group.."-asteroid.png"
+end
+
+for _, asteroid_group in pairs(asteroid_groups) do
   for asteroid_size, asteroid_size_name in pairs(asteroid_sizes) do
     for asteroid_type, asteroid_data in pairs(asteroids_data) do
 
@@ -282,191 +312,172 @@ for asteroid_group in pairs(asteroid_groups) do
       end
 
 
-      local variations ={}
-      if (asteroid_group == "dysprosium" or asteroid_name == "iridium") then
+      local variations = {}
+      if (asteroid_group == "dysprosium" or asteroid_group == "iridium") then
         if (asteroid_size_name == "chunk") then
-          table.insert(variations, asteroid_variation(asteroid_name, "metallic", "01", graphics_scale, asteroid_size))
-          table.insert(variations, asteroid_variation(asteroid_name, "metallic", "02", graphics_scale, asteroid_size))
-          table.insert(variations, asteroid_variation(asteroid_name, "metallic", "03", graphics_scale, asteroid_size))
-          table.insert(variations, asteroid_variation(asteroid_name, "metallic", "04", graphics_scale, asteroid_size))
-          table.insert(variations, asteroid_variation(asteroid_name, "metallic", "05", graphics_scale, asteroid_size))
-          table.insert(variations, asteroid_variation(asteroid_name, "metallic", "06", graphics_scale, asteroid_size))
-          table.insert(variations, asteroid_variation(asteroid_name, "metallic", "07", graphics_scale, asteroid_size))
-          table.insert(variations, asteroid_variation(asteroid_name, "metallic", "08", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "metallic", "01", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "metallic", "02", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "metallic", "03", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "metallic", "04", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "metallic", "05", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "metallic", "06", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "metallic", "07", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "metallic", "08", graphics_scale, asteroid_size))
         elseif (asteroid_size_name == "small") then
-          table.insert(variations, asteroid_variation(asteroid_name, "metallic", "01", graphics_scale, asteroid_size))
-          table.insert(variations, asteroid_variation(asteroid_name, "metallic", "02", graphics_scale, asteroid_size))
-          table.insert(variations, asteroid_variation(asteroid_name, "metallic", "03", graphics_scale, asteroid_size))
-          table.insert(variations, asteroid_variation(asteroid_name, "metallic", "04", graphics_scale, asteroid_size))
-          table.insert(variations, asteroid_variation(asteroid_name, "metallic", "05", graphics_scale, asteroid_size))
-          table.insert(variations, asteroid_variation(asteroid_name, "metallic", "06", graphics_scale, asteroid_size))
-          table.insert(variations, asteroid_variation(asteroid_name, "metallic", "07", graphics_scale, asteroid_size))
-          table.insert(variations, asteroid_variation(asteroid_name, "metallic", "08", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "metallic", "01", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "metallic", "02", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "metallic", "03", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "metallic", "04", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "metallic", "05", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "metallic", "06", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "metallic", "07", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "metallic", "08", graphics_scale, asteroid_size))
         elseif  (asteroid_size_name == "medium") then
-          table.insert(variations, asteroid_variation(asteroid_name, "metallic", "01", graphics_scale, asteroid_size))
-          table.insert(variations, asteroid_variation(asteroid_name, "metallic", "02", graphics_scale, asteroid_size))
-          table.insert(variations, asteroid_variation(asteroid_name, "metallic", "03", graphics_scale, asteroid_size))
-          table.insert(variations, asteroid_variation(asteroid_name, "metallic", "04", graphics_scale, asteroid_size))
-          table.insert(variations, asteroid_variation(asteroid_name, "metallic", "05", graphics_scale, asteroid_size))
-          table.insert(variations, asteroid_variation(asteroid_name, "metallic", "06", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "metallic", "01", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "metallic", "02", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "metallic", "03", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "metallic", "04", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "metallic", "05", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "metallic", "06", graphics_scale, asteroid_size))
         elseif (asteroid_size_name == "big") then
-          table.insert(variations, asteroid_variation(asteroid_name, "metallic", "01", graphics_scale, asteroid_size))
-          table.insert(variations, asteroid_variation(asteroid_name, "metallic", "02", graphics_scale, asteroid_size))
-          table.insert(variations, asteroid_variation(asteroid_name, "metallic", "03", graphics_scale, asteroid_size))
-          table.insert(variations, asteroid_variation(asteroid_name, "metallic", "04", graphics_scale, asteroid_size))
-          table.insert(variations, asteroid_variation(asteroid_name, "metallic", "05", graphics_scale, asteroid_size))
-          table.insert(variations, asteroid_variation(asteroid_name, "metallic", "06", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "metallic", "01", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "metallic", "02", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "metallic", "03", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "metallic", "04", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "metallic", "05", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "metallic", "06", graphics_scale, asteroid_size))
         elseif  (asteroid_size_name == "huge") then
-          table.insert(variations, asteroid_variation(asteroid_name, "metallic", "01", graphics_scale, asteroid_size))
-          table.insert(variations, asteroid_variation(asteroid_name, "metallic", "02", graphics_scale, asteroid_size))
-          table.insert(variations, asteroid_variation(asteroid_name, "metallic", "03", graphics_scale, asteroid_size))
-          table.insert(variations, asteroid_variation(asteroid_name, "metallic", "04", graphics_scale, asteroid_size))
-          table.insert(variations, asteroid_variation(asteroid_name, "metallic", "05", graphics_scale, asteroid_size))
-          table.insert(variations, asteroid_variation(asteroid_name, "metallic", "06", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "metallic", "01", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "metallic", "02", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "metallic", "03", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "metallic", "04", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "metallic", "05", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "metallic", "06", graphics_scale, asteroid_size))
         end
-      -- elseif (asteroid_type == "carbonic") then
-      --   if (asteroid_size_name == "chunk") then
-      --     table.insert(variations, asteroid_variation(asteroid_type, "01", graphics_scale, asteroid_size))
-      --     table.insert(variations, asteroid_variation(asteroid_type, "02", graphics_scale, asteroid_size))
-      --     table.insert(variations, asteroid_variation(asteroid_type, "03", graphics_scale, asteroid_size))
-      --     table.insert(variations, asteroid_variation(asteroid_type, "04", graphics_scale, asteroid_size))
-      --     table.insert(variations, asteroid_variation(asteroid_type, "05", graphics_scale, asteroid_size))
-      --     table.insert(variations, asteroid_variation(asteroid_type, "06", graphics_scale, asteroid_size))
-      --     table.insert(variations, asteroid_variation(asteroid_type, "09", graphics_scale, asteroid_size))
-      --   elseif (asteroid_size_name == "small") then
-      --     table.insert(variations, asteroid_variation(asteroid_type, "01", graphics_scale, asteroid_size))
-      --     table.insert(variations, asteroid_variation(asteroid_type, "02", graphics_scale, asteroid_size))
-      --     table.insert(variations, asteroid_variation(asteroid_type, "03", graphics_scale, asteroid_size))
-      --     table.insert(variations, asteroid_variation(asteroid_type, "04", graphics_scale, asteroid_size))
-      --     table.insert(variations, asteroid_variation(asteroid_type, "05", graphics_scale, asteroid_size))
-      --     table.insert(variations, asteroid_variation(asteroid_type, "06", graphics_scale, asteroid_size))
-      --     elseif  (asteroid_size_name == "medium") then
-      --   --  table.insert(variations, asteroid_variation("test", "00", graphics_scale, asteroid_size))
-      --   --   table.insert(variations, asteroid_variation("test", "02", graphics_scale, asteroid_size))
-      --     table.insert(variations, asteroid_variation(asteroid_type, "01", graphics_scale, asteroid_size))
-      --     table.insert(variations, asteroid_variation(asteroid_type, "02", graphics_scale, asteroid_size))
-      --     table.insert(variations, asteroid_variation(asteroid_type, "03", graphics_scale, asteroid_size))
-      --     table.insert(variations, asteroid_variation(asteroid_type, "04", graphics_scale, asteroid_size))
-      --     table.insert(variations, asteroid_variation(asteroid_type, "05", graphics_scale, asteroid_size))
-      --     table.insert(variations, asteroid_variation(asteroid_type, "06", graphics_scale, asteroid_size))
-      --   elseif (asteroid_size_name == "big") then
-      --     table.insert(variations, asteroid_variation(asteroid_type, "01", graphics_scale, asteroid_size))
-      --     table.insert(variations, asteroid_variation(asteroid_type, "02", graphics_scale, asteroid_size))
-      --     table.insert(variations, asteroid_variation(asteroid_type, "03", graphics_scale, asteroid_size))
-      --     table.insert(variations, asteroid_variation(asteroid_type, "04", graphics_scale, asteroid_size))
-      --     table.insert(variations, asteroid_variation(asteroid_type, "05", graphics_scale, asteroid_size))
-      --     table.insert(variations, asteroid_variation(asteroid_type, "06", graphics_scale, asteroid_size))
-      --     elseif  (asteroid_size_name == "huge") then
-      --     table.insert(variations, asteroid_variation(asteroid_type, "01", graphics_scale, asteroid_size))
-      --     table.insert(variations, asteroid_variation(asteroid_type, "02", graphics_scale, asteroid_size))
-      --     table.insert(variations, asteroid_variation(asteroid_type, "03", graphics_scale, asteroid_size))
-      --     table.insert(variations, asteroid_variation(asteroid_type, "04", graphics_scale, asteroid_size))
-      --     table.insert(variations, asteroid_variation(asteroid_type, "05", graphics_scale, asteroid_size))
-      --     table.insert(variations, asteroid_variation(asteroid_type, "06", graphics_scale, asteroid_size))
-      --     table.insert(variations, asteroid_variation(asteroid_type, "07", graphics_scale, asteroid_size))
-      --   end
-      -- elseif (asteroid_type == "oxide") then
-      --   if (asteroid_size_name == "chunk") then
-      --     table.insert(variations, asteroid_variation(asteroid_type, "01", graphics_scale, asteroid_size))
-      --     table.insert(variations, asteroid_variation(asteroid_type, "02", graphics_scale, asteroid_size))
-      --     table.insert(variations, asteroid_variation(asteroid_type, "03", graphics_scale, asteroid_size))
-      --     table.insert(variations, asteroid_variation(asteroid_type, "04", graphics_scale, asteroid_size))
-      --     table.insert(variations, asteroid_variation(asteroid_type, "05", graphics_scale, asteroid_size))
-      --     table.insert(variations, asteroid_variation(asteroid_type, "06", graphics_scale, asteroid_size))
-      --   elseif (asteroid_size_name == "small") then
-      --     table.insert(variations, asteroid_variation(asteroid_type, "01", graphics_scale, asteroid_size))
-      --     table.insert(variations, asteroid_variation(asteroid_type, "02", graphics_scale, asteroid_size))
-      --     table.insert(variations, asteroid_variation(asteroid_type, "03", graphics_scale, asteroid_size))
-      --     table.insert(variations, asteroid_variation(asteroid_type, "04", graphics_scale, asteroid_size))
-      --     table.insert(variations, asteroid_variation(asteroid_type, "05", graphics_scale, asteroid_size))
-      --     table.insert(variations, asteroid_variation(asteroid_type, "06", graphics_scale, asteroid_size))
-      --     table.insert(variations, asteroid_variation(asteroid_type, "07", graphics_scale, asteroid_size))
-
-      --   elseif  (asteroid_size_name == "medium") then
-      --   --   table.insert(variations, asteroid_variation("test", "00", graphics_scale, asteroid_size))
-      --   --  table.insert(variations, asteroid_variation("test", "01", graphics_scale, asteroid_size))
-      --   --  table.insert(variations, asteroid_variation("test", "02", graphics_scale, asteroid_size))
-      --     table.insert(variations, asteroid_variation(asteroid_type, "01", graphics_scale, asteroid_size))
-      --     table.insert(variations, asteroid_variation(asteroid_type, "02", graphics_scale, asteroid_size))
-      --     table.insert(variations, asteroid_variation(asteroid_type, "03", graphics_scale, asteroid_size))
-      --     table.insert(variations, asteroid_variation(asteroid_type, "04", graphics_scale, asteroid_size))
-      --     table.insert(variations, asteroid_variation(asteroid_type, "05", graphics_scale, asteroid_size))
-      --   elseif (asteroid_size_name == "big") then
-      --     -- table.insert(variations, asteroid_variation("test", "01", graphics_scale, asteroid_size))
-      --     -- table.insert(variations, asteroid_variation("test", "03", graphics_scale, asteroid_size))
-      --   --  table.insert(variations, asteroid_variation("test", "02", graphics_scale, asteroid_size))
-      --     table.insert(variations, asteroid_variation(asteroid_type, "01", graphics_scale, asteroid_size))
-      --     table.insert(variations, asteroid_variation(asteroid_type, "02", graphics_scale, asteroid_size))
-      --     table.insert(variations, asteroid_variation(asteroid_type, "03", graphics_scale, asteroid_size))
-      --     table.insert(variations, asteroid_variation(asteroid_type, "04", graphics_scale, asteroid_size))
-      --     table.insert(variations, asteroid_variation(asteroid_type, "05", graphics_scale, asteroid_size))
-      --   elseif  (asteroid_size_name == "huge") then
-      --     -- table.insert(variations, asteroid_variation("test", "01", graphics_scale, asteroid_size))
-      --     -- table.insert(variations, asteroid_variation("test", "02", graphics_scale, asteroid_size))
-      --     table.insert(variations, asteroid_variation(asteroid_type, "01", graphics_scale, asteroid_size))
-      --     table.insert(variations, asteroid_variation(asteroid_type, "02", graphics_scale, asteroid_size))
-      --     table.insert(variations, asteroid_variation(asteroid_type, "03", graphics_scale, asteroid_size))
-      --     table.insert(variations, asteroid_variation(asteroid_type, "04", graphics_scale, asteroid_size))
-      --     table.insert(variations, asteroid_variation(asteroid_type, "05", graphics_scale, asteroid_size))
-      --     table.insert(variations, asteroid_variation(asteroid_type, "06", graphics_scale, asteroid_size))
-      --     table.insert(variations, asteroid_variation(asteroid_type, "07", graphics_scale, asteroid_size))
-      --   end
-      -- elseif (asteroid_type == "promethium") then
-      --   if (asteroid_size_name == "chunk") then
-      --     table.insert(variations, asteroid_variation(asteroid_type, "01", graphics_scale, asteroid_size))
-      --     table.insert(variations, asteroid_variation(asteroid_type, "02", graphics_scale, asteroid_size))
-      --     table.insert(variations, asteroid_variation(asteroid_type, "03", graphics_scale, asteroid_size))
-      --     table.insert(variations, asteroid_variation(asteroid_type, "04", graphics_scale, asteroid_size))
-      --     table.insert(variations, asteroid_variation(asteroid_type, "05", graphics_scale, asteroid_size))
-      --     table.insert(variations, asteroid_variation(asteroid_type, "06", graphics_scale, asteroid_size))
-      --   elseif (asteroid_size_name == "small") then
-      --     table.insert(variations, asteroid_variation(asteroid_type, "01", graphics_scale, asteroid_size))
-      --     table.insert(variations, asteroid_variation(asteroid_type, "02", graphics_scale, asteroid_size))
-      --     table.insert(variations, asteroid_variation(asteroid_type, "03", graphics_scale, asteroid_size))
-      --     table.insert(variations, asteroid_variation(asteroid_type, "04", graphics_scale, asteroid_size))
-      --     table.insert(variations, asteroid_variation(asteroid_type, "05", graphics_scale, asteroid_size))
-      --     table.insert(variations, asteroid_variation(asteroid_type, "06", graphics_scale, asteroid_size))
-      --     table.insert(variations, asteroid_variation(asteroid_type, "07", graphics_scale, asteroid_size))
-
-      --   elseif  (asteroid_size_name == "medium") then
-      --   --   table.insert(variations, asteroid_variation("test", "00", graphics_scale, asteroid_size))
-      --   --  table.insert(variations, asteroid_variation("test", "01", graphics_scale, asteroid_size))
-      --   --  table.insert(variations, asteroid_variation("test", "02", graphics_scale, asteroid_size))
-      --     table.insert(variations, asteroid_variation(asteroid_type, "01", graphics_scale, asteroid_size))
-      --     table.insert(variations, asteroid_variation(asteroid_type, "02", graphics_scale, asteroid_size))
-      --     table.insert(variations, asteroid_variation(asteroid_type, "03", graphics_scale, asteroid_size))
-      --     table.insert(variations, asteroid_variation(asteroid_type, "04", graphics_scale, asteroid_size))
-      --     table.insert(variations, asteroid_variation(asteroid_type, "05", graphics_scale, asteroid_size))
-      --   elseif (asteroid_size_name == "big") then
-      --     -- table.insert(variations, asteroid_variation("test", "01", graphics_scale, asteroid_size))
-      --     -- table.insert(variations, asteroid_variation("test", "03", graphics_scale, asteroid_size))
-      --   --  table.insert(variations, asteroid_variation("test", "02", graphics_scale, asteroid_size))
-      --     table.insert(variations, asteroid_variation(asteroid_type, "01", graphics_scale, asteroid_size))
-      --     table.insert(variations, asteroid_variation(asteroid_type, "02", graphics_scale, asteroid_size))
-      --     table.insert(variations, asteroid_variation(asteroid_type, "03", graphics_scale, asteroid_size))
-      --     table.insert(variations, asteroid_variation(asteroid_type, "04", graphics_scale, asteroid_size))
-      --     table.insert(variations, asteroid_variation(asteroid_type, "05", graphics_scale, asteroid_size))
-      --   elseif  (asteroid_size_name == "huge") then
-      --     -- table.insert(variations, asteroid_variation("test", "01", graphics_scale, asteroid_size))
-      --     -- table.insert(variations, asteroid_variation("test", "02", graphics_scale, asteroid_size))
-      --     table.insert(variations, asteroid_variation(asteroid_type, "01", graphics_scale, asteroid_size))
-      --     table.insert(variations, asteroid_variation(asteroid_type, "02", graphics_scale, asteroid_size))
-      --     table.insert(variations, asteroid_variation(asteroid_type, "03", graphics_scale, asteroid_size))
-      --     table.insert(variations, asteroid_variation(asteroid_type, "04", graphics_scale, asteroid_size))
-      --     table.insert(variations, asteroid_variation(asteroid_type, "05", graphics_scale, asteroid_size))
-      --     table.insert(variations, asteroid_variation(asteroid_type, "06", graphics_scale, asteroid_size))
-      --     table.insert(variations, asteroid_variation(asteroid_type, "07", graphics_scale, asteroid_size))
-      --   end
+      elseif (asteroid_group == "osmium" or asteroid_group == "ytterbium") then
+        if (asteroid_size_name == "chunk") then
+          table.insert(variations, asteroid_variation(asteroid_group, "carbonic", "01", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "carbonic", "02", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "carbonic", "03", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "carbonic", "04", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "carbonic", "05", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "carbonic", "06", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "carbonic", "09", graphics_scale, asteroid_size))
+        elseif (asteroid_size_name == "small") then
+          table.insert(variations, asteroid_variation(asteroid_group, "carbonic", "01", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "carbonic", "02", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "carbonic", "03", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "carbonic", "04", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "carbonic", "05", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "carbonic", "06", graphics_scale, asteroid_size))
+        elseif  (asteroid_size_name == "medium") then
+          table.insert(variations, asteroid_variation(asteroid_group, "carbonic", "01", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "carbonic", "02", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "carbonic", "03", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "carbonic", "04", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "carbonic", "05", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "carbonic", "06", graphics_scale, asteroid_size))
+        elseif (asteroid_size_name == "big") then
+          table.insert(variations, asteroid_variation(asteroid_group, "carbonic", "01", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "carbonic", "02", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "carbonic", "03", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "carbonic", "04", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "carbonic", "05", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "carbonic", "06", graphics_scale, asteroid_size))
+        elseif  (asteroid_size_name == "huge") then
+          table.insert(variations, asteroid_variation(asteroid_group, "carbonic", "01", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "carbonic", "02", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "carbonic", "03", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "carbonic", "04", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "carbonic", "05", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "carbonic", "06", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "carbonic", "07", graphics_scale, asteroid_size))
+        end
+      elseif (asteroid_group == "krypton" or asteroid_group == "terbium") then
+        if (asteroid_size_name == "chunk") then
+          table.insert(variations, asteroid_variation(asteroid_group, "oxide", "01", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "oxide", "02", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "oxide", "03", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "oxide", "04", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "oxide", "05", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "oxide", "06", graphics_scale, asteroid_size))
+        elseif (asteroid_size_name == "small") then
+          table.insert(variations, asteroid_variation(asteroid_group, "oxide", "01", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "oxide", "02", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "oxide", "03", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "oxide", "04", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "oxide", "05", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "oxide", "06", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "oxide", "07", graphics_scale, asteroid_size))
+        elseif  (asteroid_size_name == "medium") then
+          table.insert(variations, asteroid_variation(asteroid_group, "oxide", "01", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "oxide", "02", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "oxide", "03", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "oxide", "04", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "oxide", "05", graphics_scale, asteroid_size))
+        elseif (asteroid_size_name == "big") then
+          table.insert(variations, asteroid_variation(asteroid_group, "oxide", "01", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "oxide", "02", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "oxide", "03", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "oxide", "04", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "oxide", "05", graphics_scale, asteroid_size))
+        elseif  (asteroid_size_name == "huge") then
+          table.insert(variations, asteroid_variation(asteroid_group, "oxide", "01", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "oxide", "02", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "oxide", "03", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "oxide", "04", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "oxide", "05", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "oxide", "06", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "oxide", "07", graphics_scale, asteroid_size))
+        end
+      elseif (asteroid_group == "rhodium" or asteroid_group == "ruthenium") then
+        if (asteroid_size_name == "chunk") then
+          table.insert(variations, asteroid_variation(asteroid_group, "promethium", "01", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "promethium", "02", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "promethium", "03", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "promethium", "04", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "promethium", "05", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "promethium", "06", graphics_scale, asteroid_size))
+        elseif (asteroid_size_name == "small") then
+          table.insert(variations, asteroid_variation(asteroid_group, "promethium", "01", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "promethium", "02", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "promethium", "03", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "promethium", "04", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "promethium", "05", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "promethium", "06", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "promethium", "07", graphics_scale, asteroid_size))
+        elseif  (asteroid_size_name == "medium") then
+          table.insert(variations, asteroid_variation(asteroid_group, "promethium", "01", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "promethium", "02", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "promethium", "03", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "promethium", "04", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "promethium", "05", graphics_scale, asteroid_size))
+        elseif (asteroid_size_name == "big") then
+          table.insert(variations, asteroid_variation(asteroid_group, "promethium", "01", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "promethium", "02", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "promethium", "03", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "promethium", "04", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "promethium", "05", graphics_scale, asteroid_size))
+        elseif  (asteroid_size_name == "huge") then
+          table.insert(variations, asteroid_variation(asteroid_group, "promethium", "01", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "promethium", "02", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "promethium", "03", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "promethium", "04", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "promethium", "05", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "promethium", "06", graphics_scale, asteroid_size))
+          table.insert(variations, asteroid_variation(asteroid_group, "promethium", "07", graphics_scale, asteroid_size))
+        end
       end
 
       data:extend
       {
         {
           type = asteroid_size_name == "chunk" and "asteroid-chunk" or "asteroid",
-          name = asteroid_name,
+          -- name = asteroid_name,
+          name = asteroid_size_name.."-"..asteroid_group,
           overkill_fraction = asteroid_size_name ~= "chunk" and 0.01 or nil,
-          localised_description = {"entity-description."..asteroid_type.."-asteroid"},
-          icon = "__space-age__/graphics/icons/"..asteroid_name..".png",
+          localised_description = {"entity-description."..asteroid_name.."-asteroid"},
+          icon = asteroid_icon_path(asteroid_size_name, asteroid_group),
           icon_size = 64,
           selection_box = asteroid_size_name ~= "chunk" and {{-selection_radius, -selection_radius}, {selection_radius, selection_radius}} or nil,
           collision_box = asteroid_size_name ~= "chunk" and {{-collision_radius, -collision_radius}, {collision_radius, collision_radius}} or nil,
@@ -475,11 +486,11 @@ for asteroid_group in pairs(asteroid_groups) do
           dying_trigger_effect = dying_trigger_effects,
 
           subgroup = asteroid_size_name == "chunk" and "space-material" or "space-environment",
-          order = asteroid_data.order .. "["..asteroid_type.."]-"..letter[asteroid_size].."["..asteroid_size_name.."]",
+          order = asteroid_data.order .. "["..asteroid_map[asteroid_type].."]-"..letter[asteroid_size].."["..asteroid_size_name.."]",
           factoriopedia_simulation = factoriopedia_sim,
 
           -- asteroid-chunk properties
-          minable = asteroid_size_name == "chunk" and {mining_time = 0.2, result = asteroid_name, mining_particle = asteroid_type.."-asteroid-chunk-particle-medium" } or nil,
+          minable = asteroid_size_name == "chunk" and {mining_time = 0.2, result = asteroid_name, mining_particle = asteroid_map[asteroid_type].."-asteroid-chunk-particle-medium" } or nil,
 
           -- asteroid properties
           flags = asteroid_size_name ~= "chunk" and {"placeable-enemy", "placeable-off-grid", "not-repairable", "not-on-map"} or nil,
