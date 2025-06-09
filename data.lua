@@ -90,6 +90,7 @@ require("prototypes.resource.resource")
 
 require("prototypes.space.asteroid-spawn-definitions")
 require("prototypes.space.asteroid")
+require("prototypes.space.factoriopedia-simulations")
 require("prototypes.space.space-connection")
 require("prototypes.space.space-location")
 
