@@ -57,6 +57,17 @@ TODO for 0.3.18
 
 TODO for 0.3.19
   + Add asteroids
+    + dysprosium + (metallic graphics)
+    + iridium + (metallic graphics)
+    + krypton + (oxide graphics)
+    + osmium + (carbonic graphics)
+    + rhodium + (prometheum graphics)
+    + ruthenium + (prometheum graphics)
+    + terbium + (oxide graphics)
+    + ytterbium + (carbonic graphics)
+  + Add asteroid chunks
+  - Add asteroid 
+  - Add asteroid graphics for small, medium, big and huge sizes
   + Add asteroid connections
     - Update all asteroid spawn probabilites for connections
   + Add technologies for unlocking
