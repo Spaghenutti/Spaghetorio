@@ -585,3 +585,47 @@ end
 for n = 0, 9 do
   create_asteroid_chunk_parameter(n)
 end
+
+
+-- DO NOT REMOVE THIS!! This is for generate_locale.py
+--[[
+  name = "sp-small-dysprosium-asteroid",  -- #ForRegEx# - asteroid
+  name = "sp-medium-dysprosium-asteroid",  -- #ForRegEx# - asteroid
+  name = "sp-big-dysprosium-asteroid",  -- #ForRegEx# - asteroid
+  name = "sp-huge-dysprosium-asteroid",  -- #ForRegEx# - asteroid
+
+  name = "sp-small-iridium-asteroid",  -- #ForRegEx# - asteroid
+  name = "sp-medium-iridium-asteroid",  -- #ForRegEx# - asteroid
+  name = "sp-big-iridium-asteroid",  -- #ForRegEx# - asteroid
+  name = "sp-huge-iridium-asteroid",  -- #ForRegEx# - asteroid
+
+  name = "sp-small-krypton-asteroid",  -- #ForRegEx# - asteroid
+  name = "sp-medium-krypton-asteroid",  -- #ForRegEx# - asteroid
+  name = "sp-big-krypton-asteroid",  -- #ForRegEx# - asteroid
+  name = "sp-huge-krypton-asteroid",  -- #ForRegEx# - asteroid
+
+  name = "sp-small-osmium-asteroid",  -- #ForRegEx# - asteroid
+  name = "sp-medium-osmium-asteroid",  -- #ForRegEx# - asteroid
+  name = "sp-big-osmium-asteroid",  -- #ForRegEx# - asteroid
+  name = "sp-huge-osmium-asteroid",  -- #ForRegEx# - asteroid
+
+  name = "sp-small-rhodium-asteroid",  -- #ForRegEx# - asteroid
+  name = "sp-medium-rhodium-asteroid",  -- #ForRegEx# - asteroid
+  name = "sp-big-rhodium-asteroid",  -- #ForRegEx# - asteroid
+  name = "sp-huge-rhodium-asteroid",  -- #ForRegEx# - asteroid
+
+  name = "sp-small-ruthenium-asteroid",  -- #ForRegEx# - asteroid
+  name = "sp-medium-ruthenium-asteroid",  -- #ForRegEx# - asteroid
+  name = "sp-big-ruthenium-asteroid",  -- #ForRegEx# - asteroid
+  name = "sp-huge-ruthenium-asteroid",  -- #ForRegEx# - asteroid
+
+  name = "sp-small-terbium-asteroid",  -- #ForRegEx# - asteroid
+  name = "sp-medium-terbium-asteroid",  -- #ForRegEx# - asteroid
+  name = "sp-big-terbium-asteroid",  -- #ForRegEx# - asteroid
+  name = "sp-huge-terbium-asteroid",  -- #ForRegEx# - asteroid
+
+  name = "sp-small-ytterbium-asteroid",  -- #ForRegEx# - asteroid
+  name = "sp-medium-ytterbium-asteroid",  -- #ForRegEx# - asteroid
+  name = "sp-big-ytterbium-asteroid",  -- #ForRegEx# - asteroid
+  name = "sp-huge-ytterbium-asteroid",  -- #ForRegEx# - asteroid
+]]
