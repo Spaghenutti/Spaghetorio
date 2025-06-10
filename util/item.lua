@@ -29,6 +29,7 @@ function item_util.create_frozen_item(item)
   frozen_item = table.deepcopy(item)
   frozen_item.frozen_from = item
   frozen_item.name = "sp-frozen-" .. string.gsub(item.name, "sp%-", "")
+  frozen_item.pictures = nil
   frozen_item.subgroup = "sp-frozen"
   frozen_item.localised_name = {"", {"prefix-name.sp-frozen"}, " ", {"item-name." .. item.name}}
 

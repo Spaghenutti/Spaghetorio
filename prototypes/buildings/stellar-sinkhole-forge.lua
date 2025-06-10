@@ -242,6 +242,10 @@ data:extend({
     },
     energy_usage = "200MW",
     module_slots = 8,
+    icon_draw_specification = {scale = 2.5, shift = {0, 0.0}},
+    icons_positioning = {
+      {inventory_index = defines.inventory.assembling_machine_modules, shift = {0, 2.5}, scale = 1}
+    },
     allowed_effects = { "consumption", "speed", "pollution" },
     open_sound = { filename = "__Spaghetorio__/sounds/buildings/open.ogg", volume = 1 },
     close_sound = { filename = "__Spaghetorio__/sounds/buildings/close.ogg", volume = 1 },

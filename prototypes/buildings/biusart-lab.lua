@@ -212,7 +212,6 @@ data:extend({
       -- "promethium-science-pack",
     },
     module_slots = 3,
-    -- icon_draw_specification = {scale = 2.5, shift = {0, 0.0}},
     icons_positioning = {
       {inventory_index = defines.inventory.lab_modules, shift = {0, 0.9}},
       {inventory_index = defines.inventory.lab_input, shift = {0, -0.5}, max_icons_per_row = 8, separation_multiplier = 1/1.1, scale = 0.3}

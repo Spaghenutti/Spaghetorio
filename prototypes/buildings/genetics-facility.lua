@@ -70,7 +70,11 @@ data:extend({
     collision_box = { { -3.25, -3.25 }, { 3.25, 3.25 } },
     selection_box = { { -3.5, -3.5 }, { 3.5, 3.5 } },
     fast_replaceable_group = "sp-kr-greenhouse",
-    module_slots = 3,
+    module_slots = 5,
+    icon_draw_specification = {scale = 2.5, shift = {0, 0.0}},
+    icons_positioning = {
+      {inventory_index = defines.inventory.assembling_machine_modules, shift = {0, 1.8}, scale = 0.8}
+    },
     allowed_effects = { "consumption", "speed", "productivity", "pollution" },
     graphics_set = {
       animation = {

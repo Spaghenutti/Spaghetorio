@@ -7,6 +7,9 @@ Date: 2025-06-13
     - Change laser technology and laser related recipes
     - Rebalanced noble metal recipes
     - Updated ja locale thanks to snow note
+  Bugfixes:
+    - Fixed frozen item icons on belts
+    - Fixed module visualzation in alt for some buildings buildings
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.18
 Date: 2025-06-06

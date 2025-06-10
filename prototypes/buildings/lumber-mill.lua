@@ -94,5 +94,9 @@ data:extend({
     energy_usage = "300kW",
     module_slots = 3,
     icon_draw_specification = {scale = 1.5, shift = {0, 0}},
+    icons_positioning =
+    {
+      {inventory_index = defines.inventory.assembling_machine_modules, shift = {0, 1.25}}
+    }
   }
 })

@@ -99,8 +99,13 @@ data:extend({
       orientation_to_variation = false,
     },
 
-    energy_usage = "0.25MW",
+    energy_usage = "0.3MW",
     module_slots = 2,
+    icon_draw_specification = {scale = 1.5, shift = {0, 0}},
+    icons_positioning =
+    {
+      {inventory_index = defines.inventory.assembling_machine_modules, shift = {0, 1.25}}
+    },
     allowed_effects = { "consumption", "speed", "productivity", "pollution" },
     open_sound = sounds.machine_open,
     close_sound = sounds.machine_close,

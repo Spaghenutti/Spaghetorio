@@ -160,7 +160,7 @@ data:extend({
     icon_draw_specification = {scale = 2.5, shift = {0, -0.5}},
     icons_positioning =
     {
-      {inventory_index = defines.inventory.assembling_machine_modules, shift = {0, 1.25}}
+      {inventory_index = defines.inventory.assembling_machine_modules, shift = {0, 2}, scale = 1}
     },
     allowed_effects = {"consumption", "speed", "productivity", "pollution", "quality"},
     crafting_categories = {

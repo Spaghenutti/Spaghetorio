@@ -130,7 +130,11 @@ data:extend({
       emissions_per_minute = {pollution = 20},
     },
     energy_usage = "24.19MW",
-    module_slots = 4,
+    module_slots = 5,
+    icon_draw_specification = {scale = 2.5, shift = {0, 0.0}},
+    icons_positioning = {
+      {inventory_index = defines.inventory.assembling_machine_modules, shift = {0, 1.8}, scale = 0.8}
+    },
     allowed_effects = { "consumption", "speed", "pollution" },
     open_sound = { filename = "__Spaghetorio__/sounds/buildings/open.ogg", volume = 1 },
     close_sound = { filename = "__Spaghetorio__/sounds/buildings/close.ogg", volume = 1 },

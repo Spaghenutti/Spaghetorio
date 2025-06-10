@@ -37,7 +37,7 @@ data:extend({
         pipe_covers = pipecoverspictures(),
         volume = 1000,
         pipe_connections = {
-          {flow_direction="input", direction = defines.direction.north, position = {-3, 0}}
+          {flow_direction="input", direction = defines.direction.west, position = {-3, 0}}
         },
       },
       -- Outputs
@@ -187,7 +187,11 @@ data:extend({
     },
 
     energy_usage = "48.39MW",
-    module_slots = 4,
+    module_slots = 5,
+    icon_draw_specification = {scale = 2.5, shift = {0, 0.0}},
+    icons_positioning = {
+      {inventory_index = defines.inventory.assembling_machine_modules, shift = {0, 1.8}, scale = 0.8}
+    },
     allowed_effects = { "consumption", "productivity", "speed", "pollution" },
     open_sound = sounds.machine_open,
     close_sound = sounds.machine_close,

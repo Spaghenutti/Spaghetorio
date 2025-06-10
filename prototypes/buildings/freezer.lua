@@ -112,10 +112,13 @@ data:extend({
     damaged_trigger_effect = hit_effects.entity(),
     module_slots = 6,
     icon_draw_specification = {scale = 0.7, shift = {0, 0.0}},
-    icons_positioning =
-    {
-      {inventory_index = defines.inventory.assembling_machine_modules, shift = {0, 1.25}}
+    icons_positioning = {
+      {inventory_index = defines.inventory.assembling_machine_modules, shift = {0, 0.8}, max_icons_per_row = 6, scale = 0.35}
     },
+    -- icons_positioning =
+    -- {
+    --   {inventory_index = defines.inventory.assembling_machine_modules, scale = 0.6, shift = {0, 1.25}}
+    -- },
     allowed_effects = {"consumption", "productivity", "pollution"},
     crafting_categories = {"sp-freezing", "sp-thawing"},
     crafting_speed = 1,
