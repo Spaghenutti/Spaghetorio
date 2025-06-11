@@ -234,10 +234,26 @@ data:extend({
   },
   {
     type = "item-subgroup",
+    name = "sp-space-intermediates",  -- #ForRegEx# - item-subgroup
+    group = "intermediate-products",
+    order = "h"
+  },
+  {
+    type = "item-subgroup",
     name = "sp-alien-product",  -- #ForRegEx# - item-subgroup
     group = "intermediate-products",
     order = "i"
   },
+--   asteroid_functions.dysprosium      = {5, 2, 1, 0, 10, 10, 10, 10, 10, 10, 10}
+-- asteroid_functions.iridium         = {5, 2, 1, 0, 10, 10, 10, 10, 10, 10, 10}
+-- asteroid_functions.krypton         = {5, 2, 1, 0, 10, 10, 10, 10, 10, 10, 10}
+-- asteroid_functions.osmium          = {5, 2, 1, 0, 10, 10, 10, 10, 10, 10, 10}
+-- asteroid_functions.promethium      = {5, 2, 1, 0, 10, 10, 10, 10, 10, 10, 10}
+-- asteroid_functions.ruthenium       = {5, 2, 1, 0, 10, 10, 10, 10, 10, 10, 10}
+-- asteroid_functions.rhodium         = {5, 2, 1, 0, 10, 10, 10, 10, 10, 10, 10}
+-- asteroid_functions.terbium         = {5, 2, 1, 0, 10, 10, 10, 10, 10, 10, 10}
+-- asteroid_functions.ytterbium       = {5, 2, 1, 0, 10, 10, 10, 10, 10, 10, 10}
+-- asteroid_functions.system_edge     = {3, 5, 2, 0, 10, 10, 10, 10, 10, 10, 10}
   {
     type = "item-subgroup",
     name = "sp-intermediate-alien-product",  -- #ForRegEx# - item-subgroup
@@ -305,12 +321,6 @@ data:extend({
     name = "space-rocket",
     group = "space",
     order = "c"
-  },
-  {
-    type = "item-subgroup",
-    name = "sp-space-intermediates",  -- #ForRegEx# - item-subgroup
-    group = "space",
-    order = "d"
   },
   {
     type = "item-subgroup",

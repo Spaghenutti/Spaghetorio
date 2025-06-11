@@ -10,6 +10,7 @@ Date: 2025-06-13
   Bugfixes:
     - Fixed frozen item icons on belts
     - Fixed module visualzation in alt for some buildings buildings
+    - Fixed that cooling cooland could use productivity modules
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.18
 Date: 2025-06-06

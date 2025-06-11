@@ -6492,7 +6492,7 @@ data:extend({
     },
     category = "sp-freezing",
     enabled = false,
-    allow_productivity = true,
+    allow_productivity = false,
     energy_required = 5,
     ingredients = {
       {type = "fluid", name = "sp-warm-coolant", amount = 5}
