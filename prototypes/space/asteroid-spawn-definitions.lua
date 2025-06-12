@@ -100,44 +100,9 @@ asteroid_functions.huge_angle            = 0.4
 -- MARK: spawn definitions
 asteroid_functions.nauvis_dysprosium =
 {
-  probability_on_range_chunk = {
-    {position = 0.1, probability = asteroid_functions.nauvis_chunks, angle_when_stopped = asteroid_functions.chunk_angle},
-    {position = 0.9, probability = asteroid_functions.dysprosium_chunks, angle_when_stopped = asteroid_functions.chunk_angle}
-  },
-  probability_on_range_medium = {
-    {position = 0.1, probability = 0, angle_when_stopped = asteroid_functions.medium_angle},
-    {position = 0.5, probability = asteroid_functions.dysprosium_medium * 3, angle_when_stopped = asteroid_functions.medium_angle},
-    {position = 0.9, probability = asteroid_functions.dysprosium_medium, angle_when_stopped = asteroid_functions.medium_angle},
-  },
-  type_ratios = {
-    {position = 0.1, ratios = asteroid_functions.nauvis_ratio},
-    {position = 0.9, ratios = asteroid_functions.dysprosium_ratio},
-  }
-}
-
-asteroid_functions.nauvis_ytterbium =
-{
-  probability_on_range_chunk = {
-    {position = 0.1, probability = asteroid_functions.nauvis_chunks, angle_when_stopped = asteroid_functions.chunk_angle},
-    {position = 0.9, probability = asteroid_functions.ytterbium_chunks, angle_when_stopped = asteroid_functions.chunk_angle}
-  },
-  probability_on_range_medium = {
-    {position = 0.1, probability = 0, angle_when_stopped = asteroid_functions.medium_angle},
-    {position = 0.5, probability = asteroid_functions.ytterbium_medium * 3, angle_when_stopped = asteroid_functions.medium_angle},
-    {position = 0.9, probability = asteroid_functions.ytterbium_medium, angle_when_stopped = asteroid_functions.medium_angle},
-  },
-  type_ratios = {
-    {position = 0.1, ratios = asteroid_functions.nauvis_ratio},
-    {position = 0.9, ratios = asteroid_functions.ytterbium_ratio},
-  }
-}
-
-asteroid_functions.nauvis_rhodium =
-{
   {
     asteroid = "metallic-asteroid-chunk",
     probabilities = {0.3, 0.7, 0.4, 0.6},
-    multiplier = 1.5
   },
   {
     asteroid = "carbonic-asteroid-chunk",
@@ -148,306 +113,502 @@ asteroid_functions.nauvis_rhodium =
     probabilities = {0.2, 0.6, 0.4, 0.5},
   },
   {
+    asteroid = "sp-dysprosium-asteroid-chunk",
+    probabilities = {0.5, 1},
+    multiplier = 1.5
+  },
+  {
     asteroid = "small-metallic-asteroid",
-    probabilities = {0.2, 0.4, 0.8},
+    probabilities = {0.2, 0.3, 0.6},
   },
   {
     asteroid = "small-carbonic-asteroid",
-    probabilities = {0.1, 0.2, 0.5},
+    probabilities = {0.1, 0.15, 0.4},
   },
   {
     asteroid = "small-oxide-asteroid",
-    probabilities = {0.2, 0.25, 0.4},
+    probabilities = {0.15, 0.2, 0.3},
+  },
+  {
+    asteroid = "sp-small-dysprosium-asteroid",
+    probabilities = {0.1, 0.2, 1},
+    multiplier = 0.6
+  },
+  {
+    asteroid = "sp-medium-dysprosium-asteroid",
+    probabilities = {0, 0.5, 1},
+    distances = {0, 0.8, 1},
+  },
+}
+
+asteroid_functions.nauvis_ytterbium =
+{
+  {
+    asteroid = "metallic-asteroid-chunk",
+    probabilities = {0.3, 0.7, 0.4, 0.6},
+  },
+  {
+    asteroid = "carbonic-asteroid-chunk",
+    probabilities = {0.2, 0.6, 0.4, 0.7},
+  },
+  {
+    asteroid = "oxide-asteroid-chunk",
+    probabilities = {0.2, 0.6, 0.4, 0.5},
+  },
+  {
+    asteroid = "sp-ytterbium-asteroid-chunk",
+    probabilities = {0.5, 1},
+    multiplier = 1.5
+  },
+  {
+    asteroid = "small-metallic-asteroid",
+    probabilities = {0.2, 0.3, 0.6},
+  },
+  {
+    asteroid = "small-carbonic-asteroid",
+    probabilities = {0.1, 0.15, 0.4},
+  },
+  {
+    asteroid = "small-oxide-asteroid",
+    probabilities = {0.15, 0.2, 0.3},
+  },
+  {
+    asteroid = "sp-small-ytterbium-asteroid",
+    probabilities = {0.1, 0.2, 1},
+    multiplier = 0.6
+  },
+  {
+    asteroid = "sp-medium-ytterbium-asteroid",
+    probabilities = {0, 0.5, 1},
+    distances = {0, 0.8, 1},
+  },
+}
+
+asteroid_functions.nauvis_rhodium =
+{
+  {
+    asteroid = "metallic-asteroid-chunk",
+    probabilities = {0.3, 0.7, 0.4, 0.6},
+  },
+  {
+    asteroid = "carbonic-asteroid-chunk",
+    probabilities = {0.2, 0.6, 0.4, 0.7},
+  },
+  {
+    asteroid = "oxide-asteroid-chunk",
+    probabilities = {0.2, 0.6, 0.4, 0.5},
+  },
+  {
+    asteroid = "sp-rhodium-asteroid-chunk",
+    probabilities = {0.5, 1},
+    multiplier = 1.5
+  },
+  {
+    asteroid = "small-metallic-asteroid",
+    probabilities = {0.2, 0.3, 0.6},
+  },
+  {
+    asteroid = "small-carbonic-asteroid",
+    probabilities = {0.1, 0.15, 0.4},
+  },
+  {
+    asteroid = "small-oxide-asteroid",
+    probabilities = {0.15, 0.2, 0.3},
+  },
+  {
+    asteroid = "sp-small-rhodium-asteroid",
+    probabilities = {0.1, 0.2, 1},
+    multiplier = 0.6
+  },
+  {
+    asteroid = "sp-medium-rhodium-asteroid",
+    probabilities = {0, 0.5, 1},
+    distances = {0, 0.8, 1},
   },
 }
 
 asteroid_functions.dysprosium_ytterbium =
 {
-  probability_on_range_chunk = {
-    {position = 0.1, probability = asteroid_functions.dysprosium_chunks, angle_when_stopped = asteroid_functions.chunk_angle},
-    {position = 0.9, probability = asteroid_functions.ytterbium_chunks, angle_when_stopped = asteroid_functions.chunk_angle}
+  {
+    asteroid = "medium-metallic-asteroid",
+    probabilities = {0.2, 0.3, 0.6},
   },
-  probability_on_range_medium = {
-    {position = 0.1, probability = 0, angle_when_stopped = asteroid_functions.medium_angle},
-    {position = 0.5, probability = asteroid_functions.ytterbium_medium * 3, angle_when_stopped = asteroid_functions.medium_angle},
-    {position = 0.9, probability = asteroid_functions.ytterbium_medium, angle_when_stopped = asteroid_functions.medium_angle},
+  {
+    asteroid = "medium-carbonic-asteroid",
+    probabilities = {0.1, 0.15, 0.4},
   },
-  type_ratios = {
-    {position = 0.1, ratios = asteroid_functions.dysprosium_ratio},
-    {position = 0.9, ratios = asteroid_functions.ytterbium_ratio},
-  }
+  {
+    asteroid = "medium-oxide-asteroid",
+    probabilities = {0.15, 0.2, 0.3},
+  },
+  {
+    asteroid = "sp-medium-dysprosium-asteroid",
+    probabilities = {0, 0.5, 1},
+  },
+  {
+    asteroid = "sp-medium-ytterbium-asteroid",
+    probabilities = {0, 0.5, 1},
+  },
 }
 
 asteroid_functions.dysprosium_rhodium =
 {
-  probability_on_range_chunk = {
-    {position = 0.1, probability = asteroid_functions.dysprosium_chunks, angle_when_stopped = asteroid_functions.chunk_angle},
-    {position = 0.9, probability = asteroid_functions.rhodium_chunks, angle_when_stopped = asteroid_functions.chunk_angle}
+  {
+    asteroid = "medium-metallic-asteroid",
+    probabilities = {0.2, 0.3, 0.6},
   },
-  probability_on_range_medium = {
-    {position = 0.1, probability = 0, angle_when_stopped = asteroid_functions.medium_angle},
-    {position = 0.5, probability = asteroid_functions.rhodium_medium * 3, angle_when_stopped = asteroid_functions.medium_angle},
-    {position = 0.9, probability = asteroid_functions.rhodium_medium, angle_when_stopped = asteroid_functions.medium_angle},
+  {
+    asteroid = "medium-carbonic-asteroid",
+    probabilities = {0.1, 0.15, 0.4},
   },
-  type_ratios = {
-    {position = 0.1, ratios = asteroid_functions.dysprosium_ratio},
-    {position = 0.9, ratios = asteroid_functions.rhodium_ratio},
-  }
+  {
+    asteroid = "medium-oxide-asteroid",
+    probabilities = {0.15, 0.2, 0.3},
+  },
+  {
+    asteroid = "sp-medium-dysprosium-asteroid",
+    probabilities = {0, 0.5, 1},
+  },
+  {
+    asteroid = "sp-medium-rhodium-asteroid",
+    probabilities = {0, 0.5, 1},
+  },
 }
 
 asteroid_functions.dysprosium_ruthenium =
 {
-  probability_on_range_chunk = {
-    {position = 0.1, probability = asteroid_functions.dysprosium_chunks, angle_when_stopped = asteroid_functions.chunk_angle},
-    {position = 0.9, probability = asteroid_functions.ruthenium_chunks, angle_when_stopped = asteroid_functions.chunk_angle}
+  {
+    asteroid = "medium-metallic-asteroid",
+    probabilities = {0.2, 0.3, 0.6},
   },
-  probability_on_range_medium = {
-    {position = 0.1, probability = 0, angle_when_stopped = asteroid_functions.medium_angle},
-    {position = 0.5, probability = asteroid_functions.ruthenium_medium * 3, angle_when_stopped = asteroid_functions.medium_angle},
-    {position = 0.9, probability = asteroid_functions.ruthenium_medium, angle_when_stopped = asteroid_functions.medium_angle},
+  {
+    asteroid = "medium-carbonic-asteroid",
+    probabilities = {0.1, 0.15, 0.4},
   },
-  type_ratios = {
-    {position = 0.1, ratios = asteroid_functions.dysprosium_ratio},
-    {position = 0.9, ratios = asteroid_functions.ruthenium_ratio},
-  }
+  {
+    asteroid = "medium-oxide-asteroid",
+    probabilities = {0.15, 0.2, 0.3},
+  },
+  {
+    asteroid = "sp-medium-dysprosium-asteroid",
+    probabilities = {0, 0.5, 1},
+  },
+  {
+    asteroid = "sp-medium-ruthenium-asteroid",
+    probabilities = {0, 0.5, 1},
+  },
 }
 
 asteroid_functions.ytterbium_rhodium =
 {
-  probability_on_range_chunk = {
-    {position = 0.1, probability = asteroid_functions.ytterbium_chunks, angle_when_stopped = asteroid_functions.chunk_angle},
-    {position = 0.9, probability = asteroid_functions.rhodium_chunks, angle_when_stopped = asteroid_functions.chunk_angle}
+  {
+    asteroid = "medium-metallic-asteroid",
+    probabilities = {0.2, 0.3, 0.6},
   },
-  probability_on_range_medium = {
-    {position = 0.1, probability = 0, angle_when_stopped = asteroid_functions.medium_angle},
-    {position = 0.5, probability = asteroid_functions.rhodium_medium * 3, angle_when_stopped = asteroid_functions.medium_angle},
-    {position = 0.9, probability = asteroid_functions.rhodium_medium, angle_when_stopped = asteroid_functions.medium_angle},
+  {
+    asteroid = "medium-carbonic-asteroid",
+    probabilities = {0.1, 0.15, 0.4},
   },
-  type_ratios = {
-    {position = 0.1, ratios = asteroid_functions.ytterbium_ratio},
-    {position = 0.9, ratios = asteroid_functions.rhodium_ratio},
-  }
-}
-
-asteroid_functions.ytterbium_ruthenium =
-{
-  probability_on_range_chunk = {
-    {position = 0.1, probability = asteroid_functions.ytterbium_chunks, angle_when_stopped = asteroid_functions.chunk_angle},
-    {position = 0.9, probability = asteroid_functions.ruthenium_chunks, angle_when_stopped = asteroid_functions.chunk_angle}
+  {
+    asteroid = "medium-oxide-asteroid",
+    probabilities = {0.15, 0.2, 0.3},
   },
-  probability_on_range_medium = {
-    {position = 0.1, probability = 0, angle_when_stopped = asteroid_functions.medium_angle},
-    {position = 0.5, probability = asteroid_functions.ruthenium_medium * 3, angle_when_stopped = asteroid_functions.medium_angle},
-    {position = 0.9, probability = asteroid_functions.ruthenium_medium, angle_when_stopped = asteroid_functions.medium_angle},
+  {
+    asteroid = "sp-medium-ytterbium-asteroid",
+    probabilities = {0, 0.5, 1},
   },
-  type_ratios = {
-    {position = 0.1, ratios = asteroid_functions.ytterbium_ratio},
-    {position = 0.9, ratios = asteroid_functions.ruthenium_ratio},
-  }
+  {
+    asteroid = "sp-medium-rhodium-asteroid",
+    probabilities = {0, 0.5, 1},
+  },
 }
 
 asteroid_functions.ytterbium_terbium =
 {
-  probability_on_range_chunk = {
-    {position = 0.1, probability = asteroid_functions.ytterbium_chunks, angle_when_stopped = asteroid_functions.chunk_angle},
-    {position = 0.9, probability = asteroid_functions.terbium_chunks, angle_when_stopped = asteroid_functions.chunk_angle}
+  {
+    asteroid = "medium-metallic-asteroid",
+    probabilities = {0.2, 0.3, 0.6},
   },
-  probability_on_range_medium = {
-    {position = 0.1, probability = 0, angle_when_stopped = asteroid_functions.medium_angle},
-    {position = 0.5, probability = asteroid_functions.terbium_medium * 3, angle_when_stopped = asteroid_functions.medium_angle},
-    {position = 0.9, probability = asteroid_functions.terbium_medium, angle_when_stopped = asteroid_functions.medium_angle},
+  {
+    asteroid = "medium-carbonic-asteroid",
+    probabilities = {0.1, 0.15, 0.4},
   },
-  type_ratios = {
-    {position = 0.1, ratios = asteroid_functions.ytterbium_ratio},
-    {position = 0.9, ratios = asteroid_functions.terbium_ratio},
-  }
+  {
+    asteroid = "medium-oxide-asteroid",
+    probabilities = {0.15, 0.2, 0.3},
+  },
+  {
+    asteroid = "sp-medium-ytterbium-asteroid",
+    probabilities = {0, 0.5, 1},
+  },
+  {
+    asteroid = "sp-medium-terbium-asteroid",
+    probabilities = {0, 0.5, 1},
+  },
 }
 
 asteroid_functions.rhodium_ruthenium =
 {
-  probability_on_range_chunk = {
-    {position = 0.1, probability = asteroid_functions.rhodium_chunks, angle_when_stopped = asteroid_functions.chunk_angle},
-    {position = 0.9, probability = asteroid_functions.ruthenium_chunks, angle_when_stopped = asteroid_functions.chunk_angle}
+  {
+    asteroid = "medium-metallic-asteroid",
+    probabilities = {0.2, 0.3, 0.6},
   },
-  probability_on_range_medium = {
-    {position = 0.1, probability = 0, angle_when_stopped = asteroid_functions.medium_angle},
-    {position = 0.5, probability = asteroid_functions.ruthenium_medium * 3, angle_when_stopped = asteroid_functions.medium_angle},
-    {position = 0.9, probability = asteroid_functions.ruthenium_medium, angle_when_stopped = asteroid_functions.medium_angle},
+  {
+    asteroid = "medium-carbonic-asteroid",
+    probabilities = {0.1, 0.15, 0.4},
   },
-  type_ratios = {
-    {position = 0.1, ratios = asteroid_functions.rhodium_ratio},
-    {position = 0.9, ratios = asteroid_functions.ruthenium_ratio},
-  }
+  {
+    asteroid = "medium-oxide-asteroid",
+    probabilities = {0.15, 0.2, 0.3},
+  },
+  {
+    asteroid = "sp-medium-rhodium-asteroid",
+    probabilities = {0, 0.5, 1},
+  },
+  {
+    asteroid = "sp-medium-ruthenium-asteroid",
+    probabilities = {0, 0.5, 1},
+  },
 }
 
 asteroid_functions.rhodium_terbium =
 {
-  probability_on_range_chunk = {
-    {position = 0.1, probability = asteroid_functions.rhodium_chunks, angle_when_stopped = asteroid_functions.chunk_angle},
-    {position = 0.9, probability = asteroid_functions.terbium_chunks, angle_when_stopped = asteroid_functions.chunk_angle}
+  {
+    asteroid = "medium-metallic-asteroid",
+    probabilities = {0.2, 0.3, 0.6},
   },
-  probability_on_range_medium = {
-    {position = 0.1, probability = 0, angle_when_stopped = asteroid_functions.medium_angle},
-    {position = 0.5, probability = asteroid_functions.terbium_medium * 3, angle_when_stopped = asteroid_functions.medium_angle},
-    {position = 0.9, probability = asteroid_functions.terbium_medium, angle_when_stopped = asteroid_functions.medium_angle},
+  {
+    asteroid = "medium-carbonic-asteroid",
+    probabilities = {0.1, 0.15, 0.4},
   },
-  type_ratios = {
-    {position = 0.1, ratios = asteroid_functions.rhodium_ratio},
-    {position = 0.9, ratios = asteroid_functions.terbium_ratio},
-  }
+  {
+    asteroid = "medium-oxide-asteroid",
+    probabilities = {0.15, 0.2, 0.3},
+  },
+  {
+    asteroid = "sp-medium-rhodium-asteroid",
+    probabilities = {0, 0.5, 1},
+  },
+  {
+    asteroid = "sp-medium-terbium-asteroid",
+    probabilities = {0, 0.5, 1},
+  },
 }
 
 asteroid_functions.ruthenium_terbium =
 {
-  probability_on_range_chunk = {
-    {position = 0.1, probability = asteroid_functions.ruthenium_chunks, angle_when_stopped = asteroid_functions.chunk_angle},
-    {position = 0.9, probability = asteroid_functions.terbium_chunks, angle_when_stopped = asteroid_functions.chunk_angle}
+  {
+    asteroid = "medium-metallic-asteroid",
+    probabilities = {0.2, 0.3, 0.6},
   },
-  probability_on_range_medium = {
-    {position = 0.1, probability = 0, angle_when_stopped = asteroid_functions.medium_angle},
-    {position = 0.5, probability = asteroid_functions.terbium_medium * 3, angle_when_stopped = asteroid_functions.medium_angle},
-    {position = 0.9, probability = asteroid_functions.terbium_medium, angle_when_stopped = asteroid_functions.medium_angle},
+  {
+    asteroid = "medium-carbonic-asteroid",
+    probabilities = {0.1, 0.15, 0.4},
   },
-  type_ratios = {
-    {position = 0.1, ratios = asteroid_functions.ruthenium_ratio},
-    {position = 0.9, ratios = asteroid_functions.terbium_ratio},
-  }
+  {
+    asteroid = "medium-oxide-asteroid",
+    probabilities = {0.15, 0.2, 0.3},
+  },
+  {
+    asteroid = "sp-medium-ruthenium-asteroid",
+    probabilities = {0, 0.5, 1},
+  },
+  {
+    asteroid = "sp-medium-terbium-asteroid",
+    probabilities = {0, 0.5, 1},
+  },
 }
 
 asteroid_functions.ytterbium_iridium =
 {
-  probability_on_range_chunk = {
-    {position = 0.1, probability = asteroid_functions.ytterbium_chunks, angle_when_stopped = asteroid_functions.chunk_angle},
-    {position = 0.9, probability = asteroid_functions.iridium_chunks, angle_when_stopped = asteroid_functions.chunk_angle}
+  {
+    asteroid = "medium-metallic-asteroid",
+    probabilities = {0.2, 0.3, 0.6},
   },
-  probability_on_range_medium = {
-    {position = 0.1, probability = 0, angle_when_stopped = asteroid_functions.medium_angle},
-    {position = 0.5, probability = asteroid_functions.iridium_medium * 3, angle_when_stopped = asteroid_functions.medium_angle},
-    {position = 0.9, probability = asteroid_functions.iridium_medium, angle_when_stopped = asteroid_functions.medium_angle},
+  {
+    asteroid = "medium-carbonic-asteroid",
+    probabilities = {0.1, 0.15, 0.4},
   },
-  type_ratios = {
-    {position = 0.1, ratios = asteroid_functions.ytterbium_ratio},
-    {position = 0.9, ratios = asteroid_functions.iridium_ratio},
-  }
+  {
+    asteroid = "medium-oxide-asteroid",
+    probabilities = {0.15, 0.2, 0.3},
+  },
+  {
+    asteroid = "sp-medium-ytterbium-asteroid",
+    probabilities = {0, 0.5, 1},
+  },
+  {
+    asteroid = "sp-medium-iridium-asteroid",
+    probabilities = {0, 0.5, 1},
+  },
 }
 
 asteroid_functions.ytterbium_osmium =
 {
-  probability_on_range_chunk = {
-    {position = 0.1, probability = asteroid_functions.ytterbium_chunks, angle_when_stopped = asteroid_functions.chunk_angle},
-    {position = 0.9, probability = asteroid_functions.osmium_chunks, angle_when_stopped = asteroid_functions.chunk_angle}
+  {
+    asteroid = "medium-metallic-asteroid",
+    probabilities = {0.2, 0.3, 0.6},
   },
-  probability_on_range_medium = {
-    {position = 0.1, probability = 0, angle_when_stopped = asteroid_functions.medium_angle},
-    {position = 0.5, probability = asteroid_functions.osmium_medium * 3, angle_when_stopped = asteroid_functions.medium_angle},
-    {position = 0.9, probability = asteroid_functions.osmium_medium, angle_when_stopped = asteroid_functions.medium_angle},
+  {
+    asteroid = "medium-carbonic-asteroid",
+    probabilities = {0.1, 0.15, 0.4},
   },
-  type_ratios = {
-    {position = 0.1, ratios = asteroid_functions.ytterbium_ratio},
-    {position = 0.9, ratios = asteroid_functions.osmium_ratio},
-  }
+  {
+    asteroid = "medium-oxide-asteroid",
+    probabilities = {0.15, 0.2, 0.3},
+  },
+  {
+    asteroid = "sp-medium-ytterbium-asteroid",
+    probabilities = {0, 0.5, 1},
+  },
+  {
+    asteroid = "sp-medium-osmium-asteroid",
+    probabilities = {0, 0.5, 1},
+  },
 }
 
 asteroid_functions.iridium_osmium =
 {
-  probability_on_range_chunk = {
-    {position = 0.1, probability = asteroid_functions.iridium_chunks, angle_when_stopped = asteroid_functions.chunk_angle},
-    {position = 0.9, probability = asteroid_functions.osmium_chunks, angle_when_stopped = asteroid_functions.chunk_angle}
+  {
+    asteroid = "medium-metallic-asteroid",
+    probabilities = {0.2, 0.3, 0.6},
   },
-  probability_on_range_medium = {
-    {position = 0.1, probability = 0, angle_when_stopped = asteroid_functions.medium_angle},
-    {position = 0.5, probability = asteroid_functions.osmium_medium * 3, angle_when_stopped = asteroid_functions.medium_angle},
-    {position = 0.9, probability = asteroid_functions.osmium_medium, angle_when_stopped = asteroid_functions.medium_angle},
+  {
+    asteroid = "medium-carbonic-asteroid",
+    probabilities = {0.1, 0.15, 0.4},
   },
-  type_ratios = {
-    {position = 0.1, ratios = asteroid_functions.iridium_ratio},
-    {position = 0.9, ratios = asteroid_functions.osmium_ratio},
-  }
+  {
+    asteroid = "medium-oxide-asteroid",
+    probabilities = {0.15, 0.2, 0.3},
+  },
+  {
+    asteroid = "sp-medium-iridium-asteroid",
+    probabilities = {0, 0.5, 1},
+  },
+  {
+    asteroid = "sp-medium-osmium-asteroid",
+    probabilities = {0, 0.5, 1},
+  },
 }
 
 asteroid_functions.iridium_promethium =
 {
-  probability_on_range_chunk = {
-    {position = 0.1, probability = asteroid_functions.iridium_chunks, angle_when_stopped = asteroid_functions.chunk_angle},
-    {position = 0.9, probability = asteroid_functions.promethium_chunks, angle_when_stopped = asteroid_functions.chunk_angle}
+  {
+    asteroid = "medium-metallic-asteroid",
+    probabilities = {0.2, 0.3, 0.6},
   },
-  probability_on_range_medium = {
-    {position = 0.1, probability = 0, angle_when_stopped = asteroid_functions.medium_angle},
-    {position = 0.5, probability = asteroid_functions.promethium_medium * 3, angle_when_stopped = asteroid_functions.medium_angle},
-    {position = 0.9, probability = asteroid_functions.promethium_medium, angle_when_stopped = asteroid_functions.medium_angle},
+  {
+    asteroid = "medium-carbonic-asteroid",
+    probabilities = {0.1, 0.15, 0.4},
   },
-  type_ratios = {
-    {position = 0.1, ratios = asteroid_functions.iridium_ratio},
-    {position = 0.9, ratios = asteroid_functions.promethium_ratio},
-  }
+  {
+    asteroid = "medium-oxide-asteroid",
+    probabilities = {0.15, 0.2, 0.3},
+  },
+  {
+    asteroid = "sp-medium-iridium-asteroid",
+    probabilities = {0, 0.5, 1},
+  },
+  {
+    asteroid = "medium-promethium-asteroid",
+    probabilities = {0, 0.5, 1},
+  },
 }
 
 asteroid_functions.iridium_terbium =
 {
-  probability_on_range_chunk = {
-    {position = 0.1, probability = asteroid_functions.iridium_chunks, angle_when_stopped = asteroid_functions.chunk_angle},
-    {position = 0.9, probability = asteroid_functions.terbium_chunks, angle_when_stopped = asteroid_functions.chunk_angle}
+  {
+    asteroid = "medium-metallic-asteroid",
+    probabilities = {0.2, 0.3, 0.6},
   },
-  probability_on_range_medium = {
-    {position = 0.1, probability = 0, angle_when_stopped = asteroid_functions.medium_angle},
-    {position = 0.5, probability = asteroid_functions.terbium_medium * 3, angle_when_stopped = asteroid_functions.medium_angle},
-    {position = 0.9, probability = asteroid_functions.terbium_medium, angle_when_stopped = asteroid_functions.medium_angle},
+  {
+    asteroid = "medium-carbonic-asteroid",
+    probabilities = {0.1, 0.15, 0.4},
   },
-  type_ratios = {
-    {position = 0.1, ratios = asteroid_functions.iridium_ratio},
-    {position = 0.9, ratios = asteroid_functions.terbium_ratio},
-  }
+  {
+    asteroid = "medium-oxide-asteroid",
+    probabilities = {0.15, 0.2, 0.3},
+  },
+  {
+    asteroid = "sp-medium-iridium-asteroid",
+    probabilities = {0, 0.5, 1},
+  },
+  {
+    asteroid = "sp-medium-terbium-asteroid",
+    probabilities = {0, 0.5, 1},
+  },
 }
 
 asteroid_functions.osmium_promethium =
 {
-  probability_on_range_chunk = {
-    {position = 0.1, probability = asteroid_functions.osmium_chunks, angle_when_stopped = asteroid_functions.chunk_angle},
-    {position = 0.9, probability = asteroid_functions.promethium_chunks, angle_when_stopped = asteroid_functions.chunk_angle}
+  {
+    asteroid = "medium-metallic-asteroid",
+    probabilities = {0.2, 0.3, 0.6},
   },
-  probability_on_range_medium = {
-    {position = 0.1, probability = 0, angle_when_stopped = asteroid_functions.medium_angle},
-    {position = 0.5, probability = asteroid_functions.promethium_medium * 3, angle_when_stopped = asteroid_functions.medium_angle},
-    {position = 0.9, probability = asteroid_functions.promethium_medium, angle_when_stopped = asteroid_functions.medium_angle},
+  {
+    asteroid = "medium-carbonic-asteroid",
+    probabilities = {0.1, 0.15, 0.4},
   },
-  type_ratios = {
-    {position = 0.1, ratios = asteroid_functions.osmium_ratio},
-    {position = 0.9, ratios = asteroid_functions.promethium_ratio},
-  }
+  {
+    asteroid = "medium-oxide-asteroid",
+    probabilities = {0.15, 0.2, 0.3},
+  },
+  {
+    asteroid = "sp-medium-osmium-asteroid",
+    probabilities = {0, 0.5, 1},
+  },
+  {
+    asteroid = "medium-promethium-asteroid",
+    probabilities = {0, 0.5, 1},
+  },
 }
 
 asteroid_functions.krypton_promethium =
 {
-  probability_on_range_chunk = {
-    {position = 0.1, probability = asteroid_functions.krypton_chunks, angle_when_stopped = asteroid_functions.chunk_angle},
-    {position = 0.9, probability = asteroid_functions.promethium_chunks, angle_when_stopped = asteroid_functions.chunk_angle}
+  {
+    asteroid = "medium-metallic-asteroid",
+    probabilities = {0.2, 0.3, 0.6},
   },
-  probability_on_range_medium = {
-    {position = 0.1, probability = 0, angle_when_stopped = asteroid_functions.medium_angle},
-    {position = 0.5, probability = asteroid_functions.promethium_medium * 3, angle_when_stopped = asteroid_functions.medium_angle},
-    {position = 0.9, probability = asteroid_functions.promethium_medium, angle_when_stopped = asteroid_functions.medium_angle},
+  {
+    asteroid = "medium-carbonic-asteroid",
+    probabilities = {0.1, 0.15, 0.4},
   },
-  type_ratios = {
-    {position = 0.1, ratios = asteroid_functions.krypton_ratio},
-    {position = 0.9, ratios = asteroid_functions.promethium_ratio},
-  }
+  {
+    asteroid = "medium-oxide-asteroid",
+    probabilities = {0.15, 0.2, 0.3},
+  },
+  {
+    asteroid = "sp-medium-krypton-asteroid",
+    probabilities = {0, 0.5, 1},
+  },
+  {
+    asteroid = "medium-promethium-asteroid",
+    probabilities = {0, 0.5, 1},
+  },
 }
 
 asteroid_functions.krypton_dysprosium =
 {
-  probability_on_range_chunk = {
-    {position = 0.1, probability = asteroid_functions.krypton_chunks, angle_when_stopped = asteroid_functions.chunk_angle},
-    {position = 0.9, probability = asteroid_functions.dysprosium_chunks, angle_when_stopped = asteroid_functions.chunk_angle}
+  {
+    asteroid = "medium-metallic-asteroid",
+    probabilities = {0.2, 0.3, 0.6},
   },
-  probability_on_range_medium = {
-    {position = 0.1, probability = 0, angle_when_stopped = asteroid_functions.medium_angle},
-    {position = 0.5, probability = asteroid_functions.dysprosium_medium * 3, angle_when_stopped = asteroid_functions.medium_angle},
-    {position = 0.9, probability = asteroid_functions.dysprosium_medium, angle_when_stopped = asteroid_functions.medium_angle},
+  {
+    asteroid = "medium-carbonic-asteroid",
+    probabilities = {0.1, 0.15, 0.4},
   },
-  type_ratios = {
-    {position = 0.1, ratios = asteroid_functions.krypton_ratio},
-    {position = 0.9, ratios = asteroid_functions.dysprosium_ratio},
-  }
+  {
+    asteroid = "medium-oxide-asteroid",
+    probabilities = {0.15, 0.2, 0.3},
+  },
+  {
+    asteroid = "sp-medium-krypton-asteroid",
+    probabilities = {0, 0.5, 1},
+  },
+  {
+    asteroid = "sp-medium-dysprosium-asteroid",
+    probabilities = {0, 0.5, 1},
+  },
 }
 
 asteroid_functions.get_probability_multiplier = function(asteroid_type)

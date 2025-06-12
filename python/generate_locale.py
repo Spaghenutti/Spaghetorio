@@ -122,6 +122,8 @@ def get_sections(object_type: str) -> List[str]:
             return ["autoplace-control-name"]
         case "asteroid":
             return ["entity-name"]
+        case "asteroid-chunk":
+            return ["asteroid-chunk-name"]
         case "building":
             return ["entity-name", "item-name"]
         case "entity":
