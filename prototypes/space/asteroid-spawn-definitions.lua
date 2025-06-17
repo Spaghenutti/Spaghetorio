@@ -2,14 +2,16 @@
 local helper = require("__Spaghetorio__.util.helper")
 local asteroid_functions = {}
 
+asteroid_functions.chunk_factor = 0.8
+asteroid_functions.stationary_chunk_factor = 0.8
 asteroid_functions.standard_speed = 1
 
 -- MARK: asteroid probabilites
-asteroid_functions.default_chunks        = 0.005
-asteroid_functions.default_chunks_small  = 0.02
-asteroid_functions.default_chunks_medium = 0.0025
-asteroid_functions.default_chunks_big    = 0.0015
-asteroid_functions.default_chunks_huge   = 0.001
+asteroid_functions.default_chunks        = 0.005 * asteroid_functions.chunk_factor
+asteroid_functions.default_chunks_small  = 0.02 * asteroid_functions.chunk_factor
+asteroid_functions.default_chunks_medium = 0.0025 * asteroid_functions.chunk_factor
+asteroid_functions.default_chunks_big    = 0.0015 * asteroid_functions.chunk_factor
+asteroid_functions.default_chunks_huge   = 0.001 * asteroid_functions.chunk_factor
 
 asteroid_functions.system_edge_chunks    = 0.0005
 asteroid_functions.system_edge_huge      = 0.00125
@@ -83,23 +85,23 @@ asteroid_functions.rhodium =
 {
   {
     asteroid = "medium-metallic-asteroid",
-    probability = 10,
+    probability = 1,
   },
   {
     asteroid = "medium-carbonic-asteroid",
-    probability = 10,
+    probability = 1,
   },
   {
     asteroid = "medium-oxide-asteroid",
-    probability = 10,
+    probability = 1,
   },
   {
     asteroid = "sp-small-rhodium-asteroid",
-    probability = 7,
+    probability = 0.7,
   },
   {
     asteroid = "sp-medium-rhodium-asteroid",
-    probability = 13,
+    probability = 1.3,
   },
 }
 
@@ -816,7 +818,7 @@ asteroid_functions.spawn_definitions = function(data)
     local asteroid_spawn_definition = {
       type = string.find(entry.asteroid, "chunk") and "asteroid-chunk" or nil,
       asteroid = entry.asteroid,
-      probability = entry.probability * asteroid_functions.get_probability_multiplier(entry.asteroid),
+      probability = entry.probability * asteroid_functions.get_probability_multiplier(entry.asteroid) * asteroid_functions.stationary_chunk_factor,
       speed = asteroid_functions.get_speed(entry.asteroid),
       angle_when_stopped = asteroid_functions.get_angle(entry.asteroid)
     }
