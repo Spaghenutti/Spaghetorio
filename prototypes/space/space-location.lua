@@ -18,7 +18,7 @@ data:extend({
     magnitude = 1.0,
     label_orientation = 0.15,
     asteroid_spawn_influence = 1,
-    asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.nauvis_dysprosium)
+    asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.dysprosium)
   },
   {
     type = "space-location",
@@ -32,7 +32,7 @@ data:extend({
     magnitude = 1.0,
     label_orientation = 0.15,
     asteroid_spawn_influence = 1,
-    asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.nauvis_ytterbium)
+    asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.ytterbium)
   },
   {
     type = "space-location",
@@ -46,7 +46,7 @@ data:extend({
     magnitude = 1.0,
     label_orientation = 0.15,
     asteroid_spawn_influence = 1,
-    asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.iridium_osmium)
+    asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.iridium)
   },
   {
     type = "space-location",
@@ -60,7 +60,7 @@ data:extend({
     magnitude = 1.0,
     label_orientation = 0.15,
     asteroid_spawn_influence = 1,
-    asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.krypton_promethium)
+    asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.krypton)
   },
   {
     type = "space-location",
@@ -74,7 +74,7 @@ data:extend({
     magnitude = 1.0,
     label_orientation = 0.15,
     asteroid_spawn_influence = 1,
-    asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.iridium_osmium)
+    asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.osmium)
   },
   {
     type = "space-location",
@@ -88,7 +88,7 @@ data:extend({
     magnitude = 1.0,
     label_orientation = 0.15,
     asteroid_spawn_influence = 1,
-    asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.iridium_promethium)
+    asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.promethium)
   },
   {
     type = "space-location",
@@ -102,7 +102,7 @@ data:extend({
     magnitude = 0.7,
     label_orientation = 0.15,
     asteroid_spawn_influence = 1,
-    asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.nauvis_rhodium)
+    asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.rhodium)
   },
   {
     type = "space-location",
@@ -116,7 +116,7 @@ data:extend({
     magnitude = 1.0,
     label_orientation = 0.15,
     asteroid_spawn_influence = 1,
-    asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.rhodium_ruthenium)
+    asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.ruthenium)
   },
   {
     type = "space-location",
@@ -130,6 +130,6 @@ data:extend({
     magnitude = 1.0,
     label_orientation = 0.15,
     asteroid_spawn_influence = 1,
-    asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.rhodium_terbium)
+    asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.terbium)
   },
 })
