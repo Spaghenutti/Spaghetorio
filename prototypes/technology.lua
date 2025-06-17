@@ -5085,11 +5085,7 @@ data:extend({
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-quasicrystal-1"
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-quasicrystal-2"
+        recipe = "sp-quasicrystal"
       },
     },
     prerequisites = {

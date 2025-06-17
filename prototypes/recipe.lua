@@ -6824,7 +6824,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-quasicrystal-1",  -- #ForRegEx# - recipe
+    name = "sp-quasicrystal",  -- #ForRegEx# - recipe
     icon = "__Spaghetorio__/graphics/icons/quasicrystal.png",
     icon_size = 64,
     mip_maps = 4,
@@ -6833,34 +6833,13 @@ data:extend({
     allow_productivity = true,
     energy_required = 30,
     ingredients = {
-      {type = "item", name = "copper-plate", amount = 4},
-      {type = "item", name = "iron-plate", amount = 1},
-      {type = "item", name = "sp-aluminum-sheet", amount = 2},
-      {type = "item", name = "sp-chromium-plate", amount = 5}
-    },
-    results = {
-      {type = "item", name = "sp-quasicrystal", amount = 1}
-    },
-    order = "crystal-[quasicrystal-1]"
-  },
-  {
-    type = "recipe",
-    name = "sp-quasicrystal-2",  -- #ForRegEx# - recipe
-    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/quasicrystal.png", 64,
-                                         "__Spaghetorio__/graphics/icons/aluminum-sheet.png", 64),
-    category = "sp-crystallizing",
-    enabled = false,
-    allow_productivity = true,
-    energy_required = 40,
-    hide_from_player_crafting = true,
-    ingredients = {
       {type = "item", name = "sp-nickel-ingot", amount = 3},
       {type = "item", name = "sp-aluminum-sheet", amount = 5},
       {type = "item", name = "sp-palladium", amount = 1},
       {type = "item", name = "sp-niobium-billet", amount = 1}
     },
     results = {
-      {type = "item", name = "sp-quasicrystal", amount = 4}
+      {type = "item", name = "sp-quasicrystal", amount = 1}
     },
     order = "crystal-[quasicrystal-1]"
   },
