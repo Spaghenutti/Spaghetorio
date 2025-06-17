@@ -66,23 +66,63 @@ TODO for 0.3.19
     + terbium + (oxide graphics)
     + ytterbium + (carbonic graphics)
   + Add asteroid chunks
-  - Add asteroid
-    - Add image paths for generate_zip.py
-    - Fix order of asteroids
-    - Fix factorio simulations
-  - Add asteroid graphics for small, medium, big and huge sizes
+  + Add asteroid
+    + Add image paths for generate_zip.py
+    + Fix factorio simulations
   + Add asteroid connections
-    - Update all asteroid spawn probabilites for connections
   + Add technologies for unlocking
-  - Add multiple landing pads
   + Add bad fuel recipe for space travel
     + hydrazine recipe chain
     + cyanogen recipe chain
-  - Fix asteroid reprocessing
   + Add recipe for space science
-  - See metal and stars mod https://mods.factorio.com/mod/metal-and-stars https://youtu.be/8pGgnDISc78?si=H3ddFWEihf-NK_A1&t=912
 
 TODO for 0.3.20
+  - Add multiple landing pads
+  + Update all asteroid spawn probabilites for connections
+  - Fix asteroid icons for small, medium, big and huge sizes
+  - Add recipe chains for
+    - rhodium
+      - recipe chain
+        - get it from mineral water
+      - technology
+
+TODO for 0.3.21
+  - Add recipe chains for
+    - dysprosium
+      - recipe chain
+      - technology
+    - ruthenium
+      - recipe chain
+      - technology
+    - terbium
+      - recipe chain
+      - technology
+    - ytterbium
+      - recipe chain
+      - technology
+
+TODO for 0.3.22
+  - Add recipe chains for
+    - iridium
+      - recipe chain
+      - technology
+    - krypton
+      - recipe chain
+      - technology
+    - osmium
+      - recipe chain
+      - technology
+  - Check all recipes that should be done in arc-furnace
+    - Osmium (Not added yet)
+    - Iridium (Required before arcfurnace)
+    - Tungsten
+    - Rhenium
+    - Hafnium
+    - Ruthenium (Not added yet)
+    - Rhodium (Not added yet)
+
+TODO for 0.3.23
+  - Fix asteroid reprocessing
   - Fix noble gases recipe chain
   - Get some noble gasses from methane ice
   - Use xenon for breeder reactor?
@@ -94,17 +134,8 @@ TODO for 0.3.20
       - itemes
       - recipes
       - technologies
-  - Check all recipes that should be done in arc-furnace
-    - Osmium (Not added yet)
-    - Iridium (Required before arcfurnace)
-    - Tungsten
-    - Rhenium
-    - Hafnium
-    - Ruthenium (Not added yet)
-    - Rhodium (Not added yet)
-  - Update space science 2 branch of tech tree
 
-TODO for 0.3.21
+TODO for 0.3.24
   - Unlock legendary quality much later in tech tree
   - Update automation science 3
     - Add nuclear science as requirement
@@ -125,7 +156,7 @@ TODO for 0.3.21
     - thallium used in optics
     - used in rodent poison
 
-TODO for 0.3.22
+TODO for 0.3.25
   - Add 2-3 more rare metals to rare metals technology
   - Add all 3-4 rare metals from asteroids
   - Add more rare metals comming from lava
@@ -240,6 +271,7 @@ Features:
   - Create multiple resurce patches for grobgnum (for version 0.4.0 or higher)
   - For items and fluids add to icon chemical formula and add picture without chemical formula (such that when item is on conveyor belt text does not show up). Also try to add this feature for barrels.
   - Add back blunagium, grobgnum, rukite and yemnuth rockets
+  - See metal and stars mod https://mods.factorio.com/mod/metal-and-stars https://youtu.be/8pGgnDISc78?si=H3ddFWEihf-NK_A1&t=912
 
 Scripting:
   - Acrospheres (for version 0.4.0 or higher)

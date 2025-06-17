@@ -1,6 +1,10 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.20
 Date: 2025-06-20
+  Changes:
+    - Removed recipe insulated wire from aluminum
+    - Removed recipe turbine blade from titanium aluminum tin and renamed turbine blade from steel recipe to be turbine blade like the item. (you will have to select again the recipe of the assembling machine)
+    - Removed some capacitor recipes and kept the capacitor from aluminum recipe and renamed recipe to capacitor (you will have to select again the recipe of the assembling machine)
   Bugfixes:
     - Fixed some asteroid chunks not spawning correctly
     - Fixed power from solar panels in space for asteroids

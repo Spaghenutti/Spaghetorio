@@ -4353,7 +4353,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-capacitor-from-aluminum",  -- #ForRegEx# - recipe
+    name = "sp-capacitor",  -- #ForRegEx# - recipe
     category = "chemistry",
     enabled = false,
     allow_productivity = true,
@@ -9870,26 +9870,6 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-capacitor-from-tantalum",  -- #ForRegEx# - recipe
-    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/capacitor.png", 64,
-                                         "__Spaghetorio__/graphics/icons/tantalum-billet.png", 64),
-    category = "crafting",
-    enabled = false,
-    allow_productivity = true,
-    energy_required = 4,
-    hide_from_player_crafting = true,
-    ingredients = {
-      {type = "item", name = "copper-cable", amount = 1},
-      {type = "item", name = "sp-phosphorus", amount = 1},
-      {type = "item", name = "sp-tantalum-billet", amount = 1},
-      {type = "item", name = "plastic-bar", amount = 1}
-    },
-    results = {
-      {type = "item", name = "sp-capacitor", amount = 5}
-    }
-  },
-  {
-    type = "recipe",
     name = "sp-coil",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
@@ -10781,26 +10761,6 @@ data:extend({
   ------------------------------------------------------------------------------
   {
     type = "recipe",
-    name = "sp-capacitor-from-niobium",  -- #ForRegEx# - recipe
-    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/capacitor.png", 64,
-                                         "__Spaghetorio__/graphics/icons/niobium-billet.png", 64),
-    category = "crafting-with-fluid",
-    enabled = false,
-    allow_productivity = true,
-    energy_required = 3.2,
-    hide_from_player_crafting = true,
-    ingredients = {
-      {type = "item", name = "copper-cable", amount = 1},
-      {type = "fluid", name = "sp-phosphoric-acid", amount = 8},
-      {type = "item", name = "sp-niobium-billet", amount = 2},
-      {type = "item", name = "plastic-bar", amount = 1}
-    },
-    results = {
-      {type = "item", name = "sp-capacitor", amount = 6}
-    }
-  },
-  {
-    type = "recipe",
     name = "sp-ball-bearing",  -- #ForRegEx# - recipe
     category = "crafting-with-fluid",
     enabled = false,
@@ -11135,7 +11095,7 @@ data:extend({
   ------------------------------------------------------------------------------
   {
     type = "recipe",
-    name = "sp-turbine-blade-from-stainless-steel",  -- #ForRegEx# - recipe
+    name = "sp-turbine-blade",  -- #ForRegEx# - recipe
     icon = "__Spaghetorio__/graphics/icons/turbine-blade.png",
     icon_size = 64,
     mip_maps = 4,
@@ -11148,25 +11108,6 @@ data:extend({
       {type = "item", name = "sp-chromium-plate", amount = 1},
       {type = "item", name = "sp-zirconium-rod", amount = 2},
       {type = "item", name = "sp-titanium-plate", amount = 1},
-    },
-    results = {
-      {type = "item", name = "sp-turbine-blade", amount = 3}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-turbine-blade-from-titanium-aluminum-tin",  -- #ForRegEx# - recipe
-    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/turbine-blade.png", 64,
-                                         "__Spaghetorio__/graphics/icons/titanium-aluminum-tin.png", 64),
-    category = "advanced-crafting",
-    enabled = false,
-    allow_productivity = true,
-    energy_required = 8,
-    hide_from_player_crafting = true,
-    ingredients = {
-      {type = "item", name = "sp-titanium-aluminum-tin", amount = 6},
-      {type = "item", name = "sp-cobalt-billet", amount = 1},
-      {type = "item", name = "sp-tantalum-billet", amount = 2}
     },
     results = {
       {type = "item", name = "sp-turbine-blade", amount = 3}
@@ -18643,24 +18584,6 @@ data:extend({
     },
     results = {
       {type = "item", name = "landfill", amount = 1}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-insulated-wire-from-aluminum",  -- #ForRegEx# - recipe
-    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/insulated-wire.png", 64,
-                                         "__Spaghetorio__/graphics/icons/aluminum-cable.png", 64),
-    category = "crafting-with-fluid",
-    enabled = false,
-    allow_productivity = true,
-    energy_required = 1,
-    hide_from_player_crafting = true,
-    ingredients = {
-      {type = "fluid", name = "sp-vinyl-chloride", amount = 12},
-      {type = "item", name = "sp-aluminum-cable", amount = 2}
-    },
-    results = {
-      {type = "item", name = "sp-insulated-wire", amount = 3}
     }
   },
   {

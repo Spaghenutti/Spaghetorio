@@ -903,14 +903,6 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "sp-aqueous-niobium-and-tantalum"
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-capacitor-from-niobium"
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-capacitor-from-tantalum"
       }
     },
     prerequisites = {
@@ -2473,7 +2465,7 @@ data:extend({
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-capacitor-from-aluminum"
+        recipe = "sp-capacitor"
       },
       {
         type = "unlock-recipe",
@@ -3260,11 +3252,7 @@ data:extend({
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-turbine-blade-from-stainless-steel"
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-turbine-blade-from-titanium-aluminum-tin"
+        recipe = "sp-turbine-blade"
       },
     },
     prerequisites = {
@@ -6618,10 +6606,6 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "sp-insulated-wire"
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-insulated-wire-from-aluminum"
       },
     },
     prerequisites = {
