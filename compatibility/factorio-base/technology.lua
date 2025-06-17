@@ -2587,7 +2587,8 @@ table.insert(data.raw.technology["space-science-pack"].effects, 1, {type = "unlo
 table.insert(data.raw.technology["space-science-pack"].effects, {type = "unlock-recipe", recipe = "sp-space-research-data"})
 data.raw.technology["space-science-pack"].icon = "__Spaghetorio__/graphics/krastorio/technologies/matter-tech-card.png"
 data.raw.technology["space-science-pack"].prerequisites = {
-  "space-platform-thruster"
+  "space-platform-thruster",
+  "sp-advanced-storage"
 }
 data.raw.technology["space-science-pack"].research_trigger = nil
 data.raw.technology["space-science-pack"].unit = {

@@ -4,6 +4,8 @@ Date: 2025-06-20
   Bugfixes:
     - Fixed some asteroid chunks not spawning correctly
     - Fixed power from solar panels in space for asteroids
+    - Fixed CMOS recipe was not craftable at its location in tech tree
+    - Fixed space science pack recipe chain
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.19
 Date: 2025-06-13

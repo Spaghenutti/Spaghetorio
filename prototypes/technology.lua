@@ -2837,8 +2837,7 @@ data:extend({
       "sp-computer-science-pack-2",
       "sp-antimony-processing",
       "sp-indium-processing",
-      "sp-germanium-processing",
-      "sp-rare-metals"
+      "sp-germanium-processing"
     },
     unit =
     {

@@ -7900,18 +7900,17 @@ data:extend({
     category = "electronics",
     enabled = false,
     allow_productivity = true,
-    energy_required = 6,
+    energy_required = 12,
     ingredients = {
-      {type = "item", name = "plastic-bar", amount = 1},
-      {type = "item", name = "sp-p-type-polysilicon", amount = 1},
-      {type = "item", name = "sp-n-type-polysilicon", amount = 1},
+      {type = "item", name = "sp-silicon", amount = 4},
+      {type = "item", name = "sp-silica", amount = 2},
       {type = "item", name = "sp-phosphorus", amount = 2},
       {type = "item", name = "sp-iridium", amount = 1},
-      {type = "item", name = "sp-aluminum-sheet", amount = 1},
-      {type = "item", name = "sp-silver-solder", amount = 1}
+      {type = "item", name = "sp-tungsten-powder", amount = 1},
+      {type = "item", name = "sp-aluminum-sheet", amount = 1}
     },
     results = {
-      {type = "item", name = "sp-cmos", amount = 2}
+      {type = "item", name = "sp-cmos", amount = 4}
     }
   },
   {
