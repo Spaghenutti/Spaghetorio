@@ -123,7 +123,7 @@ data:extend({
     icon_size = 256,
     -- icon = "__Spaghetorio__/graphics/hr-icons/tin-and-lead.png",
     icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/hr-icons/tin-ingot.png", 256, nil,
-                                   "__Spaghetorio__/graphics/hr-icons/lead-slab.png", 256, nil),
+                                        "__Spaghetorio__/graphics/hr-icons/lead-slab.png", 256, nil),
     effects =
     {
       {
@@ -1057,6 +1057,93 @@ data:extend({
         {"metallurgic-science-pack", 1},
         {"electromagnetic-science-pack", 1},
         {"production-science-pack", 1}
+      },
+      time = 30
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-bromine-processing",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghetorio__/graphics/hr-icons/bromine.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-bromine"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-bromine-from-bromine-trifluoride"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-bromine-from-silver-bromide"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-bromine-trifluoride"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-crushing-bromargyrite"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-silver-bromide"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-bromargyrite"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-silver-from-silver-chloride-and-iron"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-silver-from-silver-chloride-and-zinc"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-iron-plate-from-iron-chloride"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-zinc-plate-from-zinc-chloride"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-sodium-bromide",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-potassium-bromide",
+      },
+    },
+    prerequisites = {
+      "sp-core-extractor",
+      "sp-chloroacetic-acid"
+    },
+    unit =
+    {
+      count = 200,
+      ingredients = {
+        {"sp-automation-science-pack-3", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-metallurgic-science-pack-2", 1},
+        {"sp-electromagnetic-science-pack-2", 1},
+        {"production-science-pack", 1},
+        {"utility-science-pack", 1},
+        {"cryogenic-science-pack", 1},
+        {"agricultural-science-pack", 1},
+        {"sp-computer-science-pack-2", 1},
+        {"sp-nuclear-science-pack-2", 1},
+        {"space-science-pack", 1}
       },
       time = 30
     },
@@ -9350,13 +9437,12 @@ data:extend({
       },
     },
     prerequisites = {
-      "tungsten-carbide",
       "sp-automation-science-pack-3"
     },
     unit = {
       count = 1000,
       ingredients = {
-        {"sp-automation-science-pack-2", 1},
+        {"sp-automation-science-pack-3", 1},
         {"sp-logistic-science-pack-2", 1},
         {"sp-material-science-pack-2", 1},
         {"sp-geological-science-pack-2", 1},
@@ -9364,7 +9450,13 @@ data:extend({
         {"sp-chemical-science-pack-2", 1},
         {"sp-metallurgic-science-pack-2", 1},
         {"sp-electromagnetic-science-pack-2", 1},
-        {"production-science-pack", 1}
+        {"production-science-pack", 1},
+        {"utility-science-pack", 1},
+        {"cryogenic-science-pack", 1},
+        {"agricultural-science-pack", 1},
+        {"sp-computer-science-pack-2", 1},
+        {"sp-nuclear-science-pack-2", 1},
+        {"space-science-pack", 1}
       },
       time = 45,
     },
@@ -9510,6 +9602,40 @@ data:extend({
         type = "unlock-recipe",
         recipe = "sp-kr-genetics-facility",
       },
+    },
+    prerequisites = {
+      "space-science-pack"
+    },
+    unit = {
+      count = 400,
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-metallurgic-science-pack-2", 1},
+        {"sp-electromagnetic-science-pack-2", 1},
+        {"production-science-pack", 1},
+        {"utility-science-pack", 1},
+        {"cryogenic-science-pack", 1},
+        {"agricultural-science-pack", 1},
+        {"sp-computer-science-pack-2", 1},
+        {"sp-nuclear-science-pack-2", 1},
+        {"space-science-pack", 1}
+      },
+      time = 45,
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-biomass",  -- #ForRegEx# - technology
+    icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/krastorio/icons/items-with-variations/biomass/biomass.png", 64, nil,
+                                        "__Spaghetorio__/graphics/krastorio/icons/cards/biters-research-data.png", 64, nil),
+    icon_size = 64,
+    icon_mipmaps = 4,
+    effects = {
       {
         type = "unlock-recipe",
         recipe = "sp-biomass",
@@ -9533,7 +9659,13 @@ data:extend({
         {"sp-chemical-science-pack-2", 1},
         {"sp-metallurgic-science-pack-2", 1},
         {"sp-electromagnetic-science-pack-2", 1},
-        {"production-science-pack", 1}
+        {"production-science-pack", 1},
+        {"utility-science-pack", 1},
+        {"cryogenic-science-pack", 1},
+        {"agricultural-science-pack", 1},
+        {"sp-computer-science-pack-2", 1},
+        {"sp-nuclear-science-pack-2", 1},
+        {"space-science-pack", 1}
       },
       time = 45,
     },
@@ -9581,6 +9713,662 @@ data:extend({
         {"production-science-pack", 1},
         {"utility-science-pack", 1},
         {"sp-computer-science-pack-2", 1}
+      },
+      time = 45,
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-triethylamide",  -- #ForRegEx# - technology
+    icon = "__Spaghetorio__/graphics/hr-icons/triethylamide.png",
+    icon_size = 256,
+    icon_mipmaps = 4,
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-triethylamide",
+      },
+    },
+    prerequisites = {
+      "space-science-pack"
+    },
+    unit = {
+      count = 200,
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-metallurgic-science-pack-2", 1},
+        {"sp-electromagnetic-science-pack-2", 1},
+        {"production-science-pack", 1},
+        {"utility-science-pack", 1},
+        {"cryogenic-science-pack", 1},
+        {"agricultural-science-pack", 1},
+        {"sp-computer-science-pack-2", 1},
+        {"space-science-pack", 1}
+      },
+      time = 45,
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-cellulose",  -- #ForRegEx# - technology
+    icon = "__Spaghetorio__/graphics/hr-icons/cellulose.png",
+    icon_size = 256,
+    icon_mipmaps = 4,
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-cellulose",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-chlorotriethylamine",
+      },
+    },
+    prerequisites = {
+      "sp-triethylamide"
+    },
+    unit = {
+      count = 400,
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-metallurgic-science-pack-2", 1},
+        {"sp-electromagnetic-science-pack-2", 1},
+        {"production-science-pack", 1},
+        {"utility-science-pack", 1},
+        {"cryogenic-science-pack", 1},
+        {"agricultural-science-pack", 1},
+        {"sp-computer-science-pack-2", 1},
+        {"space-science-pack", 1}
+      },
+      time = 45,
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-methyl-sulfate",  -- #ForRegEx# - technology
+    icon = "__Spaghetorio__/graphics/hr-icons/methyl-sulfate.png",
+    icon_size = 256,
+    icon_mipmaps = 4,
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-methyl-sulfate",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-sulfur-trioxide",
+      },
+    },
+    prerequisites = {
+      "space-science-pack"
+    },
+    unit = {
+      count = 250,
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-metallurgic-science-pack-2", 1},
+        {"sp-electromagnetic-science-pack-2", 1},
+        {"production-science-pack", 1},
+        {"utility-science-pack", 1},
+        {"cryogenic-science-pack", 1},
+        {"agricultural-science-pack", 1},
+        {"sp-computer-science-pack-2", 1},
+        {"space-science-pack", 1}
+      },
+      time = 45,
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-hydroxypropanal",  -- #ForRegEx# - technology
+    icon = "__Spaghetorio__/graphics/hr-icons/hydroxypropanal.png",
+    icon_size = 256,
+    icon_mipmaps = 4,
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-hydroxypropanal",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-acrolein",
+      },
+    },
+    prerequisites = {
+      "space-science-pack"
+    },
+    unit = {
+      count = 250,
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-metallurgic-science-pack-2", 1},
+        {"sp-electromagnetic-science-pack-2", 1},
+        {"production-science-pack", 1},
+        {"utility-science-pack", 1},
+        {"cryogenic-science-pack", 1},
+        {"agricultural-science-pack", 1},
+        {"sp-computer-science-pack-2", 1},
+        {"space-science-pack", 1}
+      },
+      time = 45,
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-lysine",  -- #ForRegEx# - technology
+    icon = "__Spaghetorio__/graphics/hr-icons/lysine.png",
+    icon_size = 256,
+    icon_mipmaps = 4,
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-lysine-from-iron-bacteria",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-lysine-from-copper-bacteria",
+      },
+    },
+    prerequisites = {
+      "sp-kr-bio-processing"
+    },
+    unit = {
+      count = 250,
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-metallurgic-science-pack-2", 1},
+        {"sp-electromagnetic-science-pack-2", 1},
+        {"production-science-pack", 1},
+        {"utility-science-pack", 1},
+        {"cryogenic-science-pack", 1},
+        {"agricultural-science-pack", 1},
+        {"sp-computer-science-pack-2", 1},
+        {"space-science-pack", 1}
+      },
+      time = 45,
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-carboxymethyllysine",  -- #ForRegEx# - technology
+    icon = "__Spaghetorio__/graphics/hr-icons/carboxymethyllysine.png",
+    icon_size = 256,
+    icon_mipmaps = 4,
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-carboxymethyllysine",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-glyoxal",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-glyoxilic-acid",
+      },
+    },
+    prerequisites = {
+      "sp-lysine"
+    },
+    unit = {
+      count = 300,
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-metallurgic-science-pack-2", 1},
+        {"sp-electromagnetic-science-pack-2", 1},
+        {"production-science-pack", 1},
+        {"utility-science-pack", 1},
+        {"cryogenic-science-pack", 1},
+        {"agricultural-science-pack", 1},
+        {"sp-computer-science-pack-2", 1},
+        {"space-science-pack", 1}
+      },
+      time = 45,
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-tetrahydrofuran",  -- #ForRegEx# - technology
+    icon = "__Spaghetorio__/graphics/hr-icons/tetrahydrofuran.png",
+    icon_size = 256,
+    icon_mipmaps = 4,
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-tetrahydrofuran",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-butanediol",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-butynediol",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-acetylene",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-formaldehyde",
+      },
+    },
+    prerequisites = {
+      "space-science-pack",
+    },
+    unit = {
+      count = 400,
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-metallurgic-science-pack-2", 1},
+        {"sp-electromagnetic-science-pack-2", 1},
+        {"production-science-pack", 1},
+        {"utility-science-pack", 1},
+        {"cryogenic-science-pack", 1},
+        {"agricultural-science-pack", 1},
+        {"sp-computer-science-pack-2", 1},
+        {"space-science-pack", 1}
+      },
+      time = 45,
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-chloroacetic-acid",  -- #ForRegEx# - technology
+    icon = "__Spaghetorio__/graphics/hr-icons/chloroacetic-acid.png",
+    icon_size = 256,
+    icon_mipmaps = 4,
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-chloroacetic-acid",
+      },
+    },
+    prerequisites = {
+      "space-science-pack",
+    },
+    unit = {
+      count = 200,
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-metallurgic-science-pack-2", 1},
+        {"sp-electromagnetic-science-pack-2", 1},
+        {"production-science-pack", 1},
+        {"utility-science-pack", 1},
+        {"cryogenic-science-pack", 1},
+        {"agricultural-science-pack", 1},
+        {"sp-computer-science-pack-2", 1},
+        {"space-science-pack", 1}
+      },
+      time = 45,
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-ethylenediaminetetraacetic-acid",  -- #ForRegEx# - technology
+    icon = "__Spaghetorio__/graphics/hr-icons/ethylenediaminetetraacetic-acid.png",
+    icon_size = 256,
+    icon_mipmaps = 4,
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-ethylenediaminetetraacetic-acid",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-ethylenediamine",
+      },
+    },
+    prerequisites = {
+      "sp-chloroacetic-acid",
+    },
+    unit = {
+      count = 450,
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-metallurgic-science-pack-2", 1},
+        {"sp-electromagnetic-science-pack-2", 1},
+        {"production-science-pack", 1},
+        {"utility-science-pack", 1},
+        {"cryogenic-science-pack", 1},
+        {"agricultural-science-pack", 1},
+        {"sp-computer-science-pack-2", 1},
+        {"space-science-pack", 1}
+      },
+      time = 45,
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-carboxymethyldiphenylphosphine",  -- #ForRegEx# - technology
+    icon = "__Spaghetorio__/graphics/hr-icons/carboxymethyldiphenylphosphine.png",
+    icon_size = 256,
+    icon_mipmaps = 4,
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-carboxymethyldiphenylphosphine",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-dimethylphosphine",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-trimethylphosphine",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-magnesium-powder",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-bromomethane",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-methylmagnesium-bromide-solution",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-trimethylphosphine",
+      },
+    },
+    prerequisites = {
+      "sp-bromine-processing",
+      "sp-chloroacetic-acid",
+      "sp-tetrahydrofuran"
+    },
+    unit = {
+      count = 600,
+      ingredients = {
+        {"sp-automation-science-pack-3", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-metallurgic-science-pack-2", 1},
+        {"sp-electromagnetic-science-pack-2", 1},
+        {"production-science-pack", 1},
+        {"utility-science-pack", 1},
+        {"cryogenic-science-pack", 1},
+        {"agricultural-science-pack", 1},
+        {"sp-computer-science-pack-2", 1},
+        {"sp-nuclear-science-pack-2", 1},
+        {"space-science-pack", 1}
+      },
+      time = 45,
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-ammonia-tetra-ethers",  -- #ForRegEx# - technology
+    icon = "__Spaghetorio__/graphics/hr-icons/tetramethylammonium.png",
+    icon_size = 256,
+    icon_mipmaps = 4,
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-tetrapropylammonium",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-tetraethylammonium",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-tetramethylammonium",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-ethyl-iodide",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-propyl-bromide",
+      },
+    },
+    prerequisites = {
+      "sp-chemical-science-pack-3",
+      "sp-bromine-processing",
+      "sp-hydroxypropanal",
+      "sp-triethylamide"
+    },
+    unit = {
+      count = 600,
+      ingredients = {
+        {"sp-automation-science-pack-3", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-chemical-science-pack-3", 1},
+        {"sp-metallurgic-science-pack-2", 1},
+        {"sp-electromagnetic-science-pack-2", 1},
+        {"production-science-pack", 1},
+        {"utility-science-pack", 1},
+        {"cryogenic-science-pack", 1},
+        {"agricultural-science-pack", 1},
+        {"sp-computer-science-pack-2", 1},
+        {"sp-nuclear-science-pack-2", 1},
+        {"space-science-pack", 1}
+      },
+      time = 45,
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-chloropropanol",  -- #ForRegEx# - technology
+    icon = "__Spaghetorio__/graphics/hr-icons/chloropropanol.png",
+    icon_size = 256,
+    icon_mipmaps = 4,
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-chloropropanol",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-propanediol",
+      },
+    },
+    prerequisites = {
+      "sp-chemical-science-pack-3",
+      "sp-hydroxypropanal"
+    },
+    unit = {
+      count = 350,
+      ingredients = {
+        {"sp-automation-science-pack-3", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-chemical-science-pack-3", 1},
+        {"sp-metallurgic-science-pack-2", 1},
+        {"sp-electromagnetic-science-pack-2", 1},
+        {"production-science-pack", 1},
+        {"utility-science-pack", 1},
+        {"cryogenic-science-pack", 1},
+        {"agricultural-science-pack", 1},
+        {"sp-computer-science-pack-2", 1},
+        {"sp-nuclear-science-pack-2", 1},
+        {"space-science-pack", 1}
+      },
+      time = 45,
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-sulfopropyl-bromide",  -- #ForRegEx# - technology
+    icon = "__Spaghetorio__/graphics/hr-icons/sulfopropyl-bromide.png",
+    icon_size = 256,
+    icon_mipmaps = 4,
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-sulfopropyl-bromide",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-sulfopropyl-alcohol",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-hydrobromic-acid-from-sodium-bromide",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-hydrobromic-acid-from-potassium-bromide",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-potassium-bisulfate",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-sodium-bisulfate",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-potassium-sulfite-solution",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-sodium-sulfite-solution",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-sulfur-trioxide-from-sodium-bisulfate",
+      },
+    },
+    prerequisites = {
+      "sp-bromine-processing",
+      "sp-chloropropanol"
+    },
+    unit = {
+      count = 750,
+      ingredients = {
+        {"sp-automation-science-pack-3", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-chemical-science-pack-3", 1},
+        {"sp-metallurgic-science-pack-2", 1},
+        {"sp-electromagnetic-science-pack-2", 1},
+        {"production-science-pack", 1},
+        {"utility-science-pack", 1},
+        {"cryogenic-science-pack", 1},
+        {"agricultural-science-pack", 1},
+        {"sp-computer-science-pack-2", 1},
+        {"sp-nuclear-science-pack-2", 1},
+        {"space-science-pack", 1}
+      },
+      time = 45,
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-sulfopropyl-metacrylate-potassium-salt-solution",  -- #ForRegEx# - technology
+    icon = "__Spaghetorio__/graphics/hr-icons/sulfopropyl-metacrylate-potassium-salt-solution.png",
+    icon_size = 256,
+    icon_mipmaps = 4,
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-sulfopropyl-metacrylate-potassium-salt-solution",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-methacrylic-acid",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-acetone-cyanohydrin",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-acetone",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-cumene-hydroperoxide",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-methacrylamide-sulfate",
+      },
+    },
+    prerequisites = {
+      "sp-sulfopropyl-bromide",
+    },
+    unit = {
+      count = 750,
+      ingredients = {
+        {"sp-automation-science-pack-3", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-chemical-science-pack-3", 1},
+        {"sp-metallurgic-science-pack-2", 1},
+        {"sp-electromagnetic-science-pack-2", 1},
+        {"production-science-pack", 1},
+        {"utility-science-pack", 1},
+        {"cryogenic-science-pack", 1},
+        {"agricultural-science-pack", 1},
+        {"sp-computer-science-pack-2", 1},
+        {"sp-nuclear-science-pack-2", 1},
+        {"space-science-pack", 1}
       },
       time = 45,
     },

@@ -17,8 +17,9 @@
 import os
 
 # folder_path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-folder_path = fr"E:\factorio\asteroid icons"
+folder_path = fr"E:\factorio\ion-chromatography"
 
 for root, dirs, files in os.walk(folder_path):
     for file in files:
-        print(os.path.join(root, file))
+        # print(os.path.join(root, file))
+        print("- " + file.replace(".png", ""))

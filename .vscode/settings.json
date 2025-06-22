@@ -7,8 +7,7 @@
     "factorio.versions": [
         {
             "name": "System",
-            "factorioPath": "C:\\Program Files\\Factorio\\bin\\x64\\factorio.exe",
-            "active": true
+            "factorioPath": "C:\\Program Files\\Factorio\\bin\\x64\\factorio.exe"
         }
     ],
     "Lua.workspace.userThirdParty": [

@@ -936,6 +936,38 @@ data:extend({
       {type = "item", name = "sp-gold-leaf", amount = 1}
     }
   },
+  {
+    type = "recipe",
+    name = "sp-iron-plate-from-iron-chloride",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__base__/graphics/icons/iron-plate.png", 64,
+                                         "__Spaghetorio__/graphics/icons/iron-chloride.png", 64),
+    category = "sp-intermediate-smelting",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 1.5,
+    ingredients = {
+      {type = "item", name = "sp-iron-chloride", amount = 1},
+    },
+    results = {
+      {type = "item", name = "iron-plate", probability = 0.7, amount = 2}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-zinc-plate-from-zinc-chloride",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/zinc-plate.png", 64,
+                                         "__Spaghetorio__/graphics/icons/zinc-chloride.png", 64),
+    category = "sp-intermediate-smelting",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 2,
+    ingredients = {
+      {type = "item", name = "sp-zinc-chloride", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-zinc-plate", probability = 0.7, amount = 2}
+    }
+  },
   ------------------------------------------------------------------------------
   -- MARK: enriching-raw-resource
   ------------------------------------------------------------------------------
@@ -4331,6 +4363,104 @@ data:extend({
       {type = "item", name = "calcite", probability = 0.30, amount = 3},
     },
   },
+  {
+    type = "recipe",
+    name = "sp-bromargyrite",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/icons/bromargyrite.png",
+    icon_size = 64,
+    scale = 0.25,
+    category = "sp-crushing-washing",
+    subgroup = "sp-processed-metal",
+    enabled = false,
+    allow_productivity = false,
+    energy_required = 10,
+    ingredients = {
+      {type = "item", name = "sp-core-fragment", amount = 1},
+      {type = "fluid", name = "sp-nitric-acid", amount = 15}
+    },
+    results = {
+      {type = "item", name = "sp-bromargyrite", amount = 1},
+      {type = "item", name = "sp-sand", probability = 0.3, amount = 2}
+    },
+  },
+  {
+    type = "recipe",
+    name = "sp-silver-bromide",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/icons/silver-bromide.png",
+    icon_size = 64,
+    scale = 0.25,
+    category = "sp-crushing-washing",
+    subgroup = "sp-processed-metal",
+    enabled = false,
+    allow_productivity = false,
+    energy_required = 8,
+    ingredients = {
+      {type = "item", name = "sp-bromargyrite", amount = 1},
+      {type = "fluid", name = "sp-chloroacetic-acid", amount = 8},
+      {type = "fluid", name = "water", amount = 20}
+    },
+    results = {
+      {type = "item", name = "sp-silver-bromide", amount = 1},
+    },
+  },
+  {
+    type = "recipe",
+    name = "sp-sodium-bromide",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/icons/sodium-bromide.png",
+    category = "sp-crushing-washing",
+    subgroup = "sp-chemical-product",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 20,
+    ingredients = {
+      {type = "item", name = "sp-bromargyrite", amount = 1},
+      {type = "fluid", name = "sp-mineral-water", amount = 60},
+      {type = "fluid", name = "sp-hypochlorus-acid", amount = 8},
+    },
+    results = {
+      {type = "item", name = "sp-sodium-bromide", amount = 1},
+      {type = "item", name = "sp-sodium-bisulfate", probability = 0.2, amount = 1}
+    },
+  },
+  {
+    type = "recipe",
+    name = "sp-potassium-bromide",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/icons/potassium-bromide.png",
+    category = "sp-crushing-washing",
+    subgroup = "sp-chemical-product",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 16,
+    ingredients = {
+      {type = "item", name = "sp-bromargyrite", amount = 1},
+      {type = "fluid", name = "sp-mineral-water", amount = 80},
+      {type = "fluid", name = "sp-nitric-acid", amount = 5},
+    },
+    results = {
+      {type = "item", name = "sp-potassium-bromide", amount = 1},
+      {type = "item", name = "sp-potassium-bisulfate", probability = 0.2, amount = 1}
+    },
+  },
+  {
+    type = "recipe",
+    name = "sp-crushing-bromargyrite",  -- #ForRegEx# - recipe
+    icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/icons/bromine-chloride.png", 64, nil,
+                                        "__Spaghetorio__/graphics/icons/bromine-pentafluoride.png", 64, nil),
+    icon_size = 64,
+    scale = 0.25,
+    category = "sp-crushing-washing",
+    subgroup = "sp-inorganic-chemical",
+    enabled = false,
+    allow_productivity = false,
+    energy_required = 5,
+    ingredients = {
+      {type = "item", name = "sp-bromargyrite", amount = 1},
+    },
+    results = {
+      {type = "fluid", name = "sp-bromine-chloride", amount = 15},
+      {type = "fluid", name = "sp-bromine-pentafluoride", amount = 5},
+    },
+  },
   ------------------------------------------------------------------------------
   -- MARK: chemistry
   ------------------------------------------------------------------------------
@@ -5380,6 +5510,147 @@ data:extend({
       {type = "fluid", name = "sp-methane", amount = 20},
     }
   },
+  {
+    type = "recipe",
+    name = "sp-chloroacetic-acid",  -- #ForRegEx# - recipe
+    category = "chemistry",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 12,
+    ingredients = {
+      {type = "fluid", name = "sp-acetic-acid", amount = 3},
+      {type = "fluid", name = "sp-chlorine", amount = 5},
+    },
+    results = {
+      {type = "fluid", name = "sp-chloroacetic-acid", amount = 3}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-butanediol",  -- #ForRegEx# - recipe
+    category = "chemistry",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 3,
+    ingredients = {
+      {type = "fluid", name = "sp-butynediol", amount = 10},
+      {type = "fluid", name = "sp-hydrogen", amount = 20},
+    },
+    results = {
+      {type = "fluid", name = "sp-butanediol", amount = 10}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-bromine-from-silver-bromide",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/icons/bromine.png",
+    category = "chemistry",
+    subgroup = "sp-aqueous-fluid",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 5,
+    ingredients = {
+      {type = "item", name = "sp-silver-bromide", amount = 1},
+      {type = "fluid", name = "sp-chlorine", amount = 20},
+    },
+    results = {
+      {type = "fluid", name = "sp-bromine", amount = 15},
+      {type = "item", name = "sp-silver-chloride", probability = 0.1, amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-silver-from-silver-chloride-and-iron",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_two_small_icons("__Spaghetorio__/graphics/icons/silver.png", 64,
+                                              "__Spaghetorio__/graphics/icons/silver-chloride.png", 64,
+                                              "__base__/graphics/icons/iron-plate.png", 64),
+    category = "chemistry",
+    subgroup = "sp-processed-metal",
+    enabled = false,
+    allow_productivity = false,
+    energy_required = 5,
+    ingredients = {
+      {type = "item", name = "sp-silver-chloride", amount = 3},
+      {type = "item", name = "iron-plate", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-silver", amount = 3},
+      {type = "item", name = "sp-iron-chloride", probability = 0.3, amount = 3}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-silver-from-silver-chloride-and-zinc",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_two_small_icons("__Spaghetorio__/graphics/icons/silver.png", 64,
+                                              "__Spaghetorio__/graphics/icons/silver-chloride.png", 64,
+                                              "__Spaghetorio__/graphics/icons/zinc-plate.png", 64),
+    category = "chemistry",
+    subgroup = "sp-processed-metal",
+    enabled = false,
+    allow_productivity = false,
+    energy_required = 2,
+    ingredients = {
+      {type = "item", name = "sp-silver-chloride", amount = 2},
+      {type = "item", name = "sp-zinc-plate", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-silver", amount = 2},
+      {type = "item", name = "sp-zinc-chloride", probability = 0.3, amount = 2}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-triethylamide",  -- #ForRegEx# - recipe
+    category = "chemistry",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 15,
+    ingredients = {
+      {type = "fluid", name = "ammonia", amount = 10},
+      {type = "fluid", name = "sp-biomethanol", amount = 30},
+    },
+    results = {
+      {type = "fluid", name = "sp-triethylamide", amount = 10}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-hydrobromic-acid-from-sodium-bromide",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/hydrobromic-acid.png", 64,
+                                         "__Spaghetorio__/graphics/icons/sodium-bromide.png", 64),
+    category = "chemistry",
+    subgroup = "sp-inorganic-chemical",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 6,
+    ingredients = {
+      {type = "item", name = "sp-sodium-bromide", amount = 1},
+      {type = "fluid", name = "sulfuric-acid", amount = 10},
+    },
+    results = {
+      {type = "fluid", name = "sp-hydrobromic-acid", amount = 5},
+      {type = "item", name = "sp-sodium-bisulfate", probability = 0.2, amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-hydrobromic-acid-from-potassium-bromide",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/hydrobromic-acid.png", 64,
+                                         "__Spaghetorio__/graphics/icons/potassium-bromide.png", 64),
+    category = "chemistry",
+    subgroup = "sp-inorganic-chemical",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 6,
+    ingredients = {
+      {type = "item", name = "sp-potassium-bromide", amount = 1},
+      {type = "fluid", name = "sulfuric-acid", amount = 8},
+    },
+    results = {
+      {type = "fluid", name = "sp-hydrobromic-acid", amount = 4},
+      {type = "item", name = "sp-sodium-bisulfate", probability = 0.25, amount = 1}
+    }
+  },
   ------------------------------------------------------------------------------
   -- MARK: advanced-chemistry
   ------------------------------------------------------------------------------
@@ -5546,6 +5817,366 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-chemical-science-pack-3", amount = 5}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-nitric-acid",  -- #ForRegEx# - recipe
+    category = "sp-advanced-chemistry",
+    energy_required = 5,
+    enabled = false,
+    allow_productivity = true,
+    ingredients = {
+      {type = "fluid", name = "sp-nitrogen-dioxide", amount = 50},
+      {type = "fluid", name = "water", amount = 25},
+      {type = "fluid", name = "sp-oxygen", amount = 5},
+    },
+    results = {
+      {type = "fluid", name = "sp-nitric-acid", amount = 50}
+    },
+    crafting_machine_tint = {
+      primary = {r = 0.800, g = 0.000, b = 0.100, a = 0.200},
+      secondary = {r = 0.500, g = 0.100, b = 0.300, a = 0.357},
+      tertiary = {r = 0.430, g = 0.000, b = 0.450, a = 0.200},
+      quaternary = {r = 0.800, g = 0.000, b = 0.100, a = 0.900},
+    },
+    order = "[liquid]-[liquid-sodium]"
+  },
+  {
+    type = "recipe",
+    name = "sp-trimethylphosphine",  -- #ForRegEx# - recipe
+    category = "sp-advanced-chemistry",
+    energy_required = 16,
+    enabled = false,
+    allow_productivity = true,
+    ingredients = {
+      {type = "fluid", name = "sp-methylmagnesium-bromide-solution", amount = 15},
+      {type = "item", name = "sp-phosphorus", amount = 2},
+      {type = "fluid", name = "sp-chlorine", amount = 25},
+    },
+    results = {
+      {type = "fluid", name = "sp-trimethylphosphine", amount = 10},
+    },
+    crafting_machine_tint = {
+      primary = {r = 0.800, g = 0.000, b = 0.100, a = 0.200},
+      secondary = {r = 0.500, g = 0.100, b = 0.300, a = 0.357},
+      tertiary = {r = 0.430, g = 0.000, b = 0.450, a = 0.200},
+      quaternary = {r = 0.800, g = 0.000, b = 0.100, a = 0.900},
+    },
+    order = "[liquid]-[liquid-sodium]"
+  },
+  {
+    type = "recipe",
+    name = "sp-dimethylphosphine",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/icons/dimethylphosphine.png",
+    category = "sp-advanced-chemistry",
+    subgroup = "sp-organic-chemical",
+    energy_required = 20,
+    enabled = false,
+    allow_productivity = true,
+    ingredients = {
+      {type = "fluid", name = "sp-trimethylphosphine", amount = 7},
+      {type = "item", name = "lithium", amount = 2},
+      {type = "fluid", name = "water", amount = 60},
+      {type = "fluid", name = "sp-tetrahydrofuran", amount = 30},
+    },
+    results = {
+      {type = "fluid", name = "sp-dimethylphosphine", amount = 10},
+      {type = "fluid", name = "sp-tetrahydrofuran", amount = 5},
+      {type = "item", name = "sp-lithium-oxide", probability = 0.2, amount = 10},
+    },
+    crafting_machine_tint = {
+      primary = {r = 0.800, g = 0.000, b = 0.100, a = 0.200},
+      secondary = {r = 0.500, g = 0.100, b = 0.300, a = 0.357},
+      tertiary = {r = 0.430, g = 0.000, b = 0.450, a = 0.200},
+      quaternary = {r = 0.800, g = 0.000, b = 0.100, a = 0.900},
+    },
+    order = "[liquid]-[liquid-sodium]"
+  },
+  {
+    type = "recipe",
+    name = "sp-carboxymethyldiphenylphosphine",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/icons/carboxymethyldiphenylphosphine.png",
+    category = "sp-advanced-chemistry",
+    subgroup = "sp-complex-organic-chemical",
+    energy_required = 15,
+    enabled = false,
+    allow_productivity = true,
+    ingredients = {
+      {type = "fluid", name = "sp-dimethylphosphine", amount = 10},
+      {type = "fluid", name = "sp-chloroacetic-acid", amount = 12},
+      {type = "fluid", name = "sp-tetrahydrofuran", amount = 40},
+    },
+    results = {
+      {type = "fluid", name = "sp-carboxymethyldiphenylphosphine", amount = 10},
+      {type = "fluid", name = "sp-tetrahydrofuran", amount = 6},
+    },
+    crafting_machine_tint = {
+      primary = {r = 0.800, g = 0.000, b = 0.100, a = 0.200},
+      secondary = {r = 0.500, g = 0.100, b = 0.300, a = 0.357},
+      tertiary = {r = 0.430, g = 0.000, b = 0.450, a = 0.200},
+      quaternary = {r = 0.800, g = 0.000, b = 0.100, a = 0.900},
+    },
+    order = "[liquid]-[liquid-sodium]"
+  },
+  {
+    type = "recipe",
+    name = "sp-tetrahydrofuran",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/icons/tetrahydrofuran.png",
+    category = "sp-advanced-chemistry",
+    subgroup = "sp-organic-chemical",
+    energy_required = 30,
+    enabled = false,
+    allow_productivity = false,
+    ingredients = {
+      {type = "fluid", name = "sp-butanediol", amount = 100},
+    },
+    results = {
+      {type = "fluid", name = "sp-butanediol", amount = 80},
+      {type = "fluid", name = "water", amount = 10},
+      {type = "fluid", name = "sp-tetrahydrofuran", amount = 10},
+    },
+    crafting_machine_tint = {
+      primary = {r = 0.800, g = 0.000, b = 0.100, a = 0.200},
+      secondary = {r = 0.500, g = 0.100, b = 0.300, a = 0.357},
+      tertiary = {r = 0.430, g = 0.000, b = 0.450, a = 0.200},
+      quaternary = {r = 0.800, g = 0.000, b = 0.100, a = 0.900},
+    },
+    order = "[liquid]-[liquid-sodium]"
+  },
+  {
+    type = "recipe",
+    name = "sp-tetramethylammonium",  -- #ForRegEx# - recipe
+    category = "sp-advanced-chemistry",
+    energy_required = 25,
+    enabled = false,
+    allow_productivity = true,
+    ingredients = {
+      {type = "fluid", name = "sp-methyl-chloride", amount = 15},
+      {type = "fluid", name = "sp-aniline", amount = 7},
+      {type = "fluid", name = "water", amount = 150},
+    },
+    results = {
+      {type = "fluid", name = "sp-tetramethylammonium", amount = 15},
+    },
+    crafting_machine_tint = {
+      primary = {r = 0.800, g = 0.000, b = 0.100, a = 0.200},
+      secondary = {r = 0.500, g = 0.100, b = 0.300, a = 0.357},
+      tertiary = {r = 0.430, g = 0.000, b = 0.450, a = 0.200},
+      quaternary = {r = 0.800, g = 0.000, b = 0.100, a = 0.900},
+    },
+    order = "[liquid]-[liquid-sodium]"
+  },
+  {
+    type = "recipe",
+    name = "sp-tetraethylammonium",  -- #ForRegEx# - recipe
+    category = "sp-advanced-chemistry",
+    energy_required = 30,
+    enabled = false,
+    allow_productivity = true,
+    ingredients = {
+      {type = "fluid", name = "sp-triethylamide", amount = 15},
+      {type = "fluid", name = "sp-ethyl-iodide", amount = 10},
+      {type = "fluid", name = "water", amount = 100},
+    },
+    results = {
+      {type = "fluid", name = "sp-tetraethylammonium", amount = 12},
+    },
+    crafting_machine_tint = {
+      primary = {r = 0.800, g = 0.000, b = 0.100, a = 0.200},
+      secondary = {r = 0.500, g = 0.100, b = 0.300, a = 0.357},
+      tertiary = {r = 0.430, g = 0.000, b = 0.450, a = 0.200},
+      quaternary = {r = 0.800, g = 0.000, b = 0.100, a = 0.900},
+    },
+    order = "[liquid]-[liquid-sodium]"
+  },
+  {
+    type = "recipe",
+    name = "sp-tetrapropylammonium",  -- #ForRegEx# - recipe
+    category = "sp-advanced-chemistry",
+    energy_required = 40,
+    enabled = false,
+    allow_productivity = true,
+    ingredients = {
+      {type = "fluid", name = "sp-aniline", amount = 15},
+      {type = "fluid", name = "sp-propyl-bromide", amount = 10},
+      {type = "fluid", name = "water", amount = 80},
+    },
+    results = {
+      {type = "fluid", name = "sp-tetrapropylammonium", amount = 10},
+    },
+    crafting_machine_tint = {
+      primary = {r = 0.800, g = 0.000, b = 0.100, a = 0.200},
+      secondary = {r = 0.500, g = 0.100, b = 0.300, a = 0.357},
+      tertiary = {r = 0.430, g = 0.000, b = 0.450, a = 0.200},
+      quaternary = {r = 0.800, g = 0.000, b = 0.100, a = 0.900},
+    },
+    order = "[liquid]-[liquid-sodium]"
+  },
+  {
+    type = "recipe",
+    name = "sp-propyl-bromide",  -- #ForRegEx# - recipe
+    category = "sp-advanced-chemistry",
+    energy_required = 24,
+    enabled = false,
+    allow_productivity = true,
+    ingredients = {
+      {type = "fluid", name = "sp-hydroxypropanal", amount = 6},
+      {type = "fluid", name = "sp-bromine", amount = 10},
+      {type = "fluid", name = "sp-hydrogen", amount = 20},
+    },
+    results = {
+      {type = "fluid", name = "sp-propyl-bromide", amount = 6},
+    },
+    crafting_machine_tint = {
+      primary = {r = 0.800, g = 0.000, b = 0.100, a = 0.200},
+      secondary = {r = 0.500, g = 0.100, b = 0.300, a = 0.357},
+      tertiary = {r = 0.430, g = 0.000, b = 0.450, a = 0.200},
+      quaternary = {r = 0.800, g = 0.000, b = 0.100, a = 0.900},
+    },
+    order = "[liquid]-[liquid-sodium]"
+  },
+  {
+    type = "recipe",
+    name = "sp-sulfopropyl-metacrylate-potassium-salt-solution",  -- #ForRegEx# - recipe
+    category = "sp-advanced-chemistry",
+    energy_required = 10,
+    enabled = false,
+    allow_productivity = true,
+    ingredients = {
+      {type = "fluid", name = "sp-sulfopropyl-bromide", amount = 6},
+      {type = "fluid", name = "sp-methacrylic-acid", amount = 10},
+      {type = "item", name = "sp-potassium-hydroxide", amount = 2},
+      {type = "fluid", name = "water", amount =  30},
+    },
+    results = {
+      {type = "fluid", name = "sp-sulfopropyl-metacrylate-potassium-salt-solution", amount = 20},
+    },
+    crafting_machine_tint = {
+      primary = {r = 0.800, g = 0.000, b = 0.100, a = 0.200},
+      secondary = {r = 0.500, g = 0.100, b = 0.300, a = 0.357},
+      tertiary = {r = 0.430, g = 0.000, b = 0.450, a = 0.200},
+      quaternary = {r = 0.800, g = 0.000, b = 0.100, a = 0.900},
+    },
+    order = "[liquid]-[liquid-sodium]"
+  },
+  {
+    type = "recipe",
+    name = "sp-cumene-hydroperoxide",  -- #ForRegEx# - recipe
+    category = "sp-advanced-chemistry",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 16,
+    ingredients = {
+      {type = "fluid", name = "sp-oxygen", amount = 25},
+      {type = "fluid", name = "sp-benzene", amount = 10},
+      {type = "fluid", name = "sp-propylene", amount = 10},
+    },
+    results = {
+      {type = "fluid", name = "sp-cumene-hydroperoxide", amount = 10}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-sulfopropyl-bromide",  -- #ForRegEx# - recipe
+    category = "sp-advanced-chemistry",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 20,
+    ingredients = {
+      {type = "fluid", name = "sp-hydrobromic-acid", amount = 8},
+      {type = "fluid", name = "sp-sulfopropyl-alcohol", amount = 10},
+    },
+    results = {
+      {type = "fluid", name = "sp-sulfopropyl-bromide", amount = 12}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-sulfopropyl-alcohol",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/icons/sulfopropyl-alcohol.png",
+    category = "sp-advanced-chemistry",
+    subgroup = "sp-complex-organic-chemical",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 15,
+    ingredients = {
+      {type = "fluid", name = "sp-potassium-sulfite-solution", amount = 10},
+      {type = "fluid", name = "sp-sodium-sulfite-solution", amount = 8},
+      {type = "fluid", name = "sp-chloropropanol", amount = 8},
+    },
+    results = {
+      {type = "fluid", name = "sp-sulfopropyl-alcohol", amount = 10},
+      {type = "item", name = "sp-potassium-chloride", probability = 0.12, amount = 1},
+      {type = "item", name = "sp-salt", probability = 0.08, amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-ethylenediamine",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/icons/ethylenediamine.png",
+    category = "sp-advanced-chemistry",
+    subgroup = "sp-organic-chemical",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 20,
+    ingredients = {
+      {type = "fluid", name = "sp-ethylene-dichloride", amount = 10},
+      {type = "fluid", name = "ammonia", amount = 40},
+    },
+    results = {
+      {type = "fluid", name = "sp-ethylenediamine", amount = 10},
+      {type = "fluid", name = "sp-ammonium-chloride-solution", amount = 3},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-ethylenediaminetetraacetic-acid",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/icons/ethylenediaminetetraacetic-acid.png",
+    category = "sp-advanced-chemistry",
+    subgroup = "sp-complex-organic-chemical",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 35,
+    ingredients = {
+      {type = "fluid", name = "sp-ethylene-dichloride", amount = 10},
+      {type = "fluid", name = "sp-chloroacetic-acid", amount = 12},
+    },
+    results = {
+      {type = "fluid", name = "sp-ethylenediaminetetraacetic-acid", amount = 10},
+      {type = "fluid", name = "sp-hydrogen-chloride", amount = 2},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-chlorotriethylamine",  -- #ForRegEx# - recipe
+    category = "sp-advanced-chemistry",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 25,
+    ingredients = {
+      {type = "fluid", name = "sp-triethylamide", amount = 10},
+      {type = "fluid", name = "sp-chlorine", amount = 5},
+    },
+    results = {
+      {type = "fluid", name = "sp-chlorotriethylamine", amount = 10}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-cellulose",  -- #ForRegEx# - recipe
+    category = "sp-advanced-chemistry",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 30,
+    ingredients = {
+      {type = "fluid", name = "sp-chlorotriethylamine", amount = 10},
+      {type = "fluid", name = "sp-peroxymonosulfuric-acid", amount = 10},
+      {type = "fluid", name = "water", amount = 50},
+      {type = "item", name = "sp-protozoa", amount = 1},
+    },
+    results = {
+      {type = "fluid", name = "sp-cellulose", amount = 10}
     }
   },
   ------------------------------------------------------------------------------
@@ -6166,6 +6797,223 @@ data:extend({
     results = {
       {type = "fluid", name = "sp-cyanogen", amount = 5}
     }
+  },
+  {
+    type = "recipe",
+    name = "sp-methylmagnesium-bromide-solution",  -- #ForRegEx# - recipe
+    category = "sp-chemical-staging",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 12,
+    ingredients = {
+      {type = "item", name = "sp-magnesium-powder", amount = 3},
+      {type = "fluid", name = "sp-bromomethane", amount = 10},
+    },
+    results = {
+      {type = "fluid", name = "sp-methylmagnesium-bromide-solution", amount = 10}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-bromomethane",  -- #ForRegEx# - recipe
+    category = "sp-chemical-staging",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 16,
+    ingredients = {
+      {type = "fluid", name = "sp-bromine", amount = 10},
+      {type = "fluid", name = "sp-methane", amount = 10},
+    },
+    results = {
+      {type = "fluid", name = "sp-bromomethane", amount = 10}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-acetylene",  -- #ForRegEx# - recipe
+    category = "sp-chemical-staging",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 6,
+    ingredients = {
+      {type = "item", name = "calcite", amount = 4},
+      {type = "fluid", name = "water", amount = 100},
+    },
+    results = {
+      {type = "fluid", name = "sp-acetylene", amount = 10}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-butynediol",  -- #ForRegEx# - recipe
+    category = "sp-chemical-staging",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 6,
+    ingredients = {
+      {type = "fluid", name = "sp-acetylene", amount = 5},
+      {type = "fluid", name = "sp-formaldehyde", amount = 5},
+    },
+    results = {
+      {type = "fluid", name = "sp-butynediol", amount = 5}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-ethyl-iodide",  -- #ForRegEx# - recipe
+    category = "sp-chemical-staging",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 4,
+    ingredients = {
+      {type = "item", name = "sp-iodine", amount = 2},
+      {type = "fluid", name = "sp-biomethanol", amount = 30},
+    },
+    results = {
+      {type = "fluid", name = "sp-ethyl-iodide", amount = 10}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-hydroxypropanal",  -- #ForRegEx# - recipe
+    category = "sp-chemical-staging",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 20,
+    ingredients = {
+      {type = "fluid", name = "water", amount = 80},
+      {type = "fluid", name = "sp-acrolein", amount = 10},
+    },
+    results = {
+      {type = "fluid", name = "sp-hydroxypropanal", amount = 10}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-methacrylic-acid",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/icons/methacrylic-acid.png",
+    category = "sp-chemical-staging",
+    subgroup = "sp-organic-chemical",
+    energy_required = 24,
+    enabled = false,
+    allow_productivity = true,
+    ingredients = {
+      {type = "fluid", name = "water", amount = 100},
+      {type = "item", name = "sp-methacrylamide-sulfate", amount = 2},
+    },
+    results = {
+      {type = "fluid", name = "sp-methacrylic-acid", amount = 20},
+      {type = "item", name = "sp-ammonium-sulfate", amount = 1},
+    },
+  },
+  {
+    type = "recipe",
+    name = "sp-methacrylamide-sulfate",  -- #ForRegEx# - recipe
+    category = "sp-chemical-staging",
+    energy_required = 20,
+    enabled = false,
+    allow_productivity = true,
+    ingredients = {
+      {type = "fluid", name = "sulfuric-acid", amount = 5},
+      {type = "fluid", name = "sp-acetone-cyanohydrin", amount = 15},
+    },
+    results = {
+      {type = "item", name = "sp-methacrylamide-sulfate", amount = 2},
+    },
+  },
+  {
+    type = "recipe",
+    name = "sp-acetone-cyanohydrin",  -- #ForRegEx# - recipe
+    category = "sp-chemical-staging",
+    energy_required = 30,
+    enabled = false,
+    allow_productivity = true,
+    ingredients = {
+      {type = "fluid", name = "sp-acetone", amount = 5},
+      {type = "fluid", name = "sp-hydrogen-cyanide", amount = 15},
+    },
+    results = {
+      {type = "fluid", name = "sp-acetone-cyanohydrin", amount = 12},
+    },
+  },
+  {
+    type = "recipe",
+    name = "sp-potassium-bisulfate",  -- #ForRegEx# - recipe
+    category = "sp-chemical-staging",
+    energy_required = 6,
+    enabled = false,
+    allow_productivity = true,
+    ingredients = {
+      {type = "item", name = "sp-obsidian", amount = 1},
+      {type = "fluid", name = "sulfuric-acid", amount = 8},
+    },
+    results = {
+      {type = "item", name = "sp-potassium-bisulfate", amount = 3},
+    },
+  },
+  {
+    type = "recipe",
+    name = "sp-sodium-bisulfate",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/icons/sodium-bisulfate.png",
+    category = "sp-chemical-staging",
+    subgroup = "sp-chemical-product",
+    energy_required = 6,
+    enabled = false,
+    allow_productivity = true,
+    ingredients = {
+      {type = "item", name = "sp-salt", amount = 1},
+      {type = "fluid", name = "sp-phosphoric-acid", amount = 3},
+      {type = "fluid", name = "sulfuric-acid", amount = 8},
+    },
+    results = {
+      {type = "item", name = "sp-sodium-bisulfate", probability = 0.5, amount = 1},
+      {type = "item", name = "sp-salt", probability = 0.25, amount = 1},
+    },
+  },
+  {
+    type = "recipe",
+    name = "sp-bromine",  -- #ForRegEx# - recipe
+    category = "sp-chemical-staging",
+    energy_required = 6,
+    enabled = false,
+    allow_productivity = true,
+    ingredients = {
+      {type = "fluid", name = "sp-bromine-chloride", amount = 5},
+      {type = "fluid", name = "sp-hydrogen", amount = 8},
+    },
+    results = {
+      {type = "fluid", name = "sp-bromine", amount = 5},
+    },
+  },
+  {
+    type = "recipe",
+    name = "sp-bromine-from-bromine-trifluoride",  -- #ForRegEx# - recipe
+    category = "sp-chemical-staging",
+    energy_required = 8,
+    enabled = false,
+    allow_productivity = true,
+    ingredients = {
+      {type = "fluid", name = "sp-bromine-trifluoride", amount = 5},
+      {type = "fluid", name = "sp-hydrogen", amount = 8},
+    },
+    results = {
+      {type = "fluid", name = "sp-bromine", amount = 5},
+    },
+  },
+  {
+    type = "recipe",
+    name = "sp-bromine-trifluoride",  -- #ForRegEx# - recipe
+    category = "sp-chemical-staging",
+    energy_required = 15,
+    enabled = false,
+    allow_productivity = true,
+    ingredients = {
+      {type = "fluid", name = "sp-bromine-pentafluoride", amount = 5},
+      {type = "fluid", name = "sp-nitric-acid", amount = 5},
+    },
+    results = {
+      {type = "fluid", name = "sp-bromine-trifluoride", amount = 5},
+    },
   },
   ------------------------------------------------------------------------------
   -- MARK: oil-processing
@@ -7469,6 +8317,102 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "sp-glyoxal",  -- #ForRegEx# - recipe
+    category = "sp-oxidizing",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 5,
+    ingredients = {
+      {type = "fluid", name = "sp-glycol", amount = 4},
+      {type = "fluid", name = "sp-oxygen", amount = 5}
+    },
+    results = {
+      {type = "fluid", name = "sp-glyoxal", amount = 5}
+    },
+  },
+  {
+    type = "recipe",
+    name = "sp-glyoxilic-acid",  -- #ForRegEx# - recipe
+    category = "sp-oxidizing",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 12,
+    ingredients = {
+      {type = "fluid", name = "sp-glyoxal", amount = 7},
+      {type = "fluid", name = "sp-oxygen", amount = 20}
+    },
+    results = {
+      {type = "fluid", name = "sp-glyoxilic-acid", amount = 8}
+    },
+  },
+  {
+    type = "recipe",
+    name = "sp-formaldehyde",  -- #ForRegEx# - recipe
+    category = "sp-oxidizing",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 12,
+    ingredients = {
+      {type = "fluid", name = "sp-biomethanol", amount = 10},
+      {type = "fluid", name = "sp-oxygen", amount = 15}
+    },
+    results = {
+      {type = "fluid", name = "sp-formaldehyde", amount = 10}
+    },
+  },
+  {
+    type = "recipe",
+    name = "sp-acrolein",  -- #ForRegEx# - recipe
+    category = "sp-oxidizing",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 30,
+    ingredients = {
+      {type = "fluid", name = "sp-oxygen", amount = 20},
+      {type = "fluid", name = "sp-propylene", amount = 10},
+    },
+    results = {
+      {type = "fluid", name = "sp-acrolein", amount = 10}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-acetone",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/icons/acetone.png",
+    category = "sp-oxidizing",
+    subgroup = "sp-organic-chemical",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 16,
+    ingredients = {
+      {type = "fluid", name = "sp-oxygen", amount = 10},
+      {type = "fluid", name = "sp-cumene-hydroperoxide", amount = 10},
+    },
+    results = {
+      {type = "fluid", name = "sp-acetone", amount = 10},
+      {type = "fluid", name = "sp-phenol", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-sulfur-trioxide",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/icons/sulfur-trioxide.png",
+    category = "sp-oxidizing",
+    subgroup = "sp-inorganic-chemical",
+    enabled = false,
+    allow_productivity = false,
+    energy_required = 20,
+    ingredients = {
+      {type = "fluid", name = "sp-sulfur-dioxide", amount = 12},
+      {type = "fluid", name = "sp-oxygen", amount = 30},
+    },
+    results = {
+      {type = "fluid", name = "sp-sulfur-dioxide", amount = 10},
+      {type = "fluid", name = "sp-sulfur-trioxide", amount = 2}
+    }
+  },
+  {
+    type = "recipe",
     name = "sp-uranium-oxide",  -- #ForRegEx# - recipe
     category = "sp-oxidizing",
     enabled = false,
@@ -8102,6 +9046,54 @@ data:extend({
     }
   },
   ------------------------------------------------------------------------------
+  -- MARK: oil-processing
+  ------------------------------------------------------------------------------
+  {
+    type = "recipe",
+    name = "sp-chloropropanol",  -- #ForRegEx# - recipe
+    category = "oil-processing",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 12,
+    ingredients = {
+      {type = "fluid", name = "sp-hydrogen-chloride", amount = 8},
+      {type = "fluid", name = "sp-propanediol", amount = 10},
+    },
+    results = {
+      {type = "fluid", name = "sp-chloropropanol", amount = 6},
+    },
+  },
+  {
+    type = "recipe",
+    name = "sp-propanediol",  -- #ForRegEx# - recipe
+    category = "oil-processing",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 20,
+    ingredients = {
+      {type = "fluid", name = "sp-hydroxypropanal", amount = 10},
+      {type = "fluid", name = "sp-hydrogen", amount = 35},
+    },
+    results = {
+      {type = "fluid", name = "sp-propanediol", amount = 10},
+    },
+  },
+  {
+    type = "recipe",
+    name = "sp-methyl-sulfate",  -- #ForRegEx# - recipe
+    category = "oil-processing",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 8,
+    ingredients = {
+      {type = "fluid", name = "sp-sulfur-trioxide", amount = 5},
+      {type = "fluid", name = "sp-biomethanol", amount = 10},
+    },
+    results = {
+      {type = "fluid", name = "sp-methyl-sulfate", amount = 10},
+    },
+  },
+  ------------------------------------------------------------------------------
   -- MARK: sp-kr-fuel-refinery
   ------------------------------------------------------------------------------
   {
@@ -8484,6 +9476,36 @@ data:extend({
     results = {
       {type = "item", name = "sp-selenious-acid", amount = 45}
     },
+  },
+  {
+    type = "recipe",
+    name = "sp-potassium-sulfite-solution",  -- #ForRegEx# - recipe
+    category = "sp-kr-fluid-filtration",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 3,
+    ingredients = {
+      {type = "item", name = "sp-potassium-bisulfate", amount = 3},
+      {type = "fluid", name = "sp-biomethanol", amount = 20},
+    },
+    results = {
+      {type = "fluid", name = "sp-potassium-sulfite-solution", amount = 20}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-sodium-sulfite-solution",  -- #ForRegEx# - recipe
+    category = "sp-kr-fluid-filtration",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 2,
+    ingredients = {
+      {type = "item", name = "sp-sodium-bisulfate", amount = 3},
+      {type = "fluid", name = "water", amount = 30},
+    },
+    results = {
+      {type = "fluid", name = "sp-sodium-sulfite-solution", amount = 20}
+    }
   },
   ------------------------------------------------------------------------------
   -- MARK: sp-kr-atmosphere-condensation
@@ -8989,6 +10011,20 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "sp-magnesium-powder",  -- #ForRegEx# - recipe
+    category = "crushing",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 3,
+    ingredients = {
+      {type = "item", name = "sp-magnesium-slab", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-magnesium-powder", amount = 2}
+    }
+  },
+  {
+    type = "recipe",
     name = "sp-imersite-powder",  -- #ForRegEx# - recipe
     icon = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/imersite-powder/imersite-powder.png",
     icon_size = 64,
@@ -9028,7 +10064,7 @@ data:extend({
       {type = "item", name = "sp-crushed-holmium-ore", amount = 3},
       {type = "item", name = "sp-cerium", amount = 1}
     }
-  }, 
+  },
   {
     type = "recipe",
     name = "sp-crushing-stibnite",  -- #ForRegEx# - recipe
@@ -9317,6 +10353,77 @@ data:extend({
   ------------------------------------------------------------------------------
   -- MARK: sp-kr-bioprocessing
   ------------------------------------------------------------------------------
+  {
+    type = "recipe",
+    name = "sp-biomass",  -- #ForRegEx# - recipe
+    category = "sp-kr-bioprocessing",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 20,
+    ingredients = {
+      {type = "item", name = "jelly", amount = 5},
+      {type = "fluid", name = "petroleum-gas", amount = 50},
+      {type = "fluid", name = "sp-allyl-chloride", amount = 25}
+    },
+    results = {
+      {type = "item", name = "sp-biomass", amount = 5}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-lysine-from-iron-bacteria",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/lysine.png", 64,
+                                         "__space-age__/graphics/icons/iron-bacteria.png", 64),
+    category = "sp-kr-bioprocessing",
+    subgroup = "sp-complex-organic-chemical",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 20,
+    ingredients = {
+      {type = "item", name = "iron-bacteria", amount = 2},
+      {type = "fluid", name = "sp-fatty-acids", amount = 5},
+      {type = "fluid", name = "water", amount = 30}
+    },
+    results = {
+      {type = "fluid", name = "sp-lysine", amount = 10},
+      {type = "item", name = "iron-ore", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-lysine-from-copper-bacteria",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/lysine.png", 64,
+                                         "__space-age__/graphics/icons/copper-bacteria.png", 64),
+    category = "sp-kr-bioprocessing",
+    subgroup = "sp-complex-organic-chemical",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 20,
+    ingredients = {
+      {type = "item", name = "copper-bacteria", amount = 2},
+      {type = "item", name = "sp-algae", amount = 1},
+      {type = "fluid", name = "water", amount = 30}
+    },
+    results = {
+      {type = "fluid", name = "sp-lysine", amount = 10},
+      {type = "item", name = "copper-ore", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-carboxymethyllysine",  -- #ForRegEx# - recipe
+    category = "sp-kr-bioprocessing",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 8,
+    ingredients = {
+      {type = "fluid", name = "sp-glyoxilic-acid", amount = 4},
+      {type = "fluid", name = "sp-lysine", amount = 6},
+    },
+    results = {
+      {type = "fluid", name = "sp-carboxymethyllysine", amount = 5}
+    },
+  },
   {
     type = "recipe",
     name = "sp-evolution-cell-container",  -- #ForRegEx# - recipe
@@ -9627,6 +10734,26 @@ data:extend({
     results = {
       {type = "item", name = "sp-beryllium", amount = 1},
       {type = "fluid", name = "sp-oxygen", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-sulfur-trioxide-from-sodium-bisulfate",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/sulfur-trioxide.png", 64,
+                                         "__Spaghetorio__/graphics/icons/sodium-bisulfate.png", 64),
+    category = "sp-kr-electrolysis",
+    subgroup = "sp-processed-metal",
+    enabled = false,
+    allow_productivity = true,
+    hide_from_player_crafting = true,
+    energy_required = 15,
+    ingredients = {
+      {type = "item", name = "sp-sodium-bisulfate", amount = 1},
+      {type = "fluid", name = "water", amount = 10}
+    },
+    results = {
+      {type = "item", name = "sp-sodium", probability = 0.1, amount = 1},
+      {type = "fluid", name = "sp-sulfur-trioxide", amount = 4}
     }
   },
   ------------------------------------------------------------------------------
@@ -14223,11 +15350,19 @@ data:extend({
     enabled = false,
     allow_productivity = true,
     ingredients = {
-      {type = "item", name = "sp-pressure-tube", amount = 20},
-      {type = "item", name = "sp-stainless-steel", amount = 30},
+      {type = "item", name = "sp-niobium-steel", amount = 20},
+      {type = "item", name = "sp-chromium-cobalt", amount = 30},
+      {type = "item", name = "sp-nickel-rhodium", amount = 12},
+      {type = "item", name = "sp-holmium-cobalt-iron", amount = 10},
+      {type = "item", name = "sp-teflon", amount = 20},
       {type = "item", name = "pump", amount = 12},
+      {type = "item", name = "sp-pressure-tube", amount = 20},
+      {type = "item", name = "sp-high-pressure-fan", amount = 4},
+      {type = "item", name = "sp-precipitator", amount = 4},
+      {type = "item", name = "sp-vacuum-pump", amount = 2},
+      {type = "item", name = "sp-electrode", amount = 12},
       {type = "item", name = "sp-glass", amount = 50},
-      {type = "item", name = "sp-filter", amount = 12}
+      {type = "item", name = "sp-filter", amount = 12},
     },
     results = {
       {type = "item", name = "sp-kr-genetics-facility", amount = 1}
@@ -19181,22 +20316,6 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-imersite-crystal", amount = 1}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-biomass",  -- #ForRegEx# - recipe
-    category = "sp-kr-bioprocessing",
-    enabled = false,
-    allow_productivity = true,
-    energy_required = 20,
-    ingredients = {
-      {type = "item", name = "jelly", amount = 5},
-      {type = "fluid", name = "petroleum-gas", amount = 50},
-      {type = "fluid", name = "sp-allyl-chloride", amount = 25}
-    },
-    results = {
-      {type = "item", name = "sp-biomass", amount = 5}
     }
   },
   {

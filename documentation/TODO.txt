@@ -87,6 +87,14 @@ TODO for 0.3.20
       - technology
 
 TODO for 0.3.21
+  - Add recipe chains and uses for
+    - ammonium-bisulfate-solution
+    - sodium-hypochlorite-solution
+  - Find uses for
+    - ammonium-chloride-solution
+    - phenol
+    - potassium-bisulfate
+    - sodium-bisulfate
   - Add recipe chains for
     - dysprosium
       - recipe chain
@@ -163,6 +171,7 @@ TODO for 0.3.25
   - Fix casting icons
 
 TODO for 0.4.1
+  - Move many chemistry recipes to "oil-processing" category
   - Updates for cryogenic science
     - Core mining resource for extracting
       - Hydrocarbonic ice that can be processed into

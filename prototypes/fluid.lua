@@ -238,6 +238,18 @@ data:extend({
   },
   {
     type = "fluid",
+    name = "sp-bromine",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    base_color = {r=0.4, g=1.0, b=1.0},
+    flow_color = {r=0.4, g=1.0, b=1.0},
+    icon = "__Spaghetorio__/graphics/icons/bromine.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "sp-aqueous-fluid",
+    order = "[bromine]",
+  },
+  {
+    type = "fluid",
     name = "sp-gallium-resin",  -- #ForRegEx# - fluid
     default_temperature = 25,
     base_color = {r=1.0, g=1.0, b=0.6},
@@ -399,6 +411,90 @@ data:extend({
     scale = 0.5,
     subgroup = "sp-solution",
     order = "[ammonium-perrhenate-solution]",
+  },
+  {
+    type = "fluid",
+    name = "sp-sodium-hypochlorite-solution",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    base_color = {r=1.0, g=0.4, b=0.0},
+    flow_color = {r=1.0, g=0.4, b=0.0},
+    icon = "__Spaghetorio__/graphics/icons/sodium-hypochlorite-solution.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "sp-solution",
+    order = "[sodium-hypochlorite-solution]",
+  },
+  {
+    type = "fluid",
+    name = "sp-potassium-sulfite-solution",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    base_color = {r=1.0, g=0.4, b=0.0},
+    flow_color = {r=1.0, g=0.4, b=0.0},
+    icon = "__Spaghetorio__/graphics/icons/potassium-sulfite-solution.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "sp-solution",
+    order = "[potassium-sulfite-solution]",
+  },
+  {
+    type = "fluid",
+    name = "sp-sodium-sulfite-solution",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    base_color = {r=1.0, g=0.4, b=0.0},
+    flow_color = {r=1.0, g=0.4, b=0.0},
+    icon = "__Spaghetorio__/graphics/icons/sodium-sulfite-solution.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "sp-solution",
+    order = "[sodium-sulfite-solution]",
+  },
+  {
+    type = "fluid",
+    name = "sp-ammonium-chloride-solution",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    base_color = {r=1.0, g=0.4, b=0.0},
+    flow_color = {r=1.0, g=0.4, b=0.0},
+    icon = "__Spaghetorio__/graphics/icons/ammonium-chloride-solution.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "sp-solution",
+    order = "[ammonium-chloride-solution]",
+  },
+  {
+    type = "fluid",
+    name = "sp-ammonium-bisulfate-solution",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    base_color = {r=1.0, g=0.4, b=0.0},
+    flow_color = {r=1.0, g=0.4, b=0.0},
+    icon = "__Spaghetorio__/graphics/icons/ammonium-bisulfate-solution.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "sp-solution",
+    order = "[ammonium-bisulfate-solution]",
+  },
+  {
+    type = "fluid",
+    name = "sp-sulfopropyl-metacrylate-potassium-salt-solution",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    base_color = {r=1.0, g=0.4, b=0.0},
+    flow_color = {r=1.0, g=0.4, b=0.0},
+    icon = "__Spaghetorio__/graphics/icons/sulfopropyl-metacrylate-potassium-salt-solution.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "sp-solution",
+    order = "[sulfopropyl-metacrylate-potassium-salt-solution]",
+  },
+  {
+    type = "fluid",
+    name = "sp-methylmagnesium-bromide-solution",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    base_color = {r=1.0, g=0.4, b=0.0},
+    flow_color = {r=1.0, g=0.4, b=0.0},
+    icon = "__Spaghetorio__/graphics/icons/methylmagnesium-bromide-solution.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "sp-solution",
+    order = "[methylmagnesium-bromide-solution]",
   },
   ------------------------------------------------------------------------------
   -- MARK: dirty-fluid
@@ -634,6 +730,62 @@ data:extend({
     icon_mipmaps = 4,
     subgroup = "sp-inorganic-chemical",
     order = "a[boron]-f[diborane]"
+  },
+  {
+    type = "fluid",
+    name = "sp-bromine-chloride",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    fuel_value = "500kJ",
+    base_color = {r=0.15, g=0.1, b=0.1},
+    flow_color = {r=0.15, g=0.1, b=0.1},
+    icon = "__Spaghetorio__/graphics/icons/bromine-chloride.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-inorganic-chemical",
+    order = "a[bromine]-f[bromine-chloride]"
+  },
+  {
+    type = "fluid",
+    name = "sp-bromine-pentafluoride",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    fuel_value = "500kJ",
+    base_color = {r=0.15, g=0.1, b=0.1},
+    flow_color = {r=0.15, g=0.1, b=0.1},
+    icon = "__Spaghetorio__/graphics/icons/bromine-pentafluoride.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-inorganic-chemical",
+    order = "a[bromine]-f[bromine-pentafluoride]"
+  },
+  {
+    type = "fluid",
+    name = "sp-bromine-trifluoride",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    fuel_value = "500kJ",
+    base_color = {r=0.15, g=0.1, b=0.1},
+    flow_color = {r=0.15, g=0.1, b=0.1},
+    icon = "__Spaghetorio__/graphics/icons/bromine-trifluoride.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-inorganic-chemical",
+    order = "a[bromine]-f[bromine-trifluoride]"
+  },
+  {
+    type = "fluid",
+    name = "sp-hydrobromic-acid",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    fuel_value = "500kJ",
+    base_color = {r=0.15, g=0.1, b=0.1},
+    flow_color = {r=0.15, g=0.1, b=0.1},
+    icon = "__Spaghetorio__/graphics/icons/hydrobromic-acid.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-inorganic-chemical",
+    order = "a[bromine]-f[hydrobromic-acid]"
   },
   {
     type = "fluid",
@@ -890,6 +1042,20 @@ data:extend({
   },
   {
     type = "fluid",
+    name = "sp-sulfur-trioxide",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    fuel_value = "50kJ",
+    base_color = {r=0.05, g=0.1, b=0.5},
+    flow_color = {r=0.05, g=0.1, b=0.5},
+    icon = "__Spaghetorio__/graphics/icons/sulfur-trioxide.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-inorganic-chemical",
+    order = "a[sulfur]-g[sulfur-trioxide]"
+  },
+  {
+    type = "fluid",
     name = "sp-hydrogen-sulfide",  -- #ForRegEx# - fluid
     default_temperature = 25,
     heat_capacity = "0.1kJ",
@@ -919,6 +1085,34 @@ data:extend({
   ------------------------------------------------------------------------------
   -- MARK: organic-chemical
   ------------------------------------------------------------------------------
+  {
+    type = "fluid",
+    name = "sp-propyl-bromide",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    fuel_value = "200kJ",
+    base_color = {r=0.05, g=0.1, b=0.5},
+    flow_color = {r=0.05, g=0.1, b=0.5},
+    icon = "__Spaghetorio__/graphics/icons/propyl-bromide.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-organic-chemical",
+    order = "a[bromine]-f[propyl-bromide]"
+  },
+  {
+    type = "fluid",
+    name = "sp-bromomethane",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    fuel_value = "200kJ",
+    base_color = {r=0.05, g=0.1, b=0.5},
+    flow_color = {r=0.05, g=0.1, b=0.5},
+    icon = "__Spaghetorio__/graphics/icons/bromomethane.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-organic-chemical",
+    order = "a[carbon]-f[bromomethane]"
+  },
   {
     type = "fluid",
     name = "sp-methane",  -- #ForRegEx# - fluid
@@ -971,6 +1165,19 @@ data:extend({
     icon_mipmaps = 4,
     subgroup = "sp-organic-chemical",
     order = "a[carbon]-f[propylene]"
+  },
+  {
+    type = "fluid",
+    name = "sp-acetylene",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    base_color = {r=0.25, g=0.25, b=0.25},
+    flow_color = {r=0.25, g=0.25, b=0.25},
+    icon = "__Spaghetorio__/graphics/icons/acetylene.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-organic-chemical",
+    order = "a[carbon]-f[acetylene]"
   },
   {
     type = "fluid",
@@ -1052,6 +1259,32 @@ data:extend({
   },
   {
     type = "fluid",
+    name = "sp-chloroacetic-acid",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    base_color = {r=0.0, g=0.0, b=0.55},
+    flow_color = {r=0.0, g=0.0, b=0.55},
+    icon = "__Spaghetorio__/graphics/icons/chloroacetic-acid.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-organic-chemical",
+    order = "a[chlorine]-f[chloroacetic-acid]"
+  },
+  {
+    type = "fluid",
+    name = "sp-chloropropanol",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    base_color = {r=0.0, g=0.0, b=0.55},
+    flow_color = {r=0.0, g=0.0, b=0.55},
+    icon = "__Spaghetorio__/graphics/icons/chloropropanol.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-organic-chemical",
+    order = "a[chlorine]-f[chloropropanol]"
+  },
+  {
+    type = "fluid",
     name = "sp-allyl-chloride",  -- #ForRegEx# - fluid
     default_temperature = 25,
     heat_capacity = "0.1kJ",
@@ -1101,6 +1334,19 @@ data:extend({
     icon_mipmaps = 4,
     subgroup = "sp-organic-chemical",
     order = "a[chlorine]-f[benzyltrimethylammonium-chloride]"
+  },
+  {
+    type = "fluid",
+    name = "sp-chlorotriethylamine",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    base_color = {r=0.05, g=0.1, b=0.5},
+    flow_color = {r=0.05, g=0.1, b=0.5},
+    icon = "__Spaghetorio__/graphics/icons/chlorotriethylamine.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-organic-chemical",
+    order = "a[chlorine]-f[chlorotriethylamine]"
   },
   {
     type = "fluid",
@@ -1156,6 +1402,19 @@ data:extend({
   },
   {
     type = "fluid",
+    name = "sp-ethyl-iodide",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    base_color = {r=0.05, g=0.1, b=0.5},
+    flow_color = {r=0.05, g=0.1, b=0.5},
+    icon = "__Spaghetorio__/graphics/icons/ethyl-iodide.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-organic-chemical",
+    order = "a[iodine]-f[ethyl-iodide]"
+  },
+  {
+    type = "fluid",
     name = "sp-iodethene",  -- #ForRegEx# - fluid
     default_temperature = 25,
     heat_capacity = "0.1kJ",
@@ -1165,7 +1424,20 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "sp-organic-chemical",
-    order = "a[idodine]-f[iodethene]"
+    order = "a[iodine]-f[iodethene]"
+  },
+  {
+    type = "fluid",
+    name = "sp-ethylenediamine",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    base_color = {r=0.0, g=0.0, b=0.55},
+    flow_color = {r=0.0, g=0.0, b=0.55},
+    icon = "__Spaghetorio__/graphics/icons/ethylenediamine.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-organic-chemical",
+    order = "a[nitrogen]-f[ethylenediamine]"
   },
   {
     type = "fluid",
@@ -1221,6 +1493,32 @@ data:extend({
   },
   {
     type = "fluid",
+    name = "sp-acetone-cyanohydrin",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    base_color = {r=0.0, g=0.0, b=0.55},
+    flow_color = {r=0.0, g=0.0, b=0.55},
+    icon = "__Spaghetorio__/graphics/icons/acetone-cyanohydrin.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-organic-chemical",
+    order = "a[nitrogen]-z[acetone-cyanohydrin]"
+  },
+  {
+    type = "fluid",
+    name = "sp-triethylamide",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    base_color = {r=0.0, g=0.0, b=0.55},
+    flow_color = {r=0.0, g=0.0, b=0.55},
+    icon = "__Spaghetorio__/graphics/icons/triethylamide.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-organic-chemical",
+    order = "a[nitrogen]-f[triethylamide]"
+  },
+  {
+    type = "fluid",
     name = "sp-carbon-monoxide",  -- #ForRegEx# - fluid
     default_temperature = 25,
     heat_capacity = "0.1kJ",
@@ -1245,6 +1543,181 @@ data:extend({
     icon_mipmaps = 4,
     subgroup = "sp-organic-chemical",
     order = "a[oxygen]-f[carbon-dioxide]"
+  },
+  {
+    type = "fluid",
+    name = "sp-acetone",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    base_color = {r=0.05, g=0.1, b=0.5},
+    flow_color = {r=0.05, g=0.1, b=0.5},
+    icon = "__Spaghetorio__/graphics/icons/acetone.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-organic-chemical",
+    order = "a[oxygen]-f[acetone]"
+  },
+  {
+    type = "fluid",
+    name = "sp-acrolein",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    base_color = {r=0.05, g=0.1, b=0.5},
+    flow_color = {r=0.05, g=0.1, b=0.5},
+    icon = "__Spaghetorio__/graphics/icons/acrolein.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-organic-chemical",
+    order = "a[oxygen]-f[acrolein]"
+  },
+  {
+    type = "fluid",
+    name = "sp-butanediol",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    base_color = {r=0.05, g=0.1, b=0.5},
+    flow_color = {r=0.05, g=0.1, b=0.5},
+    icon = "__Spaghetorio__/graphics/icons/butanediol.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-organic-chemical",
+    order = "a[oxygen]-f[butanediol]"
+  },
+  {
+    type = "fluid",
+    name = "sp-butynediol",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    base_color = {r=0.05, g=0.1, b=0.5},
+    flow_color = {r=0.05, g=0.1, b=0.5},
+    icon = "__Spaghetorio__/graphics/icons/butynediol.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-organic-chemical",
+    order = "a[oxygen]-f[butynediol]"
+  },
+  {
+    type = "fluid",
+    name = "sp-cumene-hydroperoxide",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    fuel_value = "90kJ",
+    base_color = {r=0.15, g=0.0, b=0.0},
+    flow_color = {r=0.15, g=0.0, b=0.0},
+    icon = "__Spaghetorio__/graphics/icons/cumene-hydroperoxide.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-organic-chemical",
+    order = "a[oxygen]-f[cumene-hydroperoxide]"
+  },
+  {
+    type = "fluid",
+    name = "sp-formaldehyde",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    base_color = {r=0.05, g=0.1, b=0.5},
+    flow_color = {r=0.05, g=0.1, b=0.5},
+    icon = "__Spaghetorio__/graphics/icons/formaldehyde.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-organic-chemical",
+    order = "a[oxygen]-f[formaldehyde]"
+  },
+  {
+    type = "fluid",
+    name = "sp-glyoxal",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    base_color = {r=0.05, g=0.1, b=0.5},
+    flow_color = {r=0.05, g=0.1, b=0.5},
+    icon = "__Spaghetorio__/graphics/icons/glyoxal.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-organic-chemical",
+    order = "a[oxygen]-f[glyoxal]"
+  },
+  {
+    type = "fluid",
+    name = "sp-glyoxilic-acid",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    base_color = {r=0.05, g=0.1, b=0.5},
+    flow_color = {r=0.05, g=0.1, b=0.5},
+    icon = "__Spaghetorio__/graphics/icons/glyoxilic-acid.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-organic-chemical",
+    order = "a[oxygen]-f[glyoxilic-acid]"
+  },
+  {
+    type = "fluid",
+    name = "sp-hydroxypropanal",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    fuel_value = "90kJ",
+    base_color = {r=0.15, g=0.0, b=0.0},
+    flow_color = {r=0.15, g=0.0, b=0.0},
+    icon = "__Spaghetorio__/graphics/icons/hydroxypropanal.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-organic-chemical",
+    order = "a[oxygen]-f[hydroxypropanal]"
+  },
+  {
+    type = "fluid",
+    name = "sp-methacrylic-acid",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    fuel_value = "90kJ",
+    base_color = {r=0.15, g=0.0, b=0.0},
+    flow_color = {r=0.15, g=0.0, b=0.0},
+    icon = "__Spaghetorio__/graphics/icons/methacrylic-acid.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-organic-chemical",
+    order = "a[oxygen]-f[methacrylic-acid]"
+  },
+  {
+    type = "fluid",
+    name = "sp-phenol",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    fuel_value = "90kJ",
+    base_color = {r=0.15, g=0.0, b=0.0},
+    flow_color = {r=0.15, g=0.0, b=0.0},
+    icon = "__Spaghetorio__/graphics/icons/phenol.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-organic-chemical",
+    order = "a[oxygen]-f[phenol]"
+  },
+  {
+    type = "fluid",
+    name = "sp-propanediol",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    fuel_value = "90kJ",
+    base_color = {r=0.15, g=0.0, b=0.0},
+    flow_color = {r=0.15, g=0.0, b=0.0},
+    icon = "__Spaghetorio__/graphics/icons/propanediol.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-organic-chemical",
+    order = "a[oxygen]-f[propanediol]"
+  },
+  {
+    type = "fluid",
+    name = "sp-tetrahydrofuran",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    fuel_value = "90kJ",
+    base_color = {r=0.15, g=0.0, b=0.0},
+    flow_color = {r=0.15, g=0.0, b=0.0},
+    icon = "__Spaghetorio__/graphics/icons/tetrahydrofuran.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-organic-chemical",
+    order = "a[oxygen]-f[tetrahydrofuran]"
   },
   {
     type = "fluid",
@@ -1329,6 +1802,34 @@ data:extend({
   },
   {
     type = "fluid",
+    name = "sp-dimethylphosphine",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    fuel_value = "120kJ",
+    base_color = {r=0.0, g=0.0, b=0.55},
+    flow_color = {r=0.0, g=0.0, b=0.55},
+    icon = "__Spaghetorio__/graphics/icons/dimethylphosphine.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-organic-chemical",
+    order = "a[phosphorus]-f[dimethylphosphine]"
+  },
+  {
+    type = "fluid",
+    name = "sp-trimethylphosphine",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    fuel_value = "120kJ",
+    base_color = {r=0.0, g=0.0, b=0.55},
+    flow_color = {r=0.0, g=0.0, b=0.55},
+    icon = "__Spaghetorio__/graphics/icons/trimethylphosphine.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-organic-chemical",
+    order = "a[phosphorus]-f[trimethylphosphine]"
+  },
+  {
+    type = "fluid",
     name = "sp-dimethyl-sulfoxide",  -- #ForRegEx# - fluid
     default_temperature = 25,
     heat_capacity = "0.1kJ",
@@ -1353,9 +1854,35 @@ data:extend({
     subgroup = "sp-organic-chemical",
     order = "a[sulfur]-f[dimethyl-sulfide]"
   },
+  {
+    type = "fluid",
+    name = "sp-methyl-sulfate",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    base_color = {r=0.05, g=0.1, b=0.5},
+    flow_color = {r=0.05, g=0.1, b=0.5},
+    icon = "__Spaghetorio__/graphics/icons/methyl-sulfate.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-organic-chemical",
+    order = "a[sulfur]-f[methyl-sulfate]"
+  },
   ------------------------------------------------------------------------------
   -- MARK: complex-organic-chemical
   ------------------------------------------------------------------------------
+  {
+    type = "fluid",
+    name = "sp-sulfopropyl-bromide",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    base_color = {r=0.05, g=0.1, b=0.5},
+    flow_color = {r=0.05, g=0.1, b=0.5},
+    icon = "__Spaghetorio__/graphics/icons/sulfopropyl-bromide.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-complex-organic-chemical",
+    order = "a[bromine]-f[sulfopropyl-bromide]"
+  },
   {
     type = "fluid",
     name = "sp-octane",  -- #ForRegEx# - fluid
@@ -1371,6 +1898,84 @@ data:extend({
   },
   {
     type = "fluid",
+    name = "sp-carboxymethyllysine",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    base_color = {r=0.05, g=0.1, b=0.5},
+    flow_color = {r=0.05, g=0.1, b=0.5},
+    icon = "__Spaghetorio__/graphics/icons/carboxymethyllysine.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-complex-organic-chemical",
+    order = "a[nitride]-f[carboxymethyllysine]"
+  },
+  {
+    type = "fluid",
+    name = "sp-ethylenediaminetetraacetic-acid",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    base_color = {r=0.05, g=0.1, b=0.5},
+    flow_color = {r=0.05, g=0.1, b=0.5},
+    icon = "__Spaghetorio__/graphics/icons/ethylenediaminetetraacetic-acid.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-complex-organic-chemical",
+    order = "a[nitride]-f[ethylenediaminetetraacetic-acid]"
+  },
+  {
+    type = "fluid",
+    name = "sp-lysine",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    base_color = {r=0.05, g=0.1, b=0.5},
+    flow_color = {r=0.05, g=0.1, b=0.5},
+    icon = "__Spaghetorio__/graphics/icons/lysine.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-complex-organic-chemical",
+    order = "a[nitride]-f[lysine]"
+  },
+  {
+    type = "fluid",
+    name = "sp-tetraethylammonium",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    base_color = {r=0.05, g=0.1, b=0.5},
+    flow_color = {r=0.05, g=0.1, b=0.5},
+    icon = "__Spaghetorio__/graphics/icons/tetraethylammonium.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-complex-organic-chemical",
+    order = "a[nitride]-f[tetraethylammonium]"
+  },
+  {
+    type = "fluid",
+    name = "sp-tetramethylammonium",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    base_color = {r=0.05, g=0.1, b=0.5},
+    flow_color = {r=0.05, g=0.1, b=0.5},
+    icon = "__Spaghetorio__/graphics/icons/tetramethylammonium.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-complex-organic-chemical",
+    order = "a[nitride]-f[tetramethylammonium]"
+  },
+  {
+    type = "fluid",
+    name = "sp-tetrapropylammonium",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    base_color = {r=0.05, g=0.1, b=0.5},
+    flow_color = {r=0.05, g=0.1, b=0.5},
+    icon = "__Spaghetorio__/graphics/icons/tetrapropylammonium.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-complex-organic-chemical",
+    order = "a[nitride]-f[tetrapropylammonium]"
+  },
+  {
+    type = "fluid",
     name = "sp-fatty-acids",  -- #ForRegEx# - fluid
     default_temperature = 25,
     heat_capacity = "0.1kJ",
@@ -1380,7 +1985,33 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "sp-complex-organic-chemical",
-    order = "a[oxide]-f[fatty-acids]"
+    order = "a[oxygen]-f[fatty-acids]"
+  },
+  {
+    type = "fluid",
+    name = "sp-cellulose",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    base_color = {r=0.05, g=0.1, b=0.5},
+    flow_color = {r=0.05, g=0.1, b=0.5},
+    icon = "__Spaghetorio__/graphics/icons/cellulose.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-complex-organic-chemical",
+    order = "a[oxygen]-f[cellulose]"
+  },
+  {
+    type = "fluid",
+    name = "sp-carboxymethyldiphenylphosphine",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    base_color = {r=0.05, g=0.1, b=0.5},
+    flow_color = {r=0.05, g=0.1, b=0.5},
+    icon = "__Spaghetorio__/graphics/icons/carboxymethyldiphenylphosphine.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-complex-organic-chemical",
+    order = "a[phosphorus]-f[carboxymethyldiphenylphosphine]"
   },
   {
     type = "fluid",
@@ -1420,6 +2051,18 @@ data:extend({
     icon_mipmaps = 4,
     subgroup = "sp-complex-organic-chemical",
     order = "a[fluorine]-f[perfluorooctanoic-acid]"
+  },  {
+    type = "fluid",
+    name = "sp-sulfopropyl-alcohol",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    base_color = {r=0.05, g=0.1, b=0.5},
+    flow_color = {r=0.05, g=0.1, b=0.5},
+    icon = "__Spaghetorio__/graphics/icons/sulfopropyl-alcohol.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-complex-organic-chemical",
+    order = "a[sulfide]-f[sulfopropyl-alcohol]"
   },
   ------------------------------------------------------------------------------
   -- MARK: alien

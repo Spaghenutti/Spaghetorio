@@ -37,6 +37,12 @@ data:extend({
   },
   {
     type = "item-subgroup",
+    name = "sp-mineral-resource",  -- #ForRegEx# - item-subgroup
+    group = "sp-resources",
+    order = "a4"
+  },
+  {
+    type = "item-subgroup",
     name = "sp-crushed-resource",  -- #ForRegEx# - item-subgroup
     group = "sp-resources",
     order = "b"
