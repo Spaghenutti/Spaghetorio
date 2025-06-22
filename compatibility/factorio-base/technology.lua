@@ -606,7 +606,8 @@ data.raw.technology["effect-transmission"].unit.ingredients = {
 
 data.raw.technology["explosives"].prerequisites = {
   "sp-phosphorus-processing",
-  "military-science-pack"
+  "military-science-pack",
+  "automation-2"
 }
 data.raw.technology["explosives"].unit.ingredients = {
   {"automation-science-pack", 1},
@@ -772,7 +773,7 @@ data.raw.technology["robotics"].unit.ingredients = {
   {"chemical-science-pack", 1},
   {"sp-electronic-science-pack-1", 1},
   {"sp-material-science-pack-2", 1},
-  {"sp-geological-science-pack-1", 1},
+  {"sp-geological-science-pack-2", 1},
   {"metallurgic-science-pack", 1},
   {"electromagnetic-science-pack", 1}
 }
@@ -827,7 +828,7 @@ data.raw.technology["personal-roboport-equipment"].unit.ingredients = {
   {"chemical-science-pack", 1},
   {"sp-electronic-science-pack-1", 1},
   {"sp-material-science-pack-2", 1},
-  {"sp-geological-science-pack-1", 1},
+  {"sp-geological-science-pack-2", 1},
   {"metallurgic-science-pack", 1},
   {"electromagnetic-science-pack", 1}
 }
@@ -1080,9 +1081,9 @@ data.raw.technology["power-armor"].unit.ingredients = {
   {"sp-logistic-science-pack-2", 1},
   {"chemical-science-pack", 1},
   {"sp-electronic-science-pack-1", 1},
-  {"sp-material-science-pack-1", 1},
+  {"sp-material-science-pack-2", 1},
+  {"sp-geological-science-pack-2", 1},
   {"sp-military-science-pack-2", 1},
-  {"sp-geological-science-pack-1", 1},
   {"metallurgic-science-pack", 1},
   {"electromagnetic-science-pack", 1}
 }
@@ -1222,9 +1223,9 @@ data.raw.technology["flamethrower"].unit.ingredients = {
   {"sp-logistic-science-pack-2", 1},
   {"chemical-science-pack", 1},
   {"sp-electronic-science-pack-1", 1},
-  {"sp-material-science-pack-1", 1},
+  {"sp-material-science-pack-2", 1},
+  {"sp-geological-science-pack-2", 1},
   {"sp-military-science-pack-2", 1},
-  {"sp-geological-science-pack-1", 1},
   {"metallurgic-science-pack", 1},
   {"electromagnetic-science-pack", 1}
 }
@@ -2086,9 +2087,9 @@ data.raw.technology["refined-flammables-1"].unit.ingredients = {
   {"sp-logistic-science-pack-2", 1},
   {"chemical-science-pack", 1},
   {"sp-electronic-science-pack-1", 1},
-  {"sp-material-science-pack-1", 1},
+  {"sp-material-science-pack-2", 1},
+  {"sp-geological-science-pack-2", 1},
   {"sp-military-science-pack-2", 1},
-  {"sp-geological-science-pack-1", 1},
   {"metallurgic-science-pack", 1},
   {"electromagnetic-science-pack", 1}
 }
@@ -2098,9 +2099,9 @@ data.raw.technology["refined-flammables-2"].unit.ingredients = {
   {"sp-logistic-science-pack-2", 1},
   {"chemical-science-pack", 1},
   {"sp-electronic-science-pack-1", 1},
-  {"sp-material-science-pack-1", 1},
+  {"sp-material-science-pack-2", 1},
+  {"sp-geological-science-pack-2", 1},
   {"sp-military-science-pack-2", 1},
-  {"sp-geological-science-pack-1", 1},
   {"metallurgic-science-pack", 1},
   {"electromagnetic-science-pack", 1}
 }
@@ -2110,9 +2111,9 @@ data.raw.technology["refined-flammables-3"].unit.ingredients = {
   {"sp-logistic-science-pack-2", 1},
   {"chemical-science-pack", 1},
   {"sp-electronic-science-pack-1", 1},
-  {"sp-material-science-pack-1", 1},
+  {"sp-material-science-pack-2", 1},
+  {"sp-geological-science-pack-2", 1},
   {"sp-military-science-pack-2", 1},
-  {"sp-geological-science-pack-1", 1},
   {"metallurgic-science-pack", 1},
   {"electromagnetic-science-pack", 1}
 }

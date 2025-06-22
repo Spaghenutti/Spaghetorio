@@ -414,7 +414,7 @@ data.raw.technology["biochamber"].unit = {
     {"logistic-science-pack", 1},
     {"chemical-science-pack", 1},
     {"sp-material-science-pack-2", 1},
-    {"sp-geological-science-pack-1", 1},
+    {"sp-geological-science-pack-2", 1},
     {"sp-electronic-science-pack-1", 1},
     {"metallurgic-science-pack", 1},
     {"electromagnetic-science-pack", 1}
@@ -433,7 +433,7 @@ data.raw.technology["artificial-soil"].unit = {
     {"logistic-science-pack", 1},
     {"chemical-science-pack", 1},
     {"sp-material-science-pack-1", 1},
-    {"sp-geological-science-pack-1", 1},
+    {"sp-geological-science-pack-2", 1},
     {"sp-electronic-science-pack-1", 1},
     {"metallurgic-science-pack", 1},
     {"electromagnetic-science-pack", 1}
@@ -454,7 +454,7 @@ data.raw.technology["bioflux"].unit = {
     {"logistic-science-pack", 1},
     {"chemical-science-pack", 1},
     {"sp-material-science-pack-1", 1},
-    {"sp-geological-science-pack-1", 1},
+    {"sp-geological-science-pack-2", 1},
     {"sp-electronic-science-pack-1", 1},
     {"metallurgic-science-pack", 1},
     {"electromagnetic-science-pack", 1}
@@ -495,7 +495,7 @@ data.raw.technology["bacteria-cultivation"].unit = {
     {"logistic-science-pack", 1},
     {"chemical-science-pack", 1},
     {"sp-material-science-pack-2", 1},
-    {"sp-geological-science-pack-1", 1},
+    {"sp-geological-science-pack-2", 1},
     {"sp-electronic-science-pack-1", 1},
     {"metallurgic-science-pack", 1},
     {"electromagnetic-science-pack", 1},
@@ -527,7 +527,7 @@ data.raw.technology["fish-breeding"].unit.ingredients = {
   {"logistic-science-pack", 1},
   {"chemical-science-pack", 1},
   {"sp-material-science-pack-2", 1},
-  {"sp-geological-science-pack-1", 1},
+  {"sp-geological-science-pack-2", 1},
   {"sp-electronic-science-pack-1", 1},
   {"metallurgic-science-pack", 1},
   {"electromagnetic-science-pack", 1}
@@ -555,9 +555,9 @@ data.raw.technology["toolbelt-equipment"].unit.ingredients = {
   {"sp-logistic-science-pack-2", 1},
   {"chemical-science-pack", 1},
   {"sp-electronic-science-pack-1", 1},
-  {"sp-material-science-pack-1", 1},
+  {"sp-material-science-pack-2", 1},
+  {"sp-geological-science-pack-2", 1},
   {"sp-military-science-pack-2", 1},
-  {"sp-geological-science-pack-1", 1},
   {"metallurgic-science-pack", 1},
   {"electromagnetic-science-pack", 1}
 }
@@ -1083,7 +1083,7 @@ data.raw.technology["agricultural-science-pack"].unit = {
     {"logistic-science-pack", 1},
     {"chemical-science-pack", 1},
     {"sp-material-science-pack-1", 1},
-    {"sp-geological-science-pack-1", 1},
+    {"sp-geological-science-pack-2", 1},
     {"sp-electronic-science-pack-1", 1},
     {"metallurgic-science-pack", 1},
     {"electromagnetic-science-pack", 1}

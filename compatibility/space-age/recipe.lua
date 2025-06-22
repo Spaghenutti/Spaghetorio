@@ -597,10 +597,9 @@ util.recipe.change_recipe_ingredients("big-mining-drill",
     {type = "item", name = "sp-drillhead", amount = 1},
     {type = "item", name = "sp-vibration-dampener", amount = 8},
     {type = "item", name = "sp-big-electric-engine-unit", amount = 1},
-    {type = "item", name = "sp-heavy-gearbox", amount = 1},
     {type = "item", name = "sp-dynamo", amount = 1},
   },
-  45)
+  50)
 
 util.recipe.change_recipe_ingredients("foundry",
   {

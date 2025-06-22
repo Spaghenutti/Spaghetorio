@@ -2091,7 +2091,7 @@ data:extend({
         {"sp-chemical-science-pack-2", 1},
         {"sp-electronic-science-pack-1", 1},
         {"sp-material-science-pack-2", 1},
-        {"sp-geological-science-pack-1", 1},
+        {"sp-geological-science-pack-2", 1},
         {"metallurgic-science-pack", 1},
         {"electromagnetic-science-pack", 1}
       },
@@ -2232,7 +2232,7 @@ data:extend({
         {"logistic-science-pack", 1},
         {"chemical-science-pack", 1},
         {"sp-material-science-pack-2", 1},
-        {"sp-geological-science-pack-1", 1},
+        {"sp-geological-science-pack-2", 1},
         {"sp-electronic-science-pack-1", 1},
         {"metallurgic-science-pack", 1},
         {"electromagnetic-science-pack", 1}
@@ -5151,7 +5151,7 @@ data:extend({
         {"chemical-science-pack", 1},
         {"sp-electronic-science-pack-1", 1},
         {"sp-material-science-pack-2", 1},
-        {"sp-geological-science-pack-1", 1},
+        {"sp-geological-science-pack-2", 1},
         {"metallurgic-science-pack", 1},
         {"electromagnetic-science-pack", 1}
       },
@@ -5905,7 +5905,7 @@ data:extend({
         {"sp-chemical-science-pack-2", 1},
         {"sp-electronic-science-pack-1", 1},
         {"sp-material-science-pack-2", 1},
-        {"sp-geological-science-pack-1", 1},
+        {"sp-geological-science-pack-2", 1},
         {"metallurgic-science-pack", 1},
         {"electromagnetic-science-pack", 1}
       },
@@ -6459,7 +6459,7 @@ data:extend({
         {"sp-chemical-science-pack-2", 1},
         {"sp-electronic-science-pack-1", 1},
         {"sp-material-science-pack-2", 1},
-        {"sp-geological-science-pack-1", 1},
+        {"sp-geological-science-pack-2", 1},
         {"metallurgic-science-pack", 1},
         {"electromagnetic-science-pack", 1}
       },
@@ -8848,6 +8848,7 @@ data:extend({
     },
     prerequisites = {
       "sp-potassium-processing",
+      "sp-manganese-processing",
       "sp-kr-greenhouse"
     },
     unit = {
@@ -8857,7 +8858,7 @@ data:extend({
         {"logistic-science-pack", 1},
         {"chemical-science-pack", 1},
         {"sp-material-science-pack-1", 1},
-        {"sp-geological-science-pack-1", 1},
+        {"sp-geological-science-pack-2", 1},
         {"sp-electronic-science-pack-1", 1},
         {"metallurgic-science-pack", 1},
         {"electromagnetic-science-pack", 1}
@@ -11626,7 +11627,7 @@ data:extend({
     prerequisites = {
       "robotics",
       "automobilism",
-      "railway"
+      "railway",
     },
     unit =
     {
@@ -11637,7 +11638,7 @@ data:extend({
         {"chemical-science-pack", 1},
         {"sp-electronic-science-pack-1", 1},
         {"sp-material-science-pack-2", 1},
-        {"sp-geological-science-pack-1", 1},
+        {"sp-geological-science-pack-2", 1},
         {"metallurgic-science-pack", 1},
         {"electromagnetic-science-pack", 1}
       },
@@ -11668,8 +11669,8 @@ data:extend({
         {"sp-logistic-science-pack-2", 1},
         {"chemical-science-pack", 1},
         {"sp-electronic-science-pack-1", 1},
-        {"sp-material-science-pack-1", 1},
-        {"sp-geological-science-pack-1", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
         {"metallurgic-science-pack", 1},
         {"electromagnetic-science-pack", 1}
       },
@@ -11702,7 +11703,7 @@ data:extend({
         {"chemical-science-pack", 1},
         {"sp-electronic-science-pack-1", 1},
         {"sp-material-science-pack-2", 1},
-        {"sp-geological-science-pack-1", 1},
+        {"sp-geological-science-pack-2", 1},
         {"metallurgic-science-pack", 1},
         {"electromagnetic-science-pack", 1}
       },

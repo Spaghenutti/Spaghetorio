@@ -84,6 +84,7 @@ TODO for 0.3.20
     - rhodium
       - recipe chain
         - get it from mineral water
+        - asteroid chunk
       - technology
 
 TODO for 0.3.21

@@ -33,6 +33,26 @@ asteroid_functions.huge_angle            = 0.4
 --------------------------------------------------------------------------------
 -- MARK: spawn definitions space location
 --------------------------------------------------------------------------------
+asteroid_functions.nauvis =
+{
+  {
+    asteroid = "metallic-asteroid-chunk",
+    probability = 2,
+  },
+  {
+    asteroid = "carbonic-asteroid-chunk",
+    probability = 2,
+  },
+  {
+    asteroid = "oxide-asteroid-chunk",
+    probability = 2,
+  },
+  {
+    asteroid = "sp-rhodium-asteroid-chunk",
+    probability = 0.5,
+  },
+}
+
 asteroid_functions.dysprosium =
 {
   {

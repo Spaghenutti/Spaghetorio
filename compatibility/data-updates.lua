@@ -2,6 +2,7 @@
 local util = require("data-util")
 
 local remove_prototypes = require("util.remove-prototypes")
+local asteroid_util = require("__Spaghetorio__.prototypes.space.asteroid-spawn-definitions")
 
 data.raw.furnace["stone-furnace"].result_inventory_size = 2
 data.raw.furnace["recycler"].result_inventory_size = 30
@@ -39,7 +40,7 @@ data.raw.technology["agriculture"].unit = {
     {"logistic-science-pack", 1},
     {"chemical-science-pack", 1},
     {"sp-material-science-pack-2", 1},
-    {"sp-geological-science-pack-1", 1},
+    {"sp-geological-science-pack-2", 1},
     {"sp-electronic-science-pack-1", 1},
     {"metallurgic-science-pack", 1},
     {"electromagnetic-science-pack", 1}
@@ -150,3 +151,5 @@ data.raw.technology["tungsten-carbide"].unit = {
   },
   time = 30
 }
+
+data.raw.planet.nauvis.asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.nauvis)

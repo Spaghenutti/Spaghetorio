@@ -4,6 +4,12 @@ Date: 2025-06-27
   Features:
     - Added bromine recipe chain
     - Added chemicals for processing aseroids
+  Changes:
+    - Rhodium asteroid chunks now spawn around nauvis
+    - Removed heavy gearbox from big mining drill recipe
+  Bugfixes:
+    - Fixed that explosives could be unlocked without having to unlock assembling-machine-2 since explosive require fluids to be crafted
+    - Fixed that potassium permanganate solution could be unlocked without unlocking magnesium processing
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.20
 Date: 2025-06-20
