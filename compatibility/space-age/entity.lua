@@ -44,7 +44,6 @@ data.raw.item["tree-seed"].subgroup = "sp-basic-agriculture"
 -- group resource
 data.raw.item["calcite"].subgroup = "sp-raw-resource"
 data.raw.item["holmium-ore"].subgroup = "sp-raw-resource"
-data.raw.item["scrap"].subgroup = "sp-raw-resource"
 data.raw.item["tungsten-ore"].subgroup = "sp-raw-resource"
 
 data.raw.item["ice"].subgroup = "sp-ice"

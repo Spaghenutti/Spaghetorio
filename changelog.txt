@@ -1,9 +1,11 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.22
 Date: 2025-07-04
+  Changes:
+    - Removed scrap
+    - Alloy forge now requires concrete to be researched
   Bugfixes:
     - Fixed crushing stibnite icon
-    - Fixed that alloy forge did not have concrete as prerequisite
     - Holmium crushing is now unlocked in holmium processing (before in cerium processing)
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.21

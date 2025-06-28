@@ -124,6 +124,7 @@ require("compatibility.factorio-base.technology")
 require("compatibility.space-age.building")
 require("compatibility.space-age.entity")
 require("compatibility.space-age.recipe")
+require("compatibility.space-age.recycling")
 require("compatibility.space-age.resource")
 require("compatibility.space-age.technology")
 
