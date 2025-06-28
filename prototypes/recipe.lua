@@ -460,6 +460,24 @@ data:extend({
       {type = "item", name = "sp-glass", amount = 10}
     }
   },
+  {
+    type = "recipe",
+    name = "sp-stone-brick-from-sand",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__base__/graphics/icons/stone-brick.png", 64,
+                                         "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/sand/sand.png", 64),
+    category = "smelting",
+    energy_required = 2,
+    enabled = false,
+    allow_productivity = true,
+    hide_from_player_crafting = true,
+    ingredients =
+    {
+      {type = "item", name = "sp-sand", amount = 8}
+    },
+    results = {
+      {type = "item", name = "stone-brick", amount = 1}
+    }
+  },
   ------------------------------------------------------------------------------
   -- MARK: crushed-smelting
   ------------------------------------------------------------------------------
@@ -19838,24 +19856,6 @@ data:extend({
     },
     results = {
       {type = "item", name = "landfill", amount = 1}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-stone-brick-from-sand",  -- #ForRegEx# - recipe
-    icons = util.icon.overlay_small_icon("__base__/graphics/icons/stone-brick.png", 64,
-                                         "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/sand/sand.png", 64),
-    category = "sp-intermediate-smelting",
-    energy_required = 2,
-    enabled = false,
-    allow_productivity = true,
-    hide_from_player_crafting = true,
-    ingredients =
-    {
-      {type = "item", name = "sp-sand", amount = 8}
-    },
-    results = {
-      {type = "item", name = "stone-brick", amount = 1}
     }
   },
   {

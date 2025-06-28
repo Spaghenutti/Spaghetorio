@@ -7,6 +7,7 @@ Date: 2025-07-04
   Bugfixes:
     - Fixed crushing stibnite icon
     - Holmium crushing is now unlocked in holmium processing (before in cerium processing)
+    - Crafting stone brick from sand is now unlocked with crusher technology
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.21
 Date: 2025-06-27

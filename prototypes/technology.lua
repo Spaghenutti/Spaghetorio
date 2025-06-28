@@ -8750,15 +8750,19 @@ data:extend({
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-sand"
-      },
-      {
-        type = "unlock-recipe",
         recipe = "sp-crushing-coal",
       },
       {
         type = "unlock-recipe",
         recipe = "sp-crushing-coke",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-sand"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-stone-brick-from-sand"
       },
     },
     prerequisites = {
