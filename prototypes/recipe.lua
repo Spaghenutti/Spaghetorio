@@ -5543,7 +5543,8 @@ data:extend({
   {
     type = "recipe",
     name = "sp-bromine-from-silver-bromide",  -- #ForRegEx# - recipe
-    icon = "__Spaghetorio__/graphics/icons/bromine.png",
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/bromine.png", 64,
+                                         "__Spaghetorio__/graphics/icons/silver-chloride.png", 64),
     category = "chemistry",
     subgroup = "sp-aqueous-fluid",
     enabled = false,
@@ -6988,6 +6989,8 @@ data:extend({
   {
     type = "recipe",
     name = "sp-bromine-from-bromine-trifluoride",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/bromine.png", 64,
+                                         "__Spaghetorio__/graphics/krastorio/icons/fluids/hydrogen.png", 64),
     category = "sp-chemical-staging",
     energy_required = 8,
     enabled = false,
@@ -10068,7 +10071,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-crushing-stibnite",  -- #ForRegEx# - recipe
-    icon = "__Spaghetorio__/graphics/crushing/crushing-holmium-ore.png",
+    icon = "__Spaghetorio__/graphics/crushing/crushing-stibnite.png",
     icon_size = 256,
     mip_maps = 15,
     category = "sp-heavy-crushing",

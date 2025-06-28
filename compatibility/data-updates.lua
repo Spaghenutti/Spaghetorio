@@ -113,6 +113,8 @@ data.raw.technology["holmium-processing"].prerequisites = {
   "sp-oxidizer",
   "sp-metallurgic-science-pack-2"
 }
+table.insert(data.raw.technology["holmium-processing"].effects, {type = "unlock-recipe", recipe = "sp-crushing-holmium-ore"})
+table.insert(data.raw.technology["holmium-processing"].effects, {type = "unlock-recipe", recipe = "sp-holmium-solution-from-crushed-holmium"})
 data.raw.technology["holmium-processing"].research_trigger = nil
 data.raw.technology["holmium-processing"].unit = {
   count = 200,

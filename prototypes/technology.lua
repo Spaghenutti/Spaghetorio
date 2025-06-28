@@ -1481,14 +1481,6 @@ data:extend({
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-crushing-holmium-ore"
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-holmium-solution-from-crushed-holmium"
-      },
-      {
-        type = "unlock-recipe",
         recipe = "sp-antimony-oxide-from-crushed-stibnite"
       }
     },
@@ -9023,7 +9015,8 @@ data:extend({
     },
     prerequisites = {
       "advanced-material-processing-2",
-      "metallurgic-science-pack"
+      "metallurgic-science-pack",
+      "concrete"
     },
     unit = {
       count = 500,
