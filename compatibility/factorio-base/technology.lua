@@ -1262,6 +1262,7 @@ data.raw.technology["explosive-rocketry"].unit.ingredients = {
 }
 data.raw.technology["explosive-rocketry"].unit.time = 30
 
+table.insert(data.raw.technology["laser-turret"].prerequisites, "sp-military-science-pack-2")
 data.raw.technology["laser-turret"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},
   {"sp-logistic-science-pack-2", 1},
@@ -2164,6 +2165,7 @@ data.raw.technology["refined-flammables-6"].unit.ingredients = {
   {"space-science-pack", 1}
 }
 
+table.insert(data.raw.technology["laser-weapons-damage-1"].prerequisites, "laser-turret")
 data.raw.technology["laser-weapons-damage-1"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},
   {"sp-logistic-science-pack-2", 1},
@@ -2276,6 +2278,7 @@ data.raw.technology["laser-weapons-damage-7"].unit.ingredients = {
   {"agricultural-science-pack", 1}
 }
 
+table.insert(data.raw.technology["laser-shooting-speed-1"].prerequisites, "laser-turret")
 data.raw.technology["laser-shooting-speed-1"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},
   {"sp-logistic-science-pack-2", 1},
