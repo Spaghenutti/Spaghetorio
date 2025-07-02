@@ -10853,6 +10853,7 @@ data:extend({
       }
     },
     prerequisites = {
+      "sp-ethylene-products",
       "sp-incinerator",
       "biochamber"
     },
