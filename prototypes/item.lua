@@ -1656,7 +1656,50 @@ data:extend({
     stack_size = 100
   },
   ------------------------------------------------------------------------------
-  -- MARK: processed-metal
+  -- MARK: metal-concentrate
+  ------------------------------------------------------------------------------
+  {
+    type = "item",
+    name = "sp-platinum-group-metal-concentrate",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/platinum-group-metal-concentrate.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "sp-metal-concentrate",
+    order = "[platinum-group-metal-concentrate]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "sp-platinum-group-metal-matte",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/platinum-group-metal-matte.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "sp-metal-concentrate",
+    order = "[platinum-group-metal-matte]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "sp-iridium-concentrate",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/iridium-concentrate.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "sp-metal-concentrate",
+    order = "[iridium-concentrate]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "sp-osmium-concentrate",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/osmium-concentrate.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "sp-metal-concentrate",
+    order = "[osmium-concentrate]",
+    stack_size = 50
+  },
+  ------------------------------------------------------------------------------
+  -- MARK: metal-powder
   ------------------------------------------------------------------------------
   {
     type = "item",
@@ -1664,10 +1707,43 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/aluminum-powder.png",
     icon_size = 64,
     scale = 0.5,
-    subgroup = "sp-processed-metal",
+    subgroup = "sp-metal-powder",
     order = "[aluminum-powder]",
     stack_size = 200
   },
+  {
+    type = "item",
+    name = "sp-magnesium-powder",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/magnesium-powder.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "sp-metal-powder",
+    order = "[magnesium-powder]",
+    stack_size = 200
+  },
+  {
+    type = "item",
+    name = "sp-tungsten-powder",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/tungsten-powder.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "sp-metal-powder",
+    order = "[tungsten-powder]",
+    stack_size = 200
+  },
+  {
+    type = "item",
+    name = "sp-niobium-powder",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/niobium-powder.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "sp-metal-powder",
+    order = "[niobium-powder]",
+    stack_size = 100
+  },
+  ------------------------------------------------------------------------------
+  -- MARK: processed-metal
+  ------------------------------------------------------------------------------
   {
     type = "item",
     name = "sp-beryllium",  -- #ForRegEx# - item
@@ -1687,26 +1763,6 @@ data:extend({
     subgroup = "sp-processed-metal",
     order = "[sodium]",
     stack_size = 100
-  },
-  {
-    type = "item",
-    name = "sp-magnesium-powder",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/icons/magnesium-powder.png",
-    icon_size = 64,
-    scale = 0.5,
-    subgroup = "sp-processed-metal",
-    order = "[magnesium-powder]",
-    stack_size = 200
-  },
-  {
-    type = "item",
-    name = "sp-tungsten-powder",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/icons/tungsten-powder.png",
-    icon_size = 64,
-    scale = 0.5,
-    subgroup = "sp-processed-metal",
-    order = "[tungsten-powder]",
-    stack_size = 200
   },
   {
     type = "item",
@@ -1956,16 +2012,6 @@ data:extend({
     scale = 0.5,
     subgroup = "sp-processed-metal",
     order = "[ruthenium]",
-    stack_size = 100
-  },
-  {
-    type = "item",
-    name = "sp-niobium-powder",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/icons/niobium-powder.png",
-    icon_size = 64,
-    scale = 0.5,
-    subgroup = "sp-processed-metal",
-    order = "[niobium-powder]",
     stack_size = 100
   },
   {
@@ -5547,6 +5593,66 @@ data:extend({
     subgroup = "sp-chemical-product",
     order = "[polyaniline]",
     stack_size = 100
+  },
+  {
+    type = "item",
+    name = "sp-ammonium-hexachloroplatinate",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/ammonium-hexachloroplatinate.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "sp-chemical-product",
+    order = "[ammonium-hexachloroplatinate]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "sp-rhodium-oxide",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/rhodium-oxide.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "sp-chemical-product",
+    order = "[rhodium-oxide]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "sp-ruthenium-oxide",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/ruthenium-oxide.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "sp-chemical-product",
+    order = "[ruthenium-oxide]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "sp-sodium-iridium-oxide",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/sodium-iridium-oxide.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "sp-chemical-product",
+    order = "[sodium-iridium-oxide]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "sp-tetraammidepalladium-dichloride",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/tetraammidepalladium-dichloride.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "sp-chemical-product",
+    order = "[tetraammidepalladium-dichloride]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "sp-osmium-oxide",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/osmium-oxide.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "sp-chemical-product",
+    order = "[osmium-oxide]",
+    stack_size = 50
   },
   ------------------------------------------------------------------------------
   -- MARK: basic-agriculture

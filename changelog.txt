@@ -1,6 +1,8 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.22
 Date: 2025-07-04
+  Features:
+    - Added items and fluids for processing platinum group metals
   Changes:
     - Removed scrap
   Bugfixes:

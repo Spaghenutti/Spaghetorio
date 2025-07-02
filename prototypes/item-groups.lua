@@ -85,9 +85,21 @@ data:extend({
   },
   {
     type = "item-subgroup",
-    name = "sp-processed-metal",  -- #ForRegEx# - item-subgroup
+    name = "sp-metal-concentrate",  -- #ForRegEx# - item-subgroup
     group = "sp-resources",
     order = "d-c"
+  },
+  {
+    type = "item-subgroup",
+    name = "sp-metal-powder",  -- #ForRegEx# - item-subgroup
+    group = "sp-resources",
+    order = "d-d"
+  },
+  {
+    type = "item-subgroup",
+    name = "sp-processed-metal",  -- #ForRegEx# - item-subgroup
+    group = "sp-resources",
+    order = "d-e"
   },
   {
     type = "item-subgroup",
@@ -505,7 +517,13 @@ data:extend({
     type = "item-subgroup",
     name = "sp-liquid-metal",  -- #ForRegEx# - item-subgroup
     group = "fluids",
-    order = "a"
+    order = "a1"
+  },
+  {
+    type = "item-subgroup",
+    name = "sp-froth",  -- #ForRegEx# - item-subgroup
+    group = "fluids",
+    order = "a2"
   },
   {
     type = "item-subgroup",

@@ -146,6 +146,74 @@ data:extend({
     order = "[molten-zinc]"
   },
   ------------------------------------------------------------------------------
+  -- MARK: froth
+  ------------------------------------------------------------------------------
+  {
+    type = "fluid",
+    name = "sp-platinum-group-metal-froth",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    base_color = {r=1.0, g=0.65, b=0.45},
+    flow_color = {r=1.0, g=0.65, b=0.45},
+    icon = "__Spaghetorio__/graphics/icons/platinum-group-metal-froth.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-froth",
+    order = "[platinum-group-metal-froth]"
+  },
+  {
+    type = "fluid",
+    name = "sp-iridium-froth",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    base_color = {r=1.0, g=0.65, b=0.45},
+    flow_color = {r=1.0, g=0.65, b=0.45},
+    icon = "__Spaghetorio__/graphics/icons/iridium-froth.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-froth",
+    order = "[iridium-froth]"
+  },
+  {
+    type = "fluid",
+    name = "sp-osmium-froth",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    base_color = {r=1.0, g=0.65, b=0.45},
+    flow_color = {r=1.0, g=0.65, b=0.45},
+    icon = "__Spaghetorio__/graphics/icons/osmium-froth.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-froth",
+    order = "[osmium-froth]"
+  },
+  {
+    type = "fluid",
+    name = "sp-ruthenium-froth",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    base_color = {r=1.0, g=0.65, b=0.45},
+    flow_color = {r=1.0, g=0.65, b=0.45},
+    icon = "__Spaghetorio__/graphics/icons/ruthenium-froth.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-froth",
+    order = "[ruthenium-froth]"
+  },
+  {
+    type = "fluid",
+    name = "sp-rhodium-froth",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    base_color = {r=1.0, g=0.65, b=0.45},
+    flow_color = {r=1.0, g=0.65, b=0.45},
+    icon = "__Spaghetorio__/graphics/icons/rhodium-froth.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-froth",
+    order = "[rhodium-froth]"
+  },
+  ------------------------------------------------------------------------------
   -- MARK: aqueous-fluid
   ------------------------------------------------------------------------------
   {
@@ -316,6 +384,18 @@ data:extend({
   ------------------------------------------------------------------------------
   -- MARK: solution
   ------------------------------------------------------------------------------
+  {
+    type = "fluid",
+    name = "sp-aqua-regia",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    base_color = {r=0.5, g=0.6, b=0.0},
+    flow_color = {r=0.5, g=0.6, b=0.0},
+    icon = "__Spaghetorio__/graphics/icons/aqua-regia.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "sp-solution",
+    order = "[aqua-regia]",
+  },
   {
     type = "fluid",
     name = "sp-vanadium-bearing-solution",  -- #ForRegEx# - fluid
@@ -495,6 +575,30 @@ data:extend({
     scale = 0.5,
     subgroup = "sp-solution",
     order = "[methylmagnesium-bromide-solution]",
+  },
+  {
+    type = "fluid",
+    name = "sp-ruthenium-amine-solution",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    base_color = {r=0.5, g=0.6, b=0.0},
+    flow_color = {r=0.5, g=0.6, b=0.0},
+    icon = "__Spaghetorio__/graphics/icons/ruthenium-amine-solution.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "sp-solution",
+    order = "[ruthenium-amine-solution]",
+  },
+  {
+    type = "fluid",
+    name = "sp-ruthenium-nitrosyl-solution",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    base_color = {r=0.5, g=0.6, b=0.0},
+    flow_color = {r=0.5, g=0.6, b=0.0},
+    icon = "__Spaghetorio__/graphics/icons/ruthenium-nitrosyl-solution.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "sp-solution",
+    order = "[ruthenium-nitrosyl-solution]",
   },
   ------------------------------------------------------------------------------
   -- MARK: dirty-fluid
@@ -891,6 +995,20 @@ data:extend({
     icon_mipmaps = 4,
     subgroup = "sp-inorganic-chemical",
     order = "a[iodine]-f[hydrogen-iodide]"
+  },
+  {
+    type = "fluid",
+    name = "sp-sodium-periodate",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    fuel_value = "50kJ",
+    base_color = {r=1.0, g=0.6, b=0.4},
+    flow_color = {r=1.0, g=0.6, b=0.4},
+    icon = "__Spaghetorio__/graphics/icons/sodium-periodate.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-inorganic-chemical",
+    order = "a[iodine]-f[sodium-periodate]"
   },
   {
     type = "fluid",
