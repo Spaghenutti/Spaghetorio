@@ -11475,16 +11475,16 @@ data:extend({
     category = "crafting",
     enabled = false,
     allow_productivity = true,
-    energy_required = 8,
+    energy_required = 4,
     hide_from_player_crafting = true,
     ingredients = {
       {type = "item", name = "copper-cable", amount = 2},
-      {type = "item", name = "sp-machined-parts", amount = 4},
+      {type = "item", name = "sp-machined-parts", amount = 1},
       {type = "item", name = "sp-ceramics", amount = 2},
       {type = "item", name = "sp-platinum", amount = 1}
     },
     results = {
-      {type = "item", name = "sp-electrode", amount = 3}
+      {type = "item", name = "sp-electrode", amount = 1}
     }
   },
 
