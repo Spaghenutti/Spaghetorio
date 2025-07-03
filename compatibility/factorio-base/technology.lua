@@ -1354,14 +1354,14 @@ data.raw.technology["energy-shield-equipment"].prerequisites = {
 data.raw.technology["energy-shield-equipment"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},
   {"sp-logistic-science-pack-2", 1},
-  {"sp-electronic-science-pack-1", 1},
   {"sp-material-science-pack-2", 1},
-  {"sp-chemical-science-pack-2", 1},
-  {"sp-geological-science-pack-2", 1},
   {"sp-military-science-pack-2", 1},
+  {"sp-geological-science-pack-2", 1},
+  {"sp-electronic-science-pack-2", 1},
+  {"sp-chemical-science-pack-2", 1},
+  {"sp-metallurgic-science-pack-2", 1},
+  {"electromagnetic-science-pack", 1},
   {"production-science-pack", 1},
-  {"metallurgic-science-pack", 1},
-  {"electromagnetic-science-pack", 1}
 }
 
 table.insert(data.raw.technology["energy-shield-mk2-equipment"].prerequisites, "sp-military-science-pack-3")
