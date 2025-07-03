@@ -11480,7 +11480,8 @@ data:extend({
     ingredients = {
       {type = "item", name = "copper-cable", amount = 2},
       {type = "item", name = "sp-machined-parts", amount = 1},
-      {type = "item", name = "sp-ceramics", amount = 2},
+      {type = "item", name = "sp-tungsten-powder", amount = 2},
+      {type = "item", name = "sp-boron-carbide", amount = 1},
       {type = "item", name = "sp-platinum", amount = 1}
     },
     results = {

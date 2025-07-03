@@ -5,7 +5,7 @@ Date: 2025-07-04
     - Added items and fluids for processing platinum group metals (before called noble metals)
   Changes:
     - Removed scrap
-    - Changed values in electrode recipe
+    - Changed electrode recipe
     - Changed recipe and technology requirements for advanced chemical plant
     - Changed recipe chains for all noble metals and technologies
     - Renamed noble metals smelting technology to electrum
