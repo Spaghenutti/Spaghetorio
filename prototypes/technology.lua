@@ -1507,13 +1507,10 @@ data:extend({
   },
   {
     type = "technology",
-    name = "sp-noble-metals",  -- #ForRegEx# - technology
+    name = "sp-gold-processing",  -- #ForRegEx# - technology
     icon_size = 256,
-    icons = util.icon.combine_five_icons("__Spaghetorio__/graphics/hr-icons/silver.png", 256, nil,
-                                         "__Spaghetorio__/graphics/hr-icons/palladium.png", 256, nil,
-                                         "__Spaghetorio__/graphics/hr-icons/gold.png", 256, nil,
-                                         "__Spaghetorio__/graphics/hr-icons/iridium.png", 256, nil,
-                                         "__Spaghetorio__/graphics/hr-icons/platinum.png", 256, nil),
+    icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/hr-icons/gold.png", 256, nil,
+                                        "__Spaghetorio__/graphics/hr-icons/gold-leaf.png", 256, nil),
     effects =
     {
       {
@@ -1522,16 +1519,8 @@ data:extend({
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-platinum-iridium"
+        recipe = "sp-gold-leaf"
       },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-silver-palladium"
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-palladium"
-      }
     },
     prerequisites = {
       "sp-material-science-pack-2",
@@ -1539,7 +1528,7 @@ data:extend({
     },
     unit =
     {
-      count = 500,
+      count = 100,
       ingredients = {
         {"sp-automation-science-pack-2", 1},
         {"sp-logistic-science-pack-2", 1},
@@ -1556,27 +1545,111 @@ data:extend({
   },
   {
     type = "technology",
-    name = "sp-noble-metals-smelting",  -- #ForRegEx# - technology
+    name = "sp-palladium-processing",  -- #ForRegEx# - technology
     icon_size = 256,
-    icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/hr-icons/electrum.png", 256, nil,
-                                        "__Spaghetorio__/graphics/hr-icons/gold-leaf.png", 256, nil),
+    icon = "__Spaghetorio__/graphics/hr-icons/palladium.png",
     effects =
     {
       {
         type = "unlock-recipe",
-        recipe = "sp-gold-leaf"
+        recipe = "sp-silver-palladium"
       },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-palladium"
+      }
+    },
+    prerequisites = {
+      "sp-material-science-pack-2",
+      "sp-big-crusher"
+    },
+    unit =
+    {
+      count = 300,
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-electronic-science-pack-1", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"production-science-pack", 1},
+        {"metallurgic-science-pack", 1},
+        {"electromagnetic-science-pack", 1}
+      },
+      time = 30
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-platinum-processing",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghetorio__/graphics/hr-icons/platinum.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-platinum-group-metal-froth"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-platinum-group-metal-concentrate"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-platinum-group-metal-matte"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-platinum-powder"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-platinum"
+      },
+    },
+    prerequisites = {
+      "sp-material-science-pack-2",
+      "sp-big-crusher",
+      "sp-aqua-regia",
+      "sp-metallurgic-science-pack-2"
+    },
+    unit =
+    {
+      count = 500,
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-metallurgic-science-pack-2", 1},
+        {"electromagnetic-science-pack", 1},
+        {"production-science-pack", 1},
+      },
+      time = 30
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-electrum",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghetorio__/graphics/hr-icons/electrum.png",
+    effects =
+    {
       {
         type = "unlock-recipe",
         recipe = "sp-electrum"
       }
     },
     prerequisites = {
-      "sp-noble-metals"
+      "sp-gold-processing",
+      "sp-palladium-processing",
     },
     unit =
     {
-      count = 200,
+      count = 300,
       ingredients = {
         {"sp-automation-science-pack-2", 1},
         {"sp-logistic-science-pack-2", 1},
@@ -2620,7 +2693,8 @@ data:extend({
       }
     },
     prerequisites = {
-      "sp-noble-metals",
+      "sp-gold-processing",
+      "sp-palladium-processing",
       "sp-cerium-processing",
       "sp-tellurium-processing",
       "sp-gallium-processing",
@@ -5913,16 +5987,12 @@ data:extend({
     {
       {
         type = "unlock-recipe",
-        recipe = "sp-electrode-from-platinum"
+        recipe = "sp-electrode"
       },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-electrode-from-iridium"
-      }
     },
     prerequisites = {
       "sp-basic-ceramics",
-      "sp-noble-metals",
+      "sp-platinum-processing",
       "sp-chemical-science-pack-2"
     },
     unit =
@@ -9690,12 +9760,15 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "sp-nitrogen-dioxide",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-ventilator",
       }
     },
     prerequisites = {
-      "processing-unit",
+      "sp-compressor",
       "sp-optical-sensor",
-      "sp-high-pressure-fan"
     },
     unit = {
       count = 1000,
@@ -9707,10 +9780,39 @@ data:extend({
         {"sp-electronic-science-pack-2", 1},
         {"sp-chemical-science-pack-2", 1},
         {"sp-metallurgic-science-pack-2", 1},
-        {"sp-electromagnetic-science-pack-2", 1},
+        {"electromagnetic-science-pack", 1},
         {"production-science-pack", 1},
-        {"utility-science-pack", 1},
-        {"sp-computer-science-pack-2", 1}
+      },
+      time = 45,
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-aqua-regia",  -- #ForRegEx# - technology
+    icon = "__Spaghetorio__/graphics/hr-icons/aqua-regia.png",
+    icon_size = 256,
+    icon_mipmaps = 4,
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-aqua-regia",
+      },
+    },
+    prerequisites = {
+      "sp-kr-advanced-chemistry", 
+    },
+    unit = {
+      count = 200,
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-metallurgic-science-pack-2", 1},
+        {"electromagnetic-science-pack", 1},
+        {"production-science-pack", 1},
       },
       time = 45,
     },
@@ -10705,7 +10807,7 @@ data:extend({
       }
     },
     prerequisites = {
-      "sp-noble-metals",
+      "sp-palladium-processing",
     },
     unit = {
       count = 200,
@@ -10880,6 +10982,7 @@ data:extend({
     icon_size = 256,
     icon_mipmaps = 4,
     prerequisites = {
+      "sp-optics",
       "sp-power-regulation",
       "sp-titanium-alloys",
       "sp-electrode",

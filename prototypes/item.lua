@@ -1741,6 +1741,16 @@ data:extend({
     order = "[niobium-powder]",
     stack_size = 100
   },
+  {
+    type = "item",
+    name = "sp-platinum-powder",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/platinum-powder.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "sp-metal-powder",
+    order = "[platinum-powder]",
+    stack_size = 100
+  },
   ------------------------------------------------------------------------------
   -- MARK: processed-metal
   ------------------------------------------------------------------------------

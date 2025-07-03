@@ -866,7 +866,7 @@ data.raw.technology["rocket-silo"].prerequisites = {
   "sp-antenna-chip",
   "sp-kr-lithium-sulfur-battery",
   "sp-teflon",
-  "sp-noble-metals-smelting",
+  "sp-electrum",
   "laser"
 }
 data.raw.technology["rocket-silo"].unit.ingredients = {

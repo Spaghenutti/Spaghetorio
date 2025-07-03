@@ -787,6 +787,7 @@ data:extend({
     name = "sp-antimony-oxide-from-crushed-stibnite",  -- #ForRegEx# - recipe
     icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/antimony-oxide.png", 64,
                                          "__Spaghetorio__/graphics/icons/crushed-stibnite-1.png", 64),
+    category = "sp-intermediate-smelting",
     enabled = false,
     allow_productivity = true,
     energy_required = 4,
@@ -802,6 +803,7 @@ data:extend({
     name = "sp-antimony-oxide-from-enriched-stibnite",  -- #ForRegEx# - recipe
     icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/antimony-oxide.png", 64,
                                          "__Spaghetorio__/graphics/icons/enriched-stibnite-1.png", 64),
+    category = "sp-intermediate-smelting",
     enabled = false,
     allow_productivity = true,
     energy_required = 3.6,
@@ -984,6 +986,37 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-zinc-plate", probability = 0.7, amount = 2}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-platinum-group-metal-matte",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/icons/platinum-group-metal-matte.png",
+    category = "sp-intermediate-smelting",
+    subgroup = "sp-metal-concentrate",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 2,
+    ingredients = {
+      {type = "fluid", name = "sp-platinum-group-metal-froth", amount = 5},
+    },
+    results = {
+      {type = "item", name = "sp-platinum-group-metal-matte", amount = 1},
+      {type = "item", name = "sp-enriched-chromite", probability = 0.04, amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-platinum",  -- #ForRegEx# - recipe
+    category = "sp-intermediate-smelting",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 25,
+    ingredients = {
+      {type = "item", name = "sp-platinum-powder", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-platinum", amount = 1},
     }
   },
   ------------------------------------------------------------------------------
@@ -2662,6 +2695,23 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "sp-platinum-group-metal-concentrate",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/icons/platinum-group-metal-concentrate.png",
+    category = "metallurgy",
+    subgroup = "sp-metal-concentrate",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 2,
+    ingredients = {
+      {type = "fluid", name = "sp-platinum-group-metal-froth", amount = 5},
+    },
+    results = {
+      {type = "item", name = "sp-platinum-group-metal-concentrate", amount = 1},
+      {type = "item", name = "sp-enriched-iron", probability = 0.12, amount = 1}
+    }
+  },
+  {
+    type = "recipe",
     name = "sp-molten-aluminum",  -- #ForRegEx# - recipe
     category = "metallurgy",
     enabled = false,
@@ -4110,24 +4160,21 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-platinum-iridium",  -- #ForRegEx# - recipe
-    icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/icons/platinum.png", 64, nil,
-                                         "__Spaghetorio__/graphics/icons/iridium.png", 64, nil),
-    icon_size = 256,
-    scale = 0.25,
+    name = "sp-platinum-powder",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/icons/platinum-powder.png",
     category = "sp-crushing-washing",
-    subgroup = "sp-processed-metal",
+    subgroup = "sp-metal-concentrate",
     enabled = false,
     allow_productivity = true,
-    energy_required = 12,
+    energy_required = 30,
     ingredients = {
-      {type = "item", name = "iron-ore", amount = 1},
-      {type = "fluid", name = "water", amount = 50}
+      {type = "item", name = "sp-platinum-group-metal-matte", amount = 1},
+      {type = "fluid", name = "sp-nitric-acid", amount = 10},
+      {type = "fluid", name = "sp-potassium-hydroxide-solution", amount = 15},
     },
     results = {
-      {type = "item", name = "sp-crushed-iron-ore", probability = 0.4, amount = 3},
-      {type = "item", name = "sp-platinum", probability = 0.03, amount = 1},
-      {type = "item", name = "sp-iridium", probability = 0.01, amount = 1}
+      {type = "item", name = "sp-platinum-powder", amount = 2},
+      {type = "item", name = "sp-alumina", probability = 0.08, amount = 1}
     }
   },
   {
@@ -5669,6 +5716,28 @@ data:extend({
       {type = "fluid", name = "sp-hydrobromic-acid", amount = 4},
       {type = "item", name = "sp-sodium-bisulfate", probability = 0.25, amount = 1}
     }
+  },
+  {
+    type = "recipe",
+    name = "sp-aqua-regia",  -- #ForRegEx# - recipe
+    category = "chemistry",
+    energy_required = 2,
+    enabled = false,
+    allow_productivity = true,
+    ingredients = {
+      {type = "fluid", name = "sp-nitric-acid", amount = 50},
+      {type = "fluid", name = "sp-hydrogen-chloride", amount = 50},
+    },
+    results = {
+      {type = "fluid", name = "sp-aqua-regia", amount = 100}
+    },
+    crafting_machine_tint = {
+      primary = {r = 0.800, g = 0.000, b = 0.100, a = 0.200},
+      secondary = {r = 0.500, g = 0.100, b = 0.300, a = 0.357},
+      tertiary = {r = 0.430, g = 0.000, b = 0.450, a = 0.200},
+      quaternary = {r = 0.800, g = 0.000, b = 0.100, a = 0.900},
+    },
+    order = "[liquid]-[liquid-sodium]"
   },
   ------------------------------------------------------------------------------
   -- MARK: advanced-chemistry
@@ -8849,7 +8918,6 @@ data:extend({
       {type = "item", name = "sp-silicon", amount = 4},
       {type = "item", name = "sp-silica", amount = 2},
       {type = "item", name = "sp-phosphorus", amount = 2},
-      {type = "item", name = "sp-iridium", amount = 1},
       {type = "item", name = "sp-tungsten-powder", amount = 1},
       {type = "item", name = "sp-aluminum-sheet", amount = 1}
     },
@@ -9526,6 +9594,22 @@ data:extend({
     },
     results = {
       {type = "fluid", name = "sp-sodium-sulfite-solution", amount = 20}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-platinum-group-metal-froth",  -- #ForRegEx# - recipe
+    category = "sp-kr-fluid-filtration",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 20,
+    ingredients = {
+      {type = "fluid", name = "sp-mineral-water", amount = 150},
+      {type = "fluid", name = "sp-aqua-regia", amount = 30},
+      {type = "fluid", name = "sp-nitrogen", amount = 30},
+    },
+    results = {
+      {type = "fluid", name = "sp-platinum-group-metal-froth", amount = 10}
     }
   },
   ------------------------------------------------------------------------------
@@ -11386,29 +11470,8 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-electrode-from-iridium",  -- #ForRegEx# - recipe
+    name = "sp-electrode",  -- #ForRegEx# - recipe
     icon = "__Spaghetorio__/graphics/icons/electrode.png",
-    icon_size = 64,
-    mip_maps = 4,
-    category = "crafting",
-    enabled = false,
-    allow_productivity = true,
-    energy_required = 14,
-    ingredients = {
-      {type = "item", name = "copper-cable", amount = 6},
-      {type = "item", name = "sp-machined-parts", amount = 8},
-      {type = "item", name = "sp-ceramics", amount = 4},
-      {type = "item", name = "sp-iridium", amount = 1}
-    },
-    results = {
-      {type = "item", name = "sp-electrode", amount = 6}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-electrode-from-platinum",  -- #ForRegEx# - recipe
-    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/electrode.png", 64,
-                                         "__Spaghetorio__/graphics/icons/platinum.png", 64),
     category = "crafting",
     enabled = false,
     allow_productivity = true,
@@ -15248,11 +15311,11 @@ data:extend({
       {type = "item", name = "sp-titanium-aluminum-tin", amount = 20},
       {type = "item", name = "sp-chromium-cobalt", amount = 20},
       {type = "item", name = "sp-glass", amount = 60},
-      {type = "item", name = "processing-unit", amount = 32},
+      {type = "item", name = "advanced-circuit", amount = 32},
       {type = "item", name = "sp-infrared-sensor", amount = 32},
       {type = "item", name = "sp-compressor", amount = 8},
       {type = "item", name = "sp-condenser-coil", amount = 20},
-      {type = "item", name = "sp-high-pressure-fan", amount = 8},
+      {type = "item", name = "sp-ventilator", amount = 8},
       {type = "item", name = "sp-filter", amount = 60},
       {type = "item", name = "sp-pressure-tube", amount = 40},
       {type = "item", name = "sp-copper-tube", amount = 100},
