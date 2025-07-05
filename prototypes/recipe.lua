@@ -998,7 +998,7 @@ data:extend({
     allow_productivity = true,
     energy_required = 2,
     ingredients = {
-      {type = "fluid", name = "sp-platinum-group-metal-froth", amount = 5},
+      {type = "item", name = "sp-platinum-group-metal-concentrate", amount = 5},
     },
     results = {
       {type = "item", name = "sp-platinum-group-metal-matte", amount = 1},
@@ -4160,25 +4160,6 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-platinum-powder",  -- #ForRegEx# - recipe
-    icon = "__Spaghetorio__/graphics/icons/platinum-powder.png",
-    category = "sp-crushing-washing",
-    subgroup = "sp-metal-concentrate",
-    enabled = false,
-    allow_productivity = true,
-    energy_required = 30,
-    ingredients = {
-      {type = "item", name = "sp-platinum-group-metal-matte", amount = 1},
-      {type = "fluid", name = "sp-nitric-acid", amount = 10},
-      {type = "fluid", name = "sp-potassium-hydroxide-solution", amount = 15},
-    },
-    results = {
-      {type = "item", name = "sp-platinum-powder", amount = 2},
-      {type = "item", name = "sp-alumina", probability = 0.08, amount = 1}
-    }
-  },
-  {
-    type = "recipe",
     name = "sp-silver-palladium",  -- #ForRegEx# - recipe
     icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/icons/silver.png", 64, nil,
                                         "__Spaghetorio__/graphics/icons/palladium.png", 64, nil),
@@ -5739,6 +5720,21 @@ data:extend({
     },
     order = "[liquid]-[liquid-sodium]"
   },
+  {
+    type = "recipe",
+    name = "sp-ammonium-bisulfate-solution",  -- #ForRegEx# - recipe
+    category = "chemistry",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 4,
+    ingredients = {
+      {type = "fluid", name = "sulfuric-acid", amount = 15},
+      {type = "fluid", name = "ammonia", amount = 15},
+    },
+    results = {
+      {type = "fluid", name = "sp-ammonium-bisulfate-solution", amount = 30},
+    }
+  },
   ------------------------------------------------------------------------------
   -- MARK: advanced-chemistry
   ------------------------------------------------------------------------------
@@ -6265,6 +6261,40 @@ data:extend({
     },
     results = {
       {type = "fluid", name = "sp-cellulose", amount = 10}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-ammonium-hexachloroplatinate",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/icons/ammonium-hexachloroplatinate.png",
+    category = "sp-advanced-chemistry",
+    subgroup = "sp-chemical-product",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 40,
+    ingredients = {
+      {type = "item", name = "sp-platinum-group-metal-matte", amount = 2},
+      {type = "fluid", name = "sp-hypochlorus-acid", amount = 12},
+      {type = "fluid", name = "sp-ammonium-bisulfate-solution", amount = 15},
+    },
+    results = {
+      {type = "item", name = "sp-ammonium-hexachloroplatinate", amount = 3},
+      {type = "item", name = "sp-alumina", probability = 0.08, amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-platinum-powder",  -- #ForRegEx# - recipe
+    category = "sp-advanced-chemistry",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 12,
+    ingredients = {
+      {type = "item", name = "sp-ammonium-hexachloroplatinate", amount = 1},
+      {type = "fluid", name = "sp-nitrogen", amount = 10},
+    },
+    results = {
+      {type = "item", name = "sp-platinum-powder", amount = 2},
     }
   },
   ------------------------------------------------------------------------------

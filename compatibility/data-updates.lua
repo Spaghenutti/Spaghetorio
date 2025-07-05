@@ -5,6 +5,8 @@ local remove_prototypes = require("util.remove-prototypes")
 local asteroid_util = require("__Spaghetorio__.prototypes.space.asteroid-spawn-definitions")
 
 data.raw.furnace["stone-furnace"].result_inventory_size = 2
+data.raw.furnace["steel-furnace"].result_inventory_size = 3
+data.raw.furnace["electric-furnace"].result_inventory_size = 4
 data.raw.furnace["recycler"].result_inventory_size = 30
 
 -- Source: https://youtu.be/tsDa_Qz3LF0?si=4sG11dFGr8eALM_H&t=1300

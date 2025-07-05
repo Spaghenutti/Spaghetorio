@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.3.23
+Date: 2025-07-11
+  Bugfixes:
+    - Fixed platinum recipe chain
+    - Fixed that some recipes could not be crafted in steel and electric furnace
+---------------------------------------------------------------------------------------------------
 Version: 0.3.22
 Date: 2025-07-04
   Features:

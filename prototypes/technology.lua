@@ -1589,15 +1589,7 @@ data:extend({
     {
       {
         type = "unlock-recipe",
-        recipe = "sp-platinum-group-metal-froth"
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-platinum-group-metal-concentrate"
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-platinum-group-metal-matte"
+        recipe = "sp-platinum"
       },
       {
         type = "unlock-recipe",
@@ -1605,7 +1597,23 @@ data:extend({
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-platinum"
+        recipe = "sp-ammonium-hexachloroplatinate"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-ammonium-bisulfate-solution"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-platinum-group-metal-matte"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-platinum-group-metal-concentrate"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-platinum-group-metal-froth"
       },
     },
     prerequisites = {
