@@ -1008,7 +1008,9 @@ data:extend({
   {
     type = "recipe",
     name = "sp-platinum",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/icons/platinum.png",
     category = "sp-intermediate-smelting",
+    subgroup = "sp-processed-metal",
     enabled = false,
     allow_productivity = true,
     energy_required = 25,
@@ -1016,7 +1018,8 @@ data:extend({
       {type = "item", name = "sp-platinum-powder", amount = 1},
     },
     results = {
-      {type = "item", name = "sp-platinum", amount = 1},
+      {type = "item", name = "sp-platinum", probability = 0.25, amount = 1},
+      {type = "item", name = "sp-platinum-powder", probability = 0.25, amount = 1},
     }
   },
   ------------------------------------------------------------------------------
@@ -2712,6 +2715,20 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "sp-rhodium-concentrate",  -- #ForRegEx# - recipe
+    category = "metallurgy",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 5,
+    ingredients = {
+      {type = "fluid", name = "sp-rhodium-froth", amount = 5},
+    },
+    results = {
+      {type = "item", name = "sp-rhodium-concentrate", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
     name = "sp-molten-aluminum",  -- #ForRegEx# - recipe
     category = "metallurgy",
     enabled = false,
@@ -3693,6 +3710,35 @@ data:extend({
       {type = "item", name = "sp-platinum-rhodium", amount = 4}
     }
   },
+  {
+    type = "recipe",
+    name = "sp-improved-platinum-smelting",  -- #ForRegEx# - recipe
+    category = "sp-high-temperature-smelting",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 12,
+    ingredients = {
+      {type = "item", name = "sp-platinum-powder", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-platinum", amount = 1},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-rhodium",  -- #ForRegEx# - recipe
+    category = "sp-high-temperature-smelting",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 30,
+    ingredients = {
+      {type = "item", name = "sp-rhodium-oxide", amount = 3},
+      {type = "item", name = "sp-sodium-bisulfate", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-rhodium", amount = 2}
+    },
+  },
   ------------------------------------------------------------------------------
   -- MARK: sp-kr-fluid-filtration
   ------------------------------------------------------------------------------
@@ -4505,6 +4551,26 @@ data:extend({
     results = {
       {type = "fluid", name = "sp-bromine-chloride", amount = 15},
       {type = "fluid", name = "sp-bromine-pentafluoride", amount = 5},
+    },
+  },
+  {
+    type = "recipe",
+    name = "sp-rhodium-froth",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/icons/rhodium-froth.png",
+    category = "sp-crushing-washing",
+    subgroup = "sp-froth",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 20,
+    ingredients = {
+      {type = "item", name = "sp-rhodium-asteroid-chunk", amount = 1},
+      {type = "fluid", name = "sp-aqua-regia", amount = 25},
+      {type = "fluid", name = "sp-nitric-acid", amount = 5},
+    },
+    results = {
+      {type = "fluid", name = "sp-rhodium-froth", amount = 5},
+      {type = "item", name = "iron-ore", amount = 1},
+      {type = "item", name = "sp-cobalt-ore", probability = 0.2, amount = 1},
     },
   },
   ------------------------------------------------------------------------------
@@ -6295,6 +6361,40 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-platinum-powder", amount = 2},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-rhodium-oxide",  -- #ForRegEx# - recipe
+    category = "sp-advanced-chemistry",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 12,
+    ingredients = {
+      {type = "item", name = "sp-rhodium-concentrate", amount = 1},
+      {type = "fluid", name = "sp-cellulose", amount = 8},
+      {type = "fluid", name = "sp-methyl-sulfate", amount = 10},
+    },
+    results = {
+      {type = "item", name = "sp-rhodium-oxide", amount = 2},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-rhodium-oxide-from-platinum-group-metal-matte",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/rhodium-oxide.png", 64,
+                                         "__Spaghetorio__/graphics/icons/platinum-group-metal-matte.png", 64),
+    category = "sp-advanced-chemistry",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 30,
+    ingredients = {
+      {type = "item", name = "sp-platinum-group-metal-matte", amount = 1},
+      {type = "fluid", name = "sp-cellulose", amount = 8},
+      {type = "fluid", name = "sp-methyl-sulfate", amount = 10},
+    },
+    results = {
+      {type = "item", name = "sp-rhodium-oxide", probability = 0.4, amount = 1},
     }
   },
   ------------------------------------------------------------------------------

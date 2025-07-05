@@ -1,6 +1,8 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.23
 Date: 2025-07-11
+  Changes:
+    - Updated rhodium recipe chain
   Bugfixes:
     - Fixed platinum recipe chain
     - Fixed that some recipes could not be crafted in steel and electric furnace

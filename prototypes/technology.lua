@@ -1913,6 +1913,64 @@ data:extend({
   },
   {
     type = "technology",
+    name = "sp-rhodium-processing",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghetorio__/graphics/hr-icons/rhodium.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-rhodium"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-rhodium-oxide-from-platinum-group-metal-matte"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-rhodium-oxide"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-rhodium-concentrate"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-rhodium-froth"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-sodium-bisulfate",
+      }
+    },
+    prerequisites = {
+      "space-platform",
+      "sp-methyl-sulfate",
+      "sp-cellulose"
+    },
+    unit =
+    {
+      count = 600,
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-metallurgic-science-pack-2", 1},
+        {"sp-electromagnetic-science-pack-2", 1},
+        {"production-science-pack", 1},
+        {"utility-science-pack", 1},
+        {"cryogenic-science-pack", 1},
+        {"agricultural-science-pack", 1},
+        {"sp-computer-science-pack-2", 1}
+      },
+      time = 30
+    },
+  },
+  {
+    type = "technology",
     name = "sp-rhodium-alloys",  -- #ForRegEx# - technology
     icon_size = 256,
     icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/hr-icons/nickel-rhodium.png", 256, nil,
@@ -1929,7 +1987,8 @@ data:extend({
       },
     },
     prerequisites = {
-      "space-platform"
+      "space-platform",
+      "sp-rhodium-processing"
     },
     unit =
     {
@@ -9129,6 +9188,10 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "sp-improved-tungsten-plate-smelting",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-improved-platinum-smelting",
       }
     },
     prerequisites = {
@@ -9804,7 +9867,7 @@ data:extend({
       },
     },
     prerequisites = {
-      "sp-kr-advanced-chemistry", 
+      "sp-kr-advanced-chemistry",
     },
     unit = {
       count = 200,
@@ -9835,7 +9898,8 @@ data:extend({
       },
     },
     prerequisites = {
-      "space-science-pack"
+      "agricultural-science-pack",
+      "sp-kr-advanced-chemistry"
     },
     unit = {
       count = 200,
@@ -9847,13 +9911,9 @@ data:extend({
         {"sp-electronic-science-pack-2", 1},
         {"sp-chemical-science-pack-2", 1},
         {"sp-metallurgic-science-pack-2", 1},
-        {"sp-electromagnetic-science-pack-2", 1},
-        {"production-science-pack", 1},
-        {"utility-science-pack", 1},
-        {"cryogenic-science-pack", 1},
+        {"electromagnetic-science-pack", 1},
         {"agricultural-science-pack", 1},
-        {"sp-computer-science-pack-2", 1},
-        {"space-science-pack", 1}
+        {"production-science-pack", 1},
       },
       time = 45,
     },
@@ -9887,13 +9947,9 @@ data:extend({
         {"sp-electronic-science-pack-2", 1},
         {"sp-chemical-science-pack-2", 1},
         {"sp-metallurgic-science-pack-2", 1},
-        {"sp-electromagnetic-science-pack-2", 1},
-        {"production-science-pack", 1},
-        {"utility-science-pack", 1},
-        {"cryogenic-science-pack", 1},
+        {"electromagnetic-science-pack", 1},
         {"agricultural-science-pack", 1},
-        {"sp-computer-science-pack-2", 1},
-        {"space-science-pack", 1}
+        {"production-science-pack", 1},
       },
       time = 45,
     },
@@ -9915,7 +9971,8 @@ data:extend({
       },
     },
     prerequisites = {
-      "space-science-pack"
+      "agricultural-science-pack",
+      "sp-kr-advanced-chemistry"
     },
     unit = {
       count = 250,
@@ -9927,13 +9984,9 @@ data:extend({
         {"sp-electronic-science-pack-2", 1},
         {"sp-chemical-science-pack-2", 1},
         {"sp-metallurgic-science-pack-2", 1},
-        {"sp-electromagnetic-science-pack-2", 1},
-        {"production-science-pack", 1},
-        {"utility-science-pack", 1},
-        {"cryogenic-science-pack", 1},
+        {"electromagnetic-science-pack", 1},
         {"agricultural-science-pack", 1},
-        {"sp-computer-science-pack-2", 1},
-        {"space-science-pack", 1}
+        {"production-science-pack", 1},
       },
       time = 45,
     },
@@ -10377,10 +10430,6 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "sp-potassium-bisulfate",
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-sodium-bisulfate",
       },
       {
         type = "unlock-recipe",
