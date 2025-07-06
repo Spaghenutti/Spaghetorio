@@ -3090,6 +3090,7 @@ data:extend({
       }
     },
     prerequisites = {
+      "sp-arsen-processing",
       "sp-cadmium-processing",
       "sp-indium-processing",
       "sp-gallium-processing",
@@ -10522,6 +10523,49 @@ data:extend({
         {"agricultural-science-pack", 1},
         {"sp-computer-science-pack-2", 1},
         {"sp-nuclear-science-pack-2", 1},
+        {"space-science-pack", 1}
+      },
+      time = 45,
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-ion-chromatography-for-palladium-and-rhenium",  -- #ForRegEx# - technology
+    icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/hr-icons/palladium.png", 256, nil,
+                                        "__Spaghetorio__/graphics/hr-icons/rhenium.png", 256, nil),
+    icon_size = 256,
+    icon_mipmaps = 4,
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-palladium-ion-chromatography",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-rhenium-ion-chromatography",
+      },
+    },
+    prerequisites = {
+      "sp-carboxymethyldiphenylphosphine",
+      "sp-carboxymethyllysine",
+      "sp-ammonia-tetra-ethers"
+    },
+    unit = {
+      count = 300,
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-metallurgic-science-pack-2", 1},
+        {"sp-electromagnetic-science-pack-2", 1},
+        {"production-science-pack", 1},
+        {"utility-science-pack", 1},
+        {"cryogenic-science-pack", 1},
+        {"agricultural-science-pack", 1},
+        {"sp-computer-science-pack-2", 1},
         {"space-science-pack", 1}
       },
       time = 45,

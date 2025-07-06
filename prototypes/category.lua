@@ -190,6 +190,10 @@ data:extend({
     name = "sp-chemical-staging",  -- #ForRegEx# - recipe-category
   },
   {
+    type = "recipe-category",
+    name = "sp-ion-chromatography",  -- #ForRegEx# - recipe-category
+  },
+  {
     -- Recipes that can be put into smelters and crystallizer like glass
     type = "recipe-category",
     name = "sp-smelting-crystallizing",  -- #ForRegEx# - recipe-category

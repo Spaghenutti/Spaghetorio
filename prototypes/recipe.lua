@@ -2493,9 +2493,9 @@ data:extend({
     category = "sp-smelting-with-fluid",
     enabled = false,
     allow_productivity = true,
-    energy_required = 2,
+    energy_required = 5,
     ingredients = {
-      {type = "fluid", name = "sp-ammonium-perrhenate-solution", amount = 3},
+      {type = "fluid", name = "sp-ammonium-perrhenate-solution", amount = 12},
       {type = "fluid", name = "sp-benzyltrimethylammonium-chloride", amount = 2},
     },
     results = {
@@ -5801,6 +5801,21 @@ data:extend({
       {type = "fluid", name = "sp-ammonium-bisulfate-solution", amount = 30},
     }
   },
+  {
+    type = "recipe",
+    name = "sp-potassium-cyanide",  -- #ForRegEx# - recipe
+    category = "chemistry",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 6,
+    ingredients = {
+      {type = "item", name = "sp-potassium-hydroxide", amount = 3},
+      {type = "fluid", name = "sp-hydrogen-cyanide", amount = 4},
+    },
+    results = {
+      {type = "item", name = "sp-potassium-cyanide", amount = 3}
+    }
+  },
   ------------------------------------------------------------------------------
   -- MARK: advanced-chemistry
   ------------------------------------------------------------------------------
@@ -5817,21 +5832,6 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-manganese-chloride", amount = 3}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-potassium-cyanide",  -- #ForRegEx# - recipe
-    category = "sp-advanced-chemistry",
-    enabled = false,
-    allow_productivity = true,
-    energy_required = 6,
-    ingredients = {
-      {type = "item", name = "sp-potassium-hydroxide", amount = 3},
-      {type = "fluid", name = "sp-hydrogen-cyanide", amount = 4},
-    },
-    results = {
-      {type = "item", name = "sp-potassium-cyanide", amount = 3}
     }
   },
   {
@@ -6331,25 +6331,6 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-ammonium-hexachloroplatinate",  -- #ForRegEx# - recipe
-    icon = "__Spaghetorio__/graphics/icons/ammonium-hexachloroplatinate.png",
-    category = "sp-advanced-chemistry",
-    subgroup = "sp-chemical-product",
-    enabled = false,
-    allow_productivity = true,
-    energy_required = 40,
-    ingredients = {
-      {type = "item", name = "sp-platinum-group-metal-matte", amount = 2},
-      {type = "fluid", name = "sp-hypochlorus-acid", amount = 12},
-      {type = "fluid", name = "sp-ammonium-bisulfate-solution", amount = 15},
-    },
-    results = {
-      {type = "item", name = "sp-ammonium-hexachloroplatinate", amount = 3},
-      {type = "item", name = "sp-alumina", probability = 0.08, amount = 1}
-    }
-  },
-  {
-    type = "recipe",
     name = "sp-platinum-powder",  -- #ForRegEx# - recipe
     category = "sp-advanced-chemistry",
     enabled = false,
@@ -6361,40 +6342,6 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-platinum-powder", amount = 2},
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-rhodium-oxide",  -- #ForRegEx# - recipe
-    category = "sp-advanced-chemistry",
-    enabled = false,
-    allow_productivity = true,
-    energy_required = 12,
-    ingredients = {
-      {type = "item", name = "sp-rhodium-concentrate", amount = 1},
-      {type = "fluid", name = "sp-cellulose", amount = 8},
-      {type = "fluid", name = "sp-methyl-sulfate", amount = 10},
-    },
-    results = {
-      {type = "item", name = "sp-rhodium-oxide", amount = 2},
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-rhodium-oxide-from-platinum-group-metal-matte",  -- #ForRegEx# - recipe
-    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/rhodium-oxide.png", 64,
-                                         "__Spaghetorio__/graphics/icons/platinum-group-metal-matte.png", 64),
-    category = "sp-advanced-chemistry",
-    enabled = false,
-    allow_productivity = true,
-    energy_required = 30,
-    ingredients = {
-      {type = "item", name = "sp-platinum-group-metal-matte", amount = 1},
-      {type = "fluid", name = "sp-cellulose", amount = 8},
-      {type = "fluid", name = "sp-methyl-sulfate", amount = 10},
-    },
-    results = {
-      {type = "item", name = "sp-rhodium-oxide", probability = 0.4, amount = 1},
     }
   },
   ------------------------------------------------------------------------------
@@ -7234,6 +7181,100 @@ data:extend({
     results = {
       {type = "fluid", name = "sp-bromine-trifluoride", amount = 5},
     },
+  },
+  ------------------------------------------------------------------------------
+  -- MARK: ion-chromatography
+  ------------------------------------------------------------------------------
+  {
+    type = "recipe",
+    name = "sp-ammonium-hexachloroplatinate",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/icons/ammonium-hexachloroplatinate.png",
+    category = "sp-ion-chromatography",
+    subgroup = "sp-chemical-product",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 40,
+    ingredients = {
+      {type = "item", name = "sp-platinum-group-metal-matte", amount = 2},
+      {type = "fluid", name = "sp-hypochlorus-acid", amount = 12},
+      {type = "fluid", name = "sp-ammonium-bisulfate-solution", amount = 15},
+    },
+    results = {
+      {type = "item", name = "sp-ammonium-hexachloroplatinate", amount = 3},
+      {type = "item", name = "sp-alumina", probability = 0.08, amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-rhodium-oxide",  -- #ForRegEx# - recipe
+    category = "sp-ion-chromatography",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 12,
+    ingredients = {
+      {type = "item", name = "sp-rhodium-concentrate", amount = 1},
+      {type = "fluid", name = "sp-cellulose", amount = 8},
+      {type = "fluid", name = "sp-methyl-sulfate", amount = 10},
+    },
+    results = {
+      {type = "item", name = "sp-rhodium-oxide", amount = 2},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-rhodium-oxide-from-platinum-group-metal-matte",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/rhodium-oxide.png", 64,
+                                         "__Spaghetorio__/graphics/icons/platinum-group-metal-matte.png", 64),
+    category = "sp-ion-chromatography",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 30,
+    ingredients = {
+      {type = "item", name = "sp-platinum-group-metal-matte", amount = 1},
+      {type = "fluid", name = "sp-cellulose", amount = 8},
+      {type = "fluid", name = "sp-methyl-sulfate", amount = 10},
+    },
+    results = {
+      {type = "item", name = "sp-rhodium-oxide", probability = 0.4, amount = 1},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-palladium-ion-chromatography",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_two_small_icons("__Spaghetorio__/graphics/icons/palladium.png", 64,
+                                              "__Spaghetorio__/graphics/icons/tetrapropylammonium.png", 64,
+                                              "__Spaghetorio__/graphics/icons/carboxymethyllysine.png", 64),
+    category = "sp-ion-chromatography",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 24,
+    ingredients = {
+      {type = "item", name = "sp-platinum-group-metal-matte", amount = 3},
+      {type = "fluid", name = "sp-tetrapropylammonium", amount = 20},
+      {type = "fluid", name = "sp-carboxymethyllysine", amount = 25},
+    },
+    results = {
+      {type = "item", name = "sp-palladium", amount = 2},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-rhenium-ion-chromatography",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_two_small_icons("__Spaghetorio__/graphics/icons/rhenium.png", 64,
+                                              "__Spaghetorio__/graphics/icons/tetrapropylammonium.png", 64,
+                                              "__Spaghetorio__/graphics/icons/carboxymethyldiphenylphosphine.png", 64),
+    category = "sp-ion-chromatography",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 30,
+    ingredients = {
+      {type = "item", name = "sp-platinum-group-metal-matte", amount = 5},
+      {type = "fluid", name = "sp-tetrapropylammonium", amount = 50},
+      {type = "fluid", name = "sp-carboxymethyldiphenylphosphine", amount = 40},
+    },
+    results = {
+      {type = "item", name = "sp-rhenium", amount = 3},
+    }
   },
   ------------------------------------------------------------------------------
   -- MARK: oil-processing
@@ -9155,6 +9196,7 @@ data:extend({
       {type = "item", name = "copper-cable", amount = 2},
       {type = "item", name = "sp-aluminum-sheet", amount = 1},
       {type = "item", name = "sp-polyvinyl-fluoride", amount = 1},
+      {type = "item", name = "sp-arsenic-iodide", amount = 1},
       {type = "item", name = "sp-germanium", amount = 2},
       {type = "item", name = "sp-mercury-cadmium-telluride", amount = 1},
     },
@@ -12949,17 +12991,18 @@ data:extend({
     category = "sp-manufacturing",
     enabled = false,
     allow_productivity = true,
-    energy_required = 25,
+    energy_required = 8,
     ingredients = {
-      {type = "item", name = "sp-optical-glass", amount = 10},
-      {type = "item", name = "sp-ethylene-vinyl-acetate", amount = 10},
-      {type = "item", name = "sp-polyvinyl-fluoride", amount = 10},
-      {type = "item", name = "copper-cable", amount = 1},
+      {type = "item", name = "sp-optical-glass", amount = 2},
+      {type = "item", name = "sp-ethylene-vinyl-acetate", amount = 2},
+      {type = "item", name = "sp-polyvinyl-fluoride", amount = 2},
+      {type = "item", name = "copper-cable", amount = 2},
+      {type = "item", name = "sp-arsenic-iodide", amount = 2},
       {type = "item", name = "sp-cadmium-telluride", amount = 1},
       {type = "item", name = "sp-copper-indium-gallium-selenide", amount = 1},
     },
     results = {
-      {type = "item", name = "sp-photovoltaic-cell", amount = 10}
+      {type = "item", name = "sp-photovoltaic-cell", amount = 2}
     }
   },
   {

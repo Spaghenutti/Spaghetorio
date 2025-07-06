@@ -283,6 +283,7 @@ Features:
   - Add back blunagium, grobgnum, rukite and yemnuth rockets
   - See metal and stars mod https://mods.factorio.com/mod/metal-and-stars https://youtu.be/8pGgnDISc78?si=H3ddFWEihf-NK_A1&t=912
   - Do recycling - lol
+  - Add intermediates made from neutrons only https://www.youtube.com/watch?v=LEyS7-OK57I
 
 Scripting:
   - Acrospheres (for version 0.4.0 or higher)

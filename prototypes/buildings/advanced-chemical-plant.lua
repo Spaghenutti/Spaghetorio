@@ -105,6 +105,7 @@ data:extend({
     crafting_categories = {
       "chemistry",
       "sp-advanced-chemistry",
+      "sp-ion-chromatography",
       "sp-enriching-raw-resource",
       "sp-enriching-crushed-resource"
     },
