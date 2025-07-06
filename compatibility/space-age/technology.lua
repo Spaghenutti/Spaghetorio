@@ -155,23 +155,6 @@ data.raw.technology["lightning-collector"].unit.ingredients = {
   {"utility-science-pack", 1}
 }
 
-data.raw.technology["asteroid-reprocessing"].prerequisites = {
-  "space-science-pack",
-}
-data.raw.technology["asteroid-reprocessing"].unit.ingredients = {
-  {"sp-automation-science-pack-2", 1},
-  {"sp-logistic-science-pack-2", 1},
-  {"sp-chemical-science-pack-2", 1},
-  {"sp-material-science-pack-2", 1},
-  {"production-science-pack", 1},
-  {"sp-geological-science-pack-2", 1},
-  {"sp-electronic-science-pack-2", 1},
-  {"sp-metallurgic-science-pack-2", 1},
-  {"sp-electromagnetic-science-pack-2", 1},
-  {"space-science-pack", 1},
-  {"utility-science-pack", 1}
-}
-
 data.raw.technology["advanced-asteroid-processing"].prerequisites = {
   "asteroid-reprocessing",
 }
@@ -734,7 +717,8 @@ data.raw.technology["asteroid-reprocessing"].prerequisites = {
   "sp-dysprosium-rich-asteroid",
   "sp-ruthenium-rich-asteroid",
   "sp-terbium-rich-asteroid",
-  "sp-ytterbium-rich-asteroid"
+  "sp-ytterbium-rich-asteroid",
+  "sp-chemical-science-pack-3"
 }
 data.raw.technology["asteroid-reprocessing"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},

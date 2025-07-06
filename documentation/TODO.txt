@@ -1,15 +1,45 @@
 
-TODO for 0.3.23
-  - Check all recipes that should be done in arc-furnace
-    - Osmium (Not added yet)
-    - Iridium
-    - Tungsten
-    - Rhenium (add rhenium powder)
-    - Hafnium
-    - Ruthenium 
-    + Rhodium
-
 TODO for 0.3.24
+  - Fix noble gases recipe chain
+    - krypton asteroid contains clathrate hydrate ice
+    - ice is melted and you get the noble gas... just like that
+    - maybe add intermediate step where ice is traped in some mineral
+    - asteroid minerals:
+      - Olivine	(Mg,Fe)₂SiO₄
+      - Pyroxenem (Mg,Fe,Ca)SiO₃
+      - Plagioclase Feldspar (Na,Ca)(Si,Al)₄O₈
+      - Troilite FeS
+      - Djerfisherite	K₆(Fe,Ni,Cu)₂₅S₂₆Cl
+      - Taenite	Fe-Ni alloy
+  - Move krypton asteroid close to edge of solar system since noble gases are frozen
+  - Dysprosium
+    - dysprosium chunk + ... -> dysprosium-oxide + dysprosium-nitrate + dysprosium-hydroxide + dysprosium-fluoride
+                                high quantity      medium quantity      low quantity           low quantity
+    - dysprosium-oxide + nitric-acid -> dysprosium-nitrate
+    - dysprosium-nitrate + D2EHPA -> dysprosium
+    - dysprosium-hydroxide + hydrogen-fluoride -> dysprosium-fluoride
+    - dysprosium-fluoride + calcite -> dysprosium
+    - D2EHPA = Bis(2-ethylhexyl)phosphat:
+      - phosphrus + oxygen -> phosphorus-pentoxide
+      - propylene + hydrogen -> n-butyraldehyde
+      - n-butyraldehyde + potassium-hydroxide-solution + -> 2-Ethylhex-2-enal
+      - 2-Ethylhex-2-enal + hydrogen -> 2-ethylhexanol
+      - phosphorus-pentoxide + 2-ethylhexanol -> D2EHPA
+  - ytterbium
+    - mineral Xenotime + ... -> ytterbium-chloride + ytterbium-fluoride
+    - ytterbium chunk + ... -> ytterbium-chloride + ytterbium-fluoride
+    - ytterbium-chloride + electrolyte -> ytterbium (electrolysis)
+    - ytterbium-fluoride + calcium + argon -> ytterbium
+  - terbium
+    - mineral Xenotime + ... -> terbium-oxide + terbium-sulfate
+    - magnesium-ore + ... -> terbium-sulfate + terbium-nitride
+    - terbium chunk + ... -> terbium-oxide + terbium-hydroxide
+    - terbium-hydroxide -> terbium-oxide (smelting)
+    - terbium-sulfate -> terbium-oxide (smelting)
+    - terbium-nitride + sulfuric-acid -> terbium-sulfate
+    - terbium-oxide + sodium-periodate-solution + argon -> terbium (electrolysis) 
+
+TODO for 0.3.25
   - Find uses for
     - ammonium-chloride-solution
     - phenol
@@ -21,17 +51,16 @@ TODO for 0.3.24
     - recipe chain
     - technology
 
-TODO for 0.3.25
+TODO for 0.3.26
   - Biolab has to be unlocked before automation science 3
   - Add multiple landing pads
   - Fix asteroid reprocessing
-  - Fix noble gases recipe chain
   - Get some noble gasses from methane ice
   - Use xenon for breeder reactor?
   - Fix leadstone / lead recipe chain
   - Add methane and co2 from atmosphere
 
-TODO for 0.3.26
+TODO for 0.3.27
   - Unlock legendary quality much later in tech tree
   - Update automation science 3
     - Add nuclear science as requirement
@@ -52,7 +81,7 @@ TODO for 0.3.26
     - thallium used in optics
     - used in rodent poison
 
-TODO for 0.3.27
+TODO for 0.3.28
   - Add 2-3 more rare metals to rare metals technology
   - Add all 3-4 rare metals from asteroids
   - Add more rare metals comming from lava

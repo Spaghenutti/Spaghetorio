@@ -1783,6 +1783,16 @@ data:extend({
   },
   {
     type = "item",
+    name = "sp-ruthenium-powder",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/ruthenium-powder.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "sp-metal-powder",
+    order = "[ruthenium-powder]",
+    stack_size = 100
+  },
+  {
+    type = "item",
     name = "sp-iridium-powder",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/iridium-powder.png",
     icon_size = 64,

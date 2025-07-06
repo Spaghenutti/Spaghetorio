@@ -3715,7 +3715,7 @@ data:extend({
     allow_productivity = true,
     energy_required = 8,
     ingredients = {
-      {type = "item", name = "sp-ruthenium-oxide", amount = 1},
+      {type = "item", name = "sp-ruthenium-powder", amount = 1},
     },
     results = {
       {type = "item", name = "sp-ruthenium", amount = 1}
@@ -11427,6 +11427,21 @@ data:extend({
       {type = "item", name = "sp-sodium", probability = 0.1, amount = 1},
       {type = "fluid", name = "sp-sulfur-trioxide", amount = 4}
     }
+  },
+  {
+    type = "recipe",
+    name = "sp-ruthenium-powder",  -- #ForRegEx# - recipe
+    category = "sp-chemical-staging",
+    energy_required = 15,
+    enabled = false,
+    allow_productivity = true,
+    ingredients = {
+      {type = "item", name = "sp-ruthenium-oxide", amount = 2},
+      {type = "fluid", name = "sp-hydrazine", amount = 5},
+    },
+    results = {
+      {type = "item", name = "sp-ruthenium-powder", amount = 1},
+    },
   },
   {
     type = "recipe",

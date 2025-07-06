@@ -1986,6 +1986,10 @@ data:extend({
       },
       {
         type = "unlock-recipe",
+        recipe = "sp-ruthenium-powder"
+      },
+      {
+        type = "unlock-recipe",
         recipe = "sp-ruthenium-oxide"
       },
       {
@@ -2017,7 +2021,8 @@ data:extend({
       "sp-ruthenium-rich-asteroid",
       "sp-methyl-sulfate",
       "sp-cellulose",
-      "sp-sodium-periodate"
+      "sp-sodium-periodate",
+      "sp-ethylenediaminetetraacetic-acid"
     },
     unit =
     {
@@ -9811,7 +9816,8 @@ data:extend({
       },
     },
     prerequisites = {
-      "sp-automation-science-pack-3"
+      "sp-automation-science-pack-3",
+      "sp-ruthenium-processing"
     },
     unit = {
       count = 1000,
