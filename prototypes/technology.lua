@@ -2043,6 +2043,171 @@ data:extend({
   },
   {
     type = "technology",
+    name = "sp-iridium-processing",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghetorio__/graphics/hr-icons/iridium.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-iridium"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-iridium-powder"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-hexachloroiridium-acid-solution"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-sodium-iridium-oxide"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-sodium-iridium-oxide-from-platinum-group-metal-matte"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-iridium-concentrate"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-iridium-froth"
+      },
+    },
+    prerequisites = {
+      "sp-iridium-rich-asteroid",
+      "sp-carboxymethyllysine",
+      "sp-cellulose",
+    },
+    unit =
+    {
+      count = 1000,
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-metallurgic-science-pack-2", 1},
+        {"sp-electromagnetic-science-pack-2", 1},
+        {"production-science-pack", 1},
+        {"utility-science-pack", 1},
+        {"cryogenic-science-pack", 1},
+        {"agricultural-science-pack", 1},
+        {"sp-computer-science-pack-2", 1},
+        {"space-science-pack", 1}
+      },
+      time = 30
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-osmium-processing",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghetorio__/graphics/hr-icons/osmium.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-osmium"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-osmium-powder"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-osmium-oxide"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-osmium-oxide-from-platinum-group-metal-matte"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-osmium-concentrate"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-osmium-froth"
+      },
+    },
+    prerequisites = {
+      "sp-osmium-rich-asteroid",
+      "sp-carboxymethyldiphenylphosphine",
+      "sp-cellulose",
+    },
+    unit =
+    {
+      count = 1200,
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-metallurgic-science-pack-2", 1},
+        {"sp-electromagnetic-science-pack-2", 1},
+        {"production-science-pack", 1},
+        {"utility-science-pack", 1},
+        {"cryogenic-science-pack", 1},
+        {"agricultural-science-pack", 1},
+        {"sp-computer-science-pack-2", 1},
+        {"space-science-pack", 1}
+      },
+      time = 30
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-osmium-iridium-separations",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/hr-icons/osmium.png", 256, nil,
+                                        "__Spaghetorio__/graphics/hr-icons/iridium.png", 256, nil),
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-osmium-oxide-from-iridium-concentrate"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-sodium-iridium-oxide-from-osmium-concentrate"
+      },
+    },
+    prerequisites = {
+      "sp-iridium-processing",
+      "sp-osmium-processing"
+    },
+    unit =
+    {
+      count = 250,
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-metallurgic-science-pack-2", 1},
+        {"sp-electromagnetic-science-pack-2", 1},
+        {"production-science-pack", 1},
+        {"utility-science-pack", 1},
+        {"cryogenic-science-pack", 1},
+        {"agricultural-science-pack", 1},
+        {"sp-computer-science-pack-2", 1},
+        {"space-science-pack", 1}
+      },
+      time = 30
+    },
+  },
+  {
+    type = "technology",
     name = "sp-rhodium-alloys",  -- #ForRegEx# - technology
     icon_size = 256,
     icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/hr-icons/nickel-rhodium.png", 256, nil,

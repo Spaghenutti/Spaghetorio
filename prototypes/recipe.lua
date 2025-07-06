@@ -2743,6 +2743,34 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "sp-iridium-concentrate",  -- #ForRegEx# - recipe
+    category = "metallurgy",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 8,
+    ingredients = {
+      {type = "fluid", name = "sp-iridium-froth", amount = 4},
+    },
+    results = {
+      {type = "item", name = "sp-iridium-concentrate", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-osmium-concentrate",  -- #ForRegEx# - recipe
+    category = "metallurgy",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 8,
+    ingredients = {
+      {type = "fluid", name = "sp-osmium-froth", amount = 5},
+    },
+    results = {
+      {type = "item", name = "sp-osmium-concentrate", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
     name = "sp-molten-aluminum",  -- #ForRegEx# - recipe
     category = "metallurgy",
     enabled = false,
@@ -3781,6 +3809,34 @@ data:extend({
       {type = "item", name = "sp-rhodium", amount = 2}
     },
   },
+  {
+    type = "recipe",
+    name = "sp-iridium",  -- #ForRegEx# - recipe
+    category = "sp-high-temperature-smelting",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 20,
+    ingredients = {
+      {type = "item", name = "sp-iridium-powder", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-iridium", amount = 1}
+    },
+  },
+  {
+    type = "recipe",
+    name = "sp-osmium",  -- #ForRegEx# - recipe
+    category = "sp-high-temperature-smelting",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 20,
+    ingredients = {
+      {type = "item", name = "sp-osmium-powder", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-osmium", amount = 1}
+    },
+  },
   ------------------------------------------------------------------------------
   -- MARK: sp-kr-fluid-filtration
   ------------------------------------------------------------------------------
@@ -4633,6 +4689,46 @@ data:extend({
       {type = "fluid", name = "sp-ruthenium-froth", amount = 4},
       {type = "item", name = "iron-ore", amount = 1},
       {type = "item", name = "sp-titanium-ore", probability = 0.1, amount = 1},
+    },
+  },
+  {
+    type = "recipe",
+    name = "sp-iridium-froth",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/icons/iridium-froth.png",
+    category = "sp-crushing-washing",
+    subgroup = "sp-froth",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 30,
+    ingredients = {
+      {type = "item", name = "sp-iridium-asteroid-chunk", amount = 1},
+      {type = "fluid", name = "sp-aqua-regia", amount = 20},
+      {type = "fluid", name = "sp-hydrogen", amount = 15},
+    },
+    results = {
+      {type = "fluid", name = "sp-iridium-froth", amount = 4},
+      {type = "item", name = "iron-ore", amount = 1},
+      {type = "item", name = "sp-cobalt-ore", probability = 0.1, amount = 1},
+    },
+  },
+  {
+    type = "recipe",
+    name = "sp-osmium-froth",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/icons/osmium-froth.png",
+    category = "sp-crushing-washing",
+    subgroup = "sp-froth",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 40,
+    ingredients = {
+      {type = "item", name = "sp-osmium-asteroid-chunk", amount = 1},
+      {type = "fluid", name = "sp-aqua-regia", amount = 20},
+      {type = "fluid", name = "sp-nitrogen", amount = 12},
+    },
+    results = {
+      {type = "fluid", name = "sp-osmium-froth", amount = 5},
+      {type = "item", name = "iron-ore", amount = 1},
+      {type = "item", name = "tungsten-ore", probability = 0.2, amount = 1},
     },
   },
   ------------------------------------------------------------------------------
@@ -6456,6 +6552,21 @@ data:extend({
       {type = "fluid", name = "sp-sodium-hypochlorite-solution", amount = 5},
     }
   },
+  {
+    type = "recipe",
+    name = "sp-hexachloroiridium-acid-solution",  -- #ForRegEx# - recipe
+    category = "sp-advanced-chemistry",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 8,
+    ingredients = {
+      {type = "item", name = "sp-sodium-iridium-oxide", amount = 1},
+      {type = "fluid", name = "sp-hydrogen-chloride", amount = 10},
+    },
+    results = {
+      {type = "fluid", name = "sp-hexachloroiridium-acid-solution", amount = 5},
+    }
+  },
   ------------------------------------------------------------------------------
   -- MARK: chemical-staging
   ------------------------------------------------------------------------------
@@ -7400,6 +7511,38 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "sp-sodium-iridium-oxide",  -- #ForRegEx# - recipe
+    category = "sp-ion-chromatography",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 45,
+    ingredients = {
+      {type = "item", name = "sp-iridium-concentrate", amount = 3},
+      {type = "fluid", name = "sp-cellulose", amount = 8},
+      {type = "fluid", name = "sp-carboxymethyllysine", amount = 10},
+    },
+    results = {
+      {type = "item", name = "sp-sodium-iridium-oxide", amount = 2},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-osmium-oxide",  -- #ForRegEx# - recipe
+    category = "sp-ion-chromatography",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 30,
+    ingredients = {
+      {type = "item", name = "sp-osmium-concentrate", amount = 2},
+      {type = "fluid", name = "sp-cellulose", amount = 8},
+      {type = "fluid", name = "sp-carboxymethyldiphenylphosphine", amount = 10},
+    },
+    results = {
+      {type = "item", name = "sp-osmium-oxide", amount = 1},
+    }
+  },
+  {
+    type = "recipe",
     name = "sp-rhenium-ion-chromatography",  -- #ForRegEx# - recipe
     icons = util.icon.overlay_two_small_icons("__Spaghetorio__/graphics/icons/rhenium-oxide.png", 64,
                                               "__Spaghetorio__/graphics/icons/tetrapropylammonium.png", 64,
@@ -7454,6 +7597,78 @@ data:extend({
     },
     results = {
       {type = "fluid", name = "sp-ruthenium-nitrosyl-solution", amount = 12},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-sodium-iridium-oxide-from-platinum-group-metal-matte",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/sodium-iridium-oxide.png", 64,
+                                         "__Spaghetorio__/graphics/icons/platinum-group-metal-matte.png", 64),
+    category = "sp-ion-chromatography",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 90,
+    ingredients = {
+      {type = "item", name = "sp-platinum-group-metal-matte", amount = 3},
+      {type = "fluid", name = "sp-cellulose", amount = 12},
+      {type = "fluid", name = "sp-carboxymethyllysine", amount = 16},
+    },
+    results = {
+      {type = "item", name = "sp-sodium-iridium-oxide", amount = 1},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-osmium-oxide-from-platinum-group-metal-matte",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/osmium-oxide.png", 64,
+                                         "__Spaghetorio__/graphics/icons/platinum-group-metal-matte.png", 64),
+    category = "sp-ion-chromatography",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 75,
+    ingredients = {
+      {type = "item", name = "sp-platinum-group-metal-matte", amount = 4},
+      {type = "fluid", name = "sp-cellulose", amount = 15},
+      {type = "fluid", name = "sp-carboxymethyldiphenylphosphine", amount = 30},
+    },
+    results = {
+      {type = "item", name = "sp-osmium-oxide", amount = 1},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-sodium-iridium-oxide-from-osmium-concentrate",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/sodium-iridium-oxide.png", 64,
+                                         "__Spaghetorio__/graphics/icons/osmium-concentrate.png", 64),
+    category = "sp-ion-chromatography",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 90,
+    ingredients = {
+      {type = "item", name = "sp-osmium-concentrate", amount = 3},
+      {type = "fluid", name = "sp-cellulose", amount = 15},
+      {type = "fluid", name = "sp-carboxymethyllysine", amount = 20},
+    },
+    results = {
+      {type = "item", name = "sp-sodium-iridium-oxide", amount = 2},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-osmium-oxide-from-iridium-concentrate",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/osmium-oxide.png", 64,
+                                         "__Spaghetorio__/graphics/icons/iridium-concentrate.png", 64),
+    category = "sp-ion-chromatography",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 60,
+    ingredients = {
+      {type = "item", name = "sp-iridium-concentrate", amount = 3},
+      {type = "fluid", name = "sp-cellulose", amount = 12},
+      {type = "fluid", name = "sp-carboxymethyldiphenylphosphine", amount = 24},
+    },
+    results = {
+      {type = "item", name = "sp-osmium-oxide", amount = 1},
     }
   },
   ------------------------------------------------------------------------------
@@ -11211,6 +11426,36 @@ data:extend({
     results = {
       {type = "item", name = "sp-sodium", probability = 0.1, amount = 1},
       {type = "fluid", name = "sp-sulfur-trioxide", amount = 4}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-osmium-powder",  -- #ForRegEx# - recipe
+    category = "sp-kr-electrolysis",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 15,
+    ingredients = {
+      {type = "item", name = "sp-osmium-oxide", amount = 1},
+      {type = "fluid", name = "sulfuric-acid", amount = 5},
+    },
+    results = {
+      {type = "item", name = "sp-osmium-powder", amount = 1},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-iridium-powder",  -- #ForRegEx# - recipe
+    category = "sp-kr-electrolysis",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 20,
+    ingredients = {
+      {type = "fluid", name = "sp-hexachloroiridium-acid-solution", amount = 4},
+      {type = "fluid", name = "sulfuric-acid", amount = 6},
+    },
+    results = {
+      {type = "item", name = "sp-iridium-powder", amount = 1},
     }
   },
   ------------------------------------------------------------------------------

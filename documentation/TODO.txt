@@ -22,6 +22,7 @@ TODO for 0.3.24
     - technology
 
 TODO for 0.3.25
+  - Biolab has to be unlocked before automation science 3
   - Add multiple landing pads
   - Fix asteroid reprocessing
   - Fix noble gases recipe chain

@@ -1781,6 +1781,26 @@ data:extend({
     order = "[platinum-powder]",
     stack_size = 100
   },
+  {
+    type = "item",
+    name = "sp-iridium-powder",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/iridium-powder.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "sp-metal-powder",
+    order = "[iridium-powder]",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "sp-osmium-powder",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/osmium-powder.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "sp-metal-powder",
+    order = "[osmium-powder]",
+    stack_size = 100
+  },
   ------------------------------------------------------------------------------
   -- MARK: processed-metal
   ------------------------------------------------------------------------------

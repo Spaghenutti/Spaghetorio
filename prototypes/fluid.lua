@@ -600,6 +600,18 @@ data:extend({
     subgroup = "sp-solution",
     order = "[ruthenium-nitrosyl-solution]",
   },
+  {
+    type = "fluid",
+    name = "sp-hexachloroiridium-acid-solution",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    base_color = {r=0.5, g=0.6, b=0.0},
+    flow_color = {r=0.5, g=0.6, b=0.0},
+    icon = "__Spaghetorio__/graphics/icons/hexachloroiridium-acid-solution.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "sp-solution",
+    order = "[hexachloroiridium-acid-solution]",
+  },
   ------------------------------------------------------------------------------
   -- MARK: dirty-fluid
   ------------------------------------------------------------------------------

@@ -3,12 +3,15 @@ Version: 0.3.23
 Date: 2025-07-11
   Features:
     - Added ruthenium recipe chain
+    - Added iridium recipe chain
+    - Added osmium recipe chain
     - Added late game ion chromatography recipes for rhenium and palladium
   Changes:
     - Reduced output of rhenium recipe
     - Updated rhodium recipe chain
     - Photodiode and photovoltaic cell now require arsenic iodide
   Bugfixes:
+    - Fixed locale of recently added items, fluids, recipes and technologies
     - Fixed platinum recipe chain
     - Fixed that some recipes could not be crafted in steel and electric furnace
     - Potassium cyanide can now be crafted on chemical plant
