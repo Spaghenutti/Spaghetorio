@@ -1242,11 +1242,15 @@ data:extend({
     {
       {
         type = "unlock-recipe",
-        recipe = "sp-ammonium-perrhenate-solution"
+        recipe = "sp-rhenium"
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-rhenium"
+        recipe = "sp-rhenium-oxide"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-ammonium-perrhenate-solution"
       },
       {
         type = "unlock-recipe",
@@ -1965,6 +1969,74 @@ data:extend({
         {"cryogenic-science-pack", 1},
         {"agricultural-science-pack", 1},
         {"sp-computer-science-pack-2", 1}
+      },
+      time = 30
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-ruthenium-processing",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghetorio__/graphics/hr-icons/ruthenium.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-ruthenium"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-ruthenium-oxide"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-ruthenium-oxide-from-nitrosyl-solution"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-ruthenium-solutions"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-ruthenium-nitrosyl-solution-from-platinum-group-metal-matte"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-ruthenium-concentrate"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-ruthenium-froth"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-sodium-hypochlorite-solution"
+      },
+    },
+    prerequisites = {
+      "sp-ruthenium-rich-asteroid",
+      "sp-methyl-sulfate",
+      "sp-cellulose",
+      "sp-sodium-periodate"
+    },
+    unit =
+    {
+      count = 600,
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-metallurgic-science-pack-2", 1},
+        {"sp-electromagnetic-science-pack-2", 1},
+        {"production-science-pack", 1},
+        {"utility-science-pack", 1},
+        {"cryogenic-science-pack", 1},
+        {"agricultural-science-pack", 1},
+        {"sp-computer-science-pack-2", 1},
+        {"space-science-pack", 1}
       },
       time = 30
     },
@@ -9957,6 +10029,38 @@ data:extend({
   },
   {
     type = "technology",
+    name = "sp-sodium-periodate",  -- #ForRegEx# - technology
+    icon = "__Spaghetorio__/graphics/hr-icons/sodium-periodate.png",
+    icon_size = 256,
+    icon_mipmaps = 4,
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-sodium-periodate",
+      },
+    },
+    prerequisites = {
+      "sp-kr-advanced-chemistry"
+    },
+    unit = {
+      count = 250,
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-metallurgic-science-pack-2", 1},
+        {"electromagnetic-science-pack", 1},
+        {"agricultural-science-pack", 1},
+        {"production-science-pack", 1},
+      },
+      time = 45,
+    },
+  },
+  {
+    type = "technology",
     name = "sp-methyl-sulfate",  -- #ForRegEx# - technology
     icon = "__Spaghetorio__/graphics/hr-icons/methyl-sulfate.png",
     icon_size = 256,
@@ -10530,19 +10634,23 @@ data:extend({
   },
   {
     type = "technology",
-    name = "sp-ion-chromatography-for-palladium-and-rhenium",  -- #ForRegEx# - technology
-    icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/hr-icons/palladium.png", 256, nil,
-                                        "__Spaghetorio__/graphics/hr-icons/rhenium.png", 256, nil),
+    name = "sp-ion-chromatography-for-rhenium-and-palladium",  -- #ForRegEx# - technology
+    icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/hr-icons/rhenium.png", 256, nil,
+                                        "__Spaghetorio__/graphics/hr-icons/palladium.png", 256, nil),
     icon_size = 256,
     icon_mipmaps = 4,
     effects = {
       {
         type = "unlock-recipe",
-        recipe = "sp-palladium-ion-chromatography",
+        recipe = "sp-rhenium-ion-chromatography",
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-rhenium-ion-chromatography",
+        recipe = "sp-palladium-from-tetraammidepalladium-dichloride",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-tetraammidepalladium-dichloride",
       },
     },
     prerequisites = {

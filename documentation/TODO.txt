@@ -1,150 +1,36 @@
 
-TODO for 0.3.16
-  + Fix molten zinc in a foundry creates more zinc sulfate than it consumes
-  + Fix recipes for making molten copper and iron out of crushed versions of those ores actually require enriched ores. (They also have molten from enriched versions).
-  + Fix silver solder recipe results in normal solder
-  + Adjust order of science pack icons in lab
-  + Changelog visibility in game: https://mods.factorio.com/mod/Spaghetorio/discussion/681e53fffcfe2cc9f6594733
+TODO for 0.3.23
+  - Check all recipes that should be done in arc-furnace
+    - Osmium (Not added yet)
+    - Iridium
+    - Tungsten
+    - Rhenium (add rhenium powder)
+    - Hafnium
+    - Ruthenium 
+    + Rhodium
 
-TODO for 0.3.17
-  + Add casting recipes
-    + potassium
-  + Cerium technology
-    + Crushing and Enriching
-      + stibnite
-      + holmium -> to get more cerium     
-  + Changed some holmium related recipes
-  + Fix AAI storhouse science ingredients
-
-TODO for 0.3.18
-  + Increase speed and module slots of big crusher
-  + Reduce animation speed of big crusher
-  + Add teflon
-    + water + lots of tetrafluoroethylene + perfluorooctanoic-acid = teflon
-    + chlorodifluoromethane = tetrafluoroethylene + clorine
-    + chloroform + hydrogen fluoride = chlorodifluoromethane + hydrogen chloride
-    + ethanol + 3 chlorine + calcite = chloroform + bleach
-    + Heptadecafluoro-1-iodooctane + CO2 + water = perfluorooctanoic-acid + iodine
-    + Perfluorooctane + iodine = Heptadecafluoro-1-iodooctane
-    + Octane + hydrogen fluoride = Perfluorooctane + Hydrogen
-    + 4 ethylene + H = octane
-  + Reach space :D
-  + Make rocket parts in manufacturer
-  + To launch rocket use rocket parts + fuel
-  + Finish reorganizing fluid icons
-  + Add ice subgroup
-  + Add cargo pod recipe
-  + Add cargo pod to rocket recipe
-    + recover cargo pod from landed cargo pod
-  + Fix recipes for crushing existing asteroids
-    + metallic
-      + iron
-      + cobalt
-        + cobalt oxide = cobalt billet + cobalt oxide
-      + titanium
-        + titanium chloride + hydrogen = titanium sponge + hydrogen chloride
-      + rhodium
-        + add recipe chain
-    + carbonic
-      + carbon
-      + Methane ice
-        + methane   
-    + oxide
-      + Ice
-        + water
-      + helium
-      + nitrogen
-
-TODO for 0.3.19
-  + Add asteroids
-    + dysprosium + (metallic graphics)
-    + iridium + (metallic graphics)
-    + krypton + (oxide graphics)
-    + osmium + (carbonic graphics)
-    + rhodium + (prometheum graphics)
-    + ruthenium + (prometheum graphics)
-    + terbium + (oxide graphics)
-    + ytterbium + (carbonic graphics)
-  + Add asteroid chunks
-  + Add asteroid
-    + Add image paths for generate_zip.py
-    + Fix factorio simulations
-  + Add asteroid connections
-  + Add technologies for unlocking
-  + Add bad fuel recipe for space travel
-    + hydrazine recipe chain
-    + cyanogen recipe chain
-  + Add recipe for space science
-
-TODO for 0.3.20
-  - Add multiple landing pads
-  + Update all asteroid spawn probabilites for connections
-  - Fix asteroid icons for small, medium, big and huge sizes
-  - Add recipe chains for
-    - rhodium
-      - recipe chain
-        - get it from mineral water
-        - asteroid chunk
-      - technology
-
-TODO for 0.3.21
-  - Add recipe chains and uses for
-    - ammonium-bisulfate-solution
-    - sodium-hypochlorite-solution
+TODO for 0.3.24
   - Find uses for
     - ammonium-chloride-solution
     - phenol
     - potassium-bisulfate
     - sodium-bisulfate
-  - Add recipe chains for
-    - dysprosium
-      - recipe chain
-      - technology
-    - ruthenium
-      - recipe chain
-      - technology
-    - terbium
-      - recipe chain
-      - technology
-    - ytterbium
-      - recipe chain
-      - technology
+  - Add recipe chains and uses for
+    - sodium-hypochlorite-solution
+  - krypton
+    - recipe chain
+    - technology
 
-TODO for 0.3.22
-  - Add recipe chains for
-    - iridium
-      - recipe chain
-      - technology
-    - krypton
-      - recipe chain
-      - technology
-    - osmium
-      - recipe chain
-      - technology
-  - Check all recipes that should be done in arc-furnace
-    - Osmium (Not added yet)
-    - Iridium (Required before arcfurnace)
-    - Tungsten
-    - Rhenium
-    - Hafnium
-    - Ruthenium (Not added yet)
-    - Rhodium (Not added yet)
-
-TODO for 0.3.23
+TODO for 0.3.25
+  - Add multiple landing pads
   - Fix asteroid reprocessing
   - Fix noble gases recipe chain
   - Get some noble gasses from methane ice
   - Use xenon for breeder reactor?
   - Fix leadstone / lead recipe chain
   - Add methane and co2 from atmosphere
-  - Ion Chromatography
-    - Add all elements as items
-    - Add all chemicals
-      - itemes
-      - recipes
-      - technologies
 
-TODO for 0.3.24
+TODO for 0.3.26
   - Unlock legendary quality much later in tech tree
   - Update automation science 3
     - Add nuclear science as requirement
@@ -165,7 +51,7 @@ TODO for 0.3.24
     - thallium used in optics
     - used in rodent poison
 
-TODO for 0.3.25
+TODO for 0.3.27
   - Add 2-3 more rare metals to rare metals technology
   - Add all 3-4 rare metals from asteroids
   - Add more rare metals comming from lava

@@ -1190,6 +1190,16 @@ data:extend({
   },
   {
     type = "item",
+    name = "sp-rhenium-oxide",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/rhenium-oxide.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "sp-processed-resource",
+    order = "[rhenium-oxide]",
+    stack_size = 50
+  },
+  {
+    type = "item",
     name = "sp-lithium-oxide",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/lithium-oxide.png",
     icon_size = 64,

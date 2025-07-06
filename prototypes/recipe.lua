@@ -2489,7 +2489,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-rhenium",  -- #ForRegEx# - recipe
+    name = "sp-rhenium-oxide",  -- #ForRegEx# - recipe
     category = "sp-smelting-with-fluid",
     enabled = false,
     allow_productivity = true,
@@ -2499,7 +2499,7 @@ data:extend({
       {type = "fluid", name = "sp-benzyltrimethylammonium-chloride", amount = 2},
     },
     results = {
-      {type = "item", name = "sp-rhenium", amount = 1},
+      {type = "item", name = "sp-rhenium-oxide", amount = 1},
     }
   },
   {
@@ -2725,6 +2725,20 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-rhodium-concentrate", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-ruthenium-concentrate",  -- #ForRegEx# - recipe
+    category = "metallurgy",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 5,
+    ingredients = {
+      {type = "fluid", name = "sp-ruthenium-froth", amount = 4},
+    },
+    results = {
+      {type = "item", name = "sp-ruthenium-concentrate", amount = 1}
     }
   },
   {
@@ -3653,6 +3667,34 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "sp-rhenium",  -- #ForRegEx# - recipe
+    category = "sp-high-temperature-smelting",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 20,
+    ingredients = {
+      {type = "item", name = "sp-rhenium-oxide", amount = 3},
+    },
+    results = {
+      {type = "item", name = "sp-rhenium", amount = 2}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-ruthenium",  -- #ForRegEx# - recipe
+    category = "sp-high-temperature-smelting",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 8,
+    ingredients = {
+      {type = "item", name = "sp-ruthenium-oxide", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-ruthenium", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
     name = "sp-nickel-rhenium",  -- #ForRegEx# - recipe
     category = "sp-high-temperature-smelting",
     enabled = false,
@@ -4565,12 +4607,32 @@ data:extend({
     ingredients = {
       {type = "item", name = "sp-rhodium-asteroid-chunk", amount = 1},
       {type = "fluid", name = "sp-aqua-regia", amount = 25},
-      {type = "fluid", name = "sp-nitric-acid", amount = 5},
+      {type = "fluid", name = "sp-nitrogen", amount = 5},
     },
     results = {
       {type = "fluid", name = "sp-rhodium-froth", amount = 5},
       {type = "item", name = "iron-ore", amount = 1},
       {type = "item", name = "sp-cobalt-ore", probability = 0.2, amount = 1},
+    },
+  },
+  {
+    type = "recipe",
+    name = "sp-ruthenium-froth",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/icons/ruthenium-froth.png",
+    category = "sp-crushing-washing",
+    subgroup = "sp-froth",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 16,
+    ingredients = {
+      {type = "item", name = "sp-ruthenium-asteroid-chunk", amount = 1},
+      {type = "fluid", name = "sp-aqua-regia", amount = 20},
+      {type = "fluid", name = "sp-hydrogen", amount = 5},
+    },
+    results = {
+      {type = "fluid", name = "sp-ruthenium-froth", amount = 4},
+      {type = "item", name = "iron-ore", amount = 1},
+      {type = "item", name = "sp-titanium-ore", probability = 0.1, amount = 1},
     },
   },
   ------------------------------------------------------------------------------
@@ -6344,6 +6406,56 @@ data:extend({
       {type = "item", name = "sp-platinum-powder", amount = 2},
     }
   },
+  {
+    type = "recipe",
+    name = "sp-palladium-from-tetraammidepalladium-dichloride",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/palladium.png", 64,
+                                         "__Spaghetorio__/graphics/icons/tetraammidepalladium-dichloride.png", 64),
+    category = "sp-advanced-chemistry",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 20,
+    ingredients = {
+      {type = "item", name = "sp-ammonium-hexachloroplatinate", amount = 4},
+      {type = "fluid", name = "sp-nitrogen", amount = 25},
+    },
+    results = {
+      {type = "item", name = "sp-palladium", amount = 3},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-sodium-periodate",  -- #ForRegEx# - recipe
+    category = "sp-advanced-chemistry",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 30,
+    ingredients = {
+      {type = "item", name = "sp-sodium", amount = 1},
+      {type = "item", name = "sp-iodine", amount = 1},
+      {type = "fluid", name = "sp-nitric-acid", amount = 6},
+    },
+    results = {
+      {type = "fluid", name = "sp-sodium-periodate", amount = 5},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-sodium-hypochlorite-solution",  -- #ForRegEx# - recipe
+    category = "sp-advanced-chemistry",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 20,
+    ingredients = {
+      {type = "item", name = "sp-salt", amount = 1},
+      {type = "item", name = "ice", amount = 5},
+      {type = "fluid", name = "sp-chlorine", amount = 5},
+      {type = "fluid", name = "sp-sodium-hydroxide", amount = 5},
+    },
+    results = {
+      {type = "fluid", name = "sp-sodium-hypochlorite-solution", amount = 5},
+    }
+  },
   ------------------------------------------------------------------------------
   -- MARK: chemical-staging
   ------------------------------------------------------------------------------
@@ -7182,6 +7294,38 @@ data:extend({
       {type = "fluid", name = "sp-bromine-trifluoride", amount = 5},
     },
   },
+  {
+    type = "recipe",
+    name = "sp-ruthenium-oxide",  -- #ForRegEx# - recipe
+    category = "sp-chemical-staging",
+    energy_required = 15,
+    enabled = false,
+    allow_productivity = true,
+    ingredients = {
+      {type = "fluid", name = "sp-ruthenium-amine-solution", amount = 5},
+      {type = "fluid", name = "sp-sodium-hypochlorite-solution", amount = 5},
+    },
+    results = {
+      {type = "item", name = "sp-ruthenium-oxide", amount = 1},
+    },
+  },
+  {
+    type = "recipe",
+    name = "sp-ruthenium-oxide-from-nitrosyl-solution",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/ruthenium-oxide.png", 64,
+                                         "__Spaghetorio__/graphics/icons/ruthenium-nitrosyl-solution.png", 64),
+    category = "sp-chemical-staging",
+    energy_required = 20,
+    enabled = false,
+    allow_productivity = true,
+    ingredients = {
+      {type = "fluid", name = "sp-ruthenium-nitrosyl-solution", amount = 8},
+      {type = "fluid", name = "sp-sodium-periodate", amount = 5},
+    },
+    results = {
+      {type = "item", name = "sp-ruthenium-oxide", amount = 1},
+    },
+  },
   ------------------------------------------------------------------------------
   -- MARK: ion-chromatography
   ------------------------------------------------------------------------------
@@ -7240,10 +7384,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-palladium-ion-chromatography",  -- #ForRegEx# - recipe
-    icons = util.icon.overlay_two_small_icons("__Spaghetorio__/graphics/icons/palladium.png", 64,
-                                              "__Spaghetorio__/graphics/icons/tetrapropylammonium.png", 64,
-                                              "__Spaghetorio__/graphics/icons/carboxymethyllysine.png", 64),
+    name = "sp-tetraammidepalladium-dichloride",  -- #ForRegEx# - recipe
     category = "sp-ion-chromatography",
     enabled = false,
     allow_productivity = true,
@@ -7254,13 +7395,13 @@ data:extend({
       {type = "fluid", name = "sp-carboxymethyllysine", amount = 25},
     },
     results = {
-      {type = "item", name = "sp-palladium", amount = 2},
+      {type = "item", name = "sp-tetraammidepalladium-dichloride", amount = 2},
     }
   },
   {
     type = "recipe",
     name = "sp-rhenium-ion-chromatography",  -- #ForRegEx# - recipe
-    icons = util.icon.overlay_two_small_icons("__Spaghetorio__/graphics/icons/rhenium.png", 64,
+    icons = util.icon.overlay_two_small_icons("__Spaghetorio__/graphics/icons/rhenium-oxide.png", 64,
                                               "__Spaghetorio__/graphics/icons/tetrapropylammonium.png", 64,
                                               "__Spaghetorio__/graphics/icons/carboxymethyldiphenylphosphine.png", 64),
     category = "sp-ion-chromatography",
@@ -7273,7 +7414,46 @@ data:extend({
       {type = "fluid", name = "sp-carboxymethyldiphenylphosphine", amount = 40},
     },
     results = {
-      {type = "item", name = "sp-rhenium", amount = 3},
+      {type = "item", name = "sp-rhenium-oxide", amount = 3},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-ruthenium-solutions",  -- #ForRegEx# - recipe
+    icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/icons/ruthenium-amine-solution.png", 64, nil,
+                                        "__Spaghetorio__/graphics/icons/ruthenium-nitrosyl-solution.png", 64, nil),
+    category = "sp-ion-chromatography",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 40,
+    ingredients = {
+      {type = "item", name = "sp-ruthenium-concentrate", amount = 2},
+      {type = "fluid", name = "sp-cellulose", amount = 15},
+      {type = "fluid", name = "sp-ethylenediaminetetraacetic-acid", amount = 12},
+      {type = "fluid", name = "water", amount = 40},
+    },
+    results = {
+      {type = "fluid", name = "sp-ruthenium-amine-solution", amount = 45},
+      {type = "fluid", name = "sp-ruthenium-nitrosyl-solution", amount = 30},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-ruthenium-nitrosyl-solution-from-platinum-group-metal-matte",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/ruthenium-nitrosyl-solution.png", 64,
+                                         "__Spaghetorio__/graphics/icons/platinum-group-metal-matte.png", 64),
+    category = "sp-ion-chromatography",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 45,
+    ingredients = {
+      {type = "item", name = "sp-platinum-group-metal-matte", amount = 1},
+      {type = "fluid", name = "sp-cellulose", amount = 12},
+      {type = "fluid", name = "sp-ethylenediaminetetraacetic-acid", amount = 8},
+      {type = "fluid", name = "water", amount = 80},
+    },
+    results = {
+      {type = "fluid", name = "sp-ruthenium-nitrosyl-solution", amount = 12},
     }
   },
   ------------------------------------------------------------------------------

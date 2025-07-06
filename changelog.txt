@@ -2,6 +2,7 @@
 Version: 0.3.23
 Date: 2025-07-11
   Features:
+    - Added ruthenium recipe chain
     - Added late game ion chromatography recipes for rhenium and palladium
   Changes:
     - Reduced output of rhenium recipe
