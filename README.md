@@ -23,19 +23,19 @@ Your factory will never be the same... because it’s going to need therapy. Enj
 
 - 25 new resources like **chromite**, **iodine-brine**, **core-fragment**, **ultramafic lava** and **blunagium**
 ![](https://raw.githubusercontent.com/Spaghenutti/Spaghetorio/refs/heads/main/images/resource.png)
-- over 650 new items like **molybdenum**, **inconel**, **ceramics**, **gear box**, **integrated circuit**, **spark-plug** and of course **flux capacitor**
+- over 750 new items like **molybdenum**, **inconel**, **ceramics**, **gear box**, **integrated circuit**, **spark-plug** and of course **flux capacitor**
 ![](https://raw.githubusercontent.com/Spaghenutti/Spaghetorio/refs/heads/main/images/metals.png)
 ![](https://raw.githubusercontent.com/Spaghenutti/Spaghetorio/refs/heads/main/images/alloys.png)
 ![](https://raw.githubusercontent.com/Spaghenutti/Spaghetorio/refs/heads/main/images/intermediates.png)
 ![](https://raw.githubusercontent.com/Spaghenutti/Spaghetorio/refs/heads/main/images/alien.png)
-- over 100 new fluids like **aqueous niobium**, **helium 3**, **glycerin** and **chronomatter**
+- over 180 new fluids like **aqueous niobium**, **helium 3**, **glycerin** and **chronomatter**
 ![](https://raw.githubusercontent.com/Spaghenutti/Spaghetorio/refs/heads/main/images/fluids.png)
 - over 40 new buildings like **alloy forge**, **induction hardening facility** and **electrolysis plant**
 ![](https://raw.githubusercontent.com/Spaghenutti/Spaghetorio/refs/heads/main/images/buildings.png)
 - 30 new science packs                                    
 ![](https://raw.githubusercontent.com/Spaghenutti/Spaghetorio/refs/heads/main/images/science-packs-tier-3.png)
-- over 900 new recipes including different production chains for processing resources and intermediate products
-- over 300 new techonolgies
+- over 1000 new recipes including different production chains for processing resources and intermediate products
+- over 350 new techonolgies
 
 ## Compatibility
 
