@@ -819,6 +819,45 @@ data:extend({
   },
   {
     type = "fluid",
+    name = "sp-neon",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    base_color = {r=0.3, g=0.75, b=1.0},
+    flow_color = {r=0.3, g=0.75, b=1.0},
+    icon = "__Spaghetorio__/graphics/icons/neon.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-gas",
+    order = "a[gas]-x[neon]"
+  },
+  {
+    type = "fluid",
+    name = "sp-argon",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    base_color = {r=0.3, g=0.75, b=1.0},
+    flow_color = {r=0.3, g=0.75, b=1.0},
+    icon = "__Spaghetorio__/graphics/icons/argon.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-gas",
+    order = "a[gas]-x[argon]"
+  },
+  {
+    type = "fluid",
+    name = "sp-krypton",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    base_color = {r=0.3, g=0.75, b=1.0},
+    flow_color = {r=0.3, g=0.75, b=1.0},
+    icon = "__Spaghetorio__/graphics/icons/krypton.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-gas",
+    order = "a[gas]-x[krypton]"
+  },
+  {
+    type = "fluid",
     name = "sp-xenon",  -- #ForRegEx# - fluid
     default_temperature = 25,
     heat_capacity = "0.1kJ",
@@ -829,6 +868,19 @@ data:extend({
     icon_mipmaps = 4,
     subgroup = "sp-gas",
     order = "a[gas]-x[xenon]"
+  },
+  {
+    type = "fluid",
+    name = "sp-radon",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    base_color = {r=0.3, g=0.75, b=1.0},
+    flow_color = {r=0.3, g=0.75, b=1.0},
+    icon = "__Spaghetorio__/graphics/icons/radon.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-gas",
+    order = "a[gas]-x[radon]"
   },
   ------------------------------------------------------------------------------
   -- MARK: inorganic-chemical
@@ -2132,6 +2184,32 @@ data:extend({
   },
   {
     type = "fluid",
+    name = "sp-2-Ethylhex-2-enal",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    base_color = {r=0.05, g=0.1, b=0.5},
+    flow_color = {r=0.05, g=0.1, b=0.5},
+    icon = "__Spaghetorio__/graphics/icons/sulfopropyl-alcohol.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-complex-organic-chemical",
+    order = "a[oxygen]-f[2-Ethylhex-2-enal]"
+  },
+  {
+    type = "fluid",
+    name = "sp-2-ethylhexanol",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    base_color = {r=0.05, g=0.1, b=0.5},
+    flow_color = {r=0.05, g=0.1, b=0.5},
+    icon = "__Spaghetorio__/graphics/icons/2-ethylhexanol.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-complex-organic-chemical",
+    order = "a[oxygen]-f[2-ethylhexanol]"
+  },
+  {
+    type = "fluid",
     name = "sp-carboxymethyldiphenylphosphine",  -- #ForRegEx# - fluid
     default_temperature = 25,
     heat_capacity = "0.1kJ",
@@ -2142,6 +2220,19 @@ data:extend({
     icon_mipmaps = 4,
     subgroup = "sp-complex-organic-chemical",
     order = "a[phosphorus]-f[carboxymethyldiphenylphosphine]"
+  },
+  {
+    type = "fluid",
+    name = "sp-bis-2-ethylhexyl-phosphoric-acid",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    base_color = {r=0.05, g=0.1, b=0.5},
+    flow_color = {r=0.05, g=0.1, b=0.5},
+    icon = "__Spaghetorio__/graphics/icons/bis-2-ethylhexyl-phosphoric-acid.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-complex-organic-chemical",
+    order = "a[phosphorus]-f[bis-2-ethylhexyl-phosphoric-acid]"
   },
   {
     type = "fluid",
@@ -2181,7 +2272,8 @@ data:extend({
     icon_mipmaps = 4,
     subgroup = "sp-complex-organic-chemical",
     order = "a[fluorine]-f[perfluorooctanoic-acid]"
-  },  {
+  },
+  {
     type = "fluid",
     name = "sp-sulfopropyl-alcohol",  -- #ForRegEx# - fluid
     default_temperature = 25,

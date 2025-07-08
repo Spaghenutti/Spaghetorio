@@ -40,6 +40,14 @@ TODO for 0.3.24
     - terbium-oxide + sodium-periodate-solution + argon -> terbium (electrolysis) 
 
 TODO for 0.3.25
+  - Add uses for mineral resources
+    - taenite
+    - djerfisherite
+    - plagioclase
+    - troilite
+    - olivine
+    - pyroxenem
+    - xenotime
   - Find uses for
     - ammonium-chloride-solution
     - phenol

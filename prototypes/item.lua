@@ -119,6 +119,16 @@ data:extend({
     order = "[methane-ice]",
     stack_size = 50
   },
+  {
+    type = "item",
+    name = "sp-clathrate-hydrate-ice",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/clathrate-hydrate-ice.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-ice",
+    order = "[clathrate-hydrate-ice]",
+    stack_size = 50
+  },
   ------------------------------------------------------------------------------
   -- MARK: raw-resource
   ------------------------------------------------------------------------------
@@ -565,7 +575,7 @@ data:extend({
     stack_size = 100,
   },
   ------------------------------------------------------------------------------
-  -- MARK: crushed-resource
+  -- MARK: mineral-resource
   ------------------------------------------------------------------------------
   {
     type = "item",
@@ -575,6 +585,76 @@ data:extend({
     scale = 0.5,
     subgroup = "sp-mineral-resource",
     order = "[bromargyrite]",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "sp-taenite",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/taenite.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "sp-mineral-resource",
+    order = "[taenite]",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "sp-djerfisherite",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/djerfisherite.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "sp-mineral-resource",
+    order = "[djerfisherite]",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "sp-plagioclase",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/plagioclase.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "sp-mineral-resource",
+    order = "[plagioclase]",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "sp-troilite",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/troilite.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "sp-mineral-resource",
+    order = "[troilite]",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "sp-olivine",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/olivine.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "sp-mineral-resource",
+    order = "[olivine]",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "sp-pyroxenem",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/pyroxenem.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "sp-mineral-resource",
+    order = "[pyroxenem]",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "sp-xenotime",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/xenotime.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "sp-mineral-resource",
+    order = "[xenotime]",
     stack_size = 100
   },
   ------------------------------------------------------------------------------
@@ -1533,6 +1613,116 @@ data:extend({
     scale = 0.5,
     subgroup = "sp-processed-resource",
     order = "[beryllium-fluoride]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "sp-terbium-hydroxide",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/terbium-hydroxide.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "sp-processed-resource",
+    order = "[terbium-hydroxide]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "sp-terbium-sulfate",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/terbium-sulfate.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "sp-processed-resource",
+    order = "[terbium-sulfate]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "sp-terbium-nitrate",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/terbium-nitrate.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "sp-processed-resource",
+    order = "[terbium-nitrate]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "sp-terbium-oxide",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/terbium-oxide.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "sp-processed-resource",
+    order = "[terbium-oxide]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "sp-dysprosium-fluoride",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/dysprosium-fluoride.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "sp-processed-resource",
+    order = "[dysprosium-fluoride]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "sp-dysprosium-hydroxide",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/dysprosium-hydroxide.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "sp-processed-resource",
+    order = "[dysprosium-hydroxide]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "sp-dysprosium-nitrate",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/dysprosium-nitrate.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "sp-processed-resource",
+    order = "[dysprosium-nitrate]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "sp-dysprosium-oxide",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/dysprosium-oxide.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "sp-processed-resource",
+    order = "[dysprosium-oxide]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "sp-phosphorus-pentoxide",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/phosphorus-pentoxide.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "sp-processed-resource",
+    order = "[phosphorus-pentoxide]",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "sp-ytterbium-chloride",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/ytterbium-chloride.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "sp-processed-resource",
+    order = "[ytterbium-chloride]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "sp-ytterbium-fluoride",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/ytterbium-fluoride.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "sp-processed-resource",
+    order = "[ytterbium-fluoride]",
     stack_size = 50
   },
   {
