@@ -14,7 +14,10 @@ Date: 2025-07-11
     - Fixed locale of recently added items, fluids, recipes and technologies
     - Fixed platinum recipe chain
     - Fixed that some recipes could not be crafted in steel and electric furnace
+    - Landfill from sand is now unlocked in landfill technology
     - Potassium cyanide can now be crafted on chemical plant
+    - Optical sensor now requires cadmium processing
+    - Rocket fuel from peroxide now unlocked in rocket silo technology
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.22
 Date: 2025-07-04

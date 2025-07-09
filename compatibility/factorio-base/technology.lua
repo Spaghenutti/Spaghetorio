@@ -374,6 +374,7 @@ data.raw.technology["landfill"].unit.ingredients = {
   {"automation-science-pack", 1}
 }
 table.insert(data.raw.technology["landfill"].effects, {type = "unlock-recipe", recipe = "sp-landfill-from-iron-ore"})
+table.insert(data.raw.technology["landfill"].effects, {type = "unlock-recipe", recipe = "sp-landfill-from-sand"})
 
 table.insert(data.raw.technology["steel-processing"].effects, {type = "unlock-recipe", recipe = "sp-steel-beam"})
 data.raw.technology["steel-processing"].unit = {
@@ -854,6 +855,7 @@ table.insert(data.raw.technology["rocket-silo"].effects, 4, {type = "unlock-reci
 table.insert(data.raw.technology["rocket-silo"].effects, 5, {type = "unlock-recipe", recipe = "sp-docking-hatch"})  -- insert at 5th position
 table.insert(data.raw.technology["rocket-silo"].effects, 6, {type = "unlock-recipe", recipe = "sp-reaction-control-system"})  -- insert at 6th position
 table.insert(data.raw.technology["rocket-silo"].effects, 7, {type = "unlock-recipe", recipe = "sp-gyroscope"})  -- insert at 7th position
+table.insert(data.raw.technology["rocket-silo"].effects, {type = "unlock-recipe", recipe = "sp-rocket-fuel-from-hydrogen-peroxide"})
 data.raw.technology["rocket-silo"].prerequisites = {
   "sp-rocket-control-unit",
   "rocket-fuel",
@@ -1008,7 +1010,6 @@ data.raw.technology["efficiency-module-3"].unit.ingredients = {
   {"sp-computer-science-pack-2", 1}
 }
 
-table.insert(data.raw.technology["rocket-fuel"].effects, {type = "unlock-recipe", recipe = "sp-rocket-fuel-from-hydrogen-peroxide"})
 data.raw.technology["rocket-fuel"].prerequisites = {
   "utility-science-pack",
   "sp-diborane"

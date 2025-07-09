@@ -6671,6 +6671,8 @@ data:extend({
     },
     prerequisites = {
       "sp-optics",
+      "sp-tellurium-processing",
+      "sp-cadmium-processing",
       "sp-germanium-processing",
       "sp-arsen-processing",
     },
