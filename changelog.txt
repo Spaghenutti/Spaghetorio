@@ -14,6 +14,7 @@ Date: 2025-07-11
     - Fixed locale of recently added items, fluids, recipes and technologies
     - Fixed platinum recipe chain
     - Fixed that some recipes could not be crafted in steel and electric furnace
+    - Fast inserter does now not require electronic science
     - Landfill from sand is now unlocked in landfill technology
     - Potassium cyanide can now be crafted on chemical plant
     - Optical sensor now requires cadmium processing
