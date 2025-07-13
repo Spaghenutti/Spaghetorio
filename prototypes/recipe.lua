@@ -1,5 +1,6 @@
-local util = require("data-util")
 
+local util = require("data-util")
+-- local recycling_util = require("__quality__.prototypes.recycling")
 
 data:extend({
   ------------------------------------------------------------------------------
@@ -3843,9 +3844,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-dirty-water-filtration-iron",  -- #ForRegEx# - recipe
-    icon = "__Spaghetorio__/graphics/icons/dirty-water-with-iron.png",
-    icon_size = 64,
-    mip_maps = 4,
+    icons = util.icon.create_recycling_icon("__Spaghetorio__/graphics/icons/dirty-water-with-iron.png", 64),
     category = "sp-kr-fluid-filtration",
     subgroup = "sp-dirty-fluid-filtration",
     enabled = false,
@@ -3872,7 +3871,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-dirty-water-filtration-copper",  -- #ForRegEx# - recipe
-    icon = "__Spaghetorio__/graphics/icons/dirty-water-with-iron.png",
+    icons = util.icon.create_recycling_icon("__Spaghetorio__/graphics/icons/dirty-water-with-copper.png", 64),
     icon_size = 64,
     mip_maps = 4,
     category = "sp-kr-fluid-filtration",
@@ -3902,7 +3901,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-dirty-water-filtration-aluminum",  -- #ForRegEx# - recipe
-    icon = "__Spaghetorio__/graphics/icons/dirty-water-with-aluminum.png",
+    icons = util.icon.create_recycling_icon("__Spaghetorio__/graphics/icons/dirty-water-with-aluminum.png", 64),
     icon_size = 64,
     mip_maps = 4,
     category = "sp-kr-fluid-filtration",
@@ -3931,7 +3930,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-dirty-water-filtration-chromite",  -- #ForRegEx# - recipe
-    icon = "__Spaghetorio__/graphics/icons/dirty-water-with-chromite.png",
+    icons = util.icon.create_recycling_icon("__Spaghetorio__/graphics/icons/dirty-water-with-chromite.png", 64),
     icon_size = 64,
     mip_maps = 4,
     category = "sp-kr-fluid-filtration",
@@ -3961,7 +3960,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-dirty-water-filtration-magnesium",  -- #ForRegEx# - recipe
-    icon = "__Spaghetorio__/graphics/icons/dirty-water-with-magnesium.png",
+    icons = util.icon.create_recycling_icon("__Spaghetorio__/graphics/icons/dirty-water-with-magnesium.png", 64),
     icon_size = 64,
     mip_maps = 4,
     category = "sp-kr-fluid-filtration",
@@ -3990,7 +3989,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-dirty-water-filtration-nickel",  -- #ForRegEx# - recipe
-    icon = "__Spaghetorio__/graphics/icons/dirty-water-with-nickel.png",
+    icons = util.icon.create_recycling_icon("__Spaghetorio__/graphics/icons/dirty-water-with-nickel.png", 64),
     icon_size = 64,
     mip_maps = 4,
     category = "sp-kr-fluid-filtration",
@@ -4020,7 +4019,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-dirty-water-filtration-tinstone",  -- #ForRegEx# - recipe
-    icon = "__Spaghetorio__/graphics/icons/dirty-water-with-tin.png",
+    icons = util.icon.create_recycling_icon("__Spaghetorio__/graphics/icons/dirty-water-with-tin.png", 64),
     icon_size = 64,
     mip_maps = 4,
     category = "sp-kr-fluid-filtration",
@@ -4049,7 +4048,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-dirty-water-filtration-titanium",  -- #ForRegEx# - recipe
-    icon = "__Spaghetorio__/graphics/icons/dirty-water-with-titanium.png",
+    icons = util.icon.create_recycling_icon("__Spaghetorio__/graphics/icons/dirty-water-with-titanium.png", 64),
     icon_size = 64,
     mip_maps = 4,
     category = "sp-kr-fluid-filtration",
@@ -4079,7 +4078,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-dirty-water-filtration-tungsten",  -- #ForRegEx# - recipe
-    icon = "__Spaghetorio__/graphics/icons/dirty-water-with-tungsten.png",
+    icons = util.icon.create_recycling_icon("__Spaghetorio__/graphics/icons/dirty-water-with-tungsten.png", 64),
     icon_size = 64,
     mip_maps = 4,
     category = "sp-kr-fluid-filtration",
@@ -4109,7 +4108,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-dirty-water-filtration-zinc",  -- #ForRegEx# - recipe
-    icon = "__Spaghetorio__/graphics/icons/dirty-water-with-zinc.png",
+    icons = util.icon.create_recycling_icon("__Spaghetorio__/graphics/icons/dirty-water-with-zinc.png", 64),
     icon_size = 64,
     mip_maps = 4,
     category = "sp-kr-fluid-filtration",
@@ -4138,7 +4137,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-dirty-water-filtration-holmium",  -- #ForRegEx# - recipe
-    icon = "__Spaghetorio__/graphics/icons/dirty-water-with-holmium.png",
+    icons = util.icon.create_recycling_icon("__Spaghetorio__/graphics/icons/dirty-water-with-holmium.png", 64),
     icon_size = 64,
     mip_maps = 4,
     category = "sp-kr-fluid-filtration",
@@ -4166,7 +4165,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-dirty-water-filtration-antimony",  -- #ForRegEx# - recipe
-    icon = "__Spaghetorio__/graphics/icons/dirty-water-with-antimony.png",
+    icons = util.icon.create_recycling_icon("__Spaghetorio__/graphics/icons/dirty-water-with-antimony.png", 64),
     icon_size = 64,
     mip_maps = 4,
     category = "sp-kr-fluid-filtration",

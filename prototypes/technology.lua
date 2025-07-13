@@ -10326,7 +10326,8 @@ data:extend({
       },
     },
     prerequisites = {
-      "sp-kr-bio-processing"
+      "sp-kr-bio-processing",
+      "bacteria-cultivation"
     },
     unit = {
       count = 250,

@@ -401,4 +401,14 @@ function data_util.create_melting_from_lava_icon(lava_icon, molten_metal_icon, b
   return icons
 end
 
+function data_util.create_recycling_icon(icon, icon_size)
+  icons = {
+    {icon = "__quality__/graphics/icons/recycling.png"},
+    {icon = icon, icon_size = icon_size, scale = 0.5},
+    {icon = "__quality__/graphics/icons/recycling-top.png"},
+  }
+
+  return icons
+end
+
 return data_util
