@@ -2,7 +2,9 @@
 Version: 0.3.24
 Date: 2025-07-18
   Changes:
+    - BREAKING CHANGE: Filtration plant now has 6 inputs instead of 2
     - Updated water filtration icons
+    - Rockets (military rocket) now require processing units
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.23
 Date: 2025-07-11

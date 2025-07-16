@@ -1027,7 +1027,7 @@ util.recipe.change_recipe_ingredients("land-mine",
 
 util.recipe.change_recipe_ingredients("rocket",
   {
-    {type = "item", name = "sp-control-unit", amount = 1},
+    {type = "item", name = "processing-unit", amount = 2},
     {type = "item", name = "sp-infrared-sensor", amount = 1},
     {type = "item", name = "sp-solid-rocket-motor", amount = 1},
     {type = "item", name = "explosives", amount = 1}

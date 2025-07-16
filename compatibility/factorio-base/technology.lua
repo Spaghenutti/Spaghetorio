@@ -1230,6 +1230,7 @@ data.raw.technology["flamethrower"].unit.ingredients = {
   {"electromagnetic-science-pack", 1}
 }
 
+table.insert(data.raw.technology["rocketry"].prerequisites, "processing-unit")
 table.insert(data.raw.technology["rocketry"].prerequisites, "sp-solid-rocket-motor")
 table.insert(data.raw.technology["rocketry"].prerequisites, "sp-optical-sensor")
 data.raw.technology["rocketry"].unit.ingredients = {
