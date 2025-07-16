@@ -3,6 +3,7 @@ Version: 0.3.24
 Date: 2025-07-18
   Changes:
     - BREAKING CHANGE: Filtration plant now has 6 inputs instead of 2
+    - aqua regia recipe has now 1:3 ratio in its inputs
     - Updated water filtration icons
     - Rockets (military rocket) now require processing units
   Bugfixes:

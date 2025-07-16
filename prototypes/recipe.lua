@@ -5929,8 +5929,8 @@ data:extend({
     enabled = false,
     allow_productivity = true,
     ingredients = {
-      {type = "fluid", name = "sp-nitric-acid", amount = 50},
-      {type = "fluid", name = "sp-hydrogen-chloride", amount = 50},
+      {type = "fluid", name = "sp-nitric-acid", amount = 25},
+      {type = "fluid", name = "sp-hydrogen-chloride", amount = 75},
     },
     results = {
       {type = "fluid", name = "sp-aqua-regia", amount = 100}
