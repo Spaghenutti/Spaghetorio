@@ -1023,6 +1023,23 @@ data:extend({
       {type = "item", name = "sp-platinum-powder", probability = 0.25, amount = 1},
     }
   },
+  {
+    type = "recipe",
+    name = "sp-dysprosium-from-nitrate",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/dysprosium.png", 64,
+                                         "__Spaghetorio__/graphics/icons/dysprosium-nitrate.png", 64),
+    category = "sp-intermediate-smelting",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 40,
+    ingredients = {
+      {type = "item", name = "sp-dysprosium-nitrate", amount = 3},
+      {type = "item", name = "calcite", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-dysprosium", amount = 3},
+    }
+  },
   ------------------------------------------------------------------------------
   -- MARK: enriching-raw-resource
   ------------------------------------------------------------------------------
@@ -5973,6 +5990,36 @@ data:extend({
       {type = "item", name = "sp-potassium-cyanide", amount = 3}
     }
   },
+  {
+    type = "recipe",
+    name = "sp-dysprosium-nitrate",  -- #ForRegEx# - recipe
+    category = "chemistry",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 12,
+    ingredients = {
+      {type = "item", name = "sp-dysprosium-oxide", amount = 1},
+      {type = "fluid", name = "sp-nitric-acid", amount = 5},
+    },
+    results = {
+      {type = "item", name = "sp-dysprosium-nitrate", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-dysprosium-fluoride",  -- #ForRegEx# - recipe
+    category = "chemistry",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 15,
+    ingredients = {
+      {type = "item", name = "sp-dysprosium-hydroxide", amount = 1},
+      {type = "fluid", name = "sp-hydrogen-fluoride", amount = 3},
+    },
+    results = {
+      {type = "item", name = "sp-dysprosium-fluoride", amount = 1}
+    }
+  },
   ------------------------------------------------------------------------------
   -- MARK: advanced-chemistry
   ------------------------------------------------------------------------------
@@ -6566,6 +6613,68 @@ data:extend({
       {type = "fluid", name = "sp-hexachloroiridium-acid-solution", amount = 5},
     }
   },
+  {
+    type = "recipe",
+    name = "sp-dysprosium-from-fluoride",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/dysprosium.png", 64,
+                                         "__Spaghetorio__/graphics/icons/dysprosium-fluoride.png", 64),
+    category = "sp-advanced-chemistry",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 16,
+    ingredients = {
+      {type = "item", name = "sp-dysprosium-fluoride", amount = 1},
+      {type = "fluid", name = "sp-bis-2-ethylhexyl-phosphoric-acid", amount = 5},
+    },
+    results = {
+      {type = "item", name = "sp-dysprosium", amount = 1},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-2-ethylhex-2-enal",  -- #ForRegEx# - recipe
+    category = "sp-advanced-chemistry",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 30,
+    ingredients = {
+      {type = "fluid", name = "sp-butanediol", amount = 3},
+      {type = "fluid", name = "sp-potassium-hydroxide-solution", amount = 5},
+    },
+    results = {
+      {type = "fluid", name = "sp-2-ethylhex-2-enal", amount = 8},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-2-ethylhexanol",  -- #ForRegEx# - recipe
+    category = "sp-advanced-chemistry",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 12,
+    ingredients = {
+      {type = "fluid", name = "sp-2-ethylhex-2-enal", amount = 10},
+      {type = "fluid", name = "sp-hydrogen", amount = 15},
+    },
+    results = {
+      {type = "fluid", name = "sp-2-ethylhexanol", amount = 8},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-bis-2-ethylhexyl-phosphoric-acid",  -- #ForRegEx# - recipe
+    category = "sp-advanced-chemistry",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 50,
+    ingredients = {
+      {type = "item", name = "sp-phosphorus-pentoxide", amount = 1},
+      {type = "fluid", name = "sp-2-ethylhexanol", amount = 10},
+    },
+    results = {
+      {type = "fluid", name = "sp-bis-2-ethylhexyl-phosphoric-acid", amount = 5},
+    }
+  },
   ------------------------------------------------------------------------------
   -- MARK: chemical-staging
   ------------------------------------------------------------------------------
@@ -7085,12 +7194,12 @@ data:extend({
     category = "sp-chemical-staging",
     enabled = false,
     allow_productivity = true,
-    energy_required = 4,
+    energy_required = 10,
     ingredients = {
-      {type = "fluid", name = "sp-hydrogen", amount = 2}
+      {type = "fluid", name = "sp-hydrogen", amount = 10},
     },
     results = {
-      {type = "fluid", name = "sp-helium", amount = 10}
+      {type = "fluid", name = "sp-helium", probability = 0.5, amount = 1}
     },
     crafting_machine_tint = {
       primary = {r = 1.000, g = 1.000, b = 1.000, a = 1.000},
@@ -7668,6 +7777,29 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-osmium-oxide", amount = 1},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-dysprosium-compounds",  -- #ForRegEx# - recipe
+    icons = util.icon.combine_four_icons("__Spaghetorio__/graphics/icons/dysprosium-oxide.png", 64, nil,
+                                         "__Spaghetorio__/graphics/icons/dysprosium-nitrate.png", 64, nil,
+                                         "__Spaghetorio__/graphics/icons/dysprosium-fluoride.png", 64, nil,
+                                         "__Spaghetorio__/graphics/icons/dysprosium-hydroxide.png", 64, nil),
+    category = "sp-ion-chromatography",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 40,
+    ingredients = {
+      {type = "item", name = "sp-dysprosium-asteroid-chunk", amount = 5},
+      {type = "fluid", name = "sp-tetramethylammonium", amount = 50},
+      {type = "fluid", name = "sp-sulfopropyl-metacrylate-potassium-salt-solution", amount = 40},
+    },
+    results = {
+      {type = "item", name = "sp-dysprosium-oxide", amount = 3},
+      {type = "item", name = "sp-dysprosium-nitrate", amount = 1},
+      {type = "item", name = "sp-dysprosium-hydroxide", probability = 0.25, amount = 1},
+      {type = "item", name = "sp-dysprosium-fluoride", probability = 0.2, amount = 1},
     }
   },
   ------------------------------------------------------------------------------
@@ -9140,6 +9272,23 @@ data:extend({
       {type = "fluid", name = "holmium-solution", amount = 200}
     }
   },
+  {
+    type = "recipe",
+    name = "sp-phosphorus-pentoxide",  -- #ForRegEx# - recipe
+    icon_size = 64,
+    mip_maps = 4,
+    category = "sp-oxidizing",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 30,
+    ingredients = {
+      {type = "item", name = "sp-phosphorus", amount = 1},
+      {type = "fluid", name = "sp-oxygen", amount = 20},
+    },
+    results = {
+      {type = "item", name = "sp-phosphorus-pentoxide", amount = 1}
+    }
+  },
   ------------------------------------------------------------------------------
   -- MARK: electronics
   ------------------------------------------------------------------------------
@@ -10251,26 +10400,50 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-xenon-from-atmosphere",  -- #ForRegEx# - recipe
+    name = "sp-helium-from-atmosphere",  -- #ForRegEx# - recipe
+    category = "sp-kr-atmosphere-condensation",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 20,
+    ingredients = {},
+    results = {
+      {type = "fluid", name = "sp-helium", amount = 3}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-neon-from-atmosphere",  -- #ForRegEx# - recipe
     category = "sp-kr-atmosphere-condensation",
     enabled = false,
     allow_productivity = true,
     energy_required = 15,
     ingredients = {},
     results = {
-      {type = "fluid", name = "sp-xenon", amount = 1}
+      {type = "fluid", name = "sp-neon", amount = 1}
     }
   },
   {
     type = "recipe",
-    name = "sp-helium-from-atmosphere",  -- #ForRegEx# - recipe
+    name = "sp-argon-from-atmosphere",  -- #ForRegEx# - recipe
     category = "sp-kr-atmosphere-condensation",
     enabled = false,
     allow_productivity = true,
-    energy_required = 3,
+    energy_required = 20,
     ingredients = {},
     results = {
-      {type = "fluid", name = "sp-helium", amount = 1}
+      {type = "fluid", name = "sp-argon", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-xenon-from-atmosphere",  -- #ForRegEx# - recipe
+    category = "sp-kr-atmosphere-condensation",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 60,
+    ingredients = {},
+    results = {
+      {type = "fluid", name = "sp-xenon", amount = 1}
     }
   },
   ------------------------------------------------------------------------------
@@ -11430,7 +11603,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-ruthenium-powder",  -- #ForRegEx# - recipe
-    category = "sp-chemical-staging",
+    category = "sp-kr-electrolysis",
     energy_required = 15,
     enabled = false,
     allow_productivity = true,

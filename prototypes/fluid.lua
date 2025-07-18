@@ -2184,7 +2184,7 @@ data:extend({
   },
   {
     type = "fluid",
-    name = "sp-2-Ethylhex-2-enal",  -- #ForRegEx# - fluid
+    name = "sp-2-ethylhex-2-enal",  -- #ForRegEx# - fluid
     default_temperature = 25,
     heat_capacity = "0.1kJ",
     base_color = {r=0.05, g=0.1, b=0.5},
@@ -2193,7 +2193,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "sp-complex-organic-chemical",
-    order = "a[oxygen]-f[2-Ethylhex-2-enal]"
+    order = "a[oxygen]-f[2-ethylhex-2-enal]"
   },
   {
     type = "fluid",

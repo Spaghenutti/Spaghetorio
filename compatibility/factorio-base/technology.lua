@@ -557,7 +557,7 @@ data.raw.technology["laser"].effects = {
 }
 data.raw.technology["laser"].prerequisites = {
   "sp-optics",
-  "sp-noble-gases"
+  "sp-helium"
 }
 data.raw.technology["laser"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},

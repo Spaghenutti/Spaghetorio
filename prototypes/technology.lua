@@ -2048,6 +2048,63 @@ data:extend({
   },
   {
     type = "technology",
+    name = "sp-dysprosium-processing",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghetorio__/graphics/hr-icons/dysprosium.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-dysprosium-from-nitrate"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-dysprosium-from-fluoride"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-dysprosium-nitrate"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-dysprosium-fluoride"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-dysprosium-compounds"
+      },
+    },
+    prerequisites = {
+      "sp-dysprosium-rich-asteroid",
+      "sp-ammonia-tetra-ethers",
+      "sp-sulfopropyl-metacrylate-potassium-salt-solution",
+      "sp-bis-2-ethylhexyl-phosphoric-acid"
+    },
+    unit =
+    {
+      count = 600,
+      ingredients = {
+        {"sp-automation-science-pack-3", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-chemical-science-pack-3", 1},
+        {"sp-metallurgic-science-pack-2", 1},
+        {"sp-electromagnetic-science-pack-2", 1},
+        {"production-science-pack", 1},
+        {"utility-science-pack", 1},
+        {"cryogenic-science-pack", 1},
+        {"agricultural-science-pack", 1},
+        {"sp-computer-science-pack-2", 1},
+        {"sp-nuclear-science-pack-2", 1},
+        {"space-science-pack", 1}
+      },
+      time = 30
+    },
+  },
+  {
+    type = "technology",
     name = "sp-iridium-processing",  -- #ForRegEx# - technology
     icon_size = 256,
     icon = "__Spaghetorio__/graphics/hr-icons/iridium.png",
@@ -5807,7 +5864,7 @@ data:extend({
   },
   {
     type = "technology",
-    name = "sp-noble-gases",  -- #ForRegEx# - technology
+    name = "sp-helium",  -- #ForRegEx# - technology
     icon_size = 256,
     icon = "__Spaghetorio__/graphics/hr-icons/xenon.png",
     effects =
@@ -5819,10 +5876,6 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "sp-helium-from-atmosphere"
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-xenon-from-atmosphere"
       },
     },
     prerequisites = {
@@ -5867,7 +5920,7 @@ data:extend({
     },
     prerequisites = {
       "sp-blunagium-processing",
-      "sp-noble-gases"
+      "sp-helium"
     },
     unit =
     {
@@ -10643,6 +10696,240 @@ data:extend({
   },
   {
     type = "technology",
+    name = "sp-bis-2-ethylhexyl-phosphoric-acid",  -- #ForRegEx# - technology
+    icon = "__Spaghetorio__/graphics/hr-icons/bis-2-ethylhexyl-phosphoric-acid.png",
+    icon_size = 256,
+    icon_mipmaps = 4,
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-bis-2-ethylhexyl-phosphoric-acid",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-2-ethylhexanol",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-2-ethylhex-2-enal",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-phosphorus-pentoxide",
+      },
+    },
+    prerequisites = {
+      "sp-chemical-science-pack-3",
+    },
+    unit = {
+      count = 350,
+      ingredients = {
+        {"sp-automation-science-pack-3", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-chemical-science-pack-3", 1},
+        {"sp-metallurgic-science-pack-2", 1},
+        {"sp-electromagnetic-science-pack-2", 1},
+        {"production-science-pack", 1},
+        {"utility-science-pack", 1},
+        {"cryogenic-science-pack", 1},
+        {"agricultural-science-pack", 1},
+        {"sp-computer-science-pack-2", 1},
+        {"sp-nuclear-science-pack-2", 1},
+        {"space-science-pack", 1}
+      },
+      time = 45,
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-neon",  -- #ForRegEx# - technology
+    icon = "__Spaghetorio__/graphics/hr-icons/neon.png",
+    icon_size = 256,
+    icon_mipmaps = 4,
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-neon-from-atmosphere"
+      },
+    },
+    prerequisites = {
+      "sp-chemical-science-pack-3",
+    },
+    unit = {
+      count = 350,
+      ingredients = {
+        {"sp-automation-science-pack-3", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-chemical-science-pack-3", 1},
+        {"sp-metallurgic-science-pack-2", 1},
+        {"sp-electromagnetic-science-pack-2", 1},
+        {"production-science-pack", 1},
+        {"utility-science-pack", 1},
+        {"cryogenic-science-pack", 1},
+        {"agricultural-science-pack", 1},
+        {"sp-computer-science-pack-2", 1},
+        {"sp-nuclear-science-pack-2", 1},
+        {"space-science-pack", 1}
+      },
+      time = 45,
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-argon",  -- #ForRegEx# - technology
+    icon = "__Spaghetorio__/graphics/hr-icons/argon.png",
+    icon_size = 256,
+    icon_mipmaps = 4,
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-argon-from-atmosphere"
+      },
+    },
+    prerequisites = {
+      "sp-chemical-science-pack-3",
+    },
+    unit = {
+      count = 350,
+      ingredients = {
+        {"sp-automation-science-pack-3", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-chemical-science-pack-3", 1},
+        {"sp-metallurgic-science-pack-2", 1},
+        {"sp-electromagnetic-science-pack-2", 1},
+        {"production-science-pack", 1},
+        {"utility-science-pack", 1},
+        {"cryogenic-science-pack", 1},
+        {"agricultural-science-pack", 1},
+        {"sp-computer-science-pack-2", 1},
+        {"sp-nuclear-science-pack-2", 1},
+        {"space-science-pack", 1}
+      },
+      time = 45,
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-krypton",  -- #ForRegEx# - technology
+    icon = "__Spaghetorio__/graphics/hr-icons/krypton.png",
+    icon_size = 256,
+    icon_mipmaps = 4,
+    effects = {
+      -- {
+      --   type = "unlock-recipe",
+      --   recipe = "sp-krypton-from-atmosphere"
+      -- },
+    },
+    prerequisites = {
+      "sp-chemical-science-pack-3",
+    },
+    unit = {
+      count = 350,
+      ingredients = {
+        {"sp-automation-science-pack-3", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-chemical-science-pack-3", 1},
+        {"sp-metallurgic-science-pack-2", 1},
+        {"sp-electromagnetic-science-pack-2", 1},
+        {"production-science-pack", 1},
+        {"utility-science-pack", 1},
+        {"cryogenic-science-pack", 1},
+        {"agricultural-science-pack", 1},
+        {"sp-computer-science-pack-2", 1},
+        {"sp-nuclear-science-pack-2", 1},
+        {"space-science-pack", 1}
+      },
+      time = 45,
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-xenon",  -- #ForRegEx# - technology
+    icon = "__Spaghetorio__/graphics/hr-icons/xenon.png",
+    icon_size = 256,
+    icon_mipmaps = 4,
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-xenon-from-atmosphere"
+      },
+    },
+    prerequisites = {
+      "sp-chemical-science-pack-3",
+    },
+    unit = {
+      count = 350,
+      ingredients = {
+        {"sp-automation-science-pack-3", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-chemical-science-pack-3", 1},
+        {"sp-metallurgic-science-pack-2", 1},
+        {"sp-electromagnetic-science-pack-2", 1},
+        {"production-science-pack", 1},
+        {"utility-science-pack", 1},
+        {"cryogenic-science-pack", 1},
+        {"agricultural-science-pack", 1},
+        {"sp-computer-science-pack-2", 1},
+        {"sp-nuclear-science-pack-2", 1},
+        {"space-science-pack", 1}
+      },
+      time = 45,
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-radon",  -- #ForRegEx# - technology
+    icon = "__Spaghetorio__/graphics/hr-icons/radon.png",
+    icon_size = 256,
+    icon_mipmaps = 4,
+    effects = {
+      -- {
+      --   type = "unlock-recipe",
+      --   recipe = "sp-radon-from-atmosphere"
+      -- },
+    },
+    prerequisites = {
+      "sp-chemical-science-pack-3",
+    },
+    unit = {
+      count = 350,
+      ingredients = {
+        {"sp-automation-science-pack-3", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-chemical-science-pack-3", 1},
+        {"sp-metallurgic-science-pack-2", 1},
+        {"sp-electromagnetic-science-pack-2", 1},
+        {"production-science-pack", 1},
+        {"utility-science-pack", 1},
+        {"cryogenic-science-pack", 1},
+        {"agricultural-science-pack", 1},
+        {"sp-computer-science-pack-2", 1},
+        {"sp-nuclear-science-pack-2", 1},
+        {"space-science-pack", 1}
+      },
+      time = 45,
+    },
+  },
+  {
+    type = "technology",
     name = "sp-chloropropanol",  -- #ForRegEx# - technology
     icon = "__Spaghetorio__/graphics/hr-icons/chloropropanol.png",
     icon_size = 256,
@@ -12528,7 +12815,8 @@ data:extend({
       },
     },
     prerequisites = {
-      "sp-automation-science-pack-3"
+      "sp-automation-science-pack-3",
+      "sp-tetrahydrofuran"
     },
     unit =
     {

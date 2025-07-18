@@ -12,19 +12,18 @@ TODO for 0.3.24
       - Djerfisherite	K₆(Fe,Ni,Cu)₂₅S₂₆Cl
       - Taenite	Fe-Ni alloy
   - Move krypton asteroid close to edge of solar system since noble gases are frozen
-  - Dysprosium
-    - dysprosium chunk + ... -> dysprosium-oxide + dysprosium-nitrate + dysprosium-hydroxide + dysprosium-fluoride
+  + Dysprosium
+    + dysprosium chunk + ... -> dysprosium-oxide + dysprosium-nitrate + dysprosium-hydroxide + dysprosium-fluoride
                                 high quantity      medium quantity      low quantity           low quantity
-    - dysprosium-oxide + nitric-acid -> dysprosium-nitrate
-    - dysprosium-nitrate + D2EHPA -> dysprosium
-    - dysprosium-hydroxide + hydrogen-fluoride -> dysprosium-fluoride
-    - dysprosium-fluoride + calcite -> dysprosium
-    - D2EHPA = Bis(2-ethylhexyl)phosphat:
-      - phosphrus + oxygen -> phosphorus-pentoxide
-      - propylene + hydrogen -> n-butyraldehyde
-      - n-butyraldehyde + potassium-hydroxide-solution + -> 2-Ethylhex-2-enal
-      - 2-Ethylhex-2-enal + hydrogen -> 2-ethylhexanol
-      - phosphorus-pentoxide + 2-ethylhexanol -> D2EHPA
+    + dysprosium-oxide + nitric-acid -> dysprosium-nitrate
+    + dysprosium-nitrate + D2EHPA -> dysprosium
+    + dysprosium-hydroxide + hydrogen-fluoride -> dysprosium-fluoride
+    + dysprosium-fluoride + calcite -> dysprosium
+    + D2EHPA = Bis(2-ethylhexyl)phosphat:
+      + phosphrus + oxygen -> phosphorus-pentoxide
+      + butanediol + potassium-hydroxide-solution + -> 2-ethylhex-2-enal
+      + 2-ethylhex-2-enal + hydrogen -> 2-ethylhexanol
+      + phosphorus-pentoxide + 2-ethylhexanol -> D2EHPA
   - ytterbium
     - mineral Xenotime + ... -> ytterbium-chloride + ytterbium-fluoride
     - ytterbium chunk + ... -> ytterbium-chloride + ytterbium-fluoride

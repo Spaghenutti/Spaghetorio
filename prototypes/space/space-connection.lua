@@ -180,7 +180,7 @@ data:extend({
     from = "sp-krypton-rich-asteroid",
     to = "sp-promethium-rich-asteroid",
     order = "a",
-    length = 38 * 1000,
+    length = 62 * 1000,
     asteroid_spawn_definitions = asteroid_util.connection_spawn_definitions(asteroid_util.krypton_promethium)
   },
   {
@@ -190,7 +190,7 @@ data:extend({
     from = "sp-krypton-rich-asteroid",
     to = "sp-dysprosium-rich-asteroid",
     order = "a",
-    length = 54 * 1000,
+    length = 95 * 1000,
     asteroid_spawn_definitions = asteroid_util.connection_spawn_definitions(asteroid_util.krypton_dysprosium)
   },
 })

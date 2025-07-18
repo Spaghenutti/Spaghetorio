@@ -1,4 +1,14 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.3.25
+Date: 2025-07-25
+  Features:
+    - Added dysprosium recipe chain
+  Changes:
+    - Removed noble gases tech and replaced with helium
+    - Changed helium recipe ratios
+    - Ruthenium powder produced in electrolysis plant
+    - Krypton asteroid is now much further away from the sun
+---------------------------------------------------------------------------------------------------
 Version: 0.3.24
 Date: 2025-07-18
   Changes:
