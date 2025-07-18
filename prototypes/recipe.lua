@@ -15817,12 +15817,23 @@ data:extend({
     category = "crafting",
     enabled = false,
     allow_productivity = true,
-    energy_required = 69,
+    energy_required = 150,
     ingredients = {
-      {type = "item", name = "iron-plate", amount = 69},
+      {type = "item", name = "sp-steel-beam", amount = 150},
+      {type = "item", name = "sp-maraging-steel", amount = 100},
+      {type = "item", name = "sp-aluminum-brass", amount = 70},
+      {type = "item", name = "sp-titanium-ruthenium", amount = 50},
+      {type = "item", name = "sp-ceramic-matrix-composites", amount = 40},
+      {type = "item", name = "sp-drillhead", amount = 3},
+      {type = "item", name = "sp-graphite-impact-shell", amount = 12},
+      {type = "item", name = "sp-heavy-ball-bearing", amount = 32},
+      {type = "item", name = "sp-heavy-gearbox", amount = 10},
+      {type = "item", name = "sp-electromagnetic-brake", amount = 6},
+      {type = "item", name = "sp-pressure-tube", amount = 50},
+      {type = "item", name = "sp-valve", amount = 60},
     },
     results = {
-      {type = "item", name = "sp-core-extractor", amount = 69}
+      {type = "item", name = "sp-core-extractor", amount = 1}
     }
   },
   {

@@ -1,5 +1,10 @@
 
 TODO for 0.3.24
+  - Add uses to
+    - pseudo-palladium 50%Rh, 50%Ag
+    - titanium-ruthenium 99% - 1%
+    - tohoku-alloy 5%Cr, 7%Co, 4%Ta, 10%ru, 14%Al, 60%Ni 
+    - ruthenium-rodium 75-25
   - Fix noble gases recipe chain
     - krypton asteroid contains clathrate hydrate ice
     - ice is melted and you get the noble gas... just like that

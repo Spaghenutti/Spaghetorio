@@ -4,6 +4,7 @@ Date: 2025-07-25
   Features:
     - Added dysprosium recipe chain
     - Added new ruthenium alloys
+    - Added recipe for core extractor
   Changes:
     - Removed noble gases tech and replaced with helium
     - Changed helium recipe ratios
