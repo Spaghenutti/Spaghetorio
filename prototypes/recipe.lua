@@ -2409,6 +2409,42 @@ data:extend({
       {type = "item", name = "sp-metallurgic-science-pack-2", amount = 5}
     }
   },
+  {
+    type = "recipe",
+    name = "sp-titanium-ruthenium",  -- #ForRegEx# - recipe
+    category = "sp-alloy-smelting",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 80,
+    ingredients =
+    {
+      {type = "item", name = "sp-titanium-ingot", amount = 20},
+      {type = "item", name = "sp-ruthenium", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-titanium-ruthenium", amount = 20}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-tohoku",  -- #ForRegEx# - recipe
+    category = "sp-alloy-smelting",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 60,
+    ingredients =
+    {
+      {type = "item", name = "sp-nickel-ingot", amount = 12},
+      {type = "item", name = "sp-aluminum-sheet", amount = 5},
+      {type = "item", name = "sp-cobalt-billet", amount = 3},
+      {type = "item", name = "sp-chromium-plate", amount = 3},
+      {type = "item", name = "sp-tantalum-billet", amount = 1},
+      {type = "item", name = "sp-ruthenium", amount = 4},
+    },
+    results = {
+      {type = "item", name = "sp-tohoku", amount = 10}
+    }
+  },
   ------------------------------------------------------------------------------
   -- MARK: smelting-with-fluid
   ------------------------------------------------------------------------------
@@ -3854,6 +3890,36 @@ data:extend({
     results = {
       {type = "item", name = "sp-osmium", amount = 1}
     },
+  },
+  {
+    type = "recipe",
+    name = "sp-pseudo-palladium",  -- #ForRegEx# - recipe
+    category = "sp-high-temperature-smelting",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 30,
+    ingredients = {
+      {type = "item", name = "sp-rhodium", amount = 1},
+      {type = "item", name = "sp-silver", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-pseudo-palladium", amount = 2},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-ruthenium-rhodium",  -- #ForRegEx# - recipe
+    category = "sp-high-temperature-smelting",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 60,
+    ingredients = {
+      {type = "item", name = "sp-ruthenium", amount = 3},
+      {type = "item", name = "sp-rhodium", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-ruthenium-rhodium", amount = 4},
+    }
   },
   ------------------------------------------------------------------------------
   -- MARK: sp-kr-fluid-filtration

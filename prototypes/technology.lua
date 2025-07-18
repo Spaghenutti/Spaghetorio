@@ -2272,8 +2272,9 @@ data:extend({
     type = "technology",
     name = "sp-rhodium-alloys",  -- #ForRegEx# - technology
     icon_size = 256,
-    icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/hr-icons/nickel-rhodium.png", 256, nil,
-                                        "__Spaghetorio__/graphics/hr-icons/platinum-rhodium.png", 256, nil),
+    icons = util.icon.combine_three_icons("__Spaghetorio__/graphics/hr-icons/platinum-rhodium.png", 256, nil,
+                                          "__Spaghetorio__/graphics/hr-icons/nickel-rhodium.png", 256, nil,
+                                          "__Spaghetorio__/graphics/hr-icons/pseudo-palladium.png", 256, nil),
     effects =
     {
       {
@@ -2283,6 +2284,10 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "sp-platinum-rhodium"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-pseudo-palladium"
       },
     },
     prerequisites = {
@@ -2306,6 +2311,53 @@ data:extend({
         {"cryogenic-science-pack", 1},
         {"agricultural-science-pack", 1},
         {"sp-computer-science-pack-2", 1}
+      },
+      time = 30
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-ruthenium-alloys",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icons = util.icon.combine_three_icons("__Spaghetorio__/graphics/hr-icons/ruthenium-rhodium.png", 256, nil,
+                                          "__Spaghetorio__/graphics/hr-icons/tohoku.png", 256, nil,
+                                          "__Spaghetorio__/graphics/hr-icons/titanium-ruthenium.png", 256, nil),
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-titanium-ruthenium"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-tohoku"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-ruthenium-rhodium"
+      },
+    },
+    prerequisites = {
+      "sp-ruthenium-processing",
+    },
+    unit =
+    {
+      count = 1000,
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-metallurgic-science-pack-2", 1},
+        {"sp-electromagnetic-science-pack-2", 1},
+        {"production-science-pack", 1},
+        {"utility-science-pack", 1},
+        {"cryogenic-science-pack", 1},
+        {"agricultural-science-pack", 1},
+        {"sp-computer-science-pack-2", 1},
+        {"space-science-pack", 1}
       },
       time = 30
     },
@@ -9872,10 +9924,10 @@ data:extend({
     },
     prerequisites = {
       "sp-automation-science-pack-3",
-      "sp-ruthenium-processing"
+      "sp-ruthenium-alloys"
     },
     unit = {
-      count = 1000,
+      count = 600,
       ingredients = {
         {"sp-automation-science-pack-3", 1},
         {"sp-logistic-science-pack-2", 1},

@@ -3416,6 +3416,46 @@ data:extend({
   },
   {
     type = "item",
+    name = "sp-pseudo-palladium",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/pseudo-palladium.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "sp-alloy",
+    order = "[pseudo-palladium]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "sp-titanium-ruthenium",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/titanium-ruthenium.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "sp-alloy",
+    order = "[titanium-ruthenium]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "sp-tohoku",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/tohoku.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "sp-alloy",
+    order = "[tohoku]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "sp-ruthenium-rhodium",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/ruthenium-rhodium.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "sp-alloy",
+    order = "[ruthenium-rhodium]",
+    stack_size = 50
+  },
+  {
+    type = "item",
     name = "sp-rare-metals-alloy",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/rare-metals/rare-metals.png",
     icon_size = 64,
