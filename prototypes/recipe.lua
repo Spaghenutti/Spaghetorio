@@ -2752,23 +2752,6 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-platinum-group-metal-concentrate",  -- #ForRegEx# - recipe
-    icon = "__Spaghetorio__/graphics/icons/platinum-group-metal-concentrate.png",
-    category = "metallurgy",
-    subgroup = "sp-metal-concentrate",
-    enabled = false,
-    allow_productivity = true,
-    energy_required = 2,
-    ingredients = {
-      {type = "fluid", name = "sp-platinum-group-metal-froth", amount = 5},
-    },
-    results = {
-      {type = "item", name = "sp-platinum-group-metal-concentrate", amount = 1},
-      {type = "item", name = "sp-enriched-iron", probability = 0.12, amount = 1}
-    }
-  },
-  {
-    type = "recipe",
     name = "sp-rhodium-concentrate",  -- #ForRegEx# - recipe
     category = "metallurgy",
     enabled = false,
@@ -6084,6 +6067,24 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-dysprosium-fluoride", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-platinum-group-metal-concentrate",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/icons/platinum-group-metal-concentrate.png",
+    category = "chemistry",
+    subgroup = "sp-metal-concentrate",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 4,
+    ingredients = {
+      {type = "fluid", name = "sp-platinum-group-metal-froth", amount = 5},
+      {type = "fluid", name = "sulfuric-acid", amount = 5},
+    },
+    results = {
+      {type = "item", name = "sp-platinum-group-metal-concentrate", amount = 1},
+      {type = "item", name = "sp-enriched-iron", probability = 0.12, amount = 1}
     }
   },
   ------------------------------------------------------------------------------
