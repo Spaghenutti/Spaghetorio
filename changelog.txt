@@ -10,6 +10,9 @@ Date: 2025-07-25
     - Changed helium recipe ratios
     - Ruthenium powder produced in electrolysis plant
     - Krypton asteroid is now much further away from the sun
+  Bugfixes:
+    - Fixed working animation of greenhouse
+    - Fixed pipe covers for incinerator
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.24
 Date: 2025-07-18

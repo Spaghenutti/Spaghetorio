@@ -75,29 +75,29 @@ data:extend({
           },
         },
       },
-    },
-    working_visualisations = {
-      {
-        draw_as_light = true,
-        animation = {
-          filename = "__Spaghetorio__/graphics/krastorio/entities/greenhouse/greenhouse-light.png",
-          scale = scale,
-          width = 256,
-          height = 256,
-          frame_count = 1,
-          repeat_count = 10,
-          animation_speed = 0.35,
+      working_visualisations = {
+        {
+          draw_as_light = true,
+          animation = {
+            filename = "__Spaghetorio__/graphics/krastorio/entities/greenhouse/greenhouse-light.png",
+            scale = scale,
+            width = 256,
+            height = 256,
+            frame_count = 1,
+            repeat_count = 10,
+            animation_speed = 0.35,
+          },
         },
-      },
-      {
-        animation = {
-          filename = "__Spaghetorio__/graphics/krastorio/entities/greenhouse/greenhouse-working.png",
-          scale = scale,
-          width = 256,
-          height = 256,
-          frame_count = 10,
-          line_length = 5,
-          animation_speed = 0.35,
+        {
+          animation = {
+            filename = "__Spaghetorio__/graphics/krastorio/entities/greenhouse/greenhouse-working.png",
+            scale = scale,
+            width = 256,
+            height = 256,
+            frame_count = 10,
+            line_length = 5,
+            animation_speed = 0.35,
+          },
         },
       },
     },
