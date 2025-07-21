@@ -2504,7 +2504,8 @@ data:extend({
       },
     },
     prerequisites = {
-      "lubricant"
+      "lubricant",
+      "automation-2"
     },
     unit =
     {

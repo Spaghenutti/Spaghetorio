@@ -146,6 +146,7 @@ Items:
     - More T4 tech cards
 
 Recipes:
+  - Make better recipe for fabric
   - Set auto_barrel = false on all fluids which are not supposed to put into barrels
     - Put gasses into pressure tanks
     - Add special barrel for cold liquids like liquid nitrogen

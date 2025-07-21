@@ -14,6 +14,7 @@ Date: 2025-07-25
     - Fixed working animation of greenhouse
     - Fixed pipe covers for incinerator
     - Platium group metal concentrate is now made in chemical plant
+    - Ball bearing technology now requires automation 2
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.24
 Date: 2025-07-18
