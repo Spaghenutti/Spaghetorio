@@ -3940,7 +3940,8 @@ data:extend({
       "sp-turbine-parts",
       "sp-spark-plug",
       "sp-antimony-processing",
-      "sp-ceramic-matrix-composites"
+      "sp-ceramic-matrix-composites",
+      "tungsten-steel"
     },
     unit =
     {

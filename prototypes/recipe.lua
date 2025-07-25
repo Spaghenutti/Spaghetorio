@@ -7741,6 +7741,7 @@ data:extend({
     icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/icons/ruthenium-amine-solution.png", 64, nil,
                                         "__Spaghetorio__/graphics/icons/ruthenium-nitrosyl-solution.png", 64, nil),
     category = "sp-ion-chromatography",
+    subgroup = "sp-solution",
     enabled = false,
     allow_productivity = true,
     energy_required = 40,

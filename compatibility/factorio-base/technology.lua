@@ -1139,14 +1139,15 @@ data.raw.technology["fusion-reactor-equipment"].unit.ingredients = {
 -- MARK: Military
 --------------------------------------------------------------------------------
 
+data.raw.technology["military"].prerequisites = {
+  "sp-iron-machining",
+  "automation-science-pack"
+}
 data.raw.technology["military"].effects = {
   {
     type = "unlock-recipe",
     recipe = "submachine-gun"
   },
-}
-data.raw.technology["military"].prerequisites = {
-  "sp-iron-machining"
 }
 
 table.insert(data.raw.technology["military-2"].prerequisites, "military-science-pack")
