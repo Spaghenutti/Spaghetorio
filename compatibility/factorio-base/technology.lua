@@ -323,6 +323,7 @@ data.raw.technology["nuclear-power"].effects = {
 }
 table.insert(data.raw.technology["nuclear-power"].prerequisites, "electric-energy-accumulators")
 table.insert(data.raw.technology["nuclear-power"].prerequisites, "heating-tower")
+table.insert(data.raw.technology["nuclear-power"].prerequisites, "tungsten-steel")
 table.insert(data.raw.technology["nuclear-power"].prerequisites, "sp-turbine-parts")
 table.insert(data.raw.technology["nuclear-power"].prerequisites, "sp-control-unit")
 table.insert(data.raw.technology["nuclear-power"].prerequisites, "sp-hafnium-processing")
@@ -746,7 +747,8 @@ data.raw.technology["belt-immunity-equipment"].unit.ingredients = {
 
 data.raw.technology["fission-reactor-equipment"].prerequisites = {
   "sp-nuclear-science-pack-2",
-  "sp-kr-lithium-sulfur-battery"
+  "sp-kr-lithium-sulfur-battery",
+  "sp-control-unit"
 }
 data.raw.technology["fission-reactor-equipment"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},
@@ -759,8 +761,9 @@ data.raw.technology["fission-reactor-equipment"].unit.ingredients = {
   {"sp-electromagnetic-science-pack-2", 1},
   {"production-science-pack", 1},
   {"utility-science-pack", 1},
-  {"sp-nuclear-science-pack-2", 1},
-  {"sp-computer-science-pack-2", 1}
+  {"sp-computer-science-pack-2", 1},
+  {"cryogenic-science-pack", 1},
+  {"agricultural-science-pack", 1}
 }
 
 data.raw.technology["robotics"].prerequisites = {
@@ -846,7 +849,10 @@ data.raw.technology["personal-roboport-mk2-equipment"].unit.ingredients = {
   {"sp-metallurgic-science-pack-2", 1},
   {"sp-electromagnetic-science-pack-2", 1},
   {"production-science-pack", 1},
-  {"utility-science-pack", 1}
+  {"utility-science-pack", 1},
+  {"sp-computer-science-pack-2", 1},
+  {"cryogenic-science-pack", 1},
+  {"agricultural-science-pack", 1}
 }
 
 table.insert(data.raw.technology["rocket-silo"].effects, 2, {type = "unlock-recipe", recipe = "sp-rocket"})  -- insert at 2nd position
@@ -1296,8 +1302,8 @@ data.raw.technology["defender"].unit.ingredients = {
   {"electromagnetic-science-pack", 1}
 }
 
-table.insert(data.raw.technology["defender"].prerequisites, "sp-gyroscope")
-table.insert(data.raw.technology["defender"].prerequisites, "sp-kr-lithium-sulfur-battery")
+table.insert(data.raw.technology["distractor"].prerequisites, "sp-gyroscope")
+table.insert(data.raw.technology["distractor"].prerequisites, "sp-kr-lithium-sulfur-battery")
 data.raw.technology["distractor"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},
   {"sp-logistic-science-pack-2", 1},
@@ -1397,6 +1403,7 @@ data.raw.technology["personal-laser-defense-equipment"].unit.ingredients = {
 
 table.insert(data.raw.technology["tank"].prerequisites, "military-4")
 table.insert(data.raw.technology["tank"].prerequisites, "sp-control-unit")
+table.insert(data.raw.technology["tank"].prerequisites, "tungsten-steel")
 data.raw.technology["tank"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},
   {"sp-logistic-science-pack-2", 1},

@@ -5920,7 +5920,7 @@ data:extend({
     type = "technology",
     name = "sp-helium",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghetorio__/graphics/hr-icons/xenon.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/helium.png",
     effects =
     {
       {
@@ -6651,6 +6651,7 @@ data:extend({
       }
     },
     prerequisites = {
+      "sp-antimony-processing",
       "sp-propane-products",
       "electromagnetic-plant",
       "sp-carbon-high-tech"
@@ -6668,7 +6669,9 @@ data:extend({
         {"sp-metallurgic-science-pack-2", 1},
         {"sp-electromagnetic-science-pack-2", 1},
         {"production-science-pack", 1},
-        {"utility-science-pack", 1}
+        {"utility-science-pack", 1},
+        {"cryogenic-science-pack", 1},
+        {"agricultural-science-pack", 1}
       },
       time = 30
     },
@@ -12481,7 +12484,8 @@ data:extend({
     },
     prerequisites = {
       "sp-logistic-science-pack-2",
-      "modular-armor"
+      "modular-armor",
+      "military-3"
     },
     unit =
     {
