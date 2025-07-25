@@ -8,7 +8,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/krastorio/icons/entities/antimatter-reactor.png",
     icon_size = 128,
     icon_mipmaps = 4,
-    flags = { "placeable-neutral", "placeable-player", "player-creation", "not-rotatable" },
+    flags = { "placeable-neutral", "placeable-player", "player-creation"},
     minable = { mining_time = 5, result = "sp-kr-antimatter-reactor" },
     max_health = 5000,
     damaged_trigger_effect = hit_effects.entity(),

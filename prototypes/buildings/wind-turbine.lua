@@ -25,7 +25,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/krastorio/icons/entities/wind-turbine.png",
     icon_size = 64,
     icon_mipmaps = 4,
-    flags = { "placeable-neutral", "player-creation", "not-rotatable" },
+    flags = { "placeable-neutral", "player-creation"},
     minable = { mining_time = 0.25, result = "sp-kr-wind-turbine" },
     max_health = 200,
     corpse = "medium-remnants",

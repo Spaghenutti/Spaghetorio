@@ -8,7 +8,7 @@ data:extend({
     icon = "__Spaghetorio__/graphics/krastorio/icons/entities/energy-storage.png",
     icon_size = 64,
     icon_mipmaps = 4,
-    flags = { "placeable-neutral", "placeable-player", "player-creation", "not-rotatable" },
+    flags = { "placeable-neutral", "placeable-player", "player-creation"},
     minable = { mining_time = 1, result = "sp-kr-energy-storage" },
     max_health = 750,
     corpse = "big-remnants",
