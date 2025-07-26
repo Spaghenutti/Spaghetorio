@@ -189,7 +189,7 @@ table.insert(data.raw.technology["logistics"].effects, {type = "unlock-recipe", 
 table.insert(data.raw.technology["logistics"].prerequisites, "sp-kr-automation-core")
 
 table.insert(data.raw.technology["logistics-2"].effects, {type = "unlock-recipe", recipe = "sp-kr-fast-loader"})
-table.insert(data.raw.technology["logistics-2"].prerequisites, "sp-aluminum-processing")
+table.insert(data.raw.technology["logistics-2"].prerequisites, "sp-aluminum-machining")
 table.insert(data.raw.technology["logistics-2"].prerequisites, "electronics")
 
 table.insert(data.raw.technology["logistics-3"].effects, {type = "unlock-recipe", recipe = "sp-kr-express-loader"})
@@ -213,7 +213,6 @@ table.insert(data.raw.technology["railway"].prerequisites, "sp-steel-wheel")
 table.insert(data.raw.technology["railway"].prerequisites, "sp-geological-science-pack-1")
 table.insert(data.raw.technology["railway"].effects, {type = "unlock-recipe", recipe = "sp-train-bogie"})
 data.raw.technology["railway"].unit.ingredients = {
-  -- basic-tech-card are also present, not checked why that is...
   {"automation-science-pack", 1},
   {"logistic-science-pack", 1},
   {"sp-material-science-pack-1", 1},
