@@ -1,6 +1,44 @@
 
 TODO for 0.3.24
+  - Add recipe for biolab
+    - radioisotope thermoelectric generator
+      -i PuO2
+      - radioisotope-container
+        -i dysprosium
+        -i boron-carbide
+        - fiberglass
+        -i titanium-ruthenium
+        - lead-telluride
+        -i germanium-antimony-tellurium
+      -i thermocouple
+      -i composites
+      -i graphite-impact-shell
+      -i heatsink
+    - bio-sample-canisters
+      - high-density-structure-gel
+        -i biomass
+        -i heavy-oil
+        -i biocrude-oil
+        -i yumako-mash
+      - croygenic-gel
+        -i fluoroketone cold and hot
+        -i bromine-trifluorine
+        -i cellulose
+        -i jelly
+      - bio-polymer-mesh
+        -i iodethene
+        -i glyoxilic-acid
+        - fiberglass
+      -i filter
+      -i glass
+      -i pseudo-palladium
+      - cryostabalized-ruthenium
+    - cryostabalized alloys
+      -i add to all recipes fluoroketone cold and hot
+      - cryostabalized-ruthenium = germanium + ruthenium powder + neon
+      - cryostabalized-tungsten = germanium + tungsten powder + argon
   - Add uses to
+    - fiberglass (material-science) prerequisite for optic-fiber
     - pseudo-palladium 50%Rh, 50%Ag
     - titanium-ruthenium 99% - 1%
     - tohoku-alloy 5%Cr, 7%Co, 4%Ta, 10%ru, 14%Al, 60%Ni 
