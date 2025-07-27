@@ -486,6 +486,12 @@ data:extend({
   },
   {
     type = "item-subgroup",
+    name = "sp-biological",  -- #ForRegEx# - item-subgroup
+    group = "sp-biology",
+    order = "c"
+  },
+  {
+    type = "item-subgroup",
     name = "sp-frozen",  -- #ForRegEx# - item-subgroup
     group = "sp-biology",
     order = "z1"

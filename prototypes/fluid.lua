@@ -381,6 +381,32 @@ data:extend({
     subgroup = "sp-aqueous-fluid",
     order = "[bleach]"
   },
+  {
+    type = "fluid",
+    name = "sp-high-density-structure-gel",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    base_color = {r=0.85, g=0.85, b=0.9},
+    flow_color = {r=0.85, g=0.85, b=0.9},
+    icon = "__Spaghetorio__/graphics/icons/high-density-structure-gel.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-aqueous-fluid",
+    order = "gel-[high-density-structure-gel]"
+  },
+  {
+    type = "fluid",
+    name = "sp-croygenic-gel",  -- #ForRegEx# - fluid
+    default_temperature = 25,
+    heat_capacity = "0.1kJ",
+    base_color = {r=0.85, g=0.85, b=0.9},
+    flow_color = {r=0.85, g=0.85, b=0.9},
+    icon = "__Spaghetorio__/graphics/icons/croygenic-gel.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-aqueous-fluid",
+    order = "gel-[croygenic-gel]"
+  },
   ------------------------------------------------------------------------------
   -- MARK: solution
   ------------------------------------------------------------------------------

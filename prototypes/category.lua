@@ -40,7 +40,7 @@ data:extend({
   {
     -- Bioprocessing, used by bio-lab
     type = "recipe-category",
-    name = "sp-kr-bioprocessing",  -- #ForRegEx# - recipe-category
+    name = "sp-kr-bio-processing",  -- #ForRegEx# - recipe-category
   },
   {
     type = "recipe-category",

@@ -426,6 +426,24 @@ data:extend({
       {type = "item", name = "sp-crucible", amount = 1}
     }
   },
+  {
+    type = "recipe",
+    name = "sp-stone-brick-from-sand",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__base__/graphics/icons/stone-brick.png", 64,
+                                         "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/sand/sand.png", 64),
+    category = "smelting",
+    energy_required = 2,
+    enabled = false,
+    allow_productivity = true,
+    hide_from_player_crafting = true,
+    ingredients =
+    {
+      {type = "item", name = "sp-sand", amount = 8}
+    },
+    results = {
+      {type = "item", name = "stone-brick", amount = 1}
+    }
+  },
   ------------------------------------------------------------------------------
   -- MARK: smelting-crystallizing
   ------------------------------------------------------------------------------
@@ -463,20 +481,17 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-stone-brick-from-sand",  -- #ForRegEx# - recipe
-    icons = util.icon.overlay_small_icon("__base__/graphics/icons/stone-brick.png", 64,
-                                         "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/sand/sand.png", 64),
-    category = "smelting",
-    energy_required = 2,
+    name = "sp-fiberglass",  -- #ForRegEx# - recipe
+    category = "sp-smelting-crystallizing",
     enabled = false,
     allow_productivity = true,
-    hide_from_player_crafting = true,
-    ingredients =
-    {
-      {type = "item", name = "sp-sand", amount = 8}
+    energy_required = 5,
+    ingredients = {
+      {type = "item", name = "sp-silica", amount = 3},
+      {type = "item", name = "calcite", amount = 1}
     },
     results = {
-      {type = "item", name = "stone-brick", amount = 1}
+      {type = "item", name = "sp-fiberglass", amount = 1}
     }
   },
   ------------------------------------------------------------------------------
@@ -7934,6 +7949,23 @@ data:extend({
       {type = "fluid", name = "lubricant", amount = 150}
     }
   },
+  {
+    type = "recipe",
+    name = "sp-high-density-structure-gel",  -- #ForRegEx# - recipe
+    category = "oil-processing",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 6,
+    ingredients = {
+      {type = "item", name = "sp-biomass", amount = 5},
+      {type = "item", name = "yumako-mash", amount = 1},
+      {type = "fluid", name = "heavy-oil", amount = 15},
+      {type = "fluid", name = "sp-biocrude-oil", amount = 20},
+    },
+    results = {
+      {type = "fluid", name = "sp-high-density-structure-gel", amount = 10}
+    }
+  },
   ------------------------------------------------------------------------------
   -- MARK: organic
   ------------------------------------------------------------------------------
@@ -8286,6 +8318,88 @@ data:extend({
       quaternary = {r = 0.800, g = 0.000, b = 0.100, a = 0.900},
     },
   },
+  {
+    type = "recipe",
+    name = "sp-croygenic-gel",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/icons/croygenic-gel.png",
+    icon_size = 64,
+    mip_maps = 4,
+    category = "cryogenics",
+    subgroup = "sp-aqueous-fluid",
+    energy_required = 20,
+    enabled = false,
+    allow_productivity = true,
+    ingredients = {
+      {type = "fluid", name = "fluoroketone-cold", amount = 10},
+      {type = "fluid", name = "sp-bromine-trifluoride", amount = 10},
+      {type = "fluid", name = "sp-cellulose", amount = 5},
+      {type = "item", name = "jelly", amount = 1},
+    },
+    results = {
+      {type = "fluid", name = "sp-croygenic-gel", amount = 10},
+      {type = "fluid", name = "fluoroketone-hot", amount = 10}
+    },
+    crafting_machine_tint = {
+      primary = {r = 0.800, g = 0.000, b = 0.100, a = 0.200},
+      secondary = {r = 0.500, g = 0.100, b = 0.300, a = 0.357},
+      tertiary = {r = 0.430, g = 0.000, b = 0.450, a = 0.200},
+      quaternary = {r = 0.800, g = 0.000, b = 0.100, a = 0.900},
+    },
+  },
+  {
+    type = "recipe",
+    name = "sp-cryostabalized-ruthenium",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/icons/cryostabalized-ruthenium.png",
+    icon_size = 64,
+    mip_maps = 4,
+    category = "cryogenics",
+    subgroup = "sp-alloy",
+    energy_required = 40,
+    enabled = false,
+    allow_productivity = true,
+    ingredients = {
+      {type = "item", name = "sp-germanium", amount = 1},
+      {type = "item", name = "sp-ruthenium-powder", amount = 1},
+      {type = "fluid", name = "fluoroketone-cold", amount = 5}
+    },
+    results = {
+      {type = "item", name = "sp-cryostabalized-ruthenium", probability = 0.1, amount = 1},
+      {type = "fluid", name = "fluoroketone-hot", amount = 5}
+    },
+    crafting_machine_tint = {
+      primary = {r = 0.800, g = 0.000, b = 0.100, a = 0.200},
+      secondary = {r = 0.500, g = 0.100, b = 0.300, a = 0.357},
+      tertiary = {r = 0.430, g = 0.000, b = 0.450, a = 0.200},
+      quaternary = {r = 0.800, g = 0.000, b = 0.100, a = 0.900},
+    },
+  },
+  {
+    type = "recipe",
+    name = "sp-cryostabalized-tungsten",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/icons/cryostabalized-tungsten.png",
+    icon_size = 64,
+    mip_maps = 4,
+    category = "cryogenics",
+    subgroup = "sp-alloy",
+    energy_required = 30,
+    enabled = false,
+    allow_productivity = true,
+    ingredients = {
+      {type = "item", name = "sp-germanium", amount = 1},
+      {type = "item", name = "sp-tungsten-powder", amount = 2},
+      {type = "fluid", name = "fluoroketone-cold", amount = 10}
+    },
+    results = {
+      {type = "item", name = "sp-cryostabalized-tungsten", probability = 0.3, amount = 2},
+      {type = "fluid", name = "fluoroketone-hot", amount = 10}
+    },
+    crafting_machine_tint = {
+      primary = {r = 0.800, g = 0.000, b = 0.100, a = 0.200},
+      secondary = {r = 0.500, g = 0.100, b = 0.300, a = 0.357},
+      tertiary = {r = 0.430, g = 0.000, b = 0.450, a = 0.200},
+      quaternary = {r = 0.800, g = 0.000, b = 0.100, a = 0.900},
+    },
+  },
   ------------------------------------------------------------------------------
   -- MARK: crystallizing
   ------------------------------------------------------------------------------
@@ -8492,6 +8606,21 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-titanium-telluride", amount = 3}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-lead-telluride",  -- #ForRegEx# - recipe
+    category = "sp-crystallizing",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 8,
+    ingredients = {
+      {type = "item", name = "sp-lead-slab", amount = 2},
+      {type = "item", name = "sp-tellurium", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-lead-telluride", amount = 2}
     }
   },
   {
@@ -11268,7 +11397,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-biomass",  -- #ForRegEx# - recipe
-    category = "sp-kr-bioprocessing",
+    category = "sp-kr-bio-processing",
     enabled = false,
     allow_productivity = true,
     energy_required = 20,
@@ -11283,10 +11412,26 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "sp-bio-polymer-mesh",  -- #ForRegEx# - recipe
+    category = "sp-kr-bio-processing",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 20,
+    ingredients = {
+      {type = "item", name = "sp-fiberglass", amount = 1},
+      {type = "fluid", name = "sp-iodethene", amount = 8},
+      {type = "fluid", name = "sp-glyoxilic-acid", amount = 8},
+    },
+    results = {
+      {type = "item", name = "sp-bio-polymer-mesh", amount = 1},
+    }
+  },
+  {
+    type = "recipe",
     name = "sp-lysine-from-iron-bacteria",  -- #ForRegEx# - recipe
     icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/lysine.png", 64,
                                          "__space-age__/graphics/icons/iron-bacteria.png", 64),
-    category = "sp-kr-bioprocessing",
+    category = "sp-kr-bio-processing",
     subgroup = "sp-complex-organic-chemical",
     enabled = false,
     allow_productivity = true,
@@ -11306,7 +11451,7 @@ data:extend({
     name = "sp-lysine-from-copper-bacteria",  -- #ForRegEx# - recipe
     icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/lysine.png", 64,
                                          "__space-age__/graphics/icons/copper-bacteria.png", 64),
-    category = "sp-kr-bioprocessing",
+    category = "sp-kr-bio-processing",
     subgroup = "sp-complex-organic-chemical",
     enabled = false,
     allow_productivity = true,
@@ -11324,7 +11469,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-carboxymethyllysine",  -- #ForRegEx# - recipe
-    category = "sp-kr-bioprocessing",
+    category = "sp-kr-bio-processing",
     enabled = false,
     allow_productivity = true,
     energy_required = 8,
@@ -11339,7 +11484,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-evolution-cell-container",  -- #ForRegEx# - recipe
-    category = "sp-kr-bioprocessing",
+    category = "sp-kr-bio-processing",
     enabled = false,
     allow_productivity = true,
     energy_required = 16,
@@ -11357,7 +11502,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-evolution-pulse-cell",  -- #ForRegEx# - recipe
-    category = "sp-kr-bioprocessing",
+    category = "sp-kr-bio-processing",
     enabled = false,
     allow_productivity = true,
     energy_required = 120,
@@ -12073,7 +12218,6 @@ data:extend({
     name = "sp-steel-gear-wheel",
     energy_required = 1.5,
     enabled = false,
-    allow_productivity = true,
     allow_productivity = true,
     ingredients = {
       {type = "item", name = "steel-plate", amount = 1},
@@ -13418,6 +13562,27 @@ data:extend({
       {type = "item", name = "sp-quantum-data-plane", amount = 1}
     }
   },
+  {
+    type = "recipe",
+    name = "sp-bio-sample-cryovial",  -- #ForRegEx# - recipe
+    category = "advanced-crafting",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 30,
+    ingredients = {
+      {type = "fluid", name = "sp-high-density-structure-gel", amount = 20},
+      {type = "fluid", name = "sp-croygenic-gel", amount = 10},
+      {type = "item", name = "sp-bio-polymer-mesh", amount = 5},
+      {type = "item", name = "sp-filter", amount = 10},
+      {type = "item", name = "sp-glass", amount = 6},
+      {type = "item", name = "sp-heatsink", amount = 5},
+      {type = "item", name = "sp-pseudo-palladium", amount = 3},
+      {type = "item", name = "sp-cryostabalized-ruthenium", amount = 4}
+    },
+    results = {
+      {type = "item", name = "sp-bio-sample-cryovial", amount = 1}
+    }
+  },
   ------------------------------------------------------------------------------
   -- MARK: Manufacturing
   ------------------------------------------------------------------------------
@@ -13828,6 +13993,45 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-cargo-pod", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-radioisotope-casing",  -- #ForRegEx# - recipe
+    category = "sp-manufacturing",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 18,
+    ingredients =
+    {
+      {type = "item", name = "sp-boron-carbide", amount = 1},
+      {type = "item", name = "sp-fiberglass", amount = 1},
+      {type = "item", name = "sp-germanium-antimony-tellurium", amount = 1},
+      {type = "item", name = "sp-lead-telluride", amount = 5},
+    },
+    results = {
+      {type = "item", name = "sp-radioisotope-casing", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-radioisotope-thermoelectric-generator",  -- #ForRegEx# - recipe
+    category = "sp-manufacturing",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 30,
+    ingredients =
+    {
+      {type = "item", name = "sp-plutonium-oxide", amount = 5},
+      {type = "item", name = "sp-radioisotope-casing", amount = 1},
+      {type = "item", name = "sp-thermocouple", amount = 1},
+      {type = "item", name = "sp-composites", amount = 4},
+      {type = "item", name = "sp-graphite-impact-shell", amount = 1},
+      {type = "item", name = "sp-heatsink", amount = 6},
+      {type = "item", name = "sp-titanium-ruthenium", amount = 5},
+    },
+    results = {
+      {type = "item", name = "sp-radioisotope-thermoelectric-generator", amount = 1}
     }
   },
   {

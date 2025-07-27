@@ -648,6 +648,26 @@ util.recipe.change_recipe_ingredients("biochamber",
   },
   40)
 
+util.recipe.change_recipe_ingredients("biolab",
+  {
+    {type = "item", name = "sp-elgiloy", amount = 70},
+    {type = "item", name = "sp-tohoku", amount = 50},
+    {type = "item", name = "sp-composites", amount = 50},
+    {type = "item", name = "sp-niobium-tin", amount = 12},
+    {type = "item", name = "sp-glass", amount = 100},
+    {type = "item", name = "sp-dynamo", amount = 6},
+    {type = "item", name = "sp-servo-motor", amount = 40},
+    {type = "item", name = "processing-unit", amount = 50},
+    {type = "item", name = "sp-control-unit", amount = 12},
+    {type = "item", name = "sp-hard-drive", amount = 60},
+    {type = "item", name = "sp-optical-sensor", amount = 20},
+    {type = "item", name = "sp-high-pressure-fan", amount = 6},
+    {type = "item", name = "sp-bio-sample-cryovial", amount = 5},
+    {type = "item", name = "sp-radioisotope-thermoelectric-generator", amount = 1},
+    {type = "item", name = "refined-concrete", amount = 250},
+  },
+  120)
+
 util.recipe.change_recipe_ingredients("cryogenic-plant",
   {
     {type = "item", name = "sp-invar", amount = 20},

@@ -1,40 +1,41 @@
 
 TODO for 0.3.24
   - Add recipe for biolab
-    - radioisotope thermoelectric generator
-      -i PuO2
-      - radioisotope-container
-        -i dysprosium
-        -i boron-carbide
+    - Verify all recipes work with a crafting machine
+    - radioisotope-thermoelectric-generator
+      - PuO2
+      - radioisotope-casing
+        - boron-carbide
         - fiberglass
-        -i titanium-ruthenium
+        - titanium-ruthenium
         - lead-telluride
-        -i germanium-antimony-tellurium
-      -i thermocouple
-      -i composites
-      -i graphite-impact-shell
-      -i heatsink
-    - bio-sample-canisters
+        - germanium-antimony-tellurium
+      - thermocouple
+      - composites
+      - graphite-impact-shell
+      - heatsink
+    - bio-sample-cryovial
+      - Verify 2 fluid intputs for crafting machine
       - high-density-structure-gel
-        -i biomass
-        -i heavy-oil
-        -i biocrude-oil
-        -i yumako-mash
+        - spoilage
+        - heavy-oil
+        - biocrude-oil
+        - yumako-mash
       - croygenic-gel
-        -i fluoroketone cold and hot
-        -i bromine-trifluorine
-        -i cellulose
-        -i jelly
+        - fluoroketone cold and hot
+        - bromine-trifluorine
+        - cellulose
+        - jelly
       - bio-polymer-mesh
-        -i iodethene
-        -i glyoxilic-acid
+        - iodethene
+        - glyoxilic-acid
         - fiberglass
-      -i filter
-      -i glass
-      -i pseudo-palladium
+      - filter
+      - glass
+      - pseudo-palladium
       - cryostabalized-ruthenium
     - cryostabalized alloys
-      -i add to all recipes fluoroketone cold and hot
+      - add to all recipes fluoroketone cold and hot
       - cryostabalized-ruthenium = germanium + ruthenium powder + neon
       - cryostabalized-tungsten = germanium + tungsten powder + argon
   - Add uses to
@@ -102,6 +103,7 @@ TODO for 0.3.25
     - technology
 
 TODO for 0.3.26
+  - update alloy-properties.csv
   - Biolab has to be unlocked before automation science 3
   - Add multiple landing pads
   - Fix asteroid reprocessing
@@ -263,13 +265,15 @@ Locale:
   - Rename science packs to basic, intermediate and advanced
 
 Mods:
-  - Support text plates
-  - Support LTN
-  - Support milestones
-  - Support fluid must flow
-  - Support elevated pipes
-  - Support valves
-  - Support planet visualizer
+  - text plates
+  - LTN
+  - milestones
+  - fluid must flow
+  - elevated pipes
+  - Optional:
+    - planet visualizer
+    - valves
+    - https://mods.factorio.com/mod/Mini_Trains - See: https://mods.factorio.com/mod/Spaghetorio/discussion/68866cad5aab39b1128707e0
 
 Bugs:
   - If patches that require liquid to be mined are next to each other the game decides randomly which ore can be mined.

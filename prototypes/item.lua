@@ -3456,6 +3456,36 @@ data:extend({
   },
   {
     type = "item",
+    name = "sp-lead-telluride",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/lead-telluride.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "sp-alloy",
+    order = "[lead-telluride]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "sp-cryostabalized-tungsten",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/cryostabalized-tungsten.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "sp-alloy",
+    order = "[cryostabalized-tungsten]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "sp-cryostabalized-ruthenium",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/cryostabalized-ruthenium.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "sp-alloy",
+    order = "[cryostabalized-ruthenium]",
+    stack_size = 50
+  },
+  {
+    type = "item",
     name = "sp-rare-metals-alloy",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/rare-metals/rare-metals.png",
     icon_size = 64,
@@ -4398,6 +4428,16 @@ data:extend({
     scale = 0.5,
     subgroup = "sp-mechanical-component",
     order = "cable-[optic-fiber]",
+    stack_size = 100
+  },
+  {
+    type = "item",
+    name = "sp-fiberglass",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/fiberglass.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-mechanical-component",
+    order = "other-z-[fiberglass]",
     stack_size = 100
   },
   {
@@ -5486,6 +5526,36 @@ data:extend({
     order = "[cybernetics]",
     stack_size = 50
   },
+  {
+    type = "item",
+    name = "sp-radioisotope-casing",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/radioisotope-casing.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-advanced-intermediate-product",
+    order = "[radioisotope-casing]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "sp-radioisotope-thermoelectric-generator",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/radioisotope-thermoelectric-generator.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-advanced-intermediate-product",
+    order = "[radioisotope-thermoelectric-generator]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "sp-bio-sample-cryovial",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/bio-sample-cryovial.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-advanced-intermediate-product",
+    order = "[bio-sample-cryovial]",
+    stack_size = 50
+  },
   ------------------------------------------------------------------------------
   -- MARK: ceramic
   ------------------------------------------------------------------------------
@@ -6265,6 +6335,19 @@ data:extend({
   ------------------------------------------------------------------------------
   {
     type = "item",
+    name = "sp-bio-pesticide",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/bio-pesticide.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "agriculture-products",
+    order = "[bio-pesticide]",
+    stack_size = 50
+  },
+  ------------------------------------------------------------------------------
+  -- MARK: biological
+  ------------------------------------------------------------------------------
+  {
+    type = "item",
     name = "sp-protozoa",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/protozoa-1.png",
     icon_size = 64,
@@ -6277,18 +6360,8 @@ data:extend({
     weight = 0.1 * kg,
     spoil_ticks = 5 * minute,
     spoil_result = "spoilage",
-    subgroup = "agriculture-products",
+    subgroup = "sp-biological",
     order = "[protozoa]",
-    stack_size = 50
-  },
-  {
-    type = "item",
-    name = "sp-bio-pesticide",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/icons/bio-pesticide.png",
-    icon_size = 64,
-    scale = 0.5,
-    subgroup = "agriculture-products",
-    order = "[bio-pesticide]",
     stack_size = 50
   },
   {
@@ -6300,8 +6373,20 @@ data:extend({
     weight = 0.1 * kg,
     spoil_ticks = 5 * minute,
     spoil_result = "spoilage",
-    subgroup = "agriculture-products",
+    subgroup = "sp-biological",
     order = "[polysaccharide]",
+    stack_size = 50
+  },
+  {
+    type = "item",
+    name = "sp-bio-polymer-mesh",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/bio-polymer-mesh.png",
+    icon_size = 64,
+    scale = 0.5,
+    weight = 0.1 * kg,
+    spoil_result = "spoilage",
+    subgroup = "sp-biological",
+    order = "[bio-polymer-mesh]",
     stack_size = 50
   },
   ------------------------------------------------------------------------------
