@@ -1096,6 +1096,90 @@ data:extend({
   },
   {
     type = "technology",
+    name = "sp-xenotime-processing",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghetorio__/graphics/hr-icons/xenotime.png",
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-xenotime"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-ytterbium-compounds-from-xenotime"
+      },
+      -- {
+      --   type = "unlock-recipe",
+      --   recipe = "sp-yttrium-from-xenotime" -- sodium hydroxide
+      -- },
+    },
+    prerequisites = {
+      "sp-rare-metals"
+    },
+    unit = {
+      count = 200,
+      ingredients = {
+        {"sp-automation-science-pack-3", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-metallurgic-science-pack-2", 1},
+        {"sp-electromagnetic-science-pack-2", 1},
+        {"production-science-pack", 1},
+        {"utility-science-pack", 1},
+        {"cryogenic-science-pack", 1},
+        {"agricultural-science-pack", 1},
+        {"sp-computer-science-pack-2", 1},
+        {"sp-nuclear-science-pack-2", 1},
+        {"space-science-pack", 1}
+      },
+      time = 30
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-djerfisherite-processing",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghetorio__/graphics/hr-icons/djerfisherite.png",
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-djerfisherite"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-terbium-compounds-from-djerfisherite"
+      },
+    },
+    prerequisites = {
+      "sp-rare-metals"
+    },
+    unit = {
+      count = 200,
+      ingredients = {
+        {"sp-automation-science-pack-3", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-metallurgic-science-pack-2", 1},
+        {"sp-electromagnetic-science-pack-2", 1},
+        {"production-science-pack", 1},
+        {"utility-science-pack", 1},
+        {"cryogenic-science-pack", 1},
+        {"agricultural-science-pack", 1},
+        {"sp-computer-science-pack-2", 1},
+        {"sp-nuclear-science-pack-2", 1},
+        {"space-science-pack", 1}
+      },
+      time = 30
+    },
+  },
+  {
+    type = "technology",
     name = "sp-iodine-processing",  -- #ForRegEx# - technology
     icon_size = 256,
     icon = "__Spaghetorio__/graphics/hr-icons/iodine.png",
@@ -2025,6 +2109,110 @@ data:extend({
     },
     unit = {
       count = 400,
+      ingredients = {
+        {"sp-automation-science-pack-3", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-chemical-science-pack-3", 1},
+        {"sp-metallurgic-science-pack-2", 1},
+        {"sp-electromagnetic-science-pack-2", 1},
+        {"production-science-pack", 1},
+        {"utility-science-pack", 1},
+        {"cryogenic-science-pack", 1},
+        {"agricultural-science-pack", 1},
+        {"sp-computer-science-pack-2", 1},
+        {"sp-nuclear-science-pack-2", 1},
+        {"space-science-pack", 1}
+      },
+      time = 30
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-terbium-processing",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghetorio__/graphics/hr-icons/terbium.png",
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-terbium"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-terbium-oxide-from-hydroxide"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-terbium-oxide-from-sulfate"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-terbium-sulfate"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-terbium-compounds"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-terbium-compounds-from-magnesium"
+      },
+    },
+    prerequisites = {
+      "sp-terbium-rich-asteroid",
+      "sp-argon",
+      "sp-ammonia-tetra-ethers"
+    },
+    unit = {
+      count = 450,
+      ingredients = {
+        {"sp-automation-science-pack-3", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-chemical-science-pack-3", 1},
+        {"sp-metallurgic-science-pack-2", 1},
+        {"sp-electromagnetic-science-pack-2", 1},
+        {"production-science-pack", 1},
+        {"utility-science-pack", 1},
+        {"cryogenic-science-pack", 1},
+        {"agricultural-science-pack", 1},
+        {"sp-computer-science-pack-2", 1},
+        {"sp-nuclear-science-pack-2", 1},
+        {"space-science-pack", 1}
+      },
+      time = 30
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-ytterbium-processing",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghetorio__/graphics/hr-icons/ytterbium.png",
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-ytterbium-from-chloride"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-ytterbium-from-fluoride"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-ytterbium-compounds"
+      },
+    },
+    prerequisites = {
+      "sp-ytterbium-rich-asteroid",
+      "sp-argon",
+      "sp-ammonia-tetra-ethers"
+    },
+    unit = {
+      count = 600,
       ingredients = {
         {"sp-automation-science-pack-3", 1},
         {"sp-logistic-science-pack-2", 1},
@@ -10555,30 +10743,32 @@ data:extend({
     effects = {
       {
         type = "unlock-recipe",
+        recipe = "sp-argon-from-methane-ice"
+      },
+      {
+        type = "unlock-recipe",
         recipe = "sp-argon-from-atmosphere"
       },
     },
     prerequisites = {
-      "sp-chemical-science-pack-3",
+      "space-platform",
     },
     unit = {
       count = 350,
       ingredients = {
-        {"sp-automation-science-pack-3", 1},
+        {"sp-automation-science-pack-2", 1},
         {"sp-logistic-science-pack-2", 1},
         {"sp-material-science-pack-2", 1},
         {"sp-geological-science-pack-2", 1},
         {"sp-electronic-science-pack-2", 1},
-        {"sp-chemical-science-pack-3", 1},
+        {"sp-chemical-science-pack-2", 1},
         {"sp-metallurgic-science-pack-2", 1},
         {"sp-electromagnetic-science-pack-2", 1},
         {"production-science-pack", 1},
         {"utility-science-pack", 1},
         {"cryogenic-science-pack", 1},
         {"agricultural-science-pack", 1},
-        {"sp-computer-science-pack-2", 1},
-        {"sp-nuclear-science-pack-2", 1},
-        {"space-science-pack", 1}
+        {"sp-computer-science-pack-2", 1}
       },
       time = 45,
     },
@@ -10627,6 +10817,10 @@ data:extend({
     icon_size = 256,
     icon_mipmaps = 4,
     effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-xenon-from-methane-ice"
+      },
       {
         type = "unlock-recipe",
         recipe = "sp-xenon-from-atmosphere"
@@ -11809,17 +12003,17 @@ data:extend({
       }
     },
     prerequisites = {
-      "space-science-pack"
+      "sp-chemical-science-pack-3"
     },
     unit = {
       count = 1000,
       ingredients = {
-        {"sp-automation-science-pack-2", 1},
+        {"sp-automation-science-pack-3", 1},
         {"sp-logistic-science-pack-2", 1},
         {"sp-material-science-pack-2", 1},
         {"sp-geological-science-pack-2", 1},
         {"sp-electronic-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1},
+        {"sp-chemical-science-pack-3", 1},
         {"sp-metallurgic-science-pack-2", 1},
         {"sp-electromagnetic-science-pack-2", 1},
         {"production-science-pack", 1},
@@ -11827,6 +12021,7 @@ data:extend({
         {"cryogenic-science-pack", 1},
         {"agricultural-science-pack", 1},
         {"sp-computer-science-pack-2", 1},
+        {"sp-nuclear-science-pack-2", 1},
         {"space-science-pack", 1}
       },
       time = 30
@@ -11845,17 +12040,17 @@ data:extend({
       }
     },
     prerequisites = {
-      "space-science-pack"
+      "sp-chemical-science-pack-3"
     },
     unit = {
       count = 1000,
       ingredients = {
-        {"sp-automation-science-pack-2", 1},
+        {"sp-automation-science-pack-3", 1},
         {"sp-logistic-science-pack-2", 1},
         {"sp-material-science-pack-2", 1},
         {"sp-geological-science-pack-2", 1},
         {"sp-electronic-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1},
+        {"sp-chemical-science-pack-3", 1},
         {"sp-metallurgic-science-pack-2", 1},
         {"sp-electromagnetic-science-pack-2", 1},
         {"production-science-pack", 1},
@@ -11863,6 +12058,7 @@ data:extend({
         {"cryogenic-science-pack", 1},
         {"agricultural-science-pack", 1},
         {"sp-computer-science-pack-2", 1},
+        {"sp-nuclear-science-pack-2", 1},
         {"space-science-pack", 1}
       },
       time = 30

@@ -35,6 +35,7 @@ TODO for 0.3.24
       + pseudo-palladium
       + cryostabalized-ruthenium
     + cryostabalized alloys
+      - add recipes for more metals that exist as powder
       + add to all recipes fluoroketone cold and hot
       + cryostabalized-ruthenium = germanium + ruthenium powder + neon
       + cryostabalized-tungsten = germanium + tungsten powder + argon
@@ -51,21 +52,130 @@ TODO for 0.3.24
       + butanediol + potassium-hydroxide-solution + -> 2-ethylhex-2-enal
       + 2-ethylhex-2-enal + hydrogen -> 2-ethylhexanol
       + phosphorus-pentoxide + 2-ethylhexanol -> D2EHPA
-  - ytterbium
-    - mineral Xenotime + ... -> ytterbium-chloride + ytterbium-fluoride
-    - ytterbium chunk + ... -> ytterbium-chloride + ytterbium-fluoride
-    - ytterbium-chloride + electrolyte -> ytterbium (electrolysis)
-    - ytterbium-fluoride + calcium + argon -> ytterbium
-  - terbium
-    - mineral Xenotime + ... -> terbium-oxide + terbium-sulfate
-    - magnesium-ore + ... -> terbium-sulfate + terbium-nitride
-    - terbium chunk + ... -> terbium-oxide + terbium-hydroxide
-    - terbium-hydroxide -> terbium-oxide (smelting)
-    - terbium-sulfate -> terbium-oxide (smelting)
-    - terbium-nitride + sulfuric-acid -> terbium-sulfate
-    - terbium-oxide + sodium-periodate-solution + argon -> terbium (electrolysis) 
+  + ytterbium
+    + mineral xenotime + ... -> ytterbium-chloride + ytterbium-fluoride
+    + ytterbium chunk + ... -> ytterbium-chloride + ytterbium-fluoride
+    + ytterbium-chloride + electrolyte -> ytterbium (electrolysis)
+    + ytterbium-fluoride + calcium + argon -> ytterbium
+  + terbium
+    + mineral djerfisherite + ... -> terbium-oxide + terbium-sulfate
+    + magnesium-ore + ... -> terbium-sulfate + terbium-nitride
+    + terbium chunk + ... -> terbium-oxide + terbium-hydroxide
+    + terbium-hydroxide + argon -> terbium-oxide (smelting)
+    + terbium-sulfate + oxygen -> terbium-oxide (smelting)
+    + terbium-nitride + sulfuric-acid -> terbium-sulfate
+    + terbium-oxide + sodium-periodate -> terbium (electrolysis) 
 
 TODO for 0.3.25
+  - Add data and science data as intermediates for science packs
+    - Automation science
+      - automation data
+      - mechatronics data
+      - hydraulic control data
+      - mechanised data
+      - drive system data
+    - logistic science
+      - assembly research data
+      - efficiency data
+      - drone routing data
+      - supply chain data
+      - transport efficiency data
+      - inventory control data
+    - military science
+      - ballistics data
+      - weapons system data
+      - combat research data
+      - defense research data
+      - exposive yield research data
+    - chemical science
+      - organics research data
+      - inorganic research data
+      - ion chromatography base data
+      - ion chromatography acid data
+      - inert compunds research data
+      - catalyst research data
+      - element separation research data
+      - toxicity profile data
+      - reactivity data
+    - electronic science
+      - cricuit design data
+      - microchip research data
+      - semiconductor research data
+      - analog signalling data
+      - signal processing data
+      - power regulation data
+    - geological science
+      - mineral data
+      - ore data
+      - vulcanic data
+      - mining research data
+    - material science
+      - refinment data
+      - carbon compunds research data
+      - thermal conductivity research data
+      - crystalline material research data
+      - reinforced material data
+      - matrix material research data
+      - tooling material research data
+    - metallurgic science
+      - casting research data
+      - heat treatment research data
+      - froth analysis data
+      - corrosion resistance research data
+      - intermetallic data
+      - high entropy alloys data
+    - electromagnetic science
+      - plasma flow data
+      - electromagnetic shielding data
+      - magnetic field data
+      - conductivity research data
+      - induction research data
+    - biological science
+      - biopolymer data
+      - toxin profile data
+      - organic matter data
+      - soil microbe data
+      - mutation data
+      - protein synthesis data
+      - bio analysis research data
+    - cryogenic science
+      - thermal shock data
+      - vitrification data
+      - subzero reaction data
+      - cryostabilizing research data
+      - coolant flow research data
+    - production science
+      - manufacturing data
+      - prototyping data
+      - energy usage data
+      - infrastructure data
+    - computer science (I guess any data can be used to create the other data)
+      - algorithm data
+      - datastructure data
+      - protocol data
+      - parallelizing research data
+    - nuclear science
+      - alpha decay
+      - beta decay
+    - space science
+      - propulsion research data
+      - navigation control data
+      - deep space signal data
+      - asteroid composition data
+    - utility science
+      - lubrication research data
+      - structural research data
+      - material handeling research data
+      - process research data
+      - continous improvement data
+
+    - matter science
+    - optimization science
+    - advanced science
+    - singularity science
+    - uniformity science
+    - promethium science
+
   - Find uses for
     - ammonium-chloride-solution
     - phenol
@@ -82,12 +192,17 @@ TODO for 0.3.26
     - krypton asteroid contains clathrate hydrate ice
     - ice is melted and you get the noble gas... just like that
     - maybe add intermediate step where ice is traped in some mineral
-    - asteroid minerals:
+    - create function for generating core fragment and asteroid processing icons
+    - core fragment
+      - Xenotime (Y,Yb)P04(Zr,V)
+        - add crushing and filtration recipe chain
+      - Djerfisherite	K₆(Fe,Ni,Cu)₂₅S₂₆Cl
+        - add crushing and filtration recipe chain
+    - asteroid minerals (created in asteroid reprocessing and advanced reprocessing):
       - Olivine	(Mg,Fe)₂SiO₄
       - Pyroxenem (Mg,Fe,Ca)SiO₃
       - Plagioclase Feldspar (Na,Ca)(Si,Al)₄O₈
       - Troilite FeS
-      - Djerfisherite	K₆(Fe,Ni,Cu)₂₅S₂₆Cl
       - Taenite	Fe-Ni alloy
   - Get some noble gasses from methane ice
     - helium

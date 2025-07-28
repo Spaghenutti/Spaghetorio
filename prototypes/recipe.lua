@@ -481,6 +481,41 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "sp-ytterbium-from-fluoride",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/ytterbium.png", 64,
+                                         "__Spaghetorio__/graphics/icons/ytterbium-fluoride.png", 64),
+    category = "sp-smelting-crystallizing",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 25,
+    ingredients = {
+      {type = "item", name = "sp-ytterbium-fluoride", amount = 3},
+      {type = "item", name = "calcite", amount = 1},
+      {type = "fluid", name = "sp-argon", amount = 10}
+    },
+    results = {
+      {type = "item", name = "sp-ytterbium", amount = 3}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-terbium-oxide-from-hydroxide",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/terbium-oxide.png", 64,
+                                         "__Spaghetorio__/graphics/icons/terbium-hydroxide.png", 64),
+    category = "sp-smelting-crystallizing",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 8,
+    ingredients = {
+      {type = "item", name = "sp-terbium-hydroxide", amount = 1},
+      {type = "fluid", name = "sp-argon", amount = 4}
+    },
+    results = {
+      {type = "item", name = "sp-terbium-oxide", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
     name = "sp-fiberglass",  -- #ForRegEx# - recipe
     category = "sp-smelting-crystallizing",
     enabled = false,
@@ -4640,7 +4675,7 @@ data:extend({
     icon_size = 64,
     scale = 0.25,
     category = "sp-crushing-washing",
-    subgroup = "sp-processed-metal",
+    subgroup = "sp-mineral-resource",
     enabled = false,
     allow_productivity = false,
     energy_required = 10,
@@ -4650,6 +4685,46 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-bromargyrite", amount = 1},
+      {type = "item", name = "sp-sand", probability = 0.3, amount = 2}
+    },
+  },
+  {
+    type = "recipe",
+    name = "sp-djerfisherite",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/icons/djerfisherite.png",
+    icon_size = 64,
+    scale = 0.25,
+    category = "sp-crushing-washing",
+    subgroup = "sp-mineral-resource",
+    enabled = false,
+    allow_productivity = false,
+    energy_required = 12,
+    ingredients = {
+      {type = "item", name = "sp-core-fragment", amount = 1},
+      {type = "fluid", name = "sulfuric-acid", amount = 12}
+    },
+    results = {
+      {type = "item", name = "sp-djerfisherite", amount = 1},
+      {type = "item", name = "sp-sand", probability = 0.3, amount = 2}
+    },
+  },
+  {
+    type = "recipe",
+    name = "sp-xenotime",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/icons/xenotime.png",
+    icon_size = 64,
+    scale = 0.25,
+    category = "sp-crushing-washing",
+    subgroup = "sp-mineral-resource",
+    enabled = false,
+    allow_productivity = false,
+    energy_required = 12,
+    ingredients = {
+      {type = "item", name = "sp-core-fragment", amount = 1},
+      {type = "fluid", name = "sulfuric-acid", amount = 12}
+    },
+    results = {
+      {type = "item", name = "sp-xenotime", amount = 1},
       {type = "item", name = "sp-sand", probability = 0.3, amount = 2}
     },
   },
@@ -6101,6 +6176,21 @@ data:extend({
       {type = "item", name = "sp-platinum-group-metal-concentrate", amount = 1},
       {type = "item", name = "sp-enriched-iron", probability = 0.12, amount = 1}
     }
+  },
+  {
+    type = "recipe",
+    name = "sp-terbium-sulfate",  -- #ForRegEx# - recipe
+    category = "chemistry",
+    energy_required = 5,
+    enabled = false,
+    allow_productivity = true,
+    ingredients = {
+      {type = "item", name = "sp-terbium-nitrate", amount = 1},
+      {type = "fluid", name = "sulfuric-acid", amount = 5},
+    },
+    results = {
+      {type = "item", name = "sp-terbium-sulfate", amount = 1},
+    },
   },
   ------------------------------------------------------------------------------
   -- MARK: advanced-chemistry
@@ -7885,6 +7975,109 @@ data:extend({
       {type = "item", name = "sp-dysprosium-fluoride", probability = 0.2, amount = 1},
     }
   },
+  {
+    type = "recipe",
+    name = "sp-ytterbium-compounds",  -- #ForRegEx# - recipe
+    icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/icons/ytterbium-chloride.png", 64, nil,
+                                        "__Spaghetorio__/graphics/icons/ytterbium-fluoride.png", 64, nil),
+    category = "sp-ion-chromatography",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 30,
+    ingredients = {
+      {type = "item", name = "sp-ytterbium-asteroid-chunk", amount = 3},
+      {type = "fluid", name = "sp-tetraethylammonium", amount = 20},
+      {type = "fluid", name = "sp-methyl-sulfate", amount = 35},
+    },
+    results = {
+      {type = "item", name = "sp-ytterbium-chloride", amount = 1},
+      {type = "item", name = "sp-ytterbium-fluoride", amount = 3},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-ytterbium-compounds-from-xenotime",  -- #ForRegEx# - recipe
+    icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/icons/ytterbium-chloride.png", 64, nil,
+                                        "__Spaghetorio__/graphics/icons/ytterbium-fluoride.png", 64, nil),
+    category = "sp-ion-chromatography",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 45,
+    ingredients = {
+      {type = "item", name = "sp-xenotime", amount = 3},
+      {type = "fluid", name = "sp-tetraethylammonium", amount = 40},
+      {type = "fluid", name = "sp-methyl-sulfate", amount = 60},
+    },
+    results = {
+      {type = "item", name = "sp-ytterbium-chloride", probability = 0.3, amount = 2},
+      {type = "item", name = "sp-ytterbium-fluoride", probability = 0.5, amount = 1},
+      {type = "item", name = "sp-zirconia", probability = 0.75, amount = 2},
+      {type = "item", name = "sp-vanadium-ore", probability = 0.6, amount = 1},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-terbium-compounds",  -- #ForRegEx# - recipe
+    icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/icons/terbium-oxide.png", 64, nil,
+                                        "__Spaghetorio__/graphics/icons/terbium-hydroxide.png", 64, nil),
+    category = "sp-ion-chromatography",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 60,
+    ingredients = {
+      {type = "item", name = "sp-terbium-asteroid-chunk", amount = 4},
+      {type = "fluid", name = "sp-tetrapropylammonium", amount = 15},
+      {type = "fluid", name = "sp-methyl-sulfate", amount = 30},
+    },
+    results = {
+      {type = "item", name = "sp-terbium-oxide", amount = 4},
+      {type = "item", name = "sp-terbium-hydroxide", amount = 1},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-terbium-compounds-from-magnesium",  -- #ForRegEx# - recipe
+    icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/icons/terbium-sulfate.png", 64, nil,
+                                        "__Spaghetorio__/graphics/icons/terbium-nitrate.png", 64, nil),
+    category = "sp-ion-chromatography",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 75,
+    ingredients = {
+      {type = "item", name = "sp-enriched-magnesium", amount = 1},
+      {type = "fluid", name = "sp-tetrapropylammonium", amount = 10},
+      {type = "fluid", name = "sp-methyl-sulfate", amount = 15},
+    },
+    results = {
+      {type = "item", name = "sp-terbium-sulfate", probability = 0.08, amount = 1},
+      {type = "item", name = "sp-terbium-nitrate", probability = 0.12, amount = 1},
+      {type = "item", name = "sp-enriched-magnesium", probability = 0.22, amount = 1},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-terbium-compounds-from-djerfisherite",  -- #ForRegEx# - recipe
+    icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/icons/terbium-oxide.png", 64, nil,
+                                        "__Spaghetorio__/graphics/icons/terbium-hydroxide.png", 64, nil),
+    category = "sp-ion-chromatography",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 90,
+    ingredients = {
+      {type = "item", name = "sp-djerfisherite", amount = 6},
+      {type = "fluid", name = "sp-tetrapropylammonium", amount = 40},
+      {type = "fluid", name = "sp-methyl-sulfate", amount = 70},
+    },
+    results = {
+      {type = "item", name = "sp-terbium-oxide", amount = 3},
+      {type = "item", name = "sp-terbium-hydroxide", amount = 2},
+      {type = "item", name = "sp-potassium-chloride", amount = 10},
+      {type = "item", name = "sulfur", amount = 5},
+      {type = "item", name = "iron-ore", amount = 3},
+      {type = "item", name = "sp-nickel-ore", amount = 2},
+      {type = "item", name = "copper-ore", amount = 1},
+    }
+  },
   ------------------------------------------------------------------------------
   -- MARK: oil-processing
   ------------------------------------------------------------------------------
@@ -8392,6 +8585,54 @@ data:extend({
     results = {
       {type = "item", name = "sp-cryostabalized-tungsten", probability = 0.3, amount = 2},
       {type = "fluid", name = "fluoroketone-hot", amount = 10}
+    },
+    crafting_machine_tint = {
+      primary = {r = 0.800, g = 0.000, b = 0.100, a = 0.200},
+      secondary = {r = 0.500, g = 0.100, b = 0.300, a = 0.357},
+      tertiary = {r = 0.430, g = 0.000, b = 0.450, a = 0.200},
+      quaternary = {r = 0.800, g = 0.000, b = 0.100, a = 0.900},
+    },
+  },
+  {
+    type = "recipe",
+    name = "sp-argon-from-methane-ice",  -- #ForRegEx# - recipe
+    icons = util.icon.melting_recipe_icon(data.raw.item["sp-methane-ice"], data.raw.fluid["sp-argon"]),
+    icon_size = 64,
+    mip_maps = 4,
+    category = "cryogenics",
+    subgroup = "sp-ice",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 10,
+    ingredients = {
+      {type = "item", name = "sp-methane-ice", amount = 1},
+    },
+    results = {
+      {type = "fluid", name = "sp-methane", amount = 15},
+    },
+    crafting_machine_tint = {
+      primary = {r = 0.800, g = 0.000, b = 0.100, a = 0.200},
+      secondary = {r = 0.500, g = 0.100, b = 0.300, a = 0.357},
+      tertiary = {r = 0.430, g = 0.000, b = 0.450, a = 0.200},
+      quaternary = {r = 0.800, g = 0.000, b = 0.100, a = 0.900},
+    },
+  },
+  {
+    type = "recipe",
+    name = "sp-xenon-from-methane-ice",  -- #ForRegEx# - recipe
+    icons = util.icon.melting_recipe_icon(data.raw.item["sp-methane-ice"], data.raw.fluid["sp-xenon"]),
+    icon_size = 64,
+    mip_maps = 4,
+    category = "cryogenics",
+    subgroup = "sp-ice",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 15,
+    ingredients = {
+      {type = "item", name = "sp-methane-ice", amount = 1},
+    },
+    results = {
+      {type = "fluid", name = "sp-xenon", amount = 10},
     },
     crafting_machine_tint = {
       primary = {r = 0.800, g = 0.000, b = 0.100, a = 0.200},
@@ -9484,6 +9725,26 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-phosphorus-pentoxide", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-terbium-oxide-from-sulfate",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/terbium-oxide.png", 64,
+                                         "__Spaghetorio__/graphics/icons/terbium-sulfate.png", 64),
+    category = "sp-oxidizing",
+    subgroup = "sp-processed-resource",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 20,
+    ingredients = {
+      {type = "item", name = "sp-terbium-sulfate", amount = 1},
+      {type = "fluid", name = "sp-oxygen", amount = 4}
+    },
+    results = {
+      {type = "item", name = "sp-terbium-oxide", probability = 0.25, amount = 1},
+      {type = "item", name = "sp-terbium-sulfate", probability = 0.2, amount = 1},
+      {type = "item", name = "sulfur", probability = 0.5, amount = 1},
     }
   },
   ------------------------------------------------------------------------------
@@ -11906,6 +12167,65 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-iridium-powder", amount = 1},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-sodium-and-chlorine",  -- #ForRegEx# - recipe
+    -- Update icons here, search: "-- Add aicon changes here"
+    icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/icons/sodium.png", 64, nil,
+                                        "__Spaghetorio__/graphics/krastorio/icons/fluids/chlorine.png", 64, nil),
+    icon_size = 256,
+    scale = 0.25,
+    category = "sp-kr-electrolysis",
+    subgroup = "sp-processed-metal",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 2,
+    ingredients = {
+      {type = "item", name = "sp-salt", amount = 2},
+    },
+    results = {
+      {type = "item", name = "sp-sodium", amount = 2},
+      {type = "fluid", name = "sp-chlorine", amount = 3}
+    },
+    crafting_machine_tint = {
+      primary = {r = 1.000, g = 1.000, b = 1.000, a = 1.000},
+      secondary = {r = 0.771, g = 0.771, b = 0.771, a = 1.000},
+      tertiary = {r = 0.768, g = 0.665, b = 0.762, a = 1.000},
+      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-ytterbium-from-chloride",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/ytterbium.png", 64,
+                                         "__Spaghetorio__/graphics/icons/ytterbium-chloride.png", 64),
+    category = "sp-kr-electrolysis",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 20,
+    ingredients = {
+      {type = "item", name = "sp-ytterbium-chloride", amount = 1},
+      {type = "fluid", name = "electrolyte", amount = 10},
+    },
+    results = {
+      {type = "item", name = "sp-ytterbium", amount = 1},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-terbium",  -- #ForRegEx# - recipe
+    category = "sp-kr-electrolysis",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 12,
+    ingredients = {
+      {type = "item", name = "sp-terbium-oxide", amount = 1},
+      {type = "fluid", name = "sp-sodium-periodate", amount = 5},
+    },
+    results = {
+      {type = "item", name = "sp-terbium", amount = 1},
     }
   },
   ------------------------------------------------------------------------------
@@ -21104,33 +21424,6 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-cubit", amount = 10}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-sodium-and-chlorine",  -- #ForRegEx# - recipe
-    -- Update icons here, search: "-- Add aicon changes here"
-    icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/icons/sodium.png", 64, nil,
-                                        "__Spaghetorio__/graphics/krastorio/icons/fluids/chlorine.png", 64, nil),
-    icon_size = 256,
-    scale = 0.25,
-    category = "sp-kr-electrolysis",
-    subgroup = "sp-processed-metal",
-    enabled = false,
-    allow_productivity = true,
-    energy_required = 2,
-    ingredients = {
-      {type = "item", name = "sp-salt", amount = 2},
-    },
-    results = {
-      {type = "item", name = "sp-sodium", amount = 2},
-      {type = "fluid", name = "sp-chlorine", amount = 3}
-    },
-    crafting_machine_tint = {
-      primary = {r = 1.000, g = 1.000, b = 1.000, a = 1.000},
-      secondary = {r = 0.771, g = 0.771, b = 0.771, a = 1.000},
-      tertiary = {r = 0.768, g = 0.665, b = 0.762, a = 1.000},
-      quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
     }
   },
   {
