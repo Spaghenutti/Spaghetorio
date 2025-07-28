@@ -14437,7 +14437,7 @@ data:extend({
     max_level = 30,
     upgrade = true
   },
-    {
+  {
     type = "technology",
     name = "sp-weapon-shooting-speed-31",  -- #ForRegEx# - infinite-technology
     icons = core_util.technology_icon_constant_speed("__base__/graphics/technology/weapon-shooting-speed-3.png"),
@@ -14481,6 +14481,44 @@ data:extend({
         {"sp-metallurgic-science-pack-2", 1},
         {"sp-electromagnetic-science-pack-2", 1},
         {"production-science-pack", 1}
+      },
+      time = 60
+    },
+    max_level = "infinite",
+    upgrade = true
+  },
+  {
+    type = "technology",
+    name = "sp-additional-cargo-landing-pad",  -- #ForRegEx# - infinite-technology
+    icon_size = 256,
+    icon_mipmaps = 4,
+    icons = core_util.technology_icon_constant_stack_size("__space-age__/graphics/technology/space-platform.png"),
+    -- icons = core_util.technology_icon_constant_speed("__base__/graphics/technology/weapon-shooting-speed-3.png"),
+    effects = {
+      {
+        type = "cargo-landing-pad-count",
+        modifier = 1
+      }
+    },
+    prerequisites = {
+      "space-science-pack"
+    },
+    unit = {
+      count_formula = "L*500",
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-metallurgic-science-pack-2", 1},
+        {"sp-electromagnetic-science-pack-2", 1},
+        {"production-science-pack", 1},
+        {"utility-science-pack", 1},
+        {"cryogenic-science-pack", 1},
+        {"agricultural-science-pack", 1},
+        {"sp-computer-science-pack-2", 1}
       },
       time = 60
     },

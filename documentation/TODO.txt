@@ -1,61 +1,44 @@
 
 TODO for 0.3.24
-  - Add recipe for biolab
-    - Verify all recipes work with a crafting machine
-    - radioisotope-thermoelectric-generator
-      - PuO2
-      - radioisotope-casing
-        - boron-carbide
-        - fiberglass
-        - titanium-ruthenium
-        - lead-telluride
-        - germanium-antimony-tellurium
-      - thermocouple
-      - composites
-      - graphite-impact-shell
-      - heatsink
-    - bio-sample-cryovial
-      - Verify 2 fluid intputs for crafting machine
-      - high-density-structure-gel
-        - spoilage
-        - heavy-oil
-        - biocrude-oil
-        - yumako-mash
-      - croygenic-gel
-        - fluoroketone cold and hot
-        - bromine-trifluorine
-        - cellulose
-        - jelly
-      - bio-polymer-mesh
-        - iodethene
-        - glyoxilic-acid
-        - fiberglass
-      - filter
-      - glass
-      - pseudo-palladium
-      - cryostabalized-ruthenium
-    - cryostabalized alloys
-      - add to all recipes fluoroketone cold and hot
-      - cryostabalized-ruthenium = germanium + ruthenium powder + neon
-      - cryostabalized-tungsten = germanium + tungsten powder + argon
-  - Add uses to
-    - fiberglass (material-science) prerequisite for optic-fiber
-    - pseudo-palladium 50%Rh, 50%Ag
-    - titanium-ruthenium 99% - 1%
-    - tohoku-alloy 5%Cr, 7%Co, 4%Ta, 10%ru, 14%Al, 60%Ni 
-    - ruthenium-rodium 75-25
-  - Fix noble gases recipe chain
-    - krypton asteroid contains clathrate hydrate ice
-    - ice is melted and you get the noble gas... just like that
-    - maybe add intermediate step where ice is traped in some mineral
-    - asteroid minerals:
-      - Olivine	(Mg,Fe)₂SiO₄
-      - Pyroxenem (Mg,Fe,Ca)SiO₃
-      - Plagioclase Feldspar (Na,Ca)(Si,Al)₄O₈
-      - Troilite FeS
-      - Djerfisherite	K₆(Fe,Ni,Cu)₂₅S₂₆Cl
-      - Taenite	Fe-Ni alloy
-  - Move krypton asteroid close to edge of solar system since noble gases are frozen
+  + Add recipe for biolab
+    + Verify all recipes work with a crafting machine
+    + radioisotope-thermoelectric-generator
+      + PuO2
+      + radioisotope-casing
+        + boron-carbide
+        + fiberglass
+        + titanium-ruthenium
+        + lead-telluride
+        + germanium-antimony-tellurium
+      + thermocouple
+      + composites
+      + graphite-impact-shell
+      + heatsink
+    + bio-sample-cryovial
+      + Verify 2 fluid intputs for crafting machine
+      + high-density-structure-gel
+        + spoilage
+        + heavy-oil
+        + biocrude-oil
+        + yumako-mash
+      + croygenic-gel
+        + fluoroketone cold and hot
+        + bromine-trifluorine
+        + cellulose
+        + jelly
+      + bio-polymer-mesh
+        + iodethene
+        + glyoxilic-acid
+        + fiberglass
+      + filter
+      + glass
+      + pseudo-palladium
+      + cryostabalized-ruthenium
+    + cryostabalized alloys
+      + add to all recipes fluoroketone cold and hot
+      + cryostabalized-ruthenium = germanium + ruthenium powder + neon
+      + cryostabalized-tungsten = germanium + tungsten powder + argon
+  + Move krypton asteroid close to edge of solar system since noble gases are frozen
   + Dysprosium
     + dysprosium chunk + ... -> dysprosium-oxide + dysprosium-nitrate + dysprosium-hydroxide + dysprosium-fluoride
                                 high quantity      medium quantity      low quantity           low quantity
@@ -83,14 +66,6 @@ TODO for 0.3.24
     - terbium-oxide + sodium-periodate-solution + argon -> terbium (electrolysis) 
 
 TODO for 0.3.25
-  - Add uses for mineral resources
-    - taenite
-    - djerfisherite
-    - plagioclase
-    - troilite
-    - olivine
-    - pyroxenem
-    - xenotime
   - Find uses for
     - ammonium-chloride-solution
     - phenol
@@ -98,27 +73,36 @@ TODO for 0.3.25
     - sodium-bisulfate
   - Add recipe chains and uses for
     - sodium-hypochlorite-solution
-  - krypton
-    - recipe chain
-    - technology
 
 TODO for 0.3.26
   - update alloy-properties.csv
-  - Biolab has to be unlocked before automation science 3
-  - Add multiple landing pads
-  - Fix asteroid reprocessing
+  + Biolab has to be unlocked before automation science 3
+  + Add multiple landing pads
+  - Fix noble gases recipe chain
+    - krypton asteroid contains clathrate hydrate ice
+    - ice is melted and you get the noble gas... just like that
+    - maybe add intermediate step where ice is traped in some mineral
+    - asteroid minerals:
+      - Olivine	(Mg,Fe)₂SiO₄
+      - Pyroxenem (Mg,Fe,Ca)SiO₃
+      - Plagioclase Feldspar (Na,Ca)(Si,Al)₄O₈
+      - Troilite FeS
+      - Djerfisherite	K₆(Fe,Ni,Cu)₂₅S₂₆Cl
+      - Taenite	Fe-Ni alloy
   - Get some noble gasses from methane ice
+    - helium
+    - (neon)
+    - argon
+    - (krypton)
+    - xenon
+    - radon (maybe later)
   - Use xenon for breeder reactor?
-  - Fix leadstone / lead recipe chain
   - Add methane and co2 from atmosphere
 
 TODO for 0.3.27
-  - Unlock legendary quality much later in tech tree
-  - Update automation science 3
-    - Add nuclear science as requirement
-  - Update logistic science 3
-  - Update geological science 3
-  - Add recipe chains for core mining
+  + Update automation science 3
+    + Add nuclear science as requirement
+  + Add recipe chains for core mining
   + Uses for bismuth
     + refined from tin and lead
     + sodium carbonate solution + lead = lead ingot + bismuth
@@ -139,7 +123,34 @@ TODO for 0.3.28
   - Add more rare metals comming from lava
   - Fix casting icons
 
+TODO for 0.3.29
+  - Add uses to
+    - cryostabalized-ruthenium
+    - cryostabalized-tungsten
+    - fiberglass (material-science) prerequisite for optic-fiber
+    - pseudo-palladium 50%Rh, 50%Ag
+    - titanium-ruthenium 99% - 1%
+    - tohoku-alloy 5%Cr, 7%Co, 4%Ta, 10%ru, 14%Al, 60%Ni 
+    - ruthenium-rodium 75-25
+
+TODO for 0.3.30
+  - Update logistic science 3
+  - Update geological science 3
+  - Unlock legendary quality much later in tech tree
+
+TODO for 0.3.31
+  - Fix asteroid reprocessing
+  - Add uses and recipe chains for mineral resources
+    - taenite
+    - djerfisherite
+    - plagioclase
+    - troilite
+    - olivine
+    - pyroxenem
+    - xenotime
+
 TODO for 0.4.0
+  - Fix leadstone / lead recipe chain
   - Add magnet to fast inserter
 
 TODO for 0.4.1
