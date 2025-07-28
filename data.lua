@@ -113,6 +113,7 @@ require("compatibility.EverythingOnNauvis.entity")
 require("compatibility.EverythingOnNauvis.resource")
 
 -- factorio-base
+require("compatibility.factorio-base.building")
 require("compatibility.factorio-base.character")
 require("compatibility.factorio-base.inventory-settings")
 require("compatibility.factorio-base.item")

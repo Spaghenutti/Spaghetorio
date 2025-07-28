@@ -10025,6 +10025,30 @@ data:extend({
     }
   },
   ------------------------------------------------------------------------------
+  -- MARK: crafting-with-two-fluids
+  ------------------------------------------------------------------------------
+  {
+    type = "recipe",
+    name = "sp-bio-sample-cryovial",  -- #ForRegEx# - recipe
+    category = "sp-crafting-with-two-fluids",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 30,
+    ingredients = {
+      {type = "fluid", name = "sp-high-density-structure-gel", amount = 20},
+      {type = "fluid", name = "sp-croygenic-gel", amount = 10},
+      {type = "item", name = "sp-bio-polymer-mesh", amount = 5},
+      {type = "item", name = "sp-filter", amount = 10},
+      {type = "item", name = "sp-glass", amount = 6},
+      {type = "item", name = "sp-heatsink", amount = 5},
+      {type = "item", name = "sp-pseudo-palladium", amount = 3},
+      {type = "item", name = "sp-cryostabalized-ruthenium", amount = 4}
+    },
+    results = {
+      {type = "item", name = "sp-bio-sample-cryovial", amount = 1}
+    }
+  },
+  ------------------------------------------------------------------------------
   -- MARK: electromagnetics
   ------------------------------------------------------------------------------
   {
@@ -13560,27 +13584,6 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-quantum-data-plane", amount = 1}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-bio-sample-cryovial",  -- #ForRegEx# - recipe
-    category = "advanced-crafting",
-    enabled = false,
-    allow_productivity = true,
-    energy_required = 30,
-    ingredients = {
-      {type = "fluid", name = "sp-high-density-structure-gel", amount = 20},
-      {type = "fluid", name = "sp-croygenic-gel", amount = 10},
-      {type = "item", name = "sp-bio-polymer-mesh", amount = 5},
-      {type = "item", name = "sp-filter", amount = 10},
-      {type = "item", name = "sp-glass", amount = 6},
-      {type = "item", name = "sp-heatsink", amount = 5},
-      {type = "item", name = "sp-pseudo-palladium", amount = 3},
-      {type = "item", name = "sp-cryostabalized-ruthenium", amount = 4}
-    },
-    results = {
-      {type = "item", name = "sp-bio-sample-cryovial", amount = 1}
     }
   },
   ------------------------------------------------------------------------------

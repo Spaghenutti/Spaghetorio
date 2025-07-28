@@ -61,7 +61,15 @@ data:extend({
         pipe_picture = assemblerkpipepictures(),
         pipe_covers = pipecoverspictures(),
         volume = 1000,
-        pipe_connections = {{flow_direction="input", direction = defines.direction.north, position = {0, -2}}},
+        pipe_connections = {{flow_direction="input", direction = defines.direction.north, position = {-1, -2}}},
+        secondary_draw_orders = {north = -1}
+      },
+      {
+        production_type = "input",
+        pipe_picture = assemblerkpipepictures(),
+        pipe_covers = pipecoverspictures(),
+        volume = 1000,
+        pipe_connections = {{flow_direction="input", direction = defines.direction.north, position = {1, -2}}},
         secondary_draw_orders = {north = -1}
       },
       {
@@ -69,7 +77,15 @@ data:extend({
         pipe_picture = assemblerkpipepictures(),
         pipe_covers = pipecoverspictures(),
         volume = 1000,
-        pipe_connections = {{flow_direction="output", direction = defines.direction.south, position = {0, 2}}},
+        pipe_connections = {{flow_direction="output", direction = defines.direction.south, position = {-1, 2}}},
+        secondary_draw_orders = {north = -1}
+      },
+      {
+        production_type = "output",
+        pipe_picture = assemblerkpipepictures(),
+        pipe_covers = pipecoverspictures(),
+        volume = 1000,
+        pipe_connections = {{flow_direction="output", direction = defines.direction.south, position = {1, 2}}},
         secondary_draw_orders = {north = -1}
       }
     },
@@ -170,6 +186,7 @@ data:extend({
       "crafting",
       "advanced-crafting",
       "crafting-with-fluid",
+      "sp-crafting-with-two-fluids"
     },
     vehicle_impact_sound = sounds.generic_impact,
     working_sound = {

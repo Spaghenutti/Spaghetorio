@@ -139,6 +139,10 @@ data:extend({
   },
   {
     type = "recipe-category",
+    name = "sp-crafting-with-two-fluids",  -- #ForRegEx# - recipe-category
+  },
+  {
+    type = "recipe-category",
     name = "sp-manufacturing",  -- #ForRegEx# - recipe-category
   },
   {
