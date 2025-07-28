@@ -12640,6 +12640,22 @@ data:extend({
         type = "unlock-recipe",
         recipe = "sp-automation-science-pack-3"
       },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-gear-mechanism-experiment-data"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-hydraulic-control-data"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-machine-data"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-mechatronics-data"
+      },
     },
     prerequisites = {
       "biolab"

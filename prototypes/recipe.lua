@@ -436,8 +436,7 @@ data:extend({
     enabled = false,
     allow_productivity = true,
     hide_from_player_crafting = true,
-    ingredients =
-    {
+    ingredients = {
       {type = "item", name = "sp-sand", amount = 8}
     },
     results = {
@@ -2444,8 +2443,7 @@ data:extend({
     enabled = false,
     allow_productivity = true,
     energy_required = 40,
-    ingredients =
-    {
+    ingredients = {
       {type = "item", name = "metallurgic-science-pack", amount = 20},
       {type = "item", name = "sp-aluminum-brass", amount = 5},
       {type = "item", name = "sp-chromium-cobalt", amount = 5},
@@ -2466,8 +2464,7 @@ data:extend({
     enabled = false,
     allow_productivity = true,
     energy_required = 80,
-    ingredients =
-    {
+    ingredients = {
       {type = "item", name = "sp-titanium-ingot", amount = 20},
       {type = "item", name = "sp-ruthenium", amount = 1},
     },
@@ -2482,8 +2479,7 @@ data:extend({
     enabled = false,
     allow_productivity = true,
     energy_required = 60,
-    ingredients =
-    {
+    ingredients = {
       {type = "item", name = "sp-nickel-ingot", amount = 12},
       {type = "item", name = "sp-aluminum-sheet", amount = 5},
       {type = "item", name = "sp-cobalt-billet", amount = 3},
@@ -5385,8 +5381,7 @@ data:extend({
     enabled = false,
     allow_productivity = true,
     energy_required = 60,
-    ingredients =
-    {
+    ingredients = {
       {type = "item", name = "sp-geological-science-pack-2", amount = 10},
       {type = "fluid", name = "sp-phosphoric-acid", amount = 30},
       {type = "fluid", name = "sp-aqueous-niobium", amount = 10},
@@ -6331,8 +6326,7 @@ data:extend({
     enabled = false,
     allow_productivity = true,
     energy_required = 48,
-    ingredients =
-    {
+    ingredients = {
       {type = "item", name = "sp-chemical-science-pack-2", amount = 10},
       {type = "item", name = "sp-ion-chromatography-data", amount = 5},
       {type = "item", name = "sp-catalyst-research-data", amount = 5},
@@ -7388,8 +7382,7 @@ data:extend({
     enabled = false,
     allow_productivity = true,
     energy_required = 24,
-    ingredients =
-    {
+    ingredients = {
       {type = "item", name = "sp-material-science-pack-1", amount = 20},
       {type = "fluid", name = "sp-epichlorohydrin", amount = 10},
       {type = "fluid", name = "sp-sulfamate", amount = 10},
@@ -7409,8 +7402,7 @@ data:extend({
     enabled = false,
     allow_productivity = true,
     energy_required = 24,
-    ingredients =
-    {
+    ingredients = {
       {type = "item", name = "chemical-science-pack", amount = 20},
       {type = "item", name = "sp-titanium-nitride", amount = 5},
       {type = "item", name = "sp-potassium-hydroxide", amount = 5},
@@ -8439,8 +8431,7 @@ data:extend({
     allow_productivity = false,
     allow_decomposition = false,
     energy_required = 6,
-    ingredients =
-    {
+    ingredients = {
       {type = "fluid", name = "water", amount = 20},
     },
     results = {
@@ -8652,8 +8643,7 @@ data:extend({
     enabled = false,
     allow_productivity = true,
     energy_required = 10,
-    ingredients =
-    {
+    ingredients = {
       {type = "item", name = "sp-boron-pillet", amount = 2},
       {type = "item", name = "sp-phosphorus", amount = 3},
     },
@@ -10310,6 +10300,26 @@ data:extend({
       {type = "item", name = "sp-bio-sample-cryovial", amount = 1}
     }
   },
+  {
+    type = "recipe",
+    name = "sp-hydraulic-control-data",  -- #ForRegEx# - recipe
+    category = "sp-crafting-with-two-fluids",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 16,
+    ingredients = {
+      {type = "item", name = "sp-empty-research-data-card", amount = 1},
+      {type = "fluid", name = "sp-high-density-structure-gel", amount = 10},
+      {type = "fluid", name = "lubricant", amount = 10},
+      {type = "item", name = "sp-vacuum-pump", amount = 1},
+      {type = "item", name = "sp-turbopump", amount = 1},
+      {type = "item", name = "sp-compressor", amount = 1},
+      {type = "item", name = "sp-high-pressure-fan", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-hydraulic-control-data", amount = 1}
+    }
+  },
   ------------------------------------------------------------------------------
   -- MARK: electromagnetics
   ------------------------------------------------------------------------------
@@ -10320,8 +10330,7 @@ data:extend({
     enabled = false,
     allow_productivity = true,
     energy_required = 40,
-    ingredients =
-    {
+    ingredients = {
       {type = "item", name = "electromagnetic-science-pack", amount = 20},
       {type = "item", name = "flying-robot-frame", amount = 3},
       {type = "item", name = "sp-transformer", amount = 3},
@@ -10518,8 +10527,7 @@ data:extend({
     enabled = false,
     allow_productivity = true,
     energy_required = 20,
-    ingredients =
-    {
+    ingredients = {
       {type = "item", name = "sp-boron-pillet", amount = 4},
       {type = "item", name = "carbon", amount = 2},
     },
@@ -10534,8 +10542,7 @@ data:extend({
     enabled = false,
     allow_productivity = true,
     energy_required = 12,
-    ingredients =
-    {
+    ingredients = {
       {type = "item", name = "sp-boron-pillet", amount = 6},
       {type = "item", name = "sp-silicon", amount = 1},
     },
@@ -13210,8 +13217,7 @@ data:extend({
     enabled = false,
     allow_productivity = true,
     energy_required = 69,
-    ingredients =
-    {
+    ingredients = {
       {type = "item", name = "iron-plate", amount = 69}
     },
     results = {
@@ -13225,8 +13231,7 @@ data:extend({
     enabled = false,
     allow_productivity = true,
     energy_required = 24,
-    ingredients =
-    {
+    ingredients = {
       {type = "item", name = "sp-blank-tech-card", amount = 5},
       {type = "item", name = "sp-steel-beam", amount = 5},
       {type = "item", name = "sp-aluminum-sheet", amount = 5},
@@ -13243,8 +13248,7 @@ data:extend({
     enabled = false,
     allow_productivity = true,
     energy_required = 24,
-    ingredients =
-    {
+    ingredients = {
       {type = "item", name = "sp-blank-tech-card", amount = 5},
       {type = "item", name = "sp-resistor", amount = 10},
       {type = "item", name = "sp-capacitor", amount = 5},
@@ -13262,8 +13266,7 @@ data:extend({
     enabled = false,
     allow_productivity = true,
     energy_required = 24,
-    ingredients =
-    {
+    ingredients = {
       {type = "item", name = "logistic-science-pack", amount = 20},
       {type = "item", name = "sp-condenser-coil", amount = 8},
       {type = "item", name = "flying-robot-frame", amount = 5},
@@ -13281,8 +13284,7 @@ data:extend({
     enabled = false,
     allow_productivity = true,
     energy_required = 24,
-    ingredients =
-    {
+    ingredients = {
       {type = "item", name = "military-science-pack", amount = 20},
       {type = "item", name = "piercing-rounds-magazine", amount = 20},
       {type = "item", name = "shotgun-shell", amount = 20},
@@ -13302,8 +13304,7 @@ data:extend({
     enabled = false,
     allow_productivity = true,
     energy_required = 24,
-    ingredients =
-    {
+    ingredients = {
       {type = "item", name = "sp-electronic-science-pack-1", amount = 20},
       {type = "item", name = "sp-variable-frequenzy-drive", amount = 2},
       {type = "item", name = "sp-piezoelectric-sensor", amount = 5},
@@ -13538,8 +13539,7 @@ data:extend({
     enabled = false,
     allow_productivity = true,
     energy_required = 24,
-    ingredients =
-    {
+    ingredients = {
       {type = "item", name = "sp-blank-tech-card", amount = 5},
       {type = "item", name = "wood", amount = 5},
       {type = "item", name = "sp-sand", amount = 10},
@@ -13559,8 +13559,7 @@ data:extend({
     enabled = false,
     allow_productivity = true,
     energy_required = 24,
-    ingredients =
-    {
+    ingredients = {
       {type = "item", name = "sp-geological-science-pack-1", amount = 20},
       {type = "item", name = "sp-titanium-ore", amount = 5},
       {type = "item", name = "sp-zirconium-ore", amount = 5},
@@ -13581,8 +13580,7 @@ data:extend({
     enabled = false,
     allow_productivity = true,
     energy_required = 60,
-    ingredients =
-    {
+    ingredients = {
       {type = "item", name = "sp-computer-science-pack-2", amount = 20},
       {type = "item", name = "sp-advanced-processing-unit", amount = 20},
       {type = "item", name = "sp-quantum-data-plane", amount = 5},
@@ -13616,8 +13614,7 @@ data:extend({
     enabled = false,
     allow_productivity = true,
     energy_required = 24,
-    ingredients =
-    {
+    ingredients = {
       {type = "item", name = "sp-empty-research-data-card", amount = 5},
       {type = "item", name = "sp-nickel-rhenium", amount = 5},
       {type = "item", name = "sp-nickel-rhodium", amount = 5},
@@ -13634,8 +13631,7 @@ data:extend({
     enabled = false,
     allow_productivity = true,
     energy_required = 24,
-    ingredients =
-    {
+    ingredients = {
       {type = "item", name = "sp-rare-metals-alloy", amount = 5},
       {type = "item", name = "sp-graphene", amount = 5},
       {type = "item", name = "sp-tritium", amount = 5},
@@ -14352,8 +14348,7 @@ data:extend({
     enabled = false,
     allow_productivity = true,
     energy_required = 18,
-    ingredients =
-    {
+    ingredients = {
       {type = "item", name = "sp-boron-carbide", amount = 1},
       {type = "item", name = "sp-fiberglass", amount = 1},
       {type = "item", name = "sp-germanium-antimony-tellurium", amount = 1},
@@ -14370,8 +14365,7 @@ data:extend({
     enabled = false,
     allow_productivity = true,
     energy_required = 30,
-    ingredients =
-    {
+    ingredients = {
       {type = "item", name = "sp-plutonium-oxide", amount = 5},
       {type = "item", name = "sp-radioisotope-casing", amount = 1},
       {type = "item", name = "sp-thermocouple", amount = 1},
@@ -14445,8 +14439,7 @@ data:extend({
     enabled = false,
     allow_productivity = true,
     energy_required = 24,
-    ingredients =
-    {
+    ingredients = {
       {type = "item", name = "automation-science-pack", amount = 20},
       {type = "item", name = "sp-plate-heat-exchanger", amount = 5},
       {type = "item", name = "sp-vibration-dampener", amount = 5},
@@ -14575,8 +14568,7 @@ data:extend({
     enabled = false,
     allow_productivity = false,
     energy_required = 2 * 3 / 4,
-    ingredients =
-    {
+    ingredients = {
       {type = "item", name = "sp-polonium-213", amount = 1},
       {type = "item", name = "sp-empty-research-data-card", amount = 1},
     },
@@ -14596,8 +14588,7 @@ data:extend({
     enabled = false,
     allow_productivity = false,
     energy_required = 1 * 3 / 4,
-    ingredients =
-    {
+    ingredients = {
       {type = "item", name = "sp-astatine-213", amount = 1},
       {type = "item", name = "sp-empty-research-data-card", amount = 1},
     },
@@ -14617,8 +14608,7 @@ data:extend({
     enabled = false,
     allow_productivity = false,
     energy_required = 6 * 3 / 4,
-    ingredients =
-    {
+    ingredients = {
       {type = "item", name = "sp-astatine-217", amount = 1},
       {type = "item", name = "sp-empty-research-data-card", amount = 1},
     },
@@ -14638,8 +14628,7 @@ data:extend({
     enabled = false,
     allow_productivity = false,
     energy_required = 1.5 * 3 / 4,
-    ingredients =
-    {
+    ingredients = {
       {type = "item", name = "sp-francium-217", amount = 1},
       {type = "item", name = "sp-empty-research-data-card", amount = 1},
     },
@@ -14659,8 +14648,7 @@ data:extend({
     enabled = false,
     allow_productivity = false,
     energy_required = 30 * 3 / 4,
-    ingredients =
-    {
+    ingredients = {
       {type = "item", name = "sp-francium-221", amount = 1},
       {type = "item", name = "sp-empty-research-data-card", amount = 2},
     },
@@ -14680,8 +14668,7 @@ data:extend({
     enabled = false,
     allow_productivity = false,
     energy_required = 2 * 3 / 4,
-    ingredients =
-    {
+    ingredients = {
       {type = "item", name = "sp-actinium-221", amount = 1},
       {type = "item", name = "sp-empty-research-data-card", amount = 1},
     },
@@ -14701,8 +14688,7 @@ data:extend({
     enabled = false,
     allow_productivity = false,
     energy_required = 24 * 3 / 4,
-    ingredients =
-    {
+    ingredients = {
       {type = "item", name = "sp-actinium-225", amount = 1},
       {type = "item", name = "sp-empty-research-data-card", amount = 1},
     },
@@ -14722,8 +14708,7 @@ data:extend({
     enabled = false,
     allow_productivity = false,
     energy_required = 16 * 3 / 4,
-    ingredients =
-    {
+    ingredients = {
       {type = "item", name = "sp-thorium-225", amount = 1},
       {type = "item", name = "sp-empty-research-data-card", amount = 1},
     },
@@ -14743,8 +14728,7 @@ data:extend({
     enabled = false,
     allow_productivity = false,
     energy_required = 3000 * 3 / 4,
-    ingredients =
-    {
+    ingredients = {
       {type = "item", name = "sp-thorium-229", amount = 1},
       {type = "item", name = "sp-empty-research-data-card", amount = 5},
     },
@@ -14764,8 +14748,7 @@ data:extend({
     enabled = false,
     allow_productivity = false,
     energy_required = 90 * 3 / 4,
-    ingredients =
-    {
+    ingredients = {
       {type = "item", name = "sp-uranium-229", amount = 1},
       {type = "item", name = "sp-empty-research-data-card", amount = 3},
     },
@@ -14785,8 +14768,7 @@ data:extend({
     enabled = false,
     allow_productivity = false,
     energy_required = 3 * 3600 * 3 / 4,
-    ingredients =
-    {
+    ingredients = {
       {type = "item", name = "sp-uranium-233", amount = 1},
       {type = "item", name = "sp-empty-research-data-card", amount = 30},
     },
@@ -14806,8 +14788,7 @@ data:extend({
     enabled = false,
     allow_productivity = false,
     energy_required = 12 * 3600 * 3 / 4,
-    ingredients =
-    {
+    ingredients = {
       {type = "item", name = "sp-uranium-236", amount = 1},
       {type = "item", name = "sp-empty-research-data-card", amount = 100},
     },
@@ -14827,8 +14808,7 @@ data:extend({
     enabled = false,
     allow_productivity = false,
     energy_required = 20 * 3 / 4,
-    ingredients =
-    {
+    ingredients = {
       {type = "item", name = "sp-neptunium-233", amount = 1},
       {type = "item", name = "sp-empty-research-data-card", amount = 1},
     },
@@ -14848,8 +14828,7 @@ data:extend({
     enabled = false,
     allow_productivity = false,
     energy_required = 7200 * 3 / 4,
-    ingredients =
-    {
+    ingredients = {
       {type = "item", name = "sp-plutonium-239", amount = 1},
       {type = "item", name = "sp-empty-research-data-card", amount = 10},
     },
@@ -14869,8 +14848,7 @@ data:extend({
     enabled = false,
     allow_productivity = false,
     energy_required = 3600 * 3 / 4,
-    ingredients =
-    {
+    ingredients = {
       {type = "item", name = "sp-plutonium-240", amount = 1},
       {type = "item", name = "sp-empty-research-data-card", amount = 5},
     },
@@ -14891,8 +14869,7 @@ data:extend({
     enabled = false,
     allow_productivity = false,
     energy_required = 200 * 3 / 4,
-    ingredients =
-    {
+    ingredients = {
       {type = "item", name = "sp-protactinium-232", amount = 1},
       {type = "item", name = "sp-empty-research-data-card", amount = 2},
     },
@@ -14912,8 +14889,7 @@ data:extend({
     enabled = false,
     allow_productivity = false,
     energy_required = 9000 * 3 / 4,
-    ingredients =
-    {
+    ingredients = {
       {type = "item", name = "sp-neptunium-236", amount = 1},
       {type = "item", name = "sp-empty-research-data-card", amount = 12},
     },
@@ -14934,8 +14910,7 @@ data:extend({
     enabled = false,
     allow_productivity = false,
     energy_required = 20 * 3 / 4,
-    ingredients =
-    {
+    ingredients = {
       {type = "item", name = "sp-bismuth-213", amount = 1},
       {type = "item", name = "sp-empty-research-data-card", amount = 1},
     },
@@ -14955,8 +14930,7 @@ data:extend({
     enabled = false,
     allow_productivity = false,
     energy_required = 12 * 3 / 4,
-    ingredients =
-    {
+    ingredients = {
       {type = "item", name = "sp-radium-221", amount = 1},
       {type = "item", name = "sp-empty-research-data-card", amount = 1},
     },
@@ -14976,8 +14950,7 @@ data:extend({
     enabled = false,
     allow_productivity = false,
     energy_required = 320 * 3 / 4,
-    ingredients =
-    {
+    ingredients = {
       {type = "item", name = "sp-actinium-232", amount = 1},
       {type = "item", name = "sp-empty-research-data-card", amount = 3},
     },
@@ -14997,8 +14970,7 @@ data:extend({
     enabled = false,
     allow_productivity = false,
     energy_required = 240 * 3 / 4,
-    ingredients =
-    {
+    ingredients = {
       {type = "item", name = "sp-protactinium-229", amount = 1},
       {type = "item", name = "sp-empty-research-data-card", amount = 3},
     },
@@ -15018,8 +14990,7 @@ data:extend({
     enabled = false,
     allow_productivity = false,
     energy_required = 18 * 3 / 4,
-    ingredients =
-    {
+    ingredients = {
       {type = "item", name = "sp-protactinium-236", amount = 1},
       {type = "item", name = "sp-empty-research-data-card", amount = 1},
     },
@@ -15039,8 +15010,7 @@ data:extend({
     enabled = false,
     allow_productivity = true,
     energy_required = 30,
-    ingredients =
-    {
+    ingredients = {
       {type = "item", name = "sp-blank-tech-card", amount = 5},
       {type = "item", name = "advanced-circuit", amount = 10},
       {type = "item", name = "processing-unit", amount = 5},
@@ -15061,8 +15031,7 @@ data:extend({
     enabled = false,
     allow_productivity = true,
     energy_required = 240,
-    ingredients =
-    {
+    ingredients = {
       {type = "item", name = "sp-blank-tech-card", amount = 50},
       {type = "item", name = "uranium-238", amount = 400},
       {type = "item", name = "uranium-235", amount = 1},
@@ -15075,13 +15044,67 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "sp-gear-mechanism-experiment-data",  -- #ForRegEx# - recipe
+    category = "sp-kr-research-data",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 12,
+    ingredients = {
+      {type = "item", name = "sp-empty-research-data-card", amount = 1},
+      {type = "item", name = "sp-gearbox", amount = 1},
+      {type = "item", name = "sp-heavy-gearbox", amount = 1},
+      {type = "item", name = "sp-gearshaft", amount = 1},
+      {type = "item", name = "sp-differential", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-gear-mechanism-experiment-data", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-machine-data",  -- #ForRegEx# - recipe
+    category = "sp-kr-research-data",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 15,
+    ingredients = {
+      {type = "item", name = "sp-empty-research-data-card", amount = 1},
+      {type = "item", name = "sp-big-electric-engine-unit", amount = 1},
+      {type = "item", name = "electric-engine-unit", amount = 10},
+      {type = "item", name = "engine-unit", amount = 10},
+      {type = "item", name = "sp-dynamo", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-machine-data", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-mechatronics-data",  -- #ForRegEx# - recipe
+    category = "sp-kr-research-data",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 12,
+    ingredients = {
+      {type = "item", name = "sp-empty-research-data-card", amount = 1},
+      {type = "item", name = "sp-automation-core", amount = 5},
+      {type = "item", name = "sp-servo-motor", amount = 8},
+      {type = "item", name = "sp-actuator", amount = 3},
+      {type = "item", name = "sp-infrared-sensor", amount = 2},
+      {type = "item", name = "sp-control-unit", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-mechatronics-data", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
     name = "sp-automation-science-pack-3",  -- #ForRegEx# - recipe
     category = "sp-kr-research-data",
     enabled = false,
     allow_productivity = true,
     energy_required = 32,
-    ingredients =
-    {
+    ingredients = {
       {type = "item", name = "sp-automation-science-pack-2", amount = 10},
       {type = "item", name = "sp-gear-mechanism-experiment-data", amount = 5},
       {type = "item", name = "sp-hydraulic-control-data", amount = 5},
@@ -15099,8 +15122,7 @@ data:extend({
     enabled = false,
     allow_productivity = true,
     energy_required = 32,
-    ingredients =
-    {
+    ingredients = {
       {type = "item", name = "sp-logistic-science-pack-2", amount = 10},
       {type = "item", name = "sp-heavy-gearbox", amount = 5},
       {type = "item", name = "sp-pressure-tube", amount = 5},
@@ -15119,8 +15141,7 @@ data:extend({
     enabled = false,
     allow_productivity = true,
     energy_required = 45,
-    ingredients =
-    {
+    ingredients = {
       {type = "item", name = "sp-military-science-pack-2", amount = 10},
       {type = "item", name = "cannon-shell", amount = 20},
       {type = "item", name = "destroyer-capsule", amount = 3},
@@ -15139,8 +15160,7 @@ data:extend({
     enabled = false,
     allow_productivity = true,
     energy_required = 48,
-    ingredients =
-    {
+    ingredients = {
       {type = "item", name = "sp-electronic-science-pack-2", amount = 10},
       {type = "item", name = "sp-antenna-chip", amount = 8},
       {type = "item", name = "sp-cmos", amount = 8},
@@ -15157,8 +15177,7 @@ data:extend({
     enabled = false,
     allow_productivity = true,
     energy_required = 75,
-    ingredients =
-    {
+    ingredients = {
       {type = "item", name = "sp-metallurgic-science-pack-2", amount = 10},
     },
     results = {
@@ -15172,8 +15191,7 @@ data:extend({
     enabled = false,
     allow_productivity = true,
     energy_required = 75,
-    ingredients =
-    {
+    ingredients = {
       {type = "item", name = "sp-electromagnetic-science-pack-2", amount = 10},
     },
     results = {
@@ -15187,8 +15205,7 @@ data:extend({
     enabled = false,
     allow_productivity = true,
     energy_required = 120,
-    ingredients =
-    {
+    ingredients = {
       {type = "item", name = "agricultural-science-pack", amount = 10},
     },
     results = {
@@ -15202,8 +15219,7 @@ data:extend({
     enabled = false,
     allow_productivity = true,
     energy_required = 60,
-    ingredients =
-    {
+    ingredients = {
       {type = "item", name = "cryogenic-science-pack", amount = 10},
     },
     results = {
@@ -15217,8 +15233,7 @@ data:extend({
     enabled = false,
     allow_productivity = true,
     energy_required = 50,
-    ingredients =
-    {
+    ingredients = {
       {type = "item", name = "sp-material-science-pack-2", amount = 10},
       {type = "item", name = "sp-diamond", amount = 6},
       {type = "item", name = "tungsten-carbide", amount = 4},
@@ -15238,8 +15253,7 @@ data:extend({
     enabled = false,
     allow_productivity = true,
     energy_required = 280,
-    ingredients =
-    {
+    ingredients = {
       {type = "item", name = "space-science-pack", amount = 120},
       -- {type = "item", name = "satellite", amount = 5}, removed by space age
       {type = "item", name = "sp-blunagium-explorer", amount = 1},
@@ -15258,8 +15272,7 @@ data:extend({
     enabled = false,
     allow_productivity = true,
     energy_required = 192,
-    ingredients =
-    {
+    ingredients = {
       {type = "item", name = "sp-nuclear-science-pack-2", amount = 40},
       {type = "item", name = "sp-reactor-core", amount = 1},
       {type = "item", name = "sp-alpha-decay-research-data", amount = 60},
@@ -15277,8 +15290,7 @@ data:extend({
     enabled = false,
     allow_productivity = true,
     energy_required = 45,
-    ingredients =
-    {
+    ingredients = {
       {type = "item", name = "production-science-pack", amount = 10},
       {type = "item", name = "sp-compressor", amount = 5},
       {type = "item", name = "sp-dynamo", amount = 5},
@@ -15296,8 +15308,7 @@ data:extend({
     enabled = false,
     allow_productivity = true,
     energy_required = 360,
-    ingredients =
-    {
+    ingredients = {
       -- Krastorio {type = "item", name = "utility-science-pack", amount = 40},
       {type = "item", name = "fusion-reactor", amount = 8},
       {type = "item", name = "sp-kr-quantum-computer", amount = 1},
@@ -15318,8 +15329,7 @@ data:extend({
     enabled = false,
     allow_productivity = true,
     energy_required = 40,
-    ingredients =
-    {
+    ingredients = {
       {type = "item", name = "sp-blunagium-bar", amount = 5},
       {type = "item", name = "sp-grobgnum-bar", amount = 5},
       {type = "item", name = "sp-rukite-bar", amount = 5},
@@ -15339,8 +15349,7 @@ data:extend({
     enabled = false,
     allow_productivity = true,
     energy_required = 69,
-    ingredients =
-    {
+    ingredients = {
       {type = "item", name = "iron-plate", amount = 5}
     },
     results = {
@@ -15354,8 +15363,7 @@ data:extend({
     enabled = false,
     allow_productivity = true,
     energy_required = 40,
-    ingredients =
-    {
+    ingredients = {
       {type = "item", name = "sp-biochip", amount = 5},
       {type = "item", name = "sp-chronalyte", amount = 5},
       {type = "item", name = "sp-nanowire", amount = 5},
@@ -21146,8 +21154,7 @@ data:extend({
     enabled = false,
     allow_productivity = true,
     energy_required = 192,
-    ingredients =
-    {
+    ingredients = {
       {type = "item", name = "sp-antimatter-engine", amount = 4},
       {type = "item", name = "sp-interdimensional-prism-chamber", amount = 40},
       {type = "item", name = "sp-hadron-beam-charger", amount = 20},
@@ -21174,8 +21181,7 @@ data:extend({
     allow_productivity = true,
     category = "crafting",
     hide_from_player_crafting = true,
-    ingredients =
-    {
+    ingredients = {
       {type = "item", name = "stone", amount = 25},
       {type = "item", name = "iron-ore", amount = 15}
     },
@@ -21193,8 +21199,7 @@ data:extend({
     allow_productivity = true,
     category = "crafting",
     hide_from_player_crafting = true,
-    ingredients =
-    {
+    ingredients = {
       {type = "item", name = "stone", amount = 20},
       {type = "item", name = "sp-cement", amount = 5}
     },
@@ -21330,8 +21335,7 @@ data:extend({
     enabled = false,
     allow_productivity = true,
     category = "crafting",
-    ingredients =
-    {
+    ingredients = {
       {type = "item", name = "stone", amount = 8},
       {type = "item", name = "sp-sand", amount = 30}
     },
@@ -21782,8 +21786,7 @@ data:extend({
     enabled = false,
     allow_productivity = false,
     energy_required = 180,
-    ingredients =
-    {
+    ingredients = {
       {type = "item", name = "sp-miniaturized-star-core-stabilizer", amount = 1},
       {type = "item", name = "sp-information-cube", amount = 1},
       {type = "item", name = "sp-subatomic-condenser", amount = 5},
