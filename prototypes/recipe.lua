@@ -10621,6 +10621,32 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "sp-methane-from-atmosphere",  -- #ForRegEx# - recipe
+    category = "sp-kr-atmosphere-condensation",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 30,
+    ingredients = {
+    },
+    results = {
+      {type = "fluid", name = "sp-methane", amount = 4}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-carbon-dioxide-from-atmosphere",  -- #ForRegEx# - recipe
+    category = "sp-kr-atmosphere-condensation",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 40,
+    ingredients = {
+    },
+    results = {
+      {type = "fluid", name = "sp-carbon-dioxide", amount = 5}
+    }
+  },
+  {
+    type = "recipe",
     name = "sp-helium-from-atmosphere",  -- #ForRegEx# - recipe
     category = "sp-kr-atmosphere-condensation",
     enabled = false,
@@ -10628,7 +10654,7 @@ data:extend({
     energy_required = 20,
     ingredients = {},
     results = {
-      {type = "fluid", name = "sp-helium", amount = 3}
+      {type = "fluid", name = "sp-helium", amount = 4}
     }
   },
   {

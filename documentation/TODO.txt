@@ -96,6 +96,7 @@ TODO for 0.3.26
     - (krypton)
     - xenon
     - radon (maybe later)
+  - Add noble gases for crystallizing and cryostabilizing recipes
   - Use xenon for breeder reactor?
   - Add methane and co2 from atmosphere
 

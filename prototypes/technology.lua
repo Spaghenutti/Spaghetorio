@@ -11237,6 +11237,14 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "sp-incinerate-sulfur",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-methane-from-atmosphere",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-carbon-dioxide-from-atmosphere",
       }
     },
     prerequisites = {
