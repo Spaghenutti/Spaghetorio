@@ -391,9 +391,21 @@ data:extend({
   },
   {
     type = "item-subgroup",
-    name = "sp-science-item",  -- #ForRegEx# - item-subgroup
+    name = "sp-data",  -- #ForRegEx# - item-subgroup
     group = "sp-science-products",
     order = "b-1"
+  },
+  {
+    type = "item-subgroup",
+    name = "sp-experimental-data",  -- #ForRegEx# - item-subgroup
+    group = "sp-science-products",
+    order = "b-2"
+  },
+  {
+    type = "item-subgroup",
+    name = "sp-research-data",  -- #ForRegEx# - item-subgroup
+    group = "sp-science-products",
+    order = "b-3"
   },
   {
     type = "item-subgroup",

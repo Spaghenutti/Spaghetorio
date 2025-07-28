@@ -11,7 +11,7 @@ data:extend({
     icon_size = 64,
     mip_maps = 4,
     category = "crafting",
-    subgroup = "sp-science-item",
+    subgroup = "sp-blank-science-item",
     enabled = false,
     energy_required = 2,
     hide_from_player_crafting = true,

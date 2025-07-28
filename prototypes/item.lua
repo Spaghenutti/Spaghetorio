@@ -7979,16 +7979,132 @@ data:extend({
     stack_size = 200,
   },
   ------------------------------------------------------------------------------
-  -- MARK: science-item
+  -- MARK: data
   ------------------------------------------------------------------------------
+  {
+    type = "item",
+    name = "sp-ion-chromatography-data",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/ion-chromatography-data.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-data",
+    order = "chemical-[ion-chromatography-data]",
+    stack_size = 200,
+  },
+  {
+    type = "item",
+    name = "sp-hydraulic-control-data",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/hydraulic-control-data.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-data",
+    order = "automation-[hydraulic-control-data]",
+    stack_size = 200,
+  },
+  {
+    type = "item",
+    name = "sp-machine-data",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/machine-data.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-data",
+    order = "automation-[machine-data]",
+    stack_size = 200,
+  },
+  {
+    type = "item",
+    name = "sp-mechatronics-data",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/mechatronics-data.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-data",
+    order = "automation-[mechatronics-data]",
+    stack_size = 200,
+  },
+  ------------------------------------------------------------------------------
+  -- MARK: experimental-data
+  ------------------------------------------------------------------------------
+  {
+    type = "item",
+    name = "sp-element-separation-experimental-data",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/element-separation-experimental-data.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-experimental-data",
+    order = "chemical-[element-separation-experimental-data]",
+    stack_size = 200,
+  },
+  {
+    type = "item",
+    name = "sp-inert-compunds-experimental-data",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/inert-compunds-experimental-data.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-experimental-data",
+    order = "chemical-[inert-compunds-experimental-data]",
+    stack_size = 200,
+  },
+  {
+    type = "item",
+    name = "sp-reactivity-experimental-data",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/reactivity-experimental-data.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-experimental-data",
+    order = "chemical-[reactivity-experimental-data]",
+    stack_size = 200,
+  },
+  {
+    type = "item",
+    name = "sp-gear-mechanism-experiment-data",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/gear-mechanism-experiment-data.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-experimental-data",
+    order = "automation-[gear-mechanism-experiment-data]",
+    stack_size = 200,
+  },
+  ------------------------------------------------------------------------------
+  -- MARK: research-data
+  ------------------------------------------------------------------------------
+  {
+    type = "item",
+    name = "sp-catalyst-research-data",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/catalyst-research-data.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-research-data",
+    order = "chemical-[catalyst-research-data]",
+    stack_size = 200,
+  },
+  {
+    type = "item",
+    name = "sp-inorganic-chemistry-research-data",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/inorganic-chemistry-research-data.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-research-data",
+    order = "chemical-[inorganic-chemistry-research-data]",
+    stack_size = 200,
+  },
+  {
+    type = "item",
+    name = "sp-organic-chemistry-research-data",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/organic-chemistry-research-data.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-research-data",
+    order = "chemical-[organic-chemistry-research-data]",
+    stack_size = 200,
+  },
   {
     type = "item",
     name = "sp-biters-research-data",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/krastorio/icons/cards/biters-research-data.png",
     icon_size = 64,
     icon_mipmaps = 4,
-    subgroup = "sp-science-item",
-    order = "a03[biters-research-data]",
+    subgroup = "sp-research-data",
+    order = "military-[biters-research-data]",
     stack_size = 200,
   },
   {
@@ -7997,8 +8113,8 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/alpha-decay-research-data.png",
     icon_size = 64,
     icon_mipmaps = 4,
-    subgroup = "sp-science-item",
-    order = "a02[alpha-decay-research-data]",
+    subgroup = "sp-research-data",
+    order = "nuclear-[alpha-decay-research-data]",
     stack_size = 200,
   },
   {
@@ -8007,8 +8123,8 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/beta-minus-decay-research-data.png",
     icon_size = 64,
     icon_mipmaps = 4,
-    subgroup = "sp-science-item",
-    order = "a02[beta-minus-decay-research-data]",
+    subgroup = "sp-research-data",
+    order = "nuclear-[beta-minus-decay-research-data]",
     stack_size = 200,
   },
   {
@@ -8017,8 +8133,8 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/beta-plus-decay-research-data.png",
     icon_size = 64,
     icon_mipmaps = 4,
-    subgroup = "sp-science-item",
-    order = "a02[beta-plus-decay-research-data]",
+    subgroup = "sp-research-data",
+    order = "nuclear-[beta-plus-decay-research-data]",
     stack_size = 200,
   },
   {
@@ -8027,8 +8143,8 @@ data:extend({
     icon = "__Spaghetorio__/graphics/krastorio/icons/cards/matter-research-data.png",
     icon_size = 64,
     icon_mipmaps = 4,
-    subgroup = "sp-science-item",
-    order = "a06[matter-research-data]",
+    subgroup = "sp-research-data",
+    order = "matter-[matter-research-data]",
     stack_size = 200,
   },
   {
@@ -8037,8 +8153,8 @@ data:extend({
     icon = "__Spaghetorio__/graphics/krastorio/icons/cards/space-research-data.png",
     icon_size = 64,
     icon_mipmaps = 4,
-    subgroup = "sp-science-item",
-    order = "a05[space-research-data]",
+    subgroup = "sp-research-data",
+    order = "space-[space-research-data]",
     stack_size = 200,
   },
   ------------------------------------------------------------------------------

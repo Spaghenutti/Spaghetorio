@@ -5384,7 +5384,7 @@ data:extend({
     category = "chemistry",
     enabled = false,
     allow_productivity = true,
-    energy_required = 24,
+    energy_required = 60,
     ingredients =
     {
       {type = "item", name = "sp-geological-science-pack-2", amount = 10},
@@ -6330,16 +6330,17 @@ data:extend({
     category = "sp-advanced-chemistry",
     enabled = false,
     allow_productivity = true,
-    energy_required = 24,
+    energy_required = 48,
     ingredients =
     {
       {type = "item", name = "sp-chemical-science-pack-2", amount = 10},
-      {type = "item", name = "sp-composites", amount = 5},
-      {type = "item", name = "sp-carbon-nanotubes", amount = 10},
-      {type = "item", name = "sp-lithium-chloride", amount = 5},
-      {type = "fluid", name = "electrolyte", amount = 5},
-      {type = "fluid", name = "sp-methyl-tert-butyl-ether", amount = 20},
-      {type = "fluid", name = "sp-perchloric-acid", amount = 30},
+      {type = "item", name = "sp-ion-chromatography-data", amount = 5},
+      {type = "item", name = "sp-catalyst-research-data", amount = 5},
+      {type = "item", name = "sp-element-separation-experimental-data", amount = 5},
+      {type = "item", name = "sp-inert-compunds-experimental-data", amount = 5},
+      {type = "item", name = "sp-inorganic-chemistry-research-data", amount = 5},
+      {type = "item", name = "sp-organic-chemistry-research-data", amount = 5},
+      {type = "item", name = "sp-reactivity-experimental-data", amount = 5},
     },
     results = {
       {type = "item", name = "sp-chemical-science-pack-3", amount = 5}
@@ -13579,7 +13580,7 @@ data:extend({
     category = "crafting-with-fluid",
     enabled = false,
     allow_productivity = true,
-    energy_required = 24,
+    energy_required = 60,
     ingredients =
     {
       {type = "item", name = "sp-computer-science-pack-2", amount = 20},
@@ -15078,15 +15079,14 @@ data:extend({
     category = "sp-kr-research-data",
     enabled = false,
     allow_productivity = true,
-    energy_required = 24,
+    energy_required = 32,
     ingredients =
     {
       {type = "item", name = "sp-automation-science-pack-2", amount = 10},
-      {type = "item", name = "sp-electrode", amount = 10},
-      {type = "item", name = "sp-high-pressure-tank", amount = 5},
-      {type = "item", name = "sp-transformer", amount = 5},
-      {type = "item", name = "sp-plate-heat-exchanger", amount = 5},
-      {type = "item", name = "flying-robot-frame", amount = 5}
+      {type = "item", name = "sp-gear-mechanism-experiment-data", amount = 5},
+      {type = "item", name = "sp-hydraulic-control-data", amount = 5},
+      {type = "item", name = "sp-machine-data", amount = 5},
+      {type = "item", name = "sp-mechatronics-data", amount = 5},
     },
     results = {
       {type = "item", name = "sp-automation-science-pack-3", amount = 5}
@@ -15098,7 +15098,7 @@ data:extend({
     category = "sp-kr-research-data",
     enabled = false,
     allow_productivity = true,
-    energy_required = 24,
+    energy_required = 32,
     ingredients =
     {
       {type = "item", name = "sp-logistic-science-pack-2", amount = 10},
@@ -15118,7 +15118,7 @@ data:extend({
     category = "sp-kr-research-data",
     enabled = false,
     allow_productivity = true,
-    energy_required = 24,
+    energy_required = 45,
     ingredients =
     {
       {type = "item", name = "sp-military-science-pack-2", amount = 10},
@@ -15138,7 +15138,7 @@ data:extend({
     category = "sp-kr-research-data",
     enabled = false,
     allow_productivity = true,
-    energy_required = 24,
+    energy_required = 48,
     ingredients =
     {
       {type = "item", name = "sp-electronic-science-pack-2", amount = 10},
@@ -15156,7 +15156,7 @@ data:extend({
     category = "sp-kr-research-data",
     enabled = false,
     allow_productivity = true,
-    energy_required = 69,
+    energy_required = 75,
     ingredients =
     {
       {type = "item", name = "sp-metallurgic-science-pack-2", amount = 10},
@@ -15171,7 +15171,7 @@ data:extend({
     category = "sp-kr-research-data",
     enabled = false,
     allow_productivity = true,
-    energy_required = 69,
+    energy_required = 75,
     ingredients =
     {
       {type = "item", name = "sp-electromagnetic-science-pack-2", amount = 10},
@@ -15186,7 +15186,7 @@ data:extend({
     category = "sp-kr-research-data",
     enabled = false,
     allow_productivity = true,
-    energy_required = 69,
+    energy_required = 120,
     ingredients =
     {
       {type = "item", name = "agricultural-science-pack", amount = 10},
@@ -15201,7 +15201,7 @@ data:extend({
     category = "sp-kr-research-data",
     enabled = false,
     allow_productivity = true,
-    energy_required = 69,
+    energy_required = 60,
     ingredients =
     {
       {type = "item", name = "cryogenic-science-pack", amount = 10},
@@ -15216,7 +15216,7 @@ data:extend({
     category = "sp-kr-research-data",
     enabled = false,
     allow_productivity = true,
-    energy_required = 24,
+    energy_required = 50,
     ingredients =
     {
       {type = "item", name = "sp-material-science-pack-2", amount = 10},
@@ -15237,7 +15237,7 @@ data:extend({
     category = "sp-kr-research-data",
     enabled = false,
     allow_productivity = true,
-    energy_required = 144,
+    energy_required = 280,
     ingredients =
     {
       {type = "item", name = "space-science-pack", amount = 120},
@@ -15257,7 +15257,7 @@ data:extend({
     category = "sp-kr-research-data",
     enabled = false,
     allow_productivity = true,
-    energy_required = 96,
+    energy_required = 192,
     ingredients =
     {
       {type = "item", name = "sp-nuclear-science-pack-2", amount = 40},
@@ -15276,7 +15276,7 @@ data:extend({
     category = "sp-kr-research-data",
     enabled = false,
     allow_productivity = true,
-    energy_required = 24,
+    energy_required = 45,
     ingredients =
     {
       {type = "item", name = "production-science-pack", amount = 10},
@@ -15295,7 +15295,7 @@ data:extend({
     category = "sp-kr-research-data",
     enabled = false,
     allow_productivity = true,
-    energy_required = 192,
+    energy_required = 360,
     ingredients =
     {
       -- Krastorio {type = "item", name = "utility-science-pack", amount = 40},
