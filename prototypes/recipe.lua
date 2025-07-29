@@ -16358,7 +16358,7 @@ data:extend({
     mip_maps = 4,
     category = "crafting",
     enabled = false,
-    allow_productivity = true,
+    allow_productivity = false,
     energy_required = 20,
     ingredients = {
       {type = "item", name = "engine-unit", amount = 6},
@@ -16380,7 +16380,7 @@ data:extend({
     mip_maps = 4,
     category = "crafting",
     enabled = false,
-    allow_productivity = true,
+    allow_productivity = false,
     energy_required = 150,
     ingredients = {
       {type = "item", name = "sp-steel-beam", amount = 150},
@@ -16407,7 +16407,7 @@ data:extend({
     mip_maps = 4,
     category = "crafting",
     enabled = false,
-    allow_productivity = true,
+    allow_productivity = false,
     energy_required = 90,
     ingredients = {
       {type = "item", name = "sp-nickel-chromium", amount = 60},
@@ -16428,7 +16428,7 @@ data:extend({
     mip_maps = 4,
     category = "crafting",
     enabled = false,
-    allow_productivity = true,
+    allow_productivity = false,
     energy_required = 40,
     ingredients = {
       {type = "item", name = "sp-heat-resistant-tile", amount = 24},
@@ -16454,7 +16454,7 @@ data:extend({
     mip_maps = 4,
     category = "crafting",
     enabled = false,
-    allow_productivity = true,
+    allow_productivity = false,
     energy_required = 40,
     ingredients = {
       {type = "item", name = "sp-stainless-steel", amount = 40},
@@ -16478,7 +16478,7 @@ data:extend({
     mip_maps = 4,
     category = "crafting",
     enabled = false,
-    allow_productivity = true,
+    allow_productivity = false,
     energy_required = 240,
     ingredients = {
       {type = "item", name = "refined-concrete", amount = 240},
@@ -16513,7 +16513,7 @@ data:extend({
     mip_maps = 4,
     category = "crafting",
     enabled = false,
-    allow_productivity = true,
+    allow_productivity = false,
     energy_required = 60,
     ingredients = {
       {type = "item", name = "sp-glass", amount = 12},
@@ -16539,7 +16539,7 @@ data:extend({
     mip_maps = 4,
     category = "crafting",
     enabled = false,
-    allow_productivity = true,
+    allow_productivity = false,
     energy_required = 30,
     ingredients = {
       {type = "item", name = "sp-crucible", amount = 2},
@@ -16565,7 +16565,7 @@ data:extend({
     mip_maps = 4,
     category = "crafting",
     enabled = false,
-    allow_productivity = true,
+    allow_productivity = false,
     energy_required = 69,
     ingredients = {
       {type = "item", name = "iron-plate", amount = 69},
@@ -16581,7 +16581,7 @@ data:extend({
     mip_maps = 4,
     category = "crafting",
     enabled = false,
-    allow_productivity = true,
+    allow_productivity = false,
     energy_required = 40,
     ingredients = {
       {type = "item", name = "sp-maraging-steel", amount = 30},
@@ -16607,7 +16607,7 @@ data:extend({
     mip_maps = 4,
     category = "crafting",
     enabled = false,
-    allow_productivity = true,
+    allow_productivity = false,
     energy_required = 69,
     ingredients = {
       {type = "item", name = "iron-plate", amount = 69},
@@ -16623,7 +16623,7 @@ data:extend({
     mip_maps = 4,
     category = "crafting",
     enabled = false,
-    allow_productivity = true,
+    allow_productivity = false,
     energy_required = 60,
     ingredients = {
       {type = "item", name = "sp-duralumin", amount = 40},
@@ -16647,7 +16647,7 @@ data:extend({
     mip_maps = 4,
     category = "crafting",
     enabled = false,
-    allow_productivity = true,
+    allow_productivity = false,
     energy_required = 50,
     ingredients = {
       {type = "item", name = "sp-chromium-cobalt", amount = 30},
@@ -16672,7 +16672,7 @@ data:extend({
     mip_maps = 4,
     category = "crafting",
     enabled = false,
-    allow_productivity = true,
+    allow_productivity = false,
     energy_required = 69,
     ingredients = {
       {type = "item", name = "iron-plate", amount = 69},
@@ -16688,7 +16688,7 @@ data:extend({
     mip_maps = 4,
     category = "crafting",
     enabled = false,
-    allow_productivity = true,
+    allow_productivity = false,
     energy_required = 69,
     ingredients = {
       {type = "item", name = "iron-plate", amount = 69},
@@ -16704,7 +16704,7 @@ data:extend({
     mip_maps = 4,
     category = "crafting",
     enabled = false,
-    allow_productivity = true,
+    allow_productivity = false,
     energy_required = 90,
     ingredients = {
       {type = "item", name = "sp-blunagium-plate", amount = 32},
@@ -16731,7 +16731,7 @@ data:extend({
     mip_maps = 4,
     category = "crafting",
     enabled = false,
-    allow_productivity = true,
+    allow_productivity = false,
     energy_required = 80,
     ingredients = {
       {type = "item", name = "sp-niobium-steel", amount = 40},
@@ -16760,7 +16760,7 @@ data:extend({
     mip_maps = 4,
     category = "crafting",
     enabled = false,
-    allow_productivity = true,
+    allow_productivity = false,
     energy_required = 90,
     ingredients = {
       {type = "item", name = "tungsten-plate", amount = 40},
@@ -16787,7 +16787,7 @@ data:extend({
     category = "crafting-with-fluid",
     energy_required = 12,
     enabled = false,
-    allow_productivity = true,
+    allow_productivity = false,
     ingredients = {
       {type = "fluid", name = "sp-nitric-acid", amount = 25},
       {type = "item", name = "sp-imersite-crystal", amount = 10},
@@ -16807,7 +16807,7 @@ data:extend({
     category = "crafting",
     energy_required = 600,
     enabled = false,
-    allow_productivity = true,
+    allow_productivity = false,
     ingredients = {
       {type = "item", name = "sp-proton-neutron-superconductor", amount = 300},
       {type = "item", name = "sp-extreme-heat-source", amount = 12},
@@ -16837,7 +16837,7 @@ data:extend({
     category = "crafting",
     energy_required = 20,
     enabled = false,
-    allow_productivity = true,
+    allow_productivity = false,
     ingredients = {
       {type = "item", name = "sp-stainless-steel", amount = 30},
       {type = "item", name = "electronic-circuit", amount = 12},
@@ -16859,7 +16859,7 @@ data:extend({
     category = "crafting",
     energy_required = 30,
     enabled = false,
-    allow_productivity = true,
+    allow_productivity = false,
     ingredients = {
       {type = "item", name = "sp-niobium-steel", amount = 20},
       {type = "item", name = "sp-chromium-cobalt", amount = 30},
@@ -16887,7 +16887,7 @@ data:extend({
     category = "crafting",
     energy_required = 20,
     enabled = false,
-    allow_productivity = true,
+    allow_productivity = false,
     ingredients = {
       {type = "item", name = "sp-steel-beam", amount = 24},
       {type = "item", name = "sp-bolts", amount = 48},
@@ -16909,7 +16909,7 @@ data:extend({
     category = "crafting",
     energy_required = 30,
     enabled = false,
-    allow_productivity = true,
+    allow_productivity = false,
     ingredients = {
       {type = "item", name = "sp-stainless-steel", amount = 30},
       {type = "item", name = "sp-bolts", amount = 20},
@@ -16935,7 +16935,7 @@ data:extend({
     category = "crafting",
     energy_required = 30,
     enabled = false,
-    allow_productivity = true,
+    allow_productivity = false,
     ingredients = {
       {type = "item", name = "sp-glass", amount = 20},
       {type = "item", name = "sp-stainless-steel", amount = 12},
@@ -16957,7 +16957,7 @@ data:extend({
     category = "crafting",
     energy_required = 60,
     enabled = false,
-    allow_productivity = true,
+    allow_productivity = false,
     ingredients = {
       {type = "item", name = "sp-stainless-steel", amount = 80},
       {type = "item", name = "sp-chromium-cobalt", amount = 10},
@@ -16982,7 +16982,7 @@ data:extend({
     category = "crafting",
     energy_required = 20,
     enabled = false,
-    allow_productivity = true,
+    allow_productivity = false,
     ingredients = {
       {type = "item", name = "sp-steel-beam", amount = 36},
       {type = "item", name = "sp-bolts", amount = 80},
@@ -17003,7 +17003,7 @@ data:extend({
     category = "crafting",
     energy_required = 30,
     enabled = false,
-    allow_productivity = true,
+    allow_productivity = false,
     ingredients = {
       {type = "item", name = "processing-unit", amount = 10},
       {type = "item", name = "sp-energy-control-unit", amount = 30},
@@ -17024,7 +17024,7 @@ data:extend({
     category = "crafting",
     energy_required = 30,
     enabled = false,
-    allow_productivity = true,
+    allow_productivity = false,
     ingredients = {
       {type = "item", name = "sp-steel-beam", amount = 48},
       {type = "item", name = "sp-copper-tube", amount = 50},
@@ -17046,7 +17046,7 @@ data:extend({
     category = "crafting",
     energy_required = 10,
     enabled = false,
-    allow_productivity = true,
+    allow_productivity = false,
     ingredients = {
       {type = "item", name = "sp-steel-beam", amount = 16},
       {type = "item", name = "sp-copper-tube", amount = 30},
@@ -17066,7 +17066,7 @@ data:extend({
     category = "crafting",
     energy_required = 10,
     enabled = false,
-    allow_productivity = true,
+    allow_productivity = false,
     ingredients = {
       {type = "item", name = "sp-stainless-steel", amount = 20},
       {type = "item", name = "sp-brass", amount = 12},
@@ -17091,7 +17091,7 @@ data:extend({
     category = "crafting",
     energy_required = 750,
     enabled = false,
-    allow_productivity = true,
+    allow_productivity = false,
     ingredients = {
       {type = "item", name = "concrete", amount = 1000},
       {type = "item", name = "sp-stainless-steel", amount = 1000},
@@ -17120,7 +17120,7 @@ data:extend({
     category = "crafting",
     energy_required = 40,
     enabled = false,
-    allow_productivity = true,
+    allow_productivity = false,
     ingredients = {
       {type = "item", name = "sp-steel-beam", amount = 40},
       {type = "item", name = "sp-stainless-steel", amount = 32},
@@ -17147,7 +17147,7 @@ data:extend({
     category = "crafting",
     energy_required = 120,
     enabled = false,
-    allow_productivity = true,
+    allow_productivity = false,
     ingredients = {
         {type = "item", name = "sp-stainless-steel", amount = 30},
         {type = "item", name = "sp-yemnuth-plate", amount = 40},
@@ -17172,7 +17172,7 @@ data:extend({
     category = "crafting",
     energy_required = 45,
     enabled = false,
-    allow_productivity = true,
+    allow_productivity = false,
     ingredients = {
       {type = "item", name = "sp-yemnuth-plate", amount = 16},
       {type = "item", name = "sp-imersium-beam", amount = 12},
@@ -17194,7 +17194,7 @@ data:extend({
     category = "crafting",
     energy_required = 60,
     enabled = false,
-    allow_productivity = true,
+    allow_productivity = false,
     ingredients = {
       {type = "item", name = "sp-energy-control-unit", amount = 40},
       {type = "item", name = "sp-imersium-plate", amount = 40},
@@ -17218,7 +17218,7 @@ data:extend({
     category = "crafting",
     energy_required = 90,
     enabled = false,
-    allow_productivity = true,
+    allow_productivity = false,
     ingredients = {
       {type = "item", name = "sp-energy-control-unit", amount = 20},
       {type = "item", name = "sp-imersium-beam", amount = 80},
@@ -17242,7 +17242,7 @@ data:extend({
     category = "crafting",
     energy_required = 90,
     enabled = false,
-    allow_productivity = true,
+    allow_productivity = false,
     ingredients = {
       {type = "item", name = "sp-quantum-data-plane", amount = 10},
       {type = "item", name = "sp-turbopump", amount = 2},
@@ -17267,7 +17267,7 @@ data:extend({
     category = "crafting",
     energy_required = 50,
     enabled = false,
-    allow_productivity = true,
+    allow_productivity = false,
     ingredients = {
       {type = "item", name = "sp-servo-motor", amount = 10},
       {type = "item", name = "sp-automation-core", amount = 8},
@@ -17296,7 +17296,7 @@ data:extend({
     category = "crafting",
     energy_required = 900,
     enabled = false,
-    allow_productivity = true,
+    allow_productivity = false,
     ingredients = {
       {type = "item", name = "iron-plate", amount = 69},
     },
@@ -17312,7 +17312,7 @@ data:extend({
     category = "crafting",
     energy_required = 60,
     enabled = false,
-    allow_productivity = true,
+    allow_productivity = false,
     ingredients = {
       {type = "item", name = "sp-diamond", amount = 40},
       {type = "item", name = "sp-drillhead", amount = 4},
@@ -17337,7 +17337,7 @@ data:extend({
     category = "crafting",
     energy_required = 45,
     enabled = false,
-    allow_productivity = true,
+    allow_productivity = false,
     ingredients = {
       {type = "item", name = "sp-antimatter-engine", amount = 1},
       {type = "item", name = "sp-sideral-compute-core", amount = 1},
@@ -17357,7 +17357,7 @@ data:extend({
     category = "crafting",
     energy_required = 60,
     enabled = false,
-    allow_productivity = true,
+    allow_productivity = false,
     ingredients = {
       {type = "item", name = "sp-niobium-steel", amount = 100},
       {type = "item", name = "sp-rare-metals-alloy", amount = 40},
@@ -17382,7 +17382,7 @@ data:extend({
     category = "crafting",
     energy_required = 90,
     enabled = false,
-    allow_productivity = true,
+    allow_productivity = false,
     ingredients = {
       {type = "item", name = "sp-energy-control-unit", amount = 20},
       {type = "item", name = "sp-imersium-beam", amount = 80},
@@ -17406,7 +17406,7 @@ data:extend({
     category = "crafting",
     energy_required = 90,
     enabled = false,
-    allow_productivity = true,
+    allow_productivity = false,
     ingredients = {
       {type = "item", name = "sp-energy-control-unit", amount = 40},
       {type = "item", name = "sp-imersium-plate", amount = 40},
@@ -17430,7 +17430,7 @@ data:extend({
     category = "crafting",
     energy_required = 40,
     enabled = false,
-    allow_productivity = true,
+    allow_productivity = false,
     ingredients = {
       {type = "item", name = "sp-energy-control-unit", amount = 16},
       {type = "item", name = "sp-imersium-plate", amount = 20},
@@ -17453,7 +17453,7 @@ data:extend({
     category = "crafting",
     energy_required = 6,
     enabled = false,
-    allow_productivity = true,
+    allow_productivity = false,
     ingredients = {
       {type = "item", name = "sp-bolts", amount = 8},
       {type = "item", name = "sp-stainless-steel", amount = 10},
@@ -17473,7 +17473,7 @@ data:extend({
     category = "crafting",
     energy_required = 20,
     enabled = false,
-    allow_productivity = true,
+    allow_productivity = false,
     ingredients = {
       {type = "item", name = "sp-bolts", amount = 30},
       {type = "item", name = "sp-stainless-steel", amount = 40},
@@ -17493,7 +17493,7 @@ data:extend({
   --   category = "crafting",
   --   energy_required = 8,
   --   enabled = false,
-    allow_productivity = true,
+  --   allow_productivity = false,
   --   ingredients = {
   --     {type = "item", name = "iron-plate", amount = 12},
   --     {type = "item", name = "stone-brick", amount = 4},
