@@ -1,72 +1,36 @@
 
-TODO for 0.3.24
-  + Add recipe for biolab
-    + Verify all recipes work with a crafting machine
-    + radioisotope-thermoelectric-generator
-      + PuO2
-      + radioisotope-casing
-        + boron-carbide
-        + fiberglass
-        + titanium-ruthenium
-        + lead-telluride
-        + germanium-antimony-tellurium
-      + thermocouple
-      + composites
-      + graphite-impact-shell
-      + heatsink
-    + bio-sample-cryovial
-      + Verify 2 fluid intputs for crafting machine
-      + high-density-structure-gel
-        + spoilage
-        + heavy-oil
-        + biocrude-oil
-        + yumako-mash
-      + croygenic-gel
-        + fluoroketone cold and hot
-        + bromine-trifluorine
-        + cellulose
-        + jelly
-      + bio-polymer-mesh
-        + iodethene
-        + glyoxilic-acid
-        + fiberglass
-      + filter
-      + glass
-      + pseudo-palladium
-      + cryostabalized-ruthenium
-    + cryostabalized alloys
-      - add recipes for more metals that exist as powder
-      + add to all recipes fluoroketone cold and hot
-      + cryostabalized-ruthenium = germanium + ruthenium powder + neon
-      + cryostabalized-tungsten = germanium + tungsten powder + argon
-  + Move krypton asteroid close to edge of solar system since noble gases are frozen
-  + Dysprosium
-    + dysprosium chunk + ... -> dysprosium-oxide + dysprosium-nitrate + dysprosium-hydroxide + dysprosium-fluoride
-                                high quantity      medium quantity      low quantity           low quantity
-    + dysprosium-oxide + nitric-acid -> dysprosium-nitrate
-    + dysprosium-nitrate + D2EHPA -> dysprosium
-    + dysprosium-hydroxide + hydrogen-fluoride -> dysprosium-fluoride
-    + dysprosium-fluoride + calcite -> dysprosium
-    + D2EHPA = Bis(2-ethylhexyl)phosphat:
-      + phosphrus + oxygen -> phosphorus-pentoxide
-      + butanediol + potassium-hydroxide-solution + -> 2-ethylhex-2-enal
-      + 2-ethylhex-2-enal + hydrogen -> 2-ethylhexanol
-      + phosphorus-pentoxide + 2-ethylhexanol -> D2EHPA
-  + ytterbium
-    + mineral xenotime + ... -> ytterbium-chloride + ytterbium-fluoride
-    + ytterbium chunk + ... -> ytterbium-chloride + ytterbium-fluoride
-    + ytterbium-chloride + electrolyte -> ytterbium (electrolysis)
-    + ytterbium-fluoride + calcium + argon -> ytterbium
-  + terbium
-    + mineral djerfisherite + ... -> terbium-oxide + terbium-sulfate
-    + magnesium-ore + ... -> terbium-sulfate + terbium-nitride
-    + terbium chunk + ... -> terbium-oxide + terbium-hydroxide
-    + terbium-hydroxide + argon -> terbium-oxide (smelting)
-    + terbium-sulfate + oxygen -> terbium-oxide (smelting)
-    + terbium-nitride + sulfuric-acid -> terbium-sulfate
-    + terbium-oxide + sodium-periodate -> terbium (electrolysis) 
+TODO for 0.3.26
+  + Biolab has to be unlocked before automation science 3
+  + Add multiple landing pads
+  - Create function for generating core fragment and asteroid processing icons
+  - Fix noble gases recipe chain
+    - krypton asteroid contains clathrate hydrate ice
+    - ice is melted and you get the noble gas... just like that
+    - maybe add intermediate step where ice is traped in some mineral
+    - core fragment
+      - Xenotime (Y,Yb)P04(Zr,V)
+        - add crushing and filtration recipe chain
+      - Djerfisherite	K₆(Fe,Ni,Cu)₂₅S₂₆Cl
+        - add crushing and filtration recipe chain
+    - asteroid minerals (created in asteroid reprocessing and advanced reprocessing):
+      - Olivine	(Mg,Fe)₂SiO₄
+      - Pyroxenem (Mg,Fe,Ca)SiO₃
+      - Plagioclase Feldspar (Na,Ca)(Si,Al)₄O₈
+      - Troilite FeS
+      - Taenite	Fe-Ni alloy
+  - Get some noble gasses from methane ice
+    - helium
+    - (neon)
+    - argon
+    - (krypton)
+    - xenon
+    - radon (maybe later)
+  - Add noble gases for crystallizing and cryostabilizing recipes
+  - Use xenon for breeder reactor?
+  + Add methane and co2 from atmosphere
 
-TODO for 0.3.25
+TODO for 0.3.27
+  - update alloy-properties.csv
   - Add data and science data as intermediates for science packs
     - Automation science
       - automation data
@@ -184,38 +148,7 @@ TODO for 0.3.25
   - Add recipe chains and uses for
     - sodium-hypochlorite-solution
 
-TODO for 0.3.26
-  - update alloy-properties.csv
-  + Biolab has to be unlocked before automation science 3
-  + Add multiple landing pads
-  - Fix noble gases recipe chain
-    - krypton asteroid contains clathrate hydrate ice
-    - ice is melted and you get the noble gas... just like that
-    - maybe add intermediate step where ice is traped in some mineral
-    - create function for generating core fragment and asteroid processing icons
-    - core fragment
-      - Xenotime (Y,Yb)P04(Zr,V)
-        - add crushing and filtration recipe chain
-      - Djerfisherite	K₆(Fe,Ni,Cu)₂₅S₂₆Cl
-        - add crushing and filtration recipe chain
-    - asteroid minerals (created in asteroid reprocessing and advanced reprocessing):
-      - Olivine	(Mg,Fe)₂SiO₄
-      - Pyroxenem (Mg,Fe,Ca)SiO₃
-      - Plagioclase Feldspar (Na,Ca)(Si,Al)₄O₈
-      - Troilite FeS
-      - Taenite	Fe-Ni alloy
-  - Get some noble gasses from methane ice
-    - helium
-    - (neon)
-    - argon
-    - (krypton)
-    - xenon
-    - radon (maybe later)
-  - Add noble gases for crystallizing and cryostabilizing recipes
-  - Use xenon for breeder reactor?
-  - Add methane and co2 from atmosphere
-
-TODO for 0.3.27
+TODO for 0.3.28
   + Update automation science 3
     + Add nuclear science as requirement
   + Add recipe chains for core mining
@@ -233,13 +166,13 @@ TODO for 0.3.27
     - thallium used in optics
     - used in rodent poison
 
-TODO for 0.3.28
+TODO for 0.3.29
   - Add 2-3 more rare metals to rare metals technology
   - Add all 3-4 rare metals from asteroids
   - Add more rare metals comming from lava
   - Fix casting icons
 
-TODO for 0.3.29
+TODO for 0.3.30
   - Add uses to
     - cryostabalized-ruthenium
     - cryostabalized-tungsten
@@ -249,12 +182,12 @@ TODO for 0.3.29
     - tohoku-alloy 5%Cr, 7%Co, 4%Ta, 10%ru, 14%Al, 60%Ni 
     - ruthenium-rodium 75-25
 
-TODO for 0.3.30
+TODO for 0.3.31
   - Update logistic science 3
   - Update geological science 3
   - Unlock legendary quality much later in tech tree
 
-TODO for 0.3.31
+TODO for 0.3.32
   - Fix asteroid reprocessing
   - Add uses and recipe chains for mineral resources
     - taenite
@@ -292,6 +225,7 @@ TODO for 0.4.3
     - Aetherium – A rare essence that bends space and time.
 
 Items:
+  - Add more cryostabalized alloys for metals that exist as powder
   - Intermediates
     - bearing
     - electrostatic-precipitator

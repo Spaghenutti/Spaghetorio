@@ -11220,7 +11220,7 @@ data:extend({
     unit = {
       count = 300,
       ingredients = {
-        {"sp-automation-science-pack-3", 1},
+        {"sp-automation-science-pack-2", 1},
         {"sp-logistic-science-pack-2", 1},
         {"sp-material-science-pack-2", 1},
         {"sp-geological-science-pack-2", 1},
@@ -11230,9 +11230,11 @@ data:extend({
         {"sp-electromagnetic-science-pack-2", 1},
         {"production-science-pack", 1},
         {"utility-science-pack", 1},
+        {"cryogenic-science-pack", 1},
+        {"agricultural-science-pack", 1},
         {"sp-computer-science-pack-2", 1},
-        {"space-science-pack", 1},
-        {"agricultural-science-pack", 1}
+        {"sp-nuclear-science-pack-2", 1},
+        {"space-science-pack", 1}
       },
       time = 30,
     },

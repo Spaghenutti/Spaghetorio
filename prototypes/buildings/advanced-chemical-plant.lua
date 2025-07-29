@@ -45,6 +45,30 @@ data:extend({
         secondary_draw_orders = {north = -1}
       },
       {
+        production_type = "input",
+        pipe_covers = pipecoverspictures(),
+        pipe_picture = sp_kr_pipe_path,
+        volume = 1000,
+        pipe_connections = {{flow_direction="input", direction = defines.direction.west, position = {-3, 2}}},
+        secondary_draw_orders = {north = -1}
+      },
+      {
+        production_type = "input",
+        pipe_covers = pipecoverspictures(),
+        pipe_picture = sp_kr_pipe_path,
+        volume = 1000,
+        pipe_connections = {{flow_direction="input", direction = defines.direction.west, position = {-3, 0}}},
+        secondary_draw_orders = {north = -1}
+      },
+      {
+        production_type = "input",
+        pipe_covers = pipecoverspictures(),
+        pipe_picture = sp_kr_pipe_path,
+        volume = 1000,
+        pipe_connections = {{flow_direction="input", direction = defines.direction.west, position = {-3, -2}}},
+        secondary_draw_orders = {north = -1}
+      },
+      {
         production_type = "output",
         pipe_covers = pipecoverspictures(),
         pipe_picture = sp_kr_pipe_path,
@@ -66,6 +90,30 @@ data:extend({
         pipe_picture = sp_kr_pipe_path,
         volume = 1000,
         pipe_connections = {{flow_direction="output", direction = defines.direction.south, position = {-2, 3}}},
+        secondary_draw_orders = {north = -1}
+      },
+      {
+        production_type = "output",
+        pipe_covers = pipecoverspictures(),
+        pipe_picture = sp_kr_pipe_path,
+        volume = 1000,
+        pipe_connections = {{flow_direction="output", direction = defines.direction.east, position = {3, 2}}},
+        secondary_draw_orders = {north = -1}
+      },
+      {
+        production_type = "output",
+        pipe_covers = pipecoverspictures(),
+        pipe_picture = sp_kr_pipe_path,
+        volume = 1000,
+        pipe_connections = {{flow_direction="output", direction = defines.direction.east, position = {3, 0}}},
+        secondary_draw_orders = {north = -1}
+      },
+      {
+        production_type = "output",
+        pipe_covers = pipecoverspictures(),
+        pipe_picture = sp_kr_pipe_path,
+        volume = 1000,
+        pipe_connections = {{flow_direction="output", direction = defines.direction.east, position = {3, -2}}},
         secondary_draw_orders = {north = -1}
       },
     },

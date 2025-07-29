@@ -8,6 +8,8 @@ Date: 2025-08-01
     - Added ytterbium recipe chain
     - Added additional cargo landing pad technology
     - Added methane and carbon dioxide from atmosphere recipes
+  Changes:
+    - BREAKING CHANGE: advanced chemical plant now has 6 inputs and outputs instead of 3
   Bugfixes:
     - Fixed some icons
     - Fixed some tech tree dependancies

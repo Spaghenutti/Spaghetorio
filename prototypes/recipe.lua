@@ -4697,11 +4697,12 @@ data:extend({
     energy_required = 12,
     ingredients = {
       {type = "item", name = "sp-core-fragment", amount = 1},
-      {type = "fluid", name = "sulfuric-acid", amount = 12}
+      {type = "fluid", name = "sulfuric-acid", amount = 15}
     },
     results = {
       {type = "item", name = "sp-djerfisherite", amount = 1},
-      {type = "item", name = "sp-sand", probability = 0.3, amount = 2}
+      {type = "item", name = "sp-potassium-ore", probability = 0.4, amount = 1},
+      {type = "item", name = "sulfur", probability = 0.3, amount = 2}
     },
   },
   {
@@ -4714,14 +4715,14 @@ data:extend({
     subgroup = "sp-mineral-resource",
     enabled = false,
     allow_productivity = false,
-    energy_required = 12,
+    energy_required = 8,
     ingredients = {
       {type = "item", name = "sp-core-fragment", amount = 1},
-      {type = "fluid", name = "sulfuric-acid", amount = 12}
+      {type = "fluid", name = "sp-hypochlorus-acid", amount = 10}
     },
     results = {
       {type = "item", name = "sp-xenotime", amount = 1},
-      {type = "item", name = "sp-sand", probability = 0.3, amount = 2}
+      {type = "item", name = "sp-phosphorus", probability = 0.3, amount = 2}
     },
   },
   {

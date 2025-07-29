@@ -26,6 +26,7 @@ data:extend({
         pipe_picture = sp_kr_pipe_path,
         volume = 1000,
         pipe_connections = {{flow_direction="input", direction = defines.direction.north, position = {-2, -3}}},
+        secondary_draw_orders = {north = -1}
       },
       {
         production_type = "input",
@@ -33,6 +34,7 @@ data:extend({
         pipe_picture = sp_kr_pipe_path,
         volume = 1000,
         pipe_connections = {{flow_direction="input", direction = defines.direction.north, position = {0, -3}}},
+        secondary_draw_orders = {north = -1}
       },
       {
         production_type = "input",
@@ -40,6 +42,7 @@ data:extend({
         pipe_picture = sp_kr_pipe_path,
         volume = 1000,
         pipe_connections = {{flow_direction="input", direction = defines.direction.north, position = {2, -3}}},
+        secondary_draw_orders = {north = -1}
       },
       {
         production_type = "input",
@@ -47,6 +50,7 @@ data:extend({
         pipe_picture = sp_kr_pipe_path,
         volume = 1000,
         pipe_connections = {{flow_direction="input", direction = defines.direction.west, position = {-3, 2}}},
+        secondary_draw_orders = {north = -1}
       },
       {
         production_type = "input",
@@ -54,6 +58,7 @@ data:extend({
         pipe_picture = sp_kr_pipe_path,
         volume = 1000,
         pipe_connections = {{flow_direction="input", direction = defines.direction.west, position = {-3, 0}}},
+        secondary_draw_orders = {north = -1}
       },
       {
         production_type = "input",
@@ -61,6 +66,7 @@ data:extend({
         pipe_picture = sp_kr_pipe_path,
         volume = 1000,
         pipe_connections = {{flow_direction="input", direction = defines.direction.west, position = {-3, -2}}},
+        secondary_draw_orders = {north = -1}
       },
       {
         production_type = "output",
@@ -68,6 +74,7 @@ data:extend({
         pipe_picture = sp_kr_pipe_path,
         volume = 1000,
         pipe_connections = {{flow_direction="output", direction = defines.direction.south, position = {0, 3}}},
+        secondary_draw_orders = {north = -1}
       },
       {
         production_type = "output",
@@ -75,6 +82,7 @@ data:extend({
         pipe_picture = sp_kr_pipe_path,
         volume = 1000,
         pipe_connections = {{flow_direction="output", direction = defines.direction.east, position = {3, 0}}},
+        secondary_draw_orders = {north = -1}
       },
     },
     fluid_boxes_off_when_no_fluid_recipe = false,
