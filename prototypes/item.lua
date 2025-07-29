@@ -8036,12 +8036,12 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-inert-compunds-experimental-data",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/icons/inert-compunds-experimental-data.png",
+    name = "sp-inert-compounds-experimental-data",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/inert-compounds-experimental-data.png",
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "sp-experimental-data",
-    order = "chemical-[inert-compunds-experimental-data]",
+    order = "chemical-[inert-compounds-experimental-data]",
     stack_size = 200,
   },
   {

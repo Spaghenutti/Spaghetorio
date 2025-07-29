@@ -12751,6 +12751,34 @@ data:extend({
         type = "unlock-recipe",
         recipe = "sp-chemical-science-pack-3"
       },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-ion-chromatography-data"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-element-separation-experimental-data"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-inert-compounds-experimental-data"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-reactivity-experimental-data"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-catalyst-research-data"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-inorganic-chemistry-research-data"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-organic-chemistry-research-data"
+      },
     },
     prerequisites = {
       "sp-automation-science-pack-3",

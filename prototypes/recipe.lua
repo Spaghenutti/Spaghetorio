@@ -6332,7 +6332,7 @@ data:extend({
       {type = "item", name = "sp-ion-chromatography-data", amount = 5},
       {type = "item", name = "sp-catalyst-research-data", amount = 5},
       {type = "item", name = "sp-element-separation-experimental-data", amount = 5},
-      {type = "item", name = "sp-inert-compunds-experimental-data", amount = 5},
+      {type = "item", name = "sp-inert-compounds-experimental-data", amount = 5},
       {type = "item", name = "sp-inorganic-chemistry-research-data", amount = 5},
       {type = "item", name = "sp-organic-chemistry-research-data", amount = 5},
       {type = "item", name = "sp-reactivity-experimental-data", amount = 5},
@@ -6841,6 +6841,199 @@ data:extend({
     },
     results = {
       {type = "fluid", name = "sp-bis-2-ethylhexyl-phosphoric-acid", amount = 5},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-used-up-fuel-rod-reprocessing",  -- #ForRegEx# - recipe
+    icons = util.icon.create_nuclear_recipe_icon(data.raw.item["sp-used-up-fuel-rod"], data.raw.item["sp-nuclear-waste"]),
+    icon_size = 64,
+    mip_maps = 4,
+    category = "sp-advanced-chemistry",
+    subgroup = "sp-radioactive-resource",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 60,
+    ingredients = {
+      {type = "item", name = "sp-used-up-fuel-rod", amount = 5},
+      {type = "fluid", name = "sulfuric-acid", amount = 40}
+    },
+    results = {
+      {type = "item", name = "sp-empty-fuel-rod", amount = 2},
+      {type = "item", name = "sp-nuclear-waste", amount = 1}
+    },
+    crafting_machine_tint = {
+      primary = {r = 0.4, g = 1.000, b = 0.4, a = 1.000},
+      secondary = {r = 0.4, g = 0.7, b = 0.4, a = 1.000},
+      tertiary = {r = 0.0, g = 0.7, b = 0.0, a = 1.000},
+      quaternary = {r = 0.000, g = 0.3, b = 0.000, a = 1.000},
+    },
+    order = "z[nuclear]-3-[used-up-fuel-rod-reprocessing]"
+  },
+  {
+    type = "recipe",
+    name = "sp-advanced-nuclear-waste-processing",  -- #ForRegEx# - recipe
+    icons = util.icon.create_nuclear_recipe_icon(data.raw.item["sp-nuclear-waste"], data.raw.item["sp-plutonium-239"]),
+    icon_size = 256,
+    scale = 0.25,
+    category = "sp-advanced-chemistry",
+    subgroup = "sp-radioactive-resource",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 80,
+    hide_from_player_crafting = true,
+    ingredients = {
+      {type = "item", name = "sp-nuclear-waste", amount = 1},
+      {type = "fluid", name = "sp-peroxymonosulfuric-acid", amount = 12},
+      {type = "fluid", name = "sp-dimethyl-sulfide", amount = 8},
+      {type = "fluid", name = "sp-biocrude-oil", amount = 5}
+    },
+    results = {
+      {type = "item", name = "sp-plutonium-239", probability = 0.6, amount = 1},
+      {type = "item", name = "sp-neptunium-236", probability = 0.12, amount = 1},
+      {type = "item", name = "sp-neptunium-233", probability = 0.05, amount = 1},
+      {type = "item", name = "uranium-238", probability = 0.37, amount = 2},
+      {type = "item", name = "uranium-235", probability = 0.03, amount = 1},
+      {type = "item", name = "sp-uranium-233", probability = 0.04, amount = 1},
+      {type = "item", name = "sp-protactinium-236", probability = 0.12, amount = 1},
+      {type = "item", name = "sp-protactinium-232", probability = 0.06, amount = 1},
+      {type = "item", name = "sp-actinium-232", probability = 0.075, amount = 1},
+      {type = "item", name = "sp-actinium-225", probability = 0.005, amount = 1},
+      {type = "item", name = "carbon", probability = 0.12, amount = 1},
+      {type = "item", name = "sp-tungsten-powder", probability = 0.1, amount = 1},
+      {type = "item", name = "sp-zircon", probability = 0.12, amount = 1},
+      {type = "item", name = "sp-cerium", probability = 0.1, amount = 1},
+      {type = "item", name = "sp-titanium-sponge", probability = 0.4, amount = 1},
+      {type = "fluid", name = "sp-deuterium", amount = 16}
+    },
+    crafting_machine_tint = {
+      primary = {r = 0.4, g = 1.000, b = 0.8, a = 1.000},
+      secondary = {r = 0.4, g = 0.7, b = 0.6, a = 1.000},
+      tertiary = {r = 0.0, g = 0.7, b = 0.6, a = 1.000},
+      quaternary = {r = 0.000, g = 0.3, b = 0.3, a = 1.000},
+    },
+    order = "z[nuclear]-3-[nuclear-waste-processing]2"
+  },
+  {
+    type = "recipe",
+    name = "sp-ion-chromatography-data",  -- #ForRegEx# - recipe
+    category = "sp-advanced-chemistry",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 90,
+    ingredients = {
+      {type = "item", name = "sp-empty-research-data-card", amount = 1},
+      {type = "fluid", name = "sp-cellulose", amount = 10},
+      {type = "fluid", name = "sp-methyl-sulfate", amount = 10},
+      {type = "fluid", name = "sp-ethylenediaminetetraacetic-acid", amount = 10},
+    },
+    results = {
+      {type = "item", name = "sp-ion-chromatography-data", amount = 1},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-element-separation-experimental-data",  -- #ForRegEx# - recipe
+    category = "sp-advanced-chemistry",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 60,
+    ingredients = {
+      {type = "item", name = "sp-empty-research-data-card", amount = 1},
+      {type = "fluid", name = "sp-aqua-regia", amount = 15},
+      {type = "fluid", name = "sulfuric-acid", amount = 20},
+      {type = "fluid", name = "sp-nitric-acid", amount = 20},
+      {type = "fluid", name = "sp-hydrogen-iodide", amount = 15},
+      {type = "fluid", name = "sp-sodium-hypochlorite-solution", amount = 10},
+      {type = "fluid", name = "sp-potassium-hydroxide-solution", amount = 15},
+    },
+    results = {
+      {type = "item", name = "sp-element-separation-experimental-data", amount = 1},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-inert-compounds-experimental-data",  -- #ForRegEx# - recipe
+    category = "sp-advanced-chemistry",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 75,
+    ingredients = {
+      {type = "item", name = "sp-empty-research-data-card", amount = 1},
+      {type = "fluid", name = "sp-tetrafluoroethylene", amount = 15},
+      {type = "fluid", name = "sp-argon", amount = 5},
+      {type = "fluid", name = "sp-helium", amount = 15},
+      {type = "item", name = "sp-beryllium-fluoride", amount = 1},
+      {type = "item", name = "sp-alumina", amount = 3},
+      {type = "item", name = "sp-potassium-chloride", amount = 2},
+      {type = "item", name = "sp-sodium-bisulfate", amount = 2},
+      {type = "item", name = "sp-manganese-dioxide", amount = 2},
+    },
+    results = {
+      {type = "item", name = "sp-inert-compounds-experimental-data", amount = 1},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-reactivity-experimental-data",  -- #ForRegEx# - recipe
+    category = "sp-advanced-chemistry",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 30,
+    ingredients = {
+      {type = "item", name = "sp-empty-research-data-card", amount = 1},
+      {type = "fluid", name = "sp-hydrazine", amount = 10},
+      {type = "fluid", name = "sp-hydrogen-peroxide", amount = 10},
+      {type = "fluid", name = "sp-nitrogen-dioxide", amount = 10},
+      {type = "fluid", name = "sp-sulfur-trioxide", amount = 10},
+      {type = "fluid", name = "petroleum-gas", amount = 20},
+      {type = "fluid", name = "sp-glycerin", amount = 10},
+      {type = "item", name = "sp-magnesium-powder", amount = 3},
+      {type = "item", name = "sp-aluminum-powder", amount = 3},
+      {type = "item", name = "sulfur", amount = 3},
+    },
+    results = {
+      {type = "item", name = "sp-reactivity-experimental-data", amount = 1},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-inorganic-chemistry-research-data",  -- #ForRegEx# - recipe
+    category = "sp-advanced-chemistry",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 40,
+    ingredients = {
+      {type = "item", name = "sp-empty-research-data-card", amount = 1},
+      {type = "fluid", name = "sp-diborane", amount = 10},
+      {type = "fluid", name = "sp-hydrogen-sulfide", amount = 10},
+      {type = "fluid", name = "sp-sulfamate", amount = 10},
+      {type = "fluid", name = "sp-peroxymonosulfuric-acid", amount = 10},
+      {type = "fluid", name = "sp-sodium-periodate", amount = 5},
+      {type = "fluid", name = "sp-germanium-tetrachloride", amount = 5},
+    },
+    results = {
+      {type = "item", name = "sp-inorganic-chemistry-research-data", amount = 1},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-organic-chemistry-research-data",  -- #ForRegEx# - recipe
+    category = "sp-advanced-chemistry",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 60,
+    ingredients = {
+      {type = "item", name = "sp-empty-research-data-card", amount = 1},
+      {type = "fluid", name = "sp-aniline", amount = 10},
+      {type = "fluid", name = "sp-ethylenediamine", amount = 10},
+      {type = "fluid", name = "sp-acetone", amount = 10},
+      {type = "fluid", name = "sp-styrene", amount = 10},
+      {type = "fluid", name = "sp-chloroacetic-acid", amount = 10},
+      {type = "fluid", name = "sp-chloropropanol", amount = 10},
+    },
+    results = {
+      {type = "item", name = "sp-organic-chemistry-research-data", amount = 1},
     }
   },
   ------------------------------------------------------------------------------
@@ -13610,23 +13803,6 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-space-research-data",  -- #ForRegEx# - recipe
-    category = "sp-kr-research-data",
-    enabled = false,
-    allow_productivity = true,
-    energy_required = 24,
-    ingredients = {
-      {type = "item", name = "sp-empty-research-data-card", amount = 5},
-      {type = "item", name = "sp-nickel-rhenium", amount = 5},
-      {type = "item", name = "sp-nickel-rhodium", amount = 5},
-      {type = "item", name = "sp-platinum-rhodium", amount = 5},
-    },
-    results = {
-      {type = "item", name = "sp-space-research-data", amount = 5}
-    }
-  },
-  {
-    type = "recipe",
     name = "sp-matter-research-data",  -- #ForRegEx# - recipe
     category = "crafting-with-fluid",
     enabled = false,
@@ -15045,6 +15221,23 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "sp-space-research-data",  -- #ForRegEx# - recipe
+    category = "sp-kr-research-data",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 24,
+    ingredients = {
+      {type = "item", name = "sp-empty-research-data-card", amount = 5},
+      {type = "item", name = "sp-nickel-rhenium", amount = 5},
+      {type = "item", name = "sp-nickel-rhodium", amount = 5},
+      {type = "item", name = "sp-platinum-rhodium", amount = 5},
+    },
+    results = {
+      {type = "item", name = "sp-space-research-data", amount = 5}
+    }
+  },
+  {
+    type = "recipe",
     name = "sp-gear-mechanism-experiment-data",  -- #ForRegEx# - recipe
     category = "sp-kr-research-data",
     enabled = false,
@@ -15096,6 +15289,24 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-mechatronics-data", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-catalyst-research-data",  -- #ForRegEx# - recipe
+    category = "sp-kr-research-data",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 50,
+    ingredients = {
+      {type = "item", name = "sp-empty-research-data-card", amount = 1},
+      {type = "item", name = "sp-vanadium-pentoxide", amount = 3},
+      {type = "item", name = "sp-titanium-chloride", amount = 5},
+      {type = "item", name = "sp-palladium", amount = 1},
+      {type = "item", name = "sp-platinum-powder", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-catalyst-research-data", amount = 1},
     }
   },
   {
@@ -21453,77 +21664,6 @@ data:extend({
       quaternary = {r = 0.000, g = 0.000, b = 0.000, a = 1.000},
     },
     order = "[liquid]-[bleach]"
-  },
-  {
-    type = "recipe",
-    name = "sp-used-up-fuel-rod-reprocessing",  -- #ForRegEx# - recipe
-    icons = util.icon.create_nuclear_recipe_icon(data.raw.item["sp-used-up-fuel-rod"], data.raw.item["sp-nuclear-waste"]),
-    icon_size = 64,
-    mip_maps = 4,
-    category = "sp-advanced-chemistry",
-    subgroup = "sp-radioactive-resource",
-    enabled = false,
-    allow_productivity = true,
-    energy_required = 60,
-    ingredients = {
-      {type = "item", name = "sp-used-up-fuel-rod", amount = 5},
-      {type = "fluid", name = "sulfuric-acid", amount = 40}
-    },
-    results = {
-      {type = "item", name = "sp-empty-fuel-rod", amount = 2},
-      {type = "item", name = "sp-nuclear-waste", amount = 1}
-    },
-    crafting_machine_tint = {
-      primary = {r = 0.4, g = 1.000, b = 0.4, a = 1.000},
-      secondary = {r = 0.4, g = 0.7, b = 0.4, a = 1.000},
-      tertiary = {r = 0.0, g = 0.7, b = 0.0, a = 1.000},
-      quaternary = {r = 0.000, g = 0.3, b = 0.000, a = 1.000},
-    },
-    order = "z[nuclear]-3-[used-up-fuel-rod-reprocessing]"
-  },
-  {
-    type = "recipe",
-    name = "sp-advanced-nuclear-waste-processing",  -- #ForRegEx# - recipe
-    icons = util.icon.create_nuclear_recipe_icon(data.raw.item["sp-nuclear-waste"], data.raw.item["sp-plutonium-239"]),
-    icon_size = 256,
-    scale = 0.25,
-    category = "sp-advanced-chemistry",
-    subgroup = "sp-radioactive-resource",
-    enabled = false,
-    allow_productivity = true,
-    energy_required = 80,
-    hide_from_player_crafting = true,
-    ingredients = {
-      {type = "item", name = "sp-nuclear-waste", amount = 1},
-      {type = "fluid", name = "sp-peroxymonosulfuric-acid", amount = 12},
-      {type = "fluid", name = "sp-dimethyl-sulfide", amount = 8},
-      {type = "fluid", name = "sp-biocrude-oil", amount = 5}
-    },
-    results = {
-      {type = "item", name = "sp-plutonium-239", probability = 0.6, amount = 1},
-      {type = "item", name = "sp-neptunium-236", probability = 0.12, amount = 1},
-      {type = "item", name = "sp-neptunium-233", probability = 0.05, amount = 1},
-      {type = "item", name = "uranium-238", probability = 0.37, amount = 2},
-      {type = "item", name = "uranium-235", probability = 0.03, amount = 1},
-      {type = "item", name = "sp-uranium-233", probability = 0.04, amount = 1},
-      {type = "item", name = "sp-protactinium-236", probability = 0.12, amount = 1},
-      {type = "item", name = "sp-protactinium-232", probability = 0.06, amount = 1},
-      {type = "item", name = "sp-actinium-232", probability = 0.075, amount = 1},
-      {type = "item", name = "sp-actinium-225", probability = 0.005, amount = 1},
-      {type = "item", name = "carbon", probability = 0.12, amount = 1},
-      {type = "item", name = "sp-tungsten-powder", probability = 0.1, amount = 1},
-      {type = "item", name = "sp-zircon", probability = 0.12, amount = 1},
-      {type = "item", name = "sp-cerium", probability = 0.1, amount = 1},
-      {type = "item", name = "sp-titanium-sponge", probability = 0.4, amount = 1},
-      {type = "fluid", name = "sp-deuterium", amount = 16}
-    },
-    crafting_machine_tint = {
-      primary = {r = 0.4, g = 1.000, b = 0.8, a = 1.000},
-      secondary = {r = 0.4, g = 0.7, b = 0.6, a = 1.000},
-      tertiary = {r = 0.0, g = 0.7, b = 0.6, a = 1.000},
-      quaternary = {r = 0.000, g = 0.3, b = 0.3, a = 1.000},
-    },
-    order = "z[nuclear]-3-[nuclear-waste-processing]2"
   },
   {
     type = "recipe",
