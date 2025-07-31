@@ -3,7 +3,7 @@ Version: 0.3.26
 Date: 2025-08-01
   Features:
     - Added recipe chains for biolab
-    - Added data cards for tier science 3
+    - Added data cards for automation and chemical science 3
     - Added terbium recipe chain
     - Added ytterbium recipe chain
     - Added additional cargo landing pad technology
