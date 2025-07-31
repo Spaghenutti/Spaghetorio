@@ -137,7 +137,7 @@ data:extend({
     },
     crafting_categories = {
       "sp-kr-research-data",
-      "sp-radioactive-decay-research"
+      "sp-radioactive-decay-experimental"
     },
     crafting_speed = 1,
     energy_source = {

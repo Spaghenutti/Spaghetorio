@@ -3506,6 +3506,48 @@ data:extend({
   },
   {
     type = "technology",
+    name = "sp-data-cards",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghetorio__/graphics/hr-icons/data-cards.png",
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-empty-insight-data-card"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-empty-experimental-data-card"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-empty-research-data-card"
+      },
+    },
+    prerequisites = {
+      "sp-advanced-storage"
+    },
+    unit = {
+      count = 100,
+      ingredients = {
+        {"sp-automation-science-pack-2", 1},
+        {"sp-logistic-science-pack-2", 1},
+        {"sp-material-science-pack-2", 1},
+        {"sp-geological-science-pack-2", 1},
+        {"sp-electronic-science-pack-2", 1},
+        {"sp-chemical-science-pack-2", 1},
+        {"sp-metallurgic-science-pack-2", 1},
+        {"sp-electromagnetic-science-pack-2", 1},
+        {"production-science-pack", 1},
+        {"utility-science-pack", 1},
+        {"cryogenic-science-pack", 1},
+        {"agricultural-science-pack", 1},
+        {"sp-computer-science-pack-2", 1}
+      },
+      time = 30
+    },
+  },
+  {
+    type = "technology",
     name = "sp-photovoltaics",  -- #ForRegEx# - technology
     icon_size = 256,
     icon = "__Spaghetorio__/graphics/hr-icons/photovoltaic-cell.png",
@@ -12648,15 +12690,15 @@ data:extend({
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-hydraulic-control-data"
+        recipe = "sp-hydraulic-control-insight-data"
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-machine-data"
+        recipe = "sp-machine-research-data"
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-mechatronics-data"
+        recipe = "sp-mechatronics-insight-data"
       },
     },
     prerequisites = {
@@ -12753,7 +12795,7 @@ data:extend({
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-ion-chromatography-data"
+        recipe = "sp-ion-chromatography-experimental-data"
       },
       {
         type = "unlock-recipe",
@@ -12773,11 +12815,11 @@ data:extend({
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-inorganic-chemistry-research-data"
+        recipe = "sp-organic-chemistry-insight-data"
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-organic-chemistry-research-data"
+        recipe = "sp-inorganic-chemistry-insight-data"
       },
     },
     prerequisites = {
@@ -13106,93 +13148,93 @@ data:extend({
       -- alpha decay
       {
         type = "unlock-recipe",
-        recipe = "sp-alpha-decay-research-data-from-polonium-213"
+        recipe = "sp-alpha-decay-experimental-data-from-polonium-213"
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-alpha-decay-research-data-from-astatine-213"
+        recipe = "sp-alpha-decay-experimental-data-from-astatine-213"
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-alpha-decay-research-data-from-astatine-217"
+        recipe = "sp-alpha-decay-experimental-data-from-astatine-217"
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-alpha-decay-research-data-from-francium-217"
+        recipe = "sp-alpha-decay-experimental-data-from-francium-217"
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-alpha-decay-research-data-from-francium-221"
+        recipe = "sp-alpha-decay-experimental-data-from-francium-221"
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-alpha-decay-research-data-from-actinium-221"
+        recipe = "sp-alpha-decay-experimental-data-from-actinium-221"
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-alpha-decay-research-data-from-actinium-225"
+        recipe = "sp-alpha-decay-experimental-data-from-actinium-225"
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-alpha-decay-research-data-from-thorium-225"
+        recipe = "sp-alpha-decay-experimental-data-from-thorium-225"
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-alpha-decay-research-data-from-thorium-229"
+        recipe = "sp-alpha-decay-experimental-data-from-thorium-229"
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-alpha-decay-research-data-from-uranium-229"
+        recipe = "sp-alpha-decay-experimental-data-from-uranium-229"
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-alpha-decay-research-data-from-uranium-233"
+        recipe = "sp-alpha-decay-experimental-data-from-uranium-233"
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-alpha-decay-research-data-from-uranium-236"
+        recipe = "sp-alpha-decay-experimental-data-from-uranium-236"
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-alpha-decay-research-data-from-neptunium-233"
+        recipe = "sp-alpha-decay-experimental-data-from-neptunium-233"
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-alpha-decay-research-data-from-plutonium-239"
+        recipe = "sp-alpha-decay-experimental-data-from-plutonium-239"
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-alpha-decay-research-data-from-plutonium-240"
+        recipe = "sp-alpha-decay-experimental-data-from-plutonium-240"
       },
       -- beta plus decay
       {
         type = "unlock-recipe",
-        recipe = "sp-beta-plus-decay-research-data-from-protactinium-232"
+        recipe = "sp-beta-plus-decay-experimental-data-from-protactinium-232"
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-beta-plus-decay-research-data-from-neptunium-236"
+        recipe = "sp-beta-plus-decay-experimental-data-from-neptunium-236"
       },
       -- beta minus decay
       {
         type = "unlock-recipe",
-        recipe = "sp-beta-minus-decay-research-data-from-bismuth-213"
+        recipe = "sp-beta-minus-decay-experimental-data-from-bismuth-213"
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-beta-minus-decay-research-data-from-radium-221"
+        recipe = "sp-beta-minus-decay-experimental-data-from-radium-221"
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-beta-minus-decay-research-data-from-actinium-232"
+        recipe = "sp-beta-minus-decay-experimental-data-from-actinium-232"
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-beta-minus-decay-research-data-from-protactinium-229"
+        recipe = "sp-beta-minus-decay-experimental-data-from-protactinium-229"
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-beta-minus-decay-research-data-from-protactinium-236"
+        recipe = "sp-beta-minus-decay-experimental-data-from-protactinium-236"
       },
     },
     prerequisites = {

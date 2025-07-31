@@ -391,7 +391,7 @@ data:extend({
   },
   {
     type = "item-subgroup",
-    name = "sp-data",  -- #ForRegEx# - item-subgroup
+    name = "sp-insight-data",  -- #ForRegEx# - item-subgroup
     group = "sp-science-products",
     order = "b-1"
   },
@@ -409,19 +409,19 @@ data:extend({
   },
   {
     type = "item-subgroup",
-    name = "sp-alpha-decay-research",  -- #ForRegEx# - item-subgroup
+    name = "sp-alpha-decay-experimental",  -- #ForRegEx# - item-subgroup
     group = "sp-science-products",
     order = "b-nuclear1"
   },
   {
     type = "item-subgroup",
-    name = "sp-beta-plus-decay-research",  -- #ForRegEx# - item-subgroup
+    name = "sp-beta-plus-decay-experimental",  -- #ForRegEx# - item-subgroup
     group = "sp-science-products",
     order = "b-nuclear2"
   },
   {
     type = "item-subgroup",
-    name = "sp-beta-minus-decay-research",  -- #ForRegEx# - item-subgroup
+    name = "sp-beta-minus-decay-experimental",  -- #ForRegEx# - item-subgroup
     group = "sp-science-products",
     order = "b-nuclear3"
   },
