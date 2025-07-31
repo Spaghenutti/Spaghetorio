@@ -199,6 +199,7 @@ TODO for 0.3.32
     - xenotime
 
 TODO for 0.4.0
+  - Make oil power much earlier (rename incineratpr too)
   - Fix leadstone / lead recipe chain
   - Add magnet to fast inserter
 
