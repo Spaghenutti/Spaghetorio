@@ -12686,7 +12686,7 @@ data:extend({
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-gear-mechanism-experiment-data"
+        recipe = "sp-gear-mechanism-experimental-data"
       },
       {
         type = "unlock-recipe",

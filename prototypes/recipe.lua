@@ -5923,12 +5923,12 @@ data:extend({
     subgroup = "sp-ice",
     enabled = false,
     allow_productivity = true,
-    energy_required = 15,
+    energy_required = 4,
     ingredients = {
       {type = "item", name = "sp-methane-ice", amount = 1},
     },
     results = {
-      {type = "fluid", name = "sp-methane", amount = 20},
+      {type = "fluid", name = "sp-methane", amount = 25},
     }
   },
   {
@@ -6922,7 +6922,7 @@ data:extend({
     allow_productivity = true,
     energy_required = 90,
     ingredients = {
-      {type = "item", name = "sp-empty-research-data-card", amount = 1},
+      {type = "item", name = "sp-empty-experimental-data-card", amount = 1},
       {type = "fluid", name = "sp-cellulose", amount = 10},
       {type = "fluid", name = "sp-methyl-sulfate", amount = 10},
       {type = "fluid", name = "sp-ethylenediaminetetraacetic-acid", amount = 10},
@@ -6939,7 +6939,7 @@ data:extend({
     allow_productivity = true,
     energy_required = 60,
     ingredients = {
-      {type = "item", name = "sp-empty-research-data-card", amount = 1},
+      {type = "item", name = "sp-empty-experimental-data-card", amount = 1},
       {type = "fluid", name = "sp-aqua-regia", amount = 15},
       {type = "fluid", name = "sulfuric-acid", amount = 20},
       {type = "fluid", name = "sp-nitric-acid", amount = 20},
@@ -6959,7 +6959,7 @@ data:extend({
     allow_productivity = true,
     energy_required = 75,
     ingredients = {
-      {type = "item", name = "sp-empty-research-data-card", amount = 1},
+      {type = "item", name = "sp-empty-experimental-data-card", amount = 1},
       {type = "fluid", name = "sp-tetrafluoroethylene", amount = 15},
       {type = "fluid", name = "sp-argon", amount = 5},
       {type = "fluid", name = "sp-helium", amount = 15},
@@ -6981,7 +6981,7 @@ data:extend({
     allow_productivity = true,
     energy_required = 30,
     ingredients = {
-      {type = "item", name = "sp-empty-research-data-card", amount = 1},
+      {type = "item", name = "sp-empty-experimental-data-card", amount = 1},
       {type = "fluid", name = "sp-hydrazine", amount = 10},
       {type = "fluid", name = "sp-hydrogen-peroxide", amount = 10},
       {type = "fluid", name = "sp-nitrogen-dioxide", amount = 10},
@@ -7004,7 +7004,7 @@ data:extend({
     allow_productivity = true,
     energy_required = 40,
     ingredients = {
-      {type = "item", name = "sp-empty-research-data-card", amount = 1},
+      {type = "item", name = "sp-empty-insight-data-card", amount = 1},
       {type = "fluid", name = "sp-diborane", amount = 10},
       {type = "fluid", name = "sp-hydrogen-sulfide", amount = 10},
       {type = "fluid", name = "sp-sulfamate", amount = 10},
@@ -7024,7 +7024,7 @@ data:extend({
     allow_productivity = true,
     energy_required = 60,
     ingredients = {
-      {type = "item", name = "sp-empty-research-data-card", amount = 1},
+      {type = "item", name = "sp-empty-insight-data-card", amount = 1},
       {type = "fluid", name = "sp-aniline", amount = 10},
       {type = "fluid", name = "sp-ethylenediamine", amount = 10},
       {type = "fluid", name = "sp-acetone", amount = 10},
@@ -8789,12 +8789,12 @@ data:extend({
     subgroup = "sp-ice",
     enabled = false,
     allow_productivity = true,
-    energy_required = 10,
+    energy_required = 4,
     ingredients = {
       {type = "item", name = "sp-methane-ice", amount = 1},
     },
     results = {
-      {type = "fluid", name = "sp-methane", amount = 15},
+      {type = "fluid", name = "sp-argon", amount = 10},
     },
     crafting_machine_tint = {
       primary = {r = 0.800, g = 0.000, b = 0.100, a = 0.200},
@@ -8813,12 +8813,12 @@ data:extend({
     subgroup = "sp-ice",
     enabled = false,
     allow_productivity = true,
-    energy_required = 15,
+    energy_required = 6,
     ingredients = {
       {type = "item", name = "sp-methane-ice", amount = 1},
     },
     results = {
-      {type = "fluid", name = "sp-xenon", amount = 10},
+      {type = "fluid", name = "sp-xenon", amount = 5},
     },
     crafting_machine_tint = {
       primary = {r = 0.800, g = 0.000, b = 0.100, a = 0.200},
@@ -10502,7 +10502,7 @@ data:extend({
     allow_productivity = true,
     energy_required = 16,
     ingredients = {
-      {type = "item", name = "sp-empty-research-data-card", amount = 1},
+      {type = "item", name = "sp-empty-insight-data-card", amount = 1},
       {type = "fluid", name = "sp-high-density-structure-gel", amount = 10},
       {type = "fluid", name = "lubricant", amount = 10},
       {type = "item", name = "sp-vacuum-pump", amount = 1},
@@ -14603,7 +14603,8 @@ data:extend({
       {type = "item", name = "sp-optic-fiber", amount = 2},
       {type = "item", name = "sp-integrated-circuit", amount = 2},
       {type = "item", name = "sp-light-emitting-diode", amount = 4},
-      {type = "item", name = "sp-hard-drive", amount = 1}
+      {type = "item", name = "sp-voltage-controller", amount = 1},
+      {type = "item", name = "sp-phase-change-memory", amount = 2}
     },
     results = {
       {type = "item", name = "sp-empty-insight-data-card", amount = 1}
@@ -14621,7 +14622,8 @@ data:extend({
       {type = "item", name = "sp-optic-fiber", amount = 2},
       {type = "item", name = "sp-integrated-circuit", amount = 2},
       {type = "item", name = "sp-light-emitting-diode", amount = 4},
-      {type = "item", name = "sp-hard-drive", amount = 1}
+      {type = "item", name = "sp-voltage-controller", amount = 1},
+      {type = "item", name = "sp-memory-chip", amount = 4}
     },
     results = {
       {type = "item", name = "sp-empty-experimental-data-card", amount = 1}
@@ -14783,7 +14785,7 @@ data:extend({
     energy_required = 2 * 3 / 4,
     ingredients = {
       {type = "item", name = "sp-polonium-213", amount = 1},
-      {type = "item", name = "sp-empty-research-data-card", amount = 1},
+      {type = "item", name = "sp-empty-experimental-data-card", amount = 1},
     },
     results = {
       {type = "item", name = "sp-leadstone", amount = 1},
@@ -14803,7 +14805,7 @@ data:extend({
     energy_required = 1 * 3 / 4,
     ingredients = {
       {type = "item", name = "sp-astatine-213", amount = 1},
-      {type = "item", name = "sp-empty-research-data-card", amount = 1},
+      {type = "item", name = "sp-empty-experimental-data-card", amount = 1},
     },
     results = {
       {type = "item", name = "sp-bismuth", amount = 1},
@@ -14823,7 +14825,7 @@ data:extend({
     energy_required = 6 * 3 / 4,
     ingredients = {
       {type = "item", name = "sp-astatine-217", amount = 1},
-      {type = "item", name = "sp-empty-research-data-card", amount = 1},
+      {type = "item", name = "sp-empty-experimental-data-card", amount = 1},
     },
     results = {
       {type = "item", name = "sp-bismuth-213", amount = 1},
@@ -14843,7 +14845,7 @@ data:extend({
     energy_required = 1.5 * 3 / 4,
     ingredients = {
       {type = "item", name = "sp-francium-217", amount = 1},
-      {type = "item", name = "sp-empty-research-data-card", amount = 1},
+      {type = "item", name = "sp-empty-experimental-data-card", amount = 1},
     },
     results = {
       {type = "item", name = "sp-astatine-213", amount = 1},
@@ -14863,7 +14865,7 @@ data:extend({
     energy_required = 30 * 3 / 4,
     ingredients = {
       {type = "item", name = "sp-francium-221", amount = 1},
-      {type = "item", name = "sp-empty-research-data-card", amount = 2},
+      {type = "item", name = "sp-empty-experimental-data-card", amount = 2},
     },
     results = {
       {type = "item", name = "sp-astatine-217", amount = 1},
@@ -14883,7 +14885,7 @@ data:extend({
     energy_required = 2 * 3 / 4,
     ingredients = {
       {type = "item", name = "sp-actinium-221", amount = 1},
-      {type = "item", name = "sp-empty-research-data-card", amount = 1},
+      {type = "item", name = "sp-empty-experimental-data-card", amount = 1},
     },
     results = {
       {type = "item", name = "sp-francium-217", amount = 1},
@@ -14903,7 +14905,7 @@ data:extend({
     energy_required = 24 * 3 / 4,
     ingredients = {
       {type = "item", name = "sp-actinium-225", amount = 1},
-      {type = "item", name = "sp-empty-research-data-card", amount = 1},
+      {type = "item", name = "sp-empty-experimental-data-card", amount = 1},
     },
     results = {
       {type = "item", name = "sp-francium-221", amount = 1},
@@ -14923,7 +14925,7 @@ data:extend({
     energy_required = 16 * 3 / 4,
     ingredients = {
       {type = "item", name = "sp-thorium-225", amount = 1},
-      {type = "item", name = "sp-empty-research-data-card", amount = 1},
+      {type = "item", name = "sp-empty-experimental-data-card", amount = 1},
     },
     results = {
       {type = "item", name = "sp-radium-221", amount = 1},
@@ -14943,7 +14945,7 @@ data:extend({
     energy_required = 3000 * 3 / 4,
     ingredients = {
       {type = "item", name = "sp-thorium-229", amount = 1},
-      {type = "item", name = "sp-empty-research-data-card", amount = 5},
+      {type = "item", name = "sp-empty-experimental-data-card", amount = 5},
     },
     results = {
       {type = "item", name = "sp-radium-225", amount = 1},
@@ -14963,7 +14965,7 @@ data:extend({
     energy_required = 90 * 3 / 4,
     ingredients = {
       {type = "item", name = "sp-uranium-229", amount = 1},
-      {type = "item", name = "sp-empty-research-data-card", amount = 3},
+      {type = "item", name = "sp-empty-experimental-data-card", amount = 3},
     },
     results = {
       {type = "item", name = "sp-thorium-225", amount = 1},
@@ -14983,7 +14985,7 @@ data:extend({
     energy_required = 3 * 3600 * 3 / 4,
     ingredients = {
       {type = "item", name = "sp-uranium-233", amount = 1},
-      {type = "item", name = "sp-empty-research-data-card", amount = 30},
+      {type = "item", name = "sp-empty-experimental-data-card", amount = 30},
     },
     results = {
       {type = "item", name = "sp-thorium-229", amount = 1},
@@ -15003,7 +15005,7 @@ data:extend({
     energy_required = 12 * 3600 * 3 / 4,
     ingredients = {
       {type = "item", name = "sp-uranium-236", amount = 1},
-      {type = "item", name = "sp-empty-research-data-card", amount = 100},
+      {type = "item", name = "sp-empty-experimental-data-card", amount = 100},
     },
     results = {
       {type = "item", name = "sp-thorium-232", amount = 1},
@@ -15023,7 +15025,7 @@ data:extend({
     energy_required = 20 * 3 / 4,
     ingredients = {
       {type = "item", name = "sp-neptunium-233", amount = 1},
-      {type = "item", name = "sp-empty-research-data-card", amount = 1},
+      {type = "item", name = "sp-empty-experimental-data-card", amount = 1},
     },
     results = {
       {type = "item", name = "sp-protactinium-229", amount = 1},
@@ -15043,7 +15045,7 @@ data:extend({
     energy_required = 7200 * 3 / 4,
     ingredients = {
       {type = "item", name = "sp-plutonium-239", amount = 1},
-      {type = "item", name = "sp-empty-research-data-card", amount = 10},
+      {type = "item", name = "sp-empty-experimental-data-card", amount = 10},
     },
     results = {
       {type = "item", name = "uranium-235", amount = 1},
@@ -15063,7 +15065,7 @@ data:extend({
     energy_required = 3600 * 3 / 4,
     ingredients = {
       {type = "item", name = "sp-plutonium-240", amount = 1},
-      {type = "item", name = "sp-empty-research-data-card", amount = 5},
+      {type = "item", name = "sp-empty-experimental-data-card", amount = 5},
     },
     results = {
       {type = "item", name = "sp-uranium-236", amount = 1},
@@ -15084,7 +15086,7 @@ data:extend({
     energy_required = 200 * 3 / 4,
     ingredients = {
       {type = "item", name = "sp-protactinium-232", amount = 1},
-      {type = "item", name = "sp-empty-research-data-card", amount = 2},
+      {type = "item", name = "sp-empty-experimental-data-card", amount = 2},
     },
     results = {
       {type = "item", name = "sp-thorium-232", amount = 1},
@@ -15104,7 +15106,7 @@ data:extend({
     energy_required = 9000 * 3 / 4,
     ingredients = {
       {type = "item", name = "sp-neptunium-236", amount = 1},
-      {type = "item", name = "sp-empty-research-data-card", amount = 12},
+      {type = "item", name = "sp-empty-experimental-data-card", amount = 12},
     },
     results = {
       {type = "item", name = "sp-uranium-236", amount = 1},
@@ -15125,7 +15127,7 @@ data:extend({
     energy_required = 20 * 3 / 4,
     ingredients = {
       {type = "item", name = "sp-bismuth-213", amount = 1},
-      {type = "item", name = "sp-empty-research-data-card", amount = 1},
+      {type = "item", name = "sp-empty-experimental-data-card", amount = 1},
     },
     results = {
       {type = "item", name = "sp-polonium-213", amount = 1},
@@ -15145,7 +15147,7 @@ data:extend({
     energy_required = 12 * 3 / 4,
     ingredients = {
       {type = "item", name = "sp-radium-221", amount = 1},
-      {type = "item", name = "sp-empty-research-data-card", amount = 1},
+      {type = "item", name = "sp-empty-experimental-data-card", amount = 1},
     },
     results = {
       {type = "item", name = "sp-actinium-221", amount = 1},
@@ -15165,7 +15167,7 @@ data:extend({
     energy_required = 320 * 3 / 4,
     ingredients = {
       {type = "item", name = "sp-actinium-232", amount = 1},
-      {type = "item", name = "sp-empty-research-data-card", amount = 3},
+      {type = "item", name = "sp-empty-experimental-data-card", amount = 3},
     },
     results = {
       {type = "item", name = "sp-thorium-232", amount = 1},
@@ -15185,7 +15187,7 @@ data:extend({
     energy_required = 240 * 3 / 4,
     ingredients = {
       {type = "item", name = "sp-protactinium-229", amount = 1},
-      {type = "item", name = "sp-empty-research-data-card", amount = 3},
+      {type = "item", name = "sp-empty-experimental-data-card", amount = 3},
     },
     results = {
       {type = "item", name = "sp-uranium-229", amount = 1},
@@ -15205,7 +15207,7 @@ data:extend({
     energy_required = 18 * 3 / 4,
     ingredients = {
       {type = "item", name = "sp-protactinium-236", amount = 1},
-      {type = "item", name = "sp-empty-research-data-card", amount = 1},
+      {type = "item", name = "sp-empty-experimental-data-card", amount = 1},
     },
     results = {
       {type = "item", name = "sp-uranium-236", amount = 1},
@@ -15274,20 +15276,20 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-gear-mechanism-experiment-data",  -- #ForRegEx# - recipe
+    name = "sp-gear-mechanism-experimental-data",  -- #ForRegEx# - recipe
     category = "sp-kr-research-data",
     enabled = false,
     allow_productivity = true,
     energy_required = 12,
     ingredients = {
-      {type = "item", name = "sp-empty-research-data-card", amount = 1},
+      {type = "item", name = "sp-empty-experimental-data-card", amount = 1},
       {type = "item", name = "sp-gearbox", amount = 1},
       {type = "item", name = "sp-heavy-gearbox", amount = 1},
       {type = "item", name = "sp-gearshaft", amount = 1},
       {type = "item", name = "sp-differential", amount = 1},
     },
     results = {
-      {type = "item", name = "sp-gear-mechanism-experiment-data", amount = 1}
+      {type = "item", name = "sp-gear-mechanism-experimental-data", amount = 1}
     }
   },
   {
@@ -15316,7 +15318,7 @@ data:extend({
     allow_productivity = true,
     energy_required = 12,
     ingredients = {
-      {type = "item", name = "sp-empty-research-data-card", amount = 1},
+      {type = "item", name = "sp-empty-insight-data-card", amount = 1},
       {type = "item", name = "sp-automation-core", amount = 5},
       {type = "item", name = "sp-servo-motor", amount = 8},
       {type = "item", name = "sp-actuator", amount = 3},
@@ -15354,7 +15356,7 @@ data:extend({
     energy_required = 32,
     ingredients = {
       {type = "item", name = "sp-automation-science-pack-2", amount = 10},
-      {type = "item", name = "sp-gear-mechanism-experiment-data", amount = 5},
+      {type = "item", name = "sp-gear-mechanism-experimental-data", amount = 5},
       {type = "item", name = "sp-hydraulic-control-insight-data", amount = 5},
       {type = "item", name = "sp-machine-research-data", amount = 5},
       {type = "item", name = "sp-mechatronics-insight-data", amount = 5},

@@ -8086,12 +8086,12 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-gear-mechanism-experiment-data",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/icons/gear-mechanism-experiment-data.png",
+    name = "sp-gear-mechanism-experimental-data",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/gear-mechanism-experimental-data.png",
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "sp-experimental-data",
-    order = "automation-[gear-mechanism-experiment-data]",
+    order = "automation-[gear-mechanism-experimental-data]",
     stack_size = 200,
   },
   {
