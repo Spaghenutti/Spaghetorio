@@ -16,7 +16,7 @@ from typing import List
 
 PARENT_WORKING_DIRECTORY = os.path.dirname(os.getcwd())
 INFO_JSON_VERSION_REGEX: str = r"\"version\": \"([A-Za-z0-9]+(\.[A-Za-z0-9]+)+)\""
-TARGET_PATH: str = r"D:\Factorio modding\Spaghetorio versions\\"
+TARGET_PATH: str = r"C:\Users\stone\Documents\Factorio mods\Spaghetorio versions\\"
 MOD_ZIPS: List[str] = ["Spaghetorio", "SpaghetorioGraphics1"]  # List containing mod packs / .zip to be created, since maximum file size for factorio mod is 262.1 MB
 
 # IMAGE_REGEX: str = r"\"([^\"]*.png)\"([^\n]*)"

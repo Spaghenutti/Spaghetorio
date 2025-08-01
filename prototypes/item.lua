@@ -8041,6 +8041,256 @@ data:extend({
     order = "chemical-[inorganic-chemistry-insight-data]",
     stack_size = 200,
   },
+  {
+    type = "item",
+    name = "sp-drone-routing-insight-data",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/drone-routing-insight-data.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-insight-data",
+    order = "logistic-[drone-routing-insight-data]",
+    stack_size = 200,
+  },
+  {
+    type = "item",
+    name = "sp-inventory-control-insight-data",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/inventory-control-insight-data.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-insight-data",
+    order = "logistic-[inventory-control-insight-data]",
+    stack_size = 200,
+  },
+  {
+    type = "item",
+    name = "sp-transport-efficiency-insight-data",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/transport-efficiency-insight-data.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-insight-data",
+    order = "logistic-[transport-efficiency-insight-data]",
+    stack_size = 200,
+  },
+  {
+    type = "item",
+    name = "sp-ballistics-insight-data",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/ballistics-insight-data.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-insight-data",
+    order = "military-[ballistics-insight-data]",
+    stack_size = 200,
+  },
+  {
+    type = "item",
+    name = "sp-analog-signalling-insight-data",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/analog-signalling-insight-data.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-insight-data",
+    order = "electronic-[analog-signalling-insight-data]",
+    stack_size = 200,
+  },
+  {
+    type = "item",
+    name = "sp-power-regulation-insight-data",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/power-regulation-insight-data.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-insight-data",
+    order = "electronic-[power-regulation-insight-data]",
+    stack_size = 200,
+  },
+  {
+    type = "item",
+    name = "sp-signal-processing-insight-data",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/signal-processing-insight-data.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-insight-data",
+    order = "electronic-[signal-processing-insight-data]",
+    stack_size = 200,
+  },
+  {
+    type = "item",
+    name = "sp-mineral-insight-data",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/mineral-insight-data.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-insight-data",
+    order = "geological-[mineral-insight-data]",
+    stack_size = 200,
+  },
+  {
+    type = "item",
+    name = "sp-ore-insight-data",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/ore-insight-data.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-insight-data",
+    order = "geological-[ore-insight-data]",
+    stack_size = 200,
+  },
+  {
+    type = "item",
+    name = "sp-refinment-insight-data",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/refinment-insight-data.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-insight-data",
+    order = "material-[refinment-insight-data]",
+    stack_size = 200,
+  },
+  {
+    type = "item",
+    name = "sp-corrosion-resistance-insight-data",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/corrosion-resistance-insight-data.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-insight-data",
+    order = "metallurgic-[corrosion-resistance-insight-data]",
+    stack_size = 200,
+  },
+  {
+    type = "item",
+    name = "sp-casting-insight-data",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/casting-insight-data.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-insight-data",
+    order = "metallurgic-[casting-insight-data]",
+    stack_size = 200,
+  },
+  {
+    type = "item",
+    name = "sp-conductivity-insight-data",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/conductivity-insight-data.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-insight-data",
+    order = "electromagnetic-[conductivity-insight-data]",
+    stack_size = 200,
+  },
+  {
+    type = "item",
+    name = "sp-plasma-flow-insight-data",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/plasma-flow-insight-data.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-insight-data",
+    order = "electromagnetic-[plasma-flow-insight-data]",
+    stack_size = 200,
+  },
+  {
+    type = "item",
+    name = "sp-mutation-insight-data",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/mutation-insight-data.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-insight-data",
+    order = "biological-[mutation-insight-data]",
+    stack_size = 200,
+  },
+  {
+    type = "item",
+    name = "sp-organic-matter-insight-data",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/organic-matter-insight-data.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-insight-data",
+    order = "biological-[organic-matter-insight-data]",
+    stack_size = 200,
+  },
+  {
+    type = "item",
+    name = "sp-toxin-profile-insight-data",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/toxin-profile-insight-data.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-insight-data",
+    order = "biological-[toxin-profile-insight-data]",
+    stack_size = 200,
+  },
+  {
+    type = "item",
+    name = "sp-cryostabilizing-insight-data",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/cryostabilizing-insight-data.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-insight-data",
+    order = "cryogenic-[cryostabilizing-insight-data]",
+    stack_size = 200,
+  },
+  {
+    type = "item",
+    name = "sp-vitrification-insight-data",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/vitrification-insight-data.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-insight-data",
+    order = "cryogenic-[vitrification-insight-data]",
+    stack_size = 200,
+  },
+  {
+    type = "item",
+    name = "sp-infrastructure-insight-data",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/infrastructure-insight-data.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-insight-data",
+    order = "production-[infrastructure-insight-data]",
+    stack_size = 200,
+  },
+  {
+    type = "item",
+    name = "sp-energy-usage-insight-data",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/energy-usage-insight-data.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-insight-data",
+    order = "production-[energy-usage-insight-data]",
+    stack_size = 200,
+  },
+  {
+    type = "item",
+    name = "sp-parallelizing-insight-data",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/parallelizing-insight-data.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-insight-data",
+    order = "computer-[parallelizing-insight-data]",
+    stack_size = 200,
+  },
+  {
+    type = "item",
+    name = "sp-navigation-insight-data",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/navigation-insight-data.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-insight-data",
+    order = "space-[navigation-insight-data]",
+    stack_size = 200,
+  },
+  {
+    type = "item",
+    name = "sp-asteroid-composition-insight-data",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/asteroid-composition-insight-data.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-insight-data",
+    order = "space-[asteroid-composition-insight-data]",
+    stack_size = 200,
+  },
+  {
+    type = "item",
+    name = "sp-continous-improvement-insight-data",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/continous-improvement-insight-data.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-insight-data",
+    order = "utility-[continous-improvement-insight-data]",
+    stack_size = 200,
+  },
   ------------------------------------------------------------------------------
   -- MARK: experimental-data
   ------------------------------------------------------------------------------
@@ -8124,6 +8374,166 @@ data:extend({
     order = "nuclear-[beta-plus-decay-experimental-data]",
     stack_size = 200,
   },
+  {
+    type = "item",
+    name = "sp-explosive-yield-experimental-data",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/explosive-yield-experimental-data.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-experimental-data",
+    order = "military-[explosive-yield-experimental-data]",
+    stack_size = 200,
+  },
+  {
+    type = "item",
+    name = "sp-weapons-system-experimental-data",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/weapons-system-experimental-data.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-experimental-data",
+    order = "military-[weapons-system-experimental-data]",
+    stack_size = 200,
+  },
+  {
+    type = "item",
+    name = "sp-circuit-design-experimental-data",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/circuit-design-experimental-data.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-experimental-data",
+    order = "electronic-[circuit-design-experimental-data]",
+    stack_size = 200,
+  },
+  {
+    type = "item",
+    name = "sp-thermal-conductivity-experimental-data",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/thermal-conductivity-experimental-data.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-experimental-data",
+    order = "material-[thermal-conductivity-experimental-data]",
+    stack_size = 200,
+  },
+  {
+    type = "item",
+    name = "sp-carbon-compound-experimental-data",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/carbon-compound-experimental-data.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-experimental-data",
+    order = "material-[carbon-compound-experimental-data]",
+    stack_size = 200,
+  },
+  {
+    type = "item",
+    name = "sp-Intermetallic-experimental-data",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/Intermetallic-experimental-data.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-experimental-data",
+    order = "metallurgic-[Intermetallic-experimental-data]",
+    stack_size = 200,
+  },
+  {
+    type = "item",
+    name = "sp-heat-treatment-experimental-data",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/heat-treatment-experimental-data.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-experimental-data",
+    order = "metallurgic-[heat-treatment-experimental-data]",
+    stack_size = 200,
+  },
+  {
+    type = "item",
+    name = "sp-induction-experimental-data",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/induction-experimental-data.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-experimental-data",
+    order = "electromagnetic-[induction-experimental-data]",
+    stack_size = 200,
+  },
+  {
+    type = "item",
+    name = "sp-protein-synthesis-experimental-data",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/protein-synthesis-experimental-data.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-experimental-data",
+    order = "biological-[protein-synthesis-experimental-data]",
+    stack_size = 200,
+  },
+  {
+    type = "item",
+    name = "sp-thermal-shock-experimental-data",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/thermal-shock-experimental-data.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-experimental-data",
+    order = "cryogenic-[thermal-shock-experimental-data]",
+    stack_size = 200,
+  },
+  {
+    type = "item",
+    name = "sp-coolant-experimental-data",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/coolant-experimental-data.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-experimental-data",
+    order = "cryogenic-[coolant-experimental-data]",
+    stack_size = 200,
+  },
+  {
+    type = "item",
+    name = "sp-prototyping-experimental-data",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/prototyping-experimental-data.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-experimental-data",
+    order = "production-[prototyping-experimental-data]",
+    stack_size = 200,
+  },
+  {
+    type = "item",
+    name = "sp-protocol-experimental-data",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/protocol-experimental-data.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-experimental-data",
+    order = "computer-[protocol-experimental-data]",
+    stack_size = 200,
+  },
+  {
+    type = "item",
+    name = "sp-quantum-computing-experimental-data",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/quantum-computing-experimental-data.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-experimental-data",
+    order = "computer-[quantum-computing-experimental-data]",
+    stack_size = 200,
+  },
+  {
+    type = "item",
+    name = "sp-gravitational-experimental-data",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/gravitational-experimental-data.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-experimental-data",
+    order = "space-[gravitational-experimental-data]",
+    stack_size = 200,
+  },
+  {
+    type = "item",
+    name = "sp-structural-experimental-data",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/structural-experimental-data.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-experimental-data",
+    order = "utility-[structural-experimental-data]",
+    stack_size = 200,
+  },
   ------------------------------------------------------------------------------
   -- MARK: research-data
   ------------------------------------------------------------------------------
@@ -8175,6 +8585,246 @@ data:extend({
     icon_mipmaps = 4,
     subgroup = "sp-research-data",
     order = "chemical-[catalyst-research-data]",
+    stack_size = 200,
+  },
+  {
+    type = "item",
+    name = "sp-assembly-research-data",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/assembly-research-data.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-research-data",
+    order = "logistic-[assembly-research-data]",
+    stack_size = 200,
+  },
+  {
+    type = "item",
+    name = "sp-combat-research-data",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/combat-research-data.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-research-data",
+    order = "military-[combat-research-data]",
+    stack_size = 200,
+  },
+  {
+    type = "item",
+    name = "sp-defense-research-data",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/defense-research-data.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-research-data",
+    order = "military-[defense-research-data]",
+    stack_size = 200,
+  },
+  {
+    type = "item",
+    name = "sp-semiconductor-research-data",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/semiconductor-research-data.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-research-data",
+    order = "electronic-[semiconductor-research-data]",
+    stack_size = 200,
+  },
+  {
+    type = "item",
+    name = "sp-microchip-research-data",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/microchip-research-data.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-research-data",
+    order = "electronic-[microchip-research-data]",
+    stack_size = 200,
+  },
+  {
+    type = "item",
+    name = "sp-mining-research-data",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/mining-research-data.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-research-data",
+    order = "geological-[mining-research-data]",
+    stack_size = 200,
+  },
+  {
+    type = "item",
+    name = "sp-vulcanic-research-data",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/vulcanic-research-data.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-research-data",
+    order = "geological-[vulcanic-research-data]",
+    stack_size = 200,
+  },
+  {
+    type = "item",
+    name = "sp-reinforced-material-research-data",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/reinforced-material-research-data.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-research-data",
+    order = "material-[reinforced-material-research-data]",
+    stack_size = 200,
+  },
+  {
+    type = "item",
+    name = "sp-tooling-material-research-data",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/tooling-material-research-data.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-research-data",
+    order = "material-[tooling-material-research-data]",
+    stack_size = 200,
+  },
+  {
+    type = "item",
+    name = "sp-matrix-material-research-data",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/matrix-material-research-data.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-research-data",
+    order = "material-[matrix-material-research-data]",
+    stack_size = 200,
+  },
+  {
+    type = "item",
+    name = "sp-high-entropy-alloys-research-data",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/high-entropy-alloys-research-data.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-research-data",
+    order = "metallurgic-[high-entropy-alloys-research-data]",
+    stack_size = 200,
+  },
+  {
+    type = "item",
+    name = "sp-froth-analysis-research-data",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/froth-analysis-research-data.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-research-data",
+    order = "metallurgic-[froth-analysis-research-data]",
+    stack_size = 200,
+  },
+  {
+    type = "item",
+    name = "sp-magnetism-research-data",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/magnetism-research-data.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-research-data",
+    order = "electromagnetic-[magnetism-research-data]",
+    stack_size = 200,
+  },
+  {
+    type = "item",
+    name = "sp-electromagnetic-shielding-research-data",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/electromagnetic-shielding-research-data.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-research-data",
+    order = "electromagnetic-[electromagnetic-shielding-research-data]",
+    stack_size = 200,
+  },
+  {
+    type = "item",
+    name = "sp-biopolymer-research-data",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/biopolymer-research-data.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-research-data",
+    order = "biological-[biopolymer-research-data]",
+    stack_size = 200,
+  },
+  {
+    type = "item",
+    name = "sp-microbe-research-data",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/microbe-research-data.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-research-data",
+    order = "biological-[microbe-research-data]",
+    stack_size = 200,
+  },
+  {
+    type = "item",
+    name = "sp-subzero-reactivity-research-data",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/subzero-reactivity-research-data.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-research-data",
+    order = "cryogenic-[subzero-reactivity-research-data]",
+    stack_size = 200,
+  },
+  {
+    type = "item",
+    name = "sp-manufacturing-research-data",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/manufacturing-research-data.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-research-data",
+    order = "production-[manufacturing-research-data]",
+    stack_size = 200,
+  },
+  {
+    type = "item",
+    name = "sp-algorithm-research-data",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/algorithm-research-data.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-research-data",
+    order = "computer-[algorithm-research-data]",
+    stack_size = 200,
+  },
+  {
+    type = "item",
+    name = "sp-datastructure-research-data",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/datastructure-research-data.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-research-data",
+    order = "computer-[datastructure-research-data]",
+    stack_size = 200,
+  },
+  {
+    type = "item",
+    name = "sp-deep-space-research-data",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/deep-space-research-data.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-research-data",
+    order = "space-[deep-space-research-data]",
+    stack_size = 200,
+  },
+  {
+    type = "item",
+    name = "sp-propulsion-research-data",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/propulsion-research-data.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-research-data",
+    order = "space-[propulsion-research-data]",
+    stack_size = 200,
+  },
+  {
+    type = "item",
+    name = "sp-process-research-data",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/process-research-data.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-research-data",
+    order = "utility-[process-research-data]",
+    stack_size = 200,
+  },
+  {
+    type = "item",
+    name = "sp-material-handling-research-data",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/material-handling-research-data.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-research-data",
+    order = "utility-[material-handling-research-data]",
     stack_size = 200,
   },
   ------------------------------------------------------------------------------
