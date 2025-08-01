@@ -248,21 +248,28 @@ function data_util.create_incineration_recipe_icon(item_or_fluid_to_incinerate, 
   return icons
 end
 
-function data_util.create_crushing_recipe_icon(resource, crushed_resources)
-  local num_of_crushed_resources = #crushed_resources
 
-  if num_of_crushed_resources == 1 then
+function data_util.create_reprocessing_recipe_icon(item)
     icons = {
-      {icon = resource.icon, icon_size = resource.icon_size, scale = 0.7, shift = {-12, -12}},
-      {icon = crushed_resources[1].icon, icon_size = crushed_resources[1].icon_size, scale = 0.7, shift = {12, 12}},
-      {icon = "__Spaghetorio__/graphics/arrows/black-recipe-arrow-64x64.png", icon_size = 64, scale = 0.9},
+      {icon = "__Spaghetorio__/graphics/crushing/reprocessing-underlay-64x64.png", icon_size = 64},
+      {icon = item.icon, icon_size = item.icon_size or 64},
+      {icon = "__Spaghetorio__/graphics/crushing/reprocessing-overlay-64x64.png", icon_size = 64}
     }
-  elseif num_of_crushed_resources == 2 then
+
+  return icons
+end
+
+function data_util.create_crushing_recipe_icon(item, result_item)
+  if result_item == nil then
     icons = {
-      {icon = resource.icon, icon_size = resource.icon_size, scale = 0.4, shift = {-12, -12}},
-      {icon = crushed_resources[1].icon, icon_size = crushed_resources[1].icon_size, scale = 0.4, shift = {14, 0}},
-      {icon = crushed_resources[2].icon, icon_size = crushed_resources[2].icon_size, scale = 0.4, shift = {0, 14}},
-      {icon = "__Spaghetorio__/graphics/arrows/black-recipe-arrow-64x64.png", icon_size = 64, scale = 0.7},
+      {icon = item.icon, icon_size = item.icon_size},
+      {icon = "__Spaghetorio__/graphics/crushing/crushing-overlay-64x64.png", icon_size = 64}
+    }
+  else
+    icons = {
+      {icon = item.icon, icon_size = item.icon_size},
+      {icon = result_item.icon, icon_size = result_item.icon_size, scale = 0.3, shift = {0, 20}},
+      {icon = "__Spaghetorio__/graphics/crushing/crushing-overlay-64x64.png", icon_size = 64}
     }
   end
 
@@ -309,11 +316,22 @@ function data_util.create_thawing_recipe_icon(item)
   return icons
 end
 
-function data_util.melting_recipe_icon(input_item, output_item)
-  icons = {
-    {icon = output_item.icon, icon_size = output_item.icon_size, scale = 0.6, shift = {0, 12}},
-    {icon = input_item.icon, icon_size = input_item.icon_size, scale = 0.7, shift = {0, -12}},
-  }
+function data_util.melting_recipe_icon(input_item, output_items)
+  local num_of_output_items = #output_items
+  local icons = {}
+
+  if num_of_output_items == 1 then
+    icons = {
+      {icon = output_items[1].icon, icon_size = output_items[1].icon_size, scale = 0.7, shift = {0, 12}},
+      {icon = input_item.icon, icon_size = input_item.icon_size, scale = 0.6, shift = {0, -12}}
+    }
+  elseif num_of_output_items == 2 then
+    icons = {
+      {icon = output_items[2].icon, icon_size = output_items[2].icon_size, scale = 0.6, shift = {-9, 12}},
+      {icon = output_items[1].icon, icon_size = output_items[1].icon_size, scale = 0.6, shift = {9, 12}},
+      {icon = input_item.icon, icon_size = input_item.icon_size, scale = 0.6, shift = {0, -12}}
+    }
+  end
 
   return icons
 end

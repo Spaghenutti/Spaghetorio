@@ -13,18 +13,19 @@ TODO for 0.3.26
     - ice is melted and you get the noble gas... just like that
     - maybe add intermediate step where ice is traped in some mineral
     - core fragment
-      - Xenotime (Y,Yb)P04(Zr,V)
+      - xenotime (Y,Yb)P04(Zr,V)
         - add crushing and filtration recipe chain
-      - Djerfisherite	K₆(Fe,Ni,Cu)₂₅S₂₆Cl
+      - djerfisherite	K₆(Fe,Ni,Cu)₂₅S₂₆Cl
         - add crushing and filtration recipe chain
     - asteroid minerals (created in asteroid reprocessing and advanced reprocessing):
-      - Olivine	(Mg,Fe)₂SiO₄
+      - olivine	(Mg,Fe)₂SiO₄
         - for krypton
-      - Pyroxenem (Mg,Fe,Ca)SiO₃
+        - hydrogen-chloride for Mg
+      - pyroxenem (Mg,Fe,Ca)SiO₃
         - for neon
-      - Plagioclase Feldspar (Na,Ca)(Si,Al)₄O₈
-      - Troilite FeS
-      - Taenite	Fe-Ni alloy
+      - plagioclase Feldspar (Na,Ca)(Si,Al)₄O₈
+      - troilite FeS
+      - taenite	Fe-Ni alloy
   - Get some noble gasses from methane ice
     - helium
     - (neon)
@@ -109,6 +110,9 @@ TODO for 0.4.0
   - Make oil power much earlier (rename incineratpr too)
   - Fix leadstone / lead recipe chain
   - Add magnet to fast inserter
+  - Many recipes for aquiring rare metals from asteroids are the first step where the asteroid is crushed into minerals
+    - crushing recipe is unlocked in xy-rich-asteroid technology
+    - See crushing-krypton-asteroid-chunk recipe for reference
 
 TODO for 0.4.1
   - Move many chemistry recipes to "oil-processing" category

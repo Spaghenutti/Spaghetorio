@@ -12193,6 +12193,26 @@ data:extend({
         type = "unlock-space-location",
         space_location = "sp-krypton-rich-asteroid",
         use_icon_overlay_constant = true
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-crushing-krypton-asteroid-chunk"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-crushing-olivine"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-magnesium-from-crushing-olivine"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-crushing-pyroxenem"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-magnesium-from-crushing-pyroxenem"
       }
     },
     prerequisites = {

@@ -4523,9 +4523,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-crushing-andesite",  -- #ForRegEx# - recipe
-    icons = util.icon.create_crushing_recipe_icon(data.raw.item["sp-andesite"],
-                                                  {data.raw.item["sp-sodium"],
-                                                   data.raw.item["sp-silver"]}),
+    icons = util.icon.create_crushing_recipe_icon(data.raw.item["sp-andesite"]),
     icon_size = 64,
     mip_maps = 20,
     category = "sp-crushing-washing",
@@ -4548,9 +4546,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-crushing-basalt",  -- #ForRegEx# - recipe
-    icons = util.icon.create_crushing_recipe_icon(data.raw.item["sp-basalt"],
-                                                  {data.raw.item["sp-crushed-iron-ore"],
-                                                   data.raw.item["sp-iridium"]}),
+    icons = util.icon.create_crushing_recipe_icon(data.raw.item["sp-basalt"]),
     icon_size = 64,
     mip_maps = 20,
     category = "sp-crushing-washing",
@@ -4573,9 +4569,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-crushing-obsidian",  -- #ForRegEx# - recipe
-    icons = util.icon.create_crushing_recipe_icon(data.raw.item["sp-obsidian"],
-                                                  {data.raw.item["sp-potassium-chloride"],
-                                                   data.raw.item["sp-platinum"]}),
+    icons = util.icon.create_crushing_recipe_icon(data.raw.item["sp-obsidian"]),
     icon_size = 64,
     mip_maps = 24,
     category = "sp-crushing-washing",
@@ -4598,8 +4592,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-crushing-pumice",  -- #ForRegEx# - recipe
-    icons = util.icon.create_crushing_recipe_icon(data.raw.item["sp-pumice"],
-                                                  {data.raw.item["sp-magnesium-chloride"]}),
+    icons = util.icon.create_crushing_recipe_icon(data.raw.item["sp-pumice"]),
     icon_size = 64,
     mip_maps = 24,
     category = "sp-crushing-washing",
@@ -4621,8 +4614,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-crushing-rhyolite",  -- #ForRegEx# - recipe
-    icons = util.icon.create_crushing_recipe_icon(data.raw.item["sp-rhyolite"],
-                                                  {data.raw.item["sp-titanium-chloride"]}),
+    icons = util.icon.create_crushing_recipe_icon(data.raw.item["sp-rhyolite"]),
     icon_size = 64,
     mip_maps = 30,
     category = "sp-crushing-washing",
@@ -4643,9 +4635,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-crushing-scoria",  -- #ForRegEx# - recipe
-    icons = util.icon.create_crushing_recipe_icon(data.raw.item["sp-scoria"],
-                                                  {data.raw.item["sp-titanium-chloride"],
-                                                   data.raw.item["sp-palladium"]}),
+    icons = util.icon.create_crushing_recipe_icon(data.raw.item["sp-scoria"]),
     icon_size = 64,
     mip_maps = 24,
     category = "sp-crushing-washing",
@@ -4882,6 +4872,43 @@ data:extend({
       {type = "item", name = "iron-ore", amount = 1},
       {type = "item", name = "tungsten-ore", probability = 0.2, amount = 1},
     },
+  },
+  {
+    type = "recipe",
+    name = "sp-magnesium-from-crushing-olivine",  -- #ForRegEx# - recipe
+    icons = util.icon.create_crushing_recipe_icon(data.raw.item["sp-olivine"], data.raw.item["sp-magnesium-ore"]),
+    category = "sp-crushing-washing",
+    subgroup = "sp-raw-resource",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 16,
+    ingredients = {
+      {type = "item", name = "sp-olivine", amount = 1},
+      {type = "fluid", name = "sp-hydrogen-chloride", amount = 10},
+    },
+    results = {
+      {type = "item", name = "sp-magnesium-ore", amount = 2},
+      {type = "item", name = "sp-quartz", probability = 0.4, amount = 1},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-magnesium-from-crushing-pyroxenem",  -- #ForRegEx# - recipe
+    icons = util.icon.create_crushing_recipe_icon(data.raw.item["sp-pyroxenem"], data.raw.item["sp-magnesium-ore"]),
+    category = "sp-crushing-washing",
+    subgroup = "sp-raw-resource",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 12,
+    ingredients = {
+      {type = "item", name = "sp-pyroxenem", amount = 1},
+      {type = "fluid", name = "sp-hydrogen-chloride", amount = 12},
+    },
+    results = {
+      {type = "item", name = "sp-magnesium-ore", amount = 1},
+      {type = "item", name = "calcite", amount = 1},
+      {type = "item", name = "sp-quartz", probability = 0.6, amount = 1},
+    }
   },
   ------------------------------------------------------------------------------
   -- MARK: chemistry
@@ -5889,7 +5916,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-melting-methane-ice",  -- #ForRegEx# - recipe
-    icons = util.icon.melting_recipe_icon(data.raw.item["sp-methane-ice"], data.raw.fluid["sp-methane"]),
+    icons = util.icon.melting_recipe_icon(data.raw.item["sp-methane-ice"], {data.raw.fluid["sp-methane"]}),
     icon_size = 64,
     mip_maps = 4,
     category = "chemistry",
@@ -6865,6 +6892,29 @@ data:extend({
       quaternary = {r = 0.000, g = 0.3, b = 0.3, a = 1.000},
     },
     order = "z[nuclear]-3-[nuclear-waste-processing]2"
+  },
+  {
+    type = "recipe",
+    name = "sp-melting-clathrate-hydrate-ice",  -- #ForRegEx# - recipe
+    icons = util.icon.melting_recipe_icon(data.raw.item["sp-clathrate-hydrate-ice"], {data.raw.fluid["sp-krypton"], data.raw.fluid["sp-neon"]}),
+    icon_size = 64,
+    mip_maps = 4,
+    category = "chemistry",
+    subgroup = "sp-ice",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 8,
+    ingredients = {
+      {type = "item", name = "sp-clathrate-hydrate-ice", amount = 1},
+    },
+    results = {
+      {type = "fluid", name = "sp-krypton", amount = 10},
+      {type = "fluid", name = "sp-neon", amount = 6},
+      {type = "fluid", name = "sp-methane", amount = 5},
+      {type = "fluid", name = "sp-carbon-dioxide", amount = 4},
+      {type = "fluid", name = "sp-hydrogen", amount = 2},
+      {type = "fluid", name = "sp-nitrogen", amount = 2},
+    }
   },
   {
     type = "recipe",
@@ -8740,7 +8790,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-argon-from-methane-ice",  -- #ForRegEx# - recipe
-    icons = util.icon.melting_recipe_icon(data.raw.item["sp-methane-ice"], data.raw.fluid["sp-argon"]),
+    icons = util.icon.melting_recipe_icon(data.raw.item["sp-methane-ice"], {data.raw.fluid["sp-argon"]}),
     icon_size = 64,
     mip_maps = 4,
     category = "cryogenics",
@@ -8764,7 +8814,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-xenon-from-methane-ice",  -- #ForRegEx# - recipe
-    icons = util.icon.melting_recipe_icon(data.raw.item["sp-methane-ice"], data.raw.fluid["sp-xenon"]),
+    icons = util.icon.melting_recipe_icon(data.raw.item["sp-methane-ice"], {data.raw.fluid["sp-xenon"]}),
     icon_size = 64,
     mip_maps = 4,
     category = "cryogenics",
@@ -11120,9 +11170,8 @@ data:extend({
   {
     type = "recipe",
     name = "sp-crushing-aluminum-ore",  -- #ForRegEx# - recipe
-    icon = "__Spaghetorio__/graphics/crushing/crushing-aluminum-ore.png",
-    icon_size = 256,
-    mip_maps = 4,
+    icons = util.icon.create_crushing_recipe_icon(data.raw.item["sp-aluminum-ore"]),
+    icon_size = 64,
     category = "crushing",
     subgroup = "sp-crushed-resource-recipe",
     enabled = false,
@@ -11140,8 +11189,8 @@ data:extend({
   {
     type = "recipe",
     name = "sp-crushing-chromite",  -- #ForRegEx# - recipe
-    icon = "__Spaghetorio__/graphics/crushing/crushing-chromite.png",
-    icon_size = 256,
+    icons = util.icon.create_crushing_recipe_icon(data.raw.item["sp-chromite"]),
+    icon_size = 64,
     mip_maps = 4,
     category = "crushing",
     subgroup = "sp-crushed-resource-recipe",
@@ -11161,8 +11210,8 @@ data:extend({
   {
     type = "recipe",
     name = "sp-crushing-coal",  -- #ForRegEx# - recipe
-    icon = "__Spaghetorio__/graphics/crushing/crushing-coal.png",
-    icon_size = 256,
+    icons = util.icon.create_crushing_recipe_icon(data.raw.item["coal"]),
+    icon_size = 64,
     category = "crushing",
     subgroup = "sp-crushed-resource-recipe",
     enabled = false,
@@ -11180,8 +11229,8 @@ data:extend({
   {
     type = "recipe",
     name = "sp-crushing-coke",  -- #ForRegEx# - recipe
-    icon = "__Spaghetorio__/graphics/crushing/crushing-coke.png",
-    icon_size = 256,
+    icons = util.icon.create_crushing_recipe_icon(data.raw.item["sp-coke"]),
+    icon_size = 64,
     category = "crushing",
     subgroup = "sp-crushed-resource-recipe",
     enabled = false,
@@ -11198,9 +11247,8 @@ data:extend({
   {
     type = "recipe",
     name = "sp-crushing-copper-ore",  -- #ForRegEx# - recipe
-    icon = "__Spaghetorio__/graphics/crushing/crushing-copper-ore.png",
-    icon_size = 256,
-    mip_maps = 4,
+    icons = util.icon.create_crushing_recipe_icon(data.raw.item["copper-ore"]),
+    icon_size = 64,
     category = "crushing",
     subgroup = "sp-crushed-resource-recipe",
     enabled = false,
@@ -11217,8 +11265,8 @@ data:extend({
   {
     type = "recipe",
     name = "sp-crushing-iron-ore",  -- #ForRegEx# - recipe
-    icon = "__Spaghetorio__/graphics/crushing/crushing-iron-ore.png",
-    icon_size = 256,
+    icons = util.icon.create_crushing_recipe_icon(data.raw.item["iron-ore"]),
+    icon_size = 64,
     mip_maps = 4,
     category = "crushing",
     subgroup = "sp-crushed-resource-recipe",
@@ -11236,9 +11284,8 @@ data:extend({
   {
     type = "recipe",
     name = "sp-crushing-magnesium-ore",  -- #ForRegEx# - recipe
-    icon = "__Spaghetorio__/graphics/crushing/crushing-magnesium-ore.png",
-    icon_size = 256,
-    mip_maps = 4,
+    icons = util.icon.create_crushing_recipe_icon(data.raw.item["sp-magnesium-ore"]),
+    icon_size = 64,
     category = "crushing",
     subgroup = "sp-crushed-resource-recipe",
     enabled = false,
@@ -11256,9 +11303,8 @@ data:extend({
   {
     type = "recipe",
     name = "sp-crushing-nickel-ore",  -- #ForRegEx# - recipe
-    icon = "__Spaghetorio__/graphics/crushing/crushing-nickel-ore.png",
-    icon_size = 256,
-    mip_maps = 4,
+    icons = util.icon.create_crushing_recipe_icon(data.raw.item["sp-nickel-ore"]),
+    icon_size = 64,
     category = "crushing",
     subgroup = "sp-crushed-resource-recipe",
     enabled = false,
@@ -11277,9 +11323,8 @@ data:extend({
   {
     type = "recipe",
     name = "sp-crushing-tinstone",  -- #ForRegEx# - recipe
-    icon = "__Spaghetorio__/graphics/crushing/crushing-tinstone.png",
-    icon_size = 256,
-    mip_maps = 4,
+    icons = util.icon.create_crushing_recipe_icon(data.raw.item["sp-tinstone"]),
+    icon_size = 64,
     category = "crushing",
     subgroup = "sp-crushed-resource-recipe",
     enabled = false,
@@ -11297,9 +11342,8 @@ data:extend({
   {
     type = "recipe",
     name = "sp-crushing-titanium-ore",  -- #ForRegEx# - recipe
-    icon = "__Spaghetorio__/graphics/crushing/crushing-titanium-ore.png",
-    icon_size = 256,
-    mip_maps = 4,
+    icons = util.icon.create_crushing_recipe_icon(data.raw.item["sp-titanium-ore"]),
+    icon_size = 64,
     category = "crushing",
     subgroup = "sp-crushed-resource-recipe",
     enabled = false,
@@ -11316,9 +11360,8 @@ data:extend({
   {
     type = "recipe",
     name = "sp-crushing-tungsten-ore",  -- #ForRegEx# - recipe
-    icon = "__Spaghetorio__/graphics/crushing/crushing-tungsten-ore.png",
-    icon_size = 256,
-    mip_maps = 4,
+    icons = util.icon.create_crushing_recipe_icon(data.raw.item["tungsten-ore"]),
+    icon_size = 64,
     category = "crushing",
     subgroup = "sp-crushed-resource-recipe",
     enabled = false,
@@ -11336,9 +11379,8 @@ data:extend({
   {
     type = "recipe",
     name = "sp-crushing-zinc-ore",  -- #ForRegEx# - recipe
-    icon = "__Spaghetorio__/graphics/crushing/crushing-zinc-ore.png",
-    icon_size = 256,
-    mip_maps = 4,
+    icons = util.icon.create_crushing_recipe_icon(data.raw.item["sp-zinc-ore"]),
+    icon_size = 64,
     category = "crushing",
     subgroup = "sp-crushed-resource-recipe",
     enabled = false,
@@ -11357,9 +11399,8 @@ data:extend({
   {
     type = "recipe",
     name = "sp-crushing-zirconium-ore",  -- #ForRegEx# - recipe
-    icon = "__Spaghetorio__/graphics/crushing/crushing-zirconium-ore.png",
-    icon_size = 256,
-    mip_maps = 4,
+    icons = util.icon.create_crushing_recipe_icon(data.raw.item["sp-zirconium-ore"]),
+    icon_size = 64,
     category = "crushing",
     subgroup = "sp-crushed-resource-recipe",
     enabled = false,
@@ -11376,9 +11417,8 @@ data:extend({
   {
     type = "recipe",
     name = "sp-crushing-cobalt-ore",  -- #ForRegEx# - recipe
-    icon = "__Spaghetorio__/graphics/crushing/crushing-cobalt-ore.png",
-    icon_size = 256,
-    mip_maps = 4,
+    icons = util.icon.create_crushing_recipe_icon(data.raw.item["sp-cobalt-ore"]),
+    icon_size = 64,
     category = "crushing",
     subgroup = "sp-crushed-resource-recipe",
     enabled = false,
@@ -11395,9 +11435,8 @@ data:extend({
   {
     type = "recipe",
     name = "sp-crushing-molybdenum-ore",  -- #ForRegEx# - recipe
-    icon = "__Spaghetorio__/graphics/crushing/crushing-molybdenum-ore.png",
-    icon_size = 256,
-    mip_maps = 4,
+    icons = util.icon.create_crushing_recipe_icon(data.raw.item["sp-molybdenum-ore"]),
+    icon_size = 64,
     category = "crushing",
     subgroup = "sp-crushed-resource-recipe",
     enabled = false,
@@ -11411,86 +11450,6 @@ data:extend({
       {type = "item", name = "sp-crushed-molybdenum-ore", probability = 0.7, amount = 6},
       {type = "item", name = "sp-crushed-copper-ore", probability = 0.2, amount = 1},
       {type = "item", name = "sp-leadstone", probability = 0.1, amount = 1}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-crushing-corrupted-acrosphere-1",  -- #ForRegEx# - recipe
-    icon = "__Spaghetorio__/graphics/hr-icons/corrupted-acrosphere-1.png",
-    icon_size = 256,
-    mip_maps = 4,
-    category = "crushing",
-    subgroup = "sp-crushing-acrosphere-corrupted",
-    enabled = false,
-    allow_productivity = true,
-    energy_required = 8,
-    hide_from_player_crafting = true,
-    ingredients = {
-      {type = "item", name = "sp-corrupted-acrosphere-1", amount = 1},
-    },
-    results = {
-      {type = "item", name = "sp-yttrium", amount = 12},
-      {type = "item", name = "sp-blunagium", amount = 6}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-crushing-corrupted-acrosphere-2",  -- #ForRegEx# - recipe
-    icon = "__Spaghetorio__/graphics/hr-icons/corrupted-acrosphere-2.png",
-    icon_size = 256,
-    mip_maps = 4,
-    category = "crushing",
-    subgroup = "sp-crushing-acrosphere-corrupted",
-    enabled = false,
-    allow_productivity = true,
-    energy_required = 8,
-    hide_from_player_crafting = true,
-    ingredients = {
-      {type = "item", name = "sp-corrupted-acrosphere-2", amount = 1},
-    },
-    results = {
-      {type = "item", name = "sp-lanthanum", amount = 10},
-      {type = "item", name = "sp-grobgnum", amount = 6}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-crushing-corrupted-acrosphere-3",  -- #ForRegEx# - recipe
-    icon = "__Spaghetorio__/graphics/hr-icons/corrupted-acrosphere-3.png",
-    icon_size = 256,
-    mip_maps = 4,
-    category = "crushing",
-    subgroup = "sp-crushing-acrosphere-corrupted",
-    enabled = false,
-    allow_productivity = true,
-    energy_required = 8,
-    hide_from_player_crafting = true,
-    ingredients = {
-      {type = "item", name = "sp-corrupted-acrosphere-3", amount = 1},
-    },
-    results = {
-      {type = "item", name = "sp-cerium", amount = 6},
-      {type = "item", name = "sp-rukite", amount = 6}
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-crushing-corrupted-acrosphere-4",  -- #ForRegEx# - recipe
-    icon = "__Spaghetorio__/graphics/hr-icons/corrupted-acrosphere-4.png",
-    icon_size = 256,
-    mip_maps = 4,
-    category = "crushing",
-    subgroup = "sp-crushing-acrosphere-corrupted",
-    enabled = false,
-    allow_productivity = true,
-    energy_required = 8,
-    hide_from_player_crafting = true,
-    ingredients = {
-      {type = "item", name = "sp-corrupted-acrosphere-4", amount = 1},
-    },
-    results = {
-      {type = "item", name = "sp-neodymium", amount = 10},
-      {type = "item", name = "sp-yemnuth", amount = 6}
     }
   },
   {
@@ -11537,21 +11496,19 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-imersite-powder",  -- #ForRegEx# - recipe
-    icon = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/imersite-powder/imersite-powder.png",
-    icon_size = 64,
-    mip_maps = 4,
+    name = "sp-crushing-krypton-asteroid-chunk",  -- #ForRegEx# - recipe
+    icons = util.icon.create_crushing_recipe_icon(data.raw.item["sp-krypton-asteroid-chunk"]),
     category = "crushing",
-    subgroup = "sp-processed-resource",
     enabled = false,
     allow_productivity = true,
-    energy_required = 3,
+    energy_required = 5,
     ingredients = {
-      {type = "item", name = "sp-raw-imersite", amount = 3},
+      {type = "item", name = "sp-krypton-asteroid-chunk", amount = 1},
     },
     results = {
-      {type = "item", name = "sp-imersite-powder", amount = 2},
-      {type = "item", name = "sp-sand", amount = 3}
+      {type = "item", name = "sp-clathrate-hydrate-ice", amount = 2},
+      {type = "item", name = "sp-olivine", probability = 0.8, amount = 1},
+      {type = "item", name = "sp-pyroxenem", probability = 0.4, amount = 1}
     }
   },
   ------------------------------------------------------------------------------
@@ -11560,7 +11517,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-crushing-holmium-ore",  -- #ForRegEx# - recipe
-    icon = "__Spaghetorio__/graphics/crushing/crushing-holmium-ore.png",
+    icons = util.icon.create_crushing_recipe_icon(data.raw.item["holmium-ore"]),
     icon_size = 256,
     mip_maps = 4,
     category = "sp-heavy-crushing",
@@ -11580,7 +11537,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-crushing-stibnite",  -- #ForRegEx# - recipe
-    icon = "__Spaghetorio__/graphics/crushing/crushing-stibnite.png",
+    icons = util.icon.create_crushing_recipe_icon(data.raw.item["sp-stibnite"]),
     icon_size = 256,
     mip_maps = 15,
     category = "sp-heavy-crushing",
@@ -11595,6 +11552,140 @@ data:extend({
       {type = "item", name = "sp-sand", amount = 2},
       {type = "item", name = "sp-crushed-stibnite", amount = 5},
       {type = "item", name = "sp-cerium", probability = 0.75, amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-crushing-olivine",  -- #ForRegEx# - recipe
+    icons = util.icon.create_crushing_recipe_icon(data.raw.item["sp-olivine"]),
+    category = "sp-heavy-crushing",
+    subgroup = "sp-raw-resource",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 5,
+    ingredients = {
+      {type = "item", name = "sp-olivine", amount = 1},
+    },
+    results = {
+      {type = "item", name = "iron-ore", amount = 1},
+      {type = "item", name = "sp-quartz", probability = 0.7, amount = 1},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-crushing-pyroxenem",  -- #ForRegEx# - recipe
+    icons = util.icon.create_crushing_recipe_icon(data.raw.item["sp-pyroxenem"]),
+    category = "sp-heavy-crushing",
+    subgroup = "sp-raw-resource",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 5,
+    ingredients = {
+      {type = "item", name = "sp-pyroxenem", amount = 1},
+    },
+    results = {
+      {type = "item", name = "calcite", amount = 1},
+      {type = "item", name = "sp-quartz", probability = 0.6, amount = 1},
+      {type = "item", name = "iron-ore", probability = 0.5, amount = 1},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-imersite-powder",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/imersite-powder/imersite-powder.png",
+    icon_size = 64,
+    mip_maps = 4,
+    category = "sp-heavy-crushing",
+    subgroup = "sp-processed-resource",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 3,
+    ingredients = {
+      {type = "item", name = "sp-raw-imersite", amount = 3},
+    },
+    results = {
+      {type = "item", name = "sp-imersite-powder", amount = 2},
+      {type = "item", name = "sp-sand", amount = 3}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-crushing-corrupted-acrosphere-1",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/hr-icons/corrupted-acrosphere-1.png",
+    icon_size = 256,
+    mip_maps = 4,
+    category = "sp-heavy-crushing",
+    subgroup = "sp-crushing-acrosphere-corrupted",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 8,
+    hide_from_player_crafting = true,
+    ingredients = {
+      {type = "item", name = "sp-corrupted-acrosphere-1", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-yttrium", amount = 12},
+      {type = "item", name = "sp-blunagium", amount = 6}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-crushing-corrupted-acrosphere-2",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/hr-icons/corrupted-acrosphere-2.png",
+    icon_size = 256,
+    mip_maps = 4,
+    category = "sp-heavy-crushing",
+    subgroup = "sp-crushing-acrosphere-corrupted",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 8,
+    hide_from_player_crafting = true,
+    ingredients = {
+      {type = "item", name = "sp-corrupted-acrosphere-2", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-lanthanum", amount = 10},
+      {type = "item", name = "sp-grobgnum", amount = 6}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-crushing-corrupted-acrosphere-3",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/hr-icons/corrupted-acrosphere-3.png",
+    icon_size = 256,
+    mip_maps = 4,
+    category = "sp-heavy-crushing",
+    subgroup = "sp-crushing-acrosphere-corrupted",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 8,
+    hide_from_player_crafting = true,
+    ingredients = {
+      {type = "item", name = "sp-corrupted-acrosphere-3", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-cerium", amount = 6},
+      {type = "item", name = "sp-rukite", amount = 6}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-crushing-corrupted-acrosphere-4",  -- #ForRegEx# - recipe
+    icon = "__Spaghetorio__/graphics/hr-icons/corrupted-acrosphere-4.png",
+    icon_size = 256,
+    mip_maps = 4,
+    category = "sp-heavy-crushing",
+    subgroup = "sp-crushing-acrosphere-corrupted",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 8,
+    hide_from_player_crafting = true,
+    ingredients = {
+      {type = "item", name = "sp-corrupted-acrosphere-4", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-neodymium", amount = 10},
+      {type = "item", name = "sp-yemnuth", amount = 6}
     }
   },
   ------------------------------------------------------------------------------
