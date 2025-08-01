@@ -114,6 +114,9 @@ data.raw.capsule["cliff-explosives"].subgroup = "ammo"
 
 data.raw.capsule["raw-fish"].subgroup = "nauvis-agriculture"
 
+table.insert(data.raw.item["landfill"].place_as_tile.tile_condition, "sp-coast-water")
+table.insert(data.raw.tile["landfill"].transitions[1].to_tiles, "sp-coast-water")
+
 -- MARK: Change fluid subgroups
 data.raw.fluid["water"].subgroup = "sp-aqueous-fluid"
 

@@ -9561,8 +9561,7 @@ data:extend({
     pick_sound = item_sounds.landfill_inventory_pickup,
     drop_sound = item_sounds.landfill_inventory_move,
     stack_size = 100,
-    place_as_tile =
-    {
+    place_as_tile = {
       result = "sp-coast-water",
       condition_size = 1,
       condition = {layers={ground_tile=true}},
@@ -9580,8 +9579,7 @@ data:extend({
     drop_sound = item_sounds.landfill_inventory_move,
     stack_size = 100,
     default_import_location = "gleba",
-    place_as_tile =
-    {
+    place_as_tile = {
       result = "sp-artificial-gleba-soil",
       condition_size = 1,
       condition = {layers={}},

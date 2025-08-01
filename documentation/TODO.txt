@@ -2,6 +2,11 @@
 TODO for 0.3.26
   + Biolab has to be unlocked before automation science 3
   + Add multiple landing pads
+  - fix coast tile:
+    - coast water tile can only be placed on water
+    - coast water can be removed
+    - landfill can be placed on coast water
+    - tile transition between coast water and landfill
   - Create function for generating core fragment and asteroid processing icons
   - Fix noble gases recipe chain
     - krypton asteroid contains clathrate hydrate ice
@@ -14,7 +19,9 @@ TODO for 0.3.26
         - add crushing and filtration recipe chain
     - asteroid minerals (created in asteroid reprocessing and advanced reprocessing):
       - Olivine	(Mg,Fe)₂SiO₄
+        - for krypton
       - Pyroxenem (Mg,Fe,Ca)SiO₃
+        - for neon
       - Plagioclase Feldspar (Na,Ca)(Si,Al)₄O₈
       - Troilite FeS
       - Taenite	Fe-Ni alloy
@@ -31,115 +38,6 @@ TODO for 0.3.26
 
 TODO for 0.3.27
   - update alloy-properties.csv
-  - Add data and science data as intermediates for science packs
-    - Automation science
-      - automation data
-      - mechatronics data
-      - hydraulic control data
-      - mechanised data
-      - drive system data
-    - logistic science
-      - assembly research data
-      - efficiency data
-      - drone routing data
-      - supply chain data
-      - transport efficiency data
-      - inventory control data
-    - military science
-      - ballistics data
-      - weapons system data
-      - combat research data
-      - defense research data
-      - exposive yield research data
-    - chemical science
-      - organics research data
-      - inorganic research data
-      - ion chromatography base data
-      - ion chromatography acid data
-      - inert compounds research data
-      - catalyst research data
-      - element separation research data
-      - toxicity profile data
-      - reactivity data
-    - electronic science
-      - cricuit design data
-      - microchip research data
-      - semiconductor research data
-      - analog signalling data
-      - signal processing data
-      - power regulation data
-    - geological science
-      - mineral data
-      - ore data
-      - vulcanic data
-      - mining research data
-    - material science
-      - refinment data
-      - carbon compounds research data
-      - thermal conductivity research data
-      - crystalline material research data
-      - reinforced material data
-      - matrix material research data
-      - tooling material research data
-    - metallurgic science
-      - casting research data
-      - heat treatment research data
-      - froth analysis data
-      - corrosion resistance research data
-      - intermetallic data
-      - high entropy alloys data
-    - electromagnetic science
-      - plasma flow data
-      - electromagnetic shielding data
-      - magnetic field data
-      - conductivity research data
-      - induction research data
-    - biological science
-      - biopolymer data
-      - toxin profile data
-      - organic matter data
-      - soil microbe data
-      - mutation data
-      - protein synthesis data
-      - bio analysis research data
-    - cryogenic science
-      - thermal shock data
-      - vitrification data
-      - subzero reaction data
-      - cryostabilizing research data
-      - coolant flow research data
-    - production science
-      - manufacturing data
-      - prototyping data
-      - energy usage data
-      - infrastructure data
-    - computer science (I guess any data can be used to create the other data)
-      - algorithm data
-      - datastructure data
-      - protocol data
-      - parallelizing research data
-    - nuclear science
-      - alpha decay
-      - beta decay
-    - space science
-      - propulsion research data
-      - navigation control data
-      - deep space signal data
-      - asteroid composition data
-    - utility science
-      - lubrication research data
-      - structural research data
-      - material handeling research data
-      - process research data
-      - continous improvement data
-
-    - matter science
-    - optimization science
-    - advanced science
-    - singularity science
-    - uniformity science
-    - promethium science
-
   - Find uses for
     - ammonium-chloride-solution
     - phenol
@@ -197,6 +95,15 @@ TODO for 0.3.32
     - olivine
     - pyroxenem
     - xenotime
+
+TODO for 0.3.33
+  - Add data cards for:
+    - matter science
+    - optimization science
+    - advanced science
+    - singularity science
+    - uniformity science
+    - promethium science
 
 TODO for 0.4.0
   - Make oil power much earlier (rename incineratpr too)
@@ -308,6 +215,8 @@ Balancing:
 Features:
   - Uranium trains (check if mod already exists)
   - Antimatter trains (check if mod already exists)
+  - Windmills can be modded to be distanced appart (see nullius mod) https://youtu.be/_hg4ccr7fFM?si=SiwuzuhjAQ6lEAKU&t=341
+  - The modding API makes it so that windmills can be made like solar panels but also work during night
   - Split fuel into categories
   - Burn useless things for energy
   - Mercury as liquid metal coolant in breeder reactor

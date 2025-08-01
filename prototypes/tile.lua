@@ -180,10 +180,8 @@ data:extend({
     particle_tints = tile_graphics.water_particle_tints,
     layer_group = "water",
     layer = 3,
-    variants =
-    {
-      main =
-      {
+    variants = {
+      main = {
         {
           picture = "__base__/graphics/terrain/water/water1.png",
           count = 1,
@@ -206,13 +204,10 @@ data:extend({
       empty_transitions = true
     },
     transitions = { water_to_out_of_map_transition },
-    map_color={51, 83, 95},
+    map_color={56, 90, 105},
     absorptions_per_second = tile_pollution.water,
-
     trigger_effect = tile_trigger_effects.water_trigger_effect(),
-
     default_cover_tile = "landfill",
-
     ambient_sounds = tile_sounds.ambient.water({volume = 0.6}),
   },
   {
@@ -228,10 +223,8 @@ data:extend({
     particle_tints = tile_graphics.green_water_particle_tints,
     layer_group = "water",
     layer = 3,
-    variants =
-    {
-      main =
-      {
+    variants = {
+      main = {
         {
           picture = "__base__/graphics/terrain/water-green/water-green1.png",
           count = 1,

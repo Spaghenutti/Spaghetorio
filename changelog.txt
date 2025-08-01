@@ -3,6 +3,8 @@ Version: 0.3.27
 Date: 2025-08-08
   Features:
     - Added more data cards
+  Bugfixes:
+    - Landfill can be now placed on coast water
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.26
 Date: 2025-08-01

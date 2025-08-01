@@ -6678,7 +6678,7 @@ data:extend({
     allow_productivity = true,
     energy_required = 20,
     ingredients = {
-      {type = "item", name = "sp-ammonium-hexachloroplatinate", amount = 4},
+      {type = "item", name = "sp-tetraammidepalladium-dichloride", amount = 4},
       {type = "fluid", name = "sp-nitrogen", amount = 25},
     },
     results = {

@@ -2103,9 +2103,6 @@ data:extend({
     },
     prerequisites = {
       "sp-dysprosium-rich-asteroid",
-      "sp-ammonia-tetra-ethers",
-      "sp-sulfopropyl-metacrylate-potassium-salt-solution",
-      "sp-bis-2-ethylhexyl-phosphoric-acid"
     },
     unit = {
       count = 400,
@@ -2163,7 +2160,6 @@ data:extend({
     prerequisites = {
       "sp-terbium-rich-asteroid",
       "sp-argon",
-      "sp-ammonia-tetra-ethers"
     },
     unit = {
       count = 450,
@@ -2270,8 +2266,6 @@ data:extend({
     },
     prerequisites = {
       "sp-iridium-rich-asteroid",
-      "sp-carboxymethyllysine",
-      "sp-cellulose",
     },
     unit = {
       count = 1000,
@@ -2327,8 +2321,6 @@ data:extend({
     },
     prerequisites = {
       "sp-osmium-rich-asteroid",
-      "sp-carboxymethyldiphenylphosphine",
-      "sp-cellulose",
     },
     unit = {
       count = 1200,
@@ -9725,7 +9717,7 @@ data:extend({
       },
     },
     prerequisites = {
-      "sp-chemical-science-pack-3"
+      "sp-material-science-pack-3"
     },
     unit = {
       count = 200,
@@ -9787,7 +9779,8 @@ data:extend({
       },
     },
     prerequisites = {
-      "sp-chemical-science-pack-3"
+      "sp-material-science-pack-3",
+      "sp-electromagnetic-science-pack-3"
     },
     unit = {
       count = 500,
@@ -9864,11 +9857,7 @@ data:extend({
       },
     },
     prerequisites = {
-      "sp-dysprosium-rich-asteroid",
-      "sp-ruthenium-rich-asteroid",
-      "sp-terbium-rich-asteroid",
-      "sp-ytterbium-rich-asteroid",
-      "sp-automation-science-pack-3"
+      "sp-logistic-science-pack-3"
     },
     unit = {
       count = 600,
@@ -10752,7 +10741,7 @@ data:extend({
       },
     },
     prerequisites = {
-      "sp-chemical-science-pack-3",
+      "sp-krypton-rich-asteroid",
     },
     unit = {
       count = 350,
@@ -10828,7 +10817,7 @@ data:extend({
       -- },
     },
     prerequisites = {
-      "sp-chemical-science-pack-3",
+      "sp-krypton-rich-asteroid",
     },
     unit = {
       count = 350,
@@ -10906,7 +10895,7 @@ data:extend({
       -- },
     },
     prerequisites = {
-      "sp-chemical-science-pack-3",
+      "sp-nuclear-science-pack-3",
     },
     unit = {
       count = 350,
@@ -11974,7 +11963,9 @@ data:extend({
       }
     },
     prerequisites = {
-      "sp-chemical-science-pack-3"
+      "sp-ammonia-tetra-ethers",
+      "sp-sulfopropyl-metacrylate-potassium-salt-solution",
+      "sp-bis-2-ethylhexyl-phosphoric-acid"
     },
     unit = {
       count = 200,
@@ -12047,7 +12038,7 @@ data:extend({
       }
     },
     prerequisites = {
-      "sp-chemical-science-pack-3"
+      "sp-ammonia-tetra-ethers"
     },
     unit = {
       count = 1000,
@@ -12121,10 +12112,13 @@ data:extend({
       }
     },
     prerequisites = {
+      "sp-automation-science-pack-3",
       "sp-dysprosium-rich-asteroid",
       "sp-ruthenium-rich-asteroid",
       "sp-terbium-rich-asteroid",
-      "sp-ytterbium-rich-asteroid"
+      "sp-ytterbium-rich-asteroid",
+      "sp-carboxymethyllysine",
+      "sp-cellulose",
     },
     unit = {
       count = 2000,
@@ -12160,10 +12154,13 @@ data:extend({
       }
     },
     prerequisites = {
+      "sp-automation-science-pack-3",
       "sp-dysprosium-rich-asteroid",
       "sp-ruthenium-rich-asteroid",
       "sp-terbium-rich-asteroid",
-      "sp-ytterbium-rich-asteroid"
+      "sp-ytterbium-rich-asteroid",
+      "sp-carboxymethyldiphenylphosphine",
+      "sp-cellulose",
     },
     unit = {
       count = 2000,
@@ -12205,14 +12202,14 @@ data:extend({
       "sp-ytterbium-rich-asteroid"
     },
     unit = {
-      count = 2000,
+      count = 1200,
       ingredients = {
-        {"sp-automation-science-pack-2", 1},
+        {"sp-automation-science-pack-3", 1},
         {"sp-logistic-science-pack-2", 1},
         {"sp-material-science-pack-2", 1},
         {"sp-geological-science-pack-2", 1},
         {"sp-electronic-science-pack-2", 1},
-        {"sp-chemical-science-pack-2", 1},
+        {"sp-chemical-science-pack-3", 1},
         {"sp-metallurgic-science-pack-2", 1},
         {"sp-electromagnetic-science-pack-2", 1},
         {"production-science-pack", 1},
@@ -12220,6 +12217,7 @@ data:extend({
         {"cryogenic-science-pack", 1},
         {"agricultural-science-pack", 1},
         {"sp-computer-science-pack-2", 1},
+        {"sp-nuclear-science-pack-2", 1},
         {"space-science-pack", 1}
       },
       time = 30
