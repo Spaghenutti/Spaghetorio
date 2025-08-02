@@ -12729,9 +12729,27 @@ data:extend({
         type = "unlock-recipe",
         recipe = "sp-logistic-science-pack-3"
       },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-drone-routing-insight-data"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-inventory-control-insight-data"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-transport-efficiency-insight-data"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-assembly-research-data"
+      }
     },
     prerequisites = {
-      "sp-automation-science-pack-3"
+      "sp-automation-science-pack-3",
+      "logistic-system",
+      "turbo-transport-belt"
     },
     unit = {
       count = 500,

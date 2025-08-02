@@ -196,15 +196,16 @@ table.insert(data.raw.technology["logistics-3"].effects, {type = "unlock-recipe"
 data.raw.technology["logistics-3"].prerequisites = {
   "sp-titanium-machining",
   "sp-actuator",
-  "advanced-circuit"
+  "advanced-circuit",
+  "sp-logistic-science-pack-2"
 }
 data.raw.technology["logistics-3"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},
-  {"logistic-science-pack", 1},
+  {"sp-logistic-science-pack-2", 1},
   {"chemical-science-pack", 1},
   {"sp-electronic-science-pack-1", 1},
-  {"sp-material-science-pack-1", 1},
-  {"sp-geological-science-pack-1", 1},
+  {"sp-material-science-pack-2", 1},
+  {"sp-geological-science-pack-2", 1},
   {"metallurgic-science-pack", 1},
   {"electromagnetic-science-pack", 1}
 }
@@ -805,7 +806,9 @@ data.raw.technology["logistic-robotics"].unit.ingredients = {
 }
 
 data.raw.technology["logistic-system"].prerequisites = {
-  "sp-computer-science-pack-2"
+  "sp-computer-science-pack-2",
+  "construction-robotics",
+  "logistic-robotics"
 }
 data.raw.technology["logistic-system"].unit.ingredients = {
   {"sp-automation-science-pack-2", 1},

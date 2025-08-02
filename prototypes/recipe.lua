@@ -15372,6 +15372,25 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "sp-assembly-research-data",  -- #ForRegEx# - recipe
+    category = "sp-kr-research-data",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 100,
+    ingredients = {
+      {type = "item", name = "sp-empty-research-data-card", amount = 5},
+      {type = "item", name = "repair-pack", amount = 10},
+      {type = "item", name = "speed-module-2", amount = 5},
+      {type = "item", name = "productivity-module-2", amount = 5},
+      {type = "item", name = "efficiency-module-2", amount = 5},
+      {type = "item", name = "assembling-machine-3", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-assembly-research-data", amount = 5},
+    }
+  },
+  {
+    type = "recipe",
     name = "sp-space-research-data",  -- #ForRegEx# - recipe
     category = "sp-kr-research-data",
     enabled = false,
@@ -15458,6 +15477,68 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-catalyst-research-data", amount = 1},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-drone-routing-insight-data",  -- #ForRegEx# - recipe
+    category = "sp-kr-research-data",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 60,
+    ingredients = {
+      {type = "item", name = "sp-empty-insight-data-card", amount = 5},
+      {type = "item", name = "roboport", amount = 1},
+      {type = "item", name = "construction-robot", amount = 5},
+      {type = "item", name = "logistic-robot", amount = 5},
+    },
+    results = {
+      {type = "item", name = "sp-drone-routing-insight-data", amount = 5},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-inventory-control-insight-data",  -- #ForRegEx# - recipe
+    category = "sp-kr-research-data",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 24,
+    ingredients = {
+      {type = "item", name = "sp-empty-insight-data-card", amount = 2},
+      {type = "item", name = "active-provider-chest", amount = 2},
+      {type = "item", name = "passive-provider-chest", amount = 2},
+      {type = "item", name = "storage-chest", amount = 2},
+      {type = "item", name = "buffer-chest", amount = 2},
+      {type = "item", name = "requester-chest", amount = 2},
+      {type = "item", name = "sp-large-storage-tank", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-inventory-control-insight-data", amount = 2},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-transport-efficiency-insight-data",  -- #ForRegEx# - recipe
+    category = "sp-kr-research-data",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 120,
+    ingredients = {
+      {type = "item", name = "sp-empty-insight-data-card", amount = 10},
+      {type = "item", name = "turbo-transport-belt", amount = 16},
+      {type = "item", name = "turbo-underground-belt", amount = 2},
+      {type = "item", name = "turbo-splitter", amount = 4},
+      {type = "item", name = "sp-kr-turbo-loader", amount = 4},
+      {type = "item", name = "stack-inserter", amount = 5},
+      {type = "item", name = "bulk-inserter", amount = 5},
+      {type = "item", name = "rail-signal", amount = 2},
+      {type = "item", name = "rail-chain-signal", amount = 2},
+      {type = "item", name = "locomotive", amount = 1},
+      {type = "item", name = "train-stop", amount = 1},
+      {type = "item", name = "rail", amount = 10},
+    },
+    results = {
+      {type = "item", name = "sp-transport-efficiency-insight-data", amount = 10},
     }
   },
   {

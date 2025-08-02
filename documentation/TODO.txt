@@ -19,10 +19,10 @@ TODO for 0.3.26
       - troilite FeS
       - taenite	Fe-Ni alloy
   - Get some noble gasses from methane ice
-    - helium
-    - (neon)
-    - argon
-    - (krypton)
+    + helium
+    + (neon)
+    + argon
+    + (krypton)
     - xenon
     - radon (maybe later)
   - Add noble gases for crystallizing and cryostabilizing recipes
@@ -92,6 +92,11 @@ TODO for 0.3.33
     - xenotime
 
 TODO for 0.3.34
+  - Change mono crystal and quasicrystal to
+    - monocrystalline silicon
+    - ...
+
+TODO for 0.3.34
   - Add data cards for:
     - matter science
     - optimization science
@@ -101,12 +106,28 @@ TODO for 0.3.34
     - promethium science
 
 TODO for 0.4.0
+  - Add rotor and stator for heavy electric engine
+  - Add boric-acid (and give it some uses)
+  - Add coal gas
   - Make geting heavy and light oil more complex
     - Add carbolic oil
     - naphtha
+    - creosote
     - acetylene (allready exists)
+    - anthraquione (for hydrogen peroxide? Check if it still make sense when crafting it in space for thruster fuel)
     - anthracene
+    - anthrahydroquinone
     - sulfur as byproduct
+    - olefins
+      - can be separated into:
+        - ethylene
+        - propylene
+        - butene
+      - The olefins products can be used in
+        - plastics
+        - rubber
+        - solvants
+        - antifreeze
     - coke as residuum
     - bitumen as residuum
     - asphaltene as residuum
@@ -117,9 +138,18 @@ TODO for 0.4.0
       - diethyl ether
       - hexane
       - ethyl acetate
+      - glycerol
+  - Many of those items can be used in biological processes
   - Make oil power much earlier (rename incineratpr too)
+  - Make different types of coatings
+  - Add different types of barrels for handling the fluids
+    - canisters
+    - Coated barrels (for corrosive chemicals, Give it a better name than coated)
+  - Add more bacteria types
+    - Used for developing some organic compounds
   - Fix leadstone / lead recipe chain
   - Many crushing recipes could also have one additional step, where crushed product is washed
+    - crushing asteroids also produces regolith
   - Add magnet to fast inserter
   - Many recipes for aquiring rare metals from asteroids are the first step where the asteroid is crushed into minerals
     - crushing recipe is unlocked in xy-rich-asteroid technology
@@ -276,6 +306,7 @@ Bugs:
   - Fix iodine brine spawning on start location (seed: 2806285432), search in factorio __space-age__: initialize_patch_set("crude-oil", false, "aquilo")
 
 Low prio:
+  - Change existing factorio loaders and delete sp-kr-... loaders
   - Reorder icons
   - Reorder in lua code recipes, items for simpler searching
   - Add new files for changing subgroup (just like order-fixes.lua)
