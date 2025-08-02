@@ -4657,7 +4657,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-bromargyrite",  -- #ForRegEx# - recipe
-    icon = "__Spaghetorio__/graphics/icons/bromargyrite.png",
+    icons = util.icon.create_crushing_recipe_icon(data.raw.item["sp-core-fragment"], data.raw.item["sp-bromargyrite"]),
     icon_size = 64,
     scale = 0.25,
     category = "sp-crushing-washing",
@@ -4677,7 +4677,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-djerfisherite",  -- #ForRegEx# - recipe
-    icon = "__Spaghetorio__/graphics/icons/djerfisherite.png",
+    icons = util.icon.create_crushing_recipe_icon(data.raw.item["sp-core-fragment"], data.raw.item["sp-djerfisherite"]),
     icon_size = 64,
     scale = 0.25,
     category = "sp-crushing-washing",
@@ -4698,7 +4698,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-xenotime",  -- #ForRegEx# - recipe
-    icon = "__Spaghetorio__/graphics/icons/xenotime.png",
+    icons = util.icon.create_crushing_recipe_icon(data.raw.item["sp-core-fragment"], data.raw.item["sp-xenotime"]),
     icon_size = 64,
     scale = 0.25,
     category = "sp-crushing-washing",
@@ -4878,7 +4878,7 @@ data:extend({
     name = "sp-magnesium-from-crushing-olivine",  -- #ForRegEx# - recipe
     icons = util.icon.create_crushing_recipe_icon(data.raw.item["sp-olivine"], data.raw.item["sp-magnesium-ore"]),
     category = "sp-crushing-washing",
-    subgroup = "sp-raw-resource",
+    subgroup = "sp-mineral-resource",
     enabled = false,
     allow_productivity = true,
     energy_required = 16,
@@ -4896,7 +4896,7 @@ data:extend({
     name = "sp-magnesium-from-crushing-pyroxenem",  -- #ForRegEx# - recipe
     icons = util.icon.create_crushing_recipe_icon(data.raw.item["sp-pyroxenem"], data.raw.item["sp-magnesium-ore"]),
     category = "sp-crushing-washing",
-    subgroup = "sp-raw-resource",
+    subgroup = "sp-mineral-resource",
     enabled = false,
     allow_productivity = true,
     energy_required = 12,
@@ -11559,7 +11559,7 @@ data:extend({
     name = "sp-crushing-olivine",  -- #ForRegEx# - recipe
     icons = util.icon.create_crushing_recipe_icon(data.raw.item["sp-olivine"]),
     category = "sp-heavy-crushing",
-    subgroup = "sp-raw-resource",
+    subgroup = "sp-mineral-resource",
     enabled = false,
     allow_productivity = true,
     energy_required = 5,
@@ -11576,7 +11576,7 @@ data:extend({
     name = "sp-crushing-pyroxenem",  -- #ForRegEx# - recipe
     icons = util.icon.create_crushing_recipe_icon(data.raw.item["sp-pyroxenem"]),
     category = "sp-heavy-crushing",
-    subgroup = "sp-raw-resource",
+    subgroup = "sp-mineral-resource",
     enabled = false,
     allow_productivity = true,
     energy_required = 5,
@@ -11587,6 +11587,44 @@ data:extend({
       {type = "item", name = "calcite", amount = 1},
       {type = "item", name = "sp-quartz", probability = 0.6, amount = 1},
       {type = "item", name = "iron-ore", probability = 0.5, amount = 1},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-crushing-xenotime",  -- #ForRegEx# - recipe
+    icons = util.icon.create_crushing_recipe_icon(data.raw.item["sp-xenotime"]),
+    category = "sp-heavy-crushing",
+    subgroup = "sp-mineral-resource",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 12,
+    ingredients = {
+      {type = "item", name = "sp-xenotime", amount = 2},
+    },
+    results = {
+      {type = "item", name = "sp-phosphorus", amount = 1},
+      {type = "item", name = "sp-zirconia", probability = 0.8, amount = 1},
+      {type = "item", name = "sp-vanadium-pentoxide", probability = 0.6, amount = 1},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-crushing-djerfisherite",  -- #ForRegEx# - recipe
+    icons = util.icon.create_crushing_recipe_icon(data.raw.item["sp-djerfisherite"]),
+    category = "sp-heavy-crushing",
+    subgroup = "sp-mineral-resource",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 12,
+    ingredients = {
+      {type = "item", name = "sp-djerfisherite", amount = 2},
+    },
+    results = {
+      {type = "item", name = "sp-potassium-chloride", amount = 3},
+      {type = "item", name = "sulfur", amount = 1},
+      {type = "item", name = "sp-crushed-iron-ore", probability = 0.8, amount = 1},
+      {type = "item", name = "sp-crushed-nickel-ore", probability = 0.6, amount = 1},
+      {type = "item", name = "sp-crushed-copper-ore", probability = 0.5, amount = 1},
     }
   },
   {

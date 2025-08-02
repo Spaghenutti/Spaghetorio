@@ -2,7 +2,10 @@
 Version: 0.3.27
 Date: 2025-08-08
   Features:
+    - Added processing of xenotime and djerfisherite
     - Added more data cards
+  Changes:
+    - Changed many tech tree dependancies for tier 3 science packs
   Bugfixes:
     - Landfill can be now placed on coast water
 ---------------------------------------------------------------------------------------------------

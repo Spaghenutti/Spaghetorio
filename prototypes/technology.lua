@@ -1102,6 +1102,10 @@ data:extend({
     effects = {
       {
         type = "unlock-recipe",
+        recipe = "sp-crushing-xenotime"
+      },
+      {
+        type = "unlock-recipe",
         recipe = "sp-xenotime"
       },
       {
@@ -1114,6 +1118,7 @@ data:extend({
       -- },
     },
     prerequisites = {
+      "sp-core-extractor",
       "sp-rare-metals"
     },
     unit = {
@@ -1146,6 +1151,10 @@ data:extend({
     effects = {
       {
         type = "unlock-recipe",
+        recipe = "sp-crushing-djerfisherite"
+      },
+      {
+        type = "unlock-recipe",
         recipe = "sp-djerfisherite"
       },
       {
@@ -1154,6 +1163,7 @@ data:extend({
       },
     },
     prerequisites = {
+      "sp-core-extractor",
       "sp-rare-metals"
     },
     unit = {
@@ -10806,43 +10816,6 @@ data:extend({
   },
   {
     type = "technology",
-    name = "sp-krypton",  -- #ForRegEx# - technology
-    icon = "__Spaghetorio__/graphics/hr-icons/krypton.png",
-    icon_size = 256,
-    icon_mipmaps = 4,
-    effects = {
-      -- {
-      --   type = "unlock-recipe",
-      --   recipe = "sp-krypton-from-atmosphere"
-      -- },
-    },
-    prerequisites = {
-      "sp-krypton-rich-asteroid",
-    },
-    unit = {
-      count = 350,
-      ingredients = {
-        {"sp-automation-science-pack-3", 1},
-        {"sp-logistic-science-pack-2", 1},
-        {"sp-material-science-pack-2", 1},
-        {"sp-geological-science-pack-2", 1},
-        {"sp-electronic-science-pack-2", 1},
-        {"sp-chemical-science-pack-3", 1},
-        {"sp-metallurgic-science-pack-2", 1},
-        {"sp-electromagnetic-science-pack-2", 1},
-        {"production-science-pack", 1},
-        {"utility-science-pack", 1},
-        {"cryogenic-science-pack", 1},
-        {"agricultural-science-pack", 1},
-        {"sp-computer-science-pack-2", 1},
-        {"sp-nuclear-science-pack-2", 1},
-        {"space-science-pack", 1}
-      },
-      time = 45,
-    },
-  },
-  {
-    type = "technology",
     name = "sp-xenon",  -- #ForRegEx# - technology
     icon = "__Spaghetorio__/graphics/hr-icons/xenon.png",
     icon_size = 256,
@@ -12112,7 +12085,7 @@ data:extend({
       }
     },
     prerequisites = {
-      "sp-automation-science-pack-3",
+      "sp-geological-science-pack-3",
       "sp-dysprosium-rich-asteroid",
       "sp-ruthenium-rich-asteroid",
       "sp-terbium-rich-asteroid",
@@ -12126,7 +12099,7 @@ data:extend({
         {"sp-automation-science-pack-2", 1},
         {"sp-logistic-science-pack-2", 1},
         {"sp-material-science-pack-2", 1},
-        {"sp-geological-science-pack-2", 1},
+        {"sp-geological-science-pack-3", 1},
         {"sp-electronic-science-pack-2", 1},
         {"sp-chemical-science-pack-2", 1},
         {"sp-metallurgic-science-pack-2", 1},
@@ -12154,7 +12127,7 @@ data:extend({
       }
     },
     prerequisites = {
-      "sp-automation-science-pack-3",
+      "sp-geological-science-pack-3",
       "sp-dysprosium-rich-asteroid",
       "sp-ruthenium-rich-asteroid",
       "sp-terbium-rich-asteroid",
@@ -12168,7 +12141,7 @@ data:extend({
         {"sp-automation-science-pack-2", 1},
         {"sp-logistic-science-pack-2", 1},
         {"sp-material-science-pack-2", 1},
-        {"sp-geological-science-pack-2", 1},
+        {"sp-geological-science-pack-3", 1},
         {"sp-electronic-science-pack-2", 1},
         {"sp-chemical-science-pack-2", 1},
         {"sp-metallurgic-science-pack-2", 1},
@@ -12197,6 +12170,10 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "sp-crushing-krypton-asteroid-chunk"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-melting-clathrate-hydrate-ice"
       },
       {
         type = "unlock-recipe",
@@ -12929,7 +12906,8 @@ data:extend({
       },
     },
     prerequisites = {
-      "sp-automation-science-pack-3"
+      "sp-xenotime-processing",
+      "sp-djerfisherite-processing"
     },
     unit = {
       count = 500,

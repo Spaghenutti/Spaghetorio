@@ -1,28 +1,20 @@
 
 TODO for 0.3.26
-  + Biolab has to be unlocked before automation science 3
-  + Add multiple landing pads
-  - fix coast tile:
-    - coast water tile can only be placed on water
-    - coast water can be removed
-    - landfill can be placed on coast water
-    - tile transition between coast water and landfill
-  - Create function for generating core fragment and asteroid processing icons
   - Fix noble gases recipe chain
-    - krypton asteroid contains clathrate hydrate ice
-    - ice is melted and you get the noble gas... just like that
-    - maybe add intermediate step where ice is traped in some mineral
-    - core fragment
-      - xenotime (Y,Yb)P04(Zr,V)
-        - add crushing and filtration recipe chain
-      - djerfisherite	K₆(Fe,Ni,Cu)₂₅S₂₆Cl
-        - add crushing and filtration recipe chain
+    + krypton asteroid contains clathrate hydrate ice
+    + ice is melted and you get the noble gas... just like that
+    + maybe add intermediate step where ice is traped in some mineral
+    + core fragment
+      + xenotime (Y,Yb)P04(Zr,V)
+        + add crushing recipe chain
+      + djerfisherite	K₆(Fe,Ni,Cu)₂₅S₂₆Cl
+        + add crushing recipe chain
     - asteroid minerals (created in asteroid reprocessing and advanced reprocessing):
-      - olivine	(Mg,Fe)₂SiO₄
-        - for krypton
-        - hydrogen-chloride for Mg
-      - pyroxenem (Mg,Fe,Ca)SiO₃
-        - for neon
+      + olivine	(Mg,Fe)₂SiO₄
+        + for krypton
+        + hydrogen-chloride for Mg
+      + pyroxenem (Mg,Fe,Ca)SiO₃
+        + for neon
       - plagioclase Feldspar (Na,Ca)(Si,Al)₄O₈
       - troilite FeS
       - taenite	Fe-Ni alloy
@@ -35,10 +27,11 @@ TODO for 0.3.26
     - radon (maybe later)
   - Add noble gases for crystallizing and cryostabilizing recipes
   - Use xenon for breeder reactor?
-  + Add methane and co2 from atmosphere
 
 TODO for 0.3.27
   - update alloy-properties.csv
+  - Create function for generating core fragment and asteroid processing icons
+  - Add asteroid reprocessing recipes
   - Find uses for
     - ammonium-chloride-solution
     - phenol
@@ -48,9 +41,6 @@ TODO for 0.3.27
     - sodium-hypochlorite-solution
 
 TODO for 0.3.28
-  + Update automation science 3
-    + Add nuclear science as requirement
-  + Add recipe chains for core mining
   + Uses for bismuth
     + refined from tin and lead
     + sodium carbonate solution + lead = lead ingot + bismuth
@@ -66,12 +56,16 @@ TODO for 0.3.28
     - used in rodent poison
 
 TODO for 0.3.29
+  - Add recipe chains for items unlocked in rare metals
+  - Add yttrium from xenotime
+
+TODO for 0.3.30
   - Add 2-3 more rare metals to rare metals technology
   - Add all 3-4 rare metals from asteroids
   - Add more rare metals comming from lava
   - Fix casting icons
 
-TODO for 0.3.30
+TODO for 0.3.31
   - Add uses to
     - cryostabalized-ruthenium
     - cryostabalized-tungsten
@@ -81,12 +75,12 @@ TODO for 0.3.30
     - tohoku-alloy 5%Cr, 7%Co, 4%Ta, 10%ru, 14%Al, 60%Ni 
     - ruthenium-rodium 75-25
 
-TODO for 0.3.31
+TODO for 0.3.32
   - Update logistic science 3
   - Update geological science 3
   - Unlock legendary quality much later in tech tree
 
-TODO for 0.3.32
+TODO for 0.3.33
   - Fix asteroid reprocessing
   - Add uses and recipe chains for mineral resources
     - taenite
@@ -97,7 +91,7 @@ TODO for 0.3.32
     - pyroxenem
     - xenotime
 
-TODO for 0.3.33
+TODO for 0.3.34
   - Add data cards for:
     - matter science
     - optimization science
@@ -107,6 +101,22 @@ TODO for 0.3.33
     - promethium science
 
 TODO for 0.4.0
+  - Make geting heavy and light oil more complex
+    - Add carbolic oil
+    - naphtha
+    - acetylene (allready exists)
+    - anthracene
+    - sulfur as byproduct
+    - coke as residuum
+    - bitumen as residuum
+    - asphaltene as residuum
+    - organic solvant (maybe move some of the later unlocked fluids earlier)
+      - acetone (allready exists)
+      - methanol (allready exists)
+      - toluene (allready exists)
+      - diethyl ether
+      - hexane
+      - ethyl acetate
   - Make oil power much earlier (rename incineratpr too)
   - Fix leadstone / lead recipe chain
   - Add magnet to fast inserter
@@ -217,6 +227,8 @@ Balancing:
   - Increase fuel values of biological fluids / items
 
 Features:
+  - Overlay chemical formula over items and fluids
+    - Use colors in text?
   - Uranium trains (check if mod already exists)
   - Antimatter trains (check if mod already exists)
   - Windmills can be modded to be distanced appart (see nullius mod) https://youtu.be/_hg4ccr7fFM?si=SiwuzuhjAQ6lEAKU&t=341

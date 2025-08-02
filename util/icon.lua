@@ -263,7 +263,7 @@ function data_util.create_crushing_recipe_icon(item, result_item)
   if result_item == nil then
     icons = {
       {icon = item.icon, icon_size = item.icon_size},
-      {icon = "__Spaghetorio__/graphics/crushing/crushing-overlay-64x64.png", icon_size = 64}
+      {icon = "__Spaghetorio__/graphics/crushing/crushing-overlay-64x64.png", scale = 0.65, icon_size = 64}
     }
   else
     icons = {
