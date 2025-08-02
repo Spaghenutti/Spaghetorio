@@ -3742,6 +3742,28 @@ data:extend({
     },
     order = "[aluminum-brass]",
   },
+  {
+    type = "recipe",
+    name = "sp-vulcanic-research-data",  -- #ForRegEx# - recipe
+    category = "metallurgy",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 30,
+    ingredients = {
+      {type = "item", name = "sp-empty-research-data-card", amount = 1},
+      {type = "fluid", name = "lava", amount = 20},
+      {type = "fluid", name = "sp-ultramafic-lava", amount = 20},
+      {type = "item", name = "sp-andesite", amount = 1},
+      {type = "item", name = "sp-basalt", amount = 1},
+      {type = "item", name = "sp-obsidian", amount = 1},
+      {type = "item", name = "sp-pumice", amount = 1},
+      {type = "item", name = "sp-rhyolite", amount = 1},
+      {type = "item", name = "sp-scoria", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-vulcanic-research-data", amount = 1},
+    }
+  },
   ------------------------------------------------------------------------------
   -- MARK: high-temperature-smelting
   ------------------------------------------------------------------------------
@@ -11019,6 +11041,27 @@ data:extend({
       {type = "fluid", name = "sp-platinum-group-metal-froth", amount = 10}
     }
   },
+  {
+    type = "recipe",
+    name = "sp-mining-research-data",  -- #ForRegEx# - recipe
+    category = "sp-kr-fluid-filtration",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 45,
+    ingredients = {
+      {type = "item", name = "sp-empty-research-data-card", amount = 2},
+      {type = "fluid", name = "sp-hydrogen-chloride", amount = 15},
+      {type = "fluid", name = "sp-sodium-hydroxide", amount = 15},
+      {type = "fluid", name = "sulfuric-acid", amount = 20},
+      {type = "fluid", name = "sp-sodium-carbonate-solution", amount = 5},
+      {type = "fluid", name = "sp-bleach", amount = 5},
+      {type = "fluid", name = "sp-drilling-fluid", amount = 20},
+      {type = "item", name = "sp-drillhead", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-mining-research-data", amount = 2},
+    }
+  },
   ------------------------------------------------------------------------------
   -- MARK: sp-kr-atmosphere-condensation
   ------------------------------------------------------------------------------
@@ -11499,6 +11542,7 @@ data:extend({
     name = "sp-crushing-krypton-asteroid-chunk",  -- #ForRegEx# - recipe
     icons = util.icon.create_crushing_recipe_icon(data.raw.item["sp-krypton-asteroid-chunk"]),
     category = "crushing",
+    subgroup = "space-crushing",
     enabled = false,
     allow_productivity = true,
     energy_required = 5,
@@ -15404,7 +15448,7 @@ data:extend({
     category = "sp-kr-research-data",
     enabled = false,
     allow_productivity = true,
-    energy_required = 50,
+    energy_required = 15,
     ingredients = {
       {type = "item", name = "sp-empty-research-data-card", amount = 1},
       {type = "item", name = "sp-vanadium-pentoxide", amount = 3},
@@ -15414,6 +15458,52 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-catalyst-research-data", amount = 1},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-mineral-insight-data",  -- #ForRegEx# - recipe
+    category = "sp-kr-research-data",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 10,
+    ingredients = {
+      {type = "item", name = "sp-empty-insight-data-card", amount = 1},
+      {type = "item", name = "sp-sand", amount = 3},
+      {type = "item", name = "sp-core-fragment", amount = 2},
+      {type = "item", name = "sp-xenotime", amount = 1},
+      {type = "item", name = "sp-djerfisherite", amount = 1},
+      {type = "item", name = "sp-bromargyrite", amount = 1},
+      {type = "item", name = "sp-zircon", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-mineral-insight-data", amount = 1},
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-ore-insight-data",  -- #ForRegEx# - recipe
+    category = "sp-kr-research-data",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 40,
+    ingredients = {
+      {type = "item", name = "sp-empty-insight-data-card", amount = 2},
+      {type = "item", name = "sp-enriched-aluminum", amount = 1},
+      {type = "item", name = "sp-enriched-chromite", amount = 1},
+      {type = "item", name = "sp-enriched-copper", amount = 1},
+      {type = "item", name = "sp-enriched-holmium", amount = 1},
+      {type = "item", name = "sp-enriched-iron", amount = 1},
+      {type = "item", name = "sp-enriched-magnesium", amount = 1},
+      {type = "item", name = "sp-enriched-nickel", amount = 1},
+      {type = "item", name = "sp-enriched-stibnite", amount = 1},
+      {type = "item", name = "sp-enriched-tinstone", amount = 1},
+      {type = "item", name = "sp-enriched-titanium", amount = 1},
+      {type = "item", name = "sp-enriched-tungsten", amount = 1},
+      {type = "item", name = "sp-enriched-zinc", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-ore-insight-data", amount = 2},
     }
   },
   {

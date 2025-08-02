@@ -119,6 +119,7 @@ TODO for 0.4.0
       - ethyl acetate
   - Make oil power much earlier (rename incineratpr too)
   - Fix leadstone / lead recipe chain
+  - Many crushing recipes could also have one additional step, where crushed product is washed
   - Add magnet to fast inserter
   - Many recipes for aquiring rare metals from asteroids are the first step where the asteroid is crushed into minerals
     - crushing recipe is unlocked in xy-rich-asteroid technology

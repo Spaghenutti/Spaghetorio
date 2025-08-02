@@ -1118,8 +1118,7 @@ data:extend({
       -- },
     },
     prerequisites = {
-      "sp-core-extractor",
-      "sp-rare-metals"
+      "sp-core-extractor"
     },
     unit = {
       count = 200,
@@ -1163,8 +1162,7 @@ data:extend({
       },
     },
     prerequisites = {
-      "sp-core-extractor",
-      "sp-rare-metals"
+      "sp-core-extractor"
     },
     unit = {
       count = 200,
@@ -12904,10 +12902,27 @@ data:extend({
         type = "unlock-recipe",
         recipe = "sp-geological-science-pack-3"
       },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-mineral-insight-data"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-ore-insight-data"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-mining-research-data"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-vulcanic-research-data"
+      }
     },
     prerequisites = {
       "sp-xenotime-processing",
-      "sp-djerfisherite-processing"
+      "sp-djerfisherite-processing",
+      "sp-bromine-processing"
     },
     unit = {
       count = 500,
