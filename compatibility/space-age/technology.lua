@@ -78,16 +78,21 @@ data.raw.technology["mech-armor"].prerequisites = {
   "sp-logistic-science-pack-3"
 }
 data.raw.technology["mech-armor"].unit.ingredients = {
-{"sp-automation-science-pack-3", 1},
-{"sp-logistic-science-pack-3", 1},
-{"sp-material-science-pack-2", 1},
-{"sp-geological-science-pack-2", 1},
-{"sp-electronic-science-pack-2", 1},
-{"sp-chemical-science-pack-2", 1},
-{"sp-metallurgic-science-pack-2", 1},
-{"sp-electromagnetic-science-pack-2", 1},
-{"production-science-pack", 1},
-{"utility-science-pack", 1}
+  {"sp-automation-science-pack-3", 1},
+  {"sp-logistic-science-pack-3", 1},
+  {"sp-material-science-pack-2", 1},
+  {"sp-geological-science-pack-2", 1},
+  {"sp-electronic-science-pack-2", 1},
+  {"sp-chemical-science-pack-2", 1},
+  {"sp-metallurgic-science-pack-2", 1},
+  {"sp-electromagnetic-science-pack-2", 1},
+  {"production-science-pack", 1},
+  {"utility-science-pack", 1},
+  {"cryogenic-science-pack", 1},
+  {"agricultural-science-pack", 1},
+  {"sp-computer-science-pack-2", 1},
+  {"sp-nuclear-science-pack-2", 1},
+  {"space-science-pack", 1}
 }
 
 table.insert(data.raw.technology["advanced-combinators"].prerequisites, "advanced-circuit")
@@ -741,22 +746,24 @@ data.raw.technology["asteroid-reprocessing"].prerequisites = {
   "sp-ruthenium-rich-asteroid",
   "sp-terbium-rich-asteroid",
   "sp-ytterbium-rich-asteroid",
-  "sp-chemical-science-pack-3"
+  "sp-geological-science-pack-3"
 }
 data.raw.technology["asteroid-reprocessing"].unit.ingredients = {
-  {"sp-automation-science-pack-2", 1},
+  {"sp-automation-science-pack-3", 1},
   {"sp-logistic-science-pack-2", 1},
   {"sp-material-science-pack-2", 1},
-  {"sp-geological-science-pack-2", 1},
+  {"sp-geological-science-pack-3", 1},
   {"sp-electronic-science-pack-2", 1},
-  {"sp-chemical-science-pack-2", 1},
+  {"sp-chemical-science-pack-3", 1},
   {"sp-metallurgic-science-pack-2", 1},
   {"sp-electromagnetic-science-pack-2", 1},
   {"production-science-pack", 1},
   {"utility-science-pack", 1},
   {"cryogenic-science-pack", 1},
   {"agricultural-science-pack", 1},
-  {"sp-computer-science-pack-2", 1}
+  {"sp-computer-science-pack-2", 1},
+  {"sp-nuclear-science-pack-2", 1},
+  {"space-science-pack", 1}
 }
 
 --------------------------------------------------------------------------------
