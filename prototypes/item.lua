@@ -7985,7 +7985,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "sp-blank-science-item",
-    order = "a01[empty-experimental-data-card]",
+    order = "a02[empty-experimental-data-card]",
     stack_size = 200,
   },
   {
@@ -7995,7 +7995,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "sp-blank-science-item",
-    order = "a01[empty-research-data-card]",
+    order = "a03[empty-research-data-card]",
     stack_size = 200,
   },
   ------------------------------------------------------------------------------
@@ -8008,7 +8008,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "sp-insight-data",
-    order = "automation-[hydraulic-control-insight-data]",
+    order = "01-automation-[hydraulic-control-insight-data]",
     stack_size = 200,
   },
   {
@@ -8018,7 +8018,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "sp-insight-data",
-    order = "automation-[mechatronics-insight-data]",
+    order = "01-automation-[mechatronics-insight-data]",
     stack_size = 200,
   },
   {
@@ -8028,7 +8028,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "sp-insight-data",
-    order = "chemical-[organic-chemistry-insight-data]",
+    order = "04-chemical-[organic-chemistry-insight-data]",
     stack_size = 200,
   },
   {
@@ -8038,7 +8038,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "sp-insight-data",
-    order = "chemical-[inorganic-chemistry-insight-data]",
+    order = "04-chemical-[inorganic-chemistry-insight-data]",
     stack_size = 200,
   },
   {
@@ -8048,7 +8048,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "sp-insight-data",
-    order = "logistic-[drone-routing-insight-data]",
+    order = "02-logistic-[drone-routing-insight-data]",
     stack_size = 200,
   },
   {
@@ -8058,7 +8058,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "sp-insight-data",
-    order = "logistic-[inventory-control-insight-data]",
+    order = "02-logistic-[inventory-control-insight-data]",
     stack_size = 200,
   },
   {
@@ -8068,7 +8068,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "sp-insight-data",
-    order = "logistic-[transport-efficiency-insight-data]",
+    order = "02-logistic-[transport-efficiency-insight-data]",
     stack_size = 200,
   },
   {
@@ -8078,7 +8078,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "sp-insight-data",
-    order = "military-[ballistics-insight-data]",
+    order = "03-military-[ballistics-insight-data]",
     stack_size = 200,
   },
   {
@@ -8088,7 +8088,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "sp-insight-data",
-    order = "electronic-[analog-signalling-insight-data]",
+    order = "05-electronic-[analog-signalling-insight-data]",
     stack_size = 200,
   },
   {
@@ -8098,7 +8098,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "sp-insight-data",
-    order = "electronic-[power-regulation-insight-data]",
+    order = "05-electronic-[power-regulation-insight-data]",
     stack_size = 200,
   },
   {
@@ -8108,7 +8108,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "sp-insight-data",
-    order = "electronic-[signal-processing-insight-data]",
+    order = "05-electronic-[signal-processing-insight-data]",
     stack_size = 200,
   },
   {
@@ -8118,7 +8118,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "sp-insight-data",
-    order = "geological-[mineral-insight-data]",
+    order = "06-geological-[mineral-insight-data]",
     stack_size = 200,
   },
   {
@@ -8128,7 +8128,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "sp-insight-data",
-    order = "geological-[ore-insight-data]",
+    order = "06-geological-[ore-insight-data]",
     stack_size = 200,
   },
   {
@@ -8138,7 +8138,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "sp-insight-data",
-    order = "material-[refinment-insight-data]",
+    order = "07-material-[refinment-insight-data]",
     stack_size = 200,
   },
   {
@@ -8148,7 +8148,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "sp-insight-data",
-    order = "metallurgic-[corrosion-resistance-insight-data]",
+    order = "08-metallurgic-[corrosion-resistance-insight-data]",
     stack_size = 200,
   },
   {
@@ -8158,7 +8158,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "sp-insight-data",
-    order = "metallurgic-[casting-insight-data]",
+    order = "08-metallurgic-[casting-insight-data]",
     stack_size = 200,
   },
   {
@@ -8168,7 +8168,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "sp-insight-data",
-    order = "electromagnetic-[conductivity-insight-data]",
+    order = "09-electromagnetic-[conductivity-insight-data]",
     stack_size = 200,
   },
   {
@@ -8178,7 +8178,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "sp-insight-data",
-    order = "electromagnetic-[plasma-flow-insight-data]",
+    order = "09-electromagnetic-[plasma-flow-insight-data]",
     stack_size = 200,
   },
   {
@@ -8188,7 +8188,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "sp-insight-data",
-    order = "biological-[mutation-insight-data]",
+    order = "10-biological-[mutation-insight-data]",
     stack_size = 200,
   },
   {
@@ -8198,7 +8198,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "sp-insight-data",
-    order = "biological-[organic-matter-insight-data]",
+    order = "10-biological-[organic-matter-insight-data]",
     stack_size = 200,
   },
   {
@@ -8208,7 +8208,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "sp-insight-data",
-    order = "biological-[toxin-profile-insight-data]",
+    order = "10-biological-[toxin-profile-insight-data]",
     stack_size = 200,
   },
   {
@@ -8218,7 +8218,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "sp-insight-data",
-    order = "cryogenic-[cryostabilizing-insight-data]",
+    order = "11-cryogenic-[cryostabilizing-insight-data]",
     stack_size = 200,
   },
   {
@@ -8228,7 +8228,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "sp-insight-data",
-    order = "cryogenic-[vitrification-insight-data]",
+    order = "11-cryogenic-[vitrification-insight-data]",
     stack_size = 200,
   },
   {
@@ -8238,7 +8238,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "sp-insight-data",
-    order = "production-[infrastructure-insight-data]",
+    order = "12-production-[infrastructure-insight-data]",
     stack_size = 200,
   },
   {
@@ -8248,7 +8248,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "sp-insight-data",
-    order = "production-[energy-usage-insight-data]",
+    order = "12-production-[energy-usage-insight-data]",
     stack_size = 200,
   },
   {
@@ -8258,7 +8258,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "sp-insight-data",
-    order = "computer-[parallelizing-insight-data]",
+    order = "13-computer-[parallelizing-insight-data]",
     stack_size = 200,
   },
   {
@@ -8268,7 +8268,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "sp-insight-data",
-    order = "space-[navigation-insight-data]",
+    order = "15-space-[navigation-insight-data]",
     stack_size = 200,
   },
   {
@@ -8278,7 +8278,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "sp-insight-data",
-    order = "space-[asteroid-composition-insight-data]",
+    order = "15-space-[asteroid-composition-insight-data]",
     stack_size = 200,
   },
   {
@@ -8288,7 +8288,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "sp-insight-data",
-    order = "utility-[continous-improvement-insight-data]",
+    order = "16-utility-[continous-improvement-insight-data]",
     stack_size = 200,
   },
   ------------------------------------------------------------------------------
@@ -8301,7 +8301,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "sp-experimental-data",
-    order = "chemical-[ion-chromatography-experimental-data]",
+    order = "04-chemical-[ion-chromatography-experimental-data]",
     stack_size = 200,
   },
   {
@@ -8311,7 +8311,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "sp-experimental-data",
-    order = "chemical-[element-separation-experimental-data]",
+    order = "04-chemical-[element-separation-experimental-data]",
     stack_size = 200,
   },
   {
@@ -8321,7 +8321,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "sp-experimental-data",
-    order = "chemical-[inert-compounds-experimental-data]",
+    order = "04-chemical-[inert-compounds-experimental-data]",
     stack_size = 200,
   },
   {
@@ -8331,7 +8331,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "sp-experimental-data",
-    order = "chemical-[reactivity-experimental-data]",
+    order = "04-chemical-[reactivity-experimental-data]",
     stack_size = 200,
   },
   {
@@ -8341,7 +8341,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "sp-experimental-data",
-    order = "automation-[gear-mechanism-experimental-data]",
+    order = "01-automation-[gear-mechanism-experimental-data]",
     stack_size = 200,
   },
   {
@@ -8351,7 +8351,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "sp-experimental-data",
-    order = "nuclear-[alpha-decay-experimental-data]",
+    order = "14-nuclear-[alpha-decay-experimental-data]",
     stack_size = 200,
   },
   {
@@ -8361,7 +8361,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "sp-experimental-data",
-    order = "nuclear-[beta-minus-decay-experimental-data]",
+    order = "14-nuclear-[beta-minus-decay-experimental-data]",
     stack_size = 200,
   },
   {
@@ -8371,7 +8371,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "sp-experimental-data",
-    order = "nuclear-[beta-plus-decay-experimental-data]",
+    order = "14-nuclear-[beta-plus-decay-experimental-data]",
     stack_size = 200,
   },
   {
@@ -8381,7 +8381,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "sp-experimental-data",
-    order = "military-[explosive-yield-experimental-data]",
+    order = "03-military-[explosive-yield-experimental-data]",
     stack_size = 200,
   },
   {
@@ -8391,7 +8391,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "sp-experimental-data",
-    order = "military-[weapons-system-experimental-data]",
+    order = "03-military-[weapons-system-experimental-data]",
     stack_size = 200,
   },
   {
@@ -8401,7 +8401,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "sp-experimental-data",
-    order = "electronic-[circuit-design-experimental-data]",
+    order = "05-electronic-[circuit-design-experimental-data]",
     stack_size = 200,
   },
   {
@@ -8411,7 +8411,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "sp-experimental-data",
-    order = "material-[thermal-conductivity-experimental-data]",
+    order = "07-material-[thermal-conductivity-experimental-data]",
     stack_size = 200,
   },
   {
@@ -8421,7 +8421,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "sp-experimental-data",
-    order = "material-[carbon-compound-experimental-data]",
+    order = "07-material-[carbon-compound-experimental-data]",
     stack_size = 200,
   },
   {
@@ -8431,7 +8431,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "sp-experimental-data",
-    order = "metallurgic-[Intermetallic-experimental-data]",
+    order = "08-metallurgic-[Intermetallic-experimental-data]",
     stack_size = 200,
   },
   {
@@ -8441,7 +8441,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "sp-experimental-data",
-    order = "metallurgic-[heat-treatment-experimental-data]",
+    order = "08-metallurgic-[heat-treatment-experimental-data]",
     stack_size = 200,
   },
   {
@@ -8451,7 +8451,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "sp-experimental-data",
-    order = "electromagnetic-[induction-experimental-data]",
+    order = "09-electromagnetic-[induction-experimental-data]",
     stack_size = 200,
   },
   {
@@ -8461,7 +8461,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "sp-experimental-data",
-    order = "biological-[protein-synthesis-experimental-data]",
+    order = "10-biological-[protein-synthesis-experimental-data]",
     stack_size = 200,
   },
   {
@@ -8471,7 +8471,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "sp-experimental-data",
-    order = "cryogenic-[thermal-shock-experimental-data]",
+    order = "11-cryogenic-[thermal-shock-experimental-data]",
     stack_size = 200,
   },
   {
@@ -8481,7 +8481,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "sp-experimental-data",
-    order = "cryogenic-[coolant-experimental-data]",
+    order = "11-cryogenic-[coolant-experimental-data]",
     stack_size = 200,
   },
   {
@@ -8491,7 +8491,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "sp-experimental-data",
-    order = "production-[prototyping-experimental-data]",
+    order = "12-production-[prototyping-experimental-data]",
     stack_size = 200,
   },
   {
@@ -8501,7 +8501,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "sp-experimental-data",
-    order = "computer-[protocol-experimental-data]",
+    order = "13-computer-[protocol-experimental-data]",
     stack_size = 200,
   },
   {
@@ -8511,7 +8511,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "sp-experimental-data",
-    order = "computer-[quantum-computing-experimental-data]",
+    order = "13-computer-[quantum-computing-experimental-data]",
     stack_size = 200,
   },
   {
@@ -8521,7 +8521,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "sp-experimental-data",
-    order = "space-[gravitational-experimental-data]",
+    order = "15-space-[gravitational-experimental-data]",
     stack_size = 200,
   },
   {
@@ -8531,7 +8531,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "sp-experimental-data",
-    order = "utility-[structural-experimental-data]",
+    order = "16-utility-[structural-experimental-data]",
     stack_size = 200,
   },
   ------------------------------------------------------------------------------
@@ -8544,7 +8544,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "sp-research-data",
-    order = "military-[biters-research-data]",
+    order = "03-military-[biters-research-data]",
     stack_size = 200,
   },
   {
@@ -8564,7 +8564,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "sp-research-data",
-    order = "space-[space-research-data]",
+    order = "15-space-[space-research-data]",
     stack_size = 200,
   },
   {
@@ -8574,7 +8574,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "sp-research-data",
-    order = "automation-[machine-research-data]",
+    order = "01-automation-[machine-research-data]",
     stack_size = 200,
   },
   {
@@ -8584,7 +8584,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "sp-research-data",
-    order = "chemical-[catalyst-research-data]",
+    order = "04-chemical-[catalyst-research-data]",
     stack_size = 200,
   },
   {
@@ -8594,7 +8594,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "sp-research-data",
-    order = "logistic-[railway-research-data]",
+    order = "02-logistic-[railway-research-data]",
     stack_size = 200,
   },
   {
@@ -8604,7 +8604,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "sp-research-data",
-    order = "logistic-[assembly-research-data]",
+    order = "02-logistic-[assembly-research-data]",
     stack_size = 200,
   },
   {
@@ -8614,7 +8614,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "sp-research-data",
-    order = "military-[combat-research-data]",
+    order = "03-military-[combat-research-data]",
     stack_size = 200,
   },
   {
@@ -8624,7 +8624,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "sp-research-data",
-    order = "military-[defense-research-data]",
+    order = "03-military-[defense-research-data]",
     stack_size = 200,
   },
   {
@@ -8634,7 +8634,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "sp-research-data",
-    order = "electronic-[semiconductor-research-data]",
+    order = "05-electronic-[semiconductor-research-data]",
     stack_size = 200,
   },
   {
@@ -8644,7 +8644,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "sp-research-data",
-    order = "electronic-[microchip-research-data]",
+    order = "05-electronic-[microchip-research-data]",
     stack_size = 200,
   },
   {
@@ -8654,7 +8654,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "sp-research-data",
-    order = "geological-[mining-research-data]",
+    order = "06-geological-[mining-research-data]",
     stack_size = 200,
   },
   {
@@ -8664,7 +8664,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "sp-research-data",
-    order = "geological-[vulcanic-research-data]",
+    order = "06-geological-[vulcanic-research-data]",
     stack_size = 200,
   },
   {
@@ -8674,7 +8674,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "sp-research-data",
-    order = "material-[reinforced-material-research-data]",
+    order = "07-material-[reinforced-material-research-data]",
     stack_size = 200,
   },
   {
@@ -8684,7 +8684,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "sp-research-data",
-    order = "material-[tooling-material-research-data]",
+    order = "07-material-[tooling-material-research-data]",
     stack_size = 200,
   },
   {
@@ -8694,7 +8694,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "sp-research-data",
-    order = "material-[matrix-material-research-data]",
+    order = "07-material-[matrix-material-research-data]",
     stack_size = 200,
   },
   {
@@ -8704,7 +8704,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "sp-research-data",
-    order = "metallurgic-[high-entropy-alloys-research-data]",
+    order = "08-metallurgic-[high-entropy-alloys-research-data]",
     stack_size = 200,
   },
   {
@@ -8714,7 +8714,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "sp-research-data",
-    order = "metallurgic-[froth-analysis-research-data]",
+    order = "08-metallurgic-[froth-analysis-research-data]",
     stack_size = 200,
   },
   {
@@ -8724,7 +8724,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "sp-research-data",
-    order = "electromagnetic-[magnetism-research-data]",
+    order = "09-electromagnetic-[magnetism-research-data]",
     stack_size = 200,
   },
   {
@@ -8734,7 +8734,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "sp-research-data",
-    order = "electromagnetic-[electromagnetic-shielding-research-data]",
+    order = "09-electromagnetic-[electromagnetic-shielding-research-data]",
     stack_size = 200,
   },
   {
@@ -8744,7 +8744,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "sp-research-data",
-    order = "biological-[biopolymer-research-data]",
+    order = "10-biological-[biopolymer-research-data]",
     stack_size = 200,
   },
   {
@@ -8754,7 +8754,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "sp-research-data",
-    order = "biological-[microbe-research-data]",
+    order = "10-biological-[microbe-research-data]",
     stack_size = 200,
   },
   {
@@ -8764,7 +8764,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "sp-research-data",
-    order = "cryogenic-[subzero-reactivity-research-data]",
+    order = "11-cryogenic-[subzero-reactivity-research-data]",
     stack_size = 200,
   },
   {
@@ -8774,7 +8774,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "sp-research-data",
-    order = "production-[manufacturing-research-data]",
+    order = "12-production-[manufacturing-research-data]",
     stack_size = 200,
   },
   {
@@ -8784,7 +8784,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "sp-research-data",
-    order = "computer-[algorithm-research-data]",
+    order = "13-computer-[algorithm-research-data]",
     stack_size = 200,
   },
   {
@@ -8794,7 +8794,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "sp-research-data",
-    order = "computer-[datastructure-research-data]",
+    order = "13-computer-[datastructure-research-data]",
     stack_size = 200,
   },
   {
@@ -8804,7 +8804,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "sp-research-data",
-    order = "space-[deep-space-research-data]",
+    order = "15-space-[deep-space-research-data]",
     stack_size = 200,
   },
   {
@@ -8814,7 +8814,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "sp-research-data",
-    order = "space-[propulsion-research-data]",
+    order = "15-space-[propulsion-research-data]",
     stack_size = 200,
   },
   {
@@ -8824,7 +8824,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "sp-research-data",
-    order = "utility-[process-research-data]",
+    order = "16-utility-[process-research-data]",
     stack_size = 200,
   },
   {
@@ -8834,7 +8834,7 @@ data:extend({
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "sp-research-data",
-    order = "utility-[material-handling-research-data]",
+    order = "16-utility-[material-handling-research-data]",
     stack_size = 200,
   },
   ------------------------------------------------------------------------------

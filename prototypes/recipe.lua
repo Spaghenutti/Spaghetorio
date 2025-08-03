@@ -11043,6 +11043,28 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "sp-mineral-insight-data",  -- #ForRegEx# - recipe
+    category = "sp-kr-fluid-filtration",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 10,
+    ingredients = {
+      {type = "item", name = "sp-empty-insight-data-card", amount = 1},
+      {type = "item", name = "sp-sand", amount = 3},
+      {type = "item", name = "sp-core-fragment", amount = 2},
+      {type = "item", name = "sp-xenotime", amount = 1},
+      {type = "item", name = "sp-djerfisherite", amount = 1},
+      {type = "item", name = "sp-bromargyrite", amount = 1},
+      {type = "item", name = "sp-zircon", amount = 1},
+      {type = "fluid", name = "water", amount = 50},
+      {type = "fluid", name = "sp-mineral-water", amount = 20},
+    },
+    results = {
+      {type = "item", name = "sp-mineral-insight-data", amount = 1},
+    }
+  },
+  {
+    type = "recipe",
     name = "sp-mining-research-data",  -- #ForRegEx# - recipe
     category = "sp-kr-fluid-filtration",
     enabled = false,
@@ -15553,26 +15575,6 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-transport-efficiency-insight-data", amount = 10},
-    }
-  },
-  {
-    type = "recipe",
-    name = "sp-mineral-insight-data",  -- #ForRegEx# - recipe
-    category = "sp-kr-research-data",
-    enabled = false,
-    allow_productivity = true,
-    energy_required = 10,
-    ingredients = {
-      {type = "item", name = "sp-empty-insight-data-card", amount = 1},
-      {type = "item", name = "sp-sand", amount = 3},
-      {type = "item", name = "sp-core-fragment", amount = 2},
-      {type = "item", name = "sp-xenotime", amount = 1},
-      {type = "item", name = "sp-djerfisherite", amount = 1},
-      {type = "item", name = "sp-bromargyrite", amount = 1},
-      {type = "item", name = "sp-zircon", amount = 1},
-    },
-    results = {
-      {type = "item", name = "sp-mineral-insight-data", amount = 1},
     }
   },
   {
