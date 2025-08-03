@@ -12743,6 +12743,10 @@ data:extend({
       },
       {
         type = "unlock-recipe",
+        recipe = "sp-railway-research-data"
+      },
+      {
+        type = "unlock-recipe",
         recipe = "sp-assembly-research-data"
       }
     },

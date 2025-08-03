@@ -1,9 +1,9 @@
 
 ## Current state of the mod
 
-This mod is in early alpha. In my current playthrough I can finish the first tier of science packs (about 200h taking it casually). For the recipes unlocked during first tier there are no plans to change anything (except maybe change some ratios). All recipes comming after allready exist, but might not be reachable through tech tree.
+This mod is in early alpha. At the current stage players have managed to reach orbit which requires completing all tier 2 science packs.
 
-I am currently cleaning up the second science tier in tech tree which is the longest and most complex phase in the development. I want to publish my mod now, because I need some help and gather feedback to tune in the balance.
+I am currently cleaning up the third science tier in tech tree. I want to publish my mod now, because I need some help and gather feedback to tune in the balance.
 
 If you have some cool ideas you can give me feedback in the discussions section.
 

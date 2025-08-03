@@ -8589,6 +8589,16 @@ data:extend({
   },
   {
     type = "item",
+    name = "sp-railway-research-data",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/railway-research-data.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-research-data",
+    order = "logistic-[railway-research-data]",
+    stack_size = 200,
+  },
+  {
+    type = "item",
     name = "sp-assembly-research-data",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/assembly-research-data.png",
     icon_size = 64,
