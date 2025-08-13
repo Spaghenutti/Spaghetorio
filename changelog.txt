@@ -1,6 +1,6 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.27
-Date: 2025-08-08
+Date: 2025-08-04
   Features:
     - Added processing of xenotime and djerfisherite
     - Added more data cards
