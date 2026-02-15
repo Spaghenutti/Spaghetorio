@@ -332,7 +332,7 @@ util.recipe.change_recipe_ingredients("quality-module",
   },
   15)
 
-data.raw.recipe["quality-module-2"].category = "sp-manufacturing"
+-- data.raw.recipe["quality-module-2"].category = "sp-manufacturing"
 util.recipe.change_recipe_ingredients("quality-module-2",
 {
   {type = "item", name = "processing-unit", amount = 5},
