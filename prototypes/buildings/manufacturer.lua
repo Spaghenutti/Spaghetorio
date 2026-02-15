@@ -135,5 +135,6 @@ data:extend({
     working_sound = working_sound,
     fluid_boxes_off_when_no_fluid_recipe = true,
     base_productivity = 0.2,
+    effect_receiver = { base_effect = { productivity = 0.2 }},
   }
 })
