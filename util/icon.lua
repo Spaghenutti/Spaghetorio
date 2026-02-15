@@ -429,9 +429,6 @@ function data_util.create_recycling_icon(icon, icon_size)
   return icons
 end
 
-return data_util
-
-
 function data_util.overlay_number_icon(base_icon, number, position)
   position = position or "top-right"  -- 默认位置：右上
   
@@ -459,3 +456,7 @@ function data_util.overlay_number_icon(base_icon, number, position)
   }
   return icons
 end
+
+return data_util
+
+
