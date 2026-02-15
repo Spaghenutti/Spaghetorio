@@ -442,15 +442,15 @@ function data_util.overlay_number_icon(base_icon, number, position)
   end
   
   number_icon = "__base__/graphics/icons/signal/signal_0.png"
-  if number == 1 then number_icon = "__base__/graphics/icons/signal/signal_1.png",
-  elseif number == 2 then number_icon = "__base__/graphics/icons/signal/signal_2.png",
-  elseif number == 3 then number_icon = "__base__/graphics/icons/signal/signal_3.png",
-  elseif number == 4 then number_icon = "__base__/graphics/icons/signal/signal_4.png",
-  elseif number == 5 then number_icon = "__base__/graphics/icons/signal/signal_5.png",
-  elseif number == 6 then number_icon = "__base__/graphics/icons/signal/signal_6.png",
-  elseif number == 7 then number_icon = "__base__/graphics/icons/signal/signal_7.png",
-  elseif number == 8 then number_icon = "__base__/graphics/icons/signal/signal_8.png",
-  elseif number == 9 then number_icon = "__base__/graphics/icons/signal/signal_9.png",
+  if number == 1 then number_icon = "__base__/graphics/icons/signal/signal_1.png"
+  elseif number == 2 then number_icon = "__base__/graphics/icons/signal/signal_2.png"
+  elseif number == 3 then number_icon = "__base__/graphics/icons/signal/signal_3.png"
+  elseif number == 4 then number_icon = "__base__/graphics/icons/signal/signal_4.png"
+  elseif number == 5 then number_icon = "__base__/graphics/icons/signal/signal_5.png"
+  elseif number == 6 then number_icon = "__base__/graphics/icons/signal/signal_6.png"
+  elseif number == 7 then number_icon = "__base__/graphics/icons/signal/signal_7.png"
+  elseif number == 8 then number_icon = "__base__/graphics/icons/signal/signal_8.png"
+  elseif number == 9 then number_icon = "__base__/graphics/icons/signal/signal_9.png"
   end
 
   icons = {

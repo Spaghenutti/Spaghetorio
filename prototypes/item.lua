@@ -2217,7 +2217,7 @@ data:extend({
   {
     type = "item",
     name = "sp-thallium-201",  -- #ForRegEx# - item
-    icon = data_util.oveoverlay_number_icon("__Spaghetorio__/graphics/icons/thallium.png",1,"bottom-right")
+    icon = data_util.overlay_number_icon("__Spaghetorio__/graphics/icons/thallium.png",1,"bottom-right"),
     icon_size = 64,
     scale = 0.5,
     subgroup = "sp-processed-metal",
