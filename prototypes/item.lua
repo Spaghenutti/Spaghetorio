@@ -2216,6 +2216,16 @@ data:extend({
   },
   {
     type = "item",
+    name = "sp-thallium-201",  -- #ForRegEx# - item
+    icons = util.icon.overlay_number_icon("__Spaghetorio__/graphics/icons/thallium.png",1,"bottom-right"),
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "sp-processed-metal",
+    order = "t[thallium]-201",
+    stack_size = 100
+  },
+  {
+    type = "item",
     name = "sp-caesium",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/caesium.png",
     icon_size = 64,
