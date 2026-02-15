@@ -430,3 +430,32 @@ function data_util.create_recycling_icon(icon, icon_size)
 end
 
 return data_util
+
+
+function data_util.overlay_number_icon(base_icon, number, position)
+  position = position or "top-right"  -- 默认位置：右上
+  
+  local shift = {8, -8}  -- 默认右上偏移
+  if position == "top-left" then shift = {-8, -8}
+  elseif position == "bottom-left" then shift = {-8, 8}
+  elseif position == "bottom-right" then shift = {8, 8}
+  end
+  
+  number_icon = "__base__/graphics/icons/signal/signal_0.png"
+  if number == 1 then number_icon = "__base__/graphics/icons/signal/signal_1.png",
+  elseif number == 2 then number_icon = "__base__/graphics/icons/signal/signal_2.png",
+  elseif number == 3 then number_icon = "__base__/graphics/icons/signal/signal_3.png",
+  elseif number == 4 then number_icon = "__base__/graphics/icons/signal/signal_4.png",
+  elseif number == 5 then number_icon = "__base__/graphics/icons/signal/signal_5.png",
+  elseif number == 6 then number_icon = "__base__/graphics/icons/signal/signal_6.png",
+  elseif number == 7 then number_icon = "__base__/graphics/icons/signal/signal_7.png",
+  elseif number == 8 then number_icon = "__base__/graphics/icons/signal/signal_8.png",
+  elseif number == 9 then number_icon = "__base__/graphics/icons/signal/signal_9.png",
+  end
+
+  icons = {
+    {icon = base_icon, icon_size = 64},
+    {icon = number_icon, icon_size = 8, scale = 0.25, shift = shift}
+  }
+  return icons
+end
