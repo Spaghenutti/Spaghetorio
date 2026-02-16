@@ -126,7 +126,7 @@ util.recipe.change_recipe_ingredients("advanced-circuit",
   },
   3)
 
-data.raw.recipe["processing-unit"].category = "crafting"
+-- data.raw.recipe["processing-unit"].category = "crafting"
 util.recipe.change_recipe_ingredients("processing-unit",
   {
     {type = "item", name = "sp-circuit-board", amount = 1},
