@@ -10,6 +10,19 @@ data:extend({
   -- MARK: base-products  
   -- MARK: vulcanic-rock
   ------------------------------------------------------------------------------
+    {
+    type = "item",
+    name = "sp-moon-test",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/test/moon.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    pictures = {
+      {size = 64, filename = "__Spaghetorio__/graphics/test/moon.png", scale = 0.5, mipmap_count = 4}
+    },
+    subgroup = "sp-vulcanic-rock",
+    order = "[moon]",
+    stack_size = 50
+  },
   {
     type = "item",
     name = "sp-andesite",  -- #ForRegEx# - item
@@ -2217,7 +2230,7 @@ data:extend({
   {
     type = "item",
     name = "sp-thallium-201",  -- #ForRegEx# - item
-    icons = util.icon.overlay_number_icon("__Spaghetorio__/graphics/icons/thallium.png",1,"bottom-right"),
+    icon = "__Spaghetorio__/graphics/icons/thallium-201.png",
     icon_size = 64,
     scale = 0.5,
     subgroup = "sp-processed-metal",
