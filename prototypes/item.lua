@@ -2233,8 +2233,8 @@ data:extend({
     icon = "__Spaghetorio__/graphics/icons/thallium-201.png",
     icon_size = 64,
     scale = 0.5,
-    spoil_ticks = 30 * second,
-    spoil_result = "sp-thallium",
+    spoil_ticks = 72 * hour,
+    spoil_result = "sp-mercury-ore",
     subgroup = "sp-processed-metal",
     order = "[thallium]-201",
     stack_size = 100
