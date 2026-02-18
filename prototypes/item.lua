@@ -25,6 +25,16 @@ data:extend({
   },
   {
     type = "item",
+    name = "sp-photomultiplier-tube",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/photomultiplier_tube.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "sp-intermediate-product",
+    order = "ingot-[photomultiplier_tube]",
+    stack_size = 50
+  },
+  {
+    type = "item",
     name = "sp-andesite",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/andesite-1.png",
     icon_size = 64,
