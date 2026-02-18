@@ -2234,7 +2234,7 @@ data:extend({
     icon_size = 64,
     scale = 0.5,
     spoil_ticks = 30 * second,
-    spoil_result = "sp-mercury",
+    spoil_result = "sp-thallium",
     subgroup = "sp-processed-metal",
     order = "[thallium]-201",
     stack_size = 100
