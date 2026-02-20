@@ -4955,7 +4955,8 @@ data:extend({
     {
     type = "recipe",
     name = "sp-sodium-iodide-crystal",  -- #ForRegEx# - recipe
-    -- icon = "__Spaghetorio__/graphics/icons/sodium-iodide-crystal.png",
+    icon = "__Spaghetorio__/graphics/icons/sodium-iodide-crystal.png",
+    icon_size = 64,
     category = "chemistry",
     enabled = false,
     allow_productivity = true,
