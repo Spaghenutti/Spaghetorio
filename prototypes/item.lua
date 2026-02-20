@@ -1152,6 +1152,16 @@ data:extend({
   },
   {
     type = "item",
+    name = "sp-sodium-iodide-crystal",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/sodium-iodide-crystal.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-processed-resource",
+    order = "f[sodium-iodide-crystal]",
+    stack_size = 100,
+  }
+  {
+    type = "item",
     name = "sp-salt",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/salt.png",
     icon_size = 64,

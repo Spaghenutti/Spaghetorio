@@ -4952,6 +4952,23 @@ data:extend({
       {type = "item", name = "sp-resistor", amount = 4}
     }
   },
+    {
+    type = "recipe",
+    name = "sp-sodium-iodide-crystal",  -- #ForRegEx# - recipe
+    -- icon = "__Spaghetorio__/graphics/icons/sodium-iodide-crystal.png",
+    category = "chemistry",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 20,
+    ingredients = {
+      {type = "fluid", name = "sp-sodium-hydroxide", amount = 30},
+      {type = "fluid", name = "sp-hydrogen-iodide", amount = 30},
+    },
+    results = {
+      {type = "item", name = "sp-sodium-iodide-crystal", amount = 6},   
+      {type = "fluid", name = "water", amount = 30}
+    }
+  },
   {
     type = "recipe",
     name = "sp-capacitor",  -- #ForRegEx# - recipe
