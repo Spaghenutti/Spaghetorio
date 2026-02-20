@@ -7023,6 +7023,10 @@ data:extend({
       },
       {
         type = "unlock-recipe",
+        recipe = "sp-sodium-iodide-crystal"
+      },
+      {
+        type = "unlock-recipe",
         recipe = "sp-iodethene"
       }
     },
