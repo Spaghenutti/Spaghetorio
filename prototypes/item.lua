@@ -1159,7 +1159,7 @@ data:extend({
     subgroup = "sp-processed-resource",
     order = "f[sodium-iodide-crystal]",
     stack_size = 100,
-  }
+  },
   {
     type = "item",
     name = "sp-salt",  -- #ForRegEx# - item
