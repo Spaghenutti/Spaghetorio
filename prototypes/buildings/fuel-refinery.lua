@@ -125,7 +125,7 @@ data:extend({
       },
       apparent_volume = 0.5,
     },
-    crafting_speed = 1,
+    crafting_speed = 1.5,
     energy_source = {
       type = "electric",
       usage_priority = "secondary-input",
@@ -133,6 +133,19 @@ data:extend({
     },
     energy_usage = "250kW",
     crafting_categories = {"sp-kr-fuel-refinery"},
+    module_slots = 4,  
+    icons_positioning = {
+      {
+        inventory_index = defines.inventory.assembling_machine_modules,  -- 插件槽位置
+        shift = {0, 1.8},              -- 相对实体中心的偏移
+        scale = 0.8                    -- 插件图标缩放
+      }
+    },
+    allowed_effects = { 
+      "consumption",   -- 允许能耗插件（节能）
+      "speed",         -- 允许速度插件（加速）
+      "productivity"  -- 允许产能插件（增产）
+    },
     fluid_boxes = {
       -- Inputs
       {
