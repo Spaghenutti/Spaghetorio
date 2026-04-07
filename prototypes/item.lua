@@ -2794,6 +2794,16 @@ data:extend({
   },
   {
     type = "item",
+    name = "sp-steel-sheet",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/steel-sheet.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "sp-raw-material",
+    order = "a-plate-[steel-sheet]",
+    stack_size = 100
+  },
+  {
+    type = "item",
     name = "sp-nickel-ingot",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/nickel-ingot.png",
     icon_size = 64,
@@ -5107,6 +5117,16 @@ data:extend({
   },
   {
     type = "item",
+    name = "sp-compressor",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/compressor.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "sp-intermediate-product",
+    order = "pressure-[compressor]",
+    stack_size = 50
+  },
+  {
+    type = "item",
     name = "sp-high-pressure-tank",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/high-pressure-tank.png",
     icon_size = 64,
@@ -5118,9 +5138,15 @@ data:extend({
   {
     type = "item",
     name = "sp-fabric",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/icons/fabric.png",
+    icon = "__Spaghetorio__/graphics/icons/fabric-1.png",
     icon_size = 64,
     icon_mipmaps = 4,
+    pictures = {
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/fabric-1.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/fabric-2.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/fabric-3.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/fabric-4.png", scale = 0.5, mipmap_count = 4}
+    },
     subgroup = "sp-intermediate-product",
     order = "other-[fabric]",
     stack_size = 50
@@ -5227,16 +5253,6 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-compressor",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/icons/compressor.png",
-    icon_size = 64,
-    scale = 0.5,
-    subgroup = "sp-intermediate-product",
-    order = "electricmagnetic-[compressor]",
-    stack_size = 50
-  },
-  {
-    type = "item",
     name = "sp-big-electric-engine-unit",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/big-electric-engine.png",
     icon_size = 64,
@@ -5258,9 +5274,15 @@ data:extend({
   {
     type = "item",
     name = "sp-micro-machine",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/icons/micro-machine.png",
+    icon = "__Spaghetorio__/graphics/icons/micro-machine-1.png",
     icon_size = 64,
     scale = 0.5,
+    pictures = {
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/micro-machine-1.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/micro-machine-2.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/micro-machine-3.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/micro-machine-4.png", scale = 0.5, mipmap_count = 4}
+    },
     subgroup = "sp-intermediate-product",
     order = "electricmagnetic-[micro-machine]",
     stack_size = 50

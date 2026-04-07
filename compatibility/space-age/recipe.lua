@@ -541,6 +541,7 @@ util.recipe.change_recipe_ingredients("crusher",
 
 util.recipe.change_recipe_ingredients("heating-tower",
   {
+    {type = "item", name = "sp-steel-sheet", amount = 16},
     {type = "item", name = "sp-stainless-steel", amount = 16},
     {type = "item", name = "sp-waspaloy", amount = 20},
     {type = "item", name = "sp-copper-tube", amount = 40},

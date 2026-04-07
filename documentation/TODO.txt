@@ -1,3 +1,18 @@
+TODO for 0.4.0
+
+New items
++ i steel-sheet
+  + recipe
+  + uses
+
+New Icons
+- cubit
+
+fixes
+- fix casting icons
+- fix pipe entries in hurricane buildings
+
+--------------------------------------------------------------------------------
 
 TODO for 0.3.26
   - Fix noble gases recipe chain
@@ -174,6 +189,7 @@ TODO for 0.4.2
     - update recipes for existing grounds
 
 TODO for 0.4.3
+  - Move alien resources to asteroids in different solar system
   - Space resource
     - Aetherium – A rare essence that bends space and time.
 

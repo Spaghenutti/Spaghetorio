@@ -3729,7 +3729,7 @@ data:extend({
     type = "technology",
     name = "sp-fabric",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghetorio__/graphics/hr-icons/fabric.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/fabric-1.png",
     effects = {
       {
         type = "unlock-recipe",
@@ -6556,7 +6556,7 @@ data:extend({
     type = "technology",
     name = "sp-power-regulation",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghetorio__/graphics/hr-icons/relay.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/amplifier.png",
     effects = {
       {
         type = "unlock-recipe",

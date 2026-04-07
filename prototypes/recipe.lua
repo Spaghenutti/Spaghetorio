@@ -36,6 +36,20 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "sp-steel-sheet",  -- #ForRegEx# - recipe
+    category = "smelting",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 1,
+    ingredients = {
+      {type = "item", name = "steel-plate", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-steel-sheet", amount = 2}
+    }
+  },
+  {
+    type = "recipe",
     name = "sp-steel-beam",  -- #ForRegEx# - recipe
     category = "smelting",
     enabled = false,
@@ -12790,7 +12804,7 @@ data:extend({
     allow_productivity = true,
     energy_required = 10,
     ingredients = {
-      {type = "item", name = "steel-plate", amount = 8},
+      {type = "item", name = "sp-steel-sheet", amount = 15},
       {type = "item", name = "sp-steel-beam", amount = 6},
       {type = "item", name = "electronic-circuit", amount = 2},
       {type = "item", name = "sp-bolts", amount = 24},
@@ -13474,8 +13488,7 @@ data:extend({
       {type = "item", name = "sp-bolts", amount = 6},
       {type = "item", name = "sp-machined-parts", amount = 12},
       {type = "item", name = "sp-aluminum-frame", amount = 4},
-      {type = "item", name = "sp-insulated-wire", amount = 10},
-      {type = "item", name = "sp-transformer", amount = 1}
+      {type = "item", name = "sp-insulated-wire", amount = 10}
     },
     results = {
       {type = "item", name = "sp-dynamo", amount = 1}
@@ -13510,8 +13523,8 @@ data:extend({
     ingredients = {
       {type = "item", name = "pump", amount = 1},
       {type = "item", name = "sp-bolts", amount = 2},
-      {type = "item", name = "sp-rubber", amount = 3},
-      {type = "item", name = "sp-high-pressure-tank", amount = 1},
+      {type = "item", name = "sp-seal", amount = 2},
+      {type = "item", name = "sp-vibration-dampener", amount = 2},
       {type = "item", name = "sp-machined-parts", amount = 6},
     },
     results = {
@@ -14534,7 +14547,8 @@ data:extend({
       {type = "item", name = "sp-aluminum-brass", amount = 2},
       {type = "item", name = "sp-titanium-niobium", amount = 1},
       {type = "item", name = "sp-kevlar", amount = 5},
-      {type = "item", name = "carbon-fiber", amount = 5}
+      {type = "item", name = "carbon-fiber", amount = 5},
+      {type = "item", name = "sp-compressor", amount = 5}
     },
     results = {
       {type = "item", name = "sp-high-pressure-tank", amount = 1}
@@ -16947,7 +16961,7 @@ data:extend({
     ingredients = {
       {type = "item", name = "engine-unit", amount = 6},
       {type = "item", name = "sp-spring", amount = 8},
-      {type = "item", name = "steel-plate", amount = 10},
+      {type = "item", name = "sp-steel-sheet", amount = 30},
       {type = "item", name = "sp-bolts", amount = 16},
       {type = "item", name = "sp-gearbox", amount = 4},
       {type = "item", name = "stone-brick", amount = 12},
@@ -17102,6 +17116,7 @@ data:extend({
     ingredients = {
       {type = "item", name = "sp-glass", amount = 12},
       {type = "item", name = "sp-brass", amount = 20},
+      {type = "item", name = "sp-steel-sheet", amount = 80},
       {type = "item", name = "sp-vanadium-steel", amount = 50},
       {type = "item", name = "sp-insulation-sheet", amount = 10},
       {type = "item", name = "electric-engine-unit", amount = 12},
@@ -17126,7 +17141,8 @@ data:extend({
     allow_productivity = false,
     energy_required = 30,
     ingredients = {
-      {type = "item", name = "sp-crucible", amount = 2},
+      {type = "item", name = "sp-steel-sheet", amount = 60},
+      {type = "item", name = "sp-crucible", amount = 4},
       {type = "item", name = "sp-heating-filament", amount = 2},
       {type = "item", name = "sp-nickel-chromium", amount = 16},
       {type = "item", name = "sp-vanadium-steel", amount = 40},
@@ -17168,6 +17184,7 @@ data:extend({
     allow_productivity = false,
     energy_required = 40,
     ingredients = {
+      {type = "item", name = "sp-steel-sheet", amount = 50},
       {type = "item", name = "sp-maraging-steel", amount = 30},
       {type = "item", name = "sp-elgiloy", amount = 8},
       {type = "item", name = "sp-duralumin", amount = 20},
@@ -17210,6 +17227,7 @@ data:extend({
     allow_productivity = false,
     energy_required = 60,
     ingredients = {
+      {type = "item", name = "sp-steel-sheet", amount = 60},
       {type = "item", name = "sp-duralumin", amount = 40},
       {type = "item", name = "sp-titanium-frame", amount = 20},
       {type = "item", name = "sp-nickel-cobalt", amount = 6},
@@ -17318,6 +17336,7 @@ data:extend({
     allow_productivity = false,
     energy_required = 80,
     ingredients = {
+      {type = "item", name = "sp-steel-sheet", amount = 80},
       {type = "item", name = "sp-niobium-steel", amount = 40},
       {type = "item", name = "sp-titanium-aluminum-tin", amount = 20},
       {type = "item", name = "sp-chromium-cobalt", amount = 20},
@@ -17423,6 +17442,7 @@ data:extend({
     enabled = false,
     allow_productivity = false,
     ingredients = {
+      {type = "item", name = "sp-steel-sheet", amount = 40},
       {type = "item", name = "sp-stainless-steel", amount = 30},
       {type = "item", name = "electronic-circuit", amount = 12},
       {type = "item", name = "sp-valve", amount = 16},
@@ -17543,6 +17563,7 @@ data:extend({
     enabled = false,
     allow_productivity = false,
     ingredients = {
+      {type = "item", name = "sp-steel-sheet", amount = 120},
       {type = "item", name = "sp-stainless-steel", amount = 80},
       {type = "item", name = "sp-chromium-cobalt", amount = 10},
       {type = "item", name = "sp-elgiloy", amount = 24},
@@ -17551,7 +17572,7 @@ data:extend({
       {type = "item", name = "sp-vibration-dampener", amount = 12},
       {type = "item", name = "sp-big-electric-engine-unit", amount = 4},
       {type = "item", name = "sp-heavy-gearbox", amount = 8},
-      {type = "item", name = "sp-dynamo", amount = 1},
+      {type = "item", name = "sp-dynamo", amount = 4},
       {type = "item", name = "refined-concrete", amount = 80},
     },
     results = {
@@ -17568,7 +17589,8 @@ data:extend({
     enabled = false,
     allow_productivity = false,
     ingredients = {
-      {type = "item", name = "sp-steel-beam", amount = 36},
+      {type = "item", name = "sp-steel-sheet", amount = 60},
+      {type = "item", name = "sp-steel-beam", amount = 30},
       {type = "item", name = "sp-bolts", amount = 80},
       {type = "item", name = "sp-glass", amount = 24},
       {type = "item", name = "engine-unit", amount = 8},
@@ -17610,7 +17632,8 @@ data:extend({
     enabled = false,
     allow_productivity = false,
     ingredients = {
-      {type = "item", name = "sp-steel-beam", amount = 48},
+      {type = "item", name = "sp-steel-sheet", amount = 60},
+      {type = "item", name = "sp-steel-beam", amount = 30},
       {type = "item", name = "sp-copper-tube", amount = 50},
       {type = "item", name = "sp-bolts", amount = 60},
       {type = "item", name = "sp-glass", amount = 20},
@@ -17632,7 +17655,8 @@ data:extend({
     enabled = false,
     allow_productivity = false,
     ingredients = {
-      {type = "item", name = "sp-steel-beam", amount = 16},
+      {type = "item", name = "sp-steel-sheet", amount = 20},
+      {type = "item", name = "sp-steel-beam", amount = 8},
       {type = "item", name = "sp-copper-tube", amount = 30},
       {type = "item", name = "sp-valve", amount = 4},
       {type = "item", name = "stone-brick", amount = 8},
@@ -17652,6 +17676,7 @@ data:extend({
     enabled = false,
     allow_productivity = false,
     ingredients = {
+      {type = "item", name = "sp-steel-sheet", amount = 20},
       {type = "item", name = "sp-stainless-steel", amount = 20},
       {type = "item", name = "sp-brass", amount = 12},
       {type = "item", name = "sp-chromium-cobalt", amount = 10},
@@ -17706,7 +17731,8 @@ data:extend({
     enabled = false,
     allow_productivity = false,
     ingredients = {
-      {type = "item", name = "sp-steel-beam", amount = 40},
+      {type = "item", name = "sp-steel-sheet", amount = 60},
+      {type = "item", name = "sp-steel-beam", amount = 30},
       {type = "item", name = "sp-stainless-steel", amount = 32},
       {type = "item", name = "sp-nickel-cobalt", amount = 12},
       {type = "item", name = "sp-bolts", amount = 45},

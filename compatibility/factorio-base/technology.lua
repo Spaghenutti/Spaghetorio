@@ -377,6 +377,7 @@ data.raw.technology["landfill"].unit.ingredients = {
 table.insert(data.raw.technology["landfill"].effects, {type = "unlock-recipe", recipe = "sp-landfill-from-iron-ore"})
 table.insert(data.raw.technology["landfill"].effects, {type = "unlock-recipe", recipe = "sp-landfill-from-sand"})
 
+table.insert(data.raw.technology["steel-processing"].effects, {type = "unlock-recipe", recipe = "sp-steel-sheet"})
 table.insert(data.raw.technology["steel-processing"].effects, {type = "unlock-recipe", recipe = "sp-steel-beam"})
 data.raw.technology["steel-processing"].unit = {
   count = 5,
