@@ -1,22 +1,4 @@
-
 data:extend({
-  -- MARK: Resource Category
-  {
-    type = "resource-category",
-    name = "sp-kr-quarry",  -- #ForRegEx# - resource-category
-  },
-  {
-    type = "resource-category",
-    name = "sp-core",  -- #ForRegEx# - resource-category
-  },
-
-  -- MARK: Fuel Category
-  {
-    type = "fuel-category",
-    name = "sp-kr-antimatter-fuel",  -- #ForRegEx# - fuel-category
-  },
-
-  -- MARK: Recipe Category
   -- Used in stabilizer charging station
   {
     type = "recipe-category",

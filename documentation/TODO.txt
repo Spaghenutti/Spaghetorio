@@ -1,3 +1,7 @@
+Upgrade Setup
+- linter
+- split into content into smaller files
+
 TODO for 0.4.0
 
 New items
