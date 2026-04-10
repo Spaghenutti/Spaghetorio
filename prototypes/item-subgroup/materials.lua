@@ -1,12 +1,5 @@
 data:extend({
   {
-    type = "item-group",
-    name = "sp-materials",  -- #ForRegEx# - item-group
-    order = "b",
-    icon = "__space-age__/graphics/technology/tungsten-steel.png",
-    icon_size = 256,
-  },
-  {
     type = "item-subgroup",
     name = "sp-raw-material",  -- #ForRegEx# - item-subgroup
     group = "sp-materials",

@@ -21,7 +21,8 @@ data.raw["autoplace-control"]["sulfuric_acid_geyser"].order = "c[sulfuric-acid-g
 -- MARK: Building changes
 table.insert(data.raw["assembling-machine"]["electromagnetic-plant"].crafting_categories, "sp-manufacturing-electronics")
 
-
+data.raw.item["biolab"].order = "l3-[biolab]"
+data.raw.item["biolab"].subgroup = "sp-laboratory"
 data.raw.lab["biolab"].inputs = {
   "automation-science-pack",
   "logistic-science-pack",

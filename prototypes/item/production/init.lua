@@ -1,0 +1,6 @@
+require("energy")
+require("extraction-machine")
+require("smelting-machine")
+require("production-machine")
+require("laboratory")
+require("module")

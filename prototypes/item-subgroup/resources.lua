@@ -1,12 +1,5 @@
 data:extend({
   {
-    type = "item-group",
-    name = "sp-resources",  -- #ForRegEx# - item-group
-    order = "a",
-    icon =  "__Spaghetorio__/graphics/icons/zircon.png",
-    icon_size = 64,
-  },
-  {
     type = "item-subgroup",
     name = "sp-vulcanic-rock",  -- #ForRegEx# - item-subgroup
     group = "sp-resources",

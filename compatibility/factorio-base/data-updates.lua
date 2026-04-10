@@ -13,7 +13,8 @@ table.insert(data.raw["furnace"]["electric-furnace"].crafting_categories, "sp-tu
 
 table.insert(data.raw["assembling-machine"]["centrifuge"].crafting_categories, "sp-high-energy-physics")
 
-
+data.raw.item["lab"].order = "l1-[lab]"
+data.raw.item["lab"].subgroup = "sp-laboratory"
 data.raw.lab["lab"].inputs = {
   "automation-science-pack",
   "logistic-science-pack",

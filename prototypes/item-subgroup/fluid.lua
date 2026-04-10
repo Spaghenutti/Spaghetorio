@@ -1,13 +1,5 @@
 data:extend({
   {
-    type = "item-group",
-    name = "fluids",
-    order = "i",
-    icon = "__base__/graphics/item-group/fluids.png",
-    icon_size = 128,
-    icon_mipmaps = 2
-  },
-  {
     type = "item-subgroup",
     name = "sp-liquid-metal",  -- #ForRegEx# - item-subgroup
     group = "fluids",

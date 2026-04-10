@@ -1,12 +1,4 @@
 data:extend({
-  {
-    type = "item-group",
-    name = "intermediate-products",
-    order = "c",
-    order_in_recipe = "0",
-    icon = "__Spaghetorio__/graphics/icons/heavy-gearbox.png",
-    icon_size = 64,
-  },
   -- mechanical-component are used where a force is applied
   {
     type = "item-subgroup",

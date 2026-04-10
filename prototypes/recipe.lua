@@ -1,6 +1,5 @@
 
 local util = require("data-util")
--- local recycling_util = require("__quality__.prototypes.recycling")
 
 data:extend({
   ------------------------------------------------------------------------------

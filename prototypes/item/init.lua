@@ -1,0 +1,11 @@
+require("resources.init")
+require("materials.init")
+require("intermediate-products.init")
+require("logistics.init")
+require("production.init")
+require("space.init")
+require("science-products.init")
+require("biology.init")
+require("combat.init")
+
+require("other")

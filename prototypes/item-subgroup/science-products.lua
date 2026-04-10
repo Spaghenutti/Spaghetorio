@@ -1,13 +1,5 @@
 data:extend({
   {
-    type = "item-group",
-    name = "sp-science-products",  -- #ForRegEx# - item-group
-    order = "g",
-    icon = "__base__/graphics/icons/automation-science-pack.png",
-    icon_size = 64,
-    icon_mipmaps = 2
-  },
-  {
     type = "item-subgroup",
     name = "sp-science-pack",  -- #ForRegEx# - item-subgroup
     group = "sp-science-products",

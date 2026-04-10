@@ -1,12 +1,5 @@
 data:extend({
   {
-    type = "item-group",
-    name = "space",
-    order = "f",
-    icon = "__space-age__/graphics/item-group/space.png",
-    icon_size = 128,
-  },
-  {
     type = "item-subgroup",
     name = "space-interactors",
     group = "space",

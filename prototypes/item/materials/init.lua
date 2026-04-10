@@ -1,0 +1,7 @@
+require("raw-material")
+require("alloy")
+require("ceramic-material")
+require("chemical-product")
+require("advanced-raw-material")
+require("alien-compound")
+require("acroproduct")
