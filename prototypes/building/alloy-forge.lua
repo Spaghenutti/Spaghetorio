@@ -173,7 +173,7 @@ data:extend({
       -- "metallurgy-or-assembling",
       "sp-alloy-smelting"
     },
-    crafting_speed = 6,
+    crafting_speed = 8,
     energy_source =
     {
       type = "electric",
