@@ -11,6 +11,67 @@ New items
 + i steel-sheet
   + recipe
   + uses
+- Intermediates
+  - mechanical-components-set
+    + bolts
+    + spring
+    - nuts
+      - add uses
+    - washers - unterlagsscheiben
+      - add uses
+    - rivets - niet
+      - add uses
+  - structureal-components-set
+    + machined-parts
+    + aluminum-frame
+    + iron-stick
+    - mounting-bracket
+      - add uses
+    - rubber-pads
+      - add uses
+  - production-components-set
+    + gears
+    + ball-bearing
+    - bearing
+      - use in simple engine
+      - add uses
+    + shaft-sleeves
+      - use in motors and engines
+    + roller-chains
+      - use in red belts
+    + sprockets
+      - use in red belts
+    + coupling
+      - use in motors and engines
+  - fluid-handling-components-set
+    + copper-tube
+    + flange
+    - seal
+      - machined-parts
+      - spring
+      - o-ring - currently it exists as seal
+    + filter
+  - electrical-components-set
+    + capacitor
+    + coil
+    + resistor
+    + diode
+    + transistor
+    + (vacuum-tube)
+  - electrostatic-precipitator
+  - destiller
+  - thermal-regulator
+  - pressure-sensor (from aluminum, copper and silicon)
+  - rectifier
+  - voltage filter
+  - voltage regulator
+  - potentiometer
+  - Semiconductors
+    - photoacid-generator
+    - wafer
+  - xray-tube
+  - control-linkage - connects circuits to mechanical systems
+- Add more cryostabalized alloys for metals that exist as powder
 
 New Icons
 - cubit
@@ -201,21 +262,6 @@ TODO for 0.4.3
     - Aetherium – A rare essence that bends space and time.
 
 Items:
-  - Add more cryostabalized alloys for metals that exist as powder
-  - Intermediates
-    - bearing
-    - electrostatic-precipitator
-    - destiller
-    - thermal-regulator
-    - pressure-sensor (from aluminum, copper and silicon)
-    - rectifier
-    - voltage filter
-    - voltage regulator
-    - potentiometer
-    - Semiconductors
-      - photoacid-generator
-      - wafer
-    - xray-tube
   - Advanced intermediates
     - quantized-matter
     - polarized-matter

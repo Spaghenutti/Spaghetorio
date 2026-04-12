@@ -11,6 +11,16 @@ data:extend({
   },
   {
     type = "item",
+    name = "sp-roller-chain",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/roller-chain.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "sp-intermediate-product",
+    order = "[roller-chain]",
+    stack_size = 50
+  },
+  {
+    type = "item",
     name = "sp-diamond-saw",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/diamond-saw.png",
     icon_size = 64,
@@ -38,6 +48,16 @@ data:extend({
     subgroup = "sp-intermediate-product",
     order = "bearing-[heavy-bearing]",
     stack_size = 50
+  },
+  {
+    type = "item",
+    name = "sp-roller-chain",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/roller-chain.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-intermediate-product",
+    order = "gearbox-[roller-chain]",
+    stack_size = 500
   },
   {
     type = "item",
@@ -131,6 +151,16 @@ data:extend({
   },
   {
     type = "item",
+    name = "sp-seal",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/seal.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-intermediate-product",
+    order = "pressure-[seal]",
+    stack_size = 50
+  },
+  {
+    type = "item",
     name = "sp-gyroscope",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/gyroscope.png",
     icon_size = 64,
@@ -217,12 +247,22 @@ data:extend({
   },
   {
     type = "item",
+    name = "sp-coupling",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/coupling.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "sp-intermediate-product",
+    order = "electricmagnetic-2-[coupling]",
+    stack_size = 50
+  },
+  {
+    type = "item",
     name = "sp-magnetic-coupling",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/magnetic-coupling.png",
     icon_size = 64,
     icon_mipmaps = 4,
     subgroup = "sp-intermediate-product",
-    order = "electricmagnetic-[magnetic-coupling]",
+    order = "electricmagnetic-2-[magnetic-coupling]",
     stack_size = 50
   },
   {

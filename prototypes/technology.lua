@@ -61,6 +61,22 @@ data:extend({
       },
       {
         type = "unlock-recipe",
+        recipe = "sp-nuts"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-rivets"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-washers"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-mounting-bracket"
+      },
+      {
+        type = "unlock-recipe",
         recipe = "sp-machined-parts"
       },
       {
@@ -245,6 +261,30 @@ data:extend({
     },
     unit = {
       count = 15,
+      ingredients = {
+        {"automation-science-pack", 1}
+      },
+      time = 30
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-roller-chains-and-sprockets",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghetorio__/graphics/hr-icons/roller-chain.png",
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-roller-chain"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-sprocket"
+      }
+    },
+    prerequisites = {"steel-processing"},
+    unit = {
+      count = 50,
       ingredients = {
         {"automation-science-pack", 1}
       },
@@ -5631,6 +5671,14 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "sp-rubber"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-rubber-pad",
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-o-ring",
       },
       {
         type = "unlock-recipe",

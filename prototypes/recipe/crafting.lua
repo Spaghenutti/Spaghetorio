@@ -106,6 +106,34 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "sp-sprocket",  -- #ForRegEx# - recipe
+    category = "crafting",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 2,
+    ingredients = {
+      {type = "item", name = "steel-plate", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-sprocket", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-roller-chain",  -- #ForRegEx# - recipe
+    category = "crafting",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 2.5,
+    ingredients = {
+      {type = "item", name = "sp-steel-sheet", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-roller-chain", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
     name = "sp-copper-tube",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
@@ -183,6 +211,66 @@ data:extend({
   },
   {
     type = "recipe",
+    name = "sp-nuts",  -- #ForRegEx# - recipe
+    icon_size = 64,
+    category = "crafting",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 1.5,
+    ingredients = {
+      {type = "item", name = "iron-plate", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-nuts", amount = 4}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-rivets",  -- #ForRegEx# - recipe
+    icon_size = 64,
+    category = "crafting",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 1.5,
+    ingredients = {
+      {type = "item", name = "iron-stick", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-rivets", amount = 4}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-washers",  -- #ForRegEx# - recipe
+    icon_size = 64,
+    category = "crafting",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 2,
+    ingredients = {
+      {type = "item", name = "iron-plate", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-washers", amount = 5}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-mounting-bracket",  -- #ForRegEx# - recipe
+    icon_size = 64,
+    category = "crafting",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 1.5,
+    ingredients = {
+      {type = "item", name = "iron-plate", amount = 2}
+    },
+    results = {
+      {type = "item", name = "sp-mounting-bracket", amount = 3}
+    }
+  },
+  {
+    type = "recipe",
     name = "sp-machined-parts",  -- #ForRegEx# - recipe
     icon_size = 64,
     category = "crafting",
@@ -243,6 +331,7 @@ data:extend({
       {type = "item", name = "sp-steel-gear-wheel", amount = 3},
       {type = "item", name = "sp-bronze-rod", amount = 1},
       {type = "item", name = "electronic-circuit", amount = 1},
+      {type = "item", name = "sp-machined-parts", amount = 2},
     },
     results = {
       {type = "item", name = "sp-automation-core", amount = 1}
@@ -265,7 +354,21 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-seal",  -- #ForRegEx# - recipe
+    name = "sp-bearing",  -- #ForRegEx# - recipe
+    category = "crafting",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 1.5,
+    ingredients = {
+      {type = "item", name = "sp-bronze-rod", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-bearing", amount = 1}
+    },
+  },
+  {
+    type = "recipe",
+    name = "sp-rubber-pad",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
     allow_productivity = true,
@@ -274,7 +377,37 @@ data:extend({
       {type = "item", name = "sp-rubber", amount = 1},
     },
     results = {
-      {type = "item", name = "sp-seal", amount = 2}
+      {type = "item", name = "sp-rubber-pad", amount = 2}
+    },
+  },
+  {
+    type = "recipe",
+    name = "sp-o-ring",  -- #ForRegEx# - recipe
+    category = "crafting",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 1,
+    ingredients = {
+      {type = "item", name = "sp-rubber", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-o-ring", amount = 2}
+    },
+  },
+  {
+    type = "recipe",
+    name = "sp-seal",  -- #ForRegEx# - recipe
+    category = "crafting",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 1,
+    ingredients = {
+      {type = "item", name = "sp-o-ring", amount = 1},
+      {type = "item", name = "sp-spring", amount = 1},
+      {type = "item", name = "sp-machined-parts", amount = 1},
+    },
+    results = {
+      {type = "item", name = "sp-seal", amount = 1}
     },
   },
   {
@@ -335,6 +468,20 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-flange", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-shaft-sleeve",  -- #ForRegEx# - recipe
+    category = "crafting",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 1.5,
+    ingredients = {
+      {type = "item", name = "sp-stainless-steel", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-shaft-sleeve", amount = 1}
     }
   },
   {
@@ -723,6 +870,7 @@ data:extend({
       {type = "item", name = "sp-bolts", amount = 8},
       {type = "item", name = "sp-connecting-rod", amount = 6},
       {type = "item", name = "sp-spring", amount = 12},
+      {type = "item", name = "sp-shaft-sleeve", amount = 4},
       {type = "item", name = "sp-machined-parts", amount = 8}
     },
     results = {

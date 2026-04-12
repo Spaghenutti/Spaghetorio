@@ -81,8 +81,10 @@ data.raw.technology["automation"].research_trigger = {
   count = 1
 }
 
+table.insert(data.raw.technology["engine"].effects, {type = "unlock-recipe", recipe = "sp-bearing"})
 data.raw.technology["engine"].prerequisites = {
   "sp-steel-machining",
+  "sp-roller-chains-and-sprockets"
 }
 data.raw.technology["engine"].unit.ingredients = {
   {"automation-science-pack", 1},
@@ -191,6 +193,7 @@ table.insert(data.raw.technology["logistics"].prerequisites, "sp-kr-automation-c
 table.insert(data.raw.technology["logistics-2"].effects, {type = "unlock-recipe", recipe = "sp-kr-fast-loader"})
 table.insert(data.raw.technology["logistics-2"].prerequisites, "sp-aluminum-machining")
 table.insert(data.raw.technology["logistics-2"].prerequisites, "electronics")
+table.insert(data.raw.technology["logistics-2"].prerequisites, "sp-roller-chains-and-sprockets")
 
 table.insert(data.raw.technology["logistics-3"].effects, {type = "unlock-recipe", recipe = "sp-kr-express-loader"})
 data.raw.technology["logistics-3"].prerequisites = {
@@ -213,6 +216,7 @@ data.raw.technology["logistics-3"].unit.ingredients = {
 table.insert(data.raw.technology["railway"].prerequisites, "sp-steel-wheel")
 table.insert(data.raw.technology["railway"].prerequisites, "sp-geological-science-pack-1")
 table.insert(data.raw.technology["railway"].effects, {type = "unlock-recipe", recipe = "sp-train-bogie"})
+table.insert(data.raw.technology["railway"].effects, {type = "unlock-recipe", recipe = "sp-shaft-sleeve"})
 data.raw.technology["railway"].unit.ingredients = {
   {"automation-science-pack", 1},
   {"logistic-science-pack", 1},
@@ -531,9 +535,11 @@ data.raw.technology["lubricant"].unit.ingredients = {
 
 -- "car"
 table.insert(data.raw.technology["automobilism"].effects, {type = "unlock-recipe", recipe = "sp-differential"})
+table.insert(data.raw.technology["automobilism"].effects, {type = "unlock-recipe", recipe = "sp-coupling"})
 data.raw.technology["automobilism"].prerequisites = {
   "sp-rubber",
-  "sp-steel-wheel"
+  "sp-steel-wheel",
+  "lubricant"
 }
 data.raw.technology["automobilism"].unit.ingredients = {
   {"automation-science-pack", 1},

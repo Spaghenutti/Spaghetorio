@@ -3,6 +3,23 @@ local util = require("data-util")
 data:extend({
   {
     type = "recipe",
+    name = "sp-coupling",  -- #ForRegEx# - recipe
+    category = "crafting-with-fluid",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 2,
+    ingredients = {
+      {type = "item", name = "sp-o-ring", amount = 2},
+      {type = "item", name = "sp-brass", amount = 1},
+      {type = "item", name = "sp-machined-parts", amount = 2},
+      {type = "fluid", name = "lubricant", amount = 3}
+    },
+    results = {
+      {type = "item", name = "sp-coupling", amount = 1}
+    },
+  },
+  {
+    type = "recipe",
     name = "sp-ball-bearing",  -- #ForRegEx# - recipe
     category = "crafting-with-fluid",
     enabled = false,

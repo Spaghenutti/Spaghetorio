@@ -71,6 +71,16 @@ data:extend({
   },
   {
     type = "item",
+    name = "sp-sprocket",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/sprocket.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "sp-mechanical-component",
+    order = "gear-s9-[sprocket]",
+    stack_size = 200
+  },
+  {
+    type = "item",
     name = "sp-connecting-rod",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/connecting-rod.png",
     icon_size = 64,
@@ -96,6 +106,70 @@ data:extend({
   },
   {
     type = "item",
+    name = "sp-nuts",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/nuts-1.png",
+    icon_size = 64,
+    scale = 0.5,
+    pictures = {
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/nuts-1.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/nuts-2.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/nuts-3.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/nuts-4.png", scale = 0.5, mipmap_count = 4},
+    },
+    subgroup = "sp-mechanical-component",
+    order = "other-[nuts]",
+    stack_size = 400
+  },
+  {
+    type = "item",
+    name = "sp-washers",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/washers-1.png",
+    icon_size = 64,
+    scale = 0.5,
+    pictures = {
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/washers-1.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/washers-2.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/washers-3.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/washers-4.png", scale = 0.5, mipmap_count = 4},
+    },
+    subgroup = "sp-mechanical-component",
+    order = "other-[washers]",
+    stack_size = 400
+  },
+  {
+    type = "item",
+    name = "sp-rivets",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/rivets-1.png",
+    icon_size = 64,
+    scale = 0.5,
+    pictures = {
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/rivets-1.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/rivets-2.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/rivets-3.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/rivets-4.png", scale = 0.5, mipmap_count = 4},
+    },
+    subgroup = "sp-mechanical-component",
+    order = "other-[rivets]",
+    stack_size = 400
+  },
+  {
+    type = "item",
+    name = "sp-mounting-bracket",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/mounting-bracket-1.png",
+    icon_size = 64,
+    scale = 0.5,
+    pictures = {
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/mounting-bracket-1.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/mounting-bracket-2.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/mounting-bracket-3.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/mounting-bracket-4.png", scale = 0.5, mipmap_count = 4},
+    },
+    subgroup = "sp-mechanical-component",
+    order = "frame-2-[mounting-bracket]",
+    stack_size = 400
+  },
+  {
+    type = "item",
     name = "sp-machined-parts",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/machined-parts-4.png",
     icon_size = 64,
@@ -107,7 +181,7 @@ data:extend({
       {size = 64, filename = "__Spaghetorio__/graphics/icons/machined-parts-4.png", scale = 0.5, mipmap_count = 4},
     },
     subgroup = "sp-mechanical-component",
-    order = "frame-2-[machined-parts]",
+    order = "frame-3-[machined-parts]",
     stack_size = 200
   },
   {
@@ -123,7 +197,7 @@ data:extend({
     },
     scale = 0.5,
     subgroup = "sp-mechanical-component",
-    order = "frame-3-[titanium-frame]",
+    order = "frame-4-[titanium-frame]",
     stack_size = 100
   },
   {
@@ -139,7 +213,7 @@ data:extend({
     },
     scale = 0.5,
     subgroup = "sp-mechanical-component",
-    order = "frame-4-[micro-frame]",
+    order = "frame-5-[micro-frame]",
     stack_size = 50
   },
   {
@@ -220,12 +294,42 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-seal",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/icons/seal.png",
+    name = "sp-o-ring",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/o-ring.png",
     icon_size = 64,
     scale = 0.5,
     subgroup = "sp-mechanical-component",
-    order = "other-z-[seal]",
+    order = "other-z-[o-ring]",
+    stack_size = 200
+  },
+  {
+    type = "item",
+    name = "sp-bearing",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/bearing.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "sp-mechanical-component",
+    order = "other-z-[bearing]",
+    stack_size = 200
+  },
+  {
+    type = "item",
+    name = "sp-rubber-pad",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/rubber-pad.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "sp-mechanical-component",
+    order = "other-z-[rubber-pad]",
+    stack_size = 200
+  },
+  {
+    type = "item",
+    name = "sp-shaft-sleeve",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/shaft-sleeve.png",
+    icon_size = 64,
+    scale = 0.5,
+    subgroup = "sp-mechanical-component",
+    order = "other-z-[shaft-sleeve]",
     stack_size = 200
   },
   {
