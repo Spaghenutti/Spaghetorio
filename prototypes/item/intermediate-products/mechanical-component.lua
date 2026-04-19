@@ -170,6 +170,22 @@ data:extend({
   },
   {
     type = "item",
+    name = "sp-machine-housing",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/machine-housing-1.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    pictures = {
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/machine-housing-1.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/machine-housing-2.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/machine-housing-3.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/machine-housing-4.png", scale = 0.5, mipmap_count = 4}
+    },
+    subgroup = "sp-intermediate-product",
+    order = "frame-3-[machine-housing]",
+    stack_size = 50
+  },
+  {
+    type = "item",
     name = "sp-machined-parts",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/icons/machined-parts-4.png",
     icon_size = 64,
@@ -181,7 +197,7 @@ data:extend({
       {size = 64, filename = "__Spaghetorio__/graphics/icons/machined-parts-4.png", scale = 0.5, mipmap_count = 4},
     },
     subgroup = "sp-mechanical-component",
-    order = "frame-3-[machined-parts]",
+    order = "frame-4-[machined-parts]",
     stack_size = 200
   },
   {
@@ -197,7 +213,7 @@ data:extend({
     },
     scale = 0.5,
     subgroup = "sp-mechanical-component",
-    order = "frame-4-[titanium-frame]",
+    order = "frame-5-[titanium-frame]",
     stack_size = 100
   },
   {
@@ -213,7 +229,7 @@ data:extend({
     },
     scale = 0.5,
     subgroup = "sp-mechanical-component",
-    order = "frame-5-[micro-frame]",
+    order = "frame-6-[micro-frame]",
     stack_size = 50
   },
   {

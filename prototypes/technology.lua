@@ -262,8 +262,12 @@ data:extend({
     type = "technology",
     name = "sp-steel-machining",  -- #ForRegEx# - technology
     icon_size = 256,
-    icon = "__Spaghetorio__/graphics/hr-icons/connecting-rod.png",
+    icon = "__Spaghetorio__/graphics/hr-icons/machine-housing-3.png",
     effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-machine-housing"
+      },
       {
         type = "unlock-recipe",
         recipe = "sp-connecting-rod"

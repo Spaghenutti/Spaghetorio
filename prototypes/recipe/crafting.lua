@@ -426,7 +426,7 @@ data:extend({
       {type = "item", name = "sp-steel-gear-wheel", amount = 3},
       {type = "item", name = "sp-bronze-rod", amount = 1},
       {type = "item", name = "electronic-circuit", amount = 1},
-      {type = "item", name = "sp-machined-parts", amount = 2},
+      {type = "item", name = "sp-machine-housing", amount = 1},
     },
     results = {
       {type = "item", name = "sp-automation-core", amount = 1}
@@ -606,6 +606,20 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-steel-gear-wheel", amount = 2}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-machine-housing",  -- #ForRegEx# - recipe
+    category = "crafting",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 3,
+    ingredients = {
+      {type = "item", name = "steel-plate", amount = 4},
+    },
+    results = {
+      {type = "item", name = "sp-machine-housing", amount = 1}
     }
   },
   {

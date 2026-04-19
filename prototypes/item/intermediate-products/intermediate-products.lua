@@ -57,7 +57,7 @@ data:extend({
     icon_mipmaps = 4,
     subgroup = "sp-intermediate-product",
     order = "gearbox-[roller-chain]",
-    stack_size = 500
+    stack_size = 50
   },
   {
     type = "item",
@@ -67,7 +67,7 @@ data:extend({
     icon_mipmaps = 4,
     subgroup = "sp-intermediate-product",
     order = "gearbox-[gearbox]",
-    stack_size = 500
+    stack_size = 50
   },
   {
     type = "item",

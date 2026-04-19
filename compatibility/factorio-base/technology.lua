@@ -83,6 +83,10 @@ data.raw.technology["automation"].research_trigger = {
   count = 1
 }
 
+data.raw.technology["electric-mining-drill"].prerequisites = {
+  "steel-processing",
+}
+
 data.raw.technology["engine"].prerequisites = {
   "sp-steel-machining",
   "sp-roller-chains-and-sprockets"
@@ -97,7 +101,7 @@ data.raw.technology["gun-turret"].research_trigger =
 {
   type = "craft-item",
   item = "electric-engine-unit",
-  count = 15
+  count = 5
 }
 
 table.insert(data.raw.technology["bulk-inserter"].prerequisites, "production-science-pack")
@@ -189,7 +193,18 @@ data.raw.technology["military-science-pack"].effects = {
 }
 
 table.insert(data.raw.technology["logistics"].effects, {type = "unlock-recipe", recipe = "sp-kr-loader"})
-table.insert(data.raw.technology["logistics"].prerequisites, "sp-kr-automation-core")
+table.insert(data.raw.technology["logistics"].prerequisites, "electric-engine")
+data.raw.technology["logistics"].prerequisites = {
+  "automation"
+}
+data.raw.technology["logistics"].unit = nil
+data.raw.technology["logistics"].research_trigger =
+{
+  type = "craft-item",
+  item = "sp-mechanical-components-set",
+  count = 1
+}
+
 
 table.insert(data.raw.technology["logistics-2"].effects, {type = "unlock-recipe", recipe = "sp-kr-fast-loader"})
 table.insert(data.raw.technology["logistics-2"].prerequisites, "sp-aluminum-machining")
@@ -255,8 +270,7 @@ data.raw.technology["advanced-material-processing-2"].unit.ingredients = {
 
 table.insert(data.raw.technology["fluid-handling"].effects, {type = "unlock-recipe", recipe = "sp-valve"})
 data.raw.technology["fluid-handling"].prerequisites = {
-  "sp-basic-alloy",
-  "steel-processing",
+  "sp-steel-machining",
 }
 data.raw.technology["fluid-handling"].unit.ingredients = {
   {"automation-science-pack", 1}
