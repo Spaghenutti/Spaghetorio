@@ -422,7 +422,7 @@ data.raw.recipe["metallic-asteroid-crushing"].energy_required = 8
 data.raw.recipe["metallic-asteroid-crushing"].results = {
   {type = "item", name = "iron-ore", amount = 20},
   {type = "item", name = "sp-titanium-ore", amount = 12},
-  {type = "item", name = "sp-cobalt-ore", amount = 8},
+  {type = "item", name = "sp-cobaltite", amount = 8},
   {type = "item", name = "sp-rhodium", amount = 1},
   {type = "item", name = "metallic-asteroid-chunk", probability = 0.2, amount = 1},
 }

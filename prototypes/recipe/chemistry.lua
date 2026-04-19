@@ -455,7 +455,7 @@ data:extend({
     allow_productivity = true,
     energy_required = 2,
     ingredients = {
-      {type = "item", name = "sp-mercury-ore", amount = 3},
+      {type = "item", name = "sp-cinnabar", amount = 3},
     },
     results = {
       {type = "fluid", name = "sp-mercury", amount = 5},
@@ -518,7 +518,7 @@ data:extend({
     allow_productivity = true,
     energy_required = 5,
     ingredients = {
-      {type = "item", name = "sp-boron-ore", amount = 10},
+      {type = "item", name = "sp-kernite", amount = 10},
       {type = "fluid", name = "sp-phosphoric-acid", amount = 20},
     },
     results = {
@@ -848,7 +848,7 @@ data:extend({
     allow_productivity = true,
     energy_required = 2,
     ingredients = {
-      {type = "item", name = "sp-crushed-molybdenum-ore", amount = 3},
+      {type = "item", name = "sp-crushed-molybdate", amount = 3},
       {type = "fluid", name = "ammoniacal-solution", amount = 5},
     },
     results = {
@@ -1258,7 +1258,7 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-platinum-group-metal-concentrate", amount = 1},
-      {type = "item", name = "sp-enriched-iron", probability = 0.12, amount = 1}
+      {type = "item", name = "sp-enriched-iron-ore", probability = 0.12, amount = 1}
     }
   },
   {

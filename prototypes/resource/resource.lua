@@ -280,9 +280,9 @@ data:extend({
   -- MARK: Basic resource
   basic_resource(
     {
-      name = "aluminum-ore",  -- #ForRegEx# - resource
-      icon = "__Spaghetorio__/graphics/icons/aluminum-ore-1.png",
-      stages_filename = "__Spaghetorio__/graphics/resource/aluminum-ore-patches.png",
+      name = "bauxite",  -- #ForRegEx# - resource
+      icon = "__Spaghetorio__/graphics/icons/bauxite-1.png",
+      stages_filename = "__Spaghetorio__/graphics/resource/bauxite-patches.png",
       order = "g",
       mining_time = 0.8,
       map_color = {r=1.0, g=0.2, b=0.2},
@@ -295,9 +295,9 @@ data:extend({
   ),
   basic_resource(
     {
-      name = "barium-ore",  -- #ForRegEx# - resource
-      icon = "__Spaghetorio__/graphics/icons/barium-ore-3.png",
-      stages_filename = "__Spaghetorio__/graphics/resource/barium-ore-patches.png",
+      name = "barite",  -- #ForRegEx# - resource
+      icon = "__Spaghetorio__/graphics/icons/barite-3.png",
+      stages_filename = "__Spaghetorio__/graphics/resource/barite-patches.png",
       order = "a",
       mining_time = 2,
       map_color = {r=1.0, g=1.0, b=0.8},
@@ -312,9 +312,9 @@ data:extend({
   ),
   basic_resource(
     {
-      name = "boron-ore",  -- #ForRegEx# - resource
-      icon = "__Spaghetorio__/graphics/icons/boron-ore-1.png",
-      stages_filename = "__Spaghetorio__/graphics/resource/boron-ore-patches.png",
+      name = "kernite",  -- #ForRegEx# - resource
+      icon = "__Spaghetorio__/graphics/icons/kernite-1.png",
+      stages_filename = "__Spaghetorio__/graphics/resource/kernite-patches.png",
       stages_size = 128,
       stages_scale = 0.5,
       order = "a",
@@ -346,9 +346,9 @@ data:extend({
   ),
   basic_resource(
     {
-      name = "cobalt-ore",  -- #ForRegEx# - resource
-      icon = "__Spaghetorio__/graphics/icons/cobalt-ore-1.png",
-      stages_filename = "__Spaghetorio__/graphics/resource/cobalt-ore-patches.png",
+      name = "cobaltite",  -- #ForRegEx# - resource
+      icon = "__Spaghetorio__/graphics/icons/cobaltite-1.png",
+      stages_filename = "__Spaghetorio__/graphics/resource/cobaltite-patches.png",
       order = "d",
       mining_time = 3.5,
       map_color = {r=0.5, g=1, b=0.6},
@@ -363,9 +363,9 @@ data:extend({
   ),
   basic_resource(
     {
-      name = "magnesium-ore",  -- #ForRegEx# - resource
-      icon = "__Spaghetorio__/graphics/icons/magnesium-ore-1.png",
-      stages_filename = "__Spaghetorio__/graphics/resource/magnesium-ore-patches.png",
+      name = "magnesite",  -- #ForRegEx# - resource
+      icon = "__Spaghetorio__/graphics/icons/magnesite-1.png",
+      stages_filename = "__Spaghetorio__/graphics/resource/magnesite-patches.png",
       order = "d",
       mining_time = 1.25,
       map_color = {r=0.75, g=0.75, b=0.75},
@@ -380,9 +380,9 @@ data:extend({
   ),
   basic_resource(
     {
-      name = "manganese-ore",  -- #ForRegEx# - resource
-      icon = "__Spaghetorio__/graphics/icons/manganese-ore-1.png",
-      stages_filename = "__Spaghetorio__/graphics/resource/manganese-ore-patches.png",
+      name = "pyrolusite",  -- #ForRegEx# - resource
+      icon = "__Spaghetorio__/graphics/icons/pyrolusite-1.png",
+      stages_filename = "__Spaghetorio__/graphics/resource/pyrolusite-patches.png",
       stages_size = 128,
       stages_scale = 0.5,
       order = "d",
@@ -399,9 +399,9 @@ data:extend({
   ),
   basic_resource(
     {
-      name = "mercury-ore",  -- #ForRegEx# - resource
-      icon = "__Spaghetorio__/graphics/icons/mercury-ore-1.png",
-      stages_filename = "__Spaghetorio__/graphics/resource/mercury-ore-patches.png",
+      name = "cinnabar",  -- #ForRegEx# - resource
+      icon = "__Spaghetorio__/graphics/icons/cinnabar-1.png",
+      stages_filename = "__Spaghetorio__/graphics/resource/cinnabar-patches.png",
       order = "q",
       mining_time = 5,
       map_color = {r=0.35, g=0.15, b=0.05},
@@ -416,9 +416,9 @@ data:extend({
   ),
   basic_resource(
     {
-      name = "molybdenum-ore",  -- #ForRegEx# - resource
-      icon = "__Spaghetorio__/graphics/icons/molybdenum-ore-1.png",
-      stages_filename = "__Spaghetorio__/graphics/resource/molybdenum-ore-patches.png",
+      name = "molybdate",  -- #ForRegEx# - resource
+      icon = "__Spaghetorio__/graphics/icons/molybdate-1.png",
+      stages_filename = "__Spaghetorio__/graphics/resource/molybdate-patches.png",
       stages_size = 128,
       stages_scale = 0.5,
       order = "d",
@@ -435,9 +435,9 @@ data:extend({
   ),
   basic_resource(
     {
-      name = "nickel-ore",  -- #ForRegEx# - resource
-      icon = "__Spaghetorio__/graphics/icons/nickel-ore-1.png",
-      stages_filename = "__Spaghetorio__/graphics/resource/nickel-ore-patches.png",
+      name = "garnierite",  -- #ForRegEx# - resource
+      icon = "__Spaghetorio__/graphics/icons/garnierite-1.png",
+      stages_filename = "__Spaghetorio__/graphics/resource/garnierite-patches.png",
       order = "b",
       mining_time = 1,
       map_color = {r=0.3, g=0.9, b=0.61},
@@ -453,9 +453,9 @@ data:extend({
   ),
   basic_resource(
     {
-      name = "potassium-ore",  -- #ForRegEx# - resource
-      icon = "__Spaghetorio__/graphics/icons/potassium-ore-1.png",
-      stages_filename = "__Spaghetorio__/graphics/resource/potassium-ore-patches.png",
+      name = "sylvite",  -- #ForRegEx# - resource
+      icon = "__Spaghetorio__/graphics/icons/sylvite-1.png",
+      stages_filename = "__Spaghetorio__/graphics/resource/sylvite-patches.png",
       stages_size = 128,
       stages_scale = 0.5,
       order = "p",
@@ -524,9 +524,9 @@ data:extend({
   ),
   basic_resource(
     {
-      name = "vanadium-ore",  -- #ForRegEx# - resource
-      icon = "__Spaghetorio__/graphics/icons/vanadium-ore-1.png",
-      stages_filename = "__Spaghetorio__/graphics/resource/vanadium-ore-patches.png",
+      name = "vanadinite",  -- #ForRegEx# - resource
+      icon = "__Spaghetorio__/graphics/icons/vanadinite-1.png",
+      stages_filename = "__Spaghetorio__/graphics/resource/vanadinite-patches.png",
       stages_size = 128,
       stages_scale = 0.5,
       order = "o",
@@ -763,21 +763,21 @@ data.raw.resource["sp-imersite"].stages_effect = {
 }
 
 -- MARK: Add resources to nauvis
-data.raw.planet["nauvis"].map_gen_settings.autoplace_settings.entity.settings["sp-aluminum-ore"] = {}
-data.raw.planet["nauvis"].map_gen_settings.autoplace_settings.entity.settings["sp-barium-ore"] = {}
-data.raw.planet["nauvis"].map_gen_settings.autoplace_settings.entity.settings["sp-boron-ore"] = {}
+data.raw.planet["nauvis"].map_gen_settings.autoplace_settings.entity.settings["sp-bauxite"] = {}
+data.raw.planet["nauvis"].map_gen_settings.autoplace_settings.entity.settings["sp-barite"] = {}
+data.raw.planet["nauvis"].map_gen_settings.autoplace_settings.entity.settings["sp-kernite"] = {}
 data.raw.planet["nauvis"].map_gen_settings.autoplace_settings.entity.settings["sp-chromite"] = {}
-data.raw.planet["nauvis"].map_gen_settings.autoplace_settings.entity.settings["sp-cobalt-ore"] = {}
-data.raw.planet["nauvis"].map_gen_settings.autoplace_settings.entity.settings["sp-magnesium-ore"] = {}
-data.raw.planet["nauvis"].map_gen_settings.autoplace_settings.entity.settings["sp-manganese-ore"] = {}
-data.raw.planet["nauvis"].map_gen_settings.autoplace_settings.entity.settings["sp-mercury-ore"] = {}
-data.raw.planet["nauvis"].map_gen_settings.autoplace_settings.entity.settings["sp-molybdenum-ore"] = {}
-data.raw.planet["nauvis"].map_gen_settings.autoplace_settings.entity.settings["sp-nickel-ore"] = {}
-data.raw.planet["nauvis"].map_gen_settings.autoplace_settings.entity.settings["sp-potassium-ore"] = {}
+data.raw.planet["nauvis"].map_gen_settings.autoplace_settings.entity.settings["sp-cobaltite"] = {}
+data.raw.planet["nauvis"].map_gen_settings.autoplace_settings.entity.settings["sp-magnesite"] = {}
+data.raw.planet["nauvis"].map_gen_settings.autoplace_settings.entity.settings["sp-pyrolusite"] = {}
+data.raw.planet["nauvis"].map_gen_settings.autoplace_settings.entity.settings["sp-cinnabar"] = {}
+data.raw.planet["nauvis"].map_gen_settings.autoplace_settings.entity.settings["sp-molybdate"] = {}
+data.raw.planet["nauvis"].map_gen_settings.autoplace_settings.entity.settings["sp-garnierite"] = {}
+data.raw.planet["nauvis"].map_gen_settings.autoplace_settings.entity.settings["sp-sylvite"] = {}
 data.raw.planet["nauvis"].map_gen_settings.autoplace_settings.entity.settings["sp-stibnite"] = {}
 data.raw.planet["nauvis"].map_gen_settings.autoplace_settings.entity.settings["sp-tinstone"] = {}
 data.raw.planet["nauvis"].map_gen_settings.autoplace_settings.entity.settings["sp-titanium-ore"] = {}
-data.raw.planet["nauvis"].map_gen_settings.autoplace_settings.entity.settings["sp-vanadium-ore"] = {}
+data.raw.planet["nauvis"].map_gen_settings.autoplace_settings.entity.settings["sp-vanadinite"] = {}
 data.raw.planet["nauvis"].map_gen_settings.autoplace_settings.entity.settings["sp-zinc-ore"] = {}
 data.raw.planet["nauvis"].map_gen_settings.autoplace_settings.entity.settings["sp-zirconium-ore"] = {}
 

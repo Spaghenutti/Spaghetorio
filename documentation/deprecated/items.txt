@@ -1,5 +1,5 @@
 Al Aluminum
-	+ aluminum-ore (bauxite)
+	+ bauxite (bauxite)
 	+r alumina
 	+rg aluminum-sheet
 	-rg aluminum-ingot
@@ -28,7 +28,7 @@ Co Cobalt
   + cobalt-billet
 
 Ni Nickel
-  + nickel-ore (missing resource) (Fe,Ni)9S8
+  + garnierite (missing resource) (Fe,Ni)9S8
   +rg nickel-ingot
 
 Na Sodium
@@ -41,7 +41,7 @@ Cl Chlorine
   +rk chlorine (solved in water as liquid)
 
 Mg Magnesium
-  + magnesium-ore / dolomite (dolomite is calcined to magnesium oxide) https://www.britannica.com/technology/magnesium-processing
+  + magnesite / dolomite (dolomite is calcined to magnesium oxide) https://www.britannica.com/technology/magnesium-processing
   +r magnesium-chloride (extraction of Mg with electrolysis)
   +rg magnesium-slab
 

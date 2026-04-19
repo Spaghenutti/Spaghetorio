@@ -34,7 +34,7 @@ for y=-size, size do
 			ore=math.random(b*density-b*(density-8), b*density+b*(density-8))
 		end
 		if surface.get_tile(game.player.position.x+x, game.player.position.y+y).collides_with("ground-tile") then
-			surface.create_entity({name="sp-aluminum-ore", amount=ore, position={game.player.position.x+x, game.player.position.y+y}})
+			surface.create_entity({name="sp-bauxite", amount=ore, position={game.player.position.x+x, game.player.position.y+y}})
 		end
 	end
 end

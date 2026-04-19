@@ -17,8 +17,8 @@ data:extend({
     },
     results = {
       {type = "item", name = "iron-ore", probability = 0.5, amount = 2},
-      {type = "item", name = "sp-cobalt-ore", probability = 0.1, amount = 1},
-      {type = "item", name = "sp-manganese-ore", probability = 0.04, amount = 1},
+      {type = "item", name = "sp-cobaltite", probability = 0.1, amount = 1},
+      {type = "item", name = "sp-pyrolusite", probability = 0.04, amount = 1},
       {type = "fluid", name = "water", amount = 50}
     },
     crafting_machine_tint = {
@@ -75,8 +75,8 @@ data:extend({
       {type = "fluid", name = "sp-bleach", amount = 8}
     },
     results = {
-      {type = "item", name = "sp-aluminum-ore", probability = 0.5, amount = 2},
-      {type = "item", name = "sp-boron-ore", probability = 0.02, amount = 1},
+      {type = "item", name = "sp-bauxite", probability = 0.5, amount = 2},
+      {type = "item", name = "sp-kernite", probability = 0.02, amount = 1},
       {type = "item", name = "sp-silicon", probability = 0.1, amount = 1},
       {type = "fluid", name = "water", amount = 50}
     },
@@ -134,7 +134,7 @@ data:extend({
       {type = "fluid", name = "sp-bleach", amount = 10}
     },
     results = {
-      {type = "item", name = "sp-magnesium-ore", probability = 0.5, amount = 3},
+      {type = "item", name = "sp-magnesite", probability = 0.5, amount = 3},
       {type = "item", name = "lithium", probability = 0.1, amount = 1},
       {type = "item", name = "sp-yttrium", probability = 0.02, amount = 1},
       {type = "fluid", name = "water", amount = 50}
@@ -164,7 +164,7 @@ data:extend({
       {type = "item", name = "sp-sodium-molybdate", amount = 1}
     },
     results = {
-      {type = "item", name = "sp-nickel-ore", probability = 0.5, amount = 2},
+      {type = "item", name = "sp-garnierite", probability = 0.5, amount = 2},
       {type = "item", name = "sp-palladium", probability = 0.03, amount = 1},
       {type = "item", name = "sp-platinum", probability = 0.02, amount = 1},
       {type = "fluid", name = "water", amount = 50}

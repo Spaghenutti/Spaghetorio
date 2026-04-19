@@ -227,14 +227,14 @@ TODO for 0.3.14
       + casting into zinc plate
     + magnesium
       + melt from lava
-      + melt from magnesium ore with sulfuric acid with bad ratio
-      + melt from enriched magnesium ore with sulfuric acid with bad ratio  -- (unlock in enriched-resources)
+      + melt from magnesite with sulfuric acid with bad ratio
+      + melt from enriched magnesite with sulfuric acid with bad ratio  -- (unlock in enriched-resources)
       + casting into magnesium slab
     + nickel
       + melt from lava
-      + melt from nickel ore (also add as output molten iron)
-      + melt from crushed nickel ore (also add as output molten iron)
-      + melt from enriched nickel ore -- (unlock in enriched-resources)
+      + melt from garnierite (also add as output molten iron)
+      + melt from crushed garnierite (also add as output molten iron)
+      + melt from enriched garnierite -- (unlock in enriched-resources)
       + casting into nickel ingot
     + indium
       + melt from lava
@@ -401,16 +401,16 @@ TODO after alpha release:
 
 Factorio Space age
   - Add some new ores (note down how they are supposed to be processed)
-    + barium-ore
-      +t barium-ore + sulfuric-acid -> barium-sulfamate (chemistry)
+    + barite
+      +t barite + sulfuric-acid -> barium-sulfamate (chemistry)
       +t barium-sulfamate + carbon -> barium-sulfide (smelting)
       +t barium-sulfide -> barium-billet (smelting)
       +t barium-sulfide + oxygen -> drilling-fluid (fluid-filtration)
       +t barium-sulfide + carbon + oxygen -> barium-carbonate + sulfur (barium-carbonate used in glass and ceramics)
       + barium-billet + titanium-ingot -> barium-titanate (for electronic components like capacitors)
-      - barium-ore from acrocrystal
-    + mercury-ore
-      +t mercury-ore -> mercury + sulfur + stone
+      - barite from acrocrystal
+    + cinnabar
+      +t cinnabar -> mercury + sulfur + stone
       + used in relay
       - used as liquid metal coolant in breeder reactor
       - used in catalyst
@@ -422,17 +422,17 @@ Factorio Space age
       + copper + antimony-pillet -> copper-antimony (for bearings, solar cells and electronic layers)
       + add uses to antimony
       - stibnite from acrocrystal
-    + boron-ore (kernite)
-      +t boron-ore + phosphoric-acid -> sodium-borate (chemistry)
+    + kernite (kernite)
+      +t kernite + phosphoric-acid -> sodium-borate (chemistry)
       +t sodium-borate + chlorine -> boron-pillet + salt (chemistry)
       +t sodium-borate + water -> diborane (B2H6) (rocket fuel and used to produce high purity boron)
       +t boron-pillet + carbon -> boron-carbide (B4C) (abrasive materials, armor plating, and neutron radiation control)
       + boron-pillet + phosphorus -> boron-phosphide (BP) (High temperature semiconductor)
       + boron-pillet + silicon -> boron-silicade (B6Si) (High temperature semiconductor)
-      - boron-ore from acrocrystal
-    + cobalt-ore
-      +t cobalt-ore -> crushed-cobalt-ore + arsenic-trioxide (crushing)
-      +t cobalt-ore -> cobalt-oxide (smelting)
+      - kernite from acrocrystal
+    + cobaltite
+      +t cobaltite -> crushed-cobaltite + arsenic-trioxide (crushing)
+      +t cobaltite -> cobalt-oxide (smelting)
       +t cobalt-oxide + sulfuric-acid -> cobalt-sulfate (chemistry)
       +t cobalt-sulfate -> cobalt-billet
       +t 30% nickel + 70% cobalt -> nickel-cobalt (corrosion resistant)
@@ -444,19 +444,19 @@ Factorio Space age
       +t arsenic-trioxide + hydrogen -> arsen-pillet
       +t arsen-pillet + sulfur -> arsenic-sulfide (As2S3) (Used as a semiconductor material)
       +t arsen-pillet + iodine -> arsenic-iodide (AsI3) (Used in the synthesis of organic arsenic compounds and as a reagent in chemical analysis)
-      - cobalt-ore from acrocrystal
-    + molybdenum-ore
-      +t molybdenum-ore -> molybdenum-trioxide (smelting)
+      - cobaltite from acrocrystal
+    + molybdate
+      +t molybdate -> molybdenum-trioxide (smelting)
       +t molybdenum-trioxide -> molybdenum-pillet (smelting)
       + lead + molybdenum-pillet + oxygen -> lead-molybdate (PbMoO4) (for radiation measurement)
       + sodium + molybdenum-pillet + oxygen -> sodium-molybdate (Na2MoO4) (for water treatment)
-      - molybdenum-ore from acrocrystal
-    + manganese-ore
-      +t manganese-ore -> manganese-dioxide (smelting)
+      - molybdate from acrocrystal
+    + pyrolusite
+      +t pyrolusite -> manganese-dioxide (smelting)
       +t manganese-dioxide -> manganese-ingot (electrolysis)
       + manganese-ingot + chlorine -> manganese-chloride (MnCl2) (for battery cells)
       - check aluminum alloys that already exist in spaghetorio mod that might use manganese
-      - manganese-ore from acrocrystal
+      - pyrolusite from acrocrystal
     + iodine-brine
       +t iodine-brine + chlorine -> iodine-sludge
       +t iodine-sludge -> idonine
@@ -465,7 +465,7 @@ Factorio Space age
       +t lithium-oxide + hydrogen-chloride -> lithium-chloride + water
       +t lithium-chloride + sodium-hydroxide -> lithium
     + vanadium
-      +t vanadium-ore -> vanadium-pentoxide: used as a catalyst in the production of sulfuric acid and in the manufacturing of ceramics and glass.
+      +t vanadinite -> vanadium-pentoxide: used as a catalyst in the production of sulfuric acid and in the manufacturing of ceramics and glass.
       +t sodium-carbonate + vanadium-pentoxide + water -> vanadium-bearing-solution
       +t vanadium-bearing-solution -> ammonium-metavanadate (NH4VO3): Used in the preparation of other vanadium compounds and as a catalyst in organic synthesis.
       +t ammonium-metavanadate + sodium-hydroxide -> vanadium-plate
@@ -474,7 +474,7 @@ Factorio Space age
       + vanadium-aluminum (V-Al): used in aerospace
       + vanadium-steel: used in high-speed machinery
     + potassium
-      +t potassium-ore (sylvite (KCl) and carnallite (KMgCl3·6H2O)) + magnesium-chloride -> potassium-chloride (Used in fertilizers, as a salt substitute in food, and in medical treatments for potassium deficiency.)
+      +t sylvite (sylvite (KCl) and carnallite (KMgCl3·6H2O)) + magnesium-chloride -> potassium-chloride (Used in fertilizers, as a salt substitute in food, and in medical treatments for potassium deficiency.)
       +t potassium-chloride -> potassium-ingot
       + potassium-ingot + manganese-ingot + 100 water -> potassium-permanganate-solution (KMnO4): Used as a disinfectant, water treatment chemical, and in organic synthesis.
       + potassium-ingot + chromium-plate + 75 water -> potassium-dichromate-solution (K2Cr2O7): Used in tanning leather, as a corrosion inhibitor, and in the production of pigments.
@@ -537,7 +537,7 @@ Factorio Space age
     - separate base-products group into base-prwdoducts and base-materials
     - update subgroups
     - update orders
-  + fix resolution of potassium-ore, vanadium-ore and manganese-ore patches sprites
+  + fix resolution of sylvite, vanadinite and pyrolusite patches sprites
   + Add remaining hurricane buildings
   + remove catalyst items, recipes and technologies
   - remove all factorio alternative recipe chains for processing liquids on different planets
@@ -557,8 +557,8 @@ Factorio Space age
     + remove everything regarding limestone
   - ores
     + limestone as barium ore (baryt)
-    + tungsten ore as mercury ore (cinnabar)
-    + spodumene as cobalt ore (in cobalt ore traces of arsen are found)
+    + tungsten ore as cinnabar (cinnabar)
+    + spodumene as cobaltite (in cobaltite traces of arsen are found)
     + Add Cobalt
     + Add stibnite as ore
       - add crushed recipe
@@ -566,7 +566,7 @@ Factorio Space age
   - icons to fix
     - crushing coke
     - crushing coal
-    - crushing cobalt ore
+    - crushing cobaltite
     - tungsten ore crushing and enriching
     - raw rare metal processing
     - enriched rare metal processing
@@ -755,7 +755,7 @@ Items:
     - germanium
       - zinc-ore + sulfuric-acid -> germanium-oxide
       - crushed-zinc-ore + sulfuric-acid -> germanium-oxide
-      - enriched-zinc-ore + sulfuric-acid -> germanium-oxide
+      - enriched-zinc-ore-ore + sulfuric-acid -> germanium-oxide
       - germanium-oxide -> germanium-ingot
       - Germanium Dioxide (GeO2): Used in the production of optical fibers and infrared optics.
       - Germane (GeH4): Used in the semiconductor industry for the production of high-purity germanium crystals.

@@ -198,7 +198,7 @@ data:extend({
     allow_productivity = true,
     energy_required = 4,
     ingredients = {
-      {type = "item", name = "sp-barium-ore", amount = 3},
+      {type = "item", name = "sp-barite", amount = 3},
       {type = "fluid", name = "sulfuric-acid", amount = 5},
     },
     results = {
@@ -213,7 +213,7 @@ data:extend({
     allow_productivity = true,
     energy_required = 3,
     ingredients = {
-      {type = "item", name = "sp-potassium-ore", amount = 2},
+      {type = "item", name = "sp-sylvite", amount = 2},
       {type = "fluid", name = "sp-perchloric-acid", amount = 5},
     },
     results = {

@@ -3,8 +3,8 @@ local util = require("data-util")
 data:extend({
   {
     type = "recipe",
-    name = "sp-enriched-copper",  -- #ForRegEx# - recipe
-    icons = util.icon.create_enriching_recipe_icon(data.raw.item["copper-ore"], data.raw.item["sp-enriched-copper"]),
+    name = "sp-enriched-copper-ore",  -- #ForRegEx# - recipe
+    icons = util.icon.create_enriching_recipe_icon(data.raw.item["copper-ore"], data.raw.item["sp-enriched-copper-ore"]),
     icon_size = 64,
     mip_maps = 4,
     category = "sp-enriching-raw-resource",
@@ -18,8 +18,8 @@ data:extend({
       {type = "fluid", name = "water", amount = 50}
     },
     results = {
-      {type = "item", name = "sp-enriched-copper", amount = 7},
-      {type = "item", name = "sp-enriched-iron", probability = 0.1, amount = 1},
+      {type = "item", name = "sp-enriched-copper-ore", amount = 7},
+      {type = "item", name = "sp-enriched-iron-ore", probability = 0.1, amount = 1},
       {type = "fluid", name = "sp-dirty-water-with-copper", amount = 50}
     },
     crafting_machine_tint = {
@@ -31,8 +31,8 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-enriched-iron",  -- #ForRegEx# - recipe
-    icons = util.icon.create_enriching_recipe_icon(data.raw.item["iron-ore"], data.raw.item["sp-enriched-iron"]),
+    name = "sp-enriched-iron-ore",  -- #ForRegEx# - recipe
+    icons = util.icon.create_enriching_recipe_icon(data.raw.item["iron-ore"], data.raw.item["sp-enriched-iron-ore"]),
     icon_size = 64,
     mip_maps = 4,
     category = "sp-enriching-raw-resource",
@@ -46,7 +46,7 @@ data:extend({
       {type = "fluid", name = "water", amount = 50}
     },
     results = {
-      {type = "item", name = "sp-enriched-iron", amount = 8},
+      {type = "item", name = "sp-enriched-iron-ore", amount = 8},
       {type = "fluid", name = "sp-dirty-water-with-iron", amount = 50}
     },
     crafting_machine_tint = {
@@ -58,8 +58,8 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-enriched-aluminum",  -- #ForRegEx# - recipe
-    icons = util.icon.create_enriching_recipe_icon(data.raw.item["sp-aluminum-ore"], data.raw.item["sp-enriched-aluminum"]),
+    name = "sp-enriched-bauxite",  -- #ForRegEx# - recipe
+    icons = util.icon.create_enriching_recipe_icon(data.raw.item["sp-bauxite"], data.raw.item["sp-enriched-bauxite"]),
     icon_size = 64,
     mip_maps = 4,
     category = "sp-enriching-raw-resource",
@@ -68,12 +68,12 @@ data:extend({
     allow_productivity = true,
     energy_required = 2,
     ingredients = {
-      {type = "item", name = "sp-aluminum-ore", amount = 10},
+      {type = "item", name = "sp-bauxite", amount = 10},
       {type = "fluid", name = "sp-chlorine", amount = 2},
       {type = "fluid", name = "water", amount = 50}
     },
     results = {
-      {type = "item", name = "sp-enriched-aluminum", amount = 6},
+      {type = "item", name = "sp-enriched-bauxite", amount = 6},
       {type = "fluid", name = "sp-dirty-water-with-aluminum", amount = 50}
     },
     crafting_machine_tint = {
@@ -113,8 +113,8 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-enriched-magnesium",  -- #ForRegEx# - recipe
-    icons = util.icon.create_enriching_recipe_icon(data.raw.item["sp-magnesium-ore"], data.raw.item["sp-enriched-magnesium"]),
+    name = "sp-enriched-magnesite",  -- #ForRegEx# - recipe
+    icons = util.icon.create_enriching_recipe_icon(data.raw.item["sp-magnesite"], data.raw.item["sp-enriched-magnesite"]),
     icon_size = 64,
     mip_maps = 4,
     category = "sp-enriching-raw-resource",
@@ -123,13 +123,13 @@ data:extend({
     allow_productivity = true,
     energy_required = 2,
     ingredients = {
-      {type = "item", name = "sp-magnesium-ore", amount = 10},
+      {type = "item", name = "sp-magnesite", amount = 10},
       {type = "fluid", name = "sp-liquid-sodium", amount = 1},
       {type = "fluid", name = "water", amount = 20}
     },
     results = {
       {type = "item", name = "sp-salt", probability = 0.5, amount = 1},
-      {type = "item", name = "sp-enriched-magnesium", amount = 5},
+      {type = "item", name = "sp-enriched-magnesite", amount = 5},
       {type = "fluid", name = "sp-dirty-water-with-magnesium", amount = 20}
     },
     crafting_machine_tint = {
@@ -141,8 +141,8 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-enriched-nickel",  -- #ForRegEx# - recipe
-    icons = util.icon.create_enriching_recipe_icon(data.raw.item["sp-nickel-ore"], data.raw.item["sp-enriched-nickel"]),
+    name = "sp-enriched-garnierite",  -- #ForRegEx# - recipe
+    icons = util.icon.create_enriching_recipe_icon(data.raw.item["sp-garnierite"], data.raw.item["sp-enriched-garnierite"]),
     icon_size = 64,
     mip_maps = 4,
     category = "sp-enriching-raw-resource",
@@ -151,13 +151,13 @@ data:extend({
     allow_productivity = true,
     energy_required = 2,
     ingredients = {
-      {type = "item", name = "sp-nickel-ore", amount = 8},
+      {type = "item", name = "sp-garnierite", amount = 8},
       {type = "fluid", name = "sulfuric-acid", amount = 2},
       {type = "fluid", name = "water", amount = 20}
     },
     results = {
       {type = "item", name = "iron-ore", amount = 6},
-      {type = "item", name = "sp-enriched-nickel", amount = 5},
+      {type = "item", name = "sp-enriched-garnierite", amount = 5},
       {type = "fluid", name = "sp-dirty-water-with-nickel", amount = 20}
     },
     crafting_machine_tint = {
@@ -197,8 +197,8 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-enriched-titanium",  -- #ForRegEx# - recipe
-    icons = util.icon.create_enriching_recipe_icon(data.raw.item["sp-titanium-ore"], data.raw.item["sp-enriched-titanium"]),
+    name = "sp-enriched-titanium-ore",  -- #ForRegEx# - recipe
+    icons = util.icon.create_enriching_recipe_icon(data.raw.item["sp-titanium-ore"], data.raw.item["sp-enriched-titanium-ore"]),
     icon_size = 64,
     mip_maps = 4,
     category = "sp-enriching-raw-resource",
@@ -212,7 +212,7 @@ data:extend({
       {type = "fluid", name = "water", amount = 50}
     },
     results = {
-      {type = "item", name = "sp-enriched-titanium", amount = 6},
+      {type = "item", name = "sp-enriched-titanium-ore", amount = 6},
       {type = "item", name = "sp-zirconium-ore", amount = 1},
       {type = "fluid", name = "sp-dirty-water-with-titanium", amount = 50}
     },
@@ -253,8 +253,8 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-enriched-zinc",  -- #ForRegEx# - recipe
-    icons = util.icon.create_enriching_recipe_icon(data.raw.item["sp-zinc-ore"], data.raw.item["sp-enriched-zinc"]),
+    name = "sp-enriched-zinc-ore",  -- #ForRegEx# - recipe
+    icons = util.icon.create_enriching_recipe_icon(data.raw.item["sp-zinc-ore"], data.raw.item["sp-enriched-zinc-ore"]),
     icon_size = 64,
     mip_maps = 4,
     category = "sp-enriching-raw-resource",
@@ -268,7 +268,7 @@ data:extend({
       {type = "fluid", name = "water", amount = 40}
     },
     results = {
-      {type = "item", name = "sp-enriched-zinc", amount = 7},
+      {type = "item", name = "sp-enriched-zinc-ore", amount = 7},
       {type = "fluid", name = "sp-dirty-water-with-zinc", amount = 40}
     },
     crafting_machine_tint = {

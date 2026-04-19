@@ -58,9 +58,9 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-crushed-aluminum-smelting",  -- #ForRegEx# - recipe
+    name = "sp-crushed-bauxite-smelting",  -- #ForRegEx# - recipe
     icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/alumina.png", 64,
-                                         "__Spaghetorio__/graphics/icons/crushed-aluminum-ore-1.png", 64),
+                                         "__Spaghetorio__/graphics/icons/crushed-bauxite-1.png", 64),
     category = "sp-crushed-smelting",
     subgroup = "sp-processed-resource",
     enabled = false,
@@ -68,7 +68,7 @@ data:extend({
     energy_required = 12,
     hide_from_player_crafting = true,
     ingredients = {
-      {type = "item", name = "sp-crushed-aluminum-ore", amount = 12}
+      {type = "item", name = "sp-crushed-bauxite", amount = 12}
     },
     results = {
       {type = "item", name = "sp-alumina", amount = 10}
@@ -95,9 +95,9 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-crushed-cobalt-smelting",  -- #ForRegEx# - recipe
+    name = "sp-crushed-cobaltite-smelting",  -- #ForRegEx# - recipe
     icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/cobalt-oxide.png", 64,
-                                         "__Spaghetorio__/graphics/icons/crushed-cobalt-ore-4.png", 64),
+                                         "__Spaghetorio__/graphics/icons/crushed-cobaltite-4.png", 64),
     category = "sp-crushed-smelting",
     subgroup = "sp-processed-resource",
     enabled = false,
@@ -105,7 +105,7 @@ data:extend({
     energy_required = 10,
     hide_from_player_crafting = true,
     ingredients = {
-      {type = "item", name = "sp-crushed-cobalt-ore", amount = 8},
+      {type = "item", name = "sp-crushed-cobaltite", amount = 8},
     },
     results = {
       {type = "item", name = "sp-cobalt-oxide", amount = 12}
@@ -113,9 +113,9 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-crushed-magnesium-smelting",  -- #ForRegEx# - recipe
+    name = "sp-crushed-magnesite-smelting",  -- #ForRegEx# - recipe
     icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/magnesium-chloride.png", 64,
-                                         "__Spaghetorio__/graphics/icons/crushed-magnesium-ore-1.png", 64),
+                                         "__Spaghetorio__/graphics/icons/crushed-magnesite-1.png", 64),
     category = "sp-crushed-smelting",
     subgroup = "sp-processed-resource",
     enabled = false,
@@ -123,7 +123,7 @@ data:extend({
     energy_required = 10,
     hide_from_player_crafting = true,
     ingredients = {
-      {type = "item", name = "sp-crushed-magnesium-ore", amount = 12}
+      {type = "item", name = "sp-crushed-magnesite", amount = 12}
     },
     results = {
       {type = "item", name = "sp-magnesium-chloride", amount = 5}
@@ -131,9 +131,9 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-crushed-nickel-smelting",  -- #ForRegEx# - recipe
+    name = "sp-crushed-garnierite-smelting",  -- #ForRegEx# - recipe
     icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/nickel-ingot.png", 64,
-                                         "__Spaghetorio__/graphics/icons/crushed-nickel-ore-1.png", 64),
+                                         "__Spaghetorio__/graphics/icons/crushed-garnierite-1.png", 64),
     category = "sp-crushed-smelting",
     subgroup = "sp-raw-material",
     enabled = false,
@@ -141,7 +141,7 @@ data:extend({
     energy_required = 16,
     hide_from_player_crafting = true,
     ingredients = {
-      {type = "item", name = "sp-crushed-nickel-ore", amount = 10}
+      {type = "item", name = "sp-crushed-garnierite", amount = 10}
     },
     results = {
       {type = "item", name = "sp-nickel-ingot", amount = 8},
@@ -240,9 +240,9 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-crushed-molybdenum-smelting",  -- #ForRegEx# - recipe
+    name = "sp-crushed-molybdate-smelting",  -- #ForRegEx# - recipe
     icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/molybdenum-trioxide.png", 64,
-                                         "__Spaghetorio__/graphics/icons/crushed-molybdenum-ore-1.png", 64),
+                                         "__Spaghetorio__/graphics/icons/crushed-molybdate-1.png", 64),
     category = "sp-crushed-smelting",
     subgroup = "sp-raw-material",
     enabled = false,
@@ -250,7 +250,7 @@ data:extend({
     energy_required = 14,
     hide_from_player_crafting = true,
     ingredients = {
-      {type = "item", name = "sp-crushed-molybdenum-ore", amount = 7}
+      {type = "item", name = "sp-crushed-molybdate", amount = 7}
     },
     results = {
       {type = "item", name = "sp-molybdenum-trioxide", amount = 6}

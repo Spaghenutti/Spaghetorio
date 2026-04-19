@@ -7,19 +7,19 @@ data.raw["map-gen-presets"]["default"]["spaghetorio-default"] = {
     autoplace_controls =
     {
       -- normal resource
-      ["sp-aluminum-ore"] =
+      ["sp-bauxite"] =
       {
         frequency = 0.17,
         size = 6,
         richness = 6
       },
-      ["sp-barium-ore"] =
+      ["sp-barite"] =
       {
         frequency = 0.17,
         size = 6,
         richness = 6
       },
-      ["sp-boron-ore"] =
+      ["sp-kernite"] =
       {
         frequency = 0.17,
         size = 6,
@@ -43,7 +43,7 @@ data.raw["map-gen-presets"]["default"]["spaghetorio-default"] = {
         size = 6,
         richness = 6
       },
-      ["sp-cobalt-ore"] =
+      ["sp-cobaltite"] =
       {
         frequency = 0.17,
         size = 6,
@@ -67,37 +67,37 @@ data.raw["map-gen-presets"]["default"]["spaghetorio-default"] = {
         size = 6,
         richness = 6
       },
-      ["sp-magnesium-ore"] =
+      ["sp-magnesite"] =
       {
         frequency = 0.17,
         size = 6,
         richness = 6
       },
-      ["sp-manganese-ore"] =
+      ["sp-pyrolusite"] =
       {
         frequency = 0.17,
         size = 6,
         richness = 6
       },
-      ["sp-mercury-ore"] =
+      ["sp-cinnabar"] =
       {
         frequency = 0.17,
         size = 6,
         richness = 6
       },
-      ["sp-molybdenum-ore"] =
+      ["sp-molybdate"] =
       {
         frequency = 0.17,
         size = 6,
         richness = 6
       },
-      ["sp-nickel-ore"] =
+      ["sp-garnierite"] =
       {
         frequency = 0.17,
         size = 6,
         richness = 6
       },
-      ["sp-potassium-ore"] =
+      ["sp-sylvite"] =
       {
         frequency = 0.17,
         size = 6,
@@ -127,7 +127,7 @@ data.raw["map-gen-presets"]["default"]["spaghetorio-default"] = {
         size = 6,
         richness = 6
       },
-      ["sp-vanadium-ore"] =
+      ["sp-vanadinite"] =
       {
         frequency = 0.17,
         size = 6,

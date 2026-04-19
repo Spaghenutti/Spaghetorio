@@ -4557,7 +4557,7 @@ data:extend({
       {type = "item", name = "iron-ore", amount = 11},
       {type = "item", name = "sp-acrocrystal", probability = 0.99, amount = 1},
       {type = "item", name = "sp-chromite", probability = 0.2, amount = 1},
-      {type = "item", name = "sp-nickel-ore", probability = 0.15, amount = 1}
+      {type = "item", name = "sp-garnierite", probability = 0.15, amount = 1}
       -- could create sp-cobalt item
     }
   },
@@ -4587,7 +4587,7 @@ data:extend({
       {type = "item", name = "copper-ore", amount = 11},
       {type = "item", name = "sp-acrocrystal", probability = 0.99, amount = 1},
       {type = "item", name = "sp-zinc-ore", probability = 0.15, amount = 1},
-      {type = "item", name = "sp-nickel-ore", probability = 0.15, amount = 1},
+      {type = "item", name = "sp-garnierite", probability = 0.15, amount = 1},
       {type = "item", name = "sp-silver", probability = 0.05, amount = 1},
       {type = "item", name = "sp-gold", probability = 0.03, amount = 1},
       -- could create sp-cobalt item
@@ -4657,8 +4657,8 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-aluminum-ore-from-acrocrystal",  -- #ForRegEx# - recipe
-    icons = util.icon.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/aluminum-ore-1.png",
+    name = "sp-bauxite-from-acrocrystal",  -- #ForRegEx# - recipe
+    icons = util.icon.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/bauxite-1.png",
                                                          "__Spaghetorio__/graphics/icons/acrocrystal.png"),
     icon_size = 64,
     mip_maps = 4,
@@ -4674,11 +4674,11 @@ data:extend({
     },
     allow_decomposition = false,
     ingredients = {
-      {type = "item", name = "sp-aluminum-ore", amount = 12},
+      {type = "item", name = "sp-bauxite", amount = 12},
       {type = "item", name = "sp-acrocrystal", amount = 1}
     },
     results = {
-      {type = "item", name = "sp-aluminum-ore", amount = 14},
+      {type = "item", name = "sp-bauxite", amount = 14},
       {type = "item", name = "sp-acrocrystal", probability = 0.99, amount = 1},
       {type = "item", name = "sp-phosphorus", probability = 0.1, amount = 1},
       {type = "item", name = "carbon", probability = 0.05, amount = 1},
@@ -4775,8 +4775,8 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-magnesium-ore-from-acrocrystal",  -- #ForRegEx# - recipe
-    icons = util.icon.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/magnesium-ore-1.png",
+    name = "sp-magnesite-from-acrocrystal",  -- #ForRegEx# - recipe
+    icons = util.icon.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/magnesite-1.png",
                                                          "__Spaghetorio__/graphics/icons/acrocrystal.png"),
     icon_size = 64,
     mip_maps = 4,
@@ -4792,11 +4792,11 @@ data:extend({
     },
     allow_decomposition = false,
     ingredients = {
-      {type = "item", name = "sp-magnesium-ore", amount = 10},
+      {type = "item", name = "sp-magnesite", amount = 10},
       {type = "item", name = "sp-acrocrystal", amount = 1}
     },
     results = {
-      {type = "item", name = "sp-magnesium-ore", amount = 11},
+      {type = "item", name = "sp-magnesite", amount = 11},
       {type = "item", name = "sp-acrocrystal", probability = 0.99, amount = 1},
       {type = "item", name = "calcite", probability = 0.25, amount = 1},
       {type = "item", name = "sp-sodium", probability = 0.20, amount = 1},
@@ -4805,8 +4805,8 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-nickel-ore-from-acrocrystal",  -- #ForRegEx# - recipe
-    icons = util.icon.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/nickel-ore-1.png",
+    name = "sp-garnierite-from-acrocrystal",  -- #ForRegEx# - recipe
+    icons = util.icon.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/garnierite-1.png",
                                                          "__Spaghetorio__/graphics/icons/acrocrystal.png"),
     icon_size = 64,
     mip_maps = 4,
@@ -4822,11 +4822,11 @@ data:extend({
     },
     allow_decomposition = false,
     ingredients = {
-      {type = "item", name = "sp-nickel-ore", amount = 8},
+      {type = "item", name = "sp-garnierite", amount = 8},
       {type = "item", name = "sp-acrocrystal", amount = 1}
     },
     results = {
-      {type = "item", name = "sp-nickel-ore", amount = 10},
+      {type = "item", name = "sp-garnierite", amount = 10},
       {type = "item", name = "sp-acrocrystal", probability = 0.98, amount = 1},
       {type = "item", name = "iron-ore", probability = 0.3, amount = 1},
       {type = "item", name = "copper-ore", probability = 0.5, amount = 1},
@@ -4919,7 +4919,7 @@ data:extend({
       {type = "item", name = "sp-zinc-ore", amount = 9},
       {type = "item", name = "sp-acrocrystal", probability = 0.98, amount = 1},
       {type = "item", name = "copper-ore", probability = 0.2, amount = 1},
-      {type = "item", name = "sp-nickel-ore", probability = 0.1, amount = 1}
+      {type = "item", name = "sp-garnierite", probability = 0.1, amount = 1}
     }
   },
   {
@@ -5017,7 +5017,7 @@ data:extend({
       {type = "item", name = "sp-silicon", amount = 6},
       {type = "item", name = "carbon", probability = 0.3, amount = 1},
       {type = "item", name = "sp-phosphorus", probability = 0.2, amount = 1},
-      {type = "item", name = "sp-aluminum-ore", probability = 0.2, amount = 1},
+      {type = "item", name = "sp-bauxite", probability = 0.2, amount = 1},
       {type = "item", name = "sp-tinstone", probability = 0.08, amount = 1},
     },
     allow_quality = false
@@ -5384,7 +5384,7 @@ data:extend({
       {type = "item", name = "sp-palladium", amount = 5},
       {type = "item", name = "sp-silver", probability = 0.4, amount = 1},
       {type = "item", name = "sp-platinum", probability = 0.12, amount = 1},
-      {type = "item", name = "sp-nickel-ore", probability = 0.12, amount = 1},
+      {type = "item", name = "sp-garnierite", probability = 0.12, amount = 1},
     }
   },
   {
@@ -5414,7 +5414,7 @@ data:extend({
       {type = "item", name = "sp-phosphorus", amount = 8},
       {type = "item", name = "sp-antimony-pillet", probability = 0.24, amount = 1},
       {type = "item", name = "sulfur", probability = 0.12, amount = 1},
-      {type = "item", name = "sp-aluminum-ore", probability = 0.08, amount = 1},
+      {type = "item", name = "sp-bauxite", probability = 0.08, amount = 1},
       {type = "item", name = "sp-silicon", probability = 0.02, amount = 1},
       {type = "fluid", name = "sp-nitrogen", amount = 10},
     }
@@ -5447,7 +5447,7 @@ data:extend({
       {type = "item", name = "sp-iridium", probability = 0.12, amount = 1},
       {type = "item", name = "sp-gold", probability = 0.16, amount = 1},
       {type = "item", name = "sp-palladium", probability = 0.1, amount = 1},
-      {type = "item", name = "sp-nickel-ore", probability = 0.08, amount = 1}
+      {type = "item", name = "sp-garnierite", probability = 0.08, amount = 1}
     }
   },
   {
@@ -5639,8 +5639,8 @@ data:extend({
   ------------------------------------------------------------------------------
   {
     type = "recipe",
-    name = "sp-enriched-aluminum-from-acromatter",  -- #ForRegEx# - recipe
-    icons = util.icon.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/enriched-aluminum-1.png",
+    name = "sp-enriched-bauxite-from-acromatter",  -- #ForRegEx# - recipe
+    icons = util.icon.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/enriched-bauxite-1.png",
                                                          "__Spaghetorio__/graphics/icons/acromatter.png"),
     icon_size = 64,
     mip_maps = 4,
@@ -5656,11 +5656,11 @@ data:extend({
     },
     allow_decomposition = false,
     ingredients = {
-      {type = "item", name = "sp-enriched-aluminum", amount = 12},
+      {type = "item", name = "sp-enriched-bauxite", amount = 12},
       {type = "item", name = "sp-acromatter", amount = 1}
     },
     results = {
-      {type = "item", name = "sp-enriched-aluminum", amount = 14},
+      {type = "item", name = "sp-enriched-bauxite", amount = 14},
       {type = "item", name = "sp-acromatter", probability = 0.99, amount = 1},
       {type = "item", name = "sp-phosphorus", probability = 0.1, amount = 2},
       {type = "item", name = "carbon", probability = 0.05, amount = 2},
@@ -5698,8 +5698,8 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-enriched-titanium-from-acromatter",  -- #ForRegEx# - recipe
-    icons = util.icon.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/enriched-titanium-1.png",
+    name = "sp-enriched-titanium-ore-from-acromatter",  -- #ForRegEx# - recipe
+    icons = util.icon.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/enriched-titanium-ore-1.png",
                                                          "__Spaghetorio__/graphics/icons/acromatter.png"),
     icon_size = 64,
     mip_maps = 4,
@@ -5715,11 +5715,11 @@ data:extend({
     allow_productivity = true,
     energy_required = 10,
     ingredients = {
-      {type = "item", name = "sp-enriched-titanium", amount = 10},
+      {type = "item", name = "sp-enriched-titanium-ore", amount = 10},
       {type = "item", name = "sp-acromatter", amount = 1}
     },
     results = {
-      {type = "item", name = "sp-enriched-titanium", amount = 11},
+      {type = "item", name = "sp-enriched-titanium-ore", amount = 11},
       {type = "item", name = "sp-acromatter", probability = 0.99, amount = 1},
       {type = "item", name = "sp-chromite", probability = 0.15, amount = 2},
       {type = "item", name = "sp-zircon", probability = 0.25, amount = 2}
@@ -5727,8 +5727,8 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-enriched-magnesium-from-acromatter",  -- #ForRegEx# - recipe
-    icons = util.icon.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/enriched-magnesium-1.png",
+    name = "sp-enriched-magnesite-from-acromatter",  -- #ForRegEx# - recipe
+    icons = util.icon.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/enriched-magnesite-1.png",
                                                          "__Spaghetorio__/graphics/icons/acromatter.png"),
     icon_size = 64,
     mip_maps = 4,
@@ -5744,11 +5744,11 @@ data:extend({
     },
     allow_decomposition = false,
     ingredients = {
-      {type = "item", name = "sp-enriched-magnesium", amount = 10},
+      {type = "item", name = "sp-enriched-magnesite", amount = 10},
       {type = "item", name = "sp-acromatter", amount = 1}
     },
     results = {
-      {type = "item", name = "sp-enriched-magnesium", amount = 11},
+      {type = "item", name = "sp-enriched-magnesite", amount = 11},
       {type = "item", name = "sp-acromatter", probability = 0.99, amount = 1},
       {type = "item", name = "calcite", probability = 0.25, amount = 2},
       {type = "item", name = "sp-sodium", probability = 0.20, amount = 2},
@@ -5757,8 +5757,8 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-enriched-nickel-from-acromatter",  -- #ForRegEx# - recipe
-    icons = util.icon.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/enriched-nickel-1.png",
+    name = "sp-enriched-garnierite-from-acromatter",  -- #ForRegEx# - recipe
+    icons = util.icon.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/enriched-garnierite-1.png",
                                                          "__Spaghetorio__/graphics/icons/acromatter.png"),
     icon_size = 64,
     mip_maps = 4,
@@ -5774,11 +5774,11 @@ data:extend({
     },
     allow_decomposition = false,
     ingredients = {
-      {type = "item", name = "sp-enriched-nickel", amount = 8},
+      {type = "item", name = "sp-enriched-garnierite", amount = 8},
       {type = "item", name = "sp-acromatter", amount = 1}
     },
     results = {
-      {type = "item", name = "sp-enriched-nickel", amount = 10},
+      {type = "item", name = "sp-enriched-garnierite", amount = 10},
       {type = "item", name = "sp-acromatter", probability = 0.98, amount = 1},
       {type = "item", name = "iron-ore", probability = 0.3, amount = 2},
       {type = "item", name = "copper-ore", probability = 0.5, amount = 2},
@@ -5847,8 +5847,8 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-enriched-zinc-from-acromatter",  -- #ForRegEx# - recipe
-    icons = util.icon.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/enriched-zinc-1.png",
+    name = "sp-enriched-zinc-ore-from-acromatter",  -- #ForRegEx# - recipe
+    icons = util.icon.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/icons/enriched-zinc-ore-1.png",
                                                          "__Spaghetorio__/graphics/icons/acromatter.png"),
     icon_size = 64,
     mip_maps = 4,
@@ -5864,19 +5864,19 @@ data:extend({
     },
     allow_decomposition = false,
     ingredients = {
-      {type = "item", name = "sp-enriched-zinc", amount = 8},
+      {type = "item", name = "sp-enriched-zinc-ore", amount = 8},
       {type = "item", name = "sp-acromatter", amount = 1}
     },
     results = {
-      {type = "item", name = "sp-enriched-zinc", amount = 9},
+      {type = "item", name = "sp-enriched-zinc-ore", amount = 9},
       {type = "item", name = "sp-acromatter", probability = 0.98, amount = 1},
       {type = "item", name = "copper-ore", probability = 0.2, amount = 2},
-      {type = "item", name = "sp-nickel-ore", probability = 0.1, amount = 2}
+      {type = "item", name = "sp-garnierite", probability = 0.1, amount = 2}
     }
   },
   {
     type = "recipe",
-    name = "sp-enriched-iron-from-acromatter",  -- #ForRegEx# - recipe
+    name = "sp-enriched-iron-ore-from-acromatter",  -- #ForRegEx# - recipe
     icons = util.icon.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/krastorio/icons/items-with-variations/enriched-iron/enriched-iron.png",
                                                          "__Spaghetorio__/graphics/icons/acromatter.png"),
     icon_size = 64,
@@ -5893,20 +5893,20 @@ data:extend({
     },
     allow_decomposition = false,
     ingredients = {
-      {type = "item", name = "sp-enriched-iron", amount = 10},
+      {type = "item", name = "sp-enriched-iron-ore", amount = 10},
       {type = "item", name = "sp-acromatter", amount = 1}
     },
     results = {
-      {type = "item", name = "sp-enriched-iron", amount = 11},
+      {type = "item", name = "sp-enriched-iron-ore", amount = 11},
       {type = "item", name = "sp-acromatter", probability = 0.99, amount = 1},
       {type = "item", name = "sp-chromite", probability = 0.2, amount = 2},
-      {type = "item", name = "sp-nickel-ore", probability = 0.15, amount = 2}
+      {type = "item", name = "sp-garnierite", probability = 0.15, amount = 2}
       -- could create sp-cobalt item
     }
   },
   {
     type = "recipe",
-    name = "sp-enriched-copper-from-acromatter",  -- #ForRegEx# - recipe
+    name = "sp-enriched-copper-ore-from-acromatter",  -- #ForRegEx# - recipe
     icons = util.icon.create_acroproduct_conversion_icon("__Spaghetorio__/graphics/krastorio/icons/items-with-variations/enriched-copper/enriched-copper.png",
                                                          "__Spaghetorio__/graphics/icons/acromatter.png"),
     icon_size = 64,
@@ -5923,14 +5923,14 @@ data:extend({
     },
     allow_decomposition = false,
     ingredients = {
-      {type = "item", name = "sp-enriched-copper", amount = 10},
+      {type = "item", name = "sp-enriched-copper-ore", amount = 10},
       {type = "item", name = "sp-acromatter", amount = 1}
     },
     results = {
-      {type = "item", name = "sp-enriched-copper", amount = 11},
+      {type = "item", name = "sp-enriched-copper-ore", amount = 11},
       {type = "item", name = "sp-acromatter", probability = 0.99, amount = 1},
       {type = "item", name = "sp-zinc-ore", probability = 0.15, amount = 2},
-      {type = "item", name = "sp-nickel-ore", probability = 0.15, amount = 2},
+      {type = "item", name = "sp-garnierite", probability = 0.15, amount = 2},
       {type = "item", name = "sp-silver", probability = 0.05, amount = 2},
       {type = "item", name = "sp-gold", probability = 0.03, amount = 2}
       -- could create sp-cobalt item

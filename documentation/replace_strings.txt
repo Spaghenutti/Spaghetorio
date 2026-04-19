@@ -105,11 +105,11 @@ __SpaghetorioGraphics1__/graphics/buildings/
 "sp-graphite"
 "carbon"
 
-"enriched-copper"
-"sp-enriched-copper"
+"enriched-copper-ore"
+"sp-enriched-copper-ore"
 
-"enriched-iron"
-"sp-enriched-iron"
+"enriched-iron-ore"
+"sp-enriched-iron-ore"
 
 "coke"
 "sp-coke"

@@ -141,7 +141,7 @@ Items:
     - germanium
       - zinc-ore + sulfuric-acid -> germanium-oxide
       - crushed-zinc-ore + sulfuric-acid -> germanium-oxide
-      - enriched-zinc-ore + sulfuric-acid -> germanium-oxide
+      - enriched-zinc-ore-ore + sulfuric-acid -> germanium-oxide
       - germanium-oxide -> germanium-ingot
       - Germanium Dioxide (GeO2): Used in the production of optical fibers and infrared optics.
       - Germane (GeH4): Used in the semiconductor industry for the production of high-purity germanium crystals.

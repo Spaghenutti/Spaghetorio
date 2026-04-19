@@ -3,8 +3,8 @@ local util = require("data-util")
 data:extend({
   {
     type = "recipe",
-    name = "sp-crushing-aluminum-ore",  -- #ForRegEx# - recipe
-    icons = util.icon.create_crushing_recipe_icon(data.raw.item["sp-aluminum-ore"]),
+    name = "sp-crushing-bauxite",  -- #ForRegEx# - recipe
+    icons = util.icon.create_crushing_recipe_icon(data.raw.item["sp-bauxite"]),
     icon_size = 64,
     category = "crushing",
     subgroup = "sp-crushed-resource-recipe",
@@ -12,11 +12,11 @@ data:extend({
     allow_productivity = true,
     energy_required = 2,
     ingredients = {
-      {type = "item", name = "sp-aluminum-ore", amount = 3},
+      {type = "item", name = "sp-bauxite", amount = 3},
     },
     results = {
       {type = "item", name = "sp-sand", amount = 1},
-      {type = "item", name = "sp-crushed-aluminum-ore", amount = 3},
+      {type = "item", name = "sp-crushed-bauxite", amount = 3},
       {type = "item", name = "sp-crushed-iron-ore", probability = 0.2, amount = 1}
     }
   },
@@ -37,7 +37,7 @@ data:extend({
     results = {
       {type = "item", name = "sp-sand", amount = 1},
       {type = "item", name = "sp-crushed-chromite", amount = 3},
-      {type = "item", name = "sp-crushed-aluminum-ore", probability = 0.1, amount = 1},
+      {type = "item", name = "sp-crushed-bauxite", probability = 0.1, amount = 1},
       {type = "item", name = "sp-crushed-iron-ore", probability = 0.5, amount = 1}
     }
   },
@@ -117,8 +117,8 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-crushing-magnesium-ore",  -- #ForRegEx# - recipe
-    icons = util.icon.create_crushing_recipe_icon(data.raw.item["sp-magnesium-ore"]),
+    name = "sp-crushing-magnesite",  -- #ForRegEx# - recipe
+    icons = util.icon.create_crushing_recipe_icon(data.raw.item["sp-magnesite"]),
     icon_size = 64,
     category = "crushing",
     subgroup = "sp-crushed-resource-recipe",
@@ -126,18 +126,18 @@ data:extend({
     allow_productivity = true,
     energy_required = 2,
     ingredients = {
-      {type = "item", name = "sp-magnesium-ore", amount = 4},
+      {type = "item", name = "sp-magnesite", amount = 4},
     },
     results = {
       {type = "item", name = "sp-sand", amount = 2},
-      {type = "item", name = "sp-crushed-magnesium-ore", amount = 4},
+      {type = "item", name = "sp-crushed-magnesite", amount = 4},
       {type = "item", name = "sp-crushed-zinc-ore", probability = 0.05, amount = 1}
     }
   },
   {
     type = "recipe",
-    name = "sp-crushing-nickel-ore",  -- #ForRegEx# - recipe
-    icons = util.icon.create_crushing_recipe_icon(data.raw.item["sp-nickel-ore"]),
+    name = "sp-crushing-garnierite",  -- #ForRegEx# - recipe
+    icons = util.icon.create_crushing_recipe_icon(data.raw.item["sp-garnierite"]),
     icon_size = 64,
     category = "crushing",
     subgroup = "sp-crushed-resource-recipe",
@@ -145,11 +145,11 @@ data:extend({
     allow_productivity = true,
     energy_required = 1.5,
     ingredients = {
-      {type = "item", name = "sp-nickel-ore", amount = 3},
+      {type = "item", name = "sp-garnierite", amount = 3},
     },
     results = {
       {type = "item", name = "sp-sand", probability = 0.5, amount = 1},
-      {type = "item", name = "sp-crushed-nickel-ore", amount = 3},
+      {type = "item", name = "sp-crushed-garnierite", amount = 3},
       {type = "item", name = "sp-crushed-iron-ore", probability = 0.5, amount = 1},
       {type = "item", name = "sulfur", probability = 0.3, amount = 1}
     }
@@ -250,8 +250,8 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-crushing-cobalt-ore",  -- #ForRegEx# - recipe
-    icons = util.icon.create_crushing_recipe_icon(data.raw.item["sp-cobalt-ore"]),
+    name = "sp-crushing-cobaltite",  -- #ForRegEx# - recipe
+    icons = util.icon.create_crushing_recipe_icon(data.raw.item["sp-cobaltite"]),
     icon_size = 64,
     category = "crushing",
     subgroup = "sp-crushed-resource-recipe",
@@ -259,17 +259,17 @@ data:extend({
     allow_productivity = true,
     energy_required = 2,
     ingredients = {
-      {type = "item", name = "sp-cobalt-ore", amount = 3},
+      {type = "item", name = "sp-cobaltite", amount = 3},
     },
     results = {
-      {type = "item", name = "sp-crushed-cobalt-ore", probability = 0.9, amount = 3},
+      {type = "item", name = "sp-crushed-cobaltite", probability = 0.9, amount = 3},
       {type = "item", name = "sp-arsenic-trioxide", probability = 0.1, amount = 2}
     }
   },
   {
     type = "recipe",
-    name = "sp-crushing-molybdenum-ore",  -- #ForRegEx# - recipe
-    icons = util.icon.create_crushing_recipe_icon(data.raw.item["sp-molybdenum-ore"]),
+    name = "sp-crushing-molybdate",  -- #ForRegEx# - recipe
+    icons = util.icon.create_crushing_recipe_icon(data.raw.item["sp-molybdate"]),
     icon_size = 64,
     category = "crushing",
     subgroup = "sp-crushed-resource-recipe",
@@ -277,11 +277,11 @@ data:extend({
     allow_productivity = true,
     energy_required = 4,
     ingredients = {
-      {type = "item", name = "sp-molybdenum-ore", amount = 5},
+      {type = "item", name = "sp-molybdate", amount = 5},
     },
     results = {
       {type = "item", name = "sp-sand", amount = 1},
-      {type = "item", name = "sp-crushed-molybdenum-ore", probability = 0.7, amount = 6},
+      {type = "item", name = "sp-crushed-molybdate", probability = 0.7, amount = 6},
       {type = "item", name = "sp-crushed-copper-ore", probability = 0.2, amount = 1},
       {type = "item", name = "sp-leadstone", probability = 0.1, amount = 1}
     }

@@ -1,7 +1,7 @@
 data:extend({
   {
     type = "item",
-    name = "sp-enriched-iron",  -- #ForRegEx# - item
+    name = "sp-enriched-iron-ore",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/enriched-iron/enriched-iron.png",
     icon_size = 64,
     icon_mipmaps = 4,
@@ -11,12 +11,12 @@ data:extend({
       {size = 64, filename = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/enriched-iron/enriched-iron-2.png", scale = 0.5, mipmap_count = 4},
     },
     subgroup = "sp-enriched-resource",
-    order = "[enriched-iron]",
+    order = "[enriched-iron-ore]",
     stack_size = 200
   },
   {
     type = "item",
-    name = "sp-enriched-copper",  -- #ForRegEx# - item
+    name = "sp-enriched-copper-ore",  -- #ForRegEx# - item
     icon = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/enriched-copper/enriched-copper.png",
     icon_size = 64,
     icon_mipmaps = 4,
@@ -26,7 +26,7 @@ data:extend({
       {size = 64, filename = "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/enriched-copper/enriched-copper-2.png", scale = 0.5, mipmap_count = 4},
     },
     subgroup = "sp-enriched-resource",
-    order = "[enriched-copper]",
+    order = "[enriched-copper-ore]",
     stack_size = 200
   },
   {
@@ -46,18 +46,18 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-enriched-aluminum",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/icons/enriched-aluminum-1.png",
+    name = "sp-enriched-bauxite",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/enriched-bauxite-1.png",
     icon_size = 64,
     icon_mipmaps = 4,
     pictures = {
-      {size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-aluminum-1.png", scale = 0.5, mipmap_count = 4},
-      {size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-aluminum-2.png", scale = 0.5, mipmap_count = 4},
-      {size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-aluminum-3.png", scale = 0.5, mipmap_count = 4},
-      {size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-aluminum-4.png", scale = 0.5, mipmap_count = 4}
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-bauxite-1.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-bauxite-2.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-bauxite-3.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-bauxite-4.png", scale = 0.5, mipmap_count = 4}
     },
     subgroup = "sp-enriched-resource",
-    order = "[enriched-aluminum]",
+    order = "[enriched-bauxite]",
     stack_size = 200
   },
   {
@@ -78,18 +78,18 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-enriched-titanium",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/icons/enriched-titanium-1.png",
+    name = "sp-enriched-titanium-ore",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/enriched-titanium-ore-1.png",
     icon_size = 64,
     icon_mipmaps = 4,
     pictures = {
-      {size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-titanium-1.png", scale = 0.5, mipmap_count = 4},
-      {size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-titanium-2.png", scale = 0.5, mipmap_count = 4},
-      {size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-titanium-3.png", scale = 0.5, mipmap_count = 4},
-      {size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-titanium-4.png", scale = 0.5, mipmap_count = 4}
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-titanium-ore-1.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-titanium-ore-2.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-titanium-ore-3.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-titanium-ore-4.png", scale = 0.5, mipmap_count = 4}
     },
     subgroup = "sp-enriched-resource",
-    order = "[enriched-titanium]",
+    order = "[enriched-titanium-ore]",
     stack_size = 200
   },
   {
@@ -110,50 +110,50 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-enriched-magnesium",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/icons/enriched-magnesium-1.png",
+    name = "sp-enriched-magnesite",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/enriched-magnesite-1.png",
     icon_size = 64,
     icon_mipmaps = 4,
     pictures = {
-      {size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-magnesium-1.png", scale = 0.5, mipmap_count = 4},
-      {size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-magnesium-2.png", scale = 0.5, mipmap_count = 4},
-      {size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-magnesium-3.png", scale = 0.5, mipmap_count = 4},
-      {size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-magnesium-4.png", scale = 0.5, mipmap_count = 4}
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-magnesite-1.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-magnesite-2.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-magnesite-3.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-magnesite-4.png", scale = 0.5, mipmap_count = 4}
     },
     subgroup = "sp-enriched-resource",
-    order = "[enriched-magnesium]",
+    order = "[enriched-magnesite]",
     stack_size = 200
   },
   {
     type = "item",
-    name = "sp-enriched-nickel",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/icons/enriched-nickel-1.png",
+    name = "sp-enriched-garnierite",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/enriched-garnierite-1.png",
     icon_size = 64,
     icon_mipmaps = 4,
     pictures = {
-      {size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-nickel-1.png", scale = 0.5, mipmap_count = 4},
-      {size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-nickel-2.png", scale = 0.5, mipmap_count = 4},
-      {size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-nickel-3.png", scale = 0.5, mipmap_count = 4},
-      {size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-nickel-4.png", scale = 0.5, mipmap_count = 4}
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-garnierite-1.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-garnierite-2.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-garnierite-3.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-garnierite-4.png", scale = 0.5, mipmap_count = 4}
     },
     subgroup = "sp-enriched-resource",
-    order = "[enriched-nickel]",
+    order = "[enriched-garnierite]",
     stack_size = 200
   },
   {
     type = "item",
-    name = "sp-enriched-zinc",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/icons/enriched-zinc-1.png",
+    name = "sp-enriched-zinc-ore",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/enriched-zinc-ore-1.png",
     icon_size = 64,
     icon_mipmaps = 4,
     pictures = {
-      {size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-zinc-1.png", scale = 0.5, mipmap_count = 4},
-      {size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-zinc-2.png", scale = 0.5, mipmap_count = 4},
-      {size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-zinc-3.png", scale = 0.5, mipmap_count = 4},
-      {size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-zinc-4.png", scale = 0.5, mipmap_count = 4}
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-zinc-ore-1.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-zinc-ore-2.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-zinc-ore-3.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/enriched-zinc-ore-4.png", scale = 0.5, mipmap_count = 4}
     },
     subgroup = "sp-enriched-resource",
-    order = "[enriched-zinc]",
+    order = "[enriched-zinc-ore]",
     stack_size = 200
   },
   {

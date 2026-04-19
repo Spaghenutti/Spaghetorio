@@ -365,16 +365,16 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-molten-zinc-from-enriched-zinc",  -- #ForRegEx# - recipe
+    name = "sp-molten-zinc-from-enriched-zinc-ore",  -- #ForRegEx# - recipe
     icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/molten-zinc.png", 64,
-                                         "__Spaghetorio__/graphics/icons/enriched-zinc-1.png", 64),
+                                         "__Spaghetorio__/graphics/icons/enriched-zinc-ore-1.png", 64),
     category = "metallurgy",
     subgroup = "sp-liquid-metal",
     enabled = false,
     allow_productivity = false,
     energy_required = 16,
     ingredients = {
-      {type = "item", name = "sp-enriched-zinc", amount = 10},
+      {type = "item", name = "sp-enriched-zinc-ore", amount = 10},
     },
     results = {
       {type = "fluid", name = "sp-molten-zinc", amount = 200}
@@ -400,16 +400,16 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-molten-magnesium-from-enriched-magnesium",  -- #ForRegEx# - recipe
+    name = "sp-molten-magnesium-from-enriched-magnesite",  -- #ForRegEx# - recipe
     icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/molten-zinc.png", 64,
-                                         "__Spaghetorio__/graphics/icons/enriched-zinc-1.png", 64),
+                                         "__Spaghetorio__/graphics/icons/enriched-zinc-ore-1.png", 64),
     category = "metallurgy",
     subgroup = "sp-liquid-metal",
     enabled = false,
     allow_productivity = true,
     energy_required = 15,
     ingredients = {
-      {type = "item", name = "sp-enriched-magnesium", amount = 15},
+      {type = "item", name = "sp-enriched-magnesite", amount = 15},
     },
     results = {
       {type = "fluid", name = "sp-molten-magnesium", amount = 250}
@@ -427,7 +427,7 @@ data:extend({
     allow_productivity = true,
     energy_required = 40,
     ingredients = {
-      {type = "item", name = "sp-nickel-ore", amount = 20},
+      {type = "item", name = "sp-garnierite", amount = 20},
       {type = "fluid", name = "ammonia", amount = 2},
     },
     results = {
@@ -437,16 +437,16 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-molten-nickel-from-crushed-nickel",  -- #ForRegEx# - recipe
+    name = "sp-molten-nickel-from-crushed-garnierite",  -- #ForRegEx# - recipe
     icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/molten-nickel.png", 64,
-                                         "__Spaghetorio__/graphics/icons/crushed-nickel-ore-1.png", 64),
+                                         "__Spaghetorio__/graphics/icons/crushed-garnierite-1.png", 64),
     category = "metallurgy",
     subgroup = "sp-liquid-metal",
     enabled = false,
     allow_productivity = true,
     energy_required = 12,
     ingredients = {
-      {type = "item", name = "sp-crushed-nickel-ore", amount = 20},
+      {type = "item", name = "sp-crushed-garnierite", amount = 20},
     },
     results = {
       {type = "fluid", name = "sp-molten-nickel", amount = 160},
@@ -455,16 +455,16 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-molten-nickel-from-enriched-nickel",  -- #ForRegEx# - recipe
+    name = "sp-molten-nickel-from-enriched-garnierite",  -- #ForRegEx# - recipe
     icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/molten-nickel.png", 64,
-                                         "__Spaghetorio__/graphics/icons/enriched-nickel-1.png", 64),
+                                         "__Spaghetorio__/graphics/icons/enriched-garnierite-1.png", 64),
     category = "metallurgy",
     subgroup = "sp-liquid-metal",
     enabled = false,
     allow_productivity = true,
     energy_required = 20,
     ingredients = {
-      {type = "item", name = "sp-enriched-nickel", amount = 10},
+      {type = "item", name = "sp-enriched-garnierite", amount = 10},
     },
     results = {
       {type = "fluid", name = "sp-molten-nickel", amount = 200},
@@ -522,7 +522,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-molten-iron-from-enriched-iron",  -- #ForRegEx# - recipe
+    name = "sp-molten-iron-from-enriched-iron-ore",  -- #ForRegEx# - recipe
     icons = util.icon.overlay_small_icon("__space-age__/graphics/icons/fluid/molten-iron.png", 64,
                                          "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/enriched-iron/enriched-iron.png", 64),
     category = "metallurgy",
@@ -531,7 +531,7 @@ data:extend({
     allow_productivity = true,
     energy_required = 20,
     ingredients = {
-      {type = "item", name = "sp-enriched-iron", amount = 60},
+      {type = "item", name = "sp-enriched-iron-ore", amount = 60},
     },
     results = {
       {type = "fluid", name = "molten-iron", amount = 500},
@@ -556,7 +556,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-molten-copper-from-enriched-copper",  -- #ForRegEx# - recipe
+    name = "sp-molten-copper-from-enriched-copper-ore",  -- #ForRegEx# - recipe
     icons = util.icon.overlay_small_icon("__space-age__/graphics/icons/fluid/molten-copper.png", 64,
                                          "__Spaghetorio__/graphics/krastorio/icons/items-with-variations/enriched-copper/enriched-copper.png", 64),
     category = "metallurgy",
@@ -565,7 +565,7 @@ data:extend({
     allow_productivity = true,
     energy_required = 20,
     ingredients = {
-      {type = "item", name = "sp-enriched-copper", amount = 60},
+      {type = "item", name = "sp-enriched-copper-ore", amount = 60},
     },
     results = {
       {type = "fluid", name = "molten-copper", amount = 500},

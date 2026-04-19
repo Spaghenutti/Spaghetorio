@@ -385,7 +385,7 @@ data:extend({
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-crushing-aluminum-ore"
+        recipe = "sp-crushing-bauxite"
       },
       {
         type = "unlock-recipe",
@@ -393,7 +393,7 @@ data:extend({
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-crushing-nickel-ore"
+        recipe = "sp-crushing-garnierite"
       },
       {
         type = "unlock-recipe",
@@ -401,7 +401,7 @@ data:extend({
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-crushing-magnesium-ore"
+        recipe = "sp-crushing-magnesite"
       },
       {
         type = "unlock-recipe",
@@ -421,7 +421,7 @@ data:extend({
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-crushed-aluminum-smelting"
+        recipe = "sp-crushed-bauxite-smelting"
       },
       {
         type = "unlock-recipe",
@@ -433,11 +433,11 @@ data:extend({
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-crushed-nickel-smelting"
+        recipe = "sp-crushed-garnierite-smelting"
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-crushed-magnesium-smelting"
+        recipe = "sp-crushed-magnesite-smelting"
       },
     },
     prerequisites = {
@@ -984,11 +984,11 @@ data:extend({
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-crushing-cobalt-ore"
+        recipe = "sp-crushing-cobaltite"
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-crushed-cobalt-smelting"
+        recipe = "sp-crushed-cobaltite-smelting"
       },
       {
         type = "unlock-recipe",
@@ -1273,11 +1273,11 @@ data:extend({
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-crushing-molybdenum-ore"
+        recipe = "sp-crushing-molybdate"
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-crushed-molybdenum-smelting"
+        recipe = "sp-crushed-molybdate-smelting"
       },
       {
         type = "unlock-recipe",
@@ -4506,19 +4506,19 @@ data:extend({
       -- iron
       {
         type = "unlock-recipe",
-        recipe = "sp-enriched-iron",
+        recipe = "sp-enriched-iron-ore",
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-enriched-iron-from-crushed-resource",
+        recipe = "sp-enriched-iron-ore-from-crushed-resource",
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-iron-plate-from-enriched-iron",
+        recipe = "sp-iron-plate-from-enriched-iron-ore",
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-iron-beam-from-enriched-iron",
+        recipe = "sp-iron-beam-from-enriched-iron-ore",
       },
       {
         type = "unlock-recipe",
@@ -4527,15 +4527,15 @@ data:extend({
       -- copper
       {
         type = "unlock-recipe",
-        recipe = "sp-enriched-copper",
+        recipe = "sp-enriched-copper-ore",
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-enriched-copper-from-crushed-resource",
+        recipe = "sp-enriched-copper-ore-from-crushed-resource",
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-copper-plate-from-enriched-copper",
+        recipe = "sp-copper-plate-from-enriched-copper-ore",
       },
       {
         type = "unlock-recipe",
@@ -4544,15 +4544,15 @@ data:extend({
       -- aluminum
       {
         type = "unlock-recipe",
-        recipe = "sp-enriched-aluminum",
+        recipe = "sp-enriched-bauxite",
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-enriched-aluminum-from-crushed-resource",
+        recipe = "sp-enriched-bauxite-from-crushed-resource",
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-alumina-from-enriched-aluminum",
+        recipe = "sp-alumina-from-enriched-bauxite",
       },
       {
         type = "unlock-recipe",
@@ -4578,15 +4578,15 @@ data:extend({
       -- magnesium
       {
         type = "unlock-recipe",
-        recipe = "sp-enriched-magnesium",
+        recipe = "sp-enriched-magnesite",
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-enriched-magnesium-from-crushed-resource",
+        recipe = "sp-enriched-magnesite-from-crushed-resource",
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-magnesium-slab-from-enriched-magnesium",
+        recipe = "sp-magnesium-slab-from-enriched-magnesite",
       },
       {
         type = "unlock-recipe",
@@ -4595,15 +4595,15 @@ data:extend({
       -- nickel
       {
         type = "unlock-recipe",
-        recipe = "sp-enriched-nickel",
+        recipe = "sp-enriched-garnierite",
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-enriched-nickel-from-crushed-resource",
+        recipe = "sp-enriched-garnierite-from-crushed-resource",
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-nickel-ingot-from-enriched-nickel",
+        recipe = "sp-nickel-ingot-from-enriched-garnierite",
       },
       {
         type = "unlock-recipe",
@@ -4629,15 +4629,15 @@ data:extend({
       -- titanium
       {
         type = "unlock-recipe",
-        recipe = "sp-enriched-titanium",
+        recipe = "sp-enriched-titanium-ore",
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-enriched-titanium-from-crushed-resource",
+        recipe = "sp-enriched-titanium-ore-from-crushed-resource",
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-titanium-chloride-from-enriched-titanium",
+        recipe = "sp-titanium-chloride-from-enriched-titanium-ore",
       },
       {
         type = "unlock-recipe",
@@ -4663,15 +4663,15 @@ data:extend({
       -- zinc
       {
         type = "unlock-recipe",
-        recipe = "sp-enriched-zinc",
+        recipe = "sp-enriched-zinc-ore",
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-enriched-zinc-from-crushed-resource",
+        recipe = "sp-enriched-zinc-ore-from-crushed-resource",
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-zinc-plate-from-enriched-zinc",
+        recipe = "sp-zinc-plate-from-enriched-zinc-ore",
       },
       {
         type = "unlock-recipe",
@@ -4715,11 +4715,11 @@ data:extend({
       -- casting
       {
         type = "unlock-recipe",
-        recipe = "sp-molten-iron-from-enriched-iron",
+        recipe = "sp-molten-iron-from-enriched-iron-ore",
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-molten-copper-from-enriched-copper",
+        recipe = "sp-molten-copper-from-enriched-copper-ore",
       },
       {
         type = "unlock-recipe",
@@ -4727,15 +4727,15 @@ data:extend({
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-molten-zinc-from-enriched-zinc",
+        recipe = "sp-molten-zinc-from-enriched-zinc-ore",
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-molten-magnesium-from-enriched-magnesium",
+        recipe = "sp-molten-magnesium-from-enriched-magnesite",
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-molten-nickel-from-enriched-nickel",
+        recipe = "sp-molten-nickel-from-enriched-garnierite",
       },
       -- other
       {
@@ -9000,7 +9000,7 @@ data:extend({
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-aluminum-ore-from-acrocrystal"
+        recipe = "sp-bauxite-from-acrocrystal"
       },
       {
         type = "unlock-recipe",
@@ -9016,11 +9016,11 @@ data:extend({
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-magnesium-ore-from-acrocrystal"
+        recipe = "sp-magnesite-from-acrocrystal"
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-nickel-ore-from-acrocrystal"
+        recipe = "sp-garnierite-from-acrocrystal"
       },
       {
         type = "unlock-recipe",
@@ -9075,7 +9075,7 @@ data:extend({
     effects = {
       {
         type = "unlock-recipe",
-        recipe = "sp-enriched-aluminum-from-acromatter"
+        recipe = "sp-enriched-bauxite-from-acromatter"
       },
       {
         type = "unlock-recipe",
@@ -9083,15 +9083,15 @@ data:extend({
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-enriched-titanium-from-acromatter"
+        recipe = "sp-enriched-titanium-ore-from-acromatter"
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-enriched-magnesium-from-acromatter"
+        recipe = "sp-enriched-magnesite-from-acromatter"
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-enriched-nickel-from-acromatter"
+        recipe = "sp-enriched-garnierite-from-acromatter"
       },
       {
         type = "unlock-recipe",
@@ -9103,15 +9103,15 @@ data:extend({
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-enriched-zinc-from-acromatter"
+        recipe = "sp-enriched-zinc-ore-from-acromatter"
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-enriched-copper-from-acromatter"
+        recipe = "sp-enriched-copper-ore-from-acromatter"
       },
       {
         type = "unlock-recipe",
-        recipe = "sp-enriched-iron-from-acromatter"
+        recipe = "sp-enriched-iron-ore-from-acromatter"
       },
       {
         type = "unlock-recipe",

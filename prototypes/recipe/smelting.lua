@@ -65,7 +65,7 @@ data:extend({
     allow_productivity = true,
     energy_required = 2,
     ingredients = {
-      {type = "item", name = "sp-aluminum-ore", amount = 3}
+      {type = "item", name = "sp-bauxite", amount = 3}
     },
     results = {
       {type = "item", name = "sp-alumina", amount = 2}
@@ -79,7 +79,7 @@ data:extend({
     allow_productivity = true,
     energy_required = 4,
     ingredients = {
-      {type = "item", name = "sp-magnesium-ore", amount = 3}
+      {type = "item", name = "sp-magnesite", amount = 3}
     },
     results = {
       {type = "item", name = "sp-magnesium-chloride", amount = 1}
@@ -297,7 +297,7 @@ data:extend({
     allow_productivity = true,
     energy_required = 3.2,
     ingredients = {
-      {type = "item", name = "sp-nickel-ore", amount = 2}
+      {type = "item", name = "sp-garnierite", amount = 2}
     },
     results = {
       {type = "item", name = "sp-nickel-ingot", amount = 1},
@@ -329,7 +329,7 @@ data:extend({
     allow_productivity = true,
     energy_required = 12,
     ingredients = {
-      {type = "item", name = "sp-cobalt-ore", amount = 10},
+      {type = "item", name = "sp-cobaltite", amount = 10},
     },
     results = {
       {type = "item", name = "sp-cobalt-oxide", amount = 12}
@@ -343,7 +343,7 @@ data:extend({
     allow_productivity = true,
     energy_required = 20,
     ingredients = {
-      {type = "item", name = "sp-molybdenum-ore", amount = 8},
+      {type = "item", name = "sp-molybdate", amount = 8},
     },
     results = {
       {type = "item", name = "sp-molybdenum-trioxide", amount = 6}
@@ -371,7 +371,7 @@ data:extend({
     allow_productivity = true,
     energy_required = 6,
     ingredients = {
-      {type = "item", name = "sp-manganese-ore", amount = 5},
+      {type = "item", name = "sp-pyrolusite", amount = 5},
     },
     results = {
       {type = "item", name = "sp-manganese-dioxide", amount = 3}
@@ -385,7 +385,7 @@ data:extend({
     allow_productivity = true,
     energy_required = 8,
     ingredients = {
-      {type = "item", name = "sp-vanadium-ore", amount = 5},
+      {type = "item", name = "sp-vanadinite", amount = 5},
     },
     results = {
       {type = "item", name = "sp-vanadium-pentoxide", amount = 2}

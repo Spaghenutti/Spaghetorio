@@ -296,7 +296,7 @@ data:extend({
       {type = "item", name = "sp-ytterbium-chloride", probability = 0.3, amount = 2},
       {type = "item", name = "sp-ytterbium-fluoride", probability = 0.5, amount = 1},
       {type = "item", name = "sp-zirconia", probability = 0.75, amount = 2},
-      {type = "item", name = "sp-vanadium-ore", probability = 0.6, amount = 1},
+      {type = "item", name = "sp-vanadinite", probability = 0.6, amount = 1},
     }
   },
   {
@@ -330,14 +330,14 @@ data:extend({
     allow_productivity = true,
     energy_required = 75,
     ingredients = {
-      {type = "item", name = "sp-enriched-magnesium", amount = 1},
+      {type = "item", name = "sp-enriched-magnesite", amount = 1},
       {type = "fluid", name = "sp-tetrapropylammonium", amount = 10},
       {type = "fluid", name = "sp-methyl-sulfate", amount = 15},
     },
     results = {
       {type = "item", name = "sp-terbium-sulfate", probability = 0.08, amount = 1},
       {type = "item", name = "sp-terbium-nitrate", probability = 0.12, amount = 1},
-      {type = "item", name = "sp-enriched-magnesium", probability = 0.22, amount = 1},
+      {type = "item", name = "sp-enriched-magnesite", probability = 0.22, amount = 1},
     }
   },
   {
@@ -361,7 +361,7 @@ data:extend({
       {type = "item", name = "sp-potassium-chloride", amount = 10},
       {type = "item", name = "sulfur", amount = 5},
       {type = "item", name = "iron-ore", amount = 3},
-      {type = "item", name = "sp-nickel-ore", amount = 2},
+      {type = "item", name = "sp-garnierite", amount = 2},
       {type = "item", name = "copper-ore", amount = 1},
     }
   },

@@ -2,7 +2,7 @@
 Version: 0.4.0
 Date: 2026-04-13
   Features:
-    - BREAKING CHANGES: Many recipes have changed
+    - BREAKING CHANGES: Many raw ores and recipes are renamed and changed
     - Added new items
   Changes:
     - Updated icons
@@ -151,7 +151,7 @@ Date: 2025-06-06
     - Changed bleach recipe
     - Some icon changes
     - Biological science pack 2 is now made in greenhouse
-    - Nickel ore has now has 1 starting area patch
+    - Garnierite has now has 1 starting area patch
     - Quality module 2 is unlocked after processing unit
   Balancing:
     - Increased power consumption and speed of big crusher and educed module slots from 4 to 3
@@ -325,7 +325,7 @@ Date: 2025-04-04
     - Weapon damage and shooting speed technologies have many more tiers and provide stronger bonuses
     - I intend to add more military balancing in the future (for now firearms are op compared to anything else)
   Bugfixes:
-    - Enriching crushed iron ore now correctly produces enriched iron
+    - Enriching crushed iron ore now correctly produces enriched iron ore
     - Carbon fiber can be now produced in chemical plant
     - Lead molybdate can be now produced in induction hardening facility
     - Fixed recipe for research server due to cyclic dependency in tech tree
@@ -492,7 +492,7 @@ Date: 2024-10-10
     - Removed recipes from barrel recipes that are not supposed to exist (like dark energy in a barrel seems anticlimactic)
     - Fixed barrel tints 
     - Fixed chemistry crafting machine tints
-    - Nickel ore is now correctly crushed into crushed nickel ore
+    - Garnierite is now correctly crushed into crushed garnierite
     - Some crushing recipes have more than 3 outputs. The krastorio crusher now has 8 output slots.
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.7

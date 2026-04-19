@@ -62,12 +62,12 @@ data:extend({
     allow_productivity = true,
     energy_required = 4,
     ingredients = {
-      {type = "item", name = "sp-nickel-ore", amount = 1},
+      {type = "item", name = "sp-garnierite", amount = 1},
       {type = "fluid", name = "water", amount = 20},
       {type = "fluid", name = "sp-sodium-hydroxide", amount = 1}
     },
     results = {
-      {type = "item", name = "sp-crushed-nickel-ore", probability = 0.3, amount = 1},
+      {type = "item", name = "sp-crushed-garnierite", probability = 0.3, amount = 1},
       {type = "item", name = "sp-crushed-iron-ore", probability = 0.2, amount = 1},
       {type = "item", name = "sp-palladium", probability = 0.07, amount = 1}
     }
@@ -306,7 +306,7 @@ data:extend({
     },
     results = {
       {type = "item", name = "sp-djerfisherite", amount = 1},
-      {type = "item", name = "sp-potassium-ore", probability = 0.4, amount = 1},
+      {type = "item", name = "sp-sylvite", probability = 0.4, amount = 1},
       {type = "item", name = "sulfur", probability = 0.3, amount = 2}
     },
   },
@@ -425,7 +425,7 @@ data:extend({
     results = {
       {type = "fluid", name = "sp-rhodium-froth", amount = 5},
       {type = "item", name = "iron-ore", amount = 1},
-      {type = "item", name = "sp-cobalt-ore", probability = 0.2, amount = 1},
+      {type = "item", name = "sp-cobaltite", probability = 0.2, amount = 1},
     },
   },
   {
@@ -465,7 +465,7 @@ data:extend({
     results = {
       {type = "fluid", name = "sp-iridium-froth", amount = 4},
       {type = "item", name = "iron-ore", amount = 1},
-      {type = "item", name = "sp-cobalt-ore", probability = 0.1, amount = 1},
+      {type = "item", name = "sp-cobaltite", probability = 0.1, amount = 1},
     },
   },
   {
@@ -491,7 +491,7 @@ data:extend({
   {
     type = "recipe",
     name = "sp-magnesium-from-crushing-olivine",  -- #ForRegEx# - recipe
-    icons = util.icon.create_crushing_recipe_icon(data.raw.item["sp-olivine"], data.raw.item["sp-magnesium-ore"]),
+    icons = util.icon.create_crushing_recipe_icon(data.raw.item["sp-olivine"], data.raw.item["sp-magnesite"]),
     category = "sp-crushing-washing",
     subgroup = "sp-mineral-resource",
     enabled = false,
@@ -502,14 +502,14 @@ data:extend({
       {type = "fluid", name = "sp-hydrogen-chloride", amount = 10},
     },
     results = {
-      {type = "item", name = "sp-magnesium-ore", amount = 2},
+      {type = "item", name = "sp-magnesite", amount = 2},
       {type = "item", name = "sp-quartz", probability = 0.4, amount = 1},
     }
   },
   {
     type = "recipe",
     name = "sp-magnesium-from-crushing-pyroxenem",  -- #ForRegEx# - recipe
-    icons = util.icon.create_crushing_recipe_icon(data.raw.item["sp-pyroxenem"], data.raw.item["sp-magnesium-ore"]),
+    icons = util.icon.create_crushing_recipe_icon(data.raw.item["sp-pyroxenem"], data.raw.item["sp-magnesite"]),
     category = "sp-crushing-washing",
     subgroup = "sp-mineral-resource",
     enabled = false,
@@ -520,7 +520,7 @@ data:extend({
       {type = "fluid", name = "sp-hydrogen-chloride", amount = 12},
     },
     results = {
-      {type = "item", name = "sp-magnesium-ore", amount = 1},
+      {type = "item", name = "sp-magnesite", amount = 1},
       {type = "item", name = "calcite", amount = 1},
       {type = "item", name = "sp-quartz", probability = 0.6, amount = 1},
     }

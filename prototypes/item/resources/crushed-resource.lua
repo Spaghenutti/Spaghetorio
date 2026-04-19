@@ -33,18 +33,18 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-crushed-aluminum-ore",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/icons/crushed-aluminum-ore-1.png",
+    name = "sp-crushed-bauxite",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/crushed-bauxite-1.png",
     icon_size = 64,
     icon_mipmaps = 4,
     pictures = {
-      {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-aluminum-ore-1.png", scale = 0.5, mipmap_count = 4},
-      {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-aluminum-ore-2.png", scale = 0.5, mipmap_count = 4},
-      {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-aluminum-ore-3.png", scale = 0.5, mipmap_count = 4},
-      {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-aluminum-ore-4.png", scale = 0.5, mipmap_count = 4}
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-bauxite-1.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-bauxite-2.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-bauxite-3.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-bauxite-4.png", scale = 0.5, mipmap_count = 4}
     },
     subgroup = "sp-crushed-resource",
-    order = "[crushed-aluminum-ore]",
+    order = "[crushed-bauxite]",
     stack_size = 200
   },
   {
@@ -65,18 +65,18 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-crushed-cobalt-ore",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/icons/crushed-cobalt-ore-4.png",
+    name = "sp-crushed-cobaltite",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/crushed-cobaltite-4.png",
     icon_size = 64,
     icon_mipmaps = 4,
     pictures = {
-      {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-cobalt-ore-1.png", scale = 0.5, mipmap_count = 4},
-      {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-cobalt-ore-2.png", scale = 0.5, mipmap_count = 4},
-      {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-cobalt-ore-3.png", scale = 0.5, mipmap_count = 4},
-      {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-cobalt-ore-4.png", scale = 0.5, mipmap_count = 4}
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-cobaltite-1.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-cobaltite-2.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-cobaltite-3.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-cobaltite-4.png", scale = 0.5, mipmap_count = 4}
     },
     subgroup = "sp-crushed-resource",
-    order = "[crushed-cobalt-ore]",
+    order = "[crushed-cobaltite]",
     stack_size = 200
   },
   {
@@ -97,34 +97,34 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-crushed-magnesium-ore",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/icons/crushed-magnesium-ore-1.png",
+    name = "sp-crushed-magnesite",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/crushed-magnesite-1.png",
     icon_size = 64,
     icon_mipmaps = 4,
     pictures = {
-      {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-magnesium-ore-1.png", scale = 0.5, mipmap_count = 4},
-      {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-magnesium-ore-2.png", scale = 0.5, mipmap_count = 4},
-      {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-magnesium-ore-3.png", scale = 0.5, mipmap_count = 4},
-      {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-magnesium-ore-4.png", scale = 0.5, mipmap_count = 4}
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-magnesite-1.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-magnesite-2.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-magnesite-3.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-magnesite-4.png", scale = 0.5, mipmap_count = 4}
     },
     subgroup = "sp-crushed-resource",
-    order = "[crushed-magnesium-ore]",
+    order = "[crushed-magnesite]",
     stack_size = 200
   },
   {
     type = "item",
-    name = "sp-crushed-molybdenum-ore",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/icons/crushed-molybdenum-ore-1.png",
+    name = "sp-crushed-molybdate",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/crushed-molybdate-1.png",
     icon_size = 64,
     icon_mipmaps = 4,
     pictures = {
-      {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-molybdenum-ore-1.png", scale = 0.5, mipmap_count = 4},
-      {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-molybdenum-ore-2.png", scale = 0.5, mipmap_count = 4},
-      {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-molybdenum-ore-3.png", scale = 0.5, mipmap_count = 4},
-      {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-molybdenum-ore-4.png", scale = 0.5, mipmap_count = 4}
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-molybdate-1.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-molybdate-2.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-molybdate-3.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-molybdate-4.png", scale = 0.5, mipmap_count = 4}
     },
     subgroup = "sp-crushed-resource",
-    order = "[crushed-molybdenum-ore]",
+    order = "[crushed-molybdate]",
     stack_size = 200
   },
   {
@@ -161,18 +161,18 @@ data:extend({
   },
   {
     type = "item",
-    name = "sp-crushed-nickel-ore",  -- #ForRegEx# - item
-    icon = "__Spaghetorio__/graphics/icons/crushed-nickel-ore-1.png",
+    name = "sp-crushed-garnierite",  -- #ForRegEx# - item
+    icon = "__Spaghetorio__/graphics/icons/crushed-garnierite-1.png",
     icon_size = 64,
     icon_mipmaps = 4,
     pictures = {
-      {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-nickel-ore-1.png", scale = 0.5, mipmap_count = 4},
-      {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-nickel-ore-2.png", scale = 0.5, mipmap_count = 4},
-      {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-nickel-ore-3.png", scale = 0.5, mipmap_count = 4},
-      {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-nickel-ore-4.png", scale = 0.5, mipmap_count = 4}
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-garnierite-1.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-garnierite-2.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-garnierite-3.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__Spaghetorio__/graphics/icons/crushed-garnierite-4.png", scale = 0.5, mipmap_count = 4}
     },
     subgroup = "sp-crushed-resource",
-    order = "[crushed-nickel-ore]",
+    order = "[crushed-garnierite]",
     stack_size = 200
   },
   {

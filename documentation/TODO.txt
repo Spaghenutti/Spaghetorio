@@ -2,10 +2,42 @@ Upgrade Setup
 - linter
 - split into content into smaller files
 
+Before new playthrough
+- Update names of ores 
+  + aluminum ore - bauxite
+  + barium ore - barite
+  + boron ore - kernite
+  + cobalt ore - cobaltite
+  + magnesium ore - magnesite
+  + manganese ore - pyrolusite
+  + mercury ore - cinnabar
+  + molybdenum ore - molybdate
+  + nickel ore - garnierite
+  + potassium ore - sylvite
+  - titanium ore - rutile - fixed enriched
+  - vanadium ore - vanadinite
+  - zinc ore - sphalerite - fixed enriched
+  - zirconium ore - schist
+  - fix enriched copper and iron
+  - for every ore check
+    - rushed
+    - nriched
+    - .lua
+    - locale
+    - images
+- Add sets
+- move dynamo before electric motor
+- simplify lead tin recipe
+
 TODO for 0.4.0
 
 Rename items
 - ceramics
+
+Recipe chains
+  - add borax when extracting from kernite
+  - magnesium can be won from water by filtering
+  - make molten metal from lava recipes much more complex - after geological and metallurgical science 3
 
 New items
 + i steel-sheet
@@ -58,6 +90,13 @@ New items
     + diode
     + transistor
     + (vacuum-tube)
+  - chemistry
+    - organometallic compounds
+    - ionic liquids
+    - super acids
+    - super bases
+    - reducing agents
+
   - electrostatic-precipitator
   - destiller
   - thermal-regulator
@@ -285,12 +324,12 @@ Recipes:
   - Create functions to automate generation of acro conversion recipes
   - Add recipes for fluids via acromatter
   - acrocrystal
-    - barium-ore
+    - barite
     - stibnite
-    - boron-ore
-    - cobalt-ore
-    - molybdenum-ore
-    - manganese-ore
+    - kernite
+    - cobaltite
+    - molybdate
+    - pyrolusite
   - Fix crafting categories for some recipes (like manufacturing)
 
 Technologies:

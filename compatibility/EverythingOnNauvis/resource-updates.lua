@@ -23,21 +23,21 @@ function duplicate_noise_expression(name, type)
 end
 
 data.extend({
-  duplicate_noise_expression("sp-aluminum-ore", "resource"),
-  duplicate_noise_expression("sp-barium-ore", "resource"),
-  duplicate_noise_expression("sp-boron-ore", "resource"),
+  duplicate_noise_expression("sp-bauxite", "resource"),
+  duplicate_noise_expression("sp-barite", "resource"),
+  duplicate_noise_expression("sp-kernite", "resource"),
   duplicate_noise_expression("sp-chromite", "resource"),
-  duplicate_noise_expression("sp-cobalt-ore", "resource"),
-  duplicate_noise_expression("sp-magnesium-ore", "resource"),
-  duplicate_noise_expression("sp-manganese-ore", "resource"),
-  duplicate_noise_expression("sp-mercury-ore", "resource"),
-  duplicate_noise_expression("sp-molybdenum-ore", "resource"),
-  duplicate_noise_expression("sp-nickel-ore", "resource"),
-  duplicate_noise_expression("sp-potassium-ore", "resource"),
+  duplicate_noise_expression("sp-cobaltite", "resource"),
+  duplicate_noise_expression("sp-magnesite", "resource"),
+  duplicate_noise_expression("sp-pyrolusite", "resource"),
+  duplicate_noise_expression("sp-cinnabar", "resource"),
+  duplicate_noise_expression("sp-molybdate", "resource"),
+  duplicate_noise_expression("sp-garnierite", "resource"),
+  duplicate_noise_expression("sp-sylvite", "resource"),
   duplicate_noise_expression("sp-stibnite", "resource"),
   duplicate_noise_expression("sp-tinstone", "resource"),
   duplicate_noise_expression("sp-titanium-ore", "resource"),
-  duplicate_noise_expression("sp-vanadium-ore", "resource"),
+  duplicate_noise_expression("sp-vanadinite", "resource"),
   duplicate_noise_expression("sp-zinc-ore", "resource"),
   duplicate_noise_expression("sp-zirconium-ore", "resource"),
 
@@ -54,22 +54,22 @@ data.extend({
 })
 
 
-terrain.mask_resource_territory("sp-aluminum-ore", "resource")
-terrain.mask_resource_territory("sp-barium-ore", "resource")
-terrain.mask_resource_territory("sp-boron-ore", "resource")
+terrain.mask_resource_territory("sp-bauxite", "resource")
+terrain.mask_resource_territory("sp-barite", "resource")
+terrain.mask_resource_territory("sp-kernite", "resource")
 terrain.mask_resource_territory("sp-chromite", "resource")
-terrain.mask_resource_territory("sp-cobalt-ore", "resource")
-terrain.mask_resource_territory("sp-barium-ore", "resource")
-terrain.mask_resource_territory("sp-magnesium-ore", "resource")
-terrain.mask_resource_territory("sp-manganese-ore", "resource")
-terrain.mask_resource_territory("sp-mercury-ore", "resource")
-terrain.mask_resource_territory("sp-molybdenum-ore", "resource")
-terrain.mask_resource_territory("sp-nickel-ore", "resource")
-terrain.mask_resource_territory("sp-potassium-ore", "resource")
+terrain.mask_resource_territory("sp-cobaltite", "resource")
+terrain.mask_resource_territory("sp-barite", "resource")
+terrain.mask_resource_territory("sp-magnesite", "resource")
+terrain.mask_resource_territory("sp-pyrolusite", "resource")
+terrain.mask_resource_territory("sp-cinnabar", "resource")
+terrain.mask_resource_territory("sp-molybdate", "resource")
+terrain.mask_resource_territory("sp-garnierite", "resource")
+terrain.mask_resource_territory("sp-sylvite", "resource")
 terrain.mask_resource_territory("sp-stibnite", "resource")
 terrain.mask_resource_territory("sp-tinstone", "resource")
 terrain.mask_resource_territory("sp-titanium-ore", "resource")
-terrain.mask_resource_territory("sp-vanadium-ore", "resource")
+terrain.mask_resource_territory("sp-vanadinite", "resource")
 terrain.mask_resource_territory("sp-zinc-ore", "resource")
 terrain.mask_resource_territory("sp-zirconium-ore", "resource")
 

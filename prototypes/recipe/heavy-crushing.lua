@@ -110,7 +110,7 @@ data:extend({
       {type = "item", name = "sp-potassium-chloride", amount = 3},
       {type = "item", name = "sulfur", amount = 1},
       {type = "item", name = "sp-crushed-iron-ore", probability = 0.8, amount = 1},
-      {type = "item", name = "sp-crushed-nickel-ore", probability = 0.6, amount = 1},
+      {type = "item", name = "sp-crushed-garnierite", probability = 0.6, amount = 1},
       {type = "item", name = "sp-crushed-copper-ore", probability = 0.5, amount = 1},
     }
   },

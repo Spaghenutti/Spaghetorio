@@ -281,7 +281,7 @@ table.insert(data.raw.technology["foundry"].effects, {type = "unlock-recipe", re
 table.insert(data.raw.technology["foundry"].effects, {type = "unlock-recipe", recipe = "sp-molten-zinc-from-oxide"})
 table.insert(data.raw.technology["foundry"].effects, {type = "unlock-recipe", recipe = "sp-molten-magnesium"})
 table.insert(data.raw.technology["foundry"].effects, {type = "unlock-recipe", recipe = "sp-molten-nickel"})
-table.insert(data.raw.technology["foundry"].effects, {type = "unlock-recipe", recipe = "sp-molten-nickel-from-crushed-nickel"})
+table.insert(data.raw.technology["foundry"].effects, {type = "unlock-recipe", recipe = "sp-molten-nickel-from-crushed-garnierite"})
 table.insert(data.raw.technology["foundry"].effects, {type = "unlock-recipe", recipe = "sp-molten-iron-from-crushed-iron"})
 table.insert(data.raw.technology["foundry"].effects, {type = "unlock-recipe", recipe = "sp-molten-copper-from-crushed-copper"})
 table.insert(data.raw.technology["foundry"].effects, {type = "unlock-recipe", recipe = "sp-casting-aluminum-sheet"})
