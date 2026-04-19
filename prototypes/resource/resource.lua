@@ -800,60 +800,60 @@ data.raw.planet["nauvis"].map_gen_settings.autoplace_settings.entity.settings["s
 data.raw["tree"]["tree-01"].minable.result = nil
 data.raw["tree"]["tree-01"].minable.count = nil
 data.raw["tree"]["tree-01"].minable.results = {
-  {type = "item", name = "wood", amount = 4},
+  {type = "item", name = "wood", amount = 15},
   {type = "item", name = "tree-seed", probability = 0.1, amount = 1}
 }
 data.raw["tree"]["tree-02"].minable.result = nil
 data.raw["tree"]["tree-02"].minable.count = nil
 data.raw["tree"]["tree-02"].minable.results = {
-  {type = "item", name = "wood", amount = 4},
+  {type = "item", name = "wood", amount = 15},
   {type = "item", name = "tree-seed", probability = 0.1, amount = 1}
 }
 data.raw["tree"]["tree-03"].minable.result = nil
 data.raw["tree"]["tree-03"].minable.count = nil
 data.raw["tree"]["tree-03"].minable.results = {
-  {type = "item", name = "wood", amount = 4},
+  {type = "item", name = "wood", amount = 12},
   {type = "item", name = "tree-seed", probability = 0.1, amount = 1}
 }
 data.raw["tree"]["tree-04"].minable.result = nil
 data.raw["tree"]["tree-04"].minable.count = nil
 data.raw["tree"]["tree-04"].minable.results = {
-  {type = "item", name = "wood", amount = 4},
+  {type = "item", name = "wood", amount = 12},
   {type = "item", name = "tree-seed", probability = 0.1, amount = 1}
 }
 data.raw["tree"]["tree-05"].minable.result = nil
 data.raw["tree"]["tree-05"].minable.count = nil
 data.raw["tree"]["tree-05"].minable.results = {
-  {type = "item", name = "wood", amount = 4},
+  {type = "item", name = "wood", amount = 10},
   {type = "item", name = "tree-seed", probability = 0.1, amount = 1}
 }
 data.raw["tree"]["tree-06"].minable.result = nil
 data.raw["tree"]["tree-06"].minable.count = nil
 data.raw["tree"]["tree-06"].minable.results = {
-  {type = "item", name = "wood", amount = 4},
+  {type = "item", name = "wood", amount = 10},
   {type = "item", name = "tree-seed", probability = 0.1, amount = 1}
 }
 data.raw["tree"]["tree-07"].minable.result = nil
 data.raw["tree"]["tree-07"].minable.count = nil
 data.raw["tree"]["tree-07"].minable.results = {
-  {type = "item", name = "wood", amount = 4},
+  {type = "item", name = "wood", amount = 8},
   {type = "item", name = "tree-seed", probability = 0.1, amount = 1}
 }
 data.raw["tree"]["tree-08"].minable.result = nil
 data.raw["tree"]["tree-08"].minable.count = nil
 data.raw["tree"]["tree-08"].minable.results = {
-  {type = "item", name = "wood", amount = 4},
+  {type = "item", name = "wood", amount = 8},
   {type = "item", name = "tree-seed", probability = 0.1, amount = 1}
 }
 data.raw["tree"]["tree-09"].minable.result = nil
 data.raw["tree"]["tree-09"].minable.count = nil
 data.raw["tree"]["tree-09"].minable.results = {
-  {type = "item", name = "wood", amount = 4},
+  {type = "item", name = "wood", amount = 8},
   {type = "item", name = "tree-seed", probability = 0.1, amount = 1}
 }
 data.raw["tree"]["dry-tree"].minable.result = nil
 data.raw["tree"]["dry-tree"].minable.count = nil
 data.raw["tree"]["dry-tree"].minable.results = {
-  {type = "item", name = "wood", amount = 2},
+  {type = "item", name = "wood", amount = 4},
   {type = "item", name = "tree-seed", probability = 0.05, amount = 1}
 }

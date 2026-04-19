@@ -3,6 +3,7 @@ Upgrade Setup
 - split into content into smaller files
 
 Before new playthrough
+- seed: 2864198402
 - Update names of ores 
   + aluminum ore - bauxite
   + barium ore - barite
@@ -28,6 +29,10 @@ Before new playthrough
 - Add sets
 - move dynamo before electric motor
 - simplify lead tin recipe
+- fix everyting on nauvis mod with 3 party patch
+
+2nd playthrough
+- test on dry planet - very little wood for transport belts
 
 TODO for 0.4.0
 
@@ -53,13 +58,13 @@ New items
       - add uses
     - rivets - niet
       - add uses
-  - structureal-components-set
+  - structural-components-set
     + machined-parts
     + aluminum-frame
     + iron-stick
     - mounting-bracket
       - add uses
-    - rubber-pads
+    - rubber-pad
       - add uses
   - production-components-set
     + gears
@@ -67,11 +72,11 @@ New items
     - bearing
       - use in simple engine
       - add uses
-    + shaft-sleeves
+    + shaft-sleeve
       - use in motors and engines
-    + roller-chains
+    + roller-chain
       - use in red belts
-    + sprockets
+    + sprocket
       - use in red belts
     + coupling
       - use in motors and engines
@@ -83,20 +88,20 @@ New items
       - spring
       - o-ring - currently it exists as seal
     + filter
-  - electrical-components-set
+  - electronic-components-set
     + capacitor
     + coil
     + resistor
     + diode
     + transistor
     + (vacuum-tube)
+
   - chemistry
     - organometallic compounds
     - ionic liquids
     - super acids
     - super bases
     - reducing agents
-
   - electrostatic-precipitator
   - destiller
   - thermal-regulator
@@ -114,6 +119,9 @@ New items
 
 New Icons
 - cubit
+
+Mod split
+- move alien stuff into different mod
 
 fixes
 - fix casting icons

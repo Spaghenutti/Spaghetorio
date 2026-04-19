@@ -534,7 +534,7 @@ util.recipe.change_recipe_ingredients("crusher",
   {
     {type = "item", name = "sp-iron-beam", amount = 10},
     {type = "item", name = "sp-gearbox", amount = 6},
-    {type = "item", name = "sp-bolts", amount = 12},
+    {type = "item", name = "sp-mechanical-components-set", amount = 1},
     {type = "item", name = "electric-engine-unit", amount = 4}
   },
   10)

@@ -6053,26 +6053,6 @@ data:extend({
       {type = "item", name = "pipe", amount = 5}
     }
   },
-  {
-    type = "recipe",
-    name = "sp-valve-from-lead",  -- #ForRegEx# - recipe
-    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/valve.png", 64,
-                                         "__Spaghetorio__/graphics/icons/lead-slab.png", 64),
-    category = "crafting",
-    enabled = false,
-    allow_productivity = true,
-    energy_required = 4,
-    hide_from_player_crafting = true,
-    ingredients = {
-      {type = "item", name = "sp-machined-parts", amount = 4},
-      {type = "item", name = "sp-bolts", amount = 4},
-      {type = "item", name = "sp-bronze-rod", amount = 6},
-      {type = "item", name = "sp-lead-slab", amount = 2}
-    },
-    results = {
-      {type = "item", name = "sp-valve", amount = 4}
-    }
-  },
   ------------------------------------------------------------------------------
   -- MARK: Incomplete recipes
   -- This recipes need ingredients or results defined in other mods 

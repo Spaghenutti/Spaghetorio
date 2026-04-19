@@ -104,6 +104,92 @@ data:extend({
   },
   {
     type = "technology",
+    name = "sp-tin-processing",  -- #ForRegEx# - technology
+    icon_size = 256,
+    -- icon = "__Spaghetorio__/graphics/hr-icons/lead-slab-from-tinstone.png",
+    icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/hr-icons/tin-ingot.png", 256, nil,
+                                   "__Spaghetorio__/graphics/hr-icons/lead-slab.png", 256, nil),
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-tin-ingot"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-lead-slab-from-tinstone"
+      },
+    },
+    research_trigger =
+    {
+      type = "mine-entity",
+      entity = "sp-tinstone"
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-basic-alloy",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghetorio__/graphics/hr-icons/bronze-rod.png",
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-bronze-rod"
+      },
+    },
+    prerequisites = {
+      "sp-tin-processing",
+    },
+    research_trigger = {
+      type = "craft-item",
+      item = "sp-tin-ingot",
+      count = 5
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-bearing",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghetorio__/graphics/hr-icons/bearing.png",
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-bearing"
+      }
+    },
+    prerequisites = {
+      "sp-basic-alloy",
+    },
+    research_trigger = {
+      type = "craft-item",
+      item = "sp-bronze-rod",
+      count = 2
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-tin-processing",  -- #ForRegEx# - technology
+    icon_size = 256,
+    -- icon = "__Spaghetorio__/graphics/hr-icons/lead-slab-from-tinstone.png",
+    icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/hr-icons/tin-ingot.png", 256, nil,
+                                        "__Spaghetorio__/graphics/hr-icons/lead-slab.png", 256, nil),
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-tin-ingot"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-lead-slab-from-tinstone"
+      },
+    },
+    research_trigger =
+    {
+      type = "mine-entity",
+      entity = "sp-tinstone"
+    },
+  },
+  {
+    type = "technology",
     name = "sp-lumber-mill",  -- #ForRegEx# - technology
     icon_size = 256,
     icon = "__Spaghetorio__/graphics/hr-icons/lumber-mill.png",
@@ -126,52 +212,6 @@ data:extend({
         {"automation-science-pack", 1}
       },
       time = 30
-    },
-  },
-  {
-    type = "technology",
-    name = "sp-tin-processing",  -- #ForRegEx# - technology
-    icon_size = 256,
-    -- icon = "__Spaghetorio__/graphics/hr-icons/tin-and-lead.png",
-    icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/hr-icons/tin-ingot.png", 256, nil,
-                                        "__Spaghetorio__/graphics/hr-icons/lead-slab.png", 256, nil),
-    effects = {
-      {
-        type = "unlock-recipe",
-        recipe = "sp-tin-ingot"
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-tin-and-lead"
-      },
-    },
-    research_trigger =
-    {
-      type = "mine-entity",
-      entity = "sp-tinstone"
-    },
-  },
-  {
-    type = "technology",
-    name = "sp-tin-processing",  -- #ForRegEx# - technology
-    icon_size = 256,
-    -- icon = "__Spaghetorio__/graphics/hr-icons/tin-and-lead.png",
-    icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/hr-icons/tin-ingot.png", 256, nil,
-                                   "__Spaghetorio__/graphics/hr-icons/lead-slab.png", 256, nil),
-    effects = {
-      {
-        type = "unlock-recipe",
-        recipe = "sp-tin-ingot"
-      },
-      {
-        type = "unlock-recipe",
-        recipe = "sp-tin-and-lead"
-      },
-    },
-    research_trigger =
-    {
-      type = "mine-entity",
-      entity = "sp-tinstone"
     },
   },
   {
@@ -216,28 +256,6 @@ data:extend({
       type = "craft-item",
       item = "sp-sand",
       count = 10
-    },
-  },
-  {
-    type = "technology",
-    name = "sp-basic-alloy",  -- #ForRegEx# - technology
-    icon_size = 256,
-    icon = "__Spaghetorio__/graphics/hr-icons/bronze-rod.png",
-    effects = {
-      {
-        type = "unlock-recipe",
-        recipe = "sp-bronze-rod"
-      },
-    },
-    prerequisites = {
-      "automation-science-pack"
-    },
-    unit = {
-      count = 5,
-      ingredients = {
-        {"automation-science-pack", 1}
-      },
-      time = 30
     },
   },
   {
@@ -1761,6 +1779,30 @@ data:extend({
   },
   {
     type = "technology",
+    name = "sp-production-components-set",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghetorio__/graphics/hr-icons/production-components-set.png",
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-production-components-set"
+      }
+    },
+    prerequisites = {
+      "sp-stainless-steel-processing"
+    },
+    unit = {
+      count = 25,
+      ingredients = {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"sp-material-science-pack-1", 1}
+      },
+      time = 30
+    },
+  },
+  {
+    type = "technology",
     name = "sp-stainless-steel-processing",  -- #ForRegEx# - technology
     icon_size = 256,
     icons = util.icon.combine_two_icons("__Spaghetorio__/graphics/hr-icons/stainless-steel.png", 256, nil,
@@ -2482,8 +2524,8 @@ data:extend({
     name = "sp-ruthenium-alloys",  -- #ForRegEx# - technology
     icon_size = 256,
     icons = util.icon.combine_three_icons("__Spaghetorio__/graphics/hr-icons/ruthenium-rhodium.png", 256, nil,
-                                          "__Spaghetorio__/graphics/hr-icons/tohoku.png", 256, nil,
-                                          "__Spaghetorio__/graphics/hr-icons/titanium-ruthenium.png", 256, nil),
+                                          "__Spaghetorio__/graphics/hr-icons/titanium-ruthenium.png", 256, nil,                                      
+                                          "__Spaghetorio__/graphics/hr-icons/tohoku.png", 256, nil),
     effects = {
       {
         type = "unlock-recipe",
@@ -5703,6 +5745,58 @@ data:extend({
     },
     unit = {
       count = 100,
+      ingredients = {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"sp-material-science-pack-1", 1},
+        {"sp-geological-science-pack-1", 1}
+      },
+      time = 30
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-structural-components-set",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghetorio__/graphics/hr-icons/structural-components-set.png",
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-structural-components-set"
+      },
+    },
+    prerequisites = {
+      "sp-rubber"
+    },
+    unit = {
+      count = 25,
+      ingredients = {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+        {"chemical-science-pack", 1},
+        {"sp-material-science-pack-1", 1},
+        {"sp-geological-science-pack-1", 1}
+      },
+      time = 30
+    },
+  },
+  {
+    type = "technology",
+    name = "sp-fluid-handling-components-set",  -- #ForRegEx# - technology
+    icon_size = 256,
+    icon = "__Spaghetorio__/graphics/hr-icons/fluid-handling-components-set.png",
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "sp-fluid-handling-components-set"
+      },
+    },
+    prerequisites = {
+      "sp-rubber"
+    },
+    unit = {
+      count = 25,
       ingredients = {
         {"automation-science-pack", 1},
         {"logistic-science-pack", 1},
@@ -12316,6 +12410,10 @@ data:extend({
       {
         type = "unlock-recipe",
         recipe = "sp-electronic-science-pack-1"
+      },
+      {
+        type = "unlock-recipe",
+        recipe = "sp-electronic-components-set"
       },
     },
     prerequisites = {

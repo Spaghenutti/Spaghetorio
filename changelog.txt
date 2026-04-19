@@ -3,7 +3,7 @@ Version: 0.4.0
 Date: 2026-04-13
   Features:
     - BREAKING CHANGES: Many raw ores and recipes are renamed and changed
-    - Added new items
+    - Added new items, recipes and technologies
   Changes:
     - Updated icons
 ---------------------------------------------------------------------------------------------------

@@ -57,6 +57,7 @@ data.raw.technology["electric-engine"].research_trigger = {
 }
 data.raw.technology["electric-engine"].prerequisites = {
   "sp-iron-machining",
+  "sp-bearing",
   "electronics"
 }
 
@@ -70,6 +71,7 @@ data.raw.technology["steam-power"].research_trigger = {
   count = 1
 }
 
+table.insert(data.raw.technology["automation"].effects, {type = "unlock-recipe", recipe = "sp-mechanical-components-set"})
 table.insert(data.raw.technology["automation"].effects, {type = "unlock-recipe", recipe = "sp-gearbox"})
 data.raw.technology["automation"].unit = nil
 data.raw.technology["automation"].prerequisites = {
@@ -81,7 +83,6 @@ data.raw.technology["automation"].research_trigger = {
   count = 1
 }
 
-table.insert(data.raw.technology["engine"].effects, {type = "unlock-recipe", recipe = "sp-bearing"})
 data.raw.technology["engine"].prerequisites = {
   "sp-steel-machining",
   "sp-roller-chains-and-sprockets"
@@ -253,7 +254,6 @@ data.raw.technology["advanced-material-processing-2"].unit.ingredients = {
 }
 
 table.insert(data.raw.technology["fluid-handling"].effects, {type = "unlock-recipe", recipe = "sp-valve"})
-table.insert(data.raw.technology["fluid-handling"].effects, {type = "unlock-recipe", recipe = "sp-valve-from-lead"})
 data.raw.technology["fluid-handling"].prerequisites = {
   "sp-basic-alloy",
   "steel-processing",
@@ -391,7 +391,7 @@ data.raw.technology["steel-processing"].unit = {
   time = 15
 }
 
-table.insert(data.raw.technology["oil-gathering"].prerequisites, "sp-stainless-steel-processing")
+table.insert(data.raw.technology["oil-gathering"].prerequisites, "sp-production-components-set")
 table.insert(data.raw.technology["oil-gathering"].effects, {type = "unlock-recipe", recipe = "sp-flange"})
 data.raw.technology["oil-gathering"].unit = {
   count = 50,

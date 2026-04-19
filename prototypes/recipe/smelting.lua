@@ -143,8 +143,9 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "sp-tin-and-lead",  -- #ForRegEx# - recipe
-    icon = "__Spaghetorio__/graphics/icons/tin-and-lead.png",
+    name = "sp-lead-slab-from-tinstone",  -- #ForRegEx# - recipe
+    icons = util.icon.overlay_small_icon("__Spaghetorio__/graphics/icons/lead-slab.png", 64,
+                                         "__Spaghetorio__/graphics/icons/tinstone-1.png", 64),
     icon_size = 64,
     mip_maps = 4,
     category = "smelting",
@@ -154,11 +155,10 @@ data:extend({
     energy_required = 4,
     hide_from_player_crafting = true,
     ingredients = {
-      {type = "item", name = "sp-tinstone", amount = 2},
+      {type = "item", name = "sp-tinstone", amount = 4},
     },
     results = {
-      {type = "item", name = "sp-tin-ingot", probability = 0.7, amount = 2},
-      {type = "item", name = "sp-lead-slab", probability = 0.3, amount = 2}
+      {type = "item", name = "sp-lead-slab", amount = 1}
     }
   },
   {

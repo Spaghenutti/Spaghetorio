@@ -1,5 +1,6 @@
 require("mechanical-component")
 require("electronic-optical-component")
+require("components-set")
 require("intermediate-products")
 require("advanced-intermediate-product")
 require("alien-product")

@@ -24,6 +24,8 @@ data.raw.item["processing-unit"].order = "h-ac[rocessing-unit]"
 
 data.raw.item["battery"].order = "battery-[battery]"
 
+data.raw.item["electric-engine-unit"].subgroup = "electricmagnetic-[electric-engine-unit]"
+
 -- data.raw.item["satellite"].order = "m-1-[satellite]"
 data.raw.item["uranium-235"].order = "a-nuclear-i-[uranium-235]"
 data.raw.item["uranium-238"].order = "a-nuclear-i-[uranium-238]"
@@ -102,6 +104,11 @@ data.raw.item["electronic-circuit"].subgroup = "sp-electronic-optical-component"
 data.raw.item["advanced-circuit"].subgroup = "sp-electronic-optical-component"
 data.raw.item["processing-unit"].subgroup = "sp-electronic-optical-component"  -- idea: use this as processor and change icon
 data.raw.item["battery"].subgroup = "sp-electronic-optical-component"
+
+data.raw.item["barrel"].subgroup = "sp-intermediate-product"
+data.raw.item["engine-unit"].subgroup = "sp-intermediate-product"
+data.raw.item["electric-engine-unit"].subgroup = "sp-intermediate-product"
+data.raw.item["flying-robot-frame"].subgroup = "sp-intermediate-product"
 
 data.raw.item["solid-fuel"].subgroup = "sp-fuel-processing"
 data.raw.item["rocket-fuel"].subgroup = "sp-fuel-processing"

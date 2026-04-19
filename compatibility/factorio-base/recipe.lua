@@ -90,7 +90,10 @@ util.recipe.change_recipe_ingredients("wooden-chest",
 
  util.recipe.change_recipe_ingredients("small-electric-pole",
   {
-    {type = "item", name = "copper-cable", amount = 1},
+    {type = "item", name = "copper-cable", amount = 2},
+    {type = "item", name = "sp-mounting-bracket", amount = 2},
+    {type = "item", name = "sp-rivets", amount = 2},
+    {type = "item", name = "sp-washers", amount = 2},
     {type = "item", name = "sp-wooden-pole", amount = 1}
   },
   0.5)
@@ -98,11 +101,21 @@ data.raw.recipe["small-electric-pole"].results = {
     {type = "item", name = "small-electric-pole", amount = 1}
   }
 
+util.recipe.change_recipe_ingredients("iron-chest",
+  {
+    {type = "item", name = "sp-rivets", amount = 4},
+    {type = "item", name = "iron-plate", amount = 6},
+    {type = "item", name = "sp-mounting-bracket", amount = 4},
+    {type = "item", name = "sp-washers", amount = 4},
+  },
+  nil)
+
 util.recipe.change_recipe_ingredients("burner-mining-drill",
   {
     {type = "item", name = "sp-spring", amount = 2},
     {type = "item", name = "sp-machined-parts", amount = 2},
     {type = "item", name = "sp-bolts", amount = 4},
+    {type = "item", name = "sp-nuts", amount = 4},
     {type = "item", name = "iron-gear-wheel", amount = 4},
   },
   3)
@@ -110,6 +123,7 @@ util.recipe.change_recipe_ingredients("burner-mining-drill",
 util.recipe.change_recipe_ingredients("electronic-circuit",
   {
     {type = "item", name = "copper-cable", amount = 2},
+    {type = "item", name = "sp-mounting-bracket", amount = 1},
     {type = "item", name = "sp-wooden-board", amount = 1},
     {type = "item", name = "sp-solder", amount = 1}
   },
@@ -154,7 +168,8 @@ data.raw.recipe["electric-engine-unit"].category = "crafting"
 util.recipe.change_recipe_ingredients("electric-engine-unit",
   {
     {type = "item", name = "electronic-circuit", amount = 1},
-    {type = "item", name = "sp-bolts", amount = 6},
+    {type = "item", name = "copper-cable", amount = 6},
+    {type = "item", name = "sp-bearing", amount = 1},
     {type = "item", name = "sp-machined-parts", amount = 5},
     {type = "item", name = "iron-stick", amount = 1}
   },
@@ -433,8 +448,9 @@ data.raw.recipe["lubricant"].results = {
 --------------------------------------------------------------------------------
 util.recipe.change_recipe_ingredients("transport-belt",
   {
-    {type = "item", name = "iron-plate", amount = 1},
-    {type = "item", name = "iron-stick", amount = 1},
+    {type = "item", name = "sp-wooden-board", amount = 1},
+    {type = "item", name = "sp-mounting-bracket", amount = 2},
+    {type = "item", name = "sp-spring", amount = 2},
     {type = "item", name = "electric-engine-unit", amount = 1}
   },
   nil)
@@ -461,7 +477,6 @@ util.recipe.change_recipe_ingredients("express-transport-belt",
 
 util.recipe.change_recipe_ingredients("underground-belt",
   {
-    {type = "item", name = "iron-plate", amount = 2},
     {type = "item", name = "sp-wooden-board", amount = 2},
     {type = "item", name = "sp-bolts", amount = 4},
     {type = "item", name = "transport-belt", amount = 6}
@@ -514,23 +529,31 @@ util.recipe.change_recipe_ingredients("express-splitter",
   },
   nil)
 
-table.insert(data.raw.recipe["burner-inserter"].ingredients, {type = "item", name = "sp-bolts", amount = 3})
-table.insert(data.raw.recipe["burner-inserter"].ingredients, {type = "item", name = "sp-wooden-board", amount = 1})
+util.recipe.change_recipe_ingredients("burner-inserter",
+  {
+    {type = "item", name = "sp-machined-parts", amount = 1},
+    {type = "item", name = "sp-wooden-pole", amount = 1},
+    {type = "item", name = "iron-gear-wheel", amount = 2},
+    {type = "item", name = "sp-mounting-bracket", amount = 2},
+    {type = "item", name = "sp-bolts", amount = 2},
+  },
+  nil)
 
 util.recipe.change_recipe_ingredients("inserter",
   {
+    {type = "item", name = "sp-machined-parts", amount = 2},
     {type = "item", name = "electronic-circuit", amount = 1},
-    {type = "item", name = "sp-wooden-board", amount = 1},
+    {type = "item", name = "sp-wooden-pole", amount = 2},
     {type = "item", name = "sp-bolts", amount = 2},
-    {type = "item", name = "sp-spring", amount = 1}
+    {type = "item", name = "sp-spring", amount = 2}
   },
   0.5)
 
 util.recipe.change_recipe_ingredients("long-handed-inserter",
   {
-    {type = "item", name = "electronic-circuit", amount = 1},
+    {type = "item", name = "electronic-circuit", amount = 2},
     {type = "item", name = "sp-gearbox", amount = 1},
-    {type = "item", name = "sp-wooden-board", amount = 3},
+    {type = "item", name = "sp-wooden-pole", amount = 4},
     {type = "item", name = "sp-bolts", amount = 4},
     {type = "item", name = "sp-spring", amount = 2}
   },
@@ -603,7 +626,8 @@ util.recipe.change_recipe_ingredients("substation",
 
 util.recipe.change_recipe_ingredients("pipe",
   {
-    {type = "item", name = "iron-plate", amount = 2}
+    {type = "item", name = "iron-plate", amount = 2},
+    {type = "item", name = "sp-lead-slab", amount = 1}
   },
   0.2)
 
@@ -892,8 +916,15 @@ util.recipe.change_recipe_ingredients("combat-shotgun",
   },
   6)
 
+util.recipe.change_recipe_ingredients("firearm-magazine",
+  {
+    {type = "item", name = "sp-lead-slab", amount = 1},
+    {type = "item", name = "coal", amount = 1},
+    {type = "item", name = "sp-spring", amount = 1}
+  },
+  0.5)
 data.raw.recipe["firearm-magazine"].results = {
-  {type = "item", name = "firearm-magazine", amount = 4}
+  {type = "item", name = "firearm-magazine", amount = 2}
 }
 
 util.recipe.change_recipe_ingredients("piercing-rounds-magazine",
@@ -1151,7 +1182,11 @@ util.recipe.change_recipe_ingredients("destroyer-capsule",
 util.recipe.change_recipe_ingredients("light-armor",
   {
     {type = "item", name = "iron-plate", amount = 10},
-    {type = "item", name = "sp-bolts", amount = 6}
+    {type = "item", name = "sp-wooden-board", amount = 4},
+    {type = "item", name = "sp-spring", amount = 2},
+    {type = "item", name = "sp-mounting-bracket", amount = 4},
+    {type = "item", name = "sp-washers", amount = 4},
+    {type = "item", name = "sp-rivets", amount = 4},
   },
   2)
 
@@ -1474,7 +1509,9 @@ util.recipe.change_recipe_ingredients("electric-mining-drill",
 util.recipe.change_recipe_ingredients("boiler",
   {
     {type = "item", name = "copper-plate", amount = 20},
-    {type = "item", name = "sp-bolts", amount = 12},
+    {type = "item", name = "sp-rivets", amount = 12},
+    {type = "item", name = "sp-washers", amount = 12},
+    {type = "item", name = "sp-mounting-bracket", amount = 8},
     {type = "item", name = "sp-copper-tube", amount = 24},
     {type = "item", name = "stone-brick", amount = 14}
   },
@@ -1484,7 +1521,9 @@ util.recipe.change_recipe_ingredients("steam-engine",
   {
     {type = "item", name = "stone-brick", amount = 12},
     {type = "item", name = "iron-plate", amount = 24},
-    {type = "item", name = "sp-bolts", amount = 36},
+    {type = "item", name = "sp-bolts", amount = 30},
+    {type = "item", name = "sp-nuts", amount = 30},
+    {type = "item", name = "iron-gear-wheel", amount = 12},
     {type = "item", name = "electric-engine-unit", amount = 2},
     {type = "item", name = "sp-copper-tube", amount = 12}
   },
@@ -1495,7 +1534,7 @@ util.recipe.change_recipe_ingredients("assembling-machine-1",
     {type = "item", name = "sp-iron-beam", amount = 30},
     {type = "item", name = "stone-brick", amount = 20},
     {type = "item", name = "electronic-circuit", amount = 10},
-    {type = "item", name = "sp-bolts", amount = 24},
+    {type = "item", name = "sp-mechanical-components-set", amount = 2},
     {type = "item", name = "electric-engine-unit", amount = 6},
     {type = "item", name = "sp-gearbox", amount = 4}
   },
@@ -1539,7 +1578,7 @@ util.recipe.change_recipe_ingredients("pumpjack",
     {type = "item", name = "stone-brick", amount = 12},
     {type = "item", name = "sp-valve", amount = 8},
     {type = "item", name = "sp-flange", amount = 6},
-    {type = "item", name = "sp-steel-gear-wheel", amount = 8}
+    {type = "item", name = "sp-production-components-set", amount = 1}
   },
   16)
 
@@ -1720,10 +1759,11 @@ util.recipe.change_recipe_ingredients("steam-turbine",
 
 util.recipe.change_recipe_ingredients("offshore-pump",
   {
-    {type = "item", name = "iron-plate", amount = 3},
+    {type = "item", name = "sp-machined-parts", amount = 4},
     {type = "item", name = "electric-engine-unit", amount = 2},
     {type = "item", name = "pipe", amount = 4},
-    {type = "item", name = "sp-bolts", amount = 2}
+    {type = "item", name = "sp-rivets", amount = 6},
+    {type = "item", name = "sp-washers", amount = 6}
   },
   2)
 
@@ -1733,6 +1773,7 @@ util.recipe.change_recipe_ingredients("offshore-pump",
 util.recipe.change_recipe_ingredients("gun-turret",
   {
     {type = "item", name = "iron-plate", amount = 10},
+    {type = "item", name = "iron-gear-wheel", amount = 5},
     {type = "item", name = "sp-machined-parts", amount = 8},
     {type = "item", name = "sp-bolts", amount = 12},
     {type = "item", name = "sp-spring", amount = 4},
@@ -1790,6 +1831,7 @@ util.recipe.change_recipe_ingredients("automation-science-pack",
     {type = "item", name = "sp-gearbox", amount = 5},
     {type = "item", name = "electric-engine-unit", amount = 2},
     {type = "item", name = "electronic-circuit", amount = 2},
+    {type = "item", name = "sp-mechanical-components-set", amount = 1},
     {type = "item", name = "sp-blank-tech-card", amount = 5}
   },
   20)

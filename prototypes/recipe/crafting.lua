@@ -3,6 +3,101 @@ local util = require("data-util")
 data:extend({
   {
     type = "recipe",
+    name = "sp-mechanical-components-set",  -- #ForRegEx# - recipe
+    category = "crafting",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 0.5,
+    ingredients = {
+      {type = "item", name = "iron-gear-wheel", amount = 4},
+      {type = "item", name = "sp-bolts", amount = 5},
+      {type = "item", name = "sp-nuts", amount = 5},
+      {type = "item", name = "sp-spring", amount = 2},
+      {type = "item", name = "sp-washers", amount = 6},
+      {type = "item", name = "sp-rivets", amount = 6}
+    },
+    results = {
+      {type = "item", name = "sp-mechanical-components-set", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-structural-components-set",  -- #ForRegEx# - recipe
+    category = "crafting",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 0.5,
+    ingredients = {
+      {type = "item", name = "sp-iron-beam", amount = 6},
+      {type = "item", name = "iron-stick", amount = 10},
+      {type = "item", name = "sp-machined-parts", amount = 8},
+      {type = "item", name = "sp-aluminum-frame", amount = 5},
+      {type = "item", name = "sp-mounting-bracket", amount = 10},
+      {type = "item", name = "sp-rubber-pad", amount = 10}
+    },
+    results = {
+      {type = "item", name = "sp-structural-components-set", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-fluid-handling-components-set",  -- #ForRegEx# - recipe
+    category = "crafting",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 0.5,
+    ingredients = {
+      {type = "item", name = "sp-copper-tube", amount = 8},
+      {type = "item", name = "sp-flange", amount = 2},
+      {type = "item", name = "sp-seal", amount = 5},
+      {type = "item", name = "sp-filter", amount = 2},
+      {type = "item", name = "sp-pressure-valve", amount = 1},
+      {type = "item", name = "sp-plate-heat-exchanger", amount = 1}
+    },
+    results = {
+      {type = "item", name = "sp-fluid-handling-components-set", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-electronic-components-set",  -- #ForRegEx# - recipe
+    category = "crafting",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 0.5,
+    ingredients = {
+      {type = "item", name = "sp-capacitor", amount = 5},
+      {type = "item", name = "sp-coil", amount = 5},
+      {type = "item", name = "sp-resistor", amount = 5},
+      {type = "item", name = "sp-diode", amount = 5},
+      {type = "item", name = "sp-transistor", amount = 5}
+    },
+    results = {
+      {type = "item", name = "sp-electronic-components-set", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
+    name = "sp-production-components-set",  -- #ForRegEx# - recipe
+    category = "crafting",
+    enabled = false,
+    allow_productivity = true,
+    energy_required = 0.5,
+    ingredients = {
+      {type = "item", name = "sp-steel-gear-wheel", amount = 10},
+      {type = "item", name = "sp-stainless-steel-gear-wheel", amount = 10},
+      {type = "item", name = "sp-bearing", amount = 5},
+      {type = "item", name = "sp-shaft-sleeve", amount = 2},
+      {type = "item", name = "sp-roller-chain", amount = 2},
+      {type = "item", name = "sp-sprocket", amount = 4},
+      {type = "item", name = "sp-coupling", amount = 2}
+    },
+    results = {
+      {type = "item", name = "sp-production-components-set", amount = 1}
+    }
+  },
+  {
+    type = "recipe",
     name = "sp-aluminum-frame",  -- #ForRegEx# - recipe
     category = "crafting",
     enabled = false,
@@ -521,9 +616,10 @@ data:extend({
     allow_productivity = true,
     energy_required = 1,
     ingredients = {
-      {type = "item", name = "iron-plate", amount = 1},
+      {type = "item", name = "sp-machined-parts", amount = 1},
       {type = "item", name = "iron-stick", amount = 1},
-      {type = "item", name = "iron-gear-wheel", amount = 3}
+      {type = "item", name = "iron-gear-wheel", amount = 3},
+      {type = "item", name = "sp-bearing", amount = 1},
     },
     results = {
       {type = "item", name = "sp-gearbox", amount = 1}
@@ -1159,9 +1255,8 @@ data:extend({
     energy_required = 24,
     ingredients = {
       {type = "item", name = "sp-blank-tech-card", amount = 5},
-      {type = "item", name = "sp-resistor", amount = 10},
-      {type = "item", name = "sp-capacitor", amount = 5},
-      {type = "item", name = "sp-diode", amount = 5},
+      {type = "item", name = "sp-electronic-components-set", amount = 1},
+      {type = "item", name = "sp-vacuum-tube", amount = 5},
       {type = "item", name = "electronic-circuit", amount = 5}
     },
     results = {

@@ -21,39 +21,45 @@ data:extend({
   },
   {
     type = "item-subgroup",
-    name = "sp-intermediate-product",  -- #ForRegEx# - item-subgroup
+    name = "sp-components-set",  -- #ForRegEx# - item-subgroup
     group = "intermediate-products",
     order = "f"
   },
   {
     type = "item-subgroup",
-    name = "sp-advanced-intermediate-product",  -- #ForRegEx# - item-subgroup
+    name = "sp-intermediate-product",  -- #ForRegEx# - item-subgroup
     group = "intermediate-products",
     order = "g"
   },
   {
     type = "item-subgroup",
-    name = "sp-space-intermediates",  -- #ForRegEx# - item-subgroup
+    name = "sp-advanced-intermediate-product",  -- #ForRegEx# - item-subgroup
     group = "intermediate-products",
     order = "h"
   },
   {
     type = "item-subgroup",
-    name = "sp-alien-product",  -- #ForRegEx# - item-subgroup
+    name = "sp-space-intermediates",  -- #ForRegEx# - item-subgroup
     group = "intermediate-products",
     order = "i"
   },
   {
     type = "item-subgroup",
-    name = "sp-intermediate-alien-product",  -- #ForRegEx# - item-subgroup
+    name = "sp-alien-product",  -- #ForRegEx# - item-subgroup
     group = "intermediate-products",
     order = "j"
   },
   {
     type = "item-subgroup",
-    name = "sp-advanced-alien-product",  -- #ForRegEx# - item-subgroup
+    name = "sp-intermediate-alien-product",  -- #ForRegEx# - item-subgroup
     group = "intermediate-products",
     order = "k"
+  },
+  {
+    type = "item-subgroup",
+    name = "sp-advanced-alien-product",  -- #ForRegEx# - item-subgroup
+    group = "intermediate-products",
+    order = "l"
   },
   {
     type = "item-subgroup",
