@@ -309,4 +309,25 @@ data:extend({
       {type = "item", name = "sp-matter-research-data", amount = 5}
     }
   },
+  -- MARK: Building
+  {
+    type = "recipe",
+    name = "sp-kr-advanced-solar-panel",  -- #ForRegEx# - recipe
+    icon_size = 64,
+    mip_maps = 4,
+    category = "crafting-with-fluid",
+    energy_required = 12,
+    enabled = false,
+    allow_productivity = false,
+    ingredients = {
+      {type = "fluid", name = "sp-nitric-acid", amount = 25},
+      {type = "item", name = "sp-imersite-crystal", amount = 10},
+      {type = "item", name = "sp-tellurium", amount = 3},
+      {type = "item", name = "sp-titanium-frame", amount = 20},
+      {type = "item", name = "sp-advanced-processing-unit", amount = 2}
+    },
+    results = {
+      {type = "item", name = "sp-kr-advanced-solar-panel", amount = 1}
+    }
+  },
 })

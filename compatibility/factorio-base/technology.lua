@@ -95,6 +95,10 @@ data.raw.technology["engine"].unit.ingredients = {
   {"automation-science-pack", 1},
 }
 
+data.raw.technology["repair-pack"].prerequisites = {
+  "sp-roller-chains-and-sprockets"
+}
+
 data.raw.technology["gun-turret"].prerequisites = {"electric-engine"}
 data.raw.technology["gun-turret"].unit = nil
 data.raw.technology["gun-turret"].research_trigger =
@@ -172,8 +176,6 @@ data.raw.technology["battery"].unit.ingredients = {
   {"sp-material-science-pack-1", 1},
   {"sp-electronic-science-pack-1", 1}
 }
-
-table.insert(data.raw.technology["logistic-science-pack"].prerequisites, "engine")
 
 data.raw.technology["military-science-pack"].prerequisites = {
   "sp-intermediate-military",
@@ -2554,7 +2556,8 @@ data.raw.technology["logistic-science-pack"].icon = "__Spaghetorio__/graphics/kr
 data.raw.technology["logistic-science-pack"].prerequisites = {
   "engine",
   "fluid-handling",
-  "sp-kr-automation-core"
+  "sp-kr-automation-core",
+  "repair-pack"
 }
 
 data.raw.technology["military-science-pack"].icon = "__Spaghetorio__/graphics/krastorio/technologies/military-tech-card.png"

@@ -872,27 +872,28 @@ util.recipe.change_recipe_ingredients("small-lamp",
     {type = "item", name = "copper-cable", amount = 2},
     {type = "item", name = "electronic-circuit", amount = 1},
     {type = "item", name = "sp-glass", amount = 1},
-    {type = "item", name = "iron-plate", amount = 1},
+    {type = "item", name = "sp-machined-parts", amount = 2},
   },
   1)
+
+util.recipe.change_recipe_ingredients("repair-pack",
+  {
+    {type = "item", name = "electronic-circuit", amount = 2},
+    {type = "item", name = "sp-mechanical-components-set", amount = 1},
+    {type = "item", name = "sp-roller-chain", amount = 1},
+    {type = "item", name = "sp-sprocket", amount = 1},
+  },
+  0.5)
 
 --------------------------------------------------------------------------------
 -- MARK: Combat
 --------------------------------------------------------------------------------
-util.recipe.change_recipe_ingredients("submachine-gun",
-  {
-    {type = "item", name = "sp-machined-parts", amount = 3},
-    {type = "item", name = "sp-spring", amount = 2},
-    {type = "item", name = "sp-bolts", amount = 6},
-    {type = "item", name = "electric-engine-unit", amount = 2}
-  },
-  4)
 
 util.recipe.change_recipe_ingredients("submachine-gun",
   {
-    {type = "item", name = "iron-plate", amount = 1},
+    {type = "item", name = "sp-machined-parts", amount = 4},
     {type = "item", name = "sp-spring", amount = 1},
-    {type = "item", name = "iron-stick", amount = 2},
+    {type = "item", name = "sp-bearing", amount = 1},
     {type = "item", name = "sp-lead-slab", amount = 1},
   },
   3)
@@ -901,6 +902,7 @@ util.recipe.change_recipe_ingredients("shotgun",
   {
     {type = "item", name = "steel-plate", amount = 3},
     {type = "item", name = "sp-lead-slab", amount = 1},
+    {type = "item", name = "sp-bearing", amount = 1},
     {type = "item", name = "sp-spring", amount = 1},
     {type = "item", name = "sp-machined-parts", amount = 3}
   },
@@ -1654,12 +1656,12 @@ util.recipe.change_recipe_ingredients("chemical-plant",
   {
     {type = "item", name = "sp-glass", amount = 20},
     {type = "item", name = "sp-steel-sheet", amount = 16},
-    {type = "item", name = "sp-steel-beam", amount = 10},
     {type = "item", name = "electric-engine-unit", amount = 6},
     {type = "item", name = "stone-brick", amount = 30},
     {type = "item", name = "sp-copper-tube", amount = 16},
     {type = "item", name = "electronic-circuit", amount = 16},
-    {type = "item", name = "sp-valve", amount = 4}
+    {type = "item", name = "sp-valve", amount = 4},
+    {type = "item", name = "sp-mechanical-components-set", amount = 2},
   },
   12)
 
@@ -1667,8 +1669,8 @@ util.recipe.change_recipe_ingredients("radar",
   {
     {type = "item", name = "sp-steel-sheet", amount = 30},
     {type = "item", name = "sp-steel-beam", amount = 6},
+    {type = "item", name = "sp-mechanical-components-set", amount = 2},
     {type = "item", name = "sp-automation-core", amount = 4},
-    {type = "item", name = "sp-bolts", amount = 18},
     {type = "item", name = "electronic-circuit", amount = 20}
   },
   12)
@@ -1683,7 +1685,7 @@ util.recipe.change_recipe_ingredients("storage-tank",
   {
     {type = "item", name = "sp-copper-tube", amount = 10},
     {type = "item", name = "sp-steel-sheet", amount = 16},
-    {type = "item", name = "sp-bolts", amount = 10},
+    {type = "item", name = "sp-mechanical-components-set", amount = 1},
     {type = "item", name = "sp-valve", amount = 4}
   },
   8)
@@ -1847,9 +1849,10 @@ data.raw.recipe["automation-science-pack"].results = {
 
 util.recipe.change_recipe_ingredients("logistic-science-pack",
   {
-    {type = "item", name = "engine-unit", amount = 5},
+    {type = "item", name = "repair-pack", amount = 5},
+    {type = "item", name = "engine-unit", amount = 3},
     {type = "item", name = "sp-automation-core", amount = 2},
-    {type = "item", name = "sp-valve", amount = 2},
+    {type = "item", name = "sp-valve", amount = 5},
     {type = "item", name = "sp-blank-tech-card", amount = 5}
   },
   20)
