@@ -180,7 +180,7 @@ data:extend({
       {size = 64, filename = "__Spaghetorio__/graphics/icons/machine-housing-3.png", scale = 0.5, mipmap_count = 4},
       {size = 64, filename = "__Spaghetorio__/graphics/icons/machine-housing-4.png", scale = 0.5, mipmap_count = 4}
     },
-    subgroup = "sp-intermediate-product",
+    subgroup = "sp-mechanical-component",
     order = "frame-3-[machine-housing]",
     stack_size = 50
   },

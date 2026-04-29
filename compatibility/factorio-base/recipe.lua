@@ -168,9 +168,9 @@ data.raw.recipe["electric-engine-unit"].category = "crafting"
 util.recipe.change_recipe_ingredients("electric-engine-unit",
   {
     {type = "item", name = "electronic-circuit", amount = 1},
-    {type = "item", name = "copper-cable", amount = 6},
+    {type = "item", name = "copper-cable", amount = 3},
     {type = "item", name = "sp-bearing", amount = 1},
-    {type = "item", name = "sp-machined-parts", amount = 5},
+    {type = "item", name = "sp-machined-parts", amount = 2},
     {type = "item", name = "iron-stick", amount = 1}
   },
   1)
@@ -478,7 +478,8 @@ util.recipe.change_recipe_ingredients("express-transport-belt",
 util.recipe.change_recipe_ingredients("underground-belt",
   {
     {type = "item", name = "sp-wooden-board", amount = 2},
-    {type = "item", name = "sp-bolts", amount = 4},
+    {type = "item", name = "sp-bolts", amount = 2},
+    {type = "item", name = "sp-nuts", amount = 2},
     {type = "item", name = "transport-belt", amount = 6}
   },
   nil)
@@ -1677,7 +1678,7 @@ util.recipe.change_recipe_ingredients("radar",
 
 util.recipe.change_recipe_ingredients("barrel",
   {
-    {type = "item", name = "sp-steel-sheet", amount = 3}
+    {type = "item", name = "sp-steel-sheet", amount = 4}
   },
   nil)
 

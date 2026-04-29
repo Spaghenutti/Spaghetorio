@@ -187,8 +187,8 @@ data:extend({
     allow_productivity = true,
     energy_required = 1.5,
     ingredients = {
-      {type = "item", name = "steel-plate", amount = 2},
-      {type = "item", name = "sp-bronze-rod", amount = 1}
+      {type = "item", name = "steel-plate", amount = 1},
+      {type = "item", name = "sp-bearing", amount = 2}
     },
     results = {
       {type = "item", name = "sp-connecting-rod", amount = 3}
@@ -338,7 +338,7 @@ data:extend({
     category = "crafting",
     enabled = false,
     allow_productivity = true,
-    energy_required = 1.5,
+    energy_required = 0.5,
     ingredients = {
       {type = "item", name = "sp-bronze-rod", amount = 1},
     },
