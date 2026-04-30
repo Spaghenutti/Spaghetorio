@@ -61,6 +61,32 @@ data.raw.technology["electric-engine"].prerequisites = {
   "electronics"
 }
 
+data.raw.technology["steam-power"].effects = {
+  {
+    type = "unlock-recipe",
+    recipe =  "steam-engine"
+  },
+  {
+    type = "unlock-recipe",
+    recipe =  "boiler"
+  },
+  {
+    type = "unlock-recipe",
+    recipe =  "offshore-pump"
+  },
+  {
+    type = "unlock-recipe",
+    recipe =  "pipe"
+  },
+  {
+    type = "unlock-recipe",
+    recipe =  "pipe-to-ground"
+  },
+  {
+    type = "unlock-recipe",
+    recipe =  "sp-flange"
+  }
+}
 data.raw.technology["steam-power"].prerequisites = {
   "electric-engine",
   "sp-copper-extruding"
@@ -135,17 +161,6 @@ data.raw.technology["circuit-network"].unit.ingredients = {
   {"sp-geological-science-pack-1", 1},
   {"sp-electronic-science-pack-1", 1},
   {"chemical-science-pack", 1}
-}
-
-data.raw.technology["oil-processing"].research_trigger = nil
-data.raw.technology["oil-processing"].unit = {
-  count = 50,
-  ingredients = {
-    {"automation-science-pack", 1},
-    {"logistic-science-pack", 1},
-    {"sp-material-science-pack-1", 1}
-  },
-  time = 30
 }
 
 data.raw.technology["plastics"].unit.ingredients = {
@@ -233,8 +248,28 @@ data.raw.technology["logistics-3"].unit.ingredients = {
 
 table.insert(data.raw.technology["railway"].prerequisites, "sp-steel-wheel")
 table.insert(data.raw.technology["railway"].prerequisites, "sp-geological-science-pack-1")
-table.insert(data.raw.technology["railway"].effects, {type = "unlock-recipe", recipe = "sp-train-bogie"})
-table.insert(data.raw.technology["railway"].effects, {type = "unlock-recipe", recipe = "sp-shaft-sleeve"})
+data.raw.technology["nuclear-power"].effects = {
+  {
+    type = "unlock-recipe",
+    recipe = "sp-rail"
+  },
+  {
+    type = "unlock-recipe",
+    recipe = "sp-locomotive"
+  },
+  {
+    type = "unlock-recipe",
+    recipe = "sp-cargo-wagon"
+  },
+  {
+    type = "unlock-recipe",
+    recipe = "sp-train-bogie"
+  },
+  {
+    type = "unlock-recipe",
+    recipe = "sp-shaft-sleeve"
+  },
+}
 data.raw.technology["railway"].unit.ingredients = {
   {"automation-science-pack", 1},
   {"logistic-science-pack", 1},
@@ -407,26 +442,22 @@ data.raw.technology["steel-processing"].unit = {
   time = 15
 }
 
-table.insert(data.raw.technology["oil-gathering"].prerequisites, "sp-production-components-set")
-table.insert(data.raw.technology["oil-gathering"].effects, {type = "unlock-recipe", recipe = "sp-flange"})
+data.raw.technology["oil-gathering"].prerequisites = {"logistic-science-pack"}
 data.raw.technology["oil-gathering"].unit = {
   count = 50,
   ingredients = {
     {"automation-science-pack", 1},
     {"logistic-science-pack", 1},
-    {"sp-material-science-pack-1", 1}
   },
   time = 30
 }
 
 data.raw.technology["oil-processing"].research_trigger = nil
--- TODO: remove chemical plant; write function for remove effect
 data.raw.technology["oil-processing"].unit = {
-  count = 100,
+  count = 50,
   ingredients = {
     {"automation-science-pack", 1},
-    {"logistic-science-pack", 1},
-    {"sp-material-science-pack-1", 1}
+    {"logistic-science-pack", 1}
   },
   time = 30
 }

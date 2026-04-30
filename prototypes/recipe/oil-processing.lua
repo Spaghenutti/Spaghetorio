@@ -3,7 +3,7 @@ local util = require("data-util")
 data:extend({
   {
     type = "recipe",
-    name = "sp-ethylene-and-propene",  -- #ForRegEx# - recipe
+    name = "sp-ethylene-and-propane",  -- #ForRegEx# - recipe
     icons = util.icon.combine_two_icons("__base__/graphics/icons/fluid/petroleum-gas.png", 64, nil,
                                         "__Spaghetorio__/graphics/icons/propane.png", 64, nil),
     icon_size = 64,

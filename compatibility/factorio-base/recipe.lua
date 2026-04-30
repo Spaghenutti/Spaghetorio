@@ -628,6 +628,7 @@ util.recipe.change_recipe_ingredients("substation",
 util.recipe.change_recipe_ingredients("pipe",
   {
     {type = "item", name = "iron-plate", amount = 2},
+    {type = "item", name = "sp-flange", amount = 2},
     {type = "item", name = "sp-lead-slab", amount = 1}
   },
   0.2)
@@ -1573,29 +1574,26 @@ util.recipe.change_recipe_ingredients("assembling-machine-3",
   },
   16)
 
--- AAI {type = "item", name = "engine-unit", amount = 5}
 util.recipe.change_recipe_ingredients("pumpjack",
   {
-    {type = "item", name = "sp-stainless-steel", amount = 24},
+    {type = "item", name = "sp-steel-beam", amount = 24},
+    {type = "item", name = "engine-unit", amount = 2},
     {type = "item", name = "pipe", amount = 20},
     {type = "item", name = "stone-brick", amount = 12},
     {type = "item", name = "sp-valve", amount = 8},
-    {type = "item", name = "sp-flange", amount = 6},
-    {type = "item", name = "sp-production-components-set", amount = 1}
+    {type = "item", name = "sp-mechanical-components-set", amount = 2}
   },
   16)
 
 util.recipe.change_recipe_ingredients("oil-refinery",
   {
-    {type = "item", name = "sp-glass", amount = 20},
     {type = "item", name = "sp-steel-sheet", amount = 50},
-    {type = "item", name = "sp-stainless-steel", amount = 12},
     {type = "item", name = "pipe", amount = 30},
     {type = "item", name = "stone-brick", amount = 20},
-    {type = "item", name = "electric-engine-unit", amount = 5},
-    {type = "item", name = "sp-bolts", amount = 40},
+    {type = "item", name = "engine-unit", amount = 4},
+    {type = "item", name = "sp-mechanical-components-set", amount = 5},
     {type = "item", name = "sp-valve", amount = 12},
-    {type = "item", name = "sp-flange", amount = 10}
+    {type = "item", name = "sp-copper-tube", amount = 20}
   },
   30)
 
@@ -1852,7 +1850,7 @@ util.recipe.change_recipe_ingredients("logistic-science-pack",
   {
     {type = "item", name = "repair-pack", amount = 5},
     {type = "item", name = "engine-unit", amount = 3},
-    {type = "item", name = "sp-automation-core", amount = 2},
+    {type = "item", name = "sp-automation-core", amount = 5},
     {type = "item", name = "sp-valve", amount = 5},
     {type = "item", name = "sp-blank-tech-card", amount = 5}
   },

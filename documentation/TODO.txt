@@ -20,59 +20,38 @@ Recipe chains
   - make molten metal from lava recipes much more complex - after geological and metallurgical science 3
 
 New items
-+ i steel-sheet
-  + recipe
-  + uses
-- machine housing for engine
-- Intermediates
-  - mechanical-components-set
-    + bolts
-    + spring
-    - nuts
-      - add uses
-    - washers - unterlagsscheiben
-      - add uses
-    - rivets - niet
-      - add uses
-  - structural-components-set
-    + machined-parts
-    + aluminum-frame
-    + iron-stick
-    - mounting-bracket
-      - add uses
-    - rubber-pad
-      - add uses
-  - production-components-set
-    + gears
-    + ball-bearing
-    - bearing
-      - use in simple engine
-      - add uses
-    + shaft-sleeve
-      - use in motors and engines
-    + roller-chain
-      - use in red belts
-    + sprocket
-      - use in red belts
-    + coupling
-      - use in motors and engines
-  - fluid-handling-components-set
-    + copper-tube
-    + flange
-    - seal
-      - machined-parts
-      - spring
-      - o-ring - currently it exists as seal
-    + filter
-  - electronic-components-set
-    + capacitor
-    + coil
-    + resistor
-    + diode
-    + transistor
-    + (vacuum-tube)
+  - oil processing
+    - processed-oil / petroleum
+    - sludge-oil
+    - petroleum-residue
+    - aromatics
+    - bakelite
+    - ethane
+    - propene (there is a recipe ethylene-and-propene that makes propane)
+  - oil products
+    - (i) phenol + (i) acetone = cumene + O2
+      - (i?) cumene = aromatics + petroleum gas (also update recipe chain for cumene hydroperoxide)
+    - bakelite = phenol + formaldehyde
+      - (i) formaldehyde = petroleun gas + biomethanol
+        - (i) biomethanol = spoilage + wood chips
+    - (plastic bar icon) polyethylene = petroleum
+
+  - agriculture
+    - greenhouse
+      - bushes for leafs, potatoes
+    - agricultural tower
+      - 3 types of trees with its seeds
+    - herbarium - deal with gleba plants and fungus
+    - biochamber
+
+    - solvants
+    - microbes/yeast
+    - cellulose derivatives
+      - pulp = cellulose + paper
 
   - chemistry
+    - (i) polyvinyl chloride = vinyl chloride (extend vinyl chloride tech)
+
     - organometallic compounds
     - ionic liquids
     - super acids

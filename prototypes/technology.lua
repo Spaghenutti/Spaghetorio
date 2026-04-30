@@ -7131,7 +7131,7 @@ data:extend({
     effects = {
       {
         type = "unlock-recipe",
-        recipe = "sp-ethylene-and-propene"
+        recipe = "sp-ethylene-and-propane"
       },
       {
         type = "unlock-recipe",
@@ -9534,13 +9534,14 @@ data:extend({
       },
     },
     prerequisites = {
-      "logistic-science-pack",
+      "chemical-science-pack"
     },
     unit = {
       count = 50,
       ingredients = {
         {"automation-science-pack", 1},
-        {"logistic-science-pack", 1}
+        {"logistic-science-pack", 1},
+        {"chemical-science-pack", 1}
       },
       time = 30,
     },

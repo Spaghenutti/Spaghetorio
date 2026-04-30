@@ -444,7 +444,7 @@ data:extend({
     energy_required = 2.4,
     ingredients = {
       {type = "item", name = "sp-bolts", amount = 2},
-      {type = "item", name = "sp-stainless-steel", amount = 1}
+      {type = "item", name = "iron-plate", amount = 1}
     },
     results = {
       {type = "item", name = "sp-flange", amount = 1}
